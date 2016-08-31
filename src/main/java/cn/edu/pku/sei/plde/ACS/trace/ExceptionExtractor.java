@@ -39,6 +39,7 @@ public class ExceptionExtractor {
                 sortList.remove(exceptionVariable);
             }
         }
+
         result.addAll(sortWithMethodOne(sortList, traceResults, suspicious));
         return result;
     }
@@ -78,13 +79,17 @@ public class ExceptionExtractor {
         if (sortedVariable.size() == 0){
             return new ArrayList<>();
         }
-        //if (sortedVariable.size()>2){
-        //    return variableConverse(Arrays.asList(sortedVariable.get(0), sortedVariable.get(1), sortedVariable.get(2)),exceptionVariables);
-        //}
+
         else if (sortedVariable.size()>1){
-            return variableConverse(Arrays.asList(sortedVariable.get(0), sortedVariable.get(1)),exceptionVariables);
+            List<ExceptionVariable> level1 = variableConverse(Arrays.asList(sortedVariable.get(0)), exceptionVariables).get(0);
+            level1 = sortWithMethodTwo(level1, traceResults, suspicious);
+            List<ExceptionVariable> level2 = variableConverse(Arrays.asList(sortedVariable.get(1)), exceptionVariables).get(0);
+            level2 = sortWithMethodTwo(level2, traceResults, suspicious);
+            return Arrays.asList(level1, level2);
         }
-        return variableConverse(Arrays.asList(sortedVariable.get(0)), exceptionVariables);
+        List<ExceptionVariable> level1 = variableConverse(Arrays.asList(sortedVariable.get(0)), exceptionVariables).get(0);
+        level1 = sortWithMethodTwo(level1, traceResults, suspicious);
+        return Arrays.asList(level1);
     }
 
     private static List<List<ExceptionVariable>> variableConverse(List<List<String>> sortedVariable, List<ExceptionVariable> exceptionVariables){
@@ -94,6 +99,9 @@ public class ExceptionExtractor {
             if (variableEchelon.size() != 0){
                 result.add(variableEchelon);
             }
+        }
+        if (result.size() == 0){
+            result.add(new ArrayList<ExceptionVariable>());
         }
         return result;
     }
