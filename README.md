@@ -2,7 +2,7 @@
 
 ACS generates correct patches for 18 defects. For each defect, we provide the urls that contain the developer patch and we either identify the ACS patch is semantically equivalent to the developer patch and provide a brief analysis for why the ACS patch is correct.
 
-1.Chart14 
+1.Chart14
 The developer patches:
 https://github.com/Adobee/ACS/blob/master/patch/Developer/Chart14/source/org/jfree/chart/plot/CategoryPlot.java
 https://github.com/Adobee/ACS/blob/master/patch/Developer/Chart14/source/org/jfree/chart/plot/XYPlot.java
