@@ -1,4 +1,5 @@
 package cn.edu.pku.sei.plde.ACS.assertCollect;
+import cn.edu.pku.sei.plde.ACS.main.Config;
 import cn.edu.pku.sei.plde.ACS.slice.StaticSlice;
 import cn.edu.pku.sei.plde.ACS.utils.*;
 import javassist.NotFoundException;
@@ -147,7 +148,7 @@ public class Asserts {
                     break;
                 }
                 SourceUtils.commentCodeInSourceFile(tempJavaFile,lineNum);
-                System.out.println(ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath(),_testClasspath,_classpath)) +" -d "+_testClasspath+" "+ tempJavaFile.getAbsolutePath())));
+                ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath(),_testClasspath,_classpath)) +" -d "+_testClasspath+" "+ tempJavaFile.getAbsolutePath()));
             }
             catch (NotFoundException e){
                 System.out.println("ERROR: Cannot Find Source File: " + _testClassname + " in temp file package\n");
@@ -263,15 +264,7 @@ public class Asserts {
         return _assertNums - _errorAssertLines.size();
     }
 
-    private int count(String s,char c){
-        int count= 0;
-        for (int i=0; i< s.length(); i++){
-            if (s.charAt(i)==c){
-                count++;
-            }
-        }
-        return count;
-    }
+  
 
 
 
@@ -323,7 +316,7 @@ public class Asserts {
                     }
                 }
             }
-            System.out.println(ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath(),_testClasspath,_classpath)) +" "+ tempJavaFile.getAbsolutePath())));
+            ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath(),_testClasspath,_classpath)) +" "+ tempJavaFile.getAbsolutePath()));
         } catch (IOException e){
             e.printStackTrace();
             return "";
@@ -345,16 +338,16 @@ public class Asserts {
     }
 
     private static String tempJavaPath(String classname){
-        if (!new File(System.getProperty("user.dir")+"/temp/assert/").exists()){
-            new File(System.getProperty("user.dir")+"/temp/assert/").mkdirs();
+        if (!new File(Config.TEMP_FILES_PATH+"/assert/").exists()){
+            new File(Config.TEMP_FILES_PATH+"/assert/").mkdirs();
         }
-        return System.getProperty("user.dir")+"/temp/assert/"+classname.substring(classname.lastIndexOf(".")+1)+".java";
+        return Config.TEMP_FILES_PATH+"/assert/"+classname.substring(classname.lastIndexOf(".")+1)+".java";
     }
 
     private static String tempClassPath(String classname){
-        if (!new File(System.getProperty("user.dir")+"/temp/assert/").exists()){
-            new File(System.getProperty("user.dir")+"/temp/assert/").mkdirs();
+        if (!new File(Config.TEMP_FILES_PATH+"/assert/").exists()){
+            new File(Config.TEMP_FILES_PATH+"/assert/").mkdirs();
         }
-        return System.getProperty("user.dir")+"/temp/assert/"+classname.substring(classname.lastIndexOf(".")+1)+".class";
+        return Config.TEMP_FILES_PATH+"/assert/"+classname.substring(classname.lastIndexOf(".")+1)+".class";
     }
 }

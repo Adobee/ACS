@@ -22,8 +22,8 @@ public class Main {
             System.out.println("Hello world");
             System.exit(0);
         }
-        new File(System.getProperty("user.dir")+"/temp/").mkdirs();
-        new File(System.getProperty("user.dir")+"/suspicious/").mkdirs();
+        new File(Config.TEMP_FILES_PATH).mkdirs();
+        new File(Config.LOCALIZATION_RESULT_CACHE).mkdirs();
         String path = args[0];
         File file = new File(path);
         File [] sub_files = file.listFiles();
@@ -38,7 +38,6 @@ public class Main {
                 bannedList.addAll(Arrays.asList(banned.split(":")));
             }
             else if (args[1].contains(":")){
-                deleteTempFile();
                 for (String name: args[1].split(":")){
                     System.out.println("Main: fixing project "+name);
                     try {
@@ -61,7 +60,6 @@ public class Main {
             }
 
         }
-        deleteTempFile();
         for (File sub_file : sub_files){
             if (sub_file.isDirectory()){
                 System.out.println("Main: fixing project "+sub_file.getName());
@@ -93,7 +91,13 @@ public class Main {
         int projectNumber = Integer.valueOf(project.split("_")[1]);
         MainProcess process = new MainProcess(path);
         boolean result;
-        File main = new File(System.getProperty("user.dir")+"/"+"FixResult.log");
+        File main = new File(Config.FIX_RESULT_FILE_PATH);
+        if (!main.exists()){
+            if (!new File(Config.RESULT_PATH).exists()){
+                new File(Config.RESULT_PATH).mkdirs();
+            }
+            main.createNewFile();
+        }
         try {
             FileWriter writer = new FileWriter(main, true);
             Format format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -115,13 +119,18 @@ public class Main {
 
 
     private static void processFail(String project, TimeLine timeLine){
-        File recordFile = new File(System.getProperty("user.dir")+"/patch/"+project);
-        if (recordFile.exists()){
-            recordFile.delete();
+        File[] patchFiles = {
+                new File(Config.PATCH_PATH),
+                new File(Config.PATCH_SOURCE_PATH)
+        };
+        for (File patchFile: patchFiles){
+            if (patchFile.exists()){
+                patchFile.delete();
+            }
         }
         if (timeLine.isTimeout()){
             try {
-                File main = new File(System.getProperty("user.dir")+"/"+"FixResult.log");
+                File main = new File(Config.FIX_RESULT_FILE_PATH);
                 if (!main.exists()){
                     main.createNewFile();
                 }
@@ -136,81 +145,4 @@ public class Main {
     }
 
 
-    private static void deleteTempFile(){
-        backupPackage(System.getProperty("user.dir")+"/patch");
-        backupPackage(System.getProperty("user.dir")+"/patch_source");
-        backupPackage(System.getProperty("user.dir")+"/Localization");
-        backupPackage(System.getProperty("user.dir")+"/RuntimeMessage");
-        backupPackage(System.getProperty("user.dir")+"/RawLocalization");
-        File log = new File(System.getProperty("user.dir")+"/FixResult.log");
-        if (log.exists()){
-            log.delete();
-        }
-
-    }
-
-    private static void backupPackage(String packagePath){
-        File file = new File(packagePath);
-        if (!file.exists()){
-            return;
-        }
-        if (!file.isDirectory()){
-            return;
-        }
-        if (file.listFiles() == null){
-            return;
-        }
-        File [] sub_files = file.listFiles();
-        for (File sub_file: sub_files){
-            if (sub_file.isFile()){
-                sub_file.renameTo(new File(sub_file.getAbsolutePath()+".old"));
-            }
-        }
-    }
 }
-
-/*
-class RunFixProcess implements Callable<Boolean>  {
-    public String path;
-    public String projectType;
-    public String project;
-    public int projectNumber;
-
-    public RunFixProcess(String path, String project){
-        this.path = path;
-        this.project = project;
-        this.projectType = project.split("_")[0];
-        this.projectNumber = Integer.valueOf(project.split("_")[1]);
-    }
-
-    public synchronized Boolean call() throws InterruptedException,TimeoutException{
-        MainProcess process = new MainProcess(path);
-        boolean result;
-        File main = new File(System.getProperty("user.dir")+"/"+"FixResult.log");
-
-        try {
-            FileWriter writer = new FileWriter(main, true);
-            Format format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-            writer.write("project "+project+" begin Time:"+format.format(new Date())+"\n");
-            writer.close();
-            result = process.mainProcess(projectType, projectNumber);
-            if (Thread.interrupted()){
-                return false;
-            }
-            writer = new FileWriter(main, true);
-            writer.write("project "+project+" "+(result?"Success":"Fail")+" Time:"+format.format(new Date())+"\n");
-            writer.close();
-        } catch (Exception e){
-            result = false;
-        }
-        if (!result){
-            File recordFile = new File(System.getProperty("user.dir")+"/patch/"+project);
-            if (recordFile.exists()){
-                recordFile.delete();
-            }
-        }
-
-
-        return true;
-    }
-}*/

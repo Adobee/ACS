@@ -22,15 +22,15 @@ import java.util.List;
  */
 public class MainProcess {
 
-    private String PATH_OF_DEFECTS4J = "/Users/yanrunfa/Documents/defects4j/tmp/";
-    private String classpath = System.getProperty("user.dir")+"/project/classpath/";
-    private String classSrc = System.getProperty("user.dir")+"/project/classSrc/";
-    private String testClasspath = System.getProperty("user.dir")+"/project/testClasspath";
-    private String testClassSrc = System.getProperty("user.dir")+"/project/testClassSrc/";
+    private String PATH_OF_DEFECTS4J;
+    private String classpath;
+    private String classSrc;
+    private String testClasspath;
+    private String testClassSrc;
     public static String PROJECT_NAME;
+
     private List<String> libPath = new ArrayList<>();
     private boolean successHalfFlag = false;
-    public long startMili=System.currentTimeMillis();
     public List<Suspicious> triedSuspicious = new ArrayList<>();
 
     public MainProcess(String path){
@@ -44,9 +44,9 @@ public class MainProcess {
         String project = setWorkDirectory(projectType,projectNumber);
         if (!checkProjectDirectory()){
             System.out.println("Main Process: set work directory error at project "+projectType+"-"+projectNumber);
-            File recordPackage = new File(System.getProperty("user.dir")+"/patch/");
+            File recordPackage = new File(Config.PATCH_PATH);
             recordPackage.mkdirs();
-            File main = new File(System.getProperty("user.dir")+"/"+"FixResult.log");
+            File main = new File(Config.FIX_RESULT_FILE_PATH);
             try {
                 if (!main.exists()) {
                     main.createNewFile();
@@ -100,8 +100,6 @@ public class MainProcess {
             for (Suspicious _suspicious: triedSuspicious){
                 if (_suspicious._function.equals(suspicious._function) && _suspicious._classname.equals(suspicious._classname)){
                     tried = true;
-
-
                 }
             }
             if (tried){
@@ -134,7 +132,7 @@ public class MainProcess {
             return false;
         }
         if (fixer.mainFixProcess()){
-            printCollectingMessage(project, suspicious);
+            RecordUtils.printCollectingMessage(suspicious, timeLine);
             return isFixSuccess(project, timeLine);
         }
         return false;
@@ -165,17 +163,6 @@ public class MainProcess {
         }
 
     }
-
-    public void printCollectingMessage(String project, Suspicious suspicious){
-        RecordUtils writer = new RecordUtils("RuntimeMessage");
-        writer.write("Whole Cost Time: "+(System.currentTimeMillis()-startMili)/1000+"\n");
-        writer.write("True Test Num: "+suspicious.trueTestNums()+"\n");
-        writer.write("True Assert Num: "+suspicious.trueAssertNums()+"\n");
-        writer.write("====================================================================\n\n");
-        writer.close();
-    }
-
-
 
     public String setWorkDirectory(String projectName, int number){
         libPath.add(FromString.class.getProtectionDomain().getCodeSource().getLocation().getFile());
@@ -214,6 +201,4 @@ public class MainProcess {
         }
         return project;
     }
-
-
 }

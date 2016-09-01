@@ -1,6 +1,7 @@
 package cn.edu.pku.sei.plde.ACS.utils;
 
 
+import cn.edu.pku.sei.plde.ACS.main.Config;
 import org.apache.commons.lang.StringUtils;
 
 import java.io.*;
@@ -16,10 +17,10 @@ public class SourceUtils {
 
     public static void insertIfStatementToSourceFile(File file, String ifStatement, int startLine, int endLine, boolean replace){
         int i=0;
-        while (new File(System.getProperty("user.dir")+"/temp/source"+i+".temp").exists()){
+        while (new File(Config.TEMP_FILES_PATH +"//source"+i+".temp").exists()){
             i++;
         }
-        File tempFile = new File(System.getProperty("user.dir")+"/temp/source"+i+".temp");
+        File tempFile = new File(Config.TEMP_FILES_PATH +"//source"+i+".temp");
         FileOutputStream outputStream = null;
         BufferedReader reader = null;
         try {
@@ -66,10 +67,10 @@ public class SourceUtils {
 
     public static void commentCodeInSourceFile(File file, int line){
         int i=0;
-        while (new File(System.getProperty("user.dir")+"/temp/source"+i+".temp").exists()){
+        while (new File(Config.TEMP_FILES_PATH +"/source"+i+".temp").exists()){
             i++;
         }
-        File tempFile = new File(System.getProperty("user.dir")+"/temp/source"+i+".temp");
+        File tempFile = new File(Config.TEMP_FILES_PATH +"/source"+i+".temp");
         FileOutputStream outputStream = null;
         BufferedReader reader = null;
         try {

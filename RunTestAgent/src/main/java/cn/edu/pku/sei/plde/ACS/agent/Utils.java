@@ -8,7 +8,7 @@ import java.util.*;
  * Created by yanrunfa on 2016/2/20.
  */
 public class Utils {
-
+    public static final String TEMP_FILES_PATH = ".temp/";
     /**
      *
      * @param tempJavaName
@@ -73,12 +73,9 @@ public class Utils {
                 }
             }
 
-            String result = Utils.shellRun(Arrays.asList("javac -Xlint:unchecked -cp "+ classPath+" "+ tempJavaName));
+            String result = Utils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ classPath+" "+ tempJavaName));
             if (result.contains("找不到文件") || result.contains("not found")){
                 throw new FileNotFoundException();
-            }
-            if (!result.trim().equals("")){
-                System.out.println(result);
             }
         } catch (FileNotFoundException e){
             System.out.println("AddCodeToSource: TempJavaName: "+tempJavaName +" No Found");
@@ -200,12 +197,12 @@ public class Utils {
         String fileName;
         String cmd;
         if (System.getProperty("os.name").toLowerCase().startsWith("win")){
-            fileName = System.getProperty("user.dir")+"/temp"+"/args.bat";
-            cmd = System.getProperty("user.dir")+"/temp"+"/args.bat";
+            fileName = TEMP_FILES_PATH +"/args.bat";
+            cmd = TEMP_FILES_PATH +"/args.bat";
         }
         else {
-            fileName = System.getProperty("user.dir")+"/temp"+"/args.sh";
-            cmd = "bash " + System.getProperty("user.dir")+"/temp"+"/args.sh";
+            fileName = TEMP_FILES_PATH +"/args.sh";
+            cmd = "bash " + TEMP_FILES_PATH +"/args.sh";
         }
         File batFile = new File(fileName);
         if (!batFile.exists()){

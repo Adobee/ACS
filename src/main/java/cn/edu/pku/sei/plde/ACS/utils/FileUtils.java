@@ -1,5 +1,6 @@
 package cn.edu.pku.sei.plde.ACS.utils;
 
+import cn.edu.pku.sei.plde.ACS.main.Config;
 import javassist.NotFoundException;
 import org.apache.commons.lang.StringUtils;
 
@@ -354,13 +355,13 @@ public class FileUtils {
 
 
 	public static String tempJavaPath(String classname, String identifier){
-		new File(System.getProperty("user.dir")+"/temp/"+identifier).mkdirs();
-		return System.getProperty("user.dir")+"/temp/"+identifier+"/"+classname.substring(classname.lastIndexOf(".")+1)+".java";
+		new File(Config.TEMP_FILES_PATH+identifier).mkdirs();
+		return Config.TEMP_FILES_PATH+identifier+"/"+classname.substring(classname.lastIndexOf(".")+1)+".java";
 	}
 
 	public static String tempClassPath(String classname, String identifier){
-		new File(System.getProperty("user.dir")+"/temp/"+identifier).mkdirs();
-		return System.getProperty("user.dir")+"/temp/"+identifier+"/"+classname.substring(classname.lastIndexOf(".")+1)+".class";
+		new File(Config.TEMP_FILES_PATH+identifier).mkdirs();
+		return Config.TEMP_FILES_PATH+identifier+"/"+classname.substring(classname.lastIndexOf(".")+1)+".class";
 	}
 
 

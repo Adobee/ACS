@@ -123,9 +123,6 @@ public class TestUtils {
             if (lineString.contains("Failing tests:")){
                 errorNum =  Integer.valueOf(lineString.split(":")[1].trim());
             }
-            if (lineString.contains("org.jfree.data.time.junit.MonthTests::testParseMonth")){
-                errorNum --;
-            }
         }
         return errorNum;
     }

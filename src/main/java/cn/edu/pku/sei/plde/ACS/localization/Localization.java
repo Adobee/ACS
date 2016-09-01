@@ -1,6 +1,7 @@
 package cn.edu.pku.sei.plde.ACS.localization;
 
 import cn.edu.pku.sei.plde.ACS.localization.gzoltar.StatementExt;
+import cn.edu.pku.sei.plde.ACS.main.Config;
 import cn.edu.pku.sei.plde.ACS.utils.FileUtils;
 import cn.edu.pku.sei.plde.ACS.utils.RecordUtils;
 import com.gzoltar.core.components.Statement;
@@ -102,16 +103,13 @@ public class Localization  {
     }
 
     public List<Suspicious> getSuspiciousLite(boolean jump){
-        File suspicousFile = new File(System.getProperty("user.dir")+"/suspicious/"+ FileUtils.getMD5(StringUtils.join(testClasses,"")+classpath+testClassPath+srcPath+testSrcPath)+".sps");
+        File suspicousFile = new File(Config.LOCALIZATION_RESULT_CACHE+ FileUtils.getMD5(StringUtils.join(testClasses,"")+classpath+testClassPath+srcPath+testSrcPath)+".sps");
 
         if (suspicousFile.exists() && jump ){
             try {
                 ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(suspicousFile));
                 List<Suspicious> result = (List<Suspicious>) objectInputStream.readObject();
                 objectInputStream.close();
-                //if (result.size()>12){
-                //    result = result.subList(0,12);
-                //}
                 return result;
             }catch (Exception e){
                 System.out.println("Reloading Localization Result...");
@@ -158,36 +156,22 @@ public class Localization  {
             e.printStackTrace();
             return new ArrayList<Suspicious>();
         }
-        RecordUtils recordUtils = new RecordUtils("Localization");
+        RecordUtils recordUtils = new RecordUtils("localization");
         for (Suspicious suspicious: result){
             recordUtils.write(suspicious.classname()+"#"+suspicious.functionnameWithoutParam()+"#"+suspicious.getDefaultErrorLine()+"\n");
         }
         recordUtils.close();
-        //if (result.size()>12){
-        //    result = result.subList(0,12);
-        //}
         return result;
     }
 
     private List<StatementExt> statementFilter(List<StatementExt> statements){
         List<StatementExt> result = new ArrayList<>();
-        Map<String, String> errorLineMap = new HashMap<>();
-        Map<String, String> testTraceMap = new HashMap<>();
         String packageName = "";
-
-        RecordUtils recordUtils = new RecordUtils("RawLocalization");
-        for (StatementExt statementExt: statements){
-            recordUtils.write(getClassAddressFromStatement(statementExt)+"#"+getFunctionNameFromStatement(statementExt)+"#"+getLineNumberFromStatement(statementExt)+"\n");
-        }
-        recordUtils.close();
         for (int i=0; i< 2; i++){
             String[] test = testClasses[0].split("\\.");
             packageName += test[i];
-            if (i!=2){
-                packageName += ".";
-            }
+            packageName += ".";
         }
-
         for (StatementExt statement: statements){
             if (statement.getName().contains("exception") || statement.getName().contains("Exception")){
                 continue;
@@ -195,94 +179,8 @@ public class Localization  {
             if (!statement.getLabel().trim().startsWith(packageName.trim())){
                 continue;
             }
-            /*
-            for (String test: statement.getFailTests()) {
-                String testClass = test.split("#")[0];
-                String testMethod = test.split("#")[1];
-                String code = FileUtils.getCodeFromFile(testSrcPath, testClass);
-                String methodCode = FileUtils.getTestFunctionCodeFromCode(code, testMethod);
-                if (methodCode.equals("")){
-                    if (code.contains(" extends ")){
-                        String extendsClass = code.split(" extends ")[1].substring(0, code.split(" extends ")[1].indexOf("{"));
-                        String className = CodeUtils.getClassNameOfImportClass(code, extendsClass);
-                        if (className.equals("")){
-                            className = CodeUtils.getPackageName(code)+"."+extendsClass;
-                        }
-                        String extendsCode = FileUtils.getCodeFromFile(testSrcPath, className.trim());
-                        if (!extendsCode.equals("")){
-                            code = extendsCode;
-                            methodCode = FileUtils.getTestFunctionCodeFromCode(code, testMethod);
-                        }
-                    }
-                }
-
-                if (statements.size() < 50) {
-                    String errorAssertCode = "";
-                    if (!errorLineMap.containsKey(test)) {
-                        Asserts asserts = new Asserts(classpath, srcPath, testClassPath, testSrcPath, testClass, testMethod, libPaths, project);
-                        if (asserts.errorLines().size() == 0) {
-                            continue;
-                        }
-                        for (int i : asserts.errorLines()) {
-                            errorAssertCode += CodeUtils.getLineFromCode(code, i) + "\n";
-                        }
-                        errorLineMap.put(test, errorAssertCode);
-                    } else {
-                        errorAssertCode = errorLineMap.get(test);
-                    }
-                    if (errorAssertCode.contains(getFunctionNameFromStatement(statement) + "(")) {
-                        statement.setSuspiciousWeight(5.0f);
-                        result.add(statement);
-                    } else if (methodCode.contains(getFunctionNameFromStatement(statement))) {
-                        result.add(statement);
-                    }
-                }
-                else {
-                    String trace = "";
-                    if (!testTraceMap.containsKey(test)){
-                        trace = TestUtils.getTestTraceFromJunit(classpath, testClassPath, libPaths, testClass, testMethod);
-                        testTraceMap.put(test, trace);
-                    }
-                    else {
-                        trace = testTraceMap.get(test);
-                    }
-                    boolean firstLineFlag = true;
-                    for (String line: trace.split("\n")){
-                        if (line.trim().startsWith("at ")){
-                            if (line.contains(getClassAddressFromStatement(statement)+"."+getFunctionNameFromStatement(statement)+"(")){
-                                if (firstLineFlag){
-                                    statement.setSuspiciousWeight(3.0f);
-                                }
-                                else {
-                                    statement.setSuspiciousWeight(3.0f*1.1f);
-                                }
-                                result.add(statement);
-                                break;
-                            }
-                            firstLineFlag = false;
-                        }
-                    }
-                }
-                for (String lineString: methodCode.split("\n")) {
-                    if (lineString.contains("(") && lineString.contains(")") && !lineString.contains("=")) {
-                        String callMethod = lineString.substring(0, lineString.indexOf("(")).trim();
-                        if (code.contains("void " + callMethod + "(")) {
-                            result.add(statement);
-                            break;
-                        }
-                    }
-                }
-                if (!result.contains(statement)){
-                    statement.setSuspiciousWeight(0.5f);
-                    if (statement.getLabel().contains("$")){
-                        statement.setSuspiciousWeight(0.4f);
-                    }
-                    result.add(statement);
-                }
-            }*/
             result.add(statement);
         }
-
         return result;
     }
 

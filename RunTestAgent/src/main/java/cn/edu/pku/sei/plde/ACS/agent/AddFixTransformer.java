@@ -51,8 +51,8 @@ public class AddFixTransformer implements ClassFileTransformer{
             return classfileBuffer;
         }
 
-        _tempJavaName = System.getProperty("user.dir")+"/temp/"+className.replace("/", ".").substring(className.replace("/", ".").lastIndexOf(".")+1)+".java";
-        _tempClassName = System.getProperty("user.dir")+"/temp/"+className.replace("/", ".").substring(className.replace("/", ".").lastIndexOf(".")+1)+".class";
+        _tempJavaName = Utils.TEMP_FILES_PATH+className.replace("/", ".").substring(className.replace("/", ".").lastIndexOf(".")+1)+".java";
+        _tempClassName = Utils.TEMP_FILES_PATH+className.replace("/", ".").substring(className.replace("/", ".").lastIndexOf(".")+1)+".class";
         try {
             return Utils.AddCodeToSource(_tempJavaName,_tempClassName,_classPath,_srcPath,className,_targetLineNum, _patch);
         }catch (IOException e){

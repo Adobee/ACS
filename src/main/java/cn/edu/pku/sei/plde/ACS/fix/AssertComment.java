@@ -89,7 +89,7 @@ public class AssertComment {
 
     private void make(){
         try {
-            System.out.println(ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath())) +" -d "+ testClassPath+" "+ targetFile.getAbsolutePath())));
+            ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath())) +" -d "+ testClassPath+" "+ targetFile.getAbsolutePath()));
         } catch (IOException e){
             e.printStackTrace();
         }

@@ -157,18 +157,6 @@ public class InfoUtils {
                 variableInfos.add(newField);
             }
         }
-        //MethodCollect methodCollect = MethodCollect.GetInstance(paramClassSrcPath.substring(0, paramClassSrcPath.lastIndexOf("/")));
-        //LinkedHashMap<String, ArrayList<MethodInfo>> methods = methodCollect.getVisibleMethodWithoutParametersInAllClassMap(paramClassSrcPath);
-       // if (methods.containsKey(paramClassSrcPath)){
-        //    List<MethodInfo> methodInfos = InfoUtils.filterBannedMethod(methods.get(paramClassSrcPath));
-        //    for (MethodInfo methodInfo: methodInfos){
-        //        if (methodInfo.isPublic && !methodInfo.isStatic){
-        //            VariableInfo newField = VariableInfo.copy(InfoUtils.changeMethodInfoToVariableInfo(methodInfo));
-        //            newField.variableName = info.variableName+"."+newField.variableName;
-        //            variableInfos.add(newField);
-        //        }
-        //    }
-        //}
         return variableInfos;
     }
 

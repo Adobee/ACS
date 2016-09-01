@@ -29,11 +29,11 @@ public class AddPrintTransformer implements ClassFileTransformer {
     }
 
     public byte[] transform(ClassLoader loader, String className, Class<?> classBeingRedefined, ProtectionDomain protectionDomain, byte[] classfileBuffer) throws IllegalClassFormatException {
-        _tempJavaName = System.getProperty("user.dir")+"/temp/"+className.replace("/", ".").substring(className.replace("/", ".").lastIndexOf(".")+1)+".java";
+        _tempJavaName = Utils.TEMP_FILES_PATH+className.replace("/", ".").substring(className.replace("/", ".").lastIndexOf(".")+1)+".java";
         if (_tempJavaName.contains("$")){
             _tempJavaName = _tempJavaName.substring(0, _tempJavaName.indexOf("$"))+".java";
         }
-        _tempClassName = System.getProperty("user.dir")+"/temp/"+className.replace("/", ".").substring(className.replace("/", ".").lastIndexOf(".")+1)+".class";
+        _tempClassName = Utils.TEMP_FILES_PATH+className.replace("/", ".").substring(className.replace("/", ".").lastIndexOf(".")+1)+".class";
         new File(_tempClassName).delete();
         new File(_tempClassName).delete();
         /* handing the anonymity class */

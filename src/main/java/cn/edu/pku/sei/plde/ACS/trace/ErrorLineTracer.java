@@ -4,6 +4,7 @@ import cn.edu.pku.sei.plde.ACS.assertCollect.Asserts;
 import cn.edu.pku.sei.plde.ACS.junit.JunitRunner;
 import cn.edu.pku.sei.plde.ACS.localization.Localization;
 import cn.edu.pku.sei.plde.ACS.localization.Suspicious;
+import cn.edu.pku.sei.plde.ACS.main.Config;
 import cn.edu.pku.sei.plde.ACS.type.TypeUtils;
 import cn.edu.pku.sei.plde.ACS.utils.*;
 import javassist.NotFoundException;
@@ -246,10 +247,10 @@ public class ErrorLineTracer {
                 for (int num: commitedAfter){
                     SourceUtils.commentCodeInSourceFile(originJavaFile, num);
                 }
-                System.out.println(ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath())) +" -d "+ asserts._testClasspath+" "+ originJavaFile.getAbsolutePath())));
-                new File(System.getProperty("user.dir")+"/temp/"+assertLine).mkdirs();
-                System.out.println(ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath())) +" -d "+System.getProperty("user.dir")+"/temp/"+assertLine+"/ "+ originJavaFile.getAbsolutePath())));
-                _commentedTestClass.put(FileUtils.getFileAddressOfClass(System.getProperty("user.dir")+"/temp/"+assertLine,asserts._testClassname), assertLine);
+                ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath())) +" -d "+ asserts._testClasspath+" "+ originJavaFile.getAbsolutePath()));
+                new File(Config.TEMP_FILES_PATH+assertLine).mkdirs();
+                ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath())) +" -d "+Config.TEMP_FILES_PATH+assertLine+"/ "+ originJavaFile.getAbsolutePath()));
+                _commentedTestClass.put(FileUtils.getFileAddressOfClass(Config.TEMP_FILES_PATH+assertLine,asserts._testClassname), assertLine);
                 Localization localization = new Localization(asserts._classpath, asserts._testClasspath, asserts._testSrcPath, asserts._srcPath, asserts._testClassname);
                 suspiciouses = localization.getSuspiciousLite(false);
 

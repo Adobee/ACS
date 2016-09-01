@@ -44,7 +44,16 @@ public class Suspicious implements Serializable{
     public int trueMethodCallNumFromTest = 0;
 
     public Suspicious(String classpath, String testClasspath, String srcPath, String testSrcPath, String classname, String function){
-        this(classpath, testClasspath, srcPath, testSrcPath, classname, function, 0, new ArrayList<String>(), new ArrayList<String>(), new ArrayList<String>());
+        this(classpath,
+                testClasspath,
+                srcPath,
+                testSrcPath,
+                classname,
+                function,
+                0,
+                new ArrayList<String>(),
+                new ArrayList<String>(),
+                new ArrayList<String>());
     }
 
     public Suspicious(String classpath,

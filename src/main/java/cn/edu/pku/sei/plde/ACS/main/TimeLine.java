@@ -18,11 +18,17 @@ public class TimeLine {
     public void addDownloadTime(long time){
         downloadTime +=time;
     }
+
+
     public boolean isTimeout(){
         if (timeoutNow){
             return true;
         }
-        return (System.currentTimeMillis() - startTime - downloadTime)/1000 > timeLimit;
+        return time() > timeLimit;
+    }
+
+    public long time(){
+        return (System.currentTimeMillis() - startTime - downloadTime)/1000;
     }
 
     public void timeOutNow(){

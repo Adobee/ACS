@@ -1,5 +1,6 @@
 package cn.edu.pku.sei.plde.ACS.gatherer;
 
+import cn.edu.pku.sei.plde.ACS.main.Config;
 import cn.edu.pku.sei.plde.ACS.utils.FileUtils;
 import cn.edu.pku.sei.plde.ACS.utils.RequestUtils;
 import org.apache.commons.httpclient.HttpClient;
@@ -85,7 +86,7 @@ public class GatherJavaGithubRepositories {
         else {
             new File(repositoryPath).mkdirs();
         }
-        File zipPackage = RequestUtils.download(downloadURL, System.getProperty("user.dir")+"/temp/"+repositoryName+".zip", httpClient);
+        File zipPackage = RequestUtils.download(downloadURL, Config.TEMP_FILES_PATH+repositoryName+".zip", httpClient);
         if (zipPackage == null){
             System.out.println("Failed to Download Repository: "+ repositoryName);
             new File(repositoryPath).delete();

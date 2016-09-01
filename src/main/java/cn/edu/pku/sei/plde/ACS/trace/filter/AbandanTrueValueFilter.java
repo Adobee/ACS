@@ -196,7 +196,6 @@ public class AbandanTrueValueFilter {
     private static List<ExceptionVariable> cleanVariables(List<ExceptionVariable> exceptionVariable){
         List<ExceptionVariable> cleanedVariable = new ArrayList<>();
         for (ExceptionVariable var: exceptionVariable){
-            //去掉不符合规则的Variable
             if (var.variable.isSimpleType && var.variable.variableSimpleType==null){
                 continue;
             }

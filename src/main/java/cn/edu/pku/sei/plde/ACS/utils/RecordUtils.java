@@ -2,14 +2,18 @@ package cn.edu.pku.sei.plde.ACS.utils;
 
 import cn.edu.pku.sei.plde.ACS.boundary.BoundaryGenerator;
 import cn.edu.pku.sei.plde.ACS.boundary.model.Interval;
+import cn.edu.pku.sei.plde.ACS.fix.SuspiciousFixer;
 import cn.edu.pku.sei.plde.ACS.localization.Suspicious;
+import cn.edu.pku.sei.plde.ACS.main.Config;
 import cn.edu.pku.sei.plde.ACS.main.MainProcess;
+import cn.edu.pku.sei.plde.ACS.main.TimeLine;
 import cn.edu.pku.sei.plde.ACS.trace.ExceptionVariable;
 import cn.edu.pku.sei.plde.ACS.visible.model.VariableInfo;
 
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -23,14 +27,16 @@ public class RecordUtils {
 
 
 
-
     public RecordUtils(String type){
         this.project = MainProcess.PROJECT_NAME;
         this.type = type;
-        File recordPackage = new File(System.getProperty("user.dir")+"/"+type+"/");
+        File recordPackage = new File(Config.RESULT_PATH+"/"+type+"/");
         recordPackage.mkdirs();
         File recordFile = new File(recordPackage.getAbsolutePath()+"/"+project);
         try {
+            if (!recordFile.exists()){
+                recordFile.createNewFile();
+            }
             this.writer = new FileWriter(recordFile, true);
         }
         catch (IOException e){
@@ -58,7 +64,7 @@ public class RecordUtils {
 
 
     public static void record(String message, String identity){
-        File recordFile = new File(System.getProperty("user.dir")+"/"+identity+".log");
+        File recordFile = new File(Config.RESULT_PATH+"/"+identity+".log");
         try {
             if (!recordFile.exists()){
                 recordFile.createNewFile();
@@ -73,12 +79,12 @@ public class RecordUtils {
     }
 
     public static void recordIfReturn(String code, String patch, int line, String project){
-        File patchSourcePackage = new File(System.getProperty("user.dir")+"/patch_source");
+        File patchSourcePackage = new File(Config.PATCH_SOURCE_PATH);
         if (!patchSourcePackage.exists()){
             patchSourcePackage.mkdirs();
         }
         try {
-            File patchSource = new File(patchSourcePackage.getAbsolutePath()+"/"+project+"_if_return.java");
+            File patchSource = new File(patchSourcePackage.getAbsolutePath()+"/"+project+"_if_return_" +".java");
             if (!patchSource.exists()){
                 patchSource.createNewFile();
             }
@@ -97,12 +103,12 @@ public class RecordUtils {
 
 
     public static void recordIf(String code, String ifString, int startLine, int endLine, boolean replace,String project){
-        File patchSourcePackage = new File(System.getProperty("user.dir")+"/patch_source");
+        File patchSourcePackage = new File(Config.PATCH_SOURCE_PATH);
         if (!patchSourcePackage.exists()){
             patchSourcePackage.mkdirs();
         }
         try {
-            File patchSource = new File(patchSourcePackage.getAbsolutePath()+"/"+project+"_if.java");
+            File patchSource = new File(patchSourcePackage.getAbsolutePath()+"/"+project+"_if_"+".java");
             if (!patchSource.exists()){
                 patchSource.createNewFile();
             }
@@ -149,7 +155,7 @@ public class RecordUtils {
     }
 
     public static void printRuntimeMessage(Suspicious suspicious, String project, List<ExceptionVariable> exceptionVariables, List<List<ExceptionVariable>> echelons, long searchTime){
-        RecordUtils writer = new RecordUtils("RuntimeMessage");
+        RecordUtils writer = new RecordUtils("runtimeMessage");
         writer.write("---------------------------------------------------\n");
         writer.write("suspicious variable of suspicious before sort: "+suspicious.classname()+"#"+suspicious.functionnameWithoutParam()+"#"+suspicious.getDefaultErrorLine()+"\n");
         for (ExceptionVariable variable: exceptionVariables){
@@ -175,6 +181,52 @@ public class RecordUtils {
         writer.write("---------------------------------------------------\n");
         writer.write("====================================================\n\n");
         writer.write("Search Boundary Cost Time: "+searchTime/1000+"\n");
+        writer.close();
+    }
+
+
+
+    public static void printHistoryBoundary(
+            Map<String, List<String>> boundary,
+            String ifStatement,
+            Suspicious suspicious,
+            List<String> methodOneHistory,
+            List<String> methodTwoHistory,
+            List<String> bannedHistory){
+        RecordUtils patchWriter = new RecordUtils("patch");
+        patchWriter.write("====================================================\n");
+        patchWriter.write("boundary of suspicious: "+suspicious.classname()+"#"+suspicious.functionnameWithoutParam()+"#"+suspicious.getDefaultErrorLine()+"\n");
+        patchWriter.write(MathUtils.replaceSpecialNumber(ifStatement)+"\n");
+        patchWriter.close();
+
+        RecordUtils writer = new RecordUtils("patch");
+        for (Map.Entry<String, List<String>> entry: boundary.entrySet()){
+            String assertString = entry.getKey();
+            writer.write("====================================================\n");
+            writer.write("Tried ifStrings With AssertMessage:"+assertString+"\n");
+            for (String ifString: methodOneHistory){
+                writer.write(ifString+"\n");
+            }
+            for (String ifString: methodTwoHistory){
+                writer.write(ifString+"\n");
+            }
+            writer.write("====================================================\n");
+            writer.write("Banned ifStrings With AssertMessage:"+assertString+"\n");
+            for (String ifString: bannedHistory){
+                writer.write(ifString+"\n");
+            }
+            writer.write("====================================================\n\n");
+        }
+        writer.close();
+    }
+
+    public static void printCollectingMessage(Suspicious suspicious, TimeLine timeLine){
+        RecordUtils writer = new RecordUtils("runtimeMessage");
+
+        writer.write("Whole Cost Time: "+timeLine.time() +"\n");
+        writer.write("True Test Num: "+suspicious.trueTestNums()+"\n");
+        writer.write("True Assert Num: "+suspicious.trueAssertNums()+"\n");
+        writer.write("====================================================================\n\n");
         writer.close();
     }
 

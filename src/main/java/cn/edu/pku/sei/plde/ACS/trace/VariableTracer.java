@@ -3,6 +3,7 @@ package cn.edu.pku.sei.plde.ACS.trace;
 import cn.edu.pku.sei.plde.ACS.assertCollect.Asserts;
 import cn.edu.pku.sei.plde.ACS.junit.JunitRunner;
 import cn.edu.pku.sei.plde.ACS.localization.Suspicious;
+import cn.edu.pku.sei.plde.ACS.main.Config;
 import cn.edu.pku.sei.plde.ACS.type.TypeUtils;
 import cn.edu.pku.sei.plde.ACS.utils.*;
 
@@ -127,9 +128,9 @@ public class VariableTracer {
 
     private void deleteTempFile(){
         //clean temp file
-        File tempPackage = new File(System.getProperty("user.dir")+"/temp/");
+        File tempPackage = new File(Config.TEMP_FILES_PATH);
         for (String file: tempPackage.list()){
-            File tempFile = new File(System.getProperty("user.dir")+"/temp/"+file);
+            File tempFile = new File(Config.TEMP_FILES_PATH+file);
             if (tempFile.exists()){
                 if (tempFile.isDirectory()){
                     FileUtils.deleteDir(tempFile);
@@ -352,7 +353,7 @@ public class VariableTracer {
         }
         CodeUtils.addCodeToFile(sourceFile,spreadString,methodStartLine);
         try {
-            System.out.println(ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath(),_testClasspath,_classpath)) +" -d "+_testClasspath+" "+ sourceFile.getAbsolutePath())));
+            ShellUtils.shellRun(Arrays.asList("javac -Xlint:unchecked -source 1.6 -target 1.6 -cp "+ buildClasspath(Arrays.asList(PathUtils.getJunitPath(),_testClasspath,_classpath)) +" -d "+_testClasspath+" "+ sourceFile.getAbsolutePath()));
         } catch (IOException e){
             e.printStackTrace();
         }

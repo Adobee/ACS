@@ -18,6 +18,7 @@ import java.util.*;
  */
 public class SuspiciousFixer {
     public static int FAILED_TEST_NUM = 0;
+
     public Map<ExceptionVariable, List<String>> boundarysMap = new HashMap<>();
     private Map<VariableInfo, List<String>> trueValues;
     private Map<VariableInfo, List<String>> falseValues;
@@ -81,6 +82,7 @@ public class SuspiciousFixer {
         trueValues = AbandanTrueValueFilter.getTrueValue(traceResults, suspicious.getAllInfo());
         falseValues = AbandanTrueValueFilter.getFalseValue(traceResults, suspicious.getAllInfo());
         exceptionVariables = extractor.extract(suspicious,traceResults);
+
         List<List<ExceptionVariable>> echelons = extractor.sort();
         for (List<ExceptionVariable> echelon: echelons) {
             Map<String, List<String>> boundarys = new HashMap<>();
@@ -102,7 +104,7 @@ public class SuspiciousFixer {
                 String methodOneResult = fixMethodOne(suspicious,boundaryCopy, project, line, false);
                 RecordUtils.printRuntimeMessage(suspicious, project, exceptionVariables, echelons, line);
                 if (!methodOneResult.equals("")) {
-                    printHistoryBoundary(boundarys, methodOneResult);
+                    RecordUtils.printHistoryBoundary(boundarys, methodOneResult, suspicious, methodOneHistory, methodTwoHistory, bannedHistory);
                     return true;
                 }
             }
@@ -117,7 +119,7 @@ public class SuspiciousFixer {
             String methodTwoResult = fixMethodTwo(suspicious, filter.filter(line,boundaryCopy,traceResults), project, line, false);
             RecordUtils.printRuntimeMessage(suspicious, project, exceptionVariables, echelons, line);
             if (!methodTwoResult.equals("")) {
-                printHistoryBoundary(boundarys, methodTwoResult);
+                RecordUtils.printHistoryBoundary(boundarys, methodTwoResult, suspicious, methodOneHistory, methodTwoHistory, bannedHistory);
                 return true;
             }
         }
@@ -176,29 +178,7 @@ public class SuspiciousFixer {
                     returnList.add(ifString);
                 }
             }
-            /*
-            boolean addedFlag = false;
-            for (Map.Entry<ExceptionVariable, ArrayList<String>> entry: result.entrySet()){
-                if (entry.getKey().name.equals(exceptionVariable.name)){
-                    entry.getValue().removeAll(boundarys);
-                    entry.getValue().addAll(boundarys);
-                    addedFlag = true;
-                    break;
-                }
-            }
-            if (!addedFlag){
-                result.put(exceptionVariable, boundarys);
-            }*/
         }
-        /*
-        for (List<String> list: result.values()){
-            for (String statement: list){
-                String ifString = MathUtils.replaceSpecialNumber(getIfStatementFromBoundary(statement));
-                if (!returnList.contains(ifString) && !ifString.equals("")){
-                    returnList.add(ifString);
-                }
-            }
-        }*/
         return returnList;
     }
 
@@ -308,34 +288,5 @@ public class SuspiciousFixer {
             }
         }
         return false;
-    }
-
-
-    private void printHistoryBoundary(Map<String, List<String>> boundary, String ifStatement){
-        RecordUtils patchWriter = new RecordUtils("patch");
-        patchWriter.write("====================================================\n");
-        patchWriter.write("boundary of suspicious: "+suspicious.classname()+"#"+suspicious.functionnameWithoutParam()+"#"+suspicious.getDefaultErrorLine()+"\n");
-        patchWriter.write(MathUtils.replaceSpecialNumber(ifStatement)+"\n");
-        patchWriter.close();
-
-        RecordUtils writer = new RecordUtils("patch");
-        for (Map.Entry<String, List<String>> entry: boundary.entrySet()){
-            String assertString = entry.getKey();
-            writer.write("====================================================\n");
-            writer.write("Tried ifStrings With AssertMessage:"+assertString+"\n");
-            for (String ifString: methodOneHistory){
-                writer.write(ifString+"\n");
-            }
-            for (String ifString: methodTwoHistory){
-                writer.write(ifString+"\n");
-            }
-            writer.write("====================================================\n");
-            writer.write("Banned ifStrings With AssertMessage:"+assertString+"\n");
-            for (String ifString: bannedHistory){
-                writer.write(ifString+"\n");
-            }
-            writer.write("====================================================\n\n");
-        }
-        writer.close();
     }
 }

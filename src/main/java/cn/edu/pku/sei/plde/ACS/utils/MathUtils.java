@@ -50,20 +50,9 @@ public class MathUtils {
         if (value.contains("-Infinity")) {
             return Double.NEGATIVE_INFINITY;
         }
-        //if (value.contains("null") || value.contains("NaN")) {
-        //    return Double.NaN;
-        //}
         if (value.endsWith(".0")) {
             value = value.substring(0, value.lastIndexOf("."));
         }
-        //if (!number.contains(value.charAt(value.length()-1))){
-        //    if (value.length() == 1){
-        //        throw new NumberFormatException();
-        //    }
-        //    value = value.substring(0, value.length()-1);
-
-        //}
-
         return Double.valueOf(value);
     }
 
@@ -266,6 +255,8 @@ public class MathUtils {
     public static String replaceSpecialNumber(String ifString){
         ifString = ifString.replace(String.valueOf(Integer.MIN_VALUE),"Integer.MIN_VALUE");
         ifString = ifString.replace(String.valueOf(Integer.MAX_VALUE),"Integer.MAX_VALUE");
+        ifString = ifString.replace("(int)-2.147483648E9","Integer.MIN_VALUE");
+        ifString = ifString.replace("(int)2.147483647E9","Integer.MAX_VALUE");
         ifString = ifString.replace("-2.147483648E9","Integer.MIN_VALUE");
         ifString = ifString.replace("2.147483647E9","Integer.MAX_VALUE");
         ifString = ifString.replace("(long)-9.223372036854776E18","Long.MIN_VALUE");
