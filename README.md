@@ -3,9 +3,38 @@ ACS
 ====
 Accurate Condition Synthesis
 
+1. Requirement
+----------------
+ - Linux environment
+ - Java 1.7
+ - Python 2.7
+ 
+2. How to run the ACS
+---------------------
+1. Clone the ACS:
+  - `git clone https://github.com/Adobee/ACS.git`
 
-1. ACS Correct Patches
------------------------
+2. Checkout a buggy source code version from Defects4j anc compile it:
+  - `defects4j checkout -p Lang -v 1b -w /tmp/lang_1`
+  - `cd /tmp/lang_1_buggy`
+  - `defects4j compile`
+ 
+ the forder name of checkout must format as '`projectName_buggyID`' because the ACS needs it's project name and buggy id to generate it's classpath, source path etc.
+
+3. Run the Jar with the parent path of Defects4j buggy version project forder:
+  - `java -jar ACS.jar /tmp/`
+ 
+ and ACS will automatically find all formatted folder and run with it.
+
+  Or run with specific buggy projects in `/tmp/` forder:
+  - `java -jar ACS.jar /tmp/ lang_1`
+  - `java -jar ACS.jar /tmp/ lang_1:lang_2:lang_3`
+  - `java -jar ACS.jar /tmp/ ban:lang_1`
+3. Evaluation 
+--------------------
+
+###1.ACS Correct Patches
+
 ACS generates correct patches for 18 defects. For each defect, we provide the urls that contain the developer patch and we either identify the ACS patch is semantically equivalent to the developer patch and provide a brief analysis for why the ACS patch is correct.
 
 ####1.Chart14
