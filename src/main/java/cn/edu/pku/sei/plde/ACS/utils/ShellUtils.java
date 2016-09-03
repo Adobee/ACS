@@ -80,7 +80,6 @@ public class ShellUtils {
                 outputStream.close();
             }
         }
-
         batFile.deleteOnExit();
         Process process= Runtime.getRuntime().exec(cmd);
         return ShellUtils.getShellOut(process);

@@ -15,9 +15,11 @@ public class WriteFile {
 			if (outputFile.exists())
 				outputFile.delete();
 			outputFile.createNewFile();
-			BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile));
+			FileWriter fw = new FileWriter(outputFile);
+			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write(content + "\r\n");
 			bw.close();
+			fw.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

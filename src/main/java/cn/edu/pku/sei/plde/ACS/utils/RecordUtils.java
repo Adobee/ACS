@@ -141,7 +141,7 @@ public class RecordUtils {
 
 
     public static void printBoundaryCollectMessage(List<Map.Entry<Interval, Integer>> intervalsMap){
-        RecordUtils writer = new RecordUtils("intervalMessage");
+        RecordUtils writer = new RecordUtils("predicateMessage");
         writer.write("---------------------------------------------------\n");
         writer.write("variable: "+ BoundaryGenerator.GENERATING_VARIABLE.name+"\n");
         writer.write("value   : "+ BoundaryGenerator.GENERATING_VARIABLE.values+"\n");

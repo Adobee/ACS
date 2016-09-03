@@ -16,21 +16,6 @@ import java.util.zip.ZipFile;
 
 
 public class FileUtils {
-	public static void writeFile(String fileName, String content) {
-		try {
-			File outputFile = new File(fileName);
-			if (!outputFile.getParentFile().exists())
-				outputFile.getParentFile().mkdirs();
-			if (outputFile.exists())
-				outputFile.delete();
-			outputFile.createNewFile();
-			BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile));
-			bw.write(content + "\r\n");
-			bw.close();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
 
 	public static ArrayList<String> getJavaFilesInProj(String projectPath) {
 		File file = new File(projectPath);

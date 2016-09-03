@@ -4,6 +4,7 @@ package cn.edu.pku.sei.plde.ACS.gatherer;
  * Created by wangjie on 2016/5/21.
  */
 
+import cn.edu.pku.sei.plde.ACS.file.WriteFile;
 import cn.edu.pku.sei.plde.ACS.utils.FileUtils;
 import net.sf.json.JSONArray;
 import net.sf.json.JSONException;
@@ -82,7 +83,7 @@ public class GathererJavaCodeSnippet {
             for(int i = 0; i < codeSnippets.size(); i ++) {
                 System.out.println("i = " + i);
                 System.out.println(codeSnippets.get(i));
-                FileUtils.writeFile("experiment//searchcode//" + packageName + "//" + i + ".java", codeSnippets.get(i));
+                WriteFile.writeFile("experiment//searchcode//" + packageName + "//" + i + ".java", codeSnippets.get(i));
             }
         } catch (Exception e) {
             e.printStackTrace();

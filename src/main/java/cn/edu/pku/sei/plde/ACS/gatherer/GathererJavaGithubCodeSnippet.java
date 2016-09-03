@@ -4,6 +4,7 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Random;
 
+import cn.edu.pku.sei.plde.ACS.file.WriteFile;
 import cn.edu.pku.sei.plde.ACS.utils.FileUtils;
 import cn.edu.pku.sei.plde.ACS.utils.RequestUtils;
 import org.apache.commons.httpclient.*;
@@ -85,7 +86,7 @@ public class GathererJavaGithubCodeSnippet {
             for(int i = 0; i < codeSnippets.size(); i ++) {
                 //System.out.println("i = " + i);
                 System.out.println(codeSnippets.get(i));
-                FileUtils.writeFile("experiment//searchcode//" + packageName + "//" + i + ".code", codeSnippets.get(i));
+                WriteFile.writeFile("experiment//searchcode//" + packageName + "//" + i + ".code", codeSnippets.get(i));
             }
         } catch (Exception e) {
             e.printStackTrace();

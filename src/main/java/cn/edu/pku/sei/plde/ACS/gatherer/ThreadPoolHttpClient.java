@@ -4,6 +4,7 @@ package cn.edu.pku.sei.plde.ACS.gatherer;
  * Created by yjxxtd on 2/24/16.
  */
 
+import cn.edu.pku.sei.plde.ACS.file.WriteFile;
 import cn.edu.pku.sei.plde.ACS.utils.FileUtils;
 import net.sf.json.JSONObject;
 import org.apache.http.HttpEntity;
@@ -94,7 +95,7 @@ public class ThreadPoolHttpClient {
                         }
                           JSONObject jsonObj = JSONObject.fromObject(html);
                         String code = jsonObj.get("code").toString();
-                        FileUtils.writeFile("experiment//searchcode//" + packageName + "//" + id + ".java", code);
+                        WriteFile.writeFile("experiment//searchcode//" + packageName + "//" + id + ".java", code);
                     }
                 } finally {
                     response.close();

@@ -58,7 +58,6 @@ public class Main {
                 }
                 System.exit(0);
             }
-
         }
         for (File sub_file : sub_files){
             if (sub_file.isDirectory()){
@@ -103,6 +102,7 @@ public class Main {
             Format format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             writer.write("project "+project+" begin Time:"+format.format(new Date())+"\n");
             writer.close();
+            cleanPrevResult(project);
             result = process.mainProcess(projectType, projectNumber, timeLine);
             writer = new FileWriter(main, true);
             writer.write("project "+project+" "+(result?"Success":"Fail")+" Time:"+format.format(new Date())+"\n");
@@ -113,10 +113,25 @@ public class Main {
         if (!result){
            processFail(project, timeLine);
         }
-
-
     }
 
+    private static void cleanPrevResult(String projectName){
+        cleanMessage(Config.PATCH_PATH, projectName);
+        cleanMessage(Config.LOCALIZATION_PATH, projectName);
+        cleanMessage(Config.PATCH_SOURCE_PATH, projectName);
+        cleanMessage(Config.RUNTIMEMESSAGE_PATH, projectName);
+        cleanMessage(Config.PREDICATE_MESSAGE_PATH, projectName);
+    }
+
+    private static void cleanMessage(String forder, String projectName){
+        if (new File(forder).exists() && new File(forder).isDirectory()){
+            for (File file: new File(forder).listFiles()){
+                if (file.getName().startsWith(projectName)){
+                    file.delete();
+                }
+            }
+        }
+    }
 
     private static void processFail(String project, TimeLine timeLine){
         File[] patchFiles = {

@@ -5,6 +5,7 @@ package cn.edu.pku.sei.plde.ACS.gatherer;
  */
 
 
+import cn.edu.pku.sei.plde.ACS.file.WriteFile;
 import org.apache.http.HttpEntity;
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;
@@ -89,7 +90,7 @@ public class ThreadPoolHttpClientGithub {
                     // get the response body as an array of bytes
                     HttpEntity entity = response.getEntity();
                     if (entity != null) {
-                        writeFile("experiment//searchcode//" + packageName + "//" + id + ".java", EntityUtils.toString(entity));
+                        WriteFile.writeFile("experiment//searchcode//" + packageName + "//" + id + ".java", EntityUtils.toString(entity));
                     }
                 } finally {
                     response.close();
@@ -100,19 +101,5 @@ public class ThreadPoolHttpClientGithub {
         }
     }
 
-    public static void writeFile(String fileName, String content) {
-        try {
-            File outputFile = new File(fileName);
-            if (!outputFile.getParentFile().exists())
-                outputFile.getParentFile().mkdirs();
-            if (outputFile.exists())
-                outputFile.delete();
-            outputFile.createNewFile();
-            BufferedWriter bw = new BufferedWriter(new FileWriter(outputFile));
-            bw.write(content + "\r\n");
-            bw.close();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+
 }

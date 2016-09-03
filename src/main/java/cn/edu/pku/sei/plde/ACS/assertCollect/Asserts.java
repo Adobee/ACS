@@ -115,9 +115,6 @@ public class Asserts {
                 String code = FileUtils.getCodeFromFile(tempJavaFile);
                 String lineString = CodeUtils.getLineFromCode(code,lineNum).trim();
                 if (AssertUtils.isAssertLine(lineString, code)){
-                    if (LineUtils.isLineInFor(code, lineNum)){
-                        RecordUtils.record("Assert In For: "+_project+" Test: "+_testClassname+"#"+_testMethodName+"#"+lineNum, "assertInFor");
-                    }
                     _thrownExceptionMap.put(lineNum, thrownExceptions);
                     result.add(lineNum);
                 }
