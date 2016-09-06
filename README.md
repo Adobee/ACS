@@ -126,7 +126,7 @@ ACS generates correct patches for 18 defects. For each defect, we provide the ur
 ####12.Math90
 [The developer patches](https://github.com/Adobee/ACS/tree/master/patch/Developer/Math90/src/java/org/apache/commons/math/stat)
 
-[The ACS correct patches]((https://github.com/Adobee/ACS/blob/master/patch/ACS/Math90/src/java/org/apache/commons/math/stat/Frequency.java)
+[The ACS correct patches](https://github.com/Adobee/ACS/blob/master/patch/ACS/Math90/src/java/org/apache/commons/math/stat/Frequency.java)
 
 >Analysis:The ACS generated patch is identical to the developer patch.
 
@@ -198,3 +198,24 @@ ACS generates correct patches for 18 defects. For each defect, we provide the ur
 [The developer patches](https://github.com/Adobee/ACS/blob/master/patch/Developer/Math97/src/main/java/org/apache/commons/math/analysis/BrentSolver.java)
 
 [The ACS incorrect patches](https://github.com/Adobee/ACS/blob/master/patch/ACS/Math97/src/main/java/org/apache/commons/math/analysis/BrentSolver.java)
+
+###3.Performance Data of the Three Techniques
+
+[DEPENDENCY-BASED ORDERING PERFORMANCE LEVEL DATA](https://github.com/Adobee/ACS/blob/master/patch/evaluation/DEPENDENCY-BASED%20ORDERING%20PERFORMANCE%20LEVEL%20DATA.log)
+
+>**Format:** Easy to understand
+
+
+[DEPENDENCY-BASED ORDERING PERFORMANCE RANK DATA](https://github.com/Adobee/ACS/blob/master/patch/evaluation/DEPENDENCY-BASED%20ORDERING%20PERFORMANCE%20RANK%20DATA.log)
+
+>**Format:** Variable rank / Total
+
+
+[PREDICATE MINING PERFORMANCE DATA](https://github.com/Adobee/ACS/blob/master/patch/evaluation/PREDICATE%20MINING%20PERFORMANCE%20DATA.log)
+
+>**Format:** Easy to understand
+
+
+[DOCUMENT ANALYSIS PERFORMANCE DATA](https://github.com/Adobee/ACS/blob/master/patch/evaluation/DOCUMENT%20ANALYSIS%20PERFORMANCE%20DATA.log)
+
+>**Format:** JavaDoc comment / condition expression / list of variable name 
