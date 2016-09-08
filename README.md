@@ -135,7 +135,7 @@ ACS generates correct patches for 18 defects. For each defect, we provide the ur
 
 [The ACS correct patches](https://github.com/Adobee/ACS/blob/master/patch/ACS/Math93/src/java/org/apache/commons/math/util/MathUtils.java)
 
->Analysis:There are three developer patches, but the third patch has nothing to do with the bug, and the other two developer patches are identical to ACS's patches. Note that, the predicate in ACS patch is < 20, which in developer patch is <= 20, , so we need not to consider the factorial of 20.
+>Analysis:The developer patch contains three parts, and the last part is not related to the defect. The first and second part are identical to ACS patch. The second part uses n < 21 while ACS patch uses n < 20. However, when n is equal to 20, either the true branch or the false branch produce exactly the same result.
 
 ####14.Math99
 [The developer patches](https://github.com/Adobee/ACS/blob/master/patch/Developer/Math99/src/java/org/apache/commons/math/util/MathUtils.java)
@@ -156,7 +156,7 @@ ACS generates correct patches for 18 defects. For each defect, we provide the ur
 
 [The ACS correct patches](https://github.com/Adobee/ACS/blob/master/patch/ACS/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java)
 
->Analysis:The developer patch uses the trim() method, however the comment “This method does not trim the input string, i.e., strings with leading or trailing spaces will generate NumberFormatExceptions.” shows that the leading and trailing spaces have been checked, and there is no need to use the trim() method. So the ACS generated patch is identical to the developer patch.
+>Analysis:The developer patch uses the trim() method, while ACS patch does not. However, there is an additional check(line 552) to ensure that the string does not have space, so calling trim() is not necessary.
 
 ####17.Lang24
 [The developer patches](https://github.com/Adobee/ACS/blob/master/patch/Developer/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java)
