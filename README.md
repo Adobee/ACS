@@ -156,7 +156,8 @@ ACS generates correct patches for 18 defects. For each defect, we provide the ur
 
 [The ACS correct patches](https://github.com/Adobee/ACS/blob/master/patch/ACS/Lang7/src/main/java/org/apache/commons/lang3/math/NumberUtils.java)
 
->Analysis:The developer patch uses the trim() method, while ACS patch does not. However, there is an additional check(line 552 in the latter url) to ensure that the input of the createBigDecimal() method does not have the leading or trailing spaces, so calling trim() is not necessary.
+>Analysis:The developer patch uses the trim() method, while ACS patch does not. However, the method createBigDecimal() will only be called by createNumber(), which ensures that
+the parameter "str" does not contain any space. So calling trim() is not necessary and the two patches are identical.
 
 ####17.Lang24
 [The developer patches](https://github.com/Adobee/ACS/blob/master/patch/Developer/Lang24/src/main/java/org/apache/commons/lang3/math/NumberUtils.java)
