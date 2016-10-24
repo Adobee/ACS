@@ -26,7 +26,7 @@ public class GathererJavaGithubCodeSnippet {
     private static final int API_PAGE_NUM = 8;
 
     private static final String API_SEARCH_CODE_BASE_URL = "https://github.com/search?l=java&";
-    private static final String API_SEARCH_CODE_POST_URL = "&ref=searchresults&type=Code&utf8=✓";
+    private static final String API_SEARCH_CODE_POST_URL = "&ref=searchresults&type=Code&utf8=%E2%9C%93";
     private static final String CODE_BASE_URL = "https://raw.githubusercontent.com";
 
 
