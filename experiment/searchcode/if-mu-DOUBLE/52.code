@@ -1,0 +1,13 @@
+public class InverseGaussianDistribution extends DistributionResponseTimePredictor{
+
+private double mu;
+private double lambda;
+
+public InverseGaussianDistribution(double mu, double lambda) {
+this.mu = mu;
+this.lambda = lambda;
+}
+
+@Override
+public String getLabel() {
+

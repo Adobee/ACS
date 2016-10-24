@@ -1,0 +1,15 @@
+import javax.persistence.AttributeConverter;
+
+import org.joda.time.LocalDate;
+
+/**
+* Converts a Joda LocalDate <-> JPA 2.1 date
+* @see https://github.com/smsiebe/joda-jpa-converters
+public LocalDate convertToEntityAttribute(Date date) {
+if (date == null) {
+return null;
+}
+return LocalDate.fromDateFields(date);
+}
+}
+

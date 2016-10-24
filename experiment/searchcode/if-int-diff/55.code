@@ -1,0 +1,8 @@
+public int get(int[] a, int[] b) {
+int moves = 0;
+for(int i = 0; i < a.length - 1; i++) {
+int diff = b[i] - a[i];
+
+for(int j = i + 1; j < b.length; j++) {
+if(diff > 0) {
+

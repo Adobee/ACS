@@ -1,0 +1,11 @@
+private static final String DEFAULT_DELIMITER = &quot;,&quot;;
+
+private DoubleUtil() {
+}
+
+public static double[] parseDoubleArray(String stringToParse) {
+String[] stringArray = stringToParse.split(delimiter, -1);
+
+double[] doubleArray = new double[stringArray.length];
+for (int index = 0; index < stringArray.length; index++) {
+

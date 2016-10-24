@@ -1,0 +1,4 @@
+jfreeChart.getLegend().setItemFont(new Font(&quot;黑体&quot;, Font.BOLD, 15));
+if(jfreeChart.getTitle() != null){
+jfreeChart.getTitle().setFont(new Font(&quot;宋体&quot;,Font.BOLD,20));//设置标题字体
+

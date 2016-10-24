@@ -1,0 +1,9 @@
+IntByReference errorPos = new IntByReference();
+StringBuffer errorMessage = new StringBuffer();
+
+if (this.isConnected == false) {
+ListExpr resultList = execute(&quot;list databases&quot;, errorCode, errorPos,
+errorMessage, true);
+
+if (resultList.isEmpty()) // no result
+

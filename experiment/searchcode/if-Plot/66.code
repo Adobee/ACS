@@ -1,0 +1,12 @@
+plotHDFS(countersList, isMapTask);
+
+if(isMapTask) {
+plotMapRecords(countersList);
+
+plotMapBytes(countersList);
+plot.set(&quot;using&quot;, &quot;1:2&quot;);
+p.addPlot(plot);
+
+if(isMapTask) {
+plot = new DataSetPlot(dataSet);
+

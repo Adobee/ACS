@@ -1,0 +1,9 @@
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.print.PageFormat;
+import java.awt.print.Paper;
+p.setImageableArea(0,0,0,0);
+pf1.setPaper(p);
+PageFormat pf2 = job.validatePage(pf1);
+job.setPrintable(this, pf2);
+

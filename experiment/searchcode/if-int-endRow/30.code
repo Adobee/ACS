@@ -1,0 +1,10 @@
+public int[][] generateMatrix(int n) {
+if (n < 0)
+return null;
+
+int[][] matrix = new int[n][];
+matrix[endRow][j] = index++;
+
+if (endRow != startRow)
+for (int i = endRow - 1; i > startRow; i--)
+

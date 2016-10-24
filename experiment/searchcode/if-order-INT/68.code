@@ -1,0 +1,8 @@
+World w = t.getWorld();
+int len = t.order.length;
+int[] order = t.order;
+
+float initialcost = t.getCost();
+float subcost = initialcost - w.getCost(order[i], order[i+1]) - w.getCost(order[j], order[j+1]);
+if(notoverend) subcost -= w.getCost(order[k], order[(k+1) % len]);
+

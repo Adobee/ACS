@@ -1,0 +1,10 @@
+public Dimension inside(Dimension canvas, Dimension widget, Dimension aspect) {
+int h = canvas.height / widget.height;
+int w = aspector.adjustw(h, aspect);
+private Dimension other(Dimension canvas, Dimension widget, Dimension aspect) {
+int w = canvas.width / widget.width;
+int h = aspector.adjusth(w, aspect);
+return new Dimension(w, h);
+}
+}
+

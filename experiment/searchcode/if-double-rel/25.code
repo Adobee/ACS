@@ -1,0 +1,11 @@
+avt += dt;
+nt++;
+
+// which bin ?
+double bin = 100.0*(dt/(10.0*tau));
+int ibin = (int)bin;
+if (bin >= 100)
+for (int i = 0; i < 100; i++) {
+double time = 0.1*(double)i/(60000.0*tau);
+double rel = (double)count[i]/(double)nt;
+

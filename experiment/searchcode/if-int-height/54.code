@@ -1,0 +1,14 @@
+private static int maxHeight(int[] tree) {
+
+if (tree == null || tree.length == 0) {
+return -1;
+}
+
+int maxHeight = -1;
+return maxHeight;
+}
+
+private static int findHeight(int index, int[] tree, int[] height) {
+
+if (height[index] != -1) {
+

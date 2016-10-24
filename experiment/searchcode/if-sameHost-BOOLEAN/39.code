@@ -1,0 +1,12 @@
+public static final String SAME_HOST_SETTING = &quot;cluster.routing.allocation.same_shard.host&quot;;
+
+private final boolean sameHost;
+
+@Inject
+public SameShardAllocationDecider(Settings settings) {
+&quot;the shard cannot be allocated on the same node id [%s] on which it already exists&quot;, node.nodeId());
+}
+}
+if (sameHost) {
+if (node.node() != null) {
+

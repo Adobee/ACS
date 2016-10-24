@@ -1,0 +1,8 @@
+public final Point2 p1, p2;
+public final Vector2 v;
+public final double a, b, c;
+
+public Line2(Point2 p1, Point2 p2) {
+if (p1.x > p2.x || (p1.x == p2.x &amp;&amp; p1.y > p2.y)) {
+Point2 p = p1;
+

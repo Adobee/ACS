@@ -1,0 +1,9 @@
+package sdt.data;
+
+import java.util.ArrayList;
+import sdt.stepb.stepb_cartesian_point;
+import sdt.stepb.math_vector3d;
+public CartesianPointSetsBrick setDisplacementArray(stepb_cartesian_point_array displacementArray, double scale)
+{
+displacementArray.rearrangeTable();
+

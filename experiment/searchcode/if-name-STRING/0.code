@@ -1,0 +1,22 @@
+package blogg;
+
+
+public class Category {
+private String name;
+
+public String getName() {
+return name;
+}
+
+/**
+* @param name
+*/
+public void setName(String name) {
+
+
+if (!name.contains(&quot;.&quot;)) {
+this.name = name;
+}
+}
+}
+

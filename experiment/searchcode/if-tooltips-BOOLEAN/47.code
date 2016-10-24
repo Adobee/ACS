@@ -1,0 +1,13 @@
+entry = (shift ? SHIFT_TOOLTIPS : TOOLTIPS).register(ingredient, tooltip);
+}
+
+@Override
+public boolean canUndo() {
+return true;
+}
+
+@Override
+public void undo() {
+if (shift) {
+SHIFT_TOOLTIPS.unregister(entry);
+

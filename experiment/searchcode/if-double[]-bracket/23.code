@@ -1,0 +1,10 @@
+PayeResult payeResult = calculatePaye(grossSalary, nhif, nssf, otherPayeExempt);
+
+double taxBracket = payeResult.getTaxBracket();
+double paye = payeResult.getPaye();
+double paye = 0.0 - PERSONAL_RELIEF;
+double taxBracket = 0.0;
+double taxedGrossSalary = 0.0;
+
+for (IncomeBracket ib : incomeBrackets()) {
+

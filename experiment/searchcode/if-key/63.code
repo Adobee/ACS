@@ -1,0 +1,11 @@
+public interface OrderedMap<Key, Value> extends Map<Key, Value>
+{
+Key minKey();
+
+Key maxKey();
+
+// greatest key less than key, or null if there is no such key
+Key lowerKey(Key key);
+
+// greatest key less than or equal key, or null if there is no such key
+

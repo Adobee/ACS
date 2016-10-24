@@ -1,0 +1,9 @@
+public static double calculatePearsonCorrelationCoefficient(double x[],
+double y[], int n) {
+double sum_x = 0., sum_y = 0., sum_x2 = 0., sum_y2 = 0., sum_xy = 0.;
+/ Math.sqrt(((n * sum_x2) - (sum_x * sum_x))
+* ((/* x.length */n * sum_y2) - (sum_y * sum_y)));
+}
+
+public static double[][] calculatePearsonCorrelationCoefficientMatrix(
+

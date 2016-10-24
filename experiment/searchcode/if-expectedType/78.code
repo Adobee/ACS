@@ -1,0 +1,8 @@
+final class TypeCheckerVerifier<ValueType> implements PropertyVerifier<ValueType> {
+private final Class<ValueType> expectedType;
+return null;
+}
+
+Class<?> valueClass = value.getClass();
+if (!expectedType.isAssignableFrom(valueClass)) {
+

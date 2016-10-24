@@ -1,0 +1,7 @@
+public static String getDifference(Context context, long fromMs, long toMs) {
+String value;
+long deltaSeconds = java.util.concurrent.TimeUnit.MILLISECONDS.toSeconds(java.lang.Math.round((double)(toMs - fromMs)));
+value = &quot;&quot;;
+} else if (deltaSeconds < 1) {
+value = context.getString(R.string.reltime_just_now);
+

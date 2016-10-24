@@ -1,0 +1,13 @@
+assign(y, x);
+return y;
+}
+
+public static void assign(double[] y, double[] x) {
+if (x.length != y.length)
+throw new RuntimeException(&quot;diff lengths: &quot; + x.length + &quot; &quot;
+System.arraycopy(x, 0, y, 0, x.length);
+}
+
+public static double innerProduct(double[] x, double[] y) {
+if (x.length != y.length)
+

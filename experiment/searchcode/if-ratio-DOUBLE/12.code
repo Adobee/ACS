@@ -1,0 +1,6 @@
+* riseRatioOfDecade 近10年的利润增长率,一般不超过30%;
+*/
+public static double calculate(double profit,double riseRatioOfDecade){
+//System.out.println(&quot;riseRatioOfDecade = &quot; + riseRatioOfDecade);
+double riseRatioAfterTenYear = 0.05;  //10年后的增长率，一般为5%;
+

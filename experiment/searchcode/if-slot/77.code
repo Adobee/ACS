@@ -1,0 +1,12 @@
+public SlotStatus terminate()
+{
+if (slotStatus.getState() == STOPPED) {
+slotStatus = slotStatus.changeState(TERMINATED);
+return slotStatus;
+}
+
+@Override
+public SlotStatus start()
+{
+if (slotStatus.getAssignment() == null) {
+

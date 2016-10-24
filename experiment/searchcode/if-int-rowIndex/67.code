@@ -1,0 +1,5 @@
+public boolean dfs(char[][] board, String word, int index, int rowindex, int colindex, boolean[][] visited) {
+if (index == word.length())
+return true;
+if (rowindex < 0 || colindex < 0 || rowindex >=board.length || colindex >= board[0].length)
+

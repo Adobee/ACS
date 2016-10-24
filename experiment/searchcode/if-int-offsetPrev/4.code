@@ -1,0 +1,11 @@
+public class FileOperation {
+static int countWords=0,count=0,countFiles=0;
+static String outputFile=&quot;.&quot;;
+static TreeMap<String,String> postingList=null;
+line =secondIndex.readLine();
+
+}
+
+if(wordCount++==100){
+outputTer.write(currentWord+&quot;:&quot;+offsetPrev+&quot;\n&quot;);
+

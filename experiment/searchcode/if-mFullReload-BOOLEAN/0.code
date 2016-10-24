@@ -1,0 +1,9 @@
+private boolean mShowLiveStreamedSessions = false;
+
+private boolean mFullReload = true;
+
+public View onCreateView(LayoutInflater inflater, ViewGroup container,
+Cursor oldCursor = mSessionsAdapter.swapCursor(cursor);
+if (oldCursor == null) {
+mFullReload = false;
+

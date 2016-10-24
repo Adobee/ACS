@@ -1,0 +1,10 @@
+vec.add(a);
+}
+
+double tmp1, tmp2;
+int i = 0;
+while(vec.size() > 0) {
+if(vec.elementAt(i).charAt(0) == &#39;*&#39;) {
+tmp1 = Double.parseDouble(vec.elementAt(i-1));
+tmp1 = vec.elementAt(i).charAt(i);
+

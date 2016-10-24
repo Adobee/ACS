@@ -1,0 +1,7 @@
+// add lines plot to the PlotPanel
+if (this.localOptima.isEmpty()) { // Avoid NullPointerException
+this.localOptima.add(0);
+}
+double[][] array = new double[2][this.localOptima.size()];
+for (int i = this.localOptima.size()-1; i >= 0; i--) {  // TODO: Change to iterator
+

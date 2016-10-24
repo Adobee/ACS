@@ -1,0 +1,14 @@
+square[i].drawAtLocation(g, x, y, centerOffset, offsetCorrection);
+}
+
+public void move(Direction direction)
+{
+if (canMove(direction))
+for (int i = 0; i < PIECE_COUNT; i++) square[i].move(direction);
+int[][] clockwise = { {  0, 1},
+{ -1, 0}};
+
+int i = 0;
+
+if ((pivotRow == 0) || (pivotRow == Grid.HEIGHT-1))
+

@@ -1,0 +1,12 @@
+for(String l : ls) {
+l = l.trim();
+boolean negate = l.startsWith(&quot;-&quot;) || l.endsWith(&quot;-&quot;) || l.startsWith(&quot;&#39;&quot;) || l.endsWith(&quot;&#39;&quot;);
+for(Literal l : this) {
+if(l.isNegate())
+aux.add(l);
+}
+return aux;
+}
+
+public boolean isZero() {
+

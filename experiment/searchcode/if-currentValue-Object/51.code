@@ -1,0 +1,10 @@
+public class MinMax implements Aggregate {
+
+protected boolean reverse = false;
+Object currentValue;
+
+String field;
+String alias;
+Number colValue = (Number) tuple.getValue(field);
+if (currentValue == null) currentValue = colValue;
+

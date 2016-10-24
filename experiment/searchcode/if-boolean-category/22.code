@@ -1,0 +1,13 @@
+return categoryDao.readWithoutUnclassifiedCategory();
+}
+
+public boolean update(long categoryId, String categoryName) {
+productDao.changeUnclassifiedCategory(categoryId);
+if(categoryDao.delete(categoryId) == 1) {
+return true;
+}
+return false;
+}
+
+public boolean create(String categoryName) {
+

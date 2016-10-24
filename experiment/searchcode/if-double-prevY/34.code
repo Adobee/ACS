@@ -1,0 +1,22 @@
+public class MaximumDensity implements EvaluationHeuristic{
+
+public MaximumDensity(){
+}
+
+public double getScore(Block block, Position pos){
+int Pz = pos.getPosition().get(2);
+
+x = Bx+Px;
+y = By+Py;
+z = Bz+Pz;
+
+if (prevX>x)
+x=prevX;
+if (prevY>y)
+x=prevY;
+if (prevZ>z)
+x=prevZ;
+}
+
+}
+

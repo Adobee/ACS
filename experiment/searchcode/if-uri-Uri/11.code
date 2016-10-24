@@ -1,0 +1,17 @@
+return new URI(uri).get(shortForm);
+}
+
+public String get(boolean shortForm) {
+if (shortForm)
+return uri;
+}
+
+public String getShortURI() {
+int idx = uri.lastIndexOf(&#39;#&#39;);
+if (idx == -1)
+return uri;
+
+return uri.substring(idx);
+}
+}
+

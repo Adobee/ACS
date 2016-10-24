@@ -1,0 +1,10 @@
+StringBuilder buf = new StringBuilder();
+
+Matcher m = theWordPattern.matcher(text);
+int offset1 = 0, offset2 = 0;
+while (offset1 < text.length())
+{
+if (!m.find(offset1))
+{
+buf.append(text.substring(offset1, text.length()));
+

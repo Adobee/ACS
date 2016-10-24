@@ -1,0 +1,10 @@
+if (xabs > rdwarf) {
+if (xabs > x1max) {
+double r = x1max / xabs;
+s2 += xabs * xabs;
+}
+}
+double norm;
+if (s1 != 0) {
+norm = x1max * Math.sqrt(s1 + (s2 / x1max) / x1max);
+

@@ -1,0 +1,16 @@
+public class Weight implements Weighable, Serializable{
+
+public double weight;
+
+public Weight()
+{
+weight = 0.0;
+}
+
+public Weight (double weight)
+{
+this.weight = weight;
+}
+
+public int compareTo (Object obj)
+

@@ -1,0 +1,8 @@
+public class SolutionCallback implements OptimizationData {
+
+/** The SimplexTableau used by the SimplexSolver. */
+private SimplexTableau tableau;
+
+/**
+* Set the simplex tableau used during the optimization once a feasible
+

@@ -1,0 +1,8 @@
+public CompressedAlignmentGraph(Aligner al, int[] nearlyOptimal_horizStart, int[] nearlyOptimal_horizEnd, boolean reverse) {
+this (al, nearlyOptimal_horizStart, nearlyOptimal_horizEnd, reverse, true);
+public CompressedAlignmentGraph(Aligner al, int[] nearlyOptimal_horizStart, int[] nearlyOptimal_horizEnd, boolean reverse, boolean compress) {
+M = al.M;
+N = al.N;
+
+shift = new int[M+1];
+

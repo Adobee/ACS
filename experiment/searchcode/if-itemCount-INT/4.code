@@ -1,0 +1,12 @@
+int BufferSize;
+int itemCount;
+int[] data;
+
+public Monitor(int size) {
+this.BufferSize = size;
+data = new int[size];
+}
+
+public synchronized void add(int item) {
+while(itemCount == BufferSize) {
+

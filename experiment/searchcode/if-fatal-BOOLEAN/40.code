@@ -1,0 +1,10 @@
+private ErrorHandler() {}
+
+public static void handle(String message, boolean fatal) {
+JOptionPane.showMessageDialog(null, message, &quot;Error&quot;, JOptionPane.OK_OPTION);
+if (fatal) {
+System.exit(1);
+}
+}
+}
+

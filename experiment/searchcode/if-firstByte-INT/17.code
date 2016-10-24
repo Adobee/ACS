@@ -1,0 +1,11 @@
+public static void writeVNumber(Output output, long n) {
+if ((n < 128) &amp;&amp; (n >= -32)) {
+output.writeByte((int) n);
+public static long readVLong(Input input) {
+int firstByte = input.readByte();
+if (firstByte >= -32) {
+return firstByte;
+}
+
+switch ((firstByte + 128) / 8) {
+

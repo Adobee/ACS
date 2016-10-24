@@ -1,0 +1,10 @@
+public static double[] interpolateLinear(double[] x0, double[] y0, double[] x1) {
+double[] y1 = new double[x1.length];
+
+for (int i = 0; i < x1.length; i++) {
+if (index >= 0) {
+y1[i] = y0[index];
+}
+// if not known, interpolation necessary
+else {
+

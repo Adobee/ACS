@@ -1,0 +1,9 @@
+import org.elasticsearch.common.xcontent.XContentParser;
+import lombok.Getter;
+
+@Getter
+public class Matches implements Iterable<Match> {
+while ((token = parser.nextToken()) != XContentParser.Token.END_ARRAY) {
+if (token == XContentParser.Token.START_OBJECT) {
+Match match = new Match().parse(parser);
+

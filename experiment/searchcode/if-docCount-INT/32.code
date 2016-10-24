@@ -1,0 +1,12 @@
+Map<String, Feature> features = new HashMap<String, Feature>();
+
+/** 所有文档的数量 */
+private int docCount = 0;
+
+public void write(DataOutput out) throws IOException{
+//保存文档总数
+out.writeInt(docCount);
+
+//写入类别总数
+out.writeInt(categoryMap.size());
+

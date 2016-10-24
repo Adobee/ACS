@@ -1,0 +1,8 @@
+public Divide(Expression3 f, Expression3 s) {
+super(f, s);
+}
+
+public double evaluate(double x, double y, double z) throws MyCalcException {
+double divident = second.evaluate(x, y, z);
+if (Math.abs(divident) <= 1e-7) {
+

@@ -1,0 +1,7 @@
+public String getName() {
+int hasQuery = URL.indexOf(&#39;?&#39;);
+if (hasQuery != -1) {
+return &quot;\&quot;name\&quot;:&quot; + &quot;\&quot;&quot; + URL.substring(URL.indexOf(&quot;//&quot;) + 2, hasQuery) + &quot;\&quot;,&quot;;
+} else {
+return &quot;\&quot;name\&quot;:&quot; + &quot;\&quot;&quot; + URL.substring(URL.indexOf(&quot;//&quot;) + 2);
+

@@ -1,0 +1,11 @@
+imgFire[1] = Bitmap.createScaledBitmap(BitmapFactory.decodeResource(GameApplication.getAppContext().getResources(), R.drawable.fire1), 50, 50, true);
+}
+
+@Override
+public void draw(Canvas c) {
+if (alive) {
+if (fireOn) {
+WorldMap.map[t.blockRow + LIGHT_RANGE][t.blockColumn - LIGHT_RANGE].lightened--;
+WorldMap.map[t.blockRow + LIGHT_RANGE][t.blockColumn + LIGHT_RANGE].lightened--;
+if (World.weather == Const.V_RAIN_HARD) {
+

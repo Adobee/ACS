@@ -1,0 +1,9 @@
+public class SphereInfo {
+private double currentRatio;
+private double targetRatio;
+private double sphereTotalTime;
+
+public SphereInfo(double currentRatio, double targetRatio, double totalTime) {
+public double getDurationToConfidence(double sphereInfluence, double userBusyTime) {
+if (currentRatio > targetRatio * (1 + Analyser.CONFIDENCE))
+

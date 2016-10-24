@@ -1,0 +1,13 @@
+public BoundaryChecker(int lowerBound, int upperBound) {
+if (lowerBound >= upperBound) {
+throw new IllegalArgumentException();
+}
+
+this.lowerBound = lowerBound;
+public boolean isInClosedInterval(int value) {
+return (value >= lowerBound) &amp;&amp; (value <= upperBound);
+}
+
+/**
+* If the start position of this node is in the given interval.
+

@@ -1,0 +1,9 @@
+final double[][] Xb = new double[2][batch_size];
+for (int j = 0; j < batch_size; j++) {
+Xb[0][j] = X[0][i + j];
+Xb[1][j] = X[1][i + j];
+}
+
+final double[] error = errorv(Xb, params);
+final double[] delta = new double[2];
+

@@ -1,0 +1,11 @@
+private final int numShards;
+
+public HashingSharder(int numShards) {
+this.numShards = numShards;
+checkArgument(numShards > 0);
+}
+
+@Override
+public int getNumShards() {
+return numShards;
+

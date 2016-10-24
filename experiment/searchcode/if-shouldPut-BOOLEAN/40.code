@@ -1,0 +1,8 @@
+protected Object insert (Object key, Object value, boolean onlyPutIfAbsent)
+{
+Object existingValue = null;
+if (key != null &amp;&amp; value != null) {
+int insertionIndex = insertionIndexForKey(key, hashIndex);
+existingValue = _values[insertionIndex];
+boolean shouldPut = onlyPutIfAbsent ? existingValue == null : true;
+

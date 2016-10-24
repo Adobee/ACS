@@ -1,0 +1,13 @@
+return contains(entry.next, l);
+}
+}
+return false;
+}
+
+private Entry set(Entry entry, long l, boolean v) {
+if (entry != null) {
+if (inBound(entry, l)) {
+entry.set(l, v);
+return entry;
+} else if (entry.next == null) {
+

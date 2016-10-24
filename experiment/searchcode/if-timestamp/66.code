@@ -1,0 +1,9 @@
+int res = Long.compare(timestamp, o.timestamp);
+if (res == 0) {
+return Long.compare(id, o.id);
+if (getClass() != obj.getClass())
+return false;
+Timestamp other = (Timestamp) obj;
+if (id != other.id)
+return false;
+

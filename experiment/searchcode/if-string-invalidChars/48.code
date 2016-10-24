@@ -1,0 +1,9 @@
+&amp;&amp; !StringUtils.isBlank(lFieldData.getFilename())) {
+
+String lName = lFieldData.getFilename();
+for (char c : invalidChars) {
+if (lName.indexOf(c) != -1) {
+public static String getInvalidCharactersAsString() {
+StringBuilder lBuilder = new StringBuilder();
+for (int i=0; i<invalidChars.length; i++) {
+

@@ -1,0 +1,8 @@
+final double entry = tableau.getEntry(i, col);
+
+if (MathUtils.compareTo(entry, 0d, maxUlps) > 0) {
+final double ratio = rhs / entry;
+int column = i + tableau.getArtificialVariableOffset();
+final double entry = tableau.getEntry(row, column);
+if (MathUtils.equals(entry, 1d, maxUlps) &amp;&amp;
+

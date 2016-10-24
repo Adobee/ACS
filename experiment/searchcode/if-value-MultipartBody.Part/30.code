@@ -1,0 +1,6 @@
+MultipartBody.Builder multipartBodybuilder = new MultipartBody.Builder().setType(MultipartBody.FORM);
+//拼接键值对
+if (!params.urlParamsMap.isEmpty()) {
+RequestBody fileBody = RequestBody.create(entry.getValue().contentType, entry.getValue().file);
+multipartBodybuilder.addFormDataPart(entry.getKey(), entry.getValue().fileName, fileBody);
+

@@ -1,0 +1,9 @@
+package org.misoton.goodays;
+
+import com.google.android.gms.maps.model.Marker;
+
+import org.misoton.goodays.weather.Forecast;
+public Forecast getMarkerForecast(Marker marker){
+for(WeatherMarker weatherMarker: markers){
+if(weatherMarker.marker.equals(marker)){
+

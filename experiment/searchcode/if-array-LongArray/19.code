@@ -1,0 +1,15 @@
+import org.ripple.power.collection.LongArray;
+
+public class SHA1 {
+
+public SHA1() {
+if (_key == null || _key.length == 0) {
+this._buffer = new LongArray();
+this._length = 0;
+return this;
+}
+
+public SHA1 update(Object d) {
+LongArray data = null;
+if (d instanceof String) {
+

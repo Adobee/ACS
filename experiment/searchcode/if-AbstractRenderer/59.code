@@ -1,0 +1,6 @@
+package br.com.sinval.todo.client.scaffold.ui;
+
+import com.google.gwt.text.shared.AbstractRenderer;
+public class ByteRenderer extends AbstractRenderer<Byte> {
+private static ByteRenderer INSTANCE;
+

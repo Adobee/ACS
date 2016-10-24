@@ -1,0 +1,9 @@
+public static void main(String... aArgs) throws IOException{
+Sanitize text = new Sanitize();
+Path sanitized = Paths.get(&quot;sanitizedStocks.txt&quot;);
+boolean doesExist = Files.isRegularFile(sanitized) &amp;
+Files.isReadable(sanitized) &amp; Files.isExecutable(sanitized);
+if(!doesExist){
+text.readWriteSanitizedFile(&quot;sp500hst.txt&quot;);
+sanitized = Paths.get(&quot;sanitizedStocks.txt&quot;);
+

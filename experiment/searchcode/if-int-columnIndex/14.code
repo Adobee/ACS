@@ -1,0 +1,6 @@
+public String getString(int columnIndex) throws Exception {
+String toReturn;
+columnIndex = indexMap[columnIndex];
+if (columnIndex > -1) {
+toReturn = delegate.getString(columnIndex);
+

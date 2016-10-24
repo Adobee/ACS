@@ -1,0 +1,5 @@
+// accurate addition a1 * b1 + a2 * b2
+final double s12High    = prod1High + prod2High;
+final double s12Prime   = s12High - prod2High;
+final double s12Low     = (prod2High - (s12High - s12Prime)) + (prod1High - s12Prime);
+

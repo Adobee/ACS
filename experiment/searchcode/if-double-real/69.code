@@ -1,0 +1,14 @@
+* IF62C - Fundamentos de Programação 2
+*
+* Primeira avaliação parcial 2014/2.
+* @author
+*/
+public class Complexo {
+private double real;
+private double img;
+
+public Complexo() {
+}
+
+public Complexo(double real, double img) {
+

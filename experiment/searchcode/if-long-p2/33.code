@@ -1,0 +1,11 @@
+Prover prover = new Prover();
+
+prover.setMethod(method);
+prover.setStrategy(s);
+
+long begin = System.currentTimeMillis();
+for (int i = 1; i < times; i++) {
+prover.prove(problem);
+}
+long end = System.currentTimeMillis();
+

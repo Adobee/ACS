@@ -1,0 +1,9 @@
+* @return least number of edits to change X into Y
+*/
+public static int editDistanceDP(String X, String Y) {
+int lenX = X.length();
+int lenY = Y.length();
+for (int i = 1; i <= lenX; ++i) {
+for (int j = 1; j <= lenY; ++j) {
+if (X.charAt(i - 1) == Y.charAt(j - 1)) {
+

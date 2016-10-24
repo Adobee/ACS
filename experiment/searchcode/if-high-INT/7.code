@@ -1,0 +1,11 @@
+public int quickselect(int[]a,int k,int low,int high){
+Random rand = new Random();
+int r = rand.nextInt(high);
+if (low >= high)
+return a[low];
+r = partition(a,r,low,high);
+if( k == r)
+return a[r];
+else if (k<r)
+return quickselect(a,k,low,high-1);
+

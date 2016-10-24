@@ -1,0 +1,13 @@
+package test;
+
+import java.util.Date;
+
+public class MemberRegisterService {
+
+private MemberDao memberDao;
+this.memberDao= memberDao;
+}
+public void regist(RegisterRequest req){
+Member member = memberDao.selectByEmail(req.getEmail());
+if(member !=null){
+

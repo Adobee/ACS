@@ -1,0 +1,10 @@
+this.real=real;
+this.name=name;
+
+}
+public boolean checkReal(){
+if (real.contains(&quot;-&quot;)){
+negative=true;
+}else if (real.contains(&quot;+&quot;)|| (!real.contains(&quot;-&quot;) &amp;&amp; !real.contains(&quot;+&quot;))){
+negative=false;
+

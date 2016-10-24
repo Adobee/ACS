@@ -1,0 +1,6 @@
+assert searchNode != null;
+ParsedQuery parsedQuery = new ParsedQuery(&quot;aggregate-search&quot;, searchNode);
+m_query = parsedQuery.get(&quot;query&quot;);
+m_fields = parsedQuery.get(&quot;grouping-fields&quot;);
+Utils.require(parsedQuery.get(&quot;composite-fields&quot;) == null,
+

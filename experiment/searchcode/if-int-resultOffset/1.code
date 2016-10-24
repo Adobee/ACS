@@ -1,0 +1,9 @@
+* select k element from nOffset
+*/
+public static void subCombination(int n,  int k, int[] result, int resultOffset, int nOffset,Consumer<int[]> consumer){
+if (k==0){
+consumer.accept(result);
+return;
+}
+if (n-nOffset==k){
+

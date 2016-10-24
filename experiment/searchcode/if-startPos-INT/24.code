@@ -1,0 +1,11 @@
+public class MaxHeap<T extends Comparable<? super T>> extends Heap<T>{
+
+@Override
+protected void filterDown(int startPos) {
+int i = startPos;
+int j = (startPos << 1) + 1;
+int i = startPos;//leaf 新加入的叶子节点 也许是根节点的index
+int j = (startPos - 1 ) >> 1;//root 求出次叶子节点的根节点
+while(i > 0){
+if(elements[i].compareTo(elements[j]) > 0){
+

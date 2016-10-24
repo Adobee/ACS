@@ -1,0 +1,10 @@
+public int solve(int rows, int cols) {
+if (rows <= 0 || cols <= 0)
+return 0;
+
+return solveNewton(rows, cols);
+}
+
+private int solveDynamicProgramming(int rows, int cols) {
+int[] curr = new int[cols];
+

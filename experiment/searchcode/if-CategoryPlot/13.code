@@ -1,0 +1,7 @@
+public void customize(JFreeChart chart, JRChart jasperChart) {
+
+Plot plot = chart.getPlot();
+if (plot instanceof CategoryPlot) {
+CategoryPlot categoryPlot = (CategoryPlot)plot;
+ValueAxis valueAxis = categoryPlot.getRangeAxis();
+

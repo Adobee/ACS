@@ -1,0 +1,11 @@
+range = this.scaleHigh - this.scaleLow;
+if (extendRange != 0) {
+double diff = range / 100.0 * extendRange;
+range += diff;
+scaler = this.height / this.range;
+}
+}
+
+public void set(double scaleHigh, double scaleLow) {
+if ((scaleHigh - scaleLow) != 0) {
+

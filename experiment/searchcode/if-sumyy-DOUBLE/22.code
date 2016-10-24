@@ -1,0 +1,11 @@
+throw new IllegalArgumentException(&quot;Invalid arguments: number vectors differ in dimensionality.&quot;);
+}
+double sumXX = 0., sumYY = 0., sumXY = 0.;
+for(int i = 0; i < xdim; i++) {
+sumXX += xv * xv;
+sumYY += yv * yv;
+sumXY += xv * yv;
+}
+// One or both series were constant:
+if(!(sumXX > 0. &amp;&amp; sumYY > 0.)) {
+

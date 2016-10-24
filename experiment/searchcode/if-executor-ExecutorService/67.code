@@ -1,0 +1,13 @@
+package at.ac.tuwien.swa.swazam.network;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+public static ExecutorService getExectutor() {
+if (executor == null) {
+executor = Executors.newCachedThreadPool();
+}
+
+return executor;
+}
+}
+

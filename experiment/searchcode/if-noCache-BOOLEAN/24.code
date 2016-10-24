@@ -1,0 +1,11 @@
+private static final boolean NOCACHE_DEFAULT = true;
+
+private ResponseUtils() {
+}
+
+public static void render(HttpServletResponse response,final String contentType, final String content, final String... headers) {
+try {
+String encoding = ENCODING_DEFAULT;
+boolean noCache = NOCACHE_DEFAULT;
+for (String header : headers) {
+

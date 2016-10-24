@@ -1,0 +1,13 @@
+public static double min(Vector<Float> v1)
+{
+double min = Double.MAX_VALUE;
+for(int i = 0;i<v1.size();i++)
+{
+if(v1.elementAt(i)<min)
+public static double max(Vector<Float> v1)
+{
+double max = Double.MIN_VALUE;
+for(int i = 0;i<v1.size();i++)
+{
+if(v1.elementAt(i)>max)
+

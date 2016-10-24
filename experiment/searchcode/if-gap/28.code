@@ -1,0 +1,12 @@
+public <T extends Comparable<? super T>> void shellsort(T[] a)
+{
+for(int gap=a.length/2;gap>0;gap/=2)
+
+{   int k;
+for(int i=gap;i<a.length;i++)
+{
+
+T temp=a[i];
+for(k=i;k>=gap;k-=gap)
+{   if(temp.compareTo(a[k-gap])<0)
+

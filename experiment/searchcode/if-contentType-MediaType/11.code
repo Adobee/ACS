@@ -1,0 +1,8 @@
+Map<String, String> parameters = new LinkedHashMap<String, String>(mediaType.getParameters());
+if (encoding != null) {
+parameters.put(&quot;charset&quot;, encoding);
+return new MediaType(mediaType.getType(), mediaType.getSubtype(), parameters);
+}
+
+public static MediaType withCharset(String contentType, String encoding) {
+

@@ -1,0 +1,10 @@
+private boolean clearOnInit = false;
+
+public void setClearOnInit(boolean clearOnInit) {
+this.clearOnInit = clearOnInit;
+}
+
+@Override
+public void afterPropertiesSet() throws Exception {
+if (clearOnInit) {
+

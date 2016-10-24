@@ -1,0 +1,8 @@
+import javax.xml.bind.annotation.adapters.XmlAdapter;
+import org.geotoolkit.feature.catalog.BindingImpl;
+import org.opengis.feature.catalog.Binding;
+@XmlElement(name = &quot;FC_Binding&quot;)
+public BindingImpl getBinding() {
+if (association == null)
+return null;
+

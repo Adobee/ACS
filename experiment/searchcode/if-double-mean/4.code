@@ -1,0 +1,12 @@
+public class Stats {
+public static double mean(double[] a) {
+if (a.length == 0)
+return 0;
+return sum / a.length;
+}
+
+public static double mean(int[] a) {
+if (a.length == 0)
+return 0;
+int sum = 0;
+

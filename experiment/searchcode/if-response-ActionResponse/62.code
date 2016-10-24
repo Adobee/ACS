@@ -1,0 +1,8 @@
+class PublishBookListAction implements Action {
+
+@Override
+public ActionResponse execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+BookListDAO booklistDAO = new BookListDAO();
+if(!booklistDAO.makeBookListPublic(booklistkey)){
+return new ActionResponse(ActionResponseType.FORWARD, &quot;viewCustomer&quot;);
+

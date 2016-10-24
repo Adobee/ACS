@@ -1,0 +1,7 @@
+// Update owned entities
+if (objectState.roles.contains(ObjectRole.OWNER)) {
+Set<Long> entities = ownedObjectsByClass.get(objectClass);
+ObjectState objectState = objectStateByObjectIdentity.get(objectIdentity);
+if (objectState != null) {
+return Collections.unmodifiableSet(objectState.roles);
+

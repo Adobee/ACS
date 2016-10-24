@@ -1,0 +1,11 @@
+String version;
+int intVersion;
+int dsCount;
+int rraCount;
+int pdpStep;
+
+Header(RRDFile file) throws IOException,RrdException {
+intVersion = Integer.parseInt(version);
+if( intVersion > 3 ) {
+throw new IOException(&quot;Unsupported RRD version (&quot; + version + &quot;)&quot;);
+

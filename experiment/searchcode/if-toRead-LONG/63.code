@@ -1,0 +1,12 @@
+return pos == bytes.length &amp;&amp; toRead == 0 ? -1 : toRead;
+}
+
+@Override
+public long skip(long i) throws IOException {
+return toSkip;
+}
+
+@Override
+public void seek(long where) throws IOException {
+if (where < bytes.length)
+

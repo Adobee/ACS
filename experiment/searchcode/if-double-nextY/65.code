@@ -1,0 +1,21 @@
+return null;
+double x = x0;
+while(x < xend){
+oneStep(x,nextY,step);
+if (step.getValue()<minh)
+s = si;
+}
+}
+if (s != MesquiteDouble.infinite)
+h.setValue(hval*s);
+return nextY;
+}
+
+
+
+
+
+
+
+}
+

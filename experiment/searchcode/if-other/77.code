@@ -1,0 +1,9 @@
+return &quot;&quot; + value;
+}
+
+public Number add(Number other) {
+if (other instanceof Int) {
+return new Int(value + ((Int)other).value());
+} else if (other instanceof Decimal) {
+return new Decimal(value + ((Decimal)other).value());
+

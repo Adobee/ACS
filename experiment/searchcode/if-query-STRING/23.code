@@ -1,0 +1,11 @@
+this.queryParameters.add(queryParameter);
+}
+}
+
+public String getQuery() {
+StringBuilder completeQuery = new StringBuilder(&quot;?&quot;);
+for (QueryParameter queryParameter : queryParameters) {
+String query = queryParameter.getQuery();
+if (query != null) {
+if (position > 0) {
+

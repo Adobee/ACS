@@ -1,0 +1,6 @@
+public IndexMetaData upgradeIndexMetaData(IndexMetaData indexMetaData) {
+// Throws an exception if there are too-old segments:
+if (isUpgraded(indexMetaData)) {
+final String storeType = indexMetaData.getSettings().get(IndexStoreModule.STORE_TYPE);
+if (storeType != null) {
+

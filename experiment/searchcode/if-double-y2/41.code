@@ -1,0 +1,5 @@
+@Override
+public double getMax(double x1, double y1, double x2, double y2, double stepX, double stepY) {
+double[] norm = normalize(x1, y1, x2, y2);
+x1 = norm[0]; x2 = norm[2]; y1 = norm[1]; y2 = norm[3];
+

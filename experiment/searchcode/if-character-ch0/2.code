@@ -1,0 +1,17 @@
+protected void dumbAddRange(int ch0, int ch1)
+{
+count += ch1 - ch0 + 1;
+
+int i = 0;
+for (Range range: ranges)
+{
+if (ch1 >= range.ch0 &amp;&amp; ch0 < range.ch0) {
+// log.debug(&quot;UnicodeSubset.addRange() ch0=&quot; + ch0 + &quot; ch1=&quot; + ch1 + &quot; -> &quot; + toString());
+}
+
+int getCharacter(int index) {
+int i = 0;
+
+for (Range range: ranges) {
+if (i + range.ch1 - range.ch0 >= index) {
+

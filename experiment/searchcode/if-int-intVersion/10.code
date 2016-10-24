@@ -1,0 +1,12 @@
+return 0;
+
+intVersion = b[off + 3] &amp; 0xff;
+
+if (intVersion > 2 &amp;&amp; (b[off + 5] &amp; 0x40) != 0)
+int id_part = 4, frame_header = 10;
+if (intVersion == 2) {
+id_part = 3;
+frame_header = 6;
+}
+String id = new String(b, off, id_part);
+

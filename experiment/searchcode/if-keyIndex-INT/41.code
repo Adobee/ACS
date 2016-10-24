@@ -1,0 +1,7 @@
+char[] messageArey = new char[message.length()];
+messageArey = message.toCharArray();
+int keyIndex = 0;
+for (int i = 0; i < messageArey.length; i++) {
+
+if (keyIndex >= this.key.length - 1) {
+

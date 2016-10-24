@@ -1,0 +1,12 @@
+public class BindableBoolean extends BaseObservable {
+boolean value;
+
+public BindableBoolean(boolean value) {
+public void set(boolean value) {
+if (this.value != value) {
+this.value = value;
+notifyChange();
+}
+}
+}
+

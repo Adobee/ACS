@@ -1,0 +1,10 @@
+*         DATE: 2015/7/8
+*         DESC:
+**/
+public class FragmentHelper {
+
+private static String TAG = &quot;FragmentHelper&quot;;
+public static String getFragmentTag(Fragment fragment) {
+if (fragment instanceof BaseFragment) {
+return TAG + fragment.getClass().getName() + ((BaseFragment) fragment).titleID;
+

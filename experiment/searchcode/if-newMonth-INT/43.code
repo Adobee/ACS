@@ -1,0 +1,11 @@
+public static MonthData GetOldDate(GregorianCalendar referenceDate, int monthsago)
+{
+MonthData oldMonth = new MonthData();
+int newmonth = (referenceDate.get(Calendar.MONTH) + 1) - monthsago;
+int newyear = referenceDate.get(Calendar.YEAR);
+
+if (newmonth <= 0)
+{
+newmonth += 12;
+newyear -= 1;
+

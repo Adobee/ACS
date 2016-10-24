@@ -1,0 +1,10 @@
+private double normalizationFactor;
+
+public Fft(CqtContext ctx) {
+this.ctx = ctx;
+this.calc = new CqtCalculator(ctx);
+double re = elements[2 * i];
+double im = elements[2 * i + 1];
+if (re != 0 &amp;&amp; im != 0) {
+elements[2 * i] = normalizationFactor * re;
+

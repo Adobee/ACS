@@ -1,0 +1,9 @@
+import com.cabolabs.xre.core.execution.VariableInstance;
+import java.util.ArrayList;
+import java.util.List;
+
+public class LogicBlock extends AbstractBlock
+public void addToBlocks(AbstractBlock block) throws Exception
+{
+if ((block instanceof LogicBlock))
+

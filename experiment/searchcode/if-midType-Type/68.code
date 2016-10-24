@@ -1,0 +1,8 @@
+Bundle testBundle = Platform.getBundle(TESTS_BUNDLE_NAME);
+// model types
+Model rootModelType = MIDTypeRegistry.getType(MMINT.ROOT_MODEL_URI);
+Files.copy(Paths.get(FileLocator.toFileURL(tgtMetamodelUrl).getFile()), Paths.get(MIDUtils.prependStateToUri(TGT_METAMODEL_NAME)), StandardCopyOption.REPLACE_EXISTING);
+
+// model rel type
+KleisliModelRel kRootModelRelType = MIDTypeRegistry.getType(KLEISLI_MODELRELTYPE_URI);
+

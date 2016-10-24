@@ -1,0 +1,9 @@
+package cn.npt.fs.event;
+
+import cn.npt.fs.bean.BSSensor;
+import cn.npt.fs.cache.BSSensorPool;
+int blockSize=(int) (root.getChild().getBlockInterval()/root.getBlockInterval());
+int toIndex=index+1;
+if(toIndex%blockSize==0){
+BSSensorPool bsp=root.getChild();
+

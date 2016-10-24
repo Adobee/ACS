@@ -1,0 +1,12 @@
+public static List<?> subList(List<?> list, int fromIndex, int toIndex){
+if(list==null || list.size()==0){
+return new ArrayList<>();
+}
+int from=fromIndex;
+int to=toIndex;
+if(fromIndex < 0){
+from=0;
+}
+if(fromIndex > list.size()) {
+from= list.size() -1;
+

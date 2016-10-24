@@ -1,0 +1,13 @@
+private double last;
+
+private int frames;
+private double time;
+private int tmpFrames;
+private double tmpTime;
+
+private double tmpReset;
+private double tmpFrameRate;
+
+public FrameRateCalc() {
+frames=0; time = 0;
+

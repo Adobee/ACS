@@ -1,0 +1,10 @@
+public static Type toType(String typeString) {
+for (Type type : Type.values()) {
+if (type.type.equals(typeString)) {
+throw new IllegalArgumentException(&quot;Unexpected type: &quot; + typeString);
+}
+
+public static Type toType(int tradeType) {
+for (Type type : Type.values()) {
+if (type.tradeType == tradeType) {
+

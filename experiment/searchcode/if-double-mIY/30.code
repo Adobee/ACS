@@ -1,0 +1,11 @@
+public String getUrlString()
+{
+return this.s;
+}
+};
+
+double mylat = 52.0914852;
+double mylong = 5.12342760000001;
+url += &quot;&amp;rl=&amp;ps=&quot; + startDate + &quot;&amp;ps=&quot; + startTime + &quot;&amp;pe=&quot; + endDate + &quot;&amp;pe=&quot; + endTime
++ &quot;&amp;mip=&amp;map=&amp;miy=&amp;may=&amp;cm=&amp;cb=&amp;pis=undefined&amp;o=Distance&amp;view=l&amp;rr=10&amp;cci=&amp;fkd=Geen%20selectie...&amp;fo=0&quot;;
+

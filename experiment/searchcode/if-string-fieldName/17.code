@@ -1,0 +1,8 @@
+public static String getFieldGetterMethodName(String fieldName) {
+if (fieldName == null || &quot;&quot;.equals(fieldName)) {
+* @param fieldName
+* @return
+*/
+public static String getFieldSetterMethodName(String fieldName) {
+if (fieldName == null || &quot;&quot;.equals(fieldName)) {
+

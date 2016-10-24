@@ -1,0 +1,10 @@
+public int count(int[] card, int score) {
+if(card.length < score) {
+return 0;
+}
+
+long result = modPow(2, card.length - score);
+long n = 1;
+long k = 1;
+long nk = 1;
+

@@ -1,0 +1,9 @@
+private static Type<ModifiedHandler> TYPE;
+
+public static void fire(ModifiedModel model) {
+if (TYPE != null) model.fireEvent(new ModifiedEvent(model));
+}
+
+public static void init(ModifiedModel model, ModifiedHandler handler) {
+if (TYPE != null) new ModifiedEvent(model).dispatch(handler);
+

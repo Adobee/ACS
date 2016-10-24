@@ -1,0 +1,9 @@
+public interface DistanceFunction {
+DistanceFunction STINGS = new DistanceFunction() {
+@Override
+public double evaluate(double x, double y) {
+return min(abs(x), abs(y));
+}
+};
+DistanceFunction DENSE_STINGS = new DistanceFunction() {
+

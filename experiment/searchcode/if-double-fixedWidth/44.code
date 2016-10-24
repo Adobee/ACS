@@ -1,0 +1,15 @@
+public class MultiLineTextPose extends AbstractTextPose
+{
+private Surface surface;
+
+private boolean fixedSize = false;
+
+private int fixedWidth;
+public int getWidth()
+{
+if (this.fixedSize) {
+return this.fixedWidth;
+}
+
+this.ensureCached();
+

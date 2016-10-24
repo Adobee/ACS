@@ -1,0 +1,13 @@
+public class TwitterSimilarity extends DefaultSimilarity {
+
+/**
+*
+*/
+private static final long serialVersionUID = -4284745532074292161L;
+public float tf(float freq) {
+return freq>0?1.0f:0.0f;
+}
+
+@Override
+public float idf(int docFreq, int numDocs) {
+

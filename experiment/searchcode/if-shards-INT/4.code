@@ -1,0 +1,8 @@
+private int _proccessed = 0;
+private int _shardsOK;
+private int _shardsError;
+
+public AnalyticsResult(JSONObject json) {
+setProccessed(json.getJSONObject(&quot;hits&quot;).getInt(&quot;total&quot;));
+if (json.has(&quot;_shards&quot;)) {
+

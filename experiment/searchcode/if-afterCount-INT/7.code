@@ -1,0 +1,9 @@
+private byte[] getEncodedValue(int beforeCount, int afterCount,
+int offset, int contentCount, String contextID) throws Exception
+{
+if (beforeCount < 0) {
+ber.encodeInt(beforeCount);
+ber.encodeInt(afterCount);
+encodeTarget(ber, greaterThanOrEqual);
+if (contextID != null &amp;&amp; contextID.trim().length()>0) {
+

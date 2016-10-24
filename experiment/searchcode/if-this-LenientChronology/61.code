@@ -1,0 +1,9 @@
+if (iWithUTC == null) {
+if (getZone() == DateTimeZone.UTC) {
+iWithUTC = this;
+} else {
+if (zone == getZone()) {
+return this;
+}
+return LenientChronology.getInstance(getBase().withZone(zone));
+

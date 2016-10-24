@@ -1,0 +1,8 @@
+long sinceLast = now - last;
+long intervalAdjusted = millis - sinceLast;
+long intervalToSleep = intervalAdjusted <= 0
+? millis
+: intervalAdjusted;
+
+if (intervalAdjusted <= 0) {
+

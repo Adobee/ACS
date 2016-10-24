@@ -1,0 +1,9 @@
+parser.setAllowLeadingWildcard(true);
+}
+private List<Document> search(String inLine, int limit, boolean forceRefresh) throws ParseException, IOException {
+if (inLine.trim().isEmpty()) return Collections.emptyList();
+if (forceRefresh) {
+sm.maybeRefreshBlocking();
+}
+else if (sm.isSearcherCurrent() || (++refreshCount % 10 == 0)) {
+

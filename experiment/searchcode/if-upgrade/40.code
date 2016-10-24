@@ -1,0 +1,6 @@
+* Add the upgrade to the ItemStack. Calls the correct methods. Catches the
+* UpgradeException and returns false if caught.
+IModularItem armour = (IModularItem) stack.getItem();
+
+if (upgrade != null &amp;&amp; checkContain(stack, upgrade) &amp;&amp; upgrade.isCompatible(armour, stack, armour.getSlot()) &amp;&amp; checkDependencies(stack, upgrade)) {
+

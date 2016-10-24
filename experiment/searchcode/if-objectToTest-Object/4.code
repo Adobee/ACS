@@ -1,0 +1,8 @@
+T objectToTest = createDefaultObject();
+this.synchronizer.persist(objectToTest);
+// test cache if any
+Assert.assertNull(this.synchronizer.find(objectToTest));
+this.synchronizer.persist(objectToTest);
+// test cache if any
+Assert.assertNotNull(this.synchronizer.find(objectToTest));
+

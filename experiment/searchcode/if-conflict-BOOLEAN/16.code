@@ -1,0 +1,11 @@
+return new UniqueNameValidationResult(Objects.requireNonNull(conflictType, &quot;conflict type missing&quot;));
+}
+
+public boolean isValid() {
+return conflictType == null;
+}
+
+public ConflictType conflictType() {
+if(conflictType == null) {
+throw new IllegalStateException(&quot;no conflict&quot;);
+

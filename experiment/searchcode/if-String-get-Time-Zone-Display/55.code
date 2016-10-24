@@ -1,0 +1,10 @@
+public static void setTimeZoneToUse(String s)
+{
+defTimeZone = TimeZone.getTimeZone(s);
+boolean flag = TimeZoneUtils.inDaylightTime(timezone, date);
+String s = TimeZoneUtils.getDisplayName(timezone, flag);
+return s;
+}
+
+private static long y2kMidnightGMTMillis = 0xdc6acfac00L;
+

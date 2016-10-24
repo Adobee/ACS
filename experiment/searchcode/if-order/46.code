@@ -1,0 +1,16 @@
+import java.util.Set;
+import java.util.TreeSet;
+
+
+public class OrderRepository {
+private static final OrderRepository INSTANCE = new OrderRepository();
+for (Order item : orderList){
+if (item.isMatch(userName)){
+return item;
+}
+}
+return null;
+}
+
+public void remove(Order order) {
+

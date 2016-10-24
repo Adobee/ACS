@@ -1,0 +1,4 @@
+public static final SorterRef REF_NH = SorterRefs.NATURAL_NH;
+public static final IntNaturalSort SINGLETON = new IntNaturalSort(false);
+public static final IntNaturalSort SINGLETON_NH = new IntNaturalSort(true);
+

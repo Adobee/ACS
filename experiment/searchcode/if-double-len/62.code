@@ -1,0 +1,13 @@
+double y = 0.5;
+double len = 0.5;
+
+drawArt(x,y,len,n);
+}
+public static void drawArt(double x, double y, double len, int n) {
+if (n==0){
+return;
+}
+else {
+filledHourglass(x, y, len);
+drawArt(x+(Math.sqrt(2)*len)/4,y+(Math.sqrt(2)*len)/4,len/2,n-1);
+

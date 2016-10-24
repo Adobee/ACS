@@ -1,0 +1,10 @@
+List<Double> stepCosts = new ArrayList<Double>();
+
+double previousCost = Double.MAX_VALUE;
+double diff = Double.MAX_VALUE;
+int iteration = 0;
+GMatrix[] gradients = computeGradients(x, y, lambda);
+diff = previousCost - cost;
+if (diff < PRECISSION){
+continue;
+

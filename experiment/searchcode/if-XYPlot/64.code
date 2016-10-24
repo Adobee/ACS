@@ -1,0 +1,10 @@
+import com.androidplot.xy.XYPlot;
+
+/***********************************
+* @author David Buezas (david.buezas at gmail.com)
+BoundaryMode.FIXED);
+mySimpleXYPlot.redraw();
+
+} else if (mode == TWO_FINGERS_DRAG) {
+float oldDist = distBetweenFingers;
+

@@ -1,0 +1,11 @@
+import java.lang.reflect.Method;
+
+public class EarlyStop
+{
+public static class NoDoneYetException extends Exception
+final Object o, final Method m,final Object... params)
+throws Exception
+{
+final Object lock=new Object();
+final Boolean end = new Boolean(false);
+

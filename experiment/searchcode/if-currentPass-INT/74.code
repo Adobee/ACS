@@ -1,0 +1,15 @@
+import net.minecraft.util.IIcon;
+
+import javax.swing.*;
+
+public class BlockTexturedOre extends Block {
+int		currentPass;
+public boolean canRenderInPass(int pass) {
+currentPass = pass;
+
+return pass == 1 || pass == 0;
+}
+
+@Override
+public void registerBlockIcons(IIconRegister register) {
+

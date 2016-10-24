@@ -1,0 +1,9 @@
+public QuizMessage get(String theMessageBody)
+{
+if (QuestionMessage.isOne(theMessageBody))
+{
+return new QuestionMessage(theMessageBody);
+}
+
+if (ErrorMessage.isOne(theMessageBody))
+

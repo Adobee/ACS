@@ -1,0 +1,6 @@
+// Keep track of the number of concurrent searches started by multi search api,
+// and if there are more searches than is allowed create an error and remember that.
+MultiSearchRequest multiSearchRequest = new MultiSearchRequest();
+multiSearchRequest.maxConcurrentSearchRequests(maxAllowedConcurrentSearches);
+for (int i = 0; i < numSearchRequests; i++) {
+

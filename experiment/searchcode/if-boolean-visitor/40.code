@@ -1,0 +1,5 @@
+public R visit(EObject o, T context) {
+if (o instanceof Constraint &amp;&amp; !constraintVisitors.isEmpty()) {
+for (ConstraintVisitor<T, R> visitor : constraintVisitors) {
+if (visitor.appliesTo((Constraint) o, context)) {
+

@@ -1,0 +1,11 @@
+int[] range = [-1, -1];
+int lower = 0, upper = A.length, mid;
+if (A[upper-1] < target){
+return range;
+}
+//搜索起点
+while(lower < upper){
+mid = (lower+upper)/2;
+if (A[mid] < target){
+lower = mid+1;
+

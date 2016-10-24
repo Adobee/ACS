@@ -1,0 +1,9 @@
+public static void renderFaceYNeg(RenderBlocks renderBlocks, int slope, double x, double y, double z, Icon icon)
+{
+double uMin = icon.getInterpolatedU(renderBlocks.renderMinX * 16.0D);
+double uMid = uMax - ((uMax - uMin) / 2);
+double vTemp = vMin;
+
+// Flip if easterly slope
+if ((slope > 27 &amp;&amp; slope < 32) || (slope > 39 &amp;&amp; slope < 44)) {
+

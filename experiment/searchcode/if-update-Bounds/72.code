@@ -1,0 +1,10 @@
+g2d.fillRoundRect(bounds.x, bounds.y, bounds.width, bounds.height, 10, 10);
+//g2d.fill(bounds);
+}
+
+@Override
+public void update(long timeMillis) {
+super.update(timeMillis);
+if(!outerBounds.contains(bounds)){
+if(bounds.x + bounds.width > outerBounds.x + outerBounds.width){
+

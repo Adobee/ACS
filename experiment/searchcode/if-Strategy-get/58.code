@@ -1,0 +1,5 @@
+StrategyImage.ETileSand1.getTextureRegion().getTexture().getWidth(),
+StrategyImage.ETileSand1.getTextureRegion().getTexture().getHeight()
+(int)( iBounds.width  - StrategyHUD.getMapWindowWidth()     ),
+(int)( iBounds.height - StrategyHUD.getMapWindowHeight()    )
+

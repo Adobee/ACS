@@ -1,0 +1,10 @@
+*            the (x, y) item (<code>null</code> not permitted).
+*/
+public void add(XYDataItem item) {
+if (item == null) {
+throw new IllegalArgumentException(&quot;Null &#39;item&#39; argument.&quot;);
+* @since 1.0.13
+*/
+private void updateBoundsForRemovedItem(XYDataItem item) {
+boolean itemContributesToXBounds = false;
+

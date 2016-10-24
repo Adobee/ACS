@@ -1,0 +1,12 @@
+pos.y = y;
+handle_bounds();
+state = IDLE;
+stateTime = 0;
+}
+
+public void update(float deltaTime) {
+f.touching = false;
+if(f.bounds.overlaps(bounds))
+{
+floor_collision(f);
+

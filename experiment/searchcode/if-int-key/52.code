@@ -1,0 +1,11 @@
+//ITERATIVE
+
+public int binarySearch(int[] A, int key, int imin, int imax) {
+int imid;
+while (imin <= imax) {
+public int binarySearch(int[] A, int key, int imin, int imax) {
+if(imax > imin)
+return -1;
+else {
+int imid = (imin + imax) / 2;
+

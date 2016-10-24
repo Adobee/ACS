@@ -1,0 +1,12 @@
+public double getKRatio() {
+double k;
+if(this.getRatio() == 0 ){
+k = 1;
+} else {
+k = getLenghtRatio()/getRatio() - 1;
+public double getKRatioWithCurrentTask(double request_lenght,double satify_lenght) {
+double k;
+if(this.getRatio() == 0 ){
+k = 1;
+} else {
+

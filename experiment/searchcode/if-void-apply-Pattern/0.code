@@ -1,0 +1,11 @@
+private Map<Pattern, Double> subPatterns = new HashMap<Pattern, Double>();
+Pattern fallbackPattern;
+
+public void add(Pattern pattern, double probability) {
+subPatterns.put(pattern, probability);
+this.fallbackPattern = fallbackPattern;
+}
+
+@Override
+public BasicBlock applyTo(Point position, PositionModification positionModification) {
+

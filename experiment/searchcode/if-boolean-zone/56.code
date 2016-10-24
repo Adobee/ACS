@@ -1,0 +1,12 @@
+package l2d.game.skills.conditions;
+
+import l2d.game.model.L2Zone.ZoneType;
+import l2d.game.skills.Env;
+public boolean testImpl(Env env)
+{
+if(!env.character.isPlayer())
+return false;
+return env.character.isInZone(_zoneType);
+}
+}
+

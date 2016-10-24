@@ -1,0 +1,11 @@
+import net.minecraft.entity.player.EntityPlayer;
+
+@SideOnly(Side.CLIENT)
+public enum HealthStep {
+
+VERY_LOW(0.1F, 0xBD0000FF),
+private final float healthLimit;
+private final int color;
+
+HealthStep(float limit, int argb) {
+

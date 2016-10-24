@@ -1,0 +1,7 @@
+Class<?> declaredByRaw = declaringClassOf(unknown);
+if (declaredByRaw == null) return unknown;
+
+Type declaredBy = getGenericSupertype(context, contextRawType, declaredByRaw);
+if (declaredBy instanceof ParameterizedType) {
+int index = indexOf(declaredByRaw.getTypeParameters(), unknown);
+

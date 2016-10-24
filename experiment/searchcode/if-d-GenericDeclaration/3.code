@@ -1,0 +1,8 @@
+public boolean equals(Object o) {
+if (this == o) return true;
+if (!(o instanceof GenericDeclaration)) return false;
+
+GenericDeclaration that = (GenericDeclaration) o;
+
+if (className != null ? !className.equals(that.className) : that.className != null) return false;
+

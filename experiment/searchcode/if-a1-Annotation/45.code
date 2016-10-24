@@ -1,0 +1,7 @@
+public class ContradictingFieldAnnotation extends FieldConstraint {
+
+private Class<? extends Annotation> a1;
+private Class<? extends Annotation> a2;
+protected final void check(MappedClass mc, MappedField mf, Set<ConstraintViolation> ve) {
+if (mf.hasAnnotation(a1) &amp;&amp; mf.hasAnnotation(a2))
+

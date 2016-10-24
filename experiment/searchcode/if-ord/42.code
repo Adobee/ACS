@@ -1,0 +1,11 @@
+public SymbolSide getSideS() {
+return symS;
+}
+
+public void execOrd(Order pOrd) {
+Order initOrd = pOrd;
+if (initOrd.getSide().equals(Side.BID)) { // initiator is a bid, looking
+if (initOrd.getLimitPx() > symS.bestLimit) {
+// TODO Fix this
+if (initOrd != null &amp;&amp; initOrd.getLeavesQty() > 0
+

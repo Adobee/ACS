@@ -1,0 +1,10 @@
+Dispatcher(RoseGenerator gen) {
+this.gen = gen;
+}
+
+void accept(MBase obj) {
+if(obj instanceof MExtension)
+gen.visit((MExtension)obj);
+else if(obj instanceof MActionState)
+gen.visit((MActionState)obj);
+

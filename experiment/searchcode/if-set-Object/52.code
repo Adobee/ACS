@@ -1,0 +1,7 @@
+public class ThreadLocalRegister {
+private static ThreadLocal<Set<Object>> threadLocal = new ThreadLocal<Set<Object>>();
+Set<Object> register = threadLocal.get();
+if (register == null) {
+register = new HashSet<Object>();
+threadLocal.set(register);
+

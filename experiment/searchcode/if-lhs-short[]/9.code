@@ -1,0 +1,9 @@
+public Factor ToFactor()
+{
+Factor lhsFactor = this.LHS.ToFactor();
+
+//Short-circuit ANDs
+if (lhsFactor instanceof BooleanFactor)
+if (!(((BooleanFactor) lhsFactor).getValue()))
+return lhsFactor;
+

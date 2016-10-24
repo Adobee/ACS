@@ -1,0 +1,8 @@
+// We use a String, not a Boolean, in the radio group value so that we can represent null. Boolean can&#39;t represent
+// null because Tapestry will coerce it to Boolean.FALSE. See https://issues.apache.org/jira/browse/TAPESTRY-1928 .
+void setupRender() {
+
+// First time in, valueForMyBoolean will be null.
+
+if (valueForMyBoolean == null) {
+

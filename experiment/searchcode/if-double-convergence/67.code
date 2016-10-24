@@ -1,0 +1,13 @@
+public double computeValue(ArrayList plotSet) {
+
+
+double convergence=0.0;
+Plot plotI,plotJ;
+double dx,dy,dz;
+double dvx,dvy,dvz;
+double r,div;
+div=(dx*dvx+dy*dvy+dz*dvz)/r;
+if (div<0)
+{
+convergence=convergence-div*Math.exp(l * r);
+

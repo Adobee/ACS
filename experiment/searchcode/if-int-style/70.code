@@ -1,0 +1,9 @@
+public class CanHazTable {
+
+int yourStyle;
+int dateStle;
+int result;
+
+public int CanHazTable(int yourStyle, int dateStyle) {
+if (yourStyle > 10 || yourStyle < 1 || dateStyle > 10 || dateStyle < 1) {
+

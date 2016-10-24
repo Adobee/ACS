@@ -1,0 +1,6 @@
+ArrayList<String> indicesToFlush = new ArrayList<>();
+for (int i = 1; i < 4; i++) {
+if (randomBoolean()) {
+boolean throttleRestore = randomBoolean();
+assertAcked(client.admin().cluster().preparePutRepository(&quot;test-repo&quot;)
+

@@ -1,0 +1,11 @@
+public class Summation extends Thread
+{
+public Summation(int n) {
+upper = n;
+}
+
+public void run() {
+int sum = 0;
+
+if (upper > 0) {
+

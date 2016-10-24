@@ -1,0 +1,12 @@
+private float tick = 1;
+private float targetTime = 0;
+
+public TickTimer(float targetTime) {
+this.targetTime = targetTime;
+}
+
+public void tick(float delta) {
+
+if (tick < targetTime) {
+tick += (1 * delta);
+

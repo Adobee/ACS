@@ -1,0 +1,6 @@
+public LoadedModule loadModule(Class<? extends Module> module) throws Exception {
+if (hasModule(module)) return null;
+for (Class<? extends Module> depend : container.getDepends())
+if (loadModule(depend) == null) return null;
+Module theModule = container.getParser().parse(document, this);
+

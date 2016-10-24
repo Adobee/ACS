@@ -1,0 +1,11 @@
+cosSqAlpha = 1 - sinAlpha * sinAlpha;
+cos2SigmaM = cosSigma - 2 * sinU1 * sinU2 / cosSqAlpha;
+if (Double.isNaN(cos2SigmaM))
+cos2SigmaM = 0;
+} while (Math.abs(lambda - lambdaP) > 1e-12 &amp;&amp; --iterLimit > 0);
+
+if (iterLimit == 0)
+return Math.round(Double.NaN);
+
+double uSq = cosSqAlpha * (a * a - b * b) / (b * b);
+

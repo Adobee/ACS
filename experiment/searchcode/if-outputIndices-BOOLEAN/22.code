@@ -1,0 +1,8 @@
+* Meaning, if there are 128 input wires and 128 output wires, and the user set their garbled values,
+* our GarbledBooleanCircuitExtended will have 256 more gates.
+* This way, if the user gave input or output wires&#39; values it does not relevant to the inner GarbledBooleanCircuit.
+* @param extendedOutputs An empty array that will be filled with the output garbled values of the extended circuit.
+* @return true if the circuit is verified; False, otherwise.
+*/
+private boolean verifyCircuitReturnOutputs(byte[] allInputWireValues, byte[] internalOutputs, byte[] extendedOutputs) {
+

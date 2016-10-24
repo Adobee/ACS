@@ -1,0 +1,9 @@
+public CharSequence format(double number) {
+if (number == 0)
+return &quot;0.00&quot;;
+String s = &quot;&quot;;
+if (number >= 1000000D) {
+s = &quot;M&quot;;
+number = number / 1000000D;
+} else if (number >= 1000D) {
+

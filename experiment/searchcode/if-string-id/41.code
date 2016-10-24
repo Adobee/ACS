@@ -1,0 +1,13 @@
+MALE(&quot;M&quot;,&quot;Male&quot;);
+
+private String id;
+private String description;
+
+private Gender(String id, String desc) {
+this.id = id;
+this.description = desc;
+}
+
+public String getDescription() {
+return description;
+

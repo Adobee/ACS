@@ -1,0 +1,6 @@
+AggregationContext aggregationContext, Aggregator parent, ValuesSource.GeoPoint valuesSource, boolean wrapLongitude) {
+super(name, estimatedBucketsCount, aggregationContext, parent);
+this.wrapLongitude = wrapLongitude;
+if (valuesSource != null) {
+final long initialSize = estimatedBucketsCount < 2 ? 1 : estimatedBucketsCount;
+

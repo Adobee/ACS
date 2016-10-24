@@ -1,0 +1,9 @@
+int brokenIdx = 0;
+int suitableIdx = 0;
+while ((brokenIdx = checkBounds()) >= 0) {
+if ((suitableIdx = findSuitable(brokenIdx)) < 0)
+protected void pivot(int pivotRow, int pivotCol) {
+steps++;
+double time = -System.nanoTime();
+solver.pivot(pivotRow, pivotCol);
+

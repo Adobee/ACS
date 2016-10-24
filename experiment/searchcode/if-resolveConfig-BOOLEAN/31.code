@@ -1,0 +1,8 @@
+public static Tuple<Settings, Environment> prepareSettings(Settings pSettings, boolean loadConfigSettings) {
+// ignore this prefixes when getting properties from es. and elasticsearch.
+Environment environment = new Environment(settingsBuilder.build());
+
+if (loadConfigSettings) {
+boolean loadFromEnv = true;
+if (useSystemProperties) {
+

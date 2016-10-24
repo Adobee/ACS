@@ -1,0 +1,10 @@
+static final int D = 0;
+static final int V = 1;
+
+private double[] initial;
+boolean weighted;
+double[] weights;
+public DirectedMotion(double[] initial, boolean weighted, double[] weights)
+{
+this.initial=initial;
+

@@ -1,0 +1,13 @@
+public Integer getMetricSize(){
+if (value==null){
+metricSize=0;
+}
+else if (value instanceof Collection){
+metricSize=1;
+}
+return metricSize;
+}
+
+public Class<?> getMetricType(){
+if (value instanceof IdEObject){
+

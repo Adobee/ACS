@@ -1,0 +1,11 @@
+public class NumericSerializer extends BaseSerializer<Integer> {
+
+@Override
+public String serialize(String k, Integer v) {
+if(baseJsonSerialize(k)!=null){
+public String serialize(Integer v) {
+if(v!=null){
+return v.toString();
+} else {
+return &quot;0&quot;;
+

@@ -1,0 +1,10 @@
+private static final Log log = LogFactory
+.getLog(LimitedUseHttpWorker.class);
+
+private final int maxRequests;
+private int requestsSoFar;
+
+public LimitedUseHttpWorker(int maxRequests, HttpClient http) {
+super(http);
+this.maxRequests = maxRequests;
+

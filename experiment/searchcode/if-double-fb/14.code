@@ -1,0 +1,13 @@
+double fb = f(b);
+double xx = (a-fa*(b-a)/(fb-fa))*10;
+if (verificarSeTemMesmoSinal(fa, fb))
+{
+return Double.NaN;
+xx = a-fa*(b-a)/(fb-fa);
+double fxx = f(xx);
+if (fxx == ZERO)
+{
+return xx;
+}
+System.out.printf(&quot;%.10f %.10f %.10f %.10f %.10f %.10f %.11f\n&quot;, a, xx, b, fa, fxx, fb, erro);
+

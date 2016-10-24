@@ -1,0 +1,9 @@
+if (input.charAt(index) == &#39;&amp;&#39; &amp;&amp; index < seqEnd - 2 &amp;&amp; input.charAt(index + 1) == &#39;#&#39;) {
+int start = index + 2;
+boolean isHex = false;
+final char firstChar = input.charAt(start);
+++start;
+isHex = true;
+if (start == seqEnd) {
+return 0;
+

@@ -1,0 +1,8 @@
+private boolean mWideMode = false;
+
+// If in wide mode, we have MyScheduleView widgets showing each day
+@Override
+public boolean canSwipeRefreshChildScrollUp() {
+if (mWideMode) {
+return ViewCompat.canScrollVertically(mScrollViewWide, -1);
+

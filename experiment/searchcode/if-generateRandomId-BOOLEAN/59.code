@@ -1,0 +1,7 @@
+private VersionGenerator clusterIdGenerator;
+private TimeService timeService;
+private boolean isClustered;
+private Equivalence<Object> keyEquivalence;
+public void init(boolean dldEnabled, boolean recoveryEnabled, boolean xa, boolean batchingEnabled) {
+if (batchingEnabled) {
+

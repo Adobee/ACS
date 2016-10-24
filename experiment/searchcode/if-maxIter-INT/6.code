@@ -1,0 +1,9 @@
+public final class MandelbrotColourtable {
+
+private final int colourTable[];
+private final int maxIter, maxIterColour;
+private final MandelbrotColourtableFunction mcf;
+public MandelbrotColourtable(MandelbrotColourtableFunction mcf, int maxIter, int maxIterColour) {
+this.mcf = mcf;
+if (!mcf.isAdvanced()) {
+

@@ -1,0 +1,11 @@
+DoublePoint current = list.first;
+DoublePoint previous = current.next;
+
+while (previous != null)
+{
+current = list.first;
+while (current != null)
+{
+counter++;
+if ((current.x > previous.x &amp;&amp; current.y >= previous.y) || (current.x >= previous.x &amp;&amp; current.y > previous.y))
+

@@ -1,0 +1,9 @@
+int termFrequency = termFreqTable.get(term);
+docLength +=  termFrequency;
+if(termFrequency > maxTermFrequency){
+maxTermFrequency = termFrequency;
+}
+
+if(!stopWords.contains(term)){
+updatePostingList(docId, term, termFreqTable.get(term));
+

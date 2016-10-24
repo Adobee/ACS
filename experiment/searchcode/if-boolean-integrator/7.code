@@ -1,0 +1,10 @@
+modIntegrators.add(integrator);
+}
+
+public boolean checkMods(String[] deps) {
+for(String mod: deps) {
+if(!Loader.isModLoaded(mod)) return false;
+for(IModIntegration integrator: modIntegrators) {
+if(checkMods(integrator.getDependencies())) {
+ModularComputing.logger.info(&quot;Loading &quot;+integrator.getName()+&quot; ModIntegrator...&quot;);
+

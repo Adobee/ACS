@@ -1,0 +1,8 @@
+TCPServer tcpServer = new TCPServer();
+ByteBuffer receiveBuffer = ByteBuffer.allocate(1024);
+ByteBuffer sendBuffer = ByteBuffer.allocate(1024);
+System.out.println(&quot;Waiting for connections.....&quot;);
+SocketChannel sc = ssc.accept();
+
+if(sc == null) {
+

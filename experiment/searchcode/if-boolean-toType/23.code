@@ -1,0 +1,10 @@
+public Object convertValue(Map context, Object value, Class toType) {
+
+if (value.getClass().isArray() &amp;&amp; !toType.isArray()) {
+return result;
+}
+
+// need to fix ognl 2.6.9
+if (toType == Boolean.class || toType == Boolean.TYPE) {
+if (value.getClass() == String.class) {
+

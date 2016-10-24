@@ -1,0 +1,9 @@
+int[] numbers =  new int[3];
+for(int count = 0; count < A.length; count ++) {
+numbers[A[count]] ++;
+
+}
+
+for(int count = 0; count < A.length; count ++) {
+if(numbers[0] != 0)
+

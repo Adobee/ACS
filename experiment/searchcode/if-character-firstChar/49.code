@@ -1,0 +1,7 @@
+char firstChar=s.charAt(queue.pop());
+if(map2.get(firstChar)>1)
+map2.put(firstChar,map2.get(firstChar)-1); // Need to consider the situation where
+else
+map2.remove(firstChar);
+if(map2.containsKey(firstChar) &amp;&amp; map2.get(firstChar)-map.get(firstChar)>=0) {
+

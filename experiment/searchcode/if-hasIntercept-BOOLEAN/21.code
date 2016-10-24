@@ -1,0 +1,11 @@
+public double[] getPValues() {
+return _pValues;
+}
+
+public boolean hasIntercept() {
+return _hasIntercept;
+final double[] betas = getBetas();
+if (hasIntercept()) {
+if (x.length != betas.length - 1) {
+throw new IllegalArgumentException(&quot;Number of variables did not match number used in regression&quot;);
+

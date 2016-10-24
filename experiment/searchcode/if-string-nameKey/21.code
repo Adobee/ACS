@@ -1,0 +1,12 @@
+private String beanName;
+private String valueKey;
+private String nameKey;
+private boolean multiple;
+private boolean promptIfEmpty;
+
+public String getBeanName() {
+return beanName;
+}
+
+public void setBeanName(String beanName) {
+

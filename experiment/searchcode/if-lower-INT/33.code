@@ -1,0 +1,6 @@
+public class Solution {
+public List<String> findMissingRanges(int[] nums, int lower, int upper) {
+for(int i = 0; i < nums.length &amp;&amp; lower <= upper; i++) {
+if(nums[i] != lower) {
+addInterval(res, lower, nums[i] - 1);
+

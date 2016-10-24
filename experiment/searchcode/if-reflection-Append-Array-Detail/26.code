@@ -1,0 +1,7 @@
+protected void appendDetail(final StringBuffer buffer, final String fieldName, final Collection<?> coll) {
+this.depth++;
+buffer.append(new OnlineReflectionToStringBuilder(coll.toArray(), this).toString());
+this.depth++;
+buffer.append(new OnlineReflectionToStringBuilder(array, this).toString());
+this.depth--;
+

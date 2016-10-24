@@ -1,0 +1,9 @@
+// Always persist/notify the first time; don&#39;t assume the field&#39;s
+// default of false.
+final boolean changed = mChecked != checked;
+if (changed) {
+mChecked = checked;
+persistBoolean(checked);
+if (changed) {
+notifyChanged();
+

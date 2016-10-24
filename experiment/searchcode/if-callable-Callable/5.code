@@ -1,0 +1,18 @@
+package org.codeswarm.lazyproxy;
+
+import java.util.concurrent.Callable;
+
+/**
+* Methods for creating {@link Callable} instances.
+public synchronized T call() throws Exception {
+if (!gotten) {
+t = callable.call();
+gotten = true;
+}
+return t;
+}
+
+}
+
+}
+

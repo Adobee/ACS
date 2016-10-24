@@ -1,0 +1,9 @@
+* Exemple: <b>epsilon</b> = 1E-6
+*/
+public static boolean isEquals(double a, double b)
+{
+if (a == 0 || b == 0)
+public static double hypot(double a, double b) {
+double r;
+if (Math.abs(a) > Math.abs(b)) {
+

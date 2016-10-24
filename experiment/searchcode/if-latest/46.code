@@ -1,0 +1,15 @@
+redos.clear();
+}
+
+@Override public void undo() {
+CompensableCommand latestCmd = undos.pop();
+if(latestCmd==null) return;
+@Override public void redo() {
+CompensableCommand latestCmd = redos.pop();
+if(latestCmd==null) return;
+latestCmd.execute();
+undos.push(latestCmd);
+}
+
+}
+

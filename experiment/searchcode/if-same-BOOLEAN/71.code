@@ -1,0 +1,7 @@
+/** True iff both sequences are non-null and have the same length. */
+@EnsuresNonNullIf(result=true, expression={&quot;#1&quot;, &quot;#2&quot;})
+/* pure */ public static boolean pairwiseEqual(boolean @Nullable [] seq3, boolean @Nullable [] seq4) {
+if (sameLength(seq3, seq4)) {
+boolean b1 = seq3[0];
+boolean b2 = seq4[0];
+

@@ -1,0 +1,11 @@
+package util.equality;
+
+public class EqualsBuilder
+{
+private boolean arePotentiallyEqual;
+public EqualsBuilder withField(Object thisField, Object otherField)
+{
+if (arePotentiallyEqual)
+{
+arePotentiallyEqual = (thisField == otherField || (thisField != null &amp;&amp; thisField.equals(otherField)));
+

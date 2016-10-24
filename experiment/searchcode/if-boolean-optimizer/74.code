@@ -1,0 +1,12 @@
+this.optimizer = optimizer;
+}
+
+@Override
+public boolean isBreakTime(final TestStat stat)
+{
+final SetStat newest = stat.getBestValid();
+
+if(optimizer.betterThan(newest, bestValid))
+{
+bestValid = newest;
+

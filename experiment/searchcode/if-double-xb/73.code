@@ -1,0 +1,10 @@
+double yb = cdf(xb);
+double ya = cdf(xa);
+if (yb < ya) {
+throw new IllegalArgumentException(&quot;F is decreasing&quot;);
+break;
+}
+x = (xa + xb) / 2D;
+final double y = cdf(x) - u;
+if ((Math.abs(y) <= EPSILON)
+

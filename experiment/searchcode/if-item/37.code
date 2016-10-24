@@ -1,0 +1,10 @@
+public void deleteItem(String name)
+{
+if (firstItem != null) firstItem.delete(name, firstItem);
+if (firstItem != null &amp;&amp; firstItem.getName().equals(name) &amp;&amp; firstItem.isOnly())
+firstItem=null;
+}
+else if (firstItem != null &amp;&amp; firstItem.getName().equals(name))
+{
+CircleListItem oldFirst = firstItem;
+

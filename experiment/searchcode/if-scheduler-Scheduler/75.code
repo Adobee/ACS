@@ -1,0 +1,8 @@
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+import org.quartz.impl.StdSchedulerFactory;
+private void modifyScheduler(Scheduler scheduler) {
+try {
+if (!scheduler.isInStandbyMode()) {
+// pause the scheduler
+

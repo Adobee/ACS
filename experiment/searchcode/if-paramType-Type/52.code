@@ -1,0 +1,8 @@
+public static ParamType fromString(String label) {
+for (ParamType type : ParamType.values()) {
+if (type.label.equalsIgnoreCase(label)) return type;
+case LOCATION:
+if (dimension == 0) return ParamType.LATITUDE;
+return ParamType.LONGITUDE;
+case BEARING: return ParamType.BEARING;
+

@@ -1,0 +1,10 @@
+public RayleighNoise(float intensity) {
+super(&quot;Exponential Noise&quot;);
+this.intensity = intensity;
+}
+
+@Override
+public int modify(double value, float randomValue, float changePixel) {
+if (changePixel <= intensity) {
+return (int) (value * randomValue);
+

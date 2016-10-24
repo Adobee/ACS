@@ -1,0 +1,9 @@
+public static boolean isZero(BigDecimal value) {
+if (value == null) {
+return true;
+}
+return isZero(value, MAX_SCALE);
+}
+
+public static boolean isZero(BigDecimal value, int scale) {
+

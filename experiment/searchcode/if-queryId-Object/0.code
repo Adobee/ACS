@@ -1,0 +1,12 @@
+hash = 97 * hash + this.queryId;
+return hash;
+}
+
+@Override
+public boolean equals(Object obj) {
+final QueryId other = (QueryId) obj;
+if (this.queryId != other.queryId) {
+return false;
+}
+return true;
+

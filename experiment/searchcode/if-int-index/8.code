@@ -1,0 +1,8 @@
+public void merge(int[] a, int[] b, int lastA, int lastB){
+int indexA=lastA-1;
+int indexB=lastB-1;
+int mergeIndex=indexA+indexB-1;
+
+while(indexA>=0 &amp;&amp; indexB>=0){
+if(a[indexA]>b[indexB]){
+

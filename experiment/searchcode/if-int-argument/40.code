@@ -1,0 +1,13 @@
+REGISTER(2),
+MEMORY_VALUE(3);
+
+public final int index;
+
+private ArgumentType(int index) {
+this.index = index;
+return ArgumentType.values();
+}
+
+public static ArgumentType index(int index) {
+for (ArgumentType at : ArgumentType.values()) {
+

@@ -1,0 +1,10 @@
+import org.eclipse.core.resources.IFile;
+import org.eclipse.core.resources.IResource;
+import org.eclipse.core.resources.IResourceVisitor;
+this.codeVisitor = codeVisitor;
+}
+
+public boolean visit(IResource resource)
+{
+if (resource.getType() == IResource.FILE &amp;&amp; &quot;java&quot;.equals(resource.getFileExtension()))
+

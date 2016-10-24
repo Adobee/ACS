@@ -1,0 +1,9 @@
+public static String getProjectFileUrl(String relativeUrl) {
+if (TextUtils.isEmpty(relativeUrl)) {
+return null;
+}
+
+// 判断relativeUrl的首个字节是否包含&quot;/&quot;
+String url = null;
+if (relativeUrl.substring(0, 1).equals(&quot;/&quot;)) {
+

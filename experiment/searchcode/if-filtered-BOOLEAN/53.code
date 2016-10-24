@@ -1,0 +1,6 @@
+adjustFilteredToSourceIndexes(sourceToFilteredIndex(event.getIndex(), true), +1);
+if ( _filter.apply(event.getElement()) ) {
+doAdd(event.getIndex(), event.getElement());
+int filteredIndex = sourceToFilteredIndex(event.getIndex(), true);
+if ( filteredIndex != -1 &amp;&amp; filteredIndex < _filteredToSourceIndexes.size() &amp;&amp;  _filteredToSourceIndexes.get(filteredIndex) == event.getIndex() ) {
+

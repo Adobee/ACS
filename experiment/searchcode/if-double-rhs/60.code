@@ -1,0 +1,13 @@
+xyz[1] = y;
+xyz[2] = z;
+}
+
+public Vector3(double[] array) {
+if (array.length != 3)
+throw new RuntimeException(
+return new Vector3(xyz[0] / c, xyz[1] / c, xyz[2] / c);
+}
+
+public double dot(Vector3 rhs) {
+return xyz[0] * rhs.xyz[0] + xyz[1] * rhs.xyz[1] + xyz[2] * rhs.xyz[2];
+

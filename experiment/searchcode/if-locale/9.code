@@ -1,0 +1,7 @@
+private void initLocale() {
+if(locale!=null &amp;&amp; !&quot;&quot;.equals(locale) &amp;&amp; !&quot;&quot;.equals(&quot;DEFAULT&quot;)){
+String[] lc = locale.split(&quot;_&quot;);
+if(lc.length==2){
+Locale l = new Locale(lc[0], lc[1]);
+Locale.setDefault(l);
+

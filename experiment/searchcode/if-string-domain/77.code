@@ -1,0 +1,8 @@
+//下游分包商月结对账审批 控制是否发送审批及多次对账 2013-10-08 by xiay
+String xtcs20213 = commonDao.getFunXtXtcs(&quot;20213&quot;, userDomain.getGsbm(), &quot;2&quot;);
+domain.setSfsp(xtcs20213);
+XyjsZbYjdzDomain domain = (XyjsZbYjdzDomain) baseBusinessDomain;
+String pldzStr = domain.getPldzStr();
+if(pldzStr != null){
+String[] strs = pldzStr.split(&quot;,&quot;);
+

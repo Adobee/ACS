@@ -1,0 +1,5 @@
+final Column<KeyValue, String> keyColumn = new Column<KeyValue, String>(keyTextInputCell) {
+@Override
+public String getCellStyleNames(Cell.Context context, KeyValue keyValue) {
+if (!labelValidator.apply(keyValue.getKey())) {
+

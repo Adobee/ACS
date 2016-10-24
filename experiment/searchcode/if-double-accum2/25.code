@@ -1,0 +1,10 @@
+* @see org.apache.commons.math.stat.univariate.StorelessUnivariateStatistic#increment(double)
+*/
+public void increment(final double d) {
+if (incMoment) {
+moment.increment(d);
+* @see org.apache.commons.math.stat.univariate.StorelessUnivariateStatistic#getResult()
+*/
+public double getResult() {
+if (n < moment.n) {
+

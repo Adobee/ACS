@@ -1,0 +1,9 @@
+double res;
+Double f = new Double(x);
+Double f1 = new Double(y);
+Double r = (f + f1);
+Double f = new Double(x);
+Double f1 = new Double(y);
+if (f1 == 0) {
+throw new ErrorValores(&quot;operando Y vale 0&quot;);
+

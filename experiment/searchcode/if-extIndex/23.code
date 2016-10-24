@@ -1,0 +1,10 @@
+* @see javax.swing.filechooser.FileFilter#accept(java.io.File)
+*/
+public boolean accept(File f) {
+// ディレクトリは常に表示する
+if (f.isDirectory()) {
+String fileName = f.getName();
+int extIndex = fileName.lastIndexOf(&quot;.&quot;);
+if (extIndex >= 0) {
+if (fileName.substring(extIndex + 1).toLowerCase().equals(extention)) {
+

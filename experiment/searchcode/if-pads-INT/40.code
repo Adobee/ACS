@@ -1,0 +1,8 @@
+public double probability(String pads, int maxDist) {
+double[] dp = new double[MAX_DIST];
+dp[0] = 1;
+for (int pos = MAX_DIST-1; pos >= 0; pos--) {
+dp[pos] = 0.;
+if (pads.charAt(pos % pads.length()) == &#39;X&#39;)
+continue;
+

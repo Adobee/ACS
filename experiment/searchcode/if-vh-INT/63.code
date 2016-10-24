@@ -1,0 +1,7 @@
+@Override
+public void onClick(View v) {
+if (mListener != null) {
+ViewHolder vh = (ViewHolder)v.getTag();
+mListener.onClickEdit(vh.position);
+} else if (v.getId() == R.id.upButton) {
+

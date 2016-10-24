@@ -1,0 +1,7 @@
+public static long skip(InputStream input, long toSkip) throws IOException {
+if (toSkip < 0) {
+throw new IllegalArgumentException(&quot;Bytes to skip must not be negative: &quot; + toSkip);
+}
+long skipped = skip(input, toSkip);
+if (skipped != toSkip) {
+

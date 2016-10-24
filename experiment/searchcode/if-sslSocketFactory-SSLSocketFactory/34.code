@@ -1,0 +1,7 @@
+package au.org.ala.ozatlas;
+
+import org.apache.http.conn.ssl.SSLSocketFactory;
+import org.apache.http.conn.ssl.X509HostnameVerifier;
+final X509HostnameVerifier delegate = sslSocketFactory.getHostnameVerifier();
+if(!(delegate instanceof MyVerifier)) {
+

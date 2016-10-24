@@ -1,0 +1,5 @@
+MediaType mediaType = headers.getMediaType();
+if (mediaType == null &amp;&amp; headers.getAcceptableMediaTypes().size() > 0)
+mediaType = headers.getAcceptableMediaTypes().get(0);
+if (!MediaType.APPLICATION_XML_TYPE.equals(mediaType) &amp;&amp; !MediaType.APPLICATION_JSON_TYPE.equals(mediaType))
+

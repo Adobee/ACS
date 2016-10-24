@@ -1,0 +1,7 @@
+refLandType, refLandLevel);
+if(basePrice == 0) basePrice = contract.getSigningPrice();
+initArea = contract.getUseArea();
+double area = scd.getStepLong();
+if(scd.equals(last)) area = initArea - scd.getStepStart();
+initRental += basePrice * area * coeff;
+

@@ -1,0 +1,13 @@
+return color;
+}
+
+public synchronized void addFocus(Object focus) {
+if(focus instanceof Focus){
+String id = ((Focus)focus).getId();
+syncFocus();
+return new HashSet<Object>(_focusMap.keySet());
+}
+
+//if browser is closed directly
+private synchronized void syncFocus() {
+

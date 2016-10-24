@@ -1,0 +1,9 @@
+return new InternalHDRPercentileRanks(name, keys, merged, keyed, format, pipelineAggregators, metaData);
+}
+
+static double percentileRank(DoubleHistogram state, double value) {
+if (state.getTotalCount() == 0) {
+return Double.NaN;
+}
+double percentileRank = state.getPercentileAtOrBelowValue(value);
+

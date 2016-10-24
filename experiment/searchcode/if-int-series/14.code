@@ -1,0 +1,8 @@
+private int seriesId;
+
+/**
+* The series id that team one comes from.  Value will be
+* negative one if this is a starting series in the tournament.
+*/
+private int team1FromSeriesId = -1;
+

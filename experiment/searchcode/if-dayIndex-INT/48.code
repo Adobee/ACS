@@ -1,0 +1,8 @@
+public DistanceToSolutionConstraint(boolean active,
+int defaultWeightValue) {
+if (defaultWeightValue < 0)
+throw new IllegalArgumentException();
+initialAssignments = new ArrayList<ArrayList<Shift>>();
+for (int dayIndex=0; dayIndex<problem.schedulingPeriod.size();
+dayIndex++) {
+

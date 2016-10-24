@@ -1,0 +1,12 @@
+private Long acceptedMoveCount = null;
+
+public LocalSearchStepScope(LocalSearchPhaseScope phaseScope) {
+this(phaseScope, phaseScope.getNextStepIndex());
+this.step = step;
+}
+
+/**
+* @return null if logging level is to high
+*/
+public String getStepString() {
+

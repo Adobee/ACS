@@ -1,0 +1,13 @@
+for(int i = 0; i < vector.getDimension(); i++) {
+double randomValue = randomGenerator.nextDouble();
+
+randomValue = scaleNumberToInterval(randomValue, -40, 40);
+private double scaleNumberToInterval(double randomNumber, double lowerBound, double upperBound) {
+if(lowerBound > upperBound) {
+return 0;
+}
+
+double scaledNumber = 0;
+
+double intervalLength = upperBound - lowerBound;
+

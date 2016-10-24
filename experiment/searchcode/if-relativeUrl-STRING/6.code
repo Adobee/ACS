@@ -1,0 +1,14 @@
+public static String getAbsoluteUrl(String relativeUrl) {
+if (!TextUtils.isEmpty(relativeUrl)
+&amp;&amp; (relativeUrl.toLowerCase().startsWith(&quot;http&quot;) || relativeUrl
+return relativeUrl;
+}
+
+if (LogUtil.isDebug()) {
+DomainUtil.BASE_URL = BASE_URL_TEST;
+}
+
+return DomainUtil.BASE_URL + relativeUrl;
+}
+}
+

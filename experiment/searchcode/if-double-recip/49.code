@@ -1,0 +1,8 @@
+public double calculateChiSquaredPValue(int degreesOfFreedom, double criticalValue) {
+
+if (criticalValue < 0 || degreesOfFreedom < 1) {
+double k = ((double) degreesOfFreedom) * 0.5;
+double x = criticalValue * 0.5;
+if (degreesOfFreedom == 2) {
+return Math.exp(-1.0 * x);
+

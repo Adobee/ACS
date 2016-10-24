@@ -1,0 +1,7 @@
+public List<String> fullJustify(String[] words, int maxWidth) {
+List<String> res = new ArrayList<>();
+int strLen = 0;
+int start = 0, end = 0;
+for (int i = 0; i < words.length; i++) {
+if (strLen == 0 || strLen + words[i].length() + 1 <= maxWidth) {
+

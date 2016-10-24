@@ -1,0 +1,8 @@
+/** Maximum number of entries in this map. */
+private int maximumSize;
+
+/** How many items get deleted if we are above maximum. */
+public ConcurrentSizeLimitedMap(int maximumSize) {
+this.maximumSize = maximumSize;
+this.deleteCount = Math.max(1, maximumSize / 10);
+

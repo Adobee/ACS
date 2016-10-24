@@ -1,0 +1,6 @@
+import com.yandex.disk.client.ListParsingHandler;
+import com.yandex.disk.client.TransportClient;
+import com.yandex.disk.client.exceptions.CancelledDownloadException;
+GetListTask task = new GetListTask();
+task.execute(TransportClient.getInstance(this, credentials));
+

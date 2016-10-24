@@ -1,0 +1,13 @@
+public void add(Integer value){
+if(map.containsKey(value)){
+map.put(value, map.get(value)+1) ;
+}else{
+map.put(value, 1) ;
+}
+}
+public boolean find(Integer value){
+if(map.size()<2){
+return false ;
+}else{
+for(Map.Entry<Integer, Integer> entry:map.entrySet()){
+

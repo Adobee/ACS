@@ -1,0 +1,16 @@
+this.finitePart = finitePart;
+this.infinitePart = infinitePart;
+}
+
+@Override
+public boolean containsValue(T thing) {
+if (finitePart.containsValue(thing)) {
+infinitePart.addAll(compoundSet.infinitePart);
+} else if (s instanceof InfiniteSet<?>) {
+infinitePart.add((InfiniteSet<T>) s);
+} else {
+throw new NotImplementedYetException();
+}
+}
+}
+

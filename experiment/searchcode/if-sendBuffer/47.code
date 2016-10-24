@@ -1,0 +1,9 @@
+public class NIOClient {
+
+private static int blockSize = 4096;
+private static ByteBuffer sendBuffer = ByteBuffer.allocate(blockSize);
+System.out.println(&quot;客户端已经连接&quot;);
+if (client.isConnectionPending()){
+client.finishConnect();
+sendBuffer.clear();
+

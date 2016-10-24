@@ -1,0 +1,6 @@
+final double atol=1.0e-6,rtol=atol,h1=2.9e-4,hmin=0.0,x1=0.0,x2=50.0;
+double sbeps;
+// dydx= new double[nvar],
+double[] y= new double[nvar],yout= new double[nvar];
+boolean localflag, globalflag=false;
+

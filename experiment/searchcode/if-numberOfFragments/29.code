@@ -1,0 +1,7 @@
+queryScorer.setExpandMultiTermQuery(true);
+Fragmenter fragmenter;
+if (field.fieldOptions().numberOfFragments() == 0) {
+} else {
+// refine numberOfFragments if needed
+numberOfFragments = fragsList.size() < numberOfFragments ? fragsList.size() : numberOfFragments;
+

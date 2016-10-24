@@ -1,0 +1,9 @@
+package ch4.ex4;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import javax.servlet.ServletException;
+public void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException{
+
+request.setCharacterEncoding(&quot;utf-8&quot;);   //한글 처리를 가능하게 설정한다.
+

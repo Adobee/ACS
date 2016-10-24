@@ -1,0 +1,10 @@
+public abstract class DoubleClickAdapter extends ClickListener {
+
+private float prevX;
+private float prevY;
+
+public DoubleClickAdapter() {
+if (getTapCount() % 2 == 0) {
+if (inTapSquare(prevX, prevY)) {
+doubleClicked(event, x, y);
+

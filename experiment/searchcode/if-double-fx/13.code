@@ -1,0 +1,13 @@
+public static Double solve(double a, double b, double eps, DoubleUnaryOperator func) {
+
+if (a > b) {
+fx = func.applyAsDouble(xi);
+if (fx < min) {
+min = fx;
+}
+}
+
+return min;
+}
+}
+

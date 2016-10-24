@@ -1,0 +1,8 @@
+List<AbstractCheckParameter> checkList = new ArrayList<AbstractCheckParameter>();
+checkList.add( new OutputCheck() );
+checkList.add( new FileCheck() );
+AbstractCheckParameter abs = checkMap.get( param );
+int argNumber = abs.getArgNumber();
+
+if( argNumber == -1 )
+

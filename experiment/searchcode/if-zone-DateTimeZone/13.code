@@ -1,0 +1,10 @@
+private final ZoneId dateTimeZone;
+
+public JavaLocalDateTimeToTimestampConverter(ZoneId dateTimeZone) {
+this.dateTimeZone = dateTimeZone;
+public Timestamp convert(LocalDateTime in) throws Exception {
+if (in == null) return null;
+return new Timestamp(in.atZone(dateTimeZone).toInstant().toEpochMilli());
+}
+}
+

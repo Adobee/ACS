@@ -1,0 +1,8 @@
+public void start(Attributes attributes) {
+timeline=new Timeline();
+if (attributes.getIndex(&quot;t&quot;) != -1) {
+timeline.SetStartTime(Integer.parseInt(attributes.getValue(attributes.getIndex(&quot;t&quot;))));
+}
+if (attributes.getIndex(&quot;d&quot;) != -1) {
+timeline.SetDuration(Integer.parseInt(attributes.getValue(attributes.getIndex(&quot;d&quot;))));
+

@@ -1,0 +1,13 @@
+int toRead = Math.min(length, available());
+if (toRead > 0) {
+System.arraycopy(buff, pos, bytes, offset, toRead);
+pos += toRead;
+return toRead;
+} else {
+return -1;
+}
+
+}
+
+public long skip(long n) {
+

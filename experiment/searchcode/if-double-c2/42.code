@@ -1,0 +1,11 @@
+double c6 = (b*b*x3*x3 + b*b*y3*y3-x2*x2-y2*y2)/(b*b-1);
+
+if(c2!=c5){
+double c7 = (c6-c3)/(c2-c5);
+double c8 = (c1-c4)/(c2-c5);
+double c9 = c7*c7+c2*c7+c3;
+double c13 = c12*c12 + c3 + c1*c12;
+double determinant = c2*c2 - 4*c13;
+
+if(determinant>=0){
+

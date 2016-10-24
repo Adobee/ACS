@@ -1,0 +1,9 @@
+String hexDigits = &quot;0123456789ABCDEF&quot;;
+for (int i = 0; i < coded.length; i++) {
+int c = coded[i];
+if (c < 0)
+c += 256;
+int hex1 = c &amp; 0xF;
+int hex2 = c >> 4;
+System.out.print(hexDigits.substring(hex2, hex2 + 1));
+

@@ -1,0 +1,6 @@
+Socket socket = mock(Socket.class);
+SocketFactory socketFactory = mock(SocketFactory.class);
+when (socketFactory.newSocket (any (SocketAddress.class))).thenReturn(socket);
+OpenTsdbClientFactory factory = new OpenTsdbClientFactory(config(), socketFactory);
+assertNotNull(factory.makeObject());
+

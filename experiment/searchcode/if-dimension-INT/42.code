@@ -1,0 +1,8 @@
+* Creates a type representing a dimension.
+*
+* @param dimension
+*          Dimension that values of this type must belong to, or null if the
+this.dimension = dimension;
+StringBuilder buf = new StringBuilder(&quot;DimensionType<&quot;);
+if (dimension != null) {
+

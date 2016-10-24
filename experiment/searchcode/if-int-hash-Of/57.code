@@ -1,0 +1,16 @@
+/* End Of JS Hash Function */
+
+public static long PJWHash( String str ) {
+long BitsInUnsignedInt = (long)(4 * 8);
+x = hash &amp; 0xF0000000L;
+if( x != 0 ) {
+hash ^= (x >> 24);
+}
+hash &amp;= ~x;
+}
+
+return hash;
+}
+
+/* End Of ELF Hash Function */
+

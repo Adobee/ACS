@@ -1,0 +1,16 @@
+final int result = this.delegate.read();
+
+if (-1 != result) {
+byteCount.incrementAndGet();
+}
+
+return result;
+InstrumentedInputStream.byteCount.addAndGet(byteCount);
+}
+
+return byteCount;
+}
+
+public static final long count(final long byteCount) {
+if (-1L != byteCount) {
+

@@ -1,0 +1,7 @@
+AbstractArrayWrapper(BigArrays bigArrays, long size, Releasable releasable, boolean clearOnResize) {
+super(bigArrays, clearOnResize);
+this.releasable = releasable;
+public DoubleArray newDoubleArray(long size, boolean clearOnResize) {
+final DoubleArray arr;
+if (size > LONG_PAGE_SIZE) {
+

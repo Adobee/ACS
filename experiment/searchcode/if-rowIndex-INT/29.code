@@ -1,0 +1,8 @@
+int numCol = a[0].length;
+int rowIndex = 0;
+int colIndex = numCol - 1;
+while (rowIndex < numRow &amp;&amp; colIndex >= 0) {
+if (a[rowIndex][colIndex] == n) {
+return new int[] { rowIndex, colIndex };
+} else if (a[rowIndex][colIndex] < n) {
+

@@ -1,0 +1,7 @@
+public int helper(int[] nums, int start, int end){
+int preYes = nums[start];
+int preNo  = 0;
+for(int i = start+1; i <= end; i++){
+int tmp = preYes;
+preYes = preNo + nums[i];
+

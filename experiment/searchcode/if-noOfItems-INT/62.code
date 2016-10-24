@@ -1,0 +1,6 @@
+hash = 59 * hash + Objects.hashCode(this.displaySymbol);
+hash = 59 * hash + (int) (Double.doubleToLongBits(this.noOfItems) ^ (Double.doubleToLongBits(this.noOfItems) >>> 32));
+return false;
+}
+if (Double.doubleToLongBits(this.noOfItems) != Double.doubleToLongBits(other.noOfItems)) {
+

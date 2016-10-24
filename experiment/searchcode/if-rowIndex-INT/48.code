@@ -1,0 +1,13 @@
+public class PRowIndex extends PTableIndex implements PModelIndex {
+
+private final int row;
+
+public PRowIndex(int rowIndex) {
+if (rowIndex < 0) {
+throw new IllegalArgumentException(&quot;rowIndex=&quot;+rowIndex);
+}
+row = rowIndex;
+}
+
+public int getColumn() {
+

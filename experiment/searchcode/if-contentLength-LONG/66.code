@@ -1,0 +1,10 @@
+public long getFirstByte(long contentLength) {
+if (contentLength > 0 &amp;&amp; isRangeRequest()) {
+return myRangeFrom > -1 ? Math.min(myRangeFrom, contentLength - 1L) : Math.max(0L, contentLength - myRangeTo);
+}
+return 0;
+}
+
+public long getLastByte(long contentLength) {
+if (contentLength > 0) {
+

@@ -1,0 +1,7 @@
+System.out.print(&quot;Enter circle1&#39;s center x-, y-coordinates, and radius: &quot;);
+double c1_x = input.nextDouble();
+double c1_y = input.nextDouble();
+double c1_radius = input.nextDouble();
+
+System.out.print(&quot;Enter circle2&#39;s center x-, y-coordinates, and radius: &quot;);
+

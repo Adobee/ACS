@@ -1,0 +1,7 @@
+for (ExpressionTree<AExpression> child : ExpressionTrees.getChildren(tree)) {
+if (child instanceof LeafExpression) {
+AExpression expression = ((LeafExpression<AExpression>) child).getExpression();
+AExpressionAssignmentStatement expAssignStmt = (AExpressionAssignmentStatement) statement;
+ALeftHandSide lhs = expAssignStmt.getLeftHandSide();
+if (lhs instanceof AIdExpression
+

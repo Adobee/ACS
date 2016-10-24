@@ -1,0 +1,11 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+@Provider
+public class ObjectMapperProvider implements ContextResolver<ObjectMapper> {
+
+private ObjectMapper mapper;
+
+@Override
+public ObjectMapper getContext(Class<?> type) {
+if (mapper == null) {
+

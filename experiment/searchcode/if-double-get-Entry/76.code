@@ -1,0 +1,7 @@
+.getValue())).doubleValue())
+return 1;
+if (((Double) (((Map.Entry) a).getValue())).doubleValue() == ((Double) (((Map.Entry) b)
+.getValue())).doubleValue())
+return 0;
+if (((Double) (((Map.Entry) a).getValue())).doubleValue() < ((Double) (((Map.Entry) b)
+

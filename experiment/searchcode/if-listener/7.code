@@ -1,0 +1,8 @@
+@Override
+public void addPropertyChangeListener(IPropertyChangeListener listener) {
+if (listenerList == null) {
+listenerList = new ListenerList(ListenerList.IDENTITY);
+}
+listenerList.add(listener);
+}
+

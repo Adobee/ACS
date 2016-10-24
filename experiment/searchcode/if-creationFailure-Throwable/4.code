@@ -1,0 +1,8 @@
+private volatile boolean canceled;
+
+// All guarded by this.
+private okhttp3.Call rawCall;
+private Throwable creationFailure; // Either a RuntimeException or IOException.
+if (creationFailure != null) {
+if (creationFailure instanceof IOException) {
+

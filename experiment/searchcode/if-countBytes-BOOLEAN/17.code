@@ -1,0 +1,14 @@
+packet.getAddress(), packet.getPort());
+socket.send(sendACK);
+}
+
+if(countBytes >= fileLength){
+buff.close();
+setModeParameter(windowSize);
+return true;
+}
+
+@Override
+public boolean setModeParameter(long size) {
+if(reliableMode == 0)
+

@@ -1,0 +1,16 @@
+private static final int DEFAULT_SIZE = 10;
+
+private int maxSize;
+private int listSize;
+private int currentPos;
+currentPos--;
+}
+
+public void next()
+{
+if(currentPos < listSize)
+currentPos++;
+}
+
+public int length(){return listSize;}
+

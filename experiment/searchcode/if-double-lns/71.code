@@ -1,0 +1,11 @@
+c((hzt)paramSFMessageBase);
+}
+}
+
+public void ja(SFGUID paramSFGUID)
+{
+if (paramSFGUID == null)
+dkh.c(5, &quot;SFPersistentSessionClanInvitationManager&quot;, &quot;handleClanInvitationRequest() TargetPSOGUID == NULL.&quot;);
+if (!s) {
+throw new AssertionError();
+

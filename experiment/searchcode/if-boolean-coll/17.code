@@ -1,0 +1,13 @@
+public class RoundRobinIterator<T> implements Iterable<T> {
+private List<T> coll;
+private int index = 0;
+
+public RoundRobinIterator(List<T> coll) {
+return new Iterator<T>() {
+public boolean hasNext() {
+return true;
+}
+
+public T next() {
+if(coll==null||coll.isEmpty()){
+

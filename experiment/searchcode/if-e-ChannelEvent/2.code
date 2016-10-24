@@ -1,0 +1,8 @@
+public void onEvent(ChannelEvent event) {
+ChannelEvent.Type type = event.getType();
+if(type == ChannelEvent.Type.SUBSCRIBED) {
+onSubscribed(event);
+} else if(type == ChannelEvent.Type.SENT) {
+onSent(event);
+} else if(type == ChannelEvent.Type.RECEIVED) {
+

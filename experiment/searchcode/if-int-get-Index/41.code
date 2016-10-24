@@ -1,0 +1,15 @@
+return getLastIndexInRow(row) - rowBefore;
+}
+
+public default int getColumn(int index, int row) {
+if (isInvalidIndex(index) || isInvalidRow(row)) {
+return getColumn(index, getRow(index));
+}
+
+public default int getRow(int index) {
+if (isInvalidIndex(index)) {
+return -1;
+}
+
+int idxMin = 0;
+

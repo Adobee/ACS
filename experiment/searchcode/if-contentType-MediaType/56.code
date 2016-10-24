@@ -1,0 +1,7 @@
+protected boolean canRead(MediaType mediaType) {
+if (mediaType == null) {
+return true;
+}
+for (MediaType supportedMediaType : getSupportedMediaTypes()) {
+if (supportedMediaType.includes(mediaType)) {
+

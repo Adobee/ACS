@@ -1,0 +1,9 @@
+public String toString()
+{
+String name = null;
+
+if ( rawType instanceof TypeVariable )
+name = ((TypeVariable< ? >)rawType).getName();
+else if ( rawType instanceof Class )
+name = ((Class< ? >)rawType).getName();
+

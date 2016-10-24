@@ -1,0 +1,8 @@
+import net.sf.xplanner.domain.Iteration;
+
+import org.apache.commons.lang.StringUtils;
+import org.apache.struts.action.ActionForm;
+Iteration iteration = (Iteration) getCommonDao().getById(Iteration.class, Integer.parseInt(iterationId));
+if (iteration.isActive()) {
+iteration.setIterationStatus(IterationStatus.INACTIVE);
+

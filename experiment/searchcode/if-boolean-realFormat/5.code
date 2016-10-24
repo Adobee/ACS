@@ -1,0 +1,13 @@
+public validadorReales(String msg) {
+super(msg);
+}
+
+public validadorReales(String msg, boolean required) {
+super(msg, required);
+/* retrieve the string value of the field */
+String realFormat = value.toString();
+
+Matcher matcher = mask.matcher(realFormat);
+
+if (!matcher.matches()) {
+

@@ -1,0 +1,9 @@
+if (getClass() != obj.getClass())
+return false;
+Token other = (Token) obj;
+if (currentToken == null) {
+if (other.currentToken != null)
+return false;
+} else if (!currentToken.equals(other.currentToken))
+return false;
+

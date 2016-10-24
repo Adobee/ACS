@@ -1,0 +1,6 @@
+public void setXpTpBetapOldNew(double xp, double tp, double betapOld, double betapNew){
+double betaRel = sc.getBetaRel();
+// Ensure -1 <= betapNew <= 1
+if(betapNew>1) betapNew=1;
+else if(betapNew<-1) betapNew=-1;
+

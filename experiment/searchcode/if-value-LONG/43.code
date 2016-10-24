@@ -1,0 +1,9 @@
+public class LongConverter extends AbstractNumberConverter<Long> {
+
+public LongConverter(){}
+public LongConverter(Long defaultValue){
+this.defaultValue = defaultValue ;
+double doubleValue = number.doubleValue() ;
+if(doubleValue < Long.MAX_VALUE &amp;&amp; doubleValue > Long.MIN_VALUE ){
+return number.longValue() ;
+

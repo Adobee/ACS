@@ -1,0 +1,11 @@
+return initial;
+}
+
+double yMin = computeObjectiveValue(min);
+if (FastMath.abs(yMin) <= functionValueAccuracy) {
+return brent(min, initial, yMin, yInitial);
+}
+
+double yMax = computeObjectiveValue(max);
+if (FastMath.abs(yMax) <= functionValueAccuracy) {
+

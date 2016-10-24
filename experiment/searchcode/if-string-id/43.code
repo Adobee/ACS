@@ -1,0 +1,15 @@
+public static void create(String id)
+{
+List<BookId> bId = find.all();
+
+if (bId.size() != 0)
+return;
+public static String getBookId()
+{
+List<BookId> bId = find.all();
+
+if (bId.size() == 0)
+create();
+
+String id = bId.get(0).endId;
+

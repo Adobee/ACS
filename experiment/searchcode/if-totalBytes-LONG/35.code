@@ -1,0 +1,12 @@
+private static class SizedInputStream extends InputStream {
+private final long totalBytes;
+
+private long bytesRead = 0l;
+
+public SizedInputStream(final long totalBytes) {
+this.totalBytes = totalBytes;
+}
+
+@Override
+public int read() throws IOException {
+

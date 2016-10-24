@@ -1,0 +1,8 @@
+public class StarSparkEmitter extends Emitter {
+
+private final double LIFETIME = 0.1;		// seconds
+private final int NUM_LAUNCHED = 20;		// how many to launch
+double angle, vXInitial, vYInitial;
+double[] position = getPosition();
+double[] velocity = getVelocity();
+

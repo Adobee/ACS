@@ -1,0 +1,8 @@
+* @param y the second sample
+* @return asymptotic p-value
+* @throws NullArgumentException if {@code x} or {@code y} are {@code null}.
+final double Umin = x.length * y.length - mwUmax ;
+
+double pValue = calculateAsymptoticPValue(Umin, x.length, y.length);
+if (Double.isNaN(pValue)){
+

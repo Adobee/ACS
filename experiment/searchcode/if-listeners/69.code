@@ -1,0 +1,6 @@
+private void notifySelectionListeners(Event event) {
+if (!(event.widget instanceof Control)) {
+return;
+}
+if (getDecorationRectangle((Control) event.widget).contains(event.x, event.y)) {
+

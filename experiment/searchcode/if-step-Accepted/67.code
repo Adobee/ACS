@@ -1,0 +1,14 @@
+boolean accepted = true;
+
+if(ratio < 1.0) {
+double p =rand.nextDouble();
+
+if(walkBack &amp;&amp; p <= 1.0-ratio) {
+//System.out.println(&quot;\tRejected.&quot;);
+accepted = false;
+}
+}
+
+if(accepted) {
+System.out.println(String.format(&quot;Step %d: %s&quot;, i, step.toString()));
+

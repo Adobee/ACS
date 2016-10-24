@@ -1,0 +1,9 @@
+public BetaDistribution(double a, double b, RandomFactory random) {
+super(random);
+if (a <= 0.0 || b <= 0.0) {
+if (beta > 1.) {
+return 0.;
+}
+if (beta < 1.) {
+return Double.POSITIVE_INFINITY;
+

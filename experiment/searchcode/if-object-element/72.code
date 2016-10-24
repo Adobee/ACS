@@ -1,0 +1,11 @@
+public JsonBoolean(ParseVisitor element) {
+this.element = element;
+}
+
+public void execute(Object object) {
+if (getType(object)) {
+Boolean obj = (Boolean) object;
+this.element.add(obj.toString());
+} else {
+this.jsonElement.execute(object);
+

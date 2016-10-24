@@ -1,0 +1,13 @@
+public TableauView(Tableau tableau) {
+this.tableau = tableau;
+}
+
+@Override
+public void render() {
+IO io = new IO();
+if (tableau.isEmpty()) {
+for (int i = 0; i < (tableau.getSize() - 1); i++) {
+Card card = tableau.getCards().get(i);
+if (card.isFaceUp()) {
+new CardView(card).render();
+

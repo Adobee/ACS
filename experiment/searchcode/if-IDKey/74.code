@@ -1,0 +1,11 @@
+public static final String LABEL_STOK_YERI = &quot;Stok Yeri&quot;;
+
+
+public static final String PROP_IDKEY = &quot;idkey&quot;;
+Object object=result.get(Stok_yeri.PROP_IDKEY);
+if (object!=null){
+pidkey=object.toString();
+}
+
+String pStokyeri=&quot;&quot;;
+

@@ -1,0 +1,12 @@
+public ArrayList<Long> findMaximumSubarray(long[] list) {
+long max = list[0];
+int maxStart = 0;
+int maxEnd = 0;
+currentMaxEnd = i;
+}
+
+if (currentMax > max) {
+max = currentMax;
+maxStart = currentMaxStart;
+maxEnd = currentMaxEnd;
+

@@ -1,0 +1,8 @@
+public abstract class AbstractSysParams implements ISysParamDefinitions {
+
+private Collection<ISysParamDefinition> params;
+private Map<String, String> defaultValues;
+public Collection<ISysParamDefinition> getSysParamDefinitions() {
+if (this.params == null) {
+synchronized (this) {
+

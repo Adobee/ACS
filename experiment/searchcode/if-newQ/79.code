@@ -1,0 +1,9 @@
+String queryResultID ) throws DataException
+{
+if ( oldq == null || newq == null )
+return null;
+
+if ( !QueryCompUtil.isEqualBindings( oldq.getBindings( ), newq.getBindings( ) ) )
+return null;
+if ( !QueryCompUtil.isEqualGroups( oldq.getGroups( ), newq.getGroups( ), true ) )
+

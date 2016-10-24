@@ -1,0 +1,8 @@
+logger.debug(&quot;Going to run select/delete statement: &quot; + query + &quot; filter: &quot; + filterString);
+try
+{
+if (queryMode == QueryMode.QUERY_COUNT)
+return query.executeWithMap(values);
+}
+if (queryMode == QueryMode.QUERY_SELECT)
+

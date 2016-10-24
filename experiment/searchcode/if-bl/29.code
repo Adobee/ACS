@@ -1,0 +1,12 @@
+public void solve(int al, int bl) {
+if(c[al][bl] != -1)
+return;
+if(a.charAt(al-1) == b.charAt(bl-1)) {
+solve(al-1, bl-1);
+c[al][bl] = c[al-1][bl-1] + 1;
+}
+else {
+solve(al-1,bl);
+solve(al,bl-1);
+c[al][bl] = (c[al-1][bl]>c[al][bl-1] ? c[al-1][bl] : c[al][bl-1]);
+

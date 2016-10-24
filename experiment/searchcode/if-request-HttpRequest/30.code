@@ -1,0 +1,9 @@
+params.setConnectionTimeout(httpRequest.getConnTimeout());
+// 设置代理
+if (httpRequest.getProxyHost() != null) {
+httpClient.getHostConfiguration().setProxy(httpRequest.getProxyHost(), httpRequest.getProxyPort());
+private static void packageMethod(HttpMethod method, HttpRequest httpRequest) {
+if(httpRequest.getEncoding() != null) {
+HttpMethodParams params = method.getParams();
+params.setHttpElementCharset(httpRequest.getEncoding());
+

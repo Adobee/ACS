@@ -1,0 +1,16 @@
+public class Stats {
+
+private double average;
+private double sum;
+private double sumsq;
+private double sd;
+this.msTaken = msTaken;
+}
+
+public double getSumsq() {
+return sumsq;
+}
+
+public double getSd() {
+if (!computed) compute();
+

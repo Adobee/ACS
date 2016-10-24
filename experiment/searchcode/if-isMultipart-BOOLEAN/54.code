@@ -1,0 +1,10 @@
+private static final Logger LOG = Logger.getLogger(AssertMultipartContentRequestCommand.class.getName());
+
+public boolean execute(Context context)
+{
+BlogImageContext blogImageContext = (BlogImageContext) context;
+FckEditorUploadResponse fckEditorResponse = blogImageContext.getFckEditorResponse();
+
+@SuppressWarnings(&quot;deprecation&quot;)
+boolean isMultipart = ServletFileUpload.isMultipartContent(blogImageContext.getRequest());
+

@@ -1,0 +1,13 @@
+class HdfsMetaBlock implements Writable {
+long logicalPosition;
+long realPosition;
+long length;
+
+@Override
+public void readFields(DataInput in) throws IOException {
+out.writeLong(length);
+}
+
+boolean containsDataAt(long logicalPos) {
+if (logicalPos >= logicalPosition &amp;&amp; logicalPos < logicalPosition + length) {
+

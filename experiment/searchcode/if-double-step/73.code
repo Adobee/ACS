@@ -1,0 +1,14 @@
+doubleStep = doubleStep.getNext();
+//avoid potential null pointer exception
+if (doubleStep != null) {
+doubleStep = doubleStep.getNext();
+singleStep = singleStep.getNext();
+}
+if (doubleStep == singleStep){
+return true;
+}
+}
+
+return false;
+}
+

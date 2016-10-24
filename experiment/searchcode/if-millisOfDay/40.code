@@ -1,0 +1,12 @@
+while (date.isBefore(end)) {
+if (date.getDayOfWeek() <= 5) {
+count++;
+}
+date.addDays(1);
+}
+return count;
+dt = dt.plus(period);
+if (!dt.isAfter(end)) {
+long millisOfDay = dt.getMillisOfDay();
+if (Arrays.binarySearch(days, dt.getDayOfWeek()) >= 0 &amp;&amp; (startTime < 0 || (millisOfDay >= startTime &amp;&amp; millisOfDay <= endTime))) {
+

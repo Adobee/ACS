@@ -1,0 +1,9 @@
+matrix.setEntry(zIndex, ((getSlackVariableOffset()) - 1), org.apache.commons.math.optimization.linear.SimplexTableau.getInvertedCoeffiecientSum(objectiveCoefficients));
+}
+int slackVar = 0;
+int artificialVar = 0;
+for (int i = 0 ; i < (constraints.size()) ; i++) {
+matrix.setEntry(row, ((getSlackVariableOffset()) + (slackVar++)), 1);
+} else {
+if ((constraint.getRelationship()) == (org.apache.commons.math.optimization.linear.Relationship.GEQ)) {
+

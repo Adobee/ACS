@@ -1,0 +1,11 @@
+class Solution {
+public int solution(int X, int Y, int D) {
+int total = Y - X;
+int result = total / D;
+if ( total % D ==0)
+return result;
+else
+return result +1;
+}
+}
+

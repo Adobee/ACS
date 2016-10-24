@@ -1,0 +1,10 @@
+// for now it&#39;s only the in string search
+
+AlgoInterface search = null;
+if (this.options instanceof OptionsInString) {
+search = new AlgoInString((OptionsInString) this.options);
+}
+
+if (this.options instanceof OptionsExectMatch) {
+search = new AlgoExectMatch((OptionsExectMatch) this.options);
+

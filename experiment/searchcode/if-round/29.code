@@ -1,0 +1,9 @@
+public RoundResult endRound(Game game, Boolean player1, Coordinates c,
+Boolean hit)
+{
+Round round = round_dao.getLastRound(game);
+if (round==null){
+return RoundResult.GAME_NOT_STARTED;
+} else if (!round.getPlayer1().equals(player1)){
+return RoundResult.TURN_WRONG;
+

@@ -1,0 +1,10 @@
+public void characters(char[] ch, int start, int length)
+throws SAXException {
+if(element) {
+currentValue = new String(ch, start, length);
+if (localName.equals(&quot;name&quot;)) {
+computer.setName(currentValue);
+}
+if (localName.equals(&quot;id&quot;)) {
+computer.setId(Integer.parseInt(currentValue));
+

@@ -1,0 +1,11 @@
+public enum ArmourType
+{
+LEATHER, IRON, STEEL, GOLD, CHAIN;
+
+public double getDamageMod(DamageType type)
+{
+if(type == DamageType.GENERIC) return 1;
+if(this == LEATHER)
+{
+if(type == DamageType.BLUNT) return 0.9;
+

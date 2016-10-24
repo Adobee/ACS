@@ -1,0 +1,8 @@
+private boolean executeRegressionSet (
+final org.drip.regression.core.RegressorSet rs)
+{
+if (null == rs || null == rs.getSetName() || rs.getSetName().isEmpty()) return false;
+java.util.List<org.drip.regression.core.UnitRegressor> lsRegressor = rs.getRegressorSet();
+
+if (null == lsRegressor || 0 == lsRegressor.size()) {
+

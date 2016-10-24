@@ -1,0 +1,15 @@
+public int indexOf(char c) throws NotInAlphabetException{
+if ( symbols.indexOf(c) >= 0 ) {
+return symbols.indexOf( c );
+} else throw new NotInAlphabetException(  c , new Alphabet(symbols)  );
+return String.format(&quot;Alphabet(%s)&quot;, symbols);
+}
+
+@Override public boolean equals(Object other){
+if (other.equals(symbols)){
+return true;
+} else return false;
+}
+
+}
+

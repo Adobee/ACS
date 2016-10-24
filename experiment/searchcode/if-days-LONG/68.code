@@ -1,0 +1,8 @@
+if(isLeapYear(i))
+yearsOfLeap++;
+
+//先将年份转换为天数，考虑闰年
+long daysOfBirth = (year - 1970) * 365 + yearsOfLeap;
+long daysOfCurrent     = totalMilliseconds / (1000 * 60 * 60 * 24);
+long totalSavedDays    = daysOfCurrent - daysOfBirth;
+

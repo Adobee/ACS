@@ -1,0 +1,9 @@
+// First check: must have a digit to follow minus sign
+if (ch > INT_9 || ch < INT_0) {
+reportInvalidNumber(&quot;Missing integer part (next char &quot;+_getCharDesc(c)+&quot;)&quot;);
+}
+
+int fractLen = 0;
+// And then see if we get other parts
+if (c == &#39;.&#39;) { // yes, fraction
+

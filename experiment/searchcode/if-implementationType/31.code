@@ -1,0 +1,5 @@
+public class GateInMetaProvider implements juzu.inject.ProviderFactory {
+public <T> Provider<? extends T> getProvider(final Class<T> implementationType)
+T ret = (T)rootContainer.getComponentInstanceOfType(implementationType);
+if(ret == null)
+

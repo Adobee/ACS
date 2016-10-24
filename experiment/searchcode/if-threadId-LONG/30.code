@@ -1,0 +1,11 @@
+public static final ThreadID   NULL_ID = new ThreadID();
+/** VM identifier */
+public static final ThreadID   VM_ID   = new ThreadID(Long.MIN_VALUE);
+* @param id Identifier
+*/
+public ThreadID(long id) {
+this(id, null);
+}
+
+public ThreadID(long id, String name) {
+

@@ -1,0 +1,13 @@
+package fr.bretzel.bos;
+
+import org.bukkit.Material;
+
+public class BlockPercent
+{
+
+private Material block;
+public BlockPercent(Material block, int percent)
+{
+if (!block.isBlock())
+throw new IllegalArgumentException(block.name() + &quot; is not a block !&quot;);
+

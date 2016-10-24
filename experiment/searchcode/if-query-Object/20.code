@@ -1,0 +1,8 @@
+public static Query get(QueryObject object) {
+Query query = new Query().setIncludeDocs(true).setStale(Stale.FALSE);
+if(object.key != null) {
+query.setKey(object.key);
+}
+if(object.keys != null) {
+query.setKey(ComplexKey.of(object.keys));
+

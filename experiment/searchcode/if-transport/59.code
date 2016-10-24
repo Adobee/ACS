@@ -1,0 +1,11 @@
+return dao.find(id);
+}
+
+public Transport getFirst() {
+if (dao.getTransportsList().size() == 0) return null;
+return dao.getTransportsList().get(0);
+}
+
+public Transport getLast() {
+if (dao.getTransportsList().isEmpty()) return null;
+

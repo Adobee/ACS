@@ -1,0 +1,8 @@
+import org.elasticsearch.index.fielddata.IndexFieldData;
+import org.elasticsearch.index.fielddata.IndexNumericFieldData;
+import org.elasticsearch.index.fielddata.NumericDoubleValues;
+public class FloatValuesComparatorSource extends IndexFieldData.XFieldComparatorSource {
+
+private final IndexNumericFieldData indexFieldData;
+private final Object missingValue;
+

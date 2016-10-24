@@ -1,0 +1,10 @@
+stats.writeTo(out);
+out.writeBoolean(statsByShard != null);
+if (statsByShard != null) {
+boolean isLevelValid = &quot;node&quot;.equalsIgnoreCase(level) || &quot;indices&quot;.equalsIgnoreCase(level) || &quot;shards&quot;.equalsIgnoreCase(level);
+if (!isLevelValid) {
+return builder;
+}
+
+// &quot;node&quot; level
+

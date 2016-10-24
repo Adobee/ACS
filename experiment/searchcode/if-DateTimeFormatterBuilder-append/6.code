@@ -1,0 +1,7 @@
+Class<?> fieldType) {
+if (fieldType == LocalDate.class) {
+DateTimeFormatterBuilder toPrint = builder(dateToPrint);
+} else if (fieldType == LocalDateTime.class) {
+DateTimeFormatterBuilder toPrint = builder(dateToPrint)
+.appendPattern(delimiterToPrint).appendPattern(timeToPrint);
+

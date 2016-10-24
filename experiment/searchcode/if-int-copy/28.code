@@ -1,0 +1,10 @@
+public int quickselect(int[] a, int k, int low, int high){
+Random r = new Random();
+if (low >= high){
+return high;
+}
+else{
+int pivot = r.nextInt(high + 1) + low;
+int[] copy = new int[a.length];
+int high2 = high;
+

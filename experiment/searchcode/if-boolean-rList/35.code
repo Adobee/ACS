@@ -1,0 +1,8 @@
+public Component getListCellRendererComponent(JList ignored, Object value, int ignored2, boolean isSelected, boolean cellHasFocus) {
+
+Signal<String> slabel = _rlist._labelProvider.labelFor(getElement(value));
+label.setText(slabel.currentValue());
+
+Signal<? extends Image> sicon = _rlist._labelProvider.imageFor(getElement(value));
+if (sicon.currentValue() != null) {
+

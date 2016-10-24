@@ -1,0 +1,10 @@
+public long maxElapsed = 0;
+public long averageElapsed = 0;
+public long minElapsed = 0;
+
+public SortedQueue slowList = new SortedQueue(10);
+slowList.add(mark);
+lastList.add(mark);
+if(averageElapsed > 0){
+averageElapsed = (averageElapsed + mark.elapsed)  / 2;
+

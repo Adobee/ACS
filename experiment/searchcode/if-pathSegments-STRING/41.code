@@ -1,0 +1,10 @@
+* Get the repo for the given path
+*
+* @param pathSegments
+* @return {@link Repository} or null if path is not valid
+User user = UserUriMatcher.getUser(pathSegments);
+if (user == null)
+return null;
+
+String repoName = pathSegments.get(1);
+

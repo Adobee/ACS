@@ -1,0 +1,18 @@
+public static void selectionSort(Object[] a, int fromIndex, int toIndex) {
+Object d;
+// i is for the insertion of each round
+for (int i=fromIndex; i<toIndex; i++) {
+int k = i;
+for (int j=i+1; j<toIndex; j++) {
+if (((Comparable)a[k]).compareTo(a[j])>0) {
+k = j;
+}
+}
+
+d = a[i];
+a[i] = a[k];
+a[k] = d;
+}
+}
+}
+

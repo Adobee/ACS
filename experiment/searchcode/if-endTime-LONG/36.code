@@ -1,0 +1,13 @@
+public class TimeRangeFilter implements Filter{
+
+long startTime = 0l;
+long endTime = 0l;
+
+public TimeRangeFilter(long startTime, long endTime) {
+this.endTime = endTime;
+}
+
+@Override
+public FILTER_CODE filtrateURLByTime(long time) {
+if(time <= endTime &amp;&amp; time >= startTime){
+

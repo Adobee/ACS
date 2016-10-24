@@ -1,0 +1,14 @@
+public void update(long duration) {
+this.allTime += duration;
+if(duration < this.minTime) {
+this.minTime = duration;
+}
+
+if(duration > this.maxTime) {
+this.maxTime = duration;
+}
+
+++this.eventCount;
+}
+}
+

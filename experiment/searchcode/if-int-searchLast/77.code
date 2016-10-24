@@ -1,0 +1,9 @@
+SortState<T> state) {
+if (last - first <= 1) return;
+int mid = last + ((first - last) >> 1);
+mergeSort(array, first, mid, state);
+int pre = 0;
+int offset = 1;
+while (first + offset < last) {
+if (relation.lessThan(value, array[first + offset])) break;
+

@@ -1,0 +1,7 @@
+do {
+oldValue = Magic.prepareObject(base, offset);
+if (oldValue != testValue) return false;
+oldValue = Magic.prepareAddress(Magic.addressAsObject(addr), Offset.zero());
+newValue = oldValue.minus(decrement);
+if (newValue.LT(bound)) return Address.max();
+

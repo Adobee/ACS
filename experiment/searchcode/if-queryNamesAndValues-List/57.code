@@ -1,0 +1,6 @@
+public List<String> queryParameterValues(String name) {
+if (queryNamesAndValues == null) return Collections.emptyList();
+List<String> result = new ArrayList<>();
+for (int i = 0, size = queryNamesAndValues.size(); i < size; i += 2) {
+if (name.equals(queryNamesAndValues.get(i))) {
+

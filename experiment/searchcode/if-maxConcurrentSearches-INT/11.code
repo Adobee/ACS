@@ -1,0 +1,9 @@
+resultFields = conf.getStrings(CONF_RESULT_FIELDS, resultFields);
+if (conf.valueExists(CONF_NONESCAPED_FIELDS)) {
+List<String> nonEscaped = conf.getStrings(CONF_NONESCAPED_FIELDS);
+log.debug(&quot;The following fields are unescaped: &quot; + Strings.join(nonEscaped, &quot;, &quot;));
+}
+fallbackValues = conf.getStrings(CONF_FALLBACK_VALUES, fallbackValues);
+
+if (fallbackValues != null &amp;&amp; resultFields.length != fallbackValues.length) {
+

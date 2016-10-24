@@ -1,0 +1,5 @@
+IBlockState bs = this.blockState.getBaseState();
+if (this instanceof IBlockFacingHorizontal) {
+bs.withProperty(IBlockFacingHorizontal.FACING, EnumFacing.NORTH);
+} else if (this instanceof IBlockFacing) {
+

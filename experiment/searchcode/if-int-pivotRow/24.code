@@ -1,0 +1,12 @@
+return values[0].length;
+}
+
+public T get(int row, int col) {
+if (row < 0 || row >= values.length || col < 0 || col >= values[row].length)
+throw new IndexOutOfBoundsException(&quot;Row or column index out of bounds&quot;);
+return (T)values[row][col];
+}
+
+public T getBVector(int row, int col) {
+if (row < 0 || row >= values.length || col < 0 || col >= values[row].length)
+

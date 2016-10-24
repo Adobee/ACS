@@ -1,0 +1,11 @@
+public class BPNetWorkBuilder extends NetworkBuilder<BPNetwork> {
+
+Layer inputLayer;
+
+Layer outputLayer;
+
+public BPNetWorkBuilder addLayer(Layer layer) {
+if (inputLayer == null) {
+inputLayer = layer;
+outputLayer = layer;
+

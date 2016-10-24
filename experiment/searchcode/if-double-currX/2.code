@@ -1,0 +1,9 @@
+double D) {
+Collections.sort(rectangleList);
+double currX = D;
+// int currY = 0;
+double currH = 0;
+Job rect = rectangleList.get(i);
+if (rect.d <= D - currX) {
+// place rectangle at (currX, currY)
+

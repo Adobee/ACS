@@ -1,0 +1,19 @@
+public static AxisAlignedBB subCoord(AxisAlignedBB bb, double x, double y, double z)
+{
+if (x == 0 &amp;&amp; y == 0 &amp;&amp; z == 0)
+{
+return bb;
+}
+
+double minX = bb.minX;
+double minY = bb.minY;
+double maxY = bb.maxY;
+double maxZ = bb.maxZ;
+
+if (x > 0)
+minX -= x;
+else
+maxX -= x;
+
+if (y > 0)
+

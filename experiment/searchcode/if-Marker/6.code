@@ -1,0 +1,8 @@
+public  Drawable getMarker(String type) {
+if (&quot;power_meter&quot;.equals(type)) {
+return markerParking;
+} else if (&quot;noise&quot;.equals(type)) {
+return markerNoise;
+}  else if (&quot;light&quot;.equals(type)) {
+return markerLight;
+

@@ -1,0 +1,10 @@
+t1 = request.getParameter( f.getName() );
+if ( t1 != null )
+{
+if ( f.getType() == Integer.class || f.getType() == Integer.TYPE )
+f.set( t , Integer.valueOf( t1.toString() ) );
+}
+else if ( f.getType() == String.class )
+{
+f.set( t , String.valueOf( t1.toString() ) );
+

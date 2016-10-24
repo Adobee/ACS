@@ -1,0 +1,10 @@
+private final Map<String, Permissions> permissions;
+
+public PermissionRegistry() {
+this.permissions = new HashMap<>();
+return Collections.unmodifiableMap(permissions);
+}
+
+public Permissions getPermissions(String key) {
+if (!permissions.containsKey(key))
+

@@ -1,0 +1,8 @@
+public synchronized void tieBuddyItem(BuddyItem buddyItem, boolean autoPopulate) {
+buddyItems.put(buddyItem.getGroupId(), buddyItem);
+if (autoPopulate) {
+* @param autoPopulate Trigger an automatic regeneration of group list.
+*/
+public synchronized void removeBuddyItem(int groupId, boolean autoPopulate) {
+buddyItems.remove(groupId);
+

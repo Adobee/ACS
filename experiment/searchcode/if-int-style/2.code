@@ -1,0 +1,14 @@
+private int awtStyle;
+private int swtStyle;
+
+private FontStyle(int awtStyle, int swtStyle) {
+this.awtStyle = awtStyle;
+this.swtStyle = swtStyle;
+}
+
+public int toSWT() {
+return swtStyle;
+}
+
+public static FontStyle fromSWT(int swtStyle) {
+

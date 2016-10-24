@@ -1,0 +1,10 @@
+this.m_[ targetRow ][ col ] *= coefficient;
+}
+}
+
+protected void _subtractRowFrom( int minuendRow, int subtrahendRow ) {
+double coefficient = this._getComponentOf( minuendRow, subtrahendRow ) / this._getComponentOf( subtrahendRow, subtrahendRow );
+
+for ( int col = 0; col < this._getNumOfColumn(); col++ ) {
+this.m_[ minuendRow ][ col ] -= coefficient * this.m_[ subtrahendRow ][ col ];
+

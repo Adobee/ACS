@@ -1,0 +1,10 @@
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+
+int num = 1;
+int numFound = 0;
+
+while(numFound == 0)
+{
+if(num % 1 == 0 &amp;&amp; num%3==0 &amp;&amp; num%4==0 &amp;&amp; num%5==0 &amp;&amp; num%6==0 &amp;&amp; num%7==0 &amp;&amp; num%8==0 &amp;&amp; num%9==0 &amp;&amp; num%10==0 &amp;&amp; num%11==0 &amp;&amp; num%12==0 &amp;&amp; num%13==0 &amp;&amp; num%14==0 &amp;&amp; num%15==0 &amp;&amp; num%16==0 &amp;&amp; num%17==0 &amp;&amp; num%18==0 &amp;&amp; num%19==0 &amp;&amp; num%20==0  )
+

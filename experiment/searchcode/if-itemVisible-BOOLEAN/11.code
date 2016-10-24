@@ -1,0 +1,8 @@
+AiModeHandler<Agent> modeHandler = ai.getModeHandler();
+AiMode mode = modeHandler.getMode();
+
+if(mode==AiMode.ATTACKING)
+boolean needOfExtraFlame = (mybombsRange < 4);
+boolean needOfExtraSpeed = (mySpeed < SPEED_LIMIT );
+if((needOfExtraSpeed  &amp;&amp;(ai.itemVisible(AiItemType.EXTRA_SPEED)||ai.itemVisible(AiItemType.GOLDEN_SPEED)))
+

@@ -1,0 +1,11 @@
+public boolean createDirectoryStructure(String directoryPath) {
+File directory = new File(directoryPath);
+
+if (directory.exists()) {
+throw new IllegalArgumentException(&quot;\&quot;&quot; + directoryPath + &quot;\&quot; already exists.&quot;);
+}
+
+return directory.mkdirs();
+}
+}
+

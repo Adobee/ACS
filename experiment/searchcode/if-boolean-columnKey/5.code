@@ -1,0 +1,12 @@
+this.columnName = columnName;
+}
+
+@Override
+public int compareTo(ColumnKey columnKey) {
+if (!sameKeyType(columnKey)) {
+return this.columnName.compareTo(((ColumnNameKey)columnKey).columnName);
+}
+
+@Override
+public boolean equals(Object obj) {
+

@@ -1,0 +1,16 @@
+public void run() {
+Feeder closest = sub.getRobot().getClosestFeeder();
+if (closest == null)
+outPort.set(-1);
+else
+outPort.set(closest.getId());
+}
+
+@Override
+public boolean usesRandom() {
+return false;
+}
+
+
+}
+

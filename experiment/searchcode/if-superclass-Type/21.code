@@ -1,0 +1,10 @@
+public static boolean isGUITest(Class<?> type, Method method) {
+if (isGUITest(type))
+return true;
+if (isGUITest(method))
+return true;
+return (isSuperclassGUITest(type, method));
+}
+
+private static boolean isSuperclassGUITest(Class<?> type, Method method) {
+

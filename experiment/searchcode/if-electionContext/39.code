@@ -1,0 +1,6 @@
+private void checkIfIamLeader(final ElectionContext context, boolean replacement) throws KeeperException,
+ElectionWatcher watcher = this.watcher;
+ElectionContext ctx = context.copy();
+if (electionContexts != null) {
+electionContexts.put(contextKey, ctx);
+

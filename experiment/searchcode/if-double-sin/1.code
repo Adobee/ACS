@@ -1,0 +1,11 @@
+public static ThreeRotationQuaternion RotationYXY(double alpha,
+double beta, double gamma) {
+// / q = cos(a) [ 0 sin(a) 0 ]
+// / r = cos(b) [ sin(b) 0 0 ]
+// cos (s – t) = cos s cos t + sin s sin t
+
+double cb = Math.cos(beta / 2.0);
+double sb = Math.sin(beta / 2.0);
+
+double cos_a_plus_g = Math.cos(alpha / 2.0 + gamma / 2.0);
+

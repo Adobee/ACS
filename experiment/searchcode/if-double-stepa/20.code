@@ -1,0 +1,13 @@
+private int axisGridPointLineLength = 5;
+
+private int minA = -200;
+private int maxA = 200;
+private int stepA = 10;
+
+private int minB = -200;
+private int invalidColor = Color.WHITE.getRGB();
+private double baseLabL = 75;
+
+public LuvDiagram(int w, int h, String title) {
+this.w = w;
+

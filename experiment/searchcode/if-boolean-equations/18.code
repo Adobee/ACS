@@ -1,0 +1,8 @@
+int a = JOptionPane.showConfirmDialog(Main.frame, &quot;Are you sure?&quot;, &quot;Delete All Equations&quot;,1);
+if(a==0){
+Display.clearAllLines();
+data[i][0] =data[i][0] + &quot; (LSRL)&quot;;
+}
+JTable table = new JTable(data,new String[]{&quot;Equations&quot;}){
+public boolean isCellEditable(int row, int column){
+

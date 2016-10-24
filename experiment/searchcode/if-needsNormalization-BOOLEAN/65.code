@@ -1,0 +1,12 @@
+int ns = needsNormalization(ps);	// Number of segments
+if (ns < 0)
+// Nope -- just return it
+return ps;
+
+char[] path = ps.toCharArray();		// Path in char-array form
+// this test can be performed without invoking path.toCharArray().
+//
+static private int needsNormalization(String path) {
+boolean normal = true;
+int ns = 0;			// Number of segments
+

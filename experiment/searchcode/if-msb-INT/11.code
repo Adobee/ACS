@@ -1,0 +1,6 @@
+public int findDuplicate(int[] nums) {
+int target = 0, n = nums.length - 1, residual, expectedCount, bitCount = 0, msb = 0;
+while(n >> msb != 0) msb++;
+for(int i = 0; i < msb; i++){
+residual = n % (1<<(i+1));
+

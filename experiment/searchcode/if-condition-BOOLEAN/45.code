@@ -1,0 +1,9 @@
+conditions = new LinkedList<Condition>();
+}
+
+@Override
+public boolean fullfill(Condition condition) {
+if (condition instanceof SingleCondition){
+for (Condition item : conditions){
+if (item.fullfill(condition)){
+

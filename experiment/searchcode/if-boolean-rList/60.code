@@ -1,0 +1,8 @@
+List<Object[]> rList = new ArrayList<Object[]>();
+Boolean isbuy = false;
+while (values.hasNext()) {
+Record val = values.next();
+if (val.getString(&quot;action&quot;).equals(&quot;alipay&quot;))
+isbuy = true;
+rList.add(val.toArray().clone());
+

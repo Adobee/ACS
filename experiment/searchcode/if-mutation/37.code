@@ -1,0 +1,5 @@
+private List<MutationCommand> selectCommands(List<MutationCommand> commands) {
+if (commands.size() <= numberOfMutations) {
+int index = MutationUtility.getDiceroll(commands.size()) - 1;
+if (!selectedCommands.contains(commands.get(index))) {
+

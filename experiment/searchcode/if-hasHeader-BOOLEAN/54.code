@@ -1,0 +1,13 @@
+public class ConfigurableDispatchableTextParser extends DispatchableTextParser {
+private boolean hasHeader;
+
+@Override
+public boolean supportsHeader() {
+return hasHeader;
+}
+
+/**
+* 设置要解析的字符串是否包含一个头信息。
+*/
+public void setHasHeader(boolean hasHeader) {
+

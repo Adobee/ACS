@@ -1,0 +1,15 @@
+public class OrFilter implements Callable<Boolean> {
+private Callable<Boolean>[] subFilters;
+
+public OrFilter(Callable<Boolean>[] subFilters) {
+public Boolean call() throws Exception {
+for (Callable<Boolean> filter : subFilters) {
+if (filter.call()) {
+return true;
+}
+}
+return false;
+}
+
+}
+

@@ -1,0 +1,14 @@
+public String getClientId() {
+return &quot;domainList&quot;;
+}
+
+@Override
+public String getTitle() {
+return &quot;Domain List&quot;;
+return DomainUtil.getKey(domain);
+}
+
+@Override
+public String getRecordName(Domain domain) {
+return DomainUtil.getLabel(domain);
+

@@ -1,0 +1,10 @@
+public class Queue {
+
+Node first, last;
+Object dequeue() {
+
+if(first != null) {
+Object item = first.getValue();
+first = first.next;
+if (first == null) last=null;
+

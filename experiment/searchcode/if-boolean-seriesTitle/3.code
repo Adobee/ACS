@@ -1,0 +1,11 @@
+final NetworkBookItem book = (NetworkBookItem) item;
+String seriesTitle = book.SeriesTitle;
+
+if (seriesTitle != null &amp;&amp; seriesTitle.length() > 0 &amp;&amp; (seriesTree == null || !seriesTitle.equals(seriesTree.SeriesTitle))) {
+break;
+}
+}
+if (next == null) {
+seriesTitle = null;
+} else if (!seriesTitle.equals(next.SeriesTitle)) {
+

@@ -1,0 +1,4 @@
+public abstract  class ClusterStateUpdateTask implements ClusterStateTaskConfig, ClusterStateTaskExecutor<ClusterStateUpdateTask>, ClusterStateTaskListener {
+* If the cluster state update task wasn&#39;t processed by the provided timeout, call
+* {@link ClusterStateTaskListener#onFailure(String, Exception)}. May return null to indicate no timeout is needed (default).
+

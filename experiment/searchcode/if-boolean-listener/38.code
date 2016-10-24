@@ -1,0 +1,10 @@
+public class JFXFocusListenerManager implements ChangeListener<Boolean> {
+
+private JFXComponent<?> control;
+private UIFocusGainedListenerManager focusGainedListener;
+this.focusLostListener = new UIFocusLostListenerManager();
+}
+
+public boolean isEmpty() {
+return (this.focusGainedListener.isEmpty() &amp;&amp; this.focusLostListener.isEmpty());
+

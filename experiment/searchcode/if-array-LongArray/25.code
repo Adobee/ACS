@@ -1,0 +1,10 @@
+public class sLMatrixWritable extends sMatrixWritable implements Serializable {
+
+private long[] longArray;
+private int longLength = 0;
+public sLMatrixWritable() {
+longLength = in.readInt();
+if(longArray==null)
+longArray = new long[longLength*2];
+else if(longArray.length<longLength)
+

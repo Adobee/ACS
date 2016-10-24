@@ -1,0 +1,14 @@
+return res;
+}
+
+public boolean equals(Expression e) {
+return getNodeType() == e.getNodeType()
+&amp;&amp; left.equals(((MethodCallExp) e).left)
+left.setParsedItem(pi);
+if (right != null)
+right.setParsedItem(pi);
+change(pi);
+}
+
+public boolean isConstant() {
+

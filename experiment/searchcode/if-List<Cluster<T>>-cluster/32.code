@@ -1,0 +1,10 @@
+* use getClustersWithState(Constant.VIRTUAL_CLUSTER_STATE_STANDBY) and getClustersWithType(Constant.FALKON_FRAMEWORK_NAME) to find the standby falkon cluster
+*
+* @return
+*/
+@Override
+public ArrayList<VirtualCluster> getStandbyCluster() {
+for (int i = 0; i < falkonClusterList.size(); i++) {
+for (int j = 0; j < standbyClusterList.size(); j++) {
+if (falkonClusterList.get(i).getClusterID().equals(standbyClusterList.get(j).getClusterID())) {
+

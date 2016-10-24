@@ -1,0 +1,7 @@
+public class RejectedListConstraintPredicate<T> implements
+AttributeConstraintPredicate<T> {
+
+public boolean acceptValue(AttributeConstraint constraint, T value) {
+if (constraint instanceof RejectedListConstraint) {
+return acceptValue((RejectedListConstraint) constraint, value);
+

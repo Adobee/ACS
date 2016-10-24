@@ -1,0 +1,8 @@
+public void stopListener() {
+log.info(&quot;[事务消息发放]停止运行&quot;);
+runningState = RunningState.Stop;
+if (future != null &amp;&amp; !future.isCancelled()) {
+private void sendTrxParticipantMsg() {
+runningState = RunningState.Stop;
+if (poolExecutor.getActiveCount() > 0) {
+

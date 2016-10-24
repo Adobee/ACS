@@ -1,0 +1,14 @@
+public static enum Reason{NOT_SET,NOT_FOUND,FIELD_FAILURE,NOT_UNIQUE,STORE_FAILURE,SESSION,UNAUTHORIZED,NO_ACCESS,ERROR, NOT_RESERVED}
+
+private Model value;
+private List<Result> fieldResults;
+private boolean isSuccessful;
+private Reason reason;
+public void error(Exception e){
+this.isSuccessful=false;
+this.reason = Reason.ERROR;
+this.ex = e;
+}
+
+public boolean hasException(){
+

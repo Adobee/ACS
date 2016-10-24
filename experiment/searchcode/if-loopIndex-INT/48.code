@@ -1,0 +1,13 @@
+Document document = db.parse(new File(uri));
+
+display(document, &quot;&quot;);
+
+for (int loopIndex = 0; loopIndex < numberDisplayLines; loopIndex++) {
+public static void display(Node node, String indent) {
+
+if (node == null) {
+return;
+}
+
+int type = node.getNodeType();
+

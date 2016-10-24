@@ -1,0 +1,10 @@
+public static Cache getCache(String name) {
+return getCache(name, false);
+}
+
+public static Cache getCache(String name, boolean create) {
+if(name == null) {
+return null;
+}
+if(cacheManager.getCache(name) == null &amp;&amp; create) {
+

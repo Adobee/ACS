@@ -1,0 +1,8 @@
+add(Setting.dividetools, true);
+}
+
+@SuppressWarnings(&quot;unused&quot;)
+private void add(SettingPrototype setting){
+if(setting instanceof SettingInt) map.put(setting.setting(), (SettingInt)setting);
+else if(setting instanceof SettingBool) map.put(setting.setting(), (SettingBool)setting);
+

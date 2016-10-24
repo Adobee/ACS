@@ -1,0 +1,9 @@
+APropertyNode plot = section.getElement();
+APlot aplot = null;
+if (plot instanceof MAreaPlot)
+aplot = new AreaPlot();
+else if (plot instanceof MBar3DPlot)
+aplot = new Bar3dPlot();
+else if (plot instanceof MBarPlot)
+aplot = new BarPlot();
+

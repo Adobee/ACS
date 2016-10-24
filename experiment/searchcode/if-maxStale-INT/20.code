@@ -1,0 +1,8 @@
+Response original = chain.proceed(chain.request());
+if (mWatcher.isNetworkAvailable()) {
+int max = 60; // read for 1 minute
+.header(CACHE_CONTROL, format(CACHE_AGE_FMT, max))
+.build();
+} else {
+int maxStale = 86400; // 1 day
+

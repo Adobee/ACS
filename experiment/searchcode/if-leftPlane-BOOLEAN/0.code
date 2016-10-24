@@ -1,0 +1,11 @@
+return (false);
+}
+
+/**
+* Quick check to see if an orthogonal bounding box is inside the frustum
+*/
+public final boolean isOutside(AABBox box) {
+if (!quickClassify(leftPlane, box))
+return true;
+//		if (!quickClassify(rightPlane, box))
+

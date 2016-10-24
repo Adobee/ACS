@@ -1,0 +1,12 @@
+public Quaternion interpolateThis(Quaternion q, double t) {
+if (!equals(q)) {
+double d = dot(q);
+qw = q.w;
+}
+
+double f0, f1;
+
+if ((1 - d) > 0.1f) {
+double angle = (double) Math.acos(d);
+double s = (double) Math.sin(angle);
+

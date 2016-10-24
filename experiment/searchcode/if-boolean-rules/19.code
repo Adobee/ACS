@@ -1,0 +1,6 @@
+protected boolean validate() {
+if(checkRules == null || checkRules.size() <= 0) return true;
+Rule rule = (Rule)checkRules.get(i);
+boolean b = rule.check(this);
+if(!b) return false;
+

@@ -1,0 +1,17 @@
+//put head in args to return length of stack.
+public int recursiveCount(Node n){
+
+if(n == null){
+
+return 0;
+}else{
+
+return 1 + recursiveCount(n.getNext());
+}
+}
+
+//returns true if stack is empty
+public boolean stackEmpty(){
+
+if(head.getNext() == null){
+

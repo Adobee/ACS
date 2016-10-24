@@ -1,0 +1,13 @@
+kProbs[i] = getKProb(i + 1, 2);
+}
+}
+public static double getKProb(int k, double param) {
+if (k <= 0) {
+return -1;
+}
+if (param < 0) {
+return -1;
+}
+
+return Math.pow((double) k, - param);
+

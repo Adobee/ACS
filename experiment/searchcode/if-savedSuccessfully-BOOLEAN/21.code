@@ -1,0 +1,10 @@
+public boolean remove(String name) {
+if (debug)
+Log.v(tag, &quot;remove:&quot; + name);
+return get(generateName(name)).delete();
+ObjectOutputStream os = new ObjectOutputStream(new FileOutputStream(
+tmpFile));
+boolean savedSuccessfully = false;
+try {
+os.writeObject(object);
+

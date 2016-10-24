@@ -1,0 +1,14 @@
+public static boolean deleteDir(File dir) {
+if (!dir.exists()) {
+return false;
+}
+if (dir.isDirectory()) {
+String[] files = dir.list();
+deleteDir(new File(dir, files[i]));
+}
+}
+return dir.delete();
+}
+public static boolean fileExists(String fileName) {
+File file = new File(fileName);
+

@@ -1,0 +1,6 @@
+for (int y = 0; y < map.getSize(); y++) {
+if (surface.getType(x, y) != 2) continue;
+if (rng.nextInt(3) == 0) continue;
+if (Math.pow(base.noise(x * 0.006, y * 0.006), 1.9) < rng.nextFloat() + 0.04f) {
+if (surface.getHeight(x, y) < 48 &amp;&amp; rng.nextInt(40) == 0) {
+

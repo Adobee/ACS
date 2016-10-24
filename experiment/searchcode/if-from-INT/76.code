@@ -1,0 +1,9 @@
+public class KthSmallestElement {
+
+public static int kthOrderStatistics(int[] A, int from, int to, int k) {
+if (from >= to) return A[from];
+int storeIndex = from;
+for (int i = from; i < to; i++) {
+if (A[i] < pivot) {
+swap(A, i, storeIndex);
+

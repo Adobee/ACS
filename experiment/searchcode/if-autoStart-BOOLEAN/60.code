@@ -1,0 +1,8 @@
+public void onReceive(Context context, Intent intent) {
+SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+
+boolean autoStart = prefs.getBoolean(&quot;enable_boot&quot;, false);
+Log.d(&quot;Debug&quot;, autoStart+&quot;&quot;);
+if (autoStart) {
+Intent startServiceIntent = new Intent(context,
+

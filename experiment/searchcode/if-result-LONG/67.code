@@ -1,0 +1,10 @@
+public static double quickExponential( double x, int n ) {
+assert( n >= 0 );
+if ( n == 0 ) return 1;
+if ( n == 1 ) return x;
+double result = quickExponential(x, n / 2 );
+if ( (n % 2) == 0 ) {
+result = result*result;
+} else {
+result = result*result*x;
+

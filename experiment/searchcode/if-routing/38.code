@@ -1,0 +1,7 @@
+ServiceID routingServiceID;
+if (serviceUnit.hasService(RoutingService.class)){
+routingServiceID=serviceUnit.getService(RoutingService.class);
+// routingAlgorithm_Sync.getUnicastHeader(receiver);
+if (timeout<=0) timeout=defaultTimeout;
+routingService.startRoutingTask(createHeader(unicastRoutingAlgorithm_Sync.getUnicastHeader(receiver)),
+

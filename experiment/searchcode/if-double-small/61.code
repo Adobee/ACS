@@ -1,0 +1,8 @@
+this.stepSize = stepSize;
+this.type = type;
+smallStep = stepSize / (double) 10;
+setBounds(minValue, maxValue);
+for (double x = lowerValue; x < upperValue; x += smallStep) {
+double y = x + smallStep;
+sum += (smallStep * (x * density(x) + y * density(y)))
+

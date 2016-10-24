@@ -1,0 +1,14 @@
+while(i<=indexRange){
+int curRange=i+A[i];
+nextRange=Math.max(nextRange,curRange);
+if(curRange>=A.length-1){return steps;}
+if(i==indexRange){
+indexRange=nextRange;
+steps++;
+}
+i++;
+}
+return steps;
+}
+}
+

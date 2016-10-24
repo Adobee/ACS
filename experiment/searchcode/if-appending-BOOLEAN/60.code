@@ -1,0 +1,8 @@
+public class AppendableSequenceAudioInputStream extends SequenceAudioInputStream {
+protected boolean doneAppending = false;
+
+/**
+* Create a sequence audio input stream to which more AudioInputStreams can be appended after creation. When the currently
+* @throws IllegalArgumentException
+*             if this method is called after doneAppending() was called.
+

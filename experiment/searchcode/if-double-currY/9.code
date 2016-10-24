@@ -1,0 +1,12 @@
+public class DealerChip {
+
+private Image chip;
+private double currX, currY;
+private double destX, destY;
+return (currX!=destX || currY!=destY);
+}
+
+public void update(double delta) {
+// update screen position
+if (currX != destX || currY != destY) {
+

@@ -1,0 +1,9 @@
+public static double power(double x, int p) {
+boolean sign = false;
+if (p == 0) {
+if (p < 0) {
+sign = true;
+}
+if (p % 2 == 1) {
+double tmp = x * power(x, p-1);
+

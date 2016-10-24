@@ -1,0 +1,8 @@
+this.size = size;
+blurMatrix = new double[size][size];
+int mid = (size - 1) / 2;
+double lambda = kernelSize;
+double sum = 0;
+for(int i = -mid; i <= mid; i++) {
+for(int j = -mid; j <= mid; j++) {
+

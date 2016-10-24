@@ -1,0 +1,6 @@
+public void onModule(ActionModule module) {
+if (settings.getAsBoolean(&quot;plugins.langdetect.enabled&quot;, true)) {
+module.registerAction(LangdetectAction.INSTANCE, TransportLangdetectAction.class);
+public void onModule(RestModule module) {
+if (settings.getAsBoolean(&quot;plugins.langdetect.enabled&quot;, true)) {
+

@@ -1,0 +1,11 @@
+package misc;
+
+public class CountPalindromes {
+long[][] s;
+
+long count(String str) {
+int sz = str.length();
+s = new long[sz][sz];
+
+for (int i = 0; i < sz; i++) {
+

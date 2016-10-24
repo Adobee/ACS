@@ -1,0 +1,10 @@
+/** Calculates the distance between the centroids two rectangles.
+*/
+
+public static double distance(rectangle r1 , rectangle r2)
+{
+double x1,y1,x2,y2;
+double d;
+x1=(r1.LX+r1.UX)/2;
+y1=(r1.LY+r1.UY)/2;
+

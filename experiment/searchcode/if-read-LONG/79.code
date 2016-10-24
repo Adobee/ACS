@@ -1,0 +1,13 @@
+public void solve(int testNumber, InputReader in, OutputWriter out) {
+long x = in.readLong();
+long y = in.readLong();
+long threshold = in.readLong();
+if (x >= threshold || y >= threshold) {
+out.printLine(-1);
+return;
+}
+long answer = 0;
+if (x < 0) {
+answer = Math.abs(x) / y;
+x += answer * y;
+

@@ -1,0 +1,7 @@
+private static double [ ][ ] tmp = new double [2][2];
+
+public static final double [ ][ ] zero = { {0,0}, {0,0} };  /* 零行列を表すクラス変数 */
+public static double [ ][ ] inverse(double [ ][ ] a){
+copyMatrix(tmp,zero);
+if(isNonsingular(a)){
+

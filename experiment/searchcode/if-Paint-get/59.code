@@ -1,0 +1,11 @@
+public abstract Paint getPaint();
+
+@Override
+public final void draw(Canvas canvas) {
+Paint paint = getPaint();
+
+drawShape(canvas, paint);
+
+// if paint style is fill, draw stroke
+if (paint.getStyle() == Paint.Style.FILL) {
+

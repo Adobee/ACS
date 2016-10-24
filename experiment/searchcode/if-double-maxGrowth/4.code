@@ -1,0 +1,9 @@
+private static void printSource(PlanetWars pw, Planet s, int maxGrowth, int maxForce) {
+if (DEBUG) {
+float sourceGrowth = getSourceGrowthValue(s, maxGrowth)  * SOURCE_GROWTH_WEIGHT;
+printSource(pw, s, maxGrowth, maxForce);
+
+if (DEBUG) {
+log(&quot;&quot;);
+log(&quot;ID\tTGrowth\t\tTForce\t\tTOwner\t\tDistance\t\tTotal&quot;);
+

@@ -1,0 +1,11 @@
+private Interpolator interpolator = DEFAULT_INTERPOLATOR;
+
+public AnimationSettings duration(long duration) {
+if (duration <= 0L) {
+throw new IllegalArgumentException();
+return interpolator;
+}
+
+public AnimationSettings interpolator(Interpolator interpolator) {
+if (interpolator == null) {
+

@@ -1,0 +1,5 @@
+TableUtils.createTableIfNotExists (connection, Relationship.class);
+} catch (Exception e) {
+TableUtils.dropTable (connection, Relationship.class, true );
+TableUtils.createTableIfNotExists (connection, Relationship.class);
+

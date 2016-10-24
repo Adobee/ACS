@@ -1,0 +1,9 @@
+default public int indexOf(Object o, int fromInclusive) {
+return indexOf(o, fromInclusive, size());
+}
+
+default public int indexOf(Object o, int fromInclusive, int toExclusive) {
+int index = it.previousIndex();
+if(index < fromInclusive) break;
+if(Objects.equals(previous, o)) {
+

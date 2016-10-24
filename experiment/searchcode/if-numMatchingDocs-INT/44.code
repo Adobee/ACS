@@ -1,0 +1,9 @@
+expectedObjectIds.add(docNodeRef.toString());
+int numMatchingDocs = 0;
+
+// NodeRef input
+List<CMISNode> results = cmisSession.query(&quot;SELECT * FROM cmis:document WHERE IN_TREE(&#39;&quot; + folderNodeRef.toString() + &quot;&#39;)&quot;, false, 0, Integer.MAX_VALUE);
+Set<String> expectedObjectIds = new HashSet<String>();
+expectedObjectIds.add(docNodeRef.getId());
+int numMatchingDocs = 0;
+

@@ -1,0 +1,9 @@
+public List findJqUser(JqUser jquser,int skipindex, int maxindex) throws Exception{//获取右边的内容
+
+List list=new ArrayList();
+for(Iterator subIt=subList.iterator();subIt.hasNext();){
+list.add((JqUser)subIt.next());
+}
+
+int index =(list.size()-skipindex) >maxindex?maxindex:list.size()-skipindex;
+

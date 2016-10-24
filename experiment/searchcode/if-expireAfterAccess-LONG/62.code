@@ -1,0 +1,6 @@
+CacheBuilder builder = CacheBuilder.newBuilder();
+long timeToLive = Long.parseLong(getProperty(cacheName, &quot;timeToLiveSeconds&quot;, &quot;0&quot;));
+long maxIdle = Long.parseLong(getProperty(cacheName, &quot;maxIdleSeconds&quot;, &quot;0&quot;));
+
+if (timeToLive > 0) {
+

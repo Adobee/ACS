@@ -1,0 +1,11 @@
+void verifyResponseQuality() throws IOException {
+if (response.code() == 200) {
+responseBody = response.body().string();
+}
+else if (response.code() == 500) {
+responseBody = null;
+exception = new Exception();
+}
+else if (response.code() == 401) {
+String responseB = response.body().string();
+

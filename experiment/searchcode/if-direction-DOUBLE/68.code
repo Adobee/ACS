@@ -1,0 +1,13 @@
+// Vector class for vectors having a position, direction and magnitude properties
+public class Vector3D {
+double[] position;
+double[] direction;
+double magnitude;
+
+public Vector3D() {
+
+}
+
+// Constructor
+public Vector3D(
+

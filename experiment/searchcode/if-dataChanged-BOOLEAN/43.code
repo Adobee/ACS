@@ -1,0 +1,12 @@
+this.data = data;
+}
+
+public boolean loginAdded(String s) {
+connector.sendMessage(MessageType.LOGIN.toString() + DELIMETER + s);
+connector.connect();
+}
+}
+
+public boolean orderAdded(Order order) {
+if (connector.sendMessage(order.getOrderMessage())) {
+

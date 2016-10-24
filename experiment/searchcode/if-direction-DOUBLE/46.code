@@ -1,0 +1,9 @@
+double[] output = neuralNetwork.getOutput();
+//int direction = (int) (output[0] * -1.0d + output[1]);
+int direction = new BigDecimal((Double.toString(output[0] * -1.0d + output[1]))).setScale(2,RoundingMode.HALF_UP).intValue();
+direction = direction > 4 ? 4 : direction < -4 ? -4 : direction;
+BeerTracker.direction = direction;
+switch(mode) {
+case BeerTracker.STANDARD:
+if (direction < 0)
+

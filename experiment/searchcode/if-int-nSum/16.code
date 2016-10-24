@@ -1,0 +1,13 @@
+nRev = (nRev * 10 + nTemp % 10);
+nTemp = nTemp / 10;
+}
+
+int nSum = n + nRev;
+int nSumRev = 0;
+while(nSum > 0){
+nSumRev = (nSumRev * 10) + nSum % 10;
+nSum = nSum / 10;
+}
+
+if (nSumRev == n + nRev) {
+

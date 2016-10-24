@@ -1,0 +1,8 @@
+for(int i=0,len=queryTextArray.length;i<len;i++){
+tempIndex=queryTextArray[i];
+if(tempIndex.contains(&quot;:&quot;)){
+currentIndexType=tempIndex.split(&quot;:&quot;)[0];
+tempIndex=tempIndex.split(&quot;:&quot;)[1];
+if(tempIndex.startsWith(&quot;(&quot;)){
+queryList.add(&quot;[&quot;);
+

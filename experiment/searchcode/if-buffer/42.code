@@ -1,0 +1,10 @@
+public DoubleBuffer(String name) {
+super(name);
+}
+
+public void paint(Graphics g){
+if (bufferWidth != getSize().width || bufferHeight != getSize().height || bufferImage == null || bufferGraphics == null)
+resetBuffer();
+
+if (bufferGraphics != null) {
+

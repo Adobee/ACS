@@ -1,0 +1,7 @@
+public class CosineSimilarityThreshold implements ScoreThreshold {
+private double threshold;
+
+public CosineSimilarityThreshold(double threshold) {
+if (threshold < -1 || threshold > 1)
+throw new RuntimeException(&quot;Threshold needs to be between -1 and 1, inclusive.&quot;);
+

@@ -1,0 +1,11 @@
+/* Locker Stats */
+private int numCommits;
+private int numAborts;
+
+public TxnManager(EnvironmentImpl env)
+allTxnLatch.acquire();
+allTxns.remove(txn);
+if (isCommit) {
+numCommits++;
+} else {
+

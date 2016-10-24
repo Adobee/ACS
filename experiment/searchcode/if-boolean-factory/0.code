@@ -1,0 +1,11 @@
+private static Factory nodeFactory = null;
+
+private static boolean mInit = false;
+
+public static Factory GetManagedLinkedListFactory(){
+if (mInit == false ){
+FactoryImpl.Init();
+mInit = true;
+}
+if ( linkedListFactory == null ){
+

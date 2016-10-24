@@ -1,0 +1,7 @@
+public Line(int x1, int y1, Paint paint, boolean filled, boolean dashed, int width, float dashWidth) {
+super(x1, y1, paint, filled, dashed, width, dashWidth);
+Graphics2D g2d = (Graphics2D) g;
+g2d.setPaint(this.getPaint());
+Stroke myStroke;
+if (this.isDashed()) {
+

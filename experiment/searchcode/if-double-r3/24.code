@@ -1,0 +1,9 @@
+r3 = 55215; // 0xd7af float:7.7373E-41 double:2.728E-319;
+if (r2 > r3) goto L_0x006a;
+L_0x0030:
+r3 = r2 - r11;
+r4 = 11172; // 0x2ba4 float:1.5655E-41 double:5.5197E-320;
+if (r3 < r4) goto L_0x0042;
+L_0x0038:
+r2 = java.lang.String.valueOf(r2);
+

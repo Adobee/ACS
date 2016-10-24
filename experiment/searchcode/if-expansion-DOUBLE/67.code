@@ -1,0 +1,10 @@
+internalArray = new double[this.initialCapacity];
+}
+
+public ResizableDoubleArray(int initialCapacity ,float expansionFactor) {
+internalArray = new double[initialCapacity];
+setContractionCriteria((expansionFactor + 0.5F));
+}
+
+public ResizableDoubleArray(int initialCapacity ,float expansionFactor ,float contractionCriteria) {
+

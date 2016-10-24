@@ -1,0 +1,9 @@
+public class MillisecondTickModel extends TickModel
+{
+private long maxMillis;
+private boolean inverse;
+
+public MillisecondTickModel(int currentIndex, int size, boolean isFilling, int maxMillis, boolean inverse)
+{
+super(currentIndex, size, isFilling);
+

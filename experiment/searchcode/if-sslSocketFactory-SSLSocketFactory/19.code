@@ -1,0 +1,10 @@
+import javax.net.ssl.SSLSocket;
+import javax.net.ssl.SSLSocketFactory;
+
+public class SSLMessagingClient extends MessagingClient
+throws IOException
+{
+if (getProxy() == null)
+{
+SSLSocketFactory sslsocketfactory = (SSLSocketFactory) SSLSocketFactory.getDefault();
+

@@ -1,0 +1,7 @@
+private final OrganisationTranslator translator = new OrganisationTranslator();
+
+private final TransitiveLookupWriter equivalenceWriter;
+// TODO extract this to somewhere common between Person/Organisation... DescribedTranslator?
+private void writeEquivalences(Described content) {
+if (!content.getEquivalentTo().isEmpty()) {
+

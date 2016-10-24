@@ -1,0 +1,9 @@
+double pab = ap[0]*ab[0] + ap[1]*ab[1];
+double d = -1.0;
+if (pab <= 0) {
+d = dist(p,a);
+} else if (pab >= abNorm) {
+d = dist(p,b);
+} else {
+double[] pp = {ab[0]*pab, ab[1]*pab};  // projection of ap onto ab
+

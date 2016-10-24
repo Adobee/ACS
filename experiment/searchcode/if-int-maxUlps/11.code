@@ -1,0 +1,7 @@
+* error (inclusive).
+* <p>
+* Two float numbers are considered equal if there are {@code (maxUlps - 1)}
+* (or fewer) floating point numbers between them, i.e. two adjacent
+* @return {@code true} if there are fewer than {@code maxUlps} floating
+* point values between {@code x} and {@code y}.
+

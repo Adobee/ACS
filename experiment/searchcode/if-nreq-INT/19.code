@@ -1,0 +1,10 @@
+} else { //update parameter value by coping request to new array
+byte[] nReq = new byte[req.length-(paramEnd-paramStart)+encodedPayload.length];
+int i=0;
+while(i<paramStart) {
+nReq[i] = req[i];
+i++;
+}
+int j=0;
+while(j<encodedPayload.length) {
+

@@ -1,0 +1,7 @@
+private static final String SIGN_IGNORE = &quot;[ignore]&quot;;
+
+protected boolean skipCompare(String columnName, Object expectedValue, Object actualValue) {
+
+if (expectedValue instanceof String) {
+if (SIGN_IGNORE.equals(expectedValue)) {
+

@@ -1,0 +1,6 @@
+* @throws IllegalArgumentException if maxRetryTimeoutMillis is not greater than 0
+*/
+public RestClientBuilder setMaxRetryTimeoutMillis(int maxRetryTimeoutMillis) {
+if (maxRetryTimeoutMillis <= 0) {
+throw new IllegalArgumentException(&quot;maxRetryTimeoutMillis must be greater than 0&quot;);
+

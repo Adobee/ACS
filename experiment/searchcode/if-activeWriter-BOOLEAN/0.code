@@ -1,0 +1,15 @@
+private int read_ctr;
+private int write_ctr;
+private boolean activeWriter;
+
+//LESERPRIORITAET
+/*
+public synchronized void startRead() {
+public synchronized void endWrite() {
+if(write_ctr == 0) {
+activeWriter = false;
+}
+notifyAll();
+}
+}
+

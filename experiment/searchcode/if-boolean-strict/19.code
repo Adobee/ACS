@@ -1,0 +1,9 @@
+return block.getEndLocation() == null ? true : follows(block.getEndLocation());
+}
+
+@Override
+public boolean follows(IRBasicBlock block, boolean strict) {
+public boolean follows(IRStatement stmt, boolean strict) {
+Preconditions.checkNotNull(stmt);
+return strict ? strictFollows(stmt) : follows(stmt);
+

@@ -1,0 +1,9 @@
+public String getTimeDifference(LocalDateTime postDateTime, LocalDateTime timeNow) {
+long difference = LocalDateTime.from(postDateTime).until(timeNow, ChronoUnit.SECONDS);
+String formattedTimeDifference = formatTimeDifference(difference);
+
+return formattedTimeDifference;
+}
+
+private String formatTimeDifference(long difference) {
+

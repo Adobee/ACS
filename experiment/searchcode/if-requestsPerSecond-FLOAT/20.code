@@ -1,0 +1,12 @@
+request.setConsistency(WriteConsistencyLevel.fromString(consistency));
+}
+
+Float requestsPerSecond = parseRequestsPerSecond(restRequest);
+if (requestsPerSecond != null) {
+channel.sendResponse(new BytesRestResponse(RestStatus.OK, builder));
+}
+}
+
+/**
+* @return requests_per_second from the request as a float if it was on the request, null otherwise
+

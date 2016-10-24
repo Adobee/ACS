@@ -1,0 +1,7 @@
+private final String nameKey;
+private final String bundle;
+
+private JobOfferState(final String type, final String nameKey, final String bundle) {
+this.type = type;
+this.nameKey = nameKey;
+

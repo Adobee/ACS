@@ -1,0 +1,12 @@
+return new Vector3D(x-p.x,y-p.y,z-p.z);
+}
+
+public Vector3D planeNormal(Point3D p1,Point3D p2,boolean counterclockwise){
+if(counterclockwise){
+return this.toward(p1).crossProduct(this.toward(p2)).normalize();
+}else{
+return this.toward(p2).crossProduct(this.toward(p1)).normalize();
+}
+}
+}
+

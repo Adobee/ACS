@@ -1,0 +1,8 @@
+private final StringExpression urlString;
+private final NumericExpression timeoutMs;
+
+public UrlAvailable(StringExpression urlString, NumericExpression timeoutMs) {
+long timeoutMs = this.timeoutMs.evaluate().longValue();
+connection.setConnectTimeout((int) timeoutMs);
+if (connection instanceof HttpURLConnection) {
+

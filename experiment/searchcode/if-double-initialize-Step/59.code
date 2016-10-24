@@ -1,0 +1,14 @@
+public double fieldElement(int i) {
+return field[i];
+}
+
+protected void _step() {
+for (int i = 0; i < N_dx; i++) {
+double phi = field[i];
+// Job.plot(0, field);
+step();
+}
+
+beta = 1; // re-enable noise
+if (nucleated())
+

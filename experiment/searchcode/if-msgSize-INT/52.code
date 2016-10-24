@@ -1,0 +1,8 @@
+// No header for Eth. message
+if (in.readableBytes() < 8) return;
+
+long magicBytes = in.readUnsignedInt();
+long msgSize = in.readUnsignedInt();
+
+if (!((magicBytes >> 24   &amp;  0xFF) == 0x22  &amp;&amp;
+

@@ -1,0 +1,10 @@
+public Client createClient(Client client) throws RuntimeException {
+if ( clientExists(client) )
+throw new IllegalArgumentException(&quot;Clientul există deja!&quot;);
+throw new DAOException(&quot;Client was not updated!&quot;);
+}
+
+@Override
+public boolean deleteClient(Client client) throws RuntimeException {
+if ( clientDoesntExist(client) )
+

@@ -1,0 +1,10 @@
+public enum ParentComparator implements Comparator<Long> {
+INSTANCE;
+
+@Override
+public int compare(Long p1, Long p2) {
+if (p1 == null &amp;&amp; p2 == null)
+return 0;
+if (p1 == null)
+return 1;
+

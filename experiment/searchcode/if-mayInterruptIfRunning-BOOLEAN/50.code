@@ -1,0 +1,14 @@
+return handle == null || handle.isCancelled();
+}
+
+@Override
+public boolean cancel(boolean mayInterruptIfRunning) {
+return handle == null || handle.cancel(mayInterruptIfRunning);
+}
+
+@Override
+public boolean isFinished() {
+return handle == null || handle.isFinished();
+}
+}
+

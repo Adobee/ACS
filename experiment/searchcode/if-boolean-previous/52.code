@@ -1,0 +1,9 @@
+private Node<E> PrePrevious;
+private Node<E> Previous;
+private Node<E> NowNode;
+public LLit(Node<E> n){
+public E next(){
+E retval = NowNode.getNext().getData();
+NowNode=NowNode.getNext();
+if (NowNode.getData()!=Previous.getNext().getData()){
+

@@ -1,0 +1,9 @@
+int nrows = 2;
+int ncols = 3;
+if (ncomponents == 0) {
+return;
+}
+if (nrows > 0) {
+ncols = (ncomponents + nrows - 1) / nrows;
+} else {
+

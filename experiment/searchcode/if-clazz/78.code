@@ -1,0 +1,10 @@
+&quot;select clazzID,clazzName from Clazz &quot;);
+if (this.jsonType.equals(&quot;ing&quot;)) {
+sql.append(&quot; where status = &#39;1&#39;&quot;);
+}
+List<Object> list = (List<Object>) this.clazzService.find(sql
+StringBuffer sql = new StringBuffer(
+&quot;select clazzID,clazzName from Clazz where majorID= &quot;
++ Long.parseLong(jsonValue));
+if (this.jsonType.equals(&quot;ing&quot;)) {
+

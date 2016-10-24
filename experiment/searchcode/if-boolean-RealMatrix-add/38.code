@@ -1,0 +1,8 @@
+Double constraintVal = constraint.evaluate(x);
+RealMatrix gradVal = gradient.evaluate(x);
+barrier = barrier.add(gradVal.scalarMultiply(-1.0 / constraintVal));
+* @return
+*/
+private boolean isFeasible(RealMatrix x) {
+for (IRealFunction constraint : inequalityConstraints) {
+

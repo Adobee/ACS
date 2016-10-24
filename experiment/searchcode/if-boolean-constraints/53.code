@@ -1,0 +1,19 @@
+i_constraints = constraints;
+}
+
+Constraint join(Constraint a_with, boolean a_and) {
+synchronized(streamLock()){
+if (!(a_with instanceof QCon)) {
+for (int i = 0; i < i_constraints.length; i++) {
+objects[i] = i_constraints[i].getObject();
+}
+return objects;
+}
+}
+
+@Override
+protected boolean canResolveByFieldIndex() {
+return false;
+}
+}
+

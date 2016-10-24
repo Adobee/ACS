@@ -1,0 +1,7 @@
+public ParseError(Parser parser, RecognitionException re, int expecting, String[] tn) {
+this(parser, re, tn, -1);
+this.expecting = expecting;
+}
+
+public ParseError(Parser parser, RecognitionException re, String[] tn, int code) {
+

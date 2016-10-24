@@ -1,0 +1,10 @@
+for (int j = 0; j < n; ++ j)
+{
+wa1[j] = qtb[j];
+if (r[j][j] == 0.0 &amp;&amp; nsing == n) nsing = j;
+if (nsing < n) wa1[j] = 0.0;
+}
+for (int j = nsing-1; j >= 0; -- j)
+{
+wa1[j] = wa1[j]/r[j][j];
+

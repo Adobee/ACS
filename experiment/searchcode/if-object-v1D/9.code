@@ -1,0 +1,12 @@
+public String getName() {
+return &quot;Contourer&quot;;
+}
+
+public GeoObject operate(GeoGrid geoGrid) {
+float[] minMax = geoGrid.getMinMax();
+final double firstContourLevel = Math.ceil(minMax[0] / interval) * interval;
+return operate(geoGrid, firstContourLevel);
+}
+
+public GeoObject operate(GeoGrid geoGrid, double firstContourLevel) {
+

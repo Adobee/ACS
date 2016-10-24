@@ -1,0 +1,12 @@
+public final class HashUtil
+{
+public static int
+hashAdd(int hashCode, boolean value)
+{
+return ((hashCode << 5) + hashCode) ^ (value ? 0 : 1);
+hashAdd(int hashCode, java.lang.Object value)
+{
+if(value != null)
+{
+hashCode = ((hashCode << 5) + hashCode) ^ value.hashCode();
+

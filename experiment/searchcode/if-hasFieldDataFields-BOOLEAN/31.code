@@ -1,0 +1,7 @@
+fetchSourceContext = in.readOptionalStreamable(FetchSourceContext::new);
+if (in.readBoolean()) {
+int size = in.readVInt();
+highlightBuilder = in.readOptionalWriteable(HighlightBuilder::new);
+if (in.readBoolean()) {
+int size = in.readVInt();
+

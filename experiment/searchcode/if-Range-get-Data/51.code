@@ -1,0 +1,8 @@
+set.add((SWRLVariable)argument1);
+}
+Instance dataRange = getDataRange();
+if (dataRange != null &amp;&amp; dataRange instanceof RDFResource) {
+Object propertyValue = getPropertyValue(getOWLModel().getRDFProperty(SWRLNames.Slot.DATA_RANGE));
+
+if (propertyValue instanceof OWLDataRange) return (OWLDataRange)propertyValue;
+

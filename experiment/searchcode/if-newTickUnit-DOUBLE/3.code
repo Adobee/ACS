@@ -1,0 +1,10 @@
+public void validateTickUnit() {
+double newTickUnit;
+try {
+newTickUnit = Double.parseDouble(this.manualTickUnit.getText());
+catch (NumberFormatException e) {
+newTickUnit = this.manualTickUnitValue;
+}
+
+if (newTickUnit > 0.0) {
+

@@ -1,0 +1,10 @@
+* Statistics based on (constructed from) external moments cannot
+* be incremented or cleared.</p>
+*/
+protected boolean incMoment;
+public void increment(final double d) {
+if (incMoment) {
+moment.increment(d);
+}  else  {
+throw MathRuntimeException.createIllegalStateException(
+

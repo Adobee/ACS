@@ -1,0 +1,6 @@
+import com.github.javaparser.ast.type.ReferenceType;
+import com.github.javaparser.ast.type.WildcardType;
+public boolean doIsEquals(WildcardType first, WildcardType second) {
+
+if (!isEqualsUseMerger(first.getExtends(), second.getExtends())) return false;
+

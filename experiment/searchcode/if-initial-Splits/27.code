@@ -1,0 +1,11 @@
+this.minimumSideLengthPixel = (int)Math.ceil(N* minimumSideLengthFraction);
+
+// ------------- find initial line segments
+splits.reset();
+
+// can&#39;t fit a line to a single point
+splitPixels(middleIndex, N - (N / 2));
+
+// ------------  Refine the initial segments by splitting and merging each segment
+if( splits.size <= 2 )
+

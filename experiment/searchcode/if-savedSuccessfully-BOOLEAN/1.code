@@ -1,0 +1,8 @@
+public class SaveNewAhtvUserServlet extends AbstractUpdateAhtvUserServlet
+{
+protected boolean saveOrUpdateWith(String emailAddress, String mobileNumber, HttpServletRequest request, HttpServletResponse response) throws MalformedURLException
+int generatedId = userServiceFacade.saveNewUserWith(sunrisePassportCodeFrom(request), emailAddress, mobileNumber);
+
+boolean savedSuccessfully = userServiceFacade.isAValidId(generatedId);
+if (savedSuccessfully)
+

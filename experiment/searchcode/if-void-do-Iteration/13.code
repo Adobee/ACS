@@ -1,0 +1,9 @@
+this.timeGenerator = timeGenerator;
+}
+
+@Override
+public void beforeObjectCommit(Iteration iteration, ActionMapping actionMapping,
+Iteration iteration = (Iteration) getCommonDao().getById(Iteration.class, Integer.parseInt(iterationId));
+if (iteration.isActive()) {
+iteration.setIterationStatus(IterationStatus.INACTIVE);
+

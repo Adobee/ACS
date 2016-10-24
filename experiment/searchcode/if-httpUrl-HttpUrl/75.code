@@ -1,0 +1,10 @@
+package com.github.sckm.lolinfo.data.api;
+
+import okhttp3.HttpUrl;
+import okhttp3.OkHttpClient;
+static Retrofit retrofitGlobal;
+static Retrofit retrofitLocale;
+
+public static Retrofit getInstanceWithLocale() {
+if (retrofitLocale == null) {
+

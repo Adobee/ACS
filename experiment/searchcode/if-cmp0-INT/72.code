@@ -1,0 +1,11 @@
+int r1= isSameScope(b1.getScope(), b2.getScope(), isStatic);
+if (r1 == FALSE) {
+return FALSE;
+}
+
+int r2= checkSig ? hasSameSignature(c1, c2) : TRUE;
+return isSameScope(b1.getScope(), b2.getScope(), false);
+}
+int scopeCmp= isSameScope(b1.getScope(), b2.getScope(), false);
+if (scopeCmp != TRUE) {
+

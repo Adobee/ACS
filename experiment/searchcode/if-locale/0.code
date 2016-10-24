@@ -1,0 +1,13 @@
+package be.fedict.commons.eid.client.impl;
+
+import java.util.Locale;
+
+public final class LocaleManager {
+public static Locale getLocale() {
+if (LocaleManager.locale == null) {
+LocaleManager.locale = Locale.getDefault();
+}
+return LocaleManager.locale;
+}
+}
+

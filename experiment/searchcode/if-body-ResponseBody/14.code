@@ -1,0 +1,12 @@
+private JsonObject responseBody;
+
+public KondutoUnexpectedAPIResponseException(JsonObject responseBody) {
+this.responseBody = responseBody;
+}
+
+@Override
+public String getMessage() {
+return String.format(&quot;Unexpected API response: %s&quot;, this.responseBody);
+}
+}
+

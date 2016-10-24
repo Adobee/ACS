@@ -1,0 +1,10 @@
+public int sqrt(int x) {
+if (x <= 0)
+return 0;
+if (x == 1)
+return 1;
+int lower = 0;
+int upper = x / 2;
+int num = upper;
+while(lower < upper) {
+

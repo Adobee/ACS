@@ -1,0 +1,7 @@
+public boolean canCompare(final Object expected, final Object actual) {
+return expected != null &amp;&amp; actual != null &amp;&amp; expected instanceof Collection &amp;&amp; actual instanceof Collection;
+final List<Object> expectedList = new ArrayList<>((Collection<?>) expected);
+final List<Object> actualList = new ArrayList<>((Collection<?>) actual);
+
+if (expectedList.size() != actualList.size()) {
+

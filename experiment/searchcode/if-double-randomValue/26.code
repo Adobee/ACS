@@ -1,0 +1,7 @@
+int n = 0;
+Random r = new Random();
+for (int i = 0; i < 1000000; i++) {
+double randomValue = r.nextDouble();
+long lastBit = Double.doubleToLongBits(randomValue) &amp; 5;
+if (lastBit == 1) {
+

@@ -1,0 +1,12 @@
+return op.getAndSetFinalResult(accum);
+}
+return accum;
+}
+
+@Override
+public Double call() {
+if(doTensorFirst) doTensorFirst(op);
+int byteOffsetY = 8 * offsetY;
+double accum = op.zeroDouble();
+if (incrX == 1 &amp;&amp; incrY == 1) {
+

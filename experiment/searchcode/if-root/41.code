@@ -1,0 +1,5 @@
+public Tree commonAncsdtor(Tree root, Tree p, Tree q){
+if(covers(root.left,p) &amp;&amp; covers(root.left, q))
+return commonAncsdtor(root.left, p, q);
+if(covers(root.right, p) &amp;&amp; covers(root.right, q))
+

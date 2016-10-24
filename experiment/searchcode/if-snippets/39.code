@@ -1,0 +1,13 @@
+html.append(snippets.tbodyStart());
+
+html.append(snippets.body());
+
+if (colsToTotal != null) {
+List<Column> cols = getTable().getRow().getColumns();
+html.append(snippets.toolbar());
+
+if (showFilters)
+html.append(snippets.filter());
+
+html.append(snippets.tableEnd());
+

@@ -1,0 +1,8 @@
+r = Math.max(r, board[x][y]);
+}
+int nextX, nextY;
+if (y % 2 == 0) {
+if (x == n - 1) {
+nextX = x;
+nextY = y + 1;
+

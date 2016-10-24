@@ -1,0 +1,11 @@
+public class BugJac719Test extends ORBTestCase
+{
+private static int DIM_ARRAYA_1 = 10;
+private static int DIM_THREEDIMA_1 = 2;
++ sample.threeDimA()[i].length);
+}
+
+for (int j = 0; j < DIM_THREEDIMA_2; j++)
+{
+if (sample.threeDimA()[i][j].length != DIM_ARRAYA_1)
+

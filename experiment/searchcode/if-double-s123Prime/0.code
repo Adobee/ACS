@@ -1,0 +1,7 @@
+/*  172:     */     }
+/*  173: 270 */     if (abort) {
+/*  174: 271 */       throw new NonMonotonicSequenceException(Double.valueOf(val[index]), Double.valueOf(previous), index, dir, strict);
+/*  225: 390 */         else if (xabs != 0.0D)
+/*  226:     */         {
+/*  227: 391 */           double r = xabs / x3max;
+

@@ -1,0 +1,8 @@
+in = new BufferedInputStream(new FileInputStream(inFileName));
+
+int val = in.read();
+int countBytes = 1, countIndex = 1;
+int index = 255;
+while ((val = in.read()) != -1) {
+if (sizeFile >= 20 &amp;&amp; countBytes % ((sizeFile / 20)) == 0) {
+

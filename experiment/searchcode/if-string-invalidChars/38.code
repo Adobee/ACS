@@ -1,0 +1,9 @@
+* @param values
+*            the set of string email address to validate
+* @return true if all of the email addresses are valid; false otherwise
+public boolean validate(Set<String> values) {
+
+for (String value : values) {
+if (!validate(value)) {
+return false;
+

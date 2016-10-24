@@ -1,0 +1,6 @@
+LocalTime lt = new LocalTime(testMillis, DateTimeZone.forOffsetHours(0));
+int millisOfDay = lt.getMillisOfDay();
+
+if(this.getAutoActivateTODStartMs() <= this.getAutoActivateTODEndMs()) {
+if(millisOfDay < this.getAutoActivateTODStartMs() || millisOfDay > this.getAutoActivateTODEndMs()) {
+

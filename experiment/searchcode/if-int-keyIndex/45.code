@@ -1,0 +1,6 @@
+public static void calculateSlopes(Ramp ramp) {
+for (Ramp.Track track : ramp.trackVector) {
+for (int keyIndex = 0; keyIndex < track.keyVector.size(); ++keyIndex) {
+Ramp.Track.Key currKey = track.keyVector.get(keyIndex);
+if (currKey.curveType == Ramp.Track.Key.CurveType.FLAT) {
+

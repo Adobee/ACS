@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class Problem108 {
+public static long maxSumSubarray(long[] right, long[] left, int n) {
+local_max = global_max = right[0] - left[0];
+
+for (int i = 1; i < n; i++) {
+long num = right[i] - left[i];
+if (local_max > 0) {
+

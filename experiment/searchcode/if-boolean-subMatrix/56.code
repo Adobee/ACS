@@ -1,0 +1,8 @@
+private static final int SUBMATRIX = 9;
+
+public boolean isValidSudoku(char[][] board) {
+
+for (int c = 0; c < board[0].length; c++) {
+for (int k = 0; k < SUBMATRIX; k++) {
+if (board[i + k/3][ j + k%3] != &#39;.&#39; &amp;&amp; !visited.add(board[i + k/3][ j + k%3])) {
+

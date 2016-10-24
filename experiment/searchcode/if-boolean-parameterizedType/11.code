@@ -1,0 +1,6 @@
+public boolean supports(Type type) {
+if(type instanceof ParameterizedType) {
+final ParameterizedType parameterizedType = ((ParameterizedType) type);
+final Type rawType = parameterizedType.getRawType();
+if(List.class.equals(rawType) || Set.class.equals(rawType)) {
+

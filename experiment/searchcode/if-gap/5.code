@@ -1,0 +1,14 @@
+int gap = a.length;
+boolean swapped;
+do {
+swapped = false;
+
+gap = gap * 10 / 13;
+if (gap == 9 || gap == 10)
+gap = 11;
+if (gap < 1)
+gap = 1;
+int i = 0;
+while (i < a.length - gap) {
+if (a[i] > a[i + gap]) {
+

@@ -1,0 +1,7 @@
+// This assignment demonstrates inheritance, overriding, overloading and
+// polymorphism
+//
+// NOTE: Java assumes a number such as 1.0 is a double and it must be
+// explicity cast to a float if a single precision floating point number
+// is to be used in an expression.
+

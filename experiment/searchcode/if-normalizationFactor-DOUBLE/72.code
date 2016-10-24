@@ -1,0 +1,11 @@
+double maxDisp = Double.MIN_VALUE;
+for(int i=0;i<points.getCount();i++)
+{
+if( Math.abs(force[i].x) > maxDisp)
+for (int i=0; i<points.getCount(); i++)
+{
+double x = getX(i);
+double y = getY(i);
+
+double normalizationFactor = Math.sqrt(force[i].x*force[i].x + force[i].y*force[i].y);
+

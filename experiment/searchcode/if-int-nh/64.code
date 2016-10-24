@@ -1,0 +1,9 @@
+boolean happy = false;
+for (int i = 0; i < R; i++) {
+for (int j = 0; j < C; j++) {
+if (state[i].charAt(j) == &#39;H&#39;) {
+int nh = i + dy[k];
+int nw = j + dx[k];
+if (inner(nh, nw, R, C)) {
+if (state[nh].charAt(nw) == &#39;H&#39;) {
+

@@ -1,0 +1,14 @@
+long millis; // epoch milliseconds
+
+public MilliDate(long m) {
+millis = m;
+}
+@Override
+public boolean isBefore(ItemDate d) {
+MilliDate dd = (MilliDate) d;
+return millis < dd.millis;
+}
+
+@Override
+public boolean isAfter(ItemDate d) {
+

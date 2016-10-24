@@ -1,0 +1,9 @@
+/*     */   public final void mul(Quat4f q1, Quat4f q2)
+/*     */   {
+/* 184 */     if ((this != q1) &amp;&amp; (this != q2)) {
+/* 185 */       this.w = (q1.w * q2.w - q1.x * q2.x - q1.y * q2.y - q1.z * q2.z);
+/* 295 */     float norm = q1.x * q1.x + q1.y * q1.y + q1.z * q1.z + q1.w * q1.w;
+/*     */
+/* 297 */     if (norm > 0.0F) {
+/* 298 */       norm = 1.0F / (float)Math.sqrt(norm);
+

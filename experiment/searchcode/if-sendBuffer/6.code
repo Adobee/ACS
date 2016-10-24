@@ -1,0 +1,13 @@
+public Frame send() {
+remainSendLength -= speed;
+if (remainSendLength <= 0) {
+int i = 1;
+Frame res = sendBuffer[0];
+for (; i < sendBuffer.length &amp;&amp; sendBuffer[i] != null; i++) {
+sendBuffer[i - 1] = sendBuffer[i];
+}
+if (i < sendBuffer.length) {
+sendBuffer[i] = null;
+}
+remainSendLength = sendBuffer[0].len;
+

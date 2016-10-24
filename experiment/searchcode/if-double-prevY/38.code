@@ -1,0 +1,12 @@
+} catch (Exception e) {
+throw new RuntimeException(e);
+} finally {
+if (out != null) {
+out.flush();
+double startY = nextDouble();
+
+double prevX = startX;
+double prevY = startY;
+
+for (int i = 0; i < N-1; i++) {
+

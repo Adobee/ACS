@@ -1,0 +1,11 @@
+import java.util.Date;
+
+public class Value {
+private Double previous;
+private Double current;
+private Date date;
+private Double dividend;
+
+
+public Value(Double previous, Double current, Date date, Double dividend) {
+

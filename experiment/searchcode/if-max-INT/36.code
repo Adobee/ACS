@@ -1,0 +1,11 @@
+int len = s.length();
+if (len == 0) return 0;
+
+int r = 0;
+int g = 0;
+int b = 0;
+
+char c = s.charAt(0);
+if (c == &#39;R&#39;) r++;
+else if (c == &#39;G&#39;) g++;
+

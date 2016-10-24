@@ -1,0 +1,12 @@
+private Hashtable<Integer,ArrayList<Particle>> particles;
+private int dt;
+private int nsteps;
+
+public PredictionReceiver(Activity activity, String source) {
+return true;
+
+}
+
+
+public boolean setPredictionParams(String flight, int dt, int nsteps, boolean rawPrediction) {
+

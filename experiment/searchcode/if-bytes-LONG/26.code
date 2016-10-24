@@ -1,0 +1,8 @@
+public static byte[] longToBytes(long v) {
+byte[] bytes = new byte[ 8 ];
+bytes[0] = (byte)(v >>> 56);
+public static long bytesToLong(byte[] bytes) {
+if (bytes == null || bytes.length != 8) return 0x0;
+// ----------
+return (long)(
+

@@ -1,0 +1,12 @@
+package primitives;
+
+public class Type extends Word {
+
+public Type(String s, int tag) {
+super(s, tag);
+}
+
+public static final Type
+INT_TYPE = new Type(&quot;int&quot;, Tag.BASIC),
+FLOAT_TYPE = new Type(&quot;float&quot;, Tag.BASIC),
+

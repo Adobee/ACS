@@ -1,0 +1,11 @@
+
+class Polygon extends Shape{
+double[][] points;
+double[] norm;
+Plane plane;
+
+public Polygon(int num, double spec, double diff, double ref, double[][] points){
+double[] e = minus(points[i], points[(i+1)%points.length]);
+double[] n = cross(e, norm);
+if(dot(n, temp.point) < dot(n, points[i])) return null;
+

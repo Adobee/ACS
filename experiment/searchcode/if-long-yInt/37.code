@@ -1,0 +1,9 @@
+if (xInt < 0) {
+xInt = SGN_MASK_FLOAT - xInt;
+}
+if (yInt < 0) {
+yInt = SGN_MASK_FLOAT - yInt;
+public static boolean equals(double x, double y, int maxUlps) {
+long xInt = Double.doubleToLongBits(x);
+long yInt = Double.doubleToLongBits(y);
+

@@ -1,0 +1,9 @@
+beanName = (String) findString(beanName);
+
+if(name != null &amp;&amp; nameKey != null){
+addParameter(&quot;nameKey&quot;, findString(&quot;.&quot; + name + &quot;.&quot; + nameKey));
+addParameter(&quot;nameKey&quot;, findString(&quot;.&quot; + name));
+}
+else if(nameKey != null){
+addParameter(&quot;nameKey&quot;, findString(&quot;.&quot; + nameKey));
+

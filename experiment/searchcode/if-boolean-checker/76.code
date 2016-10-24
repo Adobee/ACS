@@ -1,0 +1,10 @@
+this.password = this.initPass;
+}
+
+public boolean acceptable(String suggestion) {
+return checker.acceptable(suggestion);
+}
+
+public boolean setWord(String oldPass, String newPass) {
+if (!testWord(oldPass) || !acceptable(newPass)) {
+

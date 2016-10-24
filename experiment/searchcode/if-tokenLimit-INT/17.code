@@ -1,0 +1,10 @@
+public static final String PARAM_TOKEN_LIMIT = &quot;PARAM_TOKEN_LIMIT&quot;;
+@ConfigurationParameter(name = PARAM_TOKEN_LIMIT, mandatory = true)
+protected int tokenLimit;
+public void process(JCas aJCas) throws AnalysisEngineProcessException {
+try {
+init();
+
+if (tokenCount > tokenLimit) {
+return;
+

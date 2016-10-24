@@ -1,0 +1,13 @@
+public static String makeIdNumeral(String id) {
+
+if (id.contains(&quot;Q&quot;)) {
+id = id.replace(&quot;Q&quot;, &quot;&quot;);
+}
+if (id.contains(&quot;W&quot;)) {
+public static String makeItAlphabetical(String id) {
+
+if(id.contains(&quot;1&quot;)) {
+id = id.replace(&quot;1&quot;, &quot;&quot;);
+}
+if(id.contains(&quot;2&quot;)) {
+

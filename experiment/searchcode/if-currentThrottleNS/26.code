@@ -1,0 +1,7 @@
+public IndexingStats.Stats stats() {
+long currentThrottleNS = 0;
+if (isThrottled &amp;&amp; startOfThrottleNS != 0) {
+currentThrottleNS +=  System.nanoTime() - startOfThrottleNS;
+if (currentThrottleNS < 0) {
+// Paranoia (System.nanoTime() is supposed to be monotonic): time slip must have happened, have to ignore this value
+

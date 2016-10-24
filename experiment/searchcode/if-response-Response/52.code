@@ -1,0 +1,6 @@
+Log.i(&quot;responseType&quot;, String.valueOf(responseType));
+if(responseType == ResponseType.OK.code) {
+return new OkResponse();
+} else if(responseType == ResponseType.VALIDATION_ERROR.code) {
+return new ValidationErrorResponse();
+

@@ -1,0 +1,14 @@
+package com.frank.shapes;
+
+public class ShapeFactory
+{
+private static ShapeFactory shapeFactory = null;
+public static ShapeFactory getInstance()
+{
+if(shapeFactory == null)
+{
+shapeFactory = new ShapeFactory();
+}
+
+return shapeFactory;
+

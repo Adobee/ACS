@@ -1,0 +1,10 @@
+public class DBMoaraOrganism extends DBMySQL {
+
+static protected Connection conn;
+static private int numChildren = 0;
+
+public DBMoaraOrganism() {
+super();
+if (numChildren==0) {
+conn = this.init(&quot;moara_organism&quot;);
+

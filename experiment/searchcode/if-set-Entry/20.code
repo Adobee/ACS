@@ -1,0 +1,7 @@
+entry.setEnd(Integer.parseInt(rawInfo[2]));
+entry.setNumber(Integer.parseInt(rawInfo[3]));
+if(rawInfo[0].startsWith(&quot;Un&quot;) || rawInfo[0].startsWith(&quot;un&quot;)) {
+//System.out.println(&quot;Entry&#39;s chromosome &quot; + entry.getChromosome());
+if(entry.getChromosome().startsWith(&quot;0&quot;)) {
+entry.setChromosome(entry.getChromosome().substring(1));
+

@@ -1,0 +1,10 @@
+protected abstract boolean syncImpl(List<UserAction> actions, boolean hasPendingLocalData);
+
+/**
+* Create a copy of current pending actions and delegate the
+Log.d(TAG, &quot;Starting Drive AppData sync. hasPendingData = &quot; + hasPendingLocalData);
+
+boolean dataChanged = syncImpl(actions, hasPendingLocalData);
+
+if (hasPendingLocalData) {
+

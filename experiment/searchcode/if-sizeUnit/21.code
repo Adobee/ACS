@@ -1,0 +1,8 @@
+private static final Pattern PATTERN = Pattern.compile(&quot;[\\d]+[\\s]*(B|byte(s)?|KB|KiB|kilobyte(s)?|MB|MiB|megabyte(s)?|GB|GiB|gigabyte(s)?|TB|TiB|terabyte(s)?)&quot;);
+private static final ImmutableMap<String, SizeUnit> SUFFIXES;
+private final long count;
+private final SizeUnit unit;
+
+public static Size bytes(long count) {
+return new Size(count, SizeUnit.BYTES);
+

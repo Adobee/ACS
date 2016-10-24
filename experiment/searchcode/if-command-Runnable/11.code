@@ -1,0 +1,10 @@
+private final Command mCommand;
+private Handler mHandler;
+private Runnable mRunnable;
+
+public CommandPerformer(Command command) {
+@Override
+public void run() {
+mCommand.execTask();
+if(mCommand.success()) {
+

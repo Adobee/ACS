@@ -1,0 +1,10 @@
+while(this.current.prev.lock_count>0 &amp;&amp; this.current!=this.current.next &amp;&amp; this.current.next!=this.current.prev)
+;
+
+if(this.current!=this.current.next ){
+this.current.next.rw.lockWrite();
+this.current.lock_count++;
+}
+
+if(this.current!=this.current.prev &amp;&amp; this.current.next!=this.current.prev){
+

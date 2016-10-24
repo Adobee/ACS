@@ -1,0 +1,11 @@
+public static StageBase getNextStage(TokiShootingScene scene) {
+if (currentStage == null) {
+currentStage = FIRST_STAGE;
+return currentStage.getInstance(scene);
+return null;
+}
+}
+
+public static String getStageName() {
+if (currentStage == null) {
+

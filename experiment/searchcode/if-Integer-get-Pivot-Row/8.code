@@ -1,0 +1,12 @@
+for (RowHeaderField rowHeaderFieldExisting : existingrowHeaderFieldList) {
+if (rowHeaderField.getConceptName().equals(rowHeaderFieldExisting.getConceptName())) {
+rowHeaderFieldListToBeRemoved.add(rowHeaderFieldExisting);
+}
+}
+i++;
+}
+}
+
+// process the row header fields
+pivotTable.getRowSection().getRowHeaderFieldList().get(indexList.get(0)).setConceptName(newName);
+

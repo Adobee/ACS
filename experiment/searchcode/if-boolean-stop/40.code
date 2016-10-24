@@ -1,0 +1,11 @@
+package tokyotyrant.example;
+
+public class StopWatch {
+private boolean started = false;
+private long start;
+private long stop;
+
+public StopWatch start() {
+if (started) {
+throw new IllegalStateException(&quot;Already started&quot;);
+

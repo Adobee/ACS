@@ -1,0 +1,10 @@
+Log.d(LOG_TAG, &quot;Set Threshold to &quot; + threshold);
+int max_16 = 32767;
+
+if (threshold < 0) {
+threshold = 0;
+} else if (threshold > max_16) {
+threshold = max_16;
+}
+this.threshold = threshold;
+

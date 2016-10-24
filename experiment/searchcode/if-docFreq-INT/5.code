@@ -1,0 +1,13 @@
+// No of documents
+private int N = 900;
+
+private String term;
+private double weight;
+private int docFreq;
+private int termFreq;
+private void setWeight(int termFreq, int docFreq) {
+if (termFreq <= 0 || docFreq <= 0) {
+this.weight = 0;
+} else {
+this.weight = termFreq * Math.log1p(N / docFreq);
+

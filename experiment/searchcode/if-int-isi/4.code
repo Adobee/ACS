@@ -1,0 +1,7 @@
+private static final int ISI_IDENTIFIER = 2;
+private static final int ISI_CHAR = 3; // inside char constant
+private static final int ISI_CHAR_A_BSLASH = 4; // inside char constant after backslash
+default:
+if (!(ch >= &#39;0&#39; &amp;&amp; ch <= &#39;9&#39;)) {
+state = (state == ISI_BRACKET_ISI_INT) ? ISI_BRACKET : INIT;
+

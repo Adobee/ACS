@@ -1,0 +1,8 @@
+private double initialStepBoundFactor;
+
+private double costRelativeTolerance;
+
+private double parRelativeTolerance;
+public void setCostRelativeTolerance(double costRelativeTolerance) {
+this.costRelativeTolerance = costRelativeTolerance;
+

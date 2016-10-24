@@ -1,0 +1,9 @@
+public Engine(final String dictionaryFile, final String puzzleFile, final int minWordLength) {
+dictionary = new Dictionary(dictionaryFile);
+tileBoard = new Puzzle(puzzleFile);
+solver = new Solver(dictionary, tileBoard.getTileSet(), minWordLength);
+solver.findAllWords();
+}
+
+public ArrayList<String> getSolutions(int wordSortFlag){
+

@@ -1,0 +1,9 @@
+public class StringFunction {
+private static char hexDigits[] = { &#39;0&#39;, &#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;, &#39;5&#39;, &#39;6&#39;, &#39;7&#39;, &#39;8&#39;, &#39;9&#39;, &#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;, &#39;E&#39;, &#39;F&#39; };
+public static String password(String text) throws Exception {
+if (text == null) {
+return null;
+}
+
+MessageDigest md = MessageDigest.getInstance(&quot;SHA-1&quot;);
+

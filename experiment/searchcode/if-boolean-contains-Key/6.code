@@ -1,0 +1,11 @@
+public BTreeSET(Key sentinel) {
+add(sentinel);
+}
+
+public boolean contains(Key key) {
+return contains(root, key);
+}
+
+private boolean contains(Page h, Key key) {
+if (h.isExternal()) return h.contains(key);
+

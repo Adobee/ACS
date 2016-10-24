@@ -1,0 +1,10 @@
+public WeakReference<Limit> getBucket (int price)
+{		return hashTable.get(hasher(price));	}
+
+public Limit getLimit (int price)
+{
+if (getBucket(price)==null) return null;
+Limit current = getBucket(price).get();
+int steps = 0;
+if (current==null) return null;
+

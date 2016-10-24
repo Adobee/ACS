@@ -1,0 +1,11 @@
+public class PizzaPasswordEncoder implements PasswordEncoder {
+
+@Override
+public String encode(CharSequence rawPassword) {
+if (rawPassword == null) {
+public boolean matches(CharSequence rawPassword, String encodedPassword) {
+if (rawPassword == null || encodedPassword == null) {
+return false;
+}
+String encodedRaw = encode(rawPassword);
+

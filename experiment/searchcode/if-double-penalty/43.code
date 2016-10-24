@@ -1,0 +1,12 @@
+public String pseudonym;
+public double points;
+public double penalty;
+public int compareTo(Object o) {
+User ou = (User) o;
+return Double.compare(ou.points, points);
+if (Math.abs(penalty - ou.penalty) > EPSILON)
+return Double.compare(penalty, ou.penalty);
+return pseudonym.compareTo(ou.pseudonym);
+}
+}
+

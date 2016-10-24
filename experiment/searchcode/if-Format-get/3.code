@@ -1,0 +1,11 @@
+public static DateFormat getLongDateFormat() {
+DateFormat format = LONG_FORMATS.get();
+if (format == null) {
+format = new SimpleDateFormat(DateFormatPattern.LONG_FORMAT.toString());
+return format;
+}
+
+public static DateFormat getTwitterDateFormat() {
+DateFormat format = TWITTER_FORMATS.get();
+if (format == null) {
+

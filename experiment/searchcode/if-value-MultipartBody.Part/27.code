@@ -1,0 +1,9 @@
+import java.io.IOException;
+import java.util.Map;
+
+import okhttp3.FormBody;
+import okhttp3.MultipartBody;
+import okhttp3.Request;
+RequestBody fileBody = RequestBody.create(entry.getValue().contentType, entry.getValue().file);
+multipartBodybuilder.addFormDataPart(entry.getKey(), entry.getValue().fileName, fileBody);
+

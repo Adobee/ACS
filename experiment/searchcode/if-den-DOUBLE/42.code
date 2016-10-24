@@ -1,0 +1,7 @@
+public Rational(BigInteger num, BigInteger den) {
+//			if(den==0)throw new ArithmeticException(&quot;/ by zero&quot;);
+BigInteger g = num.gcd(den);
+num = num.divide(g); den = den.divide(g);
+if (den.compareTo(BigInteger.ZERO) < 0) {
+den = den.negate();
+

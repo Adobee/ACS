@@ -1,0 +1,6 @@
+* fragment (starting at the position). Default value is 0 (pure insertion).
+* Note that if replacementLength==code.length, then the fragment just
+* replaces the existing code.
+*/
+public int replacementLength = 0;
+

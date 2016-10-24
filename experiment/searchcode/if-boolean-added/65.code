@@ -1,0 +1,10 @@
+for (int i = 0; i < n; ++i) {
+left -= result[i];
+}
+if (left > 0) {
+boolean[] added = new boolean[n];
+while (left-- > 0) {
+int target = -1;
+for (int i = 0; i < n; ++i) {
+if (!added[i] &amp;&amp; (target == -1 || points[i] > points[target])) {
+

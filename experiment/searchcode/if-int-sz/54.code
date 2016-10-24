@@ -1,0 +1,9 @@
+public class WeightQuickUnionUF {
+private int[] id;
+private int[] sz;
+private int count;
+int i = find(p);
+int j = find(q);
+if (sz[i] < sz[j]) {
+id[i] = j; sz[j] += sz[i];
+

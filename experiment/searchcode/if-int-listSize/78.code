@@ -1,0 +1,7 @@
+/* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+Scanner in = new Scanner(System.in);
+int listSize = 0;
+listSize = in.nextInt();
+int[] integerList = new int[listSize];
+for(int i = 0 ; i < listSize ; i++){ // array full of inputed integers
+

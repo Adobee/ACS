@@ -1,0 +1,9 @@
+for(int i = 0; i < arr.length; i++){
+if(check(arr, cur, i)){
+int[] copy = (int[]) arr.clone();
+copy[cur] = i;
+public boolean check(int[] arr, int pos, int val){
+// row check
+for(int i = 0; i < pos; i++){
+if(arr[i] == val)
+

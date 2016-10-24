@@ -1,0 +1,8 @@
+@Override
+public void changePosition(int dx, int dy) {
+for (int i = 0; i < xArray.length; i++) {
+xArray[i] += dx;
+path.moveTo(xArray[0], yArray[0]);
+for (int i = 0; i < xArray.length; i++) {
+path.lineTo(xArray[i], yArray[i]);
+

@@ -1,0 +1,11 @@
+* @version 0.0 - 03/08/2013
+*/
+public class NotParser extends CommandParser {
+
+
+@Override
+public boolean canParse(String str) {
+public Command parse(String str) {
+if(!this.canParse(str)) return null;
+str = this.removeInitSpaces(str);
+

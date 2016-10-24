@@ -1,0 +1,8 @@
+private boolean activeWriter = false;
+private boolean lettingTrough = false;
+private boolean readerWhoLetWriterResumed = false;
+lock.lock();
+lettingTrough = false;
+activeWriter = false;
+if (lock.hasWaiters(readers)) {
+

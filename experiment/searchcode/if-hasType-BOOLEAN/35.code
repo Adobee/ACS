@@ -1,0 +1,10 @@
+import harmony.lod.model.impl.symbol.IRIImpl;
+
+public class HasType extends BasicProperty implements DerivableProperty {
+super(&quot;HasType&quot;, Slice.class, IRI.class);
+}
+
+@Override
+public boolean isDerivable(State state, Thing... things) {
+if (things[0] instanceof Frame) {
+

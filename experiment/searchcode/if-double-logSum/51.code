@@ -1,0 +1,12 @@
+* expConstants[autoSufficiency][3];
+
+double logsum = Math.log(utilSum);
+
+if (debug)
+* expConstants[autoSufficiency][3];
+
+// used for debugging
+double logsum1 = logsum;
+
+if (studentType >= 2)
+

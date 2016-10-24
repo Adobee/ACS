@@ -1,0 +1,20 @@
+public class UnionFind {
+
+
+int[] id;
+int[] sz;
+
+
+
+UnionFind(int N) {
+id = new int[N];
+sz = new int[N];
+int i = root(p);
+
+int j = root(q);
+
+if (i == j) return;
+
+if (sz[i] < sz[j]) {
+id[i] = j;
+

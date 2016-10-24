@@ -1,0 +1,11 @@
+continue;
+}
+
+if(obj instanceof Map){
+Comparable lastValue = (Comparable)ArithmeticExpression.execute(function.expression, (Map)result);
+if(currValue.compareTo(lastValue) > 0){
+result = obj;
+}
+}else if(obj instanceof Comparable){
+if(((Comparable)obj).compareTo((Comparable)result) > 0){
+

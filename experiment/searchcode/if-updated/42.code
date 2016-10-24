@@ -1,0 +1,10 @@
+@Override
+public void updateModule() {
+if (updated != null) updated.updateModule();
+}
+
+@Override
+public String getId() {
+if (updated != null) return updated.getId();
+return cached.getId();
+

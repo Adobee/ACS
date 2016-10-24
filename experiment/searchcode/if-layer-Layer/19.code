@@ -1,0 +1,15 @@
+int result[][] = new int[n][n];
+int layerTotal = n / 2;
+int num = 1;
+for (int layer = 0; layer < layerTotal; layer++) {
+result[i][layer] = num;
+num++;
+}
+}
+if (n % 2 == 1) {
+result[layerTotal][layerTotal] = num;
+}
+return result;
+}
+}
+

@@ -1,0 +1,6 @@
+MappedByteBuffer mappedBuffer = in.map(FileChannel.MapMode.READ_ONLY, 0, in.size());
+long numPages = in.size() / (long)PAGE_SIZE;
+if( (in.size() % PAGE_SIZE) > 0)  ++numPages;
+
+// we will &quot;touch&quot; the first byte of every page
+

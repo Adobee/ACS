@@ -1,0 +1,9 @@
+Null.check(path).ifAny(&quot;Path cannot be null&quot;);
+HttpUrl httpUrl = LOCAL_URL.resolve(path);
+return httpUrl == null
+: new MediaPartLinkResolver(httpUrl);
+}
+
+public MediaPartLinkResolver(HttpUrl httpUrl) {
+Null.check(httpUrl).ifAny(&quot;Http url cannot be null&quot;);
+

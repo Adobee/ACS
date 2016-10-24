@@ -1,0 +1,12 @@
+* Density and Similarity-based spatial clustering of applications with noise
+*/
+public class DSBSCAN
+{
+double MinLns, Eps;
+double minDir,maxDir;
+private boolean canExpend(TrajSegment t, TrajSegment M)
+{
+if(t.getClusterID() == -1 &amp;&amp; t.getNeiNum()>=MinLns)
+{
+//			double dis = DistanceFunctionModel.DFunction(t, M);
+

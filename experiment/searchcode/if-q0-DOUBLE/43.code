@@ -1,0 +1,10 @@
+for (int i = 0; i < N; i++) {
+double x0 = StdIn.readDouble();
+double y0 = StdIn.readDouble();
+double q0 = StdIn.readDouble();
+a[i] = new Charge(x0, y0, q0);
+}
+
+int size = 512;
+Picture pic = new Picture(size, size);
+

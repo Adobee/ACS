@@ -1,0 +1,5 @@
+protected RestPutStoredScriptAction(Settings settings, RestController controller, boolean registerDefaultHandlers) {
+super(settings);
+if (registerDefaultHandlers) {
+controller.registerHandler(POST, &quot;/_scripts/{lang}/{id}&quot;, this);
+

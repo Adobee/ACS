@@ -1,0 +1,9 @@
+public static int getPageLength(Object[] object,int pageSize){
+int length = object.length;
+if(length == 0)return 0;
+return (length<pageSize)?1:((length%pageSize==0)?(length/pageSize):(length/pageSize+1));
+public static int getPageLength(List<?> object,int pageSize){
+int length = object.toArray().length;
+if(length == 0)return 0;
+return (length<pageSize)?1:((length%pageSize==0)?(length/pageSize):(length/pageSize+1));
+

@@ -1,0 +1,7 @@
+* To avoid deeply hashed arrays, instead call add(Arrays.hashCode(array));
+*/
+private HashCoder addObject(Object value) {
+if (value == null) return addValue(0);
+if (value instanceof Boolean) return add(((Boolean) value).booleanValue());
+if (value instanceof Byte) return add(((Byte) value).byteValue());
+

@@ -1,0 +1,15 @@
+public static void setupComp(boolean done){
+setup = done;
+if(done){
+saveWriter.writer(&quot;setupcomp&quot;);
+}
+}
+
+
+public boolean saveCheck(String search) throws FileNotFoundException{
+Scanner reader = new Scanner(new File(saveFile));
+boolean save = false;
+while(reader.hasNext()){
+String temp = reader.next();
+if (temp.equalsIgnoreCase(search)){
+

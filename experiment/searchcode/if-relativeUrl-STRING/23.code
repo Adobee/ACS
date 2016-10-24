@@ -1,0 +1,12 @@
+linkInfo.setLinkWithoudParam(cssUrl);
+
+String relativeURL = null;
+
+if (ctx.getWebRoot() != null&amp;&amp; ctx.getWebRoot().length() < cssUrl.length()) {
+
+relativeURL = cssUrl.substring(ctx.getWebRoot().length());
+
+}
+
+String containingDir = null, fileName = null,relativePath=null;
+

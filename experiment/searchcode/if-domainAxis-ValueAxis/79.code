@@ -1,0 +1,8 @@
+import org.jfree.chart.axis.CategoryLabelPositions;
+import org.jfree.chart.axis.ValueAxis;
+import org.jfree.chart.plot.CategoryPlot;
+String releaseMode = Property.getProperty(&quot;release_mode&quot;);
+ChartContent content = null;
+if (&quot;false&quot;.equals(releaseMode)) {
+content = new TestContent();
+

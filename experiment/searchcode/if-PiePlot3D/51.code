@@ -1,0 +1,6 @@
+import org.jfree.chart.labels.PieSectionLabelGenerator;
+import org.jfree.chart.labels.StandardPieSectionLabelGenerator;
+import org.jfree.chart.plot.PiePlot3D;
+chart = ChartFactory.createPieChart3D(title, dataSet, true, true, false);
+PiePlot3D plot = (PiePlot3D) chart.getPlot();
+

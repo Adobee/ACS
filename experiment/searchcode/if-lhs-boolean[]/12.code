@@ -1,0 +1,9 @@
+private Expr lhs;
+private Expr rhs;
+
+public LogicalAndExpr(Expr lhs, Expr rhs) {
+//System.err.println( &quot;LogicalAndExpr l: &quot; + lhs );
+//System.err.println( &quot;R: &quot; + rhs );
+boolean lhsBool = Coercion.toBoolean( lhs.getValue() );
+if ( ! lhsBool ) {
+

@@ -1,0 +1,13 @@
+return TimePeriod.HOUR.minus(TimePeriod.HOUR.floor(now), 2);
+}
+
+@Override
+public Date minimumRange(Date then, Date now) {
+if (TimePeriod.MINUTE.diff(then, now) < 1) {
+//return TimePeriod.DAY.floor(now);
+}
+
+@Override
+public Date minimumRange(Date then, Date now) {
+if (TimePeriod.HOUR.diff(then, now) < 1) {
+

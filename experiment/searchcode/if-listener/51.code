@@ -1,0 +1,15 @@
+RequestPacketListener listener = mPacketListener;
+if (listener != null) {
+listener.onResult(sender);
+}
+}
+
+public void onSendError(RequestPacket sender) {
+
+RequestPacketListener listener = mPacketListener;
+if (listener != null) {
+listener.onSendError(sender);
+}
+}
+}
+

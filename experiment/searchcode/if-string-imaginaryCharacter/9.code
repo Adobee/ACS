@@ -1,0 +1,8 @@
+* {@code null}.
+* @throws NoDataException if {@code imaginaryCharacter} is an
+* empty string.
+* @throws NoDataException if {@code imaginaryCharacter} is an
+* empty string.
+*/
+public static ComplexFormat getInstance(String imaginaryCharacter, Locale locale)
+

@@ -1,0 +1,11 @@
+driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+boolean itemVisible = false;
+try {
+WebElement element = driver.findElementByClassName(className);
+catch (NoSuchElementException ex){}
+if (itemVisible) {
+fileManButton(className);
+}
+else {
+fileManButton(className + &quot; &quot; + &quot;checked&quot;);
+

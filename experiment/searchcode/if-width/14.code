@@ -1,0 +1,13 @@
+return this.bitWidth == 0;
+}
+
+public int getByteWidth() {
+if (this.bitWidth % 8 != 0) {
+throw new IllegalArgumentException();
+return new DataWidth(this.bitWidth + dataWidth.bitWidth);
+}
+
+public DataWidth times(final int n) {
+if (n < 0) {
+throw new IllegalArgumentException();
+

@@ -1,0 +1,8 @@
+calendar.setTime(date);// convert date object to calendar object
+int day = calendar.get(Calendar.DAY_OF_WEEK); // day (Sunday = 1)1 to 7
+if (day == 1) {
+calendar.add(Calendar.DAY_OF_WEEK, 1);// Saturday
+week[6] = calendar.getTime();
+} else if (day == 2) {
+calendar.add(Calendar.DAY_OF_WEEK, -1); // Sunday
+

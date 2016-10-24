@@ -1,0 +1,11 @@
+public static PowerUp generateRandomPowerUp() {
+double r = new Random().nextDouble();
+
+PowerUp up = null;
+
+// If we are a client: no power ups -> server handled
+r = new Random().nextDouble();
+
+if (r < Globals.EXTRA_POWER) {
+up = new ExtraPower();
+

@@ -1,0 +1,8 @@
+package cloudos.dns.service.mock;
+
+import org.cobbzilla.util.dns.DnsManager;
+import org.cobbzilla.util.dns.DnsRecord;
+final List<DnsRecord> matches = new ArrayList<>();
+for (DnsRecord r : database) {
+if (r.match(match)) matches.add(r);
+

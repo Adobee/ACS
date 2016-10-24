@@ -1,0 +1,17 @@
+package d3;
+final class pntle implements Comparable<pntle>{
+int clp;
+obj o;
+double z;
+public pntle(obj o0,double z0,int clp0){
+o=o0;
+z=z0;
+clp=clp0;
+}
+public int compareTo(pntle o){
+if(o.z==z)
+return 0;
+return z>o.z?-1:1;
+}
+}
+

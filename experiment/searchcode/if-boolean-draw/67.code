@@ -1,0 +1,8 @@
+public void render(Screen screen, float drawX, float drawY, Level level, int tileX, int tileY) {
+if (tileY == 0) {
+draw(screen, drawX, drawY, -1);
+return;
+}
+
+boolean u = shouldAttach(level.tiles, tileX, tileY + 1);
+

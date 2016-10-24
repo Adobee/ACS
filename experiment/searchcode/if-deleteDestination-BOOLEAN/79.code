@@ -1,0 +1,9 @@
+public void addConnection(ConnectionContext context, ConnectionInfo info)
+throws Exception {
+
+//if you are not authenticated, then it is not allowed
+assertAuthenticated(context);
+
+if (!context.getSecurityContext().isBrokerContext()) {
+//lets make sure the user at least has some permissions...
+

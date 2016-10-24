@@ -1,0 +1,8 @@
+int pivotIndex = -1, len = inputStr.length, min = 99999999, replaceIndex = -1;
+
+for (int i = len - 1; i >= 0; i--) {
+int d = inputStr[j] - inputStr[pivotIndex];
+if (d < min &amp;&amp; d > 0) {
+replaceIndex = j;
+min = d;
+

@@ -1,0 +1,7 @@
+* Aggregation for squared residuals - we are not using sum-of-squares!
+*/
+private double sumXX = 0., sumYY = 0., sumXY = 0.;
+public double getCorrelation() {
+if(!(sumXX > 0. &amp;&amp; sumYY > 0.)) {
+return (sumXX == sumYY) ? 1. : 0.;
+

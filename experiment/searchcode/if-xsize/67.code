@@ -1,0 +1,9 @@
+private double [] array;
+private int xSize;
+private int ySize;
+
+ImageArray(Band band){
+GdalUtils.register();
+synchronized (GdalUtils.lockObject) {
+xSize=band.getXSize();
+

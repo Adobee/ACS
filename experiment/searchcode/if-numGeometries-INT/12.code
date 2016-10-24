@@ -1,0 +1,9 @@
+public TriangulatedSurface(ArrayList<Triangle> triangle) {
+PointerVector vector = new PointerVector(triangle.size());
+
+for(int i = 0; i < triangle.size(); i++){
+public native void addTriangles(@ByRef TriangulatedSurface other);
+
+public native @Cast(&quot;size_t&quot;) int numGeometries();
+public native @ByRef Triangle geometryN(@Cast(&quot;size_t&quot;) int n);
+

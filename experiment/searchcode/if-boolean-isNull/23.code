@@ -1,0 +1,11 @@
+public int compareTo(Data args0) {
+if (args0 instanceof BooleanData) {
+BooleanData o = (BooleanData)args0;
+if (isNull() &amp;&amp; o.isNull()) {
+return new BooleanData(this.b &amp;&amp; o.b, this.type);
+}
+
+public BooleanData or(BooleanData o) {
+if (this.isNull() || o.isNull()) {
+return BooleanData.NULL;
+

@@ -1,0 +1,11 @@
+//  TODO  delete this when fully converted to Volley
+private HttpResponseCache mCache;
+
+
+@Override
+public void onCreate() {
+RestClientV3.initResponseCache(this);
+mCache = HttpResponseCache.getInstalled();
+
+if ( null == mCache )
+

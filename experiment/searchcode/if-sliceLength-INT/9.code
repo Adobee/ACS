@@ -1,0 +1,9 @@
+final public int length;
+
+public static Iterable<Slice> create(int totalLength, int sliceLength) {
+List<Slice> result = new ArrayList<>();
+for (int start = 0; start < totalLength; start += sliceLength) {
+int end = start + sliceLength;
+if (end > totalLength) {
+end = totalLength;
+

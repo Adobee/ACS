@@ -1,0 +1,8 @@
+final ValueAxis rangeAxis = plot.getRangeAxis();
+final ValueAxis domainAxis = plot.getDomainAxis();
+final double upperBound1 = rangeAxis.getUpperBound();
+final double upperBound2 = domainAxis.getUpperBound();
+if (upperBound1 > upperBound2)
+domainAxis.setUpperBound(upperBound1);
+if (upperBound2 > upperBound1)
+

@@ -1,0 +1,8 @@
+ClassAnalyzer groundAnalyzer = analyzer.getClassAnalyzer(GroundAnalyzer.class);
+if (groundAnalyzer.isFailed()) {
+return null;
+}
+
+FieldAnalyzer tilesAnalyzer = groundAnalyzer.getFieldAnalyzer(TilesAnalyzer.class);
+if (tilesAnalyzer.isFailed()) {
+

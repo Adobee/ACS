@@ -1,0 +1,8 @@
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+int d = (int) (x2 - x1);
+double dsq = Math.pow(d, 2);
+int x = (int) (r1sq - r2sq + dsq) / (2 * d);
+
+// int y = ((r1^2 - r3^2 + i^2 + j^2) / (2 j)) - (1 / j) x
+

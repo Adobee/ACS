@@ -1,0 +1,14 @@
+public static IMitchellClaimDBInterface getIMitchellClaimDBInterface(
+String implementationType) {
+{
+if (null == implementationType) {
+return null;
+} else if (implementationType.equals(&quot;JPA&quot;)) {
+return new MitchellClaimDBJPAImpl();
+} else {
+return null;
+}
+}
+}
+}
+

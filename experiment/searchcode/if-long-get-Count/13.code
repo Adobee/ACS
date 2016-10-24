@@ -1,0 +1,7 @@
+public double eval(long mover, long target, long empty) {
+double moverCount = OthelloStructure.getTokenCount(mover);
+double targetCount = OthelloStructure.getTokenCount(target);
+
+if(moverCount > targetCount)
+return  (moverCount) / (targetCount + moverCount);
+

@@ -1,0 +1,12 @@
+// TODO Auto-generated method stub
+
+// Program sorts inputed numbers in order from the lowest to the highest
+
+int numA = 154;
+int numB = 1790;
+int numC = 234;
+int numD = 240;
+int free = 0;
+
+if (numA > numB){
+

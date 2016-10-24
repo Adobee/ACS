@@ -1,0 +1,8 @@
+return null;
+}
+
+final TimeZone timeZone = TimeZone.getDefault();
+final int currentOffset = timeZone.getOffset( System.currentTimeMillis() );
+
+return Date.from( localDateTime.toInstant( ZoneOffset.ofTotalSeconds( currentOffset / 1000 ) ) );
+

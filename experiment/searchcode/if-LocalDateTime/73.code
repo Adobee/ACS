@@ -1,0 +1,6 @@
+import java.time.LocalDateTime;
+
+public class LocalDateTimeSerializer extends JsonSerializer<LocalDateTime> {
+@Override
+public void serialize(LocalDateTime localDateTime, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException, JsonProcessingException {
+

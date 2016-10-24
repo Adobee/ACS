@@ -1,0 +1,10 @@
+r0 = android.os.Build.VERSION.SDK_INT;	 Catch:{ Exception -> 0x0074 }
+r1 = 21;
+if (r0 < r1) goto L_0x002c;
+L_0x001e:
+r0 = r10.getWindow();	 Catch:{ Exception -> 0x0074 }
+r0.setStatusBarColor(r1);	 Catch:{ Exception -> 0x0074 }
+L_0x002c:
+r0 = 2130903181; // 0x7f03008d float:1.7413173E38 double:1.0528060563E-314;
+r10.setContentView(r0);
+

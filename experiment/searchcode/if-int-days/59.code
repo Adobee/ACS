@@ -1,0 +1,13 @@
+yr = Integer.parseInt(n.substring(6));
+
+if(validate()==false)
+dt = mn = yr = 0;
+}
+
+public void assign (int d, int m, int y)
+date addDays (int n)
+{
+int days;
+date d = new date();
+switch (mn)
+

@@ -1,0 +1,9 @@
+private Map<String, NumberFormat> numberFormats = new HashMap<>();
+
+public DateFormat getDateFormat(String format) {
+DateFormat result = dateFormats.get(format);
+public NumberFormat getNumberFormat(String format) {
+NumberFormat result = numberFormats.get(format);
+if (result == null) {
+result = createNumberFormat(format);
+

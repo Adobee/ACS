@@ -1,0 +1,14 @@
+public static MarkIssued oper = null;
+
+private MarkIssued() {}
+
+@Override
+public void operate(ResultSet row) throws SQLException {
+public static MarkIssued getOper() {
+if (oper == null) {
+oper = new MarkIssued();
+}
+return oper;
+}
+}
+

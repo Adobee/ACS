@@ -1,0 +1,10 @@
+import entities.AbstractMoveableEntity;
+
+public class CollisionLine {
+
+double[] v1 = new double[2];
+double[] v2 = new double[2];
+collisionArea.setBounds((int) other.v1[0], (int) other.v1[1], (int) (other.v2[0] - other.v1[0]), (int) (other.v2[1] - other.v1[1]));
+double[] vI = getIntersection(other);
+boolean inside = collisionArea.contains(vI[0], vI[1]);
+

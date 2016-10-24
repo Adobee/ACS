@@ -1,0 +1,12 @@
+import org.jfree.data.general.DatasetChangeEvent;
+import org.jfree.data.general.DatasetChangeListener;
+import org.jfree.data.xy.TableXYDataset;
+
+public class XYDatasetTableModel
+this.fireTableDataChanged();
+}
+
+@Override
+public int getRowCount() {
+if (this.model != null) return this.model.getItemCount();
+

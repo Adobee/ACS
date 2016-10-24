@@ -1,0 +1,6 @@
+public void clearExpired(long expiresAt) {
+while (buckets.size() > 0 &amp;&amp; buckets.peekFirst().getExpiredAt() < expiresAt) {
+private void add(long expiresAt, T key) {
+long timeUnit = getTimeUnit(expiresAt);
+Node<T> newNode = new Node<>(key, null, expiresAt);
+

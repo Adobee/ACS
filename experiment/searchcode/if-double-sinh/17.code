@@ -1,0 +1,10 @@
+public final int getPrecedencePriority() {
+return Sinh.PRECEDENCE_PRIORITY;
+}
+
+/** {@inheritDoc} */
+@Override
+public final double computeAsDouble(final double x1) {
+if (MathLibraries.HAS_FASTMATH) {
+return Sinh.__fastMathSinh(x1);
+

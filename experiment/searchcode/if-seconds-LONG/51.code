@@ -1,0 +1,8 @@
+private static String getTimeElapsed(long start, long finish) {
+double seconds = (finish - start) * 0.000000001;
+String time = seconds + &quot; seconds&quot;;
+if (seconds > 60) {
+time = minutes + &quot; minutes &quot; + seconds + &quot; seconds&quot;;
+if (minutes == 1) {
+time = minutes + &quot; minute &quot; + seconds + &quot; seconds&quot;;
+

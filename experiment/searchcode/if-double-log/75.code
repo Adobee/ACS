@@ -1,0 +1,13 @@
+package semiring;
+
+public class LogSemiring implements Semiring {
+
+@Override
+public double zero() {
+return 0.0;
+}
+
+@Override
+public double times(double x, double y) {
+if (x == Double.NEGATIVE_INFINITY || y == Double.NEGATIVE_INFINITY) {
+

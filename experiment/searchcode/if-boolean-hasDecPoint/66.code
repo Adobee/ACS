@@ -1,0 +1,11 @@
+throw new IllegalArgumentException(&quot;Value [&quot; + value + &quot;] is of type [&quot; + value.getClass().getName() + &quot;] and cannot be converted to required type [&quot; + requiredType.getName() + &quot;]&quot;);
+}
+}
+
+private static boolean isNumberType(Class<?> clazz) {
+if (Number.class.isAssignableFrom(clazz)) {
+* @param str the <code>String</code> to check
+* @return <code>true</code> if the string is a correctly formatted number
+*/
+public static boolean isNumber(String str) {
+

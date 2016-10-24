@@ -1,0 +1,12 @@
+private final Object[] dataArr;
+private int writeP; //写指针
+private int readP; //读指针
+
+private boolean isSingle=true; //是否仅一个生产者和一个消费者
+public ArrayQueue(boolean isSingle) {
+this(_QUEUE_CAPACITY, isSingle);
+}
+
+/**
+* 构造方法
+

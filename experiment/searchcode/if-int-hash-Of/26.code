@@ -1,0 +1,14 @@
+return (hash &amp; 0x7FFFFFFF);
+}
+
+/* End Of RS Hash Function */
+
+/**
+* JS算法
+*/
+public static int JSHash(String str) {
+hash = (hash << 4) + str.charAt(i);
+if ((x = (int) (hash &amp; 0xF0000000L)) != 0) {
+hash ^= (x >> 24);
+hash &amp;= ~x;
+

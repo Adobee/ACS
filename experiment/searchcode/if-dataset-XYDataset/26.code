@@ -1,0 +1,7 @@
+public String generateToolTip(XYDataset xyDataset, int series, int item)
+{
+//String for the wind direction
+SimpleDateFormat sdf = new SimpleDateFormat(&quot;MM/dd/yy HH:mm&quot;);
+Number time = xyDataset.getX(series, item);
+windDirection = checkWindDirection((int)xyDataset.getYValue(9, item));
+

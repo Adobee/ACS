@@ -1,0 +1,12 @@
+String target = node.contains(&quot;/&quot;) ? node.substring(node.lastIndexOf(&quot;/&quot;) + 1) : node;
+if (target.length() <= 3){
+continue;
+}
+int index = output.indexOf(target);
+while (index >= 0) {
+if ((output.charAt(i + 1) + &quot;&quot;).contains(quote)) {
+i = output.indexOf(quote, i + 2);
+continue;
+}
+int quoteLen = output.substring(i + 1).indexOf(quote) + 1;
+

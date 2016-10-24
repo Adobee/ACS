@@ -1,0 +1,9 @@
+* Represents a Class Field in a UsageGraph.
+*/
+@SuppressWarnings(&quot;PMD.OverrideBothEqualsAndHashcode&quot;)
+public class FieldNode extends MemberNode<FieldNode, Field> {
+
+private WeakReference<Field> fieldReference;
+
+public FieldNode(ClassNode classNode, String name, String desc) {
+

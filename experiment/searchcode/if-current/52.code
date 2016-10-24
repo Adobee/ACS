@@ -1,0 +1,11 @@
+public Member(int x, int y, Direction direction, Pitch board) throws Exception {
+this.setBoard(board);
+if (board.isValidPosition(x, y)) {
+this.setCurrentX(x);
+this.setCurrentY(y);
+public boolean move() throws Exception {
+
+if (currentDirection == Direction.N) {
+
+if (board.isValidPosition(currentX, (currentY + 1))){
+

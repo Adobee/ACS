@@ -1,0 +1,11 @@
+boolean moveDown = value > 0;
+for (int i = 0; i < Math.abs(value); i++) {
+walls.forEach(wall -> {
+if (this.getBoundsInParent().intersects(wall.getBoundsInParent())) {
+setTranslateY(getTranslateY() + 1);
+}
+}
+});
+if (getTranslateY() < 0) setTranslateY(0);
+if (getTranslateY() > 572) setTranslateY(572);
+

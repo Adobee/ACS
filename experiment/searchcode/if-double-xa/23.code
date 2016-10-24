@@ -1,0 +1,13 @@
+public static double power(double a, int b){
+if(b == 0){
+if(a == 0.0){
+System.out.println(&quot;Error&quot;);
+return 0.01;
+}
+else
+return 1.0;
+}else if(b == 1)
+return a;
+else if(b > 1){
+double xa = a;
+

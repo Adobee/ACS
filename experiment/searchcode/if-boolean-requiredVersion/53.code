@@ -1,0 +1,13 @@
+* {@inheritDoc}
+*/
+@Override
+public boolean accepts(URI uri, DataCategory category) {
+if (super.accepts(uri, category)) {
+logger.warn(&quot;Cannot parse the session file&#39;s version \&quot;&quot; + version + &quot;\&quot;&quot;, ex);
+}
+
+if (requiredVersion != null) {
+String[] reqArr = requiredVersion.split(&quot;\\.&quot;);
+
+int reqMajorVer = 0;
+

@@ -1,0 +1,9 @@
+* This effect is made to launch its children with temporality. It can delay the launch, or launch many times the same child effect.
+*/
+public class PersistentEffect extends Effect {
+protected final int periodCount;
+protected final List<Double> durations;
+private double currentPeriodDuration;
+
+public PersistentEffect(int periodCount, List<Double> durations, List<Double> ranges, List<EffectBuilder> effectBuilders, EffectSource source,
+

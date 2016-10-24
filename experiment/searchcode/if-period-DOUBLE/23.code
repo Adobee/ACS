@@ -1,0 +1,13 @@
+* the day in the period could be 1-5
+*/
+private Integer day;
+
+private Double inFloat;
+int day2 = (int) MyMath.round(WORKDAYS * (period - this.period), 0,BigDecimal.ROUND_HALF_UP);
+Double dayDouble = (period - this.period);
+
+if(dayDouble >= 0.8){
+day2 = 5;
+}
+this.setDay(day2);
+

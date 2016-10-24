@@ -1,0 +1,12 @@
+public interface Listener{
+public void onStateChange(boolean state);
+}
+
+private Listener mListener=null;
+
+public void registerListener(Listener listener){
+mListener=listener;
+}
+
+private boolean isOnBackground;
+

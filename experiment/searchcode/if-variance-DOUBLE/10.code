@@ -1,0 +1,7 @@
+public NormalDistribution(double mean, double variance) {
+if (variance < 0.0) {
+throw new IllegalArgumentException(&quot;Variance must be non-negative. Given variance: &quot; + variance);
+public NormalDistribution(double[] mean, double[][] variance) {
+if (variance[0][0] < 0.0) {
+throw new IllegalArgumentException(&quot;Variance must be non-negative. Given variance: &quot; + variance);
+

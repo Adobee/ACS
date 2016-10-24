@@ -1,0 +1,10 @@
+import org.openmetadata.nesstar.task.IncrementalUpdate;
+
+public class Harvester {
+
+private static Log log = LogFactory.getLog(Harvester.class);
+//Decide to do a full harvest or incremental
+boolean performIncrementalUpdate = new File(options.getOutputFolder()).exists();
+
+if(!performIncrementalUpdate){
+

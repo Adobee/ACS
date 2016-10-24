@@ -1,0 +1,20 @@
+* @author myc
+*
+*/
+public class DotFactory {
+
+public DotFactory() {
+
+}
+
+public Dot makeDot(Context context, int kind, int x, int y) {
+int col = 0xff000000 | red << 16 | green << 8 | blue;
+
+Dot dot = null;
+
+if (Math.random() < 0.5) {
+
+switch (kind % 6 + 1) {
+case 1:
+dot = new DotOne(context, col, x, y);
+

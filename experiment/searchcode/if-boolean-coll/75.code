@@ -1,0 +1,7 @@
+public List<Object> selComment(int cityId,int pageNo, int pageSize)
+{
+String hql = &quot;&quot;;
+if(cityId == 0)
+{
+hql=&quot;select coll.id,coll.addtime,coll.user,sell.titile,coll.conent from Comment coll,Seller sell where coll.sellerId = sell.id order by coll.addtime desc&quot;;
+

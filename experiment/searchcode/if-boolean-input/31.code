@@ -1,0 +1,9 @@
+import model.configuration.input.BooleanConfigurationInput;
+import model.configuration.input.ConfigurationInput;
+super(title, description, key, value);
+}
+
+@Override
+public ConfigurationInput<Boolean> getInput() {
+return new BooleanConfigurationInput(getValue(), getDescription());
+

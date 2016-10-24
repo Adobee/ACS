@@ -1,0 +1,14 @@
+package um.robots;
+
+public class RobotMeasure {
+
+double val;
+
+double minVal;
+
+double minOkVal;
+
+
+public RobotMeasure(double val,	double minVal,	double minOkVal) {
+this.val = val;
+

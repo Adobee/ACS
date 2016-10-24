@@ -1,0 +1,8 @@
+EvaluatorExpressionProperty oldUrlRewriteRuleCondition = urlRewriteRuleCondition;
+urlRewriteRuleCondition = newUrlRewriteRuleCondition;
+if (eNotificationRequired()) {
+ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EsbPackage.URL_REWRITE_RULE__URL_REWRITE_RULE_CONDITION, oldUrlRewriteRuleCondition, newUrlRewriteRuleCondition);
+if (msgs == null) msgs = notification; else msgs.add(notification);
+}
+return msgs;
+

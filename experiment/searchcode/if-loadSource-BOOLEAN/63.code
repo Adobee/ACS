@@ -1,0 +1,11 @@
+* @see org.eclipse.datatools.connectivity.sqm.core.rte.jdbc.JDBCView#refresh()
+*/
+public void refresh() {
+synchronized (SOURCE_LOCK) {
+if (sourceLoaded.booleanValue()) {
+* @see org.eclipse.datatools.enablement.ingres.models.ingressqlmodel.impl.IngresViewTableImpl#getSource()
+*/
+public Source getSource() {
+synchronized (SOURCE_LOCK) {
+if (!sourceLoaded.booleanValue()) {
+

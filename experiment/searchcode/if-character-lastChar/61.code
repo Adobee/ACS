@@ -1,0 +1,8 @@
+while (lastChar != &#39;\n&#39;) readChar();
+readChar();
+}
+} else if (Character.isLetter(lastChar)) {
+do readChar();
+while (Character.isLetter(lastChar));
+if (repBuilder.toString().equals(&quot;enum&quot;))
+

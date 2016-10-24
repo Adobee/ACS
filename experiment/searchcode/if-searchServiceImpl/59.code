@@ -1,0 +1,7 @@
+import org.olat.search.service.SearchServiceImpl;
+import org.quartz.InterruptableJob;
+import org.quartz.JobExecutionContext;
+log.info(&quot;Search indexer started via cronjob.&quot;);
+SearchService searchService = SearchServiceFactory.getService();
+if(searchService instanceof SearchServiceImpl) {
+

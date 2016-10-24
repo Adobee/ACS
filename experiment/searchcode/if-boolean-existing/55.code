@@ -1,0 +1,8 @@
+public class UniqueItemStackSet extends ItemStackSet {
+@Override
+public boolean add(final ItemStack e) {
+return e != null &amp;&amp; this.getExisting(e) == null &amp;&amp; this.itemStacks.add(e.copy());
+public boolean remove(final Object o) {
+if (this.contains(o)) {
+final ItemStack r = (ItemStack) o;
+

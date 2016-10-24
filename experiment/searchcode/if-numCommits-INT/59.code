@@ -1,0 +1,7 @@
+public static Matrix2D ExtractCommitSubMatrix(Matrix2D _relationalMatrix,
+int startCommit, int numCommits) throws InvalidMatrix{
+for (int j = 0; j < _relationalMatrixDesc.getNumCols(); j++){
+
+for (int i = 0; i < numCommits; i++){
+if (_relationalMatrix.GetElement(startCommit + i, j) > 0){
+

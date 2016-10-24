@@ -1,0 +1,6 @@
+WildcardType w = (WildcardType)t;
+if (w.isSuperBound())
+return w.bound == null ? syms.objectType : w.bound.bound;
+public Boolean visitWildcardType(WildcardType t, Type s) {
+if (s.tag >= firstPartialTag)
+

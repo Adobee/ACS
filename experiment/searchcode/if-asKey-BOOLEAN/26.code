@@ -1,0 +1,5 @@
+public class StringTypeValidator implements Validator {
+private boolean shouldIgnore(SchemaNode node) {
+Set<Part> ignoreParts = Util.asSet(Part.asKey(&quot;properties&quot;), Part.asKey(&quot;type&quot;));
+return !node.getPointedNode().getPointer().isEmpty() &amp;&amp; ignoreParts.contains(node.getPointedNode().getPointer().getHead());
+

@@ -1,0 +1,7 @@
+Collection<String> disVars = new LinkedList<String>(), undisVars = new LinkedList<String>();
+for (String var: getAllVariables(queryText))
+if (var.startsWith(&quot;?&quot;)) disVars.add(var.substring(1));
+int whereIndex = uppercase.indexOf(&quot;WHERE&quot;);
+String selectClause = queryText.substring(selectIndex + 6, whereIndex);
+if (selectClause.contains(&quot;*&quot;)) answerVariables = distinguishedVariables;
+

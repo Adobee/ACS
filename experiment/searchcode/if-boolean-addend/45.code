@@ -1,0 +1,9 @@
+public static boolean validateCardNumber(String cardNumber) throws NumberFormatException {
+int sum = 0, digit, addend = 0;
+boolean doubled = false;
+for (int i = cardNumber.length() - 1; i >= 0; i--) {
+digit = Integer.parseInt(cardNumber.substring(i, i + 1));
+if (doubled) {
+addend = digit * 2;
+if (addend > 9) {
+

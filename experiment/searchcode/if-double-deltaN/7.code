@@ -1,0 +1,11 @@
+return false;
+}
+if (Double.compare(that.M0, this.M0) != 0) {
+return false;
+}
+if (Double.compare(that.deltan, this.deltan) != 0) {
+return false;
+}
+if (Double.compare(that.e, this.e) != 0) {
+return false;
+

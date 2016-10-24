@@ -1,0 +1,14 @@
+public class QuickUnionWeight
+{
+private int[] id;
+private int[] sz;
+
+public QuickUnionWeight(int N)
+{
+id = new int[N];
+int i = root(p);
+int j = root(q);
+
+if (i == j) return;
+if (sz[i] < sz[j])
+

@@ -1,0 +1,8 @@
+public static ChangeFreq fromMaxAge(int maxAge) {
+if (maxAge < 0)
+return NEVER;
+if (maxAge == 0)
+return ALWAYS;
+if (maxAge <= HOURLY.getTimeout())
+return HOURLY;
+

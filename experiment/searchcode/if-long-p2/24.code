@@ -1,0 +1,16 @@
+int n = Integer.parseInt(x[0]);
+int c = 0;
+int[] pc = new int[n];
+int[] p2 = new int[n];
+if(n<=1){
+System.out.println(2);
+return;
+}
+c++;
+pc[0] = 2;
+p2[0] = 2;
+int cn = 1;
+long g = 2;
+while(c<n){
+cn+=2;
+

@@ -1,0 +1,16 @@
+implements Transformer
+{
+
+private String regexp;
+
+private String replacement;
+
+@Override
+public String transform(String value)
+{
+if(value == null)
+{
+return null;
+}
+return value.replaceAll(regexp, replacement);
+

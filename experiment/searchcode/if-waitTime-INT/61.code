@@ -1,0 +1,16 @@
+startTime = Panel.time;
+waitTime = time;
+}
+
+public int run(Entity e) {
+if (state != RUNNING)
+startTime = Panel.time;
+
+if (Panel.time - startTime > waitTime)
+return succeed();
+
+return running();
+}
+
+}
+

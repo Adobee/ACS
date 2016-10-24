@@ -1,0 +1,6 @@
+protected void _subtractRowFrom( int minuendRow, int subtrahendRow ) {
+double coefficient = _getComponentOf( minuendRow, subtrahendRow );
+
+for ( int col = 0; col < _getNumOfColumn(); col++ ) {
+this.m_[ minuendRow ][ col ] -= coefficient * this.m_[ subtrahendRow ][ col ];
+

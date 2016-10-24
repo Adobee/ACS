@@ -1,0 +1,10 @@
+public static void shutdown(final ExecutorService executorService){
+executorService.shutdown();
+try {
+int timeToWait = 30;
+if (!executorService.awaitTermination(timeToWait, TimeUnit.SECONDS)) {
+System.out.println(&quot;Trying to shutdown task: &quot;+runnable);
+}
+}
+if (!executorService.awaitTermination(timeToWait, TimeUnit.SECONDS)) {
+

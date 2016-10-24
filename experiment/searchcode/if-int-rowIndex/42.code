@@ -1,0 +1,12 @@
+private static final long serialVersionUID = 1L;
+
+@Override
+public void setRowIndex(int rowIndex) {
+
+/*
+* The following is in ancestor (LazyDataModel):
+* this.rowIndex = rowIndex == -1 ? rowIndex : (rowIndex % pageSize);
+*/
+if (rowIndex == -1 || getPageSize() == 0) {
+super.setRowIndex(-1);
+

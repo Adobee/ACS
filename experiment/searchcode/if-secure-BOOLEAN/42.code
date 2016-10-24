@@ -1,0 +1,18 @@
+// Register as normal but if server supports SSL flag that the clients
+// does as well
+public class LoginSecureMessage extends Message
+public String getSecret()
+{
+return secret;
+}
+
+public Boolean getSecure()
+{
+if(secure == null)
+{
+return false;
+}
+return secure;
+}
+}
+

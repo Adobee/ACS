@@ -1,0 +1,8 @@
+public void computeDerivatives(final double t, final double[] y, final double[] yDot)
+throws DerivativeException {
+if (++evaluations > maxEvaluations) {
+throws DerivativeException, IntegratorException {
+
+try {
+double previousT = interpolator.getGlobalPreviousTime();
+

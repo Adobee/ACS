@@ -1,0 +1,11 @@
+public Girokonto(int nummer, double limit){
+super(nummer);
+if ( limit < 0)
+limit = -limit;
+this.limit = limit ; // Parameter this zeigt auf das Objekt fuer das die Methode aufgerufen wird
+// Methode fuer schreibenden Zugri ueberprueft ob limit postiv ist
+public void setLimit(double limit){
+if ( limit < 0)
+limit= -limit;
+this.limit = limit;
+

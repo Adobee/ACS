@@ -1,0 +1,11 @@
+public void update(Context context, Company oldValue, Company newValue) {
+
+if (newValue.isSaved()) {
+return;
+}
+newValue.setSaved(true);
+
+if (newValue.getObjectId() != null
+&amp;&amp; !newValue.getObjectId().equals(oldValue.getObjectId())) {
+oldValue.setObjectId(newValue.getObjectId());
+

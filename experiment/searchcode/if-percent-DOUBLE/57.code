@@ -1,0 +1,10 @@
+public class PercentAction extends BaseAction {
+
+public void getExcelPercent() {
+HttpSession session = getSession();
+Double percent = (Double) session.getAttribute(&quot;percent&quot;);
+if (percent == null) {
+percent = 0.0;
+}
+percent *= 100;
+

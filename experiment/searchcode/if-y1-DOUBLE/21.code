@@ -1,0 +1,17 @@
+public static double distSqr2(double x1, double y1, double x2, double y2)
+{
+x1 -= x2;
+y1 -= y2;
+return x1 * x1 + y1 * y1;
+}
+
+public static double dist2(double x1, double y1, double x2, double y2)
+public static double dot3(double x1, double y1, double z1, double x2, double y2, double z2)
+{
+return x1 * x2 + y1 * y2 + z1 * z2;
+}
+
+public static double dot(double[] v1, double[] v2)
+{
+if (v1 == null) throw new NullPointerException(&quot;vec 1&quot;);
+

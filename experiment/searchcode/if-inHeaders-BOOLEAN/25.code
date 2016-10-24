@@ -1,0 +1,11 @@
+private boolean inHeaders = false;
+
+public Table startHeaders() {
+inHeaders = true;
+currentCells = new ArrayList<Cell>(headers.size());
+return this;
+}
+
+public Table endRow(boolean check) {
+if (currentCells == null) {
+

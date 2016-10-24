@@ -1,0 +1,6 @@
+public static boolean isInTriangle(POINT A, POINT B, POINT C, POINT P) {
+// ľăśźĂťÓĐÎĘĚâ
+if (checkPoint(A) &amp;&amp; checkPoint(B) &amp;&amp; checkPoint(C)) {
+double[] v0 = {C.x - A.x, C.y - A.y};
+double[] v1 = {B.x - A.x, B.y - A.y};
+

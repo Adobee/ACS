@@ -1,0 +1,9 @@
+int affectedRows = 0;
+
+if (setType != null &amp;&amp; !setType.isEmpty()) {
+if (&quot;ON&quot;.equalsIgnoreCase(setType)) {
+UMonitor.getInstance().setIsSinkUp(true);
+affectedRows = 1;
+} else if (&quot;OFF&quot;.equalsIgnoreCase(setType)) {
+UMonitor.getInstance().setIsSinkUp(false);
+

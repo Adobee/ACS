@@ -1,0 +1,11 @@
+private FillType fillType;
+private int price;
+private boolean active;
+
+public Portal(String tag, Location toPoint, ArrayList<Volume> fromPoints, int price, FillType fillType, boolean active) {
+public void setFillType(FillType fillType) {
+if (this.isActive())
+{
+this.defillBlocks();
+this.fillType = fillType;
+

@@ -1,0 +1,9 @@
+* @param cacheName
+*/
+public void createCache(String cacheName, boolean autoCreate) {
+cacheManager.addCache(cacheName);
+net.sf.ehcache.Cache cache = cacheManager.getCache(cacheName);
+if(cache==null) {
+cacheManager.addCache(cacheName);
+System.out.println(&quot;添加缓存:&quot;+cacheName);
+

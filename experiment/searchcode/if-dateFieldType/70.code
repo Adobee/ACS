@@ -1,0 +1,7 @@
+public boolean equals(Object o) {
+if (!super.equals(o)) return false;
+DateFieldType that = (DateFieldType) o;
+super.checkCompatibility(fieldType, conflicts, strict);
+if (strict) {
+DateFieldType other = (DateFieldType)fieldType;
+

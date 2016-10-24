@@ -1,0 +1,12 @@
+public double calulateInValue(List<Double> delta){
+
+if(!wasThereProfit(delta)){
+throw new ProfitException(&quot;There was no profit fot this signal&quot;);
+return findMaxProfit(delta);
+}
+
+private boolean wasThereProfit(List<Double> delta){
+
+if( findMaxProfit(delta) > 0.0 ){
+return true;
+

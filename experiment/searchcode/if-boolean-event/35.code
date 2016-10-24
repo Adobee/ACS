@@ -1,0 +1,17 @@
+this.handlers.addAll(Arrays.asList(handlers));
+}
+
+@Override
+public Boolean handle(E event) {
+// if any filter allows the event, we should let it pass
+for (EventHandler<E, Boolean> handler : handlers) {
+Boolean response = handler.handle(event);
+if (response == null || !response) {
+return false;
+}
+}
+return true;
+}
+
+}
+

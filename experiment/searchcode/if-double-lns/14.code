@@ -1,0 +1,9 @@
+if (line < 0) line = 0;
+if (line >= lns.length-1) line=lns.length-2;
+moveSelection(line);
+callCompletionGoto();
+// do nothing for one line selection
+if (lns.length-1 == 1) return;
+if (nsel<0) nsel = 0;
+if (nsel>lns.length-2) nsel = lns.length-2;
+

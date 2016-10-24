@@ -1,0 +1,6 @@
+class QuickSort4 {
+public static void sort(int[] array, int left, int right) {
+// not if(left < right) here
+int index = partition(array, left, right);
+if(left < index - 1) sort(array, left, index - 1);
+

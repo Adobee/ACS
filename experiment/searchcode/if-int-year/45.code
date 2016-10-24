@@ -1,0 +1,8 @@
+public class LeapYear {
+public static int year = 2000;
+public static void main(String[] args) {
+//int year = 2100;
+if (year % 400 == 0){
+if (year == 0)
+System.out.println(year + &quot; is not a leap year.&quot;);
+

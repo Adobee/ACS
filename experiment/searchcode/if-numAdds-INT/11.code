@@ -1,0 +1,8 @@
+Counter counter = new Counter();
+int numThreads = 10;
+int numAdds = 15;
+for (int i = 0; i < numThreads; i++) {
+Thread.sleep(100);  // pauses main for 100 msec to make sure all threads have finished before we getCount
+int expectedCount = numThreads * numAdds;
+int actualCount = counter.getCount();
+

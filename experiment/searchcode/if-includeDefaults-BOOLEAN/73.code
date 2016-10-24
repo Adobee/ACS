@@ -1,0 +1,10 @@
+public Bus createBus(String cfgFile, boolean includeDefaults) {
+if (cfgFile == null) {
+return createBus((String[])null, includeDefaults);
+return createBus(urls, defaultBusNotExists());
+}
+
+public Bus createBus(URL url, boolean includeDefaults) {
+if (url == null) {
+return createBus((URL[])null, includeDefaults);
+

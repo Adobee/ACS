@@ -1,0 +1,8 @@
+private final InputStream inputStream;
+private int bytesPastEnd;
+
+private JpegClosedInputStream(final InputStream iInputStream) {
+int buffer = inputStream.read();
+if (buffer == -1) {
+if (bytesPastEnd > 0) {
+

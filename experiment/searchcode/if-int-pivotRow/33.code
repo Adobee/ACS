@@ -1,0 +1,17 @@
+private static class PivLenMsg extends IntegerMessage {
+
+private Double [] pivotRow;
+
+public PivLenMsg(int pivot, Double [] pivotRow) {
+super(pivot, new MessageType(&quot;piv_len&quot;, true, java.awt.Color.red));
+return &quot;PivLenMsg [pivot=&quot;+getData()+&quot;, pivotRow=&quot; + Arrays.toString(pivotRow) + &quot;]&quot;;
+}
+
+}
+
+
+@Override
+public void init() {
+int n = getNetSize();
+len = new Double[n];
+

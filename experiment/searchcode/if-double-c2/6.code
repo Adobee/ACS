@@ -1,0 +1,8 @@
+public static Complejo suma(Complejo c1, Complejo c2) {
+double x = c1.real + c2.real;
+double y = c1.imag + c2.imag;
+return new Complejo(x, y);
+public static Complejo resta(Complejo c1, Complejo c2) {
+double x = c1.real - c2.real;
+double y = c1.imag - c2.imag;
+

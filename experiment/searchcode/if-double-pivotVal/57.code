@@ -1,0 +1,8 @@
+for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) {
+final double entry = tableau.getEntry(0, i);
+if (MathUtils.compareTo(entry, minValue, maxUlps) < 0) {
+final double rhs = tableau.getEntry(i, tableau.getWidth() - 1);
+final double entry = tableau.getEntry(i, col);
+
+if (MathUtils.compareTo(entry, 0d, maxUlps) > 0) {
+

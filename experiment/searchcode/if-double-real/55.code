@@ -1,0 +1,5 @@
+public static int colourCoordinates(double x, double y, double realMin, double realMax, double width, double imagMin, double imagMax, double height)
+{
+double real = convertXorY(x, realMin, realMax, width);
+double imaginary = convertXorY(y, imagMin, imagMax, height);
+

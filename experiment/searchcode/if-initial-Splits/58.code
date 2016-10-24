@@ -1,0 +1,18 @@
+setScale((float) (0.5 + Math.pow((double) splitsLeft / SPLITS, 2)));
+}
+
+@Override
+public void died() {
+if(splitsLeft > 0) {
+
+Splitter newSplitter1 = (Splitter) enemyInput.getNewEnemy(this.getClass().getSimpleName());
+return (splitsLeft == 0) ? 30 : 0;
+}
+
+@Override
+public void setInitialAngle(double angle) {
+this.angle = angle;
+}
+
+}
+

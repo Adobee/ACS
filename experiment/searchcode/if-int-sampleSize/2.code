@@ -1,0 +1,11 @@
+for (int i = 0; i < sampleSize; i++) {
+//ravg1 += R.get(i);
+pavg1 += P.get(i);
+//yavg1 += Y.get(i);
+//yavg1 /= sampleSize;
+
+//get the average of the last few
+int hi = R.size() - 1;
+int lo = R.size() - sampleSize;
+for (int i = hi; i >= lo; i--) {
+

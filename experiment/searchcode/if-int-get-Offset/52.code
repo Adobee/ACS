@@ -1,0 +1,11 @@
+public class PreviousPageInformation extends PageInformation {
+
+public PreviousPageInformation(int used_offset, int used_limit, int total_size)
+public Integer getOffset()
+{
+Integer offset = super.getOffset();
+if(offset == null) {
+offset = 0;
+}
+if(getLimit() != null) {
+

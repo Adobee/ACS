@@ -1,0 +1,15 @@
+int frameIndex = 0;
+int frame = 0;
+while(frame < 10)
+{
+if (isStrike(frameIndex)) {
+score = score + 10 + strikeBonus(frameIndex);
+frameIndex = frameIndex + 2;
+}
+frame++;
+}
+return score;
+}
+
+public boolean isStrike(int frameIndex) {
+

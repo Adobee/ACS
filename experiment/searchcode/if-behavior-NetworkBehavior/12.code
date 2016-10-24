@@ -1,0 +1,10 @@
+import retrofit2.mock.BehaviorDelegate;
+import retrofit2.mock.MockRetrofit;
+import retrofit2.mock.NetworkBehavior;
+
+@Module
+public class TestLoginApiModule {
+public  LoginApiInterface providesLoginInterface(Retrofit retrofit){
+NetworkBehavior behavior = NetworkBehavior.create();
+MockRetrofit mockRetrofit = new MockRetrofit.Builder(retrofit)
+

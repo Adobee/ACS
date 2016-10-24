@@ -1,0 +1,10 @@
+public double distance(Circle c2){ // dist b/w centers
+return ( Math.sqrt((x-c2.x)*(x-c2.x) + (y-c2.y)*(y-c2.y)) );
+}
+
+public boolean isOutside(Circle c2){
+return (this.distance(c2) >= this.r + c2.r);
+}
+
+public boolean isInside(Circle c2){
+

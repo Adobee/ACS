@@ -1,0 +1,15 @@
+* @param lhs
+* @param rhs
+* @return
+*/
+@Override
+public double add(double lhs, double rhs) {
+* Multiplies two numbers together
+*
+* @param lhs
+* @param rhs
+* @return
+*/
+@Override
+public double multiply(double lhs, double rhs) {
+

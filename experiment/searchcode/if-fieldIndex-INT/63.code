@@ -1,0 +1,9 @@
+this.fieldName = fieldName;
+this.cursor = cursor;
+}
+
+protected int columnIndex(){
+if( fieldIndex == -2 ){
+fieldIndex = cursor.getColumnIndex(fieldName);
+if( fieldIndex == -1 ){
+

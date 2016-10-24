@@ -1,0 +1,10 @@
+new Object[] { new Integer(maxCostEval) });
+}
+
+cost = 0;
+for (int i = 0, index = 0; i < rows; i++, index += cols) {
+int m = problem.getMeasurements().length;
+int p = problem.getAllParameters().length;
+if (m <= p) {
+throw new EstimationException(&quot;no degrees of freedom ({0} measurements, {1} parameters)&quot;,
+

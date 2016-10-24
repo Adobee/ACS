@@ -1,0 +1,14 @@
+private final static TypeFactory typeFactory = TypeFactory.getInstance();
+
+/*package*/ AbstractNumberValue(){
+super();
+}
+
+@Override
+public INumber add(INumber other){
+if(isIntegerType(other)){
+return add(other.toInteger());
+}
+if(isRealType(other)){
+return add(other.toReal(((IReal) other).precision()));
+

@@ -1,0 +1,12 @@
+public class SQLiteException extends RuntimeException {
+@Override
+public String getMessage() {
+Throwable cause = getCause();
+if (cause != null)
+return cause.getMessage();
+public SQLiteException(int errorCode, String errorMessage) {
+this(errorCode, errorMessage, null);
+}
+
+public SQLiteException(int errorCode, String errorMessage, Throwable cause) {
+

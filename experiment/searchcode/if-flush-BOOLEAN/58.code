@@ -1,0 +1,10 @@
+private static FlushStatus flushStatus = new FlushStatus();
+
+private static boolean stopFlush = false;
+
+private static final int TYPE_START_FLUSH = 1;
+synchronized (flushStatus) {
+CommonMessage message = new CommonMessage();
+boolean isStart = flushStatus.getIsStart();
+if (type == TYPE_STOP_FLUSH) {
+

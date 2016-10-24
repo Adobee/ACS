@@ -1,0 +1,14 @@
+actualObj.setNextObject(newObj);
+}
+actualObj = newObj;
+}
+
+public void removeObject() {
+if(actualObj.getPrevObject() != null) {
+actualObj.getPrevObject().setNextObject(actualObj.getNextObject());
+
+goToPrev();
+}
+if(actualObj.getNextObject() != null) {
+actualObj.getNextObject().setPrevObject(actualObj.getPrevObject());
+

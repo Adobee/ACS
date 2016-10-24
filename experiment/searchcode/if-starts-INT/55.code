@@ -1,0 +1,13 @@
+public int romanToInt(String s) {
+s = s.toLowerCase();
+
+int num = 0;
+
+while (s.length()>0) {
+if (s.startsWith(&quot;iv&quot;)) {
+s = s.substring(2, s.length());
+
+} else if (s.startsWith(&quot;i&quot;)) {
+num += 1;
+s = s.substring(1, s.length());
+

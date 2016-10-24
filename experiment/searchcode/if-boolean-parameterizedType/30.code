@@ -1,0 +1,8 @@
+public static XClassDefinition createClassDefinition(XTypeFactory typeFactory, Type type) {
+if (type instanceof Class) {
+Class clazz = (Class) type;
+if (!canCreateClassDefinition(clazz))
+return new XClassDefinition(typeFactory, clazz);
+}
+if (type instanceof ParameterizedType) {
+

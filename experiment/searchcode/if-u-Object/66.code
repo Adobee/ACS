@@ -1,0 +1,17 @@
+public void returnObject(PoolableObject object)
+{
+if (object != null &amp;&amp; objectPool != null)
+{
+try
+{
+objectPool.returnObject(object);
+object.destroy();
+}
+}
+}
+
+
+public void activateObject(Object poolableObject) throws Exception
+{
+if (poolableObject instanceof PoolableObject)
+

@@ -1,0 +1,10 @@
+Calendar now = Calendar.getInstance();
+int dayOfWeek = now.get(Calendar.DAY_OF_WEEK);
+if (dayOfWeek == startOfWeek()) {
+return String.format(baseUrl(), companyId, currentDate);
+}
+
+private String determineDate(int daysToAdd) {
+String date;
+Calendar now = Calendar.getInstance();
+

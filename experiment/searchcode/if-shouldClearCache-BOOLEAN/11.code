@@ -1,0 +1,10 @@
+int indexOfStoredValue = Arrays.asList(mTimerValues).indexOf(storedInterval);
+mTimerInterval.setSelection(indexOfStoredValue);
+}
+
+private boolean shouldClearCache() {
+boolean setNewTimer = !mTimerValues[mTimerInterval.getSelectedItemPosition()]
+.equals(mPrefHelper.getTimerInterval());
+if (shouldClearCache()) {
+Util.getCacheFile(this).delete();
+

@@ -1,0 +1,7 @@
+int timeout = 4000;
+for (int i = startAdd; i < startAdd + numAdds; i++) {
+String host = subnet + &quot;.&quot; + i;
+Process exec = Runtime.getRuntime().exec(String.format(CMD, host));
+int i1 = exec.waitFor();
+if (i1 == 0){
+

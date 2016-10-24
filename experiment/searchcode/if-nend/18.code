@@ -1,0 +1,11 @@
+final Activity activity = (Activity)Cocos2dxActivity.getContext();
+activity.runOnUiThread(new Runnable() {
+public void run() {
+if (nendAdView == null) {
+
+int intSpotID = Integer.parseInt(spotID);
+nendAdView = new NendAdView(activity.getApplicationContext(), intSpotID, apiKey);
+nendAdView.setListener(sAdListener);
+
+if (null == mWm) {
+

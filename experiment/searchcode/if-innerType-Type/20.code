@@ -1,0 +1,8 @@
+public synchronized static ArrayType make(Type innerType, int size)
+{
+// We can&#39;t create void[] arrays, or negative or zero-sized arrays
+assert innerType != null;
+assert size >= 1;
+
+// We look up by inner type first...
+

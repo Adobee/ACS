@@ -1,0 +1,8 @@
+Random generator = new Random(value);
+int newValue = value;
+if (list[value] != null) {
+return list[value];
+} else if (value < 200) {
+for (int i = 0; i < 1000; i++) {
+if (list[newValue] != null) {
+

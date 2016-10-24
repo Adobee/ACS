@@ -1,0 +1,8 @@
+public static Long parsePbsLogSizeFormat(String size) {
+Long sizeInBytes = null;
+if (size.endsWith(&quot;tb&quot;)) {
+sizeInBytes = Long.parseLong(size.substring(0, size.length() - 2)) * 1024l * 1024l * 1024l * 1024l;
+sizeInBytes = Long.parseLong(size.substring(0, size.length() - 2)) * 1024l * 1024l * 1024l;
+} else if (size.endsWith(&quot;mb&quot;)) {
+sizeInBytes = Long.parseLong(size.substring(0, size.length() - 2)) * 1024l * 1024l;
+

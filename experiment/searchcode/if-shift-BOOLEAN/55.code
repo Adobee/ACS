@@ -1,0 +1,9 @@
+Optional<Shift> optShift = shiftDao.readLatestByEmployeeId(employeeId);
+
+if(optShift.isPresent() &amp;&amp; optShift.get().getTimeOut() == null) {
++ shift.getShiftId(), shift.getShiftId().toString()));
+}
+
+@Override
+public boolean deleteShiftById(Long shiftId) {
+

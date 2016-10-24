@@ -1,0 +1,8 @@
+this.convergence = DEFAULT_CONVERGENCE;
+}
+
+public GaussNewtonEstimator(final int maxCostEval ,final double convergence ,final double steadyStateThreshold) {
+org.apache.commons.math.linear.RealMatrix a = org.apache.commons.math.linear.MatrixUtils.createRealMatrix(parameters.length, parameters.length);
+for (int i = 0 ; i < (measurements.length) ; ++i) {
+if (!(measurements[i].isIgnored())) {
+

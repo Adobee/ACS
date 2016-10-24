@@ -1,0 +1,13 @@
+public Logger(Logger logger) {
+setLevel(logger.getLevel());
+}
+
+public void setLevel(int level) {
+if (level > 0) {
+public int getLevel() {
+return level;
+}
+
+public void log(int level, String message) {
+if (level <= 0 || level < this.level) {
+

@@ -1,0 +1,8 @@
+Double fit = Double.MIN_VALUE;
+GeneticParameters parameters;
+Chromosome chromosome;
+boolean isCalculated = false;
+Double newFit = parameters.getFitCalculator().calculate(chromosome);
+boolean isWorst = newFit > fit;
+if (isWorst) {
+

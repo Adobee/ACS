@@ -1,0 +1,10 @@
+// mulmod preconditioning data
+private double[] TwoInvPreconTable;
+
+
+public FFTPrime(long q, long w, boolean bigtab) {
+for (int j = 0; j <= mr; j++)
+TwoInvPreconTable[j] = PrepMulModPrecon(TwoInvTable[j], q, qinv);
+
+//        if (bigtab)
+

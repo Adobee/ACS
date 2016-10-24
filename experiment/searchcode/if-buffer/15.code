@@ -1,0 +1,9 @@
+import org.lwjgl.system.MemoryUtil;
+
+final class LwjglUtil {
+
+static long memAddress(Buffer buffer){
+if(buffer instanceof ByteBuffer)
+return MemoryUtil.memAddress((ByteBuffer)buffer);
+else if(buffer instanceof FloatBuffer)
+

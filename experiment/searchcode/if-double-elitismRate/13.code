@@ -1,0 +1,8 @@
+/** percentage of chromosomes copied to the next generation */
+private double elitismRate = 0.9;
+
+/**
+* Creates a new FileForTestLocalizationInConstructor instance.
+public void setElitismRate(final double elitismRate) {
+if (elitismRate < 0 || elitismRate > 1) {
+

@@ -1,0 +1,13 @@
+int cardReplacementIndexLength = cardReplacementIndex.length();
+
+if ( cardReplacementIndexLength > 1 ) {
+cardReplacementIndexLength = 1;
+}
+
+this.cardReplacementIndex = cardReplacementIndex.substring( 0, cardReplacementIndexLength );
+}
+
+@Override
+public Element generateXMLElement( String name ) {
+if ( isValidXMLString( cardReplacementIndex ) == false ) {
+

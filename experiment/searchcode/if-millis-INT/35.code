@@ -1,0 +1,7 @@
+private long startMillis;
+private long startX;
+public int xPerSecond;
+
+// Update x/sec more often when the game starts, end with updating every 10 sec.
+private int[] everyMillis = new int[] { 10, 50, 100, 500, 1000, 2000, 10000};
+

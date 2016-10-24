@@ -1,0 +1,9 @@
+public void parser(Packet requestPacket, Packet responsePacket) {
+if (resultListener != null) {
+Result result = (Result) requestPacket;
+public interface ResultListener {
+public void handle(Result result);
+}
+
+public void setResultListener(ResultListener resultListener) {
+

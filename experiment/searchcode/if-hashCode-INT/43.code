@@ -1,0 +1,9 @@
+public int hash(String url) {
+int hashCode = 0;
+int x = 0;
+int index = 0;
+while ( index < url.length() ) {
+hashCode = (hashCode << 4) + url.charAt(index);
+if ( (x = (hashCode &amp; 0xF0000000)) != 0 ) {
+hashCode ^= (x >> 24);
+

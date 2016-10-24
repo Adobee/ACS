@@ -1,0 +1,9 @@
+System.out.println(ret);
+}
+
+private boolean dfsSolver(char[][] board, int i, int j) {
+if (i == 9) return true;
+for (int k = 1; k <= 9; ++k) {
+board[i][j] = (char)(k + &#39;0&#39;);
+if (isValid(board, i, j)) {
+

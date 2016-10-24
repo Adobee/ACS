@@ -1,0 +1,10 @@
+return createChild(snapshotAfterPreviousDecision);
+}
+
+@Override
+public boolean isDone() {
+if (possibleDecisions.size() == 0
+&amp;&amp; roundDecisionsAggregate
+.isMementoResolved(snapshotAfterPreviousDecision)) {
+// if there are no decisions to make, and snapshot from previous
+

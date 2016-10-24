@@ -1,0 +1,14 @@
+long[] longArray = getIntegers(splitLine[0]);
+
+for(int j = 0; j < runTime; j++)
+{
+if(runSort(longArray))
+{
+break;
+for(int k = 1; k < longArray.length; k++)
+{
+if(longArray[k-1] > longArray[k])
+{
+sorted = false;
+long holding = longArray[k-1];
+

@@ -1,0 +1,13 @@
+package com.alexsimo.dynamocard.business.common.moshi;
+
+import com.squareup.moshi.Moshi;
+
+public class MyMoshi {
+public static Moshi get() {
+if (null == instance) {
+instance = new Moshi.Builder().add(new ResumeDateAdapter()).build();
+}
+return instance;
+}
+}
+

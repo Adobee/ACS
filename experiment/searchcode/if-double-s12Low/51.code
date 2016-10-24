@@ -1,0 +1,9 @@
+// to recover some bits from the extra words we have saved up to now
+double result = s12High + (prod1Low + prod2Low + s12Low);
+
+if (Double.isNaN(result)) {
+double result = s1234High + (prod1Low + prod2Low + prod3Low + prod4Low + s12Low + s123Low + s1234Low);
+
+if (Double.isNaN(result)) {
+// either we have split infinite numbers or some coefficients were NaNs,
+

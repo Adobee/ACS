@@ -1,0 +1,10 @@
+package com.javalec.ch02_2;
+
+public class BMICalculator {
+private double lowWeight;
+private double normal;
+private double overWeight;
+private double obesity;
+
+public void bmiCalculation(double weight, double height) {
+

@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+/**
+* Created by ryan on 7/21/2015.
+*/
+public class PredictionYear {
+public int years;
+float maxPredVal = years.get(0).compValue;
+for(int j=0; j<years.size(); j++)
+{
+if(maxPredVal<years.get(j).compValue)
+

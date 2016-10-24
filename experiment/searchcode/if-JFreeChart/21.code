@@ -1,0 +1,9 @@
+import java.util.List;
+
+import org.jfree.chart.JFreeChart;
+import org.jfree.data.category.CategoryDataset;
+import org.jfree.data.category.DefaultCategoryDataset;
+// Charts
+private JFreeChart timeGraph;      // Time/schedule
+private JFreeChart productGraph;   // Length/year
+

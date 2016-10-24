@@ -1,0 +1,10 @@
+return u2;
+}
+
+
+@Override
+public boolean equals(Object o){
+if (!(o instanceof UUIDContainer)) return false;
+UUIDContainer uuid = (UUIDContainer) o;
+if (u1.equals(uuid.getU1()) || u2.equals(uuid.getU2())) return true;
+

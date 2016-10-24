@@ -1,0 +1,12 @@
+private int x, y;
+private double h, r;
+
+public TestPen(int x, int y, double h, double r) {
+this.x = x;
+p.runTo(x, y);
+}
+
+public static void fractalLine(int x, int y, double h, double r) {
+
+if(h <= 1){
+

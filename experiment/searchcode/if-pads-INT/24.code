@@ -1,0 +1,13 @@
+public class MicroKontrolLights implements Observer {
+
+private Pad[] pads;
+private final Grimonium grimonium;
+private void turnOffPads() {
+for (int i = 0; i < pads.length; i++) {
+Pad pad = pads[i];
+pad.led.set(LED.OFF);
+}
+}
+
+}
+

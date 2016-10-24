@@ -1,0 +1,7 @@
+XYPlot categoryPlot = chart.getXYPlot();
+Marker ymarker = new ValueMarker(50);
+ymarker.setLabel(&quot;50% Usage&quot;);
+for (int i=1; i <= categoryPlot.getDataset().getSeriesCount(); i++)
+{
+if (categoryPlot.getDataset().getSeriesKey(i-1).toString().contains(&quot;Deleted&quot;.subSequence(0, 4)))
+

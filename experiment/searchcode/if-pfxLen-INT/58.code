@@ -1,0 +1,6 @@
+public static int compareHashes(byte[] a, byte[] b) {
+int pfxlen = Math.min(a.length, b.length);
+for (int i = 0; i < pfxlen; ++i) {
+int cmp = toUnsigned(a[i]) - toUnsigned(b[i]);
+if (cmp != 0)
+

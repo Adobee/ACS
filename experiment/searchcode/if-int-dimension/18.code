@@ -1,0 +1,9 @@
+public class another extends JFrame {
+
+static int[][] dimension = new int[15][15];
+static boolean[][] visit = new boolean[15][15];
+int[][] border() {
+int[][] array = new int[15][15];
+for (int i = 0; i < dimension.length; i++) {
+for (int j = 0; j < dimension.length; j++) {
+

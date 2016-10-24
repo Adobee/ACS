@@ -1,0 +1,12 @@
+private static final String OPTIONS_CONFIG_FILE = &quot;RenderDefaults.cfg&quot;;
+
+private static final String RENDER_OPTIONS_FILE = &quot;RenderOptions.xml&quot;;
+
+private static final String OPTION_QNAME = &quot;option&quot;;
+protected void loadCfgFile( URL url ) throws Exception
+{
+if ( url != null )
+{
+InputStream in = url.openStream( );
+Properties defaultValues = new Properties( );
+

@@ -1,0 +1,9 @@
+SubSystem.Th b = bPin.getSubSystem().getTh(bPin, bSrc);
+
+double Uth = a.U - b.U;
+double Rth = a.R + b.R;
+if (Uth >= Umax) {
+double U = (Math.sqrt(Uth * Uth + 4 * P * Rth) + Uth) / 2;
+U =  Math.min(Math.min(U, Umax), Uth + Rth * Imax);
+if (Double.isNaN(U)) U = 0;
+

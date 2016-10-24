@@ -1,0 +1,7 @@
+String url = super.buildURL();
+
+// If there are shards present, then append them to url
+if (shards != null &amp;&amp; shards.length > 0)
+{
+url += &quot;&amp;q=&quot; + shards[0].shardName();
+

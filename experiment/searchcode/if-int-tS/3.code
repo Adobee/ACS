@@ -1,0 +1,12 @@
+public void setTsUsers(TsUsers tsUsers) {
+this.tsUsers = tsUsers;
+}
+
+public boolean equals(Object other) {
+if ((this == other))
+return true;
+if ((other == null))
+return false;
+if (!(other instanceof TsFavourId))
+return false;
+

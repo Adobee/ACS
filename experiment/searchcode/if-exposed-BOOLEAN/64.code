@@ -1,0 +1,8 @@
+.pruningClassName(&quot;com.google.cloud.dataflow.sdk.transforms.display.DisplayDataMatchers&quot;);
+
+checkedApiSurface.getExposedClasses();
+
+Map<Class<?>, List<Class<?>>> disallowedClasses = Maps.newHashMap();
+for (Class<?> clazz : checkedApiSurface.getExposedClasses()) {
+if (!classIsAllowed(clazz)) {
+

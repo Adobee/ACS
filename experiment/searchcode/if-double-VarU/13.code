@@ -1,0 +1,8 @@
+ft.clear();
+if (varukorg!=null) for (VaruKorgRad rad : varukorg) {
+if (rad!=null){
+currentRow = new VarukorgRadWidgets(cn,rad,(VarukorgCallbackInterface)this);
+artnr = new Label(noNull(varuKorgRad.artnr));
+namn = new Label(noNull(varuKorgRad.namn));
+antal= new Label(noNull(Double.toString(varuKorgRad.antal)));
+

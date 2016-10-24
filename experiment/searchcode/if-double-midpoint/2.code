@@ -1,0 +1,12 @@
+@Override
+public String getName() {
+return &quot;modified midpoint&quot;;
+}
+
+double [] dydt;
+double [] y_midpoint;
+//Avoid useless memory allocation if size did not change
+if (old_n!=n) {
+dydt = new double[n];
+y_midpoint = new double[n];
+

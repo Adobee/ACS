@@ -1,0 +1,13 @@
+return &quot;multiple&quot;;
+}
+
+public static String arith(String ipt){
+String leftIpt,rightIpt;
+int i = ipt.indexOf(&#39;+&#39;);
+if (i>-1) {
+return add(leftIpt,rightIpt);
+} else {
+int j = ipt.indexOf(&#39;-&#39;);
+if (j>-1) {
+leftIpt = ipt.substring(0,j);
+

@@ -1,0 +1,17 @@
+private Textbox textbox;
+private Listbox listbox;
+private ClearButton clearButton;
+
+public void setClearButton(ClearButton clearButton) {
+String value = textbox.getValue();
+if(value != null){
+listbox.add(value);
+textbox.clear();
+}
+if(clearButton.isEnabled()){
+clearButton.enable(false);
+}
+}
+
+}
+

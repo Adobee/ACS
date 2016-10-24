@@ -1,0 +1,8 @@
+private static long parseLong(char[] aBuf, int offset, int length, boolean isHex) {
+boolean negative = false;
+
+long multipliers[] = (isHex ? HEX_MULTIPLIERS : MULTIPLIERS);
+
+if (length == 0) {
+throw new JsonParserException(&quot;Cannot parse an empty string.&quot;);
+

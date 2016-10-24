@@ -1,0 +1,9 @@
+shiftBits = 0x00;
+intermediateBytes[intermediateIndex++] = (byte) (data.getByte(startIndex) &amp; 0x7F);
+} else if (maxPrecision == 28) {
+boolean rSign = ByteFunctionHelpers.getSign(right);
+int cmp = 0;
+
+if (lSign != rSign) {
+return (lSign == false) ? 1 : -1;
+

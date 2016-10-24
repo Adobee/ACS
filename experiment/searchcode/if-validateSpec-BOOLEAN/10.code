@@ -1,0 +1,7 @@
+restTestExecutionContext = new RestTestExecutionContext(restSpec);
+}
+
+private static void validateSpec(RestSpec restSpec) {
+boolean validateSpec = RandomizedTest.systemPropertyAsBoolean(REST_TESTS_VALIDATE_SPEC, true);
+if (validateSpec) {
+

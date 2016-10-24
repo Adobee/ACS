@@ -1,0 +1,9 @@
+int[] charIndices = new int [256]; // 256 possible ASCII characters
+int maxLen = 0;
+int startPos = 1;
+int endPos = 0;
+
+for (int i = 0; i < s.length(); ++i) {
+if (charIndices[s.charAt(i)] >= startPos) {
+if (maxLen < endPos - startPos + 1) {
+

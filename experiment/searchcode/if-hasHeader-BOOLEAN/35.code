@@ -1,0 +1,9 @@
+private final int type;
+private InetAddress sourceAddress;
+private boolean hasHeader;
+private PacketHeader header;
+System.arraycopy(content, 0, buffer, offset + 4, contentLength);
+offset += 4 + contentLength;
+
+if(hasHeader) {
+

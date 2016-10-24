@@ -1,0 +1,11 @@
+return false;
+}
+}
+
+@Override
+public Mixed gr(Mixed other) {
+if (other instanceof Integer) {
+return new Boolean(this.value > ((Integer)other).value);
+} else if (other instanceof Float) {
+return new Boolean(this.value > ((Float)other).value);
+

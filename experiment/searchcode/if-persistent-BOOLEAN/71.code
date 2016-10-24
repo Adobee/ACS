@@ -1,0 +1,10 @@
+public class PersistentList<E> implements Iterable<E> {
+@SuppressWarnings(&quot;unchecked&quot;)
+private final static PersistentList NIL = new PersistentList(null, null);
+public PersistentList<E> add(E t) {
+return new PersistentList<E>(t, this);
+}
+
+public boolean isEmpty() {
+return this == NIL;
+

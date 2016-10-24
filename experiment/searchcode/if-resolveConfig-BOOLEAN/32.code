@@ -1,0 +1,11 @@
+public class IfResolveFieldRule extends BooleanFieldRule {
+
+@Override
+protected boolean getResult(FieldFlag flag, PrestoContextRules rules, PrestoField field, ObjectNode config) {
+} else {
+return ifResolve(context, field, config);
+}
+}
+
+private boolean ifResolve(PrestoContext context, PrestoField field, ObjectNode config) {
+

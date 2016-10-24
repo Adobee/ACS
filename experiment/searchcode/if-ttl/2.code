@@ -1,0 +1,9 @@
+public CachingSettings(K userKey, long hardTtl, long softTtl, TimeUnit unit) {
+if (userKey == null) {
+throw new IllegalArgumentException(&quot;Cache key is null&quot;);
+}
+this.userKey = userKey;
+
+hardTtl = unit.toSeconds(hardTtl);
+if (hardTtl <= 0) {
+

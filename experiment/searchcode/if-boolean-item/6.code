@@ -1,0 +1,16 @@
+void handleItem(Item item) {
+if (isLegendary(item)) {
+return;
+}
+
+if (item.name.equals(&quot;Craftspeople Potion&quot;)) {
+decreaseSellIn(item);
+
+if (item.sellIn < 0) {
+decreaseQuality(item);
+decreaseQuality(item);
+}
+}
+
+private boolean isCheese(Item item) {
+

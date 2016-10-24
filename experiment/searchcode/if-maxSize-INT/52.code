@@ -1,0 +1,18 @@
+public void insert(int s){
+
+if(rear == maxsize - 1)
+{
+rear = -1;
+}
+
+queueAray[++rear] = s;
+nItems++;
+}
+
+public int remove(){
+
+int temp = queueAray[front++];
+
+if(front == maxsize){
+front = 0;
+

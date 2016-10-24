@@ -1,0 +1,10 @@
+public class GarbageCollector extends Thread {
+
+// private ArrayList<Field> fields;
+private FieldArea fields;
+private int fieldIndex;
+private int n;
+public GarbageCollector(FieldArea fields, int fieldIndex, int n) {
+this.fields = fields;
+this.fieldIndex = fieldIndex;
+

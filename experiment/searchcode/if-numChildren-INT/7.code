@@ -1,0 +1,12 @@
+public class DBMention extends DBMySQL {
+
+static protected Connection conn;
+static private int numChildren = 0;
+
+public DBMention(String database) {
+super();
+if (numChildren==0) {
+conn = this.init(database);
+}
+numChildren++;
+

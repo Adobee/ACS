@@ -1,0 +1,17 @@
+
+import java.util.LinkedList;
+
+public class FilterChain<T> {
+
+private LinkedList< Filter<T> > filterChain = new LinkedList< Filter<T> >();
+Filter<T> filterElement = filterChain.get(i);
+if(filterElement.filter(t)) {
+return true;
+}
+}
+return false;
+}
+}
+
+}
+

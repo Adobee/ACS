@@ -1,0 +1,12 @@
+for (int i = 2; i * i < MAXP; i++) {
+if (!np[i]) {
+for (int j = i * i; j < MAXP; j += i) {
+np[j] = true;
+}
+}
+}
+int count = 0;
+for (int i = 2; i < MAXP; i++) {
+if (!np[i]) {
+count++;
+

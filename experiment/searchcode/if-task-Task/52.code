@@ -1,0 +1,13 @@
+import java.util.Set;
+
+/**
+* Created by roman on 26.05.2016.
+*/
+
+interface Task {
+void execute();
+
+Set<Task> dependencies();
+private void executeTaskAndDependencies(Task task) {
+if (!alreadyExecutedTasks.contains(task)) {
+

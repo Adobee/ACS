@@ -1,0 +1,12 @@
+public void addMarker(int addition)
+{
+markers.add(addition);
+}
+
+public boolean isLevelTrailSegment(int begin, int end)
+{
+boolean levelOrNot = true;
+for( int i = begin; i < end; i++)
+{
+if( i > begin &amp;&amp; Math.abs(markers.get(i) - markers.get(i-1)) > 10)
+

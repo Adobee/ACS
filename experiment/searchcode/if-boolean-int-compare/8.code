@@ -1,0 +1,11 @@
+return this == CompareResult.GT;
+}
+
+public static CompareResult fromInt(final long n) {
+if (n > 0L) {
+public static CompareResult fromInt(final int n) {
+if (n > 0) {
+return CompareResult.GT;
+}
+if (n < 0) {
+

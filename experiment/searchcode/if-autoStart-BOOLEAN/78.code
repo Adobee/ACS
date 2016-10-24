@@ -1,0 +1,13 @@
+public class GuiClientStub extends ClientStub {
+
+private final Client client;
+private boolean autostartPerfomed;
+
+public GuiClientStub(Client client) {
+client.showCreateGamePanel(msg.getSnapshot() == null, msg.getSlots());
+}
+});
+
+DebugConfig debugConfig = client.getConfig().getDebug();
+if (!autostartPerfomed &amp;&amp; debugConfig.isAutostartEnabled()) {
+

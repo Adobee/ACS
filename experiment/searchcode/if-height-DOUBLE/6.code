@@ -1,0 +1,14 @@
+public class Rect {	//创建矩形的类
+double width;
+double height;
+double area;
+
+void setWidth(double width) {
+if (width > 0) {
+this.width = width;
+}
+}
+
+void setHeight(double height) {
+if (height > 0) {
+

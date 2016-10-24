@@ -1,0 +1,11 @@
+public static String getDateDiff(long paramLong)
+{
+if (paramLong <= 0L) {
+return &quot;0:00:00&quot;;
+}
+long l1 = paramLong / 86400000L;
+long l3 = paramLong % 86400000L % 3600000L / 60000L;
+long l4 = paramLong % 86400000L % 3600000L % 60000L / 1000L;
+String str = &quot;&quot;;
+if (l1 > 0L) {
+

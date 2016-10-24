@@ -1,0 +1,12 @@
+public class EntityDroid extends Entity {
+
+private double startY;
+private double targetY;
+
+public EntityDroid(World world){
+if(targetY == 0 || Math.abs(posY - targetY) < 0.25) {
+targetY = startY + worldObj.rand.nextDouble() * 5;
+}
+
+if (posY < targetY) {
+

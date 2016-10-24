@@ -1,0 +1,8 @@
+// cache vars for method generateBinomial(...)
+private int    n_last = -1,  n_prev = -1;
+private double par,np,p0,q,p_last = -1.0, p_prev = -1.0;
+private double cdfSlow(int k) {
+if (k < 0) throw new IllegalArgumentException();
+
+double sum = 0.0;
+

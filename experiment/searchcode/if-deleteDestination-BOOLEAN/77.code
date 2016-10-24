@@ -1,0 +1,11 @@
+query.getOptions().put(SqlDatabase.USE_JDBC_FETCH_SIZE_QUERY_OPTION, false);
+
+if (wp.param(boolean.class, &quot;isResumable&quot;) &amp;&amp; source instanceof SqlDatabase) {
+query.where(&quot;_id >= ?&quot;, resumeId);
+}
+}
+}
+
+if (wp.param(boolean.class, &quot;deleteDestination&quot;)) {
+destination.deleteByQuery(query);
+

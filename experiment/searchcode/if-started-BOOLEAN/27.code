@@ -1,0 +1,14 @@
+package engine;
+
+import Util.Time;
+
+public class Delay {
+private int length;
+boolean started;
+public boolean isOver(){
+if(!started)return false;
+return Time.getTime() >= endTime;
+
+}
+public void restart(){
+

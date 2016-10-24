@@ -1,0 +1,12 @@
+return Cs2;
+}
+
+//init Cn[]
+private double Cn[] = new double[16];
+
+public void setCn(double Cnl, double Cnh) {
+for (int i = 0; i < Cs1.length; i++) {
+if (var[i] == 1) {
+Cn[i] = Cnl;
+} else {
+

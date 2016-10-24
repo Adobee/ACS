@@ -1,0 +1,9 @@
+public class AsciiIO {
+
+public static DataTable readTable(File f) {
+DataTable ret = null;
+
+int ncol = 0;
+StringTokenizer st = new StringTokenizer(line, &quot; ,;\t&quot;);
+if (ncol == 0) {
+

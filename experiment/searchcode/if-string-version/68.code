@@ -1,0 +1,12 @@
+public class VersionXmlAdapter extends XmlAdapter<String, Version> {
+
+@Override
+public Version unmarshal(String versionString) throws Exception {
+if (versionString == null || versionString.length() == 0)
+return Version.parseVersion(versionString);
+}
+
+@Override
+public String marshal(Version version) throws Exception {
+if (version == null)
+

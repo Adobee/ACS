@@ -1,0 +1,8 @@
+public class RefreshWithoutDelete implements Refresh{
+private int upperBound;
+private Refresh refresh;
+
+public RefreshWithoutDelete(int upperBound, Refresh refresh) {
+this.upperBound = upperBound;
+this.refresh = refresh;
+

@@ -1,0 +1,13 @@
+private Ellipse ellipse;
+private int pointCount;
+
+public EllipseCommand() {
+this(null, null);
+pointCount = 0;
+pointCount = 2;
+}
+
+public void setLinePoint(Point point) {
+if (++pointCount == 1) {
+ellipse.setPoint1(point);
+

@@ -1,0 +1,8 @@
+public boolean isValidBST(TreeNode root, int l, int r) {
+if (root.val <= l || root.val >= r)
+return false;
+boolean isValid = true;
+if (root.left != null)
+isValid = isValid &amp;&amp; isValidBST(root.left, l, root.val);
+if (root.right != null)
+

@@ -1,0 +1,6 @@
+public static void sendTitle(PackedTitle packettitle, ProxiedPlayer player) {
+Title title = BungeeCord.getInstance().createTitle();
+
+if(packettitle.getMode() == TitleMode.CLEAR) title = title.clear();
+else if(packettitle.getMode() == TitleMode.RESET) title = title.reset();
+

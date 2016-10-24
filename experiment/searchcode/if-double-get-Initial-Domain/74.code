@@ -1,0 +1,9 @@
+this.tf = new NullTermination();
+this.initialState = GraphDefinedDomain.getState(this.domain, 0);
+this.hashingFactory = new DiscreteStateHashFactory();
+public double reward(State s, GroundedAction a, State t) {
+
+int sid = GraphDefinedDomain.getNodeId(s);
+
+if(sid == 0 || sid == 3){
+

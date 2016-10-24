@@ -1,0 +1,6 @@
+public void internalAddListener(Object listener) {
+boolean executeImmediate = false;
+synchronized (this) {
+if (executedListeners) {
+executeImmediate = true;
+

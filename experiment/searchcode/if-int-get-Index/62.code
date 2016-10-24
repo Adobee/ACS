@@ -1,0 +1,11 @@
+public Visitor2() {
+
+}
+
+// *********************************************************************************************
+@Override
+public int visitIndex(Index i) {
+if (i instanceof IndexNonVide) {
+IndexNonVide j = (IndexNonVide) i;
+if (j.getItem().getLp().isIn(page)) {
+

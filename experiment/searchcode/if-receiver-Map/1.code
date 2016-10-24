@@ -1,0 +1,11 @@
+m_context = null;
+m_BroadcastReceive = null;
+//release all member
+if (null != m_ReceiverMap){
+Iterator<WbxReceiver> iter = m_ReceiverMap.values().iterator();
+Log.i(&quot;wbxtrace&quot;, &quot;WbxBroadcastMessageReceiver::release(), end&quot;);
+}
+private boolean createReceiverMap(){
+if (null == m_ReceiverMap){
+Log.i(&quot;wbxtrace&quot;, &quot;WbxBroadcastMessageReceiver::createReceiverMap()&quot;);
+

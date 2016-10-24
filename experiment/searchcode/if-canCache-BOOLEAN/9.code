@@ -1,0 +1,13 @@
+BlockDirectiveCacheObject cto = new BlockDirectiveCacheObject(value, ttl);
+cache.put(key, cto, group);
+
+}
+private boolean canCache;
+public String getPrimaryGroup() {
+return group;
+}
+
+@Override
+public String get(String key, int ttl) {
+if(!canCache)return null;
+

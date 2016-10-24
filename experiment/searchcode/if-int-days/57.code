@@ -1,0 +1,20 @@
+public Movie(String title, String type, int id) {
+super(title, type, id);
+}
+
+@Override
+public double getPrice(int days) {
+double price = 5;
+int daysLeft = days - 3;
+if (daysLeft > 0) {
+price += (daysLeft * 2);
+
+
+
+}
+return price;
+}
+
+
+}
+

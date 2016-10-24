@@ -1,0 +1,8 @@
+r5 = 461845907; // 0x1b873593 float:2.2368498E-22 double:2.281821963E-315;
+r4 = -862048943; // 0xffffffffcc9e2d51 float:-8.2930312E7 double:NaN;
+r0 = r8 &amp; -4;
+r2 = r7 + r0;
+r1 = r9;
+L_0x000b:
+if (r7 >= r2) goto L_0x0040;
+

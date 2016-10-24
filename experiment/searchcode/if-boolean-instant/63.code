@@ -1,0 +1,10 @@
+protected void putAdditionalInstanceState(Bundle saveState) {
+if (selectedInstant != null) {
+saveState.putParcelable(SAVE_STATE_KEY_INSTANT, selectedInstant);
+selectedInstant = savedState.getParcelable(SAVE_STATE_KEY_INSTANT);
+}
+
+@Override
+protected void setInitialWidgetState() {
+if (selectedInstant == null) {
+

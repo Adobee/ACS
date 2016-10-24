@@ -1,0 +1,9 @@
+_panel = aPanel;
+}
+
+public void move() {
+double nextX = this.getX() + _changeX;
+double nextY = this.getY() + _changeY;
+if ( nextX <= this.getMinBoundX() ) {
+_changeX *= -1;
+

@@ -1,0 +1,12 @@
+public void resetSubclass() {
+cropX.set(1.0f, 1.0f);
+cropY.set(1.0f, 1.0f);
+}
+
+@Override
+public boolean beginSubclass(EventFancyScene efs) {
+String key = s.next();
+
+Float cropLeft = FileCutsceneProvider.nextNumber(s);
+if (cropLeft == null) {
+

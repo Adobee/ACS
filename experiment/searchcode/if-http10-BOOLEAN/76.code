@@ -1,0 +1,8 @@
+private final HttpResponse httpResponse;
+
+private String charset;
+private transient volatile boolean includeCharset = false;
+private String contentType = &quot;text/html&quot;;
+public boolean isKeepAlive() {
+boolean http10 = this.httpResponse.getProtocolVersion().equals(HttpVersion.HTTP_1_0);
+

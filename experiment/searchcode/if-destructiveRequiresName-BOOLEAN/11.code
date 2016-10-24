@@ -1,0 +1,8 @@
+public static final String REQUIRES_NAME = &quot;action.destructive_requires_name&quot;;
+
+private final ESLogger logger;
+private volatile boolean destructiveRequiresName;
+public DestructiveOperations(ESLogger logger, Settings settings, NodeSettingsService nodeSettingsService) {
+this.logger = logger;
+destructiveRequiresName = settings.getAsBoolean(DestructiveOperations.REQUIRES_NAME, false);
+

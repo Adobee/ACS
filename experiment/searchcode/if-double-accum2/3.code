@@ -1,0 +1,8 @@
+/*  48:    */   public void increment(double d)
+/*  49:    */   {
+/*  50:169 */     if (this.incMoment) {
+/*  51:170 */       this.moment.increment(d);
+/*  55:    */   public double getResult()
+/*  56:    */   {
+/*  57:179 */     if (this.moment.n == 0L) {
+

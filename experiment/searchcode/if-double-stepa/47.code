@@ -1,0 +1,9 @@
+locRS = new RawReadingSource(CIRCBUFFSIZE);
+bwF = new ButterworthFilter(10, 5, SAMPLERATE, true);
+stepA = new StepAnalyser(SAMPLERATE);
+private StepAnalyser stepA;
+private AutoGaitModelerAnalyser agmA;
+
+@Override
+public void onSensorChanged(SensorEvent event) {
+

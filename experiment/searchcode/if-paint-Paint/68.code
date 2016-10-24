@@ -1,0 +1,9 @@
+package com.iflat.report.service.impl.util.impl;
+
+import com.iflat.report.bean.util.Paint;
+import com.iflat.report.dao.impl.util.PaintDao;
+public Paint save(Paint paint) throws Exception {
+int i = 0;
+if(paint != null &amp;&amp; !&quot;&quot;.equals(paint.getPaintId())) {
+paint.setPaintId(UUID.randomUUID().toString());
+

@@ -1,0 +1,7 @@
+List<XmMeetingEmail> listOfXmMeetingEmail = xmMeetingEmailDao.findByXmmiGuid(xmmiGuid);
+if(null==listOfXmMeetingEmail){
+return getJsonGzipRepresentation(JsonUtils.genFailureReturnJson(null, null));
+}
+
+for(int i=0;i<listOfXmMeetingEmail.size();i++){
+

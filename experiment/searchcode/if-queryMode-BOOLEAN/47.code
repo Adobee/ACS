@@ -1,0 +1,10 @@
+ps = conn.prepareStatement(line);
+
+if(mode == QueryMode.PSQL) {
+ps.execute();
+} else if(mode != QueryMode.PSQL) {
+im = getImage(rs, col);
+if(mode==QueryMode.SINGLE) {
+display(new Image[] {im});
+break;
+

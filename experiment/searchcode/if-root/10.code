@@ -1,0 +1,14 @@
+int[] parent;// 根の場合、そのグループの要素数（負）が入る。子の場合、親の番号が入る。
+
+public UnionFind(int size) {
+parent = new int[size];
+}
+
+int root(int x) {
+if (parent[x] < 0) {
+boolean union(int x, int y) {
+int rootX = root(x);
+int rootY = root(y);
+if (rootX == rootY) {
+return false;
+

@@ -1,0 +1,10 @@
+public static String formatTime(long millis) {
+long seconds = millis / 1000;
+if (seconds < 0) {
+return millis + &quot;ms&quot;;
+} else if (seconds < 60) {
+return seconds + &quot;s&quot;;
+} else {
+long minutes = seconds / 60;
+seconds = seconds % 60;
+

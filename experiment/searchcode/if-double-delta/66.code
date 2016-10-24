@@ -1,0 +1,12 @@
+package studio7;
+
+public class Vector {
+
+private final double deltaX;
+private final double deltaY;
+
+public Vector(double deltaX, double deltaY) {
+super();
+this.deltaX = deltaX;
+this.deltaY = deltaY;
+

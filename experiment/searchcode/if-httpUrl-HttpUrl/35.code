@@ -1,0 +1,6 @@
+@Test public void parseTrimsAsciiWhitespace() throws Exception {
+HttpUrl expected = HttpUrl.parse(&quot;http://host/&quot;);
+assertEquals(expected, HttpUrl.parse(&quot;http://host/\f\n\t \r&quot;)); // Leading.
+@Test public void removeAllDoesNotRemoveQueryIfNoParametersWereRemoved() throws Exception {
+HttpUrl url = HttpUrl.parse(&quot;http://host/&quot;).newBuilder()
+

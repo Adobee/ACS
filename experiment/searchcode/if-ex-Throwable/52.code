@@ -1,0 +1,9 @@
+public void error(final ErrorEvent errorEvent) {
+Throwable throwable = errorEvent.getThrowable();
+if (throwable instanceof SocketException) {
+String message = null;
+
+if (throwable != null) {
+Throwable cause = throwable.getCause();
+if (cause != null &amp;&amp; StringUtils.startsWith(throwable.getMessage(), cause.getClass().getName())) {
+

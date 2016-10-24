@@ -1,0 +1,7 @@
+public static Iterable<Class<?>> hierarchy(final Class<?> type, final Interfaces interfacesBehavior) {
+final Iterable<Class<?>> classes = new Iterable<Class<?>>() {
+if (interfacesBehavior != Interfaces.INCLUDE) {
+return classes;
+}
+return new Iterable<Class<?>>() {
+

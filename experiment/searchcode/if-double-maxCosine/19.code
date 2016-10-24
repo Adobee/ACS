@@ -1,0 +1,11 @@
+if (!(indices.contains(k))) {	// if this document is not in the result set
+
+double maxCosine = 0;
+
+for (int i = 0; i < indices.size(); i++) {		// check against every document in the result set
+bm25Score = bm25Score / highestScore;		// need to normalise the score
+
+double mmrScore = (lambda * bm25Score) - ((1 - lambda) * maxCosine);
+
+if (mmrScore > maxMMRScore) {
+

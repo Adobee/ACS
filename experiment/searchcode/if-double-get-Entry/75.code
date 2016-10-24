@@ -1,0 +1,9 @@
+double totalFat = 0;
+
+for (Entry<String, Double> entry : lst.entrySet()) {
+totalFat += entry.getValue() * db.getIngredient(entry.getKey()).getFat();
+HashMap<String, Double> lst = rec.getIngredients();
+double totalSugar = 0;
+
+for (Entry<String, Double> entry : lst.entrySet()) {
+

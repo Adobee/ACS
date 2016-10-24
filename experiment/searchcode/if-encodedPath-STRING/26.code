@@ -1,0 +1,5 @@
+StringBuilder encodedPath = new StringBuilder(path.length() * 2);
+for (int i=0; i < folders.length; i++) {
+encodedPath.append( fileNameEncode(folders[i]) );
+if ( i != folders.length - 1 || path.endsWith( &quot;/&quot; ) ) {
+

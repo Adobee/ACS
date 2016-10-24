@@ -1,0 +1,10 @@
+sumObserved += observed[i];
+}
+double ratio = 1.0d;
+boolean rescale = false;
+if (FastMath.abs(sumExpected - sumObserved) > 10E-6) {
+// Compute and compare count sums
+long countSum1 = 0;
+long countSum2 = 0;
+boolean unequalCounts = false;
+

@@ -1,0 +1,10 @@
+return c * Math.exp(-Math.abs(x - mu) / beta);
+}
+
+public double logPdf(double x) {
+return Math.log(c) - (Math.abs(x - mu) / beta);
+double sign = 1;
+if (y < 0.5) sign = -1;
+
+return mu - beta * sign * Math.log(1 - 2 * Math.abs(y - 0.5));
+

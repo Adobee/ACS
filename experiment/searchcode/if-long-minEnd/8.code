@@ -1,0 +1,9 @@
+int minEnd;
+
+if (Build.VERSION.SDK_INT >= 23) {
+hourStart = _startTime.getHour();
+Time startTime = new Time(hourStart, minStart);
+Time endTime = new Time(hourEnd, minEnd);
+
+if (!Time.isBefore(startTime, endTime)) {
+

@@ -1,0 +1,15 @@
+optimizerInfo = new DefaultOptimizerInfo();
+}
+
+public static NullOptimizer instance() {
+synchronized (NullOptimizer.class) {
+if (instance == null) {
+instance = new NullOptimizer();
+}
+return instance;
+}
+}
+
+@Override
+public boolean optimize(GreqlQuery query) throws OptimizerException {
+

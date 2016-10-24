@@ -1,0 +1,20 @@
+while(active == true){
+
+
+// game action every 10 milliseconds =)
+if(previousTimeMillis==0){
+previousTimeMillis=currentTimeMillis;
+}
+}
+
+
+
+
+}
+}
+
+/*
+private long getDeltaTime(){
+if(previousTimeMillis==0){
+previousTimeMillis=System.currentTimeMillis();
+

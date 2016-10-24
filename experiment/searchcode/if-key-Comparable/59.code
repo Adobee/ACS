@@ -1,0 +1,9 @@
+public final K key;
+
+public ConvertedComparableKey(K key) {
+if (key == null)
+throw new IllegalArgumentException(&quot;argument should not be null&quot;);
+@SuppressWarnings(&quot;unchecked&quot;)
+public int compareTo(ConvertedComparableKey<K> o) {
+if (key instanceof Comparable<?>) {
+

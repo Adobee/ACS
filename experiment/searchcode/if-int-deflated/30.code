@@ -1,0 +1,10 @@
+JsonObject deflated = userElement.getAsJsonObject();
+
+if(!deflated.has(&quot;username&quot;))
+{
+throw new JsonParseException(&quot;The serialized User did not contain the required username field.&quot;);
+// for all other attributes: instantiate as null, fill in if given.
+
+int idNum = 0;
+String username = deflated.get(&quot;username&quot;).getAsString();
+

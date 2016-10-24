@@ -1,0 +1,14 @@
+return type;
+}
+
+public int getIndex(double x)
+{
+if(x < lowerBound)
+return -1;
+return (int)Math.rint((x - lowerValue) / width);
+}
+
+public double getBound(int i)
+{
+return lowerBound + (double)i * width;
+

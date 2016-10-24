@@ -1,0 +1,10 @@
+private static final long serialVersionUID = 1L;
+
+private final int p1;
+private final long p2;
+
+TestBean(@JsonProperty(&quot;p1&quot;) int p1,
+@JsonProperty(&quot;p2&quot;) long p2) {
+this.p1 = p1;
+this.p2 = p2;
+

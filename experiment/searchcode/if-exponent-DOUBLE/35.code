@@ -1,0 +1,18 @@
+e = exponent;
+}
+double res;
+res = powerWithUnsignedExponent(base, e);
+
+if(tag){
+return base;
+}
+double res = powerWithUnsignedExponent(base, exponent>>1);
+res *= res;
+if((exponent&amp;0x1)==1){
+res *= base;
+}
+return res;
+}
+
+}
+

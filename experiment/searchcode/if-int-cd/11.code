@@ -1,0 +1,18 @@
+public void setCdTime(int cdTime) {
+this.cdTime = cdTime;
+}
+
+private int 	cdTime;
+
+public int getCdTimeToTimer() {
+if( cdTime == 0 ) return 0;
+int t	= SystemTimer.currentTimeSecond() - cdTime;
+if( t >= 300 ) {
+t		= 300;
+cdTime 	= 0;
+}
+return 300 - t;
+}
+
+}
+

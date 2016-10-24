@@ -1,0 +1,5 @@
+public void testReadFile() throws IOException {
+IndexInput indexInput =
+cassandraDirectory.openInput(&quot;hello.txt&quot;, IOContext.DEFAULT);
+String fileContent = indexInput.readString();
+

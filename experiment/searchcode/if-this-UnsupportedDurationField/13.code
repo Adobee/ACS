@@ -1,0 +1,8 @@
+public static synchronized UnsupportedDurationField getInstance(DurationFieldType type) {
+UnsupportedDurationField field;
+if (cCache == null) {
+field = (UnsupportedDurationField) cCache.get(type);
+}
+if (field == null) {
+field = new UnsupportedDurationField(type);
+

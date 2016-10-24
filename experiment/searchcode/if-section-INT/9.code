@@ -1,0 +1,6 @@
+public Section findOrCreateSection(Course course, int index) {
+Section section = course.getSectionAt(index);
+if( section == null ) {
+section = factory().createSection();
+section.setStartIndex(index);
+

@@ -1,0 +1,12 @@
+* @return real object.
+*/
+public Thesaurus convert(ThesaurusView source) {
+Thesaurus hibernateRes;
+
+if (StringUtils.isEmpty(source.getId())) {
+view.setLanguages(langLabels);
+
+boolean isArchived;
+if (source.isArchived() != null) {
+isArchived = source.isArchived();
+

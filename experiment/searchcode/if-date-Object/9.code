@@ -1,0 +1,15 @@
+package junit.tutorial.testdouble;
+
+import java.util.Date;
+
+public class DelegateObjectExample2 {
+
+DateFactoryIF dateFactory = new DateFactoryImpl();
+
+Date date;
+
+public void doSomething() {
+this.date = dateFactory.newDate();
+}
+}
+

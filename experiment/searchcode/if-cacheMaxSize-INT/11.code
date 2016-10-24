@@ -1,0 +1,11 @@
+private static final long serialVersionUID = 1L;
+private TreeMap cache;
+//  private int cacheMaxSize = 10485760; // 10 MB
+private int cacheMaxSize = 100;
+throw (new Exception(&quot;The entry key \&quot;&quot; + key + &quot;\&quot; already exist!&quot;));
+}
+
+synchronized (cache) {
+if(cache.size() + 1 - cacheMaxSize > 0) {
+int x = cacheMaxSize*20/100;
+

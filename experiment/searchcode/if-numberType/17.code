@@ -1,0 +1,12 @@
+import com.abstratt.mdd.core.runtime.ExecutionContext;
+
+public abstract class NumberType<T extends Number> extends PrimitiveType<T> {
+private static final long serialVersionUID = 1L;
+@Override
+public T primitiveValue() {
+return value;
+}
+
+
+public abstract NumberType<?> add(ExecutionContext context, NumberType<?> another);
+

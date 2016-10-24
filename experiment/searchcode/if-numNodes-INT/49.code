@@ -1,0 +1,11 @@
+private static Tree makeRandomTree(int numNodes, String[] labels, Tree root) {
+int minNumChildren = 1;
+int maxNumChildren = 30;
+Tree t = new Tree(root, labels[rand.nextInt(labels.length)]);
+
+numNodes--;
+
+if (numNodes > 0) {
+int numChildren;
+if (numNodes <= minNumChildren) {
+

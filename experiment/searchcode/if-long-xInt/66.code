@@ -1,0 +1,9 @@
+/* 1167 */     attrValues[ATTIDX_FROMDEFAULT] = new Long(fromDefault);
+/*      */
+/* 1172 */     if (attrValues[ATTIDX_MAXOCCURS] != null) {
+/* 1173 */       int min = ((XInt)attrValues[ATTIDX_MINOCCURS]).intValue();
+/* 1254 */         throw new InvalidDatatypeValueException(&quot;cvc-datatype-valid.1.2.1&quot;, new Object[] { value, &quot;nonNegativeInteger&quot; });
+/*      */       }
+/* 1256 */       if (((XInt)retValue).intValue() < 0)
+/* 1257 */         throw new InvalidDatatypeValueException(&quot;cvc-datatype-valid.1.2.1&quot;, new Object[] { value, &quot;nonNegativeInteger&quot; });
+

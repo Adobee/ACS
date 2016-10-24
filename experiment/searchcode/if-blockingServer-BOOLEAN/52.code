@@ -1,0 +1,11 @@
+requestSipURI.removeParameter(name);
+}
+}
+
+if (registrar.hasRegistration(request)
+&amp;&amp; !blockingServer.isBlocked(request)) {
+System.out.println(&quot;Got Block Service Request&quot;);
+blockingServer.handleBlockRequest(requestEvent);
+}
+else if (header.equals(Constants.UNBLOCK)) {
+

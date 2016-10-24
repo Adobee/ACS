@@ -1,0 +1,13 @@
+@Override
+public Object convertValue(Object value, Class toType) {
+
+if(toType == Point.class) {
+Point p = new Point();
+String[] xy = strs[0].split(&quot;,&quot;);
+p.x = Integer.parseInt(xy[0]);
+p.y = Integer.parseInt(xy[1]);
+return p;
+}
+
+if(toType == String.class) {
+

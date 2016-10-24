@@ -1,0 +1,10 @@
+if(c == &#39;{&#39; || c == &#39;[&#39; || c == &#39;(&#39;){
+list.add(c);
+}else if(c == &#39;}&#39;){
+if(list.size()==0)
+return false;
+if(list.get(list.size() - 1) != &#39;{&#39;)
+return false;
+list.remove(list.size() - 1);
+}else if(c == &#39;]&#39;){
+

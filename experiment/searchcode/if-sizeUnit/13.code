@@ -1,0 +1,6 @@
+for (Pair<Long, SizeUnit> currentUnitPair : SizeUnit.weightToUnit) {
+if (size / Math.pow(CONVERT_FACTOR, currentUnitPair.getFirst() - inUnit.getUnitWeight()) >= 1) {
+SizeUnit leastUnit = SizeUnit.getMaxHandledUnit();
+for(Pair<SizeUnit, Double> operand : operands) {
+if(operand.getFirst().getUnitWeight() < leastUnit.getUnitWeight()) {
+

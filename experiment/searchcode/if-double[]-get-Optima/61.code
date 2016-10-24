@@ -1,0 +1,9 @@
+this.optima           = null;
+}
+
+/** {@inheritDoc} */
+public double getFunctionValue() {
+public double[] getOptima() throws IllegalStateException {
+if (optima == null) {
+throw MathRuntimeException.createIllegalStateException(&quot;no optimum computed yet&quot;);
+

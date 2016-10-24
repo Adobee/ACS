@@ -1,0 +1,9 @@
+canChange = listener.doBeforePropertyChange(null, editorValue.getName(), editorValue.getPendingValue(), editorValue.getValue(), editorValue.getErrors());
+}
+
+if (!canChange) {
+editorValue.setHasError(true);
+editorValue.setNeedsRedraw(true);
+} else {
+if (editorValue.isHasError()) {
+

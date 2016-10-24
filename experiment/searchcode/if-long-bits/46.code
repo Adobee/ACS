@@ -1,0 +1,9 @@
+private static final int FINGERPRINT_BITS = 13;
+
+private int width;
+private int height;
+private long bits;
+private Bucket[][] buckets;
+for (int i=0, pos=0; i<width; i++, pos+=FINGERPRINT_BITS) {
+long p = getBits(hash, bits, pos);
+

@@ -1,0 +1,7 @@
+public class InplaceEditorExtension_Note implements InplaceEditorExtension {
+
+@Override
+public boolean getInplaceEditorText(View view, Map<String, Object> parameters) throws  InplaceEditorParseException {
+if (view instanceof Note) {
+parameters.put(VIEW_TEXT, ((Note) view).getText());
+

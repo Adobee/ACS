@@ -1,0 +1,10 @@
+class SynchronizedState implements State {
+private int[] value;
+
+SynchronizedState(int[] v) { value = v; }
+public int[] current() { return value; }
+
+public synchronized boolean swap(int i, int j) {
+if (value[i] <= 0) {
+return false;
+

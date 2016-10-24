@@ -1,0 +1,14 @@
+/* Rayo paralelo al plano o no intersecta detrás de la pantalla */
+if (dn == 0) {
+return false;
+}
+
+Vector3D p1 = vert[0].toVec();
+Vector3D p1a = Vector3D.sub(p1, new Vector3D(r.origin.x, r.origin.y,
+d1 = Vector3D.dotProd(p1a, N);
+t = d1 / dn;
+if (t > r.t || t <= 0.0006)
+return false;
+
+Vector3D pointOfIntersection = new Vector3D(r.direction);
+

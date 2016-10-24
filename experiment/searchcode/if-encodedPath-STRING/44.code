@@ -1,0 +1,13 @@
+this.a = str;
+}
+
+public void a(String str, File file) {
+if (TextUtils.isEmpty(str)) {
+throw new IllegalArgumentException(&quot;Failed to resolve canonical path for &quot; + file, e);
+}
+}
+
+public File a(Uri uri) {
+String encodedPath = uri.getEncodedPath();
+int indexOf = encodedPath.indexOf(47, 1);
+

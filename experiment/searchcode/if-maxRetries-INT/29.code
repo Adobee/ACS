@@ -1,0 +1,9 @@
+private final ElementRetryDelay<Node> retryDelay;
+private final int maxRetries;
+
+SingleRedisClientExecutor(final Supplier<Node> nodeSupplier,
+final int maxRetries) {
+
+this.nodeSupplier = nodeSupplier;
+this.clientFactory = clientFactory;
+

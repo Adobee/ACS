@@ -1,0 +1,11 @@
+if(num.length == 0 || num.length == 1) return num.length;
+int con = 1;
+int maxCon = 1;
+short increase = 0;
+if(num[0] < num[1]) {increase = 1; con = 2; maxCon = 2;}
+for(int i = 2; i < num.length; i++) {
+if(increase == 1) {
+if(num[i-1] < num[i]) {
+con++;
+if(con > maxCon) maxCon = con;
+

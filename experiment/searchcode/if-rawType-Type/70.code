@@ -1,0 +1,9 @@
+options.add(new rst.ty.TypeGenericParam(i));
+}
+
+RawType qualifiedRawType = typeCtx.owner.qualify(rawType);
+if (qualifiedRawType != null) {
+throw new CompilationException(&quot;Could not resolve type &#39;%s&#39;.&quot;, rawType);
+if (options.size() > 1)
+throw new CompilationException(&quot;Ambiguous type &#39;%s&#39;.&quot;, rawType);
+

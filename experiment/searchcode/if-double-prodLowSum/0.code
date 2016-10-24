@@ -1,0 +1,15 @@
+// return a[0] * b[0];
+// }
+
+final double[] prodHigh = new double[len];
+double prodLowSum = 0;
+
+for (int i = 0; i < len; i++) {
+sLowSum += (prodHighNext - (sHighCur - sPrime)) + (sHighPrev - sPrime);
+sHighPrev = sHighCur;
+}
+
+double result = sHighPrev + (prodLowSum + sLowSum);
+
+if (Double.isNaN(result)) {
+

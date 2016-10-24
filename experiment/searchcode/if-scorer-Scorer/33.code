@@ -1,0 +1,8 @@
+installGraphScorer(new KTotalStatisticScorer<V>(lazyVertexScorer));
+if (scorer instanceof IKCentralizationCalculatableScorer) {
+installGraphScorer(new KCentralizationStatisticScorer<V>(
+public void setActive(boolean active) {
+if (this.active != active) {
+this.active = active;
+for (KMetricsScorerController controller : controllers) {
+

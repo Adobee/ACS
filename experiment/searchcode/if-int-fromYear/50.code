@@ -1,0 +1,8 @@
+String from = range.split(&quot;-&quot;)[0];
+String to = range.split(&quot;-&quot;)[1];
+int fromYear = convert(from);
+int toYear = convert(to);
+int answer = 0;
+for (int i = fromYear; i <= toYear; i++)
+answer = Math.max(answer, MiscUtils.convertToRoman(i).length());
+

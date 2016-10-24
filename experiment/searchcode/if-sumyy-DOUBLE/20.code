@@ -1,0 +1,9 @@
+public class VectorSums<D> {
+public double sumX, sumY, sumXY, sumXX, sumYY;
+public int nX, nY, nXY, N;
+public VectorSums(Vector<D> vector){
+double meanY = getMeanY();
+return Math.sqrt(sumYY/(double)nY-meanY*meanY);
+}
+protected void calculate(Vector<D> lhs, Vector<D> rhs) {
+

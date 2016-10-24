@@ -1,0 +1,11 @@
+double power(double base, int exponent){
+if(Math.abs(base-0) < 10e-6&amp;&amp;exponent <0){
+invalidInput = true;
+return 0;
+}
+int absExponent=exponent;
+if(exponent<0){
+absExponent = -exponent;
+}
+double result = unsignPower(base, absExponent);
+

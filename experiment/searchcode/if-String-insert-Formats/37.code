@@ -1,0 +1,11 @@
+.getEPCMemoryLength()
++ &quot;.x&quot;
++ ((EPCGeneration1Event) event).getEPCMemory()
+.toString(16);
+}
+if (ALEDataFormats.EPC_DECIMAL.equals(format)) {
+return &quot;urn:epc:raw:&quot; + length + &quot;.x&quot;
++ event.readMemory(bank, offset, length).toString(16);
+}
+if (ALEDataFormats.EPC_DECIMAL.equals(format)) {
+

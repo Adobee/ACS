@@ -1,0 +1,8 @@
+// 세션은 request가 가지고 있따.
+if (loginMember != null) {
+HttpSession session = request.getSession();
+// 1. 중복아이디가 있는지 확인 한다.
+List<MemberVO> members = memberDAO.getAllMember();
+for (MemberVO memberVO : members) {
+if (memberVO.getMemberId().equals(member.getMemberId())) {
+

@@ -1,0 +1,8 @@
+throw new IllegalStateException(&quot;Stopwatch must be reset before being restarted. &quot;);
+}
+if (this.runningState != State.UNSTARTED) {
+throw new IllegalStateException(&quot;Stopwatch already started. &quot;);
+public void stop()
+{
+if ((this.runningState != State.RUNNING) &amp;&amp; (this.runningState != State.SUSPENDED)) {
+

@@ -1,0 +1,14 @@
+package org.openstreetmap.josm.plugins.EasyRoutes.RoutingAlgorithm;
+
+public class RoutingVertex {
+public double getWeight() {
+return weight;
+}
+
+public RoutingNode getNextNode(RoutingNode wezel) {
+if (wezel == start)
+return stop;
+return start;
+}
+}
+

@@ -1,0 +1,13 @@
+private int searchInsert(int[] a, int begin, int end, int target) {
+
+if (begin == end) {
+if (a[begin] >= target) {
+return begin;
+} else {
+return begin + 1;
+}
+}
+
+int pivotal = (begin + end) / 2;
+if (a[pivotal] == target) {
+

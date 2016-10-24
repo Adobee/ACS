@@ -1,0 +1,9 @@
+public synchronized void setBufferSize(short packetBufferSize) {
+if (sendBuffer != null) {
+flush();
+sendBuffer.limit(sendBuffer.capacity());
+sendBuffer.rewind();
+
+if (sizeOfBuffer == nbSentBytes) {
+return true;
+

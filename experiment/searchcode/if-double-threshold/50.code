@@ -1,0 +1,9 @@
+package org.fastlsh.threshold;
+
+/** Interface that helps determine if a point should be included
+*  as a near neighbor.
+*
+*/
+public interface ScoreThreshold {
+public double score(double [] x, double [] y);
+

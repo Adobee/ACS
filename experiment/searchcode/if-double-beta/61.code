@@ -1,0 +1,10 @@
+public class AccMethodAMeasure implements MeasureMethodTwoValued, MeasureMethodWithBeta {
+
+protected double beta = 0;
+
+public double getMeasure(int tp, int fn, int fp, int tn) {
+double precision = Heuristics.divideOrZero( tp , tp+fp );
+
+if (beta == 0) {
+return Heuristics.getAScore(recall, precision);
+

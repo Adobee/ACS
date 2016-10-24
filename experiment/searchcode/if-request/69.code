@@ -1,0 +1,8 @@
+@Override
+public void apply(ApplyRequest request) {
+if(request.getRequestType().equals(&quot;請假&quot;)){
+System.out.print(request.getRequestType() + &quot;:&quot; + request.getRequestContent());
+System.out.println(&quot; &quot; + request.getRequestCount()  + &quot;天 被&quot; + name + &quot;批准&quot;);
+} else {
+if(request.getRequestCount() <= 1000){
+

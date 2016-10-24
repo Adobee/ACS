@@ -1,0 +1,7 @@
+private final boolean globallyDisabled;
+private final boolean dynamicMappingDisabled;
+private final String[] matches;
+public AutoCreateIndex(Settings settings, IndexNameExpressionResolver resolver) {
+this.resolver = resolver;
+dynamicMappingDisabled = !settings.getAsBoolean(MapperService.INDEX_MAPPER_DYNAMIC_SETTING, MapperService.INDEX_MAPPER_DYNAMIC_DEFAULT);
+

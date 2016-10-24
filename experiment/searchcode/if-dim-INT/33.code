@@ -1,0 +1,12 @@
+package metodosOrdenamiento;
+
+public class Seleccion {
+
+private int dim;
+private int vec[];
+
+
+public Seleccion(int dim, int vec[]) {
+this.dim = dim;
+this.vec = new int[dim];
+

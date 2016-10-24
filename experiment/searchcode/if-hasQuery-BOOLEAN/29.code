@@ -1,0 +1,15 @@
+import org.yubing.datmv.util.DataSource;
+
+public abstract class JdbcAggregationQueryReader extends JdbcQueryReader {
+
+protected boolean hasQuery = false;
+public boolean hasNext() {
+if (!hasQuery) {
+return true;
+}
+
+return false;
+}
+
+public RecordPage readPage(int pageSize) {
+

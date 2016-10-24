@@ -1,0 +1,6 @@
+for(E elem: rank){
+if (roundDouble(centrality.getCentrality(elem)) != roundDouble(previous)) {
+previous = roundDouble(centrality.getCentrality(elem));
+//	public static <E> double  relativeError(Centrality<E> approxC, Centrality<E> exactC){
+//		double error = 0.0;
+

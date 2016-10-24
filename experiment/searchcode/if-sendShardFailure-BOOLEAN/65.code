@@ -1,0 +1,12 @@
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicLong;
+
+/**
+*
+*/
+
+
+public class RecoveryStatus extends AbstractRefCounted {
+public void fail(RecoveryFailedException e, boolean sendShardFailure) {
+if (finished.compareAndSet(false, true)) {
+

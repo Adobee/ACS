@@ -1,0 +1,10 @@
+double bot = 0;
+
+double mid = -1;
+
+while((top - bot) / top > 1e-9) {
+mid = (top + bot) / 2.0;
+
+double midTime = runAlgorithmTime(c, mid);
+if(midTime - (double)time > 0) {
+

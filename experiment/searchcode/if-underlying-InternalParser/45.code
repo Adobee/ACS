@@ -1,0 +1,8 @@
+private final InternalParser underlying;
+
+static DateTimeParser of(InternalParser underlying) {
+if (underlying instanceof DateTimeParserInternalParser) {
+return ((DateTimeParserInternalParser) underlying).getUnderlying();
+}
+if (underlying instanceof DateTimeParser) {
+

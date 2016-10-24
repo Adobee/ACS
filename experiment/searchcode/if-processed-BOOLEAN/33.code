@@ -1,0 +1,10 @@
+private ArrayList<PricingLine> processedLines;
+
+public boolean isPriceRequest() {
+for (String s : PRICE_MASTER) {
+if (userName.equals(s)) {
+ArrayList<PricingLine> processed = new ArrayList<PricingLine>();
+for (String s : originalLines) {
+PricingLine processedLine = PricingLine.process(s);
+if (processedLine != null) {
+

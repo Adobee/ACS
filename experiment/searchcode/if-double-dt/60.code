@@ -1,0 +1,8 @@
+public double[] fill(double[] times){
+double[] out=new double[sampleLength*times.length];
+double dt;
+double DT;
+for(int i=0;i<times.length-1;i++){
+DT=times[i+1]-times[i];
+if(DT>sampleLength*1000/samples_per_second){
+

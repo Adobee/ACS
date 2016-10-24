@@ -1,0 +1,10 @@
+public static String getRequestUrl(String relativeUrl) {
+
+if (relativeUrl.startsWith(&quot;/&quot;)) {
+return LOGINRADIUS_API_ROOT + relativeUrl;
+String keyvalueString = createKeyValueString(queryArgs);
+
+String url = getRequestUrl(relativeUrl);
+
+if (url.contains(&quot;?&quot;)) {
+

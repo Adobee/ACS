@@ -1,0 +1,12 @@
+
+class MathUtil {
+
+static double greatestCommonDivisor(double[] a, double[] b) {
+
+double[] all = new double[a.length + b.length];
+for(int i = 1; i < all.length; i++) {
+gcd = greatestCommonDivisor(gcd, all[i]);
+if ( gcd == 1 ) break;
+}
+return gcd;
+

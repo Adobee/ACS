@@ -1,0 +1,8 @@
+String str = (String) params.get(&quot;interiorGap&quot;);
+if (str != null) {
+try {
+interiorGap = Double.parseDouble(str);
+} catch (NumberFormatException nfex) { }
+if (paramKey.startsWith(&quot;explode_&quot;)) {
+double explodePercent = Double.valueOf(paramKey.substring(8)).doubleValue();
+

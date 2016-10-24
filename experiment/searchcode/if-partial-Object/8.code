@@ -1,0 +1,10 @@
+this.partial = requireNonNull(partial,
+&quot;Partial database object not provided&quot;);
+if (!(partial instanceof PartialDatabaseObject))
+throw new IllegalArgumentException(&quot;Partial database object not provided&quot;);
+}
+
+if (!partial.equals(databaseObject))
+{
+throw new IllegalArgumentException(&quot;Inconsistent database object reference&quot;);
+

@@ -1,0 +1,9 @@
+public class DateSerializer extends FieldSerializer<Date> {
+
+public DateSerializer(Field field, Object object, JSONObject jsonObject) {
+return SerializationUtil.formatServerDate(date);
+}
+
+protected Date parse(Object value) {
+if (JSONObject.NULL.equals(value)) {
+

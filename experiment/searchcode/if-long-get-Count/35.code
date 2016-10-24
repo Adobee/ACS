@@ -1,0 +1,11 @@
+MutableLong count = keys.get(key);
+if (count == null) {
+keys.put(key, new MutableLong());
+} else {
+count.incr();
+}
+}
+
+public long get(T key) {
+MutableLong count = keys.get(key);
+

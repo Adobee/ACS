@@ -1,0 +1,9 @@
+public class WordAttributeFilter {
+
+Map<String,Object> ExactMatches;
+Map<String,Object> PartialMatches;
+
+public boolean passesFilter(Word W){
+for (Entry<String, Object> entry : ExactMatches.entrySet()){
+String category = entry.getKey();
+

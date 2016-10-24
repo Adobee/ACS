@@ -1,0 +1,13 @@
+* 序列化類別列舉
+*
+* @return
+*/
+public Set<SerializeType> getSerializeTypes() {
+if (serializeTypes == null) {
+byte[] result = new byte[0];
+//
+if (!serialize) {
+return result;
+}
+AssertHelper.notNull(serializeType, &quot;The SerializeType must not be null&quot;);
+

@@ -1,0 +1,7 @@
+public <T extends Buffer<T>> void writeUInt16(Buffer<T> buffer, int uint16) {
+buffer.ensureCapacity(2);
+if (uint16 < 0 || uint16 > 0xFFFF) {
+public <T extends Buffer<T>> void writeUInt64(Buffer<T> buffer, long uint64) {
+if (uint64 < 0)
+throw new RuntimeException(&quot;Invalid uint64 value: &quot; + uint64);
+

@@ -1,0 +1,13 @@
+for (int i=1;i<dataArray.size();i++)
+{
+if(currentRange.currentSum<0)
+{
+currentSum =  dataArray.get(i);
+currentRange.currentSum = currentSum;
+currentRange.removeTail();
+currentRange.add(dataArray.get(i));
+
+}
+
+else if (dataArray.get(i)<0 &amp;&amp; dataArray.get(i)+currentRange.currentSum>=0)
+

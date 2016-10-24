@@ -1,0 +1,11 @@
+BitSet group = new BitSet(data.numAttributes());
+
+for (int k = 0; k < data.numAttributes(); k++) {
+if (k != data.classIndex()) {
+int[] ranking = Utils.sort(merit);
+
+if (verbose) {
+System.out.print(&quot;Ranking [ &quot;);
+
+for (int i = 0; i < ranking.length; i++) {
+

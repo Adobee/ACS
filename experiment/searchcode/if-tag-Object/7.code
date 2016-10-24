@@ -1,0 +1,9 @@
+public PositionedTag(ExportedPositionedTag positionedTag) {
+Tag tag;
+if (positionedTag.getTag() instanceof Tag) {
+tag = (Tag) positionedTag.getTag();
+@Override
+public boolean equals(Object obj) {
+if (obj instanceof PositionedTag) {
+PositionedTag otherTag = (PositionedTag) obj;
+

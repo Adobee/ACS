@@ -1,0 +1,10 @@
+public int uniquePathsWithObstacles(int[][] mat) {
+
+if (mat[0][0] == 1) return 0;
+
+int m = mat.length;
+int n = mat[0].length;
+
+boolean obstacleOnBorders = false;
+for (int i = 0; i < mat.length; i++) {
+

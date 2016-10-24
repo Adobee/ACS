@@ -1,0 +1,7 @@
+public static double dotMutply(double[] f1, ArrayList<Double> f2) throws IllegalClassFormatException
+{
+if (f1.length != f2.size())
+public static double dotMutply(double[] f1, double[] f2) throws IllegalClassFormatException
+{
+if (f1.length != f2.length)
+

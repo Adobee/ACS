@@ -1,0 +1,8 @@
+* gets the real tile objects from real region
+*/
+@Override
+public WorldObject[] getObjects(int plane, int localX, int localY) {
+int realLocalY = (realRegionOffsetY * 8) + posInChunkY;
+
+int mask = region.getMask(regionCoords[plane][currentChunkX][currentChunkY][2], realLocalX, realLocalY);
+

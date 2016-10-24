@@ -1,0 +1,8 @@
+Vertex[] pointsCoordinates;
+Vertex[]    pathTaken;
+int      numberOfPoints;
+int[]    distanceMatrix;
+Vertex best = null;
+for (int j = 0; j < numberOfPoints; j++) {
+if (!usedPoints[j] &amp;&amp; (best == null || Utils.distance(pathTaken[i - 1], pointsCoordinates[j], distanceMatrix, numberOfPoints) < Utils.distance(pathTaken[i - 1], best, distanceMatrix, numberOfPoints))) {
+

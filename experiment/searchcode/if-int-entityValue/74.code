@@ -1,0 +1,7 @@
+final char ch = pCharSequence.charAt(i);
+if (ch == &#39;&amp;&#39;) {
+final int semi = TextUtils.indexOf(pCharSequence, &#39;;&#39;, i + 1);
+final CharSequence entityName = pCharSequence.subSequence(i + 1, semi);
+int entityValue;
+if (entityName.charAt(0) == &#39;#&#39;) {
+

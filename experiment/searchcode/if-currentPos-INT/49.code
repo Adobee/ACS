@@ -1,0 +1,12 @@
+public class FLegoCon implements ICommandConst {
+protected int heading;
+protected Point currentPos;
+protected IMap map;
+
+public FLegoCon(String name, String address, Point currentPos) {
+this.currentPos = currentPos;
+map = FMap.getInstance();
+}
+
+public Color travel(int dist, boolean checkColor) {
+

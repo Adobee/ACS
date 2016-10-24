@@ -1,0 +1,10 @@
+} else if (lhs instanceof char[]) {
+append((char[]) lhs, (char[]) rhs);
+} else if (lhs instanceof byte[]) {
+comparison = Order.of(Short.valueOf(lhs).compareTo(rhs));
+return this;
+}
+
+public CompareToBuilder append(char lhs, char rhs) {
+if (comparison != Order.EQ) {
+

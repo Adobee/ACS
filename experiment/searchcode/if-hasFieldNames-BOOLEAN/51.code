@@ -1,0 +1,7 @@
+public <U extends IValue> Result<U> fieldAccess(String name, TypeStore store) {
+if (!getType().hasFieldNames()) {
+throw new UndeclaredField(name, getType(), ctx.getCurrentAST());
+public <U extends IValue, V extends IValue> Result<U> fieldUpdate(String name, Result<V> repl, TypeStore store) {
+if (!getType().hasFieldNames()) {
+throw new UndeclaredField(name, getType(), ctx.getCurrentAST());
+

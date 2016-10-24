@@ -1,0 +1,7 @@
+Set<Obfuscatable> obfuscateList = handleObfuscation(target);
+if (CollectionUtils.isNotEmpty(obfuscateList)) {
+for (Obfuscatable subTarget : obfuscateList) {
+for (Object obj_ : (Iterable<?>) obj) {
+if (obj_ instanceof Obfuscatable) {
+obfuscate((Obfuscatable) obj_, user);
+

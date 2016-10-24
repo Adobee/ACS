@@ -1,0 +1,7 @@
+for(int x = 0; x < 9; x++) {
+if(cells[x][y].getText().equals(Integer.toString(num))) {
+BlockColumn(x);
+private void BlockColumn(int column) {
+for(int y = 0; y < 9; y++) {
+cells[column][y].setBackground(Color.red);
+

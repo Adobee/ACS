@@ -1,0 +1,11 @@
+public class RandomRoller implements Roller
+{
+Random rng = new Random();
+
+@Override
+public boolean percentChance(double chance)
+public int select(int options)
+{
+if(options==1) return 0;
+return rng.nextInt(options);
+

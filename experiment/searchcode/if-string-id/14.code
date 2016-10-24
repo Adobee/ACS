@@ -1,0 +1,12 @@
+package Web;
+
+public class WebUtil {
+
+public static Integer GetIdFromQueryString(String queryString)
+{
+String[] queryStringArray = null;
+String strId = null;
+Integer id = 0;
+
+if (queryString != null &amp;&amp; queryString != &quot;&quot;)
+

@@ -1,0 +1,7 @@
+final CharSequence    cs=getWholeText();
+final int            csLen=(null == cs) ? 0 : cs.length();
+if (csLen <= 0)
+return false;
+
+for (int    cIndex=0; cIndex < csLen; cIndex++)
+

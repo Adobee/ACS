@@ -1,0 +1,9 @@
+package com.mp4parser.streaming.extensions;
+
+import com.mp4parser.streaming.SampleExtension;
+key += (sampleIsNonSyncSample?1:0)<<27;
+
+SampleFlagsSampleExtension c = pool.get(key);
+if (c == null) {
+c = new SampleFlagsSampleExtension();
+

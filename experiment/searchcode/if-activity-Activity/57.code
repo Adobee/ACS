@@ -1,0 +1,11 @@
+private ActivityManagerUtil() {
+}
+
+public static ActivityManagerUtil getInstance() {
+if (instance == null) {
+instance = new ActivityManagerUtil();
+public void popActivity(Activity activity) {
+if (activity != null) {
+activity.finish();
+activityStack.remove(activity);
+

@@ -1,0 +1,9 @@
+private int value;
+
+public void addValue(int valueToAdd){
+//uncomment one of the 3 methods here to play with the effect
+private void addValueUnsynchronized1(int valueToAdd) {
+int localValue = value;
+sleep();
+/* Between assigning value to localValue and setting
+

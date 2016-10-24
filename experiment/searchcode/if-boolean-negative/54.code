@@ -1,0 +1,7 @@
+public BFNegativeCircleFinder(DirectedGraph<WeightedEdge> graph){
+if(graph == null)
+throw new NullPointerException();
+boolean[] visited = new boolean[graph.V()];
+for(int i=0; i<graph.V(); i++){
+if(visited[i]) continue;
+

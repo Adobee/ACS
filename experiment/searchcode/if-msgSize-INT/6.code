@@ -1,0 +1,10 @@
+void read(ByteBuffer buf) {
+if (msgSize < 0) {
+int remaining = buf.remaining();
+
+if (remaining > 0) {
+assert msgBytes.getSize() <= 4;
+
+if (msgBytes.getSize() == 4) {
+msgSize = msgBytes.getInt(0);
+

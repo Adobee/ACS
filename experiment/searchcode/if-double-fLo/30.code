@@ -1,0 +1,9 @@
+public Boolean start() {
+
+ItemStack typeStack = lot.getTypeStack();
+double preAuctionTax = floAuction.taxPerAuction;
+
+// Check banned items:
+for (int i = 0; i < floAuction.bannedItems.size(); i++) {
+if (items.isSameItem(typeStack, floAuction.bannedItems.get(i))) {
+

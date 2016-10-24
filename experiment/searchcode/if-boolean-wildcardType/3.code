@@ -1,0 +1,9 @@
+import org.eclipse.jdt.core.dom.WildcardType;
+
+import cn.edu.pku.sei.plde.qacrashfix.jdt.JDTTreeNode;
+
+public class JDTWildcardType extends JDTTreeNode {
+protected boolean setChildWithReference(ASTNode node, ASTNode referenceNode) {
+WildcardType other =(WildcardType) referenceNode.getParent();
+if (other.getBound() == referenceNode){
+

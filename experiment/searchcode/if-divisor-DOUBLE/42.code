@@ -1,0 +1,7 @@
+public Object execute(List<Object> params) {
+if (params.get(0) instanceof Double &amp;&amp; params.get(1) instanceof Double) {
+return (Double) params.get(0) / (Double) params.get(1);
+return differenceForDivisorArrayOnly((double[]) params.get(1), (double) params.get(0));
+}
+else if (params.get(1) instanceof Double) {
+

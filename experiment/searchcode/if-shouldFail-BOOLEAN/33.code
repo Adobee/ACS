@@ -1,0 +1,8 @@
+public void getVideos(@Query(&quot;maxResults&quot;) int maxResult, @Query(&quot;q&quot;) String text, @Query(&quot;key&quot;) String api_key, @Query(&quot;pageToken&quot;) String nextPage, Callback<YoutubeVO> callback) {
+if (!shouldFail) {
+callback.success((YoutubeVO) data, null);
+Observable<YoutubeVO> observable;
+
+if (shouldFail) {
+observable = Observable.error(new Exception(&quot;Mock Exception&quot;));
+

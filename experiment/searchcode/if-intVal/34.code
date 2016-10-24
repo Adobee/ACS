@@ -1,0 +1,14 @@
+public int getInt() { return val; }
+
+@Override
+public Value getField(String field)
+{
+if (&quot;str&quot;.equals(field)) {
+throw new UnsupportedOperationException();
+}
+
+@Override
+public Value addOp(Value b)
+{
+IntegerValue intVal = (IntegerValue)b;
+

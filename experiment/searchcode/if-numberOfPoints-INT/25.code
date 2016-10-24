@@ -1,0 +1,9 @@
+protected Pair<Double[], Double[]> computeRule(int numberOfPoints)
+throws NotStrictlyPositiveException {
+if (numberOfPoints <= 0) {
+throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_POINTS,
+numberOfPoints);
+}
+
+if (numberOfPoints == 1) {
+

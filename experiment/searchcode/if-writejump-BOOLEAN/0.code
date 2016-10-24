@@ -1,0 +1,11 @@
+if (this.left.valueTag() == BOOLEAN &amp;&amp; this.left.booleanValue())
+{
+return BooleanValue.TRUE;
+}
+if (this.bothFalse())
+this.right = this.right.cleanup(context, compilableList);
+
+if (this.bothFalse())
+{
+return BooleanValue.FALSE;
+

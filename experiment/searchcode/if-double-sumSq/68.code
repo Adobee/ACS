@@ -1,0 +1,9 @@
+private double min = Double.POSITIVE_INFINITY;
+private double max = Double.NEGATIVE_INFINITY;
+private double sum;
+private double sumSq;
+long n = recordCount - missing;
+double mean = sum / n;
+double stdDev = Math.sqrt((sumSq / n) - mean * mean);
+return new Numeric(min, max, mean, stdDev, missing);
+

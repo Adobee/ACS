@@ -1,0 +1,13 @@
+this.parentMatcher = parentMatcher;
+}
+
+@Override
+public boolean matches(Component component)
+{
+if (component == null)
+return false;
+
+Component parent = component.getParent();
+
+if (parent != null &amp;&amp; parentMatcher.matches(parent))
+

@@ -1,0 +1,14 @@
+* Created by dusanklinec on 25.07.16.
+*/
+public class EBRetryJobError<Error> {
+/**
+* If job fails with the particular error, this is the error returned from the job.
+this.error = error;
+}
+
+public EBRetryJobError(Throwable throwable) {
+this.throwable = throwable;
+}
+
+public EBRetryJobError(Error error, Throwable throwable) {
+

@@ -1,0 +1,15 @@
+* Create a new TimeSpan
+*/
+public TimeSpan(long millis)
+{
+initialise(millis);
+}
+
+
+/**
+* Create a new TimeSpan
+*/
+public TimeSpan(int hours, int mins, int secs)
+{
+long _millis = (hours * MILLIS_PER_HOUR);
+

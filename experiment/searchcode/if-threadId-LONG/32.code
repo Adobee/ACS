@@ -1,0 +1,8 @@
+for (int threadID=OFFSET+1; threadID <= numThreads; threadID++) {
+long p = period[threadID];
+if (p == 0) continue;
+long newPeriod = (p+startPeriod[threadID])-currentTime;
+if (enabled[threadID]) {
+long timeLeft = (cost[threadID] - work[threadID])*1000;
+if (cost[threadID]!=0) {
+

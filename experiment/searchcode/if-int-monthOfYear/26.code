@@ -1,0 +1,10 @@
+public DatePickerDialogExtended(Context context,
+OnDateSetListener callBack, int year, int monthOfYear,
+int dayOfMonth) {
+super(context, callBack, year, monthOfYear, dayOfMonth);
+public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth)
+{
+if (_past == false){
+if (year < _year)
+view.updateDate(_year, _month, _day);
+

@@ -1,0 +1,11 @@
+public void increSentenceCount() {
+sentenceCount += 1.0;
+}
+
+public void addNewChar(Character firstChar) {
+// 递增句子数量
+increSentenceCount();
+Double count = firstCharCountMap.get(firstChar);
+if(count != null) {
+firstCharCountMap.put(firstChar, count + 1);
+

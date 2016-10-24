@@ -1,0 +1,10 @@
+public ListNode deleteDuplicates(ListNode head) {
+if (head == null) {
+return head;
+}
+int curVal = head.val;
+ListNode iter = head.next;
+ListNode preIter = head;
+while (iter != null) {
+if (iter.val == curVal) {
+

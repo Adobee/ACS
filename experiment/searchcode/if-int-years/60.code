@@ -1,0 +1,13 @@
+import cn.agilean.demo.loan.LoanApplyDataFolder;
+
+public class LoanYearsApproval {
+
+private static final int MAX_LOAN_YEARS = 30;
+private static final int MAX_REPAYMENT_AGE_FEMALE = 60;
+return nowYear-birthYear;
+}
+
+private int maxLeftEarnableYears(Borrower borrower) {
+int leftEarnableYears;
+if (borrower.getGender()==Gender.MALE)
+

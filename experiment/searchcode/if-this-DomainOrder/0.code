@@ -1,0 +1,9 @@
+return this.name.hashCode();
+}
+
+private Object readResolve() {
+if (this.equals(DomainOrder.ASCENDING)) {
+return DomainOrder.ASCENDING;
+}
+if (this.equals(DomainOrder.DESCENDING)) {
+

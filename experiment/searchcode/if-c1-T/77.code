@@ -1,0 +1,6 @@
+// Handle collisions between circles
+if (firstObject instanceof Circle &amp;&amp; secondObject instanceof Circle) {
+c1 = (Circle) firstObject;
+// Do a second check to figure out if the circles have actually collided yet
+//double distSquared = Math.pow(c1.centerX - c2.centerX, 2) + Math.pow(c1.centerY - c2.centerY, 2);
+

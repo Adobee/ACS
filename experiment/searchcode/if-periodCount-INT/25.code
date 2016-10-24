@@ -1,0 +1,8 @@
+public boolean isNumber(String s) {
+s = s.trim();
+if (s.isEmpty())
+return false;
+int eCount = 0, periodCount = 0, index = 0, numberCount = 0;
+if(s.charAt(index) == &#39;.&#39;) periodCount++;
+if((s.charAt(index) == &#39;-&#39;) || s.charAt(index) == &#39;+&#39; || s.charAt(index) == &#39;.&#39;) index++;
+

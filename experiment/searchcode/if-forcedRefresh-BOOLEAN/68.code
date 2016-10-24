@@ -1,0 +1,9 @@
+protected UpdateResponse newResponse() {
+return new UpdateResponse();
+}
+
+@Override
+protected boolean retryOnFailure(Throwable e) {
+// Fail fast on the node that received the request, rather than failing when translating on the index or delete request.
+if (request.routing() == null &amp;&amp; metaData.routingRequired(concreteIndex, request.type())) {
+

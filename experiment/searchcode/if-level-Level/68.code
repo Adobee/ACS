@@ -1,0 +1,12 @@
+package navalgobattle.util.logger;
+
+public enum LogLevel {
+DEBUG(1|2|4|8|16),
+INFO(1|2|4|8),
+public boolean doLog(LogLevel level){
+if((this.level &amp; level.getLevel()) == level.getLevel())
+return true;
+return false;
+}
+}
+

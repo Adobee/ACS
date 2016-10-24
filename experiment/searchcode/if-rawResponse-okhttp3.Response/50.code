@@ -1,0 +1,7 @@
+int code = rawResponse.code();
+if (code < 200 || code >= 300) {
+try {
+return Response.success(body, rawResponse);
+} catch (RuntimeException e) {
+// If the underlying source threw an exception, propagate that rather than indicating it was
+

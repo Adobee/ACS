@@ -1,0 +1,7 @@
+package info.tobaccoratings.app.service;
+
+import info.tobaccoratings.app.model.Mix;
+import info.tobaccoratings.app.model.MixVote;
+import info.tobaccoratings.app.model.Tobacco;
+import info.tobaccoratings.app.repository.MixRepository;
+

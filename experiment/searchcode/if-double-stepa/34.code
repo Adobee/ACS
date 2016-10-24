@@ -1,0 +1,7 @@
+if (newODF)
+odf = new double[alphama * betaalphama];
+if (refreshODF/* &amp;&amp; tubeProjection*/)
+included[count++] = true;
+} else if (r < maxAngle) {
+double phaseAng = Math.atan2(x, y);
+

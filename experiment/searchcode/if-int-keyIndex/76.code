@@ -1,0 +1,10 @@
+table[i] = null;
+}
+}
+
+public V put(K key, V value){
+int keyIndex = (getHashCode(key) &amp; 0x7FFFFFFF) % (tableSize);
+// System.out.println(&quot;keyIndex: &quot;+keyIndex);
+if(table[keyIndex] == null){
+table[keyIndex] = new HashEntry<K, V>(key, value);
+

@@ -1,0 +1,13 @@
+connection = unboundConnection;
+}
+
+public Time getDate(boolean withTime)
+{
+Time ret = new Time(connection.pln.sdate);
+ret.monthDay += day;
+ret.allDay = !withTime;
+
+if(withTime)
+{
+int tv = connection.getTrain(0).deptime.intValue();
+

@@ -1,0 +1,11 @@
+protected boolean incMoment = true;
+
+/** */
+public Mean() {
+moment = new FirstMoment();
+* @see org.apache.commons.math.stat.univariate.StorelessUnivariateStatistic#increment(double)
+*/
+public void increment(final double d) {
+if (incMoment) {
+moment.increment(d);
+

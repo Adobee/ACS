@@ -1,0 +1,10 @@
+import com.serotonin.m2m2.i18n.TranslatableMessage;
+
+
+public class DateUtils {
+public static long minus(long time, int periodType, int periods) {
+return time.minus(Common.getPeriod(periodType, periods));
+}
+
+public static long plus(long time, int periodType, int periods) {
+

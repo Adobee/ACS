@@ -1,0 +1,8 @@
+private long totalRecord = 0;
+private long totalPage;//总页数
+private Object data = null;
+
+public PagingResult(long totalRecord, long pageSize, Object data) {
+this.totalRecord = totalRecord;
+if (totalRecord%pageSize >0) {
+

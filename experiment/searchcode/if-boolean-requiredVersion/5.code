@@ -1,0 +1,11 @@
+import java.lang.reflect.Field;
+
+public class OSUtils {
+
+public static boolean atLeastFroyo() {
+return osAtLeast(Build.VERSION_CODES.FROYO);
+private static int sVersion = -1;
+
+private static boolean osAtLeast(int requiredVersion) {
+if (sVersion == -1) {
+

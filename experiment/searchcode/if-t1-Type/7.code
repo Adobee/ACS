@@ -1,0 +1,9 @@
+import ast.statement.*;
+import ast.type.*;
+
+public interface GenericVisitor<T1, T2> {
+public T1 visit(Node n, T2 arg);
+public T1 visit(AssignmentStatement n, T2 arg);
+public T1 visit(IfStatement n, T2 arg);
+public T1 visit(PrintStatement n, T2 arg);
+

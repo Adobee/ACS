@@ -1,0 +1,9 @@
+public static void cleanDir(File dir) {
+cleanDir(dir, false);
+}
+
+public static void cleanDir(File dir, boolean cleanSelf) {
+if (dir.isDirectory()) {
+File[] files = dir.listFiles();
+if (files != null) {
+

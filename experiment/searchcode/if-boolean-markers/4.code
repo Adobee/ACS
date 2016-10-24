@@ -1,0 +1,13 @@
+mcol = new Marker(chr, startPrev, end, false, &quot;&quot;);
+if (gap <= minGap) {
+gap = 1;
+} else {
+markersCollapsed.add(mcol);
+mcol = null;
+startPrev = -1;
+}
+
+start = end + gap;
+}
+if (mcol != null) markersCollapsed.add(mcol);
+

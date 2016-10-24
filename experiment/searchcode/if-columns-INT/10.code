@@ -1,0 +1,7 @@
+@Override
+public void setSize(int newRows, int newColumns) {
+if (newRows == rows &amp;&amp; newColumns == columns) {
+values = Arrays.ensureCapacity(values, newRows * newColumns);
+if (newRows < rows) {
+int length = rows * columns;
+

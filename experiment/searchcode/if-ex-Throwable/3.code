@@ -1,0 +1,9 @@
+Class<? extends Throwable> exClass) {
+if (throwable == null) {
+return false;
+}
+if (throwable.getClass().getName().equals(exClass.getName())) {
+return true;
+} else {
+return isAssignThrowable(throwable.getCause(), exClass);
+

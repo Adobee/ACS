@@ -1,0 +1,11 @@
+for (Range range : rangesList) {
+if (range.merge(newRange)) {
+merged = range;
+break;
+}
+}
+if (merged == null) {
+rangesList.add(newRange);
+} else {
+rangesList.remove(merged);
+

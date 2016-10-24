@@ -1,0 +1,7 @@
+public static <C extends GcdRingElem<C>> GenSolvablePolynomial<C> leftBaseSparsePseudoRemainder(
+GenSolvablePolynomial<C> P, GenSolvablePolynomial<C> S) {
+if (S == null || S.isZERO()) {
+return P.ring.getZERO();
+}
+if (P instanceof RecSolvablePolynomial) {
+

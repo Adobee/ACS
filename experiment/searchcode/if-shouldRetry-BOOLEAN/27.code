@@ -1,0 +1,9 @@
+final RetryPolicy retryPolicy = new RetryPolicy().abortIf(t -> true);
+
+//when
+final boolean shouldRetry = retryPolicy.shouldContinue(retryContextMock);
+final RetryPolicy retryPolicy = new RetryPolicy().retryIf(t -> true);
+
+//when
+final boolean shouldRetry = retryPolicy.shouldContinue(retryContextMock);
+

@@ -1,0 +1,10 @@
+final boolean isDirty() {
+return true;
+}
+
+@Override
+final boolean isChanged() {
+return dirtyState == DirtyState.NEEDS_REBUILDING || dirtyState == DirtyState.REBUILDING;
+* If this node is not yet known to need rebuilding, sets {@link #dirtyState} to {@link
+* DirtyState#NEEDS_REBUILDING} if the child has changed, and {@link DirtyState#VERIFIED_CLEAN} if
+

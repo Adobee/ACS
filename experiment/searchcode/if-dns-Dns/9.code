@@ -1,0 +1,12 @@
+import javax.faces.bean.ManagedBean;
+import com.novell.ldap.LDAPException;
+
+import entidades.PessoaDns;
+import modelo.PessoaDnsDAO;
+import modelo.PessoaDnsDAOImpl;
+PessoaDnsDAO pessoaDnsDAO = new PessoaDnsDAOImpl();
+ArrayList<PessoaDns> pessoas = new ArrayList<PessoaDns>();
+
+public String logar(){
+if (pessoaDnsDAO.login(pessoaDns) == true) {
+

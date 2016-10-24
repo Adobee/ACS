@@ -1,0 +1,9 @@
+private final int length;
+private final boolean isLast;
+
+/**
+* @param data - underlying content
+* @param onFree - callback that will be called when data from this chunk has been fully consumed.
+*/
+public ByteArrayChunk(byte[] data, int length, boolean isLast, Consumer<byte[]> onFree) {
+

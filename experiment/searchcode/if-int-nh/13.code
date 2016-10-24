@@ -1,0 +1,7 @@
+Stack<Integer> stack = new Stack<Integer>();
+int hlen = grid.length;
+if(hlen == 0) return 0;
+int nw = stack.pop();
+int nh = stack.pop();
+grid[nh][nw] = &#39;2&#39;;
+

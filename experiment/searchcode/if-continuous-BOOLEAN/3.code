@@ -1,0 +1,17 @@
+package obj.effects.continuous;
+
+
+public class ConditionalContinuousEffect extends ContinuousEffect {
+this.effect = effect;
+}
+
+@Override
+public boolean applyThis() {
+if (condition.check(ref)) {
+return effect.apply();
+} else
+return false;
+}
+
+}
+

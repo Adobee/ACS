@@ -1,0 +1,12 @@
+private static final int intVersion = 1;
+private static final String appName = &quot;chgs&quot;;
+private static final String appDescription = &quot;A multimedia platform for 4igi guitar school&quot;;
+return strVersion;
+}
+
+public static int getIntVersion() {
+return intVersion;
+}
+
+public static String getAppName() {
+

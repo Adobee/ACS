@@ -1,0 +1,13 @@
+private String separator = &quot;.&quot;;
+
+public VersionResolver()
+{
+super();
+}
+
+public VersionResolver(int parts, String separator)
+String[] split = version.split(separator);
+if (split.length > parts)
+{
+throw new IllegalArgumentException(&quot; version is malformed &quot; + version);
+

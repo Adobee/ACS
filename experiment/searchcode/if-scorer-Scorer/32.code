@@ -1,0 +1,7 @@
+public float score() throws IOException {
+int curDoc = reqScorer.doc();
+float reqScore = reqScorer.score();
+if (firstTimeOptScorer) {
+firstTimeOptScorer = false;
+if (! optScorer.skipTo(curDoc)) {
+

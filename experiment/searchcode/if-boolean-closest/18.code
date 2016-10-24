@@ -1,0 +1,10 @@
+protected int lastY = 0;
+protected boolean checkedLastX = true;
+@Override
+protected void chooseAction()
+{
+int closestEnemy = findClosest();
+if(closestEnemy>-1)
+{
+if(distanceToEnemy(closestEnemy)<400)
+

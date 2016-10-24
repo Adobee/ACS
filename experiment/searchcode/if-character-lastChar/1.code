@@ -1,0 +1,9 @@
+return NEWLINE.with(builder.toString());
+}
+if (Character.isWhitespace(lastChar)) {
+while (Character.isWhitespace(lastChar)) {
+return WHITESPACE.with(builder.toString());
+}
+if (Character.isLetterOrDigit(lastChar)) {
+while (Character.isLetterOrDigit(lastChar)) {
+

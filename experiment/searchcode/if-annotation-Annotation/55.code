@@ -1,0 +1,9 @@
+* Find an instance of the annotationClass in an annotation arrays including the first level of meta-annotation.
+*
+* @return the annotationClass instance if present, null otherwise
+*/
+@SuppressWarnings(&quot;unchecked&quot;)
+for (Annotation annotation : annotations) {
+if (annotation.annotationType().equals(annotationClass)) {
+return (T) annotation;
+

@@ -1,0 +1,10 @@
+assertThat(System.currentTimeMillis() - now, greaterThan(timeout.millis() - 50));
+}
+}
+
+void checkBulkAction(boolean indexShouldBeAutoCreated, BulkRequestBuilder builder) {
+// via the timeout, as bulk operation do not wait on blocks.
+TimeValue timeout;
+if (indexShouldBeAutoCreated) {
+// we expect the bulk to fail because it will try to go to the master. Use small timeout and detect it has passed
+

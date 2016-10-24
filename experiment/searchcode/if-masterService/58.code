@@ -1,0 +1,8 @@
+public Supplier supplier(@PathVariable String id) {
+Supplier sp = masterService.findSupplierByKode(id);
+if(sp==null){
+responseEntity = new ResponseEntity<Object>(errors.getAllErrors(), HttpStatus.BAD_REQUEST);
+} else {
+Supplier sp = masterService.findSupplierByKode(id);
+if(sp==null){
+

@@ -1,0 +1,14 @@
+return expanded;
+}
+
+public void setExpanded(boolean expanded) {
+if (expanded) {
+expand();
+} else {
+firePropertyChange(EXPANDED, Boolean.valueOf(expandedOld), Boolean.valueOf(expanded));
+return true;
+}
+
+public boolean collapse() {
+if (!isVisible()) {
+

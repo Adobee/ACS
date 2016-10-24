@@ -1,0 +1,13 @@
+// problems with aliasing
+
+public class AliasExample {
+
+boolean allNull = true;
+/*@ non_null */ Object[] a = new Object[2];
+public void insert(int i, Object o) {
+a[i] = o;
+if (o != null) allNull = false;
+if (o == null) allNull = (a[1-i]==null);
+}
+}
+

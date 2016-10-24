@@ -1,0 +1,11 @@
+private static int detectarQuadrante(double x1, double y1, double x2, double y2 )
+{
+if ( ( x2 > x1 &amp;&amp; y2 > y1 ) ||
+( x2 > x1 &amp;&amp; y2 == y1 ) ||
+public static double calcularGrauRelativo(double x1, double y1,double x2, double y2 )
+{
+double x = 0;
+double y = 0;
+
+if ( x2 > x1 )
+

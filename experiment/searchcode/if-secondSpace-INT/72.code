@@ -1,0 +1,10 @@
+return diagram.getFactorDescription();
+
+if(prop.startsWith(FACTOR) &amp;&amp; !prop.contains(_VALUE_)){
+int index = Integer.parseInt(prop.substring(prop.indexOf(SPACE) + 1));
+return diagram.getFactors().get(index).getFactorName();
+}
+
+if(prop.startsWith(FACTOR) &amp;&amp; prop.contains(_VALUE_)){
+int firstSpace = prop.indexOf(SPACE) + 1;
+

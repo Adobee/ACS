@@ -1,0 +1,12 @@
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+return new Millimeter(this.measurement);
+}
+
+public double add(Millimeter secondLength) {
+return this.measurement + secondLength.measurement;
+}
+}
+

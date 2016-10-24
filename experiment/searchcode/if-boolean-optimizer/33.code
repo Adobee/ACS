@@ -1,0 +1,12 @@
++ &quot;Disabling JIT compiler.  Reflective Optimizer will be used.&quot;);
+defaultOptimizer = SAFE_REFLECTIVE;
+}
+
+if (Boolean.getBoolean(&quot;mvel2.disable.jit&quot;)) {
+throw new RuntimeException(&quot;unable to instantiate accessor compiler&quot;, e);
+}
+}
+
+public static AccessorOptimizer getThreadAccessorOptimizer() {
+if (threadOptimizer.get() == null) {
+

@@ -1,0 +1,8 @@
+class QuickSort29 {
+public static void sort(int[] a, int left, int right) {
+int index = partition(a, left, right);
+while(a[right] > pivot) right--;
+if (left <= right) {
+int temp = a[left];
+a[left] = a[right];
+

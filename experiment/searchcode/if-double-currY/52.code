@@ -1,0 +1,12 @@
+for(int i = 0; i < leads.length; i++) {
+if(leads[i][1] == currX &amp;&amp; leads[i][0] == currY+1) {
+ret = i;
+}
+}
+
+return ret;
+if(leads[i][0] == currY &amp;&amp; leads[i][1] == currX+1) {
+ret = i;
+}
+if(leads[i][0] == currY &amp;&amp; leads[i][1] < min) {
+

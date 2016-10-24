@@ -1,0 +1,11 @@
+public Try<E> ifFailure(Supplier<Try<E>> supplier) {
+return supplier.get();
+}
+
+
+@Override
+public boolean isFailure() {
+return true;
+}
+}
+

@@ -1,0 +1,8 @@
+public static CachedBeanData update(BeanDescriptor<?> desc, CachedBeanData existingData, EntityBean updateBean) {
+
+// take a copy of the raw data and loaded status
+boolean[] copyLoaded = existingData.copyLoaded();
+Object[] copyData = existingData.copyData();
+
+EntityBeanIntercept ebi = updateBean._ebean_getIntercept();
+

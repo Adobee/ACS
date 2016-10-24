@@ -1,0 +1,15 @@
+public ObjectStoreSessionCache(ObjectStoreCache upstream)
+{
+this.upstream = upstream;
+}
+
+public Key getKey(Object object)
+{
+if (object == null)
+return null;
+
+Key key = objectToKey.get(object);
+if (key == null)
+{
+key = upstream.getKey(object);
+

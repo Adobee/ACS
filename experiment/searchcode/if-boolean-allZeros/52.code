@@ -1,0 +1,8 @@
+exp = null;
+}
+String numeric = val.substring(0, val.length() - 1);
+boolean allZeros = (isAllZeros(mant)) &amp;&amp; (isAllZeros(exp));
+Float f = createFloat(numeric);
+if ((!f.isInfinite()) &amp;&amp; ((f.floatValue() != 0.0F) || (allZeros))) {
+return f;
+

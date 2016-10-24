@@ -1,0 +1,12 @@
+public class RungeKuttaSolver {
+
+
+
+public static ArrayList<Double[]> compute() {
+double currX = 0;
+double currY = 0;
+currY = prevCoords[1] + h * (k1y + 2 * k2y + 2 * k3y + k4y);
+
+if (currY > 0) {
+dataList.add(new Double[] { currX, currY });
+

@@ -1,0 +1,7 @@
+comparatorMap.put(&quot;javax.inject.Named&quot;, new AnnotationComparator<Named>() {
+@Override public boolean isEqual(Named a1, Named a2) {
+if (!a1.value().equals(a2.value())) {
+public boolean isEqual(Annotation a1, Annotation a2) {
+if (QualifierUtil.isSameType(a1, a2)) {
+if (comparatorMap.containsKey(a1.annotationType().getName())) {
+

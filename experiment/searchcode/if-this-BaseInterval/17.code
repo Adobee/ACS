@@ -1,0 +1,9 @@
+public OccurrenceAllocation(BaseInterval<Integer> allocation) {
+this.start = allocation.getStart();
+this.duration = allocation.getEnd() - this.start;
+* Returns interval of this allocation
+* @return
+*/
+public BaseInterval<Integer> toInterval() {
+return new BaseInterval<>(start, start + duration);
+

@@ -1,0 +1,8 @@
+public static String escapeMapKey(String source) {
+source = source.replace(&quot;%&quot;, PERCENT_REPLACEMENT);
+if (source.contains(&quot;.&quot;)) {
+source = source.replace(&quot;.&quot;, DOT_REPLACEMENT);
+public static String unescapeMapKey(String source) {
+source = source.replace(DOT_REPLACEMENT, &quot;.&quot;);
+if (source.startsWith(DOLLAR_REPLACEMENT)) {
+

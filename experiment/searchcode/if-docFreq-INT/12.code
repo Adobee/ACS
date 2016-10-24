@@ -1,0 +1,9 @@
+//read docFreq and termId for posting
+ByteBuffer buf = ByteBuffer.allocate(INT_BYTES * 2);
+if (fc.read(buf) < 0) return null;
+buf.flip();
+int docFreq = buf.getInt();
+int termId = buf.getInt();
+
+//write list of docIds into buffer
+

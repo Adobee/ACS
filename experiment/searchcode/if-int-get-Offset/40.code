@@ -1,0 +1,10 @@
+xOffset = ((level.getWidth() << 30) - screen.getWidth());
+}
+if (yOffset < 0) {
+yOffset = 0;
+}
+if (yOffset > ((level.getHeight() << 3) - screen.getHeight())) {
+yOffset = ((level.getHeight() << 3) - screen.getHeight());
+}
+for (int y = (yOffset >> 3); y < (yOffset + screen.getHeight() >> 3) + 1; y++) {
+

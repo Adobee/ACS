@@ -1,0 +1,8 @@
+int rhsSignum = ((int)( rhsLaside >> 63)) | ((int) ((-rhsLaside) >>> 63));
+int signumDiff = lhsSignum - rhsSignum;
+if (signumDiff != 0){
+ret = (signumDiff > 0 ? 1 : -1);
+int rhsSignum = ((int)( rhsLaside >> 63)) | ((int) ((-rhsLaside) >>> 63));
+int signumDiff = lhsSignum - rhsSignum;
+if (signumDiff != 0)
+

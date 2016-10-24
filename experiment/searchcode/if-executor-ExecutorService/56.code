@@ -1,0 +1,11 @@
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+
+/**
+* Created by sa on 2016/8/24.
+*/
+public class App extends Application {
+public static ExecutorService getExecutorService() {
+if (executorService == null) {
+executorService = Executors.newFixedThreadPool(Runtime.getRuntime().availableProcessors());
+

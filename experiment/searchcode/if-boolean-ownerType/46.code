@@ -1,0 +1,7 @@
+public static void addValidator(String ownerType,AccessAuthorityValidator validator){
+if(validators.containsKey(ownerType)){
+validators.put(ownerType, validator);
+}
+
+public static boolean isAccessable(String ownerType, String ownerId,String createUserId) {
+

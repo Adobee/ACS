@@ -1,0 +1,9 @@
+public static MenuSection buildMenuSection(Bundle savedState) {
+String type = savedState.getString(MENU_TYPE_KEY);
+
+if(type.equals(MenuSectionNewSearch.type)) {
+return MenuSectionNewSearch.newInstance(savedState);
+}
+
+if(type.equals(MenuSectionSearchResults.type)) {
+

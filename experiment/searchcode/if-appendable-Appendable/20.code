@@ -1,0 +1,11 @@
+public static void writeConditionalComment(Appendable appendable, CharSequence value, boolean isStartingTag, boolean downlevelHidden, boolean isHiddenEndTag) throws IOException {
+if (isStartingTag) {
+if (downlevelHidden) {
+appendable.append(&quot;<!--[&quot;);
+appendable.append(value);
+
+appendable.append(&quot;]>&quot;);
+} else {
+if (isHiddenEndTag) {
+appendable.append(&quot;<!--&quot;);
+

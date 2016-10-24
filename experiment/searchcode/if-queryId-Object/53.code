@@ -1,0 +1,10 @@
+private SqlSessionTemplate sqlSession;
+
+protected void printQueryId(String queryId) {
+if(log.isDebugEnabled()){
+log.info(&quot;\t QueryId  \t:  &quot; + queryId);
+}
+}
+
+public Object insert(String queryId, Object params){
+

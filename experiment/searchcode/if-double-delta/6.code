@@ -1,0 +1,10 @@
+return 2*x;
+}
+
+double bisect(double a, double b, double delta){
+if(b-a <= delta)
+return b;
+double x = (b+a)/2;
+if(function(x) >= 0)
+return bisect(a, x, delta);
+

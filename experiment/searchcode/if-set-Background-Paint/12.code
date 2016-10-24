@@ -1,0 +1,10 @@
+Paint backgroundPaint = component.getBackgroundPaint();
+
+if (!component.isOpaque() || backgroundPaint == null)
+return;
+g2d.setPaint(backgroundPaint);
+g2d.fill(shape);
+g2d.setPaint(oldPaint);
+}
+}
+

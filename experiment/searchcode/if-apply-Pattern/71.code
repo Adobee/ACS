@@ -1,0 +1,9 @@
+final Pattern p2 = p.getOperand2 ();
+final Pattern q1 = memoApply (p1);
+final Pattern q2 = memoApply (p2);
+if (p1 == q1 &amp;&amp; p2 == q2)
+final Pattern q2 = memoApply (p2);
+if (p1 == q1 &amp;&amp; p2 == q2)
+return p;
+return builder.makeChoice (q1, q2);
+

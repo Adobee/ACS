@@ -1,0 +1,7 @@
+public static String getElementAsText(String json, String elementName) {
+try {
+JsonParser jp = factory.createParser(json);
+while ((token = jp.nextToken()) != null) {
+if(token== JsonToken.START_OBJECT) {
+jp.skipChildren();
+

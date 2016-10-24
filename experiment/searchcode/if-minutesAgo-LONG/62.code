@@ -1,0 +1,8 @@
+return oldestPos;
+}
+
+private long getTimeStampAtPastMinutesAgo(int minutesAgo) throws LogTradeException {
+Calendar calendar;
+if (minutesAgo < 0)
+throw new LogTradeException(&quot;Past minutes in the future&quot;);
+

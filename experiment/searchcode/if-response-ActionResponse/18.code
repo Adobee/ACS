@@ -1,0 +1,8 @@
+class CancelOrderAction implements Action {
+
+@Override
+
+public ActionResponse execute(HttpServletRequest request, HttpServletResponse response) {
+if (customer == null) {
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;loginCustomer&quot;);
+

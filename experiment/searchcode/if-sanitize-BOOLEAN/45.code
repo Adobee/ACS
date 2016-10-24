@@ -1,0 +1,14 @@
+else if(c==&#39;s&#39;)backward();
+else if(c==&#39;q&#39;)stop();
+wait(200);
+}
+}
+
+public static boolean stop(){return setMotors(0,0);}
+}catch(Exception e){e.printStackTrace();}
+}
+
+//0 = stop, 1 = turn right, 2 = turn left
+private static boolean setMotors(int lm, int rm){
+if(lm<0||lm>2||rm<0||rm>2){sendRawCommand(0);return false;}
+

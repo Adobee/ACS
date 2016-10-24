@@ -1,0 +1,8 @@
+protected boolean applicable(Object object) {
+return object instanceof PersistentEntity;
+}
+
+public void prePersist(Object object) {
+if(applicable(object)) {
+PersistentEntity persistentEntity = (PersistentEntity) object;
+

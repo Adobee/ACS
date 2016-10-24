@@ -1,0 +1,10 @@
+Win(&quot;defeated&quot;), Loss(&quot;lost to&quot;), Draw(&quot;drew with&quot;), Bye(&quot;did not play&quot;);
+
+private final String externalValue;
+
+private Outcome(String value) {
+this.externalValue = value;
+public static Outcome fromExternal(String value) {
+for (Outcome outcome : values()) {
+if (outcome.externalValue.equals(value))
+

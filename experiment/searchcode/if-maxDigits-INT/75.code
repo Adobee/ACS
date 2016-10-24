@@ -1,0 +1,13 @@
+((FormatFlag.DEFAULT &amp; (~ FormatFlag.RADIX_MASK)) | FormatFlag.HEX), 16, 2);
+
+protected int flags;
+protected int defaultRadix;
+protected int maxDigits;
+
+public ParseOptions() {
+defaultRadix = DEFAULT_RADIX;
+maxDigits = DEFAULT_MAX_DIGITS;
+}
+
+public ParseOptions(final int flags) {
+

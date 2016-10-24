@@ -1,0 +1,8 @@
+* Méthode pour transformer un objet modèle en {@link okhttp3.FormBody.Builder}.
+* <p/>
+* Cette méthode est du code expérimental/prototype.
+Class clazz = modele.getClass();
+FormBody.Builder formBuilder = new FormBody.Builder();
+do {
+Field[] fields = clazz.getDeclaredFields();
+

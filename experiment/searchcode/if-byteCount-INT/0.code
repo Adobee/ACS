@@ -1,0 +1,13 @@
+add(inbuffer2);
+}
+
+public void add(ByteBuffer inbuffer) {
+
+int byteCount = inbuffer.remaining();
+if(byteCount > 0xFF) {
+buffer.put(sizeCount);
+byteCount -= 0xFF;
+
+for (int i = 0; i < sizeCount; ++i) {
+buffer.put(byteCount > 0xFF ? (byte) 0xFF : (byte) byteCount);
+

@@ -1,0 +1,10 @@
+public double installmentPaymentCalculation(double P, double i, double n) {
+if(P*i*n==0){
+return 0;
+}
+else{
+double F;
+.pow((1 + i / 12), n * 12) - 1));
+double f =Double.valueOf(new java.text.DecimalFormat(&quot;#.00&quot;).format(F)).doubleValue();
+return f==0.0?F:f;
+

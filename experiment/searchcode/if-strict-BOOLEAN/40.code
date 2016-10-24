@@ -1,0 +1,13 @@
+Line l = parser.parse(section);
+
+if (strict &amp;&amp; l.isFailed()) {
+throw new RuntimeException(&quot;&quot; + lineStart + &quot; &quot; + l);
+}
+
+l.setOffset(lineStart);
+
+return l;
+}
+
+public boolean isStrict() {
+

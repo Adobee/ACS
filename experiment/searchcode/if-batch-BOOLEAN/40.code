@@ -1,0 +1,11 @@
+querybBatch.setCreateDateFormat(timeStr);
+list = batchDao.queryBatch(querybBatch);
+
+if(list == null || list.size() <= 0){
+public boolean checkBatchNo(String batchNo){
+boolean isOk = true;
+
+if(Strings.isNullOrEmpty(batchNo)){
+isOk = false;
+LOG.info(&quot;批次号不能为空&quot;);
+

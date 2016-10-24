@@ -1,0 +1,10 @@
+public WeakInvalidationListener(InvalidationListener listener) {
+this.listenerReference = new WeakReference<InvalidationListener>(listener);
+}
+
+public boolean wasGabageCollected() {
+public void invalidated(Observable observable) {
+InvalidationListener listener = listenerReference.get();
+
+if (listener != null) {
+

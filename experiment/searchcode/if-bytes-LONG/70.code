@@ -1,0 +1,9 @@
+@Override
+public byte[] serialize(Long s) {
+return (null != s ? s.toString().getBytes() : new byte[0]);
+}
+
+@Override
+public Long deserialize(byte[] bytes) {
+if (bytes == null || bytes.length == 0) {
+

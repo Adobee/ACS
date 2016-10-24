@@ -1,0 +1,10 @@
+import java.math.*;
+
+public class Fractal {
+int i = 0, j = 0, t = 0, n = 0;
+int loc_x, loc_y; // 粒子坐标
+grids[500][500] = 1; // 中心点置1
+while (t < 100000) { // 释放一个粒子
+loc_x = random.nextInt(1000); // 释放点的横坐标
+loc_y = (int) Math.sqrt(radius * radius - (loc_x - 500)* (loc_y - 500)); // 求释放点的纵坐标
+

@@ -1,0 +1,6 @@
+protected void reduce(IntWritable key, Iterable<IntWritable> values,
+Context context) throws IOException, InterruptedException {
+
+int minPts = context.getConfiguration().getInt(MainOriginal.PROPERTY.MINPTS.name(), 0);
+ArrayList<IntWritable> lst = new ArrayList<IntWritable>();
+

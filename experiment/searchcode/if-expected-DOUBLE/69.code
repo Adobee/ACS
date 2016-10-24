@@ -1,0 +1,12 @@
+Double expected_value_min;
+Double expected_value_max;
+public String metric_id;
+
+public Requirement(String name, Double expected_value_low, Double expected_value_up, String id)
+metric_id = id;
+}
+
+public boolean isInRange(Double value)
+{
+if(expected_value_min <= value &amp;&amp; value <= expected_value_max) return true;
+

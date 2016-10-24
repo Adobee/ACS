@@ -1,0 +1,9 @@
+switch(choice) { // 0=JoinReq, 2=MMReq, 3=MMRep, 4=CalcK
+case 0:
+m=new Message(0, this.selfId);
+if(localstate.isDistinguishable != 1) {
+m=new Message(4, this.selfId);
+init_flag=0;
+if(localstate.isDistinguishable != 1) {
+System.out.println(&quot;CalcK MSG can be sent by distinguished node only !!! &quot;);
+

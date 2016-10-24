@@ -1,0 +1,8 @@
+static public void updateStartDoy(HttpServletRequest request) {
+Integer startDoy = getStartDoy(request);
+
+if (startDoy > 365 - Avail.DEFAULT_RANGE) {
+startDoy = 365 - Avail.DEFAULT_RANGE;
+}
+if (startDoy > 35) {
+

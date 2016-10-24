@@ -1,0 +1,9 @@
+public class TrajNodeFilter extends AttributeFilterInteger {
+
+private int timePeriod;
+
+public TrajNodeFilter(int nodeID, int timePeriod) {
+public String getXPathToNode() {
+if (timePeriod == 5) {
+return &quot;.//TP&quot; + timePeriod + &quot;[@&quot; + attributeType + getOperator() + &quot;\&quot;&quot; + attributeID + &quot;\&quot;]&quot;;
+

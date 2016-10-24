@@ -1,0 +1,11 @@
+private int numberOfAggregatorsCreated = 0;
+private final Query filter;
+private final TermsAggregator.BucketCountThresholds bucketCountThresholds;
+return asMultiBucketAggregator(this, aggregationContext, parent);
+}
+
+numberOfAggregatorsCreated++;
+
+if (valuesSource instanceof ValuesSource.Bytes) {
+ExecutionMode execution = null;
+

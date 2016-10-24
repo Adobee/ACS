@@ -1,0 +1,10 @@
+public final String getOutboundProxyString()
+{
+if(socketAddress == null)
+return null;
+
+InetAddress proxyAddress = socketAddress.getAddress();
+= new StringBuilder(proxyAddress.getHostAddress());
+
+if(proxyAddress instanceof Inet6Address)
+

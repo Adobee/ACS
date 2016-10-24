@@ -1,0 +1,11 @@
+final double[] parameters) {
+final double[] temp;
+int i, j;
+
+for (final double value : parameters) {
+if (!(MathUtils.isFinite(value))) {
+final double newError;
+
+// compute the quality of the guess, keep it if it is better
+newError = this.error(this.m_tempPoints, this.m_currentGuess);
+

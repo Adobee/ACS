@@ -1,0 +1,12 @@
+public ActionBarConfigurator setAction(ActionItemType type, Action action) {
+typeToActionSelected.put(type, action);
+return this;
+}
+
+public void configure() {
+if ( actionBar == null ) {
+Action action = typeToActionSelected.get(type);
+if ( action != null ) {
+if ( type != ActionItemType.HOME )
+actionBar.addAction(action);
+

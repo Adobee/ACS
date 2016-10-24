@@ -1,0 +1,14 @@
+import org.strongback.components.ui.ContinuousRange;
+
+public class AxisAsButton implements Switch{
+@Override
+public boolean isTriggered() {
+if (axis.read() > 0.5){
+return true;
+} else {
+return false;
+}
+}
+
+}
+

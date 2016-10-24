@@ -1,0 +1,8 @@
+public static BufferedImage pack(BufferedImage src, BitmapFont font, int width, int[] borderPadding, int[] glyphPadding, int[] glyphSpacing)
+{
+Collections.sort(font.chars, new GlyphHeightComparator());
+Dimension[] newDimensions = new Dimension[glyphCount];
+boolean[] skip = new boolean[glyphCount];
+
+int[] oldPadding = font.padding.clone();
+

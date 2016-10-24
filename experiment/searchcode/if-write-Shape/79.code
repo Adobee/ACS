@@ -1,0 +1,8 @@
+this(fieldName, new BytesArray(new byte[1]), indexedShapeId, indexedShapeType);
+if (shape != null) {
+XContentBuilder builder = XContentFactory.jsonBuilder();
+out.writeString(fieldName);
+boolean hasShapeBytes = shapeBytes != null;
+out.writeBoolean(hasShapeBytes);
+if (hasShapeBytes) {
+

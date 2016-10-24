@@ -1,0 +1,8 @@
+private ConstraintSplitInfo(QueryObjectModelFactory factory, Join source,
+List<Constraint> leftConstraints, List<Constraint> rightConstraints) {
+this.hasRightConstraints = false;
+}
+
+public void addLeftConstraint(Constraint c) {
+if (isMultiple) {
+

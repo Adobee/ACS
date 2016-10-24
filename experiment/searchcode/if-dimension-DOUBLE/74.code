@@ -1,0 +1,9 @@
+public class vectors {
+public vector addition(vector a, vector b) throws Exception{
+if(a.getDimension() != b.getDimension()){
+throw new Exception(&quot;Vectors not the same dimension vector addition not defined&quot;);
+}
+double newVec[] = new double[a.getDimension()];
+for(int i = 0; i < a.getDimension(); i++){
+newVec[i] = a.component(i) + b.component(i);
+

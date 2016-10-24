@@ -1,0 +1,10 @@
+private final StretchedSlowAtStartAlphaToAlphaFunction stretchedSlowAtStartAlphaToAlphaFunction;
+
+public StretchedSlowAtEndAlphaToAlphaFunction(double slopeAtStart)
+stretchedSlowAtStartAlphaToAlphaFunction = new StretchedSlowAtStartAlphaToAlphaFunction(slopeAtStart);
+}
+
+public double getAlphaPrime(double alpha)
+{
+double ret = 1.0 - stretchedSlowAtStartAlphaToAlphaFunction.getAlphaPrime(1.0 - alpha);
+

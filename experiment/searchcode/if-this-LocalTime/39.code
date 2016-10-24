@@ -1,0 +1,12 @@
+public HoursRange(LocalTime start, LocalTime end) {
+this.start = start;
+this.end = end;
+}
+
+public boolean includes(LocalTime localTime) {
+public int getDistanceInHours(LocalTime localTime) {
+if(includes(localTime)) {
+return 0;
+}
+Duration distanceFromStart = Duration.between(localTime, start);
+

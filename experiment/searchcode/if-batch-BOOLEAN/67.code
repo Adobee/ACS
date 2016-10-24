@@ -1,0 +1,11 @@
+valueDAO.insertNewValue(valueTest2);
+
+//Check if it got added successfully
+boolean updateCompleted = batchDAO.insertValueIntoBatch(valueTest1, batchTest1);
+boolean foundTest1 = false;
+boolean foundTest2 = false;
+
+for (Value value : batchValues) {
+if (!foundTest1) {
+foundTest1 = (value.getId() == valueTest1.getId());
+

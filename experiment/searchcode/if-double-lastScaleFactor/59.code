@@ -1,0 +1,8 @@
+float scaleFactor = scaleDetector.getScaleFactor();
+if (lastScaleFactor > 1 &amp;&amp; scaleFactor < 1) scaleFactor = 1f;
+if (lastScaleFactor < 1 &amp;&amp; scaleFactor > 1) scaleFactor = 1f;
+public boolean onDoubleTap(MotionEvent e) {
+Log.i(TAG, &quot;Double Tap detected!&quot;);
+
+if (isTouchBlocked) return false;
+

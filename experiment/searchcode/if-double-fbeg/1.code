@@ -1,0 +1,7 @@
+Connection con = db.con(&quot;DATASOURCE.DATASOURCE.HGDB&quot;);
+String condition = &quot;&quot;;
+String q = &quot;$(q)&quot;;
+if (q != null &amp;&amp; !&quot;&quot;.equals(q)) {
+String q = &quot;$(q)&quot;;
+if (q != null &amp;&amp; !&quot;&quot;.equals(q)) {
+

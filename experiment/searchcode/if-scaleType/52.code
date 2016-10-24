@@ -1,0 +1,10 @@
+if (imageUrlAttr != null &amp;&amp; !ElUtil.isEl(imageUrlAttr)) {
+setImageUrl(imageUrlAttr);
+}
+
+String scaleType = attrs.getValue(&quot;scaleType&quot;);
+if (scaleType != null) {
+ScaleType type = ScaleType.FIT_XY;
+if (&quot;center&quot;.equals(scaleType)) {
+type = ScaleType.CENTER;
+

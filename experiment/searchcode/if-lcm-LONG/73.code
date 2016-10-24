@@ -1,0 +1,12 @@
+return String.valueOf(lcm(divisors));
+}
+
+private static Long lcm(Long a, Long b) {
+return a * b / gcd(a, b);
+}
+
+public static long gcd(long a, long b) {
+if (a == 0)
+return b;
+while (b != 0) {
+

@@ -1,0 +1,11 @@
+private Object operation(Object lhs, Object rhs, int kind)
+throws EvalError
+{
+
+if ( lhs instanceof String &amp;&amp; rhs != Primitive.VOID ) {
+throw new EvalError(
+&quot;Illegal use of null object or &#39;null&#39; literal&quot;, this);
+
+
+if( (lhs instanceof Boolean || lhs instanceof Character ||
+

@@ -1,0 +1,9 @@
+public class Solution {
+public int jump(int[] A) {
+int len = A.length;
+int reach[] = new int[len];
+for (int i = 0; i < len; i++) {
+if (i + A[i] < Max)
+continue;
+for (int step = Max + 1; step <= (i + A[i]) &amp;&amp; step < len; step++)
+

@@ -1,0 +1,13 @@
+* along with java-libpst.  If not, see <http://www.gnu.org/licenses/>.
+*
+*/
+package com.pff;
+
+import java.util.Calendar;
+PSTTimeZone(byte [] timeZoneData) {
+this.rule = null;
+name = &quot;&quot;;
+
+try {
+int headerLen = (int)PSTObject.convertLittleEndianBytesToLong(timeZoneData, 2, 4);
+

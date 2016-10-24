@@ -1,0 +1,9 @@
+package lns.socket.test;
+
+import lns.ev3.model.Ev3;
+import lns.socket.client.MessageSocketClient;
+import lns.socket.server.MessageSocketServer;
+import lns.socket.server.ServerMessageListener;
+
+public class ServerTest {
+

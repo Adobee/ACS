@@ -1,0 +1,20 @@
+return instance;
+}
+
+/**
+*
+*/
+public void evaluateIf(DebugExpression expr){
+if(this.enabled){
+if(not(expr.evaluate())){
+throw new AssertionError();
+}
+}
+}
+
+private Debug(){
+this.enabled= Boolean.getBoolean(&quot;debug&quot;);
+}
+
+/** インスタンス */
+

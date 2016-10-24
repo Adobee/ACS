@@ -1,0 +1,12 @@
+import org.apache.commons.math3.linear.MatrixUtils;
+import org.apache.commons.math3.linear.RealMatrix;
+
+import com.tianyichen.utils.Matrix;
+import com.tianyichen.utils.Scalar;
+RealMatrix old_v=v_sample;
+for(int k=0;k<this.K;k++){
+if(k>0){
+old_v=new_v;
+}
+Map<String, RealMatrix> infoMap=this.gibbsVHV(old_v);
+

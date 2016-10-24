@@ -1,0 +1,10 @@
+for (i = 0; i < SIZE; i += 8) { /* fill in mem[] with messy stuff */
+if (flag) {
+a += rsl[i];
+b += rsl[i + 1];
+mem[i + 7] = h;
+}
+
+if (flag) { /* second pass makes all of seed affect all of mem */
+for (i = 0; i < SIZE; i += 8) {
+

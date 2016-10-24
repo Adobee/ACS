@@ -1,0 +1,12 @@
+String bstr = null;
+String estr = null;
+if(end <= begin){
+bstr = sourceStr.substring(0, begin);
+estr = sourceStr.substring(begin);
+return sourceStr;
+}
+
+public static String removeTab(String sourceStr){
+if(sourceStr == null)
+return sourceStr;
+

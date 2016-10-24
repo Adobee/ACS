@@ -1,0 +1,6 @@
+ImmutableMap.Builder<Class<? extends MetadataFieldMapper>, MetadataFieldMapper> builder = ImmutableMap.builder();
+for (MetadataFieldMapper metadataMapper : metadataMappers) {
+if (indexCreated.before(Version.V_2_0_0_beta1) &amp;&amp; LEGACY_INCLUDE_IN_OBJECT.contains(metadataMapper.name())) {
+root.merge(mergeWith.root, mergeResult);
+for (MetadataFieldMapper metadataMapper : metadataMappers) {
+

@@ -1,0 +1,9 @@
+// A cheap variant of request tracing used to dump slow requests.
+private long mRequestBirthTime = 0;
+
+/**
+* 请求日志的初始值(即使没有启用调试日志记录)。
+long requestTime = SystemClock.currentThreadTimeMillis() - mRequestBirthTime;
+
+if (requestTime >= SLOW_REQUEST_THRESHOLD_MS) {
+

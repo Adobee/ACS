@@ -1,0 +1,12 @@
+public static double DoubleAvg(List<Double> sum){
+if(sum.isEmpty()){
+return 0.0d;
+}
+double s = 0.0d;
+public static double convertFltAvg(ArrayList<Float> sum){
+if(sum.size() == 0){
+return 0.0d;
+}
+double d = 0.0d;
+for(int x = 0; x < sum.size(); x++){
+

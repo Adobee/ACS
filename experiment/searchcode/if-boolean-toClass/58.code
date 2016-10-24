@@ -1,0 +1,14 @@
+import com.a360ads.eshare.utils.Elog;
+
+/**
+* 程序最开始启动的界面
+*/
+public class FirstActivity extends BaseActivity {
+
+private boolean islog = false;
+ESharedPreferences shared = new ESharedPreferences(FirstActivity.this);
+Class<?> toClass;
+//是否第一次使用
+if(!shared.isOnceLoad()) {
+Elog.i(islog, &quot;第一次使用&quot;);
+

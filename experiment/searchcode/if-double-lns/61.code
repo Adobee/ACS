@@ -1,0 +1,9 @@
+import pls.vrp.hm.VrpCpStats;
+import pls.vrp.hm.VrpSearcher;
+
+public class VrpLnsRunner {
+
+private static final Logger LOG = Logger.getLogger(VrpLnsRunner.class);
+
+public VrpPlsSolution[] run(VrpPlsSolution solAndStuff, long timeToFinish, Random rand) {
+

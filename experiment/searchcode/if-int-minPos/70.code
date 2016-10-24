@@ -1,0 +1,9 @@
+for (int i = 0; i < a.length - 1; i++)
+{
+int minPos = minimumPosition(a, i);
+ArrayUtil.swap(a, minPos, i);
+private static int minimumPosition(int[] a, int from)
+{
+int minPos = from;
+for (int i = from + 1; i < a.length; i++)
+

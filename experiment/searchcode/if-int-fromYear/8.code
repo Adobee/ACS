@@ -1,0 +1,7 @@
+public void addSalary(double amount,int fromMonth,int toMonth,int fromYear,int toYear);
+
+public MonthlyData checkIfMonthRecExists(int month, int year);
+public List<MonthlyData> getExpenses(int fromMonth, int toMonth, int fromYear, int toYear);
+
+}
+

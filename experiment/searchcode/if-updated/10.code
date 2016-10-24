@@ -1,0 +1,10 @@
+public String getUpdatedOn() {
+return updatedOn;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (repoUri != null ? !repoUri.equals(committer.repoUri) : committer.repoUri != null) return false;
+if (updatedBy != null ? !updatedBy.equals(committer.updatedBy) : committer.updatedBy != null) return false;
+

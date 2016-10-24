@@ -1,0 +1,11 @@
+
+public class Q342_Power_of_Four {
+public boolean isPowerOfFour(int num) {
+if(num <= 0){
+return false;
+}
+
+int diff = 0;
+
+while(num > 1 &amp;&amp; diff == 0){
+

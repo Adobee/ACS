@@ -1,0 +1,20 @@
+return myHandler.getProcess();
+}
+}
+
+@Override
+protected void startHandlingStreams()
+{
+if(myHandler == null)
+myHandler.destroyProcess();
+}
+}
+}
+
+@Override
+protected void waitForProcess()
+{
+if(myHandler != null)
+{
+myHandler.waitFor();
+

@@ -1,0 +1,9 @@
+private final int blockRows;
+
+private final int blockColumns;
+
+public BlockRealMatrix(final int rows ,final int columns) throws java.lang.IllegalArgumentException {
+final double[] block = blocks[((iBlock * (blockColumns)) + jBlock)];
+final int available = (mBlock.length) - mIndex;
+if (jWidth > available) {
+

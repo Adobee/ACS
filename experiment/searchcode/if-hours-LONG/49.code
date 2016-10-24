@@ -1,0 +1,6 @@
+public static String getDuration(long time) {
+StringBuffer str = new StringBuffer();
+long hours = time / (60000 * 60);
+long minutes = (time - (hours * 60 * 60000)) / 60000;
+long seconds = (time - (hours * 60 * 60000) - (minutes * 60000)) / 1000;
+

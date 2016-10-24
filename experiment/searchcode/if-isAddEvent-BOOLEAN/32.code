@@ -1,0 +1,9 @@
+final ContentResolver resolver = getContentResolver();
+
+boolean isAddEvent = false;
+
+if (ACTION_ADD_SESSION_CALENDAR.equals(action)) {
+Long.valueOf(cursor.getLong(0)).toString());
+boolean isAddEvent = (cursor.getInt(SessionsQuery.SESSION_STARRED) == 1);
+if (isAddEvent) {
+

@@ -1,0 +1,10 @@
+* @author A187252
+*/
+@Entity
+@Table(name = &quot;cmp_finitelife&quot;)
+@XmlRootElement
+@NamedQueries({
+@NamedQuery(name = &quot;CmpFinitelife.findAll&quot;, query = &quot;SELECT c FROM CmpFinitelife c&quot;),
+CmpFinitelife other = (CmpFinitelife) object;
+if ((this.cmpFinitelifeId == null &amp;&amp; other.cmpFinitelifeId != null) || (this.cmpFinitelifeId != null &amp;&amp; !this.cmpFinitelifeId.equals(other.cmpFinitelifeId))) {
+

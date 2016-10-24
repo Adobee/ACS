@@ -1,0 +1,7 @@
+static List<List<Character>> ret;
+
+public static List<List<Character>> permute(char[] num) {
+ret = new ArrayList<>();
+public static List<List<Character>> perm(List<Character> pre, List<Character> input) {
+if(input.size() == 0) {
+

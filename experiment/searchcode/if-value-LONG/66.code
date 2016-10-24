@@ -1,0 +1,10 @@
+public static final Long tofileSize(String v) {
+try {
+if (v.endsWith(&quot;G&quot;)|| v.endsWith(&quot;g&quot;)) {
+Long value = Long.parseLong(v.substring(0,v.length()-1));
+return value * 1024 * 1024;
+}
+
+if (v.endsWith(&quot;K&quot;)|| v.endsWith(&quot;k&quot;)) {
+Long value = Long.parseLong(v.substring(0,v.length()-1));
+

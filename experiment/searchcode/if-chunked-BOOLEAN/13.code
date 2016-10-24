@@ -1,0 +1,8 @@
+if (NettyUtil.isSuccessful(response.getStatus())) {
+if (response.isChunked()) {
+this.chunkedBuffer = response.getContent();
+HttpChunk chunk = (HttpChunk) receive;
+boolean done = chunk.isLast();
+if (done) {
+this.chunkedResponse.setChunked(false);
+

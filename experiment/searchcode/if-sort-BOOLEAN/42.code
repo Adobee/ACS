@@ -1,0 +1,7 @@
+public void addSortOrder(Criteria criteria)
+{
+if( isSortNeeded() )
+{
+if( getSortType().equals(SORT_ASC)) criteria.addOrder(Order.asc(getSortProperty()));
+if( getSortType().equals(SORT_DESC) ) criteria.addOrder(Order.desc(getSortProperty()));
+

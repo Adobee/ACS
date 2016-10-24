@@ -1,0 +1,7 @@
+NumberNode node = root;
+for (String number : ipNumbers)
+node = node.createOrGetChildNumber(number);
+node = node.findMatchingChild(number);
+if (node == null)
+return false;
+

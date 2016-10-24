@@ -1,0 +1,9 @@
+return sort(ts, from, to, comp);
+}
+
+protected abstract T[] sort0(T[] ts, int from, int to, Comparator<T> comp, T[] newTs);
+public final T[] sort(T[] ts, int from, int to, Comparator<T> comp) {
+Util.checkIndex(ts, from, to);
+if (null == comp) {
+comp = $.F.NATURAL_ORDER;
+

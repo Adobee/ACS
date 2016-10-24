@@ -1,0 +1,10 @@
+throw (new Exception(&quot;Cannot allocate a negative amount of bytes (&quot; + bytes + &quot;)&quot;));
+}
+
+if(bytes > cacheMaxSize) {
+throw (new Exception(&quot;Cannot allocate an amount of bytes > cacheMaxSize&quot;));
+int bytesToFree = cacheSize + bytes - cacheMaxSize;
+
+if(bytesToFree > 0) {
+while(bytesToFree > 0) {
+

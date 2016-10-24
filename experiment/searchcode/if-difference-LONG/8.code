@@ -1,0 +1,13 @@
+import java.util.concurrent.TimeUnit;
+
+/**
+*
+* @author Iulian Ghionoiu <iulian.ghionoiu@exenne.ro>
+*/
+public class TimeDifferenceFormater {
+public static final long ONE_MINUTE = TimeUnit.MINUTES.toMillis(1);
+public String formatTimeDifference(long timeDifference) {
+long displayedDifference;
+String timeUnit;
+if (timeDifference < ONE_MINUTE) {
+

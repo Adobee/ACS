@@ -1,0 +1,12 @@
+static FieldType getFieldType(int type) {
+FieldType toReturn = typeMap.get(type);
+if(toReturn == null) {
+toReturn = FieldType.UNKNOWN;
+}
+return toReturn;
+}
+
+
+public static boolean isChoiceField(FieldType ftype) {
+return 	ftype.equals(FieldType.MULTISELECT) ||
+

@@ -1,0 +1,14 @@
+board = new Board(board.getColumns(), board.getRows());
+}
+
+public boolean placeShape() {
+tetrisCallback.onPlaceShape();
+shape = shapeFactory.randomShape();
+if (newX == shapeX) return false;
+shapeX = newX;
+return true;
+}
+
+public boolean down() {
+if (!board.collision(shape, shapeX, shapeY + 1)) {
+

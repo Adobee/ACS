@@ -1,0 +1,8 @@
+return src;
+}
+}
+
+public static Map<String, List<String>> parseQuery(String uri) {
+int pathEndPos = uri.indexOf(&#39;?&#39;);
+String s = pathEndPos < 0 ? uri : uri.substring(pathEndPos + 1);
+

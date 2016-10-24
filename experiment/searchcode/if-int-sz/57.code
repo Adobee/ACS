@@ -1,0 +1,14 @@
+public class UnionFind {
+
+private int[] id;
+private int[] sz;
+private int count;
+public UnionFind(int N) {
+return p;
+}
+public void union(int p, int q) {
+int i = find(p);
+int j = find(q);
+if(i == j) return;
+if(sz[i] < sz[j]){
+

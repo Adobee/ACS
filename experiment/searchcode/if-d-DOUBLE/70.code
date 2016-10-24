@@ -1,0 +1,9 @@
+return c * ( t /= d ) * t * ( ( s + 1 ) * t - s ) + b;
+}
+
+public double easeOut( double t, double b, double c, double d, double s ) {
+if ( s == 0 ) s = 1.70158;
+public double easeInOut( double t, double b, double c, double d, double s ) {
+if ( s == 0 ) s = 1.70158;
+if ( ( t /= d / 2 ) < 1 ) return c / 2 * ( t * t * ( ( ( s *= ( 1.525 ) ) + 1 ) * t - s ) ) + b;
+

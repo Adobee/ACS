@@ -1,0 +1,21 @@
+heap.put(front * 7);
+i ++;
+}
+}
+return front;
+}
+}
+
+class Heap {
+int len = 0;
+long [] heap = new long[5000];
+Heap(int len) {
+this.len = len;
+}
+
+public void put (long n) {
+len++;
+heap[len] = n;
+int son = len;
+while (son > 1 &amp;&amp; heap[son / 2] > heap[son]) {
+

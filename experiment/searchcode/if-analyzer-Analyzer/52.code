@@ -1,0 +1,6 @@
+ClassAnalyzer linkedListAnalyzer = analyzer.getClassAnalyzer(LinkedListAnalyzer.class);
+if (linkedListAnalyzer.isFailed()) {
+FieldAnalyzer sentinelAnalyzer = linkedListAnalyzer.getFieldAnalyzer(SentinelAnalyzer.class);
+if (sentinelAnalyzer.isFailed()) {
+return null;
+

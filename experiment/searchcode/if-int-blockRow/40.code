@@ -1,0 +1,6 @@
+//create and write subblocks of matrix
+for(int blockRow = rl/brlen; blockRow < (int)Math.ceil(ru/(double)brlen); blockRow++)
+for(int blockCol = 0; blockCol < (int)Math.ceil(src.getNumColumns()/(double)bclen); blockCol++)
+{
+int maxRow = (blockRow*brlen + brlen < src.getNumRows()) ? brlen : src.getNumRows() - blockRow*brlen;
+

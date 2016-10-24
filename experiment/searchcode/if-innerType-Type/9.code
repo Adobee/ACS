@@ -1,0 +1,12 @@
+public class ForallType extends Type {
+private String bindVar;
+private Type innerType;
+
+public ForallType(String bindVar, Type innerType) {
+return &quot;\\&quot; + bindVar + &quot;. &quot; + innerType;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (obj == null || !(obj instanceof ForallType))
+

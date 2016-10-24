@@ -1,0 +1,12 @@
+HashMap<Integer, Integer> hash = new HashMap<Integer, Integer>();
+
+for(int a : A){
+if(hash.containsKey(a)){
+hash.put(a, hash.get(a) + 1);
+}
+hash.put(a, 1);
+}
+int max = 0;
+for(int a : A){
+if(hash.get(a) >= max){
+

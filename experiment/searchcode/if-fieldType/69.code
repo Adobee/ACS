@@ -1,0 +1,12 @@
+private FieldType field;
+
+synchronized FieldType getField() {
+if (field == null) {
+field = computFieldValue();
+FieldType getFieldTypes() {
+FieldType result = type;
+if (result == null) {
+synchronized(this) {
+result = type;
+if (result == null) {
+

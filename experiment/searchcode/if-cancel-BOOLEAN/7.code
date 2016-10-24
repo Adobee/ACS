@@ -1,0 +1,14 @@
+return false;
+}
+};
+
+private boolean cancel;
+
+public abstract boolean isCancelable();
+
+public boolean isCanceled() {
+return isCancelable() ? false : cancel;
+}
+
+public void setCanceled(boolean cancel) {
+

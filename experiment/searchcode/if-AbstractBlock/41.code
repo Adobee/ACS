@@ -1,0 +1,7 @@
+import org.asciidoctor.Asciidoctor;
+import org.asciidoctor.ast.AbstractBlock;
+import org.asciidoctor.ast.Block;
+import org.asciidoctor.extension.BlockMacroProcessor;
+public Block process(final AbstractBlock abstractBlock, final String target, final Map<String, Object> attributes) {
+final EntriesExtractor extractor = new EntriesExtractor(Asciidoctor.Factory.create());
+

@@ -1,0 +1,16 @@
+this.arrayElement.setIsModifiable(true);
+}
+}
+
+@Override
+public boolean isAssignableTo(Type t) {
+
+if(!(t instanceof TypeArray)){
+return this.getContainerType().isEquivalentTo(((TypeArray) t).getContainerType());
+}
+
+@Override
+public boolean isEquivalentTo(Type t) {
+
+if(!(t instanceof TypeArray)){
+

@@ -1,0 +1,13 @@
+* @author wjtoth
+*
+*/
+public class IntMath {
+public static int binlog(int bits) {
+int log = 0;
+if ((bits &amp; 0xffff0000) != 0) {
+bits >>>= 16;
+log = 16;
+}
+if (bits >= 256) {
+bits >>>= 8;
+

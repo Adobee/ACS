@@ -1,0 +1,8 @@
+Relation relation = relationRepo.findRelationSubscribe(userId, storyId);
+if(relation == null){
+Relation newRelation = new Relation(userId,storyId, RelationType.SUBSCRIBE);
+Relation relation = relationRepo.findRelationSubscribe(userId, followeeId);
+
+if(relation == null){
+Relation newRelation = new Relation(userId, followeeId, RelationType.FOLLOW);
+

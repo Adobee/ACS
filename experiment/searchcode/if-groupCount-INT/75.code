@@ -1,0 +1,13 @@
+public int getRandomGroup(Subject sub) {
+if (availGroup <= 0) return -1;
+
+int num = brHelper.nextRandomValue();
+sub.setGroup(num);
+groupCount[num]++;
+if (groupCount[num] == groupMax[num]) availGroup--;
+subjectList.add(sub);
+
+return num;
+}
+}
+

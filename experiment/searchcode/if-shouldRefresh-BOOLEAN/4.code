@@ -1,0 +1,14 @@
+return shouldRefresh(key.getSimpleName());
+}
+
+public boolean shouldRefresh(String key) {
+if (!map.containsKey(key)) {
+map.put(key, System.currentTimeMillis());
+return false;
+}
+}
+}
+
+public boolean shouldRefresh(Class<?> key, String id) {
+if (TextUtil.isValidate(id)) {
+

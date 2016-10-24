@@ -1,0 +1,6 @@
+* List properties: maxActive(def: 200), testOnReturn(def: true), expireAfterWrite(persit if not),
+* host(required), port(required), name(required)
+int expireAfterWrite = (int) getExpireAfterWrite();
+cache.set(nameSpace + key, String.valueOf(value));
+if (expireAfterWrite > 0) {
+

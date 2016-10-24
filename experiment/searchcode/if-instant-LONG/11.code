@@ -1,0 +1,14 @@
+package dao;
+
+import model.InstantMessage;
+import model.User;
+
+import java.util.List;
+List<InstantMessage> getPostedMessages(Long userId);
+
+List<InstantMessage> getRecievedMessages(Long userId);
+
+
+
+}
+

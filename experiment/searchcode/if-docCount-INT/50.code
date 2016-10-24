@@ -1,0 +1,12 @@
+this.doc = new String[this.docCount];
+for(int i=0;i<this.docCount;i++)
+{
+this.doc[i] = documents[i].trim();
+}
+this.PreProcessingDocs();
+private void VSMdocs()
+{
+for(int i=0;i<this.docCount;i++)
+{
+this.termsDoc.add(CreateVSMDoc(this.doc[i]));
+

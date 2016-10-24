@@ -1,0 +1,5 @@
+private EstimateDAO_API getEstimateDAO(Estimate estimate) {
+EstimateDAO_API estimateDAO_API = null;
+if(estimate instanceof NormalEstimate) estimateDAO_API = new NormalEstimateDB_DAO(dbAccessAPI);
+else if(estimate instanceof LogNormalEstimate) estimateDAO_API = new LogNormalEstimateDB_DAO(dbAccessAPI);
+

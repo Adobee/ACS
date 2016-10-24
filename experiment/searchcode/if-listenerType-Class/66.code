@@ -1,0 +1,9 @@
+private Dispatcher<T> dispatcher;
+
+public Event(Class<T> listenerType) {
+validateType(listenerType);
+this.dispatcher = new Dispatcher<>(listenerType);
+}
+
+private static void validateType(Class<? extends EventListener> listenerType) {
+

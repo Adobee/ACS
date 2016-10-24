@@ -1,0 +1,9 @@
+*     <tr><th>NON_EXTENSIBLE</th><th>no</th><th>no</th></tr>
+*     <tr><th>STRICT_ORDER</th><th>yes</th><th>yes</th></tr>
+* </table>
+*
+* <p>If extensibility not allowed, then all of the expected values must match in what&#39;s being tested,
+public JSONCompareMode withStrictOrdering(boolean strictOrdering) {
+if (strictOrdering) {
+return isExtensible() ? STRICT_ORDER : STRICT;
+

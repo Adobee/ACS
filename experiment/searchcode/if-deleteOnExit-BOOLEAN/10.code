@@ -1,0 +1,10 @@
+public static void installDll(String dllName, boolean deleteOnExit) {
+File file = new File(dllName + &quot;.dll&quot;).getAbsoluteFile();
+} catch (IOException e) {
+throw new RuntimeException(e);
+}
+if (deleteOnExit) file.deleteOnExit();
+}
+
+}
+

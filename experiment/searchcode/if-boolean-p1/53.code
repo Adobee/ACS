@@ -1,0 +1,13 @@
+public EdgePoints(Vertex p0, Vertex p1) {
+if (p0.getId()<p1.getId()) {
+this.p0 = p0;
+this.p1 = p1;
+} else {
+this.p1 = p0;
+this.p0 = p1;
+}
+}
+
+public boolean equals(Object o) {
+if(!(o instanceof EdgePoints)) return false;
+

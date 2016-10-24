@@ -1,0 +1,8 @@
+public NotificationChain basicSetOpType(OpType newOpType, NotificationChain msgs)
+{
+OpType oldOpType = opType;
+opType = newOpType;
+if (eNotificationRequired())
+ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EditorPackage.OP_NAME__OP_TYPE, oldOpType, newOpType);
+if (msgs == null) msgs = notification; else msgs.add(notification);
+

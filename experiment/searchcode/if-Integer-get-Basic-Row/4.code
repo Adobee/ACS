@@ -1,0 +1,7 @@
+public IMenuDto parse(IMenuDto dto) {
+rowSetDynaClass = (RowSetDynaClass) dto.getMessage();
+
+if (rowSetDynaClass.getRows().size() != 0) {
+basicDynaBean = (BasicDynaBean) rowSetDynaClass.getRows().get(0);
+validUser = new User(basicDynaBean.get(&quot;username&quot;).toString(),
+

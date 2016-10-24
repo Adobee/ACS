@@ -1,0 +1,7 @@
+private MappedFieldType fieldType;
+private FilterableTermsEnum termsEnum;
+private int numberOfAggregatorsCreated;
+private final Query filter;
+IndexReader reader = context.searchContext().searcher().getIndexReader();
+if (numberOfAggregatorsCreated > 1) {
+

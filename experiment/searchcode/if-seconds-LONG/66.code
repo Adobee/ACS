@@ -1,0 +1,10 @@
+* Durations in seconds, represented compactly.
+*/
+public final class PackedDuration extends AbstractDuration {
+private final long seconds;
+* @param seconds the number of seconds (non-negative)
+*/
+public PackedDuration(long seconds) {
+if (seconds < 0) {
+throw new IllegalArgumentException(&quot;duration must be non-negative&quot;);
+

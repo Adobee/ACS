@@ -1,0 +1,11 @@
+public SubtitleFilter next(SubtitleFilter next) {
+if (this.next == null) {
+this.next = next;
+filter();
+if (next != null) {
+next.filter(subtitle);
+}
+}
+
+protected abstract void filter();
+

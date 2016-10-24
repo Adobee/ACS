@@ -1,0 +1,10 @@
+public void swap(LinkedList n,int a, int b){
+if(n.isEmpty()){
+return;
+}
+else{
+int x=0;
+int y=0;
+if(n.contains(a)){
+x = n.indexOf(a);
+

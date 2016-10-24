@@ -1,0 +1,14 @@
+public void setDoy(String doy) {
+this.doy = doy;
+}
+
+@Override
+public int compareTo(TaxInfo o) {
+if (this == o)
+return 0;
+
+if (this.afm.equals(o.afm) &amp;&amp; this.id == o.id &amp;&amp; this.doy.equals(o.doy))
+return 0;
+
+return -1;
+

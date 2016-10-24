@@ -1,0 +1,12 @@
+* @author armando-cinvestav
+*
+*/
+public class NodeChangeConstraintCommand extends Command {
+
+
+private Rectangle newConstraint;
+public void execute() {
+if (oldConstraint == null)
+oldConstraint = new Rectangle(node.getConstraint());
+node.setConstraint(newConstraint);
+

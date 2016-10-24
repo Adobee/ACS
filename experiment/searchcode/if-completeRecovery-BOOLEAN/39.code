@@ -1,0 +1,11 @@
+import java.util.concurrent.atomic.AtomicBoolean;
+
+import org.apache.log4j.Logger;
+
+import org.apache.qpid.server.logging.EventLogger;
+public void cancel()
+{
+if (_asynchronousRecoverer != null)
+{
+_asynchronousRecoverer.cancel();
+

@@ -1,0 +1,11 @@
+Coord4 getMasterCoord();
+World getWorld();
+
+default boolean hasMaster(){
+return getMasterCoord()!=null;
+};
+default boolean isMasterHere(){
+return getMasterTile()!=null;
+};
+default boolean isMasterStillMaster(){
+

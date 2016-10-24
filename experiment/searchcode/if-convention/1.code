@@ -1,0 +1,8 @@
+return convention.accept(this);
+} catch (DataNotFoundException e) {
+// If the convention is not found in the convention source
+ConventionLink.resolvable(node.getFutureConvention(), FinancialConvention.class).resolve();
+
+if (convention instanceof InterestRateFutureConvention) {
+InterestRateFutureConvention conventionSTIRFut = (InterestRateFutureConvention) convention;
+

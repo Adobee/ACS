@@ -1,0 +1,5 @@
+public static boolean isBlank(String   str)
+{
+int strLen;
+if (str == null || (strLen = str.length()) == 0)
+

@@ -1,0 +1,12 @@
+return Item.getItemFromBlock(Blocks.daylight_detector);
+}
+
+@Override
+public boolean onBlockActivated(World world, int x, int y, int z, EntityPlayer player, int side, float hitX, float hitY, float hitZ) {
+world.setBlock(x, y, z, ModBlocks.inverted_daylight_detector);
+return true;
+}
+
+@Override
+public boolean isEnabled() {
+

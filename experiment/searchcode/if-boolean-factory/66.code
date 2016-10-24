@@ -1,0 +1,9 @@
+public class MapperFactorySupport {
+private static AtomicBoolean init = new AtomicBoolean(false);
+
+private MapperFactorySupport(){}
+
+public static MapperFactory instance() {
+
+if (!init.getAndSet(true)){
+

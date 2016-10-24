@@ -1,0 +1,10 @@
+public abstract class BaseSwipeRefreshActivity<P extends BasePresenter> extends BaseActivity<P> implements SwipeRefreshView {
+
+@Bind(R.id.swipe_refresh_layout)
+SwipeRefreshLayout mSwipeRefreshLayout;
+* init SwipeRefreshLayout Widget
+*/
+private void initSwipeLayout() {
+if (mSwipeRefreshLayout == null) {
+throw new NullPointerException(&quot;please add a SwipeRefreshLayout in your layout.&quot;);
+

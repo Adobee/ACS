@@ -1,0 +1,11 @@
+public enum OwnerType {
+USER,
+MERCHANT,
+UNKNOWN;
+
+private static ImmutableMap<String, OwnerType> map =
+.build();
+
+public static OwnerType fromString(final String value) {
+if (map.containsKey(value)) {
+

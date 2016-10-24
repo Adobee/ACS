@@ -1,0 +1,8 @@
+} catch (ClassCastException cce) {
+
+final int m = pivot.length;
+if (b.getDimension() != m) {
+final int length = b.getDimension();
+if (length != m) {
+throw new DimensionMismatchException(length, m);
+

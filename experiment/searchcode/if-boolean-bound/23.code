@@ -1,0 +1,14 @@
+result = prime * result + lowerBound;
+result = prime * result + upperBound;
+return result;
+}
+
+@Override
+public boolean equals(Object obj) {
+return &quot;IntInterval [&quot; + lowerBound + &quot;, &quot;
++ upperBound + &quot;]&quot;;
+}
+
+public boolean isValidTimeWindow() {
+if( (getLowerBound() < 0) ||
+

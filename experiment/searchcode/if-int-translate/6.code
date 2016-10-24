@@ -1,0 +1,11 @@
+TreeMap<String, String> translateParams = new TreeMap<>(new Comparator<String>() {
+
+@Override
+public int compare(String o1, String o2) {
+Matcher m1 = Constants.TRANSLATE_PATTERN.matcher(o1);
+int result = Integer.compare(translateFamilyId1, translateFamilyId2);
+
+if (result == 0) {
+int translateId1 = Integer.valueOf(m1.group(2));
+int translateId2 = Integer.valueOf(m2.group(2));
+

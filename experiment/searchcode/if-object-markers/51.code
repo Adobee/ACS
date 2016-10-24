@@ -1,0 +1,9 @@
+// where list of markers is a map of attributes
+private HashMap<String,ArrayList<Map<String,Object>>> listOfMarkers;
+
+public LoggerMarkerList(IMarker[] markers) throws CoreException {
+ArrayList<Map<String,Object>> markerList;
+
+if(!listOfMarkers.containsKey(fileName)){
+markerList = new ArrayList<Map<String,Object>>();
+

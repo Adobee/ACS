@@ -1,0 +1,9 @@
+public void game (CrossAndZero cz, char [] field) {
+for (int i = 0; i < 9; i++) {
+if ((i % 2) == 0) {
+cz.takeTurn(field, &#39;x&#39;);
+if(sc.hasNextInt()){
+turn=sc.nextInt();
+if (turn > 0 &amp;&amp; turn < 8){
+if ((field[turn]!=&#39; &#39;)){
+

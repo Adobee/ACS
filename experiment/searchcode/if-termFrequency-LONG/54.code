@@ -1,0 +1,14 @@
+import java.util.Vector;
+
+/**
+* @author dawu
+*
+*/
+public class Document implements Serializable {
+
+private static final long serialVersionUID = 6915845015202985440L;
+protected Corpus corpus = null;
+
+// <K,V>=<term id, term frequency in current doc>
+protected Map<Integer, Integer> termFrequency = new HashMap<Integer, Integer>();
+

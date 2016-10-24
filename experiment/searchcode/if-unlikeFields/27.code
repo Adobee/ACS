@@ -1,0 +1,5 @@
+while ((token = parser.nextToken()) != XContentParser.Token.END_OBJECT) {
+if (token == XContentParser.Token.FIELD_NAME) {
+org.apache.lucene.index.Fields[] unlikeFields = MoreLikeThisFetchService.getFieldsFor(unlikeResponses);
+if (unlikeFields.length > 0) {
+

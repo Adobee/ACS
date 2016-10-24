@@ -1,0 +1,8 @@
+cacheBuider.maximumSize(capacity);
+
+long expireAfterAccess = getExpireAfterAccess();
+long expireAfterWrite = getExpireAfterWrite();
+
+if (expireAfterWrite > 0) {
+cacheBuider.expireAfterWrite(expireAfterWrite, TimeUnit.SECONDS);
+

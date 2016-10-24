@@ -1,0 +1,7 @@
+private String display;
+private int    replacementOffset;
+private int    replacementLength;
+private int    cursorPosition;
+public RuleCompletionProposal(int replacementOffset,
+int replacementLength,
+

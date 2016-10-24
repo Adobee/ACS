@@ -1,0 +1,13 @@
+return new Vector3D(this.x - localVector3D.x, this.y - localVector3D.y, this.z - localVector3D.z);
+}
+
+public Vector3D normalize()
+throws MathArithmeticException
+{
+double d = getNorm();
+if (d == 0.0D) {
+return MathArrays.linearCombination(this.x, localVector3D.x, this.y, localVector3D.y, this.z, localVector3D.z);
+}
+
+public Vector3D crossProduct(Vector paramVector)
+

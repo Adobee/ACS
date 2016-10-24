@@ -1,0 +1,12 @@
+double start = System.nanoTime();
+
+long result = 0;
+
+for (long i = 5; ; i += 2){
+long check = 1;
+if (Prime(i)) continue;
+else {
+for (long j = 1; j*j < i; j ++) {
+long a = i - (2*j*j);
+if (Prime(a)) {
+

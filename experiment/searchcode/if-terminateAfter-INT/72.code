@@ -1,0 +1,10 @@
+if (token == XContentParser.Token.VALUE_NUMBER) {
+int terminateAfterCount = parser.intValue();
+if (terminateAfterCount <= 0) {
+throw new ElasticsearchIllegalArgumentException(&quot;terminateAfter must be > 0&quot;);
+}
+context.terminateAfter(parser.intValue());
+}
+}
+}
+

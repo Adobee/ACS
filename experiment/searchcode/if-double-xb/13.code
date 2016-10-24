@@ -1,0 +1,8 @@
+public class Secante extends Base {
+
+public double evaluar(Funcion funcion, double xa, double xb, double e) {
+return this.evaluar(funcion, xa, xb, e, 100);
+}
+
+public double evaluar(Funcion funcion, double xa, double xb, double e, int n) {
+

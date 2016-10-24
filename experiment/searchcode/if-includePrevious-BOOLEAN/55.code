@@ -1,0 +1,11 @@
+return this.indicesLifecycle;
+}
+
+@Override
+public NodeIndicesStats stats(boolean includePrevious) {
+return stats(true, new CommonStatsFlags().all());
+public NodeIndicesStats stats(boolean includePrevious, CommonStatsFlags flags) {
+CommonStats oldStats = new CommonStats(flags);
+
+if (includePrevious) {
+

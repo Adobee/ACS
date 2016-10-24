@@ -1,0 +1,9 @@
+public class Class3 {
+
+private String sourceField1;
+private String sourceField2;
+private String sourceField3;
+public Class3(String sourceField1, String sourceField2, String sourceField3) {
+super();
+this.sourceField1 = sourceField1;
+

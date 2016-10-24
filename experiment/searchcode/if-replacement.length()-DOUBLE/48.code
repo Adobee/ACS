@@ -1,0 +1,12 @@
+String s = (String) (ref == null ? null : ref.get());
+
+if (s == null) {
+final int length = name.length();
+
+// First, fast (common) case: nothing to escape
+int i = 0;
+
+for (; i < length; i++) {
+char c = name.charAt(i);
+if (c == &#39;$&#39; || c == &#39;_&#39;) {
+

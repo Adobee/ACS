@@ -1,0 +1,7 @@
+public boolean onPreferenceChange(Preference preference, Object newValue) {
+String key = preference.getKey();
+boolean value = (Boolean) newValue;
+if (key.equals(NOTIFY_WHEN_NEWS)) {
+preferenceMap.setNotifyWhenNews(value);
+} else if (key.equals(VOICE_NOTIFY)) {
+

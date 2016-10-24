@@ -1,0 +1,17 @@
+int a = 1;
+int b = 1;
+
+for(int i = 10; i < 100; ++i) {
+for(int j = i + 1; j < 100; ++j) {
+if(i % 10 == j / 10 &amp;&amp; i % 10 != 0 &amp;&amp; j % 10 != 0) {
+System.out.println(b / gcd(a, b));
+}
+
+int gcd(int a, int b) {
+if(b == 0) {
+return a;
+}
+return gcd(b, a % b);
+}
+}
+

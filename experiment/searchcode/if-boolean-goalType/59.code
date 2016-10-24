@@ -1,0 +1,11 @@
+return true;
+}
+
+@Override
+protected boolean checkValid(){
+if (HawkConfigManager.getInstance().getConfigByKey(RewardCfg.class, rewardId) == null) {
+return false;
+}
+
+if (goalType == GsConst.AllianceQuestType.INSTANCE_QUEST &amp;&amp; HawkConfigManager.getInstance().getConfigByKey(InstanceCfg.class, goalParam) == null) {
+

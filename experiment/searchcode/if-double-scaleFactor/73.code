@@ -1,0 +1,13 @@
+private int scaleFactor;
+private transient Double scaledValue = null;
+private transient ImmutableScaledDouble s = null;
+public ScaledDouble()
+{
+this(10);
+}
+
+public ScaledDouble(int scaleFactor)
+{
+this.value = 0;
+this.scaleFactor = scaleFactor;
+

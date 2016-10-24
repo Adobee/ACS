@@ -1,0 +1,9 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+import org.eclipse.jetty.http.HttpMethod;
+private final TriConsumer<Request, Response, List<String>> handler;
+private final HttpMethod httpMethod;
+
+public Route(String targetRegex, HttpMethod httpMethod, TriConsumer<Request, Response, List<String>> handler) {
+

@@ -1,0 +1,12 @@
+public class FieldNameLength extends DataElement {
+
+/**
+* The maximum size of the field name element.
+*/
+private int maximumSize;
+for (String key: keys)
+if (key.length() > maximumSize)
+maximumSize = key.length();
+
+maximumSize++; //NULL termination
+

@@ -1,0 +1,14 @@
+@Override
+public boolean matches(Object requirement) {
+for (int i = 0; i < scopeSet.size(); i++) {
+if ((scopeSet.get(i)).matches(requirement)) {
+for (int i = 0; i < scopeSet.size(); i++) {
+retString += scopeSet.get(i);
+if ((i + 1) != scopeSet.size())
+retString += &quot;, &quot;;
+}
+return retString;
+}
+
+}
+

@@ -1,0 +1,14 @@
+private int maxSize;
+private int front, rear;
+
+public Queue(int max){
+maxSize = max;
+arr = new long[maxSize];
+return maxSize;
+}
+
+public void insert(long value){
+if(!isFull()){
+rear = (rear+1) % maxSize;
+arr[rear] = value;
+

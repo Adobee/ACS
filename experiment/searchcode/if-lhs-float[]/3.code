@@ -1,0 +1,8 @@
+float[] avgPoint = calAvgPoint(point);
+float[][] norPoint = calNorPoint(point, avgPoint);
+return calCentre(calLhsInv(calLhs(norPoint)), calRhs(norPoint), avgPoint);
+private static float[] calCentre(float[][] lhsInv, float[] rhs, float[] avg) {
+float[] centre = new float[3];
+if (lhsInv == null) {
+return null;
+

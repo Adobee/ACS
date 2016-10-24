@@ -1,0 +1,7 @@
+while(upper != null &amp;&amp; upper.left == null &amp;&amp; upper.right == null)
+upper = upper.next;
+if(upper == null)
+start = cur;
+if(cur == upper.left &amp;&amp; upper.right != null){
+cur.next = upper.right;
+

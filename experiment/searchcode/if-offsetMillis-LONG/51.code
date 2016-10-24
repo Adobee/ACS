@@ -1,0 +1,5 @@
+public static String getId(final long offset) {
+if (!TuidFactory.initialized) throw new IllegalStateException(&quot;TuidFactory not initialized.&quot;);
+public static String getFirstId(final long offsetMillis) {
+long id = ((System.currentTimeMillis() + offsetMillis) << 18) &amp; 0xFFFFFFFFFFFC0000L;
+

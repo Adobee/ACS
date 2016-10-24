@@ -1,0 +1,7 @@
+OfferedService oldOfferedService = offeredService;
+offeredService = newOfferedService;
+if (eNotificationRequired())
+{
+ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, OfficeSDLPackage.SERVICE_RULE__OFFERED_SERVICE, oldOfferedService, newOfferedService);
+if (msgs == null) msgs = notification; else msgs.add(notification);
+

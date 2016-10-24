@@ -1,0 +1,10 @@
+sc.close();
+
+}
+
+private static boolean isShuffle(char[] x, char[] y, char[] z) {
+boolean[][] shuffle = new boolean[x.length + 1][y.length + 1];
+
+shuffle[0][0] = true;
+for (int i = 1; i <= x.length; i++) shuffle[i][0] = ((x[i - 1] == z[i - 1]) &amp;&amp; shuffle[i - 1][0]);
+

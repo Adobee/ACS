@@ -1,0 +1,11 @@
+* Counts the characters that have been appended to the wrapped appenable since it was last flushed.
+*/
+public final class CountingFlushableAppendable
+implements Appendable, Flushable, FutureBlockCallback {
+private static final Logger logger = Logger.getLogger(
+CountingFlushableAppendable.class.getName());
+
+private int count;
+private final Appendable appendable;
+private final Flushable flushable;
+

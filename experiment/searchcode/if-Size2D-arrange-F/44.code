@@ -1,0 +1,7 @@
+for (Block b : container.getBlocks()) {
+if (b != null) {
+Size2D s = b.arrange(g2, RectangleConstraint.NONE);
+protected Size2D arrangeRR(BlockContainer container, Graphics2D g2, RectangleConstraint constraint) {
+Size2D size1 = arrange(container, g2, RectangleConstraint.NONE);
+if (constraint.getWidthRange().contains(size1.getWidth())) {
+

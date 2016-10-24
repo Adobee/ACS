@@ -1,0 +1,10 @@
+public class DBMoaraNormalization extends DBMySQL {
+
+static protected Connection conn;
+static private int numChildren = 0;
+
+public DBMoaraNormalization() {
+super();
+if (numChildren==0) {
+conn = this.init(&quot;moara_normalization&quot;);
+

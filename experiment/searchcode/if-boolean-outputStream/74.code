@@ -1,0 +1,8 @@
+private OutputStreamWriter outputStream;
+private boolean finshed = false;
+private LinkedBlockingQueue<AbstractStanza> writeQueue = new LinkedBlockingQueue<AbstractStanza>();
+AbstractStanza output = writeQueue.take();
+if (outputStream == null) {
+shouldStop = true;
+} else {
+

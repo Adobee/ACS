@@ -1,0 +1,13 @@
+output.writeInt( lastNodeId );
+}
+
+public Value<V> getFirstValue( ) throws IOException
+{
+if ( firstNodeId != -1 )
+ValueEntry<V> next = entry.getNext( );
+if ( next != null )
+{
+return new ExternalValue( node, next );
+}
+int nextNodeId = node.getNextNodeId( );
+

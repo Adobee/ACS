@@ -1,0 +1,10 @@
+controls = new Controller(display);
+level = new Level(0,0, display);
+}
+
+public void tick(boolean[] key, int ups) {
+time+=1/(ups/60);
+if(!spectator){
+boolean forward = key[KeyEvent.VK_W];
+boolean back = key[KeyEvent.VK_S];
+

@@ -1,0 +1,7 @@
+public boolean equals(final Object other) {
+if (other instanceof PropertyChangeListener) {
+final PropertyChangeListener otherListener = (PropertyChangeListener)other;
+for (PropertyChangeListener listener = otherListener; listener != null;) {
+if (listener == this) {
+return true;
+

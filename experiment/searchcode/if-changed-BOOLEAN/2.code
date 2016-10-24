@@ -1,0 +1,9 @@
+package solution;
+
+public abstract class AbstractSolver {
+public boolean solve() {
+return solve(true);
+boolean somethingChanged = removeInvalidValues();
+if (allowGuessing &amp;&amp; !isSolved()) {
+if (guessValue()) {
+

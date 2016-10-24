@@ -1,0 +1,11 @@
+final double small = 1e-50;
+double hPrev = getA(0, x);
+// use the value of small as epsilon criteria for zero checks
+if(Precision.equals(hPrev, 0.0, small)) {
+cN = small;
+}
+dN = 1 / dN;
+final double deltaN = cN * dN;
+hN = hPrev * deltaN;
+if(Double.isInfinite(hN)) {
+

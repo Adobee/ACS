@@ -1,0 +1,9 @@
+* A bitmap specifying which pages we have after lastContiguousPage. If
+* the nth bit is set, then we have page (lastContig+n)
+public int getPageMap() {
+return pageMap;
+}
+
+public boolean includesPage(long pageNum) {
+if(pageNum <= lastContiguousPage)
+

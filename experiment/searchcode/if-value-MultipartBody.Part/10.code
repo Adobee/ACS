@@ -1,0 +1,9 @@
+if ( !(request.body() instanceof MultipartBody) ) {
+return request;
+}
+List<MultipartBody.Part> parts = ((MultipartBody) request.body()).parts();
+for(MultipartBody.Part part : multiBody.parts()) {
+try {
+String key, value;
+Field field = MultipartBody.Part.class.getDeclaredField(&quot;headers&quot;);
+

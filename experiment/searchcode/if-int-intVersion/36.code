@@ -1,0 +1,7 @@
+public boolean ret$Active();
+
+/** method to set an integer version */
+public void put$IntVersion(int _v);
+/** method to query current version.
+* @returns -1 if no version column of type int or Integer in this entity */
+

@@ -1,0 +1,11 @@
+public static StorageMethod createStorageMethod(SystemConfig sysc){
+if (sysc.get(&quot;StorageMethod&quot;).equals(&quot;Serialize&quot;)){
+return new SerializeStorage();
+}
+else{
+// here return default storage method
+return new SerializeStorage();
+}
+}
+}
+

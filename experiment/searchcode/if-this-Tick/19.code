@@ -1,0 +1,16 @@
+import me.fanhua.uapi.manager.UEntityManager;
+
+public class TaskUEntityTick implements Runnable {
+
+public static void addTask() {
+private TaskUEntityTick() {}
+
+public void run() {
+int tick = this.tick++;
+if (this.tick < 0) this.tick = 0;
+
+UEntityManager.getInstance().onTick(tick);
+}
+
+}
+

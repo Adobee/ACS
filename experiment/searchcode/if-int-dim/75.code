@@ -1,0 +1,11 @@
+public class IteractionHasDimTimeId  implements java.io.Serializable {
+
+
+private int iteractionIdIteraction;
+private int dimTimeIdDimTime;
+
+public IteractionHasDimTimeId() {
+}
+
+public IteractionHasDimTimeId(int iteractionIdIteraction, int dimTimeIdDimTime) {
+

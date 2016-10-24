@@ -1,0 +1,10 @@
+public static String trim(String str, String... delimiters) {
+if ((str == null) || str.isEmpty())
+return str;
+for (String delimiter : delimiters)
+str = str.replace(delimiter, &quot; &quot;);
+str = str.trim();
+return str;
+}
+}
+

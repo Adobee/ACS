@@ -1,0 +1,7 @@
+private static <T extends Comparable<T>> void sort(T[] ts, int lo, int hi) {
+if (hi <= lo + CUTOFF) {
+Insertion.sort(ts, lo, hi);
+} else {
+int j = partition(ts, lo, hi);
+sort(ts, lo, j-1);
+

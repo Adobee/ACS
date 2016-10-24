@@ -1,0 +1,11 @@
+private float alpha;
+public ScreenFlash() {
+this.alpha = 0;
+}
+public void paint(Graphics g){
+public void addAlpha(float alpha) {
+if(this.alpha+alpha>=1)
+this.alpha=1;
+else
+this.alpha += alpha;
+

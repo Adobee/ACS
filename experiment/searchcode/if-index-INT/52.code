@@ -1,0 +1,10 @@
+if (A[index] <= 0) A[index] = A.length + 1;
+}
+for (int index = 0; index < A.length; index++) {
+if (Math.abs(A[index]) <= A.length &amp;&amp; A[index] != 0 &amp;&amp; A[Math.abs(A[index]) - 1] > 0) {
+A[Math.abs(A[index]) - 1] *= -1;
+}
+}
+for (int index = 0; index < A.length; index++) {
+if (A[index] > 0) return index + 1;
+

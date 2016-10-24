@@ -1,0 +1,8 @@
+public void write(byte b[], int off, int len) throws IOException {
+if (mBytesleft < 1) return;
+int l = (mBytesleft < len)? mBytesleft : len;
+public void write(int b) throws IOException {
+if (mBytesleft < 1) return;
+_os.write(b);
+mBytesleft--;
+

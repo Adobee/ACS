@@ -1,0 +1,9 @@
+boolean deleteAll = mOptions.getBooleanValue(&quot;Delete all&quot;);
+boolean withDeletions = deleteAll
+|| mOptions.getBooleanValue(&quot;Deletions&quot;);
+
+s.addLayer(BGND_ELEMENT_MESH, mMesh);
+
+Rect delaunayBounds = null;
+if (mOptions.getBooleanValue(&quot;Small initial mesh&quot;)) {
+

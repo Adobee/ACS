@@ -1,0 +1,9 @@
+public static void execute(Runnable command) {
+if (executorService != null &amp;&amp; !executorService.isShutdown()) {
+executorService.execute(command);
+}
+}
+
+public static void shutdown() {
+if (executorService != null) {
+

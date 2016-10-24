@@ -1,0 +1,15 @@
+private GridByteArrayList msgBytes = new GridByteArrayList(1024 << 3);
+
+/** */
+private int msgSize = -1;
+
+/**
+*
+*/
+void reset() {
+void read(ByteBuffer buf) {
+if (msgSize < 0) {
+int remaining = buf.remaining();
+
+if (remaining > 0) {
+

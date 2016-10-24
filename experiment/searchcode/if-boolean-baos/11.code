@@ -1,0 +1,13 @@
+System.out.println(&quot;put&quot;);
+String[] s = line.substring(4).split(&quot;%&quot;);
+
+baos.write(PUT_BYTE);
+
+if (s[0].equals(&quot;s&quot;)) {
+baos.write(Integer.parseInt(s[1]));
+}
+
+if (s[0].equals(&quot;b%&quot;)) {
+baos.write(BOOLEAN_BYTE);
+try {
+

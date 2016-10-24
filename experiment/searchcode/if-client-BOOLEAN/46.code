@@ -1,0 +1,11 @@
+currectClient = new Client(0, client_name, client_surname, client_address);
+
+boolean sent = dbf.saveNewClient(currectClient);
+if(!sent)
+{
+currectClient = null;
+}
+return currectClient;
+}
+}
+

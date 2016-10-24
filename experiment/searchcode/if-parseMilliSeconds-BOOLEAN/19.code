@@ -1,0 +1,14 @@
+* @return
+*/
+public boolean isNew(){
+if (!checkCursor())
+return false;
+else
+return getBoolean(KEY_IS_NEW);
+public void setIsNew(boolean isNew){
+long rowId = getRowId();
+if (rowId == -1)
+return;
+
+// which row to update
+

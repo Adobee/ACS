@@ -1,0 +1,10 @@
+* @param up if true setting thresholdUp, else setting thresholdDown
+*/
+public ThresholdModifiedVarghaDelaney(double thresh, boolean up){
+if(up)
+thresholdUp = thresh;
+double tDouble = tVal.getValue();
+double cDouble = cVal.getValue();
+
+if((tDouble < thresholdUp &amp;&amp; cDouble < thresholdUp) || (tDouble > thresholdDown &amp;&amp; cDouble > thresholdDown))
+

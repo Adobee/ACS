@@ -1,0 +1,12 @@
+private double[] v4;
+
+/** Initialization indicator for the interpolation vectors. */
+private boolean vectorsInitialized;
+protected void computeInterpolatedStateAndDerivatives(final double theta,
+final double oneMinusThetaH)
+throws MathUserException {
+
+if (! vectorsInitialized) {
+
+if (v1 == null) {
+

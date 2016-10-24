@@ -1,0 +1,11 @@
+this.dirtyState = dirtyState;
+}
+
+public BaseObject(Long objId, boolean initializationRequired){
+initialize(objId,initializationRequired);
+private void initialize(Long objectId, boolean isRequried) {
+if(!isRequried){
+return;
+}
+Map<String, String> config  =PropertyFileReader.readConfig();
+

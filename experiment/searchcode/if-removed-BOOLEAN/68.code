@@ -1,0 +1,10 @@
+public final double[] fittedParameters;
+public final double A;
+public final double B;
+public final int removedValue;
+double thatRsq = o.fittedParameters[4];
+
+boolean lg = thisRsq < thatRsq;
+boolean eq = thisRsq == thatRsq;
+if(eq) return (this.removedValue < o.removedValue) ? 1 : -1;
+

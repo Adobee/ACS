@@ -1,0 +1,10 @@
+* Evaluates the current state and returns whether the step that is coupled to this
+* condition is available.
+*
+* @return True if the step this condition is coupled to is available, false otherwise
+* @return <tt>true</tt> if all the steps in the wizard are complete, <tt>false</tt> otherwise.
+*/
+protected final boolean allStepsComplete() {
+for (IWizardStep step : steps) {
+if (!step.isComplete()) {
+

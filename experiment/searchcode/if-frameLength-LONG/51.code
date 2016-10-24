@@ -1,0 +1,7 @@
+final int frameLength = (int) audioStream.getFrameLength();
+if (frameLength > 44100 * 8 * 2) {
+throw new IllegalArgumentException(&quot;The audio file is too long (must be shorter than 4 bars at 50BPM)&quot;);
+final byte[] bytes = new byte[frameLength * frameSize];
+final int result = audioStream.read(bytes);
+if (result < 0) {
+

@@ -1,0 +1,11 @@
+public class TimeLimitGoal extends Goal{
+protected Timer goalTimer;
+
+public TimeLimitGoal(int timeGoal){
+init(timeGoal);
+}
+
+@Override
+public int checkGoal() {
+if(goalTimer.isTimeUp())
+

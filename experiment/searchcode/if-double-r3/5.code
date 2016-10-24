@@ -1,0 +1,11 @@
+private double R3_IC_C1;
+private double R3_ID_C1;
+private double R3_IE_C1;
+private double R3_IF_C1;
+private double R3_IG_C2;
+public double getR3_IF_C1() {
+return R3_IF_C1;
+}
+public double getR3_IG_C2() {
+return R3_IG_C2;
+

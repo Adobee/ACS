@@ -1,0 +1,8 @@
+public void init(Config config, String key) {
+String normalizationFormString = DEFAULT_NORMALIZATION_FORM.name();
+if (config.hasPath(key + &quot;.normalization_form&quot;)) {
+normalizationFormString = config.getString(key + &quot;.normalization_form&quot;);
+}
+if (normalizationFormString.equalsIgnoreCase(&quot;NFC&quot;)) {
+normalizationForm = Normalizer.Form.NFC;
+

@@ -1,0 +1,9 @@
+super(temporaryParent, locationIn);
+
+returnParameters = new ReturnParameterList(this, locationIn.asNew());
+}
+
+public int getNumReturnParameters()
+Parameter p = Parameter.decodeStatement(this, type + &quot; ret&quot; + (returnParameters.getNumVisibleChildren() + 1), getLocationIn().asNew(), true, false, true);
+p.setForceOriginalName(true);
+

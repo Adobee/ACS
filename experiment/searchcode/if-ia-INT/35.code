@@ -1,0 +1,12 @@
+public static void merge(int A[], int m, int B[], int n) {
+if(n==0) return;
+int iA = 0, iB = 0;
+while(iA < m - n) {
+if(A[iA] > B[iB]) {
+int tmp = A[iA];
+A[iA] = B[iB];
+B[iB] = tmp;
+iA++;
+Arrays.sort(B);
+} else {
+

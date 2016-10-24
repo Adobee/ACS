@@ -1,0 +1,14 @@
+char first = str.charAt(0);
+int max = sourceCount - targetCount;
+
+for(int i = fromIndex ; i <= max ; i++){
+if(source[i] != first){
+fromIndex = rightIndex;
+}
+if(targetCount == 0){
+return fromIndex;
+}
+
+int strLastIndex = targetCount - 1;
+char srtLastChar = str.charAt(strLastIndex);
+

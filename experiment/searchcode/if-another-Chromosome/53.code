@@ -1,0 +1,10 @@
+return geometry;
+}
+
+@Override
+protected boolean isSame(Chromosome another) {
+
+if (!(another instanceof GeometryChromosome)) {
+GeometryChromosome anotherGc = (GeometryChromosome) another;
+if (getLength() != anotherGc.getLength()) {
+

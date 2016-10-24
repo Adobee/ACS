@@ -1,0 +1,10 @@
+List < String > result = new LinkedList < String > ();
+if (A.length == 0) {
+Range range = new Range(lower, upper);
+result.add(range.toString());
+return result;
+}
+
+if (A[0] > lower) {
+Range range = new Range(lower, A[0] - 1);
+

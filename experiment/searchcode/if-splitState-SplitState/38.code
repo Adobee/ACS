@@ -1,0 +1,13 @@
+this.runningState = 0;
+this.splitState = STATE_UNSPLIT;
+}
+
+public void split() {
+if (this.runningState != STATE_RUNNING) {
+this.splitState = STATE_SPLIT;
+}
+
+public void unsplit() {
+if (this.splitState != STATE_SPLIT) {
+throw new IllegalStateException(&quot;Stopwatch has not been split. &quot;);
+

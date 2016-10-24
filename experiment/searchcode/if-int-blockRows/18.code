@@ -1,0 +1,6 @@
+long blockSize = Long.parseLong(configuration.get(MatrixMultJob.BLOCK_SIZE_CONF_KEY));
+int matrixNo = ((FileSplit) context.getInputSplit()).getPath().getName().contains(&quot;B&quot;) ? 1 : 0;
+long blockRows = matrixNo == 0 ? K / blockSize : I / blockSize;
+
+String[] words = line.toString().split(&quot;\\s+&quot;);
+

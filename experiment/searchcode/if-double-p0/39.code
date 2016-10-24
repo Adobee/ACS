@@ -1,0 +1,8 @@
+@Override
+public double hit(ShadeRec sr, double tmin, Vector3d origin, Vector3d direction) {
+if (!getBoundingBox().hit(origin, direction)) {
+return Double.NEGATIVE_INFINITY;
+}
+
+double a = p0.x - p1.x, b = p0.x - p2.x, c = direction.x, d = p0.x - origin.x;
+

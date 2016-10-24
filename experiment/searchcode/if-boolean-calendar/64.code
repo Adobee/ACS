@@ -1,0 +1,13 @@
+package calendar.util;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.List;
+public static Pageable constructPageSpecification(int pageIndex, int size){
+Pageable result;
+result = new PageRequest(pageIndex, size);
+return result;
+}
+
+public static boolean isNullOrEmpty(Object value){
+

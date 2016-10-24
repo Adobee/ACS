@@ -1,0 +1,8 @@
+* @param username
+* @param password
+* @param connectMode 值：PASSIVE_LOCAL_DATA_CONNECTION_MODE, ACTIVE_LOCAL_DATA_CONNECTION_MODE
+ftp.login(username, password);
+
+if(connectMode == FTPClient.PASSIVE_LOCAL_DATA_CONNECTION_MODE) {
+ftp.enterLocalPassiveMode();
+

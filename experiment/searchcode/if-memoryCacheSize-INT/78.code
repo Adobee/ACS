@@ -1,0 +1,8 @@
+MemoryCacheAware<String, Bitmap> softMemoryCache;
+@TargetApi(Build.VERSION_CODES.HONEYCOMB_MR1)
+public LruMemoryCache(int memoryCacheSize)
+lruCache = new LruCache<String, Bitmap>(memoryCacheSize){
+
+protected int sizeOf(String key, Bitmap value) {
+int verson = Build.VERSION.SDK_INT;
+

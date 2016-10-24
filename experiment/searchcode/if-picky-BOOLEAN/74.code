@@ -1,0 +1,10 @@
+public void ForwardingCollections_extendBehaviorWithDecorators() throws Exception {
+List<Integer> pickyList = new ForwardingList<Integer>() {
+super.add(index, elem);
+}
+}
+
+@Override
+public boolean add(final Integer elem) {
+if (elem > 0) {
+

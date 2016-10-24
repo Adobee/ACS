@@ -1,0 +1,11 @@
+package com.javac2.util;
+
+public class Check {
+private Check() {}
+
+public static <T> T notNull(T reference) {
+return Check.notNull(reference, &quot;Reference was null.&quot;);
+}
+
+public static <T> T notNull(T reference, String format, Object... args) {
+

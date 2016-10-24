@@ -1,0 +1,11 @@
+private int dayOfMonth;
+private int month;
+
+public DayAndMonthRule() {
+this(1, 1);
+}
+
+public DayAndMonthRule(int dayOfMonth, int month) {
+public void setDayOfMonth(int dayOfMonth) {
+if (dayOfMonth < 1 || dayOfMonth > SerialDate.LAST_DAY_OF_MONTH[this.month]) {
+

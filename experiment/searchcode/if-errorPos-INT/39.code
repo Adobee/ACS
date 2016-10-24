@@ -1,0 +1,13 @@
+private Exp parseTerm() {
+if(tokens.isEmpty()) {
+errorPos = afterLastTokenPos;
+return rightFact == null ? null : new Div(fact, rightFact);
+}
+}
+return fact;
+}
+
+private Exp parseFact() {
+if(tokens.isEmpty()) {
+errorPos = afterLastTokenPos;
+

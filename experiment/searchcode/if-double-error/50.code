@@ -1,0 +1,12 @@
+super(KP, KI, KD);
+}
+
+@Override
+public double getResult(double error) {
+
+//double trimmedError = processError(error);
+//accumulateError(trimmedError);
+accumulateError(error);
+
+double result =  KP * error + KI * accumulatedError;
+

@@ -1,0 +1,11 @@
+* This worker should automatically start on submit
+*/
+private boolean autoStart;
+
+
+private AddWorkerMessage(String name, Worker worker) {
+private AddWorkerMessage(String name, Worker worker, boolean autoStart) {
+this.name      = name;
+this.delegate  = worker;
+this.autoStart = autoStart;
+

@@ -1,0 +1,10 @@
+private TwitterClient client;
+private Boolean shouldRefresh = false;
+
+@Override
+public void onCreate(Bundle savedInstanceState) {
+super.onResume();
+if(shouldRefresh) {
+// Get timeline
+populateTimelineWithMaxId(null, Long.MAX_VALUE);
+

@@ -1,0 +1,10 @@
+public CircularDictionary(int size) {
+data = new byte[size];
+index = 0;
+
+if (size > 0 &amp;&amp; (size &amp; (size - 1)) == 0)  // Controlla se la grandezza è una potenza di 2
+throw new IllegalArgumentException();
+
+if (mask != 0) {
+int readIndex = (index - dist + data.length) &amp; mask;
+

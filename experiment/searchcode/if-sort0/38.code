@@ -1,0 +1,10 @@
+public static int[] sort(int[] arr) {
+if (arr == null || arr.length < 2)
+return arr;
+int[] minmax = minmax(arr);
+for(int e : arr) {
+if (e < min)
+min = e;
+if(e > max)
+max = e;
+

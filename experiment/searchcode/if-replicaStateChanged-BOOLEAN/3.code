@@ -1,0 +1,6 @@
+ReplicaEntity[] vr = mds.getValidReplicas(storageId);
+if (vr != null) {
+for (int i = 0; i < vr.length; i++) {
+boolean isActiveOrMoving = vr[i].getStatus() == ACTIVE ||
+vr[i].getStatus() == MOVING;
+

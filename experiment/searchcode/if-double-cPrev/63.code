@@ -1,0 +1,13 @@
+/*
+* CPREV.java
+*
+* Copyright (C) 2002-2006 Alexei Drummond and Andrew Rambaut
+*
+* This file is part of BEAST.
+// This is solved by calling the setEmpiricalRates and setEmpiricalFrequencies methods
+private CPREV() { super(&quot;cpREV45&quot;);
+
+int n = AminoAcids.INSTANCE.getStateCount();
+
+double[][] rate = new double[n][n];
+

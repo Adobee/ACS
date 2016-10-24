@@ -1,0 +1,10 @@
+public static ReadableInstant convertDateToEndOfDay(LocalDate date) {
+ReadableInstant newLocalDate = null;
+if (date != null) {
+return new DateTime(date.getYear(), date.getMonthOfYear(), date.getDayOfMonth(), 23, 59, 59, 59);
+ReadableInstant newLocalDate = null;
+if (date != null) {
+return date.toDateTimeAtStartOfDay();
+}
+return newLocalDate;
+

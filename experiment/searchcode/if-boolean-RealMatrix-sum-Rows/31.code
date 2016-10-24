@@ -1,0 +1,7 @@
+RealMatrix arzneg = selectColumns(arz, MathArrays.copyOf(arReverseIndex, mu));
+RealMatrix arnorms = sqrt(sumRows(square(arzneg)));
+final int[] idxnorms = sortedIndices(arnorms.getRow(0));
+* @return Row matrix representing the sums of the rows.
+*/
+private static RealMatrix sumRows(final RealMatrix m) {
+

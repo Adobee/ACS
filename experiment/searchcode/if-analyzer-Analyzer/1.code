@@ -1,0 +1,8 @@
+public static AnalyzerFactory getInstance() {
+synchronized (AnalyzerFactory.class) {
+if (analyzerFactory == null) {
+public Analyzer getAnalyzer(String analyzerName) {
+Analyzer analyzer = null;
+if (&quot;paoding&quot;.equals(analyzerName)) {
+analyzer = new PaodingAnalyzer();
+

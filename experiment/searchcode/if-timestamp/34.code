@@ -1,0 +1,7 @@
+public boolean isEqual(VectorTimestamp timestamp) {
+
+if(timestamp.getTimestamp() != null &amp;&amp; timestamp.getTimestamp().length != this.timestamp.length&amp;&amp; IsConcurrent(timestamp)==false) {
+int[] dummyTimestamp = timestamp.getTimestamp();
+for (int i = 0; i < this.timestamp.length; i++) {
+if (this.timestamp[i] != dummyTimestamp[i])
+

@@ -1,0 +1,13 @@
+public int parse(Automaton automaton) {
+skipWhiteSpace();
+char lookahead = input.charAt(index);
+
+int lhs = parseCondition(automaton);
+char lookahead = input.charAt(index);
+
+int lhs = parseAddSub(automaton);
+
+skipWhiteSpace();
+
+if(index < input.length()) {
+

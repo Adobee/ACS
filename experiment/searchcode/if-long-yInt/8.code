@@ -1,0 +1,8 @@
+public static boolean isEquals(final double x, final double y, final int maxUlps) {
+
+final long xInt = Double.doubleToRawLongBits(x);
+final long yInt = Double.doubleToRawLongBits(y);
+
+final boolean isEqual;
+if (((xInt ^ yInt) &amp; SGN_MASK) == 0L) {
+

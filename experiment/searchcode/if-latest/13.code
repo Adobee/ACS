@@ -1,0 +1,9 @@
+private void onDatabaseResponseReceived(List<LatestActivityDto> latestActivityDtoList) {
+
+if(!latestActivityDtoList.isEmpty()) {
+
+//create a list of sections for the recycler view to display.
+List<Section<LatestActivityDto>> sections = convertToSections(latestActivityDtoList);
+
+//hide the no activity view if it was shown previously.
+

@@ -1,0 +1,10 @@
+public ByteCount(long bytes) {
+this.bytes = bytes;
+}
+
+public static ByteCount fromKilobytes(double value) {
+return new ByteCount((long) (value * BYTES_PER_KILOBYTE));
+}
+
+public static ByteCount fromMegabytes(double value) {
+

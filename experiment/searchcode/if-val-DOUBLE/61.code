@@ -1,0 +1,14 @@
+val = new double[] { v0, 0, 0, 0 };
+}
+
+public Scalar(double[] vals) {
+if (vals != null &amp;&amp; vals.length == 4)
+val = vals.clone();
+set(vals);
+}
+}
+
+public void set(double[] vals) {
+if (vals != null) {
+val[0] = vals.length > 0 ? vals[0] : 0;
+

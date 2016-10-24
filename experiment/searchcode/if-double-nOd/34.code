@@ -1,0 +1,11 @@
+
+public class NJTax extends Tax {
+NJTax(double gi, String s, int nod) {
+super(gi, s, nod);
+}
+public double adjustForStudents(double tax){
+return tax - 500;
+}
+public double calcTax(){
+if(grossIncome < 50000){
+

@@ -1,0 +1,6 @@
+private static void printAllSetsUtil(String expression, int current, int previousFactor) {
+if (expression.equals(&quot;&quot;))
+System.out.println(current + &quot; * 1&quot;);
+for (int factor = current - 1; factor >= 2; factor--) {
+if (current % factor == 0 &amp;&amp; factor <= previousFactor) {
+

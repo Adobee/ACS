@@ -1,0 +1,13 @@
+double  x = 0.0D, y = y0;
+
+// Calculate nsteps
+double ns = (xn - x0)/h;
+ns = Math.rint(ns);
+int nsteps = (int) ns;  // number of steps
+y[i] = y0[i];
+
+// iteration over allowed steps
+if(isBackwards){
+for(int j=0; j<nsteps; j++){
+x  = x0 - j*h;
+

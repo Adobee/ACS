@@ -1,0 +1,12 @@
+import javax.swing.*;
+import java.util.ArrayList;
+
+
+public class GRM {
+
+double R, q0, E, nu, beta, z, h, it;
+int n;
+public static double Heaviside(double a) {
+if (a > 0) return 1;
+else if (a < 0) return 0;
+

@@ -1,0 +1,13 @@
+network.setId(networkId);
+}
+
+public Long getNetworkId() {
+if (isNetworkDefined())
+return network.getId();
+return null;
+}
+
+@Override
+public boolean isNetworkDefined() {
+return network != null;
+

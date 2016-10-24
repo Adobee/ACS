@@ -1,0 +1,12 @@
+
+public class Triangle {
+MaterialProps mats;
+public Vector P0,P1,P2;
+
+// P2
+double C = P0.Z - P1.Z;
+
+double D = P0.X - P2.X;
+double E = P0.Y - P2.Y;
+double F = P0.Z - P2.Z;
+

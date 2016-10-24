@@ -1,0 +1,8 @@
+public class PivotRowMapper extends Mapper<LongWritable, Text, LongWritable, Text> {
+
+int pivotRow = 1;
+int rowCount = 4;
+
+protected void map(LongWritable offset, Text value, Context context) throws IOException, InterruptedException {
+if (offset.get() == pivotRow) {
+

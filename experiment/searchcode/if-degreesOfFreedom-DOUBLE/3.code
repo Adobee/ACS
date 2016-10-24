@@ -1,0 +1,10 @@
+return (degreesOfFreedom > 1) ? 0 : Double.NaN;
+}
+
+@Override
+public double Variance() {
+if (degreesOfFreedom > 2)
+return degreesOfFreedom / (degreesOfFreedom - 2);
+else if (degreesOfFreedom > 1)
+return Double.POSITIVE_INFINITY;
+

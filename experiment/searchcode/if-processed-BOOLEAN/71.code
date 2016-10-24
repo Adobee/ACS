@@ -1,0 +1,12 @@
+@Inheritance(strategy = InheritanceType.TABLE_PER_CLASS)
+public class QuoteBatch extends StoredObject {
+
+private boolean processed = false;
+private boolean successful = false;
+public void markSuccess(boolean val){
+if(isProcessed())
+this.successful = val;
+}
+
+public boolean isProcessed(){
+

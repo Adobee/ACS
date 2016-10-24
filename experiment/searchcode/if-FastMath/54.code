@@ -1,0 +1,13 @@
+package caveyard.map.math;
+
+import com.jme3.math.FastMath;
+
+/**
+* @author Maximilian Timmerkamp
+return FastMath.sqr(this.x - other.x) + FastMath.sqr(this.y - other.y) <= FastMath.sqr(this.r + other.r);
+}
+
+public boolean intersectsWith(Rect other)
+{
+if (other.getX1() <= this.x &amp;&amp; this.x <= other.getX2())
+

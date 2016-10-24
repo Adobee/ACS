@@ -1,0 +1,8 @@
+StringBuffer insertionBuf = new StringBuffer();
+int quoteLen = Math.max(opener.length(), closer.length());
+if (1 < quoteLen) {
+* deletion: CDEF.......UVWX pre/post: AB / YZ
+*/
+int addStart = start - (quoteLen - 1);
+if (0 <= addStart) {
+

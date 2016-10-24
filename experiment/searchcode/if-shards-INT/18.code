@@ -1,0 +1,12 @@
+public abstract class BroadcastOperationResponse implements ActionResponse {
+
+/** The total shards. */
+private int totalShards;
+
+/** The successful shards. */
+successfulShards = in.readVInt();
+failedShards = in.readVInt();
+int size = in.readVInt();
+if (size > 0) {
+shardFailures = new ArrayList<ShardOperationFailedException>(size);
+

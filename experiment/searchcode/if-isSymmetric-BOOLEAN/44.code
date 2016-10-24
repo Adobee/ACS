@@ -1,0 +1,10 @@
+public class Solution {
+public boolean isSymmetric(TreeNode root) {
+if (root == null) {
+return isSymmetric(root.left, root.right);
+}
+
+// 构造一个重载方法
+public boolean isSymmetric(TreeNode lTree, TreeNode rTree) {
+if (lTree == null &amp;&amp; rTree == null) {
+

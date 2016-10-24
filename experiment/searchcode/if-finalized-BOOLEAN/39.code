@@ -1,0 +1,10 @@
+private String objectName; //The Object Name
+
+private boolean finalized = false; //Defines if the Model has be finalized (I.E. Read Only)
+else throw new UnsupportedOperationException(&quot;Model was finalized&quot;);
+}
+
+public void finalize() {
+if(!this.finalized) this.finalized = true;
+else throw new UnsupportedOperationException(&quot;Model was already finalized&quot;);
+

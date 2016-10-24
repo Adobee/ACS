@@ -1,0 +1,9 @@
+SnapshotsInProgress.Entry updatedSnapshot = snapshot;
+boolean snapshotChanged = false;
+if (snapshot.state() == State.STARTED || snapshot.state() == State.ABORTED) {
+shards.put(shardEntry.getKey(), new ShardSnapshotStatus(shardStatus.nodeId(), State.FAILED, &quot;node shutdown&quot;));
+}
+}
+}
+if (snapshotChanged) {
+

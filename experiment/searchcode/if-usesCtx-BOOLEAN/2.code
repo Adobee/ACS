@@ -1,0 +1,14 @@
+return Locals.KEYWORDS.contains(name);
+}
+
+public boolean usesScore() {
+return score;
+}
+
+public boolean usesCtx() {
+writer.visitVarInsn(Opcodes.DSTORE, score.getSlot());
+}
+
+if (reserved.usesCtx()) {
+// if the _ctx value is used, we do this once:
+

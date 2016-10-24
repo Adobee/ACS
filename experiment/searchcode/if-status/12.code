@@ -1,0 +1,13 @@
+package org.oxerr.chbtc.dto;
+
+public enum Status {
+
+SUCCESS(2), UNFILLED(0), PARTIALLY_FILLED(3), UNKNOWN(-1), CANCEL(1);
+for (Status status : Status.values()) {
+if (status.status == statusCode) {
+return status;
+}
+}
+
+throw new IllegalArgumentException(&quot;Unexpected statuse: &quot; + statusCode);
+

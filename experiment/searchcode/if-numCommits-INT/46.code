@@ -1,0 +1,13 @@
+private int nActiveSerializable;
+
+/* Locker Stats */
+private int numCommits;
+private int numAborts;
+private int numXAPrepares;
+if (isCommit) {
+numCommits++;
+} else {
+numAborts++;
+}
+if (txn.isSerializableIsolation()) {
+

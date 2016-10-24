@@ -1,0 +1,12 @@
+public Type(String type, String typeType, Type parent){
+if(type == null){
+throw new NullPointerException();
+}
+
+if(typeMap.containsKey(type)){
+throw new IllegalArgumentException();
+}
+
+this.id = next_id++;
+if(typeType == null){
+

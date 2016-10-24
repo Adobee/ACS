@@ -1,0 +1,10 @@
+public MigrationTypeCountDiff(MigrationType type, Long srcCount, Long destCount) {
+if (type == null) {
+throw new IllegalArgumentException(&quot;Type cannot be null.&quot;);
+public void setDestinationCount(Long destinationCount) {
+this.destinationCount = destinationCount;
+}
+
+public Long getDelta() {
+if ((this.sourceCount == null) || (this.destinationCount == null)) {
+

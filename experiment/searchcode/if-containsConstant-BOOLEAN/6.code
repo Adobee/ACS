@@ -1,0 +1,6 @@
+public boolean matches(String string, LogicParserState parseState) throws ParsingError {
+if(!string.matches(&quot;\\s+[a-zA-Z_\\d]+\\(.*\\)&quot;))
+for(String arg : predicate.getSecond())
+if(!parseState.containsConstant(arg))
+throw new ParsingError(&quot;Use of unknown constant &#39;&quot; + arg + &quot;&#39;&quot;);
+

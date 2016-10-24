@@ -1,0 +1,14 @@
+private String token;
+
+private String refreshToken;
+
+private Date expiresAt;
+
+private static Long TIME_OFFSET = 1000l * 60l * 15l;
+this.expiresAt = new Date(expiresAt.getTime() - TIME_OFFSET);
+}
+
+public Boolean expired() {
+if(new Date().compareTo(expiresAt) > 0){
+return true;
+

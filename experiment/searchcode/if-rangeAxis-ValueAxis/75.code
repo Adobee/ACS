@@ -1,0 +1,13 @@
+private 			ValueAxis 			domainAxis;
+private 			ValueAxis 			rangeAxis;
+
+private static 	XYPlot 				chartPlot;
+private static 	XYSeries 			xySeries;
+public void setRangeRange(double x, double y, boolean fixed)
+{
+if (fixed) rangeAxis.setFixedAutoRange(y-x);
+else rangeAxis.setRange(x, y);
+}
+
+public void setRangeLabel(String label)
+

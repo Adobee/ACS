@@ -1,0 +1,12 @@
+* A CancelToken is a token that indicates whether a task should be canceled or not.
+*/
+public class CancelToken {
+private boolean isCanceled;
+private Runnable onCancel;
+public CancelToken(Runnable onCancel) {
+this.onCancel = onCancel;
+}
+
+public boolean isCanceled() {
+return isCanceled;
+

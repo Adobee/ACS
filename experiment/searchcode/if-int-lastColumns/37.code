@@ -1,0 +1,7 @@
+* @throws org.apache.commons.math3.exception.NotStrictlyPositiveException
+* if row or column dimension is not positive.
+*/
+public BlockRealMatrix(final int rows, final int columns) {
+final double[][] data = new double[getRowDimension()][getColumnDimension()];
+final int lastColumns = columns - (blockColumns - 1) * BLOCK_SIZE;
+

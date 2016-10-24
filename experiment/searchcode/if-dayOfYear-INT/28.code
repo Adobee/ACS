@@ -1,0 +1,9 @@
+public byte[] encode(final SpeiseplanRequest object) throws EncodingException {
+int dayOfYear = object.getDayOfYear();
+if(dayOfYear < 1 || dayOfYear > 366){
+byte[] result = new byte[3];
+
+result[0] = 0;
+result[1] = (byte)(dayOfYear >>> 8);
+result[2] = (byte)((dayOfYear << 24) >>> 24);
+

@@ -1,0 +1,7 @@
+/*  17:    */   private static final long serialVersionUID = -2362048321261811743L;
+/*  18:    */   private static final int HASH_SEED = 31;
+/*  19:    */   private static final String DUMMY_PATTERN = &quot;&quot;;
+/*  69:155 */     char[] c = pattern.toCharArray();
+/*  70:156 */     int fmtCount = 0;
+/*  71:157 */     while (pos.getIndex() < pattern.length())
+

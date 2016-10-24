@@ -1,0 +1,9 @@
+* @param value long value
+*/
+public JsonNumber(float value) {
+if (Float.isNaN(value)) {
+numberType  = NumberType.NAN;
+numberStore = null;
+}
+else if (value == Float.POSITIVE_INFINITY) {
+

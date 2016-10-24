@@ -1,0 +1,11 @@
+r3 = r3 + r4;
+if (r0 < r3) goto L_0x002d;
+L_0x0026:
+r0 = r11.a;
+com.whatsapp.Conversation.a(r0, r1);
+r3 = 18;
+if (r0 < r3) goto L_0x0042;
+L_0x0038:
+r0 = r11.a;
+r0 = r0.bc;
+

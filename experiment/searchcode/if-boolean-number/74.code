@@ -1,0 +1,10 @@
+return (Boolean.class == type) || (Boolean.TYPE == type);
+}
+
+public Object cast(Object obj, Class<?> type) {
+if (obj == null) {
+return Boolean.valueOf(false);
+}
+if ((obj instanceof Number)) {
+if (((Number) obj).doubleValue() > 0.0D)
+

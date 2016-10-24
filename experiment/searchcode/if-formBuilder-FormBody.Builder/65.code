@@ -1,0 +1,6 @@
+HashMap<String, ?> map = OkStringUtils.postRequestParam(input, getParamsEncoding());
+FormBody.Builder formBuilder = new FormBody.Builder();
+if (map != null) {
+buffer.append(key).append(&quot;=&quot;).append(map.get(key)).append(&quot; ,&quot;);
+formBuilder.add(key, OkStringUtils.getRequestParamValue(map.get(key), getParamsEncoding()));
+

@@ -1,0 +1,11 @@
+return isSolvedInPhase1();
+}
+//try each possible move. First twist;
+if (lm != 0) {
+int shapex = Shape.spTwistMove[shape];
+return isSolved;
+}
+
+boolean phase1(int shape, int prunvalue, int maxl, int depth, int lm) {
+if (prunvalue==0 &amp;&amp; maxl<4) {
+

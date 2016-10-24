@@ -1,0 +1,7 @@
+public IFileStore getStore(URI uri) {
+if (SCHEME_FOO.equals(uri.getScheme())) {
+String p = uri.getPath().replaceAll(&quot;%20&quot;, &quot; &quot;);
+return new FooFileStore(EFS.getStore(URI.create(&quot;file://&quot; + encodedPath.toString())), path);
+} catch (CoreException e) {
+// ignore and fall through below
+

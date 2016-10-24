@@ -1,0 +1,11 @@
+public double myPow(double x, int n) {
+if(x==0)
+return 0;
+if(n==0)
+return 1;
+double a = Math.abs(n);//dont have to cast to long, because the abs of min int is itself.
+double tmp = mypow(x,a/2);
+double result = tmp*tmp;
+if(a%2!=0)
+result *= x;
+

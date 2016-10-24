@@ -1,0 +1,16 @@
+addActionListener(this);
+}
+
+public void actionPerformed(ActionEvent arg0) {
+if(!stopped) super.setText(&quot;Start&quot;);
+else{
+super.setText(&quot;Stop&quot;);
+}
+stopped = !stopped;
+}
+
+public static boolean getStopped(){
+return stopped;
+}
+}
+

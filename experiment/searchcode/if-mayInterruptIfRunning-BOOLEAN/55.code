@@ -1,0 +1,5 @@
+* @param mayInterruptIfRunning <tt>true</tt> if the thread executing this
+*        task should be interrupted; otherwise, in-progress tasks are allowed
+public static void cancelTask(AsyncTask<?, ?, ?> task, boolean mayInterruptIfRunning) {
+if (task != null &amp;&amp; task.getStatus() != AsyncTask.Status.FINISHED) {
+

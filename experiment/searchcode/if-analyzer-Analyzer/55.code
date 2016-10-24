@@ -1,0 +1,7 @@
+package org.wickedsource.coderadar.analyzer.rest.analyzerconfiguration;
+
+import org.springframework.beans.factory.annotation.Autowired;
+SourceCodeFileAnalyzerPlugin analyzer = analyzerRegistry.createAnalyzer(analyzerName);
+if (analyzer == null) {
+throw new ValidationException(&quot;analyzerName&quot;, String.format(&quot;No analyzer plugin with the name %s exists!&quot;, analyzerName));
+

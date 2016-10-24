@@ -1,0 +1,8 @@
+public static final String[] DOWS = { &quot;So&quot;, &quot;Mo&quot;, &quot;Die&quot;, &quot;Mit&quot;, &quot;Do&quot;, &quot;Fr&quot;, &quot;Sa&quot; };
+
+public static void printAvailSelect(int doy, int today, AvailType thisType, JspWriter out) throws IOException {
+
+if (doy < today) {
+out.print(thisType.getShortName());
+out.print(&quot;<input type=&#39;hidden&#39; name=&#39;avail_&quot; + doy + &quot;&#39; value=&#39;&quot; + thisType.getAbbrev() + &quot;&#39;>&quot;);
+

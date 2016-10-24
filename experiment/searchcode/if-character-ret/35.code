@@ -1,0 +1,11 @@
+char[] retMessage = new char[message.length()];
+
+int x = 0;
+
+for (int c : message.toCharArray())  {
+
+if (Character.isUpperCase(c))  {
+c = ((c - &#39;A&#39; + 13) % 26) + &#39;A&#39;;
+
+} else if (Character.isLowerCase(c))  {
+

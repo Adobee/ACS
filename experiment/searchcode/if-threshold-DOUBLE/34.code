@@ -1,0 +1,13 @@
+* an alarm and if so, of what severity.
+*
+* @author Asif Rahman
+*
+*/
+public class Threshold {
+private double warningThreshold;
+private double criticalThreshold;
+private double fatalThreshold;
+
+/**
+* Construct a Threshold instance with max values for each severity level
+

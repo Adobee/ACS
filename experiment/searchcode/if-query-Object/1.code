@@ -1,0 +1,9 @@
+public static Query setParameters(Query query, Object queryObject) {
+if (queryObject == null) {
+return query;
+}
+if (queryObject instanceof Map) {
+return setParameters(query, (Map) queryObject);
+}
+if (queryObject.getClass().isArray()) {
+

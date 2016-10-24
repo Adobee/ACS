@@ -1,0 +1,12 @@
+final class DB2OrderExprBuffer extends DB2ExprBuffer {
+
+final boolean desc;
+
+DB2OrderExprBuffer(boolean desc) {
+this.desc = desc;
+}
+
+DB2OrderExprBuffer(String column, boolean desc) {
+this.push(quote(column));
+this.desc = desc;
+

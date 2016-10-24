@@ -1,0 +1,8 @@
+public class Tagger {
+
+public static int getLineNumberTag(Stmt s) {
+Object tag = getTag(s, IntegerConstantValueTag.class);
+Object taObject = getTag(sm, FlagTag.class);
+FlagTag flagTag = (FlagTag)taObject;
+if(flagTag==null) return FlagTag.UNDO;
+

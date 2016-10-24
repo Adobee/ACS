@@ -1,0 +1,10 @@
+boolean[] res = new boolean[1];
+if (root != null) {
+checkPathSum(root, 0, sum, res);
+}
+return res[0];
+}
+
+private void checkPathSum(TreeNode leaf, int pathSum, int sum, boolean[] res) {
+if (leaf.left == null &amp;&amp; leaf.right == null
+

@@ -1,0 +1,6 @@
+import droneproj.validata.utils.ListInterface;
+import java.util.ArrayList;
+import org.jfree.data.xy.XYSeries;
+* creates a XYSeries from the values it gets.
+* Remark, if several lists have the same name all lists will be named as follows,
+

@@ -1,0 +1,8 @@
+return sort(list, new IntegerComparator(), true);
+}
+
+@Override
+public <T> List<T> sort(List<T> list, Comparator<? super T> comparator, boolean ascending) {
+if(!ascending) {
+comparator = Collections.reverseOrder(comparator);
+

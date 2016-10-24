@@ -1,0 +1,11 @@
+delta *= 2.;
+}
+
+if (!mainFlag)
+delta /= 2;
+
+double start = (int) (startValue / delta) * delta;
+private boolean canAddValue(double startValue, double endValue, double value) {
+double width = endValue - startValue;
+if (Math.abs(startValue - value) / width < eliminateRatio)
+

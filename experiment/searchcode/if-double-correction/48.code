@@ -1,0 +1,6 @@
+* @param adjacentValues double[] 所有鄰接值
+* @param selfValues double[] 所有自身值
+* @param rCorrectionValues double[][] r修正值
+* @param gCorrectionValues double[][] g修正值
+* @param bCorrectionValues double[][] b修正值
+

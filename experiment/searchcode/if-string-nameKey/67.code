@@ -1,0 +1,13 @@
+return list.get(ListKey.ALL);
+}
+
+@Override
+public Iterable<Project.NameKey> byName(final String pfx) {
+return new Iterable<Project.NameKey>() {
+if (!itr.hasNext()) {
+return false;
+}
+
+Project.NameKey r = itr.next();
+if (r.get().startsWith(pfx)) {
+

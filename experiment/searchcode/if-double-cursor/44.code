@@ -1,0 +1,7 @@
+public static String getString(Cursor cursor, String colName) {
+if (cursor.getColumnIndex(colName) >= 0) {
+return cursor.getString(cursor.getColumnIndex(colName));
+public static double getDouble(Cursor cursor, String colName) {
+if (cursor.getColumnIndex(colName) >= 0) {
+return cursor.getDouble(cursor.getColumnIndexOrThrow(colName));
+

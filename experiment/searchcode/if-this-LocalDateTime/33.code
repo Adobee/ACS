@@ -1,0 +1,10 @@
+import java.time.LocalDateTime;
+
+public class FlightGenerator {
+private IFlightService flightService;
+private FlightGenerator(IFlightService flightService) {
+this.flightService = flightService;
+}
+
+public static FlightGenerator getInstance(IFlightService flightService) {
+

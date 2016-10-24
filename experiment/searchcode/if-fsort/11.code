@@ -1,0 +1,13 @@
+public boolean SaveOrUpdate(TAppCodeType obj){
+if(obj.getFId()>0)
+{
+return codeTypeDao.Update(obj);
+return codeTypeDao.Persist(obj);
+}
+}
+
+public boolean SaveOrUpdate(TAppCode obj){
+if(obj.getFId()>0)
+{
+return codeDao.Update(obj);
+

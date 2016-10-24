@@ -1,0 +1,12 @@
+* @author sidorov
+*/
+public class SortMode implements Comparator<Figure>{
+
+private boolean sortUp;
+private int sortMode;
+public int compare(Figure f1, Figure f2) {
+int res=0;
+
+if (sortMode==0){
+if (f1.getId()>f2.getId()) res=1;
+

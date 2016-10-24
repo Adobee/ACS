@@ -1,0 +1,15 @@
+public abstract class LivingBeing extends Element implements IDrawable {
+
+protected int age;
+protected int maxAge;
+protected int color;
+
+public LivingBeing(int x, int y, int side) {
+super(x, y, side);
+age = 0;
+}
+
+protected void getOld() {
+age++;
+if (age > maxAge) {
+

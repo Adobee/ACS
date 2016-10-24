@@ -1,0 +1,10 @@
+public class GeoFilterIT extends ESIntegTestCase {
+
+private static boolean intersectSupport;
+private static boolean disjointSupport;
+assertFirstHit(result, hasId(&quot;1&quot;));
+
+if (disjointSupport) {
+// Point not in polygon
+result = client().prepareSearch()
+

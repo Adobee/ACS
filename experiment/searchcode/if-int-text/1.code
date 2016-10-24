@@ -1,0 +1,9 @@
+public ReverseText(){}
+public ReverseText(String text){
+this.text = text;
+}
+public String returnText(){
+if (!text.equals(&quot;&quot;)){
+newText = text.valueOf(text.charAt(text.length() - 1));
+if (text.length() >= 2){
+

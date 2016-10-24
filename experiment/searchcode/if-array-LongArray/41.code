@@ -1,0 +1,7 @@
+TreeMap<Long, Long> map = new TreeMap<Long, Long>();
+Long[] longArray = getAllPrimeFactors(n);
+for (int i = 0; i < longArray.length; i++) {
+if (map.containsKey(longArray[i])) {
+long auxVal = map.get(longArray[i]);
+map.put(longArray[i], auxVal+1);
+

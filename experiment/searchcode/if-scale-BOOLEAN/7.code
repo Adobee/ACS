@@ -1,0 +1,13 @@
+Scale.HARMONIC_MINOR,
+//Scale.MINOR_PENTATONIC
+};
+
+protected boolean major = true;
+
+public ScaleChooser(boolean major) {
+byte o = f.next();
+Scale scale = null;
+
+if(major)
+scale = majorChoices[Math.abs(o) % majorChoices.length];
+

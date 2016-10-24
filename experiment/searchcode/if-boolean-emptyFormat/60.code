@@ -1,0 +1,9 @@
+FastDateFormat format = (FastDateFormat) cInstanceCache.get(emptyFormat);
+if (format == null) {
+format = emptyFormat;
+format.init();  // convert shell format into usable one
+* @return <code>true</code> if time zone of formatter
+*  overridden for calendars
+*/
+public boolean getTimeZoneOverridesCalendar() {
+

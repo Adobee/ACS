@@ -1,0 +1,6 @@
+public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+// Add a few new consoles.
+InsertHelper ih = new InsertHelper(db, &quot;consoles&quot;);
+final int id = ih.getColumnIndex(_ID);
+final int name = ih.getColumnIndex(&quot;console_name&quot;);
+

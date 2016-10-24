@@ -1,0 +1,10 @@
+this.k_y = conditionsData.getDouble(&quot;k_y&quot;);
+this.k_x = k_y / tan(angle / 180.0 * PI);
+rhoAmp = conditionsData.getDouble(&quot;rhoAmpRel&quot;) * left.rho;
+public void apply(double[] arr, double x_, double y_)
+{
+if (x_ < x_s)
+{
+double y_rel = (y_ - y_0) / yLength;
+double x_rel = (x_ - x_0) / xLength;
+

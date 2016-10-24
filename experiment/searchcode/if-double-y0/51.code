@@ -1,0 +1,8 @@
+public static void line(double x0, double y0, double x1, double y1)
+{
+os.draw(new Line2D.Double(x0, y0,x1,y1));
+double x0 = x - size/2;
+double x1 = x + size/2;
+double y0 = y - size/2;
+double y1 = y + size/2;
+

@@ -1,0 +1,8 @@
+protected Object mergeInternal(ObjectLocator leftLocator,
+ObjectLocator rightLocator, Object leftValue, Object rightValue) {
+if (leftValue == null) {
+return leftValue;
+} else {
+if (leftValue instanceof MergeFrom) {
+final Object newInstance = ((MergeFrom) leftValue)
+

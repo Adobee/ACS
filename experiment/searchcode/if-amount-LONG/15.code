@@ -1,0 +1,12 @@
+return balance;
+}
+
+public synchronized void deposit(long amount){
+checkAmountNotNegative(amount);
+private static void checkAmountNotNegative(long amount){
+if (amount < 0){
+throw new IllegalArgumentException(&quot;negative amount&quot;);
+}
+}
+}
+

@@ -1,0 +1,14 @@
+* @author Rex Fernando
+*
+*/
+public strictfp class AABB
+{
+private double xMin, yMin, xMax, yMax;
+
+public AABB(double xMin, double yMin, double xMax, double yMax)
+if (xMin > xMax) throw new IllegalArgumentException(&quot;xMin > xMax&quot;);
+if (yMin > yMax) throw new IllegalArgumentException(&quot;yMin > yMax&quot;);
+}
+
+public double getXMin()
+

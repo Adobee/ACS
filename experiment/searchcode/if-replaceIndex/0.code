@@ -1,0 +1,8 @@
+public static int removeElement(int[] nums, int val) {
+if(nums == null)
+return 0;
+int index = 0;
+int length = nums.length;
+while(index < length){
+if(nums[index]  == val){
+

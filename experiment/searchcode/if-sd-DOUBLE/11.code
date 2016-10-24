@@ -1,0 +1,9 @@
+public class NormalPrior {
+protected Normal m_normal; // Normal distribution.
+double m_meanA, m_sdA, m_meansA[];
+
+public NormalPrior (double mean, double sd) {
+m_meanA = mean;
+m_sdA = sd;
+m_normal = new Normal(mean, sd, new DoubleMersenneTwister());
+

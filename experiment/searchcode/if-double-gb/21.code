@@ -1,0 +1,8 @@
+public static String convertSizeReturnTowValidNember(long size, boolean bIgnore) {
+String strGb = &quot;&quot;;
+String strb = &quot;&quot;;
+if (size < 1024 * 1024 &amp;&amp; size >= 0) {
+
+double dG = size / 1024.0;
+strGb = String.format(&quot;%.2f&quot;, dG);// kb
+

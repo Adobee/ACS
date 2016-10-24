@@ -1,0 +1,7 @@
+SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
+
+boolean notifyUseSound = preferences.getBoolean(KEY_NOTIFY_USE_SOUND, true);
+boolean notifyUseVibrate = preferences.getBoolean(KEY_NOTIFY_USE_VIBRATE, false);
+
+setting.setNotifyUseSound(notifyUseSound);
+

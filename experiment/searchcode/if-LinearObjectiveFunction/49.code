@@ -1,0 +1,5 @@
+public void testMath713NegativeVariable() {
+LinearObjectiveFunction f = new LinearObjectiveFunction(new double[] {1.0, 1.0}, 0.0d);
+public void testMath434NegativeVariable() {
+LinearObjectiveFunction f = new LinearObjectiveFunction(new double[] {0.0, 0.0, 1.0}, 0.0d);
+

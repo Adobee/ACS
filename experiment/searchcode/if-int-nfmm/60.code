@@ -1,0 +1,10 @@
+double[] upperBound) {
+printMethod(); // XXX
+
+final int n = currentBest.getDimension();
+
+// Return if there is insufficient space between the bounds. Modify the
+knew = 0;
+for (int k = 0; k < npt; k++) {
+if (k == trustRegionCenterInterpolationPointIndex) {
+

@@ -1,0 +1,7 @@
+public static HttpMethod method(Class<? extends Annotation> annotationClass) {
+HttpMethod result = null;
+for (HttpMethod httpMethod : values()) {
+if (httpMethod.annotationClass.isAssignableFrom(annotationClass)) {
+for (HttpMethod httpMethod : values()) {
+if (StringUtils.equals(httpMethod.name(), StringUtils.upperCase(method))) {
+

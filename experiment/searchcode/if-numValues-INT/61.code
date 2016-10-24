@@ -1,0 +1,21 @@
+public class MyPartitioner extends Partitioner<Text, IntWritable> {
+
+@Override
+public int getPartition(Text key, IntWritable value, int numValues) {
+System.out.println(&quot;Number of Partitioners is : &quot;+numValues);
+
+int length = key.getLength();
+
+if (length > 3) {
+
+return 0;
+
+} else {
+
+return 1;
+
+}
+
+}
+}
+

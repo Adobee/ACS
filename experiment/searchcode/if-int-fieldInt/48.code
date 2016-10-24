@@ -1,0 +1,11 @@
+public class H extends G {
+int fieldInt; // hides definition in G
+
+public String methodIAString(int int1)
+public static void staticMethod()
+{
+}
+
+// different signature; does not hide G.staticMethod
+public static void staticMethod(int int1)
+

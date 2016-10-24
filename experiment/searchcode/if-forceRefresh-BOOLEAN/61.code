@@ -1,0 +1,10 @@
+public String intercept(ActionInvocation invocation) throws Exception {
+
+ValueStack stack = invocation.getStack();
+
+boolean forceRefresh = false;
+if (v != null)
+forceRefresh = Boolean.parseBoolean(v.toString());
+
+HttpServletRequest request = ServletActionContext.getRequest();
+

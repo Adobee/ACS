@@ -1,0 +1,12 @@
+//adds node to end of array
+public void append(int val, int ind)
+{
+size++;
+int curIndex = size - 1;
+
+//if it gets full, double size
+public void replace(int replaceIndex, int value, int index)
+{
+//verify valid index
+if(replaceIndex >= 0 &amp;&amp; replaceIndex < size)
+

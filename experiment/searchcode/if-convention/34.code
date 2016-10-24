@@ -1,0 +1,12 @@
+import java.sql.Statement;
+import java.util.List;
+
+import beans.ConventionStage;
+
+public class ConventionStageDAO extends DAO<ConventionStage> {
+ResultSet result = request.executeQuery(&quot;SELECT * FROM &quot; + ConventionStageDAO.TABLE + &quot; WHERE NO_CONVENTION = &quot; + id);
+
+if(result.first()){
+
+obj = new ConventionStage((result.getInt(&quot;NO_CONTRAT&quot;)),DAO.dateFromOracleToJava(result.getDate(&quot;DATE_SIGNATURE&quot;)),(result.getInt(&quot;DUREE&quot;)));
+

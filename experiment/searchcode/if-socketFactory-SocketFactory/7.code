@@ -1,0 +1,9 @@
+* @return a value previously specified or system default
+*/
+public SocketFactory getPlainSocketFactory() {
+if (plainSocketFactory==null) return SocketFactory.getDefault();
+* @return a value previously specified or system default
+*/
+public SocketFactory getSecureSocketFactory() {
+if (secureSocketFactory==null) return SSLSocketFactory.getDefault();
+

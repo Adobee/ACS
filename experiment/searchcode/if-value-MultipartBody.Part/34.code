@@ -1,0 +1,6 @@
+private MultipartBody.Builder addPlantToRequestBody(@NonNull final MultipartBody.Builder builder, @NonNull final Plant plant) {
+
+if (!plant.getResourcesIds().isEmpty()) {
+.addFormDataPart(PlantTable.SIZE, String.valueOf(plant.getSize()))
+.addFormDataPart(PlantTable.PHSOIL, String.valueOf(6.0))
+

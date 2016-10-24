@@ -1,0 +1,12 @@
+// nothing is drawn for null...
+Number v = dataset.getValue(row, column);
+if (v == null) {
+return;
+}
+
+int visibleRow = state.getVisibleSeriesIndex(row);
+if (visibleRow < 0) {
+return;
+}
+int visibleRowCount = state.getVisibleSeriesCount();
+

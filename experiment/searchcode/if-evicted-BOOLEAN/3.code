@@ -1,0 +1,7 @@
+public void doEvictTest(boolean evictedIsClosed, boolean evictedIsClosedWhenThreadHasTerminated) {
+
+DbPool pool = new DbPool();
+assertEquals(&quot;After connection is evicted from pool, there should be no connections in the pool&quot;, 0, pool.getCountOpenConnections());
+if (evictedIsClosed) {
+assertTrue(&quot;Evicted connection should be closed.&quot;, db.conn.isClosed());
+

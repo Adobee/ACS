@@ -1,0 +1,9 @@
+public ProcessConflictResult printResult(CheckConflictResult r, boolean isCreateDetailDoc, String[] excludes) throws MojoFailureException {
+
+List<Conflict> warnConflictList = r.getWarnConflictList();
+List<Conflict> errorConflictList = r.getErrorConflictList();
+
+List<Conflict> fatalConflictList = r.getFatalConflictList();
+
+if (this.getLogger().isDebugEnabled()) {
+

@@ -1,0 +1,11 @@
+public E value;
+
+//Confidence level values of 0 should be confirmed by the command before execution.
+public float confidence = 0.5f;
+
+public ParamGuess(E value, float confidence)
+{
+if(confidence < 0)
+{
+throw new InvalidParameterException(&quot;Confidence level must be non-negative&quot;);
+

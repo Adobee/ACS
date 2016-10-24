@@ -1,0 +1,7 @@
+super.beforeModelLinked(model, diagnosticsConsumer);
+if (model instanceof Model) {
+Model program = (Model) model;
+boolean hasSorts = false;
+for(Element e:program.getElements()){
+if(e instanceof Sorts){
+

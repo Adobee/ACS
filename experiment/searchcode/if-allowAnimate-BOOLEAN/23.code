@@ -1,0 +1,9 @@
+public static void setOrAnimatePlusCheckIcon(final Context context, final FloatingActionButton imageView, boolean isCheck,
+boolean allowAnimate) {
+if (!hasL()) {
+imageView.setImageDrawable(drawable);
+}
+imageView.setColorFilter(Color.WHITE);
+if (allowAnimate) {
+imageView.setImageState(isCheck ? STATE_UNCHECKED : STATE_CHECKED, false);
+

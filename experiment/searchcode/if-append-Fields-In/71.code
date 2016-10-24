@@ -1,0 +1,7 @@
+public void addTable(TableElement tb, StringBuilder sb) {
+if (IEntityToScript.Mode.PLAIN == mode) {
+sb.append(String.format(&quot;ADD TABLE \&quot;%s\&quot;\n&quot;, tb.getName()));
+public void addField(TableElement tb, Field f, int index, StringBuilder sb) {
+if (IEntityToScript.Mode.PLAIN == mode) {
+sb.append(&quot;ADD FIELD \&quot;&quot;).append(f.getName()).append(&quot;\&quot; OF \&quot;&quot;).append(tb.getName()).append(&quot;\&quot; AS &quot;).append(f.getType()).append(&quot;\n&quot;);
+

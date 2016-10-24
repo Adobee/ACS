@@ -1,0 +1,11 @@
+public static int countNulls(Object[] array)
+{
+if(array == null || array.length == 0)
+return 0;
+
+int counter = 0;
+for(Object obj: array)
+if(obj == null)
+counter++;
+return counter;
+

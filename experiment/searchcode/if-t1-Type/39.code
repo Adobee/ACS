@@ -1,0 +1,7 @@
+public static <T1 extends Comparable<T1>, T2 extends Constraint<T1>> TypeIndex<T1> getTypeIndex(Class<T1> type) {
+
+if (type == String.class) {
+return (TypeIndex<T1>) new StringIndex();
+} else if (type == Long.class) {
+return (TypeIndex<T1>) new LongIndex();
+

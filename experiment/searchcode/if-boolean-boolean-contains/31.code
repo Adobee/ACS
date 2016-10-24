@@ -1,0 +1,9 @@
+public final boolean isEmpty() {
+return this.getState() == 0;
+}
+
+public final boolean contains( Object o ) {
+if ( ! ( o instanceof Boolean ) ) return false;
+public final boolean contains( boolean flag ) {
+return flag ? ( this.getState() &amp; 2 ) != 0 : ( this.getState() &amp; 1 ) != 0;
+

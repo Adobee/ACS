@@ -1,0 +1,11 @@
+public double getBase() {
+return this.base;
+}
+
+
+public void setBase(double base) {
+if (base <= 1.0) {
+double fixedAutoRange = getFixedAutoRange();
+if (fixedAutoRange > 0.0) {
+lower = Math.max(upper - fixedAutoRange, this.smallestValue);
+

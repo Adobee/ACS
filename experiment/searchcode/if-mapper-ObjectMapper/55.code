@@ -1,0 +1,13 @@
+package com.testmocker.factory;
+
+import org.codehaus.jackson.map.ObjectMapper;
+
+public class JsonObjectMapperFactory {
+public static ObjectMapper getObjectMapper(){
+if(instance==null){
+instance=new ObjectMapper();
+}
+return instance;
+}
+}
+

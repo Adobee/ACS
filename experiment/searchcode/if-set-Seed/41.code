@@ -1,0 +1,9 @@
+public static SeedDAOImpl getInstance() {
+if (instance == null) {
+return new SeedDAOImpl();
+} else {
+return instance;
+begin();
+Query query = getSession().createQuery(&quot;from Seed where id= :ref&quot;);
+query.setInteger(&quot;ref&quot;, id);
+

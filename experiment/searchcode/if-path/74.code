@@ -1,0 +1,11 @@
+import org.magcruise.gaming.lang.SConstructive;
+import org.magcruise.gaming.lang.SConstructor;
+
+import gnu.kawa.io.Path;
+
+public class DefPath implements SConstructive {
+public Path getPath() {
+Path path = Path.coerceToPathOrNull(this.path);
+if (path.isPlainFile()) {
+path = Path.coerceToPathOrNull(path.toFile());
+

@@ -1,0 +1,6 @@
+Serialize serialize = serializeDAO.findSerializeIsExisted(userId, name);
+if(ResultUtils.DATAISNULL==serialize.getFlag()){
+serializeDAO.addSerialize(ser);
+serialize = serializeDAO.findSerializeById(ser.getId());
+if(null!=serialize){
+

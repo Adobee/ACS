@@ -1,0 +1,10 @@
+public class RegisterFactory {
+private ArrayDeque<Register> pool;
+private int poolSize;
+
+public RegisterFactory(int poolSize) {
+this.poolSize = poolSize;
+pool = new ArrayDeque<Register>(poolSize);
+
+for (int i = 0; i < poolSize; i++) {
+

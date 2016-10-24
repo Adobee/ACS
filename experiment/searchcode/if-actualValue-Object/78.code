@@ -1,0 +1,6 @@
+protected void doAssert(Object actualValue, Object expectedValue) {
+logger.trace(&quot;assert that [{}] has length [{}] (field: [{}])&quot;, actualValue, expectedValue, getField());
+assertThat(&quot;expected value of [&quot; + getField() + &quot;] is not numeric (got [&quot; + expectedValue.getClass() + &quot;]&quot;, expectedValue, instanceOf(Number.class));
+int length = ((Number) expectedValue).intValue();
+if (actualValue instanceof String) {
+

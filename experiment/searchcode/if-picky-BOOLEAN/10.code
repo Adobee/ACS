@@ -1,0 +1,10 @@
+public class UploadRequest extends AsyncTask<Picky, Void, Boolean> {
+
+private static final String TAG = UploadRequest.class.getSimpleName();
+public UploadRequest(Callback<Boolean> callback) {
+this.callback = callback;
+}
+
+@Override
+protected Boolean doInBackground(Picky... pickies) {
+

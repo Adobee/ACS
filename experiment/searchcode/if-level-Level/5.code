@@ -1,0 +1,10 @@
+int[][] res = new int[n][n];
+if(n==0)
+return res;
+int level = 0;
+int count = 1;
+for(int i=level+1;i<n-level;i++)
+res[i][n-1-level] = count++;
+if(level<n-1-level){
+for(int i=n-2-level;i>=level;i--)
+

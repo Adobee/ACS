@@ -1,0 +1,10 @@
+{ -1, -2 }, { -2, 1 }, { -2, -1 } };
+
+static boolean emptyRange(int xcor, int ycor) {
+return (xcor < boardspaces &amp;&amp; xcor >= 0 &amp;&amp; ycor < boardspaces
+static int moveAccess(int x, int y) {
+int acessSpaceNumber = 0;
+int loop = 0;
+for (; loop < moves; loop++)
+if (emptyRange(x + board[loop][0], y + board[loop][1]))
+

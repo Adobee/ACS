@@ -1,0 +1,23 @@
+package cc.yamyam.api;
+
+import java.util.ArrayList;
+
+
+public class HTTPRequestQueue {
+
+private ArrayList<HTTPRequest> queue = new ArrayList<HTTPRequest>();
+public void onRequestFailed() {
+c++;
+fail = true;
+
+if(c == queue.size()) {
+listener.onHTTPRequestQueueFailed();
+}
+}
+
+
+
+
+
+}
+

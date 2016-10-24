@@ -1,0 +1,16 @@
+public	void setFeedbackType (String fb) {
+
+RE_Feedback = null;
+if (!fb.equals(&quot;&quot;)) {
+Object o = regexpFeedback.get (fb);
+if (o != null) {
+RE_Feedback = (RE) o;
+}
+}
+}
+
+public	boolean check (String el, String val) {
+
+RE tr;
+if (el.equals(&quot;cmi.interactions.n.correct_responses.n.pattern&quot;) ||
+

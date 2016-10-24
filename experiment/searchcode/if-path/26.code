@@ -1,0 +1,10 @@
+package http.client.wrapper.request;
+
+public class Path {
+private String path;
+
+private Path(String path) {
+public Path replaceParameter(String name, String value) {
+final String parameterName = &quot;{&quot; + name + &quot;}&quot;;
+if (this.path.contains(parameterName)) {
+

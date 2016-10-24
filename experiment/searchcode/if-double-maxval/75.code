@@ -1,0 +1,10 @@
+this.instances = instances;
+}
+
+@Override
+protected double difference(int index, double val1, double val2) {
+if(instances.getMembership().containsKey(index)){
+Map<String,FuzzyMembership> fuzzySets = fV.getFuzzySets();
+double maxVal = 0;
+for (String label : fuzzySets.keySet()) {
+

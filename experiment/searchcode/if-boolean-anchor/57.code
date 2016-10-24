@@ -1,0 +1,9 @@
+void concat(OptAnchorInfo left, OptAnchorInfo right, int leftLength, int rightLength) {
+leftAnchor = left.leftAnchor;
+if (leftLength == 0) leftAnchor |= right.leftAnchor;
+if (rightLength == 0) rightAnchor |= left.rightAnchor;
+}
+
+boolean isSet(int anchor) {
+if ((leftAnchor &amp; anchor) != 0) return true;
+

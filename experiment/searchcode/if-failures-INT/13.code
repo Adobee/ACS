@@ -1,0 +1,6 @@
+failures = new HashMap<>();
+try {
+if ( !getJsonObject().has(FAILURES_DICTIONARY) ) return;
+String n = (String)keys.next();
+failures.put(failuresJson.getInt(n), n);
+

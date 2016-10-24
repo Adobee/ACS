@@ -1,0 +1,10 @@
+ClusterState clusterState,
+boolean clusterStateChanged
+) {
+// there should be as many task results as tasks
+assertThat(actualResult.getFailure().getMessage(), equalTo(entry.getValue().getFailure().getMessage()));
+}
+}
+
+if (clusterStateChanged) {
+

@@ -1,0 +1,7 @@
+* 4) There are no indexes<br>
+* 5) There are indexes but they are corrupt<br>
+* 6) Any of the above and the searcher is not opened for some reason<br>
+File latestIndexDirectory = IndexManager.getLatestIndexDirectory(indexDirectoryPath);
+// Are there any indexes at all
+if (!new AreIndexesCreated().evaluate(indexContext)) {
+

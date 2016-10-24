@@ -1,0 +1,11 @@
+// allow everything
+}
+
+public void checkAccess(ThreadGroup g) {
+Thread creatingThread = Thread.currentThread();
+if (predicate.test(creatingThread)) {
+action.accept(creatingThread);
+}
+}
+}
+

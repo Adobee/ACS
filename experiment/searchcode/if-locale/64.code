@@ -1,0 +1,9 @@
+return getInstance().getDesiredLocale(null);
+}
+
+public static LocaleManager getInstance(){
+if(INSTANCE==null){
+public Locale getDesiredLocale(Locale requestLocale) {
+if(requestLocale==null &amp;&amp; UI.getCurrent()!=null){
+requestLocale = UI.getCurrent().getLocale();
+

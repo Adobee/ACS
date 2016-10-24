@@ -1,0 +1,5 @@
+protected ServiceReference<SERVICE> lookupServiceOn(String requiredVersion) throws Exception {
+Collection<ServiceReference<SERVICE>> serviceReferences = context.getServiceReferences(serviceType, null);
+ServiceReference<SERVICE> serviceReference = serviceReferences.stream()
+.filter(serviceOn(requiredVersion))
+

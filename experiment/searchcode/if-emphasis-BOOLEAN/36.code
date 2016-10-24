@@ -1,0 +1,12 @@
+import org.openfuxml.content.table.Cell;
+import org.openfuxml.content.table.Row;
+import org.openfuxml.content.text.Emphasis;
+import org.openfuxml.exception.OfxAuthoringException;
+public void render(Row row) throws OfxAuthoringException
+{
+boolean firstCell=true;
+
+for(Cell cell : row.getCell())
+{
+if(!firstCell){renderer.add(new StringRenderer(&quot;&amp;&quot;));}
+

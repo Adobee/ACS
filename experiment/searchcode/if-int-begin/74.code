@@ -1,0 +1,11 @@
+public void nextPermutation(int[] num) {
+if(num.length<=1) return;
+int end=num.length-1;
+int begin=0;
+int k=end;
+while(k>0&amp;&amp;num[k-1]>=num[k]){
+k--;
+}
+if(k==0){
+begin=0;
+

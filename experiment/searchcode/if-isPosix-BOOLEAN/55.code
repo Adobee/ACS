@@ -1,0 +1,8 @@
+* Determines whether the system running this application is POSIX compliant.
+*/
+private static final boolean isPosix = FileSystems.getDefault().supportedFileAttributeViews().contains(&quot;posix&quot;);
+public static String createTempDir(final String name) {
+try {
+if (isPosix) {
+final Set<PosixFilePermission> perms = PosixFilePermissions.fromString(&quot;rwxr-xr--&quot;);
+

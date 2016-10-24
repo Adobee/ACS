@@ -1,0 +1,10 @@
+if (getClass() != obj.getClass())
+return false;
+IntLit other = (IntLit) obj;
+if (intVal == null) {
+if (other.intVal != null)
+return false;
+} else if (!intVal.equals(other.intVal))
+return false;
+return true;
+

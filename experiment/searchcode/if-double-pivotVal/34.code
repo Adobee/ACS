@@ -1,0 +1,12 @@
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+/**
+* Class to sort a double and an integer DBID array, using a quicksort with a
+sort5(keys, vals, m1, m2, m3, m4, m5);
+
+// Move pivot to the front.
+double pivotkey = keys[m3];
+int pivotval = vals[m3];
+keys[m3] = keys[start];
+

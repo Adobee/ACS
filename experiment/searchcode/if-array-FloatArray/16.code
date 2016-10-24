@@ -1,0 +1,8 @@
+// Preallocated local arrays
+int[] intArray = new int[INTBUF_CHUNK_SIZE * ARRAY_SIZE];
+float[] floatArray = new float[FLOATBUF_CHUNK_SIZE * ARRAY_SIZE];
+floatBuf.rewind();
+
+intBuf.get(intArray, 0, INTBUF_CHUNK_SIZE * contactCount);
+floatBuf.get(floatArray, 0, FLOATBUF_CHUNK_SIZE * contactCount);
+

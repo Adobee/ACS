@@ -1,0 +1,10 @@
+private static final double[] CLIP = new double[] {//
+0d, 0d, 1d, 0d, 1d, 1d, 0d, 1d };
+
+/** the internal pixel window */
+// then apply filter
+if ((ww > 1) || (hh > 1)) {
+
+mix = s = W.minX();
+miy = i = W.minY();
+

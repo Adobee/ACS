@@ -1,0 +1,9 @@
+for (Annotation annotation : fieldNode.getAnnotations()) {
+ConvertRule rule = findMatchRule(fieldNode.getField(), annotation);
+if (rule != null) {
+fieldNode.addRule(rule);
+}
+}
+if (fieldNode.hasRules()) {
+candidates.add(fieldNode);
+

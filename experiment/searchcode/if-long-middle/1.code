@@ -1,0 +1,12 @@
+long end = x;
+
+long last = 0;
+long middle = 0;
+
+while (start <= end) {
+// System.out.println(start + &quot; &quot; + end);
+middle = (start + end) / 2;
+long mul = middle * middle;
+if (mul > x) {
+end = middle - 1;
+

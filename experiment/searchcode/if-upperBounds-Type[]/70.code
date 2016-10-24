@@ -1,0 +1,7 @@
+TypeBinding aBound = upperBounds[i];
+if (!aBound.isWildcard() &amp;&amp; !aBound.isTypeVariable() &amp;&amp; aBound.isProperType(true)) {
+for (int j = 0; j < upperBounds.length; j++) {
+if (i == j) continue;
+TypeBinding otherBound = upperBounds[j];
+if (!otherBound.isWildcard() &amp;&amp; !otherBound.isTypeVariable() &amp;&amp; otherBound.isProperType(true))
+

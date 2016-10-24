@@ -1,0 +1,10 @@
+int l = num.length;
+Integer value = null;
+int newValue = 0;
+int maxValue = 0;
+int target = 0;
+for (int i = 0; i < l; i++) {
+value = a.get(num[i]);
+if (value != null) {
+newValue = value + 1;
+

@@ -1,0 +1,10 @@
+// FIX SC502 Candidate for Primordial with ability to override toString().
+public final class MonthOfYear {
+public static final int MONTHS_IN_YEAR = 12;
+public static final MonthOfYear DECEMBER = new MonthOfYear(11);
+public final int value;
+public final int maxDays;
+
+public MonthOfYear(int month) {
+this.value = month;
+

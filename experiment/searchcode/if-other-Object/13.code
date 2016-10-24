@@ -1,0 +1,8 @@
+public boolean performCollision( AECollider other) {
+if( _checkCollide( other)) {
+AEGameObject otherObject = other.getGameObject();
+this.gameObject.onCollide( otherObject);
+
+// trigger collideEnter
+if( listCollide.contains( otherObject) == false) {
+

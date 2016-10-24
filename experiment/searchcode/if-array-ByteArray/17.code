@@ -1,0 +1,9 @@
+public class SpheroResponsePacket extends SpheroPacket {
+
+private boolean isErrorFree = false;
+
+public SpheroResponsePacket(byte[] byteArray) {
+isErrorFree = (checksum == byteArray[byteArray.length-1]);
+if(!isErrorFree) {
+System.err.println(&quot;Invalid checksum detected. &quot; + String.format(&quot;%02X vs %02X&quot;, checksum, byteArray[byteArray.length-1]));
+

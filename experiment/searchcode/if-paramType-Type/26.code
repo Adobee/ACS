@@ -1,0 +1,11 @@
+package core.data;
+
+public enum ParamType {
+QUERY, PATH;
+
+public static ParamType fromString(String s) {
+else if (s.equals(&quot;path&quot;)) return PATH;
+else throw new RuntimeException(&quot;unknown ParamType: &quot; + s);
+}
+}
+

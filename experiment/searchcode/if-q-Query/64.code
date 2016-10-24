@@ -1,0 +1,7 @@
+public static SQLParser getQueryParser(Object query) {
+if (query instanceof Query) {
+return new QuerySQLParser();
+} else if (query instanceof NamedQuery) {
+return new NamedQuerySQLParser();
+} else if (query instanceof TableQuery) {
+

@@ -1,0 +1,21 @@
+/** 开始计算时间 微妙 */
+private long startTime;
+
+/** 超时时间 微妙 */
+private long timeout;
+
+public XWaitTime(long timeout) {
+* 当前是否超时了
+*
+* @return
+*/
+public boolean isTimeout() {
+if (new Date().getTime() - startTime > timeout) {
+return true;
+}
+
+return false;
+}
+
+}
+

@@ -1,0 +1,13 @@
+private short[] pileup;
+private int refLength;
+private String refName;
+
+public SAMPileup(String refName, int refLength, int extendedLength) {
+this.extendedLength = extendedLength;
+this.refLength = refLength;
+this.refName = refName;
+}
+
+public void add(SAMRecord rec) {
+if (!rec.getReferenceName().equals(this.refName)) {
+

@@ -1,0 +1,12 @@
+private int focusY;
+private View view;
+private double d = 7.0; // distortion factor
+private double sNormX = Vertex.STD_WIDTH;
+private double dMax(double pBoundary, double pFocus, double pNorm){
+double dMax = 1.0;
+
+if (pNorm > pFocus){
+dMax = pBoundary - pFocus;
+}
+else{
+

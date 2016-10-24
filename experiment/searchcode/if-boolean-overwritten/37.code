@@ -1,0 +1,8 @@
+RenderPlayerBase overwritten = internalRenderPlayerAPI.GetOverwrittenDoRenderLabel(this);
+
+boolean _result;
+if(overwritten == null)
+_result = renderPlayerAPI.localDoRenderLabel(paramEntityLivingBase);
+else if(overwritten != this)
+_result = overwritten.doRenderLabel(paramEntityLivingBase);
+

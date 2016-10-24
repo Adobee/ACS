@@ -1,0 +1,9 @@
+List<Branches> listBranches = branchService.getAllBranches();
+
+if (ordersFilter.getFilterOrdersByDate() == null &amp;&amp; ordersFilter.getFilterOrdersByBranchesList(listBranches) == null) {
+orders = orderService.getOrdersByDateAndBranches(ordersFilter.getFilterOrdersByDate(), ordersFilter.getFilterOrdersByBranchesList(listBranches));
+}
+
+int sumOrders = orders.size();
+int sumRows = 0;
+

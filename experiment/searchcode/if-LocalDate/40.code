@@ -1,0 +1,7 @@
+package com.examples.with.different.packagename.mock.java.time;
+
+import java.time.LocalDate;
+public boolean testMe(LocalDate date) {
+LocalDate now = LocalDate.now();
+LocalDate nowP = now.plusMonths(1L);
+

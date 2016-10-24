@@ -1,0 +1,13 @@
+public boolean isSymmetrical(int[] matr) {
+boolean isValid = true;
+for (int i = 0; i< matr.length/2; i++) {
+if (matr[i] != matr[matr.length-i-1]) {
+isValid = false;
+break;
+}
+}
+return isValid;
+}
+
+public boolean isSymmetrical(int[][] matr) {
+

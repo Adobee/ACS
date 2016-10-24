@@ -1,0 +1,12 @@
+public class BlackProbability {
+public double numerator ;
+public double denominator ;
+public void incrementDenominator()
+{
+denominator++ ;
+}
+
+public double getRatio()
+{
+if(denominator==0) {
+

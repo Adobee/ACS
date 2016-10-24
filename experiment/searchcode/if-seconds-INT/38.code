@@ -1,0 +1,14 @@
+int points;
+int seconds;
+
+public Score(int points, int seconds) {
+this.points = points;
+this.seconds = seconds;
+}
+
+public int points() {
+return points;
+}
+
+public int seconds() {
+

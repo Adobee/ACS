@@ -1,0 +1,9 @@
+public static Properties setDefaultTransports()
+{
+Properties p = new Properties();
+
+if (!Configuration.contains(&quot;sim.transport&quot;))
+p.setProperty(&quot;sim.transport&quot;, defaultTransportSim);
+
+if (!Configuration.contains(&quot;emu.transport&quot;))
+

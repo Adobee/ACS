@@ -1,0 +1,9 @@
+FieldMap currentMap = FieldMap.fieldMap.get(fieldElement.getLocalName());
+if(currentMap != null) {
+String attributeValue = null;
+if(currentMap.hasFixed() &amp;&amp; !(attributeValue = mSelectionElement.getAttribute(&quot;text:fixed&quot;)).isEmpty()) {
+if(currentMap.hasOValue() &amp;&amp; !(attributeValue = mSelectionElement.getAttribute(&quot;office:value&quot;)).isEmpty()){
+mAttrs.put(&quot;value&quot;, attributeValue);
+}
+if(currentMap.hasValueType()) {
+

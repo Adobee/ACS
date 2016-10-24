@@ -1,0 +1,8 @@
+package simulator;
+
+public class HeightStepper {
+
+public double moveTowards(double height, double targetHeight, double step) {
+if (this.isInstantStep(height, targetHeight, step)) {
+return targetHeight;
+

@@ -1,0 +1,8 @@
+ClassAnalyzer npcAnalyzer = analyzer.getClassAnalyzer(NpcAnalyzer.class);
+if (npcAnalyzer.isFailed()) {
+return null;
+}
+
+FieldAnalyzer definitionAnalyzer = npcAnalyzer.getFieldAnalyzer(DefinitionAnalyzer.class);
+if (definitionAnalyzer.isFailed()) {
+

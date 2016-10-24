@@ -1,0 +1,12 @@
+*         next = null;
+*     }
+* }
+*/
+public class Solution {
+public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+int carry = 0;
+if(l1 == null){
+return l2;
+}
+else if(l2 == null){
+

@@ -1,0 +1,10 @@
+throw new AssertionError(e);
+}
+}
+
+private void addAccessTokenToHttpUriRequest(HttpUriRequest httpUriRequest) {
+if (mEncodedAccessToken != null) {
+String query = httpUriRequest.getURI().getQuery();
+
+if (query == null || query.length() == 0) {
+

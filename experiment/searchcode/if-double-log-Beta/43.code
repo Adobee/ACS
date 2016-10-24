@@ -1,0 +1,8 @@
+-0.5 * Math.log (2 * Math.PI * Math.pow(sigmaBeta, 2)) - 0.5 * Math.pow(thetaH1[1] / sigmaBeta, 2) +
+-0.5 * Math.log(det(IH1(thetaH1[0], thetaH1[1])));
+double marginalH0 = likelihood(thetaH0, 0.0) +
+private double firstDerivFMu (boolean allele, double mu, double beta, double probLong) {
+double out = 0.0;
+if (allele) {
+out = p1FDMu (mu, beta) * probLong + p0FDMu (mu, beta) * (1.0 - probLong);
+

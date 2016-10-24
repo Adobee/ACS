@@ -1,0 +1,11 @@
+public boolean hasNext() {
+return (this.actual.getSiguiente() != null);
+}
+
+public Object next() {
+Object aux = null;
+if(this.actual.getSiguiente() != null) {
+if(esPrimero) {
+esPrimero = false;
+aux = this.actual.getObjeto();
+

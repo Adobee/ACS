@@ -1,0 +1,9 @@
+public class InvalidBarcodeException extends Exception {
+
+String errormessage = null;
+
+public InvalidBarcodeException() {
+public String getMessage() {
+if (errormessage == null || errormessage.isEmpty()) {
+return &quot;Unknown reason&quot;;
+

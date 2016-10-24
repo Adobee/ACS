@@ -1,0 +1,8 @@
+public class SymmetricTree {
+public boolean isSymmetric(TreeNode root) {
+if(root == null) return true;
+if(left == null &amp;&amp; right == null) return true;
+else if(left == null || right == null) return false;
+else {
+boolean l = isSymmetric(left.left, right.right);
+

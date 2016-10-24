@@ -1,0 +1,8 @@
+Environment environment = new Environment(settingsBuilder.build());
+
+if (loadConfigSettings) {
+boolean explicitSettingsProvided = false;
+settingsBuilder.loadFromUrl(environment.resolveConfig(System.getProperty(&quot;es.config&quot;)));
+}
+if (System.getProperty(&quot;elasticsearch.config&quot;) != null) {
+

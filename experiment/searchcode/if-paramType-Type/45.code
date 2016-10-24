@@ -1,0 +1,8 @@
+Convert localConvert = (Convert)paramType.getAnnotation(Convert.class);
+if ((localConvert != null) &amp;&amp; ((Element)paramType.getAnnotation(Element.class) == null)) {
+paramType = localConvert;
+if (localConvert == null) {
+paramType = getConvert(paramClass);
+}
+return paramType;
+

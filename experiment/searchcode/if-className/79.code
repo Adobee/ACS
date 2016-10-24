@@ -1,0 +1,7 @@
+<#include &quot;/java_copyright.include&quot;>
+<#assign className = table.className>
+<#assign classNameLower = className?uncap_first>
+<#list table.columns as column>
+<#if column.unique &amp;&amp; !column.pk>
+public ${className} getBy${column.columnName}(${column.javaType} v);
+

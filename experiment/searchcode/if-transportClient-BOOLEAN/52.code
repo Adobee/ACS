@@ -1,0 +1,7 @@
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.transport.InetSocketTransportAddress;
+String indexKey = indexName + &quot;_&quot; + indexType;
+// 判断索引映射文件是否已经存在
+Boolean exists = Constant.indexMappingFlagCache.get(indexKey);
+if (exists == null || !exists) {
+

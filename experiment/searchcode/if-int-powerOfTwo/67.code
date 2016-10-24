@@ -1,0 +1,11 @@
+package leetcode.math;
+
+/**
+* Created by wei on 15/9/9.
+*/
+public class PowerOfTwo {
+public boolean isPowerOfTwo(int n) {
+
+while(n > 1) {
+if((n &amp; 1) != 0)
+

@@ -1,0 +1,10 @@
+logWriter(&quot;Deadlock found. Aborting transaction on script &quot;+index+&quot;.&quot;);
+wfg.resetNode(index);
+for(TransProc k:tpList)
+{
+if(k.scriptNum==currentTransactionNumber)
+wfg.resetNode(index);
+for(TransProc k:tpList)
+{
+if(k.scriptNum==currentTransactionNumber)
+

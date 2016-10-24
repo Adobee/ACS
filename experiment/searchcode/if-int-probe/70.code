@@ -1,0 +1,10 @@
+public PiloggerImpl(boolean simulation, PiloggerGUI gui) {
+
+probeManager = new ProbeManager(gui);
+
+if (simulation) {
+try {
+int fd = Spi.wiringPiSPISetup(0, 10000000);
+if (fd <= -1) {
+System.out.println(&quot; ==>> SPI SETUP FAILED&quot;);
+

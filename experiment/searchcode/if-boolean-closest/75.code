@@ -1,0 +1,11 @@
+int n = Integer.parseInt(in.nextLine());
+
+System.out.printf(&quot;%d\n&quot;, closest(n, sieve(2*n)));
+}
+
+static int[] sieve(int n) {
+int min = Integer.MAX_VALUE;
+int closest = n;
+for (int i : ns) {
+if (Math.abs(n - i) < min) {
+

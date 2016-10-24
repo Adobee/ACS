@@ -1,0 +1,8 @@
+String SCRIPT_NOT_FOUND = &quot;Script &#39;&quot; + script + &quot;&#39; is not defined in package.json&quot;;
+
+Package pkg = getPackage();
+if (fExplicit &amp;&amp; !pkg.hasScript(script))
+throw new MojoFailureException(SCRIPT_NOT_FOUND);
+}
+else if (pkg.hasScript(script))
+

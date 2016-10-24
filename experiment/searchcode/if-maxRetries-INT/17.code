@@ -1,0 +1,8 @@
+public static final RetryPolicy retryUpToMaximumCountWithFixedSleep(int maxRetries, long sleepTime,
+TimeUnit timeUnit) {
+return new RetryUpToMaximumCountWithFixedSleep(maxRetries, sleepTime, timeUnit);
+static abstract class RetryLimited implements RetryPolicy {
+// 最大重试次数
+final int maxRetries;
+final long sleepTime;
+

@@ -1,0 +1,11 @@
+public EntityMetadata getEntityMetadata() {
+return entityMeta;
+}
+
+@Override
+ComplexFormat getEntityFormat() {
+if (isInitialized()) {
+/* Set the superclass format for a new (never initialized) format. */
+ComplexFormat superFormat = getComplexSuper();
+if (type != null &amp;&amp; superFormat == null) {
+

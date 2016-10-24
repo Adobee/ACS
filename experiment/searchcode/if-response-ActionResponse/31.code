@@ -1,0 +1,10 @@
+return new ActionResponse(ActionResponseType.REDIRECT, &quot;viewCart&quot;);
+}
+
+if (customer == null) {
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;loginCustomer&quot;);
+return actionResponse;
+}
+
+if (cart.getShippingAddress() == null) {
+

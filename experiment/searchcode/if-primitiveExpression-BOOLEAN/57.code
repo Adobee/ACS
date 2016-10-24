@@ -1,0 +1,9 @@
+@Override
+public AstNode apply(final AstNode n) {
+if (n instanceof UnaryOperatorExpression) {
+innerRight = ((CastExpression) innerRight).getExpression();
+}
+
+if (!(innerRight instanceof PrimitiveExpression)) {
+return false;
+

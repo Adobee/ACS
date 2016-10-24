@@ -1,0 +1,6 @@
+public void shouldAllowAccess() throws UnauthorizedException, UnexpectedException {
+populatePages();
+for (String relativeURL : getAllowedPages()) {
+log.info(&quot;User &#39;&quot; + getCurrentUser() + &quot;&#39; could not open page &#39;&quot; + toFullUrl(relativeURL) + &quot;&#39;&quot;);
+if (logInExists) {
+

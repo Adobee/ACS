@@ -1,0 +1,10 @@
+return m_daylightStartMinute;
+}
+
+
+public boolean isEqual(Z7TimeZone timeZone) {
+if (this.m_daylightBias - timeZone.getDaylightBias() != 0)
+return false;
+
+if (this.m_daylightStartDay != timeZone.getDaylightStartDay() ||
+

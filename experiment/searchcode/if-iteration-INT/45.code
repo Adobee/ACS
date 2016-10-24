@@ -1,0 +1,9 @@
+ComplexIterationResult that = (ComplexIterationResult) o;
+
+if (nextIteration != that.nextIteration) return false;
+if (number != null ? !number.equals(that.number) : that.number != null) return false;
+@Override
+public int hashCode() {
+int result = (nextIteration ? 1 : 0);
+result = 31 * result + (number != null ? number.hashCode() : 0);
+

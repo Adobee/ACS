@@ -1,0 +1,5 @@
+String[] vals = new String[] { &quot;forward_xmpp&quot;, &quot;forward_email&quot;, &quot;forward_web&quot; };
+for (String val: vals) {
+if (intent.hasExtra(val)) {
+ServiceHelper.updateSettings(context, settings.getBoolean(&quot;forward_xmpp&quot;, true), settings.getBoolean(&quot;forward_email&quot;, true), settings.getBoolean(&quot;forward_web&quot;, true), null);
+

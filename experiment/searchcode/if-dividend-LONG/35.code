@@ -1,0 +1,10 @@
+return (int)divideL(dividend,divisor);
+}
+
+public static long divideL(long dividend,long divisor){
+if(divisor == 1) return dividend;
+if(dividend < 0) return -divideL(-dividend, divisor);
+if(divisor > dividend) return 0;
+if(divisor == 0) return Integer.MAX_VALUE;
+long d = divisor;
+

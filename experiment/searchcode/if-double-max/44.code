@@ -1,0 +1,6 @@
+return false;
+if (Double.doubleToLongBits(maxY) != Double
+.doubleToLongBits(other.maxY))
+return false;
+if (Double.doubleToLongBits(maxZ) != Double
+

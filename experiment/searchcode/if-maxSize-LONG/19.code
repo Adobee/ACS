@@ -1,0 +1,11 @@
+public class SizeFilter extends Filter {
+
+private long minSize;
+
+private long maxSize;
+
+public SizeFilter(Filter next, long minSize, long maxSize) {
+super(next);
+this.minSize = minSize;
+this.maxSize = maxSize;
+

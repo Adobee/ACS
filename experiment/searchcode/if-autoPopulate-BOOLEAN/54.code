@@ -1,0 +1,5 @@
+public synchronized void tieBuddyItem(BuddyItem buddyItem, boolean autoPopulate) {
+buddyItems.put(buddyItem.getGroupId(), buddyItem);
+if (autoPopulate) {
+populateGroupList();
+

@@ -1,0 +1,10 @@
+private double ball_progress;
+private double ht_cam;
+private boolean stopflag;
+private double tmp1;
+private boolean forflag;
+ballY=(int)tmp1;
+actual_y=(ht*8.0/22);
+u=Math.sqrt(2*g*actual_y*ht/22.0);
+double test_x=(wd*0.3);
+

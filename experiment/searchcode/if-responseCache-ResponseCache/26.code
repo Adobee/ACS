@@ -1,0 +1,13 @@
+import com.example.business.mybusiness.utils.StringUtil;
+
+import java.util.HashMap;
+
+/**
+* Created by zhang.la on 2015/9/15.
+*/
+public class ResponseCache {
+private static HashMap<String, ResponseModel> responseMap = new HashMap<>();
+private static Object lock = new Object();
+
+private static ResponseCache mInstance = new ResponseCache();
+

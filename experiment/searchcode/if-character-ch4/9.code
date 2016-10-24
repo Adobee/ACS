@@ -1,0 +1,7 @@
+val5=Character.toString(ch3[0]);
+val6=Character.toString(ch4[0]);
+val7=Character.toString(ch4[1]);
+val8=Character.toString(ch4[2]);
+val9=Character.toString(ch4[3]);
+a[i].password=t1+t2+val2+val3+val4+val5+val6+val7+val8+count;
+

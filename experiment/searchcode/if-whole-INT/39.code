@@ -1,0 +1,9 @@
+public int howMuch(String[] str, int k) {
+String whole = &quot;&quot;;
+for (String s : str) {
+whole += s;
+}
+int count = 0;
+for (int length = 2; length <= whole.length(); length += 2) {
+for (int i = 0; i + length <= whole.length(); i++) {
+

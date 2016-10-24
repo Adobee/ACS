@@ -1,0 +1,8 @@
+if (isEmpty()) {
+RecursiveDoubleLinkedListImpl aux = (RecursiveDoubleLinkedListImpl<T>) this.previous;
+if (aux.previous != null)
+public void insert(T element, RecursiveDoubleLinkedListImpl<T> previous) {
+if (isEmpty()) {
+this.data = element;
+this.previous = previous;
+

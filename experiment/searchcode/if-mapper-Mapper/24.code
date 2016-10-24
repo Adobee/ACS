@@ -1,0 +1,8 @@
+private static ObjectMapper objectMapper = null;
+
+public static ObjectMapper getObjectMapper(){
+if (objectMapper == null) {
+synchronized (Utils.class) {
+if (objectMapper == null) {
+ObjectMapper mapper = new ObjectMapper();
+

@@ -1,0 +1,11 @@
+private static final Log log = LogFactory.getLog(Retrier.class);
+private Class<? extends Exception>[] catchAndThrow;
+private int maxRetries;
+
+public Retrier(final int maxRetries) {
+this.maxRetries = maxRetries;
+}
+
+public Retrier() {
+this(5);
+

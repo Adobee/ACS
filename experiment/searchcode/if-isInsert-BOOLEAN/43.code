@@ -1,0 +1,14 @@
+private boolean isInsert;
+
+public SupportPreparedStatementSetter(Support a, boolean isInsert) {
+this.support = a;
+arg0.setString(13, support.getDescription());
+arg0.setString(14, support.getPaidBy());
+
+if (!isInsert) {
+arg0.setInt(15, support.getId());
+}
+
+}
+}
+

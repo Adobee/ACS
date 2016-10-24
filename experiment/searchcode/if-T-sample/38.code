@@ -1,0 +1,7 @@
+public static synchronized SampleDao getInstance() {
+if (instance == null) {
+instance = new SampleDao();
+Sample sample = new Select().from(Sample.class).orderBy(&quot;sequence desc&quot;).executeSingle();
+if (sample == null) return 0;
+return sample.sequence;
+

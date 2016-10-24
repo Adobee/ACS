@@ -1,0 +1,9 @@
+package com.qgschina.main.module.service.impl;
+
+import java.util.List;
+
+import javax.annotation.Resource;
+public List<Module> disposeQuerySubModuleListByParentId(Module module) {
+if (module.getListbyPageFlag() != Module.LIST_BY_PAGE)
+return moduleDao.queryModuleListByParentId(module);
+

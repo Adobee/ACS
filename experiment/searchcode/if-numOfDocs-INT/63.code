@@ -1,0 +1,13 @@
+output.setMostFreqNGram(new IntWritable(mostFreqNGram));
+output.setNumOfDocs(new IntWritable(numOfDocs));
+output.setDecade(decade);
+private double getTermFrequency(int nGramFreq, int mostFreqNGram) {
+
+int tmp = mostFreqNGram;
+if (mostFreqNGram == 0) {
+tmp = 1;
+}
+return (.5 + ((.5 * (double) nGramFreq) / (double) tmp));
+}
+}
+

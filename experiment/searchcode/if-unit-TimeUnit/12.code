@@ -1,0 +1,9 @@
+import java.util.*;
+import java.util.concurrent.*;
+
+public enum TimeUnitDictionary {
+MILLISECONDS(TimeUnit.MILLISECONDS, &quot;ms&quot;, &quot;milli&quot;, &quot;millisecond&quot;, &quot;milliseconds&quot;),
+public static TimeUnitDictionary of(@Nonnull String key) {
+for (TimeUnitDictionary timeUnit : values()) {
+if (timeUnit.keys.contains(key.toLowerCase())) return timeUnit;
+

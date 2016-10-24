@@ -1,0 +1,15 @@
+private MovingEntity entity;
+private double xo, yo;
+private double xa, ya;
+private boolean locked;
+
+private int movingCounter;
+if(input.isKeyPressed(KeyEvent.VK_Y)) {
+locked = !locked;
+xa = 0;
+ya = 0;
+}
+
+if(!locked) {
+if(input.keys[KeyEvent.VK_UP])
+

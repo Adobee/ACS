@@ -1,0 +1,8 @@
+private Integer maxCacheSize;
+private String cacheName;
+private BlockingQueue<T> queue = new LinkedBlockingQueue<T>();
+public boolean isFull(){
+int size = queue.size();
+if(size >= this.maxCacheSize){
+logger.warn(&quot;[&quot; + this.cacheName +&quot;] 缓冲区满，暂停添加&quot;);
+

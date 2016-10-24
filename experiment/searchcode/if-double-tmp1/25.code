@@ -1,0 +1,9 @@
+// crossover operator
+
+GenotypeBoosting tmp1=duplica();
+GenotypeBoosting tmp2=b.duplica();
+final double alfa=0.5f;
+tmp1.x[i]=(int)(x[i]+(-x[i]+b.x[i])*r.Rand()*alfa);
+tmp2.x[i]=(int)(b.x[i]+(x[i]-b.x[i])*r.Rand()*alfa);
+if (tmp1.x[i]>nlabels) tmp1.x[i]=nlabels;
+

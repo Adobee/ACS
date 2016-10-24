@@ -1,0 +1,6 @@
+List<Editor> editors = editorManager.getAllEditors();
+for( Editor editor : editors) {
+if(editor.getDisplayName().equalsIgnoreCase(&quot;CodeEditor&quot;) &amp;&amp; editor.getTabLabel().contains(suiteName)) {
+String line = editor.getText( editor.getLineStartOffset(i), editor.getLineEndOffset(i) - editor.getLineStartOffset(i));
+if(line.toUpperCase().contains(testName)) {
+

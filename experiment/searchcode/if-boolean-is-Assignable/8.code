@@ -1,0 +1,6 @@
+public Object deserialize(Class clazz,String value) throws SerializationException{
+if(clazz.isAssignableFrom(Integer.class) || clazz.isAssignableFrom(int.class)){
+return Integer.parseInt(value);
+}
+else if(clazz.isAssignableFrom(Long.class) || clazz.isAssignableFrom(long.class)){
+

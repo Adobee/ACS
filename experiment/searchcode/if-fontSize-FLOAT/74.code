@@ -1,0 +1,8 @@
+public static int readBookMarksPageNo(DataBaseHelper dbHelper, String bookname, float fontsize) {
+int pageNo;
+&quot;bookname = ? and fontsize = ? &quot;,
+new String[]{bookname, fontsize + &quot;&quot;},
+&quot;&quot;, &quot;&quot;, &quot;&quot;);
+
+if (cur.moveToNext()) {
+

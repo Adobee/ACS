@@ -1,0 +1,9 @@
+long waitNanos = cleanup(System.nanoTime());
+if (waitNanos == -1) return;
+if (waitNanos > 0) {
+* been removed from the pool and should be closed.
+*/
+boolean connectionBecameIdle(RealConnection connection) {
+assert (Thread.holdsLock(this));
+if (connection.noNewStreams || maxIdleConnections == 0) {
+

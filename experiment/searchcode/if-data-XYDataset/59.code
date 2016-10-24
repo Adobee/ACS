@@ -1,0 +1,12 @@
+import eyetrackercalibrator.framemanaging.PupilXYDataset;
+import org.jfree.data.xy.DefaultXYDataset;
+
+/**
+*
+* @author SQ
+*/
+public class TrialMarkingGraphPanel extends GraphTabPanel {
+this.pupilXYDataset = new PupilXYDataset(eyeFrameManager);
+this.pupilXYDataset.setFrameSynchronizor(this.frameSynchronizor);
+setDataSet(pupilXYDataset, graphPanel[INDEX_PUPIL_GRAPH_PANEL]);
+

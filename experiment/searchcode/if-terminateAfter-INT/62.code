@@ -1,0 +1,9 @@
+private static class TerminateAfterCollector extends FilterCollector {
+
+private int count = 0;
+private final int terminateAfter;
+
+public TerminateAfterCollector(Collector in, int terminateAfter) {
+super(in);
+this.terminateAfter = terminateAfter;
+

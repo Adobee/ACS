@@ -1,0 +1,11 @@
+public boolean turnOnProxy(ContentResolver cr, String proxy_addr_port) {
+Log.v(TAG, proxy_addr_port);
+if (Secure.putString(cr, Secure.HTTP_PROXY, proxy_addr_port)) {
+else {
+return false;
+}
+}
+
+public boolean turnOffProxy(ContentResolver cr) {
+if (Secure.putString(cr, Secure.HTTP_PROXY, &quot;&quot;)) {
+

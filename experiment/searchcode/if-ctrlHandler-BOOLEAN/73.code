@@ -1,0 +1,7 @@
+@Override
+public boolean hasChanged(Settings current, Settings previous) {
+return current.filter(loggerPredicate).getAsMap().equals(previous.filter(loggerPredicate).getAsMap()) == false;
+builder.put(current.filter(loggerPredicate).getAsMap());
+for (String key : previous.getAsMap().keySet()) {
+if (loggerPredicate.test(key) &amp;&amp; builder.internalMap().containsKey(key) == false) {
+

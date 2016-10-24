@@ -1,0 +1,9 @@
+public class GetParameter4Ranking {
+Map<String, String> params = new HashMap<>();
+boolean isGzip = true;
+* @param rate 圧縮レベルは1 ~ 5
+*/
+public void setGzip(int rate) {
+if (rate < 1 || rate > 5) {
+throw new NarouOutOfRangeException(&quot;out of gzip Compression level (1 ~ 5)&quot;);
+

@@ -1,0 +1,9 @@
+Log.v(&quot;\&quot;100 Continue\&quot; Received, &quot; + toString(true));
+}
+}
+begun = true;
+boolean connectionClose = response.isHttp10() ||
+response.testHeader(&quot;CONNECTION&quot;, &quot;close&quot;);
+// Response is Connection-Close and has no Content-Length
+if (!request.isHttp10() &amp;&amp; !head &amp;&amp; connectionClose &amp;&amp;
+

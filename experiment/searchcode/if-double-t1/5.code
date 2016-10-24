@@ -1,0 +1,14 @@
+public class DefaultRelevance implements Relevance {
+
+final double t1;
+final double t2;
+
+public DefaultRelevance(double t1, double t2) {
+public double getRelevance(double t) {
+
+if (t <= t1) {
+return 1.0;
+}
+
+if (t < t2) {
+

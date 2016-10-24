@@ -1,0 +1,14 @@
+System.out.println(names[i] + &quot;: &quot; + times[i]);
+}
+
+
+int min = times[0];
+for (int i = 0; i < times.length-1; i++) {
+if (times[i] < times[i+1]) {
+int z = times[i];
+times[i] = times[i+1];
+times[i+1] = z;
+
+if (times[i] < min) {
+int y = times[i];
+

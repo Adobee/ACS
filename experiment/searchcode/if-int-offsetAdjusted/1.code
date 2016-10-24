@@ -1,0 +1,7 @@
+final int offsetAdjusted = getOffset(instantAdjusted);
+
+// if the offsets differ, we must be near a DST boundary
+if (offsetLocal != offsetAdjusted)
+{
+// we need to ensure that time is always after the DST gap
+

@@ -1,0 +1,8 @@
+private static Map<String, HttpMethod> registry = new HashMap<String, HttpMethod>();
+
+private final String method;
+public static HttpMethod fromString(String method) {
+HttpMethod httpMethod = registry.get(method);
+
+if (httpMethod == null) {
+

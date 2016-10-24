@@ -1,0 +1,7 @@
+public void setAbortLsn(long abortLsn, boolean abortKnownDeleted) {
+setAbortLsn(abortLsn, abortKnownDeleted, false);
+public void setAbortLsn(long abortLsn,
+boolean abortKnownDeleted,
+boolean createdThisTxn) {
+/* Do not overwrite abort info if this locker previously . */
+

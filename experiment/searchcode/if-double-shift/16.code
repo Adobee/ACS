@@ -1,0 +1,12 @@
+public static double roundToSignificantDigits(double v, int digits)
+{
+if (v == 0) return v;
+if (v < 0) return -roundToSignificantDigits(-v, digits);
+int shift = a + digits - (a > 0 ? 1 : 0);
+
+double c = 1;
+
+if (shift > 0)
+{
+for (int i = 0; i < shift; i++) c *= 10;
+

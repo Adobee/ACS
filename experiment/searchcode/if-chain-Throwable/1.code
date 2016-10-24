@@ -1,0 +1,7 @@
+import java.util.function.Function;
+
+@FunctionalInterface
+public interface RethrowChain<X extends Throwable, Y extends Throwable> extends Chain<X, Y> {
+public static final RethrowChain<Throwable, Throwable> END = t -> {
+if (t instanceof Error) {
+

@@ -1,0 +1,10 @@
+import com.jaspersoft.studio.property.section.AbstractSection;
+
+public class PlotFactory {
+public static void createPlot(AbstractSection section, Composite parent,
+APropertyNode plot = section.getElement();
+APlot aplot = null;
+if (plot instanceof MAreaPlot)
+aplot = new AreaPlot();
+else if (plot instanceof MBar3DPlot)
+

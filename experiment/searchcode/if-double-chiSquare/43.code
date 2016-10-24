@@ -1,0 +1,10 @@
+import cern.jet.stat.Probability;
+
+public class ChiSquare
+extends AbstractContinousDistribution
+{
+protected double freedom;
+private double vp;
+private double vd;
+protected static ChiSquare shared = new ChiSquare(1.0D, makeDefaultGenerator());
+

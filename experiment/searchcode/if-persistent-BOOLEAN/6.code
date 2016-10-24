@@ -1,0 +1,15 @@
+transacting = false;
+}
+
+public void commit() {
+if (transacting) {
+persistent = transactional;
+}
+transacting = false;
+public T getTransactional() {
+return transacting ? transactional : persistent;
+}
+
+public void set(T value) {
+if (transacting) {
+

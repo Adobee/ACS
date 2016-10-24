@@ -1,0 +1,14 @@
+if(!(other instanceof ChannelEvent)) {
+return 1;
+}
+
+ChannelEvent o = (ChannelEvent)other;
+if(mType != o.getType()) {
+return true;
+}
+if(!(prevEvent instanceof ChannelEvent)) {
+return true;
+}
+
+ChannelEvent ce = (ChannelEvent)prevEvent;
+

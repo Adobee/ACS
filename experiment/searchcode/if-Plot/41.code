@@ -1,0 +1,15 @@
+import net.minecore.mineplot.MinePlot;
+
+import org.bukkit.entity.Player;
+
+public class PlotPlayerManager {
+
+private ArrayList<PlotPlayer> miners;
+public PlotPlayer getPlotPlayer(String name){
+for(PlotPlayer m : miners){
+if(m.getName().equals(name))
+return m;
+}
+
+PlotPlayer m = new PlotPlayer(mineplot.getMineCore().getMiner(name), mineplot);
+

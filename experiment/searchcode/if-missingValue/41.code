@@ -1,0 +1,10 @@
+final Object o = input.get(timestampColumn);
+DateTime extracted = missingValue;
+if (o != null) {
+if (o.equals(parseCtx.lastTimeObject)) {
+result = 31 * result + (missingValue != null ? missingValue.hashCode() : 0);
+return result;
+}
+
+//simple merge strategy on timestampSpec that checks if all are equal or else
+

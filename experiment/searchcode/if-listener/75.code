@@ -1,0 +1,9 @@
+@Override
+protected void lastListenerRemoved() {
+super.lastListenerRemoved();
+if (mapChangeListener != null) {
+decorated.removeMapChangeListener(mapChangeListener);
+mapChangeListener = null;
+}
+}
+

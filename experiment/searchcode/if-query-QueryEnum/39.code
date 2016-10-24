@@ -1,0 +1,8 @@
+import com.weixin.platform.domain.state.ProductEnum;
+import com.weixin.platform.domain.state.QueryEnum;
+import com.weixin.platform.operate.BaseOperate;
+String content = textMsg.getContent();
+QueryEnum queryEnum = QueryEnum.getByName(content);
+switch (queryEnum) {
+case ID:
+

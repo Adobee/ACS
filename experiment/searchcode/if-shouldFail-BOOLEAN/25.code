@@ -1,0 +1,9 @@
+public GrouperRemoveMemberStep(String group, String subject, boolean shouldFail, String endpoint) {
+super();
+
+this.endpoint = endpoint;
+this.group = group;
+grouper.deleteMember(new GroupIdentifier(null, this.group), this.subject);
+if (this.shouldFail) {
+fail(&quot;deleteMember should fail&quot;);
+

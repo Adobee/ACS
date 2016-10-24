@@ -1,0 +1,15 @@
+private int level;
+
+public int getLevel() {
+return level;
+}
+
+public void setLevel(int level) {
+if (level <= 0) {
+public Logger() {
+this(DEFAULT_LEVEL);
+}
+
+public void log(int logLevel, String message) {
+if (logLevel <= this.level) {
+

@@ -1,0 +1,9 @@
+@Override
+public boolean isMultipart(final HttpServletRequest request) {
+if (request.getRequestURI().contains(excludeUrl)) {
+return false;
+}
+return super.isMultipart(request);
+}
+}
+

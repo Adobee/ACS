@@ -1,0 +1,5 @@
+public void generateE(List<String> output, int maxDepth, int currentDepth) {
+// E -> T | E + T | E - T
+if(currentDepth > maxDepth) { //prevent from exploding memory
+generateT(output, maxDepth, currentDepth + 1);
+

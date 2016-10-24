@@ -1,0 +1,14 @@
+stmt.setByte(index, (byte) jdbcValue);
+}
+return;
+}
+
+if (jdbcType == Boolean.TYPE || jdbcType.isAssignableFrom(Boolean.class)) {
+if (value == null) {
+stmt.setBoolean(index, (boolean) jdbcValue);
+}
+return;
+}
+
+if (jdbcType == Double.TYPE || jdbcType.isAssignableFrom(Double.class)) {
+

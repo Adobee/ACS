@@ -1,0 +1,12 @@
+while(theWorld.isAirBlock(targetX, targetY, targetZ))
+{
+--targetY;
+}
+
+if(targetY<dollposY-3 || targetY >dollposY+3)
+{
+return false;
+}
+if(theWorld.getBlockId(targetX, targetY, targetZ)
+!= Block.dirt.blockID &amp;&amp;
+

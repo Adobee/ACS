@@ -1,0 +1,9 @@
+package com.takumalee.ormcomparison.context;
+
+import android.content.Context;
+
+public class ApplicationContextSingleton {
+public static synchronized ApplicationContextSingleton initialize(Context context){
+if (INSTANCE == null) {
+INSTANCE = new ApplicationContextSingleton(context.getApplicationContext());
+

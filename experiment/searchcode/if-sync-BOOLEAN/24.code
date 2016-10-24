@@ -1,0 +1,11 @@
+public abstract class SyncObserver extends ContentObserver {
+
+private boolean inSync = false;
+//private final String logTag = &quot;SyncObs&quot;;
+* Activates when synchronization is active
+*/
+abstract public void onSyncActive();
+
+@Override
+public void onChange(boolean selfChange)
+

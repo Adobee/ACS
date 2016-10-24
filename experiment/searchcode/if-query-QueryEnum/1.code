@@ -1,0 +1,8 @@
+public class DynamicQuery {
+public static QueryEnum getDynamicQuery(QueryEnum query) {
+String id = query.getId();
+if (QueryEnum.SMKH.getId().equals(id)) {
+return getSmkhQuery(query);
+}
+return null;
+

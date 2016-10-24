@@ -1,0 +1,14 @@
+temp.rhs.add(&quot;NULL&quot;);
+
+return temp;
+}
+
+public boolean isEpsilonRule()
+{
+if(rhs.size() == 1 &amp;&amp; rhs.get(0).equals(&quot;NULL&quot;))  return true;
+for (int i = 0; i < rhs.size(); i++)
+{
+rhs_temp += rhs.get(i);
+if (i != rhs.size() - 1)
+rhs_temp += &quot; &quot;;
+

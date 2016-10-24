@@ -1,0 +1,10 @@
+assertCached(false, 505);
+assertCached(false, 506);
+}
+
+private void assertCached(boolean shouldPut, int responseCode) throws Exception {
+assertThat(responseCode).isEqualTo(response.code());
+assertThat(response.body().string()).isEqualTo(firstBody);
+
+if (shouldPut) {
+

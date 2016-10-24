@@ -1,0 +1,12 @@
+private static final long serialVersionUID = 5299990524405129369L;
+private int iptId;
+private Locacao locacao;
+private String iptCodigoReduzido;
+private Integer iptAno;
+
+public Iptu() {
+}
+
+public Iptu(int iptId, Locacao locacao) {
+this.iptId = iptId;
+

@@ -1,0 +1,15 @@
+package com.sigopt.net;
+
+import java.util.HashMap;
+import java.util.Map;
+
+class MapHelper {
+public static <S, T> Map<S, T> ensure(Map<S, T> map) {
+if(map == null) {
+return new HashMap<S, T>();
+}
+return map;
+}
+
+}
+

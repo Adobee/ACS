@@ -1,0 +1,7 @@
+private static final Format FORMAT = Plots.getConfig().getMessageFormat();
+
+@Command(aliases = &quot;auto&quot;, parent = &quot;plot&quot;, perm = Permissions.PLOT_AUTO)
+public void auto(@Caller Player player) {
+Plots.getDatabase().findFreePlot(plotWorld.getWorld(), closest, plotId -> {
+if (plotId.isPresent()) {
+

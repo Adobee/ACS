@@ -1,0 +1,13 @@
+HotTopic (2),
+ForumThread (3),
+URLDeal (4),
+DateBlock(5);
+private final int type;
+private DealType(int type){
+this.type = type;
+}
+public int getType() {
+return type;
+}
+public static DealType getType(int type){
+

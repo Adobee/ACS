@@ -1,0 +1,9 @@
+private CheckoutService objectToTest = new WebCheckoutService();
+
+@Test (expected = IllegalArgumentException.class)
+public void testNullList() {
+objectToTest.checkout(null);
+}
+
+@Test (expected = IllegalArgumentException.class)
+

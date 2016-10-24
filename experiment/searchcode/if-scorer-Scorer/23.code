@@ -1,0 +1,7 @@
+import static org.sindice.siren.search.AbstractTestSirenScorer.BooleanClauseBuilder.must;
+import static org.sindice.siren.search.AbstractTestSirenScorer.BooleanClauseBuilder.not;
+NodeScorer s = null;
+for (final ChildScorer child : childs) {
+s = (NodeScorer) child.child;
+if (s instanceof AncestorFilterScorer) {
+

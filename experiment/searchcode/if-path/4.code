@@ -1,0 +1,8 @@
+public class PathFactory {
+
+public static Path create(String pathString) {
+if (pathString == null || pathString.isEmpty()) {
+Path path = null;
+if (pathString.startsWith(Path.DELIMITER)) {
+path = RootPath.getInstance();
+

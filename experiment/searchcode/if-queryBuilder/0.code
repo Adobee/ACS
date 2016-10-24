@@ -1,0 +1,12 @@
+this.matcher = matcher;
+}
+
+public QueryBuilder playsIn(String j) {
+if (matcher == null) {
+return new QueryBuilder(new PlaysIn(j));
+return new QueryBuilder(new And(matcher, new PlaysIn(j)));
+}
+
+public QueryBuilder hasAtLeast(int arvo, String m) {
+if (matcher == null) {
+

@@ -1,0 +1,7 @@
+protected static ThreadLocal<ComplexFormat> complexFormat = new ThreadLocal<ComplexFormat>() {
+
+// use inner class to initialize instance per thread
+@Override
+protected ComplexFormat initialValue() {
+return new ComplexFormat(IMAGINARY, NumberUtils.getFormatter());
+

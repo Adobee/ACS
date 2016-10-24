@@ -1,0 +1,8 @@
+public class TimeStampMessage extends Message implements Comparable<TimeStampMessage>,Serializable{
+private TimeStamp timeStamp;
+
+public TimeStampMessage(String src, String dest, String kind, TimeStamp timeStamp, Object data) {
+int compareResult = timeStamp.compare(this.timeStamp,o.timeStamp);
+if(compareResult == 0)	{
+if(this.timeStamp.getUserID() < o.timeStamp.getUserID())
+

@@ -1,0 +1,13 @@
+public class ConcreteHandler1 extends Handler {
+
+@Override
+public void handleRequest(int request) {
+if (request >= 0 &amp;&amp; request < 10) {
+System.out.println(&quot;ConcreteHandler1.handleRequest() &quot; + request);
+} else if (getSuccessor() != null) {
+getSuccessor().handleRequest(request);
+}
+}
+
+}
+

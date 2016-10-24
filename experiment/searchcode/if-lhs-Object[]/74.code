@@ -1,0 +1,11 @@
+public class DefaultNotEqualsExpr extends DefaultEqualityExpr{
+public   DefaultNotEqualsExpr( Expr lhs, Expr rhs )
+{
+super( lhs, rhs );
+return &quot;[(DefaultNotEqualsExpr): &quot; + getLHS() + &quot;, &quot; + getRHS() + &quot;]&quot;;
+}
+
+protected boolean evaluateObjectObject( Object lhs, Object rhs )
+{
+if( eitherIsNumber( lhs, rhs ) )
+

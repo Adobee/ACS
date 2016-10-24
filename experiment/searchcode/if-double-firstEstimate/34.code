@@ -1,0 +1,9 @@
+public class FirstEstimationRBolt extends JedisRichBolt {
+Estimator estimator;
+//    double paraEst;
+
+
+public FirstEstimationRBolt(String redisIp, String pass) {
+String zoneid = tuple.getStringByField(SeUtils.STORM.FIELDS.ZONE_ID);
+firstEstimate(caseid, zoneid);
+

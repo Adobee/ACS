@@ -1,0 +1,13 @@
+this.adjustedScoring = score/Math.max(document.maxWeight,1);
+this.matches = matches;
+}
+
+@Override
+public int compareTo(Result that) {
+if(this.scoring > that.scoring)
+return -1;
+if(this.scoring < that.scoring)
+return 1;
+
+if(this.matches > that.matches)
+

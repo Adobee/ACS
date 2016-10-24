@@ -1,0 +1,12 @@
+case DataBuffer.TYPE_DOUBLE:
+accumulateStatisticsDouble(uid);
+break;
+}
+}
+
+if (name.equalsIgnoreCase(&quot;statistics&quot;)) { //$NON-NLS-1$
+int outRange = 0;
+double totalValues = 0.0;
+double accum2 = 0.0;
+double accum3 = 0.0;
+

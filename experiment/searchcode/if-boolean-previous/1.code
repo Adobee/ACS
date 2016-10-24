@@ -1,0 +1,13 @@
+package sfs.stat.cpu;
+
+public class CPUStat {
+
+private double previousUser;
+private double previousNice;
+public boolean equals(Object obj) {
+
+if ( obj instanceof CPUStat ) {
+
+CPUStat stat = (CPUStat) obj;
+return ( previousUser == stat.getPreviousUser() ) &amp;&amp; ( previousNice == stat.getPreviousNice() )
+

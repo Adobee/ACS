@@ -1,0 +1,10 @@
+private Map<T, Counter> map = new HashMap<>();
+private final boolean allowDuplicate;
+
+ObjectCounter(boolean allowDuplicate) {
+this.allowDuplicate = allowDuplicate;
+}
+
+public boolean add(T key) {
+return add(key, allowDuplicate);
+

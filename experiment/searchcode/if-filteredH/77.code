@@ -1,0 +1,12 @@
+double filteredH = h;
+if (Math.abs(h) < minStep) {
+if (acceptSmall) {
+filteredH = forward ? minStep : -minStep;
+&quot;minimal step size ({0}) reached, integration needs {1}&quot;,
+minStep, Math.abs(h));
+}
+}
+
+if (filteredH > maxStep) {
+filteredH = maxStep;
+

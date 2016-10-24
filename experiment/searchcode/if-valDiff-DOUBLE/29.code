@@ -1,0 +1,8 @@
+// returns percentage since last call...
+public double getDoubleValue() {
+long diff = cpu.cycles - lastCycles;
+if (diff == 0) return 0;
+public double getDoubleValue(int mode) {
+long diff = cpu.cycles - lastCycles[mode];
+if (diff == 0) return 0;
+

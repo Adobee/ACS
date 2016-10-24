@@ -1,0 +1,10 @@
+// {{图形变换的方法
+protected boolean moveLeft(Shape shape) {
+if (shape.vertex.x <= 0 || isExistCube(LEFT, shape))
+return false;
+return true;
+}
+
+protected boolean moveRight(Shape shape) {
+if (shape.vertex.x + shape.width >= virtualBoard[0].length
+

@@ -1,0 +1,12 @@
+return randomUUID(false, true);
+}
+
+public static String randomUUID(boolean lowerCase, boolean noSeparators) {
+String uuid = UUID.randomUUID().toString();
+
+if (! lowerCase) {
+uuid = uuid.toUpperCase();
+}
+
+if (noSeparators) {
+

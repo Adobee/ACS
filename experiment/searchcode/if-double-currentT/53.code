@@ -1,0 +1,9 @@
+while(iter.hasNext()){
+AbstractTrack currentT = iter.next();
+if ((currentT.getCandidateNextTrackID() > 0) &amp;&amp;
+(!removedlist.contains(currentT.getTrackID()))) {
+for (Integer id : tlist)
+if (id > 0) {
+currentT.concatTracks(ts.get(id));
+removedlist.add(id);
+

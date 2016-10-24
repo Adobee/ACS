@@ -1,0 +1,7 @@
+return serializerLookup.computeIfAbsent(clazz, this::findSerializer);
+}
+
+private Serializer findSerializer(final Class<?> clazz) {
+for (final Serializer serializer : serializerList) {
+if (serializer.canSerialize(clazz)) {
+

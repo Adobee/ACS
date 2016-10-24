@@ -1,0 +1,13 @@
+File propFile;
+
+@After
+public void tearDown() throws Exception {
+if (propFile.exists())
+propFile.delete();
+Assert.assertTrue(id.toString().equals(hostId));
+}
+
+@Test
+public void generateRandomId() throws Exception {
+// delete properties file
+

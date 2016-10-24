@@ -1,0 +1,9 @@
+pattern = Pattern.compile(PACKAGE_PATTERN);
+matcher = pattern.matcher(rule);
+if (matcher.find())
+((DRLRuleRefactorInfo) ruleRefactorInfo).addContent(DRLContentTypeEnum.PACKAGE, matcher.start(), matcher.group());
+pattern = Pattern.compile(RULE_NAME_PATTERN);
+matcher = pattern.matcher(rule);
+if (matcher.find())
+return matcher.group();
+

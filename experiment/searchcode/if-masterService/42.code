@@ -1,0 +1,6 @@
+HrTmstudentInfo mm = (HrTmstudentInfo) masterService.findEntity(&quot;from HrTmstudentInfo where userUuid = &#39;&quot; + getSysUser().getUuid() + &quot;&#39;&quot;);
+if (null != mm) {
+CodeAreaPlace c = (CodeAreaPlace) masterService.findEntity(&quot;from CodeAreaPlace where code = &#39;&quot; + jg[1] + &quot;&#39;&quot;);
+if (null != c) {
+jgmc = jgmc + c.getLabel();
+

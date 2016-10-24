@@ -1,0 +1,8 @@
+int[][] g = new int[M][M];
+long[] lcmA = new long[M];
+long[] lcmB = new long[M];
+lcm(a, m, M, lcmA);
+for (int T = 0; T < M; T++) {
+long lcm = MathUtils.lcm(lcmA[S], lcmB[T]);
+if (lcm > Integer.MAX_VALUE) lcm = Integer.MAX_VALUE;
+

@@ -1,0 +1,12 @@
+this.level = level;
+}
+
+public void tryMove (double xa, double ya) {
+onGround = false;
+if (level.isFree(this, x + xa, y, w, h, xa, 0)) {
+x += xa;
+} else {
+hitWall(xa, 0);
+if (xa < 0) {
+double xx = x / 10;
+

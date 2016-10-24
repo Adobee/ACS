@@ -1,0 +1,6 @@
+OpaqueExpression oldMapping = mapping;
+mapping = newMapping;
+if (eNotificationRequired()) {
+ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, UML2Package.ABSTRACTION__MAPPING, oldMapping, newMapping);
+if (msgs == null) msgs = notification; else msgs.add(notification);
+

@@ -1,0 +1,11 @@
+package ai;
+
+public enum ActionType
+{
+DEPLOY_ACTION(DeployAction.class), CLEAR_ACTION(ClearAction.class), ACTIVATE_ACTION(ActivateAction.class),
+public static ActionType getActionType(Class<? extends Action> actionClass)
+{
+for (ActionType actionType : ActionType.values())
+{
+if (actionClass == actionType.getActionClass())
+

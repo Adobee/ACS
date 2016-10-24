@@ -1,0 +1,10 @@
+for(int id : oldstate.getIdsInPlayOrder()) {
+if (id!=((Minion) minion).getId()) {
+
+Minion newMinion = oldstate.findMinion(id);
+if ((newMinion.getRace()).equals(Race.MURLOC)) {
+newMinion = newMinion.applyBuff(new AdditiveBuff(-1,0,2,0));
+}
+
+if (oldstate.findPosition(newMinion.getId())<7) newMySide.set(oldstate.findPosition(newMinion.getId()), newMinion);
+

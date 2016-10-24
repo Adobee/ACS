@@ -1,0 +1,11 @@
+String line;
+boolean http10 = false;
+while((line = readLine()) != null) {
+
+if (line.equals(&quot;Connection: close&quot;) || line.contains(&quot;HTTP/1.0&quot;)) {
+keepAlive(0);
+}
+
+if (line.contains(&quot;HTTP/1.0&quot;)) {
+http10 = true;
+

@@ -1,0 +1,9 @@
+package main;
+public class Location {
+int Row;
+int Col;
+public Location(int row, int col) {
+Row = row;
+Col = col;
+if (!Main.M.unbounded1) {
+

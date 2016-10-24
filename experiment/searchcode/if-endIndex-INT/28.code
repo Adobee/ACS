@@ -1,0 +1,10 @@
+private static int waterTrapped(int[] A){
+int startIndex, lowIndex, endIndex;
+int water=0;
+startIndex = A.length-1;
+lowIndex = A.length-2;
+while(lowIndex>endIndex){
+int add =Math.min(A[endIndex], A[startIndex])-A[lowIndex--];
+if(add>0)
+water +=add ;
+

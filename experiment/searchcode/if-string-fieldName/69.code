@@ -1,0 +1,6 @@
+public static AbstractAutoCompleter getFor(String fieldName) {
+AbstractAutoCompleter result;
+if (fieldName.equals(&quot;author&quot;) || fieldName.equals(&quot;editor&quot;)) {
+result = new NameFieldAutoCompleter(fieldName);
+} else if (fieldName.equals(&quot;crossref&quot;)) {
+

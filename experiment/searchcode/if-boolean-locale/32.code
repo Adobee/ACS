@@ -1,0 +1,11 @@
+private static String[] chinese = {&quot;zh&quot;, &quot;cn&quot;, &quot;tw&quot;, &quot;zhcn&quot;, &quot;zh_cn&quot;, &quot;zhtw&quot;, &quot;zh_tw&quot;};
+
+public static boolean isCn(Locale locale){
+
+if(locale == null) {
+return false;
+}
+
+if(locale.equals(Locale.CHINA) || locale.equals(Locale.CHINESE)
+|| locale.equals(Locale.TAIWAN)){
+

@@ -1,0 +1,18 @@
+public void push(QueueLink l) {
+if (l.previousQueue != null) {
+l.unlist();
+}
+l.previousQueue = head.previousQueue;
+l.nextQueue.previousQueue = l;
+}
+
+public QueueLink pull() {
+QueueLink l = head.nextQueue;
+if (l == head) {
+return null;
+}
+l.unlist();
+return l;
+}
+}
+

@@ -1,0 +1,7 @@
+deflated.position(offset);
+int c = deflater.deflate(deflated.array(), deflated.position(), deflated.remaining(), Deflater.SYNC_FLUSH);
+if (c == 0) {
+break;
+}
+deflated.position(deflated.position() + c);
+

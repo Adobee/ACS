@@ -1,0 +1,12 @@
+StdOut.printf(&quot;lgBase2(%f)%n&quot;, n);
+return Math.log(n) / Math.log(2.0);
+}
+
+public static double lgFactorial(double n) {
+StdOut.printf(&quot;lgFactorial(%f)%n&quot;, n);
+if (n == 1) return lgBase2(n);
+return lgFactorial(n-1) + lgBase2(n);
+}
+
+}
+

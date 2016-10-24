@@ -1,0 +1,6 @@
+fileNameList = batchDataSetService.getFileNameBatch(&quot;DS_ISI&quot;);
+if (fileNameList.size() > 0) {
+for (String fileName : fileNameList) {
+List<DatasetIsiBatch> listIsiBatch = isiService.readFileDatasetIsiBatch(MessageBundle.getMessage(&quot;config.local.path&quot;) + filename);
+if (null != listIsiBatch &amp;&amp; listIsiBatch.size() > 0) {
+

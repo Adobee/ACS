@@ -1,0 +1,10 @@
+} catch(Exception e) {
+return defaultValue;
+}
+}
+
+public static boolean getBoolean(Properties properties, String key) {
+public static boolean getBoolean(Properties properties, String key, boolean defaultValue) {
+String property = properties.getProperty(key);
+if(property == null) {
+

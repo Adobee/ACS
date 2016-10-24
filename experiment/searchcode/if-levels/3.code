@@ -1,0 +1,12 @@
+public void moveLevelUp(int index){
+if(index <= 0 || index >= levels.length){
+return;
+}
+Level l = levels[index-1];
+public void moveLevelDown(int index){
+if(index < 0 || index >= levels.length - 1){
+return;
+}
+Level l = levels[index+1];
+levels[index+1] = levels[index];
+

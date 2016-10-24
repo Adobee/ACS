@@ -1,0 +1,10 @@
+public String toString() {
+if (nf == null) {
+nf = NumberFormat.getInstance();
+nf.setMaximumFractionDigits(2);
+}
+return &quot;(&quot; + nf.format(x) + &quot;,&quot; + nf.format(y) + &quot;)&quot;;
+}
+
+public boolean equals(Object o) {
+

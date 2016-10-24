@@ -1,0 +1,7 @@
+ArrayList<Cell> surroundCells = new ArrayList<Cell>();
+int blockRow = cell.getRow();
+int blockColumn = cell.getColumn();
+for (int j = blockColumn - 1; j < blockColumn + 2; j++) {
+int id = countID(i, j);
+if (id != -1 &amp;&amp; id != cell.getID()) {
+

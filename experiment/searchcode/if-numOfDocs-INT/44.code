@@ -1,0 +1,9 @@
+* Specify the source of randomness, e.g. Random(0). Use random assignment.
+*/
+public static int[] assignToFoldsRand(int numOfDocs, int numOfFolds, Random random) {
+
+int[] foldAssignment = new int[numOfDocs];
+
+for(int i = 0; i < numOfDocs; i++) {
+foldAssignment[i] = random.nextInt(numOfFolds); // random int between 0 (inclusive) and numOfFolds (exclusive)
+

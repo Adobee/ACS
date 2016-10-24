@@ -1,0 +1,7 @@
+protected KafkaConfig getKafkaConfig(int brokerId) {
+File trustStoreFile;
+try {
+trustStoreFile = File.createTempFile(&quot;SSLClusterTestHarness-truststore&quot;, &quot;.jks&quot;);
+Properties props = TestUtils.createBrokerConfig(
+brokerId, zkConnect, false, false, TestUtils.RandomPort(), sslInterBrokerSecurityProtocol,
+

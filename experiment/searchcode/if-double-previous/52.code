@@ -1,0 +1,9 @@
+System.out.println(testTable[0][0]);
+double previousValue;
+double newValue = 0.0;
+
+for (int r = 0; r < testTable.length; r += 2) {
+previousValue = testTable[r + 1][0];
+for (int c = 1; c < testTable[r].length; c++) {
+if (check(testTable[r][c], previousValue) == &quot;igm&quot;)
+

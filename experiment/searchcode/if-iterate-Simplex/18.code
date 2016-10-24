@@ -1,0 +1,7 @@
+* @throws org.apache.commons.math3.exception.NotStrictlyPositiveException
+* if the reference simplex does not contain at least one point.
+* @throws org.apache.commons.math3.exception.DimensionMismatchException
+* if there is a dimension mismatch in the reference simplex.
+*/
+public MultiDirectionalSimplex(final double[][] referenceSimplex,
+

@@ -1,0 +1,7 @@
+Fields termVectorsByField = null;
+boolean docFromTranslog = get.source() != null;
+AggregatedDfs dfs = null;
+/* fetched from translog is treated as an artificial document */
+if (docFromTranslog) {
+request.doc(get.source().source, false);
+

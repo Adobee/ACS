@@ -1,0 +1,9 @@
+docLabels = newDocLabels;
+}
+
+double startPosLogProb = cliqueTree.logProbStartPos();
+if (VERBOSE)
+Map<Integer, double[]> EForADoc = sparseE(activeFeatures);
+List<Map<Integer, double[]>> EForADocPos = null;
+if (dropoutApprox) {
+

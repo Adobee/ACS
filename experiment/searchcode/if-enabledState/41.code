@@ -1,0 +1,7 @@
+public List<ProductBean> getAllForCurrentCompany(EnabledState enabledState) {
+List<ProductBean> productBeans;
+if (EnabledState.Enabled == enabledState) {
+productBeans = modelDtoConverter.convert(productRepository.loadBy(cashBox, Enabled.TRUE));
+} else if (EnabledState.Disabled == enabledState) {
+productBeans = modelDtoConverter.convert(productRepository.loadBy(cashBox, Enabled.FALSE));
+

@@ -1,0 +1,7 @@
+public static int solution(int N) {
+long i = 1;
+long result = 0;
+while (i < Math.sqrt(N)) {
+if (N % i == 0) {
+result += 2;
+

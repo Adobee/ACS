@@ -1,0 +1,8 @@
+ModelAccess.instance().runWriteActionInCommand(new Runnable() {
+public void run() {
+if (settings.isCreateModule()) {
+// Create a module (solution)
+Solution module = createNewModule(createdProject);
+
+if (!settings.isCreateMainClass()) {
+

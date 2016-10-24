@@ -1,0 +1,14 @@
+public void UserWantsPointer()
+{
+HelpWanted = false;
+if(MyControlPanel != null)
+StatusMessage(&quot;Pour déplacer un composant, placer le pointeur de la souris dessus. Vous pouvez aussi cliquez sur l&#39;éclair jaune ou appuyer sur &#39;&#39;ENTREE&#39;&#39; pour lancer la simulation&quot;);
+}
+}
+
+public void UserWantsWireDrawing()
+{
+if(HelpWanted)
+{
+HelpDialog helpdialog = new HelpDialog(frame, &quot;Fil&quot;);
+

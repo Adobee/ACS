@@ -1,0 +1,6 @@
+final MatrixStore<Double> tmpMtrxA = SimpleLUCase.getOrginal().toPrimitiveStore();
+
+TestUtils.assertEquals(JAMA_LU.decompose(tmpMtrxA), PRIMITIVE_DENSE_LU.decompose(tmpMtrxA));
+
+TestUtils.assertEquals(JAMA_LU.getL(), PRIMITIVE_DENSE_LU.getL(), COMPARE_CONTEXT);
+

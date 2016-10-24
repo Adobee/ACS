@@ -1,0 +1,9 @@
+private double alpha;
+
+public TaExponentialMovingAverageIndicator(int days, TaTohlcvWindow window) {
+@Override
+protected double getValueInternal(int idx) {
+
+if (idx == this.window.size() - 1) {
+return this.window.getClose(idx);
+

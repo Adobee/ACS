@@ -1,0 +1,11 @@
+private static final double PI = Math.PI;
+
+public static double sin(double x) {
+while(x > PI)
+x -= 2*PI;
+while(x < -PI)
+x += 2*PI;
+if (x >= -PI/4 &amp;&amp; x <= PI/4)
+return Math.sin(x);
+else if (x > PI/4 &amp;&amp; x < 3*PI/4)
+

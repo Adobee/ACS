@@ -1,0 +1,7 @@
+// Receiver receives messages and puts it in the queue for the processor to drain
+LinkedBlockingQueue<HTTPObject> recMessages; // Queue where received messages are put
+do
+{
+Debug.print(&quot;Starting to receive message&quot;, debugCode );
+HTTPObject htoTmp = HTTPReceiverUtils.receive(is, cs);
+

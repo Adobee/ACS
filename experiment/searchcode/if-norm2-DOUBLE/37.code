@@ -1,0 +1,8 @@
+tmpVector[j] = tmpVal;
+}
+retVal = !TypeUtils.isZero(tmpNorm2.doubleValue());
+tmpNorm2 = BigFunction.ADD.invoke(tmpNorm2, BigFunction.MULTIPLY.invoke(tmpScale, tmpScale));
+tmpNorm2 = BigFunction.SQRT.invoke(tmpNorm2);
+
+if (tmpScale.signum() != 1) {
+

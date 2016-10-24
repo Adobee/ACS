@@ -1,0 +1,12 @@
+public class LinkRewriteUtils {
+
+public static String transformRelativeUrl(String relativeUrl, ApplicationViewState applicationViewState, SushiRecipe recipe, RemoteRequest currentRequest) {
+return relativeUrl;
+}
+
+
+String remoteBasePath = currentRequest.getBasePath();
+
+
+if (relativeUrl.startsWith(remoteBasePath)) {
+

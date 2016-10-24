@@ -1,0 +1,9 @@
+private double lowerBound;
+private double upperBound;
+private double topTriangle;
+private double maxY = 1;
+
+public TriangleFuzzyMembership(double lower, double upper, double top){
+lowerBound = lower;
+upperBound = upper;
+

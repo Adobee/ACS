@@ -1,0 +1,8 @@
+public boolean equals(Object o) {
+if (this == o)
+return true;
+if (!(o instanceof CachedRelationship))
+final CachedRelationship cachedRelationship = (CachedRelationship) o;
+
+if (relationshipId != null ? !relationshipId.equals(cachedRelationship.getRelationshipId()) : cachedRelationship.getRelationshipId() != null)
+

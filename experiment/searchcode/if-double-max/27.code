@@ -1,0 +1,9 @@
+import org.chrisgray.accumulators.core.DoubleAccumulator;
+
+public class DoubleMaxAccumulator extends DoubleAccumulator {
+protected double max = Double.MIN_VALUE;
+public void accumulate(double value) {
+if (set) {
+max = Math.max(max, value);
+} else {
+

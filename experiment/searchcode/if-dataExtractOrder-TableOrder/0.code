@@ -1,0 +1,9 @@
+public void setDataExtractOrder(final TableOrder dataExtractOrder) {
+if (dataExtractOrder == null) {
+throw new IllegalArgumentException(&quot;Null &#39;order&#39; argument&quot;);
+return;
+}
+int n;
+if (this.dataExtractOrder == TableOrder.BY_ROW) {
+n = this.dataset.getRowCount();
+

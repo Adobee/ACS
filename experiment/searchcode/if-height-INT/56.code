@@ -1,0 +1,10 @@
+public class RectangularGrid {
+public long countRectangles(int width, int height) {
+int[] w = new int[width + 1];
+for (int j = 1; j <= height; j++)
+if (i != j)
+count += w[i] * h[j];
+return count;
+}
+}
+

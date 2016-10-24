@@ -1,0 +1,6 @@
+for (int i = 0; i < availableLocales.length; i++) {
+Locale locale = availableLocales[i];
+if (locale.getCountry().length() == 2) {
+String currencyCode = Currency.getInstance(locale)
+.getCurrencyCode();
+

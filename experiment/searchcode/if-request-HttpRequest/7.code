@@ -1,0 +1,10 @@
+public boolean request(T request) {
+HttpRequest httpRequest;
+boolean flag = false;
+try {
+httpRequest = HttpRequest.get(request.getUrl(), true, &quot;data&quot;,
+code = httpRequest.code();
+if (httpRequest.ok()) {
+request.parsePackage(httpRequest.body());
+flag = true;
+

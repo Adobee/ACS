@@ -1,0 +1,9 @@
+public abstract List<String> getColumnNames();
+protected abstract void iterate();
+protected abstract void addIterationRow(List<List<Double>> iterationValues);
+public List<List<Double>> getIterationValues() {
+if (!isSolved) {
+solveAndStoreValues();
+}
+return iterationValues;
+

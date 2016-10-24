@@ -1,0 +1,7 @@
+// number of clusters has to be smaller or equal the number of data points
+if (points.size() < k) {
+throw new NumberIsTooSmallException(points.size(), k, false);
+//System.out.println(count);
+boolean emptyCluster = false;
+List<Cluster<T>> newClusters = new ArrayList<Cluster<T>>();
+

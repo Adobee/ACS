@@ -1,0 +1,10 @@
+log.info(&quot;PathSegment.findById: id=&quot; + id);
+
+if (sessionFactory == null) {
+log.info(&quot;PathSegment.findById: sessionFactory == null&quot;);
+log.info(&quot;PathSegment.findById: query=&quot; + query.getQueryString());
+
+PathSegment result = (PathSegment) query.uniqueResult();
+
+if (result == null) {
+

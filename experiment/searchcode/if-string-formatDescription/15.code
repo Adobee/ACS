@@ -1,0 +1,17 @@
+this.formatDescription = formatDescription;
+}
+
+private String formatCode;
+private String formatDescription;
+
+public static String getBindingFormatCode(String description){
+for(BindingFormatEnum e: BindingFormatEnum.values()) {
+if(e.formatDescription.equalsIgnoreCase(description)) {
+return e.formatCode;
+}
+}
+return null;
+}
+
+}
+

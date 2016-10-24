@@ -1,0 +1,11 @@
+tableau.subtractRow(i, pivotRow, multiplier);
+}
+}
+}
+
+protected void solvePhase1(final org.apache.commons.math.optimization.linear.SimplexTableau tableau) throws org.apache.commons.math.optimization.OptimizationException {
+final org.apache.commons.math.optimization.linear.SimplexTableau tableau = new org.apache.commons.math.optimization.linear.SimplexTableau(function , linearConstraints , goal , nonNegative , epsilon);
+solvePhase1(tableau);
+tableau.dropPhase1Objective();
+while (!(tableau.isOptimal())) {
+

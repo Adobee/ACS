@@ -1,0 +1,9 @@
+public ObjectInput(AbstractObjectInput objectInput, InputStream inputStream, Decompressor<byte[], byte[]> decompressor) throws IOException {
+this.objectInput = objectInput;
+byte[] hasCompress = new byte[1];
+inputStream.read(hasCompress);
+public byte[] readBytes() throws IOException {
+int len = objectInput.readInt(true);
+if (len == -1) {
+return null;
+

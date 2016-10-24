@@ -1,0 +1,13 @@
+final class DoubleStack {
+double[] stack;
+int top;
+
+public DoubleStack(int initialSize) {
+if (initialSize <= 0) throw new IllegalArgumentException(&quot;stack size must not be <= 0&quot;);
+this.stack = new double[initialSize];
+this.top = -1;
+}
+
+public void push(double d) {
+if (++this.top >= this.stack.length)
+

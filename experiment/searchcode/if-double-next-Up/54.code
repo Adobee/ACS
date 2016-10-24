@@ -1,0 +1,17 @@
+public class AnimatorBounce extends Animator {
+
+private boolean wasUp = false;
+
+
+public AnimatorBounce(double start, double end, double period, Easing easing)
+public AnimatorBounce(double period)
+{
+super(period);
+}
+
+
+@Override
+protected void nextCycle(NumAnimated anim)
+{
+if (wasUp) {
+

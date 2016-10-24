@@ -1,0 +1,10 @@
+public class Matrix {
+
+private final int rowDimension, columnDimension;
+private final double[][] matrix;
+/** Computes the rank of the provided matrix.
+* @return rank of the matrix */
+public int rank(){
+Matrix M = this.copy();
+if(M.getColumnDimension() > M.getRowDimension()){
+

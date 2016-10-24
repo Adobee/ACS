@@ -1,0 +1,10 @@
+String hoursAgo, String yesterday, String daysAgo){
+long now = System.currentTimeMillis();
+long time = timeSince.getTime();
+if (time > now || time <= 0) {
+return null;
+}
+
+final long diff = now - time;
+if (diff < NUnits.MIN_IN_MS) {
+

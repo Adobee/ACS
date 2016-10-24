@@ -1,0 +1,10 @@
+public Object cast(Object obj, Class<?> type) {
+if (obj == null) {
+return null;
+}
+if ((obj instanceof boolean[]))
+return (boolean[]) obj;
+if (obj.getClass().isArray()) {
+Object[] os = (Object[]) obj;
+boolean[] arr = new boolean[os.length];
+

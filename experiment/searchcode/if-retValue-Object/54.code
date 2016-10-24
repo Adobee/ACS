@@ -1,0 +1,13 @@
+public int getColumnType(int column) throws SQLException
+{
+if (out_ != null)
+out_.println(getTraceId() + &quot;getColumnType(&quot; + column + &quot;)&quot;);
+int retValue;
+retValue = rsMD_.getColumnTypeName(column);
+return retValue;
+}
+
+public int getPrecision(int column) throws SQLException
+{
+if (out_ != null)
+

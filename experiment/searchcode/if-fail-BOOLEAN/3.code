@@ -1,0 +1,13 @@
+import com.seitenbau.stu.util.Future;
+
+public class AssertableBase extends Assert
+{
+protected void failIfTrue(boolean value)
+fail(&quot;expected false but was &quot; + value);
+}
+}
+
+protected void failIfTrue(Future<String> message, boolean value)
+{
+if (value)
+

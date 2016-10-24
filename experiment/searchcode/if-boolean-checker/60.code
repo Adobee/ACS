@@ -1,0 +1,8 @@
+raster[newX][newY].setChecker(checker);
+checker.setX(newX);
+checker.setY(newY);
+if (checker.getCheckerType() == Checker.CheckerType.BLACK &amp;&amp; newY == 9 &amp;&amp; this.raster.getKillMoves(checker.getX(), checker.getY(), checker.getCheckerType()).isEmpty()) {
+checker.setCheckerType(Checker.CheckerType.BLACK_DAM);
+System.out.println(&quot;Black reached dam!&quot;);
+} else if (checker.getCheckerType() == Checker.CheckerType.RED &amp;&amp; newY == 0 &amp;&amp; this.raster.getKillMoves(checker.getX(), checker.getY(), checker.getCheckerType()).isEmpty()) {
+

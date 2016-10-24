@@ -1,0 +1,8 @@
+// copied from Cayenne DefaultAdhocObjectFactory, except for inner
+// classes and VOID that we will not support (yet?)
+
+if (!className.endsWith(&quot;[]&quot;)) {
+if (&quot;byte&quot;.equals(className)) {
+return Byte.TYPE;
+} else if (&quot;int&quot;.equals(className)) {
+

@@ -1,0 +1,17 @@
+out.writeUTF(&quot;&quot;);
+}
+else {
+out.writeUTF(getType());
+}
+
+Long bt = getBeginTime();
+if (bt != null) {
+out.writeLong(bt);
+}
+else {
+out.writeLong(0);
+}
+
+Long dur = getDuration();
+if (dur != null) {
+

@@ -1,0 +1,11 @@
+* closed with {@link #closeIfOwnedBy}.
+*/
+boolean clearOwner() {
+synchronized (pool) {
+if (owner == null) {
+platform.configureTls(sslSocket, route.address.uriHost, route.tlsVersion);
+
+boolean useNpn = route.supportsNpn();
+if (useNpn) {
+platform.setProtocols(sslSocket, route.address.protocols);
+

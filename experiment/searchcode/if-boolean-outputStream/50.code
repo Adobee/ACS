@@ -1,0 +1,7 @@
+public void handleValue(String field, Object value) throws IOException {
+if (value == null) {
+outputStream.writeByte(ValueTypes.NULL);
+outputStream.writeUTF(field);
+outputStream.writeDouble((Double) value);
+} else if (value instanceof Boolean) {
+

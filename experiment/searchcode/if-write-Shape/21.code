@@ -1,0 +1,6 @@
+void writeShape(Shape shape, JsonGenerator gen) throws IOException {
+if (shape instanceof Point) {
+write((Point) shape, gen);
+} else if (shape instanceof Circle) {
+write((Circle) shape, gen);
+

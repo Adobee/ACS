@@ -1,0 +1,7 @@
+else {
+RegularTimePeriod last = getTimePeriod(getItemCount() - 1);
+if (item.getPeriod().compareTo(last) > 0) {
+TimeSeriesDataItem oldItem = addOrUpdate(item.getPeriod(),
+item.getValue());
+if (oldItem != null) {
+

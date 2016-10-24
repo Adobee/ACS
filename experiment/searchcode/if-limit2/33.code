@@ -1,0 +1,12 @@
+public void tick() {
+x += getdX();
+y += getdY();
+if (x > xLimit2)
+setdX(getdX() * -1);
+else if(x < xLimit1 &amp;&amp; waitDx != 0){
+started = false;
+setdX(0);
+}
+if(waitDy > 0){
+if(y > xLimit2){
+

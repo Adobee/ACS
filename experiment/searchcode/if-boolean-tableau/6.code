@@ -1,0 +1,13 @@
+public class PlateauIterator implements Iterator<Integer>{
+
+private int lg,col;
+private int[][] tableau;
+col=tableau[0].length-1;
+}
+public boolean hasNext() {
+return (lg+col>0);
+}
+
+public Integer next() {
+if (col>0) col--; else {lg--;col=tableau[0].length-1;}
+

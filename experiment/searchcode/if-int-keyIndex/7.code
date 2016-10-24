@@ -1,0 +1,13 @@
+extends RuntimeException {
+
+private static final long serialVersionUID = 1L;
+
+private final int keyIndex;
+private final String keyName;
+this.keyIndex = -1;
+this.keyName = keyName;
+}
+
+public NoSuchKeyException(int keyIndex) {
+super(String.valueOf(keyIndex));
+

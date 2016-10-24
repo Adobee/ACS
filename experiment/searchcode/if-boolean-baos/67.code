@@ -1,0 +1,7 @@
+private void encodeFormParams(RequestTemplate template, Map<String, Object> formParams) throws IOException {
+ByteArrayOutputStream baos = new ByteArrayOutputStream();
+
+boolean isMultiPart = isMultiPart(formParams);
+private void addEncodedFormField(ByteArrayOutputStream baos, String name, String value, boolean isFirstField) throws IOException {
+if (!isFirstField) {
+

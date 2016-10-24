@@ -1,0 +1,13 @@
+import java.util.logging.Logger;;
+
+/**
+*
+* @author Thoni
+*/
+public class TimeBean {
+Connection        db = null;
+int               id;
+double            maxArbeitszeit;
+int               walkTime;
+Statement         sql;
+

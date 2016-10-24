@@ -1,0 +1,9 @@
+imagesExt.add(&quot;.png&quot;);
+imagesExt.add(&quot;.PNG&quot;);
+}
+
+public static boolean isImage(String file_name) {
+int extIndex = file_name.lastIndexOf(&#39;.&#39;);
+if (extIndex != -1) {
+if (imagesExt.contains(file_name.substring(extIndex)))
+

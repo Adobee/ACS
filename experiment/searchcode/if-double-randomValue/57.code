@@ -1,0 +1,7 @@
+public static Double generateRandomDoubleFromInterval(MathUtils.Interval interval) {
+double randomValue = getRandomValueFromInterval(interval);
+return MathUtils.roundToThreeDecimals(randomValue);
+}
+
+private static double getRandomValueFromInterval(MathUtils.Interval interval) {
+

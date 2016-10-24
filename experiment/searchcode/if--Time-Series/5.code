@@ -1,0 +1,10 @@
+import mon4h.framework.dashboard.persist.dao.impl.HBaseTimeSeriesDAO;
+import mon4h.framework.dashboard.persist.id.LocalCache;
+
+
+public class TimeSeriesDAOFactory {
+public TimeSeriesDAO getTimeSeriesDAO(){
+if(hbaseTimeSeriesDAO == null){
+hbaseTimeSeriesDAO = new HBaseTimeSeriesDAO();
+if(cachedIDDao == null){
+

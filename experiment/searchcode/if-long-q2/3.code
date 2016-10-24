@@ -1,0 +1,8 @@
+public class Solution {
+public int nthUglyNumber(int n) {
+Queue<Long> q2 = new LinkedList<Long>();
+Queue<Long> q5 = new LinkedList<Long>();
+q2.add(2L); q3.add(3L); q5.add(5L);
+Long ret = 1L;
+while(n > 1){
+

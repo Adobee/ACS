@@ -1,0 +1,6 @@
+protected void calculateNextPosition() {
+Coords direction = currentPosition.determineDirection(previousPosition);
+int rollFactor = pieceState.ordinal();
+direction = direction.transpose();
+if (rollFactor % 2 == 1 ){
+

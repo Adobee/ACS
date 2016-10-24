@@ -1,0 +1,9 @@
+arr[i] = in.nextInt();
+sum+=arr[i];
+}
+System.out.println(&quot;Sum: &quot; + sum);
+double avarage = (double)sum/7;
+System.out.println(&quot;Avarage: &quot; + avarage);
+
+double minDiff = Math.abs(arr[0] - avarage);
+

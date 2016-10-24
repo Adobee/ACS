@@ -1,0 +1,11 @@
+import java.util.List;
+
+public class P119PascalsTriangleII {
+
+// too slow
+public static List<Integer> getRow(int rowIndex) {
+List<Integer> l = Arrays.asList(1, 1);
+if (rowIndex == 1)
+return l;
+List<Integer> r = new ArrayList<Integer>(rowIndex + 1);
+

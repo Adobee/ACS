@@ -1,0 +1,9 @@
+String entityName = str.substring(i + 1, semi);
+int entityValue;
+if (entityName.length() == 0) {
+return buf.toString();
+}
+
+public static int entityValue(String name) {
+if (sMap.containsKey(name)) return sMap.get(name);
+

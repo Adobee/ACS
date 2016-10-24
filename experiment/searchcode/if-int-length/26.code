@@ -1,0 +1,8 @@
+public class Solution {
+public int maximalRectangle(char[][] matrix) {
+if (matrix.length == 0 || matrix[0].length == 0)
+for (int j = 0; j < cnt[0].length; j++) {
+if (cnt[i][j] > pre) {
+int length = cnt[i][j];
+for (int k = j; length > 0 &amp;&amp; k < cnt[0].length; k++) {
+

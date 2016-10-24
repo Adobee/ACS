@@ -1,0 +1,6 @@
+protected Pair<Double, Double> calcArithmeticPrediction(double mean1, double dev1, double mean2, double dev2)
+{
+// I don&#39;t know if this math is right at all.  Check it some day!!!
+double meanInv = 1.0 / mean2;
+double devInv = Math.abs(dev2 / (mean2 * (mean2 - dev2)));
+

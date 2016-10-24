@@ -1,0 +1,11 @@
+int argumentSize = argument.length;
+for(int i = 0 ; i < argumentSize ; )
+{
+
+if(argument[i].equalsIgnoreCase(&quot;-d&quot;))
+int argumentSize = argument.length;
+for(int i = 0 ; i < argumentSize ; )
+{
+
+if(argument[i].equalsIgnoreCase(&quot;-help&quot;) || argument[i].equalsIgnoreCase(&quot;-c&quot;) || argument[i].equalsIgnoreCase(&quot;-d&quot;))
+

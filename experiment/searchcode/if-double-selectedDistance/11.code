@@ -1,0 +1,9 @@
+mCurrentGeofences = new ArrayList<Geofence>();
+
+
+Bundle extras = this.getIntent().getExtras();
+ArrayList<Double> artLatitude = (ArrayList<Double>) getIntent().getSerializableExtra(&quot;artLatitude&quot;);
+int noOfArticles = extras.getInt(&quot;noOfArticles&quot;);
+int selectedDistance = extras.getInt(&quot;distanceSelected&quot;);
+double currentLatitude = extras.getDouble(&quot;currentLatitude&quot;);
+

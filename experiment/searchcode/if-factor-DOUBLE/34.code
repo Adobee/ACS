@@ -1,0 +1,11 @@
+int num = x.length;
+// 根据最小二乘法计算权值的方程组，对称数组
+if (factor == null) {
+factor = new double[num + 1][num + 2];
+* 计算权值-解方程组 --reduce
+*
+* @return w 权值向量，最后一个元素为常数项
+*/
+public double[] solveEquationSystem() {
+if (factor == null || factor.length < 1) {
+

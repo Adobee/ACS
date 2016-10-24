@@ -1,0 +1,9 @@
+public Days(String[] s){
+for( int i = 0; i < s.length; i++){
+days.add(new Day(s[i]));
+if (days.size() != that.getDays().size()){
+return false;
+}
+for (int i = 0; i < days.size(); i++ ){
+if (days.get(i) != that.getDays().get(i)){
+

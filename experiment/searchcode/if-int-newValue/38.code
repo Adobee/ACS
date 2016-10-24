@@ -1,0 +1,11 @@
+private MediaMonkeyPlayerRating()
+{
+}
+
+public int convertRatingFromFiveStarScale(int value)
+{
+if(value < 0 || value > 5)
+throw new IllegalArgumentException(&quot;convert Ratings from Five Star Scale accepts values from 0 to 5 not:&quot;+value);
+}
+int newValue=0;
+

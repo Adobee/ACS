@@ -1,0 +1,12 @@
+protected double[]                 osMcLogsumAlt;
+protected double[]                 sdMcLogsumAlt;
+
+protected double[]                 tourOrigToStopDistanceAlt;
+this.sampleNumber = sampleNumber;
+}
+
+/**
+* @return the osMcLogsumAlt
+*/
+public double getOsMcLogsumAlt(int alt)
+

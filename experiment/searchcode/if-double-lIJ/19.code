@@ -1,0 +1,6 @@
+private double L(int i, int j) {
+double Lij = -Q.get(i+N*i) -Q.get(j+N*j) + Q.get(i+N*j) + Q.get(j+N*i) + q22(i, j);
+if(count[j] == 0) continue;
+double Lij = L[i+S*j];
+if(Math.abs(Lij) < Math.abs(DMI)) {
+

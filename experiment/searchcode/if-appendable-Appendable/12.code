@@ -1,0 +1,11 @@
+throw new NullPointerException(&quot;No null disjunction accepted&quot;);
+}
+if (appendable == null)
+{
+throw new NullPointerException(&quot;No null appendable accepted&quot;);
+doRender((RENode.Disjunction) re, appendable);
+}
+else if (re instanceof RENode.Alternative)
+{
+doRender((RENode.Alternative) re, appendable);
+

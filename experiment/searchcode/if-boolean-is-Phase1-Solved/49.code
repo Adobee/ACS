@@ -1,0 +1,9 @@
+* 		defines the minimum computing time of the method in milliseconds. So, if a solution is found within given time, the
+* 		computing will continue to find shorter solution(s). Btw, if timeMin > timeOut, timeMin will be set to timeOut.
+// axis, and not just one of the faces. See the axis
+// filtering in phase1() for more details.
+firstAxisRestriction += 9;
+}
+}
+if(lastAxisRestrictionStr != null) {
+

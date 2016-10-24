@@ -1,0 +1,11 @@
+public XContentBuilder toXContent(XContentBuilder builder, Params params, boolean includeFieldName) throws IOException {
+if (includeFieldName) {
+builder.field(X_FIELD_NAME, fuzziness);
+return fuzziness.toString();
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj) {
+return true;
+

@@ -1,0 +1,9 @@
+public class MyMultipartResolver extends CommonsMultipartResolver {
+
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+/**
+* 解决kindeditor图片上传失败问题
+*/
+if(request.getRequestURI().contains(&quot;/fileController/upload&quot;)) {
+

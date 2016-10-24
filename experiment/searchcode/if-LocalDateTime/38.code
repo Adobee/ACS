@@ -1,0 +1,12 @@
+package spk.persistencia.jpa.validador.impl;
+
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+public boolean isValid(LocalDateTime localDateTime, ConstraintValidatorContext contexto) {
+if(localDateTime==null)
+return true;
+return localDateTime.isAfter(LocalDateTime.now(ZoneId.systemDefault()));
+}
+
+}
+

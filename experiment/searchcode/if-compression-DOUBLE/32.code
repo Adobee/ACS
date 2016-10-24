@@ -1,0 +1,8 @@
+private static final double NO_COMPRESSION_QUOTA = 36.1277215253224;
+private static final double SUPER_FAST_QUOTA = 1.39205062775208;
+* @return {@link Compression} if you should compress at all, very fast, fast, medium, slow, super slow or ultra slow
+*/
+private static Compression compressionType(double bandwidth) {
+
+if (NO_COMPRESSION_QUOTA < bandwidth ) {
+

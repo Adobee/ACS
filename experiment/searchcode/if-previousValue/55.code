@@ -1,0 +1,10 @@
+return check(root, Integer.MIN_VALUE);
+}
+
+private boolean check(Node root, int previousValue) {
+if (root == null) {
+return true;
+}
+
+return check(root.left, previousValue) &amp;&amp; (root.value > previousValue)
+

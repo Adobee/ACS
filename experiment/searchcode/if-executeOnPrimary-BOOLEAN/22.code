@@ -1,0 +1,12 @@
+public Object attempt(Connection cnx) throws Exception {
+if(attempts == 0) {
+attempts++;
+throw new SocketTimeoutException();
+return cnx.getServer();
+}
+
+}
+@Override
+public boolean useThreadLocalConnection() {
+return true;
+

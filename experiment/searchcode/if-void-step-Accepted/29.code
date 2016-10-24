@@ -1,0 +1,12 @@
+public AvoidDangerUtility(AI ai, double acceptedDanger) {
+this.acceptedDanger = acceptedDanger;
+this.ai = ai;
+}
+
+@Override
+public void updatePlan(Plan plan, Human agent) {
+Collection<MemoryOfZombie> zombies = agent.getMemories().getAll(MemoryOfZombie.class).values();
+for (Step step : plan.getSteps()) {
+if (step instanceof Move) {
+Move m = (Move) step;
+

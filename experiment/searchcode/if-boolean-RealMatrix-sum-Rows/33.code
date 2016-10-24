@@ -1,0 +1,7 @@
+public EnergyLoadWeatherSolver(IndependentDataModel<WeatherModel> independentDataModel, DependentDataModel dependentDataModel, boolean debug) {
+if (independentDataModel.size() != dependentDataModel.size())
+throw new IllegalArgumentException(&quot;Data models should have same rows count&quot;);
+RealMatrix xy = X.multiply(theta).scalarAdd(v);
+RealMatrix dy = xy.add(y.scalarMultiply(-1).scalarAdd(v));
+if (isDebudEnabled) {
+

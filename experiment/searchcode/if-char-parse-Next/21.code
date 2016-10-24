@@ -1,0 +1,12 @@
+public static LogicParser getInstance() {
+return ourInstance;
+}
+
+private char getChar() {
+if (next < 0 || next >= s.length()) {
+public LogicExpression parse(String str) throws ParseException {
+s = str;
+next = 0;
+LogicExpression expression = parseFormula();
+if (next < s.length()) {
+

@@ -1,0 +1,11 @@
+private static final long serialVersionUID = 86241875189L;
+private Object value;
+
+public MutableObject() {}
+
+public MutableObject(Object paramObject)
+if ((paramObject instanceof MutableObject))
+{
+paramObject = ((MutableObject)paramObject).value;
+if (this.value != paramObject)
+

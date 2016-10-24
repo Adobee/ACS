@@ -1,0 +1,8 @@
+* @param raw type
+* @param useOwner owner type to use, if any
+* @param typeArguments formal type arguments
+Validate.notNull(raw, &quot;raw class is null&quot;);
+final Type useOwner;
+if (raw.getEnclosingClass() == null) {
+Validate.isTrue(owner == null, &quot;no owner allowed for top-level %s&quot;, raw);
+

@@ -1,0 +1,7 @@
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.chart.servlet.ServletUtilities;
+import org.jfree.data.general.DefaultPieDataset;
+jvm.setFreeMem(runtime.freeMemory() / mb);
+/* If no limit then runtime.maxMemory() return Long.MAX_VALUE */
+jvm.setMaxMem(runtime.maxMemory() / mb);
+

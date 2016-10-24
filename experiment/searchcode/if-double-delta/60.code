@@ -1,0 +1,10 @@
+private double deltaA;
+private double deltaB;
+
+private double oneEvent;
+private double twoEvent;
+BusinesLogic(double a, double b, double deltaA, double deltaB){
+this.a = a;
+this.b = b;
+if (deltaA < 0 || deltaB < 0) throw new ArithmeticException(&quot;погрешность имеет отрицательное значение!!11одинодин&quot;);
+

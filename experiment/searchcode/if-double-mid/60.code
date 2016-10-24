@@ -1,0 +1,11 @@
+static double binarySqrt(double sqr, double eps){
+double mid;
+double low;
+double high;
+
+eps = Math.pow(10,-6);
+static double help(double sqr, double eps, double low, double high){
+double mid;
+mid = high/2;
+if ((high-low)>eps){
+

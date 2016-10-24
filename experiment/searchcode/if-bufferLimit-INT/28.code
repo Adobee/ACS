@@ -1,0 +1,8 @@
+private char[] buffer = new char[1024];
+private int bufferCursor = 0;
+private int bufferLimit = 0;
+private final static int Push_Back_Buffer_Size = 2;
+private int normalizeChar(int c, byte cType) {
+if (cType == CharacterType.ENGLISH_LETTER) {
+return Character.toLowerCase(c);
+

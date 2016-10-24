@@ -1,0 +1,10 @@
+private static double getOdds(EstimateResult estimateResult, boolean isPowerful) {
+if (estimateResult.isHomePowerful()) {
+if (isPowerful) {
+return estimateResult.getHomeTeamEarningsOdds();
+return estimateResult.getVisitingTeamEarningsOdds();
+}
+} else {
+if (isPowerful) {
+return estimateResult.getVisitingTeamEarningsOdds();
+

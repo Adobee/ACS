@@ -1,0 +1,10 @@
+if (s1 == null || s2 == null)
+return false;
+int n = s1.length();
+if (s2.length() != n)
+return false;
+for (int l1 = 1; l1 < l; ++l1)
+{
+int l2 = l - l1;
+if (check[l1][i][j] &amp;&amp; check[l2][i + l1][j + l1] || check[l1][i][j + l2] &amp;&amp; check[l2][i + l1][j])
+

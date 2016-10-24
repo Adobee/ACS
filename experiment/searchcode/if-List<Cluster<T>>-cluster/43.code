@@ -1,0 +1,6 @@
+List<ClusterEntity> listClusters = listAllClusters();
+for(ClusterEntity cluster : listClusters) {
+if(cluster.getClusterInternalId().equals(clusterInternalId)) {
+List<ClusterEntity> listCluster = _clusterService.getListByCondition(condition);
+if(listCluster == null||listCluster.size() == 0) {
+

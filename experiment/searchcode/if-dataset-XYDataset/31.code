@@ -1,0 +1,6 @@
+protected Object[] createItemArray(final XYDataset xyDataset, final int n, final int n2) {
+final Object[] array = new Object[8];
+final Number x = xyDataset.getX(n, n2);
+if (this.getXDateFormat() != null) {
+array[1] = this.getXDateFormat().format(new Date(x.longValue()));
+

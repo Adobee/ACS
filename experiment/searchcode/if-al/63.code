@@ -1,0 +1,11 @@
+public static XMLEngine getInstance()
+{
+if(engine == null)
+engine = new XMLEngine();
+try
+{
+if(writer != null)
+writer.close();
+}
+catch(IOException ignored) { }
+

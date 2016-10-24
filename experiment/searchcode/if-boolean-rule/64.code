@@ -1,0 +1,12 @@
+public boolean executeNextRule() {
+return listIterator.next().runRule();
+}
+
+public boolean hasNext() {
+listIterator = list.listIterator();
+}
+
+public Boolean rulesFullfilled() {
+for (Rule rule: list) {
+if (!rule.isFullFilled()) {
+

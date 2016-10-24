@@ -1,0 +1,11 @@
+* Process the nodes of the search graph
+*
+* @return The path found or null if no path could be found
+*/
+private Path processNodes() {
+Step step = findBest();
+* @return True if the node is valid to evaluate
+*/
+private boolean validNode(int x,int y) {
+if (blocked[x][y]) {
+

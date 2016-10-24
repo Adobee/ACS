@@ -1,0 +1,10 @@
+private final Context context;
+private final boolean useHttps;
+private final MockWebServer server;
+private final Map<ServerRequest, Queue<ServerResponse>> responses;
+this(new Context(), new MockWebServer(), new HashMap<ServerRequest, Queue<ServerResponse>>(), false);
+}
+
+public DefaultMockServer(boolean useHttps) {
+this(new Context(), new MockWebServer(), new HashMap<ServerRequest, Queue<ServerResponse>>(), useHttps);
+

@@ -1,0 +1,9 @@
+logger.debug(&quot;contentSize : &quot;+contentSize);
+logger.debug(&quot;file : &quot;+file);
+
+if(contentName == null){
+response.setHeader(&quot;Content-Disposition&quot;, &quot;attachment; filename=\&quot;&quot; + filename + &quot;\&quot;;&quot;);
+response.setHeader(&quot;Content-Transfer-Encoding&quot;, &quot;binary&quot;);
+if(contentSize > 0){
+response.setHeader(&quot;Content-Length&quot;, &quot;&quot;+contentSize);
+

@@ -1,0 +1,9 @@
+public class HttpsGetter {
+public class HttpsGetResult {
+public boolean success = false;
+// lock this requester while getting.
+private boolean lock = false;
+private HttpsGetListener listener = null;
+
+public void Get(String url, final HttpsGetListener listener)
+

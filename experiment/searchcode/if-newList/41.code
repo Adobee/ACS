@@ -1,0 +1,11 @@
+public class QueryArrayList<T> extends java.util.ArrayList<T> {
+
+QueryArrayList<T> where(Predicate<T> pre) {
+QueryArrayList<T> newList = new QueryArrayList<T>();
+for (T obj : this) {
+if (pre.call(obj)) {
+newList.add(obj);
+}
+}
+return newList;
+

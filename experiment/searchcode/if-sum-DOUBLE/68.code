@@ -1,0 +1,11 @@
+double prime = 0;
+
+double sumK = 0;
+double sumJ = 0;
+double sumI = 0;
+
+double sumKMN1 = 0;
+double sumKMN2 = 0;
+
+for (double  k = 2; k < Math.floor( (2 * n * Math.log(n)) + 2 ) + 1; k++) {
+

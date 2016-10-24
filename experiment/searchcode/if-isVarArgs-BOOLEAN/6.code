@@ -1,0 +1,11 @@
+public BindingTypePattern(UnresolvedType type, int index,boolean isVarArgs) {
+super(type, false,isVarArgs);
+this.formalIndex = index;
+}
+
+public BindingTypePattern(FormalBinding binding, boolean isVarArgs) {
+UnresolvedType  type = UnresolvedType.read(s);
+int            index = s.readShort();
+boolean   isVarargs = false;
+if (s.getMajorVersion()>=AjAttribute.WeaverVersionInfo.WEAVER_VERSION_MAJOR_AJ150) {
+

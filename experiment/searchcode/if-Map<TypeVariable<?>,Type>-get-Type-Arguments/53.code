@@ -1,0 +1,7 @@
+if (genericType instanceof TypeVariable) {
+TypeVariable tv = (TypeVariable) genericType;
+resolvedType = typeVariableMap.get(tv);
+if (resolvedType == null) {
+private static void populateTypeMapFromParameterizedType(ParameterizedType type, Map<TypeVariable, Type> typeVariableMap) {
+if (type.getRawType() instanceof Class) {
+

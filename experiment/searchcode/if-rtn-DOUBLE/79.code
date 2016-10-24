@@ -1,0 +1,8 @@
+//loop to generate track hash string
+StringBuffer rtn = new StringBuffer();
+List<TGMeasure> measures = TuxGuitarUtil.getMeasures(t);
+for(TGMeasure measure : measures) {
+rtn.append(duration.getValue());
+rtn.append(duration.isDotted());
+rtn.append(duration.isDoubleDotted());
+

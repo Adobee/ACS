@@ -1,0 +1,8 @@
+public static void authentification() {
+IUser user = secure.getUser();
+if (user != null) {
+session.put(ISecure.SESSION_EMAIL_KEY, user.getEmail());
+for (String profile : role.value()) {
+boolean hasProfile = check(profile);
+if (!hasProfile) {
+

@@ -1,0 +1,15 @@
+public PlainShardIterator(ShardId shardId, List<ShardRouting> shards, int index) {
+super(shards, index);
+this.shardId = shardId;
+}
+
+@Override public ShardIterator reset() {
+ShardIterator that = (ShardIterator) o;
+return shardId.equals(that.shardId());
+}
+
+@Override public int hashCode() {
+return shardId.hashCode();
+}
+}
+

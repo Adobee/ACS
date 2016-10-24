@@ -1,0 +1,13 @@
+for (int j = 0; j < dimension; j++) {
+if (isMasked(i, j)) {
+bits.flip(j, i);
+}
+}
+}
+}
+
+abstract boolean isMasked(int i, int j);
+private static class DataMask000 extends DataMask {
+boolean isMasked(int i, int j) {
+return ((i + j) &amp; 0x01) == 0;
+

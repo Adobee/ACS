@@ -1,0 +1,14 @@
+public int getPageSize() {
+return pageSize;
+}
+
+public void setPageSize(int pageSize) {
+if (pageSize <= 1) {
+startRow = (pageNo - 1) * pageSize;
+this.pageNo = pageNo;
+}
+
+
+public int getMaxPage() {
+if (totalCount <= 1) {
+

@@ -1,0 +1,6 @@
+int convergenceSteps = 50;
+for (double c = reMin, xR = 0; xR < CANVAS_WIDTH; c = c + precision, xR++) {
+for (double ci = imMin, yR = 0; yR < CANVAS_HEIGHT; ci = ci + precision, yR++) {
+double convergenceValue = checkConvergence(ci, c, convergenceSteps);
+double t1 = (double) convergenceValue / convergenceSteps;
+

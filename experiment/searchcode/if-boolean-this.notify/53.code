@@ -1,0 +1,11 @@
+public class Service implements Runnable {
+
+private String name;
+private CountDownLatch latch;
+private boolean wait;
+private MyWaitNotify myWaitNotify ;
+public Service(String name, CountDownLatch latch, MyWaitNotify myWaitNotify, boolean wait) {
+this.name = name;
+this.latch = latch;
+this.wait = wait;
+

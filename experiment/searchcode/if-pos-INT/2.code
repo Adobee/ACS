@@ -1,0 +1,9 @@
+int pos = A.length-1;
+int posA = m-1;
+int posB = n-1;
+while(posA>=0&amp;&amp;posB>=0){
+if(B[posB]>=A[posA]){
+A[pos] = B[posB];
+posB--;
+}else{
+

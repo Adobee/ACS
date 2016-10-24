@@ -1,0 +1,6 @@
+public MyExponentialDecayFunction(double initValue, double valueAtNumCall, long numCall) {
+if(initValue <= 0.0D) {
+} else if(valueAtNumCall >= initValue) {
+throw new NumberIsTooLargeException(valueAtNumCall, initValue, false);
+} else if(numCall <= 0L) {
+

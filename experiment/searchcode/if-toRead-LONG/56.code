@@ -1,0 +1,9 @@
+buf.get(b, off, toRead);
+if (toRead == len || this._pos + 1 >= this._lst.size()) {
+return toRead + this.read(b, off + toRead, len - toRead);
+}
+
+public long skip(long n) {
+long skipped = 0L;
+while (n >= 0L &amp;&amp; this._pos < this._lst.size()) {
+

@@ -1,0 +1,7 @@
+throws SchedulerException {
+try {
+if (schedulerConfig.getScheduler() != null) {
+if (schedulerConfig.getScheduler().isInStandbyMode()) {
+return &quot;Standby&quot;;
+} else if (schedulerConfig.getScheduler().isShutdown()) {
+

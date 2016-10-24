@@ -1,0 +1,8 @@
+public double diagonalLength () {
+return _minExtent.distance(_maxExtent);
+}
+
+@Override // from IBox
+public double longestEdge () {
+return Math.max(Math.max(_maxExtent.x - _minExtent.x, _maxExtent.y - _minExtent.y),
+

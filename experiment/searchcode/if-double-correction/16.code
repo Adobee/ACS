@@ -1,0 +1,6 @@
+public class BestClassificationCorrectionRule implements IClassificationCorrectionRuleSelectionResult {
+
+private IClassificationCorrectionRule _rule;
+private double _applicability;
+public BestClassificationCorrectionRule(IClassificationCorrectionRule rule, double applicability){
+

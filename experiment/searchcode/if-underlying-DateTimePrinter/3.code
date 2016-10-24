@@ -1,0 +1,10 @@
+private InternalPrinterDateTimePrinter(InternalPrinter underlying) {
+this.underlying = underlying;
+}
+
+static DateTimePrinter of(InternalPrinter underlying) {
+if (underlying instanceof DateTimePrinter) {
+return (DateTimePrinter) underlying;
+}
+if (underlying == null) {
+

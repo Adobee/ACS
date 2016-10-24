@@ -1,0 +1,8 @@
+case PROCESS_BLOCK_REQ:
+bp = (BlockPair)tuple.getValue(1);
+workingBlock = getWorkingBlock(bp);
+float[][] userBlock = (float[][])tuple.getValue(2);
+workingBlock = getWorkingBlock(bp);
+
+if (workingBlock.waitingForBlocks) {
+

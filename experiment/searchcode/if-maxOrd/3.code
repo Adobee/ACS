@@ -1,0 +1,7 @@
+// ordinals with value 0 indicates no value
+private final PackedInts.Reader reader;
+private final long maxOrd;
+public SinglePackedOrdinals(OrdinalsBuilder builder, float acceptableOverheadRatio) {
+assert builder.getNumMultiValuesDocs() == 0;
+this.maxOrd = builder.getMaxOrd();
+

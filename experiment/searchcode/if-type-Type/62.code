@@ -1,0 +1,10 @@
+public JavaType modifyType(final JavaType type, final Type jdkType, final TypeBindings context,
+final TypeFactory typeFactory)
+{
+if (Multimap.class.isAssignableFrom(type.getRawClass()))
+JavaType contentType = type.containedType(1);
+
+if (keyType == null)
+{
+keyType = typeFactory.constructType(String.class);
+

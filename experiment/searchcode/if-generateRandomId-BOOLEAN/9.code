@@ -1,0 +1,14 @@
+public class Message {
+
+// bytes 1 -4
+private long id = generateRandomId();
+
+// byte 5
+private boolean encrypted = false;
+encrypted = ByteUtils.toBoolean(encBytes);
+timestamp = ByteUtils.toLong(timestampBytes);
+message = messageBytes;
+}
+
+public Message(long id, boolean encrypted, long timestamp, byte[] message) {
+

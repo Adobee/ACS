@@ -1,0 +1,8 @@
+throw new QueryShardException(context, &quot;Percolator fields are not searchable directly, use a percolate query instead&quot;);
+}
+}
+
+private final boolean mapUnmappedFieldAsString;
+private final QueryShardContext queryShardContext;
+this.mapUnmappedFieldAsString = PercolatorQueryCache.INDEX_MAP_UNMAPPED_FIELDS_AS_STRING_SETTING.get(indexSettings);
+

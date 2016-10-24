@@ -1,0 +1,10 @@
+Value toUpdate = tempMapping.get(mapEntry.getKey());
+Id id = toResolve.get(toUpdate);
+if (id != null){
+mapEntry.setValue((Node_Literal)Node.createUncachedLiteral(id, null));
+checkNode(toResolve, subject);
+checkNode(toResolve, predicate);
+checkNode(toResolve, object);
+
+if (!toResolve.isEmpty()){
+

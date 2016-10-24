@@ -1,0 +1,6 @@
+public static void findByRating(String rating, Callback callback){
+OkHttpClient client = new OkHttpClient.Builder().build();
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.DISCOVER_BASE_URL).newBuilder();
+urlBuilder.addQueryParameter(&quot;certification_country&quot;, &quot;US&quot;);
+

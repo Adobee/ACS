@@ -1,0 +1,7 @@
+//for treaty setup, initialize
+if (CollectionUtils.isEmpty(estimateQuarterList))
+return;
+for (EstimateQuarter estimateQuarter : estimateQuarterList) {
+if (estimateQuarter.isClosedQuarter()) {
+diff = diff.add(calcQuarterDiff(estimateQuarter, entryCode));
+

@@ -1,0 +1,11 @@
+import com.google.code.routing4db.strategy.RoutingStrategy;
+
+public class RoutingMapperFactoryBean<T> extends MapperFactoryBean<T> {
+super.checkDaoConfig();
+if(routingStrategy == null){
+throw new IllegalArgumentException(&quot;routingStrategy must not be null&quot;);
+}
+}
+
+}
+

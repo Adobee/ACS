@@ -1,0 +1,12 @@
+public static boolean isDateOdd(String date)
+{
+Date dt = new Date(date);
+Date newYear = new Date(dt.getYear());
+long msDay = 24 * 60 * 60 * 1000;
+long deltaTime = dt.getTime() - newYear.getTime();
+
+if ((int) (deltaTime / msDay) % 2 != 0) return true;
+else return false;
+}
+}
+

@@ -1,0 +1,9 @@
+private boolean findLeftColumn(BinaryImage binaryImg){
+boolean marginContinue = true;
+int marginSize = 0;
+while(marginContinue){
+if(analyzeColumn(binaryImg,marginSize)){
+marginSize++;
+} else {
+marginContinue = false;
+

@@ -1,0 +1,14 @@
+MATCH_NONE(5),
+MATCH_SCALAR(6)
+;
+
+private final byte key;
+private final boolean isExact;
+
+private MatchOp(int key, boolean isExact) {
+this.key = (byte)key;
+this.isExact = isExact;
+}
+
+private MatchOp(int key) {
+

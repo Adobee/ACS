@@ -1,0 +1,8 @@
+protected boolean test(final double[] values, final double[] weights, final int begin, final int length, final boolean allowEmpty){
+
+if (weights == null) {
+throw new DimensionMismatchException(weights.length, values.length);
+}
+
+boolean containsPositiveWeight = false;
+

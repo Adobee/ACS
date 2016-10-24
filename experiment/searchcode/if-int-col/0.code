@@ -1,0 +1,13 @@
+for(int j = 0; j < c; j++){
+height[j]=0;
+}
+
+}
+public boolean makeMove(Move m){
+int col = m.column;
+if(col > cols || col < 0) return false;
+int h = height[col];
+if(h == rows) return false;
+height[col]=h+1;
+board[h][col]=m.player;
+

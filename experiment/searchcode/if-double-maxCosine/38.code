@@ -1,0 +1,11 @@
+MatOfPoint polygonInt = GeomUtils.toMatOfPointInt(polygon);
+
+if (polygon.rows() != 4) {
+return false;
+}
+
+double area = Math.abs(Imgproc.contourArea(polygon));
+// Check if the all angles are more than 72.54 degrees (cos 0.3).
+double maxCosine = 0;
+Point[] approxPoints = polygon.toArray();
+

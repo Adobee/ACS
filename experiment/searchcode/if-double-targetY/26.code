@@ -1,0 +1,17 @@
+public static final double FOVx = 47.0;
+
+final double targetx = 150.1;
+final double targety = 0.0;
+
+private final double TOLERANCEx = 0.0;
+onTargety = true;
+}
+}
+
+if (onTargetx &amp;&amp; onTargety) {
+imageOnTarget = true;
+}
+}
+
+public double[] getCenterX() {
+

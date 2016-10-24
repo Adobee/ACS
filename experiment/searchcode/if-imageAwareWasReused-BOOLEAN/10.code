@@ -1,0 +1,10 @@
+handler.post(displayBitmapTask);
+}
+}
+
+/** @return true - if task should be interrupted; false - otherwise */
+private boolean waitIfPaused() {
+AtomicBoolean pause = engine.getPause();
+synchronized (pause) {
+if (pause.get()) {
+

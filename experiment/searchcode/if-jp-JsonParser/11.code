@@ -1,0 +1,7 @@
+package com.jrjackson;
+
+import com.fasterxml.jackson.core.JsonParser;
+import java.io.IOException;
+public RubyObject convert(Ruby ruby, JsonParser jp) throws IOException {
+if (jp.getNumberType() == JsonParser.NumberType.BIG_INTEGER) {
+

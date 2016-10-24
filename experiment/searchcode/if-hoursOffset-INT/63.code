@@ -1,0 +1,8 @@
+* Get the timezone list for a specific offset from UTC(in hours)
+* @param hoursOffset
+* @return
+*/
+public static String[] getTimezoneList(int hoursOffset)
+String[] s1 = TimeZone.getAvailableIDs(hoursOffset * 3600000);
+for (int i = 0; i != s1.length; i++)
+

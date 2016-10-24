@@ -1,0 +1,8 @@
+* gets the real tile objects from real region
+*/
+@Override
+public WorldObject[] getObjects(int plane, int localX, int localY) {
+int realRegionOffsetX = (realRegionX - ((realRegionX/8) * 8));
+int realRegionOffsetY = (realRegionY - ((realRegionY/8) * 8));
+int realLocalX = (realRegionOffsetX * 8) + (localX - (regionOffsetX*8));
+

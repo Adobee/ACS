@@ -1,0 +1,8 @@
+import org.jfree.chart.labels.StandardPieSectionLabelGenerator;
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.data.general.DefaultPieDataset;
+RenderingHints.VALUE_TEXT_ANTIALIAS_OFF);
+//得到饼图的Plot对象
+PiePlot piePlot = (PiePlot) pieChart.getPlot();
+setSection(piePlot);//设置扇区颜色，可省略
+

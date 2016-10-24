@@ -1,0 +1,10 @@
+* @param a TEObject
+* @param b TEObject
+* @return boolean
+*/
+public static boolean isEqual(TEObject a, TEObject b) {
+if (a == null || b == null)
+return false;
+if (a.getClass() == b.getClass())
+return a.isEqual(b);
+

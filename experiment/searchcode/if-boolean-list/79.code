@@ -1,0 +1,12 @@
+* 不能使用 public synchronized boolean putIfAbsent。
+* 原因：list使用了加锁机制，但是不是ListHelper上的锁。 ListHelper带来了同步假象， public synchronized
+synchronized (list) {
+boolean flag = !list.contains(x);
+if (flag) {
+list.add(x);
+}
+return flag;
+}
+}
+}
+

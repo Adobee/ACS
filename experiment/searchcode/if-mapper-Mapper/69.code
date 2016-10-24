@@ -1,0 +1,12 @@
+import java.util.Collection;
+
+public abstract class AbstractMapper implements Mapper {
+protected Bean bean;
+this.bean = bean;
+this.mapper = mapper;
+}
+
+
+protected <O, T> void mapOne(O o, Collection<T> list) {
+if (mapper != null) {
+

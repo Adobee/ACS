@@ -1,0 +1,6 @@
+public class DefaultFunctionalCollection implements FunctionalCollection {
+public <T> List<T> filter(Iterable<T> iterable, Filter<T> filter) {
+List<T> result = new ArrayList<T>();
+for (T t : iterable) {
+if (filter.accept(t)) result.add(t);
+

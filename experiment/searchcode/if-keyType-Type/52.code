@@ -1,0 +1,8 @@
+class MapPropertyHandler extends PropertyHandlerBase {
+
+protected final Class<?> keyType;
+protected final Class<?> valType;
+protected Object keyFrom(Object index) {
+if (keyType.isAssignableFrom(index.getClass())) {
+return index;
+

@@ -1,0 +1,10 @@
+package de.momar.minecraft.m4m.player.uri;
+
+public class HttpURI {
+private String uri;
+public HttpURI(String uri) {
+if (!HttpURI.matches(uri)) this.uri = null;
+else this.uri = uri;
+}
+public static boolean matches(String uri) {
+

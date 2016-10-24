@@ -1,0 +1,10 @@
+import lmFit.NormalDiffWithOffset;
+
+public class Fitter
+{
+public static double[] normalFitIJ(double[] x, double[] y, boolean withOffset)
+{
+CurveFitter cv = new CurveFitter(x, y);
+double[] params;
+if(withOffset)cv.doFit(CurveFitter.STRAIGHT_LINE);
+

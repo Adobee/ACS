@@ -1,0 +1,15 @@
+import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+
+public class DoublePower {
+public double pow1(double d, int p) {
+boolean neg = false;
+if (p < 0) {
+p *= -1;
+neg = true;
+}
+if (p == 0) {
+return 1;
+}
+double res = d;
+res = d * powHelper1(d, p - 1);
+

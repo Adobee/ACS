@@ -1,0 +1,12 @@
+CurrentStatus m_iStatus;
+
+GoalType m_iType;
+
+//if m_iStatus is failed this method sets it to inactive so that the goal
+boolean isInactive(){ return m_iStatus == Goal.CurrentStatus.inactive; }
+boolean hasFailed(){ return m_iStatus == Goal.CurrentStatus.failed; }
+
+public GoalType GetType(){ return m_iType;}
+
+}
+

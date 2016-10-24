@@ -1,0 +1,10 @@
+package app.service.ord;
+
+import app.entity.Box;
+import app.entity.Ord;
+import org.springframework.beans.factory.annotation.Autowired;
+List <Ord> ords = ordRepository.findByProductBox(ord.getProduct(),ord.getBox());
+if (ords.size() != 0){
+int n = ord.getNumberProduct();
+ord = ords.get(0);
+

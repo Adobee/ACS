@@ -1,0 +1,14 @@
+public class TotalSizeLruDiskUsage extends LruDiskUsage {
+
+private final long maxSize;
+
+public TotalSizeLruDiskUsage(long maxSize) {
+if (maxSize <= 0) {
+throw new IllegalArgumentException(&quot;Max size must be positive number!&quot;);
+}
+this.maxSize = maxSize;
+}
+
+@Override
+protected boolean accept(File file, long totalSize, int totalCount) {
+

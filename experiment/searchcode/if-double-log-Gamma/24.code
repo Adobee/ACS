@@ -1,0 +1,15 @@
+bDist = new BetaDistribution(alpha, beta);
+
+}
+
+@Override
+public double logPdf(double x) {
+return logPdf(x, alpha, beta);
+}
+
+public static double logPdf(double x, double alpha, double beta){
+
+double z = recomputeZ(alpha, beta);
+
+double logX = Math.log(x);
+

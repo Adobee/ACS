@@ -1,0 +1,11 @@
+public static int convertJavaToSqlType(Class<?> returnType) {
+
+if (returnType == boolean.class || returnType == Boolean.class) {
+return Types.NUMERIC;
+}
+if (returnType == long.class || returnType == Long.class) {
+return Types.NUMERIC;
+}
+
+if (returnType == int.class || returnType == Integer.class) {
+

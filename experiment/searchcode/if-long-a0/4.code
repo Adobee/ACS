@@ -1,0 +1,8 @@
+long[] res = new long[t];
+for (int a0 = 0; a0 < t; a0++) {
+long n = in.nextLong();
+if (n % 2 == 0 &amp;&amp; n != 0) {
+res[a0] = (int) Math.pow(2, (n/2)+1)-1;
+} else if (n == 0) {
+res[a0] = 1;
+

@@ -1,0 +1,6 @@
+public boolean apply(IndexWarmersMetaData.Entry warmer) {
+if (warmers.length != 0 &amp;&amp; types.length != 0) {
+break;
+} else {
+if (indicesOptions.forbidClosedIndices() &amp;&amp; indexMetaData.getState() == IndexMetaData.State.CLOSE) {
+

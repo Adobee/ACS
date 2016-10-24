@@ -1,0 +1,5 @@
+double eps = 0.001;
+double tmp = (pow2(pow2(x) + pow2(y) - pow2(0.85)) + pow2(pow2(z) - 1))
+* (pow2(pow2(z) + pow2(x) - pow2(0.85)) + pow2(pow2(y) - 1)) - 0.001;
+if (tmp < eps &amp;&amp; tmp > -eps) {
+

@@ -1,0 +1,14 @@
+
+/**
+* Created by james on 11/17/2015.
+*/
+public class MonthDays {
+int month;
+int year;
+int days;
+
+
+//test for leap year
+public int getNumberOfDays() {
+if ((year % 100 == 0 &amp;&amp; year % 400 == 0 &amp;&amp; month == 2) || (year % 100 != 0 &amp;&amp; year % 4 == 0 &amp;&amp; month == 2))
+

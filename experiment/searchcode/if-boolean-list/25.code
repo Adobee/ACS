@@ -1,0 +1,10 @@
+* This matches &amp;ltsearch condition&amp;gt   in: <a href=&quot;http://savage.net.au/SQL/sql-92.bnf&quot;>SQL-92</a>
+*/
+public class SearchCondition extends SQLElement {
+
+List<BooleanTerm> orBooleanTerms;
+
+public SearchCondition() {
+super();
+this.orBooleanTerms = new LinkedList<BooleanTerm>();
+

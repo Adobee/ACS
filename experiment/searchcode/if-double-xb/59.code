@@ -1,0 +1,12 @@
+fPrimeLeft = i != 1 ? 2 / ((xb - xa) / (yb - ya) + (xa - x0)
+/ (ya - y0)) : 3f / 2f * (yb - ya) / (xb - xa)
+- fPrimeRight / 2;
+
+if (i == length) {
+fPrimeRight = 3f / 2f * ((yb - ya) / (xb - xa)) - fPrimeLeft
+/ 2;
+}
+
+fDoublePrimeLeft = -(2 * (fPrimeRight + 2 * fPrimeLeft))
+/ (xb - xa) + (6 * (yb - ya) / (xb - xa)) / (xb - xa);
+

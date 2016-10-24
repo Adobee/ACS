@@ -1,0 +1,13 @@
+package cz.zcu.fav.liks.ml.features;
+
+/**
+* @author Michal Konkol
+*
+*/
+public class SimpleSelectionFilter implements FeatureFilter {
+double[] newFeatures = new double[activeFeatures];
+
+int actual = 0;
+for(int i = 0; i < features.length ; i++){
+if(filter[i]){
+

@@ -1,0 +1,16 @@
+public int minPacks(int R, int G, int B) {
+int count = 0;
+
+int min = 0;
+if (R <= G &amp;&amp; R <= B) {
+min = R;
+min = B;
+}
+
+count = min;
+R = R - min;
+G = G - min;
+B = B - min;
+
+if (R >= 3) {
+

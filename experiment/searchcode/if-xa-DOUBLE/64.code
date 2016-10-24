@@ -1,0 +1,10 @@
+* @param xa ruch w osi X
+* @param ya ruch w osi Y
+*/
+public void move(double xa, double ya) {
+if(xa!=0 &amp;&amp; ya!=0) {
+* @return Zwraca TRUE je¿eli wystêpuje kolizja, FALSE je¿eli kolizji brak
+*/
+public boolean isCollide(double xa, double ya) {
+if((xa > (x-11) &amp;&amp; xa < (x+11)) &amp;&amp; (ya > (y-11) &amp;&amp; ya < (y+11))) return true;
+

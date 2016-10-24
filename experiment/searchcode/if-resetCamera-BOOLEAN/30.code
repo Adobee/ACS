@@ -1,0 +1,17 @@
+ExecutorService executor;
+Texture img;
+ShapeRenderer renderer;
+Universe universe;
+CameraEvents mouse;
+private boolean camWasReset = false;
+if (mouse.isReset() &amp;&amp; !camWasReset) {
+resetCamera();
+camWasReset = true;
+}
+
+if (!mouse.isReset()) {
+camWasReset = false;
+}
+
+if (!mouse.isReset() &amp;&amp; !mouse.isDragging() &amp;&amp; !camWasSet) {
+

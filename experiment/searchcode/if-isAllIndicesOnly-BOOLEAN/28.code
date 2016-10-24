@@ -1,0 +1,8 @@
+final String[] indices = Strings.splitStringByCommaToArray(request.param(&quot;indices&quot;, &quot;_all&quot;));
+boolean isAllIndicesOnly = indices.length == 1 &amp;&amp; &quot;_all&quot;.equals(indices[0]);
+if (!isAllIndicesOnly) {
+clusterStateRequest.indices(indices);
+}
+
+if (request.hasParam(&quot;metric&quot;)) {
+

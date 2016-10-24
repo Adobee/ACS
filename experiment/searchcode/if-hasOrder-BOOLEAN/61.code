@@ -1,0 +1,8 @@
+* Determining a topological order of a directed acyclic graph by non-recursive breath first search.
+*
+* @author If
+Queue<Integer> queue = new LinkedList<>();
+for (int v = 0; v < digraph.V(); v++) {
+if (indegree[v] == 0) {
+queue.offer(v);
+

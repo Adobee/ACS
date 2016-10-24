@@ -1,0 +1,11 @@
+public class ActionEdge extends DefaultEdge {
+public enum ActionEdgeType {
+None, Natural, Necessary, GreedyNecessary, Unknown,
+public boolean equals(Object other) {
+if (super.equals(other) == false)
+return false;
+
+return this.edgeType.equals(((ActionEdge) other).edgeType);
+}
+}
+

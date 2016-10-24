@@ -1,0 +1,10 @@
+public TaskIntent(Intent intent) {
+_intent = intent;
+Serializable payload = intent.getSerializableExtra(TASK_DATA_KEY);
+if (payload != null)
+setTask((Task) payload);
+}
+
+Task getTask() {
+if (_task == null &amp;&amp; _intent.getData() != null) {
+

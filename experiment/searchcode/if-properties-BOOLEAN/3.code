@@ -1,0 +1,13 @@
+Properties entity = (Properties) propertiesDao.createQuery(&quot;from Properties&quot;).uniqueResult();
+
+return entity;
+}
+
+@Override
+public boolean updatePassword(Properties properties) {
+Properties entity = (Properties) propertiesDao.createQuery(&quot;from Properties&quot;).uniqueResult();
+
+if (entity != null) {
+
+entity.setPassword(properties.getPassword());
+

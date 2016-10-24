@@ -1,0 +1,12 @@
+private void log(byte str) {
+log(HexTool.toString(str) + &quot; &quot;);
+}
+
+private void log(String str) {
+if (!handling.SendPacketOpcode.record) {
+FileoutputUtil.log(FileoutputUtil.Packet_Record, str);
+}
+
+private void baosWrite(byte b) {
+bos.writeByte(b);
+

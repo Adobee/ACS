@@ -1,0 +1,9 @@
+public class BeforeValidator extends AbstractValidator<Date> {
+boolean compareToField;
+boolean allowOnTheDate;
+Field otherField;
+Date constantField;
+public BeforeValidator(String message, Field<?> otherDateFieldWeMustBeBefore, boolean allowOnTheDate) {
+super(message);
+this.otherField = otherDateFieldWeMustBeBefore;
+

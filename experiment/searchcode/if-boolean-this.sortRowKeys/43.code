@@ -1,0 +1,7 @@
+public DefaultKeyedValues2D(final boolean sortRowKeys) {
+this.rowKeys = new java.util.ArrayList();
+this.columnKeys = new java.util.ArrayList();
+public int getRowIndex(final Comparable key) {
+if (this.sortRowKeys) {
+return Collections.binarySearch(this.rowKeys, key);
+

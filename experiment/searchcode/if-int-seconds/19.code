@@ -1,0 +1,12 @@
+private int seconds = 0;
+
+public Time(int seconds) {
+this.seconds = seconds;
+}
+
+public Time(int hours, int minutes, int seconds) {
+
+this.seconds += hours * 60 * 60;
+this.seconds += minutes * 60;
+this.seconds += seconds;
+

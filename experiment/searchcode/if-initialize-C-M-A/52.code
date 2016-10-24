@@ -1,0 +1,16 @@
+validateDescriptor.validate(component);
+}
+}
+
+if (_initialize) {
+Set<InitializeMethodDescriptor> initializeDescriptors = descriptor.getInitializeMethods();
+for (InitializeMethodDescriptor initializeDescriptor : initializeDescriptors) {
+if (_initializeNonDistributed || initializeDescriptor.isDistributed()) {
+initializeDescriptor.initialize(component);
+}
+}
+}
+}
+
+}
+

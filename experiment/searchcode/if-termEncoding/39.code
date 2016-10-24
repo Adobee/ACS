@@ -1,0 +1,7 @@
+import org.apache.lucene.spatial.geopoint.document.GeoPointField.TermEncoding;
+import org.apache.lucene.geo.Rectangle;
+import org.apache.lucene.geo.GeoUtils;
+private static double checkRadius(double radiusMeters) {
+if (Double.isFinite(radiusMeters) == false || radiusMeters < 0) {
+throw new IllegalArgumentException(&quot;invalid radiusMeters &quot; + radiusMeters);
+

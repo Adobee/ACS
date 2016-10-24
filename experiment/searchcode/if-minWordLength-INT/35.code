@@ -1,0 +1,8 @@
+* 저장할 단어의 최소 글자 수를 지정 (기본값은 2)
+* @param minWordLength 단어의 최소 글자 수
+*/
+public void setminWordLength(int minWordLength) {
+String morph = wordMorph.getSecond();
+if (word.length() >= minWordLength) {
+if (Arrays.binarySearch(morphList, morph) >= 0) {
+

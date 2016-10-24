@@ -1,0 +1,17 @@
+package engine;
+
+public class XYZ
+{
+public final double X;
+public final double Y;
+public final double Z;
+return X == 0 &amp;&amp; Y == 0 &amp;&amp; Z == 0;
+}
+
+public double dot(XYZ rhs)
+{
+return X * rhs.X + Y * rhs.Y + Z * rhs.Z;
+}
+
+public double length2()
+

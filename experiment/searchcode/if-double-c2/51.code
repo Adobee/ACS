@@ -1,0 +1,5 @@
+System.out.print(&quot;Enter circle2&#39;s center x-, y-coordinates, and radius: &quot;);
+double c2_x = input.nextDouble();
+double c2_y = input.nextDouble();
+double c2_radius = input.nextDouble();
+

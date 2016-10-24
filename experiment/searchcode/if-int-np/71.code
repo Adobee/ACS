@@ -1,0 +1,9 @@
+static String doReplace(String in) {
+int index;
+NamePair np;
+
+for (index = 0; index < nps.size(); index++) {
+np = (NamePair) nps.get(index);
+if (in.contains(np.strLong)) {
+return Str.replace(in, np.strLong, np.strShort);
+

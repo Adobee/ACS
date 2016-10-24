@@ -1,0 +1,11 @@
+* @return a string that has HTML entities instead of encoded character. Ex: %E9 = &amp;acute;
+*/
+public static String translateToHTMLEntities(String str) {
+
+if (ENCODING_TABLE == null) {
+generateHashMap();
+}
+
+for (String k : ENCODING_TABLE.keySet()) {
+if (str.contains(k)) {
+

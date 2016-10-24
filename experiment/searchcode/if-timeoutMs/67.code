@@ -1,0 +1,7 @@
+public static <T> void assertThatWithTimeout(ValueRunnable<T> runnable,
+Matcher<T> matcher, int timeoutMs, int timeSpanMs)
+throws Exception {
+long endTime = System.currentTimeMillis() + timeoutMs;
+long currentTimeMillis = System.currentTimeMillis();
+if (currentTimeMillis - endTime >= timeoutMs) {
+

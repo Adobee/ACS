@@ -1,0 +1,7 @@
+import org.apache.http.client.methods.HttpUriRequest;
+import org.hamcrest.Factory;
+import org.hamcrest.FeatureMatcher;
+@Override
+protected String featureValueOf(HttpUriRequest request) {
+if (!(request instanceof HttpEntityEnclosingRequest)) return null;
+

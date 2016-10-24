@@ -1,0 +1,10 @@
+private synchronized static DiskLruCache getDiskLruCache(File directory, int maxSize) throws IOException {
+if (CACHE == null) {
+CACHE = DiskLruCache.open(directory, APP_VERSION, VALUE_COUNT, maxSize);
+protected DiskLruCacheWrapper(DiskLruCache diskLruCache) {
+this.diskLruCache = diskLruCache;
+}
+
+@Override
+public InputStream get(String key) {
+

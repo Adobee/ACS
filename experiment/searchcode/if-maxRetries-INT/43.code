@@ -1,0 +1,10 @@
+private final JedisPool connectionPool;
+
+/**
+* Maximum number of retries
+*/
+private final int maxRetries;
+public RetryingCommandHandler(final JedisPool connectionPool, final int maxRetries) {
+this.connectionPool = connectionPool;
+this.maxRetries = maxRetries;
+

@@ -1,0 +1,9 @@
+public static LocalDateTime FormataDataDiaMesAno(String data)
+{
+LocalDateTime dt = LocalDateTime.now();
+if (data == null || data.equals(&quot;&quot;)) return dt;
+public static LocalDateTime FormataDataMesAno(String data, boolean inicio)
+{
+LocalDateTime dt = LocalDateTime.now();
+if (data == null || data.equals(&quot;&quot;)) return dt;
+

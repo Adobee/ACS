@@ -1,0 +1,8 @@
+double subRelevance = 0;
+if (interest.getWeightSum() > 1)
+subRelevance = phraseRel / (double) (interest.getWeightSum() - 1);
+rel = Math.abs(maxRel
++ (count > 1 ? (1 - maxRel) * (rel / (count - 1)) : 0));
+
+if (Double.isNaN(rel))
+

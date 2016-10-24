@@ -1,0 +1,14 @@
+public MoveControler(float s,double a) {
+s0 = s;
+this.a = a;
+tStart = tEnd = 0;
+sStart = sEnd = 0;
+vStart = vEnd = 0;
+sStart = sEnd;
+vStart = vEnd;
+
+tEnd = t;
+sEnd = s;
+vEnd = (sEnd-sStart)/(tEnd-tStart);
+if(vEnd <-5)vEnd = -3;
+

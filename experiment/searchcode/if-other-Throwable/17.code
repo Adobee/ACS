@@ -1,0 +1,7 @@
+* @return null if not found, otherwise the name of the class that matched
+*/
+public String convertExpected( Throwable throwable ) {
+if ( (throwable != null) &amp;&amp; !mExpectedThrowableSimpleClassNames.isEmpty() ) {
+String zSimpleClassName = ClassName.simple( throwable );
+if ( isExpected( zSimpleClassName ) ) { // check
+

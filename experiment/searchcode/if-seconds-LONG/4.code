@@ -1,0 +1,7 @@
+public class TimeUtil {
+public static String convert(long timeSeconds) {
+if (timeSeconds < 0) { return &quot;Permanent&quot;; }
+if (timeSeconds == 0) { return &quot;Now&quot;; }
+
+long years = (long) Math.floor(timeSeconds >= TimeUnit.DAYS.toSeconds(365) ? timeSeconds / TimeUnit.DAYS.toSeconds(365) : 0);
+

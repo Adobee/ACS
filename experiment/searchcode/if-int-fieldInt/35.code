@@ -1,0 +1,10 @@
+import newtonERP.orm.field.type.FieldDateTime;
+import newtonERP.orm.field.type.FieldInt;
+import newtonERP.orm.field.type.FieldString;
+import newtonERP.viewers.viewerData.ListViewerData;
+public Fields initFields() throws Exception
+{
+Vector<Field<?>> fieldList = new Vector<Field<?>>();
+
+FieldInt pKkioskCustomerID = new FieldInt(&quot;Numéro&quot;, getPrimaryKeyName());
+

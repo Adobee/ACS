@@ -1,0 +1,11 @@
+public I getIdentifier() {
+return identifier;
+}
+
+<K> Domain<K> getDomain(int domainIndex) {
+domains.ensureCapacity(domainIndex+1);
+Domain<K> domain = (AbstractVesselIdentity<I, VI>.Domain<K>) domains.get(domainIndex);
+if (domain==null) {
+domain = new Domain<K>();
+domains.set(domainIndex, domain);
+

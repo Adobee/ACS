@@ -1,0 +1,10 @@
+public class Item {
+private int idItem;
+private double priceItem;
+private String nameItem;
+private String descriptionItem;
+private String imageItem;
+private int discountItem;
+
+public int getIdItem() {
+

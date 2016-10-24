@@ -1,0 +1,13 @@
+public void testPlayer(String player){
+player = player.toLowerCase();
+try {
+if (!hasStats(player)){
+createStats(player);
+playTime= playTime + ((System.currentTimeMillis() - timeHandler.get(player)) / 1000);
+}
+
+return playTime;
+}
+
+private boolean hasStats(String player) throws SQLException {
+

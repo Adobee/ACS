@@ -1,0 +1,10 @@
+public static double binomial(int N, int k, double p) {
+count++;
+if (N == 0 &amp;&amp; k == 0) return 1.0;
+if (N < 0 || k < 0) return 0.0;
+return (1.0 - p) * binomial(N - 1, k, p) + p * binomial(N - 1, k - 1, p);
+//System.out.println(count);
+}
+public static double binomialChanged(int N, int k, double p) {
+if (k == 0) return Math.pow((1 - p), N * 1.0);
+

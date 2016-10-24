@@ -1,0 +1,14 @@
+public static final byte[] COLUMN_FAMILY_NAME = Bytes.toBytes(&quot;f&quot;);
+private byte[] rowKey;
+
+public HbaseEntityBase(byte[] rowKey) {
+super();
+this.rowKey = rowKey;
+}
+
+public byte[] getRowKey() {
+return rowKey;
+}
+
+public String getRowKeyString() {
+

@@ -1,0 +1,8 @@
+QuantileDigest digest = state.getDigest();
+double percentile = state.getPercentile();
+if (digest == null || digest.getCount() == 0.0) {
+DOUBLE.writeDouble(out, sortableLongToDouble(digest.getQuantile(percentile)));
+}
+}
+}
+

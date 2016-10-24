@@ -1,0 +1,5 @@
+TransportClient.Builder transportClientBuilder = TransportClient.builder();
+boolean addMockTcpTransport = additionalSettings.get(NetworkModule.TRANSPORT_TYPE_KEY) == null;
+if (addMockTcpTransport) {
+clientSettingsBuilder.put(NetworkModule.TRANSPORT_TYPE_KEY, MockTcpTransportPlugin.MOCK_TCP_TRANSPORT_NAME);
+

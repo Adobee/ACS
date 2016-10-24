@@ -1,0 +1,11 @@
+public class LinkChecker implements NetChecker {
+private boolean[] colors;
+private boolean failed;
+
+@Override
+public boolean isFailed() {
+return failed;
+}
+
+private void dfs(int u, boolean[][] edges) {
+

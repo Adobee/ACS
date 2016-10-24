@@ -1,0 +1,10 @@
+if (next != null) return;
+while (it.hasNext()) {
+AbstractBlock b = it.next();
+if (b.getShape().intersects(rect)) {
+return new IntersectionIterator(blocks.iterator(), rect);
+}
+
+public boolean add(AbstractBlock block) {
+if (intersects(block.getShape()).hasNext()) return false;
+

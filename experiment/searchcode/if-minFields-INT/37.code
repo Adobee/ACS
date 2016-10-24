@@ -1,0 +1,7 @@
+* 各常量允许的最小值
+*/
+private final int[] minFields = { 0, 0, 0, Integer.MIN_VALUE };
+public void set(int field, int value) {
+if(value < minFields[field]) {
+throw new IllegalArgumentException(value + &quot;, time value must be positive.&quot;);
+

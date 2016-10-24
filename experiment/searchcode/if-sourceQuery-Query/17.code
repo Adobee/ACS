@@ -1,0 +1,13 @@
+import java.util.List;
+
+/**
+* Created by angel on 4/26/14.
+*/
+public class SourceQuery extends UnaryTupleOperator {
+
+List<URI> sources;
+@Override
+public boolean equals(Object o) {
+if (o instanceof SourceQuery) {
+return this.sources.equals(((SourceQuery) o).sources) &amp;&amp;
+

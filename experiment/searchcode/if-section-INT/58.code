@@ -1,0 +1,9 @@
+// Needed because Java can&#39;t return two values from a function
+private static class SectionPosition {
+public Section section;
+public int     position;
+public Object getItem(int position) {
+SectionPosition section = getSectionPosition(position);
+
+if (section.position == HEADER_POSITION) {
+

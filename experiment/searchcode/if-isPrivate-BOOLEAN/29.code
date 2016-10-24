@@ -1,0 +1,8 @@
+private final boolean isPrivate;
+private final boolean autoload;
+
+public RubyConstant(DynamicObject declaringModule, Object value, boolean isPrivate, boolean autoload) {
+public RubyConstant withPrivate(boolean isPrivate) {
+if (isPrivate == this.isPrivate) {
+return this;
+

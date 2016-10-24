@@ -1,0 +1,8 @@
+for (int k = 0; k < cols; ++k) {
+double dk = jacNorm[k];
+if (dk == 0) {
+double sum2;
+double parl = 0;
+if (rank == solvedCols) {
+for (int j = 0; j < solvedCols; ++j) {
+

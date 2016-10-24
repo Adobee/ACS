@@ -1,0 +1,10 @@
+public class Solution {
+private double myPow_positive(double x, int n) {
+if (n == 1) {
+return x;
+} else if (n == 0) {
+return 1;
+}
+int n2 = n / 2;
+double r = myPow_positive(x, n2);
+

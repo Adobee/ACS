@@ -1,0 +1,10 @@
+// + O(1) for getting all the keys (Hashtable maintains list of keys)
+// + O(n) for getting the max
+// = O(n)
+if (array.length < 1)
+return null;
+int maxIndex = array[0];
+Set<Integer> keys = hashtable.keySet();
+for (int key : keys) {
+if (hashtable.get(key) > hashtable.get(maxIndex)) {
+

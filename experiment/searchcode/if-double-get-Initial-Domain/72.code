@@ -1,0 +1,15 @@
+String p1Name = agents.get(1).getAgentName();
+
+int bt = 0;
+double r = RandomFactory.getMapped(0).nextDouble();
+if(r < this.probBT){
+bt = 1;
+}
+
+State s = FSSimple.getInitialState(this.domain, p0Name, p1Name, bt, 0);
+
+return s;
+}
+
+}
+

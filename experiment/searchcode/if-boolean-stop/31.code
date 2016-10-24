@@ -1,0 +1,9 @@
+stopWatch.tick(milliSeconds);
+}
+}
+
+private StopWatch getStopWatch(String name, boolean throwException) {
+StopWatch stopWatch = stopWatches.get(name);
+if (throwException &amp;&amp; stopWatch == null) {
+throw new IllegalArgumentException(&quot;No stop watch for &quot; + name);
+

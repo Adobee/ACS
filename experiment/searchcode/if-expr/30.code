@@ -1,0 +1,10 @@
+import com.jobvite.dynamodbsql.translator.visitor.ExprVisitor;
+
+public class NotExpr extends ConditionExpr {
+private ConditionExpr conditionExpr;
+return &quot;NOT ( &quot; + conditionExpr.toString() + &quot; )&quot;;
+}
+@Override
+public boolean isAncestorOf(ConditionExpr expr) {
+if(expr == conditionExpr){
+

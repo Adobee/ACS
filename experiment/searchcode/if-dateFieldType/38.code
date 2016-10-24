@@ -1,0 +1,9 @@
+public class DateFieldType extends TrieIntField {
+
+@Override
+public Object toNativeType(Object val) {
+if(val==null)
+return null;
+else if (val instanceof Number)
+return ((Number) val).intValue();
+

@@ -1,0 +1,10 @@
+public static byte[] toByteArray(int num) {
+byte[] array = {
+(byte) ((num &amp; 0xff000000) >> 24),
+(byte) ((num &amp; 0x000000ff) >> 0),
+};
+return array;
+}
+
+public static int toInteger(byte[] array) {
+

@@ -1,0 +1,8 @@
+private static MessageSyncQueue msgQueue = null;
+
+public synchronized static MessageSyncQueue getMsgQueue() {
+if (null == msgQueue) {
+public synchronized static MessageSyncQueue getMsgQueue(int max,int min) {
+if (null == msgQueue) {
+msgQueue = new MessageSyncQueue(max,min);
+

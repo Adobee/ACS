@@ -1,0 +1,11 @@
+this.seriesName = seriesName;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+Series series = (Series) o;
+
+if (seriesName != null ? !seriesName.equals(series.seriesName) : series.seriesName != null) return false;
+

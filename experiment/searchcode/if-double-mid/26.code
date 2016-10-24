@@ -1,0 +1,9 @@
+mid = low + (high - low)/2;
+
+if (mid*mid == x) {
+return mid;
+}else if (mid * mid < x) {
+low = mid;
+}else if (mid * mid > x) {
+high = mid;
+

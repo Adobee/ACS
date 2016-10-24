@@ -1,0 +1,14 @@
+package com.github.marschal.svndiffstat;
+
+final class DiffStat {
+
+private int added;
+private int removed;
+@Override
+public int hashCode() {
+return this.added ^ this.removed;
+}
+
+@Override
+public boolean equals(Object obj) {
+

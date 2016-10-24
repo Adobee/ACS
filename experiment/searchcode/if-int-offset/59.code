@@ -1,0 +1,7 @@
+//try next position when can&#39;t fit: while(queens[offset] < n &amp;&amp; !canPlace(offset, queens)) queens[offset]++;
+//if(queens[offset] == n) can&#39;t find a solution, offset--; backtrace
+//else if already in last queens, mark the solution, if not find the next queens by offset++, queens[offset] = -1;
+public boolean canPlace(int offset, int[] queens){
+for(int i = 0; i < offset; i++){
+if(queens[i] == queens[offset] || (Math.abs(queens[i] - queens[offset]) == offset - i)) return false;
+

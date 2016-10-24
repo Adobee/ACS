@@ -1,0 +1,10 @@
+public boolean accept(IRowValueProvider rowValueProvider){
+Object actualValue;
+try {
+actualValue = rowValueProvider.getColumnValue(columnName);
+e1.printStackTrace();
+return false;
+}
+if (expectedText == null &amp;&amp; actualValue == null) return true;
+if (expectedText == null || actualValue == null) return false;
+

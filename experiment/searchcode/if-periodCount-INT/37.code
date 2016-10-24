@@ -1,0 +1,10 @@
+LocalDate holdDate = start;
+
+int periodCount = 1;
+
+while (holdDate.isBefore(end))
+{
+LocalDate nextDate = start.plus(multiplyPeriod(frequency, periodCount));
+
+if (nextDate.isAfter(end))
+

@@ -1,0 +1,9 @@
+import org.apache.hadoop.io.IntWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Partitioner;
+else if(Integer.parseInt(text.toString())<=85)
+{
+return  0;
+}
+else if(Integer.parseInt(text.toString())>=85||Integer.parseInt(text.toString())<=170 )
+

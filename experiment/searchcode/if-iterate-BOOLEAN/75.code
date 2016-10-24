@@ -1,0 +1,11 @@
+protected Iterator createIterator(Object iterateOverMe)
+{
+if (iterateOverMe==null)
+throw new NullPointerException(&quot;Object arguments passed to &quot; +
+&quot;the CollectionIterator constructor cannot be null.&quot;);
+
+if (iterateOverMe instanceof Iterator)
+return (Iterator)iterateOverMe;
+
+if (iterateOverMe instanceof Collection)
+

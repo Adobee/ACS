@@ -1,0 +1,17 @@
+public boolean depositCash(int amount) {
+if(amount == 0) {
+return false;
+}
+this.amount = this.amount + amount;
+return true;
+}
+
+public int withdrawCash(int amount) {
+if(amount > this.amount) {
+return 0;
+}
+this.amount -= amount;
+return amount;
+}
+}
+

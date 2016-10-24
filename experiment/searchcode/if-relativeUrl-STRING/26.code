@@ -1,0 +1,12 @@
+public static String getFullUrl(String rootUrl, String relativeUrl) {
+
+if (rootUrl == null || rootUrl.trim().length() == 0) {
+throw new IllegalArgumentException(&quot;rootUrl must be given.&quot;);
+relativeUrl = uri.toString();
+
+if (uri.isAbsolute()) {
+return relativeUrl;
+}
+
+if (!relativeUrl.startsWith(&quot;/&quot;)) {
+

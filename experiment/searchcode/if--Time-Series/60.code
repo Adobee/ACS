@@ -1,0 +1,7 @@
+public void appendBegin(final TimeSeriesPoint timeSeriesPoint) {
+if (!timeSeriesPoint.getTime().equals(getNextBeginTime())) {
+// TODO throw exception
+throw new IllegalArgumentException(&quot;Point does not fit in time series. Expected time: &quot; + getNextBeginTime());
+public void appendEnd(final TimeSeriesPoint timeSeriesPoint) {
+if (!timeSeriesPoint.getTime().equals(getNextEndTime())) {
+

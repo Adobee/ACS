@@ -1,0 +1,13 @@
+import luv.values.generators.ValueGenerator;
+
+public class PojoMandelbrotSet extends ValueGenerator {
+
+int maxIterations = 50;
+@Override
+protected void setAdditionalProperty(String name, float value) {
+if (name.equals(&quot;maxIterations&quot;)) {
+maxIterations = (int) value;
+}
+}
+}
+

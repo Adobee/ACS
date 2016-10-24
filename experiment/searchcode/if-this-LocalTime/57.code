@@ -1,0 +1,8 @@
+public TimeSlot(LocalTime timeStart, LocalTime timeEnd) {
+if (timeStart.compareTo(timeEnd) >= 0)
+throw new IllegalArgumentException(&quot;The start time should be lower than the end time.&quot;);
+* @return  the end LocalTime object
+*/
+public LocalTime getTimeEnd() {
+return this.timeEnd;
+

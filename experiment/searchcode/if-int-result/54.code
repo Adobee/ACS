@@ -1,0 +1,10 @@
+public class StringStuff{
+
+public String reverse(String s){
+String result = &quot;&quot;;
+for (int count = (s.length() - 1); count >= 0 ; count--){
+public String fence(int h,int w){
+String result = &quot;&quot;;
+for (int i = 0;i<h;i++){
+if (i == 0 || i == (h - 1)){
+

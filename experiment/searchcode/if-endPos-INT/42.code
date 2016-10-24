@@ -1,0 +1,10 @@
+public class Tokenizer {
+
+private String text;
+private int startPos, endPos, splitPos;
+private boolean complete, capFlag;
+public Tokenizer(String text, int startPos, int endPos){
+this.startPos = startPos;
+this.endPos = endPos;
+this.text = text.replaceAll(&quot;\u2019&quot;, &quot;&#39;&quot;);
+

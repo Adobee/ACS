@@ -1,0 +1,11 @@
+public String lastChars(String a, String b) {
+int lenA = a.length();
+int lenB = b.length();
+String x = &quot;&quot;;
+if (lenA >= 1) {
+x += a.substring(0, 1);
+} else {
+x += &#39;@&#39;;
+}
+if (lenB >= 1) {
+

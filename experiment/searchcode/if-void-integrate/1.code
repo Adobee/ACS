@@ -1,0 +1,10 @@
+public class IntegrateIntegrator implements Integrator {
+
+public void integrate(Loader loader, Location location, ConfigurationAtom atom, Object focus) {
+
+if(focus == null) {
+return;
+}
+
+Integrate integrate = ReflectionUtils.getAnnotationOnClass(focus.getClass(), Integrate.class);
+

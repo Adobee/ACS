@@ -1,0 +1,12 @@
+import java.util.List;
+
+public class Sieve {
+public static List<Integer> runSieveJava(int upperBound) {
+
+List<Integer> primes = new ArrayList<Integer>();
+isComposite[k] = true;
+}
+}
+for (int m = upperBoundSquareRoot; m <= upperBound; m++)
+if (!isComposite[m])
+

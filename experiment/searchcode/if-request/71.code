@@ -1,0 +1,8 @@
+import org.springframework.stereotype.Component;
+
+import com.redfire.nutrieduc.commonsvc.context.RequestContext;
+import com.redfire.nutrieduc.commonsvc.svc.io.ServiceRequest;
+private void configureAccount(RequestContext requestContext, ServiceRequest<T> request) {
+if (requestContext.getUser() != null)
+request.setAccount(requestContext.getAccount());
+

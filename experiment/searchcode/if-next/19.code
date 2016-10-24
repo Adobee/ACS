@@ -1,0 +1,11 @@
+ListNode n=new ListNode(3);
+n.next =new ListNode(4);
+ListNode p=new ListNode(5);
+n.next.next =p;
+n.next.next.next =new ListNode(6);
+while(fast!=null &amp;&amp; fast.next!=null){
+fast=fast.next.next;
+slow=slow.next;
+if(fast==slow){
+break;
+

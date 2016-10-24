@@ -1,0 +1,12 @@
+int beginB = text.indexOf(&#39;*&#39;);
+if (beginI < 0 &amp;&amp; beginB < 0) {
+result += text;
+break;
+}
+char tag;
+int begin;
+int end;
+if (beginI >= 0 &amp;&amp; (beginB < 0 || beginI < beginB)) {
+tag = &#39;i&#39;;
+begin = beginI;
+

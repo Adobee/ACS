@@ -1,0 +1,7 @@
+DateTime now = DateTime.now();
+int year = now.getWeekyear();
+int week = now.getWeekOfWeekyear();
+String id = &quot;&quot; + year + &quot;-W&quot; + (week < 10 ? &quot;0&quot; : &quot;&quot;) + week;
+int weekyear = Integer.parseInt(id.substring(0, 4));
+int weekOfWeekyear = Integer.parseInt(id.substring(6, 8));
+

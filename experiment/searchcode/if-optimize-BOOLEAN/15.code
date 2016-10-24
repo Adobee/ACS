@@ -1,0 +1,11 @@
+new ScheduledThreadPoolExecutor(1).scheduleAtFixedRate(new Runnable() {
+@Override
+public void run() {
+if(shouldOptimize()) {
+}, 2, 2, TimeUnit.SECONDS);
+}
+
+private boolean shouldOptimize() {
+boolean optimize = false;
+File optimizeFile = new File(FilenameUtils.concat(HeadlessConsoleFrame.getOutputDirectory(), &quot;directives/optimize&quot;));
+

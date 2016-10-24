@@ -1,0 +1,8 @@
+public Set<Gender> genders;
+
+public Range<Integer> getAgeRange() {
+if (minAge == null &amp;&amp; maxAge == null)
+return Ranges.all();
+else if (minAge != null &amp;&amp; maxAge == null)
+return Ranges.atLeast(minAge);
+

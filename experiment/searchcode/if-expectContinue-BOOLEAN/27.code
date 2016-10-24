@@ -1,0 +1,13 @@
+private String contentType;
+
+/**
+* {@inheritDoc}
+*/
+@Override
+protected void execute() throws Exception {
+long fileCounter = 0;
+
+if (srcFile != null) {
+File parentDir = new File(fileName).getParentFile();
+if (parentDir == null || !parentDir.equals(currentParentDir)) {
+

@@ -1,0 +1,12 @@
+private transient Stroke outlineStroke;
+
+
+private transient Paint backgroundPaint;
+
+
+public MeterInterval(String label, Range range) {
+public MeterInterval(String label, Range range, Paint outlinePaint,
+Stroke outlineStroke, Paint backgroundPaint) {
+if (label == null) {
+throw new IllegalArgumentException(&quot;Null &#39;label&#39; argument.&quot;);
+

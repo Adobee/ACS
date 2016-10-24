@@ -1,0 +1,10 @@
+//System.out.println(&quot;WR: &quot; + wr);
+}
+
+public double[] rechnen(ArrayList<double[]> aPs, int length) {
+//if (length == 4) {
+double a1 = aPs.get(0)[0];
+double b1 = aPs.get(0)[1];
+double c1 = aPs.get(0)[2];
+double r1 = getdistance(aPs.get(0)[3]);
+

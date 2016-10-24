@@ -1,0 +1,11 @@
+return mForeground;
+}
+
+public void setForegroundDrawable(Drawable draw) {
+if (draw == mForeground) {
+return;
+}
+if (mForeground != null) {
+unscheduleDrawable(mForeground);
+mForeground.setCallback(null);
+

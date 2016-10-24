@@ -1,0 +1,8 @@
+// set the limit for the loop as bigger length
+int limit = intVersion.length;
+if (otherIntVersion.length > intVersion.length)
+me = you = me = 0;
+
+// me still have ints
+if (intVersion.length > i)
+

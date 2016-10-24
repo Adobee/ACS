@@ -1,0 +1,8 @@
+aggregator = new HashedScriptAggregator(excluded, pattern, script);
+}
+
+if (allTerms) {
+loadAllTerms(context, indexFieldData, aggregator);
+int maxDoc = readerContext.reader().maxDoc();
+if (indexFieldData instanceof IndexFieldData.WithOrdinals) {
+

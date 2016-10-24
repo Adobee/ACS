@@ -1,0 +1,10 @@
+public void helper(int[] loc,int n,int cur){
+if(cur==n){
+res++;
+return;
+}
+else{
+for(int i=0;i<n;i++){
+loc[cur] = i;
+if(valid(loc,cur,n)) helper(loc,n,cur+1);
+

@@ -1,0 +1,9 @@
+public void stat() throws RecognitionException {
+if (speculate_stat_alt1()) {
+list(); match(Lexer.EOF_TYPE);
+public void list() throws RecognitionException {
+boolean failed = false;
+int startTokenIndex = index();
+
+if (isSpeculating() &amp;&amp; alreadyParsedRule(list_memo)) return;
+

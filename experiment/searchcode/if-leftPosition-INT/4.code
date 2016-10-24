@@ -1,0 +1,10 @@
+chunkSize *= 2;
+}
+}
+
+public static void bottomUpMerge(int[] array, int leftPosition, int chunkSize, int[] workArray) {
+int rightIndex = rightPosition;
+
+for (int i = 0; i <= endPosition - leftPosition; i++) {
+if (leftIndex < rightPosition &amp;&amp; (rightIndex > endPosition || array[leftIndex] <= array[rightIndex])) {
+

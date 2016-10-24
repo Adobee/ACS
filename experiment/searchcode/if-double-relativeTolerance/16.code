@@ -1,0 +1,10 @@
+if (value.isAbsolute()) {
+double absoluteTolerance = value.getTolerance();
+if (absoluteTolerance < 0) {
+return false;
+
+}
+} else {
+double relativeTolerance = value.getTolerance();
+if ((relativeTolerance < 0) || (relativeTolerance > 1)) {
+

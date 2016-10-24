@@ -1,0 +1,10 @@
+//so we need to wait for the intitialization to finish rather than counting on the manager.getAllConnections()
+//to wait for a primary
+WaitCriterion ev = new WaitCriterion() {
+public boolean done() {
+return new ServerBlackList(null, 1);
+}
+
+public Connection createClientToServerConnection(ServerLocation location, boolean forQueue) {
+if(nextConnections == null || nextConnections.isEmpty()) {
+

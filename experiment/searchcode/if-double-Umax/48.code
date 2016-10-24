@@ -1,0 +1,11 @@
+public BoundingRectangle(double angle, double uMin, double uMax, double vMin, double vMax)
+{
+theta = angle;
+width  = uMax-uMin;
+height = vMax-vMin;
+
+double u = (uMin+uMax)/2.;
+double v = (vMin+vMax)/2.;
+
+x = u*Math.cos(theta) - v*Math.sin(theta);
+

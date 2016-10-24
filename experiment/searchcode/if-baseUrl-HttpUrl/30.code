@@ -1,0 +1,9 @@
+* This method makes a get request to a specific API resource.
+* Request is built using the OkHttp {@link HttpUrl} builder.
+*
+* @param baseURL  The API base URL
+private HttpUrl.Builder getHttpUrlBuilder(String baseURL, String resource) throws MalformedURLException {
+HttpUrl url = HttpUrl.parse(baseURL);
+if (url == null) {
+throw new MalformedURLException();
+

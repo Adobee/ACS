@@ -1,0 +1,11 @@
+public void putAlias(String from, String to) {
+mapping.put(from, to);
+}
+
+
+@Override
+public Source loadSource(String url) throws IOException {
+@Override
+public Source loadSource(String url, boolean useCache) throws IOException {
+String result = mapping.get(url);
+

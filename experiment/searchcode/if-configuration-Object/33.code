@@ -1,0 +1,10 @@
+private static URL CONFIGURATION_FILE_URL = ConfigurationManager.class.getResource(&quot;/configuration-list.xml&quot;);
+
+private static final Object lock = new Object();
+
+private ConfigurationManager() {
+}
+
+public static Configuration getConfig() {
+if (config == null) {
+

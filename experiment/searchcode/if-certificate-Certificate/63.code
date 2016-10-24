@@ -1,0 +1,11 @@
+public class EncodedX509Certificate {
+private String encodedCertificate;
+private X509Certificate certificate;
+
+public String getEncodedCertificate() {
+this.encodedCertificate = CertUtil.writeCertificate(this.certificate);
+}
+
+public boolean equals(Object obj) {
+if ((obj != null) &amp;&amp; (obj instanceof EncodedX509Certificate)) {
+

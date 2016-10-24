@@ -1,0 +1,12 @@
+// https://leetcode.com/problems/closest-binary-search-tree-value/
+
+int closest;
+double minDiff;
+
+public int closestValue(TreeNode root, double target) {
+if (node == null || minDiff == 0)
+return;
+
+double diff = Math.abs(target - node.val);
+if (diff < minDiff) {
+

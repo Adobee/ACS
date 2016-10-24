@@ -1,0 +1,18 @@
+* and open the template in the editor.
+*/
+
+package Application;
+
+import DHash.IdKey;
+
+/**
+*
+* @author gasparosoft
+*/
+public class FingerEntry implements Comparable<FingerEntry>
+{
+
+private IdKey idKey;
+private int lastElement;
+private int firstElement;
+

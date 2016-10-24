@@ -1,0 +1,8 @@
+public static Shape getShape(ShapeType shapeType) {
+
+Shape shape = shapes.get(shapeType);
+
+if (shape == null) {
+if (shapeType.equals(ShapeType.OVAL_FILL)) shape = new Oval(true);
+else if (shapeType.equals(ShapeType.OVAL_NOFILL)) shape = new Oval(false);
+

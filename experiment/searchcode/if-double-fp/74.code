@@ -1,0 +1,6 @@
+if (Double.doubleToLongBits(DA) != Double.doubleToLongBits(other.DA))
+return false;
+if (Double.doubleToLongBits(FP) != Double.doubleToLongBits(other.FP))
+return false;
+if (Double.doubleToLongBits(HRA) != Double.doubleToLongBits(other.HRA))
+

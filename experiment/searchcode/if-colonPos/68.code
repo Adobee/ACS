@@ -1,0 +1,8 @@
+myHours = Integer.parseInt (s.substring (0, colonPos));
+myMinutes = Integer.parseInt (s.substring (colonPos+1));
+
+if (myHours < 0 || myHours > 23 || myMinutes < 0 || myMinutes > 59) {
+throw new IllegalArgumentException(&quot;Time is not formatted correctly&quot;);
+}
+else if (s.substring (0, colonPos).length()>2|| s.substring (colonPos+1).length()!=2){
+

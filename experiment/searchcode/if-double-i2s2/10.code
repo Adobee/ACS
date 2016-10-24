@@ -1,0 +1,8 @@
+/** Inverse of twice the square of the standard deviation. */
+private final double i2s2;
+/** Normalization factor. */
+* @throws NotStrictlyPositiveException if {@code sigma <= 0}.
+*/
+public Gaussian(double mean,
+double sigma) {
+

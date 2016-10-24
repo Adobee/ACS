@@ -1,0 +1,7 @@
+public void run() {
+if (imageAware.isCollected()){
+L.d(LOG_TASK_CANCELLED_IMAGEAWARE_COLLECTED,memoryCacheKey);
+listener.onLoadingCancled(imageUri,imageAware.getWrappedView());
+}else if(isViewWasReused()){
+L.d(LOG_TASK_CANCELLED_IMAGEAWARE_REUSED, memoryCacheKey);
+

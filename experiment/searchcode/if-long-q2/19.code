@@ -1,0 +1,12 @@
+public static byte[] toBytes(long i) {
+if (i == Long.MIN_VALUE)
+return minValue;
+int size = (i < 0) ? stringSize(-i) + 1 : stringSize(i);
+static void getBytes(long i, int index, byte[] buf) {
+long q;
+int r;
+int charPos = index;
+byte sign = 0;
+
+if (i < 0) {
+

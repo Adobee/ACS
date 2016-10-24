@@ -1,0 +1,7 @@
+final DoubleMatrix1D p = getDirection(data);
+if (data.getLambda0() < 1.0) {
+data.setLambda0(1.0);
+// the function is invalid at the new position, try to recover
+if (Double.isInfinite(g1) || Double.isNaN(g1)) {
+bisectBacktrack(p, function, data);
+

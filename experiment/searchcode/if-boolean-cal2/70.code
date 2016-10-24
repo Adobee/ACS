@@ -1,0 +1,8 @@
+DB_Vacations_Manager vacations_manager = null;
+
+//Validates if the signature is still being coursed
+public boolean stillInCourse(Context xactivity, String starts, String ends){
+cal2.set(Calendar.MINUTE, 0);
+cal2.add(Calendar.DATE, 1);
+if(vac_cursor.getInt(vac_cursor.getColumnIndex(vacations_manager.YEARLY)) == 1) {
+

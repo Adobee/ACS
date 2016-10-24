@@ -1,0 +1,9 @@
+mNumberOfHandles = numberOfHandles;
+}
+
+public void claimHandle(int handle) {
+if (handle < mMinNextClaimedHandle) {
+DataHeader header = readDataHeader();
+int maxVersionIndex = versionArray.length - 1;
+if (header.elementsOrVersion <= versionArray[maxVersionIndex].elementsOrVersion) {
+

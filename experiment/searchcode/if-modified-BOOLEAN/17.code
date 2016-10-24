@@ -1,0 +1,16 @@
+public abstract class AbstractTreeNode implements XACMLTreeNode
+{
+private NodeContainer parent;
+private boolean modified;
+
+@SuppressWarnings(&quot;unused&quot;)
+private AbstractTreeNode() {}
+this.parent = parent;
+this.modified = true;
+}
+public NodeContainer getParent()
+{
+return parent;
+}
+public boolean isModified(boolean deep)
+

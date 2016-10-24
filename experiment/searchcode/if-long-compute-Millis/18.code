@@ -1,0 +1,12 @@
+import org.apache.giraph.master.DefaultMasterCompute;
+
+public class FacilityLocationADSMasterCompute extends DefaultMasterCompute{
+
+long startTime = 0, endTime = 0;
+public void initialize() throws InstantiationException, IllegalAccessException {
+startTime = System.currentTimeMillis();
+}
+
+@Override
+public void compute() {
+

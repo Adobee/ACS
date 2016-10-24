@@ -1,0 +1,8 @@
+import java.util.*;
+import edu.duke.*;
+
+public class MatchAllFilter implements Filter{
+public boolean satisfies(QuakeEntry quakeData){
+for(Filter filter : filterList){
+if(!filter.satisfies(quakeData)) return false;
+

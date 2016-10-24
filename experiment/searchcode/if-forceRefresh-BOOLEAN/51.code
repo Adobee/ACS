@@ -1,0 +1,13 @@
+context = ctx;
+}
+
+public String getUid() {
+return getUid(false);
+}
+
+public String getUid(boolean forceRefresh) {
+uid = null;
+
+if (!forceRefresh) {
+uid = helper.getBookKeepingKey(helper.getReadableDatabase(), &quot;ckanuid&quot;);
+

@@ -1,0 +1,10 @@
+public PImage buffer;
+public int numTiles,numTilesTotal,tile,frameCount=-1;
+public long start;
+public boolean isTiling;
+public void nextFrame() {
+frameCount++;
+if(frameCount>0) {
+frameRate=1000f/(float)(System.currentTimeMillis()-start);
+start=System.currentTimeMillis();
+

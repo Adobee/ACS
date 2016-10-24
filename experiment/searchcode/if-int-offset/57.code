@@ -1,0 +1,8 @@
+private int bsearch(int[] a, int target, int s, int e, int offset) {
+if (s == e)
+return -1;
+int n = a.length;
+int mid = (s + e) / 2;
+int midVal = a[(mid + offset) % n];
+if (midVal == target) {
+

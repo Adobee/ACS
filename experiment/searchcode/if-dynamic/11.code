@@ -1,0 +1,9 @@
+public FilterMachine(DynamicMachine d) {
+dynamic = d;
+}
+
+public EXECUTION FilterBook(Room r, Client c, USER u){
+if(orbac.SecureBook(u) == ACCESS.granted){
+if(dynamic.DynamicBook(r, c, u)== ACCESS.granted)
+return dynamic.getHistory().ExecutionBook(r, c, u);
+

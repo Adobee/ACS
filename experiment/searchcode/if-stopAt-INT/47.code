@@ -1,0 +1,11 @@
+// Find the region to colour
+char[] endMarkers;
+int shift;
+
+if ((text.length() > (unquotedIndex + 1)) &amp;&amp; (text.charAt(unquotedIndex + 1) == &#39;\&#39;&#39;)) {
+text = text.substring(unquotedIndex + 1 + shift);
+
+// search for the first matching stop marker
+int stopAt = -1;
+for(char c : endMarkers) {
+

@@ -1,0 +1,12 @@
+// a singleton-like (fancy words for a &quot;static&quot;) clock, for simple operations
+public final static Clock global = new Clock();
+
+
+private long last;
+public static long toNanoSeconds(double seconds) {
+return (long) (seconds * 1000000000.0);
+}
+
+
+// if for some reason you really need to get/set last
+

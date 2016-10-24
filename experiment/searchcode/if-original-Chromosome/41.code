@@ -1,0 +1,7 @@
+protected void checkValidity(List<Integer> chromosomeRepresentation) throws InvalidRepresentationException {
+if (chromosomeRepresentation.size() != GENE_LENGTH) {
+throw new RuntimeException();
+public Chromosome mutate(Chromosome original) throws MathIllegalArgumentException {
+int geneIndex = _random.nextInt(4);
+if (original instanceof ExampleChromosome) {
+

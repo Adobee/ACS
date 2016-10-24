@@ -1,0 +1,11 @@
+protected Encoding encoding = Encoding.NONE;
+
+public String getEncodedString(String unencoded) {
+
+String encoded = &quot;&quot;;
+
+if (encoding == Encoding.FILE) {
+
+String property = System.getProperty(&quot;os.name&quot;);
+if (property.toLowerCase().startsWith(&quot;linux&quot;) || property.toLowerCase().startsWith(&quot;mac&quot;)) {
+

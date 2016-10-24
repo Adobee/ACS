@@ -1,0 +1,11 @@
+import org.adamsko.cubicforest.players.resolver.NullOrderDecision;
+
+public class OrderDecisionsIteratorDefault implements OrderDecisionsIterator {
+public OrderDecision first() {
+return aggregate.get(0);
+}
+
+@Override
+public OrderDecision next() {
+if (index + 1 == aggregate.count()) {
+

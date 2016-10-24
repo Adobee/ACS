@@ -1,0 +1,7 @@
+public IndexBuffer createIndexBuffer(int indexCount, Buffer.Usage usage, boolean shadow) {
+IndexBuffer indexBuffer = null;
+if (mIndexBufferFactory != null)
+{
+indexBuffer = mIndexBufferFactory.createIndexBuffer(this, indexCount, usage, shadow);
+if (indexBuffer != null)
+

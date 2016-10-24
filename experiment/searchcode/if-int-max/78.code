@@ -1,0 +1,7 @@
+int[] leftMax = new int[A.length];
+int[] rightMax = new int[A.length];
+int max = 0;
+for (int i = 0; i < A.length; i++) {
+leftMax[i] = max;
+max = max > A[i] ? max : A[i];
+

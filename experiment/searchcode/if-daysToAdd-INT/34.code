@@ -1,0 +1,7 @@
+public void testAddDaysToTimestamp() throws GenericEntityException {
+int daysToAdd = 2;
+Timestamp startTS = UtilDateTime.nowTimestamp();
+Timestamp newTS = UtilCommon.addDaysToTimestamp(startTS, Double.valueOf(daysToAdd));
+int daysAfterDiff = UtilDate.dateDifference(newTS, startTS);
+assertEquals(daysToAdd, daysAfterDiff);
+

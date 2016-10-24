@@ -1,0 +1,11 @@
+Double m2 = ( enemies[2].getY() - enemies[1].getY() )/( enemies[2].getX() - enemies[1].getX());
+
+// Point perpendicular to AB through midAB point
+Double b1;
+Point2D perpendPointAB;
+if(Double.isInfinite(m1)){
+perpendPointAB = new Point2D.Double(midAB.getX()+1,midAB.getY());
+}else{
+if( Double.isNaN(m1) || Math.abs(m1-0.0) <EPS){
+b1 = midAB.getY();
+

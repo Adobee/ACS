@@ -1,0 +1,6 @@
+@Override
+public Size2D arrange(BlockContainer blockContainer, Graphics2D graphics2D, RectangleConstraint rectangleConstraint) {
+if (lengthConstraintType2 == LengthConstraintType.NONE) {
+size2D = this.arrangeNN(blockContainer, graphics2D);
+return new Size2D(blockContainer.calculateTotalWidth(size2D.getWidth()), blockContainer.calculateTotalHeight(size2D.getHeight()));
+

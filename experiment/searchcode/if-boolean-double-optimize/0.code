@@ -1,0 +1,6 @@
+public class DoubleSerializer extends Serializer {
+private final double precision;
+private final boolean optimizePositive;
+* 1-8 bytes from 0 to 7205794037927935 with &quot;optimize positive&quot; and -3602897018963968 to 3602897018963967 without. If a double
+* multiplied by the precision would fall out these values, it will take 9 or 10 bytes to serialize and it may be better to use
+

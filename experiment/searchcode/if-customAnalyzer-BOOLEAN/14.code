@@ -1,0 +1,13 @@
+import org.hibernate.search.annotations.TokenizerDef;
+
+
+/**
+*
+* @author thecarlson
+*/
+@Indexed
+@AnalyzerDef(name = &quot;customanalyzer&quot;,
+@Analyzer(definition=&quot;customanalyzer&quot;)
+public class EBook extends Item {
+@Field(analyze=Analyze.NO)
+

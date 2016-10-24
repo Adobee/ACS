@@ -1,0 +1,8 @@
+int min_master_nodes = randomIntBetween(0, nodes.size());
+service.minimumMasterNodes(min_master_nodes);
+
+int master_nodes = 0;
+for (DiscoveryNode node : nodes) {
+if (node.masterNode()) {
+master_nodes++;
+

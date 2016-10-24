@@ -1,0 +1,7 @@
+public static Type<SelectionUpdatedHandler> getType() {
+if (TYPE == null) {
+TYPE = new Type<SelectionUpdatedHandler>();
+public static <S extends HasSelectionUpdatedHandlers> void fire(S source) {
+if (TYPE != null) {
+final SelectionUpdatedEvent event = new SelectionUpdatedEvent();
+

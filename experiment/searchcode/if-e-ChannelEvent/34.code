@@ -1,0 +1,10 @@
+import org.jboss.netty.channel.ChannelEvent;
+import org.jboss.netty.channel.ChannelHandlerContext;
+import org.jboss.netty.channel.ChannelStateEvent;
+protected void log(String marker, ChannelEvent e)
+throws Exception
+{
+if(e instanceof MessageEvent)
+{
+whenMessage(marker, e);
+

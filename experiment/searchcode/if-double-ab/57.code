@@ -1,0 +1,14 @@
+## WARRANTY OF DESIGN, MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+##
+############################################################################
+*/
+package focusedCrawler.util.stats;
+
+public class ChiSquare {
+
+private double ab;
+private double aNotB;
+public static boolean isSignificant(double ab, double aNotB, double notAB, double notAnotB){
+if(ab <= 5 || aNotB <= 5 || notAB <= 5 || notAnotB <= 5){
+return false;
+

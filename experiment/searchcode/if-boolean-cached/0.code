@@ -1,0 +1,9 @@
+private static IMessageCachedSender cast(IMessageSender session) {
+IMessageSender owner = ((ISession) session).getOwner();
+if (owner == null)
+return null;
+return (IMessageCachedSender) owner;
+}
+
+public static boolean filter(IMessageSender session, int cachedKey) {
+

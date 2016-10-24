@@ -1,0 +1,10 @@
+return (this.mStyle * 31) + this.mLocale.hashCode();
+}
+
+public boolean equals(Object obj) {
+if (this == obj) {
+return true;
+FastDateFormat emptyFormat = new FastDateFormat(pattern, timeZone, locale);
+format = (FastDateFormat) cInstanceCache.get(emptyFormat);
+if (format == null) {
+

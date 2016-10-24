@@ -1,0 +1,6 @@
+if (Form.ADVANCED.equals(form.getName())) {
+boolean isBulkQuery = queryMode.getValue().equals(QueryMode.Bulk);
+form.getWidget(normalizeDelimiter.getName()).setHidden(isBulkQuery);
+protected Set<PropertyPathConnector> getAllSchemaPropertiesConnectors(boolean isOutputConnection) {
+if (isOutputConnection) {
+

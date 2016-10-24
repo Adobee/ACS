@@ -1,0 +1,8 @@
+private final IdaInstitutionBean institution;
+private final VersionInfo origin;
+private final boolean incrementalUpdate;
+public SolrUpdateBean(SolrCore solrService, IdaInstitutionBean institution, Path solrInput, VersionInfo origin, boolean incrementalUpdate)
+{
+this.key = UUID.randomUUID().toString();
+this.solrCore = solrService;
+

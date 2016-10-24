@@ -1,0 +1,15 @@
+public class IfStatement implements Statement {
+
+private Scope ifScope;
+
+public IfStatement(Scope ifScope) {
+this.ifScope = ifScope;
+}
+
+
+@Override
+public boolean execute(Scope scope) {
+return ifScope.execute();
+}
+}
+

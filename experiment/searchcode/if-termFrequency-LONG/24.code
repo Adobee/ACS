@@ -1,0 +1,10 @@
+static final Logger LOGGER = Logger.getLogger(TermAnalysis.class);
+
+protected Map<Term, TermFrequency> termFrequencies;
+protected TermAnalysisType type;
+protected int topTerms;
+public void addTerm(Term term, TermFrequency termFrequency) {
+TermFrequency tf = termFrequencies.get(term);
+if (tf == null) {
+termFrequencies.put(term, termFrequency);
+

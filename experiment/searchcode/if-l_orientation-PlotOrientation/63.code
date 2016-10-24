@@ -1,0 +1,8 @@
+Shape l_shape = getItemShape(x_series, x_item);
+if (l_orientation == PlotOrientation.HORIZONTAL) {
+l_shape = ShapeUtilities.createTranslatedShape(l_shape,
+(x_item - 1)), x_dataArea, l_rangeAxisLocation);
+
+Line2D l_line = null;
+if (PlotOrientation.HORIZONTAL == l_orientation) {
+

@@ -1,0 +1,10 @@
+public Object visit(VariableDef variableDef, Object params) {
+// Global variables
+if (variableDef.scope == 0) {
+variableDef.offset = sumGlobalVarOffsets;
+sumGlobalVarOffsets += variableDef.getType().size();
+}
+// Local variables in a function
+else if (params != null) {
+int offsetLocal = (Integer) params;
+

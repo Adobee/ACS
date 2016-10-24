@@ -1,0 +1,13 @@
+Printer.printArray(sm.spiralOrder(instance.generateMatrix(1)).toArray());
+}
+
+public int[][] generateMatrix(int n) {
+if (n <= 0) {
+return new int[0][0];
+}
+int maxNum = n * n;
+int[][] matrix = new int[n][n];
+
+Direction direct = Direction.right;
+int firstIndex = 0, secondIndex = 0;
+

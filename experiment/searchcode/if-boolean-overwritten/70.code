@@ -1,0 +1,11 @@
+return r==null ? false : (inWhitelist2(r) || inWhitelist2(r.mate));
+}
+
+private static boolean inWhitelist2(Read r){
+if(r==null || !r.mapped() || whitelist==null || whitelist.isEmpty()){return false;}
+return (name!=null &amp;&amp; whitelist.contains(new String(name)));
+}
+
+public static boolean inBlacklist(Read r){
+if(r==null){return false;}
+

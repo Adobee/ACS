@@ -1,0 +1,7 @@
+IntParameter minptsP = new IntParameter(DBSCAN.Parameterizer.MINPTS_ID) //
+.addConstraint(CommonConstraints.GREATER_EQUAL_ONE_INT);
+if(config.grab(minptsP)) {
+minpts = minptsP.intValue();
+if(minpts <= 2) {
+LOG.warning(&quot;DBSCAN with minPts <= 2 is equivalent to single-link clustering at a single height. Consider using larger values of minPts.&quot;);
+

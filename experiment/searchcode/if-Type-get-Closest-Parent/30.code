@@ -1,0 +1,8 @@
+final int superDistance = classUtilDistance(child.getSuperclass(), parent, level + 1);
+if (superDistance < distance) {
+distance = superDistance;
+final Class<?> closestType = getClosestType(cls);
+
+if (closestType != null) {
+final TypedProvider<? extends Converter<?>> converter = this.converters.get(closestType);
+

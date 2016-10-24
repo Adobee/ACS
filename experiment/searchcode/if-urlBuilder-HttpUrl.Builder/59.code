@@ -1,0 +1,6 @@
+String appid = mContext.getString(R.string.open_weather_map_API_key);
+
+OkHttpClient client = new OkHttpClient.Builder().build();
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(&quot;http://api.openweathermap.org/data/2.5/forecast?&amp;units=imperial&amp;APPID=&quot; + appid).newBuilder();
+

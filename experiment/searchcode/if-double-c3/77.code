@@ -1,0 +1,7 @@
+//For better understanding ignore double number
+if((xy[0].indexOf(&quot;.&quot;)+4)<xy[0].length()){
+double gcd=gcdFinder(C1*B2-C2*B1, A1*B2-A2*B1);
+double B3 = Double.parseDouble(b3);
+double C3 = Double.parseDouble(c3);
+double D3 = Double.parseDouble(d3);
+

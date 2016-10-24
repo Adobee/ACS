@@ -1,0 +1,12 @@
+private long totalBytes;
+private long freeBytes;
+private DiskSpaceStatsType diskSpaceStatsType;
+
+public DiskSpaceStats(final DiskSpaceStatsType diskSpaceStatsType) {
+this.diskSpaceStatsType = diskSpaceStatsType;
+}
+
+public int calculatePercentageFree() {
+
+if (totalBytes <= 0) {
+

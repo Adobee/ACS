@@ -1,0 +1,9 @@
+public long getSampleSizeAtIndex(int index) {
+if (sampleSize > 0) {
+return sampleSize;
+} else {
+sampleCount = l2i(IsoTypeReader.readUInt32(content));
+
+if (sampleSize == 0) {
+sampleSizes = new long[(int) sampleCount];
+

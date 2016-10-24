@@ -1,0 +1,7 @@
+Optional<QueryBuilder> positiveQuery = null;
+boolean positiveQueryFound = false;
+Optional<QueryBuilder> negativeQuery = null;
+positiveQuery = parseContext.parseInnerQueryBuilder();
+positiveQueryFound = true;
+} else if (parseContext.getParseFieldMatcher().match(currentFieldName, NEGATIVE_FIELD)) {
+

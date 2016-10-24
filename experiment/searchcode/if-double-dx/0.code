@@ -1,0 +1,9 @@
+double dx = x - p.x;
+double dy = y - p.y;
+return Math.sqrt(dx * dx + dy * dy);
+double dy = y - p.y;
+
+double r = Math.sqrt((dx * dx + dy * dy) / 10);
+double t = Math.round(r);
+if (t < r)
+

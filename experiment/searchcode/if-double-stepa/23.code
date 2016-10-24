@@ -1,0 +1,7 @@
+private Double getAlgebraicValue(Object value) throws TypeMismatchException, InvalidOperationException {
+if (value == null)
+throw new TypeMismatchException(&quot;Double&quot;, value);
+
+if (value instanceof Double)
+return (Double) value;
+

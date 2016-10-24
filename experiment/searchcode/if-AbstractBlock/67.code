@@ -1,0 +1,7 @@
+@SuppressWarnings({&quot;UnusedDeclaration&quot;})
+public abstract class Function2 extends AbstractBlock implements IFunction2 {
+
+public Object invokeWithArgs(Object[] args) {
+if(args.length != 2) {
+throw new IllegalArgumentException(&quot;You must pass 2 args to this block, but you passed &quot; + args.length);
+

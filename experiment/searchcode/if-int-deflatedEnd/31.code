@@ -1,0 +1,12 @@
+throw new SingularMatrixException();
+}
+
+final int m = realEigenvalues.length;
+if (b.length != m) {
+return deflatedEnd;
+}
+
+final int k = 4 * deflatedEnd + pingPong - 1;
+
+if ((start == deflatedEnd - 1) ||
+

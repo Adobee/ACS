@@ -1,0 +1,9 @@
+double normProduct = v1.getNorm() * v2.getNorm();
+if (normProduct == 0) {
+throw new ArithmeticException(&quot;null norm&quot;);
+}
+
+double dot = dotProduct(v1, v2);
+double threshold = normProduct * 0.9999;
+if ((dot < -threshold) || (dot > threshold)) {
+

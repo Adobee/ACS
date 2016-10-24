@@ -1,0 +1,13 @@
+private static byte[] processBulkReply(final RedisInputStream is) {
+final int len = is.readIntCrLf();
+if (len == -1) {
+return null;
+}
+
+final byte[] read = new byte[len];
+final int num = is.readIntCrLf();
+if (num == -1) {
+return null;
+}
+final List<Object> ret = new ArrayList<Object>(num);
+

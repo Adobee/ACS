@@ -1,0 +1,11 @@
+protected void setQuery(TypedQuery<T> query) {
+if (query instanceof LargeTypedQuery<?>) {
+this.query = (LargeTypedQuery<T>)query;
+super.create();
+return this.query.getNextResult();
+}
+
+@Override
+public boolean reset() {
+if (super.reset()) {
+

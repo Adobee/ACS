@@ -1,0 +1,8 @@
+public static double parseDouble(String str, double lowerBound, double upperBound,
+boolean includeEndpoints)
+throws NumberFormatException
+double n = Double.parseDouble(str);
+if (includeEndpoints)
+{
+if (n > upperBound || n < lowerBound) throw new NumberFormatException();
+

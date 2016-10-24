@@ -1,0 +1,9 @@
+long dbCount = dbStatusList.size();
+
+if (fromTop) {
+statusDao.insertInTx(statuses);
+if (dbCount + statuses.size() > CacheConstants.DEFAULT_DATABASE_ITEM_LIMIT) {
+int insertLen = Math.min(CacheConstants.DEFAULT_DATABASE_ITEM_LIMIT - dbStatusList.size(), statuses.size());
+for (int i = 0; i < insertLen; i++) {
+statusArrayList.add(statuses.get(i));
+

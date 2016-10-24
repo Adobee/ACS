@@ -1,0 +1,10 @@
+package de.alws11;
+
+public class AssertHelper {
+public static long[] arrayOfLongs(long... longs) {
+seed = seed &amp;&amp; (array1.charAt(i) == array2[i]);
+}
+if (strict)
+seed = seed &amp;&amp; array1.length() == array2.length;
+return seed;
+

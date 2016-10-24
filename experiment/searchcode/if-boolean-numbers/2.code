@@ -1,0 +1,9 @@
+int start = 0;
+int end = numbers.length - 1;
+while(start <= end) {
+int mid = start + (end - start) / 2;
+if(isLocalMinimum(numbers, mid)) {
+return mid;
+} else if(isDecreasing(numbers, mid)) {
+start = mid + 1;
+

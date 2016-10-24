@@ -1,0 +1,11 @@
+final double contrib = mSignal.value(position);
+sum += contrib;
+if (mOut != null) {
+mOut.print(Utils.realFormat(contrib, 2) + &quot;\t&quot;);
+}
+}
+if (mOut != null) {
+mOut.println(Utils.realFormat(sum, 2));
+}
+assert !Double.isNaN(sum) &amp;&amp; !Double.isInfinite(sum);
+

@@ -1,0 +1,9 @@
+public static Phone getConvertedDTOFromDomain( Phone phoneDTO, com.mana.innovative.domain.common.Phone phoneDomain ) {
+
+if ( phoneDomain == null ) {
+String message = &quot;Parameter phoneDomain is required for conversion&quot;;
+throw new NullPointerException( message );
+}
+if ( phoneDTO == null ) {
+phoneDTO = new Phone( );
+

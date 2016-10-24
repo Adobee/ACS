@@ -1,0 +1,9 @@
+public class SpiderUtils extends SpiderConfigurator{
+//处理相对URl路径，获取绝对URL路径
+public static String relativeURLHandler(String relativeURL){
+String rootURL =  initialURL.substring(0, initialURL.indexOf(&quot;/&quot;, 7));
+String curParentURL  = initialURL.substring(0, initialURL.lastIndexOf(&quot;/&quot;));
+if(relativeURL.startsWith(&quot;/&quot;)){
+//相对于网站根目录的地址
+return rootURL + relativeURL;
+

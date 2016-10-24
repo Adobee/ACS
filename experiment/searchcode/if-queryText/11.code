@@ -1,0 +1,12 @@
+(findItemCriteria.getName() != null &amp;&amp; !findItemCriteria.getName().isEmpty()))
+queryText = queryText.concat(&quot; WHERE&quot;);
+
+if (findItemCriteria.getGroupId() != null)
+queryText = queryText.concat(&quot; o.group.id=&quot;).concat(findItemCriteria.getGroupId().toString());
+
+if (findItemCriteria.getProducerId() != null)
+queryText = queryText.concat(&quot; AND&quot;);
+}
+
+if (findItemCriteria.getProducerId() != null)
+

@@ -1,0 +1,10 @@
+request.setConsistency(WriteConsistencyLevel.fromString(consistency));
+}
+
+Float requestsPerSecond = parseRequestsPerSecond(restRequest);
+if (requestsPerSecond != null) {
+&quot;[requests_per_second] must be a float greater than 0. Use -1 to disable throttling.&quot;, e);
+}
+if (requestsPerSecond == -1) {
+return Float.POSITIVE_INFINITY;
+

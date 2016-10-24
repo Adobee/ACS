@@ -1,0 +1,13 @@
+return calendar;
+}
+
+public static boolean isGeneric(Calendar calendar)
+{
+for (GenericCalendarEnum calendarEnum : values())
+if (calendarEnum.getCalendar().getId().equals(calendar.getId()))
+return true;
+return false;
+}
+
+}
+

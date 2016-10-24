@@ -1,0 +1,11 @@
+public String convertToDatabaseColumn(final LocalDate localDate) {
+if (localDate == null) {
+return null;
+public LocalDate convertToEntityAttribute(final String dbData) {
+if (dbData == null) {
+return null;
+}
+return LocalDate.parse(dbData);
+}
+}
+

@@ -1,0 +1,9 @@
+Kullanici_grubu kullanici_grubu = (Kullanici_grubu) get(i);
+if (kullanici_grubu.getIdkey().equals(idkey)) {
+found = kullanici_grubu;
+Kullanici_grubu kullanici_grubu = findKullanici_grubuByIdkey(result.getIdkey());
+
+String pidkey=&quot;&quot;;
+Object object=result.get(Kullanici_grubu.PROP_IDKEY);
+if (object!=null){
+

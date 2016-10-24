@@ -1,0 +1,8 @@
+public class Solution {
+public boolean isMatch(String s, String p) {
+return isMatch(s, p, 0, 0);
+}
+
+private boolean isMatch(String s, String p, int i, int j) {
+if (j == p.length()) return i == s.length();
+

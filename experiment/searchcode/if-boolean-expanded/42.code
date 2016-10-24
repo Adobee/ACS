@@ -1,0 +1,13 @@
+CompiledExpression expandedForm = null;
+
+private boolean isTheExpandedForm = false;
+
+public abstract boolean accept(CompiledExpressionVisitor visitor);
+public abstract boolean isDynamic ();
+
+public boolean hasExpandedForm() {
+return expandedForm != null;
+}
+
+public CompiledExpression returnExpandedForm() {
+

@@ -1,0 +1,12 @@
+double score = scorer.getScore(x, y, size);
+
+if (score > threshold) {
+
+Candidate c = new Candidate(x,y,size);
+for (int k=0;k<temp.size();k++) {
+Candidate c2 = temp.get(k);
+if (c2.isSameDetection(c)) {
+
+// union
+int t1 = Math.max(c2.x+c2.size, c.x+c.size)-Math.min(c2.x,c.x);
+

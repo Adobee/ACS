@@ -1,0 +1,8 @@
+int period = periods.get(i) ;
+ArrayList<Double> mvg = mvgs.get(i) ;
+
+if(mvg.size()<period){
+double dcurr = mvgs.get(1).get(index) - mvgs.get(0).get(index) ; //dcurr = slow-fast
+double dprev = mvgs.get(1).get(index-1) - mvgs.get(0).get(index-1) ; //dprev = slow-fast
+if(slope > slopeThresh){
+

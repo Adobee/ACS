@@ -1,0 +1,10 @@
+oldPos = new Point(element.getX(), element.getY());
+element.setX(newPos.x);
+element.setY(newPos.y);
+if (element instanceof ResizableDiagramElement){
+@Override
+public void redo() {
+element.setX(newPos.x);
+element.setY(newPos.y);
+if (element instanceof ResizableDiagramElement){
+

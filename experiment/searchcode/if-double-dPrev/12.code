@@ -1,0 +1,6 @@
+double Dprev[][] = new double[nbclasses][nbpixels];
+double Umat[][] = new double[nbclasses][nbpixels];
+for(j = 0 ; j < nbpixels ; j++){
+for(k = 1 ; k < kmax ; k++){
+if(Dprev[k][j] > 0)
+

@@ -1,0 +1,14 @@
+Scanner sc = new Scanner(System.in);
+double x = sc.nextDouble();
+double y = sc.nextDouble();
+
+boolean isInside = isPointInsideRectangle(x, y, 13.5, 8.5, 12.5, 17.5) || isPointInsideRectangle(x, y, 8.5, 6, 12.5, 22.5) || isPointInsideRectangle(x, y, 13.5, 8.5, 20, 22.5);
+private static boolean isPointInsideRectangle(double x, double y, double up, double down, double left, double right) {
+if(y <= up &amp;&amp; y >= down &amp;&amp; x >= left &amp;&amp; x <= right) {
+return true;
+}
+return false;
+}
+
+}
+

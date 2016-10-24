@@ -1,0 +1,13 @@
+private final OnAbort onAbort;
+private boolean aborted;
+
+public ComputationThread(Computation computation) {
+this(computation, OnAbort.INTERRUPT_THREAD);
+public void notifyAbort() {
+aborted = true;
+if (onAbort == OnAbort.INTERRUPT_THREAD)
+this.interrupt();
+}
+
+public enum OnAbort {
+

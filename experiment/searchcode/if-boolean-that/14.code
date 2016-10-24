@@ -1,0 +1,8 @@
+@Override public int hashCode() { return Boolean.valueOf(value).hashCode(); }
+@Override public boolean equals(Object thatObj) {
+if (!(thatObj instanceof BooleanValue)) return false;
+BooleanValue that = (BooleanValue)thatObj;
+return this.value == that.value;
+}
+}
+

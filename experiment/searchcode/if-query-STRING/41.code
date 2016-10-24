@@ -1,0 +1,8 @@
+import java.util.Map;
+
+public class URLUtils {
+public static Map<String, String> getQueryMap(String queryString){
+Map<String,String> queryMap = new HashMap<String,String>();
+if(queryString==null)return queryMap;
+if(queryString.startsWith(&quot;?&quot;))queryString=queryString.substring(1);
+

@@ -1,0 +1,10 @@
+return elements.contains(false) ? ImmutableBooleanEmptySet.INSTANCE : this;
+}
+
+@Override
+public BooleanIterator booleanIterator()
+@Override
+public boolean detectIfNone(BooleanPredicate predicate, boolean ifNone)
+{
+return !predicate.accept(false) &amp;&amp; ifNone;
+

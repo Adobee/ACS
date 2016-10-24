@@ -1,0 +1,12 @@
+batchValues.addAll(otherBatch.getBatchValues());
+}
+
+public BoundStatement getBoundStatement(Session session, boolean atomicBatch) {
+StringBuilder sb = new StringBuilder();
+
+boolean isBatch = batchQueries.size() > 1;
+
+if (isBatch) {
+if (atomicBatch) {
+sb.append(&quot;BEGIN BATCH &quot;);
+

@@ -1,0 +1,11 @@
+int right = input - startPos;
+int newPos = 0;
+
+String[] stalls = new String[input];
+
+for (int i = 0; i < stalls.length; i++) {
+while(left > 0 &amp;&amp; right < stalls.length) {
+if (left > right) {
+stalls[newPos] = &quot;X&quot;;
+newPos = left/2;
+

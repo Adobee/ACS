@@ -1,0 +1,16 @@
+package be.waveit.java7.errorhandling;
+
+
+public class RethrowingExceptionExampleTest {
+
+static class FirstException extends Exception { }
+private void throwException() throws FirstException, SecondException{
+double i = Math.random();
+if (i < 0.5){
+throw new FirstException();
+}else{
+throw new SecondException();
+}
+}
+}
+

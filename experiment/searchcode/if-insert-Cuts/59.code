@@ -1,0 +1,7 @@
+mailShortCuts.clear();
+mailShortCuts = DataManager.getInstance().selectMessageShortCutTable(null, null);
+if (mailShortCuts != null &amp;&amp; mailShortCuts.size() < 15)
+for (int i = 0; i < mailShortCuts.size(); i++)
+{
+if (!Utils.isEmpty(mailShortCuts.get(i).messageShortCutContent.toString().trim())
+

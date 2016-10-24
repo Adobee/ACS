@@ -1,0 +1,11 @@
+public static final ParseField FIELD = new ParseField(X_FIELD_NAME.camelCase().getValue());
+
+private final Object fuzziness;
+
+private Fuzziness(int fuzziness) {
+public static Fuzziness fromEdits(int edits) {
+return new Fuzziness(edits);
+}
+
+public static Fuzziness build(Object fuzziness) {
+

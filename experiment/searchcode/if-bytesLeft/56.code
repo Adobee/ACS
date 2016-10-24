@@ -1,0 +1,10 @@
+public class OggInputStream extends InputStream {
+private InputStream input;
+
+/** True if OggInputStream is currently inside an Ogg page. */
+if (isInPage &amp;&amp; bytesLeft > 0) {
+int result = input.read();
+bytesLeft -= 1;
+if (bytesLeft == 0) {
+isInPage = false;
+

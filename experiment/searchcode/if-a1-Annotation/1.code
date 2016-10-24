@@ -1,0 +1,9 @@
+protected abstract String getAnnotationHash(Annotation annotation);
+
+@Override
+public int compare(final Annotation a1, final Annotation a2) {
+
+if (getReferencedAnnotationContainer(a1) == null || getReferencedAnnotationContainer(a2) == null) {
+
+if (getReferencedAnnotationContainer(a1) == getReferencedAnnotationContainer(a2))
+

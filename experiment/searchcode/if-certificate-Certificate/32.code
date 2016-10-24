@@ -1,0 +1,9 @@
+this.certificateSource = certificateSource;
+}
+
+protected Certificate getCertificate() {
+if(certificate==null) {
+synchronized (this) {
+if(certificate==null) {
+CertificateFactory certificateFactory = null;
+

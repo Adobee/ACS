@@ -1,0 +1,10 @@
+* Response code 407 should only come from proxy servers. Android&#39;s client
+* throws if it is sent by an origin server.
+*/
+public void testOriginServerSends407() throws Exception {
+// the HTTP spec permits caching 410s, but the RI doesn&#39;t.
+assertCached(true, 410);
+}
+
+private void assertCached(boolean shouldPut, int responseCode) throws Exception {
+

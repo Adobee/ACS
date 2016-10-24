@@ -1,0 +1,6 @@
+double U2 = Math.atan((1 - f) * Math.tan(Math.toRadians(lat2)));
+double sinU1 = Math.sin(U1), cosU1 = Math.cos(U1);
+cos2SigmaM = cosSigma - 2 * sinU1 * sinU2 / cosSqAlpha;
+if (Double.isNaN(cos2SigmaM))
+cos2SigmaM = 0; // equatorial line: cosSqAlpha=0 (§6)
+

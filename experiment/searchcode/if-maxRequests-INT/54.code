@@ -1,0 +1,6 @@
+public final class Dispatcher {
+private ExecutorService executorService;
+private int maxRequests;
+private void promoteCalls() {
+if (this.runningAsyncCalls.size() < this.maxRequests &amp;&amp; !this.readyAsyncCalls.isEmpty()) {
+

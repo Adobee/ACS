@@ -1,0 +1,6 @@
+Random rnd = new Random();
+if (parameters.containsKey(INSERTION_PROBABILITY_TAG))
+insertionProbability = (Double)parameters.get(INSERTION_PROBABILITY_TAG);
+if (rnd.nextDouble() < insertionProbability)
+corrupted = TypographicError.insertNumber(field, rnd);
+

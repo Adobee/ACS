@@ -1,0 +1,8 @@
+public class NotTracker implements Tracker {
+
+@Override
+public void trackException(String s, Throwable e, boolean fatal) {
+public void trackException(String s, boolean fatal) {
+if (fatal) {
+Log.w(&quot;Fatal Exception &quot; + s);
+

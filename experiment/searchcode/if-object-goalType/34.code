@@ -1,0 +1,12 @@
+public class GoalQuery extends BaseAction {
+
+/**目标类型 dept:机构目标,person:个人目标*/
+private String goalType;
+
+public void getAllNodes() {
+treeNodes[1].setUrl(&quot;/query/personGoalQuery.jsp&quot;);
+
+JSONArray jsonArray = JSONArray.fromObject(treeNodes);
+
+String str_json = jsonArray.toString();
+

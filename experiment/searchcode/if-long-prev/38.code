@@ -1,0 +1,9 @@
+for (int i=0; i<n/3; i++) {
+String prevPrev = num.substring(0, i+1);
+
+if (i+1 > 1 &amp;&amp; prevPrev.charAt(0) == &#39;0&#39;) {
+long b = Long.parseLong(prev);
+long c = Long.parseLong(str);
+
+if (c == a+b) {
+

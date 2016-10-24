@@ -1,0 +1,12 @@
+public double cosineSimilarity(double[] vector1, double[] vector2){
+double dotProduct = 0.0;
+double norm1 = 0.0;
+double norm2 = 0.0;
+norm2 += Math.pow(vector2[i],2);
+}
+
+norm1 = Math.sqrt(norm1);
+norm2 = Math.sqrt(norm2);
+
+if(norm1 != 0.0 &amp;&amp; norm2 != 0.0){
+

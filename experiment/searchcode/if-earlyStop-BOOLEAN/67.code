@@ -1,0 +1,8 @@
+long startMisses = Global.cacheMisses;
+long endMisses = 0;
+boolean earlyStop = false;
+//for(int i = 1; i < 1290; i++) {
+//System.out.println(&quot;Adding ...&quot;+stock+&quot;... runtime = &quot;+(endTime - startTime));
+if((endTime - startTime) > MAX_RUNTIME_MILLIS) {
+earlyStop = true;
+

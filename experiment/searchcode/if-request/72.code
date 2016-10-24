@@ -1,0 +1,10 @@
+package io.netty.handler.codec.socks;
+
+public abstract class SocksRequest
+extends SocksMessage
+protected SocksRequest(SocksRequestType requestType)
+{
+super(SocksMessageType.REQUEST);
+if (requestType == null) {
+throw new NullPointerException(&quot;requestType&quot;);
+

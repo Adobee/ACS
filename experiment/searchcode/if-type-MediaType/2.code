@@ -1,0 +1,7 @@
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+
+MediaType mediaType = (MediaType) o;
+
+if (contentType != null ? !contentType.equals(mediaType.contentType) : mediaType.contentType != null) return false;
+

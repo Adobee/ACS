@@ -1,0 +1,8 @@
+int[] random = new int[10];
+for(int i = 0 ; i < 10; i++){
+Double randomValue = Math.random()*1000000;
+int randomValueInt =  randomValue.intValue();
+random[i]=randomValueInt;
+}
+return random;
+

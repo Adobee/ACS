@@ -1,0 +1,13 @@
+public void update(GxMapViewData mapData)
+{
+if (mTask != null)
+mTask.cancel(true);
+
+mTask = new CalculateBoundsTask();
+mTask.execute(mapData);
+}
+
+private void updateCamera(LatLngBounds bounds)
+{
+if (bounds != null)
+

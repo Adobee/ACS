@@ -1,0 +1,11 @@
+Number fst, snd;
+
+public Number call()  {
+return fst.doubleValue() + snd.doubleValue();
+}
+
+public Fun curry(Object arg) {
+
+if (fst == null)
+fst = (Number) arg;
+

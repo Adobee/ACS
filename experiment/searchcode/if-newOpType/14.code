@@ -1,0 +1,10 @@
+String newOpType = &quot;&quot;;
+String newOpId = &quot;&quot;;
+String newSysId = &quot;&quot;;
+if (GoldBankAppointType.baseOnOperate.equals(appointType)) {
+List<UapGoldInfo> selfList = this.findByExample(uapGoldInfo);
+if (selfList != null &amp;&amp; selfList.size() > 0) {
+return;
+}
+newOpType = uapGoldBankAppoint.getBusyType();
+

@@ -1,0 +1,9 @@
+ForceSimulator fsim, ZoneShape zShape, ZoneColors zColors,
+ZoneAttributes zAttributes,boolean upperLight) {
+
+super(vis, fsim, zShape, zColors, zAttributes);
+public float getUpdateCenterY() {
+
+if (neighborZone == null) {
+neighborZone = (CircularZone) m_zoneManager.getZone(&quot;yellow zone&quot;);
+

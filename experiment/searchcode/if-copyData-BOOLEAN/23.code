@@ -1,0 +1,9 @@
+protected static final Logger logger = Logger.getLogger( PasteStructureCommand.class.getName( ) );
+private IStructure copyData;
+private Object container;
+
+public PasteStructureCommand( IStructure copyData, Object container )
+public boolean canExecute( )
+{
+return DNDUtil.handleValidateTargetCanContain( container, copyData );
+

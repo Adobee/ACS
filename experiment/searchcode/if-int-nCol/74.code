@@ -1,0 +1,9 @@
+* @param nCol number of columns in this matrix.
+*/
+public GMatrix(int nRow, int nCol) {
+if (nRow < 0)
+* @param nCol number of desired columns in this matrix
+*/
+public final void setSize(int nRow, int nCol)  {
+if (nRow < 0 || nCol < 0)
+

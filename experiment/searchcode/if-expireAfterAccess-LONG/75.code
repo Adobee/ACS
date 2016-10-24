@@ -1,0 +1,9 @@
+public interface ICacheManager {
+
+public final static String GLOBAL_KEY = &quot;ALL_CACHE_MANAGERS&quot;;
+
+public final static long DEFAULT_CACHE_CAPACITY = 1000;
+public ICache createCache(String name, long capacity, long expireAfterWrite,
+long expireAfterAccess);
+}
+

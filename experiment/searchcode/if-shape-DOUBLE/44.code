@@ -1,0 +1,10 @@
+import java.awt.geom.Line2D;
+import java.awt.Shape;
+
+final class Line extends BaseObject {
+private Line2D.Double shape;
+private Shape[] updateAnchors() {
+if (anchors == null) {
+anchors = new Shape[] {
+new Ellipse2D.Double(shape.x2 - 5, shape.y2 - 5, 10, 10),
+

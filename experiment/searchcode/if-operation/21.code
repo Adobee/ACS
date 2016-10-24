@@ -1,0 +1,6 @@
+case &quot;jmp&quot;:
+if (target instanceof OperandMemory) {
+this.addMicroOperation(new MicroOperation(MicroOperation.IR031, MicroOperation.EMAR));
+} else if (target instanceof OperandRegister) {
+this.addMicroOperation(new MicroOperation(MicroOperation.R, MicroOperation.EMAR));
+

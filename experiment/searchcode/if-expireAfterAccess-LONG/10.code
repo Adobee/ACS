@@ -1,0 +1,6 @@
+public ClusteredRedisCache(String name, AbstractCacheFactory cacheFactory, long capacity,
+long expireAfterWrite, long expireAfterAccess, ICacheLoader cacheLoader,
+long expireAfterWrite = getExpireAfterWrite();
+long expireAfterAccess = getExpireAfterAccess();
+if (expireAfterAccess > 0 || expireAfterWrite > 0) {
+

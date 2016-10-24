@@ -1,0 +1,5 @@
+while ((token = parser.nextToken()) != XContentParser.Token.END_OBJECT) {
+if (token == XContentParser.Token.START_OBJECT) {
+serializeObject(settings, sb, path, parser, currentFieldName);
+} else if (token == XContentParser.Token.START_ARRAY) {
+

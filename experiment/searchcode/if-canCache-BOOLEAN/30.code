@@ -1,0 +1,14 @@
+protected void fillStream(OutputStream os) throws IOException {
+String sp = getParameterValue(&quot;path&quot;, &quot;&quot;, 0);
+if (sp.isEmpty()) {
+os.write(mf.getThumbnailData(null));
+}
+os.close();
+}
+
+@Override
+protected boolean canCache() {
+return true;
+}
+}
+

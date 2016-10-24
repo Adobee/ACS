@@ -1,0 +1,10 @@
+this.totalWeight += n2;
+ValueAxis valueAxis = this.getRangeAxis();
+if (valueAxis != null) {
+this.notifyListeners(new PlotChangeEvent(this));
+}
+
+public void remove(CategoryPlot categoryPlot) {
+ValueAxis valueAxis;
+if (categoryPlot == null) {
+

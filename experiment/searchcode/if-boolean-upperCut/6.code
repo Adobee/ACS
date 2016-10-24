@@ -1,0 +1,9 @@
+public class Uppercut extends Swing {
+private ISwinger weapon;
+
+public Uppercut(int damage, int reach, int swingFrames, IRectangleFactoryAdapter rectangleFactory, IPhysicsModel owner, ISwinger weapon) {
+public void onCollision(IPhysicsObject otherObject, CollisionData collisionSide, boolean isSolid) {
+super.onCollision(otherObject, collisionSide, isSolid);
+
+if (otherObject instanceof ICombatModel &amp;&amp; !isOwner(otherObject)){
+

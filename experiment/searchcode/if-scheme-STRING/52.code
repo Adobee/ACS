@@ -1,0 +1,12 @@
+public class MetaDataSchemeFactory {
+
+private HashMap<String, MetaDataScheme> schemeMap;
+
+public MetaDataSchemeFactory() {
+throw new MetaDataException(&quot;元数据组已经登记，无法注册&quot;);
+}
+}
+
+public synchronized MetaDataScheme get_scheme(String datagroup) {
+if (datagroup != null)
+

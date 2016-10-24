@@ -1,0 +1,11 @@
+public boolean tap( float x, float y, int count, int button, GestureDetector gestures ) {
+if ( count >= 2 ) {
+if ( world.getWorld().getMoney() + tower.getWeapon().type.value >= newWeapon.cost &amp;&amp; world.getDef().changeWeapon(tower, newWeapon) ) {
+resetCamera();
+}
+}
+
+public boolean canChangeTower( Tower tower ) {
+
+if ( tower != null &amp;&amp; world.getDef().canChangeTowers(this.tower.ID, tower.ID, name) ) {
+

@@ -1,0 +1,14 @@
+public class MapProjection {
+
+private double SCALING_FACTOR = 280;
+private double dec;
+private double ra;
+private double cartX;
+public Point2D.Double setOAProj(){
+
+//	if (ra < 0) ra = ra + 360;
+
+SCALING_FACTOR = 380;
+
+double x = Math.cos(Math.toRadians(dec)) * Math.sin(Math.toRadians(ra));
+

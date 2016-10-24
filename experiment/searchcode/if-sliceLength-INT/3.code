@@ -1,0 +1,11 @@
+public FixedByteSlice2IntOpenHashMap(int sliceLength, int expected, float f) {
+if (f <= 0 || f > 1) {
+throw new IllegalArgumentException(
+for (int i = pos * sliceLength, j = keyOffset; j < keyOffset + sliceLength; i++, j++) {
+if (key[i] != keySrc[j]) return false;
+}
+return true;
+}
+
+public int getPos(byte[] keySrc) {
+

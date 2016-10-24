@@ -1,0 +1,9 @@
+* class description of the given object.
+*/
+public static String showClass(Object o)
+{
+String cn = o.getClass().getName();
+int lastDot = cn.lastIndexOf(&#39;.&#39;);
+if (lastDot > -1)
+cn = cn.substring(lastDot + 1);
+

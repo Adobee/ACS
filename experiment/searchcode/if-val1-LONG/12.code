@@ -1,0 +1,7 @@
+public static Object doOperations(int type1, Object val1, int operation, int type2, Object val2) {
+if (type1 == -1)
+type1 = val1 == null ? DataTypes.OBJECT : __resolveType(val1.getClass());
+
+if (type2 == -1)
+type2 = val2 == null ? DataTypes.OBJECT : __resolveType(val2.getClass());
+

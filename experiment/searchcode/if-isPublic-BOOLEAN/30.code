@@ -1,0 +1,11 @@
+private boolean deleted;
+private boolean isPublic;
+private URI owner;
+
+public Change() {}
+public Change(Entity e, boolean deleted) {
+this.owner = e.getOwner();
+this.isPublic = e.isPublic();
+}
+public Change(URI myPath, URI owner, boolean isPublic, boolean deleted) {
+

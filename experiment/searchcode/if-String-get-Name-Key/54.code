@@ -1,0 +1,9 @@
+this.keyMap = Collections.unmodifiableMap(new HashMap<String, Object>(keyMap));
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+for (String keyElementName : keyMap.keySet()) {
+if (keyMap.get(keyElementName) != null &amp;&amp; that.keyMap.get(keyElementName) != null &amp;&amp; !keyMap.get(keyElementName).equals(that.keyMap.get(keyElementName))) {
+

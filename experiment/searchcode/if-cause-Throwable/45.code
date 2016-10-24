@@ -1,0 +1,8 @@
+private Throwables() {
+}
+
+public static <X extends Throwable> void propagateIfInstanceOf(@Nullable Throwable throwable, Class<X> declaredType) throws Throwable {
+while (true) {
+Throwable cause = throwable.getCause();
+if (cause == null) {
+

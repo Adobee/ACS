@@ -1,0 +1,8 @@
+private static double interpolateX2(double x, double y, double xs, int x0,
+int x1, int iy, long seed, WorkerNoise2 noisefunc) {
+double v2 = noisefunc.calculate(x, y, x1, iy, seed);
+return lerp(xs, v1, v2);
+}
+
+private static double interpolateXY2(double x, double y, double xs,
+

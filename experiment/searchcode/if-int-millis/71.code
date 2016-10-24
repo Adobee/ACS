@@ -1,0 +1,11 @@
+public int getRemainingMillis() {
+if ( isRunning ) {
+long now = System.currentTimeMillis();
+int elapsed = (int)(now - lastUpdateMillis);
+return timeRemainingMillis;
+}
+
+@Override
+public void setRemainingMillis(int millis) {
+if ( isRunning ) {
+

@@ -1,0 +1,7 @@
+public BackgroundIndexer(String index, String type, Client client, int numOfDocs) {
+this(index, type, client, numOfDocs, RandomizedTest.scaledRandomIntBetween(2, 5));
+}
+
+/**
+* Start indexing in the background using a given number of threads. Indexing will be paused after numOfDocs docs has
+

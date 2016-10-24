@@ -1,0 +1,10 @@
+public class Solution {
+public int maxSubArray(int[] A) {
+
+int[] M=new int[A.length];
+M[0]=A[0];
+
+int maxSum=M[0];
+
+for(int j=1;j<A.length;j++)
+

@@ -1,0 +1,9 @@
+public void draw(Graphics2D g2, Rectangle2D titleArea) {
+
+RectangleEdge position = getPosition();
+if (position == RectangleEdge.TOP || position == RectangleEdge.BOTTOM) {
+drawHorizontal(g2, titleArea);
+}
+else if (position == RectangleEdge.LEFT
+|| position == RectangleEdge.RIGHT) {
+

@@ -1,0 +1,13 @@
+List<Integer> first = new ArrayList<>();
+first.add(1);
+if (rowIndex == 1) {
+return first;
+}
+for (int i = 2; i <= rowIndex; i++) {
+public List<Integer> getRow2(int rowIndex) {
+rowIndex += 1;
+if (rowIndex == 0) {
+return new ArrayList<>();
+}
+List<Integer> first = new ArrayList<>(rowIndex);
+

@@ -1,0 +1,12 @@
+public String valueAsString()
+{
+if (!isValueSet) return new String();
+return (isHex) ? &quot;0x&quot;+value.toString(16) : value.toString();
+/** set the value  the parameter, indicate if default */
+public boolean setValue(String valueAsString)
+{
+isValueSet = false;
+value      = null;
+
+if (valueAsString==null) return true;
+

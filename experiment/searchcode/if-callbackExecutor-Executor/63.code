@@ -1,0 +1,7 @@
+private ExecutorService apiExecutor;
+private ExecutorService callbackExecutor;
+private ScheduledExecutorService scheduledExecutor;
+apiExecutor = createExecutor(apiThreadCount);
+callbackExecutor = createExecutor(callbackThreadCount);
+scheduledExecutor = createScheduledExecutor(scheduledThreadCount);
+

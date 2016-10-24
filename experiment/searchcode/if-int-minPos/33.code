@@ -1,0 +1,10 @@
+// TODO Auto-generated constructor stub
+}
+
+@Override
+public SortIterator<T> sort() {
+int minPos;
+for (int i=0; i < elements.length - 1; ++i){
+minPos = findMinRest(i+1);
+if (this.comparator.compare(elements[minPos], elements[i]) < 0){
+

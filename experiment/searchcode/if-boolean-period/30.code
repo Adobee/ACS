@@ -1,0 +1,7 @@
+public static FeedPeriodMatcher getInstance() {
+if (instance == null) {
+instance = new FeedPeriodMatcher();
+for (PeriodType periodType : response.getList()) {
+if (periodType.getKey() == PeriodKey.REG) {
+sportsWithRegulationTime.add(periodType.getSportCode());
+

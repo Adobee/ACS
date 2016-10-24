@@ -1,0 +1,12 @@
+import enums.Condition;
+
+public class Heal extends Rule {
+
+private int amount;
+private int minAmount;
+private int maxAmount;
+private Boolean random;
+
+public Heal(int newAmount) {
+amount = newAmount;
+

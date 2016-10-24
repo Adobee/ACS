@@ -1,0 +1,9 @@
+for(int i=0;i<h-offset;i++)
+for(int j=2;j<w-2;j++)
+if(pix[i*w+j]==0xffffffff)
+temp[(i+offset)*w+j]=0xffffffff;
+for(int i=0;i<h;i++)
+for(int j=offset;j<w;j++)
+if(pix[i*w+j]==0xffffffff)
+temp[i*w+j-offset]=0xffffffff;
+

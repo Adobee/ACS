@@ -1,0 +1,7 @@
+// Assume for the first guess that t = x.
+double currentt = time;
+int nRefinementIterations = 5;
+for (int i=0; i < nRefinementIterations; i++){
+double currentx = xFromT (currentt, A,B,C,D);
+double currentslope = slopeFromT (currentt, A,B,C);
+

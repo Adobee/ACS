@@ -1,0 +1,9 @@
+ValueLong other = (ValueLong)v;
+long result = this.value * other.value;
+if ((this.value == 0L) || (this.value == 1L) || (other.value == 0L) || (other.value == 1L)) {
+public Value divide(Value v)
+{
+ValueLong other = (ValueLong)v;
+if (other.value == 0L) {
+throw DbException.get(22012, getSQL());
+

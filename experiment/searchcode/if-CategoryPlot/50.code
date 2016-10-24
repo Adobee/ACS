@@ -1,0 +1,9 @@
+//import org.jfree.chart.axis.NumberAxis;
+//import org.jfree.chart.plot.CategoryPlot;
+//import org.jfree.chart.plot.PlotOrientation;
+//	        Font labelFont = new Font(&quot;SansSerif&quot;, Font.TRUETYPE_FONT, 12);
+//
+//	        chart.setBackgroundPaint(Color.WHITE);
+//
+//	        CategoryPlot categoryplot = (CategoryPlot) chart.getPlot();
+

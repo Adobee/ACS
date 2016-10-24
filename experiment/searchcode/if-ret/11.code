@@ -1,0 +1,9 @@
+public class EscapeUtil {
+public static String escape(String s) {
+if (s == null) {
+return &quot;&quot;;
+}
+String ret = s;
+ret = ret.replaceAll(&quot;\\%&quot;, &quot;%25&quot;);
+ret = ret.replaceAll(&quot;\r&quot;, &quot;%20&quot;);
+

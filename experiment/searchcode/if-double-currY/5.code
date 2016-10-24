@@ -1,0 +1,11 @@
+double currX = D;
+double currY = 0;
+double currH = 0;
+
+Collections.sort(jobs);
+
+for (int i = 0; i < jobs.size(); i++) {
+currH += j.p;
+} else if (j.isPreemptable == true) {
+// place jangle at (currX, currY), split and place at
+

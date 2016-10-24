@@ -1,0 +1,15 @@
+import com.badlogic.gdx.utils.Array;
+
+public class MapLayers implements Iterable<MapLayer> {
+
+private Array<MapLayer> layers = new Array<MapLayer>();
+for (MapLayer layer : layers) {
+if (name.equals(layer.getName())) {
+return layer;
+}
+}
+return null;
+}
+
+public void addLayer(MapLayer layer) {
+

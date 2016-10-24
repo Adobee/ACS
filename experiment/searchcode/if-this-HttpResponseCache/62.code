@@ -1,0 +1,6 @@
+* Returns the currently-installed {@code HttpResponseCache}, or null if there is no cache
+* installed or it is not a {@code HttpResponseCache}.
+public static HttpResponseCache getInstalled() {
+ResponseCache installed = ResponseCache.getDefault();
+if (installed instanceof HttpResponseCache) {
+

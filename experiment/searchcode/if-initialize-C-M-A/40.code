@@ -1,0 +1,11 @@
+import zty.sdk.game.GameSDK;
+import zty.sdk.listener.InitializeListener;
+import zty.sdk.model.InitializeResult;
+public void onFailure(int errorCode, String errorMessage) {
+initializeListener.onFailure(errorCode, errorMessage);
+if (errorCode != Constants.ERROR_CODE_NET) {
+GameSDK.getOkInstance().initialize();// 重新初始化
+}
+}
+}
+

@@ -1,0 +1,5 @@
+else if (&quot;End&quot;.equals(name)) end();
+else if (&quot;IncrementValue1&quot;.equals(name)) incrementValue1();
+else if (&quot;DecrementValue1&quot;.equals(name)) decrementValue1();
+else if (&quot;IncrementValue2&quot;.equals(name)) incrementValue2();
+

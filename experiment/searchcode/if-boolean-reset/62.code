@@ -1,0 +1,15 @@
+return new LazyBoolean(booleanSupplier);
+}
+
+public boolean getAsBoolean() {
+if (! updated) {
+updated = true;
+}
+}
+}
+return value;
+}
+public void reset() {
+if (updated) {
+synchronized(this) {
+

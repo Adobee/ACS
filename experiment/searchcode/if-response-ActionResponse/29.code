@@ -1,0 +1,6 @@
+import org.opennaas.core.resources.action.ActionException;
+import org.opennaas.core.resources.action.ActionResponse;
+Response response = command.undo();
+actionResponse.addResponse(response);
+if (response.getStatus() != Response.Status.OK) {
+

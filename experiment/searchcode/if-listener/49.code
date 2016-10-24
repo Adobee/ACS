@@ -1,0 +1,10 @@
+* Created by Administrator on 2015-05-25.
+*/
+public class Connecta extends UntypedActor {
+private final Listener listeners = new Listener();
+listeners.registerListener(_listener);
+}
+@Override
+public void onReceive(Object msg){
+if(msg instanceof Listener) {
+

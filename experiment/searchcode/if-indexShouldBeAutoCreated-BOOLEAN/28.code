@@ -1,0 +1,6 @@
+void checkBulkAction(boolean indexShouldBeAutoCreated, BulkRequestBuilder builder) {
+// bulk operation do not throw MasterNotDiscoveredException exceptions. The only test that auto create kicked in and failed is
+TimeValue timeout;
+if (indexShouldBeAutoCreated) {
+// we expect the bulk to fail because it will try to go to the master. Use small timeout and detect it has passed
+

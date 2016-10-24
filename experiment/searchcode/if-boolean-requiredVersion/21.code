@@ -1,0 +1,9 @@
+logger.debug(&quot;Could not find key &quot; + key);
+nullVersionsMeter.mark();
+}
+if (requiredVersion != null &amp;&amp; requiredVersion.compareTo(Version.NULL_VERSION) != 0 &amp;&amp;
+ret = dependencyResolver.retrievePendingItem(key, requiredVersion);
+
+// race?
+if(ret == null) {
+

@@ -1,0 +1,12 @@
+openGrid[N*N + 1] = true;
+}
+
+public void open(int i, int j) {
+if (i < 1 || i > dim || j < 1 || j > dim)
+wquf2.union((i-1)*dim + j, (i-1)*dim + j + 1);
+}
+}
+
+public boolean isOpen(int i, int j) {
+if (i < 1 || i > dim || j < 1 || j > dim)
+

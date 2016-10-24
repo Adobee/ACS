@@ -1,0 +1,8 @@
+@             magnitude()*StrictMath.sin(angle()),
+@             tolerance);
+@*/
+double imaginaryPart();
+@ public model pure double positiveRemainder(double n, double d) {
+@    n = n % d;
+@    if (n < 0) {
+

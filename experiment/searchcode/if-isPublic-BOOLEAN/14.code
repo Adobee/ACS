@@ -1,0 +1,10 @@
+public static void setString(String key, String value, boolean isPublic) {
+if (isPublic) {
+mEditor.putString(key, value);
+return mSharedPreference.getString(userId() + key, defaultValue);
+}
+}
+
+public static void setBoolean(String key, boolean value, boolean isPublic) {
+if (isPublic) {
+

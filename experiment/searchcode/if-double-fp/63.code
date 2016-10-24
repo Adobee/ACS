@@ -1,0 +1,13 @@
+public LimitedLine(Point3d fp, Point3d sp)
+{
+double ap;
+double bp;
+double cp;
+
+this.initialPoint = fp;
+this.finalPoint = sp;
+this.setD(2 * ap * fp.x - bp * fp.y - cp * fp.z);
+
+if (sp.x != fp.x) {
+this.m = (sp.y - fp.y) / (sp.x - fp.x);
+

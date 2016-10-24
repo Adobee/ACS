@@ -1,0 +1,17 @@
+public class LongComparator implements Comparator<Long> {
+
+@Override
+public int compare(Long o1, Long o2) {
+
+if (((Long) o2).longValue() > ((Long) o1).longValue()) {
+return -1;
+}
+if (((Long) o2).longValue() < ((Long) o1).longValue()) {
+return 1;
+}
+
+return 0;
+}
+
+}
+

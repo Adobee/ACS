@@ -1,0 +1,8 @@
+Partition[] splits = Common.split(parent, i, true, costEstimator);
+//if (i%100 == 0) {
+//System.out.println(i);
+double costReduction = parentCost - (splits[0].getCost() + splits[1].getCost());
+
+
+if (costReduction > parent.costReductionDueToSplit) {
+

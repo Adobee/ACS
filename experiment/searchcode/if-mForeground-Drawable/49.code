@@ -1,0 +1,8 @@
+super.drawableStateChanged();
+if (mForeground != null &amp;&amp; mForeground.isStateful()) {
+mForeground.setState(getDrawableState());
+public void setForeground(Drawable drawable) {
+if (mForeground != drawable) {
+if (mForeground != null) {
+mForeground.setCallback(null);
+

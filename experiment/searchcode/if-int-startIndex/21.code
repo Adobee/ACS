@@ -1,0 +1,11 @@
+public static String wrap(String inputStr, int columnWidth) {
+StringBuilder builder = new StringBuilder();
+
+int startIndex = 0, lastSpaceIndex = -1;
+for (int i = 0; i < inputStr.length(); i++) {
+builder.append(inputStr.substring(startIndex, i)).append(
+&#39;\n&#39;);
+startIndex = i + 1;
+lastSpaceIndex = i;
+} else if (i < builder.length() + columnWidth) {
+

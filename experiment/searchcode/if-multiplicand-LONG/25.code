@@ -1,0 +1,7 @@
+public Long apply(@Nullable Number input) {
+if (input==null) return null;
+return input.longValue() + addend;
+private static Function<Number, Long> timesOld(final long multiplicand) {
+// TODO PERSISTENCE WORKAROUND
+return new Function<Number, Long>() {
+

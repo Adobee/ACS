@@ -1,0 +1,8 @@
+public static final String ELEMENT = &quot;response&quot;;
+
+@Override
+public FeedbackIQ parse(XmlPullParser parser, int initialDepth) throws XmlPullParserException, IOException, SmackException {
+case XmlPullParser.END_TAG:
+if (parser.getDepth() == initialDepth) {
+break outerloop;
+

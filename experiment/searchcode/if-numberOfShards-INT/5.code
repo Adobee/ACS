@@ -1,0 +1,5 @@
+public static IndexSetting with(int numberOfShards, int numberOfReplicas) {
+return settingBuilder(numberOfShards, numberOfReplicas).build();
+public static IndexSetting.Builder settingBuilder(int numberOfShards, int numberOfReplicas) {
+return settingBuilder().defaultAnalyzers().numberOfShards(numberOfShards)
+

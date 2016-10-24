@@ -1,0 +1,14 @@
+e.printStackTrace();
+}
+}
+
+public boolean insertCategories(String categoriesName,int categoriesId){
+try {
+if(!conn.isClosed()){
+stmt.setString(2, categoriesName);
+int flag=stmt.executeUpdate();
+if(flag!=0)
+return true;
+}
+} catch (SQLException e) {
+

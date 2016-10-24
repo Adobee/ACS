@@ -1,0 +1,10 @@
+public static double doubleValue(Double number, double missingValue)
+{
+if(number == null) return missingValue;
+else               return number.doubleValue();
+* @return the appropriate value
+*/
+public static double doubleValue(Double number, double missingValue, double lowerBound)
+{
+if(number == null || number.doubleValue() <lowerBound)  return missingValue;
+

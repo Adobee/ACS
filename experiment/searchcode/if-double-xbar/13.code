@@ -1,0 +1,22 @@
+sumy += yList.get(n);
+n++;
+}
+double xbar = sumx / n;
+double ybar = sumy / n;
+double xxbar = 0.0, yybar = 0.0, xybar = 0.0;
+
+for (int i = 0; i < n; i++) {
+xybar += (xList.get(i) - xbar) * (yList.get(i) - ybar);
+}
+
+double beta1 = xybar / xxbar;
+
+
+double beta0 = ybar - beta1*xbar;
+if(xxbar==0){
+beta1=0;
+}
+return beta1;
+}
+}
+

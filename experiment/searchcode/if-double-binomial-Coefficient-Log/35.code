@@ -1,0 +1,9 @@
+assertTrue(func == exact || (java.lang.Math.abs(func - exact) / avrg) <= .001);
+}
+}
+
+
+private static double exactBinomialCoefficientLog(long n, long k) {
+if (k > (n / 2))
+return exactBinomialCoefficientLog(n, n - k);
+

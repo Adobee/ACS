@@ -1,0 +1,14 @@
+auto_return = past.calculate_move(height, width, boardwidth);
+
+if (nextx == x &amp;&amp; nexty == y)
+{
+if (parent != null)
+parent.past = null; // social suicide
+
+return auto_return;
+}
+
+double speed = 1;
+
+if (x > nextx)
+

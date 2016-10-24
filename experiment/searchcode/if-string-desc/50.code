@@ -1,0 +1,8 @@
+public class DefaultCodeDescMapper implements CodeDescMapper {
+Map<String, String> map = new HashMap<String, String>();
+public void addMapping(String key, String code) {
+if (&quot;_&quot;.equals(key)) defaultDesc = code;
+else map.put(key, code);
+}
+}
+

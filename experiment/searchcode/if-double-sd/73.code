@@ -1,0 +1,16 @@
+double max = Double.NEGATIVE_INFINITY;
+
+public void include(double d) {
+arr[pos++] = d;
+sum += d;
+if (d < min) {
+min = d;
+}
+if (d > max) {
+max = d;
+}
+}
+
+public double mean() {
+return sum/pos;
+

@@ -1,0 +1,10 @@
+public class PortScanTableModel extends AbstractTableModel{
+private Object[][] rowData;
+private String[] columnNames;
+
+public PortScanTableModel(Object[][] rowData,String[] columnNames){
+public boolean isCellEditable(int row,int column){
+if(column==4)
+return(true);
+return(false);
+

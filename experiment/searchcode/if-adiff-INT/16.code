@@ -1,0 +1,19 @@
+for (DMPDiff aDiff : this.diffs)
+{
+if (aDiff.operation != DiffMatchPatch.Operation.INSERT)
+{
+txt += aDiff.text;
+}
+}
+return txt;
+for (DMPDiff aDiff : this.diffs)
+{
+if (aDiff.operation != DiffMatchPatch.Operation.DELETE)
+{
+txt += aDiff.text;
+}
+}
+return txt;
+}
+}
+

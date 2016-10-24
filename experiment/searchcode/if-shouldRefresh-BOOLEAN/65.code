@@ -1,0 +1,12 @@
+private static Logger LOG = Logger.getLogger(ViewRefresher.class);
+
+public static interface ViewBinder {
+public String getKey();
+public boolean shouldRefresh();
+public final ViewBinder getBinder() {
+return mBinder;
+}
+
+public final boolean shouldRefresh() {
+ViewBinder binder = getBinder();
+

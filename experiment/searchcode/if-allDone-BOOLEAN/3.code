@@ -1,0 +1,10 @@
+threads[i] = new Thread(new SomeBigTask(multyplier * i, multyplier * (i + 1)));
+threads[i].start();
+}
+
+boolean allDone = false;
+while(!allDone) {
+allDone = true;
+for(Thread thread : threads) {
+allDone = allDone &amp;&amp; !thread.isAlive();
+

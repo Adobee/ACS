@@ -1,0 +1,8 @@
+else {
+final Class<?> toComponentType = toClass.getComponentType();
+
+if (from.length == 0) {
+return Arrays.copyOf(from, from.length, (Class<? extends Object[]>) toClass);
+}
+else if (from[0] != null &amp;&amp; from[0].getClass() == toComponentType) {
+

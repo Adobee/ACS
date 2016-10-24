@@ -1,0 +1,6 @@
+private final double orthoTolerance;
+/** Threshold for QR ranking. */
+private final double qrRankingThreshold;
+double parRelativeTolerance,
+double orthoTolerance,
+

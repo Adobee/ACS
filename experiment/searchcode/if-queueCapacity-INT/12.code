@@ -1,0 +1,12 @@
+public class SimplePacketQueueFactory implements WriteQueueFactory<PacketQueue> {
+
+private final int queueCapacity_;
+
+public SimplePacketQueueFactory() {
+public SimplePacketQueueFactory(int queueCapacity) {
+queueCapacity_ = queueCapacity;
+}
+
+@Override
+public SimplePacketQueue newWriteQueue() {
+

@@ -1,0 +1,10 @@
+private static final long signumOffset;
+private static final long magOffset;
+
+public JDKBigInt(byte[] val) {
+if(val.length == 0) {
+} else {
+if(val[0] < 0) {
+this.mag = makePositive((byte[])val);
+this.signum = -1;
+

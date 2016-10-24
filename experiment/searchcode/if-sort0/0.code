@@ -1,0 +1,12 @@
+super(&quot;Stooge Sort&quot;);
+}
+
+@Override
+protected void sort(int[] a) {
+stoogeSort0(a, 0, a.length - 1);
+}
+
+private void stoogeSort0(int[] a, int low, int high) {
+if (a[low] > a[high])
+swap(high, low);
+

@@ -1,0 +1,8 @@
+return true;
+}
+
+public boolean connect(IUnknown pSinkIntf, String riid, long provConnID) {
+if (riid.equals(&quot;calculadora.opencom.IAddition&quot;)){
+return this.rcSubtract.connectToRecp(pSinkIntf, riid, provConnID);
+} else if (riid.equals(&quot;calculadora.opencom.IMultiplication&quot;)){
+

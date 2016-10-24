@@ -1,0 +1,10 @@
+private boolean verifyHostName(String hostName, X509Certificate certificate) {
+hostName = hostName.toLowerCase(Locale.US);
+boolean hasDns = false;
+for (String altName : getSubjectAltNames(certificate, ALT_DNS_NAME)) {
+return true;
+}
+}
+if (!hasDns) {
+String cn = new DistinguishedNameParser(certificate.getSubjectX500Principal()).findMostSpecific(&quot;cn&quot;);
+

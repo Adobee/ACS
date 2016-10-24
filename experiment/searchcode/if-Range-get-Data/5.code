@@ -1,0 +1,12 @@
+this.range = range;
+if(this.range == null)
+{
+this.range = new RangeData(null, null, null);
+end_edit.reset();
+delta_edit.reset();
+}
+
+public Data getData()
+{
+return new RangeData(begin_edit.getData(), end_edit.getData(), delta_edit.getData());
+

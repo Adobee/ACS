@@ -1,0 +1,7 @@
+public SatisItem findSatisItemByIdkey(String idkey) {
+SatisItem found = null;
+for (int i = 0; i < size(); i++) {
+SatisItem satis = (SatisItem) get(i);
+if (satis.getIdkey().equals(idkey)) {
+found = satis;
+

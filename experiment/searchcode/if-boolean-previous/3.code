@@ -1,0 +1,10 @@
+public class RecamanSequence implements NumberSequence<Integer> {
+
+private SparseBooleanArray previousValues = new SparseBooleanArray();
+
+@Override
+public Integer getNumber(int index) {
+} else {
+Integer previous = getNumber(index - 1);
+if (previous - index > 0 &amp;&amp; previousValues.get((previous - index)) == false) {
+

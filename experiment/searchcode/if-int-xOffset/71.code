@@ -1,0 +1,9 @@
+private void checkBackTouch(int x, int y){
+if((x >= this.xOffset * 3 - this.game.font.getData().lineHeight &amp;&amp; x <= (this.xOffset * 3 - this.game.font.getData().lineHeight) + this.xOffset) &amp;&amp; (y >= this.yOffset * 4 - this.buttonHeight - this.game.font.getData().lineHeight &amp;&amp; y <= this.yOffset * 4 - this.game.font.getData().lineHeight))
+this.game.setScreen(new TutorialMenuScreen(this.game));
+}
+
+private void checkPreviousTouch(int x, int y){
+if((x >= (this.xOffset/2))
+&amp;&amp; (x <= (this.xOffset/2) + this.xOffset)
+

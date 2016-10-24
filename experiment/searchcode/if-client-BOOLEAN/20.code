@@ -1,0 +1,16 @@
+package object;
+
+public class Server {
+private Client serveClient = null;
+
+public Server() {
+this.serveClient = null;
+}
+
+public boolean isBusy() {
+if (this.serveClient != null)
+return true;
+return false;
+}
+}
+

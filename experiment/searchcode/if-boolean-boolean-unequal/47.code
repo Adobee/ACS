@@ -1,0 +1,15 @@
+Object result = op.evaluate(Boolean.TRUE, Double.valueOf(4.5));
+if ((Boolean) result)
+{
+fail(&quot;Unequal types cannot be equal&quot;);
+}
+}
+catch (Exception e)
+Object result = op.evaluate(new Object(), Boolean.FALSE);
+if ((Boolean) result)
+{
+fail(&quot;Unequal types cannot be equal&quot;);
+}
+}
+catch (Exception e)
+

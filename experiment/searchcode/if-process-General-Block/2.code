@@ -1,0 +1,9 @@
+import se.kth.ssvl.tslab.wsn.general.servlib.bundling.blocks.BlockInfo.list_owner_t;
+import se.kth.ssvl.tslab.wsn.general.servlib.bundling.bundles.Bundle;
+assert (source.data_offset() != 0) : &quot;UnKnownBlockProcess: Data offset 0&quot;;
+
+int flags = source.flags();
+
+if (last) {
+flags |= block_flag_t.BLOCK_FLAG_LAST_BLOCK.getCode();
+

@@ -1,0 +1,8 @@
+public CholeskyDecomposition(final RealMatrix matrix, final double relativeSymmetryThreshold, final double absolutePositivityThreshold) {
+
+if(!matrix.isSquare()) {
+final double[] ltI = lTData[i];
+// check diagonal element
+if(ltI[i] <= absolutePositivityThreshold) {
+throw new NonPositiveDefiniteMatrixException(ltI[i], i, absolutePositivityThreshold);
+

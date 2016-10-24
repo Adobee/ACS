@@ -1,0 +1,7 @@
+public class BinomialDistribution implements IDiscreteDistribution{
+
+private int numberOfTrials; // number of trials
+private double probability; // success probability in each trial
+public double LogProbabilityMassFunction(int k) {
+if (k < 0 || k > numberOfTrials) return Double.NEGATIVE_INFINITY;
+

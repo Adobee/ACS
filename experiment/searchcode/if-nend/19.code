@@ -1,0 +1,15 @@
+this.adView = null;
+}
+
+public void onClick(NendAdView paramNendAdView)
+{
+if (this.listener != null) {
+this.listener.onTouchAd(this);
+this.listener.onFailedToReceiveAd(this);
+}
+}
+
+public void onReceiveAd(NendAdView paramNendAdView)
+{
+if (this.listener != null)
+

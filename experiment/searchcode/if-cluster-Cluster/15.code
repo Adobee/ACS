@@ -1,0 +1,8 @@
+private Map<Cluster, Map<Cluster, Double>> processMatrix(Map<Cluster, Map<Cluster, Double>> clusterMap, ClusterTuple clusterTuple) {
+Cluster c1 = clusterTuple.getC1();
+Cluster c2 = clusterTuple.getC2();
+if(!clusterMap.containsKey(c1) || !clusterMap.containsKey(c2)) {
+for(Cluster cluster: clusterMap.keySet()) {
+if(cluster != c1 &amp;&amp; cluster != c2 &amp;&amp; cluster != mergedCluster) {
+double d1 = clusterMap.get(cluster).get(c1);
+

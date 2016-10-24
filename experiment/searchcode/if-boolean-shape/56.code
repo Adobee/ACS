@@ -1,0 +1,13 @@
+private List<Shape> childShapes = new ArrayList<Shape>();
+private boolean hidden = false;
+
+public void draw() {
+if (hidden) {
+return;
+}
+
+for (Shape shape : childShapes) {
+for (Shape shape : childShapes) {
+if (shape instanceof CompositeLayer) {
+((CompositeLayer) shape).hide();
+

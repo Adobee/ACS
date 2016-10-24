@@ -1,0 +1,9 @@
+static public double Factorial(double num) {
+double fact = 1;
+if (num < 0)
+return Double.NaN;
+else if (num % 1 == 0)
+double tmp1 = Math.sqrt(2*Math.PI/num);
+double tmp2 = num + 1.0/(12 * num - 1.0/(10*num));
+tmp2 = Math.pow(num/Math.E, num);
+

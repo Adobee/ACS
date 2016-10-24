@@ -1,0 +1,6 @@
+Map<DateTimeField, Integer> dateExtracted = dateExtractor.extract(input, extractFormat);
+if(pmDetector.hasPM(input)&amp;&amp;dateExtracted.get(DateTimeField.Hour)!=null){
+// Returns the hash passed with Gregorian Date Included if can be deduced
+// from other properties
+private Map<DateTimeField, Integer> withGregorianDate(Map<DateTimeField, Integer> dateExtracted) {
+

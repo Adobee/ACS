@@ -1,0 +1,12 @@
+this.earthMax = earthMax;
+}
+
+int maxTime(boolean earthtime) {
+if (earthtime) {
+return earthMax;
+public void inputChange(int inIdx, boolean state) {
+if (state) {
+int time;
+
+if (earthtime) {
+

@@ -1,0 +1,7 @@
+One situation in particular requires the use of <?> rather than a raw type. If you pass a raw type to a method that
+uses <?>, it’s possible for the compiler to infer the actual type parameter, so that the method can turn around and
+Holder<?> hDouble = new Holder<Double>(1.0);
+f2(hDouble);
+}
+}
+

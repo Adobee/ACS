@@ -1,0 +1,12 @@
+public class StyleSubstitution implements StyleTranslator {
+
+private String source;
+private String destination;
+
+public StyleSubstitution(String source, String destination) {
+return destination;
+}
+
+public String translate(Attribute source) {
+if (!source.getName().equals(this.source)) return null;
+

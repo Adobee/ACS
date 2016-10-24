@@ -1,0 +1,8 @@
+import okhttp3.OkHttpClient;
+
+public class Main {
+
+public static void performRequest() throws Exception {
+okhttp3.Request realReq = builder.get().url(&quot;http://localhost:1234/test?a=23&quot;).build();
+okhttp3.Response realRes = client.newCall(realReq).execute();
+

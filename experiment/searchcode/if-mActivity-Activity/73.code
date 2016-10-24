@@ -1,0 +1,14 @@
+private MainActivity mActivity;
+
+public OnClearClickListener(MainActivity activity){
+mActivity = activity;
+}
+
+@Override
+public void onClick(View v)
+{
+if (mActivity != null)
+{
+mActivity.loadMainFragment();
+File file[] = mActivity.getFilesDir().listFiles();
+

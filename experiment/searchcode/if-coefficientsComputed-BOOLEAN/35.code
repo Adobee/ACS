@@ -1,0 +1,12 @@
+private double x[], y[];
+
+/**
+* Whether the polynomial coefficients are available.
+*/
+private boolean coefficientsComputed;
+public double[] getCoefficients() {
+if (!coefficientsComputed) {
+computeCoefficients();
+}
+double[] out = new double[coefficients.length];
+

@@ -1,0 +1,6 @@
+String tquery = query.getQuery() ;
+if(!StringUtil.isEmpty(tquery)) {
+BoolQueryBuilder textQuery = QueryBuilders.boolQuery() ;
+if(query.getTitle()) {
+TextQueryBuilder fbuilder = QueryBuilders.textPhrase(&quot;entities.mainContent.title&quot;, query.getQuery()) ;
+

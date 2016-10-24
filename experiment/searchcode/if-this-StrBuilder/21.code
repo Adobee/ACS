@@ -1,0 +1,16 @@
+int cell = 0;
+
+for (HtmlInput<?> i : this.inputs.values())
+{
+if (i.isHidden()) continue;
+
+if (cell % columns == 0)
+strBuilder.append(&quot;<td>&quot;).append(i.getLabel()).append(&quot;</td><td>&quot;).append(i.toHtml()).append(&quot;</td>&quot;);
+
+cell++;
+}
+
+if (this.inputs.size() > 0) strBuilder.append(&quot;</tr>\n&quot;);
+
+strBuilder.append(&quot;</table>\n&quot;);
+

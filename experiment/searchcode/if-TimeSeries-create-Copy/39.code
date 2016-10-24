@@ -1,0 +1,12 @@
+throw new CoreException( status );
+}
+}
+
+public void copyTimeseries( final IProgressMonitor monitor )
+{
+final String name = Messages.getString( &quot;TimeseriesImporter_2&quot;, m_sourceDir.getName() ); //$NON-NLS-1$
+final File sourceTimeseriesDir = m_sourceDir;
+
+/* Return, if directory does not exist */
+if( !sourceTimeseriesDir.isDirectory() )
+

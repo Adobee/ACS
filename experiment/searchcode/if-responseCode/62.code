@@ -1,0 +1,12 @@
+package jhttp.handler;
+
+import jhttp.Request;
+import jhttp.ResponseCode;
+
+
+public class HEADHandler implements RequestHandler {
+if (!request.getResource().exists()) {
+return request.buildResponse(ResponseCode.FILE_NOT_FOUND, &quot;&quot;);
+}
+if (!request.getResource().canRead()) {
+

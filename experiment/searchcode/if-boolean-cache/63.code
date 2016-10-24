@@ -1,0 +1,7 @@
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
+@Entity
+@DiscriminatorValue(&quot;BOOLEAN&quot;)
+@Cache(usage = CacheConcurrencyStrategy.READ_ONLY)
+public class BooleanDomainSetting extends StringDomainSetting implements Serializable {
+

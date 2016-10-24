@@ -1,0 +1,15 @@
+public SegmentBBox(Point2d a, Point2d b) {
+if (Triangulator.pointCompare(a, b) < 0) {
+pointBounds[0] = a;
+pointBounds[1] = b;
+return false;
+}
+if (yBounds[0] > yBoundsB[1]) {
+return false;
+}
+
+return true;
+}
+
+public boolean segmentOverlaps(Point2d a, Point2d b) {
+

@@ -1,0 +1,12 @@
+public class InputGamepadAxis extends InputBase {
+
+public int axisIndex;
+public int axisDirection;
+public void poll(){
+
+float axis = controller.getAxis(axisIndex);
+
+active = 0;
+
+if ((Math.signum(axis) == axisDirection) &amp;&amp; (Math.abs(axis) >= deadzone))
+

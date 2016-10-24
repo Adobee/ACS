@@ -1,0 +1,10 @@
+public List<ClazzMenuDto> getSecondClazzMenu(Long parentId) {
+if (parentId == 0) {
+return null;
+}
+List<ClazzMenu> clazzMenuList = clazzMenuDao
+ClazzMenu clazzMenu = new ClazzMenu();
+clazzMenu.setName(clazzMenuName);
+if (parentId != null) {
+ClazzMenu parent = clazzMenuDao.getById(parentId);
+

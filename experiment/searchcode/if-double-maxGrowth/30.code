@@ -1,0 +1,8 @@
+/*  21:    */   private double safety;
+/*  22:    */   private double minReduction;
+/*  23:    */   private double maxGrowth;
+/* 103:    */   public void setMaxGrowth(double maxGrowth)
+/* 104:    */   {
+/* 105:271 */     this.maxGrowth = maxGrowth;
+/* 106:    */   }
+

@@ -1,0 +1,11 @@
+public abstract class CommandEventListener implements EventListener
+{
+@Override
+public final boolean handle(Event event)
+{
+if (!(event instanceof CommandEvent))
+return isAccepting(e, e.getType()) ? onReceive(e, e.getType()) : false;
+}
+
+protected boolean isAccepting(CommandEvent event, CommandEvent.Type type)
+

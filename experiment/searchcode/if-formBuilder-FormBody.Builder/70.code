@@ -1,0 +1,8 @@
+protected Boolean doInBackground(Void... params) {
+
+FormBody.Builder formBuilder = new FormBody.Builder();
+final String accessCode = _sharedPreferences.getString(_context.getString(R.string.extra_access_token), &quot;&quot;);
+
+if (_type == AccessType.ACCESS) {
+formBuilder.add(&quot;token&quot;, _sharedPreferences.getString(_context.getString(R.string.extra_access_token), &quot;null&quot;));
+

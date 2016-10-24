@@ -1,0 +1,9 @@
+public int id;
+
+// Saves the state of the object
+public enum DirtyState {
+UNMODIFIED, // Nothing changed
+// Holds the local copy dirty state (in case it hasn&#39;t been sync&#39;d yet with the remote copy)
+// - see DirtyState enum
+public DirtyState dirtyState = DirtyState.UNMODIFIED;
+

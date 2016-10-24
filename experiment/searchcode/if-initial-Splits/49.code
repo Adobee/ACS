@@ -1,0 +1,6 @@
+public SourceInputSplit<T>[] createInputSplits(int numSplits) throws IOException {
+long desiredSizeBytes;
+try {
+desiredSizeBytes = initialSource.getEstimatedSizeBytes(options) / numSplits;
+List<? extends Source<T>> shards = initialSource.splitIntoBundles(desiredSizeBytes,
+

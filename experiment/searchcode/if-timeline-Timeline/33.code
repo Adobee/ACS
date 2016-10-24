@@ -1,0 +1,6 @@
+public Timeline fromType(String type, Date startDate) {
+if (&quot;global&quot;.equalsIgnoreCase(type)) {
+return new GlobalTimeline(startDate, db);
+} else if (&quot;month&quot;.equalsIgnoreCase(type)) {
+return new MonthTimeline(startDate, db);
+

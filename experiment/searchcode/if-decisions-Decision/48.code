@@ -1,0 +1,10 @@
+private List<Decision> decisions = new Vector<Decision>();
+private final Set<InputHandler> calls;
+private final CFGFunction function;	// The function or script that this scenario starts with.
+public Likelihood getLikelihood() {
+
+int yes = 0, no = 0, maybe = 0;
+for(Decision decision : decisions) {
+
+if(decision.getLikelihood() == Likelihood.YES) yes++;
+

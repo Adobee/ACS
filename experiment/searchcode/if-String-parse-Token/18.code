@@ -1,0 +1,7 @@
+protected void parse(Lexer lexer, List<ASTNode> results) throws ParseException {
+Token token = lexer.read();
+if (token.isIdentifier()) {
+for (String tokenString : _tokenStrings) {
+if (tokenString.equals(token.getText())) {
+find(results, token);
+

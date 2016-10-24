@@ -1,0 +1,7 @@
+public void onReceived(String source, Message message) {
+if (message.getType() == MessageType.COMMIT) {
+TestReceiver receiver1 = new TestReceiver(1);
+TestReceiver receiver2 = new TestReceiver(1);
+NettyTransport transport1 =
+new NettyTransport(server1, receiver1, getDirectory());
+

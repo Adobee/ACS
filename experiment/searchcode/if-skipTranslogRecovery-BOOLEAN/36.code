@@ -1,0 +1,6 @@
+// to be computed on a per-shard basis
+if (indexSettings.getAsBoolean(IndexCacheModule.QUERY_CACHE_EVERYTHING, false)) {
+public Engine.CommitId flush(FlushRequest request) throws ElasticsearchException {
+boolean waitIfOngoing = request.waitIfOngoing();
+boolean force = request.force();
+

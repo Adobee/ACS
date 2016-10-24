@@ -1,0 +1,13 @@
+public void add(HTMLPage page) {
+
+}
+
+private boolean canCache;
+private DotCacheAdministrator cache;
+
+private String group = &quot;BlockDirectiveCache&quot;;
+public String get(String key, int ttl) {
+if(!canCache)return null;
+try {
+BlockDirectiveCacheObject cto = (BlockDirectiveCacheObject) cache.get(key, group);
+

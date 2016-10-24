@@ -1,0 +1,8 @@
+public void seek(long position) throws IOException {
+if(position < 0L) {
+throw new IOException(&quot;Invalid seek to &quot; + position + &quot; in file &quot; + file.getFile());
+try {
+
+// Update the readable file length
+if (position + (long) len > writeLength) {
+

@@ -1,0 +1,13 @@
+int size = pendingPostPool.size();
+//判断是否有可用对象
+if (size > 0) {
+//判断池子中对象个数是否超过预设值
+if (pendingPostPool.size() < 10000) {
+//没有超过就将对象放置到对象池中
+pendingPostPool.add(pendingPost);
+}
+}
+}
+
+}
+

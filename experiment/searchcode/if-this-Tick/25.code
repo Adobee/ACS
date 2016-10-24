@@ -1,0 +1,11 @@
+public DefaultTickEvent(T event, Long tick) {
+this.event = event;
+this.tick = tick;
+}
+
+@Override
+public int compareTo(TickEvent<T> tickEvent) {
+if (this.tick < tickEvent.getTick())
+return -1;
+else if (this.tick == tickEvent.getTick())
+

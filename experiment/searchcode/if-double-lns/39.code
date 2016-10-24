@@ -1,0 +1,8 @@
+public static final Long CONVENIO = 5L;
+public static final Long PERSONAL = 6L;
+
+public static List<Double> valorTarifaAsignacion(
+VehiclesAssignation assignation) throws GWorkException {
+
+Double valorTarifaAsignacion = null;
+

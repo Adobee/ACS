@@ -1,0 +1,7 @@
+public static Call upload(final String url, Map<String, String> textParams, Map<String, File> fileParams, final FileTransportCallback callback) {
+checkMustInUiThread();
+final MultipartBody.Builder multipartBuilder = new MultipartBody.Builder();
+multipartBuilder.setType(MultipartBody.FORM);
+
+Map<String, String> totalParams = OkhttpAppConfig.filterParams(textParams);
+

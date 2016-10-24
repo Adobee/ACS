@@ -1,0 +1,10 @@
+double x1 = max;
+double y0 = f.value(x0);
+double y1 = f.value(x1);
+if ((y0 > 0) == (y1 > 0)) {
+double x2 = x0;
+double y2 = y0;
+double oldDelta = x2 - x1;
+int i = 0;
+while (i < maximalIterationCount) {
+

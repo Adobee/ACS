@@ -1,0 +1,10 @@
+final VRouteDatabase routeDatabase = new VRouteDatabase();
+boolean cleanupRunning;
+
+public VConnectionPool() {
+this(5, 5, TimeUnit.MINUTES);
+assert (Thread.holdsLock(this));
+if (!cleanupRunning) {
+cleanupRunning = true;
+executor.execute(cleanupRunnable);
+

@@ -1,0 +1,9 @@
+public static NameProvider getNameProvider() {
+NameProvider nameProvider = cNameProvider.get();
+if (nameProvider == null) {
+return iID;
+}
+String name;
+NameProvider np = getNameProvider();
+if (np instanceof DefaultNameProvider) {
+

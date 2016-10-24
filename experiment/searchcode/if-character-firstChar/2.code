@@ -1,0 +1,10 @@
+public Recognizer put(char firstChar, Recognizer recognizer) {
+if (firstChar < 128)
+fastItems[firstChar] = recognizer;
+public Recognizer get(char firstChar) {
+if (firstChar < 128)
+return fastItems[firstChar];
+return otherItems.get(firstChar);
+}
+}
+

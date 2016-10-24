@@ -1,0 +1,8 @@
+return module;
+}
+
+public void setModule(Module module) {
+if (this.module == null ? module != null : !this.module.equals(module)) {
+this.module = module;
+if (old_module != null) old_module.setCompilationUnit(null);
+

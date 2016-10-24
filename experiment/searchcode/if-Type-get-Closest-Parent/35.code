@@ -1,0 +1,13 @@
+minPathLength = tmpDist;
+}
+}
+
+// build path
+if (closestNode != null){
+
+if (closestNode.getDist() != 0){
+Node temp = closestNode;
+while(temp.getNodeParent() != null){
+path.addFirst(temp.getID());
+temp = temp.getNodeParent();
+

@@ -1,0 +1,6 @@
+private int divideLong(int dividend, int divisor) {
+if (divisor == 0) return Integer.MAX_VALUE;
+if (divisor == 1) return dividend;
+if (dividend == 0) return 0;
+if (dividend < 0 &amp;&amp; divisor > 0) return ~divideLong(~dividend + 1, divisor) + 1;
+

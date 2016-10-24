@@ -1,0 +1,10 @@
+private int intervalPeriod;
+
+public IntervalClock(int intervalPeriodSeconds) {
+if (intervalPeriodSeconds < 1) {
+throw new IllegalArgumentException(&quot;Interval duration must be greater than zero; value supplied: &quot; + intervalPeriodSeconds);
+* @return The current interval
+*/
+public long getCurrentInterval() {
+long currentTimeSeconds = System.currentTimeMillis() / 1000;
+

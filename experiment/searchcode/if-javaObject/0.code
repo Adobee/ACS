@@ -1,0 +1,6 @@
+public D convertToDatabaseColumn(J javaObject) {
+D databaseObject = map.get(javaObject);
+if(databaseObject == null) throw new IllegalArgumentException(&quot;Unknown [&quot; + javaObject +&quot;]&quot;);
+J javaObject = map.inverse().get(databaseObject);
+if( javaObject == null) throw new IllegalArgumentException(&quot;Unknown [&quot; + databaseObject + &quot;]&quot;);
+

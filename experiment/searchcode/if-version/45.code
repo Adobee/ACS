@@ -1,0 +1,7 @@
+public DatabaseVersionSupport withBackwardsCompatibility(DatabaseVersion fromVersion) {
+if (targetVersion.compareTo(fromVersion) < 0)
+throw new IllegalArgumentException(&quot;The backwards compatible version must not be greater than the target version.&quot;);
+
+if (targetVersion.compareTo(fromVersion) > 0)
+this.fromVersion = fromVersion;
+

@@ -1,0 +1,12 @@
+/** The SimplexTableau used by the SimplexSolver. */
+private SimplexTableau tableau;
+
+/**
+* Set the simplex tableau used during the optimization once a feasible
+void setTableau(final SimplexTableau tableau) {
+this.tableau = tableau;
+}
+
+/**
+* Retrieve the best solution found so far.
+

@@ -1,0 +1,11 @@
+* Offset set by the dump detection protocol.
+*/
+private long offsetMillis = 0L;
+
+/**
+* System clock reading set by the last call to {@link #readClock()}.
+final long currentClockReadingMillis = currentTimeMillis + offsetMillis;
+
+// Init
+if (needToSetClockReadingMillis) {
+

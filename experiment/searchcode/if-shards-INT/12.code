@@ -1,0 +1,7 @@
+public Set<String> selectShards(ParameterInfo param) {
+if(allShards.size() == 0) {
+throw new ConfigurationProblemException(&quot;No shards&quot;);
+}
+if(param.getOperation() == Operation.SELECT) {
+String shard = chooseRandomShard();
+

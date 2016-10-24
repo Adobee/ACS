@@ -1,0 +1,10 @@
+public boolean isSameTree(TreeNode p, TreeNode q) {
+
+Boolean flag = false;
+if (p==null &amp;&amp; q == null)
+else if (p.val == q.val)
+flag = Boolean.TRUE;
+
+if(p.left !=null &amp;&amp; q.left !=null)
+flag = isSameTree(p.left,q.left);
+

@@ -1,0 +1,10 @@
+pt.stopAndPrint();
+}
+}
+
+private static void testR(int iters) {
+double[] xSamples = WelfordBench.generateSamples(iters);
+PerformanceTimer pt = new PerformanceTimer(&quot;welford2d-r&quot;);
+for (int i = 0; i < iters; ++i) {
+rs.put(xSamples[i], ySamples[i]);
+

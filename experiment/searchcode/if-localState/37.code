@@ -1,0 +1,7 @@
+while (true)
+{
+State localState = (State)localAtomicReference.get();
+if (localState.isUnsubscribed)
+return;
+if (!localAtomicReference.compareAndSet(localState, localState.set(paramSubscription)))
+

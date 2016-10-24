@@ -1,0 +1,13 @@
+@Override
+public Class returnedClass() {
+return Money.class;
+}
+
+@Override
+public boolean equals(Object x, Object y) throws HibernateException {
+if (value == null) {
+result = null;
+} else {
+final Object deepCopy = deepCopy(value);
+if (!(deepCopy instanceof Serializable)) {
+

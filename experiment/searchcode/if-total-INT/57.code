@@ -1,0 +1,11 @@
+//做递归算法，找出需要递归的东西，然后组成递归方法。这里需要递归使用的东西是total 和 n
+private int count(int n){
+return recurseN(n, n);
+}
+
+private int recurseN(int total,int n){
+if(n>1){
+int next=n-1;
+System.out.println(&quot;total=&quot;+total+ &quot; when next = &quot;+next);
+total= total*next;
+

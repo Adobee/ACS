@@ -1,0 +1,10 @@
+* License along with this library.  If not, see <http://www.gnu.org/licenses/>.
+*
+*/
+package lucee.runtime.util;
+
+import java.io.IOException;
+public BIF loadBIF(PageContext pc, String name) throws InstantiationException, IllegalAccessException {
+// first of all we chek if itis a class
+Class<?> res = lucee.commons.lang.ClassUtil.loadClass(name,null);
+

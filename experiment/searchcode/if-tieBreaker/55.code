@@ -1,0 +1,9 @@
+public class FootballPool {
+ArrayList<Game> pool;
+String date;
+int tiebreakerGameId;
+private String status;
+public void setTieBreakerGame(int tiebreakerGameId) throws NoSuchGameException {
+if (!isValidGameNumber(tiebreakerGameId)) {
+throw new NoSuchGameException();
+

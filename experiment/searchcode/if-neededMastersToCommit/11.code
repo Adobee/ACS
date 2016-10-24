@@ -1,0 +1,6 @@
+boolean committed;  // true if cluster state was committed
+int neededMastersToCommit; // number of master nodes acks still needed before committing
+this.neededMastersToCommit = Math.max(0, minMasterNodes - 1); // we are one of the master nodes
+this.pendingMasterNodes = totalMasterNodes - 1;
+if (this.neededMastersToCommit > this.pendingMasterNodes) {
+

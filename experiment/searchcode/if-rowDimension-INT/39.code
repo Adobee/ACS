@@ -1,0 +1,9 @@
+ArrayList<CellRow> cellRows = null;
+int[] dimension = new int[2];
+
+CellMatrix(ArrayList<CellRow> cellRows) {
+this.cellRows = cellRows;
+private void connect(ActorRef cell, ArrayList<CellRow> cellRows) {
+int rowDimension = dimension[0];
+int columnDimension = dimension[1];
+

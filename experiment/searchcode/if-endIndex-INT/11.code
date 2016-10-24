@@ -1,0 +1,10 @@
+package com.shop.domain;
+
+public class PageIndex {
+private int startindex;
+private int endindex;
+
+public PageIndex(int startindex, int endindex) {
+this.startindex = startindex;
+this.endindex = endindex;
+

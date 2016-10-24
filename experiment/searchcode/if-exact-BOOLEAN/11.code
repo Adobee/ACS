@@ -1,0 +1,10 @@
+* Permanent target file refers to files that are successfully transferred.
+* The exact attribute is true if the target file info and the target
+* file has the same date modified signature. This will give the
+public class TargetFileExistsException extends IOException {
+
+private boolean exact;
+
+public TargetFileExistsException(boolean exact) {
+super( &quot;Target file already exists&quot; + ( exact ? &quot; having an exact match&quot; : &quot;&quot;  )   );
+

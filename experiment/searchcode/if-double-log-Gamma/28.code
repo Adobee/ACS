@@ -1,0 +1,8 @@
+private final double beta;
+
+GammaDistribution(Random random, double alpha, double beta) {
+if (alpha <= 0 || beta <= 0) {
+p = b * random.nextDouble();
+if (p > 1) {
+gamma = -Math.log((b - p) / alpha);
+

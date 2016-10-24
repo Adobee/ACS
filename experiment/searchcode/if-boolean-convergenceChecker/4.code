@@ -1,0 +1,10 @@
+import org.apache.commons.math3.optim.ConvergenceChecker;
+
+/**
+* This checker declares a function convergent if the maximum number of iterations is reached or
+public class MaxIterationChecker<T> implements ConvergenceChecker<T> {
+
+private final int maxIteration;
+
+public MaxIterationChecker(int maxIterations) {
+

@@ -1,0 +1,8 @@
+private int headerTableSizeSetting;
+private int maxDynamicTableByteCount;
+int nextHeaderIndex;
+if ((i &amp; 0x20) == 32)
+{
+maxDynamicTableByteCount = readInt(i, 31);
+if (maxDynamicTableByteCount < 0 || maxDynamicTableByteCount > headerTableSizeSetting)
+

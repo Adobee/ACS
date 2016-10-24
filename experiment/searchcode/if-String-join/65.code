@@ -1,0 +1,10 @@
+public static IQueryJoin rawSql(String sql)
+{
+AbstractSqlQueryJoin queryJoin = (AbstractSqlQueryJoin) factory.createOrderBy(QueryJoinExpressionType.RAW_SQL);
+return type(from,to,null,joinType,null);
+}
+
+public static IQueryJoin type(Class from,Class to,String alias)
+{
+return type(from,to,null,null,alias);
+

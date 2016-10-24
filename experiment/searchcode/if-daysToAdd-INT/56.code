@@ -1,0 +1,10 @@
+import java.util.GregorianCalendar;
+
+public class CalendarWrapper extends GregorianCalendar {
+
+int dayOfWeek;
+long todayInMillis;
+// the &quot;day&quot; param is also the difference between Saturday and specified day
+int daysToAdd = (Calendar.SATURDAY - dayOfWeek + day) % 7;
+c.add(Calendar.DAY_OF_YEAR, daysToAdd);
+

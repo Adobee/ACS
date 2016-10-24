@@ -1,0 +1,9 @@
+public EqualsBuilder append(Object lhs, Object rhs) {
+if (lhs == null) eq = eq &amp;&amp; (rhs == null);
+else eq = eq &amp;&amp; lhs.equals(rhs);
+return this;
+}
+
+public EqualsBuilder append(short[] lhs, short[] rhs) {
+if (lhs == null) eq = eq &amp;&amp; (rhs == null);
+

@@ -1,0 +1,7 @@
+import java.io.FilenameFilter;
+
+public class ConfigureFileFilter implements FilenameFilter {
+public boolean accept(File dir, String name) {
+String lowercaseName = name.toLowerCase();
+if (lowercaseName.startsWith(Activity.ACTIVITY_FILE_PREFIX) &amp;&amp; lowercaseName.endsWith(Activity.ACTIVITY_FILE_EXT)) {
+

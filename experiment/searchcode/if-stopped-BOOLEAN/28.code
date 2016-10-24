@@ -1,0 +1,11 @@
+private final Genesis g;
+private boolean stopped = false;
+
+public GenesisAPI() throws IOException {
+this.g = new Genesis();
+}
+
+public Genesis getGenesis() {
+if(stopped)
+throw new IllegalStateException(&quot;Cannot get Genesis when stopped&quot;);
+

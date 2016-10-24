@@ -1,0 +1,8 @@
+import java.util.*;
+
+public class Solution {
+public String convert(String s, int nRows) {
+int blockSize = 2 * nRows - 2;
+if (nRows <= 2) blockSize = nRows;
+int len = s.length() / blockSize * 2 + 2;
+

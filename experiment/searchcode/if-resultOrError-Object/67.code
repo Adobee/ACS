@@ -1,0 +1,6 @@
+public V get(K key, Errors errors) throws ErrorsException {
+try {
+Object resultOrError = delegate.get(key);
+if (resultOrError instanceof Errors) {
+errors.merge((Errors) resultOrError);
+

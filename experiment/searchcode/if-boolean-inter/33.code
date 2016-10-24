@@ -1,0 +1,13 @@
+interViewDb.setCollectionName(&quot;cn.ohalo.interView&quot;);
+setBaseDb(interViewDb);
+}
+
+public boolean insert(InterViewInfo info) {
+if (StringUtils.isBlank(info.getCode())) {
+info.setCreateDate(new Date());
+return interViewDb.insert(info.toDBObject());
+}
+
+public boolean saveOrUpdate(InterViewInfo info) {
+if (StringUtils.isNotBlank(info.getCode())) {
+

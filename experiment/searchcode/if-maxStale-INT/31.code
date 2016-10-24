@@ -1,0 +1,11 @@
+@Override public Response intercept(Chain chain) throws IOException {
+Request request = chain.request();
+if (!NetworkUtil.isNetworkAvailable()) {
+request = request.newBuilder().cacheControl(CacheControl.FORCE_CACHE).build();
+.removeHeader(&quot;Pragma&quot;)
+.header(&quot;Cache-Control&quot;, &quot;public, only-if-cached, max-stale=&quot; + maxStale)
+.build();
+}
+}
+}
+

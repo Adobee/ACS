@@ -1,0 +1,13 @@
+public final class Dimensions {
+private final int nRows, nCols;
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+
+Dimensions that = (Dimensions) o;
+
+if (nCols != that.nCols) return false;
+if (nRows != that.nRows) return false;
+

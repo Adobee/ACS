@@ -1,0 +1,7 @@
+private static final long serialVersionUID = 4939965573936108738L;
+private InstructionHandle ih;
+private int src_line;
+public LineNumberGen(InstructionHandle ih, int src_line) {
+setInstruction(ih);
+setSourceLine(src_line);
+

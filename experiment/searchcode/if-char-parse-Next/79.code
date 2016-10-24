@@ -1,0 +1,11 @@
+protected boolean isNextChar(char c) {
+if (!isNextBeyondEnd()) {
+moveToNextChar();
+return position + 1 >= toParse.length();
+}
+
+protected void moveToNextChar() {
+if (hasNextChar()) {
+position++;
+} else {
+

@@ -1,0 +1,11 @@
+return searchFirst(elem, l, m);
+}
+
+public int searchLast(long elem, int l, int r) {
+if (r - l <= 1)
+return l;
+
+int m = (l + r) / 2;
+if (a[m] <= elem)
+return searchLast(elem, m, r);
+

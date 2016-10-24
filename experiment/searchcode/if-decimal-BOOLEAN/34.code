@@ -1,0 +1,12 @@
+return x.add(width.divide(new BigDecimal(2)));
+}
+
+public BigDecimal getCenterY() {
+return y.add(height.divide(new BigDecimal(2)));
+}
+
+public Boolean isConflict(Box box) {
+BigDecimal averageHeight = this.height.add(box.getHeight()).divide(new BigDecimal(2));
+
+if (intervalX.compareTo(averageWidth) < 0 &amp;&amp; intervalY.compareTo(averageHeight) < 0) {
+

@@ -1,0 +1,10 @@
+public boolean checkConfrontation(Dragon d) {
+if (!d.isAlive())
+return false;
+
+if ((getVertPos() == d.getVertPos() - 1 &amp;&amp; getHorizPos() == d
+.getVertPos())
+|| (getHorizPos() == d.getHorizPos() + 1 &amp;&amp; getVertPos() == d
+.getVertPos())) {
+if (!d.isAsleep() &amp;&amp; !this.hasSword()) {
+

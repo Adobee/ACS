@@ -1,0 +1,17 @@
+else{
+int d = w==0?1:0;
+for(int k=0;k<3;k++){
+int nh = h + k;
+if(nh > n-1)break;
+if(dist[h][w]+1 < dist[nh][d]){
+dist[nh][d] = dist[h][w]+1;
+q.add(new int[]{nh,d});
+}
+}
+}
+}
+System.out.println(ans==-1?&quot;NA&quot;:ans);
+}
+}
+}
+

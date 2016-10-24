@@ -1,0 +1,8 @@
+int i = relativeUrl.indexOf(&quot;%u&quot;);
+String rel = format(relativeUrl.substring(0, i));
+append = format(relativeUrl.substring(i));
+if (rel.length() == 0) {
+return;
+} else if (decodeIIS &amp;&amp; IISEncDec.isIISencoded(relativeUrl)) {
+this.relativeUrl = IISEncDec.convertToUTF8(format(relativeUrl));
+

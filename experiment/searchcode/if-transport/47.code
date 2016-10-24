@@ -1,0 +1,9 @@
+public void createTransportIfCorrectTest() {
+Transport test = transportDAO.create(transport);
+if (test != null) {
+Transport test = transportDAO.create(transportNull);
+if (test != null) {
+transportDAO.delete(test);
+}
+Assert.assertNull(&quot;It should returns null&quot;, test);
+

@@ -1,0 +1,10 @@
+private final List<HQ_ConnectionSpec> connectionSpecs;
+private int nextModeIndex;
+private boolean isFallbackPossible;
+private boolean isFallback;
+// Any future attempt to connect using this strategy will be a fallback attempt.
+isFallback = true;
+
+if (!isFallbackPossible) {
+return false;
+

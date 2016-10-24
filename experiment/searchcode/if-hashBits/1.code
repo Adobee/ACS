@@ -1,0 +1,13 @@
+BigInteger g2;
+HashFunction H;
+SpongeRandom sr;
+int hashBits = 512;
+
+@Override
+public void setup(BigInteger p, BigInteger q, BigInteger g1, BigInteger g2, HashFunction H, SpongeRandom sr) {
+BigInteger[] retorno = new BigInteger[3];
+
+sr.init(hashBits);
+sr.feed(&quot;Cramer-Shoup&quot;.getBytes(), &quot;Cramer-Shoup&quot;.length());
+sr.feed(passwd.getBytes(), passwd.length());
+

@@ -1,0 +1,14 @@
+package oppgaver.tellastoroy;
+
+public class Money  {
+
+private final double amount;
+
+public Money(double amount) {
+public int hashCode() {
+long temp = amount != +0.0d ? Double.doubleToLongBits(amount) : 0L;
+return (int) (temp ^ (temp >>> 32));
+}
+
+}
+

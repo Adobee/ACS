@@ -1,0 +1,9 @@
+private final int rows;
+private final int columns;
+private final int blockRows;
+private final int blockColumns;
+protected Boolean compute() {
+int chunk = m1.blockRows / NTHREADS + 1;
+
+if (to - from <= chunk) {
+

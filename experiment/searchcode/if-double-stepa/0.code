@@ -1,0 +1,7 @@
+package name.stepa.ml.model.interpreter.values.functions;
+
+import name.stepa.ml.model.interpreter.exceptions.InvalidOperationException;
+protected Double getNumericArgument(Object arg) throws TypeMismatchException {
+if (arg instanceof Double)
+return (Double) arg;
+

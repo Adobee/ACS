@@ -1,0 +1,7 @@
+@Override
+public ObjectMapper get() {
+if(objectMapper == null) {
+synchronized(ObjectMapperProvider.class) {
+if(objectMapper == null) {
+objectMapper = new ObjectMapper();
+

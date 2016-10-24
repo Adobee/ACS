@@ -1,0 +1,10 @@
+* @param startValue
+* @return
+*/
+public  String convert(int oldSpn, int newSpn, double startValue, Context con){
+if(oldSpn == 1){
+result = fromSqInch(newSpn, new BigDecimal(startValue));
+}
+else if(newSpn == 1){
+result = toSqInch(oldSpn, startValue);
+

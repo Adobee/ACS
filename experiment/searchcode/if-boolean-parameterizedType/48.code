@@ -1,0 +1,12 @@
+if (type instanceof Class &amp;&amp; !LoganSquare.supports((Class) type)) {
+return false;
+}
+
+// Check LoganSquare&#39;s ParameterizedType
+if (type instanceof ParameterizedType &amp;&amp; !LoganSquare.supports((ParameterizedType) type)) {
+return false;
+}
+
+// Check target types of java.lang.reflect.ParameterizedType
+if (type instanceof java.lang.reflect.ParameterizedType) {
+

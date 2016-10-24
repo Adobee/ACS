@@ -1,0 +1,15 @@
+* Created by kgalligan on 8/8/15.
+*/
+public class TransientCache
+{
+private Map<Class, Map<Object, Object>> cache = new HashMap<>();
+Map<Object, Object> objectObjectMap = cache.get(c);
+if (objectObjectMap == null)
+{
+objectObjectMap = new HashMap<>();
+cache.put(c, objectObjectMap);
+}
+return objectObjectMap;
+}
+}
+

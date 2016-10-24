@@ -1,0 +1,11 @@
+CategoryItemRenderer r = getRenderer(i);
+if (r != null) {
+CategoryAxis domainAxis = getDomainAxisForDataset(i);
+result = Collections.unmodifiableList(getDataset().getColumnKeys());
+}
+return result;
+}
+
+
+public List getCategoriesForAxis(CategoryAxis axis) {
+

@@ -1,0 +1,8 @@
+int numberCommas = (string.length()-1)/3;
+int commaCounter = 0;
+int lengthOriginal = string.length();
+int firstComma = lengthOriginal - 3*numberCommas;
+
+for (int i=0;i<(lengthOriginal+numberCommas);i++) {
+if (i==firstComma || (i-firstComma)%4==0) {
+

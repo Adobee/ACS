@@ -1,0 +1,8 @@
+* <a name=&quot;DAAL-CLASS-ALGORITHMS__LOW_ORDER_MOMENTS__PARTIALRESULT&quot;></a>
+* @brief Provides methods to access partial results obtained with the compute() method of the
+* @return Partial result that corresponds to the given identifier
+*/
+public NumericTable get(PartialResultId id) {
+int idValue = id.getValue();
+if (idValue != PartialResultId.nObservations.getValue() &amp;&amp; idValue != PartialResultId.partialMinimum.getValue()
+

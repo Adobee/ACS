@@ -1,0 +1,8 @@
+public final class ClazzSourceViewFactory
+{
+public static ClazzSourceView getClazzSourceView(Clazz clazz)
+{
+if (clazz.isEnumeration())
+{
+return new EnumSourceView(clazz, null);
+

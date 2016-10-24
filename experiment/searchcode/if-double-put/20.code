@@ -1,0 +1,8 @@
+Double value = data.get(key);
+double normalized = norm.normalize(value);
+data.put(key, normalized);
+double lowest = Double.POSITIVE_INFINITY;
+for (Double value : data.values()){
+if (value < lowest){
+lowest = value;
+

@@ -1,0 +1,7 @@
+int[] range = {A.length, -1};
+searchRange(A, target, 0, A.length - 1, range);
+if (range[0] > range[1]) range[0] = -1;
+public void searchRange(int[] A, int target, int left, int right, int[] range) {
+if (left > right) return;
+int mid = left + (right - left) / 2;
+

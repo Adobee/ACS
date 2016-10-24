@@ -1,0 +1,7 @@
+public void merge(Mapper mergeWith, MergeContext mergeContext) throws MergeMappingException {
+if (!(mergeWith instanceof MultiFieldMapper) &amp;&amp; !(mergeWith instanceof AbstractFieldMapper)) {
+return;
+}
+synchronized (mutex) {
+if (mergeWith instanceof AbstractFieldMapper) {
+

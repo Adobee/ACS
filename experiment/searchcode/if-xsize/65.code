@@ -1,0 +1,11 @@
+private int xSize, ySize, zSize;
+
+public ChunkList(int initialXSize, int initialYSize, int initialZSize ){
+if(initialXSize < 0 || initialYSize < 0 || initialZSize < 0){
+throw new IllegalArgumentException(&quot;Attempted to get chunk outside of range!&quot;);
+}
+if(x > xSize){
+resizeListX(x);
+}
+if(y > ySize){
+

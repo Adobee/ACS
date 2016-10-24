@@ -1,0 +1,15 @@
+private static final long serialVersionUID = 1L;
+int maxSize = 0;
+
+/**
+*
+* @param maxSize
+public Frame put(Frame f) {
+if (this.size() == maxSize) {
+
+this.remove(new Long(f.getSeq() - maxSize));
+}
+return super.put(f.getSeq(), f);
+}
+}
+

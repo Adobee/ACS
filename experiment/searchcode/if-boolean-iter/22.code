@@ -1,0 +1,8 @@
+protected final TranIndex.Iter iter2;
+protected boolean rewound = true;
+private TranIndex.Iter curIter;
+public MergeIndexIter(TranIndex.Iter iter1, TranIndex.Iter iter2, MergeIndexIter iter) {
+this.iter1 = iter1;
+this.iter2 = iter2;
+if (iter.curIter == iter.iter1)
+

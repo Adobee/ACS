@@ -1,0 +1,11 @@
+package cn.hang.mvc.type.impl;
+
+import cn.hang.common.util.StringUtils;
+import cn.hang.mvc.type.TypeConvertException;
+public class DoubleConverter implements TypeConverter<Double, String> {
+
+@Override
+public Double convert(String arg) {
+if (StringUtils.isEmpty(arg)) {
+return 0.0;
+

@@ -1,0 +1,12 @@
+public byte[] readBytes() throws IOException
+{
+int len = getObjectInputStream().readInt();
+if (len < 0)
+return null;
+if (len == 0)
+int len = getObjectInputStream().readInt();
+if (len < 0)
+return null;
+
+return getObjectInputStream().readUTF();
+

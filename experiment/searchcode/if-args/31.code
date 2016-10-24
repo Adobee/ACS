@@ -1,0 +1,10 @@
+public static void main(String args[]) throws IOException, InterruptedException, URISyntaxException {
+
+if(args.length == 6){
+
+Tagger p = null;
+if(args[0].equals(&quot;French&quot;) || args[0].equals(&quot;Chinese&quot;) || args[0].equals(&quot;Polish&quot;) || args[0].equals(&quot;Russian&quot;) || args[0].equals(&quot;Portuguese&quot;))
+p = new  TreeTagger();
+else if(args[0].equals(&quot;Czech&quot;))
+p = new MorphoDitaTagger();
+

@@ -1,0 +1,9 @@
+Type rhs = mRhs.substitute(var, tau);
+return new Equation(lhs, rhs);
+}
+public Boolean equals(Equation rhs) {
+if (!(rhs instanceof Equation)) {
+return false;
+}
+if(!mLhs.equals(rhs.mLhs)) {
+

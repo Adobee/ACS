@@ -1,0 +1,8 @@
+fetchSourceContext = in.readOptionalStreamable(FetchSourceContext::new);
+boolean hasFieldDataFields = in.readBoolean();
+if (hasFieldDataFields) {
+boolean hasSorts = sorts != null;
+out.writeBoolean(hasSorts);
+if (hasSorts) {
+out.writeVInt(sorts.size());
+

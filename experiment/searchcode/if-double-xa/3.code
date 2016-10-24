@@ -1,0 +1,13 @@
+while(! xa.back){
+
+if(xa.ldb || xa.ltb || xa.rtb){
+double speed = xa.lt - xa.rt;
+float rot = (float) (Math.sin(Math.toRadians(xa.ld)) * 20*xa.r  * speed * xa.lm); //Rotation
+s.sendTcp(new M(ls, rs));
+}
+
+if(xa.beep){
+s.sendTcp(new M(1337,1337));
+}if(xa.volb){
+f.setVol(xa.vol);
+

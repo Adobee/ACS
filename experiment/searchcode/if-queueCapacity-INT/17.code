@@ -1,0 +1,5 @@
+public class PriorityThreadPoolTaskExecutor extends ThreadPoolTaskExecutor {
+private static final int QUEUE_CAPACITY = 11; // as it is in the docs
+protected BlockingQueue<Runnable> createQueue(int queueCapacity) {
+Comparator<Runnable> priorityComparator = (o1, o2) -> {
+

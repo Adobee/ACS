@@ -1,0 +1,11 @@
+public static double LatLonToXYInMiles(double latitude1, double longitude1, double latitude2, double longitude2, Unit Unit)
+{
+double theta = longitude1 - longitude2;
+double Distance = Math.sin(Math.toRadians(latitude1)) * Math.sin(Math.toRadians(latitude2)) + Math.cos(Math.toRadians(latitude1)) * Math.cos(Math.toRadians(latitude2)) * Math.cos(Math.toRadians(theta));
+break;
+case Meter:
+Distance = Distance * 0.001609344;
+break;
+}
+if (latitude1 < 0 &amp;&amp; longitude1 == 0 &amp;&amp; latitude2 == 0 &amp;&amp; longitude2 == 0)
+

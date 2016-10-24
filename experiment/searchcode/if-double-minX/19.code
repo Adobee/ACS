@@ -1,0 +1,8 @@
+package com.ccuhack24.angrycars.engine;
+
+public class Rectangle {
+public double minX;
+public void expand(Rectangle other) {
+if (other.minX < minX) minX = other.minX;
+if (other.maxX > maxX) maxX = other.maxX;
+

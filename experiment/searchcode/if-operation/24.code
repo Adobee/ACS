@@ -1,0 +1,8 @@
+public Operation simplify() {
+operation = operation.simplify();
+if (operation instanceof Const) {
+return new Const(Math.exp(operation.eval()));
+public Operation toStand() {
+operation = operation.toStand();
+if (operation instanceof Const) {
+

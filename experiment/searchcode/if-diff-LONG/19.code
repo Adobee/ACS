@@ -1,0 +1,11 @@
+public static void main(String[] args) {
+long diff = 0;
+int i = 2;
+while(true) {
+long pI = pentagon(i);
+if (diff != 0 &amp;&amp; pI - pentagon(i - 1) > diff) {
+break;
+}
+for(int j = i - 1; j >= 1; j--) {
+long pJ = pentagon(j);
+

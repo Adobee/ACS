@@ -1,0 +1,8 @@
+for (int i = 0; i < ipString.length(); i++) {
+char c = ipString.charAt(i);
+if (c == &#39;.&#39;) {
+// This indicates that a run of zeroes has been skipped.
+int skipIndex = -1;
+for (int i = 1; i < parts.length - 1; i++) {
+if (parts[i].length() == 0) {
+

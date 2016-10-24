@@ -1,0 +1,9 @@
+private static final MatrixAlgebra MA = new OGMatrixAlgebra();
+private static final double DEFAULT_EPS = 1e-5;
+
+private final double eps;
+private final double twoEps;
+DoubleArray xPlusOneEps = x.with(i, xi + eps);
+DoubleArray xMinusOneEps = x.with(i, xi - eps);
+if (!domain.apply(xPlusOneEps)) {
+

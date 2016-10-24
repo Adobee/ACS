@@ -1,0 +1,8 @@
+public class OlgaG15 {
+public static void main(String[] args) {
+int seconds = Integer.parseInt(args[0]);
+int minutes;
+int hours;
+if (seconds>86399){
+System.out.println(&quot;In 24 hours max value 86399 seconds&quot;);
+

@@ -1,0 +1,7 @@
+XContentParser parser = parseContext.parser();
+
+QueryBuilder query = null;
+boolean queryFound = false;
+while ((token = parser.nextToken()) != XContentParser.Token.END_OBJECT) {
+if (token == XContentParser.Token.FIELD_NAME) {
+

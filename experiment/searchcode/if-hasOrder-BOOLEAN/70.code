@@ -1,0 +1,13 @@
+this.takeProfitMillis = takeProfitMillis;
+}
+
+private void checkNoOrder() throws JFException {
+if (hasOrder()) {
+throw new IllegalStateException(&quot;Has order&quot;);
+}
+}
+
+protected void checkHasOrder() {
+if (!hasOrder()) {
+throw new IllegalStateException(&quot;No order&quot;);
+

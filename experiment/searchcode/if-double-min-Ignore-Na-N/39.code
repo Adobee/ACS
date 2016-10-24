@@ -1,0 +1,9 @@
+return DoubleValue.NaN;
+}
+prim = min;
+if (min instanceof UntypedAtomicValue) {
+} else if (prim instanceof DoubleValue) {
+return min; // return double NaN
+} else {
+// we can&#39;t ignore a float NaN, because we might need to promote it to a double NaN
+

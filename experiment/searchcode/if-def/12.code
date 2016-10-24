@@ -1,0 +1,10 @@
+ListDef cloned = (ListDef) super.clone();
+if (elementDef != null)
+cloned.elementDef = (ElementDef) elementDef.clone();
+public String toString() {
+return &quot;list (&quot; + elementDef + &quot;)&quot;;
+}
+
+public boolean equals(Object obj) {
+if (obj instanceof ListDef) {
+

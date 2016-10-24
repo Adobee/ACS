@@ -1,0 +1,9 @@
+import com.project.market.fundation.util.ServerLogger;
+
+public class ErrorException extends RuntimeException {
+private boolean _fatal;
+
+public ErrorException(String message, boolean fatal) {
+_fatal = fatal;
+logError(message);
+

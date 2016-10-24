@@ -1,0 +1,13 @@
+Cos cos = new Cos();
+
+public Sec(double accuracy, boolean fromTable) {
+super(accuracy, fromTable);
+}
+
+public Sec(double accuracy) {
+super(accuracy);
+}
+
+public Sec() {
+super();
+

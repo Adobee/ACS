@@ -1,0 +1,13 @@
+public Type getOwnerType() {
+return ownerType;
+}
+
+@Override
+public boolean equals(Object o) {
+if(!(o instanceof ParameterizedType)) {
+StringBuilder sb = new StringBuilder();
+
+if(ownerType != null) {
+if(ownerType instanceof Class) {
+sb.append(((Class)ownerType).getName());
+

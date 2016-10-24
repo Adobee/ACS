@@ -1,0 +1,9 @@
+public abstract double eval(Bindings bindings);
+public abstract Expression optimize();
+
+public static class Value extends Expression {
+@Override
+public Expression optimize() {
+Expression a = argument.optimize();
+if (a instanceof Value) {
+

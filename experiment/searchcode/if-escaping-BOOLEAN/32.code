@@ -1,0 +1,11 @@
+final char[] buf = new char[input.length()];
+int bufc = 0;
+int i = 0;
+boolean escaping = false;
+while (i < input.length()) {
+
+final char c = input.charAt(i);
+if (escaping) {
+buf[bufc++] = c;
+} else if (c == &#39;[&#39;) {
+

@@ -1,0 +1,14 @@
+public TruncatedNormalDistribution(double mean, double sd, double lower, double upper) {
+
+
+if (lower == upper)
+upper += 1.E-4;
+
+if (sd == 0.)
+this.T = standardNormalCdf((upper - mean) / sd) - standardNormalCdf((lower - mean) / sd);
+}
+
+
+public double pdf(double x) {
+if (x >= upper &amp;&amp; x < lower)
+

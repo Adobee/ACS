@@ -1,0 +1,9 @@
+public double getTotal(Sale sale){
+double price= sale.getPreDiscountTotal();
+if(price<threshold)
+return price;
+
+double total=price-discount;
+
+if(total>threshold)
+

@@ -1,0 +1,9 @@
+private static final Package JAVA_LANG_PACKAGE = Package.getPackage(&quot;java.lang&quot;);
+
+@Override
+public Object visit(ASTImportDeclaration node, Object data) {
+} else {
+String img = node.jjtGetChild(0).getImage();
+if (img.startsWith(&quot;java.lang&quot;)) {
+if (img.startsWith(&quot;java.lang.ref&quot;) || img.startsWith(&quot;java.lang.reflect&quot;)
+

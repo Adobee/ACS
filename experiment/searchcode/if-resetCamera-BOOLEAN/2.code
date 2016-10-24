@@ -1,0 +1,14 @@
+return disposable;
+}
+
+private float zoom = 1.0f;
+protected boolean perspective;
+protected Camera camera;
+public void setZoom(float zoom) {
+this.zoom = zoom;
+resetCamera();
+}
+
+@Override
+public boolean keyDown(int keycode) {
+

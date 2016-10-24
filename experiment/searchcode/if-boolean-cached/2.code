@@ -1,0 +1,7 @@
+return isMatchRec(s,0,p,0,cached);
+}
+public static boolean isMatchRec(String s, int i, String p, int j, int[][] cached) {
+if(cached[i][j]==1) return true;
+if(cached[i][j]==2) return false;
+if(s.length()-i==0 &amp;&amp; p.length()-j==0) {
+

@@ -1,0 +1,8 @@
+double retValue = 0.0;
+if (!(a instanceof Character)) return retValue;
+retValue = ((Character)a).getXp();
+return retValue;
+}
+
+}
+

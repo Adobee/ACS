@@ -1,0 +1,9 @@
+String imgExplain = FileUtil.upload(request, &quot;imgExplain1&quot;, folder);
+// 如果有图片上传
+if (imgExplain != null &amp;&amp; !&quot;1&quot;.equals(imgExplain.trim())) {
+manual.setImgExplain(imgExplain);
+}
+// 如果上传的不是图类型
+if (imgExplain != null &amp;&amp; imgExplain.equals(&quot;2&quot;)) {
+return false;
+

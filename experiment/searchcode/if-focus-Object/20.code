@@ -1,0 +1,10 @@
+public class WeakFocusListener implements FocusListener {
+
+private WeakReference listenerRef;
+private Object obj;
+* @param obj
+*/
+public WeakFocusListener(FocusListener listener, Object obj) {
+super();
+this.listenerRef = new WeakReference(listener);
+

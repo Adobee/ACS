@@ -1,0 +1,8 @@
+public static Function<RNG, Tuple<Integer, RNG>> nonNegativeInt() {
+return SimpleRNG::nonNegativeInt;
+}
+
+public static Tuple<Boolean, RNG> booleanRnd(RNG rng) {
+Tuple<Integer, RNG> t = rng.nextInt();
+return new Tuple<>(t._1 % 2 == 0, t._2);
+

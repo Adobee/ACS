@@ -1,0 +1,13 @@
+public class BooleanOperatorOR extends BooleanOperator {
+
+BooleanOperatorOR(List<BooleanSource> booleanSourceList) {
+super(booleanSourceList);
+}
+
+@Override
+public BooleanValue getValue() {
+for (BooleanVariable var : this.getDomain()) {
+if(var.getValue().equals(BooleanValue.DONT_CARE)) {
+return BooleanValue.DONT_CARE;
+} else if(var.getValue().equals(BooleanValue.TRUE)) {
+

@@ -1,0 +1,7 @@
+* search up the process def tree until it finds the partner link or runs out of parents.  This
+* method returns null if no partner link def is found.
+*
+* @param aDef
+for (AeBaseDef currentDef = aDef; currentDef != null; currentDef = currentDef.getParent()) {
+if (currentDef instanceof IAePartnerLinksParentDef) {
+

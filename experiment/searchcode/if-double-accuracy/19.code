@@ -1,0 +1,9 @@
+private double accuracy;
+private long timestamp;
+
+/**
+* Container pentru bearing-uri
+* @throws BearingException
+*/
+public Bearing(double bearing, double accuracy, long timestamp) throws BearingException {
+

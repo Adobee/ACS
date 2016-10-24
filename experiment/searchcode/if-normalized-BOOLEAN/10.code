@@ -1,0 +1,7 @@
+private Pair<Integer, Integer> findCellCoords(float x, float y) {
+int normalizedX = (int)(x/128);
+int normalizedY = (int)(y/64) - 1;
+public Pair<Integer, Integer> cellCoords(int normalizedX, int normalizedY, int restX, int restY) {
+int row, col;
+boolean xeven = (normalizedX - normalizedY )% 2 == 0;
+

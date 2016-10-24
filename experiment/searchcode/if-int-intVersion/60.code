@@ -1,0 +1,8 @@
+public Version addVersion(final int intVersion, final List<String> comment) {
+Version last = getLastVersion();
+if (last == null) {
+Version findVersionByNum(final int intVersion) {
+Version version = getFirstVersion();
+while (version != null) {
+if (intVersion == version.getVersion()) return version;
+

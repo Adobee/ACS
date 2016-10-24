@@ -1,0 +1,15 @@
+private boolean saving = false;
+
+private Executor callbackExecutor = null;
+private Executor cacheExecutor = Executors.newWorkStealingPool(20);
+} else { // cache absent
+cacheExecutor.execute(() -> {
+T v = cache.get(key, ifAbsent);
+callbackExecutor.execute(() -> {
+callback.accept(v);
+});
+});
+}
+}
+}
+

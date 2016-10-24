@@ -1,0 +1,12 @@
+package edu.bsu.jhm.es;
+
+import java.util.Map;
+
+import org.joda.time.LocalDate;
+
+import com.google.common.collect.Maps;
+* @return the immutable map of overrides.
+*/
+public int getOverride(LocalDate localDate) {
+if (map.containsKey(localDate))
+

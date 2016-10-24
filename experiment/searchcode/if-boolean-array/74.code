@@ -1,0 +1,11 @@
+if(x >= DefaultArray.length || y >= DefaultArray.length){
+return;
+}
+if(!BooleanArray[x][y]){
+BooleanArray[x][y] = true;
+for(int i = 0; i < Button.length; i++){
+Button[i]++;
+}
+else if(DefaultArray[x][y] == oldColor){
+floodfill(x+1,y,oldColor,BooleanArray, DefaultArray,Button);
+

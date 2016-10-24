@@ -1,0 +1,8 @@
+int[] rightRet = new int[2];
+if (node == null) return;
+ret[0] = ret[1] = node.val;
+if (node.left == null &amp;&amp; node.right == null) {
+ret[1] = Math.max(ret[1], node.val + leftRet[1]);
+}
+if (node.right != null) {
+

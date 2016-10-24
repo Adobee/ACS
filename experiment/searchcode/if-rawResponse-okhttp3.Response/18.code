@@ -1,0 +1,5 @@
+public static <T> Response<T> success(T body, okhttp3.Response rawResponse) {
+if (rawResponse == null) throw new NullPointerException(&quot;rawResponse == null&quot;);
+if (!rawResponse.isSuccessful()) {
+throw new IllegalArgumentException(&quot;rawResponse must be successful response&quot;);
+

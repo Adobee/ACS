@@ -1,0 +1,8 @@
+int type = imp.getType();
+RGBImage = type==ImagePlus.COLOR_RGB;
+boolean snapshotChanged = RGBImage &amp;&amp; previousSnapshot!=null &amp;&amp; ((ColorProcessor)ip).getSnapshotPixels()!=previousSnapshot;
+Calibration cal = imp.getCalibration();
+boolean realValue = type==ImagePlus.GRAY32;
+if (cal.calibrated()) {
+min = cal.getCValue((int)min);
+

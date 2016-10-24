@@ -1,0 +1,9 @@
+private static final Logger log = LoggerFactory.getLogger(HttpServiceUnavailableRetry.class);
+
+@Override
+public boolean retryRequest(
+final HttpResponse response, final int executionCount, final HttpContext context)
+{
+boolean shouldRetry = false;
+int statusCode = response.getStatusLine().getStatusCode();
+

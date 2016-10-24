@@ -1,0 +1,10 @@
+private int numTaskDescriptor;
+private double currentPrice;
+private String currentWinner;
+private double randomValue;
+this.vectorClock = timeStamp;
+}
+
+public void setRandomValue(double randomValue) {
+this.randomValue = randomValue;
+

@@ -1,0 +1,8 @@
+final double realIndex = index * (colors.size() - 1);
+
+if (realIndex == 0) {
+return colors.get(0);
+} else if (realIndex == colors.size() - 1) {
+final double proportion = realIndex - Math.floor(realIndex);
+final Color bottom = colors.get((int) Math.floor(realIndex));
+

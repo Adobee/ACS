@@ -1,0 +1,18 @@
+private int directionEnDegres;
+private int nbPoints ;
+
+
+
+public Voiture(int x, int y, int vitesse) {
+this.x = x;
+this.y = y;
+x += Math.round(Math.cos(Math.toRadians(directionEnDegres)) * vitesseMetreSeconde);
+
+if (x > 1000)
+x = 1000;
+else if (x < 0)
+x = 0;
+}
+
+public int getNbPoints() {
+

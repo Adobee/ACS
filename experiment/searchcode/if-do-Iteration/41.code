@@ -1,0 +1,11 @@
+public boolean shouldUpdate(Iteration iteration)
+{
+if (iteration.isUpcoming())
+{
+return true;
+public void update(Iteration iteration)
+{
+IterationStatistics stat = iteration.getFirstStatistics();
+if (stat != null)
+new StatsCalculator().update(iteration, stat);
+

@@ -1,0 +1,10 @@
+// If nothing is dirty, we don&#39;t have to do anything
+if (first) {
+return;
+}
+
+// Copy the dirtyState because until transaction commit, there might still happen some changes
+for (int i = 0; i < dirtyState.length; i++) {
+if (dirty[i]) {
+dirtyAttributeFlushers[i].flushQuery(query, dirtyState[i]);
+

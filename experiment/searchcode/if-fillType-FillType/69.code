@@ -1,0 +1,11 @@
+private FillType fillType;
+private int price;
+private boolean active;
+private String command;
+public void setFillType(FillType fillType) {
+if (this.isActive())
+{
+this.defillBlocks();
+this.fillType = fillType;
+this.fillBlocks();
+

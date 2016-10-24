@@ -1,0 +1,9 @@
+/** Number of records left to skip */
+private long toSkip;
+
+/** Number of records matched */
+private long matched;
+this.criteria = criteria;
+if (criteria.getPageNumber() >= 1) {
+this.toSkip = ((criteria.getPageNumber() - 1) * criteria.getPageSize());
+

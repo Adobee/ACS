@@ -1,0 +1,7 @@
+List<Literature> list = (List<Literature>)literatureBO.selectByKey(key);
+retvalue=&quot;{\&quot;nodes\&quot;:&quot;;
+if(list!=null){
+retvalue += JSONArray.fromObject(list);
+}else{
+retvalue += &quot;[]&quot;;
+

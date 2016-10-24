@@ -1,0 +1,8 @@
+private final SortedCounter<K> sortedCounter = new SortedCounter<>();
+
+@Override
+public K evictingKey(boolean cacheIsFull, K key) {
+K LFU = null;
+if (cacheIsFull &amp;&amp; !sortedCounter.containsKey(key)) {
+LFU = sortedCounter.removeFirst();
+

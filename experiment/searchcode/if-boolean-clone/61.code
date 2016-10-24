@@ -1,0 +1,18 @@
+this.length = length;
+}
+
+public boolean equals(Object o) {
+if (o instanceof CloneSet) {
+return ((CloneSet)o).equals(this);
+}
+return false;
+}
+public boolean equals(CloneSet right) {
+return id == right.id;
+}
+
+public int hashCode() {
+return (int)id;
+}
+}
+

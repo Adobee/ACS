@@ -1,0 +1,13 @@
+private double populationStdDev;
+private double sampleStdDev;
+private double skew;
+
+public Statistics() {
+}
+
+public Statistics(double count, double sum, double sum2) {
+this.mean = sum / count;
+if (!forceZeroStdDev) {
+double meanOfSqd = sum2 / count;
+double diff = meanOfSqd - mean * mean;
+

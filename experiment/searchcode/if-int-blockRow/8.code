@@ -1,0 +1,7 @@
+private static boolean checkPosition (int i, int j, boolean[] haveValue, Sudoku sudoku) {
+if (sudoku.isset(i, j)) {
+int valIndex = sudoku.getValue(i, j) - 1;
+boolean[] haveValue = getValueArray(size);
+for (int j = 0; j < size; j++) {
+if (!checkPosition(i, j, haveValue, sudoku)) {
+

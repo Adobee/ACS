@@ -1,0 +1,14 @@
+*         以 l1 头结点为节点返回整个运算结果
+*
+*/
+public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+// 递归终止条件
+if (l1 == null &amp;&amp; l2 == null) {
+boolean needMove = (l1.next == null &amp;&amp; l2 != null &amp;&amp; l2.next != null);
+// 运算当前节点
+int sum = 0;
+if (l1 != null) {
+sum += l1.val;
+}
+if (l2 != null) {
+

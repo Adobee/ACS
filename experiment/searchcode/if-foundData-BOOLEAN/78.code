@@ -1,0 +1,5 @@
+final DatabaseEntry foundData = new DatabaseEntry();
+if (cursor == null) {
+cursor = values.openCursor(null, null);
+if (cursor.getSearchKey(theID, foundData, LockMode.DEFAULT) == OperationStatus.SUCCESS) {
+

@@ -1,0 +1,11 @@
+public Paint getItemPaint(int row, int column) {
+Paint itemPaint = super.getItemPaint(row, column);
+String key = String.valueOf(row) + String.valueOf(column);
+&amp;&amp; hightlightSeriesMap.get(key).getColumn() == column) {
+return ((Color) itemPaint).brighter().brighter();
+}
+return itemPaint;
+}
+
+}
+

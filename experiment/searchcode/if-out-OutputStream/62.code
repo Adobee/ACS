@@ -1,0 +1,8 @@
+byte[] buffer = new byte[128];
+if (inputStream.read(buffer) !=-1){
+System.out.println(new String(buffer));
+outputStream.write(msg.getBytes());
+outputStream.flush();
+if (inputStream.read(buffer) !=-1){
+System.out.println(new String(buffer));
+

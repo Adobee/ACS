@@ -1,0 +1,9 @@
+public void setFixedAutoRange(double d2) {
+this.fixedAutoRange = d2;
+if (this.isAutoRange()) {
+this.autoAdjustRange();
+if (this.lowerMargin != valueAxis.lowerMargin) {
+return false;
+}
+if (this.fixedAutoRange != valueAxis.fixedAutoRange) {
+

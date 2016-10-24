@@ -1,0 +1,13 @@
+public static List<Activity> listActivity = new ArrayList<Activity>();
+
+public static void addActivity(Activity activity) {
+if(!listActivity.contains(activity))
+for (Activity activity : listActivity) {
+if (!activity.isFinishing()) {
+activity.finish();
+}
+}
+}
+
+}
+

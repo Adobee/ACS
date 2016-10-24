@@ -1,0 +1,14 @@
+public class Solution {
+public int trap(int[] A) {
+int n = A.length;
+
+if (n < 2) {
+return 0;
+}
+
+int[] maxL = new int[n], maxR = new int[n];
+int max = A[0];
+maxL[0] = 0;
+
+for (int i = 1; i < n - 1; i++) {
+

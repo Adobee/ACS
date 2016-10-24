@@ -1,0 +1,9 @@
+double value = Math.log(p) - Math.log(1 - p);
+return value / (x - c);
+}
+
+public static double LeftGaussian(double c,double sigma,double x){
+if(x<=c)return 1;
+
+double value=-0.5*(((x-c)*(x-c))/(sigma*sigma));
+

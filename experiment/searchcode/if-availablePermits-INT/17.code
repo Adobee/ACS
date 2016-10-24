@@ -1,0 +1,8 @@
+if(c.getDirection() == Direction.LEFT &amp;&amp; carsInBridge.availablePermits() == MAX_CARS) {
+rightCrossing.release(MAX_CARS-1);
+} else if (c.getDirection() == Direction.RIGHT &amp;&amp; carsInBridge.availablePermits() == MAX_CARS) {
+leftCrossing.release(MAX_CARS-1);
+}
+try {
+if(c.getDirection() == Direction.LEFT &amp;&amp; carsInBridge.availablePermits() < MAX_CARS) {
+

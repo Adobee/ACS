@@ -1,0 +1,8 @@
+public class NumArray {
+int[] sum;
+public NumArray(int[] nums) {
+sum =  new int[nums.length];
+int pre = 0;
+for (int i = 0 ; i < sum.length; i++){
+sum[i] = pre + nums[i];
+

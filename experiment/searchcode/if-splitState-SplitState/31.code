@@ -1,0 +1,12 @@
+this.splitState = STATE_SPLIT;
+return this;
+}
+
+public StopWatch unsplit() {
+if (this.splitState != STATE_SPLIT) {
+throw new RuntimeException(&quot;Illegal running state has occured. &quot;);
+}
+
+public long getSplitTime() {
+if (this.splitState != STATE_SPLIT) {
+

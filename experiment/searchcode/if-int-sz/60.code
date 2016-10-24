@@ -1,0 +1,14 @@
+private int[] id;
+private int[] sz;
+
+public QuickUnionUF(int N) {
+id = new int[N];
+for (int i = 0; i < N; i++)
+id[i] = i;
+sz = new int[N];
+for (int i = 0; i < N; i++)
+sz[i] = 1;
+}
+
+private int root(int i) {
+

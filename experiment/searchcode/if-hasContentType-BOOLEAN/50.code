@@ -1,0 +1,9 @@
+executeRequest(request, serverURI, RESOURCE_URI);
+}
+
+@Override
+protected boolean checkResponse(Request request, Response response) {
+boolean success = response.getOptions().hasBlock2();
+
+if (!success) {
+

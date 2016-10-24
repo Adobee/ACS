@@ -1,0 +1,15 @@
+import cz.vutbr.fit.tam.and10.R;
+import cz.vutbr.fit.tam.and10.category.Category;
+
+public class RemoveCategoryDialog extends ConfirmDialog {
+this.category = category;
+}
+
+protected void processValue(Boolean result) {
+if (result) {
+category.remove();
+}
+}
+
+}
+

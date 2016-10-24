@@ -1,0 +1,12 @@
+public class LATTideCorrectionCache {
+
+private double lat;
+
+private double lon;
+
+private Date date;
+
+private double latCorrection;
+boolean isQueryClose(LATTideCorrectionCache latTidePredictionCache, double latDistance, double lonDistance, long timeDistance) {
+if(Math.abs(latTidePredictionCache.getLat() - getLat()) < latDistance &amp;&amp; Math.abs(latTidePredictionCache.getLon() - getLon()) < lonDistance &amp;&amp; Math.abs(latTidePredictionCache.getDate().getTime() - getDate().getTime()) < timeDistance) {
+

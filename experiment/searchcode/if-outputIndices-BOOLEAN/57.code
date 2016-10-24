@@ -1,0 +1,9 @@
+* <tt>true</tt> if the waitForXXX has timeout out and did not match.
+*/
+public boolean isTimedOut() {
+String level = params.param(&quot;level&quot;, &quot;cluster&quot;);
+boolean outputIndices = &quot;indices&quot;.equals(level) || &quot;shards&quot;.equals(level);
+
+
+if (!getValidationFailures().isEmpty()) {
+

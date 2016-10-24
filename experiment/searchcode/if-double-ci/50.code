@@ -1,0 +1,7 @@
+if (ivz <= 0) throw new IllegalStateException(&quot;Aspect ratio in z-dimension less than or equal to 0&quot;);
+if (resample) {
+double vmin = (ivx < ivy) ? ivx : ivy;
+ci.y = FMath.round((ycdycosaz - dx*sinaz)/ivy);
+if (ci.x < 0 || ci.x > imaxx ||
+ci.y < 0 || ci.y > imaxy) {
+

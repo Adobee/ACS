@@ -1,0 +1,13 @@
+public byte readByte() throws Exception {
+nBytes++;
+return stream.readByte();
+}
+
+public int readByteArray(byte[] b) throws IOException {
+int n = stream.read(b);
+nBytes += n;
+return n;
+}
+
+public void readByteArray(byte[] b, int off, int len) throws Exception {
+

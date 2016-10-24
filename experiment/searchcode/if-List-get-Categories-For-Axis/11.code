@@ -1,0 +1,7 @@
+double margin = Utils.getTickStartOffset(workingSpace, tickSpace); // in plot space double gridStep = getGridStepForDecimal(tickSpace);
+
+// get all categories
+List<Object> categories = new ArrayList<Object>();
+
+Series firstSeries = chartPainter.getAxisPair().getSeriesMap().values().iterator().next(); // we use this to check all series have the exact same length and values
+

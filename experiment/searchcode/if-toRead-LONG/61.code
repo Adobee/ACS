@@ -1,0 +1,13 @@
+int toRead = Math.min( len , buf.remaining() );
+buf.get( b , off , toRead );
+
+if ( toRead == len || _pos + 1 >= _lst.size() )
+return toRead;
+
+_pos++;
+return toRead + read( b , off + toRead , len - toRead );
+}
+
+
+public long skip(long n){
+

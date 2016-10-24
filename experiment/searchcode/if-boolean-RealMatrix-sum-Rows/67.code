@@ -1,0 +1,7 @@
+BigSparseRealMatrix mInv = new BigSparseRealMatrix(testDataInv);
+RealMatrix mPlusMInv = m.add(mInv);
+double[][] sumEntries = mPlusMInv.getData();
+private void checkGetSubMatrix(RealMatrix m, double[][] reference,
+int[] selectedRows, int[] selectedColumns,
+boolean mustFail) {
+

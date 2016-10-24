@@ -1,0 +1,10 @@
+package com.hippo.network.transport;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.ServiceLoader;
+TransportFactory transportFactory = transportFactoryMap.get(schema);
+if (transportFactory == null) {
+throw new TransportException(
+&quot;can&#39;t find the sender impl class of type[&quot; + schema
+

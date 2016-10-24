@@ -1,0 +1,6 @@
+public static RuntimeException propagate(Throwable paramThrowable)
+{
+propagateIfInstanceOf(paramThrowable, Error.class);
+propagateIfInstanceOf(paramThrowable, RuntimeException.class);
+throw new RuntimeException(paramThrowable);
+

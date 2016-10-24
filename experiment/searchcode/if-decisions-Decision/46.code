@@ -1,0 +1,10 @@
+public class DecisionData {
+private final List<String> decisions;
+private final Random random;
+private DecisionFileManager fileManager;
+public String getRandomDecision() {
+if (decisions.isEmpty()) {
+return &quot;keine Einträge&quot;;
+}
+int randomIndex = random.nextInt(decisions.size());
+

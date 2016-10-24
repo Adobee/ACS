@@ -1,0 +1,9 @@
+public static void main(String[] args) {
+System.out.println(new Pow().pow(Double.MAX_VALUE, 3));
+}
+
+public double pow(double x, int n) {
+if (x == 1 || x == 0) return x;
+double rtn = powWrapper(x, Math.abs(n));
+if (negExp &amp;&amp; rtn == Double.MIN_VALUE) throw new RuntimeException(&quot;INFINITY&quot;);
+

@@ -1,0 +1,10 @@
+private Pattern pattern;
+
+@Override
+public boolean filter(Object data) {
+if(pattern == null || pattern.toString().isEmpty()) {
+return true;
+}
+Matcher matcher = pattern.matcher((String) data);
+return matcher.find();
+

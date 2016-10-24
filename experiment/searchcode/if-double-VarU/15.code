@@ -1,0 +1,12 @@
+* @author Matildaandersson
+*/
+public class VaruPanel extends javax.swing.JPanel {
+private boolean icon = true;
+ImageIcon RHeart = new javax.swing.ImageIcon(getClass().getResource(&quot;/resources/redHeart.png&quot;));
+static Product prod;
+
+/**
+* Creates new form VaruPanel
+*/
+public void setIcon(String str){
+

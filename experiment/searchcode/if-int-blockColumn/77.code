@@ -1,0 +1,10 @@
+public SudokuBoard(int[] initializedBoard)
+{
+for (int row = 0; row < 9; row++)
+for (int column = 0; column < 9; column++)
+if (isUnassigned(column, row))
+// value-range 1-9 and no same values twice
+for (int row = 0; row < 9; row++)
+{
+if (!isContaining1to9(board[row]))
+

@@ -1,0 +1,16 @@
+private double valoareConstanta;
+private String valoareVariabila;
+
+public Variabila(String termen, Nod parent) {
+this.type = &#39;v&#39;;
+}
+}
+
+public String toString() {
+if (this.type == &#39;c&#39;) {
+return &quot;&quot; + Double.toString(this.valoareConstanta);
+}
+return &quot;&quot; + this.valoareVariabila;
+}
+}
+

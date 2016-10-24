@@ -1,0 +1,12 @@
+return proxyPort;
+}
+
+public void enableProxyAuthentication(boolean enableProxyAuthentication) {
+this.enableProxyAuthentication = enableProxyAuthentication;
+return proxyPassword;
+}
+
+public void activateNow() {
+if (enableProxyAuthentication) {
+Authenticator.setDefault(new DefaultProxyAuthenticator(getProxyUser(), getProxyPassword()));
+

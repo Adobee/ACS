@@ -1,0 +1,16 @@
+public static RequestContext getContext() {
+RequestContext context = (RequestContext) requestContext.get();
+if (context == null) {
+requestContext.set(context);
+}
+
+public Object get(Object key) {
+return context.get(key);
+}
+
+public void put(Object key, Object value) {
+context.put(key, value);
+}
+
+}
+

@@ -1,0 +1,10 @@
+CUSTOMER (&quot;R&quot;, &quot;emplType.customer&quot;, &quot;Customer&quot;);
+
+private String key;
+private String nameKey;
+private String name;
+
+private EmplType(String key, String nameKey, String name) {
+this.key = key;
+this.nameKey = nameKey;
+

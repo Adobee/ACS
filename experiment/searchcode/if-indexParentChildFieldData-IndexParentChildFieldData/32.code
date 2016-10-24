@@ -1,0 +1,8 @@
+import org.elasticsearch.index.fielddata.AtomicParentChildFieldData;
+import org.elasticsearch.index.fielddata.IndexParentChildFieldData;
+import org.elasticsearch.search.internal.SearchContext;
+public class ChildrenConstantScoreQuery extends IndexCacheableQuery {
+
+private final IndexParentChildFieldData parentChildIndexFieldData;
+private final Query childQuery;
+

@@ -1,0 +1,9 @@
+public class CategoryCalculator implements ICategoryCalculator {
+
+@Override
+public int calculateCategory(String methodName, Roll p_aRoll) {
+int categoryIndex = YatzyConstants.ZERO;
+aCategoryGetter = CategoryFactory.getCategory(methodName);
+if (aCategoryGetter != null) {
+categoryIndex = aCategoryGetter.getCategory(p_aRoll);
+

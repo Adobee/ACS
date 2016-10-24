@@ -1,0 +1,9 @@
+public class Solution {
+public int searchInsert(int[] nums, int target) {
+if (target <= nums[0]) {
+int i = 0;
+int tmp = 0;
+while (i <= j) {
+tmp = (i+j)/2;
+if ( target == nums[tmp] || (target < nums[tmp] &amp;&amp; target > nums[tmp-1]) ){
+

@@ -1,0 +1,8 @@
+this.buffer = buffer;
+}
+
+public void create() throws FeatureUnsupportedException, UnallocatableException {
+if(bufferId != 0) return;
+if(!GLContext.getCapabilities().GL_ARB_vertex_buffer_object)
+throw new FeatureUnsupportedException(&quot;vertex buffer object&quot;);
+

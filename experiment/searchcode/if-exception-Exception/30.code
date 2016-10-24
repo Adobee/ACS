@@ -1,0 +1,17 @@
+* Returns result fetched asynchronously, throws exception if exception present.
+* @return
+* @throws Exception
+*/
+public T getResult() throws Exception
+{
+if (exception != null)
+throw exception;
+return result;
+}
+
+public Exception getException()
+{
+return exception;
+}
+}
+

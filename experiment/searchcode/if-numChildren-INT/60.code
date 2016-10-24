@@ -1,0 +1,13 @@
+//  This method may be able to be written more efficiently.
+//================================================================
+public int numChildren()
+{
+
+int children = 0;
+
+if (left != null)
+children = 1 + left.numChildren();
+
+if (right != null)
+children = children + 1 + right.numChildren();
+

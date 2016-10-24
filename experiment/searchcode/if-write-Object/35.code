@@ -1,0 +1,13 @@
+this.pretty = pretty;
+}
+
+void write(String s) throws IOException {
+if(pretty &amp;&amp; newLine){
+for(int i = 0; i < indent; i++) writer.write(&#39; &#39;);
+if(pretty) writer.write(&#39; &#39;);
+}
+
+void writeObjectValueSeparator() throws IOException {
+writer.write(&#39;,&#39;);
+if(pretty){
+

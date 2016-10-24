@@ -1,0 +1,8 @@
+public boolean change(final int pixelIndex, final int newState) {
+final int oldState = states.get(pixelIndex);
+if (newState != oldState) {
+public boolean change(final int pixelIndex, final int oldState,
+final int newState) {
+if (newState != oldState &amp;&amp; get(pixelIndex) == oldState) {
+states.set(pixelIndex, newState);
+

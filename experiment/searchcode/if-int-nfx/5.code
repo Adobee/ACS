@@ -1,0 +1,17 @@
+/** 方向 fx：4=← 6=→ 8=↑ 2=↓ 其余：无移动 */
+int fx = 1;
+int nfx, sp = 20, i = 0;
+/** 延迟 */
+int yanchi = 200;
+/** 分数 */
+int fenshu;
+/** 食物的坐标 */
+for (int i = sum - 1; i > 0; i--) {// 身体坐标刷新
+x[i] = x[i - 1];
+y[i] = y[i - 1];
+}
+if (fx == 6 &amp;&amp; nfx != 4) {// 方向判断
+x[0] += sp;// 移动
+nfx = 6;
+} else if (fx == 4 &amp;&amp; nfx != 6) {
+

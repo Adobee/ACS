@@ -1,0 +1,10 @@
+byte[]  salt,
+int     iterationCount,
+int     keyLength)
+{
+this(salt, iterationCount);
+octStr = (ASN1OctetString)e.nextElement();
+iterationCount = (ASN1Integer)e.nextElement();
+
+if (e.hasMoreElements())
+

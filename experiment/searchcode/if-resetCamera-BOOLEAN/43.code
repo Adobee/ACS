@@ -1,0 +1,11 @@
+public class MainActivity extends Activity {
+private Camera camera; // 相机对象
+private boolean isPreview = false; // 是否为预览模式
+//重新预览
+private void resetCamera(){
+if(isPreview){
+camera.startPreview();	//开启预览
+}
+}
+//停止预览并释放资源
+

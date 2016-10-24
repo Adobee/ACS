@@ -1,0 +1,9 @@
+ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, EditorPackage.OP_ITEM__OP_TYPE, oldOpType, newOpType);
+if (msgs == null) msgs = notification; else msgs.add(notification);
+public void setOpType(OpType newOpType)
+{
+if (newOpType != opType)
+{
+NotificationChain msgs = null;
+if (opType != null)
+

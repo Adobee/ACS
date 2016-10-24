@@ -1,0 +1,10 @@
+for (Relation relation : this.copyData.getOutgoingRelations()) {
+if (relation.isReferenceForPK()) {
+needPrimaryKey = true;
+break;
+}
+}
+
+if (needPrimaryKey) {
+if (this.copyData.getPrimaryKeySize() == 0) {
+

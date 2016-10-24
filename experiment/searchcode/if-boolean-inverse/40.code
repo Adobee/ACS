@@ -1,0 +1,8 @@
+public class CustomOperation extends Operation {
+
+private boolean mIsInverse = false;
+private String mKey;
+public Operation getInverseOperation() {
+if (mIsInverse) {
+return new CustomOperation(mKey); // someone got the idea to get the inverse of the inverse... ok
+

@@ -1,0 +1,8 @@
+public List<TypeInfo<?>> getParameterTypes(Member methodOrConstructor) {
+Type[] genericParameterTypes;
+
+if (methodOrConstructor instanceof Method) {
+genericParameterTypes = method.getGenericParameterTypes();
+
+} else if (methodOrConstructor instanceof Constructor) {
+

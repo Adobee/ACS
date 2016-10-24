@@ -1,0 +1,6 @@
+public final void notify(ProjectWatchInfo.Type t, Boolean b) {
+if (t == ProjectWatchInfo.Type.NEW_CHANGES) {
+notifyNewChanges(b.booleanValue());
+} else if (t == Type.NEW_PATCHSETS) {
+notifyNewPatchSets(b.booleanValue());
+

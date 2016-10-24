@@ -1,0 +1,9 @@
+follow.bottomBoundary = -((rect.y + rect.height) - follow.fullScreenSize.y);
+
+if (follow.rightBoundary < follow.leftBoundary) {
+follow.rightBoundary = follow.leftBoundary = (follow.leftBoundary + follow.rightBoundary) / 2;
+}
+
+if (follow.topBoundary < follow.bottomBoundary) {
+follow.topBoundary = follow.bottomBoundary = (follow.topBoundary + follow.bottomBoundary) / 2;
+

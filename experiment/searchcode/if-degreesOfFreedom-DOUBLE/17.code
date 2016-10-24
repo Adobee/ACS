@@ -1,0 +1,10 @@
+private final double svar1;
+
+public LinearRegression(float[] x, float[] y) {
+if(x.length != y.length) {
+double var27 = 0.0D;
+double ssr = 0.0D;
+
+int degreesOfFreedom;
+for(degreesOfFreedom = 0; degreesOfFreedom < this.N; ++degreesOfFreedom) {
+

@@ -1,0 +1,8 @@
+public class Solution {
+public int[] singleNumber(int[] nums) {
+int diff = 0;
+// 按照这一个将不同的两个数分到两边，然后亦或两部分得到结果
+for (int num : nums) {
+if ((num &amp; diff) == 0)
+res[0] ^= num;
+

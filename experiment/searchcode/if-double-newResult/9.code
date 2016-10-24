@@ -1,0 +1,7 @@
+protected IMultiPoint nearestN (double[] rawTarget, double min[]) {
+// Update minimum if we are closer.
+IMultiPoint result = null;
+
+// double d = target.distance(node.point); O(d) computation
+// if shorter, update minimum
+

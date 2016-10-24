@@ -1,0 +1,14 @@
+bins[i] = bins[i] >> 1;
+}
+}
+
+private void addIsi (int isi){
+if ( isi < minIsiUs ){
+return;
+}
+if ( isi >= maxIsiUs ){
+return;
+}
+
+int bin = ( ( ( isi - minIsiUs ) * nBins ) / ( maxIsiUs - minIsiUs ) );
+

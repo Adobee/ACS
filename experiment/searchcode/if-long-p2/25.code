@@ -1,0 +1,11 @@
+protected void paint1Break(Graphics2D g2d) {
+if (lineStart == LINE_START_HORIZONTAL) {
+//1 --> 2
+if (p1.x < p2.x) {
+//Not use
+if (p1.y > p2.y) {
+//--
+//  |
+//  v
+g2d.fillRect(p1.x, p1.y - lineWidth / 2, p2.x - p1.x + lineWidth / 2, lineWidth);
+

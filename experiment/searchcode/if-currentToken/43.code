@@ -1,0 +1,7 @@
+public ArrayList<String> applyPunctuationRule(ArrayList<String> tokens){
+String currentToken;
+for(int i=0;i<tokens.size();i++){
+currentToken=currentToken.replaceAll(&quot;(\\.|\\?|!)\\s*&quot;,&quot; &quot;).trim();
+
+if(currentToken!=null &amp;&amp; !currentToken.equals(&quot;&quot;))
+

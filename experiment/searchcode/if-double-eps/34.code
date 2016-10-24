@@ -1,0 +1,13 @@
+
+public class Uppg2 {
+
+public static double binarySqrt(double sqr, double eps) {
+if(sqr < 1) {
+throw new IllegalArgumentException(&quot;eps has to be a posetive number&quot;);
+}
+
+return help(sqr, eps, 1, sqr);
+}
+
+private static double help(double sqr, double eps, double low, double high) {
+

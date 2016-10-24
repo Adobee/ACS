@@ -1,0 +1,10 @@
+return garden.addLayer(new SatelliteLayer(layerName,bitmap.getWidth(),bitmap.getHeight(),bitmap));
+}
+
+public boolean addLayer(String layerName, String layerType) {
+if (layerType.equals(&quot;VectorLayer&quot;)) {
+return garden.addLayer(new VectorLayer(layerName));
+}
+if (layerType.equals(&quot;PlantLayer&quot;)) {
+return garden.addLayer(new PlantLayer(layerName));
+

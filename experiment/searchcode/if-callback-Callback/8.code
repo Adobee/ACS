@@ -1,0 +1,8 @@
+import javax.security.auth.callback.Callback;
+import javax.security.auth.callback.CallbackHandler;
+import javax.security.auth.callback.NameCallback;
+for(Callback callback : callbacks){
+if(callback instanceof NameCallback){
+((NameCallback)callback).setName(username);
+}else if(callback instanceof PasswordCallback){
+

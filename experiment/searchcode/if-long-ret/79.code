@@ -1,0 +1,10 @@
+public boolean isPalindrome(int x) {
+if(x<0){
+return false;
+}
+long last = x;
+long step = 10;
+long ret = 0;
+while(last!=0) {
+if(ret*step>Integer.MAX_VALUE || ret*step<Integer.MIN_VALUE) {
+

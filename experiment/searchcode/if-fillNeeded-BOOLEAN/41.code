@@ -1,0 +1,9 @@
+int copyLength = this.historyCount;
+boolean fillNeeded = false;
+if (srcLength < this.historyCount) {
+fillNeeded = true;
+this.valueHistory[seriesNumber].enterData(i, values[i]);
+}
+if (fillNeeded) {
+for (i = copyLength; i < this.historyCount; i++) {
+

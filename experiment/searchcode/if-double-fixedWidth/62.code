@@ -1,0 +1,11 @@
+If the sign plus the value is too long for a fixed width format, fill
+with *&#39;s.
+*/
+if (formatI.fixedWidth &amp;&amp;
+(sign.length() + integer.length() > formatI.width)) {
+} else {
+int toAdd = formatI.precision;
+
+if (formatI.fixedWidth &amp;&amp;
+(formatI.width - sign.length() - integer.length() < toAdd)) {
+

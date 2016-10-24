@@ -1,0 +1,16 @@
+public int size = 0;
+int firstIndex = 0;
+int lastIndex = 0;
+
+public void queue(int x) {
+array[lastIndex] = x;
+if (size == array.length) {
+growArray();
+}
+}
+
+public int dequeue() {
+--size;
+int index = firstIndex;
+firstIndex = (firstIndex + 1) % array.length;
+

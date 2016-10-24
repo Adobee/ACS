@@ -1,0 +1,12 @@
+* Returns the size of the ulp in &#39;f&#39; if |f| >= 2<sup>-101</sup>.
+* Otherwise returns zero.
+*/
+public static strictfp float approxUlp(float f)
+{
+return (f+f*ULP_0)-f;
+}
+
+
+/**
+* Checks if a returned result &#39;r&#39; is with &#39;n&#39; ulp of the expected &#39;e&#39;
+

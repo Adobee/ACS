@@ -1,0 +1,7 @@
+final RoutingAllocation allocation;
+if (randomBoolean()) {
+allocation = routingAllocationWithOnePrimaryNoReplicas(yesAllocationDeciders(), randomBoolean(), Version.CURRENT);
+boolean useAllocationIds = randomBoolean();
+if (useAllocationIds) {
+allocation = routingAllocationWithOnePrimaryNoReplicas(yesAllocationDeciders(), false, randomFrom(Version.V_2_0_0, Version.CURRENT), &quot;allocId1&quot;);
+

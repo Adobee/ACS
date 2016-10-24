@@ -1,0 +1,9 @@
+public class TreeMap<KeyType,ValueType> extends MapImpl<KeyType,ValueType>
+{
+/**
+* Construct an empty TreeMap with default comparator.
+public int compareTo( Map.Entry<KeyType,ValueType> other )
+{
+if( keyCmp != null )
+return keyCmp.compare( getKey( ), other.getKey( ) );
+

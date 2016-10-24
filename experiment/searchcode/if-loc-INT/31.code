@@ -1,0 +1,11 @@
+public int searchInsert(int[] A, int target) {
+int insertLoc = 0;
+int i = 0;
+int j = A.length;
+if (A.length == 0 || target < A[0]) {
+while (i <= j) {
+insertLoc = (j - i) / 2 + i;
+if (A[insertLoc] == target) {
+return insertLoc;
+} else if (A[insertLoc] > target) {
+

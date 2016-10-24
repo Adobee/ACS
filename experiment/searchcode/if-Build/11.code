@@ -1,0 +1,6 @@
+List<BuildEntity> buildEntityList=ServerManager.getInstance().getDbServer().getBuildDao().getBuildEntity(charId);
+if(buildEntityList!=null){
+List<Build> buildIngList=getBuildFinishList(BuildFinishType.UNFINISH.getIndex());
+if(buildIngList.size()==0)return;
+long now =ServerManager.getInstance().getSystemTimeService().now();
+

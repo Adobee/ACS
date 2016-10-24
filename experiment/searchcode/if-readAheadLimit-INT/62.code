@@ -1,0 +1,9 @@
+private static final int UNMARKED = -1;
+private int markedChar = UNMARKED;
+private int readAheadLimit = 0; /* Valid only when markedChar > 0 */
+private void fill() throws IOException {
+int dst;
+if (markedChar <= UNMARKED) {
+/* No mark */
+dst = 0;
+

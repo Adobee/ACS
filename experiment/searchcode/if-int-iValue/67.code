@@ -1,0 +1,11 @@
+public abstract class UserFnReducer {
+private IValue array;
+private int axis;
+private int mspan;
+private int[] spans;
+
+public UserFnReducer(IValue array, int axis) {
+this.array = array;
+this.axis = axis;
+spans = array.dims().spans();
+

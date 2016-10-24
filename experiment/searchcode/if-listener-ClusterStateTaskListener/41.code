@@ -1,0 +1,6 @@
+abstract public class ClusterStateUpdateTask implements ClusterStateTaskConfig, ClusterStateTaskExecutor<ClusterStateUpdateTask>, ClusterStateTaskListener {
+* Update the cluster state based on the current state. Return the *same instance* if no state
+* should be changed.
+*/
+abstract public ClusterState execute(ClusterState currentState) throws Exception;
+

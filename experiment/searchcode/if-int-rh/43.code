@@ -1,0 +1,8 @@
+this.weatherData = weatherData;
+weatherData.registerObserver(this);
+}
+
+public void update(float t, float rh, float pressure) {
+heatIndex = computeHeatIndex(t, rh);
+display();
+

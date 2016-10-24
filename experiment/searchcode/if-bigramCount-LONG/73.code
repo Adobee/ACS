@@ -1,0 +1,10 @@
+String[] bigramData = {dataSet.get(i).morpheme,dataSet.get(i+1).morpheme};
+List<String> key = Arrays.asList(bigramData);
+if(bigramMap.containsKey(key)){
+return trainSet;
+}
+
+public Map<String, Long> countMorpheme() {
+
+return trainSet.stream().collect(Collectors.groupingBy(e-> e.morpheme, Collectors.counting()));
+

@@ -1,0 +1,14 @@
+public final long id;
+
+public ThreadID(long id) {
+this.id = id;
+}
+
+@Override
+public int hashCode() {
+final ThreadID other = (ThreadID) obj;
+if (this.id != other.id) {
+return false;
+}
+return true;
+

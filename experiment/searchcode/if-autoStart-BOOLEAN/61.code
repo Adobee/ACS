@@ -1,0 +1,8 @@
+HB hb = new HB(AudioSetup.getAudioContext(args));
+//deal with autostart and parse arguments
+boolean autostart = true;
+for(String s : args) {
+if(s.startsWith(&quot;start=&quot;)) {
+autostart = !s.split(&quot;[=]&quot;)[1].toLowerCase().startsWith(&quot;f&quot;);
+} else if(!s.contains(&quot;=&quot;)) {
+

@@ -1,0 +1,10 @@
+public static Weeks weeksIn(ReadableInterval interval) {
+if (interval == null)   {
+return Weeks.ZERO;
+}
+int amount = BaseSingleFieldPeriod.between(interval.getStart(), interval.getEnd(), DurationFieldType.weeks());
+* @throws ArithmeticException if the result overflows an int
+*/
+public Weeks plus(int weeks) {
+if (weeks == 0) {
+

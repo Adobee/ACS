@@ -1,0 +1,11 @@
+int inK = sc.nextInt();
+if((inN|inM|inK) == 0) break;
+
+int num[][] = new int[inN+1][inM*inN+1];
+
+for (int i = 1; i <= inM; i++)
+for(int j=1; j<=inN*inM; j++)
+for(int k=1; k<=inM; k++)
+if(j+k <= inN*inM)
+num[i][j+k] += num[i-1][j];
+

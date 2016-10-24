@@ -1,0 +1,8 @@
+public float battingPoints(int runs, int ballsFaced, int sixes, boolean isBatted) {
+points = 0.0F;
+if(isBatted) {
+if(runs == 0) {
+points = Points.BATTING_DUCK_IMPACT_POINTS;
+float economyRate = ((ballsBowled * Points.BOWLING_ECONOMY_POINTS_MULTIPLIER) - runsConceded);
+if(economyRate > 0) {
+

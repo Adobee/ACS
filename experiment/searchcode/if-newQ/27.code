@@ -1,0 +1,10 @@
+for (int i=0;i<queens.size();i++){
+if (attack(newq,queens.get(i)))
+return false;
+print_queens(queens);
+}else{
+
+for (int c=0;c<8;c++){
+int newq = row*8+c;
+if(can_place(newq,queens)){
+

@@ -1,0 +1,12 @@
+public class Alpha {
+private float alpha;
+
+public Alpha() {
+toDefault();
+public void setTo(Alpha att) {
+this.alpha = att.alpha;
+}
+
+public void setValue(float alpha) {
+if(alpha >= 0)
+

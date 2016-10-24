@@ -1,0 +1,7 @@
+private void searchUnits(List<Concept> concepts, List<? extends UcumUnit> units, String text, boolean isRegex) {
+for (UcumUnit unit : units) {
+if (matchesUnit(unit, text, isRegex))
+private void searchPrefixes(List<Concept> concepts, List<? extends Prefix> prefixes, String text, boolean isRegex) {
+for (Concept concept : prefixes) {
+if (matchesConcept(concept, text, isRegex))
+

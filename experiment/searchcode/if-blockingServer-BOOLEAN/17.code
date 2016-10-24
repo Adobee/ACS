@@ -1,0 +1,7 @@
+private void createServerBootstrap(int port, final SimpleChannelUpstreamHandler handler){
+boolean blockingServer = false;
+
+ServerBootstrap serverBootstrap;
+if (blockingServer) {
+serverBootstrap = new ServerBootstrap(new OioServerSocketChannelFactory(
+

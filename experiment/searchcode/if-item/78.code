@@ -1,0 +1,14 @@
+package item.price;
+
+import item.Item;
+import checkout.Checkout.ItemListener;
+
+public class Price implements ItemListener {
+this.debit = debit;
+}
+
+@Override
+public void itemIs(Item item) {
+if (item.equals(this.item)) {
+debit.apply();
+

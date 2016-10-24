@@ -1,0 +1,9 @@
+public static long getTime(long tps1,long tps2)
+{
+long millis=tps2-tps1;
+if(millis < 0)
+public static long getTime(long tps)
+{
+long millis=tps;
+if(millis < 0)
+

@@ -1,0 +1,11 @@
+public static Object tryConvertNumber(Object arg, Class<?> returnType) {
+Validate.notNull(arg);
+Validate.notNull(returnType);
+
+if (!(arg instanceof Number) || arg.getClass() == returnType) {
+return arg;
+}
+
+Number number = (Number) arg;
+if (returnType == byte.class || returnType == Byte.class) {
+

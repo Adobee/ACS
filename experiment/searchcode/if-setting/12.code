@@ -1,0 +1,9 @@
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.omartech.tdg.mapper.SystemSettingMapper;
+public SystemSetting getSystemSetting(){
+SystemSetting setting =  systemSettingMapper.getSystemSetting();
+if(setting == null){
+setting = new SystemSetting();
+

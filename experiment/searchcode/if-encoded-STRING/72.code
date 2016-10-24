@@ -1,0 +1,14 @@
+* Created by ftrela on 2016-07-28.
+*/
+public class Base64Signature
+{
+private final String encodedString;
+
+public Base64Signature( Signature signatureToEncode )
+this.encodedString = Base64.getEncoder().encodeToString( signatureToEncode.getBytes() );
+}
+
+public Base64Signature( String encodedString )
+{
+if( encodedString == null )
+

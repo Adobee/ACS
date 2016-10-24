@@ -1,0 +1,9 @@
+public class PaddingAnimation extends PressedAnimation {
+private View view;
+private int paddingPressed;
+
+public PaddingAnimation(int paddingPressed, View view, long duration) {
+protected void applyTransformation(float interpolatedTime, Transformation t) {
+int padding = paddingPressed;
+if (!isPressed) {
+

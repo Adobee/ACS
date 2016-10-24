@@ -1,0 +1,10 @@
+double phiFit, kappa, delta;
+double rhoFit, docaFit;
+
+// Insure that there are at least three points to perform the fit
+if(NP<3) return false;
+double Y = _ypca -_yref;
+
+double DeltaPerp = X*sinphi - Y*cosphi;
+double DeltaParl = X*cosphi + Y*sinphi;
+

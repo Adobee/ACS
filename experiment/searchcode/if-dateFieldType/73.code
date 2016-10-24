@@ -1,0 +1,10 @@
+return new DateFieldType(this);
+}
+
+@Override
+public boolean equals(Object o) {
+if (!super.equals(o)) return false;
+if (strict) {
+DateFieldType other = (DateFieldType)fieldType;
+if (Objects.equals(dateTimeFormatter().format(), other.dateTimeFormatter().format()) == false) {
+

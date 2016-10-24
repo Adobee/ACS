@@ -1,0 +1,15 @@
+return s_securityPolicyGenerator;
+}
+
+
+public boolean continueOnError() {
+return false;
+}
+
+
+public void generate(CodeGenContext codeGenCtx)  throws CodeGenFailedException {
+InputOptions inputOptions = codeGenCtx.getInputOptions();
+
+ServiceCodeGenDefType svcCodeGenDef = inputOptions.getSvcCodeGenDefType();
+// If Security Policy info specified in the XML
+

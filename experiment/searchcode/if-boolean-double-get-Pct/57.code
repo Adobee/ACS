@@ -1,0 +1,12 @@
+Double oldPCT = (Double) sash.getData(&quot;PCT&quot;);
+if (oldPCT == null) {
+oldPCT = new Double(-1);
+}
+double pct;
+int i = (isVertical) ? parentComposite.getSize().x
+: parentComposite.getSize().y;
+if (i == 0) {
+return;
+}
+double pctAbove = px.doubleValue() / i;
+

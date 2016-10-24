@@ -1,0 +1,9 @@
+super(DateTimeFieldType.weekyear(), basicChronology.getAverageMillisPerYear());
+this.iChronology = basicChronology;
+}
+
+public boolean isLenient() {
+FieldUtils.verifyValueBounds((DateTimeField) this, Math.abs(i), this.iChronology.getMinYear(), this.iChronology.getMaxYear());
+int i2 = get(j);
+if (i2 == i) {
+

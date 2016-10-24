@@ -1,0 +1,9 @@
+public class Solution {
+public int removeDuplicates(int[] A) {
+int len = A.length;
+if(len <= 2) return len;
+int i = 1;
+int j = 2;
+
+while(j < len){
+

@@ -1,0 +1,10 @@
+throws IllegalArgumentException, InvalidMatrixException {
+
+final int m = lTData.length;
+if (b.getRowDimension() != m) {
+&quot;dimensions mismatch: got {0}x{1} but expected {2}x{3}&quot;,
+b.getRowDimension(), b.getColumnDimension(), m, &quot;n&quot;);
+}
+
+final int nColB = b.getColumnDimension();
+

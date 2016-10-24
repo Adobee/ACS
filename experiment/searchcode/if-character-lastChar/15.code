@@ -1,0 +1,13 @@
+position++;
+}
+
+if(lastChar == -1) return new Token(Token.Type.END);
+
+if(terminals.contains((char) lastChar)) {
+lastChar = input.read();
+position++;
+if(lastChar == -1) break;
+}
+
+String keyword = keywords.toString();
+

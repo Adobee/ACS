@@ -1,0 +1,12 @@
+public ActionJobResult(byte[] results){
+this.results = this.copyArray(results);
+}
+
+public ActionJobResult(boolean succeeded){
+@Override
+public boolean jobSucceeded() {
+return succeeded;
+}
+
+private byte[] copyArray(byte[] src) {
+

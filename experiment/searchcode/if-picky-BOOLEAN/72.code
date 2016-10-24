@@ -1,0 +1,11 @@
+.filter(this::include)
+.collect(Collectors.toList());
+}
+
+private boolean include(FileEntry entry) {
+if (Strings.isNullOrEmpty(filter)) return true;
+entry.getAttributes().entrySet().forEach(es -> engine.put(es.getKey(), es.getValue()));
+
+Object result = engine.eval(filter);
+if (result instanceof Boolean) {
+

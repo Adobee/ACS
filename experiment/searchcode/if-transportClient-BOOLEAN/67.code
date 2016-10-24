@@ -1,0 +1,7 @@
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.ImmutableSettings;
+import org.elasticsearch.common.settings.Settings;
+public class ESUtils {
+public static TransportClient transportClient(String clustername){
+Settings settings = ImmutableSettings.settingsBuilder().put(&quot;cluster.name&quot;,clustername).build();
+

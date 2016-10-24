@@ -1,0 +1,7 @@
+DecimalFormat numberFormat = numberformats.get().get(formatStr);
+
+if(numberFormat == null){
+numberFormat = new DecimalFormat();
+if(formatStr != null &amp;&amp; formatStr.length() != 0)
+numberFormat.applyPattern(formatStr);
+

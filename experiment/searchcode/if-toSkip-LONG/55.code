@@ -1,0 +1,16 @@
+public synchronized long skip(long n) throws IOException
+{
+if (n<=0) return 0;
+
+long toskip = n;
+while (toskip > 0) {
+if (size == 0) {
+readsome();
+if (size == 0) {
+return n - toskip;
+}
+}
+
+if (toskip > size) {
+toskip -= size;
+

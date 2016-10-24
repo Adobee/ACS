@@ -1,0 +1,7 @@
+// 客户端创建一个数据报套接字 ，由系统自动分配端口号
+byte[] sendBuffer;
+sendBuffer = new String(&quot;This is a datagram&quot;).getBytes();
+DatagramPacket datagramPacket = new DatagramPacket(sendBuffer,
+sendBuffer.length, address, 5555);
+// 创建一个DatagramPacket 对象，它封装了对字节数组的引用和目标地址信息
+

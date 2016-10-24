@@ -1,0 +1,10 @@
+import me.ltype.httpclient.HttpClientFactory;
+
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpUriRequest;
+
+public class ResponseUtils {
+public InputStream getInputStream(HttpUriRequest httpUriRequest) throws IOException {
+HttpResponse httpResponse = getResponse(httpUriRequest);
+if (httpResponse.getStatusLine().getStatusCode() != 200)
+

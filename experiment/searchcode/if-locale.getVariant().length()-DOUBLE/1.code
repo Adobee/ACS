@@ -1,0 +1,8 @@
+StringBuilder localStringBuilder = new StringBuilder(20);
+localStringBuilder.append(paramLocale.getLanguage());
+String str = paramLocale.getCountry();
+if (!TextUtils.isEmpty(str)) {
+paramLocale = paramLocale.getVariant();
+if (!TextUtils.isEmpty(paramLocale)) {
+localStringBuilder.append(&#39;-&#39;).append(paramLocale);
+

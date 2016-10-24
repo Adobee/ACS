@@ -1,0 +1,8 @@
+private double discount,threshold;
+public AbsoluteDiscountPricing(double discount, double threshold) {
+this.discount = discount;
+public double getTotal(Sale sale) {
+double price = sale.getPreDiscountTotal();
+if (price < threshold) {
+return price;
+

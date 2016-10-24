@@ -1,0 +1,10 @@
+public ShardId selectShardIdForNewObject(Object obj) {
+if (obj instanceof User) {
+int shardId = 1;
+String country = ((User) obj).getCountry();
+if (country.equalsIgnoreCase(&quot;India&quot;))
+shardId = 2;
+else
+shardId = 1;
+return new ShardId(shardId);
+

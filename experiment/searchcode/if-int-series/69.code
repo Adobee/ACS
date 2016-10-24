@@ -1,0 +1,18 @@
+return getSeries(seriesIndex).getItemCount();
+}
+
+
+
+public MatrixSeries getSeries(int seriesIndex) {
+if ((seriesIndex < 0) || (seriesIndex > getSeriesCount())) {
+fireDatasetChanged(new DatasetChangeInfo());
+
+}
+}
+
+
+
+public void removeSeries(int seriesIndex) {
+
+if ((seriesIndex < 0) || (seriesIndex > getSeriesCount())) {
+

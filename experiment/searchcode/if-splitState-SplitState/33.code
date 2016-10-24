@@ -1,0 +1,9 @@
+convertView = inflater.inflate(resource, null);
+
+RunSplit item = (RunSplit) getItem(position);
+
+if (item.getState() == SplitState.CURRENT &amp;&amp; controller.isRunning()) {
+convertView.setBackgroundResource(R.drawable.activesplit);
+}
+if (item.getState() == SplitState.FUTURE || (item.getState() == SplitState.CURRENT &amp;&amp; !controller.isRunning())) {
+

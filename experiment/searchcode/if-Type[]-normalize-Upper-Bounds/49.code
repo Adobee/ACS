@@ -1,0 +1,9 @@
+public void setWeightType(WeightTypes type) {
+this.type = type;
+}
+
+public void setNormalizedBounds(double lowerBound, double upperBound) {
+private double logNormalize(double weight) {
+if (normalFactor == Double.MAX_VALUE) {
+normalFactor = (upperBounds-lowerBounds)/(maxLogWeight-minLogWeight);
+

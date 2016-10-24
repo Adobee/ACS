@@ -1,0 +1,7 @@
+public String getChange(Cluster cluster, int masterNum, int slaveNum) {
+JClusterInfo info = this;
+if(!info.getCluster_state().equals(cluster.getStatus())){
+return &quot;status changed, new status : &quot;+ info.getCluster_state();
+}
+if(masterNum != cluster.getMasterNum()){
+

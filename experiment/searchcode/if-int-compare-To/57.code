@@ -1,0 +1,9 @@
+public class CardComparator implements Comparator<Card> {
+@Override
+public int compare(Card o1, Card o2) {
+int compare;
+if(o1 != null &amp;&amp; o2 != null) {
+Suit suit2 = o2.getSuit();
+compare = suit1.getOrder().compareTo(suit2.getOrder());
+if (compare == 0) {
+

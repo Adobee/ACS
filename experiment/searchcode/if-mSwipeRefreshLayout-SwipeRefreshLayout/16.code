@@ -1,0 +1,9 @@
+public abstract class SwipeRefreshListFragment extends ListFragment implements OnRefreshListener {
+
+private SwipeRefreshLayout mSwipeRefreshLayout;
+
+@Override
+protected View onInflateView(final LayoutInflater inflater, final ViewGroup container, final Bundle savedInstance) {
+if (!(view instanceof SwipeRefreshLayout)) {
+mSwipeRefreshLayout = (SwipeRefreshLayout) view.findViewById(R.id.swipe_refresh_layout);
+

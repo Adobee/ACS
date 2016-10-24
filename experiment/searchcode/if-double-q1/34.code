@@ -1,0 +1,8 @@
+static boolean intersect(double[][] p1, double[][] q1, double[][] p2, double[][] q2)
+{
+return intersect(fix(p1),fix(q1),fix(p2),fix(q2));
+}
+static boolean intersect(double[] p1, double[] q1, double[] p2, double[] q2)
+{
+return intersecth(p1,q1,p2,q2) &amp;&amp; intersecth(p2,q2,p1,q1);
+

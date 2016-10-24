@@ -1,0 +1,12 @@
+public abstract List params();
+
+public abstract boolean isImmutable();
+
+public Object toImmutable()
+{
+if (isImmutable()) return this;
+public void checkInCtor(Object it)
+{
+if (it == inCtor) return;
+String msg = it == null ? &quot;null&quot; : FanObj.typeof(it).qname();
+

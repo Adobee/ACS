@@ -1,0 +1,9 @@
+public boolean isComplete() {
+return mStack.isEmpty();
+}
+
+public boolean isCompletable(Set<Symbol> epsilonproductions) {
+boolean completable = true;
+for (Symbol sym : mStack) {
+if (! epsilonproductions.contains(sym)) {
+

@@ -1,0 +1,9 @@
+public static DoubleTimeSeries<?>[] intersect(DoubleTimeSeries<?>... series) {
+if (series.length <= 1) {
+return series;
+}
+
+//Make the smallest series we can
+for (int i = 1; i < series.length; i++) {
+series[0] = series[0].intersectionFirstValue(series[i]);
+

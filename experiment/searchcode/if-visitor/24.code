@@ -1,0 +1,8 @@
+public AnnotationVisitor(int api, AnnotationVisitor annotationVisitor) {
+if(api != Opcode.JBEL_1) {
+this.annotationVisitor = annotationVisitor;
+}
+
+public void visitEnd() {
+if(this.annotationVisitor != null) {
+

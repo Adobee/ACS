@@ -1,0 +1,8 @@
+public class SamplePartition extends HashPartitioner<Text,Text>{
+@Override
+public int getPartition(Text key, Text value, int numReduceTasks) {
+int p=0;
+if(key.toString().startsWith(&quot;0001&quot;))p=1;
+if(key.toString().startsWith(&quot;0002&quot;))p=2;
+if(key.toString().startsWith(&quot;0003&quot;))p=3;
+

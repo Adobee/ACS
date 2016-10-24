@@ -1,0 +1,11 @@
+* needed.
+*
+* @param startIdx
+* @return
+* @throws ParserException
+*/
+protected int skipWhitespace(int startIdx) throws ParserException {
+protected int skipJavaWord(int startIdx) throws ParserException {
+int i1 = skipWhitespace(startIdx);
+if (!Character.isJavaIdentifierStart(source.charAt(i1)))
+

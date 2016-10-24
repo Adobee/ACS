@@ -1,0 +1,9 @@
+* @param context 上下文
+* @param httpUrl URL接口路径
+* @param rspClass 响应消息对象
+* @param handler Handler控制器
+public static void sendHttpGetCommonRequest(Context context,
+String httpUrl, Class<?> rspClass, Handler handler)
+{
+new CommonRequest(context, httpUrl, rspClass, handler).sendHttpRequest();
+

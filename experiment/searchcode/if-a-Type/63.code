@@ -1,0 +1,12 @@
+public static String getColumnType(Class<?> type) {
+if ((type.equals(Boolean.class)) ||
+(type.equals(Boolean.TYPE)) ||
+return &quot;INTEGER&quot;;
+}
+
+if (type.getName().equals(&quot;[B&quot;)) {
+return &quot;BLOB&quot;;
+}
+
+if ((type.equals(Double.class)) || (type.equals(Double.TYPE)) || (type.equals(Float.class)) ||
+

@@ -1,0 +1,15 @@
+RowData center = new RowData(1d, 1d);
+
+addToolBar(north);
+addContent(center);
+
+}
+
+boolean checkPermissions() {
+if (ws == null) {
+if ((mode == ADDSEARCH || mode == ADDBROWSE)) {
+refreshNeededAdd = false;
+taxaList.setFilter(TaxaData.FAMILY);
+taxaList.forcedRefresh();
+} else if (mode == DELETE) {
+

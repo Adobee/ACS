@@ -1,0 +1,10 @@
+private BufferedImage img;
+private Timer timer;
+static int bulletSpeed = 10;
+int currX;
+int currY;
+int max;
+timer = new Timer(1000 / Board.FPS_MAX, (ActionEvent e) -> {
+if(currX >= max) {
+isDone = true;
+

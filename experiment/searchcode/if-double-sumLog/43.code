@@ -1,0 +1,7 @@
+* <code>Double.POSITIVE_INFINITY</code>,  but at least one value is 0, the
+* result is <code>Double.NEGATIVE_INFINITY.</code></li>
+* <li>If both <code>Double.POSITIVE_INFINITY</code> and
+public double evaluate(final double[] values, final int begin, final int length) {
+double sumLog = Double.NaN;
+if (test(values, begin, length, true)) {
+

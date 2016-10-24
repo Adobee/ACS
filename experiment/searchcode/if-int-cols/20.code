@@ -1,0 +1,8 @@
+int rows = matrix.length;
+int cols = matrix[0].length;
+int low = 0;
+int high = rows * cols - 1;
+while (low <= high) {
+int mid = (low + high) / 2;
+if (matrix[mid/cols][mid%cols] == target)
+

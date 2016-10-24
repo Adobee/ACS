@@ -1,0 +1,9 @@
+for (int i = A.length; i < B.length; i++) {
+if (B[i] != produce(B, i - A.length, i - 1)) {
+return -1;
+int code = encode(A);
+if (history.contains(code)) {
+return -1;
+}
+if (prefixEqual(A, B)) {
+

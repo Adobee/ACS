@@ -1,0 +1,14 @@
+Double percent = (Double) session.getAttribute(&quot;percent&quot;);
+if (percent == null) {
+percent = 0.0;
+}
+percent *= 100;
+String msg = percent.toString();
+if (percent >= 100) {
+session.setAttribute(&quot;percent&quot;, 0.0);
+}
+
+writeResponse(msg);
+}
+}
+

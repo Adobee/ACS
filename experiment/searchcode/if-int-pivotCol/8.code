@@ -1,0 +1,9 @@
+public void solve(Matrix matrix, boolean gaussOnly) {
+
+pivotRow = pivotCol = -1;
+doGauss(matrix);
+if (!gaussOnly) doGaussJordan(matrix);
+double leadingValue = matrix.get(rank, pivotCol);
+if (leadingValue != 1) {
+matrix.multiplyRow(rank, 1.0 / leadingValue);
+

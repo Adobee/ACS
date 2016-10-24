@@ -1,0 +1,6 @@
+public static UnicodeEscaper outsideOf(final int codepointLow, final int codepointHigh) {
+return new UnicodeEscaper(codepointLow, codepointHigh, false);
+* @return the newly created {@code UnicodeEscaper} instance
+*/
+public static UnicodeEscaper between(final int codepointLow, final int codepointHigh) {
+

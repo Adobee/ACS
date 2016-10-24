@@ -1,0 +1,6 @@
+boolean isNowPlaying = item.startTime <= now &amp;&amp; now <= item.endTime &amp;&amp; item.type == ScheduleItem.SESSION;
+boolean isPastDuringConference = item.endTime <= now &amp;&amp; now < Config.CONFERENCE_END_MILLIS;
+
+if (isPastDuringConference) {
+view.setBackgroundColor(mColorBackgroundPast);
+

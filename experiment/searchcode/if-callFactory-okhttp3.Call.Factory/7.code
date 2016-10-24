@@ -1,0 +1,12 @@
+interceptors.add(stethoInterceptor);
+}
+return interceptors;
+}
+
+@Provides
+@Singleton
+Call.Factory callFactory(Cache cache, List<Interceptor> networkInterceptors) {
+@Provides
+@Singleton
+Retrofit retrofit(Converter.Factory converterFactory, Call.Factory callFactory) {
+

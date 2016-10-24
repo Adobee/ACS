@@ -1,0 +1,11 @@
+AsdrParser parser = null;
+
+try {
+if (args.length == 0)
+parser = new AsdrParser(new InputStreamReader(System.in));
+AsdrGrammar adsr = new AsdrGrammar(parser);
+adsr.run();
+
+if (parser.isEOF())
+System.out.println(&quot;\n\nSucesso!&quot;);
+

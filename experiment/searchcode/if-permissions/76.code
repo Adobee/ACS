@@ -1,0 +1,9 @@
+public static boolean hasPermission(Player player, String key) {
+if (getPermissions() != null &amp;&amp; permissions.permission(player, key)) {
+return true;
+Plugin test = CmdBlocker.getPlugin().getServer().getPluginManager().getPlugin(&quot;Permissions&quot;);
+
+if (permissions == null) {
+if (test != null) {
+CmdBlocker.writelog(&quot;Permissions plugin found!&quot;, false);
+

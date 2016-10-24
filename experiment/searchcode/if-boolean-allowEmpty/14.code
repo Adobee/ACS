@@ -1,0 +1,15 @@
+public class FixedLengthValidator implements ConstraintValidator<FixedLength, String> {
+
+private boolean allowEmpty;
+
+private int length;
+
+@Override
+public void initialize(FixedLength constraintAnnotation) {
+length = constraintAnnotation.length();
+allowEmpty = constraintAnnotation.allowEmpty();
+}
+
+@Override
+public boolean isValid(String value, ConstraintValidatorContext context) {
+

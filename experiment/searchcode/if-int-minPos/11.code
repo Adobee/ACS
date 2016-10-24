@@ -1,0 +1,17 @@
+for(int i=0; i < num.length; i++){
+
+int minPos = i;
+
+for(int j=minPos; j < num.length; j++){
+if(num[j] < num[minPos]){
+minPos = j;
+}
+}
+
+int temp = num[minPos];
+num[minPos] = num[i];
+num[i] = temp;
+}
+}
+}
+

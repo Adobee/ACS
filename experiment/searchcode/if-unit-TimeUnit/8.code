@@ -1,0 +1,8 @@
+public enum TimeUnit {
+DAYS(Calendar.DAY_OF_YEAR), HOURS(Calendar.HOUR), MINUTES(Calendar.MINUTE);
+
+private final int type;
+public static TimeUnit fromString(String timeUnit) {
+for (TimeUnit unit : values()) {
+if (unit.name().startsWith(timeUnit.toUpperCase()))
+

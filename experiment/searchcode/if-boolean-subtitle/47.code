@@ -1,0 +1,10 @@
+private String getName(Subtitle subtitle) {
+String releaseName = subtitle.getRelease();
+
+// check if release name contains sufficient information to be used as display name
+if (releaseName != null &amp;&amp; !releaseName.isEmpty()) {
+boolean isValid = true;
+
+if (subtitle.getSeason() != null) {
+isValid &amp;= releaseName.contains(subtitle.getSeason().toString());
+

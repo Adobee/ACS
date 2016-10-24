@@ -1,0 +1,9 @@
+package practica3;
+
+import java.math.BigInteger;
+
+public class MultiplicacionSumas implements Multiplicacion {
+public BigInteger multiplica(BigInteger n, BigInteger m) {
+if(m.compareTo(new BigInteger(&quot;0&quot;)) ==0) return new BigInteger(&quot;0&quot;);
+return(n.add(multiplica(n,m.subtract(new BigInteger(&quot;1&quot;)))));
+

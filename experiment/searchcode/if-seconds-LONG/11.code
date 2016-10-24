@@ -1,0 +1,11 @@
+public static String getTimeString(long timeStamp) {
+long dt = System.currentTimeMillis() - timeStamp;
+long seconds = dt / 10000;
+if(seconds < 60) {
+return seconds + &quot;s&quot;;
+}
+
+long minutes = seconds / 60;
+
+if(minutes < 60) {
+

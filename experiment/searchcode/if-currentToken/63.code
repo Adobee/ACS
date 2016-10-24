@@ -1,0 +1,8 @@
+public static void rule_program(DefaultMutableTreeNode parent)
+{
+if (currentToken < tokens.size() &amp;&amp; tokens.get(currentToken).getWord().equals(&quot;{&quot;))
+if(!(tokenWord.equals(&quot;print&quot;) || (tokenName.equals(&quot;IDENTIFIER&quot;)) || ((tokenName.equals(&quot;KEYWORD&quot;)) &amp;&amp; (tokenWord.equals(&quot;int&quot;) || tokenWord.equals(&quot;float&quot;) || tokenWord.equals(&quot;boolean&quot;) || tokenWord.equals(&quot;char&quot;) || tokenWord.equals(&quot;string&quot;) || tokenWord.equals(&quot;void&quot;) || tokenWord.equals(&quot;while&quot;) || tokenWord.equals(&quot;if&quot;))) || (tokenWord.equals(&quot;return&quot;)) || (tokenWord.equals(&quot;}&quot;)) || (tokenWord.equals(&quot;default&quot;)) ))
+{
+DefaultMutableTreeNode node;
+if(currentToken < tokens.size() &amp;&amp; tokens.get(currentToken).getToken().equals(&quot;ERROR&quot;))
+

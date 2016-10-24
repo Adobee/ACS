@@ -1,0 +1,8 @@
+private int lastSprite;
+private SpriteSheet sheet;
+private int currSprite;
+private int skipIndex = 0;
+public void draw(Graphics g, int x, int y) {
+g.drawImage(sheet.sprites[currSprite], x, y, null);
+if (skipIndex == frameSkip) {
+

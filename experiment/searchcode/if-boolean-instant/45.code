@@ -1,0 +1,7 @@
+public void mouseClicked(TimeLineInputEvent event) {
+if (line == null &amp;&amp; event.getTimeLine() != null &amp;&amp; (event.getInstant() == null || !viewer.getModel().getFocus().contains(event.getInstant()))) {
+TemporalRange r = line.getMyRange();
+startRange = (TemporalRange) r.clone();
+startInstant = getInstantToSnapTo(event);
+if (!r.contains(startInstant)) {
+

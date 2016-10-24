@@ -1,0 +1,13 @@
+public static void testBasics(ContiguousMemoryInterface pContiguousMemoryInterface,
+MemoryType pMemoryType,
+final boolean pResize)
+{
+final long lLength = pContiguousMemoryInterface.getSizeInBytes();
+assertTrue(pContiguousMemoryInterface.getMemoryType() == pMemoryType);
+
+assertFalse(pContiguousMemoryInterface.isFree());
+
+if (pResize)
+{
+if (pContiguousMemoryInterface instanceof Resizable)
+

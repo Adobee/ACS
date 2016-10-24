@@ -1,0 +1,11 @@
+game.setGameId(buffer.readLong());
+
+int countBytes=buffer.readInt();
+byte[] b=new byte[countBytes];
+buffer.readBytes(b);
+game.setEvalible(buffer.readBoolean());
+if(!game.isEvalible())
+return;
+
+countBytes=buffer.readInt();
+

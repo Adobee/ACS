@@ -1,0 +1,6 @@
+* @see gdsc.smlm.fitting.FunctionSolver#fit(int, double[], double[], double[], double[], double[], double)
+// iterations for convergence
+final double initialStepBoundFactor = 100;
+final double costRelativeTolerance = 1e-10;
+final double parRelativeTolerance = 1e-10;
+

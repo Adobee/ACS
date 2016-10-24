@@ -1,0 +1,8 @@
+public static double getDouble(byte[] bytes, int offset) {
+return Double.longBitsToDouble(getLong(bytes, offset));
+public static boolean getBoolean(byte[] bytes, int offset) {
+if (bytes[offset] == 0)
+return false;
+else
+return true;
+

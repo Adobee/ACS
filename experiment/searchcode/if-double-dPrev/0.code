@@ -1,0 +1,9 @@
+BubbleNode node;
+Vector2D fPrev, fNext, fCenter;
+double dPrev = -1, dNext = -1;
+for(int idx = 0; idx < bubble.getNodesCount(); idx ++)
+next = bubble.getAnchor(idx+1 < bubble.getNodesCount() ? idx+1 : 0);
+
+if(dPrev < 0)
+dPrev = Math.sqrt(DistanceUtils.calcDistanceSquare(prev, curr));
+

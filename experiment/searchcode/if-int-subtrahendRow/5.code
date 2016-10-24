@@ -1,0 +1,12 @@
+this.m_[ targetRow ][ col ] *= coefficient;
+}
+}
+
+protected void _subtractRowFrom( int minuendRow, int subtrahendRow ) {
+double coefficient = this._getComponentOf( minuendRow, subtrahendRow ) / this._getComponentOf( subtrahendRow, subtrahendRow );
+this.m_[ minuendRow ][ col ] -= coefficient * this.m_[ subtrahendRow ][ col ];
+}
+}
+
+protected void _exchangeRows( int a, int b ) {
+

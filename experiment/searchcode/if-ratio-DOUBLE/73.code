@@ -1,0 +1,6 @@
+public class PrimaryStoragePhysicalCapacityManagerImpl implements PrimaryStoragePhysicalCapacityManager {
+private double globalRatio = 1;
+private ConcurrentHashMap<String, Double> primaryStorageRatio = new ConcurrentHashMap<String, Double>();
+
+@Override
+

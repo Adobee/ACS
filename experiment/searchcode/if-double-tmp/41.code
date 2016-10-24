@@ -1,0 +1,5 @@
+public static double[] intersect(Sphere s, double[] rayPos, double[] rayDir, double dov, double[] tmp_1, double[][]tmp_3, double[][]tmp_6){
+double[] result = tmp_6[0];
+result[0] = -1;
+double[] c = tmp_3[2];
+

@@ -1,0 +1,14 @@
+return (weight == null)?_weight:weight.get();
+}
+
+public void setWeight(double newWeight) {
+if (weight == null) {
+_weight = newWeight;
+public DoubleProperty weightProperty() {
+if (weight == null) {
+weight = new SimpleDoubleProperty(this, &quot;weight&quot;, _weight);
+}
+return weight;
+}
+}
+

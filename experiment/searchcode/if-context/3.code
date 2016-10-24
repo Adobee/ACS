@@ -1,0 +1,10 @@
+private static volatile Context context;
+
+private Context() {
+}
+
+public static Context getInstance() {
+if (context == null) {
+synchronized (Context.class) {
+if (context == null) {
+

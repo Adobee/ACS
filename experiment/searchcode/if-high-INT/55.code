@@ -1,0 +1,8 @@
+left[i][j] = -1;
+for (int k = left[i][j - 1]; k >= 0; k--) {
+if (high[i][k] < high[i][j]) {
+else {
+right[i][j] = width;
+for (int k = right[i][j + 1]; k < width; k++) {
+if (high[i][k] < high[i][j]) {
+

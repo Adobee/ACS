@@ -1,0 +1,11 @@
+public void solve(int row, int n, int[] columnForRow) {
+if (row == n) {
+result++;
+return;
+}
+for (int i = 0; i < n; i++) {
+columnForRow[row] = i;
+public boolean check(int row, int[] columnForRow) {
+for (int i = 0; i < row; i++) {
+if (columnForRow[i] == columnForRow[row]
+

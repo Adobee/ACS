@@ -1,0 +1,9 @@
+package fileattente;
+
+class File<E> implements FileAttente<E> {
+
+private final E[] tableau;
+@SuppressWarnings(&quot;unchecked&quot;)
+E[] safeCast = (E[]) new Object[capacity];
+this.tableau = safeCast;
+

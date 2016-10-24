@@ -1,0 +1,12 @@
+public class VariableLengthInteger {
+
+@BoundNumber(byteOrder=ByteOrder.BigEndian, size=&quot;8&quot;)
+private Integer firstByte;
+
+@If(&quot;firstByte == 0xfd&quot;)
+private Long fourBytes;
+
+public void setValue(long value) {
+if(value < 0xfd) {
+firstByte = (int) value;
+

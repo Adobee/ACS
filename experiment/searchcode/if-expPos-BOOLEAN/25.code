@@ -1,0 +1,9 @@
+public static String format(int fieldwidth, int accuracy, int precision, double x){
+if(Double.isNaN(x))
+return s(fieldwidth, &quot;NaN&quot;);
+df = dfe[precision];
+}
+String res = df.format(x);
+int exppos = res.indexOf(&#39;E&#39;);
+if(exppos != -1 &amp;&amp; res.charAt(exppos + 1) != &#39;-&#39;)
+

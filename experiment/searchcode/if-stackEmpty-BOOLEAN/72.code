@@ -1,0 +1,10 @@
+public boolean close() throws PersistenceServiceException {
+boolean closed = false;
+try {
+if (session.isOpen()) {
+transaction.commit();
+}
+}
+if (stackEmpty()) {
+session.close();  // only really close the session if there&#39;s no nested sessions
+

@@ -1,0 +1,8 @@
+assertTrue(success(&quot;foo&quot;).ifSuccess(s -> {
+throw new Exception();
+}).isFailure());
+assertEquals(&quot;foo&quot;, success(&quot;foo&quot;).ifSuccess(i -> {
+}).get());
+
+final AtomicBoolean test = new AtomicBoolean(false);
+

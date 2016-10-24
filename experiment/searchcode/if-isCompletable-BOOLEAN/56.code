@@ -1,0 +1,8 @@
+* and the disclaimer of Article 6 in the documentation and/or other materials
+* provided with the distribution, if any.
+return isCtepReviewer() &amp;&amp; (getRegistration().isReviewable() || getRegistration().isReviewOnHold());
+}
+
+public boolean isCompletable() {
+return isCtepReviewer() &amp;&amp; getRegistration().isCompleteable();
+

@@ -1,0 +1,5 @@
+LongBitSet acceptedOrds = filter.acceptedGlobalOrdinals(DocValues.emptySortedSet());
+assertEquals(0, acceptedOrds.length());
+filter = inexcl.convertToOrdinalsFilter(DocValueFormat.RAW);
+acceptedOrds = filter.acceptedGlobalOrdinals(DocValues.emptySortedSet());
+

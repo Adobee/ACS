@@ -1,0 +1,9 @@
+return getUpgradeActions(loadUpgradeConfig());
+}
+
+public boolean isPostUpgradeStarted() {
+return ApplicationHelper.getState() == State.POST_UPGRADE_STARTED;
+log.info(&quot;Post Upgrade manager initialize invoked.&quot;);
+State state = ApplicationHelper.getState();
+if (state == State.RUNNING) {
+

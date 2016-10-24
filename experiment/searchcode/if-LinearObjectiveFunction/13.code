@@ -1,0 +1,7 @@
+/*  11:    */ public class LinearObjectiveFunction
+/*  12:    */   implements Serializable
+/*  13:    */ {
+/*  54:112 */     if ((other instanceof LinearObjectiveFunction))
+/*  55:    */     {
+/*  56:113 */       LinearObjectiveFunction rhs = (LinearObjectiveFunction)other;
+

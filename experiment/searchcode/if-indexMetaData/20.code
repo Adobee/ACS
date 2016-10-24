@@ -1,0 +1,5 @@
+private IndexMetaData checkSupportedVersion(IndexMetaData indexMetaData) throws Exception {
+if (indexMetaData.getState() == IndexMetaData.State.OPEN &amp;&amp; isSupportedVersion(indexMetaData) == false) {
+private IndexMetaData upgradeLegacyRoutingSettings(IndexMetaData indexMetaData) throws Exception {
+if (indexMetaData.settings().get(IndexMetaData.SETTING_LEGACY_ROUTING_HASH_FUNCTION) == null
+

@@ -1,0 +1,8 @@
+public class NFDHMix implements SchedulingAlgorithm {
+public double schedule(ArrayList<Job> jobs,
+double D) {
+double currX = D;
+for (int i = 0; i < jobs.size(); i++) {
+Job j = jobs.get(i);
+if (j.d <= D - currX) {
+

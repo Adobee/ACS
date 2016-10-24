@@ -1,0 +1,9 @@
+import javax.servlet.http.HttpServletRequest;
+
+
+public class DomainUtil {
+
+public static String getDomainValue(HttpServletRequest request){
+StringBuffer url = request.getRequestURL();
+if(url.indexOf(DomainConst.SN_DOMAIN)>-1){
+

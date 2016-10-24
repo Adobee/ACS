@@ -1,0 +1,8 @@
+private Solution solve(RealMatrix a, RealMatrix b, double eps) {
+int n = a.getRowDimension();
+String info = null;
+if (!MatrixUtils.isSymmetric(a, eps)) {
+double alpha = r.transpose().multiply(r).getEntry(0, 0) / a.multiply(z).transpose().multiply(z).getEntry(0, 0);
+x = x.add(z.scalarMultiply(alpha));
+if (Util.defaultStoppingCriteria(a.getData(), b.getColumn(0), x.getColumn(0), norm, eps))
+

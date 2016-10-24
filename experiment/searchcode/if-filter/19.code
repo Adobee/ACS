@@ -1,0 +1,7 @@
+try {
+
+if ( !filter.getFilterValue().matches(FilterConstraints.DATE_TIME_REGEX ) ) {
+filter.setFilterValueObj(format.parse(filter.getFilterValue()));
+
+if ( filter.getFilterCriteria() == FilterType.LIKE || filter.getFilterCriteria() == FilterType.EQUALS ) {
+

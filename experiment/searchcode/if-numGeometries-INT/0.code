@@ -1,0 +1,8 @@
+return linearize(tolerance);
+}
+
+public MultiPolygon linearize(double tolerance) {
+int numGeometries = getNumGeometries();
+Polygon[] linearized = new Polygon[numGeometries];
+for (int k = 0; k < numGeometries; k++) {
+

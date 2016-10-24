@@ -1,0 +1,15 @@
+implements Iterator<T> {
+
+private Iterator<T> contentIter;
+
+@Override
+public boolean hasNext() {
+if (contentIter == null)
+return contentIter.hasNext();
+}
+
+@Override
+public T next() {
+if (contentIter == null)
+contentIter = createIterator();
+

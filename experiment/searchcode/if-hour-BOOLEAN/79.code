@@ -1,0 +1,11 @@
+private int minute;
+
+public void setTime(int hour, int minute){
+if(!checkTime(hour, minute)) {
+return;
+return hour * 60 + minute;
+}
+
+private boolean checkTime(int hour, int minute) {
+if(hour < 0 || hour > 23 || minute < 0 || minute > 59){
+

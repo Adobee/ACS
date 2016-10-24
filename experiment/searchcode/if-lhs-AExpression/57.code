@@ -1,0 +1,8 @@
+import org.eclipse.edt.mof.egl.IsAExpression;
+import org.eclipse.edt.mof.egl.IsNotExpression;
+import org.eclipse.edt.mof.egl.LHSExpr;
+indexExpr.accept(this);
+Expression index = (Expression)stack.pop();
+Type exprType = indexExpr.resolveType();
+if (exprType == null) {
+

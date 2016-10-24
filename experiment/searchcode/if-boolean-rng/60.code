@@ -1,0 +1,12 @@
+this.gameLength = gameLength;
+}
+
+public Order generateGene(Random rng) {
+Order generated;
+if (rng.nextBoolean()) {
+generated = generateWait(rng);
+} else {
+generated = generateBuy(rng);
+}
+return generated;
+

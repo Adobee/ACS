@@ -1,0 +1,10 @@
+import bootstrap.service.oauth.config.OAuthServiceConfigHelper;
+
+public class OAuthServiceFactory {
+
+private static Map<ProviderType, OAuthService> serviceList = new HashMap<ProviderType, OAuthService>();
+public static OAuthService getService(ProviderType providerType) {
+if (!serviceList.containsKey(providerType)) {
+
+OAuthServiceConfig config = OAuthServiceConfigHelper.getInstance().getConfig(providerType);
+

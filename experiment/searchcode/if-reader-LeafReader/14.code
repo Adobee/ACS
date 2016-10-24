@@ -1,0 +1,11 @@
+assertTrue(resultDS.getScore() != resultLMS.getScore());
+} finally {
+if (leafReader != null) {
+leafReader.close();
+}
+}
+}
+
+/**
+* This test is for the scenario where in the first topK results from the MLT query, we have the same number of results per class.
+

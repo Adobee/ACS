@@ -1,0 +1,10 @@
+protected List<T>[] cut(List<T> data, int[] crossOverPoints)
+{
+List<T>[] list = new ArrayList[crossOverPoints.length];
+int crossOverIndex = 0;
+for(int i = 0; i < list.length; i++)
+{
+list[crossOverIndex].add(data.get(i));
+
+if(crossOverPoints[crossOverIndex] == i &amp;&amp; crossOverPoints[crossOverIndex] < list.length - 1)
+

@@ -1,0 +1,12 @@
+Node<T> grandParent = (parent != null) ? parent.parent : null;
+
+if (parent == root) {
+
+// Zig step
+root = node;
+node.parent = null;
+
+if (node == parent.lesser) {
+parent.lesser = node.greater;
+if (node.greater != null)
+

@@ -1,0 +1,15 @@
+public boolean isPressed;
+public boolean isUp;
+
+protected abstract boolean isPressed();
+
+public void flush() {
+isDown = false;
+isPressed = true;
+isUp = true;
+}
+
+
+public void update() {
+boolean wasPressed = isPressed;
+

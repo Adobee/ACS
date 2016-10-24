@@ -1,0 +1,16 @@
+protected volatile boolean started = false;
+protected volatile boolean closed = false;
+
+public void start(Runnable callback) {
+return;
+}
+
+if(started) {
+callback.run();
+}
+closed = true;
+}
+}
+
+public boolean isStarted() {
+

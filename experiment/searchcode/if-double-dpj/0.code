@@ -1,0 +1,11 @@
+
+import dpj.tasks.*;
+import dpj.tasks.wrappers.*;
+import java.util.*;
+import java.io.*;
+
+public class SpanningForest extends Msg0Arg {
+
+public SpanningForest() {
+super(dpj.runtimeeffects.Effects.PURE);
+

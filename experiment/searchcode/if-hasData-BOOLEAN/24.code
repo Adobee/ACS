@@ -1,0 +1,14 @@
+public Array(Stream... in) {
+super(in);
+ix = 0;
+}
+
+@Override
+public Stream read() {
+if(!hasData()) return null;
+return in[ix++];
+}
+
+@Override
+public boolean hasData() {
+

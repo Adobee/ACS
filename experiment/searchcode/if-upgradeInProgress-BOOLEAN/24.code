@@ -1,0 +1,9 @@
+// True if the next merge request should do segment upgrades:
+private volatile boolean upgradeInProgress;
+
+// True if the next merge request should only upgrade ancient (an older Lucene major version than current) segments;
+int maxSegmentCount, Map<SegmentCommitInfo,Boolean> segmentsToMerge, IndexWriter writer)
+throws IOException {
+
+if (upgradeInProgress) {
+

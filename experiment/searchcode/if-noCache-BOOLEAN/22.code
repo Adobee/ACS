@@ -1,0 +1,9 @@
+private CacheControl(boolean noCache, boolean noStore, int maxAgeSeconds, int sMaxAgeSeconds, boolean isPublic, boolean mustRevalidate, int maxStaleSeconds, int minFreshSeconds, boolean onlyIfCached) {
+this.noCache = noCache;
+this.minFreshSeconds = minFreshSeconds;
+this.onlyIfCached = onlyIfCached;
+}
+
+public boolean noCache() {
+return this.noCache;
+

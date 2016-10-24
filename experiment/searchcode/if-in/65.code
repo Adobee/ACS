@@ -1,0 +1,6 @@
+if (c == &#39;&quot;&#39;) inStr = !inStr;
+if (c == &#39;;&#39;) inComment = true;
+if (c == &#39;\n&#39; || c == &#39;\r&#39;) inComment = false;
+else if (!inStr &amp;&amp; !inComment &amp;&amp; c == &#39;(&#39;) openCount++;
+else if (!inStr &amp;&amp; !inComment &amp;&amp; c == &#39;)&#39;) closeCount++;
+

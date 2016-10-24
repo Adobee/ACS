@@ -1,0 +1,12 @@
+public class AllDocumentOperatedClause extends OperatedClause {
+private int docCount;
+private int pos;
+
+public AllDocumentOperatedClause(int docCount){
+super(&quot;ALL&quot;);
+this.docCount = docCount;
+}
+
+protected boolean nextDoc(RankInfo rankInfo) {
+if(pos < docCount){
+

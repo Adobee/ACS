@@ -1,0 +1,10 @@
+package com.decider.core;
+
+import com.decider.core.Factor;
+import com.decider.core.Choice;
+import com.decider.core.types.FactorChoiceType;
+public void setValue(T value) {
+this.value = value;
+if (this.factor != null) {
+this.factor.computeWinningChoices();
+

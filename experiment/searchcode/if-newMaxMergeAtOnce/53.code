@@ -1,0 +1,7 @@
+this.reclaimDeletesWeight = componentSettings.getAsDouble(&quot;reclaim_deletes_weight&quot;, 2.0d);
+
+fixSettingsIfNeeded();
+private void fixSettingsIfNeeded() {
+// fixing maxMergeAtOnce, see TieredMergePolicy#setMaxMergeAtOnce
+if (!(segmentsPerTier >= maxMergeAtOnce)) {
+

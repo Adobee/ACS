@@ -1,0 +1,10 @@
+for (int j = 0; j < i - 1; j++) {// 注意要减1，否则越界（下面有j+1）
+if (sort[j] > sort[j + 1]) {
+temp = sort[j + 1];
+sort[j + 1] = sort[j];
+sort[j] = temp;
+public void quickSort(double[] sort, int low, int high) {
+if (low < high) {
+int pivot = findPivot(sort, low, high);
+quickSort(sort, low, pivot - 1);
+

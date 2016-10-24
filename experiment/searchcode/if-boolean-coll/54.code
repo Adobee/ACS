@@ -1,0 +1,11 @@
+HashMap<CollBean, Boolean> hashMap;
+Colladapter adapter;
+Boolean flag = false;
+
+@Override
+public void showCollSuccess(List<CollBean> collBeanList) {
+hashMap = new HashMap<CollBean, Boolean>();
+if (flag) {
+//删除显示箭头隐藏
+for (int i = 0; i < collBeanList.size(); i++) {
+

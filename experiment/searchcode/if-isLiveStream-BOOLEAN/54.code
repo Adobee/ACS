@@ -1,0 +1,9 @@
+item.select(&quot;span[class=\&quot;video-time\&quot;]&quot;).first().text());
+} catch(Exception e) {
+if(isLiveStream(item)) {
+// -1 for no duration
+} catch (IndexOutOfBoundsException e) {
+if(isLiveStream(item)) {
+// -1 for no view count
+return -1;
+

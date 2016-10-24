@@ -1,0 +1,12 @@
+public static final CacheControl FORCE_CACHE = new Builder()
+.onlyIfCached()
+.maxStale(Integer.MAX_VALUE, TimeUnit.SECONDS)
+.build();
+
+private final boolean noCache;
+private final int minFreshSeconds;
+private final boolean onlyIfCached;
+private final boolean noTransform;
+
+String headerValue; // Lazily computed, if absent.
+

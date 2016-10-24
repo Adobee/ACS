@@ -1,0 +1,9 @@
+protected final JsonGenerator generator;
+private boolean writeLineFeedAtEnd;
+
+public JsonXContentGenerator(JsonGenerator generator) {
+@Override
+public void close() throws IOException {
+if (writeLineFeedAtEnd) {
+flush();
+

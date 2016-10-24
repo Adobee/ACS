@@ -1,0 +1,8 @@
+public boolean act(float delta) {
+double radians = Math.atan2(y, x);
+double 	xOffset = (speed * delta)/Math.sqrt(1 + Math.pow(Math.tan(radians),2));
+if(Math.toDegrees(radians) >=90 || Math.toDegrees(radians) <= -90)	{
+xOffset = - xOffset;	//第二象限和第四象限时, x轴偏移量为负
+}
+double yOffset = xOffset * Math.tan(radians);	//y轴偏移量和x轴有关,所以不用判断象限
+

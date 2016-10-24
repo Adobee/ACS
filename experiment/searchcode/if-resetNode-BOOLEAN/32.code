@@ -1,0 +1,11 @@
+return nodeType ;
+}
+public String encode() {
+return Code.encode(nodeType);
+}
+
+public boolean decode(DecodeReturn dret) {
+Code.decode(dret);
+if (dret.type != DecodeReturn.T_STRING) { // uh oh! Restore and signal error.
+dret.data = nodeType;
+

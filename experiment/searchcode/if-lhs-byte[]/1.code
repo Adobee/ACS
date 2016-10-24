@@ -1,0 +1,7 @@
+for (int i = 0; i < len; ++i) {
+byte lhs_byte = lhs[i + lhs_bgn];
+byte rhs_byte = rhs[i + rhs_bgn];
+if (lhs_byte != rhs_byte) {lhs_idx = rhs_idx = i; break;}		// diff; stop iterating
+}
+if (lhs_idx == -1 &amp;&amp; rhs_idx == -1) {
+

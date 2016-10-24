@@ -1,0 +1,14 @@
+import com.opendomotic.device.util.Percent;
+
+/**
+*
+* @author Jaques Claudino
+*/
+public class PercentI2CDevice extends DoubleI2CDevice {
+
+private final Percent percent = new Percent();
+public Double getValue() throws Exception {
+Double value = super.getValue();
+if (value != null) {
+return percent.getPercent(value);
+

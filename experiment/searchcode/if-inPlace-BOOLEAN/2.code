@@ -1,0 +1,9 @@
+writer.write(getLabelToRender(facesContext, inplace));
+writer.endElement(&quot;span&quot;);
+
+if(!inplace.isDisabled()) {
+writer.startElement(&quot;span&quot;, null);
+private String getLabelToRender(FacesContext facesContext, Inplace inplace) {
+if(inplace.getLabel() != null) {
+return inplace.getLabel();
+

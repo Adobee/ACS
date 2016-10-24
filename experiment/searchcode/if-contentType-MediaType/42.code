@@ -1,0 +1,8 @@
+* Created by Carlos on 01/09/2015.
+*/
+public class RequestBody {
+
+public RequestBody(String value, MediaType contentType) {
+if(MediaType.APPLICATION_FORM_URLENCODED_VALUE.equals(contentType)){
+throw new IllegalArgumentException(&quot;ContentType APPLICATION_FORM_URLENCODED_VALUE need list of NameValuePair. See construtor with NameValuePair&quot;);
+

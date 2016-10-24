@@ -1,0 +1,11 @@
+public Collection<NextStep> getNextStepUrls() {
+if (nextStepUrls == null) {
+nextStepUrls = new ArrayList();
+hash = 71 * hash + (this.nextStepUrls != null ? this.nextStepUrls.hashCode() : 0);
+return hash;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (obj == null) {
+

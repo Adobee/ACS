@@ -1,0 +1,7 @@
+Set<?> ids = DateTimeZone.getAvailableIDs();
+
+Set<DateTimeZone> zoneSet = new HashSet<DateTimeZone>();
+long now = System.currentTimeMillis();
+DateTimeZone zone = DateTimeZone.forID((String) object);
+if (!zone.isFixed() &amp;&amp; zone.nextTransition(now) != now) {
+

@@ -1,0 +1,7 @@
+cmp = _comparator.compare(key, node.getKey());
+if (cmp == 0) {
+return node.setValue(value);
+}
+
+node = cmp < 0 ? node.getSmaller() : node.getLarger();
+

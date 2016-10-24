@@ -1,0 +1,7 @@
+void iterate(final File root, final CompletionService<Long> executorService) {
+iterations.incrementAndGet();
+final File[] files = root.listFiles();
+for (final File file : files) {
+Counter.count.incrementAndGet();
+if (file.isFile()) {
+

@@ -1,0 +1,7 @@
+public static String getTimeString(Date date, String format, String timeZone) {
+if (null == date || StringUtils.isEmpty(format)) {
+return null;
+}
+DateFormat dateFormat = new SimpleDateFormat(format);
+if (StringUtils.isNotEmpty(timeZone)) {
+

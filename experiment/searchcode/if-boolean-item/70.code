@@ -1,0 +1,8 @@
+import cz.kofron.storage.protocol.request.RequestItemGroup;
+import cz.kofron.storage.protocol.response.ResponseBoolean;
+import cz.kofron.storage.protocol.response.ResponseItemGroups;
+ResponseItemGroups itemGroups = (ResponseItemGroups) client.communicate(new RequestAddItemGroup(name, description));
+if(itemGroups.getItemGroups().size() == 1)
+{
+return itemGroups.getItemGroups().get(0);
+

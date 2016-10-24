@@ -1,0 +1,9 @@
+public LRUSet(int initialCapacity, int maximumCacheSize, float loadFactor,
+boolean accessOrder) {
+this.cache = new LRUMap<E, Integer>(initialCapacity, maximumCacheSize,
+loadFactor, accessOrder);
+}
+
+public boolean isEmpty() {
+return cache.isEmpty();
+

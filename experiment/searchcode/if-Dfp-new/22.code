@@ -1,0 +1,8 @@
+this.dfpStatement = dfpStatement;
+
+try {
+String className = dfpStatement.getClass().getName();
+
+if (!(DfpClassUtil.isValidDfpPackage(className) &amp;&amp; className.endsWith(&quot;Statement&quot;))) {
+throw new RuntimeException(&quot;The parameter provided is not an object of Statement&quot;);
+

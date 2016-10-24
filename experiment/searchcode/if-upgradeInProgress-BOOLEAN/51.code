@@ -1,0 +1,14 @@
+return ! isFixture();
+}
+
+
+public boolean takesWear() {
+if (regenerates()) return false;
+if (Blueprint.hasProperty(this, IS_ANCIENT)) return false;
+return true;
+}
+
+
+public boolean isMechanical() {
+if (Blueprint.hasProperty(this, IS_CRAFTED)) return false;
+

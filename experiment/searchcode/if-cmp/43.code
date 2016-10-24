@@ -1,0 +1,8 @@
+import java.io.*;
+public class revcomp {
+static final byte[] cmp = new byte[128];
+static {
+for (int i = 0; i < cmp.length; i++) cmp[i] = (byte) i;
+cmp[&#39;t&#39;] = cmp[&#39;T&#39;] = &#39;A&#39;;
+cmp[&#39;a&#39;] = cmp[&#39;A&#39;] = &#39;T&#39;;
+

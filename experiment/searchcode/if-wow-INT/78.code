@@ -1,0 +1,13 @@
+class SingletonDemo
+{
+static SingletonDemo sd;
+int max=10; //인스턴스 변수 하나 구그냥 선언!!ㅋㅋㅋㅋㅋㅋㅋ
+
+private SingletonDemo()  // 생성자르르 private로 선언하여! 절때 생성을하지못함
+static public SingletonDemo getinstance()
+{
+if (sd==null)	//이미들어가있으면  기존꺼 리턴  없을땐 한번만 생성!
+{
+sd = new SingletonDemo();
+}return sd;
+

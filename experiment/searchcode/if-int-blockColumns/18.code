@@ -1,0 +1,8 @@
+private double         blockWidth, blockHeight;
+private int            blockColumns, blockRows;
+private Block[][]      blocks;
+blockWidth   = 100;
+blockHeight  = 100;
+
+blockColumns = (int)Math.round(screenSize.getWidth()  / blockWidth);
+

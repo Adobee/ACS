@@ -1,0 +1,11 @@
+public static YPTElementList<YPTEvent> jsonToEventList(String json)
+{
+JsonParser jp = createJsonParserFromString(json);
+if (null == jp) return null;
+return CollectionParser.jsonToEventList(jp);
+public static YPTElementList<YPTEvent> jsonToEventList(File json)
+{
+JsonParser jp = createJsonParserFromFile(json);
+if (null == jp) return null;
+return CollectionParser.jsonToEventList(jp);
+

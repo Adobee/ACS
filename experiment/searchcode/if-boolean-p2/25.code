@@ -1,0 +1,14 @@
+public boolean overlap(Projection p2){
+boolean temp=true;
+
+if(min>=p2.max || max<=p2.min)
+temp=false;
+
+return temp;
+}
+
+public double magnitude(Projection p2){
+double m=0;
+
+if(min>=p2.min){
+

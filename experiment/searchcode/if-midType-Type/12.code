@@ -1,0 +1,12 @@
+import edu.toronto.cs.se.mmint.MIDTypeRegistry;
+
+public class ImportModelDialogFilter extends ViewerFilter {
+if (!(element instanceof IFile)) {
+return true;
+}
+
+return MIDTypeRegistry.getModelTypeFileExtensions().contains(((IFile) element).getFileExtension());
+}
+
+}
+

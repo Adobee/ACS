@@ -1,0 +1,6 @@
+private static final int []  CACHE_CAPACITIES	= CONFIG.getCacheCapacities();
+private static final boolean CACHE_STATISTICS 	= CONFIG.getCacheStatistics();
+private static final Logger logger		= Logger.getLogger(BeanFactory.class);
+final public Object get(Command<?> command, Context context, BeanPopulator<?> populate, boolean forcedPopulate){
+accessCount.incrementAndGet();
+

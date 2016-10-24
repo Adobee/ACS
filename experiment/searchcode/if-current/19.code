@@ -1,0 +1,7 @@
+Room r = queue.remove();
+visitedList.add(r);
+System.out.println(&quot;Room x:&quot;+(r.current.x+1)+&quot;  y:&quot;+(r.current.y+1));
+if (r.goal) {
+rooms[r.current.x][r.current.y+1].parent = new Pair(r.current.x, r.current.y);
+if (rooms[r.current.x][r.current.y+1].goal) {
+

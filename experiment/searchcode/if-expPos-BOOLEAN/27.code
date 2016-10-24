@@ -1,0 +1,14 @@
+xPickup = xStart;
+}
+
+public boolean moveX(float value, World world) {
+float delta = value - xPickup;
+if (Math.abs(delta) > 10f) {
+return true;
+}
+return false;
+}
+
+public boolean fly(float deltaTime) {
+if (Math.abs(-position.y + viewOffsetX) > 8) {
+

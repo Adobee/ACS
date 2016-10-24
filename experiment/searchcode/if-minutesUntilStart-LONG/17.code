@@ -1,0 +1,8 @@
+timeHint = getString(R.string.time_hint_session_ended);
+} else if (data.isSessionOngoing()) {
+long minutesAgo = data.minutesSinceSessionStarted();
+timeHint = getString(R.string.time_hint_started_just);
+}
+} else {
+long minutesUntilStart = data.minutesUntilSessionStarts();
+

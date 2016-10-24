@@ -1,0 +1,8 @@
+double value = Double.valueOf(str);
+int keyValue = (int) (value/binSize);
+if (!binCount.containsKey(keyValue)) {
+for(int j=0;j<size;j++) {
+if (binCount.containsKey(j)) {
+int count = binCount.get(j);
+writer.write(j+&quot;,&quot;+count+&quot;\n&quot;);
+

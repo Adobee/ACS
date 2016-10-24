@@ -1,0 +1,11 @@
+private Date getTimeStampMinutesAgo(int minutesAgo) throws LogTradeException {
+Calendar calendar;
+if (minutesAgo < 0)
+throw new LogTradeException(&quot;Past minutes in the future&quot;);
+long sumQuantity = 0;
+long sumPriceTimesQuantity = 0;
+
+if (stockTradeLog == null)
+return 0;
+else
+

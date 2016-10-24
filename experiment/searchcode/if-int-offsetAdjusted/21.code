@@ -1,0 +1,7 @@
+if (id.startsWith(&quot;+&quot;) || id.startsWith(&quot;-&quot;)) {
+int offset = parseOffset(id);
+if (offset == 0L) {
+// adjust instantLocal using the estimate and recalc the offset
+int offsetAdjusted = getOffset(instantLocal - offsetLocal);
+// if the offsets differ, we must be near a DST boundary
+

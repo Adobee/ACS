@@ -1,0 +1,8 @@
+IptArg[] rv = IptArg_.parse_ary_(v);
+int len = rv.length;
+for (int i = 0; i < len; i++)
+if (rv[i] == null) return Ary_empty;// indicates failed parse
+public static IptArg[] parse_ary_(String raw) {
+String[] args = String_.Split(raw, &quot;|&quot;);
+int args_len = args.length; if (args_len == 0) return Ary_empty;
+

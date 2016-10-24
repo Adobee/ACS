@@ -1,0 +1,9 @@
+logger.debug(&quot;added keep-alive timeout: {}&quot;, timeout);
+DecoratedTimeout oldTimeout = index.get(channel);
+if (oldTimeout != null) {
+timeouts.remove(oldTimeout);
+while (iter.hasNext()) {
+DecoratedTimeout candidate = iter.next();
+if (candidate.timeout.getTimeout() > now) { break; }
+candidate.timeout.getCallback().onCallback();
+

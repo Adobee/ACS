@@ -1,0 +1,9 @@
+this(BigInteger.valueOf(num), BigInteger.valueOf(den));
+}
+
+public Rational(BigInteger num, BigInteger den) {
+// reduce
+if (!den.abs().equals(BigInteger.ONE)) {
+BigInteger gcd = num.gcd(den);
+if (gcd.signum() != 0 &amp;&amp; !gcd.equals(BigInteger.ONE)) {
+

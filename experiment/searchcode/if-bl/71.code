@@ -1,0 +1,8 @@
+List<BlPhu> listblp = getCurrentSession().createQuery(&quot;From BlPhu WHERE MA_BL_C = &quot; + maBl).list();
+Set<BlPhu> setblp = new HashSet<BlPhu>();
+if(listblp != null &amp;&amp; !listblp.isEmpty() ){
+getCurrentSession().save(binhLuan);
+getCurrentSession().saveOrUpdate(tk);
+if( blDt != null )
+getCurrentSession().saveOrUpdate(blDt);
+

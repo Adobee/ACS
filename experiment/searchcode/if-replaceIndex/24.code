@@ -1,0 +1,5 @@
+int replaceIndex = (int) Math.floor((double) iterationCount * random.nextDouble());
+// if the index exists in the reservoire
+if (replaceIndex < samplesCount) {
+reservoir.set(replaceIndex, t);
+

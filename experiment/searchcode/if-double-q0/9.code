@@ -1,0 +1,10 @@
+0.000000000001818989403545856475830078125
+};
+}
+
+public static double[] getQ10Table() {
+double Q0 = (double)((-2 << 15) / 3.0);
+return new double[] {
+Q0,Q0,Q0,Q0,Q0,Q0,Q0,Q0,Q0,
+Q1,Q1,Q1,Q1,Q1,Q1,Q1,Q1,Q1,
+

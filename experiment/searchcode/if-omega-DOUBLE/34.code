@@ -1,0 +1,8 @@
+* @param N         int specifying the design order of the filter.
+* @param OmegaS1   double specifying the upper cutoff of the low stopband.
+* @param Ws1       double specifying the error weighting of the lower stopband.
+double desiredResponse( double Omega ) {
+
+double retval = 0.0;
+if ( LTE( bands[1][0], Omega )  &amp;&amp;  LTE( Omega, bands[1][1] ) )  retval = 1.0;
+

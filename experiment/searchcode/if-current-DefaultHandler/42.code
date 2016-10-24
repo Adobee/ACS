@@ -1,0 +1,10 @@
+private UncaughtExceptionHandler defaultHandler;
+
+
+public UnexpectingExceptionHandler(){
+this.uiThread = Thread.currentThread();
+this.defaultHandler = Thread.getDefaultUncaughtExceptionHandler();
+}
+
+public Thread getUiThread() {
+

@@ -1,0 +1,13 @@
+pageno = totalsize / pagesize;
+}
+}
+
+public Pager(int pageno, int pagesize, long totalsize) {
+if (pagesize == 0)
+pagesize = 20;
+public int getStart() {
+return (pageno-1)*pagesize;
+}
+public int getEnd() {
+if (pageno*pagesize>totalsize)
+

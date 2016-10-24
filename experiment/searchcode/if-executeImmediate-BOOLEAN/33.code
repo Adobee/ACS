@@ -1,0 +1,11 @@
+public void internalAddListener(ActionListener<T> listener) {
+boolean executeImmediate = false;
+synchronized (this) {
+if (executedListeners) {
+((List) listeners).add(listener);
+}
+this.listeners = listeners;
+}
+}
+if (executeImmediate) {
+

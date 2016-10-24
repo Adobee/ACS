@@ -1,0 +1,9 @@
+assertTrue(row.getCell(0).getNumericCellValue() == 5);
+
+integerError.setCell(row.createCell(1));
+log.debug(row.getCell(1).getStringCellValue() + &quot; / &quot; + &quot;###ERROR###&quot;);
+assertEquals(row.getCell(1).getStringCellValue(), &quot;###ERROR###&quot;);
+
+integerBlank.setCell(row.createCell(2));
+log.debug(row.getCell(2).getStringCellValue() + &quot; / &quot; + &quot;&quot;);
+

@@ -1,0 +1,6 @@
+UnassignedInfo unassignedInfo = otherRouting.unassignedInfo();
+if (unassignedInfo == null &amp;&amp; (newState == ShardRoutingState.UNASSIGNED || newState == ShardRoutingState.INITIALIZING)) {
+ShardRouting routing = randomShardRouting(&quot;test&quot;, 0);
+long byteSize = randomIntBetween(0, Integer.MAX_VALUE);
+if (routing.unassigned()) {
+

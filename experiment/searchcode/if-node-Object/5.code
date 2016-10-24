@@ -1,0 +1,10 @@
+import org.python.pydev.parser.jython.SimpleNode;
+
+public abstract class VisitorBase implements VisitorIF {
+public Object visitModule(Module node) throws Exception {
+return ret;
+}
+
+public Object visitIf(If node) throws Exception {
+Object ret = unhandled_node(node);
+

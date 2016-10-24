@@ -1,0 +1,11 @@
+super(DateTimeFieldType.era());
+this.iChronology = basicChronology;
+}
+
+public boolean isLenient() {
+return false;
+}
+
+public int get(long j) {
+if (this.iChronology.getYear(j) <= 0) {
+

@@ -1,0 +1,6 @@
+METRIC_RESULT metricResult = findResultFor(metric);
+throwExceptionIf(metricResult == null, &quot;No result found for metric: &quot; + metric);
+for (METRIC_RESULT metricResult : metricResults)
+if (metricResult.getMetric().equals(metric))
+return metricResult;
+

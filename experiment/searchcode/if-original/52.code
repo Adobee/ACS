@@ -1,0 +1,8 @@
+public static CloneData clone(Sprite sprite){
+CloneData values = new CloneData();
+if(sprite instanceof AreaLight){
+values.areaLight = areaClone((AreaLight) sprite);
+return values;
+}
+else if(sprite instanceof Player){
+

@@ -1,0 +1,12 @@
+return result;
+}
+
+private boolean isTop(char[] letters, int index) {
+if (index == 0) {
+return letters[1] <= letters[0];
+return letters[index] >= letters[index-1] &amp;&amp; letters[index] >= letters[index+1];
+}
+
+private boolean isFakeTop(char[] letters, int index) {
+if (index == letters.length-1) return false;
+

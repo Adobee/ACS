@@ -1,0 +1,8 @@
+import org.elasticsearch.search.aggregations.support.AggregationContext;
+import org.elasticsearch.search.aggregations.support.ValuesSource;
+import org.elasticsearch.search.aggregations.support.ValuesSourceAggregatorFactory;
+super(name, estimatedBucketsCount, context, parent);
+this.valuesSource = valuesSource;
+if (valuesSource != null) {
+final long initialSize = estimatedBucketsCount < 2 ? 1 : estimatedBucketsCount;
+

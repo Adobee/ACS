@@ -1,0 +1,11 @@
+static int getCount(int[] arr, int i, int n, int count, int seen) {
+if (count < 0)
+return 0;
+if (seen > n) {
+if (count == 0)
+return 1;
+return 0;
+}
+if (mem[count][seen] != -1)
+return mem[count][seen];
+

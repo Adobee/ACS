@@ -1,0 +1,7 @@
+throws IllegalStateException {
+if ((cachedU == null) &amp;&amp; !singular) {
+final int m = pivot.length;
+throws IllegalStateException {
+if ((cachedP == null) &amp;&amp; !singular) {
+final int m = pivot.length;
+

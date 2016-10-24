@@ -1,0 +1,13 @@
+public enum GlobalScope
+{
+EXECUTION( &quot;execution&quot; ),
+REQUEST( &quot;request&quot; ),
+SESSION( &quot;session&quot; ),
+APPLICATION( &quot;application&quot; );
+for( GlobalScope globalScope : GlobalScope.values() )
+{
+//noinspection StringEquality
+if( globalScope._strScope == code )
+{
+return globalScope;
+

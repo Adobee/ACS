@@ -1,0 +1,17 @@
+double dmin2[], double dn[], double dnm1[], double dnm2[], boolean ieee)  {
+int j4;
+int j4p2;
+double d;
+double emin;
+double temp;
+
+if ((n0 - i0 - 1) <= 0) {
+int j4;
+int j4p2;
+double d;
+double emin;
+double safmin;
+double temp;
+
+if ((n0 - i0 - 1) <= 0) {
+

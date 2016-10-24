@@ -1,0 +1,10 @@
+public class CompressionSupressionLigneColonne implements AlgoCompression{
+
+private double[][] matrice;
+CompressionSupressionLigneColonne(double[][] ds){
+this.matrice = ds;
+}
+
+public double[][] execute(int tauxCompression) {
+int hauteur = this.matrice.length - (this.matrice.length/tauxCompression);
+

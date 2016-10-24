@@ -1,0 +1,9 @@
+private FloatLabelLayout mTagLabel;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+if (shouldBeFloatingWindow()) {
+Intent i = getIntent();
+if (i != null) {
+mShouldFinishBack = i.getBooleanExtra(SHOULD_FINISH_BACK, false);
+

@@ -1,0 +1,7 @@
+long hoursAgo = ((timeDiffInMilli/(1000*60*60)) % 24);
+long minutesAgo = (long) (timeDiffInMilli/(1000*60)) % 60;
+long secondsAgo = (long) (timeDiffInMilli/1000) % 60;
+
+if(daysAgo > 0) {
+difference = String.format(Locale.US,&quot;%d days ago&quot;,daysAgo);
+

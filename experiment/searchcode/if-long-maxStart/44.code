@@ -1,0 +1,11 @@
+* The maximum start time in milliseconds from midnight, January 1, 1970
+* UTC.
+*
+* @serial
+*/
+private final long maxStart;
+public DelegationAbsoluteTime(long minStart,
+long maxStart,
+long minStop,
+long maxStop)
+

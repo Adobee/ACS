@@ -1,0 +1,13 @@
+AutoIncrementIdBean other = (AutoIncrementIdBean) obj;
+if (bol1 != other.bol1) {
+return false;
+}
+if (cal1 == null) {
+if (other.cal1 != null) {
+return false;
+}
+} else if (!cal1.equals(other.cal1)) {
+return false;
+}
+if (Double.doubleToLongBits(dob1) != Double.doubleToLongBits(other.dob1)) {
+

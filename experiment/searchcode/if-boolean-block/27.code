@@ -1,0 +1,19 @@
+public void setBlock(boolean b) {
+
+setGotBlock(b);
+if (b) {
+timerb = 4;
+}
+}
+
+public boolean decrementBlock() {
+timerb--;
+if (timerb < 1) {
+setGotBlock(false);
+return true;
+}
+return false;
+}
+
+public boolean getGotBlock() {
+

@@ -1,0 +1,10 @@
+static ExecutorService executorService;
+
+public static void execute(Runnable runnable) {
+if (executorService == null) {
+executorService.submit(runnable);
+}
+
+public static Future<?> submit(Runnable runnable) {
+if (executorService == null) {
+

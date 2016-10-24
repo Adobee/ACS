@@ -1,0 +1,9 @@
+public void setPercentage(double percentage)
+{
+final double barLength = Math.round(fullWidth * percentage);
+bar.setWidth(barLength);
+
+if (direction == DragDirection.RIGHT_TO_LEFT)
+{
+bar.setLayoutX(fullWidth - barLength);
+

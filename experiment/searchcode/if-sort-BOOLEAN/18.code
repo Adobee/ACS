@@ -1,0 +1,16 @@
+for (int i = 0; i < sortArray.length; i++) {
+for (int j = 0; j < sortArray.length - 1; j++) {
+if (swap(sortArray[j], sortArray[j + 1])) {
+sortArray[j] = temp;
+}
+}
+}
+
+return sortArray;
+}
+
+public boolean swap(int number, int nextNumber) {
+return number >= nextNumber;
+}
+}
+

@@ -1,0 +1,8 @@
+return Collections.singletonList(new CircularRange<K>(r.to,
+!r.toInclusive, r.from, !r.fromInclusive));
+}
+if (this.contains(r.from) &amp;&amp; !this.contains(r.to)) {
+// range: [ ...... ]
+// r:         [ .........]
+addIfValidRange(intersect, r.from, r.fromInclusive, this.to,
+

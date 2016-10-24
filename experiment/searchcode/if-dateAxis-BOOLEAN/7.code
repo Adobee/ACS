@@ -1,0 +1,8 @@
+import org.jfree.chart.axis.DateAxis;
+import org.jfree.chart.axis.DateTickUnit;
+import org.jfree.chart.axis.DateTickUnitType;
+return (config.getBounds() == null) ? plot : plot.withDisplayableYAxis(config.getBounds(), config.getTickSpacing());
+}
+
+static DateAxis createDateAxisTight(boolean visible, DateTickUnitType dateTickUnitType, Locale locale, ChartOptions chartOptions) {
+

@@ -1,0 +1,10 @@
+public class Solution
+{
+public int lengthOfLastWord(String s)
+{
+if (s == null || s.length() <= 0)
+int start = end - 1;
+for (; start >= 0; start-- )
+{
+if (s.charAt(start) == &#39; &#39;)
+

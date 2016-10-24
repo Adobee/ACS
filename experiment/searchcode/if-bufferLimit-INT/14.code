@@ -1,0 +1,10 @@
+BufferProcessContext(ChannelHandle.ReceivePort<T> from, ChannelHandle.SendPort<T> to, int bufferLimit) {
+this.from = from;
+throw new AssertionError();
+}
+});
+}
+
+static <T> AsyncAction<ChannelHandle<T>> bufferedChannel(int bufferSize) {
+if (bufferSize < 1) {
+

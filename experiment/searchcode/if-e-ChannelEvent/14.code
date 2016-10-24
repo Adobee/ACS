@@ -1,0 +1,11 @@
+public class BoundedChannelEventCache extends ChannelEventCache
+{
+private ChannelEvent cache[];
+private int cacheStackPointer;
+private int maxCacheSize;
+return retVal;
+}
+public synchronized void returnChannelEvent( ChannelEvent value )
+{
+if ( ++cacheStackPointer < 32 )
+

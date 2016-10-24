@@ -1,0 +1,7 @@
+final String type = event.getClass().getSimpleName();
+BaseEventSerializer<T> serializer = (BaseEventSerializer<T>) map.get(type);
+
+if (null == serializer) {
+dest.put(ORIGINAL_AGGREGATE_VERSION, event.originalAggregateRootVersion());
+dest.put(OCCURRED_AT, timestampFormatter.print(event.occurredAt()));
+

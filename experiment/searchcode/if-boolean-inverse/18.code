@@ -1,0 +1,12 @@
+public static final float invertMatrix(float m[][], float[][] inverse, int nColumn){
+
+float det = 0.0f;
+//float[][] inverse = new float[nColumn][nColumn];
+
+if (nColumn == 1) {
+det = m[0][0];
+if (det != 0.0f)
+inverse[0][0] = 1.0f/m[0][0];
+else
+System.out.println(&quot;Matrix is singular&quot;);
+

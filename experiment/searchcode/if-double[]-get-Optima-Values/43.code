@@ -1,0 +1,12 @@
+FVAResult fvaResult = fvaAnalysis.runAnalysis();
+
+optimaZeroFluxReactions = fvaResult.getZeroFluxReactions();
+
+if (Vars.verbose) {
+System.err.println(&quot;[PFBA] Number of optimaZeroFluxReactions : &quot;
+for (BioGene gene : network.getGeneList().values()) {
+
+String geneId = gene.getId();
+
+if (!essentialGenes.containsKey(geneId)) {
+

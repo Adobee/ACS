@@ -1,0 +1,12 @@
+import net.rdrei.simplex.lib.SimplexRestrictionSet;
+import net.rdrei.simplex.lib.SimplexTableau;
+
+public class SimplexTableauTestCase extends TestCase {
+SimplexTableau lastTabl = null;
+for(SimplexTableau newTabl : tabl) {
+i += 1;
+lastTabl = newTabl;
+
+if (i > 3) {
+Assert.fail(&quot;Looks life we have an endless loop here, chief.&quot;);
+

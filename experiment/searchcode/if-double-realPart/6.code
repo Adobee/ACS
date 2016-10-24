@@ -1,0 +1,14 @@
+public class Complex extends Number implements Comparable {
+
+/**
+*
+*/
+private double realPart;
+private double imaginaryPart;
+
+public Complex(double a,double b) {
+this.realPart = a;
+this.imaginaryPart = b;
+}
+public Complex(double a) {
+

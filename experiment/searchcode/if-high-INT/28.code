@@ -1,0 +1,9 @@
+// 固定基准
+public void quickSort(int[] a, int low, int high) {
+if (null == a || a.length < 2) {
+return;
+}
+if (low < high) {
+int mid = partition(a, low, high);
+quickSort(a, low, mid-1);
+

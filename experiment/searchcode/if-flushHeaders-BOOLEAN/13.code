@@ -1,0 +1,9 @@
+logger.trace(&quot;Flushing headers if not written&quot;); //$NON-NLS-1$
+outputStream.flushHeaders();
+flushHeaders();
+outputStream.close();
+}
+
+private void flushHeaders() {
+if (!writeStarted) {
+

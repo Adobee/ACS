@@ -1,0 +1,10 @@
+private FieldMapper mapper;
+private FilterableTermsEnum termsEnum;
+private int numberOfAggregatorsCreated = 0;
+return asMultiBucketAggregator(this, aggregationContext, parent);
+}
+
+numberOfAggregatorsCreated++;
+
+if (valuesSource instanceof ValuesSource.Bytes) {
+

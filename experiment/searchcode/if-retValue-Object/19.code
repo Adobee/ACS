@@ -1,0 +1,9 @@
+public class PrimitiveParser extends AbstractJSONParser {
+
+public PrimitiveParser(Object obj, JsonConfig jsonConfig) {
+String retValue = null;
+if (obj == null) {
+retValue = null;
+} else if (obj instanceof String) {
+retValue = constantManager.getQuote() + obj.toString() + constantManager.getQuote();
+

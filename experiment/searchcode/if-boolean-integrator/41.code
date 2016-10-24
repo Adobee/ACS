@@ -1,0 +1,9 @@
+public boolean inscribirseEvento(int evento, int integrante) {
+boolean inscripcion = true;
+
+if (esUsuarioInscripto(evento,integrante)){
+public boolean esUsuarioInscripto(int evento, int integrante) {
+boolean inscripto = true;
+
+EventoIntegrante dto = eventIntegratorDao.findByEventUser(evento, integrante);
+

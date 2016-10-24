@@ -1,0 +1,10 @@
+public synchronized void setTimestamp(long t) {
+//TODO aggiornami solo se il timestamp nuovo è minore di quello attuale
+if (verbose) {
+System.out.println(&quot;Nuovo Timestamp: &quot; + t + &quot; vecchio timestamp: &quot; + this.timestamp + &quot; Osservatori: &quot; + this.countObservers());
+}
+
+if (this.timestamp == 0) {
+this.timestamp = t;
+} else if (t < this.timestamp) {
+

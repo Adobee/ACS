@@ -1,0 +1,9 @@
+private static boolean[][] fillPaint(int[][] color, boolean[][] colorB, int x, int y) {
+int fillColor = color[x][y];
+colorB[x-1][y] = true;
+color[x-1][y] = fillColor;
+fillPaint(color, colorB, x-1, y);
+}
+}
+if (y < color[0].length-1 ){
+

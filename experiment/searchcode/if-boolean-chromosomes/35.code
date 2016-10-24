@@ -1,0 +1,9 @@
+public DNAStorage(DNAObject dnaObject) {
+if(dnaObject != null) {
+id = dnaObject.id;
+chromosomes = new DNAStorageChromosome[dnaObject.chromosomeCount];
+public void writeToNBT(NBTTagCompound nbt) {
+nbt.setInteger(&quot;ID&quot;, id);
+if(chromosomes != null) {
+NBTTagList nbtList = new NBTTagList();
+

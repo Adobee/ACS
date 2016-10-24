@@ -1,0 +1,8 @@
+import unalcol.reflect.tag.TaggedObject;
+import unalcol.search.Goal;
+
+public class SolutionWrite<T> extends Write<TaggedObject<T>> {
+public void write(TaggedObject<T> sol, Writer out) throws Exception {
+Write.apply(sol.info(Goal.class.getName()), out);
+if( write_object ){
+

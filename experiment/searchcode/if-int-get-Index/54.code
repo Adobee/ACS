@@ -1,0 +1,9 @@
+private void heapify(int index){
+if(index >= size &amp;&amp; index < 0) return;
+
+int l = getLeftChild(index);
+int r = getRightChild(index);
+
+int largestIndex = index;
+if(l <= size-1 &amp;&amp; items[l] > items[largestIndex]) largestIndex = l;
+

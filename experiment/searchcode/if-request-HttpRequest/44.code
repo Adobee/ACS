@@ -1,0 +1,7 @@
+public class HTTPRequestFactory {
+
+public static HTTPRequest create(Request request) {
+if (request.getMethod().equals(HTTPRequest.GET))
+return new HTTPGetRequest(request);
+else if (request.getMethod().equals(HTTPRequest.PUT))
+

@@ -1,0 +1,6 @@
+for (int xRange = -range; xRange <= range; xRange++) {
+if (!(xRange == 0)) {
+for (int i = 0; i < 10; i++)
+world.spawnParticle(&quot;reddust&quot;, x + xRange + .5, y + .5, z + .5, 255, 0, 0);
+if (world.getBlock(x + xRange, y, z) != null &amp;&amp; world.getTileEntity(x + xRange, y, z) != null &amp;&amp; world.getTileEntity(x + xRange, y, z) instanceof TileSolarFlux) {
+

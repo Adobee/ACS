@@ -1,0 +1,13 @@
+int maxAge;
+float width;
+float vy;
+float alpha = 1;
+float pct;
+
+public ShootingStar (Glob g, int x, int y) {
+velocity.set((float) Math.random()-.5f, (float) Math.random()/2-.25f).nor();
+position.set(x, y);
+
+maxAge = Math.min(40 * (int) (1 / Math.random()), 800);
+width = (float) (2 * Math.log(maxAge));
+

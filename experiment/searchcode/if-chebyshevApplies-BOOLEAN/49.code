@@ -1,0 +1,7 @@
+/*  19:    */     throws NumberIsTooLargeException
+/*  20:    */   {
+/*  21: 56 */     if (x1 < x0) {
+/*  22: 57 */       throw new NumberIsTooLargeException(LocalizedFormats.LOWER_ENDPOINT_ABOVE_UPPER_ENDPOINT, Integer.valueOf(x0), Integer.valueOf(x1), true);
+/*  51:100 */     double sigma = FastMath.sqrt(getNumericalVariance());
+/*  52:101 */     boolean chebyshevApplies = (!Double.isInfinite(mu)) &amp;&amp; (!Double.isNaN(mu)) &amp;&amp; (!Double.isInfinite(sigma)) &amp;&amp; (!Double.isNaN(sigma)) &amp;&amp; (sigma != 0.0D);
+

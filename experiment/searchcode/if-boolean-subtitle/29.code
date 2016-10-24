@@ -1,0 +1,12 @@
+this.subtitleIndex = this.model.getStartSelectionIndex();
+}
+
+@Override
+protected boolean internalExecute()
+{
+UserInputSubtitleParser parser = new UserInputSubtitleParser(text, start, end, duration, subtitles.isInFrames());
+try
+{
+parser.parse();
+if(parser.getSubtitle() != null)
+

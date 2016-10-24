@@ -1,0 +1,13 @@
+public class MyMultipartResolver extends CommonsMultipartResolver {
+
+@Override
+public boolean isMultipart(HttpServletRequest request){
+String path = request.getRequestURI();
+if(path.indexOf(&quot;/kindeditor/&quot;) > 0){
+return false;
+}else{
+return super.isMultipart(request);
+}
+}
+}
+

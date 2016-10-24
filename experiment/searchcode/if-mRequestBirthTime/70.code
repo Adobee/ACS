@@ -1,0 +1,6 @@
+private final long mRequestBirthTime = 0;// 用于转储慢的请求。
+
+private boolean mShouldCache = true; // 是否缓存本次请求
+long requestTime = SystemClock.elapsedRealtime() - mRequestBirthTime;
+if (requestTime >= SLOW_REQUEST_THRESHOLD_MS) {
+

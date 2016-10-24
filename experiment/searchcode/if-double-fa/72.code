@@ -1,0 +1,12 @@
+public NGLine2D(double aAX, double aAY, double aBX, double aBY) {
+FA = new NGPoint2D(aAX, aAY);
+FB = new NGPoint2D(aBX, aBY);
+double dx = FA.getX() - FB.getX();
+double dy = FA.getY() - FB.getY();
+if (dx!=0) {
+return dy/dx;
+}
+return 0;
+}
+}
+

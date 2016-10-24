@@ -1,0 +1,10 @@
+private int maxRequests;
+private int maxRequestsPerHost;
+private final Deque<AsyncCall> readyAsyncCalls;
+private final Deque<AsyncCall> runningAsyncCalls;
+return this.runningAsyncCalls.size() + this.runningSyncCalls.size();
+}
+
+public synchronized void setMaxRequests(int i) {
+if (i < 1) {
+

@@ -1,0 +1,8 @@
+public static Throwable handleException(Exception ex){
+Throwable newEx = ex;
+//找出最根本的异常
+while(true){
+System.out.println(&quot;当前异常的名称是：&quot;+newEx.getClass().getSimpleName());
+if(newEx.getCause()!=null){
+newEx = newEx.getCause();
+

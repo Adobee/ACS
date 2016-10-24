@@ -1,0 +1,5 @@
+TreeSet<String> jodaZones = new TreeSet<>(DateTimeZone.getAvailableIDs());
+TreeSet<String> jdkZones = new TreeSet<>(Arrays.asList(TimeZone.getAvailableIDs()));
+DateTimeZone dateTimeZone = DateTimeZone.forID(zoneId);
+DateTimeZone indexedZone = getDateTimeZone(TimeZoneKey.getTimeZoneKey(zoneId));
+

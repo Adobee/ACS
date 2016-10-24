@@ -1,0 +1,8 @@
+left = ((Expression<Boolean>)this.getLeftExpression()).evaluateExpression(unit);
+}
+if (this.getLeftExpression() instanceof ReadExpression){
+this.setLeftExpression((Expression<Boolean>) expression);
+return this.evaluateExpression(unit);
+}
+if (this.getRightExpression() instanceof IBooleanExpression){
+

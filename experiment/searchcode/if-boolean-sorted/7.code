@@ -1,0 +1,12 @@
+abstract class PreSortedState<T> {
+
+private transient boolean isSorted;
+private transient T[] sorted;
+
+public PreSortedState() {
+}
+
+//Functions
+protected void invalidateSorting() {
+if (!isSorted) {
+

@@ -1,0 +1,9 @@
+return this == o || (o instanceof DateTickMarkPosition &amp;&amp; this.name.equals(((DateTickMarkPosition)o).toString()));
+}
+
+private Object readResolve() {
+if (this.equals(DateTickMarkPosition.START)) {
+return DateTickMarkPosition.START;
+}
+if (this.equals(DateTickMarkPosition.MIDDLE)) {
+

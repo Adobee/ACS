@@ -1,0 +1,11 @@
+getChart().getLegend().setBackgroundPaint(parent.getBackground());
+}
+}
+
+public void updateDataset(XYDataset dataset) {
+XYPlot xyPlot = (XYPlot) getChart().getPlot();
+
+xyPlot.setDataset(dataset);
+
+xyPlot.getRenderer().setSeriesShape(0, shape);
+

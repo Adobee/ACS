@@ -1,0 +1,8 @@
+do {
+oldState = localState.get();
+if (oldState.isUnsubscribed) {
+return;
+oldState = localState.get();
+if (oldState.isUnsubscribed) {
+s.unsubscribe();
+

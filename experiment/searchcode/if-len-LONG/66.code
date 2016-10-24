@@ -1,0 +1,9 @@
+readBuffer = new byte[readBufferLen];
+}
+
+public void seek(long position) throws IOException {
+if(position < 0L) {
+// Update the readable file length
+if (position + (long) len > writeLength) {
+readLength = position + (long) len;
+

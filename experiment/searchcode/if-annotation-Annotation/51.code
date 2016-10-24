@@ -1,0 +1,10 @@
+public boolean isCandidate(Class<?> clazz)
+{
+if (annotationTypes.length == 0)
+{
+return true;
+}
+for (Class<? extends Annotation> annotationType : annotationTypes)
+{
+if (clazz.isAnnotationPresent(annotationType))
+

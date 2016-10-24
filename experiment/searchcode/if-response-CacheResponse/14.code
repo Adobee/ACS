@@ -1,0 +1,9 @@
+protected void onNetworkResponseReceived(NetworkResponse response) {
+super.onNetworkResponseReceived(response);
+if (SimpleWeatherApplication.isDBCahceEnabled()) {
+cacheResponse(response);
+}
+}
+
+public abstract void cacheResponse(NetworkResponse response);
+

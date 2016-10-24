@@ -1,0 +1,7 @@
+public static class BucketCountThresholds implements Writeable, ToXContent {
+private long minDocCount;
+private long shardMinDocCount;
+private int requiredSize;
+public BucketCountThresholds(long minDocCount, long shardMinDocCount, int requiredSize, int shardSize) {
+this.minDocCount = minDocCount;
+

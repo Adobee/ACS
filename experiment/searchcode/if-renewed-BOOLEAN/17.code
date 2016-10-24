@@ -1,0 +1,10 @@
+logger.log(Level.INFO,&quot;Configuration error&quot;, e);
+return;
+}
+// try to renew until lease is expired.
+boolean canBeRenewed = true;
+canBeRenewed =
+(lease.getExpiration() >= System.currentTimeMillis());
+if (canBeRenewed) {
+logger.log(Level.FINE, &quot;Failed to renew lease, trying again.&quot;);
+

@@ -1,0 +1,11 @@
+public ItemStack[] inv = new ItemStack[24];
+
+public double totalWeight;
+
+public int selectedSlot = 0;
+
+public void clearInv() {
+for (int i = 0; i < inv.length; i++) {
+if (inv[i] != null) {
+totalWeight += (inv[i].amount * inv[i].item.weightTotal);
+

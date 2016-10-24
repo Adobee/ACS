@@ -1,0 +1,8 @@
+double coefficient = _getComponentOf( minuendRow, subtrahendRow ) / _getComponentOf( subtrahendRow, subtrahendRow );
+
+for ( int col = 0; col < _getNumOfColumn(); col++ ) {
+this.m_[ minuendRow ][ col ] -= coefficient * this.m_[ subtrahendRow ][ col ];
+System.out.println( &quot;&quot; + (subtrahend+1) + &quot;行&quot; + (subtrahend+1) + &quot;列目が1となるように割り、他の行の&quot; + (subtrahend+1) + &quot;列目が0となるように引く&quot; );
+for ( int minuend = 0; minuend < _getNumOfRow(); minuend++ ) {
+if ( subtrahend == minuend )
+

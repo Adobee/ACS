@@ -1,0 +1,8 @@
+visitWithNewLabelSet(statement.expression);
+writeOp(JsFunction.OP_NOT);
+writeJump(JsFunction.XOP_IF, statement, &quot;do&quot;);
+setLabel(statement, &quot;break&quot;);
+if (statement.condition != null) {
+visitWithNewLabelSet(statement.condition);
+writeJump(JsFunction.XOP_IF, statement, &quot;break&quot;);
+

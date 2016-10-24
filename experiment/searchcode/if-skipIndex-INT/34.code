@@ -1,0 +1,10 @@
+private static boolean isPalindrome(String s, int skipIndex) {
+int left = 0;
+int right = s.length() - 1;
+while (left < right) {
+if (left == skipIndex) {
+left++;
+continue;
+}
+if (right == skipIndex) {
+

@@ -1,0 +1,12 @@
+private float currentDegree = 0f;
+// 定义真机的Sensor管理器
+private SensorManager mSensorManager;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+mSensorManager.unregisterListener(this);
+}
+
+@Override
+public void onAccuracyChanged(Sensor sensor, int accuracy) {
+

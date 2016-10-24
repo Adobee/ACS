@@ -1,0 +1,8 @@
+* @return array of ranks
+* @throws NotANumberException if the selected {@link NaNStrategy} is {@code FAILED}
+* and a {@link Double#NaN} is encountered in the input data
+if (tiesTrace.size() > 1) {  // handle tie sequence at end
+resolveTie(out, tiesTrace);
+}
+if (nanStrategy == NaNStrategy.FIXED) {
+

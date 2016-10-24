@@ -1,0 +1,6 @@
+@Override
+public void setMapping(LineMapping newMapping) {
+if (newMapping != eInternalContainer() || (eContainerFeatureID() != DescriptionPackage.DELETE_LINE_TOOL__MAPPING &amp;&amp; newMapping != null)) {
+if (EcoreUtil.isAncestor(this, newMapping)) {
+throw new IllegalArgumentException(&quot;Recursive containment not allowed for &quot; + toString()); //$NON-NLS-1$
+

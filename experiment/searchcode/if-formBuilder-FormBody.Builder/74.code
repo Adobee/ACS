@@ -1,0 +1,8 @@
+String cType = getHeaderIgnoreCases(mheaders, &quot;Content-Type&quot;).toLowerCase();
+
+if(cType == null) {
+builder.header(&quot;Content-Type&quot;, &quot;application/octet-stream&quot;);
+String cType = getHeaderIgnoreCases(mheaders, &quot;Content-Type&quot;).toLowerCase();
+if (&quot;application/x-www-form-urlencoded&quot;.equals(cType)) {
+FormBody.Builder formBuilder = new FormBody.Builder();
+

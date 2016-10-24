@@ -1,0 +1,15 @@
+this.chrono = chrono;
+}
+
+public void startTimer() {
+if (isStop()) {
+startTime = SystemClock.elapsedRealtime();
+state = COUNT_UP;
+}
+}
+
+public void puaseTimer() {
+if (isCountup()) {
+chrono.stop();
+// add running time of this term
+

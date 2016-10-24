@@ -1,0 +1,13 @@
+public void Recmergesort( int[] A, int lowerbound, int upperbound){
+
+if(lowerbound == upperbound)
+return;
+
+else {
+
+int mid = (lowerbound + upperbound)/2;
+
+Recmergesort(A, lowerbound, mid);
+
+Recmergesort(A, mid+1, upperbound);
+

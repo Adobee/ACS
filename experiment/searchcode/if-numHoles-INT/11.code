@@ -1,0 +1,13 @@
+public final int holeEnd;
+public final int numHoles;
+
+@NonNull
+public static HoleSet[] available(@NonNull final Course course) {
+if (course.numHoles == 18) {
+return HoleSet.values();
+} else {
+return new HoleSet[]{Front9};
+}
+}
+}
+

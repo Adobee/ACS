@@ -1,0 +1,6 @@
+private final long maxRetryTimeoutMillis;
+private final AtomicInteger lastHostIndex = new AtomicInteger(0);
+private volatile Set<HttpHost> hosts;
+long timeout = maxRetryTimeoutMillis - timeElapsedMillis;
+if (timeout <= 0) {
+

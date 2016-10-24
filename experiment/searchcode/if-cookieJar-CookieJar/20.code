@@ -1,0 +1,7 @@
+public ProxyHttpClient(HttpRequestBean requestBean, CookieJar cookieJar) {
+
+if (cookieJar == null) cookieJar = new CookieJar();
+final HttpClientBuilder clientBuilder = HttpClients.custom().setDefaultCookieStore(cookieJar);
+
+if (requestBean.hasAuth()) {
+

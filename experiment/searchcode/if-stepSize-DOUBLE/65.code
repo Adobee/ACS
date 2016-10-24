@@ -1,0 +1,9 @@
+double stepSize = (xend-x0) / nStep;
+double eps = stepSize*0.1;
+int i;
+
+for (i = 0; i < n; i++)
+ydot[i] = (f1[i] + ydot[i]) / 2;
+yend[i] += stepSize*ydot[i];
+if (Double.isInfinite(yend[i]) || Double.isNaN(yend[i]))
+

@@ -1,0 +1,9 @@
+public static void main(String[] args) {
+
+Double[] input = scanDoubleArray();
+if (input.length < 2) {
+else {
+Merge.sort(input);
+Double MinDiff = Double.MAX_VALUE;
+Double CurrentDiff;
+

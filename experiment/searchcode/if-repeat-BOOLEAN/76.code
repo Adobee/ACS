@@ -1,0 +1,14 @@
+public void setRepeat(String repeat) {
+this.repeat = repeat;
+}
+
+@AssertTrue
+public boolean isRepeateEqualToPassword() {
+if (getPassword() == null || getRepeat() == null) {
+return true;
+}
+return repeat.equals(getPassword());
+}
+
+}
+

@@ -1,0 +1,11 @@
+public abstract class AbstractTokenFilterReader extends FilterReader {
+
+private String replacement = null;
+
+private int replaceIndex = -1;
+
+public AbstractTokenFilterReader(Reader in) {
+int i = replacement.charAt(replaceIndex++);
+if (replaceIndex == replacement.length()) {
+replaceIndex = -1;
+

@@ -1,0 +1,12 @@
+private static long solve(int redLength, int length, boolean red){
+if (length < 0)
+return 0;
+if (length == 0)
+return 1;
+long sum = 0;
+if (cache[redLength][length-1][1] == 0)
+cache[redLength][length-1][1] = solve(redLength, length-1, true);
+sum += cache[redLength][length-1][1];
+if (red){
+for (int i = redLength; i <= length; i++){
+

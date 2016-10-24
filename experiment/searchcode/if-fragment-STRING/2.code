@@ -1,0 +1,6 @@
+public static Fragment getFragment(final FragmentManager fragmentManager, final String tag) {
+return fragmentManager.findFragmentByTag(tag);
+public static void attachFragment(final FragmentTransaction fragmentTransaction, final int content, final Fragment fragment, final String tag) {
+if (fragment != null) {
+if (fragment.isDetached()) {
+

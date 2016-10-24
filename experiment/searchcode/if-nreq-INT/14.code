@@ -1,0 +1,8 @@
+private final Logger log = LoggerFactory.getLogger(org.jooby.Response.class);
+
+private ServletServletRequest nreq;
+
+public JettyResponse(final ServletServletRequest nreq, final HttpServletResponse rsp) {
+super(nreq.servletRequest(), rsp);
+this.nreq = nreq;
+

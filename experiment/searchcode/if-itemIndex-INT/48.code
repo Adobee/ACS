@@ -1,0 +1,10 @@
+public class SimplePlaylistController implements IPlaylistController {
+
+/** {@inheritDoc} */
+public int nextItem(IPlaylist playlist, int itemIndex) {
+if (itemIndex < 0) {
+if (playlist.isRandom()) {
+int lastIndex = itemIndex;
+if (playlist.getItemSize() > 1) {
+// continuously generate a random number
+

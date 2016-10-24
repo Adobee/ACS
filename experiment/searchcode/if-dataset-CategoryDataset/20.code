@@ -1,0 +1,8 @@
+import org.jfree.chart.renderer.category.BarRenderer;
+import org.jfree.data.category.CategoryDataset;
+
+import java.awt.*;
+public Paint getItemPaint(int i, int j) {
+CategoryDataset categorydataset = this.getPlot().getDataset();
+Double d = categorydataset.getValue(i, j).doubleValue();
+

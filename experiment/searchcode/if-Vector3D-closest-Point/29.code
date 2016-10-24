@@ -1,0 +1,7 @@
+double minimumDistance = Double.POSITIVE_INFINITY;
+Vector3d closestIntersect = null;
+
+for (Double t: ts) {
+if (t < 0) continue;
+Vector3d intersect = ray.origin.add(ray.direction.mul(t));
+

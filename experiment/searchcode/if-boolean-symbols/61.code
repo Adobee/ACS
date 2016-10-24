@@ -1,0 +1,15 @@
+public boolean contains(String c) {
+return symbols.contains(c);
+}
+
+public boolean tokenEndsWithEOSSymbol(String token) {
+String lastChar = token.substring(token.length() - 1, token.length());
+if (symbols.contains(lastChar)) {
+return true;
+}
+}
+return false;
+}
+
+}
+

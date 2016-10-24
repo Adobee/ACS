@@ -1,0 +1,10 @@
+@Override
+public boolean matches(Event event) {
+if (this == event)
+return true;
+if (event == null)
+return false;
+if (!(event instanceof SaleFinalizedEvent))
+return false;
+SaleFinalizedEvent other = (SaleFinalizedEvent) event;
+

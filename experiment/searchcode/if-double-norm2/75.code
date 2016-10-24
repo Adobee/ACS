@@ -1,0 +1,6 @@
+double vol = Math.abs(dot(dc,cross(da,db)));
+if (vol > EPS) return false;
+double n = norm2(cross(da,db));
+static double norm2(double[] v) { return v[0]*v[0] + v[1]*v[1] + v[2]*v[2]; }
+static double dot(double[] v, double[] w) { return v[0]*w[0] + v[1]*w[1] + v[2]*w[2]; }
+

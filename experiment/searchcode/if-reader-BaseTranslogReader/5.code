@@ -1,0 +1,7 @@
+* A base class for all classes that allows reading ops from translog files
+*/
+public abstract class BaseTranslogReader implements Comparable<BaseTranslogReader> {
+
+protected final long generation;
+protected final FileChannel channel;
+

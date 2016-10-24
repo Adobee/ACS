@@ -1,0 +1,13 @@
+public Comparator<E> getComparator() {
+return mComparator;
+}
+
+public void setComparator(Comparator<E> comparator) {
+if (comparator == null) {
+protected int compare(E a, E b) {
+return mComparator.compare(a, b);
+}
+
+protected boolean greater(E a, E b) {
+return compare(a, b) > 0;
+

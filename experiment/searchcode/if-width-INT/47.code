@@ -1,0 +1,7 @@
+rand = random.nextInt(100);
+
+if (rand < 60) tilesInt[x + y * width] = 0;
+else if (rand < 80) tilesInt[x + y * width] = 1;
+else if (rand < 90) tilesInt[x + y * width] = 2;
+else if (rand < 100) tilesInt[x + y * width] = 3;
+

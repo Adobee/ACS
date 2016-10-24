@@ -1,0 +1,9 @@
+@Basic(optional = false)
+@Column(name = &quot;seq_end&quot;)
+private int seqEnd;
+@ManyToOne(cascade = CascadeType.ALL)
+public PfamBReg(Long wid, long pfamBWID, long autoPfamseq, int seqStart, int seqEnd) {
+this.wid = wid;
+this.pfamBWID = pfamBWID;
+this.autoPfamseq = autoPfamseq;
+

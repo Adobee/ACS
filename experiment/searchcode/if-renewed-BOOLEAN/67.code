@@ -1,0 +1,10 @@
+private static final Logger LOGGER = LoggerFactory.getLogger(MongoMastershipElector.class);
+public static final String LEASE_RENEWED = &quot;leaseRenewed&quot;;
+public static final String ACTIVE_VERSION = &quot;activeVersion&quot;;
+return document != null;
+}
+
+@Override
+public boolean isMaster() {
+long leaseRenewed = System.currentTimeMillis();
+

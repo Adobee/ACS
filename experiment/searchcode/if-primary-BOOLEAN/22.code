@@ -1,0 +1,9 @@
+final class DefaultReadPreference implements MongoReadPreference {
+
+private final boolean primary;
+private final boolean secondary;
+private final List<BsonDocument> tags;
+
+DefaultReadPreference(
+boolean primary,
+

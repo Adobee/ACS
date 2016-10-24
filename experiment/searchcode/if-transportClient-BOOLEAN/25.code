@@ -1,0 +1,9 @@
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.ImmutableSettings;
+import org.elasticsearch.common.settings.Settings;
+Client client = esClientsMap.get(esSearchThrottle.getString(Consist.CLUSTER_NAME, &quot;defaul-es&quot;));
+if (client != null) {
+return client;
+}
+return updateClient(esSearchThrottle, false);
+

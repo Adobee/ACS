@@ -1,0 +1,16 @@
+* 000: mask bits for which (x + y) mod 2 == 0
+*/
+DATA_MASK_000() {
+@Override
+boolean isMasked(int i, int j) {
+return ((i + j) &amp; 0x01) == 0;
+DATA_MASK_001() {
+@Override
+boolean isMasked(int i, int j) {
+return (i &amp; 0x01) == 0;
+}
+},
+
+/**
+* 010: mask bits for which y mod 3 == 0
+

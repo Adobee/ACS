@@ -1,0 +1,12 @@
+private double x1, z1, y1, y2;
+private double gradientX, gradientZ;
+
+public Edge(Coord c1, Coord c2){
+if(c1.y > c2.y){
+Coord c = c1;
+gradientX = (c2.x-c1.x)/(c2.y-c1.y);
+gradientZ = (c2.z-c1.z)/(c2.y-c1.y);
+}
+
+public double getX(double y){
+

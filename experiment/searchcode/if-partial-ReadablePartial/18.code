@@ -1,0 +1,6 @@
+import org.joda.time.ReadablePartial;
+
+class InternalPrinterDateTimePrinter implements DateTimePrinter, InternalPrinter {
+public void printTo(Writer writer, ReadablePartial readablePartial, Locale locale) {
+this.underlying.printTo(writer, readablePartial, locale);
+

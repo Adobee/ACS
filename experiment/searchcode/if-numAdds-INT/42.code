@@ -1,0 +1,12 @@
+private SolrClient cloudClient;
+private int numDeletes;
+private int numAdds;
+
+public StopableIndexingThread(SolrClient controlClient, SolrClient cloudClient, String id, boolean doDeletes) {
+@Override
+public void run() {
+int i = 0;
+int numDone = 0;
+numDeletes = 0;
+numAdds = 0;
+

@@ -1,0 +1,8 @@
+public class DefaultEqualsExpr extends DefaultEqualityExpr {
+public  DefaultEqualsExpr( Expr lhs, Expr rhs )
+{
+super( lhs, rhs );
+protected boolean evaluateObjectObject( Object lhs, Object rhs )
+{
+if( eitherIsNumber( lhs, rhs ) )
+

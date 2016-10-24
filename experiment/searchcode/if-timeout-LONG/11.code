@@ -1,0 +1,21 @@
+public class TimeoutThread extends Thread {
+
+/**
+* 计时器超时时间
+*/
+private long timeout;
+
+/**
+* 计时是否被取消
+*/
+private boolean isCanceled = false;
+private boolean isTimeout=false;
+
+/**
+* 构造器
+*
+* @param timeout
+*            指定超时的时间
+*/
+public TimeoutThread(long timeout, TimeoutException timeoutErr) {
+

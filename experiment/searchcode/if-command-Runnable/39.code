@@ -1,0 +1,12 @@
+package milkmidi.pipi.command;
+
+import android.os.Handler;
+
+public class Wait extends Command {
+public void destroy() {
+if ( getDestroyed() ) {
+return;
+}
+this.mHandler = null;
+this.mRunnable = null;
+

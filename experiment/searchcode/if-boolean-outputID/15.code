@@ -1,0 +1,8 @@
+public void Notify(BitWord data, OutputId sender, InputId receiver,
+Object arg) {
+boolean prev_enable_ = enable_;
+if (receiver == data_id_) {
+data_ = data;
+} else if (receiver == enable_id_) {
+enable_ = data.ToBoolean();
+

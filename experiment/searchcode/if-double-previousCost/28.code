@@ -1,0 +1,8 @@
+return buildPlan(node);
+}
+
+Double previousCost = closedSet.getOrDefault(node.lastState, Double.POSITIVE_INFINITY);
+Double currentCost = node.getCost();
+if (currentCost < previousCost) {
+closedSet.put(node.lastState, currentCost);
+

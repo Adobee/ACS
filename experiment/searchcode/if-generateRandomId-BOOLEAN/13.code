@@ -1,0 +1,12 @@
+String identifier = sharedPrefs.getString(key, null);
+if(identifier == null) {
+identifier = generateRandomId();
+sharedPrefs.edit().putString(key, identifier).commit();
+public static String getDeviceModel() {
+String model = Build.MODEL;
+return model;
+}
+
+public static boolean isAmazonKindle() {
+String manufacturer = Build.MANUFACTURER;
+

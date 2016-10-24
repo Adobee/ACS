@@ -1,0 +1,10 @@
+public static String longTimeUtil(Long longTime) {
+Long second = longTime/1000;
+String result = &quot;&quot;;
+
+int days = (int) (second / (60*60*24));
+//		 days + &quot;  |  &quot; + String.format(&quot;%02d&quot;, hours) + &quot;:&quot;
+//				+ String.format(&quot;%02d&quot;, minus) + &quot;:&quot;
+//				+ String.format(&quot;%02d&quot;, seconds);
+if(days > 0) result = days+&quot;天&quot;+hours+&quot;时&quot;;
+

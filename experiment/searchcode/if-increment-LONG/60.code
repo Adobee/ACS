@@ -1,0 +1,10 @@
+public class Quota implements TimeControl
+{
+private long numMoves  = 0;
+private long time      = 0;
+private long increment = 0;
+private IncrementTypes incrementType = null;
+public void finishTurn(long[] initTimes, long[] times, int numMove, Colour turn)
+{
+if(incrementType == IncrementTypes.BRONSTEIN)
+

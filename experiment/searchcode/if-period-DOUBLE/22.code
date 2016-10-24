@@ -1,0 +1,11 @@
+private Function function;
+private double t;
+private double dt;
+
+public DiscreteSampler(Function function, double f) {
+public double next() {
+double value = function.value(t);
+t += dt;
+double period = function.period();
+if (period > 0.0) {
+

@@ -1,0 +1,7 @@
+final String wsId = utils.generateRandomId(6);
+WSWrapper stream = new WSWrapper(conn, wsId);
+host.accept(stream);
+@Override
+public void onClose( WebSocket conn, int code, String reason, boolean remote ) {
+WSWrapper ws = knownPipes.get(conn);
+

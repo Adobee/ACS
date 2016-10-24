@@ -1,0 +1,14 @@
+public class Edge {
+double yMax, yMin, dx, x, b, ctf, ctr;
+double[] Ia, Ib;
+double Ya, Yb;
+
+double N[];
+
+int ctc = 0;
+
+Edge(
+double yMax, double yMin,
+double dx, double x,
+double ctf, double ctr,
+

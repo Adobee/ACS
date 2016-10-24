@@ -1,0 +1,11 @@
+public boolean add(T t) {
+boolean added = collection.add(t);
+if (added) {
+change.added(t);
+}
+return added;
+}
+
+public boolean remove(Object o) {
+boolean removed = collection.remove(o);
+

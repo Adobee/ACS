@@ -1,0 +1,10 @@
+class SimpleParameterizedType implements ParameterizedType {
+
+private final Class<?> rawType;
+private final Type[] actualTypeArguments;
+
+// Set worst-cast parameterisation
+final TypeVariable<?>[] parameters = rawType.getTypeParameters();
+if (parameters.length != actualTypeArguments.length) {
+throw new IllegalArgumentException(
+

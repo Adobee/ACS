@@ -1,0 +1,11 @@
+* @since 1.1
+*/
+public static int safeNegate(int value) {
+if (value == Integer.MIN_VALUE) {
+return (value % wrapRange) + minValue;
+}
+
+int remByRange = (-value) % wrapRange;
+
+if (remByRange == 0) {
+

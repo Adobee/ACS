@@ -1,0 +1,10 @@
+if(d > stagedDoubleValue){
+stagedDoubleValue = d;
+}
+}
+private void stageLong(long l){
+if(l > stagedLongValue){
+public boolean valueIsAcceptable(double value)
+{
+if(value > doubleValue &amp;&amp; value > longValue){
+

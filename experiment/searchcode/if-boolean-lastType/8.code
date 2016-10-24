@@ -1,0 +1,9 @@
+Class<? extends NBTTag> lastType = null;
+if(tagList.size() == 0) lastType = NBTByte.class;
+else lastType = tagList.get(0).getClass();
+NBT.writeString(data, name);
+}
+byte b = 0;
+if(lastType == NBTByte.class) b = 1;
+else if(lastType == NBTShort.class) b = 2;
+

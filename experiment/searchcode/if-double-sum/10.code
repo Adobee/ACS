@@ -1,0 +1,11 @@
+public static double mean(double[] a) {
+if (a.length == 0)
+return Double.NaN;
+double sum = sum(a);
+return (double) sum / a.length;
+}
+
+public static double mean(long[] a) {
+if (a.length == 0)
+return Double.NaN;
+

@@ -1,0 +1,12 @@
+public class VCardFileFilter extends FileFilter {
+
+public boolean singular = false;
+public VCardFileFilter() {
+this(false);
+}
+public VCardFileFilter(boolean singular) {
+this.singular = singular;
+}
+@Override
+public boolean accept(File f) {
+

@@ -1,0 +1,9 @@
+ListExpr resultList = new ListExpr();
+IntByReference errorCode = new IntByReference();
+IntByReference errorPos = new IntByReference();
+updateInterface.secondo(cmd, resultList, errorCode, errorPos, errorMessage);
+
+if ((errorCode.value != 0))
+{
+if (showError)
+

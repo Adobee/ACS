@@ -1,0 +1,9 @@
+public class Card implements OperationCard, NumberCard, MacroCard, MusicCard {
+private ArrayList <Boolean> filteredScan;
+
+public Card(RawScan scan) {
+filteredScan = new ArrayList<Boolean>();
+
+int sum0 = 0;
+for(int i = 0; i < scan.getChan0().size(); i++) {
+

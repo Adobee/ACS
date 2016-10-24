@@ -1,0 +1,8 @@
+int var = Integer.parseInt(label.substring(1)) - 1;
+
+if (parentState.start == var &amp;&amp; parentState.end == var + 1) {
+ret.add(createRule(parentState, label, new StringAlgebra.Span[]{}));
+}
+} else if (labelId == concatId) {
+int width = parentState.end - parentState.start;
+

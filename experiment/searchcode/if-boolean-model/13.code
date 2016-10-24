@@ -1,0 +1,10 @@
+* @see com.jdon.controller.model.ModelIF
+*/
+public class ModelUtil {
+
+public static boolean isModel(Object model) {
+if (model == null) return false;
+public static boolean isModel(Class clazz) {
+boolean isModelIF = false;
+if (ModelIF.class.isAssignableFrom(clazz) || clazz.isAnnotationPresent(com.jdon.annotation.Model.class))
+

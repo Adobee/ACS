@@ -1,0 +1,12 @@
+private List<Double> W;
+private List<Integer> X;
+private double Theta;
+
+public int GetSign(){
+double sum = 0;
+for(int i = 0; i < W.size(); i++){
+sum += X.get(i) * W.get(i);
+}
+sum -= Theta;
+if(sum < 0) return -1;
+

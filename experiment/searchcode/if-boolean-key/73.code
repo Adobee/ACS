@@ -1,0 +1,10 @@
+public class KeyInputHandler {
+static boolean keyDown[] = new boolean[256];
+
+public static boolean isKeyDown(int key){
+return isKeyDown(key, false);
+}
+
+public static boolean isKeyDown(int key, boolean repeat){
+if( repeat ) return Keyboard.isKeyDown(key);
+

@@ -1,0 +1,7 @@
+public void start(UIProgressListener uiProgressListener, long currentBytes, long contentLength, boolean done) {
+if (uiProgressListener != null) {
+uiProgressListener.onUIStart(currentBytes, contentLength, done);
+public void onProgress(long bytesWrite, long contentLength, boolean done) {
+//如果是第一次，发送消息
+if (!isFirst) {
+

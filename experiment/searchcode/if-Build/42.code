@@ -1,0 +1,7 @@
+BuildNumbers buildNumbers = repositoryBuildService.getBuildNumbers(build.getBranchId());
+
+if (build.getBuildNumber() != buildNumbers.getPendingBuildNumber().or(-1)) {
+LOG.info(&quot;Build {} is not the pending build for branch {}, not launching&quot;, build.getId().get(), build.getBranchId());
+} else if (buildNumbers.getInProgressBuildId().isPresent()) {
+LOG.info(&quot;In progress build for branch {}, not launching pending build {}&quot;, build.getBranchId(), build.getId().get());
+

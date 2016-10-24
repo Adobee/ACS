@@ -1,0 +1,12 @@
+private final SimpleDateFormat sdf = new SimpleDateFormat(iDartProperties.importDateFormat);
+
+@Override
+public Date convert(String rawValue) {
+date = parse(&quot;dd-MM-yyyy&quot;, rawValue);
+
+return date;
+}
+
+private Date parse(String pattern, String rawValue) {
+if (pattern != null){
+

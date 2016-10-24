@@ -1,0 +1,11 @@
+items = new Object[initialCapacity];
+}
+
+
+@Override
+public void add(T item) throws IllegalArgumentException {
+if (item == null) {
+throw new IllegalArgumentException(&quot;Cannot insert a null value for the item argument to the SimpleArrayList&quot;);
+}
+if (currentIndex + 1 > items.length) {
+

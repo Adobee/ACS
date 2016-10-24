@@ -1,0 +1,7 @@
+public DelimiterURI(String uriSt, String delimiterSt) throws URISyntaxException, WireItRunException{
+this.uri = new URI(uriSt);
+if (delimiterSt.length() == 1){
+delimiter = delimiterSt;
+} else if (delimiterSt.equals(&quot;\\n&quot;)){
+delimiter = &quot;\n&quot;;
+

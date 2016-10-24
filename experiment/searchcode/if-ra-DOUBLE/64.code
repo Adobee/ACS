@@ -1,0 +1,6 @@
+public static double findMedianSortedArrays(int[] a, int[] b) {
+if (a.length > b.length)
+public static double findMedianSortedArrays(int[] a, int[] b, int la, int ra) {
+if (la > ra)
+return findMedianSortedArrays(b, a, Math.max(0, (a.length + b.length) / 2 - a.length), Math.min(b.length, (a.length + b.length) / 2));
+

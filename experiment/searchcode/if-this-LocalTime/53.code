@@ -1,0 +1,10 @@
+import java.util.List;
+
+import org.joda.time.LocalTime;
+import org.joda.time.Period;
+
+public class LocalTimeAxis extends Axis<LocalTime> {
+final LocalTime max = getMax();
+final LocalTime min = getMin();
+//this loops forever if the interval is big enough to roll over the localtime when added to max
+

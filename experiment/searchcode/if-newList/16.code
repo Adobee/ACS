@@ -1,0 +1,11 @@
+public static <T> void shuffle(ArrayList<T> list, Random rand){
+if(list.size() < 2)
+return;
+ArrayList<T> newList = new ArrayList<>();
+for (T t: list)
+newList.add(t);
+
+list.clear();
+
+while (newList.size() >= 2){
+

@@ -1,0 +1,12 @@
+abstract class CallbackRunnable<T>
+implements Runnable
+{
+private final Callback<T> callback;
+private final Executor callbackExecutor;
+callback = paramCallback;
+callbackExecutor = paramExecutor;
+errorHandler = paramErrorHandler;
+}
+
+public abstract ResponseWrapper obtainResponse();
+

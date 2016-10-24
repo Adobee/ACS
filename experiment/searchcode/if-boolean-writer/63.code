@@ -1,0 +1,10 @@
+private final OutputStreamWriter writer;
+private boolean hadOne = false;
+
+public OutputWriter(OutputStreamWriter writer) {
+this.writer = writer;
+}
+
+public void write(String value) throws IOException {
+if (hadOne) {
+

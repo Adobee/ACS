@@ -1,0 +1,12 @@
+import java.text.ParsePosition;
+
+public class NumberParser extends AbstractParser {
+
+
+private static DecimalFormatSymbols custom = new DecimalFormatSymbols() {{
+final String expression = context.getMathExpression();
+
+final Number number = NUMBER_PARSER.parse(expression, parsePosition);
+
+if (parsePosition.getErrorIndex() < 0) {
+

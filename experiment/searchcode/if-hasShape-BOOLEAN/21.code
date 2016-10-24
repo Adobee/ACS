@@ -1,0 +1,6 @@
+public void damageRateLimited(QuadTree.HasShape attacker, int biteDmg, long delta, World world) {
+if (attackers == null) {
+long currentTime = world.getTimeController().getTime();
+boolean doDmg = false;
+if (attackers.containsKey(attacker)) {
+

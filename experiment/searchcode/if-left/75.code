@@ -1,0 +1,15 @@
+int right = A.length - 1;
+
+while(left < right){
+int mid = (right + left) / 2;
+if(A[mid] < target){
+right = mid;
+}
+}
+
+if(A[left] != target){
+return res;
+}
+
+res[0] = left;
+

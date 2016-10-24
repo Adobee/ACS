@@ -1,0 +1,17 @@
+* @version 1.0
+*
+*/
+public class Queue_3_0 {
+Node first, last;
+
+void enqueue(Object object) {
+if (first == null) {
+last.next = new Node(object);
+last = last.next;
+}
+}
+
+Object dequeue() {
+if (first != null) {
+Object object = first.object;
+

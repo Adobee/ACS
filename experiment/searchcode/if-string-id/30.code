@@ -1,0 +1,13 @@
+public class StringIdentifier implements Identifier<String> {
+
+private String id;
+
+public StringIdentifier(String id) {
+this.id = id;
+}
+
+@Override
+StringIdentifier that = (StringIdentifier) o;
+
+if (id != null ? !id.equals(that.id) : that.id != null) return false;
+

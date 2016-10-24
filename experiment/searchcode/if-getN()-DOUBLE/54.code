@@ -1,0 +1,8 @@
+private double getSum(List<Link> links) {
+double max = 0;
+for (Link link : links) {
+if (link.getnAllocatedSlots() > max) {
+for (Link link : links) {
+link.setCost((double) (alfa * link.getCost() + (1 - alfa)
+* (link.getnAllocatedSlots() / occupationFactor)));
+

@@ -1,0 +1,13 @@
+public IndexMetaData upgradeIndexMetaData(IndexMetaData indexMetaData) {
+// Throws an exception if there are too-old segments:
+if (isUpgraded(indexMetaData)) {
+.settings(indexSettings)
+.build();
+}
+}
+return indexMetaData;
+}
+
+/**
+* Checks if the index was already opened by this version of Elasticsearch and doesn&#39;t require any additional checks.
+

@@ -1,0 +1,8 @@
+import org.apache.lucene.search.Query;
+import org.apache.lucene.search.TermQuery;
+import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.search.BooleanClause.Occur;
+public void testHit() throws IOException {
+Query query = new TermQuery(new Term(&quot;test&quot;, &quot;hit&quot;));
+TopDocs topDocs = indexSearcher.search(query, 1);
+

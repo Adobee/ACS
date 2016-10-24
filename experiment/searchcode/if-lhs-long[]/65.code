@@ -1,0 +1,13 @@
+@Override public int compare(final Departure lhs, final Departure rhs) {
+if (lhs == null &amp;&amp; rhs == null) {
+return 0;
+} else if (lhs == null) {
+return 1;
+} else if (rhs == null) {
+return -1;
+} else {
+return Long.compare(lhs.timeToStation(), rhs.timeToStation());
+}
+}
+}
+

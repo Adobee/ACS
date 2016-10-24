@@ -1,0 +1,7 @@
+public class ElectronicsProduct extends Product{
+private int guaranteePeriod;
+public ElectronicsProduct (String name, double price, int quantity, AgeRestriction ageRestriction, int guaranteePeriod){
+public void setGuaranteePeriod(int guaranteePeriod){
+if (guaranteePeriod < 0){
+throw new IllegalArgumentException(&quot;Guarantee period must not be a negative value.&quot;);
+

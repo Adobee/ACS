@@ -1,0 +1,9 @@
+public class Judge {
+public String judge(double[] list){
+Arrays.sort(list);
+double max = list[2];
+double mid = list[1];
+double min = list[0];
+System.out.println(max + &quot; &quot; + mid + &quot; &quot; + min);
+if(min + mid <= max){
+

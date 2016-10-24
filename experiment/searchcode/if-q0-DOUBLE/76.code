@@ -1,0 +1,7 @@
+public abstract class Noise {
+protected int[] perm;
+protected double offsetX = 0;
+protected double offsetY = 0;
+public static double linearLerp(double x, double x1, double x2, double q0, double q1) {
+return ((x2 - x) / (x2 - x1)) * q0 + ((x - x1) / (x2 - x1)) * q1;
+

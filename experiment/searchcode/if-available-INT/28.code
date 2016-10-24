@@ -1,0 +1,13 @@
+package exercise7.equipment;
+
+public class Brushes {
+
+private int available = 3;
+
+public synchronized void takeBrush() throws InterruptedException {
+while (available == 0) {
+wait();
+}
+if (available == 0) {
+throw new IllegalStateException(&quot;There are no more brushes!&quot;);
+

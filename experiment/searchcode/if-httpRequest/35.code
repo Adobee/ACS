@@ -1,0 +1,7 @@
+public DroidHTTPResponse get(String path) throws MalformedURLException, IOException {
+DroidHTTPRequest droidHTTPRequest = new DroidHTTPRequest(mainURL.concat(path), droidParams);
+return droidHTTPRequest.get();
+}
+
+public void get(String path, Map<String, String> params) {
+

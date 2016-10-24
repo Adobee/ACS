@@ -1,0 +1,10 @@
+final List check = reduceCollisionSet(reducer, motions);
+
+int suspectedSize = check.size();
+if (cdx.ImmortalEntry.recordedRuns < cdx.ImmortalEntry.maxDetectorRuns) {
+for (int i = 0; i < currentFrame.planeCnt; i++) {
+
+int cslen = currentFrame.lengths[i];
+System.out.println(prefix
++ new String(currentFrame.callsigns, offset, cslen) + &quot; &quot;
+

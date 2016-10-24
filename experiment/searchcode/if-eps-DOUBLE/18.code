@@ -1,0 +1,12 @@
+double a = 0.0, b = 1.5, c, y, eps = 1e-8;
+do {
+c = 0.5 * (a + b);
+y = f(c);
+if (Math.abs(y) < eps)
+break;
+if (f(a) * y < 0.0)
+b = c;			//direct the point
+else
+a = c;
+} while (Math.abs(b - a) >= eps);
+

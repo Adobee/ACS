@@ -1,0 +1,7 @@
+public ValidationResultFlag evaluate(TaxonAttribute attribute) {
+boolean vernacularNameBlank = StringUtils.isBlank(attribute.getVernacularName());
+boolean langCodeBlank = StringUtils.isBlank(attribute.getLanguageCode());
+boolean langVarietyBlank = StringUtils.isBlank(attribute.getLanguageVariety());
+
+if ( (vernacularNameBlank &amp;&amp; langCodeBlank &amp;&amp; langVarietyBlank) ||
+

@@ -1,0 +1,10 @@
+isNotNull();
+
+if (actual.getValueType() != Measure.ValueType.BOOLEAN) {
+failWithMessage(
+&quot;Expected Measure to have a boolean value and therefore its ValueType to be <%s> but was <%s>&quot;,
+Measure.ValueType.DOUBLE, actual.getValueType());
+}
+
+if (actual.getBooleanValue() != expected) {
+

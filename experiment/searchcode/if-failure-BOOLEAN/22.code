@@ -1,0 +1,10 @@
+String failureUrlParam = request.getParameter(&quot;failureUrl&quot;);
+
+String failureUrl = failureUrlParam==null?null:failureUrlParam.trim();
+Boolean sessionTimeout = (Boolean) request.getAttribute(&quot;sessionTimeout&quot;);
+failureUrl = defaultFailureUrl;
+}
+
+if (BooleanUtils.isTrue(sessionTimeout)) {
+failureUrl = &quot;?sessionTimeout=true&quot;;
+

@@ -1,0 +1,14 @@
+/** Usage: java Kirrkirr.misc.WarumunguDomainConverter
+*           oldxmlfile newxmlfile
+*/
+public static void main(String argv[]) {
+if(argv.length<2) {
+} catch (Exception e) {
+}
+}
+}
+
+
+private static String getConversion(String line) {
+if(line == null) return null;
+

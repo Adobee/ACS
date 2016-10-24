@@ -1,0 +1,8 @@
+RealMatrix Tinner = null;
+RealMatrix TinnerInv = null;
+RealMatrix Tmat = new IdentityMatrix(ncol);
+
+if(normalize){
+RealMatrix diagP = new DiagonalMatrix(V1.multiply(M).getRow(0));
+RealMatrix Gp = G.subtract(Tmat.multiply(diagP));
+

@@ -1,0 +1,13 @@
+protected int years;
+public static int count = 0;
+
+public Person(){
+this.firstName = &quot;&quot;;
+this.lastName = &quot;&quot;;
+public void setYears(int years){
+if(this.years > 0){
+this.years = years;
+}
+}
+}
+

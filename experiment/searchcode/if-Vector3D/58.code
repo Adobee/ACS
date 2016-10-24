@@ -1,0 +1,12 @@
+package uk.ac.cam.tpt26.graphics.scenewithmatrices;
+
+public class Vector3D {
+double x, y, z;
+this.x = x; this.y = y; this.z = z;
+if (unit) {
+normalize();
+}
+}
+
+Vector3D(Vector3D orig) {
+

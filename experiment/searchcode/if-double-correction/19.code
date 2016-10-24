@@ -1,0 +1,9 @@
+package ru.jnano.bal.models.atm;
+
+import java.io.Serializable;
+
+public enum CorrectionType implements Serializable{
+public double getValue(double oldValue, double value){
+if (this==CorrectionType.REL) return oldValue+oldValue*(value/100);
+if (this==CorrectionType.ABS) return oldValue+value;
+

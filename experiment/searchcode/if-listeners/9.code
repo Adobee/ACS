@@ -1,0 +1,11 @@
+public class Listeners<L> {
+
+ArrayList<L> listeners;
+
+public void fireEvent(FireableEvent<L> event) {
+if (listeners != null)
+public void addListener(L l) {
+if(listeners == null)
+listeners = new ArrayList<L>();
+listeners.add(l);
+

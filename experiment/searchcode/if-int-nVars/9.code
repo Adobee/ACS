@@ -1,0 +1,10 @@
+* @return
+*/
+@Override
+public boolean hasZ(int pos, int v) {
+if (v < nvars_) {
+return (pos + 1) % c_ == 0;
+public void TX(int pos, DataBlock x) {
+for (int i = 0, j = 0; i < nvars_; ++i, j += 2) {
+if ((pos + 1) % c_ != 0) {
+

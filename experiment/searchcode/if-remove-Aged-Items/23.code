@@ -1,0 +1,11 @@
+totalDatas.get(i)[j] = AGE_MIDDLE_AGED;
+} else if (num > 40) {
+totalDatas.get(i)[j] = AGE_Senior;
+}
+}
+
+if (!attr2Num.containsKey(totalDatas.get(i)[j])) {
+for (FrequentItem item : totalFrequentItems) {
+// 过滤掉不满足个数频繁项
+if (item.getIdArray().length < (attrValueList.size() + 1)) {
+

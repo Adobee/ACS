@@ -1,0 +1,8 @@
+public class TimeDuration {
+private long StartMillis;
+private long EndMillis;
+
+public TimeDuration(long startMillis, long endMillis) {
+this.StartMillis 	= startMillis;
+this.EndMillis   	= endMillis;
+

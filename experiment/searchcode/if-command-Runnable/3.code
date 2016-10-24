@@ -1,0 +1,6 @@
+public BooleanPromise ifTrueThen(Runnable runnable) {
+then(commandForTrue(runnable));
+return this;
+public BooleanPromise ifTrueThenOnBackgroundThread(Runnable runnable) {
+thenOnBackgroundThread(commandForTrue(runnable));
+

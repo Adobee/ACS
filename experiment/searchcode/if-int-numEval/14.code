@@ -1,0 +1,10 @@
+private int velPop;
+private double mut;
+private int numEval;
+private int dim;
+private int dg;
+private int gg;
+public BinarniPrikaz(int velPop, double mut, int numEval, Function f, int dim, int gg, int dg, int preciznost){
+this.velPop = velPop;
+this.mut = mut;
+

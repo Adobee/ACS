@@ -1,0 +1,5 @@
+@SuppressWarnings({&quot;unchecked&quot;})
+private MultivaluedMap<String, String> readForm(ApplicationContext context, boolean decode) throws java.io.IOException {
+MessageBodyReader reader = context.getProviders().getMessageBodyReader(MultivaluedMap.class, multivaluedMapType, null, contentType);
+if (reader == null) {
+

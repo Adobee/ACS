@@ -1,0 +1,6 @@
+double nextX = this.getX() + _changeX;
+double nextY = this.getY() + _changeY;
+if ( this.intersects( _myBar ) ) {
+if ( nextY >= _myBar.getBarMinY() - 7 ) {
+_changeY *= -1;
+

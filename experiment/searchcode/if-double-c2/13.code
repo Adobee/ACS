@@ -1,0 +1,10 @@
+private double r;	// real
+private double i;	// imaginary
+
+public ComplexNumber(double rr, double ii) {
+/ (c2.r * c2.r + c2.i * c2.i));
+}
+
+public boolean equals(Object o) {
+if (!(o instanceof ComplexNumber))
+

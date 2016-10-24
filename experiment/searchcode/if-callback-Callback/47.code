@@ -1,0 +1,10 @@
+public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException
+{
+for (Callback callback : callbacks)
+{
+if (callback instanceof NameCallback)
+{
+handleName((NameCallback)callback);
+}
+else if (callback instanceof PasswordCallback)
+

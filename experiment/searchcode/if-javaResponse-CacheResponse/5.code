@@ -1,0 +1,8 @@
+import java.net.CacheResponse;
+import java.net.HttpURLConnection;
+import java.net.ResponseCache;
+import java.net.URI;
+@Override public Response get(Request request) throws IOException {
+CacheResponse javaResponse = getJavaCachedResponse(request);
+if (javaResponse == null) {
+

@@ -1,0 +1,10 @@
+public class ClientService {
+
+private DAOClient daoClient;
+
+public boolean createClient(Client client){
+
+System.out.println(&quot;running logic to create a client&quot;);
+
+if(daoClient.findByName(client.getName())==null){
+

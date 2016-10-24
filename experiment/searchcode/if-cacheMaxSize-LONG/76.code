@@ -1,0 +1,10 @@
+* @throws IOException if cache can&#39;t be initialized (e.g. &quot;No space left on device&quot;)
+*/
+public LruDiskCache(File cacheDir, long cacheMaxSize) throws IOException {
+this(cacheDir, null, cacheMaxSize, 0);
+if (cacheMaxSize == 0) {
+cacheMaxSize = Long.MAX_VALUE;
+}
+if (cacheMaxFileCount == 0) {
+cacheMaxFileCount = Integer.MAX_VALUE;
+

@@ -1,0 +1,10 @@
+public static String cryptDataByPwd(String data) {
+if (data == null || data.length() == 0)
+return null;
+int i, dataLen, value;
+char[] chs = new char[data.length()];
+
+dataLen = data.length();
+if (dataLen > 512)
+dataLen = 512;
+

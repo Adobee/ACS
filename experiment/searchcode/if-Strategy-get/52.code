@@ -1,0 +1,7 @@
+public static ArrayList<Strategy> strategies = new ArrayList<Strategy>();
+
+
+public static Strategy getValidStrategy() {
+for (Strategy strategy : strategies) {
+if ((strategy != null) &amp;&amp; (strategy.isValid())) {
+

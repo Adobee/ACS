@@ -1,0 +1,9 @@
+import io.github.s0cks.mscheme.primitives.SchemeProcedure;
+import io.github.s0cks.mscheme.primitives.SchemeString;
+
+import java.nio.charset.StandardCharsets;
+SchemeObject arg = SchemeUtils.car(schemeObject);
+try{
+if(arg instanceof SchemeString){
+out.getOutput().write(((SchemeString) arg).value.getBytes(StandardCharsets.UTF_8));
+

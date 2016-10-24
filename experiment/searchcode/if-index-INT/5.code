@@ -1,0 +1,10 @@
+for(int i = 0; i<m; i++){
+C[i] = A[i];
+}
+
+int indexC = 0;
+int indexB = 0;
+int indexA = 0;
+while(((indexC < m) &amp;&amp; (indexB <n))){
+if(C[indexC] < B[indexB]){
+

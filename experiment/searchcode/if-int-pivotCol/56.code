@@ -1,0 +1,7 @@
+List<Key> path = new ArrayList<>(key.size());
+for (int i = 0; i < key.size(); i++) {
+path.add(new Key(key.getColumnSet().get(i), key.get(i)));
+table.fill(getIndexedColumnSet().size(), Conf.getCellWidth());
+for (int i = 0; i < getIndexedColumnSet().size() - 1; i++) {
+Header h = table.getHeader(getIndexedColumnSet().get(i).getIndex());
+

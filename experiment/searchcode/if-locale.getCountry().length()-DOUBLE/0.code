@@ -1,0 +1,14 @@
+public static double a(String str, double d) {
+double d2 = 100.0d;
+if (str != null) {
+try {
+d2 = Double.parseDouble(str);
+} catch (NumberFormatException e) {
+}
+}
+return d2;
+}
+
+static String a(Locale locale) {
+if (locale == null || TextUtils.isEmpty(locale.getLanguage())) {
+

@@ -1,0 +1,7 @@
+public class JvmInfoTests extends ESTestCase {
+
+public void testUseG1GC() {
+// if we are running on HotSpot, and the test JVM was started
+final boolean containsPositiveFlag = argline != null &amp;&amp; argline.contains(&quot;-XX:+&quot; + flag);
+if (!containsPositiveFlag) return false;
+

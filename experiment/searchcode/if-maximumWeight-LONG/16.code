@@ -1,0 +1,14 @@
+public class ContractLine implements Serializable {
+
+private static final long serialVersionUID = 1L;
+
+@Id
+@GeneratedValue(strategy = GenerationType.AUTO)
+private Integer maximumWeight;
+
+@ManyToOne
+private Contract contract;
+
+public Long getId() {
+return id;
+

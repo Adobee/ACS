@@ -1,0 +1,13 @@
+return new ParameterizedSuperType(God.resolveType(rawType), superGenericArgs);
+}
+
+@Override
+public boolean equals(Object o) {
+@Override
+public String toString() {
+if (genericArgs.length == 0)
+return rawType.toString();
+return rawType + Arrays.toString(genericArgs);
+}
+}
+

@@ -1,0 +1,10 @@
+int nVars = dataSet.getNumberNumericAttributes();
+int maxVars = StarPlotLayer.MAX_N_VARS;
+
+if (maxVars < nVars) {
+nVars = maxVars;
+private void findSpikeLengths(int[] vars) {
+int[][] spikeLengths = null;
+int nVars = vars.length;
+if (method.equals(ScaleMethod.Linear)) {
+

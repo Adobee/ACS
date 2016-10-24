@@ -1,0 +1,5 @@
+private boolean testIsAnalyzed(Object receiver) {
+if (receiver instanceof Iterable<?>) {
+for (Object elem : (Iterable<?>) receiver) {
+if (!isAnalyzableDartResource(elem)) {
+

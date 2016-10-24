@@ -1,0 +1,14 @@
+public static Double variance(Double[] v) {
+Double mu = mean(v);
+Double sumsq = 0.0;
+for (int i = 0; i < v.length; i++)
+return sumsq / (v.length);
+
+}
+
+
+private static Double variance2(Double[] v) {
+Double mu = mean(v);
+Double sumsq = 0.0;
+for (int i = 0; i < v.length; i++)
+

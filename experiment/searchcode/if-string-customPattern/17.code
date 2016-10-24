@@ -1,0 +1,11 @@
+Matcher m ;
+String subString;
+int end;
+for (CustomPattern ap :this.authorMatcherList){
+ap.setMatchCount(0);
+m = ap.getPattern().matcher(subString);
+if (m.find()){
+//System.out.println(&quot;pattern&quot;+ entry.getKey().toString());
+
+ap.setMatchCount(ap.getMatchCount()+1);
+

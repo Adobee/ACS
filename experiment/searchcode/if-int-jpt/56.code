@@ -1,0 +1,7 @@
+PersistentType jpt = it.next();
+PersistentType superclass = fp.getFirstSuperclassBelongingToTheDiagram(jpt);
+if (superclass == null)
+continue;
+IsARelation newRel = new IsARelation(jpt, superclass);
+if (!allExistingIsARelations.contains(newRel))
+

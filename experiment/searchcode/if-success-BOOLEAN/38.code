@@ -1,0 +1,11 @@
+public HelpResult(boolean isSuccess,String reason){
+if(!isSuccess){
+this.setInfo(&quot;isSuccess&quot;, Boolean.FALSE);
+this.setInfo(&quot;reason&quot;, reason);
+Boolean isSuccess = this.getBoolean(&quot;isSuccess&quot;);
+
+if(isSuccess != null &amp;&amp; !isSuccess.booleanValue()){
+return false;
+}
+return true;
+

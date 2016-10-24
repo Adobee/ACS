@@ -1,0 +1,9 @@
+Point3D p21 = l2.getP().sub(l1.getP());
+Point3D m = l2.getN().cross(l1.getN());
+double m2 = m.dot(m);
+if (m2 == 0)
+return null;
+Point3D r = p21.cross(m.mult(1/m2));
+double t1 = r.dot(l2.getN());
+Point3D q1 = l1.getP().add(l1.getN().mult(t1));
+

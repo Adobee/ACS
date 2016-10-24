@@ -1,0 +1,10 @@
+protected Dfp(final DfpField field, double x) {
+
+// initialize as if 0
+mant = new int[field.getRadixDigits()];
+sign = 1;
+exp = 0;
+final int excp = result.round(aextradigit + bextradigit);
+if (excp != 0) {
+result = dotrap(excp, ADD_TRAP, x, result);
+

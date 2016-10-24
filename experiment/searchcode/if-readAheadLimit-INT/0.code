@@ -1,0 +1,15 @@
+extends Reader
+{
+
+private final Reader target;
+
+int pos = 0;
+
+int readAheadLimit;
+
+/**
+* @param target {@link Reader}
+* @throws IOException in case of a failure.
+*/
+public BoundedReader( Reader target, int readAheadLimit )
+

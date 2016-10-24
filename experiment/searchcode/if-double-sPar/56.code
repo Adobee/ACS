@@ -1,0 +1,14 @@
+* @author Daniel Stadelmann <daniel.stadelmann@stud.hslu.ch>
+*/
+public class Spar extends Konto {
+
+private double maxOut;
+
+public Spar(double saldo, double rate, double maxOut) {
+this.maxOut = maxOut;
+}
+
+@Override
+public double payOut(double value) {
+if (value <= this.getSaldo() &amp;&amp; value <= maxOut) {
+

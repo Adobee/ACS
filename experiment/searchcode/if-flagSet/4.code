@@ -1,0 +1,7 @@
+for (String line: src.split(&quot;\n&quot;)) {
+if (isFlagSetString(line)) {
+result.add(new FlagSet<F>(flagType, line));
+for (FlagSet<F> flagSet: flagSets) {
+if (reduced.size() == 0 || !reduced.get(reduced.size() - 1).equals(flagSet)) {
+reduced.add(flagSet);
+

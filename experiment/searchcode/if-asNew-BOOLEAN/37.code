@@ -1,0 +1,11 @@
+import java.util.List;
+
+public class ASNewLibraryFromGitHubDialogContentPane extends JPanel {
+
+private static Logger LOG = Logger.getLogger(ASNewLibraryFromGitHubDialogContentPane.class);
+this.firePropertyChange(&quot;dialog&quot;, oldValue, newValue);
+}
+
+protected boolean checkLibraryName(String libraryName) {
+if (MPSModuleRepository.getInstance().getModuleByUID(libraryName) != null) {
+

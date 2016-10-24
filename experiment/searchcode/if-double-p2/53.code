@@ -1,0 +1,14 @@
+package problem6;
+
+public class Line {
+double A, B, C;
+double epsilon = 0.000001;
+
+public Line (double a, double b, double c) {
+A = a;
+B = b;
+C = c;
+}
+
+public Line (Point p1, Point p2) {
+

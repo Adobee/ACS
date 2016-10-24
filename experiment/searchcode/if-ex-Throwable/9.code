@@ -1,0 +1,10 @@
+public abstract class ThrowableUtil {
+
+public static Throwable getRootCause(Throwable ex) {
+if (ex == null) {
+return null;
+}
+Throwable rootCause = ex;
+Throwable cause = rootCause.getCause();
+while (cause != null &amp;&amp; cause != rootCause) {
+

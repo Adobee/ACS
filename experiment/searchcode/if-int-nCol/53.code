@@ -1,0 +1,8 @@
+public boolean inBound(char[][] board, int nrow, int ncol) {
+if (nrow < 0) return false;
+if (ncol < 0) return false;
+public boolean existAt(char[][] board, boolean[][] used, int row, int col, String word, int index) {
+if (index == word.length()) return true;
+int nrow, ncol;
+for (int i = 0; i < dir.length; ++i) {
+

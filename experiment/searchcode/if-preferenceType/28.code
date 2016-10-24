@@ -1,0 +1,7 @@
+public void setPreferenceType(PreferenceType preferenceType) {
+Object oldVal = getPreferenceType();
+if (preferenceType == PreferenceType.CARDINAL) {
+getBean().setPreferenceInformation(generateCardinalPreferences());
+} else if (preferenceType == PreferenceType.ORDINAL) {
+getBean().setPreferenceInformation(generateOrdinalPreferences());
+

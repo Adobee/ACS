@@ -1,0 +1,8 @@
+public T one() {
+List<T> ls = all();
+if (ls.size() > 0) {
+return ls.get(0);
+for (int i = 0; i < fields.length; i++) {
+if (!fields[i].isAnnotationPresent(Ignore.class)) {
+columnMap.put(fields[i], fields[i].getName());
+

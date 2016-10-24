@@ -1,0 +1,15 @@
+import org.joda.time.LocalDate;
+
+import javax.xml.bind.annotation.adapters.XmlAdapter;
+
+/**
+* JAXB adapter to convert to/from LocalDate and String
+public String marshal(LocalDate v) throws Exception {
+if (v == null) {
+return null;
+}
+return v.toString();
+}
+
+}
+

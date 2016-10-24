@@ -1,0 +1,9 @@
+package org.jivesoftware.smackx.xmpp.connect;
+
+import java.net.InetAddress;
+import java.util.ArrayList;
+List<InetAddress> exists = new ArrayList<InetAddress>(pool);
+exists.addAll(used);
+for (InetAddress item : items) {
+if (!exists.remove(item)) {
+

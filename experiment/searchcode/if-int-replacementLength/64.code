@@ -1,0 +1,9 @@
+// patch replacement length
+
+int delta = offset - (documentOffset + replacementLength);
+if (delta > 0)
+public void setReplacementLength( int replacementLength ) {
+
+if (replacementLength >= 0) {
+this.replacementLength = replacementLength;
+

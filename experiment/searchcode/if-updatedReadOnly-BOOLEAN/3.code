@@ -1,0 +1,5 @@
+ClusterBlocks.Builder blocks = ClusterBlocks.builder().blocks(currentState.blocks());
+boolean updatedReadOnly = MetaData.SETTING_READ_ONLY_SETTING.get(metaData.persistentSettings()) || MetaData.SETTING_READ_ONLY_SETTING.get(metaData.transientSettings());
+if (updatedReadOnly) {
+blocks.addGlobalBlock(MetaData.CLUSTER_READ_ONLY_BLOCK);
+

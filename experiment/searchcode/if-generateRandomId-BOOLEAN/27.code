@@ -1,0 +1,14 @@
+this.startTime = startTime;
+this.modTime = modTime;
+}
+
+public boolean insert() {
+
+id = generateRandomId();
+modTime = System.currentTimeMillis();
+long rowId = DbAdapter.getSingleInstance().insertNewsAlert(id, symbol, alertFrequency, isNotifyOn,
+startTime, modTime);
+
+if (rowId == -1) {
+return false;
+

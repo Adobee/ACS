@@ -1,0 +1,10 @@
+package gx.ThinkInJava.Exceptions;
+/*
+* Exceptions.09
+*/
+class ExceptionA extends Exception {
+public static void f(int x) throws ExceptionA, ExceptionB, ExceptionC {
+if(x < 0) throw new ExceptionA(&quot;x < 0&quot;);
+if(x == 0) throw new ExceptionB(&quot;x == 0&quot;);
+if(x > 0) throw new ExceptionC(&quot;x > 0&quot;);
+

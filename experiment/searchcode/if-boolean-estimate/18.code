@@ -1,0 +1,8 @@
+estimateGroup = estimateGroupDao.create(estimateGroup);
+
+//estimate by user
+if(estimateGroup.getEstimateByUserList()!=null&amp;&amp;estimateGroup.getEstimateByUserList().size()>0){
+String name =  request.get(&quot;name&quot;)+&quot;&quot;;
+boolean obj = estimateGroupDao.checkNameAlready(estimateGroupId,name);
+if(obj)
+

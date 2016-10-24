@@ -1,0 +1,14 @@
+@Override
+public boolean open() {
+if (isOpen()) {
+return false;
+}
+isOpen = true;
+return isOpen;
+}
+
+@Override
+public boolean close() {
+if (!isOpen()) {
+return false;
+

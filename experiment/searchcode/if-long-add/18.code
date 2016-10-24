@@ -1,0 +1,13 @@
+public void add(long value) {
+ensureCapacity();
+actualBlock[actualBockPos++] = value;
+}
+
+private void ensureCapacity() {
+long[] o = new long[size];
+
+int pos = 0;
+
+if (finalArray != null) {
+System.arraycopy(finalArray, 0, o, 0, finalArray.length);
+

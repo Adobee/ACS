@@ -1,0 +1,12 @@
+public class SchedulingParameter extends MecaObject{
+private Integer period;
+private String periodType;
+
+@Override
+public boolean equals(Object obj) {
+return period.toString().concat(&quot;.&quot;).concat(periodType);
+}
+
+public SchedulingParameter(Integer period, String periodType) {
+super();
+

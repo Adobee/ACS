@@ -1,0 +1,9 @@
+* Visszaad egy véletlenszerű értéket a paraméterként megkapott
+* kollekcióból.
+*/
+public static <E> E randomValue(Collection<E> collection) {
+for (Entry<E, ? extends Number> n : weightMap.entrySet()) {
+totalWeightSoFar += n.getValue().doubleValue();
+if (totalWeightSoFar >= rand) {
+return n.getKey();
+

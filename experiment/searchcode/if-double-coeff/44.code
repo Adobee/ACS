@@ -1,0 +1,8 @@
+try{
+this.coeff = new double[dim][dim];  // initialise an array with dimension dim
+}
+catch(Exception e){
+public SquareMatrix unitMatrix(int dim){ //construct a unit matrix
+try{
+this.coeff = new double[dim][dim];  // initialise an array with dimension dim
+

@@ -1,0 +1,8 @@
+public class Solution {
+private int fill(int[][] ret, int idx, int len, int d) {
+if (len == 1) {
+ret[idx][idx] = d++;
+return d;
+}
+for (int i = 0; i < len - 1; i++) {
+

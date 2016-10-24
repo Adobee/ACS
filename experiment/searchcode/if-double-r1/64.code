@@ -1,0 +1,13 @@
+public BipolarCoordinateCalculator(double a) {
+_a = a;
+}
+
+public Point2D toCartesian(Point2D polar) {
+
+double r1 = polar.getY();
+double r2 = polar.getX();
+r1 *= r1;
+r2 *= r2;
+//x = \frac{r_2^2-r_1^2}{4a}
+double x = (r2 - r1) / 4 * _a;
+

@@ -1,0 +1,5 @@
+public boolean isExist(String ModuleName){
+List<Module> list = me.find(&quot;select * from xm_project_module where name=?&quot;, ModuleName);
+public List<Module> getModuleTree(long projectId, int parentId){
+String sql = &quot;select * from xm_project &quot;
+

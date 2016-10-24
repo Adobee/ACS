@@ -1,0 +1,8 @@
+public class EpsTermination implements TerminationCondition {
+private double eps = 1e-4;
+private double tolerance = Nd4j.EPS_THRESHOLD;
+
+public EpsTermination(double eps, double tolerance) {
+this.eps = eps;
+this.tolerance = tolerance;
+

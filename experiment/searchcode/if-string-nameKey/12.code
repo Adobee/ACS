@@ -1,0 +1,5 @@
+public static Map<String, String> parseParameter(HierarchicalConfiguration config, String subKey, String nameKey, String valueKey)
+String name = subConfig.getString(nameKey);
+String value = subConfig.getString(valueKey);
+parameters.put(name, value);
+

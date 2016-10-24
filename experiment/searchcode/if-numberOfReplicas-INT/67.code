@@ -1,0 +1,11 @@
+/** Hash计算对象，用于自定义hash算法 */
+HashFunc hashFunc;
+/** 复制的节点个数 */
+private final int numberOfReplicas;
+/** 一致性Hash环 */
+private final SortedMap<Integer, T> circle = new TreeMap<Integer, T>();
+*            节点对象
+*/
+public ConsistentHash(int numberOfReplicas, Collection<T> nodes) {
+this.numberOfReplicas = numberOfReplicas;
+

@@ -1,0 +1,6 @@
+MultipartBody multipartBody = (MultipartBody) request.body();
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder();
+multipartBuilder.addFormDataPart(item.getKey(), item.getValue() + &quot;&quot;);
+}
+MultipartBody multipartBody1 = multipartBuilder.addPart(multipartBody).build();
+

@@ -1,0 +1,11 @@
+private boolean mustFail;
+
+public RodCutter(final boolean fail) {
+mustFail = fail;
+}
+
+public void setPrices(final List<Integer> prices) {
+// ...
+if (mustFail)
+throw new RodCutterException();
+

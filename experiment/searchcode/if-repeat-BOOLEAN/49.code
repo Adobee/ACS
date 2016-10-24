@@ -1,0 +1,6 @@
+jObject.put(ScheduleColumns.REPEAT_FINISHED, repeat.isRepeatFinished());
+if (repeat.getRepeatStopTime() != null)
+jObject.put(ScheduleColumns.REPEAT_STOP_TIME, repeat.getRepeatStopTime().getTime());
+repeat.setRepeatType(jObject.getInt(ScheduleColumns.REPEAT_TYPE));
+repeat.setRepeatFinished(jObject.getBoolean(ScheduleColumns.REPEAT_FINISHED));
+

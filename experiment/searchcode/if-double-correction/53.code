@@ -1,0 +1,8 @@
+makeRelative(container.getContentPane(), correction);
+
+if (gridX > 0 &amp;&amp; (snapLocations &amp; EAST) != 0) {
+correction.preciseWidth -= Math.IEEEremainder(rect.preciseRight()
+if ((snapLocations &amp; (WEST | HORIZONTAL)) != 0 &amp;&amp; gridX > 0) {
+double leftCorrection = Math.IEEEremainder(
+rect.preciseX - origin.x, gridX);
+

@@ -1,0 +1,18 @@
+frame = new TransducerListConfigurationFrame();
+if (file != null) {
+frame.fill_table(file);
+}
+return frame;
+}
+
+public boolean existsFrame() {
+return frame;
+}
+
+void closeFrame() {
+if (frame == null)
+return;
+frame.setVisible(false);
+}
+}
+

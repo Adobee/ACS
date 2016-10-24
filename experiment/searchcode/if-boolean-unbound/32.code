@@ -1,0 +1,11 @@
+surr[i] = getCellType(map, scanner.unboundIncrement(dirs[i]));
+}
+return surr;
+}
+
+private boolean isSquareDeadlock(Map m, Position box, char dir) throws CloneNotSupportedException {
+if (isValidBoxSquare(map, dest.unboundMove(dir))) {
+if (isGoal(map, dest.unboundMove(dir)))
+return false;
+return isUnsafeCenter(map, dest.unboundMove(dir));
+

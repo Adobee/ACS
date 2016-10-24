@@ -1,0 +1,11 @@
+AppRequestContext context = (AppRequestContext) requestContextTL.get();
+if (context == null) {
+context = new AppRequestContext();
+requestContextTL.set(context);
+}
+return context;
+}
+
+/**
+* set CafContext object
+

@@ -1,0 +1,7 @@
+public void saveInstanceState(String key, M model, Bundle savedState) {
+if (savedState == null || model == null || key == null) {
+return;
+}
+if (model instanceof Parcelable) {
+savedState.putParcelable(key, (Parcelable) model);
+

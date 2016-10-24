@@ -1,0 +1,13 @@
+addToolBar(north);
+addContent(center);
+
+}
+
+boolean checkPermissions() {
+if (ws == null) {
+WindowUtils.infoAlert(&quot;You must first select a working set to edit...&quot;);
+taxaList.setFilter(TaxaData.FAMILY);
+taxaList.forcedRefresh();
+} else if (mode == DELETE) {
+refreshNeededDelete = false;
+

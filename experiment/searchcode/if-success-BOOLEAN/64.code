@@ -1,0 +1,15 @@
+private boolean  success = false;
+
+@Override
+public void parseResponseBody() {
+
+if (getStatusCode() == 201) {
+success = true;
+}
+}
+
+public boolean isSuccess() {
+return success;
+}
+}
+

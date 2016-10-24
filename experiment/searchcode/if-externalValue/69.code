@@ -1,0 +1,6 @@
+private HashMap<String, IRuntimeDebugValue> externalValue = new HashMap<>();
+private HashMap<String, IRuntimeDebugExec> externalExec = new HashMap<>();
+public int getAddressOfExportFunc(String name) {
+if (exports.containsKey(name)) {
+return exports.get(name);
+

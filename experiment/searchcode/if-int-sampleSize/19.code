@@ -1,0 +1,8 @@
+public static void testTouchSensors(EV3TouchSensor touchSensor) {
+while (true) {
+int samplesize = touchSensor.sampleSize();
+MedianFilter filter = new MedianFilter(provider, 10);
+while (true) {
+int samplesize = filter.sampleSize();
+float[] samples = new float[samplesize];
+

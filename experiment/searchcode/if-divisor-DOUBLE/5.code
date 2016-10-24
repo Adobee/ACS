@@ -1,0 +1,14 @@
+public double divide(double a, double divisor)
+throws IllegalArgumentException {
+if (divisor == 0) {
+throw new IllegalArgumentException(&quot;Argument &#39;divisor&#39; is 0&quot;);
+}
+
+return a / divisor;
+}
+
+public double square(double a) {
+return a * a;
+}
+}
+

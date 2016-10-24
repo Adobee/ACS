@@ -1,0 +1,9 @@
+package genetic.salesman;
+
+public class GeneticAlgorithm {
+
+private int populationSize;
+private int elitisvCount;
+
+public GeneticAlgorithm(int populationSize, double mutationRate, double crossoverRate, int elitisvCount) {
+

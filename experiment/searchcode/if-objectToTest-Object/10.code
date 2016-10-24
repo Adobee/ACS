@@ -1,0 +1,11 @@
+final BeanValidationTestClass objectToTest = new BeanValidationTestClass(-1);
+
+final boolean result = matcher.matches(objectToTest);
+
+assertThat(result, equalTo(true));
+}
+
+
+@Test
+public void doesntThrowException_WithNotEmpty() throws Exception {
+

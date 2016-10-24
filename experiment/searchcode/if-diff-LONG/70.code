@@ -1,0 +1,7 @@
+// Date d1 = new Date(1384831803875l);
+
+long diff = d2.getTime() - d1.getTime();
+long diffSeconds = diff / 1000 % 60;
+long diffMinutes = diff / (60 * 1000) % 60;
+if(diffMinutes<=20)
+

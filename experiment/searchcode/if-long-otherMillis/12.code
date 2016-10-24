@@ -1,0 +1,10 @@
+return FieldUtils.safeSubtract(minuendInstant, subtrahendInstant);
+}
+
+//------------------------------------------------------------------------
+public int compareTo(DurationField otherField) {
+long otherMillis = otherField.getUnitMillis();
+// cannot do (thisMillis - otherMillis) as can overflow
+if (thisMillis == otherMillis) {
+return 0;
+

@@ -1,0 +1,7 @@
+@Path(&quot;{make}/{model}&quot;)
+public String handleContext(@Context UriInfo info) {
+List<PathSegment> pathSegments = info.getPathSegments();
+
+if (pathSegments != null &amp;&amp; pathSegments.size() >= 3) {
+return pathSegments.get(3).getPath();
+

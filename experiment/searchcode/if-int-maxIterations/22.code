@@ -1,0 +1,6 @@
+public abstract class SampleBasedGenerationRule extends GenerationRule {
+
+protected int maxIterations = 3;
+public void setMaxIterations(final int maxIterations) {
+if (maxIterations <= 0) { throw new IllegalArgumentException(&quot;&#39;maxIterations&#39; parameter must be a positive integer.&quot;); }
+

@@ -1,0 +1,8 @@
+String line = in.readLine();
+while (line != null) {
+listIndex++;
+int listSize = Integer.parseInt(line);
+if (listSize == 0)
+break;
+String[] names = new String[listSize];
+

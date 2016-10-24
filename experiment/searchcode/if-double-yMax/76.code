@@ -1,0 +1,9 @@
+public double ymin() { return ymin; }
+public double ymax() { return ymax; }
+
+@Override
+public double xctr() {
+if(deltay<+dymin) deltay = +dymin;
+if(deltay<-dymin) deltay = -dymin;
+double dymax = y-ymax;
+

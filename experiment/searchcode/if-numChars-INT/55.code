@@ -1,0 +1,9 @@
+String baklengs = new String();
+for (int i = tekst.length() - 1; i >= 0; i--) {
+baklengs += tekst.charAt(i);
+Map<Character, Integer> numChars = new HashMap<Character, Integer>(Math.min(count, 26));
+
+for (int i = 0; i < count; ++i) {
+char charAt = tekst.charAt(i);
+if (!numChars.containsKey(charAt)) {
+

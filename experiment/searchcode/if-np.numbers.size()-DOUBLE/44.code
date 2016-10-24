@@ -1,0 +1,11 @@
+if nu>=1
+if ~isequal(size(x),[2 2])
+error(&#39;Input matrix must be a 2x2 matrix&#39;)
+end
+if ~all(isfinite(x(:))) || ~all(isnumeric(x(:)))
+if ~isequal(x(:),round(x(:)))
+error(&#39;Warning: X data matrix values must be whole numbers&#39;)
+end
+end
+if nu==2
+

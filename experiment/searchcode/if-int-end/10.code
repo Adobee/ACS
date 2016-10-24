@@ -1,0 +1,6 @@
+while(true){
+for(int i=startY;i<=endY;i++){res[startX][i]=s;s++;}
+if(++startX>endX)break;
+for(int i=startX;i<=endX;i++){res[i][endY]=s;s++;}
+if(startY>--endY)break;
+

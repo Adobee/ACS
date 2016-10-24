@@ -1,0 +1,10 @@
+backtrack(a, 0, elements);
+}
+
+private void backtrack(boolean[] a, int k, int input) {
+if (isSolution(a, k, input)) {
+} else {
+k = k + 1;
+boolean[] candidates = constructCandidates(a, k, input);
+for (boolean c : candidates) {
+

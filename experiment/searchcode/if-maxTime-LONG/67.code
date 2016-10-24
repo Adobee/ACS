@@ -1,0 +1,12 @@
+this.method = method;
+}
+
+public synchronized void report(long time) {
+count++;
+sum += time;
+if (minTime == null) {
+if (maxTime == null) {
+maxTime = time;
+} else if (time > maxTime) {
+maxTime = time;
+

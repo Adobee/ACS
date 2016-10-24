@@ -1,0 +1,9 @@
+* @exception IllegalArgumentException if matrices dimensions don&#39;t match
+* @exception InvalidMatrixException if decomposed matrix is singular
+*/
+public double[] solve(final double[] b)
+final double absG = Math.abs(g);
+if (absG < minG) {
+r = i;
+minG = absG;
+

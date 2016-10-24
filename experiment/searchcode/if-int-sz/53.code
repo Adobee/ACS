@@ -1,0 +1,12 @@
+public class WeightQuickUnionUF {
+private int[] id;
+public int[] sz;
+
+public WeightQuickUnionUF(int N) {
+public void union(int p, int q) {
+int i = root(p);
+int j = root(q);
+if(sz[i] < sz[j]){
+id[i] = j;
+sz[j] += sz[i];
+

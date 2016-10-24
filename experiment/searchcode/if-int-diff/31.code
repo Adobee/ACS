@@ -1,0 +1,8 @@
+public class Solution {
+public int threeSumClosest(int[] nums, int target) {
+if(nums.length < 3)
+if(i != 0 &amp;&amp; nums[i] == nums[i-1])
+continue;
+int diff = twoSum(nums, i+1, target-nums[i]);
+if(Math.abs(diff) < Math.abs(minDiff))
+

@@ -1,0 +1,9 @@
+public int compareTo(StopCodeInfo b) {
+double avgcratio =  this.avgCRatio - b.avgCRatio;
+if (avgcratio!=0) {
+double avgpatternCount =  this.avgPatternCount - b.avgPatternCount;
+if (avgpatternCount!=0) {
+return avgpatternCount>0?1:-1;
+}
+double avgwindowSize =  this.avgWindowSize - b.avgWindowSize;
+

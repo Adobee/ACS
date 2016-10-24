@@ -1,0 +1,8 @@
+score += pins.get(frame);
+
+if (is_strike(frame)){
+score += get_strike_bonus(frame);
+score += get_second_roll_of_frame(frame);
+if (is_spare(frame)){
+score += get_spare_bonus(frame);
+

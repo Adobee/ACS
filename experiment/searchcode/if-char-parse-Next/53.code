@@ -1,0 +1,10 @@
+throwMacroParseException(&quot;Expected &#39;)&#39;&quot;);
+}
+}
+
+private void synchronize() throws MacroParseException {
+if(getNextChar() == &#39;(&#39;){
+break;
+} else if(nextChar == 0){
+throwMacroParseException(&quot;Expected \&quot;synchronize(...)\&quot;&quot;);
+

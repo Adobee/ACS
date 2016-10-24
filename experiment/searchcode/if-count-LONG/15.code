@@ -1,0 +1,13 @@
+package org.groggy.elasticsearch.river.injector;
+
+public class Count
+extends Value {
+long count = 0;
+public String getNext(Object[] payload, int i) {
+long v = count++;
+if (high > 0 &amp;&amp; count > high) count = low;
+return String.valueOf(v);
+}
+
+}
+

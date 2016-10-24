@@ -1,0 +1,7 @@
+public class OdometryCorrection extends Thread {
+private static final long CORRECTION_PERIOD = 10;
+private static final double offset = 12.5; //the offset is the distance between color sensor and center of robot in cm;
+// this ensure the odometry correction occurs only once every period
+correctionEnd = System.currentTimeMillis();
+if (correctionEnd - correctionStart < CORRECTION_PERIOD) {
+

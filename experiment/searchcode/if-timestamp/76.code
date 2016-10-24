@@ -1,0 +1,12 @@
+public class GcLoggedEvent implements Comparable<GcLoggedEvent> {
+private long timestamp;
+
+public long getTimestamp() {
+this.timestamp = timestamp;
+}
+
+
+@Override
+public int compareTo(GcLoggedEvent o) {
+if (timestamp < o.getTimestamp()){
+

@@ -1,0 +1,8 @@
+public abstract class LvxingpaiTest {
+
+protected void assertText(JsonNode node, String field, boolean allowEmpty) {
+assertText(node, new String[]{field}, allowEmpty);
+protected void assertText(JsonNode node, String[] fields, boolean allowEmpty) {
+for (String key : fields) {
+JsonNode txtNode = node.get(key);
+

@@ -1,0 +1,7 @@
+public TByteFloatHashMap(TByteFloatMap map, int numProcs) {
+super(map.size());
+if (map instanceof TByteFloatHashMap) {
+/** {@inheritDoc} */
+public boolean equalsPar (Object other, int numProcs)	{
+if (!((other instanceof TByteFloatMap)||(other instanceof Map<?,?>)))	{
+

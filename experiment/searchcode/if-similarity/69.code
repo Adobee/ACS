@@ -1,0 +1,13 @@
+float similarity = 0F;
+float sum_bottom = 0F;
+for (int i = 0; i < b.length; i++) {
+if (a[i]>b[i])
+similarity = (float)1 - (float)similarity/(float)sum_bottom;
+if (similarity < 0)
+similarity *= -1;
+return similarity;
+}
+
+@Override
+final public byte getComparisonMeasure() {
+

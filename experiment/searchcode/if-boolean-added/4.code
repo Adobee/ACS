@@ -1,0 +1,15 @@
+VariableDeclarationStatement dec;
+boolean added;
+
+public FieldNode(VariableDeclarationStatement d, boolean added)
+{
+dec = d;
+this.added = added;
+}
+
+@Override
+public String toString()
+{
+if (added)
+return &quot;added field : &quot; + dec.toString();
+

@@ -1,0 +1,6 @@
+if (event.isStartElement()) {
+this.processStartElement(event);
+} else if(event.isEndElement()){
+StartElement startElement = event.asStartElement();
+if (startElement.getName().getLocalPart().equals(CONFIGURATION)){
+

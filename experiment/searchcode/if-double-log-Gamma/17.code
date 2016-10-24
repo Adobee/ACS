@@ -1,0 +1,8 @@
+public class FastDoubleGamma implements FastGamma {
+private HashMap<Double,Double> log_gamma_cache;
+private HashMap<Double,Double> gamma_cache;
+public synchronized double logGamma(final double in){
+Double out = log_gamma_cache.get(in);
+if (out == null){
+double d_out = Gamma.logGamma(in);
+

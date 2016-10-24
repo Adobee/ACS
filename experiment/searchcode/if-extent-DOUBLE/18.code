@@ -1,0 +1,7 @@
+Extent<Integer> expectedIntExtent = Extents.newExtent(0, 9);
+Extent<Double> expectedDoubleExtent = Extents.newExtent(0.0, 9.0);
+Extent<Float> expectedFloatExtent = Extents.newExtent(0.0f, 9.0f);
+assertEquals(expectedIntExtent, Extents.findMinMax(intList));
+assertEquals(expectedDoubleExtent, Extents.findMinMax(doubleList));
+assertEquals(expectedFloatExtent, Extents.findMinMax(floatSet));
+

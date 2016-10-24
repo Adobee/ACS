@@ -1,0 +1,10 @@
+this.reader4 = reader4;
+}
+
+public int read(char[] buf, int n) {
+char[] buffer = new char[4];
+while (!eof &amp;&amp; readBytes < n) {
+int sz = reader4.read(buffer);
+if (sz < 4)
+eof = true;
+

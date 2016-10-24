@@ -1,0 +1,10 @@
+if (approxedCurve.total() == 4 &amp;&amp; Math.abs(Imgproc.contourArea(approxedCurve)) > 1000
+&amp;&amp; Imgproc.isContourConvex(new MatOfPoint(approxedCurveInt))) {
+double maxCosine = 0;
+double cosine = Math.abs(angle(approxPoints[j % 4], approxPoints[j - 2], approxPoints[j - 1]));
+maxCosine = Math.max(maxCosine, cosine);
+}
+
+if (maxCosine < 1) {
+result.add(new MatOfPoint(approxedCurveInt));
+

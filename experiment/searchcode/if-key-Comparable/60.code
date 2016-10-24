@@ -1,0 +1,16 @@
+cnt = new HashMap<Comparable, Integer>();
+}
+
+public void count(Comparable o)
+{
+if (cnt.containsKey(o)) cnt.put(o, cnt.get(o) + 1);
+List<Comparable> list = new ArrayList<Comparable>(cnt.keySet());
+Collections.sort(list);
+for (Comparable c : list)
+{
+System.out.println(c + &quot;\t&quot; + cnt.get(c));
+}
+}
+
+}
+

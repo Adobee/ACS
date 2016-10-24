@@ -1,0 +1,7 @@
+public TempFileBinary(String path, boolean deleteOnClose, boolean deleteOnExit) {
+super(path);
+if (deleteOnExit) getFile().deleteOnExit();
+public TempFileBinary(File file, boolean deleteOnClose, boolean deleteOnExit) {
+super(file);
+if (deleteOnExit) file.deleteOnExit();
+

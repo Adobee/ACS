@@ -1,0 +1,16 @@
+private long endTime;
+boolean started;
+
+public Delay(int length)
+{
+this.length = length;
+started = false;
+}
+
+public boolean isOver()
+{
+if(!started)
+return false;
+
+return Time.getTime() >= endTime;
+

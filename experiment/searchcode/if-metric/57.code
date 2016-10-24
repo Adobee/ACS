@@ -1,0 +1,8 @@
+package com.axibase.tsd.api.method.metric;
+
+import com.axibase.tsd.api.Registry;
+import com.axibase.tsd.api.model.metric.Metric;
+Registry.Metric.register(name);
+Response response = deleteMetric(name);
+assertEquals(&quot;Method should fail if metricName contains whitespace&quot;, BAD_REQUEST.getStatusCode(), response.getStatus());
+

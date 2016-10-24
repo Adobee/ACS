@@ -1,0 +1,10 @@
+Boolean newValue) -> {
+
+boolean preState = negativList.isEmpty();
+if (oldValue == newValue) {
+// !!! something is wrong !!!
+change.getAddedSubList().forEach(added -> {
+boolean b = added.get();
+if (!b)
+negativList.add(added);
+

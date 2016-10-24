@@ -1,0 +1,10 @@
+return this;
+}else if (id.equals(&quot;&quot;)){
+if (this.groupState.parentState != null){
+return this.groupState.parentState;
+}
+}else{
+ContentState ret = this;
+while(ret != null){
+if (id.equals(ret.content.parentGroup.getDesign().id)){
+

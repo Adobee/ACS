@@ -1,0 +1,12 @@
+public static void shellSort(int[] a) {
+int increment = a.length / 2;
+while (increment > 0) {
+for (int i = increment; i < a.length; i++) {
+while (j >= increment &amp;&amp; a[j - increment] > temp) {
+a[j] = a[j - increment];
+j = j - increment;
+}
+a[j] = temp;
+}
+if (increment == 2) {
+

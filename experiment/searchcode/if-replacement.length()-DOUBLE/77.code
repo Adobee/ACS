@@ -1,0 +1,6 @@
+// special case for classes named $Blah with no package; <-Blah> is illegal XML
+if (className.startsWith(noPackagePrefix+dollarReplacementInClass)) {
+className = className.substring(noPackagePrefix.length());
+private boolean stringFoundAt(String name, int i, String replacement) {
+if ( name.length() >= i + replacement.length()
+

@@ -1,0 +1,8 @@
+int distinctCounter = 0;
+while (nextIsNegative(A, negativeIdx)) {
+negativeIdx++;
+if (isFirstOrIncreased(negativeIdx, A)) distinctCounter++;
+int positiveIdx = negativeIdx + 1;
+while (positiveIdx < A.length) {
+if (negativeIdx == -1) {
+

@@ -1,0 +1,9 @@
+package com.asksunny.data;
+
+public class DoubleFieldSpec extends FieldSpec {
+private int precision;
+public void setPrecision(int precision) {
+this.precision = precision;
+if(precision>0){
+formatString = String.format(&quot;%%.%df&quot;, precision);
+

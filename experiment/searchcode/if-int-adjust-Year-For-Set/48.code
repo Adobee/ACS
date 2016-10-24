@@ -1,0 +1,14 @@
+super(zone);
+}
+
+private int gregorianYear = FIELD_UNDEFINED;
+
+public Date setEra(Era era) {
+if (getEra() != era) {
+gregorianYear += localYear;
+return this;
+}
+
+public Date setYear(int localYear) {
+if (getYear() != localYear) {
+

@@ -1,0 +1,12 @@
+private boolean isInsert;
+
+@Override
+public boolean hasAccess() {
+return true;
+}
+
+public void update(TimeOffAdjustment adjustment) {
+StringBuilder sql = new StringBuilder();
+if (isInsert) {
+sql.append(&quot;INSERT INTO time_off_adjustment &quot;);
+

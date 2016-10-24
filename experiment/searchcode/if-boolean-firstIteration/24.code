@@ -1,0 +1,8 @@
+static public void fDEC() throws Exception {
+DLog.log(&quot;start&quot;,6) ;
+boolean firstIteration = true ;
+while (true) {
+if (! firstIteration) {
+// encoding of the guard i<x  --> skip
+if (! DLog.pop(7,14)) break ;
+

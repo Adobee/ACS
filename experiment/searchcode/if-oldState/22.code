@@ -1,0 +1,21 @@
+public class ConnectionStateProperty extends Observable
+{
+
+private ConnectionState oldState, newState;
+
+public ConnectionState getOldState() {
+void setConnectionState(ConnectionState cxnState) {
+
+oldState = newState;
+newState = cxnState;
+
+if(newState != oldState) {
+
+setChanged();
+
+}
+
+notifyObservers();
+}
+}
+

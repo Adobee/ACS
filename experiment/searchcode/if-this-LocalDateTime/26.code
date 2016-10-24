@@ -1,0 +1,17 @@
+public void setCreatedAt(final LocalDateTime createdAt)
+{
+this.createdAt = createdAt;
+}
+
+@PreUpdate
+@PrePersist
+public void updateCreatedAt()
+{
+final LocalDateTime now = LocalDateTime.now();
+if (getCreatedAt() == null)
+{
+setCreatedAt(now);
+}
+}
+}
+

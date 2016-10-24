@@ -1,0 +1,13 @@
+package com.vizaco.onlinecontrol.service.impl;
+
+import com.vizaco.onlinecontrol.dao.ClazzDao;
+public void deleteClazz(Integer id) throws DataAccessException {
+Clazz clazz = clazzDao.findById(id);
+if (clazz == null){
+return;
+}
+clazzDao.delete(clazz);
+}
+
+}
+

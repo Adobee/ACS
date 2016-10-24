@@ -1,0 +1,11 @@
+InstanceVec3 vec3 = new InstanceVec3();
+
+long[] took = new long[runs];
+for ( int run = 0; run < runs; run++ ) {
+long t0 = System.nanoTime();
+vec2.z += vec2.y + vec1.x;
+vec3.z += vec2.z + vec1.y;
+}
+long t1 = System.nanoTime();
+took[run] = t1 - t0;
+

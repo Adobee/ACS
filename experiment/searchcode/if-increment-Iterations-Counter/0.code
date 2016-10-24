@@ -1,0 +1,11 @@
+private final long numIterations;
+private final AtomicLong counter;
+private final Random rnd;
+
+public MonteCarloSharedTask(long numIterations, AtomicLong counter) {
+Point p = new Point(Utils.nextDouble(rnd), Utils.nextDouble(rnd));
+if (Utils.isInSector(p)) counter.incrementAndGet();
+}
+}
+}
+

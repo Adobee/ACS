@@ -1,0 +1,7 @@
+double right = n;
+double left = 0;
+while (right - left > 1) {
+double mid = (left + right) / 2;
+if (mid * mid == n) return (int)mid;
+if (mid * mid > n) right = mid;
+

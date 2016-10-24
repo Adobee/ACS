@@ -1,0 +1,8 @@
+public static boolean isKLineBigRed(StockPriceVO vo) {
+if ((vo.close > vo.lastClose) &amp;&amp; (vo.high >= vo.close) &amp;&amp; (vo.close > vo.open) &amp;&amp; (vo.open >= vo.low)) {
+return false;
+}
+
+public static boolean isKLineRed(StockPriceVO vo) {
+if ((vo.close >= vo.lastClose) &amp;&amp; (vo.high >= vo.close) &amp;&amp; (vo.close >= vo.open) &amp;&amp; (vo.open >= vo.low)) {
+

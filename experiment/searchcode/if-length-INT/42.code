@@ -1,0 +1,17 @@
+public int[] Merge(int[] A, int[] B) {
+
+if (A == null) {
+return B;
+}
+
+if (B == null) {
+return A;
+}
+
+int lengthA = A.length;
+int indexC = lengthA-1;
+while (indexB < lengthB) {
+
+for (int i = indexC; i >= 0; i--) {
+if (C[i] > B[indexB]) {
+

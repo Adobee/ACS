@@ -1,0 +1,10 @@
+public abstract class AbsOnePointOrderXS extends AbsPointOrderXS {
+protected boolean isForward;
+protected int xPoint;
+
+public AbsOnePointOrderXS() {}
+protected abstract boolean initSelectedIDs(int nodeNumber);
+
+private void baseSelection(boolean[] selFlags, int xPoint, boolean isForward) {
+if (isForward) {
+

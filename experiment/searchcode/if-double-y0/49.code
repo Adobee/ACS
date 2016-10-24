@@ -1,0 +1,9 @@
+double x2 = input.nextDouble();
+double y2 = input.nextDouble();
+
+if (onTheLineSegment(x0, y0, x1, y1, x2, y2) == true)
+public static boolean rightOfTheLine(double x0, double y0,
+double x1, double y1, double x2, double y2)
+{
+if ((x1 - x0)*(y2 - y0) - (y1 - y0)*(x2 - x0) < 0)
+

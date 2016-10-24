@@ -1,0 +1,6 @@
+for (final Product product : PRODUCT_SET) {
+if (basket.containsProduct(product)) {
+final long countForProduct = basket.countForProduct(product);
+if (canStrategyApply(countForProduct)) {
+final long applyNtimes = countForProduct / 2;
+

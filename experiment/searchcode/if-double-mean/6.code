@@ -1,0 +1,11 @@
+* @author wb
+*/
+public class Description {
+
+public static double mean(double[] a){
+
+double mean=0;
+for(int i=0;i<a.length;i++)
+mean+=a[i];
+mean/=a.length;
+

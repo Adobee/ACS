@@ -1,0 +1,10 @@
+if(FluidRegistry.isFluidRegistered(TinkerFluids.aluminum) &amp;&amp; FluidRegistry.isFluidRegistered(TinkerFluids.copper)) {
+if(alubrassIntegration == null) {
+alubrassIntegration = integrate(TinkerFluids.alubrass, &quot;Alubrass&quot;).toolforge();
+isNew = false;
+}
+}
+// only integrate if not present already
+if(isNew) {
+MaterialIntegration materialIntegration = new MaterialIntegration(null, fluid, ore);
+

@@ -1,0 +1,15 @@
+public class AllDocSet extends DocIdSet {
+
+/**
+* The highest numbered document.
+*/
+private final int maxDoc;
+* @param maxDoc the largest document number
+*/
+public AllDocSet(final int maxDoc) {
+this.maxDoc = maxDoc;
+}
+
+@Override
+public boolean isCacheable() {
+

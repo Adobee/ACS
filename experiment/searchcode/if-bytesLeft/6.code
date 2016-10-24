@@ -1,0 +1,11 @@
+long startTime = System.currentTimeMillis();
+long loopCount = 0;
+long bytesReceived;
+while (bytesLeft > 0) {
+if (loopCount++ >= 1000000) {
+return;
+}
+}
+if (bytesLeft < 0 || bytesLeft > size) {
+throw new RuntimeException(&quot;Something went wrong. bytesLeft: &quot; + bytesLeft + &quot; expectedSize: &quot; + size);
+

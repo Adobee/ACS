@@ -1,0 +1,10 @@
+public void onPlayerJoin(PlayerJoinEvent event)
+{
+if(firstJoin)
+{
+MyTelePads.getPlugin().loadTelepads();
+@EventHandler
+public void onPlayerMove(PlayerMoveEvent event)
+{
+if (MyTelePads.getPlugin().mTeleport.size() > 0 &amp;&amp; MyTelePads.getPlugin().mTeleport.containsKey(event.getPlayer()))
+

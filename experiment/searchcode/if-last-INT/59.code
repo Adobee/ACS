@@ -1,0 +1,12 @@
+private static int getLongestIncreasingSequence(int[] A) {
+
+int[] table = new int[A.length];
+
+int last = 0;
+int lastButOne = last;
+table[0] = A[0];
+
+for (int i = 1; i < A.length; ++i) {
+
+if(A[i] > table[last]) {
+

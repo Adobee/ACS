@@ -1,0 +1,12 @@
+* The maximum start duration in milliseconds.
+*
+* @serial
+*/
+private final long maxStart;
+public DelegationRelativeTime(long minStart,
+long maxStart,
+long minStop,
+long maxStop)
+{
+if (minStart > maxStart || maxStart > minStop || minStop > maxStop ||
+

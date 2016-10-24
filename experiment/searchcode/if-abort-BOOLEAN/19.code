@@ -1,0 +1,7 @@
+private static final String TAG = &quot;SecondClassBroadcastReceiver&quot;;
+private static boolean readyToAbort = false;
+Toast.makeText(context, &quot;SecondClass Received&quot;, 50).show();
+if (readyToAbort) {
+this.abortBroadcast();
+readyToAbort = false;
+

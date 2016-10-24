@@ -1,0 +1,6 @@
+// wait for the configured number of active shards to be allocated before executing the result consumer
+if (activeShardCount == ActiveShardCount.NONE) {
+// not waiting, so just run whatever we were to run when the waiting is
+final ClusterStateObserver observer = new ClusterStateObserver(clusterService, logger, threadPool.getThreadContext());
+if (activeShardCount.enoughShardsActive(observer.observedState(), indexName)) {
+

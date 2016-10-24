@@ -1,0 +1,12 @@
+public OpenMapRealVector add(OpenMapRealVector v) {
+checkVectorDimensions(v.getDimension());
+boolean copyThis = entries.size() > v.entries.size();
+res.setEntry(iter.key(), iter.value() / v.getEntry(iter.key()));
+}
+return res;
+}
+
+/** {@inheritDoc} */
+@Override
+public OpenMapRealVector ebeMultiply(RealVector v) {
+

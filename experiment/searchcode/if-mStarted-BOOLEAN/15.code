@@ -1,0 +1,13 @@
+private final Handler mHandler;
+private final Runnable mNextTime;
+
+private boolean mStarted;
+
+public SystemClockManager(SystemClockListener listener) {
+mHandler.postDelayed(mNextTime, ONE_SEC_IN_MS);
+}
+
+public void start() {
+if (!mStarted) {
+mNextTime.run();
+

@@ -1,0 +1,11 @@
+private static Log sLog = LogFactory.getLog(QueryLogFilter.class);
+private Saver iSaver;
+private HashSet<String> iExclude = new HashSet<String>();
+ex += &quot; (at &quot; + t.getStackTrace()[0].getFileName() + &quot;:&quot; + t.getStackTrace()[0].getLineNumber() + &quot;)&quot;;
+t = t.getCause();
+}
+if (!ex.isEmpty())
+q.setException(ex);
+}
+if (!iExclude.contains(q.getUri()) || q.getException() != null) {
+

@@ -1,0 +1,8 @@
+protected Scorer optScorer;
+
+public int getTokenMask()
+{
+if (reqScorer.docID()==-1) return 0;
+
+if (optScorer==null || optScorer.docID()!=reqScorer.docID()) return ((ICountable)reqScorer).getTokenMask();
+

@@ -1,0 +1,12 @@
+super(s);
+}
+
+private boolean checkExpected(SortedList sl, int[] ids) {
+if (Arrays.equals(sl.toNativeArray(), ids)) {
+checkExpected(sl, new int[] {10});
+
+sl.add(9, 9.0F);
+checkExpected(sl, new int[] {10});
+
+sl.init(3);
+

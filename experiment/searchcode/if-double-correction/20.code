@@ -1,0 +1,8 @@
+import java.util.Map;
+
+public class DistanceEstimator {
+
+private static Map<Double, Double> sConfigurationCorrection;
+* @param calibrationValue The calibrated RSSI at a distance of 1 meter
+* @param configCorrection Indicate if a correction of the RSSI is needed due to a specific transmission power
+

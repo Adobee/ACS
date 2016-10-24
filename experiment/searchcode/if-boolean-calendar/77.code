@@ -1,0 +1,14 @@
+private static final TimeZone WARSAW_TIMEZONE = TimeZone.getTimeZone(&quot;Europe/Warsaw&quot;);
+
+private GpwUtils() {
+}
+
+public static boolean gpwActive() {
+Calendar c = Calendar.getInstance();
+return !isWeekend(c) &amp;&amp; workingHours(c);
+}
+
+public static boolean isOvertime(Calendar calendar) {
+if (calendar == null) {
+return false;
+

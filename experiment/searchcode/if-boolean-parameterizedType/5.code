@@ -1,0 +1,6 @@
+public static Class<?> genericOneType(Type returnType) {
+if (returnType instanceof ParameterizedType) {
+ParameterizedType ptype = (ParameterizedType) returnType;
+Type[] typeArguments = ptype.getActualTypeArguments();
+if (typeArguments != null &amp;&amp; typeArguments.length == 1)
+

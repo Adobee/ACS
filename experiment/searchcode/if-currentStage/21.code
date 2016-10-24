@@ -1,0 +1,11 @@
+if (!level.isStarted) return;
+
+Stage currentStage = level.getCurrentStage();
+
+if (currentStage.isPracticeMode) {
+ActionInput next;
+ActionInput nextNext;
+
+while ((next = level.getNextInput()) != null) {
+if (currentStage.beats >= next.beat) {
+

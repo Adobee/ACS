@@ -1,0 +1,8 @@
+File serFile = new File(dataFile + &quot;.ser&quot;);
+if (serFile.exists()) {
+categoryDataset = IOUtil.importObjectFromFile(serFile, CategoryDataset.class);
+}
+
+if (categoryDataset == null) {
+FileReader fileReader = null;
+

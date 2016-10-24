@@ -1,0 +1,11 @@
+package cal.cumulativeBinomialProbability.score;
+
+import org.apache.commons.math.distribution.BinomialDistribution;
+BinomialDistribution b = new BinomialDistributionImpl(N, p);
+int tmp = n - 1;
+double probability = 1 - b.cumulativeProbability(tmp);
+return probability;
+}
+
+}
+

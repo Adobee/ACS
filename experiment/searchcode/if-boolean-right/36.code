@@ -1,0 +1,12 @@
+public Implication(Expression left, Expression right) {
+super(left, right);
+}
+
+@Override
+protected boolean apply(boolean leftVal, boolean rightVal) {
+return !(leftVal &amp;&amp; !rightVal);
+}
+
+@Override
+public boolean equals(Object o) {
+

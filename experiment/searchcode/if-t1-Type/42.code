@@ -1,0 +1,8 @@
+Preconditions.checkNotNull(t1, &quot;Type t1 is null. t1: %s t2: %s&quot;, t1, t2);
+Preconditions.checkNotNull(t2, &quot;Type t2 is null. t1: %s t2: %s&quot;, t1, t2);
+
+if (t1.equals(TypeDeclaration.TOP)) {
+Type unrepeated = t1.acceptsRepeatedArguments() ? t2 : t1;
+
+// TODO: this doesn&#39;t work if the return type of the type with
+

@@ -1,0 +1,11 @@
+public static final String INJECT = &quot;inject&quot;;
+public static final String MAX_CODE_LENGTH = &quot;maxCodeLength&quot;;
+
+public static final int DEFAULT_MAX_CODE_LENGTH = 4;
+super.init(args);
+
+inject = getBoolean(INJECT, true);
+
+if (args.get(MAX_CODE_LENGTH) != null) {
+maxCodeLength = Integer.parseInt(args.get(MAX_CODE_LENGTH));
+

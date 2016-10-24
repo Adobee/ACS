@@ -1,0 +1,13 @@
+private static int maximumNetworkFailures = 2;
+
+private static int urlTimeout = 4000;
+
+private static int networkFailures = 0;
+private static void updateNetworkFailures(){
+if(networkFailures > maximumNetworkFailures){
+setEnabled(false);
+}
+}
+
+public static int getNetworkFailures() {
+

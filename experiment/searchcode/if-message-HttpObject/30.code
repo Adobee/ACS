@@ -1,0 +1,6 @@
+do // Keep alive loop
+{
+Debug.print(&quot;Waiting for queue&quot;, debugCode);
+HTTPObject recMessage = hrt.recMessages.take(); // Remove one message to process
+if(recMessage.header == null) // End pipe signal from hrt
+

@@ -1,0 +1,11 @@
+public class ForwardingTimeout extends Timeout {
+private Timeout delegate;
+
+public ForwardingTimeout(Timeout timeout) {
+if (timeout == null) {
+return this.delegate.deadlineNanoTime();
+}
+
+public Timeout deadlineNanoTime(long j) {
+return this.delegate.deadlineNanoTime(j);
+

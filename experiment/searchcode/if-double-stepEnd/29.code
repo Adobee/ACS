@@ -1,0 +1,6 @@
+// predict a first estimate of the state at step end
+final double stepEnd = stepStart + stepSize;
+interpolator.reinitialize(stepEnd, stepSize, scaled, nordsieck);
+
+if (!isLastStep) {
+

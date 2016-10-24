@@ -1,0 +1,9 @@
+* @since 2016. 7. 16.
+*/
+public abstract class Loop implements Action, Runnable {
+protected boolean cancel = false;
+
+public void cancel(boolean cancel){ this.cancel = cancel; }
+
+@Override public int initialize(){ return Constant.Success; }
+

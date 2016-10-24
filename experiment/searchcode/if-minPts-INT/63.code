@@ -1,0 +1,8 @@
+private static final int	DBSCAN_DEFAULT_MINPTS	= 3;
+
+@JsonView({JSONViews.HTTP.class, JSONViews.DISK.class})
+private Set<T>				points					= new HashSet<>();
+public List<Cluster<T>> findClusters(double eps, int minPts) {
+DBSCANClusterer<T> clusterer = new DBSCANClusterer<>(eps, minPts);
+return clusterer.cluster(this.points);
+

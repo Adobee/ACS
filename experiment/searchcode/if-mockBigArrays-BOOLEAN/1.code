@@ -1,0 +1,7 @@
+private final boolean mockBigArrays;
+private Collection<Class<? extends Plugin>> plugins;
+
+public MockNode(Settings settings, Collection<Class<? extends Plugin>> classpathPlugins) {
+this.plugins = classpathPlugins;
+this.mockBigArrays = classpathPlugins.contains(NodeMocksPlugin.class); // if this plugin is present we mock bigarrays :)
+

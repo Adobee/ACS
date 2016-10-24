@@ -1,0 +1,7 @@
+public Admin authAdmin(String username, String password) {
+Admin admin = adminRepository.findByUsername(username);
+if(admin != null &amp;&amp; admin.getPassword().equals(password)) {
+public User authUser(String username, String password) {
+User user = userRepository.findByWid(username);
+if(user !=null &amp;&amp; User.TEMP_PWD.equals(password)) {
+

@@ -1,0 +1,7 @@
+class ArrayQueueADT {
+// let &quot;forAll i : l <= i < r&quot;
+// if l < r -> forAll i : l <= i < r
+private static void ensureCapacity(ArrayQueueADT queue) {
+if ((queue.r + 1) % queue.elements.length == queue.l) {
+Object[] e = new Object[queue.elements.length << 1];
+

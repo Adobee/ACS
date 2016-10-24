@@ -1,0 +1,7 @@
+Timing timer = new Timing();
+double[][][] featureVal3DArr = null;
+if (featureVal != null)
+Map<Integer, double[]> EForADoc = sparseE(activeFeatures);
+List<Map<Integer, double[]>> EForADocPos = null;
+if (dropoutApprox) {
+

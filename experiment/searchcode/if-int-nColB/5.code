@@ -1,0 +1,8 @@
+public RealMatrix getP() {
+if ((cachedP == null) &amp;&amp; !singular) {
+final int m = pivot.length;
+} catch (ClassCastException cce) {
+
+final int m = pivot.length;
+if (b.getDimension() != m) {
+

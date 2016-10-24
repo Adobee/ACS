@@ -1,0 +1,10 @@
+return Double.parseDouble(numero);
+}
+
+public double calcula(String s, int i, VarU v){//Recebe a String, o próximo char depois do &#39;=&#39; e o conjunto de variaveis.
+public static double soma(String c, VarU a){
+
+String file[] =  c.split(&quot;\\+|\\-|\\/|\\*&quot;);
+
+double ve[] = new double[file.length];
+

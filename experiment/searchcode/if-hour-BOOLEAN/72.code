@@ -1,0 +1,11 @@
+return interval1.getStartHour() < interval2.getStartHour()
+&amp;&amp; interval2.getStartHour() < interval1.getEndHour();
+}
+
+@Override
+public boolean equals(Object obj) {
+Interval other = (Interval) obj;
+if (endHour != other.endHour)
+return false;
+if (startHour != other.startHour)
+

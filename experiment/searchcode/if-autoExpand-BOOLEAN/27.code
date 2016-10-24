@@ -1,0 +1,12 @@
+public abstract class BaseByteBuffer extends ByteBuffer {
+private boolean autoExpand;
+
+/**
+* We don&#39;t have any access to Buffer.markValue(), so we need to track it down,
+public boolean isAutoExpand() {
+return autoExpand;
+}
+
+public ByteBuffer setAutoExpand(boolean autoExpand) {
+this.autoExpand = autoExpand;
+

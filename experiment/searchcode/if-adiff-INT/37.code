@@ -1,0 +1,8 @@
+public void d(File f1, File f2, String outputDir,List<Diff> diffs){
+
+Diff diff = new Diff();
+
+String nameAdiffB = FilenameUtils.removeExtension(f1.getName())
+String outputAdiffB = outputDir.endsWith(File.separator) ? outputDir
++ nameAdiffB : outputDir + File.separator + nameAdiffB;
+

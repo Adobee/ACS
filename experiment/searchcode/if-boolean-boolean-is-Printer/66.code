@@ -1,0 +1,11 @@
+public Logger() {
+}
+
+public static void setDebug(boolean isDebug) {
+debug = isDebug;
+}
+
+public static LoggerPrinter getDefaultLogger() {
+if(loggerPrinter == null) {
+loggerPrinter = LoggerFactory.getFactory(&quot;Logger&quot;, debug);
+

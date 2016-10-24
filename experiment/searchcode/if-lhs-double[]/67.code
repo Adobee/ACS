@@ -1,0 +1,9 @@
+Point rhsCentre = Helper.getCentroid(rhs);
+
+if (lhsCentre.y < rhsCentre.y) {
+if (rhsCentre.y - lhsCentre.y > diffFrac * lhsCentre.y) {
+return -1;
+}
+} else if (lhsCentre.y > rhsCentre.y) {
+if (lhsCentre.y - rhsCentre.y > diffFrac * lhsCentre.y) {
+

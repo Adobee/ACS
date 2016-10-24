@@ -1,0 +1,13 @@
+public class Section {
+int starttime;
+int endtime;
+int type;
+String place,strtype,strWeeks;
+ArrayList<String> weeks;
+return type;
+}
+public void setType(int type) {
+this.type = type;
+}
+public void setWeeks(ArrayList<String> weeks){
+

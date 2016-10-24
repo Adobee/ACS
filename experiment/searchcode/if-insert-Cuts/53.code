@@ -1,0 +1,9 @@
+* @return an integer
+*/
+public int minCut(String s) {
+if (s == null || s.length() == 0) {
+return 0;
+}
+//cutNum.length = s.length()+1, as |a|a|b|, can insert four cuts.
+int[] cutNum = new int[s.length()+1];
+

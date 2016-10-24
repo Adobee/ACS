@@ -1,0 +1,7 @@
+if (d < (float) Math.sqrt((getX() - goalX) * (getX() - goalX) + (getY() - goalY) * (getY() - goalY))) {
+if (getX() != goalX) {
+float a = (getY() - goalY) / (getX() - goalX);
+float b = getY() - a * getX();
+if (getX() < goalX) {
+setX(getX() + d / ((float) Math.sqrt(1 + a * a)));
+

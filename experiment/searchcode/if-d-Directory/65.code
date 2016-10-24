@@ -1,0 +1,8 @@
+public CompiledJavaccFilesDirectory getCompiledJavaccFilesDirectory(File outputDirectory, FileTree customAstClassesDirectory, File targetDirectory, Logger logger) {
+if ((outputDirectory == null) || !outputDirectory.exists() || !outputDirectory.isDirectory()) {
+throw new IllegalArgumentException(&quot;outputDirectory [&quot; + outputDirectory + &quot;] must be an existing directory&quot;);
+}
+
+if (customAstClassesDirectory == null) {
+throw new IllegalArgumentException(&quot;customAstClassesDirectory [&quot; + outputDirectory + &quot;] must not be null&quot;);
+

@@ -1,0 +1,12 @@
+this.prefix = prefix;
+}
+
+public String convertToClassName(File file)
+{
+String classname = file.getAbsolutePath().replace(prefix, &quot;&quot;);
+classname = classname.replace(File.separator, &quot;.&quot;);
+if(classname.startsWith(&quot;.&quot;)) classname = classname.replaceFirst(&quot;.&quot;, &quot;&quot;);
+return classname;
+}
+}
+

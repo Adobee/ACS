@@ -1,0 +1,9 @@
+import java.util.Collections;
+
+import com.github.project.videoeditor.container.Marker;
+import com.github.project.videoeditor.iosystem.MarkerListWriter;
+public static synchronized MarkerHandler getInstance() {
+if (singleton == null)
+singleton = new MarkerHandler();
+return singleton;
+

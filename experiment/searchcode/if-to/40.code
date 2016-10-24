@@ -1,0 +1,6 @@
+public boolean isMoveLegal( byte toX, byte toY, Chessboard board ) {
+if( board.isWhiteTurn() != white )
+return false;
+else if( board.pieceAt( toX, toY ) != null &amp;&amp; ! (
+board.isWhiteTurn() ^ board.pieceAt( toX, toY ).isWhite() ) )
+

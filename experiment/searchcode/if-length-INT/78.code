@@ -1,0 +1,22 @@
+public class SRM641 {
+
+public int meet(int T, int[] Q, int[] P) {
+
+int n = Q.length;
+int[] a = new int[n];
+if (Y >= T) {
+Y %= T;
+b[i]++;
+}
+}
+
+for (int i = 0; i < n; i++) {
+if (a[i] > 0 &amp;&amp; b[i] > 0)
+c++;
+}
+
+return c;
+}
+
+}
+

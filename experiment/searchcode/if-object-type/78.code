@@ -1,0 +1,15 @@
+TypeMap() {
+}
+
+/**
+* Finds the object corresponding to the given type.
+*/
+synchronized Object
+get(short type) {
+if (type == Type.ANY)
+if (data != null)
+return data.get(Type.toShort(type));
+else if (object != null &amp;&amp; otype == type)
+return object;
+else
+

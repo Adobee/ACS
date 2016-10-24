@@ -1,0 +1,10 @@
+int t = Integer.parseInt(reader.readLine());
+int n,m;
+long firstx,firsty,tempx,tempy,prevx,prevy;
+double sumx,sumy;
+firsty = Long.parseLong(tokenizer.nextToken());
+sumx = 0;
+sumy = 0;
+prevx = firstx;
+prevy = firsty;
+

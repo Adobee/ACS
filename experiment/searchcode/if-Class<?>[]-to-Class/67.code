@@ -1,0 +1,6 @@
+Map<Class<?>, Converter<?, ?>> submap = map.get(key);
+if (submap == null) {
+submap = new HashMap<Class<?>, Converter<?, ?>>();
+public <FROM, TO> void register(Converter<FROM, TO> converter) {
+submap(converter.fromClass()).put(converter.toClass(), converter);
+

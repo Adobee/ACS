@@ -1,0 +1,9 @@
+public void initializeBasics(ESQLObject newElement, EList<? extends ESQLObject> existingChildren, String baseName) {
+
+//Si ya está inicializado no hacemos nada
+if(newElement.getId()!=null &amp;&amp; !newElement.getId().equals(&quot;&quot;))
+//Si no tiene nombre, lo inicializamos
+if(newElement.getName()==null || newElement.getName().equals(&quot;&quot;))
+{
+String newDefaultName = getNewDefaultName(existingChildren, baseName);
+

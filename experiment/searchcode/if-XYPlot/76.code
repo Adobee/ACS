@@ -1,0 +1,6 @@
+// Disable Hardware Acceleration on the xyPlot view object.
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+myXYPlot_LEFT.addSeries(series1, series1Format);
+if (series2_onRight) {
+myXYPlot_RIGHT.addSeries(series2, series2Format);
+

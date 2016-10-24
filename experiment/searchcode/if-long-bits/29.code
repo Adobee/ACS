@@ -1,0 +1,7 @@
+System.out.println(longToHex(Double.doubleToRawLongBits(d)));
+} else if (s.startsWith(&quot;pow &quot;)) {
+String[] a = s.split(&quot; &quot;);
+long x = hexToLong(a[1]);
+System.out.println(longToHex(Double.doubleToRawLongBits(d2.x)) + &quot; &quot; + longToHex(Double.doubleToRawLongBits(d2.y)));
+} else if (s.startsWith(&quot;sin &quot;)) {
+

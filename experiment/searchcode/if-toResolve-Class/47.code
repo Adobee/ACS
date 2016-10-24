@@ -1,0 +1,7 @@
+static Type getGenericSupertype(Type context, Class<?> rawType, Class<?> toResolve) {
+if (toResolve == rawType) {
+return context;
+}
+if (toResolve.isInterface()) {
+Class<?>[] interfaces = rawType.getInterfaces();
+

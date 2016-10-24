@@ -1,0 +1,11 @@
+Random gen = new Random();
+int sampleSize = 10000;
+int switchWins = 0;
+int stickWins = 0;
+int[] prize = new int[sampleSize];
+//door or switching
+for (int i=0; i<sampleSize; i++){
+if (player[i] == prize[i])
+stickWins++;
+else
+

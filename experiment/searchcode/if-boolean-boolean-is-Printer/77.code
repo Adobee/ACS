@@ -1,0 +1,9 @@
+private static final String DEFAULT_TAG = &quot;X_LOGGER&quot;;
+
+private static Printer printer;
+private static boolean DEBUG;
+public static Settings init(String tag, boolean debug) {
+if (debug) {
+printer = new LoggerPrinter();
+} else {
+

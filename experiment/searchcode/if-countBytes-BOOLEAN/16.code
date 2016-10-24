@@ -1,0 +1,7 @@
+public BitField(Enum<?>[] bits, byte[] bytes, int offset) {
+this.bytes = Arrays.copyOfRange(bytes, offset, offset + countBytes(bits));
+* Returns true if the indicated bit is 1, false if it&#39;s 0.
+*/
+public boolean get(Enum<?> bit) {
+int bitIndex = bit.ordinal();
+

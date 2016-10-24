@@ -1,0 +1,12 @@
+// is that, we are returning all the possible 1-edit-distant words with a
+// probability.
+private EditDistanceModel edit_dist_model_;
+private final int gramSize = 2;
+
+Map<List<String>, Integer> wordDic;
+double probability = 1.0;
+
+int Length = sentence.size();
+if (gramSize <= 1) {
+Length -= 1;
+

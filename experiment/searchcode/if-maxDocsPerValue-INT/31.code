@@ -1,0 +1,7 @@
+Integer maxDocsPerValue = (Integer) otherOptions.get(SamplerAggregator.MAX_DOCS_PER_VALUE_FIELD);
+if (maxDocsPerValue != null) {
+factory.maxDocsPerValue(maxDocsPerValue);
+} else if (parseFieldMatcher.match(currentFieldName, SamplerAggregator.MAX_DOCS_PER_VALUE_FIELD)) {
+int maxDocsPerValue = parser.intValue();
+otherOptions.put(SamplerAggregator.MAX_DOCS_PER_VALUE_FIELD, maxDocsPerValue);
+

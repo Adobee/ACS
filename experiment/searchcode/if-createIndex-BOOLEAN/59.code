@@ -1,0 +1,12 @@
+super.execute();
+createIndex();
+}
+
+public void createIndex(){
+AstNode node = (AstNode)((Field_spec)getRel_dot_field());
+Relation relation = Relation.getRelation(rel_name);
+
+// check if relation exists
+if(null == relation){
+System.err.println(&quot;Relation not present.&quot;);
+

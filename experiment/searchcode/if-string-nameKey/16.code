@@ -1,0 +1,13 @@
+protected Colour colour;
+protected Integer score;
+protected String nameKey;
+
+
+public World(Integer id, Colour colour) {
+public void setNameKey(String nameKey) {
+this.nameKey = nameKey;
+}
+
+@Override
+public boolean equals(Object o) {
+

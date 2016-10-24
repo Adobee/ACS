@@ -1,0 +1,9 @@
+expectedObjectIds.add(docNodeRef.toString());
+int numMatchingDocs = 0;
+
+// NodeRef input
+String objectId = stripCMISSuffix((String)node.getProperties().get(PropertyIds.OBJECT_ID));
+if(expectedObjectIds.contains(objectId))
+{
+numMatchingDocs++;
+

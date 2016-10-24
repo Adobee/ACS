@@ -1,0 +1,15 @@
+name = _name;
+}
+
+@Override
+public boolean unify(Object o, UnifyBindings bindings, boolean forceUnify) {
+
+if (bindings.hasBinding(name)) {
+return false;
+}
+
+boolean r = o.equals(existingBinding);
+
+if (!r &amp;&amp; forceUnify)
+if (forceUnify)
+

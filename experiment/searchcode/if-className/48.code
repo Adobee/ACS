@@ -1,0 +1,8 @@
+public static ContextType fromClassname(String classname) {
+
+ContextType match = null;
+
+if (classname != null) {
+for (ContextType supportedEvents : ContextType.values()) {
+if (classname.equalsIgnoreCase(supportedEvents.classname)) {
+

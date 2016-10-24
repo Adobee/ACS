@@ -1,0 +1,5 @@
+} else {
+int maxStale = 60 * 60 * 24 * 28; // tolerate 4-weeks stale
+return response.newBuilder()
+.header(&quot;Cache-Control&quot;, &quot;public, only-if-cached, max-stale=&quot; + maxStale)
+

@@ -1,0 +1,10 @@
+public String toHTML(){
+StringBuffer sb = new StringBuffer();
+if (nodes.get(0).source != null) {
+String ss[] = nodes.get(0).source.split(&quot;\\s&quot;);
+sb.append(&quot;<br><h3>&quot; + ss[0].substring(3) + &quot;</h3>\n&quot;);
+}
+if (nodes.size() > 1)
+sb.append(&quot;<pre>Fail to complete this sentence</pre>&quot;);
+else{
+

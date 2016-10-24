@@ -1,0 +1,9 @@
+Class<?> rawObservableType = getRawType(observableType);
+if (rawObservableType == Response.class) {
+if (!(observableType instanceof ParameterizedType)) {
+return new ResponseCallAdapter(responseType, scheduler);
+}
+
+if (rawObservableType == Result.class) {
+if (!(observableType instanceof ParameterizedType)) {
+

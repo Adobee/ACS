@@ -1,0 +1,14 @@
+
+
+public class Array2D {
+int[] array;
+private int width;
+
+public Array2D(int width, int height) {
+array[y * getWidth() + x] = value;
+return true;
+}
+
+public int get(int x, int y) {
+if (y < 0 || x < 0 || y >= getHeight() || x >= getWidth())
+

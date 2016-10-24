@@ -1,0 +1,10 @@
+public static <K, V> K keyAtValue_(HashMap<K, V> receiver, V value) {
+for (Map.Entry<K, V> entry : receiver.entrySet()) {
+if (entry.getValue().equals(value))
+public static <K, V> V at_put_(Map<K, V> receiver, K key, V value) {
+receiver.put(key, value);
+return value;
+}
+
+public static <K, V> V at_ifAbsent_(Map<K, V> receiver, K key,
+

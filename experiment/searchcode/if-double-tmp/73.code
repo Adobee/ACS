@@ -1,0 +1,15 @@
+tmp = (short) ((tmp | (data[i*2 + 1] &amp; 0x00ff)));
+
+res[i] = tmp;
+}
+
+return res;
+} else if(type instanceof Character) {
+tmp = (int) (tmp | ((data[i*4 + 3] &amp; 0x000000ff)));
+
+res[i] = tmp;
+}
+
+return res;
+} else if(type instanceof Float) {
+

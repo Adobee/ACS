@@ -1,0 +1,8 @@
+public BooleanWrapper canModify(T a, Symbol oldSymbol,
+Symbol newSymbol) {
+
+SymbolConflict conflict = findConflict(newSymbol);
+
+if (conflict == null || conflict.symbol.equals(oldSymbol))
+return new BooleanWrapper(true);
+

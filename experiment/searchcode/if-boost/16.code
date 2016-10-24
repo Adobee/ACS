@@ -1,0 +1,11 @@
+while ((lastPvalue < pvalue) == (currentPvalue < pvalue)) {
+double nextBoost = currentBoost;
+
+if (currentPvalue < pvalue) {
+nextBoost *= 1.05;
+} else if (currentPvalue > pvalue) {
+nextBoost *= 0.95;
+}
+
+double nextPvalue = (QuerySetComparatorFactory.instance(comparison, nextBoost)).evaluate(baseline, treatment);
+

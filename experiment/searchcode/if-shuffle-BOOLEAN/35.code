@@ -1,0 +1,12 @@
+import org.rnd.jmagic.engine.generators.*;
+
+public final class ShuffleLibrary extends EventType
+{
+public static final EventType INSTANCE = new ShuffleLibrary();
+Event shuffleOne = createEvent(game, player + &quot; shuffles their library.&quot;, EventType.SHUFFLE_ONE_LIBRARY, shuffleParameters);
+if(shuffleOne.perform(event, false))
+result.addAll(shuffleOne.getResult());
+}
+
+// Objects were created... :(
+

@@ -1,0 +1,17 @@
+
+
+public class LongSequenceOf_1s {
+public static void main(String[] args) {
+int[] arr = {1, 1, 0, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1};
+maxIndex = prev_zero;
+}
+prev_prev_zero = prev_zero;
+prev_zero = curr;
+}
+}
+if(l-prev_prev_zero>maxCount)
+maxIndex=prev_zero;
+System.out.println(maxIndex);
+}
+}
+

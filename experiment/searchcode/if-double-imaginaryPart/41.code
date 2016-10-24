@@ -1,0 +1,10 @@
+private void init(double imaginaryPart) {
+
+mImPart = imaginaryPart;
+double val = Math.sqrt(imaginaryPart / TWO_PI);
+N = (int) val;
+* @throws IllegalArgumentException
+*/
+public double z(double imaginaryPart) throws IllegalArgumentException {
+if (imaginaryPart <= 0)
+

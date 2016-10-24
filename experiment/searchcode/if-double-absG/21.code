@@ -1,0 +1,8 @@
+/** Squared secondary diagonal of the tridiagonal matrix. */
+private double[] squaredSecondary;
+
+/** Transformer to tridiagonal (may be null if matrix is already tridiagonal). */
+final double g = work[sixI] + d[i] * work[sixI + 9] / work[sixI + 10];
+final double absG = Math_new.abs(g);
+if (absG < minG) {
+

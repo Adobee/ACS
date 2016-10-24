@@ -1,0 +1,11 @@
+private AtomicIterator currentChildIterator;
+boolean childrenDone=false;
+boolean allDone=false;
+
+public AtomicIterator(Object tn) {
+this.tn=tn;
+if (tn==null) {allDone=true;}
+}
+/* (non-Javadoc)
+* @see org.eclipse.emf.common.util.TreeIterator#prune()
+

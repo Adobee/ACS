@@ -1,0 +1,11 @@
+private boolean appendStatics = false;
+
+/**
+* Whether or not to append transient fields.
+*/
+private boolean appendTransients = false;
+* @return Whether or not to append the given <code>Field</code>.
+*/
+protected boolean accept(final Field field) {
+if (field.getName().indexOf(ClassUtils.INNER_CLASS_SEPARATOR_CHAR) != -1) {
+

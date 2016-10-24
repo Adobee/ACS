@@ -1,0 +1,5 @@
+public static void helper (int L, int R, String item, ArrayList<String> res){
+if(R<L) return;   //先看 return 条件
+if(L==0 &amp;&amp; R==0) res.add(item);   //再 add to res 条件
+if(L > 0) helper(L-1, R, item+&quot;(&quot;, res);
+

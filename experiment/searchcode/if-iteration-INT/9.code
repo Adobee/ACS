@@ -1,0 +1,10 @@
+private void solve(int[] currentIteration, int[]coins, int target) {
+
+if(sum(currentIteration)==target) {
+System.out.println(Arrays.toString(currentIteration));;
+} else if(sum(currentIteration)>target) {
+return;
+}
+
+int[] nextIteration = Arrays.copyOf(currentIteration, currentIteration.length+1);
+

@@ -1,0 +1,7 @@
+private double updateProbabilities(Classification classifier) {
+double normalizationFactor = 0, q;
+for(int i = 0; i < instanceSet.size(); i++){
+bestClassifier.computeAlpha();
+double normalizationFactor = updateProbabilities(bestClassifier);
+boundOnNormalizationFactor *= normalizationFactor;
+

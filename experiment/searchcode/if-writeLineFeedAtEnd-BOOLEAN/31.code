@@ -1,0 +1,11 @@
+public class JsonXContentGenerator implements XContentGenerator {
+
+protected final JsonGenerator generator;
+
+private boolean writeLineFeedAtEnd;
+if (generator.isClosed()) {
+return;
+}
+if (writeLineFeedAtEnd) {
+flush();
+

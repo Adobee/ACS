@@ -1,0 +1,6 @@
+public long getLongValue(final Object criterionUser, final Object criterionTarget, final Object criterionContent, final Object criterionContext) {
+if (!this.isInteger()) {
+throw new UnsupportedOperationException(&quot;Can&#39;t take int value of a double&quot;);
+}
+final long value = this.m_left.getLongValue(criterionUser, criterionTarget, criterionContent, criterionContext) - this.m_right.getLongValue(criterionUser, criterionTarget, criterionContent, criterionContext);
+

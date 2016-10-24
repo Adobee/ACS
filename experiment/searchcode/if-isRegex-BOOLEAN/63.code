@@ -1,0 +1,13 @@
+public static boolean checkValidity(String input){
+boolean isRegex;
+try {
+Pattern.compile(input);
+isRegex = true;
+System.out.println(&quot;Not a valid regular expression, try again!&quot;);
+isRegex = false;
+}
+return isRegex;
+}
+
+public static boolean match(String input, String regex){
+

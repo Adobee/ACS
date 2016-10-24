@@ -1,0 +1,12 @@
+doubleValue = new AtomicLong((long) (d * PRECISION));
+}
+
+public Number[] add(long c, double d) {
+c = addLongValue(c);
+d = addDoubleValue(d);
+return new Number[] { c, d };
+}
+
+public long addLongValue(long value) {
+return longValue.addAndGet(value);
+

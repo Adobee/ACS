@@ -1,0 +1,6 @@
+public void fireNewState(State newState) {
+if (newState != this.state) {
+State oldState = this.state;
+this.state = newState;
+notifyListeners(new Event(oldState, newState));
+

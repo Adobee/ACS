@@ -1,0 +1,10 @@
+double vmin = icon.getMinV();
+double umax = icon.getMaxU();
+double vmax = icon.getMaxV();
+
+Tessellator tessellator = Tessellator.instance;
+tessellator.addVertexWithUV(0.0, 0.75, 0.25, umax, vmax);
+tessellator.addVertexWithUV(0.0, 0.75, 0.25, umax, vmin);
+
+if (Minecraft.isFancyGraphicsEnabled()) {
+

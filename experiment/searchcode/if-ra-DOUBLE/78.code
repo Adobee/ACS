@@ -1,0 +1,9 @@
+double sdy = sy + dy;
+
+double rA = sdy - sy;
+double rB = sx - sdx;
+double rC = rA * sx + rB * sy;
+boolean firstCheck = (rA * lx1 + rB * ly1 > rC) != (rA * lx2 + rB * ly2 > rC) || (rA * lx1 + rB * ly1 == rC) != (rA * lx2 + rB * ly2 == rC);
+if ( firstCheck ) {
+double t = (-A * sx - B * sy + C) / (A * dx + B * dy);
+

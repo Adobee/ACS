@@ -1,0 +1,7 @@
+private List<Column<?>> columns = new ArrayList<>();
+
+public boolean isPresent(ColumnKey<?> key) {
+return stream(getColumns()).anyMatch(keyMatcher(key));
+* @throws IllegalArgumentException if {@link #isPresent(ColumnKey)} returns <code>true</code>
+* for the key of the specified column.
+

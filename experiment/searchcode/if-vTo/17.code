@@ -1,0 +1,13 @@
+conn = VCDAOFactory.getConnection();
+pps = conn.prepareStatement(sql);
+
+pps.setLong(1, vto.getUserId());
+
+if (vto.getProfilePrivacyLevelEnum() != null) {
+pps.setInt(2, vto.getProfilePrivacyLevelEnum().getId());
+} else {
+pps.setInt(2, VCPrivacyLevelEnum.PUBLIC.getId());
+}
+
+if (vto.getRaceEnum() != null) {
+

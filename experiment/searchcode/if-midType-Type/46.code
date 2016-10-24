@@ -1,0 +1,7 @@
+for (IConfigurationElement config : configs) {
+String uri = config.getAttribute(MMINT.TYPE_ATTR_URI);
+ModelRel modelRelType = MIDTypeRegistry.getType(uri);
+if (modelRelType != null) {
+try {
+modelRelType.deleteType();
+

@@ -1,0 +1,9 @@
+public InputStreamIndexInput(IndexInput indexInput, long limit) {
+this.indexInput = indexInput;
+this.limit = limit;
+if ((indexInput.length() - indexInput.getFilePointer()) > limit) {
+} else if (off < 0 || len < 0 || len > b.length - off) {
+throw new IndexOutOfBoundsException();
+}
+if (indexInput.getFilePointer() >= indexInput.length()) {
+

@@ -1,0 +1,9 @@
+import java.util.function.DoubleFunction;
+
+public class NewtonsMethod {
+private DoubleFunction<Double> _f;
+private DoubleFunction<Double> _fp;
+private boolean _converged;
+
+public NewtonsMethod(DoubleFunction<Double> f, DoubleFunction<Double> fp, double x0, int maxIter, double tol) {
+

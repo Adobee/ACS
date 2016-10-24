@@ -1,0 +1,10 @@
+private int bufferPosition;
+private int bufferLimit;
+private boolean streamDataFinished;
+
+public EmbeddedInputStream(InputStream in) throws IOException {
+public int read(byte[] bytes, int offset, int length) throws IOException {
+int bytesRead = 0;
+while (0 < length) {
+if (isBufferEmpty() &amp;&amp; readBufferFromUnderlyingStream() <= 0) {
+

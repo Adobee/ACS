@@ -1,0 +1,9 @@
+public class MemoryCache extends DataCache {
+
+private HashMap<String, CachedObject<?>> cachedObjects;
+
+public MemoryCache(Context ctx) {
+for (String key : cachedObjects.keySet()) {
+if (isKeyOfType(key, type)) {
+result.add((CachedObject<T>) cachedObjects.get(key));
+

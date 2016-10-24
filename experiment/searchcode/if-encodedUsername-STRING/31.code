@@ -1,0 +1,7 @@
+long encodedUsername = secureBuffer.readLong();
+String username = Base37Utils.decodeBase37(encodedUsername);
+String password = ByteBufUtils.readString(secureBuffer);
+
+if (((encodedUsername >> 16) &amp; 31) != hash)
+throw new IOException(&quot;Username hash mismatch.&quot;);
+

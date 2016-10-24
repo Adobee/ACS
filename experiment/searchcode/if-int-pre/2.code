@@ -1,0 +1,13 @@
+public int numDecodings(String s) {
+if (s.length() == 0) {
+return 0;
+}
+
+int prePre = 0, pre = 0;
+if (s.charAt(0) != &#39;0&#39;) {
+prePre = pre = 1;
+}
+for (int i = 1; i < s.length(); i++) {
+int nextPre = 0;
+if (s.charAt(i) != &#39;0&#39;) {
+

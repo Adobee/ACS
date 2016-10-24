@@ -1,0 +1,8 @@
+Object obj = super.onSaveInstanceState();
+if(!isPersistent()) {
+SavedState savedstate = new SavedState(((Parcelable) (obj)));
+protected void onSetInitialValue(boolean flag, Object obj) {
+String s;
+if(flag)
+s = getPersistedString(mText);
+

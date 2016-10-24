@@ -1,0 +1,8 @@
+public static void renderFaceYNeg(RenderBlocks renderBlocks, final double x, final double y, final double z, Icon icon)
+{
+double uMin = icon.getInterpolatedU(renderBlocks.renderMinX * 16.0D);
+double uMax = icon.getInterpolatedU(renderBlocks.renderMaxX * 16.0D);
+public static void renderFaceYPos(RenderBlocks renderBlocks, double x, double y, double z, Icon icon)
+{
+double uMin = icon.getInterpolatedU(renderBlocks.renderMinX * 16.0D);
+

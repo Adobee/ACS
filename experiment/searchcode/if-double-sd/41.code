@@ -1,0 +1,11 @@
+public SaveDataRuntime(SaveDataItem sd)
+{
+if (sd.text==null || sd.text.isEmpty())
+CreateData(sd.duration,sd.hertz,sd.max);
+else
+ParseData(sd.text);
+conf=sd;
+}
+double []data;
+double []time;
+

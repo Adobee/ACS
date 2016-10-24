@@ -1,0 +1,10 @@
+String alphabet = &quot;abcdefghijklmnopqrstuvwxyz&quot;;
+
+char encode(char letter, int secret) {
+int pos = alphabet.indexOf(letter);
+int newpos = (pos + secret);
+int pos = alphabet.indexOf(letter);
+int newpos = (pos - secret);
+if (newpos < 0) {
+newpos = newpos + 26;
+

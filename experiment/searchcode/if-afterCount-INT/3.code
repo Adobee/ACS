@@ -1,0 +1,12 @@
+private final String name;
+private long beforeCount;
+private long afterCount;
+private long totalTime;
+private Long minTime;
+public synchronized void after(long time) {
+afterCount++;
+totalTime += time;
+if (minTime == null || time < minTime)
+minTime = time;
+if (maxTime == null || time > maxTime)
+

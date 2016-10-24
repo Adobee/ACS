@@ -1,0 +1,13 @@
+package Model;
+
+public class FoodPile {
+
+int foodAmount;
+
+public FoodPile(int amount)
+{
+this.foodAmount = amount;
+}
+
+public int getFoodAmount()
+

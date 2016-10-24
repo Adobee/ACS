@@ -1,0 +1,10 @@
+Composition N = new Composition(config, components);
+
+final double delta = config.getDouble(&quot;Delta&quot;, 1e-5);
+if (delta < 0 || delta > 1)
+System.out.println(&quot;---------------------------------------&quot;);
+
+double deltap = p * delta;
+double deltaT = T * delta;
+double[] deltaN = new double[components.numComponents()];
+

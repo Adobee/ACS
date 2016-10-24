@@ -1,0 +1,12 @@
+public class UriQueryBuilder extends SQLiteQueryBuilder {
+
+private List<String> pathSegments;
+
+private Uri uri;
+return new UriQueryBuilder(uri);
+}
+
+public String getTable() {
+if (isDirectory()) {
+return pathSegments.get(pathSegments.size() - 1);
+

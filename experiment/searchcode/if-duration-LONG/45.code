@@ -1,0 +1,11 @@
+public static HashMap<String, Duration> sMap = new HashMap<String, Duration>();
+public long start;
+public long end;
+
+private Duration() {
+};
+
+public static void reset(String tag) {
+if (sMap.containsKey(tag)) {
+Duration duration = sMap.get(tag);
+

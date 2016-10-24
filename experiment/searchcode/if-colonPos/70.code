@@ -1,0 +1,8 @@
+myHours = Integer.parseInt (s.substring (0, colonPos));
+myMinutes = Integer.parseInt (s.substring (colonPos+1));
+if (s.substring(colonPos + 1).length() != 2){
+throw new IllegalArgumentException(&quot;Zeros after colon&quot;);
+}else if( myHours<13 &amp;&amp; s.substring(0, colonPos).length() >2
+){
+throw new IllegalArgumentException(&quot;Zeros before colon&quot;);
+

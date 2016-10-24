@@ -1,0 +1,9 @@
+periodAssignmentFactor = (problemInstance.customerCount * problemInstance.periodCount * (problemInstance.periodCount-1))/2;
+
+max = (int)permutationFactor + (int)routePartitionFactor + (int)periodAssignmentFactor;
+double percentage = initialPercentage - (initialPercentage-finalPercentage)*generation/numberOfGeneration ;
+
+double count = max * percentage/100;
+
+int periodCount = (int)(count * periodAssignmentFactor);
+

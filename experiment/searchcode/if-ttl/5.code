@@ -1,0 +1,13 @@
+throw new IllegalArgumentException(&quot;null request&quot;);
+}
+this.request = request;
+
+hardTtl = unit.toSeconds(hardTtl);
+if (hardTtl <= 0) {
+throw new IllegalArgumentException(&quot;hardTtl &quot; + hardTtl + &quot; must be >= 1 second &quot;);
+this.hardTtl = hardTtl;
+
+softTtl = unit.toSeconds(softTtl);
+if (hardTtl < softTtl) {
+throw new IllegalArgumentException(&quot;hardTtl &quot; + hardTtl + &quot; must be >= softTtl &quot; + softTtl);
+

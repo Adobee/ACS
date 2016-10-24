@@ -1,0 +1,14 @@
+package extendsTest;
+
+public class TaobaoCategory extends Category {
+
+@Override
+public boolean specialEquals(Object object) {
+Category categoryCompare = (Category) object;
+
+
+if (this.categoryDesc == null &amp;&amp; categoryCompare.categoryDesc != null) {
+return false;
+}
+if (this.categoryDesc != null &amp;&amp; !this.categoryDesc.equals(categoryCompare.categoryDesc)) {
+

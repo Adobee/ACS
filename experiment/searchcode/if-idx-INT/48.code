@@ -1,0 +1,6 @@
+int sIdx = 0; int pIdx = 0;
+int starIdx = -1;
+int match = 0;
+while(sIdx<s.length()){
+if(pIdx<p.length() &amp;&amp; (p.charAt(pIdx)==&#39;?&#39; || p.charAt(pIdx)==s.charAt(sIdx))){
+

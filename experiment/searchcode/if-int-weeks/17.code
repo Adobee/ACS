@@ -1,0 +1,14 @@
+return weeks.get(key);
+}
+
+public void removeIndex(int key)
+{
+if(weeks.containsKey(key))
+weeks.remove(key);
+}
+
+public int getKey(int key)
+{
+if(weeks.containsKey(key))
+return key;
+

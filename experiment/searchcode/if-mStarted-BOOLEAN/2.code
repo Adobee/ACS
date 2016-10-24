@@ -1,0 +1,11 @@
+private long mLastTime;
+private boolean mStarted;
+
+public void start() {
+this.mStarted = true;
+this.mLastTime = 0;
+}
+
+public boolean step(long j) {
+if (this.mSpringSystem == null || !this.mStarted) {
+

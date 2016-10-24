@@ -1,0 +1,6 @@
+public Populacja(int populationSize, boolean initialise) {
+trasa = new Trasa[populationSize];
+if (initialise) {
+Trasa fittest = trasa[0];
+for (int i = 1; i < populationSize(); i++)if (fittest.getFitness() <= getTour(i).getFitness())fittest = getTour(i);
+

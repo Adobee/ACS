@@ -1,0 +1,13 @@
+return this.hammingDist() == 0;
+}
+
+@Override
+public boolean equals(Object obj) {
+
+if (!(obj instanceof Board)) return false;
+ArrayList<Board> neighbors = new ArrayList<>();
+
+if(emptyRowPos > 0) {
+
+int[][] copyArray = new int[4][4];
+

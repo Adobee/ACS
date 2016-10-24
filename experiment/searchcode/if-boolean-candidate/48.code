@@ -1,0 +1,10 @@
+for(int i = 1; i < n; i++){
+if(knows(candidate, i)){
+candidate = i;
+}
+}
+
+for(int i = 0; i < n; i++){
+if(candidate != i){
+if(!knows(i, candidate) || knows(candidate, i)){
+

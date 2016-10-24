@@ -1,0 +1,11 @@
+* Listener threaded.
+*
+* @return true, if successful
+*/
+public boolean listenerThreaded() {
+return false;
+public void internalAddListener(Object listener) {
+boolean executeImmediate = false;
+synchronized (this) {
+if (executedListeners) {
+

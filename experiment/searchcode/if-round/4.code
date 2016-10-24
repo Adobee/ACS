@@ -1,0 +1,16 @@
+public abstract void newRound(Round round);
+
+@Override
+public boolean equals(Object obj)
+{
+if (!(obj instanceof RoundState)) {
+return false;
+}
+if (this == obj)
+return true;
+
+return (this.getClass() == obj.getClass());
+}
+
+}
+

@@ -1,0 +1,12 @@
+private Interpolator interpolator = DEFAULT_INTERPOLATOR;
+
+public AnimationSettings duration(long duration) {
+if (duration <= 0L) {
+this.interpolator = interpolator;
+return this;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) {
+

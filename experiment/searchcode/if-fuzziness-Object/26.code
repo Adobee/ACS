@@ -1,0 +1,12 @@
+return new Fuzziness(edits);
+}
+
+public static Fuzziness build(Object fuzziness) {
+if (fuzziness instanceof Fuzziness) {
+return fuzziness.toString();
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj) {
+

@@ -1,0 +1,11 @@
+public class IntArray extends PrimitiveArray<Integer> implements Serializable {
+
+private static final long serialVersionUID = 1L;
+
+public IntArray(int len) {
+super(len);
+public static int convertToBytes(IntArray instance, byte[] out, int offset)
+{
+int numInt = 0;
+Conversion.intToByteArray(instance._len, out, offset);
+

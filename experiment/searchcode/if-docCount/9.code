@@ -1,0 +1,14 @@
+public class BufferedPostingsIterator implements IOIterator<PostingsData> {
+
+private final DataInputStream file;
+private final int docCount;
+// Everything has been read: close file.
+if (index + buffer.size() == docCount) {
+file.close();
+}
+}
+index++;
+return buffer.poll();
+}
+}
+

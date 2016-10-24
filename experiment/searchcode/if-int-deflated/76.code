@@ -1,0 +1,7 @@
+protected int seqNumExpected = -1; // only for fDAT
+
+public DeflatedChunkReader(int clen, String chunkid, boolean checkCrc, long offsetInPng,
+super(clen, chunkid, offsetInPng, ChunkReaderMode.PROCESS);
+this.deflatedChunksSet = iDatSet;
+if (chunkid.equals(PngChunkFDAT.ID)) {
+

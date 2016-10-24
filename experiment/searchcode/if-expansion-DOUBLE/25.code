@@ -1,0 +1,10 @@
+public NoiseReductionInfo(double thresholdDb, double expansionRatio) {
+if (thresholdDb <= 0) {
+throw new IllegalArgumentException(&quot;Theshold must be above noise level&quot;);
+this.relativeThreshold = decibelToValue(thresholdDb);
+}
+
+NrDynamics createExpansion(double noiseLevel) {
+if (noiseLevel <= 0) {
+throw new IllegalArgumentException(&quot;Noise level must be positive&quot;);
+

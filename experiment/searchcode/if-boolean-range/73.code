@@ -1,0 +1,9 @@
+EndRange = EndRange << 8 | (end &amp; 0xFF);
+}
+BlockCount = EndRange - BeginRange;
+if(BlockCount == 0)
+BlockCount = 1;
+public boolean IsInRange(long IpAddress)
+{
+if(IpAddress >= BeginRange &amp;&amp; IpAddress <= EndRange)
+

@@ -1,0 +1,8 @@
+public class UpdateReport extends XMLReport {
+private String name;
+private int numberOfUpdatedResources;
+
+public UpdateReport(String name) {
+public String toHTML() {
+if (numberOfUpdatedResources == 0) return &quot;<p>No resources updated for project &quot; + name + &quot;</p>&quot;;
+

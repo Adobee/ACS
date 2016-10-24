@@ -1,0 +1,10 @@
+import java.util.List;
+
+public class ContinuousWave extends Wave {
+private boolean spawning;                // true when still spawning continuous units
+if (waveInterval > 0)
+waveInterval -= deltaTime;
+else if (spawning) {
+continuousWave.update(deltaTime);
+final List<AIUnit> continuousUnits = continuousWave.getEnemiesQueue();
+

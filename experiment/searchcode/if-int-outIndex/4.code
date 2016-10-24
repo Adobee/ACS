@@ -1,0 +1,14 @@
+System.out.println(Arrays.toString(sorted));
+return;
+}
+
+public static int[] mergeSort(int[] arr){
+if(arr.length==1)
+bIndex++;
+}
+outIndex++;
+}
+if(aIndex==a.length-1){
+for(int i=aIndex; i<a.length; i++){
+out[outIndex] = a[i];
+

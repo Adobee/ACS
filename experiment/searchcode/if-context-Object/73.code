@@ -1,0 +1,13 @@
+public ContextMapAdapter( Context context )
+{
+this.context = context;
+}
+
+public Object get( Object key )
+{
+try
+{
+Object value = context.get( key );
+
+if ( value instanceof String )
+

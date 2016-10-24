@@ -1,0 +1,8 @@
+/**
+* Created by keith for the second coursework assignment.
+*/
+public class FractionTest {
+Fraction g = new Fraction(1,2);
+Fraction h = new Fraction(3,5);
+if (!f.equals(g.multiply(h))) System.out.println(&quot;Multiply failed&quot;);
+

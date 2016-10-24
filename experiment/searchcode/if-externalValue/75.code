@@ -1,0 +1,7 @@
+public scala.Option<String> translateExternalValue(String externalValue) {
+return scala.Option.apply(convertFromExternalValue(externalValue));
+}
+
+private String convertFromExternalValue(String externalValue) {
+final String typeName = getBuiltinTypeName();
+

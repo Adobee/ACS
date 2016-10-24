@@ -1,0 +1,10 @@
+ArrayList<Integer[]> results = new ArrayList<Integer[]>();
+public void eightQuenes(int row, Integer[] cols){
+if(row==8){
+results.add(cols.clone());
+return;
+}else{
+for(int i=0; i<8; i++){
+cols[row]=i;
+if(checkValid(row, cols)){
+

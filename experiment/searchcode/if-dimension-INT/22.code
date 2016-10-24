@@ -1,0 +1,10 @@
+* Created by cogtepsum on 31.05.2015.
+*/
+public class LineFactory {
+int dimension;
+
+public LineFactory(int dimension) {
+for (int i = 0; i < dimension; i++) {
+for (int j = 0; j < dimension; j++) {
+if (raster.getSample(i, j, 0) == 255) {
+

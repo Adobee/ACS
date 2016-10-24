@@ -1,0 +1,11 @@
+public void sendMessageOverLowerLayer(Message msg) throws IOException {
+
+// check if lower layer assigned
+if (lowerLayer != null) {
+
+lowerLayer.sendMessage(msg);
+public void setLowerLayer(Layer layer) {
+
+// unsubscribe from old lower layer
+if (lowerLayer != null) {
+

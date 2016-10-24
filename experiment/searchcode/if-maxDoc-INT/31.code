@@ -1,0 +1,12 @@
+public class AllDocSet extends DocSet {
+
+
+/** The max doc. */
+private final int maxDoc;
+@Override
+public int nextDoc() throws IOException {
+if (++doc < maxDoc) {
+return doc;
+}
+return doc = NO_MORE_DOCS;
+

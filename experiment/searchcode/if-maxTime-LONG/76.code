@@ -1,0 +1,17 @@
+super(repeat);
+}
+
+@Override
+public boolean waitFor(long maxTime) {
+reset();
+boolean ret = false;
+for (Timer end = new Timer(maxTime); end.running() &amp;&amp; !(ret = this.running()); Delay.sleep(30, 50))
+return super.running();
+}
+
+@Override
+public boolean waitFor(long maxTime, long delay) {
+reset();
+boolean ret = false;
+for (Timer end = new Timer(maxTime); end.running() &amp;&amp; !(ret = this.running()); Delay.sleep(delay))
+

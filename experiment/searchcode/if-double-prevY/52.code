@@ -1,0 +1,9 @@
+double x1, z1, x2, z2;
+
+double prevX, prevY, prevZ, prevAngle;
+
+public StaticEntity(BufferedImage render, double x, double y, double z, double width, double height, double angle) {
+super.update();
+
+if(prevX != this.getX() || prevY != this.getY() || prevZ != this.getZ() || prevAngle != this.getAngle()){
+

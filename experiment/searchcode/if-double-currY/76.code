@@ -1,0 +1,12 @@
+import fj.data.Option;
+
+import static fj.Function.curry;
+import static fj.Semigroup.doubleAdditionSemigroup;
+import static fj.Semigroup.doubleMultiplicationSemigroup;
+public static final F<Double, F<Double, Double>> subtract = curry((x, y) -> x - y);
+
+/**
+* Negation.
+*/
+public static final F<Double, Double> negate = x -> x * -1;
+

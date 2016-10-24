@@ -1,0 +1,11 @@
+public void execute(CGActivatePredict message) {
+Human human = message.getPlayer().getHuman();
+// 判断功能是否开启
+if (!GameServerAssist.getGameFuncService().gameFuncIsOpen(human,
+return;
+}
+
+// 该预见已激活
+int predictId = message.getPredictId();
+if (human.getHumanPredictManager().isPredictActivated(predictId)) {
+

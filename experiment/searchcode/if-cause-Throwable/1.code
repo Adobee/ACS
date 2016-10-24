@@ -1,0 +1,11 @@
+* @return 返回指定Throwable对象的根Throwable对象。
+*/
+public static Throwable getRootThrowable(Throwable throwable) {
+if (throwable.getCause() != null) {
+return getRootThrowable(throwable.getCause());
+} else {
+return throwable;
+}
+}
+}
+

@@ -1,0 +1,8 @@
+@Override
+public final void addHandlerListener(final IHandlerListener listener) {
+if (listenerList == null) {
+listenerList = new ListenerList(ListenerList.IDENTITY);
+}
+listenerList.add(listener);
+}
+

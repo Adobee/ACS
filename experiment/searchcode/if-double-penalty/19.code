@@ -1,0 +1,11 @@
+class MyFitnessFunction extends FitnessFunction {
+
+public double penaltyFactor = 1e6;
+
+@Override
+public double evaluate(double position[]) {
+// Penalize if (x1+x2) > 500
+double penalty = 0;
+double sumX = (x1 + x2) - 500;
+if( sumX > 0 ) penalty = penaltyFactor * sumX;
+

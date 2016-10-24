@@ -1,0 +1,12 @@
+public void closeStart(boolean value) {
+includingStart = value &amp;&amp; Double.isFinite(start);
+}
+
+public boolean isClosedEnd() {
+includingStart = value &amp;&amp; Double.isFinite(start);
+}
+
+@Override
+public boolean isContain(double value) {
+return (value > start &amp;&amp; value < end) || (includingStart &amp;&amp; value == start) || (includingEnd &amp;&amp; value == end);
+

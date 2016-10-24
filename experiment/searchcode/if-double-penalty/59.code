@@ -1,0 +1,9 @@
+public class TimeDepositAccount extends SavingsAccount {
+private double months, penalty;
+private int count;
+public String withdraw(double amount){
+double fee = 0;
+if (count<months)
+fee = penalty;
+return super.withdraw(amount+fee);
+

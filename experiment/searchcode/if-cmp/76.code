@@ -1,0 +1,10 @@
+for (cmpIdx = 0; cmpIdx < version1Length &amp;&amp; cmpIdx < version2Length; ++cmpIdx) {
+if (version1Nums[cmpIdx] < version2Nums[cmpIdx])
+return -1;
+else if (version1Nums[cmpIdx] > version2Nums[cmpIdx])
+for (; cmpIdx < version1Length; ++cmpIdx) {
+if (version1Nums[cmpIdx] < 0)
+return -1;
+else if (version1Nums[cmpIdx] > 0)
+return 1;
+

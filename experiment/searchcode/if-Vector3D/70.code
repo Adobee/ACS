@@ -1,0 +1,11 @@
+package utils;
+
+public class Vector3D {
+
+public double x;
+public double y;
+public double z;
+public boolean equals(Object obj) {
+Vector3D vec = (Vector3D)obj;
+if((vec.x == this.x) &amp;&amp; (vec.y == this.y) &amp;&amp; (vec.z == this.z)) {
+

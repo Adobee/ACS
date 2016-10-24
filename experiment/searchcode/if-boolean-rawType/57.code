@@ -1,0 +1,8 @@
+public final class ParameterizedTypeName extends TypeName {
+public final ClassName rawType;
+public final List<TypeName> typeArguments;
+@Override public CodeWriter emit(CodeWriter out) throws IOException {
+rawType.emit(out);
+out.emitAndIndent(&quot;<&quot;);
+boolean firstParameter = true;
+

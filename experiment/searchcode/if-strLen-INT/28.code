@@ -1,0 +1,13 @@
+public int countYZ(String str)
+{
+int strLen = str.length();
+int count=0;
+str = str.toLowerCase();
+else if(str.endsWith(&quot;y&quot;) || str.endsWith(&quot;z&quot;))
+count++;
+
+if(strLen==1) return count;
+
+for(int i=1; i<strLen; i++) {
+if( !Character.isLetter(str.charAt(i)) ) {
+

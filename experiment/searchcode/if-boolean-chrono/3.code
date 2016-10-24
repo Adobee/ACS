@@ -1,0 +1,9 @@
+default ChronoUnit toChronoUnit(final TemporalUnit unit) {
+if (unit instanceof ChronoUnit) {
+return (ChronoUnit) unit;
+default boolean isSupported(final TemporalUnit unit) {
+return this.isSupported(this.toChronoUnit(unit));
+}
+
+boolean isSupported(ChronoUnit unit);
+

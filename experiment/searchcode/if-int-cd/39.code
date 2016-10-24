@@ -1,0 +1,10 @@
+private List<CD> cdList = new ArrayList<CD>();
+
+public CDCollection() {}
+
+@Override
+public CD selectCD() {
+if (!this.cdList.isEmpty()) {
+int rand = (int) Math.floor(Math.random() * this.cdList.size());
+return this.cdList.get(rand);
+

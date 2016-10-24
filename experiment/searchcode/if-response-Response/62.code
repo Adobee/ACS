@@ -1,0 +1,6 @@
+@Router(inputChannel = &quot;typeRouterToResponseChannel&quot;)
+public String accept(Response response){
+if (response instanceof RegisterClientResponse) {
+return &quot;registerClientResponseChannel&quot;;
+} else if (response instanceof TableStatusResponse) {
+

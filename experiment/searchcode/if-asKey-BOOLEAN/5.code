@@ -1,0 +1,10 @@
+super(Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey(&quot;dodgyCommandGroup&quot;))
+.andCommandKey(HystrixCommandKey.Factory.asKey(&quot;reallyDodgyCommand&quot;)));
+protected String run() throws Exception {
+if(random.nextBoolean()) {
+throw new Exception(&quot;Opps that went wrong&quot;);
+}
+return &quot;Wahoo&quot;;
+}
+}
+

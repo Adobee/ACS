@@ -1,0 +1,13 @@
+import static jml.matlab.Matlab.times;
+
+import org.apache.commons.math.linear.RealMatrix;
+
+/**
+* Compute proj_tC(X) where C = {X: || X ||_2 <= 1}.
+* @return proj_{tC}(X) where C = {X: || X ||_2 <= 1}
+*
+*/
+public RealMatrix compute(double t, RealMatrix X) {
+
+double norm = norm(X, &quot;fro&quot;);
+

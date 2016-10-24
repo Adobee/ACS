@@ -1,0 +1,9 @@
+public static void main(String[] args) {
+int i, j, N, M, K;
+BigInteger xN, xM, xK = new BigInteger(&quot;0&quot;);
+for (i = 2; i < 2020; ++i)
+f[i] = f[i-1].add(f[i-2]);
+Scanner in = new Scanner(System.in);
+M = in.nextInt();
+xM = in.nextBigInteger();
+

@@ -1,0 +1,11 @@
+public Direction dir;
+protected int health;
+
+public void move(double xa, double ya) {
+if (xa != 0 &amp;&amp; ya != 0) {
+return;
+}
+numSteps++;
+if (xa > 0) dir = Direction.RIGHT;
+if (xa < 0) dir = Direction.LEFT;
+

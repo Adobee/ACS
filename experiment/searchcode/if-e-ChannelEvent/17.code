@@ -1,0 +1,9 @@
+package com.cboe.domain.iec;
+
+import com.cboe.util.channel.ChannelEvent;
+
+public class ExpandingChannelEventCache implements ChannelEventCache
+public synchronized void returnChannelEvent( ChannelEvent value )
+{
+if ( ++cacheStackPointer == currentCacheCapacity )
+

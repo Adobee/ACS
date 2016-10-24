@@ -1,0 +1,7 @@
+public String getName(long instant, Locale locale) {
+if (locale == null) {
+locale = Locale.getDefault();
+// adjust instantLocal using the estimate and recalc the offset
+final long instantAdjusted = instantLocal - offsetLocal;
+final int offsetAdjusted = getOffset(instantAdjusted);
+

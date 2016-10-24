@@ -1,0 +1,7 @@
+* Allocates an unassigned replica shard to a specific node. Checks if allocation deciders allow allocation.
+*/
+public class AllocateReplicaAllocationCommand extends AbstractAllocateAllocationCommand {
+List<ShardRouting> replicaShardRoutings = allocation.routingTable().shardRoutingTable(index, shardId).replicaShardsWithState(ShardRoutingState.UNASSIGNED);
+ShardRouting shardRouting;
+if (replicaShardRoutings.isEmpty()) {
+

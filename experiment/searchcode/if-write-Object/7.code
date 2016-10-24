@@ -1,0 +1,12 @@
+protected void write(StringBuilder stringBuilder, Object object)
+{
+if(ReflectionHelper.isNull(object))
+{
+writeNull(stringBuilder);
+}
+else if(ReflectionHelper.isArray(object))
+{
+writeArray(stringBuilder, object);
+}
+else if(ReflectionHelper.isList(object))
+

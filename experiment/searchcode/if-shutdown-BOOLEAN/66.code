@@ -1,0 +1,13 @@
+public class ShutdownThread extends Thread {
+
+int SecondsBeforeShutdown = 1000;
+
+boolean isRunning = false;
+
+public ShutdownThread(int NewTimeout) {
+MainWindow.displayNewTimeOut(SecondsBeforeShutdown);
+
+// if end of time reached shutdown system
+if (SecondsBeforeShutdown <= 0) {
+Runtime runtime = Runtime.getRuntime();
+

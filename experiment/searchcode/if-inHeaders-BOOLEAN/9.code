@@ -1,0 +1,14 @@
+private List<List<Cell>> rows = new ArrayList<List<Cell>>();
+
+private List<Cell> currentCells;
+
+private boolean inHeaders = false;
+
+public Table startHeaders() {
+return addCell(value, &quot;&quot;);
+}
+
+public Table addCell(Object value, String attributes) {
+if (!inHeaders) {
+if (currentCells.size() == headers.size()) {
+

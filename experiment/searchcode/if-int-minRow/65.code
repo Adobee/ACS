@@ -1,0 +1,15 @@
+public static int getMin(int [][] B, int [] idxAry) {
+int minValue = Integer.MAX_VALUE;
+int minRow = -1;
+for(int i=0;i<idxAry.length;i++){
+if(idxAry[i] < B[0].length &amp;&amp; minValue > B[i][idxAry[i]]) {
+minRow = i;
+}
+}
+if(minRow != -1)
+idxAry[minRow]++;
+return minValue;
+}
+
+}
+

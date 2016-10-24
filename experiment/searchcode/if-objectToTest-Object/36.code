@@ -1,0 +1,11 @@
+throw new IllegalStateException(&quot;Could not find getter for search term&quot;+fieldName);
+}
+}
+
+@Override
+public boolean apply(T objectToTesT) {
+if(!getter.invoke(objectToTesT).toString().matches(toMatchPattern)) {
+return false;
+}
+} catch (Exception e) {
+

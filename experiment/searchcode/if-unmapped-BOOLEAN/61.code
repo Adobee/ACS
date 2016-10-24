@@ -1,0 +1,10 @@
+log.error(e.getMessage(), e.getCause());
+return;
+}
+if (unmappedNames.isEmpty()) {
+log.debug(&quot;No unmapped names found, so not attempting any mapping.&quot;);
+final boolean newLinkage = linkAccounts(handle.getLocalName(),
+unmappedNames);
+if (newLinkage) {
+handle.updateAttributes();
+

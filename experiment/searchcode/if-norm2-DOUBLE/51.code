@@ -1,0 +1,8 @@
+private String id; // unique id of the image (usually file name)
+
+private double dist; // used for sorting purposes
+
+public ImgDescriptor(float[] features, String id) {
+float norm2 = evaluateNorm2(features);
+this.normalizedVector = getNormalizedVector(features, norm2);
+

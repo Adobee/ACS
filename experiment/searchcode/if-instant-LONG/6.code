@@ -1,0 +1,13 @@
+import org.springframework.core.convert.converter.Converter;
+
+
+/**
+* Converts Instant to Long.
+*
+* @author izidaru
+*
+*/
+public class InstantToLongConverter implements Converter<Instant, Long>{
+
+private static final Instant MAX_CONVERTIBLE_INSTANT = Instant.ofEpochMilli(Long.MAX_VALUE);
+

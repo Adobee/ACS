@@ -1,0 +1,12 @@
+public double getFactor() {
+return factor;
+}
+
+public void setFactor(double factor) {
+if(factor < 0D || factor > 2.0D) {
+return hsv;
+}
+if(factor < 1.0D) {
+double s = hsv.getSaturation() * factor;
+hsv.setSaturation(s);
+

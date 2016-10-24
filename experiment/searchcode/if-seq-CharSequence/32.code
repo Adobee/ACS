@@ -1,0 +1,8 @@
+public List convertFrom(final CharSequence source) {
+final List result = new ArrayList<>();
+final CharSequence[] parts = CharSeqTools.split(source, &quot;, &quot;);
+final CharSequence[] class2value = new CharSequence[2];
+CharSeqTools.split(part, &#39; &#39;, class2value);
+try {
+class2value[1] = CharSeqTools.replace(class2value[1], &quot;\\ &quot;, &quot; &quot;);
+

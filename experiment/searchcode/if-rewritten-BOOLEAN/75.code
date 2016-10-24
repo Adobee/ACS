@@ -1,0 +1,7 @@
+protected boolean okayToInvertForOptimization() {
+// Inverting is &quot;free&quot; if it will still be an AND NOT query (i.e. will have a positive component).
+// This doesn&#39;t change the query because the AND operator is associative.
+boolean anyRewritten = false;
+List<TextPattern> rewrittenCl = new ArrayList<>();
+List<TextPattern> rewrittenNotCl = new ArrayList<>();
+

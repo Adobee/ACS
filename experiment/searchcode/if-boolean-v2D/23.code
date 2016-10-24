@@ -1,0 +1,9 @@
+* returns true if the circle contains a point
+* @param v2d
+* @return
+*/
+@Override
+public boolean contains(Vector2D v2d) {
+if (v2d == null) return false;
+return MathUtil.distance(v2d, this.getCenter()) <= this.getRadius();
+

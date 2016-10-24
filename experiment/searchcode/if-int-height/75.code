@@ -1,0 +1,11 @@
+int result = 0;
+if (height == null || height.length <= 2)
+return result;
+
+int[] left = new int[height.length];
+int max = height[0];
+left[0] = height[0];
+for (int i = 1; i < height.length; i++) {
+if (height[i] < max)
+left[i] = max;
+

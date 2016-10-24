@@ -1,0 +1,13 @@
+public class Camera {
+private boolean followPlayer;
+private Point curPos;
+
+public Camera(boolean follow) {
+followPlayer = follow;
+curPos = new Point(0, 0);
+}
+
+public void moveRight() {
+if (this.followPlayer) {
+this.follow();
+

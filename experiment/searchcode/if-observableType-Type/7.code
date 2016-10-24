@@ -1,0 +1,7 @@
+String part = parts[i].trim();
+ObservableType type = getType(part);
+if (type != ObservableType.INVALID) {
+// put the remainder back into the buffer if it wasn&#39;t complete yet
+if (getType(parts[parts.length - 1].trim()) != ObservableType.INVALID) {
+buffer = new StringBuffer();
+

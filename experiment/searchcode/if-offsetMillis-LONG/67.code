@@ -1,0 +1,7 @@
+* test start and not after test end.
+*
+* @param timestamp the timestamp
+* @return {@code true} if the timestamp is within the time range of the test
+public long normalizeTimestamp(final ZonedDateTime timestamp, final long offsetMillis) {
+ZonedDateTime corrected = timestamp.minus(offsetMillis, ChronoUnit.MILLIS);
+

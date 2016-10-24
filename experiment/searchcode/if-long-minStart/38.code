@@ -1,0 +1,8 @@
+degree[destination]--;
+minStart[destination] = Math.max(minStart[destination], minEnd[current]);
+if (degree[destination] == 0)
+int answer = ArrayUtils.maxElement(minEnd);
+Graph cGraph = new Graph(2 * n + 2);
+for (int i = 0; i < n; i++) {
+if (minStart[i] == 0)
+

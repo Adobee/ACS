@@ -1,0 +1,11 @@
+System.out.println(new Problem153().solve(100000000L));
+}
+
+public long solve(long max) {
+long sum = 0L;
+for (long b = 1L; a * a + b * b <= max; b++) {
+if (gcd(a, b) != 1L) {
+continue;
+}
+long c = a * a + b * b;
+

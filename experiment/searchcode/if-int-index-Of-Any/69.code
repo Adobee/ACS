@@ -1,0 +1,9 @@
+public SlicedByteBuf(ByteBuf buffer, int index, int length) {
+super(buffer.order());
+if (index < 0 || index > buffer.capacity()) {
+return buffer.nioBuffer(index + adjustment, length);
+}
+
+private void checkIndex(int index) {
+if (index < 0 || index >= capacity()) {
+

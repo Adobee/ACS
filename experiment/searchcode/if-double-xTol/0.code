@@ -1,0 +1,9 @@
+public static final int DTW_XTOL = 10;
+public static final int DTW_YTOL = 10;
+public static final double DTW_SLICELEN = 2.0;
+//	return the sum of their distances
+
+Route base = null, comp = null;
+double ret = 0.0;
+if(r1.getVLenPatterns().size() < r2.getVLenPatterns().size()){
+

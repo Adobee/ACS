@@ -1,0 +1,8 @@
+private static int getVolume(int[] A, boolean isForward, int end, int[] boundary) {
+// skip zeros
+int cur = 0;
+if (!isForward) cur = A.length - 1;
+int vol = 0, newEnd = cur;
+for (int i=cur, tempSum=0; i!=end; i+=(isForward ? 1 : -1)) {
+if (A[i] >= A[newEnd]) {
+

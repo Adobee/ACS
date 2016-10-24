@@ -1,0 +1,11 @@
+endIndex = getEndIndex(A, endIndex, elem);
+if (endIndex <= startIndex) {
+break;
+} else {
+tmp = A[startIndex];
+A = Arrays.copyOfRange(A, 0, startIndex);
+return startIndex;
+}
+
+public int getEndIndex(int[] A, int endIndex, int elem) {
+

@@ -1,0 +1,11 @@
+return balance;
+}
+
+public synchronized void deposit(long amount) {
+checkAmountNonNegative(amount);
+balance -= amount;
+}
+
+private static void checkAmountNonNegative(long amount) {
+if (amount < 0) {
+

@@ -1,0 +1,10 @@
+final long nextYearMillis = nextYear.getTimeInMillis();
+
+// If show aired more than 24 hours ago, update next year
+if (millis < rightNowMillis - 24 * HOUR_IN_MILLIS) {
+return context.getResources().getQuantityString(R.plurals.in_minutes, minutes, minutes);
+}
+
+if (rightNow > millis &amp;&amp; rightNow <= millis + 24 * HOUR_IN_MILLIS) {
+final int hours = (int) ((rightNow - millis) / HOUR_IN_MILLIS);
+

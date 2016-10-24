@@ -1,0 +1,5 @@
+Long totalHours = TimeUnit.MILLISECONDS.toHours(milliseconds);
+if (totalHours > 0) {
+long totalHoursInMinutes = TimeUnit.HOURS.toMinutes(totalHours);
+return String.format(&quot;%02d:%02d:%02d&quot;, totalHours, totalMinutes - totalHoursInMinutes, totalSeconds - totalMinutesInSeconds);
+

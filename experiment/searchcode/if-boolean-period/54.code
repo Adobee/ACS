@@ -1,0 +1,18 @@
+this.period = period;
+this.max = max;
+this.retries = 0;
+}
+
+
+@Override
+public boolean reset() {
+retries = 0;
+return true;
+}
+
+
+@Override
+public boolean keepTrying() {
+if(retries > max)
+return false;
+

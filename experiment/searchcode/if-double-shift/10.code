@@ -1,0 +1,14 @@
+private final PointFactory factory;
+private double shiftX, shiftY, shiftZ;
+
+/**
+
+*/
+private PointShifter(double shiftX, double shiftY, double shiftZ){
+@param shiftZ The distance the point will move along the Z axis.
+
+*/
+public static PointShifter getInstance(double shiftX, double shiftY, double shiftZ){
+
+if (instance == null) instance = new PointShifter(shiftX, shiftY, shiftZ);
+

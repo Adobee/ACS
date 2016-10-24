@@ -1,0 +1,6 @@
+@Override
+protected void innerWriteTo(StreamOutput out) throws IOException {
+boolean hasPrecisionThreshold = precisionThreshold != null;
+out.writeBoolean(hasPrecisionThreshold);
+if (hasPrecisionThreshold) {
+

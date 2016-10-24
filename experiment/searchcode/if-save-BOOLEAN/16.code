@@ -1,0 +1,11 @@
+import java.util.List;
+
+public interface ISaveGameDAO {
+void openDB();
+
+/**
+* @param saveGame If save game name already exists, it will be overwritten.
+* @return true, if deletion was successful, false otherwise
+*/
+boolean deleteSaveGameIfExists(String saveGameName);
+

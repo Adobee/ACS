@@ -1,0 +1,11 @@
+if (stack.empty()) return false;
+char c2 = stack.pop();
+if (!match(c, c2)) {
+return stack.empty();
+}
+
+public boolean match(char c, char c2) {
+return (c == &#39;)&#39; &amp;&amp; c2 == &#39;(&#39;) || (c == &#39;]&#39; &amp;&amp; c2 == &#39;[&#39;) || (c == &#39;}&#39; &amp;&amp; c2 == &#39;{&#39;);
+}
+}
+

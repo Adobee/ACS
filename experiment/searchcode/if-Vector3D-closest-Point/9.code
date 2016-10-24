@@ -1,0 +1,6 @@
+double tClosest = originToCenter.dotProduct(ray.getDirection());
+if (tClosest < 0 &amp;&amp; !insideSphere) return new Vector3D();
+
+double tHalfChordSquared = radiusSquared - lengthOCSquared + (tClosest * tClosest);
+if (tHalfChordSquared < 0) return new Vector3D();
+

@@ -1,0 +1,10 @@
+public class ChatUser {
+private UserInfo userInfo;
+private int startIndex;
+
+public ChatUser(UserInfo info) {
+public void increasementStartIndex() {
+startIndex++;
+if (startIndex >= ChatRoom.Max_Chat) {
+startIndex = 0;
+

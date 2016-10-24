@@ -1,0 +1,13 @@
+public MyTransform2D(double tx, double tz, double ra)
+{
+double [][]values = new double[4][4];
+
+values[0][0] = Math.cos(ra);	values[0][1] = 0; 	values[0][2] = Math.sin(ra);	values[0][3] = tx;
+values[3][0] = 0;				values[3][1] = 0;	values[3][2] = 0;				values[3][3] = 1;
+
+trX = tx;
+trZ = tz;
+angY = ra;
+
+mat = new DenseDoubleMatrix2D(values);
+

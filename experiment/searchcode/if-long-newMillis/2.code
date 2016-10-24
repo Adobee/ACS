@@ -1,0 +1,10 @@
+message(&quot;time string=&quot; + normalizedTime);
+
+long newMillis = Presentation.createMillisFromNormalizedDateTimeString(normalizedTime);
+Date date = Presentation.createDate(millis);
+
+if (date == null)
+newMillis = -1;
+else
+newMillis = date.getTime();
+

@@ -1,0 +1,19 @@
+public class RegExpAction extends OnOffAction {
+private Pattern ifRe = null;
+
+public RegExpAction() {
+}
+
+public String getIfRe() {
+this.ifRe = Pattern.compile(ifRe);
+}
+
+
+@Override
+protected boolean isOn(String value) {
+return ifRe.matcher(value).matches();
+}
+
+
+}
+

@@ -1,0 +1,14 @@
+protected double d;   // perpendicular distance from the origin
+
+/*
+* creates a plane with the normal vector n and containing point p
+*/
+public Plane3d(Vector3d n, Point3d p) {
+return new Point3d(p.x - n.x*t, p.y - n.y*t, p.z - n.z*t);
+}
+
+/*
+* returns (1,0,-1) if point p is (above,on,below) this plane
+*/
+public int above(Point3d p) {
+

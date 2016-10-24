@@ -1,0 +1,10 @@
+private Map<String, Double> globalThresholdMap;
+private Map<String, Double> localThresholdMap;
+
+private Map<String, Double> convertThresholdListToMap(List<Threshold> thresholds) {
+return thStatus;
+}
+
+Double threshold = globalThresholdMap.get(attrName);
+if (threshold != null &amp;&amp; value >= threshold) {
+

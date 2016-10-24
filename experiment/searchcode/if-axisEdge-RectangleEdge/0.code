@@ -1,0 +1,8 @@
+int index = plot.getDomainAxisIndex(domainAxis);
+if (index < 0)
+return;
+RectangleEdge axisEdge = Plot.resolveDomainAxisLocation(plot.getDomainAxisLocation(index), plot.getOrientation());
+line = new Line2D.Double(dataArea.getMinX(), value, dataArea.getMaxX(), value);
+else if (axisEdge.equals(RectangleEdge.RIGHT))
+line = new Line2D.Double(dataArea.getMaxX(), value, dataArea.getMinX(), value);
+

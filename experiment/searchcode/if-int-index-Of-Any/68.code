@@ -1,0 +1,14 @@
+output.data[ indexOut++ ] = (byte)((total+2)/4);
+}
+}
+
+if( maxX != input.width ) {
+for( int y = 0; y < maxY; y += 2 ) {
+int indexOut = output.startIndex + (y/2)*output.stride + output.width-1;
+output.data[ indexOut ] = (byte)((total+1)/2);
+}
+}
+
+if( maxY != input.height ) {
+int indexOut = output.startIndex + (output.height-1)*output.stride;
+

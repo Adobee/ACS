@@ -1,0 +1,9 @@
+Collection<Timeout> timeoutList = timeoutDataManager.getTimeoutList();
+if (timeoutList != null)
+return timeoutList;
+public void removeTimeout(Timeout timeout) {
+try {
+if (timeoutDataManager.removeTimeout(timeout))
+clearSelection();
+refresh();
+

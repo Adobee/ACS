@@ -1,0 +1,12 @@
+public ModelAndView handleView( HttpServletRequest req, HttpServletResponse res )
+throws Exception
+{
+boolean authenticated = doAuthenticate( req );
+
+Map<String, Object> model = populateViewModel( req, false, authenticated );
+boolean authenticated = doAuthenticate( req );
+
+if ( authenticated )
+{
+if ( Boolean.valueOf( req.getParameter( &quot;upgrade_all&quot; ) ) )
+

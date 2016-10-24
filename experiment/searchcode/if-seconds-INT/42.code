@@ -1,0 +1,8 @@
+public static String format(int seconds)
+{
+if (seconds < 60) // seconds
+{
+return getSuffix(seconds, &quot;second&quot;);
+}
+else if (seconds > 60 &amp;&amp; seconds < 3600) // minutes
+

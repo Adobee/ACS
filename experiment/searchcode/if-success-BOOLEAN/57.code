@@ -1,0 +1,9 @@
+public class PaymentTransactionValidator extends Validator{
+
+private boolean validateCustomer(CustomerVO customerVO){
+boolean success = true;
+if(customerVO == null || customerVO.getId() <= 0){
+public boolean validate(PaymentTransactionVO paymentTransactionVO){
+boolean success = validateCustomer(paymentTransactionVO.getCustomerVO());
+if(!success){
+

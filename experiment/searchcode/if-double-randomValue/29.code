@@ -1,0 +1,7 @@
+Random r = new Random();
+double randomValue = 0.7 + (1.15 - 0.7) * r.nextDouble();
+int tero=(int) Math.round(sebzes * randomValue);
+Random r = new Random();
+double randomValue = 0.5 + (1.3 - 0.5) * r.nextDouble();
+int vero=  (int)Math.round(vedekezes * randomValue);
+

@@ -1,0 +1,9 @@
+public class Cursor {
+
+private Rectangle bounds = new Rectangle();
+
+public void update() {
+float touchY = Game.HEIGHT - Gdx.input.getY();
+if(Gdx.input.isTouched()) {
+bounds.set(Gdx.input.getX(), touchY, 5, 5);
+

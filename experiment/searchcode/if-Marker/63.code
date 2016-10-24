@@ -1,0 +1,9 @@
+if (array[i] == open) {
+markerOpen++;
+}
+if ((array[i] == close) &amp;&amp; (markerOpen > markerClose)) {
+markerWrong++;
+}
+if (array[i] == close) {
+markerClose++;
+

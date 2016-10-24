@@ -1,0 +1,11 @@
+import fr.vinze.textanalysis.svd.SingularValueDecomposition;
+
+public class ColtSVDBuilderImpl implements SVDBuilder {
+
+public boolean accept(DocumentTokenMatrix<Double> matrix) {
+return matrix instanceof ColtDoubleDocumentTokenMatrix;
+}
+
+public SingularValueDecomposition decompose(DocumentTokenMatrix<Double> matrix) {
+if (!accept(matrix)) {
+

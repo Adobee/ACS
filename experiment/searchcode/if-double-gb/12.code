@@ -1,0 +1,11 @@
+Double gb = gaussCalc(t, b);
+if (Math.abs(ga + gb - gc) > eps)
+{
+ga = gauss(a, t, eps / 2, ga);
+gb = gauss(t, b, eps/2, gb);
+}
+return ga + gb;
+}
+
+private final Double g10c1 = 0.9739065285/6.2012983932;
+

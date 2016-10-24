@@ -1,0 +1,11 @@
+public final int yurtCornerX, yurtCornerY, yurtCornerZ;
+public final double prevX, prevY, prevZ;
+public final int prevDimID;
+this.structure = structureType;
+}
+
+@Override
+public void placeInPortal(Entity entity, double x, double y, double z, float f)
+{
+if(entity instanceof EntityPlayer)
+

@@ -1,0 +1,8 @@
+@DefaultNonNull
+public final class LookupFilterTranslatorRegistry {
+
+private static Map<String, ITranslator<?>> m_translators = new HashMap<>();
+
+static {
+LookupFilterTranslatorRegistry.register(new StringTranslator());
+

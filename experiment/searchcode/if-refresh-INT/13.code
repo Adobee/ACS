@@ -1,0 +1,12 @@
+package properties;
+
+public final class LoggerProperties
+{
+private final int refreshRate;
+
+public LoggerProperties(int refreshRate)
+{
+if(refreshRate < 1)
+{
+throw new IllegalArgumentException(&quot;Refresh rate cannot be less than 1&quot;);
+

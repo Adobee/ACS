@@ -1,0 +1,5 @@
+public void writeIndicesOptions(StreamOutput out) throws IOException {
+if (allowAliasesToMultipleIndices() || out.getVersion().onOrAfter(Version.V_1_2_0)) {
+static IndicesOptions fromOptions(boolean ignoreUnavailable, boolean allowNoIndices, boolean expandToOpenIndices, boolean expandToClosedIndices, boolean allowAliasesToMultipleIndices) {
+byte id = toByte(ignoreUnavailable, allowNoIndices, expandToOpenIndices, expandToClosedIndices, allowAliasesToMultipleIndices);
+

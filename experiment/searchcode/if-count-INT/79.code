@@ -1,0 +1,13 @@
+public int candy( int[] ratings )
+{
+if ( ratings == null || ratings.length == 0 )
+{
+return 0;
+}
+int decreaseCount = 0;
+int count = 1;
+int total = 1;
+for ( int i = 1; i < ratings.length; i++ )
+{
+if ( ratings[i] < ratings[i - 1] )
+

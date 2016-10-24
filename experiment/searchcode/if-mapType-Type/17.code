@@ -1,0 +1,20 @@
+public CLSerializable()
+{
+
+}
+
+public CLSerializable(HashMap<String, Object> map)
+{
+Object mapType = map.get(&quot;type&quot;);
+if (mapType != null)
+type = mapType.toString();
+else
+type = null;
+}
+
+public String getType()
+{
+return type;
+}
+}
+

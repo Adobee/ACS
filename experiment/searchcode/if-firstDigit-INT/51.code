@@ -1,0 +1,11 @@
+for (int i = 2; i <= number / 2; i++) {
+if (number % i == 0) {
+isPrime = false;
+break;
+}
+}
+int firstDigit = number / 100;
+int secondDigit = (number / 10) % 10;
+int thirdDigit = number % 10;
+if (isPrime &amp;&amp; (firstDigit != secondDigit) &amp;&amp; (firstDigit != thirdDigit) &amp;&amp; (secondDigit != thirdDigit)) {
+

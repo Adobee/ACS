@@ -1,0 +1,6 @@
+for (Map.Entry<UUID, GregorianCalendar> startDate  : storeStartTime.entrySet()) {
+if (startDate.getValue().before(dateEvent) || startDate.getValue().equals(dateEvent)){
+UUID currentUUID = startDate.getKey();
+GregorianCalendar endDate = storeEndTime.get(currentUUID);
+if (endDate.after(dateEvent) || endDate.equals(dateEvent)){
+

@@ -1,0 +1,8 @@
+public class Solution {
+public String convert(String s, int nRows) {
+if (s == null || s.isEmpty() || nRows == 1) {
+StringBuffer buffer = new StringBuffer();
+for (int i = 0; i < nRows; i++) {
+if (i == 0) {
+for (int j = 0; j < s.length(); j += 2 * nRows - 2) {
+

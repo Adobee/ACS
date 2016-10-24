@@ -1,0 +1,7 @@
+public class UtilityExtraction {
+
+public static MembershipTester getGazetteer(String name, String file, boolean lowercase) {
+MembershipTester result = new MembershipTester(name);
+if (lowercase) {
+result.addSourceFilter(new Lowercase());
+

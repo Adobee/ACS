@@ -1,0 +1,7 @@
+static int parse_picture_segment(PGSSubContext ctx, ParsableByteArray buffer, int bufferLimit)
+{
+if (bufferLimit <= 4) {
+buffer.skipBytes(buffer.bytesLeft());
+/* Read the Sequence Description to determine if start of RLE data or appended to previous RLE */
+int sequence_desc = buffer.readUnsignedByte();
+

@@ -1,0 +1,13 @@
+int indMin = i;
+for(int j = i+1 ; j < tableau.length; j++)
+if (tableau[j].plusPetit(tableau[indMin]))
+indMin = j;
+if (indMin != i) {
+tempo = tableau[i];
+tableau[i]=tableau[indMin];
+tableau[indMin]=tempo;
+}
+}
+}
+}
+

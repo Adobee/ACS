@@ -1,0 +1,10 @@
+for(int i=finalQueue.size()-2;i>=0;i--){
+boolean left = false;
+if((finalQueue.size()-2)%2 == 0){
+left = true;
+}else{
+left = false;
+}
+State state = (State)finalQueue.get(i);
+State parentState = state.getParentNewState();
+

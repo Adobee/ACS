@@ -1,0 +1,6 @@
+public boolean run(Player p, Environment e) {
+if(this.isrunnable(p, e)){
+int r = ThreadLocalRandom.current().nextInt(0,Player.MAX_STUFF);
+int q = p.getBag().howMany(Potion.getInstance());
+if(r < (q+p.getStuff()))
+

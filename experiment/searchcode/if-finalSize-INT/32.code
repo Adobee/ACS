@@ -1,0 +1,13 @@
+public class LimitedPackedQueue<T> extends PackedQueue<T> {
+protected int capacity = 5000;// 默认容量为5000
+
+public LimitedPackedQueue() {
+}
+
+public LimitedPackedQueue(int capacity) {
+return 0;
+else {
+int finalSize = Math.min(this.capacity - this.queue.size(),
+list.size());
+List<T> sub = list.subList(0, finalSize);
+

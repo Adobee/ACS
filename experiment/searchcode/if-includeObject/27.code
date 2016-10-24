@@ -1,0 +1,7 @@
+* @param clazz The class to get all methods in
+* @param includeObject Whether to include methods in {@link Object}
+* @param annotations if not null, only include methods with any of these annotations
+while (clazz != null &amp;&amp; (includeObject || !Object.class.equals(clazz))) {
+for (Method method : clazz.getMethods()) {
+if (annotations == null || hasAnyAnnotation(method, annotations)) {
+

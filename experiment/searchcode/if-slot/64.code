@@ -1,0 +1,11 @@
+public ItemStack getStackInSlot(int slot)
+{
+if (checkSlot(slot))
+{
+return compose.getStackInSlot(slot + minSlot);
+public ItemStack insertItem(int slot, ItemStack stack, boolean simulate)
+{
+if (checkSlot(slot))
+{
+return compose.insertItem(slot + minSlot, stack, simulate);
+

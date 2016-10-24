@@ -1,0 +1,11 @@
+DiskLruCache.Snapshot snapshot = null;
+
+try {
+snapshot = diskLruCache.get(getHashOf(key));
+if (snapshot == null) {
+public void setKeyValue ( String key, String value ) throws IOException {
+DiskLruCache.Editor editor = null;
+try {
+editor = diskLruCache.edit(getHashOf(key));
+if (editor == null) {
+

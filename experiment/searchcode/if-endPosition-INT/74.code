@@ -1,0 +1,12 @@
+public DataBlock(final long startPosition, final long endPosition)
+{
+if (endPosition < startPosition) {
+throw new IllegalArgumentException(&quot;endPosition < startPosition: &quot; + endPosition + &quot;,&quot; + startPosition);
+return 1;
+}
+
+final long endResult = this.endPosition - other.endPosition;
+
+if (endResult < 0) {
+return -1;
+

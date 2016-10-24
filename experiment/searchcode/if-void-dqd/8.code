@@ -1,0 +1,13 @@
+//create a new thread to listen
+Thread t = new Thread(){
+public void run()
+{
+aThreadIsOpen = true;
+if (dqdSocket != null &amp;&amp; os != null &amp;&amp; is != null) { //if socket etc is initialized
+post(&quot;Socket is not open - can&#39;t get noDelay status&quot;);
+}
+}
+
+public void setNoDelay(boolean noDelay) {
+if (dqdSocket != null &amp;&amp; os != null &amp;&amp; is != null) {
+

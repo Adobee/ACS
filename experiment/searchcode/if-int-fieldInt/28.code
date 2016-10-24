@@ -1,0 +1,9 @@
+import newtonERP.orm.field.type.FieldInt;
+import newtonERP.viewers.viewerData.BaseViewerData;
+import newtonERP.viewers.viewerData.PromptViewerData;
+public Fields initFields() throws Exception
+{
+Vector<Field<?>> fieldList = new Vector<Field<?>>();
+
+FieldInt pKzoneID = new FieldInt(&quot;Numéro&quot;, getPrimaryKeyName());
+

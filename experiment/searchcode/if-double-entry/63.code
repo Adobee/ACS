@@ -1,0 +1,11 @@
+package com.thefind.sisyphus;
+
+/**
+* @author Eric Gaudet
+*/
+class ActionIfKeyDouble
+extends ActionBase
+public ActionIfKeyDouble(KeyDouble dble, boolean found, Action out)
+{
+super(dble.getSchemaIn(), out);
+

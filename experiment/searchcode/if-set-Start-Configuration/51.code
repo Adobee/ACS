@@ -1,0 +1,9 @@
+cc.setQueryIndexEnabled(false);
+cc.setName(&quot;someName&quot;);
+
+g1Cfg.setCacheConfiguration(cc);
+
+checkGridStartFails(g1Cfg, &quot;Data cache is not configured locally for GGFS&quot;, true);
+public void testLocalIfGgfsConfigsHaveDifferentNames() throws Exception {
+g1Cfg.setCacheConfiguration(concat(dataCaches(1024), metaCaches(), GridCacheConfiguration.class));
+

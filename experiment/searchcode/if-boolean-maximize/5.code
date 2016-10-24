@@ -1,0 +1,18 @@
+public VertexComparatorDF(boolean maximize) {
+this.maximize = maximize ? 1 : -1;
+}
+
+@Override
+public int compare(Vertex arg0, Vertex arg1) {
+float nbRelationsArg1 = arg1.getCoM();
+
+if (nbRelationsArg0 > nbRelationsArg1)
+return 1 * maximize;
+
+if (nbRelationsArg0 < nbRelationsArg1)
+return -1 * maximize;
+
+return 0;
+}
+}
+

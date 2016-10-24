@@ -1,0 +1,10 @@
+private double[][] distanceMatrix;
+
+public DBSCAN(ArrayList<DataPoint> points, int minPts, double eps) {
+this.minPts = minPts;
+this.eps = eps;
+N_prim = getNeighborIndexes(pindex);
+if (N_prim.size() >= minPts)
+for (int j = 0; j < N_prim.size(); j++)
+N.add(N_prim.get(j));
+

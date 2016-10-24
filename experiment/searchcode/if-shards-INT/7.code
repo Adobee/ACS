@@ -1,0 +1,11 @@
+import me.BenLoe.Blackmarket.Files;
+import me.BenLoe.Blackmarket.UUIDFetcher;
+
+public class Stats {
+
+private int shards, eshards;
+public static Stats getStats(UUID uuid){
+int shards = 0;
+int eshards = 0;
+if (Files.getDataFile().contains(&quot;Players.&quot; + uuid + &quot;.shards&quot;)){
+

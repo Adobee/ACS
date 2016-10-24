@@ -1,0 +1,13 @@
+protected void chooseAction()
+{
+int closestEnemy = findClosest();
+if(closestEnemy>-1)
+{
+if(distanceToEnemy(closestEnemy)<400)
+lastX = enemyX(closestEnemy);
+lastY = enemyY(closestEnemy);
+checkedLastX = false;
+} else
+{
+if(!checkedLastX)
+

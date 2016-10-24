@@ -1,0 +1,9 @@
+public ExperimentalBoard move(String move)
+{
+if (move.equals(&quot;&quot;))
+return this;
+int firstSpace = move.indexOf(&quot; &quot;);
+int secondSpace = move.indexOf(&quot; &quot;, firstSpace + 1);
+int thirdSpace = move.indexOf(&quot; &quot;, secondSpace + 1);
+short x1 = Short.valueOf(move.substring(0, firstSpace));
+

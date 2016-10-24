@@ -1,0 +1,8 @@
+public class WildCardMatchDPSolution implements WildCardMatching {
+public boolean isMatch(String s, String p) {
+if (p == null || p.isEmpty()) {
+return s == null || s.isEmpty();
+}
+
+// match[i][j] means if pre-i&#39;th char in s match pre-j&#39;th char in p
+

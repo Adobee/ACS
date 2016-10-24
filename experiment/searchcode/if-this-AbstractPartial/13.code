@@ -1,0 +1,7 @@
+FileItem fileItem = getContext().getFileItem(&quot;file&quot;);
+if (fileItem == null) {
+this.error = &quot;The file is missing&quot;;
+String mimeType = ClickUtils.getMimeType(this.fileName);
+if (mimeType != null) {
+this.isImageFile = mimeType.startsWith(&quot;image/&quot;);
+

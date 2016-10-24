@@ -1,0 +1,9 @@
+Double d = new Double(ScalaUtils.trimAllToEmpty(s.getText()));
+Paint p = null;
+double ep = 0;
+
+if (colors != null) {
+String margin = XPathUtils.selectStringValueNormalize(doc, &quot;/chart/bar-margin&quot;);
+if (margin != null)
+chart.setBarMargin(Double.parseDouble(margin));
+

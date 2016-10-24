@@ -1,0 +1,7 @@
+* style variables but there isn&#39;t an AtomicFloat so we just use a volatile.
+*/
+private volatile float requestsPerSecond;
+float perfectlyThrottledBatchTime(int lastBatchSize) {
+if (requestsPerSecond == Float.POSITIVE_INFINITY) {
+return 0;
+

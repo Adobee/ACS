@@ -1,0 +1,12 @@
+queue[queueEnd] = o;
+queueSize++;
+if (queueSize == 1) {
+queueStart = queueEnd;
+}
+queueEnd = (queueEnd + 1) % maxSize;
+}
+
+public synchronized Object poll() {
+if (queueSize == 0) {
+return null;
+

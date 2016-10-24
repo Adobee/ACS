@@ -1,0 +1,9 @@
+testCol.open();
+DocumentCollection keyCol = new DocumentCollection(keyCollection);
+keyCol.open();
+if (testCol.size() != keyCol.size()) {
+System.out.println (&quot; ** Test and key collections have different sizes, cannot evaluate.&quot;);
+return;
+}
+for (int docCount=0; docCount<testCol.size(); docCount++) {
+

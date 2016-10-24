@@ -1,0 +1,7 @@
+Player me = brain.getPlayer();
+Vector2D meP = me.getPosition();
+ArrayList<Player> opponents = brain.getFullstateInfo().getOpponents(me);
+Vector2D goal = new Vector2D(brain.getPlayer().isLeftSide() ? 52.5d : -52.5d,0);
+ArrayList<Vector2D> velocities = brain.generateVelocityVectors(meP, goal, 140, 2.9, 3, 20);
+double bestScore = -1;
+

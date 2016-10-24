@@ -1,0 +1,10 @@
+for (int iter = 0; iter < 500; iter++) {
+double mid = (lo + hi) / 2;
+double force = 0.0;
+for (int j = 0; j < i + 1; j++) {
+force += f(m[j], x[j] - mid);
+}
+if (force < 0) {
+lo = mid;
+} else {
+

@@ -1,0 +1,10 @@
+int result = dnsDao.addDns(dns);
+if(result == 1){
+return SUCCESS_RESULT;
+}
+return FAILURE_RESULT;
+@Context HttpServletResponse servletResponse) throws IOException{
+Dns dns = new Dns(url, ip);
+int result = dnsDao.updateDns(dns);
+if(result == 1){
+

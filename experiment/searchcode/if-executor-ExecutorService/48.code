@@ -1,0 +1,14 @@
+public class TaskExecutorService {
+
+private static ExecutorService executorService;
+
+static {
+if (executorService == null || executorService.isShutdown()) {
+.newCachedThreadPool(factory);
+}
+}
+
+public static void shutdown() {
+synchronized (executorService) {
+if (executorService != null &amp;&amp; !executorService.isShutdown()) {
+

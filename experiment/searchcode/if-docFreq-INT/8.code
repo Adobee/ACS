@@ -1,0 +1,10 @@
+public int get(String term) {
+String key = indexName + &quot;#&quot; + term;
+Integer docFreq = realCache.getIfPresent(key);
+if (docFreq == null) return -1;
+else return docFreq;
+}
+
+@Override
+public void put(String term, int docFreq) {
+

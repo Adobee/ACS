@@ -1,0 +1,7 @@
+String requestPath = request.getRequestURI();
+String requestParam = request.getQueryString();
+if (null != requestParam) {
+requestPath += &quot;?&quot; + requestParam;
+}
+if (requestPath.indexOf(&quot;&amp;&quot;) > -1) {// 去掉其他参数
+

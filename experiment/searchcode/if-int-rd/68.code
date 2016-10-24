@@ -1,0 +1,14 @@
+is now [1,1,2,2,3].
+*/
+public class RemoveDupArrayII {
+public int removeDuplicates(int[] A) {
+if (A == null)
+return A.length;
+
+int cnt = 0;
+int rd = 1;
+int wr = 1;
+int prev = A[0];
+
+for (rd = 1; rd < A.length; rd++) {
+

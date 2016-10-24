@@ -1,0 +1,10 @@
+return this.name.hashCode();
+}
+
+private Object readResolve() {
+if (this.equals(RangeType.FULL)) {
+return RangeType.FULL;
+}
+if (this.equals(RangeType.POSITIVE)) {
+return RangeType.POSITIVE;
+

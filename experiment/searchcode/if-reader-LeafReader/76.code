@@ -1,0 +1,12 @@
+import java.util.List;
+
+/**
+* {@link IndexReaderContext} for {@link LeafReader} instances.
+*/
+public final class LeafReaderContext extends IndexReaderContext {
+private final LeafReader reader;
+private final List<LeafReaderContext> leaves;
+
+/**
+* Creates a new {@link LeafReaderContext}
+

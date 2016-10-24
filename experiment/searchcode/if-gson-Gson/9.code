@@ -1,0 +1,10 @@
+private GsonBuilder gsonBuilder = null;
+
+public Gson gson() {
+if (gsonBuilder == null) {
+gsonBuilder = new GsonBuilder().setPrettyPrinting();
+}
+
+if (gson == null) {
+gson = gsonBuilder.create();
+

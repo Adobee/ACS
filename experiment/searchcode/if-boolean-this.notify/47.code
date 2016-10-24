@@ -1,0 +1,13 @@
+private boolean hasReallyBeenNotified=false;
+private boolean notifyIsBlocked;
+public void setNotifiedTrue(){
+if(notifyIsBlocked)
+return;
+else{
+return hasReallyBeenNotified;
+}
+
+public synchronized void customNotifyAll() {
+if(notifyIsBlocked){
+return;
+

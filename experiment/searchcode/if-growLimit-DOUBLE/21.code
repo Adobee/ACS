@@ -1,0 +1,10 @@
+* Factor for expanding the interval.
+*/
+private final double growLimit;
+/**
+* Counter for function evaluations.
+double w = xB - ((xB - xC) * tmp2 - (xB - xA) * tmp1) / denom;
+double wLim = xB + growLimit * (xC - xB);
+double fW;
+if((w - xC) * (xB - w) > 0) {
+

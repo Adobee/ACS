@@ -1,0 +1,7 @@
+// Lenient comparators will not ever accept 0 as a return value.
+// The only common user case is when sorting map entries by value.
+
+private boolean lenient = false;
+public boolean isLenient() { return this.lenient; }
+public ComparatorAbstract<T> setLenient(boolean lenient) { this.lenient = lenient; return this; }
+

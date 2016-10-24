@@ -1,0 +1,8 @@
+SQLiteDatabase db = this.getReadableDatabase();
+Cursor cs = db.query(tableName, column, null, null, null, null, null);
+int csLength = cs.getCount();
+if (csLength > 0) {
+data = true;
+}
+cs.close();
+

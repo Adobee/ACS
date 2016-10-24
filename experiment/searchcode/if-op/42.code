@@ -1,0 +1,11 @@
+public static KernelOp findSubstitute(Op op) {
+KernelOp kop=opMap.get(op);
+if (kop!=null) return kop;
+kop=classMap.get(op.getClass());
+KernelOp op=registerKernelOp(name,javaOp);
+if (registerClass) classMap.put(javaOp.getClass(), op);
+return op;
+}
+
+}
+

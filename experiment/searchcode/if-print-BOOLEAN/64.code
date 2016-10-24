@@ -1,0 +1,10 @@
+class Cond extends Special {
+public Cond() { }
+
+void print(Node t, int n, boolean p) {
+printElements((Cons)t.getCdr(), n, isQuote);
+}
+@Override
+void printQuote(Node t, int n, boolean p) {
+if(!p)
+

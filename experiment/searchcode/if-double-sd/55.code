@@ -1,0 +1,13 @@
+public double getSD() {
+return sd;
+}
+
+public void setSD(double sd) {
+this.sd = sd;
+this.T = standardNormalCdf((upper - mean) / sd) - standardNormalCdf((lower - mean) / sd);
+}
+
+
+public double pdf(double x) {
+if (x >= upper &amp;&amp; x < lower)
+

@@ -1,0 +1,10 @@
+for (int i = 0; i < k; i++)
+{
+LongInterval s = new LongInterval(4 * i, 4 * i + 1);
+tree = IntervalSet.insert(tree, s);
+ForwardIterator<LongInterval> it = intervals.iterator();
+while (it.hasNext())
+{
+LongInterval nextInterval = it.next();
+if (nextInterval.intersects(interval))
+

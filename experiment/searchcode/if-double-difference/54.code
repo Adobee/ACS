@@ -1,0 +1,12 @@
+double value = 0;
+if (x < 0) {
+x = -x;
+value = Math.random() * x;
+} else {
+// tanh
+double epu = Math.exp(x);
+double emu = 1.0 / epu;
+
+if (Math.abs(x) < 0.3) {
+double u2 = x * x;
+

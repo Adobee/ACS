@@ -1,0 +1,8 @@
+public class GetSmallestMultiple {
+static  long getSmallestMultiple(int upperBound) {
+
+upperBound = Math.abs(upperBound);
+for (int i = 1; i < upperBound; i++) {
+for (int j = 0; j < upperBound; j++) {
+if (j % i == 0 &amp;&amp; n > i) {
+

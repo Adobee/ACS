@@ -1,0 +1,13 @@
+public static void manageNotificaiton(Context context) {
+if (isRunning) return;
+isRunning = true;
+
+try {
+Notificaton newNf = Server.getNotification(context);
+LocalBroadcastManager.getInstance(context).sendBroadcast(intent);
+
+}
+
+private static int compare(Notificaton oldNf, Notificaton newNf) {
+if (oldNf.isEmpty() &amp;&amp; !newNf.isEmpty())
+

@@ -1,0 +1,7 @@
+public void updateDependentObjects(DynamicColumn dynamicColumn) {
+if(dynamicColumn.getExstendedTables()== ExstendedTables.CLIENT){
+clientDynamicValueDAO.saveOrUpdate(dynamicValue);
+c.getDynamicValueList().put(dynamicColumn, dynamicValue) ;
+}
+}else if(dynamicColumn.getExstendedTables()==ExstendedTables.MEETING){
+

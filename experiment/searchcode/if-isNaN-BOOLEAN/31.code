@@ -1,0 +1,8 @@
+public static boolean update (CycleProcess process, Cycle cycle) throws PhysicsException {
+boolean processUpdated = false;
+if (Float.isNaN(process.energyChange)) {
+process.energyChange = 0.0f;
+if (!Float.isNaN(process.start.temperature)) {
+if (!Float.isNaN(process.end.temperature)) {
+if (process.start.temperature != process.end.temperature) {
+

@@ -1,0 +1,6 @@
+selNb.addSelectStar(tableC);
+if (idFournisseur > 1) {
+selNb.setWhere(tableC.getField(&quot;ID_FOURNISSEUR&quot;), &quot;=&quot;, idFournisseur);
+}
+List lnb = (List) base.getDataSource().execute(selNb.asString(), new ArrayListHandler());
+

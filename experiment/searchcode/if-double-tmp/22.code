@@ -1,0 +1,14 @@
+static double l1value(double[][] modelMean,double[] Mean){
+double c=0;
+double tmp;
+for(int i=0;i<modelMean.length;i++){
+System.out.println(&quot;l1:tmp value&quot;+tmp+&quot; &quot;+value);
+if (tmp<value)
+return true;
+else
+return false;
+}
+
+
+static double[] L1Form(double[][] facebase,double[] face){
+

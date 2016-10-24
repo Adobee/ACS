@@ -1,0 +1,14 @@
+//		while(true)
+//		{
+//			healthP2 -= p1.attack - p2.defense;
+//			if(healthP2 <= 0)
+//			{
+//				System.out.println(p1.name + &quot;: &quot; + healthP1 + &quot; | &quot; + p2.name + &quot;: &quot; + healthP2 );
+//				break;
+//			}
+//
+//			healthP1 -= p2.attack - p1.defense;
+//			if(healthP1 <= 0)
+//			{
+//				System.out.println(p1.name + &quot;: &quot; + healthP1 + &quot; | &quot; + p2.name + &quot;: &quot; + healthP2 );
+

@@ -1,0 +1,9 @@
+* the total number of hits made. **/
+private double playerAccuracy = 0;
+/** game board. **/
+private BombButton[][] grid3;
+double thisAccuracy = this.getAccuracy();
+double otherAccuracy = scoreIn.getAccuracy();
+int compared = 0;
+if (thisAccuracy > otherAccuracy)
+

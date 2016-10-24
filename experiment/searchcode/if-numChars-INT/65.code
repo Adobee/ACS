@@ -1,0 +1,9 @@
+public String getRandomAlphanumericString(int numChars) {
+if (numChars<=0) {
+throw new IllegalArgumentException(&quot;numChars must be greater than 0&quot;);
+}
+String result = new BigInteger(numChars*5, randomSource).toString(32);
+return result;
+}
+}
+

@@ -1,0 +1,12 @@
+System.out.println(&quot;\na: &quot; + Arrays.toString(a));
+if (a.length == 0) {
+return -1;
+}
+int maxDiff = -1;
+int min = a[0];
+if (a[i] < min) {
+min = a[i];
+}
+int diff = a[i] - min;
+if (diff > maxDiff &amp;&amp; diff > 0) {
+

@@ -1,0 +1,10 @@
+import output.other.*;
+
+public class OutputCreator {
+private final VFKTableOperator vto;
+private final LADMTableOperator lto;
+public OutputCreator(String outputPath, VFKTableOperator vfkTableOperator) {
+this.vto = vfkTableOperator;
+this.lto = new LADMTableOperator();
+createOutput();
+

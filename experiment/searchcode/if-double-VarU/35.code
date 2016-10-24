@@ -1,0 +1,9 @@
+*	e-mail : schein.jefer@gmail.com
+*	Ivair Puerari
+*	e-mail : ivaair@hotmail.com
+*
+*
+*	Classe usada pelo if e while para fazer os testes logicos, e desvio caso testes
+public static boolean funcaoSe(VarU var ,String a, int value){//Se value=2 eh IF. Se value=1 eh WHILE
+int i;
+

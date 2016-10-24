@@ -1,0 +1,7 @@
+public NotificationChain basicSetAndConflict(AndConflict newAndConflict, NotificationChain msgs) {
+AndConflict oldAndConflict = andConflict;
+andConflict = newAndConflict;
+if (eNotificationRequired()) {
+ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PackagemmPackage.CONFLICT__AND_CONFLICT, oldAndConflict, newAndConflict);
+if (msgs == null) msgs = notification; else msgs.add(notification);
+

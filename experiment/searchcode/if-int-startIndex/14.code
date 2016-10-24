@@ -1,0 +1,10 @@
+public class StartIndex implements Comparable<StartIndex> {
+
+private final int startIndex;
+
+public StartIndex(int startHour) {
+this.startIndex = startHour;
+}
+
+public int getStartIndex() {
+

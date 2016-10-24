@@ -1,0 +1,11 @@
+MutationEnum mutEnum = MutationEnum.getMutationEnum(properties.getProperty(&quot;mutation&quot;).toUpperCase());
+
+Mutation mutation = null;
+
+double mutationProbability = 0.1;
+if (properties.getProperty(&quot;mutationProbability&quot;) != null) {
+mutationProbability = Double.valueOf(properties.getProperty(&quot;mutationProbability&quot;));
+}
+double  alleleProb = 0.01;
+if (properties.getProperty(&quot;Mutation.alleleProb&quot;) != null) {
+

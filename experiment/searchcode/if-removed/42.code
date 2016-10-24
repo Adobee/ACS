@@ -1,0 +1,8 @@
+int count = getTotalCount(new RemovedInfoCountSpecification(RemovedInfo.class, queryModel));
+if(count==0){return null;}
+
+List<RemovedInfo> list = getAll(new RemovedInfoQueryModelSpecification(RemovedInfo.class, queryModel,pageModel));
+public RemovedInfo editRemovedInfo(RemovedInfo entity) throws DomainException {
+RemovedInfo info = getByKey(RemovedInfo.class, entity.getId());
+if(null == info){throw new DomainException(&quot;未查询到指定的已迁户人员信息&quot;);}
+

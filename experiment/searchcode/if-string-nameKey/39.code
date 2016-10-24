@@ -1,0 +1,12 @@
+@Expose
+public String nameKey;
+
+public String toString() {
+return name;
+}
+
+public Map<String, String> toTokenMap() {
+StringBuffer sb = new StringBuffer();
+sb.append(&quot;District(district&quot;).append(id).append(&quot;):\n&quot;);
+if (StringUtils.isNotEmpty(name)) {
+

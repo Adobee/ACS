@@ -1,0 +1,13 @@
+throw new ProtocolException(&quot;Client-sent frames must be masked. Server sent must not.&quot;);
+}
+frameLength = i &amp; 0x7f;
+if (frameLength == 126L)
+{
+frameLength = (long)source.readShort() &amp; 65535L;
+if (frameLength == 127L)
+{
+frameLength = source.readLong();
+if (frameLength < 0L)
+{
+throw new ProtocolException((new StringBuilder(&quot;Frame length 0x&quot;)).append(Long.toHexString(frameLength)).append(&quot; > 0x7FFFFFFFFFFFFFFF&quot;).toString());
+

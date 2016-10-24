@@ -1,0 +1,6 @@
+public static Throwable getActualThrowable(Throwable ex) {
+if (ex == null) {
+return (Throwable) ex;
+e = ((UndeclaredThrowableException) ex).getUndeclaredThrowable();
+} else if (ex instanceof ServletException) {
+

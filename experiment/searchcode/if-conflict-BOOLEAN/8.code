@@ -1,0 +1,10 @@
+Cursor c = database.query(DBOpenHelper.TABLE_CONFLICT, allColumns, null, null, null, null, null);
+
+if (c.getCount() > 0) {
+while (c.moveToNext()) {
+Cursor c = database.query(DBOpenHelper.TABLE_CONFLICT, allColumns, where, null, null, null, null);
+
+if (c.getCount() > 0) {
+while (c.moveToNext()) {
+conflict.setId(c.getString(c.getColumnIndex(DBOpenHelper.COLUMN_CONFLICT_ID)));
+

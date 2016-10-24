@@ -1,0 +1,19 @@
+@Override
+public int compareTo (final FlexibleDisplayMode o) {
+long cmp0, cmp1;
+
+cmp0 = this.height * this.width;
+cmp1 = o.height * o.width;
+
+if (cmp0 < cmp1) {
+return -1;
+}
+
+if (cmp0 > cmp1) {
+return 1;
+}
+
+return 0;
+}
+}
+

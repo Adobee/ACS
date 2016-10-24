@@ -1,0 +1,8 @@
+public static int indexOfAnyBut(String str, String searchChars)
+{
+if (isEmpty(str.toCharArray()) || isEmpty(searchChars.toCharArray()))
+return -1;
+
+for (int i = 0; i < str.length(); i++)
+if (searchChars.indexOf(str.charAt(i)) < 0)
+

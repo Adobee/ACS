@@ -1,0 +1,12 @@
+public MatrixSeriesCollection(MatrixSeries series) {
+this.seriesList = new java.util.ArrayList();
+
+if (series != null) {
+return getSeries(seriesIndex).getItemCount();
+}
+
+
+
+public MatrixSeries getSeries(int seriesIndex) {
+if ((seriesIndex < 0) || (seriesIndex > getSeriesCount())) {
+

@@ -1,0 +1,16 @@
+package sfBugs;
+
+public class Bug1732118 {
+Object filter;
+
+public Object getFilter() {
+this.filter = filter;
+}
+
+public synchronized int getHash() {
+if (filter != null)
+return filter.hashCode();
+return 0;
+}
+}
+

@@ -1,0 +1,11 @@
+import com.infonuascape.osrshelper.utils.http.HTTPRequest;
+import com.infonuascape.osrshelper.utils.http.HTTPRequest.StatusCode;
+import android.net.Uri;
+HTTPRequest httpRequest = new HTTPRequest(API_URL + &quot;items.json?category=1&amp;alpha=&quot; + itemName.replace(&quot; &quot;, &quot;%20&quot;) + &quot;&amp;page=&quot; + pageNum, HTTPRequest.RequestType.GET);
+if (httpRequest.getStatusCode() == StatusCode.FOUND) { // got 200,
+return httpRequest.getOutput();
+}
+return null;
+}
+}
+

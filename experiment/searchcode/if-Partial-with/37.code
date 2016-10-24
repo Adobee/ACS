@@ -1,0 +1,11 @@
+* Executes the algorithm on a graph, starting with the initial partial tree list
+*
+* @param graph Graph for which MST is to be found
+PartialTree pt = ptlist.remove();
+
+if (pt.getArcs().isEmpty()){
+continue;
+}
+
+PartialTree.Arc arc = pt.getArcs().deleteMin();
+

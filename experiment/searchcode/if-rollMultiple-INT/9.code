@@ -1,0 +1,11 @@
+* @param dices a multiset of the dices to roll
+* @return the rolled results as a sum
+*/
+public static Integer rollMultiple(Multiset<Dice> dices) {
+return dices.stream()
+.mapToInt(dice -> roll(dice))
+.sum();
+}
+
+private static Roller get() {
+

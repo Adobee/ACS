@@ -1,0 +1,11 @@
+result[0] = t * (float)Math.pow((double)x[0], 1.0 / 3.0);
+}
+
+@Override
+public float delta(float[] x1, float[] x2) {
+float delta = Math.abs(exact - x[0]);
+
+if (maxDelta < delta) maxDelta = delta;
+
+System.out.println(&quot;t = &quot; + t[0] + &quot;, exact = &quot; + exact + &quot;, calced = &quot; + x[0] + &quot;, dalta = &quot;
+

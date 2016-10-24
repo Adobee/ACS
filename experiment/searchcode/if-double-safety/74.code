@@ -1,0 +1,9 @@
+double minAngle = 0; // angles are in games angles (degrees)
+double maxAngle = 0;
+
+public safetyCorridor( double minA, double maxA ) {
+minAngle = minA;
+// arranging angles to give shortest clock wise arc in between
+// I cannot think of a situation where safety corridor is > 180 degrees
+double hitAngle2 = math.angleNorm360( maxAngle );
+

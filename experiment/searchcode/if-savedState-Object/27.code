@@ -1,0 +1,7 @@
+protected void onSetInitialValue(boolean restoreValue, Object defaultValue) {
+if (restoreValue) {
+mValue = getPersistedInt(mValue);
+protected void onRestoreInstanceState(Parcelable state) {
+if (!state.getClass().equals(SavedState.class)) {
+super.onRestoreInstanceState(state);
+

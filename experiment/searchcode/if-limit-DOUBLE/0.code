@@ -1,0 +1,14 @@
+package publicgoodsgame.agents.jekoninator;
+
+public class Learning {
+public static double learn(double limit, double value){
+double diff = value-limit;
+
+if(diff < 0){
+return limit + diff*0.1;
+} else {
+return limit + diff*0.3;
+}
+}
+}
+

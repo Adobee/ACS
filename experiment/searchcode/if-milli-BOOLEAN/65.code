@@ -1,0 +1,21 @@
+this.milliSeconds = milliSeconds;
+}
+
+public void start(){
+this.startTime = TimeUtils.millis();
+}
+
+public boolean match(){
+return (TimeUtils.millis() - this.startTime >= this.milliSeconds) ? true : false;
+}
+
+public boolean matchThenRemove(){
+boolean match = match();
+if(match){
+Timers.removeTimer(timerName);
+}
+return match;
+}
+
+}
+

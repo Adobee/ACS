@@ -1,0 +1,8 @@
+/** Generate demand for periods [tStart, tEnd). */
+private int tEnd;
+
+private FlexArray<double[][]> epsilon;
+private void checkLastPeriod(int t) throws IllegalArgumentException {
+if (t > tEnd) {
+throw new IllegalArgumentException(&quot;Last period exceeded!&quot;);
+

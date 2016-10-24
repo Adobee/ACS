@@ -1,0 +1,8 @@
+import org.elasticsearch.common.xcontent.XContentParser;
+
+import crate.elasticsearch.action.import_.ImportContext;
+throws Exception {
+XContentParser.Token token = parser.currentToken();
+if (token.isValue()) {
+Pattern p = Pattern.compile(parser.text());
+

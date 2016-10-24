@@ -1,0 +1,9 @@
+public void SendCustomPattern(byte data[])
+{
+if(data.length > 64)
+{
+return;
+}
+byte CustomPattern[] = new byte[24+1];//+1是加上字符长度
+BluetoothGattCharacteristic characteristic = map.get(RBLService.UUID_BLE_SHIELD_CUSTOMECOMMAND);
+

@@ -1,0 +1,12 @@
+Filter<T> f = t ->
+{
+for (Filter<T> filter : filters)
+if (filter != null &amp;&amp; !filter.check(t))
+return false;
+for (Filter<T> filter : filters)
+if (filter != null &amp;&amp; filter.check(t))
+return true;
+return false;
+};
+return f;
+

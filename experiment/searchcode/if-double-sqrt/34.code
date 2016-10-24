@@ -1,0 +1,12 @@
+return r * r * t / 2.0;
+}
+
+static double g(double u, double v, double x, double y) {
+double a = Math.sqrt(v * v - x * x);
+double A = s(v, 0.5 * Math.PI - 2.0 * Math.asin(x / v)) + x * a;
+A = a * a - A;
+A = (a - x) * (a - x) - A;
+if (u > x) {
+double b = Math.sqrt(u * u - x * x);
+double B = s(u, 0.5 * Math.PI - 2.0 * Math.asin(x / u)) + x * b;
+

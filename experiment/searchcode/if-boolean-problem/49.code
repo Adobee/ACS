@@ -1,0 +1,17 @@
+super(ObjectComparator.get());
+}
+
+public boolean contains(Problem p) {
+return super.contains(p);
+}
+
+public boolean contains(Problem.Type t) {
+for (Problem p:this){
+if (p.type() == t){
+return true;
+}
+}
+return false;
+}
+}
+

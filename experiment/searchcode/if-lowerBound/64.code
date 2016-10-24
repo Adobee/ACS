@@ -1,0 +1,9 @@
+String[] splits = label.split(&quot;,&quot;, 2);
+if(splits.length > 1) {
+lowerBound = splits[0].substring(1);
+upperBound = splits[1].substring(0, splits[1].length()-1);
+return stringValue.compareTo(lowerBound);
+} else {
+int lb = stringValue.compareTo(lowerBound);
+if(lb == 0) {
+

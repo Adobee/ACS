@@ -1,0 +1,9 @@
+sumScore += round.getHitsScoreInRound();
+if (notFinalRound(round)) {
+sumScore += round.getBonusScore(nextRoundOf(round)) + getBonusForStrikeStreak(round);
+return sumScore;
+}
+
+private int getBonusForStrikeStreak(Round round) {
+if (round.isStrikeStreak(nextRoundOf(round)))
+

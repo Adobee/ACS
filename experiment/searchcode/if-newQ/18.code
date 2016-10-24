@@ -1,0 +1,10 @@
+ArrayList<String> edits = queryWithEdits.cloneEditHistory(); // deep copy of the object
+edits.add(currEdit);
+
+if (checkIfWordsAreInDict(newQuery, isEdits2)) {
+QueryWithEdits newQ = new QueryWithEdits(edits, newQuery);
+if (isEdits2) {
+newQ.score = newQ.computeScore(originalQuery, languageModel, noisyChannelModel);
+
+if (newQ.score > bestScoreSoFar) {
+

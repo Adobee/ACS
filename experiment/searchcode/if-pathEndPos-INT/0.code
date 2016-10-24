@@ -1,0 +1,11 @@
+public static String decodePath(String uri) {
+if (uri == null) {
+return null;
+}
+
+int pathEndPos = uri.indexOf(&#39;?&#39;);
+if (pathEndPos < 0) {
+return normalizePath(uri);
+} else {
+return normalizePath(uri.substring(0, pathEndPos));
+

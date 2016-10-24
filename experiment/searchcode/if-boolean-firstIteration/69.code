@@ -1,0 +1,10 @@
+private static final Log LOG = LogFactory.getLog(Map2RecordReader.class);
+
+private boolean firstIteration;
+private String[] indices;
+private TrackedSegments trackedSegs = new TrackedSegments();
+public boolean nextKeyValue() throws IOException {
+if (firstIteration) {
+firstIteration = false;
+return true;
+

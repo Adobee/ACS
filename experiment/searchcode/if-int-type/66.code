@@ -1,0 +1,9 @@
+package com.intuit.cg.lang.simplexslt;
+
+public class IntType extends NumericType{
+public IntType(String strName){
+public boolean isInt(){return true;}
+
+public boolean isAssignable(Type t){ //float <=int, int is assignable TO Decimal
+if((t instanceof IntType)|| (t instanceof FloatType))
+

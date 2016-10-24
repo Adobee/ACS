@@ -1,0 +1,9 @@
+this.fs = fs;
+
+if(fs.getSettings().isPosix() &amp;&amp; path.length() > 1 &amp;&amp; path.endsWith(fs.getSeparator())) {
+path = path.substring(0, path.length() - 1);
+}
+
+if(fs.getSettings().isPosix()) {
+//the root path can be empty, but no other path is
+

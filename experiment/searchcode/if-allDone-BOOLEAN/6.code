@@ -1,0 +1,10 @@
+public class ParallelAnimation extends CompoundAnimation {
+private boolean done = false;
+
+public void onStart(long startTime) {
+for(Animateable a : animators) {
+public void update(long currentTime) {
+boolean allDone = true;
+for(Animateable a : animators) {
+if(!a.isDone()) {
+

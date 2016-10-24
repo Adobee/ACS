@@ -1,0 +1,8 @@
+private static String NOK = &quot;Impossible&quot;;
+
+public String ableToGet(int x, int y) {
+if (x == 0 &amp;&amp; y == 0) return OK;
+while (x > 0 &amp;&amp; y > 0) {
+int xm = x % 3;
+int ym = y % 3;
+

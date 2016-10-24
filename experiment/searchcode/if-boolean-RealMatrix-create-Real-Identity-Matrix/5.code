@@ -1,0 +1,10 @@
+this.matrix = MatrixUtils.createRealIdentityMatrix(4);
+}
+
+public double getScale() {
+return scale;
+public RealMatrix getTranslationMatrix() {
+RealMatrix matrix = MatrixUtils.createRealIdentityMatrix(4);
+
+matrix.setColumn(3, new double[]{ translation.getX(), translation.getY(), translation.getZ(), 1 });
+

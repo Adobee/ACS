@@ -1,0 +1,12 @@
+int  factory;
+int week;
+final int WEEKS = 52;
+final int FACTORIES = 4;
+int count1 = 0;
+for(week = 1; week <= WEEKS; ++week)
+{
+factory = 1 + (int) (Math.random() * FACTORIES);
+if(factory  == 1)
+{
+display(factory);
+

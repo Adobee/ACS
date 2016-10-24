@@ -1,0 +1,18 @@
+package number;
+
+public class Multiplication {
+public static int times(int a, int b) {
+int count = 0;
+
+for(int i = 0; i < 32; i++) {
+if ((b &amp; 1) == 1) {
+count += a << i;
+}
+
+b = b >> 1;
+}
+
+return count;
+}
+}
+

@@ -1,0 +1,14 @@
+public static synchronized void adicionarNaLista(List<String> newPalavras) {
+
+proibidas.addAll(newPalavras);
+}
+
+
+public static String filtrar(String paramBusca) {
+
+if(paramBusca == null || paramBusca.isEmpty())
+for(int i = 0;i<palavras.length;i++) {
+if(!proibidas.contains(palavras[i])) {
+sb.append(palavras[i]);
+sb.append(&quot; &quot;);
+

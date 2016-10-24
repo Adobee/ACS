@@ -1,0 +1,10 @@
+den = input.next();
+
+if (num.equals(&quot;0&quot;) &amp;&amp; den.equals(&quot;0&quot;)) break;
+
+double result = (double) Integer.valueOf(num) / (double) Integer.valueOf(den);
+numSB.deleteCharAt(i);
+denSB.deleteCharAt(j);
+
+double newResult = (double) Integer.valueOf(numSB.toString()) / (double) Integer.valueOf(denSB.toString());
+

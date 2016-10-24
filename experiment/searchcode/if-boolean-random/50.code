@@ -1,0 +1,14 @@
+protected AbstractDataSet(Random random) {
+if (random == null) {
+random = new Random();
+}
+
+mRandom = random;
+}
+
+protected boolean shouldKeep(double prob) {
+return mRandom.nextDouble() < prob;
+}
+
+}
+

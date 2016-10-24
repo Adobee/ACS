@@ -1,0 +1,8 @@
+protected double                   workModeChoiceLogsumA;
+protected double                   schoolModeChoiceLogsumA;
+protected double                   retailAccessibility;
+allAdultsAtHome = value;
+}
+
+public void setWorkAccessForMandatoryDap(double logsum)
+

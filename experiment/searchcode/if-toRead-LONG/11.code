@@ -1,0 +1,10 @@
+// How many bytes could be read in the current array yet?
+int currentBytes = currentArr.length - readPtr;
+if (toRead <= currentBytes) {
+read += toRead;
+if (readPtr == len0) {
+readPtr = 0;
+}
+available -= toRead;
+return read - doff;
+

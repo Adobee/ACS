@@ -1,0 +1,10 @@
+public class TimerWatcher extends Observable implements Runnable {
+
+private long endTime;
+private long startTime;
+private boolean running;
+
+// endTime in seconds
+public TimerWatcher(long endTime) {
+this.startTime = System.currentTimeMillis();
+

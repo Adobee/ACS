@@ -1,0 +1,11 @@
+static double currentRatio;
+static double minRatio = 0.1,
+maxRatio = 0.5;
+
+static double turnDegrees = 180;
+newPilot();
+printRatio();
+buttonPressed = doTest();
+if(buttonPressed == Button.ID_LEFT)
+minRatio = currentRatio;
+

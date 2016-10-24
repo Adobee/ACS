@@ -1,0 +1,10 @@
+public class TOutputStreamTransport extends TTransport {
+
+private OutputStream outputStream;
+
+@Override
+public boolean isOpen() {
+public void write(byte[] bytes, int index, int length) throws TTransportException {
+if (this.outputStream == null) {
+throw new TTransportException(1, &quot;TOutputStreamTransport is not opend.&quot;);
+

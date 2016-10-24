@@ -1,0 +1,14 @@
+
+import java.util.Scanner;
+
+public class TheMoneyAmount {
+private int amount = 0;
+public static void main(String[] args) {
+System.out.println(&quot;Your money amount is &quot; + moneyAmount);
+}
+public void setAmount(int n) {
+this.amount = n;
+}
+private String getAmountTitle() {
+if (amount > 0 &amp;&amp; amount <= 10) {
+

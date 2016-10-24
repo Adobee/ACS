@@ -1,0 +1,11 @@
+package raytracer.utilities;
+
+public class Vector3D {
+public double	x, y, z;
+public Vector3D() {
+z=b.z-a.z;
+}
+public void set (Vector3D rhs) {
+if (this != rhs) {
+x = rhs.x; y = rhs.y; z = rhs.z;
+

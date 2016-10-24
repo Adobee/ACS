@@ -1,0 +1,6 @@
+* License along with this library; if not, write to the Free Software
+* Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+int pfxlen = Math.min(a.length, b.length);
+for (int i = 0; i < pfxlen; ++i) {
+int cmp = toUnsigned(a[i]) - toUnsigned(b[i]);
+

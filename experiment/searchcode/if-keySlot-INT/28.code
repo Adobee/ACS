@@ -1,0 +1,7 @@
+while (iterator.hasNext()) {
+KeyExpressionVisitor.KeySlot slot = iterator.next();
+// If the position of the pk columns in the query skips any part of the row k
+if (slot.getPKPosition() != pkPos + 1) {
+if (!forcedSkipScan) break;
+for (int i=pkPos + 1; i < slot.getPKPosition(); i++) {
+

@@ -1,0 +1,12 @@
+void search(String layout[], int x, int y, int prevOffsetX,
+int prevOffsetY, int restFuel) {
+if (!visited[x][y]) {
+visited[x][y] = true;
+reachableNum++;
+}
+if (restFuel == 0) {
+return;
+}
+char cell = layout[x].charAt(y);
+int offsetX[] = {};
+

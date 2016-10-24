@@ -1,0 +1,7 @@
+private final Cell[] cells;
+private final int startColumn;
+private final int startRow;
+private final Direction direction;
+
+public WordPosition(Cell[] cells, int startRow, int startColumn, Direction direction) {
+

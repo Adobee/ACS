@@ -1,0 +1,11 @@
+contentLength = Math.max(contentLength, backing.position());
+return this;
+}
+
+public long size() throws IOException {
+return contentLength;
+}
+
+public SeekableByteChannel truncate(long size) throws IOException {
+contentLength = (int) size;
+

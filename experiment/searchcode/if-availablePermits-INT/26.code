@@ -1,0 +1,7 @@
+private final Semaphore availableItems, availableSpaces;
+@GuardedBy(&quot;this&quot;) private final E[] items;
+@GuardedBy(&quot;this&quot;) private int putPosition = 0,	takePosition = 0;
+
+public BoundedBufferWithSpec(int capacity) {
+availableItems = new Semaphore(0);
+

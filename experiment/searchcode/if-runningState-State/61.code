@@ -1,0 +1,12 @@
+public void resume() {
+
+if (mState == RunningState.None || mState == RunningState.OnStop) {
+onStart();
+}
+
+if (mState != RunningState.OnResume) {
+onResume();
+}
+
+mState = RunningState.OnResume;
+

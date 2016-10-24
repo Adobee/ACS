@@ -1,0 +1,13 @@
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+
+import javax.inject.Provider;
+
+abstract class AbstractDependency implements Dependency {
+public boolean shouldBindWithAnnotation() {
+return annotation != null;
+}
+
+@Override
+public Annotation getBindingAnnotation() {
+

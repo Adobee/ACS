@@ -1,0 +1,13 @@
+// Assume for the first guess that t = x.
+double currentt = x;
+int nRefinementIterations = 5;
+for (int i=0; i<nRefinementIterations; i++){
+currentt -= dt;
+if( Math.abs(dt) < EPSILON )
+break;
+}
+return currentt;
+}
+
+protected double slopeFromT (double t, double A, double B, double C){
+

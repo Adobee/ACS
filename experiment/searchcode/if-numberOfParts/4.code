@@ -1,0 +1,12 @@
+public PartedFile(String hash, long size, String name, String baseDirectory, int numberOfParts) throws IOException {
+this.hash = hash;
+this.size = size;
+for (int i = 0; i < numberOfParts;i++) {
+if (isPartAvailable(i)) {
+counter++;
+}
+}
+return (float)counter / numberOfParts;
+}
+}
+

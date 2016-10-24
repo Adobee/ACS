@@ -1,0 +1,8 @@
+private void backtrack(int res, char[][] board, int row, int n) {
+if(row == n) {
+this.res++;
+return;
+}
+for(int j = 0; j < n; j++) {
+if(isSafe(board, row, j)) {
+

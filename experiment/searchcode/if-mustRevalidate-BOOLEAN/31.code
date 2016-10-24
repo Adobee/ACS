@@ -1,0 +1,7 @@
+final String always = properties.getOrDefault (&quot;alwaysrevalidate&quot;, &quot;false&quot;);
+alwaysRevalidate = Boolean.parseBoolean (always);
+if (!alwaysRevalidate)
+{
+final String mustRevalidate = properties.get (&quot;revalidate&quot;);
+if (mustRevalidate == null)
+

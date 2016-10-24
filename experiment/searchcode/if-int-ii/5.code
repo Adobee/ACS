@@ -1,0 +1,8 @@
+d.addInt(ii);
+if (ii > Integer.MIN_VALUE) d.addVarInt(ii);
+}
+for (int ii = Integer.MAX_VALUE; ii >= 0; ii -= 65536) {
+for (int ii = Integer.MIN_VALUE; ii <= 0; ii += 65536) {
+assertEquals(ii, i.popInt());
+if (ii > Integer.MIN_VALUE) assertEquals(ii, i.popVarInt());
+

@@ -1,0 +1,14 @@
+public static ByteCount min(ByteCount a, ByteCount b) {
+if (a.getTotalBytes() <= b.getTotalBytes()) {
+return a;
+}
+return b;
+}
+
+public ByteCount minus(ByteCount b) {
+return new ByteCount(this.getTotalBytes() + b.getTotalBytes());
+}
+
+public static ByteCount fromGigabytes(int gigabytes) {
+long totalBytes = BYTES_IN_GIGABYTE * gigabytes;
+

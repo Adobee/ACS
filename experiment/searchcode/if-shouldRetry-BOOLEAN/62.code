@@ -1,0 +1,13 @@
+public ObjectIOException(
+String message, Throwable cause, boolean shouldRetry)
+{
+super(message, cause);
+this.shouldRetry = shouldRetry;
+* This implementation returns the value that was specified for the
+* <code>shouldRetry</code> parameter in the constructor.
+*/
+public boolean shouldRetry() {
+return shouldRetry;
+}
+}
+

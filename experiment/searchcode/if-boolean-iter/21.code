@@ -1,0 +1,11 @@
+@Override
+public boolean hasNext() {
+return firstIter.hasNext() || secondIter.hasNext();
+
+}
+
+@Override
+public T next() {
+if(firstIter.hasNext())
+return firstIter.next();
+

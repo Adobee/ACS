@@ -1,0 +1,7 @@
+final ShardId shardId = new ShardId(getResult.getIndex(), request.shardId());
+if (!getResult.isExists()) {
+if (request.upsertRequest() == null &amp;&amp; !request.docAsUpsert()) {
+Object fetchedTTL = ctx.get(&quot;_ttl&quot;);
+if (fetchedTTL != null) {
+if (fetchedTTL instanceof Number) {
+

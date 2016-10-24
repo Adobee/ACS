@@ -1,0 +1,5 @@
+public static Carica getVerso(Carica c1 , Carica c2 , double k) {
+Carica rslt = null ;
+double distanza = Math.sqrt(
+Math.pow( (double)c2.getX() - (double)c1.getX(), 2 )
+

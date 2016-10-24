@@ -1,0 +1,11 @@
+public static double Times(double v1, double v2) {
+return v1*v2;
+}
+
+public static double Plus(double v1, double v2) {
+if (semiring == Semiring_Max) {
+if (v1 > v2) {
+return v1;
+} else {
+return v2;
+

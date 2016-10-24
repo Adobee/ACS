@@ -1,0 +1,6 @@
+public float calculatePercentComplete(Goal goal) {
+if (goal.getTargetCountTowardsGoal() == 0) return 0;
+long remainingGoal = goal.getTargetCountTowardsGoal() - goal.getActualCountTowardsGoal();
+if (remainingGoal > 0) {
+float loDur = lo.getExpectedDuration();
+

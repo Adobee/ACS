@@ -1,0 +1,11 @@
+package Accepted;
+
+public class JumpGameII {
+
+public int jump(int[] A) {
+if (A.length <= 1)
+return 0;
+int beg = 0;
+int end = 0;
+int result = 0;
+

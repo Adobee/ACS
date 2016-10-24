@@ -1,0 +1,9 @@
+private static final double TOLERANCE_2 = TOLERANCE * TOLERANCE;
+
+/** Split tolerance. */
+private double splitTolerance;
+public EigenDecompositionImpl(final RealMatrix matrix,
+final double splitTolerance)
+throws InvalidMatrixException {
+if (isSymmetric(matrix)) {
+

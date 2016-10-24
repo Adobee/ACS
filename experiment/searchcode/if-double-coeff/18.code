@@ -1,0 +1,12 @@
+public Polynomial add(Polynomial p) {
+double[] a, b;
+
+if (this.coeff.length < p.coeff.length) {
+a = zeroExtend(this.coeff, p.coeff.length);
+* Subtracts the given polynomial from this polynomial.
+*/
+public Polynomial subtract(Polynomial p) {
+double[] a, b;
+
+if (this.coeff.length < p.coeff.length) {
+

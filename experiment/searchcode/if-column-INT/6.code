@@ -1,0 +1,11 @@
+for (int i = 0; i <= columnCount; i++) {
+if (spotted[i])
+continue;
+result++;
+int column = i;
+while (true) {
+column += rowCount;
+if (column >= columnMod)
+column -= columnMod;
+int actualColumn = column <= columnCount ? column : columnMod - column;
+

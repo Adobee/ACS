@@ -1,0 +1,7 @@
+protected char id;
+protected int[] quadrant;
+protected int[] secondBest;
+protected int quantum;
+if (!answer.isEmpty()) {
+if (((int)answer.get(0) == quadrant[0]) &amp;&amp; ((int)answer.get(1) == quadrant[1])) {
+

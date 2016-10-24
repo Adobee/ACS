@@ -1,0 +1,13 @@
+private List<ImageView> realViewList = new ArrayList<>();
+
+private Context context;
+
+boolean isInfinite = false;
+
+public CyclePagerAdapter(Context context) {
+public void setUrlList(List<String> urls) {
+this.urlList.clear();
+this.urlList.addAll(urls);
+
+if (isInfinite &amp;&amp; urlList.size() > 1) {
+

@@ -1,0 +1,8 @@
+public class Plane {
+private static Vector3 mTmp1;
+private static Vector3 mTmp2;
+public final Vector3 mNormal;
+public PlaneSide getPointSide(Vector3 point) {
+double dist =Vector3.dot(mNormal, point) + d;
+if (dist == 0) {return PlaneSide.OnPlane;}
+

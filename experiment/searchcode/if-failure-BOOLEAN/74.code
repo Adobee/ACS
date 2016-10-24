@@ -1,0 +1,9 @@
+public abstract class BaseResult implements Serializable {
+private boolean successful;
+private int failureReasonCode;
+private String failureReason;
+* @return true if the operation was successful.  This will always return the opposite of
+*         isFailure()...
+*/
+public boolean isSuccessful () {
+

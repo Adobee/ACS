@@ -1,0 +1,19 @@
+b1 =(float)(b-1);
+}
+return b1;
+}
+
+
+
+double Dz3(float b){
+double b1 = 0;
+if ( (b == Float.MAX_VALUE)){
+b1 =(double)(b+1);
+}else if(b == Float.MIN_VALUE){
+b1 =(double)(b-1);
+}
+return b1;
+}
+
+}
+

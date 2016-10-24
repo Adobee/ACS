@@ -1,0 +1,11 @@
+public class Variance extends BaseAccumulation {
+protected double mean, bias;
+protected  boolean biasCorrected = true;
+
+public Variance() {
+super(x, y);
+}
+
+public Variance(INDArray x, INDArray y, INDArray z, long n, boolean biasCorrected) {
+super(x, y, z, n);
+

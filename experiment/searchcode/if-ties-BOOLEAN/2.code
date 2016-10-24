@@ -1,0 +1,13 @@
+public class RecordWithTies extends Record implements Rankable
+{
+
+int ties = 0;
+
+public RecordWithTies()
+return super.toString() +  &quot;, &quot; + ties + &quot; ties&quot;;
+}
+
+public boolean equals(Object other)
+{
+if ( super.equals(other) &amp;&amp; other instanceof RecordWithTies )
+

@@ -1,0 +1,12 @@
+double startPointY = Double.MAX_VALUE;
+resetPointIterator();
+while (nextPoint()) {
+double curX = getX();
+if (curX < startPointX) {
+startPointX = curX;
+startPointY = getY();
+}
+}
+
+double currentPointX = startPointX;
+

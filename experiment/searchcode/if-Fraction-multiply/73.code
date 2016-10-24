@@ -1,0 +1,12 @@
+//	c = c.divide(g);
+//	d = d.divide(g);
+f.x = c;
+f.y = d;
+return f;
+}
+public Fraction multiply(Fraction fac){
+Fraction f = new Fraction();
+f.x = x.multiply(fac.x);
+f.y = y.multiply(fac.y);
+BigInteger g = f.x.gcd(f.y);
+

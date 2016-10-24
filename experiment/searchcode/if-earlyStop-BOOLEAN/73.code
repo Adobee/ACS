@@ -1,0 +1,12 @@
+private volatile transient ISet<String> recentlyClearedJobs;
+
+private volatile transient IAtomicReference<Boolean> earlyStop;
+
+private volatile transient IMap<String,Serializable> references;
+IAtomicReference<Job> r = h.getAtomicReference(&quot;job-&quot; + j.workerId());
+
+
+if(r.get() != null || !r.isNull()) {
+boolean sent = false;
+while(!sent) {
+

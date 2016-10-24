@@ -1,0 +1,7 @@
+public String getQuery(String graphIRI, String query) {
+
+if(!query.contains(&quot;from <&quot;)) {
+query = query.replace(&quot;where {&quot;, &quot;from <&quot; + graphIRI + &quot;> where {&quot;);
+}
+if(!query.contains(&quot;OFFSET&quot;)) {
+

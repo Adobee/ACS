@@ -1,0 +1,10 @@
+public String reverseWords(String s) {
+s = s.trim();
+if(s.equals(&quot;&quot;)) {
+return s;
+}
+String tmp[] = s.split(&quot; &quot;);
+s = &quot;&quot;;
+for(int i=tmp.length-1; i>=1; i--) {
+if(tmp[i].equals(&quot;&quot;) || tmp[i].equals(&quot; &quot;)) {
+

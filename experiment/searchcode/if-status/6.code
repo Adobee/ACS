@@ -1,0 +1,14 @@
+public StatusAutomat(){
+this.status = Status.UNIDENTIFIED;
+}
+
+public void identify(){
+if(status != Status.UNIDENTIFIED){
+throw new StatusException(&quot;You are already identified&quot;);
+}
+status = Status.IDENTIFIED;
+}
+
+public void selectProduct(){
+if(status != Status.IDENTIFIED &amp;&amp; status != Status.PAYMENT &amp;&amp; status != Status.PRODUCT_SELECTED){
+

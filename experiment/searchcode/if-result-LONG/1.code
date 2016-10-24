@@ -1,0 +1,6 @@
+long a = Math.abs((long) dividend);
+long b = Math.abs((long) divisor);
+
+long[] result = dividePos(a, b);
+long temp = dividend > 0 &amp;&amp; divisor < 0 || dividend < 0 &amp;&amp; divisor > 0 ? -result[0] : result[0];
+

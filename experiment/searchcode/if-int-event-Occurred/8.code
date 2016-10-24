@@ -1,0 +1,12 @@
+for (String occurredEvent : occurredEvents) {
+if (occurredEvent.equals(event)) {
+continue;
+}
+eventFollowsEvent[events.indexOf(occurredEvent)][events.indexOf(event)]++;
+occurredEvents.add(event);
+}
+
+occurredEvents.clear();
+for (int i = test.getInput().length - 1; i >=0; i--) {
+String event = test.getInput()[i].split(&quot;\\[&quot;)[0];
+

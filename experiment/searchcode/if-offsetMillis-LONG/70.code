@@ -1,0 +1,5 @@
+Matcher matcher = PATTERN.matcher(response);
+if (matcher.find() &amp;&amp; matcher.groupCount() == 2) {
+long reftimeMillis = TimeStamp.parseNtpString(matcher.group(1)).getTime();
+long offsetMillis = (long) Double.parseDouble(matcher.group(2));
+

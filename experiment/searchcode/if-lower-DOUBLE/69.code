@@ -1,0 +1,8 @@
+public class Functions {
+
+public static double integrate(DoubleFunction<Double> f, double lower, double upper) {
+if(lower >= upper) {
+return 0;
+}
+double increment = .01;
+

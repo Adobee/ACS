@@ -1,0 +1,9 @@
+public ProbabilisticDoubleInterval(double lowerEstimate, double upperEstimate, double correctnessProb, boolean isOverride) {
+assert lowerEstimate <= upperEstimate : String.format(&quot;%f > %f, which is illegal.&quot;, lowerEstimate, upperEstimate);
+return this.correctnessProb == 1d &amp;&amp; this.lowerEstimate == this.upperEstimate &amp;&amp; this.upperEstimate == exactEstimate;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+

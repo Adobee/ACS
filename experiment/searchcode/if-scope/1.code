@@ -1,0 +1,10 @@
+package io.aclt.versionmgr.model;
+
+public enum Scope {
+
+DEV(&quot;dev&quot;), SYS(&quot;sys&quot;), UAT(&quot;uat&quot;), BUAT(&quot;buat&quot;), PROD(&quot;prod&quot;);
+public static Scope value(String scope) {
+if (scope != null) {
+for (Scope b : Scope.values()) {
+if (scope.equalsIgnoreCase(b.scope)) {
+

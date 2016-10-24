@@ -1,0 +1,14 @@
+public static String convertToMinutes(int millis){
+
+int second = (millis/1000)%60;
+
+if(second<10) {
+return (millis / 60000) + &quot;.0&quot; + second;
+}
+else{
+return (millis / 60000) + &quot;.&quot; + second;
+}
+}
+
+}
+

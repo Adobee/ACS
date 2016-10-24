@@ -1,0 +1,8 @@
+protected int itemID;
+
+public ItemRarity getItemRarity() {
+if ((itemID%100)%10 == ItemRarity.LEGENDARY.id) {
+return ItemRarity.LEGENDARY;
+} else if ((itemID%100)%10 >= ItemRarity.RARE.id) {
+return ItemRarity.RARE;
+

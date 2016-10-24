@@ -1,0 +1,9 @@
+public static final DefaultBook createBook(final String name) {
+PrinterJob pj;
+PageFormat pf, pf2;
+pf = pj.defaultPage();
+if ((pf2 = pj.pageDialog(pf)) == pf)
+return null;
+
+return new DefaultBook(pj, pf2);
+

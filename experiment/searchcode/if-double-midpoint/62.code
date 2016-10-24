@@ -1,0 +1,9 @@
+if (args[i].equalsIgnoreCase(&quot;-midpoint&quot;)) {
+midpoint= new File(args[i+1]);
+}
+if (args[i].equalsIgnoreCase(&quot;-redundancy&quot;)) {
+Tree root= (Tree)(roots.elementAt(i));
+root.taxonomicPretreatment();
+double localMidpoint= root.midpoint();
+if (redundancy!=null) {
+

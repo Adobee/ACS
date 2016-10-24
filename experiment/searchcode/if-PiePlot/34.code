@@ -1,0 +1,11 @@
+import org.jfree.chart.labels.StandardPieSectionLabelGenerator;
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.data.general.DefaultPieDataset;
+import org.springframework.beans.factory.annotation.Autowired;
+public String execute(){
+if(session.get(&quot;userId&quot;)!=null){
+this.chart = formChart();
+return SUCCESS;
+}
+else{
+

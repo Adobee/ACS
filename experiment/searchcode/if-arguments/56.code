@@ -1,0 +1,9 @@
+import java.util.List;
+
+import com.enonic.xp.query.expr.ValueExpr;
+
+abstract class AbstractFunctionArguments
+void verifyNumberOfArguments( final List<ValueExpr> arguments )
+{
+if ( arguments == null || arguments.size() < getMinArguments() || arguments.size() > getMaxArguments() )
+

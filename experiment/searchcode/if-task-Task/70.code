@@ -1,0 +1,10 @@
+private List<Task> queue = new LinkedList<Task>();
+
+// 添加一项任务
+public synchronized void addTask(Task task) {
+if (task != null) {
+public synchronized void finishTask(Task task) {
+if (task != null) {
+task.setState(Task.State.FINISHED);
+queue.remove(task);
+

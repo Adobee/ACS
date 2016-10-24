@@ -1,0 +1,12 @@
+package com.demshape.dempred.grouper;
+
+public class BelowThreshold implements GrouperInterface {
+this.threshold = threshold;
+}
+
+public int getGroup(double value) {
+if (value < threshold)
+return 1;
+else
+return -1;
+

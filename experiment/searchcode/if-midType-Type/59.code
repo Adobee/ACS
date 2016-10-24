@@ -1,0 +1,6 @@
+String newMetamodelUri = MIDTypeRegistry.getExtendedMetamodelUri(newModelType);
+if (newMetamodelUri == null) { // create new metamodel file
+EClass newRootEClass = EcoreFactory.eINSTANCE.createEClass();
+newRootEClass.setName(newModelTypeName);
+if (!MIDTypeHierarchy.isRootType(this)) {
+

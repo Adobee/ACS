@@ -1,0 +1,13 @@
+* @param chance
+* @return
+*/
+public static boolean randomBoolean(double chance) {
+if (chance < 0 || 1.0 < chance)
+return Math.random() < chance;
+}
+
+public static boolean randomBoolean() {
+return randomBoolean(0.5);
+}
+}
+

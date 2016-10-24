@@ -1,0 +1,7 @@
+public Delta getDelta(Mine mine, HeuristicEngineContext ctx) {
+int minDistance = Integer.MAX_VALUE;
+List<Integer> lambdaCells = mine.getLambdaCells();
+int lambdaY = lambda / mine.getWidth();
+int distance = mine.getRobot().distanceTo(lambdaX, lambdaY);
+if (distance < minDistance) minDistance = distance;
+

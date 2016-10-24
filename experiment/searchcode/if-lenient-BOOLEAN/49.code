@@ -1,0 +1,10 @@
+* You can change this behavior by using the {@link #setLenient(boolean )} method.
+*
+* @author Sergio Bossa
+*/
+public abstract class AbstractExecuteJavascriptAction implements AjaxAction {
+.append(&quot;<script type=\&quot;text/javascript\&quot;>&quot;);
+if (this.lenient) {
+response.append(&quot;try{&quot;)
+.append(this.getJavascript())
+

@@ -1,0 +1,10 @@
+public class ModifiedClopperPearsonInterval implements BinomialConfidenceInterval {
+
+@Override
+public ConfidenceInterval createInterval(int numberOfTrials, int numberOfSuccesses, double confidenceLevel) throws NotStrictlyPositiveException, NotPositiveException, NumberIsTooLargeException, OutOfRangeException {
+(numberOfSuccesses + (numberOfTrials - numberOfSuccesses + 1) * fValueLowerBound);
+}
+
+if (numberOfSuccesses < numberOfTrials) {
+final FDistribution distributionUpperBound = new FDistribution(2 * (numberOfSuccesses + 1),
+

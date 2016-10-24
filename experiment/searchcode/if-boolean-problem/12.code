@@ -1,0 +1,14 @@
+Object obj, String description) {
+addProblem(new Problem(obj, description));
+}
+
+protected void addProblem(
+Problem problem) {
+if (problemObjects == null)
+problemObjects.add(problem);
+}
+
+@XmlAttribute
+public boolean isSane() {
+return problemObjects == null || problemObjects.isEmpty();
+

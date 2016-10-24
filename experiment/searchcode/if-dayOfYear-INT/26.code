@@ -1,0 +1,8 @@
+public void addExchangeRate(DayOfYear dayOfYear, Currency from, Currency to, double rate) {
+Map<CurrencyPair, Ratio> ratioMap = createAndReturnIfRatioMapIsEmpty(dayOfYear);
+ratioMap.put(CurrencyPair.with(from, to), Ratio.of(rate));
+private Map<CurrencyPair, Ratio> createAndReturnIfRatioMapIsEmpty(DayOfYear dayOfYear) {
+Map<CurrencyPair, Ratio> ratioMap = getRatioMapWithKey(dayOfYear);
+
+if (ratioMap == null) {
+

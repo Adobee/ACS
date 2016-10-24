@@ -1,0 +1,9 @@
+//		final ObjectName objectName = JMXHelper.objectName(name);
+//		final int decay = jsonConfig.optInt(&quot;decay&quot;, 15);
+//		if(decay<1) throw new IllegalArgumentException(&quot;Invalid decay [&quot; + decay + &quot;]&quot;);
+final EnumMap<AlarmState, NVP<Evaluation<Trace, Number, Boolean>, Number>> tmap = new EnumMap<AlarmState, NVP<Evaluation<Trace, Number, Boolean>, Number>>(AlarmState.class);
+
+
+public AlarmBuilder(final ObjectName alarmObjectName, final int decay) {
+if(alarmObjectName==null) throw new IllegalArgumentException(&quot;The alarm object name was null&quot;);
+

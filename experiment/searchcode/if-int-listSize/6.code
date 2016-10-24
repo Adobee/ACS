@@ -1,0 +1,10 @@
+private static final int DEFAULT_CAPACITY = 10;// DEFAULT_CAPACITY 容量 10
+private T[] items;
+private int listSize;
+
+public MyArrayList() {
+public void init(int initSize) {
+if (initSize < listSize)
+return;
+items = (T[]) new Object[initSize]; // 创建一个新数组
+

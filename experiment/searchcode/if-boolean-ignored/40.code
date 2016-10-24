@@ -1,0 +1,13 @@
+private final File root;
+
+private final File file;
+
+private boolean ignored;
+
+public FileContextImpl(File file, File root, boolean ignored) {
+return file.hashCode() + (root == null ? 1 : root.hashCode()) + (ignored ? 0 : 1);
+}
+
+public boolean equals(Object o) {
+if (o != null &amp;&amp; o instanceof FileContext) {
+

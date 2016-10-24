@@ -1,0 +1,17 @@
+public class LonLatImpl implements LonLat, GeoUtils {
+
+/*
+* Fields
+*/
+
+private double lon, lat;
+
+/*
+* Constructors
+*/
+
+public LonLatImpl () { set(Double.NaN,Double.NaN); }
+public final void set (final double lon, final double lat) {
+if (Double.isNaN(lon)) {
+check.that(Double.isNaN(lat));
+

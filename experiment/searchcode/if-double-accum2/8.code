@@ -1,0 +1,7 @@
+for (int b = 0; b < srcPA.numBands; b++) {
+int outRange = 0;
+double totalValues = 0.0;
+double accum2 = 0.0;
+double accum2 = 0.0;
+double accum3 = 0.0;
+

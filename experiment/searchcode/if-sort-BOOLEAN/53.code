@@ -1,0 +1,12 @@
+public abstract class AbstractCheckboxFilter<T> implements SortFilter<T> {
+
+private Boolean filterValue;
+
+private SortMode sortMode;
+
+
+protected AbstractCheckboxFilter() {
+public void setSortMode(SortMode sortMode) {
+if (sortMode == null) {
+this.sortMode = SortMode.Unsorted;
+

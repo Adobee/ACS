@@ -1,0 +1,7 @@
+private void initImageLoader(Context context) {
+int memoryCacheSize = Util.memoryCacheSize();
+MemoryCache memoryCache;
+if (VERSION.SDK_INT >= VERSION_CODES.GINGERBREAD) {
+memoryCache = new LruMemoryCache(memoryCacheSize);
+} else {
+

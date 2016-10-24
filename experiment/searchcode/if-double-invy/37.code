@@ -1,0 +1,11 @@
+SavePart equipped = data.getSubset(&quot;equipped&quot;);
+
+if(equipped != null) {
+// add each of the items from the save data to the inventory
+slots = new HashMap<Integer, InventorySlot>();
+
+SavePart slots = data.getSubset(&quot;slots&quot;);
+
+if(slots != null) {
+// add each of the items from the save data to the inventory
+

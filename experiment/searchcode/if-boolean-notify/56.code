@@ -1,0 +1,6 @@
+public static Uri buildContentUri(String table, boolean notify) {
+String notifyStr = &quot;=false&quot;;
+if (notify) {
+public static Uri getContentUri(String table, long id, boolean notify) {
+return Uri.parse(&quot;content://&quot; + AUTHORITY + &quot;/&quot; + table + &quot;/&quot; + id + &quot;?&quot; + PARAMETER_NOTIFY + &quot;=&quot; + notify);
+

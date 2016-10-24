@@ -1,0 +1,13 @@
+LatchedCallback<E> callback = callbackRef.get();
+if (callback != null) callback.close();
+}
+
+@Override
+public LatchedCallback<E> weak() {
+public void execute(E item) {
+LatchedCallback<E> callback = callbackRef.get();
+if (callback != null)
+callback.execute(item);
+}
+}
+

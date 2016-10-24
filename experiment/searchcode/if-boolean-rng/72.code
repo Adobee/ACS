@@ -1,0 +1,13 @@
+return (seed == null) ? new MersenneTwisterFast() : new MersenneTwisterFast(seed.getAndIncrement());
+}
+
+
+@Override
+public boolean nextBoolean() {
+return rng.get().nextBoolean();
+}
+
+@Override
+public boolean nextBoolean(double d) {
+return rng.get().nextBoolean(d);
+

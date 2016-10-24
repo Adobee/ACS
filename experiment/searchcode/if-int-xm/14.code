@@ -1,0 +1,11 @@
+protected int dir = 0;
+protected boolean moving = false;
+public Rectangle hitbox;
+
+
+public void move(int xm, int ym) {
+Rectangle temp = new Rectangle(x+xm+12,y+ym+12,40,40);
+
+for(int i=0; i<level.collisionbox.length; i+=1) {
+if(level.collisionbox[i] != null &amp;&amp; level.collisionbox[i].intersects(temp)) return true;
+

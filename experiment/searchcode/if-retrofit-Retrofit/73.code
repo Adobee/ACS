@@ -1,0 +1,7 @@
+private static Retrofit.Builder sInstance;
+
+private static Retrofit.Builder getInstance() {
+if (sInstance == null) {
+synchronized (RetrofitManager.class) {
+if (sInstance == null) {
+

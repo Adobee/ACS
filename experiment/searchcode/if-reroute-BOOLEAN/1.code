@@ -1,0 +1,5 @@
+final ClusterRerouteRequest clusterRerouteRequest = Requests.clusterRerouteRequest();
+clusterRerouteRequest.listenerThreaded(false);
+clusterRerouteRequest.dryRun(request.paramAsBoolean(&quot;dry_run&quot;, clusterRerouteRequest.dryRun()));
+clusterRerouteRequest.explain(request.paramAsBoolean(&quot;explain&quot;, clusterRerouteRequest.explain()));
+

@@ -1,0 +1,11 @@
+public static int getLargestContiguousSum(int[] input, int length) {
+
+int localMaximum = 0;
+int globalMaximum = 0;
+
+for(int i=0;i<length;i++) {
+
+localMaximum+=input[i];
+if(localMaximum<0) {
+localMaximum=0;
+

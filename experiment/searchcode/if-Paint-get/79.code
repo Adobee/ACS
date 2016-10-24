@@ -1,0 +1,12 @@
+public static PaintFactory getInstance(){
+if(mInstance == null){
+mInstance = new PaintFactory();
+}
+return mInstance;
+public int getTextWidth(String aText){
+return Math.round(mTextPaint.measureText(aText));
+}
+
+public Paint getTextPaint(){
+return this.mTextPaint;
+

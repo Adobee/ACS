@@ -1,0 +1,12 @@
+public static Mapper getCopyByRefMapper() {
+if (DEFAULT_MAPPER == null) {
+synchronized(MapperFactory.class) {
+if (DEFAULT_MAPPER == null) {
+DEFAULT_MAPPER = new CopyByRefMapper();
+}
+}
+}
+return DEFAULT_MAPPER;
+}
+}
+

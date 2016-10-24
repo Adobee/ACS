@@ -1,0 +1,9 @@
+IterationStrategyStack iterationStrategy, PortNode portNode) {
+super(iterationStrategy);
+this.portNode = portNode;
+}
+
+@Override
+public void doEditAction(IterationStrategyStack iterationStrategy) {
+portNode.setParent(iterationStrategy.get(0));
+

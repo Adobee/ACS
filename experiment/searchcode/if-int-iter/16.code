@@ -1,0 +1,14 @@
+int GetNode(Node head,int n) {
+Node iter = head;
+int counter = 0;
+while(iter != null) {
+while(iter != null) {
+if(counter == n) {
+return iter.data;
+}
+counter--;
+iter = iter.next;
+}
+return -1;
+}
+

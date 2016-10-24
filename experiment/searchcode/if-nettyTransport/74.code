@@ -1,0 +1,9 @@
+protected void configure() {
+bind(NettyTransport.class).asEagerSingleton();
+bind(Transport.class).to(NettyTransport.class).asEagerSingleton();
+if (JmxService.shouldExport(settings)) {
+bind(NettyTransportManagement.class).asEagerSingleton();
+}
+}
+}
+

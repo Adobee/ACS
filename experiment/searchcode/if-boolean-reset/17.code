@@ -1,0 +1,18 @@
+this.graph = graph;
+}
+
+public final boolean isActive(){
+return active;
+}
+
+public boolean activate(){
+if(!active){
+active = true;
+addToResetList();
+return true;
+}
+return false;
+}
+
+public boolean deactivate(){
+

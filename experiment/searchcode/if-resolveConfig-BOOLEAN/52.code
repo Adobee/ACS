@@ -1,0 +1,10 @@
+public static void configure(Settings settings, boolean resolveConfig) {
+if (loaded) {
+return;
+}
+loaded = true;
+// TODO: this is partly a copy of InternalSettingsPreparer...we should pass in Environment and not do all this...
+Settings.Builder settingsBuilder = Settings.builder();
+if (resolveConfig) {
+resolveConfig(environment, settingsBuilder);
+

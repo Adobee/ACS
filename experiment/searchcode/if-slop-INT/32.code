@@ -1,0 +1,9 @@
+boolean loggerDebugEnabled = logger.isDebugEnabled();
+if(loggerDebugEnabled) {
+slop = slopSerializer.toObject(slopVersioned.getValue());
+sendOneAsyncHint(slopKey, slopVersioned, nodesToTry);
+}
+
+if(loggerDebugEnabled)
+logger.debug(&quot;Slop write of key &quot; + slop.getKey() + &quot; for node &quot;
+

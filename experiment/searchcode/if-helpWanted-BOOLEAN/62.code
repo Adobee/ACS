@@ -1,0 +1,14 @@
+package com.helpWanted;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.db.PhoneName_DBAdapter;
+Cursor c = p_db.getAllTitles();
+int i = 0;
+try {
+
+if (c.moveToFirst()) {
+do {
+names.add(c.getString(1) + &quot;:&quot; + c.getString(2));
+

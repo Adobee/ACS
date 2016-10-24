@@ -1,0 +1,13 @@
+if(desc.format == Desc.FMT_DIGIT)
+{
+str.append(Formatter.getStringN(desc.len, (String)val));
+if(desc.delimiter != null)
+str.append(desc.delimiter);
+}
+}
+else
+{
+if(desc.delimiter != null)
+{
+str.append(Formatter.getStringV(desc.len, (String)val, desc.delimiter));
+

@@ -1,0 +1,15 @@
+private long startTime;
+private long elapsed;
+
+public GameTime() {
+}
+
+public void reset() {
+startTime = now();
+elapsed = 0;
+}
+
+public long elapsed() {
+if (elapsed == -1)
+elapsed = now() - startTime;
+

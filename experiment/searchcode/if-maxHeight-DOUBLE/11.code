@@ -1,0 +1,12 @@
+this.maxHeight = maxHeight;
+}
+
+@Override
+public Bitmap transform(Bitmap source) {
+if (source.getWidth() > maxWidth || source.getHeight() > maxHeight) {
+int targetWidth;
+int targetHeight;
+double aspectRatio;
+
+if (source.getWidth() > source.getHeight()) {
+

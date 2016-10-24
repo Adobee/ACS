@@ -1,0 +1,9 @@
+encoded[ charPos++ ] = BASE64_SYMBOLS[ ( byte1 &amp; 0x03 ) << 4 | ( byte2 &amp; 0xf0 ) >> 4 ];
+
+if ( bytesLeft > 1 ) {
+encoded[ charPos++ ] = BASE64_SYMBOLS[ ( byte2 &amp; 0x0f ) << 2 | ( byte3 &amp; 0xc0 ) >> 6 ];
+
+if ( bytesLeft > 2 )
+encoded[ charPos++ ] = BASE64_SYMBOLS[ byte3 &amp;0x3f ];
+else
+

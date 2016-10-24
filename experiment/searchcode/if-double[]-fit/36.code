@@ -1,0 +1,10 @@
+public static void fitStraightLine(Fit fit) {
+fixNullSig(fit);
+
+if (fit.getSigmaX() != null) {
+System.err.println(&quot;Fitting with X Errors&quot;);
+System.err.println(&quot;Fitting Gaussians&quot;);
+fixNullSig(fit);
+GaussianFit gf = new GaussianFit(fit);
+if (fit.getFit() == null) {
+

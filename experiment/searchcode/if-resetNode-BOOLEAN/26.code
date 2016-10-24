@@ -1,0 +1,15 @@
+p.currentY = p.adjacentPositions.get(index).getY();
+
+//p.makeValidMove(p.currentX, p.currentY);
+}
+
+@Override
+public void resetNode(EvolutionState state, int thread) {
+index = state.random[thread].nextInt(problem.adjacentPositions.size()-1);
+
+
+}
+
+@Override
+public boolean nodeEquals(GPNode node) {
+

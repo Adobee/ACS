@@ -1,0 +1,12 @@
+* Support class to allow event support to be achieved more tersely.
+* @author Ralph Smithen
+*/
+class AbstractFcpEventSupport<ListenerType> {
+Set<ListenerType> _listeners = Collections.synchronizedSet(new HashSet());
+public void addListener(ListenerType l){
+if(l != null)
+_listeners.add(l);
+}
+
+public void removeListener(ListenerType l){
+

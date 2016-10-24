@@ -1,0 +1,7 @@
+public class OutdatedItemException extends RuntimeException {
+private final WorldItem outdated;
+private final WorldItem updated;
+
+public OutdatedItemException(WorldItem left, WorldItem right) {
+if (left.getVersion() < right.getVersion()) {
+

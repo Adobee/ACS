@@ -1,0 +1,11 @@
+static private double fract(double x) {
+return x - Math.floor(x);
+}
+
+static private double dot2(double x1, double y1, double x2, double y2) {
+return mod289(((x * 34.0) + 1.0) * x);
+}
+
+static public double noise(double vx, double vy) {
+double dotVCYY = dot2(vx, vy, cy, cy);
+

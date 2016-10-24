@@ -1,0 +1,8 @@
+if (getClass() != obj.getClass())
+return false;
+WrappedSocketFactory other = (WrappedSocketFactory) obj;
+if (socketFactory == null) {
+if (other.socketFactory != null)
+return false;
+} else if (!socketFactory.equals(other.socketFactory))
+

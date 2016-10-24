@@ -1,0 +1,7 @@
+conn.setRequestMethod(&quot;POST&quot;);
+if (uploadKind == TransferKind.CHUNKED) {
+conn.setChunkedStreamingMode(-1);
+assertEquals(n, request.getBodySize());
+if (uploadKind == TransferKind.CHUNKED) {
+assertTrue(request.getChunkSizes().size() > 0);
+

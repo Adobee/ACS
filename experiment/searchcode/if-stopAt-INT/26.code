@@ -1,0 +1,15 @@
+private void put(JSONObject result, String myDot, Object o, String[] stopAt, String[] remove) throws JSONException
+{
+if (o instanceof JSONObject)
+recurse(myDot, result, (JSONObject) o, stopAt, remove);
+else if (o instanceof JSONArray)
+put(result, myDot+&quot;[&quot;+i+&quot;]&quot;, subo, stopAt, remove);
+}
+}
+else
+{
+if (stopAt != null)
+{
+String shortest = null;
+for (String stop : stopAt)
+

@@ -1,0 +1,6 @@
+return null != constant ? constant : forward ? type.getConstant(true) : null;
+}
+
+public boolean hasShape(boolean forward) {
+return null != shape ? true : forward ? type.hasShape(true) : false;
+

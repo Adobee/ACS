@@ -1,0 +1,14 @@
+double c = Double.parseDouble(in.next());
+
+double d = Double.parseDouble(in.next());
+
+// See if this should actually be next line
+String t = Double.toString(n / m);
+
+
+double answer;
+
+if (Double.parseDouble(t) > 0)
+{
+answer = function(n, m, a, b, c, d, r, 1-2*(Double.parseDouble(t)), Double.parseDouble(t), 0, 0, t, t);
+

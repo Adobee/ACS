@@ -1,0 +1,12 @@
+for(int j=0;j<tableauPiles.get(i).getMaxCardsBeginning();j++){
+Card card = deck.getCards().pop();
+if(j+1 == tableauPiles.get(i).getMaxCardsBeginning()){
+tableauPiles.get(i).setCards(card);
+
+}
+}
+}
+
+public boolean existKlondike(){
+return emptyDeck() &amp; emptyWaste() &amp; emptyTableauPiles();
+

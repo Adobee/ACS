@@ -1,0 +1,16 @@
+System.gc();
+}
+else {
+System.runFinalization();
+}
+}
+
+void singleLineIf(boolean b)
+{
+if (b) System.gc();
+}
+
+void singleLineIfAndElse(boolean b)
+{
+if (b) System.gc(); else System.runFinalization();
+

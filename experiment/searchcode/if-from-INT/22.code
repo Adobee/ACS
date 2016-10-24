@@ -1,0 +1,9 @@
+public void nextPermutation(int[] num) {
+if (num == null || num.length < 2)
+return;
+int len = num.length;
+int from = len - 2;
+while (from >= 0 &amp;&amp; num[from] >= num[from+1])
+from--;
+if (from < 0) {
+

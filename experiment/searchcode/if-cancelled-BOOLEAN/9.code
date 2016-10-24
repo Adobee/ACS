@@ -1,0 +1,12 @@
+public abstract class CancellableEvent<TCancellableEvent extends CancellableEvent<TCancellableEvent>> extends Event<TCancellableEvent> {
+private boolean cancelled = false;
+* Gets whether or not this {@link CancellableEvent} has been cancelled yet.
+* @return Cancelled
+*/
+public boolean getCancelled() {
+return cancelled;
+}
+
+/**
+* Cancels or overrides if a {@link CancellableEvent} is cancelled.
+

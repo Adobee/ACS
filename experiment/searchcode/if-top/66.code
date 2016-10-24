@@ -1,0 +1,11 @@
+for (i = 0; i < infix.length(); i++) {
+ch = infix.charAt(i);
+
+if (ch == &#39;(&#39;) {
+top++;
+stk[top] = ch;
+} else if (ch == &#39;)&#39;) {
+while (stk[top] != &#39;(&#39;) {
+suffix[j] = stk[top];
+top--;
+

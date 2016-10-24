@@ -1,0 +1,7 @@
+public static Result get(Long idDynamicField) {
+DynamicField dynamicField = DynamicField.find.byId(idDynamicField);
+if (dynamicField == null) {
+Form<DynamicField> dynamicFieldForm = form(DynamicField.class).bindFromRequest();
+
+if (dynamicFieldForm.hasErrors()) {
+

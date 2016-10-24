@@ -1,0 +1,16 @@
+* http://en.wikipedia.org/wiki/Pearson_product-moment_correlation_coefficient
+*
+* @author Johan Henriksson
+*
+*/
+public class ColocCoefficients
+{
+
+public double sumX, sumXX, sumY, sumYY, sumXY;
+* Compare several pixels
+*/
+public void add(double[] arrX, double[] arrY)
+{
+if(arrX.length!=arrY.length)
+throw new RuntimeException(&quot;coloc arrays have different length&quot;);
+

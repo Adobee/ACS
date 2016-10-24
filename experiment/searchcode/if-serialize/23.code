@@ -1,0 +1,17 @@
+package com.protocol.serializer;
+
+public enum SerializeType {
+JSON(1),
+JAVABinary(2),
+XML(3),
+public static SerializeType getSerializeType(int num){
+for(SerializeType type : SerializeType.values()){
+if(type.getNum() == num){
+return type;
+}
+}
+return null;
+}
+
+}
+

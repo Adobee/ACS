@@ -1,0 +1,9 @@
+//If the user is not logged in, redirect to the login page
+if (customer == null) {
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;loginCustomer&quot;);
+actionResponse.addParameter(&quot;content&quot;,  request.getParameter(&quot;content&quot;));
+return actionResponse;
+}
+
+else if (request.getMethod().equals(&quot;POST&quot;)) {
+

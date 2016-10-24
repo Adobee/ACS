@@ -1,0 +1,10 @@
+public LocalDate fromTimestamp(Timestamp timestamp) {
+LocalDate date;
+
+if (timestamp == null) {
+public Timestamp toTimestamp(LocalDate localDate) {
+
+Timestamp timestamp;
+
+if ((localDate == null) || localDate.equals(LocalDate.MIN)) {
+

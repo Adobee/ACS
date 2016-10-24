@@ -1,0 +1,9 @@
+public int winProbability(int n, int k) {
+this.k = k;
+cache = new Fraction[n + 1][n];
+return getProbability(n, 0).result();
+}
+
+private Fraction getProbability(int n, int winner) {
+if (cache[n][winner] != null) {
+

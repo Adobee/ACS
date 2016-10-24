@@ -1,0 +1,8 @@
+public class DeletedFieldImpl implements DeletedField, PersistenceSpecMinorVersionUpdater {
+private final String fieldName;
+public void doUpdate(Map<String, ?> genericisedObject) {
+genericisedObject.remove(fieldName);
+}
+public void updateFieldNames(List<String> fields) {
+if (!fields.contains(fieldName))
+

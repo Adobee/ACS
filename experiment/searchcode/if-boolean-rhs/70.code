@@ -1,0 +1,10 @@
+this.lhs = lhs;
+this.rhs = rhs;
+}
+
+public Object getValue() {
+boolean lhsBool = Coercion.toBoolean( lhs.getValue() );
+if ( lhsBool ) {
+// short-circuit, avoid rhs
+return Boolean.TRUE;
+

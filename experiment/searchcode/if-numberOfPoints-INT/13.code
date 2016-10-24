@@ -1,0 +1,18 @@
+import java.util.List;
+
+
+public class DFT {
+
+private int numberOfPoints;
+private List<Point> data;
+
+public DFT(List<Point> data, int numberOfPoints){
+this.numberOfPoints = numberOfPoints;
+if (numberOfPoints > data.size()){
+completeList();
+}
+}
+
+private void completeList(){
+int dif = numberOfPoints - data.size();
+

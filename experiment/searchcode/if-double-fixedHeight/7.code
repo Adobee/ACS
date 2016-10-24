@@ -1,0 +1,8 @@
+private final Ftile tile;
+private final double fixedHeight;
+
+public FtileHeightFixed(Ftile tile, double fixedHeight) {
+final Dimension2D dim = tile.calculateDimension(stringBounder);
+if (dim.getHeight() > fixedHeight) {
+throw new IllegalStateException();
+

@@ -1,0 +1,9 @@
+List<String> ans = new ArrayList<String>();
+int row = 0;
+for (String s : newGrid) {
+int startColumn = -1;
+int curColumn = 0;
+for (Character c : s.toCharArray()) {
+if (startColumn != -1 &amp;&amp; c == &#39;.&#39;) {
+ans.add(&quot;PAINT_LINE &quot; + startColumn + &quot; &quot; + row + &quot; &quot; + (curColumn-1) + &quot; &quot; + row);
+

@@ -1,0 +1,12 @@
+this.parentState = parentState;
+}
+
+public boolean canFinalizeDocument() {
+return false;
+}
+
+public IState processCharacter(char c, Context context) {
+return this.parentState.processCharacter(c, context);
+} else if (value != null) {
+this.parentState.addAttribute(this.key, this.value);
+

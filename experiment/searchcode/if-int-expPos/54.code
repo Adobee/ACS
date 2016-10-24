@@ -1,0 +1,12 @@
+plain = parseDecimal(value,decimalSeparator);
+
+if ( column instanceof PDBBigIntColumn ) {
+r = Long.valueOf(plain);
+} else if ( column instanceof PDBDecimalColumn ) {
+String unscale;
+int scale;
+int pointPos;
+int expPos = s.indexOf(&#39;E&#39;);
+
+if ( expPos >= 0 ) {
+

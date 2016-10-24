@@ -1,0 +1,8 @@
+// to be computed on a per-shard basis
+if (indexSettings.getAsBoolean(IndexCacheModule.QUERY_CACHE_EVERYTHING, false)) {
+return this.store;
+}
+
+/** returns true if this shard supports indexing (i.e., write) operations. */
+public boolean canIndex() {
+

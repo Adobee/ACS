@@ -1,0 +1,7 @@
+Map<String, Object> map = mapFactory.newMap();
+XContentParser.Token t = parser.currentToken();
+if (t == null) {
+t = parser.nextToken();
+}
+if (t == XContentParser.Token.START_OBJECT) {
+

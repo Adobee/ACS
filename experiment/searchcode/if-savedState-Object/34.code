@@ -1,0 +1,10 @@
+super.onDialogClosed(positiveResult);
+
+if (positiveResult) {
+int value = m_picker.getCurrentHour()*60 + m_picker.getCurrentMinute();
+final Parcelable superState = super.onSaveInstanceState();
+if (isPersistent())
+return superState;
+
+final SavedState state = new SavedState(superState);
+

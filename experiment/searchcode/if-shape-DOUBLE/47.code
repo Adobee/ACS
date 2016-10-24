@@ -1,0 +1,12 @@
+public class TriangleCell extends CellModel {
+
+public TriangleCell(double shapeWidth, double shapeHeight) {
+public void moveShape(double x, double y) {
+if ((x+y) % 2 != 0) {
+getShape().setRotate(180);
+}
+getShape().relocate(x*getShapeWidth()/2, (y+1.0)*getShapeHeight());
+}
+
+}
+

@@ -1,0 +1,12 @@
+* @return cen int
+*
+*/
+public static int hashAlgoritm (String key) {
+int cen=0;
+
+cen=(int)(Double.parseDouble(key.substring(5, 12))/1.95463)%100;
+return cen;
+}
+/**
+*  Metod för att &quot;tömma&quot; listan
+

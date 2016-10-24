@@ -1,0 +1,11 @@
+private static boolean runningState;
+private int port;
+private ServerSocket sc;
+private MainThread mThread;
+// 创建服务器
+
+if (runningState) {// 如果已经开了，就不响应
+return;
+}
+sc = new ServerSocket(port);
+

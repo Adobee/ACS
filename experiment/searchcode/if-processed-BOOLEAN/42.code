@@ -1,0 +1,8 @@
+for (BooleanFormula op : processedOperands) {
+if (bfmgr.isFalse(op)) {
+return bfmgr.makeBoolean(false);
+public BooleanFormula visitOr(List<BooleanFormula> processedOperands) {
+for (BooleanFormula op : processedOperands) {
+if (bfmgr.isTrue(op)) {
+return bfmgr.makeBoolean(true);
+

@@ -1,0 +1,7 @@
+public Activity getMatjiData(JsonObject object) throws MatjiException {
+if (object == null) return null;
+
+Activity activity = new Activity();
+activity.setId(getInt(object, &quot;id&quot;));
+activity.setUserName(getString(object, &quot;user_name&quot;));
+

@@ -1,0 +1,12 @@
+* @since 3.0 Changed signature from isBlank(String) to isBlank(CharSequence)
+*/
+public static boolean isBlank(CharSequence cs) {
+int strLen;
+if (cs == null || (strLen = cs.length()) == 0) {
+public static boolean isNotBlank(CharSequence cs) {
+return !StringUtils.isBlank(cs);
+}
+
+/**
+* <p>Checks if a CharSequence is empty (&quot;&quot;) or null.</p>
+

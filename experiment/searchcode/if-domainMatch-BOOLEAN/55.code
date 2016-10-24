@@ -1,0 +1,12 @@
+&quot;Illegal &#39;domain&#39; attribute \&quot;&quot; + domain + &quot;\&quot;. Domain of origin: \&quot;&quot; + host + &quot;\&quot;&quot;);
+}
+}
+
+static boolean domainMatch(final String domain, final String host) {
+if (InetAddressUtils.isIPv4Address(host) || InetAddressUtils.isIPv6Address(host)) {
+domain = domain.toLowerCase(Locale.ROOT);
+if (host.equals(domain)) {
+return true;
+}
+boolean retValue = false;
+

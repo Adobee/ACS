@@ -1,0 +1,10 @@
+this.corpusMetadata = corpusMetadata;
+}
+
+private List<IndexedDocument> getDocumentsList() throws IOException {
+if (documents==null) {
+cacheCommonDocumentValues();
+} else if (storage.isStored(id)==false) {
+for (IndexedDocument doc : this) {
+countList.add(String.valueOf(doc.getMetadata().getTokensCount((tokenType))));
+

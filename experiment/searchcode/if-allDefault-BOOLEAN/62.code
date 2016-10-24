@@ -1,0 +1,12 @@
+this.drawCenteredString(this.fontRendererObj, this.field_146495_a, this.width / 2, 8, 16777215);
+boolean allDefault = true;
+
+for(AdvancedKeyBinding key : KeyBindingHandler.keys){
+if(!key.isDefault()){
+allDefault = false;
+break;
+}
+}
+
+this.resetButton.enabled = !allDefault;
+

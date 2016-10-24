@@ -1,0 +1,13 @@
+public static void assertNotSame(String msg, Object expected, Object actual) {
+if (expected == actual) {
+fail(msg);
+}
+}
+
+public static void assertNotSame(Object expected, Object actual) {
+assertNotSame(&quot;expected != actual : &quot; + expected + &quot; != &quot; + actual, expected, actual);
+}
+
+
+}
+

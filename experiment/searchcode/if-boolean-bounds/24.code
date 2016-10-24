@@ -1,0 +1,14 @@
+boolean returnVal = false;
+
+if(b.offScreen) {
+return false;
+}
+
+
+if(position.x < bounds.getLeft()) {
+position.x = bounds.getLeft();
+returnVal = returnVal || true;
+}
+
+if(position.x > bounds.getRight()) {
+

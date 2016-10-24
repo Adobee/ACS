@@ -1,0 +1,10 @@
+private static boolean finalized = false;
+
+private static void expect(boolean v) {
+if (! v) throw new RuntimeException();
+}
+
+protected void finalize() {
+synchronized (lock) {
+finalized = true;
+

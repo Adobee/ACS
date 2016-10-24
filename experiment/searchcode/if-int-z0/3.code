@@ -1,0 +1,12 @@
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with jyang.  If not, see <http://www.gnu.org/licenses/>.
+private Pattern path_arg = null;
+
+public YANG_Path(int id) {
+super(id);
+try {
+path_arg = Pattern
+.compile(&quot;((/([_A-Za-z][._A-Za-z0-9]*:)?[_A-Za-z][._A-Za-z0-9]*([s*([_A-Za-z][._A-Za-z0-9]*:)?[_A-Za-z][._A-Za-z0-9]*s*=s*([$]this/(../)+(([_A-Za-z][._A-Za-z0-9]*:)?[_A-Za-z][._A-Za-z0-9]*/)*([_A-Za-z][._A-Za-z0-9]*:)?[_A-Za-z][._A-Za-z0-9]*)s*])*)+|(../)*([_A-Za-z][._A-Za-z0-9]*:)?[_A-Za-z][._A-Za-z0-9]*([s*([_A-Za-z][._A-Za-z0-9]*:)?[_A-Za-z][._A-Za-z0-9]*s*=s*([$]this/(../)+(([_A-Za-z][._A-Za-z0-9]*:)?[_A-Za-z][._A-Za-z0-9]*/)*([_A-Za-z][._A-Za-z0-9]*:)?[_A-Za-z][._A-Za-z0-9]*)s*])?(/([_A-Za-z][._A-Za-z0-9]*:)?[_A-Za-z][._A-Za-z0-9]*([s*([_A-Za-z][._A-Za-z0-9]*:)?[_A-Za-z][._A-Za-z0-9]*s*=s*([$]this/(../)+(([_A-Za-z][._A-Za-z0-9]*:)?[_A-Za-z][._A-Za-z0-9]*/)*([_A-Za-z][._A-Za-z0-9]*:)?[_A-Za-z][._A-Za-z0-9]*)s*])*)+)&quot;);
+

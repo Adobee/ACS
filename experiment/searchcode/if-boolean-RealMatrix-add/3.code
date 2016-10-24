@@ -1,0 +1,10 @@
+public RealMatrix CalculateMyPoint(double lamda, RealMatrix x){
+RealMatrix dVector = myFunction.GetGradient(x).scalarMultiply(-1.);
+return x.add(dVector.scalarMultiply(lamda));
+derivationValue = DerivationOfFiByLamda(currentPoint,x);
+}
+return lamdaOpt;
+}
+
+public boolean CheckIfPointIsOptimum(RealMatrix point){
+

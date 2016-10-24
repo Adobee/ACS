@@ -1,0 +1,12 @@
+float pavg1 = 0, pavg2 = 0;
+
+//get the average of the earliest few
+
+for (int i = 0; i < sampleSize; i++) {
+int lo = R.size() - sampleSize;
+for (int i = hi; i >= lo; i--) {
+ravg2 += R.get(i);
+pavg2 += P.get(i);
+}
+ravg2 /= sampleSize;
+

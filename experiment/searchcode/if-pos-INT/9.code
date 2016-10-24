@@ -1,0 +1,9 @@
+public class Solution {
+public void sortColors(int[] A) {
+if ((A == null) || (A.length == 0)) {
+return;
+}
+
+int length = A.length;
+int redPos = -1;
+

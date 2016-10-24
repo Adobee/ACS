@@ -1,0 +1,18 @@
+// Publish the port
+if (isDistributed) {
+// if distributed, publish on registry
+p.publishPort() ;
+} else {
+this.addPort(p) ;
+
+if (this.isDistributed) {
+p.publishPort() ;
+} else {
+p.localPublishPort() ;
+}
+
+return newURI ;
+}
+
+}
+

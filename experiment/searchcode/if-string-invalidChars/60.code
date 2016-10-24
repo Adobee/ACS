@@ -1,0 +1,8 @@
+String invalidCharsInObjPathComponent(String objPathComponent) {
+String invalidChars = validateJavaIdentifier(objPathComponent, &quot;&quot;);
+return (invalidChars.length() > 0) ? invalidChars : null;
+}
+
+String invalidCharsInJavaClassName(String javaClassName) {
+if (javaClassName == null) {
+

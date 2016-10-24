@@ -1,0 +1,6 @@
+replacedStrMap.put(searchList[replaceIndex], true);
+//如果是包含在<a>标签中的内容，且a标签中显示文字完全等于关键字的内容，不替换
+//if(preNodeIsLink &amp;&amp; text.length() <= searchList[replaceIndex].length()){
+if(preNodeIsLink){
+buf.append(searchList[replaceIndex]);
+

@@ -1,0 +1,14 @@
+protected Node lookahead;
+private boolean filled;
+
+protected abstract boolean advance();
+
+public boolean hasNext() {
+if( ! filled )
+filled = advance();
+return filled;
+}
+
+public Node nextNode() {
+if( ! filled )
+

@@ -1,0 +1,9 @@
+public void setOrAnimatePlusCheckIcon(final FloatingActionButton fab, boolean isCheck,
+boolean allowAnimate) {
+if (!hasL()) {
+fab.setImageDrawable(drawable);
+}
+
+if (allowAnimate) {
+drawable.setState(isCheck ? STATE_UNCHECKED : STATE_CHECKED);
+

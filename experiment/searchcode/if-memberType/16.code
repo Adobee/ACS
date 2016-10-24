@@ -1,0 +1,12 @@
+import com.laconic.gos.member.component.MemberType;
+
+
+
+public class MemberTypeTag extends TagSupport {
+
+private MemberType memberType;
+memberType = gosMemberMgr.getCurrentMemberType();
+
+if (memberType == null) {
+return Tag.SKIP_BODY;
+

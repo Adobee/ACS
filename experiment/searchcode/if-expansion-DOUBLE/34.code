@@ -1,0 +1,10 @@
+public interface NrDynamicsFactory {
+NrDynamics create(double noiseLevel);
+
+static class Expansion implements NrDynamicsFactory {
+private static final FormatLogger log = FormatLogger.getLogger(NrDynamicsFactory.class);
+public final double relativeThreshold;
+public final double expansionRatio;
+
+public Expansion(double thresholdDb, double expansionRatio) {
+

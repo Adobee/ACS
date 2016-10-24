@@ -1,0 +1,11 @@
+package basic.unionfind;
+
+public class WeightedQuickUnion extends UnionFind {
+
+private int[] sz;
+
+public WeightedQuickUnion(int N) {
+super(N);
+sz = new int[N];
+for(int i = 0; i < N; i++) {
+

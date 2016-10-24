@@ -1,0 +1,11 @@
+public class OutArg extends Access {
+
+private IRExp irCode;
+private int offset;
+
+public OutArg(Frame frame, int i) {
+
+if (i < X86_64Frame.arguments.size()) {
+offset = -1;
+irCode = TEMP(X86_64Frame.arguments.get(i));
+

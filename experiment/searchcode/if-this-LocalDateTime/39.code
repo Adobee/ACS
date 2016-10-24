@@ -1,0 +1,12 @@
+private TimeInterval(LocalDateTime start, LocalDateTime end)
+{
+if(start.compareTo(end) > 0)
+throw new IllegalArgumentException(&quot;&#39;start&#39; must not be later than &#39;end&#39;&quot;);
+this.end = end;
+}
+
+/** 時刻インターバルの開始時刻を取得します */
+public LocalDateTime getStartTime()
+{
+return this.start;
+

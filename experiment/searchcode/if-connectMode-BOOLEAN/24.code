@@ -1,0 +1,10 @@
+int wait = 0;
+if (mConnectMode == ConnectMode.MODE_STRATEGY) {
+wait = 1;
+for (BluetoothIBridgeDevice.ConnectMode mode : BluetoothIBridgeConnManager.DefaultConnectModes) {
+mConnections.connected(socket, device);
+}
+
+void setLinkKeyNeedAuthenticated(boolean authenticated) {
+if (mListener != null) {
+

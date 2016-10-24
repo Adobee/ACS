@@ -1,0 +1,6 @@
+public double[] fitac(float[] ac,double[] xvals,double td1,boolean fixtd,boolean skip,boolean base){
+if(!fixtd){
+double[] coef=fit_linear_ac_2comp(td1,td2,ac,xvals,skip,base);
+double[] fitparams={0.0,coef[0],td1,coef[1],td2};
+if(base){
+

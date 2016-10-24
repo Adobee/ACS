@@ -1,0 +1,10 @@
+import java.util.LinkedList;
+import java.util.List;
+
+import aurora.database.DatabaseConstant;
+
+public class UpdateStatement extends AbstractStatementWithWhere implements IWithUpdateTarget {
+public UpdateStatement( String table_name, String alias ){
+this(table_name);
+if(alias!=null) updateTarget.setAlias(alias);
+

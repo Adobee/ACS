@@ -1,0 +1,7 @@
+String outString = &quot; &quot;;
+for (int i = 0; i < columns.size(); i++) {
+outString+= columns.get(i).toString() + &quot;,&quot;;
+ArrayList<DBColumn> dbColumns = selectColumns.getDBColumns();
+for(int i=0; i<dbColumns.size(); i++){
+if ( columns.indexOf( dbColumns.get(i) ) == -1 ){
+

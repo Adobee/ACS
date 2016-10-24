@@ -1,0 +1,10 @@
+int w = sc.nextInt();
+int[] a = sc.nextIntArray(n);
+int[] b = sc.nextIntArray(w);
+int[] aDiff = makeDiff(a);
+int[] bDiff = makeDiff(b);
+if (w == 1) {
+System.out.println(n);
+} else {
+System.out.println(kmp(aDiff, bDiff));
+

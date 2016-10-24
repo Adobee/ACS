@@ -1,0 +1,8 @@
+public class Solution {
+public int divide(int dividend, int divisor) {
+if(divisor == 0 || (dividend == Integer.MIN_VALUE &amp;&amp; divisor == -1)){
+return Integer.MAX_VALUE;
+}
+boolean negative = (dividend < 0) ^ (divisor < 0);
+long dividendLong = (dividend > 0 ? 1: -1) * (long) dividend;
+

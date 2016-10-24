@@ -1,0 +1,14 @@
+* Note : The original matrix is DESTROYED
+*
+*/
+public void triangulate()
+{
+for (int c=0; c<cols; c++)
+{
+if (cols > rows &amp;&amp; c==rows) break; // we have run out of rows
+private boolean swapRows (int pivotRow, int pivotCol)
+{
+for (int r=pivotRow+1; r<rows; r++)
+{
+if (rowSet[r].get(pivotCol))
+

@@ -1,0 +1,9 @@
+protected int currentProxy = -1;
+protected int poolSize = 0;
+
+public AnonymousProxyManager(String cacheFolder, int poolSize) throws IOException
+for(int i = 0; i < Math.max(1, poolSize / 2); i++)
+{
+threads.add(i, new Thread(this));
+threads.get(i).start();
+

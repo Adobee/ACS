@@ -1,0 +1,8 @@
+_memory[_position++] = (byte)((value &amp; 0xFF) ^ _sign[0]);
+if(_position > _length){
+_length = _position;
+_memory[_position++] = (byte)((value) &amp; 0xFF ^ _sign[1]);
+}
+if(_position > _length){
+_length = _position;
+

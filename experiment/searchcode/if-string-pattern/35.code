@@ -1,0 +1,10 @@
+* to also match, for example &quot;a Int&quot; where &quot;Int&quot; is the pattern.
+*
+* @param name
+* @param pattern
+*/
+VariablePattern(String name, Pattern pattern) {
+public String toString() {
+if (mPattern == null) return mName;
+return mName + &quot; &quot; + mPattern.toString();
+

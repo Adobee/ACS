@@ -1,0 +1,7 @@
+public void delFolders(final List<String> folders) {
+
+int N = folders.size();
+int L = N / MAX_LIST_PART_SIZE;
+int partCount = 1; // count: not start from zero because not index
+for (int idx = 0; idx < N &amp;&amp; partCount <= MAX_LIST_PART_SIZE; idx += L, partCount++) {
+

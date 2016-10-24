@@ -1,0 +1,8 @@
+public void testChebyshevBounds() {
+for (int k = 0; k < 12; ++k) {
+PolynomialFunction Tk = PolynomialsUtils.createChebyshevPolynomial(k);
+for (int k = 0; k < 12; ++k) {
+
+PolynomialFunction Tk0 = PolynomialsUtils.createChebyshevPolynomial(k);
+PolynomialFunction Tk1 = Tk0.polynomialDerivative();
+

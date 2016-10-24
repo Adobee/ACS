@@ -1,0 +1,9 @@
+public static Axis join(Axis axis1, Axis axis2)
+throws AxisNotJoinableException {
+if ((axis1 instanceof ValueAxis) &amp;&amp; (axis2 instanceof ValueAxis)) {
+double min2 = ((ValueAxis) axis2).getMin();
+double max2 = ((ValueAxis) axis2).getMax();
+
+if (min1 < min2) {
+res.setMin(min1);
+

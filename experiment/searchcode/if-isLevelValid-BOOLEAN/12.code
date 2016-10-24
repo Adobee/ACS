@@ -1,0 +1,9 @@
+private boolean authorised(String user, String level) {
+String role = roles.get(user);
+if (role == null) {
+logger.error(&quot; auth level for role &quot;+role+&quot; is UNDEFINED &quot; );
+return false;
+}
+if ( !isLevelValid(level) ) {
+logger.error(&quot; input auth level &quot;+level+&quot; is UNKNOWN &quot; );
+

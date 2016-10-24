@@ -1,0 +1,12 @@
+public class MediaTypeAdapter extends XmlAdapter<String, MediaType>
+{
+public MediaType unmarshal(String s) throws Exception
+{
+if (s == null) return null;
+public String marshal(MediaType mediaType) throws Exception
+{
+if (mediaType == null) return null;
+return mediaType.toString();
+}
+}
+

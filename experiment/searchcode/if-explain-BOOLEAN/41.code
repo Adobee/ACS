@@ -1,0 +1,8 @@
+public static final Pattern STARTS_WITH_EXPLAIN_PLAN = Pattern.compile(&quot;^\\s*explain\\s+plan\\s+for&quot;, Pattern.CASE_INSENSITIVE);
+
+private boolean doExplain;
+public ExecuteQueryAction(OptiqPane pane, PaneState state, boolean doExplain) {
+super(null);
+this.pane = pane;
+this.state = state;
+

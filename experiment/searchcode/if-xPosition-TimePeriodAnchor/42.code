@@ -1,0 +1,7 @@
+protected synchronized long getX(final RegularTimePeriod regularTimePeriod) {
+long n = 0L;
+if (this.xPosition == TimePeriodAnchor.START) {
+n = regularTimePeriod.getFirstMillisecond();
+}
+else if (this.xPosition == TimePeriodAnchor.MIDDLE) {
+

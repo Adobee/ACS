@@ -1,0 +1,6 @@
+protected Collection<Geometry> buildViewingTriangles(Geometry lineStrings) {
+int numGeometries = lineStrings.getNumGeometries();
+List<Geometry> triangles = new ArrayList<Geometry>(numGeometries);
+for (int i = 0; i < numGeometries; ++i) {
+Geometry line = lineStrings.getGeometryN(i);
+

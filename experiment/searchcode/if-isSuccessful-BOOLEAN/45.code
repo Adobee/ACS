@@ -1,0 +1,10 @@
+public MailResponse sendMail(MailRequest request) {
+boolean isSuccessful = false;
+for (MailSender delegate : delegates) {
+isSuccessful = delegate.send(request);
+if (isSuccessful)
+break;
+}
+
+if (isSuccessful)
+

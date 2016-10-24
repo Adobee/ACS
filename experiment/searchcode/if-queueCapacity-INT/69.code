@@ -1,0 +1,11 @@
+configuration.maxPoolSize = maxPoolSize;
+return this;
+}
+
+public Builder queueCapacity(int queueCapacity) {
+throw new IllegalStateException(&quot;keepAliveTime is: &quot; + this.configuration.keepAliveTime + &quot; but should be > 0&quot;);
+}
+
+if (this.configuration.queueCapacity < 0) {
+throw new IllegalStateException(&quot;queueCapacity is: &quot; + this.configuration.queueCapacity + &quot; but should be > 0&quot;);
+

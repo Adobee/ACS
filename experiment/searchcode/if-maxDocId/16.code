@@ -1,0 +1,9 @@
+this.filterDocIdSets = filterDocIdSets;
+Integer minDocId = null;
+Integer maxDocId = null;
+for (FilterBlockDocIdSet filterBlockDocIdSet : filterDocIdSets) {
+if (minDocId == null || filterBlockDocIdSet.getMinDocId() < minDocId) {
+minDocId = filterBlockDocIdSet.getMinDocId();
+}
+if (maxDocId == null || filterBlockDocIdSet.getMaxDocId() > maxDocId) {
+

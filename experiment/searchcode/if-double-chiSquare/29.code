@@ -1,0 +1,14 @@
+* Not Class and not feature.
+*/
+private int D;
+
+private double chiSquare;
+
+public FeatureInfo() {
+public double getChiSquare() {
+return chiSquare;
+}
+
+public void setChiSquare(double chiSquare) {
+this.chiSquare = chiSquare;
+

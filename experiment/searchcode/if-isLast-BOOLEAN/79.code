@@ -1,0 +1,13 @@
+public class MyTokenizer {
+String ori, dil, tmp;
+boolean islast = false;
+boolean from_first = true;
+
+public MyTokenizer(String ori, String dil) {
+this.from_first = from_first;
+}
+
+public boolean hasMoreTokens() {
+if(tmp.contains(dil)) return true;
+if(!islast &amp;&amp; tmp.length() > 0) {
+

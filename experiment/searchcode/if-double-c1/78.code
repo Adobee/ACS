@@ -1,0 +1,8 @@
+public int determineCallJr(double onCallCycle, int crewNumber) {
+double aNumber = (crewNumber + onCallCycle) % 4;
+if (aNumber <= 3) {
+return 0;
+public int determineCallP(double onCallCycle, int crewNumber) {
+double aNumber = (crewNumber + onCallCycle) % 4;
+if (aNumber <= 3) {
+

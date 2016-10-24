@@ -1,0 +1,6 @@
+public SameShardAllocationDecider(Settings settings) {
+this.sameHost = settings.getAsBoolean(SAME_HOST_SETTING, false);
+if (sameHost) {
+if (node.node() != null) {
+for (RoutingNode checkNode : allocation.routingNodes()) {
+

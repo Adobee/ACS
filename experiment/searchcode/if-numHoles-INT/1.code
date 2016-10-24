@@ -1,0 +1,15 @@
+System.out.println(&quot;Num holes &quot; + ans);
+}
+
+private static int findHoles() {
+int numHoles = 0;
+
+for(int i = 0; i < data.length; i++)
+numHoles = visit(i,j, numHoles);
+
+return numHoles;
+}
+
+private static int visit(int i, int j, int numHoles) {
+if(visited[i][j])
+

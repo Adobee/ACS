@@ -1,0 +1,11 @@
+private static final long DEFAULT_INITIAL_VALUE = Long.MIN_VALUE;
+
+private long value;
+
+public LongMaxWrapper() {
+long update(long x) {
+if (x > value) {
+value = x;
+}
+return value;
+

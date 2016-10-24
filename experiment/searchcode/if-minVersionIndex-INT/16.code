@@ -1,0 +1,9 @@
+public static Version randomVersionBetween(Random random, Version minVersion, Version maxVersion) {
+int minVersionIndex = 0;
+if (minVersion != null) {
+minVersionIndex = SORTED_VERSIONS.indexOf(minVersion);
+maxVersionIndex = SORTED_VERSIONS.indexOf(maxVersion);
+}
+if (minVersionIndex == -1) {
+throw new IllegalArgumentException(&quot;minVersion [&quot; + minVersion + &quot;] does not exist.&quot;);
+

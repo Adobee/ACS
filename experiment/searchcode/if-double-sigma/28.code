@@ -1,0 +1,12 @@
+public class NormGenerator {
+private double miu;
+private double sigma;
+
+public NormGenerator(double miu, double sigma) {
+this.miu = miu;
+Random r = new Random();
+double result = miu + sigma * r.nextGaussian();
+if (result > 5) {
+result = 5;
+} else if (result < 1) {
+

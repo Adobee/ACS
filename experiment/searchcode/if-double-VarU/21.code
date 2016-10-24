@@ -1,0 +1,5 @@
+double eW = this.zona.getMediaN()*this.zona.getMediaCarga();
+double varU = this.zona.getVarCarga();
+double varW = this.zona.getMediaN()*(Math.pow(this.zona.getMediaCarga(),2)+varU);
+double desvpadW = Math.sqrt(varW);
+

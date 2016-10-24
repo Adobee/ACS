@@ -1,0 +1,9 @@
+public class MessageException extends RuntimeException {
+private boolean fatal=false;
+private Throwable myCause;
+
+public MessageException(String msg) {
+super(msg);
+}
+public MessageException(String msg,boolean fatal) {
+

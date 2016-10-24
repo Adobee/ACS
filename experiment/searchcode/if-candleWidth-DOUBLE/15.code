@@ -1,0 +1,8 @@
+public void update(double closeOffset, double highOffset, double lowOffset, double candleWidth) {
+openAboveClose = closeOffset > 0;
+updateStyleClasses();
+highLowLine.setStartY(highOffset);
+highLowLine.setEndY(lowOffset);
+if (candleWidth == -1) {
+candleWidth = bar.prefWidth(-1);
+

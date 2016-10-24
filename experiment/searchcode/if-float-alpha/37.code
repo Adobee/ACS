@@ -1,0 +1,12 @@
+* 0 <= alpha <= 1 ; a smaller value basically means more smoothing
+*/
+static final float ALPHA = 0.15f;
+
+private float alpha = ALPHA;
+
+public LowPassAverage(float alpha) {
+this.alpha = alpha;
+}
+
+public float[] getAverage(float[] value, float[] average) {
+

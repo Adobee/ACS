@@ -1,0 +1,7 @@
+public ResponseEntity<ProviderType> deleteProviderTypeById(@PathVariable(&quot;id&quot;) Integer providerTypeId){
+logger.info(&quot;removing providerType by id: &quot; + providerTypeId);
+try {
+if (providerTypeService.existsProviderType(providerTypeId)){
+private Resource<ProviderType> addResourceLinkToProviderType(ProviderType providerType) throws EntityNotFoundException {
+if (providerType == null) throw new EntityNotFoundException();
+

@@ -1,0 +1,7 @@
+public class BuiltinSort extends Sort {
+static class RelationComparator<T> implements Comparator<T> {
+RelationComparator(Relation<? super T> relation) {
+@Override public int compare(T a, T b) {
+if (relation.lessThan(a, b)) return -1;
+if (relation.lessThan(b, a)) return 1;
+

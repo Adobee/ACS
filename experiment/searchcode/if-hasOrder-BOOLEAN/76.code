@@ -1,0 +1,8 @@
+Clan clan = clan();
+if (clan == null) {return;}
+boolean hasOrder = true;
+if (clan.myOrder() == null) {hasOrder = false;}
+if (hasOrder) {
+order.clear(); order.addAll(clan.myOrder().getMembers());
+pop = new Clan[order.size()];
+

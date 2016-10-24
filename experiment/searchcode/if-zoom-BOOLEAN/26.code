@@ -1,0 +1,9 @@
+this.zoomListener = listener;
+this.getZoomButtonsController().setOnZoomListener(this);
+}
+
+@Override
+public boolean onTouchEvent(MotionEvent event) {
+boolean result = super.onTouchEvent(event);
+if (event.getAction() == MotionEvent.ACTION_UP) {
+

@@ -1,0 +1,13 @@
+private Iterator<A> iterator() {
+if (this.iterator == null) {
+this.iterator = iteratorProvider.get();
+return this.iterator;
+}
+
+@Override
+public boolean hasNext() {
+return iterator().hasNext();
+}
+
+@Override
+

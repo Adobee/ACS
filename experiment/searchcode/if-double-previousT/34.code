@@ -1,0 +1,9 @@
+small epsilon to the last two */
+double myEps;
+if (path[left] >= 0)
+myEps = EPS;
+else
+double dt = nextT - previousT;
+s += Ggen.nextDouble (stream, mu2OverNu*dt, muOverNu);
+if (s <= v)
+

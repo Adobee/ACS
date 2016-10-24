@@ -1,0 +1,10 @@
+public class NewtonMethod {
+public double evaluateTask(Function task) {
+/* Объявление параметров для вычисления приблизительных значений*/
+double p = iter;//Собственно само решение с приблизтельной точностью. Дальше идет решение методом Ньютона.
+double p0;
+do
+{
+p0 = p;
+p = p0 - task.evaluate(p0)/task.evaluateDerivative(p0);
+

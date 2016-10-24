@@ -1,0 +1,9 @@
+public ByteChars append(CharSequence cs, int csoff, int cslen)
+{
+if (cslen == 0) return this;
+Class<?> clss = cs.getClass();
+return append(bc.ar_buf, bc.ar_off + csoff, cslen);
+}
+int bcoff = ar_len;
+if (bcoff + cslen > ar_buf.length - ar_off) grow(bcoff + cslen);
+

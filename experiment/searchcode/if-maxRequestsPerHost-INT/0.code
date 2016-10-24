@@ -1,0 +1,8 @@
+private int maxRequests;
+private int maxRequestsPerHost;
+private final Deque<AsyncCall> readyCalls;
+private final Deque<AsyncCall> runningCalls;
+public synchronized void setMaxRequestsPerHost(int maxRequestsPerHost) {
+if (maxRequestsPerHost < 1) {
+throw new IllegalArgumentException(&quot;max < 1: &quot; + maxRequestsPerHost);
+

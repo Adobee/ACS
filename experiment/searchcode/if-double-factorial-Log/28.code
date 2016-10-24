@@ -1,0 +1,11 @@
+public static final int OVERESTIMATED_GENE_WORLD_SIZE = Integer.parseInt(System.getProperty(&quot;gene.world.size&quot;, &quot;7000&quot;));
+
+/**
+* Pre-calculated log factorial value.
+*/
+private static final double[] logFactorial = new double[OVERESTIMATED_GENE_WORLD_SIZE + 1];
+
+static {
+logFactorial[0] = 0.0;
+for (int i = 1; i <= OVERESTIMATED_GENE_WORLD_SIZE; i++) {
+

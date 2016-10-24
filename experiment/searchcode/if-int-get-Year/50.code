@@ -1,0 +1,18 @@
+int getYear(){
+return year;
+}
+int getMonth(){
+return month;
+}
+int getDate(){
+return date;
+int y = year;
+int m = month;
+if(m == 1 || m == 2){
+y--;
+m += 12;
+}
+return (y + y / 4 - y / 100 + y / 400 + (13 * m + 8) / 5 + date) % 7;
+}
+}
+

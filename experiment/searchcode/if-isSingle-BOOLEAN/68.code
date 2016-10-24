@@ -1,0 +1,12 @@
+public class IndexedList<Е> {
+private Map<Е, List<Integer>> indexes;
+
+private final List<Е> elements;
+
+private boolean isSingle = true;
+public boolean contains(Е element) {
+if (isSingle)
+return elements.contains(element);
+
+return indexes.containsKey(element);
+

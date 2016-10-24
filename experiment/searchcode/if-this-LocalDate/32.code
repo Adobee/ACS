@@ -1,0 +1,12 @@
+private final LocalDate end;
+
+public LocalDateRange(LocalDate start, LocalDate end)
+{
+this.start = start;
+this.end = end;
+}
+
+public Iterator<LocalDate> iterator()
+{
+return new LocalDateRangeIterator(start, end);
+

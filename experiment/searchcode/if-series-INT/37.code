@@ -1,0 +1,9 @@
+public static int[] fibonacciCalculationRecursion(int num)
+{
+int[] fibonacciSeriesArray = new int[num];
+public static int[] fibonacciSeries(int index,int[] fibonacciSeriesArray)
+{
+if (index == 0)
+{
+return fibonacciSeriesArray;
+

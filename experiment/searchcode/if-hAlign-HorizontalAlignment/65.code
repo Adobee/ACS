@@ -1,0 +1,14 @@
+JRAlignment alignment = element instanceof JRAlignment ? (JRAlignment)element : null;
+if (alignment != null)
+{
+vAlign = alignment.getVerticalAlignmentValue();
+hAlign = alignment.getHorizontalAlignmentValue();
+styleWriter.write(&quot;\&quot;&quot;);
+}
+
+styleWriter.write(&quot;/>\n&quot;);
+
+if (horizontalAlignment != null)
+{
+styleWriter.write(&quot; <style:paragraph-properties&quot;);
+

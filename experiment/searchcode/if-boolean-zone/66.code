@@ -1,0 +1,8 @@
+private static Zones plugin = (Zones)Bukkit.getPluginManager().getPlugin(&quot;Zones&quot;);
+
+public static void createZone(String name, Player player){
+if(plugin.getDatabase().find(Zone.class).where().ieq(&quot;name&quot;, name).findUnique() != null)return;
+ZoneCreateEvent event = new ZoneCreateEvent(player, zone);
+plugin.getServer().getPluginManager().callEvent(event);
+if(!event.isCancelled()){
+

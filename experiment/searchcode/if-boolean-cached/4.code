@@ -1,0 +1,16 @@
+this.token = token;
+}
+
+private String token;
+
+private boolean isCached=false;
+
+private String cached;
+
+@Override
+public String getText() {
+if(isCached){
+return cached;
+}else{
+cached = StatCollector.translateToLocal(token);
+

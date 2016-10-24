@@ -1,0 +1,10 @@
+public void execute(Writer w0, Writer w1, int ntimes, List<Stock> items)
+throws Exception {
+Map root = initContextData(items);
+render(w0, w1, ntimes, root);
+Mustache template = mustacheFactory.compile(&quot;stocks.mustache.html&quot;);
+
+if (ntimes == 0) {
+template.execute(w1, root);
+w1.close();
+

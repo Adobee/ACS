@@ -1,0 +1,8 @@
+for (int day = 0; day < stock.length; day++) {
+for (int prevDay = day-(stale_limit-1); prevDay <= day; prevDay++) {
+if (customers[day] == 0) {
+break;
+}
+if (prevDay >= 0 &amp;&amp; stock[prevDay] > 0) {
+int s = Math.min(stock[prevDay], customers[day]);
+

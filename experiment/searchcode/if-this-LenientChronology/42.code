@@ -1,0 +1,11 @@
+* @throws IllegalArgumentException if chronology is null
+*/
+public static LenientChronology getInstance(Chronology base) {
+if (base == null) {
+return withUTC();
+}
+if (zone == getZone()) {
+return this;
+}
+return LenientChronology.getInstance(getBase().withZone(zone));
+

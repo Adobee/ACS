@@ -1,0 +1,8 @@
+if (obj == this) {
+return true;
+}
+if (!(obj instanceof ShapeList)) {
+int listSize = size();
+for (int i = 0; i < listSize; i++) {
+if (!ShapeUtilities.equal((Shape) get(i), (Shape) that.get(i))) {
+

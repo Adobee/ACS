@@ -1,0 +1,17 @@
+public boolean saveToReceiverCard() throws IOException
+{
+
+boolean isOk = false;
+isOk = detectReceiverCard();
+if (!isOk)
+{
+return false;
+}
+// 擦除
+isOk = doClearReceiverCard();
+if (!isOk)
+{
+return false;
+}
+// byte [] buffer = ReceiverSettingBinParser.getAllByteFromBin(new File(
+

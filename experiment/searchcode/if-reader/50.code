@@ -1,0 +1,12 @@
+package domain.impl;
+
+import java.util.List;
+
+import domain.ReaderQuery;
+import entity.Reader;
+public boolean ifReader_Exist(String readerid) {
+Reader reader=readerDao.QueryReader(readerid);
+return (reader==null)? false:true;
+}
+}
+

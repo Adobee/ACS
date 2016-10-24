@@ -1,0 +1,7 @@
+double reclaimDeletesWeight = componentSettings.getAsDouble(&quot;reclaim_deletes_weight&quot;, DEFAULT_RECLAIM_DELETES_WEIGHT);
+
+maxMergeAtOnce = adjustMaxMergeAtOnceIfNeeded(maxMergeAtOnce, segmentsPerTier);
+int newMaxMergeAtOnce = (int) segmentsPerTier;
+// max merge at once should be at least 2
+if (newMaxMergeAtOnce <= 1) {
+

@@ -1,0 +1,12 @@
+public class Region {
+double x1, x2, y1, y2, z1, z2;
+String name;
+
+public Region() {
+public boolean inside(Location p) {
+if (x1 < p.x &amp;&amp; p.x < x2 &amp;&amp; y1 < p.y &amp;&amp; p.y < y2 &amp;&amp; z1 < p.z &amp;&amp; p.z < z2)
+return true;
+return false;
+}
+}
+

@@ -1,0 +1,8 @@
+private ShardRouting genShardRouting(String index, int shardId, boolean primary) {
+
+ShardRoutingState state;
+
+int stateRandomizer = RandomizedContext.current().getRandom().nextInt(40);
+if (stateRandomizer > 5) {
+state = ShardRoutingState.STARTED;
+

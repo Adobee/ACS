@@ -1,0 +1,15 @@
+* @see org.saga.shape.BlockFilter#checkBlock(org.bukkit.block.Block)
+*/
+@Override
+public boolean checkBlock(Block block) {
+
+
+if(super.checkBlock(block.getRelative(BlockFace.DOWN))) return false;
+
+return super.checkBlock(block);
+
+}
+
+
+}
+

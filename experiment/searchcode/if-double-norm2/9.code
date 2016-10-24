@@ -1,0 +1,7 @@
+obj[4][1] = new OGRealScalar(3.74165738677394);
+
+obj[5][0] = new NORM2(new OGRealDenseMatrix(new double[][] { { 1, 2, 3 }, { 4, 5, 6 }, { 7, 8, 9 }, { 10, 11, 12 } }));
+obj[10][1] = new OGRealScalar(0.e0);
+
+obj[11][0] = new NORM2(new OGComplexDenseMatrix(new double[][] {{1,2,3}},new double[][] {{10,20,30}}));
+

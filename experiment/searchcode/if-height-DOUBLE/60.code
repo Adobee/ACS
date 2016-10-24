@@ -1,0 +1,13 @@
+private double height;
+
+public Rectangle(double x, double y, double width, double height) {
+super(x, y);
+public void setHeight(double height) {
+if (height < 0) {
+throw new IllegalArgumentException(&quot;height must be >= 0&quot;);
+}
+
+this.height = height;
+}
+}
+

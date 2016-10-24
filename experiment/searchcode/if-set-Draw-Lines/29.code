@@ -1,0 +1,11 @@
+return lines.iterator();
+}
+
+public void drawLines(int x, int y, Graphics g) {
+for (Line line : lines) {
+g.drawLine(x + (int)line.vertex1.x, y + (int)line.vertex1.y, x + (int)line.vertex2.x, y + (int)line.vertex2.y);
+}
+}
+
+public void drawColorredLines(int x, int y, Color[] colors, Graphics g) {
+

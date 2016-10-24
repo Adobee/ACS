@@ -1,0 +1,11 @@
+package ctbot.utils;
+
+public class NaviGoal {
+public NaviGoal nextGoal = null;
+public NaviGoal subGoal = null;
+public final boolean doWork() {
+if (subGoal==null)
+return work();
+if (!subGoal.doWork()){
+this.subGoal=subGoal.nextGoal;
+

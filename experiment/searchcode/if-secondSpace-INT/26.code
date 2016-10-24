@@ -1,0 +1,8 @@
+return String.format(&quot;%s %s %s&quot;, ID, Protocol.escape(m.getMessage()), m.getUserState().toProtocolString());
+}
+@Override
+public ProtocolMessage deserialize(String string) {
+if (!string.startsWith(ID))
+throw new ProtocolException(string);
+int secondSpace = string.indexOf(&quot; &quot;, ID.length()+2);
+

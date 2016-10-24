@@ -1,0 +1,10 @@
+public class CacheFileEventLogger extends FileEventLogger {
+
+private int	        maxCacheSize;
+private List<Event>	cache	= new ArrayList<Event>();
+cache.add(event);
+
+if (cache.size() == maxCacheSize) {
+writeEventsFromCache();
+cache.clear();
+

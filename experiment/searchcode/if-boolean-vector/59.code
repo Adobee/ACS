@@ -1,0 +1,17 @@
+package vector.container.generics;
+
+import vector.Vector;
+
+import java.util.Set;
+
+/**
+* Created by Dima on 22.11.2015.
+public class VectorSet<E extends Vector> extends VectorCollection<E> implements Set<E> {
+public boolean add(E e) {
+if (!this.contains(e)){
+return super.add(e);
+}
+return false;
+}
+}
+

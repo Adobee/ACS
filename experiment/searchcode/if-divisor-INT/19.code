@@ -1,0 +1,11 @@
+boolean [] prime = new boolean[n + 1];
+
+int i;
+for(i = 2; i <= n; i++) {
+prime[i] = true;
+}
+
+for(int divisor = 2; divisor * divisor <= n; divisor++) {
+if(prime[divisor]) {
+for(i = 2 * divisor; i <= n; i += divisor) {
+

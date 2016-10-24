@@ -1,0 +1,8 @@
+public class DateUtils {
+public static long getTime(Date date, boolean isEnd) {
+Calendar calendar = Calendar.getInstance();
+calendar.setTimeZone(TimeZone.getTimeZone(&quot;UTC&quot;));
+
+if (isEnd) {
+calendar.set(Calendar.HOUR_OF_DAY, 23);
+

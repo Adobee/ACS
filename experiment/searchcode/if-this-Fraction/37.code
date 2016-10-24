@@ -1,0 +1,11 @@
+package math;
+
+
+/*
+*Fraction
+*
+*It has some functions you might need, if you can think of some I haven&#39;t
+*included feel free to email me.
+*
+*add(Fraction b) - Adds b to this fraction and returns it
+

@@ -1,0 +1,7 @@
+int elementsOrVersion = readInt(DataHeader.ELEMENTS_OR_VERSION_OFFSET);
+if (size < 0) {
+throw new DeserializationException(
+public DataHeader readAndValidateDataHeader(DataHeader[] versionArray) {
+DataHeader header = readDataHeader();
+int maxVersionIndex = versionArray.length - 1;
+

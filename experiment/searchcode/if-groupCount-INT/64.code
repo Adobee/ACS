@@ -1,0 +1,11 @@
+this.typeDesc = &quot;Simple Randomization&quot;;
+}
+
+@Override
+public int getRandomGroup(Subject sub) {
+if (availGroup <= 0) return -1;
+int i = -1, availCount = -1;
+while (i < groupSize - 1 &amp;&amp; availCount < num) {
+i++;
+if (groupCount[i] < groupMax[i]) availCount++;
+

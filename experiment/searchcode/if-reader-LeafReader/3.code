@@ -1,0 +1,13 @@
+checkCorrectClassification(new KNearestNeighborClassifier(leafReader, analyzer, null, 3, 2, 1, categoryFieldName, textFieldName), TECHNOLOGY_INPUT, TECHNOLOGY_RESULT);
+} finally {
+if (leafReader != null) {
+checkCorrectClassification(new KNearestNeighborClassifier(leafReader, analyzer, query, 1, 0, 0, categoryFieldName, textFieldName), TECHNOLOGY_INPUT, TECHNOLOGY_RESULT);
+} finally {
+if (leafReader != null) {
+leafReader.close();
+}
+}
+}
+
+}
+

@@ -1,0 +1,11 @@
+throw new IllegalArgumentException(&quot;Semi-colon required at end of numeric entity&quot;);
+}
+}
+int entityValue;
+try
+{
+int entityValue;
+if (isHex) {
+entityValue = Integer.parseInt(input.subSequence(start, end).toString(), 16);
+} else {
+

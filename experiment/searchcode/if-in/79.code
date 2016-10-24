@@ -1,0 +1,11 @@
+package com.openceres.dao;
+
+import com.openceres.dao.in.FileIn;
+import com.openceres.dao.in.In;
+public static In getInstance(String source)
+{
+if(source.equals(&quot;MONGO&quot;))
+{
+return MongoIn.getInstance();
+} else if(source.equals(&quot;FILE&quot;))
+

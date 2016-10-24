@@ -1,0 +1,9 @@
+PURPOSE    : defines the &quot;Constants&quot; interface
+******************************************************************************/
+
+/* These defaults can be used in your projects; let me know if something
+you need is missing */
+int     FOURI                          = 4;
+int     FIVEI                          = 5;
+int     SIXI                           = 6;
+

@@ -1,0 +1,13 @@
+private MusicManager() {
+
+}
+
+public static void play(String song) {
+boolean changeSong = false;
+if (UnmappedMain.MUTE_MUSIC) {
+return;
+}
+if (musicManager.ogg == null) {
+changeSong = true;
+} else if (!song.equalsIgnoreCase(musicManager.currentSong)) {
+

@@ -1,0 +1,9 @@
+public Map<String, Double> unmarshal(final MapDoubleConvertor convertor) throws Exception
+{
+final List<MapEntry> entries = convertor.getEntries();
+if (entries != null &amp;&amp; entries.size() > 0)
+final Map<String, Double> map = new HashMap<String, Double>();
+for (final MapEntry mapEntry : entries)
+{
+map.put(mapEntry.getKey(), mapEntry.getValue());
+

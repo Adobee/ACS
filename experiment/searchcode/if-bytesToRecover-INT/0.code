@@ -1,0 +1,5 @@
+boolean completeRecovery = bytesToRecover == 0 || randomBoolean();
+if (completeRecovery == false) {
+bytesToRecover = randomIntBetween(1, (int) bytesToRecover);
+logger.info(&quot;performing partial recovery ([{}] bytes of [{}])&quot;, bytesToRecover, totalFileBytes - totalReusedBytes);
+

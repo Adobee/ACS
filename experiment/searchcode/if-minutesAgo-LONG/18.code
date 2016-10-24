@@ -1,0 +1,11 @@
+Date now = new Date();
+time = now.getTime() - date.getTime();
+
+long minutesAgo = TimeUnit.MILLISECONDS.toMinutes(time);
+return String.format(context.getString(is.grumpy.R.string.days_ago), days);
+}
+
+private String hoursAgo(long hours)
+{
+if (hours<1)
+

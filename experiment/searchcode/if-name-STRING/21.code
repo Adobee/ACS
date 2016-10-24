@@ -1,0 +1,10 @@
+private String url;
+private String name;
+private HashMap<String, String> headers;
+
+public Subscriber(String name) {
+this.name = name;
+}
+
+public Subscriber(String url, String name) {
+

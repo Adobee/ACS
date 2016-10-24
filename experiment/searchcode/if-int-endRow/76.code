@@ -1,0 +1,5 @@
+public void move(int endRow, int endCol, JPanel[][]boardOfImages, boardPieces[][] boardOfPieces) {
+//Moves knight on boardOfImages
+public Boolean isValidMove(int endRow, int endCol, boardPieces[][] boardOfPieces) {
+if((color == WHITE &amp;&amp; GameGUI.turnToMove == WHITE) || (color == BLACK &amp;&amp; GameGUI.turnToMove == BLACK)) {
+

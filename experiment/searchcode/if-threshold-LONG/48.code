@@ -1,0 +1,13 @@
+private static final Logger LOGGER = LoggerFactory.getLogger(ConsensusThreshold.class);
+
+long lastThresholdIncrementTS;
+int nbMSPerIncrement;
+protected int currentThreshold;
+this.lastThresholdIncrementTS=System.currentTimeMillis();
+}
+
+/**
+* @return true if thresholdMax has not been reached yet.
+*/
+public boolean awaitNextThresholdIncrement() {
+

@@ -1,0 +1,11 @@
+public LocalDate convertTo(LocalDate source, LocalDate destination) {
+if (source == null) {
+return null;
+public LocalDate convertFrom(LocalDate source, LocalDate destination) {
+if (source == null) {
+return null;
+}
+return LocalDate.from(source);
+}
+}
+

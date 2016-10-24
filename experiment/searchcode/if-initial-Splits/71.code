@@ -1,0 +1,9 @@
+for (String s; (s = input.readLine()) != null; ) {
+String[] splits = s.split(&quot;\\s+&quot;);
+knownWords.add(splits[0].toLowerCase());
+// using loaded embeddings to initial E
+
+for (int i = 0; i < E.length; ++i) {
+int index = -1;
+if (i < knownWords.size()) {
+

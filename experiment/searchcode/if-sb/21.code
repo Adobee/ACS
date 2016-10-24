@@ -1,0 +1,11 @@
+public static String formate(String cardNo) {
+
+StringBuffer sb = new StringBuffer(cardNo);
+
+if (sb.length() > 8) {
+sb.replace(sb.length() - 8, sb.length() - 4, &quot;****&quot;);
+}
+
+if (sb.length() == 16) {
+sb.insert(4, &#39; &#39;);
+

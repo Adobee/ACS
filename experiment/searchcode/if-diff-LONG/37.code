@@ -1,0 +1,11 @@
+long createdAt = formatCreatedAt.parse(createdAtString).getTime();
+
+long diff = obtainedAt - createdAt;
+long diffMonths = diff / (4L * 7L * 24L * 60L * 60L * 1000L);
+long diffMinutes = diff / (60L * 1000L) % 60;
+
+long greatestDiff;
+int greatestDiffUnitResId;
+
+if (diffMonths > 0) {
+

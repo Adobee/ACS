@@ -1,0 +1,11 @@
+Difference(List<T> added, List<T> removed) {
+this.added = added;
+this.removed = removed;
+
+if (added != null) {
+throw new IllegalStateException(&quot;List of added items is null&quot;);
+}
+
+if (removed != null) {
+this.removedCount = removed.size();
+

@@ -1,0 +1,9 @@
+public static class Builder extends MetaHeuristic.Builder<Builder> {
+
+private int maxEvaluations = 20000;
+
+public Builder(Map<String, Object> appMap,
+public Builder setMaxEvaluations(int maxEvaluations) {
+if (maxEvaluations != 0)
+this.maxEvaluations = maxEvaluations;
+

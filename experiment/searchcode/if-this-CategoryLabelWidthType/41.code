@@ -1,0 +1,6 @@
+final CategoryLabelWidthType t = (CategoryLabelWidthType) o;
+if (!this.name.equals(t.toString())) {
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(CategoryLabelWidthType.CATEGORY)) {
+return CategoryLabelWidthType.CATEGORY;
+

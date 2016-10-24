@@ -1,0 +1,9 @@
+Collection<DateTimeFieldType> fields,
+boolean extended,
+boolean strictISO) {
+
+if (fields == null || fields.size() == 0) {
+private static void checkNotStrictISO(Collection<DateTimeFieldType> fields, boolean strictISO) {
+if (strictISO) {
+throw new IllegalArgumentException(&quot;No valid ISO8601 format for fields: &quot; + fields);
+

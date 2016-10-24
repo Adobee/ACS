@@ -1,0 +1,6 @@
+*   <code>m = m + (new value - m) / (number of observations)</code></li>
+* </ol>
+* <p> If {@link #evaluate(double[])} is used to compute the mean of an array
+*  Returns <code>Double.NaN</code> if the dataset is empty. Note that
+*  Double.NaN may also be returned if the input includes NaN and / or infinite
+

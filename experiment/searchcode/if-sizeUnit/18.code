@@ -1,0 +1,7 @@
+private static final Pattern SIZE_PATTERN = Pattern.compile(&quot;(\\d+)\\s*(\\S+)&quot;);
+
+private static final Map<String, SizeUnit> SUFFIXES = ImmutableSortedMap.<String, SizeUnit>orderedBy(String.CASE_INSENSITIVE_ORDER)
+final long count = Long.parseLong(matcher.group(1));
+final SizeUnit unit = SUFFIXES.get(matcher.group(2));
+if (unit == null) {
+

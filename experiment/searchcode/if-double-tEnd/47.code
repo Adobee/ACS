@@ -1,0 +1,12 @@
+int tStart = start.getTime();
+int tEnd = end.getTime();
+
+if (time < tStart || tEnd < time)
+if (time == tStart)
+return start;
+
+if (time == tEnd)
+return end;
+
+double scale = ((double) (time - tStart)) / (tEnd - tStart);
+

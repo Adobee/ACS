@@ -1,0 +1,9 @@
+public static int compareNumbers( Object lhsValue, Object rhsValue, IType lhsType, IType rhsType )
+{
+if( JavaTypes.COMPARABLE().isAssignableFrom( lhsType ) &amp;&amp; lhsType == rhsType )
+return f1 > f2 ? 1 : f1 < f2 ? -1 : 0;
+}
+if( lhsType == JavaTypes.SHORT() || lhsType == JavaTypes.pSHORT() )
+{
+return CommonServices.getCoercionManager().makeIntegerFrom( lhsValue ).compareTo( CommonServices.getCoercionManager().makeIntegerFrom( rhsValue ) );
+

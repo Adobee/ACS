@@ -1,0 +1,13 @@
+public void add(String s) {
+
+MyValue newValue = new MyValue(s);
+if (contains(newValue)) {
+for (MyValue m : this) {
+if (m.equals(newValue)) {
+remove(m);
+newValue = m;
+}
+}
+}
+newValue.count();
+

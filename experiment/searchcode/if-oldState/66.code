@@ -1,0 +1,12 @@
+while(true) {
+State oldState = stateHolder.get();
+State newState = calcNewOnlineState(oldState, value);
+if (stateHolder.compareAndSet(oldState, newState)) {
+return;
+}
+}
+}
+
+@Override
+public State state() {
+

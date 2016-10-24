@@ -1,0 +1,13 @@
+package Progression;
+
+public class FiboProgression extends Progression {
+
+protected long prev;
+public FiboProgression(long value1, long value2) {
+first = value1;
+prev = value2;
+}
+
+public long nextValue() {
+long temp = prev;
+

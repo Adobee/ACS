@@ -1,0 +1,7 @@
+public void multiply(final Long multiplicand) {
+final BigDecimal v = _bdOrZero(multiplicand);
+_multiply(v);
+private static BigDecimal _bdOrZero(final Long v) {
+if (v == null) {
+return BigDecimal.ZERO;
+

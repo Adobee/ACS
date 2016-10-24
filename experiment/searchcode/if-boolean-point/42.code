@@ -1,0 +1,29 @@
+// TODO Auto-generated method stub
+return new Point(-X, -Y);
+}
+
+public void reduce(int i) {
+//
+if (X > 0) {
+X -= i;
+if (X < 0) {
+if (Y > 0) {
+Y -= i;
+if (Y < 0) {
+Y = 0;
+}
+}
+if (Y <0) {
+Y += i;
+if (Y > 0) {
+Y = 0;
+}
+}
+
+}
+
+public boolean Zero() {
+return X==0 &amp;&amp; Y==0;
+}
+}
+

@@ -1,0 +1,10 @@
+private int pointCount = 60;		//默认每分钟测速。 3600，每小时测速。
+//内部属性
+private int[] mpoints;
+private final Object lock = new Object();
+TimerScheduler.getScheduler().addTimer(new TimerData(this,0,60));
+}
+
+public Speedometer(int pointCount){
+if( pointCount <1 )
+

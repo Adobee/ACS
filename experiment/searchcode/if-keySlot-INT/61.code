@@ -1,0 +1,9 @@
+USEWITH_WALLOBJ(keySlot, doorObj);
+return 2500 + (java.lang.Math.abs(rnd.nextInt()) % 1000);
+}
+else if(doorObj != -1 &amp;&amp; WALLOBJINDEX[doorObj] == 11) {	// door opened - need to wait till it closes
+else {		// use red key on door
+int keySlot = GetInventorySlot(390);	// 390 = red key!
+if(keySlot == -1) {
+println(&quot;FATAL: No \&quot;red key\&quot; found, but walkToGhosts == true - Halting&quot;);
+

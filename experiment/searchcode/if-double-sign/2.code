@@ -1,0 +1,17 @@
+public Operant(char sign, Action act){
+_sign = sign;
+_act = act;
+}
+
+public double apply (double a, double b){
+return _act.act(a, b);
+}
+
+public boolean isMySign (char s){
+if(_sign == s){
+return true;
+}
+return false;
+}
+}
+

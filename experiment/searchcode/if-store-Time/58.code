@@ -1,0 +1,13 @@
+aStore.setLastUpdateTime(new Date());
+aStore.setYes(0);
+aStore.setDishCount(0l);
+pm.makePersistent(storeHistory);
+} finally {
+if (pm!=null) {
+pm.close();
+}
+}
+return aStore;
+}
+}
+

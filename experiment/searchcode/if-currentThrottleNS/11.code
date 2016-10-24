@@ -1,0 +1,6 @@
+public IndexingStats.Stats stats() {
+long currentThrottleNS = 0;
+if (isThrottled &amp;&amp; startOfThrottleNS != 0) {
+currentThrottleNS +=  System.nanoTime() - startOfThrottleNS;
+if (currentThrottleNS < 0) {
+

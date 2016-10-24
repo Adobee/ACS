@@ -1,0 +1,8 @@
+public class SliceByteBufferAllocator {
+private ByteBuffer byteBuffer = null;
+private int poolSize = 8192 * 1024;
+
+public synchronized ByteBuffer allocate(int size) {
+if (byteBuffer == null
+|| byteBuffer.capacity() - byteBuffer.limit() < size) {
+

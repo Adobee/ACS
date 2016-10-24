@@ -1,0 +1,16 @@
+private String what;
+private String expression;
+
+public Action(String line) {
+super();
+String[] lineSplit = line.split(&quot;\t&quot;);
+this.what = lineSplit[1];
+if (j==3) {
+this.expression = lineSplit[2];
+}
+}
+
+}
+
+public String getAction() {
+

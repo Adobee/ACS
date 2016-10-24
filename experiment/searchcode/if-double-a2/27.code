@@ -1,0 +1,14 @@
+public static void main(String[] args){
+
+int[] a1 = {0,1,2};
+int[] a2 = {2,3,4};
+
+
+int mid1 = (a1.length + a2.length) / 2;
+
+if((a1.length + a2.length) % 2 == 1){
+int mOdd = findMedian(a1, a2, mid1);
+
+} else {
+double mEven = (double)(findMedian(a1, a2, mid1) + findMedian(a1, a2, mid1-1))/2.0;
+

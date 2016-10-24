@@ -1,0 +1,7 @@
+private static void factorG(Matrix[] qr) {
+int pivotRow = 0;
+int pivotCol = 0;
+while (pivotRow != qr[1].height - 1 &amp;&amp; pivotCol != qr[1].width - 1) {
+private static Matrix findGMatrix(double a, double b, int pivotRow, int pivotCol, int row, int size) {
+if (a == 0 &amp;&amp; b == 0) {
+

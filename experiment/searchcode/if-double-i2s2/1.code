@@ -1,0 +1,6 @@
+* It uses the exp approximation function {@link #exp} if the exponent is >= -700
+* and the positive double value closest to 0 otherwise ( {@code Math.nextUp(0.0)} ).
+private static double gaussianHelper(final double xMinusMean, final double norm, final double i2s2) {
+final double x = -xMinusMean * xMinusMean * i2s2;
+if (x < -700) {
+

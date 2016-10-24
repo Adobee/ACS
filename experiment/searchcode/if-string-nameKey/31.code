@@ -1,0 +1,8 @@
+&quot;label.fenixDegreeType.bolonhaIntegratedMasterDegree&quot;);
+
+private final String type;
+private final String nameKey;
+private final String bundle;
+
+private FenixDegreeType(final String type, final String nameKey, final String bundle) {
+

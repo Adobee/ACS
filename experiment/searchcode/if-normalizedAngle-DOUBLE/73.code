@@ -1,0 +1,8 @@
+for (double x = rect1.getLeft(); x <= rect1.getRight(); x++) {
+for (double y = rect1.getTop(); y <= rect1.getBottom(); y++) {
+if (sprite1.containsPoint(x, y) &amp;&amp; sprite2.containsPoint(x, y)) {
+// Normalize heading to [0, 360)
+double normalizedAngle = normalizeAngle(userHeading);
+
+// Only transform heading if sprite was moving in that direction.
+

@@ -1,0 +1,10 @@
+* @param digitCount - digit count
+* @return void
+*/
+protected void generateRandomId(int digitCount) {
+boolean idDuplication = false;
+randomInt = random.nextInt((int) Math.pow(10, digitCount));
+
+if (randomInt == 0) {
+generateRandomId(digitCount);
+

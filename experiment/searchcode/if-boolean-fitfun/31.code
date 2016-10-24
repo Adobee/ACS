@@ -1,0 +1,9 @@
+double axisratio = cma.options.getFirstToken(cma.getProperties().getProperty(&quot;functionAxisRatio&quot;), 0.);
+IObjectiveFunction fitfun = new FunctionCollector(nbFunc, rotate, axisratio);
+
+// set up restarts
+double incPopSizeFactor = cma.options.getFirstToken(cma.getProperties().getProperty(&quot;incPopSizeFactor&quot;), 1.);
+
+// initialize
+if (irun == 0) {
+

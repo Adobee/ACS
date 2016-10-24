@@ -1,0 +1,8 @@
+// Skip over escaped character.
+if (ch0 == &#39;\\&#39;) {
+skip(1);
+if (isEOL(ch0)) {
+while (!atEOF() &amp;&amp; position < end &amp;&amp; !isEOL(ch0)) {
+// If escape character.
+if (ch0 == &#39;\\&#39; &amp;&amp; ch1 == &#39;u&#39;) {
+

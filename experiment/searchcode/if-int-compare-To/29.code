@@ -1,0 +1,16 @@
+public class objcompare<T> implements Comparator<T>{
+int a;
+@Override
+public int compare(T o1, T o2) {
+// TODO Auto-generated method stub
+if(o1 instanceof Integer) {
+String b = (String)o2;
+return intCompare(a,b);
+}
+
+return 0;
+}
+
+private int intCompare(int a,int b) {
+if(a<b) {
+

@@ -1,0 +1,11 @@
+public long readInt(InputStream stream) throws IOException {
+int firstByte;
+int secondByte;
+int thirdByte;
+int fourthByte;
+byte buffer[] =  new byte[4];
+int bytesRead = stream.read(buffer);
+if (bytesRead != 4){;
+
+throw new IOException(&quot;wanted to read: 4. Read &quot; + bytesRead);
+

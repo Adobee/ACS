@@ -1,0 +1,11 @@
+private int size;
+
+private ScoreDoc lastEmittedDoc;
+
+public ShardFetchRequest() {
+}
+
+public ShardFetchRequest(long id, IntArrayList list, ScoreDoc lastEmittedDoc) {
+this.id = id;
+this.docIds = list.buffer;
+

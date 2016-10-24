@@ -1,0 +1,10 @@
+package genepi.io.table;
+
+import genepi.io.table.reader.CsvTableReader;
+import genepi.io.table.reader.ExcelTableReader;
+public class TableReaderFactory {
+
+public static ITableReader getReader(String filename) {
+
+if (filename.toLowerCase().endsWith(&quot;.xls&quot;)) {
+

@@ -1,0 +1,11 @@
+for (int j = 0; j < m; j++) {
+boolean[][] matrix = new boolean[n][m];
+dfs(matrix, horiz, vert, i, j);
+
+if (!isValid(matrix, n, m)) {
+System.out.println((valid) ? &quot;YES&quot; : &quot;NO&quot;);
+}
+}
+
+private static void dfs(boolean[][] matrix, char[] horiz, char[] vert, int i, int j) {
+

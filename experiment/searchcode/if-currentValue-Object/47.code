@@ -1,0 +1,9 @@
+public ValueSupplierResult<V> addValue(V value, Object currentValue) {
+result.payload = value;
+return result;
+}
+
+public ValueSupplierResult<V> removeValue(V value, Object currentValue) {
+public void addValuesToCollection(Collection<V> collection, Object currentValue, ValueFilter<V> valueFilter) {
+if ( valueFilter.include((V)currentValue)) {
+

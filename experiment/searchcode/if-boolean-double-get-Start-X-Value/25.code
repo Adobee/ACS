@@ -1,0 +1,7 @@
+* Creates a range from a single point either to Double.MAX_VALUE or Double.MIN_VALUE.
+* @param start If true, the second bound is Double.MAX_VALUE. If false, the second bound in Double.MIN_VALUE
+* @param singleValue The single defined bound.
+*/
+public Range(boolean start, double singleValue) {
+this.start = start ? singleValue : Double.NEGATIVE_INFINITY;
+

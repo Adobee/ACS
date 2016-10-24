@@ -1,0 +1,15 @@
+* Terminates if the function value changes less than this epsilon value.
+*/
+private final double epsilon;
+
+/**
+* Remember last function value;
+* Constructor.
+*/
+public TerminatingConditionError(double epsilon) {
+this.epsilon = epsilon;
+}
+
+@Override
+public boolean terminated(double fx, double[] x) {
+

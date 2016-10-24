@@ -1,0 +1,13 @@
+public Point distanceTo(Point p, double angle) {
+double distance = Double.POSITIVE_INFINITY;
+
+for (Shape s : shapes) {
+double d = s.distanceTo(p, angle);
+distance = d;
+}
+
+if (distance == Double.POSITIVE_INFINITY)
+return null;
+
+double x = Math.cos(angle) * distance;
+

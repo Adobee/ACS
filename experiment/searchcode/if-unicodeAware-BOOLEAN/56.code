@@ -1,0 +1,9 @@
+protected REToken next = null;
+protected REToken uncle = null;
+protected int subIndex;
+protected boolean unicodeAware = true;
+* otherwise, the character itself.
+*/
+public static char toUpperCase(char ch, boolean unicodeAware) {
+if (unicodeAware) return Character.toUpperCase(ch);
+

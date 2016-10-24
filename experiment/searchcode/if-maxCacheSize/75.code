@@ -1,0 +1,9 @@
+public class MapTableEntityManager extends AbstractCacheTableEntityManager {
+
+private int maxCacheSize = 0;
+
+private Map<String, Object> cache;
+this.maxCacheSize = maxCacheSize;
+if (maxCacheSize > 0) {
+cache = Collections.synchronizedMap(new LRUMap(maxCacheSize));
+

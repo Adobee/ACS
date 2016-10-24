@@ -1,0 +1,10 @@
+@GeneratedValue
+private Long id;
+@ManyToOne(optional = false)
+private Person person;
+@Column(nullable = false)
+public String toString(boolean includeAttacker) {
+String attacker = getPerson().getName();
+
+long deltaSeconds = (getReturnDate().getTime() - new Date().getTime()) / 1000;
+

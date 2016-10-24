@@ -1,0 +1,16 @@
+public class MetadefenderClientException extends Exception {
+
+public Integer responseCode = null;
+
+
+public MetadefenderClientException(String s, int responseCode) {
+String mess = this.getMessage();
+
+if(responseCode != null) {
+mess += &quot; [code: &quot; + this.responseCode + &quot;]&quot;;
+}
+
+return mess;
+}
+}
+

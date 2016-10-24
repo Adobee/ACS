@@ -1,0 +1,8 @@
+public TimePickerDialogs(Context arg0, OnTimeSetListener callBack, int hourOfDay, int minute, boolean is24HourView) {
+super(arg0, callBack, hourOfDay, minute, is24HourView);
+//programatically changing the minutes by 30.
+if (stopEvent)
+return;
+if (minute% mMinuteBlock !=0){
+int mChaningFactor=minute-(minute% mMinuteBlock);
+

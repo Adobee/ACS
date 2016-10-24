@@ -1,0 +1,6 @@
+* @return an id, or <code>null</code> for {@link ISOChronology}.
+* @throws IllegalArgumentException if the {@link Chronology} is not supported.
+public static String getIdByChronology(final Class<? extends Chronology> clazz) throws IllegalArgumentException {
+for (final IdentifiableChronology item : values()) {
+if (clazz.equals(item._chronology.getClass())) {
+

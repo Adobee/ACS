@@ -1,0 +1,7 @@
+ChartChangeEventType that = (ChartChangeEventType) obj;
+if (!this.name.equals(that.toString())) {
+return false;
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(ChartChangeEventType.GENERAL)) {
+return ChartChangeEventType.GENERAL;
+

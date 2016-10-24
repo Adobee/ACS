@@ -1,0 +1,6 @@
+int numNodes = G.nodeCount();
+int[][][] pathLengths = new int[numNodes][numNodes][2];
+for (int i = 0; i < numNodes; i++) {
+for (int j = i + 1; j < numNodes; j++) {
+if (G.getNode(i).getSucc(j) != null) {
+

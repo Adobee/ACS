@@ -1,0 +1,13 @@
+public void addBatch(String sql) throws SQLException {
+
+if (connection.analyzeSql(sql)) {
+
+freeStatement(); // 关闭当前的查询语句
+super.addBatch(rewritten);
+}
+
+@Override
+public boolean execute(String sql) throws SQLException {
+
+if (connection.analyzeSql(sql)) {
+

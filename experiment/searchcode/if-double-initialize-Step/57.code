@@ -1,0 +1,8 @@
+x[i] += ((range[i][1] - range[i][0]) / 2) * RNG.gaussianDouble(this.mutationStepSize);
+if (range[i][0] > x[i]) {
+* @param d The mutation operator.
+*/
+public void setMutationStepSize(double d) {
+if (d < 0) {
+d = this.lowerLimitStepSize;
+

@@ -1,0 +1,11 @@
+class ThreadStorage
+{
+private Map<Long, LockState> mutexStates = new HashMap<Long, LockState>();
+private int threadId;
+public void setThreadId(int threadId) { this.threadId = threadId; }
+
+public Map<Long, LockState> getMutextStates() {
+return mutexStates;
+}
+public boolean empty() {
+

@@ -1,0 +1,10 @@
+this.method = expressionCompiler.apply(method);
+}
+
+@Override
+public void execute(CallStack stack) {
+int initialDepth = stack.depth();
+method.execute(stack);
+int nextDepth = stack.depth();
+if (nextDepth != initialDepth) {
+

@@ -1,0 +1,7 @@
+public class VoteForReviewAction implements Action {
+
+@Override
+public ActionResponse execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+if (customer == null) {
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;loginCustomer&quot;);
+

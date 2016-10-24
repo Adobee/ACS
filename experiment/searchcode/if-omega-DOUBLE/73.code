@@ -1,0 +1,8 @@
+return (p.v_sC * omega)* B_N_pow / (Math.pow(p.K_AC * omega, p.n) + B_N_pow);
+} else if (reaction == 4) {
+double M_C = x[p.M_C];
+return (p.v_mC * omega) * M_C / (p.K_mC * omega + M_C);
+} else if (reaction == 5) {
+double M_C = x[p.M_C];
+return p.k_dmc * M_C;
+

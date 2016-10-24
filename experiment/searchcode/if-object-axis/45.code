@@ -1,0 +1,13 @@
+this.measures = new ArrayList<DataMeasure>();
+}
+
+public BaseMultiAxisData(MultiAxisData data, JRBaseObjectFactory factory)
+{
+factory.put(data, this);
+axes[axisIndex] = axis;
+axisList.add(axis);
+}
+else if (existingAxis != axis)// testing for object identity
+{
+throw new JRRuntimeException(&quot;Axis &quot; + axis.getAxis() + &quot; already exists&quot;);
+

@@ -1,0 +1,10 @@
+* @param months  the months to add (can be negative).
+* @return the updated time instant.
+*/
+public long add(long instant, int months) {
+if (months == 0) {
+long yearToUse;
+long monthToUse = thisMonth - 1 + months;
+if (monthToUse >= 0) {
+yearToUse = thisYear + (monthToUse / iMax);
+

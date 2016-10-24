@@ -1,0 +1,9 @@
+public int compareTo(Data o) {
+if (o instanceof StringData) {
+StringData str = (StringData) o;
+if (isNull() &amp;&amp; o.isNull()) {
+return 0;
+}
+if (isNull() || o.isNull()) {
+return 0x7f7f7f7f;
+

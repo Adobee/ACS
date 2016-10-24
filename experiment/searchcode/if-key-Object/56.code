@@ -1,0 +1,13 @@
+* Gets key for an object.
+*
+* @param o
+*            the object.
+*/
+public String key(Object o) {
+
+if (o == null) {
+// If the object is already mapped, use existing key
+String key = objectKeyMap.get(o);
+if (key != null) {
+return key;
+

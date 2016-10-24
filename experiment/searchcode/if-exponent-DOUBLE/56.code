@@ -1,0 +1,10 @@
+import mikera.vectorz.util.DoubleArrays;
+
+public final class Power extends Op {
+private final double exponent;
+
+private Power(double d) {
+public static Op create(double exponent) {
+if (exponent==-1) return Ops.RECIPROCAL;
+if (exponent==0) return Constant.ONE;
+

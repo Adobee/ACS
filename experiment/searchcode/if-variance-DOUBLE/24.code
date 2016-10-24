@@ -1,0 +1,9 @@
+private double mean ;
+private double variance;
+
+public GaussianIntegral(double mean,double variance){
+this.mean = mean;
+double y = Math.exp(- (x - mean)*(x - mean) / (2*variance)) / Math.sqrt(2*Math.PI*variance);
+if (Double.isNaN(y) || y < 1.0E-300)
+return (1.0E-300);
+

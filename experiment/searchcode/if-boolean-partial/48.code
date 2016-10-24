@@ -1,0 +1,9 @@
+public boolean isPerfectSquare(int num) {
+if (num < 1) return false;
+int partial = 0;
+int partial2 = 0;
+int i = 0;
+int next2 = partial2 + (partial<<(i+1)) + (1<<(2*i));
+if (next2 == num) return true;
+if (next2 > num || i > maxi || next2 < 0) {
+

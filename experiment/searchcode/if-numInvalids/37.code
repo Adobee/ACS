@@ -1,0 +1,9 @@
+str += &quot;{isFolder:true, expand:true, title:&#39;&quot; + school.schoolName + &quot;&#39;, key:&#39;&quot; + school.schoolName + &quot;&#39;, children:[ &quot; + teacherObjectArray( school.teachers ) + &quot;] },&quot;;
+}
+if (schools.size() > 0)
+str = str.substring(0,str.length()-1); //remove last comma.
+ts += &quot;{ title: &#39;&quot; + teacher.username + &quot;&#39;, key:&#39;&quot; + teacher.username + &quot;|&quot; + teacher.school.schoolName + &quot;&#39;, children:[ &quot; + classroomObjectArray( teacher.classrooms ) + &quot;] },&quot;;
+}
+if (teachers.size() > 0)
+ts = ts.substring(0,ts.length()-1); //remove final comma.
+

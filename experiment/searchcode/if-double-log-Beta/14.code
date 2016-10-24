@@ -1,0 +1,11 @@
+public Beta(HMM hmm, int T) {
+this.hmm = hmm;
+this.T = T;
+}
+
+public double[] beta(int t, int[] observations) {
+beta[t] = new double[hmm.n];
+for (int i = 0; i < hmm.n; i++) {
+double b = 0.0;
+if(t == beta.length - 1) {
+

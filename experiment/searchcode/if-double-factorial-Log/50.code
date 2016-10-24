@@ -1,0 +1,10 @@
+public final class MyMath {
+
+public static final double LOG10 = Math.log(10);
+public static final double LOG2 = Math.log(2);
+* For x < 0 Double.NaN is returned.
+*/
+final public static double factorial(double x) {
+
+if (x < 0) return Double.NaN; // bugfix Michael Borcherds 2008-05-04
+

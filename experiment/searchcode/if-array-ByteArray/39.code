@@ -1,0 +1,7 @@
+public int findIdx(byte[] byteArray) {
+if (byteArray == null || byteArray.length == 0) {
+throw new IllegalArgumentException(&quot;Byte array cannot be null or empty&quot;);
+}
+int idx = byteArray.length - 1;
+for (; idx > 0 &amp;&amp; byteArray[idx] == 0; idx--);
+

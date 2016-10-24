@@ -1,0 +1,10 @@
+if (num == 0 || num == 1)
+return num;
+long low = 1;
+long high = num;
+long mid = 0;
+while (low <= high) {
+mid = (low + high) / 2;
+long res = mid * mid;
+if (res <= num &amp;&amp; (mid+1)*(mid+1) > num) {
+

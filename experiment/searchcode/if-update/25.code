@@ -1,0 +1,7 @@
+UpdateRateService updateRateService = updateServiceFactory.getUpdateRateService(contract.getOtaCode());
+if(updateRateService == null){
+throw new RoseUpdateException(&quot;UpdateRateService no fund for otaCode=[&quot; + contract.getOtaCode() + &quot;]&quot;);
+UpdateInventoryService updateInventoryService = updateServiceFactory.getUpdateInventoryService(contract.getOtaCode());
+if(updateInventoryService == null){
+throw new RoseUpdateException(&quot;UpdateInventoryService no fund for otaCode=[&quot; + contract.getOtaCode() + &quot;]&quot;);
+

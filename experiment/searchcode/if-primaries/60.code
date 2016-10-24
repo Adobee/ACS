@@ -1,0 +1,8 @@
+primariesInRecovery++;
+}
+}
+if (primariesInRecovery >= primariesInitialRecoveries) {
+return allocation.decision(Decision.THROTTLE, NAME, &quot;too many primaries currently recovering [%d], limit: [%d]&quot;,
+int primariesInitialRecoveries = settings.getAsInt(CLUSTER_ROUTING_ALLOCATION_NODE_INITIAL_PRIMARIES_RECOVERIES, ThrottlingAllocationDecider.this.primariesInitialRecoveries);
+if (primariesInitialRecoveries != ThrottlingAllocationDecider.this.primariesInitialRecoveries) {
+

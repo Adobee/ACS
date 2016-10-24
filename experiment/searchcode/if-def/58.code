@@ -1,0 +1,11 @@
+package fxmlbox2d;
+
+import org.jbox2d.dynamics.FixtureDef;
+
+import fxmlbox2d.css.FixtureDefBean;
+public class FixtureDefBeanMapper implements INodeMapper<FixtureDef> {
+
+@Override
+public FixtureDef create(Node node) {
+if (node instanceof FixtureDefBeanOwner) {
+

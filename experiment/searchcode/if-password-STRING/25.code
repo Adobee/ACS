@@ -1,0 +1,14 @@
+this.passwordEncoder = passwordEncoder;
+}
+
+public String encode(String password) {
+if (password == null) return null;
+
+if (password.length() == 0)
+return &quot;&quot;;
+else
+return passwordEncoder.encode(password);
+
+}
+}
+

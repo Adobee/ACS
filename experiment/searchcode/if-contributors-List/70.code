@@ -1,0 +1,8 @@
+addContributor(&quot;square&quot;, &quot;picasso&quot;, &quot;Keiser Soze&quot;, 152);
+}
+
+@Override public Call<List<Contributor>> contributors(String owner, String repo) {
+Map<String, List<Contributor>> repoContributors = ownerRepoContributors.get(owner);
+if (repoContributors != null) {
+List<Contributor> contributors = repoContributors.get(repo);
+

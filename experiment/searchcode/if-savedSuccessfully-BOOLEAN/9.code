@@ -1,0 +1,9 @@
+new FileOutputStream(tmpFile), BUFFER_SIZE);
+boolean savedSuccessfully = false;
+try {
+savedSuccessfully = bitmap.compress(COMPRESS_FORMAT,
+COMPRESS_QUALITY, os);
+} finally {
+closeStream(os);
+if (savedSuccessfully &amp;&amp; !tmpFile.renameTo(imageFile)) {
+

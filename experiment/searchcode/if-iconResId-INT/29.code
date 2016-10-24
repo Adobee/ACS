@@ -1,0 +1,7 @@
+private static TipsToast tipsToast;
+
+public static void showTips(Context context, int iconResId, int msgResId) {
+public static void showTips(Context context, int iconResId, String msgResId) {
+if (tipsToast != null) {
+if (Build.VERSION.SDK_INT < Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
+

@@ -1,0 +1,7 @@
+if (error <= 1.0) {
+final double stepEnd = (stepStart) + (stepSize);
+interpolator.setInterpolatedTime(stepEnd);
+interpolatorTmp.storeTime(stepEnd);
+if (manager.evaluateStep(interpolatorTmp)) {
+final double dt = (manager.getEventTime()) - (stepStart);
+

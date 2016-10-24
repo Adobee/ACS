@@ -1,0 +1,7 @@
+/** The degrees of freedom. */
+private final double degreesOfFreedom;
+/** Inverse cumulative probability accuracy. */
+public TDistribution(double degreesOfFreedom, double inverseCumAccuracy)
+throws NotStrictlyPositiveException {
+if (degreesOfFreedom <= 0) {
+

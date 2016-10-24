@@ -1,0 +1,11 @@
+throw new RuntimeException(&quot;get inetaddress failed.&quot;);
+}
+}
+
+public String getHostIp(){
+if(null == inetAddress){
+return null;
+}
+String ip = inetAddress.getHostAddress(); //get the ip address
+return ip;
+

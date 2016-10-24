@@ -1,0 +1,10 @@
+public class ExponentialEpsilonDecay extends EpsilonDecayer {
+protected double decayRate;
+
+// threshold can be used to set the qFuntion value to 0 when it reaches the
+protected double threshold;
+protected double epsilon;
+
+public ExponentialEpsilonDecay() {
+this(0.9995, 0.01, 1.0);
+

@@ -1,0 +1,7 @@
+public class ActiveOntologyComparator implements Comparator<OWLOntology> {
+
+public int compare(OWLOntology o1, OWLOntology o2) {
+boolean o1ImportsO2 = o1.getImportsClosure().contains(o2);
+boolean o2ImportsO1 = o2.getImportsClosure().contains(o1);
+if (o1ImportsO2 &amp;&amp; !o2ImportsO1) {
+

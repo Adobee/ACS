@@ -1,0 +1,9 @@
+int shc = second == null ? 0 : second.hashCode();
+return fhc ^ shc;
+}
+
+public boolean equals(Object o) {
+Pair<FIRST, SECOND> p = (Pair<FIRST, SECOND>) o;
+boolean r = false;
+if(first != null) { r = first.equals(p.first()); }
+

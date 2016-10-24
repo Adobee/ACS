@@ -1,0 +1,13 @@
+this.stored = new ConcurrentHashMap<String, Object>();
+}
+
+public Boolean contains(String K) {
+return this.stored.containsKey(K);
+}
+
+public Boolean store(String K, Object V) {
+if(this.stored.containsKey(K))
+return false;
+
+this.stored.put(K, V);
+

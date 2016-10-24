@@ -1,0 +1,12 @@
+private final static Comparator<RangeIndex> COMPARATOR = new Comparator<AbstractJsonSyncStore.RangeIndex>() {
+
+@Override
+public int compare(RangeIndex o1, RangeIndex o2) {
+if (o1==o2)return 0;
+Collections.sort(list, COMPARATOR);
+return list;
+}
+
+public void offset(RangeIndex startIndex, int offset) {
+if (offset==0) return;
+

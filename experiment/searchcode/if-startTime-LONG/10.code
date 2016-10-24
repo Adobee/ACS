@@ -1,0 +1,14 @@
+public class OnceTimer {
+
+protected long startTime = 0;
+protected long stopTime = 0;
+
+public OnceTimer start() {
+if (startTime <= 0)
+return this;
+}
+
+public long costWithMillis() {
+if (startTime > 0) {
+return stopTime > 0 ? stopTime - startTime : System.currentTimeMillis() - startTime;
+

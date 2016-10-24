@@ -1,0 +1,14 @@
+import BlockProcessing.ComparisonRefinement.AbstractDuplicatePropagation;
+import java.util.List;
+
+/**
+*
+* @author gap2
+*/
+
+public class BlockPruning extends AbstractEfficiencyMethod {
+int latestDuplicates = 0;
+double latestComparisons = 0;
+double totalComparisons = 0;
+double maxDuplicateOverhead = getMaxDuplicateOverhead(blocks);
+

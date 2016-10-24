@@ -1,0 +1,6 @@
+public final int cursorAdjust;
+public final boolean keepSelection;
+public final int replacementLength;
+
+public AutoCompleterItem(String payload, String[] extras, int replacementLength) {
+

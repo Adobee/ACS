@@ -1,0 +1,13 @@
+import com.google.gson.JsonParser;
+
+public class Balance
+{
+CexAPI cex;
+public Balance(CexAPI cex)
+{
+this.cex = cex;
+return -1f;
+JsonParser jp = new JsonParser();
+String json = cex.balance();
+JsonElement root = jp.parse(json);
+

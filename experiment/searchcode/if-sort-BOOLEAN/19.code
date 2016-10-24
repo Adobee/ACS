@@ -1,0 +1,14 @@
+//# sort (enum)
+//##################################################
+
+public static enum Sort
+implements KmNamedEnumIF
+{
+Uid(&quot;Uid&quot;);
+protected void applySortsTo(MyActionCriteria c)
+{
+if ( !usesSort() )
+return;
+
+boolean asc = _sortAscending;
+

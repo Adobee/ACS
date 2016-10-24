@@ -1,0 +1,14 @@
+private static final long serialVersionUID = 1L;
+
+public V add(K key, V value) {
+
+return super.put(key, value);
+}
+
+public void addExcludeNullValue(K key, V value) {
+if (value != null)
+super.put(key, value);
+}
+
+public void addIncludeNullValue(K key, V value) {
+

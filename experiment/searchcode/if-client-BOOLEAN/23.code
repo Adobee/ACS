@@ -1,0 +1,8 @@
+package org.reunionemu.jreunion.events.client;
+
+import org.reunionemu.jreunion.events.Event;
+@Override
+public boolean filter(Event event) {
+if(!(event instanceof ClientEvent)){
+throw new InvalidEventException(event,ClientEvent.class);
+

@@ -1,0 +1,9 @@
+public QuasiLinearHFunction(double indifferenceThreshold,
+double preferenceThreshold) {
+
+this.p = preferenceThreshold;
+this.q = indifferenceThreshold;
+}
+
+public double getHValue(double difference) {
+

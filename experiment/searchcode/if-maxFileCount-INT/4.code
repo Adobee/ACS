@@ -1,0 +1,11 @@
+public class DirectoryContentFileFilter extends DirectoryFileFilter {
+
+protected FileFilter filter;
+
+protected int maxFileCount = Integer.MAX_VALUE;
+
+protected int minFileCount = 0;
+public DirectoryContentFileFilter(FileFilter filter, int minFileCount, int maxFileCount) {
+this(filter);
+setMinFileCount(minFileCount);
+

@@ -1,0 +1,15 @@
+package compile.antlr;
+
+import java.util.Stack;
+
+public class Env
+{
+private Stack<Scope> scope = new Stack<Scope>();
+
+public Scope get()
+{
+if (scope.isEmpty())
+{
+return null;
+} // if
+

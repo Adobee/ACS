@@ -1,0 +1,8 @@
+clockwise = canAttack(internalLoop[i][0], internalLoop[i][1], RIGHT);
+antiClockwise = canAttack(internalLoop[i][0], internalLoop[i][1], LEFT);
+
+if (clockwise == 0 &amp;&amp; antiClockwise == 1) {
+for (j = 23; j != i; j = (j + 23) % 24) {
+if (!game.isEmpty(internalLoop[j][0], internalLoop[j][1])) {
+if (game.isBlack(internalLoop[j][0], internalLoop[j][1]))
+

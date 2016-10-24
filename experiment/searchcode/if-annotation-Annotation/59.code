@@ -1,0 +1,10 @@
+A typeAnnotation = clazz.getAnnotation(annotationClass);
+if (typeAnnotation != null) {
+return typeAnnotation;
+}
+
+for (Annotation a : clazz.getAnnotations()) {
+A annotationAnnotation = getAnnotationAnnotation(a, annotationClass);
+if (annotationAnnotation != null) {
+return annotationAnnotation;
+

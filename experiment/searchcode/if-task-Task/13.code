@@ -1,0 +1,12 @@
+import java.util.List;
+import java.util.Map.Entry;
+
+import domain.Task;
+
+public class BackLog {
+
+private HashMap<String,Task> taskMap ;
+for(Entry<String,Task> entry : taskMap.entrySet()) {
+Task task = entry.getValue() ;
+if(!task.getStatus().equals(Task.STATUS_DONE)) {
+

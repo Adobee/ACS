@@ -1,0 +1,6 @@
+*  - that would happen only if the last call to readAppend(Appendable,int)
+*  requested the number of characters exactly equal to the number of remaining characters
+*  Therefore it needs to be synchronized if used in a different Thread.
+*
+CharReader( CharReader previous, int sliceProcessedLength ) {
+

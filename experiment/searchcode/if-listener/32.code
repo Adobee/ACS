@@ -1,0 +1,10 @@
+/**
+* @since 1.2
+*/
+@Override
+public synchronized void addDisposeListener(IDisposeListener listener) {
+if (!disposed) {
+changeSupport.addDisposeListener(listener);
+}
+}
+

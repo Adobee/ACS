@@ -1,0 +1,12 @@
+protected DBAttributeDescriptor(FeatureType featureType,boolean asNew) {
+super(featureType, asNew);
+}
+
+public boolean isAutoIncrement() {
+if (useNewAttributeValue())
+throw new IsNotAttributeSettingException(&quot;setTableName&quot;);
+this.tableName = tableName;
+}
+public boolean isCaseSensitive() {
+if (useNewAttributeValue())
+

@@ -1,0 +1,7 @@
+HttpURLConnection httpurlConnection;
+try {
+URL url = new URL(strurl);
+httpurlConnection = (HttpURLConnection) url.openConnection();
+httpurlConnection.setConnectTimeout(5000);
+httpurlConnection.setReadTimeout(5000);
+

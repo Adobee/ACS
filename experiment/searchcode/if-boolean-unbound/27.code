@@ -1,0 +1,9 @@
+@Override
+public boolean isBound() {
+return this.value == UNBOUND ? false : this.value.isBound();
+}
+
+public void waitNeeded() {
+synchronized (this) {
+if(value == UNBOUND &amp;&amp; (nf &amp; 1) == 0) { // No value - Not needed yet, else go forward
+

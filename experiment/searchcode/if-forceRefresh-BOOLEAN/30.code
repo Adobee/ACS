@@ -1,0 +1,12 @@
+* @param filter
+* @param forceRefresh
+*/
+public void removeCustomFilter(CustomFilter filter, boolean forceRefresh) {
+public void addCustomFilter(CustomFilter filter, boolean forceRefresh) {
+customFilters.add(filter);
+if (forceRefresh)
+handleFilterChanged();
+}
+
+}
+

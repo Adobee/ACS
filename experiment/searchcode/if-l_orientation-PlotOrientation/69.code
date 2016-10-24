@@ -1,0 +1,9 @@
+Shape l_shape = getItemShape(x_series, x_item);
+if (l_orientation == PlotOrientation.HORIZONTAL) {
+l_shape = ShapeUtilities.createTranslatedShape(l_shape,
+(x_item - 1)), x_dataArea, l_rangeAxisLocation);
+
+Line2D l_line = null;
+if (PlotOrientation.HORIZONTAL == l_orientation) {
+l_line = new Line2D.Double(l_y1, l_x1, l_y2, l_x2);
+

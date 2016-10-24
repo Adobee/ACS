@@ -1,0 +1,8 @@
+public static boolean checkString(String str,String regex) throws ParseException
+{
+SimpleDateFormat dateFormat = new SimpleDateFormat(regex);
+
+Date date = dateFormat.parse(str);
+
+if(dateFormat.format(date).equalsIgnoreCase(str))return true;
+

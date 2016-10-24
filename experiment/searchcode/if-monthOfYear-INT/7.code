@@ -1,0 +1,9 @@
+* @param day An int that represents the month of the year.
+*/
+public static String monthOfYear( int month ) {
+String monthOfYear = &quot;&quot;;
+if( month == 0 ) {
+monthOfYear = &quot;January&quot;;
+}
+if( month == 1 ) {
+

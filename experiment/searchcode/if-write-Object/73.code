@@ -1,0 +1,16 @@
+public void write(JSONSerializer serializer, Object object, Object fieldName, Type fieldType) throws IOException {
+if (object == null) {
+SerializeWriter out = serializer.getWriter();
+if (out.isEnabled(SerializerFeature.WriteNullStringAsEmpty)) {
+out.writeString(&quot;&quot;);
+} else {
+out.writeNull();
+}
+return;
+}
+
+serializer.write(object.toString());
+}
+
+}
+

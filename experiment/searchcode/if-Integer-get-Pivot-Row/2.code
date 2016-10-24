@@ -1,0 +1,10 @@
+//Select a nonzero entry in the pivot column with the highest absolute value as a pivot.
+pivot = findPivot(pivot);
+
+if (getCoordinate(pivot).doubleValue() == 0.0) {
+pivot.row++;
+continue;
+}
+
+//If necessary, interchange rows to move this entry into the pivot position.
+

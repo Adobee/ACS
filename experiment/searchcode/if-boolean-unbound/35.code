@@ -1,0 +1,8 @@
+*	var	d	= cla.value(&quot;-d&quot;);	if (d != null)	dir		= new File(d);
+*	var	c	= cla.value(&quot;-c&quot;);	if (c != null)	charset	= c;
+*	var	dsc	= cla.unbound();	if (dsc.Empty)	{ usage(); return 1; }
+/** get the first currently unbound argument */
+public String nextUnbound() {
+if (arguments.size() < 1)	return null;
+final String	out	= arguments.get(0);
+

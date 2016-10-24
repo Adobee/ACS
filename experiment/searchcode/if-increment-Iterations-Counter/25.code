@@ -1,0 +1,11 @@
+int iterations=(int) context.getCounter(CONVERGE.ITERATIONS).getValue();
+
+if(iterations%3==0)
+{
+context.getCounter(CONVERGE.COUNTER).setValue(0);
+}
+
+if(previousCentroids[iterations%3]!=newCentroid)
+{
+context.getCounter(CONVERGE.COUNTER).increment(1);
+

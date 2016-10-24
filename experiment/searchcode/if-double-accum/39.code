@@ -1,0 +1,12 @@
+op.setFinalResult(accum.getSecond());
+}
+return accum;
+}
+
+@Override
+public Pair<Double,Integer> call() {
+if(doTensorFirst) doTensorFirst(op);
+int finalIdx = idxAccum + elementOffset;    //idxAccum is &#39;local&#39; index. Add elementOffset to get index w.r.t. original idx
+if (outerTask) op.setFinalResult(finalIdx);
+return new Pair<>((double) accum, finalIdx);
+

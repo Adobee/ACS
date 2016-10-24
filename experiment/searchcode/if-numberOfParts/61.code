@@ -1,0 +1,9 @@
+new BufferedInputStream(new FileInputStream(file2Split));
+
+long numberOfParts = evaluateNumberOfPars();
+
+long bytesWritten = 0;
+private long evaluateNumberOfPars() {
+long numberOfParts = fileLengthBytes / fileLengthSplittedBytes;
+if (fileLengthBytes % fileLengthSplittedBytes != 0) {
+

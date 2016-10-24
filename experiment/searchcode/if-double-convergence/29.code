@@ -1,0 +1,7 @@
+convergence.setOutputValueClass(DoubleWritable.class);
+convergence.setMapperClass(ConvergenceMapper.class);
+fs.delete(convergenceOutput, true);
+if (!success) System.exit(-1);
+
+boolean converged =  convergence.getCounters().findCounter(ConvergenceCounter.NOT_CONVERGED).getValue() <= 0;
+

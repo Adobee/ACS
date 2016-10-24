@@ -1,0 +1,8 @@
+public class TranslogWriter extends BaseTranslogReader implements Closeable {
+
+public static final String TRANSLOG_CODEC = &quot;translog&quot;;
+public static final int VERSION_CHECKSUMS = 1;
+/* the number of translog operations written to this file */
+private volatile int operationCounter;
+/* if we hit an exception that we can&#39;t recover from we assign it to this var and ship it with every AlreadyClosedException we throw */
+

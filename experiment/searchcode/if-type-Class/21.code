@@ -1,0 +1,11 @@
+public void count(Object obj){
+Class<?> type = obj.getClass();
+if(!baseType.isAssignableFrom(type)){
+throw new RuntimeException(obj + &quot; incorrect type: &quot; + type + &quot; should be type or subtype of &quot; + baseType);
+Class<?> superClass = type.getSuperclass();
+if(superClass != null &amp;&amp; baseType.isAssignableFrom(superClass)){
+countClass(superClass);
+}
+}
+}
+

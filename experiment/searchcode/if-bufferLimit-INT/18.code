@@ -1,0 +1,6 @@
+final List<Integer> matches = new ArrayList<Integer>();
+final int bufferLimit = buffer.limit();
+int state = ~0;
+for (int pos = buffer.position(); pos < bufferLimit; pos++) {
+state <<= 1;
+

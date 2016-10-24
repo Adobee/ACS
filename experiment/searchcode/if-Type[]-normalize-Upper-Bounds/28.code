@@ -1,0 +1,8 @@
+if (type instanceof WildcardType) {
+
+types = ((WildcardType) type).getUpperBounds();
+
+if (types.length != 1) {
+for (Type bound : getImplicitUpperBounds((WildcardType) type)) {
+if (isAssignable(bound, toGenericArrayType)) {
+

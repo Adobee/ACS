@@ -1,0 +1,14 @@
+public class MainActivity extends Activity {
+
+Intent mIntent;
+Boolean mStarted;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+super.onCreate(savedInstanceState);
+
+mStarted = false;
+
+if (!mStarted) {
+mStarted = startCamera(&quot;com.google.android.Camera&quot;);
+

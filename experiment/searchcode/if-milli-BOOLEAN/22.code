@@ -1,0 +1,9 @@
+public SpeedUpgradeEffect(float maxSpeedupFactor, int speedupTimeInMilliSeconds, int maxSpeedTimeInMilliSeconds, int slowdownTimeInMilliSeconds) {
+if (maxSpeedupFactor > 0f) {
+this.maxSpeedupFactor = maxSpeedupFactor;
+throw new IllegalArgumentException(&quot;TemporarySpeedUpgrade.Constructor: maxSpeedupFactor has to be > 0f (is &quot; + maxSpeedupFactor + &quot;)&quot;);
+}
+this.currentSpeedFactor = NO_SPEEDUP;
+
+if (speedupTimeInMilliSeconds >= 0) {
+

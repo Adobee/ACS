@@ -1,0 +1,9 @@
+public boolean onCommand(CommandSender sender, Command command,
+String label, String[] args) {
+if (args.length < 2 || args.length > 3) return false;
+if (DataManager.removeExecutionHistory(checkType, playerName)) histRemoved = true;
+
+final boolean dataRemoved = DataManager.removeData(playerName, checkType);
+
+if (dataRemoved || histRemoved){
+

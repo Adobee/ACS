@@ -1,0 +1,10 @@
+int minDeletions = Integer.MAX_VALUE;
+for (int j = 0; j < n; j++) {
+int deletions = n - getMaxUndeletion(j + 1, -1);
+if (deletions < minDeletions)
+if (neighbors.size() <= 1)
+return 1;
+int[] maxChildren = new int[neighbors.size()];
+int count = 0;
+for (Integer neighbor : neighbors) {
+

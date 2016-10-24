@@ -1,0 +1,10 @@
+return v != null &amp;&amp; v == JsonValue.TRUE;
+}
+boolean isFalse(JsonValue v) {
+return v != null &amp;&amp;  v == JsonValue.FALSE;
+if (isTrue(v)) return true;
+if (isFalse(v)) return false;
+throw new ClassCastException(v + &quot; is not a boolean JsonValue&quot;);
+}
+}
+

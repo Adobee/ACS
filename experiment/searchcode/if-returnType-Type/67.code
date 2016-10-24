@@ -1,0 +1,10 @@
+if ( returnType.isPrimitive() )
+{
+return defaultPrimitiveValue( returnType );
+}
+else if ( isFinalClass( returnType ) )
+public static Object defaultPrimitiveValue ( Class<?> returnType )
+{
+if ( returnType == void.class ) return null;
+else if ( returnType == boolean.class  ) return true;
+

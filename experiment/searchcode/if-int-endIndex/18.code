@@ -1,0 +1,12 @@
+private int endIndex = -1;
+
+public void setBeginindex(int i) {
+if (i < 0)
+throw new IllegalArgumentException(&quot;beginindex must be <= 0&quot;);
+beginIndex = i;
+}
+
+public void setEndindex(int i) {
+if (i < 0)
+throw new IllegalArgumentException(&quot;endindex must be <= 0&quot;);
+

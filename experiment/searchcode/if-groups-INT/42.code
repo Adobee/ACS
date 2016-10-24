@@ -1,0 +1,9 @@
+public class CleaningDataGroups {
+
+public DataGroup[] clean(DataGroup[] groups) {
+int counter = 0;
+// counting the non null groups
+DataGroup[] newGroups = new DataGroup[groups.length-counter];
+for (int i=0;i<groups.length;i++) {
+if (groups[i].getComponents().size() != 0) {
+

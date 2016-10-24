@@ -1,0 +1,8 @@
+public Collection<InfluxSeries> getSeries() {
+return measurementSeries.values();
+}
+
+public TimeSeries timeSeries(String measurementName, List<MetricTag> tags, List<IMeasurementField> fields) {
+final InfluxSeries series = measurementSeries.computeIfAbsent(seriesKey, measurementSeriesKey -> {
+final TimeSeries timeSeries = TimeSeries.withName(measurementName).withTags(tags).withFields(fields).build();
+

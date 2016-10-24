@@ -1,0 +1,7 @@
+public void handle(Callback[] callbacks) throws IOException,
+UnsupportedCallbackException {
+for (int i = 0; i < callbacks.length; i++) {
+if (callbacks[i] instanceof NameCallback) {
+nc.setName(&quot;admin&quot;);
+} else if (callbacks[i] instanceof PasswordCallback) {
+

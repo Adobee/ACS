@@ -1,0 +1,11 @@
+public void Update(int delta){
+PauseTimer += 0.005f * delta;
+if(PauseTimer > 1){PauseTimer = 1;}
+
+if(PauseTimer == 1 &amp;&amp; Input.GetW() == true){
+PauseState --;
+PauseTimer = 0;
+}
+
+if(PauseTimer == 1 &amp;&amp; Input.GetS() == true){
+

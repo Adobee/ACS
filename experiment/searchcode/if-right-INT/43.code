@@ -1,0 +1,8 @@
+class QuickSort21 {
+public static void sort(int[] array, int left, int right) {
+int index = partition(array, left, right);
+while(array[left] < pivot) left++;
+while(array[right] > pivot) right--;
+if(left <= right) {
+int temp = array[left];
+

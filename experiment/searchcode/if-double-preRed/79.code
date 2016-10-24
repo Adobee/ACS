@@ -1,0 +1,8 @@
+for (int k = 0 ; k < (cols) ; ++k) {
+double dk = jacNorm[k];
+if (dk == 0) {
+dk = 1.0;
+ratio = preRed == 0 ? 0 : actRed / preRed;
+if (ratio <= 0.25) {
+double tmp = actRed < 0 ? (0.5 * dirDer) / (dirDer + (0.5 * actRed)) : 0.5;
+

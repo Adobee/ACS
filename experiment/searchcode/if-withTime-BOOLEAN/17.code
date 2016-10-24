@@ -1,0 +1,18 @@
+private ServerSocket serverSocket;
+private boolean running = false;
+private int port;
+private Thread thread;
+
+public Server(int port) {
+public void shutdown() throws IOException {
+running = false;
+serverSocket.close();
+}
+
+// Return true if the server is running.
+public boolean isRunning(){
+return running;
+}
+
+}
+

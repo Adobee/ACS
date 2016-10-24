@@ -1,0 +1,8 @@
+int antal;
+if (gillaStatus) { // om knappen gilla trycktes så uppdatera
+// gilla-betyget
+System.out.println(&quot;Lägger till en gillning i databasen&quot;);
+st.executeUpdate(&quot;UPDATE `da147a_project`.`Vara` SET `gillaBetyg` = &#39;&quot; + antal
++ &quot;&#39; WHERE `Vara`.`varuID` = &quot; + varaID + &quot;;&quot;);
+} else {// om knappen ogilla trycktes så uppdatera ogilla-betyget
+

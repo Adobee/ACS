@@ -1,0 +1,7 @@
+// Use system property to determine if DeliveryChannel.sendSync or DeliveryChannel.send is used.
+if (Boolean.getBoolean(&quot;org.apache.ode.jbi.sendSynch&quot;))
+_ode._consumer = new OdeConsumerSync(_ode);
+_ode._consumer = new OdeConsumerAsync(_ode);
+
+if (_ode.getContext().getWorkspaceRoot() != null)
+

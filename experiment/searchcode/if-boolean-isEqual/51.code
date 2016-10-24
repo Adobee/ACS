@@ -1,0 +1,12 @@
+return distance;
+}
+
+@Override
+public boolean equals( Object o ) {
+if (!( o instanceof Coordinate3D )) {
+return false;
+}
+Coordinate3D coord = ( Coordinate3D ) o;
+boolean isEqual = true;
+isEqual = isEqual &amp;&amp; almostEqual( this.x, coord.x );
+

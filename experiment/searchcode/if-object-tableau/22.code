@@ -1,0 +1,15 @@
+public class FlipCard extends Move {
+
+private int tableauPileId;
+
+public FlipCard(int tableauPileId) {
+this.tableauPileId = tableauPileId;
+@Override
+protected int priority() {
+return 10;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (obj != null &amp;&amp; this.getClass() == obj.getClass()) {
+

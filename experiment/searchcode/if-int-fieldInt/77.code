@@ -1,0 +1,5 @@
+if (item.getParam() instanceof Integer) {
+Expression<Integer> fieldInt = root.get(item.getColName());
+predicate = cb.lessThan(fieldInt, (Integer) item.getParam());
+} else if (item.getParam() instanceof Double) {
+

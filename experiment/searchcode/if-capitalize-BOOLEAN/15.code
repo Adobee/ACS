@@ -1,0 +1,9 @@
+public class Headliner implements HeadlinerInterface {
+@Override
+public String toHeadline(String text) {
+boolean shouldCapitalize = true;
+for (int i = 0; i < text.length(); i++) {
+char currentChar = text.charAt(i);
+
+if (shouldCapitalize &amp;&amp; Character.isAlphabetic(currentChar)) {
+

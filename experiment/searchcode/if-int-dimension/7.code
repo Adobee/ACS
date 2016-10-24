@@ -1,0 +1,9 @@
+public Dimension getDimension(String name, SortedSet<Level> levels,
+int orderNumber, DimensionRange range) {
+//		for (Dimension dimension : dimensions) {
+//			if (name.equals(dimension)) {
+//				return dimension;
+//			}
+//		}
+Dimension newDimension = new Dimension(name, levels, orderNumber, range);
+

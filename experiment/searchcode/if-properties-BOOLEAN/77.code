@@ -1,0 +1,12 @@
+return map.entrySet();
+}
+
+public boolean equals(Object arg0) {
+if (arg0 instanceof ScopedOmniProperties) {
+return outerProperties.toString() + &quot; > &quot; + innerProperties.toString();
+}
+
+@Override
+public boolean getBoolean(String key) {
+if (innerProperties.containsBoolean(key)) {
+

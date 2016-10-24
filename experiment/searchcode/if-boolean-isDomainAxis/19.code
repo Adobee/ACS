@@ -1,0 +1,10 @@
+public void setRangeAxis(int index, ValueAxis axis, boolean notify) {
+ValueAxis existing = getRangeAxis(index);
+if (existing != null) {
+List includedAnnotations = new ArrayList();
+boolean isDomainAxis = true;
+
+
+int domainIndex = getDomainAxisIndex(axis);
+if (domainIndex >= 0) {
+

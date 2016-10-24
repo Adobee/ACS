@@ -1,0 +1,12 @@
+public boolean equals(Object a, Object b) {
+if (a == b) {
+return true;
+}
+if (!(a instanceof MarginQueryResult) || !(b instanceof MarginQueryResult)) {
+return StringUtils.equals(((MarginQueryResult) a).getMarginId(), ((MarginQueryResult) b).getMarginId());
+}
+
+@Override
+public int hashCode(Object element) {
+if (!(element instanceof MarginQueryResult)) {
+

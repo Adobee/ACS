@@ -1,0 +1,12 @@
+public abstract class MethodInvokerForTest extends MethodInvoker{
+
+
+protected boolean assert_not_nan(double actual){
+if(!Double.isNaN(actual) &amp;&amp; actual > 0.0 &amp;&amp; !Double.isInfinite(actual))
+return true;
+
+return false;
+}
+
+}
+

@@ -1,0 +1,11 @@
+boolean isDataConsumed = false ;
+
+/*
+*  If Data has been consumed, producer can produce more i.e.
+*  produces the data and puts it onto the queue.
+* @return
+*/
+synchronized public int putDataOnQueue( int data ) {
+while( isDataConsumed){
+try {
+

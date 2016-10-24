@@ -1,0 +1,7 @@
+public PyCallIter(PyObject callable, PyObject sentinel) {
+if (!callable.isCallable()) {
+throw Py.TypeError(&quot;iter(v, w): v must be callable&quot;);
+public PyObject __iternext__() {
+if (callable == null) {
+return null;
+

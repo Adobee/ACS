@@ -1,0 +1,9 @@
+return HEADER_DATE_FORMAT.format(CAL.getTime());
+}
+
+private List<Integer> getRelevantDays() {
+int startDoy = getStartDoy();
+List<Integer> daysToShow = new ArrayList<Integer>();
+for (int i = startDoy; i < endDoy; i++) {
+if (gamedays.getAvailOn(i) == AvailType.YES) {
+

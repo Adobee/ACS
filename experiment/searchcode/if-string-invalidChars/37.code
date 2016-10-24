@@ -1,0 +1,11 @@
+Iterator it = values.iterator();
+while (it.hasNext()) {
+String value = (String) it.next();
+if (!validate(value)) {
+public boolean validate(String value) {
+
+int index = value.indexOf(&#39;@&#39;);
+
+if (index == -1) {
+return false;
+

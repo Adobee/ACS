@@ -1,0 +1,15 @@
+protected CoverageStopConditionBase(int percent) {
+super(String.valueOf(percent));
+if (0 > percent) {
+this.percent = percent;
+}
+
+public int getPercent() {
+return percent;
+}
+
+protected double getPercentAsDouble() {
+return (double) getPercent() / 100;
+}
+}
+

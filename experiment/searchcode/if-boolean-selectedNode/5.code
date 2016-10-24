@@ -1,0 +1,8 @@
+public abstract class AbstractCrudNodeService extends AbstractCrudListService {
+
+public void beforeNode(Map selectedNode, boolean root) {
+@ProxyMethod
+public List getNodes( Map selectedNode ) throws Exception {
+boolean root = false;
+if(selectedNode.containsKey(&quot;root&quot;)) {
+

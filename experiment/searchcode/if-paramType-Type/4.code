@@ -1,0 +1,10 @@
+public String getParameterAsString(ParamType paramType) {
+if (params.get(paramType) instanceof String) {
+return (String) params.get(paramType);
+throw new ClassCastException();
+}
+}
+
+public int getParamAsInteger(ParamType paramType) {
+if (params.get(paramType) instanceof Integer) {
+

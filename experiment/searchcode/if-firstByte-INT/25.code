@@ -1,0 +1,9 @@
+public class UDPProtocol {
+public static final int PACKET_SIZE = 64;
+
+public static DatagramPacket compilePacket(String msg){
+public static String decompilePacket(DatagramPacket packet){
+byte[] buf = packet.getData();
+int firstByte;
+//search for the first byte
+

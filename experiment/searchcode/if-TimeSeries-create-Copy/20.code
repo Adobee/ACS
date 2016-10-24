@@ -1,0 +1,9 @@
+final String oldHref = timeseries.getDataLink().getHref();
+final IFile oldFile = timeseries.getDataLink().getFile();
+
+/* Create the timeseries dialog source. */
+final TimeseriesDialogSource source = new TimeseriesDialogSource( timeseries );
+
+/* Create and open the dialog. */
+final EditTimeseriesDialog dialog = new EditTimeseriesDialog( shell, m_timeseries, source, m_binding, PlatformUI.getWorkbench() );
+

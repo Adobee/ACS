@@ -1,0 +1,12 @@
+values.put(&quot;cut_volume&quot;, cut.getVolume());
+
+
+return database.insert(TABLE_TREE_CUTS, null, values);
+}
+
+public int getPineVolume(int width, int height) throws SQLException
+Cursor cursor = database.query(true, TABLE_TREE_CUTS, null, null, null, null, null, null, null);
+if(cursor.moveToFirst())
+{
+daySummary.setNoOfCuts(cursor.getCount());
+

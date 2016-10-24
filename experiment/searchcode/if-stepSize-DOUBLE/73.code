@@ -1,0 +1,6 @@
+public final void setStepSize(T stepSize) {
+if (stepSize != null) {
+if (stepSize instanceof Double ||
+stepSize instanceof Float) {
+Check.notZero(stepSize.doubleValue(), &quot;stepSize&quot;, 0.00000000000000000000000000000001);
+

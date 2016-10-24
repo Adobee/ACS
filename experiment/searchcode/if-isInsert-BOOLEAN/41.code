@@ -1,0 +1,11 @@
+private Batch batch;
+private boolean isInsert;
+
+public BatchPreparedStatementSetter(Batch a, boolean isInsert) {
+this.batch = a;
+this.isInsert = isInsert;
+}
+
+@Override
+public void setValues(PreparedStatement arg0) throws SQLException {
+

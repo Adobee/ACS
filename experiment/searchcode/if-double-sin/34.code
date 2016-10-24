@@ -1,0 +1,10 @@
+public class Factura implements Constantes, Variaciones {
+
+// atributo privado -> asignaValor
+private double totalSinIVA;
+
+public final static double IVA = 0.16;
+public double conIVA() { return totalSinIVA * (1+IVA); }
+public void asignaValor(double x) {
+if (valorMinimo<x) totalSinIVA=x;
+

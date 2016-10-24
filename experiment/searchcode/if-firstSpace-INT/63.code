@@ -1,0 +1,7 @@
+int firstSpace = wholeName.indexOf(&quot; &quot;);
+int lastSpace = wholeName.lastIndexOf(&quot; &quot;);
+if(firstSpace==-1){
+this.firstName = wholeName.substring(0, firstSpace); //ensures that first name is the first section of the String before the first space
+if(firstSpace!=lastSpace) {
+this.middleName = wholeName.substring(firstSpace + 1, lastSpace); //middle name encompasses all parts of the name that are not the first or last name
+

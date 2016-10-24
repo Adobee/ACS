@@ -1,0 +1,7 @@
+boolean accesspermission = RequireUser.SuperAdministrator(text, mysession.get(&quot;username&quot;), myconfig.get(db, &quot;superadmin&quot;), myrequest, myresponse, db.getDatabase(), mysession.get(&quot;database&quot;));
+if (! accesspermission) return new Contenttype();
+String SQL = &quot;select * from contenttypes order by contenttype&quot;;
+Contenttype contenttype_exists = new Contenttype();
+contenttype_exists.readContenttype(db, contenttype.getContenttype());
+if (! contenttype_exists.getContenttype().equals(contenttype.getContenttype())) {
+

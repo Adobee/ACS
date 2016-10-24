@@ -1,0 +1,9 @@
+AlarmDescription description = alarmDescriptions.remove(occurrence.getId());
+if (description != null) {
+ReadableInstant nextDeadline = description.fireAlarm();
+executorService.execute(this);
+
+ReadableInstant nextDeadline = null;
+if (repeatDuration != null) {
+nextDeadline = clock.now().toInstant().plus(repeatDuration);
+

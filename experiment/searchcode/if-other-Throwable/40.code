@@ -1,0 +1,7 @@
+protected final void registerExtractor(Class throwableType, ThrowableCauseExtractor extractor) {
+verifyThrowableType(throwableType);
+
+if (extractor == null) { throw new IllegalArgumentException(&quot;Invalid extractor: null&quot;); }
+* Note: If no {@link ThrowableCauseExtractor} is registered for this instance then the returned
+* array will always only contain the passed in throwable.
+

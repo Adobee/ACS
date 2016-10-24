@@ -1,0 +1,11 @@
+return tg;
+}
+
+public void setNrDays(int days) {
+if (iNrDays == days) return;
+iNrDays = days;
+iCellWidth = 900 / days;
+// iScrollPanel.setWidth(String.valueOf(iNrDays * iCellWidth + 30 + ToolBox.getScrollBarWidth()));
+for (int day = 0; day < 7; day++) {
+if (day < days) {
+

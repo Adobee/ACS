@@ -1,0 +1,9 @@
+public HttpURL getHttpUrl() throws URIException {
+if(host!=null&amp;&amp;(basePath!=null&amp;&amp;!basePath.equals(&quot;&quot;)))
+httpUrl=new HttpURL( this.getAbsoluteUrl());
+* 获得Url绝对路径（例如： Url： http://www.baidu.com:80/OS/java/s?ie=utf8&amp;oe=utf8&amp;wd=java&amp;tn=98010089_dg&amp;ch=1）
+*/
+public String getAbsoluteUrl(){
+String baseUrl = getBaseUrl();
+if(baseUrl==null||baseUrl.equals(&quot;&quot;))
+

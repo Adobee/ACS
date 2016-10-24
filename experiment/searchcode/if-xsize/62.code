@@ -1,0 +1,13 @@
+private final int xSize;
+private final int ySize;
+private Cell[][] cellArray;
+private int iteration;
+
+public World(int[][] template)
+for (int y = 0 ; y < ySize ; y++)
+{
+for (int x = 0 ; x < xSize ; x++)
+{
+if (this.cellArray[y][x].isAlive())
+this.cellArray[y][x].setDestiny(SURVIVE_RULES[this.crowdAround(x, y)]);
+

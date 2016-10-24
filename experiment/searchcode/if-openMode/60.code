@@ -1,0 +1,14 @@
+QFile file = new QFile(&quot;file.dat&quot;);
+QFile.OpenMode mode = new QFile.OpenMode();
+mode.set(QFile.OpenModeFlag.WriteOnly);
+out.writeInt(42);        // serialize an integer
+//! [0]
+}
+
+
+{
+//! [1]
+QFile file = new QFile(&quot;file.dat&quot;);
+QFile.OpenMode mode = new QFile.OpenMode();
+mode.set(QFile.OpenModeFlag.ReadOnly);
+

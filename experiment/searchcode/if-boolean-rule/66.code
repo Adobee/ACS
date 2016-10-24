@@ -1,0 +1,7 @@
+package jp.co.flect.formvalidation.rules;
+
+public abstract class BooleanRule extends Rule {
+@Override
+public Rule newInstance(Object value, String message) throws RuleException {
+if (!Boolean.valueOf(value.toString())) {
+

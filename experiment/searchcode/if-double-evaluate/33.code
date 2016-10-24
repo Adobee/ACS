@@ -1,0 +1,13 @@
+public Double evaluate() {
+if(t==null) {
+double multiply = 1;
+for(Function<?> f : arguments) {
+multiply*=(double)f.evaluate();
+}
+t = multiply;
+}
+return t;
+}
+
+}
+

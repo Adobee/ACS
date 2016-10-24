@@ -1,0 +1,12 @@
+public int getLevel(int exp) {
+if (exp == 0)
+return 1;
+return (int) (1.25 * Math.cbrt(exp));
+}
+
+@Override
+public int getExperience(int level) {
+if (level == 1)
+return 0;
+return (int) (0.8 * level * level * level);
+

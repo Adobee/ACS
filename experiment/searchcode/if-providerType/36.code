@@ -1,0 +1,9 @@
+public enum ProviderType{
+ROTTENTOMATOES(&quot;rottentomatoes&quot;),
+THEMOVIEDB(&quot;themoviedb&quot;);
+
+String id;
+public static ProviderType forValue(String value){
+for(ProviderType provider : ProviderType.values()) {
+if(provider.getId().equals(value))
+

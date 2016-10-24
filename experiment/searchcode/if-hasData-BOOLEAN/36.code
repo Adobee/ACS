@@ -1,0 +1,11 @@
+public static LinkedHashMap<Integer, String> setQuestionList(Question q){
+LinkedHashMap<Integer, String> map = new LinkedHashMap<Integer, String>();
+if(hasData(q.q1))map.put(1, q.q1);
+if(hasData(q.q34))map.put(34, q.q34);
+if(hasData(q.q35))map.put(35, q.q35);
+
+return map;
+}
+
+public static boolean hasData(String str){
+

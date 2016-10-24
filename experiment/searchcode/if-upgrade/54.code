@@ -1,0 +1,9 @@
+public void addUpgrade() {
+UpgradeResult upgrade = api.getUpgradeManager().addUpdate(UpgradeType.adw);
+
+if (upgrade == UpgradeResult.NoMoney || upgrade == UpgradeResult.Invalid || upgrade == UpgradeResult.NoMemory) {
+System.out.println(&quot;Fail&quot;);
+}
+if (upgrade == UpgradeResult.Success) {
+System.out.println(&quot;Success&quot;);
+

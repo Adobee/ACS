@@ -1,0 +1,12 @@
+public class LeapDay extends Day {
+private int year;
+
+LeapDay (int d, int m, int y) {
+super(d, m);
+year = y;
+}
+
+public int findDayNum () {
+int dayNum = super.findDayNum();
+if((year % 4 == 0)&amp;&amp;( dayNum > 59)) {
+

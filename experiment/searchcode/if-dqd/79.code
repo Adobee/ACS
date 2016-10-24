@@ -1,0 +1,9 @@
+// Do another try/catch around everything in the loop
+try
+{
+if (Thread.currentThread().isInterrupted())
+while (j < dds.getCount())
+{
+DeleteQueuedDocument dqd = dds.getDocument(j);
+if (dqd.wasProcessed() == false)
+

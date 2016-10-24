@@ -1,0 +1,11 @@
+public int[] baseAndExponent(String n) {
+long number = Long.parseLong(n);
+long minNumber = 4;
+for (int exponent = 2; minNumber <= number; exponent++, minNumber <<= 1) {
+int base = (int) Math.round(Math.pow(number, 1.0 / exponent));
+long power = 1;
+for (int i = 0; i < exponent; i++) {
+power *= base;
+}
+if (power == number &amp;&amp; isPrime(base)) {
+

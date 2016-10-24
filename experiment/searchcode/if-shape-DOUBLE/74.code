@@ -1,0 +1,12 @@
+public MaskEllipse(Ellipse2D ellipse)
+{
+super(ellipse);
+}
+
+@Override
+protected Ellipse2D translate(Ellipse2D shape, double x, double y)
+{
+if(x == 0 &amp;&amp; y == 0) return shape;
+
+if(shape instanceof Ellipse2D.Double)
+

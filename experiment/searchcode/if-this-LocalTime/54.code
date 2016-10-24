@@ -1,0 +1,10 @@
+import java.sql.SQLException;
+import java.sql.Time;
+import java.sql.Types;
+
+/**
+* ScalarType for Joda LocalTime. This maps to a JDBC Time.
+public void bind(DataBind b, LocalTime value) throws SQLException {
+if (value == null) {
+b.setNull(Types.TIME);
+

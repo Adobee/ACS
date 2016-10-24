@@ -1,0 +1,9 @@
+private int nextPowerOf2(int value) {
+int result = Bits.msb(value);
+return (result == 32) ? 1 : (2 << result);
+private void testMsb(byte first, byte last, byte expected) {
+byte datum = first;
+int pos;
+for (;;) {
+pos = Bits.msb(datum);
+

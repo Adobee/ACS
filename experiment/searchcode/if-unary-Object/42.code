@@ -1,0 +1,12 @@
+package reference;
+
+import spec.operators.OperatorType;
+import spec.operators.UnaryType;
+
+public abstract class UnaryOperator extends Operator implements UnaryType {
+public boolean equals(Object obj) {
+if(obj instanceof UnaryOperator) {
+return this.child.equals(obj);
+}
+return false;
+

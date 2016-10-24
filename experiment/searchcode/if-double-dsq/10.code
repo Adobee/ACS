@@ -1,0 +1,11 @@
+public RenderableWaypoint(Waypoint w, double x, double y, double z, double dsq, double far)
+{
+waypoint = w;
+posX = x;
+posY = y;
+posZ = z;
+
+distance = MathHelperLM.sqrt(dsq);
+
+double crX = posX - LMFrustrumUtils.renderX;
+

@@ -1,0 +1,11 @@
+import tobacco.core.components.Type;
+
+public class ZIndexComponent implements RendererComponent {
+
+private int zIndex = 0;
+
+public ZIndexComponent() {}
+
+public ZIndexComponent(int zIndex) {
+this.zIndex = zIndex;
+

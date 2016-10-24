@@ -1,0 +1,13 @@
+final class CharSequenceReader extends Reader
+{
+private CharSequence seq;
+private int pos;
+private int mark;
+
+public CharSequenceReader(final CharSequence seq) {
+return true;
+}
+
+@Override
+public synchronized void mark(final int readAheadLimit) throws IOException {
+

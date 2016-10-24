@@ -1,0 +1,9 @@
+public void addLayer(EntityLayer layer){
+if(layer.hasPendingEntites()){
+layer.setBingMapsView(_map);
+_layers.put(layer.getLayerName(), layer);
+* @param layerName - Name of the layer to clear.
+* If set to null all layers will be deleted from the map
+*/
+public void clearLayer(String layerName){
+

@@ -1,0 +1,4 @@
+public static String sql1 = &quot;insert into jpt_series (ref_idx, series_id, series_label_eng, series_label_chin, series_image_small, series_image_large, &quot;
++ &quot;current_timestamp, current_timestamp, &#39;john&#39;, &#39;john&#39; from jpw_application app where app.tran_action = &#39;ADD&#39; and app.tran_status = &#39;AWV&#39; and app.ref_idx = ? &quot;
++ &quot;and not exists (select * from jpt_series s where s.series_id = app.series and s.rec_status = &#39;ACT&#39;)&quot;;
+

@@ -1,0 +1,8 @@
+import org.jtester.hamcrest.matcher.calendar.DateParterMatcher;
+import org.jtester.hamcrest.matcher.calendar.DateParterMatcher.DateFieldType;
+public IDateAssert<T> isYear(int year) {
+return this.assertThat(year, DateFieldType.YEAR);
+}
+
+public IDateAssert<T> isYear(String year) {
+

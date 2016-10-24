@@ -1,0 +1,11 @@
+boolean enough = false;
+if (buf.length() >= 8) {
+int dataLen = buf.getInt(buf.readerIndex()+4);
+if (buf.length() >= dataLen+8) {
+buf.setInt(dataLen, buf.readerIndex()+4);
+return buf;
+}
+
+public int decodePercent() {
+if (value == null) {
+

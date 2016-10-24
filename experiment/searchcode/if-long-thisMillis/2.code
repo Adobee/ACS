@@ -1,0 +1,10 @@
+return unit.convert((myAlarmTime - System.currentTimeMillis()), TimeUnit.MILLISECONDS);
+}
+
+public int compareTo(Delayed o) {
+long thisMillis = getDelay(TimeUnit.MILLISECONDS);
+long otherMillis = o.getDelay(TimeUnit.MILLISECONDS);
+int result;
+if (thisMillis > otherMillis) {
+result = 1;
+

@@ -1,0 +1,13 @@
+import java.io.File;
+import java.util.HashMap;
+
+public class FileCacheFactory {
+private static boolean initialized = false;
+private File cacheBaseDir;
+
+private FileCacheFactory() {
+}
+
+public static void initialize(Context context) {
+if (!initialized) {
+

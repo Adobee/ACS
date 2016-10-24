@@ -1,0 +1,9 @@
+super.init();
+RegularGridData grid = domainGrid(0);
+double tstart=grid.min();
+double tend  =grid.max();
+double tstart=storage.t[0];
+double tend=storage.t[storage.length-1];
+double dt;
+if(storage.length>1) {dt=storage.t[1]-storage.t[0];}
+

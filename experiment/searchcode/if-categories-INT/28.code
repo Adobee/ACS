@@ -1,0 +1,12 @@
+public class CategoryData implements CategoryDataI {
+
+private List<CategoryViewI> categories;
+if (categories != null ? !categories.equals(that.categories) : that.categories != null) return false;
+
+return true;
+}
+
+@Override
+public int hashCode() {
+return categories != null ? categories.hashCode() : 0;
+

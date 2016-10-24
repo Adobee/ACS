@@ -1,0 +1,12 @@
+DoubleComparable dat2 = (DoubleComparable) obj2;
+
+double tmp1 = dat1.getDoubleValue();
+double tmp2 = dat2.getDoubleValue();
+
+
+int tmp = 0;
+if(tmp1 > tmp2)
+tmp = 10;
+if(tmp1 < tmp2)
+tmp = -10;
+

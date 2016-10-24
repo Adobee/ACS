@@ -1,0 +1,13 @@
+int numSteps = rand.nextInt(10) + 1;
+step = step * rand.nextDouble();
+
+while (numSteps > 0) {
+double upDown = 1;
+if (rand.nextDouble() < 0.5)
+upDown = -1;
+nv = nv + step * upDown;
+numSteps--;
+}
+
+if (nv < lBound)
+

@@ -1,0 +1,11 @@
+//		impact high
+if( impact == ImpactLevel.HIGH.eval() ){
+int aux = intVersion[0] + 1;
+newVersion = aux + &quot;.0.1&quot;;
+int aux = intVersion[1] + 1;
+newVersion = intVersion[0]+&quot;.&quot;+aux+&quot;.1&quot;;
+}
+//impact low
+else{
+if( impact == ImpactLevel.LOW.eval() ){
+

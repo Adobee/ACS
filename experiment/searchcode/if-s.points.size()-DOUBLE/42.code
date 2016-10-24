@@ -1,0 +1,9 @@
+static int[] getClosest(Point2D.Double[] points)
+{
+int[] result = new int[2];
+int size = points.length;
+int two = -1;
+double[] t = new double[size];
+for(int k =0;k <size;k ++){
+double ts = Math.pow(points[k].x, 2)+Math.pow(points[k].y, 2);
+

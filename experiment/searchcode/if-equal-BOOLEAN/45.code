@@ -1,0 +1,10 @@
+public class TestcasesMock extends MockUp<Testcases> {
+
+private boolean equalQueck2Mocked = false;
+private int equalQueck2Executions = 0;
+private boolean equalQueck2ReturnValue = false;
+@Mock
+boolean equalQueck2(Invocation inv, int param) {
+equalQueck2Executions++;
+if (equalQueck2Mocked) {
+

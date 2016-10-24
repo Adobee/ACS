@@ -1,0 +1,10 @@
+public class CDPlayer implements MusicSource {
+
+private CD cd;
+private boolean shuffle = false;
+public void play() {
+pre();
+if(this.shuffle) {
+playRandom();
+} else cd.play();
+

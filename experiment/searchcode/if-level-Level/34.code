@@ -1,0 +1,14 @@
+package com.juzhai.verifycode.bean;
+
+
+public enum VerifyLevel {
+LEVEL1(0), LEVEL2(10), LEVEL3(20), LEVEL4(30);
+for (VerifyLevel verifyLevel : values()) {
+if (level == verifyLevel.getLevel()) {
+return verifyLevel;
+}
+}
+return null;
+}
+}
+

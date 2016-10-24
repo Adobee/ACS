@@ -1,0 +1,7 @@
+for (int i = 0; i < insertFields.size(); i++) {
+query.append(insertFields.get(i) + &quot;=?&quot;);
+if (i + 1 < insertFields.size()) {
+query.append(fields.get(i));
+if (i + 1 < fields.size()) {
+query.append(&quot;,&quot;);
+

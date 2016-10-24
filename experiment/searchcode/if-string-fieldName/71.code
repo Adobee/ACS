@@ -1,0 +1,8 @@
+private String ticketIdFieldname;
+
+private String auditIdFieldname;
+private String auditRownumFieldname;
+private String createdTimeFieldname;
+private String organizationIdFieldname;
+private String requesterIdFieldname;
+

@@ -1,0 +1,18 @@
+private boolean readable;
+private boolean writeable;
+private boolean executeable;
+
+public FilePermissions(boolean readable, boolean writeable, boolean executeable) {
+if (isReadable()) {
+sb.append(&quot;r&quot;);
+}
+if (isWriteable()) {
+sb.append(&quot;w&quot;);
+}
+if (isExecuteable()) {
+sb.append(&quot;x&quot;);
+}
+return sb.toString();
+}
+}
+

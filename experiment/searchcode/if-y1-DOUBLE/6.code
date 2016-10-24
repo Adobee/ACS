@@ -1,0 +1,14 @@
+y1=y1*i;
+a=a+1;
+System.out.println(&quot;x1 =&quot;+x1+&quot;y1 =&quot;+y1);
+}
+if(x1>x)
+{ x1=x;}
+if(y1>y)
+{y1=y;}
+double c=((double)(x1))/((double)(y1));
+System.out.println(c);
+if(c>1.33)
+{
+while(c>1.33)
+

@@ -1,0 +1,12 @@
+create table company_master
+(
+cmp_code varchar2(5) primary key,
+cmp_name varchar2(100),
+cmp_address varchar2(200),
+Db x=new Db(&quot;select * from company_master where cmp_code=?&quot;);
+x.getPs().setString(1, cmpCode);
+Object []r=x.row();
+if(r!=null)
+{
+cmpCode=r[0].toString();
+

@@ -1,0 +1,6 @@
+public final native int Lock(int argument_0_, int argument_1_,
+int argument_2_, GeometryBuffer argument_3_);
+int argument_7_, int argument_8_,
+int argument_9_) {
+if (argument_5_ == null || argument_6_ < 0
+

@@ -1,0 +1,16 @@
+public class OrionFactory {
+
+private static Orion orion = null;
+
+private static Throwable ex;
+
+private OrionFactory() { }
+// make Orion
+
+orion = new OrionImpl();
+
+// done
+
+return(orion);
+} catch (Throwable ex) {
+

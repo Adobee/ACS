@@ -1,0 +1,15 @@
+public synchronized static MongoDBHelper getInstance()
+{
+if(sMongoDBHelper==null)
+{
+sMongoDBHelper = new MongoDBHelper();
+}
+return sMongoDBHelper;
+return db.collectionExists(collectionName);
+}
+
+
+//insert one single record into specific collection
+//return true, if success.
+public boolean insertSingleRecord(String dbName, String collectionName, BasicDBObject dbObject){
+

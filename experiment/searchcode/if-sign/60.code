@@ -1,0 +1,8 @@
+package eu.algent.DuckCartUtility.Signs;
+
+import org.bukkit.block.Sign;
+import org.bukkit.entity.Minecart;
+public void signEvent(Sign sign, Minecart minecart) {
+String firstLine = sign.getLine(0);
+if (firstLine.equalsIgnoreCase(&quot;[Eject]&quot;)) ejectSign.execute(sign, minecart);
+

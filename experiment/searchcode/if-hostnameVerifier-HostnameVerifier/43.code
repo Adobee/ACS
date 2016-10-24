@@ -1,0 +1,9 @@
+if (url instanceof HttpsURLConnection) {
+HttpsURLConnection connection = (HttpsURLConnection) url;
+
+if (hostnameVerifier != null) {
+connection.setHostnameVerifier(hostnameVerifier);
+}
+
+if (sslContext != null) {
+

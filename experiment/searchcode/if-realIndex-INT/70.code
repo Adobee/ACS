@@ -1,0 +1,13 @@
+* @see org.neodatis.odb.core.layers.layer3.IBytes#set(int, byte)
+*/
+public void set(int index, byte b) {
+int realIndex = index+deltaOffset;
+
+if (realIndex < min || realIndex > max) {
+// adjust real index in the offset
+int ajustedIndex = realIndex - min;
+
+bytes[ajustedIndex] = b;
+
+if (index > maxPosition) {
+

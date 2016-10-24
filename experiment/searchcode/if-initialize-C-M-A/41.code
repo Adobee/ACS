@@ -1,0 +1,14 @@
+this.dateInitializeService = dateInitializeService;
+}
+
+public void dateInitialize() {
+
+if(logger.isDebugEnabled()) {
+this.dateInitializeService.insertLeapYear(String.valueOf(year),String.valueOf(year)+&quot;-02-29&quot;);
+}
+if(logger.isDebugEnabled()) {
+logger.debug(&quot;batch job for dateInitialize end  --------------------&quot;);
+}
+}
+}
+

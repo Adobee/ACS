@@ -1,0 +1,12 @@
+public static String execPath(String accessPath) {
+
+String execPath = &quot;&quot;;
+
+if (accessPath == null || accessPath.equals(&quot;&quot;))
+return execPath;
+
+if (accessPath.indexOf(&quot;.&quot;) > 0) {
+
+if (accessPath.indexOf(&quot;/&quot;) > -1)
+execPath = accessPath.substring(1, accessPath.indexOf(&quot;.&quot;));
+

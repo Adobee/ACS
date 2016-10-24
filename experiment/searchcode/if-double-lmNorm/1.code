@@ -1,0 +1,10 @@
+* and the LM with Dirichlet priors smoothing)
+*
+* @author ronanc
+*/
+public class LMNormScoreProvider extends CustomScoreProvider {
+float ent = this.context.reader().getNumericDocValues(&quot;Entropy&quot;).get(doc);
+float lmnorm;
+
+if (SPUDLMSimilarity.method == SPUDLMSimilarity.dir){
+

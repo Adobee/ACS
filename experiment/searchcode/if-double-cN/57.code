@@ -1,0 +1,7 @@
+public static final String TB_NAME = &quot;tb_cuenta&quot;;
+
+public static final String CN_ID = &quot;_id&quot;;
+public static final String CN_SALDO = &quot;saldo&quot;;
+public static final String CN_GDES = &quot;gdescripcion&quot;;
+public static final String CN_GASTO = &quot;gasto&quot;;
+

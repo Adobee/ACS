@@ -1,0 +1,9 @@
+public static boolean matchTypes(Type paramType,Type eventType) {
+
+print(paramType,eventType);
+
+if (paramType instanceof Class)
+return matchClass(Class.class.cast(paramType),eventType);
+
+if (paramType instanceof WildcardType)
+

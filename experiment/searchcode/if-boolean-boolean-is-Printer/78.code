@@ -1,0 +1,7 @@
+mPrinterInfo.macAddress = sharedPreferences.getString(&quot;macAddress&quot;, &quot;&quot;);
+if(isLabelPrinter(mPrinterInfo.printerModel)){
+mPrinterInfo.paperSize = PrinterInfo.PaperSize.CUSTOM;
+if(mPrinterInfo.printerModel == Model.TD_4000 ||
+mPrinterInfo.printerModel == Model.TD_4100N){
+mPrinterInfo.isAutoCut = Boolean.parseBoolean(sharedPreferences.getString(&quot;autoCut&quot;, &quot;&quot;));
+

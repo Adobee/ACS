@@ -1,0 +1,7 @@
+public static MeshTexture parse(String[] strings, int offset){
+MeshTexture result = new MeshTexture();
+result.u = Float.parseFloat(strings[offset+0]);
+result.v = 1.0f - Float.parseFloat(strings[offset+1]);
+if(strings.length-offset==3)
+result.w = Float.parseFloat(strings[offset+2]);
+

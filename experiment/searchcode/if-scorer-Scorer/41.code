@@ -1,0 +1,9 @@
+* A score that returns a constant for all conditions.
+*/
+public static <T> Scorer<T> constant(double value) {
+if (value == 0.0) return zero();
+if (value == 1.0) return one();
+public static <T> Scorer<T> nonNull(Scorer<? super T> scorer) {
+if (scorer == null) return zero();
+return (t -> t == null ? 0.0 : scorer.score(t));
+

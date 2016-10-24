@@ -1,0 +1,12 @@
+Date endtime = new Date(System.currentTimeMillis()+10000);
+long end = endtime.getTime();
+
+while(true)
+endtime = new Date(endtime.getTime()-1000);
+Thread.sleep(1000);
+if(endtime.getTime() < end-10000)
+break;
+}
+}
+}
+

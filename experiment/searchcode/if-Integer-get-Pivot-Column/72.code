@@ -1,0 +1,9 @@
+_summaryCalculatorFactory = summaryCalculatorFactory;
+}
+
+public int getStatisticsType(Values rowValues, Values columnValues, PivotField dataField) {
+if (columnValues instanceof RunningSummaryValues) {
+DataTableCellValue cellValue = rowValueMap.get(columnKey);
+if (cellValue == null) {
+List<Integer> rowIndexList = getRowIndicesFromValues(rowValues, columnValues);
+

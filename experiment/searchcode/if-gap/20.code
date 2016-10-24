@@ -1,0 +1,16 @@
+while (gap * 2.2 < getElementCount()) {
+gap = gap * 2.2;
+}
+
+int gapI = (int) gap;
+if (gap < gapI) {
+gapI = gapI - 1;
+for (int i = gapI; i < getElementCount(); i++) {
+if (cmp(start, i) > 0) {
+swap(start, i);
+}
+start++;
+}
+
+gap = (double) gapI;
+

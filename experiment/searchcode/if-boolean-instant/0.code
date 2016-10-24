@@ -1,0 +1,11 @@
+public long getMillis() {
+return recordedInstantMillis;
+}
+
+public boolean isAfter(LogInstant otherLogInstant) {
+return (recordedInstantMillis>otherLogInstant.recordedInstantMillis) || (recordedInstantMillis==otherLogInstant.recordedInstantMillis &amp;&amp; logLineNumber>otherLogInstant.logLineNumber);
+}
+
+public boolean isBefore(LogInstant otherLogInstant) {
+return (recordedInstantMillis<otherLogInstant.recordedInstantMillis) || (recordedInstantMillis==otherLogInstant.recordedInstantMillis &amp;&amp; logLineNumber<otherLogInstant.logLineNumber);
+

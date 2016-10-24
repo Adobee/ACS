@@ -1,0 +1,13 @@
+import org.xacml4j.v30.pdp.DecisionCombiningAlgorithm;
+
+
+public class DenyOverridesTest
+{
+private List<DecisionRule> decisions;
+public void testCombineWithNoDecisions()
+{
+assertEquals(Decision.NOT_APPLICABLE, algorithm.combine(context, decisions));
+}
+
+@Test
+

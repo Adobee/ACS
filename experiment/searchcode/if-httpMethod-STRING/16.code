@@ -1,0 +1,14 @@
+DELETE;
+
+public static HttpMethod fromString(String httpMethodString) {
+HttpMethod method = null;
+for (HttpMethod m : HttpMethod.values()) {
+if (m.toString().equalsIgnoreCase(httpMethodString)) {
+method = m;
+break;
+}
+}
+return method;
+}
+}
+

@@ -1,0 +1,9 @@
+public void computeCosts(Tableau t) {
+double[] basicCostsBInvA = multBasicCostsBInverseA(t);
+for(int x = 1; x < t.nrOfColumns(); x++){
+* Create the auxillary tableau thtat has artifical variables and a new cost vector.
+*/
+public Tableau createAuxillaryLP(Tableau t) {
+noOfOrgVariables = t.nrOfColumns() - 1;
+double[][] newArray = new double[t.nrOfColumns() + t.nrOfRows() - 1][t.nrOfRows()];
+

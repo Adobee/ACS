@@ -1,0 +1,8 @@
+// 360360
+public void solve(int testNumber, MyScanner in, PrintWriter out) {
+lcm = 1;
+long a = in.nextLong(), b = in.nextLong();
+for (int i = 1; i < k + 1; i++) lcm = (int) MathUtils.lcm(lcm, i);
+if (a / lcm == b / lcm) {
+long res = solve((int) (a % lcm), (int) (b % lcm));
+

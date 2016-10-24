@@ -1,0 +1,7 @@
+public boolean inSeason(DateTime inDateTime) {
+int monthOfYear = inDateTime.get(org.joda.time.DateTimeFieldType.monthOfYear());
+public boolean inSeason(DayOfYear inDateTime) {
+int monthOfYear = inDateTime.getMonth();
+boolean rAccept;
+if ((!this.overYearBound) &amp;&amp; (monthOfYear > this.startMonth) &amp;&amp; (monthOfYear < this.endMonth)) {
+

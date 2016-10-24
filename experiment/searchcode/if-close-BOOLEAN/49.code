@@ -1,0 +1,12 @@
+public int closeCalledCount = 0;
+
+public InputStreamMock(boolean throwOnClose) {
+this.throwOnClose = throwOnClose;
+return -1;
+}
+
+@Override
+public void close() throws IOException {
+this.closeCalledCount++;
+if (throwOnClose) {
+

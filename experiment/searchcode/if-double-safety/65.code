@@ -1,0 +1,14 @@
+import com.team1389.base.util.control.SetpointProvider;
+
+public class JoystickSetpointControlWithSafety implements SetpointProvider {
+double position;
+double min, max, speed, start;
+this.position = start;
+}
+
+@Override
+public double getSetpoint() {
+double joy = joystickAxis.read();
+
+if (!safetyButton.isTriggered() || Math.abs(joy) <= 0.1){
+

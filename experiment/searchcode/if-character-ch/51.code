@@ -1,0 +1,12 @@
+/*		for (char ch: a) {
+if (ch > &#39;a&#39;&amp;&amp; ch < &#39;z&#39;) {
+ch = Character.toUpperCase(ch);
+} else {
+ch = Character.toLowerCase(ch);
+}
+}*/
+
+/*		for (char ch: a) {
+if (Character.isLowerCase(ch)) {
+ch = Character.toUpperCase(ch);
+

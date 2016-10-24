@@ -1,0 +1,13 @@
+WriteLog(&quot;Start sort of &quot;+Integer.toString(GetElementSize())+&quot; elements&quot;);
+}
+
+protected Integer IncreaseSortSteps() {
+FSortSteps = FSortSteps + 1;
+if (FSortSteps%100==0)
+WriteLog(&quot;yet steps needed &quot;+Integer.toString(FSortSteps)+&quot;...&quot;);
+return FSortSteps;
+}
+
+protected Integer GetElementSize() {
+if (FElements != null)
+

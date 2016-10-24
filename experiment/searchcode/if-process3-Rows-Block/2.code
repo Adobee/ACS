@@ -1,0 +1,9 @@
+ELSE
+NAVIGATE_TREE(lv_selection,&#39;*PROCESS&#39;);
+END IF;
+--
+:KEY_BLOCK.NEXT_SELECTION := &#39;&#39;;
+lv_first_char := SUBSTR(:KEY_BLOCK.FORM_LEADING_EDGE,1,1);
+IF lv_first_char  <> &#39;*&#39; THEN
+IF lv_first_char NOT BETWEEN &#39;A&#39; AND &#39;Z&#39; THEN
+

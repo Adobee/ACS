@@ -1,0 +1,7 @@
+package com.axibase.tsd.api.method.metric;
+
+import com.axibase.tsd.api.model.metric.Metric;
+import com.axibase.tsd.api.model.series.DataType;
+final Metric metric = new Metric(&quot;update metric-1&quot;);
+assertEquals(&quot;Method should fail if metricName contains whitespace&quot;, BAD_REQUEST.getStatusCode(), updateMetric(metric).getStatus());
+

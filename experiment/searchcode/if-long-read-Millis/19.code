@@ -1,0 +1,8 @@
+dataOutput.writeLong(timeInMillis);
+}
+
+@Override
+public void readFields(DataInput dataInput) throws IOException {
+plugin = dataInput.readUTF();
+timeInMillis = dataInput.readLong();
+

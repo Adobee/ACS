@@ -1,0 +1,8 @@
+int k = 20;// 初始质心数
+List<Double> nums = fileReader(&quot;src/KMeans_Set.txt&quot;);// 读取文件中所有的样本值
+Map<Double, Set<Double>> result = KMeans(k, nums, 10);
+newResult = improve(k, nums, oldResult);
+if (isSetsEquals(oldResult.values(), newResult.values())) {
+return oldResult;
+} else {
+

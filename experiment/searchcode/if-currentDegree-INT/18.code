@@ -1,0 +1,10 @@
+private ImageView imageViewOrientation;
+private float lastOrientationDegree;
+float currentDegree;
+
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+if (msg.what == 0x2b) {
+if (Math.abs(currentDegree - lastOrientationDegree) >= 1) {
+

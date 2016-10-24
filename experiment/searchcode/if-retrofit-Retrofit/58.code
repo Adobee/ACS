@@ -1,0 +1,6 @@
+public static Retrofit getRetrofit() {
+if (mRetrofitClient == null) {
+synchronized (RetrofitClient.class) {
+if (mRetrofitClient == null) {
+mRetrofitClient = new Retrofit.Builder()
+

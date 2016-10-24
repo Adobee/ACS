@@ -1,0 +1,8 @@
+public static int writeVLong(ByteBuffer bb, long l) {
+int initPos = bb.position();
+if (l >= -112 &amp;&amp; l <= 127) {
+bb.put((byte) l);
+public static long readVLong(ByteBuffer bb, int len, byte firstByte) {
+if (len == 1) {
+return firstByte;
+

@@ -1,0 +1,6 @@
+public Integer stringToValue(String text) throws ParseException {
+try {
+return Integer.parseInt(text);
+} catch (NumberFormatException nfx) {
+throw new ParseException(nfx.getMessage(), 0);
+

@@ -1,0 +1,14 @@
+public boolean hasConfidence() {
+return confidence >= 0;
+}
+
+public float getConfidence() {
+if (confidence < 0) {
+return 1.0f;
+}
+return confidence;
+}
+
+public void setConfidence(float confidence) {
+if ((confidence < 0.0f) || (confidence > 1.0f)) {
+

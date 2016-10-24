@@ -1,0 +1,10 @@
+public int find( int[] pts )
+{
+pts[0] += 3;
+int x = pts[0], n = pts.length, g = 0, n0 = 0, n1 = 0, n2 = 0;
+for( int i = 1; i < n; i++ )
+{
+if( pts[i]>x ) g++;
+else if( pts[i]==x ) n0++;
+else if( pts[i]==x-1 || pts[i]==x-2 ) n1++;
+

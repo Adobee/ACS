@@ -1,0 +1,12 @@
+public class DBMoaraTerm extends DBMySQL {
+
+static protected Connection conn;
+static private int numChildren = 0;
+
+public DBMoaraTerm() {
+super();
+if (numChildren==0) {
+conn = this.init(&quot;moara_term&quot;);
+}
+numChildren++;
+

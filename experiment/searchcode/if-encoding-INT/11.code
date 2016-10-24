@@ -1,0 +1,10 @@
+public static final int NOT_SPECIFIED = -1;
+public static final int TRUE = 1;
+public static final int FALSE = 0;
+protected String encoding; // allowed to be null
+private long encodingCode; // This is set during equals/matches comparisons via isSameEncoding. Allows for fast
+// string comparisons.
+private int hash;
+
+public final static Format ANY = new Format(&quot;ANY&quot;);
+

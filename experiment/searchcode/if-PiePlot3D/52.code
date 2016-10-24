@@ -1,0 +1,10 @@
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.chart.plot.PiePlot3D;
+import org.jfree.chart.plot.Plot;
+* @return 该类的一个对象
+*/
+public static synchronized DrawPie getInstance() {
+if (instance == null)
+instance = new DrawPie();
+

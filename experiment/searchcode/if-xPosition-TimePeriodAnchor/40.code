@@ -1,0 +1,9 @@
+this.data = new java.util.ArrayList<TimePeriodValues>();
+this.xPosition = TimePeriodAnchor.MIDDLE;
+if (series != null) {
+this.data.add(series);
+private long getX(TimePeriod period) {
+
+if (this.xPosition == TimePeriodAnchor.START) {
+return period.getStart().getTime();
+

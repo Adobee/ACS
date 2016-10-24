@@ -1,0 +1,9 @@
+private ArrayList<Integer> orderList;
+private int orderId;
+
+
+public Order(int orderId){
+this.orderId = orderId;
+for(int i=0; i<this.orderList.size(); i++){
+if(this.orderList.get(i).intValue() == order)
+

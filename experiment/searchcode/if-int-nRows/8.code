@@ -1,0 +1,7 @@
+package ZigZagConversion;
+
+public class Solution {
+public String convert(String s, int nRows) {
+if (s == null || s.length() <= nRows || nRows <= 1) return s;
+StringBuffer sb = new StringBuffer();
+

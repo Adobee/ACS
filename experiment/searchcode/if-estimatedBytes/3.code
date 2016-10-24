@@ -1,0 +1,9 @@
+data.modifyUndoRedoTable();
+data.applyToControl();
+
+// update total used
+long estimatedBytes =strLen*2;
+minTotalEstimatedUsed += estimatedBytes;
+
+long newSizeBytes = data.undoRedoDecorator.getEstimatedBufferSizeInBytes();
+

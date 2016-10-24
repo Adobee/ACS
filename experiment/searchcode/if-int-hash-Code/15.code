@@ -1,0 +1,12 @@
+import java.util.zip.CRC32;
+
+public final class HashCodeUtil {
+private static int HASH_CODE_MULTIPLIER = 31;
+
+private HashCodeUtil() {
+return hashCode;
+}
+
+public static int hashCodeMerge(final int ... hashCodeArray) {
+if (hashCodeArray == null || hashCodeArray.length < 1) {
+

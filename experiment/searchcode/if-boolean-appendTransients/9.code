@@ -1,0 +1,11 @@
+return new ReflectionToStringBuilder(object).setExcludeFieldNames(excludeFieldNames).toString();
+}
+
+private boolean appendStatics = false;
+
+private boolean appendTransients = false;
+
+private String[] excludeFieldNames;
+protected boolean accept(Field field){
+if (field.getName().indexOf(ClassUtils.INNER_CLASS_SEPARATOR_CHAR) != -1){
+

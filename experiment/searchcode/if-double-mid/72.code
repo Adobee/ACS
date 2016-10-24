@@ -1,0 +1,10 @@
+if(x<0) return -1;
+if(x==0) return 0;
+int up=x;
+int down=1;
+int mid=(up+down)/2;
+while(up>down){
+if(x/mid>=mid &amp;&amp; x/(mid+1)<mid+1)
+return mid;
+else if(x/mid<mid)
+

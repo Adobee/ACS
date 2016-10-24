@@ -1,0 +1,13 @@
+package j3d.debug;
+
+public class Logger {
+private static boolean hooked = false;
+private static class SDHook extends Thread{
+System.out.println(&quot;Added shutdown hook&quot;);
+}
+}
+
+public static void log(String msg) {
+if(!hooked) {
+Runtime.getRuntime().addShutdownHook(new SDHook());
+

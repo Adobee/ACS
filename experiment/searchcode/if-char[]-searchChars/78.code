@@ -1,0 +1,9 @@
+* @return the {@code true} if any of the chars are found, {@code false} if no match or null input
+*/
+public static boolean containsAny(CharSequence cs, CharSequence searchChars) {
+if (searchChars == null) {
+* @return the {@code true} if any of the chars are found, {@code false} if no match or null input
+*/
+public static boolean containsAny(CharSequence cs, char[] searchChars) {
+if (isEmpty(cs) || isEmpty(searchChars)) {
+

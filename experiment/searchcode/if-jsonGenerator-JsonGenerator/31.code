@@ -1,0 +1,8 @@
+jsonGenerator = objectMapper.getJsonFactory().createJsonGenerator(System.out, JsonEncoding.UTF8);
+jsonGenerator.writeObject(d);
+if(jsonGenerator!=null)jsonGenerator.flush();
+if(!jsonGenerator.isClosed())jsonGenerator.close();
+jsonGenerator = objectMapper.getJsonFactory().createJsonGenerator(System.out, JsonEncoding.UTF8);
+jsonGenerator.writeObject(obj);
+if(jsonGenerator!=null)jsonGenerator.flush();
+

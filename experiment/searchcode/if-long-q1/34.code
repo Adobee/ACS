@@ -1,0 +1,9 @@
+// Push element x onto stack.
+public void push(int x) {
+if(q1.size() == 0 &amp;&amp; q2.size() == 0){
+q1.add(x);
+}else if(q1.size() > 0){
+q1.add(x);
+}else{
+q2.add(x);
+

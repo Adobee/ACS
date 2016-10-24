@@ -1,0 +1,15 @@
+public double[] point(float[][] path, double[][][] points, double[][] lengths, double[][] tValues, int[] details, int startSegment, int endSegmentExc, double tStart, double tEnd, boolean snapToClosest, boolean useALP, double t, double[] dest) {
+// how much length do we have to travel in this segment?
+
+
+
+
+
+
+
+}
+
+if (tStart == 0 &amp;&amp; tEnd == 1) {
+
+double t2 = map((float) t, 0, 1, startSegment, endSegmentExc);
+

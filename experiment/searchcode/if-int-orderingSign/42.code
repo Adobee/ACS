@@ -1,0 +1,7 @@
+final double convergence,
+final int maxIterationCount) {
+addEventHandler(handler, maxCheckInterval, convergence,
+final double convergence,
+final int maxIterationCount,
+final BracketedRealFieldUnivariateSolver<T> solver) {
+

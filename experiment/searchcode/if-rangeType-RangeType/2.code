@@ -1,0 +1,8 @@
+else if (operator == Punctuator.INTERSECTION) {
+if (getPrimitiveType(rangeType) == PrimitiveType.BOOLEAN) {
+declareInit(resultVariable, identifier(leftVariable, rangeType), rangeType),
+
+ifStatement(
+isEmpty(identifier(rightVariable, rangeType)),
+bodyNode(update(
+

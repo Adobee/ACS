@@ -1,0 +1,9 @@
+public class MarkerCache extends LruCache<Marker, Place> {
+
+private MarkerEvictedListener listener;
+
+public MarkerCache(int maxSize, MarkerEvictedListener listener) {
+@Override
+protected void entryRemoved(boolean evicted, Marker key, Place oldValue, Place newValue) {
+if (listener != null) listener.onMarkerEvictedFromCache(key, oldValue);
+

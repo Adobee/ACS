@@ -1,0 +1,9 @@
+public boolean isExpire() {
+boolean result=true;
+List<WxTick> lstWxTick = this.selectWxTick();
+if(lstWxTick==null||lstWxTick.size()==0){
+wxTick.setTickName(&quot;tick&quot;);
+this.insertWxTick(wxTick);
+}else{
+WxTick wxTick = lstWxTick.get(0);
+

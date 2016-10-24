@@ -1,0 +1,10 @@
+import java.awt.event.KeyListener;
+
+public class Keypad implements KeyListener{
+private volatile boolean keyDown=false, keyUp=false, keyLeft=false,
+public void keyPressed(KeyEvent e) {
+int key1 = e.getKeyCode();
+
+if (key1 == KeyEvent.VK_W){
+keyUp = true;
+

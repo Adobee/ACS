@@ -1,0 +1,18 @@
+} else if (data[i] > MIN_NZ_PARAM) {
+return Double.NEGATIVE_INFINITY;
+}
+}
+ll += Gamma.logGamma(psum);
+for (double p : params) {
+if (p > MIN_NZ_PARAM) {
+l += Gamma.logGamma(p);
+sum += p;
+}
+}
+l -= Gamma.logGamma(sum);
+return l;
+}
+
+
+}
+

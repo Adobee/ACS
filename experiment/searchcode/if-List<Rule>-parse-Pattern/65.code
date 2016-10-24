@@ -1,0 +1,10 @@
+* Instantiates a new ip filter rule list.
+*
+* @param rules the rules
+*/
+public IpFilterRuleList(String rules) {
+parseRules(rules);
+private void parseRule(String rule) {
+if (rule == null || rule.length() == 0) {
+return;
+

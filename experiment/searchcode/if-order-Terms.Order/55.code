@@ -1,0 +1,7 @@
+public static boolean isCountDesc(Terms.Order order) {
+if (order == COUNT_DESC) {
+return true;
+public static Terms.Order validate(Terms.Order order, Aggregator termsAggregator) {
+if (order instanceof CompoundOrder) {
+for (Terms.Order innerOrder : ((CompoundOrder)order).orderElements) {
+

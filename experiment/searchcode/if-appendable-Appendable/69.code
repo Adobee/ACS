@@ -1,0 +1,8 @@
+public abstract class PrintAppendable implements Appendable, Closeable {
+
+@Override
+public abstract PrintAppendable append(CharSequence csq) throws IOException;
+public PrintAppendable print(String s) throws IOException {
+if (s == null) {
+s = &quot;null&quot;;
+

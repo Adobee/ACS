@@ -1,0 +1,9 @@
+private final LuceneQuery luceneQuery;
+private final List<String> sortFields;
+
+public DefaultEventSearchQuery(WikiReference wikiRef) {
+this.wikiRef = wikiRef;
+this.luceneQuery = luceneQuery;
+if (sortFields != null) {
+this.sortFields = Collections.unmodifiableList(new ArrayList<String>(sortFields));
+

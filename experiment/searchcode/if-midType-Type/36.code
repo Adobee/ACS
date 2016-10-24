@@ -1,0 +1,8 @@
+CaveType shallowtype = CaveTypeRegister.GetShallowCaveType(world, chunkX, chunkZ);
+CaveType midtype = CaveTypeRegister.GetMidCaveType(world, chunkX, chunkZ);
+CaveType deeptype = CaveTypeRegister.GetDeepCaveType(world, chunkX, chunkZ);
+CaveGen.generateCaveType(deeptype, world, rand, position.x, position.floor, position.ceiling, position.z);
+}
+else if (position.floor < midmax){
+CaveGen.generateCaveType(midtype, world, rand, position.x, position.floor, position.ceiling, position.z);
+

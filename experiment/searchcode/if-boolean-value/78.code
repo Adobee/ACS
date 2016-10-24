@@ -1,0 +1,9 @@
+this.defaultValue = defaultValue ;
+}
+@Override
+public Boolean convert2Type(Object value) {
+if(value == null) return defaultValue ;
+else if(value instanceof Boolean) {
+return (Boolean) value ;
+} else if(&quot;true&quot;.equalsIgnoreCase(value.toString())){
+

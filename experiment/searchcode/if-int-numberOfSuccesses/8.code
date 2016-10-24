@@ -1,0 +1,5 @@
+public ConfidenceInterval createInterval(int numberOfTrials, int numberOfSuccesses, double confidenceLevel) {
+final double fValueLowerBound = distributionLowerBound.inverseCumulativeProbability(1 - alpha);
+if(numberOfSuccesses > 0) {
+lowerBound = numberOfSuccesses / (numberOfSuccesses + (numberOfTrials - numberOfSuccesses + 1) * fValueLowerBound);
+

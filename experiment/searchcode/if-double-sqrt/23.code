@@ -1,0 +1,12 @@
+package ru.progexcenter.lesson3.squareroot;
+
+public class Main {
+
+static double sqrt(double square, double epsilon, double at){
+boolean isGoodEnough = Math.abs(at*at - square) < epsilon;
+if(isGoodEnough) return at;
+else return sqrt(square, epsilon, at);
+}
+
+static double sqrt(double square, double epsilon){
+

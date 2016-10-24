@@ -1,0 +1,10 @@
+super(aClassInstrumenter, aNode, aBehavior);
+
+// At least for now...
+if (BCIUtils.CLS_OBJECT.equals(getClassNode().name)) throw new RuntimeException(&quot;java.lang.Object cannot be in scope!&quot;);
+BCIUtils.CLS_THREADDATA,
+isStaticInitializer() ? &quot;evInScopeClinitEnter&quot; : &quot;evInScopeBehaviorEnter&quot;,
+&quot;(I)Z&quot;);
+
+//Check if we must send args
+

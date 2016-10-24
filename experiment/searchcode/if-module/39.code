@@ -1,0 +1,8 @@
+import org.jboss.modules.ModuleIdentifier;
+import org.jboss.modules.ModuleLoadException;
+import org.jboss.modules.ModuleLoader;
+final ModuleSpec moduleSpec = moduleSpecs.get(moduleIdentifier);
+
+if(moduleSpec == null) {
+throw new ModuleLoadException(&quot;No module spec found for module &quot; + moduleIdentifier);
+

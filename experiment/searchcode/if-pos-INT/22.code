@@ -1,0 +1,14 @@
+public int removeDuplicates(int[] a) {
+int len = a.length;
+if ( len == 0 ) return 0;
+int pos = 1;
+for ( int i  = 1; i < len; i++)
+if (a[i] != a[pos-1]) {
+a[pos] = a[i];
+pos++;
+}
+return pos;
+}
+
+}
+

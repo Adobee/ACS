@@ -1,0 +1,5 @@
+public boolean seekExact(BytesRef text) throws IOException {
+//Check cache
+long currentTermOrd = cachedTermOrds.add(text);
+if (currentTermOrd < 0) { // already seen, initialize instance data with the cached frequencies
+

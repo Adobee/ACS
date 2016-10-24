@@ -1,0 +1,12 @@
+int x0, y0, z0, x1, y1, z1;
+
+protected boolean excludeOurs = false;
+protected int ourX, ourY, ourZ; // Only used if excludeMiddle = true;
+if(y1 < y0) {
+int temp = y1;
+y1 = y0; y0 = temp;
+}
+if(z1 < z0) {
+int temp = z1;
+z1 = z0; z0 = temp;
+

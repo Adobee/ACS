@@ -1,0 +1,9 @@
+double nextY = positionY + action.getY();
+double nextZ = positionZ + action.getZ();
+
+boolean modelXPosIsValid = 0 <= nextX &amp;&amp; nextX < QLeaning.AREA_WIDTH;
+double oldQValue = this.getQValue(positionX, positionY, positionZ, actionIndex);
+
+double qValue = oldQValue + STUDY *
+(reward.getReward(nextX, nextY, nextZ) + DISCOUNT * this.searchMaxQValue(nextX, nextY, nextZ)- oldQValue);
+

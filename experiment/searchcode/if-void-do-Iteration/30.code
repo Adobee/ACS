@@ -1,0 +1,10 @@
+* @see com.technoetic.xplanner.actions.AbstractAction#beforeObjectCommit(com.technoetic.xplanner.domain.Identifiable, org.apache.struts.action.ActionMapping, org.apache.struts.action.ActionForm, javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
+*/
+@Override
+public void beforeObjectCommit(final Iteration object,
+final IterationStatusEditorForm form = (IterationStatusEditorForm) actionForm;
+Iteration iteration;
+
+ActionForward nextPage = mapping.getInputForward();
+if (!form.isIterationStartConfirmed()) {
+

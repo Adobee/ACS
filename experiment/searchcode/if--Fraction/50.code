@@ -1,0 +1,10 @@
+// test add
+f = new Fraction(4,10);
+g = new Fraction(1,2);
+h = new Fraction(6,20);
+if (!f.equals(g.add(h))) System.out.println(&quot;Addition failed&quot;);
+f = new Fraction(4,20);
+g = new Fraction(8,10);
+h = new Fraction(1,2);
+if (!f.equals(g.subtract(h))) System.out.println(&quot;Subtraction failed&quot;);
+

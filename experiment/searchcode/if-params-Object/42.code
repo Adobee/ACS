@@ -1,0 +1,8 @@
+this.sql = sql.toString();
+if(StringUtils.isEmpty(this.params)) this.params = new LinkedList<Object>();
+this.params.add(param);
+public SQLObject(StringBuilder sql, Object[] params) {
+this.sql = sql.toString();
+this.params = new LinkedList<Object>();
+if(!StringUtils.isEmpty(params)){
+

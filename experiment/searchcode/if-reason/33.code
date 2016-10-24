@@ -1,0 +1,9 @@
+public static Reason getReasonWithType(int type) {
+Reason reason = Reason.find(&quot;byType&quot;, type).first();
+if (reason == null) {
+reason = new Reason();
+Reason reason = Reason.find(&quot;byTypeAndIsCategory&quot;, LIKE, true).first();
+if (reason == null) {
+reason = new Reason();
+reason.type = LIKE;
+

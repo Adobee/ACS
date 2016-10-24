@@ -1,0 +1,8 @@
+* @throws MathIllegalStateException if the distribution has not been loaded
+*/
+public double getNextValue() throws MathIllegalStateException {
+final double pB = pB(i);
+final double pBminus = pBminus(i);
+final double pCrit = p - pBminus;
+if (pCrit <= 0) {
+

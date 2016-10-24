@@ -1,0 +1,6 @@
+public AnalyticsUtil(Context context, int useProfile, String buildTime, String gitSha) {
+this.context = context;
+tracker = GoogleAnalytics.getInstance(context).newTracker(useProfile);
+tracker.set(BUILD_TIME, buildTime);
+tracker.set(GIT_SHA, gitSha);
+

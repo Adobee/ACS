@@ -1,0 +1,7 @@
+public static Box box(double x1, double y1, double z1, double x2, double y2, double z2) {
+return Box.create(x1, y1, z1, x2, y2, z2);
+}
+
+public static Box boxGeographic(double lon1, double lat1, double z1, double lon2, double lat2, double z2) {
+double x1 = normalizeLongitude(lon1);
+

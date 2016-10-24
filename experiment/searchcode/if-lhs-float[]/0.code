@@ -1,0 +1,10 @@
+@Stateless
+public class CalculatorBean {
+
+@EJB
+private Logger logger;
+
+public float add(float lhs, float rhs) {
+float result = lhs + rhs;
+logger.log(lhs + &quot; + &quot; + rhs + &quot; = &quot; + result);
+

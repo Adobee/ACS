@@ -1,0 +1,10 @@
+public class RandomSensor implements ISensor {
+
+private boolean status = false; // false = off - true = on
+double start = 50;
+double end = 100;
+
+@Override
+public double getValue() throws SensorNotActivated {
+if (status) {
+

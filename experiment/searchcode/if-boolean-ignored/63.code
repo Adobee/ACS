@@ -1,0 +1,13 @@
+/* 27 */       System.out.println(&quot;Wystapil blad podczas zapisu pliku ignored.yml&quot;);
+/*    */     }
+/*    */   }
+/*    */
+/*    */   public void setupConfig() {
+/* 32 */     if (!this.data.isConfigurationSection(&quot;ignored&quot;)) {
+/* 33 */       this.data.createSection(&quot;ignored&quot;);
+/* 34 */       saveData();
+/*    */     }
+/*    */   }
+/*    */
+/*    */   public boolean isIgnoredByPlayer(Player player, OfflinePlayer ignored) {
+

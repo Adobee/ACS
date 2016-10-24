@@ -1,0 +1,8 @@
+public boolean Click(Random rand)
+{
+double ratio;
+if(this.rewardRatio[0]>this.rewardRatio[1])
+{
+ratio = (double)this.rewardRatio[1]/((double)this.rewardRatio[0]+(double)this.rewardRatio[1]);
+return !(rand.nextDouble()<=ratio);
+

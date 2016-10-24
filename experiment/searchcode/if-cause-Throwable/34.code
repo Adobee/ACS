@@ -1,0 +1,7 @@
+public static Throwable getRootCause(Throwable throwable) {
+Throwable tmp;
+while((tmp = throwable.getCause()) != null) {
+public static RuntimeException propagate(Throwable throwable) throws RuntimeException, Error {
+propagateIfInstanceOf(throwable, RuntimeException.class);
+propagateIfInstanceOf(throwable, Error.class);
+

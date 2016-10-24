@@ -1,0 +1,11 @@
+String[] cswords = cs.split(&quot; &quot;);
+
+Double cslength = new Double(cswords.length);
+
+if (enwords.length > 1 &amp;&amp; cslength > 2) {
+String[] enwords = en.split(&quot; &quot;);
+String[] cswords = cs.split(&quot; &quot;);
+
+Double cslength = new Double(cswords.length);
+int coveredWords = 0;
+

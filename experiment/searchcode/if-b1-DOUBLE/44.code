@@ -1,0 +1,11 @@
+public class NonNullSimilartiy implements BooleanSimilarityMeasure
+{
+@Override
+public Double similarity(Boolean[] b1, Boolean[] b2)
+{
+if (b1.length == 0 || b1.length != b2.length)
+for (int i = 0; i < b2.length; i++)
+if (b1[i] != null &amp;&amp; b2[i] != null)
+nonNull++;
+double d = nonNull / (double) b1.length;
+

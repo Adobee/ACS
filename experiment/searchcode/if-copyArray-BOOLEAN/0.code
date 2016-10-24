@@ -1,0 +1,10 @@
+public class ShellSort<T extends Comparable<T>> implements Sort<T> {
+
+public T[] sort(T[] sourceArray, boolean ascending) {
+if (sourceArray == null) {
+return null;
+}
+
+T[] copyArray = CopyUtils.deepCopy(sourceArray);
+int n = copyArray.length;
+

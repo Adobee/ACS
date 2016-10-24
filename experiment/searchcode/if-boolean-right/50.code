@@ -1,0 +1,8 @@
+public boolean isSymmetric(TreeNode root) {
+if (root == null) return true;
+return helper(root.left, root.right);
+}
+
+boolean helper(TreeNode left, TreeNode right) {
+if (left == null &amp;&amp; right == null) return true;
+

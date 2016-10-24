@@ -1,0 +1,7 @@
+char[] buffer, int localOffset, int stopOffset, int oldState) {
+if (oldState == ISI_BLOCK_COMMENT) {
+return new int[]{0, oldState};
+}
+if (oldState == ISI_TEXT_IN_BRACKETS) {
+return new int[]{0, oldState};
+

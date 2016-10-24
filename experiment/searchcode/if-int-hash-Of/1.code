@@ -1,0 +1,13 @@
+int hash=(key%TABLE_SIZE);
+int initialHash=-1;
+int indexOfLastDeletedEntry= -1;
+
+while(hash!=initialHash &amp;&amp; (table[hash]==DeletedEntry.getUniqueDeletedEntry()|| table[hash]!=null &amp;&amp; table[hash].getKey()!=key)){
+if(table[hash]==DeletedEntry.getUniqueDeletedEntry())
+indexOfLastDeletedEntry=hash;
+
+hash=(hash+1)%TABLE_SIZE;
+}
+
+if((hash==initialHash||table[hash]==null) &amp;&amp; indexOfLastDeletedEntry!=-1)
+

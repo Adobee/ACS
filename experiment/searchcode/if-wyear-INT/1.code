@@ -1,0 +1,10 @@
+public double toDouble()
+{
+// source code copied from MFC 4.21 and modified.
+
+int wYear = getYear(); ///? /*+1900*/;
+nDate = wYear * 365L + wYear / 4 - wYear / 100 + wYear / 400
++ rgMonthDays[wMonth - 1] + wDay;
+
+// If leap year and it&#39;s before March, subtract 1:
+

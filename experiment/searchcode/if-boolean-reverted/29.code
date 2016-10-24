@@ -1,0 +1,19 @@
+package org.tendiwa.core;
+
+public enum Orientation {
+HORIZONTAL, VERTICAL;
+
+public boolean isVertical() {
+* Returns HORIZONTAL, if this is VERTICAL, or returns VERTICAL, if this is
+* HORIZONTAL.
+*
+* @return
+*/
+public Orientation reverted() {
+if (this == HORIZONTAL) {
+return VERTICAL;
+}
+return HORIZONTAL;
+}
+}
+

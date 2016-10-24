@@ -1,0 +1,9 @@
+this.mAutoFocusListener = autoFocusListener;
+}
+
+private synchronized void autoFocusAgainLater() {
+if (!this.stopped &amp;&amp; this.outstandingTask == null) {
+if (this.useAutoFocus) {
+this.outstandingTask = null;
+if (!this.stopped &amp;&amp; !this.focusing) {
+

@@ -1,0 +1,9 @@
+
+public class EvalMeasures {
+double [] tp;
+double [] fp;
+double [] fn;
+public void countStuff() {
+tp = new double [catnum];
+fp = new double [catnum];
+

@@ -1,0 +1,8 @@
+public TaxonRank getChildRank(TaxonRank rank){
+return getRankFromOrder(getRankOrder(rank)-1);
+}
+
+public int getRankOrder(TaxonRank rank) {
+for(int i=0; i<TaxonRank.values().length; i++) {
+if(TaxonRank.values()[i].equals(rank)) {
+

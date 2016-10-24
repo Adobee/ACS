@@ -1,0 +1,13 @@
+public int getDayNo()	{
+return dayNo;
+}
+public void setDayNo(int n){
+if (checkDay(n))	{
+dayNo = n;
+}
+}
+public void advance(int n)	{
+if (checkDay(n))	{
+if (checkDay(dayNo + n))	{
+dayNo = dayNo + n;
+

@@ -1,0 +1,9 @@
+public abstract class AbstractSyntaxValidator implements SyntaxValidator {
+
+protected boolean lenient = false;
+public void setLenient(final boolean lenient) {
+this.lenient = lenient;
+}
+
+protected void handleError(final Unit unit, final String message, final Throwable cause) throws ParseException {
+

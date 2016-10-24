@@ -1,0 +1,9 @@
+for (int i = 1970; i < year; i++){
+if (year % 400 == 0){
+numberOfDays = numberOfDays + 366;
+if(year % 100 == 0){
+
+for (int j= 1; j < month; j++){
+if (j == 1){
+numberOfDays = numberOfDays + 31;
+

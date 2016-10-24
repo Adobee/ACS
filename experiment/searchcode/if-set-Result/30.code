@@ -1,0 +1,10 @@
+public DtwResult dtwRecusion(int x, int y, DtwInfo info) {
+DtwResult result = new DtwResult();
+result.setP(DtwUtils.point(x, y));
+if (Double.isNaN(info.get(x, y))) {
+result.setResult(Double.MAX_VALUE);
+return result;
+}
+if(x == 0 &amp;&amp; y == 0){
+result.setResult(info.get(x, y));
+

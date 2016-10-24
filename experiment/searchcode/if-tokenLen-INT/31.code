@@ -1,0 +1,5 @@
+String token, CharacterStyle... cs) {
+// Start and end refer to the points where the span will apply
+int tokenLen = token.length();
+int start = text.toString().indexOf(token) + tokenLen;
+

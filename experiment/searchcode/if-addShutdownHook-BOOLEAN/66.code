@@ -1,0 +1,12 @@
+private Thread shutdownHook;
+
+
+public synchronized void set(long delay, TimeUnit unit, boolean runBeforeShutdown) {
+executor = null;
+}
+
+
+private synchronized void addShutdownHook() {
+if (shutdownHook == null) {
+shutdownHook = new Thread(this);
+

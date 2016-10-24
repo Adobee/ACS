@@ -1,0 +1,9 @@
+DetachedCriteria criteria = DetachedCriteria.forClass(Master.class);
+criteria.add(Restrictions.eq(&quot;account&quot;, master.getAccount()));
+// 不经存在
+if (masterService.findByCriteria(criteria) == null) {
+try {
+Master master = masterService.findByCriteria(criteria);
+if (master != null) {
+json.put(&quot;result&quot;, 1);
+

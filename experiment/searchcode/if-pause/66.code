@@ -1,0 +1,15 @@
+class OETransSortAlgorithm extends SortAlgorithm {
+void sort(int a[]) throws Exception {
+pause(0,a.length-1);
+for (int j = 1; j+1 < a.length; j += 2)
+if (a[j] > a[j+1]) {
+int T = a[j];
+a[j] = a[j+1];
+a[j+1] = T;
+}
+pause(); pause();
+}
+pause(-1,-1);
+}
+}
+

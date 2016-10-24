@@ -1,0 +1,10 @@
+public class GameFlags {
+
+private static Hashtable<String,Boolean> values = new Hashtable<String,Boolean>();
+
+private GameFlags() {}
+
+public static boolean getFlag(String key) {
+Boolean b = values.get(key);
+if (b==null) return false;
+

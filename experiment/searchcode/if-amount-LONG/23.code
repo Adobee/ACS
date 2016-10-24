@@ -1,0 +1,13 @@
+return type.getDisplay();
+}
+
+@Override
+public void run() {
+currentAmount = currentAmount + regainAmount;
+
+if (currentAmount > maximumAmount) {
+currentAmount = maximumAmount;
+stop();
+}
+if (currentAmount < MINIMUM_AMOUNT) {
+

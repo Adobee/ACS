@@ -1,0 +1,12 @@
+public String getFilter() {
+return &quot;@c-msg.net&quot;;
+}
+
+@Override
+protected boolean parseMsg(String body, Data data) {
+if (name.equals(&quot;BOX&quot;)) return new BoxField(&quot;\\d[A-Z0-9]{3}&quot;);
+if (name.equals(&quot;UNIT&quot;)) return new UnitField(&quot;(?:CO|ST)\\d+&quot;);
+return super.getField(name);
+}
+}
+

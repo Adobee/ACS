@@ -1,0 +1,7 @@
+@Option(name=&quot;--min_df&quot;, usage=&quot;# of document frequency required (default:5)&quot;)
+private int MIN_DOCFREQ_COUNT = 5;
+
+@Option(name=&quot;--max_df_percent&quot;, usage=&quot;max % of doc frequency allowed (default:0.8&quot;)
+for (String word : Multisets.copyHighestCountFirst(vocabs).elementSet()) {
+if (docFreq.count(word) >= MIN_DOCFREQ_COUNT &amp;&amp; docFreq.count(word) <= max_docfreq_count) {
+

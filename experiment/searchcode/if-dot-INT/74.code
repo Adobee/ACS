@@ -1,0 +1,13 @@
+for(int r=0; r< _dm.getRowCount(); r++)
+{
+for(int c=0; c<_dm.getColCount();c++)
+{
+
+if(_dm.getDot(r,c))
+{
+_parent.fill(_colorOn);
+int c = (mouseX - _margin) / _dotDistance;
+int r = (mouseY - _margin) / _dotDistance;
+
+if (mouseX < _margin || mouseY < _margin)
+

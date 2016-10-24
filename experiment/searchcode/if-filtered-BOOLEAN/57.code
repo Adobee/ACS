@@ -1,0 +1,6 @@
+FilteredEntry afterProcess = processor.processEntry(aux);
+if (afterProcess != null) {
+filteredEntryDao.update(afterProcess);
+@RequestMapping(value = &quot;/filteredEntries/{filteredEntryId}&quot;, method = RequestMethod.PUT)
+public boolean updateProposal(@RequestBody FilteredEntry filteredEntry,
+

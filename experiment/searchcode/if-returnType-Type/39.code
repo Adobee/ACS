@@ -1,0 +1,13 @@
+p.returnType = returnType;
+return p;
+}
+
+public Type returnType() {
+if (returnType == null) {
+return Types.get(returnType);
+}
+
+public Ref<? extends Type> returnTypeRef() {
+if (returnType == null) {
+return def().returnType();
+

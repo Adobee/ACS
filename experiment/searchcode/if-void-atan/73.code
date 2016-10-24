@@ -1,0 +1,12 @@
+@Override public void mouseMoved(MouseEvent e) {}
+
+@Override
+public void mouseDragged(MouseEvent e) {
+if (grabbed) {
+if (v.isZero() || (Math.cos(t) * v.get(0) < 0 &amp;&amp; Math.sin(t) * v.get(1) < 0))
+return;
+
+float atan = getArcTan(v);
+
+// if the click is within CLOSE_ENOUGH units of arrow&#39;s tip, it&#39;s grabbed
+

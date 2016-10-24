@@ -1,0 +1,11 @@
+rs = sql.executeQuery(sqlText);
+
+int count=-1;
+if (rs != null){
+
+while (rs.next()){
+String wname = rs.getString(1);
+String cname = rs.getString(2);
+int wyear = rs.getInt(3);
+int bestbeforeny = rs.getInt(4);
+

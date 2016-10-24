@@ -1,0 +1,7 @@
+generalAttributes.put(BasicMetadataUtils.FIRST_ROW			, new BasicSchemaObjValueString(dataset.getFirstRowValue()));
+if(dataset.getDataset().getType().equals(DatasetType.TYPE_CSV)) {
+elements.put(new BasicSchemaObjValueInteger(meta.getId()), row);
+}
+obj.setElements(elements);
+return new BasicMetadata(obj);
+

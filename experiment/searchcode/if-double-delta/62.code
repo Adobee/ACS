@@ -1,0 +1,16 @@
+if( a == 0 ){
+return Double.toString(y);
+}
+
+if( a!= 0 &amp;&amp; delta > 0 ){
+double x1= ( -b + Math.sqrt(delta) ) / (2*a);
+return result;
+}
+
+if(  a!= 0 &amp;&amp; delta < 0 ){
+return &quot;VN&quot;;
+}
+
+if( a!= 0 &amp;&amp; delta == 0 ){
+x = (double)-b/(2*a);
+

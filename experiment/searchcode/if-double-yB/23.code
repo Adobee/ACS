@@ -1,0 +1,12 @@
+package playn.easy.phy2d;
+
+public class Bar {
+
+/*
+public double x;
+public double y;
+double right = x + width / 2;
+double top = y + height / 2;
+double bottom = y - height / 2;
+if ((xP > left) &amp;&amp; (xP < right) &amp;&amp; (yP > bottom) &amp;&amp; (yP < top)) inside = true;
+

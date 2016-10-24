@@ -1,0 +1,10 @@
+import java.io.*;
+import java.lang.reflect.*;
+
+public class ProbeMux {
+private static Probe[] probes;
+probes = new Probe[probeNames.length];
+int i = 0;
+for(String probeName: probeNames) {
+Class<? extends Probe> probeClass;
+

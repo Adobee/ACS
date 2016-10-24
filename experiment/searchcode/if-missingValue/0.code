@@ -1,0 +1,10 @@
+private static int findMissingInteger(int[] A) {
+Arrays.sort(A);
+int missingValue = 0;
+for (int i = 0; i < A.length; i++) {
+if(A[i]==missingValue+1) missingValue++;
+}
+return missingValue+1;
+}
+}
+

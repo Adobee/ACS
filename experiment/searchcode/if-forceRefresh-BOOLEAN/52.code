@@ -1,0 +1,9 @@
+public class PoolStatusBean extends PoolStatus<PoolItemBean> {
+
+
+private boolean forceRefresh;
+private boolean autoRefresh;
+final long stamp = System.currentTimeMillis();
+final RServiPoolManager poolManager = this.server.getManager();
+if (poolManager == null) {
+

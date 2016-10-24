@@ -1,0 +1,13 @@
+State expectedState = null;
+
+if (oldState == null) { return true; }
+
+switch (newState.getType()) {
+expectedState = moveToWaiter(oldState);
+break;
+case TRY_PENDING:
+return true;
+}
+
+if (expectedState == newState) { return true; }
+

@@ -1,0 +1,7 @@
+calIniReader = new CalendarIniReader(iniFile,land);
+calIniReader.setContext(getApplicationContext());
+if (calIniReader.ReadCalendarData() == false) {
+//Flag in den Preferences zurücksetzen
+SharedPreferences.Editor prefEdit = calendar_Preferences.edit();
+prefEdit.putBoolean(&quot;cal_created&quot;, false);
+

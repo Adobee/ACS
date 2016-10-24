@@ -1,0 +1,8 @@
+/*  92:213 */       return x[0];
+/*  93:    */     }
+/*  94:    */     int signChangeIndex;
+/*  95:218 */     if (y[0].multiply(y[1]).negativeOrNull())
+/* 110:236 */         int nbPoints = 3;
+/* 111:237 */         signChangeIndex = 2;
+/* 112:    */       }
+

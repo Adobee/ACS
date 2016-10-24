@@ -1,0 +1,8 @@
+public Scriptable wrapAsJavaObject(Context cx, Scriptable scope,
+Object javaObject, Class<?> staticType) {
+/*if (javaObject instanceof String ||
+return super.wrapAsJavaObject(cx, scope, javaObject, staticType);
+}*/
+if (javaObject instanceof Map) {
+return new MapScriptable((Map)javaObject);
+

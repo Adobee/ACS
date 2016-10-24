@@ -1,0 +1,9 @@
+* @return an instance of Validator.
+*/
+public static Validator get( Class<?> clss, int nDims, boolean subclassOk )
+{
+checkDims( nDims );
+
+if (nDims > MAX_CACHED)
+return new Validator_custom( clss, nDims, subclassOk );
+

@@ -1,0 +1,10 @@
+public void removeValue(V v) {
+K k = inverseMap.get(v);
+if (k != null) {
+inverseMap.remove(v);
+return map.containsKey(k);
+}
+
+public boolean containsValue(V v) {
+return inverseMap.containsKey(v);
+

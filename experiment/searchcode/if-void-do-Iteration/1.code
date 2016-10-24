@@ -1,0 +1,10 @@
+iteration = iterationBusiness.retreiveIterationByReadonlyToken(readonlyToken);
+
+if(iteration != null) {
+iterationBusiness.retrieve(iteration.getId());
+return Action.SUCCESS;
+}
+
+/**
+* Edit a read only iteration object (Doesn&#39;t do anything)
+

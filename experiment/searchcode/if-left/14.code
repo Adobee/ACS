@@ -1,0 +1,10 @@
+int right=A.length-1;
+while(left<=right){
+int mid= (left+right)/2;
+if(A[mid]==target){
+return true;
+}else{
+while(left<mid&amp;&amp;A[left]==A[mid]) left++;
+if(left==mid){
+while(left<=right&amp;&amp;A[left]==A[mid])left++;
+

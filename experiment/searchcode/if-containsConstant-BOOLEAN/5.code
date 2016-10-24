@@ -1,0 +1,14 @@
+//endregion
+
+//region Construction
+
+//endregion
+
+//region Public methods
+
+@Override
+public boolean matches(String string, LogicParserState parseState) throws ParsingError {
+String constName = parts[i].trim();
+if (parseState.containsConstant(constName))
+throw new ParsingError(&quot;Constant &#39;&quot; + constName + &quot;&#39; already exists&quot;);
+

@@ -1,0 +1,10 @@
+for (int i = 0; i < listenerArray.length; i++)
+if (listenerTypes[i].equalsIgnoreCase(listenerType))
+return listenerArray[i];
+final boolean hasListener(int listenerType) {
+return (listenerArray[listenerType].hasListeners());
+}
+
+
+/** Returns true if any listeners exist.  This method really isn&#39;t needed as Monitor.hasListeners() should suffice*/
+

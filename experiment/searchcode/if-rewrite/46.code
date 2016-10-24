@@ -1,0 +1,7 @@
+package org.antlride.internal.core.model.statement.builder;
+
+import org.antlride.core.model.Rewrite;
+public RewriteBuilder<SourceElement> withStatement(StatementBuilder<SourceElement> statement) {
+if (rewrite.getStatement() != null) {
+throw new IllegalStateException(&quot;The rewrite statement was already set.&quot;);
+

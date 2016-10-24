@@ -1,0 +1,6 @@
+* @return boolean 值
+*/
+public static boolean isGzipSupport(HttpServletRequest req) {
+String headEncoding = req.getHeader(&quot;accept-encoding&quot;);
+if (headEncoding == null || (headEncoding.indexOf(&quot;gzip&quot;) == -1)) { // 客户端 不支持 gzip
+

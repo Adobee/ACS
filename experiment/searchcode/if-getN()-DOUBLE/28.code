@@ -1,0 +1,8 @@
+Matriz VM = new Matriz(M.getnColunas(),1,&quot;Media_&quot;+M.getName());
+for(int l = 0; l < M.getnColunas(); l++) {
+double d = 1.0D;
+for(int k = 0; k < M.getnLinhas(); k++)
+d = M.M[k][l] + d;
+
+VM.M[l][0] = d / (double)M.getnLinhas();
+

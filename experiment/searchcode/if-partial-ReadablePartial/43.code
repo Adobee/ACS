@@ -1,0 +1,10 @@
+import org.joda.time.DurationField;
+import org.joda.time.ReadablePartial;
+
+public final class UnsupportedDateTimeField extends DateTimeField implements Serializable {
+public String getAsText(long j) {
+throw unsupported();
+}
+
+public String getAsText(ReadablePartial readablePartial, int i, Locale locale) {
+

@@ -1,0 +1,7 @@
+decider.decideNextStep(stepScope);
+if (stepScope.getStep() == null) {
+if (termination.isPhaseTerminated(phaseScope)) {
+stepScope.getPhaseScope().calculateSolverTimeMillisSpentUpToNow());
+} else if (stepScope.getSelectedMoveCount() == 0L) {
+logger.warn(&quot;    No doable selected move at step index ({}), time spent ({}).&quot;
+

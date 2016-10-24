@@ -1,0 +1,10 @@
+public class Health implements Serializable {
+private static final long serialVersionUID = 1L;
+
+private int current;
+private int maximum;
+public void setMaximum(int maximum, boolean setCurrentToMax) {
+this.maximum = maximum;
+if (setCurrentToMax)
+this.current = maximum;
+

@@ -1,0 +1,10 @@
+s= Math.max(s,Math.abs(g1));
+double gamma = s*Math.sqrt((theta/s)*(theta/s) - (g0/s)*(g1/s));
+if( x0 > x1 )
+gamma = -gamma;
+double gamma = s*Math.sqrt((theta/s)*(theta/s) - (g0/s)*(g1/s));
+if( x1 < x0 )
+gamma = -gamma;
+double p = (gamma-g0) + theta;
+double q = (gamma+(g1-g0))+gamma;
+

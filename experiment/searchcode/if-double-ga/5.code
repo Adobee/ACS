@@ -1,0 +1,15 @@
+package ga;
+
+public class MinFitness {
+public double calminfitness(double[] fitness){
+int size=fitness.length;
+double x=1E20;
+for(int i=0;i<size;i++){
+if(fitness[i]<x){
+x=fitness[i];
+}
+}
+return x;
+}
+}
+

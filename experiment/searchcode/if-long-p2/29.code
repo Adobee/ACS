@@ -1,0 +1,14 @@
+class primitive{
+private long l;
+public primitive(long n){
+l=n;
+}
+public boolean equals(primitive p){
+primitive p2=new primitive(23456);
+if (p1.equals(p2))
+System.out.println(&quot;p1 is equals p2&quot;);
+else
+System.out.println(&quot;p1 is not equals p2&quot;);
+}
+}
+

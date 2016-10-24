@@ -1,0 +1,11 @@
+float scale = 1f;
+
+int maxIterations = 10;
+
+public void run() {
+int tid = 0;
+
+int i = tid % width;
+for (int iter = 0; iter<this->maxIterations; iter++){
+if ((x2 + y2)<=scaleSquare){
+

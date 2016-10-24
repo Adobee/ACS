@@ -1,0 +1,13 @@
+this.writeMethod[fieldIndex - 1] = writeMethod;
+}
+
+@Override
+public Method getReadMethod(int fieldIndex) throws DataAccessException {
+if (this.readMethod == null || this.readMethod[fieldIndex - 1] == null) {
+return this.readMethod[fieldIndex - 1];
+}
+
+@Override
+public void setReadMethod(int fieldIndex, Method readMethod) {
+if (this.readMethod == null) {
+

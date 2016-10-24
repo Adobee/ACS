@@ -1,0 +1,12 @@
+public class ApplicationAssocAppTypeInfo {
+public int mId;
+public int mIdApp;
+public int mIdType;
+
+public ContentValues toContentValues() {
+values.put(AssocAppTypeColumns.ID_TYPE, mIdType);
+return values;
+}
+
+public ApplicationAssocAppTypeInfo(Cursor c, Context context){
+

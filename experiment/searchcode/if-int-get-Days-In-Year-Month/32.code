@@ -1,0 +1,9 @@
+* Method that sets the amount of days in each month of a given year
+* @param year
+*/
+private void setNumberOfDaysInMonths(int year) {
+if(isLeapYear()){
+this.startDaysOfMonths[0]=getJanFirstDay(year);
+for(int i=0;i<11;i++){
+nextMonths=(this.startDaysOfMonths[i]-(28-this.daysInMonth[i]));
+

@@ -1,0 +1,11 @@
+for (GridObjectType type : objectTypes) {
+if (type.getName().equals(name)) {
+return (T) type;
+}
+}
+
+return null;
+public static GridObjectTypeFactory factoryForType(Class<? extends GridObjectType> typeClass) {
+for (GridObjectTypeFactory typeFactory : typeFactories) {
+if (typeFactory.gridObjectTypeClass.equals(typeClass)) {
+

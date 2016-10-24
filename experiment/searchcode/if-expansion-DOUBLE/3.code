@@ -1,0 +1,6 @@
+import com.swords.controller.response.ExpansionEntryResponse;
+import com.swords.controller.response.ExpansionIndexResponse;
+import com.swords.controller.response.ExpansionItemResponse;
+expansionlist.stream().forEach((expansion) -> {
+ExpansionCollection expansionCollection = expansionCollectionRepository.findByIdOrCreateIfNotExists(expansion.getId());
+

@@ -1,0 +1,10 @@
+String dec;
+String exp;
+int decPos = val.indexOf(&#39;.&#39;);
+int expPos = val.indexOf(&#39;e&#39;) + val.indexOf(&#39;E&#39;) + 1;
+
+if (decPos > -1) {
+
+if (expPos > -1) {
+if (expPos < decPos) {
+

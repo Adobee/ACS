@@ -1,0 +1,9 @@
+int result = 0;
+int len = s.length();
+int start = 0, e = 0;
+int[] tmp = new int[26];
+for( int i = 0; i < 26; i++ ) tmp[i] = -1;
+int tmp_l = 0;
+while( e < len ) {
+if( tmp[s.charAt(e)-&#39;a&#39;] == -1 ) {
+

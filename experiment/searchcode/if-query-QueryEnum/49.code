@@ -1,0 +1,9 @@
+public double compute(Object caseOutcome, Object queryOutcome) throws jcolibri.exception.NoApplicableSimilarityFunctionException{
+if ((caseOutcome == null) || (queryOutcome == null))
+return 0;
+if(!(caseOutcome instanceof Outcomes))
+Outcomes queryEnum = (Outcomes) queryOutcome;
+double value=0;
+if(caseEnum==queryEnum)
+value=1;
+

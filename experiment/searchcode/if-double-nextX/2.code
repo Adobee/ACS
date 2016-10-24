@@ -1,0 +1,8 @@
+public static double getCubeRoot(double stuff) {
+double nextX = 1;
+for (int i = 1; i < 100; i++) {
+// (x/y^2+2y)/3 ;
+nextX = (2 * nextX + stuff * 1.0 / (nextX * nextX)) / 3; /* 牛顿迭代公式 */
+if (nextX * nextX * nextX == stuff) {
+break;
+

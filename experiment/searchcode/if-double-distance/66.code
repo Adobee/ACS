@@ -1,0 +1,10 @@
+public class CardioWorkoutItem extends WorkoutItem {
+private double distance;
+private double completedDistance;
+
+public CardioWorkoutItem() {
+//miles per hour, multiplied by a factor of 1.6529
+double METs = -1;
+if (getTimeSpent() > 0 &amp;&amp; completedDistance > 0) {
+METs = 1.6529 * distance / (getTimeSpent() / 60);
+

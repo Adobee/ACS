@@ -1,0 +1,8 @@
+public SearchSourceBuilder fetchSource(boolean fetch) {
+if (this.fetchSourceContext == null) {
+this.fetchSourceContext = new FetchSourceContext(fetch);
+out.writeVInt(size);
+boolean hasSorts = sorts != null;
+out.writeBoolean(hasSorts);
+if (hasSorts) {
+

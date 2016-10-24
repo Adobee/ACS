@@ -1,0 +1,8 @@
+private int inferPreferenceType(AttributeDefinition realAD) {
+int preferenceType;
+if (realAD.getType() != PreferenceAD.TEXT) {
+String defaultVal = realAD.getDefaultValue()[0];
+if (defaultVal.startsWith(TypePrefixes.DIRECTORY_PREFIX)) {
+preferenceType = DIRECTORY;
+} else if (defaultVal.startsWith(TypePrefixes.FILE_PREFIX)) {
+

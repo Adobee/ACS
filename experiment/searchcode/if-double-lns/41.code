@@ -1,0 +1,9 @@
+} else if (elems.length > 0) {
+int start = -1;
+double value = -1;
+try {
+if (stepmode == STEPMODE.FIXEDSTEP) {
+value = Double.parseDouble(elems[0]);
+if (nrLnsReadAfterHeader == 0) {
+start = currentStart;
+

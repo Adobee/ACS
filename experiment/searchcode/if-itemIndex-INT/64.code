@@ -1,0 +1,13 @@
+public UndoItem getUndoableItem(){
+int itemIndex = undoItemList.size() - 1;
+UndoItem lastItem = undoItemList.get(itemIndex);
+return lastItem;
+undoItemList.remove(itemIndex);
+if(undoItemList.isEmpty()){
+canUndo = false;
+}
+}
+
+public void deleteRedo(){
+int itemIndex = redoItemList.size() - 1;
+

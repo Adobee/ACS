@@ -1,0 +1,11 @@
+public static double RandGamma(double aa) {
+double n = 0.0;
+if (aa > 0.0 &amp;&amp; aa <= 0.4) {
+n = 1 / aa;
+} else if (aa > 0.4 &amp;&amp; aa <= 4) {
+double b1 = aa - 1 / n;
+double b2 = aa + 1 / n;
+double c1 = 0.0;
+if (aa > 0.0 &amp;&amp; aa <= 0.4) {
+c1 = 0;
+

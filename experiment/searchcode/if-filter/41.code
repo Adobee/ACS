@@ -1,0 +1,13 @@
+public boolean filter(VoteDTO voteDTO) {
+if (userFilter.filter(voteDTO)) {
+if (levelFilter.filter(voteDTO)) {
+if (wordFilter.filter(voteDTO)) {
+return true;
+}
+}
+}
+
+return false;
+}
+}
+

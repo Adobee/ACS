@@ -1,0 +1,7 @@
+int[][] matrix = new int[n][n];
+int startRow = 0, startCol = 0, endRow = n, endCol = n;
+int count = 0, all = n * n;
+startRow++;
+for (int i = startRow; i < endRow; i++){
+matrix[i][endCol - 1] = ++count;
+

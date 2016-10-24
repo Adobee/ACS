@@ -1,0 +1,6 @@
+sb.append(&quot;$(&#39;#&quot; + divUUID + &quot; .page-select&#39;).change(function(){&quot;);
+sb.append(&quot;var skipIndex = parseInt($(this).val());&quot;);
+sb.append(&quot;var dealUrl = &#39;&quot; + actionPath + separator + defaultPageSizeName + &quot;=&quot; + pageSize + &quot;&#39;;&quot;);
+sb.append(&quot;dealUrl += &#39;&amp;&quot; + defaultCurrPageName + &quot;=&#39; + skipIndex;&quot;);
+if (null != formId &amp;&amp; !&quot;&quot;.equals(formId.trim())) {
+

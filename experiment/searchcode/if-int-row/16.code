@@ -1,0 +1,7 @@
+private static final int N = 1000;
+
+public static void main(String[] args) {
+int row[] = {1, 1}, count = 3;
+for (int i = 3; i <= N; i++) {
+int[] nextRow = new int[i];
+

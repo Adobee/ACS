@@ -1,0 +1,9 @@
+* @return boolean: true if it is converged; false otherwise
+*
+*/
+protected boolean isConverged(int iter) throws Exception {
+String learnRate = lRate > 0 ? &quot;, learn_rate = &quot; + (float) lRate : &quot;&quot;;
+
+String earlyStop = &quot;&quot;;
+if (earlyStopMeasure != null &amp;&amp; earlyStopMeasure != Measure.Loss) {
+

@@ -1,0 +1,18 @@
+public static ObjectMapper  getObjectMapper()
+{
+if(objectMapper==null)
+{
+JacksonConfig.create();
+}
+return objectMapper;
+}
+
+public  static  synchronized void create()
+{
+if(objectMapper==null)
+{
+objectMapper = new ObjectMapper();
+}
+}
+}
+

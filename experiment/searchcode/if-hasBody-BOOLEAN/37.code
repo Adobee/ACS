@@ -1,0 +1,10 @@
+for (String line : lines) {
+Integer length = length(line);
+if (length != null) return length;
+}
+return 0;
+}
+
+public boolean hasBody(String request) {
+return contentLength(request) > 0;
+

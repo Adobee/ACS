@@ -1,0 +1,7 @@
+public static double factorialApproximation(long n) {
+if (n < computedLans) return factLans[(int) n];
+double a = n * Math.log(n) - n;
+public static double stirlingApproximation(double n) {
+if (n==0) { return 0; }
+else { return -(n*Math.log(n)-n+0.5*Math.log(2*Math.PI*n)); }
+

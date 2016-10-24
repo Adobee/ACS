@@ -1,0 +1,6 @@
+/** @return <b>true</b> - if task should be interrupted; <b>false</b> - otherwise */
+private boolean waitIfPaused() {
+AtomicBoolean pause = engine.getPause();
+if (pause.get()) {
+synchronized (engine.getPauseLock()) {
+

@@ -1,0 +1,10 @@
+return _maxRequests;
+}
+
+@Override
+public void setMaxRequests(int maxRequests) {
+update(null, maxRequests);
+boolean doUpdate = false;
+if (maxRequests != null &amp;&amp; maxRequests != _maxRequests) {
+_maxRequests = maxRequests;
+

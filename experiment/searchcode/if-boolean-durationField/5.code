@@ -1,0 +1,9 @@
+public class NonTimedMediaResourceView extends MediaResourceView
+{
+protected boolean durationUpdating;
+protected long durationValue;
+protected JSlider durationSlider;
+Long time = NewMediaPanel.parseTime( durationField.getText() );
+if ( time != null ) {
+durationValue = time;
+

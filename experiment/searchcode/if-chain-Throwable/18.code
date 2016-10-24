@@ -1,0 +1,7 @@
+public static ArrayList<Throwable> getExceptionChain(Throwable throwable,
+boolean includeThisThrowable) {
+ArrayList<Throwable> retval;
+
+Throwable cause = throwable.getCause();
+if (cause != null) { // has a cause
+

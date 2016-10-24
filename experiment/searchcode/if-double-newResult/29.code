@@ -1,0 +1,10 @@
+copyList.add(nodePair.getVertexEclass());
+if(!newResult.contains(nodePair)){
+newResult.add(nodePair);
+}
+
+}else if (!newResult.contains(nodePair)) {
+newResult.add(nodePair);
+}
+if(!copyList2.contains(nodePair.getVertexElement())){
+

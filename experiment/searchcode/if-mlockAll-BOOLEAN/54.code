@@ -1,0 +1,7 @@
+static void tryMlockall() {
+if (!jnaAvailable) {
+logger.warn(&quot;cannot mlockall because JNA is not available&quot;);
+static boolean definitelyRunningAsRoot() {
+if (!jnaAvailable) {
+logger.warn(&quot;cannot check if running as root because JNA is not available&quot;);
+

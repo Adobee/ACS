@@ -1,0 +1,13 @@
+public double[] denoise(double[] data, int mixNumber) {
+if (mixNumber <= 2) {
+return data;
+}
+int number = data.length;
+double[] result = new double[number];
+for (int i = 0; i < number - mixNumber; i++) {
+if (i == number - mixNumber - 1) {
+last = true;
+}
+
+List<Double> mixNumbers = new ArrayList<Double>();
+

@@ -1,0 +1,8 @@
+package controllers;
+
+import events.ChannelEvent;
+import models.ChannelList;
+import play.Logger;
+Logger.info(&quot;try streaming... %s&quot;, number);
+EventStream<ChannelEvent> stream = ChannelList.instance.getStream(number);
+

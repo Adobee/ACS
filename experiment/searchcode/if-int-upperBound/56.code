@@ -1,0 +1,11 @@
+private double upperBound;
+
+public EnsureBoundedStateHook(int index, double lowerBound, double upperBound) {
+assert(lowerBound <= upperBound);
+X.set(index, lowerBound);
+else if (value > upperBound)
+X.set(index, upperBound);
+}
+
+}
+

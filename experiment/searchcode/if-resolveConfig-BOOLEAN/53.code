@@ -1,0 +1,7 @@
+* @param resolveConfig controls whether the logging conf file should be read too or not.
+*/
+public static void configure(Settings settings, boolean resolveConfig) {
+Settings.Builder settingsBuilder = settingsBuilder();
+if (resolveConfig) {
+resolveConfig(environment, settingsBuilder);
+

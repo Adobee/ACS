@@ -1,0 +1,10 @@
+public double getMembership(double x)
+{
+double result = 0;
+
+if ( x >= lmin &amp;&amp; x < lcenter){
+result = linearInterpolation(lmin, 0, lcenter, 1, x);
+private double linearInterpolation(double xa, double ya, double xb, double yb, double x)
+{
+return ((ya - yb) / (xa - xb)) * x + ((xa * yb) -(xb * ya) ) / (xa - xb);
+

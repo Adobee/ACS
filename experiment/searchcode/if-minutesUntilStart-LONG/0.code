@@ -1,0 +1,8 @@
+// run a connection test
+JSONObject result = this.makeRequestForObject(&quot;TVAccessService&quot;, &quot;TestConnectionToTVService&quot;, null);
+if(result != null)
+{
+if(result.get(&quot;Result&quot;).toString() != &quot;true&quot;)
+{
+System.err.println(&quot;Connected to MPExtended but MediaPortal is not running.&quot;);
+

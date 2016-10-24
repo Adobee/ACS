@@ -1,0 +1,13 @@
+public double doubleValue() {
+return toDouble();
+}
+
+public BigInteger toBigInteger() {
+if( isHex() ) {
+return Double.parseDouble( input );
+}
+
+public Short toShort() {
+if( isHex() ) {
+return Short.parseShort( input.substring(2), 16 );
+

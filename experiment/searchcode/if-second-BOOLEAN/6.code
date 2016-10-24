@@ -1,0 +1,8 @@
+public static boolean areEqual(Object first, Object second, boolean equalEvenIfBothNull) {
+return (equalEvenIfBothNull ?
+areEqualEvenIfBothNull(first, second) :
+areEqual(first, second));
+}
+
+private static boolean areEqual(Object first, Object second) {
+

@@ -1,0 +1,14 @@
+// Represents a failed index search.
+private static final int INDEX_NOT_FOUND = -1;
+
+/**
+* Checks if the CharSequence equals any character in the given set of characters.
+eq = strs == null;
+}
+
+if (strs != null)
+{
+for (int i = 0; i < strs.length; i++)
+{
+eq = eq || strs[i].equals(cs);
+

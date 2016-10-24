@@ -1,0 +1,11 @@
+public class TrekWormhole extends TrekObject {
+protected String targetQuadrant;
+//	protected int quadrantCount;
+protected int activeCountdown;
+activeCountdown = Math.abs(gen.nextInt() % 140) + 40; // fluctuate for min 10 seconds, max 45
+}
+
+Vector shipsToTransfer = currentQuadrant.getShipsAffectedByWormhole(this, 500);
+
+if (shipsToTransfer.size() == 0) {
+

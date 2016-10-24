@@ -1,0 +1,8 @@
+protected int compressionLevel;
+protected int deflatedSize;
+protected int inflatedSize;
+protected int nameOffset;
+this.nameOffset = buffer.getInt();
+
+if (compressionLevel == 0 &amp;&amp; deflatedSize == 0) deflatedSize = inflatedSize;
+

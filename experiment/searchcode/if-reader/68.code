@@ -1,0 +1,9 @@
+package org.trimatek.mozo.model;
+
+public enum FileTypeEnum {
+mozo(new MozoReader()), pom(new PomReader());
+
+private DependenciesReader reader;
+
+private FileTypeEnum(DependenciesReader reader) {
+

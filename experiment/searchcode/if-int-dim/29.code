@@ -1,0 +1,8 @@
+public int lowX, lowY;
+public int dimX, dimY;
+
+public DiscretizedGridCell(int lowX, int lowY, int dimX, int dimY) {
+public boolean isZin(DiscretizedGridCell laterCell, int direction) {
+if (dimX <= laterCell.dimX || dimY <= laterCell.dimX)
+return false;
+

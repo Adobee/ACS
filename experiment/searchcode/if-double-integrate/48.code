@@ -1,0 +1,10 @@
+public double integrate(double a, double b, IFunction1D func) {
+double res = 0.0;
+for (int i = 0; i <= numOfNodes; i++) {
+res *= (b - a) / (double) numOfNodes;
+return res;
+}
+
+@Override
+public double[][] integrate(double a, double b, MatrixFunction1D func) {
+

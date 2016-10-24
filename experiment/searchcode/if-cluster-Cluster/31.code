@@ -1,0 +1,10 @@
+import com.redhat.qe.config.RhscConfiguration;
+import com.redhat.qe.helpers.repository.ClusterHelper;
+import com.redhat.qe.model.Cluster;
+cluster = new ClusterHelper().create(getClusterToBeCreated(), getClusterRepository(), getDatacenterRepository());
+}
+
+@After
+public void cleanup() {
+if(cluster != null &amp;&amp; cluster.getId() != null)
+

@@ -1,0 +1,17 @@
+public long getX() {
+return x;
+}
+
+public long getY() {
+return y;
+}
+
+public boolean sameAs(Point P) {
+if ((P.getX() == x) &amp;&amp; (P.getY() == y)) {
+return false;
+}
+}
+
+public Point plus(Line vector) {
+long deltaX = vector.endPoint.getX() - vector.startPoint.getX();
+

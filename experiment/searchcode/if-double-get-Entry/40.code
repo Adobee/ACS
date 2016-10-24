@@ -1,0 +1,11 @@
+public class Sorter {
+
+public static <K> List<Entry<K, Double>> sort(Map<K, Double> map) {
+
+List<Map.Entry<K, Double>> list = new ArrayList<Map.Entry<K, Double>>();
+Collections.sort(list, new Comparator<Entry<K, Double>>() {
+
+@Override
+public int compare(Entry<K, Double> e1, Entry<K, Double> e2) {
+if(e1.getValue() >= e2.getValue())
+

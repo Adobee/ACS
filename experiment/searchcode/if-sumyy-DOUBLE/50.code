@@ -1,0 +1,9 @@
+final int size = xValues.length;
+final double cutOff = 4 * sigma;
+if (size < 3) {
+LOG.error(&quot;trying to calculate smoothed values from {} < 3 data points!&quot;, size);
+double sumxy = 0;
+double sumyy = 0;
+double norm = 0;
+for (int i = 0; i < size; i++) {
+

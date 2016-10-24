@@ -1,0 +1,13 @@
+public static DateFactory getInstance() {
+if (instance == null) {
+instance = new DateFactory();
+}
+return instance;
+}
+
+public LocalDate getLocalDate() {
+LocalDate localDate = new LocalDate();
+return localDate;
+}
+}
+

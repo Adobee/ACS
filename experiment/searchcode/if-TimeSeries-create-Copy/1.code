@@ -1,0 +1,9 @@
+implements QueryRunnerFactory<Result<TimeseriesResultValue>, TimeseriesQuery>
+{
+public static TimeseriesQueryRunnerFactory create()
+{
+return new TimeseriesQueryRunnerFactory(
+public QueryRunner<Result<TimeseriesResultValue>> createRunner(final Segment segment)
+{
+return new TimeseriesQueryRunner(engine, segment.asStorageAdapter());
+

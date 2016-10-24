@@ -1,0 +1,9 @@
+public RegulaFalsi(TermIF term, double acc) throws NotFoundRootException
+{
+super(term, acc);
+}
+public double getNext()
+{
+double fxB = equationToSolve.evaluate(b);
+double c = b - (fxB*(b - a)/(fxB - equationToSolve.evaluate(a)));
+

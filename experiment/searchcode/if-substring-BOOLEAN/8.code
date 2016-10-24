@@ -1,0 +1,7 @@
+public class Solution {
+public boolean isMatch(String s, String p) {
+if (&quot;&quot;.equals(p)) {
+return isMatch(s.substring(1), p) || isMatch(s, p.substring(1));
+}
+if (p.charAt(0) == &#39;?&#39;) {
+

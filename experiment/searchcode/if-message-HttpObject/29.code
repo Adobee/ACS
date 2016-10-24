@@ -1,0 +1,6 @@
+public HttpResponse requestPre(HttpObject httpObject) {
+if (httpObject instanceof HttpRequest) {
+System.out.println(&quot;Response post -> &quot; + url + &quot; - &quot; +
+httpObject.getClass() + &quot; - &quot; + httpObject);
+if (httpObject instanceof FullHttpResponse) {
+

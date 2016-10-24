@@ -1,0 +1,9 @@
+private final static Pattern SCHEME_PATTERN = Pattern.compile(&quot;^[a-zA-Z][a-zA-Z+.-]*://?&quot;);
+
+public static String addImplicitScheme(String url) {
+return addImplicitScheme(url, &quot;http&quot;);
+}
+
+public static String addImplicitScheme(String url, String scheme) {
+if (SCHEME_PATTERN.matcher(url).find()) {
+

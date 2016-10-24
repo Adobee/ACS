@@ -1,0 +1,12 @@
+private Boolean allowEmpty;
+
+public StringNullableEditor(final Boolean allowEmpty) {
+this.allowEmpty = allowEmpty;
+if (Boolean.TRUE.equals(this.allowEmpty) &amp;&amp; StringUtils.isEmpty(text)) {
+setValue(null);
+} else {
+setValue(text);
+}
+}
+}
+

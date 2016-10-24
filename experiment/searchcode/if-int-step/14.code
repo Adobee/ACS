@@ -1,0 +1,7 @@
+public class Solution {
+public int climbStairs(int n) {
+int[] step = {1,2};///how to inital a array.
+return step[n-1];
+
+for(int i=3;i<=n;i++){////steps =  from last one + from last last one
+

@@ -1,0 +1,11 @@
+int z3;
+int z4;
+int z5;
+
+ShortBuffer dataptr = data.duplicate();
+
+for (int rowctr = DCTSIZE - 1; rowctr >= 0; rowctr--) {
+int tmp0, tmp1, tmp2, tmp3;
+int tmp10, tmp11, tmp12, tmp13;
+int z1, z2, z3, z4, z5;
+

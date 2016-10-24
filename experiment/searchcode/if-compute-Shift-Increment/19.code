@@ -1,0 +1,4 @@
+else if (&quot;End&quot;.equals(s) || &quot;End2&quot;.equals(s)) end();
+else if (&quot;IncrementValue&quot;.equals(s) || &quot;IncrementValue2&quot;.equals(s)) incrementValue();
+else if (&quot;DecrementValue&quot;.equals(s) || &quot;DecrementValue2&quot;.equals(s)) decrementValue();
+

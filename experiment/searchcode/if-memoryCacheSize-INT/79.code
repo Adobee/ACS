@@ -1,0 +1,5 @@
+int memoryCacheSize = 1024*1024;
+if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR1){
+memoryCacheSize = (int) Runtime.getRuntime().maxMemory()  / 8;
+} else {
+

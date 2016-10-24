@@ -1,0 +1,8 @@
+public class MonitorWeightMax extends MonitorMetric {
+private final boolean ignoreExact;
+
+public MonitorWeightMax(boolean ignoreExact) {
+for (WildcardPattern monitor : monitors) {
+if (ignoreExact &amp;&amp; monitor.getWildcardNum() == 0) {
+continue;
+

@@ -1,0 +1,14 @@
+* Indicate whether the proxy settings exists.
+*
+* @return
+*/
+public boolean isProxyEnabled() {
+return HttpUtilities.proxyExists();
+}
+
+/**
+* Remove proxy settings if exists.
+*/
+public void disableProxy() {
+HttpUtilities.removeProxyConfig();
+

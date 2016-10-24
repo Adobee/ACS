@@ -1,0 +1,14 @@
+protected Object parse_object()
+{
+int n0 = index();
+debug(&quot;parse_object() at &quot;+n0);
+
+if(!goToNext()) return reset(n0,&quot;!goToNext()&quot;);
+private Object parse_value()
+{
+int n0 = index();
+debug(&quot;parse_value() at &quot;+n0);
+
+Object string = parse_string();
+if(string!=null) return string;
+

@@ -1,0 +1,11 @@
+private void createAddressWithNumber(int number, boolean shouldFail) {
+boolean threwException = false;
+
+try {
+Address address = mAddressFactory.make(number);
+} finally {
+if (shouldFail) {
+if (threwException) {
+// Pass!
+} else {
+

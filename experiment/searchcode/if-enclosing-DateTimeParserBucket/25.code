@@ -1,0 +1,9 @@
+this.iSavedFieldsCount = DateTimeParserBucket.this.iSavedFieldsCount;
+}
+
+boolean restoreState(DateTimeParserBucket enclosing) {
+if (enclosing != DateTimeParserBucket.this) {
+return false;
+}
+enclosing.iZone = this.iZone;
+

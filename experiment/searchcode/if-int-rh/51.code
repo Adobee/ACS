@@ -1,0 +1,15 @@
+int rW = (int) rect.getWidth();
+int rH = (int) rect.getHeight();
+
+if (rX < 0)
+rX = 0;
+if (rY < 0)
+rY = 0;
+if (rX + rW > 480)
+rX = 480 - rW;
+if (rY + rH > 480)
+rY = 256 - rH;
+rect.setRect(rX, rY, rW, rH);
+}
+}
+

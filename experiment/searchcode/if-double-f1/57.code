@@ -1,0 +1,6 @@
+public Fraccion potencia(int n){
+int num=(int) Math.pow(Double.parseDouble(String.valueOf(f1.getNumerador())), n);
+int den=(int) Math.pow(Double.parseDouble(String.valueOf(f1.getNumerador())), n);
+
+Fraccion pot= new Fraccion (num,den);
+

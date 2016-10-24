@@ -1,0 +1,10 @@
+ListenerList<ISelectionListener> listeners = targetedPostListeners.get(partId);
+if (listeners == null) {
+targetedPostListeners.put(partId, listeners);
+}
+listeners.add(listener);
+MPart part = partService.findPart(partId);
+if (part != null)
+track(part);
+}
+

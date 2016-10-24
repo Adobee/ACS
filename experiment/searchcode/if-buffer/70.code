@@ -1,0 +1,12 @@
+s += 32; // margin for deflater; deflater may inflate data
+
+/**/
+if (buffer.getBuffer().length < s + buffer.getIndex() - 5 - 9 - len) {
+byte[] foo = new byte[s + CustomBuffer.buffer_margin - 5 - 9 - len];
+System.arraycopy(buffer.getBuffer(), 0, foo, 0, buffer.getBuffer().length);
+buffer.setBuffer(foo);
+}
+/**/
+
+// if(buffer.buffer.length<len+5+9)
+

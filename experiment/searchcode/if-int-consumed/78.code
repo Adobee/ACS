@@ -1,0 +1,13 @@
+hasConsumption = hasConsumption &amp;&amp; InventoryTraitUtils.containsAtLeast(inventory, toBeConsumed.getType(), toBeConsumed.getAmount());
+
+
+if (hasConsumption)
+{
+
+List<ItemStack> woolsConsumed = new LinkedList<ItemStack>();
+for (ItemStack consumed : getResult.fst)
+{
+if (consumed.getType() == Material.WOOL)
+{
+for (int i = 0; i<consumed.getAmount(); i++)
+

@@ -1,0 +1,14 @@
+return cacheManager.getCache(type).remove(key);
+}
+return false;
+}
+
+public boolean clear(String type) {
+if (cacheManager.cacheExists(type)) {
+return false;
+}
+
+public boolean exists(String type, String key) {
+boolean exists = false;
+if (cacheManager.cacheExists(type)) {
+

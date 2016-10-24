@@ -1,0 +1,9 @@
+private Value readArray(Type paramType, Class paramClass, NodeMap paramNodeMap)
+{
+paramType = paramNodeMap.remove(length);
+int i = 0;
+if (paramType != null) {
+Object localObject = paramNodeMap.remove(mark);
+if (localObject == null) {
+return readReference(paramType, paramClass, paramNodeMap);
+

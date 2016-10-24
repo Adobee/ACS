@@ -1,0 +1,13 @@
+public static double R_pow_di(double x, int n)
+{
+double xn = 1.0;
+
+if(Double.isNaN(x)) {
+return x;
+}
+if(IntVector.isNA(n)) {
+return DoubleVector.NA;
+}
+if (n != 0) {
+if (!DoubleVector.isFinite(x)) {
+

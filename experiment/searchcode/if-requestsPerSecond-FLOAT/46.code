@@ -1,0 +1,9 @@
+task = new BulkByScrollTask(1, &quot;test_type&quot;, &quot;test_action&quot;, &quot;test&quot;, TaskId.EMPTY_TASK_ID, Float.POSITIVE_INFINITY);
+}
+
+public void testBasicData() {
+assertEquals(1, task.getId());
+int rethrottles = 0;
+while (false == done.get()) {
+float requestsPerSecond = (float) randomDoubleBetween(0, originalRequestsPerSecond * 2, true);
+

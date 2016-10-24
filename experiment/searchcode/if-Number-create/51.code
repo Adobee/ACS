@@ -1,0 +1,7 @@
+public static String formatPhone(String country, String area, String number) {
+try {
+if (country != null) {
+if (country.equals(&quot;32&quot;) || country.equals(&quot;0032&quot;) || country.equals(&quot;032&quot;) || country.equals(&quot;+32&quot;)) {
+if (area.length() == 2 &amp;&amp; number.length() == 7) {
+return area + &quot; &quot; + number.substring(0, 3) + &quot; &quot; + number.substring(3, 5) + &quot; &quot; + number.substring(5, 7);
+

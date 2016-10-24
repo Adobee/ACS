@@ -1,0 +1,13 @@
+public class RK4Solver implements DEQNumSolver {
+
+DESystem mySystem;
+double[] nextY;
+
+/**
+* @arg x0 starting point
+* @arg y0 starting values
+nextY = new double[y0.length];
+for(int i=0;i<nextY.length;i++)
+nextY[i]=y0[i];
+if (h>0) {   //most common case
+

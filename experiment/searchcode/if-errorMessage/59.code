@@ -1,0 +1,9 @@
+public static void generatePostgreSQLException(SQLException e) throws GenerateWebException {
+
+if (&quot;23505&quot;.equals(e.getSQLState())) {
+ErrorMessage errorMessage = new ErrorMessage(&quot;Username alredy exists&quot;,403);
+throw new GenerateWebException(errorMessage);
+}
+
+if (&quot;23502&quot;.equals(e.getSQLState())) {
+

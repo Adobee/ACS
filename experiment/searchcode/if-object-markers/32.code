@@ -1,0 +1,8 @@
+private Markers(Context c) { context = c; }
+
+public static Markers getInstance(Context c) {
+if(instance == null) {
+synchronized(Markers .class){
+if(instance == null) {
+instance = new Markers(c.getApplicationContext());
+

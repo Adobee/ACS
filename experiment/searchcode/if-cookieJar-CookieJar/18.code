@@ -1,0 +1,12 @@
+c.setReadTimeout(readTimeout);
+if (cookiejar != null)
+setCookies(c, cookiejar);
+return c;
+}
+
+/**
+* Creates a URLConnection to be used for a POST request.
+URLConnection c = genericURLConnection(url, cookiejar);
+if (contenttype != null)
+c.setRequestProperty(&quot;Content-Type&quot;, contenttype);
+

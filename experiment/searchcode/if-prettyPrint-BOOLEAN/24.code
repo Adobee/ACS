@@ -1,0 +1,13 @@
+@Module(
+injects = Gson.class
+)
+public class GsonModule {
+private final boolean prettyPrint;
+
+public GsonModule() {
+prettyPrint = false;
+}
+
+public GsonModule(boolean prettyPrint) {
+this.prettyPrint = prettyPrint;
+

@@ -1,0 +1,5 @@
+public TickInterval(int value, DateTimeFieldType dateTimeFieldType) {
+this.value = value;
+this.dateTimeFieldType = dateTimeFieldType;
+this.duration = new Period().withField(dateTimeFieldType.getDurationType(), value).toDurationFrom(new Instant());
+

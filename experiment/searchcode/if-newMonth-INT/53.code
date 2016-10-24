@@ -1,0 +1,8 @@
+Date result = copyDate(date);
+int newMonth = result.getMonth() + 1;
+while (newMonth > 11) {
+newMonth -= 12;
+result.setMonth(newMonth);
+if (result.getMonth() != newMonth) {
+/* If the date was January 31, for example, and
+

@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+import org.apache.commons.math.linear.RealMatrix;
+import org.apache.commons.math.linear.RealMatrixImpl;
+public static Direction getT(RealMatrix uvw) {
+return new Direction(uvw.getColumn(3));
+}
+
+/**
+* Detect if a and b are within MathUtils.FLOAT_TOLERANCE of one
+

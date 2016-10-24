@@ -1,0 +1,10 @@
+FlowContext flowContext,
+FlowInfo flowInfo) {
+LocalVariableBinding local = this.expression.localVariableBinding();
+if (local != null &amp;&amp; (local.type.tagBits &amp; TagBits.IsBaseType) == 0) {
+TypeBinding checkedType = type.resolveType(scope, true /* check bounds*/);
+if (expressionType == null || checkedType == null)
+return null;
+
+if (!checkedType.isReifiable()) {
+

@@ -1,0 +1,5 @@
+RethrottleRequest internalRequest = new RethrottleRequest();
+internalRequest.setTaskId(new TaskId(request.param(&quot;taskId&quot;)));
+Float requestsPerSecond = AbstractBaseReindexRestHandler.parseRequestsPerSecond(request);
+if (requestsPerSecond == null) {
+

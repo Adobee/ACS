@@ -1,0 +1,12 @@
+public class DenVRoce {
+public static void main(String[] args) {
+int rok = Integer.parseInt(args[0]);
+int[] delkyMesicu = new int[] {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+for (int m=0; m < mesic-1; m++) {
+denVRoce += delkyMesicu[m];
+}
+
+// prestupny rok
+if (rok%4 == 0) {
+

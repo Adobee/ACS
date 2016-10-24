@@ -1,0 +1,10 @@
+MatrixBlock[] blocks = createMatrixBlocksForReuse(rlen, clen, brlen, bclen, sparse, src.getNonZeros());
+
+//create and write subblocks of matrix
+for(int blockRow = 0; blockRow < (int)Math.ceil(src.getNumRows()/(double)brlen); blockRow++)
+MatrixBlock block = null;
+
+if( blockRow==blockCol ) //block on diagonal
+{
+int row_offset = blockRow*brlen;
+

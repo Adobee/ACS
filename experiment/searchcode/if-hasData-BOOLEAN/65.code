@@ -1,0 +1,12 @@
+public Stream read() {
+if(!hasData())
+return null;
+Stream ret = in[ix].read();
+if(++ix == in.length)
+ix = 0;
+return ret;
+}
+
+@Override
+public boolean hasData() {
+

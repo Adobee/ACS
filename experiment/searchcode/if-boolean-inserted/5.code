@@ -1,0 +1,14 @@
+return lastInserted;
+}
+
+public void insert(int key, String data) {
+Link newLink = new Link(key, data);
+if (lastInserted == null) {
+lastInserted.setNext(newLink);
+lastInserted = newLink;
+}
+}
+
+public Link removeLastInserted() {
+if (isEmpty())
+

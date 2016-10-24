@@ -1,0 +1,11 @@
+boolean sendToDelegate = false;
+boolean hit = true;
+boolean handled = false;
+
+switch (event.getAction()) {
+Rect bounds = mBounds;
+
+if (bounds.contains(x, y)) {
+mDelegateTargeted = true;
+sendToDelegate = true;
+

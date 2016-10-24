@@ -1,0 +1,8 @@
+static void initImageLoader(Context context) {
+int memoryCacheSize;
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR) {
+int memClass = ((ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE)).getMemoryClass();
+memoryCacheSize = (memClass / 8) * 1024 * 1024; // 1/8 of app memory
+// limit
+} else {
+

@@ -1,0 +1,10 @@
+public ActionWrapper(String name, Integer timeOutMs, Integer delay) {
+this.name = name;
+if(timeOutMs != null)
+timeoutMs = timeOutMs;
+if(delay != null)
+delayMs = delay;
+}
+
+public abstract boolean invoke() throws Exception;
+

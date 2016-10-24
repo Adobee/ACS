@@ -1,0 +1,7 @@
+private final long mRequestBirthTime = 0;// 用于转储慢的请求。
+private static final long SLOW_REQUEST_THRESHOLD_MS = 3000; // 请求超时时间
+mRequestQueue.finish(this);
+}
+long requestTime = SystemClock.elapsedRealtime() - mRequestBirthTime;
+if (requestTime >= SLOW_REQUEST_THRESHOLD_MS) {
+

@@ -1,0 +1,13 @@
+public static long pow(long base, int exponent)
+{
+switch (exponent)
+{
+case 0:
+return 1;
+case 1:
+return base;
+}
+if (exponent < 0) // always rounded down to 0, except when base=1
+// Use recursive pow definition, with time complexity O(log n)
+if ((exponent &amp; 1) == 0) // the exponent is even
+

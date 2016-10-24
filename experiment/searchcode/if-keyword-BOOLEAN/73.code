@@ -1,0 +1,11 @@
+public Set<Keyword> getKeywordSet() {
+return keywordSet;
+}
+
+public boolean keywordExists(String text) {
+return keywordExists(new Keyword(text));
+}
+
+public boolean keywordExists(Keyword keyword) {
+return keywordSet.contains(keyword);
+

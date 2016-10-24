@@ -1,0 +1,15 @@
+package fq.geom;
+
+public class Vector3D extends Point3D {
+
+public Vector3D(){
+super();
+}
+
+public Vector3D(double[] pt){
+super(pt);
+}
+
+public Vector3D(double px,double py){
+super(px,py);
+

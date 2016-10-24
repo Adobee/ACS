@@ -1,0 +1,9 @@
+@Column(name = &quot;created&quot;, nullable = false)
+protected Date created;
+
+@Column(name = &quot;renewed&quot;, nullable = false)
+protected Date renewed;
+public Date getRenewed() {
+if (renewed != null) {
+return (Date) renewed.clone();
+

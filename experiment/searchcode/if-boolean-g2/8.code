@@ -1,0 +1,10 @@
+g2.drawLine(2, 11, 3, 11);
+g2.drawLine(9, 11, 10, 11); // line 12
+g2.drawLine(4, 12, 8, 12); // line 13
+
+if(model.isPressed()) {
+g2.drawLine(5, 9, 7, 9); // line 4
+} else if(model.isSelected()) {
+if(model.isEnabled() &amp;&amp; !model.isPressed()) {
+g2.setColor(innerContourSmoother);
+

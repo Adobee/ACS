@@ -1,0 +1,8 @@
+import java.util.ArrayList;
+import java.util.List;
+
+public class DiffResult implements Serializable {
+public List<DiffInfo> getIngredientsDiffList() {
+if (ingredientsDiffList == null) {
+ingredientsDiffList = new ArrayList<DiffInfo>();
+

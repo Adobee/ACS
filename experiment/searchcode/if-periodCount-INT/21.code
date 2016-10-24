@@ -1,0 +1,6 @@
+protected ReadablePeriod multiplyPeriod(ReadablePeriod frequency, int periodCount) throws ScheduleException {
+
+if(frequency instanceof Months) {
+return Months.months(frequency.getValue(0)*periodCount);
+} else if(frequency instanceof Days) {
+

@@ -1,0 +1,8 @@
+double cos= getCosin(centroidMap, docWeightMap,centroid) ;
+double centroidNorm = getNorm(centroid);
+if(centroidNorm==0)
+System.out.println(&quot;~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~&quot;);
+public static double getCosin(Map<String, Double> centroid ,Map<String, Double> doc,String centroidNorm2){
+double cos = 0;
+double dot = 0;
+

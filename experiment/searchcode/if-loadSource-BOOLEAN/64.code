@@ -1,0 +1,13 @@
+* @see org.eclipse.datatools.connectivity.sqm.core.rte.jdbc.JDBCProcedure#refresh()
+*/
+public void refresh() {
+synchronized (SOURCE_LOCK) {
+if (sourceLoaded.booleanValue()) {
+public Source getSource() {
+synchronized (SOURCE_LOCK) {
+if (!sourceLoaded.booleanValue()) {
+loadSource();
+}
+}
+return super.getSource();
+

@@ -1,0 +1,7 @@
+private MenuItem mShareMenuItem;
+private MenuItem mSocialStreamMenuItem;
+private int mSessionQueryToken;
+Loader<Cursor> loader = getLoaderManager().getLoader(mSessionQueryToken);
+if (loader != null) {
+loader.forceLoad();
+

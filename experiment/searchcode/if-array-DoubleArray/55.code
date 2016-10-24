@@ -1,0 +1,12 @@
+if(out[i]<min) out[i]=min;
+else if(out[i]>max) out[i]=max;
+}
+return out;
+}
+public DoubleArray integral(DoubleArray d) {
+return new DoubleArray(this._integral(d.toArray(), min, max));
+}
+
+public DoubleArray smooth() {
+if(this.sp<4) return new DoubleArray(this.toArray());
+

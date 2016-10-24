@@ -1,0 +1,10 @@
+* Creates a empty database on the system and rewrites it with our database.
+* */
+public void createDataBase() throws IOException {
+
+boolean dbExist = checkDataBase();
+* Check if the database already exist. Avoids re-copying the file each time you open the app.
+* @return true if it exists, false if it doesn&#39;t
+*/
+private boolean checkDataBase(){
+

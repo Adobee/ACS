@@ -1,0 +1,6 @@
+public static Instant plus(ReadableInstant instant, ReadablePeriod period) {
+return instant.toInstant().plus( period.toPeriod().toStandardDuration() );
+}
+
+public static IntervalBuilder from(ReadableInstant instant) {
+

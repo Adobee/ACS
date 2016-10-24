@@ -1,0 +1,7 @@
+import org.apache.commons.math3.linear.RealVector;
+import org.apache.ignite.Ignite;
+import org.apache.ignite.IgniteException;
+public boolean collect(Map<Integer, RealVector> pairs) {
+for(Entry<Integer, RealVector> pair: pairs.entrySet()){
+if(synchroResult.containsKey(pair.getKey())){
+

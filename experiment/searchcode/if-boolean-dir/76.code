@@ -1,0 +1,16 @@
+static DirChecker getChecker()
+{
+if(dirChecker == null)
+dirChecker = new DirChecker();
+return dirChecker;
+}
+
+boolean check(String path)
+{
+if(path == &quot;&quot;)
+return false;
+File file = new File(path);
+return(file.exists());
+}
+}
+

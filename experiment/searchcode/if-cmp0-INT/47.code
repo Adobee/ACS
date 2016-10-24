@@ -1,0 +1,14 @@
+return ALIAS_BASE_NAME+alias;
+}
+
+/* (non-Javadoc)
+* @see InstanceWriter#getInstanceName(MappingInfo, int)
+*/
+@Override
+public String getInstanceName(MappingInfo mappingInfo, int fnIndex) {
+Matcher m = p.matcher(function.getSignal());
+if (m.matches()) {
+return Integer.parseInt(m.group(1));
+}
+final String signalNames[] = {&quot;OUT&quot;};
+

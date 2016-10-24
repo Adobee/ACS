@@ -1,0 +1,7 @@
+public void runStep(BdsThread bdsThread) {
+bdsThread.run(left);
+
+if (!bdsThread.isCheckpointRecover()) {
+boolean ok = (Boolean) Type.BOOL.cast(bdsThread.peek());
+if (ok) return; // Already true? No need to evaluate the other expression
+

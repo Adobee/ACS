@@ -1,0 +1,10 @@
+static final MarginLayoutParamsCompatImpl IMPL = new MarginLayoutParamsCompat.MarginLayoutParamsCompatImplBase();
+
+static
+{
+if (Build.VERSION.SDK_INT >= 17)
+return IMPL.getMarginStart(paramMarginLayoutParams);
+}
+
+public static boolean isMarginRelative(ViewGroup.MarginLayoutParams paramMarginLayoutParams)
+

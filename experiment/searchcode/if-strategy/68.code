@@ -1,0 +1,13 @@
+package startegy;
+
+public class DiscountContext {
+
+private DiscountStrategy strategy;
+
+public DiscountContext(DiscountStrategy strategy) {
+public double getDiscountPrice(double price){
+if (strategy == null) {
+strategy = new OldDiscount();
+}
+return strategy.getDiscount(price);
+

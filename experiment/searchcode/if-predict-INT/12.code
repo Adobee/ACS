@@ -1,0 +1,18 @@
+return String.format(&quot;%s (prob = %s)&quot;, predict, prop);
+}
+
+@Override
+public boolean equals(Object o) {
+if (o instanceof Predict) {
+return predict == obj.predict &amp;&amp; prop == obj.prop;
+} else
+return false;
+}
+
+@Override
+public int hashCode() {
+return Arrays.hashCode(new double[] { predict, prop });
+}
+
+}
+

@@ -1,0 +1,7 @@
+Query rewrittenMinuend = innerQuery.rewrite(reader);
+Query rewrittenSubtrahend = subtrahend.rewrite(reader);
+if (rewrittenMinuend != innerQuery || rewrittenSubtrahend != subtrahend) {
+protected void reset(int doc) throws IOException {
+super.reset(doc);
+if (this.subtrahend == null || this.subtrahend.advance(doc) != doc)
+

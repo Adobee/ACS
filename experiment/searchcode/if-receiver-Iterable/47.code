@@ -1,0 +1,7 @@
+public static JetSuperExpression getReceiverSuper(@NotNull ReceiverValue receiver) {
+if (receiver instanceof ExpressionReceiver) {
+ExpressionReceiver expressionReceiver = (ExpressionReceiver) receiver;
+ReceiverValue explicitReceiver = context.call.getExplicitReceiver();
+JetScope scope;
+if (explicitReceiver.exists() &amp;&amp; explicitReceiver.getType() instanceof NamespaceType) {
+

@@ -1,0 +1,9 @@
+private final char[] data = new char[65536];
+
+public IBlockState getBlockState(int x, int y, int z)
+{
+IBlockState iblockstate = (IBlockState)Block.BLOCK_STATE_IDS.getByValue(this.data[func_186137_b(x, y, z)]);
+public void setBlockState(int x, int y, int z, IBlockState state)
+{
+this.data[func_186137_b(x, y, z)] = (char)Block.BLOCK_STATE_IDS.get(state);
+

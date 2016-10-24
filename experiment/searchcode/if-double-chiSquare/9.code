@@ -1,0 +1,8 @@
+private Map<String, Integer> cooccurTermTable;
+private int freq;
+private double chiSquare;
+
+public TermInfo(String content, Map<String, Integer> cooccurTermTable,
+int freq, double chiSquare) {
+this.content = content;
+

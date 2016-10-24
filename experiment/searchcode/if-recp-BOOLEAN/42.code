@@ -1,0 +1,9 @@
+output.setErrorMsg(&quot;Illegaler Seitenaufruf von \&quot;Rezepte anlegen\&quot; ohne Anmeldung!&quot;);
+output.setTargetView(&quot;Default&quot;);
+return output;
+}
+if (input.getParam(&quot;recp_id&quot;) == null)
+input.getSession().setAttribute(&quot;release&quot;, input.getParam(&quot;release&quot;));
+String recp = input.getParam(&quot;desc&quot;).trim();
+if (recp.length() > 300)
+

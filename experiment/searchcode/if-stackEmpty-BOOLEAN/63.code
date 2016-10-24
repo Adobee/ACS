@@ -1,0 +1,7 @@
+public void onUpdate(ItemStack stack, World world, Entity entity, int par3, boolean par4) {
+if (!stack.hasTagCompound()) {
+NBTTagCompound compound = stack.getTagCompound();
+boolean charging = compound.getBoolean(&quot;charging&quot;);
+
+if (charging) {
+

@@ -1,0 +1,10 @@
+package org.tms.teq;
+
+import org.tms.teq.PendingState.AwaitingState;
+
+public class PendingDerivationException extends Exception
+public AwaitingState getAwaitingState()
+{
+if (m_pendingState != null &amp;&amp; m_pendingState instanceof AwaitingState)
+return (AwaitingState)m_pendingState;
+

@@ -1,0 +1,10 @@
+* own executor, it should be able to run {@linkplain #getMaxRequests the configured maximum} number
+* of calls concurrently.
+*/
+public final class Dispatcher {
+private int maxRequests = 64;
+* will remain in flight.
+*/
+public synchronized void setMaxRequests(int maxRequests) {
+if (maxRequests < 1) {
+

@@ -1,0 +1,11 @@
+package org.beatific.flow.util;
+
+public abstract class Holder<T> {
+
+private T previousValue;
+protected abstract T initailValue();
+
+synchronized void hold() {
+
+if(holdedValue == null) previousValue = initailValue();
+

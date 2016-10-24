@@ -1,0 +1,12 @@
+return !(x1 > r.x2 || x2 < r.x1 || y1 > r.y2 || y2 < r.y1 || z1 > r.z2 || z2 < r.z1);
+}
+
+@Override
+public double distance(Box r) {
+if (intersects(r))
+return 0;
+
+double dx = 0.0;
+if (x2 < r.x1)
+dx = r.x1 - x2;
+

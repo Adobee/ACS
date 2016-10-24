@@ -1,0 +1,13 @@
+private static LinkedList<SyncObj> syncObjs=new LinkedList<>();
+
+private boolean isSync;
+
+private Object object;
+
+public SyncObj(Object obj){
+this(true,obj);
+}
+
+public SyncObj(Boolean isSync, Object obj){
+this.isSync=isSync;
+

@@ -1,0 +1,8 @@
+for(int i = 0; i < N; i++) {
+if(speeds[i] <= current &amp;&amp; distances[i] != 0) {
+ans[i] = -1;
+} else {
+double go = speeds[i] + current;
+double ww = speeds[i] - current;
+double help = (double) ((double) (distances[i] / go) + (double) (distances[i] / ww));
+

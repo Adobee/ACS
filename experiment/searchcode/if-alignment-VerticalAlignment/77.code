@@ -1,0 +1,9 @@
+int height = bufferedImage.getHeight();
+if (verticalAlignment == TOP_ALIGNED)
+{
+return offsetTopLeft.y;
+}
+else if (verticalAlignment == CENTERED)
+{
+return ((offsetTopLeft.y + height + offsetBottomRight.y) / 2) - height - offsetBottomRight.y;
+

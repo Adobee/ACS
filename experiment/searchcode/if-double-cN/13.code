@@ -1,0 +1,8 @@
+import cn.edu.neu.cloudlab.haolap.operation.DoubleSumAggregation;
+import cn.edu.neu.cloudlab.haolap.operation.Operation;
+public class HFReducerImpl extends HFReducer {
+
+@Override
+protected Operation<DoubleWritable> newOperation(Type aggregationType) {
+if (aggregationType.equals(AggregationCondition.Type.sum)) {
+

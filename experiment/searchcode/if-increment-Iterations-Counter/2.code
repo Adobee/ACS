@@ -1,0 +1,8 @@
+private final AtomicLong iterations = new AtomicLong(0);
+
+void iterate(final File root, final CompletionService<Long> executorService) {
+iterations.incrementAndGet();
+
+Counter.count.incrementAndGet();
+if (root.isFile()) {
+

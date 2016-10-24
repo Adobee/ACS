@@ -1,0 +1,10 @@
+double xa = scan.nextDouble();
+double ya = scan.nextDouble();
+double xb = scan.nextDouble();
+double yb = scan.nextDouble();
+double yc = scan.nextDouble();
+double xd = scan.nextDouble();
+double yd = scan.nextDouble();
+
+if (0.0 < isIntersect(xa, ya, xc, yc, xb, yb, xd, yd) ||
+

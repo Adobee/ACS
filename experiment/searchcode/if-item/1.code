@@ -1,0 +1,9 @@
+@Override
+public IContributionItem remove(IContributionItem item) {
+if (contributions.remove(item)) {
+itemRemoved(item);
+return item;
+}
+return null;
+}
+

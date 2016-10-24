@@ -1,0 +1,23 @@
+return instructionSbiw(rdp, k);
+
+}
+
+}
+
+// MOVW
+// 0000 0001 dddd rrrr
+
+if ((instruction &amp; 0xFF00) == 0x0100) {
+
+int rd = ((instruction &amp; 0x00F0) >>> 4) << 1;
+return instructionMovw(rd, rr);
+
+}
+
+// MULS
+// 0000 0010 dddd rrrr
+
+if ((instruction &amp; 0xFF00) == 0x0200) {
+
+int rd = ((instruction &amp; 0x00F0) >>> 4) + 0x10;
+

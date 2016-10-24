@@ -1,0 +1,15 @@
+private final long ONE = 1;
+
+
+private long[] b;
+private int div, mod;
+
+private int blockIndex;
+private int indexInBlock;
+mod = i &amp; MOD_64_MASK; // compute i % 64
+b[div] &amp;= (ALL_ONES ^ (ONE << mod));
+}
+
+public int next() {
+if(blockIndex == -1 || (b[blockIndex] >> (indexInBlock + 1)) == 0) {
+

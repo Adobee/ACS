@@ -1,0 +1,13 @@
+private static final double piOn180 = Math.PI / 180.0;
+
+
+public Mat4() {};
+public Mat4 (double a_[][]) {
+a = a_;
+if (a.length != 4)
+System.out.println(&quot;Wrong size in Mat4, Danger Will Robinson!&quot;);
+System.out.println(&quot;invert error: determinant == 0&quot;);
+throw new ArithmeticException();
+}
+double b[] [] = new double [4][4];
+

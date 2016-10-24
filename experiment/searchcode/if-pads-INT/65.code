@@ -1,0 +1,14 @@
+public class QUITTest {
+
+int opCode;
+int pads = 0;
+byte[] bytes;
+QUIT quit;
+
+@Before
+public void beforeTest() {
+byte[] tempbyte = Arrays.copyOfRange
+(bytes, i, i+1);
+if(PDU.bytaArrayToString(tempbyte, 1).equals(&quot;\0&quot;)) {
+pads++;
+

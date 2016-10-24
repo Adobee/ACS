@@ -1,0 +1,9 @@
+import java.util.concurrent.Callable;
+import java.util.concurrent.TimeUnit;
+
+public class CallableWaiter {
+private static final int DEFAULT_CHECK_INTERVAL   = 1 * 1000;
+final long start = System.nanoTime();
+while (!callable.call()) {
+if (TimeUnit.NANOSECONDS.toMillis(System.nanoTime() - start) >= timeoutMs) { throw new TCTimeoutException(
+

@@ -1,0 +1,15 @@
+private boolean mExpanded = false;
+
+public void setExpanded(boolean expanded) {
+if (mExpanded != expanded) {
+refreshDrawableState();
+}
+}
+
+public boolean isExpanded() {
+return mExpanded;
+}
+
+@Override
+public int[] onCreateDrawableState(int extraSpace) {
+

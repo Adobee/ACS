@@ -1,0 +1,9 @@
+public void testConstructor() {
+AtomicDoubleArray aa = new AtomicDoubleArray(SIZE);
+for (int i = 0; i < SIZE; i++) {
+for (int i = 0; i < aa.length(); i++) {
+double v = aa.get(i);
+assertTrue(v >= 0);
+if (v != 0) {
+done = false;
+

@@ -1,0 +1,4 @@
+RequestBody.create(MediaType.parse(&quot;multipart/form-data&quot;), photo);
+MultipartBody.Part bodyPart =
+MultipartBody.Part.createFormData(&quot;photo&quot;, String.valueOf(photoUri.hashCode()).substring(0,7), requestBody);
+

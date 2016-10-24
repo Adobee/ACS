@@ -1,0 +1,14 @@
+public static String timeFromSeconds(int seconds) {
+String res = &quot;&quot;;
+if(seconds/360 > 0){
+res = res + seconds/360+&quot;:&quot;;
+seconds = seconds%360;
+}
+if(seconds/60 > 0){
+res = res + seconds/60+&quot;:&quot;;
+}
+res = res + seconds%60;
+return res;
+}
+}
+

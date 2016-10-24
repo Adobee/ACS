@@ -1,0 +1,11 @@
+private boolean cancelled;
+
+public abstract boolean isCancellable();
+
+public boolean isCancelled() {
+return cancelled;
+}
+
+public void setCancelled(boolean cancelled) {
+if (!this.isCancellable())
+

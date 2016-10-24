@@ -1,0 +1,11 @@
+public Query getQuery(String queryStr)
+{
+Query query = new Query();
+//AM > Check for empty strings
+if(queryStr.length() < 1)
+return null;
+
+for(String token : queryStr.split(&quot;/&quot;))
+{
+if(token.length() < 1)
+

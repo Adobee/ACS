@@ -1,0 +1,17 @@
+System.out.println(&quot;ďđč x = &quot;+Start.round(x,4)+&quot;     y = &quot;+Start.round(y,4));
+x+=h;
+}
+}
+
+public static void Start() {
+double x;
+double y,y2;
+double delta=1;
+double h=2;
+while (delta>Start.truth){
+h/=2;
+delta=0;
+y=Start.yo;
+y2=Start.yo;
+x=Start.A+h;
+

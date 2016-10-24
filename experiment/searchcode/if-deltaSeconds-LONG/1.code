@@ -1,0 +1,10 @@
+private long nanotimenow;
+private double deltaseconds;
+
+private double inverseSpeed;
+
+public Timer() {
+deltaseconds = ((double) nanotimenow - (double) nanotimeprev) / 1000000000.0f;
+nanotimeprev = nanotimenow;
+if (deltaseconds < 0) deltaseconds = 0;
+

@@ -1,0 +1,14 @@
+package org.robolectric.bytecode;
+
+enum RoboType {
+VOID(Void.TYPE),
+BOOLEAN(Boolean.TYPE),
+for (RoboType type : RoboType.values()) {
+if (type.type != null &amp;&amp; type.type.getName().equals(name)) {
+return type.type;
+}
+}
+return null;
+}
+}
+

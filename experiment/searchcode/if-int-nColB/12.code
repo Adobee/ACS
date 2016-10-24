@@ -1,0 +1,6 @@
+/* 138:258 */       int m = this.lTData.length;
+/* 139:259 */       if (b.getRowDimension() != m) {
+/* 140:260 */         throw new DimensionMismatchException(b.getRowDimension(), m);
+/* 142:263 */       int nColB = b.getColumnDimension();
+/* 143:264 */       double[][] x = b.getData();
+

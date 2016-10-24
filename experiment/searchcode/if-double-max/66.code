@@ -1,0 +1,10 @@
+double max = max(samples);
+double min = max;
+
+for(int i = 0; i < samples.length; i++) {
+if(samples[i] < min) {
+private double max(double[] samples) {
+double max = 0;
+for(int i = 0; i < samples.length; i++) {
+if(samples[i] > max) {
+

@@ -1,0 +1,10 @@
+int n = k - m;
+}
+
+private double[] hm(int paramInt)
+{
+double[] arrayOfDouble = this.cnV;
+if (paramInt == lft.lfO) {
+arrayOfDouble = this.cnV;
+} else if (paramInt == lft.lfP) {
+

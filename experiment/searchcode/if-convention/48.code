@@ -1,0 +1,10 @@
+* Tests the {@link Convention} enumeration.
+*
+* @author Martin Desruisseaux (Geomatys)
+* @version 3.20
+*
+* @since 3.20
+final Citation citation = convention.getCitation();
+if (convention != Convention.INTERNAL) {
+assertTrue(convention.name(), convention.name().equalsIgnoreCase(Citations.getIdentifier(citation)));
+

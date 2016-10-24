@@ -1,0 +1,11 @@
+public boolean supports(final Class<?> type) {
+return Date.class.isAssignableFrom(type);
+}
+
+@Override
+public Object toJdbcValue(final Object object) {
+public String toSqlStr(final Object object) {
+if (object == null)
+return &quot;null&quot;;
+return &quot;&#39;&quot; + object.toString() + &quot;&#39;&quot;;
+

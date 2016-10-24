@@ -1,0 +1,13 @@
+public final HttpParams getOverrideParams()
+{
+return this.overrideParams;
+}
+
+public Object getParameter(String paramString)
+{
+if (paramString == null)
+throw new IllegalArgumentException(&quot;Parameter name must not be null.&quot;);
+HttpParams localHttpParams = this.overrideParams;
+Object localObject = null;
+if (localHttpParams != null)
+

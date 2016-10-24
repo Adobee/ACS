@@ -1,0 +1,6 @@
+ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ExpressionsPackage.UNEQUAL__LEFT, oldLeft, newLeft);
+if (msgs == null) msgs = notification; else msgs.add(notification);
+msgs = ((InternalEObject)left).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ExpressionsPackage.UNEQUAL__LEFT, null, msgs);
+if (newLeft != null)
+msgs = ((InternalEObject)newLeft).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ExpressionsPackage.UNEQUAL__LEFT, null, msgs);
+

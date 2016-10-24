@@ -1,0 +1,6 @@
+List<EList<OperatorInput>> executableOperatorsInputs = new ArrayList<>();
+for (Operator operatorType : MIDTypeRegistry.getOperatorTypes()) {
+try {
+EList<OperatorInput> executableOperatorInputs = operatorType.checkAllowedInputs(selectedModels);
+if (executableOperatorInputs == null) {
+

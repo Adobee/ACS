@@ -1,0 +1,12 @@
+private long waitTime;
+
+public ThreadDemo(long waitTime) {
+this.waitTime = waitTime;
+}
+
+public void run() {
+Thread t = Thread.currentThread();
+try {
+for (int i = 0; i < 5; i++) {
+System.out.println(t.getName() + &quot;:: i=&quot; + i);
+

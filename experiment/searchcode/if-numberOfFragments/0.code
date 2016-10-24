@@ -1,0 +1,11 @@
+sequenceArray[numberOfFragments] = sequenceNumber;
+numberOfFragments++;
+
+if(fragment.isFirstFragment()){
+this.receivedFirstFragment = true;
+boolean integral = false;
+
+int i = 0;
+for(i = 0; i < numberOfFragments - 1; i++){
+if(sequenceArray[i + 1] != (sequenceArray[i] + 1))break;
+

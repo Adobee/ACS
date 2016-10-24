@@ -1,0 +1,8 @@
+public AsyncContext(ExecutorService runnableExecutor, CallbackExecutor callbackExecutor) {
+if (runnableExecutor == null) {
+runnableExecutor = Executors.newCachedThreadPool();
+}
+
+if (callbackExecutor == null) {
+callbackExecutor = RunnableCallbackExecutor.getInstance();
+

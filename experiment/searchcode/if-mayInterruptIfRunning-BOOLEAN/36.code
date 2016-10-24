@@ -1,0 +1,9 @@
+public synchronized boolean cancel(boolean mayInterruptIfRunning) {
+boolean res = super.cancel(mayInterruptIfRunning);
+if (res) {
+sendCancelRequest.accept(mayInterruptIfRunning);
+}
+return res;
+}
+}
+

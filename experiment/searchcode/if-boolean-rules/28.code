@@ -1,0 +1,13 @@
+this.rules = Collections.unmodifiableList(rules);
+}
+
+public boolean satisfyAll(Item item) {
+for (Rule rule : rules) {
+if (!rule.satisfy(item)) {
+return true;
+}
+
+public boolean satisfyAny(Item item) {
+for (Rule rule : rules) {
+if (rule.satisfy(item)) {
+

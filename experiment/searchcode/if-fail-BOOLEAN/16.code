@@ -1,0 +1,15 @@
+public class DummyUiCommand extends UiCommand {
+
+private boolean fail = false;
+private int executions = 0;
+
+@Override
+protected void doExecute() {
+executions++;
+if (fail) {
+error(&quot;failed!&quot;);
+}
+}
+
+public void setFail(boolean fail) {
+

@@ -1,0 +1,12 @@
+user = (FhiUser) request.getSession().getAttribute(FhiConfig.USER_NAME);
+if (user == null) {
+return mapping.findForward(&quot;login&quot;);
+}
+
+//		user=new FhiUser();
+HttpServletRequest request, HttpServletResponse response)
+throws Exception {
+FhiFreight freight = freightForm.getFreight();
+
+if(freight.getFromName()!=null&amp;&amp;!&quot;&quot;.equals(freight.getFromName())&amp;&amp;freight.getToName()!=null&amp;&amp;!&quot;&quot;.equals(freight.getToName())){
+

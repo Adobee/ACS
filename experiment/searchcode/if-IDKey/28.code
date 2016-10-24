@@ -1,0 +1,11 @@
+package org.apache.commons.lang3.builder;
+
+final class IDKey
+{
+private final int id;
+private final Object value;
+
+public IDKey(Object paramObject)
+{
+id = System.identityHashCode(paramObject);
+

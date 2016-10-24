@@ -1,0 +1,9 @@
+package me.lewei.core;
+
+import me.lewei.obj.AppRequestContext;
+
+public class RequestContextHolder {
+AppRequestContext context = (AppRequestContext) requestContextTL.get();
+if (context == null) {
+context = new AppRequestContext();
+

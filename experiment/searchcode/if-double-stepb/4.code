@@ -1,0 +1,12 @@
+* @see java.util.Comparator#compare(java.lang.Object, java.lang.Object)
+*/
+public int compare(final Node stepA, final Node stepB) {
+
+if (stepA.getId() == stepB.getId()) {
+double b = getMetric(stepB);
+
+if (a < b) {
+return -1;
+}
+if (b < a) {
+

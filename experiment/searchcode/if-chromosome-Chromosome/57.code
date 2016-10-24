@@ -1,0 +1,10 @@
+// Mutate input chromosome
+BinaryChromosome mutated = new BinaryChromosome(c);
+
+if((int)mutated.getChromosome().get(mutationIndex) == 0) {
+return mutate(c, mutationIndex);
+}
+
+public IntegerChromosome mutate(IntegerChromosome c, int mutationIndex) {
+if(generator.getUniform() < threshold) {
+

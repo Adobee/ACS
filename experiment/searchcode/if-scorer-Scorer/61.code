@@ -1,0 +1,10 @@
+this.countWeight = countWeight;
+
+this.scoringMethod = ScoringMethod.ATOMCOMBINED;
+
+if (!typeScorer.getContactType().equals(countScorer.getContactType())) {
+throw new IllegalArgumentException(&quot;Count scorer and type scorer are based on different contact types&quot;);
+}
+this.ct = typeScorer.getContactType();
+if (typeScorer.getCutoff()!=countScorer.getCutoff()) {
+

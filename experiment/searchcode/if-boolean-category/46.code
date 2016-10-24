@@ -1,0 +1,9 @@
+return categoryDao.findAllCategory();
+}
+
+//判断类别是否存在，一个博客中不应该存在相同的类别
+@Override
+public boolean existCategory(String categoryName) throws Exception {
+Category category = categoryDao.findCategoryByName(categoryName);
+if (category!=null &amp;&amp; category.getCategoryName()!=&quot;&quot;){
+

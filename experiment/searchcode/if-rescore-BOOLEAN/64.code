@@ -1,0 +1,8 @@
+searchContext.searcher().inStage(ContextIndexSearcher.Stage.MAIN_QUERY);
+boolean rescore = false;
+try {
+searchContext.queryResult().from(searchContext.from());
+searchContext.searcher().finishStage(ContextIndexSearcher.Stage.MAIN_QUERY);
+}
+if (rescore) { // only if we do a regular search
+

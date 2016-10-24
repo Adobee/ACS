@@ -1,0 +1,9 @@
+for (int i = 0; i < 256; i++) {
+chars[i] = -1;
+}
+int maxL = 0;
+int minPos = 0;
+char c = s.charAt(i);
+if (chars[c] != -1 &amp;&amp; chars[c] >= minPos) {
+maxL = i - minPos > maxL ? i - minPos : maxL;
+

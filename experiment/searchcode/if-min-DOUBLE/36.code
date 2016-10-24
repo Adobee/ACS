@@ -1,0 +1,10 @@
+package anton.alerty.functionsandmodules;
+
+public class Rescaling {
+
+public static double min(double[] d) {
+double min = d[0];
+for (int i = 1; i < d.length; i++) {
+if (d[i] < min) {
+min = d[i];
+

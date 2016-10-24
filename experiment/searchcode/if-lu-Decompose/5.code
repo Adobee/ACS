@@ -1,0 +1,10 @@
+package org.chof.surfcomp.trimesh.tools;
+
+import org.jblas.Decompose.LUDecomposition;
+import org.jblas.DoubleMatrix;
+static public DoubleMatrix solve(LUDecomposition<DoubleMatrix> lu,
+DoubleMatrix vectorB) {
+if (lu.l.rows == vectorB.rows) {
+
+int i = 0;
+

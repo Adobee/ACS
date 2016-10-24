@@ -1,0 +1,11 @@
+private double value;
+private Toggleable checkbox;
+private boolean newDialog;
+private double minval;
+private boolean dimensionless;
+value = val;
+if (mn == 0 &amp;&amp; mx == 0 &amp;&amp; val > 0) {
+minval = 1e10;
+while (minval > val / 100)
+minval /= 10.;
+

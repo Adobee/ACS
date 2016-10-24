@@ -1,0 +1,10 @@
+private Object currentValue = null;
+private int tokenLen = 0;
+
+static private class LAReader {
+private Reader reader;
+prepareLookAhead();
+int ch = next;
+next = reader.read();
+if ((ch == &#39;\r&#39; &amp;&amp; next == &#39;\n&#39;) || (ch == &#39;\n&#39; &amp;&amp; next == &#39;\r&#39;))
+

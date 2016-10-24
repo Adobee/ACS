@@ -1,0 +1,9 @@
+private static final float DELTA_CONFIDENCE = 0.05F;
+private static final float MAX_CONFIDENCE = 0.5F;
+threads.add(new Thread(new TuneWorker(dataset, confidencePartition, i)));
+}
+for(Thread thread: threads){
+thread.start();
+}
+float confidence = DELTA_CONFIDENCE * (confidenceMaster + 1);
+

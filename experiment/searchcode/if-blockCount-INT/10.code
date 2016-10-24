@@ -1,0 +1,8 @@
+for (long a = 1; a * a * a <= blockCount; a++) {
+if (blockCount % a != 0)
+continue;
+for (long b = a; a * b * b <= blockCount; b++) {
+if (blockCount % (a * b) != 0)
+continue;
+long c = blockCount / (a * b);
+

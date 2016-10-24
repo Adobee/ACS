@@ -1,0 +1,13 @@
+public void attach(T listener)
+{
+if (listener == null)
+{
+return;
+}
+
+synchronized (mListeners)
+{
+if (mIsTraversingListeners)
+{
+mListenersToAdd.add(listener);
+

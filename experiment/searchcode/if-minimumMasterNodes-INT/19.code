@@ -1,0 +1,8 @@
+private final NodeComparator nodeComparator = new NodeComparator();
+
+private volatile int minimumMasterNodes;
+
+public ElectMasterService(Settings settings) {
+super(settings);
+this.minimumMasterNodes = settings.getAsInt(DISCOVERY_ZEN_MINIMUM_MASTER_NODES, -1);
+

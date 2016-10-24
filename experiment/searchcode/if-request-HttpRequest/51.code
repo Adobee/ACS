@@ -1,0 +1,15 @@
+httpRequest = new HttpPost(url);
+
+if (_command != null)
+{
+try
+{
+httpRequest = _command.buildHeader(httpRequest);
+throw new UnsupportedEncodingException();
+}
+}
+
+if (httpRequest != null)
+{
+getData(httpRequest);
+

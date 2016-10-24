@@ -1,0 +1,10 @@
+private Boolean fill;
+private Boolean outline;
+
+public PolyStyle() {}
+
+public PolyStyle(String color, ColorModeEnum colorMode, Boolean fill, Boolean outline) {
+super.writeInner(kml);
+if (fill != null) {
+kml.println(&quot;<fill>&quot; + booleanToInt(fill) + &quot;</fill>&quot;);
+

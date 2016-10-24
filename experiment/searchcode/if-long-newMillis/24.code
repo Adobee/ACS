@@ -1,0 +1,5 @@
+// notified before delay? continue the loop without updating the map
+// but first check if the timeout interval has passed
+final long newMillis = System.currentTimeMillis();
+if ((newMillis - oldMillis) < mapDelay &amp;&amp;
+

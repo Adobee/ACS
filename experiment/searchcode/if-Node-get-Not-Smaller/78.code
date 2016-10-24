@@ -1,0 +1,10 @@
+if (c == node.getChar()) {
+if (index + 1 < word.length()) {
+result = search(node.getChild(), word, index + 1);
+if (node == null) {
+return;
+}
+
+inOrderTraversal(node.getSmaller(), results);
+if (node.isEndOfWord()) {
+

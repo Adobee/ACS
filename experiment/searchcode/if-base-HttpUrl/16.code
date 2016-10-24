@@ -1,0 +1,5 @@
+// Non-exhaustive tests because implementation is the same as resolve.
+HttpUrl base = HttpUrl.parse(&quot;http://host/a/b&quot;);
+assertEquals(HttpUrl.parse(&quot;https://host2/&quot;), base.newBuilder(&quot;https://host2&quot;).build());
+assertEquals(HttpUrl.parse(&quot;http://host2/&quot;), base.newBuilder(&quot;//host2&quot;).build());
+

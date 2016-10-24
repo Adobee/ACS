@@ -1,0 +1,7 @@
+for (int iBlock = 0; iBlock < blockRows; ++iBlock) {
+final int iHeight = blockHeight(iBlock);
+for (int jBlock = 0; jBlock < blockColumns; ++jBlock, ++index) {
+final double[] block = blocks[iBlock * blockColumns + jBlock];
+for (int i = 0; i < iHeight; ++i) {
+if (outIndex >= outBlock.length) {
+

@@ -1,0 +1,13 @@
+private boolean valid(String input) {
+if (&quot;&quot;.equals(input)) return true;
+
+boolean ret = true;
+it = new StringCharacterIterator(input);
+break;
+}
+}
+nextCharacter();
+
+if (!ret) error(&quot;literal &quot; + text, start);
+return ret;
+

@@ -1,0 +1,12 @@
+for (int i = 0; i < ar.length; i += 1) {
+int indexMin = i;
+for (int j = i + 1; j < ar.length; j += 1) {
+if (ar[indexMin] > ar[j]) {
+indexMin = j;
+}
+}
+if (indexMin != i) {
+/* swap */
+int tmp = ar[i];
+ar[i] = ar[indexMin];
+

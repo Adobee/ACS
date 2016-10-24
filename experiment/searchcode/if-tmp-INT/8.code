@@ -1,0 +1,10 @@
+package revisit;
+
+public class TrappingRainWater {
+public int trap(int[] A) {
+if (A == null || A.length < 3)
+int right = A.length - 1;
+int water = 0;
+while (left < right) {
+if (A[left] <= A[right]) {
+

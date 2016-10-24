@@ -1,0 +1,9 @@
+MultipartBody.Builder mBuilder = new MultipartBody.Builder();
+if(null != params) {
+for(String key:params.keySet()){
+if(null != value)
+mBuilder.addFormDataPart(key,value);
+}
+}
+if(null != files){
+

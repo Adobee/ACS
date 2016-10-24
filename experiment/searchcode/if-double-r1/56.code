@@ -1,0 +1,15 @@
+static double min(double a,double b)
+{
+if(a>b) return b;
+return a;
+}
+static double max(double a,double b)
+{
+if(a>b) return a;
+x1 = cin.nextDouble();
+y1 = cin.nextDouble();
+r1 = cin.nextDouble();
+
+x2 = cin.nextDouble();
+y2 = cin.nextDouble();
+

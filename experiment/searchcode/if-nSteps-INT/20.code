@@ -1,0 +1,9 @@
+int[] readyTasks = new int[200];
+int[] deadlockedTasks = new int[200];
+int[] blockedTasks = new int[200];
+
+int nsteps = 0;
+public synchronized void taskStep(TaskView task, String fileName, int line) {
+nsteps++;
+if (nsteps == activeTasks.length) {
+

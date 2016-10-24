@@ -1,0 +1,5 @@
+public AuthorizationDecision mergeDecision(AuthorizationDecision newDecision) {
+if (newDecision == AuthorizationDecision.REJECT || this == AuthorizationDecision.REJECT) {
+return AuthorizationDecision.REJECT;
+} else if (newDecision == AuthorizationDecision.ACCEPT || this == AuthorizationDecision.ACCEPT) {
+

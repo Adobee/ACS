@@ -1,0 +1,11 @@
+private double magnitude, direction;
+
+/**constructors**/
+public Vector(double magnitude, double direction) {
+if(magnitude >= 0 &amp;&amp; direction >= 0 &amp;&amp; direction <= 360) {
+return direction;
+}
+
+public double getXComponent() {
+if(direction >= 0 &amp;&amp; direction <= 90) {
+

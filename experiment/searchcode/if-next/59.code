@@ -1,0 +1,11 @@
+public ListNode deleteDuplicates(ListNode head) {
+if (head == null) {
+return null;
+}
+ListNode dummy = new ListNode(0);
+ListNode next = cur.next;
+while (next.next != null &amp;&amp; next.val == next.next.val) {
+next = next.next;
+}
+if (cur.next != next) {
+

@@ -1,0 +1,11 @@
+public static void requires(boolean condition) {
+if (!condition)
+throw new PreconditionFailureException(&quot;Precondition failure&quot;);
+throw new PostconditionFailureException(&quot;Postcondition failure&quot;);
+};
+}
+
+public static Runnable ensures(BooleanSupplier condition) {
+return () -> {
+if (!condition.getAsBoolean())
+

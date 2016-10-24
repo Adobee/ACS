@@ -1,0 +1,16 @@
+public class LocalDateConverter implements AttributeConverter<LocalDate, Date>{
+
+@Override
+public Date convertToDatabaseColumn(LocalDate localDate) {
+if(localDate != null) {
+@Override
+public LocalDate convertToEntityAttribute(Date date) {
+if(date != null) {
+return new LocalDate(date.getTime());
+}
+
+return null;
+}
+
+}
+

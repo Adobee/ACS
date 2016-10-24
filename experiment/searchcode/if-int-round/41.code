@@ -1,0 +1,15 @@
+import services.GameCoreService;
+
+@Entity
+public class Round extends BaseModel {
+
+@ManyToOne
+public Game game;
+
+public int roundIndex;// 回合顺序 1,2,3,4,5
+private static int getActionPlayerNum(int playerNum, int roundIndex) {
+int num = 0;
+switch (roundIndex) {
+case 1:
+if (playerNum == 5 || playerNum == 6 || playerNum == 7)
+

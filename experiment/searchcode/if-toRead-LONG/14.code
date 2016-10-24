@@ -1,0 +1,7 @@
+&quot;zlib preset dictionary not supported&quot;);
+} else if (inflater.needsInput()) {
+int toRead = compressedRemaining < buffer.length ? compressedRemaining
+toRead = reader.readBlock(buffer, 0, toRead);
+if (toRead <= 0) {
+throw new EOFException(&quot;end of compressed data&quot;);
+

@@ -1,0 +1,6 @@
+public void onReceive(Object inputMsg) throws Exception {
+if (inputMsg instanceof Msg) {
+String msg = ((Msg) inputMsg).getMsg();
+Msg outputMsg = new Msg(prefix + &quot; &quot; + msg);
+sender().tell(outputMsg, self());
+

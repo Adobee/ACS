@@ -1,0 +1,10 @@
+Z3_REAL_SORT (3),
+Z3_INT_SORT (2),
+Z3_FLOATING_POINT_SORT (9),
+Z3_ROUNDING_MODE_SORT (10),
+Z3_UNINTERPRETED_SORT (0),
+public static final Z3_sort_kind fromInt(int v) {
+for (Z3_sort_kind k: values())
+if (k.intValue == v) return k;
+return values()[0];
+

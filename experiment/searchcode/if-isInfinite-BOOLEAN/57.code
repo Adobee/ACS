@@ -1,0 +1,9 @@
+private final int size;
+private final int andTimes;
+private final boolean isInfinite;
+private Random(int size, int andTimes, boolean isInfinite){
+@Override
+public boolean hasNext() {
+if(isInfinite)return true;
+return current < size;
+

@@ -1,0 +1,7 @@
+* @param type the type
+*/
+public RetrofitType(Type type) {
+if (type instanceof ParameterizedType) {
+Type[] typeArgs = ((ParameterizedType) type).getActualTypeArguments();
+if (typeArgs != null &amp;&amp; typeArgs.length > 0) {
+

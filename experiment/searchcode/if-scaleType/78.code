@@ -1,0 +1,15 @@
+import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.ImageView.ScaleType;
+
+public class PerSonTabViewPagerAdapter extends PagerAdapter {
+ViewPager viewPager = (ViewPager) container;
+if (view instanceof ImageView) {
+((ImageView) view).setScaleType(scaleType);
+}
+viewPager.addView(view, 0);
+return view;
+}
+
+}
+

@@ -1,0 +1,7 @@
+currentToken = tokenList.get(0);
+if(currentToken.getType() != TokenType.COLON) {
+throw new ParseError(currentToken);
+// make sure Rules comes next
+if(currentToken.getType() != TokenType.RULES) {
+throw new ParseError(currentToken);
+

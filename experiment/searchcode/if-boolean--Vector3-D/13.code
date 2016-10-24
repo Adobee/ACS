@@ -1,0 +1,10 @@
+public static Vector3 get(float x, float y, float z) {
+if(recycled.size() > 0) {
+Vector3 ret = recycled.pop();
+ret.x = x;
+return new Vector3(x, y, z);
+}
+
+public static void recycle(Vector3 vec) {
+if(recycled.size() > INITIAL_VECTORS) {
+

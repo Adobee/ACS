@@ -1,0 +1,11 @@
+return id >= 0 &amp;&amp; rounds.size() >= id;
+}
+
+private Round getRoundById(int roundId) {
+if (!emptyListOfRounds() &amp;&amp; idExists(roundId)) {
+return round;
+}
+
+private Round getCurrentOrNewRound() {
+if (emptyListOfRounds() || (getRoundById(getCurrentRoundId()).isRoundFinished() &amp;&amp; !tenthRounds())) {
+

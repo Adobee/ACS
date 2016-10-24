@@ -1,0 +1,12 @@
+/**
+* Created by zym on 15-6-1.
+*/
+class Center{
+private double x;
+private double y;
+Center(double x1, double y1){
+x = x1;
+y = y1;
+}
+public double getX(){
+

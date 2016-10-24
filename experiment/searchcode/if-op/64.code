@@ -1,0 +1,13 @@
+case &quot;CA&quot; : opStack.clear();
+break;
+case &quot;CL&quot;: if(opStack.size() > 0)
+opStack.pop();
+break;
+
+default:
+if(knownOps.containsKey(op))
+opStack.push(knownOps.get(op));
+}
+
+return opStack.size() > 0 ? evaluate() : 0.;
+

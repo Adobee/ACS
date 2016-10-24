@@ -1,0 +1,6 @@
+* @param dimension Dimension that values of this type must belong to, or
+*   null if the dimension is unknown
+StringBuilder buf = new StringBuilder(&quot;DimensionType<&quot;);
+if (dimension != null) {
+buf.append(&quot;dimension=&quot;).append(dimension.getUniqueName());
+

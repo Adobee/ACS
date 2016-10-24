@@ -1,0 +1,8 @@
+for (long j = 512 * finalI; j < 512 + 1024 * finalI; j++) {
+if ((j &amp; 0x1ff) == 0) {
+longHashSet.remove(j);
+assertFalse(longHashSet.isEmpty());
+for (int i = 0; i < limit; i++) {
+if ((i &amp; 0x1ff) == 0) {
+assertFalse(longHashSet.contains(i));
+

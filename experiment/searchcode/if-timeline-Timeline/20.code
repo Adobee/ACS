@@ -1,0 +1,8 @@
+public Timeline getTimelineById(long timelineId) throws TimelineNotFoundException {
+Timeline timelineToUse = null;
+if (timelineCache.get(timelineId) != null) {
+public int getTimelineCount(int objectType, long objectId) {
+if (objectType < 1 || objectId < 1)
+return 0;
+return timelineDao.getTimelineCount(objectType, objectId);
+

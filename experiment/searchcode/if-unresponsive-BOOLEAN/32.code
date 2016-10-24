@@ -1,0 +1,10 @@
+final String threshold = System.getProperty(&quot;performance.watcher.threshold&quot;);
+if (threshold != null) {
+try {
+UNRESPONSIVE_THRESHOLD = Integer.parseInt(threshold);
+catch (NumberFormatException e) {
+// ignore
+}
+}
+if (UNRESPONSIVE_THRESHOLD == 0 || UNRESPONSIVE_INTERVAL == 0) {
+

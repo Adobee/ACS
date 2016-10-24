@@ -1,0 +1,12 @@
+for (Long factor : factorize.factorize(numerator)) {
+Integer count = numeratorFactorCounts.get(factor);
+if (count == null) {
+numeratorFactorCounts.put(factor, count + 1);
+}
+}
+
+if (debug) System.out.println(numeratorFactorCounts);
+
+// convert to map
+HashMap<Long, Integer> denominatorFactorCounts = new HashMap<>();
+

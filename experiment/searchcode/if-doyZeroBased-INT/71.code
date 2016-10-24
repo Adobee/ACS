@@ -1,0 +1,7 @@
+int dayOfYear = getDayOfYear(instant, thisYear);
+int millisOfDay = getMillisOfDay(instant);
+
+if (dayOfYear > 354) {
+int doyZeroBased = (int) ((millis - getYearMillis(year)) / DateTimeConstants.MILLIS_PER_DAY);
+if (doyZeroBased == 354) {
+

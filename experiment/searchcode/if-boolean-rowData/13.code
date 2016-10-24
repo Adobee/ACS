@@ -1,0 +1,9 @@
+public class OrderByHandler implements Handler<List<RowData>, List<RowData>> {
+private Map<String, Boolean> columns;
+
+public OrderByHandler(LinkedHashMap<String, Boolean> columns) {
+this.columns = columns;
+}
+
+public List<RowData> handle(List<RowData> results) {
+

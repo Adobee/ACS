@@ -1,0 +1,8 @@
+if (h == LengthConstraintType.NONE) {
+return arrangeNN(container, g2);
+}
+if (h == LengthConstraintType.FIXED) {
+Block block = (Block) blocks.get(i);
+Size2D size = block.arrange(g2, RectangleConstraint.NONE);
+if (size.width + x <= width) {
+

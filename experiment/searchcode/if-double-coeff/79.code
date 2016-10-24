@@ -1,0 +1,8 @@
+button.addActionListener(new ActionListener() {
+
+@Override
+public void actionPerformed(ActionEvent arg0) {
+if (Double.valueOf(fieldCoeffC.getText()) != 0
+|| Double.valueOf(fieldCoeffD.getText()) != 0
+|| Double.valueOf(fieldCoeffE.getText()) != 0)
+

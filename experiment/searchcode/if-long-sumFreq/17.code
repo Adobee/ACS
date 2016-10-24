@@ -1,0 +1,7 @@
+public long getRowCount(Comparable<?> rowValue){
+if(rowValue instanceof Integer){
+return rowMargin.getCount(((Integer) rowValue).longValue());
+final long sumFreq = colMargin.getSumFreq();
+if(sumFreq==0){
+return Double.NaN;
+

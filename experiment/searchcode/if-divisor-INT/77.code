@@ -1,0 +1,13 @@
+* Divide two integers without using multiplication, division and mod operator.
+*/
+public class Divide_Two_Integers {
+
+public int divide(int dividend, int divisor) {
+if(dividend==2147483647 &amp;&amp; divisor== -2147483648){
+return dividend;
+if (divisor == 11)
+return ~dividend + 1;
+boolean neg = false;
+int tmp = 0;
+if (dividend < 0 &amp;&amp; divisor > 0 || divisor < 0 &amp;&amp; dividend > 0) {
+

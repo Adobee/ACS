@@ -1,0 +1,14 @@
+* The PTM to analyze.
+*/
+private PTM ptm;
+/**
+* Number of PTMs.
+*/
+private int nPTM;
+/**
+* The spectrum keys.
+for (int modCpt = 0; modCpt <= nPTM; modCpt++) {
+
+if (modCpt > 0) {
+if (modCpt == 1) {
+

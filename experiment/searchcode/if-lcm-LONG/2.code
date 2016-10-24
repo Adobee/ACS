@@ -1,0 +1,9 @@
+public int countCommMult(int[] a, int lower, int upper) {
+long lcm = a[0];
+for (int i = 1; i < a.length; i++) {
+lcm = lcm(lcm, a[i]);
+if (lcm > Integer.MAX_VALUE)
+return 0;
+}
+long first = (lower + lcm - 1) / lcm * lcm;
+

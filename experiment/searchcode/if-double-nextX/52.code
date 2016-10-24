@@ -1,0 +1,12 @@
+int dir = rand.nextInt(4);
+
+int nextx = this.getX();
+int nexty = this.getY();
+
+if (dir == 0) { // trying to move one right (east)
+} else {
+nextx = this.getX() - 1;
+}
+} else if (dir == 2) { // trying to move one up (north)
+if ((this.getY()) <= 0) { // if the grass is in the first row
+

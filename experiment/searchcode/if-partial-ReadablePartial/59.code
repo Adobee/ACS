@@ -1,0 +1,5 @@
+public static Date toUtilDate(Object date) {
+if (date != null &amp;&amp; date instanceof ReadablePartial) {
+return new Date(((ReadablePartial) date).toDateTime(null).getMillis());
+} else if (date != null &amp;&amp; date instanceof ReadableInstant) {
+

@@ -1,0 +1,7 @@
+int slackVar = 0;
+int artificialVar = 0;
+for (int i = 0; i < constraints.size(); i++) {
+if (constraint.getRelationship() == Relationship.LEQ) {
+matrix[row][getSlackVariableOffset() + slackVar++] = 1;  // slack
+} else if (constraint.getRelationship() == Relationship.GEQ) {
+

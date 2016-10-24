@@ -1,0 +1,8 @@
+@AllArgsConstructor(staticName = &quot;create&quot;)
+public class FieldAreaGraph implements NavigationGraph<FieldNode>
+FieldNode node = nodes.get(point);
+
+if (node == null)
+{
+node = FieldNode.create(fieldArea, y, x, enforceWalkable);
+

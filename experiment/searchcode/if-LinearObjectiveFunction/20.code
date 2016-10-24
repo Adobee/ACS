@@ -1,0 +1,8 @@
+import org.apache.commons.math.optimization.linear.LinearObjectiveFunction;
+import org.apache.commons.math.optimization.linear.Relationship;
+for (Variable v : lp.getObjective().getVariables())
+{
+if (v.getType() != TYPE.REAL)
+{
+throw new IllegalArgumentException(
+

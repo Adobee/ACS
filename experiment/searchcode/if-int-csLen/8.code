@@ -1,0 +1,9 @@
+public static boolean containsNone(CharSequence cs, char... searchChars) {
+if (cs == null || searchChars == null) {
+return true;
+}
+int csLen = cs.length();
+int csLast = csLen - 1;
+int searchLen = searchChars.length;
+int searchLast = searchLen - 1;
+

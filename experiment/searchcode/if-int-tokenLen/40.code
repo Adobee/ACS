@@ -1,0 +1,7 @@
+final int tokenLen = token.length();
+if (tokenLen == 0) {
+break;
+case &#39;M&#39;: // month in year (text and number)
+if (tokenLen >= 4) {
+rule = new TextField(Calendar.MONTH, months);
+

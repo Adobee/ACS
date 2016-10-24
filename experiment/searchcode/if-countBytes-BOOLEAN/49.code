@@ -1,0 +1,7 @@
+private long writeOrCountBytes(OutputStream sink, boolean countBytes) throws IOException {
+long byteCount = 0L;
+BufferedWriter writer;
+CountOutputStream bos = null;
+if (countBytes) {
+bos = new CountOutputStream();
+

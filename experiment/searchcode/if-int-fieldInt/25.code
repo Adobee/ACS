@@ -1,0 +1,10 @@
+private String fieldInt = &quot;fieldInt&quot;;
+
+private String fieldString = &quot;fieldString&quot;;
+
+private int intValue = 1;
+bundle.putString(fieldString, text);
+bundle.putInt(fieldInt, intValue);
+
+DataSourceBundle dataSourceBundle = new DataSourceBundle(bundle);
+

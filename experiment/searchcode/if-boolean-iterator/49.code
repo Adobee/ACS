@@ -1,0 +1,9 @@
+this.iteratorList = iteratorList;
+this.currentIterator = this.iteratorList.next();
+}
+
+@Override
+public boolean hasNext() {
+if (!currentIterator.hasNext())  {
+if (!iteratorList.hasNext()) return false;
+

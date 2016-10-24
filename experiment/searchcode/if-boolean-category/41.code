@@ -1,0 +1,7 @@
+SharedPreferences pref=context.getSharedPreferences(MODE,Context.MODE_PRIVATE);
+SharedPreferences.Editor editor=pref.edit();
+if(!pref.getBoolean(INIT,false)) {
+Log.e(&quot;init&quot;,&quot;category&quot;);
+editor.putBoolean(INIT,true);
+editor.putBoolean(CATEGORY_TRAVEL, true);
+

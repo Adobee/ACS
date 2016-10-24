@@ -1,0 +1,8 @@
+subtitleLineDao.deleteBySubtitleInfoId(subtitleInfoId);
+}
+
+public void saveSubtitleLine(SubtitleInfo subtitleInfo, Boolean forceDelete) {
+File file = null;
+Subtitle subtitle = SubtitleFactory.createSubtitle(file, subtitleInfo.getFilterRemove(), subtitleInfo.getFilterInclude());
+if (subtitle != null) {
+

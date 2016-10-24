@@ -1,0 +1,9 @@
+package com.sns;
+
+abstract public class UserDirectory {
+
+abstract public boolean isValidPassword(String username, String password);
+private static UserDirectory createInstance() {
+UserDirectory directory = createRealUserDirectory();
+if(directory==null){
+

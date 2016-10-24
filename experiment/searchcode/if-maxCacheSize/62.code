@@ -1,0 +1,8 @@
+public class CanonicalInstancesCache<Instance extends Constructable<Instance>, T> {
+private int maxCacheSize;
+private Map<Long, T> canonicalInstances;
+private Deque<Long> instanceHashDeque;
+
+public CanonicalInstancesCache(int maxCacheSize) {
+this.maxCacheSize = maxCacheSize;
+

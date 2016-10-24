@@ -1,0 +1,8 @@
+package com.gwinsoft.components2.job;
+
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+public synchronized Scheduler getScheduler() throws SchedulerException {
+if (scheduler == null) {
+scheduler = getFactory().getScheduler();
+

@@ -1,0 +1,7 @@
+AggregationContext aggregationContext, Aggregator parent, List<PipelineAggregator> pipelineAggregators, Map<String, Object> metaData,
+ValuesSource valuesSource, int maxDocsPerValue) throws IOException {
+super(name, shardSize, factories, aggregationContext, parent, pipelineAggregators, metaData);
+values.setDocument(doc);
+final int valuesCount = values.count();
+if (valuesCount > 1) {
+

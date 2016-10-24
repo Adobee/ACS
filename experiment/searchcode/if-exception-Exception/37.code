@@ -1,0 +1,13 @@
+public String getMessage() {
+String message = super.getMessage();
+
+if(message == null &amp;&amp; exception != null) {
+return exception.getMessage();
+public Exception getException() {
+return exception;
+}
+
+public String toString() {
+if(exception != null) {
+return exception.toString();
+

@@ -1,0 +1,9 @@
+abstract class MultiShape extends VectorCollection implements CShape
+{
+protected Extent savedExtent = null;
+public Extent getExtent()
+{
+if ( savedExtent == null )
+{
+CIterator it = super.iterator();
+

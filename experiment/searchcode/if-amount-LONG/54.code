@@ -1,0 +1,11 @@
+public long withdraw(long amount) {
+if (getBalance() - amount > 100) {
+transact(&quot;Withdrawal&quot;, -amount);
+transact(&quot;Declined withdrawal &quot;, 0);
+return 0;
+}
+}
+
+@Override
+public long deposit(long amount) {
+

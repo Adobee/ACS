@@ -1,0 +1,10 @@
+private double xu, yu;  // Unit vector
+
+public void setXAndY(double x2, double y2){
+x = x2;
+y = y2;
+
+double divisor = (Math.sqrt(x2*x2+y2*y2));
+if (divisor != 0){
+xu = x2/divisor;
+

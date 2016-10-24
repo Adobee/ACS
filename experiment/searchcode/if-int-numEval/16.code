@@ -1,0 +1,7 @@
+boolean evalActivo = desastreEvaluado.getSerious().getState().equals(&quot;active&quot;);
+int numAtend = desastreAtendido.getSerious().getQuantity();
+int numEval = desastreEvaluado.getSerious().getQuantity();
+int numAtend = desastreAtendido.getDead().getQuantity();
+int numEval = desastreEvaluado.getDead().getQuantity();
+if(evalActivo == true &amp;&amp; atendActivo == true &amp;&amp; numAtend < numEval){
+

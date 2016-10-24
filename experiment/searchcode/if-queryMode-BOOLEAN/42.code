@@ -1,0 +1,8 @@
+protected Endpoint createEndpoint(String uri, final String remaining, final Map<String, Object> parameters) throws Exception {
+boolean queryMode = removeQueryMode(parameters);
+
+CMISSessionFacade sessionFacade = new CMISSessionFacade(remaining);
+private boolean removeQueryMode(Map<String, Object> parameters) {
+if (parameters.containsKey(&quot;queryMode&quot;)) {
+return Boolean.valueOf((String)parameters.remove(&quot;queryMode&quot;));
+

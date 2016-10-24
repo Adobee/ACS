@@ -1,0 +1,12 @@
+Cluster clusterI = null;
+
+boolean found = false;
+
+for (Cluster cluster : clusters) {
+
+if (!cluster.hasMerged()) {
+for (Cluster clusterJ : clusters) {
+
+if (!clusterJ.hasMerged()
+&amp;&amp; clusterI.calcSharedPatternsPercents(clusterJ) > Global.S) {
+

@@ -1,0 +1,13 @@
+private boolean fail;
+private static StopHolder instance = null;
+
+public synchronized static StopHolder getInstance(){
+this.stopOnFailure=stopOnFailure;
+}
+
+public boolean getStop(){
+return this.stopOnFailure;
+}
+
+public void setFail(boolean fail){
+

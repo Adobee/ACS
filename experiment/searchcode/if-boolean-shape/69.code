@@ -1,0 +1,12 @@
+this.shapeType = shapeType;
+this.shapeAttrs = shapeAttrs;
+}
+
+@Override
+public boolean doIt() {
+shape = null;
+if(shapeType!=null&amp;&amp;shapeType.equals(Constants.SHAPE_ELLIPSE)) {
+shape = ShapeUtil.getInstance().newEllipse(getDrawing().getPaper(), 10,10,10,10);
+}
+else if(shapeType!=null&amp;&amp;shapeType.equals(Constants.SHAPE_CIRCLE)) {
+

@@ -1,0 +1,11 @@
+EqlWithParameters result = new EqlWithParameters();
+BooleanEnum value = getValue();
+if (value != null
+&amp;&amp; !CommonUtils.isNullOrEmpty(getTargetPropertyName())) {
+propertyChangeSupport().firePropertyChange(&quot;value&quot;,
+old_booleanEnum, booleanEnum);
+}
+
+@Override
+protected EnumCriterion copyPropertiesFrom(SearchCriterion searchCriterion) {
+

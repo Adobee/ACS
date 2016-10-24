@@ -1,0 +1,7 @@
+public static <T> TableRecordSerializer<T> getSerializer( String table )
+{
+if( table.equals( &quot;articles&quot; ) )
+return (TableRecordSerializer<T>) articleSerializer;
+else if( table.equals( &quot;orders&quot; ) )
+return (TableRecordSerializer<T>) orderSerializer;
+

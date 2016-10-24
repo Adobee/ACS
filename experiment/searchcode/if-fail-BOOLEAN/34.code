@@ -1,0 +1,7 @@
+@SuppressWarnings(&quot;unchecked&quot;)
+public static boolean isValidateCodeLogin(String useruame, boolean isFail, boolean clean){
+Map<String, Integer> loginFailMap = (Map<String, Integer>)CacheUtils.get(&quot;loginFailMap&quot;);
+if (loginFailMap==null){
+loginFailMap = Maps.newHashMap();
+CacheUtils.put(&quot;loginFailMap&quot;, loginFailMap);
+

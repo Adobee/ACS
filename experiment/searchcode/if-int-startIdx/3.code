@@ -1,0 +1,8 @@
+private static List<Event> addInterval(Event[] events, Event event, int n) {
+int startIdx = 0;
+List<Event> eventsList = new ArrayList<Event>();
+while(startIdx < n &amp;&amp; event.start > events[startIdx].finish){
+eventsList.add(events[startIdx++]);
+}
+if(startIdx < n &amp;&amp; event.start >= events[startIdx].start &amp;&amp; event.start <= events[startIdx].finish){
+

@@ -1,0 +1,6 @@
+public void enter(final ViewChangeEvent event) {
+final List<SnippetSummary> snippets = Lists.newArrayList();
+if (ContentType.LATEST == type)
+snippets.addAll(snippetService.getLatestSnippets(size));
+else if (ContentType.POPULAR == type)
+

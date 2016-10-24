@@ -1,0 +1,8 @@
+private int locatePoint(final T time, final FieldODEStateInterpolator<T> interval) {
+if (forward) {
+if (time.subtract(interval.getPreviousState().getTime()).getReal() < 0) {
+return 0;
+}
+}
+if (time.subtract(interval.getPreviousState().getTime()).getReal() > 0) {
+

@@ -1,0 +1,8 @@
+if (!m.matches()) return false;
+int groupCount = m.groupCount();
+if (groupCount == 0)
+return false;
+
+for (int i = 0; i < groupCount; i++) {
+String seg = m.group(i + 1);
+

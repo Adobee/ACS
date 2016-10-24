@@ -1,0 +1,8 @@
+long diffInSeconds = (current.getTime() - dateTime.getTime()) / 1000;
+
+/*long diff[] = new long[]{0, 0, 0, 0};
+/* hours *  diff[1] = (diffInSeconds = (diffInSeconds / 60)) >= 24 ? diffInSeconds % 24 : diffInSeconds;
+/* days * diff[0] = (diffInSeconds = (diffInSeconds / 24));
+*/
+long sec = (diffInSeconds >= 60 ? diffInSeconds % 60 : diffInSeconds);
+

@@ -1,0 +1,7 @@
+import org.apache.lucene.index.ReaderUtil;
+import org.apache.lucene.search.BooleanClause;
+import org.apache.lucene.search.BooleanQuery;
+return (PercolateQuery) query;
+} else if (query instanceof BooleanQuery) {
+for (BooleanClause clause : ((BooleanQuery) query).clauses()) {
+

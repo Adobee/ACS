@@ -1,0 +1,10 @@
+public class Mezclador {
+
+public int[] mezclar(int[] a, int[] b) {
+int[] c = new int[a.length + b.length];
+
+int i = 0, j = 0, k = 0;
+while (i < a.length &amp;&amp; j < b.length) {
+
+if (a[i] < b[j]) {
+

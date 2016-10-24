@@ -1,0 +1,9 @@
+public final void interpolate(Quat4d q1, double alpha) {
+// From Hoggar.
+normalize();
+double n1 = Math.sqrt(q1.norm());
+// zero-div may occur.
+double x1 = q1.x/n1;
+double y1 = q1.y/n1;
+double z1 = q1.z/n1;
+

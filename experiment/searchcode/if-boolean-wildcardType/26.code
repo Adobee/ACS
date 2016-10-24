@@ -1,0 +1,14 @@
+return event instanceof Event? Event.class.cast(event).event():event;
+
+}
+
+
+public static boolean isCollectionType(Type t) {
+
+if (t instanceof Class)
+return Collection.class.isAssignableFrom(Class.class.cast(t));
+return Class.class.cast(t);
+
+if (t instanceof WildcardType)
+return WildcardType.class.cast(t).getUpperBounds()[0];
+

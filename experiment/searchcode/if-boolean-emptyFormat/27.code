@@ -1,0 +1,8 @@
+private FileStatusCache cache;
+private MessageFormat format;
+private String emptyFormat;
+private Boolean needRevisionForFormat;
+String annotation = format.format(arguments, new StringBuffer(), null).toString().trim();
+if(annotation.equals(emptyFormat)) {
+return &quot;&quot;; // NOI18N
+

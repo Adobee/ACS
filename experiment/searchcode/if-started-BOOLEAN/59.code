@@ -1,0 +1,21 @@
+public class ElectronicSecuredNotepad extends SecuredNotepad implements IElectronicDevice{
+
+private boolean isStarted = false;
+ElectronicSecuredNotepad(int numOfPages, String password) {
+this.isStarted = false;
+
+}
+
+@Override
+public boolean isStarted() {
+if(isStarted){
+return true;
+}
+else{
+return false;
+}
+}
+
+
+}
+

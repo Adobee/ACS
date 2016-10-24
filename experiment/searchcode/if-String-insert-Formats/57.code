@@ -1,0 +1,7 @@
+public boolean insert(int providerId, int formatId) {
+synchronized (psInsertLock) {
+if (log.isDebugEnabled())
+log.debug(&quot;Adding the format with ID &quot; + formatId + &quot; to the provider with ID &quot; + providerId + &quot;.&quot;);
+try {
+// If the PreparedStatement to insert a provider to Top Level Tab is not defined, create it
+

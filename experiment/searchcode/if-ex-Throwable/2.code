@@ -1,0 +1,8 @@
+public static Throwable getRootCause(Throwable in){
+return getEmbeddedException(in,Throwable.class);
+public static Throwable getEmbeddedException(Throwable in, Class<?> instanceOfThisClass){
+Throwable ret = null ;
+Throwable ex = in;
+while (ex != null ){
+if (instanceOfThisClass.isInstance(ex)){
+

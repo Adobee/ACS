@@ -1,0 +1,11 @@
+private void ᐝ(long paramLong)
+{
+if ((this.nh != -2147483648) &amp;&amp; (paramLong != -1L)) {
+this.nh = ((int)(this.nh - paramLong));
+}
+}
+
+public int available()
+{
+if (this.nh == -2147483648) {
+

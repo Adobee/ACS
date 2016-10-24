@@ -1,0 +1,12 @@
+private MessageFormat format;
+private String emptyFormat;
+
+private boolean mimeTypeFlag;
+
+Annotator(Subversion svn) {
+String annotation = format.format(arguments, new StringBuffer(), null).toString().trim();
+if(annotation.equals(emptyFormat)) {
+return &quot;&quot;;
+} else {
+return &quot; &quot; + annotation;
+

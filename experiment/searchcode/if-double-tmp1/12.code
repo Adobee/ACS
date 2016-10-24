@@ -1,0 +1,14 @@
+public void chargementTampon1(int a){// on choisira ici d&#39;ignorer la saisie en cas de depassement de memoire
+if(indTmp1>=14);
+else{
+tampon1[indTmp1]=a;
+indTmp1++;
+transTmp1();
+}
+}
+
+public void chargementTampon2(int a){
+if(indTmp2>=14);
+else{
+tampon2[indTmp2]=a;
+

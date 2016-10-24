@@ -1,0 +1,14 @@
+package org.testory.common;
+
+public class Checks {
+public static <T> T checkNotNull(T instance) {
+return instance;
+}
+
+public static void checkArgument(boolean condition) {
+if (!condition) {
+throw new IllegalArgumentException();
+}
+}
+}
+

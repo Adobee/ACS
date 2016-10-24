@@ -1,0 +1,12 @@
+table.get(pivotRow)[l] = table.get(pivotRow)[l] / pivotValue;
+}
+for (int k = 0; k < table.size(); k++) {
+if (k != pivotRow &amp;&amp; table.get(k)[pivotColumn] != 0) {
+table.get(k)[l] = table.get(k)[l] - table.get(k)[pivotColumn] * table.get(pivotRow)[l];
+}
+}
+}
+}
+for (int k = 0; k < table.size(); k++) {
+if (k != pivotRow &amp;&amp; table.get(k)[pivotColumn] != 0) {
+

@@ -1,0 +1,13 @@
+for (int i = 0; i < N; ++i) {
+boolean[] replaced = new boolean[M];
+for (int j = i + 1; j < N; ++j) {
+for (int k = L[i] - 1; k < R[i]; ++k)
+if (!replaced[k])
+ok = true;
+if (ok) ++ans;
+}
+
+return 1L << ans;
+}
+}
+

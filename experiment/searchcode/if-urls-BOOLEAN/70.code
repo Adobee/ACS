@@ -1,0 +1,18 @@
+private ArrayList<URL> urls = new ArrayList<>();
+
+@Override
+public void push(URL url) {
+urls.add(url);
+}
+
+@Override
+public boolean hasRecords() {
+public URL pop() throws Exception {
+if(urls.size() > 0) {
+return urls.remove(urls.size() - 1);
+} else {
+throw new Exception(&quot;empty queue&quot;);
+}
+}
+}
+

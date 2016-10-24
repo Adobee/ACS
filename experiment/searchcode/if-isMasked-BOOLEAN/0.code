@@ -1,0 +1,9 @@
+for (final char character : pregEx.toCharArray()) {
+switch (character) {
+case &#39;\\&#39;:
+if (isMasked || inSequence) {
+regExCheck.append(character);
+}
+if (!inSequence) {
+isMasked = !isMasked;
+

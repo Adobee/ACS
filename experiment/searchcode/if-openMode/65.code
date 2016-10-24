@@ -1,0 +1,7 @@
+formAction.checkCharge(formToSave, request, record, openMode, acl, sessionInfo);
+if(!isCreate) {
+if(!formAction.isLockByMe(formToSave, record, request, openMode, sessionInfo)) {
+try {
+record = formAction.saveRecord(formToSave, record, openMode, request, response, sessionInfo);
+if(record!=null) {
+

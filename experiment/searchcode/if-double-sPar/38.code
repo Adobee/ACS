@@ -1,0 +1,8 @@
+protected int withdrawCount;
+protected int withdrawLimit;
+
+public ForeldreSpar(double interest, int withdrawLimit) {
+public void withdraw(double amount) {
+if (withdrawCount >= withdrawLimit) {
+throw new IllegalStateException(&quot;Cannot withdraw more than the permitted number of times, &quot; + withdrawLimit + &quot;, per year.&quot;);
+

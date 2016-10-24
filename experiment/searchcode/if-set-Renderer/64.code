@@ -1,0 +1,17 @@
+boolean right = false;
+
+@Override
+public final void render(Renderer renderer) {
+renderer.push();
+if (!right)
+renderer.pop();
+}
+
+protected abstract void renderRight(Renderer renderer);
+
+public void setRight(boolean right) {
+this.right = right;
+}
+
+}
+

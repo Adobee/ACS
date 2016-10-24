@@ -1,0 +1,10 @@
+public class ForeldreSpar extends SavingsAccount {
+
+private int maxWithdraws;
+private int withdraws = 0;
+
+public ForeldreSpar(double interest, int maxWithdraws) {
+public void withdraw(double amount) {
+if (withdraws >= maxWithdraws) throw new IllegalStateException();
+super.withdraw(amount);
+

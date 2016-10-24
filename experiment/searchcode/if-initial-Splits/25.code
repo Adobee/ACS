@@ -1,0 +1,12 @@
+for (Position pos : randomPositions) {
+for (int i = 0; i < segmentSplits; i++) {
+if (pos.getX() >= segmentWidth * i
+&amp;&amp; pos.getX() <= segmentWidth * i + segmentWidth) {
+amountPositionsInSplits[i]++;
+}
+}
+}
+
+// Check if difference between amount of positions in
+// each segment is lower than margin of error
+

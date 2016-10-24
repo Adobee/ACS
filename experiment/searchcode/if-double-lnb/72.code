@@ -1,0 +1,7 @@
+*  For additional precision, the code splits double numbers into two parts,
+*  by clearing the low order 30 bits if possible, and then performs the arithmetic
+* @return the high order part of the mantissa
+*/
+private static double doubleHighPart(double d) {
+if (d > -SAFE_MIN &amp;&amp; d < SAFE_MIN){
+

@@ -1,0 +1,13 @@
+* @author Colonel32
+*/
+public class AABB implements BoundedObject
+{
+double minx, miny, minz;
+double maxx, maxy, maxz;
+public double expansionNeeded(AABB other)
+{
+double total = 0;
+
+if(other.minx < minx) total += minx - other.minx;
+if(other.maxx > maxx) total += other.maxx - maxx;
+

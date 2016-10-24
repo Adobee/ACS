@@ -1,0 +1,10 @@
+final static int SEED = 113;
+
+public static final double num_flops(int Num_samples) {
+// 3 flops in x^2+y^2 and 1 flop in random routine
+double x= R.nextDouble();
+double y= R.nextDouble();
+
+if ( x*x + y*y <= 1.0)
+under_curve ++;
+

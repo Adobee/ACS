@@ -1,0 +1,11 @@
+public RandomGenerator() {
+globalSeed = 0;
+}
+
+public void setGlobalSeed(int seed) {
+globalSeed = seed;
+public int randomInt(int min, int max, int seed) {
+
+if(seed != lastSeed) {
+currentRandom = new Random(seed);
+

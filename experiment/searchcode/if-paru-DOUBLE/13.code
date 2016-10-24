@@ -1,0 +1,8 @@
+package ch.paru.scrumTools.common.configuration;
+
+import org.apache.commons.configuration.HierarchicalINIConfiguration;
+protected Double getDoubleInSection(String sectionName, String key) {
+SubnodeConfiguration section = getConfig().getSection(sectionName);
+Double value = section.getDouble(key);
+if (value == null) {
+

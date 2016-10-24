@@ -1,0 +1,9 @@
+super(endpointUri, component);
+}
+
+@Override
+public Producer createProducer() throws Exception {
+if (DnsType.dig == dnsType) {
+return new DnsDigProducer(this);
+} else if (DnsType.ip == dnsType) {
+

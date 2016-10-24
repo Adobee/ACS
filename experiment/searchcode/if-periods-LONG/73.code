@@ -1,0 +1,4 @@
+Dyad<String, Map<Long, Period>> periodsByIdBySportCode = Dyad.create();
+for (Period period : periods) {
+Map<Long, Period> periodsById = periodsByIdBySportCode.get(period.getPeriodType().getSportCode().name());
+

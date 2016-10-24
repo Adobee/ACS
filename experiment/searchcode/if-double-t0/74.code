@@ -1,0 +1,9 @@
+protected static final Vector3D 	K_VECTOR = new Vector3D(0.0, 0.0, 1.0);
+private static final int   INTEGRATION_STEPS = 100;
+
+protected double 	t0;
+private double trapezoid(double step, double x, double t0, double tn) {
+double I = 0;
+for(double i = t0; i <= tn + 10E-14; i+=step) {
+if(i==t0 || (i <= tn + 10E-14 &amp;&amp; i >= tn - 10E-14)) {
+

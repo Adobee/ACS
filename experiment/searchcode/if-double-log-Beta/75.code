@@ -1,0 +1,12 @@
+public BetaDistribution(double a, double b) {
+if (a <= 0 || b <= 0)
+throw new IllegalArgumentException(&quot;a = &quot; + a + &quot; and b = &quot; + b + &quot; must be greater than zero&quot;);
+betaDistr = new cern.jet.random.Beta(a, b, Util.RNG);
+alpha = a;
+beta = b;
+}
+
+
+public static double sample(double a, double b) {
+if (a == 0 &amp;&amp; b == 0) {
+

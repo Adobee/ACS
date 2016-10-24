@@ -1,0 +1,12 @@
+//Sort Color
+
+public class SortColor{
+public void sortColors(int[] A){
+if(A==null || A.length==0){
+return A;
+}
+int len = A.length;
+int idx = 0;
+int zeroIdx = 0;
+int twoIdx = len - 1;
+

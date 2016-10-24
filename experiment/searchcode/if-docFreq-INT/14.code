@@ -1,0 +1,7 @@
+int minFreq = 0;
+while (terms.next()) {
+if (terms.docFreq() > minFreq) {
+tiq.put(new TermInfo(terms.term(), terms.docFreq()));
+if (tiq.size() > numTerms) {		  // if tiq overfull
+tiq.pop();				  // remove lowest in tiq
+

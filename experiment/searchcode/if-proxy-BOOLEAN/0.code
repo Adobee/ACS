@@ -1,0 +1,8 @@
+private  String proxyPassword;
+private boolean isProxy;
+private static final boolean isDebug = Boolean.valueOf(System.getProperty(Constants.PM_DEBUG_MODE));
+public boolean hasCredentials(){
+boolean hasCredentials = true;
+
+if (proxyUser == null || proxyPassword == null || proxyUser.isEmpty() &amp;&amp; proxyPassword.isEmpty()) {
+

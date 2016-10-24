@@ -1,0 +1,17 @@
+import javax.xml.bind.annotation.XmlType;
+
+/**
+*
+* @author vmotukuri
+*
+*/
+@XmlType(name = &quot;responseCode&quot;)
+for (ResponseCode responseCode : ResponseCode.values()) {
+if (responseCode.value.equals(value)) {
+return responseCode;
+}
+}
+throw new IllegalArgumentException(value);
+}
+}
+

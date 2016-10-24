@@ -1,0 +1,10 @@
+import javax.inject.Inject;
+import javax.inject.Singleton;
+
+import okhttp3.HttpUrl;
+import okhttp3.Interceptor;
+public Response intercept(Chain chain) throws IOException {
+Request original = chain.request();
+
+// If new Base URL is properly formatted than replace with old one
+

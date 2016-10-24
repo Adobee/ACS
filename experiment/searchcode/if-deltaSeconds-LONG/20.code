@@ -1,0 +1,8 @@
+public static interface TimerListener {
+void onStartEvent(long deltaSeconds, long cycleNumber);
+
+void onTransitionEvent(long nextStartSeconds);
+public void dispatchTime(long deltaSeconds) {
+//start time
+long cycleTime = deltaSeconds % (mRouteTimeLimit + mTransitionTime);
+

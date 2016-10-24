@@ -1,0 +1,20 @@
+ArraySize = 0;
+}
+
+public boolean isArray() {
+return ArraySize > 0;
+}
+
+@Override
+public int getSize() {
+if (isArray())
+return _offsetFactory.getSizeOf(Type);
+}
+
+@Override
+public void setOffset(int offset) {
+Offset = offset;
+}
+
+}
+

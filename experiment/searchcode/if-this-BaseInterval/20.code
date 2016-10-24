@@ -1,0 +1,11 @@
+import com.code44.finance.utils.ThemeUtils;
+import com.code44.finance.utils.interval.BaseInterval;
+
+import lecho.lib.hellocharts.model.Line;
+
+class TagTrendsChartPresenter extends TrendsChartPresenter implements LoaderManager.LoaderCallbacks<Cursor> {
+public void setTagAndInterval(Tag tag, BaseInterval baseInterval) {
+this.tag = tag;
+this.baseInterval = baseInterval;
+loaderManager.restartLoader(LOADER_TAG_TRENDS, null, this);
+

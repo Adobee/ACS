@@ -1,0 +1,12 @@
+Graphics2D g2d = (Graphics2D)g;
+super.paintComponent(g);
+
+if(!isOpaque()){
+return;
+}
+
+Rectangle r = this.getVisibleRect();
+Paint oldPaint = g2d.getPaint();
+g2d.setPaint(paint);
+g2d.fill(r);
+

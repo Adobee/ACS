@@ -1,0 +1,9 @@
+int hash = 0, weight = 0;
+
+for (int n = 0; n < str.length(); ++n, ++weight) {
+if (weight > 7) {
+weight = 0;
+}
+// 「<< (4 * weight)」は「256^weight」と同じ意味
+hash += (int) str.charAt(n) << (4 * weight);
+

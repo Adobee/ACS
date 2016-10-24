@@ -1,0 +1,9 @@
+public Rotation_bug(double q0, double q1, double q2, double q3,
+boolean needsNormalization) {
+
+if (needsNormalization) {
+double u2u2 = Vector3D.dotProduct(u2, u2);
+double v1v1 = Vector3D.dotProduct(v1, v1);
+double v2v2 = Vector3D.dotProduct(v2, v2);
+if ((u1u1 == 0) || (u2u2 == 0) || (v1v1 == 0) || (v2v2 == 0)) {
+

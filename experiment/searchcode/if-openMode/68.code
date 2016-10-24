@@ -1,0 +1,9 @@
+import org.apache.lucene.document.Document;
+import org.apache.lucene.index.IndexWriterConfig.OpenMode;
+import org.sicdlab.consensusMonitor.analysis.fulltextIndex.service.FultextIndexService;
+List<DataSource> postsList=postsListAll.subList(i*num, (i+1)*num);
+buildPostsIndexImpl(postsList,OpenMode.APPEND);
+}
+
+if(postsListAll.size()%num>0){
+

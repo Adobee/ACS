@@ -1,0 +1,14 @@
+public class SimpleHttpClientStrategy implements IHttpClientStrategy
+{
+private boolean allowLenientSsl;
+
+@Override
+public CloseableHttpClient getHttpClient()
+{
+return HttpClients.createDefault();
+}
+
+public boolean isAllowLenientSsl()
+{
+return allowLenientSsl;
+

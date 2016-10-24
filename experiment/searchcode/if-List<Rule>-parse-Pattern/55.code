@@ -1,0 +1,7 @@
+public synchronized RuleSet createRuleSet(String referenceString) throws RuleSetNotFoundException {
+List<RuleSetReferenceId> references = RuleSetReferenceId.parse(referenceString);
+if (references.isEmpty()) {
+ruleSet.setDescription(parseTextNode(node));
+} else if (&quot;include-pattern&quot;.equals(nodeName)) {
+ruleSet.addIncludePattern(parseTextNode(node));
+

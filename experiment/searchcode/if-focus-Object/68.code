@@ -1,0 +1,12 @@
+import java.awt.event.FocusListener;
+
+public abstract class BPFocusListener implements FocusListener {
+
+private Object oldValue;
+this.oldValue = getValue();
+}
+
+@Override
+public void focusLost(final FocusEvent e) {
+if (this.oldValue != null &amp;&amp; !this.oldValue.equals(getValue())) {
+

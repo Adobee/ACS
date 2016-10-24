@@ -1,0 +1,9 @@
+package algos;
+
+public class LinePointDistance {
+
+//Compute the distance from AB to C
+//if isSegment is true, AB is a segment, not a line.
+public static double linePointDist(double[] A, double[] B, double[] C, boolean isSegment) {
+double dist = CrossProduct.cross(A,B,C) / Distance.distance(A,B);
+

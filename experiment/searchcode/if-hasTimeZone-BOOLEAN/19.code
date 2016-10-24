@@ -1,0 +1,12 @@
+Calendar t,
+int precision,
+boolean hasTimeZone,
+SqlParserPos pos) {
+this(t, precision, hasTimeZone, DateTimeUtils.TIME_FORMAT_STRING, pos);
+Calendar t,
+int precision,
+boolean hasTimeZone,
+String format,
+SqlParserPos pos) {
+super(t, hasTimeZone, SqlTypeName.TIME, precision, format, pos);
+

@@ -1,0 +1,14 @@
+import org.springframework.stereotype.Repository;
+
+import com.hummingbird.tag.dao.TagObjectDao;
+import com.hummingbird.tag.model.TagObject;
+List<TagObject> objects = jdbcTemplate.query(sql, BeanPropertyRowMapper.newInstance(TagObject.class), tagObjectCode);
+if(objects.size() > 0){
+return objects.get(0);
+}else{
+return null;
+}
+}
+
+}
+

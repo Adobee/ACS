@@ -1,0 +1,8 @@
+public static final String DEFAULT_CLUSTER_NAME = &quot;PinotCluster&quot;;
+
+public AbstractBaseCommand(boolean addShutdownHook) {
+if (addShutdownHook) {
+Runtime.getRuntime().addShutdownHook(new Thread() {
+@Override
+public void run() {
+

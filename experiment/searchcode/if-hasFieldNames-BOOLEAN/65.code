@@ -1,0 +1,9 @@
+* Return whether to profile query execution, or {@code null} if
+* unspecified.
+*/
+public boolean profile() {
+return profile;
+boolean hasFieldNames = fieldNames != null;
+out.writeBoolean(hasFieldNames);
+if (hasFieldNames) {
+

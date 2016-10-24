@@ -1,0 +1,8 @@
+public static AbstractMapper lookup(Class clazz) {
+
+if (Client.class.equals(clazz)) {
+return getClientMapper();
+} else if (Message.class.equals(clazz)) {
+return getMessageMapper();
+} else if (Queue.class.equals(clazz)) {
+

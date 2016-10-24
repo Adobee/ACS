@@ -1,0 +1,9 @@
+private double experience = 0.01;
+
+public double trainExpected(double signal) {
+return trainExpected(signal, 1.0);
+}
+
+public double trainExpected(double expectedSignal, double confidence) {
+signal = (signal * experience + expectedSignal * confidence)/(experience + confidence);
+

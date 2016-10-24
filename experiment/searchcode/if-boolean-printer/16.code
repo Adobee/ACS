@@ -1,0 +1,9 @@
+private final static int PRINTER_DELAY_TIME = 4000;
+private static boolean isPrinting = false;
+private final static int QRCODE_WIDTH = 300; // qrcode width
+private PrinterHelper() {
+}
+
+synchronized public static PrinterHelper getInstance(Context context) {
+if (null == _instance) {
+

@@ -1,0 +1,10 @@
+OutputStreamRequestBody requestBody = (OutputStreamRequestBody) buildCall().request().body();
+if (requestBody == null) {
+throw new ProtocolException(&quot;method does not support a request body: &quot; + method);
+requestHeaders.add(&quot;User-Agent&quot;, defaultUserAgent());
+}
+
+OutputStreamRequestBody requestBody = null;
+if (HttpMethod.permitsRequestBody(method)) {
+// Add a content type for the request body, if one isn&#39;t already present.
+

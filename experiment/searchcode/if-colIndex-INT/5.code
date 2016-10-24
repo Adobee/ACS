@@ -1,0 +1,9 @@
+return (a > 0) ? a : -a;
+}
+
+static int placeable(int [] colIndex , int row)
+{
+int currCol = colIndex[row];
+for(int i=0; i < row ; ++i)
+if(currCol == colIndex[i] || abs(currCol - colIndex[i] ) == abs(row  - i))
+

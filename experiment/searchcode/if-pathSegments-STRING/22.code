@@ -1,0 +1,7 @@
+String path = null;
+String[] pathSegments = CrawlableDatasetUtils.getPathSegments( path);
+assertFalse( CrawlableDatasetUtils.isValidAbsolutePath( pathSegments));
+@Test(expected = IllegalArgumentException.class)
+public void checkStepDownFromNullPath() {
+String[] pathSegments = CrawlableDatasetUtils.getPathSegments( null);
+

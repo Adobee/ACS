@@ -1,0 +1,11 @@
+private AbstractMultinomial counts;
+double gaussianPriorVariance;
+//Current function value and gradient
+double objective;
+
+
+int variable;
+int yValue = values.getQuick(y);
+double count = counts.getCounts(variable,yValue);
+objective+=(-scores.getValue(yValue) + logZ)*count;
+

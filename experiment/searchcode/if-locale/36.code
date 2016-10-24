@@ -1,0 +1,11 @@
+Locale locale = (Locale)request.getAttribute(JSP_LOCALE);
+if(null==locale) {
+locale = Locale.getDefault();
+}
+return locale;
+}
+
+@Override
+public void setLocale(HttpServletRequest request, HttpServletResponse response, Locale locale) {
+if(locale == null) {
+

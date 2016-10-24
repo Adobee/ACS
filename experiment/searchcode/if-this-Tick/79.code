@@ -1,0 +1,19 @@
+private int num;
+public TestThread1(int i)
+{
+this.num=i;
+}
+public void run()
+{
+while(tick<400000)
+{
+tick++;
+if((tick%50000)==0)
+{
+System.out.println((&quot;Thread#&quot;+num+&quot;,tick=&quot;+tick));
+//yield();
+}
+}
+}
+}
+

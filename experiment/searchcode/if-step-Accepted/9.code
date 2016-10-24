@@ -1,0 +1,11 @@
+public void removeMovementListeners()
+{
+mStepListeners.clear();
+}
+
+public void onSensorChanged(SensorEvent event)
+{
+if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER)
+boolean accepted = false;
+if(LastSpan.toDurationMillis()!= 0)//La primera medida sirve solo de referencia, no como paso.
+

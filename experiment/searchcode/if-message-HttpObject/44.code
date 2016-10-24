@@ -1,0 +1,7 @@
+import io.netty.handler.codec.http.DefaultFullHttpResponse;
+import io.netty.handler.codec.http.FullHttpRequest;
+import io.netty.handler.codec.http.HttpObject;
+public HttpResponse requestPre(HttpObject httpObject) {
+HttpResponse response = null;
+if (httpObject instanceof FullHttpRequest) {
+

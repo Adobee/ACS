@@ -1,0 +1,14 @@
+*     Matthew Ballance - initial implementation
+****************************************************************************/
+
+
+package net.sf.sveditor.core.db.expr;
+
+import net.sf.sveditor.core.db.stmt.SVDBConstraintDistListItem;
+protected void solve_before(SVDBConstraintSolveBeforeStmt expr) {
+}
+
+protected void tf_call(SVDBTFCallExpr expr) {
+if (expr.getTarget() != null) {
+visit(expr.getTarget());
+

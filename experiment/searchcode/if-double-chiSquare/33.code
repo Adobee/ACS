@@ -1,0 +1,11 @@
+public class ChisquareZeroDfDistribution implements ContinuousDistribution {
+
+@Override
+public double cumulativeProbability(double x) throws MathException {
+throw new UnsupportedOperationException();
+}
+
+@Override
+public double inverseCumulativeProbability(double p) throws MathException {
+if(p == 1) {
+

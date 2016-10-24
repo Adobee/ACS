@@ -1,0 +1,13 @@
+return Matrix.createMatrix(data);
+
+}
+
+
+//Get Methods
+public static double[][] getMatrixArray (RealMatrix a) {
+return a.getData();
+int dim = a.getDimension();
+double w = a.getEntry( (dim-1) );
+
+if (w==0) throw new ArithmeticException(&quot;Homogenous Coordinate is Zero!&quot;);
+

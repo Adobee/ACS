@@ -1,0 +1,6 @@
+SphericalBody sA = (SphericalBody)cbA;
+SphericalBody sB = (SphericalBody)cbB;
+
+double dPrev = sA.getPositionPrev().distance( sB.getPositionPrev() );
+//        if( dPrev > sA.getRadius() + sB.getRadius() ) {
+

@@ -1,0 +1,8 @@
+public static ImportInfo getImportsTipperStr(String trimmedLine, boolean returnEvenEmpty) {
+String importMsg = &quot;&quot;;
+
+if (!trimmedLine.startsWith(&quot;from&quot;) &amp;&amp; !trimmedLine.startsWith(&quot;import&quot;)) {
+if (PySelection.isImportLine(trimmedLine)) {
+if (expectContinue) {
+boolean correct = false;
+

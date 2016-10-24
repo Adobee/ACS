@@ -1,0 +1,11 @@
+colors[ix] = new Color[y];
+
+double[][][] weights = network.getWeights();
+
+double minVal, maxVal, val;
+hexCenters[ix][iy] = new Point(mix+offset, miy);
+
+miy += ry + ry/2;
+
+if(s<shift &amp;&amp; toRight)
+

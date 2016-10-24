@@ -1,0 +1,12 @@
+return BLOCK_SIZE;
+}
+
+@Implementation
+public int getBlockCount() {
+return stat.blockCount;
+}
+
+@Implementation
+public static void registerStats(File path, int blockCount, int freeBlocks, int availableBlocks) {
+registerStats(path.getAbsolutePath(), blockCount, freeBlocks, availableBlocks);
+

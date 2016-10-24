@@ -1,0 +1,7 @@
+public class TupleComparator implements Comparator<ArrayList<Tuple>>{
+LinkedHashMap<Integer, Boolean> sortFields;
+public TupleComparator(LinkedHashMap<Integer, Boolean> sortFields){
+for (Map.Entry<Integer, Boolean> mp : sortFields.entrySet()){
+if (mp.getValue()){
+diff = o1.get(mp.getKey()).compareTo(o2.get(mp.getKey()));
+

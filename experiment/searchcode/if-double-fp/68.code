@@ -1,0 +1,7 @@
+private final double locPerFp;
+
+public Language(final int id, final String name, final double productivityLevel, final double locPerFp){
+this.id = id;
+this.name = name;
+this.productivityLevel = productivityLevel;
+

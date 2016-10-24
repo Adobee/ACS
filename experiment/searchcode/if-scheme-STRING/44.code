@@ -1,0 +1,12 @@
+public class SchemeCondition extends ConditionSub {
+
+String scheme = null;
+
+public SchemeCondition(String scheme) {
+this.scheme = scheme;
+}
+
+@Override
+public boolean check(String URL) {
+if (URL == null) return scheme == null ? true : false;
+

@@ -1,0 +1,9 @@
+* Constructs a ReviewRow object from the data supplied.
+*/
+public Row(String docname, String reviewname, String status, String name)
+public String getAttribute(String name) {
+String value;
+
+if (name.equals(&quot;Document Name&quot;)) {
+value = document_name;
+

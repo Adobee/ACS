@@ -1,0 +1,11 @@
+public AggregatedGrayscaleMeasure(Aggregator aggregator) {
+if (aggregator == null)
+throw new NullPointerException(&quot;aggregator = null&quot;);
+this.aggregator = aggregator;
+double v2 = getTarget().getMembership(element);
+aggregator.addValue(m(v1,v2));
+}
+
+public double combine() {
+return aggregator.getAggregatedValue();
+

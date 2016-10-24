@@ -1,0 +1,6 @@
+public class ClientCompletableFuture<T> extends CompletableFuture<T> {
+private final Consumer<Boolean> sendCancelRequest;
+public synchronized boolean cancel(boolean mayInterruptIfRunning) {
+boolean res = super.cancel(mayInterruptIfRunning);
+if (res) {
+

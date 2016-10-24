@@ -1,0 +1,19 @@
+private double v;
+private static double step=5;
+private double min;
+
+private void fire(){
+fire(v);
+}
+
+public MutableDouble(double d, double minValue){
+public void set(double d){
+d = Math.max(min, d);
+if (v!=d){
+v = d;
+fire();
+}
+}
+
+public double get(){
+

@@ -1,0 +1,10 @@
+package leetcode_30;
+
+public class SymmetricTree {
+public boolean isSymmetric(TreeNode root) {
+return isSymmetric(root.left, root.right);
+}
+
+private boolean isSymmetric(TreeNode a, TreeNode b) {
+if (a == null &amp;&amp; b == null) return true;
+

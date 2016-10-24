@@ -1,0 +1,10 @@
+public DecimalType(Class<?> javaType) {
+this(javaType, true);
+}
+
+public DecimalType(boolean signed) {
+this(BigDecimal.class, signed);
+public DecimalType(Class<?> javaType, BigDecimal minValue, BigDecimal maxValue, boolean signed) {
+super(&quot;decimal&quot;, javaType);
+if (BigDecimal.class.equals(javaType)) {
+

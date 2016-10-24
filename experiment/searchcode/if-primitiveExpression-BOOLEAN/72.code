@@ -1,0 +1,5 @@
+public static Expression makePrimitive(final long val, final TypeReference type) {
+if (TypeAnalysis.isBoolean(type)) {
+if (val == 0L) {
+return new PrimitiveExpression(Expression.MYSTERY_OFFSET, Boolean.FALSE);
+

@@ -1,0 +1,13 @@
+protected ArrayDeque<T> cache;
+private int initialSize;
+
+public ResourcesPool(int initialSize) {
+this.initialSize = initialSize;
+protected void fillInitialCache(){
+for (int i = 0; i < initialSize; i++){
+cache.add(createItem());
+}
+}
+
+protected abstract T createItem();
+

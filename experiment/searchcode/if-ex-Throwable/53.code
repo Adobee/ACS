@@ -1,0 +1,11 @@
+public class Exceptions {
+
+/**
+* 将CheckedException转换为UncheckedException.
+*/
+public static RuntimeException unchecked(Throwable ex) {
+if (ex instanceof RuntimeException) {
+public static String getStackTraceAsString(Throwable ex) {
+StringWriter stringWriter = new StringWriter();
+ex.printStackTrace(new PrintWriter(stringWriter));
+

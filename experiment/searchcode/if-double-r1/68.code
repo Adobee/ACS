@@ -1,0 +1,10 @@
+Scanner s = new Scanner(System.in);
+
+double A, B, C, DELTA, R1, R2;
+
+A = s.nextDouble();
+B = s.nextDouble();
+C = s.nextDouble();
+
+DELTA = (B * B) - (4 * A * C);
+

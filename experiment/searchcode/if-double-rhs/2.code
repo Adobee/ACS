@@ -1,0 +1,11 @@
+hashvalue = tmphashvalue;
+}
+
+public Tuple(Tuple rhs) {
+coords = new double[3];
+coords[0] = rhs.coords[0];
+public boolean greaterThan(Tuple rhs) {
+double rhs_coords[] = rhs.getCoords();
+if (coords[0] > rhs_coords[0])
+return true;
+

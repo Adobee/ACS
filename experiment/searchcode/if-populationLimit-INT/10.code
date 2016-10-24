@@ -1,0 +1,7 @@
+private List<Chromosome> chromosomes;
+
+/** maximal size of the population */
+private int populationLimit;
+public ListPopulation(final List<Chromosome> chromosomes, final int populationLimit) {
+if (chromosomes.size() > populationLimit) {
+

@@ -1,0 +1,10 @@
+public int getNumber(int[] guesses, int[] answers) {
+int upper = guesses[0] + answers[0];
+int lower = guesses[0] - answers[0];
+
+boolean isUpper = true;
+boolean isLower = true;
+
+int currentUpper = 0;
+int currentLower = 0;
+

@@ -1,0 +1,4 @@
+/*   9:    */ import net.minecraft.util.org.apache.commons.lang3.text.translate.LookupTranslator;
+/*  10:    */ import net.minecraft.util.org.apache.commons.lang3.text.translate.NumericEntityUnescaper;
+/*  17: 52 */   public static final CharSequenceTranslator ESCAPE_JAVA = new LookupTranslator(new String[][] { { &quot;\&quot;&quot;, &quot;\\\&quot;&quot; }, { &quot;\\&quot;, &quot;\\\\&quot; } }).with(new CharSequenceTranslator[] { new LookupTranslator(EntityArrays.JAVA_CTRL_CHARS_ESCAPE()) }).with(new CharSequenceTranslator[] { JavaUnicodeEscaper.outsideOf(32, 127) });
+

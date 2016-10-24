@@ -1,0 +1,6 @@
+public OperationCaller getExposedOpCaller() {
+if (exposedOpCaller != null &amp;&amp; exposedOpCaller.eIsProxy()) {
+exposedOpCaller = (OperationCaller)eResolveProxy(oldExposedOpCaller);
+if (exposedOpCaller != oldExposedOpCaller) {
+if (eNotificationRequired())
+

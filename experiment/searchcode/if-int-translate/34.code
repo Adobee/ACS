@@ -1,0 +1,10 @@
+public class SimpleFactoryA extends SimpleFactory {
+@Override
+public Translate getTranslate(int type)
+{
+if( type == 3) return new NewTranslate();
+else return super.getTranslate(type);
+}
+
+}
+

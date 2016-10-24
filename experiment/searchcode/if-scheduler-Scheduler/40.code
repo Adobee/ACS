@@ -1,0 +1,10 @@
+private DotSchedulerFactory () throws SchedulerException {
+
+if(sequentialSchedulerFactory == null) {
+Properties sequentialProperties = new Properties();
+sequentialScheduler = sequentialSchedulerFactory.getScheduler();
+}
+
+if(standardSchedulerFactory == null) {
+Properties standardProperties = new Properties();
+

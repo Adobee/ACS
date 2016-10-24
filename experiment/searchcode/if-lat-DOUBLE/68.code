@@ -1,0 +1,10 @@
+public class CustomNode implements Comparable<CustomNode>{
+int nodeId;
+public CustomNode(double lon, double lat){
+this.lon = lon;
+this.lat = lat;
+public int compareTo(CustomNode o) {
+Double lat2 = lat;
+int i = lat2.compareTo(o.lat);
+if (i != 0) return i;
+

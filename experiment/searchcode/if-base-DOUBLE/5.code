@@ -1,0 +1,9 @@
+package com.leetcode.solution.fourthround;
+
+public class Powxn {
+public double pow(double x, long n) {
+if (n<0) {x=1/x;n=-n;}
+double base=x,rel=1;
+while (n>0) {
+if ((n&amp;1)==1)rel*=base;
+

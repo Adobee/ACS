@@ -1,0 +1,9 @@
+public static PrintableAppendable of(Appendable appendable, boolean printStackTrace) {
+
+Objects.requireNonNull(appendable);
+
+if (appendable instanceof PrintStream) {
+return new PrintableAppendable(new PrintStreamWrapper<>((PrintStream)appendable), printStackTrace);
+}
+else if (appendable instanceof PrintWriter) {
+

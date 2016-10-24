@@ -1,0 +1,7 @@
+final double relativeSymmetryThreshold,
+final double absolutePositivityThreshold) {
+final double[] ltI = lTData[i];
+
+// check diagonal element
+if (ltI[i] <= absolutePositivityThreshold) {
+

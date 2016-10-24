@@ -1,0 +1,7 @@
+IterateContext iterate = (IterateContext) ctx.getAttribute(tag);
+if (iterate == null) {
+IterateContext parentIterate = ctx.peekIterateContext();
+String prop = tag.getPropertyAttr();
+if (!&quot;&quot;.equals(prop)) {
+if (null != parentIterate &amp;&amp; parentIterate.isAllowNext()) {
+

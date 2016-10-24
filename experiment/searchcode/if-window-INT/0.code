@@ -1,0 +1,7 @@
+Map<Character, Integer> window = new HashMap<Character, Integer>();
+int result = 0;
+int windowStart = 0;
+int windowEnd = 0;
+while(windowEnd < s.length()) {
+if(window.containsKey(s.charAt(windowEnd)) &amp;&amp; window.get(s.charAt(windowEnd)) >= windowStart) {
+

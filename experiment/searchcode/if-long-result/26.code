@@ -1,0 +1,9 @@
+public class Problem29 {
+public int divide(int dividend, int divisor) {
+long result = 0;
+long longDividend = dividend;
+boolean negative = false;
+if ((longDividend < 0 &amp;&amp; longDivisor > 0)) {
+negative = true;
+longDividend = ~longDividend + 1;
+

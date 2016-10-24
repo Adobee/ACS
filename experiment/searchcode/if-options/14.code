@@ -1,0 +1,8 @@
+public class MapperThread implements Runnable{
+QueryOptions options;
+public MapperThread(QueryOptions options){
+this.options = options;
+for (int i = options.startingIndex; i < options.endingIndex; i++ ){
+if (options.mapping.get(i) == 1){
+options.newQuery.add(options.originalQuery.get(i));
+

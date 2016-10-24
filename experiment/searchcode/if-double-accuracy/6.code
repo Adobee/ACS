@@ -1,0 +1,9 @@
+* Simple container class for double based values with an accuracy (e.g. depth in meters).
+*/
+public class DoubleAccuracy {
+if (this == object) {
+return true;
+}
+if (!(object instanceof DoubleAccuracy)) {
+return false;
+

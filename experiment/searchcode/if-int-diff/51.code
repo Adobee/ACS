@@ -1,0 +1,6 @@
+int smallestDiff = Integer.MAX_VALUE;
+Arrays.sort(num);
+for (int i = 0; i < num.length - 2; ) {
+smallestDiff = twoSum(num, i+1, target-num[i], smallestDiff);
+if (smallestDiff == 0) break;
+

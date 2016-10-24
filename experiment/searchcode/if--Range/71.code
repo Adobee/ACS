@@ -1,0 +1,8 @@
+Iterator iterator = this.ranges.iterator();
+do {
+if (!iterator.hasNext()) return null;
+} while ((coloredRange = (ColoredRange)iterator.next()).getStart() < l2);
+ColoredRange coloredRange = this.findRangeWith(l2);
+if (coloredRange == null) {
+coloredRange = this.findRange(l2);
+

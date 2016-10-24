@@ -1,0 +1,5 @@
+// this is site while trying to become a master
+final AtomicReference<ElectionContext> electionContext = new AtomicReference<>();
+final CountDownLatch done = new CountDownLatch(1);
+final ElectionContext newContext = new ElectionContext(callback, requiredMasterJoins, clusterService) {
+

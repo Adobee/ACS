@@ -1,0 +1,9 @@
+import org.slf4j.LoggerFactory;
+
+public class RoutingCallbackExecutor implements CallbackExecutor {
+
+private static final Logger LOGGER = LoggerFactory.getLogger(RoutingCallbackExecutor.class);
+private ConcurrentMap<Class<? extends Callback>, CallbackExecutor> route;
+
+private CallbackExecutor defaultExecutor;
+

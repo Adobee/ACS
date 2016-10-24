@@ -1,0 +1,11 @@
+this.blockVar = blockVar;
+}
+
+@Override
+public void assign(Ruby runtime, ThreadContext context, IRubyObject self, Block block) {
+blockVar.assign(runtime, context, self, Helpers.processBlockArgument(runtime, block), Block.NULL_BLOCK, false);
+}
+
+@Override
+public void assign(Ruby runtime, ThreadContext context, IRubyObject self, IRubyObject value1,
+

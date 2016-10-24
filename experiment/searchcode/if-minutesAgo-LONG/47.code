@@ -1,0 +1,8 @@
+return SimpleDateFormat.getTimeInstance(DateFormat.SHORT, Locale.getDefault());
+}
+};
+
+public static String formatFileTime(long time, Context context) {
+String convertedTime = timeInstanceGetter.get().format(convertableDate);
+/*if (currentDate.getYear() == convertableDate.getYear()) {
+

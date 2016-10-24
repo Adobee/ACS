@@ -1,0 +1,13 @@
+assertNull(&quot;the rule FooRule must not be found!&quot;, rs.getRuleByName(&quot;FooRule&quot;));
+}
+
+@Test
+public void testRuleList() {
+RuleSet IUT = new RuleSet();
+
+assertEquals(&quot;Size of RuleSet isn&#39;t zero.&quot;, 0, IUT.size());
+public void testAddExcludePattern() {
+RuleSet ruleSet = new RuleSet();
+ruleSet.addExcludePattern(&quot;*&quot;);
+assertNotNull(&quot;Exclude patterns&quot;, ruleSet.getExcludePatterns());
+

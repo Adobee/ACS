@@ -1,0 +1,10 @@
+for (int gap = 1; gap < chs.length; gap++) {
+for (int i = 0; i < chs.length - gap; i++) {
+if (gap == 1) {
+if (chs[i] == chs[i+gap]) {
+} else {
+helper[i][i+gap] = 1;
+}
+} else {
+if (chs[i] == chs[i+gap]) helper[i][i+gap] = helper[i+1][i+gap-1];
+

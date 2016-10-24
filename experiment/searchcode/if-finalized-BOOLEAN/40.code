@@ -1,0 +1,11 @@
+throw new IllegalStateException(DocDefaults.LIFECYCLE_IN_USE_OR_FINALIZED);
+}
+}
+
+@Override
+public boolean add(String s) {
+if ((!isLifecycleInUse) &amp;&amp; (!isFinalized)) {
+@Override
+public boolean removeAll(Collection<?> c) {
+if ((!isLifecycleInUse) &amp;&amp; (!isFinalized)) {
+

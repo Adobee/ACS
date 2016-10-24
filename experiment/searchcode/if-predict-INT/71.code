@@ -1,0 +1,7 @@
+ExtractContent extractContent = xpathExtractor.extract(hDoc, tdoc, predict.label) ;
+if(extractContent == null) {
+extractContent = defaultExtractor.extract(hDoc, tdoc, predict.label) ;
+private void setPredictTag(Predict predict, Document hdoc){
+if(classifier.isTrusted(predict)) { hdoc.addTag(&quot;content:predict:trust&quot;) ; }
+else { hdoc.addTag(&quot;content:predict:untrust&quot;);}
+

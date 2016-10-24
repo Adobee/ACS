@@ -1,0 +1,7 @@
+double tol1 = tol * Math.abs(x) + ZEPS;
+double tol2 = 2.0 * tol1;
+if (Math.abs(x - xm) <= (tol2 - 0.5 * (b - a))) {
+return new double[]{x, fx};
+}
+if (Math.abs(e) > tol1) {
+

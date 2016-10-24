@@ -1,0 +1,13 @@
+private Container _container;
+private boolean _deleted = false;
+
+
+public DeleteContainerStructure(Container aContainer){
+_container = aContainer;
+}
+
+@Override
+public  boolean execute() {
+
+Object[] groups = _container.getGroups().toArray();
+

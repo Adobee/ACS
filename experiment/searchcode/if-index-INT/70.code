@@ -1,0 +1,15 @@
+if(A.length==0) return 0;
+int index=0;
+for(int i=1; i<A.length; i++)
+{
+if(A[i]!=A[index])
+A[index]=A[i];
+}
+}
+if(index==A.length-1) return A.length;
+index++;
+A[index]=&#39;\0&#39;;
+return index;
+}
+}
+

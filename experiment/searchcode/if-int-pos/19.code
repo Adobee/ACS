@@ -1,0 +1,7 @@
+public boolean movimientoPermitido(int posX, int posY, boolean estadoPosicionFinal){
+if (posY > 7 || posY < 0 || posX > 7 || posX < 0)
+return false;
+else{
+
+if(posX<=this.posX+1 &amp;&amp; posX>=this.posX-1 &amp;&amp; posY<=this.posY+1 &amp;&amp; posY>=this.posY-1)
+

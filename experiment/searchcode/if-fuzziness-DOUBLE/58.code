@@ -1,0 +1,7 @@
+assertThat(Fuzziness.build(randomFrom(options)).asFloat(), equalTo(1f));
+assertThat(Fuzziness.build(randomFrom(options)).asDouble(), equalTo(1d));
+assertThat(Fuzziness.build(randomFrom(options)).asLong(), equalTo(1l));
+String string = randomRealisticUnicodeOfCodepointLength(codePoints);
+if (codePoints <= 2) {
+assertThat(Fuzziness.AUTO.asDistance(string), equalTo(0));
+

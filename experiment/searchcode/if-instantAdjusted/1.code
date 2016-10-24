@@ -1,0 +1,7 @@
+// on or after the transition
+long nextLocal = nextTransition(instantAdjusted);
+if (nextLocal == (instantLocal - offsetLocal)) {
+long prev = previousTransition(instantAdjusted);
+if (prev < instantAdjusted) {
+int offsetPrev = getOffset(prev);
+

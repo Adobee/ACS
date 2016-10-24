@@ -1,0 +1,11 @@
+super(temporaryParent, locationIn);
+
+GenericTypeArgumentList implementation = new GenericTypeArgumentList(this, locationIn.asNew());
+addChild(implementation, this);
+return (GenericTypeArgumentList)getChild(super.getNumDefaultChildren() + 0);
+}
+
+/**
+* Decode the given statement into a {@link ExtendedClass} instance, if
+* possible. If it is not possible, this method returns null.<br>
+

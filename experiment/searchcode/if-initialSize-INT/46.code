@@ -1,0 +1,9 @@
+R.str_long.ltrim(&quot;biglist&quot;, 0);
+int initialSize = R.str_long.llen(&quot;biglist&quot;);
+List<Long> value = R.str_long.lrange(&quot;biglist&quot;, 0, initialSize);
+System.out.println(&quot;llen is &quot; + initialSize + &quot; list size was &quot; + value.size());
+for(int i = 0; i < 100000; ++i)
+{
+R.str_long.lpush(&quot;biglist&quot;, new Long(i));
+if(i % 100 == 0)
+

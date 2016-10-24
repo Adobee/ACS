@@ -1,0 +1,9 @@
+for (int i = 0; i < types.size(); i++) {
+columns.add(null);
+}
+}
+
+private void checkIndex(int columnIndex) throws IndexOutOfBoundsException {
+private void checkFormat(int columnIndex, Class<?> type) throws ColumnFormatException {
+if (!types.get(columnIndex).equals(type)) {
+

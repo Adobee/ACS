@@ -1,0 +1,10 @@
+private volatile long idleTimeMillisForRead;
+private volatile long idleTimeMillisForWrite;
+private volatile long idleTimeMillisForBoth;
+return (int) getIdleTimeInMillis(status) / 1000;
+}
+
+@Override
+public long getIdleTimeInMillis(IdleStatus status) {
+if (status == IdleStatus.BOTH_IDLE) {
+

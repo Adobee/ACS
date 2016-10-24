@@ -1,0 +1,11 @@
+public Object forDatastore(Object value, ConverterSaveContext ctx)
+{
+if (value instanceof DateTimeZone)
+return ((DateTimeZone) value).getID();
+else
+return null;
+}
+
+@Override
+public Object forPojo(Object value, Class<?> fieldType, ConverterLoadContext ctx, Object onPojo)
+

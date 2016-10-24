@@ -1,0 +1,7 @@
+public void setupTooltip(final Component component, final Value value) {
+// Removing old cached tooltips
+final boolean swingComponent = component instanceof JComponent;
+if (tooltipsCache.containsKey(component)) {
+// Clearing Swing tooltip
+if (swingComponent) {
+

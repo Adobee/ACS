@@ -1,0 +1,10 @@
+// sort the optima from best to worst, followed by NaN elements
+int lastNaN = optima.length;
+for (int i = 0; i < lastNaN; ++i) {
+if (Double.isNaN(optima[i])) {
+optima[lastNaN + 1] = Double.NaN;
+}
+}
+Arrays.sort(optima, 0, lastNaN);
+if (goalType == GoalType.MAXIMIZE) {
+

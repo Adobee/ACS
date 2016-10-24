@@ -1,0 +1,8 @@
+public List<AlgebraicEquation<V, F, E>> getEquations() {
+return Collections.unmodifiableList(equations);
+}
+
+public boolean isSolved() {
+for (AlgebraicEquation<V, F, E> eq : equations) {
+if (eq.getRight().accept(new AlgebraicExpressionVisitor<Boolean, V, F, E>() {
+

@@ -1,0 +1,11 @@
+public long duration_in_millis=0;
+public String name=&quot;&quot;;
+
+public Duration(int duration_in_millis,String name)
+{
+this.duration_in_millis=duration_in_millis;
+this.name=name;
+}
+
+public int compareTo(Duration that)
+

@@ -1,0 +1,9 @@
+System.out.println(&quot;Models rebuilt and recompiled.&quot;);
+
+int failures = 0;
+int successes = 0;
+if (objectMakers != null) {
+for (int i = 0; i < objectMakers.length; i++) {
+ObjectMaker maker = objectMakers[i];
+if (maker == null) {
+

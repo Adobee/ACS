@@ -1,0 +1,9 @@
+public void solveNQueens(int[] result, int[] location, int row) {
+if (row == location.length) {
+result[0]++;
+return;
+}
+int[] available = findAvailable(location, row);
+for (int i = 0; i < available.length; i++) {
+if (available[i] == 0) {
+

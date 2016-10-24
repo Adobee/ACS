@@ -1,0 +1,18 @@
+int sum = tree[idx];
+if (idx > 0) {
+int z = idx - (idx &amp; -idx);
+idx--;
+while (idx != z) {
+sum -= tree[idx];
+cumFre -= tree[tIdx];
+}
+bitMask >>= 1;
+}
+if (cumFre != 0)
+return -1;
+else
+return idx;
+}
+
+int findGreatest(int cumFre) {
+

@@ -1,0 +1,10 @@
+public boolean hit(Ray r, double tMin, double tMax, double time,
+HitRecord record)
+{
+double tval;
+double A = p0.x - p1.x;
+double B = p0.y - p1.y;
+double C = p0.z - p1.z;
+
+double D = p0.x - p2.x;
+

@@ -1,0 +1,9 @@
+public class FiltroDuasMascaras extends Filtro implements FiltroLimiarizado {
+
+private Threshold threshold;
+private final ThresholdRange thresholdRange;
+double gradiente = Math.sqrt(Math.pow(gradienteX, 2) + Math.pow(gradienteY, 2));
+
+int novoValor = 0;
+if(gradiente > threshold.getThreshold()) {
+

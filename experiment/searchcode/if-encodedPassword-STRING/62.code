@@ -1,0 +1,13 @@
+public class DefaultPasswordEncoder implements PasswordEncoder {
+
+@Override
+public String encode(CharSequence rawPassword) {
+public boolean matches(CharSequence rawPassword, String encodedPassword) {
+if (rawPassword.toString().equals(encodedPassword))
+return true;
+
+return false;
+}
+
+}
+

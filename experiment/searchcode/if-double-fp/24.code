@@ -1,0 +1,12 @@
+int iv=0;
+double fp;
+if (Math.floor(a/2) * 2 == a) {
+//even numerator df
+fp = L401(a,f,b,iv);
+double al = Math.atan(sa/Math.sqrt(-sa*sa+1));
+double fp = 1-2*al/Math.PI;
+double r=0;
+double c;
+int n;
+if (b!=1) {
+

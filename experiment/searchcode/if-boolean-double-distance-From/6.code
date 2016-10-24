@@ -1,0 +1,9 @@
+public PathNode parent;
+public int x;
+public int y;
+public double distanceFromStart;
+public double heuristicDistanceToGoal;
+public int compareTo(PathNode other) {
+double totalDistanceToGoal = this.distanceFromStart + this.heuristicDistanceToGoal;
+double otherDistanceToGoal = other.distanceFromStart + other.heuristicDistanceToGoal;
+

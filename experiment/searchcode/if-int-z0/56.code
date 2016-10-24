@@ -1,0 +1,6 @@
+String primitive = &quot;int&quot;;
+
+Pattern p1 = Pattern.compile(&quot;([a-zA-Z0-9]+\\.[a-zA-Z0-9\\.]+)&quot;);
+Pattern p2 =
+Pattern.compile(&quot;([a-zA-Z0-9]+\\.[a-zA-Z0-9\\.]+)\\s*<([a-zA-Z0-9]+\\.[a-zA-Z0-9\\.]+)>&quot;);
+

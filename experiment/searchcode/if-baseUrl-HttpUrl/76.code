@@ -1,0 +1,8 @@
+import okhttp3.Cookie;
+import okhttp3.CookieJar;
+import okhttp3.HttpUrl;
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
+.cookieJar(new CookieJar() {
+private final HashMap<HttpUrl, List<Cookie>> cookieStore = new HashMap<>();
+

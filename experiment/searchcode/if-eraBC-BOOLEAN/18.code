@@ -1,0 +1,6 @@
+private void testLocales(final String format, final boolean eraBC) throws Exception {
+
+final Calendar cal= Calendar.getInstance(GMT);
+// ja_JP_JP cannot handle dates before 1868 properly
+if (eraBC &amp;&amp; locale.equals(FastDateParser.JAPANESE_IMPERIAL)) {
+

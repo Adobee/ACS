@@ -1,0 +1,17 @@
+public class Gcd
+{
+public int findGcd(int m, int n)
+{
+if (m == 1 || n == 1)
+return 1;
+
+if (m == n)
+return m;
+
+if (m > n)
+return findGcd(m - n, n);
+else
+return findGcd(m, n - m);
+}
+}
+

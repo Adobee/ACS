@@ -1,0 +1,6 @@
+double [] yValues   = {20.0, 200.0, -10.0, -10.0, 30.0};
+double [] radValues = { 5.0,  20.0,  50.0, 100.0, 10.0};
+Random randomValue = new Random();
+circles[z].setX(randomValue.nextDouble() * 100.0);
+circles[z].setY(randomValue.nextDouble() * 100.0);
+

@@ -1,0 +1,14 @@
+private Image img;
+
+private final HorizontalAlignment align;
+
+private final VerticalAlignment valign;
+
+ImageCell(Row<T> row, float width, Image image, boolean isCalculated) {
+this.align = HorizontalAlignment.LEFT;
+this.valign = VerticalAlignment.TOP;
+}
+
+public void scaleToFit() {
+img = img.scale(getInnerWidth());
+

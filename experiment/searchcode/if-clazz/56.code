@@ -1,0 +1,9 @@
+String hql = &quot;SELECT clazz FROM Clazz clazz WHERE 1 = 1&quot;;
+if(pmenuId != null){
+hql = hql + &quot; AND clazz.clazzMenu.parentClassMenu.id = &quot; + pmenuId;
+}
+if (menuId != null) {
+hql = hql + &quot; AND clazz.clazzMenu.id = &quot; + menuId;
+}
+if (clazzTypeId != null) {
+

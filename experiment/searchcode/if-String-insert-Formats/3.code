@@ -1,0 +1,13 @@
+q = Double.parseDouble((detail[1].split(&quot;=&quot;))[1].trim());
+}
+
+insert(requestedFormats, type, q);
+}
+}
+
+String preferred = select(requestedFormats, supportedFormats);
+environment.with(Rack.HTTP_ACCEPT, preferred);
+}
+
+private void insert(List<Map.Entry<String, Double>> formats, String type, double q) {
+

@@ -1,0 +1,10 @@
+String entry = new String();
+double entryNum;
+int n = scan.nextInt();
+scan.nextLine();
+for (int i = 0; i < n; i++) {
+entryNum = Double.parseDouble(entry.replaceAll(&quot; rad| deg&quot;, &quot;&quot;));
+if (entry.contains(&quot; rad&quot;)) {
+double convertedDeg = convertToDeg(entryNum);
+System.out.printf(&quot;%.6f deg%n&quot;, convertedDeg);
+

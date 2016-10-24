@@ -1,0 +1,11 @@
+private static final double DELTA = 0.000000001;
+public static double[] solve(double a, double b, double c) {
+if (Math.abs(a) < DELTA) {
+return new double[]{-c/b};
+}
+
+
+double D = Math.pow(b, 2)-4*a*c;
+//one decision
+if (Math.abs(D)<DELTA)
+

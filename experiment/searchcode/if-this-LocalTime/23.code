@@ -1,0 +1,11 @@
+@NonNull
+@Override
+public Dialog onCreateDialog(Bundle savedInstanceState) {
+LocalTime time;
+
+if (getArguments() == null) {
+LocalTime localTime = new LocalTime(hourOfDay, minute);
+
+if (minTime != null &amp;&amp; localTime.isBefore(minTime)) {
+localTime = minTime;
+

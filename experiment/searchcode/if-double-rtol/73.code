@@ -1,0 +1,12 @@
+private final double rTol;
+private final double thetaTol;
+
+// -- constructors --
+
+public ComplexPolarNear() {
+rTol = 0.000001;
+thetaTol = 0.000001;
+}
+
+public ComplexPolarNear(double rTol, double tTol) {
+

@@ -1,0 +1,7 @@
+protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+int w = _component.style().getIWidth(_component.getInnerWidth());
+if (w > 0) {
+setPreferredWidth(w);
+}
+int h = _component.style().getIHeight(_component.getInnerHeight());
+

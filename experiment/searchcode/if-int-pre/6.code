@@ -1,0 +1,9 @@
+for (int k = 0; k + 1 < pre.length; k++) {
+for (int v = 0; v < n; v++) {
+if (pre[k][v] < 0) pre[k + 1][v] = -1;
+void dfs(int v, int p, int d) {
+pre[0][v] = p;
+depth[v] = d;
+for (int u : vs[v]) if (u != p) {
+dfs(u, v, d + 1);
+

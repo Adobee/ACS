@@ -1,0 +1,11 @@
+return StringUtils.containsIgnoreCase(html, search);
+}
+
+public static  String findString(String body, String startsWith, String upTill) {
+int pos = body.indexOf(startsWith);
+
+if (pos < 0) {
+return &quot;&quot;;
+}
+body = body.substring(pos + startsWith.length(), body.length());
+

@@ -1,0 +1,7 @@
+stockdatavo.setCode(tmp3.split(&quot;=\&quot;&quot;)[0]);
+}else if(i==1){
+stockdatavo.setOpen(Double.parseDouble(tmp2));
+}else if(i==2){
+stockdatavo.setRefclose(Double.parseDouble(tmp2));
+}else if(i==3){
+

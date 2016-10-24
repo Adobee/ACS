@@ -1,0 +1,11 @@
+this.serializer = checkNotNull(serializer);
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+SerializerForType that = (SerializerForType) o;
+
+if (!rawType.equals(that.rawType)) return false;
+if (!serializer.equals(that.serializer)) return false;
+

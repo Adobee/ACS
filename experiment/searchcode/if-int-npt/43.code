@@ -1,0 +1,7 @@
+hql=&quot;SELECT MAX(p.intCon) FROM Perforacion p WHERE p.intervencion.idIntervencion=&quot;+ idIntervencion + &quot;&quot;;
+}else if(tipoIntervencion==2){
+hql=&quot;SELECT MAX(p.intCon) FROM Terminacion p WHERE p.intervencion.idIntervencion=&quot;+ idIntervencion + &quot;&quot;;
+perforacion.setFloatTiempo((double)npt.getTiempo());
+perforacion.setIntCon(npt.getConsecutivo());
+perforacion.setIntProf(npt.getProfundidad());
+

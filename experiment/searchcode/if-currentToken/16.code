@@ -1,0 +1,10 @@
+if (!parseCurrentToken)
+currentToken = strtk.nextToken();
+else
+parseCurrentToken = false;
+
+if (currentToken.equals(&quot;<&quot;)) {
+//Change &quot;<&quot; + &quot;tag&quot; into &quot;<tag&quot; and append to buffer
+currentToken = currentToken + strtk.nextToken();
+if (currentToken.indexOf(&#39;>&#39;) >= 0) {
+

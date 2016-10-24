@@ -1,0 +1,8 @@
+//cache if only capable
+if (canCache(toSerialize)) {
+final Object toCache = toCache(toSerialize, result);
+protected abstract boolean canCache(Object toSerialize);
+
+protected abstract Object toCache(Object toSerialize, Object result);
+}
+

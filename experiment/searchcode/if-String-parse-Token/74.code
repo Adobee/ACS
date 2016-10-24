@@ -1,0 +1,9 @@
+statement.addColon();
+}
+else if ( token instanceof StringToken )
+statement.add( parseLazy( token, tokens ) );
+}
+else if ( token == Token.BRACKET_OPEN )
+{
+statement.add( parseList( token, tokens ) );
+

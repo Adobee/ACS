@@ -1,0 +1,10 @@
+public void rotate(int[][] matrix) {
+int n = matrix.length;
+
+if (n == 0 || n == 1) {
+return;
+}
+
+for (int level = 0; level < (n + 1) / 2; level++) {
+for (int i = level; i < n - level - 1; i++) {
+

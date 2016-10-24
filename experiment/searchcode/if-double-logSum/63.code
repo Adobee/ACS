@@ -1,0 +1,10 @@
+package utility;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class LogSum {
+
+public static double addLogSummand(double logA, double logB){
+if(Double.NEGATIVE_INFINITY == logA &amp;&amp; Double.NEGATIVE_INFINITY == logB){
+

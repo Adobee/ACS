@@ -1,0 +1,11 @@
+super( &quot;genres&quot;, null ) ;
+}
+
+public Genres( String TieBreaker ) {
+super( &quot;genres&quot;, TieBreaker ) ;
+}
+
+@Override
+public int compare(Movie movie1, Movie movie2) {
+if ( hasSubComp() &amp;&amp; movie1.getGenres().equals(movie2.getGenres()) ){
+

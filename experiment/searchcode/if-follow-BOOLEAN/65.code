@@ -1,0 +1,12 @@
+* @author charleszq
+*
+*/
+public class PxFollowUserTask extends
+AbstractContextAwareTask<String, Integer, Boolean> {
+
+public PxFollowUserTask(Context ctx) {
+protected Boolean doInBackground(String... params) {
+String userId = params[0];
+boolean follow = true;
+if( params.length > 1 ) {
+

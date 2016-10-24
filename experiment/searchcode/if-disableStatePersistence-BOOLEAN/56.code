@@ -1,0 +1,5 @@
+ClusterBlock clusterBlock = new ClusterBlock(randomInt(), &quot;cluster block #&quot; + randomInt(), randomBoolean(),
+randomBoolean(), randomFrom(RestStatus.values()), levels);
+assertThat(result.retryable(), equalTo(clusterBlock.retryable()));
+assertThat(result.disableStatePersistence(), equalTo(clusterBlock.disableStatePersistence()));
+

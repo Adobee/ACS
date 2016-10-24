@@ -1,0 +1,10 @@
+package domain.index;
+
+import domain.index.spimi.DefaultInvertedIndex;
+
+public class Index {
+public static synchronized DefaultInvertedIndex getInstance(boolean empty) {
+if (index == null) {
+if (empty == true)
+index = new DefaultInvertedIndex();
+

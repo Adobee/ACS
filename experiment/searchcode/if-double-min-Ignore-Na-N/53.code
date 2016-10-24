@@ -1,0 +1,6 @@
+public Matrix mtimes(Ret returnType, boolean ignoreNaN, Matrix matrix) throws MatrixException {
+if (matrix instanceof Matrix2D) {
+return minus(returnType, ignoreNaN, mean(Ret.NEW, dimension, ignoreNaN).getAsDouble(0, 0));
+default:
+throw new IllegalArgumentException(&quot;Invalid dimension : &quot; + dimension);
+

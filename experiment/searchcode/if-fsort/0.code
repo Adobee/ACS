@@ -1,0 +1,14 @@
+public class FixedSortCreationCommand extends Command {
+private Enquiry enquiry = null;
+private FixedSort fsort = null;
+
+public FixedSortCreationCommand(Enquiry enquiry,FixedSort fsort) {
+@Override
+public void execute() {
+if(fsort !=null){
+enquiry.getFixedSorts().add(fsort);
+}
+}
+
+}
+

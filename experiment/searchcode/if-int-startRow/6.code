@@ -1,0 +1,11 @@
+private int start;
+private int end;
+private int startrow;
+
+public int getStartrow() {
+return startrow;
+}
+
+public void setStartrow(int startrow) {
+this.startrow = startrow;
+

@@ -1,0 +1,8 @@
+TreeSet<Long> set_intersection = new TreeSet<Long>();
+for (Long i : set1) {
+if (set2.contains(i)) {
+set_intersection.add(i);
+// iterate through the first set adding only elements not found to be in the second set
+for (Long i : set1) {
+if (!set2.contains(i)) {
+

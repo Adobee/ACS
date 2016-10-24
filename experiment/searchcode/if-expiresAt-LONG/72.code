@@ -1,0 +1,8 @@
+long now = System.currentTimeMillis();
+long expiresAt = now + unit.toMillis(expiresIn);
+
+SharedPreferences sharedPref = getSharedPreferences(appContext);
+SharedPreferences.Editor editor = sharedPref.edit();
+editor.putString(ACCESS_TOKEN, token);
+editor.putLong(EXPIRES_AT, expiresAt);
+

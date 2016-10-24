@@ -1,0 +1,6 @@
+.put(INDEX_NUMBER_OF_REPLICAS_SETTING.getKey(), 0);
+if (internalCluster().getNodeNames().length > 0) {
+String exclude = String.join(&quot;,&quot;, internalCluster().getNodeNames());
+.setWaitForActiveShards(randomBoolean() ? ActiveShardCount.from(1) : ActiveShardCount.ALL)
+.setTimeout(&quot;100ms&quot;)
+

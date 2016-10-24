@@ -1,0 +1,6 @@
+public void postVisit(final T visitable) {
+if (this.visitedNodes.get(visitable) == Boolean.TRUE)
+return;
+this.visitedNodes.put(visitable, Boolean.TRUE);
+this.visitor.postVisit(visitable);
+

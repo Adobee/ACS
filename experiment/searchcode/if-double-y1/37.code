@@ -1,0 +1,6 @@
+public static boolean isInside1(double x1, double y1, double x2, double y2,
+double x3, double y3, double x, double y) {
+double x3, double y3, double x, double y) {
+// 如果三角形的点不是逆时针输入，改变一下顺序
+if (crossProduct(x3 - x1, y3 - y1, x2 - x1, y2 - y1) >= 0) {
+

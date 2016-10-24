@@ -1,0 +1,15 @@
+import org.apache.cayenne.ObjectContext;
+
+/**
+* Defines an interface through which Cayenne a new or existing ObjectContext may be obtained.
+* @return An existing data context, associated with the current request, if possible.
+*/
+ObjectContext currentContext();
+
+/**
+* @return a new ObjectContext
+*/
+ObjectContext newContext();
+
+}
+

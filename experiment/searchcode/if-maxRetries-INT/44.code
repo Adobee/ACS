@@ -1,0 +1,8 @@
+public class RetryWithDelay implements Func1<Observable<? extends Throwable>, Observable<?>> {
+
+private final int maxRetries;
+this(-1, TimeUnit.MILLISECONDS.convert(retryDelay, unit));
+}
+
+public RetryWithDelay(final int maxRetries, final long retryDelay, TimeUnit unit) {
+

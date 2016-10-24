@@ -1,0 +1,8 @@
+public boolean parse(String log, int startPos) {
+this.startPos = log.indexOf(&quot;\&quot; \&quot;&quot;, startPos) + 1;
+if(this.startPos < 0){
+return false;
+}
+this.endPos = log.indexOf(&quot;\&quot; -&quot;, this.startPos);
+if(this.endPos < this.startPos){
+

@@ -1,0 +1,11 @@
+public void reallyDoOneStep()
+{
+isReady=false;
+Action nextAction = actionList.get(0);
+nextAction.reallyDoOneStep();
+if(nextAction.isFinished())
+actionList.remove(0);
+}
+
+}
+

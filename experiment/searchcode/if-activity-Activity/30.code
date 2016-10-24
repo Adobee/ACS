@@ -1,0 +1,15 @@
+public static ActivityManager getScreenManager() {
+if (instance == null) {
+instance = new ActivityManager();
+}
+return instance;
+}
+
+/**
+* 关闭指定的acitivity;
+*
+* @param activity
+*/
+public void popActivity(Activity activity) {
+if (activity != null) {
+

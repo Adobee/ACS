@@ -1,0 +1,10 @@
+return line.startsWith(GNUMakefileConstants.VARIABLE_OVERRIDE) &amp;&amp; line.length() > 8 &amp;&amp; Character.isWhitespace(line.charAt(8));
+}
+
+public static boolean isIf(String line) {
+line = line.trim();
+(line.startsWith(GNUMakefileConstants.AT_CONDITIONAL_IF) &amp;&amp; line.length() > 3 &amp;&amp; Character.isWhitespace(line.charAt(3)));
+}
+
+public static boolean isIfeq(String line) {
+

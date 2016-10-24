@@ -1,0 +1,9 @@
+try
+{
+int colonPos = s.indexOf(&quot;:&quot;);
+if (s.substring(0, 1).equals(&quot;0&quot;))
+throw new IllegalArgumentException(&quot;Too many zeros before hours&quot;);
+throw new IllegalArgumentException(&quot;Hours out of range&quot;);
+myMinutes = Integer.parseInt(s.substring(colonPos + 1));
+if (myMinutes > 59 || myMinutes < 0)
+

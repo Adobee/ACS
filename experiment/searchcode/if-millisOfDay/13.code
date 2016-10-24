@@ -1,0 +1,8 @@
+int millisOfDay = Prefs.getInt(mContext.getString(R.string.key_time_to_start), -1);
+LocalTime localTime;
+if (millisOfDay > 0) {
+localTime = LocalTime.fromMillisOfDay(millisOfDay);
+int millisOfDay = Prefs.getInt(mContext.getString(R.string.key_time_to_start), -1);
+if (millisOfDay > 0) {
+// the time was already set by someone
+

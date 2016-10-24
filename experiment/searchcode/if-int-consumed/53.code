@@ -1,0 +1,6 @@
+logger.info(&quot;Storage consumed report for &quot; + (limitStr == null ? &quot;default limit(100) &quot; : (&quot;limit &quot; + limitStr)));
+if(limitStr == null || limitStr.equals(&quot;&quot;)) limitStr = &quot;100&quot;;
+int limit = Integer.parseInt(limitStr);
+List<StorageConsumedByPV> pvsByStorageConsumed = StorageWithLifetime.getPVSByStorageConsumed(configService);
+if(pvsByStorageConsumed.size() > limit) {
+

@@ -1,0 +1,14 @@
+private int modifier = 0;
+
+public Attribute(int value) {
+this.value = value;
+if(value > 19) modifier = 5;
+else if(value > 17) modifier = 4;
+else if(value > 1) modifier = -4;
+else modifier = -5;
+}
+
+public void setValue(int value) {
+this.value = value;
+if(value > 19) modifier = 5;
+

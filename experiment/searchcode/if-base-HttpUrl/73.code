@@ -1,0 +1,7 @@
+// Print this page&#39;s URL and title.
+Page page = response.body();
+HttpUrl base = response.raw().request().url();
+for (String link : page.links) {
+HttpUrl linkUrl = base.resolve(link);
+if (linkUrl != null &amp;&amp; !fetchedUrls.add(linkUrl)) {
+

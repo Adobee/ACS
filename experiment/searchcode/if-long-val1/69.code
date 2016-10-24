@@ -1,0 +1,11 @@
+private static final CompareOp OP_COMPARE = new CompareOp(&quot;COMPARE&quot;) {
+@Override
+public int ref(long longVal0, long longVal1) {
+if (longVal0 < longVal1) {
+return -1;
+}
+if (longVal0 > longVal1) {
+return 1;
+}
+return 0;
+

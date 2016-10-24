@@ -1,0 +1,4 @@
+public FinalSize generateThumbnail(VFSLeaf file, VFSLeaf thumbnailFile, int maxWidth, int maxHeight) {
+Size finalSize = ImageHelper.scaleImage(file, thumbnailFile, maxWidth, maxHeight);
+if (finalSize != null) { return new FinalSize(finalSize.getWidth(), finalSize.getHeight()); }
+

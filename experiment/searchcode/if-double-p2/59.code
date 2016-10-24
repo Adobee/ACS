@@ -1,0 +1,10 @@
+double x1 = Math.min(p1.getX(), p2.getX());
+double x2 = Math.min(o.p1.getX(), o.p2.getX());
+if(x1 == x2){
+double y1 = Math.min(p1.getY(), p2.getY());
+double minX = Math.min(p1.getX(), p2.getX());
+if(p.getX() < minX || p.getX() > maxX){
+return false;
+}
+double rise = p2.getY()-p1.getY();
+

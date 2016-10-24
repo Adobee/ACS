@@ -1,0 +1,9 @@
+/** The blocking server. */
+private final boolean blockingServer;
+
+/** The compression. */
+final boolean compression;
+this.workerCount = componentSettings.getAsInt(&quot;worker_count&quot;, Runtime.getRuntime().availableProcessors() * 2);
+this.blockingServer = settings.getAsBoolean(&quot;http.blocking_server&quot;,
+settings.getAsBoolean(TCP_BLOCKING_SERVER, settings.getAsBoolean(TCP_BLOCKING, false)));
+

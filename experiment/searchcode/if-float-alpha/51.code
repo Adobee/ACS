@@ -1,0 +1,14 @@
+public class AlphaRectangle extends Rectangle {
+
+private float mMaxAlpha = 1;
+
+
+public AlphaRectangle(float pX, float pY, float pWidth, float pHeight, VertexBufferObjectManager pVbom) {
+this.mMaxAlpha = pMaxAlpha;
+}
+
+
+@Override
+public void setAlpha(float pAlpha) {
+if(pAlpha <= mMaxAlpha) {
+

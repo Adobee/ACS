@@ -1,0 +1,12 @@
+public class DiscreteMapper implements ValueMapper {
+
+private Map valueMap;
+
+public DiscreteMapper(Map valueMap) {
+this.setValueMap(valueMap);
+public void setValueMap(Map valueMap) {this.valueMap = valueMap;}
+
+
+public Object getRangeValue(Object domainValue) {
+if (valueMap == null) {
+

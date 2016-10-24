@@ -1,0 +1,8 @@
+double totalWeight = 0;
+for(Type e: signal.getEvents()) {
+totalWeight += e.getBoostWeight();
+if(Math.round(runEvent(e)) != 1) {
+for(Type e: background.getEvents()) {
+totalWeight += e.getBoostWeight();
+if(Math.round(runEvent(e)) != 0) {
+

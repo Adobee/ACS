@@ -1,0 +1,7 @@
+import net.hetimatan.util.http.HttpObject;
+
+public class KyoroDatagramImpl extends KyoroDatagram {
+byte[] addr = HttpObject.ip2Address(ip);
+int port = HttpObject.bToPort(ip, addr.length);
+InetSocketAddress addrO =
+

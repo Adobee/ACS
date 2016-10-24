@@ -1,0 +1,14 @@
+Object ret = null;
+skipWhiteSpace();
+
+if (c == &#39;&quot;&#39;) {
+next();
+ret = string();
+} else if (c == &#39;[&#39;) {
+next();
+ret = array();
+} else if (c == &#39;]&#39;) {
+ret = ARRAY_END;
+} else if (c == &#39;,&#39;) {
+ret = COMMA;
+

@@ -1,0 +1,9 @@
+public Object convertValue(Map context, Object value, Class toType) {
+if (toType.isEnum()) {
+logger.debug(&quot;&quot; + toType.getSuperclass());
+logger.debug(&quot;convertValue: &quot; + value + &quot; => &quot; + toType);
+if (value == null) {
+return null;
+}
+if (value instanceof String[]) {
+

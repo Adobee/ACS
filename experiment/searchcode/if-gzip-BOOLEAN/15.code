@@ -1,0 +1,7 @@
+final static Logger log = Logger.getLogger(GzipManager.class.getName());
+
+public static boolean isGzipSupported (HttpServletRequest request) {
+boolean gzipSupported = ((encodings != null) &amp;&amp; (encodings.indexOf(&quot;gzip&quot;) != -1));
+if (gzipSupported) {
+log.info(&quot;Encoding &#39;gzip&#39; supported.&quot;);
+

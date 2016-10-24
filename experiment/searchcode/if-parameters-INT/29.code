@@ -1,0 +1,16 @@
+if (!(o instanceof CPHVEKeyParameters))
+return false;
+CPHVEKeyParameters that = (CPHVEKeyParameters) o;
+
+if (parameters != null ? !parameters.equals(that.parameters)
+return false;
+
+return true;
+}
+
+@Override
+public int hashCode() {
+return parameters != null ? parameters.hashCode() : 0;
+}
+}
+

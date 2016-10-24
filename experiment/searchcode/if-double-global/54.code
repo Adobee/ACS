@@ -1,0 +1,12 @@
+package svg.path;
+
+public class LineTo extends PathElement {
+
+public LineTo(double x, double y, boolean relative) {
+this.next().makeAbsolute(this.x, this.y);
+}
+
+public String toCamm(double globalScale) {
+String res = &quot;PD%x%y;&quot;;
+res = res.replaceAll(&quot;%x&quot;, this.fNumber(x, globalScale));
+

@@ -1,0 +1,10 @@
+* limitations under the License.
+*/
+package com.serjltt.moshi.adapters;
+
+import com.squareup.moshi.JsonAdapter;
+import com.squareup.moshi.JsonReader;
+@Override public JsonAdapter<?> create(Type type, Set<? extends Annotation> annotations,
+Moshi moshi) {
+if (hasAnnotation(annotations, FirstElement.class) &amp;&amp; annotations.size() == 1) {
+

@@ -1,0 +1,11 @@
+} catch (ClassCastException cce) {
+
+final int m = pivot.length;
+if (b.getDimension() != m) {
+throw new SingularMatrixException();
+}
+
+final int nColB = b.getColumnDimension();
+
+// Apply permutations to b
+

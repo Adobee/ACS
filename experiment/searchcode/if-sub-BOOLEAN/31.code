@@ -1,0 +1,11 @@
+public ConditionSubType(String... subTypes) {
+this.subTypes = subTypes;
+}
+
+@Override
+public boolean evaluate(Card target) {
+if (subTypes.length == 0) {
+return false;
+}
+for (String subType : subTypes) {
+

@@ -1,0 +1,16 @@
+*  - Create redundant buckets in a known location
+*  - move primaries to the appropriate member.
+*
+*  Note that unlike other directors, this director performs all the work in
+satisfyRedundancyDirector.nextStep();
+}
+
+if(this.movePrimaries) {
+movePrimariesDirector.nextStep();
+}
+
+return false;
+}
+
+}
+

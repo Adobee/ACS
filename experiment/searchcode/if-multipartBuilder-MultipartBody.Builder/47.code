@@ -1,0 +1,8 @@
+OkHttpClient okHttpClient = getUnsafeOkHttpClient();
+
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder()
+File file = new File(picPath.getPath());
+Config.resizeImageFile(file);
+
+multipartBuilder.addFormDataPart(&quot;id&quot;, obj.getId())
+

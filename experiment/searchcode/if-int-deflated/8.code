@@ -1,0 +1,6 @@
+while (true) {
+int offset = SshSpecification.OPTIMIZATION_SPACE;
+ByteBuffer deflated = ByteBuffer.allocate(BUFFER_SIZE);
+deflated.position(offset);
+int c = deflater.deflate(deflated.array(), deflated.position(), deflated.remaining(), Deflater.SYNC_FLUSH);
+

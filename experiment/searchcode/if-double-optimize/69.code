@@ -1,0 +1,9 @@
+// string will not compile if it is invalid Java.  It makes the opt form
+// valid java.
+optimize(&quot;int&quot;,
+&quot;int j = 1;&quot;,
+&quot;if (b) {&quot;,
+public void testIfOptimizations() throws Exception {
+optimize(&quot;int&quot;, &quot;if (true) return 1; return 0;&quot;).into(&quot;return 1;&quot;);
+optimize(&quot;int&quot;, &quot;if (false) return 1; return 0;&quot;).into(&quot;return 0;&quot;);
+

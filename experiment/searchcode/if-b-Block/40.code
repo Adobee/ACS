@@ -1,0 +1,8 @@
+public static void growLichen(World world, int blockX, int blockY, int blockZ, int offsetY, int frequency, Random random)
+{
+if (random.nextInt(frequency) == 0 &amp;&amp; world.isAirBlock(blockX - 1, blockY + offsetY, blockZ))
+world.setBlockAndMetadata(blockX - 1, blockY + offsetY, blockZ, Block.lichen.blockID, 8);
+}
+
+if (random.nextInt(frequency) == 0 &amp;&amp; world.isAirBlock(blockX + 1, blockY + offsetY, blockZ))
+

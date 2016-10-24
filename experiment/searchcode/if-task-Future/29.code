@@ -1,0 +1,8 @@
+FutureTask<?> old = this.tasks.putIfAbsent(key, futureTask);
+if (old == null) {
+if (executor != null) {
+public boolean taskIsDone(K key) {
+FutureTask<?> futureTask = tasks.get(key);
+if (futureTask != null) {
+return futureTask.isDone();
+

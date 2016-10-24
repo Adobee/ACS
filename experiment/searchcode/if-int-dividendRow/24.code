@@ -1,0 +1,6 @@
+for (int i = 0; i < getNumArtificialVariables(); i++) {
+int col = i + getArtificialVariableOffset();
+if (getBasicRow(col) == null) {
+protected void divideRow(final int dividendRow, final double divisor) {
+for (int j = 0; j < getWidth(); j++) {
+

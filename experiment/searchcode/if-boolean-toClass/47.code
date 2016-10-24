@@ -1,0 +1,8 @@
+return BOOLEAN_CONVERTER.canConvert(classToCheck);
+}
+
+public Object convert(String value, Class<?> toClass) {
+if (String.class == toClass) return &quot;&quot;.equals(value) ? null : value;
+if (boolean.class == toClass) return Boolean.valueOf(value);
+if (byte.class == toClass) return Byte.valueOf(value);
+

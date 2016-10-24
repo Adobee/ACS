@@ -1,0 +1,10 @@
+highlightFilters.remove();
+}
+
+@Override void flatten(Query sourceQuery, Collection<Query> flatQueries) {
+if (sourceQuery instanceof DisjunctionMaxQuery) {
+flatten(query, flatQueries);
+}
+} else if (sourceQuery instanceof SpanTermQuery) {
+TermQuery termQuery = new TermQuery(((SpanTermQuery) sourceQuery).getTerm());
+

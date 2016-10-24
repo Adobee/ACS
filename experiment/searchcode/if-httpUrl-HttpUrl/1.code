@@ -1,0 +1,14 @@
+Intent intent = new Intent();
+if(StringUtils.isBlank(httpUrl)){
+return;
+}
+intent.putExtra(&quot;httpUrl&quot;, httpUrl);
+if(httpUrl.contains(&quot;jpg&quot;)||httpUrl.contains(&quot;png&quot;)){
+intent.setClass(context, MyImageActivity.class);
+}else if(httpUrl.contains(&quot;mp4&quot;)){
+intent.setClass(context, AyVideoCompoe.class);
+}
+context.startActivity(intent);
+}
+}
+

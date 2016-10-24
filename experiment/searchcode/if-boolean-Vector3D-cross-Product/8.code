@@ -1,0 +1,10 @@
+public boolean equals(Object o) {
+if (o instanceof Vector3D) {
+Vector3D p = (Vector3D) o;
+double xD = p.x - x, yD = p.y - y, zD = p.z - z;
+return (u.x * v.x) + (u.y * v.y) + (u.z * v.z);
+}
+
+public static Vector3D crossProduct(Vector3D u, Vector3D v) {
+return new Vector3D((u.y * v.z) - (u.z * v.y), (u.z * v.x)
+

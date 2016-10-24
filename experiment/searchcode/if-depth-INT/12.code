@@ -1,0 +1,9 @@
+
+public class MaximumDepthOfBinaryTree {
+
+public int maxDepth(TreeNode root){
+int depth = 0;
+if(root != null){
+int leftDepth = maxDepth(root.left);
+int rightDepth = maxDepth(root.right);
+

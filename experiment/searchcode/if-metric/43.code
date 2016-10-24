@@ -1,0 +1,12 @@
+import java.util.Queue;
+
+import org.ds.chronos.metrics.Metric;
+import org.ds.chronos.metrics.MetricSummary;
+
+import com.google.common.base.Function;
+private LinkedList<Metric> buffer = new LinkedList<Metric>();
+
+public LinkedList<Metric> apply(Metric metric) {
+buffer.addLast(metric);
+if (buffer.size() > size) {
+

@@ -1,0 +1,6 @@
+* @param inverseCumAccuracy Inverse cumulative probability accuracy.
+* @throws NotStrictlyPositiveException if {@code scale <= 0} or {@code shape <= 0}.
+public ParetoDistribution(double scale, double shape, double inverseCumAccuracy)
+throws NotStrictlyPositiveException {
+this(new Well19937c(), scale, shape, inverseCumAccuracy);
+

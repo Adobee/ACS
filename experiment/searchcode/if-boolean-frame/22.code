@@ -1,0 +1,12 @@
+this.frameNumber = frameNumber;
+this.frame = frame;
+}
+
+@Override
+public boolean equals(Object o) {
+if (o == null || getClass() != o.getClass()) return false;
+
+GotFrame gotFrame = (GotFrame) o;
+
+if (frameNumber != gotFrame.frameNumber) return false;
+

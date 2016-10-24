@@ -1,0 +1,10 @@
+public class Solution026 {
+
+public static void main(String[] args) {
+int maxOrder = 0;
+int temp;
+int number = 1;
+for (int i = 2; i <= 1000; i++) {
+temp = orderOf10In(i);
+if (temp > maxOrder) {
+

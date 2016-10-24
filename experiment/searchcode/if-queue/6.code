@@ -1,0 +1,9 @@
+package def;
+
+public class ArrayQueueADT {
+private int first, last, size;
+private Object[] elements = new Object[5];
+
+private static void ensureCapacity(ArrayQueueADT queue, int capacity) {
+if (capacity <= queue.elements.length) {
+

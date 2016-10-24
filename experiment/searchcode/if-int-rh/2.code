@@ -1,0 +1,11 @@
+public class HeatIndexDisplay implements Observer, DisplayElement{
+private int temperature;
+private int humidity;
+private int pressure;
+
+/**
+* Creates display for Heat Index, receives observable providing data and registers with it
+@Override
+public void update(Observable obs, Object arg) {
+if(obs instanceof WeatherData){
+

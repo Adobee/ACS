@@ -1,0 +1,5 @@
+* Get the default {@link MetadataFieldMapper} to use, if nothing had to be parsed.
+* @param fieldType null if this is the first root mapper on this index, the existing
+// since settings could be modified
+MetadataFieldMapper getDefault(Settings indexSettings, MappedFieldType fieldType, String typeName);
+

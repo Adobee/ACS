@@ -1,0 +1,9 @@
+long bytesToSkip;
+
+public SkipOutputStream(OutputStream innerStream, long toSkip) {
+this.innerStream = innerStream;
+private int skip(int len) {
+long toSkip = Math.min(this.bytesToSkip, len);
+this.bytesToSkip -= toSkip;
+return (int) toSkip;
+

@@ -1,0 +1,9 @@
+Relationship rel = (Relationship)getSession().get(Relationship.class, idRelationship);
+if (rel == null) {
+rel = new Relationship();
+s.delete(s.get(Relationship.class, idRelationship));
+}
+
+@Override
+public boolean isFoundInDatabase(Relationship r) {
+

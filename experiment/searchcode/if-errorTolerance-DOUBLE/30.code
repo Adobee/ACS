@@ -1,0 +1,9 @@
+//private double p = -100, i = 0, d = -190, deadband = .25;
+public double positionRaw = 5.0;
+private double errorTolerance = .05;
+return Math.abs(getActualPosition() - positionRaw) > errorTolerance;
+}
+double prevError = 0, error = 0;
+
+private void bangBangController() {
+

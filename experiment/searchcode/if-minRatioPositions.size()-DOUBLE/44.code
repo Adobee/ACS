@@ -1,0 +1,8 @@
+for(int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) {
+final double entry = tableau.getEntry(0, i);
+// check if the entry is strictly smaller than the current minimum
+if(minRatioPositions.size() == 0) {
+return null;
+} else if(minRatioPositions.size() > 1) {
+// there&#39;s a degeneracy as indicated by a tie in the minimum ratio test
+

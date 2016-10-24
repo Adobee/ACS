@@ -1,0 +1,11 @@
+public void writeBoolean(boolean value)
+{
+if(value){
+serializeByte.add((char)1);
+}else{
+serializeByte.add((char)0);
+public int readInt()
+{
+if(serializeByte.size() >= 4){
+int intValue = (( serializeByte.get(position) << 24) &amp; 0xff000000 ) |
+

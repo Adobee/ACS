@@ -1,0 +1,7 @@
+@Override
+protected boolean parseMsg(String subject, String body, Data data) {
+if (!subject.equals(&quot;!&quot;)) return false;
+public Field getField(String name) {
+if (name.equals(&quot;ADDR&quot;)) return new MyAddressField();
+if (name.equals(&quot;UNIT&quot;)) return new UnitField(&quot;Units Dispatched:? *(.*)&quot;, true);
+

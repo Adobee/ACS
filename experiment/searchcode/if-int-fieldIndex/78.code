@@ -1,0 +1,12 @@
+import static com.google.common.base.Preconditions.checkArgument;
+
+public class FieldReference
+extends Expression
+{
+private final int fieldIndex;
+
+public FieldReference(int fieldIndex)
+{
+super(Optional.empty());
+checkArgument(fieldIndex >= 0, &quot;fieldIndex must be >= 0&quot;);
+

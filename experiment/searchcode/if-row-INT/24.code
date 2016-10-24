@@ -1,0 +1,14 @@
+public int totalNQueens(int n) {
+
+if (n <= 0) return 0;
+
+WrapperInt res = new WrapperInt();
+void helper(int[] columnForRow, int row, int n, WrapperInt res) {
+
+if (row == n) {
+res.sum++;
+return;
+}
+
+for (int col = 0; col < n; col++) {
+

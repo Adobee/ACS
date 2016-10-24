@@ -1,0 +1,9 @@
+String internalKey = CryptoSerialization.toMD5(url);
+try {
+editor = diskLruCache.edit(internalKey);
+if (editor == null) {
+try {
+snapshot = diskLruCache.get(internalKey);
+if (snapshot == null) {
+return null;
+

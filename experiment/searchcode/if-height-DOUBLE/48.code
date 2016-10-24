@@ -1,0 +1,22 @@
+package gamedemo.model;
+
+public class Stone {
+private double height;
+private double vel;
+private double accel;
+return this.height == 0;
+}
+
+public void update() {
+vel += accel;
+height += vel;
+if (height < 0) {
+height = 0;
+}
+}
+
+public double getHeight() {
+return height;
+}
+}
+

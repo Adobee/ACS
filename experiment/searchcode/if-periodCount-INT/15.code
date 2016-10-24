@@ -1,0 +1,7 @@
+// Добавление периодов в конце главного цикла.
+for (int j = periods.size() - 1; j >= 0; j--) {
+if (!periods.get(j).valueMatch(month)) {        //Если удовлетворяет, то подходящий период увеличивается, и сл. итерация
+int maxCount = periods.get(0).periodCount;
+for (int i = 1; i < periods.size() - 1; i++) {
+if (maxCount < periods.get(i).periodCount) {
+

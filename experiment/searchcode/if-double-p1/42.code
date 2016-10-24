@@ -1,0 +1,5 @@
+public void line(P p1, P p2) { line(p1.x, p1.y, p2.x, p2.y); }
+public void line(double x, double y, P p2) { line(x, y, p2.x, p2.y); }
+public void line(P p1, double x, double y) { line(p1.x, p1.y, x, y); }
+public void line(double x1, double y1, double x2, double y2) {
+

@@ -1,0 +1,13 @@
+import lombok.Data;
+
+public class ContinuousList<Continuous> extends LinkedList<Continuous> {
+
+private static final long serialVersionUID = -3296371477542679017L;
+public boolean isConsecutive() {
+
+if (this.size() <= 1) {
+return true;
+}
+
+for (int i = 0; i < this.size(); i++) {
+

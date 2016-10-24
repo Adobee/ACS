@@ -1,0 +1,16 @@
+private final int period;
+private double[] table;
+private int i;
+
+public CachedSampler(final int period, final Distribution distribution) {
+for (int i = 0; i < period; ++i)
+this.table[i] = distribution.sample();
+}
+
+public double next() {
+if (i >= period)
+i = 0;
+return table[i++];
+}
+}
+

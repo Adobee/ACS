@@ -1,0 +1,11 @@
+System.out.println(&quot;drop> &quot;+data);
+if (data instanceof PlotDataReference) {
+PlotDataReference plotDataReference = (PlotDataReference) data;
+plot.getMultiPlotDataManager().addPlotDataItem(plotDataReference);
+return true;
+} catch (PlotException e) {
+plot.handleException(e);
+}
+
+} else if (data instanceof PlotDataItem) {
+

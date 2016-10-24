@@ -1,0 +1,9 @@
+private PriorityQueue<Words> topEntries;
+
+public TopEntries (PriorityQueue<Words> topEntries, int maxTopEntries) {
+if (maxTopEntries <= 0 ) {
+MAX_TOP_ENTRIES = maxTopEntries;
+
+if (topEntries == null || topEntries.size() > MAX_TOP_ENTRIES) {
+this.topEntries = new PriorityQueue<>(MAX_TOP_ENTRIES);
+

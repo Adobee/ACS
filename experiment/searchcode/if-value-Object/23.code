@@ -1,0 +1,7 @@
+public static ValueObjectFloat newOrNull(Float value) {
+if (value != null) {
+return new ValueObjectFloat(value);
+public static ValueObjectFloat newOrNull(String value) {
+if (value != null &amp;&amp; value.length() > 0) {
+return new ValueObjectFloat(Float.valueOf(value));
+

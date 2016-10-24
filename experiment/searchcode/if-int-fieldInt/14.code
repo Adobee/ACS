@@ -1,0 +1,10 @@
+import newtonERP.orm.field.type.FieldInt;
+import newtonERP.viewers.viewerData.BaseViewerData;
+
+/**
+* Représente un muret
+Vector<Field<?>> fieldList = new Vector<Field<?>>();
+
+FieldInt pKwallTypeID = new FieldInt(&quot;Numéro&quot;, getPrimaryKeyName());
+fieldList.add(pKwallTypeID);
+

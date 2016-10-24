@@ -1,0 +1,8 @@
+double BRG; // Best Relative Gap , suggestion  = 1.0E-04
+int maxIterations;
+public boolean shouldStop(stoppingCriteria obtained){
+if(obtained==null) return false;//Zeroth step
+return(BRG>obtained.BRG) || (maxIterations<obtained.maxIterations);
+}
+}
+

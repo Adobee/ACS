@@ -1,0 +1,8 @@
+public class OrderValidator implements Validator {
+
+private final static String PROCESSED = &quot;processed&quot;;
+ValidationUtils.rejectIfEmpty(errors, &quot;orderdata&quot;, &quot;acsorders.orderdata.empty&quot;);
+ValidationUtils.rejectIfEmpty(errors, PROCESSED, &quot;acsorders.processed.empty&quot;);
+
+if (processed < 1)
+

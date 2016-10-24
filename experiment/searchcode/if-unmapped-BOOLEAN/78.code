@@ -1,0 +1,13 @@
+public void setParent(String aParent) {
+iParent = aParent;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+
+UnmappedObjectEntity that = (UnmappedObjectEntity) o;
+
+if (iAnalysisId != that.iAnalysisId) return false;
+

@@ -1,0 +1,18 @@
+/** 缓存达到多少行时保存到文件 */
+private int CacheMaxSize;
+/** 文件达到多少行时分文件 */
+private int MaxFileLineSize;
+/** 文件日期格式 */
+private static SimpleDateFormat FileNameDateStringFormat = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);
+int rd = (int) (CacheMaxSize * 0.05);
+if (rd < 2) {
+return CacheMaxSize;
+}
+return CacheMaxSize + random.nextInt() % rd;
+}
+
+
+
+
+}
+

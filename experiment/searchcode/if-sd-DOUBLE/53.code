@@ -1,0 +1,17 @@
+return data;
+}
+
+Double mean;
+Double sem;
+Double sd;
+
+public DataPoint(double value) {
+data = new ArrayList<Double>();
+sem = Statistic.sem(data);
+return sem;
+}
+
+public Double getSd() {
+if (sd == null)
+sd  = Statistic.sd(data);
+

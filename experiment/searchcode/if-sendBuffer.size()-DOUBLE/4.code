@@ -1,0 +1,10 @@
+public static final int SIZEOF_DOUBLE = 8;
+
+static final int BUFFER_CACHE_SIZE = 128;
+
+static SendBuffer[] cache = new SendBuffer[BUFFER_CACHE_SIZE];
+* Static method to get a sendbuffer out of the cache
+*/
+synchronized static SendBuffer get() {
+if (cacheSize > 0) {
+

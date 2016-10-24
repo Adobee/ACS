@@ -1,0 +1,9 @@
+* structured manor to allow comparison and suppression of duplicate
+* error messages.
+*/
+public class UnmappedField extends InvalidAttributeValueException {
+@Override
+public boolean equals(Object object) {
+if (object == null ||
+!(object instanceof UnmappedField)) {
+

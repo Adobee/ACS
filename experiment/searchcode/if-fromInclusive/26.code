@@ -1,0 +1,11 @@
+private final List<T> content;
+private final int fromInclusive;
+private final int toExclusive;
+
+protected AbstractSynchronizerAction(final List<T> content, final int chunkSize, final int fromInclusive, final int toExclusive) {
+final long startTimestamp = System.currentTimeMillis();
+
+if ((this.toExclusive - this.fromInclusive) <= this.chunkSize) {
+try {
+// compute directly
+

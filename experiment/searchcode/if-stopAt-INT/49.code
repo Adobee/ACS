@@ -1,0 +1,7 @@
+public double learn(List<Layer> bottomBatch, List<Layer> topBatch, int stopAt)
+{
+if (topBatch != null &amp;&amp; !topBatch.isEmpty() &amp;&amp; topBatch.size() != bottomBatch.size())
+throw new IllegalArgumentException(&quot;TopBatch != BottomBatch&quot;);
+
+if (stopAt < 0 || stopAt > stackedRBM.innerRBMs.size())
+

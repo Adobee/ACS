@@ -1,0 +1,7 @@
+public static String formatDecimal(double d, String format, String emptyFormat, Locale loc) {
+if (loc==null) {
+loc = Locale.getDefault();
+}
+if( d==0.0 &amp;&amp; !StringUtil.isEmpty(emptyFormat) ) {
+return emptyFormat;
+

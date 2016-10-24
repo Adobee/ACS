@@ -1,0 +1,14 @@
+int endValue, Color startRGBColor, Color endRGBColor,
+int transparency) {
+Color color = null;
+
+
+if (startValue > endValue) {
+int tmp = endValue;
+endValue = startValue;
+startValue = tmp;
+}
+
+
+if (value >= startValue &amp;&amp; value <= endValue) {
+

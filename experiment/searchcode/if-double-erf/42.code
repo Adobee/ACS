@@ -1,0 +1,9 @@
+*  Execution:    java ErrorFunction z
+*
+*  Implements the Gauss error function.
+*
+*              erf(z) = 2 / sqrt(pi) * integral(exp(-t*t), t = 0..z)
+// from Chebyshev fitting formula for erf(z) from Numerical Recipes, 6.2
+public static double erf(double z) {
+double t = 1.0 / (1.0 + 0.5 * Math.abs(z));
+

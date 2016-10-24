@@ -1,0 +1,9 @@
+private static int helper(int[] colForRow, int row, int n){
+if(row == n){
+return 1;
+}
+int res = 0;
+for(int i = 0;i<n;i++){
+colForRow[row] = i;
+if(isValid(colForRow,row)){
+

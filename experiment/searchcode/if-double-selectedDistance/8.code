@@ -1,0 +1,13 @@
+private int k;
+
+private double[][] dataTrainingArray;
+private double[] dataTestArray;
+
+public KNNClassifier(List<Alphabet> dataTraining, int k) {
+refreshArray();
+}
+
+public String classify(double[] dataTest) {
+refreshArray();
+this.dataTestArray = dataTest;
+

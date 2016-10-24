@@ -1,0 +1,9 @@
+long diff_s = this.arrival_s - o.arrival_s;
+long diff_us = this.arrival_us - o.arrival_us;
+
+if (diff_s == 0) {
+long diff_s = this.arrival_s - previous.arrival_s;
+long diff_us = this.arrival_us - previous.arrival_us;
+
+if (diff_s == 0) {
+

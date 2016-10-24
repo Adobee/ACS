@@ -1,0 +1,9 @@
+block.matched = true;
+
+// Walk left
+for (int col = block.colIndex - 1; col >= 0; --col) {
+if (doBlocksMatch(block, blocks[block.rowIndex][col])) {
+for (int i = blockRow.length - 1; i >= 0; --i) {
+if (BlockType.EMPTY.equals(blockRow[i].type)) {
+for (int j = i - 1; j >= 0; --j) {
+

@@ -1,0 +1,12 @@
+public ContinuousPerformanceParameters getParameters() {
+return this.parameters;
+}
+
+@Override
+public boolean equals(Object o) {
+if (o == null || getClass() != o.getClass()) return false;
+
+ContinuousPerformance that = (ContinuousPerformance) o;
+
+if (parameters != null ? !parameters.equals(that.parameters) : that.parameters != null) return false;
+

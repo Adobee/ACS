@@ -1,0 +1,7 @@
+import org.hibernate.Transaction;
+public class LoggingIn {
+
+public boolean authenticate(String recepNo , String username){
+Receptionist recp = getRecepNo(recepNo);
+if(recp != null &amp;&amp; recp.getRecepNo().equals(recepNo) &amp;&amp; recp.getFirstName().equals(username)){
+

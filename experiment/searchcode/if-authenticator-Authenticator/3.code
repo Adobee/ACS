@@ -1,0 +1,12 @@
+@EService
+public class JourweeAuthenticatorService extends Service
+{
+private static JourweeAuthenticator jAccountAuthenticator = null;
+JourweeAuthenticator authenticator = this.getAuthenticator();
+return authenticator.getIBinder();
+}
+
+private JourweeAuthenticator getAuthenticator()
+{
+if (jAccountAuthenticator == null)
+

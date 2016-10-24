@@ -1,0 +1,9 @@
+a0 = 0;
+}
+if (a0colour == WHITE) {
+int whiteRun = readWhiteRunLength();
+private void writeRunFromTo(final int blockRow, final int startColumn, final int endColumn, final int colour) {
+int start = startColumn;
+if (start < 0) {
+start = 0;
+

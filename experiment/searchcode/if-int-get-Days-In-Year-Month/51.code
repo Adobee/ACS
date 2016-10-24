@@ -1,0 +1,13 @@
+private static int getResult(int year, int month, int day) {
+if(month<1 || month > 12){
+return -1;
+}
+
+int[] days = getMonths(year);
+if(day > days[month]){
+return -1;
+}
+
+int result = 0;
+for(int i=1; i<month; i++){
+

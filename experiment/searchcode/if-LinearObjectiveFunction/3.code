@@ -1,0 +1,5 @@
+import org.apache.commons.math.optimization.linear.LinearObjectiveFunction;
+import org.apache.commons.math.optimization.linear.Relationship;
+System.out.println(&quot;test00&quot;);
+LinearObjectiveFunction f = new LinearObjectiveFunction(new double[] {1, 3, 3}, 0);
+

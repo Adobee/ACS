@@ -1,0 +1,13 @@
+return this.select(0);
+}
+
+public T[] select(int startPos) {
+
+if(startPos == this.list.length) {
+return this.list;
+}
+
+T smallest = this.list[startPos];
+int smallestPos = startPos;
+for(int i = startPos; i < this.list.length-1; i++) {
+

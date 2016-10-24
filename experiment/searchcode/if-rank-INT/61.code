@@ -1,0 +1,13 @@
+
+public abstract class RankTile extends Tile {
+
+protected static int maxRank = 9;
+protected int rank;
+
+RankTile(int rank) {
+this.rank = rank;
+}
+
+public boolean matches(Tile otherTile) {
+if(!super.matches(otherTile)) {
+

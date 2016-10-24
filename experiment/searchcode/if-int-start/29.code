@@ -1,0 +1,8 @@
+void fillSpiral(int [][] matrix, int startX, int startY, int size, int value){
+if(size == 0)
+return;
+if(size == 1)
+matrix[startX][startY] = value;
+
+for (int x = startX; x<size-1+startX; ++x)
+

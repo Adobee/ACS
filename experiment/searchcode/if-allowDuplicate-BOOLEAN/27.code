@@ -1,0 +1,15 @@
+class BTreeHead implements BTreeConstants
+{
+
+int version;
+boolean allowDuplicate;
+int keySize;
+boolean hasValues;
+int valueSize;
+int rootNodeId;
+void readV0( DataInput in ) throws IOException
+{
+allowDuplicate = in.readBoolean( );
+keySize = in.readShort( );
+hasValues = in.readBoolean( );
+

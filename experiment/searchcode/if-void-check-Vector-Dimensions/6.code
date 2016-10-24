@@ -1,0 +1,10 @@
+Vector d = new DenseVector(DIMENSIONS);
+Vector s = new RandomAccessSparseVector(DIMENSIONS, DIMENSIONS);
+checkEquals(space, d, d);
+checkNotEquals(space, s, d, i >= limit);
+}
+}
+
+private void checkEquals(SimplexSpace<String> space, Vector v1, Vector v2) {
+v1.set(0, 1.1);
+

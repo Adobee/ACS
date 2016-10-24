@@ -1,0 +1,12 @@
+*           realPart+i*imaginaryPart
+*/
+private Double realPart,
+imaginaryPart;
+
+/**
+* This constructor with no arguments produces the
+public Double argument() {
+if(imaginaryPart==0.0) {
+if(realPart>=0.0) return 0.0;
+else return Math.PI;
+

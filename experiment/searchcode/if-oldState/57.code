@@ -1,0 +1,11 @@
+oldState = this.state;
+if (!oldState.isUnsubscribed) {
+} else {
+return;
+throw new IllegalArgumentException(&quot;Subscription can not be null&quot;);
+}
+State oldState;
+do {
+oldState = this.state;
+if (oldState.isUnsubscribed) {
+

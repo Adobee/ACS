@@ -1,0 +1,9 @@
+public static <T> T multiple(final Ring<T> ring, final T a, final long i)
+{
+T res = ring.zero();
+for (long j = Long.highestOneBit(i); j > 0L; j >>= 1L)
+for (long j = Long.highestOneBit(i); j > 0L; j >>= 1L)
+{
+res = ring.multiply(res, res);
+if ((i &amp; j) != 0L)
+

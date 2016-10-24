@@ -1,0 +1,10 @@
+* @return the row that the variable is basic in. null if the column is not
+*         basic
+*/
+private Integer getBasicRow(int col) {
+public void discardArtificialVariables() {
+if (numArtificialVariables == 0) {
+return;
+}
+int width = getWidth() - numArtificialVariables - 1;
+

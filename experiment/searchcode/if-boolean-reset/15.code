@@ -1,0 +1,13 @@
+Whether or not the ticker will reset after its allow methods passed.
+*/
+private boolean resetAfterAllow = true;
+
+public BasicTicker(int allowAmount) {
+public void reset() {
+ticks = 0;
+}
+
+@Override
+public boolean allow() {
+if (getTickCount() >= allowAmount()) {
+

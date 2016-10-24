@@ -1,0 +1,10 @@
+result = PRIME * result + ((value == null) ? 0 : value.hashCode());
+return result;
+}
+
+public boolean equals(Object obj) {
+if ( this == obj ) return true;
+if ( getClass() != obj.getClass() ) return false;
+final InsertedObject other = (InsertedObject) obj;
+if ( value == null ) {
+

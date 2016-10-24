@@ -1,0 +1,11 @@
+public ArrayList<Class<? extends IHhdVhBase>> getVhTypes() {
+return vhTypes;
+}
+
+@Override
+public int getCount() {
+int size = items.size();
+Class itemType = item.getClass();
+int idx = itemTypes.indexOf(itemType);
+Class<? extends IHhdVhBase> vhType = vhTypes.get(idx);
+

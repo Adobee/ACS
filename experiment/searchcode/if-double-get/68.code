@@ -1,0 +1,8 @@
+public static double findPeakResponseParameter(final double x) {
+
+if ((x > 0) &amp;&amp; (x <= 0.39)) {
+// http://stackoverflow.com/questions/5419123/how-to-round-a-float-to-the-nearest-quarter
+float coeff = 100f;
+double nearestValue = (Math.round(x * coeff) / 100.0);
+return (graph.get(nearestValue));
+

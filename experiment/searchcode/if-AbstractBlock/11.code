@@ -1,0 +1,8 @@
+private int blockID = 0;
+private Map<Integer, List<AbstractBlock>> abstractBlocks = new HashMap<Integer, List<AbstractBlock>>();
+AbstractBlock abstractBlock = new AbstractBlock(key, property.getString());
+
+// add to list keyed by block ID
+List<AbstractBlock> list;
+if (abstractBlocks.containsKey(abstractBlock.id)) {
+

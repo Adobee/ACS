@@ -1,0 +1,7 @@
+public static FieldNode create(Point p, int connectivity) {
+FieldNode fn;
+if ( connectivity == Field.CONNECTIVITY_16 )
+fn = new FieldNode(p.x,p.y, 16);
+else if ( connectivity == Field.CONNECTIVITY_4 )
+fn = new FieldNode(p.x, p.y, 4);
+

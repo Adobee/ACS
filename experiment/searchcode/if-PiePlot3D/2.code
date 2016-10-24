@@ -1,0 +1,11 @@
+import java.awt.event.ActionListener;
+
+import javax.swing.Timer;
+
+import org.jfree.chart.plot.PiePlot3D;
+
+public class Rotator extends Timer implements ActionListener {
+
+private PiePlot3D plot;
+private int angle;
+

@@ -1,0 +1,15 @@
+public void fuegeEin(Knoten k) {
+if (kopf == null) {
+this.kopf = this.fuss = k;
+} else {
+this.fuss.nf = k;
+this.fuss = this.fuss.nf;
+while (tmp != null) {
+tmp.gibAus();
+tmp = tmp.nf;
+}
+}
+
+public boolean gleicheKanten() {
+Knoten tmp = this.kopf;
+

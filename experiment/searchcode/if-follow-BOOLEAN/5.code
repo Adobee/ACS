@@ -1,0 +1,10 @@
+public class FollowingCamera extends Camera {
+private Sprite target;
+private boolean followRotation;
+
+public FollowingCamera(Sprite target) {
+this.x = target.getX();
+this.y = target.getY();
+if (followRotation) {
+this.rotation = target.getRotation();
+

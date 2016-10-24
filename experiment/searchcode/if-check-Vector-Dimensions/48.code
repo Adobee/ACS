@@ -1,0 +1,10 @@
+public Vector(double[] data) {
+this.data = data;
+}
+
+public Vector add(Vector otherVector) {
+checkEqualDimension(otherVector);
+private void checkEqualDimension(Vector otherVector) {
+if(otherVector.data.length != data.length) {
+throw new IllegalArgumentException(&quot;Vectors have different Dimensions!&quot;);
+

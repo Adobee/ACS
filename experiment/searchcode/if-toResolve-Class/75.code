@@ -1,0 +1,7 @@
+if (type instanceof Class) {
+final Class<?> clazz = (Class<?>) type;
+if (! clazz.isPrimitive()) return clazz;
+public static Type getGenericSupertype(Type type, Class<?> rawType, Class<?> toResolve) {
+/* Same class/class to resolve? Done */
+if (toResolve == rawType) return type;
+

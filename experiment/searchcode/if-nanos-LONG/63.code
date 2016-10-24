@@ -1,0 +1,8 @@
+private void sleepNanos(long nanos) throws InterruptedException {
+if (Thread.interrupted()) {
+throw new InterruptedException();
+}
+long sleepNanos = wakeNanoTime - nanoTime();
+if (sleepNanos <= 0) {
+return;
+

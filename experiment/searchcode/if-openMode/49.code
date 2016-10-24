@@ -1,0 +1,9 @@
+//File(String path,String openMode);
+
+//public File(String path=&quot;&quot;,String openMode=&quot;rb+&quot;, long bufferSize=BUFFER_SIZE);
+//path=&quot;./root/&quot;+path;
+if(path==&quot;&quot;)
+throw IOException(&quot;文件为空.&quot;);
+m_pFile=fopen(path.c_str(),openMode.c_str());
+if(m_pFile==null)
+

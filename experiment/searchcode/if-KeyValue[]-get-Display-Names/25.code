@@ -1,0 +1,6 @@
+setString(itemStack, Names.NBT.OWNER_NAME, entityPlayer.getDisplayNameString());
+}
+
+public static boolean hasOwner(ItemStack itemStack) {
+return hasTag(itemStack, Names.NBT.DISPLAY, NBTType.COMPOUND) &amp;&amp; getTagCompound(itemStack, Names.NBT.DISPLAY).hasKey(Names.NBT.COLOR, NBTType.INT.ordinal());
+

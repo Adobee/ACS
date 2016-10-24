@@ -1,0 +1,11 @@
+if (!(meta instanceof GlowMetaEnchantedBook)) return;
+
+GlowMetaEnchantedBook book = (GlowMetaEnchantedBook) meta;
+if (book.hasStoredEnchants()) {
+storedEnchants = new HashMap<>(book.storedEnchants);
+}
+}
+
+@Override
+public boolean isApplicable(Material material) {
+

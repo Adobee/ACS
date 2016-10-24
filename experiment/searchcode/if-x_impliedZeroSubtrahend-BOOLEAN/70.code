@@ -1,0 +1,9 @@
+* @param x_impliedZeroSubtrahend  if false, do not check the subtrahend
+*
+* @return true if the dataset is degenerate.
+private boolean isEitherSeriesDegenerate(XYDataset x_dataset,
+boolean x_impliedZeroSubtrahend) {
+
+if (x_impliedZeroSubtrahend) {
+return (x_dataset.getItemCount(0) < 2);
+

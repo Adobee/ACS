@@ -1,0 +1,10 @@
+private boolean askedToStop;
+
+CommandSender(final PircBot bot) {
+commands = new LinkedBlockingDeque<>();
+public void sendRawCommand(final String command) {
+commands.add(sanitizeMessage(command));
+}
+
+public void sendNotice(final String target, final String message) {
+

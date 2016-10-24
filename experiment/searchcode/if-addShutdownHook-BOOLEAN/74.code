@@ -1,0 +1,8 @@
+import java.util.concurrent.atomic.AtomicBoolean;
+
+public final class MoreRuntime {
+private static final Object tasks__GUARD = new Object();
+private static final AtomicBoolean shuttingDown = new AtomicBoolean(false);
+
+public static void onShutdown(Runnable task) {
+

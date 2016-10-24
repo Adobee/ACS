@@ -1,0 +1,12 @@
+public double element;
+public Nod next;
+public Nod prev;
+
+public Nod(double element) {
+current.prev = newNod;
+}
+
+protected void delElement(Nod current) {
+if (size == 1) {
+head = null;
+

@@ -1,0 +1,6 @@
+final int parts = randomUtil.getRandomized(WowConstants.MOUSE_MOVE_STEPS, WowConstants.MOUSE_MOVE_STEP_AMOUNT_RAMDOM);
+for (int step = 1; step <= parts; ++step) {
+if (step < parts) {
+final int stepDeltaX = randomUtil.getRandomized((x - currentX) / (parts - step + 1), WowConstants.MOUSE_MOVE_STEP_RAMDOM);
+final int stepDeltaY = randomUtil.getRandomized((y - currentY) / (parts - step + 1), WowConstants.MOUSE_MOVE_STEP_RAMDOM);
+

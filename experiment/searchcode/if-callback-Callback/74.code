@@ -1,0 +1,7 @@
+for (int i = 0; i < callbacks.length; i++) {
+Callback callback = callbacks[i];
+if (callback instanceof NameCallback) {
+NameCallback nameCallback = (NameCallback) callback;
+nameCallback.setName(userName);
+} else if (callback instanceof PasswordCallback) {
+

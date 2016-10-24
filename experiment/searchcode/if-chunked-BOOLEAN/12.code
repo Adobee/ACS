@@ -1,0 +1,10 @@
+public class HTTP_ChunkedInputStream extends InputStream {
+private boolean end = false;
+private int Chunked = 0;
+private InputStream In;
+public int read() throws IOException {
+if (end) {
+return -1;
+}
+if (Chunked > 0) {
+

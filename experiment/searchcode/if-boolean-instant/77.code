@@ -1,0 +1,7 @@
+setSelectedInstant((TimeInstantT) args.getParcelable(ARG_SELECTED_INSTANT));
+
+if (selectedInstant == null) {
+protected void notifyInstantSelected() {
+if (getActivity() instanceof InstantPickerListener) {
+((InstantPickerListener<TimeInstantT>) getActivity()).onInstantSelected(getPickerId(), getSelectedInstant());
+

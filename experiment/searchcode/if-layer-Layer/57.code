@@ -1,0 +1,8 @@
+* @return Returns the matching layer or DEFAULT_LAYER if none was found.
+*/
+public Layer findLayerWithinPoint(V2 point) {
+for (Layer layer : layers[depth]) {
+if (layer.offset.x <= point.x
+&amp;&amp; layer.offset.x + layer.region.x >= point.x
+&amp;&amp; layer.offset.y <= point.y
+

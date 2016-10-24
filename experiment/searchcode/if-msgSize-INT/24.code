@@ -1,0 +1,13 @@
+private Logger log = Logger.getLogger(RpcDecoder.class);
+
+private Class<?> genericClass;
+
+/**
+* 最大消息的字节数，以保护内存避免溢出。
+*/
+private int msgSize;
+
+public RpcDecoder(Class<?> genericClass, int msgSize) {
+this.genericClass = genericClass;
+this.msgSize = msgSize;
+

@@ -1,0 +1,9 @@
+public static double getEffectiveness(PokemonMonsterType damageType, PokemonMonsterType targetType)
+{
+if(damageType == null) return 0;
+if(targetType == null) return 1;
+if(damageType == normal)
+{
+if(targetType == ghost) return 0;
+else if(targetType == rock || targetType == steel) return 0.5;
+

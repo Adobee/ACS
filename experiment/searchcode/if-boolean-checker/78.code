@@ -1,0 +1,15 @@
+protected SimpleToggles() {
+
+}
+
+public static void reset() {
+toggleChecker = null;
+}
+
+public static boolean isEnabled(String toggleName) {
+return getToggleChecker().getEnabledToggles();
+}
+
+public static ToggleChecker getToggleChecker() {
+if (toggleChecker == null) {
+

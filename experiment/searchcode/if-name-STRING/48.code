@@ -1,0 +1,12 @@
+public String getGivenNames() {
+String result = &quot;&quot;;
+if (givenName != null)
+result += givenName;
+middleName = _middleName;
+}
+
+public String getFullname()
+{
+String fullName = &quot;&quot;;
+if(givenName != null &amp;&amp; givenName != &quot;&quot;)
+

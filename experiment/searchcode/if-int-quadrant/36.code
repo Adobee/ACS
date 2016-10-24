@@ -1,0 +1,9 @@
+public static int width;
+public static int height;
+
+public ArrayList<MapLocation> getPathToQuadrant(int startQuad, int targetQuad) {
+if (startQuad == 1) {
+if (targetQuad == 1) {
+wayPoints.add(MapQuadrantUtils.getMapCornerForQuadrant(1));
+} else if (targetQuad == 2) {
+

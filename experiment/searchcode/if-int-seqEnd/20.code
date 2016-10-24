@@ -1,0 +1,9 @@
+private int seqStart = 0;// 起始顺序号,共8位（不包括校验位）
+private int seqEnd = 0;// 结束顺序号,共8位（不包括校验位）
+
+private CardIdSegment() {
+this.seqStart = Integer.parseInt(seqStart);
+this.seqEnd = Integer.parseInt(seqEnd);
+if (this.seqStart > this.seqEnd) {
+throw new RuntimeException(&quot;开始卡序号大于结束卡序号&quot;);
+

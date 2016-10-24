@@ -1,0 +1,11 @@
+public long currentTime() {
+return System.currentTimeMillis();
+}
+}
+
+abstract class AbstractMonotonicTimestampGenerator implements TimestampGenerator {
+volatile Clock clock = new SystemClock();
+
+protected long computeNext(long last) {
+long millis = last / 1000;
+

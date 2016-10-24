@@ -1,0 +1,11 @@
+int i = 0;
+for (; i < len; i++)
+{
+byte b0 = bytes[i];
+if (b0 != 0 &amp;&amp; b0 != -1)
+return rhsLen == 0 ? 0 : -1;
+if (rhsLen == 0)
+return 1;
+
+int lhsMsbIdx = findMostSignificantByte(lhs);
+

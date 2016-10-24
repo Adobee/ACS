@@ -1,0 +1,7 @@
+private ObjectMapperInstance() {}
+private static ObjectMapper objectMapper;
+public static ObjectMapper getInstance(){
+if(objectMapper == null){
+synchronized(ObjectMapperInstance.class){
+if(objectMapper == null){
+

@@ -1,0 +1,8 @@
+import sacred.alliance.magic.channel.ChannelEvent;
+import sacred.alliance.magic.core.channel.ChannelSession;
+import sacred.alliance.magic.core.executor.KeyOrderedLastExecutor;
+protected String __getKey(ChannelEvent entry){
+//从ChannelSession中获得
+ChannelSession session = entry.getSession();
+if(null == session){
+

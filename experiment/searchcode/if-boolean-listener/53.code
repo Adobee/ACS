@@ -1,0 +1,7 @@
+private static ArrayList<Listener> emptyList = new ArrayList<Listener>();
+private boolean blocked = false;
+
+public Connection addListener(WObject listenerOwner, Listener listener) {
+if (listenerOwner != null) {
+weakObserverCatalog.add(new WeakReference<Listener>(listener));
+

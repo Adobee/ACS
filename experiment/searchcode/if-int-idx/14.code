@@ -1,0 +1,9 @@
+public class Solution {
+public int removeDuplicates(int[] A) {
+if (A==null || A.length==0) {
+return A.length;
+}
+int idx = 2;
+int count = 0;
+for (int i=2; i<A.length; i++) {
+

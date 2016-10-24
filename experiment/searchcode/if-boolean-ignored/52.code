@@ -1,0 +1,9 @@
+public class DefaultReaderConfig implements ReaderConfig {
+private boolean scanAllResources;
+private Collection<String> ignoredRoutes = Collections.emptySet();
+public DefaultReaderConfig(ReaderConfig src) {
+if (src == null) {
+return;
+}
+setScanAllResources(src.isScanAllResources());
+

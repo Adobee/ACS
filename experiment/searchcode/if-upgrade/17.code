@@ -1,0 +1,13 @@
+import static battlecode.common.Upgrade.*;
+import battlecode.common.GameActionException;
+import battlecode.common.Upgrade;
+public boolean execute(HQBehavior hq) throws GameActionException {
+if(RC.hasUpgrade(upgrade)) {
+return true;
+} else {
+hq.researchUpgrade(upgrade);
+return false;
+}
+}
+}
+

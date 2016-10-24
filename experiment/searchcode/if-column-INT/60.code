@@ -1,0 +1,13 @@
+map[i][j] = &#39;.&#39;;
+} else {
+map[i][j] = &#39;0&#39;;
+}
+}
+}
+
+// columnEnds[i][j] = k, if map[i..k][j] == &#39;0&#39;, otherwise, k = -1.
+for (int k = 0; k < W; ++k) {
+if (map[i][k] == &#39;.&#39; || map[j][k] == &#39;.&#39;) {
+if (startColumn != -1) {
+int add = (connectColumns * (connectColumns - 1) / 2) - nearConnectColumns;
+

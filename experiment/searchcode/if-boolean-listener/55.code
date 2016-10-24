@@ -1,0 +1,10 @@
+final private List<WeakReference<Listener>> listeners = new ArrayList<>();
+
+public void addListener(int index, Listener listener) {
+if (hasListener(listener))
+listeners.add(index, new WeakReference<>(listener));
+}
+
+public void addListener(Listener listener) {
+if (hasListener(listener))
+

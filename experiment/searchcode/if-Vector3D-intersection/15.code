@@ -1,0 +1,7 @@
+this.v2 = this.v2.add(translation);
+}
+
+public static Line3D calculateIntersectionWithPlane(Triangle3D t, Vector3D planeRefPt, Vector3D planeNormal)
+double dist = planeNormal.dotProduct(planeRefPt.subtract(p0)) / planeNormal.dotProduct(p1.subtract(p0));
+Vector3D intersection = p0.add(p1.subtract(p0).multiply(dist));
+

@@ -1,0 +1,9 @@
+public static final int BUG = 7;
+
+public static final double DEFAULT_ATOL = 0.0;
+public static final double DEFAULT_RTOL = 1e-5;
+private double atol = DEFAULT_ATOL;
+private double rtol = DEFAULT_RTOL;
+
+private LinearOperator A; /* LHS matrix */
+

@@ -1,0 +1,8 @@
+RateeMapping oldMapping = mappings.get(newMapping.getRateeId());
+if (oldMapping != null) {
+if (oldMapping.hasFirstRater() &amp;&amp; !oldMapping.getFirstRaterId().equals(newMapping.getFirstRaterId())) {
+rateeRemovedFirstRater.put(oldMapping.getFirstRaterId(), removedRatee);
+
+if (newMapping.hasFirstRater()) {
+List<String> addedRatee = rateeAddedFirstRater.getOrDefault(newMapping.getFirstRaterId(), new ArrayList<>());
+

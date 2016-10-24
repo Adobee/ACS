@@ -1,0 +1,10 @@
+this.commandSend = sender;
+}
+
+@SuppressWarnings(&quot;deprecation&quot;)
+@Override
+public void run() {
+if(plugin.syncRunning){
+plugin.debug(&quot;Bans retrieved&quot;);
+}else if(plugin.lastID==response.getLong(&quot;lastid&quot;) &amp;&amp; plugin.lastType.equalsIgnoreCase(&quot;sync&quot;)){
+

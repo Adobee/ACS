@@ -1,0 +1,10 @@
+public boolean contains(AxisInterval i)
+{
+if (i == null || !(i instanceof DoubleInterval))
+return false;
+
+DoubleInterval interval = (DoubleInterval) i;
+public AxisInterval union(AxisInterval i) {
+if (i == null)
+return new DoubleInterval(new Double(getStartValue()), new Double(getFinishValue()));
+

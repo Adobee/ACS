@@ -1,0 +1,4 @@
+visited[i][j]--;
+for(int ii = 0;ii < n;ii++){if(ii != i){visited[ii][j]--;}if(ii != j){visited[i][ii]--;}}
+for(int ii = -n;ii < n;ii++){if(i+ii >= 0 &amp;&amp; i+ii < n &amp;&amp; j+ii >= 0 &amp;&amp; j+ii < n){if(ii != 0){visited[i+ii][j+ii]--;}}if(i+ii >= 0 &amp;&amp; i+ii < n &amp;&amp; j-ii >= 0 &amp;&amp; j-ii < n){if(ii != 0){visited[i+ii][j-ii]--;}}}
+

@@ -1,0 +1,12 @@
+public void move(double xa, double ya)
+{
+onGround = false;
+if (level.isFree(this, x + xa, y, w, h, xa, 0))
+if (this instanceof Bullet) return;
+if (xa < 0)
+{
+double xx = x / 16;
+xa = -(xx - ((int) xx)) * 16;
+}
+else
+

@@ -1,0 +1,10 @@
+public class CharacterClassParser {
+
+public static CharacterClass parse(
+Source source) {
+return new CharacterClass(set, including);
+}
+
+private static CharacterSet parseRange(Source source) {
+char from = source.consumeNextChar();
+

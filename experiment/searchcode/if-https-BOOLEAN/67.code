@@ -1,0 +1,6 @@
+String https_proxy = env.get(&quot;https_proxy&quot;);
+if (https_proxy != null) {
+int httpsColIndex = https_proxy.indexOf(&quot;:&quot;);
+if (httpsColIndex > 0) {
+System.setProperty(&quot;https.proxyHost&quot;, https_proxy.substring(0, httpsColIndex));
+

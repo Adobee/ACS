@@ -1,0 +1,4 @@
+String buildName = readFromEnvironment(&quot;BUILD&quot;);
+if(buildName == null) buildName = readFromEnvironment(&quot;SAUCE_BAMBOO_BUILDNUMBER&quot;);
+if(buildName == null) buildName = readFromEnvironment(&quot;JENKINS_BUILD_NUMBER&quot;);
+

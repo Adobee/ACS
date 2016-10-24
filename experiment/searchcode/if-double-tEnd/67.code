@@ -1,0 +1,10 @@
+this.step = (tEnd - tStart) / (count - 1);
+this.timestamps = new double[count];
+for (int i = 0; i < count; i++) {
+this.timestamps[i] = tStart + ((double) i / (double) (count - 1)) * (tEnd - tStart);
+}
+}
+
+double[] getTimestamps() {
+return timestamps;
+

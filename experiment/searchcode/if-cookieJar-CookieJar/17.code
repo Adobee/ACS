@@ -1,0 +1,8 @@
+import baggage.hypertoolkit.security.AuthenticationService;
+import baggage.hypertoolkit.security.CookieJar;
+import baggage.hypertoolkit.views.JSONResponse;
+AuthenticationResult result = authenticationService.authenticate(request.getIdentifier(), request.getPassword());
+
+if (result.isOk()) {
+cookieJar.grantSessionCookie(result.getPrincipal());
+

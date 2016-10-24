@@ -1,0 +1,11 @@
+public Time alignDownToGranularity(Granularity g) {
+long granNanos = g.getNanos();
+if (this.nanos < 0L) {
+return inNanos((this.nanos - granNanos + 1L) / granNanos
+return inNanos(this.nanos / granNanos * granNanos);
+}
+
+public Time alignUpToGranularity(Granularity g) {
+long granNanos = g.getNanos();
+if (this.nanos > 0L) {
+

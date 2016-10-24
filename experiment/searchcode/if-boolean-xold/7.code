@@ -1,0 +1,10 @@
+int newXPos = pos.getX() + vel.getX();
+int newYPos = pos.getY() + vel.getY();
+
+if (smoothXPath(xOld, newXPos, yOld)) {
+position = new XYPair(reset);
+velocity = new XYPair(0, 0);
+}
+} else {// x didn&#39;t work
+if (smoothYPath(yOld, newYPos, xOld)) {// y works, x doesn&#39;t.
+

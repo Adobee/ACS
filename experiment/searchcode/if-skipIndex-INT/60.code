@@ -1,0 +1,11 @@
+List list = this.getSqlMapClientTemplate().queryForList(&quot;findPulicSituation&quot;, organ);
+return list;
+}
+
+public List findJqList(Organization organ, int skipindex, int maxindex) throws Exception{//获取机构（右边的内容）
+for(Iterator subIt=subList.iterator();subIt.hasNext();){
+list.add((Organization)subIt.next());
+}
+
+int index =(list.size()-skipindex) >maxindex?maxindex:list.size()-skipindex;
+

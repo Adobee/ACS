@@ -1,0 +1,10 @@
+if ( useSpellchecker ){
+
+if (useLuceneWikiSpellchecker){
+
+Querytext = mySpellingcorrector.SpellWithLuceneWiki(Querytext); // use LucenWikiSpellCheck
+Querytext = firstletter + partialQuery;
+
+// replace double spaces if exists
+Querytext= Querytext.replaceAll(&quot;[ ]+&quot;, &quot; &quot;);
+

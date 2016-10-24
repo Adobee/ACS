@@ -1,0 +1,10 @@
+// http://mxr.mozilla.org/mozilla-central/source/netwerk/dns/effective_tld_names.dat?raw=1
+boolean isSingle = false;
+String[] parts = host.toLowerCase().split(&quot;\\.&quot;);
+int partsLen = parts.length;
+// Not dealing with unicode TLDs!
+if (parts[partsLen-1].equals(&quot;com&quot;)) {
+isSingle = true;
+}
+else if (parts[partsLen-1].equals(&quot;net&quot;)) {
+

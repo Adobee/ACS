@@ -1,0 +1,13 @@
+this.fillType = FillType.AIR;
+System.out.println(&quot;Invalid fill type for the portal, setting to AIR&quot;);
+}
+if(this.fillType==null){
+Block b = locs.getBlock();
+if(b.isEmpty()){
+b.setType(fillType.getBlockMaterial());
+}
+}
+}
+
+public void clearPortal(){
+

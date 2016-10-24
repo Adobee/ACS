@@ -1,0 +1,7 @@
+double invX,
+double invY,
+double invZ,
+int[] sign) {
+double tymin = (box.bounds[sign[1]].y - line.position.y) * invY;
+double tymax = (box.bounds[1 - sign[1]].y - line.position.y) * invY;
+

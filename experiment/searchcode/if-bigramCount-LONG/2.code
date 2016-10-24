@@ -1,0 +1,6 @@
+String bigram = this.constructBigram(combinationQuery, index);
+
+long bigramCount = bigramDictionary.getQueryFrequency(bigram);
+if (bigramCount > 0) {
+return (double) bigramCount / (double) bigramDictionary.getTotalFrequencyCount();
+

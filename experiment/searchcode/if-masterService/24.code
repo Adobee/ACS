@@ -1,0 +1,7 @@
+public M_Pegawai getByID(@PathVariable String id){
+M_Pegawai m_Pegawai = masterService.getById(id);
+if(m_Pegawai == null){
+public void update(@PathVariable String id,@RequestBody M_Pegawai m_Pegawai){
+M_Pegawai mp = masterService.getById(id);
+if(mp == null){
+

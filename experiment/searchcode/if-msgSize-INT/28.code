@@ -1,0 +1,13 @@
+private int cnt = -4;
+
+/** Current message size. */
+private int msgSize;
+
+/**
+* Reset buffer state.
+for (; cnt < 0 &amp;&amp; buf.hasRemaining(); cnt++)
+msgSize |= (buf.get() &amp; 0xFF) << (8*(4 + cnt));
+
+if (cnt < 0)
+return null;
+

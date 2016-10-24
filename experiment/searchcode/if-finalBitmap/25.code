@@ -1,0 +1,11 @@
+private FinalBitmap getFinalBitmap() {
+if (finalBitmap == null) {
+if (MainActivity.getContext() == null)
+return null;
+public Bitmap getBitmap(String key) {
+return finalBitmap.getBitmapFromCache(key);
+}
+
+public void clearMemoryCache() {
+if (getFinalBitmap() != null) {
+

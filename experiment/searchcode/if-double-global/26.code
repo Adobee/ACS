@@ -1,0 +1,9 @@
+protected static GlobalSummary maximumNbrOfConsultations(List<GlobalSummary> summaryList) {
+
+if (summaryList == null || summaryList.size() == 0) {
+return null;
+}
+GlobalSummary max = summaryList.get(0);
+for (GlobalSummary globalSummary : summaryList) {
+if (max.getTotalNbrConsultation() < globalSummary.getTotalNbrConsultation()) {
+

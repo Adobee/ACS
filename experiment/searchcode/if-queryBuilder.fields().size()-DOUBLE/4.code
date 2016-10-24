@@ -1,0 +1,8 @@
+NativeSearchQueryBuilder queryBuilder) {
+if(propertyQueryParams.getPageNumber() != null &amp;&amp; propertyQueryParams.getPageSize() != null
+queryBuilder.withPageable(new PageRequest(propertyQueryParams.getPageNumber(), propertyQueryParams.getPageSize()));
+}
+}
+
+private void applyOrderBy(NativeSearchQueryBuilder queryBuilder, PropertyQueryParams propertyQueryParams) {
+

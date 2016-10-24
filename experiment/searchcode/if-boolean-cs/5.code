@@ -1,0 +1,12 @@
+this.csDesc = csDesc;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+CodeService that = (CodeService) o;
+
+if (csAnnotation != that.csAnnotation) return false;
+if (csSid != null ? !csSid.equals(that.csSid) : that.csSid != null) return false;
+

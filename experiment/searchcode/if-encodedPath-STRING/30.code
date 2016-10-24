@@ -1,0 +1,8 @@
+* @param useMultiByte
+* @return
+*/
+public static String fileNameEncode( String fileName, boolean useMultiByte ) {
+if ( useMultiByte ) {
+String[] folders = path.split( SEPARATOR );
+StringBuilder encodedPath = new StringBuilder( path.length() * 2 );
+

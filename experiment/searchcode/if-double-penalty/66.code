@@ -1,0 +1,7 @@
+String penaltyName = dto.getPenaltyName();
+Integer periodDuration = dto.getDuration();
+Double min = dto.getMin();
+Double max = dto.getMax();
+
+if (dto.isRatePenalty()) {
+

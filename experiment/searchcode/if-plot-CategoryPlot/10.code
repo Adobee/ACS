@@ -1,0 +1,11 @@
+super.setChartStyle(jFreeChart);
+
+CategoryPlot categoryPlot = jFreeChart.getCategoryPlot();// 用于设置显示特性
+if (categoryPlot != null) {
+ValueAxis rangeAxis = categoryPlot.getRangeAxis();// 获取柱状
+if (rangeAxis != null)
+rangeAxis.setLabelFont(new Font(&quot;黑体&quot;, Font.BOLD, 15)); // 设置柱状标题
+}
+
+}
+

@@ -1,0 +1,8 @@
+time = lastTime + dt;
+computeDerivatives();
+for (Variable v = firstVar; v != null; v = v.suc) {
+v.state = v.oldState + v.ds;
+}
+computeDerivatives();
+if (dtNow == dtFull) {
+

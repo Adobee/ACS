@@ -1,0 +1,9 @@
+public RealMatrix getL() {
+if ((cachedL == null) &amp;&amp; !singular) {
+final int m = pivot.length;
+* @see #getPivot()
+*/
+public RealMatrix getP() {
+if ((cachedP == null) &amp;&amp; !singular) {
+final int m = pivot.length;
+

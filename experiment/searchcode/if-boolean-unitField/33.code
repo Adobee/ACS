@@ -1,0 +1,12 @@
+unitSize = currentUnitString.length();
+}
+
+//check if the content is too long for a single line
+boolean useIndividualLines = (valueLabelSize + valueSize + unitSize) > CHARACTER_LENGTH_LIMIT;
+textField.setSelection(caretPosition);
+
+};
+unitField.addModifyListener(unitModifyListener);
+
+if (useIndividualLines) {
+

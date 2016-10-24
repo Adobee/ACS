@@ -1,0 +1,11 @@
+public int numerator;
+public int denominator;
+
+public Rational(int a, int b) {
+numerator = a;
+denominator = b;
+public Point reduce() {
+if (denominator < 0) {
+denominator = -denominator;
+numerator = -numerator;
+

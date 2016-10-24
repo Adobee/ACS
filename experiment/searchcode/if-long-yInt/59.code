@@ -1,0 +1,17 @@
+public class SensorActivity extends Activity {
+
+private SensorManager mSensorManager;
+private Sensor mSensor;
+
+private int xInt, yInt;
+private String xyz;
+yInt = (int) (event.values[1] * (128/sensitivity)) * (-1) + 128;
+}
+}
+else{
+if(event.values[1] > 5) {
+yInt = 0;
+}
+else {
+yInt = (int) ((event.values[1] * (128/sensitivity)) - 128) * (-1);
+

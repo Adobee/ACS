@@ -1,0 +1,9 @@
+public class TextAndSeconds {
+public int seconds = 0;
+public String text = &quot;&quot;;
+
+public TextAndSeconds ( int seconds, String text ) {
+public static class TextAndSecondsComparator implements Comparator<TextAndSeconds> {
+@Override
+public int compare( TextAndSeconds ts1, TextAndSeconds ts2 ) {
+

@@ -1,0 +1,8 @@
+public class DiskCachedString2TFunc<T extends Serializable> {
+
+private File cacheDir;
+private int numShards;
+private Function<T, String> idFunc;
+public DiskCachedString2TFunc(Function<T, String> idFunc, File cacheDir, int numShards) {
+if (numShards >= 100000)
+

@@ -1,0 +1,10 @@
+public static<T extends Comparable> int ceil(PartitionArray<T> array, T search){
+
+if(array.size() == 0)
+return - 1;
+
+T val = array.pivotVal();
+
+
+if( search.compareTo(val) == 0 )
+

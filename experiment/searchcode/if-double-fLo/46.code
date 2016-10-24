@@ -1,0 +1,9 @@
+Stream stream = new Stream(streamLoader.getDataForName(&quot;flo.dat&quot;));
+int cacheSize = stream.readUnsignedWord();
+if(cache == null)
+cache = new Flo[cacheSize];
+for(int j = 0; j < cacheSize; j++)
+{
+if(cache[j] == null)
+cache[j] = new Flo();
+

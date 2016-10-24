@@ -1,0 +1,11 @@
+private boolean pausedFlag;
+private long lastMillis;
+private int percentage = 0;
+private long newMillis = 0;
+//used to create notification for each timer
+if (pausedFlag) {
+
+long currentMillis = millisUntilFinished - newMillis;
+
+lastMillis = currentMillis;
+

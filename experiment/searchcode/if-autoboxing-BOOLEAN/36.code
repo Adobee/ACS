@@ -1,0 +1,12 @@
+throw new CannotCompileException(e);
+}
+}
+}
+
+/**
+* Checks the input class for autoboxing operations and instruments it if
+* such operations are found. If a call to the valueOf() or any of the
+for (CtMethod method : ctClass.getDeclaredMethods()) {
+if (!method.hasAnnotation(IgnoreAutoboxing.class)) {
+final String methodName = method.getLongName();
+

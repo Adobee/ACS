@@ -1,0 +1,10 @@
+public void posicionInicial(int posX, int posY) {
+this.setPosX(posX);
+this.setPosY(posY);
+}
+
+@Override
+public boolean validarMovimiento(int posXMov, int posYMov) {
+for (int i = 1; i < 8; i++) {
+if((this.getPosX()+i==posXMov &amp;&amp; this.getPosY()==posYMov) || (this.getPosX()-i==posXMov &amp;&amp; this.getPosY()==posYMov)
+

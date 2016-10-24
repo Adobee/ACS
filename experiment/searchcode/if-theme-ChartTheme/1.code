@@ -1,0 +1,9 @@
+public boolean canSetValue(String value) {
+if (value == null) {
+return true;
+}
+Iterator<ChartTheme> constants = ListSequence.fromList(ChartTheme.getConstants()).iterator();
+while (constants.hasNext()) {
+ChartTheme constant = constants.next();
+if (value.equals(constant.getName())) {
+

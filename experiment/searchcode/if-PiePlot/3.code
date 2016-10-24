@@ -1,0 +1,7 @@
+for (int i = 1; i <= piePlot.getDataset().getItemCount(); i++)
+{
+if (piePlot.getDataset().getKey(i-1).toString().contains(&quot;Above&quot;.subSequence(0, 4)))
+piePlot.setSectionPaint(piePlot.getDataset().getKey(i-1), Color.getHSBColor(red[0], red[1], red[2]));
+}
+if  (piePlot.getDataset().getKey(i-1).toString().contains(&quot;Below&quot;.subSequence(0, 4)))
+

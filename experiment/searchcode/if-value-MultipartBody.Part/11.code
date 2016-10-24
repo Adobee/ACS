@@ -1,0 +1,11 @@
+this.url = (url != null) ? url : &quot;&quot;;
+if (body == null) {
+body = new MultipartBody();
+public void addParam(String key, String value) {
+body.addPart(new StringPart(key, value));
+}
+
+/**
+* int类型
+* @param key
+

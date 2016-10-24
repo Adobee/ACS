@@ -1,0 +1,8 @@
+@Override
+public void addExecutionListener(IExecutionListener listener) {
+if (!fExecutionListeners.contains(listener)) {
+fExecutionListeners.add(listener);
+}
+fParentService.addExecutionListener(listener);
+}
+

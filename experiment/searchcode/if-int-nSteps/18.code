@@ -1,0 +1,10 @@
+*  You should have received a copy of the GNU Affero General Public License
+*  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+package at.tugraz.ist.catroid.test.content.brick;
+public class GoNStepsBackBrickTest extends AndroidTestCase {
+
+private final int steps = 17;
+
+public void testSteps() {
+

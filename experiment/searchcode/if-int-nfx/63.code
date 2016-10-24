@@ -1,0 +1,8 @@
+mAngle = angleBetweenLines(fX, fY, sX, sY, nfX, nfY, nsX, nsY);
+
+if (mListener != null) {
+float angle2 = (float) Math.atan2( (nfY - nsY), (nfX - nsX) );
+
+float angle = ((float)Math.toDegrees(angle1 - angle2)) % 360;
+if (angle < -180.f) angle += 360.0f;
+

@@ -1,0 +1,12 @@
+private String nameKey = &quot;name&quot;;
+@Expose
+private boolean multiple;
+@Expose
+private boolean promptIfEmpty;
+public void setPromptIfEmpty(boolean promptIfEmpty) {
+this.promptIfEmpty = promptIfEmpty;
+}
+
+public String getNameKey() {
+if (StringUtils.isBlank(nameKey)) {
+

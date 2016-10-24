@@ -1,0 +1,10 @@
+
+import java.util.ArrayList;
+
+/**
+* Represents a 2d point with double coordinates
+*
+* @author Johan
+final PointDouble other = (PointDouble) obj;
+if (Double.doubleToLongBits(this.x) != Double.doubleToLongBits(other.x)) {
+

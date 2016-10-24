@@ -1,0 +1,11 @@
+long l_dividend = dividend;
+long l_divisor  = divisor;
+
+long result = 0;
+if (dividend == 0)
+//         long l_dividend = dividend;
+//         long l_divisor  = divisor;
+
+//         long result = 0;
+//         if (dividend == 0)
+

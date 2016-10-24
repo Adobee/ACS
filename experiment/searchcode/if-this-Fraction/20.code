@@ -1,0 +1,12 @@
+public class Fraction {
+private int numerator;
+private int divisor;
+
+public Fraction(int numerator, int divisor) {
+this.divisor = divisor;
+}
+
+public Fraction(int numerator) {
+this.numerator = numerator;
+this.divisor = 1;
+

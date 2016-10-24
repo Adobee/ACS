@@ -1,0 +1,9 @@
+public class SelectDateDialog extends DialogFragment implements DatePickerDialog.OnDateSetListener {
+
+private OnDateSetListener listener;
+private int dayOfMonth;
+private int monthOfYear;
+public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+if (listener != null) {
+listener.onDateSet(year, monthOfYear + 1, dayOfMonth);
+

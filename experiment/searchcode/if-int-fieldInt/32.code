@@ -1,0 +1,7 @@
+if (y > 0 &amp;&amp; y < fieldInt.length - 1)
+{
+if (x > 0 &amp;&amp; x < fieldInt[y].length - 1)
+public void rotateFieldNumbersAntiClockwise(int x, int y)
+{
+if (y > 0 &amp;&amp; y < fieldInt.length - 1)
+

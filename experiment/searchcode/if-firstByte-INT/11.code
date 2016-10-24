@@ -1,0 +1,12 @@
+this.lastByte = lastByte;
+}
+
+@Override
+public int compareTo(Range original) {
+return Long.valueOf(firstByte).compareTo(original.firstByte);
+}
+
+@Override
+public int hashCode() {
+return Long.valueOf(firstByte).hashCode();
+

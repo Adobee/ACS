@@ -1,0 +1,10 @@
+package problem2.task4;
+
+public class Ring extends Figure {
+private double r1;
+private double r2;
+
+public Ring(double r1, double r2) {
+if(r1>r2){
+this.r1 = r1;
+

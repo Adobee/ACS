@@ -1,0 +1,12 @@
+import com.google.appinventor.client.boxes.OdeLogBox;
+import com.google.appinventor.client.output.OdeLog;
+import com.google.appinventor.client.widgets.boxes.BoxRegistry;
+public OdeBoxRegistry() {
+register(MessagesOutputBox.getMessagesOutputBox());
+
+if (OdeLog.isLogAvailable()) {
+register(OdeLogBox.getOdeLogBox());
+}
+}
+}
+

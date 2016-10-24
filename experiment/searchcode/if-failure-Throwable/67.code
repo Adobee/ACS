@@ -1,0 +1,9 @@
+protected GroupedTestFailure getPrototype(Throwable throwable){
+
+for(GroupedTestFailure prototypeFailure: (Vector<GroupedTestFailure>)fErrors){
+//some throwable do not have a stacktrace
+return prototypeFailure;
+}
+
+if(StackOverflowError.class.equals(throwable.getClass()) &amp;&amp; equal20(prototypeThrowable.getStackTrace(), throwable.getStackTrace())){
+

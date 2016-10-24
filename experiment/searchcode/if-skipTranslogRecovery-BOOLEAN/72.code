@@ -1,0 +1,7 @@
+public void updateRoutingEntry(final ShardRouting newRouting, final boolean persistState) {
+final ShardRouting currentRouting = this.shardRouting;
+if (!newRouting.shardId().equals(shardId())) {
+private void createNewEngine(boolean skipTranslogRecovery, EngineConfig config) {
+synchronized (mutex) {
+if (state == IndexShardState.CLOSED) {
+

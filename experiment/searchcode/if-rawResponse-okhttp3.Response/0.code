@@ -1,0 +1,7 @@
+public final class Response<T> {
+private final okhttp3.Response rawResponse;
+private final T body;
+private final ResponseBody errorBody;
+public static <T> Response<T> error(ResponseBody body, okhttp3.Response rawResponse) {
+if (body == null) throw new NullPointerException(&quot;body == null&quot;);
+

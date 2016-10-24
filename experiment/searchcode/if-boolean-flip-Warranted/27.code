@@ -1,0 +1,7 @@
+* result code is failure then no message follows. If the result code
+* is success and a response is warranted it will follow and is length prefixed if necessary.
+resultTablesBuffer.flip();
+
+// check if anything was changed
+final boolean dirty = resultTablesBuffer.get() > 0;
+

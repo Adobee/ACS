@@ -1,0 +1,13 @@
+public Statement getNextStatement(ExecutionContext context){
+if (! context.isBroken() &amp;&amp;!isLast() &amp;&amp; this.getSuperStatement() != null){
+return (Statement) ((SequenceStatement<?>)getSuperStatement()).getStatements().get(this.getIndex()+1);
+private int index;
+
+private boolean isLast = true;
+
+/**
+* @return the index
+*/
+public int getIndex() {
+return index;
+

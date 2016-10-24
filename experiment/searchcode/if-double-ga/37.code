@@ -1,0 +1,11 @@
+gen = sortByFitness(gen, fitnesses);
+final int elite = ga.getElitismSize();
+
+FJHelper.loop(elite, gen.length, (i) -> {
+if (r.nextDouble() < ga.getRecombinationProbability()) {
+I[] pair = ga.recombine(tournament(), tournament(), r);
+gen[i] = pair[0];
+}
+if (r.nextDouble() < ga.getMutationProbability()) {
+gen[i] = ga.mutate(gen[i], r);
+

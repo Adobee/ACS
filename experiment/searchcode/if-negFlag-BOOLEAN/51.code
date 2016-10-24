@@ -1,0 +1,10 @@
+return this.smallLogFlag ? Math.pow(XYPointerAnnotation.DEFAULT_TIP_RADIUS, val) : adjustedPow10(val);
+}
+
+public double adjustedLog10(double val) {
+boolean negFlag = val < LOG10_VALUE;
+if (negFlag) {
+val = -val;
+}
+if (val < XYPointerAnnotation.DEFAULT_TIP_RADIUS) {
+

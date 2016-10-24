@@ -1,0 +1,14 @@
+public static int sign(int i){
+return flipBit((i>>31)&amp;1);
+}
+
+/*
+* if a and b have diff signs,
+* use sign(a).
+* else use sign(a-b)
+*/
+public static int getMax(int a, int b){
+int signa = sign(a);
+int signb = sign(b);
+int signc = sign(a-b);
+

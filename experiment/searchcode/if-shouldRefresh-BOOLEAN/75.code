@@ -1,0 +1,10 @@
+LegendLayer mLLayer;
+
+public MapQueryListener(Boolean shouldRefresh) {
+super(shouldRefresh);
+mGeoMapper = application.getTasksComponent().provideMapFeaturesTask();
+Fragment contentFrag = application.getMainActivity().getContentFragment();
+
+if (contentFrag instanceof GoogleMapFragment) {
+((GoogleMapFragment) contentFrag).hideLoadingBar();
+

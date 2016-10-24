@@ -1,0 +1,9 @@
+public static void assertEquals(Object expected, Object actual, String message) {
+if (expected == null) {
+if (actual != null) {
+throw new IllegalStateException(&quot;assertEquals failed: expected null, actual &quot; + actual + &quot;; &quot; + message);
+}
+}
+else if (!expected.equals(actual)) {
+throw new IllegalStateException(&quot;assertEquals failed: expected &quot; + expected + &quot;, actual &quot; + actual + &quot;; &quot; + message);
+

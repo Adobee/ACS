@@ -1,0 +1,10 @@
+public int modify(double value, float randomValue, float changePixel) {
+if (changePixel <= intensity) {
+if (randomValue <= firstValue) {
+return 0;
+} else if (randomValue >= secondValue) {
+return 255;
+}
+}
+return (int) value;
+

@@ -1,0 +1,20 @@
+public Ncd(Point p0, Microtubule M1, Microtubule M2)
+{
+
+
+double prop=Math.random();
+
+if(prop>0.5)
+{
+MT_Top=M1;
+MT_Bottom=M2;
+subunit=(int) Math.round( (mhp.HingePos.X-mt.position.X)/ (mt.SubunitLength*mt.directionality) );
+
+if(subunit<=mt.length)
+return (subunit);
+else
+return (NOTCLOSE);
+}
+
+public double GetTension()
+

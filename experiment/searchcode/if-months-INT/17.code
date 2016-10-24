@@ -1,0 +1,14 @@
+private static MonthsPool myInstance;
+
+private MonthsPool() {}
+
+public static MonthsPool getInstance() {
+if (myInstance == null) {
+return myInstance;
+}
+
+@Override protected Months create(int numeral) {
+return new Months(numeral);
+}
+}
+

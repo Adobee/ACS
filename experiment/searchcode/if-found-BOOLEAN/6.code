@@ -1,0 +1,9 @@
+private ParserBase parser;
+private boolean found;
+public boolean isFound() {
+return this.parser.fatalState||found;
+}
+public ParserAction (ParserBase parser, int pos, boolean found) {
+this.found = found;
+this.parser = parser;
+

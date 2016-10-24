@@ -1,0 +1,16 @@
+private long   counter;
+private long   start;
+private long   increment;
+private long   maximum;
+private boolean loop;
+public long next()
+{
+long retval=counter;
+
+counter+=increment;
+if (loop &amp;&amp; counter>maximum) counter=start;
+
+return retval;
+}
+}
+

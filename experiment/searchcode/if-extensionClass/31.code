@@ -1,0 +1,5 @@
+private static String loadExtensionCode(Class<? extends EDSExtension> extensionClass, String codeBasePath) throws DepSpaceException {
+String codePath = codeBasePath + File.separatorChar + extensionClass.getName().replace(&#39;.&#39;, File.separatorChar) + &quot;.java&quot;;
+File file = new File(codePath);
+if(!file.isFile()) throw new DepSpaceException(codePath + &quot; is not a file&quot;);
+

@@ -1,0 +1,8 @@
+package spk.persistencia.jpa.validador.impl;
+
+import java.time.LocalDateTime;
+
+import javax.validation.ConstraintValidator;
+public boolean isValid(LocalDateTime localDateTime, ConstraintValidatorContext contexto) {
+if(localDateTime==null)
+

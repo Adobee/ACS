@@ -1,0 +1,8 @@
+private boolean listIsNull = true;//表示rowlist有没有初始化，没有的用空字符串初始化之
+protected int rows = 0;//总记录数
+protected int cols = 0;//总列数
+private boolean allNull = true;//表示Excel当前行所有Cell都是空
+String value = lastContents.trim();
+value=value.replaceAll(&quot;[ \\s,#]+&quot;, &quot;&quot;);
+if (allNull &amp;&amp; !value.equals(&quot;&quot;)) {
+

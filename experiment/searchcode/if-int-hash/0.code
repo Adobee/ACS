@@ -1,0 +1,17 @@
+package Day7;
+
+public class HashUtillities {
+
+public static int shortHash(int hash){
+int newHash = Math.abs(hash);
+if (newHash>=0&amp;&amp;newHash<=1000){return newHash;}
+else {
+while (newHash>1000){
+newHash %=2;
+}
+}
+return newHash;
+}
+
+}
+

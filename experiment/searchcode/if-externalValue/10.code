@@ -1,0 +1,9 @@
+* Data wrapper for qualified names in a program, referring to external values.
+*
+* @author Matt Pearson-Beck &amp; Jeff Principe
+*/
+public class ExternalValue implements IdentifierValue {
+public boolean equals(Object o) {
+if (o instanceof ExternalValue) {
+return ((ExternalValue) o).name.equals(name);
+

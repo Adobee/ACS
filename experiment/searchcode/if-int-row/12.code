@@ -1,0 +1,8 @@
+private int helper(int i, int[] row, int n) {
+if (i == n)
+return 1;
+int count = 0;
+for (int j = 0; j < n; j++) {
+if (isValid(row, i, j)) {
+row[i] = j;
+

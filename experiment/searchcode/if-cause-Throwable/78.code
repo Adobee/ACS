@@ -1,0 +1,16 @@
+cause = getCauseByFieldName(delegatedThrowable, throwableClass,
+CAUSE_FIELD_NAMES[i]);
+}
+}
+
+if (cause == delegatedThrowable) {
+cause = null;
+}
+
+if (cause == NO_CAUSE) {
+boolean isWellKnownType = false;
+
+if (ChainedThrowable.class.isInstance(throwable)) {
+isWellKnownType = true;
+cause = ((ChainedThrowable) throwable).getCause();
+

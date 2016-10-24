@@ -1,0 +1,9 @@
+import nz.sodium.*;
+import java.util.Optional;
+
+public class Signal {
+public Signal(double t0, double a, double b, double c) {
+this.t0 = t0;
+this.a = a;
+this.b = b;
+

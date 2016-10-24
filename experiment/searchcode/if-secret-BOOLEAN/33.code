@@ -1,0 +1,18 @@
+import org.slf4j.LoggerFactory;
+
+import java.util.Objects;
+
+/**
+* Model of secret.
+*/
+public class Secret {
+
+private static final Logger LOG = LoggerFactory.getLogger(Secret.class);
+public void setEnrollSecret(final String enrollSecret) {
+this.enrollSecret = enrollSecret;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+

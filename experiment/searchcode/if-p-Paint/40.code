@@ -1,0 +1,14 @@
+super(context);
+paintFactory = new PaintFactory();
+}
+
+/**
+* Either returns a new Paint of an existing if this method was called before.
+protected Paint getPaint() {
+if(paint == null){
+paint = paintFactory.create();
+}
+return paint;
+}
+}
+

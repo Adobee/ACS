@@ -1,0 +1,8 @@
+public static int compareNumbers( Object lhsValue, Object rhsValue, IType lhsType, IType rhsType )
+{
+if( JavaTypes.IDIMENSION().isAssignableFrom( lhsType ) &amp;&amp; JavaTypes.COMPARABLE().isAssignableFrom( lhsType ) )
+float f2 = CommonServices.getCoercionManager().makePrimitiveFloatFrom( rhsValue );
+return f1 > f2 ? 1 : f1 < f2 ? -1 : 0;
+}
+if( lhsType == JavaTypes.SHORT() || lhsType == JavaTypes.pSHORT() )
+

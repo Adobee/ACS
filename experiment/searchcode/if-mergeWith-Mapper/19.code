@@ -1,0 +1,9 @@
+final Mapper update = mapper.parse(context);
+if (update != null) {
+merge(mapper, update);
+}
+return mapper;
+* merges mappings, not lookup structures. Conflicts are returned as exceptions.
+*/
+public static void merge(Mapper mergeInto, Mapper mergeWith) {
+

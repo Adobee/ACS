@@ -1,0 +1,12 @@
+package algorithm;
+
+public class Sqrt {
+//牛顿迭代
+public static double sqrt(double c) {
+if(c<0){
+return Double.NaN;
+}
+double err = 1e-8;
+double t = c;
+while(Math.abs(t-c/t)>err*t){
+

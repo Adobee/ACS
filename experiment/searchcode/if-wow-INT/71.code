@@ -1,0 +1,11 @@
+log(&quot;Wow, x is such &quot; + x + &quot; now&quot;);
+}
+
+@Benchmark
+public void heap_string_guarded() {
+if (enabled) {
+log(&quot;Wow, x is such &quot; + x + &quot; now&quot;);
+public void local_string() {
+int lx = x;
+log(&quot;Wow, x is such &quot; + lx + &quot; now&quot;);
+

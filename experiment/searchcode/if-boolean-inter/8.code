@@ -1,0 +1,8 @@
+if (s1.length() + s2.length() != s3.length()) return false;
+
+boolean [][] isInter = new boolean[s1.length() + 1][s2.length() + 1];
+if ( i == 0 &amp;&amp; j == 0 ) {
+isInter[0][0] = true;
+} else if (i == 0) {
+isInter[i][j] = isInter[i][j - 1] &amp;&amp; s2.charAt(j - 1) == s3.charAt(i + j - 1);
+

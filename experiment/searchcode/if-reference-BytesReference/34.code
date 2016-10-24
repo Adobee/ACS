@@ -1,0 +1,8 @@
+int length = randomIntBetween(10, PAGE_SIZE * randomIntBetween(2, 8));
+BytesReference pbr = newBytesReference(length);
+if (randomBoolean()) {
+int sliceOffset = randomIntBetween(0, pbr.length());
+// unless randomized testing gave us a 0-length slice.
+if (sliceLength > 0) {
+BytesReference slice3 = pbr.slice(sliceFrom, sliceLength / 2);
+

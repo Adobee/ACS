@@ -1,0 +1,9 @@
+public int[] checkSaveButton(int[] mouseRows, int[] mouseCols) {
+ArrayList<Integer> validClicks = new ArrayList<Integer>();
+for(int i = 0; i < mouseRows.length; i++) {
+if((20 <= mouseRows[i] &amp;&amp; mouseRows[i] <= 39) &amp;&amp; (50 <= mouseCols[i] &amp;&amp; mouseCols[i] <= 99)) {
+validClicks.add(i);
+}
+}
+int[] result = new int[validClicks.size()];
+

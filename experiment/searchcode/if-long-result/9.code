@@ -1,0 +1,14 @@
+public static long myMethod(long a, long b) {
+int i = 32;
+long result = 0;
+while (((a >> i) &amp; 1) == ((b >> i) &amp; 1) &amp;&amp; i >= 0) {
+if (((a >> i) &amp; 1) == 1) {
+result |= (1L << i);
+}
+
+--i;
+}
+return result;
+}
+}
+

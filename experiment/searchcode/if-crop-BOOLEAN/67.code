@@ -1,0 +1,7 @@
+cropView.setOnCropChangeListener(new CropView.OnCropChangeListener() {
+
+@Override
+public void onCropChanged(RectF cropBounds, boolean fromUser) {
+if (fromUser) {
+filter.setCropBounds(cropBounds);
+

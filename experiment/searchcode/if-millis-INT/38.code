@@ -1,0 +1,14 @@
+float millisPerPixelTmp = millisPerPixel * fNorm;
+
+if (millisPerPixelTmp <= millisPerPixelMonth)
+{
+lodResult = LodState.MONTH;
+}
+
+if (millisPerPixelTmp <= millisPerPixelWeek)
+{
+lodResult = LodState.WEEK;
+}
+
+if (millisPerPixelTmp <= millisPerPixelDay)
+

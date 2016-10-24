@@ -1,0 +1,12 @@
+public static final InsideDoubleQuote ONLY = new InsideDoubleQuote();
+
+private InsideDoubleQuote() {
+}
+
+
+ReducedModelState update(TokenList.Iterator copyCursor) {
+if (copyCursor.atEnd()) {
+return STUTTER;
+}
+copyCursor._splitCurrentIfCommentBlock(true,false);
+

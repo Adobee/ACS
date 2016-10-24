@@ -1,0 +1,10 @@
+package cz.artique.client.manager;
+
+import com.google.gwt.http.client.RequestBuilder;
+import com.google.gwt.user.client.rpc.RpcRequestBuilder;
+public RpcWithTimeoutRequestBuilder(int timeoutMillis) {
+if (timeoutMillis < 0) {
+throw new IllegalArgumentException(&quot;Cannot be negative&quot;);
+}
+this.timeoutMillis = timeoutMillis;
+

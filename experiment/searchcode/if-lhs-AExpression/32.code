@@ -1,0 +1,6 @@
+public void genAssignment(Type type, Context ctx, TabbedWriter out, Expression arg1, Expression arg2, String arg3) {
+// if the lhs is non-nullable but the rhs is nullable, we have a special case
+&amp;&amp; lhsType != null &amp;&amp; TypeUtils.getTypeKind( lhsType ) == TypeUtils.TypeKind_BYTES )
+{
+if ( ( lhsType instanceof SequenceType &amp;&amp; rhsType instanceof SequenceType
+

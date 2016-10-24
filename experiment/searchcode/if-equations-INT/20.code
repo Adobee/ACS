@@ -1,0 +1,10 @@
+private static int calculateExamplesQuantity(SimpleArithmeticEquationSheet sheet, ArithmeticOperation operation) {
+int quantity = 0;
+for (SimpleArithmeticEquation equation : sheet.getEquations()) {
+if (equation.getOperation() == operation) {
+for (SimpleArithmeticEquation equation : sheet.getEquations()) {
+if (checkedEquations.contains(equation)) {
+continue;
+}
+int equationEntryCount = 0;
+

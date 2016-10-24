@@ -1,0 +1,12 @@
+
+int itemCount = 0;
+
+public void onEvent(OnRecyclerViewUpdateEvent event) {
+swipeRefreshLayout.setRefreshing(false);
+if (event.isFailed())
+return;
+
+next = event.getNext();
+
+if (itemCount < adapter.getItemCount())
+

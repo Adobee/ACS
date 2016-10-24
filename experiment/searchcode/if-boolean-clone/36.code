@@ -1,0 +1,13 @@
+public SyncIgnoreItems(int id)
+{
+super(id);
+}
+
+@Override
+public boolean checkNeedsUpdating(EntityClone clone)
+public void read(DataInputStream in, EntityClone clone, EntityPlayer player) throws IOException
+{
+boolean set = in.readBoolean();
+
+if (!clone.worldObj.isRemote &amp;&amp; player != null &amp;&amp; player.capabilities.isCreativeMode)
+

@@ -1,0 +1,12 @@
+public Bound( Float3 p1 , Float3 p2 )
+{
+this.p1 = p1;
+this.p2 = p2;
+}
+public boolean collide( Object area )
+{
+if( area instanceof Ray )
+{
+Float3 mp = ( Float3 )area;
+return mp.x > p1.x &amp;&amp; mp.x < p2.x &amp;&amp; mp.y > p1.y &amp;&amp; mp.y < p2.y &amp;&amp; mp.y > p1.y &amp;&amp; mp.y < p2.y;
+

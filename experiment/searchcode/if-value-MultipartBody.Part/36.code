@@ -1,0 +1,9 @@
+RequestBody requestBody = new MultipartBody.Builder()
+.setType(MultipartBody.FORM)
+.addFormDataPart(&quot;file&quot;, file.getName(), RequestBody.create(null, file))
+.addFormDataPart(&quot;policy&quot;, policy)
+.addFormDataPart(&quot;signature&quot;, signature)
+.build();
+
+if (listener != null) {
+

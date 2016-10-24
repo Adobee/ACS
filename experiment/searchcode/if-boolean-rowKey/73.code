@@ -1,0 +1,8 @@
+protected void posAppendRow(RowKey rowKey, long funcion) {
+this.initRow(rowKey);
+if (funcion == FUNCION_CREAR_COMPETENCIA) {
+protected boolean esFilaModificableConModificarCompetencia(RowKey rowKey) {
+boolean es = rowKey != null;
+if (es) {
+es = this.esFilaRecursoActivo(rowKey, FUNCION_MODIFICAR_COMPETENCIA);
+

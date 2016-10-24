@@ -1,0 +1,9 @@
+public boolean visit(ExpressionNode node, SqlContext<EC> context) {
+Object bool = eval(node, context);
+if (LOG.isDebugEnabled()) {
+skipped(node.getSkipped(), context);
+
+Object o = eval(node, context);
+if (o == null) {
+context.append(&quot; null &quot;);
+

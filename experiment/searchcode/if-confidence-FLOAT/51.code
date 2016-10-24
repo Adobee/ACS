@@ -1,0 +1,10 @@
+// detection status from the confidence value.
+public void setAbsent() {
+if (isMasked())
+confidence = -(float) m_threshold;
+public void setPresent() {
+if (isMasked())
+confidence = -(float) (p_threshold - 0.00005);
+else
+confidence = (float) (p_threshold - 0.00005);
+

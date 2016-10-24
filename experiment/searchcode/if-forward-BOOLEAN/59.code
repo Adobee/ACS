@@ -1,0 +1,11 @@
+return next == null ? this : next.getLast();
+}
+
+public ForwardDestination getForwardDestination() {
+return forwardDestination;
+}
+
+public boolean forward(NetworkPacket networkPacket) {
+boolean success = false;
+for(ForwardDestination forwardDestination : this) {
+

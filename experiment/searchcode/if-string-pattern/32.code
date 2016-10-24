@@ -1,0 +1,11 @@
+protected String[] pattern;
+
+public CmdPattern(String pattern) {
+if (pattern.equals(&quot;&quot;))
+this.pattern = new String[0];
+public boolean match(String[] args) {
+if (pattern.length > args.length)
+return false;
+
+for (int i = 0; i < pattern.length; i++) {
+

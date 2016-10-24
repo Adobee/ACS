@@ -1,0 +1,15 @@
+private void calcTrueAnomaly() {
+if (_ta == null) {
+throw new RuntimeException(&quot;not yet implemented&quot;);
+}
+}
+
+public double getTrueAnomaly() {
+if (eVec.getZ() < 0) aop = MathUtils.TWO_PI - aop;
+}
+
+// True Anomaly
+double ta = 0;
+if (Math.abs(e) > 1e-6) {
+ta = Math.acos(eVec.dotProduct(rVec) / (r * e));
+

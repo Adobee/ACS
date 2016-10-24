@@ -1,0 +1,10 @@
+a.read_value (out.create_input_stream (), type ());
+}
+
+public static Shape.Shape extract (org.omg.CORBA.Any a)
+{
+return read (a.create_input_stream ());
+public static Shape.Shape read (org.omg.CORBA.portable.InputStream istream)
+{
+return narrow (istream.read_Object (_ShapeStub.class));
+

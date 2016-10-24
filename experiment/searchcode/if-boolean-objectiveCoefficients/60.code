@@ -1,0 +1,9 @@
+* @author <a href=&quot;http://www.benmccann.com&quot;>Ben McCann</a>
+*/
+public class SimplexTable {
+
+protected RealMatrix table;
+protected final boolean nonNegative;
+public SimplexTable(LinearModel model, boolean restrictToNonNegative) {
+Map<Relationship, Integer> counts = model.getConstraintTypeCounts();
+

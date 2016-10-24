@@ -1,0 +1,8 @@
+public static double[] partialDerivatives(ModelFunction function, double[] x) {
+if (x == null || x.length == 0) {
+throw new IllegalArgumentException(&quot;Cannot calculate derivative without parameters&quot;);
+public static double[] gradientDescent(ModelFunction costFunction, Predicate<double[]> convergenceCondition,
+double[] initialTheta, double alpha) {
+
+double[] theta = Arrays.copyOf(initialTheta, initialTheta.length);
+

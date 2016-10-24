@@ -1,0 +1,8 @@
+static public Scorer<String> factory(String scorerName, Counter<String> config)
+throws IOException {
+
+if (scorerName.equals(UNIFORM_SCORER)) {
+return new UniformScorer<String>();
+} else if (scorerName.equals(STATIC_SCORER)) {
+return new StaticScorer(config);
+

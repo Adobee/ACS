@@ -1,0 +1,14 @@
+return(false);
+return(true);
+}
+
+@Override
+public void resetToExisting() {
+if (existingValue == null)
+existingValue = (DmcTypeTdlModuleREFSET) attr;
+if (existingValue != null)
+value = existingValue.getMVCopy();
+}
+
+@Override
+

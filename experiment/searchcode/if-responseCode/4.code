@@ -1,0 +1,13 @@
+* @author Andrey Pereverzin
+*/
+public enum ResponseCode {
+SUCCESS(0),
+FAILURE(-1);
+
+private final int code;
+
+private ResponseCode(int code) {
+for (ResponseCode responseCode: values()) {
+if (responseCode.getCode() == code) {
+return responseCode;
+

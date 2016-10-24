@@ -1,0 +1,14 @@
+public static void info(Object object,String msg){
+String tag=getTag(object);
+Log.i(tag, msg);
+}
+
+public static void debug(Object object,String msg){
+Log.e(tag, msg);
+}
+
+private static String getTag(Object object){
+if(object==null)return &quot;&quot;;
+String tag=&quot;&quot;;
+if(object instanceof String){
+

@@ -1,0 +1,8 @@
+private/* synchronized */int randomPort() {
+int maxRandom = ports.size();
+
+int port;
+for (int i = 0; i < 3; i++) {
+port = ports.nextClearBit((int) (Math.random() * maxRandom));
+if (port < maxRandom) {
+

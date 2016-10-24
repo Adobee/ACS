@@ -1,0 +1,13 @@
+int half=(int)Math.ceil((double)q1.size()/2);
+System.out.println(&quot;Size &quot;+half%2+&quot;\n&quot;);
+for(int i=0;i<half;i++)
+{
+q2.add(q1.poll());
+}
+if(half%2==0)
+{
+for(int i=0;i<half;i++)
+{
+q1.add(q2.poll());
+q1.add(q1.poll());
+

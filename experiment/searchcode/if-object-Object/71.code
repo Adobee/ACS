@@ -1,0 +1,13 @@
+public static Keyword intern(Symbol sym){
+Keyword k = new Keyword(sym);
+Keyword existingk = table.putIfAbsent(sym, k);
+return existingk == null ? k : existingk;
+return sym.hashCode() + 0x9e3779b9;
+}
+
+public String toString(){
+return &quot;:&quot; + sym;
+}
+
+public Object throwArity(){
+

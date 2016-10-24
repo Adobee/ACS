@@ -1,0 +1,10 @@
+public int divide(int dividend, int divisor) {
+long longDividend;
+long longDivisor;
+if (dividend >= 0) {
+longDividend = (Integer.MAX_VALUE &amp; dividend);
+longDividend = longDividend | (1 << 63);
+}
+
+if (divisor >= 0) {
+

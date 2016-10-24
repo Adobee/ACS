@@ -1,0 +1,13 @@
+public class DateTime {
+
+private int weekOfMonth;
+private int monthOfYear;
+private int year;
+private String[] month = {&quot;January&quot;, &quot;February&quot;, &quot;March&quot;, &quot;April&quot;, &quot;May&quot;, &quot;June&quot;, &quot;July&quot;, &quot;August&quot;, &quot;September&quot;, &quot;October&quot;, &quot;November&quot;, &quot;December&quot;};
+weekOfMonth = 1;
+monthOfYear = 1;
+year = 1;
+}
+
+public DateTime(int weekOfMonth, int monthOfYear, int year) {
+

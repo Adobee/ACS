@@ -1,0 +1,12 @@
+Designer(&quot;设计模式&quot;),
+Publisher(&quot;发布模式&quot;);
+
+private String desc = &quot;&quot;;
+
+private PortletRenderMode(String desc){
+this.desc = desc;
+}
+
+public static PortletRenderMode getMode(String modeStr){
+for(PortletRenderMode mode : values()){
+

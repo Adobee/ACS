@@ -1,0 +1,13 @@
+for(int i = 1; i < nums.length; i++) {
+if(nums[i] != nums[i-1] + 1) {
+String range;
+if(startRange == nums[i-1]) {
+ranges.add(range);
+startRange = nums[i];
+}
+}
+
+String range;
+int lastNum;
+if((lastNum = nums[nums.length - 1]) == startRange) {
+

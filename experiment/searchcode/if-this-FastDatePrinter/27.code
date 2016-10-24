@@ -1,0 +1,9 @@
+public boolean equals(final Object obj) {
+if (obj instanceof FastDatePrinter == false) {
+return false;
+}
+final FastDatePrinter other = (FastDatePrinter) obj;
+String value = cTimeZoneDisplayCache.get(key);
+if (value == null) {
+// This is a very slow call, so cache the results.
+

@@ -1,0 +1,12 @@
+// return this.travel == 0 &amp;&amp; this.rise == 0;
+// }
+
+public boolean isInfinite() {
+return this.travel == 0 &amp;&amp; this.rise != 0;
+return this.travel != 0 &amp;&amp; this.rise == 0;
+}
+
+public double asDouble() {
+if (this.isInfinite()) {
+throw new IllegalStateException(
+

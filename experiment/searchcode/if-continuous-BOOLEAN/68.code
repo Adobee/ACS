@@ -1,0 +1,10 @@
+int whiteLength = 0;
+int result = 0;
+boolean continuous = true;
+for (int i = 0; i < tiles.length(); i++) {
+if (tiles.charAt(i) == &#39;.&#39;)
+whiteLength ++;
+else {
+continuous = false;
+result ^= whiteLength;
+

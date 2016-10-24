@@ -1,0 +1,17 @@
+public class Year{
+private int year;
+
+public Year(int y){
+year=y;
+
+}
+
+public boolean isLeapYear(){
+if (year%4==0 ){
+
+if (year%100==0){
+
+
+if (year%400==0){
+return true;
+

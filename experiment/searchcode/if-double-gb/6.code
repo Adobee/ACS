@@ -1,0 +1,9 @@
+double maxMinusMin = (double) (max-min);
+if(max==r &amp;&amp; g>=b){
+double gb = (double) (g-b);
+h = (double)((60)*gb)/(double)maxMinusMin;
+}else
+if(max==r &amp;&amp; g<b){
+double gb = (double) (g-b);
+h = (double)((60)*gb)/(double)maxMinusMin+360;
+

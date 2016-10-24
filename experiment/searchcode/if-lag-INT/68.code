@@ -1,0 +1,14 @@
+long left = NS_PER_FRAME - delta_time;
+if (lag > 0) {
+if (lag > left) {
+lag -= left;
+left = 0;
+} else {
+left -= lag;
+lag = 0;
+}
+}
+
+if (left > 0) {
+try {
+

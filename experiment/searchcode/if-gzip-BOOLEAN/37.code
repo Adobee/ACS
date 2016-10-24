@@ -1,0 +1,9 @@
+public class ServletGzipUtil {
+/**
+* 判断浏览器是否支持 gzip 压缩
+* @param req
+* @return boolean 值
+*/
+public static boolean isGzipSupport(HttpServletRequest req) {
+String headEncoding = req.getHeader(&quot;accept-encoding&quot;);
+

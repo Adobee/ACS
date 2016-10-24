@@ -1,0 +1,11 @@
+final Pair<PreferenceType, Object> pair = this.preferences.get(name);
+
+if(pair == null)
+{
+return null;
+}
+
+if(pair.element1 != PreferenceType.ARRAY)
+{
+throw new IllegalArgumentException(&quot;The value of&quot; + name + &quot; isn&#39;t a &quot; + PreferenceType.ARRAY + &quot; but a &quot; + pair.element1);
+

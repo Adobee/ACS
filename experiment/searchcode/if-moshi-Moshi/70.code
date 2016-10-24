@@ -1,0 +1,8 @@
+package com.jaeckel.geth.json;
+
+import com.squareup.moshi.JsonAdapter;
+import com.squareup.moshi.JsonQualifier;
+public JsonAdapter<?> create(Type type, Set<? extends Annotation> annotations, Moshi moshi) {
+for (Annotation annotation : annotations) {
+if (annotation instanceof FalseToNull) {
+

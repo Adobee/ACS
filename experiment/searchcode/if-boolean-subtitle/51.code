@@ -1,0 +1,11 @@
+String sql = &quot;select * from &quot; + TABLE + &quot; where subtitle like &#39;%&quot; + ends + &quot;）&#39;&quot;;
+return query(connection, sql, null, SubTitle.class);
+}
+
+public boolean ifSubtitleEnds(String url, String ends) {
+String sql = &quot;select * from &quot; + TABLE + &quot; where subtitle like &#39;%&quot; + ends + &quot;%&#39;&quot;;
+return query(connection, sql, null, SubTitle.class);
+}
+
+public boolean ifSubtitleContains(String url, String ends) {
+

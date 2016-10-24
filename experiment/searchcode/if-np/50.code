@@ -1,0 +1,15 @@
+public  HandleTask(SimpleHandler sh, netProcess np) {
+this.handle = sh;
+this.np = np;
+}
+
+@Override
+public void run() {
+if(handle!=null &amp;&amp; np !=null)
+{
+if(np!=null)
+{
+if(np.getNetType() == nettype.close)
+{
+handle.close(np.getClient());
+

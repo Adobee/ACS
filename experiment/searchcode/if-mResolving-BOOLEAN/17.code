@@ -1,0 +1,11 @@
+boolean mStarted = false;
+
+// True if we are currently showing UIs to resolve a connection error.
+boolean mResolving = false;
+LOGW(TAG, &quot;Helper already started. Ignoring redundant call.&quot;);
+return;
+}
+
+mStarted = true;
+if (mResolving) {
+

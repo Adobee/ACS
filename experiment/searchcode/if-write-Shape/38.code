@@ -1,0 +1,17 @@
+this.size = size;
+this.shape = shape;
+}
+
+@Override
+protected void writeTo(DataWriter w) throws IOException {
+value(w,&quot;y&quot;,y);
+value(w,&quot;size&quot;,size);
+
+if (shape!=null) {
+value(w,&quot;shape&quot;,shape);
+}
+
+w.endObject();
+}
+}
+

@@ -1,0 +1,10 @@
+poly.reset();
+
+if (direction == NONE || arrowWidth <= 0) {
+poly.addPoint(bounds.getX(),bounds.getY());
+poly.addPoint(bounds.getX()+bounds.getWidth(),bounds.getY());
+return ;
+}
+if (arrowWidth > bounds.getWidth()) {
+bounds = new Rectangle2D.Double(bounds.getX(),bounds.getY(),bounds.getWidth(),bounds.getHeight());
+

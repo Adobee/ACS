@@ -1,0 +1,8 @@
+r1 = r1.e;
+r1 = r1.b;
+if (r1 == 0) goto L_0x0017;
+L_0x000c:
+r1 = com.whatsapp.App.p;
+r2 = 2131625135; // 0x7f0e04af float:1.887747E38 double:1.053162749E-314;
+r6 = r1.getString(r2);
+

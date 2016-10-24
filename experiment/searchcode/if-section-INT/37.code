@@ -1,0 +1,9 @@
+public int compressBool(int[][] section) {
+int threshold = 15;
+int delta = max(section) - min(section);
+if (delta < threshold) {
+for (int i = 0; i < section.length; i++) {
+for (int j = 0; j < section[0].length; j++) {
+if (section[i][j] > max) {
+max = section[i][j];
+

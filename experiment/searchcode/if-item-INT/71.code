@@ -1,0 +1,13 @@
+public List<BasketItem> getItems() {
+return items;
+}
+
+public void addItem(int itemId, int amount)
+{
+BasketItem item = new BasketItem(itemId, amount);
+public BasketItem getItemById(int itemId)
+{
+for (BasketItem item : items)
+{
+if (item.getItemId() == itemId)
+

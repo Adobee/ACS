@@ -1,0 +1,9 @@
+public void forecast() throws IOException{
+
+RealMatrix Curr = getCurrent();
+Curr = Curr.transpose();
+//System.out.println(Curr);
+RealMatrix tmp = B.multiply(Curr);
+Res.setSubMatrix(tmp.getData(), 0, i-1);
+Curr = updateCurrent(Curr,tmp);
+

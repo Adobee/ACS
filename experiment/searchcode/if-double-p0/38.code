@@ -1,0 +1,11 @@
+private static  final double ALPHA_AIR = 3.665e-3; // коэффициент теплового расширения воздуха при T=0-100ºC
+private double p0;
+private double h0;
+private double t;
+
+public BarometricLeveling() {
+public double getValue(double p) {
+double res = 0;
+if (p0 < 0) {
+p0 = p;
+

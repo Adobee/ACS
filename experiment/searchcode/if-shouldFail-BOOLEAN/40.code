@@ -1,0 +1,11 @@
+public Object execute() throws Throwable {
+
+if (shouldFail()) {
+throw new RuntimeException();
+System.out.println(parameter);
+Thread.sleep(500);
+}
+
+private boolean shouldFail() {
+boolean fail = false;
+

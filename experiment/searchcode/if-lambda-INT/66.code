@@ -1,0 +1,8 @@
+public class RegularSpectralCurve extends SpectralCurve {
+private final float[] spectrum;
+private final float lambdaMin, lambdaMax;
+private final float delta, invDelta;
+// reject wavelengths outside the valid range
+if (lambda < lambdaMin || lambda > lambdaMax)
+return 0;
+

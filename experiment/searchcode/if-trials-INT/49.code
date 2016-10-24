@@ -1,0 +1,11 @@
+private static final long serialVersionUID = 6751309484392813623L;
+
+private int numberOfTrials;
+
+private double probabilityOfSuccess;
+
+public BinomialDistributionImpl(int trials ,double p) {
+private void setNumberOfTrialsInternal(int trials) {
+if (trials < 0) {
+throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(&quot;number of trials must be non-negative ({0})&quot;, trials);
+

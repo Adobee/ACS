@@ -1,0 +1,8 @@
+package com.yutax77.java8_ans.chap5;
+
+import java.time.LocalDateTime;
+import java.time.temporal.TemporalUnit;
+public static class TimeInterval {
+private LocalDateTime start;
+private LocalDateTime end;
+

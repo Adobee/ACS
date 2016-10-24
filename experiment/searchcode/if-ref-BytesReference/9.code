@@ -1,0 +1,7 @@
+package org.elasticsearch.common.text;
+
+import org.elasticsearch.common.bytes.BytesReference;
+// LUCENE 4 UPGRADE: Is this the right way of comparing bytesreferences inside Text instances?
+// Copied from Lucene&#39;s BytesRef comparator
+public class UTF8SortedAsUnicodeComparator implements Comparator<BytesReference> {
+

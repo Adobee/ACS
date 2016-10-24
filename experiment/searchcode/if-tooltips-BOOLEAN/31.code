@@ -1,0 +1,11 @@
+this(text, 0xffffff, 0xffffff, true, tooltips);
+}
+
+public Label(String text, int color, int hoverColor, boolean center, Widget... tooltips) {
+this.tooltips = new ArrayList<Widget>();
+for (Widget w : tooltips)
+this.tooltips.add(w);
+}
+
+public Label(String text, boolean center, Widget... tooltips) {
+

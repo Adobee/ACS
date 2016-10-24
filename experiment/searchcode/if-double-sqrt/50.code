@@ -1,0 +1,15 @@
+if (n<0) {
+n *= -1;
+negative = true;
+}
+
+double sqrtVal = pow(x, n/2);
+double val = sqrtVal * sqrtVal;
+
+if (n%2 == 1) val *= x;
+
+if (negative) val = 1/val;
+return val;
+}
+}
+

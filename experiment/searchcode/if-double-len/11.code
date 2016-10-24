@@ -1,0 +1,9 @@
+// dp[i] = dp[i-1]+Max{T + len - C > 0 ? C/VT1 + len-C / VT2 : len/VT1 , (C-tempC)/VT1 + (len - (C - tempC) > 0?len - (C - tempC) : 0 )/VT2}
+double dp[] = new double[N + 2];
+dp[0] = 0;
+for (int i = 1; i <= N + 1; i++) {
+for (int j = 0; j < i; j++) {
+double len = P[i] - P[j];
+if (len > C) {
+time = C / VT1 + (len - C) / VT2;
+

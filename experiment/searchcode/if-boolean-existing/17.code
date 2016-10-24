@@ -1,0 +1,7 @@
+List<ReleasePackage> originals = releasePackageRepository.findByMemberOrderByPriorityDesc(releasePackage.getMember());
+List<ReleasePackage> existing = new ArrayList<ReleasePackage>(originals);
+boolean removed = existing.remove(releasePackage);
+int matchedIndex = existing.size();
+if (removed) {
+for (int i = 0; i < existing.size(); i++) {
+

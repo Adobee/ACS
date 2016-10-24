@@ -1,0 +1,11 @@
+public static <T> T[] arraySample(T[] collection, int sampleSize) {
+T[] list;
+
+if(collection.length < sampleSize) {
+return collection;
+for(int i = 0; i < collection.length; i++) {
+if(i < sampleSize) {
+list[i] = collection[i];
+} else {
+final int rnd = rand.nextInt(i);
+

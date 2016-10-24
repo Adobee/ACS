@@ -1,0 +1,9 @@
+shapePrototypes.put(ShapeType.SQUARE, new Square());
+}
+
+public static Shape getShape(ShapeType shapeType, double...value) throws CloneNotSupportedException {
+Shape shape = (Shape)shapePrototypes.get(shapeType).clone();
+shape.setWidth(width);
+
+if(shapeType == ShapeType.RECTANGLE) {
+

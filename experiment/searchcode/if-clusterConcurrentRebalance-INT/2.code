@@ -1,0 +1,11 @@
+* @see cn.com.rebirth.search.core.node.settings.NodeSettingsService.Listener#onRefreshSettings(cn.com.rebirth.commons.settings.Settings)
+*/
+@Override
+public void onRefreshSettings(Settings settings) {
+int clusterConcurrentRebalance = settings.getAsInt(
+public boolean canRebalance(ShardRouting shardRouting, RoutingAllocation allocation) {
+if (clusterConcurrentRebalance == -1) {
+return true;
+}
+int rebalance = 0;
+

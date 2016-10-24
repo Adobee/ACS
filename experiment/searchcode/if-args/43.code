@@ -1,0 +1,10 @@
+public static String concatenateArguments(String[] args) {
+String concatenatedArgs = &quot;&quot;;
+
+for (String arg : args) {
+concatenatedArgs += arg + &quot;-&quot;;
+}
+
+if (args.length > 0) {
+concatenatedArgs = concatenatedArgs.substring(0, concatenatedArgs.length() - 1);
+

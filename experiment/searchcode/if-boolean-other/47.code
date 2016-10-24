@@ -1,0 +1,8 @@
+final GetterLazyBoolean other = (GetterLazyBoolean) o;
+if (!other.canEqual((java.lang.Object) this)) return false;
+if (this.isBooleanValue() != other.isBooleanValue()) return false;
+java.lang.Object value = this.otherBooleanValue.get();
+if (value == null) {
+synchronized (this.otherBooleanValue) {
+value = this.otherBooleanValue.get();
+

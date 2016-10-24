@@ -1,0 +1,6 @@
+final double relativeSymmetryThreshold,
+final double absolutePositivityThreshold) {
+final double maxDelta =
+relativeSymmetryThreshold * FastMath.max(FastMath.abs(lIJ), FastMath.abs(lJI));
+if (FastMath.abs(lIJ - lJI) > maxDelta) {
+

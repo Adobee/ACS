@@ -1,0 +1,6 @@
+if (getEnergyStored() >= 50) {
+for (int xRange = -range; xRange <= range; xRange++) {
+if (!(xRange == 0)) {
+world.spawnParticle(&quot;reddust&quot;, x + xRange + .5, y + .5, z + .5, 255, 0, 0);
+if (world.getBlock(x + xRange, y, z) != null &amp;&amp; world.getTileEntity(x + xRange, y, z) != null &amp;&amp; world.getTileEntity(x + xRange, y, z) instanceof TileSolarFlux) {
+

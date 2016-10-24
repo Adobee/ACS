@@ -1,0 +1,7 @@
+* @throws IOException in case of bad things happen during storage access
+*/
+public double getFactor(int v1) throws IOException {
+String[] factors = storage.readFactors();
+isLessThan(v1, factors.length);
+double factor = Double.valueOf(factors[v1]);
+

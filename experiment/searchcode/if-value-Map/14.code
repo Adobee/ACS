@@ -1,0 +1,9 @@
+private Map<CompositeMap, String> mapID = new HashMap<CompositeMap, String>();
+
+public String getID(CompositeMap map) {
+String id = mapID.get(map);
+if (id == null) {
+String valueOf = String.valueOf(idMap.size());
+idMap.put(valueOf, map);
+mapID.put(map, valueOf);
+

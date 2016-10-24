@@ -1,0 +1,6 @@
+String json = jsonBuilder().startObject()
+.field(Fuzziness.X_FIELD_NAME, floatValue)
+.endObject().string();
+String json = jsonBuilder().startObject()
+.field(Fuzziness.X_FIELD_NAME, randomBoolean() ? value.toString() : value)
+

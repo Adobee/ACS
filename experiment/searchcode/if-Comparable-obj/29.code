@@ -1,0 +1,9 @@
+return comparable.hashCode();
+}
+
+@Override
+public boolean equals(final Object obj) {
+return comparable.equals(maybeUnwrapComparable(obj));
+public static Comparable maybeUnwrapComparable(final Object obj) {
+if (obj instanceof ComparableString) {
+

@@ -1,0 +1,14 @@
+for(int j=i; j<n; j++){
+if(ia[i][1]>ia[j][1]){
+int temp = ia[j][0];
+ia[j][0] = ia[i][0];
+ia[i][0] = temp;
+ia[i][1] = temp2;
+}
+}
+}
+int count=0;
+int start = ia[0][1];
+for(int i=1; i<n; i++){
+if(start<ia[i][0]) {
+

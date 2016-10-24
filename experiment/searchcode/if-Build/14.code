@@ -1,0 +1,6 @@
+BuildCommand nextBuild = buildCommand.getNextBuildCommand();
+if (nextBuild != null) {
+collectBuildCommands(nextBuild, list);
+Set<BuildStatus> set = new TreeSet<BuildStatus>(values);
+if(set.isEmpty() &amp;&amp; buildNumber.getBuildStatus() != BuildStatus.NOT_RUNNING) {
+

@@ -1,0 +1,10 @@
+import javax.lang.model.type.TypeVisitor;
+import javax.lang.model.type.WildcardType;
+
+final class DefaultWildcardTypeAlias extends AbstractTypeMirrorAlias<WildcardType> implements WildcardTypeAlias {
+this.extendsBound = AliasTypes.get(typeMirror.getExtendsBound());
+}
+
+static WildcardTypeAlias of(WildcardType wildcardType) {
+if (wildcardType instanceof WildcardTypeAlias) {
+

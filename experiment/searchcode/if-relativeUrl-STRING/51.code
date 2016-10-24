@@ -1,0 +1,8 @@
+// Servlet mapping
+String servletPath = request.getServletPath();
+
+String relativeUrl = requestURI;
+
+// Remove application context path
+if (contextPath != null &amp;&amp; relativeUrl.startsWith(contextPath)) {
+

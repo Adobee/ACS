@@ -1,0 +1,11 @@
+if(materials.contains(block.material))
+{
+if(debug)
+block = new AbstractBlock(Material.GLASS, (byte) 0);
+block = new AbstractBlock(Material.GLASS, (byte) 1);
+else
+block = blockForFilling;
+}
+
+if(block.material == Material.AIR)
+

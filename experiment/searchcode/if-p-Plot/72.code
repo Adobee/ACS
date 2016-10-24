@@ -1,0 +1,6 @@
+* Plot given experiments.  If the given {@link Plot} object is
+* {@code null}, a new plot is generated and saved to the cart.
+* @param experiments Experiments to plot
+* @param params Plotting parameters
+* @param cart A shopping cart.  If {@code plot} is null and a new
+

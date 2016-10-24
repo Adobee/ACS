@@ -1,0 +1,10 @@
+class InternalPrinterDateTimePrinter implements DateTimePrinter, InternalPrinter {
+
+private final InternalPrinter underlying;
+
+static DateTimePrinter of(InternalPrinter underlying) {
+return ((DateTimePrinterInternalPrinter) underlying).getUnderlying();
+}
+if (underlying instanceof DateTimePrinter) {
+return (DateTimePrinter) underlying;
+

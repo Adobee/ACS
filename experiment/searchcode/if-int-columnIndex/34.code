@@ -1,0 +1,8 @@
+public Class<?> getColumnClass(int columnIndex) {
+if (columnIndex == 2)
+return Boolean.class;
+else if(columnIndex == 3)
+public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
+if(columnIndex == 2) {
+if((Boolean)aValue) {
+

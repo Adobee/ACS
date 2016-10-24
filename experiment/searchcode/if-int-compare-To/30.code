@@ -1,0 +1,9 @@
+public int compare(DBSegment o1, DBSegment o2) {
+int comparePath = o1.getSourceFile().getPath()
+.compareTo(o2.getSourceFile().getPath());
+if (comparePath != 0) {
+return comparePath;
+}
+
+int compareStart = ((Integer) o1.getStartPosition()).compareTo(o2
+

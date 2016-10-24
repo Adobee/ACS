@@ -1,0 +1,14 @@
+public class Step_N_Problem {
+private static int STEP_N = 5;
+
+public Step_N_Problem(){
+int sum = calSteps(STEP_N);
+if(n == 1)
+return 1;
+if(n == 2)
+return 2;
+
+int oneStep = 2;
+int twoStep = 1;
+for(int i =3; i<=n; i++) {
+

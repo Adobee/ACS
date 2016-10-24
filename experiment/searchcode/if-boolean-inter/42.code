@@ -1,0 +1,8 @@
+public void dfs (ArrayList<ArrayList<String>> ret, ArrayList<String> inter, int step, String s){
+if(step==s.length()){
+ArrayList<String> temp = new ArrayList<String>(inter);
+for(int i=step;i<s.length();i++){
+if(isValid(s,step,i)){
+inter.add(s.substring(step,i+1));
+dfs(ret,inter,i+1,s);
+

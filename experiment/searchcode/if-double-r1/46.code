@@ -1,0 +1,7 @@
+public static double Payment(double debtPayment, double housePayment){
+if(debtPayment<housePayment){
+return debtPayment;
+public static double pv(double r, double n, double Payment, double f, boolean t) {
+double retval = 0;
+if (r == 0) {
+

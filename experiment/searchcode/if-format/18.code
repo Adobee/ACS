@@ -1,0 +1,10 @@
+package org.andersonkmi.service;
+
+public enum ConversionFormat {
+
+HTML(&quot;html&quot;),
+PLAIN_TEXT(&quot;plain&quot;),
+public static ConversionFormat findByFormatName(String format) {
+for(ConversionFormat item : values()) {
+if(item.getFormatName().equals(format)) {
+

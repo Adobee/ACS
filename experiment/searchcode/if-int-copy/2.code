@@ -1,0 +1,12 @@
+public long minArea(int[] x, int[] y, int K) {
+int[] xCopy = new int[x.length];
+int[] yCopy = new int[y.length];
+
+xCopy = Arrays.copyOf(x, x.length);
+Arrays.sort(xCopy);
+Arrays.sort(yCopy);
+
+long min = Long.MAX_VALUE;
+
+for(int i = 0; i < xCopy.length; ++i) {
+

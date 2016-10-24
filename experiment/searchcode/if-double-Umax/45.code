@@ -1,0 +1,5 @@
+public double xv, yv, zv;   /* Coordinates of end of V vector (relative to origin) - corresponds to v=1.0 (upper left corner) */
+public double umin, umax;   /* Limits of patch - minimum and maximum u value */
+double yu, double zu, double xv, double yv, double zv, double umin,
+double umax, double vmin, double vmax, double uplusvmax, SideVisible sidevis,
+

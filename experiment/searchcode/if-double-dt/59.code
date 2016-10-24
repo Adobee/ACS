@@ -1,0 +1,9 @@
+public IDatatype plus(IDatatype dt) {
+switch (getCode()){
+case DOUBLE:
+return new CoreseDouble(doubleValue() + dt.doubleValue());
+
+case FLOAT:
+switch (dt.getCode()){
+case DOUBLE: return new CoreseDouble(doubleValue() + dt.doubleValue());
+

@@ -1,0 +1,12 @@
+public static double innerProduct(double[] v1,double[] v2)
+{
+if(v1.length!=v2.length)
+{
+throw new IllegalArgumentException(&quot;v1,v2长度不相等，无法计算内积&quot;);
+return s;
+}
+
+//	public static double fixInnerProduct(double[] v1,double[] v2)
+//	{
+//		if(v1.length+1!=v2.length)
+

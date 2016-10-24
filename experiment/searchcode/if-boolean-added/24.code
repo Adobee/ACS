@@ -1,0 +1,11 @@
+import java.util.Collection;
+
+public class ArrayListSet<E> extends ArrayList<E> {
+
+@Override
+public boolean add(E add) {
+public boolean addAll(Collection<? extends E> allAdd) {
+boolean added = false;
+for (E add : allAdd)
+if (!contains(add)) {
+

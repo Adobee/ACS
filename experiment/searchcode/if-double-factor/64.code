@@ -1,0 +1,8 @@
+public abstract class Rescaling extends GeneticOperator  {
+static double DEFAULT_FACTOR = 2.0;
+protected double factor = DEFAULT_FACTOR;
+try{
+setFactor(Double.parseDouble(str));
+}catch( Exception e){
+setFactor(DEFAULT_FACTOR);
+

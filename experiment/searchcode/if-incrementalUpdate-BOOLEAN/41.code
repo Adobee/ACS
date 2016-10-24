@@ -1,0 +1,10 @@
+return nFullUpdateHour == new GregorianCalendar().get(Calendar.HOUR_OF_DAY);
+}
+
+private boolean timeForFullUpdate() {
+if (isFullUpdateDay()) {
+else incrementalUpdate();
+}
+else if (&quot;update&quot;.equals(sTask)) incrementalUpdate();
+else if (&quot;harvest&quot;.equals(sTask)) harvest();
+

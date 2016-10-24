@@ -1,0 +1,7 @@
+public String getResultAsCSVString(Integer numOfSlots, Long slotPeriod) {
+StringBuilder strBuilder = new StringBuilder();
+String periodHeadLine = this.buildCSVMinsHeaderLine(numOfSlots, slotPeriod);
+strBuilder.append(&quot;Count of Cars     > &quot;);
+strBuilder.append(this.buildCSVString(this.dataAggregator.aggregateCounts(numOfSlots, day)));
+strBuilder.append(&quot;\n&quot;);
+

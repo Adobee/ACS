@@ -1,0 +1,8 @@
+public class BaseTileEntity extends TileEntity {
+private boolean initialized = false;
+
+@Override
+public void updateEntity() {
+if ((!initialized) &amp;&amp; (!isInvalid())) {
+initialize();
+

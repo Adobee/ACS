@@ -1,0 +1,16 @@
+package decorator;
+
+abstract public class Decorator extends Component {
+
+private Component component;
+
+Decorator(Component component) {
+this.component = component;
+}
+
+void operation() {
+if (component == null)return;
+component.operation();
+}
+}
+

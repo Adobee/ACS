@@ -1,0 +1,6 @@
+public <T> void add(final Class<T> listenerType, final T listener) {
+listeners.add(listenerType, listener);
+@SuppressWarnings(&quot;unchecked&quot;)
+public <T> List<T> get(final Class<T> listenerType) {
+if (listeners.containsKey(listenerType)) {
+

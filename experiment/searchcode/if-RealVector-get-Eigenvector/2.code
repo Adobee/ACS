@@ -1,0 +1,6 @@
+double minD = Double.MAX_VALUE;
+RealVector aV = eigenA.getEigenvector(i);
+for (int j=0 ; j<A.getColumnDimension() ; ++j){
+RealVector v = adjustedEigenA.getEigenvector(j);
+double d = v.getDistance(aV);
+

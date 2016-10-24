@@ -1,0 +1,8 @@
+* @param initialise
+* @param instance
+*/
+public Population(int populationSize, boolean initialise, readData instance) {
+// Loop through individuals to find fittest
+for (int i = 1; i < populationSize(); i++) {
+if (fittest.getFitness() <= getTour(i).getFitness()) {
+

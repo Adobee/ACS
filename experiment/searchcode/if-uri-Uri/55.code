@@ -1,0 +1,9 @@
+UriModel uri = uriMappingProvider.get(uriName);
+if (uri == null) {
+throw new IllegalStateException(&quot;there is no uri named &quot; + uriName);
+* @return
+*/
+public static String getFactoryURI(String uriName) {
+if (thisHolder == null) {
+throw new IllegalStateException(&quot;UriService is not init&quot;);
+

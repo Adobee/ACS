@@ -1,0 +1,12 @@
+public class SymbolStream {
+public SymbolStream() {
+symbols = new LinkedList<Symbol>();
+}
+
+public SymbolStream(SymbolStream other) {
+symbols.addFirst(value);
+if (symbols.size() > streamCapacity) symbols.removeLast();
+}
+
+public boolean isEnd() { return symbols.isEmpty() || symbols.getFirst() == Symbol.emptySymbol; }
+

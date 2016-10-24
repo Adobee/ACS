@@ -1,0 +1,11 @@
+package unit4;
+
+public class Circle implements Shape, ConstantsUnit4 {
+
+private double radius;
+public double getArea() throws AreaNonExistException {
+
+double area = Math.PI * this.radius * this.radius;
+
+if (area <= 0 ) {throw new AreaNonExistException(area);}
+

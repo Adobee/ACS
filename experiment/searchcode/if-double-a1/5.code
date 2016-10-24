@@ -1,0 +1,13 @@
+a += 360;
+return a;
+}
+
+static public boolean isBetweenA(double a, double a1, double a2){
+if(a1>a2){
+double a3 = a2;
+a2 = a1;
+a1 = a3;
+}
+//a2 is the bigger angle
+if(a2-a1 > 180 &amp;&amp; (a>a2 || a<a1))
+

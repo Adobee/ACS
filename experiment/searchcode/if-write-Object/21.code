@@ -1,0 +1,11 @@
+// Object,null,Object[],primitive[],enum,不能写循环引用
+private void writeObjectImpl(Object object, DataOutputStream out)
+throws IOException
+{
+if(isNullObject(object))
+writeNullObject(object, out);
+
+}else if(isReuseObject(object))
+{
+out.writeInt(ObjectStreamSupport.REUSE_OBJECT);
+

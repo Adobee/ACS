@@ -1,0 +1,13 @@
+package mountain;
+
+public class Side {
+public Point p1;
+public Point p2;
+public Point middle;
+return middle;
+}
+
+public boolean equals(Object obj) {
+if (obj instanceof Side) {
+return p1.equals(((Side) obj).p1) &amp;&amp; p2.equals(((Side) obj).p2) || p1.equals(((Side) obj).p2) &amp;&amp; p2.equals(((Side) obj).p1);
+

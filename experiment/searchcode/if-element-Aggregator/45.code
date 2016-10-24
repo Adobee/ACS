@@ -1,0 +1,7 @@
+processAffectedResources(event);
+// verifications: 1 aggregator + 2 fields + 2 methods added
+assertThat(metamodelMonitor.getElementChanges().size(), equalTo(5));
+processAffectedResources(event);
+// verifications: 1 aggregator + 2 fields + 2 methods removed
+assertThat(metamodelMonitor.getElementChanges().size(), equalTo(5));
+

@@ -1,0 +1,9 @@
+/** This threadlocal integer is used to track how many attempts have been made to open a new session
+*   within an existing session on the same thread.  If the depth is not zero, then closing the session
+protected int getStackDepth() {
+return sessionStackDepth.get();
+}
+
+protected boolean stackEmpty() {
+return (sessionStackDepth.get() == 0);
+

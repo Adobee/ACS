@@ -1,0 +1,10 @@
+public static List<String> lerNomeArquivos(File initialPath, int initialDepth) {
+// Use assim (exemplo):
+//
+//        String dir = &quot;/Users/charleshenriqueportoferreira/Documentos/&quot;;
+public static List<String> fileTreePrinter(File initialPath, int initialDepth) {
+
+int depth = initialDepth++;
+if (initialPath.exists()) {
+File[] contents = initialPath.listFiles();
+

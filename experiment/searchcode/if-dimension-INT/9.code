@@ -1,0 +1,9 @@
+public void setDimensionValue(String dimensionValue) {
+this.dimensionValue = dimensionValue;
+}
+@Override
+public int hashCode() {
+public boolean equals(Object o) {
+if(o != null &amp;&amp; o instanceof DimensionValue)
+return ((DimensionValue) o).dimensionValue.equals(this.dimensionValue) &amp;&amp; ((DimensionValue) o).dimension.equals(this.dimension);
+

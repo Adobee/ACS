@@ -1,0 +1,8 @@
+c.addVar(lhs.toString(),ConstraintManager.CVar2PrologPrimedVar(lhs.toString()));
+if (lhs instanceof AIdExpression) {
+for (Pair<Term,ArrayList<Term>> t: expressionToCLP(exp)) {
+AInitializer initializer = vdecl.getInitializer();
+String varName = vdecl.getName();
+Term lhs = CVar2PrologPrimedVar(varName);
+if (initializer != null) {
+

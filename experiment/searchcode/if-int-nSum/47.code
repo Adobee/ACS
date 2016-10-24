@@ -1,0 +1,12 @@
+public static Map<Integer,Integer> getNumHighComp(int arr[], int sum){
+Map<Integer,Integer> map = new HashMap<Integer,Integer>();
+int nsum;
+for( int j = i+1 ; j < arr.length ; j++ ){
+nsum = arr[i] + arr[j];
+if( nsum == sum)
+map.put(arr[i], arr[j]);
+}
+}
+
+return map;
+

@@ -1,0 +1,8 @@
+private static final long serialVersionUID = -8346152187724495365L;
+
+/** The size of the unit */
+private final long iUnitMillis;
+public PreciseDurationField(DurationFieldType type, long unitMillis) {
+super(type);
+iUnitMillis = unitMillis;
+

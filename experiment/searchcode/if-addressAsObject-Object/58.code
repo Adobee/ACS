@@ -1,0 +1,7 @@
+oldValue = Magic.prepareAddress(Magic.addressAsObject(addr), Offset.zero());
+newValue = oldValue.plus(increment);
+if (newValue.GT(bound)) return Address.max();
+oldValue = Magic.prepareAddress(Magic.addressAsObject(addr), Offset.zero());
+newValue = oldValue.minus(decrement);
+if (newValue.LT(bound)) return Address.max();
+

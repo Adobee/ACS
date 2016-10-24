@@ -1,0 +1,12 @@
+.append(ipAddr)
+.append(&quot; &quot;)
+.append(connected ? &quot;up&quot; : &quot;down&quot;);
+if (hasStats()) {
+return str.toString();
+}
+
+public boolean hasStats() {
+if (!connected) {
+return false;
+} else if (bw_down_Bps == 0 &amp;&amp; bw_up_Bps == 0 &amp;&amp; rtt_ms == 0) {
+

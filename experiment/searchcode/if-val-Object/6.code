@@ -1,0 +1,11 @@
+private Object test11(@NotNull Object defVal, @Nullable final Object val) {
+if (val != null) {
+return val;
+}
+return defVal;
+}
+@NotNull
+private Object test5(@NotNull Object defVal, @Nullable final Object val) {
+if (defVal == val) {
+return val;
+

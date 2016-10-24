@@ -1,0 +1,10 @@
+sig.initSign(keyPair.getPrivate());
+sig.update(DATA);
+byte[] signature = sig.sign();
+assertNotNull(sig.getAlgorithm(), signature);
+Signature sig = Signature.getInstance(&quot;SHA1withRSA&quot;);
+sig.initSign(privKey);
+sig.update(Vector1Data);
+
+byte[] signature = sig.sign();
+

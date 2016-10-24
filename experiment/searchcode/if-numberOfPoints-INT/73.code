@@ -1,0 +1,11 @@
+//		BigInteger[] gammaValueArray = (BigInteger[]) gammaValues.toArray();
+
+int numberOfPoints = fuzzyVaultPoints.size();
+if(numberOfPoints < termsInPoly+1){
+System.out.println(&quot;not enough points to try&quot;);
+System.out.println(&quot;need: &quot; + (termsInPoly+1) + &quot;  have: &quot;+ numberOfPoints);
+return null;
+}
+
+int maxPoints = FuzzyVaultSettings.getInstance().maxPointsForDecoding().getValue().intValue();
+

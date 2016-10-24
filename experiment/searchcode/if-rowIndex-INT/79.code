@@ -1,0 +1,7 @@
+public Object getValueAt(int rowIndex, int columnIndex) {
+if (rowIndex == 0 &amp;&amp; columnIndex == 0){
+return &quot;Всего: часов&quot;;
+}
+if (rowIndex == 1 &amp;&amp; columnIndex == 1){
+return rows.get(0)[0];
+

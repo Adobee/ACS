@@ -1,0 +1,12 @@
+* It helps us to do the complete lineage from source to target and back.<br>
+*
+* @author matt
+*
+*/
+public class FieldnameLineage {
+private String inputFieldname;
+private String outputFieldname;
+
+/**Create a new field lineage object
+* @param inputFieldname The input field name
+

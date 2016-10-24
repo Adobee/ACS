@@ -1,0 +1,10 @@
+connector =db;
+}
+
+protected AMockRepository(Class<T> type, CouchDbConnector db, boolean createIfNotExists) {
+super(type, db, createIfNotExists);
+connector =db;
+}
+
+protected AMockRepository(Class<T> type, CouchDbConnector db, String designDocName) {
+

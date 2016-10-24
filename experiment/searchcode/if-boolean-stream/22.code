@@ -1,0 +1,8 @@
+public class AnyStream<T> extends DirectStream<T> {
+
+private Predicate<T> test;
+private Future<Boolean> future = new Future<Boolean>();
+
+public AnyStream(Stream<T> parent, Predicate<T> test) {
+this.test = test;
+

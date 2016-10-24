@@ -1,0 +1,8 @@
+public final class MonthlyTrigger implements DynamicTrigger {
+private final String name;
+private final Job job;
+private final int dayOfMonth;
+private final LocalTime time;
+
+public MonthlyTrigger(String name, Job job, int dayOfMonth, LocalTime time) {
+

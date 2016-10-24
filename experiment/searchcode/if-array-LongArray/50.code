@@ -1,0 +1,11 @@
+for (i = 0; i < nElem; i++) {
+if (longArray[i] == elem)
+break;
+}
+if (i == nElem)
+return -1;				//elem not found
+int index = (lowerBound + upperBound) / 2;
+if (longArray[index] == elem)
+return index;
+else if (lowerBound == upperBound)
+

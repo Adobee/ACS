@@ -1,0 +1,9 @@
+public final class ReflecaoUtils {
+
+public static boolean isInsert(Object objeto) {
+try {
+Class<?> classe = Class.forName(objeto.getClass().getName());
+Method metodoSet = classe.getMethod(&quot;setId&quot;, Integer.class);
+
+if (IntegerUtils.isInsert((Integer) metodoGet.invoke(objeto))) {
+

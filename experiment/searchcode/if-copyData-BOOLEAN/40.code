@@ -1,0 +1,14 @@
+copyData(data, len);
+}
+
+private void copyData(byte[] data, int len) {
+if ( data.length < len)
+System.arraycopy(data, 0, buffer, 0, data.length);
+System.arraycopy(data, 0, buffer, 0, len);
+}
+
+public boolean equals(Object obj) {
+CString str = (CString)obj;
+
+if ( str.toString().equals(this.toString()) )
+

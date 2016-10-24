@@ -1,0 +1,16 @@
+public void setContentSize(Integer contentSize) {
+this.contentSize = contentSize;
+}
+
+/**
+* Gets if the contact has a picture (determined by the content size)
+@JsonProperty
+public Boolean hasPicture() {
+if(this.contentSize > 0) {
+return Boolean.TRUE;
+} else {
+return Boolean.FALSE;
+}
+}
+}
+

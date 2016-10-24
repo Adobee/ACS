@@ -1,0 +1,7 @@
+* @return
+*/
+public <T> T getIfPresent(QueueTtlKey queueTtlKey) {
+TtlCache<T> ttlCache = getTtlCache(queueTtlKey.getQeueue());
+if (ttlCache == null) {
+return null;
+

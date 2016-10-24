@@ -1,0 +1,11 @@
+public Log5(double accuracy, boolean fromTable) {
+super(accuracy, fromTable);
+}
+
+public Log5(double accuracy) {
+super(accuracy);
+}
+
+public Log5() {
+super();
+

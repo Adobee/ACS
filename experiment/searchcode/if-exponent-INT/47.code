@@ -1,0 +1,9 @@
+public double power(double base, int exponent){
+if(equal(base, 0.0) &amp;&amp; exponent < 0){
+invalidInput = true;
+return 0.0;
+}
+int absExponent = exponent;
+if(exponent < 0) absExponent = -exponent;
+double result = powerWithAbsExponent(base, absExponent);
+

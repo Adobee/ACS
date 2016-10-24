@@ -1,0 +1,5 @@
+public Ticker deserialize(JsonParser jp, DeserializationContext ctxt) throws IOException, JsonProcessingException {
+BigDecimal high, last, buy, vol, low, sell;
+JsonToken t = jp.getCurrentToken();
+if (t.equals(JsonToken.START_OBJECT)) {
+

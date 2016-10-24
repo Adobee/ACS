@@ -1,0 +1,8 @@
+// Use the current time as the default values for the picker
+final Calendar c = Calendar.getInstance();
+int hour = c.get(Calendar.HOUR_OF_DAY);
+public void onTimeSet(TimePicker view, int hourOfDay, int minute) {
+Calendar c = Calendar.getInstance();
+int defaultYear = c.get(Calendar.YEAR);
+int defaultDay = c.get(Calendar.DAY_OF_MONTH);
+

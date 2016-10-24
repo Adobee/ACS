@@ -1,0 +1,9 @@
+private static final Long RELOAD_EVERY = 30000L;
+
+private void checkTimeout() {
+if (start == null) {
+start = new Date().getTime();
+//			log.info(&quot;start at : &quot;+ start.toString());
+//		log.info(&quot;new Date().getTime() - start >= RELOAD_EVERY : &quot;+ (new Date().getTime() - start >= RELOAD_EVERY));
+if (new Date().getTime() - start >= RELOAD_EVERY) {
+

@@ -1,0 +1,7 @@
+public ExtraLayer(BufferedImage layerImage, int inicialXOffset){
+this.layerImage = layerImage;
+this.xoffset = inicialXOffset;
+yoffset = stage.getHeight() - layerImage.getHeight() - stage.getCameraY();
+
+mainPencil.drawImage(layerImage, (int)xoffset, (int)yoffset, width, height, null);
+

@@ -1,0 +1,8 @@
+package org.alvarogp.nettop.metric.domain.model.metric.list;
+
+import org.alvarogp.nettop.metric.domain.model.metric.Metric;
+boolean keepMetric = metricFilter.call(metric);
+if (!keepMetric) {
+metrics.remove(i);
+i--; // do not advance counter
+

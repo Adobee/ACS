@@ -1,0 +1,8 @@
+public Object add(Object key, Object value)
+{
+Object result = null;
+int keyIndex = locateIndex(key);
+
+if ( (keyIndex < entries.size()) &amp;&amp;
+key.equals(((Entry)entries.elementAt(keyIndex)).getKey()))
+

@@ -1,0 +1,10 @@
+case CONTAINS:
+queryBuilder.append(&quot; LIKE ? &quot;);
+break;
+}
+if (entry.getSuffix() != null &amp;&amp; !entry.getSuffix().isEmpty()) {
+valuesBuilder.append(&quot;?&quot;);
+if (count == table.getFields().size()) {
+query.append(&quot;) &quot;);
+valuesBuilder.append(&quot;)&quot;);
+

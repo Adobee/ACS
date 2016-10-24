@@ -1,0 +1,17 @@
+public boolean hasNext()
+{
+return (iter != null);
+}
+
+public int next() throws NoSuchElementException
+{
+if (iter == null)
+throw new NoSuchElementException();
+
+int ergebnis = iter.getWert();
+iter = iter.getNachfolger();
+
+return ergebnis;
+}
+}
+

@@ -1,0 +1,13 @@
+private String[] romanNumerals = new String[]{ &quot;&quot;, &quot;C&quot;, &quot;XC&quot;, &quot;L&quot;, &quot;XL&quot;, &quot;X&quot;, &quot;V&quot;, &quot;IV&quot; };
+
+public String fromInt(int n) {
+if(n <= 0)
+return &quot;&quot;;
+
+if(n < 4){
+return romanNumeral;
+}else if(n < 9){
+String five = &quot;V&quot;;
+if(n > 5){
+return five + fromInt(n - 5);
+

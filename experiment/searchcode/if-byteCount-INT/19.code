@@ -1,0 +1,11 @@
+final int result = this.delegate.read();
+
+if (-1 != result) {
+byteCount.incrementAndGet();
+}
+
+return result;
+public static final AtomicLong byteCount = new AtomicLong();
+
+public static final int count(final int byteCount) {
+

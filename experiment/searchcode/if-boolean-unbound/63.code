@@ -1,0 +1,9 @@
+public Binding determineBinding(LogicObject unbound) {
+if (unbound instanceof Variable)
+{
+return new Binding(this, (Variable) unbound);
+}
+else if (unbound instanceof Constant)
+{
+if (this.equals(unbound))
+

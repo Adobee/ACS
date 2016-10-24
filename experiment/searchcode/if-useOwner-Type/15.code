@@ -1,0 +1,11 @@
+private final Type[] typeArguments;
+
+/**
+* Constructor
+* @param raw type
+* @param useOwner owner type to use, if any
+Validate.notNull(raw, &quot;raw class is null&quot;);
+final Type useOwner;
+if (raw.getEnclosingClass() == null) {
+Validate.isTrue(owner == null, &quot;no owner allowed for top-level %s&quot;, raw);
+

@@ -1,0 +1,10 @@
+public class CardinalityBuilder extends ValuesSourceMetricsAggregationBuilder<CardinalityBuilder> {
+
+private Long precisionThreshold;
+private Boolean rehash;
+super(name, InternalCardinality.TYPE.name());
+}
+
+public CardinalityBuilder precisionThreshold(long precisionThreshold) {
+this.precisionThreshold = precisionThreshold;
+

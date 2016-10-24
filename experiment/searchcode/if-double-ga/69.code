@@ -1,0 +1,7 @@
+siteName= data.getSite();
+landingPage = data.getLandingPage();
+if(dao.checkPageData(dateTime, siteName)){
+gaData =getGaData.queryData(dateTime, dateTime,1,1 ,metrics, dimensions, filters+landingPage);
+data.setUsers(Integer.parseInt(map.get(&quot;ga:users&quot;)));
+data.setBounceRate(Double.parseDouble(map.get(&quot;ga:bounceRate&quot;)));
+

@@ -1,0 +1,13 @@
+public class MyAlphaAnimation extends AlphaAnimation {
+
+private MyAlphaAnimation(float fromAlpha, float toAlpha) {
+super(fromAlpha, toAlpha);
+}
+
+public static  AlphaAnimation getAlphaAnimation(JSONObject object) {
+if (coordinates != null) {
+
+float optTemp = (float) coordinates.optDouble(&quot;fromAlpha&quot;);
+
+if (optTemp != Double.NaN) {
+

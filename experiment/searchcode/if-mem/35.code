@@ -1,0 +1,10 @@
+long[] mem = new long[n+1];
+auxfib2(n,mem);
+return mem[n];
+}
+
+private static long auxfib2(int n, long[] mem) {
+if(n <= 2) return 1;
+if(mem[n] != 0) return mem[n];
+mem[n] = auxfib2(n-1,mem) + auxfib2(n-2,mem);
+

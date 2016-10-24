@@ -1,0 +1,10 @@
+public String getMessage(Throwable exception) {
+Throwable ex = exception;
+if (ex != null)
+return ex.getMessage();
+return null;
+}
+
+private static void fillStackTrace(Throwable ex, PrintWriter pw) {
+if (null == ex) {
+

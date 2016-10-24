@@ -1,0 +1,7 @@
+for (Constant constant : this.constantPool.values()) {
+if (constant instanceof UTF8Constant
+public int addConstant(Constant constant) {
+constant.setIndex(this.constantPool.size() + 1);
+
+if (constant instanceof ClassConstant) {
+

@@ -1,0 +1,9 @@
+private final boolean canOpen;
+
+private final boolean canClose;
+
+public PotentialEmphasisDelimiter(Line line, int offset, int length, String text, boolean canOpen, boolean canClose) {
+Optional<PotentialEmphasisDelimiter> opener = previousOpener(inlines, indexOfThis);
+if (opener.isPresent()) {
+PotentialEmphasisDelimiter openingDelimiter = opener.get();
+

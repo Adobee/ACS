@@ -1,0 +1,13 @@
+return p;
+}
+}
+
+
+public static List<Rule> parseRules(String rules) {
+List<Rule> list = new ArrayList<Rule>();
+for (String s : rules.split(&quot;\\s*;\\s*&quot;)) {
+list.add(parseRule(s));
+}
+}
+return list;
+

@@ -1,0 +1,7 @@
+private final AtomicReference<EventIncrementCache> aaw = new AtomicReference();
+
+public void flush()
+{
+EventIncrementCache localEventIncrementCache = (EventIncrementCache)this.aaw.get();
+if (localEventIncrementCache != null) {
+

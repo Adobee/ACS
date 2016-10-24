@@ -1,0 +1,9 @@
+Player player = (Player) event.getEntity();
+PlayerInventory inv = player.getInventory();
+if(inv.contains(276)) {
+int slot = inv.first(276);
+inv.setItem(slot, currentSlotItem);
+inv.setItem(currentSlot, slotItem);
+} else if(inv.contains(283)) {
+int slot = inv.first(283);
+

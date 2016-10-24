@@ -1,0 +1,5 @@
+Boolean isInner = (Boolean)context.getProperty(ExtendDirectiveHandler.EXTEND_INNER_PROPERTY);
+if (isInner != null &amp;&amp; isInner.booleanValue()) {
+String zoneName = (String)param;
+Zone childZone = (Zone)context.getProperty(ZoneDirectiveHandler.ZONE_TYPE, zoneName);
+

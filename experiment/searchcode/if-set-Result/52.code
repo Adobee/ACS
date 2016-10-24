@@ -1,0 +1,8 @@
+Set<JobState.Result> resultSet = ImmutableSet.copyOf(results);
+checkArgument(!resultSet.isEmpty(), &quot;there is no result&quot;);
+
+if (resultSet.contains(JobState.Result.FAILURE))
+return JobState.Result.FAILURE;
+if (resultSet.contains(JobState.Result.UNSTABLE))
+return JobState.Result.UNSTABLE;
+

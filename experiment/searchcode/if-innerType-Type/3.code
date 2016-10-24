@@ -1,0 +1,11 @@
+public class ListType extends AbstractMCType implements MCType {
+
+private MCType innerType;
+
+@Override
+public boolean instanceOf(MCType childType) {
+if (childType instanceof ThingType) {
+return true;
+}
+return (childType instanceof ListType)
+

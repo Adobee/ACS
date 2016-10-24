@@ -1,0 +1,9 @@
+package redis.clients.jedis;
+
+public class HostAndPort {
+public static final String LOCALHOST_STR = &quot;localhost&quot;;
+private String convertHost(String host) {
+if (host.equals(&quot;127.0.0.1&quot;))
+return LOCALHOST_STR;
+else if (host.equals(&quot;::1&quot;))
+

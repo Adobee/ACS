@@ -1,0 +1,7 @@
+public MountainAgent(int x, int y, int tokens, int tokenLimit) {
+super(x, y, tokens, tokenLimit);
+coord.y += Math.asin(direction) * 0.5 + (random() - 0.5);
+if (coord.x > map.length - 1)
+tokens = 0;
+if (coord.x == 0) {
+

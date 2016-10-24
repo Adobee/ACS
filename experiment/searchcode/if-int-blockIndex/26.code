@@ -1,0 +1,15 @@
+private byte[][] data = new byte[NUM_BLOCKS_PER_FRAGMENT][];
+// index of the current block
+private int blockIndex = -1;
+// index for the next write within the current block
+out.write(this.data[this.blockIndex], 0, this.index);
+}
+
+public int size() {
+if (this.blockIndex < 0)
+return 0;
+return this.blockIndex * this.blockSize + this.index;
+}
+
+}
+

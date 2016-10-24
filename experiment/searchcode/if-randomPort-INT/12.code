@@ -1,0 +1,10 @@
+private static volatile MongoClient _mongo;
+
+private int port;
+private boolean randomPort;
+public void afterPropertiesSet() throws Exception {
+if(randomPort) {
+this.port = Network.getFreeServerPort();
+}
+_mongodExe = starter.prepare(new MongodConfigBuilder()
+

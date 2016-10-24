@@ -1,0 +1,8 @@
+* @return 受影响的行数
+*/
+public int update(String sql, Object[] params) {
+queryRunner = new QueryRunner(dataSource);
+int affectedRows = 0;
+try {
+if (params == null) {
+

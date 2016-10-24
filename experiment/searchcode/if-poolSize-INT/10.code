@@ -1,0 +1,7 @@
+public synchronized boolean isRunning() {
+for(int i = 0; i < poolSize; i ++) {
+if(pool[i].isAvailable())
+for (int i = 0; i < poolSize; i++) {
+WorkerThread thread = pool[i];
+if (thread.getStates() == WorkerThread.WORKERTHREAD_BLOCKED) {
+

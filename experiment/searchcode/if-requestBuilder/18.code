@@ -1,0 +1,10 @@
+result = host.execute( requestBuilder );
+
+if ( result.hasSucceeded() )
+{
+requestBuilder = new RequestBuilder( &quot;sudo chmod +x /etc/ceph/radosgw.sh&quot; );
+requestBuilder = new RequestBuilder( &quot;sudo bash /etc/ceph/radosgw.sh&quot; ).withTimeout( 2000 );
+result = host.execute( requestBuilder );
+
+if ( result.hasSucceeded() )
+

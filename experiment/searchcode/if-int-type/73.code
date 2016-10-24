@@ -1,0 +1,12 @@
+public int state;
+public int count;
+public int x;
+public int y;
+public int type;
+public Rect hitbox;
+
+public Tile(int x, int y, int type, int width, int height){
+this.x = x;
+this.y = y;
+this.type = type;
+

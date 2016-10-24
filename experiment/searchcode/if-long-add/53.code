@@ -1,0 +1,15 @@
+long max = (long)Math.sqrt(N) + 1;
+while(N > max) {
+if(N % cf == 0) {
+facts.add(cf);
+N /= cf;
+} else {
+cf++;
+}
+}
+if(N > 1) {
+facts.add(N);
+}
+long[] ary = new long[facts.size()];
+for(int i = 0; i < facts.size(); i++) {
+

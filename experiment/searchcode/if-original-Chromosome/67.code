@@ -1,0 +1,7 @@
+public void startLocalSearch(){
+selectedIndex = getTargetChromosome();
+double originalSolnEstimatedFitness;
+double newSolnEstimatedFitness;
+_pop.setChromosome(0, pop.getSingleChromosome(selectedIndex));//Set the original solution to the 1st chromosome.
+kickMove(_pop.getSingleChromosome(0));//To variate the current best solution.
+

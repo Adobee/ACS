@@ -1,0 +1,11 @@
+return Math.min(available, bytesLeft);
+}
+
+@Override
+public int read() throws IOException {
+if (bytesLeft <= 0) {
+return -1;
+}
+int read = in.read();
+if (read != -1) {
+

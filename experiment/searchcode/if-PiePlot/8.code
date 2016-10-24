@@ -1,0 +1,8 @@
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.data.general.DefaultPieDataset;
+
+public class PieChartAssetCommision{
+RenderingHints.VALUE_TEXT_ANTIALIAS_OFF);
+//得到饼图的Plot对象
+PiePlot piePlot = (PiePlot) pieChart.getPlot();
+

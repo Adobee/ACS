@@ -1,0 +1,11 @@
+xml = xml + &quot;<message>&quot; + XmlUtils.encodeChars(XmlUtils.replaceNonValidXmlCharacters((throwable.getMessage()))) + &quot;</message>&quot;;
+Throwable cause = throwable.getCause();
+if (cause != null) {
+xml = xml + &quot;<cause>&quot; + throwableToXml(cause) + &quot;</cause>&quot;;
+}
+xml = xml + &quot;</throwable>&quot;;
+return xml;
+}
+
+}
+

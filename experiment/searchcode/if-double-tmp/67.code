@@ -1,0 +1,9 @@
+import java.util.*;
+
+public class Solution {
+public double pow(double x, int n) {
+if (n == 0) return 1;
+double one = 1.0;
+if (x == one) return one;
+if (x == -one) {
+

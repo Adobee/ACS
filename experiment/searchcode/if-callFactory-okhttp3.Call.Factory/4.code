@@ -1,0 +1,9 @@
+RequestFactory requestFactory = RequestFactoryParser.parse(method, responseType, retrofit);
+return new MethodHandler(retrofit.callFactory(), requestFactory, callAdapter,
+throw Utils.methodError(e, method, &quot;Unable to create converter for %s&quot;, responseType);
+}
+}
+
+private final Call.Factory callFactory;
+private final RequestFactory requestFactory;
+

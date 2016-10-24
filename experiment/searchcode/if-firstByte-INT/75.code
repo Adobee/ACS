@@ -1,0 +1,9 @@
+public JpegInputStream(InputStream in) {
+super(in);
+}
+
+int readCurrentMarker() throws IOException {
+int firstByte = read();
+int secondByte = read();
+if (firstByte == 0xFF &amp;&amp; secondByte != 0x00) {
+

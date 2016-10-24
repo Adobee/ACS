@@ -1,0 +1,11 @@
+public void startElement(String uri, String name, String qname, Attributes attrs) throws SAXException {
+
+boolean shouldFail = false;
+
+if (name.equals(&quot;test-case&quot;)) {
+if (attrs.getValue(&quot;scenario&quot;).equals(&quot;standard&quot;)) {
+shouldFail = false;
+}
+else if (attrs.getValue(&quot;scenario&quot;).equals(&quot;parse-error&quot;)) {
+shouldFail = true;
+

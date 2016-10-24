@@ -1,0 +1,11 @@
+final CharSequence entityName = pCharSequence.subSequence(i + 1, semi);
+int entityValue;
+if(entityName.charAt(0) == &#39;#&#39;) {
+final char charAt1 = entityName.charAt(1);
+entityValue = Integer.parseInt(entityName.subSequence(1, entityName.length()).toString());
+}
+} else {
+entityValue = pIntLookupMap.value(entityName);
+}
+if(entityValue == -1) {
+

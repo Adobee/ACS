@@ -1,0 +1,13 @@
+System.out.println(&quot;Thread: &quot; + Thread.currentThread().getName() + &quot; calculates &quot; + n);
+
+long current = 0;
+long pPrev = 1;
+long prev = 1;
+
+if (n == 0) {
+System.out.println( &quot; 0 &quot;);
+} else  if (n == 1) {
+System.out.println( &quot;0 1 &quot;);
+prev = 0;
+current = 1;
+

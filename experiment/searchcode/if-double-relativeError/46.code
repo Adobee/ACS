@@ -1,0 +1,10 @@
+regression.trainOnline(new DenseDoubleVector(instances[j]));
+}
+}
+
+double relativeError = 0;
+for (int i = 0; i < instances.length; ++i) {
+double relativeError = 0.0;
+// calculate the error on test instance
+for (double[] testInstance : testInstances) {
+

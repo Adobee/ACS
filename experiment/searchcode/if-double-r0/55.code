@@ -1,0 +1,13 @@
+// TODO Auto-generated constructor stub
+
+//this.width = width;
+//this.r0 = r0;
+}
+
+public void run(String arg,String arg1)
+{
+if (arg != null)
+{
+this.width = Integer.parseInt(arg);
+//this.r0 = Double.parseDouble(arg1);
+

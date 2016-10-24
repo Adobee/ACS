@@ -1,0 +1,7 @@
+public class Solution {
+public List<Integer> inOrder(TreeNode root) {
+List<Integer> newList = new ArrayList<Integer>();
+if(root==null) return newList;
+newList.addAll(inOrder(root.left));
+newList.add(root.key);
+

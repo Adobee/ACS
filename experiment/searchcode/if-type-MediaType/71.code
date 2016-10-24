@@ -1,0 +1,11 @@
+import nl.siegmann.epublib.domain.MediaType;
+import nl.siegmann.epublib.util.StringUtil;
+
+
+/**
+* Manages mediatypes that are used by epubs
+for(int i = 0; i < mediatypes.length; i++) {
+MediaType mediatype = mediatypes[i];
+for(String extension: mediatype.getExtensions()) {
+if(StringUtil.endsWithIgnoreCase(filename, extension)) {
+

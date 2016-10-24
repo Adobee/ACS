@@ -1,0 +1,11 @@
+String queryText = intent.getStringExtra(GoogleSearchApi.KEY_QUERY_TEXT);
+
+if (!queryText.contains(&quot;lyrics&quot;))
+return;
+
+String songName, artistName;
+Pattern p = Pattern.compile( &quot;for(.*)by&quot;, Pattern.DOTALL);
+Matcher matcher = p.matcher(queryText);
+
+if (matcher.find()) {
+

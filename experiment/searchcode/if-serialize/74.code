@@ -1,0 +1,11 @@
+public SerializeType unmarshal(SerializeTypeEntry value) throws Exception {
+SerializeType result = null;
+//
+if (value != null) {
+result = SerializeType.valueOf(value.key);
+public SerializeTypeEntry marshal(SerializeType value) throws Exception {
+SerializeTypeEntry result = null;
+//
+if (value != null) {
+result = new SerializeTypeEntry(value.name(), value.getValue());
+

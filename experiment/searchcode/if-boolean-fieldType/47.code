@@ -1,0 +1,6 @@
+public boolean tryMoveFromPosition(Position currPosition, boolean secondTime) {
+if(level.isOnMap(currPosition)) {
+FieldType fieldType = level.get(currPosition);
+if (!fallElement(currPosition, fieldType, purposePosition, secondTime, 0)) {
+if (!fallElement(currPosition, fieldType, purposePosition, secondTime, 1)) {
+

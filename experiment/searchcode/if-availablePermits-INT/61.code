@@ -1,0 +1,8 @@
+private final Semaphore availableItems, availableSpaces;
+private final E[] items;
+private int putPosition = 0, takePosition = 0;
+
+@SuppressWarnings(&quot;unchecked&quot;)
+public SemaphoreCollection(final int capacity) {
+if (capacity <= 0) {
+

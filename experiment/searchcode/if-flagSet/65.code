@@ -1,0 +1,9 @@
+public static <EE extends Enum<EE>> FlagSet<EE> fromValue(ValuedEnum<EE> value) {
+if (value instanceof Enum)
+return FlagSet.fromValue(value.value(), (EE)value);
+return enumClassValues == null ? enumClassValues = getValues(enumClass) : enumClassValues;
+}
+
+/**
+* Tests if the flagset value is equal to the OR combination of all the given values combined with bitwise OR operations.<br>
+

@@ -1,0 +1,5 @@
+public static CharSequence setSpanBetweenTokens(CharSequence text, String token, CharacterStyle... cs) {
+int tokenLen = token.length();
+int start = text.toString().indexOf(token) + tokenLen;
+int end = text.toString().indexOf(token, start);
+

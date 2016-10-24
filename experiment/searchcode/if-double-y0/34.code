@@ -1,0 +1,8 @@
+public boolean intersects(double x, double y, double w, double h) {
+if (isEmpty()) {
+return false;
+}
+double x0 = getX();
+double y0 = getY();
+return (x + w >= x0
+

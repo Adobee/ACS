@@ -1,0 +1,9 @@
+public static ShapeFactory getInstance() {
+if (instance == null) {
+return new ShapeFactory();
+}
+return instance;
+Class<?> shape;
+shape = LoadedShapes.getInstance().getClass(shapeType);
+if (shape == null) {
+

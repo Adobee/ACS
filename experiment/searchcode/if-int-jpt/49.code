@@ -1,0 +1,6 @@
+public boolean test(Object receiver, String property, Object[] args, Object expectedValue) {
+if (receiver instanceof JptResourceTypeReference) {
+return this.test((JptResourceTypeReference) receiver, property, expectedValue);
+private boolean test(JptResourceTypeReference ref, String property, Object expectedValue) {
+if (property.equals(RESOURCE_TYPE_IS_KIND_OF)) {
+

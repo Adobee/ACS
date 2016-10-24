@@ -1,0 +1,10 @@
+public Expr evaluate(Expr[] args) throws ExprException {
+double res = 0;
+for (Expr arg : args)
+res += sumsq(arg);
+return new ExprDouble(res);
+}
+
+private double sumsq(Expr arg) throws ExprException {
+if (arg instanceof ExprEvaluatable) {
+

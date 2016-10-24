@@ -1,0 +1,8 @@
+public void write(int oneByte) throws IOException {
+if (oneByte == LF &amp;&amp; lastChar == IGNORE_LF) {
+lastChar = LF;
+return;
+}
+if (oneByte == LF &amp;&amp; lastChar != CR) {
+super.write(CR);
+

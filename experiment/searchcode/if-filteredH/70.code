@@ -1,0 +1,13 @@
+throws NumberIsTooSmallException {
+
+double filteredH = h;
+if (FastMath.abs(h) < minStep) {
+if (acceptSmall) {
+FastMath.abs(h), minStep, true);
+}
+}
+
+if (filteredH > maxStep) {
+filteredH = maxStep;
+} else if (filteredH < -maxStep) {
+

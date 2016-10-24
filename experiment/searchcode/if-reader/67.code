@@ -1,0 +1,15 @@
+public void setReader(Reader reader) throws TrimeshException {
+if (reader instanceof BufferedReader) {
+this.input = (BufferedReader)reader;
+setReader(new InputStreamReader(reader));
+}
+
+@Override
+public void close() throws IOException {
+if (input != null) {
+input.close();
+}
+
+}
+}
+

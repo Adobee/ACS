@@ -1,0 +1,9 @@
+public Visitor registerNewUserAccount(VisitorDap visitorDao) throws LoginExistsException {
+if (loginExist(visitorDao.getLogin())) {
+return visitorDao.findAll(Visitor.class);
+}
+
+@SuppressWarnings(&quot;unused&quot;)
+private boolean loginExist(String login) {
+Visitor visitor = visitorDao.findByLogin(login);
+

@@ -1,0 +1,8 @@
+boolean stateInMemory,
+boolean expectMetaData) throws Exception {
+MetaData inMemoryMetaData = null;
+Iterator<GatewayMetaState.IndexMetaWriteInfo> indices = GatewayMetaState.resolveStatesToBeWritten(oldIndicesList, newIndicesList,
+inMemoryMetaData, event.state().metaData()).iterator();
+
+if (expectMetaData) {
+

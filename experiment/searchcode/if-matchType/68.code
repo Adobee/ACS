@@ -1,0 +1,12 @@
+import com.newrelic.api.agent.weaver.MatchType;
+
+public class WeaveMatchTypeAccessor
+{
+private MatchType matchType;
+
+public MatchType getMatchType() {
+return this.matchType;
+}
+
+public AnnotationVisitor visitAnnotation(final String desc, final boolean visible, final AnnotationVisitor va) {
+

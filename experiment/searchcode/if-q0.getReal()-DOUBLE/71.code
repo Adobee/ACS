@@ -1,0 +1,5 @@
+FieldVector3D<DerivativeStructure> axis = r.getAxis();
+if (FieldVector3D.dotProduct(axis, createVector(0, 0, 1)).getReal() > 0) {
+FieldRotation<DerivativeStructure> quat = new FieldRotation<DerivativeStructure>(u1, u2, v1, v2);
+double q2 = quat.getQ0().getReal() * quat.getQ0().getReal() +
+

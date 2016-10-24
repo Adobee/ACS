@@ -1,0 +1,8 @@
+private int markedChar = UNMARKED;
+private int readAheadLimit = 0; /* Valid only when markedChar > 0 */
+
+private boolean skipLF = false;
+/* Marked */
+int delta = nextChar - markedChar;
+if (delta >= readAheadLimit) {
+

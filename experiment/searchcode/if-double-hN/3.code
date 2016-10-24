@@ -1,0 +1,17 @@
+return (n - Math.floor(n)) == 0.0;
+}
+
+public static String run()
+{
+long tn;
+double hn, pn;
+
+for (long n = 1; ; n++) {
+pn = (1 + Math.sqrt(1+24*tn)) / 6;
+if (isInteger(pn) &amp;&amp; isInteger(hn) &amp;&amp; n > 285) break;
+}
+
+return Long.toString(tn);
+}
+}
+

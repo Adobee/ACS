@@ -1,0 +1,16 @@
+return endTime == null ? null : (Timestamp) endTime.clone();
+}
+
+/**
+* @param endTime the endTime to set
+*/
+public void setEndTime(long endTime)
+public void setEndTime(Timestamp time)
+{
+if (time == null)
+{
+return;
+}
+
+this.endTime = new Timestamp(time.getTime());
+

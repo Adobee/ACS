@@ -1,0 +1,10 @@
+private final static String TAG = MainPagerAdapter.class.getName();
+
+private Context context;
+
+private boolean forceRefresh;
+private int refreshedPosition;
+Log.d(TAG, &quot;   [getItem] on position &quot;+position);
+if(forceRefresh &amp;&amp; position==refreshedPosition) {
+Log.d(TAG, &quot;      [forceRefresh] on position &quot;+position);
+

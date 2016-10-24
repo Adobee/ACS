@@ -1,0 +1,7 @@
+* @return
+*/
+public static Date convertFromString(String str, String format) {
+if(StringUtils.isNotBlank(str)){
+DateTime dateTime = new DateTime();
+return startOfMonth(dateTime.millisOfDay().withMinimumValue().toDate());
+

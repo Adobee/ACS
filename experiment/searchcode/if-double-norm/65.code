@@ -1,0 +1,8 @@
+static
+public FieldValue normalize(NormContinuous normContinuous, FieldValue value){
+double result = normalize(normContinuous, (value.asNumber()).doubleValue());
+switch (outlierTreatmentMethod) {
+case AS_MISSING_VALUES:
+Double missing = normContinuous.getMapMissingTo();
+if (missing == null) {
+

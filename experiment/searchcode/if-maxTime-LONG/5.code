@@ -1,0 +1,12 @@
+public class Horloge implements IAction {
+Long maxTime;
+Long startTime = null;
+
+public Horloge(Long maxTime) {
+this.maxTime = maxTime;
+}
+
+@Override
+public void action() {
+if (startTime == null) {
+

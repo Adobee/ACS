@@ -1,0 +1,9 @@
+public final void visitDirsAndFiles(File dir) {
+process(dir);
+if (dir.isDirectory()) {
+for (String child : dir.list()) {
+public final void visitDirsOnly(File dir) {
+if (dir.isDirectory()) {
+process(dir);
+for (String child : dir.list()) {
+

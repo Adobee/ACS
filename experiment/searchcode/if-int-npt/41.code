@@ -1,0 +1,9 @@
+private float[][][] sum;
+private float[][][] sqd;
+private BitSet[] valid;
+private int[][] npt;
+private int[][] lbl;
+for (int x=0;x<nx[l];x++) for (int y=0;y<ny[l];y++) for (int z=0;z<nz[l];z++) {
+int xyz = x+nx[l]*y+nx[l]*ny[l]*z;
+if (npt[l][xyz]>0) npts[x][y][z] = (float)(1+FastMath.log(npt[l][xyz]));
+

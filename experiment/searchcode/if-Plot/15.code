@@ -1,0 +1,12 @@
+import java.util.*;
+
+class Cache {
+private static class Plot extends PlotIF {
+Plot(String ticker, long time) {
+System.out.println(&quot;Plot &quot; + ticker + &quot;  &quot; + time);
+}
+void render() { }
+}
+static Hashtable storage = new Hashtable();
+static PlotIF getPlot(String ticker, long time) {
+

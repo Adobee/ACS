@@ -1,0 +1,11 @@
+double gnorm1 = delta;
+double gnorm = gnorm1;
+
+if (gnorm <= eps * gnorm1) search = 0;
+
+iter = 1;
+gnorm = euclideanNorm(g);
+if (gnorm <= eps * gnorm1) break;
+}
+if (f < -1.0e+32) {
+

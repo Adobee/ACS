@@ -1,0 +1,11 @@
+public class NetworkJob {
+public String title;
+private boolean started = false;
+private long totalBytes = 0;
+public boolean hasFinished() {
+return completedBytes == totalBytes;
+}
+
+public int getPercentageDone() {
+if (!started) {
+

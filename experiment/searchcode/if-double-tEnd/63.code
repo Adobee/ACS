@@ -1,0 +1,11 @@
+public class SimilarityTransformAnimator3D extends AbstractTransformAnimator
+{
+private final double[] qStart;
+
+private final double[] qDiff;
+final double[] tStart = new double[ 3 ];
+final double[] tEnd = new double[ 3 ];
+for ( int d = 0; d < 3; ++d )
+{
+tStart[ d ] = transformStart.get( d, 3 ) / scaleStart;
+

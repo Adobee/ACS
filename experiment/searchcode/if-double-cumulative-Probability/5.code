@@ -1,0 +1,8 @@
+assertRelativelyEquals(expected, actual, 1.0e-12);
+}
+
+private void testCumulativeProbabilitySuccess(BinomialDistribution d, int x, int n, double p, double expected) throws NumericException {
+d.setProbabilityOfSuccess(p);
+double actual = d.cumulativeProbability(x);
+assertRelativelyEquals(expected, actual, 1.0e-12);
+

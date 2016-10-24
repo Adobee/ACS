@@ -1,0 +1,10 @@
+package com.myJava;
+
+import java.time.LocalDateTime;
+import java.util.Arrays;
+
+/**
+* Created by Idony on 29.04.2016.
+if (!localDateTime.equals(fact.localDateTime)) return false;
+if (!nameComit.equals(fact.nameComit)) return false;
+

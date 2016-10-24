@@ -1,0 +1,10 @@
+this.socketFactory = socketFactory;
+}
+
+int generatePort() {
+if (port != 0) {
+logPortGeneration(port);
+final ServerSocket socket = socketFactory.create();
+final int randomPort = socket.getLocalPort();
+socket.close();
+

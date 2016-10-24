@@ -1,0 +1,11 @@
+int val = (int) (Math.pow(i, POWER) + 0.1);
+powers.put(i, val);
+}
+int maxDigits = 1;
+while (true) {
+int pow = (int) (Math.pow(10, maxDigits) + 0.1);
+int sum = powers.get(9) * maxDigits;
+if (pow > sum)
+break;
+maxDigits++;
+

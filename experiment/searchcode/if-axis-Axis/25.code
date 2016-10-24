@@ -1,0 +1,10 @@
+private CoordinateAxis whichAxisIgnoreDirection(AnatomicalAxis aaxis) {
+CoordinateAxis[] axes = getAxes();
+
+for (int i = 0; i < axes.length; i++) {
+
+if (aaxis == axes[i].getAnatomicalAxis()) {
+
+return axes[i];
+} else if (aaxis == axes[i].getAnatomicalAxis().getFlippedAxis()) {
+

@@ -1,0 +1,10 @@
+numPages = count.intValue() / page.getPageSize();
+
+if (count % page.getPageSize() != 0)
+numPages = numPages + 1;
+
+if (numPages == 0 &amp;&amp; dataSize > 0)
+selectedPage = page.getStartRow() == 0 ? 1 : (page.getStartRow() / page.getPageSize()) + 1;
+
+if (numPages > 0 &amp;&amp; dataSize == 0 &amp;&amp; dataPage != null) {
+

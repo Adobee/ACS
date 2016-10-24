@@ -1,0 +1,11 @@
+public void SetNoteLabel(String iValue) {
+int i = iValue.indexOf(&quot;(&quot;);
+NoteLabel = iValue;
+if(i != -1)
+Truncated = iValue.substring(0, i).trim();
+public void SetNoteNdx(String label, ArrayList<NoteTemplate> noteTemplates) {
+int  iValue = 0;
+
+for(NoteTemplate nt: noteTemplates) {
+if(label.contains(nt.GetIdentifiedText()))
+

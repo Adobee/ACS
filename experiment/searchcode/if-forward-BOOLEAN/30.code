@@ -1,0 +1,11 @@
+private JdbcTemplate jdbcTemplate = DBUtil.getJdbcTemplate();
+
+private ForwardDao() {
+};
+
+public static ForwardDao getInstance() {
+if (forwardDao == null) {
+public void insertForward(Forward forward) {
+if (!hasForward(forward.getForwardId())) {
+jdbcTemplate.update(sqlInsertForward, forward.getForwardId(),
+

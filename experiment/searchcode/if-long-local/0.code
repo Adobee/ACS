@@ -1,0 +1,7 @@
+public long addAndGet(Object paramObject, long paramLong)
+{
+AtomicLong localAtomicLong = (AtomicLong)this.map.get(paramObject);
+if (localAtomicLong == null)
+{
+localAtomicLong = (AtomicLong)this.map.putIfAbsent(paramObject, new AtomicLong(paramLong));
+

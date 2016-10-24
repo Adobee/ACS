@@ -1,0 +1,9 @@
+private Hashtable<Integer, VirtualNetwork> virtualNetworkRequestList = new Hashtable<>();
+
+private NetworkStack() {
+}
+
+public boolean addVirtualNetwork(VirtualNetwork vn) {
+if (virtualNetworkRequestList.containsKey(vn.getId())) {
+return false;
+

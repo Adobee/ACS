@@ -1,0 +1,9 @@
+request.setConsistency(WriteConsistencyLevel.fromString(consistency));
+}
+
+Float requestsPerSecond = parseRequestsPerSecond(restRequest);
+if (requestsPerSecond != null) {
+* @return requests_per_second from the request as a float if it was on the request, null otherwise
+*/
+public static Float parseRequestsPerSecond(RestRequest request) {
+

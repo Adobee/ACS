@@ -1,0 +1,10 @@
+public class NextPermutation {
+
+public void nextPermutation(int[] nums) {
+if (nums == null || nums.length == 1) {
+return;
+}
+int firstIndex = -1;
+for (int i = nums.length - 2; i > firstIndex; i--) {
+if (nums[i] < nums[i + 1]) {
+

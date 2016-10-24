@@ -1,0 +1,8 @@
+public void touchSession(Serializable sessionId) {
+SecureSession session = getSession(false);
+if (session != null) {
+session.touch();
+List<SecureSession> activeSessions = secureSessionRepository.getSessions();
+
+if (activeSessions != null &amp;&amp; !activeSessions.isEmpty()) {
+

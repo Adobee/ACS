@@ -1,0 +1,14 @@
+public class IsAlive implements NodeHasProperty{
+private final short cutoff_year;
+
+public IsAlive(final int life_expectancy){
+public boolean test(final Node n) {
+if(n.hasProperty(&quot;DYr&quot;)) return false;
+if(n.hasProperty(&quot;BYr&quot;) &amp;&amp; (short)n.getProperty(&quot;BYr&quot;) >= cutoff_year){
+return true;
+}
+return false;
+}
+
+}
+

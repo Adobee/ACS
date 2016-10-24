@@ -1,0 +1,9 @@
+byte[] data = this.frames.pollFirst();
+if(data == null) return null;
+
+this.contentSize -= data.length;
+private String frameString(byte[] data){
+boolean isText = true;
+int maxSize = data.length;
+if(maxSize > 128) maxSize = 128;
+

@@ -1,0 +1,10 @@
+public void DBScan(ArrayList<ArrayList<Float>> data, float eps, int minPts) {
+int index = 0;
+while(data.size() > index) {
+if(!visitedList.contains(index)) {
+ArrayList<Integer> neighborList = getNeighbors(data, index, eps);
+
+if(neighborList.size() >= minPts) {
+int index2 = 0;
+while(neighborList.size() > index2){
+

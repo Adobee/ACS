@@ -1,0 +1,9 @@
+* @throws IllegalStateException if maximal number of iterations is reached
+*/
+public double evaluate(double x, double epsilon, int maxIterations) {
+dN = 1 / dN;
+final double deltaN = cN * dN;
+hN = hPrev * deltaN;
+
+if (Double.isInfinite(hN)) {
+

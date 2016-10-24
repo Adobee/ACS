@@ -1,0 +1,7 @@
+public boolean addAll(Collection<? extends Boolean> c) {
+if (isFull()) return false;
+
+if (c instanceof PrimitiveBooleanCollection) {
+PrimitiveBooleanCollection pc = (PrimitiveBooleanCollection) c;
+return ((pc.contains(false)) ? add(false) : false)
+

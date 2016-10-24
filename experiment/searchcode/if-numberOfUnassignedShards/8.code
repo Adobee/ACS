@@ -1,0 +1,5 @@
+int numberOfUnassignedShards = newClusterState.getRoutingNodes().unassigned().size();
+if (numberOfUnassignedShards > 0) {
+String reason = String.format(Locale.ROOT, &quot;[%d] unassigned shards after failing shards&quot;, numberOfUnassignedShards);
+if (logger.isTraceEnabled()) {
+

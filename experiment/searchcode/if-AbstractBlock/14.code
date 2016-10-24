@@ -1,0 +1,7 @@
+package org.asciidoctor.converter;
+
+import org.asciidoctor.ast.AbstractBlock;
+import org.asciidoctor.ast.AbstractNode;
+return &quot;-> &quot; + ((ListItem) node).getText();
+} else if (node instanceof AbstractBlock) {
+

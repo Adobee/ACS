@@ -1,0 +1,15 @@
+
+public class Question7_5 {
+class Line {
+double x1;
+double x2;
+double y1;
+double y2;
+this.x2 = x2;
+this.y2 = y2;
+}
+
+public double getSlop() {
+if (x1 == x2) {
+return -1;
+

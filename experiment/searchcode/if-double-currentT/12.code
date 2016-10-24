@@ -1,0 +1,10 @@
+protected int bufferLength;
+protected int loadFactor;
+
+//state
+protected int[] currentT;
+protected int maxT;
+public void addToTimeSeries(int series, double val, boolean refocus) {
+addData(series,currentT[series],val,false);
+if(currentT[series] > maxT) {
+

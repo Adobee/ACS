@@ -1,0 +1,12 @@
+package uk.ac.cam.tpt26.graphics.basicraytracer;
+
+public class Vector3D {
+double x, y, z;
+this.x = x; this.y = y; this.z = z;
+if (unit) {
+normalize();
+}
+}
+
+Vector3D(Line3D l, boolean unit) {
+

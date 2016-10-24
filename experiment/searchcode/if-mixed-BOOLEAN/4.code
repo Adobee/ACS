@@ -1,0 +1,14 @@
+public class DerivedComplexContentModel extends ComplexContentModel
+{
+private ComplexType superType = null;
+boolean overridesMixedContent = false;
+@Override
+public boolean isMixedContent()
+{
+if(!overridesMixedContent)
+return getSuperTypeContentModel().isMixedContent();
+return super.isMixedContent();
+}
+
+}
+

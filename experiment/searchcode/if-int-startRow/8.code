@@ -1,0 +1,15 @@
+matrix[startrow][i]=click;
+click++;
+}
+startrow++;
+if(startrow>endrow) break;
+//from up to down
+for(int i=startrow;i<=endrow;i++){
+matrix[endrow][i]=click;
+click++;
+}
+endrow--;
+if(endrow<startrow) break;
+//from down to up
+for(int i=endrow;i>=startrow;i--){
+

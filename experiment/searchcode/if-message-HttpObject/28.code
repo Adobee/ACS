@@ -1,0 +1,10 @@
+import io.netty.buffer.DefaultByteBufHolder;
+import io.netty.channel.ChannelHandlerContext;
+import io.netty.handler.codec.http.HttpObject;
+* @return              Response after filtering
+*/
+@Override
+public HttpObject proxyToClientResponse(HttpObject httpObject){
+
+if(httpObject instanceof DefaultByteBufHolder &amp;&amp;
+

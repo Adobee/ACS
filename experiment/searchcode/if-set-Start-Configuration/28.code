@@ -1,0 +1,7 @@
+@Override
+public ConfigurationStatus call() throws Exception {
+long startTime = System.currentTimeMillis();
+if(completedUninstall){
+if(bundleLoader.install(configuration, callable)){
+if(!bundleLoader.start(callable)){
+

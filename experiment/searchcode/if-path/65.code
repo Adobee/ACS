@@ -1,0 +1,8 @@
+public String simplifyPath(String path) {
+// Start typing your Java solution below
+// DO NOT write main() function
+if(path.length()==1) return path;
+path = path.replaceAll(&quot;/+&quot;,&quot;/&quot;);
+if(path.length()==1) return path;
+Stack<String> s = new Stack<String>();
+

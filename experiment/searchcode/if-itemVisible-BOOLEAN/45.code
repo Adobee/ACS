@@ -1,0 +1,9 @@
+public static void prepareOptionsMenu(Menu menu, String albumId, PhotoInfo photoInfo, PhotoOwner photoOwner) {
+boolean isOwner;
+boolean z;
+boolean z2 = true;
+if (photoInfo == null || !OdnoklassnikiApplication.getCurrentUser().uid.equals(photoInfo.getOwnerId())) {
+MenuItem item = menu.findItem(2131625495);
+boolean itemVisible = false;
+if (!(item == null || photoInfo == null)) {
+

@@ -1,0 +1,10 @@
+
+public class Baskara {
+
+public static double resolverDelta(double a, double b, double c) throws BaskaraException {
+
+
+double delta = Math.sqrt((b * b) - (4 * a * c));
+
+if (delta < 0) {
+

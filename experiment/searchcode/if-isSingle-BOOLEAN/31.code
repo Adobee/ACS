@@ -1,0 +1,8 @@
+case ADD:
+if (operands.get(0).isSingle() &amp;&amp; operands.get(1).isSingle()) {
+result.add(operands.get(1).getValues().get(0) + operands.get(0).getValues().get(0));
+result.add(value + operands.get(0).getValues().get(0));
+}
+} else if (operands.get(1).isSingle()) {
+for (Double value : operands.get(0).getValues()) {
+

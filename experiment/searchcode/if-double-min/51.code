@@ -1,0 +1,11 @@
+package lc;
+
+public class Normalizer {
+private final double min;
+private final double max;
+public double norm(double val) {
+if (min == max) {
+return val / max;
+}
+return (val - min) / (max - min);
+

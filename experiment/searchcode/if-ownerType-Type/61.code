@@ -1,0 +1,8 @@
+balancemodel = BalancecalModel.ACCTMODEL;
+}
+
+if ((balancemodel.equals(BalancecalModel.SUBSMODEL))&amp;&amp;((OwnerType.ACCT.equals(ownertype))||(OwnerType.CUST.equals(ownertype)))){
+throw new OmcException(&quot;ResourceCheck&quot;, &quot;余额模式是用户模式，OWNERTYPE 不能是账户或者客户，请检查参数配置或者输入参数&quot;);
+}
+if ((balancemodel.equals(BalancecalModel.ACCTMODEL))&amp;&amp;((OwnerType.CUST.equals(ownertype)))){
+

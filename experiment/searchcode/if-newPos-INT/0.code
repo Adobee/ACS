@@ -1,0 +1,15 @@
+public boolean canRotateLeft() {
+int[][] newPos = new int[4][2];
+
+switch(block.getType()) {
+case &#39;O&#39; : return true;
+case &#39;L&#39; :
+default : return false;
+}
+
+int x, y;
+for(int i=0; i<4; i++) {
+x = newPos[i][0];
+y = newPos[i][1];
+if(1 <= getXblock(x) &amp;&amp; getXblock(x) <= grid.getWidth() &amp;&amp; 1 <= getYblock(y) &amp;&amp; getYblock(y) <= grid.getHeight()) {
+

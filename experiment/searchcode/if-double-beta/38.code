@@ -1,0 +1,11 @@
+private double _sum;
+
+public BetaDist(double alphaPrior, double betaPrior) {
+if (alphaPrior <= 0) {
+_alphaPrior = alphaPrior;
+_betaPrior = betaPrior;
+}
+
+public void add(double value, double weight) {
+if (value < 0 || value > 1) {
+

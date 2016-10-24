@@ -1,0 +1,8 @@
+plot.solvePlotAnchors();
+plot.solvePlot();
+if(plot.getPlotDraw() != null){
+plot.getPlotDraw().paintPlot(g2d, plot);
+}
+//			if(plot.getPlotLabel() != null){
+//				plot.getPlotLabel().paintPlot(g2d, plot);
+

@@ -1,0 +1,8 @@
+static final double h = 1.0/n;
+public static void main(String argv[]) {
+double del = 1e-6, alpha0 = 1, dalpha = 0.01;
+double c2[] = new double[l];
+double c3[] = new double[l];
+double c4[] = new double[l];
+c1 = g(y, t);
+

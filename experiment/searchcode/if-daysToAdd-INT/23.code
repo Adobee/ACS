@@ -1,0 +1,12 @@
+return time.day();
+}
+
+/** 営業日を返します。 */
+public LocalDate day(int daysToAdd) {
+LocalDate day = day();
+if (0 < daysToAdd) {
+day = dayNext(day);
+} else if (daysToAdd < 0) {
+for (int i = 0; i < (-daysToAdd); i++)
+day = dayPrevious(day);
+

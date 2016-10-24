@@ -1,0 +1,10 @@
+public static void merge(int[] A, int[] B) {
+int lenA = A.length;
+int lenB = B.length;
+int iA = 0, iB = 0;
+while (iA < lenA &amp;&amp; iB < lenB) {
+if (A[iA] > B[iB]) {
+int tmp = A[iA];
+A[iA] = B[iB];
+B[iB] = tmp;
+

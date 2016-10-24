@@ -1,0 +1,12 @@
+import com.extr.domain.exam.Paper;
+
+public class Population {
+private int populationSize;
+private List<Paper> content;
+
+public int getPopulationSize() {
+return populationSize;
+}
+
+public void setPopulationSize(int populationSize) {
+

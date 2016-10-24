@@ -1,0 +1,8 @@
+byteArray = JcryptManager.addEmptyParamToByteArrayEnd(byteArray);
+}
+
+if (params.getEncryptorId() != params.getDecryptorId()) {
+byteArray = JcryptManager.removeBytesFromByteArrayStart(byteArray, byteArray[0] + 1);
+long decryptorId = encryptorId;
+if (!JcryptManager.isEmptyParam(byteArray[byteArray.length - 1])) {
+

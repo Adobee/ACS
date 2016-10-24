@@ -1,0 +1,8 @@
+private int chromosomeLength;
+private int populationSize;
+private int maxGeneration;
+private int eliteNumber;
+public PBIL(int chromosomeLength, int populationSize, PBIL.Type type, int eliteNumber)
+{
+this.chromosomeLength = chromosomeLength;
+

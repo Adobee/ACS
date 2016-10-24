@@ -1,0 +1,16 @@
+// Check if the all angles are more than 72.54 degrees (cos 0.3).
+double maxCosine = 0;
+Point[] approxPoints = polygon.toArray();
+
+for (int i = 2; i < 5; i++) {
+maxCosine = Math.max(cosine, maxCosine);
+}
+
+if (maxCosine >= 0.3) {
+return false;
+}
+
+return true;
+}
+}
+

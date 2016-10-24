@@ -1,0 +1,9 @@
+String ago = past ? &quot; ago&quot; : &quot;&quot;;
+
+long diff = diffSec;
+if( diff <     30 )  return in + &quot;few moments&quot; + ago;
+if( diff < 48 &amp;&amp; ! sameDay )  return &quot;yesterday&quot;;
+
+long diffDays = diff /= 24;  // Days
+if( diff < 7 )  return in + diff + &quot; days&quot; + ago;
+

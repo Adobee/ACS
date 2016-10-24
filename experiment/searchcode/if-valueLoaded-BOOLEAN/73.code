@@ -1,0 +1,14 @@
+private Map<String, DataBag> inputBuffer = null;
+
+private boolean valueLoaded = false;
+
+/**
+* Java level API
+*
+* @param input
+*            read
+*/
+@Override
+public Object exec(Tuple input) throws IOException {
+if (!valueLoaded) {
+

@@ -1,0 +1,10 @@
+long leftSide = 0;
+long rightSide = totalSum;
+int minDifference = Integer.MAX_VALUE;
+
+for ( int i = 0; i < aInput.length - 1; i++ ) {
+rightSide -= aInput[ i ];
+
+int currentDifference = ( int ) Math.abs( leftSide - rightSide );
+if ( currentDifference < minDifference ) {
+

@@ -1,0 +1,10 @@
+public class Solution {
+public void nextPermutation(int[] num) {
+if (num == null || num.length <= 1)
+reverse(num, 0, N - 1);
+return;
+}
+
+for (int i = N - 1; i >= 0; i--) {
+if (num[i] > num[cursor - 1]) {
+

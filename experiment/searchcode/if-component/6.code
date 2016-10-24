@@ -1,0 +1,17 @@
+public abstract class Decorator implements Component {
+
+protected Component component;
+
+public Component getComponent() {
+return component;
+this.component = component;
+}
+
+public void operation() {
+if (null != component) {
+
+component.operation();
+}
+}
+}
+

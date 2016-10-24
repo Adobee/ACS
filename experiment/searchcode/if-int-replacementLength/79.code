@@ -1,0 +1,7 @@
+int replacementOffset, int replacementLength, Image image,
+String displayString, int relevance) {
+super(replacementString, replacementOffset, replacementLength, image,
+int replacementOffset, int replacementLength, Image image,
+String displayString, int relevance, boolean isInDoc) {
+super(replacementString, replacementOffset, replacementLength, image,
+

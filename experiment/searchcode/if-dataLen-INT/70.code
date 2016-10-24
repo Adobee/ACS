@@ -1,0 +1,11 @@
+final char[] data    = s.toString().toLowerCase().toCharArray();
+int dataLen    = data.length;
+while (dataLen > 0) {
+if (!ignore(data[dataLen - 1]))
+break;
+
+dataLen--;
+}
+
+final java.util.List<Byte> output = new java.util.ArrayList<Byte>();
+

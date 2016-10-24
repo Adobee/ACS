@@ -1,0 +1,10 @@
+* @author roryee https://github.com/roryee
+*/
+public class EntityTimeGhost extends EntityTG {
+private double targetY = 0;
+public void onUpdate() {
+super.onUpdate();
+
+/*if (!worldObj.isRemote) {
+if (targetY == 0 || Math.abs(posY - targetY) <= 0.25) {
+

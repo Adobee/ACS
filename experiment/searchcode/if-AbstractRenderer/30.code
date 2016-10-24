@@ -1,0 +1,9 @@
+_renderers.add(abstractRenderer);
+abstractRenderer.setRenderer(this);
+
+if (_timeSource == null) {
+if (abstractRenderer.requestTimeSource()) {
+for (Renderer renderer : _renderers) {
+AbstractRenderer abstractRenderer = (AbstractRenderer) renderer;
+if (abstractRenderer != _timeSource) {
+

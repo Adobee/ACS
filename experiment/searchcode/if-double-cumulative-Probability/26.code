@@ -1,0 +1,7 @@
+double part1 = -D / Math.pow(Q - ER, 2);
+double part12 = 1 - Poisson1.cumulativeProbability((int) (r + Q));
+double part1t = -D / Math.pow(Q - ER, 2) * (1 - Poisson1.cumulativeProbability((int) (r + Q)))
+* (K + C * Q + P * ES + W * ER);
+
+double part2 =  D / (Q - ER) * (C + W * Poisson1.cumulativeProbability((int) (r + Q)))+0.5*h;
+

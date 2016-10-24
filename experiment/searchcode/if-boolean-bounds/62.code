@@ -1,0 +1,12 @@
+Rectangle nextBounds = next.getBounds();
+Rectangle bounds = getBounds();
+Body.State state = vehicle.currentState();
+
+if ( vertical ) {
+float dist = y - state.y;
+if ( dist < 0 ) dist = -dist;
+return dist;
+}
+else {
+int x = nextBounds.x > bounds.x? bounds.x : bounds.x + bounds.width;
+

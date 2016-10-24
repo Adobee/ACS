@@ -1,0 +1,6 @@
+public static Locals newMainMethodScope(Locals programScope, boolean usesScore, boolean usesCtx, int maxLoopCounter) {
+Locals locals = new Locals(programScope, Definition.OBJECT_TYPE);
+// The ctx map set by executable scripts as a read-only map.
+if (usesCtx) {
+locals.defineVariable(null, Definition.getType(&quot;Map&quot;), CTX, true);
+

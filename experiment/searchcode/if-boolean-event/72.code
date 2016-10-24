@@ -1,0 +1,10 @@
+import java.util.Observer;
+
+public class LocalEventObserver implements Observer {
+private boolean _isLocalEvent;
+private AWTEvent _event;
+
+@Override
+public void update(Observable o, Object obj) {
+if (obj != null &amp;&amp; obj instanceof AWTEvent) {
+

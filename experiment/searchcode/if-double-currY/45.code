@@ -1,0 +1,10 @@
+super();
+}
+
+public UpTrend(double x, double y, double slope,double currY,int ySize, int xSize,float xOffset,float yOffset,ArrayList<HashMap<String, Double>> trendReversalPoints)
+setTrendProperties();
+
+}
+
+public UpTrend(double x1, double y1, double x2, double y2,double currY,int ySize, int xSize,float xOffset,float yOffset,ArrayList<HashMap<String, Double>> trendReversalPoints)
+

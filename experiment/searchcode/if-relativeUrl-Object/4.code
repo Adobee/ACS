@@ -1,0 +1,12 @@
+* Created by cmarcano on 13/10/15.
+*/
+public class RequestFactory {
+
+private String httpMethod;
+private String relativeUrl;
+io.nucleos.sailsio.request.Request.Builder builder = new io.nucleos.sailsio.request.Request.Builder()
+.relativeUrl(this.relativeUrl)
+.method(this.httpMethod);
+
+if (args != null) {
+

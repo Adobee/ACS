@@ -1,0 +1,14 @@
+
+public class MyEntropy {
+
+public static double myEntropy(double p1, double p2){
+double result;
+return result;
+}
+}
+
+public static double myEntropy(double p1, double p2, double p3){
+double result;
+
+if(p1 == 0){
+

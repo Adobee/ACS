@@ -1,0 +1,8 @@
+List<IMetadataTable> metadatas = node.getMetadataList();
+String CustomPattern = ElementParameterParser.getValue(node, &quot;__PATTERN__&quot;);
+boolean bUseCustom = &quot;true&quot;.equals(ElementParameterParser.getValue(node, &quot;__CUSTOM_PATTERN__&quot;));
+stringBuffer.append(TEXT_3);
+stringBuffer.append(CustomPattern.replace(&quot;\\&quot;, &quot;\\\\&quot;));
+stringBuffer.append(TEXT_4);
+} else {
+

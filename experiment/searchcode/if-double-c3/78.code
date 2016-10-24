@@ -1,0 +1,7 @@
+if (c2.get(i).id_bahan == c1.get(j).id_bahan) {
+if (c3.get(i).untung != 0) {
+c3.get(i).untung = (c3.get(i).untung + c1.get(j).harga_hidangan - c2.get(i).harga_bahan) / 2;
+// check ignore list
+if (!ignoreList.contains(c3.get(i).id_bahan)) {
+// if ignore list doesnt contain id bahan
+

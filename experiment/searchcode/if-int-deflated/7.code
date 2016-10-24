@@ -1,0 +1,9 @@
+public void handle(ByteBuffer deflated, long totalRemainingToRead) throws IOException {
+int remaining = deflated.remaining();
+
+if (!headerRead) {
+while (header.hasRemaining()) {
+totalRemainingToRead -= remaining - deflated.remaining();
+if (deflated.remaining() > (totalRemainingToRead - 8)) {
+r = (int) (totalRemainingToRead - 8);
+

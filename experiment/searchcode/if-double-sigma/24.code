@@ -1,0 +1,12 @@
+private double sigma;
+private double alpha;
+
+public SharingFunction(double sigma, double alpha) {
+super();
+this.sigma = sigma;
+this.alpha = alpha;
+}
+
+public double calculate(double d) {
+if (d >= sigma)
+

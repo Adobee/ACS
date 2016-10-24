@@ -1,0 +1,10 @@
+public static Object bool_object(Object l_boolean, Object r_object) {
+if (l_boolean != null) {
+if ((Boolean)l_boolean) {
+return r_object != null ? r_object : null;
+} else {
+return bool_object(left, right);
+}
+} else { // isBool(left) -> false
+if (isBool(right)) {
+

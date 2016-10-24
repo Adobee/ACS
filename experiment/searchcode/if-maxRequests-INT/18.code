@@ -1,0 +1,9 @@
+private Logger logger = Logger.getLogger(RateLimitsMonitor.class);
+
+public RateLimitsMonitor(int maxRequests, long minInterval) {
+this.maxRequests = maxRequests;
+long interval = System.currentTimeMillis() - lastCheckpoint;
+if(requests >= maxRequests) {
+try {
+long sleepTime = minInterval - interval;
+

@@ -1,0 +1,7 @@
+to = userFacade.getSingleCurrency(&quot;CAD&quot;, sqlDate);
+
+Double stepA = (Double.parseDouble(amount)) * from.getCurrency();
+Double stepB = stepA / to.getCurrency();
+
+stepB = Math.round(stepB * 100.0) / 100.0;
+

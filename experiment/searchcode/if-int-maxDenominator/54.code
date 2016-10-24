@@ -1,0 +1,5 @@
+public Fraction(double value, int maxDenominator) throws FractionConversionException {
+
+this(value, 0, maxDenominator, 100);
+* NOTE: This constructor is called with EITHER - a valid epsilon value and the maxDenominator set to Integer.MAX_VALUE (that way the maxDenominator has no effect). OR - a valid maxDenominator value and the epsilon value set to zero (that way epsilon only has effect if there is an exact match before the maxDenominator value is reached).
+

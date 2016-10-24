@@ -1,0 +1,12 @@
+* Created by natalia_markova on 17.05.2016.
+*/
+public class Character {
+
+private char ch;
+
+public Character(char ch) {
+if (o == null || getClass() != o.getClass()) return false;
+
+Character character = (Character) o;
+return ch == character.ch;
+

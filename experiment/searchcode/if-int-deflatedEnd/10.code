@@ -1,0 +1,10 @@
+public RealVector getEigenvector(final int i)
+throws InvalidMatrixException, ArrayIndexOutOfBoundsException {
+if (eigenvectors == null) {
+return deflatedEnd;
+}
+
+final int k = 4 * deflatedEnd + pingPong - 1;
+
+if ((start == deflatedEnd - 1) ||
+

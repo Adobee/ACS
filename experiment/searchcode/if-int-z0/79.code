@@ -1,0 +1,8 @@
+String str = getPart(6);
+if ((str != null) &amp;&amp; (str.matches(&quot;[0-9]{3}&quot;)))
+return Integer.parseInt(getPart(6));
+private static String newMethod(int paramInt, String paramString)
+{
+String str;
+if (paramInt < 14)
+

@@ -1,0 +1,12 @@
+this.canMove = true;
+}
+updateBounds();
+}
+
+@Override
+public void updateBounds() {
+shooting_bounds.y = position.y - SHOOTING_BOUNDS_ENEMY_HEIGHT / 2;
+
+if (frozenSprite != null) {
+frozenSprite.setPosition(position.x + 32, position.y - 32);
+

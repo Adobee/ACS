@@ -1,0 +1,13 @@
+public Pager(Long pageSize,Long totalSize){
+this.pageSize = pageSize;
+this.totalSize = totalSize;
+Long temp = totalSize / pageSize;
+if(totalSize % pageSize != 0){
+public Pager(Long pageNo,Long pageSize,Long totalSize){
+this(pageSize, totalSize);
+if(pageNo < 1){
+pageNo = 1l;
+}
+
+if(pageNo > totalPages) {
+

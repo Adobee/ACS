@@ -1,0 +1,7 @@
+private void findRelationPossibilities(Relation relation) {
+if (!this.InheritanceCanBe(relation))
+this.relationPossibilitiesMap.remove(Relation.INHERITANCE);
+
+if (!this.EquivalenceCanBe(relation))
+this.relationPossibilitiesMap.remove(Relation.EQUIVALENCE);
+

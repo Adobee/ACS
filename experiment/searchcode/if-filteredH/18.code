@@ -1,0 +1,9 @@
+int filteredW;
+int filteredH;
+int[] roiRect = new int[4];
+
+if(quality == FilterEnvironment.QUALITY_FINAL) {
+if(filteredW%2 != 0 || filteredH%2 != 0) {
+float aspect = (float)filteredH / (float)filteredW;
+if(filteredW >= filteredH) {
+

@@ -1,0 +1,6 @@
+ArrayList<RobotQuadrant> quadrantNames = new ArrayList<RobotQuadrant>();
+for (RobotQuadrant quadrantName : RobotQuadrant.values())
+{
+if (quadrantName.isQuadrantInFront())
+{
+

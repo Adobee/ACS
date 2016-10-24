@@ -1,0 +1,9 @@
+import newtonERP.orm.field.type.FieldInt;
+import newtonERP.orm.field.type.FieldString;
+
+/**
+* Entité ServiceProvider du module finances: représente les coordonnées des
+Vector<Field<?>> fieldsInit = new Vector<Field<?>>();
+fieldsInit.add(new FieldInt(&quot;Numéro&quot;, getPrimaryKeyName()));
+fieldsInit.add(new FieldString(&quot;Nom&quot;, &quot;name&quot;));
+

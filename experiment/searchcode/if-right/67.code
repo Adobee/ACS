@@ -1,0 +1,14 @@
+if (root==null){
+
+return true;
+
+}
+
+if(root.left==null&amp;&amp;root.right!=null||root.left!=null&amp;&amp;root.right==null){
+return false;
+}
+if(root!=null&amp;&amp;root.left==null&amp;&amp;root.right==null){
+return true;
+}
+return Symmetric(root.left,root.right);
+

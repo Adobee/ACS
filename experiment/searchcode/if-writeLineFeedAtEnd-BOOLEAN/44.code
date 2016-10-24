@@ -1,0 +1,6 @@
+public JsonXContentGenerator(JsonGenerator jsonGenerator, OutputStream os, String[] filters, boolean inclusive) {
+if (jsonGenerator instanceof GeneratorBase) {
+protected boolean inRoot() {
+if (isFiltered()) {
+JsonStreamContext context = filter.getFilterContext();
+

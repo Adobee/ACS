@@ -1,0 +1,10 @@
+long TIMEOUT_DELAY_SECS = 60;   // 60s
+
+public static PhonePeApi getInstance() {
+if (sPhonePeApi == null) {
+.addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+.validateEagerly(true)
+.build();
+
+mApiService = retrofit.create(ServerApiService.class);
+

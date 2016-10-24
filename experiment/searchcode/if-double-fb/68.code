@@ -1,0 +1,9 @@
+public static double zero(Function f, double x1, double x2, double tol, int maxit)
+{
+double a=x1, b=x2, c=x2, d=0, e=0, min1, min2;
+double fa=f.eval(a), fb=f.eval(b), fc;
+double p, q, r, s, tolerance, xm;
+
+if ((fa > 0.0 &amp;&amp; fb > 0.0) || (fa < 0.0 &amp;&amp; fb < 0.0))
+throw new ArithmeticException(&quot;Root must be bracketed&quot;);
+

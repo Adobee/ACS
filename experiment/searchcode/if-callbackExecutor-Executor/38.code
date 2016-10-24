@@ -1,0 +1,10 @@
+private Executor callbackExecutor = null;
+private TimeSpan timeSpan = TimeSpan.INFINITE;
+
+Builder(Task<T> task, Callback<T> callback) {
+final Callback<T> callback = callbackRef.get();
+if (callback == null) {
+return;
+}
+if (callbackExecutor == null) {
+

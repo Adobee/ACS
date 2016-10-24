@@ -1,0 +1,7 @@
+@SuppressWarnings(&quot;varargs&quot;)
+public OrProperty(PropertySource<Boolean>... properties) {
+super(properties);
+for (PropertySource<? extends Boolean> property: properties) {
+Boolean value = property.getValue();
+if (value != null &amp;&amp; value.booleanValue()) {
+

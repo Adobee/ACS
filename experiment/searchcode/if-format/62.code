@@ -1,0 +1,9 @@
+public static Format formatMatches (Format format, Format supported[] )
+{
+if (supported == null)
+return null;
+for (int i = 0;  i < supported.length;  i++)
+if (supported[i].matches(format))
+return supported[i];
+return null;
+

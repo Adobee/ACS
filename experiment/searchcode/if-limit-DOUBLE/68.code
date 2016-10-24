@@ -1,0 +1,9 @@
+private double e(double x, double limit)
+{
+double val = Math.pow(x, limit) / fact(limit);
+
+if (limit > 0)
+val += e(x, limit - 1);
+
+return val;
+

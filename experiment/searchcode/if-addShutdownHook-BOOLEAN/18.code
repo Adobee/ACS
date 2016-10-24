@@ -1,0 +1,13 @@
+
+import java.io.IOException;
+
+public class VirtReporter {
+
+static boolean dbg = false;
+static TCPClient tcp = null;
+public static void main(String[] args) {
+
+AddShutdownHook hook = new AddShutdownHook();
+hook.attachShutDownHook();
+Config config = new Config();
+

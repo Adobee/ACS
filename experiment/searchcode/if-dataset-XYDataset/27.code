@@ -1,0 +1,7 @@
+public static Range findDomainBounds(XYDataset xYDataset, boolean bl2) {
+if (xYDataset == null) {
+throw new IllegalArgumentException(&quot;Null &#39;dataset&#39; argument.&quot;);
+}
+Range range = null;
+if (!(xYDataset instanceof DomainInfo)) return DatasetUtilities.iterateDomainBounds(xYDataset, bl2);
+

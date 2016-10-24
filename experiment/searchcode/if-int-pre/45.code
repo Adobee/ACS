@@ -1,0 +1,14 @@
+pre[v] = -1;
+
+for (int v = 0; v < G.V(); v++)
+if (pre[v] == -1)
+dfs(G, v, v);
+}
+
+public int components() {
+low[v] = pre[v];
+for (int w : G.adj(v)) {
+if (pre[w] == -1) {
+dfs(G, v, w);
+low[v] = Math.min(low[v], low[w]);
+

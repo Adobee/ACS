@@ -1,0 +1,5 @@
+if(probs[i][j].compareTo(minProbability) > 0  &amp;&amp; Math.abs(i-j) < maxDistance)
+{
+double normalizedSum = (sum[i][j].doubleValue() / (double)(sum.length))*beta;
+ret[i][j] = PointRes.valueOf(1 - max*Math.tanh(normalizedSum)).multiply(probs[i][j]);
+

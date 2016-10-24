@@ -1,0 +1,9 @@
+public class App
+{
+public static void main( String[] args )
+{
+List<NumberVisitor> visitorList = new LinkedList<NumberVisitor>();
+for (int i = 0; i < 1000; i++) {
+for (NumberVisitor visitor : visitorList) {
+if (visitor.accept(i)) {
+

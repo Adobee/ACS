@@ -1,0 +1,12 @@
+int coefficientY;
+
+int targetX;
+int targetY;
+
+String targetType;
+int targetIndex;
+
+double theta;
+double ratio = (double) xDifference / (double) yDifference;
+if (targetX < centerX &amp;&amp; targetY < centerY) {
+

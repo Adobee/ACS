@@ -1,0 +1,13 @@
+return true;
+}
+
+public Order next() {
+if (this.last == null) {
+throw new NoSuchElementException();
+return this;
+}
+
+public void appendOrder(Order incomingOrder) {
+if (length == 0) {
+incomingOrder.setNextOrder(null);
+

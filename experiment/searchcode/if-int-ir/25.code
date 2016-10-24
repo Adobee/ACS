@@ -1,0 +1,13 @@
+public static boolean numeric(IrType p)
+{
+return p == IrType.CHAR || p == IrType.INT;
+}
+
+public static IrType max(IrType p1, IrType p2)
+{
+if(!numeric(p1) || !numeric(p2)) return null;
+else if(p1 == IrType.INT) return IrType.INT;
+else return IrType.CHAR;
+}
+}
+

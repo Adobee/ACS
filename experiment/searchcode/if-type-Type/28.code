@@ -1,0 +1,12 @@
+Type idType = namedTypeTable.get(idTypeName);
+if(idType == null)
+idType = IDType.create(idTypeName, null);
+return idType;
+}
+
+public static Type getType(String typeString){
+Type type = ArrayType.create(length, eleType);
+Type t = typeTable.get(type.toString());
+if(t==null){
+typeTable.put(type.toString(), type);
+

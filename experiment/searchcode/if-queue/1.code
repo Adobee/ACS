@@ -1,0 +1,12 @@
+private int l = 0, r = 0, size = 0;
+
+private static void ensureCapacity(ArrayQueueADT queue) {
+if (queue.size == queue.a.length) {
+queue.a[queue.r++] = e;
+
+if (queue.r == queue.a.length) {
+queue.r = 0;
+}
+
+++queue.size;
+

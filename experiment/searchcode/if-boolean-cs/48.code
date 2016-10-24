@@ -1,0 +1,8 @@
+boolean[] visited = new boolean[numCourses];
+for (int i = 0; i < numCourses; i++)
+if (!visited[i] &amp;&amp; !dfs(i, cs, visited, visiting)) return false;
+return true;
+}
+
+private boolean dfs(int i, List<Integer>[] cs, boolean[] visited, boolean[] visiting) {
+

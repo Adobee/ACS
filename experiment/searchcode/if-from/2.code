@@ -1,0 +1,13 @@
+return false;
+}
+if(toY>9){//当下边出界时
+return false;
+}
+if(fromX==toX &amp;&amp; fromY==toY){//目的地与出发点相同，
+if((Math.abs(fromY-toY)+Math.abs(toX-fromX))>1){//只能走一步
+return false;
+}
+break;
+case 5://黑士
+if(toY>2||toX<3||toX>5){//出了九宫格
+

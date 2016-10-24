@@ -1,0 +1,8 @@
+for (int i = 0; i < getChart().getXYPlot().getRangeAxisCount(); i++) {
+ValueAxis rangeAxis = getChart().getXYPlot().getRangeAxis(i);
+if (rangeAxis == null)
+ValueAxisPlot plot = (ValueAxisPlot)axis.getPlot();
+Range defaultRange =  plot.getDataRange(axis);
+
+if (defaultRange == null)
+

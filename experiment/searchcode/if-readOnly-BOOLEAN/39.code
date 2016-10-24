@@ -1,0 +1,10 @@
+public Object parent;
+public String name;
+public int type;
+protected Object value;
+public boolean readonly;
+
+public void setValue(Object v) throws SQLException {
+if (this.readonly) {
+throw new SQLException(&quot;Readonly field cannot be assigned.&quot;);
+

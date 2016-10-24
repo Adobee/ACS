@@ -1,0 +1,15 @@
+node.parent = this;
+}
+
+public List<TableauNode> getChildren() {
+return children;
+}
+
+public boolean isClosed() {
+return false;
+}
+
+private boolean formulasContradictKnownFormula() {
+for (TableauFormula formula : formulas) {
+if (isClosedBy(formula)) {
+

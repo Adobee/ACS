@@ -1,0 +1,13 @@
+* @version	x.xx
+* @author jmilliron
+*
+*/
+public class LockedCell implements Comparable {
+
+private int rowIndex = 0;
+private int colIndex = 0;
+
+public LockedCell() {}
+
+public LockedCell(int rowIndex, int colIndex) {
+

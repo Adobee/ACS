@@ -1,0 +1,7 @@
+package org.jdownloader.plugins;
+
+public class SkipReasonException extends Exception {
+private static String constructMessage(SkipReason reason, String message) {
+if (message != null) {
+return reason.name() + &quot;:&quot; + message;
+

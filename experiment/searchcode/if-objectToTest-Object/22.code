@@ -1,0 +1,11 @@
+GameObject objectToTest = in_list.get(i);
+
+//if its in the aoe kill it
+if(area.inRect(objectToTest.v.getPos()) &amp;&amp; objectToTest.isBoss == false)
+GameObject objectToTest = in_list.get(i);
+boolean b_isInArea = false;
+
+if(objectToTest.collisionHandler != null)
+{
+objectToTest.updateBoundingBox(objectToTest.collisionHandler);
+

@@ -1,0 +1,7 @@
+private SimpleChange() {}
+
+public SimpleChange(Object oldValue, Object newValue) {
+super(determineType(oldValue, newValue));
+private static Type determineType(Object oldValue, Object newValue) {
+if (oldValue != null &amp;&amp; newValue != null) return Type.UPDATE;
+

@@ -1,0 +1,7 @@
+public static void loadProperties(String name,String path){
+try{
+Properties properties=XFile.loadProperties(path);
+if(properties!=null){
+if(map==null)map=new HashMap<String,Properties>();
+map.put(name,properties);
+

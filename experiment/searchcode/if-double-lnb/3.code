@@ -1,0 +1,12 @@
+_beta = new IncompleteBetaFunction(a, b);
+}
+
+@Override
+public Double evaluate(final Double x) {
+if (!ArgumentChecker.isInRangeInclusive(0, 1, x)) {
+throw new IllegalArgumentException(&quot;x must lie in the range 0 to 1&quot;);
+}
+double pp, p, t, h, w, lnA, lnB, u, a1 = _a - 1;
+final double b1 = _b - 1;
+if (_a >= 1 &amp;&amp; _b >= 1) {
+

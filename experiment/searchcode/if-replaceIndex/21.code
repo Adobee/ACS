@@ -1,0 +1,10 @@
+* @param replace
+*/
+public Replace(final List<Character> match, final List<String> replace) {
+super();
+if ( match.size() != replace.size() ) {
+final char ch = value.charAt( n );
+int replaceIndex = getReplaceIndex( ch );
+if ( replaceIndex >= 0 ) {
+sb.append( this.replace[replaceIndex] );
+

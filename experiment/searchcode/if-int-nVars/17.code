@@ -1,0 +1,11 @@
+* the number of basis functions, and the second is the number of state variables.
+*/
+public double[][] computeFourierCoefficients(int nvars, int order)
+{
+int nterms = (int)Math.pow(order + 1, nvars);
+double [][] multipliers = new double[nterms][nvars];
+
+int pos = 0;
+
+int c[] = new int[nvars];
+

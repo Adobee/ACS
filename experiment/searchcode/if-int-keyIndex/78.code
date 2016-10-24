@@ -1,0 +1,11 @@
+Object[] local_keys = keys[bucketIndex];
+
+for (int keyIndex = numberKeys[bucketIndex]; --keyIndex >= 0; )
+{
+if (key == local_keys[keyIndex] || key.equals(local_keys[keyIndex]))
+int bucketIndex = (int) (key.hashCode() &amp; tableHighestIndex);
+
+if (numberKeys[bucketIndex] > 0)
+{
+int keyIndex;
+

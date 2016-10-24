@@ -1,0 +1,8 @@
+public long countGoodSequences(long K, long A, long B) {
+this.A = A;
+this.B = B;
+if (K <= 2) {
+if (B >= K)
+return B - Math.max(A, K) + 1;
+return 0;
+

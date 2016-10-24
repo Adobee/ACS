@@ -1,0 +1,9 @@
+movieService = new DefaultMovieService(DBType.RELATIONAL);
+}
+
+@Override
+public void bindItem(ObjectIdGenerator.IdKey idkey, Object o) {
+public Object resolveId(ObjectIdGenerator.IdKey idkey) {
+if(idkey.key instanceof Long){
+Long id = (Long) idkey.key;
+

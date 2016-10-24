@@ -1,0 +1,9 @@
+//Standard of compare is first - x coordinate, second - y coordinate
+public int compareTo(Vector2 rhs){
+if(this.x != rhs.x){
+if( this.x < rhs.x) return -1;
+else if( this.x > rhs.x) return 1;
+}
+else{
+if( this.y < rhs.y) return -1;
+

@@ -1,0 +1,10 @@
+* Close a result set
+*
+* @param resultSet
+*/
+public static void close(ResultSet resultSet) {
+if (resultSet != null) {
+public static void close(ResultSet resultSet, Statement stmt) {
+close(resultSet);
+if (stmt != null) {
+

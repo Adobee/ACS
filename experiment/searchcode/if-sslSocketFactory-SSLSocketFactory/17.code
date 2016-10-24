@@ -1,0 +1,10 @@
+import android.net.SSLCertificateSocketFactory;
+
+import javax.net.ssl.SSLSocketFactory;
+
+public class EmSSLUtils {
+private static SSLSocketFactory sInsecureFactory;
+public synchronized static final SSLSocketFactory getSSLSocketFactory(boolean insecure) {
+if (insecure) {
+if (sInsecureFactory == null) {
+

@@ -1,0 +1,11 @@
+* in fact, this is quasi-Gaussian function with cut-off at 3*variance<br>
+*
+* <b>
+* m_f (X) = exp ( -X^2 / (2* variance^2 )</b>; if 0 < x <= 3*variance <br><b>
+* m_f (X) = 0 </b>;  if x> 3*variance
+public double getValue(double x) {
+assert(x>=0);
+if (this.variance == 0) {
+if (x==0) return 1.0d;
+else return 0;
+

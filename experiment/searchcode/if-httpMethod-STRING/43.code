@@ -1,0 +1,8 @@
+HttpMethod(boolean idempotent) {
+this.idempotent = idempotent;
+}
+
+public static HttpMethod fromString(final String input) {
+for (final HttpMethod method : HttpMethod.values()) {
+if (method.toString().equalsIgnoreCase(input)) {
+

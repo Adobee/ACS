@@ -1,0 +1,12 @@
+* @see <a href=&quot;https://github.com/reactor/reactive-streams-commons&quot;>Reactive-Streams-Commons</a>
+*/
+final class FluxConcatIterable<T> extends Flux<T>
+implements MultiReceiver {
+
+final Iterable<? extends Publisher<? extends T>> iterable;
+ConcatIterableSubscriber<T> parent = new ConcatIterableSubscriber<>(s, it);
+
+s.onSubscribe(parent);
+
+if (!parent.isCancelled()) {
+

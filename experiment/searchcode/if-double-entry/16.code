@@ -1,0 +1,13 @@
+private static final long serialVersionUID = 1L;
+
+public void increment(T key, double amount) {
+if (!containsKey(key)) {
+put(key, 0.0);
+increment(key, 1.0);
+}
+
+public T maxKey() {
+Entry<T, Double> maxEntry = max();
+if(maxEntry != null)
+return maxEntry.getKey();
+

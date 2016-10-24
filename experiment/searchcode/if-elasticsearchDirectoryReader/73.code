@@ -1,0 +1,6 @@
+import org.apache.lucene.util.IOUtils;
+import org.elasticsearch.common.lucene.index.ElasticsearchDirectoryReader;
+import org.elasticsearch.index.engine.Engine;
+try (DirectoryReader reader = DirectoryReader.open(writer)) {
+ElasticsearchDirectoryReader wrap = ElasticsearchDirectoryReader.wrap(reader, id);
+

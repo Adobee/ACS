@@ -1,0 +1,10 @@
+* candidates. The new sieve begins at the specified base, which must
+* be even.
+*/
+BitSieve(BigInteger base, int searchLen) {
+bits = new long[(unitIndex(searchLen-1) + 1)];
+length = searchLen;
+int start = 0;
+
+int step = smallSieve.sieveSearch(smallSieve.length, start);
+

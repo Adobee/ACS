@@ -1,0 +1,11 @@
+return seriesKey.getYear();
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+SeriesId id = (SeriesId) o;
+
+if (!rootTreeId.equals(id.rootTreeId)) return false;
+if (!seriesKey.equals(id.seriesKey)) return false;
+

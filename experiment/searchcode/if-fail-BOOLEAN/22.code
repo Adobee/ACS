@@ -1,0 +1,8 @@
+public void testConstructorTrue() {
+_Boolean b = new _Boolean(true);
+if (!b.unwrap()) {
+_Boolean b = new _Boolean(true);
+Callable c = new _Boolean(true).bindTo(b);
+if (!(c instanceof _Boolean)) {
+fail(&quot;_Boolean.bind() did not return a _Boolean&quot;);
+

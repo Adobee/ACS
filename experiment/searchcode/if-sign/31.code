@@ -1,0 +1,13 @@
+package com.smart.smartspay.sign;
+
+import java.util.Date;
+
+/**
+*
+* @author Administrator
+*/
+public class SyncPutSignVerifyToken implements Runnable {
+synchronized (SignCommon.SignRecords) {
+for (SignInformationModel SignRecord : SignCommon.SignRecords) {
+if (SignRecord.getToken().equals(signModel.getToken())) {
+

@@ -1,0 +1,10 @@
+Button solve = (Button) rootView.findViewById(R.id.button1);
+
+if (maximize == true)
+type.setText(&quot;Maximization&quot;);
+else
+type.setText(&quot;Minimization&quot;);
+// Display the equation of OBJECTIVE FUNCTION
+for (int i = 0; i < variable; i++) {
+TextView objfunctv = new TextView(getActivity());
+

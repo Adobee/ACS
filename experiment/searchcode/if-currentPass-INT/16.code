@@ -1,0 +1,10 @@
+paths.add(conf.getOutputPath() + &quot;/i&quot; + (currentPass - 1));
+if (currentPass == 0) {
+//paths.add(conf.getOutputPath() + &quot;/count&quot;);
+public String getLoopOutputs(JobConf conf, int iteration, int step) {
+int currentPass = 2 * iteration + step;
+return (conf.getOutputPath() + &quot;/i&quot; + currentPass);
+}
+
+}
+

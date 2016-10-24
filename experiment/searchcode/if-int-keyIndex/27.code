@@ -1,0 +1,9 @@
+super.decKeyValuePositive(key, value);
+}
+public synchronized void getData(ObjectIntArrayHolderIF arrayHolder)
+int oldValue = local_values[keyIndex];
+
+int highest_index = local_values.length - 1;
+
+if (keyIndex < highest_index)
+

@@ -1,0 +1,12 @@
+effValue = Math.min(effValue, bigNumber);
+
+if (Double.isNaN(effValue)) {
+effValue = -bigNumber;
+simplex[m - 1] = reflection_sample;
+}
+continue;
+}
+
+//contraction
+if (!feasible(reflection) || simplex[m - 1].fx <= reflection_sample.fx) {
+

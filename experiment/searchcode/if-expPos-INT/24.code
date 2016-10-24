@@ -1,0 +1,10 @@
+implements IASTAmbiguousExpression, ICPPASTExpression {
+private IASTExpression[] exp = new IASTExpression[2];
+private int expPos= -1;
+
+public CPPASTAmbiguousExpression(IASTExpression... expressions) {
+public void addExpression(IASTExpression e) {
+assertNotFrozen();
+if (e != null) {
+exp = ArrayUtil.appendAt(IASTExpression.class, exp, ++expPos, e);
+

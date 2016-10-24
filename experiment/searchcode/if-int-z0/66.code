@@ -1,0 +1,5 @@
+//    private static final String EMAIL_REGEX = &quot;^[a-zA-Z0-9_!#$%&amp;&#39;*+/=?`{|}~^-]+(?:\\.[a-zA-Z0-9_!#$%&amp;&#39;*+/=?`{|}~^-]+)*@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$&quot;;
+public static boolean isValidPassword(String password) {
+if (isNotNullOrEmpty(password)) {
+int length = password.length();
+

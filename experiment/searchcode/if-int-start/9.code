@@ -1,0 +1,7 @@
+public class RandomColoringDiv2 {
+
+public int getCount(int maxR, int maxG, int maxB, int startR, int startG,
+for(int g = 0; g < maxG; ++g){
+for(int b = 0; b < maxB; ++b){
+if(Math.abs(startR - r) <= d2 &amp;&amp; Math.abs(startG - g ) <= d2 &amp;&amp; Math.abs(startB - b) <= d2
+

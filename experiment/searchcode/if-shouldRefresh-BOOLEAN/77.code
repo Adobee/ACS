@@ -1,0 +1,8 @@
+* @see org.eclipse.sirius.ecore.extender.business.api.permission.IAuthorityListener#notifyIsLocked(org.eclipse.emf.ecore.EObject)
+*/
+public void notifyIsLocked(final EObject instance) {
+if (shouldRefresh(instance))
+public void notifyIsLocked(Collection<EObject> instances) {
+for (final EObject eObject : instances) {
+if (shouldRefresh(eObject)) {
+

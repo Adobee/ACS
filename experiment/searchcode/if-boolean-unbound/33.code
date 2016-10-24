@@ -1,0 +1,16 @@
+(mBound ? mBoundTimeout : mUnboundTimeout);
+}
+
+@Override
+public void doDraw(Canvas c) {
+if (mBound) {
+drawBound(c);
+} else {
+drawUnbound(c);
+}
+}
+
+@Override
+public void update() {
+if (mBound) {
+

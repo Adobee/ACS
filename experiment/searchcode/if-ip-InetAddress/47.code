@@ -1,0 +1,7 @@
+NetworkInterface networkInterface = en.nextElement();
+
+for (Enumeration<InetAddress> enumIpAddr = networkInterface.getInetAddresses(); enumIpAddr.hasMoreElements();) {
+InetAddress inetAddress = enumIpAddr.nextElement();
+
+if (!inetAddress.isLoopbackAddress() &amp;&amp; inetAddress instanceof Inet4Address) {
+

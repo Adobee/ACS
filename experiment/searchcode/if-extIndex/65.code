@@ -1,0 +1,9 @@
+baseName = fileName;
+}
+int extIndex = fileName.lastIndexOf(&#39;.&#39;);
+if (extIndex < lastSepIndex) {
+extIndex = -1;
+}
+if (extIndex >= 0) {
+baseNameNoExt = fileName.substring(lastSepIndex + 1, extIndex);
+

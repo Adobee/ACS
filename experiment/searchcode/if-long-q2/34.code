@@ -1,0 +1,11 @@
+private final static String NEQU = &quot;Not equal&quot;;
+
+private long gcd(long a, long b) {
+if (b == 0) return a;
+else return gcd(b, a % b);
+long a = q1.poll();
+long b = q2.poll();
+if (a != b)
+return NEQU;
+remove.clear();
+

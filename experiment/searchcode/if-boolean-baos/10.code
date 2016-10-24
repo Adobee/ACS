@@ -1,0 +1,6 @@
+final ByteArrayOutputStream baos = new ByteArrayOutputStream(10);
+final String testChars = &quot;abc123_+/`&quot;;
+baos.write(testChars.getBytes(Charsets.UTF_8));
+InputStream in = new ByteArrayInputStream(baos.toByteArray());
+if (oneByteAtATime) {
+

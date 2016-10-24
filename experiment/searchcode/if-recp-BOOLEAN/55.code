@@ -1,0 +1,11 @@
+return mapping.findForward(TracingConstants.COMPOSE_MESSAGE);
+}
+
+List recpList = theForm.getRecp_list();
+List newRecpList = new ArrayList();
+if (recpList != null) {
+Recipient recp = (Recipient) i.next();
+recp.setMessage(msg);
+if (recp.getStation_id() > 0) {
+recp.setStation(StationBMO.getStation(&quot;&quot; + recp.getStation_id()));
+

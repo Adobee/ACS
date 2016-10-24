@@ -1,0 +1,15 @@
+return prefs.getBoolean(MUSIC, true);
+}
+
+public void setMusic(boolean on, boolean flush) {
+prefs.putBoolean(MUSIC, on);
+if (flush)
+flush();
+public void setSound(boolean on, boolean flush) {
+prefs.putBoolean(SOUND, on);
+if (flush)
+flush();
+}
+
+public int getHighScore() {
+

@@ -1,0 +1,11 @@
+* @param id
+* @return
+*/
+public Boolean remove(int id){
+try {
+dimensionDao.del(id);
+float len2 = length2 == null ? -1 : length2;
+float acc = accuracy == null ? 0 : accuracy;
+if (dimensionList != null) {
+if ((len1 != -1) &amp;&amp; (len2 == -1)) {//匹配一条边
+

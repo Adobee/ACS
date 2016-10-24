@@ -1,0 +1,9 @@
+public int findK(int[] m, int mbegin, int mend, int[] n, int nbegin, int nend, int k){
+if(mbegin > mend &amp;&amp; nbegin > nend){
+throw new IllegalStateException(&quot;Invalid State&quot;);
+return n[k-1+nbegin];
+}
+
+if (nbegin > nend){
+return m[k-1+mbegin];
+

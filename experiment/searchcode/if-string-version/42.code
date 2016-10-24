@@ -1,0 +1,11 @@
+return &quot;{ \&quot;name\&quot; : \&quot;&quot; + JSONObject.escape(name) + &quot;\&quot;, \&quot;versionString\&quot; : \&quot;&quot; + JSONObject.escape(versionString) + &quot;\&quot;, \&quot;publisher\&quot; : \&quot;&quot; + JSONObject.escape(publisher) + &quot;\&quot; }&quot;;
+}
+
+public String toString() {
+String title =  name;
+if (versionString != null) {
+title += &quot; &quot; + versionString;
+}
+if (publisher != null) {
+title += &quot; by &quot; + publisher;
+

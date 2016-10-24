@@ -1,0 +1,7 @@
+public Matrix(final double[] values, final int m) {
+columndimension = (m != 0 ? values.length / m : 0);
+if(m * columndimension != values.length) {
+public final void setRow(final int j, final double[] row) {
+if(row.length != columndimension) {
+throw new IllegalArgumentException(ERR_MATRIX_DIMENSIONS);
+

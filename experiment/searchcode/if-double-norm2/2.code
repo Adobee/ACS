@@ -1,0 +1,11 @@
+import org.deeplearning4j.optimize.api.TerminationCondition;
+import org.nd4j.linalg.api.ndarray.INDArray;
+
+/**
+* Terminate if the norm2 of the gradient is < a certain tolerance
+INDArray line = (INDArray) otherParams[0];
+double norm2 = line.norm2(Integer.MAX_VALUE).getDouble(0);
+return norm2 < gradientTolerance;
+}
+}
+

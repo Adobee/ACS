@@ -1,0 +1,7 @@
+* <ul>
+*   <li>{@link intermediateTrace.clocks.impl.CombinedClockBoundaryImpl#getSubtrahend <em>Subtrahend</em>}</li>
+String oldSubtrahend = subtrahend;
+subtrahend = newSubtrahend;
+if (eNotificationRequired())
+eNotify(new ENotificationImpl(this, Notification.SET, ClocksPackage.COMBINED_CLOCK_BOUNDARY__SUBTRAHEND, oldSubtrahend, subtrahend));
+

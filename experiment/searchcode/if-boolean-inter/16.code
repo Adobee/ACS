@@ -1,0 +1,19 @@
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import spring.mybatis.model.MemBean;
+import spring.mybatis.model.MemInter;
+
+@Controller
+public String insert(MemBean bean)
+{
+boolean b=inter.insertData(bean);
+if(b)
+{
+return &quot;redirect:/list.do&quot;;
+}else
+{
+return &quot;redirect:/error.jsp&quot;;
+}
+}
+}
+

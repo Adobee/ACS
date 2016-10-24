@@ -1,0 +1,11 @@
+* @param source AudioSource to read from
+* @param length
+* @param shift
+* @param samples set true if specifying quantities as samples, or false for milliseconds
+// shift can&#39;t be larger than length
+if (shift > length)
+shift = length;
+
+if (samples) {
+// quantities are actual samples
+

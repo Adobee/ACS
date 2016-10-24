@@ -1,0 +1,11 @@
+return (ArrayList<String>) GroovyEngine.eval(tableName + &quot;.TAG&quot;, &quot;columneName&quot;);
+}
+
+static Boolean getSaveTagDefine(String tableName)
+throws GroovyScriptNotFoundExcetpion, GroovyScriptExecuteExcetpion {
+return (Boolean) GroovyEngine.eval(tableName + &quot;.TAG&quot;, &quot;saveTag&quot;);
+}
+
+static boolean hasScript(String tableName){
+return GroovyScriptLoader.hasScript(tableName + &quot;.TAG&quot;);
+

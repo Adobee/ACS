@@ -1,0 +1,13 @@
+@Override
+public boolean matches(String text) {
+return text.contains(contains);
+}
+
+@Override
+public int compareTo(IMatchingTranslation o) {
+if (o instanceof ContainingTranslation)
+return ((ContainingTranslation) o).contains.compareTo(contains);
+return 0;
+}
+}
+

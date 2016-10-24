@@ -1,0 +1,7 @@
+package com.verba.language.build.events;
+
+import com.verba.language.build.targets.artifacts.interfaces.BuildArtifact;
+public void publishBuildUpdated(BuildArtifact artifact) {
+if (dependencyGraph.containsTargetsForDependency(artifact)) {
+for (BuildTarget target : dependencyGraph.getTargetsForDependency(artifact)) {
+

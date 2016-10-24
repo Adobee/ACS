@@ -1,0 +1,8 @@
+int[] extra = new int[]{android.R.attr.scaleType};
+
+private static final ImageView.ScaleType[] sScaleTypeArray = {
+TypedArray a = context.obtainStyledAttributes(attrs, extra);
+int scaleType = a.getInt(0, -1);
+if (scaleType != -1) {
+imgView.setScaleType(sScaleTypeArray[scaleType]);
+

@@ -1,0 +1,6 @@
+public NodePath(String... pathSegments) {
+if (pathSegments == null || pathSegments.length == 0) {
+for (String pathSegment : pathSegments) {
+checkValidPathSegment(pathSegment);
+String encodedPathSegment = encode(pathSegment);
+

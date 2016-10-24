@@ -1,0 +1,10 @@
+private int currentStep = 1;
+private int currentSpan = 1;
+private long nrLnsReadAfterHeader = 0;
+
+public static enum PEAKFORMAT {
+qval = Double.parseDouble(elems[8]);
+}
+
+if (peakformat == PEAKFORMAT.NARROWPEAK) {
+

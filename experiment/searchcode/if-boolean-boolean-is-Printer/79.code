@@ -1,0 +1,6 @@
+mPrinterInfo.macAddress = sharedPreferences.getString(&quot;macAddress&quot;, &quot;&quot;);
+if(isLabelPrinter(mPrinterInfo.printerModel)){
+mPrinterInfo.paperSize = PrinterInfo.PaperSize.CUSTOM;
+mPrinterInfo.isAutoCut = Boolean.parseBoolean(sharedPreferences.getString(&quot;autoCut&quot;, &quot;&quot;));
+mPrinterInfo.isCutAtEnd = Boolean.parseBoolean(sharedPreferences.getString(&quot;endCut&quot;, &quot;&quot;));
+

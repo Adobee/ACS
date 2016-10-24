@@ -1,0 +1,10 @@
+public int totalNQueens(int n) {
+if (n <= 1) return n;
+int totalSolutions = 0;
+int[] columns = new int[n];
+totalSolutions = dfs(columns, main_diag, anti_diag, 0, totalSolutions);
+return totalSolutions;
+}
+
+private int dfs(int[] columns, int[] main_diag, int[] anti_diag, int row, int totalSolutions) {
+

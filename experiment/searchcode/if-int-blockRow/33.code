@@ -1,0 +1,10 @@
+return internalSudoku;
+}
+
+private boolean iteratePartialSolution(int row, int column, byte[] sudoku) {
+if (row >= 9) {
+int newColumn = (column + 1) % 9;
+int newRow = row + (newColumn == 0 ? 1 : 0);
+int pos = row * 9 + column;
+if (sudoku[pos] == 0) {
+

@@ -1,0 +1,7 @@
+InnodbFtIndexTableEntity that = (InnodbFtIndexTableEntity) o;
+
+if (docCount != that.docCount) return false;
+if (docId != that.docId) return false;
+result = 31 * result + (int) (lastDocId ^ (lastDocId >>> 32));
+result = 31 * result + (int) (docCount ^ (docCount >>> 32));
+

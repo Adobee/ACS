@@ -1,0 +1,9 @@
+for (int x = 0; x < densityMap[y].length; x++) {
+int value = densityMap[y][x];
+
+if (value == B) {
+boolean u, d, l, r;
+if (y < densityMap.length - 1 &amp;&amp; densityMap[y + 1][x] != B) {
+int diff = value - densityMap[y + 1][x];
+if (diff > 2) {
+

@@ -1,0 +1,12 @@
+r2 = in.nextDouble();
+
+double eps = 1e-12;
+
+if (Math.abs(r1) < eps || Math.abs(r2) < eps) {
+area = Math.PI * r1 * r1;
+} else {
+if (r1 < r2) {
+double tmp = r1;
+r1 = r2;
+r2 = tmp;
+

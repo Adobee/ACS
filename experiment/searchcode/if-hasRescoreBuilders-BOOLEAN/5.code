@@ -1,0 +1,10 @@
+fetchSourceContext = in.readOptionalStreamable(FetchSourceContext::new);
+boolean hasFieldDataFields = in.readBoolean();
+if (hasFieldDataFields) {
+fieldDataFields.add(in.readString());
+}
+}
+boolean hasFieldNames = in.readBoolean();
+if (hasFieldNames) {
+int size = in.readVInt();
+

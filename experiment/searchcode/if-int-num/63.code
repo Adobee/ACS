@@ -1,0 +1,8 @@
+public int firstMissingPositive(int[] num) {
+if (num == null || num.length == 0) {
+return 1;
+}
+for (int i = 0; i < num.length; i++) {
+if (num[i] > 0 &amp;&amp; num[i] <= num.length &amp;&amp; num[num[i]-1] != num[i]) {
+int temp = num[num[i]-1];
+

@@ -1,0 +1,5 @@
+static private String removeEnclosingString(String _value, String _removeString) {
+int length = _removeString.length();
+if (_value.startsWith(_removeString)) _value = _value.substring(length);
+if (_value.endsWith(_removeString)) _value = _value.substring(0,_value.length()-length);
+

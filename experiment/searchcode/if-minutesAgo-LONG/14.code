@@ -1,0 +1,8 @@
+List<RoomLogging.LogMessage> logs = null;
+
+if ( extra.length() > 0 ) {
+logs = context.getLogging().search( extra );
+for ( int i=logs.size()-1; i>=0; i-- ) {
+RoomLogging.LogMessage msg = logs.get(i);
+long minutesAgo = ( now.getTime() - msg.ts.getTime() ) / ( 1000 * 60 );
+

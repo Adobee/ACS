@@ -1,0 +1,9 @@
+private volatile boolean isCancelled = false;
+private volatile boolean isFailure = false;
+private volatile boolean isException = false;
+return cause;
+}
+
+public boolean cancel(boolean mayInterruptIfRunning) {
+if (isDone) return false;
+

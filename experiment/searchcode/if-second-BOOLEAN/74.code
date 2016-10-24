@@ -1,0 +1,11 @@
+private final U second;
+
+public Pair(T first, U second) {
+this.first = first;
+this.second = second;
+return 41 * (41 + first.hashCode()) + second.hashCode();
+}
+
+@Override
+public boolean equals(Object o) {
+

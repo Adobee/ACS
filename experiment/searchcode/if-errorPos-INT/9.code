@@ -1,0 +1,10 @@
+throw new BoilerException(&quot;Boiler has returned nothing&quot;);
+}
+
+response = result;
+
+
+int errorPos = result.lastIndexOf(BOILER_ERROR_MESSAGE_STRING);
+if (errorPos != -1) {
+errorPos += BOILER_ERROR_MESSAGE_STRING.length();
+

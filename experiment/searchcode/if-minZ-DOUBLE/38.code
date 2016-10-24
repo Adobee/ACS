@@ -1,0 +1,12 @@
+if (bb.maxY <= this.minY || bb.minY >= this.maxY) {
+return z;
+}
+if (z > 0 &amp;&amp; bb.maxZ <= this.minZ) {
+double z1 = this.minZ - bb.maxZ;
+z = z1;
+}
+}
+if (z < 0 &amp;&amp; bb.minZ >= this.maxZ) {
+double z2 = this.maxZ - bb.minZ;
+if (z2 > z) {
+

@@ -1,0 +1,5 @@
+public List<PredictTemplate> getPagePredictTemplateList(int pageIndex) {
+List<PredictTemplate> templateList = new ArrayList<PredictTemplate>();
+for (Integer predictId : predictTemplates.keySet()) {
+if (predictTemplates.get(predictId).getPageIndex() == pageIndex) {
+

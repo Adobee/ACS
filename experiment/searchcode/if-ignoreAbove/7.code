@@ -1,0 +1,7 @@
+public Builder ignoreAbove(int ignoreAbove) {
+if (ignoreAbove < 0) {
+throw new IllegalArgumentException(&quot;[ignore_above] must be positive, got &quot; + ignoreAbove);
+iterator.remove();
+} else if (propName.equals(&quot;ignore_above&quot;)) {
+builder.ignoreAbove(XContentMapValues.nodeIntegerValue(propNode, -1));
+

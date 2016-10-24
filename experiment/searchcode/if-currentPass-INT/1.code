@@ -1,0 +1,10 @@
+return String.valueOf(currentPass);
+}
+
+public void nextGuess() {
+int index = currentPass.length - 1;
+for (; index >= 0;) {
+if (currentPass[index] == charSet[charSet.length - 1]) {
+if (index == 0) {
+currentPass = new char[currentPass.length];
+

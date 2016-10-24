@@ -1,0 +1,9 @@
+import com.oscar.dbexport.util.STException;
+
+public abstract class CancelableObject implements ICancelable {
+private boolean isBeginCancel = false;
+private boolean isCanceled = false;
+private Integer cancelLock = new Integer(0);
+
+@Override
+

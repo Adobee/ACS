@@ -1,0 +1,6 @@
+return new Builder<>(aggName, aggType, context, ValuesSource.class, ValuesSourceType.ANY);
+}
+
+public static Builder<ValuesSource.Numeric> numeric(String aggName, InternalAggregation.Type aggType, SearchContext context) {
+return new Builder<>(aggName, aggType, context, ValuesSource.Numeric.class, ValuesSourceType.NUMERIC)
+

@@ -1,0 +1,7 @@
+public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+try {
+Object o = method.invoke(doc, args);
+if(needsNormalization(method.getName())) {
+private static boolean needsNormalization(String name) {
+return name.startsWith(&quot;add&quot;) || name.startsWith(&quot;set&quot;) || name.startsWith(&quot;delete&quot;) || name.startsWith(&quot;rename&quot;);
+

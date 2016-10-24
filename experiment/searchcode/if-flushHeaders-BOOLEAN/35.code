@@ -1,0 +1,8 @@
+return flushHeaders(outMessage, true);
+}
+
+protected OutputStream flushHeaders(Message outMessage, boolean getStream) throws IOException {
+OutputStream responseStream = flushHeaders(outMessage);
+if (null != responseStream) {
+wrappedStream = responseStream;
+

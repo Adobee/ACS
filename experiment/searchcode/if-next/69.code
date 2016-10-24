@@ -1,0 +1,8 @@
+public ListNode deleteDuplicates(ListNode head) {
+ListNode g = new ListNode(-1);
+g.next = head;
+head = g;
+ListNode p = head;
+while(p.next!=null &amp;&amp; p.next.next!=null){
+if(p.next.val==p.next.next.val){
+

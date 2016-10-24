@@ -1,0 +1,10 @@
+private boolean translating;
+
+private float translateX;
+private float translateY;
+
+private int currentTranslateDelay;
+public void updateComponent(int deltaTime) {
+if (translating) {
+if (currentTranslateDelay + deltaTime < translateDelayMS) {
+

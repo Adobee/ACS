@@ -1,0 +1,13 @@
+coreMemcached.set(key, 60 * 15, value);
+return value.split(&quot;,&quot;)[0];
+
+}
+
+public int checkMobileCode(String phone,String code){
+if(!PhoneUtils.isChinaPhone(phone)){
+logger.info(&quot;process checkMobileCode, phone={},code={},value={}&quot;,phone,code,value);
+if(value==null){
+return -1;
+}
+String[] codes = value.split(&quot;,&quot;);
+

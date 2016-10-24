@@ -1,0 +1,9 @@
+* @param x
+* @param mu
+* @param sigma
+* @return y
+*/
+public static double phi(double x, double mu, double sigma) {
+
+return phi((x - mu) / sigma) / sigma;
+

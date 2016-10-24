@@ -1,0 +1,11 @@
+public static long getSmallestMultiple(int upperBound) {
+long multiple = 2;
+long current_mult = multiple;
+
+if(upperBound < 1) {
+return 0; //exeption
+}
+
+for (int i = 3; i <= upperBound; i++) {
+if (multiple % i != 0) {
+

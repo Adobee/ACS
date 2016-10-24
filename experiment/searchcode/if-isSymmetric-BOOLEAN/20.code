@@ -1,0 +1,11 @@
+TreeNode right;
+}
+
+public boolean isSymmetric(TreeNode root) {
+if (root == null) return true;
+return isSymmetric(root.left, root.right);
+}
+
+private boolean isSymmetric(TreeNode p, TreeNode q) {
+if (p == null &amp;&amp; q == null) return true;
+

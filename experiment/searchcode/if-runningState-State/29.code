@@ -1,0 +1,10 @@
+implements StateMachine<TState, TEvent> {
+
+private RunningState runningState = RunningState.Created;
+
+/**
+* The internal state machine.
+public void start() {
+if (RunningState.Created != getRunningState()) {
+throw new IllegalStateException(
+

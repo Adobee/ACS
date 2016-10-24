@@ -1,0 +1,15 @@
+return a * b;
+}
+
+@Override
+public Float div(Float a, Float b) {
+checksInputArguments(a, b);
+if (b == 0) {
+throw new IllegalArgumentException(&quot;second argument can&#39;t be 0&quot;);
+}
+return a / b;
+}
+
+private void checksInputArguments(Float a, Float b) {
+if (a != null &amp;&amp; b != null) {
+

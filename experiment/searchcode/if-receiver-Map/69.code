@@ -1,0 +1,8 @@
+public void registerDefaultReceiver(StatusResponseReceiver receiver) {
+if (receiver != null) {
+getReceiverMap().put(&quot;DEFAULT&quot;, receiver);
+if (name != null) {
+StatusResponseReceiver s = getReceiverMap().remove(name);
+if (s != null) {
+log.info(&quot;unregisterReceiver(): Unregistered: &quot; + name);
+

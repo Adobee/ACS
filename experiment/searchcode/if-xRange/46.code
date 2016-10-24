@@ -1,0 +1,14 @@
+class Solution:
+def countWays(self, n):
+if n <= 0:
+return 0
+if n == 3 or n == 5:
+return 1
+
+if n == 10:
+return 2
+
+score = [3, 5, 10]
+
+return self.getWays(n, score, 0)
+

@@ -1,0 +1,10 @@
+public void setStage(String name) {
+if (currentStage != null) {
+currentStage.stop();
+}
+inputManager.clearAllMaps();
+} else {
+currentStage = stages.get(name);
+if (currentStage != null) {
+currentStage.start(inputManager);
+

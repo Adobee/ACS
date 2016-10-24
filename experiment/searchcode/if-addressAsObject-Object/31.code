@@ -1,0 +1,8 @@
+return BootImageMap.findOrCreateEntry(jdkObject).objectId;
+}
+
+@Override
+public Object addressAsObject(Address address) {
+VM.sysWriteln(&quot;BootImageObjectAddressRemapper: called addressAsObject&quot;);
+if (VM.VerifyAssertions) VM._assert(VM.NOT_REACHED);
+

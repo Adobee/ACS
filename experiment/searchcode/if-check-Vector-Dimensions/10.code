@@ -1,0 +1,9 @@
+public RealVector(final int nDimensions) {
+super(nDimensions);
+}
+
+public RealVector(final double[] position) {
+final RealVector res = new RealVector(numDimensions());
+for (int i = 0; i < numDimensions(); i++) {
+res.setPosition(getDoublePosition(i) + p.getDoublePosition(i), i);
+

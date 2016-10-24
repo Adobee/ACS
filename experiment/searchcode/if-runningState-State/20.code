@@ -1,0 +1,9 @@
+private long stopTime = -1L;
+
+public void start()
+{
+if (this.runningState == 2) {
+throw new IllegalStateException(&quot;Stopwatch must be reset before being restarted. &quot;);
+}
+if (this.runningState != 0) {
+

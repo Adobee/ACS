@@ -1,0 +1,9 @@
+return new Fuzziness(edits);
+}
+
+public static Fuzziness build(Object fuzziness) {
+if (fuzziness instanceof Fuzziness) {
+String string = fuzziness.toString();
+if (AUTO.asString().equalsIgnoreCase(string)) {
+return AUTO;
+

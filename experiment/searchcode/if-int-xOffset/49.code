@@ -1,0 +1,13 @@
+super(screen, x, y,w,h, &quot;&quot;);
+}
+
+public void tick() {
+}
+
+public void render(Screen screen) {
+if(h > 2) {
+for(int hy = 1; hy < h-1; hy++) {
+screen.render(screen.xOffset+x,screen.yOffset+y+(8*hy),(4*32)+2, guiColor,0);
+for(int hw=1; hw < w; hw ++) {
+screen.render((screen.xOffset+x)+((hw)*8),screen.yOffset+y+(8*hy),(4*32)+3, guiColor,0);
+

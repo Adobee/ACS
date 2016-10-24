@@ -1,0 +1,11 @@
+public class Stopper
+implements StoppingCriteria
+{
+private double tol;
+private int maxCycles;
+public Stopper(double tol, int maxCycles) { this.tol = tol; this.maxCycles = maxCycles; }
+
+public boolean isTrainingComplete(TrainingAlgorithm ta)
+{
+if (ta.getCycle() <= maxCycles) {
+

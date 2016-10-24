@@ -1,0 +1,12 @@
+public class InputLimiter extends SubjectProcessor<MBFImage> {
+
+public int maxsize = 800;
+
+public InputLimiter() {
+
+}
+
+public InputLimiter(int maxsize) {
+protected void processSubject(final MBFImage image) {
+if (image.getHeight() > maxsize || image.getWidth() > maxsize)
+

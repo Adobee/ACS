@@ -1,0 +1,13 @@
+zkCmdExecutor = new ZkCmdExecutor(zkClient.getZkClientTimeout());
+}
+
+public ElectionContext getContext() {
+return context;
+}
+
+/**
+* Check if the candidate with the given n_* sequence number is the leader.
+* @param replacement has someone else been the leader already?
+*/
+private void checkIfIamLeader(final ElectionContext context, boolean replacement) throws KeeperException,
+

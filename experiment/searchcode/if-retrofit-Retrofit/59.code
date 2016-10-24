@@ -1,0 +1,6 @@
+@Override public void onError(Throwable e) {
+if (e instanceof RetrofitError) {
+RetrofitError retrofitError = (RetrofitError) e;
+if (retrofitError.getKind().equals(UNEXPECTED)) {
+onUnexpectedError(e);
+

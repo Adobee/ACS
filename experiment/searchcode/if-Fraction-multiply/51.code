@@ -1,0 +1,11 @@
+public void setDenominator(int denominator) {
+this.denominator = denominator;
+}
+
+public Fraction multiply(Fraction fraction) {
+return new Fraction(denominator, numerator);
+}
+
+public Fraction divide(Fraction fraction) {
+return multiply(fraction.invert());
+

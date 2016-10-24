@@ -1,0 +1,10 @@
+return m_contentType;
+}
+
+public static boolean hasContentType(String contentType) {
+return s_contentTypeMap.containsKey(contentType);
+}
+
+public static SerializerType getByContentType(String contentType) {
+if (!hasContentType(contentType) ) {
+

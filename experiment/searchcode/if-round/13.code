@@ -1,0 +1,10 @@
+public static void recursiveSpiralMatrix(int[][] matrix, int start, int round, int limit) {
+if (round == limit - round - 1) {
+matrix[i][round] = start++;
+}
+round ++;
+if (round < (limit%2==0?limit:(limit+1))/2)
+recursiveSpiralMatrix(matrix, start, round, limit);
+}
+}
+

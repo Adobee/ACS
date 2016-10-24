@@ -1,0 +1,13 @@
+} catch (InterruptedException expected) {
+}
+}
+}
+
+public Map<Long, WorkItemCommitRequest> waitForAndGetCommits(int numCommits) {
+commitsRequested += numCommits;
+
+return commitsReceived;
+}
+
+public void setExpectedExceptionCount(int i) {
+

@@ -1,0 +1,7 @@
+builder.chain(new AppendingMP(&quot;1&quot;), new AppendingMP(&quot;2&quot;), new AppendingMP(&quot;3&quot;));
+assertEquals(&quot;0123&quot;, builder.build().process(getTestEventUsingFlow(&quot;0&quot;)).getMessage().getPayload());
+private MessageProcessor next;
+boolean invoked = false;
+
+public AppendingInterceptingMP(String append)
+

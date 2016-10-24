@@ -1,0 +1,4 @@
+public int docFreq(BytesRef text) throws IOException {
+final TermsEnum termsEnum = getThreadTermsEnum();
+if (termsEnum.seek(text) == TermsEnum.SeekStatus.FOUND) {
+

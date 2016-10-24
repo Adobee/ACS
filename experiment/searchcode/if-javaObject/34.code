@@ -1,0 +1,12 @@
+import org.isistan.flabot.javamodel.MixedImplementationsException;
+public class ObjectImpl implements JObject {
+private Object javaObject;
+private long id;
+
+Object getJavaObject() {
+return javaObject;
+}
+
+static Object getJavaObject(JObject jObject) {
+if(jObject instanceof ObjectImpl) {
+

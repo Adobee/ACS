@@ -1,0 +1,8 @@
+int index = baseUrl.indexOf(&quot;://&quot;);
+index = baseUrl.indexOf(&quot;/&quot;, index + 3);
+if (index == -1) {
+return baseUrl.substring(0, index) + relativePath;
+}
+} else {
+int index = baseUrl.lastIndexOf(&#39;/&#39;); // FIXME: if (baseUrl.charAt(baseUrl.length() - 1) == &#39;/&#39;)
+

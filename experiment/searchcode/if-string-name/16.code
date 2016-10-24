@@ -1,0 +1,9 @@
+public static int getResIDFromName(String name, Context context)
+{
+if(name == null || name == &quot;&quot;)
+return R.drawable.barracks;
+
+//Units
+if(name == context.getString(R.string.unit_carryall_name))
+return R.drawable.carryall;
+

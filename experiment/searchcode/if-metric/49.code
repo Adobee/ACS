@@ -1,0 +1,13 @@
+package unalcol.evolution.util;
+
+import unalcol.evolution.*;
+import unalcol.math.metric.QuasiMetric;
+public static QuasiMetric generate( QuasiMetric metric) {
+if(metric instanceof IndividualMetric) {
+return metric;
+} else {
+return new IndividualMetric(metric);
+}
+}
+}
+

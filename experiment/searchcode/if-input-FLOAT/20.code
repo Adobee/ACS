@@ -1,0 +1,8 @@
+public Matrix4f encode(DataInput input) throws IOException {
+float m00 = input.readFloat();
+if (Float.isNaN(m00)) {
+return null;
+}
+return new Matrix4f(
+m00              , input.readFloat(), input.readFloat(), input.readFloat(),
+

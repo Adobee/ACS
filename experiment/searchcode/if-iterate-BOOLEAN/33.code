@@ -1,0 +1,8 @@
+IterateContext iterate = (IterateContext) ctx.getAttribute(tag);
+if (iterate == null) {
+IterateContext parentIterate = ctx.peekIterateContext();
+
+ctx.pushRemoveFirstPrependMarker(tag);
+if (prop != null &amp;&amp; !prop.equals(&quot;&quot;)) {
+if (null != parentIterate &amp;&amp; parentIterate.isAllowNext()) {
+

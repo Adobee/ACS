@@ -1,0 +1,11 @@
+import org.joda.time.format.ISODateTimeFormat;
+
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
+
+public abstract class AbstractPeriod implements Period {
+private void clean() {
+if (this.start == null || this.end == null) {
+return;
+}
+if (this.start.isAfter(end)) {
+

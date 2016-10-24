@@ -1,0 +1,12 @@
+double a = normalizedAngle() / Math.PI / 2;
+if (a < 0) {
+a = 1 + a;
+}
+int phaseIndex = phase % matrix.length;
+* @return the normalized angle between -PI and +PI.
+*/
+public double normalizedAngle() {
+return Math.atan2(Math.sin(angle), Math.cos(angle));
+}
+}
+

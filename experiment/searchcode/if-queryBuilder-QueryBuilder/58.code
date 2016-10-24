@@ -1,0 +1,15 @@
+static ViewPanel instance = null;
+
+public static ViewPanel getInstance()
+{
+if ( instance == null )
+return instance;
+}
+
+public ViewPanel()
+{
+setWidget( queryBuilder );
+}
+
+QueryBuilder queryBuilder = new QueryBuilder( this );
+

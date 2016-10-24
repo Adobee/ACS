@@ -1,0 +1,10 @@
+import com.justinoboyle.autobuild.command.Command;
+import com.justinoboyle.autobuild.repos.Repository;
+
+public class CommandClone extends Command {
+public String runCommand(String ip, boolean isLocal, String[] args, boolean isAdmin) {
+if (args.length == 0) {
+return &quot;You must specify a repo to clone!&quot;;
+}
+long time = System.currentTimeMillis();
+

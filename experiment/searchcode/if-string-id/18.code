@@ -1,0 +1,12 @@
+package de.carlos.socketfront.widgets;
+
+public class JSWidgetID {
+
+private String id;
+
+public JSWidgetID(String id){
+this.id = id;
+}
+
+public String getString() {
+

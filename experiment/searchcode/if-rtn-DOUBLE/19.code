@@ -1,0 +1,9 @@
+import uuu.domain.Product;
+import uuu.domain.VIP;
+
+public class OrderService {
+public double order(Customer c, Product p, int quanity) {
+double rtn = p.getUnitPrice() * quanity;
+if (c instanceof VIP) {
+if (p instanceof Outlet) {
+

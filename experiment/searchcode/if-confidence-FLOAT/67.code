@@ -1,0 +1,12 @@
+public class PERatioAnalyst extends AnalystDecorator {
+
+public PERatioAnalyst(StockAnalyst a) {
+super(a);
+}
+
+public float confidenceLevel() {
+
+float PERatio = getPER();
+if (PERatio < 9) {
+return ((0.7f + getAnalyst().confidenceLevel()) / 2);
+

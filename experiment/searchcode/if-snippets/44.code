@@ -1,0 +1,9 @@
+import javax.swing.*;
+
+public class MainWindow implements IAbstractGUI {
+private final SnippetsTab snippetsTab;
+private final LoginPanel loginPanel;
+AbstractGui component = flag ? snippetsTab : loginPanel;
+if (component instanceof SnippetsTab) {
+((SnippetsTab) component).reset();
+

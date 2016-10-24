@@ -1,0 +1,11 @@
+double [] yrange = graph.getYRange();
+
+
+if( timeAutoscale ) {
+if( time > xrange[1] ) {
+graph.setXRange(xrange[0], time);
+}
+}
+if( currentAutoscale ) {
+if( !timeAutoscale &amp;&amp; time > cumulativeTime+(xrange[1]-xrange[0]) ) {
+

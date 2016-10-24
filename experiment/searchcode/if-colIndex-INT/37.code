@@ -1,0 +1,6 @@
+if (rowIndex == 0 &amp;&amp; localMin < matrix[rowIndex + 1][colIndex]) {
+return new int[] { rowIndex, colIndex };
+} else if (rowIndex == row - 1 &amp;&amp; localMin < matrix[row - 2][colIndex]) {
+return new int[] { rowIndex, colIndex };
+} else if (localMin < matrix[rowIndex - 1][colIndex] &amp;&amp; localMin < matrix[rowIndex + 1][colIndex]) {
+

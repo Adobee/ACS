@@ -1,0 +1,11 @@
+final float cy = screen.getBlackoutY();
+
+final Item item = getItem();
+
+if ( item != null )
+{
+final float itemX = x * scale;
+final boolean itemVisible = blackout.contains( cx, cy, itemX + d, itemY + d );
+
+if ( itemVisible )
+

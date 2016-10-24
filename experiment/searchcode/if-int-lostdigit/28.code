@@ -1,0 +1,9 @@
+* normal and should be ignored.  */
+
+if (rh != 0 &amp;&amp; (asign == bsign)) {
+final int lostdigit = result.mant[0];
+result.mant[mant.length-1] = rh;
+final int excp = result.round(lostdigit);
+if (excp != 0) {
+result = dotrap(excp, ADD_TRAP, x, result);
+

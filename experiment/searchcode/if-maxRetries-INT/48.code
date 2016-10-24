@@ -1,0 +1,8 @@
+default void acceptIfPresent(final Node node, final Consumer<RedisClient> clientConsumer,
+final int maxRetries) {
+applyIfPresent(node, client -> {
+clientConsumer.accept(client);
+default void acceptPipelinedIfPresent(final Node node,
+final Consumer<RedisPipeline> pipelineConsumer, final int maxRetries) {
+applyIfPresent(node, client -> {
+

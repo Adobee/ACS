@@ -1,0 +1,16 @@
+private static int gcd(int a, int b) {
+int upper, lower;
+int temp;
+
+if (a >= b) {
+upper = a;
+lower = b;
+} else {
+upper = b;
+lower = a;
+}
+
+while (lower != 0) {
+temp = lower;
+lower = upper % lower;
+

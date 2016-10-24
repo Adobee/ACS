@@ -1,0 +1,7 @@
+public class BooleanProperty extends RadioProperty
+{
+public BooleanProperty(PropertySet parent, String name, boolean value)
+if (value instanceof Boolean)
+super.set(((Boolean)value).booleanValue() ? &quot;on&quot; : &quot;off&quot;);
+else if (value instanceof Number)
+

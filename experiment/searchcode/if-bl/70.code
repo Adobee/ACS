@@ -1,0 +1,12 @@
+package apae.mbeans;
+
+import apae.entities.Relatorio;
+import apae.businesslogics.RelatorioBL;
+public List<Relatorio> getLista() {
+return relatorioBL.listar();
+}
+
+public String salvar() {
+if(relatorioBL.validar(relatorio)){
+if(relatorio.getIdAluno() == 0){
+

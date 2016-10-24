@@ -1,0 +1,9 @@
+BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+int shapeType=Integer.parseInt(input.readLine());
+
+//获得形状实例
+Shape shape=ShapeFactory.getShape(shapeType);
+
+if(shape==null)
+System.out.println(&quot;输入的形状类型不存在&quot;);
+

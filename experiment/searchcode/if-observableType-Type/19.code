@@ -1,0 +1,6 @@
+Type observableType = Utils.getSingleParameterUpperBound((ParameterizedType) returnType);
+Class<?> rawObservableType = Utils.getRawType(observableType);
+if (rawObservableType == Response.class) {
+if (!(observableType instanceof ParameterizedType)) {
+throw new IllegalStateException(&quot;Response must be parameterized&quot; + &quot; as Response<Foo> or Response<? extends Foo>&quot;);
+

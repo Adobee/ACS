@@ -1,0 +1,12 @@
+public char getRepetitions(String s, int idx, int len) {
+char c;
+
+if (idx < len) {// we&#39;re not at the last char yet?
+// element of regular expression
+if (expChar == &#39;[&#39;) {
+int endPos;
+
+endPos = exp.indexOf(&quot;]&quot;, expPos + 1);
+
+if (endPos == -1)
+

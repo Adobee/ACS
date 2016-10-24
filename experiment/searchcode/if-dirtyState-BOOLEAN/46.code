@@ -1,0 +1,11 @@
+public abstract class AbstractEditorPresenter extends AbstractPartPresenter implements EditorPartPresenter {
+protected boolean     dirtyState;
+protected EditorInput input;
+protected final List<EditorPartCloseHandler> closeHandlers = new ArrayList<>();
+* Set dirty state and notify expressions
+*
+* @param dirty
+*/
+protected void updateDirtyState(boolean dirty) {
+dirtyState = dirty;
+

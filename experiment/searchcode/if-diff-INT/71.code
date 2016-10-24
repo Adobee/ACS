@@ -1,0 +1,11 @@
+int[] temp=Arrays.copyOfRange(v,i,i+d);
+int tempDiff=findMax(temp)-findMin(temp);
+if(tempDiff>diff){diff=tempDiff;}
+}
+return diff;
+}
+private static int findMin(int[] x){
+int c=x[0];
+for(int k:x){
+if(k<c){c=k;}
+

@@ -1,0 +1,15 @@
+dp = new int[N + 1];
+Arrays.fill(dp, -1);
+return f(N) ? &quot;Yes&quot;: &quot;No&quot;;
+}
+
+private boolean f(int x)
+{
+if (x == target)
+return true;
+if (dp[x] != -1)
+return dp[x] == 1;
+
+boolean oneCan = false;
+boolean oneFailed = false;
+

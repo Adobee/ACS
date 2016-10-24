@@ -1,0 +1,14 @@
+public class Failures {
+private List<Failure> failures = new ArrayList<Failure>();
+
+public boolean isNotEmpty() {
+int total = 0;
+for(Failure failure : failures) {
+if(failure.isFor(kind)) {
+total++;
+}
+}
+return total;
+}
+}
+

@@ -1,0 +1,10 @@
+guessCount++;
+filterCodes(reply);
+int s = codes.size();
+if (s==0)
+throw new ContradictionException(&quot;No solution&quot;);
+for(int i=0; i<4; i++) {
+for(int j=0; j<4; j++) {
+if(!skipIndex.contains(new Integer(j))) {
+if(secret.getColor(i) == compare.getColor(j)) {
+

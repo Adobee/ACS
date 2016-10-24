@@ -1,0 +1,10 @@
+protected synchronized void executeRequest(Request request, String serverURI, String resourceUri) {
+
+// defensive check for slash
+if (!serverURI.endsWith(&quot;/&quot;) &amp;&amp; !resourceUri.startsWith(&quot;/&quot;)) {
+int observeLoop = 2;
+
+// print request info
+if (verbose) {
+System.out.println(&quot;Request for test &quot; + this.testName + &quot; sent&quot;);
+

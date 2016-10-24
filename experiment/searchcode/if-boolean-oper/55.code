@@ -1,0 +1,10 @@
+public int hashCode() {
+return new HashCodeBuilder()
+.append(getOperId())
+.toHashCode();
+}
+
+public boolean equals(Object obj) {
+if(obj instanceof SysOperRole == false) return false;
+if(this == obj) return true;
+

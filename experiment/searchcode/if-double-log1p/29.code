@@ -1,0 +1,14 @@
+* @key randomness
+*/
+
+public class Log1pTests {
+private Log1pTests(){}
+
+static final double infinityD = Double.POSITIVE_INFINITY;
+failures += testLog1pCaseWithUlpDiff(testCases[i][0],
+testCases[i][1], 0);
+}
+
+// For |x| < 2^-54 log1p(x) ~= x
+for(int i = DoubleConsts.MIN_SUB_EXPONENT; i <= -54; i++) {
+

@@ -1,0 +1,8 @@
+//        FF 86 00 00 05 01 00 04 60 00h
+byte[] sendBuffer = new byte[]{(byte) 0xFF, (byte) 0x86, (byte) 0x0, (byte) 0x0, (byte) 0x05,
+(byte) 0x01, (byte) 0x0, (byte) 0x04, (byte) 0x60, (byte) 0x00
+};
+if (this.getParams().isA()){
+sendBuffer[8] = KEY_A;
+}else{
+

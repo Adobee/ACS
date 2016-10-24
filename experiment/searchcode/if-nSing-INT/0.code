@@ -1,0 +1,9 @@
+NGSing(3, &quot;posicion_concuerda.nominativo_o_genitivo&quot;), Silaba(4, &quot;posicion_concuerda.silaba&quot;), GSing(5, &quot;posicion_concuerda.genitivo_singular&quot;),
+NSing(6, &quot;posicion_concuerda.nominativo_singular&quot;);
+
+
+private int valorEntero;
+private String etiquetaRecursos;
+
+PosicionConcuerda (int valorEntero, String etiquetaRecursos){
+

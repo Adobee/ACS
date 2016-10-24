@@ -1,0 +1,10 @@
+array[i] = sc.nextInt();
+}
+for (int i = 0; i < array.length; i++) {
+sum += array[i];
+}
+double avg = (double) sum / (double) size;
+double diff;
+double minDiff = 33333;
+int number = 0;
+

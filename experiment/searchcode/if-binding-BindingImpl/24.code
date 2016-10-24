@@ -1,0 +1,7 @@
+import com.sun.xml.internal.ws.api.model.wsdl.WSDLPort;
+import com.sun.xml.internal.ws.binding.BindingImpl;
+import com.sun.xml.internal.ws.binding.SOAPBindingImpl;
+public BindingImpl createBinding(WebServiceFeature[] webServiceFeatures, Class<?> portInterface) {
+BindingImpl bindingImpl = super.createBinding(webServiceFeatures,portInterface);
+if(bindingImpl instanceof SOAPBindingImpl) {
+

@@ -1,0 +1,11 @@
+* @author guangshuai.wang
+*/
+public int saveSort(Sort sort){
+if(sort.getName().length() > StringLengthConstans.SORT_LENGTH)
+Sort mysort = this.getSortByName(sort);
+boolean flag = false;
+if(mysort == null){
+flag = true;
+mysort = new Sort();
+mysort.setName(&quot;默认分类&quot;);
+

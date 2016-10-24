@@ -1,0 +1,6 @@
+double rayDirectionAndTriangleNormalDotProduct = ray.direction.dotProduct(this.normal);
+boolean isRayParallel = (rayDirectionAndTriangleNormalDotProduct == 0);
+double t = -(this.normal.dotProduct(ray.origin) + this.d) / rayDirectionAndTriangleNormalDotProduct;
+boolean isIntersectionInTheOppositeDirection = (t < 0);
+if (isIntersectionInTheOppositeDirection)
+

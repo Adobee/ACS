@@ -1,0 +1,14 @@
+return new Player(newMaze, pos, dir);
+}
+
+
+public boolean move(Dir dir){
+boolean success = super.move(dir);
+if (success) this.dir = dir;
+this.dir = dir;
+}
+
+
+public boolean acceptEnter(ElementVisitor e, Dir dir) {
+return e.visitEnter(this, dir);
+

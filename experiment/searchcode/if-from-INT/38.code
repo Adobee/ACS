@@ -1,0 +1,11 @@
+public static boolean nextPermutation(int[] a)
+{
+int N=a.length;
+int i=N-2;
+for (; i>=0; i--) if (a[i]<a[i+1]) break;
+if (i<0) return false;
+
+for (int j=N-1; j>=i; j--)
+{
+if (a[j]>a[i])
+

@@ -1,0 +1,8 @@
+public double bracketRoot(double a, double b, double maxErr)
+{
+double x = (a + b) / 2;
+double f_a = evaluate(a);
+double f_b = evaluate(b);
+double f_x = evaluate(x);
+if (Math.abs(f_x) < maxErr) return (x);
+

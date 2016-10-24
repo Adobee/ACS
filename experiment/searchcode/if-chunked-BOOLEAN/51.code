@@ -1,0 +1,9 @@
+public class ChunkedOutputStream extends HttpServerOutpuStream {
+
+private byte[] crlf, endFlag;
+private boolean chunked;
+public void flush() throws IOException {
+if (!response.isCommitted()) {
+chunked = true;
+response.setHeader(&quot;Transfer-Encoding&quot;, &quot;chunked&quot;);
+

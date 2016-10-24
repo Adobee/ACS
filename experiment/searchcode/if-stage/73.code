@@ -1,0 +1,6 @@
+stageEffect.setStatus(2);
+if (stageEffect.getSoundNo() != 0) {
+sound.playSound(stageEffect.getSoundNo());
+stageEffect.setPositionX(stageEffect.getPositionX()+(stageEffect.getSpeedX() * Player.getGameSpeed()));
+if (stageEffect.getPositionX() > (stageData.getCanvasX()*2)+stageEffect.getDispSizeX()) {
+

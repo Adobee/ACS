@@ -1,0 +1,9 @@
+public class Board{
+private int[] columns;
+private int NOC;	//Number of Conficts
+
+public Board(Board b){
+if(b.getColumns().length != this.columns.length) return false;
+for(int i=0; i<this.columns.length; i++){
+if(this.columns[i]!=b.getColumns()[i]) return false;
+

@@ -1,0 +1,14 @@
+public static RelationBiz getInstance(){
+if(relationBiz == null){
+relationBiz = new RelationBiz();
+}
+return relationBiz;
+}
+
+public List<Relation> get_new_fans(int num,int user_id){
+List<Relation> list = relationDao.relation_get_latest_my_fans(num, user_id);
+if(list == null){
+list = new ArrayList<Relation>();
+}
+return list;
+

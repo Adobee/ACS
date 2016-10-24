@@ -1,0 +1,15 @@
+public class Desktop extends BaseActionBean {
+
+@DefaultHandler
+public Resolution showDesktop(){
+
+Subject currentUser = SecurityUtils.getSubject();
+
+if(currentUser.isAuthenticated())
+return desktop;
+else
+return loginPage;
+}
+
+}
+

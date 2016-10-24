@@ -1,0 +1,8 @@
+* @see org.primordion.xholon.base.IXholon#act()
+*/
+public void act() {
+if ((xhc.getXhType() &amp; XholonClass.XhtypePureActiveObject) == XholonClass.XhtypePureActiveObject) {
+amtWater = ((XhCellModel)port[P_SM_PRD2]).getPheneVal();
+nTimes = (0.0 + 10.0);
+((XhCellModel)port[P_SM_SUB1]).decPheneVal(nTimes);
+

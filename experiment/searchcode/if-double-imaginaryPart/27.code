@@ -1,0 +1,6 @@
+public Quaternion(double re, Vector im) {
+realPart = re;
+imaginaryPart = im;
+double a = realPart, b = imaginaryPart.getX();
+double c = imaginaryPart.getY(), d = imaginaryPart.getZ();
+

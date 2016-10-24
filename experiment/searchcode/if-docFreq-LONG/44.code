@@ -1,0 +1,7 @@
+// Computed as log( 1+ (N - N_t + 0.5)/(N_t + 0.5))
+private float computeIDF(long docFreq, long numDocs) {
+return (float) Math.log(1 + (numDocs - docFreq + 0.5d) / (docFreq + 0.5d));
+for (String token : queryTokens) {
+long docFreq = reader.docFreq(new Term(field, token));
+//TODO what about tf = 0
+

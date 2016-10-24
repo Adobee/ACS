@@ -1,0 +1,9 @@
+private Object parseValue() throws ParseException {
+consumeWhiteSpace();
+char ch = text.current();
+if (ch == &#39;{&#39;)
+throw pe2;
+}
+if (!Character.isJavaIdentifierStart(buff.charAt(0)))
+throw new ParseException(&quot;Illegal character starting the identifier &#39;&quot; + buff.charAt(0) + &quot;&#39;&quot;, index);
+

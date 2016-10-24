@@ -1,0 +1,5 @@
+if (observable.getProductId().equals(priced.getProduct().loadSingleUnderlying().getProductId())) {
+if (observable.getObservableType().equals(AbstractObservable.ObservableType.MARKET_QUOTE)) {
+spot = observable.getObservableValue(null).doubleValue();
+} else if (observable.getObservableType().equals(AbstractObservable.ObservableType.VOLATILITY)) {
+

@@ -1,0 +1,10 @@
+public static double solucionar(Polinomio[] L, double[] fx, double x) {
+double acum = 0;
+int n = fx.length;
+for (int i = 0; i < n; i++) {
+for (int i = 0; i < n; i++) {
+double denom = 1;
+L[i] = new Polinomio();
+for (int j = 0; j < n; j++) {
+if (i != j) {
+

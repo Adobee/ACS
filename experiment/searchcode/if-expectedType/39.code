@@ -1,0 +1,6 @@
+Type type = TypeInferer.VISITOR.call(varAssignment.expr(), env.expectedType(expectedType));
+if (binding != null) {
+.when(If.class, (if_, env) -> {
+Type expectedType = env.expectedType;
+TypeInferer.VISITOR.call(if_.condition(), env.newEnv().expectedType(Type.BOOL));
+

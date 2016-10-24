@@ -1,0 +1,13 @@
+private State midiState = State.NONE;
+private int channel;
+private int firstByte;
+
+public FromWireConverter(MidiReceiver midiReceiver) {
+processByte(buffer[i]);
+}
+}
+
+private void processByte(int b) {
+if (b < 0) {
+midiState = State.values()[(b >> 4) &amp; 0x07];
+

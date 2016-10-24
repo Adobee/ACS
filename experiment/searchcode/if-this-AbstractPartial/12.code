@@ -1,0 +1,11 @@
+return super.getFormat();
+}
+
+String format = &quot;dd/MM/yyyy HH:mm:ss&quot;;
+
+if (!this.partial.isSupported(DateTimeFieldType.dayOfMonth())) {
+format = format.replace(&quot;dd/&quot;, &quot;&quot;);
+}
+
+if (!this.partial.isSupported(DateTimeFieldType.monthOfYear())) {
+

@@ -1,0 +1,12 @@
+* @param eps
+* @param minPts
+* @return true if can expand false otherwise
+*/
+public static boolean expandCluster(ArrayList<MovingObject> objects,
+ArrayList<MovingObject> seeds = rangeQuery(obj, objects, eps);
+if (seeds.size() < minPts) {
+obj.cid = -1; // noise
+return false;
+} else {
+for (MovingObject seed : seeds) {
+

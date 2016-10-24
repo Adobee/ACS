@@ -1,0 +1,7 @@
+Scheduler scheduler = factory.schedulers.remove(webApp);
+if (scheduler != null) {
+scheduler.stop();
+public static Scheduler updateScheduler(WebApp webApp) {
+Scheduler scheduler = SchedulerFactory.getScheduler(webApp);
+if (scheduler != null) {
+

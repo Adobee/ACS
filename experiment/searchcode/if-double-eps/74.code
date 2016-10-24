@@ -1,0 +1,11 @@
+boolean same(Line l) { return parallel(l) &amp;&amp; Math.abs(c - l.c) < EPS; }
+
+Point intersect(Line l)
+{
+if(parallel(l))
+return null;
+double x = (b * l.c - c * l.b) / (a * l.b - b * l.a);
+double y;
+if(Math.abs(b) < EPS)
+y = -l.a * x - l.c;
+

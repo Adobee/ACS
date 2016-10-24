@@ -1,0 +1,10 @@
+public class FixedList<T> extends LinkedList<T> {
+private T removedItem = null;
+
+public boolean add(T e) {
+if (size() == 2) {
+removedItem = remove(0);
+super.add(e);
+return true;
+} else if (size() < 2) {
+

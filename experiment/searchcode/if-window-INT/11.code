@@ -1,0 +1,10 @@
+public float[] envelope(float[] frame, int type) {
+int size = frame.length;
+float[] window = new float[size];
+
+if(type == 0) {
+window = triangle(size);
+for(int z = 0; z < window_length; z++) {
+if(Math.abs(window[z]) > maximum)
+maximum = Math.abs(window[z]);
+

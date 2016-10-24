@@ -1,0 +1,11 @@
+this.description=description;
+}
+
+@Override
+public int compareTo(Reminder rem) {
+int ans=0;
+if(this.endTime[0]>rem.endTime[0]) ans=1;
+else if(this.endTime[0]<rem.endTime[0]) ans=-1;
+else{
+if(this.endTime[1]>rem.endTime[1]) ans=1;
+

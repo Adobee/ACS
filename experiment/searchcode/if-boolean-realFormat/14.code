@@ -1,0 +1,13 @@
+spedString.append(content);
+
+}
+} else if (annotation instanceof RealFormat) {
+RealFormat ann = (RealFormat) annotation;
+content = content + r;
+}
+return content;
+}
+
+private boolean isList(Field field) {
+if (field.getType().isArray() || field.getType().isAssignableFrom(List.class) || field.getType().isAssignableFrom(Set.class)) {
+

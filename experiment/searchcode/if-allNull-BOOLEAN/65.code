@@ -1,0 +1,13 @@
+public MancalaLog(String logfilename, boolean del){
+
+File f = new File(LogDirectory);
+
+if(!f.exists()){
+try{
+f.mkdir();
+// writes whose turn, if not winning condition
+boolean player1_pits_allnull = true;
+boolean player2_pits_allnull = true;
+
+for(int i=0; i<6; i++)
+

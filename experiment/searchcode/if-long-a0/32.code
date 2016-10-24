@@ -1,0 +1,11 @@
+p2[i] = (l1 << 32) | (l0 &amp; 0xFFFFFFFFl);
+}
+}
+static void test_unpack2(int[] a0, long[] p2) {
+if (p2.length*2 > a0.length) return;
+p2[i] = (l0 << 32) | (l1 &amp; 0xFFFFFFFFl);
+}
+}
+static void test_unpack2_swap(int[] a0, long[] p2) {
+if (p2.length*2 > a0.length) return;
+

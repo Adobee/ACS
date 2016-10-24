@@ -1,0 +1,5 @@
+public Map<Integer,Area> getAreas(@QueryParam(&quot;fromYear&quot;) int fromYear, @QueryParam(&quot;toYear&quot;) int toYear){
+return BusinessService.getAreas(fromYear, toYear);
+@Produces(MediaType.APPLICATION_JSON)
+public InitResponse init(@QueryParam(&quot;areaId&quot;) int areaId,@QueryParam(&quot;fromYear&quot;) int fromYear, @QueryParam(&quot;toYear&quot;) int toYear,
+

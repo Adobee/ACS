@@ -1,0 +1,8 @@
+ClassInfo classInfo = classInfoMap.get(clazzName);
+
+if(classInfo == null){
+Class<?> clazz = ReflectUtils.getClazz(clazzName);
+//加载成功，缓存
+if(clazz != null){
+classInfoMap.put(clazz.getName(),new ClassInfo(clazz));
+

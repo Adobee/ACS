@@ -1,0 +1,6 @@
+char lastChar = val.charAt(val.length() - 1);
+int decPos = val.indexOf(46);
+int expPos = (val.indexOf(HttpStatus.SC_SWITCHING_PROTOCOLS) + val.indexOf(69)) + 1;
+if (decPos > -1) {
+if (expPos <= -1) {
+

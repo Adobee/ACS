@@ -1,0 +1,10 @@
+private static final int DEFAULT_MAXIMUM_SIZE = 100;
+
+/**
+* Maximum number of entries for this LRU map.
+*/
+private int maximumSize;
+private static void checkMaximumSize(final int maximumSize) throws IllegalArgumentException {
+if (maximumSize <= 0) {
+throw new IllegalArgumentException(Errors.format(
+

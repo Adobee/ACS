@@ -1,0 +1,11 @@
+// select the row to pivot by finding the row with the largest column in &#39;i&#39;
+int pivotRow = -1;
+double maxValue = tol;
+
+for( int row = leadIndex; row < A.numRows; row++ ) {
+double v = Math.abs(A.data[row*A.numCols + i]);
+
+if( v > maxValue ) {
+maxValue = v;
+pivotRow = row;
+

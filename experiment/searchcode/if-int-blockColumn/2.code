@@ -1,0 +1,6 @@
+private boolean iteratePartialSolution(int row, int column, byte[][] sudoku) {
+if (row >= 9) {
+return true;
+for (int blockRow = blockRowStart; blockRow < blockRowStart + 3; blockRow++) {
+for (int blockColumn = blockColumnStart; blockColumn < blockColumnStart + 3; blockColumn++) {
+

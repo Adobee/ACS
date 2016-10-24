@@ -1,0 +1,7 @@
+super(dateTimeField.getType());
+if (dateTimeField.isSupported()) {
+this.iField = dateTimeField;
+this.iDurationField = durationField;
+this.iTimeField = ZonedChronology.useTimeArithmetic(durationField);
+this.iRangeDurationField = durationField2;
+

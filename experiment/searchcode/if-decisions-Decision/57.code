@@ -1,0 +1,9 @@
+final AwaitingDecision decisionForPlayer = decisionHolder.getDecision(player);
+if (decisionForPlayer != null) {
+try {
+final DecisionHolder decisionHolder = GenericContextObjects.extractGameObject(gameObjects, GenericContextObjects.DECISION_HOLDER);
+
+Map<String, AwaitingDecision> decisions;
+do {
+decisions = _gameFlow.processGameState(gameObjects);
+

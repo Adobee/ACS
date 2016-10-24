@@ -1,0 +1,8 @@
+public Population(int populationSize, boolean initialise) {
+tours = new Tour[populationSize];
+if (initialise) {
+public Tour getFittest() {
+Tour fittest = tours[0];
+for (int i = 1; i < populationSize(); i++) {
+if (fittest.getFitness() <= getTour(i).getFitness()) {
+

@@ -1,0 +1,10 @@
+public Member login(Member member) {
+if (memberDao.selectByExample(member).size() == 0) {
+return null;
+* Check Email
+* @param member
+* @return
+*/
+public boolean isExistEmail(Member member){
+if(memberDao.selectByExample(member).size()!=0){
+

@@ -1,0 +1,7 @@
+public int removeDuplicates(int[] nums) {
+int iter=0;
+int count=0;
+for(int i=0;i<nums.length;i++){
+if(count==2){
+while(i<nums.length&amp;&amp;nums[i]==nums[iter-1]) i++;//这里漏写了i<nums.length
+

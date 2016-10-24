@@ -1,0 +1,9 @@
+public class ASNewLibraryFromSourcesDialogContentPane extends JPanel {
+
+private static Logger LOG = Logger.getLogger(ASNewLibraryFromSourcesDialogContentPane.class);
+this.firePropertyChange(&quot;dialog&quot;, oldValue, newValue);
+}
+
+protected boolean checkLibraryName(String libraryName) {
+if (MPSModuleRepository.getInstance().getModuleByUID(libraryName) != null) {
+

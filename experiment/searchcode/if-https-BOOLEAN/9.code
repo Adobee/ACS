@@ -1,0 +1,12 @@
+@Configure private boolean enforceHttps = true;
+@Configure private boolean enforceHttp = true;
+@Configure private boolean verbose = false;
+public void setHttpsOnly(boolean aValue){
+httpsOnly = aValue;
+}
+
+public boolean httpsOnly(){ return httpsOnly; }
+
+/**
+* If true and a user is on a https page, but the page doesn&#39;t require https, he will be redirected to http.
+

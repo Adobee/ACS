@@ -1,0 +1,10 @@
+package system.hasher.fuzzyvault;
+
+import java.math.BigInteger;
+import java.util.ArrayList;
+import java.util.Arrays;
+public static int getPolyInteger(int totalBits){
+ArrayList<BigInteger> bigIntPoly = CRCPolyMap.getCRCPoly(totalBits);
+
+if(totalBits != bigIntPoly.size()){
+

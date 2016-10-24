@@ -1,0 +1,8 @@
+public class PowerTool extends ItemTool {
+private int maxPower = 1000;
+
+protected PowerTool(int par1, float par2, EnumToolMaterial par3EnumToolMaterial, Block[] par4ArrayOfBlock) {
+public void setPower(ItemStack stack, int power) {
+if(power >= this.maxPower) power = 1;
+this.setDamage(stack, power);
+

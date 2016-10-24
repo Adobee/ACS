@@ -1,0 +1,11 @@
+public static float CalcWeightForReps(int reps,float onerepmax){
+float result = onerepmax;
+
+double conv = Math.ceil(onerepmax / ((0.03333 * reps) + 1));
+public static float CalcWeightForPct(double pct,float onerepmax, boolean useBarWeight){
+float result = onerepmax;
+
+double conv = Math.ceil(onerepmax * pct);
+
+if(useBarWeight){
+

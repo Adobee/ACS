@@ -1,0 +1,15 @@
+public static double clamp(double inval, double minval, double maxval)
+{
+double t;
+
+if (minval > maxval)
+{
+t = minval;
+minval = maxval;
+maxval = t;
+}
+
+if (inval < minval)
+{
+return minval;
+

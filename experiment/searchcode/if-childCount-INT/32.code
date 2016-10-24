@@ -1,0 +1,12 @@
+computeChildCount(root);
+boolean exists = checkForEdge(root.childCount, root);
+if (exists)
+System.out.println(&quot;YES&quot;);
+return checkForEdge(rootSize, n.left) || checkForEdge(rootSize, n.right);
+}
+
+public static int computeChildCount(Node n) {
+if (n == null)
+return 0;
+n.childCount = 1 + computeChildCount(n.left) + computeChildCount(n.right);
+

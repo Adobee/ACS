@@ -1,0 +1,13 @@
+public ReflectedObject getChild(int index)
+{
+int f = getNumFields();
+if (index < f) return getField(index);
+catch (IllegalArgumentException e) { e.printStackTrace(); throw new RuntimeException(&quot;Unexpected Exception: &quot; + e); }
+}
+
+public ReflectedObject getField(int index)
+{
+try
+{
+if (obj == null || type.isPrimitive() || index < 0) return null;
+

@@ -1,0 +1,6 @@
+checkedApiSurface.getExposedClasses();
+
+Map<Class<?>, List<Class<?>>> disallowedClasses = Maps.newHashMap();
+for (Class<?> clazz : checkedApiSurface.getExposedClasses()) {
+if (!classIsAllowed(clazz)) {
+

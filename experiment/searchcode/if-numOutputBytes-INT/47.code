@@ -1,0 +1,9 @@
+inputLength));
+final int numInputChars = inputLength - 1;
+final int numOutputBytes = outputLength;
+
+if (numOutputBytes > 0) {
+outputArray[outputByteNum] += (byte) (inputChar >>> codingCase.initialShift);
+final int bytesLeft = numOutputBytes - outputByteNum;
+if (bytesLeft > 1) {
+

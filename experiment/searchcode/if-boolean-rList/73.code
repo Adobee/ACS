@@ -1,0 +1,14 @@
+rewound = true;
+rlist = new IntArraysList();
+ri = -1;
+}
+
+@Override
+public Record[] getNext() {
+if (rewound) {
+while (true) {
+if (ri + 1 >= rlist.size())
+if (! nextCommit()) {
+rewind();
+return null; // eof
+

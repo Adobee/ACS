@@ -1,0 +1,12 @@
+wind = w;
+}
+@Override
+public void invoke(long window, double xoffset, double yoffset) {
+if (wind.id == window) {
+wind.mouseScroll(xoffset, yoffset);
+} else {
+System.out.println(&quot;WRONG WINDOW HANDLER!&quot;);
+}
+}
+}
+

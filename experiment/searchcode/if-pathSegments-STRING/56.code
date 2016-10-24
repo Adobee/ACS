@@ -1,0 +1,5 @@
+public final class PathSegments extends ForwardingList<String> {
+private static final PathSegments EMPTY = new PathSegments(ImmutableList.<String> of());
+public static PathSegments segment(@Nullable String segment, boolean encoded) {
+if (segment == null || segment.length() == 0) {
+

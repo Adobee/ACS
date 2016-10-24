@@ -1,0 +1,8 @@
+WowToken dbToken = service.getWowTokenByUpdated(jWowToken.getUpdated());
+if (dbToken == null) {
+WowToken newToken = new WowToken();
+for (List<Long> t : history.getCN()) {
+WowToken token = new WowToken();
+token.setBuy(new Long(t.get(1)).intValue());
+token.setUpdated((long)t.get(0)*1000);
+

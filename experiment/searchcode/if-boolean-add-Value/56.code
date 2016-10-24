@@ -1,0 +1,9 @@
+public class BoolConstExpn extends ConstExpn
+{
+private boolean value ;	/* value of the constant */
+/** Add appropriate CodeFragement which will be translated to machine instruction to the fragments in codegen **/
+public void emitCode(){
+if(!value){
+//push false
+CodeGen.addCodeFragment(&quot;INSTRUCTION&quot;, Machine.MACHINE_FALSE, null, &quot;PUSH&quot;);
+

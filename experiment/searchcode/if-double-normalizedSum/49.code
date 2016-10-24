@@ -1,0 +1,7 @@
+public static double[] ebeAdd(double[] a,
+double[] b) {
+if (a.length != b.length) {
+throw new DimensionMismatchException(a.length, b.length);
+throws MathIllegalArgumentException, MathArithmeticException {
+if (Double.isInfinite(normalizedSum)) {
+

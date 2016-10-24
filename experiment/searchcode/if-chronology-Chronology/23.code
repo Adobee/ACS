@@ -1,0 +1,9 @@
+if( timezoneId != null &amp;&amp; timezoneId.length() > 0 )
+timezone = DateTimeZone.forID( timezoneId );
+
+if( chronologyId == null ||
+chronologyId.equalsIgnoreCase( &quot;ISO&quot; ) ||
+chronology = ISOChronology.getInstance( timezone );
+}
+else if( chronologyId.equalsIgnoreCase( &quot;GregorianJulian&quot; ) )
+

@@ -1,0 +1,8 @@
+public static Shape getShape(String shapeType) {
+Shape shape = null;
+if (shapeType.equalsIgnoreCase(&quot;circle&quot;)) {
+shape = (Circle) shapeMap.get(&quot;circle&quot;);
+
+if (shape == null) {
+shape = new Circle();
+

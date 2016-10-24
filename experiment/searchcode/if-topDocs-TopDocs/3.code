@@ -1,0 +1,8 @@
+public abstract class TopDocsCollector<T extends ScoreDoc> extends Collector {
+
+// This is used in case topDocs() is called with illegal parameters, or
+protected static final TopDocs EMPTY_TOPDOCS = new TopDocs(0,
+new ScoreDoc[0], Float.NaN);
+
+protected PriorityQueue<T> pq;
+

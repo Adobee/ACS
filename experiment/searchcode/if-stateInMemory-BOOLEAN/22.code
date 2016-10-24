@@ -1,0 +1,9 @@
+TaskStates state) throws java.io.IOException,
+InterruptedException {
+
+IntWritable count = (IntWritable) state.getState(COUNT_TEXT);
+if (count == null) {
+long stateInMemory = job.getCounters()
+.findCounter(StatefulPerformance.STATE_IN_MEMORY)
+.getValue();
+

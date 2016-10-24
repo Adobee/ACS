@@ -1,0 +1,13 @@
+return key.startsWith(name + &quot;[&quot;);
+}
+
+private Integer getIndex(String key) {
+try {
+return Integer.parseInt(key.substring(key.indexOf(&quot;[&quot;) + 1, key.indexOf(&quot;]&quot;)));
+private String getIndexedPrefix(int index) {
+return name + &quot;[&quot; + index + &quot;]&quot; + &quot;.&quot;;
+}
+
+private String chopKeyName(String key) {
+if (isNamed(key) || isIndexed(key)) key = key.substring(key.indexOf(&quot;.&quot;) + 1);
+

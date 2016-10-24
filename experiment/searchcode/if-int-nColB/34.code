@@ -1,0 +1,8 @@
+throw new DimensionMismatchException(b.getRowDimension(), m);
+}
+
+final int nColB = b.getColumnDimension();
+final double lJJ = lJ[j];
+final double[] xJ = x[j];
+for (int k = 0; k < nColB; ++k) {
+

@@ -1,0 +1,5 @@
+public class StringUtils {
+public static Character[] getDistinctCharacters(String s) {
+List<Character> uniqueChars = new ArrayList<Character>();
+for (int i = 0; i < s.length(); i++)
+

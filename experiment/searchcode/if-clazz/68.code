@@ -1,0 +1,10 @@
+List<ClazzMenuDto> parentMenuList = clazzService.getFirstClazzMenu();
+ActionContext.getContext().put(&quot;parentMenuList&quot;, parentMenuList);
+if (parentId == null || parentId == 0) {
+* 添加课程菜单
+*
+* @return
+*/
+public String addClazzMenu() {
+if (clazzMenuName != null &amp;&amp; !&quot;&quot;.equals(clazzMenuName)) {
+

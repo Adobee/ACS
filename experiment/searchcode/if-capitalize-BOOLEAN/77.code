@@ -1,0 +1,9 @@
+return str;
+}
+final char[] buffer = str.toCharArray();
+boolean capitalizeNext = true;
+for (int i = 0; i < buffer.length; i++) {
+if (isDelimiter(ch, delimiters)) {
+capitalizeNext = true;
+} else if (capitalizeNext) {
+

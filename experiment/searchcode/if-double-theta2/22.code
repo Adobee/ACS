@@ -1,0 +1,7 @@
+public static Point getEndPoint(double B, double C, double D,
+double theta1, double theta2, double theta3) {
+double x1 = Math.cos(theta1 - 90) * B;
+double x2 = x1 + (Math.cos((theta2 - 90) - (90 - theta1)) * C);
+double x3 = x2
++ (Math.sin(theta3 - (90 - (theta2 - 90) - (90 - theta1))) * D);
+

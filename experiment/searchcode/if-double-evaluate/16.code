@@ -1,0 +1,14 @@
+public abstract class Function implements Func<Double, Double>
+{
+int numInputs;
+
+public Double evaluate(Double x){ return evaluate((double) x);}
+public double evaluate(double... x) //overridden by multivariable functions
+{
+return evaluate(x[0]);
+}
+
+public double integral(double min, double max)
+{
+if(max == min) return 0;
+

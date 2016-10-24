@@ -1,0 +1,11 @@
+public static final String TABLE_NAME = &quot;Locations&quot;;
+
+public static final String CN_ID = &quot;_id&quot;;
+public static final String CN_LATITUDE = &quot;latitude&quot;;
+cont.put(CN_ISFAVORITE, isfavorite);
+cont.put(CN_OBSERVATIONS, observations);
+return cont;
+}
+
+public void Insert(double latitude,double longitude,String street,int search_count,int iscritical,int isfavorite,String observations) {
+

@@ -1,0 +1,10 @@
+public class SimpleWinChecker implements WinChecker {
+
+@Override
+public boolean isWinnable(Game game) {
+if (!(game.stock().isEmpty() &amp;&amp; game.waste().isEmpty())) {
+return false;
+}
+
+boolean allTableauPileCardsFlipped = true;
+

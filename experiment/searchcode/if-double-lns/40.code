@@ -1,0 +1,7 @@
+int setIndx = -1;
+
+if(dir.equalsIgnoreCase(&quot;fwd&quot;)){
+for(int iii = outLnIndx; iii < outLnLns.size(); iii++){
+if(outLnLns.get(iii).contains(&quot;<html><b>&quot;) &amp;&amp; outLnIndx != iii){
+setIndx = iii;
+

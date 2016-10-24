@@ -1,0 +1,6 @@
+long toMs = System.currentTimeMillis();
+long deltaSeconds = java.util.concurrent.TimeUnit.MILLISECONDS.toSeconds(java.lang.Math.round((double)(toMs - fromMs)));
+value = context.getString(R.string.reltime_just_now);
+} else if (deltaSeconds < 1 * MINUTE) {
+int numSeconds = (int) deltaSeconds;
+

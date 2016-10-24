@@ -1,0 +1,11 @@
+obj1 = null;
+assertTrue(new EqualsBuilder().append(obj1, obj2).isEquals());
+}
+
+public void testBooleanArray() {
+assertTrue(!new EqualsBuilder().append(array1, array2).isEquals());
+}
+
+public void testMultiBooleanArray() {
+boolean[][] array1 = new boolean[2][2];
+

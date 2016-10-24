@@ -1,0 +1,5 @@
+public void onNotice(String sourceNick, String sourceLogin,
+String sourceHostname, String target, String notice, Dogbox d)
+public void onQuit(String sourceNick, String sourceLogin,
+String sourceHostname, String reason, Dogbox d)
+

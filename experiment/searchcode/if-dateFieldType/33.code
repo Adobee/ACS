@@ -1,0 +1,7 @@
+import org.javenstudio.falcon.search.schema.SchemaField;
+import org.javenstudio.falcon.search.schema.type.DateFieldType;
+import org.javenstudio.falcon.search.schema.type.TrieDateFieldType;
+SchemaField f = getSearchCore().getSchema().getField(arg);
+if (f.getType().getClass() == DateFieldType.class) {
+throw new ErrorException(ErrorException.ErrorCode.BAD_REQUEST,
+

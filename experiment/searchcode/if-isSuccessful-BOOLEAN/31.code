@@ -1,0 +1,16 @@
+tx.abort();
+}
+}
+
+@Override
+protected boolean isSuccessful() {
+boolean isSuccessful = true;
+for(Transaction tx : subTransactions) {
+for(Transaction tx : subTransactions) {
+tx.begin();
+}
+if(isSuccessful()) {
+setStatus(Status.SUCCESS);
+} else {
+setStatus(Status.FAIL);
+

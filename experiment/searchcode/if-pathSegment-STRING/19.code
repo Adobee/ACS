@@ -1,0 +1,7 @@
+protected ObaClass getClassFromPathSegement(PathSegment pathSegment,
+String queryParameter) {
+String nsX = queryParameter;
+if (queryParameter == null
+&amp;&amp; pathSegment.getMatrixParameters().get(&quot;ns&quot;) != null) {
+nsX = pathSegment.getMatrixParameters().get(&quot;ns&quot;).get(0);
+

@@ -1,0 +1,11 @@
+protected boolean visible = true;
+
+protected Image image;
+protected Color background;
+
+private boolean needsReorder = false;
+public void toFront() {
+if (parent!=null) {
+parent.needsReorder = true;
+if (parent.widgetsToFront==null)
+

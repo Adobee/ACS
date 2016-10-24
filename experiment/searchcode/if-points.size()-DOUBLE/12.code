@@ -1,0 +1,10 @@
+public class DistanceCalculator {
+
+public double calcTan(ArrayList<Point> points) {
+Point p1 = null,p2 = null;
+double max=0;
+
+for(int i=0;i<points.size()-1;i++){
+for(int j=i+1;j<points.size();j++){
+double d = points.get(i).distance(points.get(j));
+

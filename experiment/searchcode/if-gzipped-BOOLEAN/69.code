@@ -1,0 +1,8 @@
+* The response body will be assumed to be gzipped if the GZIP header has been set.
+*
+* @return true if the body is gzipped
+*/
+private boolean isBodyParameterGzipped() {
+public static boolean isGzipped(byte[] candidate) {
+if (candidate == null || candidate.length < 2) {
+

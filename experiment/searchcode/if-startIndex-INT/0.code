@@ -1,0 +1,10 @@
+if(A[i]>A[maxIndex]) maxIndex=i;
+}
+int w=0;
+int startIndex = 0;
+for(int i=1; i<=maxIndex; i++) {
+if(A[i]<=A[startIndex]) w+=A[startIndex]-A[i];
+startIndex=A.length-1;
+for(int i=A.length-2; i>=maxIndex; i--) {
+if(A[i]<=A[startIndex]) w+=A[startIndex]-A[i];
+

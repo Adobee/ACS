@@ -1,0 +1,12 @@
+import org.ss.cvtracker.dao.ConstantDAO;
+import org.ss.cvtracker.domain.Constant;
+
+@Service
+public class ConstantService {
+
+@Autowired
+ConstantDAO constantDao;
+
+public void add(Constant constant) {
+if (!constantDao.findAllConstant().contains(constant))
+

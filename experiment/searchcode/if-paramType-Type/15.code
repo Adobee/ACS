@@ -1,0 +1,9 @@
+if (paramtype == ParamType.NONE) {
+return false;
+} else if (paramtype == ParamType.OBJECT) {
+return paramObj.has(param);
+public String getParam(String param) throws JSONException {
+if (paramtype == ParamType.NONE) {
+return null;
+} else if (paramtype == ParamType.OBJECT &amp;&amp; paramObj.has(param)) {
+

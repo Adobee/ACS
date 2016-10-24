@@ -1,0 +1,8 @@
+public class ExplosionSPLat implements ISPLatEvaluation {
+
+public void run(int max) {
+int i = 0;
+int current = 0;
+if (current == max) return;
+if (SPLat.get(current)) {i += Math.pow(2, current);}if (++current == max) return;
+

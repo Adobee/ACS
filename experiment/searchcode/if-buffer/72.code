@@ -1,0 +1,8 @@
+static ByteBuffer duplicateAndMerge(ByteBuffer[] buffers) {
+
+if (buffers.length == 0) {
+return ByteBuffer.allocate(0);
+
+} else if (buffers.length == 1) {
+return buffers[0].duplicate();
+

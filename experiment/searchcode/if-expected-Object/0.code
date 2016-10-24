@@ -1,0 +1,10 @@
+assertTrue(expected5.isEmpty());
+}
+
+@Test
+public void ifEmpty() throws Exception {
+
+final Expected<Object> expected = Expected.ofNullable(new Object());
+expected.ifEmpty(Assert::fail);
+final Expected<Object> expected2 = Expected.ofNullable(Collections.singleton(new Object()));
+

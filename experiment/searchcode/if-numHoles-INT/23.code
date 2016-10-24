@@ -1,0 +1,15 @@
+return score;
+}
+
+public int holesPlayed() {
+List<Hole> holes = course.getHoles();
+int numHoles = 0;
+for (Hole h : holes) {
+if (h.getScore() != 0)
+numHoles++;
+}
+return numHoles;
+}
+
+public Date getRoundDate() {
+

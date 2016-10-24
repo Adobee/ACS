@@ -1,0 +1,6 @@
+public static String getRelativeTime(String createdTime) {
+
+long createdTimeSeconds = Long.parseLong(createdTime);
+long currentTimeSeconds = System.currentTimeMillis() / 1000;
+long elapsedSeconds = currentTimeSeconds - createdTimeSeconds;
+

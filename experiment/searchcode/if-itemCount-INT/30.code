@@ -1,0 +1,8 @@
+public int creditAmount;
+public int[] items;
+
+public TestCase(int caseNumber, int creditAmount, String items, int itemCount) throws Exception{
+String[] rawItems = items.split(&quot; &quot;);
+if(itemCount != rawItems.length){
+throw new Exception(&quot;Got: &quot;+rawItems.length+&quot; expected: &quot;+itemCount);
+

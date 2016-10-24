@@ -1,0 +1,12 @@
+import org.joda.time.Partial;
+import org.joda.time.ReadablePartial;
+
+public class ReadablePartialRelay implements SpecimenBuilder {
+public Object create(Object request, SpecimenContext context) {
+if (!request.equals(ReadablePartial.class))
+return new NoSpecimen();
+
+return context.resolve(Partial.class);
+}
+}
+

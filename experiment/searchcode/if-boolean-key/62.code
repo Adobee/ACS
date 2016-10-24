@@ -1,0 +1,11 @@
+boolean isPressed = false;
+boolean toggle = false;
+int key;
+public ToggleButton(int key){
+this.key = key;
+}
+public boolean update(){
+if(!isPressed &amp;&amp; Keyboard.isKeyDown(key)){
+isPressed = true;
+toggle = !toggle;
+

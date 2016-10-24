@@ -1,0 +1,8 @@
+public final void insertElementAt(int x, int index) {
+if (count < index) throw new ArrayIndexOutOfBoundsException(index);
+if (count == elements.length) expand();
+/** Remove last &quot;n&quot; elements from the vector. */
+public void remove(int n) {
+if (n < 0) throw new ArrayIndexOutOfBoundsException(count);
+if (n > count) throw new ArrayIndexOutOfBoundsException(-1);
+

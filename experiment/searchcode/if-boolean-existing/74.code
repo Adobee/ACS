@@ -1,0 +1,7 @@
+final ConfigurationSection target = this.create(base);
+
+final boolean exists = target.isSet(this.existingKey);
+final Object value;
+if (exists) {
+value = target.get(this.existingKey);
+

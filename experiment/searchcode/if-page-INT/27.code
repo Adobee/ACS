@@ -1,0 +1,8 @@
+public static PageO getPage(int currentPage,int pageSize,int totalNum){
+PageO o = new PageO();
+int totalPage = 0;
+if(totalNum%pageSize==0){
+totalPage = totalNum/pageSize;
+}else{
+totalPage = totalNum/pageSize+1;
+

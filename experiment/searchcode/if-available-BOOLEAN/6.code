@@ -1,0 +1,15 @@
+public class Fork
+{
+private int id;
+private boolean available;
+
+public Fork(boolean available, int id)
+this.available = true;
+}
+
+public synchronized boolean take()
+{
+if (!isAvailable())
+{
+return false;
+

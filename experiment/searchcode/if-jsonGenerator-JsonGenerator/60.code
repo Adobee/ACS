@@ -1,0 +1,8 @@
+package org.adam.currency.helper;
+
+import com.fasterxml.jackson.core.JsonGenerator;
+import com.fasterxml.jackson.core.JsonProcessingException;
+public void serialize(Double aDouble, JsonGenerator jsonGenerator, SerializerProvider serializerProvider) throws IOException, JsonProcessingException {
+if(aDouble == null) {
+jsonGenerator.writeString(&quot;&quot;);
+

@@ -1,0 +1,10 @@
+import org.hibernate.criterion.Order;
+
+import gr.scriptum.domain.ProtocolBook;
+import gr.scriptum.domain.ProtocolNumber;
+import gr.scriptum.domain.ProtocolNumber.ProtocolNumberType;
+public boolean isDeletable(Integer id) {
+
+ProtocolBook book = findById(id, false);
+if (!book.getIncomingProtocols().isEmpty()
+

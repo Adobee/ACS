@@ -1,0 +1,8 @@
+Instance maxCluster = DatasetTools.maxAttributes(clusters[i]);
+for (int j=0 ; j<minAttrs.noAttributes() ; j++)
+{
+if (minCluster.value(j) < minAttrs.value(j))
+minAttrs.put(j,minCluster.value(j));
+
+if (maxCluster.value(j) > maxAttrs.value(j))
+

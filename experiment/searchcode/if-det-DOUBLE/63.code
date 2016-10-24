@@ -1,0 +1,9 @@
+double t;
+double eps = 1e-4;
+double b = op.dot(r.direction);
+double det = b * b - op.dot(op) + this.radius * this.radius;
+if(det < 0.0){
+return 0;
+}else{
+det = Math.sqrt(det);
+

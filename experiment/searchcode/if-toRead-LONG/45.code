@@ -1,0 +1,13 @@
+/*En esta ejemplo se simula que esta leyendo de algun archivo*/
+if(t1==null){
+t1= new Thread(new Task(toRead));
+t1.start();
+try {
+
+
+
+while (toRead != null) {
+
+cadena=toRead.take();
+if (cadena.equals(&quot;FIN_TRANSMISION&quot;))
+

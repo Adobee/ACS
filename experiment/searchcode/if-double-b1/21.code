@@ -1,0 +1,10 @@
+* @return: Cosine similarity.
+*/
+public double cosineSimilarity(int[] A, int[] B) {
+if (B == null || A == null || A.length != B.length)
+if ((A.length == 1 &amp;&amp; A[0] == 0)||(B.length == 1 &amp;&amp; B[0] == 0) || A.length*B.length == 0)
+return 2.0;
+
+double a1 = 0.0;
+double b1 = 0.0;
+

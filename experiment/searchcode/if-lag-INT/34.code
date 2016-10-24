@@ -1,0 +1,8 @@
+if( g.isNoData( r, c) == false) {
+int lagUp = r - lag;
+if( g.isNoData( lagUp, c) == false) {
+double value = g.getCellValue( r, c) - g.getCellValue( lagUp, c);
+for( int r = 0; r < g.getNumberRows(); r++) {
+if( g.isNoData( r, c) == false) {
+int lagUp = c - lag;
+

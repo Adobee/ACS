@@ -1,0 +1,6 @@
+RGBImage = type == ImagePlus.COLOR_RGB;
+boolean snapshotChanged = RGBImage &amp;&amp; previousSnapshot != null &amp;&amp; ((ColorProcessor) ip).getSnapshotPixels() != previousSnapshot;
+void setMinAndMax(ImagePlus imp, double min, double max) {
+boolean rgb = imp.getType() == ImagePlus.COLOR_RGB;
+if (channels != 7 &amp;&amp; rgb) {
+

@@ -1,0 +1,7 @@
+public final static double SOUTH_POLE = -NORTH_POLE;
+public final static double DATELINE = 180.0;
+public final static double LON_RANGE = 360.0;
+private static double wrapLongitude(double lon) {
+if ((lon < -DATELINE) || (lon > DATELINE)) {
+lon += DATELINE;
+

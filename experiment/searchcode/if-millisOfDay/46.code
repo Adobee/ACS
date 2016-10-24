@@ -1,0 +1,10 @@
+public List<PurchaseOrder> getPurchaseOrderList(DateTime month, DateTime year){
+try {
+if(year==null){
+return null;
+}
+Date startDate;
+Date endDate;
+if(month==null){
+startDate=year.withDayOfYear(year.dayOfYear().getMinimumValue()).withHourOfDay(year.hourOfDay().getMinimumValue()).toDate();
+

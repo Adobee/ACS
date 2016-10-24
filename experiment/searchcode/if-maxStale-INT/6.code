@@ -1,0 +1,6 @@
+LogUtil.e(&quot;network error&quot;);
+int maxStale = 60 * 60 * 24 * 28; // 无网络时，设置超时为4周
+LogUtil.e(&quot;has maxStale=&quot; + maxStale);
+response.newBuilder()
+.header(&quot;Cache-Control&quot;, &quot;public, only-if-cached, max-stale=&quot; + maxStale)
+

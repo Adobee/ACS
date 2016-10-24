@@ -1,0 +1,9 @@
+} else if (parseContext.parseFieldMatcher().match(currentFieldName, Field.INCLUDE)) {
+include = parser.booleanValue();
+} else if (parseContext.parseFieldMatcher().match(currentFieldName, Field.FAIL_ON_UNSUPPORTED_FIELD)) {
+mltQuery.setAnalyzer(analyzer);
+
+// set like text fields
+boolean useDefaultField = (moreLikeFields == null);
+if (useDefaultField) {
+

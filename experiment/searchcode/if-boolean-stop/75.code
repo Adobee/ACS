@@ -1,0 +1,9 @@
+private volatile boolean stop = false;
+private int counter = 0;
+public void run() {
+while (!stop &amp;&amp; counter < 10000) {
+System.out.println(counter++);
+}
+if (stop)
+System.out.println(&quot;Detected stop&quot;);
+

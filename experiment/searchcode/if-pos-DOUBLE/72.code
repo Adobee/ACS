@@ -1,0 +1,11 @@
+public static void CircleToCircle(Manifold m, Body a, Body b) {
+
+
+Vector normal = b.pos.subt(a.pos);
+
+double dist_sqr = normal.lengthSquared();
+double radius = a.radius * b.radius;
+double distance = Math.sqrt(distSq(a, b));
+
+if (!AABB(a, b) &amp;&amp; distance > a.radius + b.radius) {
+

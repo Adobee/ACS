@@ -1,0 +1,9 @@
+public class SpiralPrinter {
+
+public static void print(int[][] matrix){
+int lowerI = 0;
+lowerI++;
+}
+if(canContinue(lowerI, upperI, lowerJ, upperJ)){
+for(int i = lowerI; i <= upperI; i++)
+

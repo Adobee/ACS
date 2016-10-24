@@ -1,0 +1,6 @@
+public static String packagePrefixOf(@NotNull WorkspacePath workspacePath) {
+int skipIndex = 0;
+
+skipIndex = skipIndex == 0 ? skip(workspacePath, &quot;java/&quot;) : skipIndex;
+skipIndex = skipIndex == 0 ? skip(workspacePath, &quot;javatests/&quot;) : skipIndex;
+

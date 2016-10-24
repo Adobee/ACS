@@ -1,0 +1,8 @@
+package com.revolsys.parallel;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+ExecutorService executorService = ThreadSharedProperties.getProperty(KEY);
+if (executorService == null) {
+executorService = Executors.newCachedThreadPool();
+

@@ -1,0 +1,11 @@
+import org.springframework.hateoas.Resources;
+
+public class JacksonResourceTypeFactory {
+
+private TypeFactory typeFactory;
+this.typeFactory = typeFactory;
+}
+
+public JavaType getResourceType(Type resourceType, Type objectType) {
+if (Resources.class.isAssignableFrom((Class<?>) resourceType)) {
+

@@ -1,0 +1,7 @@
+boolean restoreState(DateTimeParserBucket enclosing) {
+if (enclosing != DateTimeParserBucket.this) {
+enclosing.iZone = this.iZone;
+enclosing.iOffset = this.iOffset;
+enclosing.iSavedFields = this.iSavedFields;
+if (this.iSavedFieldsCount < enclosing.iSavedFieldsCount) {
+

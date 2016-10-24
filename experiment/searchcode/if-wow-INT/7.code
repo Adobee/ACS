@@ -1,0 +1,11 @@
+import org.wowtalk.api.WowTalkVoipIF;
+
+public class IncomeCallIntentReceiver extends BroadcastReceiver {
+
+@Override
+public void onReceive(Context context, Intent intent) {
+int setupStep = PrefUtil.getInstance(context).getSetupStep();
+
+if (setupStep == 2) {
+if (WowTalkVoipIF.fGetMainActivity() == null) {
+

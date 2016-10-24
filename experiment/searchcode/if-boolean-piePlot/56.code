@@ -1,0 +1,7 @@
+super(new PieToCategoryDataset(piePlot.getDataset()), domainAxis, rangeAxis, renderer);
+this.piePlot = piePlot;
+if (renderer == null) {
+Comparable key = dataset.getKey(column);
+Paint paint = piePlot.getSectionPaint(key);
+if (paint == null) {
+

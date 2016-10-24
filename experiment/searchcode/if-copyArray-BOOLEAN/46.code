@@ -1,0 +1,10 @@
+public void sort(T[] arr) {
+if(arr == null){
+throw new IllegalArgumentException(&quot;数组不能为空&quot;);
+}
+sort(arr, 0, arr.length-1);
+}
+
+private void sort(T[] arr, int start, int end){
+if(start >= end){ // 如果分组达到最小单元，则停止分组
+

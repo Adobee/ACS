@@ -1,0 +1,11 @@
+return &quot;(&quot; + arg1 + &quot; >= &quot; + arg2 + &quot;)&quot;;
+}
+else if(match(s, &quot;dis&quot;)) {
+int arity = Integer.parseInt(translate());
+dis += &quot; || &quot; + translate();
+
+return dis + &quot;)&quot;;
+}
+else if(match(s, &quot;con&quot;)) {
+int arity = Integer.parseInt(translate());
+

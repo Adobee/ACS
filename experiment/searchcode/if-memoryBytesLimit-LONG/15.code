@@ -1,0 +1,9 @@
+private final long memoryBytesLimit;
+private final double overheadConstant;
+private final AtomicLong used;
+private final AtomicLong trippedCount;
+public MemoryCircuitBreaker(ByteSizeValue limit, double overheadConstant, MemoryCircuitBreaker oldBreaker, ESLogger logger) {
+this.memoryBytesLimit = limit.bytes();
+this.overheadConstant = overheadConstant;
+if (oldBreaker == null) {
+

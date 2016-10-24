@@ -1,0 +1,13 @@
+private String field;
+private double boost;
+
+public QueryField(String field, double boost) {
+super();
+this.field = field;
+public String toQuery() {
+StringBuilder builder = new StringBuilder();
+builder.append(field);
+
+if (boost > 0.0) {
+builder.append(&quot;^&quot;);
+

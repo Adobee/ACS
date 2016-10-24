@@ -1,0 +1,8 @@
+package DataRepository;
+
+public class FinderFunctions {
+public static String getLikeQuery(String query)
+{
+if(query!=null &amp;&amp; !query.isEmpty())
+return query.replaceAll(&quot;\\*&quot;, &quot;%&quot;).replaceAll(&quot;\\?&quot;, &quot;_&quot;);
+

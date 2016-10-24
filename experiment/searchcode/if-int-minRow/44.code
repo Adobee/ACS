@@ -1,0 +1,12 @@
+public long countCells(int a, int b, int numRows, int numColumns, int k) {
+long answer = 0;
+if (a > b) {
+int temp = a;
+a = b;
+b = temp;
+}
+for (int i = 0; i < 5; i++) {
+long minRow, maxRow;
+if (i == 0) {
+minRow = 1;
+

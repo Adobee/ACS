@@ -1,0 +1,9 @@
+TableView v = (TableView) layout.getRootView();
+
+for (int i = 0; i < lastColumns.length; i++) {
+powerLayout.addColumn(lastColumns[i]);
+Cell cell = new Cell(0, 0, leftHeader.getColumnCount(), topHeader.getRowCount());
+
+if (leftHeader != null) {
+for (int col = 0; col < cell.colSpan; col++) {
+

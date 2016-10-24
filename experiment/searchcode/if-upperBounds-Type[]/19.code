@@ -1,0 +1,8 @@
+public WildcardTypeImpl(Type[] upperBounds, Type[] lowerBounds)
+{
+if (upperBounds.length == 0)
+throw new IllegalArgumentException(
+return &quot;? super &quot; + GenericTypeReflector.getTypeName(lowerBounds[0]);
+}
+else if (upperBounds[0] == Object.class)
+

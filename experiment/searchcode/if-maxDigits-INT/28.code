@@ -1,0 +1,6 @@
+final int n = 5;
+final int maxDigits = getMaxDigits(n);
+final int[] dividers = IntStream.range(0, maxDigits).map(i -> pow(10, i)).toArray();
+
+final int answer = IntStream.range(2, pow(9, n) * maxDigits).filter(i -> {
+

@@ -1,0 +1,15 @@
+private Type returnType;
+
+public Function(String name) {
+this.name = name;
+}
+
+public Type getReturnType() {
+public void setReturnType(Type returnType) {
+this.returnType = returnType;
+}
+
+@Override
+public void genC(PW pw) {
+if (returnType instanceof StringType) {
+

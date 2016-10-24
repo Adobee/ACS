@@ -1,0 +1,13 @@
+private static final long serialVersionUID = 1L;
+}
+
+class Line {
+
+public Point p1;
+public Point p2;
+
+Line(Point p1, Point p2) {
+public double distance() throws OverflowException {
+double d = (p1.x - p2.x)*(p1.x - p2.x) + (p1.y - p2.y)*(p1.y - p2.y);
+if (Double.isInfinite(d) || Double.isNaN(d))
+

@@ -1,0 +1,6 @@
+int sqrt1 = Ints.checkedCast(modSqrt(prime - 1, prime));
+if (sqrt1 != -1) {
+int sqrt2 = prime - sqrt1;
+Preconditions.checkState((1L * sqrt1 * sqrt1) % prime == prime - 1);
+Preconditions.checkState((1L * sqrt2 * sqrt2) % prime == prime - 1);
+

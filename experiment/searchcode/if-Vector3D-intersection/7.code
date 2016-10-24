@@ -1,0 +1,10 @@
+public TriFace(Point a, Point b, Point c, Texture texture) {
+super(a,b,c,texture);
+}
+
+@Override
+public Point intersection(Point p, Vector3D incidentRay) {
+boolean condAlpha = (alpha >= 0 || Math.abs(alpha) <= Vector3D.epsilon)
+&amp;&amp; (alpha <= 1 || Math.abs(alpha-1) <= Vector3D.epsilon);
+if (!condAlpha)	return null;
+

@@ -1,0 +1,12 @@
+boolean lastWasGap = false;
+boolean emptyHisto = true;
+
+for (int i = 0; i < size; i++) {
+MockBucket bucket = new MockBucket();
+bucket.key = i * interval;
+values.add(bucket);
+}
+
+if (emptyHisto) {
+int idx = randomIntBetween(0, values.size()-1);
+

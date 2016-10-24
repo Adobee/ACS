@@ -1,0 +1,13 @@
+package org.laukvik.jdbc;
+
+public class Sort {
+
+Column column;
+boolean sortOrder;
+public final static boolean ASCENDING = true;
+public static Sort parse( String sql ) throws ParseException{
+sql = sql.trim();
+boolean sortOrder = ASCENDING;
+String name = null;
+if (sql.endsWith( &quot; &quot; + DESC )){
+

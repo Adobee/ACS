@@ -1,0 +1,14 @@
+super.configure(0, 0, maxEnergyReceived, 0, maxStoredEnergy);
+}
+
+public boolean update(IPowerReceptor receptor)
+{
+return false;
+}
+
+public void addEnergy(float quantity)
+{
+this.energyStored += quantity;
+
+if (this.energyStored > this.maxEnergyStored)
+

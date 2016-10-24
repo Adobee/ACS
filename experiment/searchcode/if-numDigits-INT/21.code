@@ -1,0 +1,8 @@
+public ScoreBoard(Vec3 Position,int score,int numDigits,float width) {
+this.position = Position;
+this.score = score;
+this.width = width*2;
+float xstart;
+if (numDigits%2==0) {
+xstart = (float) (position.getX()-((numDigits/2)-0.5)*this.width);
+

@@ -1,0 +1,10 @@
+public static String diffTime(Date toSustract, Date origin) {
+long diff = origin.getTime() - toSustract.getTime();
+diff /= 1000;
+if (Math.abs(diff) <= 60) {
+return &quot;just now&quot;;
+}
+
+diff /= 60;
+if (Math.abs(diff) < 60) {
+

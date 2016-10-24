@@ -1,0 +1,11 @@
+import net.minecraftforge.common.config.Configuration;
+
+public class Config {
+public static boolean enableTooltips = true;
+public static Configuration config;
+syncConfig();
+}
+}
+public static void processConfig (Configuration config) {
+enableTooltips = config.getBoolean(&quot;enableTooltips&quot;,Configuration.CATEGORY_GENERAL,enableTooltips,&quot;Enable item name tooltips?&quot;);
+

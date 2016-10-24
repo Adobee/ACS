@@ -1,0 +1,6 @@
+public String endX(String str) {
+if (str.equals(&quot;&quot;)) return str;
+if (str.charAt(0) == &#39;x&#39;) return endX(str.substring(1)) + &#39;x&#39;;
+else return str.charAt(0) + endX(str.substring(1));
+}
+

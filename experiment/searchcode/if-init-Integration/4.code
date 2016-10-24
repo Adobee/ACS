@@ -1,0 +1,12 @@
+for (Integration integration : modIntegrations)
+if (integration.shouldIntegrate())
+integration.init();
+}
+
+public static void postInit() {
+for (Integration integration : modIntegrations)
+if (integration.shouldIntegrate())
+integration.postInit();
+}
+}
+

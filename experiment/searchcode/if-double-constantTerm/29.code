@@ -1,0 +1,9 @@
+/** Constant term of the linear equation. */
+private final double constantTerm;
+
+/**
+* @param coefficients The coefficients for the linear equation being optimized
+* @param constantTerm The constant term of the linear equation
+*/
+public LinearObjectiveFunction(double[] coefficients, double constantTerm) {
+

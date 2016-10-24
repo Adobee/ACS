@@ -1,0 +1,10 @@
+public class ConfigEntry<E> {
+
+private ConfigEntryAggregator<E> aggregator;
+private E value;
+
+@PostConstruct
+public void register() {
+if (aggregator == null) {
+throw new IllegalStateException(&quot;Aggregator must be provided.&quot;);
+

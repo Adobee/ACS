@@ -1,0 +1,11 @@
+public class ComplexNumber implements Cloneable{
+
+/** 复数的实部 */
+private double realPart;
+
+/** 复数的虚部 */
+private double imaginaryPart;
+double newReal = this.realPart * aComNum.realPart - this.imaginaryPart
+* aComNum.imaginaryPart;
+double newImaginary = this.realPart * aComNum.imaginaryPart
+

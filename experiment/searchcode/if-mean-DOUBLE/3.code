@@ -1,0 +1,15 @@
+private double S = 0;
+
+
+double getMean() {
+return mean;
+}
+
+double getVariance() {
+if(k < 2) {
+double oldMean = mean;
+if(k == 0) {
+mean = val;
+} else {
+mean = oldMean + (val - oldMean) / ( (double) k + 1 );
+

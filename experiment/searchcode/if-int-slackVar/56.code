@@ -1,0 +1,12 @@
+// initialize the objective function rows
+if (getNumObjectiveFunctions() == 2) {
+matrix.setEntry(0, 0, -1);
+}
+int zIndex = (getNumObjectiveFunctions() == 1) ? 0 : 1;
+getInvertedCoeffiecientSum(objectiveCoefficients));
+}
+
+// initialize the constraint rows
+int slackVar = 0;
+int artificialVar = 0;
+

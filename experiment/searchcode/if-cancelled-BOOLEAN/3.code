@@ -1,0 +1,11 @@
+private boolean cancelled;
+
+public abstract void think();
+public abstract long getDelay();
+
+public Brain() {
+public void execute(Dispatcher dispatcher) {
+if(!isCancelled()) {
+think();
+dispatcher.run(this, getDelay());
+

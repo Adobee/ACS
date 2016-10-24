@@ -1,0 +1,21 @@
+public Node<T> top() {
+return top;
+}
+
+public T pop() {
+if (top != null) {
+T data = top.value();
+top = top.next();
+Node<T> node = new Node<T>(data);
+node.setNext(top);
+top = node;
+}
+
+public T peek() {
+if (top != null) {
+return top.value();
+}
+return null;
+}
+}
+

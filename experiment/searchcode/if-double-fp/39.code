@@ -1,0 +1,17 @@
+return f1;
+}
+
+public double calculateError() {
+if ((tp + fp) == 0) {
+return 0;
+}
+
+err = (fp / (tp + fp));
+return err;
+}
+
+public double calculatePrecision() {
+try {
+if ((tp + fp) == 0) {
+return 0;
+

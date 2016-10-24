@@ -1,0 +1,9 @@
+public Range getDataRange(ValueAxis valueAxis) {
+Range range = null;
+if (this.subplots == null) return range;
+ValueAxis valueAxis = this.getDomainAxis();
+if (valueAxis != null) {
+valueAxis.configure();
+}
+this.notifyListeners(new PlotChangeEvent(this));
+

@@ -1,0 +1,8 @@
+import com.excuseme.rocketleaguelivestats.scanner.model.HandlePlayerRemoved;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+public HandlePlayerRemoved match(String line) {
+final Matcher matcher = NAMEPLATE_HANDLE_PLAYER_REMOVED.matcher(line);
+if(matcher.matches()) {
+

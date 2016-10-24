@@ -1,0 +1,8 @@
+public static void main(String[] args) throws IOException, URISyntaxException, ClassNotFoundException, InterruptedException {
+
+if (args.length != 13) {
+System.out.println(&quot;USAGE: <QUERY> <NUMTASK> <PARAK/THRESHOLD> <DIMENSION> <NUMBIN> <NUMVEC> <INPUTPATH> <BINPATH> <VECPATH> <OUTPUTPATH> <CACHE> <BATCH> <NUMPIVOTS>&quot;);
+String pivotVal = FormatUtils.formatDoubleArray(allPivots);
+conf.set(QuickBSP.VALPIVOTS, pivotVal);
+conf.set(&quot;yarn.resourcemanager.address&quot;, HOST);
+

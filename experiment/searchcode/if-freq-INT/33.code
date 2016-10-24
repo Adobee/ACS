@@ -1,0 +1,11 @@
+int m=0;
+for(int i=0;i<text.length();i++) {
+if(freq[text.charAt(i)].freq==0)	{
+freq[text.charAt(i)].freq=1;
+heap max = extractMax(freq,256-i);
+int p=i;
+while(text.charAt(p)!=&#39; &#39;)
+p++;
+for(int k=0;k<max.freq;k++) {
+if((p+k*d)>=text.length()) {
+

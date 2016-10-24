@@ -1,0 +1,12 @@
+* @param nach in die zu wechselnde Währung
+* @param startvalue der zu wechselnde Betrag
+* @return
+*/
+public int wechsle(String von, String nach, int startvalue) {
+throw new IllegalArgumentException(&quot;Ungültige Währung!&quot;);
+}
+if (von.equals(nach)) {
+return startvalue;
+}
+double result = 0;
+

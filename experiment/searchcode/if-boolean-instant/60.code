@@ -1,0 +1,11 @@
+package instant;
+
+import datetime.DateTimeFormat;
+
+public class IllegalInstantException extends IllegalArgumentException {
+return &quot;Illegal instant due to time zone offset transition (daylight savings time &#39;gap&#39;): &quot; + localDateTime + zone;
+}
+
+public static boolean isIllegalInstant(Throwable ex) {
+if (ex instanceof IllegalInstantException)
+

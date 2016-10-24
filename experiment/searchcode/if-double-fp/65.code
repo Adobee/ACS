@@ -1,0 +1,11 @@
+* @param matrix
+* @return
+*/
+static MatrixFP toMatrixFP(AffineTransform matrix) {
+if (matrix == null) {
+if (matrix.isIdentity()) {
+return MatrixFP.IDENTITY;
+}
+
+MatrixFP matrixFP = new MatrixFP(SingleFP.fromDouble(matrix.getScaleX()),
+

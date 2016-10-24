@@ -1,0 +1,10 @@
+private final String fromExtension;
+
+public Context(String fromExtension) {
+if (fromExtension.length() > 0)
+this.fromExtension = fromExtension;
+public String getDriverId() {
+if (fromExtension == null)
+return null;
+return this.fromExtension.split(&quot; &quot;)[0];
+

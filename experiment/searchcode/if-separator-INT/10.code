@@ -1,0 +1,10 @@
+package dpfmanager.implementationchecker;
+
+import static java.io.File.separator;
+
+import dpfmanager.conformancechecker.tiff.implementation_checker.TiffImplementationChecker;
+void assertNumberOfErrors(String filename, int errors) {
+try {
+TiffReader tr = new TiffReader();
+int result = tr.readFile(filename);
+

@@ -1,0 +1,11 @@
+* Gauss-Jordan implementation for linear equations.
+*/
+public class LinearSolver {
+
+private int pivotRow, pivotCol;
+public void solve(Matrix matrix, boolean gaussOnly) {
+
+pivotRow = pivotCol = -1;
+doGauss(matrix);
+if (!gaussOnly) doGaussJordan(matrix);
+

@@ -1,0 +1,10 @@
+private static String doConfigureAll(HttpSecureAppServlet servlet,VariablesSecureApp vars,Scripthelper script,String fieldname, int leadingemptycols,int colstotal,boolean required,boolean readonly,String currentidvalue,String callout, String labeltext, String jssettings,String title,String elementId) throws Exception{
+String retval=&quot;&quot;;
+String formname=&quot;frmMain&quot;;
+if (jssettings==null)
+for (int i = 0; i < leadingemptycols; i++) {
+retval=retval + &quot;<td></td>&quot;;
+}
+if ( ! readonly)
+retval=retval +   ConfigureLabel.doConfigure(servlet,vars, Sqlc.TransformaNombreColumna(fieldname),&quot;TitleCell&quot;,labeltext,elementId);
+

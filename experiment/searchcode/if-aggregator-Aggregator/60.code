@@ -1,0 +1,14 @@
+return _factorial(n, 1);
+}
+
+private static int _factorial(int n, int aggregator) {
+if (n == 1) {
+return aggregator;
+}
+
+return _factorial(n-1, aggregator * n);
+}
+
+public static void main(String[] args) {
+int aggregator = 0;
+

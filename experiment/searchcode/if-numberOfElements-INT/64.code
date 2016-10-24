@@ -1,0 +1,12 @@
+public class Buffer {
+private int head;
+private int tail;
+private int numberOfElements;
+private int[] data;
+tail = 0;
+numberOfElements = 0;
+}
+
+public synchronized void put(int x) {
+while(numberOfElements == data.length) {
+

@@ -1,0 +1,11 @@
+protected int fickleness;
+protected int[] heightRange;
+public boolean isSurfacing;
+public boolean reachedTarget;
+return this.worldObj.getBlockMaterial((int)this.posX, (int)this.posY + var1, (int)this.posZ) == Material.water ? this.getDistanceToSurface(var1 + 1) : (double)var1;
+}
+
+protected boolean getTargetHeight()
+{
+if (this.isWet() &amp;&amp; !this.isSurfacing)
+

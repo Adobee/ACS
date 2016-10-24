@@ -1,0 +1,6 @@
+Measurement measurement = (Measurement) PongoFactory.getInstance().createPongo(dbCollection.findOne(new BasicDBObject(&quot;uri&quot;, q + &quot;&quot;)));
+if (measurement != null) {
+measurement.setPongoCollection(this);
+Measurement measurement = (Measurement) PongoFactory.getInstance().createPongo(dbCollection.findOne(new BasicDBObject(&quot;uri&quot;, q + &quot;&quot;).append(&quot;_type&quot;, &quot;org.ossmeter.metricprovider.rascal.trans.model.BooleanMeasurement&quot;)));
+if (measurement != null) {
+

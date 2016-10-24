@@ -1,0 +1,10 @@
+ClassAnalyzer playerDataAnalyzer = analyzer.getClassAnalyzer(PlayerDataAnalyzer.class);
+if (playerDataAnalyzer.isFailed()) {
+return null;
+FieldAnalyzer skillsAnalyzer = playerDataAnalyzer.getFieldAnalyzer(SkillsAnalyzer.class);
+if (skillsAnalyzer.isFailed()) {
+return null;
+}
+
+return new AnalyzedClass(analyzer.getClassNode(
+

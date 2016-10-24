@@ -1,0 +1,11 @@
+this.getter = getter;
+this.zone = zoneId;
+}
+
+@Override
+public LocalDateTime get(S target) throws Exception {
+return Instant.ofEpochMilli(((Date) o).getTime()).atZone(zone).toLocalDateTime();
+}
+
+if (o instanceof LocalDateTime) {
+

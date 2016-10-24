@@ -1,0 +1,6 @@
+private static final FilenameFilter validFileFilter = new FilenameFilter() {
+public boolean accept(File dir, String name) {
+if(validFilePattern.matcher(name).matches()){
+public CustomFilenameFilter(String regex){
+this.customPattern = Pattern.compile( regex, Pattern.CASE_INSENSITIVE );
+

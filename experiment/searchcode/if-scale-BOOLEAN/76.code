@@ -1,0 +1,13 @@
+public class ScaleGestureDetectorCompat
+{
+static final ScaleGestureDetectorImpl IMPL;
+
+static
+{
+if (Build.VERSION.SDK_INT < 19) {
+IMPL = new ScaleGestureDetectorCompatKitKatImpl(null);
+}
+}
+
+public static boolean isQuickScaleEnabled(Object paramObject)
+

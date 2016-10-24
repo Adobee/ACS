@@ -1,0 +1,8 @@
+public String toString() {
+return String.format(&quot;(%.2f; %.2f)&quot;, from, to);
+}
+
+public Range intersection(Range range) {
+if (this.to < range.from || this.from > range.to) {
+return null;
+

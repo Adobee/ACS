@@ -1,0 +1,8 @@
+public JudgeDistance(String fromCity, String toCity, String distance) {
+this.isCompleted = true;
+if(fromCity.equals(&quot;&quot;)) this.isCompleted = false;
+if(!isCompleted){ message = &quot;信息不完整&quot;; return message;}
+JudgeDouble ja = new JudgeDouble(distance);
+a = ja.judge();
+if(a==1){ message = &quot;请输入正确的距离&quot;; return message;}
+

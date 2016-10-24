@@ -1,0 +1,8 @@
+private Vector<Muestra> vectorMuestras = new Vector<Muestra>();
+
+private double razon = 0.01;
+private final double epsilon = 0.05;
+private float[][] cPrev;
+
+public AlgoritmoLloyd(int numMuestras,Vector<Muestra> centros,Vector<Muestra> vectorMuestras){
+

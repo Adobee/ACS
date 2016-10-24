@@ -1,0 +1,8 @@
+FileLocation.DUMMY, CNumericTypes.INT, BigInteger.ZERO)));
+}
+if (ExpressionTrees.isAnd(tree)) {
+for (ExpressionTree<AExpression> child : ExpressionTrees.getChildren(tree)) {
+if (child instanceof LeafExpression) {
+AExpression expression = ((LeafExpression<AExpression>) child).getExpression();
+if (expression instanceof CExpression) {
+

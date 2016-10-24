@@ -1,0 +1,11 @@
+Coordinate[] lineCoords = line.getCoordinates();
+
+for( int i = 0; i < lineCoords.length; i++ ) {
+
+if (!coordList.contains(lineCoords[i])) {
+for (LinearRing eachRing : rings) {
+
+Geometry intersection = eachRing.intersection(segment);
+
+int numGeometries = intersection.getNumGeometries();
+

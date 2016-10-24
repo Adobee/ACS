@@ -1,0 +1,10 @@
+public String SID;
+public String managerID;
+public String managerTypeID;
+public String managerTypeName;
+public String salesManagerType;
+public String areaTypeId;
+public String ifContract;
+public String passWord;
+}
+

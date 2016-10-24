@@ -1,0 +1,8 @@
+public class PositionIterator implements Iterator<TermPosition> {
+
+private boolean resetted = false;
+public Iterator<TermPosition> reset() {
+if (resetted) {
+throw new ElasticsearchException(
+&quot;Cannot iterate twice! If you want to iterate more that once, add _CACHE explicitly.&quot;);
+

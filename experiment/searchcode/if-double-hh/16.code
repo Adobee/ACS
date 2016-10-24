@@ -1,0 +1,8 @@
+thisProfile.d_lights[48*i + HH]=d_lights_sine[48*i + HH]+(RandomHelper.getNormal().nextDouble()*MSConstArrays.lighting_stddev_sine_sun[HH]);
+}
+if ( thisProfile.d_lights[48*i + HH] < 0)
+thisProfile.d_lights[48*i + HH]= MSConstArrays.lighting_max_wkdays[HH]+(RandomHelper.getNormal().nextDouble()*MSConstArrays.lighting_stddev_max_wkdays[HH]);
+n=1;
+}
+if ( n==0)
+

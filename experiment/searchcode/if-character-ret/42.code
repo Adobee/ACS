@@ -1,0 +1,11 @@
+this.character = character;
+}
+
+@Override
+public String getExtraInfo() {
+if (getCharacter() != null) {
+return getCharacter().getStatString();
+}
+if (getCharacterWrapper() != null) {
+String s = getCharacterWrapper().getStatString();
+

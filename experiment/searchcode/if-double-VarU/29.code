@@ -1,0 +1,6 @@
+/*  76:176 */     double EU = n1n2prod / 2.0D;
+/*  77:177 */     double VarU = n1n2prod * (n1 + n2 + 1) / 12.0D;
+/*  78:    */
+/*  79:179 */     double z = (Umin - EU) / FastMath.sqrt(VarU);
+/*  80:    */
+

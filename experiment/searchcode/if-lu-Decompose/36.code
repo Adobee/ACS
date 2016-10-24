@@ -1,0 +1,10 @@
+super(matrix);
+}
+
+@Override
+public Matrix[] decompose() {
+
+Matrix lu = matrix.copy();
+for (int i = j + 1; i < lu.rows(); i++) {
+if (Math.abs(lu.get(i, j)) > Math.abs(lu.get(pivot, j))) {
+

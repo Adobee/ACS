@@ -1,0 +1,6 @@
+public PtResult addUserIntegrate(UserIntegrate record) {
+int result =  userIntegrateMapper.insertSelective(record);
+if (result < 1){
+List<UserIntegrate> result = userIntegrateMapper.selectByExample(example);
+if (CollectionUtils.isEmpty(result)) {
+

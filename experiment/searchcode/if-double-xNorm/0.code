@@ -1,0 +1,8 @@
+pixels = ((DataBufferInt) img.getRaster().getDataBuffer()).getData();
+}
+
+public void drawLow(Container container){
+if (xNorm == 0) xNorm = ((double)w / container.getWidth());
+if (yNorm == 0) yNorm = ((double)h / container.getHeight());
+for (int i = 0; i < w * h; i++){
+

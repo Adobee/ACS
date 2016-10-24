@@ -1,0 +1,7 @@
+import org.elasticsearch.action.support.ActiveShardCount;
+import org.elasticsearch.cluster.metadata.AliasAction;
+import org.elasticsearch.cluster.metadata.AliasMetaData;
+assertThat(results.size(), equalTo(2));
+for (Condition.Result result : results) {
+if (result.condition instanceof MaxAgeCondition) {
+

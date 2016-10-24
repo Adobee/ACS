@@ -1,0 +1,11 @@
+package action.chainofresponsibility.handler;
+
+import action.chainofresponsibility.request.AddMoneyRequest;
+public PMRequestHandler(RequestHandle rh){
+this.rh=rh;
+}
+
+@Override
+public void handleRequest(Request request) {
+if(request instanceof AddMoneyRequest)
+

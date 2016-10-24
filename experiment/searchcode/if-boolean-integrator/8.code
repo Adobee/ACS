@@ -1,0 +1,12 @@
+String nameText = integratorContainer.findElement(By.className(&quot;integratorName&quot;)).getText();
+if (!Strings.isNullOrEmpty(nameText) &amp;&amp; nameText.equalsIgnoreCase(integratorName)) {
+for (WebElement view : findElementsByClassName(&quot;integrator-remove-confirm&quot;)) {
+if (view.isDisplayed()) {
+return;
+}
+}
+
+fail(&quot;removal view is not displayed&quot;);
+}
+}
+

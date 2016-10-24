@@ -1,0 +1,5 @@
+public void incrementRecord(int index, boolean useLong) {
+if (index >= records.length || index < 0) return;
+if (records == null || !(records[index] instanceof Number)) return;
+if (useLong) records[index] = ((Number) records[index]).longValue() + 1L;
+

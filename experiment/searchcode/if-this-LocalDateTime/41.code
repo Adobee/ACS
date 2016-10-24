@@ -1,0 +1,11 @@
+this.parameters.put(attribute, parameter);
+}
+}
+
+//Compare dates
+@Override
+public int compareTo(Object o) {
+if (this.localDateTime.isAfter(((Record)o).getLocalDateTime())) {
+return 1;
+} else if (this.localDateTime.isEqual(((Record)o).getLocalDateTime())) {
+

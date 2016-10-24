@@ -1,0 +1,9 @@
+throws ExprException {
+double res = 0;
+for (Expr arg : args)
+res += sumsq(context, arg);
+return new ExprDouble(res);
+}
+
+private double sumsq(IEvaluationContext context, Expr arg)
+

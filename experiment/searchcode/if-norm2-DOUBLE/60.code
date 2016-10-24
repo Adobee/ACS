@@ -1,0 +1,9 @@
+g.setColor(new Color((int) (Math.sqrt(eX*eX+eY*eY)),(int) Math.abs(eX),(int) Math.abs(eY)));
+
+int norm=7;
+int norm2=20;
+if(height>length){
+if(eX>0){
+int n=(int) (height)/norm2;
+for(int i=1;i<n-1;i++){
+

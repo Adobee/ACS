@@ -1,0 +1,13 @@
+import com.koudai.net.kernal.ResponseBody;
+
+import java.io.IOException;
+
+/**
+* Created by zhaoyu on 16/1/6.
+*/
+public final class SimpleResponseProcessor implements IResponseProcessor {
+public String process(HttpRequest<?> request, Response response) throws RuntimeException, IOException {
+ResponseBody responseBody = response.body();
+String responseString = &quot;&quot;;
+if (responseBody != null) {
+

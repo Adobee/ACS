@@ -1,0 +1,14 @@
+this.imageHeight = imageHeight;
+this.imageWidth = imageWidth;
+}
+
+public Candidate getBestFace(double threshold) {
+
+ArrayList<Candidate> temp = new ArrayList<Candidate>();
+for (int k=0;k<temp.size();k++) {
+Candidate c2 = temp.get(k);
+if (c2.isSameDetection(c)) {
+
+// union
+int t1 = Math.max(c2.x+c2.size, c.x+c.size)-Math.min(c2.x,c.x);
+

@@ -1,0 +1,6 @@
+public static ISBN Create(String Number)  {
+try {
+Number = Number.replaceAll(&quot;[^\\d.]&quot;, &quot;&quot;);
+if (Number.length() == 10) return new ISBN10(Number);
+else if (Number.length() == 13) return new ISBN13(Number);
+

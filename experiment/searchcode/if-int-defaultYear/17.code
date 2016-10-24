@@ -1,0 +1,6 @@
+private static final String HQL4ReveStic = &quot; select e.id, e.name, e.rating, e.discipline, e.isReviewer, u.name, u.code, count(distinct pr.project.id) from Expert e, University u, ProjectApplicationReview pr where u.code = e.universityCode and e.id = pr.reviewer.id and pr.year = :defaultYear &quot;;
+private static final String HQLG = &quot; group by e.id, e.name, u.name, e.rating, e.discipline, e.isReviewer, u.code &quot;;
+List<Object> dislist = projectService.getDisciplineCode(keyword);
+if (dislist != null &amp;&amp; !dislist.isEmpty()) {
+for (int i = 0; i < dislist.size(); i++) {
+

@@ -1,0 +1,8 @@
+public void shardMinDocCountSignificantTermsTest() throws Exception {
+
+String termtype = &quot;string&quot;;
+if (randomBoolean()) {
+termtype = &quot;long&quot;;
+}
+assertAcked(prepareCreate(index).setSettings(SETTING_NUMBER_OF_SHARDS, 1, SETTING_NUMBER_OF_REPLICAS, 0).addMapping(type, &quot;{\&quot;properties\&quot;:{\&quot;text\&quot;: {\&quot;type\&quot;: \&quot;&quot; + termtype + &quot;\&quot;}}}&quot;));
+

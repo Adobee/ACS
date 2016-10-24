@@ -1,0 +1,11 @@
+private int N = 9;
+private long p2[] = new long[N+1];
+private long p5[] = new long[N+1];
+public void solving() {
+p2[i] = 2 * p2[i-1];
+p5[i] = 5 * p5[i-1];
+}
+
+long res = 0;
+for (int n = 1; n <= N; ++n) {
+

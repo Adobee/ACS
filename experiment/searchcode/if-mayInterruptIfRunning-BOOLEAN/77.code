@@ -1,0 +1,12 @@
+return new FutureTask<T>(this) {
+public boolean cancel(boolean mayInterruptIfRunning) {
+try {
+CancellableTaskBase.this.cancel();
+} finally {
+return super.cancel(mayInterruptIfRunning);
+}
+}
+};
+}
+}
+

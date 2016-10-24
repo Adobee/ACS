@@ -1,0 +1,9 @@
+* {@inheritDoc}
+*/
+@Override
+public void newRelation(int relatedId) {
+if(relationInfos.contains(relatedId)){
+throw new RuntimeException(&quot;cannot add relation that already exist.&quot;);
+public void newRelation(int relatedId, OrmEntity relationData) {
+if(relationInfos.contains(relatedId)){
+

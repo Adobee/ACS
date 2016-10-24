@@ -1,0 +1,12 @@
+package io.http.rpc.core.serialize;
+
+/**
+* Created by manbu on 7/6/16.
+*/
+public class ProtoSerializeScheme implements SerializeScheme {
+public <T> byte[] serialize(T bean) {
+
+if(bean == null) { return new byte[0]; }
+
+return ProtoSerializeUtils.encode(bean);
+

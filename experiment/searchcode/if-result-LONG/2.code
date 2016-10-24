@@ -1,0 +1,9 @@
+package algdat.arithmetics;
+
+public class Modulo {
+
+public static long exp(long n, long k, long p) {
+long result = 1;
+while (k > 0) {
+if ((k &amp; 1) == 1) {
+

@@ -1,0 +1,11 @@
+//public int maxSubArray(int[] A) {
+//     int l = A.length,max=0;
+//     if(l == 0)
+//    	 return 0;
+//     int [][] array = new int[l][l];
+//    	 		array[i][i] = A[i];
+//    	 		max = max>array[i][i]?max:array[i][i];
+//    	 	}
+//     for(int i=0;i<l;i++)
+//    	 	for(int j=0;j<l;j++)
+

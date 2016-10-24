@@ -1,0 +1,6 @@
+public boolean containsLocation(Location location) {
+int intersectingEdges = 0;
+for (int i = 0; i < border.length; i++) {
+if (vectorsIntersect(border[i], border[(i + 1) % border.length],
+new Coordinate(location.getLatitude(), location.getLongitude())))
+

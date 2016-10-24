@@ -1,0 +1,7 @@
+private static int getIndex(char c) {
+int p = -1;
+for (int i = 0; i < hexDigits.length; i++) {
+if (hexDigits[i] == c) {
+p = i;
+break;
+

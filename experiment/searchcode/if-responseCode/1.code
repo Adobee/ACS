@@ -1,0 +1,12 @@
+public ResponseCode getResponseCode() {
+if (responseCode == null) {
+return ResponseCode.INTERNAL_ERROR;
+}
+return responseCode;
+this.responseCode = responseCode;
+}
+
+public String getMessage() {
+if (message == null) {
+return ResponseCode.INTERNAL_ERROR.getErrorMessage();
+

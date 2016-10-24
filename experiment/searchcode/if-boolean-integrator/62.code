@@ -1,0 +1,10 @@
+public interface IntegratorCallback
+{
+/**
+* Return true if to continue
+*/
+public boolean status(IntegrateExp integrator);
+public static void integrateSingleCell(Lineage lin, /*Imageset*/EvContainer imset, EvChannel ch, String expName, IntegratorCallback cb, boolean useNucleiRadius)
+{
+int numSubDiv = 20;
+

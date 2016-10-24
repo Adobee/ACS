@@ -1,0 +1,7 @@
+public class ArrayQueueADT {
+private int size = 8, head = 0, tail = 0;
+private Object[] elements = new Object[8];
+
+private static void ensureCapacity(ArrayQueueADT queue) {
+if ((queue.tail + 1) % queue.size == queue.head) {
+

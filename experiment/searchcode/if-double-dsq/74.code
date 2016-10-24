@@ -1,0 +1,8 @@
+} else {
+final double dSq = distanceSqFrom(query, tree.data.domain);
+if (results.size() < nResults
+for(int d = 0; d < p1.length; d++) {
+final double dst = p1[d] - p2[d];
+if (dst != 0)
+dSq += dst*dst;
+

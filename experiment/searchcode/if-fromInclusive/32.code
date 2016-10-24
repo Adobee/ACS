@@ -1,0 +1,7 @@
+private V find(List<Entry<K, V>> list, K key, int fromInclusive, int toInclusive) {
+if (fromInclusive > toInclusive) {
+int compare = key.compareTo(middle.getKey());
+
+if (compare < 0) {
+return find(list, key, fromInclusive, middleIndex - 1);
+

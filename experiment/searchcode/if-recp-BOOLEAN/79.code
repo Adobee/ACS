@@ -1,0 +1,7 @@
+// IConnections Interface
+public boolean connect(IUnknown pSinkIntf, String riid, long provConnID) {
+if(riid.toString().equalsIgnoreCase(&quot;Samples.AdderComponent.IAdd&quot;)){
+return m_PSR_IAdd.connectToRecp(pSinkIntf, riid, provConnID);
+}
+else if(riid.toString().equalsIgnoreCase(&quot;Samples.SubtractComponent.ISubtract&quot;)){
+

@@ -1,0 +1,8 @@
+private static final Log log = LogFactory.getLog(AbstractTransportService.class);
+
+public AbstractTransportService(String transportName) {
+if (log.isDebugEnabled()) {
+TransportPersistenceManager transportPM = new TransportPersistenceManager(axisConfig);
+if (listener) {
+transport = axisConfig.getTransportIn(transportName);
+

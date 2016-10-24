@@ -1,0 +1,9 @@
+public void show_V_verify(int c, BigInteger z, boolean accept, double prob) {
+String acc = &quot;FALSE&quot;;
+if (accept)
+public void show_V_verify(int c, BigInteger z, int d, BigInteger t,
+boolean accept1, boolean accept2, double prob) {
+String acc = &quot;FALSE&quot;;
+if (accept1) {
+acc = &quot;TRUE&quot;;
+

@@ -1,0 +1,8 @@
+public String rewrite(final String html, Node node, HstRequestContext requestContext, Mount targetMount) {
+
+// strip off html &amp; body tag
+String rewrittenHtml = getInnerHtml(html);
+if (StringUtils.isEmpty(rewrittenHtml)) {
+int hrefIndexStart = rewrittenHtml.indexOf(HREF_ATTR_NAME, offset);
+if (hrefIndexStart == -1) {
+

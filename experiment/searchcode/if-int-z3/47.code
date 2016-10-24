@@ -1,0 +1,8 @@
+int outcome = getOutcome(t, player);
+if (outcome != Integer.MIN_VALUE) {
+return new int[] { outcome, -1 };
+for (int i = 0; i < 9; i++) {
+if (t[i] == &#39;.&#39;) {
+t[i] = &quot;XO&quot;.charAt(player);
+int v = -dfs(t, 1 - player)[0];
+

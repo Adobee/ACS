@@ -1,0 +1,14 @@
+for(WorkspaceRecord rec: workspaces) {
+if(rec.isAutostart()) {
+
+/* return the first autos-tart workspace */
+if(autoStartWorkspace == null) {
+workspaces.add(new WorkspaceRecord(getWorkspaceName(dir), dir, isAutostart(dir)));
+}
+}
+return workspaces;
+}
+
+private boolean isWorkspace(File path) {
+final File nameFile = new File(path, NAME_FILE);
+

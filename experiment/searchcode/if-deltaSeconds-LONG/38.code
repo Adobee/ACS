@@ -1,0 +1,14 @@
+velocity = new Vector2f(0, 0);
+rotation=0;
+
+x=0.5f; y=0.5f;
+}
+
+public void update(long delta) {
+double deltaSeconds = (delta/1000000000D);
+invulnerableTimer+=deltaSeconds;
+
+if(invulnerableTimer>2){
+invulnerable=false;
+invulnerableTimer=0;
+

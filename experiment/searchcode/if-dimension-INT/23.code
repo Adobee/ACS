@@ -1,0 +1,13 @@
+package Controller;
+
+
+public class Matrix {
+
+private int mDimension;
+
+private int nDimension;
+public Matrix (int mDimension, int nDimension)
+{
+this.setmDimension(mDimension);
+this.setnDimension(nDimension);
+

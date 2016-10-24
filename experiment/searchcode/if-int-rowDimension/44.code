@@ -1,0 +1,12 @@
+* Row dimension.
+*/
+private int rowdimension;
+
+/**
+* Column dimension.
+*/
+private int columndimension;
+columndimension = elements[0].length;
+for(int i = 0; i < rowdimension; i++) {
+if(elements[i].length != columndimension) {
+

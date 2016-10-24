@@ -1,0 +1,11 @@
+import entities.AbstractMoveableEntity;
+
+public class CollisionLine {
+
+double[] v1 = new double[2];
+double[] v2 = new double[2];
+
+public CollisionLine(double x1, double y1, double x2, double y2) {
+this.v1[0] = x1;
+this.v1[1] = y1;
+

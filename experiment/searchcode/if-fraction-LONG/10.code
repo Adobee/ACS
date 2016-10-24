@@ -1,0 +1,9 @@
+if ( super.equals(obj) ) return true;
+
+if ( !(obj instanceof LongFraction) ) return false;
+public int compareTo(LongFraction f) {
+if ( this.equals(f) ) return 0;
+return new Double(this.subtract(f).numer).compareTo(0.0);
+}
+}
+

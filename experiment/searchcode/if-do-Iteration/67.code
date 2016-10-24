@@ -1,0 +1,6 @@
+Iteration it = newIteration(currentIteration, getThreadId());
+if (it != currentIteration || first) {
+// Try to reduce the number of Iteration.setCurrentIteration calls if we
+// can
+currentIteration = it;
+

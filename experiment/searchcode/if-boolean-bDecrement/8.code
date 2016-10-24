@@ -1,0 +1,9 @@
+DrawHintsDialog drawHintsDialog = new DrawHintsDialog();
+hideHints = shPrefs.getBoolean(&quot;hide_draw_hints&quot;, false);
+if (!hideHints) {
+drawHintsDialog.show(fm, &quot;Draw Hint Dialog&quot;);
+public void onProgressChanged(SeekBar seekBar, int progress,
+boolean fromUser) {
+if (seekBar == seekBars[0]) {
+speedMotors[0] = progress;
+

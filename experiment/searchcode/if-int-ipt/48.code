@@ -1,0 +1,8 @@
+public static IptEventType add_(IptEventType... ary) {
+if (ary.length == 0) return IptEventType_.None;
+int newVal = ary[0].Val();
+newVal = Bitmask_.Flip_int(true, newVal, ary[i].Val());
+return getOrNew_(newVal);
+}
+static IptEventType getOrNew_(int v) {
+

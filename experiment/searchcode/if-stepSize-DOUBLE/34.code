@@ -1,0 +1,17 @@
+public abstract class ReinforcementPredictor extends AbstractPredictor {
+
+boolean log = false;
+final double q0;
+final Stepsize stepsize;
+
+Map<Pair<State, Integer>, QValue> q = new HashMap<Pair<State, Integer>, QValue>();
+lastScore = bestPayoff;
+return chosen;
+}
+
+interface Stepsize {
+double alpha(int k);
+}
+
+static public class Average implements Stepsize {
+

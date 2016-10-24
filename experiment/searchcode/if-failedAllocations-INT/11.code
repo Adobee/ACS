@@ -1,0 +1,6 @@
+* Applies the started shards. Note, shards can be called several times within this method.
+* <p>
+* If the same instance of the routing table is returned, then no change has been made.</p>
+UnassignedInfo unassignedInfo = failedShard.shard.unassignedInfo();
+final int failedAllocations = unassignedInfo != null ? unassignedInfo.getNumFailedAllocations() : 0;
+

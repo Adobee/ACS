@@ -1,0 +1,10 @@
+public synchronized void addTask(Task task) {
+if (task != null) {
+queue.add(task);
+}
+}
+// 完成任务后将它从任务队列中删除
+public synchronized void finishTask(Task task) {
+if (task != null) {
+task.setState(Task.State.FINISHED);
+

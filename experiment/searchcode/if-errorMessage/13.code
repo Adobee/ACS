@@ -1,0 +1,11 @@
+private boolean success;
+private Object object;
+private String errorMessage;
+
+protected JsonResult(boolean success, Object object, String errorMessage) {
+return new JsonResult(true, object, null);
+}
+
+public static JsonResult fail(String errorMessage) {
+if(errorMessage.indexOf(&quot;:&quot;)>-1){
+

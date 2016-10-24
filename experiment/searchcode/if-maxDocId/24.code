@@ -1,0 +1,4 @@
+public List<Post> getAllQuestionsPostOfUser(long uid) {
+String contentIfExist = &quot;select post_id,posted_by,post_content,post_type from post&quot;;
+List<Post> posts = jdbcTemplate.query(contentIfExist, new PostRowMapper(), new Object[]{});
+

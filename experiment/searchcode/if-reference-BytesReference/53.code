@@ -1,0 +1,7 @@
+import org.elasticsearch.common.Nullable;
+import org.elasticsearch.common.bytes.BytesReference;
+import org.elasticsearch.common.compress.deflate.DeflateCompressor;
+* Uncompress the provided data, data can be detected as compressed using {@link #isCompressed(BytesReference)}.
+*/
+public static BytesReference uncompressIfNeeded(BytesReference bytes) throws IOException {
+

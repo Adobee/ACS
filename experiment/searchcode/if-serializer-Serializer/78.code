@@ -1,0 +1,9 @@
+return new PropertySerializerMap.Multi(this, new PropertySerializerMap.TypeAndSerializer[] { new PropertySerializerMap.TypeAndSerializer(this._type1, this._serializer1), new PropertySerializerMap.TypeAndSerializer(this._type2, this._serializer2), new PropertySerializerMap.TypeAndSerializer(paramClass, paramJsonSerializer) });
+}
+
+public JsonSerializer<Object> serializerFor(Class<?> paramClass)
+{
+if (paramClass == this._type1) {
+PropertySerializerMap.TypeAndSerializer localTypeAndSerializer = this._entries[i];
+if (localTypeAndSerializer.type == paramClass) {
+

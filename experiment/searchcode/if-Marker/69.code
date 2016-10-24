@@ -1,0 +1,11 @@
+public boolean addMarker(Marker newMarker) {
+if (markers.contains(newMarker)) {
+return false;
+}
+
+markers.add(newMarker);
+marker.getInfoWindowContent() != null);
+markerJSON.append(&quot;,\&quot;draggable\&quot;:&quot;).append(marker.isDraggable());
+
+if (marker.getIconUrl() != null) {
+

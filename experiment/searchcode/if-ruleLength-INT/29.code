@@ -1,0 +1,9 @@
+public double integrate(UnivariateFunction f) {
+final int ruleLength = getNumberOfPoints();
+
+if (ruleLength == 1) {
+return getWeight(0) * f.value(0d);
+}
+
+final int iMax = ruleLength / 2;
+

@@ -1,0 +1,7 @@
+public List<Object> getPaintAllSequence(double clipX, double clipY, double clipW, double clipH)
+{
+Object container = getContainer();
+idPathToStrings.entrySet().stream().forEach(e -> {
+Map<Integer, String> valDiff = putStrings(e.getKey(), e.getValue());
+if (!valDiff.isEmpty())
+

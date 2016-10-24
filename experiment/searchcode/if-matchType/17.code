@@ -1,0 +1,6 @@
+public SimplePropertyCompareCondition(String propertyName, Object value,
+MatchType matchType) {
+if (matchType == MatchType.EQUAL) {
+criterion = Restrictions.eq(propertyName, value);
+} else if (matchType == MatchType.NOT_EQUAL) {
+

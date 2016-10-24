@@ -1,0 +1,11 @@
+* Natural ordering of TokenFrequency is by decreasing frequency.
+*/
+@Override
+public int compareTo(TermFrequency o) {
+long delta = o.frequency - frequency;
+public boolean equals(Object obj) {
+if (this == obj)
+return true;
+if (obj instanceof TermFrequency) {
+return ((TermFrequency) obj).term.equals(term) &amp;&amp; ((TermFrequency) obj).frequency == frequency;
+

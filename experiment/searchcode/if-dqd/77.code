@@ -1,0 +1,10 @@
+resetManager.waitForReset(threadContext);
+
+// See if there is anything on the queue for me
+DocumentDeleteSet dds = documentDeleteQueue.getDocuments();
+while (j < dds.getCount())
+{
+DeleteQueuedDocument dqd = dds.getDocument(j++);
+
+if (dqd.wasProcessed() == false)
+

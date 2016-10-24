@@ -1,0 +1,10 @@
+public class Square implements Shape {
+protected double x;
+protected double y;
+protected double width;
+double width;
+double height;
+
+if (finishX < startX) {
+width = startX - finishX;
+

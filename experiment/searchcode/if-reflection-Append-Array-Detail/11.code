@@ -1,0 +1,9 @@
+else if (value.getClass().isArray())
+{
+if (detail) {
+appendDetail(buffer, fieldName, (Object[])value);
+appendFieldStart(buffer, fieldName);
+if (array == null) {
+appendNullText(buffer, fieldName);
+} else if (isFullDetail(fullDetail)) {
+

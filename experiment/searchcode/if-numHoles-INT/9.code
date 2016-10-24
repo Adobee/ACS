@@ -1,0 +1,8 @@
+public PercolationStats(int N, int T) {
+this.N = N;
+if ((N <= 0) || (T <= 0))
+throw new IllegalArgumentException(&quot;Either N (&quot; + N + &quot;) or T (&quot; + T + &quot;) is invalid (<=0)&quot;);
+private int holesToPercolate(int i, Percolation perc) {
+int numHoles = 0;
+while ((numHoles < i * i) &amp;&amp; (!perc.percolates())) {
+

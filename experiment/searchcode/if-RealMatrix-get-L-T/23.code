@@ -1,0 +1,7 @@
+RealMatrix weight=this.initializeWeights(this.layerSizes.get(i), this.layerSizes.get(i+1));
+RealMatrix bias=this.initializeBias(this.layerSizes.get(i+1));
+dbn.pretraining(X, batch_size);
+
+for(int i=0;i<this.num_sigmoidlayers;i++){
+RealMatrix weight=dbn.getRbmlayers().get(i).getW();
+

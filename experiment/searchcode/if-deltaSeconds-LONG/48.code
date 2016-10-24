@@ -1,0 +1,6 @@
+long deltaMillis = intervalInMillis(this, now);
+long deltaSeconds = TimeUnit.MILLISECONDS.toSeconds(deltaMillis);
+long deltaMinutes = TimeUnit.MILLISECONDS.toMinutes(deltaMillis);
+if (deltaSeconds < 60) {
+return String.format(&quot;%ds&quot;, deltaSeconds);
+

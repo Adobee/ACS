@@ -1,0 +1,15 @@
+public int getNextId() {
+if (ids.size() == upperBound) {
+ids.clear();
+}
+for (;;) {
+int id = randomizer.nextInt(upperBound);
+if (ids.contains(id)) {
+continue;
+}
+ids.add(id);
+return id;
+}
+}
+}
+

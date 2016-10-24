@@ -1,0 +1,10 @@
+public class BooleanDeserializer extends JsonDeserializer<Boolean> {
+@Override
+public Boolean deserialize(
+JsonParser jp,
+final String jpText = jp.getText().trim().toLowerCase();
+if (&quot;0&quot;.equals(jpText)) {
+return false;
+}
+if (&quot;1&quot;.equals(jpText)) {
+

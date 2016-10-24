@@ -1,0 +1,8 @@
+intent.setClassName(&quot;com.android.settings&quot;,&quot;com.android.settings.CredentialInstaller&quot;);
+
+if(cert.mCertType_CACert == true){
+//CA Certificate
+intent.putExtra(CertificateHelper.CA_CERTIFICATE + cert.mInstallName+&quot;CA&quot;,
+CertificateHelper.convertToPem(cert.mCertificate_java_x509));
+}else if(cert.mCertType_UserCert == true) {
+

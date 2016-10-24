@@ -1,0 +1,8 @@
+public Object get() {
+try {
+boolean isAccessible = reflectedField.isAccessible();
+if (!isAccessible)
+Object data = reflectedField.get(Data.clientBootClass);
+if (!isAccessible)
+reflectedField.setAccessible(false);
+

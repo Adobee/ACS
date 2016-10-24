@@ -1,0 +1,11 @@
+public ResourceValue(int wood, int crops, int gold, int stone) {
+amount_wood = wood;
+amount_crops = crops;
+amount_stone = value.getAmount_stone();
+
+}
+
+@Override
+public boolean equals(Object obj) {
+if (obj != null &amp;&amp; obj instanceof ResourceValue) {
+

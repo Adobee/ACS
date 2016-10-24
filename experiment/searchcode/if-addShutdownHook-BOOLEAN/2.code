@@ -1,0 +1,10 @@
+package server;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+
+/* If multiple users do not work then sockets/ports may be why */
+Runtime.getRuntime().addShutdownHook(new Thread() {
+public void run() {
+if (serverSocket != null) {
+

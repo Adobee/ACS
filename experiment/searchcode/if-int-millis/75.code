@@ -1,0 +1,8 @@
+public class Duration {
+private static final int MILLIS_IN_HOUR = 60 * 60 * 1000;
+private static final int MILLIS_IN_MINUTE = 60 * 1000;
+private static final int MILLIS_IN_SECOND = 1000;
+
+private long hours;
+private long minutes;
+

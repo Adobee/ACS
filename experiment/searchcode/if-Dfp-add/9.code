@@ -1,0 +1,11 @@
+this.dfpOrderPage = dfpOrderPage;
+
+try {
+String className = dfpOrderPage.getClass().getName();
+
+if (!(DfpClassUtil.isValidDfpPackage(className) &amp;&amp; className.endsWith(&quot;OrderPage&quot;))) {
+O[] dfpOrders = on(this.dfpOrderPage).call(&quot;getResults&quot;).get();
+
+if (dfpOrders != null) {
+for (O dfpOrder : dfpOrders) {
+

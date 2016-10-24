@@ -1,0 +1,10 @@
+AM830(&quot;8:30am - 10am&quot;), AM10(&quot;10am - 11:30am&quot;), AM1130(&quot;11:30am - 1pm&quot;), PM1(&quot;1pm - 2:30pm&quot;), PM230(&quot;2:30pm - 4pm&quot;), PM4(&quot;4pm - 5:30pm&quot;);
+
+private String readableString;
+
+private Period(String readableString) {
+this.readableString = readableString;
+for(Period period : values()) {
+if (period.readableString.equalsIgnoreCase(readableString)) {
+return period;
+

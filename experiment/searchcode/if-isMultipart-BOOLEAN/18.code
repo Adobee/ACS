@@ -1,0 +1,8 @@
+* 用于过滤百度编辑器上传文件时阻止 commonsMultipartResolver 对文件进行包装
+*/
+@Override
+public boolean isMultipart(javax.servlet.http.HttpServletRequest request) {
+System.out.println(uri);
+//过滤使用百度uEditor的URI
+if (uri.indexOf(&quot;ueditor/load&quot;) > 0 ) {
+

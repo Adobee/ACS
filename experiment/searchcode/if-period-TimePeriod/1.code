@@ -1,0 +1,13 @@
+package com.plenigo.sdk.models;
+
+
+/**
+* Time periods.
+*/
+public enum TimePeriod {
+DAY, WEEK, MONTH, YEAR;
+public static TimePeriod get(String period) {
+TimePeriod selectedPeriod = DAY;
+for (TimePeriod timePeriod : values()) {
+if (timePeriod.name().equals(period.toUpperCase())) {
+

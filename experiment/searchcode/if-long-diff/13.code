@@ -1,0 +1,9 @@
+long diff = (long)x - (long)other.x;
+if(diff < Integer.MIN_VALUE){
+// overflow
+return (int)(diff>>32); // ままキャストすると結局フローするので，上位ビットの値だけ取得.
+}else if(diff!=0){
+return (int)diff;
+}
+diff = (long)y-(long)other.y;
+

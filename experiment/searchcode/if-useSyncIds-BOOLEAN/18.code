@@ -1,0 +1,8 @@
+boolean indexToAllShards = randomBoolean();
+
+if (indexToAllShards) {
+// insert enough docs so all shards will have a doc
+.setPersistentSettings(settingsBuilder().put(BalancedShardsAllocator.SETTING_THRESHOLD, 100.0f)).get();
+boolean useSyncIds = randomBoolean();
+if (useSyncIds == false) {
+

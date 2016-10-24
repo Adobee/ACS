@@ -1,0 +1,9 @@
+public Iterator<ExtendedQuote> iterator() {
+return extendedQuotes.iterator();
+}
+
+public boolean remove(ExtendedQuote extendedQuote) {
+double remainingSize = size;
+for (ExtendedQuote extendedQuote : extendedQuotes) {
+if (extendedQuote.getFillSize() > remainingSize) {
+

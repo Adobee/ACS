@@ -1,0 +1,12 @@
+return this;
+}
+
+@Override
+public void filter(int row, IPipe pipe) {
+if (!excludeZbs.contains(pipe.getIndicator(row))){
+updateZb(row, pipe.getRow(row));
+}
+}
+
+private void updateZb(int row, Double[] zbRow) {
+

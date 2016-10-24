@@ -1,0 +1,12 @@
+boolean removed = posts.remove(new Integer(id));
+
+NzbRowModel row = getRowById(id);
+if(row!=null)
+{
+BasicNameValuePair tbr = null;
+for(BasicNameValuePair pair : parameters)
+{
+if(pair.getName().equals(row.getCheckboxName()))
+{
+tbr = pair;
+

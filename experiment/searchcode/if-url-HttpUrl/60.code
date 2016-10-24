@@ -1,0 +1,8 @@
+String[] splited = line.split(&quot; &quot;);
+httpUrl = splited[1];
+if(httpUrl.equals(&quot;/&quot;)){
+httpUrl = DEFAULT_FILE_PATH;
+httpBody = Files.readAllBytes(new File(&quot;./webapp&quot; + httpUrl).toPath());
+}else{
+if(httpUrl.startsWith(&quot;/main&quot;)){
+

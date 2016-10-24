@@ -1,0 +1,15 @@
+* synchronized(exitLock) {
+*     if (!exitLock.isExiting) {
+*         doSomething();
+*     }
+* }
+* </code>
+*
+* WARN: doesnt save you from kill -9
+public class ExitLock {
+
+private boolean exiting = false;
+
+public ExitLock() {
+Runtime.getRuntime().addShutdownHook(new Thread() {
+

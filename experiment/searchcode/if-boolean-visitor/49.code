@@ -1,0 +1,14 @@
+protected Organism visitor;
+protected boolean hasFood;
+
+public boolean open() {
+return open &amp;&amp; visitor == null;
+}
+
+public abstract Color getColor();
+
+public void move(int x, int y) {
+update();
+
+if(visitor == null) {
+

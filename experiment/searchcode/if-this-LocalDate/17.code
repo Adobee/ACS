@@ -1,0 +1,11 @@
+package sample.code;
+
+import java.time.LocalDate;
+import java.time.Period;
+
+public class Fatura {
+public Integer diasEmAtraso(LocalDate vencimento, LocalDate pagamento) {
+
+if (this.emAtraso(vencimento, pagamento)) {
+return (int) Period.between(vencimento, pagamento).getDays();
+

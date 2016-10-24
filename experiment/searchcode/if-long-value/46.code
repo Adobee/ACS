@@ -1,0 +1,14 @@
+import java.util.stream.LongStream;
+
+public class Ex04 {
+
+public static long maxValue(LongStream longStream) {
+
+if (longStream == null) {
+throw new NullPointerException(&quot;longStream must not be null.&quot;);
+}
+
+LongAccumulator maxValueAccumulator = new LongAccumulator((x, y) -> {
+if (x >= y) {
+return x;
+

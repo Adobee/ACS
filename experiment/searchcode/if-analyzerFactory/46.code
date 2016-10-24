@@ -1,0 +1,7 @@
+import org.fastcatsearch.ir.analysis.AnalyzerFactory;
+import org.fastcatsearch.ir.analysis.DefaultAnalyzerFactory;
+Class<?> analyzerFactoryClass = DynamicClassLoader.loadClass(factoryClassName);
+AnalyzerFactory factory = null;
+if(analyzerFactoryClass == null){
+Class<Analyzer> analyzerClass = (Class<Analyzer>) DynamicClassLoader.loadClass(analyzerClassName);
+

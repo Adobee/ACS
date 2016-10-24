@@ -1,0 +1,13 @@
+int minIterations = 0;
+int maxIterations = 50;
+
+public PojoBuddhabrot(int minIterations, int maxInterations) {
+if (name.equals(&quot;minIterations&quot;)) {
+minIterations = (int) value;
+}
+if (name.equals(&quot;maxIterations&quot;)) {
+maxIterations = (int) value;
+}
+}
+}
+

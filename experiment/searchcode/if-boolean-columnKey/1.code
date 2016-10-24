@@ -1,0 +1,9 @@
+public int get(ColumnKey columnKey) throws AccessImporterException {
+if (!columnMap.containsKey(columnKey)) {
+throw new AccessImporterException(bundle.getString(COLUMN_NOT_FOUND) + columnKey);
+}
+return columnMap.get(columnKey);
+}
+
+public boolean containsKey(ColumnKey columnKey) {
+

@@ -1,0 +1,10 @@
+int ord = in.readVInt();
+for (ZeroTermsQuery zeroTermsQuery : ZeroTermsQuery.values()) {
+if (zeroTermsQuery.ordinal == ord) {
+throw e;
+}
+}
+
+protected Query zeroTermsQuery() {
+if (zeroTermsQuery == DEFAULT_ZERO_TERMS_QUERY) {
+

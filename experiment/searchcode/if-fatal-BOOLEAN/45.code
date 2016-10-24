@@ -1,0 +1,16 @@
+import java.util.Collection;
+
+public class NonFatal implements ExceptionClassifier
+{
+private static final Collection<Class<? extends Throwable>> FATAL_EXCEPTIONS = Arrays.asList(VirtualMachineError.class,
+for (Class<? extends Throwable> fatal : FATAL_EXCEPTIONS)
+{
+if (fatal.isAssignableFrom(t.getClass()))
+{
+return false;
+}
+}
+return true;
+}
+}
+

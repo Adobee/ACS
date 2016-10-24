@@ -1,0 +1,15 @@
+this.value = element;
+}
+
+public void add(ListImpl<T> element){
+if (this.next == null) {
+this.next = element;
+if (oldNext.getPrev()!=element) {
+oldNext.setPrev(element);
+}
+}
+}
+
+public void setPrev(ListImpl<T> element){
+if (this.prev == null) {
+

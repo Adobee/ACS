@@ -1,0 +1,17 @@
+DataInputStream in;
+DataOutputStream ou;
+boolean http10;
+
+uireq(Socket cs)
+{
+s=cs;
+}
+
+public void run()
+{
+http10=true;
+boolean badhost=false;
+try
+{
+in=new DataInputStream (new BufferedInputStream(s.getInputStream()));
+

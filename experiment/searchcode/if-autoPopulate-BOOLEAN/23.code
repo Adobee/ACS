@@ -1,0 +1,13 @@
+public class MDAutoCompleteTextView extends AutoCompleteTextView {
+
+private boolean userChanged;
+
+private DataSetObserver dataSetObserver = new DataSetObserver() {
+public MDAutoCompleteTextView(Context context, AttributeSet attrs, int s) {
+super(context, attrs, s);
+}
+
+@Override
+public boolean enoughToFilter() {
+if( getThreshold() == 0 ) {
+

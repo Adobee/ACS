@@ -1,0 +1,10 @@
+package deadlink;
+
+public final class Sieve {
+public static void calculate(int upperBound) {
+elems[i*j] = false;
+
+int k=0;
+for (k=i+1; k<upperBound; k++)
+if (elems[k])  {
+

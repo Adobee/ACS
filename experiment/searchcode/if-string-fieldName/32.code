@@ -1,0 +1,8 @@
+public void addFieldValue(String fieldName, String value) {
+if (validateFieldValue(fieldName, value))
+fields.put(fieldName, value);
+}
+// 获得一个头部域的值
+public String getValue(String fieldName) {
+return fields.get(fieldName);
+

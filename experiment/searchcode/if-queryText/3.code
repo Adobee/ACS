@@ -1,0 +1,11 @@
+public OrderQueryBuilder findOrderCriteria(final FindOrderCriteria findOrderCriteria)
+{
+queryText = queryText.concat(&quot; WHERE&quot;);
+
+boolean hasConditions = false;
+
+if (findOrderCriteria.getFromDate() != null)
+{
+if (hasConditions)
+queryText = concatAnd(queryText);
+

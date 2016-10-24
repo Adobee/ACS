@@ -1,0 +1,8 @@
+public double extractTemperature(BluetoothGattCharacteristic c) {
+byte[] rawValue = c.getValue();
+double intValue = 0;
+if (rawValue != null) {
+if (rawValue.length > 0)
+intValue = (int) rawValue[0];
+if (rawValue.length > 1)
+

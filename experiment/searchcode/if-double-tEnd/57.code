@@ -1,0 +1,8 @@
+* @return x such that t is between events[x] and events[x+1]
+*/
+private synchronized int findSegment(double t) {
+if (events.size() < 2) {
+public synchronized double timeElapsed(double tStart, double tEnd) {
+// Handle inverted intervals
+if (tEnd < tStart) {
+

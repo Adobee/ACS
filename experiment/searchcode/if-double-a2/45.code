@@ -1,0 +1,9 @@
+return sum;
+}
+
+public static double[] sum(double[] a1, double[] a2) {
+validate(a1, a2);
+private static void validate(double[] a1, double[] a2) {
+if (a1 == null)
+throw new NullPointerException(&quot;first array is null!&quot;);
+

@@ -1,0 +1,8 @@
+String uri = request.getUri();
+int pathEndPos = uri.indexOf(&#39;?&#39;);
+if (pathEndPos < 0) {
+this.path = uri;
+public int contentByteArrayOffset() {
+if (request.getContent().hasArray()) {
+// get the array offset, and the reader index offset within it
+

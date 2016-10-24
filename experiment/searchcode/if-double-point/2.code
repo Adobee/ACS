@@ -1,0 +1,15 @@
+package ntr.ttme;
+
+public class DoublePoint
+{
+public double x;
+public double y;
+
+public DoublePoint()
+y += dy;
+}
+
+public boolean equals( Object obj )
+{
+if (obj instanceof DoublePoint)
+

@@ -1,0 +1,9 @@
+public class Solution {
+public double findMedianSortedArrays(int A[], int B[]) {
+if (A == null || B == null) {
+return (findKth(A, 0, B, 0, len / 2) + findKth(A, 0, B, 0, len / 2 + 1)) / 2.0;
+}
+}
+public int findKth(int[] A, int startA, int[] B, int startB, int k) {
+if (startA >= A.length) {
+

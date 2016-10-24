@@ -1,0 +1,11 @@
+public CellConstraints(ExcelWriteContext context, String sheetName, int startRow,
+int startColumn) {
+this.context = context;
+this.startRow = startRow;
+this.startColumn = startColumn;
+context.setCellStyle(sheetName, startRow, startColumn, style);
+return this;
+}
+
+public CellConstraints setFont(String fontName, int size, boolean bold, boolean italic,
+

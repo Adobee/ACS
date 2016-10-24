@@ -1,0 +1,9 @@
+package ThreadSafety;
+
+public class DoubleCheckedSingleton {
+
+private static DoubleCheckedSingleton singleton=null;
+private static DoubleCheckedSingleton getSingleInstance(){
+if (null==singleton) {
+synchronized(DoubleCheckedSingleton.class){
+

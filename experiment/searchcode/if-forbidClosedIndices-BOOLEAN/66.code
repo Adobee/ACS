@@ -1,0 +1,7 @@
+@Override
+public boolean apply(IndexWarmersMetaData.Entry warmer) {
+if (warmers.length != 0 &amp;&amp; types.length != 0) {
+aliasesOrIndices = convertFromWildcards(aliasesOrIndices, indicesOptions);
+}
+boolean failClosed = indicesOptions.forbidClosedIndices() &amp;&amp; !indicesOptions.ignoreUnavailable();
+

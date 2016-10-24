@@ -1,0 +1,13 @@
+package com.theladders.bankkata.money;
+
+public class AmountComparator {
+public static int compare(int amount, int otherAmount)
+{
+if (amount < otherAmount)
+return -1;
+if (amount == otherAmount)
+return 0;
+return 1;
+}
+}
+

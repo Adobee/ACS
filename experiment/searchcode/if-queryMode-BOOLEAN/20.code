@@ -1,0 +1,11 @@
+throws Exception {
+boolean queryMode = removeQueryMode(parameters);
+
+CMISSessionFacade sessionFacade = new CMISSessionFacade(remaining);
+CMISEndpoint endpoint = new CMISEndpoint(uri, this, sessionFacade);
+endpoint.setQueryMode(queryMode);
+return endpoint;
+}
+
+private boolean removeQueryMode(Map<String, Object> parameters) {
+

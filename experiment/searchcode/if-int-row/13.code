@@ -1,0 +1,6 @@
+public class Solution {
+public List<Integer> getRow(int rowIndex) {
+List<Integer> row = new LinkedList<Integer>();
+for (int i=0; i<=rowIndex; ++i) {
+if (i <= 1) {
+

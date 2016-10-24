@@ -1,0 +1,8 @@
+DoubleBuffer xb = BufferUtils.createDoubleBuffer(1);
+DoubleBuffer yb = BufferUtils.createDoubleBuffer(1);
+glfwGetCursorPos(window, xb, yb);
+double x = xb.get();
+double y = yb.get();
+if (action == GLFW_PRESS) {
+isDragging = true;
+

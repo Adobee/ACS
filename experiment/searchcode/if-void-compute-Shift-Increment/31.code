@@ -1,0 +1,7 @@
+for (int i = 0; i < SNAPSHOT_COUNT; i++) {// compute weighted average
+if (snapshots[i] != null) {
+buffer = (snapshots[i].milliseconds.doubleValue() / snapshots[i].items.doubleValue()) * SNAPSHOT_WEIGHTS[i + 1];
+for (int i = 0; i < SNAPSHOT_COUNT; i++) {// compute weighted average
+if (snapshots[i] != null) {
+result += snapshots[i].items.doubleValue() * SNAPSHOT_WEIGHTS[i + 1];
+

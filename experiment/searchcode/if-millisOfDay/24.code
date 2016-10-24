@@ -1,0 +1,11 @@
+return new DateTime(day).withTimeAtStartOfDay().toDate();
+}
+
+public static Date endOf(Date day) {
+return new DateTime(day).millisOfDay().withMaximumValue().toDate();
+return day.millisOfDay().withMinimumValue();
+}
+
+public static DateTime endOf(DateTime day) {
+return day.millisOfDay().withMaximumValue();
+

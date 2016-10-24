@@ -1,0 +1,16 @@
+public Index(final int x, final int y, final int z) {
+this.x = x;
+this.y = y;
+this.z = z;
+
+if (x < 0 || y < 0 || z < 0) {
+throw new IllegalArgumentException(&quot;Indices must be 0 or greater (&quot; + x + &quot;,&quot; + y + &quot;,&quot; + z + &quot;)&quot;);
+}
+}
+
+public int toArrayLocation(final int dimensionSize) {
+return (x * dimensionSize * dimensionSize + y * dimensionSize + z);
+}
+
+}
+

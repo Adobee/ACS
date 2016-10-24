@@ -1,0 +1,14 @@
+@Override
+public void cycle(){
+if(operation != null &amp;&amp; operation.validate()){
+operation.operate();
+} else {
+for(Operation operation : operations){
+if(operation != null &amp;&amp; operation.validate()){
+invoke(operation);
+}
+}
+}
+}
+}
+

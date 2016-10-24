@@ -1,0 +1,12 @@
+public final class ResultSetUtil {
+
+private ResultSetUtil() {
+}
+
+public static void close(ResultSet resultSet) {
+if (resultSet == null) {
+return;
+}
+try {
+resultSet.close();
+

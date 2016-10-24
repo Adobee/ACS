@@ -1,0 +1,11 @@
+for (int i = 1; i < list.size(); i++) {
+
+int tempIndex = i;
+
+while (list.compare(tempIndex - 1, tempIndex, comparator) > 0) {
+list.swap(tempIndex - 1, tempIndex);
+
+tempIndex--;
+
+if (tempIndex <= 0)
+

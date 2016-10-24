@@ -1,0 +1,9 @@
+package shopping.action;
+
+import net.sourceforge.stripes.action.DefaultHandler;
+import net.sourceforge.stripes.action.RedirectResolution;
+public Resolution logout() {
+if (getCurrentUser() != null) {
+getContext().logout();
+return new RedirectResolution(HomeActionBean.class);
+

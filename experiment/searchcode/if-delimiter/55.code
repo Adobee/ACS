@@ -1,0 +1,16 @@
+private final String delimiter;
+
+public SimpleDelimiter(String delimiter) {
+this.delimiter = delimiter;
+
+if (delimiter == null) {
+for (int i = 0; i < values.length; ++i) {
+
+if (i > 0) {
+buffer.append(delimiter);
+}
+
+Object value = values[i];
+
+if (value == null) {
+

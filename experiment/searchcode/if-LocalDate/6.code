@@ -1,0 +1,9 @@
+@Override
+public LocalDate convertTo(final LocalDate source, final LocalDate destination) {
+
+if (source == null) {
+
+if (source == null) {
+return null;
+}
+

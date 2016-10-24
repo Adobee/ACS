@@ -1,0 +1,16 @@
+return android.view.View.resolveSize(p2, p3);
+}
+
+
+public int a(android.view.View p2)
+{
+return 2;
+}
+
+
+long a()
+public void t(android.view.View p2)
+{
+if ((p2 instanceof gi)) {
+((gi) p2).stopNestedScroll();
+

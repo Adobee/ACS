@@ -1,0 +1,10 @@
+public class SortedSetObjectFactory implements ObjectFactory {
+public Object instantiate(ObjectBinder context, Object value, Type targetType, Class targetClass) {
+} else {
+TreeSet<Object> set = new TreeSet<Object>();
+set.add( context.bind( value ) );
+return set;
+}
+}
+}
+

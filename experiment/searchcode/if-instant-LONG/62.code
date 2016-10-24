@@ -1,0 +1,9 @@
+iType = (type == null ? field.getType() : type);
+}
+
+public int get(long instant) {
+return iField.get(instant);
+}
+public String getAsText(long instant, Locale locale) {
+return iField.getAsText(instant, locale);
+

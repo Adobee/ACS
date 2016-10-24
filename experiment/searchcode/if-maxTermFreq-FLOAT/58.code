@@ -1,0 +1,7 @@
+public TermSuggestionBuilder maxTermFreq(float maxTermFreq) {
+if (maxTermFreq < 0.0f) {
+throw new IllegalArgumentException(&quot;maxTermFreq must be positive&quot;);
+} else if (parseFieldMatcher.match(fieldName, MAX_TERM_FREQ)) {
+suggestion.maxTermFreq(parser.floatValue());
+} else if (parseFieldMatcher.match(fieldName, PREFIX_LENGTH)) {
+

@@ -1,0 +1,7 @@
+public class PaperFold {
+public int numFolds(int[] paper, int[] box) {
+int cnt = numFoldsSolve(paper[0], paper[1], box[0], box[1], 0);
+int numFoldsSolve(double pw, double pl, double bw, double bl, int depth) {
+if (depth > 8) return 9;
+if ((pw <= bw &amp;&amp; pl <= bl) ||
+

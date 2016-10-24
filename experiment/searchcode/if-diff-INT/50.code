@@ -1,0 +1,9 @@
+double diff = (now.getTime() - date.getTime()) / 1000d;
+diff = Math.ceil(diff / 60);
+if (diff < 60) {
+return ((int) diff) + &quot;分钟前&quot;;
+}
+diff = Math.ceil(diff / 60);
+if (diff < 24) {
+return ((int) diff)  + &quot;小时前&quot;;
+

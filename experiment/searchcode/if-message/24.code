@@ -1,0 +1,8 @@
+List<Message> messageList = new ArrayList<Message>();
+for(Message message : getMessageSet()) {
+if(!message.isClaimed()) {
+messageList.add(message);
+}
+}
+if(messageList.size() > 0) {
+

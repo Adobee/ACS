@@ -1,0 +1,11 @@
+br = new BufferedReader(new FileReader(subjectOnlyFile));
+String line;
+int lineId = 1;
+
+while ((line = br.readLine()) != null) {
+//<B15B3B8D-5308-4105-AB33-551D27DE413E@gmail.com>,&#39;Re: Getting started with OpenNLP&#39;,14942f58be07ea82,null,null
+String[] tokens = line.split(&quot;,&quot;);
+int skipIndex = 0;
+String topicClusterId  = null;
+if(tokens.length > 5){
+

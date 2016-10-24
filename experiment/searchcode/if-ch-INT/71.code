@@ -1,0 +1,19 @@
+static void removeDuplicatesAsOrderGiven(char []ch,int n)       //TC=O(N)  SC= O(n)
+{
+int ch1[]=new int[255];
+
+
+for(int i=0;i<n;i++)
+{
+if(ch1[ch[i]]==0)
+ch1[ch[i]]++;
+}
+
+
+for(int i=0;i<n;i++)
+{
+if (ch1[ch[i]]>0)
+
+{
+System.out.print(ch[i]);
+

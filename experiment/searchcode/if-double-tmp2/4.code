@@ -1,0 +1,9 @@
+while (it.hasNext()){
+Object tmp = it.next();
+if (tmp instanceof Fil){
+
+Fil tmp2 = (Fil)tmp;
+if (tmp2.getMTypeC() == typec.BOTTOMLEFT) {
+g2.setColor(Color.RED);
+} else if (tmp2.getMTypeC() == typec.BOTTOMRIGHT) {
+

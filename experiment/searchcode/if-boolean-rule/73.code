@@ -1,0 +1,10 @@
+for (RuleSet ruleSet : ruleSets) {
+if (ruleSet.applies(file)) {
+return true;
+}
+}
+return false;
+public boolean usesTypeResolution(Language language) {
+for (RuleSet ruleSet : ruleSets) {
+if (applies(language, ruleSet.getLanguage()) &amp;&amp; ruleSet.usesTypeResolution()) {
+

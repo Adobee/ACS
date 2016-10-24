@@ -1,0 +1,10 @@
+private int replacementOffset;
+
+private int replacementLength;
+
+private int cursorPosition;
+
+private Def def;
+
+public SimpleCompletionProposal(String replacementString, int replacementOffset, int replacementLength,
+

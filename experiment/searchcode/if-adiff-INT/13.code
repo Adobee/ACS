@@ -1,0 +1,12 @@
+* @author arno
+*/
+public class ADiffElement {
+public enum Kind {
+/**
+* Member attribute changed (to a value or null)
+if (o == null || getClass() != o.getClass()) return false;
+
+ADiffElement that = (ADiffElement) o;
+
+if (isDerived != that.isDerived) return false;
+

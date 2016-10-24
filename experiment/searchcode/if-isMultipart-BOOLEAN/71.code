@@ -1,0 +1,8 @@
+this.excludeUrls = excludeUrls;
+}
+
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+for (String exclude : excludeUrls) {
+if (request.getRequestURL().toString().contains(exclude)) {
+

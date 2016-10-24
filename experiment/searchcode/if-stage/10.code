@@ -1,0 +1,14 @@
+stage += boost;
+
+if (stage > maxStage) {
+boostToMaxStage();
+}
+}
+
+@Override
+public void decreaseStage(int decrease) {
+stage -= decrease;
+
+if (stage < minStage) {
+decreaseToMinStage();
+

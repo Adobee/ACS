@@ -1,0 +1,11 @@
+this.r = r;
+this.T = T;
+this.C = C;
+}
+
+public double getRoot(double sigma_init, double EPSILON){
+double sigma = sigma_init;
+int loops = 0;
+while(Math.abs(y(sigma)) > EPSILON){
+sigma = sigma - y(sigma)/y1(sigma);
+

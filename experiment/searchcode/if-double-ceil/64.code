@@ -1,0 +1,11 @@
+closeCeil.setBasic(clientFundsData.initFunds);
+}
+
+@Override
+public void setValue(double now, double basic) {
+if(basic!=0){
+ErrorLog.log(&quot;设置了多余的参数&quot;,&quot;SpecialTime&quot;,&quot;now:&quot;+now+&quot;,basic:&quot;+basic);
+String str[] = criteria.split(&quot;\\*&quot;);
+this.warningCeil = new WarningCeil(Double.parseDouble(str[1]),
+Integer.parseInt(str[0]), initFunds,-1);
+

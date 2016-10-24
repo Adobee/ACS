@@ -1,0 +1,7 @@
+private final okhttp3.Call.Factory callFactory;
+private final HttpUrl baseUrl;
+private final Map<Method, ServiceMethod> serviceMethodMap = new LinkedHashMap<>();
+Utils.checkNotNull(baseUrl, &quot;baseUrl == null&quot;);
+HttpUrl httpUrl = HttpUrl.parse(baseUrl);
+if (httpUrl == null) {
+

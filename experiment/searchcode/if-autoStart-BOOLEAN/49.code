@@ -1,0 +1,13 @@
+if(name == null)
+return null;
+final boolean autostart = pathToAutostartFlag(path);
+
+return new WorkspaceEntry(name, index, autostart, path);
+} catch (IOException e) { }
+}
+
+}
+
+static boolean pathToAutostartFlag(File path) {
+final File autostartFile = new File(path, &quot;.autostart&quot;);
+

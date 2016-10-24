@@ -1,0 +1,11 @@
+if (null != prefix &amp;&amp; null != pathSegments &amp;&amp; pathSegments.length > 0) {
+String candidate = pathSegments[0];
+if (prefix.getAllowedLocales().contains(candidate)) {
+ret = new LocalePath(pathSegments, null);
+
+return ret;
+}
+
+protected Locale parseLocale(String candidate) {
+if (null == candidate)
+

@@ -1,0 +1,11 @@
+this.entries = entries;
+}
+
+public <T> T get(Key<T> key) {
+final String val = getRaw(key);
+if (val == null) {
+public String getRaw(Key<?> key) {
+return entries.get(key.name);
+}
+}
+

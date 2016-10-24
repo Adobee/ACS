@@ -1,0 +1,17 @@
+return nextQ;
+}
+
+private void setNext(MyPriorityQueue q) {
+nextQ = q;
+}
+
+public void add(Node m) {
+if (nextQ == null) {
+if (n == null) {
+n = m;
+}
+if (m.cost >= n.cost) {
+nextQ.add(m);
+} else {
+MyPriorityQueue newQ = new MyPriorityQueue();
+

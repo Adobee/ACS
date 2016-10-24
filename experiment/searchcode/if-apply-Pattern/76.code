@@ -1,0 +1,10 @@
+public Object caseAfter(AfterPattern p) {
+if (p.getOperand1().isNullable())
+return p.getOperand2();
+else
+return builder.makeNotAllowed();
+}
+
+final private Pattern memoApply(Pattern p) {
+return apply(builder.getPatternMemo(p)).getPattern();
+

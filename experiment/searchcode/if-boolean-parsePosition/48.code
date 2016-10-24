@@ -1,0 +1,6 @@
+public static Number parse(String input, NumberFormat numberFormat, boolean strict) throws ParseException {
+if (input == null) {
+numberFormat.setParseStrict(strict);
+Number number = numberFormat.parse(input, parsePosition);
+if (number == null || parsePosition.getIndex() == 0) {
+

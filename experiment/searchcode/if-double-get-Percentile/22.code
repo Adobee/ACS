@@ -1,0 +1,7 @@
+public abstract class DistributionPercentileBase {
+static Log log=LogFactory.getLog(DistributionPercentileBase.class);
+Map<Double,Double> percentile=new HashMap<Double,Double>();
+percent=1.0*Math.round(percent*100000)/100000;
+if(!percentile.containsKey(percent)){
+log.warn(&quot;Cannot get the Z_alpha value for &quot;+percent);
+

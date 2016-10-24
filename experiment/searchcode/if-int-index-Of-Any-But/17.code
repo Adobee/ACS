@@ -1,0 +1,9 @@
+private int index(int rowIndex, int colIndex) {
+return rowIndex * numberOfColumns + colIndex;
+}
+
+public void set(int rowIndex, int colIndex, double value) {
+int index = index(rowIndex, colIndex);
+if (value == 0.0) {
+matrix.remove(index);
+

@@ -1,0 +1,10 @@
+protected abstract Block getBlock(int blockIndex);
+
+@Override
+public abstract InterleavedBlockEncoding getEncoding();
+
+protected AbstractInterleavedBlock(int columns)
+{
+if (columns < 0) {
+throw new IllegalArgumentException(&quot;Number of blocks in InterleavedBlock must be positive&quot;);
+

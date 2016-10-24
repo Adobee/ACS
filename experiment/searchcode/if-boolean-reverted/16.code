@@ -1,0 +1,10 @@
+return myRevertedPath.size();
+}
+
+public boolean isStaticChain() {
+return myRevertedPath.get(myRevertedPath.size() - 1)[0].hasModifierProperty(PsiModifier.STATIC);
+* checking only method names
+*/
+public boolean weakContains(final MethodsChain otherChain) {
+if (otherChain.myRevertedPath.isEmpty()) {
+

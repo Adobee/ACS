@@ -1,0 +1,8 @@
+double xd = x.doubleValue();
+long ret = (long)Math.ceil(b * Math.log1p(xd) + a);
+if(ret <= 0l) return FAIL;
+return ret;
+if(est.longValue() == FAIL) return est;
+if(est.longValue() < ref.longValue() + getCorrection(ref)) {
+return ref.longValue() + getCorrection(ref);
+

@@ -1,0 +1,7 @@
+public void dfs(int n, int k, int cur, List<Integer> list, List<List<Integer>> ret) {
+if (list.size() == k) {
+ret.add(new ArrayList<Integer>(list));
+return;
+}
+if (cur > n || (n - cur + 1 + list.size() < k)) return;
+

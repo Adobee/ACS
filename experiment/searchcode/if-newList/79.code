@@ -1,0 +1,8 @@
+public boolean isPalindrome(ListNode head) {
+List newList = new ArrayList();
+
+for(ListNode p=head ; p!=null ; p=p.next){
+int len = newList.size();
+for(int i=0 ; i<len/2 ; i++){
+if((int)newList.get(i) != (int)newList.get( (len-1)-i )){
+

@@ -1,0 +1,17 @@
+super();
+this.enumer = enumer;
+}
+
+
+Iterator<E> iter;
+Enumeration<E> enumer;
+
+@Override
+public boolean hasMoreElements() {
+return (iter != null)?iter.next() : enumer.nextElement();
+}
+
+@Override
+public boolean hasNext() {
+return (iter != null)?iter.hasNext() : enumer.hasMoreElements();
+

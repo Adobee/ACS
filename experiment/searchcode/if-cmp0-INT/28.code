@@ -1,0 +1,10 @@
+public BigInteger(byte val[]) {
+this();
+if (val.length == 0)
+throw new NumberFormatException(&quot;val.length == 0&quot;);
+int signum = (val[0] &amp; 128) == 0 ? 1 : -1;
+divisor.setbit0(divisor, 32); // prepare to shift right
+int sign = cmp0(this, ZERO);
+if (sign < 0) {
+copy.sub0(copy, ONE); // adjust two&#39;s complement
+

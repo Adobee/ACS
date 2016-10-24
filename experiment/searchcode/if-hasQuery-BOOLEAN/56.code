@@ -1,0 +1,10 @@
+public boolean hasQuery() {
+// If the name has more than 1 element
+// [path] / [query]
+return size() > 1;
+public String getQuery() {
+if (!hasQuery()) {
+return null;
+}
+return toString(getSuffix(1));
+

@@ -1,0 +1,10 @@
+* under the License.
+*/
+
+package org.elasticsearch.indices.recovery;
+
+import org.apache.lucene.store.IndexOutput;
+public IndexOutput removeOpenIndexOutputs(String name) {
+final ConcurrentMap<String, IndexOutput> outputs = openIndexOutputs;
+if (outputs == null) {
+

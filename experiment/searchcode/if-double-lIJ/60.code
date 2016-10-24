@@ -1,0 +1,10 @@
+for(int j=0;j<trainData[0].length;j++){
+if(nInstances[i]>0){
+meanInstances[i][j]/=(double)nInstances[i];
+double alpha,rjk;
+double tangent,lij;
+int nearestAtt;
+double minDistAtt;
+
+for(int i=0;i<nClasses;i++){
+

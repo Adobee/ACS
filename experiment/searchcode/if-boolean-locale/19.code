@@ -1,0 +1,8 @@
+private static final Logger LOG = LoggerFactory.getLogger(LocaleManager.class);
+
+@PostConstruct
+public void init() {
+setLocaleIfSupported(Locale.getDefault());
+if (!isApplicationLocaleSetted()) {
+setLocale(App.DEFAULT_LOCALE);
+

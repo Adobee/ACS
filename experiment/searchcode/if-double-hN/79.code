@@ -1,0 +1,11 @@
+* @return
+*/
+public Double2D calculateNextPoint(Double2D start, Double2D end, Bag neighbor){
+double w = ((Segment)neighbor.get(0)).w;
+double endy = end.y*h;
+double Fn,Gn,Hn;
+double temp=Double.MAX_VALUE;
+Segment segment = null;
+
+for(int i=0;i<neighbor.size();i++){
+

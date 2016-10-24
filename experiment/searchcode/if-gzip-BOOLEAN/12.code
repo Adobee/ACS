@@ -1,0 +1,10 @@
+Response response = httpHandler.handle(request);
+Response result = response.headers(add(VARY, ACCEPT_ENCODING));
+if (clientAcceptsGZip(request.headers()) &amp;&amp;
+return result.header(CONTENT_ENCODING, GZIP).entity(GZip.gzip(response.entity().toBytes()));
+}
+return result;
+}
+
+public static boolean clientAcceptsGZip(final HeaderParameters headers) {
+

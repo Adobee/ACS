@@ -1,0 +1,10 @@
+set2.clear();
+set3.clear();
+for (int j = 0; j < 9; j++) {
+Character ch = board[i][j];
+if (Character.isDigit(ch)) {
+if (!set1.contains(ch)) {
+set1.add(ch);
+} else {
+return false;
+

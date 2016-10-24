@@ -1,0 +1,9 @@
+public void onLoadFinished(Loader<Cursor> loader, Cursor cursor) {
+if (getActivity() == null) {
+return;
+}
+
+int token = loader.getId();
+Loader<Cursor> loader = getLoaderManager().getLoader(mSessionQueryToken);
+if (loader != null) {
+

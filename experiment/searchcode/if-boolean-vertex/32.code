@@ -1,0 +1,9 @@
+Map<Vertex, Integer> vertex = mAdjacency.get(fromVertex);
+if (vertex == null)
+vertex = new HashMap<Vertex, Integer>();
+vertex.put(toVertex, weight);
+mAdjacency.put(fromVertex, vertex);
+}
+
+public boolean isAdjacent(Vertex fromVertex, Vertex toVertex) {
+

@@ -1,0 +1,8 @@
+final double logm = java.lang.Math.log(denominatorDegreesOfFreedom);
+final double lognxm = java.lang.Math.log((((numeratorDegreesOfFreedom) * x) + (denominatorDegreesOfFreedom)));
+public double cumulativeProbability(double x) throws org.apache.commons.math.MathException {
+double ret;
+if (x <= 0.0) {
+ret = 0.0;
+} else {
+

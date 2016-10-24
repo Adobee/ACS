@@ -1,0 +1,9 @@
+private LinkedList<ChangeEvent> overwrittenObjectsList = new LinkedList<>();
+
+private boolean collectOverwrittenChanges = false;
+
+public int addChange(ChangeEvent change)
+// new change is newer
+Object overwrittenChange = attrTable.put(property, change);
+if(overwrittenChange != null &amp;&amp; collectOverwrittenChanges){
+

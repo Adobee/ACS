@@ -1,0 +1,11 @@
+line = line.substring(0, strLen-1);
+}
+boolean escaping = false;
+int inCurlies = 0;
+for (char currentChar : line.toCharArray())
+switch (currentChar)
+{
+case &#39;*&#39;:
+if (escaping)
+sb.append(&quot;\\*&quot;);
+

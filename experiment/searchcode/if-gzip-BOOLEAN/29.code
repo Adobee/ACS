@@ -1,0 +1,11 @@
+HttpServletRequest httpRequest = (HttpServletRequest) request;
+HttpServletResponse httpResponse = (HttpServletResponse) response;
+if (acceptsGZipEncoding(httpRequest)) {
+chain.doFilter(request, response);
+}
+LOG.info(&quot;Gzip filer ended&quot;);
+
+}
+
+private boolean acceptsGZipEncoding(HttpServletRequest httpRequest) {
+

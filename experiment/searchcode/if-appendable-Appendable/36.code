@@ -1,0 +1,6 @@
+* 	Uses a non-synchronized {@link StringBuilder} by default instead of the
+* 		synchronized {@link StringBuffer}, but also accepts any {@link Appendable}
+public void close() throws IOException{
+if(appendable instanceof Closeable){
+((Closeable)appendable).close();
+

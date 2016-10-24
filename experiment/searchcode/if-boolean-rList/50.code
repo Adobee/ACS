@@ -1,0 +1,15 @@
+endSymbol = &quot; &quot;;
+}
+
+@SuppressWarnings(&quot;unchecked&quot;)
+@Override
+public boolean equals(Object o) {
+if (!(o instanceof ManyNode<?>))
+for (Node n : rList) {
+if (index < n.size())
+return n.nodeAt(index);
+index -= n.size();
+}
+}
+throw new IndexOutOfBoundsException();
+

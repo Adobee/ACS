@@ -1,0 +1,11 @@
+double ymax = 0.4;
+double ymin = 0.5;
+double[] a = {0.1, 0.2, 0.5, 0.4, 0.3, 0.2};
+double[] b = new double[a.length];
+double maxmax = 0;
+
+double p, x;
+
+if (ymin >= ymax)
+throw new RuntimeException(&quot;We will all be killed!!!! ymin >= ymax!!!!&quot;);
+

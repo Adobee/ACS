@@ -1,0 +1,8 @@
+private static String getEncodedHost(String host, String userInfo, String charset, EncodeInfo[] specials) {
+
+if (TextUtils.isEmpty(host)) {
+return null;
+// encode
+String encodedPathSegment = URLEncoder.encode(pathSegment, charset);
+if (TextUtils.isEmpty(encodedPathSegment)) {
+

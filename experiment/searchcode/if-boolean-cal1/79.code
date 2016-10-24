@@ -1,0 +1,11 @@
+switch (event._type) {
+case opening:
+today = new Date ();
+if (sameDate (today, _date) || today.after (_date)) {
+cal1.add (Calendar.DAY_OF_MONTH, days);
+
+_date = cal1.getTime ();
+}
+
+private static boolean sameDate (Date date1, Date date2) {
+

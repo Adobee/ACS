@@ -1,0 +1,10 @@
+package biz.shujutech.db.relational;
+
+import java.sql.Connection;
+
+public class FieldInt extends Field {
+private Integer valueInteger;
+
+public FieldInt(String aName) {
+this.setFieldName(aName);
+

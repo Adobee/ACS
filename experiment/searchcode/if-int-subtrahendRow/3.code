@@ -1,0 +1,12 @@
+for (int row = 0; row < this.resolution; row++) {
+subtrahendRow.add( 0.0);
+
+for (int column = 0; column < this.resolution; column++) {
+this.uMatrix.get( row).set( column, Double.valueOf( this.aMatrix.get( row).get( column)) );
+subtrahendRow.set( index, this.uMatrix.get( column).get( index));
+}
+
+initial = subtrahendRow.get( column);
+
+for (int row = column + 1; row < this.resolution; row++) {
+

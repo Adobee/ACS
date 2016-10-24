@@ -1,0 +1,12 @@
+private final List<Integer> versions;
+
+public JavaVersion(String version) {
+versions = new ArrayList<>();
+Scanner s = new Scanner(version).useDelimiter(&quot;[^\\d]+&quot;);
+versions.add(s.nextInt());
+}
+}
+
+@Override public int compareTo(JavaVersion o) {
+List<Integer> versions2 = o.versions;
+

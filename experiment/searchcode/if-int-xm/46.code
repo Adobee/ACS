@@ -1,0 +1,12 @@
+if(!isUsersUpToDate()){
+updateUsers();
+}
+}
+
+private boolean isConfigUpToDate(){
+
+if(!xm.getConfig().isSet(&quot;ConfigVersion&quot;)){
+String[] allUsers = getAllUsersOnFile();
+for(int i = 0; i < allUsers.length; i++){
+if(xm.getUsers().get().isSet(&quot;users.&quot; + allUsers[i] + &quot;.group&quot;)){
+

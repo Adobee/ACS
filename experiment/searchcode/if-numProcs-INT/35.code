@@ -1,0 +1,7 @@
+public TByteShortHashMap(TByteShortMap map, int numProcs) {
+super(map.size());
+if (map instanceof TByteShortHashMap) {
+/** {@inheritDoc} */
+public boolean equalsPar (Object other, int numProcs)	{
+if (!((other instanceof TByteShortMap)||(other instanceof Map<?,?>)))	{
+

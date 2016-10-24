@@ -1,0 +1,11 @@
+public ContainsText(String expected)
+{
+if (expected == null)
+throw new IllegalArgumentException(&quot;expected cannot be null&quot;);
+_expected = expected;
+}
+
+public boolean eval(Element e)
+{
+return e.getTextTrim()!=null &amp;&amp; e.getTextTrim().contains(_expected);
+

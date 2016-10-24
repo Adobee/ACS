@@ -1,0 +1,9 @@
+public Protocol(ProtocolHeader protocolHeader, String content) {
+if (content.equals(null) || content.length() == 0) {
+throw new IllegalArgumentException(&quot;content can not be empty&quot;);
+protocol.setProtocolHeader(protocolHeader);
+return protocol;
+}
+public static Protocol createTypeB(String content){
+if (content.equals(null) || content.length() == 0) {
+

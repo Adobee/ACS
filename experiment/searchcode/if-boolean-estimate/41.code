@@ -1,0 +1,11 @@
+return (SiteEstimate) session.get(SiteEstimate.class, siteEstimateId);
+}
+
+public boolean createSiteEstimate(SiteEstimate siteEstimate) {
+Session session = this.sessionFactory.getCurrentSession();
+session.persist(siteEstimate);
+return true;
+}
+
+public boolean updateSiteEstimate(SiteEstimate siteEstimate) {
+

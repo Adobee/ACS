@@ -1,0 +1,6 @@
+Editor newEditor = MIDDialogUtils.selectModelTypeToCreate(instanceMID);
+Model modelType = MIDTypeRegistry.getType(newEditor.getMetatype().getModelUri());
+Model newModel = modelType.createInstance(newEditor.getModelUri(), instanceMID);
+String[] constraint = MIDDialogUtils.getConstraintInput(&quot;Create new light model type&quot;, null);
+if (!MIDConstraintChecker.checkConstraintConsistency(modelType, constraint[0], constraint[1])) {
+

@@ -1,0 +1,8 @@
+this.application = application;
+this.gson = gson;
+this.diskLruCache = DiskLruCache.open(application.getCacheDir(), APP_VERSION, VALUE_COUNT, MAX_SIZE);
+public void cacheSchedule(Schedule schedule) {
+try {
+if (diskLruCache.isClosed()) {
+diskLruCache = DiskLruCache.open(application.getCacheDir(), APP_VERSION, VALUE_COUNT, MAX_SIZE);
+

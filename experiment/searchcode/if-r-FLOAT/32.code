@@ -1,0 +1,9 @@
+public static float easeIn(float t, float b, float c, float d) {
+if (t == 0) return b;
+if ((t /= d) == 1) return b + c;
+public static float easeIn(float t, float b, float c, float d, float a, float p) {
+float s;
+if (t == 0) return b;
+if ((t /= d) == 1) return b + c;
+if (a < Math.abs(c)) {
+

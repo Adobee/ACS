@@ -1,0 +1,15 @@
+package com.sise.service.imp;
+
+import java.util.List;
+
+import com.sise.dao.imp.ProblemDao;
+import com.sise.pojo.Problem;
+return (Problem) problemDao.query(&quot;From Problem p where p.problemId=&quot;+id).get(0);
+}
+
+/**
+* 根据ID查看问题是否存在
+*/
+public boolean existProblem(String id){
+if(0 == problemDao.query(&quot;From Problem p where p.problemId=&quot;+id).size()){
+

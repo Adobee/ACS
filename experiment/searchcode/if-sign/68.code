@@ -1,0 +1,8 @@
+public class MultiThread extends Thread{
+private SignInfo signInfo;
+public MultiThread(SignInfo _signInfo){
+public void run(){
+//判断特殊值，检查线程是否安全
+if(!signInfo.getID().equals(signInfo.getLocation())){
+System.out.println(&quot;编号:&quot;+signInfo.getID());
+

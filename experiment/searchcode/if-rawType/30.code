@@ -1,0 +1,6 @@
+Class<?> rawType = type instanceof ParameterizedType ? (Class)((ParameterizedType) type).getRawType() : (Class) type;
+if (rawType == String.class)
+return DEFAULT_STRING;
+if (rawType == Boolean.TYPE || rawType == Boolean.class)
+return DEFAULT_BOOLEAN;
+

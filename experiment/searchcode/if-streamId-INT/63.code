@@ -1,0 +1,7 @@
+public class MessageOutputStream implements Closeable {
+private int streamId;
+private WaspOutputStream output;
+private MultiSignByteBuffer buffer;
+
+public MessageOutputStream(int streamId, WaspOutputStream output, FeatureRepository features, int maxMessageSize) {
+

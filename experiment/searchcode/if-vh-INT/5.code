@@ -1,0 +1,11 @@
+protected InternalDistributedMember member;
+
+int originalBitSetWidth = RegionVersionHolder.BIT_SET_WIDTH;
+
+@Override
+protected void setUp() throws Exception {
+protected void recordVersions(RegionVersionHolder vh, BitSet bs) {
+//    System.out.println(&quot;vh=&quot;+vh);
+for(int i =1; i < bs.length(); i++) {
+if(bs.get(i)) {
+

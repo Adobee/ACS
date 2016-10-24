@@ -1,0 +1,7 @@
+throw new EOFException(&quot;unexpected end of file in utf-8 character&quot;);
+else if ((ch2 &amp; 0xc0) != 0x80) {
+log.fine(&quot;utf-8 character conversion error for &#39;{0}&#39; because second byte is invalid at &quot;
+throw new EOFException(&quot;unexpected end of file in utf-8 character&quot;);
+else if ((ch4 &amp; 0xc0) != 0x80)
+throw new CharConversionException(&quot;illegal utf-8 encoding at 0x&quot;
+

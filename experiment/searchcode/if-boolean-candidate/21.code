@@ -1,0 +1,10 @@
+public int findCelebrity(int n) {
+/**
+* The first pass is to pick out the candidate.
+* If candidate knows i, then switch candidate.
+* The second pass is to check whether the candidate is real.
+*/
+int candidate = 0;
+for (int i = 1; i < n; i++) {
+if (knows(candidate, i)) candidate = i;
+

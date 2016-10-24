@@ -1,0 +1,10 @@
+ShapeName annotation = shapeClass.getAnnotation(ShapeName.class);
+if (annotation == null) {
+return;
+}
+
+classes.put(annotation.value(), shapeClass);
+Class<? extends Shape> clazz = classes.get(type);
+if (clazz == null) {
+while (reader.peek() != JsonToken.END_OBJECT) {
+

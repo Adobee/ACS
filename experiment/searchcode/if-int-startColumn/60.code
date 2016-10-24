@@ -1,0 +1,8 @@
+for (int i = 0; i < tiles.length; i++) { // row
+for (int j = 0; j < tiles[0].length; j++) { // column
+if (i - 2 >= 0 &amp;&amp; i - 2 < 7 &amp;&amp; j - 1 >= 0 &amp;&amp; j - 1 < 7) {
+int startRow = i;
+int startColumn = j;
+if (run(startRow, startColumn) == 49) {
+// if (dijkstraRun(startRow, startColumn) == 49) {
+

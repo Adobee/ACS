@@ -1,0 +1,16 @@
+package leetcode;
+
+public class Maximum_Subarray {
+public int maxSubArray(int[] x) {
+if (x == null || x.length == 0)
+sum = x[i];
+}
+
+if (sum > max) {
+max = sum;
+}
+
+}
+
+// for (int i = 0; i < x.length; i++) {
+

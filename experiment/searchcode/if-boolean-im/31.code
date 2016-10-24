@@ -1,0 +1,12 @@
+package poo.complex;
+
+import poo.util.Mat;
+
+public class Complex {
+private double re, im;
+public Complex(double re, double im) {
+return String.format(&quot;%1.2f &quot;, re) + ( im > 0 ? &quot;+ j&quot; + String.format(&quot;%1.2f&quot;, im) : &quot;- j&quot; + String.format(&quot;%1.2f&quot;, -im) );
+} // toString
+public boolean equals(Object obj) {
+if (this == obj) return true; // Stesso riferimento -> Stesso oggetto
+

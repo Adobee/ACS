@@ -1,0 +1,7 @@
+Neighbor[] neighbors = new Neighbor[getK()];
+
+for (int i = 0; i < data.length; i++) {
+double newDistance = data[i].distance(toClassify);
+if (i < getK()) {
+neighbors[i] = new Neighbor(data[i], newDistance);
+

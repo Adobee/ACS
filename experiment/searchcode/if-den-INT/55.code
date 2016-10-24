@@ -1,0 +1,21 @@
+* and open the template in the editor.
+*/
+
+package numerics;
+
+/**
+*
+* @author blue
+*/
+public class Rational {
+
+int num;
+int den;
+
+public Rational(int n) {
+num = n;
+den = 1;
+}
+
+public Rational(int n, int d) {
+

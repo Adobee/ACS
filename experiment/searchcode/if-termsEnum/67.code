@@ -1,0 +1,7 @@
+import org.apache.lucene.index.MultiFields;
+import org.apache.lucene.index.Terms;
+import org.apache.lucene.index.TermsEnum;
+Terms terms = MultiFields.getTerms(reader, TemporaryClusterIndexer.FIELD);
+if (terms != null) {
+termsEnum = terms.iterator(null);
+

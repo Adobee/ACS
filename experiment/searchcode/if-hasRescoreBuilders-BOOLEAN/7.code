@@ -1,0 +1,10 @@
+} else if (context.parseFieldMatcher().match(currentFieldName, EXPLAIN_FIELD)) {
+builder.explain = parser.booleanValue();
+} else if (context.parseFieldMatcher().match(currentFieldName, TRACK_SCORES_FIELD)) {
+return Objects.hash(fieldName, script, ignoreFailure);
+}
+
+@Override
+public boolean equals(Object obj) {
+if (obj == null) {
+

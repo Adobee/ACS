@@ -1,0 +1,8 @@
+public static InsideOutsideFunc create(int stateBits, int attributeBits) {
+int total_bits = stateBits + attributeBits;
+
+if (total_bits < 9) {
+return new ByteStoredInsideOutsideFunc(stateBits, attributeBits);
+} else if (total_bits < 17) {
+return new ShortStoredInsideOutsideFunc(stateBits, attributeBits);
+

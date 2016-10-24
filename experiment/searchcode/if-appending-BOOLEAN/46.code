@@ -1,0 +1,8 @@
+class AppendingStream<T> extends AbstractStream<T> {
+
+private StreamI<T> _prefix;
+private StreamI<T> _suffix;
+//      StreamI<T> rest = _prefix.rest();
+return new AppendingStream<T>(_prefix.rest(), _suffix);
+//      if(rest.isEmpty()){
+

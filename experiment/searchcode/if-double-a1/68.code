@@ -1,0 +1,7 @@
+public boolean solve(double2 result, double c1,double c2)
+{
+double D = a1*b2 - a2*b1;
+if ( Math.abs(D) > Double.MIN_NORMAL )
+{
+if ( Math.abs(a1) > Double.MIN_NORMAL )
+

@@ -1,0 +1,14 @@
+m_nBufferSize=bufferSize;
+m_nUsedBufLength=0;
+buffer=new char[m_nBufferSize];
+if(path!=&quot;&quot;)
+{
+openFile(path,openMode);
+}
+}
+void openFile(String path,String openMode)
+{
+//path=&quot;./root/&quot;+path;
+if(path==&quot;&quot;)
+throw IOException(&quot;文件名为空.&quot;);
+

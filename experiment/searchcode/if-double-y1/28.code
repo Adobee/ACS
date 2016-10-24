@@ -1,0 +1,14 @@
+public class rectangle extends shape {
+protected double X1;
+protected double Y1;
+
+public rectangle()
+{
+X0 = 0;
+public rectangle(double nX0, double nY0, double nX1, double nY1)
+{
+if (nX0 > nX1)
+{
+X0 = nX1;
+X1 = nX0;
+

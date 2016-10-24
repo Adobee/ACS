@@ -1,0 +1,10 @@
+PlaceNoRepReader prReader = new PlaceNoRepReader(parentDir);
+
+int docCount = 0;
+Iterator<PlaceRepDoc> iter = prReader.iterator();
+
+long then = System.nanoTime();
+while (iter.hasNext()) {
+docCount++;
+PlaceRepDoc prDoc = iter.next();
+

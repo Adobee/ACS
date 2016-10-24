@@ -1,0 +1,9 @@
+* This test is important to check if we test against the
+* correct lp_solve version.
+*/
+public void testVersion() throws Exception {
+File file = new File(filename);
+if (file.exists()) file.delete();
+
+LpSolve problem = setupProblem();
+

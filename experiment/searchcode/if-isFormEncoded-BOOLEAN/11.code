@@ -1,0 +1,12 @@
+public OauthTokenResponse token(Request request, Response response)
+{
+OauthTokenRequest tr = null;
+
+if (isFormEncoded(request))
+return null;
+}
+
+private boolean isFormEncoded(Request request)
+{
+String contentType = request.getHeader(HttpHeaders.Names.CONTENT_TYPE);
+

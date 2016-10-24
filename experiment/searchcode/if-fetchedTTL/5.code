@@ -1,0 +1,7 @@
+protected boolean retryOnFailure(Throwable e) {
+e = ExceptionsHelper.unwrapCause(e);
+if (e instanceof IllegalIndexShardStateException) {
+fetchedTTL = ctx.get(&quot;_ttl&quot;);
+if (fetchedTTL != null) {
+if (fetchedTTL instanceof Number) {
+

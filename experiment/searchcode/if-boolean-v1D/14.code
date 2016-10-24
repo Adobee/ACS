@@ -1,0 +1,7 @@
+Vector3D v1D = line.intersection(subLine.line);
+if (v1D == null) {
+return null;
+Location loc2 = subLine.remainingRegion.checkPoint((Point<Euclidean1D>) subLine.line.toSubSpace((Point<Euclidean3D>) v1D));
+
+if (includeEndPoints) {
+

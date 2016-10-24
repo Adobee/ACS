@@ -1,0 +1,12 @@
+if (region instanceof AtlasRegion) {
+AtlasRegion region = (AtlasRegion)this.region;
+if (region.rotate) {
+localX += region.offsetX / region.originalWidth * width;
+vertices[V1] = region.getV2();
+}
+updateOffset();
+}
+
+public TextureRegion getRegion () {
+if (region == null) throw new IllegalStateException(&quot;Region has not been set: &quot; + this);
+

@@ -1,0 +1,8 @@
+private String encodedName;
+
+public QueryParamInjector(Class type, Type genericType, AccessibleObject target, String paramName, String defaultValue, boolean encode, Annotation[] annotations, ResteasyProviderFactory factory)
+if (encode)
+{
+List<String> list = request.getUri().getQueryParameters(false).get(encodedName);
+return extractValues(list);
+

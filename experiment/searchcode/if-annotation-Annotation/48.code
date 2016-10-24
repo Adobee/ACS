@@ -1,0 +1,7 @@
+public static <A extends Annotation> A findAnnotation(Class<?> clazz, Class<A> annotationType) {
+A annotation = clazz.getAnnotation(annotationType);
+if (annotation != null) {
+for (Class<?> ifc : clazz.getInterfaces()) {
+annotation = findAnnotation(ifc, annotationType);
+if (annotation != null) {
+

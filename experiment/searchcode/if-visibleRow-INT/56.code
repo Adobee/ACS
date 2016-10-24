@@ -1,0 +1,10 @@
+ValueAxis rangeAxis, CategoryDataset dataset, int row, int column,
+boolean selected, int pass) {
+
+int visibleRow = state.getVisibleSeriesIndex(row);
+if (visibleRow < 0) {
+return;
+}
+
+if (!(dataset instanceof StatisticalCategoryDataset)) {
+

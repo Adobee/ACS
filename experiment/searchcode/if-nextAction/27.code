@@ -1,0 +1,9 @@
+private float timeToShow;
+private float y;
+public DisplayDialogueEndAction(World world,String text,Action nextAction)
+world.displayText(text,timeToShow,y);
+running = true;
+if(nextAction!= null)
+{
+new AddActionToRoom(world, new TimerAction(world, timeToShow, nextAction)).run();
+

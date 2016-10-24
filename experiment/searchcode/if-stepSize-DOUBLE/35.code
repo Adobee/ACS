@@ -1,0 +1,7 @@
+logger.setLevel(opts.logLevel);
+double stepSize = opts.initialStepSize;
+final IPair<Double,double[]> initPair = fn.computeAt(initial);
+final double[] guess = DoubleArrays.addMultiples(initial, 1.0, direction, stepSize);
+final double curVal = fn.computeAt(guess).getFirst();
+final double targetVal = initVal + opts.sufficientDecreaseConstant * directDeriv * stepSize;
+

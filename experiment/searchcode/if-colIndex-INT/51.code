@@ -1,0 +1,9 @@
+public class RowComparator implements Comparator<Row> {
+
+private int[] columnOrders;
+public RowComparator(int[] columnOrders){
+public int compare(Row row1, Row row2) {
+for(int colIndex=0;colIndex<columnOrders.length;colIndex++){
+
+if(row1.getValue(columnOrders[colIndex]).compareTo(row2.getValue(columnOrders[colIndex]))==0)
+

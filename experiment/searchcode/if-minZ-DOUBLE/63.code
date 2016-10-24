@@ -1,0 +1,13 @@
+public final double maxY, midY, minY;
+public final double maxZ, midZ, minZ;
+
+
+public Bound(Face face){
+super();
+this.midY = (minY + maxY)/2.0;
+this.midZ = (minZ + maxZ)/2.0;
+}
+public Bound(Mesh solid){
+super();
+double maxX = 0, minX = 0, maxY = 0, minY = 0, maxZ = 0, minZ = 0;
+

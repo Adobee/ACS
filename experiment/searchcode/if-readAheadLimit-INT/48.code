@@ -1,0 +1,7 @@
+protected int mark = -1;
+protected int readAheadLimit = -1;
+
+protected void checkReadAheadLimit() throws IOException{
+if(mark != -1 &amp;&amp; readAheadLimit != -1){
+if(position() - mark > readAheadLimit) throw new ReadAheadException();
+

@@ -1,0 +1,17 @@
+public class PState
+{
+/**
+* Current scope
+*/
+private Scope scope;
+
+/**
+* Sets the current scope to a new scope
+* @param thisAsParent
+*/
+public void createNewScope(boolean thisAsParent)
+{
+if (thisAsParent)
+{
+setScope(new Scope(this.scope, this.getScope().getenv() + &quot;+&quot;));
+

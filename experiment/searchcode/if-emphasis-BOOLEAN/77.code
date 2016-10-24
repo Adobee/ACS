@@ -1,0 +1,9 @@
+public ProgramCheckPoints(Program program, int errorCode, boolean isFromEmphasis) {
+this.errorCode = errorCode;
+if (program != null) {
+this.name = program.GetName();
+this.clusterName = (program.GetCluster()) == null ? null : program.GetCluster().GetName();
+
+if (!isFromEmphasis)
+this.emphaseCheckPoints = (program.GetEmphases()) == null ? null
+

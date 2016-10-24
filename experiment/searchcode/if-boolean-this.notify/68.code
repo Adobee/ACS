@@ -1,0 +1,8 @@
+StringBuffer conditions = new StringBuffer(&quot; 1 = 1 &quot;);
+//消息类型
+if(notifyVO != null &amp;&amp; !notifyVO.getType().equals(&quot;-1&quot;)){
+conditions.append(&quot; AND notify.type=&#39;&quot;).append(notifyVO.getType()).append(&quot;&#39;&quot;);
+}
+//发送起始时间
+if(notifyVO != null &amp;&amp; notifyVO.getStartDate() != null &amp;&amp; !notifyVO.getStartDate().equals(&quot;&quot;)){
+

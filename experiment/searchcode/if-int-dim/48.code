@@ -1,0 +1,11 @@
+public static final int DIM = 4;
+
+protected float[] m = new float[DIM * DIM];
+
+public BaseMatrix() {
+this.one();
+for (int i = 0; i < DIM; i++) {
+for (int j = 0; j < DIM; j++) {
+if (i == j) {
+m[i * DIM + j] = 1.0f;
+

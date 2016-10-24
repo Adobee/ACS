@@ -1,0 +1,9 @@
+public AbstractDistanceScoreFunction(double userSuppiedScale, double decay, double offset, DecayFunction func, MultiValueMode mode) {
+super(CombineFunction.MULT);
+this.mode = mode;
+if (userSuppiedScale <= 0.0) {
+this.scale = func.processScale(userSuppiedScale, decay);
+this.func = func;
+if (offset < 0.0d) {
+throw new IllegalArgumentException(FunctionScoreQueryParser.NAME + &quot; : offset must be > 0.0&quot;);
+

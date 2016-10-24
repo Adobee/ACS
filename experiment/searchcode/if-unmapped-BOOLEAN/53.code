@@ -1,0 +1,6 @@
+protected FilterConcatIntermediateFiles writeUnmapped(boolean isFinalUnmapped, boolean suppressSam, boolean unfiltered) throws IOException {
+try (UnmappedSamAlignmentWriter unmappedNoPositionSamWriter = new UnmappedSamAlignmentWriter(mParams.outputParams().tempFilesDirectory(), mSharedResources.getHeader())) {
+if (!unfiltered) {
+if (mPaired) {
+unmappedSamRecordFactory.setAugmenterInfo(mAugmenterMerger, mStatsMerger);
+

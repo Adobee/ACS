@@ -1,0 +1,8 @@
+public class LocalContextReadWriteStrategy implements ReadWriteStrategy {
+
+private static InheritableThreadLocal<Boolean> forceMaster = new InheritableThreadLocal<Boolean>();
+
+@Override
+public boolean shouldReadFromMaster() {
+Boolean shouldReadFromMaster = forceMaster.get();
+

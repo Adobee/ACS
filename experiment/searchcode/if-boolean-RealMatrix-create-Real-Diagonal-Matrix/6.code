@@ -1,0 +1,8 @@
+public static double[] weighted(double[][] x, double[]y, double[] weights, boolean intercept) {
+RealMatrix predictor;
+if (intercept) {
+int nRows = x.length;
+int nCols = x[0].length + 1;
+RealVector responseVector = MatrixUtils.createRealVector(y);
+RealMatrix weightsMatrix = MatrixUtils.createRealDiagonalMatrix(weights);
+

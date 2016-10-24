@@ -1,0 +1,14 @@
+Tile currentT = getLeastScoreTile(openList);
+
+if(currentT.cost > range)
+break;
+
+if(currentT.x == target.x &amp;&amp; currentT.y == target.y) {
+wayMap[currentT.x][currentT.y] = way;
+return true;
+}
+
+closedList.add(currentT);
+
+if(!(current.x == currentT.x &amp;&amp; current.y == currentT.y) &amp;&amp; zoc[currentT.y][currentT.x])
+

@@ -1,0 +1,5 @@
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+public class IptBnd_ {
+public static void msg_(IptCfg cfg, IptBndsOwner box, String bndKey, GfoMsg m, IptArg... ipt) {bld_(cfg, box, GfoInvkAble_.as_(box), bndKey, m, ipt);}
+

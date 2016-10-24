@@ -1,0 +1,6 @@
+.filter(r -> r.getGeneration() >= minGeneration)
+.mapToInt(BaseTranslogReader::totalOperations)
+.filter(r -> r.getGeneration() >= minGeneration)
+.mapToLong(BaseTranslogReader::sizeInBytes)
+.sum();
+

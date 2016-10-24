@@ -1,0 +1,11 @@
+public static Float[] iskontovemasraflar(int iskno, Float tutar, int isk1uygulama, Float isk1yuzde, int isk2uygulama, Float isk2yuzde, int isk3uygulama, Float isk3yuzde)
+{
+Float[] result = new Float[4];
+
+int[] uygulama = { isk1uygulama, isk2uygulama, isk3uygulama };
+for (int i = 0; i < iskno; i++)
+{
+if(uygulama[i] == 0)
+{
+result[i] = tutar * yuzde[i] / 100;
+

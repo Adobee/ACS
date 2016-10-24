@@ -1,0 +1,10 @@
+private int slop = MatchQuery.DEFAULT_PHRASE_SLOP;
+
+private int maxExpansions = FuzzyQuery.defaultMaxExpansions;
+
+public MatchPhrasePrefixQueryBuilder(String fieldName, Object value) {
+* The number of term expansions to use.
+*/
+public MatchPhrasePrefixQueryBuilder maxExpansions(int maxExpansions) {
+if (maxExpansions < 0) {
+

@@ -1,0 +1,10 @@
+import org.apache.commons.math3.linear.RealMatrix;
+import org.apache.commons.math3.linear.RealVector;
+
+public class Hmm {
+private RealMatrix E;
+@SuppressWarnings(&quot;deprecation&quot;)
+public RealVector smooth(int[] obs, int k){
+if ( k >= obs.length - 1 ){
+throw new RuntimeException(&quot; invalid argument k&quot;);
+

@@ -1,0 +1,10 @@
+GUIDUtil guidGenerator = new GUIDUtil();
+String guidValue = guidGenerator.setGUID(null);
+
+public void onBeforeInsert() {
+if (this.getID() == null || this.getID().equals(&quot;&quot;)) {
+queryText.append(&quot;and CODE like &#39;%&quot;).append(code).append(&quot;%&#39; &quot;);
+}
+if(desc!=null &amp;&amp; !desc.trim().equals(&quot;&quot;)){
+queryText.append(&quot;and DESCRIPTION like &#39;%&quot;).append(desc).append(&quot;%&#39; &quot;);
+

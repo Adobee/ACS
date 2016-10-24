@@ -1,0 +1,10 @@
+return ValueNotFound;
+}
+
+int highest_index = local_values.length - 1;
+
+if (keyIndex < highest_index)
+rc = visitor.visit(local_keys[keyIndex], local_values[keyIndex]);
+
+if (rc == IntLongVisitorIF.CONTINUE)
+

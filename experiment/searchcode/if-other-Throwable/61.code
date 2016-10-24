@@ -1,0 +1,6 @@
+* {@link Throwable} associated to it which matches the given one. This matcher is the negation of {@link LoggingEventHasThrowable#hasThrowable(Throwable)}.
+* It is recommended to use this specific matcher instead of just combining the other matcher with {@link org.hamcrest.CoreMatchers#not(Matcher)} because of
+protected boolean internalMatches(final ILoggingEvent event) {
+final IThrowableProxy throwableProxy = event.getThrowableProxy();
+if (throwableProxy == null || throwable == null) {
+

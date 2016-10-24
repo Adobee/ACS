@@ -1,0 +1,10 @@
+public class IMMScanLite {
+
+public static void main(String[] args) {
+if(args.length < 2) {
+System.out.println(&quot;usage: <start ip> <end ip> [use https] [timeout second] [threads num]\n&quot;
+String endIp = args[1];
+boolean useHttps = true;
+if(args.length > 2)
+useHttps = Boolean.parseBoolean(args[2]);
+

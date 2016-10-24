@@ -1,0 +1,7 @@
+public String crop(String uri) {
+String uriPrefix = getUriPrefix();
+if (uri.startsWith(uriPrefix)) {
+uriPrefix = getSecondaryUriPrefix();
+if (uri.startsWith(uriPrefix)) {
+return uri.substring(uriPrefix.length());
+

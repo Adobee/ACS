@@ -1,0 +1,12 @@
+protected String name;
+protected long expireAfterWrite;
+protected long expireAfterAccess;
+private AtomicLong hits = new AtomicLong(), misses = new AtomicLong();
+@Override
+public long getExpireAfterWrite() {
+return expireAfterWrite;
+}
+
+@Override
+public long getExpireAfterAccess() {
+

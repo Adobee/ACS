@@ -1,0 +1,10 @@
+package com.github.ksouf.bankaccountkata.domain;
+
+
+public enum OperationType {
+
+DEPOSIT(&quot;DEPOSIT&quot;),
+public static OperationType findByOperationName(String operationName) {
+for (OperationType operation : OperationType.values()) {
+if (operation.operationName.equals(operationName)) {
+

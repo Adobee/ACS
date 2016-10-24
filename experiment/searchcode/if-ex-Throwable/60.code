@@ -1,0 +1,9 @@
+log.debug(String.format(message, args), (Throwable) args[args.length - 1]);
+}
+} else {
+if (args.length > 1)
+message = String.format(message, args);
+
+Throwable ex = (Throwable) args[args.length - 1];
+
+

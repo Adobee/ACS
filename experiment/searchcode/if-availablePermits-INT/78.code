@@ -1,0 +1,10 @@
+public void set() {
+synchronized (mutex) {
+if (event.availablePermits() == 0)
+event.release();
+public void waitOne() throws InterruptedException {
+event.acquire();
+}
+
+public boolean waitOne(int timeout, TimeUnit unit) throws InterruptedException {
+

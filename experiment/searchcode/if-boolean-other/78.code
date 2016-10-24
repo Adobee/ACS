@@ -1,0 +1,13 @@
+result = prime * result + (value ? 1231 : 1237);
+return result;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj)
+if (getClass() != obj.getClass())
+return false;
+KsonBoolean other = (KsonBoolean) obj;
+if (value != other.value)
+return false;
+

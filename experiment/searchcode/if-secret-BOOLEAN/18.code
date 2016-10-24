@@ -1,0 +1,8 @@
+Status state = Status.unknown();
+HashedSecret hashedSecret = secretRepository.findSecret(secret.getIdentifier());
+boolean revalidate = secret.getMySecret() == null? false:true;
+Status state = Status.unknown();
+boolean result = secretRepository.clear(secret.getIdentifier());
+
+if(!result) {
+

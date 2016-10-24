@@ -1,0 +1,8 @@
+public MenuButton(PApplet parent, float x, float y, float width, int fontSize, String title, ButtonListener listener) {
+super(parent, x, y, width, fontSize, title, listener);
+public void draw() {
+
+if (mouseOver()) {
+fontColor = p.color(255,255,255);
+fontSize = PApplet.round(defaultFontSize * 1.2f);
+

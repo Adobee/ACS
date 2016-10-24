@@ -1,0 +1,13 @@
+public Optional<Long> getTotalBytes() {
+return totalBytes;
+}
+
+public void addDownloadedBytes(long add) {
+if (add < 0 || (totalBytes.isPresent() &amp;&amp; totalBytes.get() < downloadedBytes + add))
+public void resetDownloadedBytes() {
+downloadedBytes = 0;
+}
+
+public void setTotalBytes(long val) {
+if (val < downloadedBytes)
+

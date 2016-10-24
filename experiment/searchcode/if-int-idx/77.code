@@ -1,0 +1,9 @@
+class FindMinimumInRotatedSortedArray {
+public int findMin(int[] nums) {
+if( null == nums || nums.length == 0 )
+return 0;
+
+int leftIdx = 0;
+int rightIdx = nums.length - 1;
+int midIdx = 0;
+

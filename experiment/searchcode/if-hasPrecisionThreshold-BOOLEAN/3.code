@@ -1,0 +1,7 @@
+super(in, InternalCardinality.TYPE, ValuesSourceType.ANY);
+if (in.readBoolean()) {
+precisionThreshold = in.readLong();
+protected void innerWriteTo(StreamOutput out) throws IOException {
+boolean hasPrecisionThreshold = precisionThreshold != null;
+out.writeBoolean(hasPrecisionThreshold);
+

@@ -1,0 +1,7 @@
+public class Sets {
+private Sets() {}
+
+public static <T> Set<T> union(Iterable<? extends Iterable<? extends T>> iterables) {
+Set<T> unionSet = new HashSet<T>();
+for (Iterable<? extends T> iterable : iterables) {
+

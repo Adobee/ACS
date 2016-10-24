@@ -1,0 +1,5 @@
+// TODO VMa : MalformedURLException is being caught but not re-thrown here (SimpleParser is depending on it being thrown)
+public static String makeUrl(URL baseUrl, String relativeUrl) throws MalformedURLException {
+// that the Java URL class knows about.
+if (IGNORED_PROTOCOL_PATTERN.matcher(relativeUrl).find()) {
+

@@ -1,0 +1,8 @@
+System.out.println(&quot;f(b_&quot; +  (c-1) + &quot;) = f(&quot; + d.format(bk) + &quot;) = &quot; + d.format(f(bk)) + &quot;\\\\ f(a_ &quot; + (c-1) + &quot;) = f(&quot; + d.format(ak) + &quot;) = &quot; + d.format(f(ak)) + &quot;\\\\ f(b_&quot; + (c-2) + &quot;) = f(&quot; + d.format(bk1) + &quot;) = &quot; + d.format(f(bk1)));
+if (f(bk) != f(ak) &amp;&amp; f(bk1) != f(ak) &amp;&amp; f(bk) != f(bk1)) {
+s = secant(bk, ak);
+}
+
+double bknext = 0.0;
+if (bounds(ak, bk, bk1, c, s)) {
+

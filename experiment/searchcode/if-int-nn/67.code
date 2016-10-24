@@ -1,0 +1,10 @@
+Arrays.fill(DT[i], (int)1e9);
+if (C[i] <= kk) DT[0][C[i]] = 1;
+}
+
+for (int i = 1; i < nn; i++) {
+for (int k = 0; k <= kk; k++) {
+for (int j = 0; j < nn; j++) {
+DT[i][k] = Math.min(DT[i-1][k], DT[i][k]);
+if (k - C[j] >= 0) {
+

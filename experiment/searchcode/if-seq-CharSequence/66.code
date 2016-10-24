@@ -1,0 +1,8 @@
+public String toString() {
+StringBuilder sb = new StringBuilder();
+for (CharSequence seq : sequences.values()) {
+int endOfSubSeq = (end < endOfChunk ? end : endOfChunk) - startOfChunk;
+
+if (startOfSubSeq == 0 &amp;&amp; endOfSubSeq == charSequence.length()) {
+result.append(charSequence);
+

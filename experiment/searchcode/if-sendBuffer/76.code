@@ -1,0 +1,7 @@
+public static ThreadGroupLocal<DatagramBuffer> sendBuffer;
+
+public static DatagramBuffer getSentBuffer(){
+if(sendBuffer == null){
+sendBuffer = new ThreadGroupLocal<DatagramBuffer>(){
+public DatagramBuffer initialValue(){
+

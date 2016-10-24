@@ -1,0 +1,7 @@
+for (int ii = 0; ii < fitOrder; ++ii)
+{
+vecElemCont = yData[im] * xPow(xNorm(xData[im]), ii) / ((double) numDataPts);
+if (sigma != null) vecElemCont = vecElemCont / (sigma[im] * sigma[im]);
+matElemCont = xPow(xNorm(xData[im]), ii) * xPow(xNorm(xData[im]), ij) / ((double) numDataPts);
+if (sigma != null) matElemCont = matElemCont / (sigma[im] * sigma[im]);
+

@@ -1,0 +1,9 @@
+this.successRatio = successRatio;
+}
+
+@Override
+protected Result check() throws Exception {
+double ratio = successRatio.getValue();
+if (ratio >= 0.2) {
+return Result.healthy(&quot;Success ratio is %s&quot;, ratio);
+

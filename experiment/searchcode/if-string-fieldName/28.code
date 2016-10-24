@@ -1,0 +1,8 @@
+private Object setValue() throws Exception {
+String field = getString(&quot;fieldname&quot;);
+String val = getString(&quot;value&quot;);
+grabMetadata().set(field, val);
+return val;
+}
+public String getFieldname() { return fieldname; }
+

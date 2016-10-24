@@ -1,0 +1,16 @@
+package br.usp.ime.genealogy.util;
+
+public enum Similarity {
+
+EQUAL(1.00f),
+HIGH (0.94f),
+LOW  (0.87f),
+public static Similarity getSimilarity(float f) {
+for (Similarity s : Similarity.values()) {
+if(f >= s.getSimilarity())
+return s;
+}
+return NONE;
+}
+}
+

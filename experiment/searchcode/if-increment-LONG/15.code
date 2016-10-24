@@ -1,0 +1,11 @@
+private long current;
+private long increment;
+
+public IncrementalSeries() {
+this.current = 0;
+this.increment = 1;
+public IncrementalSeries(final long base, final long increment) {
+this(base);
+if(increment < 0) {
+throw new IllegalArgumentException(&quot;The increment parameter must&quot;
+

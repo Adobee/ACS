@@ -1,0 +1,4 @@
+/* 312:    */   private static void computeStringConstants(int highPrecisionDecimalDigits)
+/* 313:    */   {
+/* 314:578 */     if ((sqr2String == null) || (sqr2String.length() < highPrecisionDecimalDigits - 3))
+

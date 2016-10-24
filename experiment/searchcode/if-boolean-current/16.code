@@ -1,0 +1,6 @@
+operators.add(current);
+if(current instanceof UnaryBooleanOperator) {
+toInspect.add(((UnaryBooleanOperator<T>)current).getOperand());
+} else if(current instanceof BinaryBooleanOperator) {
+toInspect.add(((BinaryBooleanOperator<T>)current).getOperand1());
+

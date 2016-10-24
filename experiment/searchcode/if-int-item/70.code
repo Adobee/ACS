@@ -1,0 +1,12 @@
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+
+int[] item = new int[25];
+
+for (int i = 0; i < item.length; i++) {
+for (int j = 0; j < item.length-1-i; j++) {
+if (item[j]>item[j+1]) {
+
+int temp = item[j];
+item[j]=item[j+1];
+

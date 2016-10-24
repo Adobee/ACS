@@ -1,0 +1,11 @@
+public void configure() throws Exception {
+logger.info(&quot;starting configure...&quot;);
+if(!envProperties.camelRouteFeed()) {
+.process(e -> socialRepository.arriveFeed(e.getIn().getHeader(&quot;TsFeed&quot;, Feed.class), e.getIn().getBody(SyndFeed.class)));
+});
+}
+
+private boolean feedHasQuery(Feed feed) {
+boolean hasQuery = false;
+try {
+

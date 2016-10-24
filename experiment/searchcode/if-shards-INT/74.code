@@ -1,0 +1,12 @@
+this.hashAlgo = hashAlgo;
+}
+
+@Override
+public void setShards(List<Shard> shards) {
+if (shards == null || shards.isEmpty())
+this.shards = shards;
+if (shards.size() > 1) {
+nodes = new TreeMap<Long, Shard>();
+Shard shard;
+String key;
+

@@ -1,0 +1,5 @@
+stringBuilder.append(largeSquare);
+if (square != null) stringBuilder.append(String.format(&quot;%02d&quot;, square));
+if (quadrant != null) stringBuilder.append(quadrant);
+if (quadrantHundredth != null) stringBuilder.append(String.format(&quot;%02d&quot;, quadrantHundredth));
+

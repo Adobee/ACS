@@ -1,0 +1,8 @@
+int digitNum = digits.length;
+for (int j = 1; j < (1 << digitNum); j++) {
+boolean replaced[] = decode(digitNum, j);
+for (int k = 0; k < digitNum; k++) {
+if (replaced[k]) {
+if (replacement == -1) {
+replacement = digits[k];
+

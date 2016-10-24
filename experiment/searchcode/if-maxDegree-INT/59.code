@@ -1,0 +1,15 @@
+return adj[v].size();
+}
+
+/*
+* 计算所有顶点的最大度数
+*/
+public int maxDegree(Graph G) {
+int maxDegree = 0;
+for (int i = 0; i < G.V(); i++) {
+if (adj[i].size() > maxDegree) {
+maxDegree = adj[i].size();
+}
+}
+return maxDegree;
+

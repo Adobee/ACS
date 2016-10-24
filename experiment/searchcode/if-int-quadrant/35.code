@@ -1,0 +1,9 @@
+/* Write a static method called quadrant that takes as parameters a pair of real numbers representing an (x, y) point and that returns the quadrant number for that point. Recall that quadrants are numbered as integers from 1 to 4 with the upper-right quadrant numbered 1 and the subsequent quadrants numbered in a counter-clockwise fashion:
+quadrant(-2.3, 3.5) 	2
+quadrant(-15.2, -3.1) 	3
+quadrant(4.5, -42.0) 	4
+quadrant(0.0, 3.14) 	0
+*/
+
+public static int quadrant(double x, double y) {
+

@@ -1,0 +1,7 @@
+categoryIndex[i] = containsKeyCategories.get(i).getSelectedNormalMeals().size() + 1 + categoryIndex[i - 1];
+int k = 0;
+for (int i = 0; i < size; i++) {
+if (i < categoryIndex[k]) mealToCategoryIndex[i] = k;
+public int getCategoryIdFromMealPosition(int position) {
+for (int i = 0; i < categoryIndex.length; i++) if (position < categoryIndex[i]) return containsKeyCategories.get(i).getId();
+

@@ -1,0 +1,12 @@
+public interface Precondition{
+public boolean met();
+public boolean notMet();
+public void enforce(); //Throws RuntimeException if notMet() returns true;
+_objects = objects;
+}
+@Override
+public boolean met() {
+
+for(Object obj : _objects){
+if(obj == null){
+

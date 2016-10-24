@@ -1,0 +1,7 @@
+public static final String KEY_PREFIX = &quot;REC:&quot;;
+
+public Recipe(String[] rawData) {
+if (super.isValidRawDataRow(rawData)) {
+//have to decode name twice --- suspect import.io extract is encoding it twice
+String encodedName = url.substring(url.lastIndexOf(&quot;/&quot;) + 1, url.length());
+

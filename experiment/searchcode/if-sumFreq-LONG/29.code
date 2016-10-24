@@ -1,0 +1,9 @@
+obj = Long.valueOf(((Integer) v).longValue());
+}
+try {
+Long count = freqTable.get(obj);
+if (count == null) {
+public double getPct(Comparable<?> v) {
+final long sumFreq = getSumFreq();
+if (sumFreq == 0) {
+

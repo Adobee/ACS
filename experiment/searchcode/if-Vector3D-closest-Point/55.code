@@ -1,0 +1,10 @@
+private Vector3D direction;
+/** Line point closest to the origin. */
+private Vector3D zero;
+/** Tolerance below which points are considered identical. */
+* @return point of the instance closest to another line
+*/
+public Vector3D closestPoint(final Line line) {
+
+final double cos = direction.dotProduct(line.direction);
+

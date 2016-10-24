@@ -1,0 +1,9 @@
+/** Default amount of error to accept in floating point comparisons (as ulps). */
+private static final int DEFAULT_ULPS = 10;
+
+/** Serializable version identifier. */
+* @param divisor value of the divisor
+*/
+protected void divideRow(final int dividendRow, final double divisor) {
+for (int j = 0; j < getWidth(); j++) {
+

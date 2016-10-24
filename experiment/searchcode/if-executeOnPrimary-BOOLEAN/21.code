@@ -1,0 +1,8 @@
+boolean timeout = randomBoolean();
+if (timeout) {
+request.timeout(&quot;0s&quot;);
+} else {
+// whether shard has been marked as relocated already (i.e. relocation completed)
+if (primaryShard.relocating() &amp;&amp; randomBoolean()) {
+isRelocated.set(true);
+

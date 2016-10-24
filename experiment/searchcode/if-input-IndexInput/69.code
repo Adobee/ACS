@@ -1,0 +1,9 @@
+&quot;The substitution models between which the Selector selects&quot;, new ArrayList<SubstitutionModel>(),
+Validate.REQUIRED);
+
+public Input<IntegerParameter> indexInput = new Input<IntegerParameter>(&quot;index&quot;, &quot;model selection indices&quot;,
+@Override
+public void initAndValidate() {
+Integer nModels = modelsInput.get().size();
+if (nModels < indexInput.get().getValue()) {
+

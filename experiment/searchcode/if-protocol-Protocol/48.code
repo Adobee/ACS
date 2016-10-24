@@ -1,0 +1,6 @@
+public static void registerProtocol(ActionProtocol protocol) {
+if(protocol == null || protocol.protocol == null || protocol.protocol.isEmpty()) {
+throw new IllegalArgumentException(&quot;Protocol must be defined and must not have an empty protocol identifier.&quot;);
+}
+if(protocols.containsKey(protocol.protocol)) {
+

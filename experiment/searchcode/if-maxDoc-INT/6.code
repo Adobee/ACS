@@ -1,0 +1,9 @@
+public class TestBitDocIdSetBuilder extends LuceneTestCase {
+
+private static DocIdSet randomSet(int maxDoc, int numDocs) {
+FixedBitSet set = new FixedBitSet(maxDoc);
+while (true) {
+final int docID = random().nextInt(maxDoc);
+if (set.get(docID) == false) {
+set.set(docID);
+

@@ -1,0 +1,8 @@
+private long periodCount;
+private int limit;
+private int acquireCount;
+private int lastCallsPerPeriod;
+public TimedSemaphore(ScheduledExecutorService service, long timePeriod, TimeUnit timeUnit, int limit)
+{
+if (timePeriod <= 0L) {
+

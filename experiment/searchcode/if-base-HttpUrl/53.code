@@ -1,0 +1,9 @@
+public String get(String path, Map<String, String> params) {
+try {
+HttpURL httpURL = new HttpURL(baseUrl() + path);
+HttpMethod getMethod = methodFor(httpURL, params);
+
+populateEtagIfRequired(getMethod, httpURL);
+
+int returnCode = client.executeMethod(getMethod);
+

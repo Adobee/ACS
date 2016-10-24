@@ -1,0 +1,10 @@
+private final SignificantTermsAggregatorFactory termsAggFactory;
+protected long shardMinDocCount;
+
+@Override
+public void collect(int doc, long owningBucketOrdinal) throws IOException {
+spare.updateScore();
+
+spare.bucketOrd = i;
+if (spare.subsetDf >= shardMinDocCount) {
+

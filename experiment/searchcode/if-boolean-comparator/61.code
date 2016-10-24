@@ -1,0 +1,9 @@
+public static ComparatorChain getPaperComparator(String sort,
+String oType) {
+
+// Determine the order (will apply to the first comparator).
+boolean mainOrder = false; // true = asc; false = desc
+ComparatorChain comparator = new ComparatorChain();
+if (sort.equalsIgnoreCase(SORT_DATE)) {
+comparator.addComparator(Paper.dateComparator, mainOrder);
+

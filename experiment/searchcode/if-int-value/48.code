@@ -1,0 +1,10 @@
+public class SimulatedCAS {
+
+private int value;
+
+public SimulatedCAS(int value){
+this.value = value;
+public synchronized int compareAndSwap(int expectedValue,int newValue){
+int oldValue = value;
+if(oldValue == expectedValue){
+

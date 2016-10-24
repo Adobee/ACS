@@ -1,0 +1,8 @@
+public void testGetRootPaths() throws IOException {
+boolean useCustomDataPath = randomBoolean();
+final Settings indexSettings;
+.put(IndexMetaData.SETTING_VERSION_CREATED, Version.CURRENT);
+final Path customPath;
+if (useCustomDataPath) {
+final Path path = createTempDir();
+

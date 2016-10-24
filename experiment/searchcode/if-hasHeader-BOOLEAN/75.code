@@ -1,0 +1,10 @@
+String outputCSVFilePath;
+boolean hasHeader=false;
+
+@Override
+public void parseArguments(String commandString, String[] argumentsArray) throws Exception {
+for (int i = 0; i < argumentsArray.length; i++) {
+String arg = argumentsArray[i];
+if(&quot;-i&quot;.equals(arg)){
+arg=argumentsArray[++i];
+

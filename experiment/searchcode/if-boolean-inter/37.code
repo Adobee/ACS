@@ -1,0 +1,8 @@
+InterFaceByIdResponseDto dto = new InterFaceByIdResponseDto();
+if (interFaceInfo != null) {
+InterFaceSysTem interFaceSysTem= DomainFactory.getInstance().getDomain(InterFaceSysTem.class);
+interFaceInfo.setIfCreateBy(user.getId());
+}
+interFaceInfo.setIfCreateTime(new Timestamp((new Date()).getTime()));
+boolean flag = interFaceService.addInterFace(interFaceInfo);
+

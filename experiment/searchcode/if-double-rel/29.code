@@ -1,0 +1,10 @@
+public IconWrapper(VectorIcon vi, double x, double y, double scl) {
+icon = vi;
+xRel = x;
+yRel = y;
+scale = scl;
+if (icon == null) {
+public void instruct(Painter p, double cx, double cy, double pscl) {
+if (icon != null) {
+icon.instruct(p, cx + pscl * xRel, cy + pscl * yRel, pscl * scale);
+

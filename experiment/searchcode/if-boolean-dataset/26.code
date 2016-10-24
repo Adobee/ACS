@@ -1,0 +1,6 @@
+for (Dataset dataset : Application.getActiveApplication().getActiveDatasets()) {
+if (dataset instanceof DatasetGrid || dataset instanceof DatasetImage || dataset instanceof DatasetImageCollection || dataset instanceof DatasetGridCollection) {
+List<Dataset> datasetClosed = DatasetUIUtilities.sureDatasetClosed(datasets);
+//			((DatasetImageCollection) datasetClosed.get(0)).buildPyramid();
+if (datasetClosed.size() > 0) {
+

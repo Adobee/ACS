@@ -1,0 +1,9 @@
+//return didIMakeGroup(ctx);
+}
+
+public boolean canIRemoveThisMember(Context ctx, long userId){
+// see if the user is even in the group first
+if (isFetchingGroups == null)
+isFetchingGroups = new ExpiringValue<Boolean>(50f, false, false, false);
+if(isFetchingGroups.getValue())
+

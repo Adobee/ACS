@@ -1,0 +1,11 @@
+double delta, snorm, one = 1.0;
+double alpha, f, fnew, prered, actred, gs;
+int search = 1, iter = 1;
+double[] s = new double[n];
+fun_obj.grad(w, g);
+delta = euclideanNorm(g);
+double gnorm1 = delta;
+double gnorm = gnorm1;
+
+if (gnorm <= eps * gnorm1) {
+

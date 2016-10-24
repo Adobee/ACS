@@ -1,0 +1,7 @@
+public static String getFieldTypeName(FieldType fieldType) {
+String type = CoreProperties.getString(&quot;String_FieldType_Unknown&quot;);
+try {
+if (fieldType == FieldType.BOOLEAN) {
+type = CoreProperties.getString(CoreProperties.Boolean);
+} else if (fieldType == FieldType.DATETIME) {
+

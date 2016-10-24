@@ -1,0 +1,9 @@
+protected final HttpServletResponse response;
+protected boolean hasParams;
+protected boolean firstpath;
+
+public URLBuilder(HttpServletRequest request, HttpServletResponse response, String encoding) {
+public URLBuilder path(String value) {
+if (hasParams) {
+throw new IllegalArgumentException(&quot;Path element can&#39;t come after query parameters&quot;);
+

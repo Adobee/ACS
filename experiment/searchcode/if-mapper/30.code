@@ -1,0 +1,18 @@
+import com.gy.mapper.gyp_app.Mapper;
+public class MapperMgr {
+@Autowired
+private Mapper mapper;
+public synchronized static MapperMgr getInstance(){
+if(single == null){
+single = new MapperMgr();
+}
+return single;
+}
+
+public Mapper getMapper(){
+return mapper;
+}
+
+
+}
+

@@ -1,0 +1,11 @@
+import android.net.NetworkInfo;
+
+
+public class NetworkData {
+public static final int INVALID = -1;
+public boolean connected;  // Really connected, not just connecting.
+public boolean wifi;  // Otherwise probably mobile.
+public boolean roaming;  // Making telecoms rich.
+
+public NetworkData(NetworkInfo activeNetwork) {
+

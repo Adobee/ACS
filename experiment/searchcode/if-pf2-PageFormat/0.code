@@ -1,0 +1,10 @@
+Paper p = pf0.getPaper();
+p.setImageableArea(0, 0,pf0.getWidth(), pf0.getHeight());
+pf1.setPaper(p);
+PageFormat pf2 = printJob.validatePage(pf1);
+printJob.validatePage(pageFormat);
+describePageFormat(pageFormat);
+
+if (printJob.printDialog()) {
+log.info(&quot;Solicitud para imprimir archivo &quot; + fileToPrint.getAbsolutePath()
+

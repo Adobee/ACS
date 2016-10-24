@@ -1,0 +1,11 @@
+public Vector3 normalize()
+{
+float length = length();
+if (length > 0)
+length = 1.0f / length;
+return new Vector3(x * length, y * length, z * length);
+return new Vector3(Math.max(l.x, r.x), Math.max(l.y, r.y), Math.max(l.z, r.z));
+}
+
+public static boolean equals(Vector3 l, Vector3 r)
+

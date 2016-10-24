@@ -1,0 +1,11 @@
+* @param value  the initial value to store
+*/
+public MutableObject(T value) {
+super();
+this.value = value;
+if (this == obj) {
+return true;
+}
+if (this.getClass() == obj.getClass()) {
+MutableObject<?> that = (MutableObject<?>) obj;
+

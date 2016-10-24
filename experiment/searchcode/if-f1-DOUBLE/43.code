@@ -1,0 +1,7 @@
+f2 = new Fraction(numerator, denominator);
+
+if (!f1.equals(zero) &amp;&amp; !f2.equals(zero))
+System.out.println();
+
+System.out.println(&quot;f1.toDouble() = &quot; + f1.toDouble()
+

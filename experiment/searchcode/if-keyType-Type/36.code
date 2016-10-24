@@ -1,0 +1,13 @@
+public static <KeyType> List<KeyType> keyArray(HashMap<KeyType,Object> map)
+{
+List<KeyType> keys=new ArrayList<KeyType>();
+for(KeyType object:map.keySet())
+{
+if(object!=null)
+for(KeyType key:map.keySet())
+if(map.get(key)==object)
+return key;
+return null;
+}
+public static <KeyType,ValueType> HashMap<KeyType,ValueType> clone(HashMap<KeyType,ValueType> map)
+

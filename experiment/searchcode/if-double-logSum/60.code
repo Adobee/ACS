@@ -1,0 +1,13 @@
+public static double nvl(Double x, double defaultVal) {
+if (x == null)
+return defaultVal;
+else
+return x;
+}
+
+static final double LOGSUM_THRESHOLD = 745.0;
+if (ly == Double.NEGATIVE_INFINITY) return lx;
+double d = lx - ly;
+if (d >= 0) {
+if (d > LOGSUM_THRESHOLD) return lx;
+

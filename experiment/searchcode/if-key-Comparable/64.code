@@ -1,0 +1,7 @@
+public static <K extends Comparable<?>> WrappedComparableKey<K> newWrappedKey(
+K key) {
+if (key instanceof Boolean) {
+return (WrappedComparableKey<K>) new BooleanKey((Boolean) key);
+}
+else if (key instanceof Byte) {
+

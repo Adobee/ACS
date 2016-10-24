@@ -1,0 +1,9 @@
+private String queryText;
+
+public FocuseCrawlerCall(final String queryText) {
+this.queryText = queryText;
+String url = focusedCrawlerURL + &quot;?&amp;query=&quot; + queryText;
+int responseCode = con.sendGet(url);
+if (responseCode != 200) {
+LOG_LINKEDTV.warn(&quot;Response code: &quot; + responseCode + &quot; for url: &quot; + url);
+

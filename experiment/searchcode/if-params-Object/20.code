@@ -1,0 +1,15 @@
+tmpParams[i] = ((FuncFactory)params[i]).getTmpReturnObject();
+}
+else
+{
+tmpParams[i] = params[i];
+}
+}
+
+if(!function.chkParamType(tmpParams)) throw new Exception(&quot;The Function &#39;&quot;+function+&quot;&#39; is not applicable for the parameters&quot;);
+if(function == null) return null;
+
+if(function == Function.FORMAT)
+{
+Object[] tmpParams = new Object[params.length - 1];
+

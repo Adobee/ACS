@@ -1,0 +1,18 @@
+private Map<Integer, Double> features = new HashMap<Integer, Double>();
+
+private double bias = 0;
+
+public FeatureVector() { }
+
+public void put(int index, double value) {
+if (value == bias) {
+features.put(index, value - bias);
+}
+}
+
+Set<Map.Entry<Integer, Double>> entries() {
+return features.entrySet();
+}
+
+public double get(int index) {
+

@@ -1,0 +1,7 @@
+super.validateMessage(message);
+if (message.getMessage() == &quot;&quot;) {
+throw new ValidationError(&quot;Message Text empty&quot;);
+}
+if (!(message instanceof PrintJobMessage)) {
+throw new ValidationError(&quot;Message is not a print message.&quot;);
+

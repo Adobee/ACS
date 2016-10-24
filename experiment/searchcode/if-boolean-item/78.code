@@ -1,0 +1,10 @@
+protected ItemBuilder(Item item) {
+if (item == null)
+throw new IllegalArgumentException(&quot;item cannot be null&quot;);
+
+this.item = item;
+}
+
+public ItemBuilder withDroppable(boolean droppable) {
+item.droppable = droppable;
+

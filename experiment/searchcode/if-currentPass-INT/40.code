@@ -1,0 +1,9 @@
+public class WordlistBenchmark extends Thread{
+long lastCall = 0;
+int lastCount = 0;
+
+public WordlistBenchmark() {
+while(!WordlistPasswd.found &amp;&amp; WordlistPasswd.currentPass != null){
+if((System.nanoTime()- lastCall)> 1000000000){
+System.out.println(&quot;Current Pass: &quot;+ String.valueOf(WordlistPasswd.currentPass)+&quot; || est. &quot;+(WordlistPasswd.testedPwds - lastCount)+&quot; Pass/Sec&quot;);
+

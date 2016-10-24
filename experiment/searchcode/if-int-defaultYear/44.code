@@ -1,0 +1,10 @@
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+* @author citibob
+*/
+public class OffstageImporter extends Importer
+{
+
+
+public OffstageImporter(App app, int defaultYear)
+

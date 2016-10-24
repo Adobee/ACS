@@ -1,0 +1,10 @@
+public boolean isTeleporting(Entity entity) {
+PreCon.notNull(entity);
+
+return TELEPORTS.containsKey(entity);
+@Override
+public boolean canTeleport(Entity entity) {
+PreCon.notNull(entity);
+
+return !META.has(entity, TELEPORT_DENY_META_NAME);
+

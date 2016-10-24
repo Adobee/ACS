@@ -1,0 +1,11 @@
+public static DateTimeZone getDefault() {
+DateTimeZone zone = cDefault.get();
+
+if (zone == null) {
+try
+public long getMillisKeepLocal(DateTimeZone newZone, long oldInstant) {
+if (newZone == null) {
+newZone = DateTimeZone.getDefault();
+}
+if (newZone == this) {
+

@@ -1,0 +1,16 @@
+public MappableItemStackWrapper(ItemStack toWrap)
+{
+wrap = toWrap;
+}
+
+@Override
+public boolean equals(Object obj)
+{
+if (!(obj instanceof MappableItemStackWrapper))
+return false;
+}
+
+MappableItemStackWrapper isw = (MappableItemStackWrapper) obj;
+
+if (wrap.getHasSubtypes())
+

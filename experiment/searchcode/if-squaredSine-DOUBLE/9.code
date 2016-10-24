@@ -1,0 +1,11 @@
+public Rotation(Vector3D axis, double angle) {
+
+double norm = axis.getNorm();
+if (norm == 0) {
+throw new ArithmeticException(&quot;zero norm for rotation axis&quot;);
+double squaredSine = q1 * q1 + q2 * q2 + q3 * q3;
+if (squaredSine == 0) {
+return new Vector3D(1, 0, 0);
+} else if (q0 < 0) {
+double inverse = 1 / Math.sqrt(squaredSine);
+

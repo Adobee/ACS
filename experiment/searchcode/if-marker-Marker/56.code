@@ -1,0 +1,13 @@
+import com.google.android.gms.maps.model.Marker;
+
+/**
+* Multiple Marker object
+*
+* @author osbornb
+* {@inheritDoc}
+*/
+@Override
+public void delete(Marker marker) {
+if (markers.remove(marker)) {
+marker.remove();
+

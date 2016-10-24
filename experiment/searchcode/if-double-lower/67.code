@@ -1,0 +1,11 @@
+public static double qsignrank(double x, double n, boolean lower_tail, boolean log_p) {
+double f, p, q;
+
+
+if (Double.isNaN(x) || Double.isNaN(n)) {
+public static double psignrank(double x, double n, boolean lower_tail, boolean log_p) {
+int i;
+double f, p;
+
+if (Double.isNaN(x) || Double.isNaN(n)) {
+

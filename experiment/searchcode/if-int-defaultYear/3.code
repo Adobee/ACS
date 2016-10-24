@@ -1,0 +1,6 @@
+private LocalPath parseLocalPath(String path, int defaultYear) {
+List<String> splitPath = Splitter.on(&quot;/&quot;).omitEmptyStrings().splitToList(path);
+
+if (splitPath.isEmpty()) {
+return new LocalPath(defaultYear, &quot;&quot;, null);
+

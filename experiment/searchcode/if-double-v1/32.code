@@ -1,0 +1,14 @@
+public void normalize() {
+double d = len();
+x /= d;
+y /= d;
+z /= d;
+w /= d;
+}
+
+public final float angle(Vec4 v1) {
+double d = dot(v1);
+double v1_length = v1.len();
+double v_length = len();
+return (float) Math.acos(d / v1_length / v_length);
+

@@ -1,0 +1,8 @@
+return produceResponse(throwable);
+}
+
+public static Response produceResponse(final Throwable throwable) {
+if (throwable instanceof NotFoundException) {
+} else if (throwable instanceof NotAllowedException) {
+return handle((NotAllowedException) throwable);
+

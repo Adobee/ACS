@@ -1,0 +1,15 @@
+throws SchemaCrawlerException
+{
+if (hasOptions())
+{
+return new Command(getStringValue(&quot;command&quot;));
+throw new SchemaCrawlerException(&quot;No command specified&quot;);
+}
+}
+
+protected boolean hasOptions()
+throws SchemaCrawlerException
+{
+boolean hasOptions;
+if (hasOptionValue(&quot;command&quot;)
+

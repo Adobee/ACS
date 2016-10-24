@@ -1,0 +1,9 @@
+import org.fastcatsearch.ir.io.BytesBuffer;
+import org.fastcatsearch.ir.io.IndexOutput;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+//write pkmap index
+if(keyCount % indexInterval == 0){
+indexOutput.writeVInt(buf.remaining());
+indexOutput.writeBytes(buf);
+

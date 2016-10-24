@@ -1,0 +1,9 @@
+import org.easymock.IArgumentMatcher;
+
+public class Equals implements IArgumentMatcher {
+
+private final Object expected;
+public boolean matches(Object actual) {
+if (this.expected == null) {
+return actual == null;
+

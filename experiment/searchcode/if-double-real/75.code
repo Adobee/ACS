@@ -1,0 +1,11 @@
+public int iterations(int max, double a, double b)
+{
+double realPart = a;
+double imaginaryPart = b;
+double currentResult = Math.sqrt(a*a + b*b);
+return 0;
+}
+for ( int i = 1 ; i <= max ; i++ )
+{
+double realMultiply =  getRealPartForMultiplication(realPart,
+

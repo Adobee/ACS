@@ -1,0 +1,10 @@
+public class NonResponseMessageReader implements MessageListener {
+
+private boolean isValid;
+
+@Override
+public void update(String message) {
+isValid = true;
+if (message.startsWith(&quot;RES&quot;)) {
+isValid = false;
+

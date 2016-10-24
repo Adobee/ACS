@@ -1,0 +1,9 @@
+if ((metadatas!=null)&amp;&amp;(metadatas.size()>0)) {
+IMetadataTable metadata = metadatas.get(0);
+if (metadata!=null) {
+boolean version07 = (&quot;true&quot;).equals(ElementParameterParser.getValue(node,&quot;__VERSION_2007__&quot;));
+String mode = ElementParameterParser.getValue(node,&quot;__GENERATION_MODE__&quot;);
+boolean eventMode = &quot;EVENT_MODE&quot;.equals(mode);
+
+if(!version07){//version judgement
+

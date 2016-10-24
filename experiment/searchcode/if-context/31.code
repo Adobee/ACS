@@ -1,0 +1,14 @@
+package llvm;
+
+import static llvm.binding.LLVMLibrary.*;
+
+
+public class Context {
+
+private LLVMContextRef context;
+public void finalize() { dispose(); }
+
+public void dispose() { if (context != null) LLVMContextDispose(context); context = null; }
+
+}
+

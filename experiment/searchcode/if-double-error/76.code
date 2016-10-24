@@ -1,0 +1,9 @@
+private static final double error = 0.00001;
+
+public static double getSquareRoot(double n) {
+double high = n/2;
+double sqrt = low + (high - low)/2;
+double diff = n - sqrt * sqrt;
+if(diff > error) {
+return calcualteSquareRoot(n, sqrt, high);
+

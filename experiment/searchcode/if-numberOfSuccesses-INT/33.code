@@ -1,0 +1,9 @@
+final FDistribution distributionLowerBound = new FDistribution(2 * (numberOfTrials - numberOfSuccesses + 1),
+2 * numberOfSuccesses);
+if (numberOfSuccesses > 0) {
+final double fValueLowerBound = distributionLowerBound.inverseCumulativeProbability(1 - alpha);
+final FDistribution distributionUpperBound = new FDistribution(2 * (numberOfSuccesses + 1),
+2 * (numberOfTrials - numberOfSuccesses));
+if (numberOfSuccesses > 0) {
+final double fValueUpperBound = distributionUpperBound.inverseCumulativeProbability(1 - alpha);
+

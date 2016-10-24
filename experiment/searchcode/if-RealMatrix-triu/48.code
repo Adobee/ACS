@@ -1,0 +1,7 @@
+* @param k k = 0 is the main diagonal, k > 0 is above the main diagonal, and k < 0 is below the main diagonal.
+* @return upper triangular matrix
+*/
+protected static RealMatrix triu(RealMatrix toTriu, int k) {
+RealMatrix X = toTriu.copy();
+for (int row = 0; row < X.getRowDimension(); row++) {
+

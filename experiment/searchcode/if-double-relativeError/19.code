@@ -1,0 +1,11 @@
+private Integer id_ = 0;
+private Ts ts_;
+private int backCount;
+private Double[] absoluteError, relativeError;
+absoluteError = new Double[backCount];
+relativeError = new Double[backCount];
+}
+
+public Integer getId() {
+return id_;
+

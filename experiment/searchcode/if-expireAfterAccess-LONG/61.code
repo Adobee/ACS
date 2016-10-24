@@ -1,0 +1,11 @@
+public LocalCache<K, V> build(LocalCacheLoader<K, V> loader) {
+if (!isFlexible) {
+return new CommonLocalCache<>(loader);
+return loadingCache.getUnchecked(key);
+}
+};
+}
+}
+
+public LocalCacheBuilder expireAfterAccess(long duration, TimeUnit unit) {
+

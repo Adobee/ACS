@@ -1,0 +1,9 @@
+protected int height;
+protected int upperLeftX;
+protected int upperLeftY;
+
+public BoundingBox(int upperLeftX, int upperLeftY, int width, int height) {
+this.width = width;
+this.height = height;
+this.upperLeftX = upperLeftX;
+

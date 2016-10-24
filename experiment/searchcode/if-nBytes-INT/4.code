@@ -1,0 +1,13 @@
+int temp_marklimit = marklimit;
+
+mark(marklimit+65536);
+int nbytes = 0;
+byte cur;
+while ( (cur=(byte)read()) != (byte)&#39;\r&#39; &amp;&amp; cur != -1 )
+{
+nbytes++;
+}
+
+if ( cur == -1 ) //disconnected
+throw new IOException(&quot;Apparently disconnected.\n&quot;);
+

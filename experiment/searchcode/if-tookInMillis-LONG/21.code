@@ -1,0 +1,8 @@
+public class PercolateResponse extends BroadcastResponse implements Iterable<PercolateResponse.Match>, ToXContent {
+
+public static final Match[] EMPTY = new Match[0];
+
+private long tookInMillis;
+PercolateResponse(int totalShards, int successfulShards, int failedShards, List<ShardOperationFailedException> shardFailures,
+Match[] matches, long count, long tookInMillis, InternalAggregations aggregations) {
+

@@ -1,0 +1,9 @@
+import com.github.tetrisanalyzer.move.rotation.RotationDirection;
+
+/**
+* Holds a position (x,y) and rotation (&quot;angle&quot;) for a piece on the board.
+*/
+public class Move {
+public Move rotate(RotationDirection rotationType, int rotationModulus, int dx, int dy) {
+return new Move((rotation + rotationType.getDirection()) &amp; rotationModulus, x + dx, y + dy);
+

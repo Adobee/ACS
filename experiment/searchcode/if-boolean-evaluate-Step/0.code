@@ -1,0 +1,10 @@
+public boolean hasNextStep()
+{
+if (_step.hasNextStep()) return true;
+boolean conditionResult = _condition.evaluate();
+return _secondStep.hasNextStep();
+}
+public boolean hasPreviousStep()
+{
+if (_step.hasPreviousStep()) return true;
+

@@ -1,0 +1,10 @@
+private long size;
+
+public MaxPageSizeFilter(long size) {
+this.size = size;
+}
+
+@Override
+public boolean storeResponse(Spider spider, Response response) {
+if (response.hasBody() &amp;&amp; response.getBody().length() > size) {
+

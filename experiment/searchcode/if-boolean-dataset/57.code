@@ -1,0 +1,10 @@
+public class IndexableDataset extends IndexableObject {
+
+DatasetState datasetState;
+boolean filesShouldBeIndexed;
+
+private final DatasetVersion datasetVersion;
+super.setType(IndexableObject.IndexableTypes.DATASET.getName());
+if (datasetVersion.isWorkingCopy()) {
+this.datasetState = DatasetState.WORKING_COPY;
+

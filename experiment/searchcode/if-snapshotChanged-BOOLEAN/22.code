@@ -1,0 +1,12 @@
+return new Replica(hopReplica.getStorageId(), hopReplica.getBlockId(),
+inodeId);
+}
+
+@Override
+protected boolean snapshotChanged() {
+return !getAdded().isEmpty() || !getModified().isEmpty();
+final int storageId = (Integer) params[1];
+Replica result = null;
+List<Replica> replicas = getByBlock(blockId);
+if (replicas != null) {
+

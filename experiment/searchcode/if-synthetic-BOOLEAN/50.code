@@ -1,0 +1,7 @@
+boolean hasSyntheticModifier = hasSyntheticModifier(syntheticModifier);
+boolean hasSyntheticAttribute = hasSyntheticAttribute(syntheticAttribute);
+if (hasSyntheticModifier || hasSyntheticAttribute) {
+private static boolean hasSyntheticAttribute(JApiAttribute<SyntheticAttribute> syntheticAttribute) {
+boolean hasSyntheticAttribute = false;
+if (syntheticAttribute.getOldAttribute().isPresent() &amp;&amp; syntheticAttribute.getNewAttribute().isPresent()) {
+

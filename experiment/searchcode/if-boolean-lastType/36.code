@@ -1,0 +1,9 @@
+if(types.isEmpty())
+return MissingType.instance();
+IType lastType = null;
+for(IType type : types) {
+if(lastType==null)
+lastType = type;
+else if(!lastType.equals(type)) {
+if(lastType.isAssignableFrom(context, type))
+

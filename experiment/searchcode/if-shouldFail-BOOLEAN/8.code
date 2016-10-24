@@ -1,0 +1,8 @@
+public final static String KEY = &quot;SIMPLE_COMMAND&quot;;
+
+private final String returnValue;
+private final boolean shouldFail;
+
+public SimpleStringNoFallbackCommand(String returnValue, boolean shouldFail) {
+super(Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey(KEY))
+

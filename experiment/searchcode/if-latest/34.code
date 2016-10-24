@@ -1,0 +1,13 @@
+redos.clear();
+}
+
+@Override public void undo() {
+BeforeAfter latestMemento = undos.pop();
+if(latestMemento==null) return;
+redos.push(latestMemento);
+}
+
+@Override public void redo() {
+BeforeAfter latestMemento = redos.pop();
+if(latestMemento==null) return;
+

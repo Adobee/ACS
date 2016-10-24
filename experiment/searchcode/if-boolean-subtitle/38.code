@@ -1,0 +1,8 @@
+private TopicSubtitleDto topicSubtitle = new TopicSubtitleDto();// 获取页面提交参数
+private boolean success;
+private String message;
+@Action(value = &quot;addTopicSubtitle&quot;)
+public String add() {
+success = topicSubtitleService.add(topicSubtitle);
+if (success) {
+

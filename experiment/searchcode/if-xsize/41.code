@@ -1,0 +1,9 @@
+this.tiles = TileRepository.getInstance().getTileArray(ySize, xSize);
+}
+
+private void assertBounds(int y, int x) {
+if (y >= ySize || y < 0) {
+throw new IllegalArgumentException(&quot;y is outside of allowable bounds of the map: &quot; + y + &quot; ySize: &quot; + ySize);
+}
+if (x >= xSize || x < 0) {
+

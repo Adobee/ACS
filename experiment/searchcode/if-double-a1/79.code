@@ -1,0 +1,15 @@
+double z, s, xi, xj;
+double p, q;
+
+// 初值
+z = 0.0;
+
+// 特例处理
+if (n < 1)
+return (z);
+if (n == 1) {
+while (t < x[i])
+i--;
+double a1 = x[i + 1] - t, a2 = t - x[i];
+result = spE(m[i], a1, m[i + 1], a2, y[i], y[i + 1], h[i]);
+

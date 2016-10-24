@@ -1,0 +1,8 @@
+double denominator = squaredNorm2(vec1, length) + squaredNorm2(vec2, length);
+if(denominator < Double.MIN_NORMAL) {
+return 0;
+} else {
+double[] molecular = new double[length];
+double denominator = Math.sqrt(squaredNorm2(normVec1, length) * squaredNorm2(normVec2, length));
+if(denominator < Double.MIN_NORMAL) {
+

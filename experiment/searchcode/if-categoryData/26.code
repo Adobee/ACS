@@ -1,0 +1,7 @@
+public Category getCategory(String customer, String location, long id) {
+for(CategoryKey key: categoryData.getCategoryMap().keySet())
+if(key.getCustomer().equalsIgnoreCase(customer) &amp;&amp; key.getLocation().equalsIgnoreCase(location)) {
+Category category = categoryData.getCategoryMap().get(key);
+Category res = category.search(id);
+if(res != null)
+

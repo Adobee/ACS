@@ -1,0 +1,12 @@
+
+
+public class QuickUnionWeight extends QuickUnion {
+private int[] weight;
+
+public QuickUnionWeight(int size) {
+int i = root(p);
+int j = root(q);
+if (p == q) return;
+if (weight[i] > weight[j]) {
+id[i] = id[j];
+

@@ -1,0 +1,15 @@
+import com.rednovo.ace.entity.Message;
+
+/**
+* 消息缓存
+*
+* @author yongchao.Yang/2014年10月24日
+*/
+public class ResponseCache {
+private HashMap<String, Message> cache;
+public static ResponseCache getInstance() {
+if (rc == null) {
+rc = new ResponseCache();
+}
+return rc;
+

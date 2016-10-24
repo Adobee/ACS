@@ -1,0 +1,11 @@
+public static void readPricesForItem(Item item, boolean forceRefresh) {
+if (item == null) {
+return;
+}
+Collection<ItemType> itemTypes = new ArrayList<ItemType>(1);
+public static void readPricesForItems(Collection<? extends Item> items, boolean forceRefresh) {
+if (items == null || items.isEmpty()) {
+return;
+}
+Collection<ItemType> itemTypes = new ArrayList<ItemType>(items.size());
+

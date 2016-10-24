@@ -1,0 +1,10 @@
+float[] distances = ss.getDistances();
+
+float goal = gs.getGoalBearing();
+
+if (gs.nearGoal() &amp;&amp; !startTimer) {
+double min  = 0;
+
+boolean[] options = getOptions(distances, goal);
+boolean[] blockedByRobots = areRobotsBlocking(robotDistances, robotBearings, goal);
+

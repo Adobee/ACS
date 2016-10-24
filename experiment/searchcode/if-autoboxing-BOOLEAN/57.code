@@ -1,0 +1,10 @@
+* >ByteInstantiation</a>. It replaces a Byte instantiation with autoboxing.
+*
+* @author Philip Graf
+*/
+public class ByteInstantiationAutoboxingQuickFix extends ASTQuickFix<ClassInstanceCreation> {
+private static final Pattern ARGUMENT = Pattern.compile(&quot;\\((.*)\\)&quot;);
+
+public ByteInstantiationAutoboxingQuickFix(final PMDMarker marker) {
+super(marker);
+

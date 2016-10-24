@@ -1,0 +1,14 @@
+char[] c= s.toCharArray();
+Map<Character, Integer> set = new HashMap<Character,Integer>();
+
+
+for(char ch:c){
+if(set.containsKey(ch)){
+set.put(ch, 1);
+}
+}
+
+for(Character ch1: set.keySet()){
+if(set.get(ch1)>0){
+System.out.println(&quot;character &quot;+ch1+&quot; appears &quot;+ set.get(ch1)+ &quot; times&quot; );
+

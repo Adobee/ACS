@@ -1,0 +1,9 @@
+Key asKey = new Key(this.namespace, this.redisSet, Value.get(key));
+Record record = this.asClient.get(this.policy, asKey, this.redisBin);
+if (record == null)
+wp.timeout = this.writePolicy.timeout;
+this.asClient.touch(wp, asKey);
+return 1;
+} catch (AerospikeException e) {
+if (e.getResultCode() == ResultCode.KEY_NOT_FOUND_ERROR){
+

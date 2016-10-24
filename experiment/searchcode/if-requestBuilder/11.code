@@ -1,0 +1,7 @@
+public RequestBuilderBuilder withRequestConfig(RequestConfig config) {
+if (config != null) {
+requestBuilder.setConfig(config);
+public RequestBuilderBuilder withApiKey(String apiKey) {
+if (apiKey != null &amp;&amp; !apiKey.isEmpty()) {
+requestBuilder.setHeader(&quot;X-Starfighter-Authorization&quot;, apiKey);
+

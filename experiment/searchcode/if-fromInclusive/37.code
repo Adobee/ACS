@@ -1,0 +1,8 @@
+public Ids findIdsInRange(long fromValue, long toValue,
+boolean fromInclusive, boolean toInclusive) {
+
+if(toValue < fromValue || entries.length == 0) {
+int mid = (start + end) >>> 1;
+
+if(entries[mid].value < fromValue || (entries[mid].value == fromValue &amp;&amp; ! fromInclusive)) {
+

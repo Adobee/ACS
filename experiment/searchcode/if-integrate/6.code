@@ -1,0 +1,10 @@
+double a = recEval(Integrate.start, Integrate.end, Integrate.computeFunction(Integrate.start), Integrate.computeFunction(Integrate.end), 0);
+be.end();
+if (be.verbose) {
+System.out.println(&quot;Integral: &quot; + a);
+double alr = al + ar;
+if (Math.abs(alr - a) <= Integrate.errorTolerance) return alr;
+else return recEval(c, r, fc, fr, ar) + recEval(l, c, fl, fc, al);
+}
+}
+

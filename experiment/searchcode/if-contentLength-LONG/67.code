@@ -1,0 +1,12 @@
+package zip;
+
+public class UnZipProgressListener {
+private long num100Ks = 0;
+private int percentDone = 0;
+public void update(long bytesRead, long contentLength){
+if (contentLength > -1) {
+contentLengthKnown = true;
+}
+
+long nowNum100Ks = bytesRead / 100000;
+

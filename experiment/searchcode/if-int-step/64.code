@@ -1,0 +1,11 @@
+final boolean removed = super.removeStep(step);
+
+if(!removed) {
+if(stepped.removeValue(step, true)) {
+step.free();
+return true;
+final boolean has = super.hasStep(step);
+
+if(!has) {
+return stepped.contains(step, true);
+

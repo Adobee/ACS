@@ -1,0 +1,6 @@
+void flush() throws IOException;
+void synStream(boolean outFinished, boolean inFinished, int streamId, int associatedStreamId,
+int priority, int slot, List<Header> headerBlock) throws IOException;
+void synReply(boolean outFinished, int streamId, List<Header> headerBlock)
+throws IOException;
+

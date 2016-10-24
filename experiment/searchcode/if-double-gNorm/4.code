@@ -1,0 +1,15 @@
+private DenseMatrix64F gradient;
+
+
+private double gBg;
+private double gnorm;
+
+private boolean maxStep;
+double dist;
+
+double normRadius = regionRadius/gnorm;
+
+if( gBg == 0 ) {
+dist = normRadius;
+maxStep = true;
+

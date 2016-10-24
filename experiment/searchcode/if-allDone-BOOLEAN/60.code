@@ -1,0 +1,10 @@
+private static final Log LOG = LogFactory.getLog(PrintJobMonitor.class);
+
+boolean done = false;
+
+public PrintJobMonitor(DocPrintJob job) {
+@Override
+public void printJobCanceled(PrintJobEvent arg0) {
+if (LOG.isWarnEnabled()) {
+LOG.warn(&quot;PrintJob Job canceled.&quot;);
+

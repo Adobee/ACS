@@ -1,0 +1,11 @@
+public void newProcessLaunched(long threadID, String processName) {
+slaveProcessesManagement.put(threadID, processName);
+return slaveProcessesManagement.get(threadID);
+}
+
+/**
+* Remove process by threadID
+*/
+public boolean removeProcess(long threadID) {
+if (slaveProcessesManagement.remove(threadID) != null)
+

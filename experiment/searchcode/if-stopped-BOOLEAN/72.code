@@ -1,0 +1,11 @@
+public abstract class CustomThread implements Runnable {
+private final Thread thread;
+private final AtomicBoolean isStopped;
+
+public CustomThread() {
+thread = new Thread(this);
+isStopped = new AtomicBoolean(true);
+}
+
+public void start() {
+

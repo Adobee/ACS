@@ -1,0 +1,6 @@
+public InmemoryLRUCredentialsStorage(int maxCacheSize) {
+cache = new LRUMap(maxCacheSize);
+
+if (log.isInfoEnabled()) {
+log.info(&quot;Initialized LRUOAuth1AccessCredentialsStorage, maxCacheSize:&quot; + maxCacheSize);
+

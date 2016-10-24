@@ -1,0 +1,7 @@
+public ServerFailure createServerFailure(Throwable throwable) {
+ServerFailure failure = null;
+if (throwable == null) {
+failure = new ServerFailure(&quot;Server Error&quot;, null, null, true);
+} else {
+if (throwable instanceof AccessDeniedException) {
+

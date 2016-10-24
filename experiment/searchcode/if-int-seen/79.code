@@ -1,0 +1,10 @@
+while(n!=0){
+char[] c = in.nextLine().toCharArray();
+int m = n;
+char lastSeen = &#39;.&#39;;
+int p = 0;
+for(int i=0;i<n;i++){
+if(c[i]==&#39;R&#39;){
+if(lastSeen==&#39;D&#39;){
+m=Math.min(m,i-p);
+

@@ -1,0 +1,12 @@
+for (int i = domains.length; --i>=0;)
+{
+final Object obj = domainsOrVariables[i];
+
+if (obj instanceof DiscreteDomain)
+{
+domains[i] = (DiscreteDomain)obj;
+}
+else if (obj instanceof JSDiscreteDomain)
+{
+domains[i] = ((JSDiscreteDomain)obj).getDelegate();
+

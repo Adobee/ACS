@@ -1,0 +1,12 @@
+public CompositeAnimation(Display display) {
+init(display);
+}
+
+int childCount = 0;
+Animation[] animations = new Animation[4];
+
+
+public void addAnimation(Animation animation) {
+if (animations.length == childCount) {
+Animation[] temp = new Animation[childCount + 4];
+

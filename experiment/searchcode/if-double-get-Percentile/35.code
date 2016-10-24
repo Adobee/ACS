@@ -1,0 +1,5 @@
+List<PointDto> list = percentiles.get(raw.getPercentileKey());
+
+double x = DataProcessingUtil.round(raw.getTime() / 1000.0D);
+double y = DataProcessingUtil.round((raw.getPercentileValue() - previousPercentileValue) / 1000);
+

@@ -1,0 +1,10 @@
+int leftSum = 0;
+int rightSum = 0;
+int diff;
+int minDiff = Integer.MAX_VALUE;
+for(int i=0; i<A.length; i++) {
+for(int i=A.length-1; i>0; i--) {
+rightSum+=A[i];
+leftSum-=A[i];
+diff = (int)Math.abs(leftSum-rightSum);
+

@@ -1,0 +1,10 @@
+private int mHeaderHeightPixels;
+
+private boolean mHasPhoto = false;
+
+private Target mGetPhotoTarget = new Target() {
+mHeaderHeightPixels = mHeaderBox.getHeight();
+mPhotoHeightPixels = 0;
+if (mHasPhoto) {
+mPhotoHeightPixels = (int) (mLeargeIconImageView.getWidth() / PHOTO_ASPECT_RATIO);
+

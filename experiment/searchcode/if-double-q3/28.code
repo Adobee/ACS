@@ -1,0 +1,5 @@
+double Q0 = (double)((-4 << 15) / 5.0);
+double Q1 = (double)((-2 << 15) / 5.0);
+double Q2 = (double)(0);
+double Q3 = (double)((2 << 15) / 5.0);
+

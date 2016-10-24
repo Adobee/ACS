@@ -1,0 +1,11 @@
+throw new UnsupportedOperationException();
+}
+
+@Override
+public boolean add(SimpleRange rangeToAdd) {
+if (rangeToAdd == null) return false;
+boolean needToInsert = true;
+for (int n=0; n < this.size(); n++) {
+SimpleRange myRange = get(n);
+if (myRange.compareTo(rangeToAdd) > 0) {
+

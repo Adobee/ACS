@@ -1,0 +1,12 @@
+public void write(Map<String, Object> row) {
+
+try {
+if (headerWritten) {
+StringBuilder rowData = new StringBuilder(batchId.toString());
+rowData.append(&quot;,&quot;);
+rowData.append(data);
+
+}
+rowData.append(&quot;\n&quot;);
+if (append &amp;&amp; !fileExists) {
+

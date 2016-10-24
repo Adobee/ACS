@@ -1,0 +1,7 @@
+public class Solution {
+public void merge(int A[], int m, int B[], int n) {
+if(n == 0)  return;
+int indexB = n - 1;
+for(int i = len - 1; i >= 0; i--){
+if(indexA < 0){
+

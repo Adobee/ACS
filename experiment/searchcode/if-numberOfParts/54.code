@@ -1,0 +1,9 @@
+abstract public class TorrentFile {
+protected String hash;
+protected long size;
+protected int numberOfParts;
+protected String name;
+protected long getPartSize(int partNumber) {
+long result = size / numberOfParts;
+if (partNumber == numberOfParts -1) { //lastPart
+

@@ -1,0 +1,11 @@
+public Timestamp convertToDatabaseColumn(LocalDateTime localDateTime) {
+if (localDateTime != null) {
+return Timestamp.valueOf(localDateTime);
+return null;
+}
+}
+
+@Override
+public LocalDateTime convertToEntityAttribute(Timestamp timestamp) {
+if (timestamp != null) {
+

@@ -1,0 +1,11 @@
+assert Utils.checkDistribution(distribution.values());
+double randomValue = random.nextDouble();
+sum += entry.getValue();
+if (sum >= randomValue)
+return entry.getKey();
+}
+assert false;
+return null;
+}
+}
+

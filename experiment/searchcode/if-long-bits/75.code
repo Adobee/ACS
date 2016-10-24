@@ -1,0 +1,11 @@
+float y = getLocationY();
+long bits = Float.floatToIntBits(y);
+bits++;
+y = Float.intBitsToFloat((int) bits);
+if(y < 1024-(getSize()/2)){
+float x = getLocationX();
+float y = getLocationY();
+long bits = Float.floatToIntBits(y);
+bits--;
+y = Float.intBitsToFloat((int) bits);
+

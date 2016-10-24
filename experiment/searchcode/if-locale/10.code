@@ -1,0 +1,10 @@
+return locale != null ? (Locale)locale.get() : Locale.getDefault();
+}
+
+public static void setLocale(Locale newLocale)
+{
+if (locale == null) locale = new ThreadLocal();
+public static void setCustomLocale(Locale newLocale) {
+if (customLocale == null) customLocale = new ThreadLocal();
+customLocale.set(newLocale);
+

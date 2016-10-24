@@ -1,0 +1,9 @@
+Customer customer = (Customer) session.getAttribute(&quot;customer&quot;);
+
+if (cart == null) {
+return new ActionResponse(ActionResponseType.REDIRECT, &quot;viewCart&quot;);
+}
+
+if (customer == null) {
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;loginCustomer&quot;);
+

@@ -1,0 +1,9 @@
+return s.toString();
+}
+
+public double asValue(){
+Formula minVal = operands[0];
+for(Formula formulas : operands){
+if(formulas.asValue() < minVal.asValue()) {
+minVal = formulas;
+

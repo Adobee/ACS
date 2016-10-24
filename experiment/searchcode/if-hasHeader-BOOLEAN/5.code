@@ -1,0 +1,9 @@
+public  abstract  class BaseAdapter<T> extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
+protected List<T> items;
+
+
+protected boolean hasHeader = false;
+public int getItemViewType(final int position) {
+if (hasHeader &amp;&amp; position == 0) {
+return HEADER;
+

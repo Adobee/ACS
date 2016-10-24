@@ -1,0 +1,10 @@
+rel--;
+}
+if(authRelevance[i].getWord() != null){
+//				double weight = (authRelevance[i].getWeight()/authRelevance[0].getWeight())*100 + 200;
+manager.setOutlinkClassifier(outlinkClassifier);
+}
+LinkNeighborhood[] outLNs = rep.getLNs();
+for (int i = 0; i < outLNs.length; i++) {
+if(outLNs[i] != null){
+

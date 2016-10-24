@@ -1,0 +1,16 @@
+public static long numCubes(long w, long l, long h, long layer) {
+long total = 0;
+total += (2*w*l) +  (2*w*h) + (2*l*h);
+
+if(layer>=2) {
+total += (w + l + h) * (4*(layer-1));
+}
+
+if(layer>=3) {
+total += 8 * ((layer-2)*(layer-1)/2);
+}
+return total;
+}
+
+}
+

@@ -1,0 +1,14 @@
+* To change this template use File | Settings | File Templates.
+*/
+public class Plateau {
+
+private int upperRightX;
+private int upperRightY;
+
+public static int LowerLeftX = 0;
+public int getUpperRightX() {
+return upperRightX;
+}
+
+public void setUpperRightX(int upperRightX) {
+

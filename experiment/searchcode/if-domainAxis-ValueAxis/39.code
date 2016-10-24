@@ -1,0 +1,6 @@
+for (int i = 0; i < getDomainAxisCount(); i++) {
+ValueAxis domainAxis = (ValueAxis) getDomainAxis(i);
+if (domainAxis != null) {
+if(domainAxis instanceof LinkAndBrushAxis) {
+Range calculateZoomRange = ((LinkAndBrushAxis) domainAxis).calculateZoomRange(lowerPercent, upperPercent, zoomIn);
+

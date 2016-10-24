@@ -1,0 +1,13 @@
+private static final long serialVersionUID = 1362878603460516882L;
+Object fnames[][];
+int histsize;
+boolean allDone;
+int histArr[];
+int histPos;
+int pos;
+public boolean startScanFeaturesAt(DataSequence data, int prevPos, int pos) {
+this.pos = pos;
+allDone = false;
+edgeIter.start();
+if ((pos < 2) || !edgeIter.hasNext())
+

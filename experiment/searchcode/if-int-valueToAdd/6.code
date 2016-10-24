@@ -1,0 +1,17 @@
+public class Problem078 extends Problem {
+
+@Override
+protected String solve() {
+int answer = 0, remainder = 1000000;
+
+while (partitionFunctionRemainder(++answer, remainder) != 0)
+if (n < 0) {
+return 0L;
+}
+if (n == 0) {
+return 1L;
+}
+
+long partitions = 0, valueToAdd;
+for (int i = 1; makePentagonal(i) <= n; i++) {
+

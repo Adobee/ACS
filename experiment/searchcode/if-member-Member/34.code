@@ -1,0 +1,8 @@
+import com.oodd.spring.manytomanyselfreference.dao.MemberDao;
+import com.oodd.spring.manytomanyselfreference.dto.MemberDto;
+Member member = memberDao.getById(id);
+if(null != member) {
+return memberMapper.mapEntityToDto(member);
+}
+return null;
+

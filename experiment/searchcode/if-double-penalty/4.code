@@ -1,0 +1,11 @@
+public class SpringPenaltyResponder extends CollisionResponder<SpringPenaltyResponder> {
+
+double k; //stiffness
+double proximity;
+
+public SpringPenaltyResponder(Scene aScene) {
+a seperating velocity, apply the
+local spring penalty */
+if(xa.minus(xb).dot(va.minus(vb)) < 0) {
+double[] local_penalty = springPenalty(xa, xb, col.getDistance());
+

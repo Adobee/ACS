@@ -1,0 +1,11 @@
+float y;
+float z;
+
+public static Vector3D[] new_Vector3D(int size,Lambda<Integer,Vector3D> lambda) {
+for (int i=0;i<size;i++)
+arrayVector3D[i] = lambda.curry(i);
+return arrayVector3D;
+}
+
+public Vector3D(float x,float y,float z) {
+

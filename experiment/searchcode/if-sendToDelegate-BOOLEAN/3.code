@@ -1,0 +1,10 @@
+this.bottomOffset = this.slop + bottomOffset;
+}
+
+public boolean onTouchEvent(MotionEvent event) {
+if (this.delegateView.getVisibility() != 0) {
+int y = (int) event.getY();
+boolean sendToDelegate = false;
+boolean hit = true;
+int action = event.getAction();
+

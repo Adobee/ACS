@@ -1,0 +1,10 @@
+return (readByte() &amp; 0xff) << 24 | (readByte() &amp; 0xff) << 16
+| (readByte() &amp; 0xff) << 8 | readByte() &amp; 0xff;
+}
+
+@Override
+public long readLong() {
+return (long) (readByte() &amp; 0xff) << 56
+| (long) (readByte() &amp; 0xff) << 48
+| (long) (readByte() &amp; 0xff) << 40
+

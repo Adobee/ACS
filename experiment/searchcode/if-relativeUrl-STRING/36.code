@@ -1,0 +1,10 @@
+public URIManager(String original,String charset) throws Exception{
+if(charset!=null)
+this.charset=charset;
+String relativeUrl=URIUtil.getPathQuery(original);
+relativeURI=getNewInstance(relativeUrl);
+}
+
+private void init(String baseUrl,String relativeUrl,String charset) throws Exception{
+if(!baseUrl.startsWith(&quot;http&quot;))
+

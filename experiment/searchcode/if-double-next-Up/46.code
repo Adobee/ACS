@@ -1,0 +1,9 @@
+public static PointXY Zero(Function f, double LowX, double UpX)
+{
+if(UpX <= LowX) return new PointXY(Double.NaN, Double.NaN);
+double val;
+for(double x = LowX + dx; x < UpX; x += dx)
+{
+val = f.Calc(x);
+if(Double.isInfinite(-val)) return new PointXY(returnRounded(Util.round(x, 6)), val);
+

@@ -1,0 +1,11 @@
+public class Coordinate implements Serializable {
+
+/**
+* Shared variables
+*/
+double lowerX, lowerY, upperX, upperY, centerX, centerY;
+private static final long serialVersionUID = 1L;
+public boolean contains(double x, double y) {
+if (lowerX <= x &amp;&amp; upperX >= x &amp;&amp; lowerY <= y &amp;&amp; upperY >= y)
+return true;
+

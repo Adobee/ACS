@@ -1,0 +1,6 @@
+public static RuntimeException propagate(Throwable throwable) throws RuntimeException, Error {
+propagateIfInstanceOf(throwable, RuntimeException.class);
+propagateIfInstanceOf(throwable, Error.class);
+public static <X extends Throwable> void propagateIfInstanceOf(Throwable throwable, Class<X> clazz) throws X {
+if(throwable != null &amp;&amp; clazz.isInstance(throwable)) {
+

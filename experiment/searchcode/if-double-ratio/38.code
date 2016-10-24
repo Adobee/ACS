@@ -1,0 +1,13 @@
+@Override
+public int compare(Item left, Item right) {
+double ratio = getRatio(left);
+double itemRatio = getRatio(right);
+if (ratio < itemRatio) {
+return -1;
+}
+return 1;
+}
+
+private double getRatio(Item item) {
+if (item.getValue() <= 0) {
+

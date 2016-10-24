@@ -1,0 +1,10 @@
+package benak.tomas.crimemonitor.service.exception;
+
+import benak.tomas.crimemonitor.service.query.config.QueryConfig.QueryName;
+public UnsupportedQueryNameException(QueryName queryName)
+{
+super(&quot;Query name used is not supported&quot;);
+
+if(queryName == null)
+throw new IllegalArgumentException(&quot;&#39;queryName&#39; cannot be null&quot;);
+

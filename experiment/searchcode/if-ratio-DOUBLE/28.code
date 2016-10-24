@@ -1,0 +1,13 @@
+public class RatioSquareVecDistance extends EntrywiseVecDistance {
+
+protected double factor;
+
+public RatioSquareVecDistance() {
+super();
+double ratioSum = 0;
+double ratioSquareSum = 0;
+
+int excludedIx = 0;
+for (int i = 0; i<vec0.length; ++i){
+if (excludedIx < excluded.size() &amp;&amp; excluded.get(excludedIx) == i) {
+

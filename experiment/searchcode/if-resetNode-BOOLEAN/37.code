@@ -1,0 +1,8 @@
+public String encode() { return Code.encode(value);}
+
+public boolean decode(DecodeReturn ret) {
+int pos = ret.pos;
+String data = ret.data;
+Code.decode(ret);
+if (ret.type != DecodeReturn.T_DOUBLE) // uh oh! Restore and signal error.
+

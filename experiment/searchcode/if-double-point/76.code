@@ -1,0 +1,11 @@
+double v1 = d1.getPoint()[i];
+double v2 = d2.getPoint()[i];
+if(v1 > v2) {
+return +1;
+}
+if(v1 < v2) {
+Pair<DoublePoint> minMax(Iterable<DoublePoint> items) {
+Iterator<DoublePoint> iterator = items.iterator();
+if(!iterator.hasNext()) {
+return null;
+

@@ -1,0 +1,11 @@
+if (!Objects.equals(this.opis, other.opis)) {
+return false;
+}
+if (Double.doubleToLongBits(this.cena) != Double.doubleToLongBits(other.cena)) {
+return false;
+}
+if (this.trajanjeUMin != other.trajanjeUMin) {
+return false;
+}
+if (!Objects.equals(this.listaPreparata, other.listaPreparata)) {
+

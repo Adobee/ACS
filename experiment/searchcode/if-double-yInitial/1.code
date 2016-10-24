@@ -1,0 +1,14 @@
+private ColorPicker colorPicker;
+private double xInitial;
+private double yInitial;
+
+/**
+* OvalTool Constructor
+public void onPress(MouseEvent e, GraphicsContext g) {
+xInitial = e.getX();
+yInitial = e.getY();
+}
+
+/**
+* This method deals with actions to be called when the mouse is dragged
+

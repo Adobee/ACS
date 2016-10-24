@@ -1,0 +1,12 @@
+public class TrapezoidalRule implements Method
+{
+
+@Override
+public Points run(Parameters params)
+{
+if (params == null)
+private void calculate()
+{
+int n = p.getNumberOfSteps();
+double prevX, prevY, h = p.h, h2 = p.h*p.h;
+

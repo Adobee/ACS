@@ -1,0 +1,21 @@
+break;
+}
+step++;
+
+}
+
+if (!cycle)
+return null;
+
+int cycleStep = 0;
+
+while (oneStep.next != null &amp;&amp; secondStep.next != null
+oneStep = oneStep.next;
+secondStep = secondStep.next.next;
+if (oneStep == secondStep)
+break;
+cycleStep++;
+}
+
+int fistStep = step - cycleStep;
+

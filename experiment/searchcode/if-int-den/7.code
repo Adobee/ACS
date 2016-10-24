@@ -1,0 +1,14 @@
+return new Ratio(num * r.den, den * r.num);
+}
+
+Ratio abs() {
+return new Ratio(Math.abs(num), den);
+}
+
+public int compareTo(Ratio o) {
+return (int) signum(num * o.den - den * o.num);
+}
+
+void normalize() {
+if (num == 0)
+

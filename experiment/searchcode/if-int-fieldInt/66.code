@@ -1,0 +1,7 @@
+if (e.getSource()==hashbutton) {
+thetext = hashsizefield.getText();
+
+int fieldInt;
+try {
+fieldInt = Integer.parseInt(thetext);
+

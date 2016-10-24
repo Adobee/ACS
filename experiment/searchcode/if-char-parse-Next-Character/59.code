@@ -1,0 +1,11 @@
+public LexicalAnalyzer(Reader input, Set<String> keywords) throws IOException, ParseException {
+this.keywords = keywords;
+this.input = input;
+nextChar();
+advance();
+nextToken = new Token(Token.Type.EOF, &quot;&quot;);
+return;
+}
+// Check the next character
+if(Character.isJavaIdentifierStart(lookahead)) {
+

@@ -1,0 +1,14 @@
+public void push( float input ){
+if(numEntries < size){
+numEntries++;
+buffer[head] = input;
+head = (head + 1)%size;
+tail = (tail + 1)%size;
+}
+
+}
+
+// pop an entry from the tail of the buffer
+public float pop(){
+if(numEntries > 0){
+

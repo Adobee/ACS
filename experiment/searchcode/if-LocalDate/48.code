@@ -1,0 +1,16 @@
+assertTrue(Dates.inRange(startDate, endDate, inBetween));
+}
+
+/**
+* Tests if correct localDate is build.
+*/
+@Test
+public void testBuildLocalDate1() {
+&amp;&amp; con.getMonth() == cur.getMonth());
+}
+
+/**
+* Tests if correct localDate is build.
+*/
+@Test
+

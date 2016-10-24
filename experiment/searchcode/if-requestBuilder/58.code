@@ -1,0 +1,11 @@
+import com.google.gwt.http.client.RequestBuilder;
+import com.google.gwt.http.client.URL;
+
+/**
+* @author aliman
+* @see org.cggh.chassis.generic.atom.vanilla.client.protocol.AtomService#deleteEntry(java.lang.String)
+*/
+public Deferred<Void> deleteEntry(String entryUrl) {
+
+if (baseUrl != null) entryUrl = baseUrl + entryUrl;
+

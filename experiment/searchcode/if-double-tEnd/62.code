@@ -1,0 +1,9 @@
+public SampleImitator(Integer N, double tStart, double tEnd, double tStep)
+throws NumberIsTooLargeException, NullArgumentException, ZeroException, NotPositiveException {
+ys.add(1 - ((double) k / (double) N));
+
+t += tStep;
+} while (t <= tEnd);
+
+return getSplineFunction(xs, ys);
+

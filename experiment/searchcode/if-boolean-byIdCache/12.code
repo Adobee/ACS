@@ -1,0 +1,8 @@
+private Map<Long,Faction> byIdCache;
+
+// thread-safe , immutable map
+private Map<String,Faction> byNameCache;
+
+private final Object LOCK = new Object();
+private volatile boolean initialized = false;
+

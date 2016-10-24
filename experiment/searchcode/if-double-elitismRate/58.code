@@ -1,0 +1,10 @@
+SelectionMethod selectionMethod, Random generator,
+double crossoverRate, double mutationRate, double elitismRate,
+BuildPopulation randomPopulationBuilder) {
+
+BuildPopulation object = null;
+
+if (useGeneticOperators) {
+
+object = new DTBuildNextGeneration(selectionMethod, generator,
+

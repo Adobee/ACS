@@ -1,0 +1,12 @@
+eq = strs == null;
+}
+
+if (strs != null) {
+for (int i = 0; i < strs.length; i++) {
+eq = eq || strs[i].equals(cs);
+public static boolean containsAny(CharSequence cs, char[] searchChars) {
+if (isEmpty(cs) || isEmpty(searchChars)) {
+return false;
+}
+int csLength = cs.length();
+

@@ -1,0 +1,9 @@
+public String toString() {
+return mRawType;
+}
+
+boolean is(String rawType) {
+public static MessageType fromRawType(String rawType) {
+if (Request.is(rawType)) return Request;
+if (Response.is(rawType)) return Response;
+

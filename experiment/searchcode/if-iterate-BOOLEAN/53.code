@@ -1,0 +1,8 @@
+IterateContext iterate = (IterateContext) ctx.getAttribute(tag);
+if (iterate == null) {
+IterateContext parentIterate = ctx.peekIterateContext();
+parentIterate.next();
+parentIterate.setAllowNext(false);
+if (!parentIterate.hasNext()) {
+parentIterate.setFinal(true);
+

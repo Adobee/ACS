@@ -1,0 +1,17 @@
+public final int width = 15, height = 90;
+public int leftOrRight;
+
+public int direction;
+public double prevY, dy;
+
+public Color color = Color.white;
+g.fillRect((int)x,(int)y,width,height);
+}
+
+public void update(){
+
+dy = prevY - y;
+prevY = y;
+if(dy > 0){
+direction = 1;
+

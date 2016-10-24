@@ -1,0 +1,8 @@
+/** test multiply */
+public void testMultiply() {
+DenseRealMatrix m = new DenseRealMatrix(testData);
+assertClose(m2.multiply(identity), m2, entryTolerance);
+try {
+m.multiply(new DenseRealMatrix(bigSingular));
+fail(&quot;Expecting illegalArgumentException&quot;);
+

@@ -1,0 +1,14 @@
+println(&quot;List of English Consonants:\n&quot;);
+
+for(char ch = &#39;A&#39;; ch <= &#39;Z&#39;; ch++)
+{
+if (isEnglishConsonant(ch))
+public static boolean isEnglishConsonant(char ch)
+{
+ch = Character.toLowerCase(ch);
+
+return ch != &#39;a&#39; &amp;&amp; ch != &#39;e&#39; &amp;&amp;
+ch != &#39;i&#39; &amp;&amp; ch != &#39;o&#39; &amp;&amp; ch != &#39;u&#39;;
+}
+}
+

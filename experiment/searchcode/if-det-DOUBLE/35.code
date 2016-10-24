@@ -1,0 +1,9 @@
+int n = a.length;
+double det = 1;
+for (int k = 0; k < n; k++) {
+double t = a[k][k];
+if (j != k) {
+double u = a[j][k];
+for (int i = 0; i < n; i++)
+if (i != k) a[j][i] -= a[k][i] * u;
+

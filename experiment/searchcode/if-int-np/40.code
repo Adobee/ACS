@@ -1,0 +1,12 @@
+if(mem[S][p][rest]!=INF)return mem[S][p][rest];
+int res = INF;
+if(p-1>=0){
+int np = p-1, ns = S|(1<<np), nr = rest-1, c = 0;
+if(((S>>np)&amp;1)==0){
+else c+=-a[H][np];
+}
+res = Math.min(res, c+get(H, ns, np, nr));
+}
+if(p+1<w){
+int np = p+1, ns = S|(1<<np), nr = rest-1, c = 0;
+

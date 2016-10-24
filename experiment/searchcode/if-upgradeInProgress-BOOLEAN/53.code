@@ -1,0 +1,12 @@
+public void setBurning(boolean burns) {
+if (! flammable()) return ;
+burning = burns ;
+}
+
+
+protected void adjustRepair(float inc) {
+if (! (basis instanceof Venue)) return ;
+final World world = ((Venue) basis).world() ;
+if (world == null) return ;
+final boolean needs = (state != STATE_RAZED) &amp;&amp; (
+

@@ -1,0 +1,6 @@
+public IntegerDistribution makeDistribution() {
+return new PoissonDistributionImpl(DEFAULT_TEST_POISSON_PARAMETER);
+public void testNormalApproximateProbability() throws Exception {
+PoissonDistribution dist = new PoissonDistributionImpl(100);
+double result = dist.normalApproximateProbability(110)
+

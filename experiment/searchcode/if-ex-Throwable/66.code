@@ -1,0 +1,8 @@
+public static Throwable getRootCause ( Throwable ex )
+{
+for ( Throwable cause; ; ex = cause )
+if ( ( cause = ex.getCause () ) == null ) return ex;
+}
+
+}
+

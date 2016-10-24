@@ -1,0 +1,6 @@
+EqualFieldCondition(Class<? extends FieldDescriptor> descriptorClass, final Object expectedValue) {
+super(descriptorClass);
+protected boolean matchFieldValue(Object comparableFieldValue) {
+if ( logger.isDebugEnabled() ) {
+logger.debug( &quot;compare &quot; + this.getDescriptorClass().getSimpleName() + &quot; (&quot; + this.expectedValue + &quot; ?= &quot; + comparableFieldValue + &quot;) &quot; );
+

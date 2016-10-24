@@ -1,0 +1,10 @@
+public abstract class ShutDownHookAbstract extends Thread implements ShutDownHook {
+
+protected volatile boolean registered = false;
+
+@Override
+public void register() {
+if(this.registered) return;
+Runtime.getRuntime().addShutdownHook(this);
+this.registered = true;
+

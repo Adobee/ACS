@@ -1,0 +1,7 @@
+private static <T extends Comparable<T>> void merge(T[] array, int left, int mid, int right) {
+int firstIndex = 0, secondIndex = 0;
+Object[] result = new Object[right - left];
+
+while (left + firstIndex < mid &amp;&amp; mid + secondIndex < right) {
+if (array[left + firstIndex].compareTo(array[mid + secondIndex]) < 0) {
+

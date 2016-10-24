@@ -1,0 +1,17 @@
+double n = 0;
+double mean = 0;
+double M2 = 0;
+double delta = 0;
+
+for (double x : inputArray){
+mean = mean + delta/n;
+if (n > 1){
+M2 = M2 + delta*(x - mean);
+}
+}
+
+return  Math.sqrt(M2/(n-1));
+}
+
+}
+

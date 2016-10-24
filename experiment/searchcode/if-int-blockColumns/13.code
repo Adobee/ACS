@@ -1,0 +1,8 @@
+private final int blockColumns;
+
+public BlockRealMatrix4(int rows, int columns) throws NotStrictlyPositiveException {
+//            int iHeight = this.blockHeight(iBlock);
+//
+//            for (int jBlock = 0; jBlock < this.blockColumns; ++index) {
+//                if (blockData[index].length != iHeight * this.blockWidth(jBlock)) {
+

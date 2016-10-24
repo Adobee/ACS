@@ -1,0 +1,8 @@
+Range heightRange, ArrangeParams params) {
+Size2D naturalSize = arrangeNN(g2, params);
+if (!widthRange.contains(naturalSize.getWidth())) {
+return arrangeFR(g2, widthRange.getUpperBound(), heightRange,
+params);
+}
+else if (!heightRange.contains(naturalSize.getHeight())) {
+

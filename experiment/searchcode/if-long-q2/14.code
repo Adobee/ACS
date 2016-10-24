@@ -1,0 +1,13 @@
+assert(q1.size() == q2.size() || q1.size() == q2.size() + 1);
+if (size() == 0) {
+q1.insert(i);
+return;
+}
+if (size() == 1) {
+int n = q1.max();
+if (i >= n)
+q2.insert(i);
+else {
+q1.delMax();
+q1.insert(i);
+

@@ -1,0 +1,11 @@
+return this;
+}
+float direction = desiredRotation - rotation;
+if (direction < -180)  {
+direction -= 360;
+}
+
+float newRotation;
+if (direction > 0) {
+newRotation = rotation + maxChangeAmount;
+

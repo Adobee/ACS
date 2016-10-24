@@ -1,0 +1,11 @@
+private String expression;
+private boolean isRegEx;
+// Default to only one instance of this expression:
+private int duplicates = 1;
+public TestExpression(String s, int duplicates) {
+this(s);
+this.duplicates = duplicates;
+}
+public String toString() {
+if (isRegEx) return p.pattern();
+

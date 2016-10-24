@@ -1,0 +1,10 @@
+ChildrenRenderer childrenRenderer) {
+super(rendererSettings, name, labelRenderer, childrenRenderer);
+myProperties.setClassName(CommonClassNames.JAVA_LANG_OBJECT);
+if (originalLabelRenderer instanceof TypeRenderer) {
+((TypeRenderer)originalLabelRenderer).setClassName(name);
+}
+}
+
+if (getRawChildrenRenderer() != null) {
+

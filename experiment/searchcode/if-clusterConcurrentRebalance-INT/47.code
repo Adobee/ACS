@@ -1,0 +1,6 @@
+Setting.intSetting(&quot;cluster.routing.allocation.cluster_concurrent_rebalance&quot;, 2, -1,
+Property.Dynamic, Property.NodeScope);
+private volatile int clusterConcurrentRebalance;
+int relocatingShards = allocation.routingNodes().getRelocatingShardCount();
+if (relocatingShards >= clusterConcurrentRebalance) {
+

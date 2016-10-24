@@ -1,0 +1,5 @@
+ObjectMapper objectMapper = createMapper(name, context.path().fullPathAsText(name), enabled, nested, dynamic, pathType, mappers, context.indexSettings());
+objectMapper.includeInAllIfNotSet(includeInAll);
+Object fieldNode = entry.getValue();
+if (parseObjectOrDocumentTypeProperties(fieldName, fieldNode, parserContext, builder) || parseObjectProperties(name, fieldName,  fieldNode, parserContext, builder)) {
+

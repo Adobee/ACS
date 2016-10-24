@@ -1,0 +1,5 @@
+@SuppressWarnings(&quot;unchecked&quot;) // Type system is stupid
+public static <T1,T2,T3> Function<T1,T3> compose(Function<T1,T2> f,Function<? super T2,T3> g) {
+public static <T1,T2> BijectiveFunction<T2,T1> invert(BijectiveFunction<T1,T2> f) {
+if( f instanceof InvertedBijection) {
+

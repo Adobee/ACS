@@ -1,0 +1,18 @@
+private int currentCapacity;
+private int maxCapacity;
+
+public Glass(int maxCapacity) {
+super();
+this.liquid = null;
+public String getLiquid() {
+return liquid;
+}
+
+
+
+public int getCurrentCapacity() {
+return currentCapacity;
+}
+
+public int getMaxCapacity() {
+

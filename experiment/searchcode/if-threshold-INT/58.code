@@ -1,0 +1,10 @@
+private Threshold lowerThreshold, upperThreshold;
+private int interval;
+public Block(Command command, Threshold lowerThreshold, Threshold upperThreshold, int interval)
+this.interval = interval;
+}
+
+@Override
+public int compareTo(Block o) {
+if (this.getLowerThreshold() == null) return -1;
+

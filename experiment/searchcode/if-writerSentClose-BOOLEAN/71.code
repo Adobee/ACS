@@ -1,0 +1,7 @@
+/** True after calling {@link #close(int, String)}. No writes are allowed afterward. */
+private volatile boolean writerSentClose;
+/** True after a close frame was read by the reader. No frames will follow it. */
+@Override public void sendMessage(PayloadType type, Buffer payload) throws IOException {
+if (writerSentClose) throw new IllegalStateException(&quot;closed&quot;);
+writer.sendMessage(type, payload);
+

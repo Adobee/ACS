@@ -1,0 +1,7 @@
+ListenableActionFuture<FlushResponse> flushResponseFuture = null;
+if (randomBoolean()) {
+ArrayList<String> indicesToFlush = new ArrayList<>();
+boolean initBlocking = allowPartial || randomBoolean();
+if (initBlocking) {
+assertAcked(client.admin().cluster().preparePutRepository(&quot;test-repo&quot;)
+

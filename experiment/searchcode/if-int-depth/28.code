@@ -1,0 +1,7 @@
+
+public class MinimumDepthOfBinaryTree {
+public int minDepth(TreeNode root) {
+if(root==null) return 0;
+if(root.left==null&amp;&amp;root.right==null) return 1;
+int depth = -1;
+

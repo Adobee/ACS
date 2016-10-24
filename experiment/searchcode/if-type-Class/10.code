@@ -1,0 +1,10 @@
+private BoxingUtil() {
+}
+
+public static Class<?> getBoxed(Class<?> type) {
+if (!type.isPrimitive()) {
+return type;
+} else if (Byte.TYPE.equals(type)) {
+return Byte.class;
+} else if (Character.TYPE.equals(type)) {
+

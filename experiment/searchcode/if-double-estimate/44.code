@@ -1,0 +1,12 @@
+return estimateResult;
+}
+
+/**
+* 根据风险计算收益
+*
+* @param estimateResult
+*/
+public static double calculatePowerTeamEarningsOdds(EstimateResult estimateResult) {
+double ratio = estimateResult.getRatio();
+double powerfulOddsRate = 100 * ratio / (ratio + 1);
+

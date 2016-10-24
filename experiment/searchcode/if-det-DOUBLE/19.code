@@ -1,0 +1,14 @@
+public static CalcTuple CalcQuadRoot(double a, double b, double c) {
+double x1, x2;
+double det = b*b - 4*a*c;
+if(det < 0) {
+return new CalcTuple(0, 0.0, 0.0);
+}
+double sign;
+if(b<0) {
+sign = -1.0;
+} else {
+sign = 1.0;
+}
+det = Math.sqrt(det);
+

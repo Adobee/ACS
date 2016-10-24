@@ -1,0 +1,12 @@
+// If we&#39;re adding to 0 and we&#39;re full, don&#39;t do anything
+if (location == 0 &amp;&amp; size_ == data_.length)
+return;
+
+int realIndex = getRealIndex(location);
+return wrapIndex(ptr_ - size_ + location);
+}
+
+private int wrapIndex(int realIndex) {
+if (realIndex > 0)
+return realIndex % data_.length;
+

@@ -1,0 +1,15 @@
+throw new RuntimeException(&quot;Bad character: &quot; + token + &quot;, expected: &quot; + ch);
+next();
+}
+
+// number ::= number | &#39;(&#39; expression &#39;)&#39;
+double number() {
+if (token == &#39;n&#39;) {
+double v = tokval;
+skip(&#39;n&#39;);
+return v;
+}
+skip(&#39;(&#39;);
+double v = expression();
+skip(&#39;)&#39;);
+

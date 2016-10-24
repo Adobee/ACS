@@ -1,0 +1,10 @@
+/** Number of block columns of the matrix. */
+private final int blockColumns;
+
+/**
+* Create a new matrix with the supplied row and column dimensions.
+blockRows    = (rows    + BLOCK_SIZE - 1) / BLOCK_SIZE;
+blockColumns = (columns + BLOCK_SIZE - 1) / BLOCK_SIZE;
+
+if (copyArray) {
+

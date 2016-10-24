@@ -1,0 +1,9 @@
+int midRow = startRow + (endRow -startRow)/2;
+int lastV = matrix[midRow][matrix[midRow].length-1];
+if (lastV == target) {
+int mid = startP + (endP - startP)/2;
+int midV = matrix[endRow][mid];
+if (midV == target) {
+return true;
+} else if (midV < target) {
+

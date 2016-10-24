@@ -1,0 +1,8 @@
+final double coeffDot2 = 2 * theta;
+final double coeffDot1 = 1 - coeffDot2;
+
+if ((previousState != null) &amp;&amp; (theta <= 0.5)) {
+for (int i = 0; i < interpolatedState.length; ++i) {
+final double yDot1 = yDotK[0][i];
+final double yDot2 = yDotK[1][i];
+

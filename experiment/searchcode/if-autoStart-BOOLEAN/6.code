@@ -1,0 +1,11 @@
+public void execute(long interval, boolean autoStart) {
+controller.setInterval(interval);
+if (autoStart) {
+interval = step * 10;
+}
+}
+
+boolean autoStart = false;
+if (args.length > 1) {
+autoStart = Boolean.parseBoolean(args[1]);
+

@@ -1,0 +1,8 @@
+this.tokenFreq = new ConcurrentHashMap<String, Integer>();
+}
+
+public static long test(int numPages, String pageFile) {
+ExecutorService pool = Executors.newCachedThreadPool();
+
+TokenCountV3 tokenCount = new TokenCountV3(numPages, pageFile);
+

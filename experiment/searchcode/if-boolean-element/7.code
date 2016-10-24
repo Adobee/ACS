@@ -1,0 +1,9 @@
+return searchElement(root.lchild, element);
+}
+
+//to search an element if NOT a BST
+public boolean searchElementInANonBST(Node_BST root, int element){
+if(root == null)
+return false;
+boolean retV = searchElementInANonBST(root.lchild,element);
+

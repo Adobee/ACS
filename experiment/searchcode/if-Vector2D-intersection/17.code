@@ -1,0 +1,11 @@
+return Math.hypot(b.x - a.x, b.y - a.y);
+}
+
+/**
+* Determines if an intersection is occurring with another line segment.
+*
+* @param b
+Line2D perpendicular = new Line2D(point, new Vector2d(b.x - a.x + point.x, b.y - a.y + point.y));
+Vector2d intersection = lineIntersection(perpendicular);
+if (intersection.x >= minX() &amp;&amp; intersection.x <= maxX() &amp;&amp; intersection.y >= minY() &amp;&amp; intersection.y <= maxY()) {
+

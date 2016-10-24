@@ -1,0 +1,10 @@
+private Integer mSequence;
+
+private Object mTag;
+
+private long mRequestBirthTime = 0;
+
+private RequestQueue mRequestQueue;
+long requestTime = SystemClock.elapsedRealtime() - mRequestBirthTime;
+if (requestTime >= SLOW_REQUEST_THRESHOLD_MS) {
+

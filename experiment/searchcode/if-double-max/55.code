@@ -1,0 +1,9 @@
+public class BoundCanvas implements LineCanvas {
+private double maxY = Double.NEGATIVE_INFINITY;
+private double minY = Double.POSITIVE_INFINITY;
+public void drawLine(double x1, double y1, double x2, double y2) {
+if (y1 > maxY) {
+maxY = y1;
+}
+if (y2 > maxY) {
+

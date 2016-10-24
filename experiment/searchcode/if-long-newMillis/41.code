@@ -1,0 +1,8 @@
+public synchronized Date time() {
+if (isPaused) return time;
+
+long currentMillis = currentTimeMillis();
+if (currentMillis != millis) {
+synchronized void recover(long newMillis) {
+if (!isPaused) throw new IllegalStateException(&quot;AlarmClock must be paused for recovering.&quot;);
+

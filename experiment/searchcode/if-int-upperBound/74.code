@@ -1,0 +1,12 @@
+void recCount(long[] workspace, int lowerBound, int upperBound) {
+
+if (upperBound == lowerBound) return;
+
+int mid = (lowerBound + upperBound) / 2;
+merge(input, workspace, lowerBound, mid, upperBound);
+
+}
+
+
+void merge(long[] source, long[] workspace, int lowerBound, int mid, int upperBound) {
+

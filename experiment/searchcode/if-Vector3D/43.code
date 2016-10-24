@@ -1,0 +1,10 @@
+Vector3D v = u.getCrossProduct(n);
+if (v.getLengthSquared() < EPSILON) {
+v = u.getCrossProduct(m);
+}
+Vector3D w = u.getCrossProduct(v);
+public OrthonormalBasis constructFromV(Vector3D a) {
+Vector3D v = a.makeUnitVector();
+Vector3D u = v.getCrossProduct(n);
+if (u.getLengthSquared() < EPSILON) {
+

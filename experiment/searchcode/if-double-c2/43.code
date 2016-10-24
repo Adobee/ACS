@@ -1,0 +1,5 @@
+public double toSeconds(double d) { return d/(C3/C2); }
+public double toMinutes(double d) { return d/(C4/C2); }
+public double toHours(double d)   { return d/(C5/C2); }
+public double toDays(double d)    { return d/(C6/C2); }
+

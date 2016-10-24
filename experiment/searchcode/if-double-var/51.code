@@ -1,0 +1,7 @@
+private double currentPredictedMean;
+private double currentPredictedVar;
+private double  predictionVar;
+this.enableDeltaDistance = enableDeltaDistance;
+if(this.enableDeltaDistance) {
+predictionVar = 1.0;
+

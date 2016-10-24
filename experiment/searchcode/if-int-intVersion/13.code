@@ -1,0 +1,11 @@
+public Version(final String version) {
+if (version.matches(&quot;^[0-9]+$&quot;)) {
+this.intVersion = Integer.parseInt(version);
+this.strVersion = null;
+}
+}
+
+@Override
+public int compareTo(@Nonnull final Version o) {
+if (o.intVersion > Integer.MIN_VALUE &amp;&amp; intVersion > Integer.MIN_VALUE) {
+

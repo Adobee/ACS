@@ -1,0 +1,8 @@
+public int stmt_seq1(Expr expr, ArrayList<Lex> lexs) throws Exception {
+int key = expr.startkey;
+if (key<lexs.size()&amp;&amp;lexs.get(key).attribute.equals(&quot;;&quot;)) {
+int key = expr.startkey;
+if (lexs.get(expr.startkey).attribute.equals(&quot;if&quot;)) {
+
+Expr expr_if = new Expr(&quot;if-statement&quot;, expr.startkey, expr.endkey);
+

@@ -1,0 +1,9 @@
+    this.overallRoot = this.tighten(this.overallRoot);
+}
+
+private IntTreeNode tighten(IntTreeNode current) {
+    if (current != null) {
+        current.left = this.tighten(current.left);
+        current.right = this.tighten(current.right);
+        if (current.left != null &amp;&amp; current.right == null) {
+

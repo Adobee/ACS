@@ -1,0 +1,17 @@
+System.out.format(&quot;Solar System %d: %.03f %.03f\n&quot;,CASE,x,y);
+
+}
+}
+static double find(double d)
+{
+double ans = 0.0;
+if(d > Math.PI){
+d -= PI;
+ans += a2*b2*PI/2;
+ans += f(a2)-f(x);
+double v = abs(x+sqrt(a2*a2-b2*b2))*y/2;
+if(x < -sqrt(a2*a2-b2*b2))
+ans -= v;
+else
+ans += v;
+

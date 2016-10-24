@@ -1,0 +1,15 @@
+public List<Event> gameTick() {
+++gameTicks;
+occuringEvents.clear();
+
+simulate(player1);
+
+if (twoPlayer) {
+return occuringEvents;
+}
+
+private void simulate(Player p) {
+p.simulate(gameTicks);
+
+if ( currentLevel.useCeiling() ) {
+

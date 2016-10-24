@@ -1,0 +1,12 @@
+m_minEnabled = true;
+return this;
+}
+
+public PositionalSafety setMax(double position, double ramp) {
+m_max = position;
+public double run(double value, double position, double speed) {
+double c = 1;
+
+if (m_minEnabled) {
+if (position < m_min) {
+

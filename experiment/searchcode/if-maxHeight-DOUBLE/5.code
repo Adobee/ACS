@@ -1,0 +1,15 @@
+public enum HeightRemaining implements BoardRater {
+INSTANCE;
+
+@Override
+public double rate(TetrisGrid board) {
+int maxHeight = 0;
+int h = board.getColumnHeight(c);
+if (h > maxHeight) {
+maxHeight = h;
+}
+}
+return board.getHeight() - maxHeight;
+}
+}
+

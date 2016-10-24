@@ -1,0 +1,11 @@
+private ScoreCard  mScoreCard;
+private final Handler mHandler = new Handler();
+//Match mMatch;
+private boolean mStopped = false;
+//	mMatch = match;
+}
+@Override
+public void run() {
+if(!isStopped()){
+new DownloadJSONFromEBTask(mScoreCard).execute(Utils.EB_URL);
+

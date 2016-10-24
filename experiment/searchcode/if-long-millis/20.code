@@ -1,0 +1,11 @@
+throws ParseException
+{
+long startMillis = elapsedMillis( start );
+long endMillis   = elapsedMillis( end );
+public static long elapsedMillis( String time )
+{
+Matcher m = longPat.matcher( time );
+if ( m.matches() ) {
+
+// long pattern match
+

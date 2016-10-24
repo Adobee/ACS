@@ -1,0 +1,9 @@
+//degree -> empty aggregable
+private static PolyAggregable empty;
+
+private int maxDegree;
+
+private PolyAggregablesBuilder(int maxDegree){
+this.maxDegree = maxDegree;
+this.empty = new PolyAggregable(0, maxDegree, new double[0], 1);
+

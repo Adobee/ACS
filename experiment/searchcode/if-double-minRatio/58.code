@@ -1,0 +1,9 @@
+* 	@return		an allocation entry
+*/
+public AllocationEntry schedule(Job job) {
+double minRatio = Double.MAX_VALUE;
+long size = ((SWFJob)job).getRequestedNumberOfProcessors();
+double mi = (double) ((SiteStatusInformation)statInfo.get(s)).numProcessors;
+double ratio = (size / mi) + this.minPl.get(s).doubleValue();
+if(ratio < minRatio &amp;&amp; size <= mi){
+

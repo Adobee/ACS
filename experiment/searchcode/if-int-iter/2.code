@@ -1,0 +1,8 @@
+public static <E extends Comparable<? super E>> void inplaceMerge( E[] arrayA, E[] arrayB, int lastA, int lastB){
+int lastIndex = lastA + lastB + 1;
+int iterA = lastA;
+int iterB = lastB;
+
+while(  iterA >= 0 &amp;&amp;  iterB >= 0){
+if(arrayA[iterA].compareTo(arrayB[iterB]) >= 0){
+

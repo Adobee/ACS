@@ -1,0 +1,9 @@
+package cn.evolab.adai.math;
+
+import cn.evolab.adai.core.matrix.Vector;
+import cn.evolab.adai.core.matrix.VectorException;
+public static double run(Vector<Double> a, Vector<Double> b)  throws VectorException{
+double stdev = 0.0;
+if(a.size()!=b.size()) {
+throw new VectorException(&quot;Size of vector a not equal to b&quot;);
+

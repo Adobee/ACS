@@ -1,0 +1,10 @@
+public PyXRange(int ilow, int ihigh, int istep) {
+super(TYPE);
+
+if (istep == 0) {
+throw Py.ValueError(&quot;xrange() arg 3 must not be zero&quot;);
+n = getLenOfRange(ihigh, ilow, -istep);
+}
+if (n < 0) {
+throw Py.OverflowError(&quot;xrange() result has too many items&quot;);
+

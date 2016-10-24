@@ -1,0 +1,11 @@
+public double adjustedLog10(double val) {
+boolean negFlag = (val < 0.0);
+if (negFlag) {
+double res = Math.log(val) / LOG10_VALUE;
+return negFlag ? (-res) : res;
+}
+
+
+public double adjustedPow10(double val) {
+boolean negFlag = (val < 0.0);
+

@@ -1,0 +1,6 @@
+private boolean validLogic(String dayofmonthString) {
+String[] split = dayofmonthString.split(&quot;\\D&quot;);
+if (split.length > 1) {
+if (!dayofmonthString.contains(&quot;/&quot;)) {
+for (int i = 0; i < split.length - 1; i++) {
+

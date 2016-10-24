@@ -1,0 +1,13 @@
+return false;
+}
+
+AtomSign atomSign = (AtomSign) o;
+
+if (getSign() != null ? !getSign().equals(atomSign.getSign()) : atomSign.getSign() != null) {
+return true;
+}
+
+@Override
+public int hashCode() {
+return getSign() != null ? getSign().hashCode() : 0;
+

@@ -1,0 +1,8 @@
+public boolean containsAny() {
+int cc = toCompressedContains();
+if (cc > 0) {
+cc -= Contains.ONLY_NAME.getVal();
+EnumSet<Contains> dest = EnumSet.noneOf(Contains.class);
+for (Contains c : all) {
+if ((val &amp; c.getVal()) == c.getVal()) {
+

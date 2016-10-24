@@ -1,0 +1,16 @@
+lower = getValue() < other.getValue();
+}
+return lower;
+}
+
+public Years plus(int years) {
+Years result;
+
+if (years == 0)
+return Years.years(FieldUtils.safeMultiply(getValue(), scalar));
+}
+public Years dividedBy(int divisor) {
+Years result;
+
+if (divisor == 1)
+

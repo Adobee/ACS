@@ -1,0 +1,16 @@
+public Optional<Walk<V, E>> findPath(Searchable<V, E> graph, V start,
+Predicate<V> termination) {
+if (termination.test(start))
+return Optional.of(new Walk<V, E>(start));
+Walk<V, E> w = Collections.min(newQ, heuristicComparator());
+newQ.remove(w);
+if (termination.test(w.endVertex()))
+return Optional.of(w);
+q.add(w);
+}
+}
+return Optional.empty();
+}
+
+}
+

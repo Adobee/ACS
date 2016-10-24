@@ -1,0 +1,10 @@
+interpolator.shift();
+
+double error = 0;
+for (boolean loop = true; loop;) {
+
+if (firstTime || !fsal) {
+if (firstTime) {
+final double[] scale;
+if (vecAbsoluteTolerance != null) {
+

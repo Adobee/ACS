@@ -1,0 +1,10 @@
+* This test validates all of the structural attributes
+*/
+@Test
+public final void testValidateStructuralAttributes() {
+
+final EObject objectToTest = getObjectToTest();
+final BasicDiagnostic diagnostician = Diagnostician.INSTANCE.createDefaultDiagnostic(objectToTest);
+
+for (final String structuralAttributeName : STRUCTURAL_ATTRIBUTE_NAMES) {
+

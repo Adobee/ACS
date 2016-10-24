@@ -1,0 +1,13 @@
+package org.apache.hadoop.hdfs;
+
+public class TimeoutMonitorThread extends Thread {
+
+private long timeout;
+synchronized (this) {
+this.wait(timeout);
+if (!isCanceled)
+throw this.timeoutMonitorException;
+}
+
+} catch (InterruptedException e) {
+

@@ -1,0 +1,10 @@
+public Grid3D(Cell[][][] g) {
+this.g = g;
+}
+
+@Override
+public boolean isTraversable(boolean onlyClosest) {
+boolean isTrav = false;
+protected boolean isTraversable(boolean onlyClosest, int x, int y, int z) {
+if (x < 0 || x >= g.length || y < 0 || y >= g[0].length || z < 0
+

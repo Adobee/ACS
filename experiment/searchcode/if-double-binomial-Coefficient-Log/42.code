@@ -1,0 +1,7 @@
+* @return (n choose k)
+*/
+public static long binomialCoefficient(int n, int k) {
+double logCoefficient = logBinomialCoefficient(n, k);
+if( logCoefficient > Math.log( Long.MAX_VALUE ) ) {
+throw new MathException(&quot;Binomial Coefficient value exceeds return type long. Log value is &quot; + logCoefficient );
+

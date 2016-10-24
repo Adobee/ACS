@@ -1,0 +1,11 @@
+public class TransactionIdImpl implements TransactionId {
+
+protected String id;
+public TransactionIdImpl(String id) {
+StringBuffer buffer = new StringBuffer(id);
+return buffer.toString();
+}
+
+public boolean equals(Object object) {
+if(object==null || object.getClass()!=TransactionIdImpl.class ){
+

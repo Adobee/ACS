@@ -1,0 +1,10 @@
+TimeZone tz = TimeZone.getTimeZone(id);
+
+if( tz != null ) {
+zones.add(tz);
+return timeZone.getID();
+}
+
+public String getLongName() {
+return timeZone.getDisplayName(timeZone.inDaylightTime(new Date()), TimeZone.LONG, locale);
+

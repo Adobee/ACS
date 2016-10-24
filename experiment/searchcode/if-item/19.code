@@ -1,0 +1,8 @@
+public Item vendItem(String itemCode){
+if(!isItemExist(itemCode)) return null;
+
+ItemInventory itemInv = itemInventory.get(itemCode);
+ItemInventory itemInv = itemInventory.get(itemCode);
+if(itemInv == null || itemInv.getQuantity() <= 0) return false;
+else return true;
+

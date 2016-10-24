@@ -1,0 +1,10 @@
+private int monthOfYear = -1;
+private int dayOfMonth = -1;
+
+public void setOnDateSetListener(DatePickerDialog.OnDateSetListener onDateSetListener) {
+return new DatePickerDialog(getActivity(), onDateSetListener, year, monthOfYear, dayOfMonth);
+}
+
+public void updateTime(int year, int monthOfYear, int dayOfMonth) {
+this.year = year;
+

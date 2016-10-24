@@ -1,0 +1,14 @@
+this.nextAction = nextAction;
+}
+
+
+@Override
+public void call(Throwable throwable) {
+if (throwable instanceof OnErrorThrowable) {
+call(throwable.getCause());
+return;
+}
+
+doCall(throwable);
+if (nextAction != null) nextAction.call(throwable);
+

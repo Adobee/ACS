@@ -1,0 +1,6 @@
+public boolean canAppendToBeetle(Beetle beetle) throws InvalidBodyPartSequence {
+boolean hasBody = beetle.getBodyParts().stream().anyMatch(bp -> bp instanceof Body);
+
+if (! hasBody) {
+throw new InvalidBodyPartSequence(&quot;The beetle needs a Body to have a Head&quot;);
+

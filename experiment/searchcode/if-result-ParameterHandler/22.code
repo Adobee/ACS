@@ -1,0 +1,9 @@
+checkArrayNotNull(handler, handler.autoComplete(result[i]), &quot;AutoComplete for &quot; + result[i]);
+if (handler.autoComplete(result[i]) == null)
+throw new RuntimeException(&quot;AutoComplete of &quot; + handler.getClass() + &quot;returned null for &quot; + result[i]);
+}
+return result;
+}
+
+private static void checkArrayNotNull(ParameterHandler handler, Object[] value, String description) {
+

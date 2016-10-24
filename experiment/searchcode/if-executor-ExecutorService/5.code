@@ -1,0 +1,10 @@
+public static ExecutorService getExecutorService() {
+
+synchronized (lock) {
+if (executorService == null || executorService.isShutdown()) {
+executorService = Executors.newCachedThreadPool();
+public static void shutDownExecutorService() {
+
+if (executorService != null || !executorService.isShutdown()) {
+System.out.println(&quot;ExecutorServiceFactory#shutDownExecutorService()&quot;);
+

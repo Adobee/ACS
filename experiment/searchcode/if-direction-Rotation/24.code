@@ -1,0 +1,11 @@
+public static Direction getFromYaw(Location l) {
+double rotation = (l.getYaw() - 90) % 360;
+
+if (rotation < 0) {
+rotation += 360.0;
+}
+
+if (0 <= rotation &amp;&amp; rotation < 22.5)
+return NORTH;
+else if (22.5 <= rotation &amp;&amp; rotation < 67.5)
+

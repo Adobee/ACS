@@ -1,0 +1,10 @@
+public class BackupManagerWrapper {
+static Boolean available = null;
+
+static boolean available() {
+if (available == null) {
+Class.forName(&quot;android.app.backup.BackupManager&quot;);
+available = Boolean.TRUE;
+} catch (Exception ex) {
+available = Boolean.FALSE;
+

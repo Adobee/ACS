@@ -1,0 +1,7 @@
+public double getUB(Cell c){
+return myheap.get(mymap.get(c)).upperbound;
+}
+public void updateUB(Cell c, double value, double time, ObjectType t){
+int idx = 0;
+if(mymap.containsKey(c)){
+

@@ -1,0 +1,7 @@
+public abstract class TellstickEventReceiverAdaptor implements TellstickEventReceiver {
+private boolean active = true;
+@Override
+public void processEvent(TellstickEvent event) {
+if (active) {
+processActiveEvent(event);
+

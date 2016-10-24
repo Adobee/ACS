@@ -1,0 +1,11 @@
+public IMax(INDArray x, INDArray y) {
+super(x, y);
+}
+
+
+public int update(double accum, int accumIdx, double x, int xIdx){
+return (accum>=x ? accumIdx : xIdx);
+}
+
+public int update(float accum, int accumIdx, float x, int xIdx){
+

@@ -1,0 +1,8 @@
+sums[i][i] = mixes[i];
+products[i][i] = 0;
+}
+for(int len=2; len <= n; len++){
+for(int startPos = 0; startPos+len <= n; startPos++){
+int endPos = startPos + len-1;
+int minProduct = Integer.MAX_VALUE;
+

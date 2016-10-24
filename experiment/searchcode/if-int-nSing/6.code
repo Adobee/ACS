@@ -1,0 +1,9 @@
+assertIsPresent(words, true);
+
+int[] outDegree = {1, 2, 2, 1, 0};
+boolean[] terminals = {false, false, false, false, true};
+testOutDegreeAndTerminal(&quot;sing&quot;, OutDegrees, singTerminals);
+
+// test if can list alphabetically
+String expectedList = &quot;sin\nsing\nso\nson\nsong\nthe\nthin\ntin\ntint\n&quot;;
+

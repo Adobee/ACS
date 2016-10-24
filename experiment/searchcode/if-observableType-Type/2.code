@@ -1,0 +1,14 @@
+* @author Emil Forslund
+*/
+public enum TypeStore {
+INST;
+
+private final Map<String, ObservableType> types;
+this.types = new ConcurrentHashMap<>();
+}
+
+public ObservableType get(String shortName) {
+return types.computeIfAbsent(shortName, s -> new ObservableType(s));
+}
+}
+

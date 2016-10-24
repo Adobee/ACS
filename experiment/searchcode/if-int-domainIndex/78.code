@@ -1,0 +1,8 @@
+@Override
+public void setCommand(String command) {
+int ifIndex = command.indexOf(IF_SEPERATOR);
+if (ifIndex > 0) {
+String leftValue = command.substring(0, operatorIndex).trim();
+int domainIndex = leftValue.indexOf(DOMAIN_SEPERATOR);
+if (domainIndex > 0) {
+

@@ -1,0 +1,9 @@
+static public Pattern findElement(ValidatorPatternBuilder builder, Name name, Pattern start) {
+FindElementFunction f = new FindElementFunction(builder, name);
+start.apply(f);
+if (f.pattern == null)
+public VoidValue caseOneOrMore(OneOrMorePattern p) {
+if (!haveProcessed(p))
+p.getOperand().apply(this);
+return VoidValue.VOID;
+

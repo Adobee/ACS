@@ -1,0 +1,7 @@
+import org.jfree.chart.labels.StandardPieSectionLabelGenerator;
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.data.general.DefaultPieDataset;
+List concount = null;
+if(request.getSession().getAttribute(&quot;concount&quot;)!=null){
+concount = (ArrayList)request.getSession().getAttribute(&quot;concount&quot;);
+

@@ -1,0 +1,11 @@
+private int currentIteration = 0;
+private int maxIterations = 200;
+
+public IterationHalt(int maxIterations){
+this.maxIterations = maxIterations;
+public boolean halt() {
+if(currentIteration == maxIterations){
+return true;
+}else{
+return false;
+

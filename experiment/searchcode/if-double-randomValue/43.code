@@ -1,0 +1,7 @@
+double heartRangeMin = 20.0;
+double heartRangeMax = 150.0;
+double randomValue = heartRangeMin + (heartRangeMax - heartRangeMin)
+* r.nextDouble();
+
+obj.put(PatientScheme.FIELD_HEART_RATE, randomValue);
+

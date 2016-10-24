@@ -1,0 +1,11 @@
+import org.jfree.chart.ChartPanel;
+import org.jfree.chart.ChartUtilities;
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.axis.DateAxis;
+private int height = 1000;//
+
+private JFreeChart chart = null;
+
+public ChartBase(VChart vChart){
+this(vChart, true);
+

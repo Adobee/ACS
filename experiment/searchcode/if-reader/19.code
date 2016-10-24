@@ -1,0 +1,22 @@
+private BufferedReader getReader() throws Exception
+{
+if(reader == null)
+{
+reader = new BufferedReader(new FileReader(filePath));
+this.reader = reader;
+}
+
+public void closeReader()
+{
+try
+{
+if(reader != null)
+reader.close();
+}
+catch(Exception e)
+{
+e.printStackTrace();
+}
+}
+}
+

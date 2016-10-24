@@ -1,0 +1,9 @@
+int s = 0;
+while (true) {
+char a = (char) (in.readByte() &amp; 0xff);
+if (a == 0) {
+out[s] = a;
+if (a < &#39;\u0080&#39;) {
+s++;
+} else if ((a &amp; 0xe0) == 0xc0) {
+

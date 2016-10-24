@@ -1,0 +1,11 @@
+public NotifyFilter lifecycleFilter() {
+return this.lnf;
+}
+
+public NotifyFilter allPassFilter() {
+return this.apnf;
+}
+
+public NotifyFilter getFilter(NotificationListener nl) {
+if (NotifyProducer.class.isAssignableFrom(nl.getClass())) {
+

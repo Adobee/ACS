@@ -1,0 +1,10 @@
+final class Credentials {
+
+private String m_AccountName;
+
+private StorageKey m_Key;
+
+public Credentials(String accountName, byte key[]) {
+if (accountName == null || accountName.length() == 0)
+throw new IllegalArgumentException(&quot;Invalid accountName&quot;);
+

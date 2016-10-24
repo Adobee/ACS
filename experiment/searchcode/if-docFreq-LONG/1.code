@@ -1,0 +1,15 @@
+Map<Document, Integer> docFreq;
+private long collisions;
+private CollisionLogger logger;
+
+public CollisionCounter(CollisionLogger logger){
+public void addDocument(Document doc) {
+
+Integer freq = docFreq.get(doc);
+
+if (freq == null){
+freq = 0;
+}
+
+docFreq.put(doc, freq+1);
+

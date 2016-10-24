@@ -1,0 +1,12 @@
+public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par4)
+{
+if (stack.getTagCompound() == null || !stack.getTagCompound().hasKey(&quot;Energy&quot;) || stack.getTagCompound().getInteger(&quot;Energy&quot;) == 0)
+public boolean isRepairable()
+{
+return false;
+}
+
+private void updateItemDamage(ItemStack stack)
+{
+if (stack.getTagCompound() == null || !stack.getTagCompound().hasKey(&quot;Energy&quot;))
+

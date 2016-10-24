@@ -1,0 +1,14 @@
+double distance = Integer.MAX_VALUE;
+int[] result = null;
+for (Boulder element : boulders) {
+double newDistance = Position.getDistance(element.getPosition().getCoordinates(),
+this.getUnit().getPosition().getCoordinates());
+if (newDistance < distance) {
+result = element.getPosition().getCubeCoordinates();
+distance = newDistance;
+}
+}
+return result;
+}
+}
+

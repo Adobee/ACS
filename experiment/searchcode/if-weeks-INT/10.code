@@ -1,0 +1,6 @@
+private static final long serialVersionUID = 0x11FEC4EEB050004L;
+private Integer _weeksOfStreakForEachLevel[] = new Integer[4];
+private int _minOrMaxTimesPerWeek;
+public AchievementPattern(int weeksForLevel1, int weeksForLevel2, int weeksForLevel3, int weeksForLevel4, int minOrMaxTimesPerWeek) {
+if (weeksForLevel1 < 1 ||
+

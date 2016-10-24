@@ -1,0 +1,10 @@
+* Statistics based on (constructed from) external moments cannot
+* be incremented or cleared.</p>
+*/
+protected boolean incMoment;
+* FourthMoment should be incremented directly.</p>
+*/
+@Override
+public void increment(final double d) {
+if (incMoment) {
+

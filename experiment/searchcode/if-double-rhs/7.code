@@ -1,0 +1,9 @@
+public boolean equals (vector rhs)
+{
+if ( getX() == rhs.getX() &amp;&amp; getY() == rhs.getY() &amp;&amp; getZ() == rhs.getZ())
+{
+return true;
+public static boolean equals (vector lhs, vector rhs)
+{
+if (lhs.getX() == rhs.getX() &amp;&amp; lhs.getY() == rhs.getY() &amp;&amp; lhs.getZ() == rhs.getZ())
+

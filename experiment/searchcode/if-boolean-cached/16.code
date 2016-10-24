@@ -1,0 +1,8 @@
+public class CachedResource implements Resource.Readable, Serializable {
+
+private byte[] cachedValue;
+private boolean cached;
+private synchronized byte[] getCachedValue() throws IOException {
+if (!cached) {
+cached = true;
+

@@ -1,0 +1,10 @@
+public synchronized void mouseDragged(MouseEvent me) {
+mouseMoved(me);
+
+if(inPrepPhase)
+{
+int mouseRow = GameEngine.getGridRow(mousePos.y);
+int mouseColumn = GameEngine.getGridColumn(mousePos.x);
+
+if(abRow == mouseRow &amp;&amp; abColumn == mouseColumn)//If we have not moved the mouse outside the block&#39;s cell
+

@@ -1,0 +1,11 @@
+comparatorMap.put(&quot;org.jboss.errai.ioc.client.api.ReplyTo&quot;, new AnnotationComparator<ReplyTo>() {
+@Override public boolean isEqual(ReplyTo a1, ReplyTo a2) {
+if (!a1.value().equals(a2.value())) {
+return hash;
+}
+});
+}
+
+public boolean isEqual(Annotation a1, Annotation a2) {
+if (QualifierUtil.isSameType(a1, a2)) {
+

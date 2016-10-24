@@ -1,0 +1,12 @@
+* @author Ondrej Kováč <info@vajanko.me>
+*/
+public abstract class DataReceiver<T> {
+
+private final Class<T> expectedType;
+
+/**
+* Each extending class needs to call this constructor with the particular
+public final void checkAndReceive(Object data, double rssi) {
+if (data == null || expectedType.isAssignableFrom(data.getClass())) {
+receive(expectedType.cast(data), rssi);
+

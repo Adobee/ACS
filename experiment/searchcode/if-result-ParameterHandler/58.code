@@ -1,0 +1,7 @@
+ParameterHandler parameterHandler = (ParameterHandler)metaObject.getValue(&quot;delegate.parameterHandler&quot;);
+parameterHandler.setParameters(countStatement);
+ResultSet resultSet = countStatement.executeQuery();
+Page page = (Page)boundSql.getParameterObject();
+if(resultSet.next()) {
+page.setTotal(resultSet.getLong(1));
+

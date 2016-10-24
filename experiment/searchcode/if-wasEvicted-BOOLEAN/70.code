@@ -1,0 +1,16 @@
+* {@link Map#remove}, {@link ConcurrentMap#remove}, or {@link Iterator#remove}.
+*/
+EXPLICIT {
+@Override
+boolean wasEvicted() {
+return false;
+SIZE {
+@Override
+boolean wasEvicted() {
+return true;
+}
+};
+
+/**
+* Returns {@code true} if there was an automatic removal due to eviction (the cause is neither
+

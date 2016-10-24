@@ -1,0 +1,14 @@
+assert (num >= 0) : &quot;bad number: &quot; + num;
+int[] digits = new int[numDigits(num)];
+
+for (int i = 0; i < digits.length; i++) {
+assert (0 <= digits[i] &amp;&amp; digits[i] <= 9) : &quot;bad digit in &quot; + num;
+num /= 10;
+}
+
+return digits;
+}
+
+static int numDigits(long num) {
+int numDigits = 0;
+

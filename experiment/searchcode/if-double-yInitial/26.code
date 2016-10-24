@@ -1,0 +1,10 @@
+if (event.getEventType() == MouseEvent.MOUSE_PRESSED) {
+mouseXInitial = event.getSceneX();
+mouseYInitial = event.getSceneY();
+
+} else if (event.getEventType() == MouseEvent.MOUSE_DRAGGED &amp;&amp; event.isPrimaryButtonDown()) {
+double width = mouseXFinal - mouseXInitial;
+double height = mouseYFinal - mouseYInitial;
+
+Rectangle r;
+

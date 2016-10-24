@@ -1,0 +1,8 @@
+Matcher m = PATTERN.matcher(model);
+int bestBucket = 0;
+if (m.find()) {
+String[] found = m.group(1).split(&quot;-&quot;);
+bestBucket = Integer.parseInt(bucketStr);
+if (bestBucket >= width) {
+// the best bucket is the first immediately bigger than the requested width
+

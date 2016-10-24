@@ -1,0 +1,13 @@
+public TickGen()
+{
+this.minTickSize = DEFAULT_MIN_SIZE;
+this.maxTickSize = DEFAULT_MAX_SIZE;
+return;
+}
+
+TickMetrics tickMets;
+
+if( axis.autoTicks )
+{
+tickMets = generateTickMetrics( dist, bounds );
+

@@ -1,0 +1,12 @@
+private HibernateTemplate template;
+
+private TransactionTemplate transactionTemplate;
+
+private Object objectToTest;
+
+public PersistanceTestCase(Class<?> objectType, Map<Class<?>, Value> values) {
+LOG.info(&quot;Instantiating object type &quot; + objectType);
+try {
+objectToTest = objectType.newInstance();
+} catch (InstantiationException e) {
+

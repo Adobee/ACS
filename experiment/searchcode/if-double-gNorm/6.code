@@ -1,0 +1,6 @@
+aux.sumTgX = g.sumTgX-h.sumTgX;
+aux.sumTgY = g.sumTgY-h.sumTgY;
+double gnorm = Math.hypot(g.sumTgX,g.sumTgY);
+double auxnorm = Math.hypot(aux.sumTgX,aux.sumTgY);
+if (gnorm + hnorm > 0)
+

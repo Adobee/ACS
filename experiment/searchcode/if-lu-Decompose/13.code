@@ -1,0 +1,11 @@
+super(A);
+decompositor = A.decompose(LinearSystemDecompositor.LU);
+
+}
+
+@Override
+public Vector solve(Vector b) {
+for(int i = 0; i < n; i++) {
+if(lu.get(i, i).equals(Scalar.ZERO)) {
+throw new ArithmeticException(&quot;This system is singular&quot;);
+

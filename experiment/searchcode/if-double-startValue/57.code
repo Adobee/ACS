@@ -1,0 +1,11 @@
+private List<GraphLabel> graphLabels;
+
+private Rectangle maxBounds;
+
+public Axis(double startValue, double endValue, String format) {
+this(startValue, endValue, chooseIncrement(startValue, endValue), format);
+}
+
+private static double chooseIncrement(double startValue, double endValue) {
+double length = endValue - startValue;
+

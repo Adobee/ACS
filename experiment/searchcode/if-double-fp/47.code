@@ -1,0 +1,10 @@
+@Override public double fp(double x) { return 3*x*x; }
+}));
+}
+}
+public static boolean equal(double a, double b){ return Math.abs(a-b) < 1e-5*q; }	// a == b
+public double f(double x);
+public double fp(double x);
+}
+static double Newton(double x0, int N_MAX, Function func) throws Exception{
+

@@ -1,0 +1,7 @@
+final BesselJResult res = rjBesl(x, alpha, nb);
+
+if (res.nVals >= nb) {
+return res.vals[n];
+} else if (res.nVals < 0) {
+throw new MathIllegalArgumentException(LocalizedFormats.BESSEL_FUNCTION_BAD_ARGUMENT,order, x);
+

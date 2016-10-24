@@ -1,0 +1,11 @@
+private int threadIndex;
+
+private int keyIndex;
+
+public ObjectKey(int nodeIndex, int threadIndex, int keyIndex) {
+this.keyIndex = keyIndex;
+}
+
+public ObjectKey(int threadIndex, int keyIndex) {
+this.threadIndex = threadIndex;
+

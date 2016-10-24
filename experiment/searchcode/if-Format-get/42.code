@@ -1,0 +1,11 @@
+Format supportedFormats[] = formatControls[x].getSupportedFormats();
+if (supportedFormats == null)
+continue;
+
+if (DeviceInfo.formatMatches(format, supportedFormats) != null)
+result.append(&quot;size=&quot; + (int) d.getWidth() + &quot;x&quot; + (int) d.getHeight() + &quot;, &quot;);
+
+/*
+// try to add color depth
+if (videoFormat instanceof IndexedColorFormat)
+

@@ -1,0 +1,7 @@
+// check direction, no back rays!
+double epsilon = 0.001; // HACK
+if(!doublesided &amp;&amp; ray.direction.normalize().dot(this.normal) >= epsilon) {
+if(this.type == &quot;Plane&quot; &amp;&amp; fixedWidth > -1) {
+Vector3d hitOriginDist = hitPoint.sub(position);
+if(Math.abs(hitOriginDist.x) > fixedWidth || Math.abs(hitOriginDist.z) > fixedWidth) return null;
+

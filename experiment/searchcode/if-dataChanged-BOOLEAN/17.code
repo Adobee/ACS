@@ -1,0 +1,14 @@
+// Sets the dataChanged flag to false and notifies the manager object.
+//
+
+public synchronized void setDataChangedFalse()
+{
+dataChanged = false;
+if (syncedVariableSet != null) {syncedVariableSet.notifyDataUnchanged();}
+// SyncedVariable::getDataChangedFlag
+//
+// Returns the dataChanged flag.
+//
+
+public synchronized boolean getDataChangedFlag()
+

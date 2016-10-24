@@ -1,0 +1,8 @@
+if (this == obj) {
+return true;
+}
+if (!(obj instanceof TimePeriodAnchor)) {
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(TimePeriodAnchor.START)) {
+return TimePeriodAnchor.START;
+

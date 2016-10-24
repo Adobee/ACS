@@ -1,0 +1,10 @@
+Object[] local_keys = keys[bucketIndex];
+
+for (int keyIndex = sizes[bucketIndex]; --keyIndex >= 0; )
+{
+if (key == local_keys[keyIndex] || key.equals(local_keys[keyIndex]))
+public void getData(ObjectIntArrayHolderIF arrayHolder)
+{
+int             bucketSize;
+int             keyIndex;
+

@@ -1,0 +1,10 @@
+public int maxDepth(TreeNode root) {
+return traverse(root, 0, 0);
+}
+
+private int traverse(TreeNode node, int maxdepth, int currentdepth) {
+if (node == null)
+return maxdepth;
+maxdepth = Math.max(++currentdepth, maxdepth);
+maxdepth = Math.max(traverse(node.left, maxdepth, currentdepth), maxdepth);
+

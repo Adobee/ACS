@@ -1,0 +1,17 @@
+public class LPF extends WindowDesign {
+
+private String name;
+private int M;
+private double[] w, h, hn;
+private double[] n;
+return mult;
+
+}
+
+public void run() {
+
+double alfa = (M - 1) / 2;
+hn = new double[n.length];
+
+for (int i = 0; i < hn.length; i++) {
+

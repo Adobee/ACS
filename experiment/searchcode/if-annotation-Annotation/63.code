@@ -1,0 +1,11 @@
+Class<A> annotationType) {
+A annotation = clazz.getAnnotation(annotationType);
+if (annotation != null) {
+return annotation;
+annotation = findAnnotation(ifc, annotationType);
+if (annotation != null) {
+return annotation;
+}
+}
+Class<?> superClass = clazz.getSuperclass();
+

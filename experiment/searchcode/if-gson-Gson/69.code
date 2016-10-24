@@ -1,0 +1,10 @@
+package com.apkdv.leanoteandroid.utils;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+public static Gson gson = null;
+
+public static Gson getGson() {
+if (gson == null)
+synchronized (GsonUtils.class) {
+

@@ -1,0 +1,11 @@
+private final String authTokenFilePath;
+private boolean forceRefresh = false;
+
+public AbstractAuthHandler() {
+this(&quot;auth.token&quot;);
+public void setForceRefresh(final boolean forceRefresh) {
+this.forceRefresh = forceRefresh;
+}
+
+public abstract AuthToken refreshToken() throws IOException, ApiException;
+

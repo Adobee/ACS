@@ -1,0 +1,9 @@
+public static final long LIMIT = 30 * 1000;
+
+private Handler mHandler;
+private volatile boolean isNeedSync = false;
+private volatile boolean isSyncAvailable = true;
+public synchronized void requestSync(final boolean deleteDataBefore, final boolean notifyUser){
+if (deleteDataBefore){
+ShoppistSyncAdapter.requestSync(true, notifyUser);
+

@@ -1,0 +1,9 @@
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+if (request.getRequestURI().contains(ATTACHED)) {
+return false;
+}
+return super.isMultipart(request);
+}
+}
+

@@ -1,0 +1,8 @@
+private static <I extends Comparable<I>> int findIdx(I[] arr, int idx, int size, int expVal) {
+int targetIdx = idx;
+if (arr[idx * 2 + 1].compareTo(arr[idx]) == expVal) {
+targetIdx = idx * 2 + 1;
+}
+int nextIdx = idx * 2 + 2;
+if (nextIdx < size &amp;&amp; arr[nextIdx].compareTo(arr[targetIdx]) == expVal) {
+

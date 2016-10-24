@@ -1,0 +1,11 @@
+private final Periods freq;
+
+private FrequencyIterator(Periods freq, LocalDate start, LocalDate end) {
+this.cursor = start;
+return this.cursor.isBefore(end);
+}
+
+public LocalDate next() {
+if (!this.hasNext()) {
+throw new NoSuchElementException();
+

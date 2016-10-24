@@ -1,0 +1,12 @@
+public class TSPShared implements Shared<Double>, Serializable{
+
+private double upperBound;
+
+public TSPShared(double upperBound) {
+this.upperBound = upperBound;
+}
+
+@Override
+public Double get() {
+return this.upperBound;
+

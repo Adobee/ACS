@@ -1,0 +1,10 @@
+this.forward = forward;
+}
+
+@Override
+public boolean contains(@Nullable Object object){
+return forward.contains(object);
+@Override
+ImmutableSortedSet<E> headSetImpl(E toElement, boolean inclusive){
+return forward.tailSet(toElement, inclusive).descendingSet();
+

@@ -1,0 +1,10 @@
+public static String calculateRange(String range, int minus, int plus) {
+
+if (range.trim().length() > 0) {
+
+String[] rangeSplit = range.split(&quot;\\s+&quot;);
+
+if (rangeSplit.length == 3) {
+
+int rangeStart = Integer.valueOf(rangeSplit[1]);
+

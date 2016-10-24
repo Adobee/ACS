@@ -1,0 +1,7 @@
+return buildChain(child, true);
+}
+ChainComparatorBuilder<T> buildChain(Comparator<T> child, boolean reverse){
+this.comparator = create(this.comparator, child, reverse);
+private ChainComparator<T> create(ChainComparator<T> parent, Comparator<T> child, boolean reverse){
+Comparator<T> comparator;
+

@@ -1,0 +1,11 @@
+Point p1;
+Point p2;
+
+Line(Point p1, Point p2) {
+if (p1.equals(p2)) {
+throw new IllegalArgumentException(&quot;Identical points don&#39;t make a line!&quot;);
+double c2 = other.p1.y - this.p1.y;
+
+double divisor = a1 * b2 - a2 * b1;
+if (divisor == 0) {
+

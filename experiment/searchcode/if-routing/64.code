@@ -1,0 +1,10 @@
+BomRouting bomRouting = (BomRouting) incomingRequest.get(&quot;bomRouting&quot;);
+if (bomRouting == null)
+{
+bomRouting = new BomRouting();
+}
+
+if (incomingRequest.containsKey(&quot;BomRouting_icRouting&quot;))
+String icRoutingString = (String) incomingRequest.get(&quot;BomRouting_icRouting&quot;);
+if (Utility.isEmpty(icRoutingString))
+

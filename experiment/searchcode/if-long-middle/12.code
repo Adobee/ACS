@@ -1,0 +1,8 @@
+while(high >= low) {
+int middle = (low + high) / 2;
+if(data.get(middle)< key) {
+return true;
+}
+if(data.get(middle) < key) {
+low = middle + 1;
+

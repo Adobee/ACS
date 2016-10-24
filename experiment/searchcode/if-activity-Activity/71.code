@@ -1,0 +1,9 @@
+public void addActivity(Activity activity){
+if(activityStack==null){
+activityStack=new Stack<Activity>();
+public void finishActivity(Activity activity){
+if(activity!=null){
+activityStack.remove(activity);
+activity.finish();
+activity=null;
+

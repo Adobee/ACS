@@ -1,0 +1,10 @@
+boolean fixed_velocity, int vel) throws IOException{
+
+
+Random random = new Random(5);
+double duration;
+double x,y,nextx,nexty,incrementox,incrementoy;
+int node_id=0;
+double velocity = random.uniform(MIN_VELOCITY, MAX_VELOCITY); //1;
+if(fixed_velocity) velocity=vel;
+

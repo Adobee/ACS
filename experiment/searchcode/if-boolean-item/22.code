@@ -1,0 +1,11 @@
+
+public class ObjectSort {
+
+public static void sort(Sortable item){
+boolean flag = true;
+for (int i=0; flag &amp;&amp; i <item.size(); i++){
+for (int j=0; j < item.size()-1-i; j++){
+if(item.compare(item.valueAt(j) ,item.valueAt(j+1))>0){
+flag = true;
+Object temp = item.valueAt(j);
+

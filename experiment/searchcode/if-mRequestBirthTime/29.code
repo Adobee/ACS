@@ -1,0 +1,7 @@
+private boolean mResponseDelivered;
+private long mRequestBirthTime;
+private static final long SLOW_REQUEST_THRESHOLD_MS = 3000L;
+requestTime = SystemClock.elapsedRealtime() - this.mRequestBirthTime;
+if (requestTime >= 3000L) {
+HttpLog.d(&quot;%d ms: %s&quot;, new Object[]{Long.valueOf(requestTime), this.toString()});
+

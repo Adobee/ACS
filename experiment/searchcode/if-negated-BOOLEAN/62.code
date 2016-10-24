@@ -1,0 +1,17 @@
+
+public class Variable extends Formula{
+public String varName;
+public boolean isNegated = false;
+public String toString(){
+String s = &quot;&quot;;
+if(isNegated){
+s = &quot;(not &quot;;
+}
+s += varName;
+if(isNegated){
+s += &quot;)&quot;;
+}
+return(s);
+}
+}
+

@@ -1,0 +1,13 @@
+return Math.exp(s);
+}
+
+public void optimize() {
+double best = 0;
+double x_b = 0;
+double y_b = 0;
+for (int j = 0; j < jM; j++) {
+double x = 1d * i / iM;
+double y = 1d * j / jM;
+if(x + y >= 1d) continue;
+double s = compute(x, y);
+

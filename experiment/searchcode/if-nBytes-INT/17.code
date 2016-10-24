@@ -1,0 +1,13 @@
+public class DeviceHistory {
+String ip;
+String date;
+long nbytes;
+double nbytesMb;
+int year;
+
+//parse the day in the format: yyyy-mm-dd
+public DeviceHistory(String ip, String date, int nbytes)
+{
+this.ip=ip; this.date=date; this.nbytes=nbytes;
+this.nbytesMb = (double)this.nbytes/(1024 * 1024);//Megabytes
+

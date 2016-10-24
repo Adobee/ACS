@@ -1,0 +1,8 @@
+public Key addVideoEntity(VideoEntity videoEntity, boolean asNew) throws Exception {
+
+//Vine URL check
+Query query = new Query(VideoEntity.kind);
+//If import as new
+if (asNew) {
+entity.setProperty(VideoEntity.PUBLISHED, false);
+

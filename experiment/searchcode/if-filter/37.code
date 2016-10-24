@@ -1,0 +1,6 @@
+public static <T extends Filter> FilterItem<T> createItem(CompositeFilterForm form, T filter,
+boolean editable) {
+if (filter instanceof CompositeFilter) {
+return (FilterItem<T>) new CompositeFilterItem(form, (CompositeFilter) filter, editable);
+} else if (filter instanceof ACLFilter) {
+

@@ -1,0 +1,9 @@
+return createBus(cfgFile, defaultBusNotExists());
+}
+
+public Bus createBus(String cfgFile, boolean includeDefaults) {
+if (cfgFile == null) {
+public Bus createBus(String cfgFiles[], boolean includeDefaults) {
+try {
+String userCfgFile = SystemPropertyAction.getPropertyOrNull(Configurer.USER_CFG_FILE_PROPERTY_NAME);
+

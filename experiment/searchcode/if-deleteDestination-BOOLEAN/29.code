@@ -1,0 +1,10 @@
+public static void renameTo(File from, File to, boolean deleteDestination) throws IOException {
+if (deleteDestination) {
+deleteIfExists(to);
+throw new IOException();
+}
+}
+
+public static void safeRenameTo(File from, File to, boolean deleteDestination) {
+try {
+

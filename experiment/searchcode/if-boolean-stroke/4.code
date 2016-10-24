@@ -1,0 +1,11 @@
+public void setStroke(StrokeKind value) throws TicTacToeException{
+
+if (hasStroke())
+throw new TicTacToeException(Exceptions.string(Exceptions.FIELD_ALREADY_STROKED));
+
+_stroke = value;
+}
+
+public Boolean hasStroke(){
+return getStroke() != null;
+

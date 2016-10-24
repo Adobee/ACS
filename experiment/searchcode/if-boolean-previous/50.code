@@ -1,0 +1,15 @@
+this.list = listIterator;
+}
+
+public T next() {
+nextWasCalled = true;
+if (previousWasCalled) {
+previousWasCalled = false;
+list.next();
+}
+return list.next();
+}
+
+public T previous() {
+if (nextWasCalled) {
+

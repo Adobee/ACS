@@ -1,0 +1,15 @@
+return n2;
+}
+if(n2 == null) {
+return n1;
+}
+Double min = Math.min(n1.doubleValue(), n2.doubleValue());
+Number res = null;
+if(n1 == null) {
+return n2;
+}
+if(n2 == null) {
+return n1;
+}
+Double sum = n1.doubleValue() + n2.doubleValue();
+

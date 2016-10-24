@@ -1,0 +1,14 @@
+private final long[] counts;
+private long overflowCount;
+private long total;
+
+public BucketDigest(long[] buckets) {
+int size = 0;
+for (long c : counts) {
+if (c > 0) ++size;
+}
+if (overflowCount > 0) ++size;
+return &quot;BucketDigest: size=&quot; + size + &quot;, bytes=&quot; + (size * 8);
+}
+}
+

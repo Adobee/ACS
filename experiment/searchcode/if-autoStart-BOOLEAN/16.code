@@ -1,0 +1,8 @@
+protected abstract O produce(N data);
+
+public StashConsumer(StashConsumer<M,N,O> roleModel, boolean autostart){
+super(roleModel.nextModule, autostart);
+protected StashConsumer<M,N,O> reconstruct(Stash<N> stash, Consumer<O> nextModule, boolean autostart){
+this.stash = stash;
+this.nextModule = nextModule;
+

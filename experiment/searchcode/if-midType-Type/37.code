@@ -1,0 +1,8 @@
+boolean allowed = super.isAllowedGeneric(genericTypeEndpoint, genericType, inputs);
+if (!allowed) {
+return false;
+}
+if (genericType.getName().equals(&quot;Filter&quot;) || genericType.getName().equals(&quot;Map&quot;) || genericType.getName().equals(&quot;Reduce&quot;)) {
+// check constraint only if types match (Model and Model, or ModelRel and ModelRel)
+if ((model instanceof ModelRel) != (filterModelType instanceof ModelRel)) {
+

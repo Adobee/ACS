@@ -1,0 +1,9 @@
+import org.apache.http.HttpHost;
+
+public final class Address {
+final CertificatePinner certificatePinner;
+final List<ConnectionSpec> connectionSpecs;
+int hashCode = ((this.hostnameVerifier != null ? this.hostnameVerifier.hashCode() : 0) + (((this.sslSocketFactory != null ? this.sslSocketFactory.hashCode() : 0) + (((this.proxy != null ? this.proxy.hashCode() : 0) + ((((((((((((this.url.hashCode() + 527) * 31) + this.dns.hashCode()) * 31) + this.proxyAuthenticator.hashCode()) * 31) + this.protocols.hashCode()) * 31) + this.connectionSpecs.hashCode()) * 31) + this.proxySelector.hashCode()) * 31)) * 31)) * 31)) * 31;
+if (this.certificatePinner != null) {
+i = this.certificatePinner.hashCode();
+

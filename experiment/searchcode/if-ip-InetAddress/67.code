@@ -1,0 +1,9 @@
+// Exists only to defeat instantiation.
+}
+
+public static MyIpAddress getInstance() {
+if(instance == null) {
+instance = new MyIpAddress();
+InetAddress inetAddress = enumIpAddr.nextElement();
+if (!inetAddress.isLoopbackAddress() &amp;&amp; !inetAddress.isLinkLocalAddress() &amp;&amp; inetAddress.isSiteLocalAddress())
+

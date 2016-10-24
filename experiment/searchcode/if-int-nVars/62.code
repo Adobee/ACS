@@ -1,0 +1,9 @@
+for (int row = nreq - 1; row > 0; --row) {
+if (!this.lindep[row]) {
+final int start = (row - 1) * (nvars + nvars - row) / 2;
+private int reorderRegressors(int[] list, int pos1) {
+int next;
+int i;
+int l;
+if (list.length < 1 || list.length > nvars + 1 - pos1) {
+

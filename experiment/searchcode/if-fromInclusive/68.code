@@ -1,0 +1,6 @@
+private static final Pattern ID_PATTERN = Pattern.compile(
+&quot;(?<field>\\w+) (?<fromInclusive>\\]?)(?<fromId>\\d*)\\.\\.(?<toId>\\d*)(?<toInclusive>\\[?)&quot;);
+fromId = Longs.tryParse(first.group(&quot;fromId&quot;));
+if (fromId != null) {
+fromInclusive = Strings
+

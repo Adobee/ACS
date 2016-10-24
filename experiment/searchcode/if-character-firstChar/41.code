@@ -1,0 +1,9 @@
+Map<Character, List<String>> mapaNomes = new HashMap<>();
+
+for (String nome : nomes) {
+
+Character firstChar = nome.charAt(0);
+
+if(!mapaNomes.containsKey(firstChar)){
+mapaNomes.put(firstChar, new ArrayList<String>());
+

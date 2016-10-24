@@ -1,0 +1,9 @@
+String s=c.getControlNewText();
+String retS=&quot;&quot;;
+for (int i=0; i<s.length(); i++){
+if (s.charAt(i)==&#39; &#39; || s.charAt(i) >= &#39;A&#39; &amp;&amp; s.charAt(i) <= &#39;Z&#39;||
+//yearField.setPrefColumnCount(4);
+yearField.setTextFormatter(numberFormatter0);
+if (defaultYear != null)
+yearField.setText(defaultYear);
+

@@ -1,0 +1,11 @@
+public MethodIntrospectionCriteriaBuilder<T> notInheritFromObject() {
+add(new Predicate<ReflectedMethod>(){
+
+@Override
+public Boolean apply(ReflectedMethod obj) {
+return method.getModifiers();
+}
+
+@Override
+protected boolean isAnnotationPresent(final ReflectedMethod method, final Class<? extends Annotation> annotationType) {
+

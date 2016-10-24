@@ -1,0 +1,8 @@
+public abstract class SocketFactory {
+private static SocketFactory defaultFactory;
+
+public abstract Socket createSocket(String str, int i) throws IOException, UnknownHostException;
+SocketFactory socketFactory;
+synchronized (SocketFactory.class) {
+if (defaultFactory == null) {
+

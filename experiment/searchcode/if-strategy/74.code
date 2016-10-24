@@ -1,0 +1,8 @@
+package com.generator.statement.enums;
+
+import org.hibernate.cfg.EJB3NamingStrategy;
+import org.hibernate.cfg.ImprovedNamingStrategy;
+public static NamingStrategy getNamingStrategyByString(String namingStrategyString) {
+for (NamingStrategyEnum namingStrategyEnum : NamingStrategyEnum.values()) {
+if(namingStrategyEnum.getNamingStrategyString().equalsIgnoreCase(namingStrategyString)) {
+

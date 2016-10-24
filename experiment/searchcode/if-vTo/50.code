@@ -1,0 +1,7 @@
+Vector2d vtoPlayer = Utils.getVectorToClosestPlayer(toRunIn, in_objectFiring.v.getPos());
+
+if(vtoPlayer ==null)
+return;
+bullet.stepHandlers.add(new FlyStraightStep(vtoPlayer));
+bullet.collisionHandler = new DestroyIfEnemyCollision(bullet,f_collisionRadius,false);
+

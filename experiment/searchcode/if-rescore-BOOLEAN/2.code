@@ -1,0 +1,9 @@
+if (randomBoolean()) {
+rescorer.setRescoreQueryWeight(randomFloat());
+}
+if (randomBoolean()) {
+rescorer.setScoreMode(randomFrom(QueryRescoreMode.values()));
+}
+RescoreBuilder builder = new RescoreBuilder(rescorer);
+if (randomBoolean()) {
+

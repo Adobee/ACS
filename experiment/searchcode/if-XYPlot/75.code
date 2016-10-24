@@ -1,0 +1,13 @@
+public void init(IViewPart view) {
+xyplot = ColumnFilePlotView.view.getxyPlot();
+
+}
+
+public void run(IAction action) {
+if (xyplot != null) {
+
+final JLChart chart = xyplot.getChart();
+
+if (chart != null) {
+chart.showOptionDialog();
+

@@ -1,0 +1,7 @@
+public static Texture loadTexture(String textureName){
+if (loadedTextures.containsKey(textureName)){
+return loadedTextures.get(textureName);
+public static TextureRegion loadTextureRegion(String textureName, Vector2 lowerLeft, Vector2 upperRight){
+TextureRegionKey textureRegionKey = new TextureRegionKey(textureName, lowerLeft,upperRight);
+if (loadedTextureRegions.containsKey(textureRegionKey)){
+

@@ -1,0 +1,12 @@
+private static final int DIE_SIZE = 100;
+
+public D100()
+{
+super(DIE_SIZE);
+}
+
+public boolean percentTest(int percent)
+{
+if(percent < 0 || percent > 100)
+throw new IllegalArgumentException(percent + &quot; is not a valid number to check a percentage roll against&quot;);
+

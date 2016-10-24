@@ -1,0 +1,12 @@
+private volatile boolean mIsStopped = false;
+
+public abstract void stoppableRun();
+
+public void run() {
+return mIsStopped;
+}
+
+private void setStopped(boolean isStop) {
+if (mIsStopped != isStop)
+mIsStopped = isStop;
+

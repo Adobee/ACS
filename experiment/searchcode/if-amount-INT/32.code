@@ -1,0 +1,13 @@
+
+public class Port implements Comparable<Port>{
+private int portN;
+private int amount;
+public Port(int portN, int amount) {
+this.amount = amount;
+}
+@Override
+public int compareTo(Port p) {
+
+if (this.getAmount() > p.getAmount())
+return 1;
+

@@ -1,0 +1,7 @@
+public static MemoryCache createMemoryCache(int memoryCacheSize) {
+Context context = BaseApplication.curContext;
+if (memoryCacheSize == 0) {
+ActivityManager am = (ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE);
+int memoryClass = am.getMemoryClass();
+if (hasHoneycomb() &amp;&amp; isLargeHeap(context)) {
+

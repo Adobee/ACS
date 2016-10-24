@@ -1,0 +1,9 @@
+Credential cred = null;
+
+// if the username is in the form &quot;user\domain&quot;
+// then use NTCredentials instead.
+int domainIndex = userID.indexOf(&quot;\\&quot;);
+if (domainIndex > 0)
+{
+String domain = userID.substring(0, domainIndex);
+

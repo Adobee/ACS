@@ -1,0 +1,8 @@
+IptCfgItm rv = (IptCfgItm)hash.Get_by(bndKey);
+if (rv == null) {	// no cfg
+rv = IptCfgItm.new_().Key_(bndKey).Ipt_(List_adp_.many_((Object[])defaultArgs)).Msg_(defaultMsg);
+public IptCfgItm Set(String bndKey, GfoMsg m, IptArg[] argAry) {
+IptCfgItm rv = GetOrDefaultArgs(bndKey, m, argAry);
+rv.Msg_(m); // always overwrite msg
+if (Dif(rv.Ipt(), argAry)) {
+

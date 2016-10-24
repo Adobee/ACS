@@ -1,0 +1,17 @@
+if(instance == null){
+instance = new Registry();
+}
+return instance;
+}
+
+public void setKey(Object key, Object value){
+return storage.get(key);
+}
+
+public void removeKey(Object key){
+if(storage.containsKey(key)){
+storage.remove(key);
+}
+}
+}
+

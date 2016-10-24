@@ -1,0 +1,10 @@
+@Transactional(propagation = Propagation.REQUIRED)
+public Boolean filter(DatasetDetails details) {
+Boolean pass = !datasetExists(details.getAuthoritativeIdentifier()) || datasetOfDatacenter(details);
+return pass;
+}
+
+private Boolean datasetExists(String authoritativeIdentifier) {
+
+Boolean exists = false;
+

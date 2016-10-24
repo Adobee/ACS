@@ -1,0 +1,10 @@
+private int connectTimeout;
+
+public void init() {
+if (connectTimeout <= 0) {
+connectTimeout = FdfsSocketService.DEFAULT_CONNECT_TIMEOUT;
+}
+
+if (soTimeout <= 0) {
+soTimeout = FdfsSocketService.DEFAULT_NETWORK_TIMEOUT;
+

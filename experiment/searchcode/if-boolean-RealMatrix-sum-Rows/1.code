@@ -1,0 +1,11 @@
+RealMatrix U_pre = null;
+
+boolean verbose = !true;
+double ofv = 0;
+
+int k = 0;
+while (true) {
+
+if (k > maxIter)
+ofv = sum(l2NormByRows(X.transpose().multiply(W).subtract(Y))).getEntry(0, 0)/ gamma + sum(l2NormByRows(W)).getEntry(0, 0);
+

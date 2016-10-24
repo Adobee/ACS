@@ -1,0 +1,10 @@
+package ContainerWithMostWater;
+
+public class Solution {
+public int maxArea(int[] height) {
+if (height == null)
+return 0;
+if (height.length == 0)
+return 0;
+if (height.length == 1)
+

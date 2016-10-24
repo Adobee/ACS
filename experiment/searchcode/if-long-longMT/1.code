@@ -1,0 +1,15 @@
+* @param seed
+*            シード
+*/
+public void init(int seed) {
+
+long[] longMt = createLongMt(seed);
+
+setMt(longMt);
+for (int i = 1, j = 0, counter = 0; counter < max; i++, j++, counter++) {
+if (N <= i) {
+longMt[0] = longMt[N - 1];
+i = 1;
+}
+if (seedArray.length <= j) {
+

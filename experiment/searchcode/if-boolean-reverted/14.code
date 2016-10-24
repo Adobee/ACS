@@ -1,0 +1,18 @@
+addState(stateMatrixRedLight);
+}
+
+}
+
+
+public void setReverted(boolean reverted) {
+this.reverted = reverted;
+}
+
+@Override
+super.revert();
+if( reverted ) {
+dir = Direction.dirBend(dir, Direction.LEFT);
+}
+else {
+dir = Direction.dirBend(dir, Direction.RIGHT);
+

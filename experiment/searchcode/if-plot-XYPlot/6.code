@@ -1,0 +1,9 @@
+this.notifyListeners(new PlotChangeEvent(this));
+}
+
+public void remove(XYPlot xYPlot) {
+if (xYPlot == null) {
+XYPlot xYPlot = this.findSubplot(plotRenderingInfo, point2D);
+if (xYPlot == null) return;
+xYPlot.zoomRangeAxes(d2, plotRenderingInfo, point2D);
+

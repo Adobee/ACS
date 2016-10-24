@@ -1,0 +1,6 @@
+double[] minparams=new double[6];
+boolean first=true;
+for(double t1=mint;t1<(maxt/minratio);t1*=tmult){
+for(double t2=t1*minratio;t2<maxt;t2*=tmult){
+double[] coef=fit_linear2exp(t1,t2,ac,xvals);
+

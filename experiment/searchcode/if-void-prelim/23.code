@@ -1,0 +1,8 @@
+private void firstWalk(Node v, double s) {
+if(v.isLeaf()) {
+v.setPrelim(0);
+if(v.hasLeftSibling()) {
+double midpoint = 0.5 * (v.getChildren().get(0).getPrelim() + v.getChildren().get(v.degree() - 1).getPrelim());
+
+if(v.hasLeftSibling()) {
+

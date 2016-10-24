@@ -1,0 +1,8 @@
+PushHttpRequest httpRequest = createHttpRequest(request);
+
+if (StringUtils.isNotBlank(request.getUserId()))
+int start = request.getStart();
+if (start != QueryBindRequest.DEFAULT_START)
+{
+httpRequest.addParameter(&quot;start&quot;, start);
+

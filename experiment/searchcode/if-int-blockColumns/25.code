@@ -1,0 +1,8 @@
+private final int rows;
+private final int columns;
+private final int blockRows;
+private final int blockColumns;
+float[] block = this.blocks[iBlock * this.blockColumns + jBlock];
+int available = outBlock.length - outIndex;
+if (jWidth > available) {
+

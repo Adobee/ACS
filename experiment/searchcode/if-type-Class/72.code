@@ -1,0 +1,9 @@
+import java.lang.reflect.Type;
+
+public abstract class TypeLiteral<T> {
+private final Type type;
+private volatile Class<?> rawType;
+@SuppressWarnings(&quot;unchecked&quot;) public Class<T> getRawType() {
+if (rawType == null) {
+this.rawType = type instanceof Class<?>
+

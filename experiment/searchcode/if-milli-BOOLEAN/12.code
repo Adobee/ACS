@@ -1,0 +1,12 @@
+result = prime * result + (int) (milliCents ^ (milliCents >>> 32));
+return result;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (!(obj instanceof Money)) {
+return false;
+}
+Money other = (Money) obj;
+if (milliCents != other.milliCents) {
+

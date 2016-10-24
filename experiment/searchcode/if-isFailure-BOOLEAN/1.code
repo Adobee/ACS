@@ -1,0 +1,10 @@
+public abstract Boolean isFailure();
+
+public abstract Boolean isSuccess();
+
+public static <A, B> BiTry<A, B> success(A a) {
+public BiTry<T, E> filter(Predicate<T> predicate) {
+Invariant.checkNotNull(predicate);
+if (isFailure()) {
+return new BiFailure<>(getFailure());
+

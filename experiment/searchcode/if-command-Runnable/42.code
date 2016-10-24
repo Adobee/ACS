@@ -1,0 +1,9 @@
+import java.util.Iterator;
+import java.util.List;
+
+public class ListCommandRunner extends CollectionCommandRunner<List<Runnable>> {
+protected Runnable take() {
+if (commands.isEmpty())
+return DO_NOTHING;
+Iterator<Runnable> it = commands.iterator();
+

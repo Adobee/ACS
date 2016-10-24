@@ -1,0 +1,9 @@
+public static DateFormat getDateFormat(String format) {
+Map<String, DateFormat> map = tl.get();
+
+if (map == null) {
+DateFormat ret = map.get(format);
+
+if (ret == null) {
+ret = new SimpleDateFormat(format);
+

@@ -1,0 +1,10 @@
+// delta = dnrm2_(&amp;n, g, &amp;inc);
+double gnorm1 = delta;
+double gnorm = gnorm1;
+
+if ( gnorm <= eps * gnorm1 ) search = 0;
+// gnorm = dnrm2_(&amp;n, g, &amp;inc);
+if ( gnorm <= eps * gnorm1 ) break;
+}
+if ( f < -1.0e+32 ) {
+

@@ -1,0 +1,7 @@
+lcm(a, m, M, lcmA);
+lcm(b, m, M, lcmB);
+for (int S = 0; S < M; S++) {
+for (int T = 0; T < M; T++) {
+long lcm = MathUtils.lcm(lcmA[S], lcmB[T]);
+if (lcm > Integer.MAX_VALUE) lcm = Integer.MAX_VALUE;
+

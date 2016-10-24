@@ -1,0 +1,9 @@
+public class KeyCountRunEntryParser implements EntryParser<KeyCountRunEntry> {
+
+int[] keyIndex;
+int countIndex;
+String key = &quot;&quot;;
+for (int inx = 0; inx < keyIndex.length; inx++) {
+if (inx > 0) {
+key += &quot;\t&quot;;
+

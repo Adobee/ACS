@@ -1,0 +1,9 @@
+public class RESTParameterizedType implements ParameterizedType {
+
+private Type rawType;
+private Type[] actualTypeArguments;
+public RESTParameterizedType(Type targetType, boolean isList) {
+if (isList) {
+this.rawType = List.class;
+this.actualTypeArguments = new Type[] {new RESTParameterizedType(Map.class, new Type[] {String.class, targetType})};
+

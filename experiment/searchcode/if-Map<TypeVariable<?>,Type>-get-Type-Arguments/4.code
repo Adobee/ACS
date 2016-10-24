@@ -1,0 +1,10 @@
+TypeVariable[] typeParameters = clazz.getTypeParameters();
+
+Map<TypeVariable, Type> typeVariableMap = buildTypeNameMap(typeArguments, typeParameters);
+clazz = clazz.getSuperclass();
+}
+return typeArguments;
+}
+
+private Map<TypeVariable, Type> buildTypeNameMap(Type[] typeArguments, TypeVariable[] typeParameters) {
+

@@ -1,0 +1,10 @@
+double dx = c2.x - c1.x;
+double dy = c2.y - c1.y;
+double d = Math.sqrt( dx*dx + dy*dy );
+if( d > c1.r + c2.r )
+return null;
+if( d == 0 )
+return null;
+
+double cosalpha = ( c1.r*c1.r + d*d - c2.r*c2.r ) / ( 2 * c1.r * d );
+

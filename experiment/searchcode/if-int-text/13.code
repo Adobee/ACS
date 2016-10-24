@@ -1,0 +1,10 @@
+String text = processInput(plainText);
+
+int r = transpositionLevel;
+int length = text.length();
+int c=length/transpositionLevel+1;
+char mat[][] = new char[r][c];
+int k=0;
+
+String cipherText=&quot;&quot;;
+

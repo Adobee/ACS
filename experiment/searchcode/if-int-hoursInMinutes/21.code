@@ -1,0 +1,8 @@
+return zone;
+}
+if (id.startsWith(&quot;+&quot;) || id.startsWith(&quot;-&quot;)) {
+int offset = parseOffset(id);
+try {
+int hoursInMinutes = FieldUtils.safeMultiply(hoursOffset, 60);
+if (hoursInMinutes < 0) {
+

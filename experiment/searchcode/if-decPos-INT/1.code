@@ -1,0 +1,13 @@
+public static String decode(byte [] name,int encPos){
+int decPos = 0;
+int flags = 0;
+int flagBits = 0;
+
+int low = 0;
+encPos += 2;
+break;
+case 3:
+int length = getChar(name,encPos++);
+if((length&amp;0x80)!=0){
+int correction = getChar(name,encPos++);
+

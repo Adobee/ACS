@@ -1,0 +1,15 @@
+this.filter = filter;
+super(coll);
+}
+
+public boolean add(T obj)
+{
+/**/
+return decorate(coll, filter).add(obj);
+}
+
+public boolean addAll(Collection<? extends T> coll)
+{
+/*coll or this*/
+return decorate(coll, filter).addAll(coll);
+

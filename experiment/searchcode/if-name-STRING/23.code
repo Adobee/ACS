@@ -1,0 +1,8 @@
+public class ModelUtil {
+
+public static String prepareIdName(String idName, String name) {
+idName = StringUtils.trimToEmpty(idName);
+name = StringUtils.trimToEmpty(name);
+
+if (StringUtils.isNotEmpty(idName)) {
+

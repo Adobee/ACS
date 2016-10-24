@@ -1,0 +1,8 @@
+if (!((0 == x_series) &amp;&amp; (0 == x_item))) {
+return;
+}
+
+boolean b_impliedZeroSubtrahend = (1 == x_dataset.getSeriesCount());
+// check if series are disjoint (i.e. domain-spans do not overlap)
+if (!b_impliedZeroSubtrahend &amp;&amp; areSeriesDisjoint(x_dataset)) {
+

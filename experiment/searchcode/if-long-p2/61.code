@@ -1,0 +1,8 @@
+public SplitLine(int index, RandomAccessible<T> ra, long[] p1, long[] p2){
+this(index, ra, Point.wrap(p1), Point.wrap(p2));
+long[] p1 = new long[ numDimensions() ];
+m_p1.localize(p1);
+long[] p2 = new long[ numDimensions() ];
+m_p2.localize(p2);
+for(int i = 0; i < numDimensions(); i++){
+

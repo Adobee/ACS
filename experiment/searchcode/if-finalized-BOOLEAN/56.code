@@ -1,0 +1,12 @@
+System.out.println(&quot;After all Chairs have been created:\n&quot; + &quot;total created = &quot; + Chair.created + &quot;, total finalized = &quot; + Chair.finalized);
+if (args[0].equals(&quot;before&quot;)) {
+System.out.println(&quot;gc():&quot;);
+System.gc();
+static int finalized = 0;
+int i;
+
+Chair() {
+i = ++created;
+if (created == 47)
+System.out.println(&quot;Created 47&quot;);
+

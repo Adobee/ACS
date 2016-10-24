@@ -1,0 +1,13 @@
+public class InterRowBean {
+public static int listsize=16;
+WordUnit wordlist[]=new WordUnit[listsize];
+//public static int listsize=DicTion.fieldsize;//默认使用scdr的大小
+public static void setListSize(int size)
+{
+listsize=size;
+}
+public void add(WordUnit word,int pos)
+{
+try {
+if(pos<listsize)
+

@@ -1,0 +1,6 @@
+private final Supplier<Color4f> minColor;
+private final Supplier<Color4f> maxColor;
+private final double minRatio;
+public GuiHealthbarPartial(IPlayer player, double minRatio, double maxRatio,
+double x, double y, double width, double height, double skew) {
+

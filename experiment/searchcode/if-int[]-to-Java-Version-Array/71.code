@@ -1,0 +1,9 @@
+public static native int getJavaScriptObjectArraySize(JavaScriptObject elem) /*-{
+if (elem)
+return elem.length;
+return array.length;
+}-*/;
+
+public static int[] convertToJavaIntArray(JavaScriptObject array) {
+int length = getArrayLength(array);
+

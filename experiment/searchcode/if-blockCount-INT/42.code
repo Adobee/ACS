@@ -1,0 +1,8 @@
+public void add(int blockId, Client client){
+super.add(blockId, client);
+
+if(blockCount.containsKey(blockId)) blockCount.put(blockId, blockCount.get(blockId)+1);
+super.delete(blockId, client);
+
+if(blockCount.containsKey(blockId)){
+

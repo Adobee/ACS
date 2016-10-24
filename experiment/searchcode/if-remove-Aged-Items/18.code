@@ -1,0 +1,7 @@
+final boolean flushed = entry.version != this.poolVersion.get();
+
+if (aged || flushed) {
+if (aged) event = Event.AGED;
+if (flushed) event = Event.FLUSHED;
+if (entry.hasHardReference() || (aged &amp;&amp; replaceAged) || (flushed &amp;&amp; replaceFlushed)) {
+

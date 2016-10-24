@@ -1,0 +1,10 @@
+private static final long DISK_CACHE_MAX_SIZE = 100 * 1024 * 1024L;
+
+public static OkHttpClient create() {
+
+if (okHttpClient == null) {
+.removeHeader(&quot;Pragma&quot;)
+.build();
+} else {
+int maxStale = 30 * 24 * 60 * 60;
+

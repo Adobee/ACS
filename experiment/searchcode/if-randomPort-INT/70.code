@@ -1,0 +1,7 @@
+Random generator = new Random();
+int randomPort = generator.nextInt(1000) + 2000;
+while(!available(randomPort)) {
+randomPort = generator.nextInt(1000) + 2000;
+}
+System.out.println(&quot;random port: &quot; + randomPort);
+

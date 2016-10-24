@@ -1,0 +1,9 @@
+private double xmin, xmax, ymin, ymax;
+
+/**
+* Constructeur par défaut. Initialise l&#39;étendue à 0
+* @param ymin ymin de l&#39;étendue
+* @param ymax ymax de l&#39;étendue
+*/
+public Extent(double xmin, double xmax, double ymin, double ymax){
+

@@ -1,0 +1,7 @@
+public class PaymentListPresenter extends BasePresenter implements CollectionView.CollectionViewCallbacks {
+List<Payment> paymentList;
+List<Bill> billList = new ArrayList(BillListPresenter.mSelection.values());
+List<Member> memberList = new ArrayList(MemberListPresenter.mSelection.values());
+PaymentListFace mCallbacks;
+CollectionView.Inventory<Bill, Payment> mInventory;
+

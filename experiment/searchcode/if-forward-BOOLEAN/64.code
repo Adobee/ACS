@@ -1,0 +1,9 @@
+TouchSensor touch = new TouchSensor(SensorPort.S1);
+boolean previousTouch = false;
+boolean forward = true;
+forward = !forward;
+System.out.println(forward);
+
+if (forward) {
+Motor.A.forward();
+

@@ -1,0 +1,13 @@
+public class BandPassFilter extends ButterworthFilter {
+
+/**
+* @return &amp;omega;<sub>H</sub>
+*/
+public double getOmegaH() {
+* @return if input &amp;omega;<sub>H</sub> and &amp;omega;<sub>L</sub> are valid
+*/
+private boolean omegaValid() {
+boolean valid = true;
+double halfPI = 0.5 * Math.PI;
+if (omegaH < 0 || halfPI <= omegaH) {
+

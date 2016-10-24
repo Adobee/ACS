@@ -1,0 +1,7 @@
+for (int j = 0; j < this.hashbits; j++) {
+BigInteger bitmask = new BigInteger(&quot;1&quot;).shiftLeft(j);
+if (t.and(bitmask).signum() != 0) {
+for (int i = 0; i < this.hashbits; i++) {
+if (v[i] >= 0) {
+fingerprint = fingerprint.add(new BigInteger(&quot;1&quot;).shiftLeft(i));
+

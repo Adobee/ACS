@@ -1,0 +1,11 @@
+private final double[] coords;
+private double norm2 = -1;
+
+public DoubleVector(double[] coordinates) {
+this.coords = coordinates;
+}
+
+@Override
+public double getNorm2() {
+if (norm2 < 0) {
+

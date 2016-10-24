@@ -1,0 +1,15 @@
+package com.google.hash;
+
+public class Slot {
+int R;
+int S;
+boolean available;
+boolean used;
+public boolean equals(Object obj) {
+if (obj instanceof Slot) {
+return (((Slot) obj).R == this.R &amp;&amp; ((Slot) obj).S == this.S);
+}
+return false;
+}
+}
+

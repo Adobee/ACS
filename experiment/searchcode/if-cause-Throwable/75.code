@@ -1,0 +1,7 @@
+public static boolean hasCause(Throwable t, Class<? extends Throwable> cause) {
+while (t != null) {
+if (cause.isInstance(t)) {
+public static void throwCauseIfThereIs(Throwable t, Class<? extends Throwable> cause) throws Throwable {
+while (t != null) {
+if (cause.isInstance(t)) {
+

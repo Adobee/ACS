@@ -1,0 +1,9 @@
+class InternalPrinterDateTimePrinter implements DateTimePrinter, InternalPrinter {
+private final InternalPrinter underlying;
+
+private InternalPrinterDateTimePrinter(InternalPrinter internalPrinter) {
+this.underlying = internalPrinter;
+}
+
+static DateTimePrinter of(InternalPrinter internalPrinter) {
+

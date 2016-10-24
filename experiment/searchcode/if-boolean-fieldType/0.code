@@ -1,0 +1,11 @@
+public static FieldType increment(FieldType fieldType) {
+if(!isIncrementable(fieldType)) {
+return fieldType;
+}
+else {
+return fieldType.getNext();
+}
+}
+
+private static boolean isIncrementable(FieldType fieldType){
+

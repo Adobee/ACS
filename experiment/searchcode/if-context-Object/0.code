@@ -1,0 +1,5 @@
+public static void setSessionObject(String name, Object obj) {
+MessageContext messageContext = MessageContext.getCurrentMessageContext();
+if (messageContext != null) {
+ServiceContext serviceContext = messageContext.getServiceContext();
+

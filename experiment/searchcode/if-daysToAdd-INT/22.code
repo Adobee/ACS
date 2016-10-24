@@ -1,0 +1,8 @@
+public final class DateUtil {
+
+public static Date addDays(final Date date, final int daysToAdd) {
+return new Date(Date.valueOf(date.toLocalDate().plusDays(daysToAdd)).getTime());
+}
+
+public static Date parseDate(final String dateString) {
+

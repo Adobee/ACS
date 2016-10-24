@@ -1,0 +1,13 @@
+private boolean deep;
+private boolean includeObject;
+
+private Method[] methods;
+
+public MethodMatcher(Class<?> clazz) {
+this.methods = Classes.getAllMethods(clazz, deep, includeObject);
+}
+}
+
+private void addMatchingMethod(Method method, Set<Method> methods) {
+if (strict ? (method.getModifiers() ^ mask) == 0 : (method.getModifiers() &amp; mask) != 0) {
+

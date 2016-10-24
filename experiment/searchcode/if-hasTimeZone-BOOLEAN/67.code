@@ -1,0 +1,7 @@
+public static String formatDateTime(Literal l, boolean jsonUsesISOdate ) {
+Object val = getTemporalValue(l);
+if (val instanceof XSDDateTime) {
+Jena XSDDateTime object may have a lexical form which is partial.
+*/
+private static boolean hasTimeZone(String lexicalForm) {
+

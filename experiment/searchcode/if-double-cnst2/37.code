@@ -1,0 +1,8 @@
+* @exception IllegalArgumentException if matrices dimensions don&#39;t match
+* @exception InvalidMatrixException if decomposed matrix is singular
+*/
+public double[] solve(final double[] b)
+final double delta = s * s - 4 * p;
+if (delta < 0) {
+throw new InvalidMatrixException(&quot;cannot solve degree {0} equation&quot;, 2);
+

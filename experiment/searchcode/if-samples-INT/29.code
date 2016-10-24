@@ -1,0 +1,13 @@
+Samples windowSamples = this.getWindowSamples();
+double sumx = 0.0;
+double sumy = 0.0;
+
+
+if( windowSamples.getQtdeSamples() < n + templateSamples.getQtdeSamples())
+throw new RuntimeException(&quot;Passou o tamanho da janela&quot;);
+
+
+for(int j=1;j<=templateSamples.getQtdeSamples();j++)
+{
+sumx+=Math.abs(templateSamples.getSample(j));
+

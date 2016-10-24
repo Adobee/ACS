@@ -1,0 +1,8 @@
+update(event.getOffset(), event.getLength(), insertLen);
+}
+
+private void update(int offset, int deleteLen, int insertLen) {
+if (insertLen > deleteLen) {
+insert(offset + deleteLen, insertLen - deleteLen);
+} else if (insertLen < deleteLen) {
+

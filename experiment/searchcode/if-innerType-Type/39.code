@@ -1,0 +1,10 @@
+public class TiArrayType implements IArrayType {
+
+private final IType innerType;
+
+public TiArrayType(IType innerType) {
+this.innerType = innerType;
+public boolean isSubtypeOf(IType anotherType) {
+if(anotherType instanceof IArrayType) {
+return innerType.isSubtypeOf(((IArrayType) anotherType).getInnerType());
+

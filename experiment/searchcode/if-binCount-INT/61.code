@@ -1,0 +1,12 @@
+public class EHHStat extends StatsCollectorAdapter {
+private int binCount = 10;
+private FixedBitSet mask;
+private String name;
+public EHHStat(String n, String binCount) {
+this(n);
+this.binCount = Integer.parseInt(binCount);
+}
+
+@Override
+public double[] collectStatsImp(SegmentEventRecoder recorder) {
+

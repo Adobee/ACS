@@ -1,0 +1,12 @@
+public static double getIncrement(double computedIncrement, double ticks){
+
+double increment = computedIncrement;
+
+if (computedIncrement < 1){
+boolean nextIsSet = false;
+
+do{
+for (double step : steps){
+nextIncrement = step * currentFactor;
+if (nextIncrement < computedIncrement || ! nextIsSet){
+

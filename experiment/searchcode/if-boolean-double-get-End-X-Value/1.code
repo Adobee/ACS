@@ -1,0 +1,10 @@
+this.startValue = startValue;
+this.endValue = endValue;
+if( getDuration() != 0.0 )
+this.slope = ( endValue - startValue ) /getDuration();
+}
+
+public double sample( double point )
+{
+if( point < onset || point > endTime ) return 0.0;
+

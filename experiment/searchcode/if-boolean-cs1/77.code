@@ -1,0 +1,10 @@
+this.ls = ls;
+}
+
+@Override
+public boolean equals(Object other) {
+if (!(other instanceof ReversibleLineStringWrapper))
+CoordinateSequence cs0 = this.ls.getCoordinateSequence();
+CoordinateSequence cs1 = that.ls.getCoordinateSequence();
+if (cs0.equals(cs1))
+

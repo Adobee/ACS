@@ -1,0 +1,8 @@
+Spell toResolve = (Spell) this.Contents.get(size - 1);
+if (toResolve.isAbility())
+{
+((EventPlaceholder) toResolve).getEvent().exec();
+this.Contents.remove(0);
+} else if (toResolve.isPermanent()){
+curGame.moveToBattlefield(toResolve);
+

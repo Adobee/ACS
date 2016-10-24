@@ -1,0 +1,14 @@
+int count = getChildItemCount();
+if (hasHeader){
+count++;
+}
+
+return count;
+}
+
+protected abstract T onCreateItemViewHolder(ViewGroup viewGroup, int type);
+@Override
+public final void onBindViewHolder(T vh, int position) {
+
+if (hasHeader &amp;&amp; position == 0){
+

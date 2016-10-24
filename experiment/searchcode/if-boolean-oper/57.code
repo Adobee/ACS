@@ -1,0 +1,12 @@
+* 设置当前状态
+*
+* @param value
+*/
+private void setCurrState(IoOperStateEnum value) {
+if (value == null) {
+// 获取执行结果
+boolean result = this._innerOper.doIo();
+
+if (!result) {
+// 记录日志信息
+

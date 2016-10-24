@@ -1,0 +1,11 @@
+public static String vectorProductResult(String r1, String t1, String r2,
+String t2) {
+String ans = &quot;&quot;;
+
+if (r1.isEmpty() || t1.isEmpty() || r2.isEmpty() || t2.isEmpty()) {
+ans = &quot;Missing an input or inputs&quot;;
+} else {
+double result, x1, x2, y1, y2, temp_r1, temp_t1, temp_r2, temp_t2;
+
+temp_r1 = Double.parseDouble(r1);
+

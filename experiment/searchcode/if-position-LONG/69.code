@@ -1,0 +1,6 @@
+public static long fromHex8B(String src) {
+byte[] b = fromHex(src);
+int position = 0;
+long l = (b[position++] &amp; 0xff);
+l |= (long) (b[position++] &amp; 0xff) << 8;
+

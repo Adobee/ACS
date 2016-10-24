@@ -1,0 +1,6 @@
+Integer initialIndex = new Integer(request.getParameter(&quot;initial_index_formanda&quot;));
+if(initialIndex != 0){
+initialIndex = initialIndex-1;
+for (int i = initialIndex; i < initialIndex + 10; i++) {
+if(i<formandas.size()) formandaspaginada.add(formandas.get(i));
+

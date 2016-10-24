@@ -1,0 +1,15 @@
+public Contact() {}
+
+public boolean onX() {
+return (axis[0]==Axis.X);
+}
+
+public boolean onY() {
+return (axis[1]==Axis.Y);
+if(contact.onX()) axis[0] = Axis.X;
+if(contact.onY()) axis[1] = Axis.Y;
+}
+
+public void onX(boolean b) {
+axis[0] = (b) ? Axis.X : null;
+

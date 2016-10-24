@@ -1,0 +1,11 @@
+private final String uri;
+
+private final byte[] uriBytes;
+
+private final int dataSize;
+
+private boolean binary;
+int pathEndPos = uri.indexOf(&#39;?&#39;);
+if (pathEndPos < 0) {
+this.rawPath = uri;
+

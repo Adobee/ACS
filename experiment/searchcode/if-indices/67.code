@@ -1,0 +1,13 @@
+import java.util.List;
+import java.util.LinkedList;
+import java.util.stream.Stream;
+class Indices {
+public String s;
+Stream.of(new Indices(&quot;Mercury&quot;),new Indices(&quot;Venus&quot;),new Indices(&quot;Earth&quot;))
+.flatMap( i -> i.indices.stream())
+.mapToInt(j -> j)
+.max()
+.ifPresent(s -> System.out.println(s));
+}
+}
+

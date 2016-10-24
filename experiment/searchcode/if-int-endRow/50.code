@@ -1,0 +1,12 @@
+return list;
+}
+int startrow=0;
+int endrow=matrix.length-1;
+int startcol=0;
+int endcol=matrix[0].length-1;
+startrow++;
+if(startrow>endrow) break;
+//for up to down
+for(int i=startrow;i<=endrow;i++){
+list.add(matrix[i][endcol]);
+

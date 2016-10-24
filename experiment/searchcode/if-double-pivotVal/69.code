@@ -1,0 +1,8 @@
+private static int partition(Integer[] arr, int left, int right, int pivot) {
+double pivotVal = arr[pivot];
+swap(arr, pivot, right);
+int storeIndex = left;
+for (int i = left; i < right; i++) {
+if (arr[i] < pivotVal) {
+swap(arr, i, storeIndex);
+

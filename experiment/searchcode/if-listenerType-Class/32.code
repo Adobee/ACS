@@ -1,0 +1,8 @@
+public void addListener(IAbstractListener iListener, Enum<?> listenerType) {
+if (listeners == null) {
+isListenerMap();
+
+IAbstractListener listener = listeners.get(listenerType);
+if (listener != null) {
+if (listener instanceof IListener) {
+

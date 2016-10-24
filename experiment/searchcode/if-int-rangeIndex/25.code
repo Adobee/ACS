@@ -1,0 +1,8 @@
+range[1]=array[rangeIndex];
+} else if(rangeIndex<length) {
+range[1]=(((int)array[rangeIndex])<<16)|array[rangeIndex+1];
+length-=bmpLength;
+if(rangeIndex<length) {
+int offset=arrayOffset+bmpLength;
+range[0]=(((int)array[offset+rangeIndex])<<16)|array[offset+rangeIndex+1];
+

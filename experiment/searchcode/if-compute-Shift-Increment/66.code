@@ -1,0 +1,11 @@
+// should it ever analytically compute eigenvalues
+// if this is true then it can&#39;t compute eigenvalues at the same time
+// the current eigenvalue isn&#39;t working so try something else
+lambda = helper.computeShift();
+}
+
+// similar transforms
+helper.performImplicitSingleStep(lambda,false);
+}
+}
+

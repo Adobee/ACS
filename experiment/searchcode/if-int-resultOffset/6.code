@@ -1,0 +1,13 @@
+public String getFriendRequests(Model model, String offset) {
+int resultOffset = 0;
+int resultLimit = 0;
+int listSize = 0;
+int int_offset = 0;
+if (offset != null) {
+resultLimit = int_offset + PSMetadata.FACEBOOK_LIMIT_RESULT;
+}
+if (listSize <= int_offset) {
+resultOffset = listSize;
+} else {
+resultOffset = int_offset;
+

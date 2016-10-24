@@ -1,0 +1,7 @@
+@View(	name = &quot;all&quot;,
+map  = &quot;function(doc) { if (doc.oid) { emit(doc.oid, doc) } }&quot;)
+public class ProblemBillRepository extends CouchDbRepositorySupport<ProblemBill> {
+public ProblemBill findByOid(String oid) {
+List<ProblemBill> problemBills = queryView(&quot;by_oid&quot;, oid);
+if(problemBills == null || problemBills.isEmpty())
+

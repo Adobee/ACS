@@ -1,0 +1,8 @@
+public TabularPivotModel getPivotModel () throws Exception {
+if (_pivotModel == null) {
+_pivotModel = PVTModelProvider.getPivotModel();
+// not first level node
+if (i+1 == dataFieldsLength
+&amp;&amp; column.getDepth() > 1) {
+PivotHeaderNode tmpCol = column;
+

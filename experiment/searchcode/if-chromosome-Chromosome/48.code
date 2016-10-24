@@ -1,0 +1,10 @@
+for (int i = 0; i < HybGenAl.CHROMOSOME_SIZE; i++) {
+gene = rnd.nextInt(Problem.customersNumber);
+if (prevGene != gene) {
+chrom.getChromosome().add(gene);
+prevGene = gene;
+}
+}
+if (prevGene != 0) {
+chrom.getChromosome().add(0);
+

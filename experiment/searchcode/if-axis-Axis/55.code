@@ -1,0 +1,9 @@
+* @return 枚举
+*/
+public static AxisType parse(String p) {
+if (types == null) {
+types = AxisType.values();
+}
+for (AxisType type : types) {
+if (ComparatorUtils.equals(p, type.axisType)) {
+

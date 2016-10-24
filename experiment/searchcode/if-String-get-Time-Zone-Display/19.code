@@ -1,0 +1,10 @@
+public static Map<String, TimeZone> usaStateTimeZoneMap = null;
+
+static {
+timeZoneMap = getTimeZoneMap();// 因为该方法每次返回的结果都一样，所以放在一个静态变量中
+* @return
+*/
+public static TimeZone getTimeZoneByOffSet(short offSetInShort) {
+String timeZoneID = &quot;&quot;;
+if (offSetInShort > 0) {
+

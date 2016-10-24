@@ -1,0 +1,10 @@
+int size = envelopes.length;
+if (size == 0) return 0;
+
+int[] maxSize = new int[size];
+maxSize[0] = 1;
+
+int allMax = 1;
+for (int i=1; i < size; i++) {
+int[] current = envelopes[i];
+

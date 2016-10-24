@@ -1,0 +1,11 @@
+* Number of iteration steps for the algorithm
+*/
+private int nSteps;
+/**
+* Number of iterations for the layout algorithm (Yifan Hu)
+private static double T_DEFAULT = 1.0/2000000;
+/**
+* Default value for nSteps
+*/
+private static int NSTEPS_DEFAULT = 100000;
+

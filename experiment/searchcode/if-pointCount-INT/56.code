@@ -1,0 +1,12 @@
+while (end + 1 < n &amp;&amp; slopes[end + 1] == slope) {
+end++;
+}
+
+if (end - j >= 2) {
+// find a line
+int pointCount = end - j + 2;
+founds[0] = basePoint;
+
+for (int k = 1; k < pointCount; k++) {
+founds[k] = points[j + k - 1];
+

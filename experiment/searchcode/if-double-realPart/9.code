@@ -1,0 +1,8 @@
+public  static double[] evenRealarrange(double[] spectrum){
+int N=spectrum.length;
+double[] realPart=new double[N];
+for (int k=0;k<N/2;k++) {
+realPart[k]=spectrum[2*k];
+}
+realPart[N/2]=spectrum[1];
+

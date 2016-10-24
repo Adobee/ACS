@@ -1,0 +1,12 @@
+private int redundantOpCount;
+private boolean hasJournalErrors;
+
+// Must be read and written when synchronized on &#39;this&#39;.
+private boolean initialized;
+journalWriter = newJournalWriter();
+hasJournalErrors = false;
+}
+
+/**
+* Returns a snapshot of the entry named {@code key}, or null if it doesn&#39;t exist is not currently
+

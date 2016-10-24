@@ -1,0 +1,12 @@
+package com.github.aidanPB.dogcow;
+
+import java.util.TreeMap;
+
+public class PropNode implements IPropNode {
+this.type = PropType.DIR;
+childProps = new TreeMap<String,PropNode>();
+}
+
+public IMuckObject getPropOwner(){
+if(owner == null) return propdir.getPropOwner();
+

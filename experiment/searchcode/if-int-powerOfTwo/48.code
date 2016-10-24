@@ -1,0 +1,15 @@
+isPowerOfTwo3(i));
+}
+}
+
+
+/*
+* 递归，适用于所有判定是否是幂的情况
+*/
+public boolean isPowerOfTwo(int n) {
+if(n == 1 || n == 2)
+public boolean powerOfTwo(int n, int step) {
+if(n == Math.pow(2, step)){
+return true;
+} else if(n < Math.pow(2, step)) {
+

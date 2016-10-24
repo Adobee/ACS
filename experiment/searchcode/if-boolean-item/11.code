@@ -1,0 +1,7 @@
+public class ItemUpdaterFactory {
+public static ItemUpdater createItemUpdator(Item item) {
+if (isLegendaryItem(item)) {
+return new LegendaryItemUpdater(item);
+}
+if (isItemAgedBrie(item)) {
+

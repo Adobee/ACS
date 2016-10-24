@@ -1,0 +1,13 @@
+public int isSymmetric(TreeNode a) {
+boolean retVal = checkMirror(a.left, a.right);
+return retVal ? 1 : 0;
+}
+
+private boolean checkMirror(TreeNode left, TreeNode right) {
+return true;
+}
+if (left == null || right == null) {
+return false;
+}
+boolean l = checkMirror(left.left, right.right);
+

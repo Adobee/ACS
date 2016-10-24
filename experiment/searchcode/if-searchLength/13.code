@@ -1,0 +1,14 @@
+public static String replace(String source, String search, String replace) {
+if (source == null || source.length() == 0) {
+return source;
+}
+
+if (search == null) {
+final int searchLength = search.length();
+
+if (searchLength == 0) {
+return source;
+}
+
+final StringBuffer result = new StringBuffer();
+

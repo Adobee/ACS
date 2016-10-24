@@ -1,0 +1,10 @@
+import com.indexisto.tool.tolpen.util.selectable.Selectables;
+
+public class IndexType extends SelectableBase {
+
+private final int ttl;
+private final Collection<Request> queries;
+protected Request computeNext() {
+if (docCount == 0) {
+return endOfData();
+

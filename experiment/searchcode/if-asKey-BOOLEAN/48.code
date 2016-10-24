@@ -1,0 +1,8 @@
+Setter.withGroupKey(HystrixCommandGroupKey.Factory.asKey(&quot;hystrix.command.http.group&quot;))
+.andCommandKey(HystrixCommandKey.Factory.asKey(&quot;hystrix.command.http&quot;))
+protected String run() throws Exception {
+
+boolean fail = RandomUtils.nextBoolean();
+if(fail) {
+throw new RuntimeException();
+

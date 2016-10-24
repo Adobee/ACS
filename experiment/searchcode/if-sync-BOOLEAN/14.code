@@ -1,0 +1,17 @@
+public int getSyncState()
+{
+return mSyncState;
+}
+
+public boolean isSyncCreate()
+{
+return (mSyncState &amp; SYNC_CREATE) == SYNC_CREATE;
+public boolean remoteSyncRequired(String eTag)
+{
+boolean ret = true;
+if(mETag != null)
+{
+ret =  !mETag.equals(eTag);
+}
+//don&#39;t allow sync to overwrite changes
+

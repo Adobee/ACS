@@ -1,0 +1,9 @@
+* @return Strategy suiting the input String or null.
+*/
+public static Strategy getStrategy(String strategy){
+if(strategy.equals(&quot;FIFO&quot;)){
+return new FIFOStrategy();
+}
+else if(strategy.equals(&quot;LRU&quot;)){
+return new LRUStrategy();
+

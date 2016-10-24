@@ -1,0 +1,10 @@
+this.indexToSet = Integer.parseInt(indexToSet);
+}
+
+
+@Override
+public int doStartTag() throws JspException {
+if (storage != null) {
+if (valueToAdd != null) {
+storage.add(valueToAdd);
+

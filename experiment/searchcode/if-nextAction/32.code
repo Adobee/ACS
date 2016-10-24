@@ -1,0 +1,10 @@
+public SetWorldVariableAction(World world, VariableSetter setter,Action nextAction) {
+super(world, nextAction);
+setter.setVariable();
+toDelete = true;
+if(nextAction!= null)
+nextAction.run();
+}
+
+}
+

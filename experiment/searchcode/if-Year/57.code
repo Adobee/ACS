@@ -1,0 +1,8 @@
+import gutkowski.model.year.Year;
+import gutkowski.model.year.YearRepository;
+
+/**
+* Created by user on 03.04.16.
+Optional<Year> yearByYear = yearRepository.findByValue(newYear.getValue());
+if(yearByYear.isPresent()){
+

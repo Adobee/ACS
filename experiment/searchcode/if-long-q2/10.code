@@ -1,0 +1,9 @@
+// squeeze day
+if(longCandle(quotes, i+2, atr) &amp;&amp; dark(q3) &amp;&amp; inside(q3,q2) &amp;&amp; inside(q2, q1)) {
+sig = checkSignal(what, direction, &quot;squeeze&quot;,Scanner.bullish);
+notes.append(&quot;Thursting&quot;);
+}
+
+if(longCandle(quotes, i+1, atr) &amp;&amp; dark(q2) &amp;&amp;
+downGap(q2, q1) &amp;&amp; white(q1) &amp;&amp;
+

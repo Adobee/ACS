@@ -1,0 +1,7 @@
+* Setting dns (in fact dns cache).
+* <p/>
+* Throw {@link DnsCacheManipulatorException} if operation fail for all methods.
+InputStream inputStream = Thread.currentThread().getContextClassLoader().getResourceAsStream(propertiesFileName);
+if (inputStream == null) {
+inputStream = DnsCacheManipulator.class.getClassLoader().getResourceAsStream(propertiesFileName);
+

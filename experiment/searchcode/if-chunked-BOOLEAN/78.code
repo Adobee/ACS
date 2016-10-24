@@ -1,0 +1,7 @@
+private ChunkedInputEndDetector chunkedEndDetector = new ChunkedInputEndDetector();
+
+private boolean isFinished = false;
+while ((answer = this.chunkedEndDetector.read()) != null) {
+if (answer.array().length == 0) {
+return ByteBuffer.wrap(this.stream.toByteArray());
+

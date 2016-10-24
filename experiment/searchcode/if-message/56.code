@@ -1,0 +1,6 @@
+public Response handleMessage(Message message, Environment env) {
+MessageType type = message.messageType();
+if (TEXT.equals(type)) {
+return handleTextMessage((TextMessage)message, env);
+} else if (IMAGE.equals(type)){
+

@@ -1,0 +1,10 @@
+this.rowIter = vec2d.iterator();
+if(rowIter.hasNext()){
+colIter = rowIter.next().iterator();
+moveToNextValid();
+}
+}
+
+public boolean hasNext() {
+return colIter!=null &amp;&amp; colIter.hasNext();
+

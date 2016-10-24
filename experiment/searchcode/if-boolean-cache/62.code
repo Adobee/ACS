@@ -1,0 +1,14 @@
+private static final CacheManager cacheManager = new CacheManager();
+
+public Ehcache getCache(String cacheName) {
+if(!cacheManager.cacheExists(cacheName)) {
+Element e = cache.get(key);
+if(e != null) {
+return e.getValue();
+}
+
+return null;
+}
+
+public void add(String cacheName, String key, Object value) {
+

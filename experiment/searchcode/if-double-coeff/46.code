@@ -1,0 +1,8 @@
+System.out
+.print(&quot;Enter 3 numbers for coefficients of a quadratic equation: &quot;);
+double coeffA = scan.nextDouble();
+scan.close();
+
+double discriminant = (coeffB * coeffB) - (4 * coeffA * coeffC);
+if (discriminant == 0) {
+

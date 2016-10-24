@@ -1,0 +1,8 @@
+public ArModel(int C, RealMatrix[] A, RealMatrix V, double freqSampling) {
+for (RealMatrix M : A) {
+if (M.getRowDimension() != C || M.getColumnDimension() != C) {
+RealMatrix bigSolution = bigMatrixInverse.multiply(bigColumn);
+
+RealMatrix[] A = new RealMatrix[1+order];
+A[0] = MatrixUtils.createRealIdentityMatrix(C).scalarMultiply(-1);
+

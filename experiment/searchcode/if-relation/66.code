@@ -1,0 +1,11 @@
+import cn.edu.zju.dart.core.resregistry.model.IRelation;
+/*
+* 每次查询时由dartcore返回，记录能够查到数据的表
+*/
+public class UsedRelationTable {
+
+private IRelation[] usedRelation;
+public static String getRelationDBSource(IRelation relation){
+if(null==relation)
+return null;
+

@@ -1,0 +1,7 @@
+public TransitionImpl(T mutableObject, TypeConverter<T> typeConverter) {
+this.mutableObject = mutableObject;
+this.typeConverter = typeConverter;
+transition = new TransitionFloatArrayImpl(typeConverter.variables());
+if (mutableObject != null)
+tmp = typeConverter.copyFromObject(mutableObject, tmp);
+

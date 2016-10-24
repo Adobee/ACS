@@ -1,0 +1,13 @@
+ArrayList<Range> result = new ArrayList<Range>();
+
+for (Range Range : Ranges)
+{
+if (Range.end < newRange.start)
+{
+result.add(Range);
+} else if (Range.start > newRange.end)
+{
+result.add(newRange);
+newRange = Range;
+} else if (Range.end >= newRange.start || Range.start <= newRange.end)
+

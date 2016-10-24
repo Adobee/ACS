@@ -1,0 +1,9 @@
+Locale defaultLocale = Locale.getDefault();
+String actualName = defaultZone.getDisplayName(false, TimeZone.LONG);
+String expectedName = defaultZone.getDisplayName(false, TimeZone.LONG,
+int offset = tz.getRawOffset();
+
+String[] ids = TimeZone.getAvailableIDs(offset);
+int i = 0;
+if (ids.length != 0) {
+

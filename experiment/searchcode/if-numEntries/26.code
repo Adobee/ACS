@@ -1,0 +1,10 @@
+entries = new GameEntry[maxEntries];
+numEntries = 0;
+}
+
+public void add(GameEntry e){
+int newscore = e.getScore();
+if(numEntries == maxEntries){
+if(newscore <= entries[maxEntries -1].getScore())
+return;
+

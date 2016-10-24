@@ -1,0 +1,9 @@
+super.model(vector, t, materialData);
+Data d = (Data)materialData;
+double c = 30;
+//		d.sigma = linearMatrix(t).times(vector);
+double SV = (Sx+Sy+Sz)/3;
+double deviator = (S1-S3)/2;
+if (deviator < c) return d.sigma;
+double k = c/deviator/5;
+

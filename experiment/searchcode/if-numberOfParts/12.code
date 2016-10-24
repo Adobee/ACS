@@ -1,0 +1,9 @@
+public static ITreePart generateTree(int startx, int starty, int endx, int endy, int depth) {
+if(Math.random()<0.2){
+return new Leaf(startx,starty,endx,endy);
+}
+
+
+if (depth > 0) {
+Branch base = new Branch(startx, starty, endx, endy);
+

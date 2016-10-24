@@ -1,0 +1,10 @@
+public class Rating  implements Serializable,Resource{
+private static final long serialVersionUID = -7240573567084382721L;
+static int maxDiff;
+public static int getAvgDiff(){
+return avgDiff;
+}
+
+public static int getDiff(int winRating, int loseRating){
+if(decreaseThreshold==0){
+

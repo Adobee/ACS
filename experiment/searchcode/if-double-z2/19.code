@@ -1,0 +1,11 @@
+if(world.getBlockId(x, y, z) == wantedid &amp;&amp; world.getBlockMetadata(x, y, z)==coreid){
+int x2 = x;
+int y2 = y;
+int z2 = z;
+
+
+if(world.getBlockId(x2+1, y2, z2) == wantedid&amp;&amp; world.getBlockMetadata(x2, y2, z2-1) == sides&amp;&amp; world.getBlockMetadata(x2, y2, z2+1) == sides&amp;&amp; world.getBlockMetadata(x2, y2+1, z2) == sides &amp;&amp; world.getBlockMetadata(x2, y2-1, z2) == sides &amp;&amp; world.getBlockMetadata(x2+1, y2, z2) == sides &amp;&amp; world.getBlockMetadata(x2-1, y2, z2) == sides &amp;&amp;world.getBlockId(x2-1, y2, z2) == wantedid &amp;&amp;  world.getBlockId(x2, y2+1, z2) == wantedid  &amp;&amp;  world.getBlockId(x2, y2-1, z2) == wantedid &amp;&amp;  world.getBlockId(x2, y2, z2-1) == wantedid &amp;&amp;  world.getBlockId(x2, y2, z2+1) == wantedid )
+return true;
+
+}else if(world.getBlockId(x, y, z) == wantedid &amp;&amp; world.getBlockMetadata(x, y, z)!=coreid){
+

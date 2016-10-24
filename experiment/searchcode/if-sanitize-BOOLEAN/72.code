@@ -1,0 +1,10 @@
+public abstract void fromJSON(String s);
+protected String[] parseObjFields(String toParse){
+if(toParse.startsWith(&quot;{&quot;)&amp;toParse.endsWith(&quot;}&quot;)){
+protected String genArrayStr(Collection<String> c,boolean b){
+String out=&quot;[&quot;;
+for(String s:c){
+out+=sanitize(s)+&quot;,&quot;;
+}
+return out.substring(0,out.length()-1)+&quot;]&quot;;
+

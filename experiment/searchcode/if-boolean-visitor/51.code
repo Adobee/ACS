@@ -1,0 +1,11 @@
+protected ClassSpaceVisitor classSpaceVisitor;
+
+protected boolean decorate;
+
+public ClassSpaceVisitorDecorator(ClassSpaceVisitor classSpaceVisitor)
+public ClassVisitor decorate(final ClassVisitor classVisitor)
+{
+if (classVisitor == null || !decorate)
+{
+return classVisitor;
+

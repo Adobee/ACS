@@ -1,0 +1,9 @@
+for (int i = 0; i < files.length; i++) {
+String filename = files[i].getName();
+boolean shouldFail = filename.contains(&quot;fail&quot;.subSequence(0, 4));
+if( ! testCompiler(compiler, shouldFail, i+1))
+failed++;
+}
+if(failed==0)
+System.out.println(&quot;Test completed successfully.&quot;);
+

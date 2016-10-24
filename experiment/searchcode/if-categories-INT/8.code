@@ -1,0 +1,9 @@
+public class CategoriesContainer implements Categories {
+
+private Category[] categories;
+private int numberOfCategoriesStored;
+private static final int INCREASE_ARRAY_SIZE_FACTOR = 2;
+public void add(String categoryName) {
+if(categoryName == null){
+throw new Categories.IllegalArgumentException();
+

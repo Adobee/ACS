@@ -1,0 +1,12 @@
+if(session_id==null||session_id.equalsIgnoreCase(&quot;null&quot;)){
+return true;
+}
+else{
+if(partial==null){
+partial=new PartialResult();
+partial.datetime=new String(date_time);
+if(order_id!=null){
+partial.orderid=new String(order_id);
+}
+return true;
+

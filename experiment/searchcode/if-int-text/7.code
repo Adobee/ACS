@@ -1,0 +1,9 @@
+public class TextLabel extends XywhObject{
+private int color;
+private float fontSize;
+String value = &quot;&quot;;
+private int textAlign, textAlign2;
+private boolean hasTA2 = false;
+
+public TextLabel(PApplet p, int x, int y, int w, int h, float fontSize, int color){
+

@@ -1,0 +1,8 @@
+public Cursor query(QueryEnum queryEnum,Bundle bundle){
+
+if(queryEnum==HomePageQueryEnum.TOPSTORY){
+Uri uri=ZhihuContentProvider.STORY_TOP_STORY_CONTENT_URI;
+return mContext.getContentResolver().query(uri,mProjection,mSelectionClause,mSelecttionArgs,
+ZhihuContract.TableTopStory.COLUMN_NAME_STORY_ID + &quot; ASC&quot;);
+}else if(queryEnum==HomePageQueryEnum.DAILYSTORY){
+

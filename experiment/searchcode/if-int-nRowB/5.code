@@ -1,0 +1,10 @@
+* @throws NullPointerException if <code>data</code> is null
+*/
+public RealMatrixImpl(double[][] d) {
+int nRows = d.length;
+if (nRows == 0) {
+&quot;Matrix must have at least one row.&quot;);
+}
+int nCols = d[0].length;
+if (nCols == 0) {
+

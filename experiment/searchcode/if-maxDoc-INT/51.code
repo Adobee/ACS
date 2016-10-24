@@ -1,0 +1,9 @@
+* A {@link DocIdSet} that matches all docs up to a {@code maxDoc}.
+*/
+public class AllDocIdSet extends DocIdSet {
+
+private final int maxDoc;
+public int advance(int target) throws IOException {
+doc = target;
+if (doc < maxDoc) {
+

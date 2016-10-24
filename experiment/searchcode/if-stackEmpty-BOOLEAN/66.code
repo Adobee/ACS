@@ -1,0 +1,16 @@
+private static UndoStack singleton;
+
+
+/**
+*  Constructor for the UndoStack object
+*/
+public UndoStack() {
+if (!load()) {
+stack = new Stack();
+*  Gets the StackEmpty attribute of the UndoStack object
+*
+*@return    The StackEmpty value
+*/
+public boolean isStackEmpty() {
+return stack.isEmpty();
+

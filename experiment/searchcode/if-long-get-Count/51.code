@@ -1,0 +1,16 @@
+public int getNum(int[] divisors, int[] multiples) {
+int g=0;
+long l=1;
+for(int d:divisors)
+{
+l=lcm(l,d);
+if(l>=0x80000000L)
+return 0;
+g/=l;
+int p=2;
+int pow=0;
+int count=1;
+while(g>=2 || pow>=1)
+{
+if((long)p*(long)p>(long)g &amp;&amp;pow==0)
+

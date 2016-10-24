@@ -1,0 +1,15 @@
+public void solve(int testNumber, InputReader in, OutputWriter out) {
+boolean[] reverse = new boolean[256];
+reverse[&#39;A&#39;] = true;
+reverse[&#39;H&#39;] = true;
+reverse[&#39;I&#39;] = true;
+for (int i = 0, j = length - 1; i <= j; i++, j--) {
+if (!reverse[name[i]] || name[i] != name[j]) {
+out.printLine(&quot;NO&quot;);
+return;
+}
+}
+out.printLine(&quot;YES&quot;);
+}
+}
+

@@ -1,0 +1,6 @@
+* The Julian calendar does not have a year zero, and so year -1 is followed by
+* year 1. If the Gregorian cutover date is specified at or before year -1
+LocalDate cutoverDate = new LocalDate(cutoverInstant.getMillis(), GregorianChronology.getInstance(zone));
+if (cutoverDate.getYear() <= 0) {
+throw new IllegalArgumentException(&quot;Cutover too early. Must be on or after 0001-01-01.&quot;);
+

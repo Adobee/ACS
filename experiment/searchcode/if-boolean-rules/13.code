@@ -1,0 +1,15 @@
+package cms;
+
+import java.util.List;
+import models.*;
+
+public class SecurityRules{
+
+List<SecurityRule> rules = null;
+return new SecurityRules( SecurityRule.findAllByHost( key.host ) );
+}
+
+public boolean secured( Key key ){
+for( SecurityRule sr: rules ){
+if( sr.matches( key ) ){
+

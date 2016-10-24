@@ -1,0 +1,6 @@
+//判断输入的凭证字在FN102.PARAM_NUM=2的记录的PARAM_EXPLAIN是否存在
+boolean temp_paramExplain = credencecharBS.is_CredencecharParamExplainInsert(credencecharDTO);
+if(temp_paramExplain){
+//没有记录  插入FN311 ,FN102
+credencecharBS.insertCredencecharInfo(credencecharDTO, securityInfo);
+

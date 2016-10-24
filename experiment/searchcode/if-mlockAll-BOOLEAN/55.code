@@ -1,0 +1,8 @@
+// Set to true, in case native mlockall call was successful
+public static boolean LOCAL_MLOCKALL = false;
+
+static void tryMlockall() {
+int result = JNACLibrary.mlockall(JNACLibrary.MCL_CURRENT);
+if (result != 0) {
+errno = Native.getLastError();
+

@@ -1,0 +1,10 @@
+this.setConflictType(type);
+}
+
+public void resolve(Conflict conflict,ProcessData processData) {
+if (accept(conflict)) {
+public abstract void doResolve(Conflict conflict,ProcessData processData);
+
+public boolean accept(Conflict conflict) {
+return conflict.getType().equals(getConflictType());
+

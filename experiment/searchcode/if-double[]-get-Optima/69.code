@@ -1,0 +1,11 @@
+this.optimizer = optimizer;
+}
+
+/**
+* {@inheritDoc}
+*/
+@Override
+public PointValuePair[] getOptima() {
+Collections.sort(optima, getPairComparator());
+return optima.toArray(new PointValuePair[0]);
+

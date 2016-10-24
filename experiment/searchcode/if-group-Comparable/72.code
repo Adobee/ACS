@@ -1,0 +1,10 @@
+import org.apache.hadoop.io.WritableComparable;
+import org.apache.hadoop.io.WritableComparator;
+
+public class FieldGroupNumComparator extends WritableComparator{
+int cmp = f1.getGroupFields().compareTo(f2.getGroupFields());
+if (cmp != 0)
+return cmp;
+
+if (f1.getSize() > f2.getSize())
+

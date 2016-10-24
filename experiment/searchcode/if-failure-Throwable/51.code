@@ -1,0 +1,14 @@
+return new Success<>(f.get());
+} catch (Throwable t) {
+return new Failure<>(t);
+}
+
+}
+
+public static <T> Try<T> to(Supplier<T> f, Consumer<T> onFailure) {
+t =f.get();
+return new Success<>(t);
+} catch (Throwable throwable) {
+if (t != null) {
+try {
+

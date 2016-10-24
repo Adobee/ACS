@@ -1,0 +1,11 @@
+return a[start] + 1;
+}
+int mid = (start + end)/2;
+if(mid - start != a[mid] - a[start]){
+return findGap(a, start, mid);
+public static int findGap1(int[] a, int start, int end){
+if(end - start == a[end] - a[start]){
+return -1;
+}
+if(start+1 == end){
+

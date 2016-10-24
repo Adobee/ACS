@@ -1,0 +1,5 @@
+private Map _evicted = new HashMap(); // Map (root module conf -> EvictionData) // indicates if the node is evicted in each root module conf
+Collection resolved = (Collection)_evictedDeps.get(new ModuleIdConf(mid, rootModuleConf));
+Set ret = new HashSet();
+if (resolved != null) {
+

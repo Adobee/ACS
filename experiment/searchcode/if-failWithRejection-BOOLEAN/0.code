@@ -1,0 +1,8 @@
+SearchResponse searchResponse = new SearchResponse(internalResponse, scrollId(), 5, 4, randomLong(), null);
+
+if (randomBoolean()) {
+* testRequest.getMaxRetries and controled by the failWithRejection parameter.
+*/
+private void bulkRetryTestCase(boolean failWithRejection) throws Exception {
+int totalFailures = randomIntBetween(1, testRequest.getMaxRetries());
+

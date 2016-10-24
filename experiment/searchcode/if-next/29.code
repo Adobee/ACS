@@ -1,0 +1,13 @@
+private treeNode next;
+
+public TreeIterator(treeNode root){
+next = root;
+if(next == null)
+return;
+public boolean hasNext(){
+return next != null;
+}
+
+public treeNode next(){
+if(!hasNext()) throw new IllegalArgumentException();
+

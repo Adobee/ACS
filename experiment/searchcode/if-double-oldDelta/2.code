@@ -1,0 +1,12 @@
+double x3 = xUpper;
+double delta = 0;
+double oldDelta = 0;
+double f1 = function.evaluate(x1);
+double f2 = function.evaluate(x2);
+x3 = x1;
+f3 = f1;
+delta = x2 - x1;
+oldDelta = delta;
+}
+if (Math.abs(f3) < Math.abs(f2)) {
+

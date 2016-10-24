@@ -1,0 +1,14 @@
+return higher;
+}
+
+public double range(){
+return this.higher() - this.lower();
+for (double item : this.collection) {
+if (item < lower)
+lower = item;
+}
+return lower;
+}
+
+}
+

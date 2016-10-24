@@ -1,0 +1,6 @@
+List<EndpointInfo> dnsServerEndpoints = EndpointInfo.findEndpoints(dnsServer.getTags(), 53);
+if (dnsServerEndpoints.isEmpty()) {
+// String serverId = dnsServer&quot;ns&quot; + dnsServer.getId();
+String dnsName = dnsServer.dnsName;
+if (dnsName == null) {
+

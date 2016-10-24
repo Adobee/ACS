@@ -1,0 +1,5 @@
+// getting the Fields for unliked items
+if (!unlikeItems.isEmpty()) {
+org.apache.lucene.index.Fields[] unlikeFields = MoreLikeThisFetchService.getFieldsFor(responses, unlikeItems);
+if (unlikeFields.length > 0) {
+

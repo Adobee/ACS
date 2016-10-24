@@ -1,0 +1,9 @@
+shapes.add(new ShapeWithRelativeCoordinates(topX, topY, shape));
+}
+
+public boolean shouldTurnOn(int x, int y) {
+int relativeX = x - component.topX;
+int relativeY = y - component.topY;
+
+if (component.shape instanceof Circle) {
+

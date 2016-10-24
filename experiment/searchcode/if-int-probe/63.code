@@ -1,0 +1,8 @@
+out.writeBoolean(probe != null);
+if(probe != null){
+out.writeInt(probe.getProbeType());
+out.writeInt(probe.getInterfacePort());
+public static String getName(int probIndex)
+{
+if(probIndex < 0 || probIndex >= probeNames.length) return null;
+

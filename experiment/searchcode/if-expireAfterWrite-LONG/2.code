@@ -1,0 +1,6 @@
+assertThat(cache.getIfPresent(context.absentKey()), is(-context.absentKey()));
+
+long count = context.initialSize();
+context.ticker().advance(30, TimeUnit.SECONDS);
+assertThat(expireAfterWrite.ageOf(context.firstKey(), TimeUnit.SECONDS).getAsLong(), is(30L));
+

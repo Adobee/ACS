@@ -1,0 +1,10 @@
+private TransportClient transportClient;
+
+@Bean
+public boolean elasticSearchEnabled(@Value(&quot;${elasticsearch.enabled}&quot;) boolean enabled) {
+return enabled;
+}
+
+@Bean
+public TransportClient client(boolean elasticSearchEnabled, @Value(&quot;${elasticsearch.cluster.name}&quot;) String clusterName, @Value(&quot;${elasticsearch.cluster.host}&quot;) String host) throws UnknownHostException {
+

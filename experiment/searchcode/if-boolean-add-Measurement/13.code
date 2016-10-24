@@ -1,0 +1,8 @@
+* Returns true if the measurement type is histogram, false if it&#39;s time series
+* @return True if the measurement type is histogram, false if it&#39;s time series
+*/
+public boolean isHistogram() {
+public void addMeasurementData(MeasurementData measurementData){
+if(measurementData.isHistogram() != histogram){
+log.error(&quot;Error: Cannot add incompatible measurement types (histogram and time series).&quot;);
+

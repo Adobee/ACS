@@ -1,0 +1,12 @@
+logger.info (&quot;Start executing the method create.&quot;);
+int affectedRows = 0;
+try {
+affectedRows = menuDAO.create (menu);
+logger.info (&quot;Finish executing the method create.&quot;);
+return affectedRows;
+}
+
+@Override
+public int update (Menu menu) throws BusinessException {
+logger.info (&quot;Start executing the method update.&quot;);
+

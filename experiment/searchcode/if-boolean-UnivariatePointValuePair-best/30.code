@@ -1,0 +1,9 @@
+double abs,
+ConvergenceChecker<UnivariatePointValuePair> checker) {
+super(checker);
+
+if (rel < MIN_RELATIVE_TOLERANCE) {
+@Override
+protected UnivariatePointValuePair doOptimize() {
+final boolean isMinim = getGoalType() == GoalType.MINIMIZE;
+

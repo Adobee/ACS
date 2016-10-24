@@ -1,0 +1,11 @@
+drawBottom(tessellator, (double)x, (double)y, (double)z, uMin, uMax, vMin, vMax, offset);
+}
+if(renderFaces[1])
+{
+drawTop(tessellator, (double)x, (double)y, (double)z, uMin, uMax, vMin, vMax, offset);
+drawNorth(tessellator, (double)x, (double)y, (double)z, uMin, uMax, vMin, vMax, offset);
+}
+if(renderFaces[3])
+{
+drawSouth(tessellator, (double)x, (double)y, (double)z, uMin, uMax, vMin, vMax, offset);
+

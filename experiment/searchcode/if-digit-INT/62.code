@@ -1,0 +1,16 @@
+static int countDigit(int n, int digit) {
+if (n < 0 || digit < 0)
+return -1;
+
+int digitCount = 0;
+
+while (n > 0) {
+int d = n % 10;
+n /= 10;
+if (d == digit)
+digitCount++;
+}
+return digitCount;
+}
+}
+

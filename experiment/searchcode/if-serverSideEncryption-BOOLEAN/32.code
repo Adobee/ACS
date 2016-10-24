@@ -1,0 +1,8 @@
+private final ByteSizeValue bufferSize;
+
+private final boolean serverSideEncryption;
+
+private final int numberOfRetries;
+public S3BlobStore(Settings settings, AmazonS3 client, String bucket, @Nullable String region, boolean serverSideEncryption,
+ByteSizeValue bufferSize, int maxRetries, String cannedACL, String storageClass) {
+

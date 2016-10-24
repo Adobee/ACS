@@ -1,0 +1,11 @@
+setText(&quot;Rename&quot;);
+}
+
+@Override
+public void run() {
+if (selectedNode != null) {
+// validataor
+for (TreeNode child : children) {
+if (child.getNodeType().equals(selectedNode.getNodeType())) {
+if (child.getXpath() != null &amp;&amp; child.getXpath().equals(xpath) &amp;&amp; !child.equals(selectedNode)) {
+

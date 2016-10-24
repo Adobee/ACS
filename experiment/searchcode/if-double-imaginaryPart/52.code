@@ -1,0 +1,9 @@
+public final class RComplex extends RScalarVector implements RAbstractComplexVector {
+
+private final double realPart;
+private final double imaginaryPart;
+
+private RComplex(double realPart, double imaginaryPart) {
+this.realPart = realPart;
+this.imaginaryPart = imaginaryPart;
+

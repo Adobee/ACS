@@ -1,0 +1,8 @@
+private String currentToken;
+public Context(String text) {
+tokenizer = new StringTokenizer(text);
+return currentToken;
+}
+public void skipToken(String token) throws ParseException {
+if (!token.equals(currentToken)) {
+

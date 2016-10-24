@@ -1,0 +1,11 @@
+.getActualTypeArguments()[0];
+} catch(Exception e) {}
+
+if(typeClass.getName().equals(Object.class.getName())) {
+typeClass = null;
+typeClass = (Class<T>) ((ParameterizedType) getClass().getGenericSuperclass())
+.getActualTypeArguments()[1];
+} catch(Exception e) {}
+
+if(typeClass.getName().equals(Object.class.getName())) {
+

@@ -1,0 +1,13 @@
+public class SearchClientImpl implements SearchClient {
+@Inject
+SearchService searchServiceImpl;
+@Inject
+TagDao tagDaoImpl;
+private final int size = 7;
+public PaginationSupport<Friend> searchFriend(String userName, String query, int page) {
+
+return searchServiceImpl.searchFriends(userName, query, (page - 1) * size, size);
+}
+
+@Override
+

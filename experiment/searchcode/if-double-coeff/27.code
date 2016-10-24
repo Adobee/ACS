@@ -1,0 +1,12 @@
+package EquationGenerator;
+
+public class Var_Coeff
+{
+private String m_StrVtx ;
+private double m_dCoeff ;
+
+Var_Coeff(String strVtx , double dCoeff)
+{
+m_StrVtx = strVtx;
+m_dCoeff = dCoeff;
+

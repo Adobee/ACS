@@ -1,0 +1,10 @@
+* @param obj 要判断的对象。
+* @return true 表示为基本数据类型。
+*/
+public static boolean isBaseDataType(Object obj){
+if(obj==null){
+return false;
+}
+Class<? extends Object> clazz = obj.getClass();
+return (clazz.equals(String.class) || clazz.equals(Integer.class) || clazz.equals(Byte.class)
+

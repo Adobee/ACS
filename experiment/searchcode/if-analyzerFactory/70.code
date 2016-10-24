@@ -1,0 +1,10 @@
+import br.recomende.model.recommender.util.AnalyzerFactory;
+
+@Service
+@Scope(SpringScope.PROTOTYPE)
+public class TermScorer {
+
+private Map<String, Double> termsMap;
+private AnalyzerFactory analyzerFactory;
+private static final Map<TermField, Double> TERM_MULTIPLIER;
+

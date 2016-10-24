@@ -1,0 +1,7 @@
+private boolean hasCommonPrimeDivisors(int A, int B) {
+long commonGCD = gcd(A, B);
+long divisorA = A / commonGCD;
+long gcdA = gcd(commonGCD, divisorA);
+while (gcdA != 1) {
+divisorA /= gcdA;
+

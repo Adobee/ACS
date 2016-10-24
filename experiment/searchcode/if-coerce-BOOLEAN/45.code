@@ -1,0 +1,12 @@
+public void draw(Canvas canvas) {
+LuaValue f = globals.get(&quot;draw&quot;);
+if (!f.isnil())
+try {
+f.call(CoerceJavaToLua.coerce(canvas));
+super.draw(canvas);
+}
+
+public boolean f(int keyCode, KeyEvent event) {
+LuaValue f = globals.get(&quot;onKeyDown&quot;);
+if (!f.isnil())
+

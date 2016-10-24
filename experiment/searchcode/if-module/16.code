@@ -1,0 +1,12 @@
+package ModuleFactory;
+
+public class ModuleFactory {
+private Module defaultModule;
+
+public final Module createModule() {
+public final Module getDefaultModule() {
+if (defaultModule == null) {
+defaultModule = new ShapeModule();
+}
+return defaultModule;
+

@@ -1,0 +1,11 @@
+private boolean isFallback;
+private boolean isFallbackPossible;
+private int nextModeIndex;
+
+public ConnectionSpecSelector(List<ConnectionSpec> list) {
+this.connectionSpecs = list;
+}
+
+private boolean isFallbackPossible(SSLSocket sSLSocket) {
+for (int i = this.nextModeIndex; i < this.connectionSpecs.size(); i++) {
+

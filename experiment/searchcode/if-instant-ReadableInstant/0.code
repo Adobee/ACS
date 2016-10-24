@@ -1,0 +1,10 @@
+import org.joda.time.ReadableInstant;
+
+public class TimePeriodUtil {
+
+public static List<ReadableInstant> generateSchedule(DateTime firstMatching, Period periodBetweenMatchings, DateTime end){
+for(ReadableInstant instant: generateSchedule(firstMatching,periodBetweenMatchings,end)){
+ans.add(new TimeInstant<ReadableInstant>(instant));
+}
+if(forceEnd &amp;&amp; !ans.get(ans.size()-1).getValue().equals(end)){
+

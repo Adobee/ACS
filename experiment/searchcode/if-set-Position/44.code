@@ -1,0 +1,6 @@
+Vector aOldPosition = a.getOldPosition();
+Vector aSize = a.getSize();
+if( (this.position.y + this.size.y >= aPosition.y) &amp;&amp; (this.position.y + this.size.y - 2 <= aOldPosition.y) &amp;&amp; (aPosition.x + aSize.x > this.position.x &amp;&amp; aPosition.x < this.position.x + this.size.x ) ){
+a.setIsOnGround(true);
+if( a.getAcceleration().x == 0 ) {aOldPosition.addInPlace(new Vector((aPosition.x - aOldPosition.x)*.0025, 0)); }
+

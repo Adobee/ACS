@@ -1,0 +1,8 @@
+private Inventory mInventory = new Inventory();
+private CollectionViewCallbacks mCallbacks = null;
+private int mContentTopClearance = 0;
+@Override
+public boolean isEnabled( int row ) {
+if( mCallbacks != null ) {
+if( computeRowContent( row, mRowComputeResult ) ) {
+

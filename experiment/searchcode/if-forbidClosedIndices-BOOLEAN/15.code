@@ -1,0 +1,7 @@
+* @return Whether execution on closed indices is allowed.
+*/
+public boolean forbidClosedIndices() {
+return (id &amp; FORBID_CLOSED_INDICES) != 0;
+static IndicesOptions fromOptions(boolean ignoreUnavailable, boolean allowNoIndices, boolean expandToOpenIndices, boolean expandToClosedIndices, boolean allowAliasesToMultipleIndices, boolean forbidClosedIndices) {
+byte id = toByte(ignoreUnavailable, allowNoIndices, expandToOpenIndices, expandToClosedIndices, allowAliasesToMultipleIndices, forbidClosedIndices);
+

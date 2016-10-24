@@ -1,0 +1,14 @@
+public abstract class AbstractOperationDecorator implements Operation
+{
+
+protected Operation operation;
+
+public AbstractOperationDecorator(Operation operation)
+{
+this.operation = operation;
+}
+
+public void process()
+{
+if (this.operation != null) {
+

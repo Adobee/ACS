@@ -1,0 +1,12 @@
+// Block Shuffle
+public BlockIndex[] setBoardShuffle () {
+
+Random rand =new Random () ;
+
+int row =getSize ().getRow(),
+// 난수 발생 (row *col) ~ (row * col) *2
+int moveCnt =rand.nextInt(row *col) +(row *col) ;
+
+// 이동할 방향과 이동했던 방향
+BlockIndex prevIndex =new BlockIndex(),
+

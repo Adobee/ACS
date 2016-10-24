@@ -1,0 +1,8 @@
+MultipartBody.Builder requestBody = new MultipartBody.Builder();
+requestBody.setType(MultipartBody.FORM);
+if (params != null) {
+RequestBody.create(FILE_TYPE, (File) entry.getValue()));
+} else if (entry.getValue() instanceof String) {
+
+requestBody.addPart(Headers.of(&quot;Content-Disposition&quot;, &quot;form-data; name=\&quot;&quot; + entry.getKey() + &quot;\&quot;&quot;),
+

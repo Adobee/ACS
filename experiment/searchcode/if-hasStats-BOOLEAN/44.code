@@ -1,0 +1,10 @@
+long cmdStart = System.currentTimeMillis();
+Process pr = pb.start();
+
+if (i == 0 &amp;&amp; (!context.isBenchmark() || context.hasStats())) {
+context.appendLine(line);
+
+if (context.hasStats()) {
+if (line.matches(&quot;^$&quot;) || line.matches(&quot;^\\s*$&quot;)
+|| line.matches(&quot;^\\s*//.*$&quot;)) {
+

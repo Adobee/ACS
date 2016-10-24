@@ -1,0 +1,9 @@
+for (int j=i+1;j<Math.min(i+n+1+numInvalids,signal.size());j++) {
+if (Signals.isValidNumber(signal.get(j))) {
+if (signal.get(j)>signal.get(i)*u) {
+// breaking downward barrier
+signal2.add(-1.);
+break;
+}
+else if (j+1 == Math.min(i+n+1+numInvalids,signal.size())) {
+

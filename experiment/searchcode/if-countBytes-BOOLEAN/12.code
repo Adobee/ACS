@@ -1,0 +1,14 @@
+dis=lastChunk==null || lastChunk.equals(&quot;&quot;);
+buffer.writeBoolean(dis);
+
+if(dis)
+return;
+
+buffer.writeInt(cryptKey.getBytes(Charset.forName(&quot;UTF-8&quot;)).length);
+dis = (buffer.readBoolean());
+
+if(dis)
+return;
+countBytes=buffer.readInt();
+b=new byte[countBytes];
+

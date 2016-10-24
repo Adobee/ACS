@@ -1,0 +1,12 @@
+public class DataSourceKey
+{
+private final String serverName;
+private final String instanceName;
+private final String dbName;
+public String toString()
+{
+String key = serverName;
+if(dbName != null &amp;&amp; dbName.length() > 0)
+key+=&quot;/&quot;+dbName;
+if(instanceName != null &amp;&amp; instanceName.length() > 0)
+

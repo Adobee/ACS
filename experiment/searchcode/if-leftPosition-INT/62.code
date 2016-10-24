@@ -1,0 +1,8 @@
+int right = count - 1;
+int leftPosition = 0;
+int rightPosition = count - 1;
+long answer = 1;
+if (left == right) {
+if (order[left] == 0) {
+answer = answer * c(rightPosition - leftPosition, left - leftPosition) % MOD;
+

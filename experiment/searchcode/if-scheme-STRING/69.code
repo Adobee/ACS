@@ -1,0 +1,14 @@
+this.schemeList = schemeList;
+}
+
+public SchemeObject getSchemeObject(String schemeInstance){
+if(this.schemeList.containsKey(schemeInstance)){
+return (SchemeObject)this.schemeList.get(schemeInstance);
+}else{
+return null;
+}
+}
+
+public boolean hasScheme(String schemeInstance){
+if(schemeList.containsKey(schemeInstance)){
+

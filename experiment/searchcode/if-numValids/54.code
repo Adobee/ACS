@@ -1,0 +1,9 @@
+str += &quot;{isFolder:true, expand:true, title:&#39;&quot; + school.schoolName + &quot;&#39;, key:&#39;&quot; + school.schoolName + &quot;&#39;, children:[ &quot; + teacherObjectArray( school.teachers ) + &quot;] },&quot;;
+}
+if (schools.size() > 0)
+str = str.substring(0,str.length()-1); //remove last comma.
+if (c.isValid) {
+numvalids++;
+List<Coding> codings = c.codings;
+//if (c.codings.isEmpty() ) { System.err.println( &quot;Contribution with id &quot; + c.id + &quot; has no codings&quot;); }
+

@@ -1,0 +1,15 @@
+public double cal(int m ,double xx,double yy){
+if(m%2==0){
+return 0;
+}else{
+double re = 0;
+re = (100*Math.sinh(m*Math.PI*yy)/Math.sinh(m*Math.PI)+20*Math.sinh(m*Math.PI*(1-yy))/Math.sinh(m*Math.PI))*Math.sin(m*Math.PI*xx)*2/(m*Math.PI);
+return re;
+}
+
+}
+public boolean isConverge(double k,int m){
+if(m%2==0){
+return false;
+}else if(Math.abs(this.convergenceConst-k)<=0.1){
+

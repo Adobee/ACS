@@ -1,0 +1,12 @@
+this.endTimeMillis = endTimeMillis;
+}
+
+public static Duration betweenHours(int start, int end) {
+return new Duration(convertHour(start), convertHour(end) - 1);
+public boolean containsHour(int hour) {
+long converted = convertHour(hour);
+return containsMillis(converted);
+}
+
+public boolean containsMinute(int minute) {
+

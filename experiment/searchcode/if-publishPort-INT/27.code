@@ -1,0 +1,12 @@
+private int publishPort;
+private int subscribePort;
+private ByteOrder byteOrder;
+private Charset charset;
+this.subscribePort = subscribePort;
+}
+}
+
+public void setPublishPort(int publishPort) {
+if (!running &amp;&amp; isPublisher()) {
+this.publishPort = publishPort;
+

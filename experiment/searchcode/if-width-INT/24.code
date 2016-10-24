@@ -1,0 +1,16 @@
+public class Screen {
+public final int[] pixels;
+private final int width;
+
+public Screen(int width, int height) {
+for (int x = 0; x < width; x++) {
+int ip = (yp + y) * this.width + (xp + x);
+if (ip >= pixels.length || ip < 0) {
+continue;
+}
+pixels[ip] = color + pixels[ip];
+}
+}
+}
+}
+

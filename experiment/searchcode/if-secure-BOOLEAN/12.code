@@ -1,0 +1,11 @@
+return secureHash.hashCode();
+}
+
+@Override
+public boolean equals(Object obj) {
+if(obj == null) {
+return false;
+}
+if(obj instanceof SecureSegment) {
+return secureHash.equals(((SecureSegment) obj).secureHash);
+

@@ -1,0 +1,7 @@
+private int availablePermits = DEFAULT_MAX_PERMITS_COUNT;
+private int maxPermitsCount = DEFAULT_MAX_PERMITS_COUNT;
+public void acquire(int permits) throws InterruptedException {
+if (permits > 0) {
+synchronized (lock) {
+if (availablePermits >= permits) {
+

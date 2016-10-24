@@ -1,0 +1,11 @@
+this.maxSize = maxSize;
+}
+
+public String getCollection(long key){
+return name + (key % this.maxSize);
+}
+
+public String getCollection(String key){
+int num = key.hashCode();
+if(num == Integer.MIN_VALUE) {
+

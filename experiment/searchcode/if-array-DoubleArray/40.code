@@ -1,0 +1,12 @@
+for(int i=1; i<=doubleArray.length; i++)
+{
+sum += i*(doubleArray[i-1]*doubleArray[i-1]);
+}
+if(sum < minValue)
+myClone(doubleArray, oldArray);
+}
+modify(doubleArray);
+if(count%20 == 0)
+{
+System.out.printf(&quot;Thread %d, Current Min: %f\n&quot;, threadNum, minValue);
+

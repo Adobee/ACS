@@ -1,0 +1,10 @@
+package com.eris4.benchdb.core.reporter;
+
+import org.jfree.data.xy.XYSeries;
+
+import com.eris4.benchdb.core.monitor.Monitor;
+private Monitor yAxis;
+private XYSeries xySeries;
+private double xValue = -1;
+private double yValue = -1;
+

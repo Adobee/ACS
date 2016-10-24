@@ -1,0 +1,6 @@
+private Connection createConnection(Long threadId) throws SQLException{
+log.debug(&quot;creating new connection for thread id: &quot; + threadId);
+Connection cw = null;
+//		if(!connections.containsKey(threadId)){
+cw = dataSource.getConnection();
+

@@ -1,0 +1,10 @@
+public  byte [] resize(byte [] img, int newW, int newH) throws IOException {
+
+BufferedImage bImageFromConvert = ImageIO.read(new ByteArrayInputStream(img));
+
+double wNew=1;
+double hNew=1;
+
+if (bImageFromConvert.getHeight() > bImageFromConvert.getWidth()) {
+wNew =  ((double) bImageFromConvert.getWidth() * ((double)newH / bImageFromConvert.getHeight()));
+

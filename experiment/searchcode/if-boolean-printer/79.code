@@ -1,0 +1,11 @@
+blnRet = thermalPrinter.isPaperOut();
+Log.v(&quot;PRINT&quot;, &quot;isPaperOut:&quot; + blnRet);
+
+if ((!thermalPrinter.isOverTemperature())&amp;&amp;(!thermalPrinter.isPaperOut())&amp;&amp;(thermalPrinter.getState() > -1)){
+if(data.getClass().getSimpleName().equalsIgnoreCase(&quot;TransactionPrint&quot;)){
+return reportPrint();
+}
+
+}else{
+if(thermalPrinter.isPaperOut()){
+

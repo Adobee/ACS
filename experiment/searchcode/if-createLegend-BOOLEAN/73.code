@@ -1,0 +1,8 @@
+public SolverChartPanel(String title, String xAxisLabel, String yAxisLabel,
+XYSeriesCollection dataset, boolean createLegend) {
+super(null);
+JFreeChart chart = createChart(title, xAxisLabel, yAxisLabel, dataset,
+protected JFreeChart createChart(String title, String xAxisLabel,
+String yAxisLabel, XYDataset dataset, boolean createLegend) {
+JFreeChart chart = ChartFactory.createXYLineChart(title, xAxisLabel,
+

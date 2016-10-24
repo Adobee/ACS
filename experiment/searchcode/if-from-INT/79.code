@@ -1,0 +1,7 @@
+public static Scanner in=new Scanner(System.in).useLocale(Locale.US);
+
+boolean augment(int[][] cap,boolean[] done,int from,int to,int add) {
+if(done[from]) return false; else done[from]=true;
+if(from==to) return true;
+for(int i=0;i<cap[from].length;++i) if(cap[from][i]>=add&amp;&amp;augment(cap,done,i,to,add)) {
+

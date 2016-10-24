@@ -1,0 +1,8 @@
+private boolean strictMode = true;
+
+public Cache(Creator<K, V> creator) {
+this.creator = creator;
+if (newValue == null) {
+if (strictMode) {
+throw new IllegalStateException(&quot;Creator can&#39;t return null&quot;);
+

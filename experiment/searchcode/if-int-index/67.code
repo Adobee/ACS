@@ -1,0 +1,10 @@
+solveNQueens(0, n, num);
+return result;
+}
+private void solveNQueens(int index, int n, int[] num) {
+if (index == n) {
+for (int j=1; j <= n; ++j) {
+num[index] = j;
+if (isValid(num, index))
+solveNQueens(index+1, n, num);
+

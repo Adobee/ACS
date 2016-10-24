@@ -1,0 +1,10 @@
+public class AgentAventurier extends Agent {
+private Ia IAAgent; // l&#39;ia du personnage
+
+public AgentAventurier(int[] nbCases,int nbMaxFleches)
+public void initialiserIA(String IaActive){
+if (IAAgent==null){
+switch(IaActive){
+case &quot;IaSimple1&quot; :
+IAAgent = new IaSimple1(nbCases);
+

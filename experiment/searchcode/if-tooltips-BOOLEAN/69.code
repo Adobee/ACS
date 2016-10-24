@@ -1,0 +1,10 @@
+public ImageResourceLocation[] imgs;
+public String[] tooltips;
+
+public ImageCycleButton(int buttonId, ImageResourceLocation[] images, int x, int y) {
+public ImageCycleButton(int buttonId, ImageResourceLocation[] images, String[] tooltips, int x, int y) {
+super(buttonId, null, x, y);
+this.imgs=images;
+if(images.length!=tooltips.length)
+throw new ArrayIndexOutOfBoundsException();
+

@@ -1,0 +1,13 @@
+* 同步查询时进行分页缓存,对应查询起始笔数是一个RowkeyContext集合.
+*
+*/
+public class RowkeyContext implements Serializable, Comparable<RowkeyContext> {
+result = prime * result + rowkey.toString().hashCode();
+return result;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj)
+return true;
+

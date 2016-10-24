@@ -1,0 +1,16 @@
+package com.nihb.common.helper;
+
+public enum ProviderType {
+NIHB(&#39;A&#39;),
+PROVIDER(&#39;P&#39;);
+
+public final char Value;
+public static ProviderType getProviderType(char ch){
+for(ProviderType ut : ProviderType.values()){
+if(ch == ut.Value)return ut;
+}
+return null;
+}
+
+}
+

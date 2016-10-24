@@ -1,0 +1,12 @@
+return super.getPoint(ndx % pointCount);
+}
+
+public Vector2f getPointVect(int ndx) {
+float[] point = getPoint(ndx);
+return new Vector2f(point[0], point[1]);
+protected void generateSides() {
+float x, y;
+if (pointCount > 1) {
+sides.clear();
+for (int i = 0; i < pointCount; i++) {
+

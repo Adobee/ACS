@@ -1,0 +1,10 @@
+this.scheduleMinute = schedule;
+}
+
+@Override
+public boolean checkTriggerEvent(Date currentDate) {
+if(this.scheduleRuleDay != null &amp;&amp; !scheduleRuleDay.checkTriggerEvent(currentDate)){
+return false;
+}
+if(this.scheduleMinute != null &amp;&amp; !scheduleMinute.checkTrigger(currentDate)){
+

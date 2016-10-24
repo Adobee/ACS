@@ -1,0 +1,11 @@
+public List<T> perfom(List<T> list, int expectedSize, Random random) {
+
+if (expectedSize < 0) {
+throw new RuntimeException(&quot;Can&#39;t select &quot; + expectedSize + &quot; negative number of objects&quot;);
+}
+
+// int expectedSize = m;
+int n = list.size();
+
+List<T> result = new ArrayList<T>(expectedSize);
+

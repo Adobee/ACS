@@ -1,0 +1,7 @@
+public static int doProbabilisticSelection(double[] probability) {
+double p = Math.random();
+double cumulativeProbability = 0.0;
+for (int i = 0; i < probability.length;i++) {
+cumulativeProbability += probability[i];
+if (p <= cumulativeProbability &amp;&amp; probability[i] != 0) {
+

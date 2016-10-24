@@ -1,0 +1,9 @@
+// run Logic Collapsed Gibbs for numsamp
+if(numouter > 0)
+{
+double[][] logicweights = rs.seedsToZL(c.N, p.T);
+// Do LogicLDA MAP inference via Stochastic Gradient Descent
+double stepa = Math.sqrt(numinner);
+double stepb = (double) numinner;
+relax = rs.doSGD(c, p, relax, numouter, numinner, stepa, stepb);
+

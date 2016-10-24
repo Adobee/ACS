@@ -1,0 +1,7 @@
+long hoursInMinutes = TimeUnit.HOURS.toMinutes(hours);
+
+return new int[]{(int) hours, (int) (minutes - hoursInMinutes)};
+long hoursInMinutes = TimeUnit.HOURS.toMinutes(hours);
+
+return pad((int) hours) + &quot;:&quot; + pad((int) (minutes - hoursInMinutes));
+

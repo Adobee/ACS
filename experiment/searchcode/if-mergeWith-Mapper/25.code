@@ -1,0 +1,8 @@
+ImmutableMap.Builder<Class<? extends RootMapper>, RootMapper> builder = ImmutableMap.builder();
+for (RootMapper rootMapper : rootMappers) {
+if (rootMapper.includeInObject()) {
+assert rootMappers.length == mergeWith.rootMappers.length;
+
+root.merge(mergeWith.root, mergeContext);
+for (RootMapper rootMapper : rootMappers) {
+

@@ -1,0 +1,14 @@
+{ return N == 0; }
+
+public void push(int item)
+{ if(N >= s.length)
+resize(s.length * 2);
+s[N++] = item; }
+
+public int pop()
+{ return s[--N]; }
+
+private void resize(int newsize)
+{
+if(newsize >= s.length) {
+

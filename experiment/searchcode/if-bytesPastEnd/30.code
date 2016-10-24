@@ -1,0 +1,7 @@
+private int bytesPastEnd;
+
+private JpegClosedInputStream(final InputStream iInputStream) {
+if (buffer == -1) {
+if (bytesPastEnd > 0) {
+buffer = JPEG_EOI_2;
+

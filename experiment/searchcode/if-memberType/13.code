@@ -1,0 +1,9 @@
+public enum MemberType {
+Guest(&quot;Guest&quot;, 0),
+Basic(&quot;Basic&quot;, 1),
+Charter(&quot;Charter&quot;, 2),
+Premium(&quot;Premium&quot;, 3);
+public static MemberType fromId(int id) {
+for (MemberType memberType : values()) {
+if (memberType.id == id)
+

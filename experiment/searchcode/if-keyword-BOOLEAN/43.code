@@ -1,0 +1,12 @@
+public void setKeyword(String keyword) {
+this.keyword = keyword;
+}
+
+@Override
+public boolean equals(Object o) {
+if (o == null || getClass() != o.getClass()) return false;
+
+HdKeyword hdKeyword = (HdKeyword) o;
+
+if (keywordId != hdKeyword.keywordId) return false;
+

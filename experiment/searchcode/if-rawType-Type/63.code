@@ -1,0 +1,9 @@
+public class TypeDefinition implements ParameterizedType {
+private final Type rawType;
+private final Type[] actualTypeArguments;
+
+public TypeDefinition(Type rawType, Type... actualTypeArguments) {
+StringBuilder sb = new StringBuilder();
+sb.append(rawType);
+if (actualTypeArguments != null &amp;&amp; actualTypeArguments.length > 0) {
+

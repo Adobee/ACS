@@ -1,0 +1,12 @@
+throw new JspException(&quot;g:addLimit must be used between g:boundary tag!&quot;) ;
+}
+
+if(limit == NullValue.instance || limit2 == NullValue.instance || limit3 == NullValue.instance){
+throw new JspException(&quot;you cann&#39;t add a null limit condition to <g:addLimit> tag.&quot;) ;
+}
+
+m_parent.addLimitCondition(limit) ;
+
+if(limit2 != null){
+m_parent.addLimitCondition(limit2) ;
+

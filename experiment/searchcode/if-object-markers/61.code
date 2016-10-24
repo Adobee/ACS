@@ -1,0 +1,7 @@
+public Object execute(ExecutionEvent event) {
+ExtendedMarkersView view = getView(event);
+if (view == null)
+String markerReport = createMarkerReport(view, markers);
+// Place the markers on the clipboard
+Object[] data;
+

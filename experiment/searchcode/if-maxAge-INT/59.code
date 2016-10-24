@@ -1,0 +1,12 @@
+public class CacheFilter implements ContainerResponseFilter {
+
+private int maxAge;
+Logger logger = Logger.getLogger(&quot;filter&quot;);
+
+public CacheFilter(int maxAge) {
+this.maxAge = maxAge;
+}
+
+@Override
+public void filter(ContainerRequestContext reqCtx,
+

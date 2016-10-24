@@ -1,0 +1,9 @@
+public class EliasFanoEncoder {
+final long numValues;
+private final long upperBound;
+final int numLowBits;
+final long lowerBitsMask;
+this.upperBound = numValues > 0 ? upperBound : -1L; // if there is no value, -1 is the best upper bound
+int nLowBits = 0;
+if (this.numValues > 0) { // nLowBits = max(0; floor(2log(upperBound/numValues)))
+

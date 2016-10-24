@@ -1,0 +1,17 @@
+public static int compareLong( Long thisLong, Long thatLong )
+{
+long diff = thisLong - thatLong;
+
+if( diff < 0 )
+{
+return -1;
+}
+else if( diff > 0 )
+{
+return 1;
+}
+
+return 0;
+}
+}
+

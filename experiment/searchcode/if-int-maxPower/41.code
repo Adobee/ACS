@@ -1,0 +1,13 @@
+public void addSite(Site s) {
+if (!siteMembers.contains(s))
+siteMembers.add(s);
+}
+
+public Duct() {
+siteMembers = new Vector();
+}
+
+public Duct(Site[] sites) {
+siteMembers = new Vector();
+for (int i = 0; i < sites.length; i++)
+

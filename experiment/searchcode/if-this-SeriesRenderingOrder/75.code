@@ -1,0 +1,6 @@
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(SeriesRenderingOrder.FORWARD)) {
+return SeriesRenderingOrder.FORWARD;
+}
+else if (this.equals(SeriesRenderingOrder.REVERSE)) {
+

@@ -1,0 +1,10 @@
+public class WxpublicPageParser {
+
+public boolean parse(WebDriver wxpubDriver){
+if (this.articleUrls==null)
+this.articleUrls = new ArrayList<String>();
+else
+this.articleUrls.clear();
+
+List<WebElement> ea = wxpubDriver.findElements(By.cssSelector(&quot;h4[class=&#39;weui_media_title&#39;]&quot;));
+

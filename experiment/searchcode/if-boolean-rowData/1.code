@@ -1,0 +1,11 @@
+RowData rowData=rows.get(row);
+if(rowData==null)
+return new HashMap<Column,Long>();
+return rowData.getCurrentALLColTimestamp();
+return rowData.readCol(col, start_ts);
+}
+
+public boolean findByValue(Row row,Column col,String val){
+RowData rowData=rows.get(row);
+if(rowData==null)
+

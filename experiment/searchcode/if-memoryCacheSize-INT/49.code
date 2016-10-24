@@ -1,0 +1,9 @@
+.tasksProcessingOrder(QueueProcessingType.LIFO).build();
+return config;
+}
+
+private int getMemoryCacheSize(Context context) {
+int memoryCacheSize;
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR) {
+int memClass = ((ActivityManager) context
+

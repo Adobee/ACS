@@ -1,0 +1,14 @@
+public class ExploreGenerics {
+
+interface Predicate<T>{
+
+boolean evaluate(T t);
+}
+
+
+class MyNumber <T extends Number > {
+Predicate<Student> predicate = new Predicate<Student>() {
+@Override
+public boolean evaluate(Student student) {
+if (student.getName().startsWith(&quot;J&quot;)){
+

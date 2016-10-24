@@ -1,0 +1,13 @@
+public final class Point implements Comparable<Point> {
+private double x, y;
+
+public Point(double X,double Y) {
+x = X;
+y = Y;
+}
+
+public int compareTo(Point p) {
+if (Math.abs(x - p.x) < 1e-7) {
+if (Math.abs(y - p.y) < 1e-7) {
+return 0;
+

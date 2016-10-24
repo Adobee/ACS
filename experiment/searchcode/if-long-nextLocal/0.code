@@ -1,0 +1,9 @@
+public class LocalVariablesSorter extends MethodVisitor {
+
+
+private static class State {
+int[] mapping = new int[40];
+int nextLocal;
+* A single local variable can hold a value of type boolean, byte, char, short, int, float, reference, or returnAddress. A pair of local variables can hold a value of type long or double.
+* Local variables are addressed by indexing. The index of the first local variable is zero. An integer is considered to be an index into the local variable array if and only if that integer is between zero and one less than the size of the local variable array.
+

@@ -1,0 +1,12 @@
+boolean oldValue = sharedPreferences.getBoolean(name, defaultValue);
+
+if (oldValue == value) {
+return;
+editor.putBoolean(name, value);
+editor.commit();
+
+dataChanged();
+}
+
+public static void savePreference(SharedPreferences sharedPreferences, String name, int value, int defaultValue) {
+

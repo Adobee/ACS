@@ -1,0 +1,6 @@
+@Override public synchronized void synStream(boolean outFinished, boolean inFinished,
+int streamId, int associatedStreamId, int priority, int slot, List<String> nameValueBlock)
+throws IOException {
+if (inFinished) throw new UnsupportedOperationException();
+headers(outFinished, streamId, priority, nameValueBlock);
+

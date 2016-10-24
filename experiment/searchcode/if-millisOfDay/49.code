@@ -1,0 +1,8 @@
+public Long getDownloadAmountByType(DeviceTypeEnum deviceType) {
+DateTime maxDate = DateTime.now().minusDays(1).millisOfDay().withMaximumValue();
+query.setParameter(2, maxDate.toString(&quot;yyyy-MM-dd HH:mm:ss&quot;));
+
+List result = query.getResultList();
+Long totalCount = 0L;
+if (result.get(0) != null) {
+

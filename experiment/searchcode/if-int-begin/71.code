@@ -1,0 +1,11 @@
+return sqrt_0(1, end, x);
+}
+
+private int sqrt_0(int begin, int end, int target){
+if(begin * begin == target){
+return end;
+}
+int mid = (begin + end) / 2;
+if(mid*mid > target){
+return sqrt_0(begin, mid - 1, target);
+

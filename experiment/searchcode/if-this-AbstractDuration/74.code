@@ -1,0 +1,7 @@
+* @param other  a duration to check against
+* @return negative value if this is less, 0 if equal, or positive value if greater
+long otherMillis = other.getMillis();
+
+// cannot do (thisMillis - otherMillis) as it can overflow
+if (thisMillis < otherMillis) {
+

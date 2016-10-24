@@ -1,0 +1,13 @@
+package trittimo.btree;
+
+public class BPlusTree {
+Node root;
+int maxDegree;
+
+public BPlusTree(int maxDegree) {
+this.maxDegree = maxDegree;
+this.root = new LeafNode(maxDegree);
+}
+
+public String toString(){
+

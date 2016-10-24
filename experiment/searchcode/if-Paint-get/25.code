@@ -1,0 +1,15 @@
+public PaintBrushRemover(MultiTools plugin) {
+try {
+paintBrush = (PaintBrush) plugin.getToolHandler().getTool(&quot;PaintBrush&quot;);
+}
+catch (Exception e) {
+}
+}
+
+public void run() {
+if (paintBrush != null) {
+paintBrush.updatePaintBrushes();
+}
+}
+}
+

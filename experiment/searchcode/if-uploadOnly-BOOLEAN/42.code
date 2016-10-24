@@ -1,0 +1,9 @@
+final ContentProviderClient provider, final SyncResult syncResult) {
+final boolean uploadOnly = extras.getBoolean(ContentResolver.SYNC_EXTRAS_UPLOAD, false);
+// upload only and isn&#39;t managed by this SyncAdapter as it doesn&#39;t need periodic sync.
+if (uploadOnly) {
+return;
+}
+
+LOGI(TAG, &quot;Beginning sync for account &quot; + logSanitizedAccountName + &quot;,&quot; +
+

@@ -1,0 +1,10 @@
+public Child addChild(BigInteger id, CreateChildRequest createChildRequest) throws UserNotFoundException {
+// TODO Auto-generated method stub
+User parent = userRepository.findOne(id);
+if (parent == null) {
+toBeDeleted = tempChild;
+}
+}
+if (toBeDeleted != null) {
+boolean deleted = parent.getChildren().remove(toBeDeleted);
+

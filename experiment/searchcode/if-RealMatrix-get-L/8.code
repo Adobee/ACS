@@ -1,0 +1,12 @@
+* covariance matrix of x
+*/
+
+RealMatrix c = rm.scalarMultiply(0);
+for (int i = 0; i < rm.getRowDimension(); i++) {
+c.setRowMatrix(i, rm.getRowMatrix(i).subtract(meanVec));
+RealMatrix y = MatrixUtils.createRealMatrix(m2);
+
+RealMatrix malDistanceMatrix = mahalDist(x, y);
+
+if (malDistanceMatrix.getColumnDimension() != 1
+

@@ -1,0 +1,8 @@
+return rawResponsesQueue.remove();
+}
+
+private void receiveNextMessage() throws IOException {
+int msgSize = dis.readInt();
+if (msgSize < 4) {
+throw new IOException(&quot;Invalid TraCI message size: &quot; + msgSize);
+

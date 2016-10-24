@@ -1,0 +1,16 @@
+return faceCount;
+}
+
+public void addFace(){
+faceCount++;
+}
+
+public int minVertex(){
+if (vertexA < vertexB) return vertexA;
+String s = &quot;(&quot; + vertexA + &quot;, &quot; + vertexB +&quot;) /w &quot; + faceCount + &quot; faces&quot;;
+return s;
+}
+
+public boolean equals(Edge e){
+if ((e.vertexB == this.vertexB &amp;&amp; e.vertexA == this.vertexA) ||
+

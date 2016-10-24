@@ -1,0 +1,16 @@
+cop[i] = input[i]; // copy them
+}
+
+// next time to bubble sort
+
+double tmp = 0.0;
+int tmp2 = 0;
+boolean swap = false;
+tmp2 = index[j];
+index[j] = index[j - 1];
+index[j - 1] = tmp2;
+}
+}
+
+if (swap == false) {
+

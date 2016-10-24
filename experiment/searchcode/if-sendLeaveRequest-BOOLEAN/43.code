@@ -1,0 +1,6 @@
+public void sendLeaveRequest(DiscoveryNode masterNode, DiscoveryNode node) {
+transportService.sendRequest(node, LeaveRequestRequestHandler.ACTION, new LeaveRequest(masterNode), EmptyTransportResponseHandler.INSTANCE_SAME);
+* Validates the join request, throwing a failure if it failed.
+*/
+public void sendValidateJoinRequestBlocking(DiscoveryNode node, ClusterState clusterState, TimeValue timeout) throws ElasticsearchException {
+

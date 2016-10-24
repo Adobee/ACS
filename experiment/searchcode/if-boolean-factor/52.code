@@ -1,0 +1,9 @@
+Factor factor = factorScored.getScoringFactor();
+
+if (factor == null)
+{
+return new FactorScoredDto();
+String factorName = factor.getName();
+Long factorScore = Long.valueOf(factorScored.getScore());
+boolean isIgnored = factorScored.isIgnored();
+

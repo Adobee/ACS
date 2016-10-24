@@ -1,0 +1,9 @@
+import amp.rabbit.commands.BurstRoutingCacheCommand;
+import amp.rabbit.topology.RoutingInfo;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+Map<String, RoutingInfo> newRouting = command.getNewRoutingInfo();
+
+// if it does, populate the cache with it
+if (null != newRouting) {
+

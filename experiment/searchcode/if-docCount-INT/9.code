@@ -1,0 +1,9 @@
+public class UniqueSketch extends CountMinSketch{
+
+private int docCount = 0;
+private Set<String> knownWords = new HashSet<String>();
+for (int key : sketch.keySet()){
+
+for (int subKey : sketch.get(key).keySet()){
+docCount = Math.max(docCount, sketch.get(key).get(subKey));
+

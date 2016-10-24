@@ -1,0 +1,5 @@
+public CanFindThreshold.ThresholdInfo weakThresholdByPvalue(double pvalue) {
+PvalueBsearchList.ThresholdPvaluePair info = bsearchList.weakThresholdByPvalue(pvalue);
+public CanFindThreshold.ThresholdInfo thresholdByPvalue(double pvalue, BoundaryType boundaryType) {
+if (boundaryType == BoundaryType.LOWER) {
+

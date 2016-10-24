@@ -1,0 +1,7 @@
+public static String StripExtension(String filename) {
+int extIndex = filename.lastIndexOf(&#39;.&#39;);
+
+if (extIndex == 0) return filename.substring(1);
+if (extIndex > 0) return filename.substring(0, extIndex);
+return filename;
+

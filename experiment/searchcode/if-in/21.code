@@ -1,0 +1,10 @@
+import org.apache.commons.lang3.StringUtils;
+
+public class BooleanUtil {
+
+public static Boolean convert(Object in) {
+if (in == null) {
+return Boolean.FALSE;
+} else if (in instanceof List) {
+return ((List<?>) in).size() != 0;
+

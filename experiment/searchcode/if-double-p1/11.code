@@ -1,0 +1,11 @@
+package agent.fuzzy.set;
+
+public class ATrapezoidFuzzySet extends AFuzzySet{
+
+public double p1;
+public ATrapezoidFuzzySet(double p1, double p2, double p3, double p4) {
+super();
+this.p1 = p1;
+this.p2 = p2;
+this.p3 = p3;
+

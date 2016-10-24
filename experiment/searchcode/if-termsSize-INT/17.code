@@ -1,0 +1,10 @@
+public void readFrom(StreamInput in) throws IOException {
+id = in.readLong();
+
+int termsSize = in.readVInt();
+if (termsSize == 0) {
+terms = EMPTY_TERMS;
+} else {
+terms = new Term[termsSize];
+for (int i = 0; i < terms.length; i++) {
+

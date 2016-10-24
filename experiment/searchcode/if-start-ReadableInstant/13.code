@@ -1,0 +1,9 @@
+public class Days extends BaseSingleFieldPeriod {
+
+public static Days daysBetween(ReadableInstant start, ReadableInstant end) {
+return new Days(Hours.hoursBetween(start, end).getValue() / 24);
+}
+
+private Days(int days) {
+super(days, Calendar.DAY_OF_MONTH);
+

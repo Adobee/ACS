@@ -1,0 +1,9 @@
+private boolean inStmt = false;
+private String theStmt = &quot;&quot;;
+private boolean humanReadable = false;
+
+void parseCommand(String iCommand) throws SAXException, IOException {
+inStmt  = true;
+String hr=atts.getValue(&quot;humanReadable&quot;);
+if (hr!=null &amp;&amp; hr.equals(&quot;1&quot;)) {
+

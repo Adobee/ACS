@@ -1,0 +1,9 @@
+jEnumClass._implements(org.apache.thrift.TEnum.class);
+
+if (definition.getFields() != null) {
+jEnumClass.field(JMod.PRIVATE | JMod.FINAL, int.class, &quot;value&quot;);
+JVar valueVar = jctor.param(int.class, &quot;value&quot;);
+
+JBlock jblock = jctor.body();
+jblock.assign(JExpr.refthis(&quot;value&quot;), valueVar);
+

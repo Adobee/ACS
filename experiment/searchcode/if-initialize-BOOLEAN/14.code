@@ -1,0 +1,10 @@
+public static void main(String[] args) {
+//This is not thread-safe. You can fix it by using AtomicBoolean:
+if (!initialized) {
+initialize();
+initialized = true;
+
+}
+
+if (myBoolean.compareAndSet(false, true)) {
+

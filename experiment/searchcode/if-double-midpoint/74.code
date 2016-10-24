@@ -1,0 +1,10 @@
+public abstract class IntervalWindowIterator<K extends Comparable<K>> implements Iterator<Interval<K>> {
+K midpoint;
+final Iterator<K> child;
+public abstract Interval<K> constructInterval(K midpoint);
+
+@Override
+public Interval<K> next() {
+this.midpoint = child.next();
+if (midpoint == null)
+

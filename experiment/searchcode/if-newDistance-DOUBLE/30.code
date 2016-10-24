@@ -1,0 +1,8 @@
+private void update(int x, int dx, int y) {
+if (x + dx >= width() || x + dx < 0) {
+return;
+}
+double newDistance = distance[x][y - 1] + energy[x + dx][y];
+if (distance[x + dx][y] > newDistance) {
+distance[x + dx][y] = newDistance;
+

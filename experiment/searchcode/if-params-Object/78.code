@@ -1,0 +1,14 @@
+protected final boolean is(Object val, Object[] params) {
+if (val == null) {
+return false;
+} else if (params == null || params.length == 0) {
+protected final <T> T get(Class<T> clazz, Object[] params) {
+for (Object object : params) {
+if (object != null &amp;&amp; object.getClass().equals(clazz)) {
+return (T) object;
+}
+}
+return null;
+}
+}
+

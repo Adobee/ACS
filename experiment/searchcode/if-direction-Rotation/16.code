@@ -1,0 +1,8 @@
+public static ForgeDirection getWorldDirection(LocalDirection direction, ForgeDirection forward) {
+if (forward == ForgeDirection.UP || forward == ForgeDirection.DOWN)
+int directionAmount = getRotationIndex(direction);
+
+directionAmount -= rotationAmount;
+directionAmount = directionAmount % 4;
+if (directionAmount < 0) {
+

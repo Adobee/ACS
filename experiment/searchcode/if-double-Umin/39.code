@@ -1,0 +1,16 @@
+public static double exp_rand(Session context) {
+double a = 0.;
+double u = context.rng.unif_rand();    /* precaution if u = 0 is ever returned */
+break;
+}
+a += q[0];
+}
+u -= 1.;
+
+if (u <= q[0]) {
+return a + u;
+}
+
+int i = 0;
+double ustar = context.rng.unif_rand(), umin = ustar;
+

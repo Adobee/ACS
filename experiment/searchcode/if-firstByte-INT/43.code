@@ -1,0 +1,9 @@
+public void testDecode() throws Exception {
+
+int firstByte = getEncodedData();
+GSNAddressAddressType asc = GSNAddressAddressType.getFromGSNAddressFirstByte(firstByte);
+public void testEncode() throws Exception {
+
+GSNAddressAddressType asc = GSNAddressAddressType.IPv4;
+int firstByte = asc.createGSNAddressFirstByte();
+

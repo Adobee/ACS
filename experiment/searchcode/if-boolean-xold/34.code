@@ -1,0 +1,9 @@
+super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+}
+@Override
+protected void onLayout(boolean changed, int l, int t, int r, int b) {
+super.onSizeChanged(xNew, yNew, xOld, yOld);
+if(resizeListener != null)
+{
+resizeListener.onResize(this.getId(), xNew, yNew, xOld, yOld);
+

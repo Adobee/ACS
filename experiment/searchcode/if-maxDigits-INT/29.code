@@ -1,0 +1,7 @@
+static public ImmutableMap<Integer, Distribution> generateAllNumbersDistributions(int maxDigits, int startingDigit) {
+Distribution singleDigitDistribution = Distribution.singleDigitNumbers(startingDigit);
+Distribution longer = singleDigitDistribution;
+for (int i = 2; i <= maxDigits; i++) {
+longer = longer.generate1digitLonger();
+result.put(i, longer);
+

@@ -1,0 +1,8 @@
+public class Solution {
+public int threeSumClosest(int[] num, int target) {
+if(num.length<3)
+return 0;
+
+Arrays.sort(num);
+int sum = num[0]+num[1]+num[2];
+

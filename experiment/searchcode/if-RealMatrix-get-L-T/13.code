@@ -1,0 +1,8 @@
+import br.ufc.arida.bcl.rp20152.atv4.graficos.PontoDoGrafico2D;
+
+public class Exercicio2Functions {
+
+public RealMatrix getNormalSamples(int numSamples, RealVector means, RealMatrix covarianceMatrix) {
+MultivariateNormalDistribution mnd = new MultivariateNormalDistribution(means.toArray(), covarianceMatrix.getData());
+RealMatrix samples = new Array2DRowRealMatrix(mnd.sample(numSamples));
+

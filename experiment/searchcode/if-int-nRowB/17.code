@@ -1,0 +1,9 @@
+public BigMatrixImpl(BigDecimal[][] d) {
+int nRows = d.length;
+if (nRows == 0) {
+throw new IllegalArgumentException(
+&quot;Matrix must have at least one column.&quot;);
+}
+for (int row = 1; row < nRows; row++) {
+if (d[row].length != nCols) {
+

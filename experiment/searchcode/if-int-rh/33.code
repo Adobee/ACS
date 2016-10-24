@@ -1,0 +1,11 @@
+package arrays;
+
+public class Container {
+public int maxArea(int[] height) {
+if (height.length < 2) return 0;
+int lh = height[l], rh = height[r];
+int b = r, max = 0;
+
+while (l < r) {
+if (lh <= rh) {
+

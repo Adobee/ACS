@@ -1,0 +1,7 @@
+private boolean ownerIsScalarReplaced;
+
+public MonitorInfo(OopHandle owner, BasicLock lock, boolean eliminated, boolean ownerIsScalarReplaced) {
+if (!ownerIsScalarReplaced) {
+this.owner = owner;
+this.ownerKlass = null;
+

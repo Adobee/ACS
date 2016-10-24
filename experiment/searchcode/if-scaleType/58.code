@@ -1,0 +1,6 @@
+try {
+for(ScaleType st : zoomList){
+if(ScaleType.TYPE_CROP == st.getType()){
+GmImageUtil.cropImageCenter(filenamePath, new StringBuilder().append(file.getParentFile().getAbsolutePath()).append(&quot;/&quot;).append(st.width).append(&quot;X&quot;).append(st.height).append(&quot;(crop)&quot;).append(&quot;-&quot;).append(file.getName()).toString(), st.width, st.height);
+}else if(ScaleType.TYPE_SCALE == st.getType()){
+

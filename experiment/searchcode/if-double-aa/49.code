@@ -1,0 +1,9 @@
+double aa = Math.abs(a-c);
+double bb = Math.abs(b-c);
+if(aa<bb)
+System.out.println( a+&quot; &quot;+&quot;áëèæå ê 10&quot;);
+if(aa>bb)
+System.out.println( b+&quot; &quot;+&quot;áëèæå ê 10&quot;);
+}
+}
+

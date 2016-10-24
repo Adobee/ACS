@@ -1,0 +1,10 @@
+public boolean validate(){
+if (this.getType().equals(&quot;Int&quot;))
+{
+try{
+Integer.parseInt(this.value.toString());
+try{
+Float.parseFloat(this.value.toString());
+} catch (NumberFormatException e) {
+System.out.println(&quot;Incorrect format for parameter&quot; + this.name);
+

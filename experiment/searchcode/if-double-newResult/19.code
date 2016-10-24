@@ -1,0 +1,12 @@
+} catch (Exception e) {
+latitude = object.getDouble(key);
+}
+}
+}
+
+if (latitude != null &amp;&amp; longitude != null) {
+geoResult.setMessage(newResult.getMessage());
+}
+
+if (geoResultRepository.findByTimestampAndMessage(geoResult.getTimestamp(), geoResult.getMessage()).isEmpty()) {
+

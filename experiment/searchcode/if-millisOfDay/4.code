@@ -1,0 +1,5 @@
+public static final DateTime		todayE		= now.millisOfDay().withMaximumValue().minusMillis(1);
+public static final DateMidnight	thisWeekS	= todayS.dayOfWeek().withMinimumValue();
+public static final DateTime		thisWeekE	= todayS.dayOfWeek().withMaximumValue().toDateTimeISO().millisOfDay().withMaximumValue().minusMillis(1);
+public static final DateMidnight	lastWeekS	= todayS.dayOfWeek().withMinimumValue().minusWeeks(1);
+

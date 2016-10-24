@@ -1,0 +1,8 @@
+return this.source.getColumnCount();
+}
+if (this.extract == TableOrder.BY_COLUMN) {
+return this.source.getRowCount();
+throw new IndexOutOfBoundsException(&quot;The &#39;item&#39; index is out of bounds.&quot;);
+} else if (this.extract == TableOrder.BY_ROW) {
+return this.source.getValue(this.index, item);
+

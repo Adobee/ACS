@@ -1,0 +1,6 @@
+while (lo < hi) {
+long mid = lo + (hi - lo) / 2;
+if (mid * mid <= x &amp;&amp; (mid + 1) * (mid + 1) >= x)
+if ((mid + 1) * (mid + 1) == x)
+return (int) mid + 1;
+

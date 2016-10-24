@@ -1,0 +1,9 @@
+public static <T> int ceilingIndex(T[] a, double key, DoubleKeyGetter<T> keyGetter) {
+int i = binarySearch(a, 0, a.length, key, keyGetter);
+
+if (i >= 0) {
+for (int i = 0; i < a.length; i++) {
+if (a[i] == key) {
+return i;
+} else if (a[i] < key &amp;&amp; (Double.isNaN(floor) || a[i] > floor)) {
+

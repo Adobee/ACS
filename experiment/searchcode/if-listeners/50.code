@@ -1,0 +1,7 @@
+List<IListener> listeners = mListenersMap.get(type);
+if (listeners == null) {
+listeners = allocList();
+mListenersMap.put(type, listeners);
+} else {
+if (listeners.contains(listener)) {
+

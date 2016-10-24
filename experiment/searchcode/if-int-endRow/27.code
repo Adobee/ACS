@@ -1,0 +1,12 @@
+/** the end row. */
+private int endRow;
+
+/**
+* Constructor.
+*
+* @param startRow the start row
+* @param endRow the end row
+*/
+public PagedData(int startRow, int endRow) {
+super();
+

@@ -1,0 +1,6 @@
+<K> Domain<K> getDomain(int domainIndex) {
+domains.ensureCapacity(domainIndex+1);
+@SuppressWarnings(&quot;unchecked&quot;)
+Domain<K> domain = (AbstractBeanStore<I, VI>.Domain<K>) domains.get(domainIndex);
+if (domain == null) {
+

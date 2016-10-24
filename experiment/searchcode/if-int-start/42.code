@@ -1,0 +1,11 @@
+package changwon.study.project.euler;
+
+public class LCM {
+
+private int startInt;
+private int endInt;
+
+public LCM(int startInt, int endInt) {
+this.startInt = startInt;
+this.endInt = endInt;
+

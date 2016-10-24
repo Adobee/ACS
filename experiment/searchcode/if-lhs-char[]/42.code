@@ -1,0 +1,8 @@
+for (int i = 0; i < Utils.min(lhs.length(), rhs.length()); i++){
+char a = lhs.charAt(i);
+char b = rhs.charAt(i);
+res = a < b ? -1 : (a > b ? 1 : 0);
+if (res != 0) return k * res;
+}
+return k * (lhs.length() < rhs.length() ? -1 : (lhs.length() > rhs.length() ? 1 : 0));
+

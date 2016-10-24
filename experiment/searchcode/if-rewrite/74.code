@@ -1,0 +1,7 @@
+import org.eclipse.jface.text.DocumentRewriteSessionEvent;
+import org.eclipse.jface.text.IDocumentRewriteSessionListener;
+
+public class RebuildPresentationRewriteSessionListener implements IDocumentRewriteSessionListener {
+//after heavy text operations(like text shifting) we do reconciling in UI thread
+if (event.fChangeType == DocumentRewriteSessionEvent.SESSION_STOP) {
+

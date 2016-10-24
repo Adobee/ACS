@@ -1,0 +1,8 @@
+public static void createReportFile( ByteArrayOutputStream baos, String outFilepath ) throws Exception{
+FileOutputStream os = new FileOutputStream( outFilepath );
+if( baos != null &amp;&amp; baos.size() > 0 ){
+os.write( baos.toByteArray());
+//ReportUtils.createReportFile( baos, sOutPath );
+}
+public static String getHTMLJavaScript ( boolean isPrint, boolean isPDF, String pdfPath , boolean isXLS, String xlsPath ,boolean isCSV,String csvPath )
+

@@ -1,0 +1,10 @@
+private HessianSerialize hessianSerialize;
+
+
+@Override
+public Serialize getSerialize() {
+if (hessianSerialize == null) {
+synchronized (HessianSerializeFactory.class) {
+if (hessianSerialize == null) {
+hessianSerialize = new HessianSerialize();
+

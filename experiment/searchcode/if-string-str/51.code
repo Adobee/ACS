@@ -1,0 +1,17 @@
+return str;
+}
+
+
+public static String[] fetchStr(String str,String splitStr){
+if(str == null) return null;
+String[] ary = str.split(splitStr);
+if(ary.length<1){
+if(StringUtil.isBlank(ary[0])){
+return null;
+}
+}
+return ary;
+}
+
+}
+

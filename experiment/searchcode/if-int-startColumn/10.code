@@ -1,0 +1,12 @@
+solveSudoku(board, 0, 0);
+}
+
+public boolean solveSudoku(char[][] board, int startRow, int startColumn)
+public int[] GetNextSpotToFill(char[][] board, int startRow, int startColumn)
+{
+for(int i=startRow; i < 9; i++)
+{
+int k = startColumn;
+
+if(i > startRow)
+

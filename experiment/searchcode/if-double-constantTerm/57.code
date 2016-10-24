@@ -1,0 +1,9 @@
+private final transient RealVector coefficients;
+/** Constant term of the linear equation. */
+private final double constantTerm;
+
+/**
+* @param coefficients Coefficients for the linear equation being optimized.
+public LinearObjectiveFunction(double[] coefficients, double constantTerm) {
+this(new ArrayRealVector(coefficients), constantTerm);
+

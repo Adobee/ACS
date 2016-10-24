@@ -1,0 +1,9 @@
+// DTO -> String
+public Object convert(Object v, Class<?> expectedType) {
+try {
+if (v == null)
+return null;
+// TODO: primitives &amp; null
+if (expectedType.isPrimitive()) {
+expectedType = Primitives.wrap(expectedType);
+

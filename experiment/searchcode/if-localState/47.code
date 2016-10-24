@@ -1,0 +1,7 @@
+} else if ((direction == Direction.DOWN) &amp;&amp; (carPosition.position() <= threshold)) {
+localState.set(true);
+//update network state
+networkStateTranslator.setValue(localState.exceeded());
+
+if (previousValue != localState.exceeded()) {
+

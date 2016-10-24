@@ -1,0 +1,9 @@
+public DocumentModifiedListener(){ super(true);}
+public DocumentModifiedListener(Boolean shouldRefresh) {
+super(shouldRefresh);
+super.onSuccess(response);
+
+if(mShouldRefresh) {
+try {
+if (mContentFragment instanceof IContentRefresher) {
+

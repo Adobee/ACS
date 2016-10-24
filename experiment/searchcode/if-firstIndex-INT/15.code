@@ -1,0 +1,13 @@
+public static char[] reverseWords(char [] input) {
+int len = input.length;
+int firstIndex = 0;
+int lastIndex = 0;
+
+while(firstIndex < len &amp;&amp; lastIndex < len) {
+while(firstIndex < len &amp;&amp; input[firstIndex] == &#39; &#39;) {
+firstIndex ++;
+}
+lastIndex = firstIndex;
+while(lastIndex < len ) {
+if(input[lastIndex] == &#39; &#39; &amp;&amp; lastIndex -1 >=0 &amp;&amp; input[lastIndex-1] != &#39; &#39; ) {
+

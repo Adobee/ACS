@@ -1,0 +1,7 @@
+Pattern pattern = Pattern.compile(&quot;(?:https?://)?(\\w+\\.)+(co\\.\\w+).*&quot;);
+Matcher matcher = pattern.matcher(url);
+if (matcher.matches() &amp;&amp; matcher.groupCount() >= 2) {
+String extracted = &quot;&quot;;
+for (int i = 1; i <= matcher.groupCount(); i++) {
+extracted += matcher.group(i);
+

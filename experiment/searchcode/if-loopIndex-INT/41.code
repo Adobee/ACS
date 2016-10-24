@@ -1,0 +1,9 @@
+_observerList = new Vector<IObserver>();
+}
+
+public void registerObserver(IObserver observer) {
+
+if (!_observerList.contains(observer)) {
+for (int loopIndex = 0; loopIndex < _observerList.size(); loopIndex++) {
+IObserver observer = _observerList.get(loopIndex);
+

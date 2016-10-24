@@ -1,0 +1,11 @@
+absmax = absmax < amax[2] ? absmax : amax[2];
+
+
+double tend = data.getTEnd();
+double tstart = data.getTStart();
+
+if(absmin > absmax || absmin >= tend || absmax < tstart || absmax >= tend)
+return Double.POSITIVE_INFINITY;
+
+//double tstart = data.getTStart();
+

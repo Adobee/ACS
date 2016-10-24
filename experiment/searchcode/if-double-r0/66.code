@@ -1,0 +1,10 @@
+r6 = 1065353216; // 0x3f800000 float:1.0 double:5.263544247E-315;
+r0 = r28;
+r4 = r0.b;
+r4 = r4.getIntrinsicWidth();
+r4 = 0;
+r0 = r28;
+r10 = r0.a;
+if (r10 == 0) goto L_0x00c1;
+L_0x0030:
+

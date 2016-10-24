@@ -1,0 +1,6 @@
+public Object convertValue(Map context, Object value, Class toType) {
+
+if (value.getClass().isArray() &amp;&amp; !toType.isArray()) {
+return convertValue(context, Array.get(value, 0), toType);
+} else if (!value.getClass().isArray() &amp;&amp; toType.isArray()) {
+

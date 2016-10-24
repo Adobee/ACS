@@ -1,0 +1,15 @@
+return &quot;Regula,Karol&quot;;
+}
+
+public double sqrt(double n){
+if (n == 0){
+return 0;
+}
+if (n < 0){
+throw new IllegalArgumentException(&quot;n must be >= 0&quot;);
+return sqrtHelper(n, guess);
+}
+
+public double sqrtHelper(double n, double guess){
+if (n / guess >=  guess - 0.000000001 &amp;&amp; n / guess <= guess + 0.000000001){
+

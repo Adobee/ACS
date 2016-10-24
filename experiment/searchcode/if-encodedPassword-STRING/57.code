@@ -1,0 +1,9 @@
+this.preferences = preferences;
+this.passwordSerializer = passwordSerializer;
+}
+
+public void createMasterPassword(String plainPassword) {
+String encodedPassword = passwordSerializer.encodePassword(plainPassword);
+
+if (encodedPassword == null) {
+

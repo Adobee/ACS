@@ -1,0 +1,11 @@
+private boolean pause;
+private boolean stop;
+private int tempsPause;
+
+public Simulation(Simulable grille, boolean pause, int tempsPause) {
+Thread.currentThread().sleep(getTempsPause());
+if(pause)
+{
+synchronized(this){
+wait();
+

@@ -1,0 +1,13 @@
+* @author Javier Paniza
+*/
+
+public class RemoveColumnAction extends TabBaseAction {
+
+private int columnIndex;
+if (!XavaPreferences.getInstance().isCustomizeList()) return;
+getTab().removeProperty(columnIndex);
+}
+
+public int getColumnIndex() {
+return columnIndex;
+

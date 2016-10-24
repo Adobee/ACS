@@ -1,0 +1,12 @@
+public Confirm decode(byte[] bytes) {
+return decode(bytes, 0);
+}
+
+@Override
+public Confirm decode(byte[] bytes, int offset) {
+if (bytes == null)
++ &quot;\nOriginal(start from &quot; + offset + &quot;):\n&quot; + new String(bytes).trim());
+
+int endPosition = offset + head.length + splitSignal.length;
+if (len - 4 < endPosition)
+

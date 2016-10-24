@@ -1,0 +1,12 @@
+if (tend<=tstart ||  dt<+0) return;
+
+double tmeanR =tmean-tstart;
+double sd=tmeanR*rd;
+if(tmeanR<0.0) return;
+if(ndimen>1) {dt=storage.t[1]-storage.t[0];}
+else {dt=0.0;}
+
+if(tend<=tstart || dt<=0) return;
+boolean done=false;
+double tmeanR =tmean-tstart;
+

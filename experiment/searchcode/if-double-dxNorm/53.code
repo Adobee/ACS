@@ -1,0 +1,11 @@
+double dk = jacNorm[k];
+if (dk == 0) {
+dk = 1.0;
+}
+double xk = dk * point[k];
+dxNorm += s * s;
+}
+dxNorm = Math.sqrt(dxNorm);
+double fp = dxNorm - delta;
+if (fp <= 0.1 * delta) {
+

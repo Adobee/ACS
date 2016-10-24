@@ -1,0 +1,9 @@
+import com.intel.sto.bigdata.dew.message.ServiceResponse;
+
+public class FirstAggregatorProcessor implements AppProcessor {
+
+private String httpUrl;
+for (ServiceResponse sr : responseList) {
+if (sr.getEm() == null &amp;&amp; sr.getContent() != null) {
+httpUrl = sr.getContent();
+

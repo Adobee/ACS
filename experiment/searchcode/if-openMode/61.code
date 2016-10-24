@@ -1,0 +1,15 @@
+final class Options extends CommonOptions {
+/**
+* Index directory write mode.
+*/
+public enum OpenMode {
+CREATE,
+REPLACE_OLD,
+MERGE
+}
+
+/**
+* Index database open mode.
+*/
+public OpenMode indexOpenMode = OpenMode.CREATE;
+

@@ -1,0 +1,10 @@
+* WARNING: This cache will grow forever
+*/
+double sumLog[] = { 0.0 };
+
+public static Hypergeometric get() {
+numeratorLog += sumLog(ac);
+numeratorLog += sumLog(bd);
+
+double hypergeometricLog = numeratorLog - denominatorLog;
+

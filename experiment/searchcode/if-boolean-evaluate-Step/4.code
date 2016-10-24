@@ -1,0 +1,8 @@
+public void step(double stepSize) {
+double[] vars = ode.getVars();
+int N = vars.length;
+if ((inp == null) || (inp.length != N)) {
+inp[i] = vars[i] + k1[i] * stepSize / 2;
+ode.evaluate(inp, k2);
+for (i = 0; i < N; i++)
+

@@ -1,0 +1,7 @@
+private final IPeptideSpectralCluster baseCluster;
+private final LimitedList<ClusterDistanceItem> mostSimilarClusters;
+private final IClusterDistance clusterDistance;
+public ClusterDistanceItem getNextBestMatches() {
+List<ClusterDistanceItem> clusterDistanceItems = mostSimilarClusters.toList();
+if (clusterDistanceItems.size() < 2)
+

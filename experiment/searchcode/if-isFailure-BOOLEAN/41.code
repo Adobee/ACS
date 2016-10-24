@@ -1,0 +1,15 @@
+public enum BuildResult {
+
+SUCCESS_AFTER_FAILURE {
+@Override
+protected boolean matches(Result current, Result previous) {
+return br;
+}
+}
+return null;
+}
+
+
+private static boolean isFailure(Result r) {
+return Result.FAILURE == r
+

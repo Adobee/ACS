@@ -1,0 +1,10 @@
+tournament.setPlayers(players);
+
+if(format.equals(FormatType.SINGLE_ELIMINATION)) {
+
+BracketBuilder bracketBuilder = new AbstractBracketBuilder(){};
+Bracket bracket = bracketBuilder.buildNextBracket(tournament, roundBuilder, matchBuilder, gameType);
+tournament.addBracket(bracket);
+}
+if(format.equals(FormatType.DOUBLE_ELIMINATION)) {
+

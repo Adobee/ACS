@@ -1,0 +1,10 @@
+Dot dot1 = dots[x1][y1];
+Dot dot2 = dots[x2][y2];
+if(x2 - x1 == 0)
+{//vertical line
+if(dot1.getBottomLeft() == dot2.getTopLeft() &amp;&amp; dot1.getBottomRight() == dot2.getTopRight())
+board.removeEdge(dot1.getBottomLeft(), dot1.getBottomRight());
+if(x1 == 0)
+{
+if(BFSBoxComplete(board, dot1.getBottomRight()).size() == 1)
+

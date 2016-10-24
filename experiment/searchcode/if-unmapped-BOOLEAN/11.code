@@ -1,0 +1,5 @@
+public void initialiseUnmapped(OutputStream unmappedOut, boolean bam, boolean presorted, boolean writeHeader) {
+Diagnostic.userLog(&quot;Writing unmapped records&quot;);
+if (bam) {
+mSamUnmappedWriter = mFactory.makeBAMWriter(mHeader, presorted, unmappedOut, writeHeader, true, true);
+

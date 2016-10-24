@@ -1,0 +1,7 @@
+import org.eclipse.persistence.exceptions.XMLMarshalException;
+import org.eclipse.persistence.internal.oxm.record.UnmappedContentHandlerWrapper;
+import org.eclipse.persistence.internal.oxm.record.UnmarshalRecord;
+Class unmappedContentHandlerClass = getParent().getUnmarshaller().getUnmappedContentHandlerClass();
+UnmappedContentHandler unmappedContentHandler;
+if (null == unmappedContentHandlerClass) {
+

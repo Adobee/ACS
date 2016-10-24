@@ -1,0 +1,11 @@
+public static int getLCM(int a, int b) {
+if (a < b) {
+int temp = b;
+b = a;
+a = temp;
+}
+// a is bigger bumber
+int lcmCandidate = a;
+for (int i = 2;; i++) {
+if (lcmCandidate % b == 0) { // the LCM candidate is always a
+

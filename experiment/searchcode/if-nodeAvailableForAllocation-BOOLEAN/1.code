@@ -1,0 +1,7 @@
+DiscoveryNodes.Builder nodes = DiscoveryNodes.builder(clusterState.nodes()).remove(&quot;node2&quot;);
+boolean nodeAvailableForAllocation = randomBoolean();
+if (nodeAvailableForAllocation) {
+List<ShardRouting> unassignedShards = newState.getRoutingTable().shardsWithState(ShardRoutingState.UNASSIGNED);
+if (nodeAvailableForAllocation) {
+assertThat(unassignedShards.size(), equalTo(0));
+

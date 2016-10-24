@@ -1,0 +1,11 @@
+* Converts a bytecode descriptor to the equivilient primitive type.
+* @param desc Bytecode descriptor.
+* @return {@link Primitive} or null if the desc is an array or a reference type.
+for(Primitive primitive : Primitive.values()) {
+if (primitive.desc.equals(desc))
+return primitive;
+}
+return null;
+}
+}
+

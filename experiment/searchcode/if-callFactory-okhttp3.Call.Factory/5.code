@@ -1,0 +1,7 @@
+private final okhttp3.Call.Factory callFactory;
+private final RequestFactory requestFactory;
+private final Object[] args;
+private okhttp3.Call createRawCall() throws IOException {
+okhttp3.Call call = callFactory.newCall(requestFactory.create(args));
+if (call == null) {
+

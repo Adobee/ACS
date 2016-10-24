@@ -1,0 +1,11 @@
+public Vector2D evaluatex(double x) {
+if (slope.getX() == 0) {
+return null;
+} else {
+return new Vector2D(x, slope.getY() * x / slope.getX() + b);
+}
+}
+
+public Vector2D evaluatey(double y) {
+if (slope.getY() == 0) {
+

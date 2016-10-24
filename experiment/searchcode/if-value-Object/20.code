@@ -1,0 +1,8 @@
+public static <T> T get(Object object, Object defaultValue) {
+if (object == null) {
+return (T) defaultValue;
+}
+if (defaultValue instanceof String) {
+return (T) String.valueOf(object);
+} else if (defaultValue instanceof String[]) {
+

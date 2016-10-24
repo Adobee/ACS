@@ -1,0 +1,12 @@
+public class Symbol implements Comparable<Object> {
+public String name;
+public long start;
+public long len;
+public long end;
+
+public Symbol(String name, long start, long len) {
+this.name = name;
+this.start = start;
+this.len = len;
+this.end = start+len-1;
+

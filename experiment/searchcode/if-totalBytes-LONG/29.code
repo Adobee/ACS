@@ -1,0 +1,15 @@
+public String fileName;
+public String url;// 文件路径
+public long totalBytes;// 文件总大小
+public long currentBytes;// 已下载大小
+public int mStatus;
+public int failedNum;// 失败次数
+
+/**
+* 获取当前节点的下载进度
+*
+* @return
+*/
+public int getDownloadProgress() {
+if (totalBytes == 0) {
+

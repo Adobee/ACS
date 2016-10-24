@@ -1,0 +1,13 @@
+return this.cursor.getColumnIndex(this.tableAliasName + columnName);
+}
+
+protected long get(int columnIndex, long alt) {
+if (columnIndex < 0)
+return alt;
+if (cursor.isNull(columnIndex))
+protected int get(int columnIndex, int alt) {
+if (columnIndex < 0)
+return alt;
+if (cursor.isNull(columnIndex))
+return alt;
+

@@ -1,0 +1,17 @@
+int retval = 0;
+
+// Hundreds digit
+if( num >= 100 ) {
+retval += NUMS[ (int)Math.floor(num/100) ];
+retval += HUNDRED;
+retval += NUMS[ num%10 ];
+}
+
+return retval;
+}
+
+public static void main( String[] args ) {
+int numChars = 0;
+
+for( int i = 1; i < 1000; i++ ) {
+

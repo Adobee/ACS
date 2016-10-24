@@ -1,0 +1,16 @@
+public MaxwellBoltzmann(double sigma)
+{
+setShape(sigma);
+}
+
+final public void setShape(double sigma)
+{
+if(sigma <= 0 || Double.isInfinite(sigma) || Double.isNaN(sigma))
+return new double[] {sigma};
+}
+
+@Override
+public void setVariable(String var, double value)
+{
+if(var.equals(GreekLetters.sigma))
+

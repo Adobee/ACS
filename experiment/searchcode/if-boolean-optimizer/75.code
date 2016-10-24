@@ -1,0 +1,10 @@
+private NBestOptimizerFactory() {
+}
+
+public static NBestOptimizer factory(String name, int point, MERT mert) {
+
+if (name.contains(&quot;+&quot;) || name.endsWith(&quot;~&quot;)) {
+return new SequenceOptimizer(mert, opts, loop);
+} else if (name.equalsIgnoreCase(&quot;cer&quot;)) {
+return new CerStyleOptimizer(mert, point);
+

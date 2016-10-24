@@ -1,0 +1,8 @@
+WorldModel[] models = new WorldModel[maxDepth + 1];
+Action[] actions = new Action[maxDepth];
+models[0] = model.copy();
+int currentDepth = 0;
+while (currentDepth >= 0) {
+double currentValue = models[currentDepth].calculateDiscontentment();
+if (currentDepth >= maxDepth) {
+

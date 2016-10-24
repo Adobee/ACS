@@ -1,0 +1,7 @@
+for (int i = mListeners.size() - 1; i >= 0; i--) {
+boolean consumed = mListeners.get(i).onTouchDown(normalizedX, normalizedY);
+if (consumed)
+for (int i = mListeners.size() - 1; i >= 0; i--) {
+boolean consumed = mListeners.get(i).onTouchDrag(normalizedX, normalizedY);
+if (consumed)
+

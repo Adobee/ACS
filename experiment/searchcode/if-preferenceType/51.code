@@ -1,0 +1,13 @@
+import java.lang.annotation.Target;
+
+import com.abubusoft.kripton.android.sharedprefs.PreferenceType;
+
+@Retention(RetentionPolicy.RUNTIME)
+public @interface BindPreference {
+
+/**
+* if true, means field must bind persist model
+* @return
+*/
+boolean enabled() default true;
+

@@ -1,0 +1,6 @@
+HashMap<String, String> tutorialHashCodes = loadTutorialHashCodes();
+boolean incrementalUpdate = (tutorialHashCodes != null) &amp;&amp; (tutorialHashCodes.size() > 0);
+// set of tutorials that we want to keep after the sync
+HashSet<String> tutorialsToKeep = new HashSet<String>();
+if (incrementalUpdate) {
+

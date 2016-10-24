@@ -1,0 +1,10 @@
+return string == null || string.trim().length() == 0;
+}
+
+public static Set<Long> parseLongSet(String commaSeparatedNumbers) {
+Set<Long> longSet = new HashSet<Long>();
+if (isEmpty(commaSeparatedNumbers)) {
+return longSet;
+}
+String[] numbers = commaSeparatedNumbers.trim().split(&quot;,&quot;);
+

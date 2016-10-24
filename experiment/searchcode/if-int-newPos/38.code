@@ -1,0 +1,8 @@
+boolean result = false;
+int newPos = this.offset;
+if (newPos < xml.length() &amp;&amp; xml.charAt(newPos) == &#39;<&#39;
+boolean result = false;
+int newPos = this.offset;
+if (xml.charAt(newPos) == &#39;=&#39;) {
+analyzeWhitespaces(xml, positions);
+

@@ -1,0 +1,13 @@
+} catch (NoSuchMethodException | SecurityException e) {
+return false;
+}
+}
+
+public Type getReturnBound(Type lastType) {
+if (lastType instanceof ParameterizedType) {
+return paramHolder.getActualTypeArguments()[0];
+} else if (lastType instanceof Class<?>) {
+return null;
+}
+throw new IllegalArgumentException(&quot;Don&#39;t know what to do with: &quot; + lastType);
+

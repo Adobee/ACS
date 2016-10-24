@@ -1,0 +1,13 @@
+import com.cloderia.helion.client.shared.model.Preferencetype;
+
+/**
+* @author adrian
+*
+*/
+@Portable
+public class PreferencetypeOperation  extends BaseOperation<Preferencetype> {
+super();
+this.preferencetype = preferencetype;
+this.setEntity(preferencetype);
+if(preferencetype.getUniverse() != null)this.setUniverseId(preferencetype.getUniverse().getId());
+

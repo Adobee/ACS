@@ -1,0 +1,11 @@
+quickSort(a, 0, a.length-1);
+}
+
+void quickSort(int[] a, int start, int end){
+if(start < end){
+int p = partition(a, start, end);
+int firstHigh = start;
+for(int i=start;i<end;i++){
+if(a[i] < v){
+swap(a, i, firstHigh++);
+

@@ -1,0 +1,8 @@
+super.toggleAutoTick();
+if (isAutoTickUnitSelection()) {
+this.manualTickUnit.setText(Double.toString(this.manualTickUnitValue));
+public void validateTickUnit() {
+double newTickUnit;
+try {
+newTickUnit = Double.parseDouble(this.manualTickUnit.getText());
+

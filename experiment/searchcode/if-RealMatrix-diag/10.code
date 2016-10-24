@@ -1,0 +1,17 @@
+RealVector v = new ArrayRealVector(d);
+v.setEntry(i, 1.0);
+
+return v;
+}
+
+public static RealMatrix diag(RealVector v)
+{
+RealMatrix m = identity(v.getDimension());
+diag(m, v);
+
+return m;
+}
+
+/**
+* Sets the values of vector v on the diagonal of matrix m
+

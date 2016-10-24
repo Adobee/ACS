@@ -1,0 +1,8 @@
+public Fysiker(int age, String name, int year) {
+super(age, name);
+if (year < 1932) {
+this.year = 1932;
+year = (int) (Math.random() * (2013 - 1932) + 1932);
+if (getAge() < 15 + 2013 - year) {
+setAge((int) (Math.random() * (100 - (15 + 2013 - year))
+

@@ -1,0 +1,12 @@
+import net.minecraft.tileentity.TileEntity;
+import net.minecraft.world.IBlockAccess;
+
+public class Pos {
+
+public final int x;
+public TileEntity getTile(IBlockAccess world) {
+return world.getTileEntity(x, y, z);
+}
+
+public int getMeta(IBlockAccess world) {
+

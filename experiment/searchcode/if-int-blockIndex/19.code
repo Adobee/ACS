@@ -1,0 +1,13 @@
+_ldisk = new byte[BLOCKS_TOTAL_NUMBER][BLOCK_LENGTH];
+}
+
+public byte[] read_block(int blockIndex) throws LDiskOutOfBoundaryException {
+if (blockIndex < 0 || blockIndex >= BLOCKS_TOTAL_NUMBER) {
+block[i] = _ldisk[blockIndex][i];
+}
+
+return block;
+}
+
+public void write_block(int blockIndex, byte[] block) throws LDiskOutOfBoundaryException {
+

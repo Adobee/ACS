@@ -1,0 +1,9 @@
+package com.rds.play.htreeading.messages;
+
+public class Consumer {
+
+private final Queue queue;
+public void consume() throws InterruptedException {
+synchronized (queue) {
+if (queue.isEmpty()) {
+

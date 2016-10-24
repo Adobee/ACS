@@ -1,0 +1,10 @@
+public class ExpandingChannelEventCache extends ChannelEventCache
+{
+private ChannelEvent cache[];
+private int cacheStackPointer;
+private int currentCacheCapacity;
+public synchronized ChannelEvent getChannelEvent()
+{
+ChannelEvent retVal = null;
+if ( 0 <= cacheStackPointer )
+

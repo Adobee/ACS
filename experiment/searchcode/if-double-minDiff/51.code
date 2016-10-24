@@ -1,0 +1,8 @@
+public double getValue(double[] solution1, double[] solution2) {
+if(evaluator.getConditionalRuleCount() > 0) {
+throw new IllegalArgumentException(&quot;Only unconditional preferences are allowed.&quot;);
+double[] absDiffs = new double[diffs.length];
+for(int k=0; k<diffs.length; k++) {
+double val = diffs[k];
+if(val < minDiff) {
+

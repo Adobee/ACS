@@ -1,0 +1,12 @@
+private StringBuffer sb;
+private boolean hasWhere = false;
+private boolean hasOrder = false;
+
+public Cnd(Class<?> clazz) {
+sb.append(op.toSql(this.getFieldName(name), value));
+return this;
+}
+
+public Cnd orderBy(String name, boolean asc) {
+if (!this.hasOrder) {
+

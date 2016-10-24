@@ -1,0 +1,14 @@
+if(derivative(xMedium) > 0){
+lowerBound = xMedium;
+}
+else{
+upperBound = xMedium;
+}
+}
+else{
+//if problem type is min
+if(derivative(xMedium) > 0){
+upperBound = xMedium;
+}
+else{
+

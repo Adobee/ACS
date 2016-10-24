@@ -1,0 +1,15 @@
+Pattern r = Pattern.compile(pattern);
+Matcher m = r.matcher(text);
+
+if (m.find()) {
+String[] matches = new String[m.groupCount() + 1];
+for (int i = 0; i <= m.groupCount(); i++) {
+matches[i] = m.group(i);
+}
+return matches;
+}
+return null;
+}
+
+}
+

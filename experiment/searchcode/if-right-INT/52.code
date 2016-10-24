@@ -1,0 +1,6 @@
+class QuickSort30 {
+public static void sort(int[] a, int left, int right) {
+int index = partition(a, left, right);
+if (left < index - 1) sort(a, left, index - 1);
+if (index < right) sort(a, index, right);
+

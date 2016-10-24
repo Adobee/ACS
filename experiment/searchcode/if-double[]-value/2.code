@@ -1,0 +1,7 @@
+if (i[6] == null) {
+p = 0;
+} else if (((Double) i[6]).doubleValue() <= 0.546842) {
+p = 0;
+} else if (((Double) i[6]).doubleValue() > 0.546842) {
+p = GretchenBrain2Classifier.N3d3d7d311(i);
+

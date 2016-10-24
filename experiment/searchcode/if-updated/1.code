@@ -1,0 +1,10 @@
+package mt;
+/*
+* visitor pattern that gets the user the last updated user
+*
+*/
+public class LastUserUpdatedVisitor implements Visitor
+public void visitUser(User user)
+{
+if(lastUpdated == null || lastUpdated.getLastUpdatedTime() < user.getLastUpdatedTime() )
+

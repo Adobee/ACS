@@ -1,0 +1,8 @@
+* @throws RuleFormatException
+*/
+public List<TransformRule> parse(Reader in) throws IOException,
+RuleFormatException {
+private TransformRule parseLine(String line) throws RuleFormatException {
+int pos = line.indexOf(&#39;>&#39;);
+if (pos < 0) {
+

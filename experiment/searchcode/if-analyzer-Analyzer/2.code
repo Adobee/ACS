@@ -1,0 +1,9 @@
+package com.kingbase.lucene.commons.analyzer.chinese.paoding;
+
+import org.apache.lucene.analysis.Analyzer;
+* @return
+*/
+public synchronized static Analyzer instance(){
+if(analyzer==null){
+analyzer=new PaodingAnalyzer(&quot;classpath:paoding/paoding-analysis.properties&quot;);
+

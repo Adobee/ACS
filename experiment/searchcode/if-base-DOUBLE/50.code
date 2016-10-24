@@ -1,0 +1,15 @@
+return 1 / power(base, -exp);
+}
+}
+
+private static double power(double base, long exponent) {
+
+if (exponent == 0) {
+return 1;
+}
+if (exponent == 1) {
+return base;
+}
+
+double half = power(base, exponent >> 1);
+

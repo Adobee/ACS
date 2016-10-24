@@ -1,0 +1,8 @@
+new Label(&quot;(device: &quot; + game.deviceService.info() + &quot;)&quot;).addStyles(
+Style.TEXT_WRAP.is(true)));
+
+int key = 1;
+for (final Showcase.Demo demo : game.demos) {
+onClose.add(game.plat.input().keyboardEvents.connect(new Keyboard.KeySlot() {
+public void onEmit (Keyboard.KeyEvent event) {
+

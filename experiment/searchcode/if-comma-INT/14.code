@@ -1,0 +1,15 @@
+System.out.println(comma(300023000));
+}
+
+public static String comma(int x) {
+if (x<1000){
+return x+ &quot;&quot;;
+} else {
+String out = (x - (int)(x/1000)*1000)+&quot;&quot;;
+while(out.length()<3) out = &quot;0&quot;+out;
+return comma(x/1000)+&quot;,&quot; + out;
+}
+}
+
+}
+

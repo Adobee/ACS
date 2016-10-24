@@ -1,0 +1,7 @@
+public int helper(int[] nums, int start, int end) {
+int prePre = nums[start];
+int pre = Math.max(nums[start], nums[start + 1]);
+int cur = pre;
+for (int i = start + 2; i <= end; i++) {
+cur = Math.max(pre, prePre + nums[i]);
+

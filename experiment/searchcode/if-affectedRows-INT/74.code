@@ -1,0 +1,7 @@
+paramMap.put(&quot;packageStatus&quot;, PackageStatusEnum.WAIT_IN_STATION.getCode());
+int affectedRows = 0;
+affectedRows = baseDalClient.execute(&quot;packageMapper.insertPackage&quot;,
+Date outEndTime = DateUtil.addDay(inTime, Constants.PACKAGE_KEEP_DAY);
+paramMap.put(&quot;outEndTime&quot;, outEndTime);
+int affectedRows = 0;
+

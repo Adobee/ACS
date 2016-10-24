@@ -1,0 +1,8 @@
+assertEquals(null, HttpUrl.parse(&quot;#fragment&quot;));
+}
+
+@Test public void resolveNoScheme() throws Exception {
+HttpUrl base = HttpUrl.parse(&quot;http://host/a/b&quot;);
+// assertEquals(HttpUrl.parse(&quot;http://host2/&quot;), base.resolve(&quot;//host2&quot;));
+assertEquals(HttpUrl.parse(&quot;http://host2&quot;), base.resolve(&quot;//host2&quot;));
+

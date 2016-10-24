@@ -1,0 +1,11 @@
+import ch.ethz.inf.dbproject.sqlRevisited.TableSchema;
+
+class SQLOperatorAggregateCount extends SQLOperatorAggregate {
+
+private int groupCount;
+if (getChild().getGroup() != lastGroup) {//if the returned group has just changed group, reset the counter
+groupCount = 0;
+}
+if (hasNext) {
+groupCount += 1;
+

@@ -1,0 +1,9 @@
+public static boolean isBasic(Type type) {
+if (!(type instanceof Class)) {
+return false;
+}
+Class c = (Class) type;
+return Array.newInstance(getClass(genericArrayType.getGenericComponentType()), 0).getClass();
+}
+if (type instanceof ParameterizedType) {
+

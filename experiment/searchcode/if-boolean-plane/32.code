@@ -1,0 +1,7 @@
+package com.suushiemaniac.cubing.alglib.move.plane;
+
+public enum PyraminxPlane implements Plane {
+public static PyraminxPlane fromNotation(String notation) {
+for (PyraminxPlane plane : PyraminxPlane.values())
+if (plane.getNotation().equals(notation)) return plane;
+

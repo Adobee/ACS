@@ -1,0 +1,13 @@
+private static final Pattern BLANK_PATTERN = Pattern.compile(&quot;^\\p{javaWhitespace}*$&quot;);
+
+public static boolean isBlank(CharSequence string) {
+if ((string == null) || (string.length() == 0)) {
+Matcher m = BLANK_PATTERN.matcher(string);
+return m.matches();
+}
+
+public static boolean isNotBlank(CharSequence string) {
+return !isBlank(string);
+}
+}
+

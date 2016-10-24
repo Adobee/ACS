@@ -1,0 +1,10 @@
+CollectedBetData __instance = new CollectedBetData();
+Events ev = __instance.new Events();
+dataOutput.add(ev);
+if(jsonInput.get(i).equals(null))
+JSONObject inp = jsonInput.getJSONObject(i);
+Events evOut = dataOutput.get(i);
+try
+{
+evOut.__type = inp.get(&quot;__type&quot;).toString();
+

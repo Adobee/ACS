@@ -1,0 +1,6 @@
+Object[] arguments = getArguments();
+if (arguments != null) {
+if (arguments.length == ArgumentProperties.USER_LOGIN_WEB || arguments.length == ArgumentProperties.USER_LOGIN_MOBILE) {
+addBehaviour(new UserClientLoginRequestBehaviour(login, password));
+} else if (arguments.length == ArgumentProperties.USER_REGISTER_WEB || arguments.length == ArgumentProperties.USER_REGISTER_MOBILE) {
+

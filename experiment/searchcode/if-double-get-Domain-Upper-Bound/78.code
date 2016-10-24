@@ -1,0 +1,6 @@
+this( domain.getLowerBound(), domain.getUpperBound(),
+domain.isLowerBoundIncluded(), domain.isUpperBoundIncluded(),
+public T pickRandomValueLess( T t, boolean include ) {
+if ( t == null ) t = getUpperBound();
+AbstractRangeDomain<T> d = createSubDomainBelow( t, include );
+

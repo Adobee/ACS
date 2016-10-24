@@ -1,0 +1,10 @@
+private Map<String, Long> totalPages = new HashMap<String, Long>();
+
+public SimplePageInfoStore() {
+}
+
+public int getNumPageInfos(String streamId) {
+// Start loop at 2 as we know we don&#39;t have 1 (or else it would be lastContig)
+for(int i=2;i<=32;i++) {
+if(haveGotPage(streamId, lastContig+i))
+

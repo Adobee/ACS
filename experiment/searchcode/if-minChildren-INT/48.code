@@ -1,0 +1,9 @@
+* Defines the minimum number of children that are required to match for the parent to be considered a match.
+*/
+public HasChildQueryBuilder minChildren(int minChildren) {
+this.minChildren = minChildren;
+if (scoreType != null) {
+builder.field(&quot;score_type&quot;, scoreType);
+}
+if (minChildren != null) {
+

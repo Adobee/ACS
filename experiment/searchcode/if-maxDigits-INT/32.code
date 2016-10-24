@@ -1,0 +1,10 @@
+public class UnsignedIntegerParser implements Parser<UnsignedInteger>
+{
+
+private final int minDigits;
+private final int maxDigits;
+
+public UnsignedIntegerParser(final int minDigits, final int maxDigits)
+{
+Preconditions.checkArgument(minDigits > 0, &quot;Min digits must be at least 1&quot;);
+

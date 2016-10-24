@@ -1,0 +1,9 @@
+private Calendar calendar = Calendar.getInstance();
+
+public Date convert(Date d, PeriodType periodType) {
+calendar.setTime(d);
+if (periodType == PeriodType.MONTH) {
+calendar.set(Calendar.MINUTE, 0);
+calendar.set(Calendar.SECOND, 0);
+} else if (periodType == PeriodType.HOUR) {
+

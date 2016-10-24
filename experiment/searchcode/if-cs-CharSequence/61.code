@@ -1,0 +1,8 @@
+int index = 0;
+CharSequence[] fooChain = new CharSequence[chain.length];
+for (CharSequence cs : chain) {
+int currIndex = 0;
+for (CharSequence cs : chain) {
+if (currIndex + cs.length() > index) {
+return cs.charAt(index - currIndex);
+

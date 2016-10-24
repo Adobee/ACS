@@ -1,0 +1,8 @@
+public Lattice<Boolean> bounded(Boolean top, Boolean bottom) {
+final boolean t = top;
+final boolean b = bottom;
+if (t == this.top &amp;&amp; b == this.bottom) return this;
+public Boolean meet(Boolean a, Boolean b) {
+final boolean c = a &amp;&amp; b;
+if (c != top &amp;&amp; c != bottom) throw new IllegalArgumentException();
+

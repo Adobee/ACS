@@ -1,0 +1,6 @@
+public Scheduler createOrFindRememberer(SchedulerDto schedulerDto) throws InvalidRequestException {
+Scheduler scheduler = null;
+if (schedulerDto != null) {
+if (schedulerDto.getId() != null) {
+scheduler = findModelById(schedulerDto.getId());
+

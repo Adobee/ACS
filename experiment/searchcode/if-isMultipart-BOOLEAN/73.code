@@ -1,0 +1,14 @@
+throws ServletException, IOException
+{
+boolean isMultipart = ServletFileUpload.isMultipartContent(req);
+
+if(isMultipart)
+{
+req = new MultipartRequestWrapper(req);
+}
+
+super.service(req, resp);
+
+}
+}
+

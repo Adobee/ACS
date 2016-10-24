@@ -1,0 +1,13 @@
+public static Permission getBestPermission(Player player) {
+Permission bestPermission = null;
+for(Permission permission : Permission.values()){
+if(player.hasPermission(permission.getPermissionValue())) {
+for(Permission permission : Permission.values()){
+if(permissionType.equalsIgnoreCase(permission.toString())) {
+return permission;
+}
+}
+return null;
+}
+}
+

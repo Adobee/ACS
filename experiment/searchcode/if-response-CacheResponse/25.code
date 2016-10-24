@@ -1,0 +1,8 @@
+private final ResponseBody body;
+private volatile CacheControl cacheControl;
+private Response cacheResponse;
+private final int code;
+public Builder cacheResponse(Response cacheResponse) {
+if (cacheResponse != null) {
+checkSupportResponse(&quot;cacheResponse&quot;, cacheResponse);
+

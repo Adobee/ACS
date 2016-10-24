@@ -1,0 +1,12 @@
+static COMPLEX addComplex(COMPLEX x, COMPLEX y) {
+
+double realPart = x.realPart + y.realPart;
+
+if (Math.abs(realPart) < 0.05)
+realPart = 0;
+static COMPLEX subComplex(COMPLEX x, COMPLEX y) {
+
+double realPart = x.realPart - y.realPart;
+
+if (Math.abs(realPart) < 0.05)
+

@@ -1,0 +1,11 @@
+public class MockStopListener implements StopListener {
+
+private boolean stopped;
+
+public synchronized void waitForStop() {
+if (!stopped)
+Quietly.wait(this);
+}
+
+@Override
+

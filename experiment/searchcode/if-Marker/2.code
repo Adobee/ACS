@@ -1,0 +1,11 @@
+import com.google.android.gms.maps.model.Marker;
+import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.util.HashMap;
+markerMap.put(marker.getId(), myMarker);
+}
+}
+
+public void removeMarker(Marker marker) {
+if (markerMap.containsKey(marker.getId())) {
+

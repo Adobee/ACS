@@ -1,0 +1,13 @@
+public IScript getScript(String name, IValueMap valueMap, IMasterNavigator navigator)
+throws CompileErrorException, ScriptFatalException {
+if(javaFileScriptFactory.hasScript(name)){
+throw new ScriptNotExistException(name);
+}
+
+@Override
+public Boolean hasScript(String name) {
+return javaFileScriptFactory.hasScript(name);
+}
+
+}
+

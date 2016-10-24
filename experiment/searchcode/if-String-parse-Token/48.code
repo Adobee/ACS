@@ -1,0 +1,10 @@
+public class ParseException extends Exception{
+public ParseException(Token token) {
+this(&quot;&quot;, token);
+}
+public ParseException(String message, Token token) {
+super(&quot;syntax error around &quot; + location(token) + &quot;. &quot; + message);
+}
+private static String location(Token token) {
+if (token == Token.EOF) {
+

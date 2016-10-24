@@ -1,0 +1,10 @@
+import java.awt.geom.Ellipse2D;
+import java.util.List;
+
+public class ConvexGUI {
+
+private XYSeries [] xySeries;
+private XYSeries xySeriesOther;
+private XYSeriesCollection collection;
+private JFreeChart chart;
+

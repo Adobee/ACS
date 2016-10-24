@@ -1,0 +1,9 @@
+public Scale scaleB = new Scale();
+
+
+public ScaleNode(float scale,boolean push) {
+super(push);
+public void renderTransform(RenderContext renderContext) {
+if ( scale != 1f) {
+Scale prim = renderContext.phase ? scaleA : scaleB;
+

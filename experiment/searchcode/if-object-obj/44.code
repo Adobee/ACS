@@ -1,0 +1,8 @@
+public static boolean isEmpty(Object obj) {
+if(obj == null) {
+return true;
+} else if(obj instanceof Collection) {
+if(obj.getClass().isArray()) {
+if(obj instanceof Object[]) {
+return ((Object[])((Object[])obj)).length == 0;
+

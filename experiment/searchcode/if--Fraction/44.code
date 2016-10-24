@@ -1,0 +1,9 @@
+package math;
+
+public class FractionTest {
+
+public static void main(String[] args) {
+
+Fraction a = Fraction.createFraction(1, 2);
+Fraction b = Fraction.parseFraction(&quot;2/4&quot;);
+

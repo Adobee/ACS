@@ -1,0 +1,8 @@
+this.maxCacheSize = maxCacheSize;
+}
+
+public StaleRemovedCache(Storage storage, boolean accessOrder) {
+this.cache = synchronizedMap(new LinkedHashMap<>(171, 0.75f, accessOrder));
+public StaleRemovedCache(Storage storage, int maxCacheSize, boolean accessOrder) {
+this.cache = synchronizedMap(new LinkedHashMap<>(maxCacheSize * 4 / 3, 0.75f, accessOrder));
+

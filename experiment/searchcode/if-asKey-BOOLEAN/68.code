@@ -1,0 +1,9 @@
+_log.showError(e);
+return _returnFaild;
+}
+
+String[] asKey = requestContext.getRequestValues(JsParam.KEYID);
+if (asKey == null || asKey.length == 0) {
+//找不到删除记录的键值！
+setMessage(JsMessage.getValue(&quot;functionbm.deletekeynull&quot;));
+

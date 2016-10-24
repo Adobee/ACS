@@ -1,0 +1,16 @@
+images[i][j] = unmapped;
+}
+}
+}
+}
+
+private boolean isKnownTileType(MapField mapField) {
+return mapField.getFieldType() == FieldType.WALL || mapField.getFieldType() == FieldType.GROUND || mapField.getFieldType() == FieldType.DESTRUCTABLE;
+return isInMap(i, j) &amp;&amp; map[i][j].getFieldType().equals(FieldType.WALL);
+}
+
+private boolean isGround(int i, int j) {
+if (!isInMap(i, j))
+return false;
+FieldType t = map[i][j].getFieldType();
+

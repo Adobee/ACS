@@ -1,0 +1,13 @@
+private CacheNode getCacheNode(String type)
+{
+return (CacheNode) cacheMap.get(type);
+}
+
+private boolean hasCache(String type)
+protected boolean cacheExpired(CacheNode cache)
+{
+if (null == cache) {
+return false;
+}
+long nowDt = System.currentTimeMillis();
+

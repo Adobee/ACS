@@ -1,0 +1,11 @@
+public static void printCurrentDate(long totalMsecs) {
+long days = totalMsecs / mSecPerDay;
+
+// determine year
+int year = getYear(days);
+System.out.printf(&quot;%02d/%02d/%d&quot;, month, days, year);
+}
+
+public static long monthToDays(int month, int year) {
+int days = 0;
+

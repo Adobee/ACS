@@ -1,0 +1,10 @@
+protected double prevAccuracy;
+
+protected double currentAccuracy;
+protected double bestAccuracy;
+public double getPrevAccuracy() {
+return prevAccuracy;
+}
+
+public double getCurrentAccuracy() {
+

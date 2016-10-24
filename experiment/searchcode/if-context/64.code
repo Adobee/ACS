@@ -1,0 +1,13 @@
+package com.arthur.mta.core.context;
+
+
+
+public class TenantContextKeeper {
+
+
+private static final ThreadLocal<TenantContext> contextRepository = new ThreadLocal<TenantContext>();
+public static TenantContext getContext() {
+TenantContext ctx = contextRepository.get();
+
+if (ctx == null) {
+

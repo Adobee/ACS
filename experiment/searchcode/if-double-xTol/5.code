@@ -1,0 +1,17 @@
+public class CRFLBFGS {
+
+int m=5;
+int[] iprint ;
+boolean diagco;
+double diag [ ];
+double eps, xtol;
+int iflag[] = new int[1];
+iprint [ 2 -1] = 0;
+
+diagco=false;
+diag= new double [ n ];
+eps= 1.0e-5;
+xtol= 1.0e-16;
+
+iflag[0]=0;
+

@@ -1,0 +1,17 @@
+public Double distance(Map<Double, Double> d1, Map<Double, Double> d2) {
+Double ret = 0.0;
+
+Double v2;
+for(Map.Entry<Double, Double> en : d1.entrySet()){
+v2 = d2.get(en.getKey());
+if(v2 == null)
+v2 = 0.0;
+ret += Math.abs(en.getValue() - v2);
+}
+
+return ret;
+}
+
+
+}
+

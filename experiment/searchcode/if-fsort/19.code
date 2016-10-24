@@ -1,0 +1,6 @@
+private Payment payment = null;
+@Override
+public Payment FindByCommodityname(String fsort, String sort, String name) {
+Session session = this.getSession();
+String sqlCommodity = &quot;from commodity where fsort=? and sort=? and name=?&quot;;
+

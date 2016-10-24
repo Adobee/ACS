@@ -1,0 +1,8 @@
+for (int j = 0; j < n; j++) {
+double bdtest = bdtol;
+if (newPoint.getEntry(j) == lowerDifference.getEntry(j)) {
+bdtest = -work1.getEntry(j);
+}
+if (bdtest < bdtol) {
+double curv = modelSecondDerivativesValues.getEntry((j + j * j) / 2);
+

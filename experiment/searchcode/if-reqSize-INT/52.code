@@ -1,0 +1,9 @@
+// catch any potential NPEs just to be safe.
+if (Build.VERSION.SDK_INT > Build.VERSION_CODES.KITKAT) {
+// Swallow exception and try fallbacks.
+}
+}
+
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB_MR1) {
+return bitmap.getByteCount();
+

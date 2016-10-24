@@ -1,0 +1,13 @@
+int totalLines = 0;
+long lastMillis;
+long thisMillis;
+
+while (true) {
+fileList.add(file);
+}
+}
+
+if (checkCounter >= 2) {
+
+thisMillis = System.currentTimeMillis();
+

@@ -1,0 +1,10 @@
+public class Phi {
+public static double phi(double x) {
+// constants
+final double a1 =  0.254829592;
+final double p  =  0.3275911;
+
+// Save the sign of x
+double sign = 1;
+if (x < 0) {
+

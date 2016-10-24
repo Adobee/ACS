@@ -1,0 +1,5 @@
+public boolean legalMove (int startRow, int startColumn, int desRow, int desColumn, int[][] playerMatrix)
+strErrorMsg = &quot;Skoczek moze poruszac sie ruchem w ksztalcie literki L&quot;;
+
+if (desRow == (startRow - 2) &amp;&amp; desColumn == (startColumn - 1))
+

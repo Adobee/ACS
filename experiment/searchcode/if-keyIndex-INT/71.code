@@ -1,0 +1,11 @@
+public class EnhancedSequenceUtility extends SequenceUtility {
+private int keyIndex = 0;
+
+private String sequence;
+
+private static final int MAX_5BIT = 0xFFFFF;
+boolean exist = false;
+if (keyIndex > 0)
+for (int i = keyIndex - 1; i >= 0; i--) {
+if (keys[keyIndex].equals(keys[i])) {
+

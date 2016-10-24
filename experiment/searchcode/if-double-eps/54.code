@@ -1,0 +1,16 @@
+package com.esri.core.geometry;
+
+class ECoordinate {
+private double m_value;
+private double m_eps;
+
+double epsCoordinate() {
+return NumberUtils.doubleEps();
+}
+
+void scaleError(double f) {
+m_eps *= f;
+}
+
+void setError(double e) {
+

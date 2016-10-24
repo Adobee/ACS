@@ -1,0 +1,10 @@
+public int compare(final Node stepA, final Node stepB) {
+
+double a = getMetric(stepA, stepA.getUvValue());
+double b = getMetric(stepB, stepB.getUvValue());
+
+
+if (a < b)
+{
+return -1;
+

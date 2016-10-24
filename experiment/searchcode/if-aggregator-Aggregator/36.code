@@ -1,0 +1,13 @@
+public class DivisorIterator implements Iterator<Integer> {
+
+private int divisor;
+
+private int power;
+
+private int aggregator;
+public Integer next() {
+if (aggregator % divisor == 0) {
+aggregator /= divisor;
+power *= divisor;
+return power;
+

@@ -1,0 +1,8 @@
+public class WordSplitterBolt extends BaseRichBolt {
+private final int minWordLength;
+private int twitterCount;
+private static final Logger logger = LoggerFactory.getLogger(WordSplitterBolt.class);
+BufferedWriter writer;
+
+public WordSplitterBolt(int minWordLength) {
+

@@ -1,0 +1,10 @@
+public abstract long getFactor();
+
+public abstract OrderedSum getExponent();
+
+public abstract OrderedSum decrement(long base);
+public Summand incrementBase(final long oldBase, final long newBase) {
+long factor = getFactor();
+final OrderedSum exponent = getExponent();
+if (exponent.isZero()) {
+

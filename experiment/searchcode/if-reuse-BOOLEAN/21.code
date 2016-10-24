@@ -1,0 +1,12 @@
+* Simple class containing all neccessary information to maintain valid timestamps and reuse for skills upon relog. Filter this carefully as it
+public long getReuseBasic()
+{
+if(_reuse == 0)
+{
+return getReuseCurrent();
+}
+return _reuse;
+}
+
+public long getReuseCurrent()
+

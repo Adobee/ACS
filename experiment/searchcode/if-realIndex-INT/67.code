@@ -1,0 +1,7 @@
+public void complexForwardTransform(final float[] data) {
+if(windowFunction!=null){
+for(int i = 0 ; i < data.length ; i++){
+final int realIndex = 2 * index;
+final int imgIndex =  2 * index + 1;
+final float modulus = data[realIndex] * data[realIndex] + data[imgIndex] * data[imgIndex];
+

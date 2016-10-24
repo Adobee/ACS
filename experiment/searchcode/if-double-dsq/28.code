@@ -1,0 +1,11 @@
+* Recursively walk the tree to do hackwalk calculation
+**/
+@Override
+public final HG walkSubTree(double dsq, HG hg)
+{
+if (subdivp(dsq, hg)) {
+* Decide if the cell is too close to accept as a single term.
+* @return true if the cell is too close.
+**/
+public final boolean subdivp(double dsq, HG hg)
+

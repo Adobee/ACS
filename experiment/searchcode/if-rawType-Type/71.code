@@ -1,0 +1,9 @@
+public class ParameterizedTypeImpl implements ParameterizedType {
+
+private Type[] actualTypeArguments;
+private Type rawType;
+
+public ParameterizedTypeImpl(Type rawType, List<Type> actualTypeArguments) {
+this.rawType = rawType;
+this.actualTypeArguments = actualTypeArguments.toArray(new Type[]{});
+

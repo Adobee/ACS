@@ -1,0 +1,16 @@
+return ans;
+}
+
+double get(int l, int r){
+if(l >= r){
+return 1;
+}
+if(dp[l][r] != -1){
+return dp[l][r];
+}
+double a = 1;
+if(cs[l] == q || cs[r] == q){
+a *= ka;
+}
+else if(cs[l] != cs[r]){
+

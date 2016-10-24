@@ -1,0 +1,12 @@
+private String workspaceName;
+
+private boolean deleteOnExit = true;
+
+/**
+* @return the workspaceName
+public void process(Exchange exchng) throws Exception
+{
+if(this.deleteOnExit)
+{
+this.getPublisher().removeNamespace(workspaceName, true);
+

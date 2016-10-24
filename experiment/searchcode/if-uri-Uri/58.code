@@ -1,0 +1,7 @@
+public boolean equals(Object obj) {
+if(obj instanceof RestbucksUri) {
+return ((RestbucksUri)obj).uri.equals(uri);
+String port = &quot;&quot;;
+if(uri.getPort() != 80 &amp;&amp; uri.getPort() != -1) {
+port = &quot;:&quot; + String.valueOf(uri.getPort());
+

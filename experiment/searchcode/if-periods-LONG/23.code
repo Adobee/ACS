@@ -1,0 +1,11 @@
+hkperiodsInfoDao.save(hkPeriodsInfo);
+}
+
+@Override
+public HKPeriodsInfo queryByPeriods(Long ID) {
+return hkperiodsInfoDao.get(ID);
+List<HKPeriodsInfo> periodsList=hkperiodsInfoDao.find(hql, status);
+if(periodsList!=null&amp;&amp;periodsList.size()!=0)
+cqp=periodsList.get(0);
+return cqp;
+

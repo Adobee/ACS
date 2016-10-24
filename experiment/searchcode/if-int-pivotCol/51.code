@@ -1,0 +1,7 @@
+java.lang.Integer pivotRow = getPivotRow(tableau, pivotCol);
+if (pivotRow == null) {
+throw new org.apache.commons.math.optimization.linear.UnboundedSolutionException();
+tableau.divideRow(pivotRow, pivotVal);
+for (int i = 0 ; i < (tableau.getHeight()) ; i++) {
+if (i != pivotRow) {
+

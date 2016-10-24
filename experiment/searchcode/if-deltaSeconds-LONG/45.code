@@ -1,0 +1,9 @@
+private final List<NameValuePair> parameters;
+private final long deltaSeconds;
+
+public SessionExpiresHeader(long deltaSeconds, List<NameValuePair> parameters) {
+protected void writeValueToBuffer(OutputStream bb) throws IOException {
+bb.write(Long.toString(deltaSeconds).getBytes());
+
+if (parameters.size() > 0) {
+

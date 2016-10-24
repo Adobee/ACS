@@ -1,0 +1,11 @@
+public List<Long> asList() {
+ArrayList<Long> list = new ArrayList<Long>();
+
+if (pattern == null)
+public static Pattern fromString(String pattern_packed) {
+
+if (pattern_packed == null)
+return null;
+
+String[] pattern_parts = pattern_packed.split(&quot;,&quot;);
+

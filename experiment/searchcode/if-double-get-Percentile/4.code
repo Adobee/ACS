@@ -1,0 +1,7 @@
+this.responseTimeMax = responseTimeMax;
+}
+
+public static double getPercentile(Object[] args) {
+double percentile = Utils.getArg(args, 0, Double.class);
+if (percentile < 0 || percentile > 100) throw new IllegalArgumentException(String.valueOf(percentile));
+

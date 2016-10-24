@@ -1,0 +1,11 @@
+public MovingEntity(CRGameWorld _owner, float x, float y, float width, float height) {
+super(_owner, x, y, width, height);
+}
+
+protected boolean moveByX(float bx) {
+if (bx == 0) return false;
+
+boolean collided = false;
+
+Rectangle original = new Rectangle(bounds);
+

@@ -1,0 +1,12 @@
+for (long l = 0; l < iterations; l++)
+{
+counter.increment();
+}
+
+stopLatch.countDown();
+public void setAll(Counter counter, long iteartions, CyclicBarrier startBarrier, CountDownLatch stopLatch)
+{
+this.counter = counter;
+this.iterations = iteartions;
+this.startBarrier = startBarrier;
+

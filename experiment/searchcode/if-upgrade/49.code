@@ -1,0 +1,16 @@
+public enum GolemUpgradeTypes
+{
+Air (0),
+Earth (1),
+Fire (2),
+Water (3),
+Order (4),
+Entropy (5);
+this.upgradeID = (byte)ID;
+}
+
+@Nullable
+public static GolemUpgradeTypes getUpgradeByID( final byte ID )
+{
+if( ( ID >= 0 ) &amp;&amp; ( ID < allUpgrades.length ) )
+

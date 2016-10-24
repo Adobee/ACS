@@ -1,0 +1,10 @@
+public void start(boolean flushFirst) {
+if (cameraModel == null) {
+System.err.println(&quot;Attempted to start Acq without camera.&quot;);
+acq.setMultiFrame(acqModel.getMultiFrame(), acqModel.isDiv());
+//
+acq.setMirrorImage(acqModel.isMirrorImage());
+if (flushFirst) {
+acq.start(true);
+} else {
+

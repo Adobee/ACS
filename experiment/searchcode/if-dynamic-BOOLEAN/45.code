@@ -1,0 +1,8 @@
+public void putDynamicDictionaryHandler(String dynamicDictionaryName, DynamicDictionaryHandler<T> dynamicDictionaryHandler) {
+if (this.dynamicDictionaryHandlerMap.containsKey(dynamicDictionaryName)) {
+return Collections.unmodifiableMap(this.dynamicDictionaryHandlerMap);
+}
+
+@Override
+public boolean assertExistDynamicDictionary(String dynamicDictionaryName) {
+

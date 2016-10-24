@@ -1,0 +1,6 @@
+if (ifStatement.falseStatement == null) {
+writeJump(VirtualMachine.XOP_IF, ifStatement, &quot;endif&quot;);
+ifStatement.trueStatement.compileStatement(this);
+} else {
+writeJump(VirtualMachine.XOP_IF, ifStatement, &quot;else&quot;);
+

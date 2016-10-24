@@ -1,0 +1,11 @@
+int steiner(int[][] g, int[] ts) {
+int n = g.length, m = ts.length;
+if (m < 2) return 0;
+g[i][j] = min(g[i][j], g[i][k] + g[k][j]);
+}
+}
+}
+for (int i = 0; i < m; i++) {
+for (int j = 0; j < n; j++) {
+dp[1 << i][j] = g[ts[i]][j];
+

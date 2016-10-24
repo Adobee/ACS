@@ -1,0 +1,7 @@
+public class GradDes3DOrientation {
+
+double mBeta = 1;
+double mSamplingPeriod = 1;
+double q1, q2, q3, q4;
+public GradDes3DOrientation(double beta, double samplingPeriod, double q1, double q2, double q3, double q4)
+

@@ -1,0 +1,10 @@
+features.supportsTransactions = true;
+features.supportsThreadedTransactions = true;
+setIfExists(features, &quot;supportsThreadIsolatedTransactions&quot;, true);
+return features;
+}
+
+private static void setIfExists(Features features, String fieldName, boolean value) {
+
+final Class<?> requiredFieldType = Boolean.class;
+

@@ -1,0 +1,11 @@
+*         next = null;
+*     }
+* }
+*/
+public class Solution {
+public ListNode ans, tail, _tail;
+public int rec(ListNode np, int target) {
+if (np == null)
+return 0;
+int ret = rec(np.next, target) + 1;
+

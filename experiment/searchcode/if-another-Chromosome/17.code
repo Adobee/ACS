@@ -1,0 +1,9 @@
+score = Double.parseDouble(fields[1]);
+}
+
+String[] getChromosomeArray() {
+if (chromosomeArray == null) {
+ScoredChromosome sc = new ScoredChromosome(chromosomeToParse);
+if (sortedChromosomes.add(sc)) sideEffectSum += sc.score;
+log.debug(String.format(&quot;SORTING: chromosome: %s, score: %g, accnormscore: %g, SUM: %g&quot;, sc.chromosome, sc.score, sc.accumulatedNormalizedScore, sideEffectSum));
+

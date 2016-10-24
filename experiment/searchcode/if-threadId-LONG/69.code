@@ -1,0 +1,12 @@
+return mInstance;
+}
+
+public void add(long threadId, short engineContactId) {
+NmsLog.trace(TAG, &quot;add threadId: &quot; + threadId + &quot;engineContactId: &quot; + engineContactId);
+synchronized (threadsCache) {
+threadsCache.put(threadId, engineContactId);
+}
+}
+
+public short get(long threadId) {
+

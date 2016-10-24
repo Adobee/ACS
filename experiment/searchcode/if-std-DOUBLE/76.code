@@ -1,0 +1,15 @@
+if (results == null || results.length == 0)
+return Double.NaN;
+
+if (!Double.isNaN(mean))
+return mean;
+
+mean = StdStats.mean(results);
+if (results == null || results.length == 0 || results.length == 1)
+return Double.NaN;
+
+if (!Double.isNaN(std))
+return std;
+
+std = StdStats.stddev(results);
+

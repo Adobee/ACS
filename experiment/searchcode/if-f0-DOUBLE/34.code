@@ -1,0 +1,6 @@
+public FLC_LTPOORWRT (double DELTAGMR3,double ERPD_AVE,double ERPD_STDEV,double KG_DELTA,double MCW,double OW_FUN,double SERBPIM4 ) {
+if (  (SERBPIM4 < 4.3 &amp;&amp; OW_FUN > -26.0 &amp;&amp; MCW < 0.103 &amp;&amp; DELTAGMR3 > 5.0 &amp;&amp; KG_DELTA > 1000) || (SERBPIM4 < 4.3 &amp;&amp; OW_FUN > -26.0 &amp;&amp; MCW < 0.103 &amp;&amp; ERPD_AVE > 7.0 &amp;&amp; ERPD_STDEV > 30.0 ) ) {
+new FLC_LTPOORWRT(Double.parseDouble(args[2]),Double.parseDouble(args[3]),Double.parseDouble(args[4]),Double.parseDouble(args[5]),Double.parseDouble(args[6]),Double.parseDouble(args[7]),Double.parseDouble(args[8]));
+Vector v=FLC_LTPOORWRT.getTCASysOutputResult();
+f0.write(&quot;FLC_LTPOORWRT/@&quot;+hddsn+&quot;/&amp;&quot;);
+

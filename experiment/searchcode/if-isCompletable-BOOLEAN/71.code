@@ -1,0 +1,8 @@
+return (status.equals(Activity.STATUS_RUNNING) || status.equals(Activity.STATUS_TIMEOUT));
+}
+public static boolean isCompletable(String status){
+public boolean equals(Object obj) {
+if(!(obj instanceof Activity)) return false;
+
+Activity comparatee = (Activity)obj;
+

@@ -1,0 +1,10 @@
+self.iterate(t -> {
+BooleanGenerator generator = mapper.apply(t);
+if (generator != null) {
+return findOrDefault(predicate, false, defaultValue);
+}
+
+public BooleanGenerator take(int n) {
+if (n < 0) {
+throw new IllegalArgumentException(&quot;n should be zero or positive&quot;);
+

@@ -1,0 +1,11 @@
+//return newMapping.containsKey(key) ? newMapping.get(key) : 0;
+if (newMapping.containsKey(key))
+return newMapping.get(key);
+int ind = e.getKey() &amp; subMask;
+if (ind == val)
+newMapping.put(e.getKey() ^ ind, e.getValue());
+}
+
+
+Factor factor = new Factor(varMask ^ subMask, newMapping);
+

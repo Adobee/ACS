@@ -1,0 +1,10 @@
+import com.wordings.converter.interfaces.NumberPlaceValue;
+
+@Service
+public abstract class AbstractNumberPlaceValue implements NumberPlaceValue {
+
+public String convert(int number) {
+String numberInWord;
+
+if (number % 100 < 20) {
+

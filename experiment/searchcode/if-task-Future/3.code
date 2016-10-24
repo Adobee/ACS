@@ -1,0 +1,8 @@
+Future<String> future = taskCache.get(taskName);
+if (future == null) {
+// 定义任务
+Callable<String> task = () -> taskName;
+FutureTask<String> futureTask = new FutureTask<>(task);
+future = taskCache.putIfAbsent(taskName, futureTask);
+if (future == null) {
+

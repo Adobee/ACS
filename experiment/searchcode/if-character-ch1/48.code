@@ -1,0 +1,8 @@
+checkInputParameters(character, otherCharacter);
+
+return executeCheck(character, otherCharacter, (ch1, ch2) -> {
+final Optional<Position> position = character.getPosition();
+final Optional<Position> otherPosition = otherCharacter.getPosition();
+boolean collision = false;
+if (position.isPresent() &amp;&amp; otherPosition.isPresent()) {
+

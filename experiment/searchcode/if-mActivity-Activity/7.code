@@ -1,0 +1,16 @@
+* 关闭APP广播
+*/
+public class CloseAppReceiver extends BroadcastReceiver {
+
+private Activity mActivity;
+this.mActivity = activity;
+}
+
+@Override
+public void onReceive(Context context, Intent intent) {
+if (mActivity != null) {
+mActivity.finish();
+}
+}
+}
+

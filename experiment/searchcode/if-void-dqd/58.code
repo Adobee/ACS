@@ -1,0 +1,10 @@
+Map dqd = (Map)this.queryDictionary.valueInComponent(cursor);
+if (dqd != null) {
+for (Object k: dqd.keySet())
+qd.put(k.toString(), dqd.get(k));
+/* template walker */
+
+@Override
+public void walkTemplate(WOElementWalker _walker, WOContext _ctx) {
+if (this.template != null)
+

@@ -1,0 +1,8 @@
+long blockCount = in.readLong();
+long maxDelta = 0;
+long minDelta = Long.MAX_VALUE;
+for (long a = 1; a * a * a <= blockCount; a++) {
+if (blockCount % a != 0)
+continue;
+for (long b = a; a * b * b <= blockCount; b++) {
+

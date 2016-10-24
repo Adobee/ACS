@@ -1,0 +1,5 @@
+public <S extends BaseEntity,T extends BaseEntity, REL_ENTRY_CLASS extends IRelationshipEntry<T>> EntityRelationship<S, T, REL_ENTRY_CLASS> getRelationship(EntityRelationshipDefinition<S, T, REL_ENTRY_CLASS> definition){
+EntityRelationship entityRelationship = relationships.get(definition);
+if (entityRelationship == null){
+if (!getRelationshipDescriptors().containsKey(definition.getName())){
+

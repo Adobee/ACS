@@ -1,0 +1,8 @@
+package pt.utl.ist.repox.web.action.aggregator;
+
+import eu.europeana.repox2sip.Repox2SipException;
+AggregatorRepox aggregatorRepox = context.getRepoxManager().getDataManager().getAggregator(aggregatorId);
+
+if(aggregatorRepox == null) {
+errors.add(&quot;aggregatorId&quot;, new LocalizableError(&quot;error.aggregator.delete&quot;, aggregatorId));
+

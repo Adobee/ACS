@@ -1,0 +1,9 @@
+return String.format( &quot;%d%s&quot;, this.visitor.getId(), this.ip ).hashCode();
+}
+
+@Override
+public boolean equals( Object obj ) {
+if( obj == null ) return false;
+if( obj == this ) return true;
+if( !( obj instanceof VisitorDataPK ) ) return false;
+

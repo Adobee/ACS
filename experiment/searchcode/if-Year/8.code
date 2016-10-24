@@ -1,0 +1,7 @@
+public static void main(String[] args) {
+String s=JOptionPane.showInputDialog(&quot;请输入一个年份：&quot;);
+int year=Integer.parseInt(s);
+//(year%4==0&amp;&amp;year%100!=0)||(year%400==0)是false,((year%4==0&amp;&amp;year%100!=0)||(year%400==0))==true还是false
+if((year%4==0&amp;&amp;year%100!=0)||(year%400==0)){
+System.out.println(year+&quot;年是闰年！&quot;);
+

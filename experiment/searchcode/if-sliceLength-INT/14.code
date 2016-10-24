@@ -1,0 +1,10 @@
+if (image.isColorImage()) {
+colorFactor = 4;
+} else if (image.isComplexImage()) {
+colorFactor = 2;
+}
+int sliceLength = colorFactor * xDim * yDim;
+int volLength = sliceLength * zDim;
+
+if(dataType == ModelStorageBase.BYTE) {
+

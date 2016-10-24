@@ -1,0 +1,7 @@
+public Primary evaluate(Environment context) throws EvaluatorException {
+Primary lhs = left.evaluate(context);
+
+// These two should short circuit
+if (operator.kind == LexemeKind.AmpersandAmpersand) {
+if (!lhs.castToBoolean().getValue()) {
+

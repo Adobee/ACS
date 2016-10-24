@@ -1,0 +1,12 @@
+class Stopwatch {
+private long    elapsed   = 0L;
+private long    start     = currentTimeMillis();
+private boolean isRunning = false;
+public long read() {
+if (isRunning) {
+update();
+}
+return elapsed;
+}
+}
+

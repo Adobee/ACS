@@ -1,0 +1,8 @@
+int n = c.length, cut = INF;
+int[] id = new int[n], b = new int[n];
+for (int i = 0; i < n; i++) id[i] = i;
+int p = i + 1;
+for (int j = i + 1; j < n; j++) {
+b[id[j]] += c[id[i]][id[j]];
+if (b[id[p]] < b[id[j]]) p = j;
+

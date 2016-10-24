@@ -1,0 +1,9 @@
+return this;
+}
+
+public Builder maxInputLength(int maxInputLength) {
+if (maxInputLength <= 0) {
+final String originalInput = input;
+if (input.length() > maxInputLength) {
+final int len = correctSubStringLen(input, Math.min(maxInputLength, input.length()));
+

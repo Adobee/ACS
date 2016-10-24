@@ -1,0 +1,7 @@
+public static Date getStartEndDate(Date date, boolean start) {
+Calendar calendar = Calendar.getInstance();
+calendar.setTime(date);
+if (start) {
+calendar.set(Calendar.HOUR_OF_DAY,
+calendar.getMinimum(Calendar.HOUR_OF_DAY));
+

@@ -1,0 +1,8 @@
+import com.login.mvp.logintemplate.Domain.Repository.ContributorsRepository;
+
+import java.util.List;
+import rx.Observable;
+public static ContributorsDataRepository getInstance() {
+if (sInstance == null) {
+sInstance = new ContributorsDataRepository(new ContributorEntityDataMapper());
+

@@ -1,0 +1,9 @@
+import static jml.utils.Time.toc;
+import jml.data.Data;
+
+import org.apache.commons.math.linear.RealMatrix;
+PhaseIResult phaseIResult = phaseI(A, b, B, d);
+if (phaseIResult.feasible) {
+fprintf(&quot;Phase II:\n\n&quot;);
+RealMatrix x0 = phaseIResult.optimizer;
+

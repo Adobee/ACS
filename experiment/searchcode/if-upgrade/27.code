@@ -1,0 +1,11 @@
+public void tick()
+{
+if(!tileEntity.getWorld().isRemote)
+{
+if(tileEntity.inventory[upgradeSlot] != null &amp;&amp; tileEntity.inventory[upgradeSlot].getItem() instanceof IUpgradeItem)
+Upgrade type = ((IUpgradeItem)tileEntity.inventory[upgradeSlot].getItem()).getUpgradeType(tileEntity.inventory[upgradeSlot]);
+
+if(supports(type) &amp;&amp; getUpgrades(type) < type.getMax())
+{
+if(upgradeTicks < UPGRADE_TICKS_REQUIRED)
+

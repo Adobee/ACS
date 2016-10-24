@@ -1,0 +1,11 @@
+return getCachedBuild(file) != null || createBuild(file) != null;
+}
+
+@Override
+public final Build getBuild(File file) {
+Build build = getCachedBuild(file);
+if (build == null) {
+while (directory != null) {
+Build build = cachedBuilds.get(directory);
+if (build != null) {
+

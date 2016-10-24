@@ -1,0 +1,9 @@
+private RequestLine() {
+}
+
+static String get(Request request, Type proxyType, int httpMinorVersion) {
+StringBuilder result = new StringBuilder();
+result.append(&quot; &quot;);
+if (includeAuthorityInRequestLine(request, proxyType)) {
+result.append(request.url());
+

@@ -1,0 +1,9 @@
+Date dateBuffer2 = date2;
+
+if(dateField != DateFieldType.HOURS &amp;&amp; dateField != DateFieldType.MINUTES &amp;&amp; dateField != DateFieldType.SECONDS &amp;&amp; dateField != DateFieldType.MILLISECONDS){
+dateBuffer2 = calendar.getTime();
+}
+
+if(dateField == DateFieldType.MILLISECONDS)
+return (dateBuffer1.getTime() - dateBuffer2.getTime());
+

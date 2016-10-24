@@ -1,0 +1,9 @@
+* @author $Author: unknown$
+*
+*/
+
+public abstract class Eventsender<ListenerType extends EventListener, EventType extends DefaultEvent> {
+final java.util.List<WeakReference<ListenerType>> newWeakListener = new ArrayList<WeakReference<ListenerType>>(this.weakListener.size());
+for (final WeakReference<ListenerType> listener : this.weakListener) {
+if ((l = listener.get()) == null) {
+

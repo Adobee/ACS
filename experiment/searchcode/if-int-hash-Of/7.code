@@ -1,0 +1,14 @@
+int hash = (int) 2166136261L;
+for (byte b : data)
+hash = (hash * 16777619) ^ b;
+if (M_SHIFT == 0)
+return (hash &amp; 0x7FFFFFFF);
+}
+
+/* End Of RS Hash Function */
+
+/**
+* JS算法
+*/
+public static int JSHash(String str) {
+

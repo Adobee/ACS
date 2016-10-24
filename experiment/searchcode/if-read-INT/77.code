@@ -1,0 +1,10 @@
+private int read() throws IOException {
+int retVal = input.read();
+if(inScript) {
+buffer.append((char) retVal);
+public void readTagClose() throws Exception {
+int a = read();
+while(a != -1) {
+if(a == &#39;>&#39;) {
+return;
+

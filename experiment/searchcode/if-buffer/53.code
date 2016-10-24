@@ -1,0 +1,13 @@
+destroyBuffer();
+}
+
+
+public void paint(Graphics g) {
+if ((bufferWidth != getSize().width) || (bufferHeight != getSize().height) || (bufferImage == null)
+|| (bufferGraphics == null)) {
+createBuffer();
+paintBuffer(bufferGraphics);
+}
+
+if (bufferGraphics != null) {
+

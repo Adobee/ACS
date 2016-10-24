@@ -1,0 +1,9 @@
+/* (non-Javadoc)
+* @see interpreter.Expr#prettyPrint()
+*/
+@Override
+public String prettyPrint() {
+if (expr instanceof NegateExpr){
+return ((NegateExpr) expr).expr.prettyPrint();
+}else if  (expr instanceof Literal){
+

@@ -1,0 +1,8 @@
+private final long      creationTime        = System.currentTimeMillis ();
+private int             numberOfFragments   = NUMBER_OF_FRAGMENTS;
+private byte[][]        fragments;
+// If this number is zero, I have to wait for the flag
+if (header.number_of_packets > 0)
+{
+numberOfFragments = header.number_of_packets;
+

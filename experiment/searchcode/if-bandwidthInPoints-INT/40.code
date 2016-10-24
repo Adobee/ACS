@@ -1,0 +1,9 @@
+public LoessInterpolator(double bandwidth, int robustnessIters) throws MathException {
+if (bandwidth < 0 || bandwidth > 1) {
+return new double[]{yval[0], yval[1]};
+}
+
+int bandwidthInPoints = (int) (bandwidth * n);
+
+if (bandwidthInPoints < 2) {
+

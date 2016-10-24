@@ -1,0 +1,10 @@
+package Question2;
+
+public class CookieCalculator {
+double F; // increase in rate from farm
+public void calculate(){
+double time1 = X/R;
+double R1 = R + F;
+double time2 = C/R + X/R1;
+if(time1 <= time2){
+

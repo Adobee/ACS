@@ -1,0 +1,9 @@
+public class ComplexFractionNumber {
+
+private Fraction realFraction;
+private Fraction imaginaryFraction;
+public String toString() {
+realFraction.reduceFraction();
+imaginaryFraction.reduceFraction();
+if(imaginaryFraction.toString().startsWith(&quot;-&quot;)) {
+

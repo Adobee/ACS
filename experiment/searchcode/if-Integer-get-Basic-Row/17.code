@@ -1,0 +1,11 @@
+cellsInRange.put(cell.getColumnIndex(), cell.getRowIndex(), cell);
+
+// Update if needed.
+if (address.getWorksheet() == null) {
+address.setWorksheet(cell.getWorksheet());
+address.setRightmostColumnIndex(cell.getColumnIndex());
+}
+
+if (address.getTopmostRowIndex() == null
+|| address.getTopmostRowIndex() > cell.getRowIndex()) {
+

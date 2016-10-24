@@ -1,0 +1,6 @@
+public long consume(long units, boolean flexible) throws SubscriptionException {
+if ((this.definedQuota - this.consumedQuota - units) > 0) {
+long available = (this.definedQuota - this.consumedQuota);
+if (flexible) {
+this.consumedQuota = this.definedQuota;
+

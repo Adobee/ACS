@@ -1,0 +1,9 @@
+public CacheValue get(String key) throws CacheException {
+CacheValue cacheValue = cache.getIfPresent(key);
+if(cacheValue != null &amp;&amp; cacheValue.isExpired()){
+return cacheValue;
+}
+
+public boolean delete(String key) throws CacheException {
+CacheValue cacheValue = cache.getIfPresent(key);
+

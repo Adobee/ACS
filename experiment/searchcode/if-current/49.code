@@ -1,0 +1,13 @@
+public String printTree(Node root)
+{
+Stack stack = new Stack();
+Node current = root;
+String traverse = null;
+
+if (root == null)
+while (stack.size() > 0)
+{
+current = (Node) stack.pop();
+if (traverse == null)
+traverse = current.element + &quot; &quot;;
+

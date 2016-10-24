@@ -1,0 +1,9 @@
+public final class Amount {
+
+private final static short precision = 2;
+private final long amount;
+
+private Amount(long amount) {
+if (abs(amount) > 9_999_999_999d) {
+throw new AmountOutOfRangeException(&quot;Number out of range for Amount class.&quot;);
+

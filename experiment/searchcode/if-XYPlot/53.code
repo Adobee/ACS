@@ -1,0 +1,11 @@
+import com.androidplot.xy.BoundaryMode;
+import com.androidplot.xy.XYPlot;
+import com.androidplot.xy.XYSeriesFormatter;
+import com.androidplot.xy.XYStepMode;
+private Number[] y;
+private XYPlot mySimpleXYPlot;
+private String title;
+private String form;
+private int lb;
+private int ub;
+

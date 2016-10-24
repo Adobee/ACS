@@ -1,0 +1,9 @@
+public class IntReferenceCountMap implements HasSizeIF
+{
+protected int[][] keys;
+protected int[][] values;
+protected int[]        sizes;
+public synchronized void getData(IntIntArrayHolderIF arrayHolder)
+{
+super.getData(arrayHolder);
+

@@ -1,0 +1,6 @@
+private HashMap<String, Predicate<ChunkedBinaryExtraction>> featureMap;
+private transient BooleanFeatureSet<ChunkedBinaryExtraction> featureSet;
+public BooleanFeatureSet<ChunkedBinaryExtraction> getFeatureSet() {
+if(featureSet==null){
+initFeatureSet();
+

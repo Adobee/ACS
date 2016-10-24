@@ -1,0 +1,10 @@
+public void addGame(int score, int oppScore, float spread, boolean isHome, boolean isDome, boolean isTurf) {
+if(score > oppScore) {
+this.wins[OVERALL]++;
+int i = (isHome ? this.wins[HOME]++ : this.wins[AWAY]++);
+i = (isDome ? this.ties[DOME]++ : this.ties[OUTSIDE]++);
+i = (isTurf ? this.ties[TURF]++ : this.ties[GRASS]++);
+}
+
+if((score+spread) > oppScore) {
+

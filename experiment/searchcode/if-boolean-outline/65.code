@@ -1,0 +1,11 @@
+int dx = outline[i][0] - cx;
+int dy = outline[i][1] - cy;
+
+int r = dx*dx + dy*dy;
+if (r > maxr) maxr = r;
+
+if (i == 0)
+m_outline.moveTo(dx, dy);
+else
+m_outline.lineTo(dx, dy);
+

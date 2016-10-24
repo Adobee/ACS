@@ -1,0 +1,6 @@
+public List<MetricDTO> getMetricsByServiceIdOrArchitectureId(final Long serviceId, final Long architectureId) {
+List<Metric> metrics;
+if (serviceId != null) {
+metrics = metricRepository.findByServiceId(serviceId);
+} else if (architectureId != null) {
+

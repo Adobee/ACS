@@ -1,0 +1,10 @@
+public class ServiceAutostart extends BroadcastReceiver {
+
+private SharedPreferences sp;
+
+@Override
+public void onReceive(Context context, Intent intent) {
+sp = PreferenceManager.getDefaultSharedPreferences(context);
+boolean autostart = sp.getBoolean(&quot;autostart&quot;, true);
+if ((&quot;android.intent.action.BOOT_COMPLETED&quot;.equals(intent.getAction()) &amp;&amp; (autostart == true))) {
+

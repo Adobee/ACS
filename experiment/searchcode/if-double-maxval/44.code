@@ -1,0 +1,12 @@
+public double asValue(){
+Formula maxVal = operands[0];
+for(Formula formulas : operands){
+if(formulas.asValue() > maxVal.asValue()) {
+maxVal = formulas;
+}
+}
+
+return maxVal.asValue();
+}
+}
+

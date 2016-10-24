@@ -1,0 +1,11 @@
+private final BTree<K,V> bTree;
+private final RootSplitState<K,V> splitState;
+
+RootNode(BTree<K,V> bTree) {
+this.bTree = bTree;
+this.splitState = new RootSplitState<>( root , bTree.space(), counters());
+}
+
+@Override
+public long allocateBranch() {
+

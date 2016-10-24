@@ -1,0 +1,10 @@
+protected int compareLeafValues(BooleanNode other) {
+if (this.value == other.value) {
+return 0;
+}
+return this.value ? 1 : -1;
+}
+
+public boolean equals(Object other) {
+if (!(other instanceof BooleanNode)) {
+

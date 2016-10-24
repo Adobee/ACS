@@ -1,0 +1,12 @@
+import java.util.Objects;
+
+import org.joda.time.Instant;
+
+import com.google.common.base.Preconditions;
+import com.google.common.collect.ImmutableList;
+private final Instant retrievedInstant;
+
+private final List<String> tags;
+
+public Post(long id, String blogName, String postUrl, Instant postedInstant,
+

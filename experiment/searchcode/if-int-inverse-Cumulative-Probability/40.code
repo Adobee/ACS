@@ -1,0 +1,6 @@
+private void testCumulativeProbabilitySuccess(GeometricDistribution d, int x, double p, double expected) throws NumericException {
+private void testInveseCumulativeProbabilitySuccess(GeometricDistribution d, double q, double p, int expected) throws NumericException {
+d.setProbabilityOfSuccess(p);
+int actual = d.inverseCumulativeProbability(q);
+assertEquals(expected, actual);
+

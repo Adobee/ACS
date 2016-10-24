@@ -1,0 +1,10 @@
+package com.company;
+
+public class DirectionCoefficient {
+Double x;
+Double y;
+Double z;
+
+public DirectionCoefficient(Double newX, Double newY, Double newZ) {
+x = newX;
+

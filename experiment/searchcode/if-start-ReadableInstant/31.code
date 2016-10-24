@@ -1,0 +1,5 @@
+public static int deltaDays(final ReadableInstant start, final ReadableInstant end) {
+return new Period(start, end, PeriodType.days()).getDays();
+public static String formatDurationDays(final ReadableInstant start, final ReadableInstant end) {
+final int duration = deltaDays(start, end) + 1;
+

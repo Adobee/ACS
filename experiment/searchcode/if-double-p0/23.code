@@ -1,0 +1,10 @@
+Scanner console = new Scanner(System.in);
+double p0;
+double TOL;
+double N0;
+double p;
+double f;
+System.out.println(&quot;Enter x_0:&quot;);
+p0 = console.nextDouble();
+System.out.println(&quot;Enter tolerance level:&quot;);
+

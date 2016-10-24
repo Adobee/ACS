@@ -1,0 +1,15 @@
+return null;
+}
+
+boolean wholeIsNeg = whole.compareTo(BigInteger.ZERO) < 0;
+if (wholeIsNeg) {
+num = whole.multiply(den).add(num);
+if (wholeIsNeg) {
+num = num.negate();
+}
+
+return new BigFraction(num, den);
+
+}
+}
+

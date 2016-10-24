@@ -1,0 +1,12 @@
+//long numId=Long.valueOf(request.getParameter(&quot;numId&quot;)) ;
+if(id>0)
+{
+String sql=&quot;delete from image where id=&quot;+id;
+String categoryImageFKSql=&quot;delete from categoryImageFK where imageId=&quot;+id;
+// TODO Auto-generated catch block
+e.printStackTrace();
+}
+}
+
+String idKey=ShareDataManager.getInstance().getImageKey(Integer.valueOf(id));
+

@@ -1,0 +1,14 @@
+* @return the extension of the file.
+*/
+public static String getFileExtension(File file) {
+if (file == null) {
+int extIndex = name.lastIndexOf(FileExtension.EXT_SEPARATOR);
+
+if (extIndex == -1) {
+return &quot;&quot;;
+} else {
+return name.substring(extIndex + 1);
+}
+}
+}
+

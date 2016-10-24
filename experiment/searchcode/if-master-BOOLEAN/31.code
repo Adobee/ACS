@@ -1,0 +1,14 @@
+while ((master.getState() == MasterStates.RUNNING) || (bmaster.getState() == MasterStates.RUNNING)) {
+Thread.sleep(100);
+}
+
+boolean singleMaster = (((master.getState() == MasterStates.ELECTED) &amp;&amp; (bmaster.getState() != MasterStates.ELECTED)) || ((master
+Thread.sleep(500);
+}
+
+master.bootstrap();
+master.masterExists();
+
+int attempts = 10;
+boolean elected = true;
+

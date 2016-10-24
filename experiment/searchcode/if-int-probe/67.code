@@ -1,0 +1,10 @@
+return this.watchedObject;
+}
+
+/** {@inheritDoc}
+*/
+@Override
+public final int getProbeInt(String probeName) throws ProbeException {
+Number value = getProbeValue(probeName, Number.class);
+if (value==null)
+

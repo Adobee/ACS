@@ -1,0 +1,4 @@
+int listSize = this.list.size();
+for (int i = 0; i < listSize; ++i) {
+if (((Container) this.list.get(i)).getKey().equals(key))
+

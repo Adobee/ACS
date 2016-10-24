@@ -1,0 +1,7 @@
+session = request.getSession(true) ;
+user = (FhiUser) request.getSession().getAttribute(FhiConfig.USER_NAME);
+if (user == null) {
+String index = request.getParameter(&quot;index&quot;) ;
+if(index!=null &amp;&amp; !index.trim().equals(&quot;&quot;)){
+List<FhiOaRetmoney>   moneylist = (List<FhiOaRetmoney>)session.getAttribute(&quot;moneylist&quot;);
+

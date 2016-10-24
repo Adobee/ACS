@@ -1,0 +1,10 @@
+public class RangeEntity {
+private long rangeStart;
+private long rangeEnd;
+
+private final String RANGE_KEY = &quot;Range&quot;;
+public void loadRangeHeader(HttpUriRequest uriRequest) {
+String rangeMax = &quot;&quot;;
+if (rangeEnd > rangeStart) {
+rangeMax = (rangeEnd == RANGE_MAX ? &quot;&quot; : rangeEnd + &quot;&quot;);
+

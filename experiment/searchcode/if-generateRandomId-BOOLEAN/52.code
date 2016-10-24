@@ -1,0 +1,10 @@
+ps.setString(1, id);
+ps.execute();
+
+try (ResultSet rs = ps.getResultSet()) {
+if (rs.next()) {
+Set<Device> devices = findManagedDevices(id);
+Boolean installed = rs.getBoolean(&quot;installed&quot;);
+
+return new Manager(id, managerType, owner, devices, null, installed);
+

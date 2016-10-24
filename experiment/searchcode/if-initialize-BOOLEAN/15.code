@@ -1,0 +1,15 @@
+static {
+initializeIfNecessary();
+}
+//private static int sum;
+
+public static int getSum()
+{
+initializeIfNecessary();
+return sum;
+}
+
+private static boolean initialized = false;
+
+private static synchronized void initializeIfNecessary(){
+

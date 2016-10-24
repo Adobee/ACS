@@ -1,0 +1,10 @@
+PolarityEvent eout = (PolarityEvent) outItr.nextOutput();
+if(updateCoefficients(ein))
+ein.polarity = PolarityEvent.Polarity.On;
+drawCircle(gl, c1, c2);
+
+}
+
+private boolean updateCoefficients(PolarityEvent e) {
+double var1 = xHorizontal ? e.x : e.y;
+

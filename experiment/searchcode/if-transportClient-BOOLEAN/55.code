@@ -1,0 +1,7 @@
+import org.elasticsearch.action.admin.indices.delete.DeleteIndexResponse;
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.cluster.metadata.IndexMetaData;
+boolean isExists = ESHelper.isExistsIndex(transportClient, indexName);
+//是否存在，存在则删除
+if(isExists){
+

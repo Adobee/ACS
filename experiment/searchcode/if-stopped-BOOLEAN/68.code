@@ -1,0 +1,10 @@
+import org.bukkit.entity.Player;
+
+public abstract class Ambience {
+protected int nextIndex = 0;
+protected boolean stopped = true;
+public abstract void nextSound(Player p, int volume);
+public final void stop(){
+if(stopped){
+throw new IllegalStateException(this.getName() + &quot; already stopped!&quot;);
+

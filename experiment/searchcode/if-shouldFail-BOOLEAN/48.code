@@ -1,0 +1,7 @@
+private final Logger LOGGER = Logger.getLogger(ArchiveInvoiceService.class.getName());
+
+public void execute(DelegateExecution execution) throws Exception {
+
+Boolean shouldFail = (Boolean) execution.getVariable(&quot;shouldFail&quot;);
+if(shouldFail != null &amp;&amp; shouldFail) {
+

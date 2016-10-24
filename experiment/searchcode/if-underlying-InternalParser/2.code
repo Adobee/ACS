@@ -1,0 +1,12 @@
+class DateTimeParserInternalParser implements InternalParser {
+
+private final DateTimeParser underlying;
+
+static InternalParser of(DateTimeParser underlying) {
+if (underlying instanceof InternalParserDateTimeParser)
+{
+return (InternalParser) underlying;
+}
+
+if (underlying == null)
+

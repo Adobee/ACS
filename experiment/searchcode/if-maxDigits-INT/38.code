@@ -1,0 +1,9 @@
+private static final long serialVersionUID = 1L;
+private final int maxDigits;
+public IntegerField(int initial, int maxDigits) {
+String text = Integer.toString(initial);
+if (text.length() > maxDigits) text = text.substring(0, maxDigits);
+setText(text);
+}
+@Override
+

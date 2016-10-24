@@ -1,0 +1,13 @@
+import ru.stqa.selenium.legrc.runner.StepOutcome;
+
+public class ExceptionOutcome implements StepOutcome {
+
+private Throwable ex;
+
+public ExceptionOutcome(Throwable ex) {
+this.ex = ex;
+}
+
+@Override
+public boolean matches(Object expected) {
+

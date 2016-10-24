@@ -1,0 +1,8 @@
+* @param statsName the stats name
+* @return true, if is collected
+*/
+public boolean isCollected(String statsName) {
+public synchronized void resetStats(String name) {
+List<XYDataItem> stats = getStats(name);
+if (stats != null) {
+

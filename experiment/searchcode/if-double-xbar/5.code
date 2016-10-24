@@ -1,0 +1,9 @@
+this.mss = mss;
+this.xbar = xbar;
+}
+
+public void perturb (double[][] candarray, int whoseTurn) {
+if (xbar[whoseTurn] == 0.0) return;
+double temp = mss[whoseTurn] * rand.nextGaussian ();
+if (Math.abs(xbar[whoseTurn]) >= 1.0) {
+

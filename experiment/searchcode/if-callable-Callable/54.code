@@ -1,0 +1,5 @@
+List<LispObject> rest = subList(1, size());
+LispObject firstEvaled =  first.eval(scope);
+if (!(firstEvaled instanceof Callable)) {
+throw new ArgShouldBeCallableException();
+

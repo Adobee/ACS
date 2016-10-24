@@ -1,0 +1,6 @@
+for (Iterable<T> iterable: iterables)
+if (iterable instanceof Collection)
+count += ((Collection<T>)iterable).size();
+else //if (iterable instanceof FiniteIterable)
+count += ((FiniteIterable<T>)iterable).size();
+

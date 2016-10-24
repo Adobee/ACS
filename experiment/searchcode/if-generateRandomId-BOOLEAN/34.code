@@ -1,0 +1,8 @@
+* @return true or false indicating whether the save was successful or not
+*/
+public boolean save(){
+jsonStringBuilder = jsonFilter(jsonStringBuilder);
+String sp_key = &quot;entity_id&quot;+key; //key used to save all id&#39;s for each entity value in the database
+if(null != sp){
+JSONObject json = new JSONObject(sp.getString(sp_key, &quot;{\&quot;id\&quot;:[]}&quot;));
+

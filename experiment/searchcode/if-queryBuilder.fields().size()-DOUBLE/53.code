@@ -1,0 +1,6 @@
+.forEntity(Commodity.class).get();
+
+if (query.getEndPrice() == 0) {
+query.setEndPrice(Double.MAX_VALUE);
+.must(queryBuilder.keyword().fuzzy().onFields(&quot;title&quot;, &quot;description&quot;)
+

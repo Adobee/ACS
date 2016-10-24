@@ -1,0 +1,18 @@
+public class ParabolaWave extends Wave {
+
+public ParabolaWave() {
+super();
+}
+
+@Override
+protected double calcPosRate(long tick) {
+double currentY = currentX * currentX;
+double posRate = currentY / maxY;
+if (!waveParams.getReverse()) {
+posRate = 1 - posRate;
+}
+return posRate;
+}
+
+}
+

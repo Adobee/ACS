@@ -1,0 +1,9 @@
+boolean hasIndexBoost = in.readBoolean();
+if (hasIndexBoost) {
+int size = in.readVInt();
+highlightBuilder.writeTo(out);
+}
+boolean hasIndexBoost = indexBoost != null;
+out.writeBoolean(hasIndexBoost);
+if (hasIndexBoost) {
+

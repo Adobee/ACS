@@ -1,0 +1,8 @@
+public class ButtonClicksHelper {
+/**
+* Tiempo mínimo entre clicks a un boton (ms)
+*/
+private static final int TIME_BETWEEN_CLICKS = 650;
+public static boolean canClickButton() {
+if (SystemClock.elapsedRealtime() - lastClickTime > TIME_BETWEEN_CLICKS) {
+

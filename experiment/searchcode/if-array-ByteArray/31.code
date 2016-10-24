@@ -1,0 +1,8 @@
+ObjectOutputStream o =new ObjectOutputStream(buf);
+o.writeObject(customer);
+
+
+byte[] byteArray=buf.toByteArray();
+System.out.print(byteArray[i]+&quot; &quot;);
+if((i % 10==0 &amp;&amp; i!=0) || i==byteArray.length-1) System.out.println();
+

@@ -1,0 +1,10 @@
+Type.WildcardType wildThing, boolean full) {
+if (env.legacyDoclet) {
+return TypeMaker.getTypeName(env.types.erasure(wildThing), full);
+bounds = getSuperBounds(wildThing);
+if (bounds.nonEmpty()) {
+s.append(&quot; super &quot;);
+}
+}
+boolean first = true;	// currently only one bound is allowed
+

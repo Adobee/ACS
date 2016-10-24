@@ -1,0 +1,10 @@
+private static final double EXTRA_MARGIN_FACTOR = 0.05; // factor above and below the min/max to produce some margin
+private final DateAxis dateAxis;
+private final CombinedDomainXYPlot combinedDomainPlot;
+double start = end - dateAxis.getRange().getLength();
+if (start < end) {
+dateAxis.setRange(start, end);
+}
+}
+}
+

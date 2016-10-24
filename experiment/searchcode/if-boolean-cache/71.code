@@ -1,0 +1,11 @@
+int[] cache = new int[n];
+boolean flag = false;
+for(int i = 0; i < n; i++){
+if(flag || obstacleGrid[0][i] == 1){
+cache[i] = 1;
+}
+}
+for(int i = 1; i < m; i++){
+if(obstacleGrid[i][0] == 1){
+cache[0] = 0;
+

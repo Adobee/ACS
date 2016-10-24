@@ -1,0 +1,12 @@
+private Interval startInter;
+private Interval endInter;
+private Interval medInter;
+private Interval durInter;
+
+
+public boolean matches(TimeAttribute timeAttr){
+if (timeAttr == null)
+return false;
+
+if (startInter != null &amp;&amp; !startInter.contains(timeAttr.getStart()))
+

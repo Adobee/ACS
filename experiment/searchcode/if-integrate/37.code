@@ -1,0 +1,8 @@
+List<UserIntegrate> integrates = userIntegrateMapper.selectByExample(userIntegrateExample);
+if (CollectionUtils.isEmpty(integrates)) {
+
+UserIntegrate userIntegrate = new UserIntegrate(userId, userMoney.getMoney());
+UserIntegrate userIntegrate = integrates.get(0);
+Double integrate = userIntegrate.getUserIntegrate();
+if (UserMoneyBusiType.BUSITYPE_RECHARGE == userMoney.getBusiType()) {
+

@@ -1,0 +1,8 @@
+public static double angle(final Vector3D v1, final Vector3D v2) {
+
+final double normProduct = v1.getNorm() * v2.getNorm();
+if (normProduct == 0) {
+final double dot = dotProduct(v1, v2);
+final double threshold = normProduct * 0.9999;
+if ((dot < -threshold) || (dot > threshold)) {
+

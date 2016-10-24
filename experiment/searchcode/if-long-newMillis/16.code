@@ -1,0 +1,14 @@
+private Date _time;
+protected long _millis;
+
+public BrokenClock() {
+this(new Date(0));
+}
+
+public BrokenClock(Date time) {
+public synchronized Date time() { return _time; }
+
+public synchronized void advanceTo(Date newTime) {
+long newMillis = newTime.getTime();
+if (newMillis == _millis) return;
+

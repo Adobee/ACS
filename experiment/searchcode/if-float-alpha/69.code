@@ -1,0 +1,9 @@
+public AlphaTask (Layer layer, float alpha, float time, Interpolator interp)
+{
+super(time, interp);
+_layer = layer;
+@Override public boolean update (float dt)
+{
+if (_elapsedTime == 0) {
+_fromAlpha = _target.alpha();
+

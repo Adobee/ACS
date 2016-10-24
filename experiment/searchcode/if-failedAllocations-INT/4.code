@@ -1,0 +1,8 @@
+* total failed allocations size, total size of defragmented blocks.
+*/
+private int defrags, failedAllocations, totalFailSize, totalDefragSize;
+public boolean allocate(int size) {
+long start, end;
+Block addTo = this.emptyBlks.getMax();
+if (addTo == null) {
+

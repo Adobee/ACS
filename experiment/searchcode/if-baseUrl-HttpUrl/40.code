@@ -1,0 +1,10 @@
+connectionManager.getParams().setSoTimeout(timeout);
+// Create a connection to some &#39;hidden&#39; Google-API
+String baseURL = null;
+if(mode.equals(OPEN_CELL_ID_API)) {
+ti.setCellLongitude(Double.NaN);
+try {
+// Setup the connection
+HttpURL httpURL = null;
+if(baseURL.startsWith(&quot;https&quot;)) httpURL = new HttpsURL(baseURL);
+

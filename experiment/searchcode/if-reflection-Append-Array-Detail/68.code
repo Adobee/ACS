@@ -1,0 +1,10 @@
+spaces += indent;
+resetIndent();
+super.appendDetail(buffer, fieldName, array);
+spaces -= indent;
+resetIndent();
+}
+
+@Override
+protected void reflectionAppendArrayDetail(final StringBuffer buffer, final String fieldName, final Object array) {
+

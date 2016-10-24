@@ -1,0 +1,6 @@
+private int maxSendBufferSize;
+private long maxSendBufferTime;
+private List<MetricsRecord> sendBuffer = Lists.newArrayList();
+// send if sendBuffer exceed buffer size or buffer time is too long
+if (sendBuffer.size() > maxSendBufferSize ||
+

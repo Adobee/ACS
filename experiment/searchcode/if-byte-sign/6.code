@@ -1,0 +1,8 @@
+System.out.print(&quot;Signature : &quot;); printBytes(sign.getData());
+if (sign.getSW()!=0x9000) throw new Exception(&quot;Challenge request failed&quot;);
+if(sign.getSW()==SW_PIN_VERIFICATION_REQUIRED) throw new Exception(&quot;PIN verification is required&quot;);
+public static boolean verify(byte[] data, PublicKey publicKey, byte[] sign) {
+Signature signer;
+try {
+signer = Signature.getInstance(&quot;SHA1withRSA&quot;);
+

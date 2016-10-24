@@ -1,0 +1,17 @@
+package leet3;
+
+public class Pow {
+public double pow(double x, int n) {
+if (n < 0)
+private double doPow(double x, int n) {
+if (n == 0)
+return 1;
+double val = doPow(x, n/2);
+if (n%2 == 0) {
+return val*val;
+} else {
+return val*val*x;
+}
+}
+}
+

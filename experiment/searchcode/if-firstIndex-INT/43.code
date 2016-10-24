@@ -1,0 +1,12 @@
+public class ConstIndexInterval {
+
+private final int firstIndex;
+private final int count;
+
+private final int bitsCount;
+public ConstIndexInterval(ConstIndexInterval rightNeighbor, int count) {
+this(rightNeighbor.firstIndex - count, count);
+}
+
+public ConstIndexInterval(int firstIndex, int count) {
+

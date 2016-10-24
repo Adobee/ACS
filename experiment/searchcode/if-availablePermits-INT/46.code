@@ -1,0 +1,12 @@
+public boolean isLocked(final int id) {
+return isLocked() &amp;&amp; owner == id;
+}
+
+public void lock(final int id) {
+if (owner == id)
+public boolean unlock(final int id) {
+if (semaphore.availablePermits() > 0)
+return false;
+if (owner != id)
+return false;
+

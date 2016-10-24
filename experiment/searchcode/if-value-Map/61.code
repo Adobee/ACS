@@ -1,0 +1,8 @@
+public static String getFromMap(String key, Map<String, Object> map, String defaultValue) {
+Object value = map.get(key);
+if (value==null) return defaultValue;
+return map.get(key).toString();
+public static int getFromMapAsInt(String key, Map<String, Object> map, int defaultValue) {
+Object value = map.get(key);
+if (value==null) return defaultValue;
+

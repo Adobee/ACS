@@ -1,0 +1,12 @@
+return (T) otherField;
+}
+
+public boolean hasOtherValue() {
+return otherField != null;
+}
+
+public boolean isOtherOf(final Class givenClazz) throws IllegalArgumentException {
+Preconditions.checkArgument(givenClazz != null);
+if (otherField == null) {
+return false;
+

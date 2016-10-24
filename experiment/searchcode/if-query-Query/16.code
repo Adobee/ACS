@@ -1,0 +1,8 @@
+public class QueryUtils {
+
+public static String removeUnusedCommas(String query) {
+query=query.replaceAll(&quot;, ,&quot;, &quot; &quot;);
+int index = query.indexOf(&quot;, )&quot;);
+do {
+if (index > 0) {
+

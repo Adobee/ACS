@@ -1,0 +1,13 @@
+holeComponents[i] = edges[offset];
+offset += length;
+}
+
+int numHoles = holeComponents.length;
+
+numHoles = merge(edges, 0, intersections(+DATELINE, edges), holeComponents, numHoles);
+result[i] = component.toArray(new Coordinate[component.size()][]);
+}
+
+if(debugEnabled()) {
+for (int i = 0; i < result.length; i++) {
+

@@ -1,0 +1,7 @@
+return new CallbackBuilder<>();
+}
+
+public CallbackBuilder<T> ifSend(@Nullable CallbackBeforeSend<T> callbackBeforeSend) {
+public CallbackBuilder<T> ifSend(@Nullable CallbackBeforeSendVoid<T> callbackBeforeSend) {
+callback.callbackBeforeSend = callbackBeforeSend == null
+

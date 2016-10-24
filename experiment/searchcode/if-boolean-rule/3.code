@@ -1,0 +1,11 @@
+for (RuleType ruleTypeObj : ruleTypes) {
+if (ruleTypeObj.getKey().equals(ruleTypeKey)) {
+ruleType = ruleTypeObj;
+}
+}
+return ruleType;
+}
+
+public void setAllowedRuleType(String ruleTypeKey, boolean value) {
+RuleType ruleType = getRuleType(ruleTypeKey);
+

@@ -1,0 +1,12 @@
+private void renderStage(float delta) {
+if (currentStage != null) {
+Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+currentStage.draw();
+currentStage.act(delta);
+}
+}
+
+@Override
+public void pause() {
+if (currentStage != null) {
+

@@ -1,0 +1,11 @@
+shiftBits = 0x00;
+intermediateBytes[intermediateIndex++] = (byte) (data.getByte(startIndex) &amp; 0x7F);
+} else if (maxPrecision == 28) {
+throw new UnsupportedOperationException(&quot;Dense types with max precision 38 and 28 are only supported&quot;);
+}
+
+int inputIndex = 1;
+boolean sign = false;
+
+if ((data.getByte(startIndex) &amp; 0x80) != 0) {
+

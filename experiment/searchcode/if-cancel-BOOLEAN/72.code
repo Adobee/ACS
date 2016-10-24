@@ -1,0 +1,15 @@
+this.tag = tag + UUID.randomUUID().toString();
+}
+
+
+
+public abstract void onStart();
+
+
+
+public abstract void onEnd(boolean success,ErrorMessage e);
+
+public final void cancel(){
+//NetUtil.getRequestManager().cancel(tag);
+if(cancelRequest!=null){
+

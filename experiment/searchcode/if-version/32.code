@@ -1,0 +1,10 @@
+int currentVersion = getVersion(object);
+int latestVersion = versions.size() - 1;
+
+if (currentVersion > latestVersion) {
+throw new IllegalStateException(&quot;object version &quot; + currentVersion + &quot; is greater than latest version &quot; + latestVersion);
+int latestVersion = versions.size() - 1;
+
+if (currentVersion == latestVersion) {
+return VersionCheckResult.UP_TO_DATE;
+

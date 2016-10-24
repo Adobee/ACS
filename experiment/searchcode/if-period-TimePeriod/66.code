@@ -1,0 +1,11 @@
+package ilarkesto.persistence.xstream;
+
+import ilarkesto.base.time.TimePeriod;
+
+import com.thoughtworks.xstream.converters.basic.AbstractBasicConverter;
+protected Object fromString(String str) {
+if (str == null || str.length() == 0) return null;
+return new TimePeriod(str);
+}
+}
+

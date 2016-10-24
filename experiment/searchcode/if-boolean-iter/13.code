@@ -1,0 +1,11 @@
+@Override
+public final boolean hasNext() {
+if (iter == null) iter = initialize();
+return iter.hasNext();
+}
+
+@Override
+public final E next() {
+if (iter == null) iter = initialize();
+return iter.next();
+

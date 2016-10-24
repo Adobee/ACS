@@ -1,0 +1,8 @@
+int mid = left + (right - left) / 2;
+if (target == A[mid] || target == A[left] || target == A[right]) {
+return true;
+}
+if (A[mid] < A[right]) {
+if (target > A[mid] &amp;&amp; target < A[right]) {
+left = mid + 1;
+

@@ -1,0 +1,7 @@
+* @return fragments each appended with &#39;/&#39; if not present, and concatenated together
+*/
+public static String slashed(String... fragments) {
+// Encode (anything that needs to be) in the path. Surprisingly this works.
+String encodedPath = new URI(null, null, slashed, null).getRawPath();
+// Strip leading slash. Omitting it is slightly more portable where URIs are being constructed.
+

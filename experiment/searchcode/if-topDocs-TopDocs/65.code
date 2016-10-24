@@ -1,0 +1,8 @@
+/*     */ public abstract class TopDocsCollector<T extends ScoreDoc> extends Collector
+/*     */ {
+/*  35 */   protected static final TopDocs EMPTY_TOPDOCS = new TopDocs(0, new ScoreDoc[0], (0.0F / 0.0F));
+/*  58 */       results[i] = ((ScoreDoc)this.pq.pop());
+/*     */   }
+/*     */
+/*     */   protected TopDocs newTopDocs(ScoreDoc[] results, int start)
+

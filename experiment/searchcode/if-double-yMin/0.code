@@ -1,0 +1,12 @@
+private double xmax;
+private double ymin;
+private double ymax;
+
+public DoubleBox(double xmin, double xmax, double ymin, double ymax) {
+public double ysize() {
+return ymax - ymin;
+}
+
+public boolean contains(double x, double y) {
+if (xmin <= x &amp;&amp; x <= xmax &amp;&amp; ymin <= y &amp;&amp; y <= ymax()) {
+

@@ -1,0 +1,8 @@
+String type=args[0];
+int num=Integer.parseInt(args[1]);
+if(num>0){
+if(type.equalsIgnoreCase(&quot;S&quot;)){//单线程计算
+int numberOfParts=Integer.parseInt(args[3]);
+if(poolSize>0 &amp;&amp; numberOfParts>0){
+count=new ConcurrentPrimeFinder(poolSize,numberOfParts).timeAndCompute(num);
+

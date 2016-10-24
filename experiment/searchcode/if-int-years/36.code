@@ -1,0 +1,9 @@
+Scanner in = new Scanner(System.in);
+int y = in.nextInt();
+int numPopes = in.nextInt();
+int[] years = new int[numPopes];
+for(int i=0; i<numPopes; i++){
+years[i] = in.nextInt();
+}
+int[] diffs = new int[numPopes-1];
+

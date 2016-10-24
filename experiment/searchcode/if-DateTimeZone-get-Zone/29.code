@@ -1,0 +1,6 @@
+Iterator iterator = DateTimeZone.getAvailableIDs().iterator();
+while (iterator.hasNext()) {
+DateTimeZone dateTimeZone = DateTimeZone.forID((String )iterator.next());
+System.out.println(interval.getStart() + &quot; &quot; + interval.getEnd());
+if ((dateTimeZone.isStandardOffset(interval.getStartMillis())&amp;&amp; !dateTimeZone.isStandardOffset(interval.getEndMillis())) ||
+

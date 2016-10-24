@@ -1,0 +1,8 @@
+int nrow = grid.length;
+if (nrow == 0) return 0;
+int ncol = grid[0].length;
+
+int[][] s = new int[nrow][ncol];
+for (int[] row : s)
+Arrays.fill(row, Integer.MAX_VALUE);
+

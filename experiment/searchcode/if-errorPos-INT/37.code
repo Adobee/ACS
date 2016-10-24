@@ -1,0 +1,10 @@
+System.out.println(&quot;Checking for transmission errors...&quot;);
+int error = getError();
+if(error == 0) {
+System.out.println(&quot;Data was transmitted without errors.&quot;);
+* @param errorpos position of the error
+*/
+public void correctError(int errorpos) {
+double prev, now;
+prev = received.get(errorpos-1, 0);
+

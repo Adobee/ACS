@@ -1,0 +1,10 @@
+public static double optimize( Vector<Example> data , WeightParameter param, float[] vparams, double lambda , double eps , int maxiter ) throws IOException {
+int m = 5, maxnfn = maxiter;
+double f = 0, xtol = 1e-30;
+boolean diagco = false;
+G[0] += 0;// (pr-y); // MUST BE ZERO ! I dont know how to handle bias term !
+
+double add = -y*wx + pr;
+
+if ( Double.isNaN(add) || Double.isInfinite(add) ) {
+

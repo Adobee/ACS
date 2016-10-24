@@ -1,0 +1,15 @@
+public class Color {
+float red, green, blue, alpha;
+
+public Color(int r, int g, int b) {
+this((float)r/255f, (float)g/255f, (float)b/255f, 1f);
+if(t>1) t=1;
+glColor4f(red*t, green*t, blue*t, alpha);
+}
+public void bind(float t, float a) {
+if(t<0) t=0;
+if(t>1) t=1;
+glColor4f(red*t, green*t, blue*t, a);
+}
+}
+

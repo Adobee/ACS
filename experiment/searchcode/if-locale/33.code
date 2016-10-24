@@ -1,0 +1,11 @@
+import java.util.Locale;
+
+/**
+* Created by ilona on 18.05.15.
+*/
+public class SessionLocaleManager {
+public Locale receiveLocale(HttpSession session) {
+String stringLocale = (String) session.getAttribute(&quot;Locale&quot;);
+Locale locale = Locale.getDefault();
+if (stringLocale != null) {
+

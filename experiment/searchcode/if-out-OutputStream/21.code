@@ -1,0 +1,12 @@
+public OutputInputStream(InputStream in, OutputStream out) {
+super(in);
+outputStream = out;
+}
+
+@Override
+public int read() throws IOException {
+public int read(byte[] b, int off, int len) throws IOException {
+int r = super.read(b, off, len);
+if (r > 0) {
+outputStream.write(b, off, r); // some Reader or Stream has some bug?
+

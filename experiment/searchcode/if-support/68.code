@@ -1,0 +1,10 @@
+public SupportMove(BoardState bst, Player p, TerritorySquare supportFrom, TerritorySquare supportOrig, TerritorySquare supportInto, Result result, RetreatState retreat) throws Exception{
+super(p, result, retreat);
+
+if(supportFrom == null || supportOrig == null || supportInto == null){
+throw new Exception(&quot;null arguments&quot;);
+}
+
+if(Bot.ASSERTS){
+supportFrom.board.assertCanSupportMove(bst, p, supportFrom, supportOrig, supportInto);
+

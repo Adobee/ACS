@@ -1,0 +1,5 @@
+public void beforeEncodeBegin(FacesContext context, DataReader dataReader) throws IOException {
+if (dataReader instanceof JsonReader) {
+JsonReader jsonReader = (JsonReader) dataReader;
+if (StringUtil.isEmpty(jsonReader.getIdProperty())) {
+

@@ -1,0 +1,11 @@
+import mx.inteligov.login.pojo.ResponseLogin;
+
+@Service(&quot;loginService&quot;)
+public class LoginService {
+
+public ResponseLogin autenticacion(String usuario,String password){
+ResponseLogin response = new ResponseLogin();
+if(usuario.equals(&quot;itzel@inteligov.mx&quot;)){
+if(password.equals(&quot;2015&quot;)){
+response.set_responseMsg(&quot;Autentificacion exitosa&quot;);
+

@@ -1,0 +1,12 @@
+package com.feng.parallel;
+
+public class StateThread extends Thread {
+private boolean canceled;
+public void run() {
+if(repeatMode) {
+while(!canceled) {
+runnable.run();
+}
+} else {
+runnable.run();
+

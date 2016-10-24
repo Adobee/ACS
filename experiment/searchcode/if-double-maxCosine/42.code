@@ -1,0 +1,7 @@
+RealVector axisV = closestAxis .normal() .toRealVector();
+double maxCosine = vector .dot( axisV ) / (vectorLength * axisV .length());
+if ( maxCosine < 0 ) {
+double cosine = vector .dot( axisV ) / (vectorLength * axisV .length());
+if ( cosine > maxCosine ) {
+maxCosine = cosine;
+

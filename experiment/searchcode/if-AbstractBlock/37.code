@@ -1,0 +1,14 @@
+*    Copyright (C) 2015 George Antony Papadakis (gpapadis@yahoo.gr)
+*/
+
+package MetaBlocking;
+
+import DataStructures.AbstractBlock;
+import DataStructures.BilateralBlock;
+super(description, scheme);
+}
+
+@Override
+public void applyProcessing(List<AbstractBlock> blocks) {
+getStatistics(blocks);
+

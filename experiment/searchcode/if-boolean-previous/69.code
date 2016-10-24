@@ -1,0 +1,6 @@
+boolean buttonWasOff = (bitValue &amp; previousState) == 0;
+boolean buttonIsOn = getRawButton(buttonNumber);
+
+if (buttonWasOff &amp;&amp; buttonIsOn) retValue = true;
+if (buttonIsOn) previousState = previousState | bitValue;
+

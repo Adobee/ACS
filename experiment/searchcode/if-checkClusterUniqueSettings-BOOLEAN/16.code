@@ -1,0 +1,5 @@
+public static void assertClusters(InternalTestCluster cluster0, InternalTestCluster cluster1, boolean checkClusterUniqueSettings) {
+assertThat(cluster0.numDataNodes(), equalTo(cluster1.numDataNodes()));
+if (checkClusterUniqueSettings) {
+assertThat(cluster0.getClusterName(), equalTo(cluster1.getClusterName()));
+

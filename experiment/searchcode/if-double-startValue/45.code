@@ -1,0 +1,6 @@
+public Margin animate(double pos, Margin startValue, Margin endValue) {
+startValue = createNullMarginIfNeeded(startValue);
+endValue = createNullMarginIfNeeded(endValue);
+if (startValue.equals(endValue)) {
+return startValue;
+

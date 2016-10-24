@@ -1,0 +1,11 @@
+maxInterval = maxValue;
+}
+public long getInterval() {
+synchronized (this) {
+if (interval == 0) {
+MyLogger.debug(String.format(&quot;Timer:interval:%d,passedSeconds:%d,isTime:%b&quot;, interval, passedSeconds, isTime));
+return isTime;
+}
+public void setInterval(long interval) {
+if (interval == getInterval()) return;
+

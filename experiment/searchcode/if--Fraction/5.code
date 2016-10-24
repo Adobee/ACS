@@ -1,0 +1,10 @@
+public class FractionTest {
+
+public static void test(Fraction f1, Fraction f2, String msg) {
+if (!f1.equals(f2)) {
+System.out.println(msg);
+}
+}
+
+public static void main(String[] args) {
+

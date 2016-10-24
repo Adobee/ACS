@@ -1,0 +1,13 @@
+public class Assert extends SeleniumTagSupport {
+protected boolean test;
+protected String failureExplanation;
+public void doTag(XMLOutput arg0) throws MissingAttributeException,
+JellyTagException {
+if(!test) {
+context.setVariable(&quot;outcome&quot;, Boolean.FALSE);
+context.setVariable(&quot;failureExplanation&quot;, failureExplanation);
+}
+}
+
+}
+

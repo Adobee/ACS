@@ -1,0 +1,13 @@
+private KeyboardIngameSupport keyboard;
+
+private List<ControllerSupport> controllerSupports = new ArrayList<ControllerSupport>();
+public void registerSupport(ControllerSupport support) {
+if (!controllerSupports.contains(support)) {
+controllerSupports.add(support);
+Controllers.addListener(support);
+}
+}
+
+
+}
+

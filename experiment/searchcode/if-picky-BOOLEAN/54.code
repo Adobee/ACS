@@ -1,0 +1,8 @@
+import sneer.foundation.lang.PickyConsumer;
+import sneer.foundation.lang.exceptions.Refusal;
+
+class ContactManagerImpl implements ContactManager {
+private void restore() {
+for (String nick : Store.restore())
+if (!isWeird(nick)) //Filter out those weird nicknames that appeared in the beginning.
+

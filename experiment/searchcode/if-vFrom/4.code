@@ -1,0 +1,12 @@
+public static int getRandomColor(double hFrom, double hTo, double sFrom,
+double sTo, double vFrom, double vTo) {
+double h;
+double s;
+double v;
+if (hFrom <= hTo) {
+s = Math.random() * (sTo - sFrom) + sFrom;
+} else {
+s = (Math.random() * ((sTo + 1) - sFrom) + sFrom) % 1;
+}
+if (vFrom <= vTo) {
+

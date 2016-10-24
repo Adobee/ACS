@@ -1,0 +1,9 @@
+import org.jfree.chart.renderer.category.CategoryItemRenderer;
+import org.jfree.chart.renderer.category.LineAndShapeRenderer;
+
+class CategoryStrokeAndPaintApplier implements SeriesStrokeAndPaintApplier
+public void setSeriesShape(final int seriesIndex, final java.awt.Shape shape, final JFreeChart targetChart)
+{
+CategoryItemRenderer renderer = targetChart.getCategoryPlot().getRenderer();
+if (renderer instanceof LineAndShapeRenderer)
+

@@ -1,0 +1,13 @@
+public static <T> Set<T> filter(Set<T> list, Filter<T> filter) {
+Set<T> newList = new HashSet<T>();
+for (T obj : list) {
+if (filter.evaluate(obj)) {
+for (T obj : list) {
+if (filter.evaluate(obj)) {
+newList.add(obj);
+}
+}
+return newList;
+}
+}
+

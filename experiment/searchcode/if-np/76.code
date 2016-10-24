@@ -1,0 +1,7 @@
+List<String> params = new ArrayList<String>();
+if(page.getTop() != 0) {
+whereSql.append(&quot; and np.top=&quot; + page.getTop());
+}
+if(page.ckName() > 0 ) {
+whereSql.append(&quot; and np.name like(?)&quot;);
+

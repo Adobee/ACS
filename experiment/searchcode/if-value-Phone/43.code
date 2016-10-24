@@ -1,0 +1,12 @@
+HOME(&quot;home&quot;);
+
+private final String value;
+
+private PhoneType(String value) {
+this.value = value;
+}
+
+public static PhoneType getPhoneType(String string) {
+for (PhoneType phoneType : PhoneType.values()) {
+if (phoneType.getValue().equals(string)) {
+

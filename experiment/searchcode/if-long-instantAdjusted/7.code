@@ -1,0 +1,9 @@
+* @return the human-readable long name in the specified locale
+*/
+public String getName(long instant, Locale locale) {
+if (locale == null) {
+locale = Locale.getDefault();
+} else if (offsetLocal >= 0) {
+long prev = previousTransition(instantAdjusted);
+if (prev < instantAdjusted) {
+

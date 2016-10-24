@@ -1,0 +1,10 @@
+public static Property[] normalize(Property[] properties) {
+if (!needsNormalization(properties))
+return properties;
+Map map = new HashMap();
+List result = new ArrayList();
+return (Property[]) result.toArray(new Property[result.size()]);
+}
+
+private static boolean needsNormalization(Property[] properties) {
+

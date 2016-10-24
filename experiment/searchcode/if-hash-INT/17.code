@@ -1,0 +1,13 @@
+hash.put(&quot;\n&quot;, 115);
+return hash;
+}
+
+
+public static LexicalStatesTable getInstance(){
+if (instance == null) {
+return instance;
+}
+
+public int getTableValue(int state, String key){
+HashMap row = table.get(state);
+

@@ -1,0 +1,7 @@
+public void testJavaAwtHeadless() {
+final boolean atLeastJava14 = SystemUtils.isJavaVersionAtLeast(JAVA_1_4);
+final String expectedStringValueWithDefault = System.getProperty(&quot;java.awt.headless&quot;, &quot;false&quot;);
+assertNotNull(expectedStringValueWithDefault);
+if (atLeastJava14) {
+final boolean expectedValue = Boolean.valueOf(expectedStringValue).booleanValue();
+

@@ -1,0 +1,13 @@
+package sudoku.arz.solver;
+
+import java.util.ArrayList;
+
+import sudoku.arz.domaine.Case;
+public class CandidateUniqueResolver  extends ResolverByCase {
+
+
+public boolean resolveAt(Grille grille, int i, int j) {
+
+boolean res = false;
+if (!grille.isCaseResolved(i, j)) {
+

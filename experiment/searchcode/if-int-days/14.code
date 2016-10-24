@@ -1,0 +1,8 @@
+SUNDAY(1), MONDAY(2), TUESDAY(3), WEDNESDAY(4), THURSDAY(5), FRIDAY(6), SATURDAY(7);
+
+private int value;
+private Days(int value){
+public static void printDays(Days days) {
+if (days.equals(Days.SUNDAY)) {
+System.out.println(&quot;SUNDAY belongs to &quot; + days.value());
+

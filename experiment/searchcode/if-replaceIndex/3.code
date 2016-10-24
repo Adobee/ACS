@@ -1,0 +1,8 @@
+nums[i] = sc.nextInt();
+}
+int replaceIndex = 1;
+int min = 1000000;
+int max = 0;
+for(int i = 0 ; i < n-2; i++){
+if(nums[i+2]-nums[i] < min){
+

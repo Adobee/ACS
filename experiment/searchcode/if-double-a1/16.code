@@ -1,0 +1,10 @@
+class QuarticDoubleWell extends Potential1D {
+
+private double a1 = -2;
+private double a2 = 2;
+private double v0 = 0.5;
+for (int i = 0; i < n; i++) {
+x = xmin + i * delta - center;
+if (x < center) {
+pot[i] = v0 * (x * x - a1 * a1) * (x * x - a1 * a1) / (a1 * a1 * a1 * a1);
+

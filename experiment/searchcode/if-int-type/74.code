@@ -1,0 +1,12 @@
+private int capType;
+private LeaveCapType(int capType) {
+this.capType = capType;
+}
+
+public int getVal() {
+return capType;
+}
+
+public static LeaveCapType getLeaveCapType(int capType) {
+if (capType == 0)
+

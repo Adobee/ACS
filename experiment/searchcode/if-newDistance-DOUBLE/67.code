@@ -1,0 +1,8 @@
+private void setVelocity(ArrayList<Zombie> zombies) {
+if(zombies.size() == 0)
+return;
+double distance = Math.sqrt((zombies.get(0).getCenterX() - x) * (zombies.get(0).getCenterX() - x) + (zombies.get(0).getCenterY() - y) * (zombies.get(0).getCenterY() - y));
+int index = 0;
+for(int i = 1; i < zombies.size(); i++) {
+double newDistance = Math.sqrt((zombies.get(i).getCenterX() - x) * (zombies.get(i).getCenterX() - x) + (zombies.get(i).getCenterY() - y) * (zombies.get(i).getCenterY() - y));
+

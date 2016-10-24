@@ -1,0 +1,11 @@
+int[] search (int[][] matrix, int val, int minrow, int maxrow, int mincol, int maxcol) {
+if (maxrow - minrow > 1 || maxcol - mincol > 1) {
+int midrow = (minrow+maxrow)/2, midcol = (mincol+maxcol)/2;
+temp = search(matrix, val, minrow, midrow, midcol+1, maxcol);
+return temp;
+}
+}
+else {
+if (matrix[minrow][mincol] == val)
+return new int[] {minrow, mincol};
+

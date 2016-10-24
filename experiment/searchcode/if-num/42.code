@@ -1,0 +1,10 @@
+public class Solution {
+public boolean isUgly(int num) {
+if(num <= 0) return false;
+while(num > 1 &amp;&amp; num%3 == 0) num=num/3;
+while(num > 1 &amp;&amp; num%5 == 0) num=num/5;
+if(num > 1) return false;
+else return true;
+}
+}
+

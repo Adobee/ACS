@@ -1,0 +1,16 @@
+public long getElapsedTimeSecs( )
+{
+long elapsed;
+if (this.running)
+{
+elapsed = ((System.currentTimeMillis() - this.startTime) / 1000);
+elapsed = ((this.stopTime - this.startTime) / 1000);
+}
+return elapsed;
+}
+
+public long getElapsedTimeMinutes( )
+{
+long elapsed;
+if (this.running)
+

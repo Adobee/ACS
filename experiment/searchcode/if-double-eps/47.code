@@ -1,0 +1,11 @@
+* Created by sugakandrey.
+*/
+public class DoublePrecision {
+
+public static int getPrecision(double eps) {
+if (Double.isNaN(eps) || Double.isInfinite(eps)) {
+return -1;
+}
+int precision = 1;
+while (eps * 10 < 1.) {
+

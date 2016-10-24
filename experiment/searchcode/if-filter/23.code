@@ -1,0 +1,12 @@
+package net.dougqh.functional;
+
+import java.util.Arrays;
+
+final class AndFilter<I> extends Filter<I> {
+for ( Filter<? super I> filter: this.filters ) {
+if ( ! filter.matches(value) ) {
+return false;
+}
+}
+return true;
+

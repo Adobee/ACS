@@ -1,0 +1,5 @@
+private static long appendTimeout(StringBuilder builder, long timeout, String format, long count) {
+if (timeout >= count) {
+builder.append(String.format(format, timeout / count));
+} else if (format.charAt(1) == &#39;0&#39;) {
+

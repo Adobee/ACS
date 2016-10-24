@@ -1,0 +1,11 @@
+public class NWeeksAverageStrategy implements Strategy {
+
+private int numberOfWeeks;
+
+public NWeeksAverageStrategy(int numberOfWeeks){
+int sum=0;
+if(history.size()>=numberOfWeeks){
+startIndex=history.size()-numberOfWeeks;
+}
+int weeksTaken=0;
+

@@ -1,0 +1,11 @@
+* Created by xgh on 2016/2/2.
+*/
+//判断一个图是否是二分图（二色问题），能否用两种颜色将所有顶点着色，使得任意一条边的两个端点的颜色都不相同。
+public class twoColor {
+private boolean[] marked;
+private boolean[] color;
+private boolean isTwoColorable=true;
+
+public twoColor(Graph G){
+marked=new boolean[G.V()];
+

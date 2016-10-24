@@ -1,0 +1,10 @@
+public PropTreeModel(TreeNode root) {
+super(root);
+}
+
+public PropNode getNodeForFile(File file) {
+return getNodeForFile((PropNode) getRoot(), file);
+}
+
+PropNode getNodeForFile(PropNode node, File file) {
+

@@ -1,0 +1,6 @@
+Offset lockOffset = ((BaselineCompiledMethod) compiledMethod).getLockAcquisitionOffset();
+if (instr.sGT(lockOffset)) { // we actually have the lock, so must unlock it.
+Object lock;
+if (BaselineCompilerImpl.isRegister(location)) {
+lock = Magic.addressAsObject(registers.getGPRs().get(location).toAddress());
+

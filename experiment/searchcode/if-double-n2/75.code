@@ -1,0 +1,13 @@
+public static Double[] TointToInt(Double n1,Double n2)
+{
+double a1=n1,a2=n2;
+if(n1!=(int)a1||n2!=(int)a2){
+int K3=(int)a1,K4=(int)a2,L=1;
+public static Double[] FM(Integer A1,Integer A2,Integer K,Integer B1,Integer B2)
+{/*
+[分数基本计算函数2.0]
+注：必须和ST函数一起使用
+*/
+double n1=0,n2=0;Double[] re=new Double[2];
+if(K==0){//A+B
+

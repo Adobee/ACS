@@ -1,0 +1,6 @@
+* If parameter value is &#39;true&#39; then the cache(s) are cleared, too.
+*/
+public void clear(boolean shouldClearCache) {
+super.clear(shouldClearCache);
+if (this.cumulativeUOWChangeSet != null) {
+

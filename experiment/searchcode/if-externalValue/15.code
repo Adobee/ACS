@@ -1,0 +1,10 @@
+GrandFinal(&quot;GF&quot;);
+
+private final String externalValue;
+
+private Round() {
+this.externalValue = &quot;R&quot; + (ordinal() + 1);
+for (Round round : values()) {
+if (round.externalValue.equals(value)) {
+return round;
+

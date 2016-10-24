@@ -1,0 +1,10 @@
+mCrop.set(r.mCrop);
+}
+
+@Override
+public boolean equals(FilterRepresentation rep) {
+if (!(rep instanceof FilterCropRepresentation)) {
+FilterCropRepresentation crop = (FilterCropRepresentation) rep;
+if (mCrop.bottom != crop.mCrop.bottom
+|| mCrop.left != crop.mCrop.left
+

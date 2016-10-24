@@ -1,0 +1,10 @@
+return parse(dateStr, DefaultFormate);
+}
+
+public static Date parse(String dateStr, String pattern) {
+SimpleDateFormat format = new SimpleDateFormat(pattern);
+if(StringUtils.isEmpty(dateStr)) return null;//yyyyMMdd
+String dateFormat = &quot;yyyy-MM-dd&quot;;
+if(dateStr.length() == 8) dateFormat = &quot;yyyyMMdd&quot;;
+if(dateStr.length() == 10) dateFormat = &quot;yyyy-MM-dd&quot;;
+

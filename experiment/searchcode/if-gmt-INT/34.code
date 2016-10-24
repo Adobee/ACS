@@ -1,0 +1,10 @@
+public static Map<String, String> getList() {
+if (list == null) {
+list = new ListOrderedMap();
+
+list.put(&quot;-12&quot;, &quot;(GMT -12:00) Eniwetok, Kwajalein&quot;);
+tz = TimeZone.getAvailableIDs(rawoffset.intValue())[0];
+} else {
+if (Integer.parseInt(gmt) > 0) {
+gmt = &quot;+&quot; + gmt;
+

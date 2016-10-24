@@ -1,0 +1,11 @@
+public void setRoundTwo(RaceRound newRound) { this.roundOne = newRound; }
+
+public RaceRoundOne() throws RoundAlreadyRaced {
+if(!rOneComplete) {
+throw new RoundAlreadyRaced();
+}
+}
+
+public RaceRoundTwo() throws RoundOneNotRaced {
+if(rOneComplete) {
+

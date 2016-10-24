@@ -1,0 +1,7 @@
+ItemStack[] stacks = new ItemStack[(int) Math.ceil(quantity / (double) mss)];
+
+for (int i = 0; i < stacks.length; ++i)
+ItemMeta meta = Bukkit.getItemFactory().getItemMeta(stacks[i].getType());
+if (this.displayName != null &amp;&amp; this.displayName.length() != 0)
+meta.setDisplayName(this.displayName);
+

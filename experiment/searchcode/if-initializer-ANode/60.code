@@ -1,0 +1,14 @@
+createNewEdge(aNode, anoNode);
+}
+}
+
+// keep only outs of right most child iff the child has outs
+/* if (target.getOuts().size() != 0) */{
+for (CFGNode aNode : outs) {
+if (!aNode.equals(branch)) {
+createNewEdge(aNode, branch);
+}
+}
+
+if (ins.size() == 0)
+

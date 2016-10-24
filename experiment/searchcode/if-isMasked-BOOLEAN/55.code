@@ -1,0 +1,9 @@
+public class WebSocketRequestImpl implements WebSocketRequest {
+
+private OpCode opCode;
+private boolean isMasked;
+private boolean isFinal;
+private Token token;
+
+WebSocketRequestImpl(List<String> protocols, String path, double version, OpCode opCode, boolean isMasked, byte[] maskingKey, boolean isFinal, long size, ReadableResource data, Token token) {
+

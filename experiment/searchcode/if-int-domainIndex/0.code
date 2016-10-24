@@ -1,0 +1,9 @@
+if(vertices==null)vertices = (T[]) Array.newInstance(
+sampleClass, problem.domains.length);
+if(domainIndex==null)
+domainIndex = new int[vertices.length];
+domainIndex[domainIndex.length-1] = domainIndex[domainIndex.length-1]+1;
+
+for (int i = 0; i < vertices.length; ++i) {
+if (domainIndex[i] >= problem.domains[i].size()) {
+

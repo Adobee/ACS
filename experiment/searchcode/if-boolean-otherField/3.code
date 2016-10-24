@@ -1,0 +1,12 @@
+throw new PieceNotInFieldException(piece, this);
+}
+}
+
+public boolean areAdjacentTo(Field otherField) {
+return Math.abs(this.distanceBetweenFile(otherField)) <= 1 &amp;&amp; Math.abs(this.distanceBetweenRank(otherField)) <= 1;
+public int distanceBetweenFile(Field otherField) {
+return otherField.file - this.file;
+}
+
+public boolean inSameRankAs(Field otherField) {
+

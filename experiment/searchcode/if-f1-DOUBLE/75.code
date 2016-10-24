@@ -1,0 +1,15 @@
+public Double resolve(Double f1, Double f2) {
+return f1 + f2;
+}
+},
+/**
+* Difference operator, represented by &amp;quot;-&amp;quot; symbol.
+@Override
+public Double resolve(Double f1, Double f2) {
+return f1 - f2;
+}
+
+},
+/**
+* Multiplication operator, represented by &amp;quot;*&amp;quot; symbol.
+

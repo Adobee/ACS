@@ -1,0 +1,9 @@
+boolean recoverFromStore(final IndexShard indexShard, final boolean indexShouldExists, DiscoveryNode localNode) {
+if (canRecover(indexShard)) {
+return false;
+
+}
+
+private boolean canRecover(IndexShard indexShard) {
+if (indexShard.state() == IndexShardState.CLOSED) {
+

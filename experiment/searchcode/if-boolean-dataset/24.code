@@ -1,0 +1,11 @@
+return new DecisionTreeClassifier(root);
+}
+
+private DTNode buildTree2(DTNode root, DataSet dataset) {
+if (dataset.isEmpty()) {
+throw new IllegalArgumentException(&quot;Dataset is empty&quot;);
+}
+
+if (checkStopCriteriaForDataset(dataset)) {
+String label = getMajorityLabel(dataset);
+

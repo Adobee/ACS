@@ -1,0 +1,10 @@
+ordineVTO.setBigliettiDaVisitaVTO(getBigliettiDaVisitaModelVTO(ordineModel.getBigliettiDaVisitaModel()));
+
+} else if (Eventi.valueOf(ordineModel.getEventiType()) == Eventi.WEB) {
+ordineVTO.setSitoWebModel(ordineModel.getSitoWebModel());
+ordineVTO.setConoscoCO2(ordineModel.getConoscoCO2Model());
+}
+
+if (ordineModel.getCouponModel() != null) {
+ordineVTO.setCouponModel(ordineModel.getCouponModel());
+

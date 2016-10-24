@@ -1,0 +1,7 @@
+boolean failsWithConnectTransportException = randomBoolean();
+Request request = new Request().masterNodeTimeout(TimeValue.timeValueSeconds(failsWithConnectTransportException ? 60 : 0));
+assertThat(capturedRequest.action, equalTo(&quot;testAction&quot;));
+
+if (failsWithConnectTransportException) {
+transport.handleRemoteError(capturedRequest.requestId, new ConnectTransportException(remoteNode, &quot;Fake error&quot;));
+

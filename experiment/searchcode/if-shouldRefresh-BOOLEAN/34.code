@@ -1,0 +1,13 @@
+public class ComentariosActivity extends BasicListActivity {
+
+private int		mealId;
+private boolean	shouldRefresh;
+
+@Override
+protected void onCreate(final Bundle savedInstanceState) {
+public void onResume() {
+super.onResume();
+if (this.shouldRefresh) {
+this.doRefresh();
+Log.i(&quot;Bandex&quot;, &quot;atualizou comentarios no resume&quot;);
+

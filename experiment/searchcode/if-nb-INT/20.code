@@ -1,0 +1,12 @@
+public String convertToRoman(String arabe) {
+int nb = Integer.parseInt(arabe);
+String retour = &quot;&quot;;
+
+HashMap <Integer, String> map = new HashMap<>();
+map.put(9, &quot;IX&quot;);
+map.put(10, &quot;X&quot;);
+
+while (nb > 0) {
+if (nb < 4 ) {
+retour = retour + &quot;I&quot;;
+

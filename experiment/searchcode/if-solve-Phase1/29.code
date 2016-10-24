@@ -1,0 +1,7 @@
+Arrays.fill(u, BigFraction.ONE);
+BigFraction[] bigC1 = pSolver
+.solve(new ArrayFieldVector<BigFraction>(u, false)).toArray();
+Arrays.fill(shiftedP[0], BigFraction.ZERO);
+FieldMatrix<BigFraction> bigMSupdate =
+pSolver.solve(new Array2DRowFieldMatrix<BigFraction>(shiftedP, false));
+

@@ -1,0 +1,11 @@
+* @return result - Contain the Estimate Detail document and warning/error message
+* @throws GatethreeObjectNotFoundException -if the Estimate Detail doesn&#39;t found
+*/
+Result<EstimateDetailSheetBean> findEstimateDetailSheetById(IntegerBean estimateDetailBean);
+* @return result - True if the equipMix is associate to at least one EstimateLine
+*/
+Result<Boolean> isLabourMixUsedByEstimateLine(IntegerBean labourMix);
+
+/**
+* Determine if the given equipment mix is used by an Estimate Line.
+

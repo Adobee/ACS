@@ -1,0 +1,8 @@
+private SqlWriter sqlWriter = null;
+private boolean isFileWriter = true;
+
+public GradeReportLineWriter(boolean isFileWriter) {
+this.isFileWriter = isFileWriter;
+if (this.isFileWriter) {
+this.fileWriter = new FileWriter();
+

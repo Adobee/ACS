@@ -1,0 +1,14 @@
+private static final long serialVersionUID = 1L;
+
+GamePanel[] gp;
+final int DEFAULT =0;
+private int currentStage;
+int time;
+private boolean showTime ;
+@Override
+public void action() {
+if(isStageChanged())
+switchTo(getStage());
+
+gp[currentStage].action();
+

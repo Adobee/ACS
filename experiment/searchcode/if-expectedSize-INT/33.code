@@ -1,0 +1,7 @@
+private final Transport transport;
+private final int expectedSize;
+
+public ClusterSizeCondition(Cache<?, ?> cache, int expectedSize) {
+this.expectedSize = expectedSize;
+transport = cache.getCacheManager().getTransport();
+

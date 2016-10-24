@@ -1,0 +1,5 @@
+* {@code null}.
+* @throws NoDataException if {@code imaginaryCharacter} is an
+* empty string.
+* @throws NullArgumentException if {@code format} is {@code null}.
+

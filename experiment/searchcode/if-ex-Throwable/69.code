@@ -1,0 +1,6 @@
+public static <T extends Exception> T wrap(Throwable ex, Class<T> expect) {
+ex = unwrap(ex);
+if (expect.isAssignableFrom(ex.getClass())) return (T) ex;
+public static Exception unwrap(Throwable ex, Map<Class<? extends Throwable>, Method> wrapperClasses) {
+if (wrapperClasses == null) wrapperClasses = new HashMap<Class<? extends Throwable>, Method>();
+

@@ -1,0 +1,15 @@
+* @return  scheduler service provider
+*/
+public static final <T> T getSchedulerServiceProvider(){
+
+if(scheduler == null) {
+&quot;META-INF/com.walmart.timer.SchedulerFactory&quot;);
+if(scheduler == null) {
+scheduler = new DefaultScheduler();
+}
+}
+
+return (T)scheduler;
+}
+}
+

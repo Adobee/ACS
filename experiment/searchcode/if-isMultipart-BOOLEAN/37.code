@@ -1,0 +1,7 @@
+public class CustomMultipartResolver extends CommonsMultipartResolver {
+
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+String url = request.getRequestURI();
+if(url.indexOf(CNotSpringMultipartResolver.UE_NOT_RESOLVER.getValue()) > 0){
+

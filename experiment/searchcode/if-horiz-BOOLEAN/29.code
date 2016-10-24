@@ -1,0 +1,10 @@
+protected Float prob_indoors;
+@JsonProperty
+protected double[][] cov_horiz;
+@JsonIgnore
+private boolean virtual; // virtual infos are not provided would be e.g. ones at non-reported time stamps
+// check that this meets the minimum required spec to be a valid DeviceState object
+@JsonIgnore
+public boolean isValid() {
+if (latitude == null || longitude == null || utc == null || accuracy_horiz == null)
+

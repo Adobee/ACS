@@ -1,0 +1,8 @@
+public boolean isSatisfiedBy(T t) {
+return ruleOne.isSatisfiedBy(t) &amp;&amp; ruleTwo.isSatisfiedBy(t);
+}
+
+@Override
+public String whyNotSatisfied(T t) {
+if(!ruleOne.isSatisfiedBy(t)){
+

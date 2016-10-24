@@ -1,0 +1,15 @@
+else if (useDouble(type))
+{
+validator = new DoubleValidator(min, max, null);
+}
+else if (useLong(type))
+{
+validator = new LongValidator(min, max, null);
+cache.put(key, validator);
+return validator;
+}
+
+private static boolean useLong(Class<?> type)
+{
+if ((type.equals(Integer.TYPE)) || (type.equals(Long.TYPE)) || (type.equals(Short.TYPE))) {
+

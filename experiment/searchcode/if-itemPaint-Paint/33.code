@@ -1,0 +1,10 @@
+Paint itemPaint = renderer.getItemPaint(row, column);
+
+Color c0, c1;
+
+if (itemPaint instanceof Color) {
+c1 = new Color(Math.max((int) (c0.getRed() * .75f), 0), Math.max((int) (c0.getGreen() * .75f), 0),
+Math.max((int) (c0.getBlue() * .75f), 0));
+}
+else if (itemPaint instanceof GradientPaint) {
+

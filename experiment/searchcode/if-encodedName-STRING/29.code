@@ -1,0 +1,9 @@
+import java.net.URLEncoder;
+
+/**
+* Internal representation of a field=value pair in a query string.
+* Prefixed with the &#39;Gp&#39; so that we don&#39;t confuse it with the JAX-RS QueryParam annotation.
+final String encodedName=URLEncoder.encode(field, &quot;UTF-8&quot;);
+if (value!=null) {
+final String encodedValue=URLEncoder.encode(value, &quot;UTF-8&quot;);
+

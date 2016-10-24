@@ -1,0 +1,14 @@
+public abstract class PredicatedQuery<I, E extends DomainEntity<I, E>> extends Query implements Predicate<E> {
+
+private boolean sorted;
+
+public PredicatedQuery(String name) {
+super(name);
+}
+
+public PredicatedQuery(String name, Object... params) {
+Comparator<I> idComparator = idComparator();
+if (idComparator != null)
+return idComparator;
+else {
+

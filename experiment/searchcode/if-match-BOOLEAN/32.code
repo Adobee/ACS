@@ -1,0 +1,8 @@
+public boolean matches(Media item) {
+boolean bMatch = true;
+if ( bMatch &amp;&amp; _isUpdated != null ) {
+bMatch = item.isUpdated() == _isUpdated;
+}
+if ( bMatch &amp;&amp; _keyword != null ) {
+bMatch = item.getDisplayTitle().toLowerCase().contains(_keyword);
+

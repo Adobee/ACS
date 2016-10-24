@@ -1,0 +1,8 @@
+Engine.GetResult get = indexShard.get(new Engine.Get(request.realtime(), uidTerm).version(request.version()).versionType(request.versionType()));
+
+Fields termVectorsByField = null;
+boolean docFromTranslog = get.source() != null;
+/* fetched from translog is treated as an artificial document */
+if (docFromTranslog) {
+request.doc(get.source().source, false);
+

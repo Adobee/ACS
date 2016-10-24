@@ -1,0 +1,10 @@
+public final int numPostPerPage=5;
+public long numPages=0;
+public long start=0;
+public long end=0;
+public long curpage=0;
+private HttpServletRequest req=null;
+query.setOrdering(&quot;date desc&quot;);
+query.setResult(&quot;count(this)&quot;);
+this.numPages=((Long) query.execute()).longValue();
+

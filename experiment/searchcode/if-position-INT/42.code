@@ -1,0 +1,13 @@
+int position;
+int[] x, w;
+
+public MaxThread(int[] x, int[] w, int position) {
+this.x = x;
+this.w = w;
+this.position = position;
+}
+
+public void run() {
+if (w[position] == 1) {
+System.out.println(&quot;Maximum \t\t  = &quot; + x[position]);
+

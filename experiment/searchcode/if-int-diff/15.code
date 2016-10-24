@@ -1,0 +1,13 @@
+public int getDiffType() {
+return diffType;
+}
+
+public void setDiffType(int diffType) {
+if (diffType != TYPE_DELETED &amp;&amp; diffType != TYPE_INSERTED)
++ diffStartIndex + &quot;到&quot; + (diffStartIndex + diffLength);
+}
+
+public int compareTo(TextDiff comp) {
+int result = 0;
+if(comp.getDiffStartIndex()==getDiffStartIndex()){
+

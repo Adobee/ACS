@@ -1,0 +1,12 @@
+public boolean findMatch(String s,String p,int s1,int s2){
+if(s.charAt(s1)==&#39;\0&#39;){
+if(p.charAt(s2)==&#39;\0&#39;)
+return true;
+if(s2+1<p.length()&amp;&amp;p.charAt(s2+1)==&#39;*&#39;)
+return false;
+}
+if(p.charAt(s2)==&#39;\0&#39;)
+return false;
+if(p.charAt(s2+1)!=&#39;*&#39;){
+return (s.charAt(s1)==p.charAt(s2)||(p.charAt(s2)==&#39;.&#39;&amp;&amp;s.charAt(s1)!=&#39;\0&#39;))&amp;&amp;findMatch(s,p,s1+1,s2+1);
+

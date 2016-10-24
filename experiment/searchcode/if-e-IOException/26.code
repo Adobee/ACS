@@ -1,0 +1,10 @@
+package com.google.appengine.tools.admin;
+
+import java.io.IOException;
+
+/**
+* An exception that occurs while communicating with remote servers.
+static RemoteIOException from(IOException ioe) {
+if (ioe instanceof RemoteIOException) {
+return (RemoteIOException) ioe;
+

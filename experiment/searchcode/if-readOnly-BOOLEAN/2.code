@@ -1,0 +1,19 @@
+import com.google.common.collect.Maps;
+
+public class TextFieldTag extends FieldTag {
+
+private Boolean readonly;
+
+@Override
+public String getOpenTemplate() {
+context.put(&quot;readonly&quot;, readonly);
+}
+return context;
+}
+
+public Boolean getReadonly() {
+return readonly;
+}
+
+public void setReadonly(Boolean readonly) {
+

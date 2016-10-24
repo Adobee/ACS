@@ -1,0 +1,7 @@
+return getSingleDayRosterByStaff(regularPeriods, overridePeriods);
+}
+
+public RosterPeriodView findByStaffAndDayBetween(Long staffId, LocalDate start, LocalDate end) {
+RosterPeriodView periodView = new RosterPeriodView(start, end, overridePeriods);
+if (periodView.getStaff() == null) {
+

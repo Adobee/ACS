@@ -1,0 +1,10 @@
+import cpw.mods.fml.common.ITickHandler;
+import cpw.mods.fml.common.TickType;
+
+public class ServerTickHandler implements ITickHandler {
+public void tickEnd(EnumSet<TickType> type, Object... tickData) {
+++this.nextMapUpdate;
+if (this.nextMapUpdate > 3) {
+this.nextMapUpdate = 0;
+HangableMaps.instance.executeQueue();
+

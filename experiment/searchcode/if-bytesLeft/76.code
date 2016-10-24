@@ -1,0 +1,9 @@
+/*  47 */     int bytesLeft = 16384 - this.bufferPosition;
+/*     */
+/*  49 */     if (bytesLeft >= length)
+/*     */     {
+/*  51 */       System.arraycopy(b, offset, this.buffer, this.bufferPosition, length);
+/*  75 */         bytesLeft = 16384 - this.bufferPosition;
+/*  76 */         if (bytesLeft == 0) {
+/*  77 */           flush();
+

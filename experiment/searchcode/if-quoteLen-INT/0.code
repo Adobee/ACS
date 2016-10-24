@@ -1,0 +1,11 @@
+case &#39;[&#39;:
+int quoteLen = text.indexOf(&#39;[&#39;, 1);
+assert quoteLen > 1;
+return text.substring(0, quoteLen);
+if (openQuote == null)
+return &quot;ERROR&quot;;
+
+final int quoteLen = openQuote.length();
+
+return text.substring(quoteLen, quoteLen + text.length() - 2 * quoteLen);
+

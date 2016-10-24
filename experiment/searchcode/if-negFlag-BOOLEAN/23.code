@@ -1,0 +1,8 @@
+public class Solution {
+public int divide(int dividend, int divisor) {
+if (divisor == 0)
+if (dividend == Integer.MIN_VALUE &amp;&amp; divisor == 1)
+return Integer.MIN_VALUE;
+
+boolean negFlag = ((dividend ^ divisor) >>> 31 == 1) ? true : false;
+

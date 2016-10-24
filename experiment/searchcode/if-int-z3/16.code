@@ -1,0 +1,10 @@
+private final int intValue;
+
+Z3_lbool(int v) {
+this.intValue = v;
+}
+
+public static final Z3_lbool fromInt(int v) {
+for (Z3_lbool k: values())
+if (k.intValue == v) return k;
+

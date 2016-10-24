@@ -1,0 +1,10 @@
+public class PowerOfTwo
+{
+public static void main(String args[])
+{
+PowerOfTwo pot = new PowerOfTwo();
+System.out.println(pot.isPowerOfTwo(1));
+}
+
+public boolean isPowerOfTwo(int n)
+

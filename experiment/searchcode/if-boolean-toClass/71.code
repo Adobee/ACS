@@ -1,0 +1,6 @@
+public <T>T adapt(final Object value, final Class<T> toClass) throws AdaptException {
+if(!isSet(value) &amp;&amp; toClass != null) {
+throw new AdaptException(&quot;Could not map unset value to %s&quot;, toClass);
+}
+if(toClass == null || toClass.isInstance(value)) {
+

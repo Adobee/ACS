@@ -1,0 +1,11 @@
+package generator;
+
+public class MandelbrotNumber {
+private double realPart;
+
+private double imaginaryPart;
+
+private int iterations;
+
+public MandelbrotNumber(double realPart, double imaginaryPart) {
+

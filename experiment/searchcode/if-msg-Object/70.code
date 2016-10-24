@@ -1,0 +1,9 @@
+public synchronized void senduserName(String s)
+{
+MsgUsernameRequest un = new MsgUsernameRequest(s);
+try {
+objectOut.writeObject(un);
+objectOut.flush();
+Message m = (Message) objectIn.readObject();
+if(m instanceof MsgUsernameWelcome)
+

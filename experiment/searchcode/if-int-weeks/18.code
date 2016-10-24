@@ -1,0 +1,13 @@
+private List<Week> weeks;
+
+public Schedule() {
+this.weeks = new ArrayList<Week>();
+}
+
+public Schedule(int numWeeks) {
+this.weeks = new ArrayList<Week>();
+double r = random.nextDouble();
+if(r < 0.75) {
+// Get two random weeks
+Week w1 = weeks.get(random.nextInt(weeks.size()));
+

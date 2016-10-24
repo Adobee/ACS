@@ -1,0 +1,10 @@
+ItemStack stack = null;
+Slot currentSlot = (Slot)inventorySlots.get(slotID);
+
+if(currentSlot != null &amp;&amp; currentSlot.getHasStack())
+{
+ItemStack slotStack = currentSlot.getStack();
+stack = slotStack.copy();
+
+if(ChargeUtils.canBeDischarged(slotStack))
+

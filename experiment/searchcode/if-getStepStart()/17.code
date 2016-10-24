@@ -1,0 +1,6 @@
+* @param scalRelativeTolerance allowed relative error
+* @exception MathIllegalArgumentException if order is 1 or less
+final boolean filteredNextIsLast = forward ? (filteredNextT >= finalTime) : (filteredNextT <= finalTime);
+if (filteredNextIsLast) {
+hNew = finalTime - getStepStart().getTime();
+

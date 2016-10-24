@@ -1,0 +1,14 @@
+this.actual = primero;
+
+}
+public void agregarAlfinal(Object dato){
+Nodo auxiliar = actual;
+this.actual=null;
+this.insertarEnPosicionActual(dato);
+this.actual = actual.nodoSiguiente();
+}
+public Object devolverActual(){
+return this.actual.devolverElemento();
+}
+//Inserta en la posicion actual y avanza en una posicion hacia la derecha.
+

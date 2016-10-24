@@ -1,0 +1,10 @@
+private int uniquePaths(int i, int j, int m, int n)
+{
+if(i == m &amp;&amp; j == n)
+return 1;
+int down = 0, right = 0;
+if(i < m)
+down = uniquePaths(i + 1, j, m, n);
+if(j < n)
+right = uniquePaths(i, j + 1, m, n);
+

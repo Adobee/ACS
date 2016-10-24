@@ -1,0 +1,8 @@
+true, request.version(), request.versionType(), FetchSourceContext.FETCH_SOURCE);
+
+if (!getResult.isExists()) {
+if (request.upsertRequest() == null &amp;&amp; !request.docAsUpsert()) {
+fetchedTTL = ctx.get(&quot;_ttl&quot;);
+if (fetchedTTL != null) {
+if (fetchedTTL instanceof Number) {
+

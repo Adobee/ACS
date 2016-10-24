@@ -1,0 +1,9 @@
+Rule rule = null;
+for (Rule ruleTemp: rules) {
+if (ruleId.equals(ruleTemp.getId())) {
+rule = ruleTemp;
+public VirtualHost delRule(String ruleId) {
+Rule rule = getRule(ruleId);
+if (rule!=null) {
+rules.remove(rule);
+

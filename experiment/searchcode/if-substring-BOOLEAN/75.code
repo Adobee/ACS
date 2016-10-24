@@ -1,0 +1,6 @@
+public class Solution {
+public boolean isMatch(String s, String p) {
+if (p.length() == 0) {
+return isMatch(s, p.substring(0, 2) + p.substring(4));
+} else if (p.charAt(2) == &#39;.&#39;) {
+

@@ -1,0 +1,6 @@
+ArrayList<Phone> phoneList = new ArrayList<Phone>();
+Cursor cursor = db.query(&quot;phone&quot;, null, &quot;type=?&quot;, new String[]{String.valueOf(phoneType)}, null, null, null);
+if(cursor.moveToFirst()) {
+do {
+Phone phone = new Phone();
+

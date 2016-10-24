@@ -1,0 +1,11 @@
+random = new Random();
+}
+
+public double randomizeBasePrice(double value) {
+
+double percent = random.nextInt(85) + 1;
+double newPrice = 0;
+
+if (random.nextBoolean()) {
+newPrice = decreaseByPercent(value, percent);
+

@@ -1,0 +1,4 @@
+public static double vanillaOptionValue(double s, double e, double ttm, double vol, double r, Direction direction) throws MathException {
+if (Direction.CALL.equals(direction))
+return s*N.cumulativeProbability(d1(s, e, ttm, vol, r)) - Math.exp(-r*ttm)*e*N.cumulativeProbability(d2(s, e, ttm, vol, r));
+

@@ -1,0 +1,8 @@
+// this stuff is because Math.atrig(arg) returns -pi/2<theta<pi/2 :
+// we want 0<phi<2pi
+double phi = 0.0;
+if (x>0) phi = Math.atan(y/x);
+public static double getTheta(double x, double y, double z) {
+double theta = 0.0;
+if (x==0 &amp; y==0 &amp; z==0) { return 0.0; }
+

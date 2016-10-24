@@ -1,0 +1,8 @@
+long lag = end.getTime() - begin.getTime();
+if (lag == 0L) return &quot;0ms&quot;;
+
+StringBuffer sb = new StringBuffer(&quot;&quot;);
+sb.insert(0, unitNames[i]).insert(0, lag % units[i]);
+lag /= units[i];
+if (lag == 0) break;
+

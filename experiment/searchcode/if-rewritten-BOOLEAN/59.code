@@ -1,0 +1,12 @@
+// This doesn&#39;t change the query because the OR operator is associative.
+boolean anyRewritten = false;
+boolean hasNotChild = false;
+boolean allClausesSingleToken = true;
+// Node need not be rewritten; return as-is
+return this;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (obj instanceof TextPatternOr) {
+

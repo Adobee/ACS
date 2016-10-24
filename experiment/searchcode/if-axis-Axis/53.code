@@ -1,0 +1,12 @@
+this.angle = angle;
+}
+
+public AngleAxis(Quaternion q){
+if(q.w > 1){
+q = q.unit();
+}
+this.angle = (float) (2 * Math.acos(q.w));
+float d = (float) Math.sqrt(1-q.w*q.w);
+if(d < 0.0001){
+this.axis = new Vector3(q.x, q.y, q.z);
+

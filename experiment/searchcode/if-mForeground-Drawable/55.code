@@ -1,0 +1,13 @@
+* @param drawable The Drawable to be drawn on top of the children.
+*/
+public void setForeground(Drawable drawable) {
+if (mForeground != drawable) {
+if (mForeground != null) {
+mForeground.setCallback(null);
+unscheduleDrawable(mForeground);
+}
+
+mForeground = drawable;
+
+if (drawable != null) {
+

@@ -1,0 +1,9 @@
+public GND(boolean backgroundIsSuperset) {
+super(true, backgroundIsSuperset);
+public void writeTo(StreamOutput out) throws IOException {
+out.writeBoolean(backgroundIsSuperset);
+}
+
+@Override
+public boolean equals(Object other) {
+

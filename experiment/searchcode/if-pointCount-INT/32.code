@@ -1,0 +1,11 @@
+private Point[] points=new Point [1000000];
+private static int pointcount=0;
+
+private Color colorArray[]=new Color[1000000];
+private static Color c=Color.BLACK;
+super.paintComponent(g);
+for (int i = 0;i<pointcount;i++)
+{
+g.setColor(colorArray[i]);
+g.fillOval(points[i].x-20,points[i].y-20, diameters[i], diameters[i]);
+

@@ -1,0 +1,8 @@
+parameterHandler.setParameters(preparedStatement);
+ResultSet resultSet=preparedStatement.executeQuery();
+if(resultSet.next()){
+page.setTotalNumber((resultSet.getLong(1)));
+}
+if(page.getCurrentPage() < 1)page.setCurrentPage(1);
+if(page.getCurrentPage()>page.getTotalPage()) page.setCurrentPage(page.getTotalPage());
+

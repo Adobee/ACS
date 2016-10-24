@@ -1,0 +1,12 @@
+private final int maxSize;
+
+public SafeStack(int maxSize) {
+this.maxSize = maxSize;
+}
+
+public synchronized void pushIfNotFull(E e) {
+if(super.capacity() < maxSize) {
+super.push(e);
+} else {
+//Full
+

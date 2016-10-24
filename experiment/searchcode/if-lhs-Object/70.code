@@ -1,0 +1,8 @@
+public class EqualsBuilder {
+
+private boolean isEquals = true;
+
+public static boolean reflectionEquals(Object lhs, Object rhs) {
+public static boolean reflectionEquals(Object lhs, Object rhs, String[] excludeFields) {
+return reflectionEquals(lhs, rhs, false, null, excludeFields);
+

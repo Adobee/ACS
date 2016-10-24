@@ -1,0 +1,10 @@
+public static Scoping forAnnotation(final Class<? extends Annotation> scopingAnnotation) {
+if (scopingAnnotation == Singleton.class
+scopedBindingBuilder.in(scopingAnnotation);
+}
+};
+}
+
+public static Scoping forInstance(final Scope scope) {
+if (scope == Scopes.SINGLETON) {
+

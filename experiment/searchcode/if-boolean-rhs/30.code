@@ -1,0 +1,7 @@
+public Expr diff(String x) {
+return new Difference(mLhs.diff(x), mRhs.diff(x));
+}
+public Boolean equals(Expr rhs) {
+if (!(rhs instanceof Difference)) {
+return false;
+

@@ -1,0 +1,9 @@
+private final boolean systemScope;
+
+public ScopeArtifactFilter(String scope) {
+if(Artifact.SCOPE_COMPILE.equals(scope)) {
+compileScope = true;
+runtimeScope = false;
+testScope = false;
+} else if(Artifact.SCOPE_RUNTIME.equals(scope)) {
+

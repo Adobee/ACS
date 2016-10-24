@@ -1,0 +1,6 @@
+public static List<CoerceMethod> getCoerceMethods(GenericType base) {
+if (base.isImmutableJavaWrapper())
+return getWrapperCoerceMethods(base);
+return getNumberWrapperCoerceMethods();
+else if (base == GenericType.getNonParameterizableInstance(Boolean.class))
+

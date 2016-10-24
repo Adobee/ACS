@@ -1,0 +1,13 @@
+return rd;
+}
+
+public long skip(long n) throws IOException {
+if(cipher == null){
+throw new IOException(&quot;STREAM IS CLOSED&quot;);
+}
+if(n <= 0){
+return 0;
+}
+long toSkip = n;
+if(buffer.length <= index){
+

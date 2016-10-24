@@ -1,0 +1,11 @@
+this.idString = idString;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+EmbeddedIdDummy that = (EmbeddedIdDummy) o;
+
+if (idInteger != that.idInteger) return false;
+if (!idString.equals(that.idString)) return false;
+

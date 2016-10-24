@@ -1,0 +1,11 @@
+// check orthogonality between function vector and jacobian columns
+double maxCosine = 0;
+if (cost != 0) {
+for (int j = 0; j < solvedCols; ++j) {
+work[j] = 0;
+}
+}
+if (nSing > 0) {
+for (int j = nSing - 1; j >= 0; --j) {
+int pj = permutation[j];
+

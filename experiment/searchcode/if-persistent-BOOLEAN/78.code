@@ -1,0 +1,6 @@
+@Override
+public boolean apply( PersistentRepr message ) {
+public void doDeleteMessagesTo( String processorId, final long toSequenceNr, boolean permanent ) {
+Map<Long, PersistentRepr> reprMap;
+if ( permanent ) {
+

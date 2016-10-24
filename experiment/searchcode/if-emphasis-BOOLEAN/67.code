@@ -1,0 +1,11 @@
+private Emphasis myEmphasis;
+private long myModeExtension;
+
+public Mp3Header(long syncValue) {
+if (!isValidSync(syncValue)) {
+myOriginal = ((syncValue >> 2) &amp; 0x01L) == 0x01L;
+myEmphasis = EMPHASIS_MAPPING.get(syncValue &amp; 0x02L);
+}
+
+public boolean isProtected() {
+

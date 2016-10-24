@@ -1,0 +1,11 @@
+public static char[][] revealCell(char[][]staticBoard, char[][] dynamicBoard, int row, int column){
+
+int cascR;
+int cascC;
+
+if(dynamicBoard[row][column] == &#39; &#39;){
+return dynamicBoard;
+}
+if(dynamicBoard[row][column] == &#39;x&#39;){
+dynamicBoard[row][column] = staticBoard[row][column];
+

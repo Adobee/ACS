@@ -1,0 +1,9 @@
+public TimedBreakCondition() {
+}
+
+public boolean waitFor(long maxTime) {
+for (Timer end = new Timer(maxTime); end.running(); ) {
+public boolean waitFor(long maxTime, long delay) {
+for (Timer end = new Timer(maxTime); end.running(); ) {
+if (this.shouldBreak())
+

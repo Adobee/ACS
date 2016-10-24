@@ -1,0 +1,14 @@
+public abstract boolean includes(String word);
+
+public static boolean isCategory(String word) {
+return word.startsWith(&quot;<&quot;) &amp;&amp; word.endsWith(&quot;>&quot;);
+public static Category categorize(String word, List<Category> categories) {
+for (Category category : categories) {
+if (category.includes(word)) {
+return category;
+}
+}
+return null;
+}
+}
+

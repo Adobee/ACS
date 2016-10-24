@@ -1,0 +1,9 @@
+IndexIterator iter = new StrideIterator(ta.getElementsPerItem(), ta.getShape());
+double[] data = (double[]) ta.getBuffer();
+
+for (int i = 0; iter.hasNext(); i++) {
+assertEquals(i, data[iter.index], 1e-5*i);
+int[] pos = iter.getPos();
+for (int i = 0; iter.hasNext(); i++) {
+assertEquals(i, ta.getDouble(pos), 1e-5*i);
+

@@ -1,0 +1,14 @@
+* @createTime 2012-6-15
+* @description 招呼信息实体类
+* @changeLog
+*/
+public class MessageData {
+private static MessageData current;
+public static MessageData current() {
+if (current == null) {
+current = new MessageData();
+}
+return current;
+}
+}
+

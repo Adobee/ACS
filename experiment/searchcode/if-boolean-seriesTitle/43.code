@@ -1,0 +1,10 @@
+@Entity
+public class ComicInfo {
+@Id String key;
+
+@Index String seriesTitle;
+@Index String issueTitle;
+public void setLocked(boolean locked) { this.locked = locked; }
+public void lock(String lockHolder) {
+if (!locked) {
+

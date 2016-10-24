@@ -1,0 +1,9 @@
+public void setBusy(boolean busy, JComponent comp) {
+if (busy) {
+if (scrollPane != null) {
+WidgetUtilities.setViewportView(scrollPane, label);
+} else {
+label.setBusy(false);
+if (scrollPane != null) {
+WidgetUtilities.setViewportView(scrollPane, comp);
+

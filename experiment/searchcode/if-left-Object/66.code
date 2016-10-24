@@ -1,0 +1,11 @@
+return (l_object != null) ? l_object : r_object;
+}
+
+public static Object execute(Object left, Object right) {
+if (!(NumHandle.isLongOrIntOrShortOrByte(left) &amp;&amp; NumHandle.isLongOrIntOrShortOrByte(right))) {
+return bool_object(left, right);
+}
+} else {
+if (isBool(right)) {
+return object_bool(left, right);
+

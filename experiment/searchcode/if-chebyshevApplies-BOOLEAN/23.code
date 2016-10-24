@@ -1,0 +1,7 @@
+final double sig = FastMath.sqrt(getNumericalVariance());
+final boolean chebyshevApplies;
+chebyshevApplies = !(Double.isInfinite(mu) || Double.isNaN(mu) ||
+if (upperBound == Double.POSITIVE_INFINITY) {
+if (chebyshevApplies) {
+upperBound = mu + sig * FastMath.sqrt(p / (1. - p));
+

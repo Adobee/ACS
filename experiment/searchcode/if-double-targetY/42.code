@@ -1,0 +1,13 @@
+if(angle>0 &amp;&amp; angle<90){
+if(k*(w-x)+y<h){
+Gdx.app.log(&quot;fire&quot;, &quot;1&quot;);
+targetX = w;
+targetY = (float) (k*(w-x)+y);
+targetX = (float) ((h-y)/k+x);
+targetY = h;
+}
+}
+else if(angle>90 &amp;&amp; angle<180){
+
+if(k*(0-x)+y<h){
+

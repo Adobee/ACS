@@ -1,0 +1,11 @@
+public BitmapProcessor(Bitmap bitmap, int maxWidth, int maxHeight) {
+this._bitmap = bitmap;
+
+this.resizeIfBiggerThan(maxWidth, maxHeight);
+//this.adjustHue(hue);
+}
+
+
+public Bitmap resizeIfBiggerThan(int maxWidth, int maxHeight) {
+int   originalWidth 	= this._bitmap.getWidth();
+

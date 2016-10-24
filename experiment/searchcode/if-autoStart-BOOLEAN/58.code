@@ -1,0 +1,9 @@
+import java.util.List;
+
+import org.bukkit.command.CommandSender;
+
+public class Autostart extends GameCommand {
+game.setAutostart(false);
+Chat.sendMessage(getMessage(Text.AUTOSTART_DISABLED, sender).put( &quot;game&quot;, game));
+} else if (args.get(0).equalsIgnoreCase(Text.TRUE.getMessage(sender).toString())) {
+

@@ -1,0 +1,14 @@
+EClass extensionClass = (EClass) ExtensionsPackage.eINSTANCE
+.getEClassifier(extensionName);
+if (extensionClass != null) {
+operations.addAll(extensionClass.getEAllOperations());
+extensionClass = (EClass) ePackage.getEClassifier(extensionName);
+if (extensionClass != null) {
+operations.addAll(extensionClass.getEAllOperations());
+}
+}
+
+return operations;
+}
+}
+

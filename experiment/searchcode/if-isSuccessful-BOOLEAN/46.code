@@ -1,0 +1,16 @@
+public void addBuild(Build build) {
+builds.add(build);
+}
+
+public boolean isSuccessful() {
+for (Build b: builds) {
+if (!b.isSuccessful()) {
+return false;
+}
+}
+return true;
+}
+
+
+}
+

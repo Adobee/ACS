@@ -1,0 +1,12 @@
+throw new IllegalArgumentException(ioe);
+}
+loadDataBuf();
+}
+
+private int loadDataBuf() {
+int reqSize = 0;
+int retSize = 0;
+
+if (fileSize < filePos + AQ_DR_READ_SIZE) {
+reqSize = fileSize - filePos;
+

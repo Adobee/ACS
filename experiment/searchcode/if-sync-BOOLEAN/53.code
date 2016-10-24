@@ -1,0 +1,12 @@
+public SyncStatus getSyncStatus() {
+return syncStatus;
+}
+
+@JsonIgnore
+public boolean isSynchronized() {
+return syncStatus == SyncStatus.SYNCHRONIZED;
+}
+
+@JsonIgnore
+public boolean isUnsynchronized() {
+

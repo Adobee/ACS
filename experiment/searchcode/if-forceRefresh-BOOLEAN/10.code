@@ -1,0 +1,10 @@
+private Context context;
+private String[] sections;
+
+private boolean forceRefresh;
+private int refreshedPosition;
+public Fragment getItem(int position) {
+Log.d(TAG, &quot;[getItem]&quot;);
+Fragment fragment = null;
+if(forceRefresh &amp;&amp; position==refreshedPosition) {
+

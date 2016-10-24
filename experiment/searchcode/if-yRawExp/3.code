@@ -1,0 +1,7 @@
+final long xRawMantissa = xBits &amp; MASK_DOUBLE_MANTISSA;
+
+if (yRawExp > 1085) {
+// y is either a very large integral value that does not fit in a long or it is a special number
+
+if ((yRawExp == 2047 &amp;&amp; yRawMantissa != 0) ||
+

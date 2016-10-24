@@ -1,0 +1,12 @@
+for (JsonMapperProvider jsonMapperProvider : jsonMapperFactories) {
+if (jsonMapperProvider.isFound()) {
+return true;
+for (JsonMapperProvider jsonMapperProvider : jsonMapperFactories) {
+if (jsonMapperProvider.isFound()) {
+return jsonMapperProvider.jsonMapper();
+}
+}
+return null;
+}
+}
+

@@ -1,0 +1,8 @@
+public int compare(Quad<A, B, C, D> a, Quad<A, B, C, D> b) {
+int cmp = cmpNull(a.fst, b.fst);
+
+if (cmp == 0 &amp;&amp; a.fst != null)
+cmp = a.fst.compareTo(b.fst);
+
+if (cmp == 0)
+

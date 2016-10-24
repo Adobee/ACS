@@ -1,0 +1,13 @@
+* 栈顶被pop()的话，我们可以通过minItem = nextMinItem[n+1];
+* 进行恢复minItem.
+*
+*/
+public class StackDemo {
+private int itemCount = 0;
+* @return
+*/
+public boolean push(Item item) {
+if(itemCount == maxSize){
+System.out.println(&quot;栈已满！&quot;);
+return false;
+

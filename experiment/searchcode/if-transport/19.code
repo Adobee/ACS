@@ -1,0 +1,6 @@
+public Transport initialize(String contentType, RPCPlusService service, HasTransport<?> hasTransport) {
+if (hasTransport instanceof HasJsonTransport) {
+return initialize(contentType, service, (HasJsonTransport) hasTransport);
+} else if (hasTransport instanceof HasTextTransport) {
+return initialize(contentType, service, (HasTextTransport) hasTransport);
+

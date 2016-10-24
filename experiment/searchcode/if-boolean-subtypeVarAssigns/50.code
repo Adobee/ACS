@@ -1,0 +1,9 @@
+* @return true if <code>type</code> is assignable to <code>toClass</code>.
+*/
+private static boolean isAssignable(Type type, Class<?> toClass) {
+return getTypeArguments((Class<?>) type, toClass, subtypeVarAssigns);
+}
+
+if (type instanceof ParameterizedType) {
+return getTypeArguments((ParameterizedType) type, toClass, subtypeVarAssigns);
+

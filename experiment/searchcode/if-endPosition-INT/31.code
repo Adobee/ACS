@@ -1,0 +1,11 @@
+public Bishop(int isDark, Position position)
+{
+super(isDark, position, &#39;b&#39;);
+
+}
+
+@Override
+public boolean moveIsValid(Position endPosition, ChessBoard chessBoard, ArrayList<Piece> darkPieces, ArrayList<Piece> lightPieces)
+boolean divideByZero = ((position.getColumn() - endPosition.getColumn()) == 0);
+if(!divideByZero &amp;&amp; Math.abs((position.getRow() - endPosition.getRow()) / (position.getColumn() - endPosition.getColumn())) < UPPER_BOUND
+

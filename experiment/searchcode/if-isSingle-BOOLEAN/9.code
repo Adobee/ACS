@@ -1,0 +1,13 @@
+public class Candy extends Sweetness implements Packable{ // candy , you can eat, you can pack
+private boolean isSingle = true;
+
+public Candy(Shape shape, int price, String label, Manufacturer manufacturer, Set<Ingridient> ingridients, boolean canBeSingle) {
+this.isSingle = canBeSingle;
+}
+
+public boolean isSingle() {
+return isSingle;
+}
+
+public void setIsSingle(boolean canBeSingle) {
+

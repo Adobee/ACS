@@ -1,0 +1,10 @@
+* non-empty, but never null. Values are null if the name has no corresponding &#39;=&#39; separator, or
+* empty, or non-empty.
+*/
+private final List<String> queryNamesAndValues;
+* may be null (for URLs with no query), empty (for URLs with an empty query) or non-empty (all
+* other URLs).
+*/
+public String encodedQuery() {
+if (queryNamesAndValues == null) return null; // No query.
+

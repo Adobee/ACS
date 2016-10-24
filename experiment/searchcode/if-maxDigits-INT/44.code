@@ -1,0 +1,14 @@
+this(0, sep);
+}
+
+public WbNumberFormatter(int maxDigits, char sep)
+{
+this(maxDigits, sep, false);
+}
+
+public WbNumberFormatter(int maxDigits, char sep, boolean fixedDigits)
+String display = value.toPlainString();
+if (maxDigits <= 0 &amp;&amp; decimalSeparator == &#39;.&#39;) return display; // no maximum given
+
+int scale = value.scale();
+

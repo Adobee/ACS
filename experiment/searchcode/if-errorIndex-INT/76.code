@@ -1,0 +1,10 @@
+private String errorType;
+private String errorindex;
+private Exception exp;
+private String message;
+private boolean isWriteLog =false;
+pterror = (PterrorBean)pterror.findFirstByWhere(&quot; where MOUDLEID = &#39;&quot;+moudleID+&quot;&#39; and ERRORTYPE= &#39;&quot;+errorType+&quot;&#39; and ERRORINDEX =&#39;&quot;+errorindex+&quot;&#39;&quot;);
+
+if (pterror != null)
+message = pterror.getMessage();
+

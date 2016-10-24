@@ -1,0 +1,7 @@
+public static Map<String, Object> create(Object... os) throws APIException {
+if (os.length % 2 != 0) {
+throw new APIException(&quot;Odd params number&quot;, null);
+}
+
+Map<String, Object> params = new HashMap<String, Object>();
+

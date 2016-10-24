@@ -1,0 +1,9 @@
+public abstract long daxpy(double alpha, RealMatrix x, RealMatrix y,
+int times);
+
+// dgemv: y <- alpha*op(A)*x + beta*y (NagC + intelMKL)
+double[] Adata = A.getData().getData();
+
+// 3) weighted average for each column
+RealMatrix weightAvgVector = new RealMatrix(1, A.columns(),
+

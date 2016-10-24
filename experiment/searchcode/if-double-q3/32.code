@@ -1,0 +1,11 @@
+package day12.q3.code;
+
+public class QuadraticSolver {
+
+public static double[] findRoots(double a, double b, double c) {
+
+double d = (b * b) - (4 * a * c);
+
+if (d < 0)
+throw new ImaginaryRootsException();
+

@@ -1,0 +1,13 @@
+UP, DOWN, LEFT, RIGHT
+}
+
+protected Direction dir;
+
+protected void move(double xa, double ya){
+if(xa != 0 &amp;&amp; ya != 0){
+if (ya > 0) dir = Direction.DOWN;
+if (ya < 0) dir = Direction.UP;
+
+while(xa != 0) {
+if(Math.abs(xa) > 1) {
+

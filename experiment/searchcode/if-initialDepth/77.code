@@ -1,0 +1,7 @@
+this(separator, DEFAULT_INITIAL_DEPTH);
+}
+
+public PathStack(String separator, int initialDepth) {
+this.separator = separator;
+entries = new String[ArrayUtil.oversize(initialDepth, NUM_BYTES_OBJECT_REF)];
+

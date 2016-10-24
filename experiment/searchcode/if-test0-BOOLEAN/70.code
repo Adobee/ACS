@@ -1,0 +1,10 @@
+import org.h2.test.db.Db.Prepared;
+import org.h2.util.New;
+
+/**
+* This test executes random SQL statements to test if optimizations are working
+deleteDb(getTestName());
+conn = getConnection(getTestName());
+if (!config.diskResult) {
+testIn();
+

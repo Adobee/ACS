@@ -1,0 +1,10 @@
+for(int iter = 0; iter < 1000; iter++)
+{
+double mid = (lo+hi)/2;
+if(can(mid, a, d, w)) lo = mid;
+double t1 = lo / a;
+double gone = .5 * t1 * t1 * a;
+if(lo > w)
+{
+gone += -a * .5 * (lo - w) / a * (lo - w) / a + lo * (lo - w) / a;
+

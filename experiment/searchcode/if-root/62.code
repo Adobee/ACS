@@ -1,0 +1,7 @@
+public Node rotateRight(Node root) {
+if(root.getLeft() ! = null) {
+root = root.getLeft();
+root.getParent().setParent(root);
+if(root.getRight() != null) {
+root.getParent().setLeft(root.getRight());
+

@@ -1,0 +1,9 @@
+public String longestCommonPrefix(String[] strs) {
+int strCount = strs.length;
+if(strCount == 0) return &quot;&quot;;
+
+byte[] prefix = strs[0].getBytes();
+int prefixLength = prefix.length;
+
+for(int i = 1; i < strCount; i++) {
+

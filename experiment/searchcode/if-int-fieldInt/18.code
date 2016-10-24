@@ -1,0 +1,15 @@
+import newtonERP.orm.fields.field.property.ErrorProperty;
+
+/**
+* Integer field in the entities.
+*
+* @author Jonatan Cloutier, r3hallejo
+*/
+public class FieldInt extends InnerField<Integer> {
+
+/**
+* Instantiates a new field int.
+*/
+public FieldInt() {
+super();
+

@@ -1,0 +1,9 @@
+package br.com.tororadar.utils;
+
+import java.time.LocalDateTime;
+
+public class VerificarHorarioCompra {
+//	public LocalDateTime horaInicio;
+public LocalDateTime horaFinal;
+public LocalDateTime horaAtual;
+

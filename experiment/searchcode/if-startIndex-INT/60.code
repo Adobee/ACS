@@ -1,0 +1,10 @@
+// Start typing your Java solution below
+// DO NOT write main() function
+if (s == null)
+{
+return false;
+}
+
+int startIndex = 0;
+int endIndex = s.length()-1;
+

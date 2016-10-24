@@ -1,0 +1,9 @@
+this.name = name;
+this.average = average;
+}
+
+public int hit() {
+double randomValue = rand.nextInt(1000);
+if (randomValue/1000.0 < average) {
+// Players have an equal change of getting a single, double, triple, or homerun
+

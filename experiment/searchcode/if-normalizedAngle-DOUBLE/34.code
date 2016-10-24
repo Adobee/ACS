@@ -1,0 +1,11 @@
+if (cachedAngle != angle) {
+double a = normalizedAngle() / 2 / Math.PI;
+if (a < 0) {
+a = 1 + a;
+}
+for (int i = 0; i < angles.length - 1; i++) {
+* @return the normalized angle between -PI and +PI.
+*/
+public double normalizedAngle() {
+return Math.atan2(Math.sin(angle), Math.cos(angle));
+

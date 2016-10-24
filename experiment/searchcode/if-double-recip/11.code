@@ -1,0 +1,9 @@
+void update(Vector3 gyro, Vector3 accel, Vector3 mag, double dt) {
+
+double recipNorm;
+double s0, s1, s2, s3;
+double q2 = state.y;
+double q3 = state.z;
+
+// Use IMU algorithm if magnetometer measurement invalid (avoids NaN in magnetometer normalisation)
+

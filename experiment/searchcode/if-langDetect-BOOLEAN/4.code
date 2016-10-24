@@ -1,0 +1,9 @@
+private static final String LANGDETECT_PROFILE_DIR = &quot;lib/langdetect/profiles&quot;;
+private static boolean langdetectInitialized = false;
+public static boolean isDutchLanguage(String text, String userLanguage) {
+if(!langdetectInitialized) {
+initialize();
+}
+
+Detector detector = null;
+

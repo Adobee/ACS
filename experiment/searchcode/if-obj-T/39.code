@@ -1,0 +1,10 @@
+this.obj_x += this.obj_dir * model.random(0,1);
+this.obj_y += this.dy;
+if(this.obj_x > this.model.width+this.obj_w) {
+// If ball hits paddle or back wall, reverse direction
+if(this.obj_x < 0) {
+this.obj_dir *= -1;
+}
+
+if(this.obj_x+this.obj_w > this.model.width) {
+

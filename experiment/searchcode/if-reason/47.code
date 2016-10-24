@@ -1,0 +1,11 @@
+import javax.inject.Inject;
+
+import org.springframework.stereotype.Service;
+
+import by.grodno.ss.rentacar.dataaccess.ReasonDao;
+public void saveOrUpdate(Reason reason) {
+if (reason.getId() == null) {
+reasonDao.insert(reason);
+} else {
+reasonDao.update(reason);
+

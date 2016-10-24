@@ -1,0 +1,12 @@
+Settings settings = Settings.of(context);
+
+HttpUrl baseUrl;
+if (BuildConfig.DEBUG &amp;&amp; settings.mockApi()) {
+return result;
+}
+
+
+@SuppressLint(&quot;NewApi&quot;)
+private static boolean isHttpError(Throwable error) {
+if (error instanceof HttpException) {
+

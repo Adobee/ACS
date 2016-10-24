@@ -1,0 +1,6 @@
+import org.elasticsearch.action.support.ActiveShardCount;
+import org.elasticsearch.action.support.IndicesOptions;
+ActionRequestValidationException validationException = shrinkIndexRequest == null ? null : shrinkIndexRequest.validate();
+if (sourceIndex == null) {
+validationException = addValidationError(&quot;source index is missing&quot;, validationException);
+

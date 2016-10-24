@@ -1,0 +1,8 @@
+private long entriesAddress;
+
+public NativeMemoryBackedLong2LongHashMap(Unsafe unsafe, long missingValue) {
+super(missingValue);
+final long key = unsafe.getLong(oldEntriesAddress + (i << 3));
+if (key != missingValue) {
+put(key, unsafe.getLong(oldEntriesAddress + ((i + 1) << 3)));
+

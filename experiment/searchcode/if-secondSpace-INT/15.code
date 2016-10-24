@@ -1,0 +1,7 @@
+public static boolean isSpacesExchangeble(Space firstSpace, Space secondSpace) {
+return firstSpace.getArea() == secondSpace.getArea() &amp;&amp; firstSpace.getRoomQuantity() == secondSpace.getRoomQuantity();
+public static void exchangeBuildingFloors(Building building1, int index1, Building building2, int index2) {
+Floor floor1 = building1.getFloor(index1), floor2 = building2.getFloor(index2);
+
+if (isFloorsExchangeble(floor1, floor2)) {
+

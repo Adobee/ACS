@@ -1,0 +1,10 @@
+public static Object convert(Object obj,Class<?> toType)
+{
+if(toType==null)
+throw new NullPointerException(&quot;To type cannot be null&quot;);
+
+if(obj==null)
+{
+if(toType.isPrimitive())
+return CCGUtility.getDefaultPrimitiveValue(toType);
+

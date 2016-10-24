@@ -1,0 +1,7 @@
+public DataType createDataType(int sqlType, String sqlTypeName) throws DataTypeException {
+DataType retValue = super.createDataType(sqlType, sqlTypeName);
+
+if (logger.isDebugEnabled()) {
+retValue = (sqlTypeName.equals(&quot;BLOB&quot;))? DataType.BLOB: retValue;
+retValue = (sqlTypeName.equals(&quot;JAVA_OBJECT&quot;))? DataType.forSqlType(Types.JAVA_OBJECT): retValue;
+

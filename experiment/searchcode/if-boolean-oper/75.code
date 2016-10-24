@@ -1,0 +1,17 @@
+isUndo = !orig.isUndo;
+oppOper = orig;
+}
+
+public Undoable getUndo() {
+if (oppOper == null)
+Editor.setSelectedItems(oppOper.slots);
+} else {
+Editor.performDup(slots);
+}
+}
+}
+private DArray slots;
+private boolean isUndo;
+private DupOper oppOper;
+}
+

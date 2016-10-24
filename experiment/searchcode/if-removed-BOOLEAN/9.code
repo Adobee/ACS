@@ -1,0 +1,13 @@
+private int removed;
+
+DiffStat(int added, int removed) {
+this.added = added;
+this.removed = removed;
+@Override
+public int hashCode() {
+return this.added ^ this.removed;
+}
+
+@Override
+public boolean equals(Object obj) {
+

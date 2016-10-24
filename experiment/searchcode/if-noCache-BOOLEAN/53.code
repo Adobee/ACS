@@ -1,0 +1,10 @@
+protected CacheControl cacheControl;
+
+public boolean accept(Class declaring, Method method)
+{
+if (declaring == null || method == null) return false;
+Cache methodCached = method.getAnnotation(Cache.class);
+NoCache noMethodCache = method.getAnnotation(NoCache.class);
+
+if (methodCached != null)
+

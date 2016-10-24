@@ -1,0 +1,8 @@
+public class QuickSortSolution {
+public int partition( int a[], int begin, int end ){
+int pivot = a[begin];
+public void quickSort( int a[], int begin, int end ){
+int pivotPos;
+if( begin < end ){
+pivotPos = partition(a, begin, end);
+

@@ -1,0 +1,8 @@
+package com.opendomotic.device.pi.i2c;
+
+import com.opendomotic.device.util.Percent;
+public Double getValue() throws Exception {
+Double value = super.getValue();
+if (value != null) {
+return percent.getPercent(value);
+

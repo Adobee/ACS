@@ -1,0 +1,17 @@
+public abstract class AbstractRound implements Round {
+
+private Round next;
+
+protected void runNext() {
+if (next != null) {
+next.start();
+}
+}
+
+public Round next(Round next) {
+this.next = next;
+return this.next;
+}
+
+}
+

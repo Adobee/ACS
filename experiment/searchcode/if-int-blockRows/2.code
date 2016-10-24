@@ -1,0 +1,8 @@
+public LocationUtilities(int [] location){
+if(location[0] != -1){
+StaticResources sr = StaticResources.getStaticResources();
+if (blockMap.getValue() > location[0]) break;
+}
+if(blockRows.get(latRow) < location[0]){
+latRow = blockRows.lastKey();
+

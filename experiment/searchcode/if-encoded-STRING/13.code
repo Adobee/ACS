@@ -1,0 +1,8 @@
+public void write(DataOutput out) throws IOException {
+out.writeDouble(encodedValue);
+if(encodedGoods==null){
+int n=in.readInt();
+if(n>0){
+encodedGoods = new long[n];
+for (int j = 0; j < encodedGoods.length; j++) {
+

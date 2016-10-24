@@ -1,0 +1,8 @@
+int mxdif = 0, l = 0, r = 0, minpos = 0; //mxlen = r - l + 1
+
+for (int i = 1, t; i < v.length; ++i) {
+if (v[i] <= v[minpos]) minpos = i;
+for (int i = v.length - 2, t; i >= 0; --i) {
+if (v[i] <= v[minpos]) minpos = i;
+if ((t = v[i] - v[minpos]) > mxdif || (t == mxdif &amp;&amp; minpos - i < r - l)) {
+

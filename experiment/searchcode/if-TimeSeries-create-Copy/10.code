@@ -1,0 +1,8 @@
+private TimeseriesData generalize(TimeseriesData timeseries) throws GeneralizerException {
+TimeseriesValue[] originalValues = timeseries.getValues();
+if (originalValues.length < 3 || toleranceValue <= 0) {
+return timeseries;
+}
+
+if (maxEntries != -1 &amp;&amp; originalValues.length > maxEntries) {
+

@@ -1,0 +1,10 @@
+switch (rotate) {
+
+case 0:
+if (check(piece[3], position.x, position.y, ban)) {
+rotate = 3;
+return true;
+}
+else if (check(piece[3], position.x + 1, position.y, ban)) {
+position.x += 1;
+

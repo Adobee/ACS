@@ -1,0 +1,10 @@
+nFactorial = nFactorial * (double)i;
+}
+
+double term = Math.pow(x, (double)n)/nFactorial;
+
+if((!negative &amp;&amp; term < 0.0000001) || (negative &amp;&amp; term > 1000000)){
+double computerResult = Math.pow(Math.E, x);
+double absoluteError = Math.abs(result - computerResult);
+double relativeError = absoluteError / Math.abs(computerResult);
+

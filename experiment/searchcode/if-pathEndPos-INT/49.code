@@ -1,0 +1,7 @@
+synchronized (channel) {
+controller.dispatchRequest(new Request(method, resource, content), channel);
+if (channel.getResponse() == null) {
+this.params = new HashMap<String, String>();
+int pathEndPos = uri.indexOf(&#39;?&#39;);
+if (pathEndPos < 0) {
+

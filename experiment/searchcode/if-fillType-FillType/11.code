@@ -1,0 +1,8 @@
+// performance: pre-compute scaled image or tiles
+if (fillType == FillType.SCALE || fillType == FillType.TILE) {
+int sw0 = scaled == null ? -1 : scaled.getWidth(null);
+int sh0 = scaled == null ? -1 : scaled.getHeight(null);
+int sw, sh;
+if (fillType == FillType.SCALE) {
+boolean useWidth = cw * h > ch * w;
+

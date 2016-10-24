@@ -1,0 +1,12 @@
+* @return hyperbolic cosine of x
+*/
+public static double cosh(double x) {
+if (x != x) {
+return x;
+if (x < -20) {
+return exp(-x)/2.0;
+}
+
+double hiPrec[] = new double[2];
+if (x < 0.0) {
+

@@ -1,0 +1,10 @@
+this.max = max;
+}
+
+/** 由x,x指定的闭区间，[x，x] */
+public DoubleInterval(double x) {
+if (Double.isNaN(x)) {
+throw new RuntimeException(&quot;DoubleInterval(min,max):min and max must not be NaN&quot;);
+}
+if ((Double.NEGATIVE_INFINITY < x) &amp;&amp; (x < Double.POSITIVE_INFINITY)) {
+

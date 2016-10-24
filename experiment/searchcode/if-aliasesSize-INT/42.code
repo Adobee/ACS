@@ -1,0 +1,8 @@
+int typesSize = in.readVInt();
+if (typesSize > 0) {
+types = new String[typesSize];
+for (int i = 0; i < typesSize; i++) {
+int aliasesSize = in.readVInt();
+if (aliasesSize > 0) {
+filteringAliases = new String[aliasesSize];
+

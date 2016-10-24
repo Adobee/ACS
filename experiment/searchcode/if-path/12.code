@@ -1,0 +1,13 @@
+public PathBuilder addAtIndex(Integer atIndex) {
+addPath(new Path(null, atIndex));
+return this;
+}
+
+void addPath(Path path) {
+if (this.path == null) {
+this.path = path;
+}
+
+if (lastPath != null) {
+lastPath.addNext(path);
+

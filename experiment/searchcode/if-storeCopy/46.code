@@ -1,0 +1,7 @@
+// remove if
+store.addAll(testData);
+Assert.assertEquals(2, store.size());
+store.removeIf(s -> testDataTwo.equals(s));
+Assert.assertEquals(1, store.size());
+Assert.assertTrue(store.contains(testDataOne));
+

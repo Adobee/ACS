@@ -1,0 +1,7 @@
+public void deleteUserFocus(List<UserFocus> list) {
+if (list != null) {
+for (UserFocus userFocus : list) {
+StringBuffer hql = new StringBuffer(&quot; from UserFocus where focus.focusType = 1 and focus.status = 1 &quot;);
+if (!StringUtil.isNullOrEmpty(user)) {
+hql.append(&quot; and user = &#39;&quot;).append(user).append(&quot;&#39;&quot;);
+

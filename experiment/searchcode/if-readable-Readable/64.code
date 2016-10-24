@@ -1,0 +1,9 @@
+public class JsonReadableFactories {
+
+private final static Map<Class<? extends JsonReadable>,JsonReadableFactory> factories = new HashMap<Class<? extends JsonReadable>,JsonReadableFactory>();
+public static <T extends JsonReadable> JsonReadableFactory getFactory(Class<T> clazz){
+
+JsonReadableFactory<T> factory = factories.get(clazz);
+if(factory == null)
+try {
+

@@ -1,0 +1,13 @@
+public double getCandleWidth() {
+return this.candleWidth;
+}
+
+
+public void setCandleWidth(double width) {
+if (width != this.candleWidth) {
+double yyClose = rangeAxis.valueToJava2D(yClose, dataArea, edge);
+
+double volumeWidth;
+double stickWidth;
+if (this.candleWidth > 0) {
+

@@ -1,0 +1,6 @@
+public IteractionHasDimProgramId(int iteractionIdIteraction, int dimProgramIdDimProgram) {
+this.iteractionIdIteraction = iteractionIdIteraction;
+this.iteractionIdIteraction = iteractionIdIteraction;
+}
+public int getDimProgramIdDimProgram() {
+

@@ -1,0 +1,7 @@
+System.out.print(&quot;Please enter the sample size: &quot;);
+int sampleSize = in.nextInt();
+checkIntInput(sampleSize);
+
+int trialAmount = 4;
+int[][] data = new int[trialAmount][sampleSize]; //creates an array (length 4) of arrays (of length sampleSize)
+

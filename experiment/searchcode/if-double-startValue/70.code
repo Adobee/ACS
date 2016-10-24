@@ -1,0 +1,6 @@
+public Transition(double startValue, double endValue, double duration, double startSpeed, type type) {
+s = startValue;
+public double get(double time) {
+if(time >= d) return e;
+//System.out.println(&quot;time:&quot;+time+&quot; start: &quot;+s+&quot; end:&quot;+e+&quot;duration: &quot;+d+&quot;speed: &quot;+getSpeed(time)+&quot; type:&quot;+t);
+

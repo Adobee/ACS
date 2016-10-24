@@ -1,0 +1,12 @@
+package com.aolchik.tdd.simple;
+
+public abstract class CityTemperature {
+
+abstract int get(int day);
+
+public int minimum() {
+int day = INITIAL_DAY;
+int min = get(day);
+day++;
+while(day <= END_DAY) {
+

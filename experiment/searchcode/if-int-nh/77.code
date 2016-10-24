@@ -1,0 +1,8 @@
+private void dilate(ByteProcessor ip, int[][] H) {
+if (H == null) {
+IJ.error(&quot;no structuring element&quot;);
+return;
+for (int j = 0; j < H.length; j++) {
+for (int i = 0; i < H[j].length; i++) {
+if (H[j][i] > 0) { // this element is set
+

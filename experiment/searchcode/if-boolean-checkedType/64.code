@@ -1,0 +1,5 @@
+TypeBinding expressionType = this.expression.resolveType(scope);
+TypeBinding checkedType = this.type.resolveType(scope, true /* check bounds*/);
+if (expressionType != null &amp;&amp; checkedType != null &amp;&amp; this.type.hasNullTypeAnnotation()) {
+// don&#39;t complain if the entire operation is redundant anyway
+

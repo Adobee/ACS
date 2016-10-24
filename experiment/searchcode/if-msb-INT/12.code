@@ -1,0 +1,12 @@
+public static String read(Buffer b, int len) {
+int pos = 0;
+int msb = -1;
+
+for (int n = 0; n < len; n++) {
+int c = b.read();
+int lsb = c >> 4 &amp; 0xF;
+
+if (msb == -1) {
+if (lsb < 13) {
+buffer[pos++] = CHAR_TABLE[lsb];
+

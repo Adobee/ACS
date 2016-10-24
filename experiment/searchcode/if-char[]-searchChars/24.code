@@ -1,0 +1,13 @@
+eq = false;
+}
+i++;
+}
+}
+return eq;
+}
+
+public static boolean containsAny(CharSequence cs, CharSequence searchChars) {
+return true;
+}
+if (i < csLast &amp;&amp; searchChars[j + 1] == cs.charAt(i + 1)) {
+

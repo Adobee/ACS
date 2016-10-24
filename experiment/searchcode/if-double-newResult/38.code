@@ -1,0 +1,8 @@
+public boolean equals(Object obj) {
+if (!(obj instanceof Result)) {
+return false;
+}
+Result newResult = (Result) obj;
+if (newResult.getSlope() == getSlope()) {
+if (newResult.getOffset() == getOffset()) {
+

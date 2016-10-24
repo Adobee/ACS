@@ -1,0 +1,11 @@
+* You should have received a copy of the GNU General Public License
+* along with Baratine; if not, write to the
+*
+*   Free Software Foundation, Inc.
+Function<Field,FieldVault<?>> fun = _fieldTypeMap.get(field.getType());
+
+if (fun != null) {
+return fun.apply(field);
+}
+else {
+

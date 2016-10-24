@@ -1,0 +1,12 @@
+import org.json.JSONObject;
+
+public class Line extends Node {
+
+private boolean isVertical;
+
+public Line() {
+super();
+public void setAttributes(JSONObject json) {
+super.setAttributes(json);
+if(json.opt(&quot;isVertical&quot;) == null){
+

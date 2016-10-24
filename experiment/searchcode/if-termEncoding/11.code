@@ -1,0 +1,7 @@
+if (term == null) {
+return null;
+}
+if (termEncoding == GeoPointField.TermEncoding.PREFIX) {
+return GeoEncodingUtils.prefixCodedToGeoCoded(term);
+} else if (termEncoding == GeoPointField.TermEncoding.NUMERIC) {
+

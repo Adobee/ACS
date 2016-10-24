@@ -1,0 +1,10 @@
+class CMap1 implements CMap {
+public int span(int row, int column) {
+if( column == 0 || column == 9  )
+return 2;
+return 1;
+}
+
+public int visibleCell(int row, int column) {
+if( ( ( row >= 0 ) &amp;&amp; ( row < 2  ) ) &amp;&amp; ( column == 0 || column == 9 ) )
+

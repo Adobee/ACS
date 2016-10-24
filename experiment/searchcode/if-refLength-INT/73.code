@@ -1,0 +1,8 @@
+public int numMismatches;      // From seq-var, from display-seq-var TSV file
+public int refLength;          // Calculated, should equal queryLength
+public int readLength;         // Calculated, should equal queryLength
+readLength = maxReadIndex - minReadIndex + numDeletions + 1;
+}
+public void observe(int refPosition, int readIndex, char fromBase, char toBase) {
+if (toBase == &#39;-&#39;) {
+

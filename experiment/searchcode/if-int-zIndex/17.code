@@ -1,0 +1,12 @@
+public int compareTo(Drawable o) {
+if(0 < o.zindex()) return -1;
+if(0 > o.zindex()) return 1;
+return 0;
+}
+
+@Override
+public void zindex(int zIndex) {}
+
+@Override
+public int zindex() { return 0; }
+

@@ -1,0 +1,9 @@
+
+public class Solution {
+public boolean isUgly(int num) {
+if (num == 0) {
+return false;
+}
+if (num == 1) {
+return true;
+

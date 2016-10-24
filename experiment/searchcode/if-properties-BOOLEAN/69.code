@@ -1,0 +1,9 @@
+public void addProperties(String key, String value) throws PargresException {
+if(properties.containsKey(key))
+throw new PargresException(&quot;Table already in catalog&quot;);
+properties.put(key,value);
+}
+
+public boolean remove(String arg0) {
+if(properties.containsKey(arg0)) {
+

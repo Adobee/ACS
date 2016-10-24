@@ -1,0 +1,7 @@
+for (Strategy singleStrategy : strategies) {
+if (singleStrategy.getType().equals(strategy.getType()) &amp;&amp; singleStrategy.getName().equals(strategy.getName())) {
+public void updateStrategy(Strategy strategy) throws StrategyNotFoundException, DuplicateStrategyException {
+Strategy strategyToUpdate = getStrategy(strategy.getId());
+
+if (strategyToUpdate.getType().equals(strategy.getType()) &amp;&amp; strategyToUpdate.getName().equals(strategy.getName())) {
+

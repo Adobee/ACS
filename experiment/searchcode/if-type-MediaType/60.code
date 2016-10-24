@@ -1,0 +1,11 @@
+import java.lang.reflect.Type;
+
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.ext.MessageBodyWriter;
+
+public abstract class AbstractMessageBodyWriter<T> implements MessageBodyWriter<T> {
+private final Class<T> clazz;
+private final MediaType mediaType;
+
+public AbstractMessageBodyWriter(Class<T> clazz, MediaType mediaType) {
+

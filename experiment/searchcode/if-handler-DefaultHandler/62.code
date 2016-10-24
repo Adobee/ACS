@@ -1,0 +1,8 @@
+throws SAXException {
+DefaultHandler handler = getCurrentHandler();
+if (handler != this) {
+public DefaultHandler getCurrentHandler() {
+DefaultHandler result = this;
+if (this.subHandlers != null) {
+if (this.subHandlers.size() > 0) {
+

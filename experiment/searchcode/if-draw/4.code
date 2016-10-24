@@ -1,0 +1,15 @@
+public static Draw getDrawService(String serviceName){
+Draw draw = null;
+
+if(&quot;Zigzag&quot;.equals(serviceName)){
+draw= zigzagDrawImpl;
+}
+else if(&quot;Random&quot;.equals(serviceName)){
+draw = randomDrawImpl;
+}
+
+return draw;
+}
+
+}
+

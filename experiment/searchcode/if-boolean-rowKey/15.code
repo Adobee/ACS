@@ -1,0 +1,9 @@
+case KeyEvent.VK_ESCAPE:
+if (!shiftPressed)
+rowKey[0] &amp;= KEY_PRESSED_BIT0; // Caps Shift
+private boolean pressedKeyChar(char keyChar) {
+boolean done = true;
+
+if (shiftPressed) {
+rowKey[0] |= KEY_RELEASED_BIT0; // Caps Shift
+

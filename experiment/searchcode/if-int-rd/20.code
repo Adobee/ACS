@@ -1,0 +1,8 @@
+final static void rankData(RankList rankList, IoBuffer buf) {
+rankList.setRecentIndex(buf.getInt());
+if (buf.getBoolean()) {
+rd.setRoleName(buf.getString());
+rd.setAccountId(buf.getInt());
+rd.setSectId(buf.getLong());
+rd.setLevel(buf.getShort());
+

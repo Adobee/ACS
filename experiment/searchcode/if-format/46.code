@@ -1,0 +1,8 @@
+public synchronized static ImageFormat getImageFormat(String id) {
+if (imageFormatMap == null) {
+imageFormatMap.put(imageFormat.getId(), imageFormat);
+}
+}
+ImageFormat format = imageFormatMap.get(id);
+if (format == null) {
+

@@ -1,0 +1,9 @@
+public class CassandraGetOperation<T extends CassandraBackedDefinition> extends CassandraOperation<T, Boolean, Map<String, Entity<T>>> implements PrefetchableOperation<T> {
+public CassandraGetOperation(CassandraBackedEntityManager<T> manager, Transaction transaction, List<String> keys) {
+super(manager, transaction);
+this.keys = keys;
+}
+
+@Override
+protected Triple<Boolean, Boolean, Map<String, Entity<T>>> op() {
+

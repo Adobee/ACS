@@ -1,0 +1,8 @@
+int numberOfCrossPoints = (int) Math.round(numberOfVariables * 0.1);
+
+List<Integer> crossoverPoints = new ArrayList<>(numberOfCrossPoints);
+
+for (int i = 0; i < numberOfCrossPoints; i++) {
+int crosspoint = randomGenerator.nextInt(0, numberOfVariables - 1);
+if (!crossoverPoints.contains(crosspoint)) {
+

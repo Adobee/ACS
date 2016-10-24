@@ -1,0 +1,12 @@
+GUILDLEADER 		(100);
+
+public final int rank;
+
+private GuildRank(int rank) {
+this.rank = rank;
+}
+
+public static GuildRank valueOf(int rank)  {
+for ( GuildRank gr : GuildRank.values() ) {
+if ( gr.rank == rank )
+

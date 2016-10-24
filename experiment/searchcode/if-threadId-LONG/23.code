@@ -1,0 +1,8 @@
+* @param threadId
+* @param m
+*/
+public void processEnter(long eventId, long threadId, MethodInfo m) {
+CallStack stack = callstacks.get(threadId);
+if (stack == null) {
+stack = new CallStack(threadId);
+

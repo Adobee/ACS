@@ -1,0 +1,8 @@
+IdUpdatedModel updated = Memcache.get(id);
+if (updated == null) {
+updated =
+Datastore
+Long.valueOf(id)));
+if (updated != null) {
+Memcache.put(id, updated);
+

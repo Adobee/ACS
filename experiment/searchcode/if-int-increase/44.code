@@ -1,0 +1,10 @@
+public long initialPrice;
+public long price;
+public float priceIncrease;
+public int level;
+public int maxLevel;
+public void increasePrice() {
+price = (long)(price * priceIncrease);
+if (priceIncrease > 1.3) {
+priceIncrease -= 0.1;		// used to balance the prices
+

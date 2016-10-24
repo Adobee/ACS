@@ -1,0 +1,9 @@
+long t;
+for (long i = 1; (t=(i*(i+1))/2) < limit; i++) {
+triangle.add(t);
+}
+Set<Long> triangleAndPenta = new HashSet<Long>();
+long p;
+for (long i = 1; (p=(i*(3*i-1))/2) < limit; i++) {
+if (triangle.contains(p))
+

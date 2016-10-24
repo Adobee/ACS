@@ -1,0 +1,8 @@
+Engine.GetResult get = indexShard.get(new Engine.Get(request.realtime(), uidTerm).version(request.version()).versionType(request.versionType()));
+
+Fields termVectorsByField = null;
+boolean docFromTranslog = get.source() != null;
+if (request.doc() != null) {
+termVectorsByField = generateTermVectorsFromDoc(request, !docFromTranslog);
+// if no document indexed in shard, take the queried document itself for stats
+

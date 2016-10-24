@@ -1,0 +1,9 @@
+extends AbstractSmoothingModifier<C> {
+
+public final static String INTERCEPT_TAG = &quot;hasIntercept&quot;;
+
+private boolean hasIntercept;
+public AbstractRegressionSmoothingModifier(List<SmoothingCell> cells, Class<C> clazz, boolean hasIntercept) {
+super(cells, clazz);
+checkCells(cells);
+

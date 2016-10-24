@@ -1,0 +1,9 @@
+public class TransformedPredictionErrors implements ITransformedPredictionErrors {
+
+/**
+* U is the transformed prediction error (=L^-1)*(y(t)-Z(t)A(t)))
+* U is 1 x nvars
+public TransformedPredictionErrors(final int dim, final int nvars) {
+U = new DataBlock(nvars);
+L = new Matrix(nvars, nvars);
+

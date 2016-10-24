@@ -1,0 +1,11 @@
+GREEN_AMMO( 0),
+RED_RELOAD(   0),
+GOLD_UPGRADES(  0),
+NOT_UNLOCKED( 0);
+
+private int resourceAmount;
+public void removeResource(int amount) {
+if (getResourceAmount()-amount <= 0) {
+setResourceAmount(0);
+} else {
+

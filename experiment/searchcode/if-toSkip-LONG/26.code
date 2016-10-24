@@ -1,0 +1,14 @@
+public int read() {
+if (pos == count) {
+return -1;
+} else {
+int rv = (buffer.charAt(pos) &amp; 0xff);
+pos++;
+} else {
+return -1;
+}
+}
+
+public long skip(long n) {
+int toSkip = (int) Math.min(n, available());
+

@@ -1,0 +1,15 @@
+public class OptionMatcher extends Matcher<Boolean> {
+
+Matcher[] matcherList;
+boolean mandatory;
+
+@Override
+public void initialize(Environment env) {
+for (int k=0; k<matcherList.length; k++) {
+matcherList[k].initialize(env);
+}
+}
+
+@Override
+public Boolean eval() throws ParserException {
+

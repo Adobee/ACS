@@ -1,0 +1,13 @@
+*         Dekker&#39;s algorithm
+*/
+
+@LTLSpec(&quot;[]<>process0.cs0 &amp;&amp; []<>proces1.cs1&quot;)
+class proc extends Thread {
+static boolean flag0 = false; // flag of the process 0
+static boolean flag1 = false; // flag of the process 1
+static boolean cs0 = false;
+static boolean cs1 = false;
+static int turn = 0;
+
+void critical() {
+

@@ -1,0 +1,13 @@
+package com.owen.masters.utility;
+
+public class Timer {
+
+private long prevMS;
+
+public Timer() {
+this.prevMS = 0L;
+}
+
+public boolean delay(double d) {
+if (getTime() - getPrevMS() >= d) {
+

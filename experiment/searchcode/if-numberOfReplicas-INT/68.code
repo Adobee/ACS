@@ -1,0 +1,9 @@
+public class ConsistentHash<T> {
+/**
+* 每个机器节点关联的虚拟节点个数
+*/
+private int numberOfReplicas = 100;
+public ConsistentHash(List<T> peers, int numberOfReplicas) {
+super();
+if (numberOfReplicas > 4096) {
+

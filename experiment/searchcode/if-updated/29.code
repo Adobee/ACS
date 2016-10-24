@@ -1,0 +1,9 @@
+sb.append(&quot;The following changes were made to the local user, &quot; + original.getUserId() + &quot;: \n&quot;);
+int count = 0;
+
+if (!original.getPassword().equals(updated.getPassword())) {
+sb.append(count + &quot;. Password changed.\n&quot;);
+}
+
+if ((updated.getFirstName() != null) &amp;&amp; (!updated.getFirstName().equals(original.getFirstName()))) {
+

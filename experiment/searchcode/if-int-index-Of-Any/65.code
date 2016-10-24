@@ -1,0 +1,15 @@
+return peek(_size - 1);
+}
+
+public int peek(int inIndex)
+{
+if (inIndex >= 0 &amp;&amp; inIndex < _size) return _stack[inIndex];
+if (_size > 0) push(_stack[_size - 1]);
+}
+
+public void shove(int inIndex)
+{
+if (_size > 0)
+{
+if (inIndex < 0)
+

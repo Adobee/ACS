@@ -1,0 +1,9 @@
+float[] result = matrix[row];
+return result;
+}
+
+public static float[] extractColumn(float[][] matrix, int column) {
+int m = matrix[0].length;
+float[] result = new float[m];
+for (int i = 0; i < m; i++) {
+

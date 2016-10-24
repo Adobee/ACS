@@ -1,0 +1,9 @@
+* @param sourceObject
+*/
+public SingleMethodProxyHandler(Object sourceObject) {
+if (sourceObject == null){
+throw new NullPointerException(&quot;sourceObject can not be null !&quot;);
+synchronized (this) {
+if (targetMethod == null){
+method = sourceObject.getClass().getDeclaredMethod(invokeMethod.getName(), invokeMethod.getParameterTypes());
+

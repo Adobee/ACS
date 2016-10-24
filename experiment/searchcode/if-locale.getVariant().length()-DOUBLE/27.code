@@ -1,0 +1,8 @@
+throw new IllegalArgumentException(&quot;Namespace cannot be null or empty&quot;);
+}
+if (paramString.length() > 128) {
+throw new IllegalArgumentException(&quot;Invalid namespace length&quot;);
+paramLocale = paramLocale.getVariant();
+if (!TextUtils.isEmpty(paramLocale)) {
+localStringBuilder.append(&#39;-&#39;).append(paramLocale);
+

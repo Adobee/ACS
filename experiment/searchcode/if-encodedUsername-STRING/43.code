@@ -1,0 +1,10 @@
+String passwordEncrypted = encrypt.encrypt(password);
+String username = inputMap.get(&quot;username&quot;).toString();
+
+//check which operation is required
+if(inputMap.containsValue(&quot;login&quot;)){
+StringUrlEncoder encoder = new StringUrlEncoder();
+String encodedUsername =  encoder.encode(username);
+
+boolean isInputValid = check.validateRegDetails(username, password, confirmPassword);
+

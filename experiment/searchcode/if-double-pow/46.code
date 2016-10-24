@@ -1,0 +1,8 @@
+return n<0?1/(powPositive(x,-(n+1))*x):powPositive(x,n);
+}
+double powPositive(double x, int n){
+if(n==0) return 1;
+double part = pow(x,n/2);
+if(n%2==0){
+return part*part;
+

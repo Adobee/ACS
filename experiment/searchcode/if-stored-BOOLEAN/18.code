@@ -1,0 +1,10 @@
+this.unitsStored = nbt.getInteger(&quot;Units&quot;);
+
+if (unitsStored > maxUnitsStored)
+unitsStored = maxUnitsStored;
+return this;
+}
+
+public NBTTagCompound writeToNBT(NBTTagCompound nbt) {
+if (unitsStored < 0)
+

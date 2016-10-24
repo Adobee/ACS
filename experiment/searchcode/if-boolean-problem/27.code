@@ -1,0 +1,10 @@
+for (Problem p : this) {
+((TimedProblem)p).decrementLife(dec);
+}
+}
+
+public boolean stillAlive() {
+for (Problem tp : this) {
+if (!((TimedProblem)tp).alive()) {
+return false;
+

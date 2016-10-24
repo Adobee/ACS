@@ -1,0 +1,8 @@
+public boolean detectIfNone(BooleanPredicate predicate, boolean ifNone)
+{
+return predicate.accept(true) || ifNone;
+}
+
+@Override
+public <V> ImmutableSet<V> collect(BooleanToObjectFunction<? extends V> function)
+

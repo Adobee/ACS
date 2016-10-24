@@ -1,0 +1,6 @@
+public void handleCredentials(boolean saveCredentials, String username, String password) {
+String encodedUsername = Base64Coder.encode(username);
+this.getModel().getCredentials().setUsername(encodedUsername);
+if (StringUtil.isNotEmpty(password)) {
+String encodedPassword = Base64Coder.encode(password);
+

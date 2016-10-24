@@ -1,0 +1,15 @@
+package com.happyframework.exception.handling;
+
+public final class ExceptionHandleResult {
+public void autoThrowException() throws Throwable {
+if (this.newException != null) {
+throw this.newException;
+}
+
+if (!exceptionHandled) {
+throw this.exception;
+}
+}
+
+}
+

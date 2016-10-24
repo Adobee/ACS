@@ -1,0 +1,10 @@
+public static BooleanTypeAdaptor getAdaptor(IOpenClass openClass) {
+
+if (openClass.getInstanceClass() == boolean.class || openClass.getInstanceClass() == Boolean.class) {
+return new BooleanMethodAdaptor(method);
+}
+
+IOpenField field = openClass.getField(BOOLEAN_VALUE, true);
+
+if (field != null) {
+

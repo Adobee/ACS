@@ -1,0 +1,7 @@
+if (myc.state == CustomerState.WaitingForFood) {
+if (myc.choice.equals(choice)) {
+myc.state = CustomerState.NeedsReorder;
+synchronized (myCustomers) {
+for (MyCustomer myc : myCustomers) {
+if (myc.state == CustomerState.NeedsReorder) {
+

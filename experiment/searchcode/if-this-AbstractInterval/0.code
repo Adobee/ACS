@@ -1,0 +1,9 @@
+return (left() <= p) &amp;&amp; (p <= right());
+}
+
+public boolean equals(Object o) {
+if(o == this) return true;
+if(!(o instanceof AbstractInterval)) return false;
+AbstractInterval i = (AbstractInterval)o;
+if(i.length() == 0) return false; // EmptyInterval overrides this method
+

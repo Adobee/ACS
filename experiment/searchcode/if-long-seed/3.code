@@ -1,0 +1,11 @@
+private final static AtomicLong initialSeed = new AtomicLong(7959127561643282L);
+
+private long seed;
+
+public QuickRng(long seed) {
+this.seed = seed;
+}
+
+public QuickRng() {
+this(initialSeed.incrementAndGet() + System.nanoTime());
+

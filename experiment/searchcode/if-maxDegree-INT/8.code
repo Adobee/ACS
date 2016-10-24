@@ -1,0 +1,11 @@
+for (Integer vertex : g.adj(v)) {
+count++;
+}
+return count;
+}
+
+public static int maxDegree(Graph g) {
+int maxDegree = 0;
+for (int i = 0; i < g.V(); i++) {
+int localMax = degree(g, i);
+

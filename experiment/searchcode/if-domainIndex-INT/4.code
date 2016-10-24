@@ -1,0 +1,6 @@
+public boolean checkCredentials(String username, String password) {
+int domainIndex = username.indexOf(&#39;@&#39;);
+if (domainIndex != -1) {
+String domain = username.substring(domainIndex + 1);
+if (!&quot;stackframe.com&quot;.equals(domain)) {
+

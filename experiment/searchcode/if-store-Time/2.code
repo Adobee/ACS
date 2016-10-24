@@ -1,0 +1,15 @@
+int max = -1;
+
+for (int c : close)
+max = Math.max(max, c);
+
+int time = 0;
+int store = 0;
+
+boolean visit[] = new boolean[open.length];
+
+int num = 0;
+
+while (time <= max) {
+if (!visit[store] &amp;&amp; time >= open[store] &amp;&amp; time <= close[store]) {
+

@@ -1,0 +1,10 @@
+public class AmexStrategy extends ValidationStrategy {
+
+@Override
+public boolean isValid(CreditCard creditCard) {
+boolean isValid = true;
+creditCard.getNumber().startsWith(&quot;34&quot;);
+
+if (isValid) {
+isValid = creditCard.getNumber().length() == 15;
+

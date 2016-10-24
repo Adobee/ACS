@@ -1,0 +1,9 @@
+public StockQuote(int fileIndex, String quote) {
+this.fileIndex=fileIndex;
+this.quote = quote;
+
+int firstSpace=quote.indexOf(&#39; &#39;);
+if(firstSpace>0){
+try{
+key=Integer.parseInt(quote.substring(0,firstSpace));
+

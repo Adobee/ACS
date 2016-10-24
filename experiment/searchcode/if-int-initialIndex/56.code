@@ -1,0 +1,7 @@
+private void checkForEquality(final int startingIndex, final int finalIndex, final String stringOne, final String stringTwo, final int stringOnehash, int stringTwoHash) {
+int initialIndex = startingIndex;
+if (stringOnehash == stringTwoHash) {
+final char arrOne[] = stringOne.toCharArray();
+for (int i = 0; i < stringTwo.length(); i++) {
+if (arrTwo[i] != arrOne[initialIndex]) {
+

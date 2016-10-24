@@ -1,0 +1,9 @@
+public static void sendScreenView(String screenName) {
+if (canSend()) {
+mTracker.setScreenName(screenName);
+mTracker.send(new HitBuilders.AppViewBuilder().build());
+}
+}
+
+private static boolean canSend() {
+

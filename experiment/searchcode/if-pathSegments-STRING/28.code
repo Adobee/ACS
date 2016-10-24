@@ -1,0 +1,10 @@
+Uri uri = Uri.parse(request.getUrl());
+List<String> pathSegments = uri.getPathSegments();
+
+Log.d(&quot;MOCK SERVER&quot;, &quot;fetching uri: &quot; + uri.toString());
+String responseString = &quot;DEFAULT_RESPONSE&quot;;
+
+if(pathSegments.get(0).equals(&quot;TaskStructure&quot;)) {
+/**
+* Interview
+

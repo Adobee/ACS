@@ -1,0 +1,6 @@
+package types;
+public class TypeItem {
+public int TypeIndex;//0 1 2 (in[] int boolean) 3 class 4 function
+public String TypeName;//TypeIndex=3,class name=typename
+public TypeItem(int type)
+

@@ -1,0 +1,9 @@
+private void parseFromNode(BinaryTree root, int currentDepth) {
+if (root == null) {
+return;
+}
+if (mDepth < currentDepth) {
+mDepth = currentDepth;
+}
+parseFromNode(root.left, currentDepth+1);
+

@@ -1,0 +1,7 @@
+protected void addCriterion(String condition) {
+if (condition == null) {
+throw new RuntimeException(&quot;Value for condition cannot be null&quot;);
+public Criteria andPriceEqualTo(Double value) {
+addCriterion(&quot;price =&quot;, value, &quot;price&quot;);
+return (Criteria) this;
+

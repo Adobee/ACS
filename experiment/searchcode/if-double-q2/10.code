@@ -1,0 +1,10 @@
+int k = 1;
+int r1 = 1;
+while(k*Q2 < Q1) {
+k++;
+if(k*Q2 == Q1) {
+return Q2;
+}
+if(k*Q2 > Q1) {
+return gcd(Q2,r1);
+

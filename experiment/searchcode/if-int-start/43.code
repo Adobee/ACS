@@ -1,0 +1,8 @@
+private int generateBox(int[][] result, int startR, int startC, int endR,
+int endC, int initVal) {
+if (startR == endR) {
+for (int i = startC; i <= endC; i++)
+result[startR][i] = initVal++;
+} else if (startC == endC) {
+for (int i = startR; i <= endR; i++)
+

@@ -1,0 +1,11 @@
+public WildcardTypeDescriptor(Type[] upperBounds, Type[] lowerBounds)
+{
+this.upperBounds = Objects.requireNonNull(upperBounds);
+sb.append(&quot;? super &quot;);
+}
+else
+{
+Type[] upperBounds = getUpperBounds();
+
+if (upperBounds.length > 0 &amp;&amp;
+

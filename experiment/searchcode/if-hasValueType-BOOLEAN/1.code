@@ -1,0 +1,9 @@
+JClassType converterType, boolean skipCheckings) throws NoSuchFieldException
+{
+JClassType hasValueType = context.getGeneratorContext().getTypeOracle().findType(HasValue.class.getCanonicalName());
+String propertyClassName)
+{
+if (widgetClass.isAssignableTo(hasValueType))
+{
+srcWriter.println(widgetVariable+&quot;.setValue(&quot;+propertyGetExpression+&quot;);&quot;);
+

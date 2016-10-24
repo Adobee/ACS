@@ -1,0 +1,10 @@
+ListNode ans=null;
+if(l1==null){return l2;}
+if(l2==null){return l1;}
+if(l1.val<l2.val){
+l2=l2.next;
+}
+cur = ans;
+while(l1!=null &amp;&amp; l2!=null){
+if(l1.val<l2.val){
+

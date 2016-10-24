@@ -1,0 +1,7 @@
+if (!StringUtils.isEmpty(line)) {
+if (rewriteEnabled) {
+parsePotentialRewrite(line);
+final Matcher matcher = Pattern.compile(REWRITE_RULE + REWRITE_OPTIONS).matcher(line);
+if (matcher.matches()) {
+String matchUri = basePath + &quot;/&quot; + matcher.group(1).replace(&quot;^&quot;, &quot;&quot;); //-- prevent regex start with ^
+

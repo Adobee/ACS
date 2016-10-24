@@ -1,0 +1,11 @@
+return super.isReady() &amp;&amp; mSeparator != null;
+}
+
+@Override
+public int findDividerFrom(int from) {
+final int separatorLen = mSeparator.length;
+for (int i = from, n = this.mEnd - separatorLen + 1; i < n; ++i) {
+boolean match = true;
+for (int j = 0; j < separatorLen; ++j) {
+if (this.mBuff[i + j] != mSeparator[j]) {
+

@@ -1,0 +1,6 @@
+public void calcJoint(JoinResult.NumberJoinResult result, int leftTuples, Double leftEstimate, Double estimate, int rightTuples, Double rightEstimate) {
+if (leftEstimate == null &amp;&amp; rightEstimate == null) {
+Join left = canJoin(estimate, leftEstimate);
+if (left == Join.POSITIVE) {
+result.joinLeft = Math.abs(leftEstimate - estimate) < 10;
+

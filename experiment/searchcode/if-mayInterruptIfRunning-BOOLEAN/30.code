@@ -1,0 +1,12 @@
+public CancelableFutureTask(Callable<V> callable) {
+super(callable);
+}
+
+@Override
+public boolean cancel(boolean mayInterruptIfRunning) {
+//无法调用private的callable，所以无法夹带callable中的方法
+return super.cancel(mayInterruptIfRunning);
+
+}
+}
+

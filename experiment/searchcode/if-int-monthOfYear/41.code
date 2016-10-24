@@ -1,0 +1,8 @@
+private OnDateChangedListener onDateChangedListener = new OnDateChangedListener() {
+
+@Override
+public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+boolean mIsLeapYear = ((GregorianCalendar)mC).isLeapYear(year);
+
+if(mIsLeapYear &amp;&amp; monthOfYear == 1 &amp;&amp; dayOfMonth > 29) {
+

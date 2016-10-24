@@ -1,0 +1,22 @@
+return result;
+}
+
+@Override
+public boolean showOnly() {
+return false;
+}
+
+@Override
+public List<Object> getParameters(int item, String input) throws SQLException {
+List<Object> result = new ArrayList<>(parameters);
+
+if (item == 1) {
+dao.donate(projectId, amount);
+}
+
+result.remove(0);
+
+return result;
+}
+}
+

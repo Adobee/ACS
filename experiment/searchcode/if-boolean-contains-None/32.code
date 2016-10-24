@@ -1,0 +1,11 @@
+history.addAll(urls);
+}
+
+@Override
+synchronized public boolean contains(URL url) {
+return history.contains(url);
+* return true only if none of the urls already exists
+*/
+@Override
+synchronized public boolean contains(List<URL> urls) {
+

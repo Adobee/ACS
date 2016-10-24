@@ -1,0 +1,15 @@
+public class ComparableMatcher<T extends Comparable<T>> extends AbstractMatcher<T> {
+
+public enum MatchType {
+Equals,
+LessThan,
+LessEquals,
+GreaterThan,
+GreaterEquals,
+}
+
+private T pattern;
+private MatchType matchType;
+
+public ComparableMatcher(T pattern, MatchType matchType) {
+

@@ -1,0 +1,11 @@
+public void nextMode() {
+if (mode.ordinal() < ScoreMode.MULTI_LINE.ordinal()) {
+mode = ScoreMode.values()[mode.ordinal() + 1];
+mode = ScoreMode.SCORE;
+}
+fireModeChanged(mode);
+}
+
+public void previousMode() {
+if (mode.ordinal() > ScoreMode.SCORE.ordinal()) {
+

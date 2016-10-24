@@ -1,0 +1,6 @@
+public static Locals newMainMethodScope(Locals programScope, boolean usesScore, boolean usesCtx, int maxLoopCounter) {
+Locals locals = new Locals(programScope, Definition.OBJECT_TYPE);
+// Document&#39;s score as a read-only double.
+if (usesScore) {
+locals.defineVariable(null, Definition.DOUBLE_TYPE, SCORE, true);
+

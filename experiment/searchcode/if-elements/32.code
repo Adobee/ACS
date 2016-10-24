@@ -1,0 +1,11 @@
+elements = new ArrayList<T>();
+}
+
+public void insert(T element){
+if(elements == null) elements = new ArrayList<T>();
+if(element == null) return;
+
+elements.add(element);
+int index = elements.size() - 1;
+elements = bubbleUp(elements, index);
+

@@ -1,0 +1,8 @@
+y_start = 3*height/6.0;
+for (int i=0; i<blockRows; i++) {
+for (int j=0; j<blockCols; j++) {
+int temp = i;
+if (temp >= blockRows/2.0)
+blockType++;
+if (i >= blockRows/4.0)
+

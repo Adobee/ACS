@@ -1,0 +1,6 @@
+
+public class Flatten_Binary_Tree_To_Linked_List {
+TreeNode help(TreeNode root){
+if(root.left==null&amp;&amp;root.right==null) return root;
+if(root.left==null) return help(root.right);
+

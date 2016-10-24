@@ -1,0 +1,10 @@
+public class SimplexTableauIterator implements Iterator<SimplexTableau> {
+
+/**
+* Reference to the previous simplex tableau.
+*/
+private SimplexTableau tableau;
+* Create the next tableau. Might raise an exception if not possible.
+*/
+public SimplexTableau next() {
+

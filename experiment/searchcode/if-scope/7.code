@@ -1,0 +1,8 @@
+package codeOrchestra.actionscript.logging.scope;
+
+import codeOrchestra.actionscript.logging.model.MessageScope;
+public void addOrUpdateScope(String scopeId, String scopeName) {
+synchronized (scopeMap) {
+MessageScope scope = scopeMap.get(scopeId);
+if (scope == null) {
+

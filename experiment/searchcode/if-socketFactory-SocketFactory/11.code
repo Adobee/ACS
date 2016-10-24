@@ -1,0 +1,10 @@
+public class ConversationFactoryImpl implements ConversationFactory
+{
+private String ehloHostname;
+private SocketFactory socketFactory;
+private FieldGenerator fieldGenerator;
+SMTPConversation c = new SMTPConversation(ehloHostname, smtpServer);
+c.setSocketFactory(socketFactory);
+c.setFieldGenerator(fieldGenerator);
+if (smtpPort != -1) {
+

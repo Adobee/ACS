@@ -1,0 +1,13 @@
+this.top = null;
+}
+
+
+public String pop() {
+if (top == null){
+return &quot;&quot;;
+}
+String topStr = top.getValue();
+top = top.below;
+if (top != null)
+top.above = null;
+

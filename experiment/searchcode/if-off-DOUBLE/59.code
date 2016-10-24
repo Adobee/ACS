@@ -1,0 +1,12 @@
+public static short bytesToShort(byte[] bytes, int off, boolean bigEndian) {
+byte b1 = bytes[off], b2 = bytes[off+1];
+if (!bigEndian) {
+b1 = b2;
+b2 = tmp;
+}
+bytes[off] = b1;
+bytes[off+1] = b2;
+}
+
+public static double bytesToDouble(byte[] bytes, int off) {
+

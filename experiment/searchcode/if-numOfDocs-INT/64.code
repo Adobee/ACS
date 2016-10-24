@@ -1,0 +1,9 @@
+private HashMap<String,Double> docLengthMap;
+
+private int numOfDocs;
+
+public IndexBuilder(String folderPath){
+this.folderPath = folderPath;
+private double calcWeight(int tf_td,int df_t, int numOfDocs){
+double weight = Math.log(1.0+tf_td)*Math.log10(numOfDocs/df_t);
+

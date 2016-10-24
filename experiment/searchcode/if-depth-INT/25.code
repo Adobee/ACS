@@ -1,0 +1,11 @@
+public class Solution {
+
+public int maxDepth(TreeNode root) {
+if (root == null) {
+return 0;
+private int maxDepth(TreeNode n, int depth) {
+int maxDepth = depth;
+
+if (n.left != null) {
+maxDepth = Math.max(maxDepth, maxDepth(n.left, depth + 1));
+

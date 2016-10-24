@@ -1,0 +1,7 @@
+private AdapterFactory adapterFactory;
+
+private Object lastElement = null;
+private IItemIntervalEventProvider lastElementItemIntervalEventProvider = null;
+private IItemIntervalEventProvider getIntervalEventItemProvider(Object element){
+if ( element == this.lastElement ) { return this.lastElementItemIntervalEventProvider; }
+

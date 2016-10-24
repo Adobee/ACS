@@ -1,0 +1,17 @@
+return Math.abs(_colorCenter - color) <= _maxDistance;
+}
+
+@Override
+public double distanceFromRange(int color) {
+if (Math.abs(_colorCenter - color) <= _maxDistance)
+return Math.abs( Math.abs(_colorCenter - color) - _maxDistance);
+}
+
+@Override
+public boolean isRangeFrozen() {
+return _frozen;
+}
+
+@Override
+public double getMaxDistance() {
+

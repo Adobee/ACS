@@ -1,0 +1,13 @@
+* @return degree as <code>integer</code>
+*/
+public int degree(int vertex) {
+if (vertex < 0 || vertex >= graph.V())
+throw new IllegalArgumentException(&quot;vertex not found in Graph&quot;);
+for (int v = 0; v < graph.V(); v++) {
+int deg = degree(v);
+if (maxDegree < deg) {
+maxDegree = deg;
+}
+}
+return maxDegree;
+

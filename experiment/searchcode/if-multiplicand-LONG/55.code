@@ -1,0 +1,8 @@
+public final static BigDecimal DIVISOR_WANG_YUAN = new BigDecimal(1000000);
+public final static BigDecimal MULTIPLICAND_PERCENT = new BigDecimal(100);
+public static String castMoney2Yuan(Long fen) {
+if (null == fen) {
+return &quot;0.00&quot;;
+}
+return BigDecimal.valueOf(fen, 2).toString();
+

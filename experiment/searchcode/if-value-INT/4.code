@@ -1,0 +1,17 @@
+public boolean equals(Value obj) {
+if (obj instanceof SmallInt){
+SmallInt v = (SmallInt) obj;
+return this.value == v.value;
+return false;
+}
+
+public boolean less(Value value) {
+if (value instanceof SmallInt){
+SmallInt v = (SmallInt) value;
+return this.value < v.value;
+}
+return false;
+}
+
+}
+

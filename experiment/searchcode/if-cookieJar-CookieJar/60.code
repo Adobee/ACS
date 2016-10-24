@@ -1,0 +1,7 @@
+CookieJar cookieJar) throws IOException {
+if (cookieJar == null) cookieJar = new CookieJar();
+final CookieJar internalJar = new CookieJar();
+for (HttpCookieBean cookie : cookieJar.values()) buffered.setHeader(SET_COOKIE, cookie.toHeaderValue());
+
+if (response.getEntity() != null &amp;&amp; response.getEntity().getContent() != null) {
+

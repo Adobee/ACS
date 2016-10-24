@@ -1,0 +1,9 @@
+public ExprZ visitExprApply(ExprApply expr) {
+ExprZ ret = null;
+
+if (exprInst instanceof ExprApply) {
+ret = expr.getArgument().accept(new ParamExprMatcher(((ExprApply) exprInst).getArgument(), paramName));
+
+if (ret == null) {
+ret = expr.getFunction().accept(new ParamExprMatcher(((ExprApply) exprInst).getFunction(), paramName));
+

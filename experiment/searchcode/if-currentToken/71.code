@@ -1,0 +1,9 @@
+currentToken.kind = Cons.ConsIdentifier.SETQ;
+break;
+case &quot;if&quot;:
+currentToken.kind = Cons.ConsIdentifier.IF;
+break;
+default:
+if (Character.isDigit(currentToken.getValue().charAt(0))) {
+currentToken.kind = Cons.ConsIdentifier.NUMBER;
+

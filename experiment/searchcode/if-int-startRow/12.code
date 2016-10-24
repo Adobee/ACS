@@ -1,0 +1,12 @@
+return res;
+}
+
+public void help(int startRow,int startColumn,int mRows, int nColumns,int[][] A,int count){
+for(int i = startColumn + nColumns - 2; i >= startColumn; i --)
+A[startRow + mRows - 1][i] = count ++;
+
+if( nColumns == 1)
+return;
+
+for(int i = startRow + mRows - 2; i > startRow; i --)
+

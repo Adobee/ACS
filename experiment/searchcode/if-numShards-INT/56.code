@@ -1,0 +1,7 @@
+public int getNumShards() {
+int numShards = 0;
+// Find the current number of shards for this Counter.
+Counter current = getThisCounter(pm);
+if (current != null) {
+numShards = current.getShardCount().intValue();
+

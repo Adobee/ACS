@@ -1,0 +1,7 @@
+/** Iterate over a range of fromRec (inclusive) to toRec (exclusive) */
+public static <X> Iterator<X> iterator(int pageId, Record fromRec, Record toRec, RecordBufferPageMgr pageMgr, RecordMapper<X> mapper)
+slot = currentPage.getRecordBuffer().access(currentIdx, keySlot, mapper) ;
+currentIdx++ ;
+
+if ( maxRec != null &amp;&amp; Bytes.compare(keySlot, maxRec.getKey()) >= 0 ) {
+

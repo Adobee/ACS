@@ -1,0 +1,7 @@
+public static String stripStart(final String str, final String stripChars) {
+int strLen;
+if (str == null || (strLen = str.length()) == 0) return str;
+int start = 0;
+if (stripChars == null) {
+while (start != strLen &amp;&amp; Character.isWhitespace(str.charAt(start))) {
+

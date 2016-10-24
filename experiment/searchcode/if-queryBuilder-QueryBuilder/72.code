@@ -1,0 +1,10 @@
+public String getQueryConditions() {
+StringBuilder queryBuilder = new StringBuilder();
+
+if (this.prescriptionID > 0) {
+queryBuilder.append(queryBuilder.length() != 0 ? &quot; and &quot; : &quot;&quot;);
+
+if (this.medicationID > 0) {
+queryBuilder.append(Names.MEDICATION_ID);
+queryBuilder.append(&quot; = &quot;);
+

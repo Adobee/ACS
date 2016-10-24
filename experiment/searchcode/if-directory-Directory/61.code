@@ -1,0 +1,12 @@
+public Source(String sourceDirectory) {
+super();
+this.sourceDirectory = sourceDirectory;
+}
+private String sourceDirectory;
+File validator = new File(sourceDirectory);
+if(!validator.exists()) {
+throw new Exception(&quot;The source directory provided does not exist.&quot;);
+}
+}
+}
+

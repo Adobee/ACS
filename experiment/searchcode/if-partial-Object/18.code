@@ -1,0 +1,9 @@
+* Predicate to be used in order to check if a {@link PageObject page object&#39;s}
+* visible text contains a certain string.
+this.partialText = partialText;
+}
+
+@Override
+public boolean apply(PageObject pageObject) {
+return pageObject.getVisibleText().contains(partialText);
+

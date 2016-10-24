@@ -1,0 +1,8 @@
+import java.util.ArrayList;
+
+@SuppressWarnings(&quot;serial&quot;)
+public class NetworkAddresses extends ArrayList<NetworkAddress> {
+public boolean containsIP( String ip){
+for (NetworkAddress networkAddress: this)
+if (networkAddress.getIp().equals( ip)) return true;
+

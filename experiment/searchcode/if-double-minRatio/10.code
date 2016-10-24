@@ -1,0 +1,10 @@
+public class NumericComparator implements Comparator {
+private double minratio;
+
+public boolean isTokenized() {
+return false;
+}
+
+public void setMinRatio(double minratio) {
+this.minratio = minratio;
+

@@ -1,0 +1,7 @@
+import BlockBuilding.AbstractBlockBuilding;
+import DataModel.AbstractBlock;
+import DataModel.Comparison;
+import DataModel.ComparisonIterator;
+public void deduplicateBlocks(AbstractDuplicatePropagation adp, List<AbstractBlock> inputBlocks) {
+printOriginalStatistics(inputBlocks);
+

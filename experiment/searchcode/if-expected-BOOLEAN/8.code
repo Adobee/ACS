@@ -1,0 +1,12 @@
+return text.substring(0, expected.length()).equals(expected);
+}
+},
+ENDS {
+public boolean doVerify(String text, String expected) {
+verify(text, expected);
+return text.endsWith(expected);
+}
+},
+CONTAINS {
+public boolean doVerify(String text, String expected) {
+

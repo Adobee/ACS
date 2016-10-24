@@ -1,0 +1,11 @@
+public static double[][] polyval(final double[] x, final double[] y, final double coeff[], int degree) {
+
+setLoggerLevel();
+
+if (degree < -1) {
+public static DoubleMatrix polyval(final DoubleMatrix x, final DoubleMatrix y, final DoubleMatrix coeff, int degree) {
+
+setLoggerLevel();
+
+if (!x.isColumnVector()) {
+

@@ -1,0 +1,12 @@
+private static final long serialVersionUID = 1L;
+
+public static final Dim EMPTY = new Dim(0, 0);
+
+public final int w, h;
+
+/**
+* @deprecated Use {@link #of(int, int)} instead.
+*/
+@Deprecated
+public Dim(int w, int h) {
+

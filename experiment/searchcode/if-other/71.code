@@ -1,0 +1,4 @@
+public void aMethod(MyComparable other, NotComparable notComparable) {
+if (compareTo(other) == -1) {} // Noncompliant {{Only the sign of the result should be examined.}}
+if (compareTo(other) == -5) {} // Noncompliant
+

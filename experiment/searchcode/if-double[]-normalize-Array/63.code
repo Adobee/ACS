@@ -1,0 +1,12 @@
+double currentLower = array[ 0 ];
+
+if ( Double.isNaN( currentLower ) )
+{
+for ( int d = 1; d < array.length; ++d )
+{
+double val = array[ d ];
+if ( !Double.isNaN( val ) )
+{
+currentLower = val - d;
+array[ 0 ] = currentLower;
+

@@ -1,0 +1,11 @@
+public class MergeArr {
+
+static void merge(int[] al, int mid) {
+int i = 0, j = mid;
+while (i < j &amp;&amp; j <= al.length - 1) {
+if (al[i] <= al[j]) {
+i++;
+} else {
+int tmp = al[j];
+for (int m = j; m >=i+1; m--) {
+

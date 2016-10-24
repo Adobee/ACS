@@ -1,0 +1,16 @@
+public static SortParser getInstance(String resource) {
+return new SortParser();
+}
+
+public DBObject parse(List<String> sortFields) {
+
+if (sortFields == null || sortFields.size() == 0) {
+return null;
+}
+
+return (DBObject) JSON.parse(sortFields.get(0));
+
+}
+
+}
+

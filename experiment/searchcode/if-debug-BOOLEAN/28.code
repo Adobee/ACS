@@ -1,0 +1,10 @@
+private static volatile Boolean debug = null;
+
+public static boolean debug() {
+if(debug == null)
+return DEFAULT_DEBUG;
+return debug.booleanValue();
+}
+public static void debug(final boolean value) {
+if(debug != null &amp;&amp; debug.booleanValue() == value) return;
+

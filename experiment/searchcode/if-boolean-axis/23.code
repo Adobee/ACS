@@ -1,0 +1,9 @@
+package org.sirix.axis.filter;
+
+import org.sirix.api.Filter;
+import org.sirix.api.NodeReadTrx;
+protected NodeReadTrx computeNext() {
+while (mAxis.hasNext()) {
+final NodeReadTrx rtx = mAxis.next();
+boolean filterResult = true;
+

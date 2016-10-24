@@ -1,0 +1,12 @@
+for (int i = length - 1; i >= 0; i--) {
+char c = patternArray[i];
+int index = shiftArray[c];
+
+if (index == -1) {
+shiftArray[c] = i;
+int patternLength = pattern.length() - 1;
+int textLength = text.length();
+int textIndex = patternLength;
+
+while (textIndex < textLength) {
+

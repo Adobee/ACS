@@ -1,0 +1,6 @@
+public final void insert(String strHourRef, int hour, float value, boolean isReal) {
+hourMap.put(strHourRef, new HourUsage(strHourRef, hour, value, isReal));
+HourUsage hourUsage = hourMap.get(strHourRef);
+if (hourUsage != null)
+val =  new Float((hourUsage.getValue()*xFactor)+aFactor);
+

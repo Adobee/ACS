@@ -1,0 +1,8 @@
+public void MergePrice(List<DomainAuction> dpl,
+Map<String, DomainAuction> dp2) {
+
+for (DomainAuction dA : dpl) {
+DomainAuction dB = dp2.get(dA.domain);
+if (dB==null) {
+dA.op = DomainConst.DOMAIN_PRICE_OPRATOR_INSERT;
+

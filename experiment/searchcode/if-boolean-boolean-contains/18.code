@@ -1,0 +1,10 @@
+* @param sources - sources from which operator should be constructed.
+*/
+public BooleanOperatorOR(List<BooleanSource> sources) {
+super(sources);
+if(sources == null || sources.contains(null)) {
+List<BooleanSource> sources = this.getSources();
+
+for(BooleanSource source : sources) {
+if(source.getValue() == BooleanValue.TRUE) {
+

@@ -1,0 +1,8 @@
+public Rastringin(Integer numberOfVariables) {
+super(numberOfVariables, 1);
+for (int i = 0; i < numberOfVariables; i++) {
+lowerBound[i] = -5.12;
+Solution<Variable<Double>> solI = new Solution<Variable<Double>>(numberOfObjectives);
+for (int j = 0; j < numberOfVariables; ++j) {
+Variable<Double> varJ = new Variable<Double>(RandomGenerator.nextDouble(lowerBound[j], upperBound[j]));
+

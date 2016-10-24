@@ -1,0 +1,9 @@
+*            一个需要注册的 {@link Proxy} 实例。不能为 null。
+*/
+synchronized void register(Proxy proxy) {
+if (proxy == null) {
+throw new NullPointerException(&quot;proxy can&#39;t be null&quot;);
+}
+
+if (proxy.getProxyName() == null) {
+

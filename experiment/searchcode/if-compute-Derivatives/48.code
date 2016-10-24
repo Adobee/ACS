@@ -1,0 +1,9 @@
+return cov1.computeSingleValue(p1,X).add(cov2.computeSingleValue(p2, X));
+}
+
+public DoubleMatrix computeDerivatives(DoubleMatrix parameters, DoubleMatrix X, int index) {
+if(index < cov1.getNumParams()){
+return cov1.computeDerivatives(p1, X, index);
+} else{
+return cov2.computeDerivatives(p2, X, index-cov1.getNumParams());
+

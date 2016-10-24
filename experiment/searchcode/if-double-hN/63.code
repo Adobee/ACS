@@ -1,0 +1,13 @@
+public void generate() {
+preGeneration();
+
+if (! isTransition) {
+
+double dx = x / (double)densityLevels;
+for (int l = 1; l <= densityLevels; l++) {
+double hx;
+int hn;
+if (l == densityLevels) {
+hx = x;
+hn = node.length;
+

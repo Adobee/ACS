@@ -1,0 +1,11 @@
+private final double relativeError;
+
+/**
+* Creates a comparator of floating-point values allowing a small relative
+public RelativeError(double relativeError) {
+super();
+this.relativeError = relativeError;
+}
+
+@Override
+

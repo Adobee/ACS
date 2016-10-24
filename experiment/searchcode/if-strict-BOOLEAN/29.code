@@ -1,0 +1,12 @@
+public interface CodeVisitor {
+
+
+Object visit(Object context, AdditiveExpression expr, boolean strict);
+
+Object visit(Object context, BitwiseExpression bitwiseExpression, boolean strict);
+Object visit(Object context, IdentifierReferenceExpression expr, boolean strict);
+
+Object visit(Object context, IfStatement statement, boolean strict);
+
+Object visit(Object context, InOperatorExpression expr, boolean strict);
+

@@ -1,0 +1,7 @@
+private static void loadImage(Resources resources, int resId, ImageView imageView, int viewDimension) {
+if (cancelPotentialWork(resId, imageView)) {
+int inSampleSize = 1;
+
+if (height > reqSize || width > reqSize) {
+final int halfHeight = height / 2;
+

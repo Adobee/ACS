@@ -1,0 +1,8 @@
+private boolean mAscending = true;
+
+public ReversableComparator(Comparator<T> comparatorToWrap) {
+public int compare(T lhs, T rhs) {
+if (mAscending) {
+return mUnderlyingComparator.compare(lhs, rhs);
+} else {
+

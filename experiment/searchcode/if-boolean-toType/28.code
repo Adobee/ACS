@@ -1,0 +1,10 @@
+public Number convert(Object source, Class<? extends Number> toType, Number vDefault) {
+try {
+if (toType.isPrimitive() &amp;&amp; vDefault == null) {
+if (Double.TYPE.equals(toType)) {
+if (toType.isInstance(source)) {
+return toType.cast(source);
+}
+BigDecimal decimal = null;
+if (source instanceof Boolean) {
+

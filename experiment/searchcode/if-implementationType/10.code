@@ -1,0 +1,15 @@
+Annotation annotation = implementationType.getAnnotation(annotationType);
+
+if(annotation != null){
+result = implementationType;
+} else {
+Class<?> [] interfaces = implementationType.getInterfaces();
+break;
+}
+}
+implementationType = implementationType.getSuperclass();
+}
+}
+
+if(LOG.isLoggable(Level.FINER)){
+

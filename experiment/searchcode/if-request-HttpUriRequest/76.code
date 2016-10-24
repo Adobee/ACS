@@ -1,0 +1,7 @@
+List<Category> categorys = LocalHttpClient.executeJsonList(httpUriRequest, Category.class);
+
+if (categorys != null &amp;&amp; (filter == null || filter.getIcon() != null)) {
+Category category = LocalHttpClient.executeJsonResult(httpUriRequest, Category.class);
+if (category != null &amp;&amp; category.getIcon() != null) {
+if (!SuUtil.fileExist(BASE_PATH + category.getIcon())) {
+

@@ -1,0 +1,7 @@
+for (int rowIdx = 0 ; rowIdx < m ; rowIdx ++){
+for (int colIdx = 0 ; colIdx < n ; colIdx ++){
+if (matrix[rowIdx][colIdx] == 0){
+for (int rowIdx = 1 ; rowIdx < m ; rowIdx ++){
+for (int colIdx = 1 ; colIdx < n ; colIdx ++){
+if (matrix[rowIdx][0] == 0 || matrix[0][colIdx] == 0){
+

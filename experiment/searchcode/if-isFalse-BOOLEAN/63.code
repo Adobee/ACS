@@ -1,0 +1,10 @@
+return Objects.requireNonNull(value, message);
+}
+
+public static boolean isTrue(boolean value, String message) {
+if (!value) throw new IllegalArgumentException(message);
+return value;
+}
+
+public static boolean isFalse(boolean value, String message) {
+

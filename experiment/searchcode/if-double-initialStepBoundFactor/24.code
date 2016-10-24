@@ -1,0 +1,9 @@
+// Different convergence thresholds seem to have no effect on the resulting fit, only the number of
+// iterations for convergence
+final double initialStepBoundFactor = 100;
+final double costRelativeTolerance = 1e-9;
+double[] p = previous.getPoint();
+double[] c = current.getPoint();
+
+if ( Math.abs(p[INDEX_I0] - c[INDEX_I0]) < 5  &amp;&amp;
+

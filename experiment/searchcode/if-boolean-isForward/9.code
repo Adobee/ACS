@@ -1,0 +1,12 @@
+public class WaveyBlock extends Block
+{
+
+private boolean isForward;
+private int count;
+public WaveyBlock(int x, int y, int width, int height, int deltaX,
+@Override
+public void update(long delta) {
+
+this.y += (delta * deltaY) / 1000;
+if(isForward)
+

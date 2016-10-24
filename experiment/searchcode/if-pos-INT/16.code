@@ -1,0 +1,10 @@
+public class Solution
+{
+public void sortColors(int[] A)
+{
+int zPos = 0;  //0
+int oPos = 0;  //1
+int tPos = 0;  //2
+
+for(int i = 0 ; i < A.length; i++)
+

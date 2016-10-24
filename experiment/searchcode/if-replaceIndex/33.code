@@ -1,0 +1,6 @@
+public static void insertIntoSorted(int[] ar) {
+int replaceIndex=0;
+int lastElement=ar[ar.length - 1 ];
+for (int i = ar.length - 2 ; i >= 0; i--) {
+if(ar[i] >= lastElement){
+

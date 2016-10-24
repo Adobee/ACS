@@ -1,0 +1,10 @@
+double sum = 1;
+
+double prevChiselnik = 1;
+long prevZnamennik = 1;
+
+for (int n = 1; ; n++) {
+prevZnamennik = prevZnamennik * (2*n - 1) * (2*n);
+double dodanok = prevChiselnik / prevZnamennik;
+if (Math.abs(dodanok) <= precision) {
+

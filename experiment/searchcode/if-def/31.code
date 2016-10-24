@@ -1,0 +1,10 @@
+import org.activebpel.rt.util.AeUtil;
+
+/**
+* Visitor used to deflate the HtDef if the def has empty containers, such as, {@link AePeopleAssignmentsDef} having an
+* @see org.activebpel.rt.ht.def.visitors.AeAbstractHtDefVisitor#visit(org.activebpel.rt.ht.def.AePeopleAssignmentsDef)
+*/
+public void visit(AePeopleAssignmentsDef aDef)
+{
+if (aDef.getPotentialOwners() != null)
+

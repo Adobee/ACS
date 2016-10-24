@@ -1,0 +1,13 @@
+return DATA_MASKS[paramInt];
+}
+
+abstract boolean isMasked(int paramInt1, int paramInt2);
+
+final void unmaskBitMatrix(BitMatrix paramBitMatrix, int paramInt)
+for (int j = 0; j < paramInt; j++)
+if (isMasked(i, j))
+paramBitMatrix.flip(j, i);
+}
+
+private static class DataMask000 extends DataMask
+

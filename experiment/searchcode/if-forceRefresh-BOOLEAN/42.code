@@ -1,0 +1,8 @@
+beforeLoad();
+Object object = cache.get(keyString);
+if (forceRefresh || object == null) {
+ret = getContent();
+public List<HotTopicEntity> getHotTopicList(boolean forceRefresh)
+throws Exception {
+return (new ServiceCallable<List<HotTopicEntity>>() {
+

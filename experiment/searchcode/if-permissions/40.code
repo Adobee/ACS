@@ -1,0 +1,7 @@
+boolean has=true;
+if(permissions!=null &amp;&amp; permissions.length!=0)
+{
+for (int i = 0; i < permissions.length; i++)
+int result = ContextCompat.checkSelfPermission(activity, permissions[i]);
+if (result != PackageManager.PERMISSION_GRANTED) {
+

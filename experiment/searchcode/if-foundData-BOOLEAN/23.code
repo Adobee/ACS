@@ -1,0 +1,13 @@
+String[] mapData = new String[] {&quot;&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;};
+int index = 0;
+boolean foundData = false;
+
+for (String element : data) {
+if (element.startsWith(&quot;width=&quot;))
+mapData[0] = element.substring(&quot;width=&quot;.length()) + &quot; 25 25&quot;;
+
+if (element.startsWith(&quot;data=&quot;)) {
+index++;
+foundData = true;
+continue;
+

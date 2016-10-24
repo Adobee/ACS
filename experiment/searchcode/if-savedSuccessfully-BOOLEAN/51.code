@@ -1,0 +1,10 @@
+savedSuccessfully = bitmap.compress(compressFormat,
+compressQuality, os);
+} finally {
+TIoUtils.closeSilently(os);
+if (savedSuccessfully &amp;&amp; !tmpFile.renameTo(imageFile)) {
+savedSuccessfully = false;
+}
+if (!savedSuccessfully) {
+tmpFile.delete();
+

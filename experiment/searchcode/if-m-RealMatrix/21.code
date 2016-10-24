@@ -1,0 +1,11 @@
+import org.apache.commons.math3.linear.RealMatrix;
+
+import com.tianyichen.DBN.DBN;
+import com.tianyichen.cDBN.cDBN;
+import com.tianyichen.cost.CrossEntropyCost;
+System.out.println(this.layerSizes);
+
+if(needPretrain==false){
+for(int i=0;i<this.num_sigmoidlayers;i++){
+RealMatrix weight=this.initializeWeights(this.layerSizes.get(i), this.layerSizes.get(i+1));
+

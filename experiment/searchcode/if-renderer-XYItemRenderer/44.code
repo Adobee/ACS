@@ -1,0 +1,7 @@
+import org.jfree.chart.renderer.xy.XYItemRenderer;
+import org.jfree.chart.urls.CategoryURLGenerator;
+import org.jfree.chart.urls.XYURLGenerator;
+public void configure(ChartView view, ConfigurableRenderer renderer) {
+if (renderer instanceof AbstractCategoryItemRenderer) {
+setupUrls((GridChartView) view, (AbstractCategoryItemRenderer) renderer);
+

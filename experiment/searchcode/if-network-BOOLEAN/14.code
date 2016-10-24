@@ -1,0 +1,9 @@
+public class NetworkUtility {
+
+public static boolean isNetworkAvailable(Context context) {
+NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+if (networkInfo == null) {
+return false;
+}
+NetworkInfo.State network = networkInfo.getState();
+

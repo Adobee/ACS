@@ -1,0 +1,14 @@
+instance = new ThreadFuncThreadsPool();
+}
+
+return instance;
+}
+
+public void registerThread(Thread th)
+{
+long threadId = th.getId();
+this.threadMap.put(new Long(threadId), th);
+}
+
+public Thread getThread(long threadId)
+

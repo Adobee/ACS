@@ -1,0 +1,10 @@
+* @author Adrián García Lomas
+*/
+public class FixedStack<T> extends Stack<T> {
+
+int maxSize = 0;
+
+@Override public T push(T object) {
+if (maxSize > size()) {//当超出时不会再push
+return super.push(object);
+

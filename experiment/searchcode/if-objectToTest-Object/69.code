@@ -1,0 +1,8 @@
+private TcapEventListener mockTcapListener;
+@Mock
+private IDialogue mockDialogue;
+
+private IListenerState objectToTest;
+public void shouldThrowExceptionIfVendorIndEventNotTcStateInd() throws Exception {
+objectToTest.handleEvent(new TcBindIndEvent(mockTcapListener));
+

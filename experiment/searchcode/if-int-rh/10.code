@@ -1,0 +1,13 @@
+public static int trapWater(int[] A) {
+int w = 0;
+int l = 0, r = A.length - 1;
+int lh = A[l], rh = A[r];
+while (l < r) {
+if (lh <= rh) {
+w += lh;
+l++;
+lh = Math.max(lh, A[l]);
+
+} else {
+w += rh;
+

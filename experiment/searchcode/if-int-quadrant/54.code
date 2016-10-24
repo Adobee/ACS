@@ -1,0 +1,9 @@
+private final int SIZE_ONE_QUADRANT = 64;
+private final int MIN_QUADRANT_COORDINATE = 0;
+private final int MAX_QUADRANT_COORDINATE = 512;
+this.battleField = battleField;
+}
+
+public String scanQuadrant(int v, int h) {
+return battleField[v][h];
+

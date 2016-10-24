@@ -1,0 +1,7 @@
+Map<String, URLRewrite> tempMap = new HashMap<String, URLRewrite>();
+if (null != all) {
+for (URLRewrite urlRewrite : all) {
+for (String path : this.rewriteMap.keySet()) {
+URLRewrite urlRewrite = this.rewriteMap.get(path);
+if (null != urlRewrite &amp;&amp; urlRewrite.getTarget().equals(target)) {
+

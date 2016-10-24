@@ -1,0 +1,10 @@
+dynamicWriter.writerDispatch.encode(dynamicWriter.writer, dynamicWriter.ringBuffer);
+}
+
+public void reset(boolean clearData) {
+
+writerDispatch.activeScriptCursor = 0;
+
+if (clearData) {
+writerDispatch.dictionaryFactory.reset(writerDispatch.rIntDictionary);
+

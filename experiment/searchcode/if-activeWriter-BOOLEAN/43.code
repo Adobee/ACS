@@ -1,0 +1,17 @@
+activeReaders = new LockManager(trace);
+}
+
+/*
+* --------- Methods ---------
+*/
+
+/**
+* If a writer is active
+*/
+protected boolean isWriterActive() {
+return activeWriter.isActiveLock();
+}
+
+/**
+* If one or more readers are active
+

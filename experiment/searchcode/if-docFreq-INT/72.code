@@ -1,0 +1,9 @@
+private String name;
+private double score;
+private double idf;
+private int freq;
+
+public Keyword(String name, int docFreq, int weight) {
+this.name = name;
+this.idf = Math.log(10000 + 10000.0 / (docFreq + 1));
+

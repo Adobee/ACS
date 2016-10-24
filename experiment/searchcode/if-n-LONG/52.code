@@ -1,0 +1,15 @@
+public static long y(long n, long k)
+{
+if(k >= n) return x(k);
+
+else
+{
+return ((long)Math.pow(2,60)) - 1 - max(y(n,2*k), y(n,2*k+1));
+}
+}
+
+public static long x(long k)
+{
+if(k == 0) return 0;
+if(k == 1) return 1;
+

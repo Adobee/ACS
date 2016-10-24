@@ -1,0 +1,12 @@
+public class Solution {
+public boolean canJump(int[] A) {
+int i, right;
+
+for(i=1, right=A[0]; i<A.length &amp;&amp; i<=right; i++){
+if(right<A[i]+i) right = A[i]+i;
+}
+
+return right>=A.length-1;
+}
+}
+

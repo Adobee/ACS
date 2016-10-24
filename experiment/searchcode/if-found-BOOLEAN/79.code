@@ -1,0 +1,12 @@
+public static void main(String[] args) {
+boolean[] sieve = EulerMath.getSieve(N);
+boolean found = false;
+
+for(int i = N-1; i > 1 &amp;&amp; !found; i--)
+if( sieve[i] &amp;&amp; EulerMath.isPandigital(i, 1) ) {
+System.out.println(i);
+found = true;
+}
+}
+}
+

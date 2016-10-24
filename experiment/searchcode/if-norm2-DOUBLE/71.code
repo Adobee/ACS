@@ -1,0 +1,8 @@
+double sum = arr.sum(Integer.MAX_VALUE).getDouble();
+return !Double.isFinite(sum);
+}
+
+protected INDArray clampDerivativeIfNeeded(INDArray arr) {
+double norm2 = Nd4j.norm2(arr).getDouble(0);
+double cutoff = 500;
+

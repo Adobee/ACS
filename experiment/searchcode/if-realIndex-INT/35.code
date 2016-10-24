@@ -1,0 +1,10 @@
+List<SimilarBlock> similarBlocks = new ArrayList<SimilarBlock>();
+int initial = 0;
+int i = 0;
+int realIndex = 0;
+while (i < this.alignmentA.length() - 2){
+if (a1 != b1 &amp;&amp; a2 != b2){
+int steps = (realIndex - initial) + 1; // Cantidad de pasos
+if(steps > 2){
+SimilarBlock sb = new SimilarBlock(useCaseA, flowA, this.startA + initial, realIndex, this);
+

@@ -1,0 +1,16 @@
+public final class UpdateTimeStamp {
+
+private final long millis;
+
+private UpdateTimeStamp(long millis) {
+this.millis = millis;
+return millis == sunTimestamp.millis;
+}
+
+@Override
+public int hashCode() {
+return (int) (millis ^ (millis >>> 32));
+}
+
+}
+

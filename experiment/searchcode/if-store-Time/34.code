@@ -1,0 +1,9 @@
+Store store = storeDao.queryStoreByID(storeID);
+
+if (store != null) {
+RealStoreAuth newRealStoreAuth = new RealStoreAuth();
+newRealStoreAuth.setSalesman(userID);
+newRealStoreAuth.setApplyTime(new Date());
+
+if (store.getRealStoreAuth() == CRSAuditStatus.STATUS_NOPASS) {
+

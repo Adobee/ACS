@@ -1,0 +1,10 @@
+public class CustomConnectionKeepAliveStrategy implements ConnectionKeepAliveStrategy {
+private long keepAliveDuration = 5 * 1000;
+
+public CustomConnectionKeepAliveStrategy() {
+public CustomConnectionKeepAliveStrategy(long keepAliveDuration) {
+this.keepAliveDuration = keepAliveDuration;
+}
+
+public long getKeepAliveDuration(HttpResponse response, HttpContext context) {
+

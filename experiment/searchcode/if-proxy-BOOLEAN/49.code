@@ -1,0 +1,10 @@
+public class SemaphoreFactory {
+
+public static ProxySemaphore createSemaphore(int limit) {
+if(ProxyHelper.getBoolean(&quot;proxy.distributed&quot;)) {
+return new ZKSemaphore(limit);
+}
+return new JDKSemaphore(limit);
+}
+}
+

@@ -1,0 +1,11 @@
+public static Throwable getSQLException_Cause(Throwable throwable){
+Throwable return_throw = null;
+if(throwable!=null){
+throwable = throwable.getCause();
+}
+if(throwable instanceof SQLException){
+return_throw = throwable;
+}
+}
+return return_throw;
+

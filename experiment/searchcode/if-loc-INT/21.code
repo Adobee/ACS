@@ -1,0 +1,15 @@
+public class LocVec {
+
+int[] loc = new int[3];
+
+public LocVec(int x,int y,int z)
+{
+loc[0] = x;
+loc[1] = y;
+loc[2] = z;
+}
+
+public LocVec(int[] input)
+{
+System.arraycopy(input,0,loc,0,Math.min(3,input.length));
+

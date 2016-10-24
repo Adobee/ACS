@@ -1,0 +1,10 @@
+int[][] m = new int[n][n];
+if (n == 0) return m;
+int col =0, row = 0;
+int d = 1;
+for (int i = 0; i < n*n; i++){
+m[row][col] = i+1;
+if (d%4 == 1){
+if (col + 1 == n - d/4){
+row++;
+

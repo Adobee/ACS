@@ -1,0 +1,13 @@
+public static Double[] FM(Double A1,Double A2,Integer K,Double B1,Double B2)
+{/*
+[分数基本计算函数2.0]
+注：必须和ST函数一起使用
+*/
+double n1=0,n2=0;Double[] re=new Double[2];
+if(K==0){//A+B
+String N1=&quot;&quot;+n1,N2=&quot;&quot;+n2;int a=2;boolean set=true,T2=true,T3=true,T5=true,T7=true;
+double a1=n1,a2=n2;
+while(set){
+if(n2%a==0&amp;&amp;n1%a==0){
+n1=n1/a;n2=n2/a;
+

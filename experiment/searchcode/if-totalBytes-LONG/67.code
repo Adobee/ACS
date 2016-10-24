@@ -1,0 +1,8 @@
+public static class PendingMessageSnapshot extends LargeMessageSnapshot {
+
+private final long sofarBytes, totalBytes;
+
+PendingMessageSnapshot(int id, byte status, long sofarBytes, long totalBytes) {
+super(id, status);
+this.sofarBytes = sofarBytes;
+

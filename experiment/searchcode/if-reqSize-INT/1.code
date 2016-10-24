@@ -1,0 +1,10 @@
+public static Bitmap downSizeBitmap(Bitmap bitmap,int reqSize)  {
+
+int width = bitmap.getWidth();
+int height = bitmap.getHeight();
+
+float scaleWidth = ((float) reqSize) / width;
+float scaleHeight = ((float) reqSize) / height;
+
+Matrix matrix = new Matrix();
+

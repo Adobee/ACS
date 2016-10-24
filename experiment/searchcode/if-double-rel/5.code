@@ -1,0 +1,11 @@
+relDialog.relDesc.percent = relDialog.percDiff;
+
+if(selRelType == RelationType.BEFORE)
+{
+relDialog.relDesc.min = Double.parseDouble(relDialog.minSep.getText());
+relDialog.relDesc.max = Double.parseDouble(relDialog.maxSep.getText());
+}
+else if(selRelType == RelationType.AFTER)
+{
+relDialog.relDesc.min = Double.parseDouble(relDialog.minSep.getText());
+

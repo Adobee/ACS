@@ -1,0 +1,6 @@
+public int compareTo(ComparableProxy<T> o) {
+if (compareValue == null || o.getCompareValue() == null) {
+if (compareValue.getClass() == Long.class || compareValue.getClass() == Integer.class
+|| compareValue.getClass() == Double.class) {
+if (Double.parseDouble(String.valueOf(this.compareValue)) > Double.parseDouble(String.valueOf(o.getCompareValue()))) {
+

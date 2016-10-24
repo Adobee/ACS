@@ -1,0 +1,6 @@
+for (int i = 0; i < ns.length; i++) {
+for (int j = 0; j < ms.length; j++) {
+double dsq = (ns[i][0] - ms[j][0]) * (ns[i][0] - ms[j][0])
++ (ns[i][1] - ms[j][1]) * (ns[i][1] - ms[j][1]);
+if (dsq <= x2) {
+

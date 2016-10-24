@@ -1,0 +1,9 @@
+public class GAnimationTimer extends AnimationTimer {
+
+private final int TO_SECONDS = 1000000000;
+
+private long startTime = 0;
+public void handle(long now) {
+elapsedTime = now - startTime;
+elapsedTimeInSeconds = elapsedTime / (double) TO_SECONDS;
+

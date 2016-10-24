@@ -1,0 +1,8 @@
+private static final int populationSize = 25;
+public static final int sampleSize = 15;
+private double[] score = new double[populationSize];
+for(int count=0; count < this.populationSize ; count++){ pop.add(new Individual(&quot;allZeros&quot;)); }
+}
+else if (&quot;allOnes&quot;.equals(type)){
+for(int count=0; count < this.populationSize ; count++){ pop.add(new Individual(&quot;allOnes&quot;)); }
+

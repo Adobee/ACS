@@ -1,0 +1,9 @@
+for(int i = 0, count = a.getIndexCount(); i < count; i++) {
+int attr = a.getIndex(i);
+if(attr == 0) {
+padding = a.getDimensionPixelSize(attr, -1);
+@Override
+public int getCompoundPaddingLeft() {
+if(mIsRtl)
+return getPaddingLeft();
+

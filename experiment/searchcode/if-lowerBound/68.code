@@ -1,0 +1,6 @@
+private int randomNumber;
+private final Random random;
+private int lowerBound, upperBound;
+private void setBounds(int lowerBound, int upperBound) {
+if ((upperBound <= 0) || (upperBound - lowerBound) <= 1) {
+

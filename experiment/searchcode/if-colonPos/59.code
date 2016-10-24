@@ -1,0 +1,9 @@
+if (s == null)
+throw new IllegalArgumentException(&quot;Passed in a null string&quot;);
+
+int colonPos = s.indexOf (&quot;:&quot;);
+if (colonPos == -1)
+throw new IllegalArgumentException(&quot;Must have a &#39;:&#39; in the time&quot;);
+
+if (s.substring(0,colonPos).equals(&quot;&quot;))
+

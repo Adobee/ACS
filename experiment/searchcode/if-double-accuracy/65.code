@@ -1,0 +1,11 @@
+private Double speed;
+
+private Double courseHeading;
+
+private Double horizontalAccuracy;
+
+private Double vericalAccuracy;
+* @param vericalAccuracy
+*/
+public GeoCoordinate(Double latitude, Double longitude, Double altitude,
+

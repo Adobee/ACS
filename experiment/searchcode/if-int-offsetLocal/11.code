@@ -1,0 +1,7 @@
+return zone;
+}
+if (id.startsWith(&quot;+&quot;) || id.startsWith(&quot;-&quot;)) {
+int offset = parseOffset(id);
+private static synchronized DateTimeZone fixedOffsetZone(String id, int offset) {
+if (offset == 0) {
+

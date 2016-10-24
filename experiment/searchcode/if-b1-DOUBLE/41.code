@@ -1,0 +1,14 @@
+public class double2x2 {
+
+public double a1, a2, b1, b2;
+
+public double2x2(){
+
+}
+
+public double2x2(double a1, double a2, double b1, double b2) {
+public boolean solve(double2 result, double c1,double c2)
+{
+double D = a1*b2 - a2*b1;
+if ( Math.abs(D) > Double.MIN_NORMAL )
+

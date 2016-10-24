@@ -1,0 +1,9 @@
+* Called between each element of a list. This method is only called if more
+* elements are to be visited, i.e., it&#39;s a real &quot;between&quot;.
+*
+* @param parent
+public void caseAExpressionParseUnit(final AExpressionParseUnit node) {
+inAExpressionParseUnit(node);
+if (node.getExpression() != null) {
+node.getExpression().apply(this);
+

@@ -1,0 +1,10 @@
+if (end > textRange) end = textRange;
+
+int s = textP;
+
+while (s < end) {
+if (text[s] == target[targetP]) {
+while (s >= textP) {
+if (text[s] == target[targetP]) {
+int p = s + 1;
+

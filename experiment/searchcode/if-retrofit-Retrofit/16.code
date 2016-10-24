@@ -1,0 +1,7 @@
+public static Retrofit getInstance() {
+Retrofit tRetrofit = retrofit;
+if (retrofit == null) {
+synchronized (RetrofitUtil.class) {
+tRetrofit = retrofit;
+if (tRetrofit == null) {
+

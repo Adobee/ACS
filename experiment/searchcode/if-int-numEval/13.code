@@ -1,0 +1,10 @@
+public void resolveType(Element el, TypeResult result) {
+numEval++;
+if (expression.eval(el)) {
+numTrue++;
+public int resolveType(int cacheId, Element el, TypeResult result) {
+numEval++;
+if (expression.eval(cacheId, el)){
+numTrue++;
+if (finalizeRule != null) {
+

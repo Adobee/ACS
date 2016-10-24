@@ -1,0 +1,10 @@
+import org.springframework.batch.item.file.transform.LineAggregator;
+
+public class CustomerLineAggregator implements LineAggregator<Object> {
+
+private LineAggregator<Customer> customerLineAggregator;
+private LineAggregator<Transaction> transactionLineAggregator;
+
+public String aggregate(Object record) {
+if(record instanceof Customer) {
+

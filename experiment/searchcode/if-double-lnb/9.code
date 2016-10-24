@@ -1,0 +1,7 @@
+for (int b = 1; b <= n / 2; b++) {
+double lnb = (mem[b] == -1) ? (mem[b] = Math.log(b)) : mem[b], lnbm1 = (mem[b + 1] == -1) ? (mem[b + 1] = Math
+.log(b + 1)) : mem[b + 1];
+
+if (lna > ((1 + b) * lnbm1 - (b * lnb))) {
+maxDiv = b + 1;
+

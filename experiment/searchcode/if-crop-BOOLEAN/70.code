@@ -1,0 +1,12 @@
+public boolean generateAt(World aWorld, Random aRand, int x, int y, int z)
+{
+boolean flag = false;
+Block target = aWorld.getBlock(x, y, z);
+if((target.getMaterial() == Material.air || target.isReplaceable(aWorld, x, y, z)) &amp;&amp;
+cropBlock.canBlockStay(aWorld, x, y, z))
+{
+BlockFleCrop.flag = true;
+if(aWorld.setBlock(x, y, z, cropBlock))
+{
+if(aWorld.getTileEntity(x, y, z) instanceof TileEntityCrop)
+

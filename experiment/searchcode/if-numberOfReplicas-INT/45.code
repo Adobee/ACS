@@ -1,0 +1,6 @@
+private final HashFunction hashFunction;
+private final int numberOfReplicas;
+private final SortedMap<Integer, T> circle = new TreeMap<Integer, T>();
+for (int i = 0; i < numberOfReplicas; i++) {
+circle.put(hashFunction.hash(node.toString() + i), node);
+

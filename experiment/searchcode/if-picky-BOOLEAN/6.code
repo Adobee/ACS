@@ -1,0 +1,9 @@
+ResultSet rs = preparedStatement.executeQuery();
+
+if (rs.next()) {
+Picky picky = fillPicky(rs);
+* Save picky in the database. Returns true if everything went well else false.
+*/
+public boolean save(Picky picky) {
+Photo leftPhoto = photoService.save(picky.getLeftPhoto().getBase64Image());
+

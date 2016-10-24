@@ -1,0 +1,14 @@
+public PointNDimension() {
+super();
+
+}
+
+public PointNDimension(double[] coords) {
+dimension = coords.length;
+throw new DimensionOutOfBounds();
+}
+}
+
+public double getCoordinate(int dimension) throws DimensionOutOfBounds {
+if ( (dimension >= 1) || (dimension <= this.dimension)) {
+

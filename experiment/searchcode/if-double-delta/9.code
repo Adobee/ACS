@@ -1,0 +1,8 @@
+private final double Delta;
+private final double delta;
+
+public LinearMeasurement(double Delta, double delta) {
+this.Delta = Delta;
+this.delta = delta;
+if (delta < 0) {
+

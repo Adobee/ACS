@@ -1,0 +1,7 @@
+user = (FhiUser) request.getSession().getAttribute(FhiConfig.USER_NAME);
+if (user == null) {
+return mapping.findForward(&quot;login&quot;);
+FhiPicture pic = pictureForm.getPic();
+pic.setAutoCode(systemService.isAutoCode(FhiConfig.AutoCode_Picture));
+if(pic.getId()!=null){
+

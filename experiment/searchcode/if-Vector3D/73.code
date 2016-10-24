@@ -1,0 +1,12 @@
+import sim.util.Double3D;
+
+public class Vector3D implements java.io.Serializable
+{
+
+public double x;
+public final Vector3D setLength( double dist )
+{
+if( dist == 0 )
+return new Vector3D( 0, 0, 0 );
+if( x == 0 &amp;&amp; y == 0 &amp;&amp; z == 0 )
+

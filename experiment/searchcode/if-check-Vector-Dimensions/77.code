@@ -1,0 +1,9 @@
+if (v instanceof ArrayRealVector) {
+return add(((ArrayRealVector) v).data);
+} else {
+checkVectorDimensions(v);
+public RealVector add(double[] v) {
+final int dim = v.length;
+checkVectorDimensions(dim);
+ArrayRealVector result = new ArrayRealVector(dim);
+

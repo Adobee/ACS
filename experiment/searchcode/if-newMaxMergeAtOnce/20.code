@@ -1,0 +1,9 @@
+this.reclaimDeletesWeight = componentSettings.getAsDouble(&quot;reclaim_deletes_weight&quot;, 2.0d);
+
+fixSettingsIfNeeded();
+
+logger.debug(&quot;using [tiered] merge policy with expunge_deletes_allowed[{}], floor_segment[{}], max_merge_at_once[{}], max_merge_at_once_explicit[{}], max_merged_segment[{}], segments_per_tier[{}], reclaim_deletes_weight[{}]&quot;,
+// max merge at once should be at least 2
+if (newMaxMergeAtOnce <= 1) {
+newMaxMergeAtOnce = 2;
+

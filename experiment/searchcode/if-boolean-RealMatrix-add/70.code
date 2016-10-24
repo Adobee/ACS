@@ -1,0 +1,6 @@
+c=cell.FuncC(x,theta,u_mes,dt);
+RealMatrix tmp=c.multiply(vx).multiply(c.transpose()).add(vv);
+RealMatrix Rx= new CholeskyDecomposition(tmp).getL();
+RealMatrix msq=phi.transpose().multiply(phi).add(iddt);
+RealMatrix theta_rls=new Array2DRowRealMatrix(new double[][] {{theta.getEntry(3, 0)}, {theta.getEntry(1, 0)},{theta.getEntry(2, 0)}});   //rendering the theta that used in the update
+

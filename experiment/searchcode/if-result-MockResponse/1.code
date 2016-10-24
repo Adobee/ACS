@@ -1,0 +1,5 @@
+final Cookie expectedCookie = new MyCookie(&quot;GOOD NAME&quot;, &quot;BAD.VALUE&quot;);
+
+Mock mockResponse = new Mock(HttpServletResponse.class);
+mockResponse.expect(&quot;addCookie&quot;, new FullConstraintMatcher(new IsEqual(expectedCookie)));
+

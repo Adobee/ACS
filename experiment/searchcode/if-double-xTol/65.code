@@ -1,0 +1,9 @@
+//        diag = new double[ndim];
+//        w = new double[nwork];
+//
+//        double f, eps, xtol, gtol, stpmin, stpmax;
+//    diag = new double [ ndim ];
+//    w = new double [ nwork ];
+//
+//    double f, eps, xtol, gtol, t1, t2, stpmin, stpmax;
+

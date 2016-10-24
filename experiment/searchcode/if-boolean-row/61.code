@@ -1,0 +1,7 @@
+int dfs(int row, int n){
+if(row == n) return 1;
+int answer = 0;
+for(int c = 0; c < n; c++)
+if(valid(row, c, n)){
+col[c] = used1[row + c] = used2[n - 1 - row + c] = true;
+

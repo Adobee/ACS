@@ -1,0 +1,7 @@
+BufferedWriter trigramData = new BufferedWriter(new FileWriter(trigramDataFilePathname));
+BufferedWriter trigramCount = new BufferedWriter(new FileWriter(trigramCountFilePathname));
+trigramData.write(&quot;\t&quot; + prevGram2ID + &quot;\t&quot; + df.format(rt));
+count++;
+}
+trigramCount.write(Long.toString(count));
+

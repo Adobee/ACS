@@ -1,0 +1,10 @@
+protected void shoot(double targetX, double targetY)
+{
+new Laser(this, targetX, targetY, this.angle);
+protected void shoot(double targetX, double targetY, double angle)
+{
+new Laser(this, targetX, targetY, angle);
+}
+
+@Override
+

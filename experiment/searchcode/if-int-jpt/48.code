@@ -1,0 +1,9 @@
+*     Oracle - initial API and implementation
+******************************************************************************/
+package org.eclipse.jpt.jaxb.core.internal;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import org.eclipse.jpt.common.core.JptResourceType;
+import org.eclipse.jpt.common.core.internal.utility.ContentTypeTools;
+

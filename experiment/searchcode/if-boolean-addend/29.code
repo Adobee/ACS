@@ -1,0 +1,10 @@
+private long entryIndex;
+private long addend;
+private Type type;
+
+public ELFRelocation(ByteSequence seq, boolean hasAddend, boolean elf64) {
+long typ;
+
+if(elf64) {
+address = seq.readSQword();
+

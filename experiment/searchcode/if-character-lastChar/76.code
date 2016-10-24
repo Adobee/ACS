@@ -1,0 +1,9 @@
+char lastChar = input[i].charAt(input[i].length()-1);
+if(adjList.containsKey(firstChar)) {
+adjList.get(firstChar).add(lastChar);
+}
+else {
+List<Character> newAdjLst = new LinkedList<Character>();
+newAdjLst.add(lastChar);
+adjList.put(firstChar,newAdjLst);
+

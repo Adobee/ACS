@@ -1,0 +1,8 @@
+* Called at the start of the tag. It checks if the loop needs to be performed.
+*/
+public int doStartTag() throws JspException
+{
+this.loopIndex = new Integer(0);
+
+if(listItems != null &amp;&amp; listItems.size() > 0 &amp;&amp; loopIndex < listItems.size())
+

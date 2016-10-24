@@ -1,0 +1,8 @@
+private ArrayList<String> stack = new ArrayList<String>();
+private int listSize; // Not necessary, but is less intensive than calling .size()
+stack.add(pusher); // Add to end. Other methods read from (listSize - index) instead of index
+listSize++;
+}
+public String pop() {
+if (listSize > 0) {
+

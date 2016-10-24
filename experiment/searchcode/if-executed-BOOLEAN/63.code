@@ -1,0 +1,15 @@
+public class Undo extends Command {
+boolean wasExecuted;
+Undoable lastExecuted;
+
+public Undo() {
+this.wasExecuted = false;
+return lastExecuted.getUndoMessage();
+}
+
+public Undoable getLastExecutedCommand() {
+return lastExecuted;
+}
+
+public boolean isExecuted() {
+

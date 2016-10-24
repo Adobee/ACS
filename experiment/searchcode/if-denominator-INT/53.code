@@ -1,0 +1,8 @@
+denominator = denominator.divide(gcd);
+if (denominator.compareTo(BigInteger.ZERO) < 0) {
+z.numerator = numerator.negate();
+} else {
+z.numerator = numerator;
+}
+if (denominator.compareTo(BigInteger.ZERO) < 0) {
+

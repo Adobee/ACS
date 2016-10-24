@@ -1,0 +1,7 @@
+public void write(DataOutput dataOutput) throws IOException {
+if (!TYPE.MATRIX.equals(type)) {
+int v = (vectorElemValues.size() << 2) | (type.getValue() &amp; 0x03);
+WritableUtils.writeVInt(dataOutput, v);
+for (int i = 0; i < vectorElemValues.size(); i++) {
+if (vectorElemValues.getQuick(i) != -1) {
+

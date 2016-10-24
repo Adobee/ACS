@@ -1,0 +1,9 @@
+return branch.getBranchIndex() == ((Integer) expectedValue)
+.intValue();
+}
+} else if (P_POLICY_ID.equals(property)) {
+if (expectedValue == null)
+int x1 = prefPos == null ? 0 : prefPos.x;
+int x2 = expPos == null ? 0 : expPos.x;
+int y1 = prefPos == null ? 0 : prefPos.y;
+

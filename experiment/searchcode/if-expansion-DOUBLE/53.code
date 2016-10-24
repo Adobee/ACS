@@ -1,0 +1,16 @@
+final double m2 = adxcdy - adycdx;
+final double m3 = bdxcdy - bdycdx;
+final double det = m1 * cdz - m2 * bdz + m3 * adz;
+
+if (adxbdy < 0) {
+adz = -adz;
+}
+if (bdz < 0) {
+bdz = -bdz;
+}
+if (cdz < 0) {
+cdz = -cdz;
+}
+
+double errbound = (adxbdy + adybdx) * cdz + (adxcdy + adycdx) * bdz
+

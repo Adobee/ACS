@@ -1,0 +1,9 @@
+public class SimulatorFutureTask extends FutureTask<SimulatorResultsData> {
+
+private SimulatorCallable simulatorCallable;
+
+public SimulatorFutureTask(SimulatorCallable callable) {
+super(callable);
+
+if (callable == null) {
+

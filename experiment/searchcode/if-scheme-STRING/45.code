@@ -1,0 +1,14 @@
+this.schemeHmDao.save(schemeHm);
+}
+
+
+public SchemeHm findOne(String id)
+{
+return this.schemeHmDao.findOne(id);
+* @return
+*/
+@Transactional
+public SchemeHm incrfAmount(long amount, String id)
+{
+SchemeHm scheme = this.schemeHmDao.findOne(id);
+

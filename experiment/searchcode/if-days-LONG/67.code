@@ -1,0 +1,8 @@
+return string.substring(0, 1).toUpperCase() + string.substring(1);
+}
+
+public static String getDaysLeft(long deadline) {
+long now = System.currentTimeMillis() / 1000;
+long timeDifference = deadline - now;
+long days = TimeUnit.SECONDS.toDays(timeDifference);
+

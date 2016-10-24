@@ -1,0 +1,11 @@
+java.io.BufferedReader br = new java.io.BufferedReader(isr);//创建一个使用默认大小输入缓冲区的缓冲字符输入流。
+
+String temp;
+
+int index=0;
+
+Argument argument= new Argument();
+while ((temp = br.readLine()) != null) {  //按行读取输出流
+
+if (temp.indexOf(&quot;GRE&quot;)!=-1||temp.indexOf(&quot;argument statement&quot;)!=-1) continue;
+

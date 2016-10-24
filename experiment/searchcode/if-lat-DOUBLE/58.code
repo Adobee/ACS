@@ -1,0 +1,13 @@
+import java.io.Serializable;
+
+public class Extents implements Serializable {
+
+private double minLat;
+private double maxLat;
+public void grow(double lat, double lng) {
+if(lat < minLat) {
+minLat = lat;
+}
+if(lat > maxLat) {
+maxLat = lat;
+

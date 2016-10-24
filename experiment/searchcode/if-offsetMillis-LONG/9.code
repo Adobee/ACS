@@ -1,0 +1,13 @@
+public class SpriteAnimation implements MapAnimation {
+public long animateStartTime;
+private int duration;
+public Point position;
+
+private Bitmap[] bitmaps;
+public void setStartTime(int offsetMillis) {
+animateStartTime=System.currentTimeMillis()+offsetMillis;
+}
+
+@Override
+public boolean isAnimationComplete() {
+

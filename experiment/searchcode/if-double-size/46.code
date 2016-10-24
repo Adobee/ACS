@@ -1,0 +1,8 @@
+int sampleSize = size <= testSize ? size -1 : testSize;
+
+ArrayList<Double> returns = new ArrayList<Double>();
+
+for(int i = 0; i < sampleSize; i++) {
+Double current = spotPrices.pollLast();
+Double previous = spotPrices.peekLast();
+

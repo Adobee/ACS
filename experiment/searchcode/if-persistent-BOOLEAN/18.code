@@ -1,0 +1,6 @@
+public abstract void createNotification(PersistentTaskContext persistentTaskContext, PersistentTask persistentTask, PersistentTaskNotificationBuilder persistentTaskNotificationBuilder);
+
+protected BaseParentPersistentTask(String uid, boolean isHidden) {
+for (Entry<Integer, PersistentTaskState> subTask : this.subTasks.entrySet()) {
+if (((PersistentTaskState) subTask.getValue()) != PersistentTaskState.COMPLETED) {
+

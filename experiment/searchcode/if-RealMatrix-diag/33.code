@@ -1,0 +1,10 @@
+RealVector eigenValueVector = diag(eigD).getColumnVector(0);
+RealMatrix eigenVectors = null;
+if (sigma.equals(&quot;lm&quot;)) {
+* @return the estimated rank of A
+*
+*/
+public static int rank(RealMatrix A) {
+RealMatrix S = diag(svd(A)[1]);
+double tol = Math.max(size(A, 1), size(A, 2)) * 1e-10;
+

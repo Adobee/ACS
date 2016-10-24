@@ -1,0 +1,8 @@
+public void addParameterListener(ParameterListener l) {
+parameterListeners.add(l);
+
+// Add this parameter listener to all parameteters
+for (ParameterListener pl : parameterListeners) {
+if (!p.getParameterListeners().contains(pl)) {
+p.addParameterListener(pl);
+

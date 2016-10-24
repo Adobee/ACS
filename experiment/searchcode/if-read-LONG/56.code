@@ -1,0 +1,12 @@
+private long counter;
+public long s, t;
+
+public void readSharedData() {
+
+long stamp = lock.tryOptimisticRead();
+
+read();
+
+if (! lock.validate(stamp)) {
+long readStamp = lock.readLock();
+

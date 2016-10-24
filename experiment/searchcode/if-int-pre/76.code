@@ -1,0 +1,12 @@
+private int[] setPreSum(int sum, int pre, char c) {
+int value = getValueFromSingleRoman(c);
+sum += value;
+if (pre < value) {
+sum -= 2 * pre;
+public int romanToInt(String s) {
+if (s == null || s.length() == 0) {
+return 0;
+}
+int pre = 0;
+int sum = 0;
+

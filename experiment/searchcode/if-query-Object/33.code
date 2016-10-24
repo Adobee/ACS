@@ -1,0 +1,7 @@
+Query query = queryDao.findQueryByName(queryRequest.getQueryName());
+if(query==null) {
+queryResultBuilder.addError(&quot;Query not found: &quot; + queryRequest.getQueryName());
+private void executeNamedQueryAndFormatResult(QueryResultBuilder queryResultBuilder, Query query) {
+List<Map<String, Object>> result = queryExecutor.runQuery(query);
+final String formattedResult = getFormatter().format(result);
+

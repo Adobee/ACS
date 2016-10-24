@@ -1,0 +1,13 @@
+mant = new int[field.getRadixDigits()];
+nans = FINITE;
+this.field = field;
+boolean isLongMin = false;
+if(x == Long.MIN_VALUE) {
+// we must shift it before taking its absolute value
+isLongMin = true;
+++x;
+}
+// set the sign
+if(x < 0) {
+sign = -1;
+

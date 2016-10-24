@@ -1,0 +1,9 @@
+ParseContext.InternalParseContext context = cache.get();
+
+final Mapping mapping = docMapper.mapping();
+if (source.type() != null &amp;&amp; !source.type().equals(docMapper.type())) {
+XContentParser parser = source.parser();
+try {
+if (parser == null) {
+parser = XContentHelper.createParser(source.source());
+

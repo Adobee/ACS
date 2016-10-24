@@ -1,0 +1,7 @@
+queryBuilder.addQueryParameter(Param.NO_CACHE.getKey(), isNoCache() ? &quot;1&quot; : &quot;0&quot;);
+if (!isNoCache()) {
+if (forcedRefresh != null &amp;&amp; forcedRefresh >= 0) {
+queryBuilder.addQueryParameter(Param.REFRESH.getKey(), forcedRefresh.toString());
+} else if (getRefresh() != null) {
+queryBuilder.addQueryParameter(Param.REFRESH.getKey(), getRefresh().toString());
+

@@ -1,0 +1,9 @@
+public static final String DBPASS = &quot;root&quot;;
+private ResultSet result = null;
+private int affectedRows = -1;
+Connection conn = null;
+public void closeConnection() {
+try {
+if (conn != null &amp;&amp; !conn.isClosed()) {
+conn.close();
+

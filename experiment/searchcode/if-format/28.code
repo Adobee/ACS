@@ -1,0 +1,11 @@
+public NumberFormat getFormat(String lang, String letterValue)
+{
+if (lang == null) {
+return defaultFormat;
+(NumberFormat)langTable.get(lang.toLowerCase());
+
+if (format != null) {
+return format;
+}
+int i = lang.lastIndexOf(&#39;-&#39;);
+

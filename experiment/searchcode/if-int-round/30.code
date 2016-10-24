@@ -1,0 +1,9 @@
+int score = 0;
+int round = 0;
+
+for (int frame = 0; frame< 10; frame++){
+if(isStrike(round)) {
+round++;
+} else if(isSpare(round)) {
+score += MAX_ROLL_PINS + spareNextFrameFirstScore(round);
+

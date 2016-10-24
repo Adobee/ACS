@@ -1,0 +1,10 @@
+import org.hamcrest.TypeSafeDiagnosingMatcher;
+import org.joda.time.ReadableInstant;
+
+public final class AfterMatcher extends TypeSafeDiagnosingMatcher<ReadableInstant> {
+private final ReadableInstant rhs;
+
+public AfterMatcher(final ReadableInstant rhs) {
+if (rhs == null) {
+throw new NullPointerException(&quot;null rhs&quot;);
+

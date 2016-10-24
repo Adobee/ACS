@@ -1,0 +1,7 @@
+return new CacheableFor(true,config.getDefaultExpiryInSeconds());
+}
+} else {
+boolean canCache = config.getCacheResponseDecider().isCacheable(cacheControlHeader);
+if (!canCache) {
+return CacheableFor.NOT_CACHEABLE;
+

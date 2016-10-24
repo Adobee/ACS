@@ -1,0 +1,16 @@
+public class NotBlank extends AbstractValidator implements Validator {
+
+
+private boolean nullAble = false;
+
+public NotBlank() {}
+
+public NotBlank( boolean nullAble ) {
+this.nullAble = nullAble;
+}
+
+@Override
+public boolean validateV( Object v ) {
+
+if( v == null ) {
+

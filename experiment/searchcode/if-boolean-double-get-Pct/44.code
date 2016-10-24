@@ -1,0 +1,7 @@
+if (msd != null) {
+Element measStat = msd.getChild(&quot;meas_stats&quot;);
+double totalCpuPct = getDoubleValue(measStat, &quot;cps_pct&quot;);
+this.addMetric(this.ea.getId(), &quot;STROBE_TOTAL_CPU_PCT&quot;, null, ElementType.EA, totalCpuPct);
+
+double totalWaitPct = getDoubleValue(measStat, &quot;wait_pct&quot;);
+

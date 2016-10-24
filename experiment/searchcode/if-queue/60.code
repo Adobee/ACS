@@ -1,0 +1,16 @@
+board[i][j] = &#39;X&#39;;
+}
+}
+}
+}
+private void queueO(Queue<Integer> queue, char[][] board, int i, int j) {
+if (i < 0 || i >= rows || j < 0 || j >= cols) {
+int pos = i * cols + j;
+if (board[i][j] == &#39;O&#39;) {
+queue.offer(pos);
+board[i][j] = &#39;M&#39;;
+}
+}
+
+}
+

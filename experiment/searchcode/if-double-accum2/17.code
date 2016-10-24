@@ -1,0 +1,12 @@
+* @see org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic#increment(double)
+*/
+public void increment(final double d) {
+if (incMoment) {
+moment.increment(d);
+public double getResult() {
+
+if (moment.n < 3) {
+return Double.NaN;
+}
+double variance = moment.m2 / (double) (moment.n - 1);
+

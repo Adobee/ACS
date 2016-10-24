@@ -1,0 +1,9 @@
+throw new UnsupportedOperationException(&quot;The goal this proposition belongs to is &quot;
++ &quot;operationalized, cannot set goal type as assumption&quot;);
+} else if (g.isRootGoal() &amp;&amp; !goaltype.prefix.equalsIgnoreCase(&quot;/m/&quot;)) {
+* @return true if this goal oriented proposition is an assumption, false
+* otherwise.
+*/
+public boolean isAssumption() {
+return goaltype.prefix.equalsIgnoreCase(&quot;/a/&quot;);
+

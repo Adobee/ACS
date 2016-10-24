@@ -1,0 +1,11 @@
+public static Field getFieldByNameIncludingSuperclasses( String fieldName, Class clazz  )
+{
+Field retValue = null;
+
+try
+{
+retValue = clazz.getDeclaredField( fieldName );
+Class superclass = clazz.getSuperclass();
+
+if ( !Object.class.equals(  superclass ) )
+

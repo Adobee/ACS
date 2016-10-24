@@ -1,0 +1,8 @@
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder()
+.setType(MultipartBody.FORM);   //Here you can add the fix number of data.
+multipartBuilder.addFormDataPart(&quot;sitecode&quot;, siteCode);
+
+//MultipartBody requestBody = multipartBuilder.build();
+
+RequestBody requestBody = multipartBuilder.build();
+

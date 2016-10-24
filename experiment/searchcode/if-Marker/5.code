@@ -1,0 +1,15 @@
+return false;
+}
+if (getClass() != obj.getClass())
+{
+return false;
+}
+
+Marker other = (Marker) obj;
+
+if (markerDescription == null)
+{
+if (other.markerDescription != null)
+{
+return false;
+

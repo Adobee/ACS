@@ -1,0 +1,8 @@
+public void addFastElementRemovedListener(Listener<T> listener) {
+if (fast_element_removed == null) fast_element_removed = new Event<>();
+if (!fast_element_added.hasListeners()) fast_element_added = null;
+}
+@Override
+public void removeFastElementRemovedListener(Listener<T> listener) {
+if (fast_element_removed == null) return;
+

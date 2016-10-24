@@ -1,0 +1,8 @@
+ratio.getCondition1().getProject().getTag(), ratio.getId()).uniqueResult();
+if (uniqueResult6 != null) {
+min = (Double) uniqueResult6;
+ratioDistributionsByRatio.put(key, ratioDistribution);
+} else {
+if (!Double.isInfinite(ratio.getValue())) {
+final RatioDistribution ratioDistribution = ratioDistributionsByRatio.get(key);
+

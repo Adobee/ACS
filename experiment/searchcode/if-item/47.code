@@ -1,0 +1,11 @@
+public void addItem(ListItem item)
+{
+if (firstItem == null) firstItem = item;
+else firstItem.addItem(item);
+}
+
+public void printList()
+{
+if (firstItem != null) firstItem.printList();
+else System.out.println(&quot;List is null&quot;);
+

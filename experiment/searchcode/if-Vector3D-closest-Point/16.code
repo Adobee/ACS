@@ -1,0 +1,12 @@
+ray.setIntersectionPoint(ray.getOrigin().add(ray.getDirection().multipy(t)));
+return true;
+}
+
+@Override
+public Vector3D getSurfaceNorm(Vector3D point) {
+return point.minus(origin);
+}
+
+@Override
+public Vector3D getPointNorm(Vector3D point) {
+

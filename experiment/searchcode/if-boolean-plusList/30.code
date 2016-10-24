@@ -1,0 +1,7 @@
+node.setAttribute(Boolean.TRUE);
+for (final Hyperplane<S> hyperplane : hyperplanes) {
+if (node.insertCut(hyperplane)) {
+if (node.getCut() == null) {
+// if we find an inside node, the region is not empty
+return !((Boolean) node.getAttribute());
+

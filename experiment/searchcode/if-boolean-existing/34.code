@@ -1,0 +1,14 @@
+super(ore);
+}
+
+public boolean replaceExisting = false;
+
+@Override
+public ConfigOption loadValue(Configuration c, String category, String comment) {
+return loadExample(c);
+}
+
+super.loadValue(c, category, comment);
+if (enabled) {
+replaceExisting = c.get(category, &quot;ReplaceExisting&quot;, replaceExisting).getBoolean();
+

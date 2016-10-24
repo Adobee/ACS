@@ -1,0 +1,9 @@
+private static final String AT_SYMBOL = &quot;@&quot;;
+
+private String username;
+private int start;
+
+public Mention(String username, int start) {
+if (!username.contains(AT_SYMBOL)) {
+throw new IllegalArgumentException(&quot;This username doesn&#39;t start with @. Instead of passing &quot; + username + &quot;, pass @&quot; + username);
+

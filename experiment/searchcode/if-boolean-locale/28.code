@@ -1,0 +1,13 @@
+LocaleData localeData = extractLocaleData();
+if (localeData == null) {
+return null;
+}
+return localeData.value();
+Locale[] localeDataArray = extractLocales();
+
+if (localeDataArray == null) {
+return null;
+}
+
+String[] names = new String[localeDataArray.length];
+

@@ -1,0 +1,7 @@
+@Override public Response get(Request request) throws IOException {
+CacheResponse javaResponse = getJavaCachedResponse(request);
+if (javaResponse == null) {
+return null;
+}
+return JavaApiConverter.createOkResponseForCacheGet(request, javaResponse);
+

@@ -1,0 +1,11 @@
+public class TorqueMovingAverage {
+
+private int numberOfMoves = 0;
+private ArrayList<Double> previousMoves;
+
+public TorqueMovingAverage() {
+int denominator = 0;
+double numerator = 0;
+for (double move : previousMoves) {
+if (move != 0.0)
+

@@ -1,0 +1,8 @@
+public double heuristic(BlockPos pos) {//mostly copied from GoalBlock
+double xDiff = pos.getX() - this.x;
+double zDiff = pos.getZ() - this.z;
+return calculate(xDiff, zDiff);
+}
+public static double calculate(double xDiff, double zDiff) {
+return calculate(xDiff, zDiff, 0);
+

@@ -1,0 +1,7 @@
+str.append(&quot;            &quot;).append(&quot;<div class=\&quot;panel-body\&quot;>&quot;).append(&quot;\n&quot;);
+for (Map<String, String> f : FIELDS) {
+if (!f.get(&quot;name&quot;).equals(&quot;id&quot;) &amp;&amp; !f.get(&quot;name&quot;).equals(&quot;active&quot;)) {
+str.append(&quot;    &quot;).append(&quot;title: &#39;&quot;).append(CLASS_NAME).append(&quot;&#39;,&quot;).append(&quot;\n&quot;);
+for (Map<String, String> f : FIELDS) {
+if (!f.get(&quot;name&quot;).equals(&quot;id&quot;) &amp;&amp; !f.get(&quot;name&quot;).equals(&quot;active&quot;) &amp;&amp; !f.get(&quot;type&quot;).contains(&quot;List&quot;)) {
+

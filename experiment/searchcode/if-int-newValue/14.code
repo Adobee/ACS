@@ -1,0 +1,15 @@
+public DoubleMinMax(IntMinMax rhs) {
+this.min = rhs.min;
+this.max = rhs.max;
+}
+public void init(double newValue) {
+public void update(double newValue) {
+if (newValue < min) {
+min = newValue;
+}
+if (newValue > max) {
+max = newValue;
+}
+}
+}
+

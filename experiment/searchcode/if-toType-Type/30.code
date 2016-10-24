@@ -1,0 +1,10 @@
+public boolean canImplicitCastTo(Type toType) {
+if(toType == this|| toType == FLOAT) return true;
+return false;
+return canConcatenateCastTo(type);
+}
+
+@Override
+public boolean canConcatenateCastTo(Type toType) {
+if(toType == this|| toType == FLOAT || toType == STRING || toType == TEXT) return true;
+

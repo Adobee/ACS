@@ -1,0 +1,11 @@
+this.calendar.set(Calendar.DAY_OF_MONTH, day);
+return this.calendar;
+}
+
+private Calendar berechneTageAbOstersonntag(int tage, boolean addieren)
+{
+this.calendar = this.easterSunday();
+
+if(addieren == true)
+this.calendar.set(Calendar.DAY_OF_YEAR, this.calendar.get(Calendar.DAY_OF_YEAR)+ tage);
+

@@ -1,0 +1,7 @@
+execution = SpringData.getBean(ExecutionDAO.class).findOne(execution.getId());
+if (execution != null) {
+engine.execute(execution);
+logger.info(String.format(&quot;Took %d ms for all submissions&quot;, System.currentTimeMillis() - l));
+
+// check to see if all workflows are done
+

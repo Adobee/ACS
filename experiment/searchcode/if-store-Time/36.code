@@ -1,0 +1,7 @@
+Set<ConstraintViolation<Store>> violations = validator.validate(store);
+if (!violations.isEmpty()) {
+throw new ValidationException(violations.toArray(new ConstraintViolation[0]));
+}
+if (StringUtils.isEmpty(store.getCode())) {
+throw StoreException.valiationError(&quot;Store code must not be empty&quot;);
+

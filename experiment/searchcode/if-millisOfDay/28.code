@@ -1,0 +1,8 @@
+Conjunction conjunction = Restrictions.conjunction();
+
+
+if (StringUtils.isNotBlank(invoiceFilter.getEmployer())) {
+conjunction.add(Restrictions.eq(&quot;emp.shortName&quot;, invoiceFilter.getEmployer()));
+}
+if (!invoiceFilter.getUsers().isEmpty()) {
+

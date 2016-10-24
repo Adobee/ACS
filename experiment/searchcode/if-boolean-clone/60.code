@@ -1,0 +1,11 @@
+public boolean shouldExecute()
+{
+if (clone.getOptions().fight.get())
+{
+if (clone.getAttackTarget() == null || (!clone.shouldProvokeAttack(clone.getAttackTarget()) &amp;&amp; !clone.canAttackEntity(clone.getAttackTarget())))
+EntityLivingBase attack = this.getClosestEntityToAttackExcluding(null);
+if (attack != null)
+{
+clone.setAttackTarget(attack);
+clone.setPath(clone.getNavigator().getPathToEntityLiving(attack));
+

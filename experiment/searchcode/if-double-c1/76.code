@@ -1,0 +1,16 @@
+if(hasZ)
+return c1 ;
+else
+return c1.ignoreZ() ;
+}
+
+public XY getEnd() {
+if(hasZ)
+return c2 ;
+else
+return c2.ignoreZ() ;
+}
+
+public Vector toVector() {
+double deltaX = c2.x() - c1.x() ;
+

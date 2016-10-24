@@ -1,0 +1,8 @@
+public void add(Comparable c) {
+if(numberOfElements == capacity) expand();
+int hole = numberOfElements++;
+int right = 2*hole+2;
+int child;
+if(left>numberOfElements){
+elements[hole] = last;
+

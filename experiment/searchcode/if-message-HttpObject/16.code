@@ -1,0 +1,7 @@
+import com.smxydx.vector.util.HttpMimeUtil;
+import io.netty.handler.codec.http.HttpObject;
+import io.netty.handler.codec.http.HttpRequest;
+public HttpObject client2Proxy(HttpObject message) {
+if (message instanceof HttpRequest) {
+HttpRequest nRequest = (HttpRequest) message;
+

@@ -1,0 +1,7 @@
+String transport = args[0].toString().toUpperCase(); 	//transport we are testing
+TransportDetailsObject t = new TransportDetailsObject();
+if (transport.equals(&quot;TRANSPORT_MDS&quot;)){
+t.coverage = new Boolean(TransportInfo.hasSufficientCoverage(TransportInfo.TRANSPORT_MDS));
+}else if (transport.equals(&quot;TRANSPORT_BIS_B&quot;)){
+t.transport = transport;
+

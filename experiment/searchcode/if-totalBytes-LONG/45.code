@@ -1,0 +1,11 @@
+private static final int INTERVAL_MILLISECONDS = 1000;
+
+private long totalBytes;
+private long averageSpeed; // in bytes
+public void update(long numBytes) {
+long now = System.currentTimeMillis();
+
+totalBytes += numBytes;
+
+if (now - speedMarkTimestamp > INTERVAL_MILLISECONDS) {
+

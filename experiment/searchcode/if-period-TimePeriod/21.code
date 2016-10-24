@@ -1,0 +1,8 @@
+criteria.add(Restrictions.eq(&quot;type&quot;, type));
+List<TimePeriod> list = criteria.list();
+if(null != list &amp;&amp; list.size()>0){
+public TimePeriod findTimePeriodBySome(String type){
+TimePeriod timePeriod = null;
+Criteria criteria = o_timePeriodDAO.createCriteria();
+if(StringUtils.isNotBlank(type)){
+

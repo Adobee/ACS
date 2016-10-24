@@ -1,0 +1,11 @@
+.println(&quot;Invalid fill type for the portal, setting to AIR&quot;);
+}
+if (this.fillType == null) {
+this.fillType = FillType.AIR;
+}
+for (int x = min.getBlockX(); x <= max.getBlockX(); x++) {
+for (Loc locs : blocks) {
+Block b = locs.getBlock();
+if (b.isEmpty()) {
+b.setType(fillType.getBlockMaterial());
+

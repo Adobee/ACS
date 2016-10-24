@@ -1,0 +1,8 @@
+if (!smallerStream.hasNext())
+return biggerStream.next();
+if (!biggerStream.hasNext())
+return smallerStream.next();
+
+if (smallerStream.peek() > biggerStream.peek()) {
+IntegerStream tmp = smallerStream;
+

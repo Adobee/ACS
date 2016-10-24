@@ -1,0 +1,11 @@
+import zephyr.plugin.core.api.synchronization.Chrono;
+
+public class ClockStat {
+static final double PeriodUpdateRate = 0.5;
+
+static class PeriodStats {
+public void measure() {
+long lastPeriodNano = chrono.getCurrentNano();
+if (period == -1)
+period = lastPeriodNano;
+

@@ -1,0 +1,11 @@
+public static synchronized void setTracker(Tracker tracker) {
+mTracker = tracker;
+}
+
+private static boolean canSend() {
+// We can only send Google Analytics when ALL the following conditions are true:
+if (mTracker == null) {
+int useProfile;
+if (BuildConfig.DEBUG) {
+LOGD(TAG, &quot;Analytics manager using DEBUG ANALYTICS PROFILE.&quot;);
+

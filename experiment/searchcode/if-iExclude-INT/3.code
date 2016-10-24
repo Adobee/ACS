@@ -1,0 +1,9 @@
+String exclude = cfg.getInitParameter(&quot;exclude&quot;);
+if (exclude != null) {
+for (String x: exclude.split(&quot;,&quot;))
+iExclude.add(x);
+if (!ex.isEmpty())
+q.setException(ex);
+}
+if (!iExclude.contains(q.getUri()) || q.getException() != null) {
+

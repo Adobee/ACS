@@ -1,0 +1,8 @@
+public void addNode(int key, Object object, String name) {
+Node newNode = new Node(key, object, name);
+if (root == null) {
+root = newNode;
+while (true) {
+parent = focusNode;
+if (key < focusNode.key) {
+

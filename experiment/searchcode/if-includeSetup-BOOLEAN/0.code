@@ -1,0 +1,8 @@
+private Object minMaxMeanHHMMSS(Alloc target, Circumstance circ, boolean includeSetup) {
+long min = (long) (TimeUtils.MS_PER_HOUR * target.getMin(circ, includeSetup));
+private String minMaxMean(Alloc a, Alloc.Circumstance circ, boolean includeSetup) {
+return minMaxMean(a, circ, &quot;&quot;, includeSetup);
+}
+
+private String minMaxMean(Alloc a, Alloc.Circumstance circ, String units, boolean includeSetup) {
+

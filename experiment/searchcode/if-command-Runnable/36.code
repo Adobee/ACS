@@ -1,0 +1,12 @@
+@StructurePattern(StructurePatternNames.VECTOR_PATTERN)
+public class CommandList implements CommandListInterface, Runnable {
+
+ArrayList<Runnable> commandList;
+public void run() {
+for (Runnable r: commandList) {
+r.run();
+}
+}
+public void addElement(Runnable r) {
+if (r != null)
+

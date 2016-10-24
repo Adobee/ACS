@@ -1,0 +1,6 @@
+BasicDBList rowPermDataArrayDL = (BasicDBList) rowPermDO.get(PermCTS.DATA_ARRAY);
+if(rowPermDataArrayDL == null || rowPermDataArrayDL.isEmpty()){
+String key = rowPermNode.getString(PermCTS.KEY);
+if(rowControledFields.contains(key)){
+BasicDBObject innerPermDO = (BasicDBObject) rowPermNode.get(PermCTS.PERM);
+

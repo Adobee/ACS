@@ -1,0 +1,10 @@
+Object lhsObj = lhs.getValue();
+Object rhsObj = rhs.getValue();
+
+if ( lhsObj instanceof Integer || rhsObj instanceof Integer ) {
+return new Integer( result );
+}
+
+if ( lhsObj instanceof Double || rhsObj instanceof Double ) {
+double lhsDouble = Coercion.toFloat( lhs.getValue() );
+

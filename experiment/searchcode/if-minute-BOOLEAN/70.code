@@ -1,0 +1,9 @@
+@Override
+public boolean hasNext() {
+if (minuteSteps > 0 &amp;&amp; next.isBeforeOrEqual(last))
+return true;
+else if (minuteSteps < 0 &amp;&amp; next.isAfterOrEqual(last))
+return true;
+else
+return false;
+

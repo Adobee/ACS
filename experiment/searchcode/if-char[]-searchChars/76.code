@@ -1,0 +1,8 @@
+private String[] results = { &quot;No match found&quot; };
+private char[] searchChars;
+
+public FindForm(Table paramTable, Display paramDisplay)
+String str1 = this.findTextBox.getString();
+this.searchChars = new char[10];
+str1.getChars(0, str1.length(), this.searchChars, 0);
+

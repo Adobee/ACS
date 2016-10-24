@@ -1,0 +1,9 @@
+@Override
+public void update() {
+
+if(object.carrier != null){
+if (object.carrier.isAttack()) {
+if (object.currentAnimation != ATTACKING) {
+object.currentAnimation = ATTACKING;
+object.animation.setFrames(object.sprites.get(ATTACKING));
+

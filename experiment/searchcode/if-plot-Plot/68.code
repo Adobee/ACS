@@ -1,0 +1,10 @@
+List<Sensor> sensorList = sensorBo.findAllSensorsForGroup(group.getGroupID());
+
+if(sensorList != null &amp;&amp; !sensorList.isEmpty()){
+JSONObject dataArrayObject = new JSONObject();
+
+
+for(Sensor sensor:sensorList){
+
+JSONArray plotValues = new JSONArray();
+

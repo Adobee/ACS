@@ -1,0 +1,8 @@
+private int numberOfPunches;
+private final HolePStrategy holePuncher;
+
+public HolePScheduler(final int numberOfTrials, final HolePStrategy holePuncher) {
+// 300 -> 5min
+if (numberOfTrials > FIVE_MINUTES) {
+throw new IllegalArgumentException(&quot;numberOfTrials can&#39;t be higher than 300 (5min)!&quot;);
+

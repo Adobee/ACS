@@ -1,0 +1,11 @@
+*      [0] = &quot;some&quot;
+*      [1] = &quot;field.name&quot;
+*/
+public static String[] parseFieldName(String fieldName) {
+fieldName
+};
+}
+
+private static void checkFieldName(String fieldName) {
+if (Strings.isNullOrEmpty(fieldName)) {
+

@@ -1,0 +1,11 @@
+this.categoriesTable = categoriesTable;
+}
+
+@Override
+public String getElementAt(int index) {
+Set<String> categoriesSet = categoriesTable.keySet();
+String[] categoriesStrings = new String[categoriesSet.size()];
+Iterator<String> itr = categoriesSet.iterator();
+int crt = 0;
+while (itr.hasNext()) {
+

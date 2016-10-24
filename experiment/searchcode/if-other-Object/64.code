@@ -1,0 +1,9 @@
+public boolean isSizeSimilar(Object obj) {
+
+if (this.getClass() != obj.getClass())
+return false;
+
+Candidate other = (Candidate) obj;
+
+if (other.size > 4 * this.size / 3 || other.size < 3 * this.size / 4)
+

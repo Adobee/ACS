@@ -1,0 +1,9 @@
+return new DoubleGene(min, max, -1.0);
+}
+
+public static DoubleGene getNewInstance(double min, double max, double sd) {
+return new DoubleGene(min, max, sd);
+DoubleGene getMutatedInstance(int base) {
+if (sd_ <= 0) {
+return new DoubleGene(getRandomValue(min_, max_), min_, max_, sd_);
+

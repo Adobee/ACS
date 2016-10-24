@@ -1,0 +1,10 @@
+private static final long serialVersionUID = 1304310965177520240L;
+
+public void initializeRecursively(){
+child.initializeRecursively();
+}
+}
+public void initializeAncestors(){
+if(getAncestor() != null){
+Hibernate.initialize(getAncestor());
+

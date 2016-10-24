@@ -1,0 +1,15 @@
+public static double Maximum(double a, double b)
+{
+if(a > b)
+{
+return a;
+}
+
+return b;
+}
+
+
+public static boolean TestWall(double WallX,
+double RelX,
+double RelY,
+

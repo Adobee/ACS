@@ -1,0 +1,10 @@
+public HttpResponse clientToProxyRequest(HttpObject httpObject) {
+try {
+HttpResponse response = null;
+if (httpObject instanceof HttpRequest) {
+// When we have the connect go through. Could we send the connect later if we didn&#39;t send it now?
+request.copyHeaders((HttpMessage) httpObject);
+}
+
+// If we&#39;re getting content stick it in there.
+

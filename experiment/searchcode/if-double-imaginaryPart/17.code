@@ -1,0 +1,8 @@
+imaginaryPart = partExtracter.group();
+if(imaginaryPart.toCharArray()[0] == &#39;+&#39;)
+imaginaryPart = imaginaryPart.substring(1);
+realPartValue = Double.parseDouble(realPart);
+imaginaryPartValue = Double.parseDouble(imaginaryPart);
+
+System.out.println(inputComplex + &quot;는 복소수입니다.&quot;);
+

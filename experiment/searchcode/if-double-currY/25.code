@@ -1,0 +1,8 @@
+public ArrayList<Line2D> getLines(){
+ArrayList<Line2D> ls = new ArrayList<Line2D>();
+double currX = x;
+double currY = y;
+for(Vector v: vs){
+ls.add(new Line2D.Double(currX, currY, currX + v.getCX(), currY + v.getCY()));
+currX += v.getCX();
+

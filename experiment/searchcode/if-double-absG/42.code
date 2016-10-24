@@ -1,0 +1,7 @@
+* @exception InvalidMatrixException if decomposed matrix is singular
+*/
+public double[] solve(final double[] b)
+final double g = work[sixI] + d[i] * work[sixI + 9] / work[sixI + 10];
+final double absG = Math.abs(g);
+if (absG < minG) {
+

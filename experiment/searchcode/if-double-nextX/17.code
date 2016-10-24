@@ -1,0 +1,7 @@
+private static final int MAX_N = 101;
+private static final int MAX_DIM = 9;
+double[][][] dp = new double[MAX_N][MAX_DIM][MAX_DIM];
+int nextX = curX + dx[i];
+int nextY = curY + dy[i];
+if (nextX > 0 &amp;&amp; nextX < MAX_DIM &amp;&amp; nextY > 0 &amp;&amp; nextY < MAX_DIM)
+

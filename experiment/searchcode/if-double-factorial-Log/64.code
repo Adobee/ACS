@@ -1,0 +1,7 @@
+combo.getHandler().getLogger().writeLog(&quot;Факториал &quot; + str + &quot; = &quot; + ans);
+ans = calculateDoubleFactorial(num);
+combo.setDoubleFactorialAnswer(ans + &quot;&quot;);
+public long calculateDoubleFactorial(long num) {
+if (num <= 0) return 1;
+return num * calculateDoubleFactorial(num - 2);
+

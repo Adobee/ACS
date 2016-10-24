@@ -1,0 +1,9 @@
+
+public class Vector3D {  //From an MIT project
+public float x, y, z;
+
+// constructors
+public final static Vector3D normalize(Vector3D A) {
+float t = A.x*A.x + A.y*A.y + A.z*A.z;
+if (t != 0 &amp;&amp; t != 1) t = (float)(1 / Math.sqrt(t));
+

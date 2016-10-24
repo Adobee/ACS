@@ -1,0 +1,11 @@
+public abstract class BaseServiceImpl	implements IBaseService {
+
+private final int PAGE_SIZE = 10;
+
+/*** 获取dao类 **/
+public abstract BaseMapper getMapper();
+//举例：当前页为第2页，每页显示10条，则开始记录数为11，结束记录数为20
+//得到记录的开始数
+int skipIndex = (currPage - 1) * pageSize + 1;
+int totalRows = 0;
+

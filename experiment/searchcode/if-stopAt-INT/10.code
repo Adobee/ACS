@@ -1,0 +1,15 @@
+System.out.println(lpn.findLargestPalindromeNumber(999));
+}
+
+private long findLargestPalindromeNumber(int n) {
+int x = n, y = n;
+int stopAt = n / 10 + 1;
+product = x * y;
+y--;
+if(y < stopAt) {
+x--;
+y = x;
+}
+if(isPalindrome(product)) {
+if(product > prevPal) {
+

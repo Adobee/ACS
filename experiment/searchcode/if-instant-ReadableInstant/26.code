@@ -1,0 +1,5 @@
+public Interval(ReadableDuration readableDuration, ReadableInstant readableInstant) {
+super(readableDuration, readableInstant);
+return readablePeriod != null ? new Interval(readablePeriod, parseDateTime) : new Interval(readableInstant, parseDateTime);
+} else if (readablePeriod == null) {
+

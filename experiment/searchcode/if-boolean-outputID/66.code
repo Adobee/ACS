@@ -1,0 +1,9 @@
+public SimulatorBridge(String outputId, ISimulator outputSimulator, String inputId, ISimulator inputSimulator)throws GameException{
+if(outputId==null){
+throw new GameException(&quot;Wrong argument outputSdObjectId==null&quot;);
+throw new GameException(&quot;Wrong arguments input named &#39;&quot;+inputId+&quot;&#39; does not exist in inputSdSystem&quot;);
+}
+
+if(!outputSimulator.hasOutput(outputId) ){
+throw new GameException(&quot;Wrong arguments input named &#39;&quot; + outputId+ &quot;&#39; does not exist in outputSdSystem&quot;);
+

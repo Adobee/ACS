@@ -1,0 +1,7 @@
+public void setChecked(boolean checked) {
+final boolean changed = checked != mChecked;
+if (changed || !mCheckedSet) {
+protected void onRestoreInstanceState(Parcelable state) {
+if (state == null || !state.getClass().equals(SavedState.class)) {
+super.onRestoreInstanceState(state);
+

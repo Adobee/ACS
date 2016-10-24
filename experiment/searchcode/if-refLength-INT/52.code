@@ -1,0 +1,9 @@
+* @throws IOException in case of an I/O problem
+*/
+protected int encodeAndWriteStream(OutputStream out, PDFNumber refLength)
+throws IOException {
+StreamCache encodedStream = null;
+PDFNumber refLength = null;
+final Object lengthEntry;
+if (isEncodingOnTheFly()) {
+

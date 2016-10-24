@@ -1,0 +1,8 @@
+protected void loadInternal(boolean paramBoolean, UpdateType paramUpdateType, IDataLoaderRunnable<T> paramIDataLoaderRunnable, Date paramDate)
+{
+boolean bool = false;
+XLEAssert.assertIsUIThread();
+if ((!getIsLoading()) &amp;&amp; ((paramBoolean) || (shouldRefresh(paramDate))))
+{
+DataLoadUtil.StartLoadFromUI(paramBoolean, this.lifetime, this.lastRefreshTime, this.loadingStatus, paramIDataLoaderRunnable);
+

@@ -1,0 +1,11 @@
+private double[] copyValues;
+private int[] copyTag;
+
+@Override
+protected void doSort() {
+//オリジナルの配列をソート
+//メトリックスカウント対象だが、コピー配列から天下り的にスワップするだけなので計算量は少ない
+for(int i = 0; i < getDatalength() - 1; i++) {
+if(i < copyTag[i])
+swap(i, copyTag[i]);
+

@@ -1,0 +1,7 @@
+private List<TableColumn<G, ?>> buildColumns(ObservableValue<G> observableType) {
+List<TableColumn<G, ?>> columns = new ArrayList<TableColumn<G, ?>>();
+if (observableType.getValue() != null) {
+List<G> attributeComponents = gsFunctions.genericComponents.apply(attribute);
+int pos = attributeComponents.indexOf(observableType.getValue());
+if ((((Generic) attribute).isSingularConstraintEnabled(pos) || ((Generic) attribute).isPropertyConstraintEnabled()) &amp;&amp; attributeComponents.size() == 1)
+

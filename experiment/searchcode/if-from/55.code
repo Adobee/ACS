@@ -1,0 +1,11 @@
+private final void q_sort(E[] array, int from, int to) {
+if (to - from < 1)
+return;
+int pivot = selectPivot(array, from, to);
+
+pivot = partion(array, from, to, pivot);
+while (from < to &amp;&amp; array[from].compareTo(tmp) <= 0)
+from++;
+if (from < to) {
+array[to] = array[from];// now from&#39;s position is available
+

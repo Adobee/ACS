@@ -1,0 +1,8 @@
+public OkHttpOnfidoClient(OkHttpClient okHttpClient, Gson gson, String apiUrl, String authToken) {
+super(gson, apiUrl);
+if (okHttpClient == null) {
+this.client = createOkClient();
+Request.Builder requestBuilder = new Request.Builder().url(uri.toString());
+RequestBody payload = null;
+if (requestBody == null &amp;&amp; method == Method.POST) {
+

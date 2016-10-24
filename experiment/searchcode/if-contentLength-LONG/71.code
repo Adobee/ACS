@@ -1,0 +1,7 @@
+public class UploadListener implements ProgressListener{
+
+private long   bytesRead = 0L, contentLength = 0L, item = 0L;
+public String getMessage(){
+if(contentLength>(1024*1024)){
+return &quot;&quot; + bytesRead/(1024*1024) + &quot;mb of &quot; + contentLength/(1024*1024) + &quot;mb&quot;;
+

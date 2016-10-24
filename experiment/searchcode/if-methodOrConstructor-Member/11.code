@@ -1,0 +1,12 @@
+public String[] lookupParameterNames(AccessibleObject methodOrConstructor,
+boolean throwExceptionIfMissing) {
+
+if (methodOrConstructor == null) {
+throw new NullPointerException(
+&quot;method or constructor to inspect cannot be null&quot;);
+}
+
+String[] result = cache.get(methodOrConstructor);
+
+if (result == null) {
+

@@ -1,0 +1,11 @@
+package sort;
+
+public class MyQuickSort {
+
+public void qsort(int[] a, int start, int end) {
+if (start < end) {
+
+int p = partition(a, start, end);
+qsort(a, start, p - 1);
+qsort(a, p + 1, end);
+

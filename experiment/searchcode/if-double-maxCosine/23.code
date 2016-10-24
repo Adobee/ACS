@@ -1,0 +1,9 @@
+int clusterLabel = 0;
+double maxCosine = -1;
+
+for (int meanIndex = 0; meanIndex < means.size(); ++meanIndex) {
+double distance = vectorUtil.cosineSimilarity(means.get(meanIndex), toTrainFeatures);
+if (distance > maxCosine) {
+clusterLabel = meanIndex;
+maxCosine = distance;
+

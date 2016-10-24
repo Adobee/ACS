@@ -1,0 +1,7 @@
+int numAtend = desastreAtendido.getSerious().getQuantity();
+int numEval = desastreEvaluado.getSerious().getQuantity();
+if(evalActivo == true &amp;&amp; atendActivo == true &amp;&amp; numAtend < numEval){
+int numAtend = desastreAtendido.getTrapped().getQuantity();
+int numEval = desastreEvaluado.getTrapped().getQuantity();
+if(evalActivo == true &amp;&amp; atendActivo == true &amp;&amp; numAtend < numEval){
+

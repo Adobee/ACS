@@ -1,0 +1,13 @@
+public MagnetUpgrade getMagnetUpgrade() {
+for (Upgrade u : upgrades) {
+if (u instanceof MagnetUpgrade) {
+return (MagnetUpgrade) u;
+for (Upgrade u : upgrades) {
+if (u instanceof CoinDoublerUpgrade) {
+return (CoinDoublerUpgrade) u;
+}
+}
+return null;
+}
+}
+

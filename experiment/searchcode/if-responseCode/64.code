@@ -1,0 +1,16 @@
+public final String contentType;
+public final int responseCode;
+public Response(byte[] data, String contentType, int responseCode) {
+this.responseCode = responseCode;
+}
+
+public int getResponseLength(){
+if(data == null)
+return 0;
+return data.length;
+}
+
+
+
+}
+

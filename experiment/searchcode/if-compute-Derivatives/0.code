@@ -1,0 +1,8 @@
+import com.opengamma.util.tuple.DoublesPair;
+
+/**
+* Method to compute the present value of cash-settled European swaptions with the Hull-White one factor model by a third order approximation.
+final int nbFixedPaymentYear = (int) Math.round(1.0 / swaption.getUnderlyingSwap().getFixedLeg().getNthPayment(0).getPaymentYearFraction());
+double[] derivativesRate = new double[3];
+double[] derivativesAnnuity = new double[3];
+

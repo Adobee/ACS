@@ -1,0 +1,10 @@
+// Method for building a StudyProgram
+public StudyProgram generateStudyProgram() {
+Degree currentDegree = ToolModel.getCurrentDegreeFields();
+HashMap<String,Course> programSection = new HashMap<String,Course>();
+
+int nRow = model.getRowCount();
+
+for (int i = 0; i < nRow; i++) {
+if(model.getValueAt(i, 0)!=null &amp;&amp; model.getValueAt(i, 1)!=null &amp;&amp; model.getValueAt(i, 2)!=null){
+

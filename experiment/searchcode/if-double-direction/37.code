@@ -1,0 +1,12 @@
+private String LocationName;
+private Double WindDirection;
+private Double WindSpeed;
+private Double Longitude;
+private Double Latitude;
+public Double getWindDirection() {
+return WindDirection;
+}
+
+public void setWindDirection(Double WindDirection) {
+this.WindDirection = WindDirection;
+

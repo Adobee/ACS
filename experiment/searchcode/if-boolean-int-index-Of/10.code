@@ -1,0 +1,12 @@
+uniteWithLeft(i, j);
+uniteWithVirtualBottom(i, j);
+}
+
+public boolean isOpen(int i, int j) {
+int index = getIndex(i, j);
+return auxUnionFind.connected(unionSize, index);
+}
+
+private boolean[] createGrid(int size) {
+boolean[] g = new boolean[size];
+

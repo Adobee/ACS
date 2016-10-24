@@ -1,0 +1,17 @@
+public class IgnoreCaseMap extends HashMap
+{
+public boolean containsKey(Object key)
+{
+if (key instanceof String)
+{
+return super.containsKey(((String) key).toUpperCase());
+return super.containsKey(key);
+}
+}
+
+public Object get(Object key)
+{
+if (key instanceof String)
+{
+return super.get(((String) key).toUpperCase());
+

@@ -1,0 +1,9 @@
+for (int rowIndex = 0; rowIndex < board.length; rowIndex++){
+for (int columnIndex = 0; columnIndex < board[0].length; columnIndex++){
+if (board[rowIndex][columnIndex] == word.charAt(wordIndex)){
+return false;
+}
+
+private void dfs(char[][] board, int rowIndex, int columnIndex, String word, int wordIndex) {
+if (wordIndex == word.length()){
+

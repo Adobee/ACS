@@ -1,0 +1,16 @@
+@Override
+@Transactional
+public Mix save(Mix mix) {
+if (mix.isNew()) {
+em.persist(mix);
+@Override
+public double getRatingAvg() {
+return 0;
+}
+
+@Override
+public List<Mix> getTop10() {
+return null;
+}
+}
+

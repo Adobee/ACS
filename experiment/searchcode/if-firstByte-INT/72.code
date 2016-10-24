@@ -1,0 +1,7 @@
+// 1110xxxx 10yyyyyy 10zzzzzz
+else if ((firstByte &amp; (byte) 0xF0) == (byte) 0xE0) {
+this.byteLength = 3;
+}
+// 11110www 10xxxxxx 10yyyyyy 10zzzzzz
+else if ((firstByte &amp; (byte) 0xF8) == (byte) 0xF0) {
+

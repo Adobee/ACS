@@ -1,0 +1,13 @@
+public static void sort(int[] arr, int low, int high) {
+if(low < high) {
+int p = partition(arr, low, high);
+
+sort(arr, low, p-1);
+private static int partition(int[] arr, int low, int high) {
+int lowIndex=low;
+int pivot = arr[high];
+
+int i=low;
+while(i<arr.length) {
+if(arr[i] < pivot) {
+

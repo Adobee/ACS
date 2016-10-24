@@ -1,0 +1,7 @@
+FlowWrapper<Timeline> result = new FlowWrapper<Timeline>();
+result.setCount(timelineDao.getCount(uid));
+if (result.getCount() == 0) {
+timeline.setCommentList(commentService.getPage(timeline.getId(), 1, 100).getItems());
+}
+if (!timelineList.isEmpty()) {
+

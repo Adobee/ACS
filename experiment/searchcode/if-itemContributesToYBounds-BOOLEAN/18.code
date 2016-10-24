@@ -1,0 +1,11 @@
+boolean itemContributesToYBounds = false;
+double x = item.getXValue();
+if (!Double.isNaN(x)) {
+if (x <= this.minX || x >= this.maxX) {
+if (y <= this.minY || y >= this.maxY) {
+itemContributesToYBounds = true;
+}
+}
+}
+if (itemContributesToYBounds) {
+

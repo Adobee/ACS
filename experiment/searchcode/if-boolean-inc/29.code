@@ -1,0 +1,10 @@
+public static boolean toBoolean(Object bool) {
+if (bool == null)
+return false;
+if (bool instanceof Boolean) {
+boolean b = ((Boolean) bool).booleanValue();
+return b;
+}
+bool = bool.toString();
+if (bool.equals(&quot;true&quot;) || bool.equals(&quot;y&quot;) ||
+

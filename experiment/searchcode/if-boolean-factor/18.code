@@ -1,0 +1,12 @@
+public long largestPrimeFactor(long number) {
+long factor = 2;
+while (number > factor) {
+if (isDivisibleBy(number, factor)) {
+factor++;
+}
+}
+return factor;
+}
+
+private boolean isDivisibleBy(final long number, final long factor) {
+

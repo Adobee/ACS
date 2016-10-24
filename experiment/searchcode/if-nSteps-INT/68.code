@@ -1,0 +1,13 @@
+int a = keepAlpha ? 0 : getAlpha(end) - getAlpha(start);
+
+int nSteps = steps > 0 ? steps : findMax(abs(a), abs(r), abs(g), abs(b), 1), i = 0;
+
+float rStep = r / (float) nSteps;
+float fr = getRed(start), fg = getGreen(start), fb = getBlue(start), fa = getAlpha(start);
+
+int[] colors = new int[nSteps];
+
+while (i++ < nSteps)
+{
+fr += rStep;
+

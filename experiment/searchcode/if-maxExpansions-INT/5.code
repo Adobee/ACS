@@ -1,0 +1,11 @@
+this.prefixLength = prefixLength;
+return this;
+}
+
+public FuzzyQueryBuilder maxExpansions(int maxExpansions) {
+this.maxExpansions = maxExpansions;
+builder.field(&quot;prefix_length&quot;, prefixLength);
+}
+if (maxExpansions != null) {
+builder.field(&quot;max_expansions&quot;, maxExpansions);
+

@@ -1,0 +1,8 @@
+this(name, duration, unit, maxSize, false);
+}
+
+public Cache(String name, long duration, TimeUnit unit, long maxSize, boolean expireAfterAccess) {
+Assert.notNull(unit, &quot;Please provide a time unit.&quot;);
+
+if (expireAfterAccess) {
+

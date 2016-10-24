@@ -1,0 +1,8 @@
+public void set(double value) {
+super.set(convertAngle(value));
+}
+
+@Override
+public void setValue(Number value) {
+super.setValue(convertAngle(value == null ? null : value.doubleValue()));
+

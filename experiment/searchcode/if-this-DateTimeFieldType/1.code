@@ -1,0 +1,13 @@
+package gov.va.hmp.healthtime;
+
+import org.joda.time.DateTimeFieldType;
+
+
+public enum Precision {
+public boolean greaterThanOrEquals(Precision p) {
+return compareTo(p) >= 0;
+}
+
+public DateTimeFieldType[] toFieldTypes() {
+return toFieldTypes(this);
+

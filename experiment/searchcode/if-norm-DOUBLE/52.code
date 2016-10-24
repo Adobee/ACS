@@ -1,0 +1,12 @@
+private boolean first = true;
+private double[] norm;
+
+public NormalRandom() {
+rnd = new Random();
+norm = new double[2];
+}
+
+public double nextNormal() {
+if (first) {
+double[] rekt = { 1.0 - rnd.nextDouble(), 1.0 - rnd.nextDouble() };
+

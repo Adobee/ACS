@@ -1,0 +1,13 @@
+import org.opensaml.xml.ConfigurationException;
+
+public class Bootstrap extends DefaultBootstrap {
+
+static boolean initializied = false;
+public static synchronized void bootstrap() throws ConfigurationException {
+
+if(!initializied)
+{
+initializeXMLSecurity();
+
+initializeXMLTooling();
+

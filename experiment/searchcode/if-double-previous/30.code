@@ -1,0 +1,9 @@
+private boolean hasBeenUpdated = false;
+private double previous = Double.NaN;
+private double output = Double.NaN;
+public void update(double input)
+{
+if (hasBeenUpdated)
+{
+output = (input - previous) / dt;
+

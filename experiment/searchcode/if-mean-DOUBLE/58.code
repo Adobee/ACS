@@ -1,0 +1,11 @@
+private double mean ;
+private double variance;
+
+public GaussianIntegral(double mean,double variance){
+this.mean = mean;
+this.variance = 1.0;
+}
+
+public double f(double x){
+double y = Math.exp(- (x - mean)*(x - mean) / (2*variance)) / Math.sqrt(2*Math.PI*variance);
+

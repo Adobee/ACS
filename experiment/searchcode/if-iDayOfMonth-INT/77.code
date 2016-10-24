@@ -1,0 +1,6 @@
+(id, in.readUTF(), (int)readMillis(in), (int)readMillis(in));
+if (fixed.equals(DateTimeZone.UTC)) {
+private static DateTimeZone buildFixedZone(String id, String nameKey,
+int wallOffset, int standardOffset) {
+if (&quot;UTC&quot;.equals(id) &amp;&amp; id.equals(nameKey) &amp;&amp;
+

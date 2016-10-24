@@ -1,0 +1,15 @@
+public int size() {
+return timers.size();
+}
+
+public boolean allDefault() {
+for (Timer t : timers) {
+if (t.percent() != 0) {
+return true;
+}
+
+public boolean anyActive() {
+for (Timer t : timers) {
+if (t.isStarted()) {
+return true;
+

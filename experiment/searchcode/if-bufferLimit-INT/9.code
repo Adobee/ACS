@@ -1,0 +1,9 @@
+String[] items=getMenu();
+if(items.length==0)
+return null;
+int bufferLimit=getBufferLimit();
+for(int i=index;i<bufferLimit;i++){
+String item=items[i];
+int num=i+1;
+objectString+=&quot;<br>&quot;+num+&quot;.&quot;+Application.tree.getNode(item).getTitle();
+

@@ -1,0 +1,11 @@
+import java.nio.charset.Charset;
+
+import okhttp3.Request;
+import retrofit2.Response;
+
+
+/**
+* A basic caching system that stores responses in RAM &amp; disk
+public <T> void addInCache(Response<T> response, byte[] rawResponse) {
+String cacheKey = urlToKey(response.raw().request().url().url());
+

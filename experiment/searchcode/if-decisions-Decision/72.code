@@ -1,0 +1,10 @@
+import org.adamsko.cubicforest.mapsResolver.orderDecisions.OrderDecisionDefault;
+
+public class NullOrderDecision extends OrderDecisionDefault {
+super(false);
+}
+
+public static NullOrderDecision instance() {
+if (instance == null) {
+instance = new NullOrderDecision();
+

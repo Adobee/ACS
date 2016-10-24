@@ -1,0 +1,11 @@
+StringBuilder stringBuilder = new StringBuilder();
+
+if (geneQuery.isNotEmpty()) {
+String geneQueryString = geneQuery.asAnalyticsIndexQueryClause();
+} else {
+stringBuilder.append(geneQueryString);
+}
+}
+
+if (geneQuery.isNotEmpty() &amp;&amp; conditionQuery.isNotEmpty()) {
+

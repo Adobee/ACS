@@ -1,0 +1,9 @@
+for (NCPConstraint ci: constraints) {
+//calculate (Ax+b)_i
+final double w =  ci.j1.dot(ci.body1.deltavelocity)
+//Clamp the lambda[i] value to the constraints
+if (ci.coupling != null) {
+
+//growing bounds
+//					double lower = -Math.abs(ci.coupling.lambda)*ci.coupling.mu;
+

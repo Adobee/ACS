@@ -1,0 +1,15 @@
+public NonEmptyZonePredicate( ZoneManager zManager) {
+m_zoneManager = zManager;
+}
+
+public boolean getBoolean( Tuple t) {
+Zone aZone = m_zoneManager.getZone(zoneNumber);
+if (aZone.getNumberOfItems() > 0) {
+return true;
+} else {
+return false;
+
+}
+}
+}
+

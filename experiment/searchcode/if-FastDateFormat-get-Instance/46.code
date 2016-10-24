@@ -1,0 +1,13 @@
+fastDateFormat = FastDateFormat.getInstance(pattern);
+
+}
+
+@Override
+public boolean isValid(String value, ConstraintValidatorContext context) {
+
+if (StringUtils.isEmpty(value))
+return false;
+
+try {
+fastDateFormat.parse(value);
+

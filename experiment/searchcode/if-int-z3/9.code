@@ -1,0 +1,10 @@
+private final int intValue;
+
+Z3_param_kind(int v) {
+this.intValue = v;
+}
+
+public static final Z3_param_kind fromInt(int v) {
+for (Z3_param_kind k: values())
+if (k.intValue == v) return k;
+

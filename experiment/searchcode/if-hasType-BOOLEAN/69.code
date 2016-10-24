@@ -1,0 +1,7 @@
+return String.valueOf(((DoubleParameterType) param.getType()).getValue());
+} else if (param.hasType(DataType.BOOLEAN)) {
+return String.valueOf(((BooleanParameterType) param.getType()).getValue());
+return String.valueOf(((DoubleArrayType) param.getType()).getValueArray());
+} else if (param.hasType(DataType.BOOLEAN_ARRAY)) {
+return String.valueOf(((BooleanArrayType) param.getType()).getValueArray());
+

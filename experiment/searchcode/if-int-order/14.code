@@ -1,0 +1,11 @@
+public class DefaultOrderManagementService implements OrderManagementService {
+
+@Override
+public Order getOrder(int id) {
+return new Order(1, &quot;12345&quot;);
+}
+
+@Override
+public Order saveOrder(OrderForm orderForm) {
+if (orderForm.getOrderId() == null) {
+

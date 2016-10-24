@@ -1,0 +1,10 @@
+public class TsGenericType implements TsType {
+private TsType rawType;
+private List<TsType> typeArguments;
+
+public TsGenericType(TsType rawType, List<TsType> typeArguments) {
+StringBuilder sb = new StringBuilder();
+sb.append(rawType.getName());
+if (!typeArguments.isEmpty()) {
+sb.append(&quot;<&quot;);
+

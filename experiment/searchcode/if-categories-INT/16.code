@@ -1,0 +1,12 @@
+public static String convertCategories (List<Category> listCategories){
+String stringCategories = &quot;&quot;;
+for (int i = 0 ; i<listCategories.size() ; i++ ){
+stringCategories += listCategories.get(i).getCategoryId() + &quot;=&quot; + listCategories.get(i).getName();
+if (i != (listCategories.size() - 1) ){
+stringCategories += &quot; , &quot;;
+}
+}
+return stringCategories;
+}
+}
+

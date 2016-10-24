@@ -1,0 +1,11 @@
+//private ArrayList<Observer> listObserver = new ArrayList<Observer>();
+
+AAlgoModel(int nx, int ny, double xmax, double ymax, double xmin, double ymin)
+{
+_nx=nx;
+_ny=ny;
+double zoom=((double) (100+5*notches))/100.;
+if (zoom <0.5) zoom=0.5;
+if (zoom > 2.0) zoom=2;
+double xav=_xmin+(_xmax-_xmin)*lx;
+

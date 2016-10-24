@@ -1,0 +1,11 @@
+public double getCorrelation()
+{
+if (n == 0)
+return Double.NaN;
+return calculateCorrelation(sumX, sumXY, sumXX, sumYY, sumY, n);
+public static double correlation(int[] x, int[] y)
+{
+if (x == null || y == null)
+return Double.NaN;
+final int n = Math.min(x.length, y.length);
+

@@ -1,0 +1,12 @@
+public static final long millisPerYear   =  365 * millisPerDay;
+
+public static Map<String, Long> unitMillis;
+
+static
+{
+unitMillis = new LinkedHashMap<String, Long>();
+List<String> unitCountParts = new ArrayList<String>();
+for (Entry<String, Long> entry : unitMillis.entrySet())
+{
+if (unitCountParts.size() == 3 ) break;
+

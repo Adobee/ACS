@@ -1,0 +1,7 @@
+Reader jsonReader = null;
+
+try{
+boolean isGZipped = isResponseGZipped(response);
+ByteArrayInputStream inputStream = new ByteArrayInputStream(response.data);
+if(!isGZipped){
+

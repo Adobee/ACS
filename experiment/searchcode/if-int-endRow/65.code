@@ -1,0 +1,8 @@
+for (int startRow = 0; startRow < M; startRow++){
+
+int colSum[] = new int[N];
+for (int endRow = startRow; endRow < M; endRow++){
+
+for (int col = 0; col < N; col++){
+if (endRow == startRow){
+

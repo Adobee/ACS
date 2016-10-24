@@ -1,0 +1,14 @@
+import org.apache.log4j.Logger;
+
+
+class AminoAcidStats {
+private HashMap<String, Double> aaFrequency;
+
+protected static Logger log = Logger.getLogger(AminoAcidStats.class);
+aaFrequency = null;
+}
+
+public double getAAFrequency(char aa) {
+String aa_str = String.valueOf(aa);
+if (aaFrequency != null &amp;&amp; aaFrequency.get(aa_str) != null)
+

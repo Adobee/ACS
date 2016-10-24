@@ -1,0 +1,8 @@
+this.container = container;
+}
+
+public Strategy getStrategy(Class<?> type, String name) {
+if (strategy == null) {
+strategy = (Strategy) container.stgs.get(type, name);
+if (strategy == null) {
+

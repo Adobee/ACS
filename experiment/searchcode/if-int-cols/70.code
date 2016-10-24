@@ -1,0 +1,13 @@
+result.add(drawChessboard(cols));
+return;
+}
+for (int i = 0; i < n; i++) {
+if (!isValid(cols, i)){
+continue;
+}
+cols.add(i);
+private boolean isValid (ArrayList<Integer> cols, int col) {
+int row = cols.size();
+for (int i = 0; i < row; i++) {
+if (cols.get(i) == col) { // same column
+

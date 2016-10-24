@@ -1,0 +1,20 @@
+public final void unlink()
+{
+if(prev == null)
+{
+} else
+{
+prev.next = next;
+prev = null;
+}
+}
+
+public Node()
+{
+}
+
+public long hash;
+public Node next;
+public Node prev;
+}
+

@@ -1,0 +1,9 @@
+int minimalWindows = c.length+1;
+int initialIndex = -1;
+int countMatched = 0;
+// find first window
+if(initialIndex == -1) {
+initialIndex = i;
+}
+if(pos == -1) {
+

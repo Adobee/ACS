@@ -1,0 +1,8 @@
+this.buffers = new Buffer[DEFAULT_SIZE];
+}
+
+public synchronized void addQueue(Buffer buffer, long threadId) {
+private void extendIfNeeded(long threadId) {
+if (threadId >= buffers.length) {
+this.buffers = copyOf(this.buffers, (int) threadId * 2);
+

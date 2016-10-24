@@ -1,0 +1,8 @@
+MULT.stages[3].dest.intValue = MULT.stages[3].src.intValue * MULT.stages[3].target.intValue;
+if(reorderBuffer.write(MULT.stages[3].robSlot, MULT.stages[3].dest.intValue)){
+MULT.isWaiting = true;
+}
+}
+for(int i = 3; i > 0; i--){
+if(MULT.stages[i] == null)
+

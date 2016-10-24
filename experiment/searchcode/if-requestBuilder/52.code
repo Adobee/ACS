@@ -1,0 +1,7 @@
+import io.subutai.common.command.RequestBuilder;
+import io.subutai.common.host.HostInterface;
+import io.subutai.common.peer.EnvironmentContainerHost;
+public static RequestBuilder getPidCommand()
+{
+return new RequestBuilder( &quot; ps aux | grep &#39;[m]ongod --config&#39; | awk  -F &#39; &#39; &#39;{print $2}&#39; &quot; ).withTimeout( 30 );
+

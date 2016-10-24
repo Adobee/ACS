@@ -1,0 +1,9 @@
+return p.getOperand1().applyForPattern(this);
+}
+
+public Object caseChoice(ChoicePattern p) {
+if (p.isNullable()) {
+return p.getOperand2().applyForPattern(this);
+} else if (p.getOperand2().isNullable()) {
+return p.getOperand1().applyForPattern(this);
+

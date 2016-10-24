@@ -1,0 +1,10 @@
+small epsilon to the last two; return s. */
+double myEps;
+if (path[left] >= 0)
+myEps = EPS;
+else
+myEps = -EPS;
+double s = path[left] * (1.0 + myEps);
+if (s >= path[right])
+path[right] = s * (1.0 + myEps);
+

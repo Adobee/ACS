@@ -1,0 +1,7 @@
+public double getVecvtorX(int x1, int x2, int y1, int y2) {
+
+double diff = (double) x2 - (double) x1;
+double norm = Math.sqrt(((double) (x1) - (double) (x2))
+* ((double) (x1) - (double) (x2)) + ((double) y1 - (double) y2)
+* ((double) y1 - (double) y2));
+

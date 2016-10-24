@@ -1,0 +1,9 @@
+String result = &quot;&quot;;
+int beginIndex = 0;
+int endIndex = 0;
+for (int i = 0; i < s.length(); i++) {
+beginIndex = i;
+endIndex = i;
+for (; ; beginIndex--,endIndex++) {
+if (beginIndex < 0 || endIndex >= s.length() ||
+

@@ -1,0 +1,9 @@
+String text = getText().toString();
+
+int expPos = text.lastIndexOf(exp);
+if (expPos == -1) {
+if (text.charAt(0) == minus) {
+try {
+if (text.charAt(expPos + exp.length()) == minus) {
+text = text.substring(0, expPos) + exp + text.substring(expPos + exp.length() + 1);
+

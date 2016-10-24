@@ -1,0 +1,16 @@
+float sizeBytesF = sizeBytes;
+
+long kbBytes = 1024;
+long mbBytes = 1048576;
+long gbBytes = 1073741824;
+
+if(sizeBytes < kbBytes) {
+if(sizeBytes < mbBytes) {
+
+long sizeKB = sizeBytes / kbBytes;
+
+return(Long.toString(sizeKB) + &quot; KB&quot;);
+}
+
+if(sizeBytes < gbBytes) {
+

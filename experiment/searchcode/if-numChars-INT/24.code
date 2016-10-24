@@ -1,0 +1,10 @@
+public int read( char[] cbuf, int off, int len ) throws IOException
+{
+int numchars = 0;
+
+while ( numchars == 0 )
+{
+numchars = in.read( cbuf, off, len );
+
+if ( numchars == -1 ) // EOF?
+

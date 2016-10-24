@@ -1,0 +1,5 @@
+public static BatteryLevel getByPercentage(double percentage) {
+if(percentage < Configuration.getInstance().batteryLevelThresholds.get(BL_VERY_LOW))
+return BL_VERY_LOW;
+if(percentage < Configuration.getInstance().batteryLevelThresholds.get(BL_LOW))
+

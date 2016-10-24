@@ -1,0 +1,7 @@
+double xa = w/2 + (a - originX)*scale;
+double xb = w/2 + (b - originX)*scale;
+double Fa = h/2 - (fa - originY)*scale;
+int d = g.getFontMetrics().stringWidth(s)/2;
+int e = g.getFontMetrics().getHeight()/3;
+if ( Math.abs( xa - xb ) > 2*d + 4 ){
+

@@ -1,0 +1,11 @@
+private DatasetEnvironment() {
+addDefaultParameterResolver();
+}
+
+public static DatasetEnvironment getInstance() {
+return instance;
+private List<ParameterResolver> parameterResolvers = new ArrayList<>();
+
+private void addDefaultParameterResolver() {
+addParameterResolver(new AbstractParameterResolver() {
+

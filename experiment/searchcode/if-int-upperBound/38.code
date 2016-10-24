@@ -1,0 +1,14 @@
+public float getSize()
+{
+int size = (int)(upperBound*10 - lowerBound*10);
+size = size + (int)(epsilon*10);
+this.upperBound = upperBound;
+}
+
+
+
+public String print()
+{
+if(lowerBound > upperBound){
+return &quot;ERROR: &quot;+&quot;[&quot;+lowerBound+&quot;,&quot;+upperBound+&quot;]&quot;;
+

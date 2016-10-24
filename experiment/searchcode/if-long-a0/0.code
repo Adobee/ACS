@@ -1,0 +1,10 @@
+long[] result = new long[t];
+for (int a0 = 0; a0 < t; a0++) {
+long b = in.nextLong();
+long w = in.nextLong();
+long x = in.nextLong();
+long y = in.nextLong();
+long z = in.nextLong();
+
+if(x+z < y){
+

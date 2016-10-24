@@ -1,0 +1,7 @@
+ranges.add(new TimeRange(RangeUnit.SECOND.name(), new long[]{fromDate.getMillis(), toDate.getMillis()}));
+} else {
+if (tempFromTime.getSecondOfMinute() != 0 &amp;&amp; (toDate.getMillis() - fromDate.getMillis() > DateTimeConstants.MILLIS_PER_MINUTE)) {
+ranges.add(new TimeRange(RangeUnit.SECOND.name(), new long[]{fromDate.getMillis(), tempFromTime.getMillis()}));
+}
+if (tempFromTime.getMinuteOfHour() != 0 &amp;&amp;
+

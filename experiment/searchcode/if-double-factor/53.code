@@ -1,0 +1,10 @@
+super(fromXDelta, toXDelta, fromYDelta, toYDelta);
+}
+
+private float mFactor = 1.0f;
+private double mDoubleFactor = 2.0f;
+
+@Override
+public float getInterpolation(float input) {
+if (mFactor == 1.0f) {
+

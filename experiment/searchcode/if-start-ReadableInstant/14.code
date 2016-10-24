@@ -1,0 +1,9 @@
+public class Hours extends BaseSingleFieldPeriod {
+
+public static Hours hoursBetween(ReadableInstant start, ReadableInstant end) {
+return new Hours(Minutes.minutesBetween(start, end).getValue() / 60);
+}
+
+private Hours(int hours) {
+super(hours, Calendar.HOUR_OF_DAY);
+

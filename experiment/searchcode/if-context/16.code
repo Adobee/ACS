@@ -1,0 +1,10 @@
+public synchronized static void bindContext(Context context) {
+if (context == null) {
+return;
+public synchronized static void unbindContext(Context context) {
+if (sContext != context) {
+return;
+}
+
+sContext = null;
+

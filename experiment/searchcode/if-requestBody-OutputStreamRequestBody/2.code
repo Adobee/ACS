@@ -1,0 +1,5 @@
+OutputStreamRequestBody requestBody = (OutputStreamRequestBody) buildCall().request().body();
+if (requestBody == null) {
+OutputStreamRequestBody requestBody = (OutputStreamRequestBody) call.request().body();
+if (requestBody != null) requestBody.outputStream().close();
+

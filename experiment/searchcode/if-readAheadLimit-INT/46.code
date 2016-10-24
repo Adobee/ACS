@@ -1,0 +1,11 @@
+private final Reader target;
+
+private int charsRead = 0;
+
+private int markedAt = INVALID;
+
+private int readAheadLimit; // Internally, this value will never exceed the allowed size
+* marks the target stream, @see java.io.Reader#mark(int).
+*
+* @param readAheadLimit The number of characters that can be read while
+

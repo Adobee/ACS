@@ -1,0 +1,9 @@
+//		double norm1 = euclideanDist(_doc1);
+//		double norm2 = euclideanDist(_doc2);
+//
+HashMap<String, Double> doc1vector= new HashMap<String, Double>();
+HashMap<String,Double> vec= new HashMap<String, Double>();
+
+for (int i = 0; i < doc.length; i++) {
+if(vec.containsKey(doc[i])){
+

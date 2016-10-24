@@ -1,0 +1,8 @@
+// TODO split into multiples methods
+@Override
+protected List<CentroidCluster<E>> createInitialClusters(D dataSet, final int numberOfClusters) {
+final List<E> chosenCenters = Lists.newArrayListWithCapacity(numberOfClusters);
+Random random = new Random();
+
+List<E> probableClusterCenters = Lists.newArrayList(dataSet.elements());
+

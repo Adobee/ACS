@@ -1,0 +1,9 @@
+import ohd.hseb.monitor.manager.Receiver;
+
+public class MessageSystemManager
+{
+private Map<MessageType, List<Receiver>> _messageTypeToReceiverListMap;
+List<Receiver> receiverList = _messageTypeToReceiverListMap.get(messageType);
+
+if(receiverList == null)
+

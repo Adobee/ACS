@@ -1,0 +1,12 @@
+setReal( c.getRealDouble() );
+setComplex( c.getComplexDouble() );
+}
+
+@Override
+public void mul( final float c ) { setReal( getRealFloat() * c ); }
+final double complex = getComplexDouble();
+
+if ( real != 0.0 || complex != 0)
+return (float)Math.atan2( complex, real );
+else
+

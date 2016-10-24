@@ -1,0 +1,9 @@
+int rowCount = in.readInt();
+int columnCount = in.readInt();
+boolean swapped = rowCount < columnCount;
+if (swapped) {
+for (int i = 0; i < columnCount; i += 3) {
+for (int j = 0; j < rowCount; j++)
+result[j][i] = &#39;#&#39;;
+if (i + 1 < columnCount) {
+

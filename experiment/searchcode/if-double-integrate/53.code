@@ -1,0 +1,8 @@
+return ri.integrate(1000, this::derivatives, 0, 1);
+}
+
+private double derivatives(double t) {
+for(int i = 0; i < 10000; i++) {
+double f = integrateDerivativesFromCero(t) - s;
+if(Math.abs(f) < threshold) return t;
+

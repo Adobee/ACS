@@ -1,0 +1,14 @@
+* @author heaven7
+*/
+public class TimeRecorder {
+
+private long startTime;
+private long endTime;
+
+public void begin(){
+endTime = System.currentTimeMillis();
+}
+/** @return the cost time in mills*/
+public long getCostTime(){
+if(startTime==0 || endTime==0 || startTime > endTime)
+

@@ -1,0 +1,14 @@
+public void handleWord(String sval) {
+
+_previoustWord = _currentWord;
+_currentWord = sval;
+//System.out.print(&quot;w:&quot;+sval+&quot; &quot;);
+
+if(_farAway) return;
+_source.setAccessType(_previoustWord);
+}
+}
+
+@Override
+public void handleDoubleQuoted(String sval) {
+

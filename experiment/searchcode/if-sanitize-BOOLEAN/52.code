@@ -1,0 +1,11 @@
+@Inject private ServiceExceptionSanitizer serviceExceptionSanitizer;
+
+private boolean sanitize = true;
+private boolean log = true;
+
+@AroundInvoke
+if (sanitize){
+serviceExceptionSanitizer.sanitize(e);
+}
+if (log){
+

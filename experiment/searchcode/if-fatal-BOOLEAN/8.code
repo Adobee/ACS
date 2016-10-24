@@ -1,0 +1,10 @@
+private NonFatalException(Throwable exception) {
+super(exception);
+}
+
+static NonFatalException of(Throwable exception) {
+if (exception instanceof NonFatalException) {
+return (NonFatalException) exception;
+} else if (exception instanceof FatalException) {
+throw (FatalException) exception;
+

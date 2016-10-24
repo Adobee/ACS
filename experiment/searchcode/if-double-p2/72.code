@@ -1,0 +1,8 @@
+public static Polynome add(Polynome p1, Polynome p2) {
+int n = Math.max(p1.a.length, p2.a.length);
+double[] a = new double[n];
+for (int i = 0; i < n; i++) {
+if (i >= p1.a.length) {
+a[i] = p2.a[i];
+} else if (i >= p2.a.length) {
+

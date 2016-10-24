@@ -1,0 +1,12 @@
+private boolean isEnabledRequestNotify = true;
+
+public void requestNotify() {
+setChanged();
+
+if (isEnabledRequestNotify)
+public void setEnabledRequestNotify(boolean enabledRequestNotify) {
+isEnabledRequestNotify = enabledRequestNotify;
+notifyObservers(this);
+}
+}
+

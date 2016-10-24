@@ -1,0 +1,9 @@
+Matcher matcher = NamePattern.matcher(baseName);
+String encodedNamespace = matcher.replaceAll(&quot;$1&quot;);
+String encodedName = matcher.replaceAll(&quot;$2&quot;);
+name = FileUtil.decodeFilename(encodedName);
+}
+
+public String getName() {
+return name;
+

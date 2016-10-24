@@ -1,0 +1,10 @@
+public NSArray tosRepartFloLolfNomen(EOQualifier qualifier, NSArray sortOrderings, boolean fetch) {
+NSArray results;
+if (fetch) {
+results = org.cocktail.feve.eos.modele.mangue.EORepartFloLolfNomen.fetchRepartFloLolfNomens(editingContext(), fullQualifier, sortOrderings);
+}
+else {
+results = tosRepartFloLolfNomen();
+if (qualifier != null) {
+results = (NSArray)EOQualifier.filteredArrayWithQualifier(results, qualifier);
+

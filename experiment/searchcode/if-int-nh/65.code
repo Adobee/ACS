@@ -1,0 +1,10 @@
+Thread thisThread = Thread.currentThread();
+
+int Nh = Tfin_data-Tini_data+1; //numero de horas
+
+ID				 = new int[Nh];
+Nombre 			 = new String[Nh];
+TminOn 			 = new int[Nh];
+TminOff 		 = new int[Nh];
+TiniR			 = new int[Nh];
+

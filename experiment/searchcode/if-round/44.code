@@ -1,0 +1,8 @@
+RoundQuery rounds = serviceConnector.query(query, RoundQuery.class, Round.FETCH_PLAN);
+if(rounds == null || rounds.rounds().size() < 1) {
+Round round = getByAngelId(entity.angelId());
+if(round == null) {
+return null;
+}
+String response = serviceConnector.updateDocument(round.rid().substring(1), updateRoundByRound(round, entity), String.class);
+

@@ -1,0 +1,11 @@
+List<List<Number>> rest = new List<List<Number>>();
+List<List<Number>> newResult = result;
+
+List<Number> minList = null;
+Double minValue = null;
+if(next == null)
+continue;
+
+Number tmp = (Number) next.get(index);
+if(minValue == null || tmp.doubleValue() < minValue) {
+

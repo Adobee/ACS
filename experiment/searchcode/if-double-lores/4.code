@@ -1,0 +1,7 @@
+lores.add(&quot;§7Passage dans: §e&quot; + gradedecorateur);
+if(!gradedecorateur.equalsIgnoreCase(&quot;Aquis&quot;)) {
+lores.add(&quot;§e&quot; + gradedecorateur1);
+lores.add(&quot;§fet 100.000 blocks posés/cassés §b(Map 2)&quot;);
+lores.add(&quot;§7Passage dans: §e&quot; + gradeingenieur);
+if(!gradeingenieur.equalsIgnoreCase(&quot;Aquis&quot;)) {
+

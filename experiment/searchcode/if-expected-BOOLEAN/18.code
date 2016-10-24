@@ -1,0 +1,14 @@
+public enum SearchCriteria {
+
+BEGINS {
+@Override
+public boolean doVerify( String text, String expected ) {
+return matcher.find();
+}
+};
+
+
+public final boolean verify( String text, String expected ) {
+
+if ( text == null )
+

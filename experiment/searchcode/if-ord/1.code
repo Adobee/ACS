@@ -1,0 +1,13 @@
+void leggTilOrd(String s){
+Ord ord = finnOrd(s);
+if (ord != null){
+ord.oekAntall();
+} else {
+ordliste.add(new Ord(s.toLowerCase()));
+}
+}
+
+Ord finnOrd(String s){
+for (Ord ord: ordliste){
+if (ord.toString().equalsIgnoreCase(s)){
+

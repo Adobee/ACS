@@ -1,0 +1,11 @@
+final List<Column> nonEmptyColumns = srcObject.listNonEmptyColumns();
+if (nonEmptyColumns == null) {
+return;
+}
+
+Object value = null;
+for (Column col: nonEmptyColumns) {
+value = srcObject.getValue(col);
+if (value == null) {
+continue;
+

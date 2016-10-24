@@ -1,0 +1,5 @@
+public class BerlinClockSeconds {
+
+public String[] convert(int seconds) {
+if (seconds % 2 == 0) {
+

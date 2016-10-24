@@ -1,0 +1,9 @@
+Cursor cursor = db.openCursor(null, CursorConfig.DEFAULT);
+
+DatabaseEntry foundKey = new DatabaseEntry();
+DatabaseEntry foundData = new DatabaseEntry();
+cursor.getFirst(foundKey, foundData,
+LockMode.DEFAULT));
+
+assertEquals(0, foundKey.getOffset());
+

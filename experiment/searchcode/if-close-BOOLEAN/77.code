@@ -1,0 +1,14 @@
+public class RDF4JBooleanResult extends RDF4JResult<Boolean, Boolean>
+implements IBooleanResult {
+Boolean value;
+
+public RDF4JBooleanResult(Boolean value) {
+super(new SingletonIteration<Boolean, Exception>(value));
+}
+
+@Override
+public boolean asBoolean() {
+if (value == null) {
+next();
+close();
+

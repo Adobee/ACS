@@ -1,0 +1,12 @@
+public class Midpoint implements Integrator {
+
+double [] dydt;
+double [] y_midpoint;
+double [] k1;
+double [] k2;
+//This int checks that if the dimension did change (which is a rare occurrence event).
+//Avoid useless memory allocation if size did not change
+if (old_n!=n) {
+dydt = new double[n];
+y_midpoint = new double[n];
+

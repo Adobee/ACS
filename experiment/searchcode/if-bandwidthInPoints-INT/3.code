@@ -1,0 +1,8 @@
+throw new org.apache.commons.math.MathException((&quot;Loess expects the abscissa and ordinate arrays &quot; + (&quot;to be of the same size, &quot; + &quot;but got {0} abscissae and {1} ordinatae&quot;)) , xval.length , yval.length);
+}
+final int n = xval.length;
+if (n == 0) {
+int bandwidthInPoints = ((int)((bandwidth) * n));
+if (bandwidthInPoints < 2) {
+throw new org.apache.commons.math.MathException((&quot;the bandwidth must be large enough to &quot; + (&quot;accomodate at least 2 points. There are {0} &quot; + (&quot; data points, and bandwidth must be at least {1} &quot; + &quot; but it is only {2}&quot;))) , n , (2.0 / n) , bandwidth);
+

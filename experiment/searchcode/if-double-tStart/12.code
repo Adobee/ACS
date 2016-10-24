@@ -1,0 +1,8 @@
+super.init();
+RegularGridData grid = domainGrid(0);
+double tstart=grid.min();
+double tend  =grid.max();
+else {dt=0.0;}
+if(tend<=tstart || storage.length <2 || dt<=0 || tmean< tstart) return;
+double tshift = 0-tstart;
+

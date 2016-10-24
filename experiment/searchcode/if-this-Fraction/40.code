@@ -1,0 +1,14 @@
+public int getDenominator() { return denom; }
+
+public Fraction(int numer, int denom) {
+int g = gcd(numer, denom);
+this.numer = numer / g;
+this.denom = denom / g;
+}
+
+public Fraction(int numer) {
+this(numer, 1);
+}
+
+public Fraction() {
+

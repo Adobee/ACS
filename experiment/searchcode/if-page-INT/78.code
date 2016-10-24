@@ -1,0 +1,13 @@
+int totalPage = Integer.parseInt(numberOfRows) / 10;
+
+if(totalPage % 10 != 0) {
+totalPage += 1;
+}
+
+pagination.setTotalPage(totalPage);
+if(page != null) {
+pagination.setPage(Integer.parseInt(page));
+}
+
+if(page == null || pagination.getPage() < 6) {
+

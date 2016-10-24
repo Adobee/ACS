@@ -1,0 +1,9 @@
+IPositionRepository iPositionRepository;
+
+@Override
+public Long savePosition(positionOb position_ob) {
+if (position_ob == null)
+return Long.valueOf(0);
+iPositionRepository.save(position_ob);
+return position_ob.getId();
+

@@ -1,0 +1,11 @@
+this.hash = 67 * Objects.hashCode(this.lhs) +
+Arrays.deepHashCode(this.rhs);
+}
+
+private String getRhsString() {
+if (rhs.length == 0) return &quot;&amp;&quot;;
+(rhs.length == 2 &amp;&amp; !rhs[0].isTerminal() &amp;&amp; !rhs[1].isTerminal());
+}
+public boolean isGreibach() {
+if (rhs.length > 0) {
+

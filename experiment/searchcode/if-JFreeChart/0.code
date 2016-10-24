@@ -1,0 +1,10 @@
+public class BaseStyleSetting implements JfreechartSetting{
+
+@Override
+public void setChartStyle(JFreeChart jFreeChart) {
+if (jFreeChart.getTitle() != null)
+jFreeChart.getTitle().setFont(new Font(&quot;Á¥Êé&quot;, Font.ITALIC, 15));// ÉèÖÃ±êÌâ
+// ÉèÖÃÍ¼ÀýÀà±ð×ÖÌå
+if (jFreeChart.getLegend() != null)
+jFreeChart.getLegend().setItemFont(new Font(&quot;ËÎÌå&quot;, Font.BOLD, 15));
+

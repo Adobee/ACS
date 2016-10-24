@@ -1,0 +1,9 @@
+import by.segg3r.messaging.connection.ConnectionListener;
+
+public class Listeners<ConnectionType> {
+
+private Map<ListenerType, List<ConnectionListener<ConnectionType>>> listeners;
+List<ConnectionListener<ConnectionType>> existingListeners = this.listeners.get(listenerType);
+if (existingListeners != null) {
+for (ConnectionListener<ConnectionType> connectionListener : existingListeners) {
+

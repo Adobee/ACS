@@ -1,0 +1,9 @@
+@Override
+public boolean onConsoleCommand(CommandSender sender, String[] args) {
+if (args.length != 1)
+sender.sendMessage(ChatColor.DARK_RED + &quot;Du musst eine Welt angeben.&quot;);
+World w = Bukkit.getWorld(args[0]);
+if (w == null) {
+sender.sendMessage(ChatColor.DARK_RED + &quot;Welt nicht gefunden.&quot;);
+return true;
+

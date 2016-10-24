@@ -1,0 +1,8 @@
+public class TMixtureModel implements Iterator<TDistribution>, Iterable<TDistribution> {
+
+private final int numComponents;
+private TDistribution[] tDistributions;
+public double getLogMixtureWeight(int component) {
+if(component < numComponents)
+return logMixtureWeights[component];
+

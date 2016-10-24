@@ -1,0 +1,10 @@
+this.camera_enabled = new AtomicBoolean(false);
+
+/**
+* $example: Construct an integrator using the implementation that
+* If the camera is actually enabled, integrate and produce a snapshot.
+*/
+
+if (this.cameraIsEnabled()) {
+this.integrator.integrate(this.integrator_time_seconds);
+

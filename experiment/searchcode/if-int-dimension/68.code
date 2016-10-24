@@ -1,0 +1,15 @@
+int c;
+int dimension=75;
+
+public Tablero(){
+c=8;
+setSize(1200,1200);
+}
+
+public void paint(Graphics g){
+for (int i=c/2;i>0;i--){
+g.fillRect(x, y, dimension, dimension);
+x=x+dimension*2;
+}
+if (!b)
+

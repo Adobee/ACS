@@ -1,0 +1,9 @@
+this.ki = ki;
+}
+public double getCorrection(double current) {
+double error = target-current;
+if (error*lastError<=0) totalError = 0;
+double changeInError = error-lastError;
+double correction = kp*error+ ki*totalError +kd*changeInError;
+lastError = error;
+

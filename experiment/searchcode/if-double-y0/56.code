@@ -1,0 +1,11 @@
+public class Line_func extends JPanel
+{
+static int x0;
+static int y0;
+static double aa;
+static double bb;
+public String dih(double ax,double by)
+{
+double a, b, c;
+a = ax;
+

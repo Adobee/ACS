@@ -1,0 +1,11 @@
+private int[] array;
+
+ArrayIntList(int initialCapacity) {
+if (initialCapacity <= 0) {
+throw new IllegalArgumentException(&quot;Capacity must be a positive number.&quot;);
+public void add(int item) {
+if (size == capacity) {
+resize();
+}
+array[size] = item;
+

@@ -1,0 +1,15 @@
+public class Fraction {
+int n, d;
+
+Fraction (int num, int den)
+{
+n = num;
+d = d / nod(n,d);
+}
+
+public String toString()
+{
+return n + &quot;/&quot; + d;
+}
+public Fraction add(Fraction x)
+

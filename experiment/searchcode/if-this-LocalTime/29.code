@@ -1,0 +1,13 @@
+public ExplodingState(Entity context, double duration) {
+this.context = context;
+context.setCollisionState(null);
+localTime = new LocalTime(duration);
+return context;
+}
+
+public void setContext(Entity context) {
+this.context = context;
+}
+
+public LocalTime getLocalTime() {
+

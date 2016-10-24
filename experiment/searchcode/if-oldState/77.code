@@ -1,0 +1,10 @@
+Set<State> states = dfa.getStates();
+State[] stateArr = states.toArray(new State[0]);
+
+if(states.size() <= 2){
+s.getTransitionTable().replaceTarget(oldState, newState); // random link
+}
+
+if(dfa.getAcceptingStates().contains(oldState)){
+dfa.getAcceptingStates().remove(oldState);
+

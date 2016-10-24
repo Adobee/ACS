@@ -1,0 +1,7 @@
+protected double tStart;
+protected double tEnd;
+protected double tStep;
+
+public AbstractImitator(Integer N, double tStart, double tEnd, double tStep)
+throws NumberIsTooLargeException, NullArgumentException, ZeroException, NotPositiveException {
+

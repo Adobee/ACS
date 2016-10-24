@@ -1,0 +1,9 @@
+clusterSettings.addSettingsUpdateConsumer(CLUSTER_TOTAL_SHARDS_PER_NODE_SETTING, this::setClusterShardLimit);
+}
+
+private void setClusterShardLimit(int clusterShardLimit) {
+this.clusterShardLimit = clusterShardLimit;
+final int clusterShardLimit = this.clusterShardLimit;
+
+if (indexShardLimit <= 0 &amp;&amp; clusterShardLimit <= 0) {
+

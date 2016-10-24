@@ -1,0 +1,9 @@
+return this.entity;
+}
+
+public final boolean expectContinue() {
+Header expect = getFirstHeader(&quot;Expect&quot;);
+HttpEntityEnclosingRequestBase clone = (HttpEntityEnclosingRequestBase) super.clone();
+if (this.entity != null) {
+clone.entity = (HttpEntity) CloneUtils.cloneObject(this.entity);
+

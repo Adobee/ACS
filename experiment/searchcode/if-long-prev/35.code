@@ -1,0 +1,15 @@
+init (100);
+}
+
+public long calcIterFn(int n) {
+
+if (n == 1 || n == 2) {
+return 1;
+}
+
+long fibPrev = 1;
+long fibPrevPrev = 1;
+long fib = 0;
+
+for (int i = 3; i <= n; i++) {
+

@@ -1,0 +1,6 @@
+public void onValidateQRCode(boolean success, boolean isValidated, boolean allowCustom, boolean isBlocked, boolean isSelfTinkler) {
+if (isSelfTinkler) {
+Toast.makeText(getActivity(), &quot;This conversation is blocked&quot;, Toast.LENGTH_LONG).show();
+resetCamera();
+} else if (isValidated) {
+

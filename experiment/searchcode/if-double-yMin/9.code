@@ -1,0 +1,13 @@
+package DBscan;
+
+public class I {
+
+public double xMin;
+public double xMax;
+public double yMin;
+public double yMax;
+
+public I(){}
+
+public I(double xMin, double xMax, double yMin, double yMax)
+

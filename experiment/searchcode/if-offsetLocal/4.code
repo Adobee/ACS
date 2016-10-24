@@ -1,0 +1,9 @@
+private static ThreadLocal<Integer> offsetLocal=new ThreadLocal<Integer>();
+private static ThreadLocal<Integer> pageSizeLocal=new ThreadLocal<Integer>();
+public static void removeOffset(){
+if(offsetLocal.get()!=null)
+offsetLocal.remove();
+}
+
+public static void setPageSize(Integer pageSize){
+

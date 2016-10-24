@@ -1,0 +1,13 @@
+
+void QuickSort(int[] n, int low, int high){
+if(n==null || n.length<=1)
+return;
+if(low<high){
+int m = partition(n, low, high);
+QuickSort(n, low, m-1);
+QuickSort(n, m+1, high);
+}
+}
+
+int partition(int[] n, int low, int high){
+

@@ -1,0 +1,11 @@
+throws InterruptedException {
+return true;
+}
+
+@Override
+public void execute(Runnable command) {
+if (command instanceof OrderedTask) {
+execute((OrderedTask) command);
+} else {
+execute(new RunnableWrapper(command));
+

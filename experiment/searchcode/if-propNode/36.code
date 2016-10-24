@@ -1,0 +1,7 @@
+String propName = Strings.toUnderscoreCase(entry.getKey());
+Object propNode = entry.getValue();
+if (propName.equals(&quot;precision_step&quot;)) {
+builder.precisionStep(XContentMapValues.nodeIntegerValue(propNode));
+} else if (propName.equals(&quot;fuzzy_factor&quot;)) {
+builder.fuzzyFactor(propNode.toString());
+

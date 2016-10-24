@@ -1,0 +1,8 @@
+final double bMinus = bin == 0 ? 0 : (bin - 1) * binMass + firstBinMass;
+final RealDistribution kernel = findKernel(lower, upper);
+final double withinBinKernelMass = kernel.cumulativeProbability(lower, upper);
+* standard deviation.
+*/
+private RealDistribution findKernel(double lower, double upper) {
+if (lower < 1) {
+

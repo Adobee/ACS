@@ -1,0 +1,9 @@
+public double complexity()
+{
+ensureSmallAndBigTrees();
+double sumLog = 0;
+for (SealedMap tree : smallTrees) {
+long n = tree.recordCount();
+if (n > 0) {
+sumLog += log2(n);
+

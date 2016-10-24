@@ -1,0 +1,9 @@
+biglsq = ZERO;
+knew = 0;
+for (int k = 0; k < npt; k++) {
+if (k == trustRegionCenterInterpolationPointIndex) {
+// Recalculate KNEW and DENOM if the new F is less than FOPT.
+
+if (f < fopt) {
+final int ksav = knew;
+

@@ -1,0 +1,10 @@
+angles = new Angles(XY, XZ, XT, YZ, YT, ZT);
+Operator tmp = new Operator();
+Operator tmp1 = new Operator();
+if ((XY !=0) || (ZT!=0)) {
+tmp = Rotate2x(0,2,1,3,XZ,YT);
+tmp1 = tmp1.Product(tmp);
+}
+if ((XT !=0) || (YZ!=0)) {
+tmp = Rotate2x(0,3,1,2,XT,YZ);
+

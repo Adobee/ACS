@@ -1,0 +1,14 @@
+return Direction.NONE;
+
+Special elem = (Special) e;
+
+if (&quot;|&quot;.contains(elem.getValue()))
+return Direction.NONE;
+
+if (&quot;[({&quot;.contains(elem.getValue()))
+return Direction.LEFT;
+
+return Direction.RIGHT;
+}
+}
+

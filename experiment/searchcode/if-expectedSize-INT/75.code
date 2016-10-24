@@ -1,0 +1,14 @@
+public class IncorrectResultSizeDataAccessException extends DataRetrievalFailureException {
+
+private int expectedSize;
+
+private int actualSize;
+
+
+/**
+* Constructor for IncorrectResultSizeDataAccessException.
+* @param expectedSize the expected result size
+*/
+public IncorrectResultSizeDataAccessException(int expectedSize) {
+super(&quot;Incorrect result size: expected &quot; + expectedSize);
+

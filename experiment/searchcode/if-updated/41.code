@@ -1,0 +1,10 @@
+final UniprotUpdateEvent event = ( UniprotUpdateEvent ) o;
+
+if ( updatedShortLabel != null ) {
+if (!updatedShortLabel.equals( event.getUpdatedShortLabel())){
+return false;
+}
+}
+else if (event.getUpdatedShortLabel()!= null){
+return false;
+

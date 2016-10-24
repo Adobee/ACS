@@ -1,0 +1,12 @@
+protected boolean ok( T t ){
+return true;
+}
+
+public T get(){
+synchronized ( _stored ){
+if ( _stored.size() > 0 )
+return;
+synchronized ( _stored ){
+if ( _stored.size() > _max )
+return;
+

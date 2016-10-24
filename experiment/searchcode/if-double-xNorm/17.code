@@ -1,0 +1,8 @@
+long tStart = System.currentTimeMillis();
+DoubleMatrix1D X0 = getInitialPoint();
+if (X0 == null) {
+if(getA()!=null){
+X0 = F1.make(findEqFeasiblePoint(getA().toArray(), getB().toArray()));
+if (!Double.isNaN(previousRPriXNorm)	&amp;&amp; !Double.isNaN(previousRXVNorm)) {
+if ((previousRPriXNorm <= rPriXNorm &amp;&amp; rPriXNorm >= getTolerance())||
+

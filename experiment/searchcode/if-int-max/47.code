@@ -1,0 +1,11 @@
+public int trap(int[] A) {
+if (A == null || A.length == 0)
+return 0;
+
+int maxLeft[] = new int[A.length];
+max = A[A.length - 1];
+for (int i = A.length - 2; i >= 0; i--) {
+maxRight[i] = max;
+if (A[i] > max)
+max = A[i];
+

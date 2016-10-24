@@ -1,0 +1,7 @@
+import org.apache.ibatis.executor.parameter.ParameterHandler;
+import org.apache.ibatis.executor.resultset.DefaultResultSetHandler;
+import org.apache.ibatis.executor.resultset.ResultSetHandler;
+ParameterHandler parameterHandler = (ParameterHandler) ReflectUtil.getFieldValue(resultSetHandler, &quot;parameterHandler&quot;);
+if (parameterHandler != null) {
+Object parameterObj = parameterHandler.getParameterObject();
+

@@ -1,0 +1,12 @@
+XMIResourceSet resourceSet = new XMIResourceSet(EcorePackage.eINSTANCE, AssignastPackage.eINSTANCE, AssignPackage.eINSTANCE, TracePackage.eINSTANCE);
+
+boolean errorExpected = new File(getTestDir(), &quot;error&quot;).exists();
+} catch(RuntimeException e) {
+if (!errorExpected) {
+throw e;
+}
+return;
+}
+
+assertFalse(errorExpected);
+

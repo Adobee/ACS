@@ -1,0 +1,16 @@
+* <p>Java class for samplingPrecisionRefVal complex type.
+*
+*
+*/
+public class SamplingPrecisionRefVal
+extends Group
+{
+
+protected DoubleParam fillFactor;
+* @return
+*     {@link DoubleParam }
+*
+*/
+public DoubleParam createFillFactor() {
+if (this.fillFactor == null)
+

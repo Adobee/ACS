@@ -1,0 +1,8 @@
+public class LinearObjectiveFunction implements Serializable {
+
+/** Serializable version identifier. */
+private static final long serialVersionUID = -4531815507568396090L;
+* @param constantTerm The constant term of the linear equation
+*/
+public LinearObjectiveFunction(double[] coefficients, double constantTerm) {
+

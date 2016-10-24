@@ -1,0 +1,10 @@
+public void testSQRT() throws Exception {
+double d = rnd.nextInt() * rnd.nextDouble();
+d *= Math.signum(d);
+double ulp = Math.ulp(StrictMath.sqrt(d));
+assertEquals(&quot;d=&quot; + d + &quot; ulp=&quot;+ulp, StrictMath.sqrt(d), Math.sqrt(d), ulp);
+}
+
+public void testSIN() throws Exception {
+double d = rnd.nextInt() * rnd.nextDouble();
+

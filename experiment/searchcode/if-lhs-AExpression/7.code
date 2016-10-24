@@ -1,0 +1,10 @@
+varName = scope(varName);
+}
+}
+return varName;
+}
+
+public String getVarName(AExpression pLhs) throws UnrecognizedCodeException {
+if (pLhs instanceof AIdExpression) {
+return getVarName((AIdExpression) pLhs);
+

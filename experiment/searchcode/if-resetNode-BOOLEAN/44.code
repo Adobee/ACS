@@ -1,0 +1,6 @@
+// this will produce numbers from [-1.0, 1.0), which is probably
+// okay but you might want to modify it if you don&#39;t like seeing
+// -1.0&#39;s occasionally showing up very rarely.
+public void resetNode(final EvolutionState state, final int thread) {
+value = state.random[thread].nextDouble() * 2 - 1.0;
+

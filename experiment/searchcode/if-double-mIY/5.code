@@ -1,0 +1,10 @@
+public Box include(double x, double y) {
+double mix = this.sx;
+double miy = this.sy;
+double max = this.ex;
+double may = this.ey;
+if (x < 0) mix += x;
+else if (x > 0) max += x;
+if (y < 0) miy += y;
+else if (y > 0) may += y;
+

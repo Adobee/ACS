@@ -1,0 +1,15 @@
+public boolean updateGoal(Goal goal) {
+return goalDao.updateGoal(goal);
+}
+
+public Goal getGoal(int goalId) {
+
+if(goalId == 0) {
+return null;
+}
+
+Goal goal = goalDao.getGoal(goalId);
+
+if(goal == null) {
+return null;
+

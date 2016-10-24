@@ -1,0 +1,7 @@
+int index = methodCtx.genericParamIndex(rawType);
+if (index != -1)
+return new c.ty.MethodGenericType(index);
+int index = typeCtx.genericParameterIndex(rawType);
+if (index != -1)
+return new c.ty.TypeGenericType(index);
+

@@ -1,0 +1,13 @@
+this.high = h.high;
+}
+
+public Histogram(ByteVector data, int numbins)
+{
+bincount = new DoubleVector(numbins,0);
+setBins(data.asDoubleVector(),numbins);
+}
+
+public Histogram(IntVector data, int numbins)
+{
+bincount = new DoubleVector(numbins,0);
+

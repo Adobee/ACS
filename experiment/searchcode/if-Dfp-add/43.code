@@ -1,0 +1,7 @@
+if (!x.equals(y) &amp;&amp; !x.unequal(y))  // NaNs involved
+b = (x.toString().equals(y.toString()));
+
+if (x.equals(new DfpDec(field, 0)))  // distinguish +/- zero
+test(new DfpDec(field, &quot;1.2345678901234568000&quot;).add(new DfpDec(field, &quot;.0000000000000000501&quot;)),
+new DfpDec(field, &quot;1.2345678901234569&quot;),
+

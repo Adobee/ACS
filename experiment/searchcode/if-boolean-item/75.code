@@ -1,0 +1,9 @@
+public class CompareUtil {
+
+public static boolean compare(ItemStack stack1, ItemStack stack2) {
+if (stack1 == null &amp;&amp; stack2 == null) return true;
+stack1.stackSize = stack2.stackSize;
+
+if (ItemReference.isSameOre(stack1, stack2)) {
+ItemStack stack3 = stack1.copy();
+

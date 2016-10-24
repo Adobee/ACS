@@ -1,0 +1,10 @@
+package xray.leetcode.interview;
+
+public class Box {
+public int height;
+public int depth;
+public int width;
+public int area;
+public Box(int depth, int width, int height){
+this.depth = depth;
+

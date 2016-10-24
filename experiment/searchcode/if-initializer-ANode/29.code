@@ -1,0 +1,10 @@
+List <JavaDecl> list = new ArrayList();
+
+// Add suggestions for node
+if(aNode instanceof JType)
+getSuggestions((JType)aNode, list);
+// If node is JVarDecl Initializer, return JVarDecl class
+JVarDecl vd = getVarDeclForInitializer(aNode);
+if(vd!=null)
+return vd.getJClass();
+

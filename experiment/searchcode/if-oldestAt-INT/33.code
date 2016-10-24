@@ -1,0 +1,11 @@
+private boolean domainIsPointsInTime;
+private int oldestAt;
+private int newestAt;
+private long deltaTime;
+private Long domainStart;
+protected int translateGet(int var1) {
+if(this.oldestAt == 0) {
+return var1;
+} else {
+int var2 = var1 + this.oldestAt;
+

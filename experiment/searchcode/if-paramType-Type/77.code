@@ -1,0 +1,11 @@
+throws Exception
+{
+paramType = paramType.getType();
+if (paramObject != null) {
+paramType = paramObject.getClass();
+paramType = paramType.getType();
+if (paramValue != null) {
+paramType = paramValue.getType();
+}
+return this.registry.lookup(paramType);
+

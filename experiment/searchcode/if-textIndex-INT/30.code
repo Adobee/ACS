@@ -1,0 +1,8 @@
+public static int crawl(int x, int y, char[][]input, String target, int textIndex, int prevRow, int prevCol)
+{
+if (x < 0 || y < 0 || x >= input.length || y >= input[x].length)
+if (input[x][y] == target.charAt(textIndex) &amp;&amp; textIndex == target.length()-1)
+return 1;
+int count = 0;
+if (input[x][y] == target.charAt(textIndex))
+

@@ -1,0 +1,7 @@
+@Override
+public Object convert(Object source) {
+if (toType.isPrimitive()) {
+if (source == null) {
+Class sourceClass = source.getClass();
+if (toType.isPrimitive() || sourceClass.isPrimitive()) {
+

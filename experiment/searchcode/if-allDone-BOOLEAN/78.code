@@ -1,0 +1,10 @@
+task.start();
+}
+
+private boolean allDone() {
+return tasks == 0;
+}
+
+public synchronized void done(CommandTask task) {
+if (allDone()) {    // In the end, sortPSDs is executed. After that it&#39;s done.
+

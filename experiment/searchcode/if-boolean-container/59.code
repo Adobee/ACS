@@ -1,0 +1,12 @@
+* @param container the container
+* @param ram       the ram
+* @return
+*/
+@Override
+public boolean allocateRamForContainer(Container container,
+float ram) {
+float maxRam = container.getRam();
+
+if (ram >= maxRam) {
+ram = maxRam;
+

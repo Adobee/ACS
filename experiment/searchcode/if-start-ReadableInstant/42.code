@@ -1,0 +1,6 @@
+public class Minutes extends BaseSingleFieldPeriod {
+
+public static Minutes minutesBetween(ReadableInstant start, ReadableInstant end) {
+long amount = BaseSingleFieldPeriod.millisBetween(start.getMillis(), end.getMillis());
+return new Minutes(FieldUtils.safeToInt(Math.round(amount / (60f * 1000f))));
+

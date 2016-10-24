@@ -1,0 +1,11 @@
+_zones = new ArrayList<ZoneNormal>();
+}
+
+public void addZone(ZoneNormal zone) {
+if (_zones.contains(zone))
+return;
+
+
+for(ZoneNormal b : _zones) {
+if(b instanceof ZoneInherit &amp;&amp; !((ZoneInherit)b).containsInherited(zone) &amp;&amp; zone.getForm().contains(b.getForm())) {
+

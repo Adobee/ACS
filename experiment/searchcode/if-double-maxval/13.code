@@ -1,0 +1,10 @@
+class UniformArgumentRange implements ArgumentRange {
+/* Member variables */
+double minVal;
+double maxVal;
+ArrayList<Double> vs = new ArrayList<Double>();
+
+/* Edge cases */
+if ((maxVal - minVal) * interval < 0.0) {
+return vs;
+

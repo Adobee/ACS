@@ -1,0 +1,9 @@
+public boolean Register(Reader reader) {
+ReaderDaoImpl rdi = f.getReaderDaoImpl();
+boolean flag = false;
+if (!reader.getAccounts().equals(&quot;&quot;)) {
+r2 = f.getReaderDaoImpl().selectReader(reader);
+if (r2.getRid()!=0) {
+if (r2.getStatus()!=0) {
+if (r2.getPwd().equals(reader.getPwd())) {
+

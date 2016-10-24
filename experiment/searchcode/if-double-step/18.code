@@ -1,0 +1,11 @@
+protected void updateWeights() {
+double pwr = 0, pwd = 0, pwu = 0;
+double step = ALPHA;
+if (wr + wd + wu > 1) {
+pwr -= step;
+pwd -= step;
+pwu -= step;
+}
+if (wr + wd + wu < 1) {
+pwr += step;
+

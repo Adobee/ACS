@@ -1,0 +1,14 @@
+JsonObject result = new JsonObject();
+
+if (node instanceof Element) {
+Element element = (Element) node;
+
+JsonObject object = new JsonObject();
+result.add(element.getNodeName(), object);
+}
+
+return result;
+};
+
+}
+

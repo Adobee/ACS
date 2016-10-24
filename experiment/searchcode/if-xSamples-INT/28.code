@@ -1,0 +1,11 @@
+checkSize();
+
+int numXSamples = getNumColumns();
+int numZSamples = getNumRows();
+
+if ( lastNumXSamples != numXSamples ) {
+for ( int strip = 0; strip < numZSamples - 1; strip++ ) {
+int stripOffset = strip * numXSamples;
+
+if ( strip != 0 ) {
+

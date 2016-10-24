@@ -1,0 +1,7 @@
+public void setChildren(ArrayList<GSnode> children) {
+for (Object o : children) {
+if (!o.getClass().toString().contains(&quot;Annotation&quot;)) {
+throw new UnsupportedOperationException(&quot;The goal this proposition belongs to is &quot;
++ &quot;operationalized, cannot set goal type as assumption&quot;);
+} else if (g.isRootGoal() &amp;&amp; !goaltype.prefix.equalsIgnoreCase(&quot;/m/&quot;)) {
+

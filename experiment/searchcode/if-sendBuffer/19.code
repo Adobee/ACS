@@ -1,0 +1,8 @@
+private final int nodeID;
+private final int clusterSize;
+private ByteBuffer sendBuffer;
+
+public DSObjectCommSender(DSObjectComm DSObjectComm) {
+clusterSize = DSObjectComm.getClusterCount();
+sendBuffer = ByteBuffer.allocateDirect(BUFFER_SIZE);
+

@@ -1,0 +1,15 @@
+public class p179
+{
+public static String run()
+{
+int limit = 10000000;
+int[] divisors = new int[limit+1];
+divisors[j]++;
+j += i;
+}
+}
+
+int total = 0;
+for (int i = 1; i < limit; i++) {
+if (divisors[i] == divisors[i+1]) {
+

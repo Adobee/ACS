@@ -1,0 +1,27 @@
+if (b == 0)
+throw new ArithmeticException();
+
+boolean neg = false;
+if (a < 0)
+neg = !neg;
+
+if (b < 0)
+while (b << d <= a) {
+d++;
+}
+
+int c = 0;
+
+for (int i = d; i >= 0; i--) {
+if (b << i <= a) {
+c |= 1 << i;
+a -= b << i;
+}
+}
+
+if (neg)
+c = -c;
+return c;
+}
+}
+

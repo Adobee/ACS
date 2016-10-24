@@ -1,0 +1,13 @@
+multipartBuilder = new MultipartBody.Builder();
+multipartBuilder.setType(MultipartBody.FORM);
+}
+}
+
+void setRelativeUrl(Object relativeUrl) {
+if (relativeUrl == null) throw new NullPointerException(&quot;@Url parameter is null.&quot;);
+this.relativeUrl = relativeUrl.toString();
+}
+
+void addHeader(String name, String value) {
+if (&quot;Content-Type&quot;.equalsIgnoreCase(name)) {
+

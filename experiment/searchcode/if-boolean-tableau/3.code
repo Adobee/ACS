@@ -1,0 +1,10 @@
+public class IterExterneTableau implements Iterator<Produit> {
+private int currIndex = 0;
+private StockTableau stockTableau;
+this.stockTableau = stockTableau;
+}
+
+@Override
+public boolean hasNext() {
+if (currIndex < stockTableau.size &amp;&amp; stockTableau.content[currIndex] != null) {
+

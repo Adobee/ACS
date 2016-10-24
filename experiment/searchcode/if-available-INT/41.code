@@ -1,0 +1,11 @@
+int[] position = findAvailable();
+int h = position[0];
+int w = position[1];
+if (h == -1 &amp;&amp; w == -1) {
+return count + 1;
+}
+
+int c = count;
+boolean[] available = checkCover(h, w);
+if (!(available[0] | available[1] | available[2] | available[3])) {
+

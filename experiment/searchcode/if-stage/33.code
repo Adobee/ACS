@@ -1,0 +1,12 @@
+StageBase currentStage = getCurrentStage();
+if (currentStage.isPaused() != isPaused) {
+currentStage.handlePause(isPaused);
+StageBase stage = null;
+if (this.stages.size() > 0) {
+stage = this.stages.peek();
+}
+return stage;
+}
+
+}
+

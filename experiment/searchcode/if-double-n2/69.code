@@ -1,0 +1,11 @@
+public class Normalizer
+{
+public static void
+norm(double[][] data) {
+int n1 = data.length, n2 = data[0].length;
+double[] minCol = new double[n2];
+for (int j = 0; j < n2; j++) {
+// minmax normalization
+//				double diff = maxCol[j] - minCol[j];
+//				if (diff != 0)
+

@@ -1,0 +1,9 @@
+private static final long serialVersionUID = -2942226928212019162L;
+
+private final int xDiff;
+private final int yDiff;
+Direction direction = (Direction) o;
+
+if (xDiff != direction.xDiff) return false;
+if (yDiff != direction.yDiff) return false;
+

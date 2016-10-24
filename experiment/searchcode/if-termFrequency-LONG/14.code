@@ -1,0 +1,9 @@
+private static Logger log = LoggerFactory.getLogger(TermFrequencyResults.class);
+
+@Id
+@GeneratedValue
+@Column(name = &quot;ID&quot;)
+private Long id;
+TermFrequency existingTermFrequency = termFrequencyMap.get(termFrequency.getTerm());
+if (existingTermFrequency == null) {
+

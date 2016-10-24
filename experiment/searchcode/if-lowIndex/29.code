@@ -1,0 +1,13 @@
+while (lowIndex <= highIndex) {
+int midIndex = (lowIndex + highIndex) / 2;
+if (value == a[midIndex])
+return true;
+else if (value < a[midIndex])
+highIndex = midIndex - 1;
+else
+lowIndex = midIndex + 1;
+}
+return false;
+}
+}
+

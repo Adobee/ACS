@@ -1,0 +1,5 @@
+byte[] requestBody = { &#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39; };
+if (streamingMode == StreamingMode.FIXED_LENGTH) {
+connection.setFixedLengthStreamingMode(requestBody.length);
+} else if (streamingMode == StreamingMode.CHUNKED) {
+

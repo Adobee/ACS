@@ -1,0 +1,13 @@
+* @version 2016.05.15
+*
+*/
+class FindHorizontalSeam {
+private double[][] energy;
+private double[][] distance;
+private int [][] previous;
+if (y + dy >= height() || y + dy < 0) {
+return;
+}
+double newDistance = distance[x - 1][y] + energy[x][y + dy];
+if (distance[x][y + dy] > newDistance) {
+

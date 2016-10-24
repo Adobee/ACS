@@ -1,0 +1,15 @@
+State state = getThreadState();
+if (state == null)
+return &quot;STOPPED&quot;;
+return state.toString();
+}
+
+public int getIndexNumDocs() throws IOException, SearchLibException {
+IndexStatistics stats = autoCompClient.getStatistics();
+if (stats == null)
+return 0;
+return stats.getNumDocs();
+}
+
+final private int indexBuffer(int docCount, List<IndexDocument> buffer)
+

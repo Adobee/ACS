@@ -1,0 +1,9 @@
+public Size2D arrange(BlockContainer container, Graphics2D g2,
+RectangleConstraint constraint) {
+LengthConstraintType w = constraint.getWidthConstraintType();
+RectangleConstraint constraint) {
+
+Size2D size1 = arrange(container, g2, RectangleConstraint.NONE);
+
+if (constraint.getWidthRange().contains(size1.getWidth())) {
+

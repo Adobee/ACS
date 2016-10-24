@@ -1,0 +1,13 @@
+minute = Integer.parseInt(tempArr[1]);
+}
+
+public void add(int added) {
+if (added > 60) {
+hour = (hour+added/60 >12)? hour+added/60 - 12: hour+added/60;
+added %= 60;
+}
+
+if (minute+added >59) {
+minute = (minute+added)-60;
+hour = (hour==12)?1:hour+1;
+

@@ -1,0 +1,12 @@
+private int masterZ;
+boolean hasMaster;
+
+//=====================================IAmASlave=====================================
+public void setMaster(World world, int Xmaster, int Ymaster, int Zmaster)
+{
+if(!world.isRemote)
+{
+this.masterX = Xmaster;
+this.masterY = Ymaster;
+this.masterZ = Zmaster;
+

@@ -1,0 +1,12 @@
+import lekro.vectorbattle.math.Vector;
+
+public class Projectile {
+
+double c1, c2, c3;
+double strength;
+double XStart;
+double magnitude;
+double YStart;
+
+public Projectile(double c1, double c2, double c3, double mag, double damage, double XStart, double YStart) {
+

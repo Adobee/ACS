@@ -1,0 +1,6 @@
+import java.util.List;
+
+public class EventProcessorPauseScheduleRepositoryImpl extends BaseCustomRepository<EventProcessorPauseSchedule, Long> implements EventProcessorPauseScheduleRepositoryCustom {
+List<EventProcessorPauseSchedule> list = query.list(eventProcessorPauseSchedule);
+if (list.isEmpty()) {
+

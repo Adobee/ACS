@@ -1,0 +1,15 @@
+name|void
+name|checkBulkAction
+parameter_list|(
+name|boolean
+name|indexShouldBeAutoCreated
+parameter_list|,
+name|timeout
+decl_stmt|;
+if|if
+condition|(
+name|indexShouldBeAutoCreated
+condition|)
+block|{
+comment|// we expect the bulk to fail because it will try to go to the master. Use small timeout and detect it has passed
+

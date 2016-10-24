@@ -1,0 +1,6 @@
+public Map<String, Object> addToMap(String value, Object obj, Map<String, Object> map){
+if(value.indexOf(&quot;.&quot;) == -1) {
+String mapValue = value.substring(0, value.indexOf(&quot;.&quot;));
+String newValue = value.replace(mapValue + &quot;.&quot;, &quot;&quot;);
+if(map.containsKey(mapValue)){
+

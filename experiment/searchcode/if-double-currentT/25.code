@@ -1,0 +1,15 @@
+ALineIntersection2D.Line2DDistance d = null;
+double dT = 0;
+int index = 0;
+
+double currentT = 0;
+
+for( int i = 0; i < path.length-1; i++ ) {
+ALineIntersection2D.Line2DDistance dis = ALineIntersection2D.distancePointToSegment( p, a, b );
+
+if( d == null ) {
+d = dis;
+dT = currentT;
+index = i;
+} else if( d.distance > dis.distance ) {
+

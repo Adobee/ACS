@@ -1,0 +1,9 @@
+public static CropHolder of(Crop crop) {
+return new CropHolder(crop);
+}
+
+@Override
+public boolean matches(ItemStack stack) {
+ICrop container = HFApi.crops.getCropFromStack(stack);
+if (container != null) {
+

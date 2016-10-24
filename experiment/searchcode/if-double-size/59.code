@@ -1,0 +1,10 @@
+public MovingAvg(int size) {
+this.window = new Window<Double>(size);
+}
+
+public Double transform(Double value) {
+sum += value;
+Double polled = window.transform(value);
+if (polled != null) {
+sum -= polled;
+

@@ -1,0 +1,8 @@
+/** True after calling {@link #close(int, String)}. No writes are allowed afterward. */
+private volatile boolean writerSentClose;
+writer.sendMessage(type, payload);
+}
+
+@Override public void sendPing(Buffer payload) throws IOException {
+if (writerSentClose) throw new IllegalStateException(&quot;Closed&quot;);
+

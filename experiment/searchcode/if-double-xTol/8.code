@@ -1,0 +1,11 @@
+double b = 1.0;
+double mxlimit,pxlimit;	//plus minus xlimits
+double xtol = 5.0e-1;
+double[] root;	//three roots
+mxlimit = -5.0 - xtol/2;
+
+
+double tol=1.0e-6;
+
+root[0] = root[1] = root[2] = Double.NaN;	//mark all roots as undefined
+

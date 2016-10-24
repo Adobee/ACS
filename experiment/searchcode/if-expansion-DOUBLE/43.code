@@ -1,0 +1,11 @@
+adxbdy = -adxbdy;
+}
+if (bdxady < 0.0) {
+bdxady = -bdxady;
+}
+
+double permanent = alift * (bdxcdy + cdxbdy) + blift
+* (cdxady + adxcdy) + clift * (adxbdy + bdxady);
+double errbound = INCERRBOUND * permanent;
+if (det > errbound || -det > errbound) {
+

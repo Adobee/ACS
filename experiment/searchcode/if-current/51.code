@@ -1,0 +1,10 @@
+public void move(float x,float y)
+{
+currentX+= x;
+currentY+= y;
+//keep actor inbounds
+if (currentX < minY) currentX = minX;
+if (currentX > maxX) currentX = maxX;
+if (currentY < minY) currentY = minY;
+if (currentY > maxY) currentY = maxY;
+

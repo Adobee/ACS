@@ -1,0 +1,8 @@
+@Override
+public void run(ClassNode node) {
+if (fieldNode == null) {
+System.out.println(&quot;Field &quot; + owner + &quot;.&quot; + methodName
+: GETFIELD, owner, fieldNode.name, fieldNode.desc);
+if(multi != null) {
+method.visitLdcInsn(multi.getMultiple());
+

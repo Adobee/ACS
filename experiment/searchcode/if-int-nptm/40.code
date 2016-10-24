@@ -1,0 +1,7 @@
+final int npt = numberOfInterpolationPoints;
+final int np = n + 1;
+final int nptm = npt - np;
+for (int j = 0; j < n; j++) {
+for (int i = 0; i <= j; i++) {
+if (i < j) {
+

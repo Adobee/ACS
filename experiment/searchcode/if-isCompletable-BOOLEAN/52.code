@@ -1,0 +1,15 @@
+return false;
+}
+
+boolean isWon()
+{
+if (iGameOver)
+return true;
+for (Suit suit: Suit.values())
+return iGameOver || iReveal || isWon() || isLost();
+}
+
+boolean isCompletable()
+{
+if (iPile.cardsLeft() != 0 || iPack.cardsLeft() != 0)
+

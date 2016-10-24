@@ -1,0 +1,13 @@
+public void checkHealth() {
+if (p1.health <= 0) {
+p1.exsists = false;
+}
+if (p2.health <= 0) {
+p2.exsists = false;
+}
+}
+
+public void decreaseHealth() {
+if (p1.exsists &amp;&amp; p2.exsists) {
+long power1 = p1.curAnimationPower();
+

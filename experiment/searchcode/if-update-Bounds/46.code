@@ -1,0 +1,9 @@
+public void update() {
+camera.update();
+bounds.set(camera.position.x-(width*camera.zoom)*0.5f,
+camera.position.y-(height*camera.zoom)*0.5f,
+public boolean inscaledBounds(Vector3 pos) {
+if ( pos.x < bounds.x+(bounds.width*1.1)
+&amp;&amp; pos.y < bounds.y+(bounds.height*1.1)
+&amp;&amp; pos.x > bounds.x-bounds.width*.1
+

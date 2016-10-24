@@ -1,0 +1,10 @@
+int j=0;
+if (A.length == 0) return 0;
+while (j<A.length) {
+while ((j<A.length) &amp;&amp; (A[j]==A[i])) j++;
+if (j<A.length) A[++i] = A[j];
+}
+return i+1;
+}
+}
+

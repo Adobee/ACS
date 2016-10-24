@@ -1,0 +1,16 @@
+@Override
+public boolean add(T t) {
+if (contains(t))
+return false;
+return super.add(t);
+}
+
+@Override
+public boolean addAll(Collection<? extends T> c) {
+boolean added = false;
+for (T t : c)
+added = add(t) || added;
+return added;
+}
+}
+

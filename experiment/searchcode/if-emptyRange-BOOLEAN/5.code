@@ -1,0 +1,9 @@
+protected int findOverlap(Range<T> other) {
+if (other instanceof EmptyRange)
+return 2;
+if (other instanceof SingleElementRange)
+return ((MultipleIntervalRange<T>) other).subtractFrom(this);
+if (other instanceof EmptyRange)
+return this;
+if (other.contains(element)) //If the other range contains the only element in this range and we are subtracting, then the result is the empty set
+

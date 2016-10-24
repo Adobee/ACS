@@ -1,0 +1,10 @@
+public boolean isDoublePress(Key key) {
+boolean doublePress = false;
+
+if (key.isKey() &amp;&amp; !key.keyPressed &amp;&amp; !key.keyReleased) {
+key.setKeyPressed(true);
+//keyPressed = true;
+}
+
+if (key.keyReleased) {
+

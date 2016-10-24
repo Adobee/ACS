@@ -1,0 +1,7 @@
+gradients.set(j, gradients.get(j).scalarMultiply(1.0/m));
+}
+else{
+RealMatrix toSet = gradients.get(j).scalarMultiply(1.0/m).add(network.getWeights().get(j).scalarMultiply(lambda));
+List<RealMatrix> gradients = new ArrayList<RealMatrix>();
+for (int i = 0; i<network.getWeights().size();i++){
+

@@ -1,0 +1,6 @@
+throw new SingularMatrixException();
+}
+
+final int m = realEigenvalues.length;
+if (b.length != m) {
+

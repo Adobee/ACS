@@ -1,0 +1,6 @@
+public MutableInterval(long startInstant, long endInstant) {
+super(startInstant, endInstant, null);
+}
+public MutableInterval(long startInstant, long endInstant, Chronology chronology) {
+super(startInstant, endInstant, chronology);
+

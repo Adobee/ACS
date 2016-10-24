@@ -1,0 +1,8 @@
+System.out.println(&quot;动态代理测试结果&quot;);
+
+// 房主--即真实对象实例
+HouseSale masterService = new HouseMasterService();
+Object obj = HouseSaleInvocationHandler.getProxyInstanceFactory(masterService);
+if (obj instanceof HouseSale) {
+System.out.println(&quot;=====dynamicProxy2 instanceof begin=======&quot;);
+

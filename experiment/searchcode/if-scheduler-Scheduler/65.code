@@ -1,0 +1,7 @@
+public synchronized void startScheduler() throws SchedulerException {
+if (scheduler == null) {
+SchedulerFactory schedulerFactory = new StdSchedulerFactory();
+public synchronized void stopScheduler() throws SchedulerException {
+if (scheduler != null) {
+scheduler.shutdown(false);
+

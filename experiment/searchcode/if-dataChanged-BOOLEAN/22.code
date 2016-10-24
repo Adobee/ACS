@@ -1,0 +1,14 @@
+protected abstract String calc();
+
+protected abstract boolean dataChanged();
+
+public String getValue() {
+if (oldValue == null) {
+oldValue = calc();
+} else if (dataChanged()) {
+oldValue = calc();
+}
+return oldValue;
+}
+}
+

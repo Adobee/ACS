@@ -1,0 +1,14 @@
+
+public class Polynomial {
+
+int polyDegree;
+double[] coeff;
+
+public Polynomial() {
+polyDegree = 0;
+coeff = new double[1];
+}
+
+public Polynomial(double[] coeff1) {
+coeff = coeff1;
+

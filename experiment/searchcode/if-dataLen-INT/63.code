@@ -1,0 +1,14 @@
+int dataLen = tmp.getInt();
+
+if (buf.remaining() < (dataLen + 8)) {
+return false;
+buf.put(cmd.getBytes(Charsets.ASCII));
+buf.putInt(dataLen);
+if (dataLen > 0) {
+buf.put(data);
+}
+buf.flip();
+return buf;
+}
+}
+

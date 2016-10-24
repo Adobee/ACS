@@ -1,0 +1,7 @@
+v.normal();
+double nDotP0 = normal.dotProduct(p0);
+double nDotv = normal.dotProduct(v);
+double t = (offset - nDotP0) / nDotv ;
+if (t <= 0)
+return Double.POSITIVE_INFINITY;
+

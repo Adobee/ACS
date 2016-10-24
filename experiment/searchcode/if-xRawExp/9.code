@@ -1,0 +1,8 @@
+// y is either a very large integral value that does not fit in a long or it is a special number
+
+if ((yRawExp == 2047 &amp;&amp; yRawMantissa != 0) ||
+(xRawExp == 2047 &amp;&amp; xRawMantissa != 0)) {
+return Double.NaN;
+} else if (xRawExp == 1023 &amp;&amp; xRawMantissa == 0) {
+// x = -1.0 or x = +1.0
+

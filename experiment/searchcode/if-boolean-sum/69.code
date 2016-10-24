@@ -1,0 +1,8 @@
+/* naive recursive approach TIME IS EXPONENTIAL O (2^n) */
+private static boolean naiveSum(int[] A, int n, int sum) {
+if (A[n] == sum)
+return true;
+else if (n == A.length - 1)
+return false;
+boolean result = naiveSum(A, n + 1, sum);
+

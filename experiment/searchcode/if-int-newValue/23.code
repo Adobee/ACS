@@ -1,0 +1,8 @@
+public void simulate() {
+if (value > 1) {
+long newValue = value / 2;
+if (newValue % 2 == 0) {
+//Main.pq.add(new EvenEvent(newValue, time + 1));
+} else if (newValue != 1) {
+Main.pq.add(new OddEvent(newValue, time + 1));
+

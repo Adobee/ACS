@@ -1,0 +1,13 @@
+Bitmap bitmapTmp;//牌的Bitmap
+int xOffset;     //牌的X轴偏移量
+boolean flag=false;  //是否出牌的标志
+int num;//0-53   牌号
+
+public CardForControl(Bitmap bitmapTmp,int xOffset,	int num)
+{//判定要出的是哪张牌
+boolean result=false;
+int yUp=(flag)?DOWN_Y-MOVE_YOFFSET:DOWN_Y;
+
+
+if(x>xOffset&amp;&amp;x<xOffset+CARD_WIDTH
+

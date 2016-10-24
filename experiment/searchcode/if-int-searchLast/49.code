@@ -1,0 +1,12 @@
+public int[] searchRange(int[] nums, int target) {
+int[] res = new int[] { -1, -1 };
+int n = nums.length;
+
+if (nums == null || n == 0) {
+res[1] = res[0] == -1 ? -1 : searchLast(nums, target);
+
+return res;
+}
+
+private int searchFirst(int[] nums, int target) {
+

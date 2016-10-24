@@ -1,0 +1,9 @@
+public int search(int[] A, int target) {
+if(target==A[0])
+return 0;
+if(target>A[0]){
+int pre = A[0];
+for(int i=1;i<A.length;i++){
+if(A[i]<pre)
+return -1;
+

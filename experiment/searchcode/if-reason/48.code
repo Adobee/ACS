@@ -1,0 +1,14 @@
+package Model;
+
+public class Complainer extends Person  implements Data{
+private String reason;
+public boolean isValid(){
+if (reason != null &amp;&amp; reason.length()>0){
+return super.isValid();
+} else {
+return false;
+}
+}
+
+}
+

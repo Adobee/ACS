@@ -1,0 +1,12 @@
+public abstract class AvailListBasePrinter implements AvailListPrinter {
+
+private final ServletOutputStream outputStream;
+private final int startDoy;
+private final String gamedays;
+int endDoy = startDoy + (4 * Avail.DEFAULT_RANGE);
+if (endDoy > 364) {
+endDoy = 364;
+}
+for (int i = startDoy; i < endDoy; i++) {
+if (gamedays.charAt(i) == &#39;J&#39;) {
+

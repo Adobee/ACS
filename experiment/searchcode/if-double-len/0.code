@@ -1,0 +1,11 @@
+public Vec normalise() {
+double len = length();
+if (len == 0) {
+len = 1;
+}
+return new Vec(x / len, y / len, z / len, a);
+}
+
+public double length() {
+if (length != length) {
+

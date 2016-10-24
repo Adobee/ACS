@@ -1,0 +1,7 @@
+import org.junit.Test;
+import org.springframework.batch.repeat.CompletionPolicy;
+import org.springframework.batch.repeat.RepeatCallback;
+@Override
+public boolean isComplete(RepeatContext context, RepeatStatus result) {
+Integer count = (Integer) context.getAttribute(&quot;count&quot;);
+

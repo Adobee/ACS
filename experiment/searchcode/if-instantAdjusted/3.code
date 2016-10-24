@@ -1,0 +1,6 @@
+final int offsetAdjusted = getOffset(instantAdjusted);
+// if the offsets differ, we must be near a DST boundary
+long prev = previousTransition(instantAdjusted);
+if (prev < instantAdjusted) {
+int offsetPrev = getOffset(prev);
+

@@ -1,0 +1,8 @@
+public class FibonaciEvaluator implements IEvaluator {
+
+private double currentSum;
+double currentFibonaci = 1.0;
+double previousFibonaci = 1.0;
+
+while(currentFibonaci < currentSum ){
+

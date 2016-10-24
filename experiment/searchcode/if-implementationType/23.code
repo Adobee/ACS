@@ -1,0 +1,5 @@
+public static void writeImplementationValue(XMLStreamWriter xtw, String implementationType, String implementation, boolean namespace) throws Exception {
+if (implementationType == null || implementationType.length() == 0 || CLASS_TYPE.equals(implementationType)) {
+writeImplementationValueAndType(xtw, &quot;class&quot;, implementation, namespace);
+} else if (implementationType.equals(&quot;delegateExpressionType&quot;)){
+

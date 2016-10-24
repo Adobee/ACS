@@ -1,0 +1,10 @@
+*    Copyright (C) 2015 George Antony Papadakis (gpapadis@yahoo.gr)
+*/
+
+package BlockProcessing.BlockRefinement;
+
+import DataStructures.AbstractBlock;
+import DataStructures.BilateralBlock;
+public void applyProcessing(List<AbstractBlock> blocks) {
+//only applicable to bilateral block collections
+

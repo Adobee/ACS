@@ -1,0 +1,7 @@
+Integer telecomlevel = tbEmployee.get(0).getTelecomlevel();
+String strtelecomlevel = null;
+if(telecomlevel==-1){
+Integer mobilelevel = tbEmployee.get(0).getMobilelevel();
+String strmobilelevel = null;
+if(mobilelevel==-1){
+

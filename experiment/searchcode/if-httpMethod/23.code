@@ -1,0 +1,7 @@
+@Override
+public Boolean isAuthorizedURL(Usuario usuario, String url, HTTPMethod httpmethod) {
+if(url.equalsIgnoreCase(URL_LOGIN)) {
+return true;
+} else if(usuario.getRol() == Rol.ADMIN) {
+return (httpmethod == HTTPMethod.GET || httpmethod == HTTPMethod.PUT || httpmethod == HTTPMethod.POST);
+

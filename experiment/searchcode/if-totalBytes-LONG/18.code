@@ -1,0 +1,12 @@
+private int dotNext = 0;
+
+public SynchProgressTracker(long totalBytes) {
+super(totalBytes);
+}
+
+@Override
+public void add(long step) {
+double dotProgress = ((((double)Math.min(currentBytes, totalBytes)/totalBytes)*1000)) / 10;
+if (dotProgress > dotNext) {
+int diff = (int)(dotProgress - dotNext);
+

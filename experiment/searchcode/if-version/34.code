@@ -1,0 +1,7 @@
+public int compareTo(Object o) {
+if ( null == o ) return 1;
+if ( o instanceof VersionNumber ) {
+VersionNumber that = (VersionNumber)o;
+if ( null == that.version &amp;&amp; null == this.version ) return 0;
+else if ( null == that.version &amp;&amp; null != this.version) return 1;
+

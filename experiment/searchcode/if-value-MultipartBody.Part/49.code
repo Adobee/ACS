@@ -1,0 +1,9 @@
+builder.addFormDataPart(key, value);
+}
+}
+
+String mimeType = fileUploadInfo.getMimeType();
+if(TextUtils.isEmpty(mimeType))
+mimeType = &quot;&quot;;
+builder.addPart(Headers.of(&quot;Content-Disposition&quot;, &quot;form-data; name=\&quot;file\&quot;; filename=\&quot;&quot; + file.getName() + &quot;\&quot;&quot;),
+

@@ -1,0 +1,6 @@
+private final boolean queryMode;
+
+public CommonGramsTokenFilterFactory(IndexSettings indexSettings, Environment env, String name, Settings settings) {
+this.ignoreCase = settings.getAsBoolean(&quot;ignore_case&quot;, false);
+this.queryMode = settings.getAsBoolean(&quot;query_mode&quot;, false);
+

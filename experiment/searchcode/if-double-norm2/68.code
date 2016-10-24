@@ -1,0 +1,9 @@
+Vector2d e1v = orthogonalLeft(norm1);
+Vector2d e2v = orthogonalLeft(norm2);
+
+// 90 - 180 || 180 - 270
+// if (norm1.dot(e2v) <= 0 &amp;&amp; ) { //XXX >= !!
+if (norm1.dot(norm2) > 0) {
+
+e1v.add(e2v);
+

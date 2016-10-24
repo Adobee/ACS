@@ -1,0 +1,6 @@
+public static Object doOperations(int type1, Object val1, int operation, int type2, Object val2) {
+if (type1 == -1)
+type1 = val1 == null ? DataTypes.OBJECT : __resolveType(val1.getClass());
+double d = Math.pow((Long) val1, (Long) val2);
+if (d > Long.MAX_VALUE) return d;
+

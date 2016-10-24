@@ -1,0 +1,10 @@
+long a = dividend;
+long b = divisor;
+a = Math.abs(a);
+b = Math.abs(b);
+int sign = 1;
+if(dividend<0) sign = -sign;
+if(divisor<0) sign = -sign;
+
+int res = 0;
+

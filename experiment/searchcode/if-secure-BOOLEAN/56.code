@@ -1,0 +1,12 @@
+this._sr = secureRandom;
+}
+
+public static void init(SecureRandom secureRandom) {
+if (PRNG._prng == null) {
+PRNG._prng = new PRNG(secureRandom);
+}
+}
+
+public static PRNG getInstance() {
+if (PRNG._prng == null) {
+

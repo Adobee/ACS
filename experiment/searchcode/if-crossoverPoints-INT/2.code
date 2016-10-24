@@ -1,0 +1,10 @@
+public class DoubleArrayPointCrossover<C extends AbstractDoubleArrayChromosome> extends AbstractCrossoverOperator<C> {
+
+private final int crossoverPoints;
+
+public DoubleArrayPointCrossover(Random rand, int crossoverPoints) {
+super(rand);
+
+if (crossoverPoints < 1) {
+throw new IllegalArgumentException(&quot;Number of crossover points cannot be less than 1.&quot;);
+

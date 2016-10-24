@@ -1,0 +1,7 @@
+public boolean activeDuring(RoutingRequest options, long start, long end) {
+for (TimePeriod period : timePeriods) {
+if (!(end <= period.startTime || start >= period.endTime)) {
+public boolean displayDuring(RoutingRequest options, long start, long end) {
+for (TimePeriod period : displayTimePeriods) {
+if (!(end <= period.startTime || start >= period.endTime)) {
+

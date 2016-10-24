@@ -1,0 +1,7 @@
+public static EthiopicChronology getInstance(DateTimeZone zone, int minDaysInFirstWeek) {
+if (zone == null) {
+int relativeYear = year - 1963;
+int leapYears;
+if (relativeYear <= 0) {
+// Add 3 before shifting right since /4 and >>2 behave differently
+

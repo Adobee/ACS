@@ -1,0 +1,7 @@
+Iteration originalIteration = getIteration(story.getIterationId());
+Iteration targetIteration = getIteration(storyForm.getTargetIterationId());
+
+if (storyForm.getAction().equals(MOVE_ACTION)) {
+moveStory(story, targetIteration, originalIteration, request, session);
+} else if (storyForm.getAction().equals(CONTINUE_ACTION)) {
+

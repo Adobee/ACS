@@ -1,0 +1,9 @@
+&quot;^[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$&quot;
+);
+
+if (!rfc2822.matcher(email).matches())
+return false;
+//checks multiplicity
+if(forum!=null)
+for(int i =0; i< forum.getMembers().size(); i++){
+

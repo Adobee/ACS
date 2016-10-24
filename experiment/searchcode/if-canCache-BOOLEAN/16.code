@@ -1,0 +1,12 @@
+public RuntimeObject getResult(StackFrame lookup, List<RuntimeObject> args) {
+if (!canCache()) {
+return this.computeResult(lookup, args);
+return this.getClass().hashCode();
+}
+
+@Override
+public final boolean canCache() {
+return false;
+}
+}
+

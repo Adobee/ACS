@@ -1,0 +1,8 @@
+public double getSeriesBarWidth(int series) {
+double result = Double.NaN;
+Number n = (Number) this.seriesBarWidthList.get(series);
+if (n != null) {
+double lclip = getLowerClip();
+double uclip = getUpperClip();
+if (uclip <= 0.0) {
+

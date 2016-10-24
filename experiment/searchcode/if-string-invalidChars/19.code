@@ -1,0 +1,11 @@
+private String invalidChars;
+
+@Override
+public void initialize(CheckInvalidChars constraintAnnotation)
+if (value == null)
+{
+return true;
+}
+
+if (invalidChars != null)
+

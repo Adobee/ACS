@@ -1,0 +1,14 @@
+* @author Administrator
+*
+*/
+public class CreateIDKey {
+public final String createIdKey()
+{
+String idKey = &quot;&quot;;
+double random = Math.random();
+Date curDate = new Date();
+
+if (curDate != null)
+{
+idKey += String.valueOf(curDate.getSeconds()).trim()
+

@@ -1,0 +1,8 @@
+public Object decode(final Class type, final Object o, final MappedField mf) {
+if (o == null) {
+return null;
+}
+final List values = (List) o;
+if (values.size() < 2) {
+return null;
+

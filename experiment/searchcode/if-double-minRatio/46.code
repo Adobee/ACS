@@ -1,0 +1,11 @@
+return;
+}
+boolean logscale = props.RatiosOnLogScale;
+double minratio = 0;
+double maxratio = model.getMaxVal();
+maxratio = getProperties().MaxRatio;
+}
+
+if (logscale) {
+minratio = 1.0 / maxratio;
+

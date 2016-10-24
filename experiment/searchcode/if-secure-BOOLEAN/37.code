@@ -1,0 +1,8 @@
+public class StubSecureMessageCallback implements SecureMessageCallback {
+
+private SecureMessage sm;
+private boolean passed;
+private boolean replied = false;
+
+public synchronized void handleSecureMessage(SecureMessage sm, boolean passed) {
+

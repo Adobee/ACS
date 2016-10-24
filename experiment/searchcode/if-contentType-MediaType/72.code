@@ -1,0 +1,8 @@
+public synchronized void unregisterResource(Resource resource, MediaType mediaType) {
+if (this.registry != null) {
+Map<MediaType, Resource> resourceMap = this.registry.get(resource.id());
+if (resourceMap != null) {
+resourceMap.remove(mediaType);
+
+if (resourceMap.size() == 1 &amp;&amp; resourceMap.get(DEFAULT) != null) {
+

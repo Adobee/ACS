@@ -1,0 +1,11 @@
+public static final String LIMIT_KEY = &quot;limit&quot;;
+
+private static final int MIN_LIMIT = 1;
+public static final int DEFAULT_LIMIT = 100;
+return new Pagination(offset, limit);
+}
+
+public Pagination(int offset, int limit) {
+this.offset = offset;
+if (limit < MIN_LIMIT) limit = MIN_LIMIT;
+

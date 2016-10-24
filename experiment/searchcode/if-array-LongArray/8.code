@@ -1,0 +1,12 @@
+int maxValue = (int) Math.pow(2, 8*size);
+
+LongArray[] longArrays;
+
+public void setUp() throws Exception {
+File file = File.createTempFile(&quot;tmp&quot;, &quot;&quot;, new File(&quot;.&quot;));
+// noinspection ResultOfMethodCallIgnored
+file.deleteOnExit();
+
+longArrays = new LongArray[3];
+longArrays[0] = new HeapMemory(length*size, ByteOrder.LITTLE_ENDIAN).longArray(0, length);
+

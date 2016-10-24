@@ -1,0 +1,12 @@
+public class Item implements Comparable<Item> {
+private int weight;
+
+public Item(int weight) {
+this.weight = weight;
+}
+
+@Override
+public int compareTo(Item other) {
+if(this.weight < other.weight) {
+return -1;
+

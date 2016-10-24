@@ -1,0 +1,8 @@
+import at.fhv.pimpmypipe.interfaces.Readable;
+import at.fhv.pimpmypipe.interfaces.Writeable;
+
+import java.io.StreamCorruptedException;
+public T read() throws StreamCorruptedException {
+if (_readable == null) {
+throw new StreamCorruptedException();
+

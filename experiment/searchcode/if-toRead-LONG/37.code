@@ -1,0 +1,9 @@
+throw new IOException();
+}
+
+public long skip(long count) throws IOException {
+if (count >= 0) {
+synchronized (lock) {
+long skipped = 0;
+int toRead = count < 512 ? (int) count : 512;
+

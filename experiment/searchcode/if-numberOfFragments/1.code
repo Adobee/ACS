@@ -1,0 +1,12 @@
+remaining = size;
+fragNo = 1;
+numberOfFragments = (short)(size/PKT_DATA_SIZE + 1);
+
+if ((inflags &amp; Codec.FLAG_SYNC_FRAME) != 0) {
+//save new data
+copyData(buffer, dataLen, fragNo);
+}
+
+if (fragNo == numberOfFragments) {
+//Log.d(TAG, &quot;*** last fragment, decoding seq &quot; + seqNo);
+

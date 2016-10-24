@@ -1,0 +1,12 @@
+{ fillLevel = 1.0; }//fill tank completely
+
+public void fill(double amount)
+{
+if (fillLevel + amount > 1.0)
+amount -= (fillLevel + amount - 1);
+public void drain(double amount)
+{ fillLevel -= amount; }
+
+public boolean isFull()
+{ return fillLevel == 1.0; }
+

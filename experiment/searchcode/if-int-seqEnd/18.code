@@ -1,0 +1,9 @@
+else{
+String newWord = &quot;&quot;;
+int seqStart = anchor.col;
+int seqEnd = anchor.col;
+while(seqStart >= 0 &amp;&amp; newBoard.board[anchor.row][seqStart] != &#39;0&#39;)
+if(Board.left2right){
+for(int i=seqStart+1; i<seqEnd; i++)
+newWord += newBoard.board[anchor.row][i];
+

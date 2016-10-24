@@ -1,0 +1,7 @@
+Type type = field.getGenericType();
+
+if (type instanceof ParameterizedType) {
+Type typeArgument = ((ParameterizedType) type).getActualTypeArguments()[0];
+
+if (typeArgument instanceof Class) {
+

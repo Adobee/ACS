@@ -1,0 +1,10 @@
+private final String expectedKey;
+private final Boolean expectedValue;
+
+public HasBooleanExtraMatcher(String expectedKey, Boolean expectedValue) {
+message = &quot;Intent to have extra with key of: &quot; + expectedKey + &quot; with of expected value, but &quot;;
+
+boolean matched = false;
+
+if (actualIntent == null)
+

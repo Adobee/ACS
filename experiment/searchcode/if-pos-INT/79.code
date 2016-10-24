@@ -1,0 +1,11 @@
+// pozicija jam
+int pos[];
+int b_pos[]=new int[20];
+int s_pos[]=new int[20];
+void accept(String w[][])
+{
+for(int i=0;i<20;++i)
+{
+b_pos[i]=-1;
+s_pos[i]=-1;
+

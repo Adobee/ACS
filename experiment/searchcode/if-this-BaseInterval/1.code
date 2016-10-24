@@ -1,0 +1,12 @@
+protected T start;
+protected T end;
+
+public BaseInterval(T start, T end) {
+if (start.compareTo(end) > 0) {
+return this.end;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (obj instanceof BaseInterval) {
+

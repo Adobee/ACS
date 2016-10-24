@@ -1,0 +1,11 @@
+private boolean appendStatics = false;
+
+private boolean appendTransients = false;
+
+private String[] excludeFieldNames;
+this.setAppendStatics(outputStatics);
+}
+
+protected boolean accept(Field field) {
+if (field.getName().indexOf(ClassUtils.INNER_CLASS_SEPARATOR_CHAR) != -1) {
+

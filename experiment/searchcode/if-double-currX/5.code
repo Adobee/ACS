@@ -1,0 +1,12 @@
+public double getHeightAfterPacking(ArrayList<Rectangle>
+rectangleList) {
+
+double currX = Constants.W;
+double currH = 0;
+
+Collections.sort(rectangleList);
+Rectangle rect = rectangleList.get(i);
+// System.out.println(rect.toString());
+if (rect.width <= Constants.W - currX) {
+// place rectangle at (currX, currY)
+

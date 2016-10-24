@@ -1,0 +1,12 @@
+parl = 0.0;
+if (nsing == n)
+{
+for (int j = 0; j < n; ++ j)
+{
+int l = ipvt[j];
+wa1[j] = diag[l]*(wa2[l]/dxnorm);
+for (int j = 0; j < n; ++ j)
+{
+if (sdiag[j] == 0.0 &amp;&amp; nsing == n) nsing = j;
+if (nsing < n) wa[j] = 0.0;
+

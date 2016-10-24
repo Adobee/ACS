@@ -1,0 +1,8 @@
+public ShapePainter getShape(Vector[] normalizedDerivative) {
+
+double bestScore = 99999999;
+Shape bestShape = shapes.getFirst();
+int i = 0;
+for (Shape shape : shapes) {
+double score = shape.evaluate(normalizedDerivative);
+

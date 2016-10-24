@@ -1,0 +1,9 @@
+public class SourceResult {
+private Source source;
+private String sourceString;
+private Archive a;
+Source s=(Source) HibernateUtil.getSession().load(Source.class, sKey);
+if (s!=null){
+source=s;
+//Make sure it&#39;s initialized
+

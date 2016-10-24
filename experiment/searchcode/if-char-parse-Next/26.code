@@ -1,0 +1,9 @@
+while (ch == &#39; &#39;) nextChar();
+if (ch == charToEat) {
+nextChar();
+return true;
+double parse() {
+nextChar();
+double x = parseExpression();
+if (pos < str.length()) throw new RuntimeException(&quot;Unexpected: &quot; + (char) ch);
+

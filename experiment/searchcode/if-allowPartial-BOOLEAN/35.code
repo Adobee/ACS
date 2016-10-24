@@ -1,0 +1,14 @@
+private static final Logger LOG = LoggerFactory.getLogger(GroupCodex.class);
+protected boolean allowPartial;
+protected Codex codex[];
+protected String cid;
+
+public void init(Codex parent, Config config) throws Exception {
+LOG.trace(&quot;INIT [&quot; + getFullName() + &quot;] allowPartial = [&quot;
++ allowPartial + &quot;]&quot;);
+}
+}
+
+@Override
+public boolean decode(CodexContext pctx, JsonObject msg, ByteBuffer buf)
+

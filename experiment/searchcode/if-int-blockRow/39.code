@@ -1,0 +1,9 @@
+public boolean solver(char[][]board){
+int[] first = findFirstEmpty(board);
+if (first[0] == -1 &amp;&amp; first[1] == -1) {
+char[] column = new char[9];
+for(int i=0; i<9; i++){
+column[i] = board[i][first[1]];
+}
+if(!isValid(column)) return false;
+

@@ -1,0 +1,12 @@
+public BasicDelivery(final Handler handler) {
+mPostExecutor = new Executor() {
+@Override
+public void execute(Runnable command) {
+mRequest.deliverResponse(mResponse.response);
+if(mRunnable != null){
+mRunnable.run();
+}
+}
+}
+}
+

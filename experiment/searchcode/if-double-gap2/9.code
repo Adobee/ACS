@@ -1,0 +1,12 @@
+public class BeamlineParser extends KeyValueParser<Beamline> {
+
+String name = &quot;&quot;;
+int number = 0;
+private Double gap1;
+private Double gap2;
+private Double field1;
+if (splitKey[2].contains(&quot;1&quot;))
+gap1 = getDoubleValue(value);
+else
+gap2 = getDoubleValue(value);
+

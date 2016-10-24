@@ -1,0 +1,8 @@
+private static Camera.Size getDefaultSize(Camera camera, int targetHeight) {
+Camera.Size optimalSize = null;
+
+double minDiff = Double.MAX_VALUE;
+for (Camera.Size size : camera.getParameters().getSupportedPreviewSizes()) {
+if (Math.abs(size.height - targetHeight) < minDiff) {
+optimalSize = size;
+

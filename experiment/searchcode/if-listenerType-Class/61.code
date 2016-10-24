@@ -1,0 +1,7 @@
+protected <T extends PlayerListener> void addPlayerListener(
+final Class<T> listenerType, final T listener) {
+List<PlayerListener> requestedTypeListeners = listeners
+.get(listenerType);
+if (requestedTypeListeners == null) {
+requestedTypeListeners = new ArrayList<PlayerListener>();
+

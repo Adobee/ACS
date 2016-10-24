@@ -1,0 +1,9 @@
+private RobotController rc;
+public double[][] cowGrowth;
+public static int bigBoxSize = 5;
+public double[][] coarseCowGrowth;
+int finalx =-1, finaly=-1;
+double maxGrowth = -1.0;
+
+for (int x=(fx - sx + 1)/bigBoxSize; --x>=0;) {
+

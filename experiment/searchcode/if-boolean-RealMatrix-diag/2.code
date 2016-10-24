@@ -1,0 +1,7 @@
+public class Procrustes {
+public Procrustes(RealMatrix X, RealMatrix Xstar, boolean allowTranslation, boolean allowDilation) {
+RealMatrix J = new Array2DRowRealMatrix(rowDimension, rowDimension);
+
+if (allowTranslation) {
+//           J <- diag(n) - 1/n * matrix(1, n, n)
+

@@ -1,0 +1,13 @@
+private int number;
+private WeekDay weekDay;
+private int weekNumber;
+
+public Day(int number, WeekDay weekDay){
+this.number = number;
+public WeekDay getTomorrowsWeekday(){
+if (this.weekDay == WeekDay.SUNDAY){
+return WeekDay.MONDAY;
+}
+else {
+int thisIndex = this.weekDay.ordinal();
+

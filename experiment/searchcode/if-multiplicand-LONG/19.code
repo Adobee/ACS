@@ -1,0 +1,13 @@
+this.real = real;
+this.imaginary = imaginary;
+}
+
+public static Complex of(double real) {
+if (real == 0) return ZERO;
+if (real == 1) return ONE;
+
+return new Complex(real);
+}
+
+public static Complex of(double real, double imaginary) {
+

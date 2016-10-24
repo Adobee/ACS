@@ -1,0 +1,18 @@
+public void onCollideY(MovingTextureObject mto){
+mto.getVelocity().y = 0;
+}
+
+
+@Override
+public boolean isCollideable(){
+return true;
+texture = new TextureRegion(new Texture(Gdx.files.internal(&quot;data/tile.png&quot;)), 0, 0, 20, 20);
+return texture;
+}
+
+@Override
+public boolean canCache(){
+return true;
+}
+}
+

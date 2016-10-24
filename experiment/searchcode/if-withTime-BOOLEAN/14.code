@@ -1,0 +1,9 @@
+private Counter counterframe;
+private boolean withTime;
+
+@PostConstruct
+public void init() {
+frame = new BlockScreen();
+CompletableFuture<Boolean> timer = counterframe.printTime(time, remaining, withTime, paused);
+timer.whenComplete((Boolean t, Throwable u) -> {
+

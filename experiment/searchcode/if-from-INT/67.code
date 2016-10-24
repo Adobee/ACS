@@ -1,0 +1,10 @@
+public static int rand(int to) {
+return random.nextInt(to);
+}
+
+public static int rand(int from, int to) {
+return (0xFF000000 | (from << 16) | (from << 8) | from);
+} else if (from > to) {
+final int temp = to;
+to = from;
+

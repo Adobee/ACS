@@ -1,0 +1,11 @@
+public void salvar(IndicesReajustes indicesReajustes) {
+Integer codigo = indicesReajustes.getIndReaId();
+if (codigo == null || codigo == 0) {
+this.indicesReajustesDAO.atualizar(indicesReajustes);
+}
+
+}
+
+public boolean excluir(IndicesReajustes indicesReajustes) {
+if(this.indicesReajustesDAO.dependecias(indicesReajustes)){
+

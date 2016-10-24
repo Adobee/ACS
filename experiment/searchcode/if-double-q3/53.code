@@ -1,0 +1,9 @@
+public class AlgoQ3 extends AlgoElement {
+
+private static final long serialVersionUID = 1L;
+private GeoList inputList; //input
+size = inputList.size();
+if (!inputList.isDefined() ||  size < 2) {
+Q3.setUndefined();
+return;
+

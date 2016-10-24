@@ -1,0 +1,11 @@
+private final double b; // 回归系数
+private final double a; // 常数项，截距
+
+private final double[] xArray;
+private final double[] yArray;
+public LinearRegression( final double[] xArray, final double[] yArray )
+{
+// 检验参数
+if( xArray.length != yArray.length )
+throw new IllegalArgumentException( &quot;Argument Arrays Should Be Same Size&quot; );
+

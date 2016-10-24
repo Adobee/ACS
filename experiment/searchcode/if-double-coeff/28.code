@@ -1,0 +1,9 @@
+public class Polynom {
+
+private double coeff[]; // koeficienty polynomu
+private final static double EPS = 0.00000001;  // blizsie k 0 ako tato konstanta povazujeme za 0
+for (int i = p.length - 1; i >= 0; i--)
+if (Math.abs(p[i]) > EPS) break; else numZeroCoeff++;
+
+coeff = Arrays.copyOf(p, p.length - numZeroCoeff);
+

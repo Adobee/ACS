@@ -1,0 +1,6 @@
+public static void deletePlotChunk(PlotBlockData plotChunk) {
+if (PlotChunks.containsKey(getPlotKey(plotChunk))) {
+PlotChunks.remove(getPlotKey(plotChunk));
+public static void addPlotChunk(PlotBlockData plotChunk, boolean save) {
+if (!PlotChunks.containsKey(getPlotKey(plotChunk))) {
+

@@ -1,0 +1,8 @@
+public boolean moveToStarted() {
+State localState = this.state;
+if (localState == State.INITIALIZED || localState == State.STOPPED) {
+state = State.STARTED;
+return true;
+}
+if (localState == State.STARTED) {
+

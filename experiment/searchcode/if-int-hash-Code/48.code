@@ -1,0 +1,9 @@
+public class HashArrayIterator<E> implements Iterator<E> {
+
+HashArray<E> hashArray;
+int hashCode = 0;
+
+public HashArrayIterator(HashArray<E> hashArray) {
+public boolean hasNext() {
+for (; hashCode < hashArray.capacity(); hashCode++) if (hashArray.contains(hashCode)) return true;
+

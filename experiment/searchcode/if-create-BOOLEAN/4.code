@@ -1,0 +1,12 @@
+return new ValueFactory<Boolean, Type<Boolean>>() {
+
+@Override
+public Value<Boolean, ? extends Type<Boolean>> create(final Boolean value) {
+return BooleanValue.from(value);
+return this.create(null);
+}
+if (value instanceof Boolean) {
+return this.create((Boolean) value);
+}
+throw new IllegalArgumentException(&quot;Type is &quot; + value.getClass().getSimpleName());
+

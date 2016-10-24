@@ -1,0 +1,9 @@
+types.add(new Object[] {vhStaticField, Arrays.asList()});
+types.add(new Object[] {vhArray, Arrays.asList(boolean[].class, int.class)});
+boolean[] array = new boolean[10];
+
+for (int i = 0; i < array.length; i++) {
+// Plain
+{
+vh.set(array, i, true);
+

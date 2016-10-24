@@ -1,0 +1,7 @@
+import com.speedment.common.mutablestream.action.MapDoubleToDoubleAction;
+import com.speedment.common.mutablestream.action.SkipAction;
+import java.util.function.DoubleUnaryOperator;
+}).orElseGet(() -> next.ifSkip().map(skip -> {
+
+final SkipAction<Double, DoubleStream> newSkip = SkipAction.create(previous(), skip.getSkip());
+

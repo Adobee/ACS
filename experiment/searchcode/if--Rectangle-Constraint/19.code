@@ -1,0 +1,11 @@
+import com.reliability.system.view.ViewObject;
+
+public class ChangeConstraintCommand extends Command {
+private Rectangle oldConstraint;
+private Rectangle newConstraint;
+private ViewObject model;
+
+@Override
+public void execute() {
+if (oldConstraint == null) {
+

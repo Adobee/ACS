@@ -1,0 +1,9 @@
+final Report report = new Report();
+
+if (visits.size() >= 2 * week) {
+final int[] deltaAndPercent = deviationFromPreviousWeek(visits);
+int percent = 0;
+
+if (currentWeek > lastWeek) {
+percent = (int) ((((double) currentWeek / (double) lastWeek) - 1.0) * 100);
+

@@ -1,0 +1,12 @@
+private byte[] sortingFields;
+private byte[] fields;
+private Bucket bucket;
+private boolean streamingMode;
+
+private static class ParametersProcessor extends ActionConf.Configurator {
+ActionController controller, ActionContext context) {
+if (params[I_NODE_ID] == null) {
+params[I_NODE_ID] = context.getMyNodeId();
+}
+params[I_BUCKET_ID] = context.getNewBucketID();
+

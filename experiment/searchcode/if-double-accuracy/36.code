@@ -1,0 +1,14 @@
+return accuracy;
+}
+
+/**
+* Creates accuracy property if one does not exist.
+*
+* @return
+*     {@link Accuracy }
+*
+*/
+public Accuracy createAccuracy() {
+if (this.accuracy == null)
+this.setAccuracy (new Accuracy ());
+

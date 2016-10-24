@@ -1,0 +1,12 @@
+private Object state;
+private State parentState;
+private Action leadingAction;
+private double f;
+public int compareTo(State o) {
+return (int) (f - o.f);
+}
+
+@Override
+public boolean equals(Object object) {
+if (!(object instanceof State))
+

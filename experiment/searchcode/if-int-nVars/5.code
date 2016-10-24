@@ -1,0 +1,8 @@
+public class LibraryReader extends Loader{
+
+protected Histogram lib;
+protected int nVars;
+
+public LibraryReader(String filename, int nvars) throws Exception{
+super(filename);
+

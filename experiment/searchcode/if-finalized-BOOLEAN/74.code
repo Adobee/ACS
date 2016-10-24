@@ -1,0 +1,10 @@
+/** Writes to native memory. */
+/// HIGHLIGHT
+boolean finalized;
+public synchronized void write(byte[] data) {
+if (!finalized) write(address, data);
+else /* do nothing? */;
+}
+/// NORMAL
+static native void write(int address, byte[] data);
+

@@ -1,0 +1,9 @@
+import br.ufpe.cin.middleware.distribution.qos.QOSEventSourceFactory;
+
+public class RemoteObjectEventSourceFactory extends QOSEventSourceFactory
+public synchronized static RemoteObjectEventSourceFactory getInstance()
+{
+if(INSTANCE == null)
+{
+INSTANCE = new RemoteObjectEventSourceFactory();
+

@@ -1,0 +1,14 @@
+public Hours plus(int hours) {
+if (hours == 0)
+{
+return this;
+}
+
+return Hours.hours(FieldUtils.safeAdd(getValue(), hours));
+return plus(FieldUtils.safeNegate(hours));
+}
+public Hours minus(Hours hours) {
+if (hours == null)
+{
+return this;
+

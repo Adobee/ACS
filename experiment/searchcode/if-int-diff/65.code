@@ -1,0 +1,14 @@
+for (int r = 0; r < maxR; r++) {
+for (int g = 0; g < maxG; g++) {
+for (int b = 0; b < maxB; b++) {
+if (isGoodTransition(Math.abs(r - startR),
+count++;
+}
+}
+}
+}
+return count;
+}
+
+boolean isGoodTransition(int diffR, int diffG, int diffB, int d1, int d2) {
+

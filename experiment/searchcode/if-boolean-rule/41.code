@@ -1,0 +1,13 @@
+this.ruleStringRepresentation = rule.getCanonicalRuleString();
+}
+}
+
+public boolean matches(Rule rule) {
+if (rule == null) {
+return false;
+return ruleStringRepresentation.equals(componentRepresentation);
+}
+
+public boolean matches(ModelRule modelRule) {
+if (modelRule == null) {
+

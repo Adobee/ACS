@@ -1,0 +1,12 @@
+public SHA256 update(Object d) {
+LongArray data = null;
+if (d instanceof String) {
+data = BigNumber.utf8_toBits((String) d);
+} else {
+data = (LongArray) d;
+}
+
+int i;
+if (_buffer == null) {
+_buffer = new LongArray();
+

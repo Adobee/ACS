@@ -1,0 +1,9 @@
+private AtomicLong count = new AtomicLong(0);
+
+public static GlobalCounter getCounter() {
+return instance;
+}
+
+public long decrementAndGet() {
+if (count.get() == Long.MIN_VALUE) {
+

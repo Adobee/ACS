@@ -1,0 +1,12 @@
+return tg;
+}
+
+public void setNrDays(int days) {
+if (iNrDays == days) return;
+iNrDays = days;
+iCellWidth = 900 / days;
+setTitle(iText);
+boolean empty = true;
+for (int i = 0; i < 3; i++) {
+if (iMeetingTable[iDayOfWeek].length <= iStartSlot + i) { empty = false; break; }
+

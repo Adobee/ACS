@@ -1,0 +1,5 @@
+multiRequest.maxConcurrentSearchRequests(restRequest.paramAsInt(&quot;max_concurrent_searches&quot;, 0));
+private static int findNextMarker(byte marker, int from, BytesReference data, int length) {
+for (int i = from; i < length; i++) {
+if (data.get(i) == marker) {
+

@@ -1,0 +1,10 @@
+public static void setClearColor(Vector4f color){
+clearColor = color;
+}
+
+public static void clear(boolean color, boolean depth, boolean stencil, boolean scissor){
+int clear = 0;
+
+if(color)
+clear |= GL_COLOR_BUFFER_BIT;
+

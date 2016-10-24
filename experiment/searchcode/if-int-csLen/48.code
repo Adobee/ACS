@@ -1,0 +1,8 @@
+public static final boolean isMultiple6 (final CharSequence value, final int startPos, final int maxLen) throws NumberFormatException
+{
+final int    endPos=startPos + maxLen;
+if (maxLen <= 0)
+final char    lastDigit=value.charAt(endPos - 1);
+final int    lastValue=lastDigit - &#39;0&#39;;
+if ((lastValue &amp; 0x01) != 0)
+

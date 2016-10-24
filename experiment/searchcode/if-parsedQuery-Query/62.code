@@ -1,0 +1,5 @@
+IndexQueryParserService queryParser = queryParser();
+Query parsedQuery = queryParser.parse(queryStringQuery(&quot;test&quot;).defaultField(&quot;content&quot;).phraseSlop(1)).query();
+
+assertThat(parsedQuery, instanceOf(TermQuery.class));
+

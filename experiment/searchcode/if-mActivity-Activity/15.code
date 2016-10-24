@@ -1,0 +1,11 @@
+public class ActivityTest extends ActivityInstrumentationTestCase2<ContainerActivity> {
+
+private ContainerActivity mActivity;
+
+public ActivityTest(String name) {
+protected void tearDown() throws Exception {
+super.tearDown();
+if(mActivity != null) {
+mActivity.finish();
+mActivity = null;
+

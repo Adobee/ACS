@@ -1,0 +1,13 @@
+public TreeSizeObjective(final int m) {
+super();
+this.min = Math.max(0, m);
+}
+
+/**
+* Compute the objective value, i.e., determine the utility of the
+*         Section 6.3.4)
+*/
+@Override
+public double compute(final Node<?> x, final Random r) {
+if (x == null) {
+

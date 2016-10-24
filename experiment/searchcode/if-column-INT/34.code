@@ -1,0 +1,12 @@
+public class SpreadsheetColumn {
+
+public String getLabel(int column) {
+column--;
+String s = &quot;&quot; + ((char)(column%26+&#39;A&#39;));
+if (column >= 26)
+s = (char)(column/26 + &#39;A&#39;-1) + s;
+return s;
+}
+
+}
+

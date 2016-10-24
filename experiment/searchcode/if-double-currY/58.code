@@ -1,0 +1,9 @@
+public class PreemptiveNFDH {
+public double getHeightAfterPacking(ArrayList<Rectangle>
+rectangleList) {
+
+double currX = Constants.W;
+double currH = 0;
+
+Collections.sort(rectangleList);
+

@@ -1,0 +1,10 @@
+public int maxDegree() {
+if(maxDegree != null)
+return maxDegree;
+
+Iterator<Integer> degIter=G.outdegrees();
+maxDegree = -1;
+while(degIter.hasNext()) {
+Integer deg = degIter.next();
+if(deg > maxDegree)
+

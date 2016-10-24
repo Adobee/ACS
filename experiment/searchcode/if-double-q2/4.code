@@ -1,0 +1,15 @@
+public final double q2;
+public final double q3;
+
+/**
+*
+* @param a
+* @param t
+*/
+
+public AttitudeData(double[] a, Long t) {
+} else if (pair[0].compareTo(&quot;Q1&quot;) == 0) {
+_q1 = Double.parseDouble(pair[1]);
+} else if (pair[0].compareTo(&quot;Q2&quot;) == 0) {
+_q2 = Double.parseDouble(pair[1]);
+

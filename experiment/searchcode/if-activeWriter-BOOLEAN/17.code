@@ -1,0 +1,12 @@
+public AbstractReadWriteLockManager(boolean trackLocks) {
+boolean trace = trackLocks || Properties.lockTrackingEnabled();
+activeWriter = new LockManager(trace);
+* --------- Methods ---------
+*/
+
+/**
+* If a writer is active
+*/
+protected boolean isWriterActive() {
+return activeWriter.isActiveLock();
+

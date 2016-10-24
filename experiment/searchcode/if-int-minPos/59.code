@@ -1,0 +1,13 @@
+public void sort()
+{
+for (int i = 0; i < words.size() - 1; i++)
+{
+int minPos = minimumPosition(i);
+swap(minPos, i);
+}
+}
+
+private int minimumPosition(int from)
+{
+int minPos = from;
+

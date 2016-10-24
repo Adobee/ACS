@@ -1,0 +1,7 @@
+import com.netflix.config.DynamicBooleanProperty;
+import com.netflix.config.DynamicPropertyFactory;
+import com.netflix.hystrix.HystrixCommand;
+public class CommandFacadeWithPrimarySecondary extends HystrixCommand<String> {
+
+private final static DynamicBooleanProperty usePrimary = DynamicPropertyFactory.getInstance().getBooleanProperty(&quot;primarySecondary.usePrimary&quot;, true);
+

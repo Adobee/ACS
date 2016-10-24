@@ -1,0 +1,10 @@
+* should find support or generic support nodes of each target node of an edge
+* and check also these nodes
+*/
+private void search(TNodeWithUnbound curnode){
+if(curnode.getNode().equals(tnode.getNode())){
+for(TNodeWithUnbound nwunboundby: tosearchby){
+boolean exists = false;
+for(TNodeWithUnbound nwunbound: tosearch){
+if(nwunbound.getNode().equals(nwunboundby.getNode())){
+

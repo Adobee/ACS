@@ -1,0 +1,9 @@
+boolean isSingle = &quot;rx.Single&quot;.equals(rawType.getCanonicalName());
+boolean isCompletable = &quot;rx.Completable&quot;.equals(rawType.getCanonicalName());
+
+if (!isObservable &amp;&amp; !isSingle &amp;&amp; !isCompletable) {
+return null;
+}
+
+if (!isCompletable &amp;&amp; !(returnType instanceof ParameterizedType)) {
+

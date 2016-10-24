@@ -1,0 +1,10 @@
+int lhsLen = lhs.length;
+int rhsLen = rhs.length;
+
+if (lhsLen == 0)
+return rhsLen == 0 ? 0 : -1;
+if (rhsLen == 0)
+return 1;
+
+int lhsMsbIdx = findMostSignificantByte(lhs);
+

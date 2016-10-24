@@ -1,0 +1,10 @@
+* complicated move method of the Nobbin.
+*/
+
+@Override
+public void move() {
+if (world.getLevel()[this.yLoc][this.xLoc] == 5) {
+int xDistance = world.player.xLoc - this.xLoc;
+int yDistance = world.player.yLoc - this.yLoc;
+if (Math.abs(xDistance) > Math.abs(yDistance)) {
+

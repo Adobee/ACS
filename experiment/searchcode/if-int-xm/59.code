@@ -1,0 +1,18 @@
+final class xo
+implements xr
+{
+
+boolean a;
+final StringBuilder b;
+final xm c;
+
+xo(xm xm, StringBuilder stringbuilder)
+a = true;
+}
+
+public final void a(int i)
+{
+if (a)
+{
+a = false;
+

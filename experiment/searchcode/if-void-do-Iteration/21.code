@@ -1,0 +1,6 @@
+IterationStatusEditorForm form = (IterationStatusEditorForm) actionForm;
+if (StringUtils.isEmpty(form.getOid())) return mapping.getInputForward();
+Iteration iteration = (Iteration) objectRepository.load(Integer.parseInt(iterationId));
+if (iteration.isActive()) {
+iteration.setStatus(IterationStatus.INACTIVE);
+

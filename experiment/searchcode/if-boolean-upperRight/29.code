@@ -1,0 +1,10 @@
+boolean lowRight = (y+height < b.y + b.height &amp;&amp; y+height > b.y &amp;&amp; x+width > b.x &amp;&amp; x+width < b.x+b.width);
+boolean upperRight = (y < b.y+b.height &amp;&amp; y > b.y &amp;&amp; x+width > b.x &amp;&amp; x+width < b.x+b.width);
+if(lowRight) ret+=1;
+if(upperRight) ret+=2;
+if(upperLeft) ret +=4;
+if(lowerLeft) ret +=8;
+return ret;
+}
+}
+

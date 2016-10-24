@@ -1,0 +1,18 @@
+return this.x;
+}
+
+public double getY(){
+return this.y;
+}
+
+public void reflectX() {
+double twoTheta;
+if(inFirstOrThirdQuadrant()) {
+twoTheta = getCCWAngleToAxis()*2.0;
+this.setAngle(this.getAngle() + twoTheta);
+}
+}
+
+public void reflectY() {
+double twoTheta;
+

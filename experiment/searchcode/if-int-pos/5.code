@@ -1,0 +1,12 @@
+int cnt = 0;
+int n;
+int[][] map;
+
+void bfs(int _x, int _y){
+int pos = 0;
+enqueue(_x, _y, 1); // starting pos
+map[y[pos]][x[pos]] = 0; // coord in queue
+
+// could go right
+if(x[pos] < n - 1 &amp;&amp; map[y[pos]][x[pos] + 1] == 1)
+

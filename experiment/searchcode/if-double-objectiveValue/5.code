@@ -1,0 +1,9 @@
+MASONSimDeScheduler descheduler = (MASONSimDeScheduler) this.getBoxedProperty(&quot;descheduler&quot;);
+Machine machine = (Machine) descheduler.getProperty(&quot;machine&quot;);
+
+if(machine instanceof Agent) {
+ArrayList<String> typeList = (ArrayList<String>) agent.getBoxedProperty(&quot;typeList&quot;);
+
+if(typeList.contains(type)) {
+Double objectiveValue = (Double) this.getBoxedProperty(&quot;objectiveValue&quot;);
+

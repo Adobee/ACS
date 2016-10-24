@@ -1,0 +1,7 @@
+public Object algorithmBody(Object input) {
+int[] sort = (int[]) input;
+quickSort(sort, 0, sort.length);
+for (int i = storeIndex; i < end; i++) {
+if (sort[pivot] > sort[i]) {
+int temp = sort[storeIndex];
+

@@ -1,0 +1,7 @@
+final double y = function.evaluate(startPosition);
+data.setX(startPosition);
+data.setG0(y * y);
+private boolean getNextPosition(final Function1D<DoubleMatrix1D, Double> function, final Function1D<DoubleMatrix1D, DoubleMatrix1D> grad, final DataBundle data) {
+final DoubleMatrix1D p = getDirection(data);
+if (data.getLambda0() < 1.0) {
+

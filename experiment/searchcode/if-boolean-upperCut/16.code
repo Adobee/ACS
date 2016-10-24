@@ -1,0 +1,13 @@
+return Skill.UNARMED.getName();
+}
+
+public boolean isUnarmed(Player player) {
+return player.getItemInHand() == null || player.getItemInHand().getType() == Material.AIR;
+default:
+return 0;
+}
+}
+
+public void uppercut(Player player, User user, Entity entity) {
+if (Math.random() <= upercutChance(user.getLevel(com.tribescommunity.levelling.data.Skill.UNARMED))) {
+

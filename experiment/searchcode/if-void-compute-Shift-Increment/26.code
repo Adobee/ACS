@@ -1,0 +1,7 @@
+public static final int CR = 0x0d;
+public static final int SO = 0x0e;
+
+public void handleDownstream(ChannelHandlerContext ctx, ChannelEvent e) throws Exception {
+private int computeBlockSequenceNumber(ChannelHandlerContext ctx) {
+int blockCounter = getAndIncrementBlockSequenceCounter(ctx);
+

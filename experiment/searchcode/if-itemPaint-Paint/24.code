@@ -1,0 +1,11 @@
+itemPaint = t.transform((GradientPaint) itemPaint, bar);
+}
+g2.setPaint(itemPaint);
+g2.fill(bar);
+
+
+if (renderer.isDrawBarOutline()) {
+Paint itemPaint = renderer.getItemPaint(row, column);
+if (itemPaint instanceof Color) {
+Color c = (Color) itemPaint;
+

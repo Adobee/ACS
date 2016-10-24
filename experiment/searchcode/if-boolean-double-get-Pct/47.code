@@ -1,0 +1,9 @@
+public FrequencyGenerator(String title, String description, Frequency freq, boolean accumallated) {
+super(title, description);
+if (accumallated)
+columns = Lists.newArrayList(&quot;X&quot;,&quot;Freq&quot;,&quot;P[x]&quot;,&quot;P[x <= X]&quot;);
+lines.add( lastValueInInterval == null ?  value.toString() : value.toString() + &quot;-&quot; + lastValueInInterval.toString()  );
+
+if (accum){
+double[] val = {count, pct, cumPct};
+

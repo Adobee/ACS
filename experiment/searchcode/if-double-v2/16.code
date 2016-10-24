@@ -1,0 +1,11 @@
+scaled[i] = v[i] * n;
+}
+return scaled;
+}
+
+public static double[] add(double[] v1, double[] v2) {
+if (v1.length != v2.length)
+return null;
+double[] added = new double[v1.length];
+for (int i = 0; i < v1.length; i++) {
+

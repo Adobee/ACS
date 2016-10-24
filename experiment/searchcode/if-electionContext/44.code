@@ -1,0 +1,10 @@
+void onClose() {
+if (electionContext.compareAndSet(this, null)) {
+stopAccumulatingJoins(&quot;election closed&quot;);
+done.countDown();
+}
+};
+
+if (electionContext.compareAndSet(null, newContext) == false) {
+// should never happen, but be conservative
+

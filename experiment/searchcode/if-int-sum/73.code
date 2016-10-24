@@ -1,0 +1,11 @@
+public static final PrintStream output = new PrintStream( System.out );
+
+public static int sum( int[] A, int n ) {
+if ( n == 1 ) return A[ 0 ];
+return result;
+}
+
+public static int sumBinary( int[] A, int i, int j ) {
+if ( i > j ) return 0;
+else if ( i == j ) return A[ i ];
+

@@ -1,0 +1,6 @@
+import org.apache.commons.lang3.text.translate.EntityArrays;
+import org.apache.commons.lang3.text.translate.LookupTranslator;
+import org.apache.commons.lang3.text.translate.OctalUnescaper;
+static final CharSequenceTranslator ESCAPE_JSON = new AggregateTranslator(
+new LookupTranslator(EntityArrays.JAVA_CTRL_CHARS_ESCAPE()),
+

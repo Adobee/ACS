@@ -1,0 +1,22 @@
+public class TempLight {
+
+public float timer = 0;
+public PointLight pl;
+private boolean removed = false;
+
+public TempLight(float time, PointLight pl) {
+public void update(float dt) {
+if(timer < 0) {
+pl.remove();
+timer = 0;
+removed = true;
+} else {
+timer -= dt;
+}
+}
+
+public boolean isRemoved() {
+return removed;
+}
+}
+

@@ -1,0 +1,10 @@
+private Double minAmount;
+private Double percentOff;
+
+public Double getMinAmount() {
+return minAmount;
+}
+public void setMinAmount(Double minAmount) throws DiscountException {
+if(minAmount < 0)
+throw new DiscountException(&quot;Discount Amount Must Be Postitive&quot;);
+

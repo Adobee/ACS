@@ -1,0 +1,9 @@
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.ImageView.ScaleType;
+
+import com.nostra13.universalimageloader.core.assist.FailReason;
+public void onLoadingComplete(String arg0, View arg1, Bitmap arg2) {
+if (null == arg2) {
+((ImageView) arg1).setScaleType(ScaleType.CENTER_INSIDE);
+

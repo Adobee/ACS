@@ -1,0 +1,11 @@
+public BooleanLatch(boolean open) {
+iopen=open;
+sync=new Object();
+}
+
+public void setOpen(boolean open) {
+synchronized (sync) {
+if (open==iopen) return;
+
+if (iopen &amp;&amp; !open) {
+

@@ -1,0 +1,9 @@
+super(filenames, outputOption, threads, BYTES_PER_EVENT);
+}
+
+public void registerEventWithoutData(int eventType, int threadId, long locationId) {
+buffer.putShort((short)eventType).putInt(threadId).putInt((int)locationId);
+buffer.putLong(value);
+counter++;
+if (counter == EVENTS_PER_FILE) save();
+

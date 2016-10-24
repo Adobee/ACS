@@ -1,0 +1,9 @@
+private String suffix = &quot;tempfile&quot;;
+private boolean deleteOnExit = true;
+
+public File provide(String arg) throws IOException {
+String pre = (arg == null) ? prefix : prefix+arg;
+File ret = File.createTempFile(pre, suffix, this.rootFolder);
+if (this.deleteOnExit)
+ret.deleteOnExit();
+

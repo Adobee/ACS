@@ -1,0 +1,13 @@
+double p;
+double q;
+
+// Kopien der Vektoren aus den 2 Ebenen
+double[] r0;
+double[] a;
+double[] b;
+double A;
+double pZaehler = A * b[0] + B * b[1] + C * b[2];
+double pNenner = A * a[0] + B * a[1] + C * a[2];
+
+if (pNenner == 0.0) {
+

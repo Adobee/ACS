@@ -1,0 +1,6 @@
+public Object adapt(Call call, Type returnType, Object... args) throws Exception {
+Observable<?> observable = invokeInner(call,returnType);
+if(invokeFilter!=null){
+Class<?> observableClass = Util.getRawType(observableType);
+if(observableClass==Result.class){
+

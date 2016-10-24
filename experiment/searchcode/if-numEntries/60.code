@@ -1,0 +1,11 @@
+entries = new GameEntry[maxEntries];
+numEntries = 0;
+}
+
+public void add(GameEntry e) {
+if(numEntries == maxEntries) {
+if(entries[numEntries -1].getScore() > e.getScore()) {
+public GameEntry remove(int i) throws IndexOutOfBoundsException {
+if(i < 0 || i >= numEntries) {
+throw new IndexOutOfBoundsException(&quot;Foutieve index probeer opnieuw, &quot; + i + &quot; was fout.&quot;);
+

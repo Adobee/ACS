@@ -1,0 +1,16 @@
+public NotSynthetic() {
+}
+
+@Override
+public boolean matches(Object other) {
+if (other instanceof Method) {
+return true;
+}
+
+@Override
+public boolean equals(Object other) {
+return other instanceof NotSynthetic;
+}
+
+@Override
+

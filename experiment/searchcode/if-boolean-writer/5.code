@@ -1,0 +1,14 @@
+private FileWriter fWriter = null;
+
+public boolean open(String path) {
+boolean ret = true;
+
+try {
+fWriter = new FileWriter(path);
+public void close() {
+if( fWriter != null ) {
+try {
+fWriter.flush();
+fWriter.close();
+} catch (Exception e) {
+

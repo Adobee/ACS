@@ -1,0 +1,11 @@
+public enum SAOHealthStep {
+
+VERY_LOW(0.1F, 0xBD0000FF),
+LOW(0.2F, 0xF40000FF),
+VERY_DAMAGED(0.3F, 0xF47800FF),
+private final int color;
+
+SAOHealthStep(float limit, int argb) {
+healthLimit = limit;
+color = argb;
+

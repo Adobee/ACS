@@ -1,0 +1,10 @@
+for (TrackArrangement i : trackArrangementInstances.keySet())
+i.paintBorder(p);
+
+List<Map.Entry<TrackArrangement, TrackArrangementInstance>> trackArrangements = new ArrayList<Map.Entry<TrackArrangement, TrackArrangementInstance>>(trackArrangementInstances.entrySet());
+int diff = endDirection.minus(startDirection);
+TrackArrangement arrangement;
+
+if (diff == 5)
+arrangement = TrackArrangements.rightCurve(startDirection);
+

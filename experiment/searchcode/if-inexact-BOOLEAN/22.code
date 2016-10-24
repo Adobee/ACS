@@ -1,0 +1,10 @@
+final boolean exactBrandMatch = exactMatch(boilerBrand, thisBrand);
+final boolean exactModelMatch = exactMatch(boilerModel, thisModel);
+
+if (exactBrandMatch &amp;&amp; exactModelMatch) {
+return i;
+}
+
+// if we have already got an inexact model match, that will win, so check for that
+if (firstInexactModelMatch == -1) {
+

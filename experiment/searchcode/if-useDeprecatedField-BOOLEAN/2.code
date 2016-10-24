@@ -1,0 +1,8 @@
+private void doTestDeprecationWarningsAppearInHeaders() throws IOException {
+final boolean useDeprecatedField = randomBoolean();
+final boolean useNonDeprecatedSetting = randomBoolean();
+settings.add(TEST_DEPRECATED_SETTING_TRUE1);
+
+if (randomBoolean()) {
+settings.add(TEST_DEPRECATED_SETTING_TRUE2);
+

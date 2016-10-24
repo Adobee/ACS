@@ -1,0 +1,7 @@
+String jsonStr = Preferences.getPreference(getActivity(), AppConstants.PreferenceKeys.KEY_EXISTING_METER_INFO + FragmentIncident.incidentID);
+try {
+if (jsonStr != null) {
+existingMeterPosition = Integer.parseInt(json.getString(&quot;meterPosition&quot;));
+if (existingMeterPosition == 1) {
+meterAbove.setChecked(true);
+

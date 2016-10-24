@@ -1,0 +1,13 @@
+private VectorPoint ptEnd2 = null;
+
+private final double NEAR_POINT_DISTANCE = 5.0f;
+
+public boolean addStroke(ShapeStroke stroke)
+{
+if (!stroke.isValidEditSymbolPart())
+{
+return false;
+}
+
+if (!canAcceptSubsequentTypeStroke(stroke))
+

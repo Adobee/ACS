@@ -1,0 +1,7 @@
+@ConditionalOnProperty(prefix = &quot;spring.artemis.embedded&quot;, name = &quot;enabled&quot;, havingValue = &quot;true&quot;, matchIfMissing = true)
+class ArtemisEmbeddedServerConfiguration {
+
+private final ArtemisProperties properties;
+this.configurationCustomizers = configurationCustomizersProvider.getIfAvailable();
+this.queuesConfiguration = queuesConfigurationProvider.getIfAvailable();
+

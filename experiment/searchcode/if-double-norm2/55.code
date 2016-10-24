@@ -1,0 +1,12 @@
+return -1;
+}
+
+if (matrix1.length != matrix2.length){
+return -1;
+}
+
+double matrixProduct = 0;
+double matrixNorm1 = 0;
+double matrixNorm2 = 0;
+for (int i = 0; i < matrix1.length; ++i){
+

@@ -1,0 +1,8 @@
+public class MaxReducer<K extends Number> extends Reducer<K> {
+
+public MaxReducer(Class<K> ck) {
+if(ck == Integer.class) {
+initValue = (K) (Integer) Integer.MIN_VALUE;
+} else if(ck == Double.class) {
+initValue = (K) (Double) Double.MIN_VALUE;
+

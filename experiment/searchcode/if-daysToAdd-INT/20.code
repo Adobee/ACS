@@ -1,0 +1,11 @@
+@Override
+public DateRange getHolidayForYear(int year) {
+
+if (yearDoesNotFit(year)) {
+return null;
+}
+
+Date firstInMonth = new Date(year, month, 1);
+
+int daysToAdd = weekDay - firstInMonth.getDayOfWeek();
+

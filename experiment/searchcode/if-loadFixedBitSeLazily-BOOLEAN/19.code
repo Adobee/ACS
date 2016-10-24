@@ -1,0 +1,7 @@
+public void testCheckFixedBitSetCache() throws Exception {
+boolean loadFixedBitSeLazily = randomBoolean();
+Settings.Builder settingsBuilder = Settings.builder().put(indexSettings())
+.put(&quot;index.refresh_interval&quot;, -1);
+if (loadFixedBitSeLazily) {
+settingsBuilder.put(&quot;index.load_fixed_bitset_filters_eagerly&quot;, false);
+

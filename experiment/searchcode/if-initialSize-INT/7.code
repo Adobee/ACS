@@ -1,0 +1,9 @@
+private Endian endian=Endian.BIG;
+private int initialSize=0;
+private byte[] value=null;
+protected int totalSize=0;
+public void parse(InputStream inputStream) throws Exception {
+byte[] buffer=new byte[this.initialSize];
+int length=inputStream.read(buffer);
+if(length==buffer.length){
+

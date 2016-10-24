@@ -1,0 +1,9 @@
+int numCommas = len % 3 == 0? (len / 3) - 1: len / 3;
+int commaPos = 0;
+if (len % 3 == 0) commaPos = 2;
+if (len % 3 == 1) commaPos = 0;
+if (len % 3 == 2) commaPos = 1;
+String result = &quot;&quot;;
+for (int i = 0; i < len; i ++) {
+result += digits.charAt(i);
+

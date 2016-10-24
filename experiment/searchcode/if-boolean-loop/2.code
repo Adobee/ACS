@@ -1,0 +1,9 @@
+package net.avh4.util;
+
+public class LoopRunnable implements Runnable {
+
+private final Loop loop;
+while (!Thread.interrupted()) {
+final boolean keepGoing = loop.loop();
+if (!keepGoing) return;
+

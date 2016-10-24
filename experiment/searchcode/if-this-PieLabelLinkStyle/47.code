@@ -1,0 +1,7 @@
+PieLabelLinkStyle style = (PieLabelLinkStyle) obj;
+if (!this.name.equals(style.toString())) {
+return false;
+private Object readResolve() throws ObjectStreamException {
+Object result = null;
+if (this.equals(PieLabelLinkStyle.STANDARD)) {
+

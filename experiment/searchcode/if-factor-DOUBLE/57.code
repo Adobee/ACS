@@ -1,0 +1,13 @@
+return level;
+}
+
+public double getBrightness() {
+return level;
+}
+
+public Pixel lighten(double factor) {
+if(factor>=0.0 &amp;&amp; factor<=1.0){
+public Pixel darken(double factor) {
+if(factor>=0.0 &amp;&amp; factor<=1.0){
+level = level * (1.0 - factor);
+

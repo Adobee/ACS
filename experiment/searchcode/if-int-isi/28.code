@@ -1,0 +1,13 @@
+while (null != (line = br.readLine())) {
+
+//  如果遇到Time:串，表明遇到指定的Time块
+if(line.indexOf(timestr)>=0){
+IoStatInfo isi = new IoStatInfo();
+if(sp.length<3){
+runFlag = false;
+break;
+}
+isi.setTimeline(sp[1]);
+// 向下读取两行
+if(null == (line = br.readLine())){
+

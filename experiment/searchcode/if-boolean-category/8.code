@@ -1,0 +1,14 @@
+public List<Category> getCategories() {
+return categoryDao.findCategories();
+}
+
+public boolean createCategory(Category category) {
+if (validateNewCategory(category)) {
+return true;
+}
+return false;
+}
+
+public boolean categoryExists(Category category) {
+Category existingCategory = categoryDao.findCategory(category.getName());
+

@@ -1,0 +1,6 @@
+while ((token = parser.nextToken()) != XContentParser.Token.END_OBJECT) {
+if (token == XContentParser.Token.FIELD_NAME) {
+} else if (token.isValue() &amp;&amp; &quot;doc_count&quot;.equals(currentFieldName)) {
+significantTerms.docCount = parser.longValue();
+} else if (token == XContentParser.Token.START_ARRAY) {
+

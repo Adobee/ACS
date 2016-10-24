@@ -1,0 +1,12 @@
+responseCode = ResponseCode.CODE_501_Syntax_error_in_parameters;
+}
+
+}
+
+@Override
+public String getResponse(){
+if(responseCode == ResponseCode.CODE_200_Action_successfully_completed){
+return &quot;200 Port command successful.&quot;;
+}else if (responseCode == ResponseCode.CODE_425_Cant_open_data_connection){
+return &quot;425 Can&#39;t open data connection.&quot;;
+

@@ -1,0 +1,7 @@
+final int blockColumns = ((columns + (BLOCK_SIZE)) - 1) / (BLOCK_SIZE);
+for (int i = 0 ; i < (rawData.length) ; ++i) {
+final int length = rawData[i].length;
+if (length != columns) {
+final double[][] data = new double[getRowDimension()][getColumnDimension()];
+final int lastColumns = (columns) - (((blockColumns) - 1) * (BLOCK_SIZE));
+

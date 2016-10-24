@@ -1,0 +1,15 @@
+private int Src=0;
+private int Tim=1;
+CacheOutput()
+{
+super();
+probe = new Probe[2];
+probe[Src] = new Probe(&quot;Source&quot;);
+public double output()
+{
+double t = probe[Tim].output();
+if(cacheTime != t)
+{
+cacheTime = t;
+cache = probe[Src].output();
+

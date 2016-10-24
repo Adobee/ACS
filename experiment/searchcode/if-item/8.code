@@ -1,0 +1,9 @@
+String itemType = item.getItemType();
+if (itemType.equals(&quot;Food&quot;)) {
+if (inventory.contains(item)) {
+inventory.add(item);
+}
+} else {
+if (!inventory.contains(item)) {
+inventory.add(item);
+

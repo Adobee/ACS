@@ -1,0 +1,13 @@
+import com.google.gwt.i18n.shared.DateTimeFormat.PredefinedFormat;
+
+/**
+* Converter for dates. Uses {@code DateTimeFormat#parse(String)} for the
+* conversion. If no format is given {@linkplain PredefinedFormat#ISO_8601
+public static final PredefinedFormat DEFAULT_FORMAT = ISO_8601;
+protected final DateTimeFormat dateTimeFormat;
+
+
+public DateConverter()
+{
+this(DateTimeFormat.getFormat(ISO_8601));
+

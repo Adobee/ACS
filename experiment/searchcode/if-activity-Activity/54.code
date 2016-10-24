@@ -1,0 +1,12 @@
+mStackActivity = new Stack<Activity>();
+}
+
+public static ActivityManager getInstance() {
+if (mInstance == null) {
+syncInit();
+public void addActivity(Activity activity) {
+if (mStackActivity.contains(activity)) {
+removeActivity(activity);
+}
+mStackActivity.add(activity);
+

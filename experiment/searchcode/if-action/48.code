@@ -1,0 +1,13 @@
+private ActionFactory(){
+}
+
+public static ActionFactory getInstance() {
+if( instance == null ) {
+instance = new ActionFactory();
+public Action getAction( String a ) {
+Action action = null;
+
+if( &quot;insert&quot;.equals( a )){
+action = new insertAction();
+}else if(&quot;read&quot;.equals(a)){
+

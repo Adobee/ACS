@@ -1,0 +1,9 @@
+import BlockProcessing.IBlockProcessing;
+import DataModel.AbstractBlock;
+import java.util.Iterator;
+import java.util.List;
+import java.util.logging.Level;
+while (blocksIterator.hasNext()) {
+AbstractBlock aBlock = blocksIterator.next();
+if (satisfiesThreshold(aBlock)) {
+

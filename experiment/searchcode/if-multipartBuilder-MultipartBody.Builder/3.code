@@ -1,0 +1,9 @@
+OkHttpClient okHttpClient = getUnsafeOkHttpClient();
+
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder()
+multipartBuilder.addFormDataPart(&quot;newPassword&quot;, newPassword);
+
+//MultipartBody requestBody = multipartBuilder.build();
+
+RequestBody requestBody = multipartBuilder.build();
+

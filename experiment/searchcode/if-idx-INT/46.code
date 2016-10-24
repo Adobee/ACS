@@ -1,0 +1,6 @@
+int[] result = new int[2];
+HashMap<Integer, Integer> valueIdxMap = new HashMap<Integer, Integer>();
+
+for (int idx = 0 ; idx < nums.length ; idx ++){
+if (valueIdxMap.containsKey(target - nums[idx])){
+

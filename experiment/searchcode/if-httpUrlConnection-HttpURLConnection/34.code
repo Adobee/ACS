@@ -1,0 +1,10 @@
+httpurlconnection.setConnectTimeout(20*1000);
+httpurlconnection.setReadTimeout(20*1000);
+if(null!=data){
+httpurlconnection.setDoInput(true);
+httpurlconnection.getOutputStream().close();
+}
+int code = httpurlconnection.getResponseCode();
+if (code == 200) {
+return httpurlconnection.getInputStream();
+

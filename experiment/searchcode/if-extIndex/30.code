@@ -1,0 +1,10 @@
+private static final String DOT_SEPARATOR = &quot;.&quot;;
+
+public static String getFileExtension(File file) {
+if (file == null) {
+return null;
+}
+
+String name = file.getName();
+int extIndex = name.lastIndexOf(Utils.DOT_SEPARATOR);
+

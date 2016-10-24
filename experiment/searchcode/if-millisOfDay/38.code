@@ -1,0 +1,7 @@
+final Matcher matcher = Pattern.compile(PATTERN).matcher(formatted);
+if (matcher.matches()) {
+setDay(DAYS.indexOf(matcher.group(INDEX_DAY)) + 1);
+public boolean isWithinPeriod(final DateTime dateTime) {
+if (LOG.isDebugEnabled()) {
+LOG.debug(&quot;Checking if [{}] is on day [{}] within period [{}]-[{}]&quot;,
+

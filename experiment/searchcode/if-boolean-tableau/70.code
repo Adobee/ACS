@@ -1,0 +1,14 @@
+// Up-cast to internal class.
+this.tableau = tableau;
+}
+
+@Override
+public boolean hasNext() {
+// We have a next tableau if the current is not optimal.
+return !this.tableau.isOptimal();
+}
+
+@Override
+/**
+* Create the next tableau. Might raise an exception if not possible.
+

@@ -1,0 +1,9 @@
+public void add(CategoryPlot subplot, int weight) {
+super.add(subplot, weight);
+
+ValueAxis l_range = super.getRangeAxis();
+subplot.setRangeAxis(0, l_range, false);
+public Range getDataRange(ValueAxis axis) {
+Range l_result = null;
+Iterator l_itr = getSubplots().iterator();
+

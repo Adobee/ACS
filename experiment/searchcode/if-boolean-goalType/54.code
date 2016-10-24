@@ -1,0 +1,10 @@
+goalType.setConverter(new StringConverter<GoalType>() {
+@Override
+public String toString(GoalType at) {
+if (at == null) {
+return null;
+public void changed(ObservableValue<? extends GoalType> observable, GoalType oldValue, GoalType newValue) {
+if(newValue != null)
+{
+goalUnit.setText(newValue.getActTypeParam().getParamUnit());
+

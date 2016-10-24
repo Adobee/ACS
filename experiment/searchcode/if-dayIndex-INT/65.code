@@ -1,0 +1,8 @@
+unassignedSlots = new ArrayList<ArrayList<Shift>>(planningSize);
+for (int dayIndex=0; dayIndex<planningSize; dayIndex++) {
+if (!copy) {
+ArrayList<Shift> daySlots = getShiftSlots(problem, dayIndex);
+for (int employeeIndex=0; employeeIndex<employees.size(); employeeIndex++) {
+for (int dayIndex=0; dayIndex<assignments.size(); dayIndex++) {
+if (assignments.get(dayIndex).get(employeeIndex) != null) {
+

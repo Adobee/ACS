@@ -1,0 +1,8 @@
+builder.addHeader(entry.getKey(), entry.getValue());
+}
+
+if (NetworkSupportApi.POST.equals(request.getMethod())) {
+// POST
+FormBody.Builder formBuilder = new FormBody.Builder();
+for (Map.Entry<String, String> entry : request.getParams().entrySet()) {
+

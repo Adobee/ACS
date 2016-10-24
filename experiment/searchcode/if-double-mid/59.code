@@ -1,0 +1,12 @@
+static double f(int n, int x, double q, double[][] T) {
+if (T[n][x] >= 0) {
+return T[n][x];
+}
+if (n + x > 51) {
+return 0;
+double t = f(20, 1, mid, T);
+double e = Math.abs(0.02 - t);
+if (e < 1.0e-16) {
+System.out.println(mid);
+break;
+

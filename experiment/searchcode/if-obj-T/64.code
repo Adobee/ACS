@@ -1,0 +1,8 @@
+private static final HashMap<String, Obj> StrObj = new HashMap<String, Obj>();
+static {
+for (Map.Entry<Obj, String> entry : ObjStr.entrySet()) {
+if (!entry.getValue().isEmpty())
+public static long encodeType(Obj type) { // Convert SCM object enumeration to S57 feature code
+if (ObjS57.containsKey(type))
+return ObjS57.get(type);
+

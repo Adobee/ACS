@@ -1,0 +1,12 @@
+public synchronized static OverlayRouting instance()
+{
+if(_instance == null)
+{
+switch(Constants.ROUTING_TYPE)
+{
+case Constants.RT_ERROUTING:
+public synchronized void addEventListener(String destination, OverlayRoutingEventListener listener)  {
+if(!_listeners.containsKey(destination))
+{
+_listeners.put(destination, new ArrayList<OverlayRoutingEventListener>());
+

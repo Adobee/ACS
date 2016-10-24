@@ -1,0 +1,6 @@
+public void divideArrayToSort( int [] arrayToSort, int initialIndex,
+int finalIndex ) {
+if ( initialIndex < finalIndex ) {
+int middleIndex = ( initialIndex + finalIndex ) / 2;
+divideArrayToSort( arrayToSort, initialIndex, middleIndex );
+

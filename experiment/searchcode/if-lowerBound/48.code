@@ -1,0 +1,15 @@
+while(upperBound - lowerBound > tolerance){
+
+xMedium = (upperBound + lowerBound)/2;
+
+System.out.println(&quot;lowerbound: &quot;+ lowerBound + &quot; uppperbound: &quot;+upperBound + &quot; derivative: &quot; +derivative(xMedium) );
+if(derivative(xMedium) > 0){
+lowerBound = xMedium;
+}
+else{
+upperBound = xMedium;
+}
+}
+else{
+//if problem type is min
+

@@ -1,0 +1,12 @@
+private final QueryBuilder negativeQuery;
+
+private float negativeBoost = -1;
+
+
+/**
+* Create a new {@link BoostingQueryBuilder}
+* Set the negative boost factor.
+*/
+public BoostingQueryBuilder negativeBoost(float negativeBoost) {
+if (negativeBoost < 0) {
+

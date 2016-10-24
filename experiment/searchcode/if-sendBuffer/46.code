@@ -1,0 +1,9 @@
+private static int BLOCK = 4096;
+/*接受数据缓冲区*/
+private static ByteBuffer sendbuffer = ByteBuffer.allocate(BLOCK);
+channel.register(selector, SelectionKey.OP_WRITE);
+}
+}
+else if(selectionKey.isWritable()) {
+sendbuffer.clear();
+

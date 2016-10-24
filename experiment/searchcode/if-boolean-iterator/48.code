@@ -1,0 +1,10 @@
+mStorageIterator = iterator;
+}
+
+@Override
+public boolean hasNext() {
+return (mItemIterator != null &amp;&amp; mItemIterator.hasNext()) || mStorageIterator.hasNext();
+public Param next() {
+if (mItemIterator == null || !mItemIterator.hasNext()) {
+final BaseParam value = mStorageIterator.next();
+

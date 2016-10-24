@@ -1,0 +1,11 @@
+import net.sf.ehcache.search.attribute.AttributeExtractorException;
+
+import org.threeten.bp.Instant;
+
+import com.opengamma.master.AbstractDocument;
+
+/**
+* EHCache search attribute extractor.
+*/
+public class InstantExtractor implements AttributeExtractor {
+

@@ -1,0 +1,9 @@
+private ExceptionUtil() { }
+
+public static <T extends Throwable> T getCause(Throwable throwable, Class<T> searchClass) {
+AssertUtil.assertNotNull(&quot;searchClass&quot;, searchClass);
+
+Throwable cause = throwable;
+while (cause != null) {
+if (searchClass.isInstance(cause)) {
+

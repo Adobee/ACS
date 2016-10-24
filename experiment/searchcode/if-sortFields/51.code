@@ -1,0 +1,13 @@
+size = Integer.parseInt(values[0]);
+}
+}
+if(paramName.equals(sortFieldPropertie)){
+sortFields = request.getParameterValues(paramName);
+dirFiles = request.getParameterValues(paramName);
+}
+}
+
+Sort sort = null;
+if(sortFields!= null &amp;&amp; sortFields.length>0){
+List<Sort.Order> orders = new ArrayList<Sort.Order>();
+

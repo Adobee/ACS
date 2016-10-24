@@ -1,0 +1,8 @@
+String time = Utils.DateTime();
+int oper = param.getOperate();
+param.setTime(time);
+int flag = 0;
+if (oper == 0) {// 产品通知
+Req req = operMapper.getIndexs(param);// 获取之前通知记录
+if (req == null) {// 未存在记录，插入新数据
+

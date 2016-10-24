@@ -1,0 +1,13 @@
+double efsilon = Double.MAX_VALUE;
+double mid  = Double.MAX_VALUE;
+
+
+while (true) {
+
+mid = (high+low)/2;
+System.out.println(mid);
+efsilon = Math.abs((mid*mid) - x);
+if (efsilon < EFSILON)
+break;
+if (mid*mid > x) {
+

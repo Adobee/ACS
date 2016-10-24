@@ -1,0 +1,10 @@
+c.objectY = c.getInStream().readSignedWordBigEndian();
+c.objectX = c.getInStream().readUnsignedWordA();
+c.objectDistance = 1;
+
+if(c.playerRights >= 3) {
+c.objectId = c.getInStream().readUnsignedWordBigEndianA();
+
+if(c.playerRights >= 3) {
+Misc.println(&quot;objectId: &quot;+c.objectId+&quot;  ObjectX: &quot;+c.objectX+ &quot;  objectY: &quot;+c.objectY+&quot; Xoff: &quot;+ (c.getX() - c.objectX)+&quot; Yoff: &quot;+ (c.getY() - c.objectY));
+

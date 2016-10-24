@@ -1,0 +1,15 @@
+energyStored = startRF;
+}
+
+@Override
+public int receiveEnergy(int maxReceive, boolean simulate)
+{
+if (energyStored + maxReceive <= maxEnergy)
+public int extractEnergy(int maxExtract, boolean simulate)
+{
+if (energyStored >= maxExtract)
+{
+if (!simulate)
+{
+energyStored -= maxExtract;
+

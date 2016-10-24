@@ -1,0 +1,9 @@
+public int maxArea(int[] height) {
+return basicSolution(height);
+}
+
+private int basicSolution(int[] height) {
+max = Math.max(max, (r - l)*Math.min(height[l], height[r]));
+if(height[l]<height[r]){
+int lh = height[l];
+

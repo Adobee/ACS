@@ -1,0 +1,17 @@
+/** 文件内容头缀 */
+private String[] FileHeads;
+/** 缓存保存到文件的周期 */
+private long CacheFlushPeriod;
+/** 缓存达到多少行时保存到文件 */
+int rd = (int) (CacheMaxSize * 0.05);
+if (rd < 2) {
+return CacheMaxSize;
+}
+return CacheMaxSize + random.nextInt() % rd;
+}
+
+
+
+
+}
+

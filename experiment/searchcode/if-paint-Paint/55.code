@@ -1,0 +1,10 @@
+paints = new HashMap<PaintType, Paint>();
+}
+
+protected static PaintManager getInstance() {
+if (instance == null) {
+public static Paint getPaint(PaintType type) {
+Paint paint = getInstance().paints.get(type);
+if (paint == null) {
+paint = PaintFactory.createPaint(type);
+

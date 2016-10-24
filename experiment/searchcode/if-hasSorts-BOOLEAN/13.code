@@ -1,0 +1,12 @@
+buffer.append(&quot;m.htmlMessage = :htmlMessage &quot;);
+search.addBooleanParameter(&quot;htmlMessage&quot;, entry.getValue());
+} else if (entry.getKey().equals(&quot;template&quot;)) {
+index++;
+}
+}
+}
+
+search.setCountQuery(&quot;select count(*) &quot; + buffer.toString());
+
+if (searchCriteria.hasSorts()) {
+

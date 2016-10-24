@@ -1,0 +1,8 @@
+protected final Logger logger = Logger.getLogger(ShutdownManager.class);
+
+private final CountDownLatch shutdownLatch = new CountDownLatch(1);
+private final AtomicBoolean shutdownRequested = new AtomicBoolean(false);
+public final void shutdown() {
+final boolean shuttingDown = this.shutdownRequested.getAndSet(true);
+if (shuttingDown) {
+

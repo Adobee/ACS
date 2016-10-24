@@ -1,0 +1,14 @@
+public class RandomDoubleWrapper extends RandomWrapper<Double> {
+
+private final double upTo;
+
+public RandomDoubleWrapper(Random random, int samples, double upTo) {
+public Double nextRandom() {
+return random.nextDouble() * upTo;
+}
+};
+}
+
+@Override
+public Wrapper<Double> copy() {
+

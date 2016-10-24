@@ -1,0 +1,10 @@
+private double directionCourse;
+
+public Course(double northCourse) {
+if (northCourse >= 360) {
+return directionCourse;
+}
+
+public void setNorthCourse(double northCourse) {
+if (northCourse >= 360) {
+

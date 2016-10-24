@@ -1,0 +1,9 @@
+public boolean isImplicitCastValidImpl(Type toType) {
+if (!toType.isArray()) {
+// ?1 = ?2 const[]
+return super.isImplicitCastValidImpl(toType);
+}
+
+// From this point, toType is an array.
+if (toType instanceof ConstArrayType) {
+

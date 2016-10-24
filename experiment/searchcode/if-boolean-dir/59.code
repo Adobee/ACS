@@ -1,0 +1,15 @@
+this.x = 0;
+this.y = 0;
+this.dir = Global.DIR_S;
+}
+
+public boolean move(int newX, int newY)
+{
+//	If can move
+int newDir = dir;
+
+if(newX > x)		//	EAST
+{
+if(newY < y)		//	NORTH
+newDir = Global.DIR_NE;
+

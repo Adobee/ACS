@@ -1,0 +1,11 @@
+// xxx If this is too big, we can get inconsistent value and gradient in MaxEntTrainer
+// Investigate!!!
+double initialStepSize = 0.01;
+double tolerance = 0.001;
+int maxIterations = 200;
+final double eps = 1.0e-10;
+
+public ConjugateGradient (double initialStepSize)
+{
+this.initialStepSize = initialStepSize;
+

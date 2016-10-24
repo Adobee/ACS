@@ -1,0 +1,7 @@
+public boolean hasNextWord(int startIndex) {
+for (int c = startIndex; c < words.length(); c++) {
+if (words.charAt(c) != &#39; &#39;) {
+int s; int e;
+for (s = startIndex; s < words.length(); s++) {
+if (words.charAt(s) != &#39; &#39;) {
+

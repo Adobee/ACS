@@ -1,0 +1,11 @@
+public synchronized void notifyPropertyDataChanged() {
+}
+
+private boolean updateCacheOfEPC(EPC epc) {
+if (cachedObject.isCached(epc)) {
+return true;
+}
+
+try {
+if (cachedObject.isGettable(epc)) {
+

@@ -1,0 +1,15 @@
+TreeNode(int val) {
+this.val = val;
+}
+}
+
+public class SameTree {
+public boolean isSameTree(TreeNode p, TreeNode q) {
+} else {
+boolean leftIsSame = isSameTree(p.left, q.left);
+boolean rightIsSame = isSameTree(p.right, q.right);
+return leftIsSame &amp;&amp; rightIsSame;
+}
+}
+}
+

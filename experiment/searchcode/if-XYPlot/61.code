@@ -1,0 +1,12 @@
+import org.jfree.chart.axis.ValueAxis;
+import org.jfree.chart.plot.XYPlot;
+import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
+import org.jfree.data.xy.XYSeries;
+XYSeries data = new XYSeries(&quot;Sang&quot;);
+
+while (true)
+{
+String s = new String();
+s = reader.readLine();
+if (s == null)
+

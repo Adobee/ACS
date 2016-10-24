@@ -1,0 +1,10 @@
+int read = in.read();
+if (read != -1) count++;
+return read;
+}
+
+@Override
+public int read(byte[] b) throws IOException {
+int read = in.read(b);
+if (read != -1) count += read;
+

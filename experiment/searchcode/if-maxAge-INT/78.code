@@ -1,0 +1,10 @@
+public class CacheControlFilter implements ContainerResponseFilter
+{
+private int maxAge;
+
+public CacheControlFilter(int maxAge) {
+this.maxAge = maxAge;
+}
+
+public void filter(ContainerRequestContext req, ContainerResponseContext res)
+

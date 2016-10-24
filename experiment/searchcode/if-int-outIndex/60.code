@@ -1,0 +1,8 @@
+for (VertexType outVertex : vertexSet){
+int inIndex = this.verticies.get(inVertex);
+int outIndex = this.verticies.get(outVertex);
+if (inVertex == outVertex){
+this.path[inIndex][outIndex] = 0d;
+}
+else if (edge != null){
+

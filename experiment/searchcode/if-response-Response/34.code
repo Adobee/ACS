@@ -1,0 +1,10 @@
+package ca.wasabistudio.chat.rs;
+
+import javax.ws.rs.core.Response;
+
+import org.jboss.resteasy.spi.AsynchronousResponse;
+public synchronized void setResponse(Response response) {
+if (!hasResponse) {
+this.response = response;
+hasResponse = true;
+

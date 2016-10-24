@@ -1,0 +1,17 @@
+public final class Box {
+
+
+double xmin;
+double xmax;
+double ymin;
+double ymax;
+
+double subdivDx;
+double subdivDy;
+noYdata = false;
+}
+
+for (int i = 0; i < np; i++) {
+double d = v[i];
+if (ymin > d) {
+

@@ -1,0 +1,12 @@
+public final class InputArrayIterator implements InputIterator {
+private final Iterator<Input> i;
+private final boolean hasPayloads;
+private final boolean hasContexts;
+@Override
+public boolean hasPayloads() {
+return hasPayloads;
+}
+
+@Override
+public Set<BytesRef> contexts() {
+

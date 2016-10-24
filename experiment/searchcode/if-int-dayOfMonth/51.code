@@ -1,0 +1,10 @@
+public class CalendarTimeStep implements TimeStep
+{
+private int year, month, dayOfMonth;
+
+public CalendarTimeStep(int y, int m, int d)
+{
+year = y;
+month = m;
+dayOfMonth = d;
+

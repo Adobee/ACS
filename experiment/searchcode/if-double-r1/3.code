@@ -1,0 +1,10 @@
+package zadanko1;
+import static java.lang.Math.*;
+public class Wektor {
+private double r1;
+public boolean sprawdźCzyNad(double x, double y){
+if(this.r1*x+this.r2*y>=0)
+return true;
+else
+return false;
+

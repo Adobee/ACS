@@ -1,0 +1,8 @@
+public class ContinuouslyChangingWorkloadModel extends ChangableWorkloadModelBase {
+
+private final double startValue;
+private final double finishValue;
+private final long startOfChangeTime;
+
+public ContinuouslyChangingWorkloadModel(double startValue, double finishValue, double changeValue, long period, long startOfChangeTime) {
+

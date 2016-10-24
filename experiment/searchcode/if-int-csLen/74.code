@@ -1,0 +1,14 @@
+for (int i = 0; i < currentFrame.planeCnt; i++) {
+
+int cslen = currentFrame.lengths[i];
+System.out.println(prefix
++ new String(currentFrame.callsigns, offset, cslen) + &quot; &quot;
+offset += cslen;
+}
+}
+
+int frameno = -1; // just for debug
+
+public void setFrame(final RawFrame f) {
+if (Constants.DEBUG_DETECTOR || Constants.DUMP_RECEIVED_FRAMES
+

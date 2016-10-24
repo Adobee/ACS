@@ -1,0 +1,8 @@
+public class PartitionMerge implements IOperation {
+Partition retained;
+Partition removed;
+retained.addEventNodes(removed.getEventNodes());
+removed.removeAllEventNodes();
+g.removePartition(removed);
+if (removedSize + retainedSize != retained.size()) {
+

@@ -1,0 +1,10 @@
+String[] tokens = parameters.split(&quot; &quot;);
+if (tokens.length == 1) {
+certainty = Double.parseDouble(tokens[0]);
+InputReader actual = new InputReader(new StringInputStream(actualOutput));
+int count = -1;
+double maxDelta = 0;
+while (true) {
+count++;
+if (expected.isExhausted()) {
+

@@ -1,0 +1,6 @@
+final MultipartBody.Builder multipartBuilder = mock(MultipartBody.Builder.class);
+PowerMockito.whenNew(MultipartBody.Builder.class).withNoArguments().thenReturn(multipartBuilder);
+// verify body
+verify(multipartBuilder).build();
+verify(multipartBuilder).setType(MultipartBody.FORM);
+

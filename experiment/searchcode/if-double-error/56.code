@@ -1,0 +1,11 @@
+private final double deadzone;
+
+private final double kp;
+private final double ki;
+private final double kd;
+
+private double sumOfError;
+error = setpoint - position;
+double output = PFunction(error) + IFunction(error) + DFunction(error);
+if (Math.abs(output) < deadzone) {
+

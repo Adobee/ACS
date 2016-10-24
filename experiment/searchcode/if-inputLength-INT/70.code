@@ -1,0 +1,11 @@
+// ** QUERIES
+// ****************************************************************
+
+@Override
+protected int collectableSamples(int inputLength) {
+return inputLength % CHANNELS != 0 ? inputLength - inputLength % CHANNELS : inputLength;
+}
+
+@Override
+protected int renderSamples(float[] buffer, float vol, int offset, int length) {
+

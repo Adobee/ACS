@@ -1,0 +1,9 @@
+private synchronized void addTextCarefully(String s) {
+
+int firstSpace = s.indexOf(&quot; &quot;);
+if (firstSpace < 0) { // Next word is the whole string.
+addTextBrokenAcrossLines(s);
+}
+} else if (firstSpace + 1 >= maxNbCharsPerLine) {
+// The first word in s won&#39;t fit on a line, break it across several
+

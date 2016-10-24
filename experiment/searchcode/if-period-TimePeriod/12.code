@@ -1,0 +1,8 @@
+private final void reset(int timePeriod) {
+if (timePeriod <= 0) {
+throw new RuntimeException(&quot;timePeriod &quot; + timePeriod + &quot; is not allowed!&quot;);
+if (itemCount <= timePeriod) {
+// add new value:
+currentEMA += newValue;
+if (itemCount == timePeriod) {
+

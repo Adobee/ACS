@@ -1,0 +1,8 @@
+private final int startLine;
+private final int startColumn;
+private final int endLine;
+private final int endColumn;
+
+public Position(String source, int startLine, int startColumn) {
+this.source = source;
+

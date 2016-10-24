@@ -1,0 +1,18 @@
+public PowerMeter(int curPower, int maxPower)
+{
+// Set curPower
+if(curPower > 0)
+{
+this.curPower = curPower;
+}
+else
+curPower = maxPower;
+}
+else if(curPower < 0)
+{
+curPower = 0;
+}
+}
+
+public int getMaxPower()
+

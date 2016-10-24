@@ -1,0 +1,9 @@
+for (Phone phone : phones) {
+WSPhoneNumber wsPhoneNumber = new WSPhoneNumber(phone);
+if (hasPermission(wsPhoneNumber)) {
+populateModel(model, phones);
+}
+
+@RequestMapping(value = &quot;/{phoneType}&quot;, method = GET)
+public void getPhonesByDeviceType(Model model,
+

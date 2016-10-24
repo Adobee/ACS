@@ -1,0 +1,10 @@
+private String getbasic(double[] input, int samplesize)
+{
+int i = 0, middle = samplesize/2;
+max = input[samplesize-1];
+
+// Find the median
+if (samplesize % 2 == 0)
+{
+med = (input[middle] + input[middle+1]) / 2;
+

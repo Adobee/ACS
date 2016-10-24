@@ -1,0 +1,12 @@
+public abstract class SingleIntervalAnimation extends LayerAnimation {
+
+protected double startValue = 0;
+protected double endValue = 0;
+
+public SingleIntervalAnimation(Layer target) {
+setTarget(target);
+}
+
+public void calculate(double x) {
+double value = interpolator.factor(startValue, endValue, x);
+

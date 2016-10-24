@@ -1,0 +1,11 @@
+this.ignoreComments();
+currentToken = tokenList.get(0);
+
+// make sure the Schemes are first
+if(currentToken.getType() != TokenType.SCHEMES) {
+this.ignoreComments();
+currentToken = tokenList.get(0);
+
+if(currentToken.getType() != TokenType.COLON) {
+throw new ParseError(currentToken);
+

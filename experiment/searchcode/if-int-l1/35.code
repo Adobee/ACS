@@ -1,0 +1,8 @@
+public void merge(int A[], int m, int B[], int n) {
+int l1 = m - 1, l2 = n - 1;
+for (int i = m + n - 1; i >= 0; i--) {
+if (l1 >= 0 &amp;&amp; l2 >= 0) {
+if (A[l1] > B[l1]) {
+A[i] = A[l1];
+l1--;
+

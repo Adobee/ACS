@@ -1,0 +1,10 @@
+public Object getValue() {
+String value = null;
+Object tmp = super.getValue();
+if (tmp instanceof String) value = (String) tmp;
+return new StylePropertyState(currentValue);
+}
+
+public void setValue(Object value) {
+String valueString = null;
+

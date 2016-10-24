@@ -1,0 +1,9 @@
+public class NormalisationJ extends Normalisation{
+
+private static final long serialVersionUID = 1L;
+/** The name of the normalisation method .*/
+public double normalise(double tf, double docLength, double termFrequency){
+if (docLength == 0)
+return tf;
+double tfn = ((1-parameter)*tf/docLength+parameter*termFrequency/numberOfTokens)*docLength;
+

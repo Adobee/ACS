@@ -1,0 +1,11 @@
+QueueBrowser browser=queueBrowser(q);
+if(browser!=null)
+return browser.getEnumeration();
+
+return null;
+}
+
+@Override
+public boolean deleteDestination(String destination,String type) throws Exception {
+ActiveMQBrokerStore store=(ActiveMQBrokerStore) brokerStore;
+

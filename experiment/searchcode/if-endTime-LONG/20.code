@@ -1,0 +1,13 @@
+return endTime;
+}
+
+public void setEndTime(long endTime) {
+this.endTime = endTime;
+}
+
+public void tick(){
+if (endTime > 0){
+long now = TimeUtils.nowLong() / 1000;
+if (now > endTime){//解除封禁
+endTime = 0;
+

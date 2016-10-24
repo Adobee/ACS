@@ -1,0 +1,9 @@
+public static StrategyManager getInstance() {
+if (instance == null) {
+instance = new StrategyManager();
+}
+return instance;
+}
+
+public Strategy getCurrentStrategy() {
+

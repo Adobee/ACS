@@ -1,0 +1,9 @@
+sessionStatefull.insert(request);
+if (request.getOrder() != null) {
+sessionStatefull.insert(request.getOrder());
+sessionStatefull.insert(orderLine.getProduct());
+}
+}
+if (request.getTrip() != null) {
+sessionStatefull.insert(request.getTrip());
+

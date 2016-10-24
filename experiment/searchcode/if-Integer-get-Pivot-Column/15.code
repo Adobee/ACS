@@ -1,0 +1,8 @@
+Evaluator expression = new Evaluator(oldTable, formula);
+Iterable<String> columnNames = oldTable.getColumnNames();
+Iterable<Integer> columnTypes = oldTable.getColumnTypes();
+Iterable<NamedSummarizer> namedSummarizers = pivotColumnSummarizers.get(seriesValue);
+if (namedSummarizers == null)
+{
+List<NamedSummarizer> summarizerList = new LinkedList<NamedSummarizer>();
+

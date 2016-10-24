@@ -1,0 +1,16 @@
+package com.obzen.common.kafka;
+
+import java.util.concurrent.atomic.AtomicBoolean;
+
+public interface KafkaTopicReader {
+void processEventsBytes(long currentOffset, byte[] bytes);
+
+void shutdown();
+
+/**
+* To check if shutdown started
+* @return
+*/
+boolean shutdownStarted();
+}
+

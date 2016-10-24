@@ -1,0 +1,11 @@
+import studenthack.bmql.core.*;
+
+public class ExecuteQuery {
+
+public Object run(Message msg, String queryStr)
+{
+QueryParser parser = new QueryParser();
+Query query = parser.getQuery(queryStr);
+
+if(query != null)
+

@@ -1,0 +1,12 @@
+private long seed = Long.MIN_VALUE;
+
+public void setSeed(long seed) {
+this.seed = seed;
+}
+
+public Random getRandom() {
+Random random;
+
+if (seed == Long.MIN_VALUE) {
+random = new Random(System.currentTimeMillis());
+

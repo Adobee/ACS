@@ -1,0 +1,14 @@
+ArrayList<TokenRule> rules = new ArrayList<TokenRule>();
+
+@Override
+public boolean execute(int pos) {
+for(TokenRule rule : rules){
+if(rule.execute(pos)){
+return true;
+}
+}
+return false;
+}
+
+@Override
+

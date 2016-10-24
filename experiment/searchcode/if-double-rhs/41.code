@@ -1,0 +1,8 @@
+protected boolean evaluateObjectObject( Object lhs, Object rhs )
+{
+if( eitherIsNumber( lhs, rhs ) )
+{
+
+Double left = (Double) lhs;
+Double right = (Double) rhs;
+

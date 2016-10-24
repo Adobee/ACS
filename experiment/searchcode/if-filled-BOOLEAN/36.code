@@ -1,0 +1,11 @@
+public class Solution {
+public boolean isValidSudoku(char[][] board) {
+if(board == null || board.length != 9 || board[0].length != 9) {
+return false;
+}
+
+//check each row
+boolean[] filled = new boolean[9];
+
+for(int i = 0; i < 9; i++) {
+

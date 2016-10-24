@@ -1,0 +1,14 @@
+* According to the specified format, Get a DateFormat
+*
+* @param format
+* @return
+*/
+public static DateFormat getDateFormat(String format) {
+format = DEFAULT_FORMAT;
+}
+
+DateFormat ret = map.get(format);
+
+if (ret == null) {
+ret = new SimpleDateFormat(format);
+

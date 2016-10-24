@@ -1,0 +1,11 @@
+out.writeInt(i);
+writer.add(new BytesArray(bytes));
+}
+writer.sync();
+
+final BaseTranslogReader reader = randomBoolean() ? writer : translog.openReader(writer.path(), Checkpoint.read(translog.location().resolve(Translog.CHECKPOINT_FILE_NAME)));
+out.writeInt(2048);
+writer.add(new BytesArray(bytes));
+
+if (reader instanceof TranslogReader) {
+

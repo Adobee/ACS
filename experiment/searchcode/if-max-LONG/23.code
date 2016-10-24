@@ -1,0 +1,11 @@
+package p2pbay.testing;
+
+public class CountThread extends Thread{
+long min = Long.MAX_VALUE;
+public CountThread() {
+}
+
+public void add(long min, long max, long mean) {
+synchronized (this) {
+if (this.min > min)
+

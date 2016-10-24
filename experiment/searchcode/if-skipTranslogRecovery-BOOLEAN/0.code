@@ -1,0 +1,7 @@
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.function.BiConsumer;
+import java.util.stream.Collectors;
+boolean recoverFromStore(final IndexShard indexShard, final boolean indexShouldExists) {
+if (canRecover(indexShard)) {
+if (indexShard.routingEntry().restoreSource() != null) {
+

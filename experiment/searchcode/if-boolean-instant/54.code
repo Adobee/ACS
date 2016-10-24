@@ -1,0 +1,9 @@
+return R.layout.flw_widget_floating_label_instant_picker;
+}
+
+@Override
+protected void onLayout(boolean changed, int left, int top, int right, int bottom) {
+protected void putAdditionalInstanceState(Bundle saveState) {
+if (selectedInstant != null) {
+saveState.putParcelable(SAVE_STATE_KEY_INSTANT, selectedInstant);
+

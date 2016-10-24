@@ -1,0 +1,11 @@
+public static long[] getAffectedRows(SQLiteDatabase db, String table, String whereClause, String[] whereArgs) {
+if (TextUtils.isEmpty(whereClause)) {
+return null;
+}
+
+Cursor c = db.query(table, new String[] {BaseColumns._ID},
+long[] affectedRows = null;
+if (c != null) {
+affectedRows = new long[c.getCount()];
+for (int i = 0; c.moveToNext(); i++) {
+

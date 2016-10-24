@@ -1,0 +1,8 @@
+public  void erzhiA(int[][] gray, int w, int h,int threshold,BufferedImage binaryBufferedImage){
+
+for (int x = 0; x < w; x++) {
+for (int y = 0; y < h; y++) {
+
+if (gray[x][y] > threshold) {
+gray[x][y] |= 0x00FFFF; // 白色
+

@@ -1,0 +1,16 @@
+private Object lastValue;
+
+@Override
+public boolean match(Object currentValue) {
+
+if (!currentValue.equals(lastValue)) {
+lastValue = currentValue;
+return true;
+}
+
+return false;
+
+}
+
+}
+

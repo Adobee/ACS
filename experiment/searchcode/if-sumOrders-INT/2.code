@@ -1,0 +1,8 @@
+public List<Customer> customersWhoBoughtMoreThan(int number) {
+return customers.stream().filter(n -> n.getBoughtProducts().size() > number).collect(Collectors.toList());
+c -> c.getBoughtProducts().stream().collect(
+Collectors.summingDouble(Product::getPrice)
+)).sum();
+int customerCount = 10;
+if(!includeEmpty) {
+

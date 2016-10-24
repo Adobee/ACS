@@ -1,0 +1,10 @@
+boolean newResult = evaluate( context, literal, rhs);
+
+if ( oldResult != newResult) parent.notifyChange( this, context, newResult);
+}
+else
+literal.setValue( newValue);
+boolean newResult = evaluate( context, lhs, literal);
+
+if ( oldResult != newResult) parent.notifyChange( this, context, newResult);
+

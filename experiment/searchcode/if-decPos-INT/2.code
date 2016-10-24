@@ -1,0 +1,14 @@
+int d = (&quot;&quot;+high).length();
+int decPos=10;
+ins=ins+2;
+for(int i=0;i<d;i++){
+ins=ins+countingDigitSort(v,decPos);
+ins++;
+}
+
+for (int x : a){
+int pos= x%decPos;
+
+if(pos>9)
+pos=10*pos/decPos;
+

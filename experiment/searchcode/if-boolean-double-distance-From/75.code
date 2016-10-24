@@ -1,0 +1,8 @@
+private double distanceTraveled = 0;
+private double maxSpeed = 0.1;
+private double maxDistance;
+
+private boolean ignoreDistance = false;
+public static double calculateOrientationDistanceFitness(Vector2d pos, double orientation, double distanceTraveled, double maxDistance) {
+double result = getOrientationFromCircle(pos) - MathUtils.modPI2(orientation);
+

@@ -1,0 +1,12 @@
+* Represents a 1D range (essentially a 1D bounding box)
+*/
+@Data
+public class Range {
+public static final Range EMPTY = new Range(Float.MAX_VALUE, -Float.MAX_VALUE);
+setMin(newMin);
+setMax(newMax);
+}
+
+public boolean isBelow(final Range range) {
+return max < range.min;
+

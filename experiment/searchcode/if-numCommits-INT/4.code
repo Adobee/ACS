@@ -1,0 +1,9 @@
+createAndLogMultipleBranches(200, 200);
+}
+
+private void createAndLogMultipleBranches(int numBranches, int numCommits) throws Exception {
+RevCommit commit = null;
+for (int i = 1; i <= numCommits; i++) {
+if (i % largeStep == 0) {
+System.err.print(i);
+

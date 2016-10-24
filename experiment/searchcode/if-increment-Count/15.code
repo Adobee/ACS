@@ -1,0 +1,11 @@
+static void atomicIncrement()
+{
+atomicCounter.incrementAndGet();
+}
+
+static void benchStdIncrement(int loopCount)
+{
+for (int i = 0; i < loopCount; i++)
+{
+stdIncrement();
+

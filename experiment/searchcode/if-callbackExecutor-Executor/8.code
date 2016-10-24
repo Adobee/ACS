@@ -1,0 +1,7 @@
+final class ExecutorCallAdapterFactory extends CallAdapter.Factory {
+final Executor callbackExecutor;
+@Override public void onResponse(Call<T> call, final Response<T> response) {
+callbackExecutor.execute(new Runnable() {
+@Override public void run() {
+if (delegate.isCanceled()) {
+

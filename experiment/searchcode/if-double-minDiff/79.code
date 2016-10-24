@@ -1,0 +1,7 @@
+ArrayList<Pair<VectorPoint, VectorPoint>> pairs = new ArrayList<>();
+for(int i = 0; i<points1.size(); i++){
+double minDiff = difference(points1.get(i), points2.get(0));
+double diff = difference(points1.get(i), points2.get(j));
+if(minDiff > diff){
+minDiff = diff;
+

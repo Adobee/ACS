@@ -1,0 +1,12 @@
+public PhoneNumberField(final Fighter fighter, final boolean edit) {
+if (edit) {
+final TextBox phoneNumber = new TextBox();
+phoneNumber.setName(&quot;phoneNumber&quot;);
+fighter.getPhone().get(0).setPhoneNumber(phoneNumber.getValue());
+}
+}
+});
+initWidget(phoneNumber);
+} else {
+if (fighter.getPhone() != null &amp;&amp; !fighter.getPhone().isEmpty()) {
+

@@ -1,0 +1,19 @@
+public class LockFreeCounter {
+
+private AtomicLong value;
+
+public long get() {
+return value.longValue();
+return v + 1;
+}
+
+public long incrementAndGet3() {
+for (;;) {
+long v = value.longValue();
+if (value.compareAndSet(v, v + 1)) {
+return v + 1;
+}
+}
+}
+}
+

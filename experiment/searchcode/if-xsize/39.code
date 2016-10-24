@@ -1,0 +1,13 @@
+import ch.rihuber.noc.topology.TorusTopology;
+
+public class SimpleTorusRouter extends Router
+{
+
+private int xSize;
+
+public SimpleTorusRouter(int xSize)
+int switchingNodeId = switchingNode.getId();
+
+if (destId % xSize != switchingNodeId % xSize)
+return TorusTopology.VERTICAL_FORWARD;
+

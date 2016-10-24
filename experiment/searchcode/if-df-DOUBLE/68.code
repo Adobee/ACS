@@ -1,0 +1,11 @@
+public static double pnorm(double q) {
+
+double up = 0.9999999;
+double lp = 0.0000001;
+while (Math.abs(up - lp) > 0.0001) {
+if (qnorm((up + lp) / 2) <= q) {
+public static double dchisq(double q, int df) {
+
+if (q > 0) {
+return 1 / (Math.pow(2, (double) df / 2) * Gamma((double) df / 2))
+

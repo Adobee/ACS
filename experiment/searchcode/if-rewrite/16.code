@@ -1,0 +1,10 @@
+final String argumentSeparater = properties.getString(Constants.PropertyKeys.URL_ARGUMENT_SEPARATER, Constants.Defaults.URL_ARGUMENT_SEPARATER);
+if (rewriteMappingList != null) {
+List<UrlRewriteMappingItem> urlRewriteMappingItems = CollectionUtil.transformList(rewriteMappingList, new Transformer<String, UrlRewriteMappingItem>() {
+return new UrlRewriteMappingItem(UrlRewriteMapping.parseFromString(object, argumentSeparater));
+}
+});
+this.setRewriteMappings(urlRewriteMappingItems);
+}
+if (StringUtil.isNotEmpty(domainL2Parameter) &amp;&amp; domainL2Resolver != null) {
+

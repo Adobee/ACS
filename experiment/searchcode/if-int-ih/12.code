@@ -1,0 +1,9 @@
+// 1. Generate stability plot
+
+for (int ih = 0; ih < hh.length; ih++) {
+
+for (int it = 0; it < 480; it+=30) {
+double q[] = new double[] {0.1, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 2.0};
+
+for (int ih = 0; ih < hh.length; ih++) {
+

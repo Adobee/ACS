@@ -1,0 +1,13 @@
+private boolean inAnimation = false;
+
+private float minDegree = 0.0f;
+private float maxDegree = 45.0f * 7;
+
+private float currentDegree = minDegree;
+public MeterView(Context context, AttributeSet attrs, int defStyle) {
+super(context, attrs, defStyle);
+}
+
+private void init() {
+needle = (ImageView) findViewById(R.id.needle);
+

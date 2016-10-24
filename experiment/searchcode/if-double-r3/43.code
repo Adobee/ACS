@@ -1,0 +1,9 @@
+public abstract class CommonAlphaEquation extends Alpha implements Serializable{
+private double r1;
+private double r2;
+private double r3;
+private double r4;
+return false;
+}
+if (Double.doubleToLongBits(this.r3) != Double.doubleToLongBits(other.r3)) {
+

@@ -1,0 +1,8 @@
+public class GameServer implements GameListener {
+public static final int WAIT_TIME_BETWEEN_CHECKS_MS = 1000;
+private boolean waitingBetweenChecks;
+public void serve() throws InterruptedException {
+while(true) {
+if (isWaitingBetweenChecks()) {
+Thread.sleep(WAIT_TIME_BETWEEN_CHECKS_MS);
+

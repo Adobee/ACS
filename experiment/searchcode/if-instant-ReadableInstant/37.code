@@ -1,0 +1,9 @@
+import org.joda.time.ReadableInstant;
+
+import com.google.common.collect.Lists;
+
+public abstract class TimeWriter<T extends Comparable<T>> {
+public static class DateTimeWriter extends TimeWriter<ReadableInstant> {
+
+public static final DateTimeWriter INSTANCE = new DateTimeWriter();
+

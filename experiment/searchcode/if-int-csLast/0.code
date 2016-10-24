@@ -1,0 +1,7 @@
+when(searchChars) {                        <1>
+int csLen = str.length();
+int csLast = csLen - 1;
+for (int j = 0; j < searchLen; j++) {
+if (searchChars[j] == ch) {
+if (i < csLast &amp;&amp; j < searchLast &amp;&amp; CharUtils.isHighSurrogate(ch)) {
+

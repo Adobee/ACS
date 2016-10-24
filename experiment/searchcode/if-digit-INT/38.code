@@ -1,0 +1,10 @@
+secondDigit = (secondDigit * secondDigit * secondDigit) % 10;
+
+number /= 1000;
+
+for (int i = 1; i < 11; i++) {
+
+if (i * i * i > number) {
+firstDigit = i - 1;
+return firstDigit * 10 + secondDigit;
+

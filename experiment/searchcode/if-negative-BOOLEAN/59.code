@@ -1,0 +1,13 @@
+package Example5;
+
+class MyThread extends Thread
+{
+boolean negative = true;
+double pi; // Initializes to 0.0, by default
+for (int i = 3; i < 100000; i += 2)
+{
+if (negative)
+pi -= (1.0 / i);
+else
+pi += (1.0 / i);
+

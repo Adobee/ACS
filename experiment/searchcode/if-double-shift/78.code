@@ -1,0 +1,10 @@
+private double colorIntensity;
+private double shiftX;
+private double shiftY;
+
+public Piksel(double colorIntensity) {
+public void addShift(double shiftX, double shiftY) {
+this.shiftX += shiftX;
+this.shiftY += shiftY;
+if ((Math.abs(this.shiftX) + Math.abs(this.shiftY)) > Config.SHIFT_BORDER_DECREASE) {
+

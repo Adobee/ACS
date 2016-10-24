@@ -1,0 +1,7 @@
+import edu.umd.cs.psl.optimizer.conic.program.ConicProgram;
+import edu.umd.cs.psl.optimizer.conic.program.LinearConstraint;
+NonNegativeOrthantCone cone = program.createNonNegativeOrthantCone();
+Variable slack = cone.getVariable();
+
+LinearConstraint constraint = program.createConstraint();
+

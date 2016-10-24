@@ -1,0 +1,7 @@
+String[] times = time.split(&quot;,&quot;);
+long milliSeconds = 0;
+for (String t : times) {
+if (t.matches(&quot;(\\d+)[s]$&quot;)) {
+} else if (t.matches(&quot;(\\d+)[m]$&quot;)) {
+milliSeconds = TimeUnit.MINUTES.toMillis(Integer.parseInt(t.replace(&quot;m&quot;, &quot;&quot;))) + milliSeconds;
+

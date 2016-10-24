@@ -1,0 +1,8 @@
+OkHttpClient client = new OkHttpClient();
+
+//Билдер для дополнения параметров
+HttpUrl.Builder urlBuilder = HttpUrl.parse(url).newBuilder();
+
+//Добавляем параметры
+HttpUrl urlWithParameters = urlBuilder.setQueryParameter(&quot;text&quot;,&quot;What is &amp;&quot;)
+

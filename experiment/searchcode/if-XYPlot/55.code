@@ -1,0 +1,9 @@
+package de.ewmksoft.xyplot.demo;
+
+/*
+* A demo application for the XYPlot component
+if (isPaused) {
+for (XYPlotData dhx : dh) {
+if (dhx != null) {
+dhx.setPause();
+

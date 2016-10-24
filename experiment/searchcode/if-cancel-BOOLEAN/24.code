@@ -1,0 +1,8 @@
+private final static Logger logger = LoggerFactory.getLogger(Cancelable.class);
+
+private  volatile boolean cancel = false;
+private boolean shutdown = false;
+
+public boolean isCancel() {
+if (this.cancel) logger.debug(&quot;isCanceled()&quot; + this.toString());
+

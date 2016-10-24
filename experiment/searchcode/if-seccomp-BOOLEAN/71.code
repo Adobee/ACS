@@ -1,0 +1,11 @@
+JNANatives.tryMlockall();
+}
+
+static boolean definitelyRunningAsRoot() {
+if (!JNA_AVAILABLE) {
+return JNANatives.LOCAL_MLOCKALL;
+}
+
+static void trySeccomp(Path tmpFile) {
+if (!JNA_AVAILABLE) {
+

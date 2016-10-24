@@ -1,0 +1,10 @@
+double getEffort() {
+double e, v;
+v = getVal();
+e = 0;
+if (min != Double.NEGATIVE_INFINITY) {
+e -= Math.log(v - min);
+}
+if (max != Double.POSITIVE_INFINITY) {
+e -= Math.log(max - v);
+

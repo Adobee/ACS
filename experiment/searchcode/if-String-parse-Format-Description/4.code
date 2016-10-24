@@ -1,0 +1,7 @@
+public static Date getDateByString(String dateString) throws ParseException {
+if (dateString != null &amp;&amp; !&quot;&quot;.equals(dateString)) {
+return sdFormat.parse(dateString);
+public static Date getDateByString(String dateString, String format) throws ParseException {
+if (dateString != null &amp;&amp; !&quot;&quot;.equals(dateString)) {
+SimpleDateFormat sdFormat = new SimpleDateFormat(format);
+

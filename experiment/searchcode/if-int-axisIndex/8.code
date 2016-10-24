@@ -1,0 +1,8 @@
+public static void expand(final double[] bounds, final int axisCount, final int axisIndex,
+final double coordinate) {
+if (!MathUtil.isNanOrInfinite(coordinate)) {
+public static void expand(final GeometryFactory geometryFactory, final double[] bounds,
+final int axisIndex, double coordinate) {
+if (geometryFactory != null) {
+coordinate = geometryFactory.makePrecise(axisIndex, coordinate);
+

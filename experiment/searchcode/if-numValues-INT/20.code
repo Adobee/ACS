@@ -1,0 +1,11 @@
+private List values = new List();
+private int numValues;
+
+/**
+* Initialize an averager that will hold the specified number of values.
+* @param numValues The number of entries the averager will store.
+*/
+public RollingAverager(int numValues) {
+if (numValues <= 0) {
+throw new IllegalArgumentException(&quot;Cannot have 0 or fewer values.&quot;);
+

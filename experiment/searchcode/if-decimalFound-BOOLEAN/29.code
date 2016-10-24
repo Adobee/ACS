@@ -1,0 +1,9 @@
+String pstr = &quot;&quot; + Simulator.TIME_PER_ITERATION;
+char[] pstrArr = pstr.toCharArray();
+boolean decimalFound = false;
+for(char c : pstrArr) {
+if(decimalFound)
+precision++;
+if(c == &#39;.&#39;) {
+decimalFound = true;
+

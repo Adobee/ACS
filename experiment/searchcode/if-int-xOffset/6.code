@@ -1,0 +1,8 @@
+public class CenteredXOffsetStrategy implements XOffsetStrategy
+{
+public int calculateXOffset(limelight.ui.model.text.TextModel model)
+{
+int xOffset = model.getXOffset();
+Box boundingBox = model.getContainer().getConsumableBounds();
+int absoluteCaretX = model.getAbsoluteX(model.getCaretLocation());
+

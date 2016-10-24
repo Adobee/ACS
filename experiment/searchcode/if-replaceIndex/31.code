@@ -1,0 +1,8 @@
+int replaceIndex = value.indexOf(REPLACE_SEQ);
+if (replaceIndex >= 0) {
+in.insert(0, value.substring(0, replaceIndex));
+in.append(value.substring(replaceIndex + REPLACE_SEQ.length(),
+value.length()));
+}
+if (obj instanceof LinkedObject) {
+

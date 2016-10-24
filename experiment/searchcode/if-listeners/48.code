@@ -1,0 +1,11 @@
+public static Listeners createEventListeners(IRCBot ircbot) {
+
+Listeners listeners = new Listeners();
+
+if (null != ircbot.getConfigs().getGreetingChans()) {
+listeners.put(&quot;UserGreetsBotListener&quot;, new UserGreetsBotListener(ircbot));
+}
+
+if (null != ircbot.getConfigs().getFarewellChans()) {
+listeners.put(&quot;UserFarewellsBotListener&quot;, new UserFarewellsBotListener(ircbot));
+

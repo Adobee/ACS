@@ -1,0 +1,8 @@
+static int[] neighborX = new int[] { -2, -1, 1, 2, 2, 1, -1, -2 };
+static int[] neighborY = new int[] { 1, 2, 2, 1, -1, -2, -2, -1 };
+
+public double probability(int x, int y, int N) {
+int prevY = j + neighborY[l];
+if (prevX >= 1 &amp;&amp; prevX <= 8 &amp;&amp; prevY >= 1 &amp;&amp; prevY <= 8) {
+sum += board[prevX][prevY][n - 1];
+

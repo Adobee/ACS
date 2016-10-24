@@ -1,0 +1,12 @@
+int bucketIndex = (int) (key &amp; tableHighestIndex);
+
+if (numberKeys[bucketIndex] > 0)
+{
+int keyIndex = CollectionHelper.binarySearch(keys[bucketIndex], key, numberKeys[bucketIndex]);
+int bucketIndex = (int) (key &amp; tableHighestIndex);
+
+if (numberKeys[bucketIndex] > 0)
+{
+int keyIndex;
+int[] local_keys = keys[bucketIndex];
+

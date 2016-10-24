@@ -1,0 +1,9 @@
+import newtonERP.orm.field.type.FieldInt;
+import newtonERP.orm.field.type.FieldString;
+
+/**
+* Entité BankAccount du module finances: représente les comptes bancaires
+Vector<Field<?>> fieldsInit = new Vector<Field<?>>();
+fieldsInit.add(new FieldInt(&quot;Numéro&quot;, getPrimaryKeyName()));
+fieldsInit.add(folio);
+

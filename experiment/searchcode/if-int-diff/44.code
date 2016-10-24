@@ -1,0 +1,13 @@
+public static int maxDifference(int[] diff){
+if(diff.length==1){
+return diff[0];
+}
+boolean descOrder=true;
+for(int k=1;k<diff.length;k++){
+return -1;
+}
+int max=Integer.MIN_VALUE;
+int maxIndex=0;
+for(int i=0;i<diff.length;i++){
+if(max<diff[i]){
+

@@ -1,0 +1,12 @@
+class Solider implements DecisionMaker {
+
+private final DecisionMaker boss;
+private final DecisionLevel decisionLevel;
+public boolean decide(Request request) {
+if (decisionLevel == request.getDecisionLevel()) {
+return false;
+} else
+return boss.decide(request);
+}
+}
+

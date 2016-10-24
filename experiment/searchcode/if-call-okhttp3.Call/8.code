@@ -1,0 +1,8 @@
+return RequestBody.create(MediaType.parse(&quot;text/plain&quot;), text);
+}
+
+public static <T> boolean cancelAPIRequest(Call<T> apiCall) {
+if (isAPICallInProgress(apiCall)) {
+public static void cancelAPIRequest(okhttp3.Call call) {
+if (call != null &amp;&amp; !call.isExecuted() &amp;&amp; !call.isCanceled()) {
+

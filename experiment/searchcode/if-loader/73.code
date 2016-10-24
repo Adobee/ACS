@@ -1,0 +1,14 @@
+import android.support.v4.app.LoaderManager;
+
+/**
+* Created by jjduan on 5/18/16.
+*/
+public abstract class BaseLoaderFragment extends Fragment {
+getLoaderManager().initLoader(getLoaderId(), null, getLoaderCallBack());
+}
+
+@Override
+public void onResume() {
+super.onResume();
+if (getLoaderManager().getLoader(getLoaderId()) == null) {
+

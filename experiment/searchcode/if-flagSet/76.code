@@ -1,0 +1,6 @@
+protected void updateOnSolo(final JanInfo info, final EnumSet<AnnounceFlag> flagSet) {
+if (info == null) {
+final List<String> messageList = new ArrayList<>();
+if (isCallable(flagSet)) {
+messageList.add(convertCallInfoToString(info.getActiveDiscard(), flagSet));
+

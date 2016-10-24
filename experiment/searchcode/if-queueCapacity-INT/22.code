@@ -1,0 +1,7 @@
+private final static Log log = LogFactory.getLog(AsyncDataSource.class);
+
+final DataSource<E>[] dss;
+final int queueCapacity;
+public AsyncDataSource(int queueCapacity, DataSource<E> ds) {
+this(queueCapacity, new DataSource[]{ds});
+

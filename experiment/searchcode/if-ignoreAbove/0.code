@@ -1,0 +1,8 @@
+int weightSum = 0;
+for(TimeSample sample : samplesPool)
+if (sample.getRTD() <= ignoreAbove) {
+AVTS += sample.getTS()*(ignoreAbove - sample.getRTD() + 1);
+weightSum+=(ignoreAbove - sample.getRTD() + 1);
+}
+if (weightSum > 0) AVTS = AVTS/weightSum;
+

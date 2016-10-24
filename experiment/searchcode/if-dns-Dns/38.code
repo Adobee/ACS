@@ -1,0 +1,13 @@
+boolean status = this.dns.addDNS(domain, email, ns1, ns2, primary_ip);
+
+//CHECK DNS STATUS
+if(!status)
+{
+this.message = &quot;This domain already has a zone file!&quot;;
+return false;
+}
+
+//REBUILD NAMED CONF
+status = dns.rebuildnamedconf();
+if(!status)
+

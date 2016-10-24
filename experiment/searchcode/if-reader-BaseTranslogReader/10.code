@@ -1,0 +1,7 @@
+import java.nio.channels.FileChannel;
+import java.nio.file.Path;
+
+public class TranslogSnapshot extends BaseTranslogReader implements Translog.Snapshot {
+public Translog.Operation next() throws IOException {
+if (readOperations < totalOperations) {
+

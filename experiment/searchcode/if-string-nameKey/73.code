@@ -1,0 +1,12 @@
+public abstract String getName();
+
+@Override
+public boolean equals(Object rhs) {
+if(!(rhs instanceof NameKey)) {
+return !&quot;&quot;.equals(getSchema());
+}
+
+public String getFullName() {
+if(hasSchema()) {
+return getSchema() + &#39;.&#39; + getName();
+

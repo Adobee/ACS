@@ -1,0 +1,11 @@
+Empresa e = dao.getEnterprise(email);
+
+int nreq= e.getRemainingRequest();
+
+req.getSession().setAttribute(&quot;nreq&quot;, nreq);
+* Compruebo si se ha llamado al logout
+*/
+if(logout.equals(&quot;yes&quot;)){
+session.invalidate();
+resp.sendRedirect(&quot;/&quot;);
+

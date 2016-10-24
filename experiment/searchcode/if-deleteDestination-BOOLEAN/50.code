@@ -1,0 +1,5 @@
+DestinationEntity destination = new DestinationEntity(newDestination.getName(), context.getAbsolutePathBuilder(), location);
+boolean ret = AOSMemoryDB.addDestination(destination);
+if (!ret) {
+throw new BadRequestException(&quot;Cannot create destination.&quot;);
+

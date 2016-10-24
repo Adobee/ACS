@@ -1,0 +1,13 @@
+private final double increment;
+private double direction;
+private double currentPrice;
+
+public PriceGenerator(double start, double low, double high, double spread, double increment) {
+direction = increment;
+currentPrice = start;
+}
+
+public double[] getNextPrices() {
+
+if (currentPrice >= high)
+

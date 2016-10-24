@@ -1,0 +1,9 @@
+public class StatisticManager {
+
+private static boolean hasStats(Player player) {
+return Core.getPlugin().getConfig().getConfigurationSection(&quot;stats.&quot; + player.getUniqueId().toString()) != null;
+public static void createStats(Player player) {
+if (hasStats(player)) return;
+
+final ConfigurationSection section = Core.getPlugin().getConfig().getConfigurationSection(&quot;stats&quot;).createSection(player.getUniqueId().toString());
+

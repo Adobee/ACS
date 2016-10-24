@@ -1,0 +1,13 @@
+//辅助函数  四舍五入
+public double isSquart(double x, double mid) {
+long a = Math.round(mid);
+if (a * a == x) {
+return mid;
+}
+}
+
+//二分法求根号
+public double sqrtBinary(double x) {
+if (x == 0 || x == 1) {
+return x;
+

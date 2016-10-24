@@ -1,0 +1,8 @@
+public class Solution {
+public int closestValue(TreeNode root, double target) {
+if(root == null) {
+return closestValue(root, target, Double.MAX_VALUE, 0);
+}
+
+private int closestValue(TreeNode node, double target, double minDiff, int closest) {
+

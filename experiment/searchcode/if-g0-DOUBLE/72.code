@@ -1,0 +1,11 @@
+public static BufferedImage getVertexImage(boolean arg){
+BufferedImage image=null;
+try {
+if(arg)
+image=ImageIO.read(new File(&quot;icons/select_node.png&quot;));
+int radius=getVertexImage(false).getHeight();//直径
+double d=Point.distance(from.x, from.y, to.x, to.y);
+if(d-radius>1){
+isDraw=true;
+double sx=from.x+dx*radius/(d*2);//起点x
+

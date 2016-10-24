@@ -1,0 +1,7 @@
+public class CacheCookieManager {
+
+private static ConcurrentHashMap<String, Boolean> cookieChangedMap = new ConcurrentHashMap<String, Boolean>();
+public static boolean isCookieChanged(String url) {
+boolean changed = false;
+if (cookieChangedMap.containsKey(url)) {
+

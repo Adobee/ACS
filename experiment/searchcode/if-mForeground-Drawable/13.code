@@ -1,0 +1,8 @@
+public void setForeground(Drawable drawable) {
+if (this.mForeground != drawable) {
+if (this.mForeground != null) {
+unscheduleDrawable(this.mForeground);
+}
+this.mForeground = drawable;
+if (drawable != null) {
+

@@ -1,0 +1,7 @@
+public PathParser(String path) {
+this.pathSegments = StringUtils.split(path, DELIM);
+if (this.pathSegments == null) {
+String contextRemovedPath = StringUtils.removeStart(path, contextPath);
+this.pathSegments = StringUtils.split(contextRemovedPath, DELIM);
+if (this.pathSegments == null) {
+

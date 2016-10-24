@@ -1,0 +1,9 @@
+double curY = 0;
+double curF = f.apply(curX, curY);
+for (double step = 1e6; step > 1e-7; ) {
+double bestF = curF;
+double nextX = curX + step * Math.cos(a);
+double nextY = curY + step * Math.sin(a);
+double nextF = f.apply(nextX, nextY);
+if (bestF > nextF) {
+

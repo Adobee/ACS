@@ -1,0 +1,6 @@
+private final AtomicBoolean shutdownStarted;
+private final boolean ensureProcessShutdown;
+private final long waitForShutdownTimeoutMillis;
+protected ShutdownThread(String name, AtomicBoolean shutdownStarted, boolean ensureProcessShutdown) {
+this(name, shutdownStarted, ensureProcessShutdown, DEFAULT_WAIT_FOR_SHUTDOWN_TIMEOUT_MILLIS);
+

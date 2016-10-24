@@ -1,0 +1,7 @@
+List<String> shape = recipeData.getStringList(&quot;SHAPE&quot;);
+boolean hasShape = shape != null &amp;&amp; shape.size() != 0;
+HashMap<Character, WrappedMaterial> materials = readRecipeMaterials(recipeName, recipeMaterials);
+Recipe recipe = hasShape ? new ShapedRecipe(result) : new ShapelessRecipe(result);
+
+if (hasShape) {
+

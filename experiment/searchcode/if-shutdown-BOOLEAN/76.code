@@ -1,0 +1,7 @@
+//	public synchronized boolean isActive(ShutdownControlHandle shutdownControlHandle)
+//	{
+//		return shutdownControlHandles.contains(shutdownControlHandle);
+String shutdownAfterStartup = System.getProperty(JFireServerManagerFactory.class.getName() + &quot;.shutdownAfterStartup&quot;);
+if (Boolean.TRUE.toString().equals(shutdownAfterStartup)) {
+try {
+

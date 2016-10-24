@@ -1,0 +1,10 @@
+public Filter(Filter previous) { this(previous, false); }
+public Filter(Filter previous, boolean reverse) {
+this.previous = previous;
+this.reverse = reverse;
+}
+private Filter previous;
+private boolean reverse;
+
+public final boolean accept(Data data) {
+

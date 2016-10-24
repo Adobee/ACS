@@ -1,0 +1,11 @@
+keywidth = (int)((float)width / (float)MIDIPiano.instance.num_keys);
+int keywidthhalf = keywidth / 2;
+int keywidthhalf2 = keywidth / 2;
+
+if ((keywidthhalf * 2) < keywidth) keywidthhalf2++;
+g.fillRect(xoffset + (i * keywidth) + (keywidth / 2) + 1, yoffset + keyheight, keywidthhalf2 - 1, yoffset + (getHeight() - bottombuffer - 5) - (yoffset + keyheight));
+}
+}
+if ((j == 4) || (j == 9)) {
+g.drawLine( (int) (xoffset + (i * keywidth) + (keywidth / 2) +
+

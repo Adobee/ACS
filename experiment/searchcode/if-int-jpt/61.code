@@ -1,0 +1,7 @@
+*     Oracle - initial API and implementation
+******************************************************************************/
+package org.eclipse.jpt.jpa.eclipselink.core.internal.context.orm;
+
+import org.eclipse.jpt.jpa.core.context.java.JavaSpecifiedPersistentAttribute;
+import org.eclipse.jpt.jpa.core.context.orm.OrmAttributeMapping;
+

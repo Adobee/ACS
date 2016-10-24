@@ -1,0 +1,8 @@
+public static LenientChronology getInstance(Chronology base) {
+if (base == null) {
+throw new IllegalArgumentException(&quot;Must supply a chronology&quot;);
+if (getZone() == DateTimeZone.UTC) {
+iWithUTC = this;
+} else {
+iWithUTC = LenientChronology.getInstance(getBase().withUTC());
+

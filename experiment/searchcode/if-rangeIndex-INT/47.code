@@ -1,0 +1,9 @@
+* Set the USerializedSet to contain the given character (and nothing
+* else).
+*/
+public final void setToOne(int c) {
+if( 0x10ffff<c) {
+int suppLength=length-bmpLength;
+if(rangeIndex<suppLength) {
+int offset=arrayOffset+bmpLength;
+

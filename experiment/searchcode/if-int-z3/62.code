@@ -1,0 +1,6 @@
+return Z3_sort_kind.fromInt(Native.getSortKind(getContext().nCtx(),
+getNativeObject()));
+if (Native.getAstKind(getContext().nCtx(), obj) != Z3_ast_kind.Z3_SORT_AST
+.toInt())
+throw new Z3Exception(&quot;Underlying object is not a sort&quot;);
+

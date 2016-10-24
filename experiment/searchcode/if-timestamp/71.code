@@ -1,0 +1,11 @@
+import com.sparktale.bugtale.meta.amagent.data.Record;
+
+public class TimestampFilter extends Analyzer
+{
+private final long minTimestamp;
+protected Record internalProcess(Record record)
+{
+long timestamp = record.getTimestamp();
+
+if ((timestamp < minTimestamp) ||
+

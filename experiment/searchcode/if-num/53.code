@@ -1,0 +1,8 @@
+public class Solution {
+public void nextPermutation(int[] num) {
+int r = num.length - 1;
+while (r > 0 &amp;&amp; num[r - 1] >= num[r]) {
+r--;
+}
+if (r == 0) {
+

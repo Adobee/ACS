@@ -1,0 +1,8 @@
+initializeNatives(settings.getAsBoolean(&quot;bootstrap.mlockall&quot;, false),
+settings.getAsBoolean(&quot;bootstrap.ctrlhandler&quot;, true));
+
+// We do not need to reload system properties here as we have already applied them in building the settings and
+public static void initializeNatives(boolean mlockAll, boolean ctrlHandler) {
+// mlockall if requested
+if (mlockAll) {
+

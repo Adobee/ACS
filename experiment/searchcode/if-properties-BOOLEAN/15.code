@@ -1,0 +1,13 @@
+return properties.getProperty(shipName + &quot;achievements&quot;);
+}
+
+public boolean isShipAvaliable(String shipName)
+{
+if(!properties.containsValue(&quot;ships&quot;))
+return properties.getProperty(&quot;ships&quot;).getBoolean(shipName);
+}
+
+public void unlockShip(String shipName)
+{
+if(!properties.containsValue(&quot;ships&quot;))
+

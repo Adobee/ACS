@@ -1,0 +1,9 @@
+public abstract class SafeEvent<T> implements Event<T>
+{
+private final Class<?> listenerType;
+
+protected SafeEvent()
+public final void dispatchOn(Object listener)
+{
+if (listenerType.isAssignableFrom(listener.getClass()))
+

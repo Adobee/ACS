@@ -1,0 +1,8 @@
+if (method.equalsIgnoreCase(&quot;post&quot;)) {
+if (data != null) {
+FormBody.Builder formBuilder = new FormBody.Builder();
+formBuilder.add(dataItem.getName(), dataItem.getValue());
+}
+FormBody form = formBuilder.build();
+reqBuilder.post(form);
+

@@ -1,0 +1,15 @@
+this.b = ((-1*this.slope.y/this.slope.x*point2.x)+point2.y);
+}
+
+public Vector2D evaluatex(double x) {
+if(slope.x==0){
+return null;
+return new Vector2D((y-b)/(slope.y/slope.x),y);
+}
+}
+public double findy(double x) {
+if(slope.y==0){
+return b;
+}else{
+return (slope.y*x/slope.x+b);
+

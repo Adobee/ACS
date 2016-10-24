@@ -1,0 +1,7 @@
+public abstract class OGCMultiCurve extends OGCGeometryCollection {
+public int numGeometries() {
+MultiPath mp = (MultiPath) getEsriGeometry();
+MultiPath mp = (MultiPath) getEsriGeometry();
+for (int i = 0, n = mp.getPathCount(); i < n; i++) {
+if (!mp.isClosedPathInXYPlane(i))
+

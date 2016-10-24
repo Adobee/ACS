@@ -1,0 +1,13 @@
+ret = ((java.lang.Math.exp(((((a * (java.lang.Math.log(x))) + (b * (java.lang.Math.log((1.0 - x))))) - (java.lang.Math.log(a))) - (org.apache.commons.math.special.Beta.logBeta(a, b, epsilon, maxIterations))))) * 1.0) / (fraction.evaluate(x, epsilon, maxIterations));
+}
+}
+return ret;
+}
+
+public static double logBeta(double a, double b) {
+return org.apache.commons.math.special.Beta.logBeta(a, b, DEFAULT_EPSILON, java.lang.Integer.MAX_VALUE);
+}
+
+public static double logBeta(double a, double b, double epsilon, int maxIterations) {
+double ret;
+

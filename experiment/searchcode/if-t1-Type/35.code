@@ -1,0 +1,10 @@
+else if(!t1.isImportant()&amp;&amp;t2.isImportant() ) {
+return 1;
+}
+else{
+return compareType(t1,t2);
+i = t1.getType().compareTo(t2.getType());
+if(i==0){
+if(t1.getType().equals(TASK_TYPE.DEADLINE)){
+return compareDeadline(t1,t2);
+

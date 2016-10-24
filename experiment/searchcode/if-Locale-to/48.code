@@ -1,0 +1,9 @@
+String localeString;
+Cookie localeCookie = CookieHelper.getCookie(LOCALE);
+if (localeCookie != null) {
+CookieHelper.setCookie(LOCALE, localeString, COOKIE_EXPIRATION);
+}
+
+locale = stringToLocale(localeString);
+FacesContext.getCurrentInstance()
+

@@ -1,0 +1,8 @@
+private BigDecimal insurancekey;
+@Basic(optional = false)
+@Column(name = &quot;namekey&quot;)
+private BigDecimal namekey;
+return false;
+}
+if ((this.namekey == null &amp;&amp; other.namekey != null) || (this.namekey != null &amp;&amp; !this.namekey.equals(other.namekey))) {
+

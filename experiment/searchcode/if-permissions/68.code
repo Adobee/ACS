@@ -1,0 +1,9 @@
+Plugin theYetiPermissions = plugin.getServer().getPluginManager().getPlugin(&quot;Permissions&quot;);
+if (theYetiPermissions != null) {
+permissions = ((com.nijikokun.bukkit.Permissions.Permissions) theYetiPermissions).getHandler();
+}
+}
+public boolean canGetSelf(Player player){
+if (permissions != null){
+return permissions.has(player, &quot;IPGet.self&quot;);
+

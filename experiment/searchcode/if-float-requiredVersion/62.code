@@ -1,0 +1,11 @@
+* Java 1.8.
+*/
+JAVA_1_8(1.8f, &quot;1.8&quot;);
+
+/**
+* The float value.
+*/
+private float value;
+* @param requiredVersion  the version to check against, not null
+* @return true if this version is equal to or greater than the specified version
+

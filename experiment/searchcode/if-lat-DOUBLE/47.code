@@ -1,0 +1,11 @@
+public final static double R = 6371000; // m
+
+public double calcDist(double fromLat, double fromLon, double toLat, double toLon)
+{
+double dLat = toRadians(toLat - fromLat);
+double delta_lon = b_lon - a_lon;
+double delta_lat = b_lat - a_lat;
+
+if (delta_lat == 0)
+// special case: horizontal edge
+

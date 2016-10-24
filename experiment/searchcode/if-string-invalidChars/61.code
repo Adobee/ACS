@@ -1,0 +1,7 @@
+public void validate(String symbolStr) throws InvalidNumeralException {
+Matcher matcher = pattern.matcher(symbolStr);
+ArrayList<String> invalidChars = new ArrayList<String>();
+
+while(matcher.find()){
+invalidChars.add(matcher.group());
+

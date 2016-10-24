@@ -1,0 +1,13 @@
+public CyclicBehaviour(BehaviourHolderInterface o, long delay) {
+super(o, delay);
+}
+
+private boolean done;
+
+public void makeAction() {
+action();
+if (!isDone()) {
+put();
+} else {
+// owner.removeBehaviour(this);
+

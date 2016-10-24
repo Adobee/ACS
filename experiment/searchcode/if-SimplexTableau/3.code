@@ -1,0 +1,9 @@
+public class SimplexTableauSynchronizerArtificialBasis implements SimplexTableauSynchronizer, LPListener {
+
+protected LP lp;
+protected SimplexTableau tableau;
+tableau = new SimplexTableau(lp);
+int index = 0;
+for (LPColumn column : lp.getColumns()) {
+if (column.isArtificial()) tableau.getBasicVariables().add(index++);
+

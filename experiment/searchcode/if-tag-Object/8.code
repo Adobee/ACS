@@ -1,0 +1,7 @@
+public class StoreTagParser extends MatjiDataParser {
+public StoreTag getMatjiData(JsonObject object) throws MatjiException {
+if (object == null) return null;
+
+StoreTag storeTag = new StoreTag();
+storeTag.setId(getInt(object, &quot;id&quot;));
+

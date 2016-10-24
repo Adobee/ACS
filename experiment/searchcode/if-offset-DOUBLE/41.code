@@ -1,0 +1,13 @@
+private int _offset;
+
+
+public DoubleArrayPointer ( final double[] array, final int offset )
+{
+_array = array;
+setOffset( offset );
+}
+
+public double get( final int index )
+{
+return _array[ _offset + index ];
+

@@ -1,0 +1,7 @@
+public EqualsBuilder append(Object lhs, Object rhs) {
+if (lhs == null) eq = eq &amp;&amp; (rhs == null);
+else eq = eq &amp;&amp; lhs.equals(rhs);
+public EqualsBuilder append(float[] lhs, float[] rhs) {
+if (lhs == null) eq = eq &amp;&amp; (rhs == null);
+else if (rhs == null || lhs.length != rhs.length) eq = false;
+

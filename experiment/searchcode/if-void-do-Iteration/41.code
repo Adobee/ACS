@@ -1,0 +1,12 @@
+super(iterationStrategyStack);
+}
+
+@Override
+protected void doEditAction(IterationStrategyStack iterationStrategyStack) {
+oldIterationStrategyStack.addAll(iterationStrategyStack);
+iterationStrategyStack.clear();
+}
+
+@Override
+public void undoEditAction(IterationStrategyStack iterationStrategyStack) {
+

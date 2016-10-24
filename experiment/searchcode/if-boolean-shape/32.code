@@ -1,0 +1,12 @@
+public List<CollidingShape> getShapes() {
+return new ArrayList<CollidingShape>(shapes);
+}
+
+@Override
+public boolean collides(CollidingShape shape) {
+return shape.collidesCompoundShape(this);
+}
+
+@Override
+public boolean collidesCircle(Circle circle) {
+

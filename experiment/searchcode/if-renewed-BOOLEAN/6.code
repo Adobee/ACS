@@ -1,0 +1,12 @@
+private volatile boolean renewed = false;
+private volatile List<BigInteger> numbers;
+
+public Fibonacci() {
+public synchronized void print() {
+int counter = 0;
+try {
+while (! renewed) {
+wait();
+counter++;
+if (counter < numbers.size()-1) {
+

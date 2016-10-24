@@ -1,0 +1,11 @@
+String b = base.toString();
+if (!b.endsWith(&quot;/&quot;)) b += &quot;/&quot;;
+String r = relative.getRawPath();
+if (r.startsWith(&quot;/&quot;))
+return UriBuilder.fromUri(baseURI);
+}
+
+public MultivaluedMap<String, String> getPathParameters()
+{
+if (pathParameters == null)
+

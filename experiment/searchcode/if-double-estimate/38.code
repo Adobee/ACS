@@ -1,0 +1,8 @@
+Estimate estimate = estimateDao.findById(id);
+if (estimate != null) {
+Society model = estimate.getCustomer().getSociety();
+* {@inheritDoc}
+*/
+@Override
+public Map<Double, List<EstimateBean>> findNotTransferredEstimates(SocietyBean society) {
+

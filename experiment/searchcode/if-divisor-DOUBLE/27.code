@@ -1,0 +1,14 @@
+return this.dividend;
+}
+
+@Override
+public void setDivisor(int divisor) {
+
+if (divisor == 0) throw new IllegalArgumentException(&quot;Divisor cannot be zero&quot;);
+return this.divisor;
+}
+
+@Override
+public double value() {
+return (double) this.dividend / this.divisor;
+

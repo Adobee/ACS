@@ -1,0 +1,12 @@
+this.excludedUrls = excludedUrls;
+}
+
+public boolean isExcluded(String path) {
+return excludedUrls.isMatch(path);
+}
+
+public boolean isExcluded(HttpServletRequest request) {
+return excludedUrls.isMatch(request);
+}
+}
+

@@ -1,0 +1,12 @@
+public void setSamplesLabels(ArrayList<SamplesLabels> labelsList){
+if (labelsList == null) {
+if (samplesDatasets != null){
+for (int d=0; d < samplesDatasets.size(); d++){
+samplesDatasets = new ArrayList<SamplesDataset>();
+}
+samplesDatasets.add(newDataset);
+}
+
+public SamplesDataset get(int index){
+if (samplesDatasets == null || index>= samplesDatasets.size()) return null;
+

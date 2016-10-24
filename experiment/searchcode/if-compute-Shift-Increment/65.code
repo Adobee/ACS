@@ -1,0 +1,11 @@
+* @return true if the XOR result is 1, false if it is 0
+*/
+private boolean computeByteXor(int value) {
+value ^= (value >> 4);
+setZero((x &amp; 0xff) == 0);
+incrementPc();
+}
+
+/**
+* Performs a SL0 (shift left and fill with 0) operation
+

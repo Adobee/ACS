@@ -1,0 +1,12 @@
+public Pair(final T first, final T second) {
+this.first = first;
+this.second = second;
+
+if (!isLowerEqual()) {
+throw new RuntimeException(String.format(&quot;First: %s, second: %s, not lowereq&quot;, first.toString(), second.toString()));
+}
+}
+
+public boolean isLower() {
+return first.compareTo(second) < 0;
+

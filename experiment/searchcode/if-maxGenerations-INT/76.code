@@ -1,0 +1,9 @@
+/** Maximum number of generations (stopping criteria) */
+private final int maxGenerations;
+
+/**
+* Create a new FixedGenerationCount instance.
+public FixedGenerationCount(final int maxGenerations) {
+if (maxGenerations <= 0) {
+throw new NumberIsTooSmallException(maxGenerations, 1, true);
+

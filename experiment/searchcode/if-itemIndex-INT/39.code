@@ -1,0 +1,9 @@
+this.icons[i] = par1IconRegister.registerIcon(Reference.MOD_ID + &quot;:&quot; + ItemIndex.CRYSTAL_NAME + subNames[i]);
+}
+}
+
+public Icon getIconFromDamage(int par1)
+public void addInformation(ItemStack stack, EntityPlayer player, List list, boolean par1){
+if(stack.stackTagCompound != null){
+if(stack.stackTagCompound.getInteger(ItemIndex.CRYSTAL_INTELLIGENCE_NAME) > 0)list.add(&quot;Intelligence: &quot; + stack.stackTagCompound.getInteger(ItemIndex.CRYSTAL_INTELLIGENCE_NAME));
+

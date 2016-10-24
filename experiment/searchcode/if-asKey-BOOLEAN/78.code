@@ -1,0 +1,7 @@
+public class CommandWithDefaultFallback extends HystrixCommand<String> {
+
+private final boolean throwException;
+
+public CommandWithDefaultFallback(boolean throwException) {
+super(HystrixCommandGroupKey.Factory.asKey(&quot;ExampleGroup&quot;));
+

@@ -1,0 +1,10 @@
+object.setFName(getString(&quot;FName&quot;, &quot;&quot;));
+object.setFFunctionUrl(getString(&quot;FFunctionUrl&quot;, &quot;&quot;));
+object.setFSort(getInt(&quot;FSort&quot;, 0));
+TAppFunction functionObj = service.saveOrUpdate(object);
+if(functionObj==null)
+{
+message.setSuccess(false);
+}else {
+message.setSuccess(true);
+

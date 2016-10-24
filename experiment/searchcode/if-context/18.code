@@ -1,0 +1,10 @@
+package com.e3.bizamo.services.context;
+
+public class ServiceExecutionContext {
+private static ThreadLocal<RequestContext> requestContextOfThread = new ThreadLocal<RequestContext>();
+RequestContext context = requestContextOfThread.get();
+if (context==null) {
+context = createRequestContext();
+}
+return context;
+

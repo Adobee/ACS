@@ -1,0 +1,5 @@
+PsiDirectory baseDir = PsiDirectoryFactory.getInstance(project).createDirectory(project.getBaseDir());
+if (isAndroidProject(baseDir)) {
+PsiDirectory moduleDir = baseDir.findSubdirectory(moduleName);
+if (moduleDir != null &amp;&amp; moduleDir.isDirectory()) {
+

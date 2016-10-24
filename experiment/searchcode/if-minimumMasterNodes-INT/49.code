@@ -1,0 +1,9 @@
+private final NodeComparator nodeComparator = new NodeComparator();
+
+private volatile int minimumMasterNodes;
+
+@Inject
+public ElectMasterService(Settings settings, Version version) {
+this.minMasterVersion = version.minimumCompatibilityVersion();
+this.minimumMasterNodes = settings.getAsInt(DISCOVERY_ZEN_MINIMUM_MASTER_NODES, -1);
+

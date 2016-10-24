@@ -1,0 +1,16 @@
+private double ybar;
+private final boolean hasIntercept;
+
+public SimpleRegression() {
+this(true);
+}
+
+public SimpleRegression(boolean includeIntercept) {
+this.ybar = 0.0D;
+
+this.hasIntercept = includeIntercept;
+}
+
+public void addData(double x, double y) {
+if (this.n == 0L) {
+

@@ -1,0 +1,5 @@
+public ColorImage generateIntermediateFootballImage(ColorImage[] depthImages, int initialStep, int currentStep, int finalStep, double initialScale, double finalScale, int initialX, int finalX, int initialY, int finalY) {
+int currentFrameNumber = ((depthImages.length - 1) * (currentStep - initialStep)) / (finalStep - initialStep);
+ColorImage football = depthImages[currentFrameNumber];
+double scale = initialScale + ((finalScale - initialScale) * (double)(currentStep - initialStep)) / (double)(finalStep - initialStep);
+

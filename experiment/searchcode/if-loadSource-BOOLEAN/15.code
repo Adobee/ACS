@@ -1,0 +1,8 @@
+public Source loadSource(String url, boolean useCache) throws IOException {
+Source source = null;
+if (useCache) {
+source = getFromCache(url);
+}
+if (source == null) {
+source = resolver.loadSource(url, useCache);
+

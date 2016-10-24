@@ -1,0 +1,6 @@
+AnalyzedTextRequest request = context.getFetchSubPhaseContext(CONTEXT_FACTORY).getRequest();
+Analyzer analyzer = null;
+boolean closeAnalyzer = false;
+List<String> tokens = simpleAnalyze(analyzer, text, request.field());
+if (closeAnalyzer) {
+

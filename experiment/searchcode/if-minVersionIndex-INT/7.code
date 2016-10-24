@@ -1,0 +1,7 @@
+for (Field field : declaredFields) {
+final int mod = field.getModifiers();
+if (Modifier.isStatic(mod) &amp;&amp; Modifier.isFinal(mod) &amp;&amp; Modifier.isPublic(mod)) {
+int minVersionIndex = 0;
+if (minVersion != null) {
+minVersionIndex = SORTED_VERSIONS.indexOf(minVersion);
+

@@ -1,0 +1,20 @@
+public double getZ() {
+return z;
+}
+
+public void setZ(double z) {
+this.z = z;
+}
+
+public R3(double x, double y, double z) {
+this(v.x, v.y, v.z);
+}
+
+public R3 scale(double c) {
+
+x *= c;
+y *= c;
+z *= c;
+
+return this;
+

@@ -1,0 +1,7 @@
+exactRight[j][k][l] = (int) exact[j][k][l];
+if (j != k)
+exactRight[j][k][l] += exactRight[j + 1][k][l];
+notExact[j][k][l] = exactRight[j][k][l];
+if (j != k)
+notExact[j][k][l] += notExact[j][k - 1][l];
+

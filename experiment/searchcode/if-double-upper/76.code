@@ -1,0 +1,8 @@
+public class UniformDistribution implements Distribution {
+
+private double lowerBound;
+private double upperBound;
+private Random random;
+
+public UniformDistribution(double lowerBound, double upperBound) {
+

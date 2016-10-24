@@ -1,0 +1,16 @@
+* @date 2016/4/11
+*/
+public class Vector {
+
+private final float[] tmpMatrix = new float[9];
+
+private volatile float x = 0f;
+public void set(Vector v) {
+if (null == v)
+return;
+set(v.x, v.y, v.z);
+}
+
+public void set(float[] array) {
+if (null == array || 3 != array.length)
+

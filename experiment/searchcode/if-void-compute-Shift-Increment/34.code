@@ -1,0 +1,16 @@
+return (immediate ? (x &amp; 0xff) : getRegisterValue(x));
+}
+
+/**
+* Increments the PC register by 1.
+*/
+void incrementPc() {
+setPc(getPc() + 1);
+setZero((temp &amp; 0xff) == 0);
+setCarry(computeByteXor(temp));
+incrementPc();
+}
+
+/**
+* Performs a COMPARE operation
+

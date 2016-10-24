@@ -1,0 +1,11 @@
+public boolean removeDirectory(File directory) {
+
+if (directory == null)
+return false;
+if (!directory.exists())
+return true;
+if (!directory.isDirectory())
+return false;
+
+String[] list = directory.list();
+

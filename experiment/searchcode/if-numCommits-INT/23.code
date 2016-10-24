@@ -1,0 +1,8 @@
+//returns numCommits newest commits ordered from oldest -> recent
+public List<Commit> getCommits(int numCommits) throws IOException, IllegalAccessException, IllegalArgumentException, InvocationTargetException {
+Deque<Commit> commits = Queues.newArrayDeque();
+List<RepositoryCommit> githubCommits = githubDao.queryCommits(owner, repo, branch);
+
+int max;
+if((numCommits < 0) || (numCommits > githubCommits.size()))
+

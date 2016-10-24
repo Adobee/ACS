@@ -1,0 +1,9 @@
+public static String parseMilliSeconds(long millis) {
+long seconds = (millis / 1000) % 60;
+long minutes = millis / 60000;
+String minutesString = &quot;&quot;;
+String secondsString = &quot;&quot;;
+
+if (minutes < 10) {
+minutesString = &quot;0&quot; + minutes;
+

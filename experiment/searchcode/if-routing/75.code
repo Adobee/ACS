@@ -1,0 +1,15 @@
+import org.apache.commons.codec.language.DoubleMetaphone;
+
+public class RoutingGenerator
+{
+DoubleMetaphone metaphone;
+TextNormalizer tn;
+
+public RoutingGenerator()
+String routingKey = metaphone.encode(tn.filterString(keyword));
+if (routingKey != null)
+{
+if (routingKey.length() > 29)
+{
+return routingKey.substring(0, 29);
+

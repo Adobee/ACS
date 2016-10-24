@@ -1,0 +1,8 @@
+private static final Vector<String> values = new Vector<String>();
+static{
+for(HttpMethod t: HttpMethod.values()){
+values.add(t.toString());
+public static HttpMethod get(String s, HttpMethod def){
+for(HttpMethod t: HttpMethod.values()){
+if( t.toString().equals(s) )
+

@@ -1,0 +1,7 @@
+private volatile boolean destructiveRequiresName;
+
+// TODO: Turn into a component that can be reused and wired up into all the transport actions where
+this.logger = logger;
+destructiveRequiresName = settings.getAsBoolean(DestructiveOperations.REQUIRES_NAME, false);
+nodeSettingsService.addListener(this);
+

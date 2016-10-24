@@ -1,0 +1,14 @@
+static int Y;
+static int prevY;
+static int shift;
+int x = 10;
+public Shift(double[] points){
+shift = shifter(points);
+* @return the shift amount needed
+*/
+int shifter(double[] points){
+prevY = Y;
+Y = (int) points[1];
+
+if(physics.Projectile.outOfScreen){ 				// if out of screen
+

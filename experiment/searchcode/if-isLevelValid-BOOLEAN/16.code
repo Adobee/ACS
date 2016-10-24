@@ -1,0 +1,9 @@
+@Override
+public Object getFieldValue(final String fieldName) {
+if (fieldName.equals(&quot;name&quot;)) {
+return WakfuTranslator.getInstance().getString(77, dungeon.getInstanceId(), new Object[0]);
+}
+
+public boolean isLevelValid() {
+final short level = WakfuGameEntity.getInstance().getLocalPlayer().getLevel();
+

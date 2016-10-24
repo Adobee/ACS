@@ -1,0 +1,12 @@
+class ConditionalStatements
+{
+public static void main(String[]args)
+{
+int x= -5, y=1;
+
+if (x==0 &amp;&amp; y==0)
+System.out.println(&quot;1st quadrant&quot;);
+else if (x<0 &amp;&amp; y>0)
+System.out.println(&quot;2nd quadrant&quot;);
+else if (x<0 &amp;&amp; y<0)
+

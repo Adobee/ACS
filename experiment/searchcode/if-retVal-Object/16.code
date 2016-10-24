@@ -1,0 +1,7 @@
+public static List getList(Map map, Object key) { return (List)map.get(key); }
+public static Object lookup(Object c, String exp) {
+Object retval = c;
+for (int i=0; i < accesskeys.length; i++) {
+Object curkey = accesskeys[i];
+if (retval instanceof Map) {
+

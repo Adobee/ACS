@@ -1,0 +1,10 @@
+public ClassMatcher(String inputPattern)
+{
+String pattern = inputPattern.trim();
+if ( pattern.contains( &quot;*&quot; ) ) {
+pattern = pattern.substring(0, pattern.length()-1 );
+}
+pattern = pattern.replaceAll(&quot;\\.&quot;,&quot;/&quot;);
+
+if ( isWildcard ) {
+

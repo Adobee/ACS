@@ -1,0 +1,9 @@
+private String startkey = &quot;&quot;;
+private String endkey = &quot;&quot;;
+private double accuracy;
+public DetectedKey() {
+
+}
+public DetectedKey(String _startkey, String _endkey, double _accuracy) {
+startkey = _startkey;
+

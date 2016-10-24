@@ -1,0 +1,5 @@
+public class PartitionUtil {
+public static int calculatePartitionFromIntValue(long partitionCount, int intValue) {
+long maxValue = ((long)Integer.MAX_VALUE) * 2;
+long section = (maxValue / partitionCount);
+

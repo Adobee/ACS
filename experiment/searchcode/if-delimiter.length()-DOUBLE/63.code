@@ -1,0 +1,12 @@
+*  @param  delimiter  the delimiter.
+*/
+public void setDelimiter(String delimiter)
+{
+if (delimiter.length() != 1)
+throw new IllegalArgumentException( &quot;Delimiter must be a single character&quot; );
+for (int i = 0; i < delimiter.length(); i++)
+{
+char c = delimiter.charAt(i);
+
+if (maxDelimiter < c)
+

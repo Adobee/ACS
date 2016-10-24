@@ -1,0 +1,12 @@
+@Basic(optional = false)
+@Column(name = &quot;lev_varu&quot;)
+private double levVaru;
+@Basic(optional = false)
+@Column(name = &quot;lev_varuantal&quot;)
+public void setLevRantaantal(short levRantaantal) {
+this.levRantaantal = levRantaantal;
+}
+
+public double getLevVaru() {
+return levVaru;
+

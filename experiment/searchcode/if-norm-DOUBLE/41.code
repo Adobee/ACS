@@ -1,0 +1,15 @@
+assert a.getRowDimension() == b.getRowDimension();
+int size = a.getRowDimension();
+double cosine, sNorm, eNorm, se;
+int i;
+
+// get s * e
+eNorm += Math.pow(b.get(i, 0), 2);
+}
+eNorm = Math.sqrt(eNorm);
+
+if(se < 0)
+se = 0 - se;
+
+cosine = se / (eNorm * sNorm);
+

@@ -1,0 +1,13 @@
+for (int y = x; y < u; y += x) {
+k[y] *= 2;
+}
+}
+
+long ans = 0;
+
+boolean[] p = NTLib.simpleSieve(u);
+for (int i = 5; i < u; i++) {
+if (p[i]) {
+long q2 = (long) i * i;
+for (long x = i; x < u &amp;&amp; x > 0; x *= q2) {
+

@@ -1,0 +1,11 @@
+public static long httpDownload(String httpUrl, String saveFile, String baseUrl) {
+return httpDownload(httpUrl, saveFile, null, baseUrl);
+}
+
+public static long httpDownload(String httpUrl, String saveFile) {
+public static long httpDownload(String httpUrl, String saveFile, Integer timeout, String baseUrl) {
+File sf = new File(saveFile);
+if (sf.exists())
+return sf.length();
+if (sf.getParentFile() != null &amp;&amp; !sf.getParentFile().exists()) {
+

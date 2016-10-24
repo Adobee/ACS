@@ -1,0 +1,17 @@
+return loop;
+}
+
+public boolean check(Digraph dg)
+{
+loop = null;
+for (Edge e : dg.edges()) {
+if (e.source() == e.target()) {
+loop = e;
+break;
+}
+}
+return loop == null;
+}
+
+}
+

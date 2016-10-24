@@ -1,0 +1,13 @@
+public IAHelper(Context context) {
+super(context);
+}
+
+public long createIA(IA ia) {
+if (this.getIAById(ia.getId()) != null) {
+return ia_id;
+}
+}
+
+public int updateIA(IA ia) {
+SQLiteDatabase db = this.getWritableDatabase();
+

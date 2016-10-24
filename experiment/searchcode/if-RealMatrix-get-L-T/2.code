@@ -1,0 +1,5 @@
+RealMatrix pre_sigmoid_activation=this.getW().transpose().multiply(v_sample).add(this.hbias);
+RealMatrix sigmoidterm=Scalar.sigmoid(pre_sigmoid_activation);
+RealMatrix pre_sigmoid_activation=this.getW().multiply(h_sample).add(this.vbias);
+RealMatrix sigmoidterm=Scalar.sigmoid(pre_sigmoid_activation);
+

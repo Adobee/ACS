@@ -1,0 +1,11 @@
+Iterator<Integer> it = list.iterator();
+while (it.hasNext()) {
+int x = it.next();
+max = Math.max(x, max);
+}
+
+double curRatio = 0.0D;
+g.setColor(Color.WHITE);
+curRatio = list.get(i) / (double) max;
+g.fillRect(curPos, (int) (unitHeight - curRatio * unitHeight)
+

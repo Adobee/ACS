@@ -1,0 +1,7 @@
+public V _get() throws InterruptedException, ExecutionException {
+V v = task.get();
+if (task instanceof WrapFutureTask) {
+WrapFutureTask runnableFuture = (WrapFutureTask) cache.get(cacheKey.toString());
+if (runnableFuture == null) {
+cache.put(cacheKey.toString(), task);
+

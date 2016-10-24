@@ -1,0 +1,7 @@
+@SuppressWarnings({&quot;UnusedDeclaration&quot;})
+public abstract class Function7 extends AbstractBlock implements IFunction7 {
+
+public Object invokeWithArgs(Object[] args) {
+if(args.length != 7) {
+throw new IllegalArgumentException(&quot;You must pass 7 args to this block, but you passed&quot; + args.length);
+

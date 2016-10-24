@@ -1,0 +1,8 @@
+public class EdgeCorrectnessFactory implements TopologicalScoreFactory {
+
+@Override
+public TopologicalScore make(Map<String, Object> params) {
+double alpha = 0.5;
+if(params.containsKey(&quot;alpha&quot;)) {
+alpha = (params.get(&quot;alpha&quot;) instanceof Double) ? (Double)params.get(&quot;alpha&quot;) : Double.parseDouble(params.get(&quot;alpha&quot;).toString());
+

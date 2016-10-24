@@ -1,0 +1,8 @@
+public Vector3D(final float[] values) {
+super(values);
+
+if (values.length < 3) {
+throw new IllegalArgumentException(&quot;Invalid values&quot;);
+public static boolean equals(final Vector3D lhs, final Vector3D rhs, final float delta) {
+return (Math.abs(lhs.x - rhs.x) <= delta)
+

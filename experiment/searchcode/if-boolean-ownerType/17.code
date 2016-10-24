@@ -1,0 +1,12 @@
+public boolean equals(Object obj)
+{
+if (!(obj instanceof ParameterizedType))
+return false;
+int result = rawType.hashCode() ^ Arrays.hashCode(actualTypeArguments);
+if (ownerType != null)
+result ^= ownerType.hashCode();
+return result;
+}
+
+@Override
+

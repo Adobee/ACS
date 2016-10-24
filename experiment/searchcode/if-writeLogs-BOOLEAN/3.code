@@ -1,0 +1,11 @@
+private static volatile boolean writeLogs;
+
+static {
+writeDebugLogs = false;
+writeLogs = true;
+writeDebugLogs = writeDebugLogs;
+}
+
+public static void writeLogs(boolean writeLogs) {
+writeLogs = writeLogs;
+

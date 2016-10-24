@@ -1,0 +1,11 @@
+* Wrapper for extracted Long.
+*/
+public final class XPathLong {
+
+private final Long value;
+
+/**
+* Factory method.
+* Convinience method for getting the value of the XPathLong object,
+* returns null if object is null.
+

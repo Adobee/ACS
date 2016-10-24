@@ -1,0 +1,7 @@
+public static WorldGenerator from(WorldCreationSettings settings) {
+GeneratorType generator = settings.getGeneratorType();
+boolean useDefault = settings.getGeneratorType() == GeneratorTypes.DEFAULT;
+DimensionType dimension = settings.getDimensionType();
+
+if (generator == GeneratorTypes.OVERWORLD || (useDefault &amp;&amp; dimension == DimensionTypes.OVERWORLD)) {
+

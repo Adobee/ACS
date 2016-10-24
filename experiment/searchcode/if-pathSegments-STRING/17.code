@@ -1,0 +1,12 @@
+private List<String> pathSegments;
+
+private Uri uri;
+
+public UriQueryBuilder(final Uri uri) {
+public static SQLiteQueryBuilder fromUri(final Uri uri) {
+return new UriQueryBuilder(uri);
+}
+
+public String getTable() {
+if (isDirectory()) {
+

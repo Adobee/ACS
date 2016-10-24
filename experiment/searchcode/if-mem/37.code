@@ -1,0 +1,7 @@
+String action = req.getParameter(&quot;action&quot;);
+//新增-------------------------------------------------------------------------------------
+if (&quot;insertMem&quot;.equals(action)) {
+/***********************1.接收請求參數 - 輸入格式的錯誤處理*************************/
+String mem_account = req.getParameter(&quot;mem_account&quot;).trim();
+if (mem_account == null || mem_account.trim().length() == 0) {
+

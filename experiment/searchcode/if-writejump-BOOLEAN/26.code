@@ -1,0 +1,17 @@
+super(left, token, right);
+}
+
+@Override
+public int getPatternType()
+{
+return OR;
+}
+
+@Override
+public boolean isExhaustive()
+public IPattern resolve(MarkerList markers, IContext context)
+{
+super.resolveChildren(markers, context);
+
+if (this.left.isExhaustive())
+

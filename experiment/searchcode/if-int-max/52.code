@@ -1,0 +1,13 @@
+int curMax = 1;
+for (int i = 0; i < A.length; i++) {
+curMax *= A[i];
+if (curMax > max) {
+max = curMax;
+}
+if (curMax == 0) {
+curMax = 1;
+}
+}
+curMax = 1;
+for (int i = A.length - 1; i >= 0; i--) {
+

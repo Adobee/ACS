@@ -1,0 +1,14 @@
+public double q0;	// Scalar Component
+/**
+* x component (i)
+*/
+public double q1;	// i (x)
+/**
+* y component (j)
+*/
+public double q2;	// j (y)
+q2 = s * (m.m31 - m.m13);
+q3 = s * (m.m12 - m.m21);
+} else if ((m.m11 > m.m22) &amp;&amp; (m.m11 > m.m33)) {
+q1 = Math.sqrt(1.0 + m.m11 - m.m22 - m.m33) * 0.5;
+

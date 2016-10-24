@@ -1,0 +1,13 @@
+public RegionInvert(List<Region> inverted) {
+this.inverted = inverted;
+}
+
+@Override
+public boolean contains(Vector point) {
+for (Region region : inverted)
+if (region.contains(point))
+return false;
+return true;
+}
+}
+

@@ -1,0 +1,16 @@
+public Object generate(Object[] parameters)
+{
+double weight = .5;
+if (parameters.length == 1)
+{
+weight = (Double)parameters[0];
+}
+if (getRandom().nextDouble() < weight)
+return 1;
+else
+return 0;
+}
+
+@Override
+public double calculateLogLikelihood(Object result, Object[] parameters)
+

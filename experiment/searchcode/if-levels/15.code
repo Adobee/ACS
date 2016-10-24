@@ -1,0 +1,8 @@
+public int minimumTotal(ArrayList<ArrayList<Integer>> triangle) {
+if (triangle == null || triangle.size() == 0)
+return 0;
+
+int[] levels = new int[triangle.size()];
+int[] nextLevels = new int[triangle.size()];
+levels[0] = triangle.get(0).get(0);
+

@@ -1,0 +1,6 @@
+ConnectivityManager cm = (ConnectivityManager) context.getSystemService(&quot;connectivity&quot;);
+NetworkInfo wifiNetwork = cm.getNetworkInfo(1);
+if (wifiNetwork != null &amp;&amp; wifiNetwork.isConnected()) {
+NetworkInfo mobileNetwork = cm.getNetworkInfo(0);
+if (mobileNetwork != null &amp;&amp; mobileNetwork.isConnected()) {
+

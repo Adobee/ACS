@@ -1,0 +1,7 @@
+public LocalDate convertToEntityAttribute(Date date) {
+if (date != null) {
+return date.toLocalDate();
+public Date convertToDatabaseColumn(LocalDate localDate) {
+if (localDate != null) {
+return Date.valueOf(localDate);
+

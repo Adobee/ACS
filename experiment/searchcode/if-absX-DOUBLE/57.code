@@ -1,0 +1,17 @@
+public static double calcangle(int x, int y)
+{
+int absx = Math.abs(x);
+int absy = Math.abs(y);
+if(x==0)
+{
+if(y>0){
+return 90;
+}
+if(y<0){
+return 270;
+}
+}
+if(x>0){
+if(y>0){
+return Math.atan(absy/absx)*(180/Math.PI);
+

@@ -1,0 +1,13 @@
+Quadrant toRet = this;
+if(isUnit()) {
+this.value = value;
+} else {
+toRet = new BranchQuadrant(xRange, yRange, this.value);
+break;
+}
+}
+}
+}
+if(collapse) {
+toRet = new LeafQuadrant(xRange, yRange, value);
+

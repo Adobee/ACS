@@ -1,0 +1,18 @@
+public int backPack(int m, int[] A)
+{
+boolean[] canFill = new boolean[m + 1];
+
+canFill[0] = true;
+canFill[j] = canFill[j] || canFill[j - A[i]];
+}
+}
+
+for (int i = m; i >= 0; i--)
+{
+if (canFill[i]) return i;
+}
+
+return 0;
+}
+}
+

@@ -1,0 +1,6 @@
+public void genAssignment(Type type, Context ctx, TabbedWriter out, Expression arg1, Expression arg2, String arg3) {
+// if the lhs is non-nullable but the rhs is nullable, we have a special case
+Type lhsType = lhs.getType();
+Type rhsType = rhs.getType();
+if ( rhsType != null &amp;&amp; TypeUtils.getTypeKind( rhsType ) == TypeUtils.TypeKind_BYTES
+

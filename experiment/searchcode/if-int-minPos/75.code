@@ -1,0 +1,10 @@
+public void switchCollapsed(float minPos, float maxPos) {
+if (getSplitPosition()==minPos){
+setSplitPosition(maxPos, unit);
+public float getMinPos() {
+return minPos;
+}
+
+public void setMinPos(int minPos) {
+this.minPos = minPos;
+

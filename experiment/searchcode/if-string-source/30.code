@@ -1,0 +1,12 @@
+import java.util.Iterator;
+
+/**
+* Something that produces a sequence of StringS.
+*/
+public final class StringSource
+extends AbstractStringSource
+{
+final Iterator<ForkedString> inner;
+
+private StringSource(String source, URItoInputStream streamer, AuthenticationSource auth) {
+

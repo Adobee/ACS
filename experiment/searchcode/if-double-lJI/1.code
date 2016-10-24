@@ -1,0 +1,7 @@
+final double[] lJ = lTData[j];
+final double lIJ = lI[j];
+final double lJI = lJ[i];
+final double maxDelta = relativeSymmetryThreshold * (java.lang.Math.max(java.lang.Math.abs(lIJ), java.lang.Math.abs(lJI)));
+if ((java.lang.Math.abs((lIJ - lJI))) > maxDelta) {
+throw new org.apache.commons.math.linear.NotSymmetricMatrixException();
+

@@ -1,0 +1,10 @@
+// return null;
+}
+
+@Override
+public boolean matches(CharSequence rawPassword, String encodedPassword) {
+if (StringUtils.isEmpty(encodedPassword) || rawPassword == null) {
+return false;
+}
+return encodedPassword.equals(encode(rawPassword));
+

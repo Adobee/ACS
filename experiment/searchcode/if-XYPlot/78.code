@@ -1,0 +1,10 @@
+import com.androidplot.xy.XYPlot;
+
+import android.os.Bundle;
+import android.app.Activity;
+import android.graphics.Color;
+import android.view.Menu;
+
+public class MainActivity extends Activity {
+XYPlot mySimpleXYPlot;
+

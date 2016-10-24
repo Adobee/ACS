@@ -1,0 +1,6 @@
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.title.TextTitle;
+//categoryplot.getDomainAxis().setMaxCategoryLabelWidthRatio(10.0f);
+if(categoryplot.getCategories().size() < 5)
+

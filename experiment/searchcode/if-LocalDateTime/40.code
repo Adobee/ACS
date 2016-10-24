@@ -1,0 +1,8 @@
+package hr.cleancode.calendar;
+
+import org.joda.time.LocalDateTime;
+
+public class CalendarItem implements Comparable<CalendarItem>{
+private LocalDateTime eventStart;
+private LocalDateTime eventEnd;
+

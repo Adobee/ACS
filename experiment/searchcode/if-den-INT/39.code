@@ -1,0 +1,16 @@
+import java.util.*;
+class Ratio
+{
+private int num,den;
+public Ratio()
+{}
+public Ratio(int num,int den)
+r.simplify();
+return r;
+}
+void simplify()
+{
+for(int i=2;i<=den;i++)
+{
+if(num%i==0 &amp;&amp; den%i==0)
+

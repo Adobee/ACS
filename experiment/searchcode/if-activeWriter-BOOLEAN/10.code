@@ -1,0 +1,10 @@
+private Condition firstWriter = lock.newCondition();
+private int activeReaders = 0;
+private boolean activeWriter = false;
+
+public void startReading() throws InterruptedException {
+public void finishWriting() {
+lock.lock();
+activeWriter = false;
+if (lock.hasWaiters(readers)) {
+

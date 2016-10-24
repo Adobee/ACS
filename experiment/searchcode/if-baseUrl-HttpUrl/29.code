@@ -1,0 +1,7 @@
+public HttpTemplate(String baseUrl) {
+this(createUnsafeOkHttpClient(), new Deserializer(), HttpUrl.parse(baseUrl));
+}
+
+HttpTemplate(OkHttpClient httpClient, Deserializer deserializer, HttpUrl baseUrl) {
+this.httpClient = httpClient;
+

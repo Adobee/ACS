@@ -1,0 +1,7 @@
+if ( (classNode.access &amp; Opcodes.ACC_PUBLIC) == 1){
+for (FieldNode fieldNode : classNode.fields){
+if (fieldNode.desc.equals(String.format(&quot;L%s;&quot;, instance.getClassName(&quot;Cache&quot;)))){
+cacheType++;
+}
+if ( (fieldNode.desc.equals(&quot;Ljava/lang/String;&quot;))
+

@@ -1,0 +1,10 @@
+* @result true: in; false: out
+* */
+public static boolean insidePolygon(PointD[] points, PointD point) {
+if (points == null || point == null || points.length == 0) { // 参数验证
+int n = points.length;
+int i, j;
+boolean result = false;
+PointD p1, p2;
+for (i = 0, j = n - 1; i < n; j = i++) {
+

@@ -1,0 +1,9 @@
+import java.util.concurrent.atomic.AtomicReference;
+
+import org.jboss.netty.channel.ChannelEvent;
+import org.jboss.netty.channel.ExceptionEvent;
+class TimedFilteringChannelEventFuture<T extends ChannelEvent> implements
+TimedFuture<T>, ChannelEventSink<T> {
+
+private final Predicate<T>	                 filter;
+

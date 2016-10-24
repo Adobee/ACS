@@ -1,0 +1,7 @@
+double absX = Math.abs(X);
+double absY = Math.abs(Y);
+//first
+if(X>0 &amp;&amp; Y>0)
+{
+if(absX<=this.Radius &amp;&amp; absY<=this.Radius)
+

@@ -1,0 +1,9 @@
+InetSocketAddress address = serverCnxnFactory.getLocalAddress();
+if (address == null) {
+return null;
+}
+int localPort = serverCnxnFactory.getLocalPort();
+InetSocketAddress clientPortAddress = super.getClientPortAddress();
+if (randomPort) {
+return randomPort(clientPortAddress);
+

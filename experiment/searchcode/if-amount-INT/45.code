@@ -1,0 +1,14 @@
+package places;
+
+
+public class Site {
+
+private int distance;
+private int amount;
+
+public Site (int distance) {
+public int reduceAmount(int i) {
+if (this.amount == 0) return -1;
+this.amount -= i;
+if (this.amount > 0) return i;
+

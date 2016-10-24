@@ -1,0 +1,8 @@
+public void initControlSettings() {
+Boolean isFileOfTheSettingsExist = checkWhetherFileOfTheControlSettingsExist();
+if (!isFileOfTheSettingsExist) createFileOfTheControlSettings();
+dataList = getDataListFromSettingsFile();
+
+int dataSize =  dataList.size();
+Boolean dataSizeIsEqualToZero = Collator.collateTo(dataSize, 0) == 0;
+

@@ -1,0 +1,10 @@
+public Bitmap transform(Bitmap source) {
+int targetWidth, targetHeight;
+double aspectRatio;
+
+if (source.getWidth() > source.getHeight()) {
+targetHeight = (int) (targetWidth * aspectRatio);
+} else {
+targetHeight = maxHeight;
+aspectRatio = (double) source.getWidth() / (double) source.getHeight();
+

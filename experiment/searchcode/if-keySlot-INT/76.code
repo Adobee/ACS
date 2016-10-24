@@ -1,0 +1,7 @@
+private static byte[] processBulkReply(final RedisInputStream is) {
+final int len = is.readIntCrLf();
+if (len == -1) {
+while (offset < len) {
+final int size = is.read(read, offset, (len - offset));
+if (size == -1) throw new JedisConnectionException(
+

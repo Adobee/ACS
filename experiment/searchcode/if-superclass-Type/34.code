@@ -1,0 +1,5 @@
+public static Class<?> getGenericTypeClass(Class<?> clazz, int index) {
+Class<?> superClass = clazz.getSuperclass();
+Type genericSuperClass = clazz.getGenericSuperclass();
+while (!(genericSuperClass instanceof ParameterizedType)) {
+

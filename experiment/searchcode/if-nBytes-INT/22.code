@@ -1,0 +1,18 @@
+private int store;
+
+private int nBytes;
+
+public XYZMessageDigest() {
+super(&quot;XYZ&quot;);
+engineReset();
+}
+
+public void engineUpdate(byte b) {
+break;
+}
+nBytes++;
+if (nBytes == 4) {
+hash = hash ^ store;
+nBytes = 0;
+store = 0;
+

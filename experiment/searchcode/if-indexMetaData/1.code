@@ -1,0 +1,9 @@
+private Map<String, ColumnMetadata> columns = new LinkedHashMap<String, ColumnMetadata>();
+private List<String> primaryKey;
+private List<IndexMetadata> indexes = new ArrayList<IndexMetadata>();
+Iterator<IndexMetadata> iterator = indexes.iterator();
+
+while (iterator.hasNext()) {
+IndexMetadata indexMetadata = iterator.next();
+if (indexMetadata.getName().equals(index)) {
+

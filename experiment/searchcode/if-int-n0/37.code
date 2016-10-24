@@ -1,0 +1,9 @@
+* is if left n-1 bits has k adjacent 1 bits
+* so N0(n,k) = N(n-1,k) = N0(n-1,k) + N1(n-1,k)
+* if the last bit is 1, we can get AdjBC = k if
+* N1(n,k) = N0(n-1,k) + N1(n-1,k-1)
+*
+* NOTE: N(n,k) = N0(n,k) = N1(n,k) = 0 if k < 0 or k >= n
+* also
+* N1(1,0) = 1, N0(1,0) = 1, N(n,n-1) = 1 (all 1 bits)
+

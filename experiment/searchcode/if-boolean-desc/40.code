@@ -1,0 +1,16 @@
+public enum Validator {
+
+NOT_NULL(&quot;不允许为空&quot;) {
+@Override
+public <T> boolean validate(T t) {
+if (t instanceof String) {
+return t != null;
+}
+};
+
+public abstract <T> boolean validate(T t);
+
+private final String desc;
+
+private Validator(String desc) {
+

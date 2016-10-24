@@ -1,0 +1,7 @@
+* @since 22.10.2007 00:43:42 (c) 2007 jexp.de
+*/
+public class MutableBooleanExpression extends AbstractBooleanExpression {
+public <K> void process(final ExpressionProcessor<K> expressionProcessor) {
+if (hasValue()) {
+getBooleanExpression().process(expressionProcessor);
+

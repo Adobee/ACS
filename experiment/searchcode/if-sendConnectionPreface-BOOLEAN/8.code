@@ -1,0 +1,15 @@
+this.httpConnection = new HttpConnection(this.pool, this, this.socket);
+}
+
+boolean clearOwner()
+{
+synchronized (this.pool)
+{
+if (this.owner == null)
+return (this.spdyConnection == null) || (this.spdyConnection.isIdle());
+}
+
+boolean isReadable()
+{
+if (this.httpConnection != null)
+

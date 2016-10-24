@@ -1,0 +1,8 @@
+public Visitor addVisitor(Visitor visitor) throws DuplicateVisitorException {
+visitor.setUpdatedOn(new Date());
+checkIfVisitorAlreadyExist(visitor);
+return visitorRepository.save(visitor);
+}
+
+private void checkIfVisitorAlreadyExist(Visitor visitor) throws DuplicateVisitorException {
+

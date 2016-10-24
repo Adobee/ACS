@@ -1,0 +1,7 @@
+int bytesAvailable = in.available();
+if(bytesAvailable > bytesLeft) {
+bytesAvailable = bytesLeft;
+in.mark(readlimit);
+if(in.markSupported()) {
+bytesLeftAtMark = bytesLeft;
+

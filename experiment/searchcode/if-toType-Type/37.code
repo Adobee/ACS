@@ -1,0 +1,12 @@
+public static Object castValue(Object value, Type fromType, Type toType) {
+if (value == null) {
+return null;
+}
+
+if (fromType == toType) {
+return value;
+}
+
+// Cast the variable to the right type if necessary.
+if (fromType == Type.INTEGER &amp;&amp; toType == Type.DECIMAL) {
+

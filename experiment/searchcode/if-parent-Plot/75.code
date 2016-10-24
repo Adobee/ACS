@@ -1,0 +1,8 @@
+Image image;
+
+if (isCenter(i, j)) {
+plots[i][j] = new TownPlot(parent, i * PLOT_SIZE, j * PLOT_SIZE);
+image = new Image(&quot;mule/view/mountain.jpg&quot;, false);
+} else if (i == 0 || i == (MAP_WIDTH - 1)) {
+plots[i][j] = new RiverPlot(parent, i * PLOT_SIZE, j * PLOT_SIZE);
+

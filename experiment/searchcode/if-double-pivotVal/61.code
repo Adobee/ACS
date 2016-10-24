@@ -1,0 +1,6 @@
+final double rhs = tableau.getEntry(i, tableau.getWidth() - 1);
+final double entry = tableau.getEntry(i, col);
+if (MathUtils.compareTo(entry, 0, epsilon) > 0) {
+final double ratio = rhs / entry;
+if (MathUtils.equals(ratio, minRatio, epsilon)) {
+

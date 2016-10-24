@@ -1,0 +1,11 @@
+* @return true if <code>type</code> is assignable to
+* <code>toGenericArrayType</code>.
+*/
+private static boolean isAssignable(Type type, GenericArrayType toGenericArrayType,
+// all types are assignable to themselves
+if (toGenericArrayType.equals(type)) {
+return true;
+}
+
+Type toComponentType = toGenericArrayType.getGenericComponentType();
+

@@ -1,0 +1,10 @@
+} finally {
+if (jsonGenerator != null) {
+jsonGenerator.flush();
+}
+if (!jsonGenerator.isClosed()) {
+jsonGenerator.close();
+}
+if (out != null) {
+out.close();
+

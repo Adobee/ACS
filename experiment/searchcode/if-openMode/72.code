@@ -1,0 +1,16 @@
+if (topDocs.totalHits > 0) {
+indexWriterConfig.setOpenMode(OpenMode.APPEND);
+}
+
+if (getOpenMode(document) != OpenMode.APPEND) {
+System.out.println(&quot;add 文本索引:.....&quot;);
+TopDocs topDocs = indexSearcher.search(new TermQuery(new Term(&quot;path&quot;, document.getField(&quot;path&quot;).stringValue())), 1);
+
+if (topDocs.totalHits > 0) {
+return OpenMode.APPEND;
+}
+return OpenMode.CREATE_OR_APPEND;
+}
+
+}
+

@@ -1,0 +1,16 @@
+int dim = this.rows();
+
+AbstractDoubleSquareMatrix inv =  new DoubleSquareMatrix( dim );
+
+LUDecomposition lu = new LUDecomposition( this );
+for( int j = 0; j < dim; j++ )
+b[j] = 0.0;
+
+b[i] = 1.0;
+
+// Into a row of inv: fix later
+
+double[] row = lu.luSolve( b );
+
+for ( int j = 0; j < dim; j++ )
+

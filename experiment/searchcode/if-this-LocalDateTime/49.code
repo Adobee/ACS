@@ -1,0 +1,8 @@
+* ScalarType for Joda LocalDateTime. This maps to a JDBC Timestamp.
+*/
+public class ScalarTypeJodaLocalDateTime extends ScalarTypeBaseDateTime<LocalDateTime> {
+@Override
+public Object toJdbcType(Object value) {
+if (value instanceof LocalDateTime) {
+return new Timestamp(((LocalDateTime) value).toDateTime().getMillis());
+

@@ -1,0 +1,11 @@
+private static Storage SELF = null;
+private String latestTag;
+private String latestCommit;
+
+private Storage() {
+}
+
+public static synchronized Storage get() {
+if(SELF == null) {
+SELF = new Storage();
+

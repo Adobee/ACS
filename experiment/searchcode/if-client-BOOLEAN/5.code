@@ -1,0 +1,10 @@
+public List<DirectoryClientEntry> clientList = new ArrayList<DirectoryClientEntry>();
+
+public boolean addClient(DirectoryClientEntry client) {
+boolean duplicateEntry = false;
+public boolean removeClientByHost(String hostaddr) {
+boolean result = false;
+
+for (int i = 0; i < clientList.size(); i++) {
+if(clientList.get(i).hostname.equals(hostaddr)) {
+

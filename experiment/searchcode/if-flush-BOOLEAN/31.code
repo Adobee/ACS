@@ -1,0 +1,14 @@
+* Based on: &quot;Patterns in Java&quot;, Mark Grand.
+*
+* Date: Aug 19, 2011
+*
+* @author moleksyuk
+*/
+public class Flusher {
+
+private boolean flushInProgress = false;
+
+public void flush() {
+synchronized (this) {
+if (flushInProgress)
+

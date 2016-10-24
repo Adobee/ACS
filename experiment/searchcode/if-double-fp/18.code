@@ -1,0 +1,11 @@
+package Utils;
+
+public class Stats {
+
+public static Double precision(Double tp, Double fp) {
+if (tp + fp == 0) {
+return 0.0;
+}
+
+return (double) (tp / (tp + fp));
+

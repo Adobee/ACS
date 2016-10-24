@@ -1,0 +1,10 @@
+package com.yox89.ld32.raytracing;
+
+import com.badlogic.gdx.math.Vector2;
+
+public class Direction {
+float rounded = 45f * Math.round(degrees / 45f);
+rounded %= 360f;
+for (Direction d : VALUES) {
+if (Math.abs(d.getAngleDegrees() - rounded) < .01f) {
+

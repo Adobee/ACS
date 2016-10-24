@@ -1,0 +1,9 @@
+private long timeOutMS = 1000;
+
+public GameDriver(T pActivityClass) {
+mActivity = pActivityClass;
+try {
+Thread.sleep(timeOutMS);
+} catch (InterruptedException ie) {
+ie.printStackTrace();
+

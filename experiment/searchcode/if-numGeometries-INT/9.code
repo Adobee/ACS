@@ -1,0 +1,7 @@
+private <P extends Position> MultiLineString<P> decodeMultiLineString(ByteBuffer byteBuffer, CoordinateReferenceSystem<P> crs) {
+int numGeometries = byteBuffer.getInt();
+if (numGeometries == 0) {
+int numGeometries = byteBuffer.getInt();
+if (numGeometries == 0) {
+return new MultiPoint<P>(crs);
+

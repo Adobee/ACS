@@ -1,0 +1,6 @@
+protected Field randomGeoPointField(String fieldName, Field.Store store) {
+GeoPoint point = randomPoint(random());
+if (indexService.getIndexSettings().getIndexVersionCreated().before(Version.V_2_2_0)) {
+final GeoPointField.TermEncoding termEncoding;
+termEncoding = indexService.getIndexSettings().getIndexVersionCreated().onOrAfter(Version.V_2_3_0) ?
+

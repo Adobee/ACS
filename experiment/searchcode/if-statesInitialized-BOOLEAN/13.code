@@ -1,0 +1,13 @@
+private boolean statesInitialized;
+
+/** Indicator for last step. */
+private boolean isLastStep;
+
+/** Event steps. */
+final SpacecraftState current  = interpolator.getCurrentState();
+
+// initialize the events states if needed
+if (!statesInitialized) {
+
+if (!eventsStates.isEmpty()) {
+

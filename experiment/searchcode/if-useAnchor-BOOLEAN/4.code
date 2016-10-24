@@ -1,0 +1,10 @@
+private final boolean useAnchor = MGWT.getOsDetection().isAndroid();
+
+private boolean changeColorOnClick = false;
+MGWTStyle.getTheme().getMGWTClientBundle().getButtonCss().ensureInjected();
+
+if (useAnchor) {
+impl = new Anchor();
+} else {
+impl = new Button();
+

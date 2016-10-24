@@ -1,0 +1,8 @@
+docLength +=  termFrequency;
+if(termFrequency > maxTermFrequency){
+maxTermFrequency = termFrequency;
+private void updatePostingList(Integer docId, String term, Integer termFrequency) {
+DictionaryEntry entry = dictionary.get(term);
+if(entry == null){
+entry = new DictionaryEntry(term, 0, 0, new LinkedList<PostingEntry>());
+

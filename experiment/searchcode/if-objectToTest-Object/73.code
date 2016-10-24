@@ -1,0 +1,10 @@
+private IDialogueManager mockDialogueMgr;
+
+private IDialogueState objectToTest;
+
+@Before
+public void setup() throws Exception {
+when(mockDialogue.getDialogueId()).thenReturn(DIALOGUE_ID);
+objectToTest = new AtiSimDialogueEnd(mockDialogue);
+verify(mockProvider).releaseDialogueId(DIALOGUE_ID);
+

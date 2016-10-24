@@ -1,0 +1,7 @@
+number = Math.floor(number * Math.pow(10, places) + 0.5) / Math.pow(10, places);
+String numberString = &quot;&quot; + number;
+if (places > 0) {
+// Escape the magic character &quot;.&quot; with &quot;%&quot;
+if (!numberString.contains(&quot;.&quot;)) {
+numberString = numberString + &quot;.&quot;;
+

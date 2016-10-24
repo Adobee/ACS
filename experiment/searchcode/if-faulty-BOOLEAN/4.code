@@ -1,0 +1,11 @@
+public class AgreementHeader extends Header {
+
+
+private FaultySequence[] faulty;
+private boolean isTriggerRetransmission;
+// For releasing region distribution synchrony
+public AgreementHeader(FaultySequence[] faulty, boolean isTriggerRetransmission) {
+super();
+this.faulty = faulty;
+this.isTriggerRetransmission = isTriggerRetransmission;
+

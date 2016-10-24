@@ -1,0 +1,8 @@
+boolean indexToAllShards = randomBoolean();
+
+if (indexToAllShards) {
+// insert enough docs so all shards will have a doc
+assertHitCount(client().prepareCount().setQuery(termQuery(&quot;num&quot;, 179)).get(), value1Docs);
+}
+if (!indexToAllShards) {
+

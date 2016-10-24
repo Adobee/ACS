@@ -1,0 +1,15 @@
+//return super.getShldRate(); TODO: [Bonux] Check.
+}
+
+@Override
+public double getPCritRate()
+{
+if(getOwner().isTransformed() &amp;&amp; getOwner().getTransform().getBasePCritRate() > 0)
+return super.getPCritRate();
+}
+
+@Override
+public double getMCritRate()
+{
+if(getOwner().isTransformed() &amp;&amp; getOwner().getTransform().getBaseMCritRate() > 0)
+

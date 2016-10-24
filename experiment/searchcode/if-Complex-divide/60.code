@@ -1,0 +1,11 @@
+return new Complex(real, virl);
+}
+
+public Complex divide(Complex that) {
+Complex result = this.multiply(new Complex(that.real, -that.virl));
+return this.multiply(new Complex(that, 0));
+}
+
+public Complex divide(double that) {
+return this.divide(new Complex(that, 0));
+

@@ -1,0 +1,9 @@
+if (!((varianceImpl) instanceof org.apache.commons.math.stat.descriptive.moment.Variance)) {
+varianceImpl.increment(value);
+}
+if (!((geoMeanImpl) instanceof org.apache.commons.math.stat.descriptive.moment.GeometricMean)) {
+org.apache.commons.math.stat.descriptive.moment.SecondMoment.copy(source.secondMoment, dest.secondMoment);
+dest.n = source.n;
+if ((source.geoMean) == (source.geoMeanImpl)) {
+dest.geoMean = ((org.apache.commons.math.stat.descriptive.moment.GeometricMean)(dest.geoMeanImpl));
+

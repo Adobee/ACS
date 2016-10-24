@@ -1,0 +1,8 @@
+public int get(long i)
+{
+// first identify which index we need
+int blockIndex = (int) (i / this.blocksPerInt);
+if (blockIndex >= this.data.length || blockIndex < 0)
+long blockIndex = i / this.blocksPerInt;
+if (blockIndex >= this.data.length) throw new IndexOutOfBoundsException();
+

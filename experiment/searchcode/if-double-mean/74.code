@@ -1,0 +1,13 @@
+public class EvaluationHelper {
+
+public static double sum(List<Double> a) {
+if (a.size() > 0) {
+double sum = 0;
+return sum;
+}
+return 0.0;
+}
+
+public static double mean(List<Double> a) {
+double sum = sum(a);
+

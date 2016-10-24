@@ -1,0 +1,11 @@
+import craterstudio.util.HighLevel;
+
+public class Interval
+{
+public static Interval create(long delay, long interval)
+{
+return new Interval(interval, Clock.now() + delay - interval);
+}
+
+private long timestamp, interval;
+

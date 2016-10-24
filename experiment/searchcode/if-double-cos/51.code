@@ -1,0 +1,11 @@
+public Matrix rotate(double theta) {
+double cos = Math.cos(theta);
+double sin = Math.sin(theta);
+
+double a1 = a * cos - b * sin;
+b = a * sin + b * cos;
+a = a1;
+
+double c1 = c * cos - d * sin;
+d = c * sin + d * cos;
+

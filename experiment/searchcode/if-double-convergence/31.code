@@ -1,0 +1,8 @@
+* Stop if gradientNorm/(originalGradientNorm) smaller
+* than gradientConvergenceValue
+*/
+protected double gradientConvergenceValue;
+public boolean stopOptimization(Objective obj){
+double norm = ArrayMath.L2Norm(obj.gradient);
+if(norm < gradientConvergenceValue){
+

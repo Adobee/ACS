@@ -1,0 +1,8 @@
+* @param userId
+*/
+@Override
+public void operate(String oper, Long dynamicId, Long userId){
+if(&quot;add&quot;.equals(oper)){
+DynamicCollection dynamicCollection = dynamicCollectionDao.findByDynamicIdAndUserId(dynamicId, userId);
+if(dynamicCollection != null){
+

@@ -1,0 +1,13 @@
+public boolean isBalanced(TreeNode root) {
+return height(root) != -1;
+}
+
+private int height(TreeNode root){
+if(root == null)
+return 0;
+int lh = height(root.left);
+if(lh == -1)
+return -1;
+
+int rh = height(root.right);
+

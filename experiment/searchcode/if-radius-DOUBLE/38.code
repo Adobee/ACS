@@ -1,0 +1,12 @@
+private double radius;
+
+public Circle(double x, double y, double radius) {
+super(x, y);
+this.setRadius(radius);
+return this.radius;
+}
+
+public void setRadius(double radius) {
+if(radius < 0) {
+throw new IllegalArgumentException(&quot;radius cannot be negative&quot;);
+

@@ -1,0 +1,7 @@
+private static int calculateInitialCapacity(int expectedSize) {
+if (expectedSize < 3) {
+return expectedSize + 1;
+}
+if (expectedSize < MAX_POWER_OF_TWO) {
+return (int) ((((float) expectedSize) / 0.75f) + 1.0f);
+

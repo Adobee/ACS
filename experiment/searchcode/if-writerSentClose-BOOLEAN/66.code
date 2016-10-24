@@ -1,0 +1,6 @@
+/** True after calling {@link #close(int, String)}. No writes are allowed afterward. */
+private volatile boolean writerSentClose;
+/** True after {@link IOException}. {@link #close(int, String)} becomes only valid call. */
+if (message == null) throw new NullPointerException(&quot;message == null&quot;);
+if (writerSentClose) throw new IllegalStateException(&quot;closed&quot;);
+

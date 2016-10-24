@@ -1,0 +1,11 @@
+int yOffset;
+
+for (int i = 1; i < (width-1); ++i) {
+
+yOffset = width*(height-1);
+// top edge (minus corner pixels)
+// central square
+for (int j = 1; j < (height-1); ++j) {
+yOffset = j*width;
+t[i + yOffset] = (((((s[i + yOffset] &amp; 0xFF) << 2 ) +
+

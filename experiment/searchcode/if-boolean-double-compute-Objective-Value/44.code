@@ -1,0 +1,10 @@
+zt[j] = getInitValue();
+}
+double prevObjValue = Double.MAX_VALUE;
+do {
+double f = computeFunctionGradient(zt,gradLogli);
+icall += 1;
+
+// calculate the value of the objective 0.5*wnorm + C\sum_i\xi
+double objective = 0.5*normSquare(wt);
+

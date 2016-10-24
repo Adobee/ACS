@@ -1,0 +1,11 @@
+package webapp;
+
+public class GeneralFunction {
+public static String parseTime(int seconds)
+{
+String finalMin=&quot;&quot;;
+String finalSeconds=&quot;&quot;;
+int min=0;
+
+while (seconds>=60)
+

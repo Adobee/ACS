@@ -1,0 +1,17 @@
+import com.simularity.sax.Deviator;
+class BasicDeviator implements Deviator {
+
+protected double mean;
+protected double M2;
+M2 = 0.0;
+n = 0;
+};
+
+public double getMean() {
+return mean;
+};
+
+public double getStdDev() {
+if (n < 2) {
+return 0.0;
+

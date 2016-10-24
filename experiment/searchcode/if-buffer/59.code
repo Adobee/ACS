@@ -1,0 +1,10 @@
+public class FillingBuffer implements Runnable {
+Exchanger<Buffer> fillingBuffer;
+Buffer buffer = new Buffer();
+
+public FillingBuffer(Exchanger<Buffer> fillingBuffer, Buffer buffer) {
+buffer.add(++i);
+System.out.println(&quot;Added item &quot; + i);
+if (buffer.isFull()) {
+try {
+

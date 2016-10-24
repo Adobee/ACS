@@ -1,0 +1,7 @@
+private float deriveSize(int freq) {
+int diff = MAX - MIN + 1;
+// (problem => too small)
+//int finalSize = (diff * freq / total) + MIN;
+// absolute size using log
+int finalSize = (int) (diff * Math.min(10, Math.log(Math.max(2, freq - 10))) / 10 + MIN);
+

@@ -1,0 +1,12 @@
+return res;
+}
+
+private void dfs(int l, int r, int n, StringBuilder sb, List<String> res) {
+if (l == n &amp;&amp; r == n) {
+res.add(sb.toString());
+return;
+}
+if (l < n) {
+sb.append(&quot;(&quot;);
+dfs(l + 1, r, n, sb, res);
+

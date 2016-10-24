@@ -1,0 +1,10 @@
+public abstract class Sampler {
+protected int samples, sqrtSamples;
+protected double subPixelSize;
+
+public Sampler(int samples){
+this.sqrtSamples = (int)Math.sqrt(samples);
+
+if (sqrtSamples*sqrtSamples != samples){
+throw new IllegalArgumentException(&quot;The number of samples to be a perfect square, as the supersampling uses a square grid to cast additional rays&quot;);
+

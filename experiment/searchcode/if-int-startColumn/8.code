@@ -1,0 +1,10 @@
+private int endLine;
+private int startColumn;
+private int endColumn;
+
+public Location(int startLine, int startColumn,  int endLine,
+int endColumn)
+{
+this.startLine = startLine;
+this.endLine = endLine;
+

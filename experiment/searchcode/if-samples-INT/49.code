@@ -1,0 +1,14 @@
+public abstract class FPSCounter {
+
+protected static final String PATTERN = &quot;FPS: %.2f&quot;;
+
+private final int numSamples;
+
+private int samplesCounter = 0;
+private double accumulator = 0.0;
+
+protected FPSCounter(int numSamples) {
+if (numSamples <= 0) {
+// TODO:
+throw new IllegalArgumentException();
+

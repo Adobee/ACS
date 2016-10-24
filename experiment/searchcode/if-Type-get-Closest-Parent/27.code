@@ -1,0 +1,7 @@
+map = ((MapFragment) parentActivity.getFragmentManager().findFragmentById(R.id.map)).getMap();
+if (map == null) {
+return;
+}
+map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+LocationManager lm = (LocationManager) parentActivity.getSystemService(Context.LOCATION_SERVICE);
+

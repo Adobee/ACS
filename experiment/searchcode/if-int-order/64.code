@@ -1,0 +1,12 @@
+Order order =ServiceUtil.getOrderFromOrderDTO(orderDTo);
+boolean flag = orderDAO.save(order);
+if(flag == true){
+return orderDTo;
+}else{
+return null;
+}
+}
+
+@Override
+public OrderDTO getOrder(int orderId) {
+

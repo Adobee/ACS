@@ -1,0 +1,8 @@
+public long getKeepAliveDuration(HttpResponse response, HttpContext context)
+{
+long keepAliveDuration = super.getKeepAliveDuration(response, context);
+
+if (keepAliveDuration == -1)
+{
+return defaultKeepAliveDuration;
+

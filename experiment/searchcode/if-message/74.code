@@ -1,0 +1,5 @@
+logger.info(&quot;receiveMsg:depiveryMode&quot;+message.getJMSDeliveryMode()+&quot;\r\nmessageId:&quot;+message.getJMSMessageID()+&quot;\r\ntimestamp&quot;+message.getJMSTimestamp()+&quot;\r\n=================&quot;);
+if (message instanceof TextMessage) {
+handlerTextMessage((TextMessage) message);
+} else if (message instanceof ObjectMessage) {
+

@@ -1,0 +1,7 @@
+RealMatrix wordVector = svd.getU();
+RealMatrix sigma = svd.getS();
+RealMatrix documentVector = svd.getV();
+int k = (int) Math.floor(Math.sqrt(matrix.getColumnDimension()));
+RealMatrix reducedWordVector = wordVector.getSubMatrix(
+0, wordVector.getRowDimension() - 1, 0, k - 1);
+

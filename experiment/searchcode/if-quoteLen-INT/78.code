@@ -1,0 +1,7 @@
+* @return the modifiable list of String tokens, unmodifiable if null array or zero count
+*/
+protected List tokenize(char[] chars, int offset, int count) {
+// handle found token
+int quoteLen = getQuoteMatcher().isMatch(chars, start, start, len);
+if (quoteLen > 0) {
+

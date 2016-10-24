@@ -1,0 +1,9 @@
+package net.morimekta.providence.thrift;
+
+import net.morimekta.providence.serializer.DefaultSerializerProvider;
+this(new DefaultSerializerProvider() {});
+}
+
+public ThriftSerializerProvider(SerializerProvider base) {
+if (base instanceof ThriftSerializerProvider) {
+

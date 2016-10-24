@@ -1,0 +1,12 @@
+* Created by Адиль on 26.05.14.
+*/
+
+public class Gen {
+public void mygen(double[][] a, double[][] a_inv, int n, double alpha, double beta, int sign_law, int lambda_law, int variant, int schema)
+/*	for( i=0; i<n; i++ ) cout<<J[i]<<&quot; &quot;;
+cout<<endl;
+*/
+
+double[] J_inv = new double[n];
+for (i = 0; i<n; i++) J_inv[i] = 1. / J[i];
+

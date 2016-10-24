@@ -1,0 +1,13 @@
+public abstract boolean shouldBreak();
+
+public boolean waitFor(long maxTime) {
+for (Timer end = new Timer(maxTime); end.isRunning();) {
+return true;
+Delay.sleep(30, 50);
+}
+return false;
+}
+
+public boolean waitFor(long maxTime, long delay) {
+for (Timer end = new Timer(maxTime); end.isRunning();) {
+

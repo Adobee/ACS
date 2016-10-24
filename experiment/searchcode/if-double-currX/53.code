@@ -1,0 +1,13 @@
+public void onBlockPlacedBy(World par1World, int par2, int par3, int par4, EntityLivingBase par5EntityLiving, ItemStack par6ItemStack)
+{
+int currX = par2;
+int currY = par3;
+int currZ = par4;
+
+File f1 = new File(MountainGen.configImagesPath + this.imgPath);
+//-Z
+if (l == 2)
+{
+//Offset X so the mountain is in front of us
+currX = currX - 128;
+

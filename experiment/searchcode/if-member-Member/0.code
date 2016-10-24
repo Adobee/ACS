@@ -1,0 +1,10 @@
+public Member save(Member member)
+{
+if(isPersistent(member))
+{
+return member;
+}
+if(validate(member))
+{
+Member memberWillBeSaved = new Member();
+

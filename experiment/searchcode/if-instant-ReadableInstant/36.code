@@ -1,0 +1,10 @@
+import java.util.Date;
+
+import org.joda.time.ReadableInstant;
+
+import com.googlecode.objectify.impl.TypeUtils;
+public Object forDatastore(Object value, ConverterSaveContext ctx)
+{
+if (value instanceof ReadableInstant)
+return ((ReadableInstant)value).toInstant().toDate();
+

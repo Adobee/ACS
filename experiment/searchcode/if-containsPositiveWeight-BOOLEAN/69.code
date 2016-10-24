@@ -1,0 +1,9 @@
+protected boolean test(final IAST values, final IAST weights, final int begin, final int length, final boolean allowEmpty) {
+
+if (weights == null) {
+throw new NullArgumentException(LocalizedFormats.INPUT_ARRAY);
+throw new DimensionMismatchException(weights.size(), values.size());
+}
+
+boolean containsPositiveWeight = false;
+

@@ -1,0 +1,10 @@
+stepTime = stepEndTime - stepStartTime;
+
+double p = (double)stepHalfTime / stepTime;
+
+if (stepTime >= MIN_STEP_INTERVAL &amp;&amp; p > 0.4 &amp;&amp; p < 0.6) {
+stepAcc[1] /= timeDiff;
+
+if (lastStepAcc != null) {
+lastTwoStepAcc = new double[]{ lastStepAcc[0] + stepAcc[0], lastStepAcc[1] + stepAcc[1] };
+

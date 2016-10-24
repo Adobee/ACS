@@ -1,0 +1,12 @@
+private final double userFraction;
+
+Rollout(double userFraction) {
+super(NAME);
+if (userFraction < 5 || 50 < userFraction) {
+throw new IllegalArgumentException(&quot;Illegal userFraction &quot; + userFraction + &quot;%.&quot;);
+}
+this.userFraction = userFraction;
+}
+
+public double getUserFraction() {
+

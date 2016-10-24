@@ -1,0 +1,16 @@
+private final Interval normalized;
+
+IntervalNonNormalizedImpl(int start, int end) {
+super(start, end);
+if (TimeUtil.isNormalizedTime(start))
+return normalized;
+}
+
+@Override
+public boolean isNormalized() {
+return false;
+}
+
+@Override
+public boolean isOverMidnight() {
+

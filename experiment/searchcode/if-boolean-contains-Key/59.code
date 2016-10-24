@@ -1,0 +1,9 @@
+public boolean contains(T key) {
+return containsHelper(myRoot, key);
+}
+private boolean containsHelper(TreeNode t, T key){
+if(key.compareTo(t.myItem)==0){
+return true;
+} else if(key.compareTo(t.myItem)<0){
+return containsHelper(t.myLeft, key);
+

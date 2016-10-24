@@ -1,0 +1,10 @@
+import org.abm.averageskill.event.TimeoutEvent;
+
+@RequiredArgsConstructor
+public class TimeoutMonitor implements Tickee{
+public void tick(int atTime) {
+if (atTime >= timeout)
+timeoutListener.onTimeout(TimeoutEvent.at(atTime));
+}
+}
+

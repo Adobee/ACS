@@ -1,0 +1,11 @@
+private double p21 = 0;
+private double p22 = 1;
+
+public void update(double z, double dt) {
+if(Double.isNaN(x) &amp;&amp; !Double.isNaN(z) &amp;&amp; dt == 0) {
+this.v = 0;
+} else if(dt > 0) {
+
+// Estimated state
+final double predicted_altitude = x + v * dt;
+

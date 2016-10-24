@@ -1,0 +1,12 @@
+public FadeEffect(Entity parent, String textureName, float initialAlpha, float fadeSpeed) {
+super(parent, textureName);
+public void doLogic(float delta) {
+alpha -= fadeSpeed * delta;
+
+if (alpha <= 0) {
+alpha = 0;
+GdxGame.removeEntity(this);
+}
+}
+}
+

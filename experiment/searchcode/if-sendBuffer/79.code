@@ -1,0 +1,10 @@
+public static synchronized Client getInstance() {
+if (instance == null) {
+instance = new Client();
+}
+return instance;
+byte[] sendBuffer = new byte[BUFFER_SIZE];
+
+while (bufferInRAM.remaining() > sendBuffer.length) {
+Window.setText(sended + &quot;/&quot; + RAfile.length()+ &quot;\n&quot;);
+

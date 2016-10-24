@@ -1,0 +1,14 @@
+package Util;
+
+public class StaticBar {
+
+public double left;
+public double right;
+public double top;
+bottom = y - height / 2;
+}
+
+public boolean isPointInside(double x,double y){
+boolean inside=false;
+if ((x >= left) &amp;&amp; (x <= right) &amp;&amp; (y >= bottom) &amp;&amp; (y <= top)) inside = true;
+

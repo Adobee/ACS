@@ -1,0 +1,9 @@
+import nl.wiegman.timetracker.domain.TimeRecord;
+import nl.wiegman.timetracker.util.TimeAndDurationService;
+
+public abstract class AbstractPeriod implements Period {
+private Long billableDuration = null;
+
+public AbstractPeriod(Calendar from, Calendar to) {
+this.from = from;
+

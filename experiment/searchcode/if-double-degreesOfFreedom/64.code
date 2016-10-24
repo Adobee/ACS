@@ -1,0 +1,6 @@
+private final double degreesOfFreedom;
+/** Inverse cumulative probability accuracy. */
+private final double solverAbsoluteAccuracy;
+/** Static computation factor based on degreesOfFreedom. */
+private final double factor;
+

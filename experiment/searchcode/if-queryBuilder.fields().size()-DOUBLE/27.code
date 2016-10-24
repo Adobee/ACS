@@ -1,0 +1,9 @@
+assertEquals(1, dao.create(foo2));
+assertEquals(2, dao.queryForAll().size());
+
+QueryBuilder<Foo, Object> qb = dao.queryBuilder();
+QueryBuilder<Foo, String> qb = fooDao.queryBuilder();
+
+// null fields start off as null so 0 are not-null
+qb.where().isNotNull(Foo.NULL_COLUMN_NAME);
+

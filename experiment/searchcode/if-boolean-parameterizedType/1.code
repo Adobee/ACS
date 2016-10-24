@@ -1,0 +1,13 @@
+package com.degloba.event.api;
+
+import java.lang.reflect.ParameterizedType;
+
+
+public abstract class AbstractEventListener<T extends IEvent> implements IEventListener<T> {
+handle((T) event);
+}
+
+//
+private boolean supports(IEvent event) {
+ParameterizedType parameterizedType = (ParameterizedType) getClass().getGenericSuperclass();
+

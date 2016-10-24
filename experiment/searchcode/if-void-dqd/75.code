@@ -1,0 +1,15 @@
+setDaemon(true);
+}
+
+public void run()
+{
+resetManager.registerMe();
+
+try
+{
+// Create a thread context object.
+while (j < dds.getCount())
+{
+DeleteQueuedDocument dqd = dds.getDocument(j);
+if (dqd.wasProcessed() == false)
+

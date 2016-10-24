@@ -1,0 +1,11 @@
+public class LowPassFilter {
+private float mAlpha;
+
+public LowPassFilter(float alpha_)
+{
+this.mAlpha = alpha_;
+
+}
+public float[] compute(float[] input, float[] output) {
+if ( output == null ) return input;
+

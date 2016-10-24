@@ -1,0 +1,13 @@
+public AnimationNPCAction(World world,NPC npc,Animation animation, Action nextAction) {
+super(world, nextAction);
+running = true;
+npc.setAnimation(animation);
+toDelete = true;
+if(nextAction!= null)
+{
+nextAction.run();
+}
+}
+
+}
+

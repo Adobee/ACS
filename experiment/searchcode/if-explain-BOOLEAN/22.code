@@ -1,0 +1,7 @@
+// TODO: it should be (failurePredicate, explanation) it will make much more sense
+public Explain(Boolean success, String explanationIfFail) {
+this.data = null;
+this.success = success;
+public static Explain butIf(Boolean failureCondition, String explanation) {
+return new Explain(!failureCondition, explanation);
+

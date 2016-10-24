@@ -1,0 +1,7 @@
+private static StrongPasswordEncryptor passwordEncryptor = new StrongPasswordEncryptor();
+
+public static String cryptPassword(String password){
+String encryptedPassword = passwordEncryptor.encryptPassword(password);
+public static boolean checkPassword(String encrypt, String password){
+if (passwordEncryptor.checkPassword(password, encrypt)) {
+

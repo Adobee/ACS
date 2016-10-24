@@ -1,0 +1,9 @@
+public class code14 {
+//递归方法
+public double Power(double base, int exponent) {
+if(exponent==0) return 1;
+if(exponent == -1) return 1/base;
+double result = Power(base, exponent>>1);
+result = result*result;
+if((exponent&amp;1)==1)
+

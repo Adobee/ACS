@@ -1,0 +1,10 @@
+this.items = new ArrayList<>(bucketSize);
+}
+
+public T get(int index) {
+if (index < this.uniqueSize) {
+private InsertReturnInformation<T> insertReturningInformationViaBuilder
+(T valueToAdd, InsertReturnInformation.Builder builder) {
+
+if (shouldCreateNewFirstBucket(valueToAdd)) {
+

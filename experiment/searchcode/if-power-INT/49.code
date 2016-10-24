@@ -1,0 +1,12 @@
+public class Power {
+
+public int power(int x, int n, int d) {
+if (n == 0)
+return 1;
+
+long v = power(x, n / 2, d);
+v = v % d;
+x = x % d;
+
+if (n % 2 == 0) {
+

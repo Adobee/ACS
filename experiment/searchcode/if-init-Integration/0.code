@@ -1,0 +1,9 @@
+public com.test.integration.IntegrationWS getIntegrationWS() {
+if (integrationWS == null)
+_initIntegrationWSProxy();
+return integrationWS;
+public java.lang.String sendAlarm(com.test.integration.AlarmFrameDTO alarm) throws java.rmi.RemoteException{
+if (integrationWS == null)
+_initIntegrationWSProxy();
+return integrationWS.sendAlarm(alarm);
+

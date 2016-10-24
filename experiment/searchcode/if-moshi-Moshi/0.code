@@ -1,0 +1,8 @@
+package com.github.jbarr21.goproremote.common.utils;
+
+import com.ryanharter.auto.value.moshi.AutoValueMoshiAdapterFactory;
+public static Moshi getMoshi() {
+if (moshi == null) {
+moshi = new Moshi.Builder()
+.add(new AutoValueMoshiAdapterFactory())
+

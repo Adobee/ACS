@@ -1,0 +1,8 @@
+} catch (final Throwable e) {
+if (e instanceof AssertedFailureDidNotHappenException) {
+final AssertedFailureDidNotHappenException assertedOne = (AssertedFailureDidNotHappenException) e;
+System.out.println(&quot;AssertedFailure:&quot; + this.exceptionRaised);
+}
+if (this.expected != null) {
+final Throwable ex = getWrappedException(e, this.expected);
+

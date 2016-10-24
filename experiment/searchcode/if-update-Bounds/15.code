@@ -1,0 +1,9 @@
+public final CompositeObservableBounds add(ReadOnlyObjectProperty<Bounds> nodeBounds) {
+requireNonNull(nodeBounds, &quot;nodeBounds is null&quot;);
+
+if (!sourceBounds.contains(nodeBounds)) {
+Bounds bounds = property.get();
+
+if (!initialized) {
+minX.set(floorIfNeeded(bounds.getMinX()));
+

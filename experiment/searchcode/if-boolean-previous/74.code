@@ -1,0 +1,13 @@
+public ChainElement(T previous) {
+this.previous = previous;
+if (previous != null) {
+previous.setNext((T) this);
+public boolean isLast() {
+return next == null;
+}
+
+public boolean isFirst() {
+return previous == null;
+}
+}
+

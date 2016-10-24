@@ -1,0 +1,10 @@
+protected void appendFieldsIn(Class clazz) {
+if (clazz.isArray()) {
+this.reflectionAppendArray(this.getObject());
+} else if (value.getClass().isArray()) {
+if (detail) {
+appendDetail(buffer, fieldName, (Object[]) value);
+}
+
+} else {
+

@@ -1,0 +1,6 @@
+private final static int GMT_INDEX = 24;
+private final static int MILLIS_PER_HOUR = 3600000;
+private final static int MILLIS_PER_HALF_HOUR = 1800000;
+private final static int[] OFFSETS = {
+12 * MILLIS_PER_HOUR,
+

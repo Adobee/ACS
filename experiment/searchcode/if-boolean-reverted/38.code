@@ -1,0 +1,16 @@
+private RevisionType type;
+private User revisor;
+private long time;
+private boolean reverted;
+
+protected Revision(RevisionType type, User revisor, Date time) {
+this.type = type;
+}
+
+@Column(nullable=false)
+public boolean isReverted() {
+return reverted;
+}
+
+public void setReverted(boolean reverted) {
+

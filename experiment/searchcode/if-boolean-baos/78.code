@@ -1,0 +1,7 @@
+throws IOException
+{
+// writes the OGG header page
+ByteArrayOutputStream baos = new ByteArrayOutputStream(108);
+baos.write(&quot;OggS&quot;.getBytes(), 0, 4); //  0 -  3: capture_pattern
+baos.write(0xff &amp; 0);                //       4: stream_structure_version
+

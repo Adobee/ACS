@@ -1,0 +1,13 @@
+import org.lucho.server.lucene.AnalyzerFactory;
+import org.lucho.server.lucene.LuceneFactory;
+
+import com.google.inject.Inject;
+private IndexSearcher indexSearcher;
+
+private AnalyzerFactory analyzerFactory;
+
+private SpellChecker spellChecker;
+
+@Inject
+public LuceneFactoryImpl(final AnalyzerFactory analyzerFactory) throws IOException {
+

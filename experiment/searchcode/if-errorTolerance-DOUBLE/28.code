@@ -1,0 +1,9 @@
+lifetime = time - timeCreated;
+}
+
+public boolean intersects(Vec2 point, double errorTolerance)
+{
+Vec2 disp = point.sub(initialSituation.ourBotMoveInfo.pos);
+
+if (Math.abs(radius - disp.mag()) < errorTolerance)
+

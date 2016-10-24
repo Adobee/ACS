@@ -1,0 +1,8 @@
+private int DATA_SHARDS = config.t;		//t
+private int PARITY_SHARDS = config.n-config.t;	//n-t
+private int TOTAL_SHARDS = config.n;
+public void ShardDeletion(int dontDeleteMyShard){
+for (int i = 0; i<TOTAL_SHARDS; i++){
+if (i != dontDeleteMyShard){
+File shardFile = new File(
+

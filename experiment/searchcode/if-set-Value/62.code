@@ -1,0 +1,7 @@
+public void setValueKind(final Value value, final Map<Object, Object> context)
+throws ADLException {
+if (value instanceof Array) {
+value.astSetDecoration(KIND_DECORATION, &quot;array&quot;);
+} else if (value instanceof BooleanLiteral) {
+value.astSetDecoration(KIND_DECORATION, &quot;boolean&quot;);
+

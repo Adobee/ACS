@@ -1,0 +1,12 @@
+if (!prime[n] &amp;&amp; n % 2 == 1) {
+
+boolean found = false;
+
+for (int m = 0; !found &amp;&amp; 2 * m * m < n; m++)
+if (prime[n - 2 * m * m])
+found = true;
+
+if (!found) {
+
+System.out.println(n);
+

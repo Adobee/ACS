@@ -1,0 +1,17 @@
+package com.alsot.test.retry.boolchecker;
+
+public class FixedFailedAttemptsBooleanChecker implements BooleanChecker {
+this.maxFailedAttempts = maxFailedAttempts;
+}
+
+@Override
+public boolean check() {
+if (failedAttempts >= maxFailedAttempts) {
+return true;
+}
+failedAttempts++;
+return false;
+}
+
+}
+

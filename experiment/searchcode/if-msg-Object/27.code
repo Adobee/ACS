@@ -1,0 +1,12 @@
+private LogUtils() { /* cannot be instantiated */}
+
+public static void v(Object c, String msg) {
+if (isLog) {
+Log.v(getTag(c), getMsg(msg));
+}
+}
+
+public static void d(Object c, String msg) {
+if (isLog) {
+Log.d(getTag(c), getMsg(msg));
+

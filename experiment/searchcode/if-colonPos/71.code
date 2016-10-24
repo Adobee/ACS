@@ -1,0 +1,8 @@
+public Time (String s) {
+int colonPos = s.indexOf (&quot;:&quot;);
+if (s.substring (0, colonPos).length()>2){
+throw new IllegalArgumentException(&quot;Hours can not be larger than 2 bytes&quot;);
+}
+if (s.substring (colonPos+1).length()!=2){
+throw new IllegalArgumentException(&quot;Minutes can only be 2 bytes&quot;);
+

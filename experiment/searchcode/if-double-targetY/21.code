@@ -1,0 +1,11 @@
+private double targetX, targetY, targetZ;
+
+public PacketParticles()
+{
+}
+
+public PacketParticles(double posX, double posY, double posZ, double targetX, double targetY, double targetZ)
+{
+this.posX = posX;
+this.posY = posY;
+

@@ -1,0 +1,7 @@
+//            new PowellOptimizer(1e-13, FastMath.ulp(1d));
+//        PointValuePair result = optim.optimize(100000, func, goal, startPoint);
+final double[] lB = boundaries == null ? null : boundaries[0];
+BOBYQAOptimizer optim = new BOBYQAOptimizer(numIterpolationPoints);
+PointValuePair result = boundaries == null ?
+optim.optimize(maxEvaluations, func, goal,
+

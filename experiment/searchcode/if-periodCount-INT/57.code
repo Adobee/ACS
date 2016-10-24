@@ -1,0 +1,13 @@
+task.continueCount = task.continueMaxCount;
+}
+}
+}
+}
+
+public void schedule(GameLogicTask task, int delayCount, int periodCount, int priority) {
+if(task == null || delayCount < 0 || periodCount < 0 || priority < 0 || priority > currentTasks.length)
+currentTasks[priority].add(new GameLogicTaskInformation(task, delayCount, periodCount));
+}
+}
+public void schedule(GameLogicTask task, int delayCount, int priority) {
+

@@ -1,0 +1,10 @@
+* A Painter implementation that uses a Paint to fill the entire background area. For example, if I wanted to paint the
+* entire background of a panel green, I would:
+protected void doPaint(Graphics2D g2d, T obj, int width, int height) {
+Paint paint = getFillPaint();
+
+if (paint == null)
+return;
+if (isPaintStretched())
+paint = calculateSnappedPaint(paint, width, height);
+

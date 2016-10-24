@@ -1,0 +1,6 @@
+public static double adaptiveSimpson(double lo, double hi, double eps) {
+double mid = (lo + hi)/2;
+double flo = f(lo), fc = f(mid), fhi = f(hi);
+double area = (hi - lo)/6 * (flo + 4 * fc + fhi);
+return adsimp_inner(lo, mid, hi, flo, fc, fhi, area, eps);
+

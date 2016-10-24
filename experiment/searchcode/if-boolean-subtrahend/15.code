@@ -1,0 +1,6 @@
+@Parameter(names = { &quot;-s&quot;, &quot;--subtrahend&quot; }, description = &quot;Subtrahend (bottom - file 2)&quot;, required = true, validateWith = ReadablePathValidator.class)
+inputs.add(subtrahendReader);
+log.debug(&quot;Initialized &quot; + inputs.size() + &quot; input files&quot;);
+if (assumeZero) {
+log.debug(&quot;Assuming missing data is zero&quot;);
+

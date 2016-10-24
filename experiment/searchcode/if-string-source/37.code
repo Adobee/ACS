@@ -1,0 +1,11 @@
+* 使用正则表达式过滤HTML标记
+*
+* @param source 待过滤内容
+* @return
+*/
+public static String filterHtml(String source) {
+if(null == source){
+return &quot;&quot;;
+}
+return source.replaceAll(&quot;</?[^>]+>&quot;,&quot;&quot;).trim();
+

@@ -1,0 +1,11 @@
+* 判断是否是数字类型
+*
+* @param clazz
+*/
+public static boolean isNumberType(Class<?> clazz) {
+return (clazz == Number.class || clazz.getSuperclass() == Number.class || isPrimitiveNumberType(clazz));
+public static boolean isPrimitiveNumberType(Class<?> clazz) {
+if (!clazz.isPrimitive()) {
+return false;
+} else if (clazz != boolean.class &amp;&amp; clazz != void.class
+

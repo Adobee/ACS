@@ -1,0 +1,9 @@
+//disc=new boolean[m.grid_points.length][m.grid_points.length];
+disc=new boolean[m.odeN][m.odeN];
+
+for(Edge e:m.edges){
+if(e.getClass()==Crack.class){
+doCrack((Crack) e);
+}
+else if(e.getClass()==Pipe.class){
+

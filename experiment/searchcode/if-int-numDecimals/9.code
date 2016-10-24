@@ -1,0 +1,7 @@
+public double getElapsedTimeSecsDouble(int numDecimals)
+{
+long elapsed = getElapsedTime();
+double d_elapsed = (double) elapsed / 1000.0;
+numDecimals = (int)Math.pow(10, numDecimals);
+return (  ( (double) ((long)(numDecimals*d_elapsed)) ) / numDecimals  );
+

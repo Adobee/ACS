@@ -1,0 +1,9 @@
+import com.domain.register.service.exception.NotFoundDomainException;
+
+import java.util.*;
+
+public class DomainService {
+
+private Map<String, Domain> premiumDomains = new HashMap<String, Domain>();
+private Map<String, Domain> zoneDomains = new HashMap<String, Domain>();
+

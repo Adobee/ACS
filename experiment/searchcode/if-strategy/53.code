@@ -1,0 +1,11 @@
+public static StrategyManager getInstance() {
+if (instance == null) {
+instance = new StrategyManager();
+public Strategy getCurrentStrategy() {
+if (strategy == null) {
+strategy = new ZerglingRush();
+}
+return strategy;
+}
+}
+

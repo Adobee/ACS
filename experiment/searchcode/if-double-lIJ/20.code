@@ -1,0 +1,11 @@
+return sum;
+}
+
+private double computeLij(Long ti, Long tj) {
+if ( !graph.hasReferences(ti) || !graph.getReference(ti).equals(tj)) return 0.0;
+Long ui = graph.getTweetAuthor(ti);
+
+double Lij = computeLij(ti, tj);
+double Mij = computeMij(ti, tj, uj);
+double Fij = computeFij(ui, uj);
+

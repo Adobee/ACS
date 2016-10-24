@@ -1,0 +1,14 @@
+protected double result;
+
+protected double functionValue;
+
+private int maxEvaluations;
+
+private int evaluations;
+protected final void clearResult() {
+this.resultComputed = false;
+}
+
+public void setMaxEvaluations(int maxEvaluations) {
+this.maxEvaluations = maxEvaluations;
+

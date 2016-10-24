@@ -1,0 +1,11 @@
+private double steadyStateThreshold;
+
+/** Threshold for cost convergence. */
+private double convergence;
+
+/** Simple constructor with default settings.
+* @param steadyStateThreshold steady state detection threshold
+*/
+public void setSteadyStateThreshold(final double steadyStateThreshold) {
+this.steadyStateThreshold = steadyStateThreshold;
+

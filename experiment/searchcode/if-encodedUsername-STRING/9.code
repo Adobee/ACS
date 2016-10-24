@@ -1,0 +1,6 @@
+public String show(Model model, @PathVariable(&quot;username&quot;) String encodedUsername, RedirectAttributes redirect)
+throws UnsupportedEncodingException {
+
+String username = SecurityUtil.decode(encodedUsername);
+UserEntity user = harvesterSecurityService.get(username);
+

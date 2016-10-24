@@ -1,0 +1,7 @@
+DataHeader header = readDataHeader();
+int maxVersionIndex = versionArray.length - 1;
+if (header.elementsOrVersion <= versionArray[maxVersionIndex].elementsOrVersion) {
+DataHeader referenceHeader = null;
+for (int index = maxVersionIndex; index >= 0; index--) {
+DataHeader dataHeader = versionArray[index];
+

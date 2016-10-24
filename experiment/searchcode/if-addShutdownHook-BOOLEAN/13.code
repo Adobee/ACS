@@ -1,0 +1,9 @@
+public class ContextProvider {
+
+private static final Context context = new ContextImpl();
+private static Boolean register = false;
+
+public static Context getInstance() {
+if (!register) {
+Thread thread = new Thread(context);
+

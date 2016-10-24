@@ -1,0 +1,12 @@
+import android.widget.CursorAdapter;
+
+public abstract class BaseCursorLoader<VH> extends CursorAdapter
+{
+private static final String TAG = BaseCursorLoader.class.getName();
+protected void updateControls(VH vh, Cursor cursor)
+{
+if (vh != null)
+{
+updateTopText(vh, cursor);
+updateBottomText(vh, cursor);
+

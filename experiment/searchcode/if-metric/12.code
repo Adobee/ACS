@@ -1,0 +1,10 @@
+private Hashtable<String, Metric> metricHash = null;
+
+public Metrics() {
+metricHash = new Hashtable<String, Metric> ();
+}
+
+public void addMetric(Metric metric) {
+if (metric == null) {
+throw new IllegalArgumentException(&quot;metric cannot be null&quot;);
+

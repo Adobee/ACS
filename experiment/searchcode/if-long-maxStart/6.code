@@ -1,0 +1,10 @@
+import java.io.Serializable;
+
+public class Status implements Serializable {
+
+private static final long serialVersionUID = 6985621299882118840L;
+private int maxStart = 0;
+
+public void apply(int num) {
+if (maxStart < num) maxStart = num;
+

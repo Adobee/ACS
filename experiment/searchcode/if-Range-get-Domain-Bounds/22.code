@@ -1,0 +1,9 @@
+Layer drlayer = dateRangePanel.getLayer();
+if (null != drlayer) {
+drlayer.save();
+
+if(!dateRangePanel.getBounds().equals(drlayer.getBounds())){
+// fit within the container&#39;s bounds
+double cushion = view.getWidth() - zoomPanel.getBounds().width - dateRangePanel.getBounds().width;
+if (cushion >= minCushion) {
+

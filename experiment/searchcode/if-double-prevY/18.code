@@ -1,0 +1,11 @@
+if(direction == MainView.HYPERBOLA_HOR){
+double y = 0;
+double prevy;
+double prevx;
+
+for(int x = 0; x < 624; x++){
+
+if(x == 0){
+y = (yDistance * 13 * Math.sqrt(Math.pow(x/(xDistance * 13), 2) - 1));
+if(Double.isNaN(prevy)){
+

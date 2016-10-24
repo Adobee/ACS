@@ -1,0 +1,15 @@
+import org.openrdf.query.impl.FallbackDataset;
+import org.openrdf.query.parser.ParsedQuery;
+
+/**
+* @author Arjohn Kampman
+*/
+public abstract class SailQuery extends AbstractQuery {
+// No external dataset specified, use query&#39;s own dataset (if any)
+return parsedQuery.getDataset();
+}
+
+@Override
+public String toString() {
+return parsedQuery.toString();
+

@@ -1,0 +1,10 @@
+_1_0(&quot;1.0&quot;), _1_1(&quot;1.1&quot;);
+
+private final String versionString;
+
+private HttpVersion(String versionString) {
+this.versionString = versionString;
+public static HttpVersion fromVersionString(String versionString) {
+for (HttpVersion httpVersion : values())
+if (httpVersion.getVersionString().equals(versionString))
+

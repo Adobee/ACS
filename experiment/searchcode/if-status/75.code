@@ -1,0 +1,13 @@
+public Integer getStatus() {
+return status;
+}
+
+public static RequestStatus fromInteger(Integer i){
+if(i.equals(RequestStatus.REJECTED.getStatus()))
+return RequestStatus.REJECTED;
+if(i.equals(RequestStatus.WAITING.getStatus()))
+return RequestStatus.WAITING;
+return null;
+}
+}
+

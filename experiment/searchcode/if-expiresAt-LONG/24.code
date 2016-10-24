@@ -1,0 +1,7 @@
+private Map<String, SessionInfo> sessions = new HashMap<>(); 	// <fileName~token, (fileOffset, expiresAt)>
+
+private static final long SESSION_TIMEOUT_INTERVAL = 10 * 60 * 1000L;
+for (Map.Entry<String, SessionInfo> entry : sessions.entrySet()) {
+if (System.currentTimeMillis() > entry.getValue().expiresAt) {
+keysToRemove.add(entry.getKey());
+

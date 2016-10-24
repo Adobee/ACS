@@ -1,0 +1,6 @@
+node cNext = curr.next;
+node cPrev = curr.prev;
+if(cNext != null){    //move referred node to tail to make it becomes most recently used
+if(cPrev == null){
+mHead = cNext;
+

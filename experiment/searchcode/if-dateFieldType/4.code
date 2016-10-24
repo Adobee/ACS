@@ -1,0 +1,8 @@
+public class DateParterMatcher extends BaseMatcher<Date> {
+private int expected;
+
+private DateFieldType type;
+int value = cal.get(type.calendarField());
+if (type == DateFieldType.MONTH) {
+return expected == (value + 1);
+

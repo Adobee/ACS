@@ -1,0 +1,7 @@
+Stack<Character> stack = new Stack<Character>();
+for (int i = 0; i < s.length(); i++) {
+Character character = s.charAt(i);
+if (isOpen(character)) {
+if(i == s.length() - 1){
+return i;
+

@@ -1,0 +1,7 @@
+import org.clafer.ir.IrAnd;
+import org.clafer.ir.IrBoolExpr;
+import org.clafer.ir.IrIfThenElse;
+import org.clafer.ir.IrImplies;
+public IrBoolExpr visit(IrImplies ir, Void a) {
+if (ir.getConsequent() instanceof IrAnd) {
+

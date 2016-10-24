@@ -1,0 +1,6 @@
+private UtilityEquation getSmallestRatioSupport(List<UtilityEquation> equations, Integer activeLabel) {
+if (equations.size() == 0) return null;
+UtilityEquation ret = equations.get(0);
+for (int i = 1; i < equations.size(); i++)
+if (ret.getCQRatio(activeLabel) > equations.get(i).getCQRatio(activeLabel))
+

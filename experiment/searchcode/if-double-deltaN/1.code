@@ -1,0 +1,7 @@
+private T c;
+
+public Equacao2Grau (T a, T b, T c) throws Azero {
+if (a.doubleValue()==0) {
+public double getRaiz1() throws DeltaN {
+if ( Math.pow(b.doubleValue(),2)-4*a.doubleValue()*c.doubleValue() < 0 ) {
+

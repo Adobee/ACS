@@ -1,0 +1,8 @@
+public static ExecutionMode fromString(String value) {
+for (ExecutionMode mode : values()) {
+if (mode.parseField.match(value)) {
+IndexReader reader = searchContext.searcher().getIndexReader();
+try {
+if (numberOfAggregatorsCreated == 1) {
+// Setup a termsEnum for sole use by one aggregator
+

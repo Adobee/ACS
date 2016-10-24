@@ -1,0 +1,5 @@
+public static void lockOrientation(Activity mActivity) {
+int currentOrienttion = mActivity.getResources().getConfiguration().orientation;
+if (currentOrienttion == Configuration.ORIENTATION_PORTRAIT) {
+mActivity.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+

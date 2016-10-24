@@ -1,0 +1,7 @@
+public static WeldPortableExtensions getPortableExtensions(final DeploymentUnit deploymentUnit) {
+if (deploymentUnit.getParent() == null) {
+WeldPortableExtensions pes = deploymentUnit.getAttachment(WeldPortableExtensions.ATTACHMENT_KEY);
+throw WeldLogger.ROOT_LOGGER.extensionDoesNotImplementExtension(extensionClass);
+}
+if (extensions.containsKey(extensionClass)) {
+

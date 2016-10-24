@@ -1,0 +1,8 @@
+* <p> This algorithm attempts to create a tree of size <tt>requestedSize</tt>,
+* or &quot;slightly less&quot;.
+*
+* If the pipeline does not specify a size it wants (it uses <tt>NOSIZEGIVEN</tt>),
+// we use size distributions -- did the user specify any?
+if (!canPick())
+state.output.fatal(&quot;RandomBranch requires some kind of size distribution set, either with &quot; + P_MINSIZE + &quot;/&quot; + P_MAXSIZE + &quot;, or with &quot; + P_NUMSIZES + &quot;.&quot;,
+

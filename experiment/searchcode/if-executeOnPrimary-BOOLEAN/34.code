@@ -1,0 +1,9 @@
+public Object executeOn(ServerLocation p_server, Op op, boolean accessed,boolean onlyUseExistingCnx) {
+ServerLocation server = p_server;
+if (this.serverAffinity.get()) {
+if (connMap != null &amp;&amp; !connMap.isEmpty()) {
+conn = connMap.get(server);
+}
+boolean borrow = true;
+if (conn != null) {
+

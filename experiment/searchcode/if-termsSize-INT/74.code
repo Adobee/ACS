@@ -1,0 +1,13 @@
+private ObjectObjectOpenHashMap<String, CollectionStatistics> fieldStatistics = HppcMaps.newNoNullKeysMap();
+private int maxDoc;
+
+public DfsSearchResult() {
+
+}
+
+public DfsSearchResult(long id, SearchShardTarget shardTarget) {
+super.readFrom(in);
+id = in.readLong();
+int termsSize = in.readVInt();
+if (termsSize == 0) {
+

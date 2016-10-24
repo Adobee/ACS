@@ -1,0 +1,10 @@
+assertEquals(1, open.numDeletedDocs());
+assertEquals(4, open.maxDoc());
+}
+writer.close();
+if (random().nextBoolean()) {
+files.add(f);
+}
+final boolean simpleTextCFS = files.contains(&quot;_0.scf&quot;);
+assertTrue(files.toString(), files.contains(&quot;segments_1&quot;));
+

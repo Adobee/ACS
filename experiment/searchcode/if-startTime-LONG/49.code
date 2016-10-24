@@ -1,0 +1,10 @@
+package com.streamingopentok;
+
+import android.util.Log;
+
+public class FPSCounter {
+long startTime = System.nanoTime();
+frames++;
+if(System.nanoTime() - startTime >= 1000000000) {
+Log.d(&quot;FPSCounter&quot;, &quot;fps: &quot; + frames);
+

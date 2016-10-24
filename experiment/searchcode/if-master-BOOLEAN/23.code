@@ -1,0 +1,8 @@
+public class MasterLogic {
+
+public static boolean save(MasterValue masterValue){
+boolean result = false;
+if(masterValue!=null){
+if(masterValue.exists()){
+result = MasterDao.update(masterValue);
+

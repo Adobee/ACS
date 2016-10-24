@@ -1,0 +1,11 @@
+this.seed = seed;
+}
+
+@Override
+public synchronized void setSeed(long seed) {
+this.seed = seed;
+seed ^= (seed << 4);
+long res = (seed >> 24) % max;
+if (res < 0) res += max;
+return res;
+

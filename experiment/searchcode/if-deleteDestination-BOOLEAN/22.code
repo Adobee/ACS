@@ -1,0 +1,14 @@
+} else if (! stopped) {
+filesUpload();
+}
+}
+
+private boolean cancelDownload(boolean mayInterruptIfRunning){
+if (downloader != null) {
+return downloader.cancel(mayInterruptIfRunning);
+}
+return true;
+}
+
+private boolean cancelUpload(boolean mayInterruptIfRunning){
+

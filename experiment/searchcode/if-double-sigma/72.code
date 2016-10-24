@@ -1,0 +1,11 @@
+package stat;
+
+public class NormalDistribution {
+double mu, sigma;
+NormalDistribution standardND;
+public double getPDF(double X) {
+double res;
+if(X < 0) {
+X = -1*X;
+res = 1 - (1/(sigma*Math.sqrt(2*Math.PI)))*Math.pow(Math.E, -1*Math.pow((X - mu),2)/(2*Math.pow(sigma,2)));
+

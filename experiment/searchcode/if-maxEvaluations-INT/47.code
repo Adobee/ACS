@@ -1,0 +1,10 @@
+public HillClimbingClustering(Project project, long maxEvaluations, int maxMovements) throws Exception
+{
+this(null, project, maxEvaluations, maxMovements);
+private int countMovements(int[] original, int[] current)
+{
+int movements = 0;
+
+for (int i = 0; i < original.length; i++)
+if (original[i] != current[i])
+

@@ -1,0 +1,13 @@
+* abc bac cab -> cba bca abc -> acb cab
+*/
+
+public static void swap(char[] str, int startIndex, int endIndex) {
+
+char swap;
+swap = str[startIndex];
+public static void permute(char[] array, int endIndex) {
+
+if (endIndex == 0) {
+for (char i : array) {
+System.out.print(i);
+

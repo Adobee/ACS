@@ -1,0 +1,12 @@
+private final ArrayList<CacheStorage> shardToStorage = new ArrayList<CacheStorage>();
+private final int numShards;
+
+/**
+* @param baseDir
+* @throws FileNotFoundException
+*/
+public ShardedStorageReader(String baseDir, int numShards) {
+super();
+this.numShards = numShards;
+for (int shardNo = 0; shardNo < numShards; ++shardNo) {
+

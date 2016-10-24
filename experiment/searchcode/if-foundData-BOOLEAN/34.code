@@ -1,0 +1,11 @@
+Hashtable ht = (Hashtable) dataMap.get(foundKey);
+if (ht == null) {
+fail(&quot;didn&#39;t find ht &quot; + foundKey + &quot;/&quot; +
+foundData);
+}
+
+if (ht.get(foundData) != null) {
+ht.remove(foundData);
+if (ht.size() == 0) {
+dataMap.remove(foundKey);
+

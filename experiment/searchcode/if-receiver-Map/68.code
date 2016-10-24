@@ -1,0 +1,8 @@
+receiver = newEventReceiver(queueName, consumer);
+MessageReceiver existReceiver = receiverMap.putIfAbsent(queueName, receiver);
+if (existReceiver != null) {
+QueueServerConfig queueServerInfo = veinsConfigContext.getTicketContext().getTicket(new TicketKey(DefaultTicketCategory.QUEUE_SERVER, Integer.toString(queueServerId)));
+
+MessageReceiverFactory messageReceiverFactory = receiverFactoryMap.get(queueServerId);
+if(messageReceiverFactory == null) {
+

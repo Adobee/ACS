@@ -1,0 +1,8 @@
+assertThat(coercer.handles(null, List.class), is(false));
+
+// coerce
+
+// boolean
+assertThat(coercer.coerce(null, Boolean.TYPE), equalTo((Object) Boolean.FALSE));
+assertThat(coercer.coerce(&quot;true&quot;, Boolean.class), equalTo((Object) Boolean.TRUE));
+

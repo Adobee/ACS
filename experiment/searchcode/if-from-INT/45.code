@@ -1,0 +1,8 @@
+protected int yoloMaxCooldown = (4 - Model.model.powerupcount) * 5;
+
+protected int cooldown = maxCooldown;
+
+public void use (int fromX, int fromY, int targetX, int targetY) {
+if (cooldown == 0) {
+cooldown = Model.model.yolomode ? yoloMaxCooldown : maxCooldown;
+

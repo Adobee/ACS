@@ -1,0 +1,15 @@
+Socket connection;
+ObjectOutputStream outstream;
+public Sender(Message msg){
+this.msg=msg;
+}
+
+public void sendMsg()
+outstream=new ObjectOutputStream(connection.getOutputStream());
+outstream.writeObject(msg);
+connection.close();
+
+} catch (Exception e) {
+
+if(msg.type.equalsIgnoreCase(&quot;insert&quot;)){
+

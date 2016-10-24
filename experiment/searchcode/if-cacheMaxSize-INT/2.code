@@ -1,0 +1,12 @@
+private final int cacheMaxSize;
+
+public CachedDomProvider(DomProvider provider, int cacheMaxSize) {
+this.cacheMaxSize = cacheMaxSize;
+return size() > cacheMaxSize;
+}
+};
+}
+
+private DOMSource recover(String keyURI) {
+if(cache==null){
+

@@ -1,0 +1,4 @@
+mat[i][total - 1] += p * (endRow - startRow + endColumn - startColumn + 2);
+for (int k = 0; k < total - 1; k++) {
+if (targetRow == row[k] &amp;&amp; targetColumn == column[k]) {
+

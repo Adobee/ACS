@@ -1,0 +1,11 @@
+if(decision instanceof Clause){
+Clause cl = (Clause)decision;
+if (! cl.getDecisions().isEmpty()) {
+if (cl.getDecisions().get(0) instanceof Clause) {
+return (IQDSTerm)cl.getDecisions().get(0);
+}
+} else {
+return null;
+}
+} else if(decision instanceof IQDSTerm){
+

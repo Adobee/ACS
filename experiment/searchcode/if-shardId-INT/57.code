@@ -1,0 +1,13 @@
+public class ShardId implements Streamable, Comparable<ShardId> {
+
+private Index index;
+
+private int shardId;
+
+private int hashCode;
+
+private ShardId() {
+public int compareTo(ShardId o) {
+if (o.getId() == shardId) {
+int compare = index.getName().compareTo(o.getIndex().getName());
+

@@ -1,0 +1,9 @@
+private OperRoleMapper operRoleMapper;
+@Autowired
+private RoleMapper roleMapper;
+
+@Override
+public boolean checkPasswd(Oper oper) {
+SysOper sysOper = operMapper.load(oper.getOperId());
+if(sysOper.getPasswd().equals(oper.getPasswd())){
+

@@ -1,0 +1,10 @@
+private int size;
+private int position;
+
+public DynamicIntStack(int initialSize) {
+stack = new int[initialSize];
+public void push(int i) {
+if (position == size) {
+int[] old = stack;
+stack = new int[size * 2];
+

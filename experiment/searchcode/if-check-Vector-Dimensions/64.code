@@ -1,0 +1,10 @@
+private IdentityMatrix(int dimensions) {
+super(dimensions);
+if (dimensions<1) throw new IllegalArgumentException(&quot;IdentityMatrix must have at least one dimension&quot;);
+@Override
+public AxisVector getRow(int i) {
+return AxisVector.create(i,dimensions);
+}
+
+@Override
+

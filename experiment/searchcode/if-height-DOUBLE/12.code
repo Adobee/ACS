@@ -1,0 +1,15 @@
+public double width;
+public double height;
+
+public DoubleDimension()
+{
+}
+
+public DoubleDimension(double width, double height)
+public DoubleDimension(double width, double height ,int unit)
+{
+if (unit == MILLIMETER)
+{
+this.width = pixels(width);
+this.height = pixels(height);
+

@@ -1,0 +1,10 @@
+this.simplex = simplex;
+}
+
+/** {@inheritDoc} */
+@Override
+protected RealPointValuePair doOptimize() throws MathUserException {
+final ConvergenceChecker<RealPointValuePair> checker = getConvergenceChecker();
+while (true) {
+if (iteration > 0) {
+

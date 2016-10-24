@@ -1,0 +1,7 @@
+public int randomSampling() {
+double accumulate = 0;
+double random = rnd.nextDouble();
+for (Map.Entry<Integer, Double> entry : probs.entrySet()) {
+accumulate += entry.getValue();
+if (accumulate > random) {
+

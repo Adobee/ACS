@@ -1,0 +1,6 @@
+for (Class extensionClass : getExtensionClassList(ext)) {
+if (ext instanceof IBuiltInExtensionPoint) {
+log.debug(&quot;Registering built-in extension named &#39;{}&#39; of type &#39;{}&#39;&quot;, name, extensionClass.getSimpleName());
+} else if (shouldLog) {
+log.info(&quot;Registering extension named &#39;{}&#39; of type &#39;{}&#39;&quot;, name, extensionClass.getSimpleName());
+

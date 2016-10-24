@@ -1,0 +1,11 @@
+public class Stats extends Model{
+
+@Expose
+@Column(name = &quot;datetime&quot;)
+public Long datetime;
+int minutesAgo = (int) Math.floor(timeSince()/(1000*60));
+if (minutesAgo == 1) {
+return minutesAgo + &quot; min ago&quot;;
+}
+return minutesAgo + &quot; mins ago&quot;;
+

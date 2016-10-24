@@ -1,0 +1,4 @@
+public static String recursiveLCS(CharSequence cs1, CharSequence cs2) {
+if (cs1.equals(&quot;&quot;) || cs2.equals(&quot;&quot;)) return &quot;&quot;;
+else if (cs1.charAt(0) == cs2.charAt(0)) return cs1.charAt(0) + recursiveLCS(cs1.subSequence(1, cs1.length()), cs2.subSequence(1, cs2.length()));
+

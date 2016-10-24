@@ -1,0 +1,7 @@
+private View makeRow(View view, RowComputeResult rowInfo, ViewGroup parent) {
+if (mCallbacks == null) {
+Log.e(TAG, &quot;Call to makeRow without an adapter installed&quot;);
+if (rowInfo.isHeader) {
+if (view == null) {
+view = mCallbacks.newCollectionHeaderView(getContext(), parent);
+

@@ -1,0 +1,10 @@
+public String orderIdFor(String externalReference) throws NoOrderFoundException {
+String orderId = null;
+for (Order order : orders) {
+if (order.hasExternalReference(externalReference)) {
+orderId = order.getOrderID();
+}
+}
+if (orderId == null) {
+throw new NoOrderFoundException(&quot;No order found for external reference &quot; + externalReference);
+

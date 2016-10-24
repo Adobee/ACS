@@ -1,0 +1,7 @@
+static public double[] SolveLineEquation(double[] A) {
+double[] roots = null;
+if(A[1] != 0) { // ðåøåíèå åñòü
+static public double[] SolveQuadraticEquation(double[] A) {
+double[] roots = null;
+if(A[2] == 0) {
+

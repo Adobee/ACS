@@ -1,0 +1,6 @@
+queryBuilder.append(&quot;  fn.file_number as fileNo,&quot;);
+queryBuilder.append(&quot;  if(gm.charge_description <> &#39;&#39;, gm.charge_description, ge.description) as agentNo,&quot;);
+queryBuilder.append(&quot;  and ba.ap_amount <> 0.00 &quot;);
+queryBuilder.append(&quot;group by fn.id, ba.id &quot;);
+if (&quot;true&quot;.equalsIgnoreCase(groupByInvoiceFlag)) {
+

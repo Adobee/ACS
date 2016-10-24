@@ -1,0 +1,8 @@
+UNKNOWN, GET, POST, HEAD, OPTIONS, PUT, DELETE, TRACE;
+
+public static HttpMethod valueOfString(final String method) {
+if (StringUtils.isBlank(method)) {
+for (HttpMethod httpMethod : values()) {
+if (httpMethod.name().equalsIgnoreCase(method.trim())) {
+return httpMethod;
+

@@ -1,0 +1,11 @@
+private final TokenStreamPredicate lookFor;
+private final TokenStreamPredicate stopAt;
+
+private boolean previousLookForResult;
+boolean lookForResult = lookFor.matching(topLevel);
+if(lookForResult)
+{
+lastOccurrence = offset;
+}
+if(stopAt.matching(topLevel))
+

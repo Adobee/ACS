@@ -1,0 +1,8 @@
+public void testMPChain() throws MuleException, Exception
+{
+ChainMessageProcessorBuilder builder = new ChainMessageProcessorBuilder();
+builder.chain(new AppendingMP(&quot;1&quot;), new AppendingMP(&quot;2&quot;), new AppendingMP(&quot;3&quot;));
+private static class AppendingInterceptingMP extends AppendingMP implements InterceptingMessageProcessor
+{
+private boolean stopProcessing;
+

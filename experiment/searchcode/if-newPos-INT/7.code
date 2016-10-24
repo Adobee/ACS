@@ -1,0 +1,12 @@
+boolean a = state.areKingsAdjacent();
+
+// move up
+newPos = new Position(col, row + 1);
+if(isMoveValid(newPos, state) ) {
+newPos = new Position(col, row - 1);
+if(isMoveValid(newPos, state) ) {
+positions.add(newPos);
+}
+
+// move left
+

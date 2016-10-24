@@ -1,0 +1,10 @@
+int currX = this.getMyLocation()[0];
+int currY = this.getMyLocation()[1];
+
+if (currX > 0 &amp;&amp; currY > 0) {
+if (currX > 0) {
+
+surroundingCells.add(myGrid[currX-1][currY]);
+}
+if (currX > 0 &amp;&amp; currY < myGrid.length-1) {
+

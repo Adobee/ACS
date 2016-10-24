@@ -1,0 +1,6 @@
+*  @param denominator  the integer denominator
+*  @throws FractionException if denominator=0 */
+public void setFraction(int numerator, int denominator);
+*  @return a fraction which the quotient of the invoking fraction and the secondFraction
+*  @throws FractionException if secondFraction=0 */
+

@@ -1,0 +1,8 @@
+final Set<Long> visitedRelationIds = new HashSet<Long>();
+
+new AbstractVisitor() {
+boolean firstIteration;
+
+public void visit(Node n) {
+if (!visitedNodeIds.add(n.getUniqueId()))
+

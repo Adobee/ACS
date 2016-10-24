@@ -1,0 +1,18 @@
+for(ProviderType providerType : values()){
+if(providerType.type == type){
+return providerType;
+}
+}
+return null;
+}
+
+public static ProviderType getByTypeName(String typeName) {
+for(ProviderType providerType : values()){
+if(providerType.typeName.equals(typeName)){
+return providerType;
+}
+}
+return null;
+}
+}
+

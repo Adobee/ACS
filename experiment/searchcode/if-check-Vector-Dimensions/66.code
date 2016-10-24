@@ -1,0 +1,11 @@
+return new ZeroVector(dimensions);
+}
+
+public static ZeroVector createCached(int dimensions) {
+if (dimensions <= 0)
+throw new IllegalArgumentException(&quot;Can&#39;t create length &quot;
++ dimensions + &quot; ZeroVector. Use Vector0 instead&quot;);
+ZeroVector zv = tryCreate(dimensions);
+if (zv != null) return zv;
+zv = new ZeroVector(dimensions);
+

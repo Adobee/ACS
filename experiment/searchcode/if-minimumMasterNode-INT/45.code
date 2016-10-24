@@ -1,0 +1,9 @@
+return startCluster(numberOfNodes, -1);
+}
+
+private List<String> startCluster(int numberOfNodes, int minimumMasterNode) throws ExecutionException, InterruptedException {
+return startCluster(numberOfNodes, minimumMasterNode, null);
+}
+
+private List<String> startCluster(int numberOfNodes, int minimumMasterNode, @Nullable int[] unicastHostsOrdinals) throws ExecutionException, InterruptedException {
+

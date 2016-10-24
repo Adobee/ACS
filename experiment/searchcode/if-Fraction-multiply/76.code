@@ -1,0 +1,7 @@
+@Override
+public BigFraction E(ORC_Context context, Boolean r) throws Exception {
+if(r == null){
+return A.E(context, null).add(BigFraction.ONE.subtract(A.P(context, BigFraction.ONE, BigFraction.ONE)).multiply(B.E(context, null)));
+}else if(r==true){
+return A.E(context, true).add(BigFraction.ONE.subtract(A.P(context, BigFraction.ZERO, BigFraction.ONE)).multiply(B.E(context, true)));
+

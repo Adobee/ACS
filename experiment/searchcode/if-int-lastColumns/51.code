@@ -1,0 +1,7 @@
+* @throws NotStrictlyPositiveException if row or column dimension is not
+* positive.
+* @see #createBlocksLayout(Field, int, int)
+final int length = rawData[i].length;
+if (length != columns) {
+throw new DimensionMismatchException(columns, length);
+

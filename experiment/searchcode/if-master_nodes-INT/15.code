@@ -1,0 +1,9 @@
+int master_nodes = 0;
+for (DiscoveryNode node : nodes) {
+if (node.masterNode()) {
+master_nodes++;
+}
+}
+DiscoveryNode master = null;
+if (service.hasEnoughMasterNodes(nodes)) {
+

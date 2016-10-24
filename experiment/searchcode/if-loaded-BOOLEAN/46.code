@@ -1,0 +1,14 @@
+public abstract class BaseModHelper {
+public boolean loaded;
+
+public BaseModHelper() {
+this.loaded = false;
+}
+
+public boolean isLoaded() {
+return this.loaded;
+}
+
+public void init() {
+if (Loader.isModLoaded(this.getModId())) {
+

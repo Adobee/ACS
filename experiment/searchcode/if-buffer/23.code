@@ -1,0 +1,15 @@
+buffer.windowStart = buffer.windowPosition;
+}
+
+public byte next() {
+
+if (isEnd()) return -1;
+
+buffer.windowPosition++;
+
+if (isEmpty()) preload();
+
+byte b = buffer.buffer[buffer.windowPosition];
+
+if (b == 0) return -1;
+

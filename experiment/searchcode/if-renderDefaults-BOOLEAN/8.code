@@ -1,0 +1,11 @@
+public class ClassAtributeDecorator extends Behavior {
+
+public ClassAtributeDecorator(Brush brush, Defaults defaults) {
+if ((null == brush) || (null == defaults)) {
+result.append(renderBrush());
+result.append(renderDefaults());
+return result.toString();
+}
+
+private String renderDefaults() {
+

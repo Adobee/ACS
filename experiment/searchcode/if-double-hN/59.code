@@ -1,0 +1,6 @@
+// Danielson-Lanczos algorithm:
+for (int N = 2, hN = 1; N <= len; hN = N, N <<= 1) {
+final double theta = sign*TWOPI/N;
+for (int j=i,  k = 0; j < i+hN; j++, k+= tablestep) {
+double tpre  =  real[j+hN] * cosTable[k] - imag[j+hN] * sinTable[k];
+

@@ -1,0 +1,11 @@
+* Created by dmitry on 02.03.16.
+*
+* a0 +a1*x = 0
+* x = -a0 / a1
+*/
+public class LinearEquation {
+protected double a0;
+LinkedList<Double> solve() throws Exception {
+LinkedList<Double> solution = new LinkedList<Double>();
+if (a1 != 0 ) {
+

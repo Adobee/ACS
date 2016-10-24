@@ -1,0 +1,10 @@
+int[] left = new int[l];
+int[] right = new int[l];
+int sum = 0;
+int lHeight = 0;
+int rHeight = 0;
+int height = 0;
+if(l == 0)
+return 0;
+for(int i = 0; i < l;++i){
+

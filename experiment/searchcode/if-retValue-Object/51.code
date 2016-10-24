@@ -1,0 +1,8 @@
+public String listClasses(){
+retvalue=&quot;{\&quot;root\&quot;:&quot;;
+classesList = classesBO.listClasses();
+if(classesList != null){
+retvalue+=JSONArray.fromObject(classesList);
+}else{
+retvalue+=&quot;[]&quot;;
+

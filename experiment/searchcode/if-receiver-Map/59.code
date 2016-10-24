@@ -1,0 +1,7 @@
+public void saveReceiver(Integer emailId, Integer userId){
+if(isReceiverExisted(emailId, userId)){
+return;
+paramMap.put(&quot;emailId&quot;, emailId);
+paramMap.put(&quot;userId&quot;, userId);
+sqlSessionTemplate.insert(&quot;Email.insertReceiver&quot;, paramMap);
+

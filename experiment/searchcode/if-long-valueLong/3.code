@@ -1,0 +1,7 @@
+ValueLong localValueLong = (ValueLong)paramValue;
+long l = this.value * localValueLong.value;
+if ((this.value == 0L) || (this.value == 1L) || (localValueLong.value == 0L) || (localValueLong.value == 1L)) {
+ValueLong localValueLong = (ValueLong)paramValue;
+if (localValueLong.value == 0L) {
+throw DbException.get(22012, getSQL());
+

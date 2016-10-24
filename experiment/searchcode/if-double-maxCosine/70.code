@@ -1,0 +1,10 @@
+// check that the simplified outer box is approximately a square, angle-wise
+org.opencv.core.Point[] boxPointsArray = boxPoints2f.toArray();
+double maxCosine = 0;
+for (int j = 0; j < 4; j++) {
+maxCosine = Math.max(maxCosine, getLineAngle(pL, pIntersect, pR));
+}
+if (maxCosine > maxOuterAngleCos) {
+if (DEBUG) {
+// drawPoints(bitMat, new MatOfPoint(boxPoints2f.toArray()), new Scalar(255, 255, 255), 1);
+

@@ -1,0 +1,12 @@
+Node closestOnSameLine = new ClosestNodeLocator().getClosestNode(ast, pos, new INodeAcceptor()
+{
+public boolean doesAccept(Node node)
+{
+if (node instanceof NewlineNode || node instanceof RootNode)
+|| (node.getPosition().getStartLine() == pos.getStartLine());
+}
+});
+if (closestOnSameLine == null) // nothing on same line
+{
+// find next type/method def following our position, or any node on very next line
+

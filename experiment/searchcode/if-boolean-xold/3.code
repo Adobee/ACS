@@ -1,0 +1,8 @@
+public boolean onTouchEvent(MotionEvent event) {
+
+if (pX < 0.28 || pX > 0.64) {
+pXOld = pX;
+Log.i(TAG, &quot;diff: &quot; + Math.abs(pX - pXOld));
+
+if (pXOld != 0f &amp;&amp; Math.abs(pX - pXOld) > 0.01 ) {
+

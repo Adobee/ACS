@@ -1,0 +1,16 @@
+public class SrvConnect_handler extends Listen_handler {
+
+public SrvConnect_handler(String args)
+{
+data = args;
+}
+
+public boolean HasValidData()
+{
+if(data.equals(&quot;2&quot;))
+return true;
+else
+{
+threading.StopSender();
+if(data.equals(&quot;1&quot;))
+

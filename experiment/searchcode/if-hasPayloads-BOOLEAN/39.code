@@ -1,0 +1,14 @@
+private final Iterator<Input> i;
+private final boolean hasPayloads;
+private boolean first;
+private Input current;
+public BytesRef payload() {
+return current.payload;
+}
+
+@Override
+public boolean hasPayloads() {
+return hasPayloads;
+}
+}
+

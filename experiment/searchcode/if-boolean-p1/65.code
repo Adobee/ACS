@@ -1,0 +1,7 @@
+public class Solution {
+public boolean isOneEditDistance(String s, String t) {
+int len1 = s.length();
+while(p1<len1&amp;&amp;p2<len2){
+if(s.charAt(p1)!=t.charAt(p2)){
+return s.substring(p1+1).equals(t.substring(p2))||t.substring(p2+1).equals(s.substring(p1))||t.substring(p2+1).equals(s.substring(p1+1));
+

@@ -1,0 +1,5 @@
+public static <A extends Appendable> A toJson(final Object o, final A appendable) {
+if (multi == null) multi = new multi() { };
+public static <A extends Appendable> A toJson(final Iterable<?> iterable, final A appendable) {
+if (iterable instanceof Map) return toJson((Map) iterable, appendable);
+

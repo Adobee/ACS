@@ -1,0 +1,10 @@
+private String encodeUrlPathSegment(String pathSegment, HttpServletRequest httpServletRequest) {
+String characterEncoding = httpServletRequest.getCharacterEncoding();
+if (characterEncoding == null) {
+characterEncoding = WebUtils.DEFAULT_CHARACTER_ENCODING;
+}
+String encodedPathSegment = null;
+
+try {
+encodedPathSegment = UriUtils.encodePathSegment(pathSegment, characterEncoding);
+

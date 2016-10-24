@@ -1,0 +1,8 @@
+Object object = getFieldValue(path, Object.class);
+if (object instanceof byte[]) {
+return (byte[]) object;
+private static List<Object> appendValues(Object maybeList, Object value) {
+List<Object> list;
+if (maybeList instanceof List) {
+//maybeList is already a list, we append the provided values to it
+

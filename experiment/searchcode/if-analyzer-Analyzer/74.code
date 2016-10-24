@@ -1,0 +1,11 @@
+import net.codelab.core.lucene.index.generic.LuceneIndex;
+import org.apache.lucene.analysis.Analyzer;
+import org.apache.lucene.analysis.standard.StandardAnalyzer;
+public class DefaultAnalyzerProviderImpl implements AnalyzerProvider {
+
+private Analyzer analyzer;
+
+@Override
+public Analyzer getIndexAnalyzer() {
+if(analyzer != null)
+

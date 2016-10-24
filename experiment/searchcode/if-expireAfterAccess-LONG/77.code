@@ -1,0 +1,7 @@
+private static long generateSessionId() {
+return (long) (Math.random() * Long.MAX_VALUE);
+}
+
+private final Cache<Long, Session> sessions = CacheBuilder.newBuilder()
+.expireAfterAccess(1, TimeUnit.HOURS).build();
+

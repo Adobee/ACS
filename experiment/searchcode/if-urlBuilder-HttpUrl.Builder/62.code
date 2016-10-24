@@ -1,0 +1,6 @@
+public void RequestServer(String fullUrl, HashMap<String, String> params, ResponseCallback callback) {
+responseCallback = callback;
+HttpUrl.Builder urlBuilder = HttpUrl.parse(fullUrl).newBuilder();
+if (params != null) {
+Set<String> keys = params.keySet();
+

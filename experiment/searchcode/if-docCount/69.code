@@ -1,0 +1,16 @@
+return documents;
+}
+
+
+/**
+* 计算该sample的特征向量的平均值，方法是将每篇文档的特征向量的对应维的值相加，最后除以文档总数
+*/
+public void computeMeanFeatures(){
+if(docCount==0)
+return;
+int featureSize=documents.get(0).getFeatures().size();
+for(int i=0;i<docCount;i++){
+for(int j=0;j<featureSize;j++){
+if(i==0){
+feature[j]=documents.get(i).getFeatures().get(j);
+

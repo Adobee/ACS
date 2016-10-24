@@ -1,0 +1,7 @@
+/** Decodes an arbitrary server response with encoding detection. */
+final class Decoder {
+private static final ApiEncoding V0_ENCODING = new ApiEncodingV0();
+String prefix = rawValue.substring(0, pipeLocation + 1);
+ApiEncoding encoding = ENCODING_BY_PREFIX.get(prefix);
+if (encoding == null) {
+

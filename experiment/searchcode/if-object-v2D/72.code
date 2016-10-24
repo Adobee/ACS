@@ -1,0 +1,10 @@
+if(contextnr >= 0)
+newcontext= View2dUtil.UI_view2d_tab_set(v2d, contextnr);
+
+if(vertical) {
+w= (int)(v2d.cur.xmax - v2d.cur.xmin);
+/* before setting the view */
+if(vertical) {
+/* only allow scrolling in vertical direction */
+v2d.keepofs |= View2dTypes.V2D_LOCKOFS_X|View2dTypes.V2D_KEEPOFS_Y;
+

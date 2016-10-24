@@ -1,0 +1,7 @@
+public int classify(double[] features) {
+if (normalized) features = normaliseFeatures(features);
+double oldDistance, newDistance;
+for (int i = 1; i < trainingSamples.size(); i++) {
+newDistance = distance(trainingSamples.get(i).featureVec, features);
+if (newDistance < oldDistance) {
+

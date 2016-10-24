@@ -1,0 +1,11 @@
+* @exception DimensionMismatchException
+*                if array does not have 2 elements
+* @see #toArray()
+*/
+public Vector2D(double[] v) throws DimensionMismatchException {
+public static double angle(Vector2D v1, Vector2D v2) throws MathArithmeticException {
+
+double normProduct = v1.getNorm() * v2.getNorm();
+if(normProduct == 0) {
+throw new MathArithmeticException(LocalizedFormats.ZERO_NORM);
+

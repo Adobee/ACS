@@ -1,0 +1,15 @@
+* Calculates element-wise average of arrays.
+*
+*/
+public final class AvgArr {
+
+private final double[] _avg;
+private int _count;
+public AvgArr(final int size, final double fill) {
+_avg = new double[size];
+Arrays.fill(_avg, fill);
+}
+
+public void add(double[] val) {
+if (_avg.length != val.length) {
+

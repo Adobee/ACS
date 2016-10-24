@@ -1,0 +1,9 @@
+* Finds the last build that got integrated to the upstream, or else null.
+*/
+public AbstractBuild<?,?> getLastIntegratedBuild() {
+IntegrateAction ia = getLastIntegrateAction(project);
+return ia!=null ? ia.build : null;
+}
+
+public IntegrateAction getLastIntegrateAction() {
+

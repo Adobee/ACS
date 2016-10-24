@@ -1,0 +1,7 @@
+int iterationId = continueUnfinishedStoriesForm.getIterationId();
+if (iterationId != 0) {
+Iteration iteration = (Iteration) session.load(Iteration.class, new Integer(iterationId));
+String action = selectionForm.getAction();
+if (action.equals(OK_ACTION)) {
+int currentIterationId = selectionForm.getIterationId();
+

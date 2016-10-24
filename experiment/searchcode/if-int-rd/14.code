@@ -1,0 +1,14 @@
+if (root == null)
+return 0;
+int LD = minDepth(root.left);
+int RD = minDepth(root.right);
+if (LD == 0)
+return 1 + RD;
+else if (RD == 0)
+return 1 + LD;
+
+return 1 + Math.min(LD, RD);
+}
+
+public int maxDepth(TreeNode root) {
+

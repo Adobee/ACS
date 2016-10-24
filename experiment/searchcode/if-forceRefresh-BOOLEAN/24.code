@@ -1,0 +1,14 @@
+this.datagrid = datagrid;
+}
+
+/**
+* @param forceRefresh the forceRefresh to set
+*/
+public void setForceRefresh(boolean forceRefresh) {
+Log.trace(&quot;sortInfo: &quot;+sortInfo);
+
+boolean force = forceRefresh;
+forceRefresh = false;
+
+service.getCodelists(range, sortInfo, query, force, new ManagedFailureCallback<DataWindow<UICodelist>>() {
+

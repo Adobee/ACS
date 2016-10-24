@@ -1,0 +1,17 @@
+private Integer intVal;
+private String name;
+private IntOrVar(Integer intVal, String name) {
+this.intVal = intVal;
+return args.get(name);
+}
+
+@Override
+public String toString() {
+if(intVal != null) {
+return intVal.toString();
+}
+return name;
+}
+
+}
+

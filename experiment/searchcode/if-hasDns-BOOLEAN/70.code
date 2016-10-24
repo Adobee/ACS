@@ -1,0 +1,6 @@
+hostName = hostName.toLowerCase(Locale.US);
+boolean hasDns = false;
+for (String altName : getSubjectAltNames(certificate, ALT_DNS_NAME)) {
+hasDns = true;
+if (verifyHostName(hostName, altName)) {
+

@@ -1,0 +1,6 @@
+for(int tempY = 0; tempY + stepSize < maxY; tempY += stepSize){
+double middle = getXYHeight(tempX, tempY) +
+getXYHeight(tempX + stepSize, tempY + stepSize);
+middle /= 4;
+middle += (random.nextDouble() - 0.5) * 2 * stepSize * koeff;
+

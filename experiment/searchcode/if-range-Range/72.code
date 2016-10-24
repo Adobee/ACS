@@ -1,0 +1,10 @@
+private void setupRange(RangeQueryBuilder range) {
+if (priceRange.hasLowerBound()) {
+switch (priceRange.lowerBoundType()) {
+range.gte(priceRange.lowerEndpoint());
+break;
+}
+}
+if (priceRange.hasUpperBound()) {
+switch (priceRange.upperBoundType()) {
+

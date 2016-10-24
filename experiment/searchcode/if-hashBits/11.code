@@ -1,0 +1,11 @@
+private BigInteger strSimHash;
+private int hashbits = 128;
+
+public SimHash(String tokens) {
+this.tokens = tokens;
+this.strSimHash = this.simHash();
+BigInteger fingerprint = new BigInteger(&quot;0&quot;);
+for (int i = 0; i < this.hashbits; i++) {
+if (v[i] >= 0) {
+fingerprint = fingerprint.add(new BigInteger(&quot;1&quot;).shiftLeft(i));
+

@@ -1,0 +1,13 @@
+* Represents an absolute angle in radian.
+*
+* @author jfabi
+*
+*/
+public class NumericAngle
+{
+private double normalizedAngle;
+int result = 1;
+long temp;
+temp = Double.doubleToLongBits(normalizedAngle);
+result = prime * result + (int) (temp ^ (temp >>> 32));
+

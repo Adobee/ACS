@@ -1,0 +1,7 @@
+public class SelectiveLagListener extends LagListener {
+
+private final int packetLossRate;
+
+public SelectiveLagListener(int lagMillisMin, int lagMillisMax, int lossRatePercent, Listener listener) {
+super(lagMillisMin, lagMillisMax, listener);
+

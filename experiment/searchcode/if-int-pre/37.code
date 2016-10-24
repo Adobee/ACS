@@ -1,0 +1,9 @@
+int m = obstacleGrid.length;
+int n = obstacleGrid[0].length;
+int[][] pre = new int[m][n];
+for (int i = 0; i < m; i++) {
+int tempPRE=0;
+for (int j = 0; j < n; j++) {
+if(j>0){
+tempPRE=pre[j - 1];
+

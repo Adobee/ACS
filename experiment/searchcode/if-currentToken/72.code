@@ -1,0 +1,9 @@
+while(!EOF(currentToken) &amp;&amp; !(compare(currentToken,&quot;cfcomponent&quot;) == 0 &amp;&amp; compare(tokens.getPreviousToken(),&quot;/&quot;) == 0)) {
+
+currentToken = tokens.getNextToken();
+
+if(!EOF(currentToken) &amp;&amp; inComment(tokens)) {
+if(isEndComment(tokens)) commentCount--;
+
+} else if(!EOF(currentToken) &amp;&amp; isFunctionBeginTag(currentToken,tokens.getPreviousToken())) {
+

@@ -1,0 +1,11 @@
+public int guardar(InformesHoras ih) {
+int r = ih.getId();
+String query = null;
+
+try {
+if(rs.next()){
+ih.setId(rs.getInt(&quot;ID&quot;));
+r=ih.getId();
+}
+if(ih.getId()==0){
+

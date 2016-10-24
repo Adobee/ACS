@@ -1,0 +1,16 @@
+buffer.filePos = buffer.fileLength - buffer.bufferLength;
+
+if (buffer.filePos < 0) buffer.filePos  = 0;
+
+buffer.read();
+
+buffer.windowPosition = buffer.bufFill - 1;
+buffer.windowStart = buffer.windowPosition;
+}
+
+public byte next() {
+
+if (isEnd()) return -1;
+
+buffer.windowPosition--;
+

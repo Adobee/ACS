@@ -1,0 +1,8 @@
+package zhku.jc.jfetchUrl;
+
+import org.apache.http.conn.DnsResolver;
+import zhku.jc.jfetchUrl.impl.FetchUrlImpl;
+public FetchUrl build(){
+if(dnsResolver!=null){
+return new FetchUrlImpl(getDnsResolver());
+

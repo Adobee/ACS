@@ -1,0 +1,9 @@
+.build();
+}
+
+public static RetrofitApi getInstance(){
+if (retrofitApi == null){
+synchronized (RetrofitApi.class){
+if (retrofitApi == null) {
+retrofitApi = new RetrofitApi();
+

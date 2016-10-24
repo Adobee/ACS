@@ -1,0 +1,5 @@
+public interface EventBatchPreFilter extends EventBatchIntercepter {
+
+static EventBatchPreFilter of(Function<EventBatch, Boolean> beforeComplete, BiFunction<EventBatch, Event, Boolean> beforeAccept) {
+return new EventBatchPreFilter() {
+

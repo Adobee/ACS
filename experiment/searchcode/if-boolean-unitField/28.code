@@ -1,0 +1,13 @@
+controlField.addRune(runeStyle);
+}
+
+@Override
+public void onUnitClick(Unit unit, UnitField.Slot slot) {
+if (slot == UnitField.Slot.HERO) {
+if (listener != null) {
+listener.onUnitSelected(this, unit, slot);
+}
+}
+}
+}
+

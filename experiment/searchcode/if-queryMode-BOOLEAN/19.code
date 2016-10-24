@@ -1,0 +1,8 @@
+endpoint.setQueryMode(queryMode);
+return endpoint;
+}
+
+private boolean removeQueryMode(Map<String, Object> parameters) {
+if (parameters.containsKey(&quot;queryMode&quot;)) {
+return Boolean.valueOf((String)parameters.remove(&quot;queryMode&quot;));
+

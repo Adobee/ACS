@@ -1,0 +1,11 @@
+class ModelGroup extends Particle {
+// fields
+private boolean finalized;
+private Compositor compositor;
+private List<Particle> particles;
+boolean finalize(List<Particle> particles) {
+if (finalized)
+return false;
+
+this.particles = particles;
+

@@ -1,0 +1,16 @@
+* LongBuffer using synchronized method.
+* @author cavinas
+*
+*/
+public class SynchronizedLongBuffer implements LongBuffer{
+int maxSize;
+long[] array;
+idx = -1;
+}
+
+@Override
+public synchronized long add(long val) {
+if (++idx == maxSize)
+idx = 0;
+long retval = array[idx];
+

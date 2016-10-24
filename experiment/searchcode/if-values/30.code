@@ -1,0 +1,12 @@
+public Float3 GetEulerRotationXYZ( Float3 dst )
+{
+// Assuming the angles are in radians.
+float heading, attitude, bank;
+if (Values[3] > 0.998f)
+attitude = FMath.PI/2.0f;
+bank = 0.0f;
+}
+else if (Values[3] < -0.998f)
+{
+// singularity at south pole
+

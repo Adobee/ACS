@@ -1,0 +1,5 @@
+public static <A extends Annotation> A getClassAnnotation(Class<?> clazz, Class<A> annotationClass) {
+if (clazz != null &amp;&amp; annotationClass != null) {
+A annotation = clazz.getAnnotation(annotationClass);
+if (null == annotation) {
+

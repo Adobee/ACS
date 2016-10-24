@@ -1,0 +1,11 @@
+printer.printMap(event);
+}
+
+public void printMap(MapUpdateEvent event) {
+if (event.getMap().getSnakeInfos().length > event.getMap().getHeight()-5) {
+String bg_default = bg_Default;
+
+for (TileContent tc : row) {
+if (tc instanceof MapSnakeBody)
+append(getSnakeColor(((MapSnakeBody)tc).getPlayerId()), bg_color, SNAKE_PART, fg_Default, bg_default, sb);
+

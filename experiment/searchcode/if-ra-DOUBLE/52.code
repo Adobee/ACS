@@ -1,0 +1,9 @@
+public static double[] mul(double[] a, double[] b) {
+int len = Integer.highestOneBit(a.length + b.length) << 1;
+double[] ra = new double[len];
+System.arraycopy(a, 0, ra, 0, a.length);
+fft(1, ra, ia);
+double[] rb;
+double[] ib;
+if (a == b) {
+

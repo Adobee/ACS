@@ -1,0 +1,11 @@
+static HashMap<Long,Long> cache = new HashMap<Long,Long>();
+static {
+cache.put(1L, 1L);
+}
+
+static long totalSteps(long start) {
+long i = start;
+long steps = 0;
+while (true) {
+if (cache.containsKey(i)) {
+

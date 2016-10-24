@@ -1,0 +1,6 @@
+final double ratio = rhs / entry;
+if (MathUtils.equals(ratio, minRatio, epsilon)) {
+// set the pivot element to 1
+double pivotVal = tableau.getEntry(pivotRow, pivotCol);
+tableau.divideRow(pivotRow, pivotVal);
+

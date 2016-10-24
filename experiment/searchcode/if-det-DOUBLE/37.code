@@ -1,0 +1,11 @@
+double b= v.dot(r.direction);
+double det = b*b - v.dot(v) + radius * radius;
+//double t, t1, t2;
+if (det < 0.0) {
+return Double.NaN;
+} else{
+det=Math.sqrt(det);
+}
+final double eps = 1e-4;
+if (b-det>eps){return b-det;}
+

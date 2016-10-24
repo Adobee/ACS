@@ -1,0 +1,11 @@
+static Predicate<String> numberRangePredicate(int maxDigits) {
+
+assert maxDigits > 0;
+
+return new NumberRangePredicate(maxDigits);
+public boolean test(String s) {
+
+int index = s.indexOf(&#39;.&#39;);
+if (index < 0) {
+return s.length() <= maxDigits;
+

@@ -1,0 +1,9 @@
+public android.app.Fragment FadeFragment(int containerViewId, android.app.Fragment showFragment, java.lang.String showFragmentTag, android.app.Fragment hideFragment, java.lang.String hideFragmentTag) {
+try {
+if (hideFragmentTag == null) {// hideFragmentTag为null，第一次加载
+if (hideFragment != null) {
+android.util.Log.w(&quot;Activity  @&quot; + Integer.toHexString(hashCode()), &quot;FadeFragment() Error5：showFragmentTag is null！&quot;);
+}
+else {
+if (showFragmentTag == hideFragmentTag) {
+

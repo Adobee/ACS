@@ -1,0 +1,13 @@
+public class ConsoleLogger implements ILogger {
+
+private boolean verbose;
+
+@Override
+public void log(Object obj) {
+System.out.println(obj);
+}
+
+@Override
+public void setVerbose(boolean isVerbose) {
+this.verbose = isVerbose;
+

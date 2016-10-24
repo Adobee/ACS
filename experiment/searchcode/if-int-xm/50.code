@@ -1,0 +1,6 @@
+int xm = matrix.length;
+int ym = matrix[0].length;
+if (xm == 0 &amp;&amp; ym == 0) return false;
+if (target < matrix[0][0] &amp;&amp; target > matrix[xm - 1][ym - 1]) return false;
+for (int x = 0; x < xm; x++) {
+

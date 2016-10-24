@@ -1,0 +1,7 @@
+import com.bddinaction.flyinghigh.model.Status;
+
+public class InMemoryStatusService implements StatusService {
+public Status statusLevelFor(int statusPoints) {
+for(Status status : Status.values())  {
+if (statusPoints >= status.getMinimumPoints()) {
+

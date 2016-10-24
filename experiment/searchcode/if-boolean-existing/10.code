@@ -1,0 +1,11 @@
+private Collection<Company> existingCompanies;
+private Collection<UserProfile> existingProfiles;
+
+
+private boolean userEmailExists;
+private void evaluateCompanyFields() {
+
+for (Company company : existingCompanies) {
+
+if (company.getEmail().equals(request.getCompanyEmail())) {
+

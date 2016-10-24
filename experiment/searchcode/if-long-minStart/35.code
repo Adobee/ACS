@@ -1,0 +1,8 @@
+public int compareTo(GeneSet other) {
+if(chrom!=other.chrom){
+return chrom>other.chrom ? 1 : -1;
+}
+int x=minStart<other.minStart ? -1 : minStart>other.minStart ? 1 : 0;
+if(x!=0){return x;}
+return x=name.compareTo(other.name);
+

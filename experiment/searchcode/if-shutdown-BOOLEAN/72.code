@@ -1,0 +1,8 @@
+private Thread shutdownHook;
+
+
+public synchronized void set(long delay, TimeUnit unit, boolean runBeforeShutdown) {
+// create executor if necessary
+if (executor == null) {
+executor = new ScheduledThreadPoolExecutor(1, threadFactory);
+

@@ -1,0 +1,12 @@
+import org.fortiss.smg.rulesystem.impl.executor.RuleSystemDroolsDrl;
+
+public class RuleSystemImpl implements RuleSystemInterface{
+
+@Override
+public boolean createRule(Rule rule){
+public boolean modifyRule(Rule rule){
+
+try {
+if(RuleSystemDBImpl.updateRule(rule))
+if(RuleSystemDroolsDrl.deleteRule(rule.getName())&amp;&amp; RuleSystemDroolsDrl.writeRule(rule.toDRL()))
+

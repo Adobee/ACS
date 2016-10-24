@@ -1,0 +1,13 @@
+Direction result = MOVE_NONE;
+for (Direction current : values())
+{
+if (current.ordinal() == direction)
+{
+result = current;
+int direct180;
+
+if (direction > 4)
+direct180 = ((direction + 4) % 9) + 1;
+else
+direct180 = ((direction + 4) % 9);
+

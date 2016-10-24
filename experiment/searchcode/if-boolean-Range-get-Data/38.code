@@ -1,0 +1,10 @@
+public OWLDataRange getRange() {
+return dataRange;
+}
+
+@Override
+public void accept(TemporalAxiomVisitor visitor) {
+FluentDataPropertyRangeAxiomImpl co = (FluentDataPropertyRangeAxiomImpl) o;
+return getProperty().equals(co.getProperty())
+&amp;&amp; getRange().equals(co.getRange());
+

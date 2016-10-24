@@ -1,0 +1,13 @@
+* @author Spence Koehler
+*/
+public class CharacterProfiler {
+
+private int numAdds;
+private int numEmptyAdds;
+private Histogram<Character.UnicodeBlock> ubHistogram;  // unicode block histogram
+public void add(String string) {
+++numAdds;
+
+if (string != null &amp;&amp; !&quot;&quot;.equals(string)) {
+final int len = string.length();
+

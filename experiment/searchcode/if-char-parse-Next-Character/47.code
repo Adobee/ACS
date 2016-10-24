@@ -1,0 +1,10 @@
+public static Character build(ListIterator<Token> tokens) throws ParseException
+{
+Token first = tokens.next();
+if(first.getType() != TokenType.APOSTROPHE)
+next = tokens.next();
+}
+catch(NoSuchElementException e)
+{
+throw new ParseException(&quot;&#39; to close char expected&quot;, first.getLinePos());
+

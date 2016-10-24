@@ -1,0 +1,15 @@
+return new SingleSetValue<>();
+}
+
+@Override
+public void set( T value ) {
+if( isSet() &amp;&amp; this.value != value )
+throw new IllegalStateException( &quot;The value already contains &#39;&quot; + this.value + &quot;&#39; and can&#39;t be changed anymore.&quot; );
+this.value = value;
+}
+
+@Override
+public T get() {
+if( !isSet() )
+throw new IllegalStateException( &quot;The value is not yet set.&quot; );
+

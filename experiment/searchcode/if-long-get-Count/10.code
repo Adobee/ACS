@@ -1,0 +1,12 @@
+public long getHappyTicketCount(int N) {
+long count = 0;
+for (int i = 0; i <= N * MAX_NUMERIC / 2; i++) {
+long combinationCount = getCombinationCount(N, i);
+count += combinationCount * combinationCount;
+}
+return count * 2;
+}
+
+public long getHappyTicketCount2(int N) {
+return getCombinationCount(2 * N, 9 * N);
+

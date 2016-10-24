@@ -1,0 +1,14 @@
+public class BurstCountdown extends Countdown  {
+
+Countdown betweenBursts;
+Countdown inBursts;
+
+public BurstCountdown(int between, int length, int burstdelay) {
+inBursts.cool();
+}
+public boolean timeUp(){
+if(betweenBursts.timeUp())
+reset();
+super.cool();
+//Log.e(&quot;OUTPUTSHOOTER&quot;,&quot;between: &quot;+betweenBursts.countdown+&quot; next burst in: &quot;+countdown);
+

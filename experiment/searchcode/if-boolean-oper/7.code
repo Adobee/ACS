@@ -1,0 +1,12 @@
+public static final IoOperServ OBJ = new IoOperServ();
+/** 异步模式 */
+public boolean _asyncMode = false;
+
+/**
+* 类默认构造器
+Assert.notNull(oper);
+
+if (this._asyncMode) {
+// 工作于同步模式
+SyncIoOperProc.OBJ.execute(oper);
+

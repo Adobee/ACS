@@ -1,0 +1,9 @@
+package anton.alerty.recursion;
+
+public class DrawSquares {
+
+public static void draw(int n, double x, double y, double r){
+if (n == 0) return;
+draw(n - 1, x - r, y + r, r/3);
+draw(n - 1, x - r, y - r, r/3);
+

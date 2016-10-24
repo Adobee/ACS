@@ -1,0 +1,12 @@
+public void updateOffset () {
+float width = getWidth();
+float height = getHeight();
+float localX2 = width / 2;
+float localY2 = height / 2;
+offset[BRX] = localX2Cos - localYSin;
+offset[BRY] = localYCos + localX2Sin;
+}
+
+public void setRegion (TextureRegion region) {
+if (region == null) throw new IllegalArgumentException(&quot;region cannot be null.&quot;);
+

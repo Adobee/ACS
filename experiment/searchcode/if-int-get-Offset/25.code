@@ -1,0 +1,15 @@
+FragmentParentIfc(MandelbrotFragment f, int offsetX, int offsetY)
+{
+this.f = f;
+this.offsetX = offsetX;
+this.offsetY = offsetY;
+}
+
+public byte get(int x, int y)
+{
+x += offsetX;
+y += offsetY;
+
+if (x >= 0 &amp;&amp; x < f.width &amp;&amp;
+y >= 0 &amp;&amp; y < f.height)
+

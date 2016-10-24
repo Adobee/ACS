@@ -1,0 +1,10 @@
+private static final long DEFAULT_ADS_UPDATE_INTERVAL = 20000L;
+private static final long INVALID_ADS_UPDATE_INTERVAL = -1L;
+private long adsUpdateInterval = INVALID_ADS_UPDATE_INTERVAL;
+this.adsBarChangeInterval = adsBarChangeInterval;
+}
+
+private void checkIntervalArgument(long interval) {
+if(interval <= 0) {
+throw new IllegalArgumentException(&quot;Interval value cannot be zero or negative value&quot;);
+

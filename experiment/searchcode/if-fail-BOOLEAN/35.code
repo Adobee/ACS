@@ -1,0 +1,8 @@
+private List<ParamValidator> validators;
+private boolean failStop;
+private boolean failAll;
+
+@Override
+public boolean validate(HttpServletRequest request, Messages msg) {
+if (validators == null || validators.isEmpty())
+

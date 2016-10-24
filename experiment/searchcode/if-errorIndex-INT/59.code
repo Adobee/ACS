@@ -1,0 +1,8 @@
+message =&quot;没赋错误类型！&quot;;
+else if (errorindex == null &amp;&amp; errorindex.equals(&quot;&quot;))
+message =&quot;没赋错误编码！&quot;;
+pterror = (PterrorBean)pterror.findFirstByWhere(&quot; where MOUDLEID = &#39;&quot;+moudleID+&quot;&#39; and ERRORTYPE= &#39;&quot;+errorType+&quot;&#39; and ERRORINDEX =&#39;&quot;+errorindex+&quot;&#39;&quot;);
+
+if (pterror != null)
+message = pterror.getMessage();
+

@@ -1,0 +1,8 @@
+private List<String> fields = new ArrayList<>();
+private Boolean trackScores;
+private JsonObject aggregations;
+private List<SortOption> sorts = new ArrayList<>();
+fields = json.getJsonArray(JSON_FIELD_FIELDS, new JsonArray()).getList();
+trackScores = json.getBoolean(JSON_FIELD_TRACK_SCORES);
+aggregations = json.getJsonObject(JSON_FIELD_AGGREGATIONS);
+

@@ -1,0 +1,7 @@
+for (Plot plot : plots) {
+if (plot.getOwner().equals(player.getName())) {
+owned.add(plot);
+for (Plot plot : plots) {
+if (plot.isAllowed(player)) {
+allowed.add(plot);
+

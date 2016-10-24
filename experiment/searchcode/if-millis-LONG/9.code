@@ -1,0 +1,12 @@
+public class DurationRounder {
+
+private long intervalMillis;
+private long tieBreakMillis;
+
+public void setInterval(Duration interval) {
+public Duration roundDuration(Duration duration) {
+Preconditions.checkNotNull(duration);
+
+long millisToRound = duration.getMillis();
+long segments = millisToRound / intervalMillis;
+

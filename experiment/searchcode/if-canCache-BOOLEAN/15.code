@@ -1,0 +1,11 @@
+return this.description;
+}
+
+public boolean canCache() {
+return true;
+}
+
+public final int[] getPattern(int width, int height, int totalSize) {
+if(!this.canCache())
+return createPattern(width, height, totalSize);
+

@@ -1,0 +1,10 @@
+public abstract class HandleWithByteStream implements HandleData<InputStream, OutputStream> , Executor{
+
+private DataInput dataInput;
+private DataOutPut dataOutPut;
+
+public HandleWithByteStream(DataInput dataInput, DataOutPut dataOutPut) {
+public void execute() throws IOException {
+beforHandle();
+if (dataInput != null &amp;&amp; dataOutPut != null) {
+

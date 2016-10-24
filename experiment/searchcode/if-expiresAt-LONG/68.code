@@ -1,0 +1,7 @@
+private final String key;
+private final long expiresAt;
+private final AtomicLong accessCount;
+private CacheEntry(String key, Object value, long lastAccess, long expiresAt) {
+this.value = value;
+this.key =  key;
+

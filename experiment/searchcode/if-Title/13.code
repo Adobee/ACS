@@ -1,0 +1,10 @@
+this.title = title;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+Movie movie = (Movie) o;
+
+if (title != null ? !title.equals(movie.title) : movie.title != null) return false;
+

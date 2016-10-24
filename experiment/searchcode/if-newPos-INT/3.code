@@ -1,0 +1,15 @@
+return bestStop;
+}
+
+private boolean isAvailable(Object[][] grid, int x, int y, int gridSize) {
+
+if (x < 0 || y < 0)
+private Position getNextPosition(Position start, Position stop, Object[][] grid, int gridSize) {
+
+Position newPos = null;
+
+if (stop == null)
+return null;
+
+// Go to SW
+

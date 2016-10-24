@@ -1,0 +1,14 @@
+public final class DateInfo {
+
+public final int dayOfMonth;
+public final int month;
+public final int year;
+
+public boolean isDisabled;
+|| year == dateInfo.year &amp;&amp; month == dateInfo.month &amp;&amp; dayOfMonth < dateInfo.dayOfMonth;
+}
+
+@Override
+public boolean equals(Object o) {
+if (o instanceof DateInfo) {
+

@@ -1,0 +1,12 @@
+public static int findLocalMinimum(int[] elements, int lowIndex, int highIndex) {
+if (lowIndex > highIndex) {
+return -1;
+}
+
+if (lowIndex == highIndex) {
+return lowIndex;
+}
+
+if (lowIndex + 1 == highIndex) {
+if (elements[lowIndex] < elements[highIndex]) {
+

@@ -1,0 +1,10 @@
+public class dontGetDQdModule extends RobotModule {
+
+dontGetDQdModule(int robotNumber, Team team) {
+super(robotNumber, team);
+Robot me = team.getRobots()[robotNumber];
+Vec2 pos = me.getPosition();
+
+// Y is correct for the goal
+if ((pos.y>(SCREEN_HEIGHT/2)-goalZoneHeight/2) &amp;&amp; (pos.y<(SCREEN_HEIGHT/2)+goalZoneHeight/2)){
+

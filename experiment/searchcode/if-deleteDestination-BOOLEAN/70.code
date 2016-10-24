@@ -1,0 +1,10 @@
+this.aliveServerIds = ZookeeperUtils.getChildren(ZkPathUtils.getIdsPath());
+checkDestination();
+
+}
+
+public boolean stopDestination(String destination) {
+private String doStopDestination(String destination, DestinationConfig destinationConfig) {
+String ret = &quot;ok&quot;;
+if (aliveServerIds.contains(destinationConfig.getRunOn())) {
+

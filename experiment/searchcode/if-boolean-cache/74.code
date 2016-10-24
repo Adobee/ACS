@@ -1,0 +1,8 @@
+private static Cache cache;
+private static boolean cachingEnabled;
+
+public static void setCache(Cache cache){
+synchronized (CacheProvider.class){
+if(CacheProvider.cache != null){
+throw new JsonPathException(&quot;Cache provider must be configured before cache is accessed.&quot;);
+

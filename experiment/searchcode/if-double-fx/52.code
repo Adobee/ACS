@@ -1,0 +1,9 @@
+public static double integrationRectangleSup(double xmin, double xmax, double[] fx) {
+
+//Verifcation des paramètres d&#39;entrées
+if (xmin > xmax || fx.length == 0) {
+public static double integrationTrapeze(double xmin, double xmax, double[] fx) {
+
+//Verifcation des paramètres d&#39;entrées
+if (xmin > xmax || fx.length == 0) {
+

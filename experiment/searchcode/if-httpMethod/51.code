@@ -1,0 +1,21 @@
+* Simple enum for choosing supported HTTP methods
+*
+* @author atsharp
+*
+*/
+public enum HttpMethod {
+
+GET,
+POST,
+PUT,
+DELETE;
+for (HttpMethod m : HttpMethod.values()) {
+if (m.toString().equalsIgnoreCase(httpMethodString)) {
+method = m;
+break;
+}
+}
+return method;
+}
+}
+

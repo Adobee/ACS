@@ -1,0 +1,5 @@
+|| oldlRequest.url().host().equals(&quot;interface.bilibili.com&quot;)) {
+HttpUrl.Builder urlBuilder = chain.request().url().newBuilder();
+String sign = BiliBilliSignUtils.getSign(oldlRequest.url().query());
+urlBuilder.addQueryParameter(Constant.QUERY_SIGN, sign);
+

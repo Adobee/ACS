@@ -1,0 +1,15 @@
+growth = s/2;
+increase = 1.25f;
+life = 40;
+rings = 25;
+flipmax = 6;
+flipmin = 0;
+}
+
+public void tick() {
+if (life<0) {remove = true;}
+life--;
+growth += increase;
+size += growth;
+if (increase>0 &amp;&amp; size > flipmax) {increase*=-1;}
+

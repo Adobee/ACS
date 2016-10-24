@@ -1,0 +1,12 @@
+public HorizontalAlignment getHorizontalAligment() {
+HorizontalAlignment textAlignment = HorizontalAlignment.LEFT;
+
+while (true) {
+final String property = ComputedStyle.getComputedStyle( this.getElement() ).getString(Css.TEXT_ALIGN);
+textAlignment = HorizontalAlignment.CENTER;
+break;
+}
+
+if (HorizontalAlignment.RIGHT.getValue().equals(property)) {
+textAlignment = HorizontalAlignment.RIGHT;
+

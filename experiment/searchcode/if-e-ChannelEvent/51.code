@@ -1,0 +1,6 @@
+CommChannel channel = event.getChannel();
+if (event.getType() == ChannelEvent.ChannelEventType.WRITE_READY) {
+assert(process != null);
+channel.send(process);
+} else if (event.getType() == ChannelEvent.ChannelEventType.READ_READY) {
+

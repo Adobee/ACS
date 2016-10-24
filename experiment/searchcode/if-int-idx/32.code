@@ -1,0 +1,14 @@
+heap = new int[capacity];
+last = 0;
+}
+
+public int left(int idx) {
+if (heap[2*idx+1] == null)
+return -1;
+return 2*idx+1;
+}
+
+public int right(int idx) {
+if (heap[2*idx+2] == null)
+return -1;
+

@@ -1,0 +1,13 @@
+* @author Javier Paniza
+*/
+
+public class MoveColumnToLeftAction extends TabBaseAction {
+
+private int columnIndex;
+if (!XavaPreferences.getInstance().isCustomizeList()) return;
+getTab().movePropertyToLeft(columnIndex);
+}
+
+public int getColumnIndex() {
+return columnIndex;
+

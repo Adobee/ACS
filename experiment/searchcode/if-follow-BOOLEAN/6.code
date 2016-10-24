@@ -1,0 +1,8 @@
+Follow temp=this.followDAO.getFollowByFollowAndFollowed(follow.getFollow().getId(), follow.getFollowed().getId());
+if(temp!=null){
+return &quot;已经关注&quot;;
+}
+boolean result=this.followDAO.addFollow(follow);
+if(!result){
+return &quot;关注失败&quot;;
+

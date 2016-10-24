@@ -1,0 +1,5 @@
+LinearObjectiveFunction f = new LinearObjectiveFunction(new double[] { 7, 3, 0, 0 }, 0 );
+LinearConstraintSet constraints = new LinearConstraintSet(
+new LinearConstraint(new double[] { 3, 0, -5, 0 }, Relationship.LEQ, 0.0),
+new LinearConstraint(new double[] { 2, 0, 0, -5 }, Relationship.LEQ, 0.0),
+

@@ -1,0 +1,9 @@
+package yservice.discovery.balancer;
+
+public final class BalanceStrategyManager {
+
+private static volatile BalanceStrategyManager instance;
+public static BalanceStrategyManager getInstance() {
+if (instance == null) {
+synchronized (BalanceStrategyManager.class) {
+

@@ -1,0 +1,15 @@
+public void updateReward(User user, Article a, boolean clicked) {
+String aId = a.getId();
+RealMatrix xta = MatrixUtils
+AMap.put(aId, AMap.get(aId).add(xta.multiply(xta.transpose())));
+if (clicked){
+bMap.put(aId, bMap.get(aId).add(xta));
+}
+
+
+
+
+}
+
+}
+

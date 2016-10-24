@@ -1,0 +1,13 @@
+boolean allzeros=true;
+boolean allvisited=false;
+g.vertex[0].distance=0;
+g.vertex[0].permanent=true;
+int i=0;
+for(int j=0;j<g.n;j++)//INNER LOOP: distances related to the current row
+{
+if(g.weight[i][j]!=0)
+{
+
+allzeros=false;
+if((g.vertex[i].distance+g.weight[i][j]) < g.vertex[j].distance)
+

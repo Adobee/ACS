@@ -1,0 +1,11 @@
+public class DensityGrid extends MidpointGrid {
+
+private double densityFloor;
+
+public double getDensityFloor() {
+return densityFloor;
+double outerBoundary = radialGrid.getBoundaryPoint(i+1);
+double density = getValue(i);
+
+if (outsideDisk(innerBoundary, outerBoundary, rin, rout)) {
+

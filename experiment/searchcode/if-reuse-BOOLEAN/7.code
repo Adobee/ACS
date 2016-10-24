@@ -1,0 +1,12 @@
+final int length, EncodedFrame reuse) throws EncodeException {
+// Create a new frame if the user passes us null
+if(reuse == null) reuse = new EncodedFrame();
+for(int i = 0; i < mask.length; ++i) {
+mask[i] = (byte)(Math.random() * 256.0);
+}
+
+payloadStart += 4;
+}
+
+if(reuse.raw.length < payloadStart + length) {
+

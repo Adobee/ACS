@@ -1,0 +1,6 @@
+public class ConsistentHash<T> {
+private final int numberOfReplicas;
+private final SortedMap<Integer, T> circle = new TreeMap<Integer, T>();
+
+public ConsistentHash(int numberOfReplicas,/* 虚拟节点数 */Collection<T> nodes/* 物理节点 */) {
+

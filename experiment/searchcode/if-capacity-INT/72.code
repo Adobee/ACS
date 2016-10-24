@@ -1,0 +1,12 @@
+ensureCapacity(size+1);
+elementData[size++] = e;
+return true;
+}
+
+
+public void ensureCapacity(int minCapacity){
+
+int oldCapacity = elementData.length;
+if(minCapacity>oldCapacity){
+Object oldData = elementData;
+

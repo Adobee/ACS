@@ -1,0 +1,9 @@
+public synchronized void startDataNodes(Configuration conf, int numDataNodes,
+StorageType[][] storageTypes, boolean manageDfsDirs, StartupOption operation,
+assert storageCapacities == null || storageCapacities.length == numDataNodes;
+
+if (operation == StartupOption.RECOVER) {
+return;
+}
+if (checkDataNodeHostConfig) {
+

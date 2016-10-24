@@ -1,0 +1,14 @@
+for (EventListener listener : listeners)
+if (listener.keyPressed(event))
+return true;
+return false;
+}
+
+public boolean keyReleased(KeyEvent event) {
+return false;
+}
+
+public boolean mouseReleased(MouseEvent event) {
+for (EventListener listener : listeners)
+if (listener.mouseReleased(event))
+

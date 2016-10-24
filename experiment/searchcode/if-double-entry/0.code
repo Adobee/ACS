@@ -1,0 +1,16 @@
+for (double entry : data) {
+if (entry != v) {
+return false;
+}
+}
+return true;
+for (double entry : data) {
+if (entry < min) {
+min = entry;
+}
+}
+return min;
+}
+
+public static double max(double[] data) {
+

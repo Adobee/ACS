@@ -1,0 +1,9 @@
+public static boolean initialize() {
+// 初始化配置
+if(!Configuration.initialize(Program.application)) {
+Logger.e(&quot;Configuration initialize failed&quot;);
+return false;
+}
+// 初始化网络
+if(!Networking.initialize(Program.application)) {
+

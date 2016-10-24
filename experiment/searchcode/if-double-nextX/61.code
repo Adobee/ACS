@@ -1,0 +1,10 @@
+private double nextX = 0;
+
+public RememberingFunction(final Number value, final double deltaT) {
+this.value = value;
+throw new IllegalArgumentException(&quot;Requesting function value at x=&quot; + x);
+}
+if (x + deltaT >= nextX) {
+while (x + deltaT >= nextX) {
+this.x.addElement(nextX);
+

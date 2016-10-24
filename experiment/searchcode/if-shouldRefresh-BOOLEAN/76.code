@@ -1,0 +1,8 @@
+protected boolean shouldRefreshDropZone(){
+// the HEAD and one after each children
+boolean shouldRefresh = (this.zones.size() != this.getNumChildren() + 1);
+shouldRefresh |= (this.findZone(ID_DROPZONE_HEAD) == null);
+
+if(shouldRefresh == false){
+for(int i = 0; i < this.getNumChildren(); i++){
+

@@ -1,0 +1,18 @@
+M(1000,&quot;m&quot;),
+
+/**
+* Kilometers
+*/
+KM(1000000,&quot;km&quot;);
+
+/**
+* Ratio of unit to default unit.
+*/
+private double ratio;
+private String textRepresentation;
+
+
+/**
+* Constructor of unit with ratio and text representation parameter.
+* @param ratio If the ratio parameter is 1, unit is considered as default.
+

@@ -1,0 +1,16 @@
+String name;
+int nrows;
+int ncols;
+
+double[][] values;
+
+public Matrix(int id, String name){
+this.id = id;
+values = new double[nrows][ncols];
+}
+
+public Matrix(int id, String name, int nrows, int ncols){
+this.id = id;
+this.name = name;
+this.nrows = nrows;
+

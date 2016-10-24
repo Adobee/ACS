@@ -1,0 +1,8 @@
+txMax = Math.max(tx1, tx2);
+
+double invy = 1 / rayIn.direction.y;
+double ty1 = (minPt.y - rayIn.origin.y) * invy;
+double ty2 = (maxPt.y - rayIn.origin.y) * invy;
+tyMin = Math.min(ty1, ty2);
+tyMax = Math.max(ty1, ty2);
+

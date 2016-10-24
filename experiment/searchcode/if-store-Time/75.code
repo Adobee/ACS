@@ -1,0 +1,6 @@
+assertThat(store.get(&quot;key&quot;), nullValue());
+store.putIfAbsent(&quot;key&quot;, &quot;value&quot;);
+long first = store.get(&quot;key&quot;).lastAccessTime(TimeUnit.MILLISECONDS);
+timeSource.advanceTime(1);
+long next = store.putIfAbsent(&quot;key&quot;, &quot;value2&quot;).lastAccessTime(TimeUnit.MILLISECONDS);
+

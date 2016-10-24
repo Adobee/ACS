@@ -1,0 +1,9 @@
+for (int i=0; i<unsortiert.length; i++)
+{
+int minpos=minimumPosition(i);
+swap(minpos, i);
+int minpos = from;
+for (int i=from+1; i<unsortiert.length; i++)
+{
+if(unsortiert[i]<unsortiert[minpos])
+

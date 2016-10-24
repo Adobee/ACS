@@ -1,0 +1,8 @@
+import org.apache.hadoop.hbase.util.Bytes;
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Mapper;
+protected void setup(
+Mapper<LongWritable, Text, ImmutableBytesWritable, Put>.Context context)
+throws IOException, InterruptedException {
+

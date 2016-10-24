@@ -1,0 +1,16 @@
+processedBytesCount++;
+}
+
+public int read(int i) {
+int pos = i;
+if (pos < 0) {
+pos += DICT_SIZE;
+}
+
+return dict[i &amp; MAX_DICT_POS];
+int result = -1;
+
+int searchLength = Math.min(DICT_SIZE, processedBytesCount) - currentWordBytes.length;
+
+for (int i=0; i<searchLength; i++) {
+

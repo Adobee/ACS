@@ -1,0 +1,16 @@
+if (s == null || s.length() == 0) return 0;
+int len = s.length();
+if (len == 1) {
+return isSingle(s.charAt(0)) ? 1 : 0;
+dp[i] += dp[i+2];
+}
+}
+
+return dp[0];
+}
+
+private boolean isSingle(char c) {
+return &#39;1&#39; <= c &amp;&amp; c <= &#39;9&#39;;
+}
+}
+

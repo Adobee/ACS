@@ -1,0 +1,7 @@
+import com.google.gwt.text.shared.AbstractRenderer;
+import com.nuvola.gxpenses.common.shared.business.Account;
+
+public class AccountRenderer extends AbstractRenderer<Account> {
+@Override
+public String render(Account object) {
+

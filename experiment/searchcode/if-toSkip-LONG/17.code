@@ -1,0 +1,14 @@
+final int toSkip;
+
+public OperatorSkip(int paramInt)
+{
+this.toSkip = paramInt;
+}
+
+public Subscriber<? super T> call(final Subscriber<? super T> paramSubscriber)
+public void onNext(T paramAnonymousT)
+{
+if (this.skipped >= OperatorSkip.this.toSkip)
+{
+paramSubscriber.onNext(paramAnonymousT);
+

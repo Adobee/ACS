@@ -1,0 +1,9 @@
+assertHitCount(client.prepareCount(&quot;test-idx-3&quot;).get(), 100L);
+
+ListenableActionFuture<FlushResponse> flushResponseFuture = null;
+if (randomBoolean()) {
+ArrayList<String> indicesToFlush = newArrayList();
+Path repositoryLocation = createTempDir();
+boolean throttleSnapshot = randomBoolean();
+boolean throttleRestore = randomBoolean();
+

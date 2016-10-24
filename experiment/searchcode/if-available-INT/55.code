@@ -1,0 +1,9 @@
+public int solution(int X, int[] A) {
+int[] count = new int[X + 1];
+int availableLeaves = 0;
+for (int i = 0; i < A.length; i++) {
+if (count[A[i]] == 0) {
+//First time here
+availableLeaves++;
+if (availableLeaves == X) {
+

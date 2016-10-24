@@ -1,0 +1,4 @@
+protected Query newDistanceRangeQuery(String field, double centerLat, double centerLon, double minRadiusMeters, double radiusMeters) {
+protected Boolean polyRectContainsPoint(GeoRect rect, double pointLat, double pointLon) {
+if (Math.abs(rect.minLat-pointLat) < POLY_TOLERANCE ||
+

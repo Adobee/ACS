@@ -1,0 +1,8 @@
+private IListenerState objectToTest;
+
+@Before
+public void setup() {
+objectToTest = new ListenerUnbound(mockListenerContext);
+final Operation operation = new Operation();
+objectToTest.handleEvent(new InvokeIndEvent(mockTcapListener, operation, true));
+

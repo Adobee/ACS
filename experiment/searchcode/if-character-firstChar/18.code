@@ -1,0 +1,12 @@
+public static void main(String[] args) {
+if (args.length == 0) {
+System.err.println(&quot;word is required&quot;);
+}
+
+System.out.println(firstChar(args[0]));
+}
+
+private static String firstChar(String word) {
+try {
+char value = StreamUtils.firstChar(new StringStream(word));
+

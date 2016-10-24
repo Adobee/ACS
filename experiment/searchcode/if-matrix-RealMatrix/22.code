@@ -1,0 +1,8 @@
+import org.apache.commons.math3.linear.RealMatrix;
+import org.apache.commons.math3.linear.RealVector;
+
+import br.ufc.arida.bcl.rp20152.atv4.graficos.PontoDoGrafico2D;
+public int classificar(double y, RealVector w, RealMatrix samples1, RealMatrix samples2) {
+double w0 = calcular_w0(w, samples1, samples2);
+if (y >= (-1.0 * w0)) {
+

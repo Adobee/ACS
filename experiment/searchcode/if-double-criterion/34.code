@@ -1,0 +1,10 @@
+Set<Criterion> criterionList = new HashSet<>();
+
+if(filters != null){
+for(Map.Entry<String, Collection<Object>> filterEntry: filters.entrySet()){
+return (List<Product>)dao.list(Product.class, criterionList);
+}
+
+private Double convertToDouble(Object value) {
+if(value instanceof Double) {
+

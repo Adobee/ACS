@@ -1,0 +1,15 @@
+nbt.setInteger(&quot;Stored&quot;, storedEnergy);
+}
+
+public int charge(int amount)
+{
+storedEnergy += amount;
+if(storedEnergy > maxEnergy)
+public int charge(int amount, boolean simulate)
+{
+if(!simulate)
+{
+return charge(amount);
+}
+int stored = storedEnergy;
+

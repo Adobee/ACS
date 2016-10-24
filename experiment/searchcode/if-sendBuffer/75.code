@@ -1,0 +1,12 @@
+MyActivity.socketO.receive(packet);
+
+recBuffer = packet.getData();
+
+if (recBuffer[0] != (byte)0xEF)
+continue;
+}
+
+byte[] sendBuffer = new byte[1];
+sendBuffer[0] = (byte) 0xCD;
+try {
+

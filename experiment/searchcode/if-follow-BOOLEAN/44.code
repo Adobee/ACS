@@ -1,0 +1,10 @@
+public MemberFollow[] search(String whereCause) throws Exception {
+List<MemberFollow> pos = super.search(TABLE_NAME, COLUMN_ID, whereCause, MemberFollow.class);
+if (pos.size() == 0) return null;
+* @param activeUserID
+* @param conn
+* @return
+* @throws Exception
+*/
+public boolean save(MemberFollow memberFollow, int activeUserID, Connection conn) throws Exception {
+

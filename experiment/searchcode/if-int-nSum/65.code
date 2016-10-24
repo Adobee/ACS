@@ -1,0 +1,12 @@
+* Reference: http://www.codechef.com/FEB15/problems/RANKLIST
+*
+* Solution:
+*  Let NSum = Sum of all numbers from 1 to N. i.e NSum = ((N * (N+1))/2)
+S = sc.nextLong();
+
+NSum = ((long) N * (N + 1)) / 2;
+Diff = NSum - S;
+
+// Edge case
+if ((Diff <= 0) || (Diff > NSum-N)) {
+

@@ -1,0 +1,14 @@
+public class PointInTimeFinite implements PointInTime {
+
+
+private long milliSec;
+
+/**
+* @param milliSecSinceEpoch Epoch is jan 1, 1970
+*
+* This is a small wrapper around java.util.Date to avoid
+* dependencies we might later regret
+*/
+public PointInTimeFinite(long milliSecSinceEpoch){
+this.milliSec = milliSecSinceEpoch;
+

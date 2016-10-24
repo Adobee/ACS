@@ -1,0 +1,8 @@
+public Action override(Action a, Date date, double open, double close,
+double high, double low, double mid, long vol, Accountant tm) {
+if (minPeriod > 0 &amp;&amp; tm != null) {
+Integer period = tm.getPeriodAfterLastDealExclWeekends(date);
+if (period != null &amp;&amp; period <= minPeriod) {
+if (a != null)
+delayedAction = a;
+

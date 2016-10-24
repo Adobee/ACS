@@ -1,0 +1,13 @@
+super(transactionId);
+
+_db = db;
+
+String idString = &quot;&quot;;
+
+if(tableName.equalsIgnoreCase(&quot;Konten&quot;)) {
+idString = &quot;KontenNr&quot;;
+}
+
+if(tableName.equalsIgnoreCase(&quot;Kunden&quot;)) {
+idString = &quot;KundenNr&quot;;
+

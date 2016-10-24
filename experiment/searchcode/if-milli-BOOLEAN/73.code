@@ -1,0 +1,10 @@
+* Class that can measure time and tell when certain amount has been achieved
+*/
+public class Stopwatch {
+
+private long milliSecondsToCount = 0;
+private long startTime = 0;
+public boolean hasEnoughTimePassed() {
+if (startTime > 0) {
+if (milliSecondsToCount < System.currentTimeMillis() - startTime) {
+

@@ -1,0 +1,9 @@
+calendar.set(Calendar.YEAR, monthCal.get(Calendar.YEAR));
+if (calendar.get(Calendar.DAY_OF_MONTH) > calendar.getMaximum(Calendar.DAY_OF_MONTH))
+calendar.set(Calendar.DAY_OF_MONTH, calendar.getMaximum(Calendar.DAY_OF_MONTH));
+}
+return calendar.getTime();
+}
+
+public static boolean sameMonthOnly(Date d1, Date d2)
+

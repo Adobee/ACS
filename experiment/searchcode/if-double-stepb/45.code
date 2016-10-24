@@ -1,0 +1,7 @@
+serial = maxColorSerial;
+} else if (serial < minColorSerial) {
+serial = minColorSerial;
+}
+
+double stepH = (startHSB[0] - endHSB[0]) / serial;
+

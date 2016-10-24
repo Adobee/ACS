@@ -1,0 +1,8 @@
+switch (id) {
+case 1:
+if (sex == SEX_FEMALE) {
+stringId = R.string.fs_single_male;
+case 4:
+if (sex == SEX_FEMALE) {
+stringId = R.string.fs_married_female;
+

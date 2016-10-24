@@ -1,0 +1,6 @@
+super(name, type);
+if (valuesSourceType == null) {
+throw new IllegalArgumentException(&quot;[valuesSourceType] must not be null: [&quot; + name + &quot;]&quot;);
+ValuesSourceType valuesSourceType = valueType != null ? valueType.getValuesSourceType() : this.valuesSourceType;
+if (valuesSourceType == null || valuesSourceType == ValuesSourceType.ANY) {
+

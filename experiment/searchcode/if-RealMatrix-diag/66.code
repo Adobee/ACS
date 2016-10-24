@@ -1,0 +1,8 @@
+/** Diagonal of sqrt(D), stored for efficiency. */
+private RealMatrix diagD;
+/** Covariance matrix. */
+private RealMatrix C;
+private static RealMatrix diag(final RealMatrix m) {
+if (m.getColumnDimension() == 1) {
+final double[][] d = new double[m.getRowDimension()][m.getRowDimension()];
+

@@ -1,0 +1,6 @@
+public Numeric divide(Numeric numeric) throws ArithmeticException {
+if(numeric instanceof Complex) {
+return divide((Complex)numeric);
+} else if(numeric instanceof JSCLDouble) {
+return divide(valueof(numeric));
+

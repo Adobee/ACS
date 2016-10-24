@@ -1,0 +1,7 @@
+private final PowerPoint _scale[];
+public PowerScaler(PowerPoint scale[]) {
+if(scale.length < 2) throw new IllegalArgumentException(&quot;Two or more point are required&quot;);
+public double get(double input){
+double cmd = Math.abs(input);
+if(cmd >= _scale[_scale.length - 1].x) {cmd = _scale[_scale.length - 1].y;}
+

@@ -1,0 +1,8 @@
+MazewarPacket nextAction;
+
+// Continuously polling from the action queue
+while (true) {
+if ((nextAction = Mazewar.actionQueue.peek()) != null) {
+// Perform action when all connected clients have acknowledged the action
+if (Mazewar.ackTracker.get(nextAction).size() >= Math.min(nextAction.cardinality, Mazewar.connectedClients.size())) {
+

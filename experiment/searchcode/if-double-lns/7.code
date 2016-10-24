@@ -1,0 +1,8 @@
+/** The coefficients L<sub>n</sub><sup>s</sup>(γ). */
+private final double[][] lns;
+
+/** The coefficients dL<sub>n</sub><sup>s</sup>(γ) / dγ. */
+final double[][] Qns, final TreeMap<NSKey, Double> Vns, final double roa) {
+this.lns = new double[nMax + 1][sMax + 1];
+this.dlns = new double[nMax + 1][sMax + 1];
+

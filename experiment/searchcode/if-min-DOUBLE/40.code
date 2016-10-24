@@ -1,0 +1,13 @@
+package ja3d.core;
+
+import utils.Vector3D;
+
+public class BoundBox {
+
+public double minX = Double.MAX_VALUE;
+maxZ = Double.MIN_VALUE;
+}
+
+// if return true, then intersects. AABB collision detection.
+public boolean checkSphere(Vector3D sphere) {
+

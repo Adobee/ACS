@@ -1,0 +1,6 @@
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+XYPlot xyplot;
+if (chart.getPlot() instanceof XYPlot) {
+xyplot = (XYPlot) chart.getPlot();
+

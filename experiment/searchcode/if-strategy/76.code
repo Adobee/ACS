@@ -1,0 +1,10 @@
+RegisterStrategyBO oldStrategy = findStrategy(strategy.getIp(), strategy.getSensorId(), false);
+if (oldStrategy != null) {
+oldStrategy.setIssued(1);
+oldStrategy.setCovered(1);
+oldStrategy.setIssueTime(new Date());
+strategyDao.updateStrategy(oldStrategy);
+}
+
+if (strategy.getCreateTime() == null) {
+

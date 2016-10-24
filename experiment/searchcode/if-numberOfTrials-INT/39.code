@@ -1,0 +1,9 @@
+*         probability {@code confidenceLevel}
+* @throws NotStrictlyPositiveException
+*             if {@code numberOfTrials <= 0}.
+* @throws NotPositiveException
+static void checkParameters(int numberOfTrials, int numberOfSuccesses, double confidenceLevel) {
+
+if(numberOfTrials <= 0) {
+throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_TRIALS, numberOfTrials);
+

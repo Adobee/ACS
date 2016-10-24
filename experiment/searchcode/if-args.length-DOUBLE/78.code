@@ -1,0 +1,10 @@
+double[] a = StdAudio.read(fileName);
+if (r < 1) {
+b = new double[(int)(r*a.length)];
+for (int i = 0; i<b.length; i++) {
+b[i] = a[(int)(1.0/r * i)];
+}
+} else if (r > 1) {
+b = new double[(int)(r*a.length)];
+for (int i = 0; i<b.length; i++) {
+

@@ -1,0 +1,12 @@
+import java.util.List;
+
+import de.greenrobot.dao.query.QueryBuilder;
+
+public class ExtendedLogEntryDao {
+public LogEntryDao dao;
+this.dao = LogEntryDao;
+}
+
+public LogEntry getLogEntryById(Long id) {
+QueryBuilder<LogEntry> queryBuilder = dao.queryBuilder();
+

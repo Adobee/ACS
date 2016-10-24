@@ -1,0 +1,11 @@
+for(Entry<Player, StatPlayer> sp : cache.entrySet()){
+if(sp.getKey() == player){
+return sp.getValue();
+}
+}
+return null;
+}
+
+public boolean hasStats(Player player){
+if(IStats.get().getPlayerConfig().isConfigurationSection(player.getUniqueId().toString())){
+

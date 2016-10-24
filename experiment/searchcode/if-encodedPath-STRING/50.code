@@ -1,0 +1,7 @@
+sb.append(&quot;:&quot; + port);
+}
+if (StringUtils.isNotBlank(url.getPath())) {
+String encodedPath = URLEncoder.encode(
+StringUtils.removeStart(url.getPath(), &quot;/&quot;), &quot;UTF-8&quot;);
+sb.append(&quot;/&quot; + encodedPath);
+

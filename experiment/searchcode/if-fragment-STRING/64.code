@@ -1,0 +1,6 @@
+protected int addFragment( @IdRes int containerViewId,
+Fragment fragment, @Nullable String tag) {
+FragmentManager fragmentManager = getSupportFragmentManager();
+if (fragmentManager!=null) {
+return fragmentManager.beginTransaction().add(containerViewId, fragment, tag).commit();
+

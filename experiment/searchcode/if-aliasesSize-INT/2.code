@@ -1,0 +1,9 @@
+super.readFrom(in);
+source = in.readBytesReference();
+
+int typesSize = in.readVInt();
+if (typesSize > 0) {
+int aliasesSize = in.readVInt();
+if (aliasesSize > 0) {
+filteringAliases = new String[aliasesSize];
+

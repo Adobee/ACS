@@ -1,0 +1,9 @@
+* @return true if this node is done processing the XML sub tree
+*/
+public boolean endElement(XMLElement element) {
+if (WebTagNames.DISTRIBUTABLE.equals(element.getQName())) {
+descriptor.setDistributable(true);
+return false;
+} else {
+boolean allDone = super.endElement(element);
+

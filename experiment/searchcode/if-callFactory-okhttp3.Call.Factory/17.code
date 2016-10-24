@@ -1,0 +1,10 @@
+private boolean mRxEnabled;
+
+@Inject
+public Impl(Call.Factory callFactory) {
+this.mCallFactory = callFactory;
+builder.addCallAdapterFactory(RxJavaCallAdapterFactory
+.createWithScheduler(Schedulers.io()));
+}
+builder.callFactory(mCallFactory)
+

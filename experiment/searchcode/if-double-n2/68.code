@@ -1,0 +1,7 @@
+nu = (int)(Math.log(n) / Math.log(2));
+int n2 = n / 2;
+int nu1 = nu - 1;
+double[] xre = new double[n];
+double[] xim = new double[n];
+double[] decibel = new double[n2];
+

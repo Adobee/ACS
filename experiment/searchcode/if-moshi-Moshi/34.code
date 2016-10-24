@@ -1,0 +1,7 @@
+private MoshiConverterFactory(Moshi moshi, boolean lenient) {
+if (moshi == null) throw new NullPointerException(&quot;moshi == null&quot;);
+this.moshi = moshi;
+JsonAdapter<?> adapter = moshi.adapter(type, jsonAnnotations(annotations));
+if (lenient) {
+adapter = adapter.lenient();
+

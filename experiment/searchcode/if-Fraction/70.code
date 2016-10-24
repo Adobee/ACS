@@ -1,0 +1,14 @@
+/**
+* Created by keith for the second coursework assignment.
+*/
+public class FractionTest {
+test(q, m.negate(), &quot;negate test 4 failed&quot;);
+
+}
+
+static void test(Fraction f1, Fraction f2, String msg){
+if (!f1.equals(f2))
+System.out.println(msg);
+}
+}
+

@@ -1,0 +1,9 @@
+private int     maxage   = -1;
+private int     maxstale = -1;
+private int     minfresh = -1;
+private boolean onlyifcached = false;
+public void setMinFresh(int fresh) {
+validate();
+if ( fresh == -1 ) {
+if ( checkDirective(MINFRESH) )
+

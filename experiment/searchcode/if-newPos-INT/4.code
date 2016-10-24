@@ -1,0 +1,13 @@
+boolean isValidMove(int pos,int dir){
+boolean res=false;
+int newpos;
+switch (dir){
+case 1:
+newpos=pos-1-3;
+System.out.println(newpos);
+if(newpos>=0 &amp;&amp;newpos<=9){
+res=true;
+}
+break;
+case 2:
+

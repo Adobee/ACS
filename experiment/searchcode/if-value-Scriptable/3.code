@@ -1,0 +1,9 @@
+Object r = child.get(s, child);
+if (r == Scriptable.NOT_FOUND) {
+return parent.get(s, parent);
+public Object get(int i, Scriptable scriptable)
+{
+Object r = child.get(i, child);
+if (r == Scriptable.NOT_FOUND) {
+return parent.get(i, parent);
+

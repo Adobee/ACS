@@ -1,0 +1,11 @@
+OUTPUT_ONLY,
+INPUT_DISABLED,
+INPUT_ENABLED;
+
+
+public static UIReadState computeFrom(boolean visible , boolean enabled, boolean readOnly){
+if (visible){
+if (readOnly){
+return OUTPUT_ONLY;
+} else if (enabled) {
+

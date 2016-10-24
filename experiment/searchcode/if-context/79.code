@@ -1,0 +1,8 @@
+String contextPath = null;
+
+if (context instanceof ServletContext) {
+ServletContext servletContext = (ServletContext) context;
+contextPath = Reflects.forMethod().invokeMethod(servletContext, &quot;getContextPath&quot;);
+
+if (contextPath == null) {
+

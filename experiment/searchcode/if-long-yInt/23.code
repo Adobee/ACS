@@ -1,0 +1,5 @@
+private final ConcurrentHashMap<Byte, Skill> skills = new ConcurrentHashMap<>(2, 0.9f, 1);
+protected long skillCastTime = 0, lastHPSend = 0, lastFrameTime = 0;
+protected static boolean hasPastDuration(int currentDuration, int durationToPast) {
+if (durationToPast <= 0) {
+

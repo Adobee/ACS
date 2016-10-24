@@ -1,0 +1,7 @@
+if (uptime < 24) {
+long hours = (long) uptime;
+long minutes = (long) ((uptime - hours) * 60);
+long days = (long) uptime;
+long hours = (long) ((uptime - days) * 24);
+String s = fmtI.format(days) + (days > 1 ? &quot; days&quot; : &quot; day&quot;);
+

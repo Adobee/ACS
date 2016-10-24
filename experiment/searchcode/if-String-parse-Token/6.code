@@ -1,0 +1,11 @@
+this(&quot;&quot;, token);
+}
+
+public ParseException(String msg, Token token) {
+super(&quot;syntax error around&quot; + location(token));
+}
+
+private static String location(Token token) {
+if (token == Token.EOF) {
+return &quot;the last line.&quot;;
+

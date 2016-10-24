@@ -1,0 +1,12 @@
+public int sqrt_iterative(int x) {
+if (x <= 1)
+return x;
+
+long start = 1;     // Use long!!!
+return sqrt(1, x - 1, x);
+}
+
+// 必须用long，以防止给的x太大导致int溢出
+private int sqrt(long start, long end, long target) {
+if (end - start < 2)
+

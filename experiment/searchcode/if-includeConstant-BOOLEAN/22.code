@@ -1,0 +1,8 @@
+public MillerUpdatingRegression(int numberOfVariables, boolean includeConstant, double errorTolerance)
+throws ModelSpecificationException {
+if (numberOfVariables < 1) {
+throw new ModelSpecificationException(LocalizedFormats.NO_REGRESSORS);
+}
+if (includeConstant) {
+this.nvars = numberOfVariables + 1;
+

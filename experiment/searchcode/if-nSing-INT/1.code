@@ -1,0 +1,9 @@
+boolean result = true;
+for (int i = 2; i < smaller; i++) {
+if (one % i == 0 &amp;&amp; another % i == 0) {
+result = false;
+System.out.println(&quot;\nSing: &quot; + sign);
+
+//sign check
+int signCheck = BigInteger.valueOf(sign)
+

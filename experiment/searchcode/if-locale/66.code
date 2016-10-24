@@ -1,0 +1,11 @@
+package pl.herbata.calendar;
+
+
+import java.util.Locale;
+
+public final class AppSettings {
+public static AppSettings getInstance() {
+synchronized (AppSettings.class) {
+if (instance == null) {
+instance = new AppSettings();
+

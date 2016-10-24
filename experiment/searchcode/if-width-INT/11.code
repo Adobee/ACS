@@ -1,0 +1,9 @@
+package xsdvi.utils;
+
+public class WidthCalculator {
+private int emWidth;
+private int width;
+public void newWidth(int extraPixels, String string, int extraChars) {
+if (string!=null) {
+newWidth(extraPixels, string.length() + extraChars);
+

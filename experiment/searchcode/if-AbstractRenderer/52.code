@@ -1,0 +1,8 @@
+import com.google.gwt.i18n.client.NumberFormat;
+import com.google.gwt.text.shared.AbstractRenderer;
+import com.google.gwt.text.shared.Renderer;
+
+public class YearRenderer extends AbstractRenderer<Integer> {
+
+private static YearRenderer INSTANCE;
+

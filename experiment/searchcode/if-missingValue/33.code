@@ -1,0 +1,15 @@
+private static final Object MISSING = new Object();
+
+@SuppressWarnings(&quot;unchecked&quot;)
+private V missingValue() {
+return (V) MISSING;
+}
+
+private boolean isLazy = true;
+public ComputedValue() {
+this.value = missingValue();
+this.arguments = null;
+}
+
+public ComputedValue(Value<?>... arguments) {
+

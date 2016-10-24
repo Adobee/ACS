@@ -1,0 +1,12 @@
+
+public class Collatz {
+
+public static int chains (long n,int length) {
+while (n!=1) {
+if (n%2==0) {
+chainlen = chains(i,length);
+if (chainlen>maxlen) {
+maxlen = chainlen;
+maxstart = i;
+System.out.println(&quot;The length of chain &quot; + maxstart + &quot; is &quot; + maxlen);
+

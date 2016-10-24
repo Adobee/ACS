@@ -1,0 +1,15 @@
+import br.com.jq.syncthia.bdcreator.column.Column;
+
+public class TableKey extends TableColumnSet {
+private KeyType keyType;
+
+public TableKey() {
+this(KeyType.PRIMARY_KEY);
+}
+
+public TableKey(KeyType type) {
+setKeyType(type);
+}
+
+public KeyType getKeyType() {
+

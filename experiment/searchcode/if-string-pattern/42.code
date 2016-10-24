@@ -1,0 +1,14 @@
+import java.io.Serializable;
+
+
+public class Pattern implements Serializable {
+
+private String pattern;
+
+public Pattern( String p ) {
+pattern = p;
+}
+
+public String getPattern() {
+return pattern;
+

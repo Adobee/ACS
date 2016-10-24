@@ -1,0 +1,11 @@
+private boolean isInsert;
+
+@Override
+public boolean hasAccess() {
+return true;
+}
+
+public void update(AvailabilityNotes availNote) {
+isInsert = false;
+if (availNote.getAvailabilityNoteId() == null) {
+

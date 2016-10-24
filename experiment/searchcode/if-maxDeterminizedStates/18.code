@@ -1,0 +1,8 @@
+private final RegExp regExp;
+private final int maxDeterminizedStates;
+
+/** Use this constructor when the RegExp failed to convert to an automaton. */
+super(&quot;Determinizing &quot; + regExp.getOriginalString() + &quot; would result in more than &quot; +
+cause.maxDeterminizedStates + &quot; states.&quot;, cause);
+this.regExp = regExp;
+

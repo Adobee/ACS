@@ -1,0 +1,7 @@
+public LeafInfo read(InputStream in, int protocolVersion) throws IOException {
+if ((protocolVersion != 42) &amp;&amp; (protocolVersion != 43) &amp;&amp; (protocolVersion != 44)) {
+info.y = dIn.readInt();
+info.z = dIn.readInt();
+if (protocolVersion >= 43)
+info.generationLevel = dIn.readInt();
+

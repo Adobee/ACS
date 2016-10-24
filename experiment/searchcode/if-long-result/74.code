@@ -1,0 +1,15 @@
+public long solve() {
+long result = 600851475143L;
+while (true) {
+long factor = getFactor(result);
+if (factor < result) {
+} else {
+break;
+}
+}
+return result;
+}
+
+public static long getFactor(long n) {
+for (long i=2, end = (long) Math.sqrt(n); i<end; i++) {
+

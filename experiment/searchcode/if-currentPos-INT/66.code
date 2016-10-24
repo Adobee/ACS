@@ -1,0 +1,9 @@
+static void GenerateNetherStructures(World worldIn, Random randIn,
+int ChunkX, int ChunkZ) {
+
+
+if(randIn.nextFloat()*100 > (100 - CookingPlusConfig.NetherTangleSpawnRate)){
+int PreviousDirection = 0;
+PreviousDirection = randIn.nextInt(5);
+if(worldIn.getBlockState(CurrentPos).getBlock() != CookingPlusMain.blockTangleHeart){
+

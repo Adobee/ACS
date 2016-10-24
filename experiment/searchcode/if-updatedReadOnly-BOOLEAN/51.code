@@ -1,0 +1,5 @@
+ClusterBlocks.Builder blocks = ClusterBlocks.builder().blocks(currentState.blocks());
+Boolean updatedReadOnly = openSettings.getAsBoolean(IndexMetaData.SETTING_READ_ONLY, null);
+if (updatedReadOnly != null) {
+for (String index : actualIndices) {
+

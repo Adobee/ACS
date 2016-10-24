@@ -1,0 +1,6 @@
+static public ValueOfConverter getConverter(Class<?> toClass) {
+ValueOfConverter converter = converterMap.get(toClass.getName());
+if (converter == null) {
+boolean found = false;
+Method[] methods = toClass.getDeclaredMethods();
+

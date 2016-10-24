@@ -1,0 +1,8 @@
+private final ISpeciator<? super T> base;
+private final float minSimilarity, curve, similarityRange;
+public final float getSimilarity(T a, T b)
+{
+float similarity = base.getSimilarity(a, b);
+
+if (similarity < minSimilarity)
+

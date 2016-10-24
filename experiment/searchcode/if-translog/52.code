@@ -1,0 +1,9 @@
+operations.add(TranslogStreams.LEGACY_TRANSLOG_STREAM.read(in));
+}
+
+}
+if (in.getVersion().onOrAfter(Version.V_1_5_0)) {
+out.writeVInt(operations.size());
+for (Translog.Operation operation : operations) {
+if (out.getVersion().onOrAfter(Version.V_1_4_0_Beta1)) {
+

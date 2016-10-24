@@ -1,0 +1,12 @@
+public class StringCalculator {
+
+public int add(String s) {
+int comma = s.indexOf(&#39;,&#39;);
+if (comma < 0) {
+return toInt(s);
+}
+return toInt(s.substring(0, comma)) + add(s.substring(comma + 1));
+}
+
+protected int toInt(String s) {
+

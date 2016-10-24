@@ -1,0 +1,12 @@
+for (int i = 1; i <= n; i++) {
+int res = 0;
+int j = 1;
+for (j = 1; j <= i &amp;&amp; j - 1 < i - j; j++) {
+dp[i] = res;
+}
+return dp[n];
+}
+
+public int numTreesRecursion(int n) {
+if (n == 0)
+

@@ -1,0 +1,17 @@
+public Topological(Digraph G) {
+DirectedCycle finder = new DirectedCycle(G);
+if (!finder.hasCycle()) {
+DepthFirstOrder dfs = new DepthFirstOrder(G);
+order = dfs.reversePost();
+}
+}
+
+
+public Iterable<Integer> order() {
+return order;
+}
+
+
+public boolean hasOrder() {
+return order != null;
+

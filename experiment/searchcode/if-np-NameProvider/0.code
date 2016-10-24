@@ -1,0 +1,10 @@
+else if (defines[0].equalsIgnoreCase(&quot;nplog&quot;))
+{
+NameProvider.npLog = new File(defines[1]);
+if (NameProvider.npLog.exists() &amp;&amp; !NameProvider.npLog.isFile())
+if (NameProvider.currentMode == NameProvider.DEOBFUSCATION_MODE)
+{
+log = NameProvider.npLog;
+}
+else if (NameProvider.currentMode == NameProvider.REOBFUSCATION_MODE)
+

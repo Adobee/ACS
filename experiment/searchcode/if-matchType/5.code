@@ -1,0 +1,8 @@
+public enum MatchType {
+
+DIVISION(&quot;Div \\w\\d+&quot;, 12),
+CUP(&quot;Cupa Romaniei&quot;, 10),
+YOUTH(&quot;Div \\w\\d+-youth&quot;, -1),
+for (MatchType matchType : MatchType.values()) {
+if (text.matches(matchType.pattern)) {
+

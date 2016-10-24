@@ -1,0 +1,11 @@
+private static boolean _initialized = false;
+private static native void _initialize();
+private static native void _initializeAll();
+public static void initialize() {
+if (_initialized) {
+_initialize();
+}
+}
+
+public static void initializeAll() {
+

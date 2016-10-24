@@ -1,0 +1,14 @@
+return new OrderBy(field, OrderType.DESC);
+}
+
+public Order getOrder() {
+Order order = null;
+if (OrderType.ASC == orderType) {
+order = Order.desc(getField());
+}
+return order;
+}
+
+public static Order[] asOrders(OrderBy[] orderBys){
+if(null != orderBys &amp;&amp; orderBys.length >0){
+

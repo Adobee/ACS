@@ -1,0 +1,8 @@
+package ru.agentlab.maia.filter;
+
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+Type type = genericSuperclass.getActualTypeArguments()[0];
+if (type instanceof ParameterizedType) {
+Type ownerType = ((ParameterizedType) type).getRawType();
+

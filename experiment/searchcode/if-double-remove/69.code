@@ -1,0 +1,7 @@
+public String calcInsideParentheses(List<String> statement) {
+Double result = null;
+for (int i = 1; i < statement.size(); i++) {
+for (int j = 1; j < statement.size(); j++) {
+if (statement.get(j).equals(&quot;+&quot;) || statement.get(j).equals(&quot;-&quot;)) {
+Double operand1 = Double.parseDouble(statement.get(j - 1));
+

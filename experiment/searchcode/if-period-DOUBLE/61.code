@@ -1,0 +1,10 @@
+public class AcceleratingSawToothGenerator implements Generator {
+private int period;
+private int state;
+private double factor;
+
+public AcceleratingSawToothGenerator(int period, double factor) {
+state = (state + 1) % period;
+double newState = normalize(state);
+if ((int) newState == -1) {
+

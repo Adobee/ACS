@@ -1,0 +1,9 @@
+public boolean addVertex(Vertex<T> newVertex) {
+// check if the vertex already exists
+LinkedVertex<T> vertex = new SimpleLinkedVertex<T>(newVertex.getContent());
+vFrom = (fromPos >= 0) ? (SimpleLinkedVertex<T>) this.vertices.get(fromPos) : vFrom;
+if (fromPos < 0) {
+this.vertices.add(vFrom);
+}
+int toPos = this.vertices.indexOf(vTo);
+

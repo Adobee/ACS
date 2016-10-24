@@ -1,0 +1,9 @@
+private final Side side;
+private final Random tieBreaker;
+
+public GreedyPlayer(Side side) {
+this.side = side;
+for (int i = 0; i < scores.length; i++) {
+if (scores[i] == highest &amp;&amp; tieBreaker.nextBoolean()) {
+highest = scores[i];
+

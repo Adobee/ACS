@@ -1,0 +1,10 @@
+taskPool.execute(new TaskThread(context, httpUrl, taskArgs,
+baseTask, delayTime));
+} catch (Exception e) {
+* 添加不带参数的http任务
+*/
+public void addTask(int taskId, String httpUrl, BaseTask baseTask,
+int delayTime) {
+
+baseTask.setId(taskId);
+

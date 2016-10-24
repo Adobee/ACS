@@ -1,0 +1,10 @@
+CachedItemMap.remove(key);
+}
+
+private synchronized static void putCachedItem(String key, CachedItem object) {
+CachedItemMap.put(key, object);
+}
+
+private synchronized static Set<String> keySet() {
+return CachedItemMap.keySet();
+

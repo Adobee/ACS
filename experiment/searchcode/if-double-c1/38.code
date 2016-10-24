@@ -1,0 +1,13 @@
+private double y;
+
+Cartisian(){}
+
+Cartisian(double a, double b ){
+x = a;
+y = b;
+}
+
+
+void Dis(Cartisian c1, Cartisian c2){
+double d = Math.sqrt(((c2.x-c1.x)*(c2.x-c1.x))+((c2.y-c1.y)*(c2.y-c1.y)));
+

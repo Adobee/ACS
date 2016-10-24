@@ -1,0 +1,9 @@
+public void match(ITypeRep typeExpected, ITypeRep found ) {
+if ( ! typeExpected.equals( found ) ) {
+compilerError.typeError( typeExpected, found );
+}
+}
+
+public TypeRep coerce(ITypeRep a, ITypeRep b) {
+if (a.equals( UnknownType.TYPE ) || b.equals( UnknownType.TYPE ) ) {
+

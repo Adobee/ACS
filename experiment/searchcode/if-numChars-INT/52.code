@@ -1,0 +1,11 @@
+private InputStream stream;
+private byte[] buf = new byte[1024];
+private int curChar;
+private int numChars;
+
+public InputReader(InputStream stream) {
+public int read() {
+if (numChars == -1)
+throw new InputMismatchException();
+if (curChar >= numChars) {
+

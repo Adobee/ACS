@@ -1,0 +1,9 @@
+// extracted to static helper method to make writing unit tests easier:
+static Query createSearchFilter(String[] types, Query aliasFilter, boolean hasNestedFields) {
+return null;
+}
+
+BooleanQuery.Builder bq = new BooleanQuery.Builder();
+if (typesFilter != null) {
+bq.add(typesFilter, Occur.FILTER);
+

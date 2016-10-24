@@ -1,0 +1,8 @@
+DBObjectList objectList = getObjectList(objectType);
+if (objectList != null) {
+return objectList.getObject(name, overload);
+}
+
+if (objectType.getInheritingTypes().size() > 0) {
+Set<DBObjectType> objectTypes = objectType.getInheritingTypes();
+

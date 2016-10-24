@@ -1,0 +1,10 @@
+private final PackedInts.Reader reader;
+private final long maxOrd;
+
+private long size = -1;
+
+public SinglePackedOrdinals(OrdinalsBuilder builder, float acceptableOverheadRatio) {
+assert builder.getNumMultiValuesDocs() == 0;
+this.maxOrd = builder.getMaxOrd();
+// We don&#39;t reuse the builder as-is because it might have been built with a higher overhead ratio
+

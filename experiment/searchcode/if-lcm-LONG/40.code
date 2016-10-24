@@ -1,0 +1,11 @@
+public class UtilsMath {
+
+public static long GCD(long a, long b) {
+if (b==0) return a;
+return GCD(b,a%b);
+}
+
+public static long lcm(List<Number> input){
+long result = input.get(0).longValue();
+for(int i = 1; i < input.size(); i++) result = lcm(result, input.get(i).longValue());
+

@@ -1,0 +1,13 @@
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class XCellWrapText extends XCellStyle {
+
+private final boolean wrap;
+
+public XCellWrapText(boolean wrap) {
+this.wrap = wrap;
+}
+
+@Override
+protected void appendToStyle(XSSFWorkbook book, XSSFCellStyle style, XSSFFont font) {
+

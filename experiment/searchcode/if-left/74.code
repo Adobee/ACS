@@ -1,0 +1,13 @@
+public static void sort(int[] array, int left, int right) {
+int index = partition(array, left, right);
+
+if (left < index - 1) {
+sort(array, left, index - 1);
+while (pivot < array[right]) {
+right--;
+}
+
+if (left <= right) {
+int tmp = array[left];
+array[left] = array[right];
+

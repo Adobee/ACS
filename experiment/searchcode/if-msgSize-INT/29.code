@@ -1,0 +1,8 @@
+public void sendApplicationMessage(int bufMessage[], int msgSize) {
+
+int buf[] = new int[MAX_WLI_PCK_SIZE];
+buf[5] = msgSize &amp; 0xFF;
+
+// Application message checksum
+int checksum = calculateWLICheckSum(bufMessage, 0, msgSize - 1);
+

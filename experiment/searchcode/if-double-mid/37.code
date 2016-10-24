@@ -1,0 +1,12 @@
+public static double findSquareRoot(double base, double epsilon) {
+if (base == 1.0)
+return 1.0;
+double low = 1.0;
+double high = base;
+high = 1.0;
+}
+
+while (high - low > epsilon) {
+double mid = (high + low) / 2;
+double square = mid * mid;
+

@@ -1,0 +1,10 @@
+public abstract class AbstractCacheManager implements CacheManager{
+
+@SuppressWarnings(&quot;rawtypes&quot;)
+private ConcurrentHashMap<String,Cache> caches;
+
+private boolean cacheEnabled=true;
+@Override
+public <K, V> Cache<K, V> getCache(String cacheName) {
+if(StringUtils.hasLength(cacheName)){
+

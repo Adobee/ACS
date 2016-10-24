@@ -1,0 +1,9 @@
+if (rowDiffAbs==0 &amp;&amp; columnDiffAbs>0) {
+if(initialIndex[1]>finalIndex[1])
+{
+for(int i=finalIndex[1]+1;i<initialIndex[1]-1;i++)
+else if	(rowDiffAbs>0 &amp;&amp; columnDiffAbs==0){
+if(initialIndex[0]>finalIndex[0])
+{
+for(int i=finalIndex[0]+1;i<initialIndex[0]-1;i++)
+

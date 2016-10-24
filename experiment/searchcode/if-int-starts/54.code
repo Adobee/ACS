@@ -1,0 +1,13 @@
+public int romanToInt(String s) {
+int result = 0;
+
+while (s.length() > 0) {
+if (s.startsWith(&quot;M&quot;)) {
+result += 1000;
+
+s = s.substring(1);
+} else if (s.startsWith(&quot;CM&quot;)) {
+result += 900;
+
+s = s.substring(2);
+

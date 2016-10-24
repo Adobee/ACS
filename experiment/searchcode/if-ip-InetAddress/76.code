@@ -1,0 +1,7 @@
+byte[] ipAddr = new byte[] { (byte) 192, (byte) 168, (byte) 1, (byte) 0 };
+InetAddress addr = InetAddress.getByAddress(ipAddr);
+for (int i = 1; i < 255; i++) {
+ipAddr[3] = (byte) i;
+addr = InetAddress.getByAddress(ipAddr);
+// System.out.println(addr.getHostAddress());
+

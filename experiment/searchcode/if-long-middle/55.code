@@ -1,0 +1,7 @@
+last = last + first;
+System.out.println(&quot;last=&quot; + last);
+long middle = (long)Math.sqrt(last);
+for(long i = 1; i<=middle; i++){
+if(last%i==0){
+count = count + 2;
+

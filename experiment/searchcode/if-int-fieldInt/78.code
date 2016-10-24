@@ -1,0 +1,7 @@
+public List<String> off_commands = new ArrayList<String>();
+public List<String> fieldINT = new ArrayList<String>();
+public List<String> status = new ArrayList<String>();
+Log.d(TAG,&quot;Received Channel ID: &quot;+chID);
+for (int i = 0; i < 8; i++) {
+if(sp.getString(&quot;Enable&quot;+(i+1),&quot;false&quot;).equals(&quot;true&quot;)){
+

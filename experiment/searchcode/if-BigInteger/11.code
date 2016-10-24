@@ -1,0 +1,10 @@
+public BigInteger exp(BigInteger x, BigInteger n, BigInteger p) {
+x = x.mod(p);
+n = n.mod(p.subtract(BigInteger.ONE));
+// stupid cases
+if (n.equals(BigInteger.ZERO))
+return BigInteger.ONE;
+if (n.equals(BigInteger.ONE))
+return x;
+if (x.equals(BigInteger.ONE) || x.equals(BigInteger.ZERO))
+

@@ -1,0 +1,11 @@
+private Module getPerturbModule() {
+if (perturbModule == null) {
+FractalSettings perturbSettings = FractalSettings.FBMHighlandSettings(seed);
+caveShapeCache.setSource(caveShapeA); // use for terrain types as well
+
+
+int moduleSelect = 0;
+
+// cave_perturb_fractal
+ModuleFractal cavePerturbFractal = new ModuleFractal(FractalType.FBM, BasisType.GRADIENT, InterpolationType.QUINTIC);
+

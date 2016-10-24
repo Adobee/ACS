@@ -1,0 +1,10 @@
+package code.messy.net.ip;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public enum Protocol {
+public static Protocol getProtocol(Byte b) {
+Protocol protocol = mapOfValueToProtocol.get(b);
+if (protocol != null) return protocol;
+

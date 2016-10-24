@@ -1,0 +1,9 @@
+package org.boris.expr.function.excel;
+
+import org.boris.expr.Expr;
+import org.boris.expr.ExprError;
+public Expr evaluate(IEvaluationContext context, Expr[] args) throws ExprException {
+assertArgCount(args, 1);
+Expr a = evalArg(context, args[0]);
+if (a instanceof ExprNumber) {
+

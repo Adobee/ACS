@@ -1,0 +1,12 @@
+} finally {
+pm.close();
+}
+return sum;
+}
+
+public int getNumShards() {
+int numShards = 0;
+Counter current = getThisCounter(pm);
+if (current != null) {
+numShards = current.numShards.intValue();
+

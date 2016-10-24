@@ -1,0 +1,8 @@
+final LocaleInfo[] preprocess = new LocaleInfo[origSize];
+int finalSize = 0;
+for (int i = 0; i < origSize; i++) {
+final String s = locales[i];
+final int len = s.length();
+if (len == 5) {
+String language = s.substring(0, 2);
+

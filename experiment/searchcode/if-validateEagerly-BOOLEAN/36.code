@@ -1,0 +1,15 @@
+super.onBackPressed();
+}
+}
+
+@Override
+protected boolean onNavigationIconClicked() {
+if (isUserRecordingLongWithoutSaving()) {
+_showcaseView.hide();
+}
+
+boolean tracking = _trackingManager.isTracking();
+
+if (tracking) {
+setTitle(R.string.record_tracking_now);
+

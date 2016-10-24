@@ -1,0 +1,10 @@
+protected final Throwable e;
+
+public Option<Throwable> error() {
+if (isFailure()) {
+return Option.some(e);
+public Try<T> filter(Function<T, Boolean> predicate) {
+Invariant.checkNotNull(predicate);
+if (isFailure()) {
+return new Failure<T>(e);
+

@@ -1,0 +1,11 @@
+String bdaydate=new SimpleDateFormat(&quot;MM-dd&quot;).format(bDayList.get(j).getEventDate());
+
+if((eventdate.compareTo(bdaydate))<0)
+System.out.println(&quot;added &quot;+myEvents.get(i).getEventTitle() + &quot;on&quot; + new SimpleDateFormat(&quot;MM-dd&quot;).format(myEvents.get(i).getEventDate()) );
+i++;
+}
+
+else if((eventdate.compareTo(bdaydate))==0)
+{
+myallEvents.add(myEvents.get(i));
+

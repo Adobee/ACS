@@ -1,0 +1,8 @@
+public static char toLowerCase(char ch, boolean unicodeAware) {
+if (unicodeAware) return Character.toLowerCase(ch);
+if (ch >= &#39;A&#39; &amp;&amp; ch <= &#39;Z&#39;) return (char)(ch + &#39;a&#39; - &#39;A&#39;);
+* otherwise, the character itself.
+*/
+public static char toUpperCase(char ch, boolean unicodeAware) {
+if (unicodeAware) return Character.toUpperCase(ch);
+

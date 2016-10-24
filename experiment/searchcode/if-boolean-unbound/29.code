@@ -1,0 +1,15 @@
+return new Mapping(ex,val,ex.getType(),unbound);
+}
+
+public Object getValue() {
+if (unboundDeps==null) {
+throw new KissException(&quot;Free symbols cannot be resolved: &quot;+unboundDeps.toString());
+}
+}
+
+public boolean isBound() {
+return (unboundDeps==null);
+}
+
+public Object maybeValue() {
+

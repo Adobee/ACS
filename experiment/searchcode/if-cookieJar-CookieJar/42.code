@@ -1,0 +1,8 @@
+class MySingleton {
+private static MySingleton _instance = null;
+static MySingleton sharedInstance() {
+if ( _instance == null ) {
+CookieHandler cookieHandler = new CookieManager();
+JavaNetCookieJar cookieJar = new JavaNetCookieJar(cookieHandler);
+httpClient = new OkHttpClient.Builder().cookieJar(cookieJar).build();
+

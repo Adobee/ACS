@@ -1,0 +1,9 @@
+// All guarded by this.
+private okhttp3.Call rawCall;
+private Throwable creationFailure; // Either a RuntimeException or IOException.
+if (call != null) {
+return call.request();
+}
+if (creationFailure != null) {
+if (creationFailure instanceof IOException) {
+

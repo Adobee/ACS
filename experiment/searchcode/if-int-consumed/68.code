@@ -1,0 +1,10 @@
+TopicPartitionOffset that = (TopicPartitionOffset) o;
+
+if (committed != that.committed) {
+return false;
+}
+if (consumed != that.consumed) {
+int result = topic != null ? topic.hashCode() : 0;
+result = 31 * result + partition;
+result = 31 * result + (int) (consumed ^ (consumed >>> 32));
+

@@ -1,0 +1,11 @@
+rand = new Random(System.currentTimeMillis());
+lastChoiceTime = 0;
+}
+
+public void update(GameObject ball, InputController ctrl){
+
+if (isTimeToChoose()){
+double speed = ball.getCurrentVel().module();
+ball.setVel(new V2d(0,1).mul(speed));
+} else if (choice == 1){
+

@@ -1,0 +1,9 @@
+public void setNoOfItems(long noOfItems) {
+this.noOfItems = noOfItems;
+}
+
+@Override
+public int hashCode() {
+hash = 31 * hash + Objects.hashCode(this.symbol);
+hash = 31 * hash + (int) (this.noOfItems ^ (this.noOfItems >>> 32));
+

@@ -1,0 +1,8 @@
+private static DimensionBuilder instance = null;
+
+public static DimensionBuilder getInstance() {
+if (instance == null)
+@Override
+public Double[] buildDimension(Coordinate[] coordinates) {
+Double[] dimension = AbcissaAngleDimensionBuilder.getInstance().buildDimension(coordinates);
+

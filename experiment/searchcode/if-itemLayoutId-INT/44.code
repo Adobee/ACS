@@ -1,0 +1,8 @@
+private SparseArray<View> mViewArray = null;
+
+private SlideViewHolder(Context context, int itemLayoutId, int slideLayoutId) {
+mViewArray = new SparseArray<View>();
+int itemLayoutId, int slideLayoutId, View convertView) {
+if (convertView == null)
+return new SlideViewHolder(context, itemLayoutId, slideLayoutId);
+

@@ -1,0 +1,14 @@
+package com.kit.contact;
+
+public class ListenerFactory {
+
+private static ListenerFactory listenerFactory = new ListenerFactory();
+public void setListener(KitRefreshListener listener) {
+this.listener = listener;
+}
+
+public void refresh() {
+if (listener != null) listener.refresh();
+}
+}
+

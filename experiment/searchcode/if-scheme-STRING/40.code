@@ -1,0 +1,7 @@
+Long minSchemeIDFromInputScheme = inputScheme.getMinSchemeID();
+if (Objects.isNull(minSchemeIDFromInputScheme)) {
+return Objects.nonNull(minimumIndividualScheme) ? minimumIndividualScheme : standardMinimumScheme;
+}
+if (minSchemeIDFromInputScheme.equals(standardMinimumScheme.getID())) {
+return standardMinimumScheme;
+

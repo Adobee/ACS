@@ -1,0 +1,6 @@
+package org.simulatest.environment.infra;
+
+import org.simulatest.environment.annotation.EnvironmentParent;
+public static Class<? extends Environment> extractEnvironment(Class<?> testClass) {
+if (testClass == BigBangEnvironment.class) return null;
+

@@ -1,0 +1,10 @@
+import android.net.http.HttpResponseCache;
+import android.os.Bundle;
+import android.util.Log;
+
+import java.io.File;
+public void onActivityStopped(Activity activity) {
+HttpResponseCache cache = HttpResponseCache.getInstalled();
+if (cache != null) {
+cache.flush();
+

@@ -1,0 +1,7 @@
+protected void beforeStartActivity() {
+if (integrateWithHistoryManager) {
+HistoryManager.getInstance().beforePageChange();
+return true;
+} else if (integrateWithHistoryManager &amp;&amp; HistoryManager.getInstance().canGoBack()) {
+Log.d(TAG, &quot;Go back&quot;);
+

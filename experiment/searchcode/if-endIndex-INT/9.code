@@ -1,0 +1,8 @@
+Vector<String> exploded = new Vector<String>(0, 1);
+String tmpstr = null;
+int beginIndex = 0, endIndex = 0;
+while (endIndex < str.length()) {
+if (str.charAt(endIndex) == separator) {
+if (endIndex > beginIndex) {
+tmpstr = str.substring(beginIndex, endIndex);
+

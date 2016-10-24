@@ -1,0 +1,8 @@
+import io.netty.handler.codec.http.FullHttpMessage;
+import io.netty.handler.codec.http.HttpObject;
+import io.netty.handler.codec.http.HttpRequest;
+HttpRequest httpRequest = (HttpRequest) httpObject;
+
+HttpMessageContents contents;
+if (httpObject instanceof FullHttpMessage) {
+

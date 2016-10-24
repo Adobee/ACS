@@ -1,0 +1,9 @@
+System.out.println((n == 1 ? c + 1 : c) % 3);
+}
+}
+
+public static int binlog(long bits) {
+int log = 0;
+if( ( bits &amp; 0xffffffff00000000L ) != 0 ) { bits >>>= 32; log = 32; }
+if( bits >= 65536 ) { bits >>>= 16; log += 16; }
+

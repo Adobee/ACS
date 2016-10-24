@@ -1,0 +1,7 @@
+public class DimensionLevelPair implements Comparable<DimensionLevelPair> {
+private final int dimensionOrderNo;
+private final int levelOrderNo;
+
+public DimensionLevelPair(int dimensionOrderNo, int levelOrderNo) {
+super();
+

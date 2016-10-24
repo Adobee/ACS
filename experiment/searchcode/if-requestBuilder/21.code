@@ -1,0 +1,9 @@
+class RequestWrapper implements HttpRequest {
+
+private final Request.Builder requestBuilder;
+
+public RequestWrapper(Request.Builder requestBuilder) {
+Request request = requestBuilder.build();
+if (request.body() == null) {
+return null;
+

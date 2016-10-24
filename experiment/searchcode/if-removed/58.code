@@ -1,0 +1,9 @@
+Utils.checkExistance(removed);
+if ((removed.isFile()) || ((removed.isDirectory()) &amp;&amp; (removed.list().length == 0))) {
+recursiveRemove(removed);
+}
+}
+
+public void recursiveRemove(File removed) throws Exception {
+if (removed.isDirectory()) {
+

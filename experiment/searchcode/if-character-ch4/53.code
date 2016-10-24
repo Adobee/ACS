@@ -1,0 +1,11 @@
+package anna.p.exercise.ch4;
+
+public class Excercise4_1 {
+public static void main(String[] args) {
+System.out.println(isNumber(&#39;8&#39;));
+}
+
+private static boolean isNumber(char ch) {
+if(Character.isDigit(ch)) return true;
+return false;
+

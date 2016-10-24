@@ -1,0 +1,10 @@
+package net.toolab.query.sql;
+
+import net.toolab.query.Predicate;
+import net.toolab.query.Query;
+String queryString = Predicate.empty == predicate ? &quot;&quot; : predicate.name();
+
+if (query instanceof QueryUnit) {
+QueryUnit unit = (QueryUnit) query;
+queryString += &quot; &quot; + unit.key() + &quot; &quot; + unit.operand().getSymbol() + &quot; &quot; +unit.value();
+

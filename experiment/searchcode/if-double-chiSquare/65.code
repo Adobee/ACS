@@ -1,0 +1,10 @@
+int n=XIdot.size();
+
+//Calculating Chisquare score
+double ChisquareScore=0.0;
+protected static double scoreToPvalue(double score, int n, int k) {
+return 1.0-ContinuousDistributions.ChisquareCdf(score, (n-1)*(k-1));
+}
+
+}
+

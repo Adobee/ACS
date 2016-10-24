@@ -1,0 +1,12 @@
+public class ApacheCookieSpec extends org.apache.commons.httpclient.cookie.CookieSpecBase {
+
+public ApacheCookieSpec() {
+}
+
+public boolean match(java.lang.String s, int i, java.lang.String s1, boolean flag, org.apache.commons.httpclient.Cookie cookie) {
+return (cookie.getExpiryDate() == null || cookie.getExpiryDate().after(new Date())) &amp;&amp; domainMatch(s, cookie.getDomain()) &amp;&amp; pathMatch(s1, cookie.getPath()) &amp;&amp; (!cookie.getSecure() || flag);
+}
+}
+
+public boolean domainMatch(java.lang.String s, java.lang.String s1)  {
+

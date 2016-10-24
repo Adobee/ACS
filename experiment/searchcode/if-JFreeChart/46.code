@@ -1,0 +1,13 @@
+int numBins = (int) ((max-min)/h);
+
+if(numBins<=0){
+numBins = 1;
+}
+
+return numBins;
+}
+
+private IntervalXYDataset createDataset() {
+private JFreeChart createChart(IntervalXYDataset intervalxydataset) {
+JFreeChart jfreechart = ChartFactory.createHistogram(title,
+

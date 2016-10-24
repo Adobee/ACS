@@ -1,0 +1,9 @@
+private static final int CHUNK_SIZE = 16384;
+BufferedInputStream bis=null;
+private int bytesLeft;
+private byte[] contents;
+public void run() {
+while (bytesLeft > 0) {
+if (bytesLeft > CHUNK_SIZE) {
+try {
+

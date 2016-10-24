@@ -1,0 +1,9 @@
+try{
+Utils.getXML(&quot;play&quot;,connMgr,this);
+if (streamingMode) {
+if (streamingPort == null) {
+ToggleButton button = (ToggleButton)findViewById(R.id.streaming);
+if(button.isChecked()) {
+streamingMode = true;
+Utils.getXML(&quot;setStream&amp;option=1&quot;, connMgr, this);
+

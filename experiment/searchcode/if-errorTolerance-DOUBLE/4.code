@@ -1,0 +1,11 @@
+public static void main(String[] args) throws Exception {
+Benchmark be = new Benchmark(args);
+
+if (be.args.length > 0) {
+double exp = Double.parseDouble(be.args[0]);
+double alr = al + ar;
+if (Math.abs(alr - a) <= Integrate.errorTolerance) return alr;
+else return recEval(c, r, fc, fr, ar) + recEval(l, c, fl, fc, al);
+}
+}
+

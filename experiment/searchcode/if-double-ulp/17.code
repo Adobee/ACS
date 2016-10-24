@@ -1,0 +1,7 @@
+//if d is quite small, we return negative value.
+//set ulp as Double.MIN_VALUE if d is not normalized
+public static double ulp(double d){
+//if(d==0) return 0;
+if(d==0) return Double.MIN_VALUE;//ulp;
+long l = Double.doubleToLongBits(d) &amp; 0x7ff0000000000000l;// use the fact that the frac bits is 52.
+

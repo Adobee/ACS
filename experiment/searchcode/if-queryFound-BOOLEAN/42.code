@@ -1,0 +1,10 @@
+public NotQueryBuilder fromXContent(QueryParseContext parseContext) throws IOException, QueryParsingException {
+XContentParser parser = parseContext.parser();
+
+QueryBuilder query = null;
+boolean queryFound = false;
+query = parseContext.parseInnerFilterToQueryBuilder(currentFieldName);
+}
+} else if (token == XContentParser.Token.START_ARRAY) {
+queryFound = true;
+

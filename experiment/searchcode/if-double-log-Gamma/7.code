@@ -1,0 +1,9 @@
+public static double logGamma (double x) {
+if (x <= 0.0d) {
+Utility.warning(&quot;logGamma: argument must be > 0&quot;);
+if (x < 15.0d)
+return logGamma (x + 1.0d) - Math.log(x);
+
+double z = 1.0d / (x*x);
+return (
+

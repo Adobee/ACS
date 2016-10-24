@@ -1,0 +1,11 @@
+if (maxPrimary == 0 &amp;&amp; maxSecondary == 0) {
+return actualPrimary;
+}
+
+// If primary is unspecified, scale primary to match secondary&#39;s scaling
+double ratio = (double) maxSecondary / (double) actualSecondary;
+return (int) (actualPrimary * ratio);
+}
+
+if (maxSecondary == 0) {
+

@@ -1,0 +1,12 @@
+List<String> l = new LinkedList<String>();
+boolean isQuoted = false;
+boolean escaping = false;
+
+for(char c : in.toCharArray()) {
+/**
+* Escaping overrides everything
+*/
+if(escaping) {
+current.append(c);
+escaping = false;
+

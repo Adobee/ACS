@@ -1,0 +1,10 @@
+while (true) {
+
+if (Math.abs(currentX) <= 0.01 &amp;&amp; currentY > 0)
+break;
+
+double a =
+(4 * outX * outX + outY * outY);
+double nextX = currentX - t * outX;
+double nextY = currentY - t * outY;
+

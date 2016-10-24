@@ -1,0 +1,7 @@
+public class Dec2Hex
+{
+public static void main(String args[])
+{
+int n,q,r;
+String hex[],hexdigits[] = {&quot;0&quot;,&quot;1&quot;,&quot;2&quot;,&quot;3&quot;,&quot;4&quot;,&quot;5&quot;,&quot;6&quot;,&quot;7&quot;,&quot;8&quot;,&quot;9&quot;,&quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;D&quot;,&quot;E&quot;,&quot;F&quot;};
+

@@ -1,0 +1,9 @@
+public double calcProb(double r, int x, double fx, int y, double fy) {
+//    if (fy < 0 || fy > 1)
+//      return 0;
+//    if (r < -1 || r > 1)
+//      return 0;
+if (r < 0)
+return negProb(r, x, fx, y, fy);
+return posProb(r, x, fx, y, fy);
+

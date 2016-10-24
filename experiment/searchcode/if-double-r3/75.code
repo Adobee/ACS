@@ -1,0 +1,9 @@
+// 		System.out.print(fA+&quot;  &quot; +fB+&quot; &quot;+cA+&quot;   &quot;+cB);
+if (cA==fB)
+{
+C=new double[fA][cB];
+/*multiplicacio vectorial  Ay B son  vectores en R3 */
+public static double[] obtenerProductoCruz(double[] A, double[] B)
+{
+double[] prod= new double[3];
+

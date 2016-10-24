@@ -1,0 +1,11 @@
+this.engine = engine;
+}
+
+@Override
+public void run() {
+if (imageAware.isCollected()) {
+Log.d(TAG, LOG_TASK_CANCELLED_IMAGEAWARE_COLLECTED + &quot;-->&quot; + memoryCacheKey);
+listener.onLoadingCancelled(imageUri, imageAware.getWrappedView());
+} else if (isViewWasReused()) {
+Log.d(TAG, LOG_TASK_CANCELLED_IMAGEAWARE_REUSED + &quot;-->&quot; + memoryCacheKey);
+

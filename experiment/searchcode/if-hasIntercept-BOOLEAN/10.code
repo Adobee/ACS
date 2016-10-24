@@ -1,0 +1,9 @@
+private final int size;
+private final boolean sparse;
+private final boolean hasIntercept;
+
+public static Formula compile(List<Term> terms, Summary summary) {
+List<CompiledTerm> compiled = Lists.newArrayListWithExpectedSize(terms.size());
+int offset = 0;
+boolean hasIntercept = internalTerms.get(0).isIntercept();
+

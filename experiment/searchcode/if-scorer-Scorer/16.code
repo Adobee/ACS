@@ -1,0 +1,7 @@
+* License along with this program. If not, see <http://www.gnu.org/licenses/>.
+*/
+package com.sindicetech.siren.search.node;
+s = (NodeScorer) child.child;
+if (s instanceof AncestorFilterScorer) {
+s = ((AncestorFilterScorer) child.child).getScorer();
+

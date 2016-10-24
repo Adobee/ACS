@@ -1,0 +1,10 @@
+public List<Integer> getRow(int rowIndex) {
+rowIndex = rowIndex + 1;
+List<Integer> r = new ArrayList<Integer>();
+r.add(1);
+int mid;
+if (rowIndex % 2 == 0) {
+mid = rowIndex / 2;
+} else {
+mid = rowIndex / 2 + 1;
+

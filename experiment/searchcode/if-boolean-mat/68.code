@@ -1,0 +1,11 @@
+this.invMat.preMult(transfo.invMat);
+}
+
+@Override
+public boolean equals(Object o){
+boolean isEqual =false;
+if(o instanceof Transfo){
+Transfo t2 = (Transfo) o;
+if(this.mat.equals(t2.mat) &amp;&amp;
+this.invMat.equals(t2.invMat)){
+

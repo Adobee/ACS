@@ -1,0 +1,10 @@
+result = prime * result + httpRequestChunkedMode;
+result = prime * result + httpResponseChunkedMode;
+return result;
+}
+
+public boolean equals(Object obj) {
+DPWSProtocolInfo other = (DPWSProtocolInfo) obj;
+if (httpRequestChunkedMode != other.httpRequestChunkedMode) return false;
+if (httpResponseChunkedMode != other.httpResponseChunkedMode) return false;
+

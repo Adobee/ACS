@@ -1,0 +1,9 @@
+public class TransactionUtil {
+
+
+public static MatchType matching(Transaction first, Transaction second) {
+if(first.isError() || second.isError()){
+return MatchType.DIFFERENT;
+}
+else if(!first.getAccountId().equals(second.getAccountId())){
+

@@ -1,0 +1,6 @@
+public void printTo(Appendable appendable, ReadablePartial readablePartial, Locale locale) {
+if (appendable instanceof StringBuffer) {
+this.underlying.printTo((StringBuffer) appendable, readablePartial, locale);
+}
+if (appendable instanceof Writer) {
+

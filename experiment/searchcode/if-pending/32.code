@@ -1,0 +1,8 @@
+import com.rosy.service.impl.BaseManager;
+import com.rosy.model.PendingRequest;
+import com.rosy.dao.PendingRequestDao;
+import com.rosy.service.PendingRequestManager;
+public void savePendingRequest(PendingRequest pendingRequest) {
+if(StringUtils.isEmpty(pendingRequest.getId())){
+pendingRequest.setId(null);
+

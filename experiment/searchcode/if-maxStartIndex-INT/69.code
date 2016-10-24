@@ -1,0 +1,12 @@
+public static void findMaxSubArray(int[] inputArray) {
+
+int maxStartIndex = 0;
+int maxEndIndex = 0;
+
+int maxCur = Integer.MIN_VALUE;
+for (int currentIndex = 0; currentIndex < inputArray.length; currentIndex++) {
+
+if (maxCur < 0) {
+maxCur = inputArray[currentIndex];
+maxStartIndex = currentIndex;
+

@@ -1,0 +1,15 @@
+for (BooleanVariable var : this.getDomain()) {
+if(var.getValue().equals(BooleanValue.DONT_CARE)) {
+return BooleanValue.DONT_CARE;
+} else if(var.getValue().equals(BooleanValue.TRUE)) {
+isTrue = true;
+}
+}
+if(isTrue) {
+return BooleanValue.TRUE;
+}
+return BooleanValue.FALSE;
+}
+
+}
+

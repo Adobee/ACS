@@ -1,0 +1,10 @@
+public class RequestsPerTimespanTimer implements ThrottleTimer {
+
+private int maxRequests;
+private long timespan;
+
+// Keeps track of the average requests per second
+public RequestsPerTimespanTimer(int requests, long timespan) {
+this.maxRequests = requests;
+this.timespan = timespan;
+

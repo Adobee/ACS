@@ -1,0 +1,12 @@
+public class MockRequest implements DroolsRequest {
+
+private Set<Object> objectSet;
+
+@Override
+public Set<Object> getAllFacts() {
+return objectSet;
+}
+
+public void addObject( Object obj ) {
+if ( objectSet == null ) {
+

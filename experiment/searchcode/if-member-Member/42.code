@@ -1,0 +1,14 @@
+package edu.nju.healthclub.action;
+
+import edu.nju.healthclub.model.Member;
+
+@SuppressWarnings(&quot;serial&quot;)
+member = (Member) this.request().getSession().getAttribute(&quot;user&quot;);
+if(member != null) {
+return &quot;success&quot;;
+} else {
+return &quot;fail&quot;;
+}
+}
+public Member getMember() {
+

@@ -1,0 +1,7 @@
+public static IIR_CharacterLiteral get(char character) {
+IIR_CharacterLiteral ret =
+(IIR_CharacterLiteral) _h.get(new Character(character));
+if (ret==null) {
+ret = new IIR_CharacterLiteral(character);
+_h.put(new Character(character), ret);
+

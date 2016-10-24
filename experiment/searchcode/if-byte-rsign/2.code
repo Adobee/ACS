@@ -1,0 +1,10 @@
+byte asign, bsign, rsign;
+int aextradigit = 0, bextradigit = 0;
+
+/* handle special cases */
+if (nans != FINITE || x.nans != FINITE)
+/* The result will be signed like the arg with greatest magnitude */
+rsign = bsign;
+if (compare(a, b) > 0)
+rsign = asign;
+

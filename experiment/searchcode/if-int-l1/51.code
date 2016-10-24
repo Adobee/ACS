@@ -1,0 +1,12 @@
+int l = random.nextInt(2);
+
+if (this.a >= 0) {
+l = this.a;
+}
+
+int i1 = random.nextInt(3) + 4;
+boolean flag = true;
+
+if (j >= 1 &amp;&amp; j + i1 + 1 < 256) {
+int j1;
+

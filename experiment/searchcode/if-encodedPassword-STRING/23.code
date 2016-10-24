@@ -1,0 +1,10 @@
+System.out.println(&quot;MD5: &quot; + pwd + &quot; len=&quot; + pwd.length());
+ShaPasswordEncoder passwordEncoder = new ShaPasswordEncoder();
+String encodedPassword = passwordEncoder.encodePassword(&quot;1&quot;, null);
+System.out.println(&quot;encodedPassword: &quot; + encodedPassword + &quot; len=&quot; + encodedPassword.length());
+if(encodedPassword.equals(&quot;356a192b7913b04c54574d18c28d46e6395428ab&quot;)){
+System.out.println(&quot;passed&quot;);
+}
+}
+}
+

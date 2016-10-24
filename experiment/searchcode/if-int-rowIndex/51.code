@@ -1,0 +1,6 @@
+public class Search2DMatrix {
+public boolean searchMatrix(int[][] matrix, int target) {
+int rowIndex = 0, columnIndex = 0;
+int upper = matrix.length - 1, lower = 0;
+if (matrix.length == 0 &amp;&amp; matrix[1].length == 0)
+

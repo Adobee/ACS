@@ -1,0 +1,11 @@
+Object ret = Objutil.defaults(toType);
+if (val == null)
+return ret;
+if (ret != null) {
+toType = ret.getClass();
+ret = null;
+}
+if (toType.isInstance(val))
+return val;
+Class valclass = val.getClass();
+

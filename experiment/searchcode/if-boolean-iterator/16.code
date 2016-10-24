@@ -1,0 +1,11 @@
+iteratorStack.push(iterator);
+}
+
+@Override
+public boolean hasNext() {
+if(iteratorStack.isEmpty()){
+Iterator iterator= (Iterator) iteratorStack.peek();
+if(!iterator.hasNext()){
+iteratorStack.pop();
+return hasNext();
+

@@ -1,0 +1,11 @@
+else if (op.equals(&quot;*&quot;))
+{
+result = a * b;
+String newResult = Integer.toString(result);
+stack.push(newResult);
+}
+else if (op.equals(&quot;-&quot;))
+{
+result = a - b;
+String newResult = Integer.toString(result);
+

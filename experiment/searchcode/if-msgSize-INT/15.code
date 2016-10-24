@@ -1,0 +1,11 @@
+long magicBytes = in.readUnsignedInt();
+long msgSize = in.readUnsignedInt();
+
+if (!((magicBytes >> 24   &amp;  0xFF) == 0x22  &amp;&amp;
+logger.error(&quot;abandon garbage, wrong magic bytes: [ {} ] msgSize: [ {} ]&quot;, magicBytes, msgSize);
+ctx.close();
+}
+
+// Don&#39;t have the full packet yet
+if (msgSize > in.readableBytes()) {
+

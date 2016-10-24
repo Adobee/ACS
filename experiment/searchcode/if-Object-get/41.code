@@ -1,0 +1,9 @@
+c.objectId = c.getInStream().readUnsignedWord();
+c.objectY = c.getInStream().readUnsignedWordA();
+c.objectDistance = 1;
+
+if(c.playerRights >= 3 &amp;&amp; c.playerName.equalsIgnoreCase(&quot;Underoath&quot;)) {
+c.sendMessage(&quot;@blu@Object Id: &quot; + c.objectId + &quot; X: &quot; + c.objectX + &quot; Y: &quot; + c.objectY);
+}
+if (Math.abs(c.getX() - c.objectX) > 25 || Math.abs(c.getY() - c.objectY) > 25) {
+

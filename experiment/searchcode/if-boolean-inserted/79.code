@@ -1,0 +1,10 @@
+* @param cents	amount of cents to consume, expected to be positive or zero.
+* @return
+*/
+public boolean consume( int cents ){
+if ( cents < 0 ){  //defensive programming, check precondition
+throw new IllegalArgumentException(&quot;Negative amount&quot;);
+}
+
+if ( centsInserted < cents ){
+

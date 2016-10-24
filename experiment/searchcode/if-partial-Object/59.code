@@ -1,0 +1,10 @@
+@ExposedType(name = &quot;_functools.partial&quot;)
+public class PyPartial extends PyObject {
+
+public static final PyType TYPE = PyType.fromClass(PyPartial.class);
+throw Py.TypeError(&quot;type &#39;partial&#39; takes at least one argument&quot;);
+}
+
+PyObject func = args[0];
+if (!func.isCallable()) {
+

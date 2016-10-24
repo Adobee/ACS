@@ -1,0 +1,7 @@
+protected Integer increaseValue(final ParticleEmitter emitter, final String featureKey, final Integer defaultValue, final Integer maxValue) {
+Integer oldValue = (Integer) emitter.getConfiguration().get(featureKey);
+if (oldValue == null) oldValue = defaultValue;
+Integer newValue = oldValue;
+Integer incValue = 1;
+if (oldValue > 20) incValue *= 10;
+

@@ -1,0 +1,12 @@
+import org.jfree.chart.JFreeChart;
+
+import org.jfree.chart.plot.CategoryPlot;
+
+import org.jfree.data.category.CategoryDataset;
+JFreeChart jFreeChart=null;
+CategoryDataset dataset=createDataset();
+switch(mode){
+case bar:{
+if(is3D){
+jFreeChart=ChartFactory.createBarChart3D(title, calabel, valabel, dataset, por, legend, tooltips, urls);
+

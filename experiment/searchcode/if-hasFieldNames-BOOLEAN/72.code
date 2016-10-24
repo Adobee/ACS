@@ -1,0 +1,9 @@
+builder.fieldDataFields = fieldDataFields;
+}
+boolean hasFieldNames = in.readBoolean();
+if (hasFieldNames) {
+boolean hasFieldNames = fieldNames != null;
+out.writeBoolean(hasFieldNames);
+if (hasFieldNames) {
+out.writeVInt(fieldNames.size());
+

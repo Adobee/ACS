@@ -1,0 +1,7 @@
+public static double getDistance(Point2D p, Point2D a, Point2D b) { return getDistance(p, a, b, null); }
+public static double getDistance(Point2D p, Point2D a, Point2D b, Point2D nearest)
+{
+if(p.equals(a)) { if(nearest != null) nearest.setLocation(a); return 0; }
+if(p.equals(b)) { if(nearest != null) nearest.setLocation(b); return 0; }
+Point2D ab = new Point2D.Double(b.getX() - a.getX(), b.getY() - a.getY());
+

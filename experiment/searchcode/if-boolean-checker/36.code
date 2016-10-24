@@ -1,0 +1,9 @@
+package me.fanhua.uapi.item.checker;
+
+import me.fanhua.uapi.nbt.NBTTagCompound;
+import me.fanhua.uapi.utils.ItemUtils;
+@Override
+public boolean check(ItemStack item) {
+if (!this.checker.check(item)) return false;
+return this.nbt.equals(ItemUtils.getNBT(item));
+

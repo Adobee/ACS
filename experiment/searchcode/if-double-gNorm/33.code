@@ -1,0 +1,8 @@
+m_ys = new double[m_M][m_x.length];
+m_ss = new double[m_M][m_x.length];
+
+if (m_diag)
+m_Hdiag = new double[m_x.length];
+int k = 1; // the first step has been explore in init()
+double gNorm, xNorm, fx_old, converge;//get the initial function value and gradient
+

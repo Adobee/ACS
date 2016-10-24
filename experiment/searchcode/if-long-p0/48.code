@@ -1,0 +1,9 @@
+public float radius() {
+if (m < 2) {
+return 1f;
+}
+return (float) (Math.log(m) / Math.log(2) / 2);
+// Test particles collision
+if (p0.radius() + p.radius() < d) {
+p0.vx += ((G * p.m) / (d * d)) * ((p.x - p0.x) / d);
+

@@ -1,0 +1,8 @@
+lookupMap = new HashMap<CharSequence, CharSequence>();
+int _shortest = Integer.MAX_VALUE;
+int _longest = 0;
+_shortest = sz;
+}
+if(sz > _longest) {
+_longest = sz;
+

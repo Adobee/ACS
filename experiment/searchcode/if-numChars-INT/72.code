@@ -1,0 +1,11 @@
+public int read(final char[] buffer, final int from, final int length) throws IOException {
+int numchars = 0;
+while (numchars == 0) {
+numchars = in.read(buffer, from, length);
+if (numchars == -1) {
+return numchars;
+}
+
+int last = from;
+for (int i = from; i < from + numchars; i++) {
+

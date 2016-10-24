@@ -1,0 +1,9 @@
+package math;
+
+public class FactorialTrailingZeroes {
+public int trailingZeroes(int n) {
+if (n <= 0)
+return 0;
+double pow = Math.floor(Math.log(n) / Math.log(5));
+double numerator = (1 - Math.pow(0.2, pow)) * 0.2;
+

@@ -1,0 +1,6 @@
+public DataSize(long s) { this.byteSize = s; }
+public DataSize(double s, SizeUnit u) {
+this(Math.round(s * u.multiplicator));
+(byteSize <= SizeUnit.TB.multiplicator)?SizeUnit.GB:SizeUnit.TB;
+if (u == SizeUnit.B) return String.format(&quot;%d B&quot;, this.byteSize);
+

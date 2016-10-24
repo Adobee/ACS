@@ -1,0 +1,12 @@
+affectedOperands = operands;
+}
+}
+return affectedOperands;
+}
+
+
+public Operand getLoadSource() {
+if (loadSource == null) {
+loadSource = operands[operands.length-1];
+if(!loadSource.isIndirectAddress() &amp;&amp; !loadSource.isVariable() &amp;&amp; !loadSource.isExprValue()) {
+

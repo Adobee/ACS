@@ -1,0 +1,10 @@
+import java.net.Socket;
+
+public class PortSelectorWithinRange {
+
+private int start;
+private int end;
+private int attempts = 5;
+for(int i=0; i<attempts; i++){
+int randomPort = start + (int)(Math.random() * ((end - start) + 1));
+

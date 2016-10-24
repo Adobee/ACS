@@ -1,0 +1,11 @@
+long[] div(long dividend, long divisor) {
+long[] result;
+if (dividend < divisor) {
+result = new long[2];
+result[1] = dividend;
+result[1] <<= 1;
+if ((dividend &amp; 1) == 1)
+result[1]++;
+if (result[1] >= divisor) {
+result[1] -= divisor;
+

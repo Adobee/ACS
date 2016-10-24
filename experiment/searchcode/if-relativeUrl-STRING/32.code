@@ -1,0 +1,12 @@
+public static String absolutizeUrl(String baseUrl, String relativeUrl) {
+
+int afterProtocolIndex = baseUrl.indexOf(&quot;://&quot;);
+if (afterProtocolIndex < 0) {
+throw new IllegalArgumentException(&quot;Invalid base URL (must contain ://): &quot; + baseUrl);
+} else {
+afterProtocolIndex += 3; // shift by protocol delimiter
+}
+
+String result;
+if (relativeUrl.contains(&quot;://&quot;)) {
+

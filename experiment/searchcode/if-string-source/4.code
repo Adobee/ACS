@@ -1,0 +1,11 @@
+public String parse(String source) {
+return source;
+}
+
+@Override
+public String print(String source) {
+if (source.length() > getLength())
+return source.substring(0, getLength());
+
+if (source.length() < getLength()) {
+

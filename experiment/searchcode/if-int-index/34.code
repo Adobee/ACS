@@ -1,0 +1,14 @@
+temp[i] = A[i];
+}
+int indexA = 0;
+int indexB = 0;
+while(indexA < m &amp;&amp; indexB < n) {
+if(temp[indexA] > B[indexB]) {
+A[indexA+indexB] = temp[indexA];
+indexA++;
+}
+}
+if(indexA == m) {
+while(indexB < n) {
+A[indexA+indexB] = B[indexB];
+

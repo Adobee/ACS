@@ -1,0 +1,16 @@
+protected org.apache.commons.math.stat.descriptive.moment.FirstMoment moment;
+
+protected boolean incMoment;
+
+public Mean() {
+incMoment = true;
+moment = new org.apache.commons.math.stat.descriptive.moment.FirstMoment();
+public void increment(final double d) {
+if (incMoment) {
+moment.increment(d);
+}
+}
+
+@java.lang.Override
+public void clear() {
+

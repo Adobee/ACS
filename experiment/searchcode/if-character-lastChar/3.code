@@ -1,0 +1,12 @@
+private ExprToken readToken() throws IOException {
+if (Character.isDigit(lastChar)) {
+return readNumber();
+}
+
+switch (lastChar) {
+return null;
+}
+
+if (!Character.isJavaIdentifierStart(lastChar)) {
+throw new IOException(&quot;Invalid token found: &quot; + lastChar);
+

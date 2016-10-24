@@ -1,0 +1,10 @@
+public static final int BOARD_NOTIFY = 1; // 公佈欄通知
+public static final int MESSAGE_NOTIFY = 2; // 訊息通知
+
+
+private static HashMap<Integer, Boolean> notifyMap = new HashMap<>();
+public static boolean isChange(int store) {
+boolean ret = false;
+try{
+if(NullTK.isNull(NotifyMonitorService.notifyMap)) {
+

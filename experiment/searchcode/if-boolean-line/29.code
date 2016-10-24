@@ -1,0 +1,10 @@
+import com.codekata.countingcodelines.ITestCodeLines;
+
+public abstract class CodeLineTester implements ITestCodeLines {
+
+private boolean m_insideMultiLineComment = false;
+private boolean m_insideString = false;
+
+@Override
+public boolean isCodeLine(String line) {
+

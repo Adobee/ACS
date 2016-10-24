@@ -1,0 +1,13 @@
+public Set<Integer> getDays() {
+return mDays;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+
+DaysInWeek that = (DaysInWeek) o;
+
+if (mDays != null ? !mDays.equals(that.mDays) : that.mDays != null) return false;
+

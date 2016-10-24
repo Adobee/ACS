@@ -1,0 +1,7 @@
+* @return
+*/
+public long[] obtainRange(String rangeValue, long fileLength) {
+if (rangeValue.contains(&quot;,&quot;))
+throw new RangeException(&quot;multiple ranges are not accepted &quot; + rangeValue);//the server does not accept multiple ranges
+if (!rangeValue.startsWith(&quot;bytes=&quot;))
+

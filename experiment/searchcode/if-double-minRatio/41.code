@@ -1,0 +1,8 @@
+public final double noiseWindow;
+public final double maxRmsWindow;
+public final double minRatio;
+public final double maxRatio;
+public static NoiseLevelDetectionSettings create(int sampleRate, double noiseWindow, double maxRmsWindow, double minRatio, double maxRatio) {
+if (sampleRate < 1) {
+throw new IllegalArgumentException(&quot;SampleRate must be positive&quot;);
+

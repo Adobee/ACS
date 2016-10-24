@@ -1,0 +1,8 @@
+final BytesRef term = termsEnum.next();
+if (term == null) {
+return null;
+}
+if (termEncoding == GeoPointField.TermEncoding.PREFIX) {
+return GeoPointField.prefixCodedToGeoCoded(term);
+} else if (termEncoding == GeoPointField.TermEncoding.NUMERIC) {
+

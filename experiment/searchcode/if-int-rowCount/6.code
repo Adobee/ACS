@@ -1,0 +1,10 @@
+triangleC(10);
+System.out.println(&quot;d)&quot;);
+triangleD(10);
+}
+
+private static void triangleA(int rowcount) {
+
+for(int row = 1; row<=rowcount; row++) {
+leftCharPadder(rowcount,row,&quot;*&quot;);;
+

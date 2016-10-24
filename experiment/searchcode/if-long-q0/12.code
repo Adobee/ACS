@@ -1,0 +1,9 @@
+public double[] utm2LatLon(int zone, String hemisphere, double easting, double northing) {
+UTM2LatLon c = new UTM2LatLon();
+return c.convertUTMToLatLong(zone, hemisphere, easting, northing);
+private class UTM2LatLon {
+double easting;
+double northing;
+
+public double[] convertUTMToLatLong(int zone, String hemisphere, double east, double north) {
+

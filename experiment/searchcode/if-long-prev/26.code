@@ -1,0 +1,9 @@
+long[] arr = new long[parts];
+arr[0] = 1;
+HashSet<Long> set = new HashSet<Long>(max);
+long prev = 1, x = 0;
+for (int j = 1; j < max; j++) {
+x = (a * prev + prev % b) % c;
+prev = x;
+if (set.contains(x)) {
+

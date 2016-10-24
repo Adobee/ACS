@@ -1,0 +1,10 @@
+public final class Dispatcher {
+private int maxRequests = 64;
+private int maxRequestsPerHost = 5;
+
+/** Executes calls. Created lazily. */
+* invoked, those requests will remain in flight.
+*/
+public synchronized void setMaxRequests(int maxRequests) {
+if (maxRequests < 1) {
+

@@ -1,0 +1,17 @@
+//method 1
+
+public String stringSplosion(String str) {
+
+if(str.length()==0) return &quot;&quot;;
+
+return stringSplosion(str.substring(0,str.length()-1))+str;
+
+
+
+}
+
+
+//method 2
+
+public String stringSplosion(String str) {
+

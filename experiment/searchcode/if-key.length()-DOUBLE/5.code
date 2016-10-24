@@ -1,0 +1,7 @@
+Arrays.sort(b);
+int length = a.length + b.length;
+if ((length &amp; 0x01) == 0) {
+return (double)(findK(a, 0, b, 0, length / 2) + findK(a, 0, b, 0, length / 2 + 1)) / 2.0;
+int keyB = startB + k / 2 - 1 < B.length ? B[startB + k / 2 - 1] : Integer.MAX_VALUE;
+if (keyA < keyB) {
+

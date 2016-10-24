@@ -1,0 +1,15 @@
+private double minReduction;
+
+/** Maximal growth factor for stepsize control. */
+private double maxGrowth;
+
+/** Build a Runge-Kutta integrator with the given Butcher array.
+while (!lastStep) {
+
+interpolator.shift();
+
+double error = 0;
+for (boolean loop = true; loop;) {
+
+if (firstTime || !fsal) {
+

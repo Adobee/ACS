@@ -1,0 +1,10 @@
+class GZipServletResponseWrapper extends HttpServletResponseWrapper {
+
+private boolean disableFlushBuffer = false;
+private GZipServletOutputStream gzipOutputStream = null;
+this.printWriter.close();
+}
+
+if (this.gzipOutputStream != null) {
+this.gzipOutputStream.close();
+

@@ -1,0 +1,9 @@
+protected void flushIfNecessary(Session session, boolean existingTransaction) {
+if (getFlushMode() == FLUSH_EAGER || (!existingTransaction &amp;&amp; getFlushMode() != FLUSH_NEVER)) {
+throw new DataAccessResourceFailureException(&quot;Could not open Hibernate Session&quot;, ex);
+}
+}
+
+protected FlushMode applyFlushMode(Session session, boolean existingTransaction) {
+if (getFlushMode() == FLUSH_NEVER) {
+

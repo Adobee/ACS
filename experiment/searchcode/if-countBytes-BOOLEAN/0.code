@@ -1,0 +1,11 @@
+game.setGameId(buffer.readLong());
+
+int countBytes=buffer.readInt();
+byte[] b=new byte[countBytes];
+buffer.readBytes(b);
+game.setDisable(buffer.readBoolean());
+
+if(game.isDisable())
+return;
+countBytes=buffer.readInt();
+

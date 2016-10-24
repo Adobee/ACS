@@ -1,0 +1,7 @@
+public ResponseEntity<Shutdown> shutdown(@RequestParam(value = &quot;telegramId&quot;, required = true) String telegramId) {
+shutdownEventPublisher.publishShutdown(telegramId, telegramId);
+boolean removed = threadMap.stopAndRemoveThread(telegramId);
+shutdownEventPublisher.publishShutdown(shutdown.getTelegramId(), shutdown.getTelegramId());
+boolean removed = threadMap.stopAndRemoveThread(shutdown.getTelegramId());
+return getResponseEntity(removed, shutdown.getTelegramId());
+

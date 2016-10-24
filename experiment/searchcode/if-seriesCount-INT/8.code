@@ -1,0 +1,11 @@
+protected Matrix theta;
+
+protected Hypothesis(Matrix theta) {
+if(theta.columnCount() > 1) {
+throw new MatrixDimensionException(&quot;Theta must be a column vector&quot;);
+}
+this.theta = theta;
+}
+
+protected Hypothesis(int seriesCount) {
+

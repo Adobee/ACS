@@ -1,0 +1,8 @@
+bind(&quot;FileCachingIRIMapperTimeUnit&quot;, fileCacheUnit);
+
+if (cacheFilter != null) {
+bind(FileCachingFilter.class, cacheFilter);
+}
+else if (ignoreMappings != null &amp;&amp; !ignoreMappings.isEmpty()) {
+final Set<IRI> ignoreIRIs = new HashSet<IRI>();
+

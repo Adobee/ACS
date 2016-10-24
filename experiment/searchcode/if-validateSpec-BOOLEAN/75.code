@@ -1,0 +1,7 @@
+String[] blacklist = resolvePathsProperty(REST_TESTS_BLACKLIST, null);
+if (blacklist != null) {
+blacklistPathMatchers = new PathMatcher[blacklist.length];
+private static void validateSpec(RestSpec restSpec) {
+boolean validateSpec = RandomizedTest.systemPropertyAsBoolean(REST_TESTS_VALIDATE_SPEC, true);
+if (validateSpec) {
+

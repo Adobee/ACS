@@ -1,0 +1,14 @@
+
+public class Node
+{
+private String vertex;
+Node[] child;
+int childcount;
+public State state;
+public void addChildNode(Node adj)
+{
+adj.state=State.unvisited;
+if(childcount<child.length)
+{
+child[childcount]=adj;
+

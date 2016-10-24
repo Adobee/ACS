@@ -1,0 +1,10 @@
+public class MathKit {
+
+public static double add(double d1, double d2) { // 进行加法运算
+BigDecimal b1 = new BigDecimal(d1);
+BigDecimal b2 = new BigDecimal(d2);
+return b1.add(b2).doubleValue();
+}
+
+public static double sub(double d1, double d2) { // 进行减法运算
+

@@ -1,0 +1,9 @@
+public ITreeAppendable operator_doubleLessThan(ITreeAppendable appendable, CharSequence content) {
+if (content != null) {
+if (content.length() > 0) {
+preAppend(appendable, content.charAt(0));
+}
+appendable.append(content);
+if (content.length() > 0) {
+postAppend(appendable, content.charAt(content.length() - 1));
+

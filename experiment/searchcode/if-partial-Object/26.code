@@ -1,0 +1,8 @@
+AggregateProviderDefinition clone = (AggregateProviderDefinition) super.clone();
+if (this.partialProviders != null) {
+clone.partialProviders = new ArrayList();
+this.partialProviders = partialProviders;
+}
+
+public void validate(Object[] parameters) throws QuartetRuntimeException {
+

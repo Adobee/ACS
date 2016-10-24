@@ -1,0 +1,12 @@
+public class JUnitReportFailureConverter implements Converter {
+public boolean canConvert(Class clazz) {
+return clazz.equals(JUnitReportFailure.class);
+}
+
+public void marshal(Object value, HierarchicalStreamWriter writer,
+MarshallingContext context) {
+JUnitReportFailure failure = (JUnitReportFailure) value;
+if (failure == null)
+return;
+if (failure.getFailureMessage() != null)
+

@@ -1,0 +1,7 @@
+private static final Logger log = Logger.getLogger(TimeZoneIds.class);
+
+static final ConcurrentMap<TimeZone, DateTimeZone> dateTimeZoneMap = new MapMaker()
+Set<String> canonicalIds = new HashSet<String>();
+Set idSet = DateTimeZone.getAvailableIDs();
+ZoneData[] zones = new ZoneData[idSet.size()];
+

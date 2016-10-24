@@ -1,0 +1,7 @@
+if(throwable.getResponse().getStatus() != 403) return new ErrorHandleResult(false);
+boolean reported = false;
+if (object instanceof Fragment) {
+Fragment fragment = (Fragment) object;
+Activity activity = fragment.getActivity();
+if(!reported) reported = report2GoogleAnalytics(throwable, activity, toast);
+

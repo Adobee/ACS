@@ -1,0 +1,15 @@
+for ( Object e : events ) {
+post( name, e );
+}
+}
+
+public void post( Iterable<Posting> list ) {
+for ( Posting p : list ) {
+for ( Sub rec : subs ) {
+addReceiver( rec );
+}
+}
+
+@Override public void addReceiver( Sub rec ) {
+if ( rec.getCls() == null ) {
+

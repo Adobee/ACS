@@ -1,0 +1,11 @@
+this.src = src;
+}
+
+public int getScaleType() {
+if(scaleType==null||scaleType.equals(&quot;&quot;)||scaleType.equals(&quot;null&quot;)){
+new Exception(&quot;scaleType 不能为空&quot;+scaleType);
+return 0;
+}
+if(!AppUtil.isNumeric(scaleType)){
+new Exception(&quot;view_id 不能为非数字字符&quot;+scaleType);
+

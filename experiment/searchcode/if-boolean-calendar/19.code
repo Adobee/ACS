@@ -1,0 +1,10 @@
+holiday.set(Calendar.MONTH, 1);
+holiday.set(Calendar.DATE, 1);
+holidays.add(holiday);
+}
+
+public boolean todayIsHoliday(){
+Calendar today = new GregorianCalendar();
+for(Calendar h : holidays){
+if(today.get(Calendar.MONTH) == h.get(Calendar.MONTH) &amp;&amp;
+

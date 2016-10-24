@@ -1,0 +1,6 @@
+// along with JML; see the file COPYING.  If not, write to
+// the Free Software Foundation, 675 Mass Ave, Cambridge, MA 02139, USA.
+@ public model pure double positiveRemainder(double n, double d) {
+@    n = n % d;
+@    if (n < 0) {
+

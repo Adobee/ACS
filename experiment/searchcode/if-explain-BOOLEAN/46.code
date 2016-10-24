@@ -1,0 +1,11 @@
+public abstract class DropStmt extends SqlStatement {
+
+public boolean hasIfExists;
+
+public Name database;
+
+public Name name;
+public DropStmt(Block block, Explain explain, boolean hasIfExists, Name database, Name name) {
+super(block, explain);
+this.hasIfExists = hasIfExists;
+

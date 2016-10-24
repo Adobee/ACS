@@ -1,0 +1,6 @@
+public int[] toShift, toCharLength, toNbWords, toIncrement;
+public int[] tofromCharLength, tofromNbWords, toMapping;
+for (int i = 0; i < fromMap.length; i++) {// approxime le mapping
+if (fromIncrement[i] == 1) {
+fromMapping[i] = fromShift[i];
+

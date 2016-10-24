@@ -1,0 +1,19 @@
+public class PowerOfTwo {
+
+public boolean isPowerOfTwo(int number){
+
+if(number % 2 != 0)
+return false;
+
+int x = 2;
+while(x < number){
+x *= 2;
+}
+if(x == number)
+return true;
+
+return false;
+
+}
+}
+

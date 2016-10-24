@@ -1,0 +1,17 @@
+package com.krisdesigns.vedurapp;
+
+public class Rect {
+private double xmin, ymin;
+private double xmax, ymax;
+xmax = x2;
+ymin = y1;
+ymax = y2;
+}
+
+public double xmin()
+{
+return xmin;
+}
+
+public double ymin()
+

@@ -1,0 +1,14 @@
+boolean pass = false;
+SrndQuery lq = null;
+try {
+lq = QueryParser.parse(queryText);
+if (verbose) {
+System.out.println(&quot;Query: &quot; + queryText + &quot;\nParsed as: &quot; + lq.toString());
++ e.getMessage());
+}
+pass = true;
+}
+if (! pass) {
+failQueries.append(queryText);
+failQueries.append(&quot;\nParsed as: &quot;);
+

@@ -1,0 +1,10 @@
+qsp = new QuickSortPartition();
+}
+
+public <T extends Comparable<T>> T select(int keyIndex, List<T> numbers) {
+if (keyIndex < 0 || keyIndex >= numbers.size()) {
+int pivotIndex = qsp.partition(left, right, numbers, left);
+int pivotDist = pivotIndex - left;
+if (pivotDist == keyIndex) {
+return numbers.get(pivotIndex);
+

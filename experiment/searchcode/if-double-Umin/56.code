@@ -1,0 +1,5 @@
+@NamedQuery(name = &quot;Tretman.findByTrajanjeUMin&quot;, query = &quot;SELECT t FROM Tretman t WHERE t.trajanjeUMin = :trajanjeUMin&quot;)})
+public class Tretman implements Serializable {
+public Tretman(Integer tretmanID, String opis, double cena, int trajanjeUMin) {
+this.tretmanID = tretmanID;
+

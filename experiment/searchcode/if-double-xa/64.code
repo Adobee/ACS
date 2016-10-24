@@ -1,0 +1,9 @@
+protected boolean onGround = false;
+protected static Random random = new Random();
+
+public double xa = 0, ya = 0;
+public double x, y;
+public void tryMove(double xa, double ya) {
+onGround = false;
+if (level.isFree(this, x + xa, y, w, h, xa, 0)) {
+

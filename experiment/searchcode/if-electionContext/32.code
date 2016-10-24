@@ -1,0 +1,6 @@
+private synchronized void failContextIfNeeded(final ElectionContext context, final String reason) {
+if (electionContext == context) {
+public synchronized void handleJoinRequest(final DiscoveryNode node, final MembershipAction.JoinCallback callback) {
+if (electionContext != null) {
+electionContext.addIncomingJoin(node, callback);
+

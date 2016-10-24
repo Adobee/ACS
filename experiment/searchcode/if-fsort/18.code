@@ -1,0 +1,11 @@
+protected void addManifestElement(PDEManifestElement element, boolean update) {
+element.setModel(getModel());
+element.setHeader(this);
+if (fSort) {
+if (fElementMap == null)
+protected Object removeManifestElement(String name) {
+Object object = null;
+if (fSort) {
+if (fElementMap != null) {
+object = fElementMap.remove(name);
+

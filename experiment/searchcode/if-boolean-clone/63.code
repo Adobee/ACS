@@ -1,0 +1,10 @@
+* @author Marius Heinzmann <!-- Marius[at]NightLabs[dot]de -->
+*/
+public interface CloneContext
+{
+boolean containsObject(Object object);
+<T> T getOriginal(T clonedObject);
+<T> T getOriginal(T clonedObject, boolean throwExceptionIfNotFound);
+
+boolean canClone(Object object);
+

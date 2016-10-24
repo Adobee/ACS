@@ -1,0 +1,10 @@
+public Transport newTransport() {
+List<Class<Transport>> knownTransports = getAvailableTransports();
+if (knownTransports.isEmpty()) {
+public final void registerTransport(String transportClazz) {
+if (transportClazz == null) {
+return;
+}
+try {
+registerTransport((Class<Transport>) Class.forName(transportClazz));
+

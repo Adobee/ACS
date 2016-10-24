@@ -1,0 +1,10 @@
+public class MyWebChromeClient extends WebChromeClient {
+private ActionBarActivity mActivity;
+
+public MyWebChromeClient(ActionBarActivity activity) {
+public void onProgressChanged(WebView view, int progress) {
+mActivity.setSupportProgress(progress*100);
+
+if (progress == 100) {
+mActivity.setSupportProgressBarVisibility(false);
+

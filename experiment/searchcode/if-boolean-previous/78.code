@@ -1,0 +1,7 @@
+private int previousRepetition = 0;
+@Override
+public boolean accept(RomanNumber input) {
+if (previousNumber!=null &amp;&amp; previousNumber.equals(input)) {
+previousRepetition++;
+if (previousRepetition>GalaxyMerchantConstants.MAX_REPETITION|| GalaxyMerchantConstants.ROMAN_NUMBER_NO_REPETITION_SET.contains(input)){
+

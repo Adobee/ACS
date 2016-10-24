@@ -1,0 +1,7 @@
+/** Threshold for cost steady state detection. */
+private double steadyStateThreshold;
+
+/** Threshold for cost convergence. */
+public void setSteadyStateThreshold(final double steadyStateThreshold) {
+this.steadyStateThreshold = steadyStateThreshold;
+

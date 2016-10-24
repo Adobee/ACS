@@ -1,0 +1,7 @@
+TypedArray typedArray = context.getTheme().obtainStyledAttributes(attrs, R.styleable.CustomDraweeView, 0, 0);
+imageUrl = typedArray.getString(R.styleable.CustomDraweeView_imageUrl);
+if(imageUrl!=null&amp;&amp;imageUrl.startsWith(&quot;http&quot;)) {
+public void setImageUrl(String url) {
+if(!TextUtils.isEmpty(url)) {
+setImageURI(Uri.parse(url));
+

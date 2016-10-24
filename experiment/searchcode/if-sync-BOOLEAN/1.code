@@ -1,0 +1,12 @@
+private Map<Integer, Sync>	syncs	= new ConcurrentHashMap<Integer, Sync>();
+
+public void register(Sync sync) {
+if (listener != null) {
+int id = listener.getHostId() << (8 * 3);
+while (syncs.containsKey(++id));
+syncs.put(id, sync);
+}
+sync.setId(id);
+if (listener != null)
+listener.syncRegistered(sync);
+

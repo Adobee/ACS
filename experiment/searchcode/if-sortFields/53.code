@@ -1,0 +1,7 @@
+ArrayList<Sort> sortDirs = ruq.getSortDirs();
+if (sortFields.isEmpty())
+return query.findAll();
+else if (sortFields.size() == 1)
+return query.findAllSorted(sortFields.get(0), sortDirs.get(0));
+else if (sortFields.size() == 2)
+

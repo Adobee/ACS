@@ -1,0 +1,12 @@
+private final S style;
+private final int length;
+
+public StyleSpan(S style, int length) {
+if(length < 0) {
+public S getStyle() {
+return style;
+}
+
+public int getLength() {
+return length;
+

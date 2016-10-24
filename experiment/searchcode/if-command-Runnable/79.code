@@ -1,0 +1,13 @@
+public static final ImmediateExecutor INSTANCE = new ImmediateExecutor();
+
+private ImmediateExecutor() {}
+
+public void execute(Runnable runnable) {
+if (runnable == null) {
+throw new NullPointerException(&quot;command&quot;);
+} else {
+runnable.run();
+}
+}
+}
+

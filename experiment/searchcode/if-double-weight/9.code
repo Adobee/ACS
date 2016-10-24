@@ -1,0 +1,11 @@
+public class Weight {
+private String term;
+private double weight;
+
+public Weight(String t, QueryEnvironment env) throws Exception {
+this.term=t;
+weight = calculteWeight(env);
+
+}
+public double calculteWeight(QueryEnvironment env) throws Exception
+

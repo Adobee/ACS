@@ -1,0 +1,9 @@
+private final Factory<LuceneQuery> template;
+
+private boolean locked;
+
+private boolean hasQuery;
+if (locked) throw new IllegalStateException(ERR_LOCKED);
+// has a query if any previous call was successful
+hasQuery = hasQuery || lastSuccessful();
+

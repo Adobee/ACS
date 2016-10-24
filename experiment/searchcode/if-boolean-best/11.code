@@ -1,0 +1,12 @@
+String sourceKey = this._instrumentId.toString() + (bestLimit.get_IsBuy() ? &quot;BestBuyLimits&quot; : &quot;BestSellLimits&quot;);
+if (bestLimit.get_IsBuy())
+{
+BestLimits.set(this._bestBuys, bestLimit, sourceKey);
+BestLimits.set(this._bestSells, bestLimit, sourceKey);
+}
+}
+
+public BestLimit getBestBuy()
+{
+if(this._bestBuys.getRowCount() > 0)
+

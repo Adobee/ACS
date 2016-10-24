@@ -1,0 +1,15 @@
+abstract double getXMin();
+abstract double getYMin();
+abstract double getXMax();
+abstract double getYMax();
+
+public boolean contains(GeometricShape s) {
+if(this.getXMin() <= s.getXMin() &amp;&amp; this.getYMin() <= s.getYMin())
+if(this.getXMax() >= s.getXMax() &amp;&amp; this.getYMax() >= s.getYMax())
+
+contain = true;
+return contain;
+
+}
+}
+

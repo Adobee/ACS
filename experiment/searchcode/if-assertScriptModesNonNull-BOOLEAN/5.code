@@ -1,0 +1,7 @@
+public void assertNativeScriptsAreAlwaysAllowed() {
+if (assertScriptModesNonNull) {
+assertThat(scriptModes.getScriptMode(NativeScriptEngineService.NAME, randomFrom(ScriptType.values()), randomFrom(scriptContexts)), equalTo(ScriptMode.ON));
+public void assertAllSettingsWereChecked() {
+if (assertScriptModesNonNull) {
+assertThat(scriptModes, notNullValue());
+

@@ -1,0 +1,12 @@
+cropArea.right = 1f;
+cropArea.bottom = 1f;
+}
+
+public void alignCenter(){
+if(imageBitmap == null){
+return;
+cropArea.bottom = 0.5f + imageHeight / 2;
+}
+// Unexpected case, some bug appear above, so cropArea.width() > 1 occur some time.
+if(cropArea.width() > 1){
+

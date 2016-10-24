@@ -1,0 +1,10 @@
+double q = c / a;
+double diskriminante = Math.pow(p / 2, 2) - q;
+if (diskriminante < 0)
+{
+return new double[]{};
+double x2 = -p / 2 - Math.sqrt(diskriminante);
+if (x1 == x2)
+{
+return new double[]{x1};
+

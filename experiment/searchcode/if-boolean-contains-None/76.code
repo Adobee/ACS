@@ -1,0 +1,12 @@
+this.cells = cells.size() <= 3 ? cells : EnumSet.noneOf(Cell.class);
+}
+
+@Override
+public boolean containsCell(Cell cell) {
+return cells.contains(cell);
+}
+
+@Override
+public boolean containsOtherSign(Sign otherSign) {
+return cells.stream().filter(cell -> cell.containsSign(otherSign)).findAny().isPresent();
+

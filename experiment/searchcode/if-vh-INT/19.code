@@ -1,0 +1,8 @@
+public View getView(int position, View convertView, ViewGroup parent) {
+// TODO Auto-generated method stub
+ViewHolder vh = null;
+if (convertView == null) {
+} else if (task.taskType.equals(TaskProcess.RECEIVE)) {//当订单状态到接单状态时
+vh.mTaskState.setText(&quot;接单&quot;);
+if (TextUtils.isEmpty(task.confirm_datetime)) {
+

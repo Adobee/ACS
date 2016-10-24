@@ -1,0 +1,14 @@
+import edu.wpi.first.wpilibj.Timer;
+
+
+/**
+*
+*/
+public class TurnWithVision extends CommandBase {
+
+private double startX,currX;
+currX = vision.getXVal();
+
+if(Math.abs(currX - center) > 70){
+drivetrain.setTalonSpeed(leftRight* outsideSpeed, leftRight*outsideSpeed);
+

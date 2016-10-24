@@ -1,0 +1,11 @@
+private final Writer<String> extraOut;
+private long min;
+
+public EntryOrdererTask(Reader<Match> matchesIn, Reader<String> extraIn, Writer<Match> matchesOut,
+@Override
+public boolean actionDo() {
+while(true) {
+Long a = matchesIn.firstKey();
+if(a != null) {
+if(a == min) {
+

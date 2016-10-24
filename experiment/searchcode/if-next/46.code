@@ -1,0 +1,14 @@
+package lists;
+
+public class ReorderList {
+public void reorderList(ListNode head) {
+if (head == null) return;
+ListNode s = dummy, f = dummy;
+
+while (f.next != null &amp;&amp; f.next.next != null) {
+f = f.next.next;
+s = s.next;
+}
+
+if (f.next != null) s = s.next; // 1st half: n+1, 2nd: n
+

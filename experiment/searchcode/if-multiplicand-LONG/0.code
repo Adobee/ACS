@@ -1,0 +1,11 @@
+long current = 1;
+
+for (long i = 2; i <= 1000000000000L; ++i) {
+long multiplicand = i;
+while ((multiplicand % 10) == 0) {
+multiplicand /= 10;
+}
+multiplicand = multiplicand % 100000;
+
+if ((i % 1000000) == 0) {
+

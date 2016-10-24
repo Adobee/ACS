@@ -1,0 +1,8 @@
+public class CountNotDivisible {
+
+public int[] solution(int[] A) {
+
+int[] sortedA = copyAndSort(A);
+List<Integer> distinctValues = getDistinctValues(sortedA);
+boolean[] exist = mapExistence(distinctValues, sortedA[sortedA.length - 1]);
+

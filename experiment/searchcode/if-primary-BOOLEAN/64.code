@@ -1,0 +1,12 @@
+public static XProcPortInfo newInputPort(String name, boolean isSequence,
+boolean isPrimary) {
+return new XProcPortInfo(Kind.INPUT, name, isSequence, isPrimary);
+* @return true, if is primary
+*/
+public boolean isPrimary() {
+return isPrimary;
+}
+
+/**
+* Checks if is sequence.
+

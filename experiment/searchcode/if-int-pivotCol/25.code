@@ -1,0 +1,8 @@
+public static boolean searchPattern(String[][] source, String[][] target, int pivotRow, int pivotCol) {
+int rows = target.length;
+int cols = target[0].length;
+
+for (int i = 0; i < rows; i++) {
+for (int j = 0; j < cols; j++) {
+if (!source[pivotRow + i][pivotCol + j].equals(target[i][j])) {
+

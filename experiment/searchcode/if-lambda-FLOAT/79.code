@@ -1,0 +1,7 @@
+public static GeoPos[] computeCorners(final SLCImage meta, final Orbit orbit, final Window tile, final float height[]) throws Exception {
+
+if (height.length != 4) {
+throw new IllegalArgumentException(&quot;input height array has to have 4 elements&quot;);
+corners[0] = new GeoPos((float) (phiMax * Constants.RTOD), (float) (lambdaMin * Constants.RTOD));
+corners[1] = new GeoPos((float) (phiMin * Constants.RTOD), (float) (lambdaMax * Constants.RTOD));
+

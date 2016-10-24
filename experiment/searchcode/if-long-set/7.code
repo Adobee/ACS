@@ -1,0 +1,12 @@
+public class Euler {
+public static boolean isPrime(long n) {
+for (long i = 2; i <= Math.sqrt(n); i++) {
+if (n % i == 0)
+return false;
+}
+return true;
+}
+
+public static Set<Long> factors(long n) {
+Set<Long> factors = new TreeSet<Long>();
+

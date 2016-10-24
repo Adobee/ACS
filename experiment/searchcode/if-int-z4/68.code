@@ -1,0 +1,12 @@
+private int z6;
+private int z8;
+private int z5;
+private int z0;
+private int z1;
+private int[] z4 = { -1, -1 };
+else if (i < 3)
+{
+try
+{
+this.z4[(i - 1)] = (Integer.parseInt(str) - 1);
+

@@ -1,0 +1,7 @@
+int beginIndex = Arrays.binarySearch(A, target);
+if (beginIndex <= 0) {
+return new int[]{-1, -1};
+int endIndex = Arrays.binarySearch(A, larger);
+if (endIndex < 0) {
+return new int[]{beginIndex, -endIndex-1};
+

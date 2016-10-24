@@ -1,0 +1,13 @@
+public int calculateTranslationOlder(int translation, Project project) {
+int translationOlder = translation + 1;
+if (((project.getHistorySize() - 1) - (translationOlder * 100)) < 0) {
+return finalIndex;
+}
+
+
+public int calculateInitialIndex(int finalIndex) {
+int initialIndex = finalIndex - 99;
+return initialIndex;
+}
+}
+

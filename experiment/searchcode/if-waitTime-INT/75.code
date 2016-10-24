@@ -1,0 +1,11 @@
+import nl.gridshore.stability.circuitbreaker.Monitored;
+
+public class TestHarness {
+
+private volatile int waitTime = 2000;
+private volatile boolean fail = true;
+public void doMonitoredFailingOperation() {
+if (fail) {
+try {
+Thread.sleep(waitTime);
+

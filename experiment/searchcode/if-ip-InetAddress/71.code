@@ -1,0 +1,8 @@
+this.ipAddress = ipAddress;
+}
+
+public IPDeviceAccessor(InetAddress inetAddress) {
+if (inetAddress instanceof Inet4Address) {
+ipAddress = new IPv4Address(inetAddress);
+} else if (inetAddress instanceof Inet6Address) {
+

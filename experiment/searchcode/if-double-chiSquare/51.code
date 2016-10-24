@@ -1,0 +1,10 @@
+chiSquare += getChiSquareDistance(this.get(h1Keys[i]), h2[i]);
+}
+
+return chiSquare;
+}
+
+private double getChiSquareDistance(Double h1, Double h2) {
+Double chiSquare = ((h2 - h1) * (h2 - h1)) / (h1 + h2);
+return chiSquare;
+

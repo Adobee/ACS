@@ -1,0 +1,7 @@
+this.iStartMillis = readableInterval.getStartMillis();
+this.iEndMillis = readableInterval.getEndMillis();
+} else if (this instanceof ReadWritableInterval) {
+this.iEndMillis = DateTimeUtils.getInstantMillis(readableInstant);
+if (readablePeriod == null) {
+this.iStartMillis = this.iEndMillis;
+

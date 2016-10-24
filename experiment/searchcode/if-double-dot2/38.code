@@ -1,0 +1,7 @@
+Vec3D postnormal = segments.get(i+1).normal(0.0);
+double dot = prenormal.dot(postnormal);
+if (dot < -1.0) dot = -1.0;
+else if (dot > 1.0) dot = 1.0;
+double angle = Math.acos(dot);
+Vec3D cross = prenormal.cross(postnormal).normalize();
+

@@ -1,0 +1,9 @@
+public enum IBSServerReason {
+UNKNOWN(&quot;UNKNOWN&quot;);
+
+private String serverReason;
+IBSServerReason (String serverReason) {
+public static IBSServerReason fromString(String reasonString) {
+for(IBSServerReason v : values()) {
+if(v.getValue().equalsIgnoreCase(reasonString)) {
+

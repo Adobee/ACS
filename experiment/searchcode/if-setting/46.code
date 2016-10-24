@@ -1,0 +1,7 @@
+public static SettingBase<?> ReadSetting(SettingBase<?> setting) {
+checkPrefs();
+if (setting instanceof SettingString) {
+((SettingString) setting).setValue(value);
+} else if (setting instanceof SettingBool) {
+boolean value = prefs.getBoolean(setting.getName(), ((SettingBool) setting).getDefaultValue());
+

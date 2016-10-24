@@ -1,0 +1,7 @@
+boolean isInQuotedText = &#39;\&#39;&#39; != currentChar;
+if (  isInQuotedText ) {
+parsedQuery.append(currentChar);
+boolean escapeFound = i + 1 < sqlQuery.length() &amp;&amp; &#39;\&#39;&#39; == sqlQuery.charAt(i + 1);
+if ( escapeFound ) {
+parsedQuery.append(&quot;&#39;&#39;&quot;);
+

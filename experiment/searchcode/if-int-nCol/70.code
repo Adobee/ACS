@@ -1,0 +1,10 @@
+private int nrow = 0;
+private int ncol = 0;
+
+public HeatMapMatrix() {
+}
+
+public HeatMapMatrix(int _nrow, int _ncol) {
+for (int c = 0; c < ncol; c++) {
+a[r][c] = matrix[r][c];
+

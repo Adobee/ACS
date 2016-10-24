@@ -1,0 +1,12 @@
+public class CopyUtil {
+
+public static void copy(InputStream in, OutputStream out, boolean inClose, boolean outClose)throws Exception{
+int count = in.read(buffer);
+if(count == -1){ break; }
+out.write(buffer,0, count);
+
+}
+
+if(inClose){
+in.close();
+

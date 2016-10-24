@@ -1,0 +1,22 @@
+super.rotate(degrees);
+Shader shader = fillpaint.getShader();
+
+if (shader != null)
+{
+Matrix mat = new Matrix();
+shader.setLocalMatrix(mat);
+}
+}
+
+
+
+
+
+
+/**
+* Set the alpha for the shape
+*/
+public void setAlpha(int alpha)
+{
+if (fillpaint != null) fillpaint.setAlpha(alpha);
+

@@ -1,0 +1,15 @@
+newNode.setData(data);
+newNode.setNext(this.head);
+if (numNodes != 0)
+this.head.setPrev(newNode);
+this.head = newNode;
+else if (numNodes % 2 != 0)
+this.mid = this.mid.getNext();
+
+return data;
+}
+
+public int getMid() {
+
+if (numNodes == 0) {
+

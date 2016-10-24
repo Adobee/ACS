@@ -1,0 +1,8 @@
+int mid = min + (max - min) / 2;
+int diff = mid - x / mid;
+if (diff < 0 &amp;&amp; -diff < minDiff) {
+result = mid;
+minDiff = -diff;
+}
+if (diff > 0) {
+

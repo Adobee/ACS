@@ -1,0 +1,6 @@
+public boolean update(Customer param){
+int affectedRows = getSqlSession().update(&quot;CustomerManager.update&quot;, param);
+param.setCustomerStatus(&quot;0&quot;);//默认是可用状态
+int affectedRows =  getSqlSession().insert(&quot;CustomerManager.insert&quot;,param);
+if(affectedRows>0)
+

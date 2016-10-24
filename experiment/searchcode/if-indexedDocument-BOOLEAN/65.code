@@ -1,0 +1,7 @@
+import org.waveprotocol.wave.model.document.indexed.IndexedDocument;
+import org.waveprotocol.wave.model.document.raw.impl.Element;
+import org.waveprotocol.wave.model.document.raw.impl.Node;
+private void checkFindCharacter(String docXml, int start, String ch, boolean forward,
+int expectedLocation) {
+IndexedDocument<Node, Element, Text> doc = DocProviders.POJO.parse(docXml);
+

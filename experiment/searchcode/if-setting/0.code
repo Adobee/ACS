@@ -1,0 +1,19 @@
+ensures setting == setting + 1 || setting == 3; @*/
+public void incSetting(){
+setting++;
+if(setting > 3){
+setting = 3;
+}
+}
+
+/**
+* Method decSetting
+ensures setting == setting - 1 || setting == 0; @*/
+public void decSetting(){
+setting--;
+if(setting < 0){
+setting = 0;
+}
+}
+}
+

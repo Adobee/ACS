@@ -1,0 +1,9 @@
+* @return the covariance set
+*/
+public final CovarianceSet retrieve(final byte[] uuid) {
+if (!transactionStarted) {
+* Retrieve Original CovarianceSet Object
+*/
+if (studyDesign != null) {
+Set<Covariance> originalSet = studyDesign.getCovariance();
+

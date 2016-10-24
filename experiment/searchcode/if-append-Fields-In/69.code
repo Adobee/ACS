@@ -1,0 +1,7 @@
+query.append(&quot;UPDATE &quot;).append(tableName).append(&quot; SET &quot;);
+
+//If primary key fields are null, then we treat 1 field as the primary key
+query.append(&quot;SELECT * FROM &quot;).append(tableName).append(&quot; WHERE &quot;);
+
+if (primaryFields != null &amp;&amp; primaryFields.length > 0) {
+

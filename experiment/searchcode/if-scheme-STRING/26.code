@@ -1,0 +1,8 @@
+private final Vector mScheme = new Vector();
+
+public void add(String prefKey, String defaultValue, PreferenceValueValidator valueValidator) {
+public void add(PreferenceScheme prefScheme) {
+AssertCompat.notNull(prefScheme, &quot;Preference scheme&quot;);
+
+if (mScheme.contains(prefScheme)) {
+

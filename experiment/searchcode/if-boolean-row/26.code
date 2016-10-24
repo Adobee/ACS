@@ -1,0 +1,11 @@
+int N = s.length();
+int maxLen = 1;
+int maxRow = 0;
+int maxCol = 1;
+boolean [][] dp = new boolean [N][N];
+for (int lastRow = N - 1; lastRow >= 0; --lastRow) {
+int col = row + (N - 1 - lastRow);
+if (col == row) {
+dp[row][col] = true;
+} else if (s.charAt(col) == s.charAt(row)
+

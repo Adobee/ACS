@@ -1,0 +1,7 @@
+public static final int DIGIT_NUMBER = 4;
+
+public static long productInARow(int[][] grid, int rowIndex, int columnIndex) {
+if (grid[0].length < columnIndex + DIGIT_NUMBER) {
+public static long productInARightDiagonal(int[][] grid, int rowIndex, int columnIndex) {
+if(grid.length < rowIndex + DIGIT_NUMBER || grid[0].length < columnIndex + DIGIT_NUMBER) {
+

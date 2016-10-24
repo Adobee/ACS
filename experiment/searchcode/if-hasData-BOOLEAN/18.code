@@ -1,0 +1,12 @@
+public class FakeReadableByteChannel implements ReadableByteChannel {
+private byte[] data;
+private boolean hasData = true;
+
+public FakeReadableByteChannel(byte[] data) {
+this.data = data;
+}
+
+@Override
+public int read(ByteBuffer dst) throws IOException {
+if (hasData) {
+

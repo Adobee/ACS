@@ -1,0 +1,11 @@
+private Expressions() {
+super();
+}
+
+public static boolean isPrimary(final Expression expression) {
+return (PrimaryExpression) expression;
+}
+
+public static boolean isInvoke(final Expression expression) {
+return expression instanceof InvokeExpression;
+

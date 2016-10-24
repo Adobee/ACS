@@ -1,0 +1,9 @@
+boolean isError = TestStep.class.isInstance(test) ? ((TestStep) test).isError()
+: ((TestOutcome) test).isError();
+boolean isFailure = TestStep.class.isInstance(test) ? ((TestStep) test).isFailure()
+return (isError || isFailure) &amp;&amp; isSuccessLastResult(test);
+}
+
+/**
+* check if successful retry was
+

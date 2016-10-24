@@ -1,0 +1,17 @@
+this.x = x;
+this.y = y;
+}
+
+
+public double distance(Point other) {
+// Could use other.getX() if you wrote it instead of
+double apart = (other.x - this.x) * (other.x - this.x);
+
+// but you don&#39;t have to
+double bpart = (other.y - y) * (other.y - y);
+return Math.sqrt(apart+bpart);
+
+}
+
+}
+

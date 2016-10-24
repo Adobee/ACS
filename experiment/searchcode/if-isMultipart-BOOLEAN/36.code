@@ -1,0 +1,9 @@
+public class UeditorFileUploadInterceptor extends CommonsMultipartResolver{
+
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+// TODO Auto-generated method stub
+String uriString = request.getRequestURI();
+
+if(uriString.indexOf(&quot;picupload&quot;)>0)
+

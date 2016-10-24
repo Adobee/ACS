@@ -1,0 +1,10 @@
+package core;
+
+public class PositiveEdgeTrigger implements InputProvider<Boolean> {
+
+private InputProvider<Boolean> provider;
+boolean returnValue = false;
+boolean newValue = provider.readInput();
+
+if(newValue &amp;&amp; !prevValue) returnValue = true;
+

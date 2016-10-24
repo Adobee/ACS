@@ -1,0 +1,10 @@
+public class ResourceCopies extends Resource {
+
+private double[] objectiveValue; //list of values for each objective (in the same order as objectives list) for one resource
+public ResourceCopies(int num, String[] objectives) {
+super(num, objectives);
+objectiveValue = new double[objectives.length];
+}
+
+public ResourceCopies(String name, int num, String[] objectives, Boolean not_included) {
+

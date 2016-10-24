@@ -1,0 +1,11 @@
+boolean localeFound = false;
+for(Locale loc : Locale.getAvailableLocales()) {
+if(loc.equals(locale)) {
+localeFound = true;
+}
+}
+if(localeFound) {
+localeForThread.set(locale);
+}
+else {
+

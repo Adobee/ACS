@@ -1,0 +1,16 @@
+package vu.exchange;
+
+public class Math {
+static Long power(Long base, Integer power) {
+Long result = 1L;
+while (power != 0) {
+if ((power &amp; 1) != 0) {
+result *= base;
+}
+power >>= 1;
+base *= base;
+}
+return result;
+}
+}
+

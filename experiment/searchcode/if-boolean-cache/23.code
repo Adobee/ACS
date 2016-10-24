@@ -1,0 +1,17 @@
+public static void removeCache(String key) {
+entry.remove(key);
+}
+public static boolean isHit(String key) {
+Cache cache = CacheManager.getCache(key);
+return false;
+}
+}
+public static boolean isHit(Cache cache) {
+if(cache!=null &amp;&amp; !cache.isExpire()){
+return true;
+}else {
+return false;
+}
+}
+}
+

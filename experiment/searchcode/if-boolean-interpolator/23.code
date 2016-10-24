@@ -1,0 +1,13 @@
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.Interpolator;
+
+public class SimpleFloatAnimator {
+public void forceFinished(boolean finish) {
+if (!finish) return;
+startTime = 0;
+progress = 1.0f;
+}
+
+public boolean isFinished() {
+return progress == 1.0f;
+

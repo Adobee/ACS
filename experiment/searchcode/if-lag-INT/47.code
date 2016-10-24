@@ -1,0 +1,7 @@
+return lagHours + &quot;h&quot;;
+} else if (lagSec > 3600) { // > 1 hour
+int lagHours = (int)(lagSec / 3600);
+int lagMin = (int)(lagSec / 60 - lagHours * 60);
+if (lagMin > 0)
+return lagHours + &quot;h &quot; + lagMin + &quot;m&quot;;
+

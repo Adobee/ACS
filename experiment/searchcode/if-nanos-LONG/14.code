@@ -1,0 +1,10 @@
+package tank;
+
+public class Delay {
+private long delayNanos;
+private long passedNanos;
+public boolean updateAndCheck (long deltaMillis) {
+passedNanos += deltaMillis * 1000000;
+
+if (passedNanos > delayNanos) {
+

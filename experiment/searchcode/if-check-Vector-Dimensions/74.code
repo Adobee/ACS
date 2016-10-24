@@ -1,0 +1,7 @@
+RIntVector dimensionsVector = RDataFactory.createIntVector(dimensions, true);
+if (dimensions.length != 1) {
+} else {
+setDimensions(((RAbstractIntVector) value).materialize().getDataCopy());
+}
+} else if (name.equals(RRuntime.DIMNAMES_ATTR_KEY)) {
+

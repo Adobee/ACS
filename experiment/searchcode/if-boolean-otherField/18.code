@@ -1,0 +1,9 @@
+public class LessThanOrEqualDoubleValidator extends AbstractValidator<Double> {
+boolean compareToField;
+boolean orEqualTo;
+Field otherField;
+Double constantValue;
+public LessThanOrEqualDoubleValidator(String message, Field<?> otherDoubleFieldWeMustBeLessThan, boolean orEqualTo) {
+super(message);
+this.otherField = otherDoubleFieldWeMustBeLessThan;
+

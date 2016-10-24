@@ -1,0 +1,8 @@
+public final class VariableEscapeAnalyzer {
+private VariableEscapeAnalyzer() {
+}
+
+public static boolean[] findEscapingVariables(Program program) {
+boolean[] escaping = new boolean[program.variableCount()];
+InstructionAnalyzer analyzer = new InstructionAnalyzer(escaping);
+

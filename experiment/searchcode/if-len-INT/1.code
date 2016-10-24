@@ -1,0 +1,9 @@
+public int[] merge(int[] L, int[] R){
+int lenL = L.length;
+int lenR = R.length;
+int[] merged = new int[lenL+lenR];
+int i = 0;
+int j = 0;
+while(i<lenL||j<lenR){
+if(i<lenL &amp; j<lenR){
+

@@ -1,0 +1,6 @@
+public ZeroLagPriceOscillator(final int fast, final int slow, final int signal) {
+super((Math.max(fast, slow) - ONE + signal - ONE) << ONE);
+public List<TimeSeries> generate(final OHLCVTimeSeries ohlcv) {
+throwExceptionIfShort(ohlcv);
+final int size = ohlcv.size();
+

@@ -1,0 +1,9 @@
+List<Mutation> mutations = this._findMutations(criteria);
+
+if (mutations.size() > 0) return this.toMutationSummaryVOList(mutations);
+else
+return new ArrayList<MutationSummaryVO>();
+protected List<Mutation> _findMutations(MutationSearchCriteriaVO criteria) throws DatabaseException
+{
+if (this.db instanceof JDBCDatabase)
+

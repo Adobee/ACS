@@ -1,0 +1,16 @@
+INTEGER, DECIMAL, PERCENT, TIME
+}
+
+private NumberType type;
+private int numDecimals;
+
+public NumericFormat(NumberType type, int numDecimals) {
+this.type = type;
+}
+
+public int getNumDecimals() {
+return numDecimals;
+}
+
+public void setNumDecimals(int numDecimals) {
+

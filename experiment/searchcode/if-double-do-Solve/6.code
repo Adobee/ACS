@@ -1,0 +1,11 @@
+public static TestSuite suite() {
+return new TestSuite(LpSolveTest.class);
+}
+
+/**
+* This test is important to check if we test against the
+public void testAddColumnex() throws Exception {
+LpSolve problem = LpSolve.makeLp(3, 0);
+assertEquals(0, problem.getNcolumns());
+double[] column = { 1.5, 3.5 };
+

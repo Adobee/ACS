@@ -1,0 +1,10 @@
+Locale[] locs = Locale.getAvailableLocales();
+try {
+TimeZone.setDefault(TimeZone.getTimeZone(&quot;GMT&quot;));
+
+for (int i = 0; i < locs.length; i++) {
+TimeZone tz = TimeZone.getTimeZone(INVALIDS[k]);
+int offset;
+
+if (!tz.getID().equals(&quot;GMT&quot;)) {
+

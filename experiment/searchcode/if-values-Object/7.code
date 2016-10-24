@@ -1,0 +1,11 @@
+public class ObjectValueList implements Iterable<ObjectValue> {
+private final List<ObjectValue> objectValues = new ArrayList<ObjectValue>();
+
+
+public ObjectValueList(ObjectValue... values) {
+public String getValue() {
+if (objectValues.isEmpty()) {
+return &quot;&quot;;
+}
+if (objectValues.size() == 1 &amp;&amp; objectValues.get(0) instanceof NullValue) {
+

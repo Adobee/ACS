@@ -1,0 +1,11 @@
+if (other instanceof CBoolean) {
+boolean v = other.toBool();
+if (this.value == v) {
+return new CInteger(0);
+return super.siCompareTo(other);
+}
+
+@Override
+public CDT siBooleanAnd(CDT other) {
+if (other instanceof CBoolean) {
+

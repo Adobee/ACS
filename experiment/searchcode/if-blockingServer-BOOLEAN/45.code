@@ -1,0 +1,10 @@
+private final int workerCount;
+
+private final boolean blockingServer;
+
+final boolean compression;
+
+private final int compressionLevel;
+this.workerCount = componentSettings.getAsInt(&quot;worker_count&quot;, Runtime.getRuntime().availableProcessors() * 2);
+this.blockingServer = settings.getAsBoolean(&quot;http.blocking_server&quot;, settings.getAsBoolean(TCP_BLOCKING_SERVER, settings.getAsBoolean(TCP_BLOCKING, false)));
+

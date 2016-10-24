@@ -1,0 +1,9 @@
+public class Domain implements Iterable<Object> {
+
+private Object[] values;
+
+public Domain(List<?> values) {
+this.values = new Object[values.size()];
+for (int i = 0; i < values.size(); i++)
+this.values[i] = values.get(i);
+

@@ -1,0 +1,12 @@
+public static void main(String[] args) throws IOException {
+
+FileReader inputStream = null;
+FileWriter outputStream = null;
+
+try {
+while ((c = inputStream.read()) != -1) {
+System.out.println(c);
+outputStream.write(c);
+}
+} finally {
+

@@ -1,0 +1,10 @@
+System.out.println();
+
+int j = 0;
+for (int i = 0; i < s.length(); ++i)
+if (s.charAt(i) == &#39;?&#39;)
+List<Integer> replaceIndex = new ArrayList<>();
+
+for (int i = 0; i < src.length(); i++) {
+if (src.charAt(i) == &#39;?&#39;) {
+

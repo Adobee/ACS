@@ -1,0 +1,14 @@
+public class SizeValidator implements ConstraintValidator<Size, String> {
+private int min;
+private int max;
+
+private boolean allowEmpty;
+
+@Override
+this.max = size.max();
+this.allowEmpty = size.allowEmpty();
+}
+
+@Override
+public boolean isValid(String value, ConstraintValidatorContext context) {
+

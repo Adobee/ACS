@@ -1,0 +1,14 @@
+v.add(x);
+
+double start = System.currentTimeMillis();
+
+
+
+p1[0] = CS[0];
+p1[1] = CS[1];
+
+p2[0] = CS[2];
+int p1b = 5000, p2b = 5000;
+if((k = run(p1[2],p1[3],p1[4],p1[5],p1[6]))<p1b) p1b = k;
+if((k = run(p1[1],p1[3],p1[4],p1[5],p1[6]))<p1b) p1b = k;
+

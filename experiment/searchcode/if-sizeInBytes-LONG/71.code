@@ -1,0 +1,12 @@
+import org.apache.commons.lang.StringUtils;
+
+public class SizeInBytes {
+private static final long SCALE = 1024;
+
+private static final String[] UNITS = {&quot;T&quot;, &quot;G&quot;, &quot;M&quot;, &quot;K&quot;, &quot;B&quot;};
+private static final long BIGGEST_SCALE = (long) Math.pow(1024, UNITS.length - 1);
+
+private long value;
+
+public SizeInBytes(long value) {
+

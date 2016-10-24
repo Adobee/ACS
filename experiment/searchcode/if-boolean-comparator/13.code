@@ -1,0 +1,17 @@
+: new EqualityComparator<T>() {
+@Override
+public boolean equals(T first, T second) {
+return first == null ? second == null : first.equals(second);
+public int compare(Key<T> a, Key<T> b) {
+if (this.equalityComparator.equals(a.value, b.value)) {
+return 0;
+}
+
+if (a.hashCode() > b.hashCode()) {
+return 1;
+}
+
+return -1;
+}
+}
+

@@ -1,0 +1,11 @@
+public void append(byte[] value) {
+if (head == null || tail == null) {
+head = new ByteChain(value);
+tail = head;
+System.arraycopy(head.bytes, headPosition, raw, rawPosition, canHave);
+headPosition = 0;
+head = head.next;
+
+if (canHave == toRead) {
+return raw;
+

@@ -1,0 +1,8 @@
+String s = new String(p.getData()).trim();
+int firstSpace = s.indexOf(&quot; &quot;);
+String cmd = s;
+String[] args = new String[0];
+if (firstSpace != -1) {
+cmd = s.substring(0, firstSpace).trim();
+args = s.substring(firstSpace + 1).trim().split(&quot; &quot;);
+

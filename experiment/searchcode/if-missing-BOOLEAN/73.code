@@ -1,0 +1,9 @@
+import edu.umd.cs.findbugs.annotations.ExpectWarning;
+
+abstract class AbstractMissingHashCode {
+int x;
+
+@Override
+public boolean equals(Object o) {
+if (!(o instanceof AbstractMissingHashCode))
+

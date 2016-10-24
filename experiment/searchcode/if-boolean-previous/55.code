@@ -1,0 +1,9 @@
+public boolean hasPrevious() { return previous != null; }
+public boolean hasNext() { return next != null; }
+return new Node<>(previous, next, value);
+}
+
+public void clearLinks() {
+if (next != null) next.setPrevious(previous);
+if (previous != null) previous.setNext(next);
+

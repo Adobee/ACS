@@ -1,0 +1,8 @@
+private long search(final Node node, final int initialDepth, final int depth, final int myDir,
+final int maximizingDir) {
+final long childScore = -search(child, initialDepth, depth - 1, -myDir, maximizingDir);
+
+if (alfa < childScore) {
+alfa = childScore;
+if (initialDepth == depth) {
+

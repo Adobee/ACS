@@ -1,0 +1,9 @@
+package org.apache.deltaspike.example.json;
+
+import org.apache.deltaspike.example.jpa.Enrollment;
+import org.codehaus.jackson.JsonGenerator;
+public void serialize(Enrollment enrollment, JsonGenerator jsonGenerator, SerializerProvider serializerProvider)
+throws IOException, JsonProcessingException {
+jsonGenerator.writeStartObject();
+if(enrollment.getEnrollmentId() != null) {
+

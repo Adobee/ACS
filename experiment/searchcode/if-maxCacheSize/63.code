@@ -1,0 +1,13 @@
+static final Log LOG = LogFactory.getLog(AbstractAuthComponent.class);
+
+protected AuthUserCache cache;
+protected int maxCacheSize = 100;
+protected long cacheExpire = 30000;
+this.cacheExpire = cacheExpire;
+}
+
+@Override
+public void init() {
+if (maxCacheSize > 0 &amp;&amp; cacheExpire > 0) {
+cache = new AuthUserCache(maxCacheSize, cacheExpire);
+

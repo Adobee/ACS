@@ -1,0 +1,9 @@
+double yMin, yMax;
+
+public FunctionTableYProtect(double[] point, double xMax, double yMin, double yMax) {
+super(point, xMax);
+public double getValue(double x) {
+double value = super.getValue(x);
+if(value > yMax) return yMax;
+if(value < yMin) return yMin;
+

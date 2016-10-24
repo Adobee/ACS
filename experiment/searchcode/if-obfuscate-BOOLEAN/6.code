@@ -1,0 +1,11 @@
+public class CalculatorPlugin extends EmptyPlugin  implements ConfigurationHolder{
+
+private boolean isObfuscate = false ;
+
+private String replaceRegex =null;
+String tmp  = ParseElement.getConfiguration(element, &quot;useModel&quot;, properties);
+if(&quot;Obfuscate&quot;.equalsIgnoreCase( tmp )){
+isObfuscate = true ;
+}
+tmp  = ParseElement.getConfiguration(element, &quot;replaceRegex&quot;, properties);
+

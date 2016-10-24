@@ -1,0 +1,11 @@
+private static CropContext instance;
+
+private boolean cropRunning = false;
+
+private Point clickedPixel;
+public static CropContext instance() {
+if (instance == null)
+instance = new CropContext();
+
+return instance;
+

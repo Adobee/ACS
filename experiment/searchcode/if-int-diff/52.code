@@ -1,0 +1,10 @@
+sum += A[i];
+temp[i] = sum;
+
+}
+int min_diff = 0;
+for(int i=0;i<A.length-1;i++){
+int diff = Math.abs(temp[i] - (sum-temp[i]));
+
+if(diff == 0) return diff;
+

@@ -1,0 +1,14 @@
+if (dis.available() <= 0)
+return false;
+
+int numTerms = dis.readInt();
+if (numTerms == 0) {
+termIndices = null;
+public void toFile(RandomAccessFile raf, int numTerms) {
+try {
+raf.writeInt(numTerms);
+if (numTerms == 0)
+return;
+
+FileChannel outChannel = raf.getChannel();
+

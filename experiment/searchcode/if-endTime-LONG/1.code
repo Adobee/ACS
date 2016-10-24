@@ -1,0 +1,13 @@
+package k.gr.world.time;
+
+public class Timer {
+
+public long curTime;
+public long endTime;
+public boolean done = false;
+public void update(long delta) {
+if (!done) {
+curTime += delta;
+if (curTime >= endTime) {
+done = true;
+

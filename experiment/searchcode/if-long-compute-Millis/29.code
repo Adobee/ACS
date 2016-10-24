@@ -1,0 +1,14 @@
+static int TOTAL_TRIALS = 50000000;
+
+
+public static long computeAuto( DenseMatrix64F mat ,int numTrials )
+{
+long before = System.currentTimeMillis();
+total += UnrolledDeterminantFromMinor.det(mat);
+}
+
+long after = System.currentTimeMillis();
+
+if( total == 100 )
+System.out.println(total);
+

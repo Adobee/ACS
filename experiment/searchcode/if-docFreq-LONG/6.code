@@ -1,0 +1,11 @@
+@Inject
+TerminRepository cacher;
+
+@Override
+public Long getDocumentaryFrequency(String term) {
+Termin termin = cacher.findByText(term);
+System.out.println(&quot;Looking for cached docFreq of term: &quot;+term);
+if (termin == null){
+Long docFreq = super.getDocumentaryFrequency(term);
+termin = new Termin(term, docFreq);
+

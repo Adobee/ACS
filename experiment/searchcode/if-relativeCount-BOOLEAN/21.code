@@ -1,0 +1,6 @@
+private List<ErrorMessage> validate(String configPrefix, Class klass, List<String> stageGroups,
+boolean validateDependencies, boolean isBean, boolean isComplexField, Object contextMsg) {
+int dotCount = configPrefix.split(&quot;\\.&quot;).length;
+if (relativeCount > dotCount) {
+errors.add(new ErrorMessage(DefinitionError.DEF_159, contextMsg, relativeCount, dotCount, configPrefix));
+

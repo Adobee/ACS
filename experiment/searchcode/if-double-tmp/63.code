@@ -1,0 +1,10 @@
+boolean negative = n < 0 ? true: false;
+if (negative)
+n = -n;
+
+double tmp = myPow(x, n/2);
+
+if (n%2 == 0) {
+tmp *= tmp;
+} else {
+

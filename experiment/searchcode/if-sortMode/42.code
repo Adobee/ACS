@@ -1,0 +1,11 @@
+public int compare(EquationOfHyperplane p1, EquationOfHyperplane p2) {
+int res=0;
+if (sortMode==0){
+if (p1.getId()>p2.getId()) res=1;
+else if (p1.getId()<p2.getId()) res=-1;
+}
+else if (sortMode==1){
+res=p1.getName().compareTo(p2.getName());
+}
+else {
+

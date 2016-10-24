@@ -1,0 +1,16 @@
+public class Quaterniond extends Quaternion {
+double q0, q1, q2, q3;
+
+public Quaterniond() {
+setIdentity();
+}
+
+public Quaterniond(double all) {
+q0 = all;
+q1 = all;
+q2 = all;
+q3 = all;
+}
+
+public Quaterniond(double q0, double q1, double q2, double q3) {
+

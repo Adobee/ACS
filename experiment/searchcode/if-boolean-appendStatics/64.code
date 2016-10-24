@@ -1,0 +1,12 @@
+* @return Whether or not to append the given <code>Field</code>.
+*/
+protected boolean accept(Field field) {
+if (field.getName().indexOf(ClassUtils.INNER_CLASS_SEPARATOR_CHAR) != -1) {
+public boolean isAppendStatics() {
+return this.appendStatics;
+}
+
+/**
+* <p>
+* Gets whether or not to append transient fields.
+

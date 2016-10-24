@@ -1,0 +1,12 @@
+if (o == null || getClass() != o.getClass()) return false;
+
+ObjectKey objectKey = (ObjectKey) o;
+
+if (keyIndex != objectKey.keyIndex) return false;
+return true;
+}
+
+@Override
+public int hashCode() {
+return (int) keyIndex;
+

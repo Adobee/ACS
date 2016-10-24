@@ -1,0 +1,10 @@
+private final int yearOfEra;
+private final int month;
+private final int dom;
+
+//~ Konstruktoren -----------------------------------------------------
+int ad1 = this.era.annoDomini(this.yearOfEra);
+int ad2 = other.era.annoDomini(other.yearOfEra);
+
+if (ad1 < ad2) {
+

@@ -1,0 +1,8 @@
+public static Locale getLocale(String locale)
+{
+if (locale != null)
+{
+String[] seq = locale.split(&quot;_&quot;);
+_locale = new Locale(	LocaleHelper.getLocale( clientLocale ).getLanguage()  ,_country);
+if( _locale.getCountry().equalsIgnoreCase( country ) || _locale.getDisplayCountry().equalsIgnoreCase( country ) || _locale.getISO3Country().equalsIgnoreCase( country ) )
+

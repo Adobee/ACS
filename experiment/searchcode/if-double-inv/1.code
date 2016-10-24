@@ -1,0 +1,14 @@
+double nor = x * x + y * y + z * z;
+if (nor > 0) {
+double invNor = 1 / Math.sqrt(nor);
+x *= invNor ;
+y *= invNor ;
+z *= invNor ;
+}
+}
+
+double dot(Vec3 v) {
+return x * v.x + y * v.y + z * v.z;
+}
+}
+

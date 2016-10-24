@@ -1,0 +1,10 @@
+public boolean setSquare (int r, int c, boolean b) {
+if (r <= 0 || r >= nRow || c <= 0 || c >= nCol)
+return false;
+public boolean moveRightOkay (int r, int c) {
+if (c+1 < nCol - 1) {
+return true;
+}
+else
+return false;
+

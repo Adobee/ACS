@@ -1,0 +1,10 @@
+private Date toDate;
+
+public PeriodSchema() {
+this.periodType = PeriodType.BYDAY;
+this.date = new Date();
+this.toDate = Funciones.getEndDateOfMonth(this.month,this.year);
+}
+if(this.periodType==PeriodType.BYYEAR) {
+this.fromDate = Funciones.getStartDateOfYear(this.year);
+

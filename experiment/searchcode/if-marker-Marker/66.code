@@ -1,0 +1,9 @@
+import de.fhpotsdam.unfolding.marker.Marker;
+import de.fhpotsdam.unfolding.marker.MultiMarker;
+import de.fhpotsdam.unfolding.marker.SimpleLinesMarker;
+marker.setProperties(feature.getProperties());
+}
+
+// Set interior ring locations if existing, and if supported by the markerClass
+if (feature.getInteriorRings() != null) {
+

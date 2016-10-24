@@ -1,0 +1,10 @@
+actionResponse.addResponse(response);
+
+log.add(command);
+
+if (response.getStatus() != Response.Status.OK) {
+actionResponse.setStatus(ActionResponse.STATUS.ERROR);
+actionResponse.addResponse(response);
+if (response.getStatus() != Response.Status.OK) {
+actionResponse.setStatus(ActionResponse.STATUS.ERROR);
+

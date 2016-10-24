@@ -1,0 +1,8 @@
+private volatile boolean blockOnInitialization;
+
+private volatile boolean blockOnControlFiles;
+
+private volatile boolean blockOnDataFiles;
+blockOnDataFiles = repositorySettings.settings().getAsBoolean(&quot;block_on_data&quot;, false);
+blockOnInitialization = repositorySettings.settings().getAsBoolean(&quot;block_on_init&quot;, false);
+

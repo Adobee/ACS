@@ -1,0 +1,4 @@
+public static void parse(InstructionState parentState, String line, Boolean execute) throws SymbolException {
+// whether or not to execute the current block, determined by result of if condition
+Boolean executeBlock = (Boolean) new Expression(parentState, conditionString).evaluate().getValue();
+

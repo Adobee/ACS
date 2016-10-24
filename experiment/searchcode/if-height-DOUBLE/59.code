@@ -1,0 +1,10 @@
+public class Rectangle extends PlaneShape {
+private double width;
+private double height;
+return this.height;
+}
+
+public void setHeight(double height) {
+if (height < 0) {
+throw new IllegalArgumentException(&quot;height cannot be negative&quot;);
+

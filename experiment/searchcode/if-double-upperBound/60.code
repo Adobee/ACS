@@ -1,0 +1,14 @@
+private double lowerBound;
+private double upperBound;
+
+public DataNormalizer(double lowerBound, double upperBound, String[] data) {
+public double getUpperBound() {
+return this.upperBound;
+}
+
+public void setUpperBound(double upperBound) {
+this.upperBound = upperBound;
+}
+
+}
+

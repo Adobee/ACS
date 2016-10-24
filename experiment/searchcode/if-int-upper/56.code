@@ -1,0 +1,12 @@
+String s = input.next();
+
+System.out.println(&quot;Number of uppercase characters: &quot; + numUpper(s));
+}
+
+public static int numUpper(String s) {
+public static int numUpper(String s, int num) {
+if(s.length() == 0)
+return num;
+else {
+if(Character.isUpperCase(s.charAt(0)) == true)
+

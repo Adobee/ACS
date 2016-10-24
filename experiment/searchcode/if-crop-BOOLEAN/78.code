@@ -1,0 +1,10 @@
+import com.android.test.gallery3d.photoeditor.filters.CropFilter;
+
+/**
+* An action handling crop effect.
+*/
+public class CropAction extends EffectAction {
+public void onCropChanged(RectF cropBounds, boolean fromUser) {
+if (fromUser) {
+filter.setCropBounds(cropBounds);
+

@@ -1,0 +1,10 @@
+public void arbi (double strike, double stock, double call, double put){
+double left = stock + put;
+double right = strike + call;
+
+if (left - right < 0){
+System.out.println(df.format(left) + &quot; &quot; + &quot;=&quot; + &quot; &quot; + df.format(right));
+}
+
+else if (left - right > 0){
+

@@ -1,0 +1,12 @@
+return getObjectType().getAccessor().getProperty(this, property);
+}
+
+@XmlTransient
+public ObjectType getObjectType() {
+if (objectType == null) {
+objectType = WebPlatform.getInstance().getObjectType(getClass().getName());
+Accessor accessor = getObjectType().getAccessor();
+if (accessor == null) {
+System.out.println(&quot;null&quot;);
+objectType = WebPlatform.getInstance().getObjectType(getClass().getName());
+

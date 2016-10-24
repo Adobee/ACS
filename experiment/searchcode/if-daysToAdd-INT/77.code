@@ -1,0 +1,15 @@
+if (cDow > dow) {
+daysToAdd = dow + (7 - cDow);
+}
+
+int lDay = getLastDayOfMonth(mon, cl.get(1));
+
+if (day + daysToAdd > lDay) {
+if (daysToAdd > 0) {
+dayShifted = true;
+}
+
+day += daysToAdd;
+int weekOfMonth = day / 7;
+if (day % 7 > 0) {
+

@@ -1,0 +1,12 @@
+public static final int FALSE = 0;
+protected String encoding; // allowed to be null
+
+
+private long encodingCode; // This is set during equals/matches comparisons via isSameEncoding. Allows for fast
+return (this.encoding == format.encoding || this.encoding == null || format.encoding == null || isSameEncoding(format));
+
+}
+
+public boolean isSameEncoding(Format other) {
+if (other == null) {
+

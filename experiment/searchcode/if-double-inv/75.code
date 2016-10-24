@@ -1,0 +1,7 @@
+double price = (double)this.getiSaleUnitPrice();
+if(this.getInvSalePriceOver()>0){
+price = (double)this.getInvSalePriceOver();
+}
+if(this.getInvSaleDisc()!=null){
+price = price - (price * (double)this.getInvSaleDisc().getDiscNum());
+

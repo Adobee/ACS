@@ -1,0 +1,8 @@
+private final Class<T> expectedType;
+
+public ReturnIs(S object, Class<T> expectedType) {
+this.object = object;
+public ThenReturn<S, R> thenReturn(Function<T, R> resultFun) {
+if (object != null &amp;&amp; expectedType.isAssignableFrom(object.getClass())) {
+final R result = resultFun.apply((T) object);
+

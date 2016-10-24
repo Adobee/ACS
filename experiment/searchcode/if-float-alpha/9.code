@@ -1,0 +1,9 @@
+private float mStartAlpha;
+private float mCurrentAlpha;
+private float mEndAlpha;
+
+private static int counter = 0;
+
+public AlphaAnimator(int start, int end) {
+mStartAlpha = toFloatAlpha(start);
+

@@ -1,0 +1,10 @@
+mStarted = true;
+if (mResolving) {
+// if resolving, don&#39;t reconnect the plus client
+Log.i(TAG, &quot;Helper ignoring signal to start because we&#39;re resolving a failure.&quot;);
+if (requestCode == REQUEST_RECOVER_FROM_PLAY_SERVICES_ERROR) {
+mResolving = false;
+}
+
+if (resultCode == Activity.RESULT_OK) {
+

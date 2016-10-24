@@ -1,0 +1,7 @@
+* @throws MaxCountExceededException if maximal number of iterations is reached
+*/
+public double evaluate(double x, int maxIterations)
+* @throws MaxCountExceededException if maximal number of iterations is reached
+*/
+public double evaluate(double x, double epsilon, int maxIterations)
+

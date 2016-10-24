@@ -1,0 +1,10 @@
+private byte[] blockmeta;
+
+private int blockCount, ablocks;
+
+public Chunk(int x, int z, int pBitMap, int aBitMap, boolean skylight, boolean groundUp) {
+blockCount = 0;
+ablocks = 0;
+for (int i = 0; i < 16; i++) {
+if ((pBitMap &amp; (1 << i)) != 0) {
+

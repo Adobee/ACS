@@ -1,0 +1,16 @@
+private String id = null;
+
+
+public CompoundCargoMapping(String id){
+setId(id);
+}
+
+public CompoundCargoMapping(String id, Erratum erratum){
+super(erratum);
+
+setId(id);
+}
+
+@Override
+public void mapValue(Compound compound, String string) throws IOException {
+

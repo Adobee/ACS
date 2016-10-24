@@ -1,0 +1,11 @@
+String relativeURL = getRelativeURL(URL);
+for (String url : robotRule.getAllows()) {
+if (relativeURL.startsWith(url)) {
+return true;
+}
+}
+}
+for (String url : robotRule.getDisallows())
+if (relativeURL.startsWith(url)) {
+if (url.endsWith(&quot;/&quot;))
+

@@ -1,0 +1,5 @@
+private static final char[] hexDigits = new char[]{
+public static String toHexString(int i) {
+return new String(new char[]{
+hexDigits[(i >> 28) &amp; 0x0f],
+

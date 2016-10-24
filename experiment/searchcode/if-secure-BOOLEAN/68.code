@@ -1,0 +1,16 @@
+public Object invoke(Object proxy, Method method,
+Object[] args) throws Throwable
+{
+try {
+if (isSecure(method))
+throw new PermissionException();
+catch (InvocationTargetException e) {
+throw e.getTargetException();
+}
+}
+
+private boolean isSecure(Method method) {
+return secureMethods.contains(method.getName());
+}
+}
+

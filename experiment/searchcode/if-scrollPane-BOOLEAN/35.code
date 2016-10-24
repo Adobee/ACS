@@ -1,0 +1,5 @@
+@Override public void exit(InputEvent event, float x, float y, int pointer, Actor fromActor)
+{ if (scrollPane.getStage() != null) scrollPane.getStage().setScrollFocus(null); }
+@Override public boolean scrolled(InputEvent event, float x, float y, int amount)
+{ scrollPane.setScrollY(scrollPane.getScrollY()+ MiscData.TILESIZE*3*amount); event.stop(); return true; }
+

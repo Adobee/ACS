@@ -1,0 +1,16 @@
+System.out.println(&quot;argv.length = &quot; + argv.length);
+
+if(argv.length > 3)
+{
+usage();
+}
+else if( (argv.length == 1) &amp;&amp;
+usage();
+}
+
+long i_size = 1;
+long j_size = 1;
+long k_size = 1;
+
+if(argv.length >= 1)
+

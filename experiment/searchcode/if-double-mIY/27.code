@@ -1,0 +1,8 @@
+public void setStageWithParams( int generation ){
+if(generation == 4)
+levelOptions = &quot;-mix 300 -miy 170&quot;;
+else if (generation == 8)
+levelOptions = &quot;-mix 850 -miy 190&quot;;
+else if (generation == 12)
+levelOptions = &quot;-mix 1748 -miy 170&quot;;
+

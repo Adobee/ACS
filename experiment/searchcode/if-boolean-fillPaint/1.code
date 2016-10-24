@@ -1,0 +1,13 @@
+BLACK, WHITE, RED, YELLOW, GREEN,;
+}
+
+public static boolean fillPaint(Color[][] image, int x, int y, Color newColor){
+if(x >= 0 &amp;&amp; x < image[0].length &amp;&amp; y >= 0 &amp;&amp; y < image.length){
+return fillPaint(image, x, y, image[y][x], newColor);
+}else{
+return false;
+}
+}
+
+public static boolean fillPaint(Color[][] image, int x, int y, Color oldColor, Color newColor){
+

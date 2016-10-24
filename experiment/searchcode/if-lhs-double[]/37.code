@@ -1,0 +1,9 @@
+Number rhsNum = Types.toNumber(context, rhs);
+
+if (Double.isNaN(lhsNum.doubleValue()) || Double.isNaN(rhsNum.doubleValue())) {
+return(Double.NaN);
+
+}
+
+if (lhsNum instanceof Double || rhsNum instanceof Double) {
+

@@ -1,0 +1,7 @@
+long val1 = get();
+c.v = 1L; long val2 = get();
+assertEquals(val1, 0);
+c.v = Long.MAX_VALUE; long val2 = get();
+assertEquals(val1, 5);
+assertEquals(val2, (isStableEnabled ? 5 : Long.MAX_VALUE));
+

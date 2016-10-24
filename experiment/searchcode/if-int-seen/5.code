@@ -1,0 +1,13 @@
+for (int m = i; m < i + 4; m ++)
+{
+for (int n = j; n < j + 4; n++ ) // first row
+{
+try
+{
+if (seen[m][n] || seen[m+1][n] || seen[m-1][n] || seen[m][n+1] || seen[m][n-1])
+for (int i = 0; i < world.length; i++)
+{
+for (int j = 0; j < world.length; j++)
+{
+if(!seen[i][j])
+

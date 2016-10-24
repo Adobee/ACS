@@ -1,0 +1,9 @@
+public class SendMail extends SocketClient{
+private String username = null;
+private String passwd = null;
+
+public SendMail(String mailServer, int port, String username,
+// 将用户的帐号和密码以BASE64格式进行编码以便进行服务器身份验证
+BASE64Encoder encoder = new BASE64Encoder();
+String encodedUserName = encoder.encode(username.getBytes());
+

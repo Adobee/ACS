@@ -1,0 +1,10 @@
+* @param b
+* @return
+*/
+public static boolean equals(Type a, Type b) {
+if(a == b) { // 包括a = null,b = null的情况
+Type declaredBy = getGenericSupertype(context, contextRawType,
+declaredByRaw);
+if (declaredBy instanceof ParameterizedType) {
+int index = indexOf(declaredByRaw.getTypeParameters(), unknown);
+

@@ -1,0 +1,7 @@
+DataSet<Long> numPages = pages.reduceGroup(new CountPages());
+
+// Find sinks
+DataSet<Tuple1<Long>> noOutgoingLinks = pages.flatMap(new FindSinks())
+// Assign the initial rank to every page - 1 / numPages
+DataSet<Tuple2<Long, Double>> pagesRanked = pages.map(
+

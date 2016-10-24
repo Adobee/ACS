@@ -1,0 +1,9 @@
+* limitations under the License.
+*/
+package org.jetbrains.plugins.groovy.refactoring.rename.inplace;
+
+import com.intellij.openapi.editor.Editor;
+@Override
+protected boolean isAvailable(PsiElement element, Editor editor, PsiFile file) {
+if (!editor.getSettings().isVariableInplaceRenameEnabled()) return false;
+

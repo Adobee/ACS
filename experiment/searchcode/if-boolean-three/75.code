@@ -1,0 +1,14 @@
+System.out.print(isPowerOfThree);
+}
+
+public boolean isPowerOfThree(int n) {
+if((n%3==0 &amp;&amp; n==3) || n==1){
+return true;
+}else if(n%3==0 &amp;&amp; n>3){
+return isPowerOfThree(n/3);
+}
+return false;
+
+}
+}
+

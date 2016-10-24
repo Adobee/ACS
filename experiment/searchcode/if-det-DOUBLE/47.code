@@ -1,0 +1,14 @@
+public InvQuadRegression(int size) {
+X = new double[size];
+y = new double[size];
+}
+
+public void add(int x1, double y1) {
+if (n >= X.length) return;
+if (n < 3) return null;
+
+double det = detT();
+
+// Check that matrix is invertible.
+if (det == 0) return null;
+

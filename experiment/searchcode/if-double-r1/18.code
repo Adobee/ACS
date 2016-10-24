@@ -1,0 +1,8 @@
+String toprint = String.format(formatstring, d);
+double diff = Math.abs(Double.parseDouble(toprint) - d);
+if (diff > .499999 * Math.pow(10, -1 * digits)) {
+double x1 = in.nextDouble();
+double y1 = in.nextDouble();
+double r1 = in.nextDouble();
+double x2 = in.nextDouble();
+

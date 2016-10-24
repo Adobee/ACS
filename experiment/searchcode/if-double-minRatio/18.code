@@ -1,0 +1,8 @@
+double minError = 0;
+double avgError = 0;
+double maxError = 0;
+
+double minRatio = 1;
+double maxRatio = 0;
+public RegistrationStatistics( final int timePoint, final double minError, final double avgError, final double maxError, final double minRatio, final double avgRatio, final double maxRatio, final int numValidPairs, final int numInvalidPairs )
+

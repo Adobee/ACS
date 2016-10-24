@@ -1,0 +1,13 @@
+package employer;
+
+public class Name
+{
+
+private final String name;
+
+public Name(String name)
+{
+if(name.equals(&quot;&quot;))
+throw new IllegalArgumentException();
+if(name == null)
+

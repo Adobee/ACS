@@ -1,0 +1,7 @@
+for (keyIndex = 0; keyIndex < local_size; keyIndex++)
+{
+if (key == local_keys[keyIndex] || key.equals(local_keys[keyIndex]))
+{
+Object[] local_multivalues = local_values[keyIndex];
+int multiIndex;
+

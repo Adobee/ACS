@@ -1,0 +1,9 @@
+import java.util.regex.Pattern;
+
+
+public abstract class RegexUtil {
+//check if the source string contain the pattern string
+public static boolean checkContain(String sourceStr,String patternString)
+{
+if (patternString == null || sourceStr == null) {
+

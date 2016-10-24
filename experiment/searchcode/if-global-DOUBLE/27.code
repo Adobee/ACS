@@ -1,0 +1,9 @@
+p = WekaClassifier.Ne9aabe0(i);
+return p;
+}
+static double Ne9aabe0(Object []i) {
+double p = Double.NaN;
+if (i[5] == null) {
+p = 0;
+} else if (((Double) i[5]).doubleValue() <= 1.468419) {
+

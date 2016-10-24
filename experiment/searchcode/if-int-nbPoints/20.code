@@ -1,0 +1,8 @@
+public class Pithread extends Thread{
+public Point[] points;
+
+public Pithread(int nbPoints) {
+points = new Point[nbPoints];
+for (int i = 0; i < nbPoints; i++)
+points[i] = new Point(Math.random(), Math.random());
+

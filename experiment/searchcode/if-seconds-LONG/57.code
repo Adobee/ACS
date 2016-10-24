@@ -1,0 +1,8 @@
+private static Map<Long, Duration> instances = new HashMap<Long, Duration>();
+
+public static Duration get(final long seconds) {
+if (!Duration.instances.containsKey(seconds)) {
+final long minutes = Long.parseLong(parts[1]);
+final long seconds = Long.parseLong(parts[2]);
+if (hours < 0 || minutes < 0 || seconds < 0) {
+

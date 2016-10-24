@@ -1,0 +1,7 @@
+private TimeHelper () {}
+
+@SuppressWarnings(&quot;boxing&quot;)
+public static String formatTimeSeconds (long seconds) {
+if (seconds >= 3600) {
+return String.format(&quot;%d:%02d:%02d&quot;, seconds / 3600, (seconds % 3600) / 60, (seconds % 60));
+

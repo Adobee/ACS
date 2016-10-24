@@ -1,0 +1,7 @@
+this.indexInput = indexInput;
+this.limit = limit;
+if ((indexInput.length() - indexInput.getFilePointer()) > limit) {
+throw new IndexOutOfBoundsException();
+}
+if (indexInput.getFilePointer() >= indexInput.length()) {
+

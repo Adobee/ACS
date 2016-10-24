@@ -1,0 +1,16 @@
+mListener = null;
+}
+
+public boolean isCancel() {
+return mListener == null;
+}
+
+
+public void onEnd(Object sender,int code) {
+CallBackListener listener = mListener;
+if(listener != null) {
+listener.onEnd(sender,code);
+}
+}
+}
+

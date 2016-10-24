@@ -1,0 +1,10 @@
+private double eps = 0.00001;
+
+
+//estimate of machine precision
+private static double xtol = calculateMachineEpsilonDouble();
+public int solveWithLBFGS(DifferentiableObjectiveFunction objective, double[] x) {
+
+if(!objective.validInput(x)) {
+throw new IllegalArgumentException(&quot;Invalid initial input x.&quot;);
+

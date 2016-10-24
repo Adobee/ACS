@@ -1,0 +1,6 @@
+private final Map<String, Map<String, List<Contributor>>> ownerRepoContributors;
+
+public MockGitHub(BehaviorDelegate<GitHub> delegate) {
+Map<String, List<Contributor>> repoContributors = ownerRepoContributors.get(owner);
+if (repoContributors != null) {
+

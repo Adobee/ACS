@@ -1,0 +1,11 @@
+int aSize = a.size();
+List<T> aDiff = new ArrayList<T>(aSize);
+aDiff.addAll(a);
+
+int bSize = b.size();
+List<T> bDiff = new ArrayList<T>(bSize);
+List<T> abInter = new ArrayList<T>(Math.min(aSize, bSize));
+
+for (int i = aDiff.size() - 1; i >= 0; i--) {
+T element = aDiff.get(i);
+

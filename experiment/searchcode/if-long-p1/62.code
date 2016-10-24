@@ -1,0 +1,9 @@
+while(p2 >= 0 &amp;&amp; str.charAt(p2) == &#39; &#39;) p2--;
+if(p1 > p2) return 0; // all blank
+str = str.substring(p1, p2+1); // process blank
+boolean sig = true;
+while(p1 < str.length() &amp;&amp; str.charAt(p1) == &#39;0&#39;) p1++;
+str = str.substring(p1); // process leading zeros
+p1 = 0;
+long temp = 0;
+

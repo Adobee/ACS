@@ -1,0 +1,9 @@
+public void compare(Object actual, Object expected, int level, String path) {
+if(actual == expected || level == 0) return;
+fail(actual, expected, path);
+}
+
+@SuppressWarnings(&quot;unchecked&quot;)
+IMatcher<Object> eq = (IMatcher<Object>) registry.find(actual);
+if(eq != null) {
+

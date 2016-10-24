@@ -1,0 +1,7 @@
+pieplot = (PiePlot)chart.getPlot();
+} else {
+if (comp.isEffect3D()) {
+if (pieplot != null) {
+if (!comp.isDrawItemLabel()) {
+pieplot.setLabelGenerator(null);
+

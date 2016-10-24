@@ -1,0 +1,7 @@
+public static final Ease
+Linear = new Ease(){
+protected double easeBase(double d1, double d2, double d) {
+return d1+(d2-d1)*d;
+protected final double easeBase(double d1, double d2, double d) {
+return d1+(d2-d1)*smoothstepModifier(d);
+

@@ -1,0 +1,8 @@
+public static <O> O copyData(O from, O to) {
+return copyData(from, to, false);
+}
+
+public static <O> O copyData(O from, O to, boolean propagateExceptions) {
+Class clazz = from.getClass();
+for(Field field : clazz.getDeclaredFields()){
+

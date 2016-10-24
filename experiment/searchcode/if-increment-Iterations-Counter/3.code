@@ -1,0 +1,10 @@
+for (int i = 0; i < iterations; i++) {
+integerCounter.incrementAndGet();
+}
+stopwatch.stop();
+
+System.gc();
+stopwatch.reset().start();
+for (int i = 0; i < iterations; i++) {
+longCounter.incrementAndGet();
+

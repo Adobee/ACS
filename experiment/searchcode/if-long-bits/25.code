@@ -1,0 +1,10 @@
+public class BitSetter {
+
+public static long setTrue(long toSet, int ... bits){
+check(bits);
+long mask = bitsToLong(bits);
+return toSet | mask;
+}
+
+public static long setFalse(long toSet, int ... bits){
+

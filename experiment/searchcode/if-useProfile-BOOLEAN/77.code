@@ -1,0 +1,9 @@
+int boundPort = randomIntBetween(9000, 9100);
+int otherBoundPort = randomIntBetween(9200, 9300);
+
+boolean useProfile = randomBoolean();
+final Settings profileSettings;
+if (useProfile) {
+profile = &quot;some_profile&quot;;
+settings = randomBoolean() ? Settings.EMPTY : Settings.builder().put(&quot;transport.publish_port&quot;, 9081).build();
+

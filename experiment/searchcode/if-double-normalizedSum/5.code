@@ -1,0 +1,8 @@
+//			minimum.put(feature, Double.MAX_VALUE);
+//		}
+//		if (maximum.get(feature) == null) {
+//			maximum.put(feature, -Double.MAX_VALUE);
+//		}
+//		if (minimum.get(feature).compareTo(value) > 0) {
+//			// log.debug(&quot;[updateMinMax] [{2}] minimum {0}>{1}&quot;,
+

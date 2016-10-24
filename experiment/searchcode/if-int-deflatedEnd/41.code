@@ -1,0 +1,17 @@
+return deflatedEnd;
+}
+
+final int k = 4 * deflatedEnd + pingPong - 1;
+
+if ((start == deflatedEnd - 1) ||
+deflating = false;
+
+}
+
+}
+
+final int l = 4 * deflatedEnd + pingPong - 1;
+
+// step 2: flip array if needed
+if ((dMin <= 0) || (deflatedEnd < end)) {
+

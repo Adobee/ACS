@@ -1,0 +1,15 @@
+String key) {
+
+ProfilerEntry entry = getResult(key);
+
+if (entry == null) {
+entry = new ProfilerEntry(key);
+public void stop() {
+ProfilerEntry entry = super.pop();
+
+if (entry == null)
+return;
+
+entry.stop();
+putResult(entry);
+

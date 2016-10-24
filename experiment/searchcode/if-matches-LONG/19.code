@@ -1,0 +1,6 @@
+@RequestMapping(value=&quot;/new&quot;, method=RequestMethod.POST)
+public String create(@Valid Matches matches, BindingResult result, Model model) {
+if (result.hasErrors()) {
+public String show(@PathVariable(&quot;matchesId&quot;) Long matchesId, Model model) {
+Matches matches = matchesService.getMatches(matchesId);
+

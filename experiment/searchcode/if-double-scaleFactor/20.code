@@ -1,0 +1,11 @@
+SimpleTuple<Integer, Integer> guiRes = new SimpleTuple<Integer, Integer>(mc.displayWidth, mc.displayHeight);
+
+int i = scaleFactor;
+scaleFactor = 1;
+
+if (i == 0) {
+for (; scaleFactor < i &amp;&amp; guiRes.x / (scaleFactor + 1) >= 320 &amp;&amp; guiRes.y / (scaleFactor + 1) >= 240; scaleFactor++) {
+}
+
+guiRes.x = (int) ((double) guiRes.x / (double) scaleFactor);
+

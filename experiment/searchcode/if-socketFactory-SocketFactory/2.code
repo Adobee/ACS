@@ -1,0 +1,7 @@
+public class SocketConnectionFactory implements PoolableObjectFactory {
+private final SocketFactory socketFactory;
+
+public SocketConnectionFactory(SocketFactory socketFactory) {
+if (socketFactory == null) {
+throw new IllegalArgumentException(&quot;The socketFactory must not be null.&quot;);
+

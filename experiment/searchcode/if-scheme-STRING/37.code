@@ -1,0 +1,6 @@
+public List<Scheme> getByCategory(String category) {
+return dao.findByCategory(category);
+scheme.setCreationDate(new Date().getTime());
+if (scheme.getId()==null) {
+scheme = generateSchemeId(scheme);
+

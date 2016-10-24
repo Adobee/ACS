@@ -1,0 +1,12 @@
+public class GridIterator<T> implements Iterator<T> {
+
+private Grid<T> grid;
+private boolean rowMajor;
+
+private int row, column;
+
+public GridIterator(Grid<T> grid, boolean rowMajor) {
+this.grid = grid;
+this.rowMajor = rowMajor;
+this.row = 0;
+

@@ -1,0 +1,17 @@
+private static final long serialVersionUID = 3147139684496027115L;
+
+private String queryString;
+
+public QueryException(String message) {
+super(message);
+this.queryString = queryString;
+}
+
+public String getMessage() {
+String msg = super.getMessage();
+if (queryString != null)
+msg += &quot; [&quot; + queryString + &#39;]&#39;;
+return msg;
+}
+}
+

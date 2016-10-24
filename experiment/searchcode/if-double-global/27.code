@@ -1,0 +1,9 @@
+for (int i = 70; i < Global.priceArray.length; i=i+Global.interval) {
+//第一次入场
+if (Global.positionPrice == 0){
+double a = Global.priceArray[i-Global.interval] - Global.priceArray[i] ;
+double c = Global.priceArray[i-12];
+double d = Global.priceArray[i-6];
+
+if((b < c) &amp;&amp; (c < d) &amp;&amp; (d < Global.priceArray[i]) &amp;&amp; ((Global.priceArray[i] - Global.positionPrice) > Global.floatSpace) &amp;&amp; !Global.type){//up
+

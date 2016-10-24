@@ -1,0 +1,7 @@
+UserPermissions userPermissions = getOrNull(user);
+if (null == userPermissions) {
+throw new IllegalArgumentException(&quot;user does not have permissions &quot; + user);
+public UserPermissions getOrNull(String user) {
+for (UserPermissions u : permissions) {
+if (u.user() == null || u.user().username() == null) {
+

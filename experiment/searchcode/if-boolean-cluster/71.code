@@ -1,0 +1,8 @@
+public static boolean isClusterNodeAlive(String clusterNodeId) {
+if ((_clusterExecutor == null) || !_clusterExecutor .isEnabled()) {
+return _clusterExecutor.isClusterNodeAlive(clusterNodeId);
+}
+
+public static boolean isEnabled() {
+if ((_clusterExecutor == null) || !_clusterExecutor.isEnabled()) {
+

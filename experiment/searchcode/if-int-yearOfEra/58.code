@@ -1,0 +1,10 @@
+* The Japanese imperial calendar year of this date.
+*/
+private transient int yearOfEra;
+
+/**
+* Obtains an instance of {@code JapaneseDate} from the era, year-of-era, month-of-year and day-of-month.
+static JapaneseDate of(JapaneseEra era, int yearOfEra, int month, int dayOfMonth) {
+
+Jdk7Methods.Objects_requireNonNull(era, &quot;era&quot;);
+

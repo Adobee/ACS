@@ -1,0 +1,13 @@
+int nEnd = n - 1;
+
+for (int i = n - 2; i >= 1; i--)
+{
+int index = FindIndex(recs, n, i);
+if (index < 0) break;
+int nInterval = a[nEnd] - a[nStart];
+System.out.print(a[nStart]+&quot; &quot;);
+
+while (nEnd < n)
+{
+if (a[nEnd] - a[nStart] == nInterval)
+

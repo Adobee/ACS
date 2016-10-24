@@ -1,0 +1,7 @@
+public class RegularProcessor implements ComparisonProcessor {
+@Override
+public Difference compare(String prop, Object oldValue, Object newValue) {
+if (newValue == null) {
+if (oldValue != null) {
+return new PropertyDifference(prop, newValue, oldValue);
+

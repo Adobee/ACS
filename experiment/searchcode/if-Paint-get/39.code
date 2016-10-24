@@ -1,0 +1,10 @@
+public Paint save(Paint paint) throws Exception {
+int i = 0;
+if(paint != null &amp;&amp; !&quot;&quot;.equals(paint.getPaintId())) {
+paint.setPaintId(UUID.randomUUID().toString());
+return this.paintDao.listAct(paint);
+}
+
+public PaintDao getPaintDao() {
+return paintDao;
+

@@ -1,0 +1,10 @@
+package powx_n;
+
+public class Solution {
+public double myPow(double x, int n) {
+long l = n;
+double result = 1;
+double tmp = x;
+while (l > 0) {
+if (l % 2 == 1) {
+

@@ -1,0 +1,9 @@
+public class NestJPF_BDD {
+
+public static void main(String[] args) {
+Verify.resetInstructionCounter();
+new NestJPF_BDD(Integer.parseInt(args[0]));
+}
+
+@TrackWithBDD static boolean a1 = Verify.getBoolean();
+

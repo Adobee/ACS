@@ -1,0 +1,9 @@
+this.plotSqPlugin = plotSPlugin;
+
+}
+
+@Override
+public boolean canEdit(Player player, ArmorStand armorstand) {
+if(plotSqPlugin == null || !plotSqPlugin.isEnabled()) return true;
+if(!PS.get().hasPlotArea(player.getWorld().getName())) return true; //if the world isn&#39;t a plot world
+

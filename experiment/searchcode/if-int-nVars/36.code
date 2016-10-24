@@ -1,0 +1,8 @@
+out.println(&quot;MARKOV&quot;);
+int nVars = Integer.parseInt(args[1]);
+//number of variables in UAI.<Edit>
+out.println(nVars);
+int i=(int)(Math.random()*nVars), j=(int)(Math.random()*nVars);
+double sum=i+j,product=i*j,t2[] ={sum,product};
+if(!facs.contains(t2) &amp;&amp; i!=j ){
+

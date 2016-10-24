@@ -1,0 +1,10 @@
+CollectorInfo subInfo = subInfos.iterator().next();
+
+BigDecimal pause = subInfo.getStats().getPauseTime();
+if (pause == null) {
+pause = BigDecimal.ZERO;
+BigDecimal subSubPauseTime = subSubInfo.getStats()
+.getPauseTime();
+if (subSubPauseTime != null) {
+if (subSubInfo.getType().getConcurrency() == Concurrency.SERIAL) {
+

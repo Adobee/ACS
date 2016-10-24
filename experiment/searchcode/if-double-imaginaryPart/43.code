@@ -1,0 +1,7 @@
+private final double realPart;
+private final double imaginaryPart;
+
+public ComplexNumber(double realPart, double imaginaryPart) {
+this.realPart = realPart;
+this.imaginaryPart = imaginaryPart;
+

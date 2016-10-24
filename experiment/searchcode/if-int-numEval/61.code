@@ -1,0 +1,7 @@
+* Adds metadata to an element. Modifies if the name already exists.
+*
+* @param urnspec
+Metadata md = getMetaDataObj(urnspec, name);
+if (md == null) {
+Metadata data = (Metadata) ModelCreationFactoryHelper.getNewObject(urnspec, Metadata.class);
+

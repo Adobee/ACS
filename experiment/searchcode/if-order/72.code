@@ -1,0 +1,8 @@
+public ProcessContext<CheckoutSeed> execute(ProcessContext<CheckoutSeed> context) throws Exception {
+Order order = context.getSeedData().getOrder();
+if (OrderStatus.SUBMITTED.equals(order.getStatus())) {
+orderLog.setOperator(&quot;SYSTEM&quot;);
+orderLogService.save(orderLog);
+}
+if (OrderStatus.CONFIRMED.equals(order.getStatus())) {
+

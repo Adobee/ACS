@@ -1,0 +1,11 @@
+public List<Secret> getSecrets() {
+return secretsView;
+}
+
+public boolean isFull() {
+return secrets.size() >= MAX_SECRETS;
+ExceptionHelper.checkNotNullArgument(secretId, &quot;secretId&quot;);
+
+for (Secret secret: secrets) {
+if (secretId.equals(secret.getSecretId())) {
+

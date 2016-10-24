@@ -1,0 +1,14 @@
+double ai = Math.acos(cosA) * 180 / Math.PI;
+double sinH = Math.sin(Math.toRadians(ha * 15));
+double az = 0;
+if (sinH < 0) {
+az = ai;
+}
+if (sinH > 0) {
+az = 360 - ai;
+}
+return az;
+}
+
+public double convertAltAzToDec(double alt, double lat, double az) {
+

@@ -1,0 +1,10 @@
+public Double[][] S,v;
+private Double  dt=2.0;
+public AmericanOption(){
+this.optionName=&quot;AMERICAN&quot;;
+public Double Call(double S,double X, double r,double rf, double T,double a){
+int N= 0;
+if(T>120){
+dt=30.0;
+N=(int)Math.round(T/dt);
+

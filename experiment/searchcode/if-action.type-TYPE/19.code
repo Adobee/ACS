@@ -1,0 +1,14 @@
+public EditAction factory(String type) throws WrongArgumentException {
+
+if (type.equals(&quot;Delete&quot;)) {
+
+return new DeleteAction();
+}
+
+if (type.equals(&quot;Insert&quot;)) {
+
+return new InsertAction();
+}
+
+if (type.equals(&quot;Update&quot;)) {
+

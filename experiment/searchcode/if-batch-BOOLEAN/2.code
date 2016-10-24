@@ -1,0 +1,12 @@
+this.batchName = batchName;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+Batch batch = (Batch) o;
+
+if (batchId != batch.batchId) return false;
+if (batchName != null ? !batchName.equals(batch.batchName) : batch.batchName != null) return false;
+

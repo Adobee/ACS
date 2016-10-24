@@ -1,0 +1,11 @@
+private boolean mHasLiveStream = false;
+
+private boolean mLiveStreamVideoWatched = false;
+
+private boolean mHasFeedback = false;
+> mSessionEnd - SessionDetailConstants.FEEDBACK_MILLIS_BEFORE_SESSION_END_MS;
+}
+
+public boolean hasLiveStream() {
+return mHasLiveStream || !TextUtils.isEmpty(mYouTubeUrl);
+

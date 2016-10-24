@@ -1,0 +1,8 @@
+* Constructor to randomly create fraction with maximum denominator.
+* @param maxDenominator
+*/
+public Fraction(int maxDenominator){
+int min = 2;
+denominator = ThreadLocalRandom.current().nextInt(min, maxDenominator + 1);
+numerator = ThreadLocalRandom.current().nextInt(1, denominator + 1);
+

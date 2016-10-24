@@ -1,0 +1,9 @@
+public class GlobalValues {
+
+public static double GLOBAL_MULTIPLIER;
+
+public static void loadVars(JavaPlugin instance)
+{
+GLOBAL_MULTIPLIER		=	instance.getConfig().getDouble(	&quot;Multiplier.Global&quot;);
+instance.getLogger().info(&quot;Multiplier.Global: &quot;+GLOBAL_MULTIPLIER);
+

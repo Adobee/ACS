@@ -1,0 +1,10 @@
+public class NewVmInstanceTypeManager extends VmInstanceTypeManager {
+
+private final ProfileBehavior networkBehavior = new EditProfileBehavior();
+protected ProfileBehavior getNetworkProfileBehavior() {
+return networkBehavior;
+}
+
+@Override
+protected void maybeSetSingleQxlPci(VmBase vmBase) {
+

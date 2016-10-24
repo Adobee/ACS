@@ -1,0 +1,10 @@
+return new ImmutableInstant(aClockTime);
+}
+
+public static ImmutableInstant create(Instant anInstant) {
+if (anInstant == null)
+return null;
+
+if (anInstant instanceof ImmutableInstant)
+return (ImmutableInstant) anInstant;
+

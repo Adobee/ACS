@@ -1,0 +1,10 @@
+final double[] block = new double[iHeight * jWidth];
+blocks[blockIndex] = block;
+// copy data
+int index = 0;
+for(int p = pStart; p < pEnd; ++p) {
+final double[] block = blocks[iBlock * blockColumns + jBlock];
+final int available = outBlock.length - outIndex;
+if(jWidth > available) {
+System.arraycopy(block, iRow * jWidth, outBlock, outIndex, available);
+

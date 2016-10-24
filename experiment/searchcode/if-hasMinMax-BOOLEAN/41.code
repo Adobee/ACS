@@ -1,0 +1,14 @@
+accounts.put(p, 0l);
+return 0;
+}
+}
+
+public static boolean withdraw(String p, double amount){
+if(econ != null) return econ.withdrawPlayer(p, amount).transactionSuccess();
+return false;
+}
+}
+
+public static boolean deposit(String p, float amount){
+if(econ != null) return econ.depositPlayer(p, amount).transactionSuccess();
+

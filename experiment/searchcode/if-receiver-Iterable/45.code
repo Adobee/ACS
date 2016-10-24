@@ -1,0 +1,7 @@
+import org.culturegraph.mf.framework.DefaultObjectReceiver;
+import org.culturegraph.mf.framework.DefaultStreamPipe;
+import org.culturegraph.mf.framework.ObjectReceiver;
+public static <T, U> Module<ObjectReceiver<T>, ObjectReceiver<U>> flatMap(
+final Function<T, Iterable<U>> function) {
+return Flux.module(new DefaultObjectPipe<T, ObjectReceiver<U>>() {
+

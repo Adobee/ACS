@@ -1,0 +1,5 @@
+public MyTurnState perform(BoardState oldstate, PlayableCard minion, TargetsType side) {
+Weapon weapon = new Ashbringer();
+if (side.equals(TargetsType.ALLYCHAR)) return (oldstate.getHero()).equipWeapon(oldstate,weapon);
+else return (oldstate.getEnemy()).equipWeapon(oldstate,weapon);
+

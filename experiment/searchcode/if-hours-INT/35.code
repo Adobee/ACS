@@ -1,0 +1,12 @@
+public static void main(String[] args) {
+int hours = 27;
+int mins = 430;
+int result = 0;
+
+hours = hours % 12;
+hours = hours * 30;
+if (hours > mins) result = hours - mins;
+else result = mins - hours;
+
+if (result > 180) result = 360 - result;
+

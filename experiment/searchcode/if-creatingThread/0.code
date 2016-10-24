@@ -1,0 +1,13 @@
+public void checkPermission(Permission perm, Object context) {
+// allow everything
+}
+
+public void checkAccess(ThreadGroup g) {
+Thread creatingThread = Thread.currentThread();
+if(predicate.test(creatingThread)) {
+action.accept(creatingThread);
+}
+}
+
+}
+

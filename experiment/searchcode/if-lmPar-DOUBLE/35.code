@@ -1,0 +1,10 @@
+private double lmPar;
+
+/** Parameters evolution direction associated with lmPar. */
+private double[] lmDir;
+dxNorm = FastMath.sqrt(dxNorm);
+double fp = dxNorm - delta;
+if (fp <= 0.1 * delta) {
+lmPar = 0;
+return;
+

@@ -1,0 +1,8 @@
+public int compareTo(JavaLong other) {
+if (longValue < other.longValue) return -1;
+if (longValue > other.longValue) return +1;
+if (getClass() != obj.getClass())
+return false;
+JavaLong other = (JavaLong) obj;
+if (longValue != other.longValue)
+

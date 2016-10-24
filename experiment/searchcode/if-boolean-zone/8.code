@@ -1,0 +1,10 @@
+private HashMap<Long, Zone> idToZoneMap = new HashMap<Long, Zone>();
+
+public Zone pick(long id, int xScreen, int yScreen, Touch t, boolean mapID) {
+if (idToZoneMap.containsKey(id)) {
+return idToZoneMap.get(id);
+}
+
+if(mapID){
+// check zones **layers matter--last zone created is on top (wins)
+

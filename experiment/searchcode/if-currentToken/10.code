@@ -1,0 +1,10 @@
+public int execute(boolean skip) throws ParserException, VariableException
+{
+String currenttoken = super.getCurrentToken();
+if(!TokenHandler.isVariable(currenttoken))
+while(TokenHandler.isMathOperator(currenttoken))
+{
+if(currenttoken.equals(&quot;+&quot;))
+{
+super.match(&quot;+&quot;);
+

@@ -1,0 +1,13 @@
+System.out.println(maxSubsequenceLength(n, m));
+}
+
+scanner.close();
+}
+
+private static int maxSubstringLength(String a, String b) {
+int aLen = a.length() + 1;
+*      3、max{LCS（Xm-1，Y），LCS（X，Yn-1）}。
+* 所以解决这个问题的动态转移方程即：
+*      if xm==yn  LCS(Xm,Yn)= LCS（Xm-1，Yn-1）+1;
+*      if xm!=yn LCS(Xm,Yn)=  max{LCS（Xm-1，Yn),LCS（Xm，Yn-1)};
+

@@ -1,0 +1,10 @@
+public RungeKuttaStepInterpolator(final RungeKuttaStepInterpolator interpolator) {
+
+super(interpolator);
+
+if (interpolator.currentState != null) {
+
+previousState = interpolator.previousState.clone();
+* interpolator perform the evaluations it needs. These evaluations
+* will be performed during the call to <code>doFinalize</code> if
+

@@ -1,0 +1,10 @@
+Connection conn= Conexion();
+int affectedRows;
+try (PreparedStatement ps = conn.prepareStatement(query.getQuerySQL(TipoJdbc.writeINSERT))) {
+affectedRows = ps.executeUpdate();
+}
+ConexionClose();
+if(affectedRows>0) {result=entidad.getId();}
+}
+catch (Exception e) {
+

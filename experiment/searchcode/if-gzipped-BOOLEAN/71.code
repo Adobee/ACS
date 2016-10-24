@@ -1,0 +1,10 @@
+public PageInfo(final int statusCode, final String contentType, final Collection headers, final Collection cookies,
+final byte[] body, boolean storeGzipped) throws AlreadyGzippedException {
+if (headers != null) {
+* The response body will be assumed to be gzipped if the GZIP header has been set.
+*
+* @return true if the body is gzipped
+*/
+private boolean isBodyParameterGzipped() {
+for (int i = 0; i < headers.size(); i++) {
+

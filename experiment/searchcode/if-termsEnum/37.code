@@ -1,0 +1,7 @@
+import org.apache.lucene.index.TermsEnum;
+import org.apache.lucene.search.DocIdSetIterator;
+
+import java.io.IOException;
+public TermDocsSpliterator(IndexReader reader, TermsEnum termsEnum, Set<String> fieldsToLoad) {
+super(ORDERED | NONNULL | DISTINCT, 64, Integer.MAX_VALUE);
+

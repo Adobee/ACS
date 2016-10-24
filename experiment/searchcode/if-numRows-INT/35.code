@@ -1,0 +1,10 @@
+* @see <a href=&quot;https://leetcode.com/problems/zigzag-conversion/&quot;>ZigZag Conversion</a>
+*/
+
+public class Solution {
+public String convert(String s, int numRows) {
+if (numRows == 1) return new String(s);
+// the second row to the numRows - 2 th row.
+for (int j = 1; j <= numRows - 2; ++j) {
+for (int i = j; i < s.length(); i = i + 2 * numRows - 2) {
+

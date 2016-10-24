@@ -1,0 +1,13 @@
+CD cd = new CD(titolo, autore);
+
+if(archivio.cercaCD(cd)!=-1)
+{
+cd = archivio.visualizzareCD(archivio.cercaCD(cd));
+System.out.println(&quot;Autore: &quot; + cd.getAutore() + &quot;Titolo: &quot; + cd.getTitolo());
+
+elencoBrani = cd.getElencoBrani();
+
+int i=1;
+
+for(Brano brano: elencoBrani){
+

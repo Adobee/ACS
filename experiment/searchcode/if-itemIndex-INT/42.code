@@ -1,0 +1,10 @@
+* If this bit is set, then we can use the cached value in local LRU cache as the latest value
+* @param itemIndex
+* @return true if the status is not changed
+*/
+public boolean isDataUnchanged(int itemIndex){
+return bits.get(itemIndex);
+}
+/**
+* after every reading, mark the item as unchanged<BR>
+

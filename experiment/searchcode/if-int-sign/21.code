@@ -1,0 +1,4 @@
+int[] ans = new int[] { a, b };
+int signDiff = ((a ^ b) >> 31) &amp; 1;//if sign(a) diff with sign(b), signDiff = 1; signSame = 0;
+int signSame = signDiff ^ 1;//if sign(a) equal with sign(b), signDiff = 0; signSame = 1;
+

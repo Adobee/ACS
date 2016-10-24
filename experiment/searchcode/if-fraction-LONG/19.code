@@ -1,0 +1,6 @@
+@BridgeOverride
+public FractionBaseDTO findFraction(RootDTO root, long index) {
+FractionBaseDTO result;
+result = fractionOracleRepository.findByIndex(index);
+if (result != null &amp;&amp; result.getId() == null) {
+

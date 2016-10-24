@@ -1,0 +1,9 @@
+for (int c2=0;c2+c<length;c2++){
+if (c==1){
+if (input.charAt(c2)==input.charAt(c2+1)){//if first 2 chars are same put 1
+array[c2][c2+1]=0;
+}
+else{
+if (input.charAt(c2)==input.charAt(c+c2)){
+array[c2][c2+c]+=array[c2+1][c2+c-1];
+

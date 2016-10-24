@@ -1,0 +1,10 @@
+static void testArray(VarHandle vh) {
+byte[] array = new byte[10];
+
+for (int i = 0; i < array.length; i++) {
+byte[] array = new byte[10];
+
+int i = 0;
+checkUOE(() -> {
+boolean r = vh.compareAndSet(array, i, (byte)1, (byte)2);
+

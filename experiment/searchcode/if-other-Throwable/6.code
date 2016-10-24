@@ -1,0 +1,7 @@
+* @return the root cause of the <code>Throwable</code>, <code>null</code>
+*         if none found or null throwable input
+Throwable cause = throwable;
+if (throwable != null) {
+cause = throwable.getCause();
+while ((throwable = cause.getCause()) != null) {
+

@@ -1,0 +1,9 @@
+public void getLeastNumbers(int[] a, int k) {
+if (null == a || a.length <= 0 || k <= 0 || k > a.length) {
+return;
+}
+
+int low = 0;
+int high = a.length - 1;
+int index = partition(a, low, high, k);
+

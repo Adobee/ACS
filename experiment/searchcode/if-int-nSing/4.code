@@ -1,0 +1,13 @@
+int pk = permutation[k];
+jacobian[k][pk] = diagR[pk];
+}
+if (firstIteration) {
+xNorm = 0;
+for (int k = 0 ; k < (cols) ; ++k) {
+if (nSing < (solvedCols)) {
+work[j] = 0;
+}
+}
+if (nSing > 0) {
+for (int j = nSing - 1 ; j >= 0 ; --j) {
+

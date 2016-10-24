@@ -1,0 +1,10 @@
+public long findRoutes(int x, int y, int max, Long[][] countArray) {
+if (x == max &amp;&amp; y == max) {
+return 1;
+return countArray[x][y];
+}
+
+long count = 0;
+if (x < max) {
+count += findRoutes(x + 1, y, max, countArray);
+

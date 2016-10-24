@@ -1,0 +1,7 @@
+public static void handle(Object bean,Object component,Element eventNode){
+String listenerType = eventNode.getAttribute(&quot;type&quot;);
+if(listenerType.equals(&quot;ActionListener&quot;)){
+String addListener = &quot;add&quot; + listenerType;   //得到添加事件监听器的方法名
+try {
+Class<?> name = Class.forName(&quot;java.awt.event.&quot;+listenerType);
+

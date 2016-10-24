@@ -1,0 +1,7 @@
+public class UniqueGroupValidator implements IValidator<String> {
+@Autowired
+GroupService groupService;
+private boolean updateExisting = false;
+List<CsldGroup> existingPerson = groupService.getUnique(example);
+if(!updateExisting &amp;&amp; existingPerson.size() > 0) {
+

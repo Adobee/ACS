@@ -1,0 +1,19 @@
+public Rational(double n)
+{
+internalParse(n);
+}
+
+@Override
+public String toString()
+{
+if(den == 1 || num == 0)
+return new Rational(den, num);
+}
+
+public double getValue()
+{
+return (double)num / den;
+}
+
+public Rational add(Rational fraction)
+

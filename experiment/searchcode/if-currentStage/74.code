@@ -1,0 +1,7 @@
+public float[] getNextPoint(){
+if(currentPointNum + 1 != capturePoints.get(scanOrder[currentStage]).size())
+return capturePoints.get(scanOrder[currentStage]).get(currentPointNum+1);
+else
+if(currentStage+1 != numBands)
+return capturePoints.get(scanOrder[currentStage+1]).get(0);
+

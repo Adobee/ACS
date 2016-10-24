@@ -1,0 +1,9 @@
+public void run(String arg) {
+ImagePlus imp = WindowManager.getCurrentImage();
+if (imp==null || imp.getType()!=ImagePlus.GRAY8)
+class CustomAnalyzer extends ParticleAnalyzer {
+ImageProcessor ip2;
+boolean error;
+
+public CustomAnalyzer(int options, int measurements, ResultsTable rt, double minSize, double maxSize) {
+

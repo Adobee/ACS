@@ -1,0 +1,12 @@
+public TestCaseResultData(CaseResult testResult){
+setName(testResult.getName());
+setPassed(testResult.isPassed());
+setSkipped(testResult.getSkipCount() == testResult.getTotalCount());
+evaluateStatus();
+if(&quot;FAILED&quot;.equalsIgnoreCase(getStatus())){
+setFailureMessage(testResult.getErrorStackTrace());
+}
+}
+
+}
+

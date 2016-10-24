@@ -1,0 +1,7 @@
+for(int i = 1; i<100000; i++){
+String id = String.format(&quot;%s%05d&quot;, prefix, i);
+if(!timeSeries.containsKey(id)) {
+for(TimeSeriesObject series: newData.timeSeries.values()) {
+
+if(timeSeries.containsKey(series.taxi)) {
+

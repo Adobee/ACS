@@ -1,0 +1,9 @@
+public MyCharacter(char ch) {
+this.ch = ch;
+}
+// checking if character is digit
+public static boolean isDigit(char ch) {
+return ch <= &#39;9&#39; &amp;&amp; ch >= &#39;0&#39;;
+}
+// checking if character is lower case
+

@@ -1,0 +1,14 @@
+double xold;
+double[] y, dydx;
+double atol, rtol;
+boolean dense;
+double hdid;
+double hnext;
+final double atoll, // XXX reference xx.
+final double rtoll, final boolean dense) {
+x = xx;
+y = yy;
+dydx = dydxx;
+atol = atoll;
+rtol = rtoll;
+

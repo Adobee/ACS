@@ -1,0 +1,8 @@
+Integer[] result = Utils.arrayFullCopy(n, array);
+
+for(int i=0; i<n; i++){
+int minPos = findMinPosition(result, i);
+int minPos = start;
+for(int i = start+1; i<array.length; i++){
+if(min >  array[i]){
+

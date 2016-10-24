@@ -1,0 +1,8 @@
+protected PointDouble(final GeometryFactory geometryFactory, final double... coordinates) {
+if (coordinates != null &amp;&amp; coordinates.length > 0) {
+final int axisCount = geometryFactory.getAxisCount();
+final int pointAxisCount = point.getAxisCount();
+for (int i = 0; i < axisCount; i++) {
+final double value;
+if (i < pointAxisCount) {
+

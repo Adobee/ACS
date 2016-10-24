@@ -1,0 +1,7 @@
+public static Calendar getDateAwareCalendar() {
+Calendar calendar = new GregorianCalendar();
+
+// Check if the 1st of September is in two weeks. If so we need to download full timetable
+// for two weeks beginning from the 1st of September in advance.
+if (calendar.get(Calendar.MONTH) == Calendar.AUGUST &amp;&amp; calendar.get(Calendar.DATE) >= 18) {
+

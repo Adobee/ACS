@@ -1,0 +1,9 @@
+HashMap<Double, List<Point>> lines = new HashMap<Double, List<Point>>();
+
+for (int i = 0; i < pt.length; i++) {
+Point o = pt[i];
+
+Point[] npt = new Point[pt.length - i];
+for (int j = i; j < pt.length; j++)
+npt[j-i] = pt[j];
+

@@ -1,0 +1,10 @@
+public class Survivor {
+
+public static int charaWidth;
+public static int charaHeight;
+public static int charaHalfW;
+public static int charaHalfH;
+
+/** [0]down [1]left [2]right [3]up */
+public static Bitmap[][] charaImg = new Bitmap[4][3];
+

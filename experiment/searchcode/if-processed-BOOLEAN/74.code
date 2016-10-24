@@ -1,0 +1,19 @@
+public Transaction(ITransactor buyer, ITransactor seller,
+TransactionAgreement agreement) {
+
+transactionProcessed = false;
+
+if(agreement.transactionApproved) {
+buyer.takeConsumableFromTransaction(seller.provideConsumableForTransaction(agreement.terms.consumableId));
+transactionProcessed = true;
+}
+}
+
+}
+
+public boolean getProcessed() {
+return transactionProcessed;
+}
+
+}
+

@@ -1,0 +1,10 @@
+public int longestConsecutive(int[] num) {
+int len = num.length;
+if (len == 0)
+return 0;
+Hashtable<Integer, Integer> hash = new Hashtable<Integer, Integer>();
+int ans = Integer.MIN_VALUE;
+for (int i = 0; i < len; i++) {
+if (visit[i] == 1)
+continue;
+

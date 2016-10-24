@@ -1,0 +1,8 @@
+private static boolean isValidMove(int rowIndex,int colIndex, int[] move){
+int nextRowIndex = rowIndex + move[0], nextColIndex = colIndex + move[1];
+if(nextRowIndex == 3 &amp;&amp; (nextColIndex == 0 || nextColIndex == 2)){
+return true;
+}
+private static int getCount(int rowIndex,int colIndex, int stepLength){
+if(stepLength == 0 || stepLength == 1){
+

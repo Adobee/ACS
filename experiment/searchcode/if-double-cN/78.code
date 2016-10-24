@@ -1,0 +1,12 @@
+/**
+*
+*/
+package cn.lambdacraft.core.util;
+
+import net.minecraft.entity.Entity;
+import net.minecraft.world.World;
+//import cn.lambdacraft.terrain.client.EntityXenPortalFX;
+
+/**
+* @author Administrator
+

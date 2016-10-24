@@ -1,0 +1,8 @@
+int maxSegmentCount, Map<SegmentCommitInfo,Boolean> segmentsToMerge, IndexWriter writer)
+throws IOException {
+
+if (upgradeInProgress) {
+// We must have less than our max upgrade merges, so the next return will be our last in upgrading mode.
+upgradeInProgress = false;
+if (spec.merges.isEmpty() == false) {
+

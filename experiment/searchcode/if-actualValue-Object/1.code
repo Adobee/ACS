@@ -1,0 +1,10 @@
+public final class ExpectToExpectation implements ValueComplianceExpectation {
+
+private final Caller caller;
+
+private final Object actualValue;
+
+private final Optional<Object> expectedValue;
+public ExpectToExpectation(Caller caller, Object actualValue, Optional<Object> expectedValue, Matcher matcher) {
+assert caller != null : &quot;Caller can&#39;t be null&quot;;
+

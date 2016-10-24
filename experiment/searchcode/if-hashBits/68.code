@@ -1,0 +1,5 @@
+return CreatePBKDF2Hash(_pbkdf2algorithmPrefix + &quot;SHA1&quot;, password, salt, iterations, keySize);
+}
+public static String CreatePBKDF2Sha2Hash(Integer hashBits, String password, String salt, Integer iterations, Integer keySize) throws IllegalArgumentException {
+if (hashBits == 224 || hashBits == 256 || hashBits == 384 || hashBits == 512) {
+

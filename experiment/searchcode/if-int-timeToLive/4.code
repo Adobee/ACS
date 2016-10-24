@@ -1,0 +1,11 @@
+private List<Data<T>> values = new ArrayList<>();
+private int timeToLive;
+private LocalTime timeToUpdate = null;
+
+public LiveStack(int timeToLive) {
+this.timeToLive = timeToLive;
+}
+
+public int size() {
+this.check();
+

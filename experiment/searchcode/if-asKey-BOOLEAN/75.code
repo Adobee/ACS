@@ -1,0 +1,8 @@
+String command;
+boolean exec;
+
+public ExampleCommand(String command, boolean exec) {
+super(HystrixCommandGroupKey.Factory.asKey(&quot;myGroup&quot;));// why groups
+this.command = command;
+this.exec = exec;
+

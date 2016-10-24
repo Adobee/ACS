@@ -1,0 +1,11 @@
+* Stores file-upload progress data.
+*/
+class Progress {
+private final long bytesRead;
+
+private final Long totalBytes;
+* @param totalBytes The total number of bytes for the upload, or null if not known.
+*/
+Progress(final long bytesRead, final Long totalBytes) {
+this.bytesRead = bytesRead;
+

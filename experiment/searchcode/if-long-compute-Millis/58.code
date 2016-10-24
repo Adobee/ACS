@@ -1,0 +1,15 @@
+private static final long MILLIS_IN_GEN = 8 * MILLIS_IN_LEAP_YEAR + 25 * MILLIS_IN_REGULAR_YEAR;
+
+private boolean leapYear = false;
+
+@Override
+protected void computeTime() {
+long lTime = (fields[KA_GEN] - 1) * MILLIS_IN_GEN;
+lTime+= (fields[KA_WEEK] - 1) * MILLIS_IN_WEEK;
+}
+
+if(fields[KA_MONTH] == 14) {
+computeLeapYear();
+if(leapYear)
+lTime+= (fields[KA_DAY] - 8) * MILLIS_IN_DAY;
+

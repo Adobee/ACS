@@ -1,0 +1,12 @@
+public void handle(Callback[] callbacks) throws IOException,
+UnsupportedCallbackException {
+for(Callback callback:callbacks){
+if(callback instanceof NameCallback){
+((NameCallback)callback).setName(name);
+}else if(callback instanceof PasswordCallback){
+((PasswordCallback)callback).setPassword(password);
+}
+}
+}
+}
+

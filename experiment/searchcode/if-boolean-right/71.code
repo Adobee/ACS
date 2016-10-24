@@ -1,0 +1,8 @@
+boolean[] leftOcp = new boolean[2 * n];
+boolean[] rightOcp = new boolean[2 * n];
+return helper(n, 0, colOcp, leftOcp, rightOcp);
+public  static int helper(int n, int row, boolean[] colOcp, boolean[] leftOcp, boolean[] rightOcp) {
+int sum = 0;
+for (int i = 0; i < n; i++) {
+if (!colOcp[i] &amp;&amp; !leftOcp[i + row] &amp;&amp; !rightOcp[n - row + i]) {
+

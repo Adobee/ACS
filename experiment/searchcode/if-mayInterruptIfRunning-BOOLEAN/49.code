@@ -1,0 +1,10 @@
+public RequestHandle(Future<?> request) {
+this.request = request;
+}
+
+public boolean cancel(boolean mayInterruptIfRunning) {
+return this.request != null &amp;&amp; this.request.cancel(mayInterruptIfRunning);
+}
+
+public boolean isFinished() {
+

@@ -1,0 +1,8 @@
+plugin.getConfig().set(newMaterialPath+&quot;.displayName&quot;, meta.getDisplayName() );
+//lores
+if (meta.hasLore() ) {
+List<String> lores = stackInHand.getItemMeta().getLore();
+ArrayList<String> loresForConfig = new ArrayList<String>();
+for (String lore : lores) {
+if ( !lore.startsWith(plugin.getData.getPrefix()) ) {
+

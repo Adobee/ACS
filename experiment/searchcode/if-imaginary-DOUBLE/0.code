@@ -1,0 +1,12 @@
+private final double imaginary;
+
+public Complex(double r, double i) {
+real = r;
+imaginary = i;
+}
+
+public Complex add(Complex complex2) {
+double real = complex1.real + complex2.real;
+double imaginary = complex1.imaginary + complex2.imaginary;
+return new Complex(real, imaginary);
+

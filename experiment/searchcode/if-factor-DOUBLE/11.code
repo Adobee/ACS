@@ -1,0 +1,9 @@
+public class NormalizationFactorOperator {
+
+public double computeNormalizationFactor(double[] values) {
+
+double factor = 0;
+for (double selected : values) {
+if (selected > 0) {
+factor += selected * selected;
+

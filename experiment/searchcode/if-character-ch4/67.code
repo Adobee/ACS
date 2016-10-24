@@ -1,0 +1,11 @@
+package ds_ch4;
+
+import java.util.Stack;
+
+// TODO: Need to optimize
+public class ch4_5 extends Stack {
+if(operatorStack.isEmpty() || getPriorityOfOperator(token) >= getPriorityOfOperator(tokenFromStack)) {
+//operatorStack.push(new Character(token));
+}
+else if(!operatorStack.isEmpty() &amp;&amp; getPriorityOfOperator(token) < getPriorityOfOperator(tokenFromStack)) {
+

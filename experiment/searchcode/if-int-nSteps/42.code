@@ -1,0 +1,11 @@
+int difference = Math.abs(M-N);
+
+if (M > N)
+headA = traverseNSteps(headA, difference);
+else
+return null;
+}
+
+private ListNode traverseNSteps(ListNode node, int steps) {
+while (steps-- > 0)
+

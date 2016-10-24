@@ -1,0 +1,8 @@
+public  void readDouble(File file){
+boolean hasDot = false;
+try (FileReader reader = new FileReader(file)) {
+int value;
+while ((value = reader.read()) != -1) {
+if ((char) value == &#39; &#39;) {
+if (hasDot == true) {
+

@@ -1,0 +1,17 @@
+private IGenericDAO<Dynamic> dynamicDao;
+
+public boolean save(Dynamic dynamic) {
+/**
+* init other field here
+*/
+try {
+this.dynamicDao.save(dynamic);
+Dynamic dynamic = this.dynamicDao.get(id);
+if (dynamic != null) {
+return dynamic;
+}
+return null;
+}
+
+public boolean delete(Long id) {
+

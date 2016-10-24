@@ -1,0 +1,12 @@
+//p8.7
+package structures.linear;
+
+public class RecursiveQueueReverser {
+static <T> void reverse(Queue<T> queue){
+T item;
+if(queue.isEmpty()){
+return;
+}
+item=queue.dequeue();
+reverse(queue);
+

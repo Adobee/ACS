@@ -1,0 +1,12 @@
+public Player(Contact contact) {
+this.contact = contact;
+
+if (!playersTableIsCreated()) {
+createPlayerTableInDatabase();
+}
+
+if (isRegistered()) {
+loadInfo();
+} else {
+this.userName = generateRandomUserName();
+

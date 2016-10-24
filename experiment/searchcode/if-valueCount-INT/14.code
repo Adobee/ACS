@@ -1,0 +1,16 @@
+return nextValue(index++);
+}
+}
+
+private final int valueCount;
+
+protected AbstractValueGenerator(int valueCount) {
+if (valueCount < 0) {
+throw new IllegalArgumentException(&quot;Negative value count: &quot; + valueCount);
+}
+
+this.valueCount = valueCount;
+}
+
+public final int getValueCount() {
+

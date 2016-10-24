@@ -1,0 +1,10 @@
+Verify.assertSize(2, this.trueFalseSet.reject(BooleanPredicates.and(BooleanPredicates.isFalse(), BooleanPredicates.isTrue())));
+}
+
+@Override
+@Test
+public void detectIfNone()
+{
+super.detectIfNone();
+Assert.assertTrue(this.emptySet.detectIfNone(BooleanPredicates.or(BooleanPredicates.isTrue(), BooleanPredicates.isFalse()), true));
+

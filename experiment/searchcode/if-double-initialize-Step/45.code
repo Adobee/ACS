@@ -1,0 +1,16 @@
+int N_dx;
+double eps, beta;
+
+public PhiFourth(Parameters params) {
+initialize(params);
+}
+
+public PhiFourth clone() {
+beta = 1; // re-enable noise
+if (nucleated())
+return new double[] {1, dx*maxIndex(field)};
+else
+return new double[] {0, Double.NaN};
+}
+}
+

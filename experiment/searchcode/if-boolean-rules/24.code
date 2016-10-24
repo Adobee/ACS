@@ -1,0 +1,12 @@
+private final List<EDLRule> relevantRules;
+private List<EDLRule> violatedRules;
+
+public ValidationResult(final boolean valid) {
+this.violatedRules = new LinkedList<EDLRule>();
+}
+
+public boolean isValid() {
+this.violatedRules = new LinkedList<EDLRule>();
+
+if (this.valueHasCorrectType) {
+

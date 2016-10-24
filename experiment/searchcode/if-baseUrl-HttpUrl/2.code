@@ -1,0 +1,10 @@
+private Retrofit retrofit;
+
+private HttpUrl httpUrl;
+
+public static HttpApiManager getInstance() {
+if (httpApiManager == null)
+return new Retrofit.Builder()
+.baseUrl(httpUrl)
+.client(okHttpClient)
+

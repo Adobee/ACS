@@ -1,0 +1,10 @@
+public static void main(String[] args) {
+System.out.println(&quot;&quot; + sqrt(3));
+}
+
+public static double sqrt(double n) {
+if (n < 0) {
+System.out.println(&quot;Invalid input. n should be non-negative&quot;);
+}
+double mid, low = 0, high = n;
+

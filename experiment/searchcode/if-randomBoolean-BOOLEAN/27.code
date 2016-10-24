@@ -1,0 +1,8 @@
+factory.interval(randomIntBetween(1, 100000));
+if (randomBoolean()) {
+long extendedBoundsMin = randomIntBetween(-100000, 100000);
+factory.extendedBounds(new ExtendedBounds(extendedBoundsMin, extendedBoundsMax));
+}
+if (randomBoolean()) {
+factory.format(&quot;###.##&quot;);
+

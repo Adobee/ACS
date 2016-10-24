@@ -1,0 +1,5 @@
+public class RectHV {
+private final double xmin,ymin,xmax,ymax;
+public RectHV(double xmin, double ymin,         // construct the rectangle [xmin, xmax] x [ymin, ymax]
+double xmax, double ymax)         // throw a java.lang.IllegalArgumentException if (xmin > xmax) or (ymin > ymax)
+

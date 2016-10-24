@@ -1,0 +1,6 @@
+ConvergenceChecker<PointVectorValuePair> checker,
+double costRelativeTolerance,
+* the function vector and the columns of the Jacobian.
+*/
+public LevenbergMarquardtOptimizer(double costRelativeTolerance,
+

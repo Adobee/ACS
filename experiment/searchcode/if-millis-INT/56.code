@@ -1,0 +1,11 @@
+public class Duration {
+public long startMillis;
+public long endMillis;
+public long duration;
+
+public int days;
+public int hours;
+public int minutes;
+public int seconds;
+public int millis;
+

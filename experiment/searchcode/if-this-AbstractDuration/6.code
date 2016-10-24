@@ -1,0 +1,8 @@
+public final class WideDuration extends AbstractDuration {
+private final long days;    /* INVARIANT: 0 <= days */
+private final int hours;    /* INVARIANT: 0 <= hours < 24 */
+* @param seconds the number of seconds (non-negative)
+* @throws IllegalArgumentException if any argument is negative
+*/
+public WideDuration(long days, int hours, int minutes, int seconds) {
+

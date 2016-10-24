@@ -1,0 +1,13 @@
+int currentPass = 2 * iteration + step;
+
+if(step == 0)		// to LogicMapper
+{
+paths.add(conf.getInputPath());		// to get input file
+paths.add(conf.getOutputPath() + &quot;/i&quot; + (currentPass - 2));		// to get previous b and w
+}
+
+if(currentPass != 0)
+paths.add(conf.getOutputPath() + &quot;/i&quot; + (currentPass - 1));
+
+return paths;
+

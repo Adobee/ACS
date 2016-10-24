@@ -1,0 +1,7 @@
+setStepSize(finalTime - getStepStart().getTime());
+}
+} else {
+if (getStepStart().getTime() + getStepSize() <= finalTime) {
+// modified midpoint integration with the current substep
+if ( ! tryStep(getStepStart().getTime(), y, getStepSize(), k, scale, fk[k],
+

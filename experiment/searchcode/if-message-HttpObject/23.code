@@ -1,0 +1,7 @@
+public abstract class HttpContentEncoder extends MessageToMessageCodec<HttpRequest, HttpObject> {
+
+private final Queue<String> acceptEncodingQueue = new ArrayDeque();
+HttpResponse httpresponse = (HttpResponse) httpobject;
+
+if (httpresponse.getStatus().code() == 100) {
+

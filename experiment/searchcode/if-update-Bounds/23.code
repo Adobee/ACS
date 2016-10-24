@@ -1,0 +1,10 @@
+public void update(float delta) {
+// PLAYER LOGIC
+player.update(delta);
+
+if ((player.bounds.y + player.bounds.height) > (bounds.y + bounds.height - 5f)) {
+player.bounds.y = bounds.y + bounds.height - 5f - player.bounds.height;
+}
+
+if (player.bounds.y < (bounds.y + 5f)) {
+

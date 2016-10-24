@@ -1,0 +1,8 @@
+public boolean intersects(Line other){
+Vector2D q1=other.getPoint1(),q2=other.getPoint2();
+//orientations
+double a=Math.signum((p2.getY()-p1.getY())*(q1.getX()-p2.getX())-(q1.getY()-p2.getY())*(p2.getX()-p1.getX()));
+double b=Math.signum((p2.getY()-p1.getY())*(q2.getX()-p2.getX())-(q2.getY()-p2.getY())*(p2.getX()-p1.getX()));
+
+double m=Math.signum((q2.getY()-q1.getY())*(p1.getX()-q2.getX())-(p1.getY()-q2.getY())*(q2.getX()-q1.getX()));
+

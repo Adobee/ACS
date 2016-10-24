@@ -1,0 +1,9 @@
+throws IllegalArgumentException, InvalidMatrixException {
+
+final int m = lTData.length;
+if (b.length != m) {
+throws IllegalArgumentException, InvalidMatrixException {
+
+final int m = lTData.length;
+if (b.getRowDimension() != m) {
+

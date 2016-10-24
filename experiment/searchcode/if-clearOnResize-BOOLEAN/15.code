@@ -1,0 +1,9 @@
+final ByteArrayWrapper array = new ByteArrayWrapper(super.newByteArray(size, clearOnResize), clearOnResize);
+if (!clearOnResize) {
+array.randomizeContent(0, size);
+arr = (ByteArrayWrapper) array;
+} else {
+arr = new ByteArrayWrapper(array, arr.clearOnResize);
+}
+if (!arr.clearOnResize) {
+

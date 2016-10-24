@@ -1,0 +1,11 @@
+private Map<String, Long> lastValues = new HashMap<>();
+private volatile long lastTime = -1;
+private float deltaSeconds;
+
+@Override
+public Map<String, Float> getCurrentValues() {
+long thisTime = DateTimeUtils.currentTimeMillis();
+deltaSeconds = Float.NaN;
+if(lastTime >= 0) {
+deltaSeconds = (thisTime - lastTime)/1000;
+

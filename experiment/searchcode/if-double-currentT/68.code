@@ -1,0 +1,10 @@
+double currentX = (xMin+dx) + j*dx;
+double currentT = (maxN-n) * dt;
+
+double prevT = (maxN-(n-1)) * dt;
+valuationLayer[j] = boundaryConditionAtT.value(new double[] { currentT, currentX });
+}
+else {
+
+double[] tAndX=new double[] { currentT, currentX };
+

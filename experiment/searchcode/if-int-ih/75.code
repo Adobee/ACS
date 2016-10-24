@@ -1,0 +1,11 @@
+for(int i = x1+1; i <= x2; i++)
+if(x2 != x1)
+pMap[i] = y1 + (int)(k2*(i-x1));
+else
+pMap[i] = y1;
+{ 1,-4, 1},
+{ 0, 1, 0}}; */
+if(flag)//边缘检测
+{
+int[][] edge = edge(gray, lap1, iw, ih);
+

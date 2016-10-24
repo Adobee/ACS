@@ -1,0 +1,14 @@
+public int compare(Figure p1, Figure p2)
+{
+int res = 0;
+
+if ( sortMode == 0)
+{
+if ( p1.getId() > p2.getId() ) res = 1;
+res = p1.getName().compareTo(p2.getName());
+}
+
+if ( sortMode == 2 )
+{
+if ( p1.getPerimeter() > p2.getPerimeter() ) res = 1;
+

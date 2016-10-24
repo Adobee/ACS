@@ -1,0 +1,9 @@
+final TypeDefinition currentType = context.getCurrentType();
+
+if (currentType == null) {
+return super.visitSwitchStatement(node, data);
+continue;
+}
+
+if (expression instanceof PrimitiveExpression) {
+

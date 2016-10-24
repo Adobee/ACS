@@ -1,0 +1,6 @@
+public static void findWeather(String location, Callback callback) {
+String ApiKey = Constants.ApiKey;
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.baseUrl).newBuilder();
+urlBuilder.addQueryParameter(Constants.WEATHER_LOCATION_QUERY_PARAMETER, location);
+

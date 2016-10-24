@@ -1,0 +1,9 @@
+public class Solution {
+public boolean isMatch(String s, String p) {
+boolean[][] notMatch = new boolean[s.length() + 1][p.length() + 1];
+return isMatch(s, p, notMatch);
+}
+
+public boolean isMatch(String s, String p, boolean[][] notMatch) {
+if (notMatch[s.length()][p.length()]) {
+

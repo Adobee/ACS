@@ -1,0 +1,16 @@
+public class PageVO {
+/**
+* 查询多少个
+*/
+private int limit;
+/**
+* 从第几个开始查
+*/
+private int offset;
+
+/**
+* @return limit
+*/
+public int getLimit() {
+return limit;
+

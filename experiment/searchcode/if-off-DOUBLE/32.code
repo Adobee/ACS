@@ -1,0 +1,6 @@
+public static double[] resonantLowPassFilter(double[] in, int cutOffFrequency, double q, int samplingFrequency) {
+double[] out = new double[in.length];
+
+double s = Math.sin(2 * Math.PI * cutOffFrequency / samplingFrequency);
+double c = Math.cos(2 * Math.PI * cutOffFrequency / samplingFrequency);
+

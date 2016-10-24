@@ -1,0 +1,10 @@
+super.proxyToServerConnectionSucceeded(serverCtx);
+}
+
+@Override
+public HttpResponse clientToProxyRequest(HttpObject httpObject) {
+
+if (httpObject instanceof FullHttpMessage) {
+
+HttpRequest httpRequest = (HttpRequest) httpObject;
+

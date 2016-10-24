@@ -1,0 +1,11 @@
+System.out.println(&quot;Testing Long vectors&quot;);
+int errn = test();
+if (errn > 0) {
+System.err.println(&quot;FAILED: &quot; + errn + &quot; errors&quot;);
+errn += verify(&quot;test_srav_and: &quot;, i, a0[i], (long)(((long)(ADD_INIT+i) &amp; BIT_MASK)>>VALUE));
+}
+
+}
+
+if (errn > 0)
+

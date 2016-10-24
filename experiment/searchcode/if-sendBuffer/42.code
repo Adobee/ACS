@@ -1,0 +1,10 @@
+sendbuffer.flip();
+client.write(sendbuffer);
+}
+client.register(selector, SelectionKey.OP_READ);
+}if(selectionKey.isReadable()){
+client.register(selector, SelectionKey.OP_WRITE);
+}
+}if(selectionKey.isWritable()){
+sendbuffer.clear();
+

@@ -1,0 +1,10 @@
+public class Event<T extends java.util.EventObject> {
+public Event(java.util.List<Listener<T>> listeners) {
+if(listeners == null) {
+this.listeners = listeners;
+}
+
+public void add(Listener<T> l) {
+if(l == null) {
+throw new NullPointerException(&quot;l&quot;);
+

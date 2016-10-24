@@ -1,0 +1,9 @@
+float reqScore = reqScorer.score();
+if (firstTimeOptScorer) {
+firstTimeOptScorer = false;
+if (! optScorer.skipTo(curDoc)) {
+optScorer = null;
+return reqScore;
+}
+} else if (optScorer == null) {
+

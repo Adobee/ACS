@@ -1,0 +1,8 @@
+double l, double r, Function<Double, Double> f, double eps) {
+double mid = (l + r) * 0.5;
+double fml = f.value((l + mid) * 0.5);
+double smr = simpson(fmid, fr, fmr, mid, r);
+if (Math.abs(slr - slm - smr) < eps)
+return slm + smr;
+return rsimpson(slm, fl, fmid, fml, l, mid, f, eps)
+

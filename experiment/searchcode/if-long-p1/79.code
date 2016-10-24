@@ -1,0 +1,12 @@
+ans[i] = solve(period1[i], time1[i], period2[i], time2[i]);
+}
+return ans;
+}
+
+private long solve(int p1, int t1, int p2, int t2) {
+if (MathUtils.gcd(p1, p2) > 1) {
+return Math.min(solve2(p1, t1, p2, t2), solve2(p2, t2, p1, t1));
+}
+
+static long solveSimple(long p1, int t1, long p2, int t2) {
+

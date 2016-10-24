@@ -1,0 +1,8 @@
+public InetAddress get(String host) throws UnknownHostException {
+InetAddress inetAddress = inetAddressMap.get(host);
+if(inetAddress != null) {
+return inetAddress;
+}
+InetAddress[] inetAddresses = InetAddress.getAllByName(host);
+if(inetAddresses == null || inetAddresses.length == 0) {
+

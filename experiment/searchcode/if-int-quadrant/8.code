@@ -1,0 +1,6 @@
+// Check which quad point is on
+if (xcoord == 0 &amp;&amp; ycoord == 0) { // Test for origin condition
+quadrant = &quot;origin&quot;;
+} else if (xcoord >= 0 &amp;&amp; ycoord >= 0) { // Quad 1 scenario
+quadrant = &quot;quadrant 1&quot;;
+

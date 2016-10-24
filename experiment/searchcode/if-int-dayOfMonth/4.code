@@ -1,0 +1,9 @@
+private int dayOfMonth;
+private int year;
+private int month;
+
+public Day(int dayOfWeek, int dayOfMonth, int year, int month) {
+this.dayOfWeek = dayOfWeek;
+this.dayOfMonth = dayOfMonth;
+this.year = year;
+

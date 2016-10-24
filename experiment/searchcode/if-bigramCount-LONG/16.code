@@ -1,0 +1,10 @@
+out.append(&quot;Most Common bigram = &quot; + treeMap.firstEntry().getKey() + &quot;\n&quot;);
+
+long count = 0, bigramCount = 0;
+for(Entry<String, Integer> e : treeMap.entrySet()){
+count += e.getValue();
+bigramCount++;
+if(count > threshold) break;
+}
+out.append(&quot;Number of bigrams required to add up to 10% of all bigrams = &quot; + bigramCount + &quot;\n&quot;);
+

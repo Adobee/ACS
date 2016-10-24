@@ -1,0 +1,10 @@
+double max = array[maxIndex(array)];
+
+double min = min(array);
+
+for (int i = 0; i < array.length; i++) {
+if (min == max)
+public static Map<String, Double> getSortedMap(Map<String, Double> map) {
+
+List<Entry<String, Double>> entry_list = new ArrayList<>();
+

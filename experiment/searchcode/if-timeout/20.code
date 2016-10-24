@@ -1,0 +1,11 @@
+package sourcecoded.comms2.timeout;
+
+public class TimeoutController {
+
+public static void execute(Thread thread, long timeout) throws TimeoutException {
+try {
+thread.join(timeout);
+} catch (InterruptedException e) {}
+
+if (thread.isAlive()) {
+

@@ -1,0 +1,9 @@
+new JvmGcMonitorService.GcThreshold(&quot;old&quot;, oldDebugThreshold * 3, oldDebugThreshold * 2, oldDebugThreshold));
+
+final boolean oldGcThreshold = randomBoolean();
+final JvmGcMonitorService.JvmMonitor.Threshold oldThresholdLevel = randomFrom(JvmGcMonitorService.JvmMonitor.Threshold.values());
+when(oldCollector.getCollectionCount()).thenReturn((long) (initialOldCollectionCount + oldCollections));
+final int oldIncrement;
+if (oldGcThreshold) {
+// we are faking that oldCollections collections occurred
+

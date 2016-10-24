@@ -1,0 +1,7 @@
+public ScatterPlot(String name, final ArrayList<ArrayList<Double>> sizes, final ArrayList<ArrayList<Double>> colors)
+{
+final int years = sizes.size();
+g.setColor(new Color(red, 0, blue, 0.05f));
+double x = ((double) i)/ years * (w - 2*offset) + offset;
+double invY = ((sizes.get(i).get(j) - minSize) / (maxSize-minSize)) * (h - 2*offset) + offset;
+

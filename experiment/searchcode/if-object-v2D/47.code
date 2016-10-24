@@ -1,0 +1,12 @@
+sess.put(key.trim(), val);
+}
+
+public void put(String key,Object val,String defval){
+if(val == null || val.toString().trim().equalsIgnoreCase(&quot;null&quot;))sess.put(key, defval);
+return 0;
+}
+
+private double v2d(Object v) {
+if (v instanceof String)
+return Double.parseDouble((String) v);
+

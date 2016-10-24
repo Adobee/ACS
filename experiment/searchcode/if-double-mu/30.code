@@ -1,0 +1,11 @@
++ &quot;misc.: sum of k i.i.d. Borel(m) r.v.s\n&quot;
++ &quot;----------&quot;;
+
+private int k;
+private double mu;
+
+private RandomVariable borel;
+
+public BorelTanner(int k, double mu) throws ParameterException {
+if (k < 1 || mu < 0 || mu > 1) {
+

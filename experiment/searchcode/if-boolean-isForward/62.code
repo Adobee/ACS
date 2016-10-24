@@ -1,0 +1,9 @@
+public class LoaderCommand extends Command {
+private boolean isForward;
+
+public LoaderCommand(boolean isForward) {
+// Called repeatedly when this Command is scheduled to run
+protected void execute() {
+if (isForward) {
+Robot.loader.load();
+

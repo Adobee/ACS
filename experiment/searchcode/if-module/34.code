@@ -1,0 +1,15 @@
+package io.zacholauson.todo;
+
+import io.zacholauson.todo.modules.TodoModule;
+
+public class TestApplication extends Application {
+@Override
+protected TodoModule getTodoModule() {
+if (todoModule == null) {
+return super.getTodoModule();
+}
+
+return todoModule;
+}
+}
+

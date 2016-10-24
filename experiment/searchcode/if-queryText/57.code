@@ -1,0 +1,6 @@
+String queryText = bundle.getString(com.atomjack.shared.Intent.ARGUMENTS);
+if(queryText == null &amp;&amp; intent.getStringExtra(GoogleSearchApi.KEY_QUERY_TEXT) != null)
+queryText = intent.getStringExtra(GoogleSearchApi.KEY_QUERY_TEXT);
+
+if(queryText != null &amp;&amp; queryText.matches(context.getResources().getString(R.string.pattern_recognition))) {
+

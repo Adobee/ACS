@@ -1,0 +1,8 @@
+// Parameters should not be encoded
+String parameters = null;
+if ( path.indexOf( &quot;?&quot; ) > -1 )
+path = path.substring( 0, path.indexOf( &quot;?&quot; ) );
+}
+
+StringBuffer encodedPath = doEncodePath( path, encoding );
+

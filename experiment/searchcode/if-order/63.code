@@ -1,0 +1,10 @@
+public Order getOrder(String orderID) {
+for (Order order : orders) {
+if (order.getOrderID().equals(orderID))
+return order;
+for (Order order : orders) {
+if (order.getOrderID().equals(orderID))
+return order.getStatus();
+}
+return null;
+

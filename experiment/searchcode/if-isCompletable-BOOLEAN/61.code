@@ -1,0 +1,9 @@
+* Returns true if this object is currently executing.
+*/
+public boolean isExecuting()
+public boolean isCompletable()
+{
+if (!getState().isTerminatable())
+return false;
+if (((AeBusinessProcess) getProcess()).isExiting())
+

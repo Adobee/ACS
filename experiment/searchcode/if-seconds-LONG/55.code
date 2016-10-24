@@ -1,0 +1,10 @@
+protected AutoShutdownPlugin plugin = null;
+protected Log log = null;
+protected long seconds = 0;
+
+WarnTask(AutoShutdownPlugin instance, long seconds) {
+plugin.getServer().getScheduler().scheduleSyncDelayedTask(plugin, new Runnable() {
+public void run() {
+if (TimeUnit.SECONDS.toMinutes(seconds) > 0) {
+if (TimeUnit.SECONDS.toMinutes(seconds) == 1) {
+

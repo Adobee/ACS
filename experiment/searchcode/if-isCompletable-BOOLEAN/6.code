@@ -1,0 +1,6 @@
+CompletionProposalImpl newProposal = null;
+if (str.startsWith(substring))
+newProposal = new CompletionProposalImpl(str, DEFAULT_PRIORITY);
+else if (str.indexOf(substring) != -1)
+newProposal = new CompletionProposalImpl(str, DEFAULT_PRIORITY + SUBSTR_DIFF);
+

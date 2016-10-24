@@ -1,0 +1,9 @@
+public boolean isFestivo(LocalDate data){
+boolean festivo = false;
+
+festivo = isSettimanaleFestivo(data);
+
+if (!festivo){
+for(LocalDate data = getDataOdierna(); data.isBefore(this.fineLezioni); data = data.plusDays(1) ){
+if(isFestivoSemplice(data)){
+

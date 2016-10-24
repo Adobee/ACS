@@ -1,0 +1,16 @@
+package com.osu.sensoranalytics;
+
+public class FFT {
+
+int n, m;
+
+double[] cos;
+double[] sin;
+int i, j, k, n1, n2, a;
+double c, s, t1, t2;
+
+
+j = 0;
+n2 = n / 2;
+for (i = 1; i < n - 1; i++) {
+

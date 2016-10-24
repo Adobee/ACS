@@ -1,0 +1,7 @@
+int r = (int) (Math.random() * 100000000);
+int[] sz = new int[r];
+for (int i = 0; i < sz.length-1; i++) {
+void qsort(int[] sz, int start, int end) {
+if (start<end) {
+int mid = parrtion(sz, start, end);
+

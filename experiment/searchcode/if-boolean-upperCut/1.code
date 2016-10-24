@@ -1,0 +1,12 @@
+LEFT, RIGHT, UPPERCUT
+}
+
+private World world;
+private Player player;
+
+static Map<Keys, Boolean> keys = new HashMap<PlayerController.Keys, Boolean>();
+/** Change Bob&#39;s state and parameters based on input controls **/
+private boolean processInput() {
+if (keys.get(Keys.UPPERCUT)) {
+player.setUppercuting(true);
+

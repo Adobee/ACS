@@ -1,0 +1,8 @@
+static Query createSearchFilter(String[] types, Query aliasFilter, boolean hasNestedFields) {
+Query typesFilter = null;
+if (types != null &amp;&amp; types.length >= 1) {
+typesFilter = new TermsQuery(TypeFieldMapper.NAME, typesBytes);
+}
+
+if (typesFilter == null &amp;&amp; aliasFilter == null &amp;&amp; hasNestedFields == false) {
+

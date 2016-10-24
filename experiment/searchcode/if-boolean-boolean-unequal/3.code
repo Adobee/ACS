@@ -1,0 +1,11 @@
+public static final int UNEQUAL_SIZE_FLAG = 0x1;
+
+public static int allChecks(Test test) {
+int flags = 0;
+if (!unequalSizeCheck(test)) {
+return flags;
+}
+
+public static boolean unequalSizeCheck(Test test) {
+int ins = test.getNet().getInputLayer().size();
+

@@ -1,0 +1,11 @@
+public class MoveColumnToLeftAction extends TabBaseAction {
+
+private int columnIndex;
+
+public void execute() throws Exception {
+getTab().movePropertyToLeft(columnIndex);
+}
+
+public int getColumnIndex() {
+return columnIndex;
+

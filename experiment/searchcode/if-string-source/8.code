@@ -1,0 +1,11 @@
+StringBuffer source = new StringBuffer(string);
+
+for(int i = 0; i < source.length(); i++)
+{
+if(source.charAt(i) == &#39;<&#39;)
+String subString = source.substring(i+1,i+8);
+if(subString.equals(&quot;img src=&quot;))
+{
+source.replace(i,j+1,&quot;[IMG]&quot;);
+source.replace(j,j+1,&quot;[/IMG]&quot;);
+

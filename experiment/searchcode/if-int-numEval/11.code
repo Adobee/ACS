@@ -1,0 +1,12 @@
+double izq = 0;
+double der = 0;
+int k = 0;
+Ficha f1;
+LinkedList<Ficha> aEvaluar1 = aEvaluar;
+if(primera)
+return gorritos;
+}
+
+private double elevar(LinkedList<Ficha> aEvaluar, int gorritos, int numEval,double x){
+if(numEval < gorritos){// cuenta el numero de pows que se tienen que hacer.
+

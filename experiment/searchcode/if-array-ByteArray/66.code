@@ -1,0 +1,11 @@
+return this.numberOfShifts;
+}
+}
+
+@Override
+public byte[] modify(byte[] byteArray) {
+if (this.numberOfShifts == byteArray.length || this.numberOfShifts == 0) {
+int shiftLength = fixShiftLength(byteArray.length);
+if (SHIFT_DIRECTION.LEFT == shiftDirection) {
+return shiftLeft(shiftLength, byteArray);
+

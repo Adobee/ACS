@@ -1,0 +1,11 @@
+public FisherSendor(double v1, double v2)
+{
+if(v1 <= 0)
+throw new ArithmeticException(&quot;v1 must be > 0 not &quot; + v1 );
+public void setUsingData(Vec data)
+{
+double mu = data.mean();
+
+//Only true if v2 >  2
+double tmp = 2*mu / (-1 + mu);
+

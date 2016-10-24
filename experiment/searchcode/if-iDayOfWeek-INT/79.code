@@ -1,0 +1,10 @@
+int totalMinutes = calcuateMins(CRSArrTime, CRSDepTime);
+int timeZone = (totalMinutes - CRSElapsedTime);
+
+if ((timeZone % 60) != 0) throw new SanityFailedException(&quot;&quot;);
+int dActualElapsedTime = Integer.parseInt(ActualElapsedTime);
+
+int totalArrDepMinutes = calcuateMins(ArrTime, DepTime);
+
+if ((totalArrDepMinutes - dActualElapsedTime) % 60 != 0) throw new SanityFailedException(&quot;&quot;);
+

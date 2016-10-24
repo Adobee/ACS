@@ -1,0 +1,10 @@
+if (root == null)
+return;
+TreeNode leftLast = root.left;
+if (leftLast != null)
+{
+while (leftLast.right != null || leftLast.left != null)
+{
+if (leftLast.right != null)
+leftLast = leftLast.right;
+

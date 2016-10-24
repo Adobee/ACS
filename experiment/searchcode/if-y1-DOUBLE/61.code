@@ -1,0 +1,11 @@
+c=y-m*x;
+return c;
+}
+public double Line(double x1,double y1,double x2,double y2){
+m=(y2-y1)/(x2-x1);
+c=y1-m*x1;
+return c;
+}
+public double Slope(double x1,double y1,double x2,double y2){
+m=(y2-y1)/(x2-x1);
+

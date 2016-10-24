@@ -1,0 +1,9 @@
+TreeCut parent;
+int iterationCount = 0;
+
+TreeCutIterator(TreeCutNode curr, TreeCut parent) {
+this.curr = curr;
+TreeCutNode res = curr; curr = curr.next();
+if (curr==parent.nodes) {
+iterationCount++;
+

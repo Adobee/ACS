@@ -1,0 +1,8 @@
+public  double convert(int oldSpn, int newSpn, double startValue){
+Log.d(TAG,&quot;TempConversion: convert(), from= &quot; + oldSpn + &quot;, to= &quot; + newSpn);//DBG
+
+double resultValue = 0d;
+
+if(oldSpn == 0){
+resultValue = fromCelsius(newSpn, startValue);
+

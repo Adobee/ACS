@@ -1,0 +1,15 @@
+package helloWorld;
+
+public class GetExponent {
+int getExponent(int n, int p){
+if(p <= 1){
+return -1;
+}
+int expo = 0;
+for(; n%p==0; n=n/p){
+expo++;
+}
+return expo;
+}
+public static void main(String[] args) {
+

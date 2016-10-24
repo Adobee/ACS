@@ -1,0 +1,11 @@
+class ReplayPrefixOneCharInputStream extends InputStream {
+byte firstByte;
+int byteLength;
+InputStream wrappedStream;
+int byteRead;
+
+final String encoding;
+public void setInputUTF8(int recorded, InputStream wrapped) throws IOException {
+// 110yyyyy 10zzzzzz
+if ((firstByte &amp; (byte) 0xE0) == (byte) 0xC0)
+

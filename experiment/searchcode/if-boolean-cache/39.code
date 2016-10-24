@@ -1,0 +1,10 @@
+public boolean contains(Object o) {
+if (cache.contains(o))
+return true;
+return new WrappedCollectionIterator();
+}
+
+public boolean remove(Object o) {
+if (contains(o))
+return cache.remove(o);
+

@@ -1,0 +1,9 @@
+private static final Log log = LogFactory.getLog(SearchBoxSphere.class);
+
+private double ra;
+private double dec;
+public int calSearchBox(double ra, double dec, double searchRadius) {
+
+int flag = 0;
+if (!(ra > 360.0 || ra < 0.0 || dec > 90.0 || dec < -90.0 || searchRadius > 20.0)) {
+

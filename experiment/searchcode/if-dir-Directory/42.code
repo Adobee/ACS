@@ -1,0 +1,19 @@
+public static List<String> getDirectoryNamesInsideDirectory(File dir)
+{
+if (!dir.exists())
+{
+return null;
+}
+
+List<String> directoryNames = new ArrayList<String>();
+for (File f : dir.listFiles())
+{
+if (f.isDirectory())
+{
+directoryNames.add(f.getName());
+}
+}
+return directoryNames;
+}
+}
+

@@ -1,0 +1,8 @@
+* @return the new date
+*/
+static LocalDate plusDays(LocalDate date, int daysToAdd) {
+if (daysToAdd == 0) {
+// (59th Jan is 28th Feb, 59th Feb is 31st Mar)
+long dom = date.getDayOfMonth() + daysToAdd;
+if (dom > 0 &amp;&amp; dom <= 59) {
+

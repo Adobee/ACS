@@ -1,0 +1,11 @@
+public void shouldFinishBeforeTimeout() {
+//given
+long timeoutMs = 500L;
+Repeatable func = new Repeatable() {
+
+public Boolean call() throws Exception {
+RepeatResult result = Repeat.repeat(timeoutMs,TimeUnit.MILLISECONDS).function(func);
+
+//then
+assertThat(result.isSuccess(), is(true));
+

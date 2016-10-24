@@ -1,0 +1,15 @@
+private boolean invitedBoolean(Integer[] vec, int step, int tables){
+if(step == vec.length){
+return evaluateComp(vec,tables);
+vec[step] = vec[i];
+vec[i] = swap;
+if(invitedBoolean(vec, step+1,tables)){
+return true;
+}
+vec[i] = vec[step];
+vec[step] = swap;
+}
+return false;
+}
+}
+

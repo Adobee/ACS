@@ -1,0 +1,8 @@
+editor = diskLruCache.edit( key );
+if ( editor == null ) {
+return;
+}
+
+if( writeBitmapToFile( data, editor ) ) {
+diskLruCache.flush();
+

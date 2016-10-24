@@ -1,0 +1,7 @@
+*     &amp;lt;ParameterField name=&quot;values&quot; dataType=&quot;collection of numbers&quot;/&amp;gt;
+*     &amp;lt;ParameterField name=&quot;biasCorrected&quot; dataType=&quot;boolean&quot;/&amp;gt; &amp;lt;!-- Optional; defaults to false --&amp;gt;
+Collection<?> values = FieldValueUtil.getValue(Collection.class, arguments.get(0));
+
+Boolean biasCorrected = Boolean.FALSE;
+if(arguments.size() > 1){
+

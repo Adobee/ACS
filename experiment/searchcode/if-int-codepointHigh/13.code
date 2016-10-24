@@ -1,0 +1,6 @@
+/*  34:    */
+/*  35:    */   public static UnicodeEscaper outsideOf(int codepointLow, int codepointHigh)
+/*  40:    */   public static UnicodeEscaper between(int codepointLow, int codepointHigh)
+/*  41:    */   {
+/*  42: 96 */     return new UnicodeEscaper(codepointLow, codepointHigh, true);
+

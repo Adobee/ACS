@@ -1,0 +1,9 @@
+// the HTTP spec permits caching 410s, but the RI doesn&#39;t.
+assertCached(true, 410);
+}
+
+private void assertCached(boolean shouldPut, int responseCode) throws Exception {
+cache.get(url.toURI(), &quot;GET&quot;, Collections.<String, List<String>>emptyMap());
+if (shouldPut) {
+assertNotNull(Integer.toString(responseCode), cached);
+

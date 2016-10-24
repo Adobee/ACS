@@ -1,0 +1,9 @@
+//compute link indexes of links that form the path
+int[] pathLinkIndexes = computeLinkIndexesInPath(pathNodeIndexes);
+
+if(!routeDataSavedForODPair){
+//if no routes for index increment the size
+if (odIndex >= routes.size())
+{
+routes.add(new ArrayList<PathRepresentation>());
+

@@ -1,0 +1,12 @@
+private static final String PRETTY_PRINT_TAG_END = &quot;>>&quot;;
+
+private final String tag;
+private final boolean prettyPrint;
+
+public SlimException(String message) {
+public SlimException(Throwable cause, boolean prettyPrint) {
+this(cause, &quot;&quot;, prettyPrint);
+}
+
+public SlimException(Throwable cause, String tag) {
+

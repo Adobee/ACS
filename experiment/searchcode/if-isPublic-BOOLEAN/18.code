@@ -1,0 +1,10 @@
+private boolean isPublic;
+
+public PlayerBoundWarp(long owner, boolean isPublic, Location loc) {
+return PermissionManager.getInstance().getUser(owner);
+}
+
+@Override
+public boolean canTeleport(IPermissionUser u) {
+if (u.getId() == owner &amp;&amp; u.hasPermission(WarpManager.homeTpOwn)) {
+

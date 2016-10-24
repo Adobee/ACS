@@ -1,0 +1,12 @@
+TrainingInstance[] batch = createBatch(selectSubset(subsampleSize), w);
+RealVector grad = batchGradient(logisticLoss(batch, w), batch);
+
+w.subtract(grad);
+
+if(grad.getNorm() < epsilon) {
+private int classify(TrainingInstance ti, RealVector w) {
+RealVector features = ti.getFeatures();
+double result = features.dotProduct(w);
+
+if (result >= 0) {
+

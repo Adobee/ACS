@@ -1,0 +1,15 @@
+protected int size;
+
+// Inner Class for Nodes
+public class Nod {
+public double element;
+public Nod next;
+public Nod prev;
+insertElementBefore(head, new Nod(d));
+}
+}
+
+@Override
+public double getElement(int num) {
+if (num >= size || num < 0) {
+

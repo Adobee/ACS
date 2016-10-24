@@ -1,0 +1,12 @@
+public static String methodAlwaysThrows() throws Exception {
+throw new Exception(&quot;failure&quot;);
+}
+
+static String capitalize(String s) throws Exception {
+return Try.with((SupplierThrowsException<String, Exception>) () -> prefix + capitalize(s));
+}
+
+public static boolean gte5(String s) throws Exception {
+if (null == s)
+throw new Exception(&quot;null&quot;);
+

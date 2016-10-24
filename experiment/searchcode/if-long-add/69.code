@@ -1,0 +1,15 @@
+public PositiveLong(long l) {
+assert(l >= 0);
+if (l >= 0)
+{
+this.value = l;
+assert(value < Long.MAX_VALUE);
+value++;
+}
+
+public void add(long x)
+{
+assert (x >= 0);
+
+long tmp = x + value;
+

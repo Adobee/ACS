@@ -1,0 +1,10 @@
+return hasContentType(resource, RESOURCE_FILE_CONTENT_ID);
+}
+
+public static boolean isInitializationFile(final IFile resource) {
+return hasContentType(resource, INIT_FILE_CONTENT_ID);
+}
+
+private static boolean hasContentType(final IFile resource, final String id) {
+try {
+

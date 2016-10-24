@@ -1,0 +1,8 @@
+public static void calculate(int upperBound) {
+boolean[] elems = new boolean[upperBound];
+
+for (int i=0; i<upperBound; i++)
+elems[i] = true;
+
+for (int i=2; i<upperBound; ) {
+

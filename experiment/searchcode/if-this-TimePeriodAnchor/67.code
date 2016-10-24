@@ -1,0 +1,7 @@
+TimePeriodAnchor position = (TimePeriodAnchor) obj;
+if (!this.name.equals(position.name)) {
+return false;
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(TimePeriodAnchor.START)) {
+return TimePeriodAnchor.START;
+

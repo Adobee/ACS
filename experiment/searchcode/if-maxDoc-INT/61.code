@@ -1,0 +1,10 @@
+public abstract class GetDocSet extends DocSet {
+
+private final int maxDoc;
+
+protected GetDocSet(int maxDoc) {
+@Override public int nextDoc() throws IOException {
+do {
+doc++;
+if (doc >= maxDoc) {
+

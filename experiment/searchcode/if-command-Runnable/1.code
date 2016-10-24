@@ -1,0 +1,10 @@
+public class SampleCommandProvider1 implements CommandProvider {
+
+private Runnable runnable;
+
+public synchronized void setRunnable(Runnable r) {
+runnable = null;
+}
+public synchronized void _run(CommandInterpreter ci) {
+if(runnable != null) {
+

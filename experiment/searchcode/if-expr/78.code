@@ -1,0 +1,15 @@
+import compiler.data.ast.code.Visitor;
+
+/**
+* @author sliva
+*/
+public class IfExpr extends Expr {
+
+public final Expr cond;
+
+public final Expr thenExpr;
+
+public final Expr elseExpr;
+
+public IfExpr(Position position, Expr cond, Expr thenExpr, Expr elseExpr) {
+

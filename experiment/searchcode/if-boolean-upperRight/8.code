@@ -1,0 +1,11 @@
+public static boolean checkPointInZone(double x, double y, Zone zone) {
+
+if((x>=zone.lowerLeft.x &amp;&amp; x<=zone.lowerRight.x) &amp;&amp; (y>=zone.lowerLeft.y &amp;&amp; y<=zone.upperLeft.y))
+return false;
+
+}
+
+
+public static boolean checkPointInZone(Point p,Zone currentZone) {
+if ((currentZone.lowerLeft.x <= p.x) &amp;&amp; (p.x <= currentZone.lowerRight.x)
+

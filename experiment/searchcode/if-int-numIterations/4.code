@@ -1,0 +1,12 @@
+double runningTotal = initialAmount;
+int numIterations = 0;
+
+while (targetAmount > runningTotal) {
+runningTotal = runningTotal + runningTotal*interestRate + recurringContributions;
+numIterations++;
+
+if (numIterations > 100) break;
+}
+
+return numIterations;
+

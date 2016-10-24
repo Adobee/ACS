@@ -1,0 +1,11 @@
+package controllers;
+
+public class ChunkedCSVUploader extends ChunkedUploader {
+@Override
+public boolean shouldNotify(String uri) {
+if (uri != null &amp;&amp; uri.contains(&quot;api/postcsv&quot;))
+return true;
+return false;
+}
+}
+

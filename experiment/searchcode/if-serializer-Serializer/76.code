@@ -1,0 +1,7 @@
+serializer = (InstanceSerializer) this.serializerMap.get(scheme + &quot;:&quot; + method + &quot;:&quot; + mediatype);
+if (serializer == null) {
+serializer = (InstanceSerializer) this.serializerMap.get(scheme + &quot;:&quot; + method + &quot;:*&quot;);
+}
+if (serializer == null) {
+serializer = (InstanceSerializer) this.serializerMap.get(scheme + &quot;:*:&quot; + mediatype);
+

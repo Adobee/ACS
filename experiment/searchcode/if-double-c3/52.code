@@ -1,0 +1,9 @@
+public Triangle(Point2D c1, Point2D c2, Point2D c3) {
+double x = (c1.getX() + c2.getX() + c3.getX())/3;
+double y = (c1.getY() + c2.getY() + c3.getY())/3;
+this.c2 = c2;
+this.c3 = c3;
+}
+
+private static double sign(Point2D p1, Point2D p2, Point2D p3) {
+

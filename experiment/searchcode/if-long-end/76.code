@@ -1,0 +1,11 @@
+public class Solution {
+public int mySqrt(int x) {
+long start = 0;
+long end = 1;
+while(end * end < x) {
+start = start<<1;
+end = end<<1;
+}
+while(start <= end) {
+long center = (start + end) / 2;
+

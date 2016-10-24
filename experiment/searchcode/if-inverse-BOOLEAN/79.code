@@ -1,0 +1,12 @@
+System.out.println(&quot;Case #&quot; + i + &quot;: &quot; + problemB.calc(0, in));
+}
+
+}
+
+private long calc(long count, boolean[] in) {
+if (check(in))
+return count;
+
+int inverseIndex = findInverse(in);
+boolean[] newIn = inverse(inverseIndex, in);
+

@@ -1,0 +1,12 @@
+Circle c = new Circle(x, y, 50);
+c.draw(marker);
+if (p instanceof CollegeStudent) {
+y += 5;
+Circle g1 = new Circle (x-15, y, 5);
+marker.up();
+marker.move(x-10,y);
+marker.down();
+marker.move(x+10, y);
+g2.draw(marker);
+} else if (p instanceof Student) {
+

@@ -1,0 +1,8 @@
+long standardOffset = dateTime.getTimeZone().getRawOffset();
+String zone = &quot;&quot;;
+if (standardOffset == -36000000) {
+zone = &quot;HA&quot;;
+} else if (standardOffset == -28800000) {
+zone = &quot;AK&quot;;
+} else if (standardOffset == -25200000) {
+

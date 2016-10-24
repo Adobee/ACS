@@ -1,0 +1,13 @@
+public void clear() {
+super.clear();
+ties.clear();
+}
+
+@Override
+public void offerAt(int pos, E e) {
+if(pos == IN_TIES) {
+// Updated object will be worse than the current ties
+if(pos >= 0 &amp;&amp; ties.size() > 0 &amp;&amp; compare(e, ties.get(0)) < 0) {
+removeAt(pos);
+index.remove(e);
+

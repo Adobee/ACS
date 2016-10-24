@@ -1,0 +1,13 @@
+* @return
+*/
+public static Pattern getMobilePattern()
+{
+if (mobilePattern == null)
+{
+String regex = &quot;^[+]{0,1}(\\d){1,3}[ ]?([-]?((\\d)|[ ]){1,12})+$&quot;;
+public static Pattern getUrlPattern()
+{
+if (urlPattern == null)
+{
+String regex = &quot;^[a-zA-z]+://(\\w+(-\\w+)*)(\\.(\\w+(-\\w+)*))*(\\?\\S*)?$&quot;;
+

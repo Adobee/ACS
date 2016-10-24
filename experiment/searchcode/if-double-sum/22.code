@@ -1,0 +1,9 @@
+
+package conditionals;
+
+//Given two int values, return their sum. However, if the two values are the same,
+//then return double their sum.
+//
+//SumDouble(1, 2) -> 3
+//SumDouble(3, 2) -> 5
+

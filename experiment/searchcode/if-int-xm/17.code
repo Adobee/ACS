@@ -1,0 +1,14 @@
+public static String XM_TEXT = &quot;xm_text&quot;;
+
+public static String ANSWER = &quot;answer&quot;;
+
+protected int xmId;
+
+protected int questionId;
+
+protected String xmText;
+
+protected String answer = &quot;0 &quot;;
+
+/*** property end ***/
+

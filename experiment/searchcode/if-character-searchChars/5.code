@@ -1,0 +1,9 @@
+public static boolean containsAny(CharSequence cs, CharSequence searchChars) {
+if (searchChars == null) {
+return false;
+}
+return containsAny(cs, toCharArray(searchChars));
+public static boolean containsAny(CharSequence cs, char[] searchChars) {
+if (isEmpty(cs) || isEmpty(searchChars)) {
+return false;
+

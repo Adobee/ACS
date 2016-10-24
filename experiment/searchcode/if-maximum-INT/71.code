@@ -1,0 +1,12 @@
+public MaximumKivalasztas(int[] arr) {
+super(arr);
+}
+
+public int maximumKivalasztas() {
+if (arr.length == 1) return 0;
+return maximumKivalasztas(1,0);
+}
+
+private int maximumKivalasztas(int n, int max) {
+if (n == arr.length) return max;
+

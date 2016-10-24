@@ -1,0 +1,7 @@
+private double threshold;
+private double thresholdStabilizedCumulated;
+
+private double thresholdUltimate;
+private double thresholdUltimateIndexed;
+private double thresholdReported;
+

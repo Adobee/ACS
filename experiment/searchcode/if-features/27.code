@@ -1,0 +1,6 @@
+Features features = TitanFeatures.getBaselineTitanFeatures();
+features.supportsSerializableObjectProperty = config.hasSerializeAll();
+if (storageFeatures != null) {
+if (storageFeatures.supportsScan()) {
+features.supportsVertexIteration = true;
+

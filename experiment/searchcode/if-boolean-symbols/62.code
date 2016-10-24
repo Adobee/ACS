@@ -1,0 +1,9 @@
+public final class PunctuationRemover extends TokenFilter {
+
+public static boolean DEFAULT_STRIP_LEADING_SYMBOLS=false;
+public static boolean DEFAULT_STRIP_TRAILING_SYMBOLS=false;
+boolean stripLeadingSymbols,
+boolean stripTrailingSymbols){
+if (stripAnySymbols) {
+tok = tok.replaceAll(&quot;\\p{Punct}&quot;, &quot; &quot;).replaceAll(&quot;\\s+&quot;, &quot; &quot;).trim();
+

@@ -1,0 +1,9 @@
+public static GraphViz generateGraph(ArrayList<Rule> rulesList, boolean acceptUnivseral){
+
+GraphViz graph = new GraphViz();
+int edges = 0;
+for (Rule rule2 : rulesList) {
+if(rule1.matchWIth(rule2, acceptUnivseral)){
+edges++;
+graph.addln(&quot;\&quot;&quot;+RulesList.rulesNames.get(rule1.getCode())+&quot;\&quot; -> \&quot;&quot;+RulesList.rulesNames.get(rule2.getCode())+&quot;\&quot;&quot;);
+

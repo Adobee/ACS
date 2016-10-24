@@ -1,0 +1,10 @@
+public static void unregister(Context context) {
+if( sReceiverMap == null ) {
+return;
+}
+NewVersionBroadcastReceiver receiver = sReceiverMap.remove(context);
+if( receiver != null ) {
+context.unregisterReceiver(receiver);
+}
+if( sReceiverMap.isEmpty() ) {
+

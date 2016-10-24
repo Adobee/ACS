@@ -1,0 +1,10 @@
+private WebDriver driver;
+private boolean wasResetted = true;
+
+public DriverHandler() {
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+}
+
+if (wasResetted) {
+log.info(&quot;Resetting webdriver - navigating to default URL and maximizing&quot;);
+

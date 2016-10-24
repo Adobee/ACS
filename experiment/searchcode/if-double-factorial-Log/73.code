@@ -1,0 +1,14 @@
+private static final LogFuncs _theInstance=new LogFuncs();
+
+private final static int maxFactorial=10000;
+
+private LogFuncs() {
+factorials=new double[maxFactorial];
+factorials[i]=factorials[i-1]+Math.log(i);
+}
+
+private double[] factorials;
+
+public static double LogFactorial(int n) {
+if(n>=0 &amp;&amp; n<maxFactorial)
+

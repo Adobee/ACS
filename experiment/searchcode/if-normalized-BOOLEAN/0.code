@@ -1,0 +1,12 @@
+private final Interval normalized;
+
+IntervalNonNormalizedImpl(int start, int end) {
+super(start, end);
+if (TimeUtil.isNormalizedTime(start)) {
+normalized = IntervalFactory.createInterval(normalizedStart, computedEnd);
+}
+
+IntervalNonNormalizedImpl(int start, int end, Interval normalized) {
+super(start, end);
+if (TimeUtil.isNormalizedTime(start)) {
+

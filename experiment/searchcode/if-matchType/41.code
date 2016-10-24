@@ -1,0 +1,10 @@
+Query query = mgr.createQuery(&quot;select from MatchType as MatchType&quot;);
+if (cursorString != null &amp;&amp; cursorString != &quot;&quot;) {
+cursor = Cursor.fromWebSafeString(cursorString);
+query.setMaxResults(limit);
+}
+
+execute = (List<MatchType>) query.getResultList();
+cursor = JPACursorHelper.getCursor(execute);
+if (cursor != null)
+

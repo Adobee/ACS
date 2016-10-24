@@ -1,0 +1,8 @@
+package com.iodesystems.ferret.route;
+
+public class PathSegment {
+private final String segment;
+public static PathSegment convert(String segment) {
+if (segment.startsWith(&quot;:&quot;)) {
+return new PathVariableSegment(segment);
+

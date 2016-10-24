@@ -1,0 +1,10 @@
+private Annotatable annotatable;
+private final boolean detailed;
+
+public AnnotateWrong( Annotatable annotatable, boolean withDetails )
+WrongAnnotation wrong = new WrongAnnotation();
+if (detailed) wrong.giveDetails( result.getExpected(), result.getActual() );
+annotatable.annotate( wrong );
+}
+}
+

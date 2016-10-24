@@ -1,0 +1,8 @@
+static void permute(char[] a, int startIndex, int endIndex) {
+if (startIndex == endIndex) {
+System.out.println(a);
+} else {
+for (int i = startIndex; i <= endIndex; i++) {
+swap(a,i, startIndex);
+permute(a, startIndex + 1, endIndex);
+

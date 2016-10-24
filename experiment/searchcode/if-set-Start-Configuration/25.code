@@ -1,0 +1,11 @@
+private Status status;
+private ServerConfiguration serverConfiguration;
+
+public void start() {
+new Thread(ioHandler).start();
+
+}
+
+public void stop() {
+if(this.status == Status.RUNNING) {
+

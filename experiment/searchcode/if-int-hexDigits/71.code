@@ -1,0 +1,10 @@
+public static Character convertToUnicode(Character[] hexDigits) {
+byte[] converted = convert(hexDigits);
+int val = 0;
+for(int i = 0;i < converted.length;i++) {
+byte[] hex = new byte[hexDigits.length];
+for(int i = 0;i < hex.length;i++) {
+hex[i] = convert(hexDigits[i]);
+}
+return hex;
+

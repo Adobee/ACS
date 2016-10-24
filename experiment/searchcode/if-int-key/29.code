@@ -1,0 +1,17 @@
+KeyInteger compareToKey = (KeyInteger) arg0;
+int returnValue = 0;
+if(key > compareToKey.getKey()) {
+returnValue = 1;
+} else if(key < compareToKey.getKey()) {
+returnValue = -1;
+}
+
+return returnValue;
+}
+
+public int getKey(){
+return key;
+}
+
+}
+

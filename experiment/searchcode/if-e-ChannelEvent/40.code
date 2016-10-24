@@ -1,0 +1,7 @@
+Gson gson = new Gson();
+Entry channelEvent = gson.fromJson(eventJson, Entry.class);
+String preProcessedContent = preProcessContent(channelEvent.getContent());
+// TODO - Think of cases where it should ack/fail
+//    if (channelEvent != null) {
+collector.ack(tuple);
+

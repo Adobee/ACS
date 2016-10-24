@@ -1,0 +1,11 @@
+* @throws org.apache.commons.math.exception.DimensionMismatchException
+* if the dimensions do not match.
+*/
+public OpenMapRealVector add(OpenMapRealVector v) {
+return res;
+}
+
+/** {@inheritDoc} */
+public OpenMapRealVector append(RealVector v) {
+if (v instanceof OpenMapRealVector) {
+

@@ -1,0 +1,6 @@
+//divide the quad into subquads, but meet at H
+double s = 1.0 - generator.nextDouble() * 0.8 - 0.4;
+double t = 1.0 - generator.nextDouble() * 0.8 - 0.4;
+
+subdivide(points, A, Point.interpolate(G, B, s), H, Point.interpolate(E, D, t), minLength, generator);
+

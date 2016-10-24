@@ -1,0 +1,15 @@
+/**
+*
+*/
+package sim.collections;
+
+public class RangeValue extends Range {
+
+public int value;
+public RangeValue overlap(Range r) {
+Range r2 = super.overlap(r);
+if (r2 == null)
+return null;
+
+return new RangeValue(r2, value);
+

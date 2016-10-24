@@ -1,0 +1,8 @@
+public static boolean forall(int lb, int ub,Lambda<Integer,Boolean> lambda) {
+for (int i=0;i <= ub-lb;i++)
+if (!lambda.curry(i))
+public static boolean exists(int lb, int ub,Lambda<Integer,Boolean> lambda) {
+for (int i=0;i <= ub-lb;i++)
+if (lambda.curry(i))
+return true;
+

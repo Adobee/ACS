@@ -1,0 +1,10 @@
+continue;
+}
+if (dataset.sampleTime > endTime) {
+break;
+}
+int i1 = java.lang.Math.round((float) (dataset.sampleTime - startTime) * timeScale);
+drawer.drawLine(translateX(i), translateY(j), translateX(i1), translateY(j1));
+}
+if (dataset.isDisabledSample()) {
+

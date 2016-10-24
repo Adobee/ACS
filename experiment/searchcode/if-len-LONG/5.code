@@ -1,0 +1,7 @@
+public void writeArray(long[] a, int off, int len) {
+if (long_store == null) {
+long_store = new long[len];
+} else {
+if (longLen + len < long_store.length) { // it fits
+System.arraycopy(a, off, long_store, longLen, len);
+

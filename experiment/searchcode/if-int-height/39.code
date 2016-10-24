@@ -1,0 +1,8 @@
+public int maxArea(int[] height) {
+
+if(height==null)return 0;
+if(height.length<=1)return 0;
+if(height.length==2)return Math.min(height[0],height[1]);
+
+int max = Integer.MIN_VALUE;
+

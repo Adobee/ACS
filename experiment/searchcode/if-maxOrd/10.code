@@ -1,0 +1,10 @@
+collector = createCollector(reader);
+}
+
+private Collector createCollector(AtomicReaderContext reader) {
+
+// if rehash is false then the value source is either already hashed, or the user explicitly
+BytesValues.WithOrdinals values = (BytesValues.WithOrdinals) bytesValues;
+final long maxOrd = values.getMaxOrd();
+if (maxOrd == 0) {
+

@@ -1,0 +1,10 @@
+float x = getLocationX();
+long bits = Float.floatToIntBits(x);
+bits--;
+x = Float.intBitsToFloat((int) bits);
+float y = getLocationY();
+public void moveRight() {
+float x = getLocationX();
+long bits = Float.floatToIntBits(x);
+bits++;
+

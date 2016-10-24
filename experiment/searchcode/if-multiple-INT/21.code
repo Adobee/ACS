@@ -1,0 +1,10 @@
+package th.facebook;
+
+public class Multiple {
+
+public static int multiple(int m, int n) {
+if(m == 0 || n == 0) return 0;
+if(n == 1) return m;
+int k = multiple(m, n/2);
+return (n&amp;1)==1? k+k+m:k+k;
+

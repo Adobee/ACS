@@ -1,0 +1,7 @@
+public static boolean fuzzyEquals (double x, double y)
+{
+if (Double.isNaN(x) || Double.isNaN(y)) return false;
+public static boolean fuzzyLessThanOrEqualTo (double x, double y)
+{
+if (fuzzyEquals(x, y)) return true;
+

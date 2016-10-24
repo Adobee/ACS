@@ -1,0 +1,9 @@
+class LowPassFilter {
+
+double y, a, s;
+boolean initialized;
+
+void setAlpha(double alpha) throws Exception {
+if (alpha <= 0.0 || alpha > 1.0) {
+throw new Exception(&quot;alpha should be in (0.0, 1.0] and is now &quot;+ alpha);
+

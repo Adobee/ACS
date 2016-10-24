@@ -1,0 +1,9 @@
+public abstract class ConvergingASTVisitor implements ASTVisitor {
+public abstract boolean convergedVisit( ASTNode node );
+public boolean visit( IfStatement node ) {
+return convergedVisit( node );
+
+}
+
+public boolean visit( SwitchStatement node ) {
+

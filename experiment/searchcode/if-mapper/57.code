@@ -1,0 +1,12 @@
+package com.codeheadsystems.pstore.utils;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+public <T> Jsonifier<T> build(Class<T> clazz) {
+if (objectMapper == null) {
+objectMapper = new ObjectMapper();
+}
+return new Jsonifier<T>(objectMapper, clazz);
+}
+
+}
+

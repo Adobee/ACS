@@ -1,0 +1,13 @@
+public static int strStr(String haystack, String needle) {
+
+if (needle.length() == 0) {
+return 0;
+}
+
+int firstOccurence = -1;
+int[] prefix = computePrefix(needle);
+int prefixLength = prefix[0];
+int expectedLength = needle.length();
+
+for (int i = 0; i < haystack.length(); i++) {
+

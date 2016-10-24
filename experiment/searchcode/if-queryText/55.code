@@ -1,0 +1,8 @@
+returnResults = selectStatement.executeQuery(queryText);
+} catch (SQLException ex)
+{
+if(selectStatement != null &amp;&amp; !selectStatement.isClosed())
+statement = connection.createStatement();
+int updatedResults = statement.executeUpdate(queryText);
+if(updatedResults < 0)
+

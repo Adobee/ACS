@@ -1,0 +1,12 @@
+private static final String EMPTY_LIST[] = {};
+
+private String nocache[] = null;
+
+private boolean nostore = false;
+
+private int maxage = -1;
+HttpBuffer buf = new HttpBuffer();
+boolean cnt = false;
+if (checkDirective(NOCACHE)) {
+if (nocache != null) buf.appendQuoted(&quot;no-cache&quot;, (byte) &#39;=&#39;, nocache); else buf.append(&quot;no-cache&quot;);
+

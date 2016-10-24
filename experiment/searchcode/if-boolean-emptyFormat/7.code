@@ -1,0 +1,14 @@
+this.protocol = protocol;
+}
+
+@Override
+public boolean validate(IMessageCollector mb) {
+boolean _valid = true;
+
+if (url.isEmpty()) {
+_valid = false;
+}
+
+if (protocol.getFormat().isEmpty()) {
+mb.addErrorMessage(&quot;catalog.harvest.manage.edit.err.emptyFormat&quot;);
+

@@ -1,0 +1,10 @@
+int delimiterStartIndex;
+int delimiterEndIndex;
+
+StringBuilder result = null;
+
+while (currentIndex <= src.length()) {
+delimiterStartIndex = src.indexOf(&#39;&amp;&#39;, currentIndex);
+if (delimiterStartIndex != -1) {
+delimiterEndIndex = src.indexOf(&#39;;&#39;, delimiterStartIndex + 1);
+

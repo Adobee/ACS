@@ -1,0 +1,10 @@
+* Collection of web snippets
+*
+* @author Angel Chang
+*/
+public class WebSnippetsMap {
+CollectionValuedMap<String, RelationMentionSnippets> slotSnippetsMap;
+Collection<RelationMentionSnippets> relationSnippets = slotSnippetsMap.get(snippets.mention.slotName);
+if (relationSnippets == null) {
+relationSnippets = new ArrayList<RelationMentionSnippets>();
+

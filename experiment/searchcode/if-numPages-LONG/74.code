@@ -1,0 +1,10 @@
+private Object[][] pages;
+
+/** Constructor. */
+public BigObjectArray(long size, BigArrays bigArrays) {
+super(OBJECT_PAGE_SIZE, bigArrays, true);
+public void resize(long newSize) {
+final int numPages = numPages(newSize);
+if (numPages > pages.length) {
+pages = Arrays.copyOf(pages, ArrayUtil.oversize(numPages, RamUsageEstimator.NUM_BYTES_OBJECT_REF));
+

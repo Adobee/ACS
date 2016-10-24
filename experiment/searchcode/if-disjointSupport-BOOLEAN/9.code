@@ -1,0 +1,11 @@
+public class GeoFilterTests extends ElasticsearchIntegrationTest {
+
+private static boolean intersectSupport;
+private static boolean disjointSupport;
+private static boolean withinSupport;
+assertHitCount(result, 1);
+assertFirstHit(result, hasId(&quot;1&quot;));
+
+if (disjointSupport) {
+// Point not in polygon
+

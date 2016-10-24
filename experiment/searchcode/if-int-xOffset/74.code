@@ -1,0 +1,9 @@
+public static void draw(String message, Screen screen, int x, int y) {
+int xOffset = 0;
+for (int i = 0; i < message.length(); i++) {
+char character = message.charAt(i);
+if (character == &#39; &#39;) {
+xOffset += 10;
+continue;
+} else if (character == &#39;\n&#39;) {
+

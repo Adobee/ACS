@@ -1,0 +1,11 @@
+private static final long serialVersionUID = 3142195041777451840L;
+private double threshold = 0;
+
+/**
+* Constructs a default AverageGlobalAggregator
+* Calculates an average global value.
+*
+* @return the average if larger than the threshold, else returns 0
+*/
+public double calcArgValue(double[] params)
+

@@ -1,0 +1,8 @@
+ArrayList<Point> currentCenters = null;
+boolean stop = false;
+while(!stop){
+centersToClusters(clusters, data);
+currentCenters = getClusterCenters(clusters);
+if (lastCenters.equals(currentCenters))
+stop = true;
+

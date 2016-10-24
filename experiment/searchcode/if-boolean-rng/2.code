@@ -1,0 +1,15 @@
+public class PseudoRNG extends Rng
+{
+SecureRandom rng;
+private UserInterface ui;
+private boolean firstbyte = true;
+
+/**
+* Creates new Pseudo RNG
+public byte next() throws RngResponse
+{
+if (this.rng == null)
+throw new RngResponse(0);
+
+byte[] b = new byte[1];
+

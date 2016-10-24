@@ -1,0 +1,10 @@
+public class TicketNormalEntry implements Printable {
+
+public int print(Graphics g, PageFormat pf, int page) throws PrinterException {
+
+if (page > 0) { /* We have only one page, and &#39;page&#39; is zero-based */
+Paper p = new Paper();
+p.setImageableArea(0,0,0,0);
+pf1.setPaper(p);
+PageFormat pf2 = job.validatePage(pf1);
+

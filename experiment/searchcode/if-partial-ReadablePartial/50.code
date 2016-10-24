@@ -1,0 +1,9 @@
+import externalAS.org.joda.time.DateTimeZone;
+import externalAS.org.joda.time.ReadablePartial;
+
+/**
+* ReadablePartialConverter extracts partial fields and chronology from a ReadablePartial.
+public Chronology getChronology(Object object, Chronology chrono) {
+if (chrono == null) {
+chrono = ((ReadablePartial) object).getChronology();
+

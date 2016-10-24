@@ -1,0 +1,12 @@
+private double scale = 1; // scale is set by the program
+private double zoom = 1; // zoom is controlled by the user
+private boolean fade, clear, antialias;
+public void enableAA() {
+antialias = true;
+}
+
+public void clear() {
+Vector2d v2d = v();
+if (center != null)
+v2d = scale(center.getPosition(), -scale*zoom);
+

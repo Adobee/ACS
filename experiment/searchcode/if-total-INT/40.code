@@ -1,0 +1,15 @@
+package solutions;
+
+public class QueensII {
+
+int total, limit;
+
+public int totalNQueens(int n) {
+private void dfs(int h, int r, int l) {
+if (h == limit) {
+total++;
+return;
+}
+
+int pos = limit &amp; (~(h | r | l));
+

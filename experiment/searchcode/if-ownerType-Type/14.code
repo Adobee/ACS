@@ -1,0 +1,9 @@
+public int hashCode()
+{
+int result = rawType.hashCode() ^ Arrays.hashCode(actualTypeArguments);
+if (ownerType != null)
+String prefix = (ownerType instanceof ParameterizedType) ? ((Class<?>) ((ParameterizedType) ownerType)
+.getRawType()).getName() + &#39;$&#39;
+: ((Class<?>) ownerType).getName() + &#39;$&#39;;
+if (clazz.startsWith(prefix))
+

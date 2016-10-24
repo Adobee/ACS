@@ -1,0 +1,15 @@
+public Vec2 getForX(double x)
+{
+if (off.x() == 0)
+{
+if (start.x() != x) return null;
+else return start.copy();
+return new Vec2(x, start.y() + off.y() * factor);
+}
+
+public Vec2 getForY(double y)
+{
+if (off.y() == 0)
+{
+if (start.y() != y) return null;
+

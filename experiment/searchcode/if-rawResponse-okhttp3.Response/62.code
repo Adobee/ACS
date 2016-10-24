@@ -1,0 +1,8 @@
+public ServerRequestImpl(HttpRequest request, HttpPostRequestDecoder decoder, CompositeByteBuf bodyBuf, RouteResult<Route> routeResult, DefaultHttpResponse rawResponse) {
+
+this.request = request;
+this.decoder = decoder;
+boolean keepAlive = HttpUtil.isKeepAlive(request);
+HttpHeaders headersWriting = response.rawResponse.headers();
+if (keepAlive) {
+

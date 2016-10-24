@@ -1,0 +1,7 @@
+private final Optional<Integer> leaderTerm;
+private final Member localMember;
+private final State localState;
+private final Set<Member> remoteMembers = new HashSet<>();
+private GroupMembership(LocalMember localMember, State localState, Set<Member> remoteMembers,
+Optional<Member> leader, Optional<Integer> leaderTerm) {
+

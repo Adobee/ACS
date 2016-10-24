@@ -1,0 +1,17 @@
+//upTrendPoints =TrendPointHelper.getUpTrendReversalPoints(chartData);
+
+}
+
+
+
+public UpTrendChannelDataModel determineTrends() throws Exception
+{
+double nextPoint[][][] = new double[1][1][2];
+for(int p=GCConstants.UpTrendLNo;p<lowTrendPoints.size()-1;p++)
+{
+if(p>GCConstants.UpTrendHNo)
+break;
+
+
+nextPoint = StartEndTrendPointHelper.getNextTrendPoint(p,lowTrendPoints.get(p).get(&quot;Y&quot;).doubleValue(),lowTrendPoints);
+

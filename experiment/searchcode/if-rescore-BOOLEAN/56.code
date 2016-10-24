@@ -1,0 +1,11 @@
+public static final RescoreBuilder PROTOYPE = new RescoreBuilder(new QueryRescorer(new MatchAllQueryBuilder()));
+
+public RescoreBuilder(Rescorer rescorer) {
+if (rescorer == null) {
+return Objects.hash(windowSize, rescorer);
+}
+
+@Override
+public final boolean equals(Object obj) {
+if (this == obj) {
+

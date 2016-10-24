@@ -1,0 +1,8 @@
+public T findOrCreate(T sourceObject) {
+T targetObject = null;
+if (sourceObject.getOid() == null) {
+// not previously persisted
+
+targetObject = findObject(sourceObject);
+if (targetObject == null) {
+

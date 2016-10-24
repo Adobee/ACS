@@ -1,0 +1,5 @@
+public static int pad(byte[] buffer, int dataOffset, int dataLen, int blockLength) {
+byte paddValue = (byte) (blockLength - (byte) (dataLen % blockLength));
+public static int unpad(byte[] buffer, int dataOffset, int dataLen, int blockLength) throws BadPaddingException {
+if ((short) (dataLen % blockLength) != 0) {
+

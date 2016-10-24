@@ -1,0 +1,10 @@
+assertEquals(shardPath.getShardStatePath(), path);
+}
+
+public void testGetRootPaths() throws IOException {
+boolean useCustomDataPath = randomBoolean();
+.put(IndexMetaData.SETTING_VERSION_CREATED, Version.CURRENT);
+final Path customPath;
+if (useCustomDataPath) {
+final Path path = createTempDir();
+

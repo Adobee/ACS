@@ -1,0 +1,6 @@
+* the Axis must be of type ValueAxis (if not, they are ignored).
+* the charts must contain plots of type XYPlot or CategoryPlot
+Plot plot = chart.getPlot();
+if (plot instanceof XYPlot) {
+ValueAxis axis = chart.getXYPlot().getDomainAxis();
+

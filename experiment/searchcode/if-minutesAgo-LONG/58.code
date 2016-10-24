@@ -1,0 +1,11 @@
+static public String getDateStr(long milliseconds, Date currentDate)
+{
+// seconds diff
+long diff = (long) (currentDate.getTime() - milliseconds) / 1000;
+if( diff < 3600 )
+{
+long minutesAgo = (long) diff/60;
+if( minutesAgo < 1 )
+return &quot;seconds ago&quot;;
+else if( minutesAgo == 1 )
+

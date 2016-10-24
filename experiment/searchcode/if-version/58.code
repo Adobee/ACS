@@ -1,0 +1,6 @@
+for (com.atlassian.jira.project.version.Version aVersion : project.getVersions()) {
+if (org.apache.commons.lang3.StringUtils.equals(aVersion.getName(), versionName)) {
+com.atlassian.jira.project.version.Version result = null;
+for (com.atlassian.jira.project.version.Version version : versions) {
+if (version.getReleaseDate() != null) {
+

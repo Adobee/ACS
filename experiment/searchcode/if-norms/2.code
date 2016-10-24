@@ -1,0 +1,8 @@
+import com.master.normtester.app.norm.norms.ChargingNorm;
+import com.master.normtester.app.norm.norms.CriticalBatteryNorm;
+import com.master.normtester.app.norm.norms.LowBatteryNorm;
+private Set<Norm> findFullifiedNorms() {
+Set<Norm> fullifiedNorms = new HashSet<>();
+for (Norm norm : norms){
+if( norm.conditionsMet()){
+

@@ -1,0 +1,11 @@
+LinkedList<Integer> depthQ = new LinkedList<Integer>();
+
+Node curr;
+int depth;
+int maxDepth = 0;
+depth = depthQ.remove();
+if (depth > maxDepth) maxDepth = depth;
+
+if (curr.left != null) {
+nodeQ.add(curr.left);
+

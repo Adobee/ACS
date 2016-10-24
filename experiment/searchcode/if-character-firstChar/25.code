@@ -1,0 +1,10 @@
+char firstChar;
+char secondChar;
+char thirdChar;
+
+if (numberChar >= 3) {
+thirdChar = name.charAt(2);
+
+System.out.println(&quot;1. character: &quot; + firstChar);
+System.out.println(&quot;2. character: &quot; + secondChar);
+

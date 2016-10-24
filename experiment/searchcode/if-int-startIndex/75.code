@@ -1,0 +1,13 @@
+public class NextPermutation {
+public void nextPermutation(int[] num) {
+int startIndex = num.length - 2;
+startIndex--;
+}
+
+if (startIndex < 0) {
+reverse(num, 0, num.length - 1);
+return;
+}
+
+for (int i = num.length - 1;; i--) {
+

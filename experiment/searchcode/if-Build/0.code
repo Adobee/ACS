@@ -1,0 +1,10 @@
+static StringBuilder build = new StringBuilder();
+
+public static String SVG(SVG tag){
+if (tag == SVG.Open) {
+build.delete(0, build.length());
+build.append(&quot;\&quot;>\n&quot;);
+}
+else if (tag == SVG.Close) {
+build.delete(0, build.length());
+

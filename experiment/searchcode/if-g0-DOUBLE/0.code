@@ -1,0 +1,15 @@
+//parameters we want learn. we can find the other 5 by subtracting 1.
+double probG0=0;	//(G)ender: M=0
+double condProbW0_G0=0;	//(W)eight>130=0
+double condProbW0_G1=0;
+public double getCondProbG0_WH(int x){
+
+/* P(G=0 | W, H)= P(G=0,W,H) / P(W,H) = P(G=0) P(H|G) P(W|G) / P(W,H)
+*
+*/
+
+double prob=0;
+
+if(x==0){
+prob= (probG0*condProbH0_G0*condProbW0_G0) /
+

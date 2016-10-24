@@ -1,0 +1,8 @@
+double[][] result = new double[2][BIRCH.dimen + 1];
+double[] pCenter = null;
+double[] qCenter = null;
+if(p instanceof TreeNode){
+pCenter = getCenter((TreeNode)p);
+} else{
+pCenter = getCenter(((MinCluster)p).getCf());
+

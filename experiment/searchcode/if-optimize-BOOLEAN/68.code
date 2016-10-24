@@ -1,0 +1,8 @@
+optimize(&quot;int&quot;, &quot;if (true) {} else return 4; return 0;&quot;).into(&quot;return 0;&quot;);
+
+addSnippetClassDecl(&quot;static boolean test() { return b; }&quot;);
+optimize(&quot;int&quot;, &quot;if (test()) {} else {}; return 0;&quot;).into(
+public void testIfStatementToBoolean_NotOptimization() throws Exception {
+optimize(&quot;void&quot;, &quot;if (!b) i = 1;&quot;).intoString(
+&quot;EntryPoint.b || (EntryPoint.i = 1);&quot;);
+

@@ -1,0 +1,8 @@
+final ObjectArray objectArrayOld = this.objectArray;
+if (objectArrayOld != null) {
+objectArray.set(objectArrayOld);
+return objectFactory.createObject(index);
+}
+Object object = objectArray.getObject(index);
+if (object == null) {
+

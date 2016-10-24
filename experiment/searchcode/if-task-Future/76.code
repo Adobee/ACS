@@ -1,0 +1,10 @@
+private CommonAsyncFutureTask<?> mAsyncTaskFuture = null;
+
+public CommonAsyncRunnable(CommonAsyncFutureTask<?> task) {
+if (task == null || task.getTask() == null) {
+return mAsyncTaskFuture.getTask().getTag();
+}
+
+public int getParallelTag() {
+if (mAsyncTaskFuture.getTask().getParallel() != null) {
+

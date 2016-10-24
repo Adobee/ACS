@@ -1,0 +1,9 @@
+// CHECK-NOT:                        Add
+
+public static long Add0(long arg) {
+return 0 + arg;
+}
+
+// CHECK-START: int Main.AndAllOnes(int) instruction_simplifier (before)
+// CHECK-DAG:     [[Arg:i\d+]]     ParameterValue
+

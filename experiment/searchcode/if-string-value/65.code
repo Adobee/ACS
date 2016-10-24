@@ -1,0 +1,8 @@
+public class StringLiteral extends Node {
+private String value;
+
+public StringLiteral(String v){
+value = v;
+// remove surrounding quotes
+if (value.charAt(0) == &#39;&quot;&#39;) value = value.substring(1);
+

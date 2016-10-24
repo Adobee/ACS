@@ -1,0 +1,14 @@
+inetAddress = IpAddresses.nextElement();
+if (!inetAddress.isLoopbackAddress()) {
+addresses.add(inetAddress);
+Array<String> ipv4 = new Array<String>();
+for (InetAddress address : list) {
+if (address instanceof Inet4Address) {
+ipv4.add(address.getHostAddress());
+}
+}
+return ipv4;
+}
+
+}
+

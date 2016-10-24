@@ -1,0 +1,11 @@
+private String path;
+private boolean isRegex, whitelist;
+
+public PathFilter(String path) {
+this(path, false, true);
+public Boolean handle(HTTPRequest request) {
+try {
+if (whitelist) {
+return isRegex
+? !HTTPUtils.getURI(request, false).getPath().matches(path)
+

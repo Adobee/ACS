@@ -1,0 +1,13 @@
+public Phone save(Phone phone) throws DuplicatePhoneException {
+if (phoneValueExist(phone.getPhoneValue())) {
+throw new DuplicatePhoneException();
+Phone phone = phoneRepository.findByPhoneValue(phoneValue);
+
+if (phone != null) {
+return true;
+}
+
+return false;
+}
+}
+

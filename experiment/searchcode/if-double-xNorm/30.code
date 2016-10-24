@@ -1,0 +1,9 @@
+return forwardOptimizationRequest();
+}
+
+long tStart = System.currentTimeMillis();
+DoubleMatrix1D X0 = getInitialPoint();
+if (X0 == null) {
+if (isCheckProgressConditions()) {
+if (!Double.isNaN(previousRPriXNorm) &amp;&amp; !Double.isNaN(previousRXVNorm)) {
+

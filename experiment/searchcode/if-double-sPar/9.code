@@ -1,0 +1,8 @@
+public static boolean ifUnperforated(ItemStack item){
+for (String lore : item.getItemMeta().getLore()) {
+if (lore.contains(Spar.unperforated)) {
+lore=lore.replaceAll(&quot;§.&quot;, &quot;&quot;).replaceAll(&quot;● <&quot;, &quot;&quot;);
+if (lore.startsWith(Spar.reduction_name)) {
+int index=lore.indexOf(&quot;级 +&quot;)+3;
+double num=Double.parseDouble(lore.substring(index, lore.indexOf(&quot;减&quot;)));
+

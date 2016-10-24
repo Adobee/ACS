@@ -1,0 +1,7 @@
+public class TestClass_instrumented {
+
+public static void main(String[] args) {
+int a = -1, b= 2, c=0, d=-1;Probe_stmt.getInstance().cover(9);
+if(a > 0){			Probe_stmt.getInstance().cover(10);
+c = a + b;Probe_stmt.getInstance().cover(11);
+

@@ -1,0 +1,10 @@
+public static SourceFactory getInstance() {
+if (instance == null) {
+instance = new SourceFactory();
+}
+return instance;
+}
+private static SourceFactory instance = null;
+
+public Source getSource(String name) {
+

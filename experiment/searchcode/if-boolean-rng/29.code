@@ -1,0 +1,10 @@
+return false;
+}
+}
+
+if (!getRngDevices().isEmpty()) {
+return failValidation(EngineMessage.ACTION_TYPE_FAILED_RNG_ALREADY_EXISTS);
+VmRngDevice rngDevice = getParameters().getRngDevice();
+if (rngDevice.getDeviceId() == null) {
+rngDevice.setDeviceId(Guid.newGuid());
+

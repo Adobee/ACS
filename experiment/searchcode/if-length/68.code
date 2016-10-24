@@ -1,0 +1,8 @@
+A)
+//@ assert true;
+//@ assert 0 == (\sum int k; b.length - 1+1 <= k &amp;&amp; k < b.length; b[k]) &amp;&amp; -1 <= b.length - 1 &amp;&amp; b.length - 1 < b.length;
+@          (0 < i + 1 &amp;&amp; i + 1 <= b.length) &amp;&amp; (\forall int j; 0 <= j &amp;&amp; j < i + 1; b[i] >= b[j]) &amp;&amp; (b[i] < b[k])
+@*/
+if (b[i] >= b[k]) {
+//@ assert (0 < i + 1 &amp;&amp; i + 1 <= b.length) &amp;&amp; (\forall int j; 0 <= j &amp;&amp; j < i + 1; b[i] >= b[j]) &amp;&amp; (b[i] >= b[k]);
+

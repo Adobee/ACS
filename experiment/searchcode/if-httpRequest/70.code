@@ -1,0 +1,7 @@
+public class HTTPRequestParser {
+
+public HTTPRequest parse(String request) {
+String[] requestElements = request.split(&quot; &quot;);
+HTTPRequest httpRequest = new HTTPRequest(requestMethod, path);
+if (request.contains(&quot;data=&quot;)) {
+

@@ -1,0 +1,7 @@
+for (MsgProcessor processor : processors) {
+if(processor.isOwnerMsg(helper.getType())){
+MsgHelper ret=processor.processMsg(helper);
+if(ret!=null){
+byte[] sendBuffer=ret.toArray();
+send(sendBuffer);
+

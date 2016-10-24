@@ -1,0 +1,9 @@
+import com.github.mimo31.badguysgame.StringDraw;
+
+public class WelcomeScreen extends Screen {
+
+private boolean showingHelp;
+StringDraw.drawMaxString(g, &quot;Press the Enter key to continue.&quot;, new Rectangle(contentSize.width / 4, contentSize.height * 3 / 4, contentSize.width / 2, contentSize.height / 16));
+if (this.showingHelp) {
+PaintUtils.paintGenericHelpScreen(g, contentSize);
+

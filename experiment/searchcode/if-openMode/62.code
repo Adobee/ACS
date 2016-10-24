@@ -1,0 +1,10 @@
+package FileSystemJ;
+
+public abstract class File {
+
+public enum OpenMode {
+READ(), WRITE(), APPEND();
+public boolean open(OpenMode mode) {
+if(!open) { this.open=true; this.mode = mode; return true; }
+else { return false; }
+

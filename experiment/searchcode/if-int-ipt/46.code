@@ -1,0 +1,5 @@
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+}	void tst_FetchByKeyPress(char c, IptKey expd) {Tfds.Eq(expd.Key(), IptKeyStrMgr.Instance.FetchByKeyPress((int)c).Key());}
+void tst_XtoUiStr(IptKey key, String expd) {Tfds.Eq(expd, key.XtoUiStr());}
+

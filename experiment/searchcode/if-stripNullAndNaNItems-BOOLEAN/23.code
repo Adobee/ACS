@@ -1,0 +1,11 @@
+public static BoxAndWhiskerItem calculateBoxAndWhiskerStatistics(
+List values, boolean stripNullAndNaNItems) {
+
+if (values == null) {
+throw new IllegalArgumentException(&quot;Null &#39;values&#39; argument.&quot;);
+}
+
+List vlist;
+if (stripNullAndNaNItems) {
+vlist = new ArrayList(values.size());
+

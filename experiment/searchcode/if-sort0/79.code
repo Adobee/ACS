@@ -1,0 +1,10 @@
+TreeNode root = (TreeNode) getRoot();
+if (root != null) {
+sort0(root, cmpr);
+fireStructureChangedEvent(root);
+}
+}
+
+private void sort0(TreeNode node, Comparator cmpr) {
+if (node.getChildren() == null) return;
+

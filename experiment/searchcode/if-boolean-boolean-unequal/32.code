@@ -1,0 +1,9 @@
+if (tried.size() == 0)
+tried.add(g);
+boolean notInList = true;
+for (int i = 0; i < tried.size(); i++)
+if (tried.get(i) == g)
+mods[i] = g.modPow(new BigInteger(&quot;&quot; + i), p).intValue();
+if (allUnequal(mods))
+return g;
+

@@ -1,0 +1,9 @@
+if (id.startsWith(&quot;+&quot;) || id.startsWith(&quot;-&quot;)) {
+int offset = parseOffset(id);
+if (offset == 0L) {
+throw new IllegalArgumentException(&quot;Positive hours must not have negative minutes: &quot; + minutesOffset);
+}
+int offset = 0;
+try {
+int hoursInMinutes = hoursOffset * 60;
+

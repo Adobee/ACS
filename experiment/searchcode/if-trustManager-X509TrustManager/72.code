@@ -1,0 +1,9 @@
+import javax.net.ssl.SSLSocketFactory;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+
+public class OkHttpFactory {
+OkHttpClient okHttpClient = null;
+TrustManager[] trustManager = getUnsafeCertificateValidator();
+okHttpClient = addCertificateValidator(okHttpClient, trustManager);
+

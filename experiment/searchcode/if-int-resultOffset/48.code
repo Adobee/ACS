@@ -1,0 +1,9 @@
+public synchronized int hashCode() {
+if (__hashCodeCalc) {
+return 0;
+}
+__hashCodeCalc = true;
+int _hashCode = 1;
+if (getSessionId() != null) {
+_hashCode += getSessionId().hashCode();
+

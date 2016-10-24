@@ -1,0 +1,5 @@
+public static double easeInOutQuad(double t, double b, double c, double d) {
+t = countFix(t, d);
+if ((t /= d / 2) < 1)
+return c / 2 * t * t + b;
+

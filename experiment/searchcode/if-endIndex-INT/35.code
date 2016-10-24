@@ -1,0 +1,8 @@
+public class Solution {
+public int sqrt(int x) {
+long startIndex = 1;
+long endIndex = x / 2 + 1;
+long middle = startIndex + (endIndex - startIndex) / 2;
+if (middle * middle == x) {
+return (int)middle;
+

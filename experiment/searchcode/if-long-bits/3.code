@@ -1,0 +1,12 @@
+public class FixedLongCoder extends AbstractCoder<Long> {
+private final int bits;
+
+public FixedLongCoder(int bits) {
+this.bits=bits;
+}
+
+@Override
+public Long decode(AVector v, int offset) {
+long value=0;
+for (int i=0; i<bits; i++) {
+

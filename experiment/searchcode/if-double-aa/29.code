@@ -1,0 +1,10 @@
+* @author olafd
+*/
+public class SunAngles {
+private double aa;
+private double za;
+
+public SunAngles(final double za, final double aa) {
+if (aa < 0.0) {
+throw new IllegalArgumentException(&quot;aa < 0.0&quot;);
+

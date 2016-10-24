@@ -1,0 +1,14 @@
+SecureRandom random = secureRandomThreadLocal.get();
+if (random == null) {
+random = new SecureRandom();
+secureRandomThreadLocal.set(random);
+}
+return random;
+}
+
+/**
+* 计算成功率
+*
+* @param ratio
+* @return boolean
+

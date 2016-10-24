@@ -1,0 +1,7 @@
+public static final int WINDOW_FORCE = 3;
+
+public static float[] transform(FloatStream fs, int sampleSize, int window, float[] windowArgs) {
+if (sampleSize > fs.size())
+sampleSize = fs.size();
+int twoPow = (int) (Math.log(sampleSize) / log2);
+

@@ -1,0 +1,7 @@
+boolean useDefaultField = (moreLikeFields == null);
+if (useDefaultField) {
+moreLikeFields = Lists.newArrayList(parseContext.defaultField());
+if (item.selectedFields() == null &amp;&amp; item.doc() == null) {
+if (useDefaultField) {
+item.selectedFields(&quot;*&quot;);
+

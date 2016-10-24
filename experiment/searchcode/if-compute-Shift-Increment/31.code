@@ -1,0 +1,6 @@
+private static final double HIGHERBOUND=100;  //higher bound of the range
+private static final double INCREMENT=5; //increment of the ranges
+
+private static int[] frequencyArray=new int[FREQUENCYRANGE]; // used to store the frequency
+frequencyArray[(int)((data[index])/INCREMENT)]++; // used this formula to compute frequency in each range
+

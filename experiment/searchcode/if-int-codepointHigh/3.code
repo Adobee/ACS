@@ -1,0 +1,7 @@
+/*     */   public static NumericEntityEscaper between(int codepointLow, int codepointHigh)
+/*     */   {
+/*  85 */     return new NumericEntityEscaper(codepointLow, codepointHigh, true);
+/*     */   public static NumericEntityEscaper outsideOf(int codepointLow, int codepointHigh)
+/*     */   {
+/*  96 */     return new NumericEntityEscaper(codepointLow, codepointHigh, false);
+

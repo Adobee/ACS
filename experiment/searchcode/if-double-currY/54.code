@@ -1,0 +1,10 @@
+int actualDirection;
+double reward;
+int newX,newY;
+int rand = (int) (Math.random() * 10);
+if (rand < 4) actualDirection=rand;
+else actualDirection=action;
+
+reward=0.0;
+if ((currX==8 &amp;&amp; currY==7) || (currX==7 &amp;&amp; currY==2)) {
+

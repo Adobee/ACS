@@ -1,0 +1,9 @@
+checkStack(inStack);
+Object param = inStack.pop();
+if (param instanceof Double){
+try{
+double r=0,x=((Double)param).doubleValue();
+if(Math.abs(x)<26)
+r = Erf.erf(x);
+else{
+

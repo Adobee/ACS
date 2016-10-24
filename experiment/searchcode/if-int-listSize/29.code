@@ -1,0 +1,13 @@
+import java.util.Collection;
+
+// thread not safe
+public class LimitedList<E> extends ArrayList<E> {
+private final int listSize;
+
+public LimitedList(int listSize) {
+this.listSize = listSize;
+}
+
+@Override
+public boolean add(E o) {
+

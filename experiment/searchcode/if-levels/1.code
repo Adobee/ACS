@@ -1,0 +1,18 @@
+public int current()
+{
+for (int level = 29; level >= 0; level--)
+{
+int xpNeeded = XP_LEVELS[level];
+if (getTotalXP() >= xpNeeded)
+public boolean abilityScoreAvailable()
+{
+int level = current();
+for (int abilityLevel : ABILITY_LEVELS)
+{
+if (abilityLevel == level)
+return true;
+}
+return false;
+}
+}
+

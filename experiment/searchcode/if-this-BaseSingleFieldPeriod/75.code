@@ -1,0 +1,11 @@
+import org.joda.time.field.FieldUtils;
+
+public abstract class BaseSingleFieldPeriod
+implements ReadablePeriod, Comparable<BaseSingleFieldPeriod>, Serializable
+protected BaseSingleFieldPeriod(int paramInt)
+{
+this.iPeriod = paramInt;
+}
+
+protected static int between(ReadableInstant paramReadableInstant1, ReadableInstant paramReadableInstant2, DurationFieldType paramDurationFieldType)
+

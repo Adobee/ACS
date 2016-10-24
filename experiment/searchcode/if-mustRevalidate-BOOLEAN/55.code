@@ -1,0 +1,8 @@
+boolean mustRevalidate = false;
+if (npc.getX() != NIGHT_COORDS[0] &amp;&amp; GameTimeController.getInstance().isNowNight())
+{
+coords = NIGHT_COORDS;
+mustRevalidate = true;
+}
+else if (npc.getX() != DAY_COORDS[0] &amp;&amp; !GameTimeController.getInstance().isNowNight())
+

@@ -1,0 +1,10 @@
+assertEquals(false, SystemUtils.isOSMatch(osName, osVersion, &quot;Windows 9&quot;, &quot;4.1&quot;));
+}
+
+public void testJavaAwtHeadless() {
+boolean atLeastJava14 = SystemUtils.isJavaVersionAtLeast(JAVA_1_4);
+String expectedStringValueWithDefault = System.getProperty(&quot;java.awt.headless&quot;, &quot;false&quot;);
+assertNotNull(expectedStringValueWithDefault);
+if (atLeastJava14) {
+boolean expectedValue = Boolean.valueOf(expectedStringValue).booleanValue();
+

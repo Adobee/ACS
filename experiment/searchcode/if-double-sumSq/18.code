@@ -1,0 +1,14 @@
+// return the index of the max element
+public int findMaxIndex() {
+if (a==null || a.length==0)
+return -1;
+
+
+int maxi = 0;
+double avg = this.mean();
+double sq = 0;
+int le = a.length;
+double sumsq = 0;
+double mean1 = 0;
+for(int b=0;b<le;b++){
+

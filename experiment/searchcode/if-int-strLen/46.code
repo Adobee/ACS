@@ -1,0 +1,8 @@
+String str = &quot;&quot;;
+int position = buffer.position();
+int btLen = buffer.capacity();
+int strLen = 0;
+while(btLen > position + strLen){
+int temp = ByteTools.getByteByIndex(buffer, position + strLen);
+if(temp == 0){
+

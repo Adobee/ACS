@@ -1,0 +1,9 @@
+protected int sanityExpectedRC(ObjectReference object,
+int sanityRootRC) {
+if (VM.activePlan.global().getSanityChecker().preGCSanity()) {
+return SanityChecker.UNSURE;
+}
+
+if (RCBase.isRCObject(object)) {
+if (!RCHeader.isLiveRC(object)) {
+

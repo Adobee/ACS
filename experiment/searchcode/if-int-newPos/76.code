@@ -1,0 +1,12 @@
+int rolledNumber = in.nextInt();
+
+int newPos = pos[currentPlayer] + rolledNumber;
+if (newPos > FIELD_SIZE - 1)
+while (go[newPos] != -1) {
+newPos = go[newPos];
+}
+
+pos[currentPlayer] = newPos;
+
+if (newPos == FIELD_SIZE - 1)
+

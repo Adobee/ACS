@@ -1,0 +1,11 @@
+static final CoreDictionary.Attribute ATTRIBUTE = CoreDictionary.get(WORD_ID);
+
+static {
+if (null == dictionary) {
+initOrganizationDictionary();
+}
+}
+
+private static synchronized void initOrganizationDictionary() {
+if (null == dictionary) {
+

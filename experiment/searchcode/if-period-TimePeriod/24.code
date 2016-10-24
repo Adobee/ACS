@@ -1,0 +1,16 @@
+import sgf.gateway.model.metadata.descriptive.TimePeriod;
+
+import java.util.Date;
+
+public class DatasetStartDateFieldExtractor extends DatasetAbstractFieldExtractor {
+TimePeriod timePeriod = dataset.getDescriptiveMetadata().getTimePeriod();
+
+if (null != timePeriod) {
+
+beginDate = timePeriod.getBegin();
+}
+
+return beginDate;
+}
+}
+

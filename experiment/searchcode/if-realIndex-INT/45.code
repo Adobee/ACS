@@ -1,0 +1,9 @@
+private static int getPinyinCode(char c) {
+int offset = c - PinyinData.MIN_VALUE;
+if (0 <= offset &amp;&amp; offset < PinyinData.PINYIN_CODE_1_OFFSET) {
+private static short decodeIndex(byte[] paddings, byte[] indexes, int offset) {
+//CHECKSTYLE:OFF
+int index1 = offset / 8;
+int index2 = offset % 8;
+short realIndex;
+

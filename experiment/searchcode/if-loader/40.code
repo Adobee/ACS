@@ -1,0 +1,9 @@
+public final class ClassLoaderUtil {
+
+private ClassLoaderUtil() {
+}
+
+public static ClassLoader getCurrentClassLoader() {
+ClassLoader classLoader = Thread.currentThread().getContextClassLoader();
+if (classLoader == null) {
+

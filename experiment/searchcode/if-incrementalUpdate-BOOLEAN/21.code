@@ -1,0 +1,13 @@
+return false;
+}
+
+return !disabledApps.contains(appName);
+}
+
+private boolean registerApplicationNameIfNeeded(ApplicationName appName) {
+if (knownApps.add(appName)) {
+_logger.info(&quot;incrementalUpdate(&quot; + appName + &quot;) new application&quot;);
+}
+
+boolean newEnabledValue = CollectionSettingsRegistry.getBooleanSettingValue(value);
+

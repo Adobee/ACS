@@ -1,0 +1,10 @@
+try{
+exist=true;
+mode=st.getNext().charAt(0);
+cur_mode=NMEA.ParseInt(st.getNext());
+used=0;
+prn[used]=NMEA.ParseInt(st.getNext());
+if (prn[used]>0)
+used++;
+prn[used]=NMEA.ParseInt(st.getNext());
+

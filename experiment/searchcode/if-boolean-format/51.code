@@ -1,0 +1,9 @@
+return toBoolean(value);
+}
+
+private Object toBoolean(Object value) {
+Boolean toFormat = Boolean.FALSE;
+if (value instanceof String) {
+toFormat = Boolean.valueOf((String) value);
+} else if (value instanceof Integer) {
+

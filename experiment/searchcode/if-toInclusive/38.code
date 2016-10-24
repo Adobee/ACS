@@ -1,0 +1,7 @@
+this.toInclusive = parentRange.toInclusive;
+if (hasFrom &amp;&amp; hasTo &amp;&amp; this.compare(from, to) > 0) {
+throw new IllegalArgumentException(formGreaterThanTo(from, to));
+boolean hasFrom, E from, boolean fromInclusive,
+boolean hasTo, E to, boolean toInclusive) {
+if (!hasFrom &amp;&amp; !hasTo) {
+

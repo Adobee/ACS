@@ -1,0 +1,12 @@
+this.removedArticlePanel = new RemovedArticlePanel(articleFilterProvider);
+
+registerForEvents();
+}
+
+public Panel getPanel() {
+if (panel == null) {
+panel = removedArticlePanel.createPanel(removedArticleProvider);
+private void addRemovedArticles(List<RemovedArticleDTO> result) {
+removedArticleProvider.getList().addAll(result);
+if (result.size() < CHUNK_SIZE) {
+

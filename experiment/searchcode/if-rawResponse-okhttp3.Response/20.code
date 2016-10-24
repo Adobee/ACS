@@ -1,0 +1,5 @@
+static <RT, ET> Response<RT, ET> success(RT body, okhttp3.Response rawResponse) {
+return new Response<>(rawResponse, null, body, null);
+static <RT, ET> Response<RT, ET> success(RT body, ContentRange range, okhttp3.Response rawResponse) {
+return new Response<>(rawResponse, range, body, null);
+

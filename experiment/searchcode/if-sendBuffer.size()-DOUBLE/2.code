@@ -1,0 +1,10 @@
+* Static method to get a sendbuffer out of the cache
+*/
+synchronized static SendBuffer get() {
+if (cacheSize > 0) {
+if (logger.isDebugEnabled()) {
+cache[cacheSize] = buffer;
+cacheSize++;
+if (logger.isDebugEnabled()) {
+logger.debug(&quot;SendBuffer: recycled buffer&quot;);
+

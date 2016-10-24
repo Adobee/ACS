@@ -1,0 +1,6 @@
+public static double calculatePriceFactor(double price, double intervalBegin, double intervalEnd, double maxValue) {
+if (isInRange(price, intervalBegin, intervalEnd)) return 1;
+double result = 1 - Math.pow(((getMiddle(intervalBegin, intervalEnd) - price) / maxValue), 2);
+public static double calculateVolumeFactor(double price, double intervalBegin, double intervalEnd, double maxValue) {
+double subtrahend = Math.pow((getMiddle(intervalBegin, intervalEnd) - price) / maxValue, 2);
+

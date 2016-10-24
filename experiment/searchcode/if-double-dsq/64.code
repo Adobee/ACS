@@ -1,0 +1,9 @@
+* @param p   pointer into body-tree
+* @param dsq size of box squared
+*/
+protected void walksub(Node p, double dsq, double tolsq, HGStruct<R> hg, int level)
+for (int k = 0; k < Constants.NSUB; k++) {
+Node r = ((Cell) p).subp[k];
+if (r != null)
+walksub(r, dsq / 4.0, tolsq, hg, level+1);
+

@@ -1,0 +1,12 @@
+* @param type The genetic type generator
+*/
+public RangeChromosome(Range[] ranges, GeneticType type){
+if(ranges.length == 0) throw new RuntimeException(&quot;The RangeChromosome generated has no values.&quot;);
+public int length() {
+return this.chromosome.length;
+}
+
+@Override
+public void mutateGen(int index) {
+if (index > this.chromosome.length || index < 0) throw new RuntimeException(&quot;The index passed is out of bounds&quot;);
+

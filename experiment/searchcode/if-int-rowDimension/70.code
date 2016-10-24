@@ -1,0 +1,7 @@
+* @param rowDimension    the row dimension
+* @param columnDimension the column dimension
+*/
+public DenseMatrix(int rowDimension, int columnDimension) {
+public static Matrix ones(int rowDimension, int columnDimension) {
+return new DenseMatrix(DoubleMatrix.ones(rowDimension, columnDimension));
+

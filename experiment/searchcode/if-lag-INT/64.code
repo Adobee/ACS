@@ -1,0 +1,14 @@
+Node<T> ptr = front;
+Node<T> lag = null;
+
+while(ptr != null){
+if(ptr.data == target){
+return false;
+}
+
+if(lag == null){
+return true;
+}
+
+T temp = lag.data;
+

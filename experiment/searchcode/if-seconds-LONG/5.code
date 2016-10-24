@@ -1,0 +1,9 @@
+public static String format(long seconds) {
+if (seconds < 60) {
+return pluralSeconds(seconds);
+return pluralMinutes(minutes) + &quot; and &quot; + pluralSeconds(seconds % 60);
+}
+
+public static String pluralSeconds(long i) {
+if (i == 1) {
+

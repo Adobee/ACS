@@ -1,0 +1,10 @@
+System.out.println(&quot;Es wurden drei DotComs der größe drei auf einem 7x7 Raster verteilt(a0-g6)&quot;);
+while (amLeben) {
+updateDotComs();
+if (dotComs.isEmpty()) {
+amLeben = false;
+String shootCoord = sc.nextLine();
+anzahlSchüsse++;
+for(DotCom dotCom : dotComs){
+if (dotCom.treffer(shootCoord)) {
+

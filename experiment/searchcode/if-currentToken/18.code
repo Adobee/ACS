@@ -1,0 +1,13 @@
+protected Statement createStatement() throws ParserException
+{
+String currenttoken = this.getCurrentToken();
+
+if(currenttoken.equals(&quot;print&quot;))
+else if (TokenHandler.isVariable(currenttoken))
+{
+Assignment a = new Assignment(tokens);
+return a;
+}
+
+else if(currenttoken.equals(&quot;if&quot;))
+

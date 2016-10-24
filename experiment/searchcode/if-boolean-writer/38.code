@@ -1,0 +1,10 @@
+private void writer(CharWriter writer, Collection<Object> list, DateFormat df) {
+writer.append(&#39;[&#39;);
+boolean gtOne = false;
+for (Object value : list) {
+if (value == null) {
+continue;
+}
+if (gtOne) {
+writer.append(&#39;,&#39;);
+

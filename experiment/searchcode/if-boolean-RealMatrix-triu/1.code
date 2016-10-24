@@ -1,0 +1,9 @@
+final RealMatrix zmean = bestArz.multiply(weights);
+final boolean hsig = updateEvolutionPaths(zmean, xold);
+
+if (diagonalOnly <= 0) {
+* @return hsig flag indicating a small correction.
+*/
+private boolean updateEvolutionPaths(RealMatrix zmean, RealMatrix xold) {
+ps = ps.scalarMultiply(1 - cs).add(
+

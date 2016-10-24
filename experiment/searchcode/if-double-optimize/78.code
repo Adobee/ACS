@@ -1,0 +1,12 @@
+// double fp2 = linmin(p, g); // uncomment for steepest descent
+double fp2 = linmin(p, h);
+if (objectiveConverged(fp, fp2)) {
+_finished = true;
+return;
+}
+fp = fp2;
+double[] d_f = _f.grad(p);
+double gg = dot(g, g);
+if (gg == 0) {
+_finished = true;
+

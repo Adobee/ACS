@@ -1,0 +1,7 @@
+Class<?> clazz = (Class<?>) type.getRawType();
+Type[] arguments = type.getActualTypeArguments();
+TypeVariable<?>[] typeParameters = clazz.getTypeParameters();
+TypeVariable<?> tv = (TypeVariable<?>) type;
+if (!map.containsKey(type)) {
+throw new UnresolvedTypeVariableException(tv);
+

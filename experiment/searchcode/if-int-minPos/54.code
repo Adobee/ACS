@@ -1,0 +1,8 @@
+for (int i = 0; i < arr.length; i++) {
+int minPos = minPosition(i, len-1);
+if(arr[i]>arr[minPos]){
+int minPos=strtPoint;
+int minValue = arr[strtPoint];
+for(int i = strtPoint+1; i <=end; i++){
+if(arr[i]<minValue){
+

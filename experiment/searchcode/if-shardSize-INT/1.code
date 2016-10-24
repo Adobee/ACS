@@ -1,0 +1,10 @@
+public static final int DEFAULT_SHARD_SAMPLE_SIZE = 100;
+
+private int shardSize = DEFAULT_SHARD_SAMPLE_SIZE;
+
+public SamplerAggregationBuilder(String name) {
+* Set the max num docs to be returned from each shard.
+*/
+public SamplerAggregationBuilder shardSize(int shardSize) {
+this.shardSize = shardSize;
+

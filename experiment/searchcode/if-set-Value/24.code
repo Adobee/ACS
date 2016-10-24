@@ -1,0 +1,11 @@
+public class ValueMonitor extends Observable
+{
+private Object value;
+
+public void setValue(final Object newValue)
+{
+if (value != newValue)
+{
+setChanged();
+this.value = newValue;
+

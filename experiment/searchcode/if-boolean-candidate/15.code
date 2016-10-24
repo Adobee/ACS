@@ -1,0 +1,9 @@
+private List<Candidate> candidates;
+private Connection theConnection;
+private boolean candidateAdded;
+private String candidateNameToSearch;
+private boolean candidateFound;
+
+//CandidateService State Machines
+enum CandidateServiceCycle { Idle, LoadingAllCandidates, CreatingCandidate, FindingCandidateByName }
+

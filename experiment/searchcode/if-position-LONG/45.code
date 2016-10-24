@@ -1,0 +1,18 @@
+public void removePosition(Long id) {
+Position position = null;
+for (Position actual : positions) {
+if (actual.getId().equals(id)) {
+public void clear() {
+positions.clear();
+}
+
+public Long sum() {
+long sum = 0;
+for (Position position : positions) {
+sum += position.getPrice();
+}
+return sum;
+}
+
+}
+

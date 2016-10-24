@@ -1,0 +1,15 @@
+import com.vzome.core.math.symmetry.Axis;
+
+/**
+* @author vorth
+*/
+public abstract class Permute extends ZomicStatement {
+public  void setAxis( Axis axis ) {
+this .m_axis = axis;
+}
+
+public int getOrder()
+{
+if ( m_axis == null )
+return 2;  // should be one?
+

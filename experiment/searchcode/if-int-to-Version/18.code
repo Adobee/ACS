@@ -1,0 +1,12 @@
+* @return the versionZ
+*/
+public int getVersionZ() {
+return versionZ;
+}
+
+@Override
+public int compareTo( OwsServiceVersion versionToCompare ) {
+int compareToX = Integer.valueOf( versionX ).compareTo( versionToCompare.versionX );
+if ( compareToX == 0 ) {
+int compareToY = Integer.valueOf( versionY ).compareTo( versionToCompare.versionY );
+

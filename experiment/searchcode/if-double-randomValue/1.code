@@ -1,0 +1,9 @@
+public class LinkedListElement implements Comparable<LinkedListElement> {
+
+public int value;
+public double randomValue;
+public LinkedListElement next;
+public int compareTo(LinkedListElement other) {
+if (this.randomValue == other.randomValue) {
+return 0;
+

@@ -1,0 +1,6 @@
+public void handleRequest(final RestRequest request, final RestChannel channel, final NodeClient client) throws Exception {
+boolean helpWanted = request.paramAsBoolean(&quot;help&quot;, false);
+if (helpWanted) {
+Table table = getTableWithHeader(request);
+int[] width = buildHelpWidths(table, request);
+

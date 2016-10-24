@@ -1,0 +1,11 @@
+listener.onCompleted(defaultHandler);
+}
+
+@Override
+protected DefaultHandler doInBackground(URL... urls) {
+if (urls.length > 0) {
+@Override
+protected void onPostExecute(DefaultHandler handler) {
+if (listener != null) {
+listener.onCompleted(handler);
+

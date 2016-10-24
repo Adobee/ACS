@@ -1,0 +1,13 @@
+package konto;
+
+public class JugendGiroKonto extends GiroKonto {
+
+protected double buchungsLimit;
+super(inhaber, limit);
+this.buchungsLimit = buchungsLimit;
+}
+
+@Override
+public void auszahlen(double wert) {
+if(wert>buchungsLimit){
+

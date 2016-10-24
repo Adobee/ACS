@@ -1,0 +1,14 @@
+* @since 12/08/2015.
+*/
+public interface Capacity {
+
+int getValue();
+
+static Capacity fixed(int capacity) {
+if (capacity == -1) {
+static boolean isFixed(Capacity capacity) {
+return !isZero(capacity) &amp;&amp; !isInfinite(capacity);
+}
+
+static boolean isInfinite(Capacity capacity) {
+

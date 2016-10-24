@@ -1,0 +1,10 @@
+private int populationSize;
+
+public RefreshKeepBest(int populationSize)
+{
+this.populationSize = populationSize;
+List<Phenotype> list = population.getAll();
+
+int i = 0;
+while(list.size() > populationSize &amp;&amp; i < list.size())//удаляем невыживших
+

@@ -1,0 +1,8 @@
+public static Map<Short, SerializeTargetField> listSerializeFields(Object obj) throws SerializeException {
+Map<Short, SerializeTargetField> result = new HashMap<>();
+
+if (obj != null) {
+Serialize serialize = field.getAnnotation(Serialize.class);
+if (serialize != null) {
+if (result.containsKey(serialize.id())) {
+

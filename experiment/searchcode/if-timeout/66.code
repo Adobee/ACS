@@ -1,0 +1,13 @@
+package railo.runtime.lock;
+
+
+/**
+* Lock Timeout
+*/
+public final class LockTimeoutException extends Exception {
+super(&quot;a timeout occurred on a &quot;+toString(type)+&quot; lock with name [&quot;+name+&quot;] after &quot;+getTime(timeout));
+}
+
+private static String getTime(int timeout) {
+if(timeout/1000*1000==timeout) {
+

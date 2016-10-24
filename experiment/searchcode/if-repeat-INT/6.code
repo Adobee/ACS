@@ -1,0 +1,6 @@
+public class AbstractRepeaterTest {
+
+private static String repeat(String s, int n, StringBuilder result) {
+if (n == 0) return result.toString();
+return repeat(s, n - 1, result.append(s));
+

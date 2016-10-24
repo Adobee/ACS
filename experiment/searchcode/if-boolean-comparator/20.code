@@ -1,0 +1,14 @@
+public class PrimitiveComparator<T extends Comparable<T>> implements Comparator<T>
+{
+public PrimitiveComparator(Class<T> cls)
+{
+
+}
+
+@Override
+public int compare(T o1, T o2)
+{
+if ( o1 == null &amp;&amp; o2 == null)
+public static final PrimitiveComparator<Boolean> BOOLEAN_COMPARATOR = new PrimitiveComparator<Boolean>(Boolean.class);
+public static final PrimitiveComparator<Byte> BYTE_COMPARATOR = new PrimitiveComparator<Byte>(Byte.class);
+

@@ -1,0 +1,8 @@
+public static String getTimeAgo(Date date, Context context) {
+long past = date.getTime();
+long now = new Date().getTime();
+
+final long diff = now - past;
+if (diff < MINUTE_MILLIS) {
+return context.getString(R.string.timetoword_justnow);
+

@@ -1,0 +1,13 @@
+import java.io.IOException;
+
+import javax.imageio.ImageIO;
+
+public class Sprite {
+private int width, height;
+private int[] pixels;
+int screenX = x + (i % width);
+int screenY = y + (i / width);
+
+if (rotate90) {
+int tempX = screenX;
+

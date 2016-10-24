@@ -1,0 +1,13 @@
+return &quot;SquaredDiffProduct&quot;;
+}
+
+@Override
+public Xint factorial(int n) {
+if (n < 0) {
+throw new ArithmeticException(&quot;Factorial: n has to be >= 0, but was &quot; + n);
+if (n < 4) {
+return Xint.valueOf(n < 2 ? 1 : n == 2 ? 2 : 6);
+}
+
+long h = n / 2, q = h * h;
+

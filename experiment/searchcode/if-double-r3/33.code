@@ -1,0 +1,6 @@
+public void execute(Program program, Map<String, Double> registerValues)
+{
+for (Register register : program.getRegisters())
+{
+if (!registerValues.containsKey(register.name)){
+

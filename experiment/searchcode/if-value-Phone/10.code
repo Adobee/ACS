@@ -1,0 +1,11 @@
+return anonymeService.anonymisedList(toPhoneList(stolens));
+}
+
+@RequestMapping(value = &quot;/{phoneId}&quot;,method = RequestMethod.GET)
+public PhoneDTO getPhone(@PathVariable long phoneId){
+System.out.println(&quot;ID : &quot; + phoneId);
+
+Phone phoneById = phoneRepository.findById(phoneId);
+
+if (phoneById == null)
+

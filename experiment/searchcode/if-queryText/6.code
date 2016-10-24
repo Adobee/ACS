@@ -1,0 +1,9 @@
+querytext = querytext + &quot; ?x a :Episode . ?x :Episode_Title ?y .&quot;;
+} else if(productionFilter.equals(Global.prodkindSeasons)) {
+querytext = querytext + &quot; ?x a :Season . ?x :Season_Number ?z . ?x :Season_SeriesTitle ?y .&quot;;
+querytext = querytext + &quot; ?x a :Series . ?x :Series_Title ?y .&quot;;
+}
+if(roleFilter.equals(Global.roleActors)) {
+querytext = querytext + &quot; ?j a :Actor .&quot;;
+} else if(roleFilter.equals(Global.roleProducers)) {
+

@@ -1,0 +1,5 @@
+public PlanBot(double radius, int color, long scatterTime, long chaseTime, int movesAhead) {
+super(radius, color);
+protected MazeDirection getNextDirection(MazeDirection currentDirection, double targetXD, double targetYD, double targetYaw, Maze2D maze) {
+if (System.currentTimeMillis() % (SCATTER_TIME + CHASE_TIME) < SCATTER_TIME) {
+

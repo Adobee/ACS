@@ -1,0 +1,9 @@
+decision.setComparisonDecision(readDecision(doc, XPATH_COMPARISON_DECISION));
+Decision sessionDecision=readDecision(doc, XPATH_SESSION_DECISION);
+if(sessionDecision==null){
+String decisionString=expr.evaluate(doc, XPathConstants.STRING).toString();
+if(decisionString.isEmpty()){
+return null;
+}
+return Decision.valueOf(decisionString);
+

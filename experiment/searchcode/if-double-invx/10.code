@@ -1,0 +1,7 @@
+public double targetLongitude;  // in degrees: where to land
+public int    DOISpecified;     // 0=no DOI specified 1=DOI specified
+double inY,
+double inA,
+double inVx,
+double inVy,
+

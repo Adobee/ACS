@@ -1,0 +1,20 @@
+public class Problem2 {
+double p2 {
+int sum = 0;
+int f1 = 1;
+int f2 = 2;
+
+while (x <= 4000000) {
+if (x % 2 == 0) {
+sum += x;
+}
+
+int fn  = f1 + f2;
+f1 = f2;
+f2 = fn;
+}
+
+return sum;
+}
+}
+

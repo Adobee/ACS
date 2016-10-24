@@ -1,0 +1,9 @@
+for (int i = 1; i < distr.getNumberOfDistribtionParameters() + 1; i++) {
+if (smoothMatrices.get(i) != null) {
+sigmasHash.put(i, new Double[] {Controls.RW_SIG2E, Controls.RW_SIG2B});
+optimizer = new BOBYQAOptimizer(Controls.BOBYQA_INTERPOL_POINTS);
+
+
+if (Controls.SIG2E_FIX) {
+if (Controls.SIG2B_FIX) {
+

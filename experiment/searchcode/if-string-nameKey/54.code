@@ -1,0 +1,14 @@
+for (Map.Entry<String, IModel> e : modelMap.entrySet()) {
+String nameKey = e.getKey();
+if (nameKey.equalsIgnoreCase(name)) {
+model = e.getValue();
+for (Map.Entry<String, IModel> e : modelMap.entrySet()) {
+String nameKey = e.getKey();
+nameList.add(nameKey);
+}
+Collections.sort(nameList);
+return nameList;
+}
+
+}
+

@@ -1,0 +1,9 @@
+static public Date getFirstConflictDate(final Date fromDate, Date toDate,
+Appointment a1, Appointment a2) {
+Date minEnd =  a1.getMaxEnd();
+if ( a1.getMaxEnd() != null &amp;&amp; a2.getMaxEnd() != null &amp;&amp; a2.getMaxEnd().before( a1.getMaxEnd())) {
+minEnd = a2.getMaxEnd();
+}
+Date maxStart = a1.getStart();
+if ( a2.getStart().after( a1.getStart())) {
+

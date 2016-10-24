@@ -1,0 +1,10 @@
+import com.mojang.herpfortress.entity.Entity;
+
+public class MeatDebris extends Debris {
+public MeatDebris(double x, double y, double z) {
+super(x, y, z);
+public void collide(Entity e, double xxa, double yya, double zza) {
+if (za < -0.5) {
+for (int i = 0; i < 20; i++) {
+Debris blood = new BloodDebris(x, y, 0);
+

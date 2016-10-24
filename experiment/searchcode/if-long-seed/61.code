@@ -1,0 +1,16 @@
+* @author: Neeti Saxena
+* @version: 1
+*/
+public class SeedInteger3 {
+
+private int seed;
+private long seedValue;
+this.seed = seed;
+}
+
+public long getSeedValue() {
+return seedValue;
+}
+
+public void setSeedValue(long seedValue) {
+

@@ -1,0 +1,7 @@
+/** returns root cause of exception chain.
+* If no cause exists, returns &#39;ex&#39;.
+* The limit for parent&#39;s is 1000 due potential never-ending loop.
+public static RuntimeException runtime(Throwable ex) {
+if(ex instanceof RuntimeException) {
+return (RuntimeException) ex;
+

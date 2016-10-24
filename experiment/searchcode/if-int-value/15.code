@@ -1,0 +1,12 @@
+public int[][] generateMatrix(int n) {
+int[][] matrix = new int[n][n];
+int x = 0;
+int y = 0;
+int value = 1;
+value++;
+y++;
+}
+for (int i = 0; i < k; i++) {
+matrix[x][y] = value;
+value++;
+

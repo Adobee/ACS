@@ -1,0 +1,6 @@
+private static long ni(long n, long i) {
+if (n == 0 || i == 0 || n == i) return 1;
+if (0 < i &amp;&amp; i < n) return ni(n - 1, i - 1) + ni(n - 1, i);
+protected void execute(Scanner in, PrintStream out) {
+for (long m = in.nextLong(), n = in.nextLong();
+

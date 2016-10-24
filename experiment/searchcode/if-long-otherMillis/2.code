@@ -1,0 +1,11 @@
+long otherMillis = o.getDelay(TimeUnit.MILLISECONDS);
+int result;
+if (thisMillis > otherMillis) {
+result = 1;
+} else if (thisMillis < otherMillis) {
+result = -1;
+} else {
+result = 0;
+}
+return result;
+

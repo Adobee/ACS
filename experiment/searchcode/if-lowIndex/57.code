@@ -1,0 +1,9 @@
+int midIndex = (highIndex - lowIndex) / 2;
+int minIndex = lowIndex;
+if(sArray[highIndex] > sArray[lowIndex]){ // meaning it&#39;s not rotated, only sorted
+return minIndex;
+}
+
+if(sArray[highIndex] < sArray[lowIndex] &amp;&amp; length <= 2){
+minIndex = highIndex;
+

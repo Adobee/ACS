@@ -1,0 +1,6 @@
+public double toMillis(double d)  { return d/(C2/C0); }
+public double toSeconds(double d) { return d/(C3/C0); }
+public double toMillis(double d)  { return d/(C2/C1); }
+public double toSeconds(double d) { return d/(C3/C1); }
+public double convert(double d, TimeUnit u) { return u.toMicros(d); }
+

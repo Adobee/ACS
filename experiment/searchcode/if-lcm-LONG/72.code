@@ -1,0 +1,8 @@
+private long calculate(long upTo) {
+long lcm = 1;
+long answer = 0;
+for (int i = 2; upTo > 1; i++) {
+long nLcm = IntegerUtils.lcm(i, lcm);
+long times = nLcm / lcm;
+if (times != 1) {
+

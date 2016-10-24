@@ -1,0 +1,13 @@
+int length = s.length();
+
+if (length == 1 || nRows == 1)
+{
+return s;
+}
+int i = length / (nRows * 2 - 2);
+int j = length % (nRows * 2 - 2);
+int col = 0;
+if (j == 0)
+{
+col = i * (nRows - 1);
+

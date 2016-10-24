@@ -1,0 +1,8 @@
+public boolean equals(Object o) {
+if (this == o) return true;
+if (!(o instanceof UpdateDto)) return false;
+
+UpdateDto updateDto = (UpdateDto) o;
+
+if (updateId != null ? !updateId.equals(updateDto.updateId) : updateDto.updateId != null) return false;
+

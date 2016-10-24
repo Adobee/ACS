@@ -1,0 +1,11 @@
+@Override
+public void resume() {
+checkRealm();
+pauseDepth--;
+if (pauseDepth < 0) {
+throw new IllegalStateException(&quot;The resume() method was called more times than pause().&quot;);
+} else if (dirty &amp;&amp; pauseDepth == 0) {
+scheduleUpdate();
+}
+}
+

@@ -1,0 +1,8 @@
+List<Expr> minusList = new ArrayList<>();
+scan(1, e, plusList, minusList);
+//boolean removed = false;
+for( Iterator<Expr> it = plusList.iterator(); it.hasNext(); ){
+Comparator<Expr> normExprComparator = (o1, o2) -> o1.toLispString().compareTo(o2.toLispString());
+if( plusList.size()>1 ) {
+Collections.sort(plusList, normExprComparator);
+

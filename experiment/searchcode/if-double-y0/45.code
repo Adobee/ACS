@@ -1,0 +1,10 @@
+double x1_inner,
+double x0_outer,
+double x1_outer,
+double y0_inner,
+double y1_inner,
+double y0_outer,
+double denom = (x1_inner-x0_inner)*(y0_outer-y1_outer) - (y1_inner-y0_inner)*(x0_outer-x1_outer);
+if(denom==0)
+return null;
+

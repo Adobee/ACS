@@ -1,0 +1,12 @@
+public class TournamentComparatorByDate implements Comparator<Tournament> {
+
+private boolean inverse;
+
+public TournamentComparatorByDate(boolean inverse) {
+this.inverse = inverse;
+}
+
+@Override
+public int compare(Tournament lhs, Tournament rhs) {
+if (lhs.getId().equals(rhs.getId())) {
+

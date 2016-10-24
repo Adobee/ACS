@@ -1,0 +1,14 @@
+SourceLocation l = aNode.getLocation();
+if (l == null)
+return;
+
+if (isCloser(l.fLine, l.fCol)) {
+fClosestNode = aNode;
+fClosestLine = l.fLine;
+fClosestCol = l.fCol;
+}
+
+}
+
+private boolean isCloser(int aLine, int aCl) {
+

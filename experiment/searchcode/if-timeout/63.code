@@ -1,0 +1,14 @@
+public class TimeoutThread extends Thread {
+/***
+* 计时器超时时间
+*/
+private long timeout;
+/***
+* 计时是否被取消
+public void run() {
+try {
+Thread.sleep(timeout);
+
+if (!isCanceled)
+throw timeoutException;
+

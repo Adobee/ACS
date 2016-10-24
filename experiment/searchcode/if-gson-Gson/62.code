@@ -1,0 +1,10 @@
+package com.liuruining.model;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+public synchronized static GsonProvider getInstance() {
+if (provider == null) {
+provider = new GsonProvider();
+}
+return provider;
+

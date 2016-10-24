@@ -1,0 +1,11 @@
+public class GameActivity extends FragmentActivity {
+
+String courseName;
+int numHoles = 0;
+
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+String StrHoles = intent.getStringExtra(NewCourseActivity.EXTRA_HOLES);
+try {
+numHoles = Integer.parseInt(StrHoles);
+

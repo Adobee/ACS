@@ -1,0 +1,10 @@
+import com.artemis.Component;
+
+public class Timer extends Component {
+private long finishedTime;
+int waitTime;
+
+public Timer(int waitTime) {
+this.waitTime = waitTime;
+this.finishedTime = new Date().getTime() + waitTime;
+

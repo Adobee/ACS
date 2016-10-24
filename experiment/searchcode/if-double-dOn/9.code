@@ -1,0 +1,6 @@
+// A program that prompts the user to enter four endpoints and displays the intersecting point.
+// If the line segments don&#39;t intersect, display that they do not intersect.
+System.out.print(&quot;Enter x1, y1, x2, y2, x3, y3, x4, y4: &quot;);// prompt user for input
+double x1 = input.nextDouble();
+double y1 = input.nextDouble();
+

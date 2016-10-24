@@ -1,0 +1,10 @@
+//final methods cannot be overwritten in subclasses
+public final boolean search(T m) {
+boolean found = false;
+this.init();
+while (!found &amp;&amp; !this.isEmpty()) {
+T k = this.select();
+if (m.equals(k))
+found = true;
+else
+

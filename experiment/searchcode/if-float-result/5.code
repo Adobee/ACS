@@ -1,0 +1,8 @@
+private static float[] array_result;
+
+public static float[] scalMult(float[] v1, float k){
+float[] result = new float[v1.length];
+public static float [] addVector(float[] array_one, float[] array_two){
+array_result = new float[array_one.length];
+if(array_one.length != array_two.length){
+

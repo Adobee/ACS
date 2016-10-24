@@ -1,0 +1,8 @@
+private void constructTree() {
+//selector login
+Node inGameQ = new Leaf(() -> {
+int q = reader.getRawColor(WoW.X + WoW.STATUS_OFFSET_X, WoW.Y + WoW.STATUS_OFFSET_Y);
+Node enterPass = new Leaf(() -> {
+log.info(&quot;entering pass&quot;);
+if(&quot;&quot;.equals(WoW.PASS)){
+

@@ -1,0 +1,12 @@
+public double start() {
+double n = 600851475143L;
+while (true){
+double p = smallNumber(n);
+return n;
+}
+}
+}
+
+private static double smallNumber(double n){
+for (double i = 2, end = Math.sqrt(n); i <= end; i++){
+

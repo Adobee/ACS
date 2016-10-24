@@ -1,0 +1,9 @@
+suserMap.put(&quot;email&quot;, suser.getEmail());
+}
+suserMap.remove(&quot;rid&quot;);
+int affectedRows = 0;
+if (suserMap.get(&quot;uid&quot;) != null) {
+params.put(&quot;uid&quot;, Integer.parseInt(uid));
+params.put(&quot;password&quot;, password);
+int affectedRows = this.sqlSession.delete(NAMESPACE + &quot;modifySPassword&quot;, params);
+

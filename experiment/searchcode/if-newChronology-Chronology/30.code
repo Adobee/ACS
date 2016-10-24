@@ -1,0 +1,8 @@
+chronology = DateTimeUtils.getChronology(chronology).withUTC();
+iChronology = chronology;
+if (type == null) {
+throw new IllegalArgumentException(&quot;The field type must not be null&quot;);
+newChronology = DateTimeUtils.getChronology(newChronology);
+newChronology = newChronology.withUTC();
+if (newChronology == getChronology()) {
+

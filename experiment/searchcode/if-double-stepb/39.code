@@ -1,0 +1,9 @@
+private int stepB = 20;
+private int invalidColor = Color.WHITE.getRGB();
+private double baseLabL = 75;
+int offY = getDiagramAreaY();
+
+ic.fillRect(offX, offY, dw, dh, invalidColor);
+
+double labL = getBaseLabL();
+

@@ -1,0 +1,9 @@
+static int adjustYearForSet(int year) {
+if (year <= 0) {
+if (year == 0) {
+throw new IllegalFieldValueException
+int relativeYear = year - 1968;
+int leapYears;
+if (relativeYear <= 0) {
+// Add 3 before shifting right since /4 and >>2 behave differently
+

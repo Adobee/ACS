@@ -1,0 +1,15 @@
+static void big(int r, int c) {
+paint(r + 2, c);
+
+paint(r + 1, c - 1);
+paint(r + 1, c);
+paint(r + 1, c + 1);
+paint(r, c - 1);
+paint(r, c);
+paint(r, c + 1);
+paint(r - 1, c);
+}
+
+static void paint(int r, int c) {
+if (r < 0 || r >= 10 || c < 0 || c >= 10) {
+

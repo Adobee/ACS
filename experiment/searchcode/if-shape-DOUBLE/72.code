@@ -1,0 +1,12 @@
+Application.dragBiz = new SeriDragPanelBiz();
+}
+
+public BaseDataShape createMenuShapeByType(String type) {
+BaseDataShape shape = null;
+// 序列图
+if (type.equals(ShapeHelper.SERI_ACTIVE)) {
+SeriActiveShape active = new SeriActiveShape();
+active.setH(40);
+shape = active;
+} else if (type.equals(ShapeHelper.SERI_CONSTRAIN)) {
+

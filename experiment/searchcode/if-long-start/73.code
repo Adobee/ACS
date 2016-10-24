@@ -1,0 +1,12 @@
+public class Range implements Comparable, Saveable {
+
+protected long start, stop;
+protected int intStart, intStop;
+
+public Range(long start, long stop) {
+intStop = (int)stop;
+}
+
+public Range(DataInputStream dis) throws IOException {
+start = dis.readLong();
+

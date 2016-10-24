@@ -1,0 +1,7 @@
+public LatexParagraphRenderer(CrossMediaManager cmm,DefaultSettingsManager dsm,boolean preBlankLine)
+{
+super(cmm,dsm);
+if(preBlankLine){preTxt.add(&quot;&quot;);}
+else if(o instanceof Emphasis){renderEmphasis(sb, (Emphasis)o);}
+else if(o instanceof Image){logger.info(&quot;INLINE Image NYI&quot;);}
+

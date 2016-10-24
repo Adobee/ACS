@@ -1,0 +1,8 @@
+public static final boolean FROM = true, ALL = false;
+protected boolean isStop = false;
+protected Stopable up = null, down = null;
+
+public synchronized void stop(boolean w){
+if(isStop)
+return;
+

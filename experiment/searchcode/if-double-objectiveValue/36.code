@@ -1,0 +1,9 @@
+private Double                            objectiveValue;
+
+private Double                            bound;
+
+private double                            gap                  = Double.POSITIVE_INFINITY;
+public double getObjectiveValue () {
+if (objectiveValue == null) {
+final ObjectiveSense programSense = program.determineProgramObjectiveSense ();
+

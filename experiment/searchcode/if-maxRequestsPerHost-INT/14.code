@@ -1,0 +1,7 @@
+public synchronized void setMaxRequests(int maxRequests) {
+if (maxRequests < 1) {
+throw new IllegalArgumentException(&quot;max < 1: &quot; + maxRequests);
+* proxy.
+*
+* <p>If more than {@code maxRequestsPerHost} requests are in flight when this is invoked, those
+

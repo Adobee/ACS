@@ -1,0 +1,10 @@
+int floored_value =(int) Math.floor(value);
+//整数のとき
+if(value-floored_value == 0){
+return factorial(floored_value);
+}
+//0.5刻みの時
+else if(value-floored_value == 0.5){
+floored_value +=1;
+return factorial(2*floored_value)*Math.sqrt(Math.PI)
+

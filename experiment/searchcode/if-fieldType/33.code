@@ -1,0 +1,9 @@
+static FieldType getFieldType(int type) {
+FieldType toReturn = typeMap.get(type);
+if(toReturn == null) {
+toReturn = FieldType.UNKNOWN;
+static FieldType getFieldType(String type) {
+FieldType fieldType = FieldType.SINGLE_LINE;
+if(type.equals(&quot;MULTI_SELECT&quot;)) {
+fieldType = FieldType.MULTISELECT;
+

@@ -1,0 +1,7 @@
+Integer pivotRow = getPivotRow(tableau, pivotCol);
+if (pivotRow == null) {
+throw new UnboundedSolutionException();
+// set the rest of the pivot column to 0
+for (int i = 0; i < tableau.getHeight(); i++) {
+if (i != pivotRow) {
+

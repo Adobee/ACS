@@ -1,0 +1,11 @@
+startGuessing();
+}
+
+private boolean checkRules()
+{
+if(checkHorizontalConsecutiveViolation() == true || checkVerticalConsecutiveViolation() == true || checkNumberOfPebblesHorizontalViolation() == true || checkNumberOfPebblesVerticalViolation() == true)
+while(getEmptyPositionRow() != -1)
+{
+shortcutFill();
+if (Arrays.deepEquals(tempBoard, CopyArray.copyArray(board.getArray())))
+

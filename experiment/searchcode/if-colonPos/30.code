@@ -1,0 +1,9 @@
+int colonPos = vncServerName.indexOf(&#39;:&#39;);
+if (colonPos == 0)
+return &quot;localhost&quot;;
+if (colonPos == -1)
+int colonPos = vncServerName.indexOf(&#39;:&#39;);
+if (colonPos == -1 || colonPos == vncServerName.length()-1)
+return 5900;
+if (vncServerName.charAt(colonPos+1) == &#39;:&#39;) {
+

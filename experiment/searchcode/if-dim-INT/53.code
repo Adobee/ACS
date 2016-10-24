@@ -1,0 +1,11 @@
+public void setDimH(double dimH) {
+this.dimH = dimH;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj) return true;
+public int hashCode() {
+int hash = 7;
+hash = 67 * hash + (int) (Double.doubleToLongBits(this.dimL) ^ (Double.doubleToLongBits(this.dimL) >>> 32));
+

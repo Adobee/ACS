@@ -1,0 +1,10 @@
+public abstract class ValueAxis extends Axis implements Serializable, Cloneable, PublicCloneable {
+private static final long serialVersionUID = 3698345477322391456L;
+public static final Range DEFAULT_RANGE = new Range(0.0D, 1.0D);
+this.fixedAutoRange = var1;
+if(this.isAutoRange()) {
+this.autoAdjustRange();
+}
+
+this.notifyListeners(new AxisChangeEvent(this));
+

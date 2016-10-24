@@ -1,0 +1,14 @@
+private class GetHighScoresTask extends AsyncTask<Void, Void, Boolean> {
+
+protected Boolean doInBackground(Void... voids) {
+
+boolean shouldRefresh = false;
+
+HighscoresHelper hs = new HighscoresHelper();
+shouldRefresh = true;
+return shouldRefresh;
+}
+@Override
+protected void onPostExecute(Boolean shouldRefresh) {
+if (shouldRefresh) {
+

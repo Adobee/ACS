@@ -1,0 +1,13 @@
+package com.pkoding.recognizer.lexer;
+
+import com.pkoding.recognizer.scope.*;
+
+public class Token {
+public Scope scope() {
+return scope;
+}
+
+public String toString() {
+if (type == TokenType.VARIABLE)
+return &quot;(&quot; + name + &quot;, &quot; + type + &quot;, &quot; + ((scope != null) ? scope.name : scope) + &quot;)&quot;;
+

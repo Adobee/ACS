@@ -1,0 +1,8 @@
+charFound[i] = 0;
+}
+
+int pp = 0, np = 0, minLength = Integer.MAX_VALUE, count = 0;
+int ansPp = -1, ansNp = -1;
+for (; np < sou.length; np++) {
+if (charNeed[sou[np]] == 0)
+

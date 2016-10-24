@@ -1,0 +1,11 @@
+private CMISSessionFacade sessionFacade;
+private boolean queryMode;
+
+public CMISEndpoint() {
+}
+
+public CMISEndpoint(String uri, CMISComponent component) {
+public Producer createProducer() throws Exception {
+if (this.queryMode) {
+return new CMISQueryProducer(this, sessionFacade);
+

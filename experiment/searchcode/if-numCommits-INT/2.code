@@ -1,0 +1,15 @@
+public double measure(File repoRoot) throws Exception {
+String[] commits = GitRevisionHelpers.listAllRevisions(repoRoot);
+
+int numCommits = commits.length;
+churnedLocSum += stats.getChurnedLoc();
+}
+
+if(numCommits == 0) {
+return 0.0;
+} else {
+return (double)churnedLocSum / (double)numCommits;
+}
+}
+}
+

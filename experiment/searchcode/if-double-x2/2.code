@@ -1,0 +1,11 @@
+class SolutionPow {
+
+public double pow(double x, int n) {
+boolean sign = true;
+if (n < 0) {
+if (n == 2) {
+return (sign)? x*x : 1/(x*x);
+}
+if (n%2 == 1) {
+double x2 = pow(x, n/2);
+

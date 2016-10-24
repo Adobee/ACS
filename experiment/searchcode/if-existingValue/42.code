@@ -1,0 +1,15 @@
+return(false);
+return(true);
+}
+
+@Override
+public void resetToExisting() {
+if (existingValue == null)
+existingValue = (DmcTypeTdlModuleREFSV) attr;
+if (existingValue != null)
+value = existingValue.getSVCopy();
+}
+
+@Override
+public boolean valueChanged(){
+

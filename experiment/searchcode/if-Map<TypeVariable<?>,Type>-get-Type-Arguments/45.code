@@ -1,0 +1,6 @@
+Map<TypeVariable<?>, Type> map = new HashMap<TypeVariable<?>, Type>();
+if (!p1.getRawType().equals(p2.getRawType())) {
+logger.debug(&quot;Raw types do not match!&quot;);
+logger.debug(p1 +&quot; is a super type of &quot;+p2);
+Map<TypeVariable<?>, Type> commonsMap = TypeUtils.determineTypeArguments((Class<?>)p2.getRawType(), p1);
+

@@ -1,0 +1,7 @@
+private Collector createCollector(AtomicReaderContext reader) {
+
+// if rehash is false then the value source is either already hashed, or the user explicitly
+final long maxOrd = ordinalValues.getValueCount();
+if (maxOrd == 0) {
+return new EmptyCollector();
+

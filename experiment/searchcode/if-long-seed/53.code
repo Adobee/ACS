@@ -1,0 +1,16 @@
+private static Random singleton = null;
+private long seed;
+
+public static Random getInstance() {
+if (singleton == null){
+singleton = new Random();
+}
+return singleton;
+}
+
+public long getSeed() {
+return seed;
+}
+
+@Override
+

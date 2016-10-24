@@ -1,0 +1,8 @@
+checkNotNull(builder.space, &quot;Space ID must be provided.&quot;);
+if (builder.callFactory == null) {
+checkNotNull(builder.token, &quot;A token must be provided, if no call factory is specified.&quot;);
+final Call.Factory callFactory;
+
+if (clientBuilder.callFactory == null) {
+OkHttpClient.Builder okBuilder = new OkHttpClient.Builder()
+

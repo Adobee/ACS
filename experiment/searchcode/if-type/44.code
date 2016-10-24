@@ -1,0 +1,18 @@
+package gdi_object;
+
+public enum FontType {
+TextType(1),
+HeaderType(2);
+
+private int mType;
+public static FontType getType(byte id) {
+
+for (FontType type : FontType.values()) {
+if (type.getType() == id)
+return type;
+}
+
+return FontType.TextType;
+}
+}
+

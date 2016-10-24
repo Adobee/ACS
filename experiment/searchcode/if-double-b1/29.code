@@ -1,0 +1,12 @@
+public Sjx(int a, int b, int c) throws NotSjxException
+{
+this.a1 = a;
+this.b1 = b;
+this.c1 = c;
+if((a1 + b1 <= c1) || (a1 + c1 <= b1) || (b1 + c1 <= a1))
+{
+throw new NotSjxException(&quot;a，b，c不能构成三角形!!!!&quot;);
+}
+}
+public double getArea()
+

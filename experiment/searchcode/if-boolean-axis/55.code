@@ -1,0 +1,11 @@
+public static final DSignedAxis MD3 = new DSignedAxis(-3);
+public static final DSignedAxis MD4 = new DSignedAxis(-4);
+
+boolean pos;
+int axis; // -1 means diffuse direction
+* -1,-2,-3,-4,... are the negative axes
+* 0 is not allowed as value
+*/
+public DSignedAxis(int i) {
+if (i==0) { pos = true; axis = -1; }
+

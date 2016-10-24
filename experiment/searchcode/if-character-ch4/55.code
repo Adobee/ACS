@@ -1,0 +1,9 @@
+for (int i = 0; i < password.length(); i++) {
+if (Character.isLowerCase(password.charAt(i))) {
+lowerCaseCounter++;
+}
+if (Character.isUpperCase(password.charAt(i))) {
+upperCaseCounter++;
+}
+if (Character.isDigit(password.charAt(i))) {
+

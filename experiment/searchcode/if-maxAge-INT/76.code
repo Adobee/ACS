@@ -1,0 +1,9 @@
+public class CleaningCompressingRollingFileAppender extends CompressingRollingFileAppender {
+
+int                     maxAge          = -1;
+public static final int AMX_AGE_DEFAULT = 30;
+public void setMaxAge(int maxAge) {
+if (maxAge > 1) {
+this.maxAge = maxAge;
+} else {
+

@@ -1,0 +1,14 @@
+private static final long serialVersionUID = 0xe2d57122f51e480bL;
+private final int a;
+private int b;
+return a;
+}
+
+final void a(int i) {
+b = i;
+}
+
+final void a(q q1) {
+if (e == null)
+e = new ArrayList();
+

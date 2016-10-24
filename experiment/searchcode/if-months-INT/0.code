@@ -1,0 +1,15 @@
+this.months = new HashMap<Integer, Months>();
+}
+
+Months retrieveMonths(int numeral) {
+
+Months result = getMonths(numeral);
+
+if (result == null) {
+addMonths(numeral, result);
+}
+return result;
+}
+
+private void addMonths(int numeral, Months month) {
+

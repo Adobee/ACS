@@ -1,0 +1,8 @@
+private final Logger logger = LogManager.getLogger(this.getClass());
+
+public boolean validate(SiteGraph siteGraph, String relativeUrl, long maxSize) {
+if (siteGraph.getInvalidUrls().contains(relativeUrl) || siteGraph.contains(relativeUrl) ||
+public boolean revalidate(SiteGraph siteGraph, String absoluteUrl, String relativeUrl,
+Response resp, long maxSize) {
+if (!resp.url().toString().startsWith(siteGraph.getBaseUrl())) {
+

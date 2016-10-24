@@ -1,0 +1,10 @@
+private static final boolean DEF_OBFUSCATE = false;
+
+/**
+* minimize 여부.
+*/
+private boolean minimize = DEF_MINIMIZE;
+String obfuscateParam = request.getParameter(&quot;obfuscate&quot;);
+if (obfuscateParam != null) {
+setObfuscate(Boolean.parseBoolean(obfuscateParam));
+

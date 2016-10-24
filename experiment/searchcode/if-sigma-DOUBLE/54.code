@@ -1,0 +1,8 @@
+* using the first few terms (plenty more available to add later)
+*/
+double sigmaL = 0.0;
+sigmaL = 6288774.0 * sinDegrees(Mp);
+sigmaL = sigmaL + 53322.*sinDegrees(2*D -Mp) ;
+sigmaL = sigmaL + 45758.*sinDegrees(2*D -M ) * E;
+if(DEBUG) Log.d(&quot;MP&quot;,&quot;sigma L (10 terms):  &quot; + new DecimalFormat(&quot;00.0000&quot;).format(sigmaL) );
+

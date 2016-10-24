@@ -1,0 +1,15 @@
+System.out.println(search(A, target));
+}
+public static int search(int[] A, int target) {
+if(A == null) { return -1; }
+return -1;
+}
+else {
+return 0;
+}
+}
+
+int start = 0;
+int end = A.length - 1;
+int mid = (start + end) / 2;
+

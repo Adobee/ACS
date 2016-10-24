@@ -1,0 +1,7 @@
+sInput2=new ObjectInputStream(socket2.getInputStream());
+
+obj2=(ShareMsg) sInput2.readObject();
+sOutput1.writeObject(obj1);
+obj2=(ShareMsg) sInput2.readObject();
+if(obj2.c1.card_val>obj1.c1.card_val)
+

@@ -1,0 +1,10 @@
+IJ.showProgress((double)i/nFrames);
+ipNew = ipOld.createProcessor(wNew, hNew);
+if (zeroFill)
+ipNew.setValue(0.0);
+ImageProcessor ipNew = ipOld.createProcessor(wNew, hNew);
+if (zeroFill)
+ipNew.setValue(0.0);
+else
+ipNew.setColor(Toolbar.getBackgroundColor());
+

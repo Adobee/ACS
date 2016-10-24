@@ -1,0 +1,7 @@
+List<String> results = new ArrayList<>();
+if(n <= 0) return results;
+genPartialParenthesis(&quot;&quot;, n, n, results);
+private void genPartialParenthesis(String partialStr, int left, int right, List<String> results){
+if(left == 0){
+while(right-- > 0) partialStr += &quot;)&quot;;
+

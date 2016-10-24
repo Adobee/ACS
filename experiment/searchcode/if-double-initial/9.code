@@ -1,0 +1,8 @@
+static final int D = 0;
+static final int V = 1;
+static final int C = 2;
+private double[] initial;
+boolean weighted;
+double[] weights;
+public DirectedMotionWithOffset(double[] initial, boolean weighted, double[] weights)
+

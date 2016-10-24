@@ -1,0 +1,10 @@
+public abstract class BaseSwipeRefreshActivity<P extends BasePresenter> extends BaseActivity<P> implements ISwipeRefreshView {
+
+private SwipeRefreshLayout mSwipeRefreshLayout;
+
+protected abstract SwipeRefreshLayout getSwipeRefreshLayout();
+mSwipeRefreshLayout.postDelayed(new Runnable() {
+@Override
+public void run() {
+if(mSwipeRefreshLayout != null){
+

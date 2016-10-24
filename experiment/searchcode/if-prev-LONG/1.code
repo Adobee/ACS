@@ -1,0 +1,19 @@
+public static void main( String[] args )
+{
+long max = 4000000;
+long prev = 1;
+long curr = 1;
+long sum = 0;
+while ( curr < max )
+{
+if ( curr % 2 == 0 )
+sum += curr;
+
+curr += prev;
+prev = curr - prev;
+}
+
+System.out.println(sum);
+}
+}
+

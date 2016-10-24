@@ -1,0 +1,9 @@
+private final Executor callbackExecutor;
+
+ExecutorCallAdapterFactory(Executor callbackExecutor) {
+this.callbackExecutor = callbackExecutor;
+}
+
+@Override
+public  CallAdapter< Call<?>> get(Type returnType, Annotation[] annotations,  Retrofit retrofit) {
+

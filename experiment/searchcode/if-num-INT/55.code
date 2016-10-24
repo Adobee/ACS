@@ -1,0 +1,10 @@
+public class Solution {
+public void nextPermutation(int[] num) {
+int k=-1;
+for(int i=num.length-1;i>=0;i--){
+Arrays.sort(num);
+}else{
+int m = 0;
+for(int j=num.length-1;j>=k;j--){
+if(num[j]>num[k-1]){
+

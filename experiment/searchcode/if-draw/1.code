@@ -1,0 +1,11 @@
+public class LottoResult {
+private long draw_id;
+private String _id; // for couchDB
+private String _rev; // for couchDB
+LottoResult other = (LottoResult) obj;
+if (draw_id != other.draw_id)
+return false;
+return true;
+}
+@Override
+

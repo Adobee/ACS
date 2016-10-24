@@ -1,0 +1,4 @@
+for (int lin = 0; lin < 3; lin++) {
+for (int col = 0; col < 3; col++) {
+if (values[lin+blockLine][col+blockColumn].value == number) {
+

@@ -1,0 +1,7 @@
+public static ImageOperation getImageOperation() {
+if (imageOperation == null) {
+try {
+imageOperation = SpringUtils.getBean(ImageOperation.class);
+} catch (Exception e) {
+if (imageOperation == null) {
+

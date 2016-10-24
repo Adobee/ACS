@@ -1,0 +1,10 @@
+* Basic send operation.
+*
+* @param sendBuffer
+*            send buffer array
+* @param offset
+*            message tag
+*/
+public int Send(Object sendBuffer, int offset, int count, int dest, int tag) {
+return Send(sendBuffer, offset, count, getDatatype(sendBuffer), dest, tag);
+

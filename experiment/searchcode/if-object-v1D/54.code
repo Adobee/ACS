@@ -1,0 +1,8 @@
+public class ElasticLayout extends AbstractLayout implements LayoutMutable {
+
+private static final Object SPRING_KEY = &quot;temp_edu.uci.ics.jung.Spring_Visualization_Key&quot;;
+public Object getSpringKey() {
+if (key == null)
+key = new Pair(this, SPRING_KEY);
+return key;
+

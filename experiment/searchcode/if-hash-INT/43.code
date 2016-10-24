@@ -1,0 +1,16 @@
+package responces;
+
+
+public class Token {
+
+private String hash;
+private int userId;
+
+public Token(String hash){
+public void setHash(String hash) {
+this.hash = hash;
+}
+
+public int getUserId(String hash) {
+if(hash.equals(this.hash))
+

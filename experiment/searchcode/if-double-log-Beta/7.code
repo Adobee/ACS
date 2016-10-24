@@ -1,0 +1,14 @@
+return Math.exp((alpha-1)*Math.log(x)+(beta-1)*Math.log(1-x)+factor);
+}
+
+@Override
+public double cdf(double x)
+return Functions.betaI(alpha, beta, x);
+}
+
+
+@Override
+public double idf(double p)
+{
+if (p==0)
+

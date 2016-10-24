@@ -1,0 +1,12 @@
+int i = -1;
+for(int k = len; k != 0; --k) {
+i = k %len;
+int pos = i;
+if(reach[i] != -1) {
+} else {
+int newpos = (pos + 1) % len;
+if(newpos == i) {
+return i;
+}
+if (reach[newpos] != -1) {
+

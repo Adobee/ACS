@@ -1,0 +1,13 @@
+float len = length();
+if (len > 0.0) {
+x /= len;
+y /= len;
+z /= len;
+}
+}
+public Vector3 getNormal() {
+float len = length();
+if (len > 0.0)
+return new Vector3(x / len, y / len, z / len);
+return Vector3.ZERO;
+

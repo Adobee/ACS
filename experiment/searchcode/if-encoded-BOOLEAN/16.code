@@ -1,0 +1,12 @@
+throw new InvalidKeyEncodingException(format);
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+
+EncodedKey that = (EncodedKey) o;
+
+if (!Arrays.equals(encodedKey, that.encodedKey)) return false;
+

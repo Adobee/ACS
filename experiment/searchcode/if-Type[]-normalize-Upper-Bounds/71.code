@@ -1,0 +1,9 @@
+this.type = type;
+}
+
+public void setNormalizedBounds(double lowerBound, double upperBound) {
+this.lowerBounds = lowerBound;
+private double logNormalize(double weight) {
+if (normalFactor == Double.MAX_VALUE) {
+normalFactor = (upperBounds-lowerBounds)/(maxLogWeight-minLogWeight);
+

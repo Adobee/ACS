@@ -1,0 +1,11 @@
+int bInt = ((j<0)?0: Character.getNumericValue(b.charAt(j)));
+ret = ((aInt ^ bInt)^plus) + ret;
+plus = ((aInt + bInt + plus) >1) ?1:0;
+}
+if (plus == 1)
+ret = &#39;1&#39;+ ret;
+return ret;
+
+}
+}
+

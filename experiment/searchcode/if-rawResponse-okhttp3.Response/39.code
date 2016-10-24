@@ -1,0 +1,9 @@
+call.enqueue(new okhttp3.Callback() {
+@Override public void onResponse(okhttp3.Call call, okhttp3.Response rawResponse)
+throw new NullPointerException(&quot;Call.Factory returned null.&quot;);
+}
+return call;
+}
+
+Response<T> parseResponse(okhttp3.Response rawResponse) throws IOException {
+

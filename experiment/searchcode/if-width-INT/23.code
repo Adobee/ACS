@@ -1,0 +1,10 @@
+private int n;
+private int width;
+
+public Neighborhood(int width, int height){
+this.n = height * width;
+this.width = width;
+}
+
+public int getNeighbor(int p, int pos){
+

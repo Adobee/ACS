@@ -1,0 +1,8 @@
+public static void remove(final String key){
+Support support = getSupport(key);
+if(null != support){
+Support support = getSupport(key.getName());
+if(null != support){
+support.shutdown();
+supportMap.remove(key.getName());
+

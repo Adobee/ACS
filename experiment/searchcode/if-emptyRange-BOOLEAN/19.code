@@ -1,0 +1,6 @@
+if (other instanceof EmptyRange) //All ranges contain the EmptyRange
+return 2;
+if (other instanceof InfiniteRange) //The InfiniteRange contains all other ranges
+return new EmptyRange<>();
+case 3: //If other contains this, subtracting other results in the EmptyRange
+

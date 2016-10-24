@@ -1,0 +1,19 @@
+package uebung05.aufgabe20;
+
+public class KartenDB {
+
+private int initialAmount;
+private int amount;
+this.initialAmount = amount;
+}
+
+public synchronized int reserve() {
+if (amount > 0) {
+amount--;
+return initialAmount - amount;
+}
+return -1;
+}
+
+}
+

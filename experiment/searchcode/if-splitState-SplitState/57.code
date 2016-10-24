@@ -1,0 +1,7 @@
+lzSplit = graph.states.get(splitState);
+if (verbosity >= 1)
+mainLog.println(&quot;Splitting: #&quot; + splitState + &quot;=&quot; + lzSplit);
+// need to build the corresponding zone
+action = ((STPGAbstrSimple) abstraction).getChoice(splitState, in).action;
+if (!storeValidZones) {
+

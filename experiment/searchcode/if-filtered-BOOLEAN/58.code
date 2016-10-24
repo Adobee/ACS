@@ -1,0 +1,12 @@
+import com.firebase.client.snapshot.Node;
+
+public class CacheNode {
+private final boolean filtered;
+private final boolean fullyInitialized;
+public boolean isFiltered() {
+return this.filtered;
+}
+
+public boolean isCompleteForPath(Path path) {
+if (path.isEmpty()) {
+

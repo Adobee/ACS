@@ -1,0 +1,7 @@
+public static final double DISTANCE_THRESHHOLD = 20;
+
+public double getFilteredDistance(){
+double newDistance = Sensors.getUltrasonicDistance();
+if(setupCounter < distanceHistory.length){
+if(newDistance < RobotConstants.MAX_RELEVANT_ULTRASONIC_VALUE){
+

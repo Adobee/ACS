@@ -1,0 +1,17 @@
+private DenseMatrix64F B = new DenseMatrix64F(1,1);
+private DenseMatrix64F gradient;
+
+
+private double gBg;
+private double gnorm;
+
+private boolean maxStep;
+public void computeStep( double regionRadius , DenseMatrix64F step) {
+
+double dist;
+
+double normRadius = regionRadius/gnorm;
+
+if( gBg == 0 ) {
+dist = normRadius;
+

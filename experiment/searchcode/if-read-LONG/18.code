@@ -1,0 +1,12 @@
+public class LimitInputStream extends InputStream {
+private final InputStream bk;
+private final long limit;
+private long read;
+
+public LimitInputStream(InputStream bk, long limit) {
+public int available() throws IOException {
+int av = bk.available();
+synchronized(this) {
+if(av > limit - read)
+av = (int)(limit - read);
+

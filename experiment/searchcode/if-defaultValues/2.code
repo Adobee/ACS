@@ -1,0 +1,8 @@
+public class DefaultValueProvider implements IDefaultValueProvider {
+private static Map<Class<?>, Object> defaultValues = defaultValues();
+
+@SuppressWarnings(&quot;unchecked&quot;)
+@Override
+public <T> T getValueFor(Class<T> type) {
+T defaultValue = (T) defaultValues.get(type);
+

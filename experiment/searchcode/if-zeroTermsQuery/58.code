@@ -1,0 +1,13 @@
+public static enum Type {
+BOOLEAN,
+PHRASE,
+PHRASE_PREFIX
+}
+
+public static enum ZeroTermsQuery {
+protected MultiTermQuery.RewriteMethod fuzzyRewriteMethod;
+
+protected boolean lenient;
+
+protected ZeroTermsQuery zeroTermsQuery = ZeroTermsQuery.NONE;
+

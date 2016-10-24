@@ -1,0 +1,9 @@
+* @throws IllegalArgumentException if chronology is null
+*/
+public static StrictChronology getInstance(Chronology base) {
+if (base == null) {
+if (zone == getZone()) {
+return this;
+}
+return StrictChronology.getInstance(getBase().withZone(zone));
+

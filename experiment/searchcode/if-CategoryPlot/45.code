@@ -1,0 +1,10 @@
+import javax.swing.event.ChangeListener;
+import org.jfree.chart.*;
+import org.jfree.chart.axis.*;
+import org.jfree.chart.plot.CategoryPlot;
+public void actionPerformed(ActionEvent actionevent)
+{
+if (CategoryLabelPositionsDemo1.verticalRadioButton.isSelected())
+{
+CategoryPlot categoryplot = (CategoryPlot)CategoryLabelPositionsDemo1.chart.getPlot();
+

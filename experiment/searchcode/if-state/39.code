@@ -1,0 +1,7 @@
+public class StateFactory
+{
+static PlayState create( State state ) {
+if ( state == State.NULL) return PlayState.Empty;
+if ( state == State.PLAYING) return PlayState.Playing;
+if ( state == State.PAUSED) return PlayState.Paused;
+

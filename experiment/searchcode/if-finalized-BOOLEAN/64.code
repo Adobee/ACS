@@ -1,0 +1,16 @@
+public PromotionQualifier split(int splitItemQty) {
+PromotionQualifier returnQualifier = copy();
+int newQty = finalizedQuantity - splitItemQty;
+
+if (newQty <= 0) {
+returnQualifier.setFinalizedQuantity(splitItemQty);
+
+return returnQualifier;
+}
+
+public boolean isFinalized() {
+return quantity == finalizedQuantity;
+}
+
+}
+

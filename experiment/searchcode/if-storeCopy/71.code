@@ -1,0 +1,10 @@
+public PermissionInfo[] getDefaultPermissions()
+{
+synchronized (m_store)
+{
+if (m_default == null)
+synchronized (m_store)
+{
+storeCopy = new HashMap(m_store);
+if (permissions != null)
+

@@ -1,0 +1,13 @@
+private static final long serialVersionUID = -5709937488611212822L;
+
+private String errorMessage;
+private Exception cause;
+this(errorMessage,null);
+}
+
+@Override
+public void printStackTrace()
+{
+if(cause != null)
+cause.printStackTrace();
+

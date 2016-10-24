@@ -1,0 +1,8 @@
+private GenericArrayList<MessageData> contents = new GenericArrayList<MessageData>();
+
+public Message(MessageType type) {
+this.type = type;
+public <T extends MessageData> boolean has(Class<T> type) {
+if (this.contents.hasOne(type)) {
+return true;
+

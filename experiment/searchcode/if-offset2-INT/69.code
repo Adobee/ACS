@@ -1,0 +1,12 @@
+int[] m = new int[length1 + length2];
+
+for (int k = length2 - 1, offset2 = 0; k >= 0; k--, offset2++) {
+for (int i = length1 - 1, offset1 = 0; i >= 0; i--, offset1++) {
+m[length1 + length2 - 1 - offset1 - offset2] += (num1.charAt(i) - &#39;0&#39;)
+* (num2.charAt(k) - &#39;0&#39;);
+}
+}
+
+int add = 0;
+for (int t = length1 + length2 - 1; t >= 0; t--) {
+

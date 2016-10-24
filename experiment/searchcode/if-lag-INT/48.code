@@ -1,0 +1,11 @@
+public class BasicLagger implements Lagger {
+
+private int minLag;
+private int maxLag;
+private Instances data;
+private void eliminateNull() {
+for (int i = 0; i < 2 * maxLag; i++) {
+data.remove(0);
+}
+if (!customized) {
+

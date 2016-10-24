@@ -1,0 +1,14 @@
+public class GP {
+
+private double initial = 0;
+private double ratio = 0;
+private double[] gp = new double[1000000];
+this.ratio = ratio;
+this.gp[0] = initial;
+
+}
+
+public double calculateNth(int n){
+if(n - 1 > 0) {
+return calculateNth(n-1) * this.ratio;
+

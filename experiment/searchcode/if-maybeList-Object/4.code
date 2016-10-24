@@ -1,0 +1,5 @@
+public List<String> getStringList(final BasicDBObject bson, final String key) {
+final Object maybeList = bson.get(key);
+List<String> result = null;
+if (maybeList != null &amp;&amp; maybeList instanceof BasicDBList) {
+

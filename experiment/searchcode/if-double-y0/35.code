@@ -1,0 +1,11 @@
+* @author tyanhly
+*/
+public class CircleEquation {
+/**
+* (x-x0)^2 + (y-y0)^2 - R^2 = 0
+*/
+private double x0;
+public double getX(double y) throws Exception{
+if(y-y0 > R){
+throw new Exception(&quot;y-y0>R; Data fail&quot;);
+

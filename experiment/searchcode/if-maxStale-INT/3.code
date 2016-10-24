@@ -1,0 +1,12 @@
+this.context = context;
+}
+
+public void setMaxStale(int maxStale) {
+this.maxStale = &quot;max-stale=&quot; + maxStale;
+}
+
+public void setMaxAge(int maxAge) {
+conn.addRequestProperty(&quot;Cache-Control&quot;, maxAge);
+} else if (maxStale != null) {
+conn.addRequestProperty(&quot;Cache-Control&quot;, maxStale);
+

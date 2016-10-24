@@ -1,0 +1,10 @@
+package view.localeresolvers;
+
+import java.util.Locale;
+
+import javax.servlet.http.HttpServletRequest;
+Locale locale= (Locale) request.getSession().getAttribute(&quot;userLocale&quot;);
+if(locale==null){
+locale= Locale.getDefault();
+setLocale(request, null, locale);
+

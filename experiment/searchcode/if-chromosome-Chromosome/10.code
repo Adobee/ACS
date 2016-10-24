@@ -1,0 +1,9 @@
+package org.xmlmate.genetics;
+
+import org.evosuite.ga.ChromosomeFactory;
+
+public class XMLTestChromosomeFactory implements ChromosomeFactory<XMLTestChromosome> {
+public XMLTestChromosome getChromosome() {
+if (root != null)
+return new XMLTestChromosome(root);
+

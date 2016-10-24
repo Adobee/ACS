@@ -1,0 +1,16 @@
+res = 0;
+if (n <= 0) {
+return res;
+}
+int[] loc = new int[n];
+dfs(loc, 0, n);
+return res;
+}
+
+public void dfs(int[] loc, int cur, int n) {
+if (cur == n) {
+res += 1;
+return;
+}
+for (int i = 0; i < n; i++) {
+

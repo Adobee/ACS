@@ -1,0 +1,8 @@
+public abstract class AbstractRuleFilter extends AbstractFilter {
+private Rule rule;
+
+@Override
+public boolean isFiltered(Object content) {
+if (rule != null)
+return rule.isSatisfied(content);
+

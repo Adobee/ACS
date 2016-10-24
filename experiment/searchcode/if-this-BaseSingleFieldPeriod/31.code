@@ -1,0 +1,14 @@
+public Days minus(Days paramDays)
+{
+if (paramDays == null) {
+return this;
+}
+return minus(paramDays.getValue());
+return days(FieldUtils.safeNegate(getValue()));
+}
+
+public Days plus(int paramInt)
+{
+if (paramInt == 0) {
+return this;
+

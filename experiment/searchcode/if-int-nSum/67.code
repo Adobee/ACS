@@ -1,0 +1,13 @@
+return 5;
+}
+return 6;
+}
+public static void main(String[] args){
+int nTrials=1000;
+double nSum=0;
+Dice dice=new Dice();
+for(int i=0;i<nTrials;i++){
+nSum+=dice.getNextRollValue();
+}
+System.out.println(&quot;average=&quot;+((double)nSum)/((double)nTrials));
+

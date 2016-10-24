@@ -1,0 +1,9 @@
+public abstract class StandardDeviation<T> extends AbstractAggregator<T>
+implements Aggregator<T> {
+
+private Mean<T> meanAggregator;
+double res = Math.sqrt(mean
+- Math.pow(meanAggregator.result().doubleValue(), 2));
+if (res < 1e-8) res = 0;
+return res;
+

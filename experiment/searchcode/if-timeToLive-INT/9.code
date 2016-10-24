@@ -1,0 +1,11 @@
+private final long createdAt;
+private final int timeToLive;
+
+public Session(int userId, long createdAt, int timeToLive) {
+this.sessionKey = UUID.randomUUID().toString().replace(&quot;-&quot;, &quot;&quot;);
+this.createdAt = createdAt;
+this.timeToLive = timeToLive;
+}
+
+public int getUserId() {
+

@@ -1,0 +1,12 @@
+private final Trigger trigger;
+private long readPos, writePos;
+private boolean open;
+
+CircularBuffer(Trigger trigger) {
+public int read(byte[] b) {
+return read(b, 0, b.length);
+}
+
+public int read(byte[] b, int off, int len) {
+if(!isOpen()) {
+

@@ -1,0 +1,12 @@
+super( enversConfiguration );
+}
+
+@Override
+public void onPostInsert(PostInsertEvent event) {
+boolean isInsert = false;
+Action lastAction = SpringUtils.getLastAction();
+
+if (lastAction!=null){
+isInsert = true;
+}else{
+

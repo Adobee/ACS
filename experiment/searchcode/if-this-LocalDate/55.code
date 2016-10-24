@@ -1,0 +1,12 @@
+private LocalDate validUntil;
+private Product p;
+
+public Guarantee(LocalDate validUntil){
+this.validUntil=validUntil;
+}
+
+public boolean isValid() {
+if (validUntil.isAfter(LocalDate.now())) {
+return false;
+} else {
+

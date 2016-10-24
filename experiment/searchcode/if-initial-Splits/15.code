@@ -1,0 +1,10 @@
+* @param function Function to evaluate
+* @return Function result, null if no splits
+*/
+private <T> T processFunction(SplitFunction<T> function) {
+synchronized (splits) {
+if (splits.isEmpty()) {
+return null;
+}
+for (Split split : splits) {
+

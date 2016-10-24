@@ -1,0 +1,8 @@
+long value = bytes.readVolatileLong(offset);
+if (bytes.byteOrder() != nativeOrder())
+value = Long.reverseBytes(value);
+return value;
+public void putOrderedLong(Bytes bytes, long offset, long value) {
+if (bytes.byteOrder() != nativeOrder())
+value = Long.reverseBytes(value);
+

@@ -1,0 +1,8 @@
+int k = input.nextInt();
+int lcm = 1;
+for(int i = 2; i<=k; i++) lcm = lcm(lcm, i);
+int[] dp = new int[2*lcm];
+int start = (int)(a%lcm) + lcm;
+Arrays.fill(dp, 987654321);
+dp[start] = 0;
+

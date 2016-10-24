@@ -1,0 +1,12 @@
+public static enum DelayType {
+FIXED, DELAY;
+}
+
+private final String name;
+private long startEpochMillis;
+return System.currentTimeMillis() >= startEpochMillis + delayMillis;
+case DELAY:
+default:
+if (startEpochMillis <= endEpochMillis)
+return System.currentTimeMillis() >= endEpochMillis + delayMillis;
+

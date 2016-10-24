@@ -1,0 +1,8 @@
+//		Toast.makeText(getApplicationContext(), &quot;Got event from: &quot; + event.getPackageName(), Toast.LENGTH_LONG).show();
+
+if (Flash.getRunning() < 1 &amp;&amp; callerFlashlight.isMsgFlash() &amp;&amp; callerFlashlight.isEnabled() &amp;&amp; callerFlashlight.loadApp(String.valueOf(event.getPackageName())) &amp;&amp; isValidFlag(flags)) {
+long start = System.currentTimeMillis();
+int tries = 3;
+if (callerFlashlight.getMsgFlashType() == 1) {
+int durMillis = integers[2] * 1000;
+

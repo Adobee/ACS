@@ -1,0 +1,8 @@
+double[] d_tmpBuffer = new double[count * datatype.Extent()];
+for (int i = 0; i < Size(); i++) {
+if (i != root) {
+// I&#39;m root so distribute my sendBuffer
+for (int i = 0; i < mySize; i++) {
+if (i != root) {
+Send(sendBuffer, sendOffset + (i * sendCount), sendCount, sendType, i, systemTAG);
+

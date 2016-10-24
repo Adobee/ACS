@@ -1,0 +1,7 @@
+boolean hasMultiPart = params != null &amp;&amp; params.hasMultiPartData();
+if (hasMultiPart) {
+MultipartBody.Builder builder = new MultipartBody.Builder();
+return builder.build();
+} else {
+FormBody.Builder formBuilder = new FormBody.Builder();
+

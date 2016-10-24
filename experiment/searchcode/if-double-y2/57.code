@@ -1,0 +1,12 @@
+private double x1, y1, x2, y2; //limites
+
+public Segment(double x1, double y1, double x2, double y2)
+{
+super(x1, y1, x2, y2);
+public boolean contains(double x)
+{
+if(x > this.x1 &amp;&amp; this.x1 > this.x2)
+return false;
+
+return !(x < this.x1 &amp;&amp; x < this.x2);
+

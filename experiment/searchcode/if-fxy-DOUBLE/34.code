@@ -1,0 +1,10 @@
+public LinearClassifier(Alphabet xAlpha, Alphabet yAlpha,
+FeatureFunction fxy) {
+w = new double[fxy.wSize()];
+yAlphabet = yAlpha;
+public int label(SparseVector x) {
+double[] scores = scores(x);
+int max = 0;
+for (int y = 0; y < yAlphabet.size(); y++) {
+if (scores[max] < scores[y])
+

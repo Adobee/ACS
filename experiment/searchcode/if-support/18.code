@@ -1,0 +1,10 @@
+* @author Alexandr Bolbat
+*/
+public interface Channel {
+
+/**
+* Get {@link StreamingSupport} for given input channel and current output channel.
+* @return {@link StreamingSupport} or <code>null</code> if no configure support
+*/
+StreamingSupport<?, ?> getSupport(final Channel input);
+

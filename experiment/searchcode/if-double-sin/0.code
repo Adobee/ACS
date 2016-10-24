@@ -1,0 +1,13 @@
+public double fallingTime(double g,double[] distance, double[] sin){
+double T = 0;
+double t = 0;
+double v = 0;
+for(int i=1;i<distance.length;i++){
+t = positiveRoot(g*sin[i]/2.0, v, -distance[i]);
+T += t;
+v += g*sin[i]*t;
+}
+return T;
+}
+public double gravitationalAcceleration(int[] x, int[] y, int T) {
+

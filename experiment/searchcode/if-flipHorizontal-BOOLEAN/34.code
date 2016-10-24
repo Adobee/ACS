@@ -1,0 +1,14 @@
+* Execute the flip horizontal move
+*/
+@Override
+public boolean doMove() {
+tile.flipHorizontal();
+app.getGameWindow().getLevelView().getScrollPane().repaint();
+// TODO Auto-generated method stub
+return true;
+}
+
+@Override
+public boolean undo() {
+if(UndoManager.peekMove() == null) return false;
+

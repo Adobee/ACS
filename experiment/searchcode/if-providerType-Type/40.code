@@ -1,0 +1,11 @@
+return subTypes != null;
+}
+
+public boolean matchesSubType(ProviderType... otherTypes) {
+if (subTypes != null) {
+for (int i = 0, subTypesLength = subTypes.length; i < subTypesLength; i++) {
+for (int i1 = 0, otherTypesLength = otherTypes.length; i1 < otherTypesLength; i1++) {
+ProviderType otherType = otherTypes[i1];
+if (otherType.equals(subType)) {
+return true;
+

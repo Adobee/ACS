@@ -1,0 +1,7 @@
+private final Gson gsonExposed = new GsonBuilder().excludeFieldsWithoutExposeAnnotation().create();
+
+public static GsonFactory getFactory () {
+if (factory == null) {
+synchronized (GsonFactory.class) {
+if (factory == null) {
+

@@ -1,0 +1,9 @@
+return instant.hashCode() + 51 * ordinal;
+}
+
+@Override
+public boolean equals(Object otherId) {
+if (this == otherId) {
+Instant now = Instant.now().truncatedTo(ChronoUnit.SECONDS);
+if (lastInstant == null || lastInstant.isBefore(now)) {
+

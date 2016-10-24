@@ -1,0 +1,10 @@
+package org.rstudio.core.client;
+
+public class IntervalTracker
+{
+public IntervalTracker(long intervalMillis, boolean startElapsed)
+{
+threshold_ = intervalMillis;
+if (!startElapsed)
+reset();
+

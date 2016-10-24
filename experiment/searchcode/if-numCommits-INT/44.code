@@ -1,0 +1,8 @@
+// first, undo any interrupted write, find the temp file
+recoverWriteExecution();
+// second, check if a commit exists
+int numCommits = getNumCommitFromLogContent(TwitterServer.REDO_LOGGING_FILENAME);
+public void executeLogContentFromFile(String filename, int numCommits) {
+try {
+StringBuilder strBuilder = new StringBuilder();
+

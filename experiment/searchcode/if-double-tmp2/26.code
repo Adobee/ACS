@@ -1,0 +1,11 @@
+public class CosineDistanceCalculation {
+
+public static double getDistance(String str1, String str2) {
+if (StringUtils.isBlank(str1) || StringUtils.isBlank(str2)
+|| (str1.length() != str1.length()))
+return -1;
+double numerator = 0;
+double denominator = 0;
+double tmp1 = 0;
+double tmp2 = 0;
+

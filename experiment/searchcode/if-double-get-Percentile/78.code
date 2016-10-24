@@ -1,0 +1,15 @@
+size = data.length;
+}
+
+public double getMean() {
+double sum = 0.0;
+for (double a : data)
+sum += a;
+return sum / size;
+public double getStdDev() {
+return Math.sqrt(getVariance());
+}
+
+public double getPercentile(double p) {
+if(p < 0 || p > 1)
+

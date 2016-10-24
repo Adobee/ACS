@@ -1,0 +1,4 @@
+Predicate<String> provideDataCenterAvailablePredicate(final ProfitBricksApi api, ComputeConstants constants) {
+Predicate<ServerRef> provideServerRunningPredicate(final ProfitBricksApi api, ComputeConstants constants) {
+return retry(new ServerStatusPredicate(
+

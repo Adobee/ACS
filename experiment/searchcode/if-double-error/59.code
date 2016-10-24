@@ -1,0 +1,11 @@
+package org.usfirst.frc.team4499.robot.tools;
+
+
+public class PID {
+private double error;
+private double totalError;
+public double updatePID(double value){
+error = setPoint - value;
+if (continuous) {
+if (Math.abs(error) > (maxInput - minInput) / 2) {
+

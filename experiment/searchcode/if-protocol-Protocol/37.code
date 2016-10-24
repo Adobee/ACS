@@ -1,0 +1,12 @@
+public static Protocol fromString(String protocolStr){
+if(protocolStr != null){
+for(Protocol protocol:Protocol.values()){
+if(protocolStr.equalsIgnoreCase(protocol.name)){
+return protocol;
+}
+}
+}
+return null;
+}
+}
+

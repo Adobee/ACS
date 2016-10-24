@@ -1,0 +1,10 @@
+public MTR2() {
+
+}
+
+public static Process changeContext(Queue q, Process current) {
+current.suspend();
+
+if(q.get(0).deadline < current.deadline) {
+q.add(current);
+

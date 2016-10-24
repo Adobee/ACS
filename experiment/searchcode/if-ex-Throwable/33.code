@@ -1,0 +1,14 @@
+public class ExceptionUtils
+{
+
+
+/**
+* @returns the most nested cause.
+*/
+public static Throwable getRootCause( Throwable ex ){
+int i = 0;
+
+Throwable next;
+while( null != (next = ex.getCause()) ){
+ex = next;
+

@@ -1,0 +1,13 @@
+* the maximum size of the map
+*
+*/
+private int maximumSize;
+/**
+*
+* creates a LinkedHashmap with size 1,loadfactor 0.75 and accessing order
+* @param maximumSize the maximum size of the map
+*/
+public LRUMap(int maximumSize){
+super(maximumSize+1,0.75f,true);
+this.maximumSize = maximumSize;
+

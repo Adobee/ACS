@@ -1,0 +1,5 @@
+public void create(Member member) throws MongoException {
+
+super.getCollection().createIndex(new BasicDBObject(&quot;email&quot;, 1), new BasicDBObject(&quot;unique&quot;, true));
+super.getCollection().createIndex(new BasicDBObject(&quot;tag&quot;, 1), new BasicDBObject(&quot;unique&quot;, true));
+

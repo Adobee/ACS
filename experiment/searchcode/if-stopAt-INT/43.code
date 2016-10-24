@@ -1,0 +1,16 @@
+public class FadingWigglingMessage implements Anim {
+
+final private int stopAt;
+private int numtimes;
+final private String message;
+public boolean isDone() {
+return numtimes >= stopAt;
+}
+
+@Override
+public void draw() {
+
+if (!isDone()) {
+
+int red   = color.getRed();
+

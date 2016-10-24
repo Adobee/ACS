@@ -1,0 +1,10 @@
+public void add(Unit enti) {
+
+Object[] reqs = enti.get()[1];
+Object[] newList = new Object[0];
+Object[] tempList;
+
+for (int r = 0; r < reqs.length; r++) {
+if (reqCheck(reqs[r])) {
+tempList = new Object[newList.length + 1];
+

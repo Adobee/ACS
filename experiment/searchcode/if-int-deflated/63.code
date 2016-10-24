@@ -1,0 +1,11 @@
+out.position(out.position() + deflated);
+} else {
+final int deflated = deflater.deflate(deflaterOutput);
+if (deflated < 1 || deflated > compressedLength) {
+inflater.setInput(inflaterInput, 0, deflated);
+}
+
+try {
+if (out.hasArray()) {
+final int offset = out.arrayOffset() + out.position();
+

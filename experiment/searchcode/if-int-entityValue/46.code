@@ -1,0 +1,8 @@
+// TODO: Protect from ArrayIndexOutOfBounds
+if(input.charAt(index) == &#39;&amp;&#39; &amp;&amp; input.charAt(index + 1) == &#39;#&#39;) {
+
+int start = index + 2;
+try {
+if(isHex) {
+entityValue = Integer.parseInt(input.subSequence(start, end).toString(), 16);
+

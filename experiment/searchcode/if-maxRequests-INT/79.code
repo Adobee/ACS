@@ -1,0 +1,11 @@
+* configured maximum} number of jobs concurrently.
+*/
+public final class Dispatcher {
+private int maxRequests = 64;
+private int maxRequestsPerHost = 5;
+* invoked, those requests will remain in flight.
+*/
+public synchronized void setMaxRequests(int maxRequests) {
+if (maxRequests < 1) {
+throw new IllegalArgumentException(&quot;max < 1: &quot; + maxRequests);
+

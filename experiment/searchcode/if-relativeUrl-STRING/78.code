@@ -1,0 +1,10 @@
+URL u = new URL(url);
+
+String relativeUrl = u.getPath();
+String target = targetDir + File.separator + u.getAuthority() + relativeUrl.substring(0, relativeUrl.lastIndexOf(&#39;/&#39;));
+String[] segments = relativeUrl.split(&quot;/&quot;);
+String schemaFileName = segments[segments.length - 1];
+return target + File.separator + schemaFileName;
+}
+}
+

@@ -1,0 +1,8 @@
+package org.hogel.config.loader;
+
+import java.lang.reflect.Constructor;
+import java.util.HashMap;
+public synchronized static <T extends Loader> T getInstance(Class<T> loaderClass) {
+Loader loader = loaderMap.get(loaderClass);
+if (loader != null) {
+

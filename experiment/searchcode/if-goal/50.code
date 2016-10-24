@@ -1,0 +1,16 @@
+Goal goal = (Goal)session.getAttribute(&quot;goal&quot;);
+
+if(goal == null){
+goal = new Goal();
+goal.setMl(200);
+Date goalDate = new Date();
+System.out.println(&quot;Goal set: &quot; + goal.getMl());
+
+if(result.hasErrors()) {
+return &quot;addGoal&quot;;
+}
+else{
+goalService.save(goal);
+}
+return &quot;redirect:index.jsp&quot;;
+

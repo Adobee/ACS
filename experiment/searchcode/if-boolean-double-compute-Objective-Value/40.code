@@ -1,0 +1,8 @@
+public ObjectiveManager(RealVar objective, ResolutionPolicy policy, double precision, boolean strict) {
+this((V)objective,policy,precision,strict,false);
+io.updateLowerBound(bestProvedLB.intValue() + offset, this);
+}
+} else {
+double offset = 0;
+if (objective.getSolver().getMeasures().getSolutionCount() > 0 &amp;&amp; strict) {
+

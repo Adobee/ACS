@@ -1,0 +1,10 @@
+if ((keepUserMention) &amp;&amp; (ptr.startsWith(&quot;@&quot;))) {
+filteredText = filteredText + ptr + &quot; &quot;;
+}
+
+if ((keepUrl) &amp;&amp; (ptr.contains(&quot;http&quot;))) {
+filteredText = filteredText + ptr + &quot; &quot;;
+}
+
+if ((!ptr.startsWith(&quot;@&quot;)) &amp;&amp; (!ptr.contains(&quot;http&quot;))) {
+

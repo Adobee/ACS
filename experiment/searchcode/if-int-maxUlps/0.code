@@ -1,0 +1,9 @@
+* @return true if the distance between a and b is <= maxUlps
+*/
+public static boolean almostEqual(float a, float b, int maxUlps)
+bInt = 0x8000_0000 - bInt;
+}
+int intDiff = abs(aInt - bInt);
+if (intDiff <= maxUlps) {
+return true;
+

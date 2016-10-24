@@ -1,0 +1,7 @@
+public String toString(Boolean indent) {
+if (mLhs instanceof Epsilon) {
+return mRhs.toString(false);
+}
+if (mLhs instanceof Alternative &amp;&amp; mRhs instanceof Alternative) {
+return &quot;(&quot; + mLhs.toString(false) + &quot;) (&quot; + mRhs.toString(false) + &quot;)&quot;;
+

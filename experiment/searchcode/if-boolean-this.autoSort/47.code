@@ -1,0 +1,7 @@
+public boolean sortItem(ItemStack item) { // Sort Chests by emptiest first
+if (AutoSort.emptiesFirst)
+Collections.sort(sortChests, new amountComparator(item));
+for(ItemStack mat : chest.matList) {
+if (mat == null) {
+AutoSort.LOGGER.warning(&quot;----------------------------&quot;);
+

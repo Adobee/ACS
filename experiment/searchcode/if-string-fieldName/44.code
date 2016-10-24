@@ -1,0 +1,10 @@
+List<Object[]> specs = new ArrayList<Object[]>();
+
+public SpecParam<T> isNull(String fieldName) {
+if(!isEmpty(fieldName)) {
+removeExist(fieldName);
+public SpecParam<T> isNotNull(String fieldName) {
+if(!isEmpty(fieldName)) {
+removeExist(fieldName);
+specs.add(new Object[] {fieldName, &quot;isNotNull&quot;});
+

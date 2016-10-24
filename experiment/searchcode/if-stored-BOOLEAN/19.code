@@ -1,0 +1,8 @@
+StoredMsg newMsg = new StoredMsg(storedMsg.fade(tweet.getDateTime()), tweet.getDateTime(), storedMsg.tweetText);
+newStored.add(newMsg);
+}
+if (storedMsgs.size() < topk) {
+storedMsgs.add(new StoredMsg(currentScore, tweet.getDateTime(), tweet.getText()));
+} else if (storedMsgs.size() == topk) {
+storedMsgs.pollLast();
+

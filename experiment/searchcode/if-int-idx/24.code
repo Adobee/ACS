@@ -1,0 +1,6 @@
+int[] dp = new int[s.length()];
+int max = 0;
+for (int idx = s.length() - 2; idx >= 0 ; idx --){
+if (s.charAt(idx) == &#39;(&#39;){
+int nextIdx = idx + dp[idx + 1] + 1;
+

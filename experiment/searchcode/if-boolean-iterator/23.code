@@ -1,0 +1,11 @@
+this.iterable = iterable;
+}
+
+private void ensureIterator() {
+if (iterator != null) {
+return;
+@Override
+public boolean hasNext() {
+ensureIterator();
+return iterator.hasNext();
+

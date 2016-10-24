@@ -1,0 +1,7 @@
+public static TagCompound toNbtLibFormat(NbtCompound data) {
+TagCompound ret = new TagCompound(&quot;&quot;);
+for (Entry<String, Object> entry : data.entrySet()) {
+Object tag = entry.getValue();
+String name = entry.getKey();
+if (tag.getClass().equals(NbtType.TAG_BYTE.t))
+

@@ -1,0 +1,8 @@
+public class BooleanSETAdapter extends DmcTypeBooleanSET implements DmcAdapterIF {
+
+transient DmcTypeBooleanSET existingValue;
+public void setExisting(DmcAttribute<?> attr) {
+existingValue = (DmcTypeBooleanSET) attr;
+if (existingValue != null)
+value = existingValue.getMVCopy();
+

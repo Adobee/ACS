@@ -1,0 +1,8 @@
+public class DocSubDomain extends DocDomain {
+
+private String subDomain = &quot;&quot;;
+private String subDomainShortDescription = &quot;&quot;;
+public String getSubDomainShortDescription() {
+if (StringUtils.isNotBlank(subDomainShortDescription)) {
+return subDomainShortDescription;
+

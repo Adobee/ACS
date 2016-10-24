@@ -1,0 +1,13 @@
+private byte[] read(InputStream in)
+{
+try {
+int count = 0;
+while (true) {
+count = in.available();
+if (count > 0) {
+in.read(resultByte);
+
+byte[] sendBuffer = (byte[]) resultByte;
+
+int len=sendBuffer.length-10;
+

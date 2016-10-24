@@ -1,0 +1,9 @@
+//通过ReadItem()方法获取文件每一行
+ArrayList<String> list=ReadItem();
+int tempIndex=0;
+for(int i=0;i<list.size();i++)
+itemData.setItemName(list.get(i).substring(tempIndex, list.get(i).indexOf(&#39;,&#39;,tempIndex)));
+
+tempIndex=list.get(i).indexOf(&#39;,&#39;,tempIndex)+1;
+if(list.get(i).indexOf(&#39;,&#39;,tempIndex)>0)
+

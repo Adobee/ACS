@@ -1,0 +1,5 @@
+int[][] result = new int[n][n];
+int upperBound = 0, lowerBound = n - 1, leftBound = 0, rightBound = n - 1, num = 1;
+while(upperBound <= lowerBound) {
+for(int i = upperBound, j = leftBound; result[i][j] == 0; ++num) {
+

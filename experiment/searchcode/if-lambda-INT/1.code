@@ -1,0 +1,7 @@
+public LambdaInfo extractSurfaceInfo(Object lambda, int lambdaIndex,
+boolean throwExceptionOnFailure)
+{
+if (lambda instanceof Function1)
+{
+return new ScalaLambdaInfo(lambda, lambdaIndex, 0, 1);
+

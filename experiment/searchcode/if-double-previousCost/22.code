@@ -1,0 +1,17 @@
+constraints, lambdas);
+
+double previousCost = metricProvider.getPreAdditive(exceedingPath);
+
+for (Path nonExceedingPath : nonExceedingPaths) {
+double currentCost = metricProvider.getPreAdditive(nonExceedingPath);
+
+if (Math.abs(currentCost - previousCost) > 0.1)
+return false;
+
+previousCost = currentCost;
+}
+
+return true;
+}
+}
+

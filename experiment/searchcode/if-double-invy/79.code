@@ -1,0 +1,9 @@
+// TODO: this should be expressed in OpenGL screen coordinates, not toolkit (e.g. AWT) coordinates
+public Line computeRayFromScreenPoint(double x, double y)
+{
+if (this.viewport == null)
+{
+return null;
+}
+double invY = this.viewport.height - y - 1; // TODO: should be computed by caller
+

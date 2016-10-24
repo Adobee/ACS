@@ -1,0 +1,6 @@
+Pattern patt = Pattern.compile(&quot;[a-zA-Z0-9-.]+(/NN|/NNS|/FW)&quot;);
+
+// (Noun)+ Noun
+Pattern pattern0 = Pattern
+.compile(&quot;(([a-zA-Z0-9-]+)(/NN|/NNS|/NNP|/NNPS|/VBG|/FW)\\s+)+[a-zA-Z0-9-]+(/NN|/NNS|/NNP|/NNPS|/FW)&quot;, Pattern.CASE_INSENSITIVE);
+

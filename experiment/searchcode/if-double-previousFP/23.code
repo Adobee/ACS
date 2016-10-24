@@ -1,0 +1,10 @@
+double dk = jacNorm[k];
+if (dk == 0) {
+dk = 1.0;
+}
+double xk = dk * point[k];
+// check orthogonality between function vector and jacobian columns
+double maxCosine = 0;
+if (cost != 0) {
+for (int j = 0; j < solvedCols; ++j) {
+

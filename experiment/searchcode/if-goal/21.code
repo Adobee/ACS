@@ -1,0 +1,6 @@
+public static GoalRepresentation toGoalType(Goal goal, double distanceCovered) {
+if (goal instanceof DistanceGoal) {
+return new DistanceGoalRepresentation((DistanceGoal) goal, distanceCovered);
+} else if (goal instanceof DurationGoal) {
+return new DurationGoalRepresentation((DurationGoal) goal);
+

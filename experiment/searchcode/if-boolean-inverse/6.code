@@ -1,0 +1,10 @@
+class Relationship extends Member implements IRelationship {
+
+boolean many;
+IEntityType toType;
+IMember inverse;
+String inverseName;
+
+protected Relationship(String name, String columnName,
+boolean many, IEntityType toType, String inverseName) {
+

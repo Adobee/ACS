@@ -1,0 +1,15 @@
+package jmp.ui.model;
+
+import jmp.ui.mvc.DefaultModel;
+
+public class DefaultBooleanModel extends DefaultModel implements BooleanModel {
+return state;
+}
+
+public void setState(boolean state) {
+if (this.state == state) return;
+this.state = state;
+this.modelChange();
+}
+}
+

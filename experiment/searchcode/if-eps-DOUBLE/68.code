@@ -1,0 +1,11 @@
+
+public class bisection {
+public double bisectionFunc(double a, double b, double eps){
+if (func(a) * func(b) > 0) {
+if (func(a) > 0 &amp;&amp; func(b) < 0)
+swap(a,b);
+double guess, t = (a+b)/2;
+int count = 0;
+while (t > eps){
+count++;
+

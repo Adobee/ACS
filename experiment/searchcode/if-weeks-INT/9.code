@@ -1,0 +1,9 @@
+private  double lotteryWins(int weeks,int winWeeks)
+{
+if(weeks == weekCount)
+{
+dp[weeks][winWeeks] = accountBalance[0] +  winWeeks * weeklyJackpot;
+double p = (accountBalance[0] + winWeeks * weeklyJackpot)/(total + weeks*weeklyJackpot);
+if(dp[weeks + 1][winWeeks + 1]== -1)
+dp[weeks + 1][winWeeks + 1] = lotteryWins(weeks + 1, winWeeks + 1);
+

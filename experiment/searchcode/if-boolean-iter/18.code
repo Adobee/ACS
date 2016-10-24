@@ -1,0 +1,13 @@
+if (iterators == null) return;
+for (Iterator<T> iter: iterators) {
+if (!iter.hasNext()) continue;
+queue.add(iter);
+Iterator<T> iter = queue.remove();
+T v = iter.next();
+if (iter.hasNext()) {
+queue.add(iter);
+}
+return v;
+}
+}
+

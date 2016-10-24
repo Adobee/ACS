@@ -1,0 +1,10 @@
+httpurlconnection.setDoOutput(false);
+httpurlconnection.connect();
+
+if (httpurlconnection.getResponseCode() / 100 == 4) {
+return;
+}
+
+if (buffer == null) {
+imageData.image = ImageIO.read(httpurlconnection
+

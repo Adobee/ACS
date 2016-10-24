@@ -1,0 +1,16 @@
+public void addNewLine() {
+removeTrailing(COMMA);
+content.append(LINE_BREAK);
+}
+
+private void removeTrailing(final String toBeRemoved) {
+this.content.append(csvData.toCSV().toString());
+}
+}
+
+@Override
+public String toString() {
+if( !isEmpty() )
+removeTrailing(LINE_BREAK);
+return content.toString();
+

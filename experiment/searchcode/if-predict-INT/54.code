@@ -1,0 +1,10 @@
+this.name = &quot;Filter POF with SVD&quot;;
+}
+
+@Override
+public float prediction(int u, int i, String c) {
+//double predict = svd.ratingSVDPrediction(u, i);
+float predict = 0;
+if (probability >= threshold) {
+predict = svd.prediction(u, i);
+

@@ -1,0 +1,10 @@
+color = new Color((float)StdRandom.uniform(), .8f, .8f);
+}
+
+public void move() {
+if (Math.abs(x + vx) + r > 1.0) vx = -vx;
+for (int i = 0; i<N; i++) {
+double cx = StdRandom.uniform();
+double cy = StdRandom.uniform();
+double vx = StdRandom.uniform(0.0, 0.01);
+

@@ -1,0 +1,11 @@
+return countWays(n, mem);
+}
+
+private static int countWays(int n, int[] mem) {
+if(n <= 0) {
+return 0;
+}
+
+if(mem[n] == 0) {
+mem[n] = 1 + countWays(n - 1, mem) + countWays(n - 2, mem) + countWays(n - 3, mem);
+

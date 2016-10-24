@@ -1,0 +1,8 @@
+public RationalNumber(long num, long den) {
+//			if(den==0)throw new ArithmeticException(&quot;/ by zero&quot;);
+long g = gcd(num, den);
+for (long den = 1; ; den++) {
+double dNum = value * den;
+long num = Math.round(dNum);
+if (Math.abs(num - dNum) < EPS.get()) {
+

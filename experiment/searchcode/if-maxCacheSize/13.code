@@ -1,0 +1,12 @@
+public class ApplicationCache implements ApplicationCacheMBean {
+
+protected int maxCacheSize = 100;
+public void add(Object o) {
+if (cache.size() >= maxCacheSize) {
+cache.remove(0);
+}
+
+cache.add(o);
+}
+}
+

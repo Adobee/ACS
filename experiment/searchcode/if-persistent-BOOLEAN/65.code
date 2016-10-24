@@ -1,0 +1,12 @@
+return front.isEmpty() &amp;&amp; back.isEmpty();
+}
+
+public PersistentQueue<E> enqueue(E e) throws IllegalAccessException {
+if(e == null){
+throw new IllegalAccessException();
+return new PersistentQueue<E>(front.add(e), back);
+}
+
+public PersistentQueue<E> dequeue() {
+if (isEmpty()) throw new NoSuchElementException();
+

@@ -1,0 +1,14 @@
+public class TileEntityCondenseur extends TileEntity
+{
+public String idPlayer;
+public boolean solid;
+
+@Override
+public void writeToNBT(NBTTagCompound compound)
+this.solid = compound.getBoolean(&quot;solid&quot;);
+}
+
+@Override
+public boolean shouldRefresh(World world, BlockPos pos,
+IBlockState oldState, IBlockState newSate)
+

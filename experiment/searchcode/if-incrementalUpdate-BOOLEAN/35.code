@@ -1,0 +1,10 @@
+int offset = lr.getLastLineOffset();
+if (checkCanceled(mon)) {
+return;
+}
+
+boolean found = query.matchItem(line);
+//Any outstanding incremental update should be canceled since the query has changed again.
+if (incrementalUpdate!=null) {
+incrementalUpdate.cancel();
+

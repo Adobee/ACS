@@ -1,0 +1,12 @@
+private static final long serialVersionUID = 1L;
+private int x = 0;
+private int y = 0;
+public int radius = 0;
+private boolean primary = false;
+public boolean isPrimary() {
+return primary;
+}
+
+public boolean near(Point pt) {
+if((Math.abs(this.getX() - pt.getX()) <= radius) &amp;&amp; (Math.abs(this.getY() - pt.getY()) <= radius)) {
+

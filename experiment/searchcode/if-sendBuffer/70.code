@@ -1,0 +1,12 @@
+private ByteBuffer sendBuffer;
+private BufferReader reader;
+
+private SocketChannel socket;
+
+private BufferQueue messages;
+private void send() throws IOException
+{
+if (sendBuffer.hasRemaining())
+{
+socket.write(sendBuffer);
+

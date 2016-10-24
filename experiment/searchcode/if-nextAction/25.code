@@ -1,0 +1,11 @@
+@Override
+public void doStep() throws ActionFinishedException
+{
+Action nextAction = null;
+if (actionNb == this.actions.size())
+nextAction = this.actions.get(actionNb);
+nextAction.doStep();
+if (nextAction.isFinished())
+{
+this.getActions().remove(actions.indexOf(nextAction));
+

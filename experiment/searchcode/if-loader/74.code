@@ -1,0 +1,6 @@
+ClassLoader loader = Thread.currentThread().getContextClassLoader();
+ServerClassLoader serverLoader = null;
+if ( loader instanceof ServerClassLoader ) {
+serverLoader = (ServerClassLoader) loader;
+} else if ( loader instanceof URLClassLoader ) {
+

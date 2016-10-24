@@ -1,0 +1,10 @@
+this.fleet = fleet;
+makeDef();
+if(def.size()>0){
+def.get(0).setTarget(space.ai.getMotherShip());
+if(def.size()>1){
+def.get(1).setTarget(new Beacon(def.get(0).getX()-def.get(1).getXLim(),def.get(0).getY(),Color.red));
+
+if(def.size()>2){
+def.get(2).setTarget(new Beacon(def.get(0).getX(),def.get(0).getY()-def.get(2).getYLim(),Color.red));
+

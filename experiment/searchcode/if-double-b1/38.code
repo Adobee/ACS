@@ -1,0 +1,18 @@
+public class Edge implements Comparable<Edge>{
+
+double weight;
+int b1;
+int b2;
+
+Edge(int b1, int b2, double p1, double p2){
+this.weight = countCost(getId(b1, b2), p1, p2);
+//		System.out.println(getId(b1, b2));
+}
+Edge(Edge old){
+this.weight = old.weight;
+this.b1 = old.b1;
+this.b2 = old.b2;;
+}
+
+double countCost(double id, double p1, double p2){
+

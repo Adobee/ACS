@@ -1,0 +1,12 @@
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+
+public class Client {
+
+static InetAddress address;
+public static void main(String[] args) throws UnknownHostException, InterruptedException {
+address = InetAddress.getLocalHost();
+
+while (true) {
+if (!address.equals(InetAddress.getLocalHost())) {
+

@@ -1,0 +1,16 @@
+
+public class Peak {
+
+public Peak(){
+}
+
+public int OneDRecursive(int[] d1){
+int d1len = d1.length;
+return OneDRecursive(d1, index, d1len);
+}
+public int OneDRecursive(int[] d1, int i, int dlen){
+if(dlen == 0){
+return 0;
+}
+else if(d1[i] > d1[i-1] &amp;&amp; d1[i] > d1[i+1]){
+

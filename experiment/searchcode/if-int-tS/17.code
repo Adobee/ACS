@@ -1,0 +1,16 @@
+mTs = new TsApple(playUrl);
+}
+
+@Override
+public int getProgress() {
+if (mTs != null) {
+return mTs.getProgress();
+}
+return 0;
+}
+
+@Override
+public int getRate() {
+if (mTs != null) {
+return mTs.getRate();
+

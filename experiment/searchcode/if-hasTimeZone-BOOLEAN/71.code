@@ -1,0 +1,9 @@
+@Override
+public Date unmarshal(String dateString) throws Exception {
+if (!hasTimezone(dateString)) {
+return DatatypeConverter.printDateTime(dateToMarshal);
+}
+
+private boolean hasTimezone(String dateString) {
+return dateString.endsWith(&quot;Z&quot;)
+

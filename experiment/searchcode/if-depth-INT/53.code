@@ -1,0 +1,10 @@
+// TODO Auto-generated method stub
+
+}
+
+public int maxDepth(TreeNode root) {
+int depth = 0;
+if(root == null) return depth;
+int depthLeft = maxDepth(root.left);
+int depthRight = maxDepth(root.right);
+

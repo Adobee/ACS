@@ -1,0 +1,10 @@
+//private ConcurrentLinkedDeque<VelocitySample> VelocityYSamplesFiltered;
+
+private final int NrOfSamples = 10;
+private long LastVelocityReadTime;
+VelocityXSamples.addFirst(new VelocitySample(vx, timeStamp));
+
+if(VelocityYSamples.size() >= NrOfSamples)
+{
+VelocityYSamples.removeLast();
+

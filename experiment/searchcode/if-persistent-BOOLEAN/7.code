@@ -1,0 +1,9 @@
+persistentApplication.addPersistentClass( RadioElement.class );
+
+if( isCustomFormsUsed() ) {
+persistentApplication.includePersistentClass( CheckboxElement.class );
+persistentApplication.addPersistentClass( CompetitionPrizeWinner.class );
+
+if( isCompetitionUsed() ) {
+persistentApplication.includePersistentClass( CompetitionModule.class );
+

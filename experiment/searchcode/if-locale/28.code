@@ -1,0 +1,9 @@
+// to guarantee stable behavior perform null check
+if (localeString == null) {
+return Locale.ENGLISH;
+}
+
+if (localeString.length() == 2) {
+// only language
+locale = new Locale(localeString);
+

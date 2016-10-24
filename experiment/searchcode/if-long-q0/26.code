@@ -1,0 +1,11 @@
+public static void clipLine(double x0, double y0, double x1, double y1, double xl, double xr, double yt, double yb, int red, int green, int blue) {
+int q0 = 0 ;
+if( x0 < xl ) q0 |= 8;
+if( x0 > xr ) q0 |= 4;
+if( y0 < yt ) q0 |= 2;
+if( y0 > yb ) q0 |= 1;
+
+int q1 = 0 ;
+if( x1 < xl ) q1 |= 8;
+if( x1 > xr ) q1 |= 4;
+

@@ -1,0 +1,13 @@
+int intVersion;
+int dsCount;
+int rraCount;
+int pdpStep;
+
+Header(RRDFile file) throws IOException,RrdException {
+throw new IOException(&quot;Invalid COOKIE&quot;);
+}
+
+version = file.readString(5);
+intVersion = Integer.parseInt(version);
+if( intVersion > 3 ) {
+

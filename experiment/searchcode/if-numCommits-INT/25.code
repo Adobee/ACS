@@ -1,0 +1,12 @@
+LOGGER.debug(&quot;Commits stored [&quot; + projectName + &quot;]&quot;);
+
+int numCommits = 0;
+
+// add the code files of each revision
+for (int i = 0; i < commits.size(); i++) {
+Revision revision = revisions.get(i);
+addCodeFiles(commit, revision);
+
+if (numCommits % 100 == 0) {
+LOGGER.debug(&quot;[&quot; + projectName + &quot;] &quot; + numCommits + &quot;/&quot; + commits.size());
+

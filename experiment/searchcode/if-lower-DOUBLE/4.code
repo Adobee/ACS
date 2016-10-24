@@ -1,0 +1,9 @@
+double int2ext(double value, double upper, double lower)
+{
+return lower + 0.5*(upper - lower)*(Math.sin(value) + 1.);
+double yy = 2.*(value - lower)/(upper - lower) - 1.;
+double yy2 = yy*yy;
+if(yy2 > (1. - prec.eps2()))
+{
+if(yy < 0.)
+

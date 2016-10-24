@@ -1,0 +1,7 @@
+BodyDTO result = null;
+
+if (body instanceof StringBody) {
+StringBody stringBody = (StringBody) body;
+result = new StringBodyDTO(stringBody, stringBody.getNot());
+} else if (body instanceof RegexBody) {
+

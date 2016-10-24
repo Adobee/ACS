@@ -1,0 +1,8 @@
+* @return _more_
+*/
+public int read(byte dst[], int off, int nbytes) {
+if (dst == null) {
+throw new NullPointerException();
+final int end    = off + nbytes;
+if ((off < 0) || (nbytes < 0) || (end > dst.length) || (end < 0)) {
+

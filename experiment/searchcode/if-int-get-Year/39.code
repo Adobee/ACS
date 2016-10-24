@@ -1,0 +1,10 @@
+/** Test all single- and double-predicate queries using YearTypes.
+drop table if exists yeartypes;
+create table yeartypes (
+id int not null primary key,
+greaterThanAndLessThanQuery(&quot;year_null_none&quot;, &quot;none&quot;, getYear(4), getYear(6), 5);
+
+}
+
+private void createAllYearTypesInstances(int number) {
+

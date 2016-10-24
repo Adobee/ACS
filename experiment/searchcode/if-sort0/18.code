@@ -1,0 +1,10 @@
+public final T[] apply(T[] ts, Integer from, Integer to, Comparator<T> comp) throws NotAppliedException, $.Break {
+return sort(ts, from, to, comp);
+}
+
+protected abstract T[] sort0(T[] ts, int from, int to, Comparator<T> comp);
+public final T[] sort(T[] ts, int from, int to, Comparator<T> comp) {
+Util.checkIndex(ts, from, to);
+if (null == comp) {
+comp = $.F.NATURAL_ORDER;
+

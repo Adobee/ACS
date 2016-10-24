@@ -1,0 +1,9 @@
+String data = &quot;Transport Stream Packet Layer\n\n&quot; + syncByte;
+int bytes = 0, bitMSB = 0; //MSB => Most Significant bit
+data += &quot;PID: &quot; + bitMSB; /** PID Ocupa os 5 bits restantes mais o byte seguinte*/
+
+if(pids.hasElement(bitMSB)){
+hasPID = true;
+}
+else{
+

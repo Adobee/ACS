@@ -1,0 +1,9 @@
+public class LC_34_Search4Range {
+
+
+public int SearchFirst(int[] A, int low, int high, int target) {
+if (A[low] == target) return low;
+int mid = (low+high)/2;
+if (A[mid] == target) {
+int last = SearchLast(A, mid+1, high, target);
+

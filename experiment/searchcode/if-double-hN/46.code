@@ -1,0 +1,14 @@
+p(n+&quot;,&quot;+theta+&quot;,&quot;+sign+&quot;,&quot;+prod);
+theta+=w; if (theta>=1) {theta-=1;}
+}
+
+
+}
+
+public double calcFn(final double base, final double w, final int iterations) {
+ScalarSequence vals=new ScalarSequence(npoints+1);
+double theta;
+for (int i=0;i<=npoints;i++) {
+theta=(i+0.)/npoints;
+vals.add(H(hn,theta));
+

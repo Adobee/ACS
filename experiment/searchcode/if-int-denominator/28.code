@@ -1,0 +1,16 @@
+public long getDenominator() {
+return denominator;
+}
+
+private void reduce() {
+int prime = 2;
+while (this.numerator / 2 > prime &amp;&amp; this.denominator / 2 > prime) {
+prime = getNextPrime(prime);
+}
+}
+
+private int getNextPrime(int prime) {
+while (true) {
+prime++;
+if (isPrime(prime)) {
+

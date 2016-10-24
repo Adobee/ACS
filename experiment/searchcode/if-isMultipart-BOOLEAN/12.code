@@ -1,0 +1,11 @@
+public boolean isMultipart(HttpServletRequest request) {
+if(request.getRequestURI().contains(&quot;/Activity/fileUpload&quot;)) {
+return false;
+} else {
+return super.isMultipart(request);
+}
+}
+
+
+}
+

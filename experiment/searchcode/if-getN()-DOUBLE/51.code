@@ -1,0 +1,14 @@
+this.x = x;
+}
+public double getN() {
+return x;
+}
+}
+
+private static class FromPIDSource implements Num {
+private FromPIDSource(PIDSource x) {
+this.x = x;
+}
+public double getN() {
+return x.pidGet();
+

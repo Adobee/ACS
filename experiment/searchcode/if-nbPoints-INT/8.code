@@ -1,0 +1,7 @@
+physique.IO.CarteSonService carteSonSrv = physique.IO.PhysiqueIOFactory.getCarteSonService();
+
+@Override
+public byte[] acquerir(double frequence, int nbPoints) throws Exception {
+if(frequence < 0 || nbPoints < 0) {
+return carteSonSrv.acquerir(frequence, nbPoints);
+

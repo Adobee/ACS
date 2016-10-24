@@ -1,0 +1,6 @@
+Engine.Index index = index(&quot;1&quot;);
+engine.refresh(&quot;I said so&quot;);
+if (randomBoolean()) {
+assertBusy(() -> assertNotNull(&quot;listener never called&quot;, listener.forcedRefresh.get()));
+if (threadCount < maxListeners) {
+

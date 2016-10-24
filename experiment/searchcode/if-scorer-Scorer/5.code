@@ -1,0 +1,15 @@
+/*
+* KAbstractLazyMetricsScorerDecorator.java
+* Created on May 2, 2011
+* Copyright(c) 2011 Yoshiaki Matsuzawa, Shizuoka University. All rights reserved.
+state = State.TICKED;
+}
+
+public synchronized void calculate() {
+if (state == State.TICKED) {
+scorer.calculate();
+state = State.CALCULATED;
+}
+}
+}
+

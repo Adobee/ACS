@@ -1,0 +1,10 @@
+private byte[] window=new byte[WINDOW_SIZE];
+private int window_end=0;
+private int window_filled=0;
+public void write(  int abyte){
+if (window_filled++ == WINDOW_SIZE)     throw new IllegalStateException(&quot;Window full&quot;);
+if ((window_filled+=len) > WINDOW_SIZE)     throw new IllegalStateException(&quot;Window full&quot;);
+int rep_start=(window_end - dist) &amp; WINDOW_MASK;
+int border=WINDOW_SIZE - len;
+if (rep_start <= border &amp;&amp; window_end < border) {
+

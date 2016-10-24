@@ -1,0 +1,11 @@
+* the columns of the jacobian.
+*
+* @return the {@code orthoTolerance} value.
+*/
+double orthoTolerance;
+
+/**
+* Threshold for QR ranking.
+*
+* If the squared norm of a column vector is smaller or equal to this
+

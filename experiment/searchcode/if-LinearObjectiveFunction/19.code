@@ -1,0 +1,10 @@
+public class LinearObjectiveFunction implements Serializable {
+
+/** Serializable version identifier. */
+private static final long serialVersionUID = -4531815507568396090L;
+return true;
+}
+
+if (other instanceof LinearObjectiveFunction) {
+LinearObjectiveFunction rhs = (LinearObjectiveFunction) other;
+

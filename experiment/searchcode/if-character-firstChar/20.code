@@ -1,0 +1,7 @@
+* and returns the number of words in the String. A word is a sequence of
+* one or more nonspace characters (any character other than &#39; &#39;).
+char firstChar = string.charAt(0);
+
+if (firstChar != &#39; &#39;) {
+numOfWords++;
+

@@ -1,0 +1,7 @@
+final int dimension = Math.min(ROWS, COLUMNS);
+
+for (int dim = 0; dim < dimension; dim++) {
+final int pivotRow = findPivot(matrix, dim);
+swapRows(matrix, dim, pivotRow);
+for (int row = dim + 1; row < ROWS; row++) {
+

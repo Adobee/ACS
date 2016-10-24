@@ -1,0 +1,10 @@
+public boolean isBefore(long millisInstant) {
+if (endInstant == NULL_END_INSTANT) {
+return false;
+return FieldUtils.safeAdd(getEndMillis(), -getStartMillis());
+}
+
+public Duration toDuration() {
+long durMillis = toDurationMillis();
+if (durMillis == 0) {
+

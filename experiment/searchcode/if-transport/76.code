@@ -1,0 +1,6 @@
+public class TransportGroup implements CompletionListener {
+
+private final ConcurrentMap<Transport, Boolean> transportMap_;
+public void add(Transport transport) {
+if (transportMap_.putIfAbsent(transport, Boolean.FALSE) == null &amp;&amp; removeOnClose_) {
+

@@ -1,0 +1,13 @@
+public long getOffset( ) throws IOException
+{
+return offset + buffer_offset;
+}
+
+public void seek( long localPos ) throws IOException
+{
+if ( localPos < 0 )
+ResourceConstants.INVALID_SEEK_OFFSET,
+new Object[]{localPos} ) );
+}
+if ( localPos > entry.getLength( ) )
+

@@ -1,0 +1,9 @@
+public class EpsilonGreedyStrategy implements ExplorationStrategy {
+/**
+* The epsilon value
+*/
+private double epsilon;
+public int action(double[] qvalues) {
+if (Distribution.random.nextDouble() < epsilon) {
+return Distribution.random.nextInt(qvalues.length);
+

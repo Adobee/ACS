@@ -1,0 +1,6 @@
+double a = 0.5; // a from regularized Gamma P/Q
+double xSqr = x * x;
+double regularizedGamma;
+if (xSqr >= a + 1.0) {
+regularizedGamma = Gamma.regularizedGammaQ(a, xSqr, EPS, 100000);
+

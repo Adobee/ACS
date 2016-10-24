@@ -1,0 +1,8 @@
+Planet source = null;
+Planet destination = null;
+int minRatio = 100;
+double minDistance = Double.MAX_VALUE;
+Planet playerPlanet = playerPlanetListIterator.next();
+if(planet.getOwner()!=this.player) {
+double distance = planet.getLocation().distance(playerPlanet.getLocation());
+

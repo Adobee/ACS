@@ -1,0 +1,8 @@
+//System.out.println(ds);
+
+double stepA = step;
+priorNorm[a] = 0;
+while (priorNorm[a] < 10.0) {
+priorNorm[a] =  s - sign*stepA*ds;
+stepA /= 10.0;	// if the value becomes less than 1, we have
+

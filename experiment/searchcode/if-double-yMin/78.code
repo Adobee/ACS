@@ -1,0 +1,19 @@
+* @author Johan Henriksson
+*
+*/
+public class BoundingBox3D
+{
+public double xmin, xmax;
+public double ymin, ymax;
+public double zmin, zmax;
+xmin=p;
+if(p>xmax)
+xmax=p;
+}
+
+public void addPointY(double p)
+{
+if(p<ymin)
+ymin=p;
+if(p>ymax)
+

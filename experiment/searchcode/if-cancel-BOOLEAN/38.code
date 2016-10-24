@@ -1,0 +1,10 @@
+return CancelQueueHolder.instance;
+}
+
+private volatile boolean mQuit = false;
+private BlockingQueue<CancelItem> cancelQueue = new LinkedBlockingQueue<CancelItem>();
+static final class CancelItem {
+
+private boolean isCallCancelCallback;
+private HttpRequestRunnable call;
+

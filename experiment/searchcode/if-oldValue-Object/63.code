@@ -1,0 +1,7 @@
+oldValue = VM_Magic.prepareInt(base, offset);
+if (oldValue != testValue) return false;
+} while (!VM_Magic.attemptInt(base, offset, oldValue, newValue));
+oldValue = VM_Magic.prepareAddress(VM_Magic.addressAsObject(addr), Offset.zero());
+newValue = oldValue.sub(decrement);
+if (newValue.LT(bound)) return Address.max();
+

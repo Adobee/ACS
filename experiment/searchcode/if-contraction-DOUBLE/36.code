@@ -1,0 +1,9 @@
+* @param contraction the contraction constant
+*/
+public void setContraction(double contraction)
+{
+if(contraction >= 1 || contraction <= 0 || Double.isNaN(contraction) || Double.isInfinite(contraction) )
+xec.mutableAdd(contraction, tmp);
+double fxec = f.f(xec);
+if(fxec < simplex.get(lastIndex).getProbability())
+

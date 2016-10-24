@@ -1,0 +1,9 @@
+compileStringConversion(fromType, toType, mv, compileContext);
+} else if (toType.isBoolean()) {
+// do toString conversion
+boolean unbox = fromType.isObject();
+boolean box = toType.isObject();
+
+if (unbox) {
+// if this is not already a numeric type then generate a cast
+

@@ -1,0 +1,8 @@
+private void closeURLConnection(HttpURLConnection httpurlconnection)
+{
+if(httpurlconnection != null)
+int i = httpurlconnection.getResponseCode();
+if(i == 200)
+return httpurlconnection.getInputStream();
+String s = (new StringBuilder()).append(&quot;Bad response: &quot;).append(i).toString();
+

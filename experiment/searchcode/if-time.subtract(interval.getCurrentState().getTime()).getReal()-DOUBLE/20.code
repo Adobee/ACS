@@ -1,0 +1,9 @@
+final FieldODEStateAndDerivative<T> s0 = interpolator.getPreviousState();
+t0 = s0.getTime();
+g0 = handler.g(s0);
+if (g0.getReal() == 0) {
+final FieldODEStateAndDerivative<T> s1 = interpolator.getCurrentState();
+final T t1 = s1.getTime();
+final T dt = t1.subtract(t0);
+if (dt.abs().subtract(convergence).getReal() < 0) {
+

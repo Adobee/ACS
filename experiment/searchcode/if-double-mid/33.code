@@ -1,0 +1,13 @@
+double precision = 0.00001;
+double start = 0;
+double end = n;
+while(end-start>precision){
+double mid = (start+end)/2;
+double midSqr = mid*mid;
+if(midSqr==n){
+return mid;
+}
+else{
+if(midSqr<n){
+start = mid;
+

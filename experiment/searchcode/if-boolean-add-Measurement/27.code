@@ -1,0 +1,8 @@
+return emf.createEntityManager();
+}
+
+public void create(Sensor sensor) {
+if (sensor.getMeasurementCollection() == null) {
+measurementCollectionMeasurementToAttach = em.getReference(measurementCollectionMeasurementToAttach.getClass(), measurementCollectionMeasurementToAttach.getIdMeasurement());
+attachedMeasurementCollection.add(measurementCollectionMeasurementToAttach);
+

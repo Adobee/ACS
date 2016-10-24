@@ -1,0 +1,6 @@
+CompassSettings settings = getSearchEngineFactory().getSettings();
+boolean daemon = settings.getSettingAsBoolean(LuceneEnvironment.Optimizer.SCHEDULE_DEAMON, true);
+long period = (long) (settings.getSettingAsFloat(LuceneEnvironment.Optimizer.SCHEDULE_PERIOD, 10) * 1000);
+if (log.isInfoEnabled()) {
+log.info(&quot;Starting scheduled optimizer [&quot; + optimizer.getClass() + &quot;] with period [&quot; + period
+

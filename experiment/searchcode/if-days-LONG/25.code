@@ -1,0 +1,20 @@
+public static final int MAX_RETRY = 3;
+
+// 爬网ID
+private long id;
+
+// 单次运行重试3次
+private int retry = MAX_RETRY;
+
+// 重试天数，7天均失败认为此id不存在
+private int days;
+public boolean exhaust() {
+if (--retry == 0)
+return true;
+
+return false;
+}
+
+public boolean discard() {
+if (--days == 0)
+

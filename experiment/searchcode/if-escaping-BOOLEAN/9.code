@@ -1,0 +1,10 @@
+if (line.endsWith(&quot;*&quot;)) {
+line = line.substring(0, strLen - 1);
+strLen--;
+}
+boolean escaping = false;
+switch (currentChar) {
+case &#39;*&#39;:
+if (escaping) {
+sb.append(&quot;\\*&quot;);
+

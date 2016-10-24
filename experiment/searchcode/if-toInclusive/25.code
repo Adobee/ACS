@@ -1,0 +1,7 @@
+public class BinarySearch<K extends Comparable<K>, V> implements Search<K, V> {
+@Override
+public V find(List<Entry<K, V>> list, K key) {
+if (list.isEmpty()) {
+private V find(List<Entry<K, V>> list, K key, int fromInclusive, int toInclusive) {
+if (fromInclusive > toInclusive) {
+

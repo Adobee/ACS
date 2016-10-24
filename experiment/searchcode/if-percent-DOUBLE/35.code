@@ -1,0 +1,10 @@
+public double percent(double value, int percent) throws UserException {
+if (percent > 0) {
+return value * percent / 100;
+throw new UserException(&quot;Percent could not be 0 or less.&quot;);
+}
+}
+
+public Option<Double> percentUniversal(double value, int percent) {
+return percent > 0 ? new Option<Double>(value * percent / 100) : Option.EMPTY;
+

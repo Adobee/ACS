@@ -1,0 +1,13 @@
+public PriorityQueue(int maxSize) {
+this.maxSize = maxSize;
+arr = new long[maxSize];
+elems = 0;
+}
+
+// 插入数据
+public void insert(long value) {
+int i;
+for (i = 0; i < elems; i++) {
+if (value < arr[i]) {
+break;
+

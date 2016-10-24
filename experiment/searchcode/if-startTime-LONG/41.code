@@ -1,0 +1,16 @@
+package uk.ac.dundee.cqwalker;
+
+public class Timer
+{
+private int delayms;
+private long startTime;
+public void startTimer(int ms)
+{
+startTime = System.nanoTime();
+delayms = ms;
+}
+
+public boolean timerExpired()
+{
+if (delayms == 0)
+

@@ -1,0 +1,8 @@
+public class ApacheHttpRequest implements HttpRequest {
+
+public static boolean allowInsecure = true;
+public String post(String url, String dataWrapper) throws Exception {
+CloseableHttpClient httpclient = null;
+if (allowInsecure) {
+httpclient = HttpClients.custom().setSslcontext(UTILS.createInsecureSslContext())
+

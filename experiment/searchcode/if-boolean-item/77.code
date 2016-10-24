@@ -1,0 +1,9 @@
+this.itemManager = itemManager;
+}
+
+@Override
+public void select() {
+if(!LoginManager.validateSession())
+Item item = itemManager.getItemByName(itemName);
+boolean checkoutSuccess = itemManager.checkOut(item);
+

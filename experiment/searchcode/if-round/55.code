@@ -1,0 +1,15 @@
+current = new HistoryElement(0, null);
+}
+
+
+public void addSet(VisualItem item, int round) {
+if ( round == -1 ) {
+round = current.getRound();
+}
+
+if (current.getRound() == round) {
+current.addSet(item);
+}
+
+else if (current.getRound() < round) {
+

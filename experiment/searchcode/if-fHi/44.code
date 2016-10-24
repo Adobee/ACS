@@ -1,0 +1,8 @@
+HttpSession httpSession = request.getSession(true);
+try{
+if (list==null||list.size()==0){
+FhiUser ws = null;
+ws = (FhiUser)httpSession.getAttribute(FhiConfig.USER_NAME);
+if (ws != null){
+ws.setRole(this.permissionImple.findRole(ws));
+

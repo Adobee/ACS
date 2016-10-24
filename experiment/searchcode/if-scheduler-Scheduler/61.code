@@ -1,0 +1,10 @@
+package meru.scheduler.provider.thread;
+
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+public Scheduler getScheduler(String name) {
+
+Scheduler scheduler = mScheduledThreadMap.get(name);
+
+if (scheduler == null) {
+

@@ -1,0 +1,13 @@
+import javax.security.auth.callback.Callback;
+import javax.security.auth.callback.CallbackHandler;
+import javax.security.auth.callback.UnsupportedCallbackException;
+public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException
+{
+WSPasswordCallback callback = (WSPasswordCallback)callbacks[0];
+if (callback.getIdentifier().equals(&quot;rod&quot;))
+{
+callback.setPassword(&quot;koala&quot;);
+}
+}
+}
+

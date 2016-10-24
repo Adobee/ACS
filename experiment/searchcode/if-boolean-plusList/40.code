@@ -1,0 +1,9 @@
+protected AbstractRegion(final double tolerance) {
+
+this.tree = new BSPTree<S>(Boolean.TRUE);
+this.tolerance = tolerance;
+private SubHyperplane<S> recurseIntersection(final BSPTree<S> node, final SubHyperplane<S> sub) {
+
+if(node.getCut() == null) {
+return (Boolean)node.getAttribute() ? sub.copySelf() : null;
+

@@ -1,0 +1,9 @@
+private <T> void initDecision(List<Decision<T>> decisions) {
+for (int i = 0; i < decisions.size(); i++) {
+Decision decision = decisions.get(i);
+if(!counts.containsKey(decision)) {
+ArrayList<Decision<T>> localUnusedDecision = new ArrayList<>();
+for (int i = 0; i < decisions.size(); i++) {
+Decision<T> tDecision = decisions.get(i);
+if(!usedDecisions.contains(tDecision)) {
+

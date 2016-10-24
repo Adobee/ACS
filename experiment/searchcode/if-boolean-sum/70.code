@@ -1,0 +1,12 @@
+for(int i=0;i<10000;i++){
+if(amicable(i, sum_divisors(i)) &amp;&amp; i!=sum_divisors(i)){
+sum+=i;
+}
+}
+System.out.println(sum);
+}
+
+
+public static boolean amicable(int a, int b){
+return sum_divisors(a)==b &amp;&amp; sum_divisors(b)==a ? true:false;
+

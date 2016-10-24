@@ -1,0 +1,15 @@
+* Returns the instruction ready to go on to next stage.
+*
+* @return
+*/
+public InstructionToken getTop() {
+if (!finalized.isEmpty()) {
+return finalized.getFirst();
+* Removes the instruction that is to be put in the next stage.
+* Note: call getTop() first.
+*
+* @return
+*/
+public boolean removeTop() {
+if (!finalized.isEmpty()) {
+

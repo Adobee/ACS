@@ -1,0 +1,8 @@
+* expects one address so this is used for the sort order.
+* @deprecated transition mechanism only
+*/
+@Deprecated
+static final boolean PREFER_V6 = Boolean.parseBoolean(System.getProperty(&quot;java.net.preferIPv6Addresses&quot;, &quot;false&quot;));
+static int sortKey(InetAddress address, boolean prefer_v6) {
+int key = address.getAddress().length;
+

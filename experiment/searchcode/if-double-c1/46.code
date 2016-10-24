@@ -1,0 +1,12 @@
+int[] predictedoutput2 = new int[excount];
+double range=0.0;
+if(i==0)
+range = inputdata[i]-0.5;
+else if(i< excount)
+G2 = Math.sqrt((possitiveright2*negativewrong2)) + Math.sqrt((negativeright2*possitivewrong2));
+
+if (G1<=G2)
+{
+RealClassifier C1 = new RealClassifier(excount);
+C1.setName(&quot;H&quot;+(i+1));
+

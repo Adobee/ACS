@@ -1,0 +1,6 @@
+@NamedQuery(name = &quot;Projects.findByCutoverDate&quot;, query = &quot;SELECT p FROM Projects p WHERE p.cutoverDate = :cutoverDate&quot;),
+private Date envReadyDate;
+@Column(name = &quot;CutoverDate&quot;)
+@Temporal(TemporalType.DATE)
+private Date cutoverDate;
+

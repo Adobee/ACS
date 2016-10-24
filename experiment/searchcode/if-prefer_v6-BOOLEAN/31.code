@@ -1,0 +1,12 @@
+instance = new VersionCheckClient();
+}
+
+return (instance);
+}
+
+private boolean				 prefer_v6;
+
+private Map						 last_check_data_v4 = null;
+public void parameterChanged(String name) {
+prefer_v6 = COConfigurationManager.getBooleanParameter(name);
+

@@ -1,0 +1,11 @@
+public synchronized boolean tryAcquire(final long requestPermits) {
+onDemandRefill();
+if (this.availablePermits >= requestPermits) {
+timeTracker.recordCurrentTime();
+return false;
+}
+}
+
+private synchronized void onDemandRefill() {
+if (availablePermits == capacity) {
+

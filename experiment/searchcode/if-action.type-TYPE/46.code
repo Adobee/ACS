@@ -1,0 +1,11 @@
+package nl.bneijt.enerdy;
+
+
+public enum ActionType {
+VIEW, EXPLODE, IMPLODE, SPLIT, JOIN;
+
+
+public static boolean contains(String action) {
+ActionType t = ActionType.fromString(action);
+return t != null;
+

@@ -1,0 +1,11 @@
+Type superclass = subclass.getGenericSuperclass();
+if (superclass instanceof Class) {
+throw new RuntimeException(&quot;Missing type parameter.&quot;);
+* @return the type
+*/
+@SuppressWarnings(&quot;rawtypes&quot;)
+Type resolveType(Type toResolve) {
+
+while (true) {
+if (toResolve instanceof TypeVariable) {
+

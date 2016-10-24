@@ -1,0 +1,10 @@
+protected double[] solve() {
+if (coefficientA == 0.0)
+throw new IllegalArgumentException(&quot;a == 0! It is not a square equation&quot;);
+if(solve().length == 0) return false;
+
+for(double d: solve()) {
+if(d % 1 != 0) return false;
+}
+return true;
+

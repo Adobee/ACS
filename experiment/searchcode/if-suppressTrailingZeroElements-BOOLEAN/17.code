@@ -1,0 +1,9 @@
+public static String formatDurationWords(long durationMillis, boolean suppressLeadingZeroElements, boolean suppressTrailingZeroElements)
+{
+
+// This method is generally replacable by the format method, but
+if (suppressTrailingZeroElements)
+{
+String tmp = StringUtility.replaceOnce(duration, &quot; 0 seconds&quot;, &quot;&quot;);
+if (tmp.length() != duration.length())
+

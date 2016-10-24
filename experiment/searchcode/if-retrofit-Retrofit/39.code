@@ -1,0 +1,7 @@
+public static RetrofitService sRetrofitService = null;
+
+public static RetrofitService getRetrofitService(){
+synchronized (monitor){
+if (sRetrofitService == null){
+sRetrofitService = new CampusRetrofit().getRetrofitService();
+

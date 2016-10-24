@@ -1,0 +1,7 @@
+public static void logDebug(String msg, boolean logExposed, boolean logAndroid) {
+if(!DEBUG_ENABLED) {
+return;
+public static void logError(String msg, boolean logExposed, boolean logAndroid) {
+if(logExposed) {
+XposedBridge.log(&quot;E:&quot; + TAG + &quot;: &quot; + msg);
+

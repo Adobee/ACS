@@ -1,0 +1,11 @@
+public class TextualArtifactREFSVAdapter extends DmcTypeTextualArtifactREFSV implements DmcAdapterIF {
+
+transient DmcTypeTextualArtifactREFSV existingValue;
+
+public TextualArtifactREFSVAdapter(DmcAttributeInfo ai){
+public void resetToExisting() {
+if (existingValue == null)
+value = null;
+else
+value = existingValue.getSVCopy();
+

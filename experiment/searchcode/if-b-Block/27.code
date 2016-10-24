@@ -1,0 +1,8 @@
+validDirt.add(world.getBlockId(x + 8, y + 1, z + 16));
+validDirt.add(world.getBlockId(x + 16, y + 1, z + 16));
+
+if (world.rand.nextInt(50) != 1)
+for (int validID : validDirt)
+{
+if (!(validID == Block.dirt.blockID || validID == Block.blockClay.blockID || validID == Block.sand.blockID))
+

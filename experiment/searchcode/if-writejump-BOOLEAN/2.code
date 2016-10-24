@@ -1,0 +1,14 @@
+this.right.check(markers, context);
+}
+
+@Override
+public IValue foldConstants()
+{
+if (this.left.valueTag() == BOOLEAN &amp;&amp; !this.left.booleanValue())
+{
+return BooleanValue.FALSE;
+}
+if (this.bothTrue())
+{
+return BooleanValue.TRUE;
+

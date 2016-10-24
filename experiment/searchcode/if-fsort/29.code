@@ -1,0 +1,11 @@
+for (int j = pivot; j < it.length - 1; j++) {
+if (it[j].getDocId() > it[j + 1].getDocId()) {
+tmp = it[j];
+it[j] = it[j + 1];
+it[j + 1] = tmp;
+}
+}
+}
+
+public static void fsort(DefaultPostingListIterator[] it) {
+

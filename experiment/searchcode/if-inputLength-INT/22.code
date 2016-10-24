@@ -1,0 +1,12 @@
+private final String input;
+private int index;
+private final int inputLength;
+
+public Lexer(String input) {
+this.inputLength = input.length();
+}
+
+public char head() {
+if (index < inputLength) {
+return input.charAt(index);
+

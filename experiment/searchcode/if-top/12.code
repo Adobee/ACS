@@ -1,0 +1,16 @@
+package adt;
+
+class Stack<T extends Comparable<T>> {
+Node<T> top;
+
+T pop() {
+if (top != null) {
+T item = top.data;
+top = top.next;
+return item;
+}
+return null;
+}
+
+void push(T item) {
+

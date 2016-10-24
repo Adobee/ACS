@@ -1,0 +1,6 @@
+public void removeEntryAt(int index) {
+Entry e = (Entry) entries.elementAt(index);
+if (e instanceof DoubleEntry) ((DoubleEntry) e).removeOther();
+Entry entry = (Entry) e.nextElement();
+if (entry instanceof DoubleEntry) ((DoubleEntry) entry).removeOther();
+

@@ -1,0 +1,8 @@
+Face f = faceTable.get(i);
+Collection<Marker> objectList = getMarkers(f);
+
+if (objectList == null) {
+// remove the object, which should be in the list for oldFace
+if (oldFace != null) {
+Collection<Marker> markers = markerDatabase.get(oldFace);
+

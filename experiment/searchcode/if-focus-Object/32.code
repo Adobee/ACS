@@ -1,0 +1,9 @@
+public ActionFocusSupport(Object source) {
+if (source == null) {
+throw new NullPointerException(&quot;No source&quot;);
+listenerList.remove(ActionFocusListener.class, listener);
+}
+
+public void fireActionFocusChanged() {
+Object[] listeners = listenerList.getListenerList();
+

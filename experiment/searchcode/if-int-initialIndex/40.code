@@ -1,0 +1,7 @@
+public int read(float target[], int initialIndex, int nValues) {
+int nLeft = valuesLeft();
+int n = (nLeft<nValues) ? nLeft : nValues;
+public void write(float source[], int initialIndex, int nSamples) {
+if (writePointer+nSamples<size) {
+System.arraycopy(source, initialIndex, buffer, writePointer, nSamples);
+

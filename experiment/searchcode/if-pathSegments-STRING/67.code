@@ -1,0 +1,7 @@
+public class ThingFetcher extends ServiceTask<Uri, Void, Thing> {
+
+private static final String TAG = &quot;ThingFetcher&quot;;
+String host = uri.getHost();
+List<String> pathSegments = uri.getPathSegments();
+if(host.equals(&quot;flattr.com&quot;) &amp;&amp; pathSegments.size() >= 2 &amp;&amp; pathSegments.get(0).equals(&quot;thing&quot;)) {
+

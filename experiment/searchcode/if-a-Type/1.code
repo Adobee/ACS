@@ -1,0 +1,8 @@
+* @return Differential between playerType&#39;s winrate and type&#39;s winrate
+*/
+public static int adjustedWinRate(int playerType, int type) {
+if (playerType != 10) {
+if (playerType == type) {
+return 0;
+} else if (playerType == 1) // druid
+

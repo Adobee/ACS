@@ -1,0 +1,11 @@
+System.out.println(this.layerSizes);
+
+if(needPretrain==false){
+for(int i=0;i<this.num_sigmoidlayers;i++){
+RealMatrix weight=this.initializeWeights(this.layerSizes.get(i), this.layerSizes.get(i+1));
+this.bias.put(i, this.bias.get(i).add(this.grad_b.get(i).scalarMultiply(-this.lr)));
+}
+}
+
+public RealMatrix initializeWeights(int n_input,int n_output){
+

@@ -1,0 +1,17 @@
+int beforeCount = countBefore();
+int afterCount = countAfter();
+
+// 如果定义了动态补足，则对当前页之前和之后的页数进行动态补足。
+if (supplement) {
+return beforeCount;
+}
+
+/**
+* 计算当前页之后的页数。
+*
+* @return 当前页之后的页数。
+*/
+private int countAfter() {
+int afterCount = 0;
+if (page.getTotalPage() - page.getPageNo() > afterNum) {
+

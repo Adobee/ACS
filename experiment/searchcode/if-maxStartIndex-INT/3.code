@@ -1,0 +1,7 @@
+public String longestPalindrome(String s) {
+int maxStartIndex = 0, maxEndIndex = 0;
+for (int i = s.length() / 2; i < s.length(); i++) {
+int subEndIndex = i * 2 - subStartIndex;
+
+if (subEndIndex - subStartIndex > maxEndIndex - maxStartIndex) {
+

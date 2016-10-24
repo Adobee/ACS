@@ -1,0 +1,10 @@
+public static void printRow(ArrayList<Character> al, int N){
+int counter = 0;
+int i = 0;
+while(counter != al.size() - 1){
+if(i + N > al.size() - 1){
+System.out.println(al.get(i));
+i += N;
+i %= al.size();
+counter++;
+

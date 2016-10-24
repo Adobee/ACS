@@ -1,0 +1,9 @@
+float boost = AbstractQueryBuilder.DEFAULT_BOOST;
+float negativeBoost = -1;
+String queryName = null;
+
+String currentFieldName = null;
+if (parseContext.parseFieldMatcher().match(currentFieldName, NEGATIVE_BOOST_FIELD)) {
+negativeBoost = parser.floatValue();
+} else if (parseContext.parseFieldMatcher().match(currentFieldName, AbstractQueryBuilder.NAME_FIELD)) {
+

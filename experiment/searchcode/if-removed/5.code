@@ -1,0 +1,12 @@
+private int removed;
+
+DiffStat(int added, int removed) {
+this.added = added;
+this.removed = removed;
+return this.added + &quot; insertions(+), &quot; + this.removed + &quot; deletions(-)&quot;;
+}
+
+void add(DiffStat other) {
+this.added += other.added;
+this.removed += other.removed;
+

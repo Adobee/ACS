@@ -1,0 +1,12 @@
+this.streams = new ArrayList<OutputStream>();
+
+for (OutputStream out : streams) {
+if (out != null)
+addStream(out);
+}
+}
+
+public void addStream(OutputStream stream) {
+synchronized (streams) {
+streams.add(stream);
+

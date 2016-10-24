@@ -1,0 +1,9 @@
+int aaMode; // grey scale or LCD.
+// TBD .. other rendering attributes.
+
+public FontStrikeDesc(float fontSize, BaseTransform transform, int aaMode) {
+size = fontSize;
+this.aaMode = aaMode;
+matrix = new float[4];
+matrix[0] = (float)tx2d.getMxx();
+

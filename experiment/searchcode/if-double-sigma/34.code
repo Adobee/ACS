@@ -1,0 +1,18 @@
+this.sigma = sigma;
+}
+
+@Override
+public double pdf (double x)
+{
+if (x<=0) {
+
+return 0;
+return Math.exp(-0.5*z*z) / ( sigma * Constants.SQRT2PI * x);
+}
+}
+
+@Override
+public double cdf (double x)
+{
+if (x<=0) {
+

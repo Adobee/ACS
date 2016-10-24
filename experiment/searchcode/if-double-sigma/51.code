@@ -1,0 +1,9 @@
+public class EpanechnikovKernel extends Kernel
+{
+/** The parameter sigma of the Epanechnikov kernel. */
+private double sigma = 1.0d;
+public double calculateDistance(double[] x1, double[] x2)
+{
+double expression = norm2(x1, x2) / sigma;
+if (expression > 1)
+

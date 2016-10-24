@@ -1,0 +1,10 @@
+public WizardPage next(Boolean errorExpected) {
+if (errorExpected) {
+return next(WizardPage.class, new Function<WebDriver, Boolean>() {
+public WizardPage previous() {
+return previous(false);
+}
+
+public WizardPage previous(Boolean errorExpected) {
+if (errorExpected) {
+

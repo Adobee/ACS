@@ -1,0 +1,13 @@
+protected double max;
+protected double mid;
+protected double midValue;
+
+public FuzzySet(double min,double max,double midValue)
+this.mid = mid;
+this.midValue = midValue;
+}
+
+public double evaluate(double in)
+{
+if ( in<=min || in>=max )
+

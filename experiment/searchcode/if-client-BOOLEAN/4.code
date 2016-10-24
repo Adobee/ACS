@@ -1,0 +1,11 @@
+public void enqueue(Client new_client)
+{
+if(head_client == null)
+{
+head_client = new_client;
+tail_client = head_client;
+Client return_client = tail_client;
+if(this.isEmpty() == false)
+{
+tail_client = tail_client.previous_client;
+

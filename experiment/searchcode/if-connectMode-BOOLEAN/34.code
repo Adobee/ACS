@@ -1,0 +1,7 @@
+this.connectMode = connectMode;
+if (connectMode == null) {
+throw new IllegalArgumentException(&quot;Cannot create Wrapper with null connection mode!&quot;);
+public InputStream getStream(String sha1) throws BinaryNotFoundException {
+if (connectMode == ProviderConnectMode.COPY_ON_READ) {
+try {
+

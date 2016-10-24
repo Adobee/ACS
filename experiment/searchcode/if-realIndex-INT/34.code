@@ -1,0 +1,15 @@
+start = (start +1) % m.length;
+itemCounter --;
+}
+}
+public void enqueue(E s){
+if(isFull())
+resize();
+m[realIndex(end)] = s;
+//служебные методы
+private int realIndex(int index){
+return (index % m.length);
+}
+public boolean isFull(){
+if(itemCounter == m.length)
+

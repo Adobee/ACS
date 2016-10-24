@@ -1,0 +1,11 @@
+public static boolean isFalse(Object obj) {
+if (obj == null) {
+return true;
+}
+if (obj instanceof Boolean) {
+Boolean b = (Boolean) obj;
+return !b.booleanValue();
+}
+if (obj instanceof String) {
+return ((String) obj).length() == 0;
+

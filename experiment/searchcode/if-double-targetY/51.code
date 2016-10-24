@@ -1,0 +1,11 @@
+int dollposZ = MathHelper.floor_double(theDoll.posZ);
+
+int targetX = dollposX;
+int targetY = dollposY;
+while(theWorld.isAirBlock(targetX, targetY, targetZ))
+{
+--targetY;
+}
+
+if(targetY<dollposY-3 || targetY >dollposY+3)
+

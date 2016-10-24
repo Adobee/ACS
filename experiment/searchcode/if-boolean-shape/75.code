@@ -1,0 +1,13 @@
+this.mode = mode;
+}
+
+public void paint(Graphics2D g) {
+if ((mode &amp; STROKE) != 0)
+g.draw(shape);
+if ((mode &amp; FILL) != 0)
+g.fill(shape);
+}
+
+public boolean mouseEvent(MouseEvent me) {
+//		System.out.println(me.getPoint());
+

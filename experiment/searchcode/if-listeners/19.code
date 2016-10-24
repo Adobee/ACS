@@ -1,0 +1,7 @@
+public class EventListenerMap {
+
+ConcurrentHashMap<Class<?>, EventListeners<?>> event_map = new ConcurrentHashMap<Class<?>, EventListeners<?>>();
+EventListeners<T> listeners = (EventListeners<T>)event_map.get(type);
+if (listeners == null) {
+listeners = new EventListeners<T>(type);
+

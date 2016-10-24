@@ -1,0 +1,10 @@
+// Fonction d&#39;appartenance logique floue
+public static double FuzMemShip(double x, double alpha, double gamma) {
+if (alpha == gamma) {
+if (x <= alpha)
+return 0;
+else
+return 1;
+} else if (alpha < gamma) {
+if (x < alpha)
+

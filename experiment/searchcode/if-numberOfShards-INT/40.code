@@ -1,0 +1,9 @@
+* @return A suggested default for the size of any shard-side PriorityQueues
+*/
+public static int suggestShardSideQueueSize(int finalSize, int numberOfShards) {
+if (finalSize < 1) {
+throw new IllegalArgumentException(&quot;size must be positive, got &quot; + finalSize);
+}
+if (numberOfShards < 1) {
+throw new IllegalArgumentException(&quot;number of shards must be positive, got &quot; + numberOfShards);
+

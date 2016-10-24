@@ -1,0 +1,9 @@
+read.loadVariable(protocol).invokeVirtual(TProtocolReader.class, &quot;nextField&quot;, boolean.class);
+read.ifZeroGoto(&quot;while-end&quot;);
+
+// switch (protocol.getFieldId())
+read.loadVariable(protocol).invokeVirtual(TProtocolReader.class, &quot;nextField&quot;, boolean.class);
+read.ifZeroGoto(&quot;while-end&quot;);
+
+// fieldId = protocol.getFieldId()
+

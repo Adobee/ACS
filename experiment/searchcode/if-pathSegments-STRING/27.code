@@ -1,0 +1,9 @@
+public static Function<PathSegments, PathSegments> insert(final PathSegments segments) {
+if (segments == null || segments.isEmpty()) {
+return Functions.identity();
+public PathSegments apply(PathSegments input) {
+if (input == null || input.isEmpty()) {
+return input;
+}
+String last = input.last();
+

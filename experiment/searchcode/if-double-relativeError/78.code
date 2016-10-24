@@ -1,0 +1,12 @@
+public double evaluate(double x){
+
+double r,a,b,c,p0,p1,p2,q0,q1,q2;
+int n;
+double relativeError;
+c = p1 / q1;
+n = 0;
+
+relativeError = Double.MAX_VALUE;
+
+while (n < ITERATIONS &amp;&amp; relativeError > EPSILON) {
+

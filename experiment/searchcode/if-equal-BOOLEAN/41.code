@@ -1,0 +1,14 @@
+public class DefaultBooleanFilterField implements BooleanFilterField {
+
+@Setter
+private Boolean equalTo;
+
+@Override
+return Optional.ofNullable(this.equalTo);
+}
+
+@Override
+public void notEqualTo(final Boolean value) {
+if (value != null) {
+this.equalTo(!value);
+

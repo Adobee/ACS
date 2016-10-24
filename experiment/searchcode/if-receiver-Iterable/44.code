@@ -1,0 +1,7 @@
+public abstract class ChatStubController<E extends ChatStubModel> extends LinkedModelController<Iterable<ChatModelSegment>, E> {
+private transient BroadcastReceiver updateReceiver;
+private transient LatchedCallback<ChatModel.ChatModelCommand> sendCommand;
+public void connect(View view, E model, final Screen host) {
+if (updateReceiver == null) {
+Logger.log(&quot;ChatStubController&quot;, this.getClass().getSimpleName() + &quot; registering&quot;);
+

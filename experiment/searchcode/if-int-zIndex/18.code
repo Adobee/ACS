@@ -1,0 +1,9 @@
+* @param l2 lensbox 2
+* @return -1,0,1 depending on the zindex
+*/
+public int compare(LensBox l1, LensBox l2) {
+if (l1.getZIndex() < l2.getZIndex()) {
+return -1;
+}
+if (l1.getZIndex() > l2.getZIndex()) {
+

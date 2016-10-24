@@ -1,0 +1,8 @@
+private static Credentials getCredentials(String login, String password, String host) {
+int domainIndex = login.indexOf(&quot;\\&quot;);
+if (domainIndex > 0) {
+// if the username is in the form &quot;user\domain&quot;
+// then use NTCredentials instead of UsernamePasswordCredentials
+String domain = login.substring(0, domainIndex);
+if (login.length() > domainIndex + 1) {
+

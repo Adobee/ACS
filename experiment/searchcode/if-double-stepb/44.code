@@ -1,0 +1,9 @@
+//        Double stepA;
+//        Double stepB;
+Double result = 0D;
+
+if(fromCurrency.equals(&quot;DKK&quot;) &amp;&amp; toCurrency.equals(&quot;DKK&quot;)) {
+Double stepA = (Double.parseDouble(amount)) * from.getCurrency();
+System.out.println(&quot;Første udregning: &quot; + stepA);
+Double stepB = stepA / to.getCurrency();
+

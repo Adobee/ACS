@@ -1,0 +1,8 @@
+for (Direction direction : values()) {
+if (direction.xModifier == directionX &amp;&amp; direction.yModifier == directionY) {
+return direction;
+}
+}
+
+throw new IllegalArgumentException(&quot;Unable to determine direction from modifiers x:&quot; + directionX + &quot; y:&quot; + directionY);
+

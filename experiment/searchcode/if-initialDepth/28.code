@@ -1,0 +1,6 @@
+public void put(String key, int count, int initialDepth, int section) {
+Set<Integer> depth = new HashSet<Integer>();
+depth.add(initialDepth);
+if (!map.containsKey(key)) {
+map.put(key, new Metrics(count, depth, section));
+

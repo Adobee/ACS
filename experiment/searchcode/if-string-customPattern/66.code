@@ -1,0 +1,8 @@
+//	public Object getAsObject(FacesContext context, UIComponent component,
+//			String value) {
+//		if (value == null) {
+//		String pattern = (String) component.getAttributes()
+//				.get(&quot;custompattern&quot;);
+//		String[] patterns = pattern.split(&quot;;&quot;);
+//		Object ret = null;
+

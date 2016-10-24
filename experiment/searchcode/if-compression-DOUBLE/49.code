@@ -1,0 +1,10 @@
+double epsilon = parameters.get(DELTA_EPSILON);
+double compression = parameters.get(DELTA_COMPRESSION);
+
+if (compression == 0.0d) {
+Activator.getInstance().error(&quot;Invalid parameter values: the compression cannot be zero.&quot;);
+return Function.ERROR_VALUE;
+}
+
+double value = calculateTempValue(x, deltaX, compression);
+

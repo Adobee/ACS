@@ -1,0 +1,12 @@
+double minY = Double.NaN;
+
+double maxX = Double.NaN;
+double maxY = Double.NaN;
+
+public void extend(double x, double y) {
+if(Double.isNaN(minX)) {
+minX = x;
+maxX = x;
+minY = y;
+maxY = y;
+

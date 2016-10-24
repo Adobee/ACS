@@ -1,0 +1,14 @@
+private static final long serialVersionUID = 1L;
+private int maxSize;
+
+public FixedArrayList(int maxSize) {
+boolean isAdd = super.add(e);
+if (size() > maxSize) {
+Collections.sort(this);
+remove(size() - 1);
+}
+return isAdd;
+}
+
+}
+

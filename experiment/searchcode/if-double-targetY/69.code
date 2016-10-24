@@ -1,0 +1,9 @@
+public static final int POINTS = 100;
+private GhostMode mode = GhostMode.IDLE;
+protected int targetX, targetY;
+
+public Ghost(PacmanBoard board) {
+if (mode != GhostMode.RETURNING_HOME) {
+findTargetPosition();
+} else if (Math.floor(x) == targetX &amp;&amp; Math.floor(y) == targetY) {
+

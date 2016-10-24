@@ -1,0 +1,7 @@
+double p = Double.NaN;
+if (i[0] == null) {
+p = 0;
+} else if (((Double) i[0]).doubleValue() <= 90.593144) {
+p = WekaClassifier.N473d9d9a1(i);
+} else if (((Double) i[0]).doubleValue() > 90.593144) {
+

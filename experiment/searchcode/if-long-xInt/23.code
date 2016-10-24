@@ -1,0 +1,7 @@
+public void generate(Region region, int regionX, int regionY, long seed) {
+int regionOffsetX = regionX * Region.REGION_WIDTH;
+float scaledX = worldX / 32.0F;
+
+int scaledXInt = fastFloor(scaledX);
+float fractionX = scaledX - scaledXInt;
+

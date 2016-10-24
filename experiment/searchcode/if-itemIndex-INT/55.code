@@ -1,0 +1,15 @@
+if (playlist.isRepeat()) {
+return itemIndex;
+}
+
+if (playlist.isRandom()) {
+int lastIndex = itemIndex;
+if (playlist.getItemSize() > 1) {
+return itemIndex;
+}
+
+int prevIndex = itemIndex - 1;
+
+if (prevIndex >= 0) {
+return prevIndex;
+

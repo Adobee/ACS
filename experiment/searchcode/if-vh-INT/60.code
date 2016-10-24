@@ -1,0 +1,15 @@
+logger.error(&quot;params error:&quot;+e.getLocalizedMessage());
+e.printStackTrace();
+vh.put(&quot;code&quot;, &quot;-1&quot;);
+vh.put(&quot;message&quot;, &quot;更新导购异常请重试&quot;);
+return vh;
+}
+
+if (jo==null||!jo.has(&quot;storeid&quot;)||!jo.has(&quot;vipid&quot;)||!jo.has(&quot;guideid&quot;)) {
+vh.put(&quot;message&quot;, &quot;更新导购异常请重试&quot;);
+return vh;
+}
+if(offjo.optInt(&quot;errCode&quot;,-1)!=0) {
+vh.put(&quot;code&quot;, &quot;-1&quot;);
+vh.put(&quot;message&quot;, offjo.optString(&quot;errMessage&quot;));
+

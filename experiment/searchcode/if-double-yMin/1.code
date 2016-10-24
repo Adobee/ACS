@@ -1,0 +1,13 @@
+setYmin(0.);
+setYmax(1.);
+}
+
+Step(double ymin, double ymax) {
+setYmin(ymin);
+setYmax(ymax);
+}
+
+@Override
+public OptionalDouble apply(Double net) {
+if (net > 0.0)
+

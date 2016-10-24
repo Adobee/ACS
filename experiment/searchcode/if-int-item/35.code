@@ -1,0 +1,9 @@
+public void removeItem(ItemType itemType) {
+if (getItemCount(itemType) == 0) {
+return;
+}
+int updatedCount = itemCounts.get(itemType) - 1;
+public void removeItem(ItemType itemType, int count) {
+if (getItemCount(itemType) >= count) {
+for (int i = 0; i < count; i++) {
+

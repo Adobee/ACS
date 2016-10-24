@@ -1,0 +1,11 @@
+private static void quickSort(int[] array, int beginIndex, int endIndex)
+{
+if (beginIndex < endIndex)
+{
+// int index = new Random(1).nextInt(endIndex + 1);
+int index = endIndex;
+if (index != endIndex)
+{
+int temp = array[endIndex];
+array[endIndex] = array[index];
+

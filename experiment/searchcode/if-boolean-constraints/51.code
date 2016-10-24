@@ -1,0 +1,11 @@
+return new LinearEqSpaceDefinition(
+getConstraintsOnM(),
+getConstraintsOnC());
+}
+
+private IntegerConstraints getConstraintsOnM() {
+if (isMOne()) {
+return createConstraintsForMOne();
+} else if (isMMinusOne()) {
+return createConstraintsForMMinusOne();
+

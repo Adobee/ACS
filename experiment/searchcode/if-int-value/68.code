@@ -1,0 +1,16 @@
+package JPL.ch09.ex09_02;
+
+public class OperateBit {
+
+public int checkBitCount(int value) {
+int count = 0;
+while (value != 0) {
+if ((value &amp; 1) == 1) {
+count++;
+}
+value = value >> 1;
+}
+return count;
+}
+}
+

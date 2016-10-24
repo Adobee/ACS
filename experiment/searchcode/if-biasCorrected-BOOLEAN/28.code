@@ -1,0 +1,7 @@
+public Covariance(RealMatrix matrix, boolean biasCorrected) {
+checkSufficientData(matrix);
+n = matrix.getRowDimension();
+protected RealMatrix computeCovarianceMatrix(RealMatrix matrix, boolean biasCorrected) {
+int dimension = matrix.getColumnDimension();
+Variance variance = new Variance(biasCorrected);
+

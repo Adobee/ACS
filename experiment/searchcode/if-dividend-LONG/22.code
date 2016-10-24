@@ -1,0 +1,6 @@
+public void saveAndTransform(InvestmentPlanDividend investmentPlanDividend, Security security) {
+if(isNewDividend(investmentPlanDividend)) {
+if(shareHolding == null) throw new IllegalArgumentException(&quot;You are trying to save or update a dividend that does not have share holdings.&quot;);
+shareHolding.addDividend(investmentPlanDividend);
+long newAmountOfShares = shareHolding.getAmountOfSharesHeld() + investmentPlanDividend.getAllotedShares();
+

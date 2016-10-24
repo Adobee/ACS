@@ -1,0 +1,9 @@
+* @param req
+* @return boolean 值
+*/
+public static boolean isGzipSupport(HttpServletRequest req) {
+String headEncoding = req.getHeader(&quot;accept-encoding&quot;);
+PrintWriter pw = null;
+if (isGzipSupport(req)) { // 支持 gzip 压缩
+pw = new PrintWriter(new GZIPOutputStream(resp.getOutputStream()));
+

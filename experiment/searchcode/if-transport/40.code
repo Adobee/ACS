@@ -1,0 +1,10 @@
+transportService = (TransportService) context.getBean(&quot;transportServiceImpl&quot;);
+}
+
+// ############## CREATE ##############
+@Test
+public void createTransportIfCorrectTest() {
+Transport test = transportService.create(transport);
+if (test != null) {
+transportService.delete(test);
+

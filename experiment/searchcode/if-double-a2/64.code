@@ -1,0 +1,11 @@
+* User: rrd09
+* Date: 15/01/13
+* Time: 15:39
+*/
+public class FuzzyNumber {
+protected double a1, a2, a3;
+
+public FuzzyNumber(double a1, double a2, double a3) {
+this.a1 = a1;
+this.a2 = a2;
+

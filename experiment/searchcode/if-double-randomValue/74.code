@@ -1,0 +1,10 @@
+public class MonteCarlo {
+
+public double h,k,r;
+private Random rnd = new Random();
+
+public MonteCarlo(double h, double k, double r){
+public double nextRainDrop_y(){
+//double randomValue = rangeMin + (rangeMax - rangeMin) * r.nextDouble();
+double y = (k-r) + ((r*2)-(k-r)) * rnd.nextDouble();
+

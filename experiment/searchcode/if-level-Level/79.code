@@ -1,0 +1,9 @@
+public static Level toLevel(String name, Level defaultLevel)
+{
+if (name == null) {
+return defaultLevel;
+}
+String cleanLevel = name.toUpperCase(Locale.ENGLISH);
+for (Level level : values()) {
+if (level.name().equals(cleanLevel)) {
+

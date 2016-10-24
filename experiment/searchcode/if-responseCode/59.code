@@ -1,0 +1,12 @@
+JSONObject jsonObject;
+int responseCode;
+
+public RestResponseException(String path, int responseCode, JSONObject jsonObject) {
+public RestResponseException(String path, int responseCode) {
+this(path, responseCode, null);
+}
+
+@Override
+public String toString() {
+if (jsonObject == null) {
+

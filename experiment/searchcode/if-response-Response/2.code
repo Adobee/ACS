@@ -1,0 +1,20 @@
+public void onResponse(T response)
+{
+triggerInnerResponse();
+}
+
+protected void triggerInnerResponse(){
+if (innerResponse != null &amp;&amp; innerResponse instanceof EmptyResponse){
+emptyResponse.onResponse();
+}
+}
+
+@Override
+public void onError(Exception exception)
+{
+if (innerResponse != null){
+innerResponse.onError(exception);
+}
+}
+}
+

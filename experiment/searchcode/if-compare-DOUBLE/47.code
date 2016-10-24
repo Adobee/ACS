@@ -1,0 +1,15 @@
+v = Math.max(v, a - ((a / 250.0) * c));
+double x = 3.0 * b / 10.0;
+x = Math.max(x, b - ((b / 250.0) * d));
+if (compare(v, x) == 0) {
+static double eps = 1e-10;
+
+static int compare(double a, double b) {
+if (Math.abs(a - b) < eps)
+return 0;
+if (a - b < 0.0)
+return -1;
+return 1;
+}
+}
+

@@ -1,0 +1,14 @@
+file = new File(file, dirs[i]);
+}
+return file;
+}
+
+
+public Path makePath(String path) {
+if (path == null) {
+return newPath();
+}
+
+if (Environment.OS_NAME.startsWith(&quot;Windows&quot;)) {
+// 절대경로 패턴일때..
+

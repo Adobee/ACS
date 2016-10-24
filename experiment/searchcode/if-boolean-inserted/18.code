@@ -1,0 +1,13 @@
+public class ThrowStatementNode extends Node
+{
+public Node expr;
+public boolean finallyInserted;
+
+public ThrowStatementNode(Node expr)
+{
+this.expr = expr;
+this.finallyInserted = false;
+}
+
+public Value evaluate(Context cx, Evaluator evaluator)
+

@@ -1,0 +1,11 @@
+import cn.huangx.retrofitrxjavatxxy.utils.GzipUtils;
+import okhttp3.Headers;
+import okhttp3.MediaType;
+import okhttp3.ResponseBody;
+import okhttp3.internal.http.RealResponseBody;
+public static String getStringFromResponse(Response<ResponseBody> response) throws EncryptException, JSONException, IOException {
+if (response == null) {
+return null;
+}
+okhttp3.Response rawResponse = response.raw();
+

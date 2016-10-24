@@ -1,0 +1,6 @@
+if (TokenizedDocument_Type.this.useExistingInstance) {
+// Return eq fs instance if already created
+FeatureStructure fs = TokenizedDocument_Type.this.jcas.getJfsFromCaddr(addr);
+if (null == fs) {
+fs = new TokenizedDocument(addr, TokenizedDocument_Type.this);
+

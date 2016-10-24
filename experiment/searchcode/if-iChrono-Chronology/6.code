@@ -1,0 +1,10 @@
+Chronology localChronology = DateTimeUtils.getChronology(paramChronology);
+if (this.iChrono != null)
+localChronology = this.iChrono;
+if (this.iZone != null)
+public DateTimeFormatter withChronology(Chronology paramChronology)
+{
+if (this.iChrono == paramChronology)
+return this;
+return new DateTimeFormatter(this.iPrinter, this.iParser, this.iLocale, this.iOffsetParsed, paramChronology, this.iZone, this.iPivotYear, this.iDefaultYear);
+

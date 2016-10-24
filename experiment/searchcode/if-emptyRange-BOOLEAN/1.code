@@ -1,0 +1,10 @@
+protected static TimeRange emptyRange() {
+if (emptyRange == null) {
+Time t = new Time(Day.SUNDAY, 0, 0);
+emptyRange = new TimeRange(t, t);
+public boolean isInRange(Time t) {
+if (isEmpty())
+return false;
+
+if (!daysBetween(begin.getDay(), end.getDay()).contains(t.getDay()))
+

@@ -1,0 +1,9 @@
+public static BaseException getException(Exception exception) {
+
+// do not re-map BaseExceptions
+if (BaseException.class.isAssignableFrom(exception.getClass()))
+return (BaseException)exception;
+
+// cases to map
+if (exception instanceof SOAPException)
+

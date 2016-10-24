@@ -1,0 +1,7 @@
+/*  79:    */   public void addEventHandler(EventHandler handler, double maxCheckInterval, double convergence, int maxIterationCount)
+/*  80:    */   {
+/*  81:128 */     addEventHandler(handler, maxCheckInterval, convergence, maxIterationCount, new BracketingNthOrderBrentSolver(convergence, 5));
+/* 191:301 */       this.statesInitialized = true;
+/* 192:    */     }
+/* 193:305 */     final int orderingSign = interpolator.isForward() ? 1 : -1;
+

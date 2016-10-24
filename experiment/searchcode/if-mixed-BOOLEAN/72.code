@@ -1,0 +1,11 @@
+@CoInterface(guid=&quot;{00000000-0000-0000-0000-000000000000}&quot;)
+public class MsoMixedType implements ComEnum {
+static boolean __typelib__loaded = __TypeLib.load();
+if ((value &amp; 32768) != 0) sbuf.append(&quot;|msoIntegerMixed&quot;);
+if ((value &amp; -2147483648) != 0) sbuf.append(&quot;|msoSingleMixed&quot;);
+return sbuf.toString();
+}
+}
+}
+}
+

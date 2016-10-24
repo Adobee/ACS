@@ -1,0 +1,7 @@
+if (id.startsWith(&quot;+&quot;) || id.startsWith(&quot;-&quot;)) {
+int offset = parseOffset(id);
+if (offset == 0L) {
+* @throws IllegalArgumentException if the offset is too large or too small
+*/
+public static DateTimeZone forOffsetHours(int hoursOffset) throws IllegalArgumentException {
+

@@ -1,0 +1,13 @@
+return cacheContentSize*1.0/(1024);
+}
+
+public synchronized void setCacheContentSize(int numKB, boolean inc)
+{
+if (inc)
+double numMBtoRemove = Math.max(getCacheContentsSizeMB() + numMB - MAX_SIZE_MB, 0);
+
+List evictedEldest = new LinkedList();
+
+
+if (super.size() == 0)
+

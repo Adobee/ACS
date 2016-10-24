@@ -1,0 +1,21 @@
+public void add(ComplexNumber cn) {
+real += cn.real;
+imag += cn.imag;
+}
+
+/**
+* add an double
+* @param n
+imag = imag * Faktor;
+}
+
+/**
+* Z -> Z^n
+*/
+public void pot(double n){
+while(n> 1){
+this.mul(this);
+n--;
+}
+if (n==0){
+

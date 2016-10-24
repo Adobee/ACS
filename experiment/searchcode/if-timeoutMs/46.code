@@ -1,0 +1,6 @@
+public synchronized void waitForSignal(long timeoutMs) {
+if (!isSignaled) {
+try {
+wait(timeoutMs);
+} catch (InterruptedException ex) {
+

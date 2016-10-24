@@ -1,0 +1,10 @@
+class JImagePanel extends JPanel {
+
+private BufferedImage img;
+private FillType fillType = FillType.RESIZE;
+*             If the fill type is null.
+*/
+public void setFillType(FillType fillType) {
+if (fillType == null)
+throw new IllegalArgumentException(&quot;Invalid fill type!&quot;);
+

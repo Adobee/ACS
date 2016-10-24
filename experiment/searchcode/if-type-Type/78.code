@@ -1,0 +1,13 @@
+static ParameterizedType findParameterizedType( Type type, Type searchType )
+{
+if( type instanceof ParameterizedType &amp;&amp; ( (ParameterizedType) type ).getRawType().equals( searchType ) )
+ParameterizedType foundType = findParameterizedType( parent, searchType );
+if( foundType != null )
+{
+return foundType;
+}
+}
+return null;
+}
+}
+

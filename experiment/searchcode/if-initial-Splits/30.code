@@ -1,0 +1,10 @@
+Collection<Text> actualSplits = getConnector().tableOperations().listSplits(&quot;foo&quot;);
+
+if (!splits.equals(new TreeSet<Text>(actualSplits))) {
+throw new Exception(splits + &quot; != &quot; + actualSplits);
+UtilWaitThread.sleep(100);
+
+actualSplits = getConnector().tableOperations().listSplits(&quot;foo&quot;);
+
+if (!splits.equals(new TreeSet<Text>(actualSplits))) {
+

@@ -1,0 +1,9 @@
+/** Get the maximal time interval between events handler checks.
+* @return maximal time interval between events handler checks
+*/
+public double getMaxCheckInterval() {
+final FieldODEStateAndDerivative<T> s0 = interpolator.getPreviousState();
+t0 = s0.getTime();
+g0 = handler.g(s0);
+while (g0.getReal() == 0) {
+

@@ -1,0 +1,8 @@
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+/**
+* This class holds a collection of all on going recoveries on the current node (i.e., the node is the target node
+public void failRecovery(long id, RecoveryFailedException e, boolean sendShardFailure) {
+RecoveryTarget removed = onGoingRecoveries.remove(id);
+

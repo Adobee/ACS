@@ -1,0 +1,6 @@
+public class FastDatePrinter implements DatePrinter, Serializable {
+// A lot of the speed in this class comes from caching, but some comes
+String value = cTimeZoneDisplayCache.get(key);
+if (value == null) {
+// This is a very slow call, so cache the results.
+

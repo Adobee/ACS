@@ -1,0 +1,12 @@
+// the function. otherwise set this bound to zero.
+parl = 0;
+if (nsing >= n) {
+for (int j = 0; j < n; j++) {
+nsing = j - 1;
+}
+if (nsing < n) {
+wa[j] = 0;
+}
+}
+for (int j = nsing - 1; j >= 0; j--) {
+

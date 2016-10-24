@@ -1,0 +1,19 @@
+import com.fasterxml.jackson.dataformat.xml.XmlMapper;
+
+/**
+* Parse web by jackson
+*
+* @author Steven
+*
+* @param <T>
+* @return the XmlMapper
+*/
+protected XmlMapper mapper() {
+if (mapper == null) {
+mapper = Utils.getXmlMapper();
+}
+return mapper;
+}
+
+}
+

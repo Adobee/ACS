@@ -1,0 +1,13 @@
+return 0.0f;
+}
+
+@Override
+public String getName(int component) {
+ErrorUtils.errorIf(component < 0 || component > 2, &quot;component&quot;, &quot;must be between 0 and 2 (inclusive)!&quot;);
+return XYZ_RGB(toCIEXYZ(tuple));
+}
+
+private static final double PI = 3.1415926535897932384626433832795;
+
+private static final float[][] m = {
+

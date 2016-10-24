@@ -1,0 +1,14 @@
+holders.put(position, holder);
+}
+
+public int getItemCount() {
+return realObject.getItemCount();
+}
+
+public boolean performItemClick(int position) {
+View holderView = holders.get(position).itemView;
+return holderView.performClick();
+}
+
+public boolean performItemClickOverViewInHolder(int position, int viewId) {
+

@@ -1,0 +1,8 @@
+public int compareTo(DateWithMillis o) {
+long thisMillis = getMillis();
+long millis = o.getMillis();
+
+if (thisMillis < millis)
+return -1;
+else if (thisMillis > millis)
+

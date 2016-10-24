@@ -1,0 +1,10 @@
+public double density(double startValue, double endValue)
+{
+if (endValue <= startValue)
+throw new RuntimeException(this+&quot;&#39;s density function called with endValue <= startValue.  Note that startValue > endValue strictly&quot;);
+for (int i = 0; i < endValue; i++)
+{
+if (i >= Math.ceil(startValue))
+probSum += currValue;
+currValue *= mean/(i+1);
+

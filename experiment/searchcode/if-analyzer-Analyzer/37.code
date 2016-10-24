@@ -1,0 +1,9 @@
+public static SEAnalyzer getMoreWordAnalyzer() {
+if(DEFAULT_INDEX.getAnalyzer() == null){
+DEFAULT_INDEX.setAnalyzer(defaultMoreWordAnalyzerWrapper);
+* 取得默认的搜索分词器,最长匹配分词器
+* @return
+*/
+public static SEAnalyzer getMaxLengthAnalyzer(){
+if(DEFAULT_QUERY.getAnalyzer() == null){
+

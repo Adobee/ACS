@@ -1,0 +1,9 @@
+public boolean compare(Complex complex) {
+boolean flag = false;
+if(Double.compare(new BigDecimal(this.real).setScale(6, RoundingMode.HALF_UP).doubleValue(), new BigDecimal(complex.real).setScale(6, RoundingMode.HALF_UP).doubleValue())==0)
+return new Complex((this.real*complex.real)-(this.imag*complex.imag), (this.real*complex.imag)+(this.imag*complex.real));
+}
+
+public Complex divide(Complex complex) {
+Complex temp = this.multiply(complex.conjugate());
+

@@ -1,0 +1,11 @@
+establishSearchConditions(couponDetails, fillType);
+
+// establish the list of properties to be populated
+if(fillType.equals(&quot;ALL&quot;)) {
+setOrderBy(&quot;coupon_id&quot;);
+
+}
+
+if(fillType.equals(&quot;JOIN_COUPONS_APPLIED&quot;)) {
+addColumnList(&quot;cp.coupon_id&quot;);
+

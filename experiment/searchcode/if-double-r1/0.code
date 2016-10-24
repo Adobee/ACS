@@ -1,0 +1,7 @@
+Scanner input = new Scanner(System.in);
+
+System.out.print(&quot;Enter r1&#39;s center x-, y-coordinates, width, and height: &quot;);
+double r1_x = input.nextDouble();
+double r1_y = input.nextDouble();
+double r1_width = input.nextDouble();
+

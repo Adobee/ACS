@@ -1,0 +1,12 @@
+this.pointB = pointB;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+PointDoublet that = (PointDoublet) o;
+
+if (!pointA.equals(that.pointA) &amp;&amp; !pointA.equals(that.pointB)) return false;
+if (!pointB.equals(that.pointB) &amp;&amp; !pointB.equals(that.pointA)) return false;
+

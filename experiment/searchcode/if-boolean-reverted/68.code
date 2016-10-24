@@ -1,0 +1,9 @@
+// We have a composite old Rdn, something like A=a+B=b
+// It does not matter if the RDNs overlap
+reverted.setChangeType( ChangeType.ModRdn );
+boolean keepOldRdn = entry.contains( newRdn.getNormType(), newRdn.getNormValue() );
+
+reverted.setDeleteOldRdn( !keepOldRdn );
+
+if ( newSuperior != null )
+

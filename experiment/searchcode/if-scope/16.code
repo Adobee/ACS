@@ -1,0 +1,7 @@
+public static ScopeElement getStartScopeElement(){
+if (scopeFactory.rootScope.isProgram()){
+return scopeFactory.rootScope;
+}
+for(ScopeElement kidScope:scopeFactory.rootScope.getKids()) {
+if (kidScope.isProgram()) {
+

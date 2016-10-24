@@ -1,0 +1,9 @@
+public static HGoodMinus trimPosibleMatches(Integer G1node, Integer G2node, H1adjacency H1adj, Boolean[][] H2, HGoodMinus H)
+{
+HGoodMinus Hnew = new HGoodMinus();
+Hnew.getMinus().get(i).add(j);
+}//if
+}//outer for
+
+return Hnew;
+

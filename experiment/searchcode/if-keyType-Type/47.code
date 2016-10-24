@@ -1,0 +1,11 @@
+private static <KeyType extends LayoutEntity.Key<KeyType>> LayoutUnit<KeyType> cloneUnit(LayoutUnit<KeyType> original)
+{
+if (original == null)
+{
+return null;
+}
+
+if (original instanceof ComponentTile)
+{
+ComponentTile<KeyType> clone = new ComponentTile<KeyType>(original.getKey());
+

@@ -1,0 +1,10 @@
+final Object selectedItem = this.unitField.getSelectedItem();
+if (selectedItem instanceof Unit<?>) {
+setUnit((Unit<Length>)selectedItem);
+this.valueField.setEditable(enabled);
+this.unitField.setEditable(enabled);
+}
+
+@Override
+public boolean setFieldValue(final Object value) {
+

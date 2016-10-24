@@ -1,0 +1,12 @@
+class  extends FaultHidingSink
+{
+
+static final boolean $assertionsDisabled;
+final DiskLruCache this$0;
+
+protected void onException(IOException ioexception)
+if (!$assertionsDisabled &amp;&amp; !Thread.holdsLock(DiskLruCache.this))
+{
+throw new AssertionError();
+} else
+

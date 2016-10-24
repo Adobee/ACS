@@ -1,0 +1,10 @@
+return;
+}
+
+boolean hZoom, vZoom;
+Plot p = canvas.getChart().getPlot();
+if (!(p instanceof Zoomable)) {
+Zoomable z = (Zoomable) p;
+if (z.getOrientation().isHorizontal()) {
+hZoom = z.isRangeZoomable();
+

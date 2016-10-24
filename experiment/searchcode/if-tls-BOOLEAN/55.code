@@ -1,0 +1,12 @@
+_stateMachine.notifyObserversOfStateChanged();
+}
+
+@Override
+public boolean expectedTlsMessage(TlsMessage message) {
+return isApplicationDataMessage(message) || isAlertMessageOfType(message, TlsAlert.close_notify);
+}
+
+@Override
+public void receivedTlsMessage(TlsMessage message) {
+if (isApplicationDataMessage(message)) {
+

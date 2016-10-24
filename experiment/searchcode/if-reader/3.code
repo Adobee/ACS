@@ -1,0 +1,8 @@
+public static Reader getReader(String readerType) {
+Reader reader = null;
+if (readerType.equalsIgnoreCase(&quot;XML&quot;)) {
+reader = new XMLReader();
+} else if (readerType.equalsIgnoreCase(&quot;CSV&quot;)) {
+reader = new CSVReader();
+} else if (readerType.equalsIgnoreCase(&quot;DB&quot;)) {
+

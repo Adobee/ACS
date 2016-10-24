@@ -1,0 +1,7 @@
+private static final String ENCODING_TEST_JSON = &quot;[\n&quot; +
+&quot;  {\&quot;fullyEncoded\&quot;: \&quot;%20\&quot;, \&quot;minimallyEncoded\&quot;: \&quot;+\&quot;, \&quot;string\&quot;: \&quot; \&quot;},\n&quot; +
+String string = jsonObject.getString(&quot;string&quot;);
+
+String urlEncode = URLEncoder.encode(string);
+if (!(minimallyEncoded.equals(urlEncode) || fullyEncoded.equals(urlEncode))) {
+

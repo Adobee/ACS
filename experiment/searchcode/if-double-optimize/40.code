@@ -1,0 +1,11 @@
+private Constraint[] constraints;
+private double epsilon;
+
+public Optimize(Box x, RealFunc f, double loup, double uplo, Constraint[] constraints, double epsilon) {
+this.epsilon = epsilon;
+}
+
+public void optimize_aux(boolean debug) {
+Box x = pile.pop();
+if(debug) System.out.println();
+

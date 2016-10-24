@@ -1,0 +1,17 @@
+public interface GraphFacade {
+
+/**
+* Paints the given row.
+*/
+@NotNull
+PaintInfo paint(int visibleRow);
+
+/**
+* Performs some user action on the graph, which can be a click, hover, drag, changing view parameters, etc. <br/>
+List<GraphCommit<Integer>> getAllCommits();
+
+/**
+* A shorthand to getVisibleCommits().get(visibleRow), but may be faster.
+*/
+int getCommitAtRow(int visibleRow);
+

@@ -1,0 +1,14 @@
+class A {
+
+public static void main(String[] args) {
+int[] sieve;
+int idx;
+int mark;
+
+sieve = new int[100];
+
+idx = 0;
+
+while (idx<100) {
+sieve[idx]=0;
+

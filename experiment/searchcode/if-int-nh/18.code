@@ -1,0 +1,12 @@
+package com.leet;
+
+public class SpiralMatrixII {
+public int[][] generateMatrix(int n) {
+if(n < 0)
+nh--;
+if(nl > nh)
+break;
+
+for(int j = nh; j >= nl; j--)
+result[mh][j] = count++;
+

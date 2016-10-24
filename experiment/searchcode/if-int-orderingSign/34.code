@@ -1,0 +1,6 @@
+final double maxCheckInterval,
+final double convergence,
+final int maxIterationCount) {
+final int orderingSign = interpolator.isForward() ? +1 : -1;
+SortedSet<EventState> occurringEvents = new TreeSet<EventState>(new Comparator<EventState>() {
+

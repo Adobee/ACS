@@ -1,0 +1,9 @@
+import java.util.Locale;
+
+public abstract class BasePartial extends AbstractPartial implements ReadablePartial, Serializable {
+private final Chronology iChronology;
+private final int[] iValues;
+
+protected BasePartial() {
+this(DateTimeUtils.currentTimeMillis(), null);
+

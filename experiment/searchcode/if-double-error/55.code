@@ -1,0 +1,10 @@
+private double sumOfError;
+private double lastError;
+
+private double error;
+
+public PIDSystem(double setpoint, double kp, double ki, double kd, double deadzone) {
+error = setpoint - position;
+double output = PFunction(error) + IFunction(error) + DFunction(error);
+if (Math.abs(output) < deadzone) {
+

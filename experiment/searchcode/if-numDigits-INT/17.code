@@ -1,0 +1,7 @@
+public static String formatMonetaryValue(double value) {
+// get number of digits
+int numDigits = (int) (Math.log10(value) + 1);
+if (numDigits > 9) {
+value /= 1.0e9;
+return &quot;$&quot; + decimalFormat.format(value) + &quot;B&quot;;
+

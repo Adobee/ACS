@@ -1,0 +1,7 @@
+* @param localDateTime this is a time with year, month, day, hour, minute
+* @return double value with the corresponding demand of a household (H0 - VDE Profile)
+int dayofweek = localDateTime.getDayOfWeek().getValue();
+
+if (periode.equals(Periode.SOMMER)) {
+if (dayofweek <= 5) result = SommerProfile.workingDay[index];
+

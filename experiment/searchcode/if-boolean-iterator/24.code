@@ -1,0 +1,10 @@
+stack.push(iterator);
+}
+
+public MenuComponent next() {
+if(hasNext()) {
+Iterator iterator = stack.peek();
+MenuComponent component = iterator.next();
+if(component instanceof Menu) {
+stack.push(component.createIterator());
+

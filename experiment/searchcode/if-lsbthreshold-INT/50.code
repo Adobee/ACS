@@ -1,0 +1,10 @@
+protected int round(int in) {
+
+int msb = mant[mant.length-1];
+if (msb == 0) {
+// special case -- this == zero
+int discarded = in;  // not looking at this after this point
+final int n;
+if (lsbthreshold == 1) {
+// look to the next digit for rounding
+

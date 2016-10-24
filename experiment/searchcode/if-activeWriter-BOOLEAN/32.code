@@ -1,0 +1,12 @@
+private int       activeReaders;
+
+/** Is there an active writer? */
+private boolean   activeWriter;
+
+/** Threads not yet in read. */
+public void acquireRead() throws InterruptedException
+{
+synchronized (this)
+{
+if ((waitingWriters == 0) &amp;&amp; !activeWriter)
+

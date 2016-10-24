@@ -1,0 +1,6 @@
+String metricName = newValues.getName();
+Iterator<Long> iter = newValues.getValues().keySet().iterator();
+while(iter.hasNext()){
+public void addOrUpdateData(String metric, long date, double value) {
+if(metric.equalsIgnoreCase(MetricNames.PROC_TOTAL)) seriesTotal.addOrUpdate(new Millisecond(new Date(date)), value);
+

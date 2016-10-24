@@ -1,0 +1,7 @@
+|| (returnValue .getValue() != ReflexValue.Internal.VOID &amp;&amp; returnValue.getValue() != ReflexValue.Internal.CONTINUE &amp;&amp; returnValue.isReturn())) {
+debugger.stepEnd(this, returnValue, scope);
+if (returnValue .getValue() == ReflexValue.Internal.BREAK) {
+|| (returnValue .getValue() != ReflexValue.Internal.VOID &amp;&amp; returnValue.getValue() != ReflexValue.Internal.CONTINUE &amp;&amp; returnValue.isReturn())) {
+debugger.stepEnd(this, returnValue, scope);
+if (returnValue .getValue() == ReflexValue.Internal.BREAK) {
+

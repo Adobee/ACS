@@ -1,0 +1,10 @@
+private static Color getIteration(double x0, double r) {
+double curX = x0;
+double nextX = x0;
+int step = 0;
+double xfirst = x0, xsecond = x0;
+do {
+step++;
+if (step > MAXSTEPS) {
+break;
+

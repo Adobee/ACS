@@ -1,0 +1,13 @@
+protected Double ymin;
+
+/**
+* 硬度上限值
+*/
+protected Double ymax;
+
+@Override
+public int doStartTag() throws JspException {
+ymax = ymax == null ? 0 : ymax;
+if (ymin <= (ying / 10d) &amp;&amp; ymax >= (ying / 10d)) {
+return SKIP_BODY;
+

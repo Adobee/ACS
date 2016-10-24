@@ -1,0 +1,8 @@
+private ByteBuffer sendBuffer = ByteBuffer.allocate(BUFFER_SIZE);
+private ByteBuffer receiveBuffer = ByteBuffer.allocate(BUFFER_SIZE);
+Protocol.createBroomMsg(sendBuffer, x, y);
+flushSendBuffer();
+}
+
+public void sendSpeedSelection(double speed) {
+

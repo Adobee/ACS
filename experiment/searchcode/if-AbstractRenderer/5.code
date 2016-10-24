@@ -1,0 +1,7 @@
+import com.google.gwt.text.shared.AbstractRenderer;
+import com.gsr.myschool.common.client.proxy.FiliereProxy;
+
+public class FiliereRenderer extends AbstractRenderer<FiliereProxy> {
+@Override
+public String render(FiliereProxy value) {
+

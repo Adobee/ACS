@@ -1,0 +1,7 @@
+QueryEngine<Object, Object> executor = null;
+for (QueryEngine<Object, Object> engine : engines) {
+if (engine.canProcessDialect(dialect)) {
+QueryExpressionType queryType = queryResourcePropertiesRequest.getQueryExpression();
+Object query = queryType.getContent().get(0);
+if(query == null){
+

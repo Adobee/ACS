@@ -1,0 +1,10 @@
+for ( final List< DefaultWeightedEdge > gap2 : gaps )
+{
+if ( gap2.size() < 1 )
+{
+continue;
+}
+final DefaultWeightedEdge firstEdge = gap2.get( 0 );
+final DefaultWeightedEdge lastEdge = gap2.get( gap2.size() - 1 );
+final double tf = fm.getEdgeFeature( firstEdge, EdgeTimeLocationAnalyzer.TIME );
+

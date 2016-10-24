@@ -1,0 +1,10 @@
+package nodeAST;
+
+
+public abstract class UnaryExpr extends Expression {
+protected Expression operand;
+public boolean equals(Object obj) {
+if (!(obj instanceof UnaryExpr))
+return false;
+UnaryExpr unaryExpr=(UnaryExpr) obj;
+

@@ -1,0 +1,12 @@
+Shape shape = shapePool.get(shapeType);
+
+if(shape == null){
+
+if (shapeType == ShapeType.CIRCLE){
+shape = new Circle();
+}else if(shapeType == ShapeType.RECTANGLE){
+shape = new Rectangle();
+}
+
+shapePool.put(shapeType, shape);
+

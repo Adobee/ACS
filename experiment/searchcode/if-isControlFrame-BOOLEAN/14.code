@@ -1,0 +1,8 @@
+private boolean isControlFrame;
+private boolean isFinalFrame;
+private boolean isMasked;
+private final byte[] maskBuffer;
+this.isControlFrame = (readByte &amp; 8) != 0;
+if (!this.isControlFrame || this.isFinalFrame) {
+boolean z2 = (readByte &amp; 64) != 0;
+

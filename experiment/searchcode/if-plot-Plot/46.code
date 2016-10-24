@@ -1,0 +1,8 @@
+plotDir = new File(tycoon.getDataFolder(), &quot;plots&quot;);
+if (!plotDir.exists()) {
+plotDir.mkdirs();
+public PlotInformation getPlotInformation(long hash) {
+PlotInformation info = registeredPlots.get(hash);
+if (info == null) {
+info = new PlotInformation(hash, false, false);
+

@@ -1,0 +1,9 @@
+return isViewCollected() || isViewReused();
+}
+
+private boolean isViewCollected() {
+if (wrappedView.isCollected()) {
+return true;
+// If ImageAware is reused for another task then current task should be cancelled.
+boolean imageAwareWasReused = !imageUrl.equals(currentCacheKey);
+

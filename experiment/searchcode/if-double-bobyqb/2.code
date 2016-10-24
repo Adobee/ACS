@@ -1,0 +1,10 @@
+* @param upperBound
+*            Upper bounds.
+* @return the value of the objective at the optimum.
+*/
+private double bobyqb(double[] lowerBound, double[] upperBound) {
+double deltaOne = delta;
+double deltaTwo = FastMath.sqrt(dsq);
+dnorm = FastMath.min(deltaOne, deltaTwo);
+if(dnorm < HALF * rho) {
+

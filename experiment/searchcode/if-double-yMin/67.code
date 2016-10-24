@@ -1,0 +1,9 @@
+boolean isSet() { return set_; }
+
+void addPoint(double x, double y, double z) {
+if (! set_) {
+xmin_ = x; ymin_ = y; zmin_ = z;
+void addBBox(BBox bbox) {
+if      (! set_) {
+xmin_ = bbox.xmin_; ymin_ = bbox.ymin_; zmin_ = bbox.zmin_;
+

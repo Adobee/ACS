@@ -1,0 +1,12 @@
+this.predicate = predicate;
+predicate.addOutput(new BasicSink<Boolean>() {
+@Override
+public void setValue(Boolean value, Set<Node> blacklist) {
+if (value) { pushValue(); }
+}
+});
+}
+
+@Override
+public void setValue(ValueT value, Set<Node> blacklist) {
+

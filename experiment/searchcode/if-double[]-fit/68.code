@@ -1,0 +1,11 @@
+* @param fit
+*            the fit data
+* @return initial guess
+*/
+public static double[] initialGuess(Fit fit) {
+
+double xx[] = fit.getX();
+double yy[] = fit.getY();
+
+double result[] = FitUtilities.stats(yy);
+

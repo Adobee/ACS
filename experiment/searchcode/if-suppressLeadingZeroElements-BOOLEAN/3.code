@@ -1,0 +1,6 @@
+public static String formatDurationWords(long durationMillis, boolean suppressLeadingZeroElements, boolean suppressTrailingZeroElements)
+String duration = formatDuration(durationMillis, &quot;d&#39; days &#39;H&#39; hours &#39;m&#39; minutes &#39;s&#39; seconds&#39;&quot;);
+if (suppressLeadingZeroElements)
+{
+duration = &quot; &quot; + duration;
+

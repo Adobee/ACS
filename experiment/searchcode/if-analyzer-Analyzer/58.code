@@ -1,0 +1,10 @@
+*  See the License for the specific language governing permissions and
+*  limitations under the License.
+*/
+
+package net.sf.util.zip.analyzer;
+public FileAnalyzer getAnalyzer(File file) {
+if (file.isDirectory())
+return directoryAnalyzer;
+else if (FileNameUtil.getFileType(file.getName()) == FileNameUtil.TYPE_ARCHIVE)
+

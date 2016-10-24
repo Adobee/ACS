@@ -1,0 +1,8 @@
+if(masterUUID.equals(servantUUID)) return false;
+else if(isServant(masterUUID)){
+if(plugin.getConfig().getBoolean(&quot;allow-servants-to-own-servants&quot;) == false) return false;
+if(master.getPreferences() == null) plugin.removeMaster(masterUUID);
+}
+
+public static boolean checkIfServantHasPermission(UUID servantUUID, Ability action){
+

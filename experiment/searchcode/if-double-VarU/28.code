@@ -1,0 +1,9 @@
+double U = (double)r.get(keys[1]);
+double VarU =0.0;
+for(Map.Entry<Object, AssociativeArray> entry : testTable.entrySet()) {
+double rti= r0ti+r1ti;
+double Ai= r1ti/rti;
+U-=mi*Ai;
+
+VarU+=((mi*(rti-mi))/(rti-1.0))*Ai*(1.0-Ai);
+

@@ -1,0 +1,8 @@
+public static HttpURLConnection open(HttpURLConnection httpurlconnection)
+{
+if (httpurlconnection instanceof HttpsURLConnection)
+{
+return new HttpsURLConnectionExtension((HttpsURLConnection)httpurlconnection);
+}
+if (httpurlconnection != null)
+

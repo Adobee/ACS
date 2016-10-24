@@ -1,0 +1,13 @@
+comment|/**      * The number of requests per second to which to throttle the request that this task represents. The other variables are all AtomicXXX      * style variables but there isn&#39;t an AtomicFloat so we just use a volatile.      */
+DECL|field|requestsPerSecond
+name|lastBatchSize
+parameter_list|)
+block|{
+if|if
+condition|(
+name|requestsPerSecond
+operator|==
+name|Float
+operator|.
+name|POSITIVE_INFINITY
+

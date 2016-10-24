@@ -1,0 +1,10 @@
+private VirtualFile selectFile(@Nullable VirtualFile defaultFile, boolean openMode)
+{
+if (defaultFile != null)
+{
+this.defaultFile = defaultFile;
+}
+
+descriptor.setOpenMode(openMode);
+VirtualFile[] virtualFiles = FileChooser.chooseFiles(descriptor, project, this.defaultFile);
+

@@ -1,0 +1,7 @@
+* @param field  the field type to use, must not be null
+* @return the period
+* @throws IllegalArgumentException if the instants are null or invalid
+protected static int between(ReadablePartial start, ReadablePartial end, ReadablePeriod zeroInstance) {
+if (start == null || end == null) {
+throw new IllegalArgumentException(&quot;ReadablePartial objects must not be null&quot;);
+

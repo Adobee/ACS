@@ -1,0 +1,8 @@
+Rectangle2D r = new Rectangle2D.Double();
+
+if (RectangleEdge.isTopOrBottom(getPosition())) {
+RectangleEdge axisEdge = Plot.resolveRangeAxisLocation(
+getAxisLocation(), PlotOrientation.HORIZONTAL);
+if (axisEdge == RectangleEdge.TOP) {
+for (int i = 0; i < getSubdivisionCount(); i++) {
+

@@ -1,0 +1,10 @@
+private ActivityManagerUtils() {
+
+}
+
+public static ActivityManagerUtils getInstance() {
+if (activityManagerUtils == null) {
+for (Activity activity : activityList) {
+if (activity != null) {
+if (!activity.isFinishing()) {
+

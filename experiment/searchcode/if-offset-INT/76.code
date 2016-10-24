@@ -1,0 +1,12 @@
+public class CachePosition implements Comparable<CachePosition> {
+private int offset;
+private String cursor;
+
+public CachePosition(int offset, String cursor) {
+this.cursor = cursor;
+}
+
+@Override
+public int compareTo(CachePosition o) {
+if (o == null || offset < o.offset) {
+

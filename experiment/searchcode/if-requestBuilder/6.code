@@ -1,0 +1,10 @@
+for (final Entry<String, String> entry : getHeaders().entrySet()) {
+requestBuilder.setHeader(entry.getKey(), entry.getValue());
+}
+
+if (getUser() != null) {
+requestBuilder.setUser(getUser());
+}
+if (getPassword() != null) {
+requestBuilder.setPassword(getPassword());
+

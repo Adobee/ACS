@@ -1,0 +1,14 @@
+assertTrue(OPERAIDLE.getDefaultValue() instanceof Boolean);
+assertFalse((Boolean) OPERAIDLE.getDefaultValue());
+}
+
+@Test
+public void operaIdleSanitizeNull() {
+assertThat(e, is(instanceOf(NullPointerException.class)));
+}
+}
+
+@Test
+public void operaIdleSanitizeBoolean() {
+assertTrue(OPERAIDLE.sanitize(true) instanceof Boolean);
+

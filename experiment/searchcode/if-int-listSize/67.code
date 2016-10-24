@@ -1,0 +1,11 @@
+public class PageHolder {
+
+public static int DEFAULT_LISTSIZE = 20;
+
+public static int DEFAULT_PAGESIZE = 10;
+
+//한페이지 게시물갯
+private int listSize = DEFAULT_LISTSIZE;
+
+//한화면에 보이는 페이지 갯수
+

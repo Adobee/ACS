@@ -1,0 +1,11 @@
+setBounds(0, 0, WIDTH, HEIGHT);
+}
+
+@Override
+public void setData(OutpatientLog[] list, int type){
+if(type < StringSet.CMD_TIME_UNIT_DAY || type > StringSet.CMD_TIME_UNIT_YEAR) return;
+private int firstRecepLogIndex = 0;
+private void setFirstIndex(){
+if(dataList == null) return;
+int minutes = getMinutesAmountFromDate(dataList[0].getReception_time());
+

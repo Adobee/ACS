@@ -1,0 +1,10 @@
+public double[] r22, r21;
+public double[] r1, r2, rn;
+public double[] a1, a2, a3;
+
+// temporary storage independent of n
+public void diffeq(double x[][], double f[][])
+{
+double tmp1, tmp2, tmp3, tmp4, tmp5;
+int n = x.length;
+

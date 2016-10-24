@@ -1,0 +1,13 @@
+private double to;
+
+public Range() {
+}
+
+public Range(double from, double to) {
+if (from > to) {
+return String.format(&quot;(%.2f, %.2f)&quot;, this.from, this.to);
+}
+
+public boolean isIntersection(Range r2) {
+return isInside(r2.from) || isInside(r2.to);
+

@@ -1,0 +1,9 @@
+File repositoryLocation = newTempDir(LifecycleScope.SUITE);
+boolean throttleSnapshot = randomBoolean();
+boolean throttleRestore = randomBoolean();
+assertThat(snapshotPause, equalTo(0L));
+}
+
+if (throttleRestore) {
+assertThat(restorePause, greaterThan(0L));
+

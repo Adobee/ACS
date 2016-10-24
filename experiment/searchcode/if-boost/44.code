@@ -1,0 +1,12 @@
+public abstract class SolrQueryFactory
+{
+protected double boost = 1.0;
+
+public void setBoost(double boost) { this.boost = boost; }
+abstract protected String makeQueryString();
+
+public String createQuery() {
+
+if (boost != 1.0) {
+return &quot;(&quot; + makeQueryString() + &quot;)^&quot; + boost;
+

@@ -1,0 +1,9 @@
+public List<RealMatrix> getPoints() {
+List<RealMatrix> points = new ArrayList<RealMatrix>();
+points.addAll(Arrays.asList(this.pointA, this.pointB, this.pointC, this.pointD));
+return points;
+}
+
+public void setLocation(RealMatrix leftCorner) {
+RealMatrix newPointB = leftCorner.add(this.pointB.subtract(this.pointA));
+

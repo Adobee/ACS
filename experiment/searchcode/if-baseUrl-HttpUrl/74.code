@@ -1,0 +1,7 @@
+// Enqueue its links for visiting.
+for (String link : page.links) {
+HttpUrl linkUrl = base.resolve(link);
+if (linkUrl != null &amp;&amp; !fetchedUrls.add(linkUrl)) {
+Retrofit retrofit = new Retrofit.Builder()
+.baseUrl(HttpUrl.parse(&quot;https://example.com/&quot;))
+

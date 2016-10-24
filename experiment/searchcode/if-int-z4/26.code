@@ -1,0 +1,9 @@
+int x4=Integer.parseInt(d[0]);
+int y4=Integer.parseInt(d[1]);
+int z4=Integer.parseInt(d[2]);
+x2=x2-x1;
+int p=y2*z4-z2*y4;
+int q=z2*x4-x2*z4;
+int r=x2*y4-y2*x4;
+if(p*x3+q*y3+r*z3==0)
+

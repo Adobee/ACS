@@ -1,0 +1,9 @@
+public SimpleField(String name, String owner, Type type, int index, Options options) {
+if((type == Type.BOOLEAN || type == Type.BYTE) &amp;&amp; options.isTokenized()) {
+return new SimpleField(name, newOwner, type, newIndex, options);
+}
+
+@Override
+public boolean areSame(Field rhs) {
+if(hasOwner() != rhs.hasOwner()) {
+

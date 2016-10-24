@@ -1,0 +1,8 @@
+String propName = propNode.getNodeName();
+String propValue = XMLUtil.getNodeValue(propNode);
+
+if (propName.equals(&quot;contentReg&quot;) || propName.equals(&quot;backupReg&quot;)) {
+String replaceStr = XMLUtil.getNodeAttribute(propNode, &quot;replace&quot;);
+if (replaceStr != null &amp;&amp; !replaceStr.isEmpty()) {
+replacement = replaceStr;
+

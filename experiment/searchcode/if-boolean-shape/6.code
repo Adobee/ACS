@@ -1,0 +1,10 @@
+import io.konig.shacl.Shape;
+
+public class ShapeProperty {
+private Shape shape;
+private PropertyConstraint constraint;
+public boolean equals(Object other) {
+if (other instanceof ShapeProperty) {
+ShapeProperty s = (ShapeProperty) other;
+return s.shape==shape &amp;&amp; s.constraint==constraint;
+

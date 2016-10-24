@@ -1,0 +1,11 @@
+in=s.getInputStream();
+out=new FileOutputStream(f);
+nbytesWritten=0;
+int nbytesRead=0;
+while(size-nbytesWritten>0)
+{
+bytefill(buffer, (byte)0);
+int n=in.read(buffer);
+if(n<0)
+throw new Exception(&quot;Could not read file!&quot;);
+

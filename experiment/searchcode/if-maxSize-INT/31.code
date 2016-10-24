@@ -1,0 +1,17 @@
+this.maxSize = maxSize;
+}
+
+public void addResult (int r) {
+for (int i = 0; i < size(); i++) {
+if (r < get(i)) {
+@Override
+public boolean acceptsElement(Integer o) {
+for (int i = 0; i < size(); i++) {
+if (o < get(i)) {
+return true;
+}
+}
+return size() < maxSize;
+}
+}
+

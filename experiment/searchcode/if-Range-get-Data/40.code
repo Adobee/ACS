@@ -1,0 +1,10 @@
+UserDataRangeSVO userDataRange=(UserDataRangeSVO) vo;
+if (StringUtil.isBlank(userDataRange.getUserDataAreaId())) {
+throw new AppException(&quot;100002&quot;, &quot;缺少对象的主键！&quot;);
+sql.setNullString(&quot;allowFlag&quot;);
+} else {
+sql.setString(&quot;allowFlag&quot;, userDataRange.getAllowFlag());
+}
+
+if (userDataRange.getCreateDate() == null) {
+

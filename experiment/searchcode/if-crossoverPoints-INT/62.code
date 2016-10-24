@@ -1,0 +1,9 @@
+public class NPointCrossover<T> implements CrossoverPolicy {
+
+/** The number of crossover points. */
+private final int crossoverPoints;
+* @throws NotStrictlyPositiveException if the number of {@code crossoverPoints} is not strictly positive
+*/
+public NPointCrossover(final int crossoverPoints) throws NotStrictlyPositiveException {
+if (crossoverPoints <= 0) {
+

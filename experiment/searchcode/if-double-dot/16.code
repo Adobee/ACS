@@ -1,0 +1,6 @@
+public void add(long step) {
+currentBytes += step;
+double dotProgress = ((((double)Math.min(currentBytes, totalBytes)/totalBytes)*1000)) / 10;
+if (dotProgress > dotNext) {
+int diff = (int)(dotProgress - dotNext);
+

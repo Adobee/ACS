@@ -1,0 +1,11 @@
+public double x1;
+public double y1;
+public double x2;
+public double y2;
+public Line2DDouble(double x1, double y1, double x2, double y2) {
+setLine(x1, y1, x2, y2);
+}
+
+
+public double getX1() {
+

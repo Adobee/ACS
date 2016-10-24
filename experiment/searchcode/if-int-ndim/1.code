@@ -1,0 +1,9 @@
+private int ndim;
+public double norm_factor;
+private double[] wavetable;
+
+public FFTRealDouble(int n) {
+this.ndim = n;
+this.norm_factor = (double) n;
+if (this.wavetable == null || this.wavetable.length != (this.ndim * 2) + 15) {
+

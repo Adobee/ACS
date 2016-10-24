@@ -1,0 +1,8 @@
+public class FoxPaintingBalls {
+public long theMax(long R, long G, long B, int N) {
+if (N == 1)
+long result = Math.min(R / each, Math.min(G / each, B / each));
+if (extra == 0)
+return result;
+long remain = R + G + B - each * 3 * result;
+

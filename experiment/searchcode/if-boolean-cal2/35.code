@@ -1,0 +1,16 @@
+Calendar cal2 = Calendar.getInstance();
+cal.setTime(new Date());
+cal2.setTime(pickUpTime);
+
+Integer minutes = 0;
+if (cabLocation > pickUpArea) {
+cal2.add(Calendar.MINUTE, -15);
+
+if (cal.getTimeInMillis() <= cal2.getTimeInMillis()) {
+return true;
+} else {
+return false;
+}
+}
+}
+

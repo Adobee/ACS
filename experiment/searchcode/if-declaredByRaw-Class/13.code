@@ -1,0 +1,10 @@
+private static boolean isFullySpecified(Type type) {
+if (type instanceof Class) {
+return true;
+
+} else if (type instanceof CompositeType) {
+Class<?> declaredByRaw = declaringClassOf(unknown);
+
+// we can&#39;t reduce this further
+if (declaredByRaw == null) {
+

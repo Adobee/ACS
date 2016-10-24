@@ -1,0 +1,15 @@
+long ret = 0;
+while (n != 0) {
+n /= 2;
+cnt++;
+}
+long n1 = x;
+long add = 1 << (cnt / 2);
+while (add > 0) {
+ret |= add;
+if (ret * ret > n1)
+ret -= add;
+add >>= 1;
+}
+return (int) ret;
+

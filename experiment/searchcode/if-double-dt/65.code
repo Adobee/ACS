@@ -1,0 +1,13 @@
+System.arraycopy(Y0, 0, Y, 0, Y.length);
+}
+
+abstract public double[] F(double t, double[] Y);
+
+public void NextStep(double dt) {
+int i;
+
+if (dt < 0) {
+return;
+}
+K1 = F(t, Y);
+

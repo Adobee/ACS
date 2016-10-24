@@ -1,0 +1,7 @@
+* @throws org.uma.jmetal.util.JMetalException
+*/
+public double bPoly(double y, double alpha) throws Exception  {
+if (!(alpha > 0)) {
+double tmp1 = Math.min((double) 0, (double) Math.floor(y - B)) * A * (B - y) / B;
+double tmp2 = Math.min((double) 0, (double) Math.floor(C - y)) * (1 - A) * (y - C) / (1 - C);
+

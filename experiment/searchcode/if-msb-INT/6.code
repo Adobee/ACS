@@ -1,0 +1,8 @@
+private boolean lsb, msb;
+
+public NetworkIndex(byte _msb, byte _lsb){
+if(((_msb!=(byte)0x01)&amp;&amp;(_msb!=(byte)0x00)) || ((_lsb!=(byte)0x01)&amp;&amp;(_lsb!=(byte)0x00))){
+public NetworkIndex(int _msb, int _lsb){
+if(((_msb!=1)&amp;&amp;(_msb!=0)) || ((_lsb!=1)&amp;&amp;(_lsb!=0))){
+logger.fatal(&quot;NetworkIndex lsb and msb should be 0 or 1&quot;);
+

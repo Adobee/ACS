@@ -1,0 +1,7 @@
+/* 201:308 */       //ComparableSegment selectedSegment = null;
+/* 202:309 */       //double selectedDistance = (1.0D / 0.0D);
+/* 203:310 */       //ComparableSegment lowerLeft = new ComparableSegment(end, -1.0E-010D, -1.0E-010D);
+/* 214:    */         //}
+/* 215:    */       //}
+/* 216:324 */       //if (selectedDistance > 1.0E-010D) {
+

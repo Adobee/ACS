@@ -1,0 +1,8 @@
+return new File(outputFileDir, getMinifiedFileName(file.getFile().getName()));
+}
+
+private static String getMinifiedFileName(String fileName) {
+int extIndex = fileName.lastIndexOf(&#39;.&#39;);
+if (extIndex == -1) {
+return fileName + &quot;.min&quot;;
+

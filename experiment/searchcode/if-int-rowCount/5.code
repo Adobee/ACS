@@ -1,0 +1,5 @@
+public static void invertSelection(JTable table) {
+for (int rowCount = table.getRowCount() - 1; rowCount >= 0; rowCount--) {
+if (table.isRowSelected(rowCount)) {
+table.removeRowSelectionInterval(rowCount, rowCount);
+

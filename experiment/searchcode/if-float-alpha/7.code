@@ -1,0 +1,10 @@
+float h, w, alpha, beta;
+float tyreH, tyreW;
+float ym, v = 0;
+float maxA, currA = 0;
+
+public Car(float h, float w, float alpha){
+this.h = h;
+this.w = w;
+setAlpha(alpha);
+

@@ -1,0 +1,9 @@
+public static int compare(CharSequence left, CharSequence right) {
+if (left == right) {
+return 0;
+}
+int minLength = Math.min(left.length(), right.length());
+Set<CharSequence> set = storage.get(CharSequences.hashCode(seq));
+for (CharSequence next : set) {
+if (compare(seq, next) == 0) {
+

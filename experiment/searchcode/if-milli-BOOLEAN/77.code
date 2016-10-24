@@ -1,0 +1,13 @@
+*  Meant to be used in loops that need to check if a certain
+*  time has passed.
+*
+*  TODO Move to apputil
+*  @author Kay Kasemir
+next_expiration_milli = System.currentTimeMillis() + milli_duration;
+}
+
+public boolean expired()
+{
+final long now = System.currentTimeMillis();
+if (now >= next_expiration_milli)
+

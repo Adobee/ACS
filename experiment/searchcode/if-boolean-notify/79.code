@@ -1,0 +1,13 @@
+public void init() throws Exception {
+//默认初始化为可以打log
+isLog = Boolean.TRUE;
+
+//初始化taskLog
+topNotifyExceptionLog = new AsynWriter<TopNotifyExceptionLog>();
+topNotifyExceptionLog.setWriterFactory(writerFactory);
+topNotifyExceptionLog.init();
+}
+
+public void stop() throws Exception {
+isLog = Boolean.FALSE;
+

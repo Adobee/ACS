@@ -1,0 +1,8 @@
+public RealVector getEigenvector(final int i)
+throws InvalidMatrixException, ArrayIndexOutOfBoundsException {
+if (eigenvectors == null) {
+int j4 = 4 * (end - 2) - pingPong - 1;
+int j4p2 = j4 + 2 * pingPong - 1;
+work[j4 - 2] = dN2 + work[j4p2];
+if (work[j4 - 2] == 0.0) {
+

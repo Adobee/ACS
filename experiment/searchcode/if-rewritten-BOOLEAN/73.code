@@ -1,0 +1,9 @@
+HttpServletResponse response = (HttpServletResponse) res;
+String requestUri = getFullUrl(request);
+
+if (!isUrlRewritten(request) &amp;&amp; containsAction(requestUri)) {
+String rewritten = (String) request.getSession().getAttribute(
+&quot;rewritten&quot;);
+boolean endsWithEndpoint = false;
+if (request.getRequestURI().endsWith(&quot;/endpoint/&quot;)) {
+

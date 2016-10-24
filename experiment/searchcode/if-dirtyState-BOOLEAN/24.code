@@ -1,0 +1,13 @@
+protected double[] interpolatedDerivatives;
+
+private boolean finalized;
+
+private boolean forward;
+
+private boolean dirtyState;
+h = in.readDouble();
+forward = in.readBoolean();
+dirtyState = true;
+if (dimension < 0) {
+currentState = null;
+

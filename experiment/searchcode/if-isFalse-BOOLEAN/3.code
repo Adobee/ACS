@@ -1,0 +1,6 @@
+public void should_Return_False_If_Inuse_Is_Contained() {
+assertThat(canEdit(&quot;abc{{Inuse}}abc&quot;)).isFalse();
+assertThat(canEdit(&quot;abc{{Inuse}}&quot;)).isFalse();
+public void should_Return_False_If_inuseBot_Is_Contained() {
+assertThat(canEdit(&quot;abc{{inuseBot}}abc&quot;)).isFalse();
+

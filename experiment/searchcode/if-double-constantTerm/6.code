@@ -1,0 +1,7 @@
+/*  16:    */   private final double constantTerm;
+/*  17:    */
+/*  18:    */   public LinearObjectiveFunction(double[] coefficients, double constantTerm)
+/*  23:    */   public LinearObjectiveFunction(RealVector coefficients, double constantTerm)
+/*  24:    */   {
+/*  25: 66 */     this.coefficients = coefficients;
+

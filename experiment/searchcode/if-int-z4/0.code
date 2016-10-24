@@ -1,0 +1,13 @@
+final int z2 = (vM2 >>> 9) ^ (vM3 ^ (vM3 >>> 1));
+final int z3 = z1 ^ z2;
+int z4 = z0 ^ (z1 ^ (z1 << 9)) ^ (z2 ^ (z2 << 21)) ^ (z3 ^ (z3 >>> 21));
+z4 = z4 ^ ((z4 << 15) &amp; 0x9b868000);
+
+return z4;
+}
+
+@Override
+public final int read(byte[] bytes) {
+int i = 0;
+final int iEnd = bytes.length - 3;
+

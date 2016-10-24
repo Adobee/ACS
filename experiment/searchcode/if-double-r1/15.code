@@ -1,0 +1,11 @@
+r1 = r1.k;
+r1 = r1.a;
+if (r1 == 0) goto L_0x0019;
+L_0x000c:
+r1 = com.whatsapp.App.z();
+r2 = 2131232301; // 0x7f08062d float:1.8080707E38 double:1.052968663E-314;
+r6 = r1.getString(r2);
+if (r0 == 0) goto L_0x0062;
+L_0x0019:
+r1 = r7.b;
+

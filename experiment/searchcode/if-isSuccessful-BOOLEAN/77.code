@@ -1,0 +1,17 @@
+public static boolean cycle2DBlock(EntityPlayer player, World world, int x, int y, int z, ForgeDirection side, int radius, IBlockCycle cycle, int id)
+{
+
+boolean isSuccessful = false;
+
+
+if(side.offsetX != 0) {
+
+for(int i = -radius; i <= radius; i++){
+if(cycle.execute(player, world, x , y + i, z + n, side, id))
+isSuccessful = true;
+}
+}
+}
+
+if(side.offsetY != 0) {
+

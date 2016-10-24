@@ -1,0 +1,5 @@
+public static ZIndexSorter getInstance() {
+if (ZIndexSorter.INSTANCE != null) return ZIndexSorter.INSTANCE;
+public void sort(List<IEntity> list, int n, int n2) {
+this.sort(list, n, n2, this.mZIndexComparator);
+

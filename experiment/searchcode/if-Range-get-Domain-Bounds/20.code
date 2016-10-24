@@ -1,0 +1,11 @@
+// lazily constructed DiscreteDomain for upper bounds; use domain()
+private RangeDomain domain;
+
+public RangeFieldPartitioner(String sourceName, String... upperBounds) {
+public List<String> getUpperBounds() {
+return upperBounds;
+}
+
+private RangeDomain domain() {
+if (domain == null) {
+

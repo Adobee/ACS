@@ -1,0 +1,9 @@
+public class p47
+{
+public static void main(String args[])
+{
+int i, j, k=0, limit = 200000;
+byte[] a = new byte[limit];
+byte[] b = new byte[limit];
+int[] prime = new int[limit/2];
+

@@ -1,0 +1,13 @@
+public class CancellationTarget extends Target {
+
+@Override
+protected void onActivate() {
+if ( targetToCancel!=null ) {
+this.targetToCancel = t;
+return this;
+}
+
+private boolean force;
+
+public CancellationTarget setForce(boolean force) {
+

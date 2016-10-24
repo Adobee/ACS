@@ -1,0 +1,10 @@
+private static final long serialVersionUID = 1L;
+
+private short idCounter = Short.MIN_VALUE;
+private Map<String,Short> stringToId = new HashMap<String,Short>(32768);
+private Map<Short,String> idToString = null;
+
+public int getIdFromText(String text) {
+Short id = stringToId.get(text);
+if (id!=null) {
+

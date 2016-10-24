@@ -1,0 +1,11 @@
+final class ForStmt extends CodeImpl implements Stmt {
+private final int iVars;
+private final int nVars;
+private final Expr iterExpr;
+private final Stmt block;
+if( vals instanceof Object[] ) {
+Object[] a = (Object[])vals;
+if( a.length==0 )
+break;
+for( int i=0; i<nVars; i++ ) {
+

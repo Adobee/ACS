@@ -1,0 +1,8 @@
+while (bar != this.musicLengthBars +1) {
+nh = createRandomNote();
+barTempo += nh.getDuration();
+if(bar < this.musicLengthBars) {
+if (barTempo > 4.005) {
+previousNh = nh;
+nh = new NoteHerremans(previousNh.getMidiPitch(), barTempo -4.0);
+

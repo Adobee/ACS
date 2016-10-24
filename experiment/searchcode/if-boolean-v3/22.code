@@ -1,0 +1,12 @@
+return new VectorXZ(
+(v1.x + v2.x + v3.x) / 3,
+(v1.z + v2.z + v3.z) / 3);
+}
+
+public boolean contains(VectorXZ point) {
+return new TriangleXYZ(v1.xyz(y), v2.xyz(y), v3.xyz(y));
+}
+
+public boolean isClockwise() {
+return GeometryUtil.isRightOf(v3, v1, v2);
+

@@ -1,0 +1,11 @@
+* @param nCol number of columns in this matrix.
+*/
+public GMatrix(int nRow, int nCol) {
+if (nRow < 0)
+throw new NegativeArraySizeException(nRow + &quot; < 0&quot;);
+* @param matrix a 1D array that specifies a matrix in row major fashion
+*/
+public GMatrix(int nRow, int nCol, double matrix[]) {
+if (nRow < 0)
+throw new NegativeArraySizeException(nRow + &quot; < 0&quot;);
+

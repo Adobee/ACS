@@ -1,0 +1,12 @@
+import android.util.Log;
+
+public class GeneralResponse {
+
+private boolean success;
+private String reason;
+
+
+public GeneralResponse(JSONObject json){
+try {
+this.success = json.getBoolean(&quot;success&quot;);
+

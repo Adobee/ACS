@@ -1,0 +1,8 @@
+class Solution {
+public int solution(int N) {
+long min = Long.MAX_VALUE;
+long A = 0;
+long B = 0;
+for(int i=1; i<=(int)Math.sqrt(N); i++) {
+if(N%i==0) {
+

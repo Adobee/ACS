@@ -1,0 +1,10 @@
+import com.google.inject.ImplementedBy;
+
+@ImplementedBy(ClientInfoDaoImpl.class)
+public interface ClientInfoDaoIf {
+
+public abstract DiaosClientInfo getClientInfo(String clientId);
+public abstract List<DiaosClientInfo> getClientContainsUser(String userId);
+
+public abstract boolean deleteClient(String clientId);
+

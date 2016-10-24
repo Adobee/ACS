@@ -1,0 +1,11 @@
+double j = scan.nextInt();
+double k = scan.nextInt();
+double a1 = a / i;
+double b1 = b / j;
+double c1 = c / k;
+if (a1 <= b1 &amp;&amp; a1 <= c1) {
+a = 0;
+b -= a1 * j;
+c -= a1 * k;
+} else if (b1 <= a1 &amp;&amp; b1 <= c1) {
+

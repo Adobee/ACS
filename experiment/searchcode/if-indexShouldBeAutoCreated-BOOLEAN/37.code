@@ -1,0 +1,9 @@
+assertThat(System.currentTimeMillis() - now, greaterThan(timeout.millis() - 50));
+}
+}
+
+void checkBulkAction(boolean indexShouldBeAutoCreated, BulkRequestBuilder builder) {
+// via the timeout, as bulk operation do not wait on blocks.
+TimeValue timeout;
+if (indexShouldBeAutoCreated) {
+

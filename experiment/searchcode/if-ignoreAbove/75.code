@@ -1,0 +1,7 @@
+@Override
+public LangdetectMapper build(BuilderContext context) {
+if (positionIncrementGap != -1) {
+fieldType.setSearchQuoteAnalyzer(new NamedAnalyzer(fieldType.searchQuoteAnalyzer(), positionIncrementGap));
+}
+if (fieldType.indexOptions() != IndexOptions.NONE &amp;&amp; !fieldType.tokenized()) {
+

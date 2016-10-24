@@ -1,0 +1,10 @@
+int[] offsetX = { 0, 0, 0, 0, 1, -1 };
+int[] offsetZ = { 0, 0, 1, -1, 0, 0 };
+int[] offsetY = { 1, -1, 0, 0, 0, 0 };
+this.startpos = new PC_VecI[3][3];
+int l = PC_MathHelper.floor_double(((player.rotationYaw * 4F) / 360F) + 0.5D) &amp; 3;
+
+if (vector.equals(new PC_VecI(0, -1, 0))) {
+
+this.startpos[0][0] = start.offset(-1, 0, -1);
+

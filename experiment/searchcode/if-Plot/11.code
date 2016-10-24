@@ -1,0 +1,7 @@
+public static MChartPlot getChartPlot(JRChartPlot plot) {
+if (plot instanceof JRAreaPlot)
+return new MAreaPlot((JRAreaPlot) plot);
+if (plot instanceof JRBar3DPlot)
+return new MBar3DPlot((JRBar3DPlot) plot);
+if (plot instanceof JRBarPlot)
+

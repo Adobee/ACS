@@ -1,0 +1,11 @@
+private final double solverAbsoluteAccuracy;
+
+public TDistribution(double degreesOfFreedom, double inverseCumAccuracy)
+throws NotStrictlyPositiveException {
+public double cumulativeProbability(double x) {
+double ret;
+if (x == 0.0D) {
+ret = 0.5D;
+} else {
+double t = Beta.regularizedBeta(this.degreesOfFreedom
+

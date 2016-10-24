@@ -1,0 +1,24 @@
+return 4;
+}
+
+
+abstract public IRNG deepCopy();
+
+
+protected IRNG deepCopy( IRNG target )
+{
+if (target instanceof FlawedSource)
+fs.rng = rng.deepCopy();
+}
+
+return target;
+}
+
+}
+
+
+class FlawTypeOne extends FlawedSource
+{
+int mask;
+boolean setAction;
+

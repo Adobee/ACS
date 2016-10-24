@@ -1,0 +1,6 @@
+or 5 6 7, but not 6 5 7 or 5 5 7. However, with the exception that if &quot;equalOk&quot; is true,
+equality is allowed, such as 5 5 7 or 5 5 5.
+public static boolean inOrderEqual(int a, int b, int c, boolean equalOk) {
+
+if( (equalOk==true &amp;&amp; a==b &amp;&amp; b==c &amp;&amp; a==c ) || (equalOk==true &amp;&amp; (a==b || b==c ) &amp;&amp; a < c ) ){
+

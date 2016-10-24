@@ -1,0 +1,9 @@
+private E opValue;
+
+public ConcurrentTask(T[] registers, Op op, int opIndex, E opValue) {
+if (registers == null || registers.length == 0) {
+this.registers = registers;
+
+if (!Op.READ.equals(op) &amp;&amp; !Op.WRITE.equals(op)) {
+throw new UnsupportedOperationException(&quot;unsupport operation&quot;);
+

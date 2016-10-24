@@ -1,0 +1,12 @@
+public double minX, maxX;
+public double minY, maxY;
+public double minZ, maxZ;
+
+public void set(Vector3d center, double rayon, Vector3d speed, long time){
+minY = center.y - rayon;
+maxY = center.y + rayon;
+minZ = center.z - rayon;
+maxZ = center.z + rayon;
+
+if(speed.x<0) minX += speed.x*time; else maxX += speed.x*time;
+

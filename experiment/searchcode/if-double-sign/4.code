@@ -1,0 +1,10 @@
+double result = 1.0;
+int sign = 0;
+long nn = n;
+if(n == 0) {
+result = 1.0;
+} else {
+if (n < 0) {
+nn = -1L * n;
+sign = 1;
+

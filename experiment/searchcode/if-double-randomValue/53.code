@@ -1,0 +1,10 @@
+List<Player> survivingPlayers = new ArrayList<Player>();
+for (int i = 0; i < Math.round(playerMap.size()*(1/percentageToKeep)); i++){
+double value = Math.random();
+boolean isInRange(double randomValue) {
+if (randomValue > lowerRange &amp;&amp; randomValue <= upperRange ) return true;
+return false;
+}
+}
+}
+

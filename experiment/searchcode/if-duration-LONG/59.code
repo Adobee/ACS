@@ -1,0 +1,14 @@
+* This class should be used to resolve input symbol using press duration.
+*/
+public class MorseDurationResolver {
+private Long dotDuration;
+
+
+/**
+* Should be used to save state of MorseDurationResolver.
+*          &#39;-&#39; otherwise
+*/
+public Character onRelease(Long duration) {
+if (duration <= dotDuration) {
+if (duration > (dotDuration - dotDuration/10)) {
+

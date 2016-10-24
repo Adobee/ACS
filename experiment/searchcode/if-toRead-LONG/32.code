@@ -1,0 +1,7 @@
+FileChannel rightChannel = new RandomAccessFile(path.toFile(), &quot;rw&quot;).getChannel()
+) {
+long totalSize = leftChannel.size();
+long toRead = Math.min(bufferSize, totalSize / 2);
+// the rest of the work is smaller than twice the default buffer size so the last chunk is smaller
+long halfDistance = (rightStart + toRead - leftStart) / 2;
+

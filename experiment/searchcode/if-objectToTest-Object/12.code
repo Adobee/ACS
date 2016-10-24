@@ -1,0 +1,9 @@
+private ObjectUtils() {}
+
+public static void requireNonNull(Object... objects) {
+if(objects.length % 2 != 0) {
+throw new IllegalArgumentException(&quot;objects must contain values with the following &quot; +
+&quot;structure: [objectToTest, objectName, objectToTest, objects, ...]&quot;);
+}
+for(int i = 0; i < objects.length; i += 2) {
+

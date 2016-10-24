@@ -1,0 +1,7 @@
+* Mapper for the entity TimePeriod and its DTO TimePeriodDTO.
+*/
+@Mapper(componentModel = &quot;spring&quot;, uses = {OffTimeMapper.class, })
+TimePeriodDTO timePeriodToTimePeriodDTO(TimePeriod timePeriod);
+
+List<TimePeriodDTO> timePeriodsToTimePeriodDTOs(List<TimePeriod> timePeriods);
+

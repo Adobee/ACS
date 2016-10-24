@@ -1,0 +1,12 @@
+public AdaptiveMarginalWithNormReplacementOrdering(double alpha)
+{
+if(alpha < 0.0) alpha = 0.0;
+else if(alpha > 1.0) alpha = 1.0;
+int min = 0;
+
+for(int i = 1; i < p.length; i++){
+if(dmax[min] > dmax[i]) min = i;
+}
+
+return combo(p[min],mmax);
+

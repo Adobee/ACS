@@ -1,0 +1,7 @@
+//at t=0 as any other time (within constriants of double persision arithmatic)
+if(!MathBase.doubleCompare(normsqr, 0.0, maxUlps)) {
+return Math.sqrt(ParametricLine2d.closestApprochDistSqr(lhs, rhs, maxUlps));
+} //end closestApprochDist
+
+public int hashCode() {
+

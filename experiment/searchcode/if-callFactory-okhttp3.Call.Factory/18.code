@@ -1,0 +1,8 @@
+import io.github.hidroh.materialistic.data.RestServiceFactory;
+import okhttp3.Cache;
+import okhttp3.CacheControl;
+import okhttp3.Call;
+import okhttp3.Interceptor;
+public RestServiceFactory provideRestServiceFactory(Call.Factory callFactory) {
+return new RestServiceFactory.Impl(callFactory);
+

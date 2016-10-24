@@ -1,0 +1,8 @@
+package com.vladnamik.developer.machine.learning.geneticalgorithm.mutation;
+
+
+import com.vladnamik.developer.machine.learning.geneticalgorithm.Phenotype;
+public Phenotype mutation(Phenotype phenotype) {
+if (RandomNumber.random.nextDouble() < singlePointMutationChance)
+return singlePointMutation.mutation(phenotype);
+

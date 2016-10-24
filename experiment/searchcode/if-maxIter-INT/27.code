@@ -1,0 +1,11 @@
+* @param maxIter
+*            最大训练次数
+*/
+public GradientDescent(BaseModel model, float alpha, int maxIter) {
+logger.debug(&quot;迭代次数 \t\t步长 \t\t    cost&quot;);
+
+for (int i = 0; i < maxIter; i++) {
+
+model.compute(theta, 3);
+theta = theta.sub(model.getGradient().mul(alpha));
+

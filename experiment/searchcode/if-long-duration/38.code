@@ -1,0 +1,14 @@
+return duration;
+}
+
+public long getMillis() {
+return duration.getMillis();
+}
+
+public static PositiveDuration seconds(final Seconds seconds) {
+return new PositiveDuration(seconds.toStandardDuration());
+}
+
+public static PositiveDuration standardSeconds(final long seconds) {
+return new PositiveDuration(Duration.standardSeconds(seconds));
+

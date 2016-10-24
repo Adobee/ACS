@@ -1,0 +1,11 @@
+package tafat.engine.timeout;
+
+public abstract class TimeoutCyclic {
+
+TimeoutHandler timeoutHandler;
+@Override
+public void execute(Object data) {
+if (times > 0){
+action();
+TimeoutManager.getInstance().add (step, this, null);
+

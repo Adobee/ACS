@@ -1,0 +1,6 @@
+* Email: lixiaotian07@gmail.com
+*/
+public class HttpRequestHandler extends MessageToMessageDecoder<HttpObject> {
+protected void decode(ChannelHandlerContext ctx, HttpObject msg, List<Object> out) throws Exception {
+if (msg instanceof FullHttpRequest) {
+

@@ -1,0 +1,15 @@
+return false;
+}
+return true;
+}
+
+public Order next() {
+if (this.last == null) {
+throw new NoSuchElementException();
+this.last = headOrder;
+return this;
+}
+
+public void appendOrder(Order incomingOrder) {
+if (length == 0) {
+

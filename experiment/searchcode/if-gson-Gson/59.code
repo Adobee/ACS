@@ -1,0 +1,12 @@
+private static Gson gson ;
+public static Gson getGson() {
+if (gson == null) {
+gson = new Gson() ;
+}
+return gson ;
+}
+
+public static Object fromJson(String json,Class cls) {
+if (gson == null) {
+gson = new Gson() ;
+

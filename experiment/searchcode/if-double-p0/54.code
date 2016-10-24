@@ -1,0 +1,9 @@
+public LineCurve(FPoint2 p0, double dir) {
+super(p0, MyMath.ptOnCircle(p0, dir, 1.0));
+}
+
+@Override
+public void render(double t0, double t1) {
+FPoint2 p0 = this.pt(t0);
+FPoint2 p1 = this.pt(t1);
+

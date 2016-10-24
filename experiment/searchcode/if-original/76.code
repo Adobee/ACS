@@ -1,0 +1,6 @@
+public static void normalizePCM(double[] originalSignal) {
+double max = originalSignal[0];
+for (int i = 1; i < originalSignal.length; i++) {
+if (max < Math.abs(originalSignal[i])) {
+max = Math.abs(originalSignal[i]);
+

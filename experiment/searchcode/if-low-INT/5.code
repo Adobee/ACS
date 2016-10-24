@@ -1,0 +1,7 @@
+int low = l;
+for (int i = l; i <= r; i++)
+if (A[i] < pivot) swap(A, i, low++);
+int high = r;
+for (int i = r; i >= low; i--)
+if (A[i] > pivot) swap(A, i, high--);
+

@@ -1,0 +1,7 @@
+public List<T> read(String filePath, boolean hasHeader) {
+List<T> result = new ArrayList<T>();
+BufferedReader br = null;
+boolean readHeader = false;
+while ((line = br.readLine()) != null) {
+if(hasHeader &amp;&amp; !readHeader) {
+

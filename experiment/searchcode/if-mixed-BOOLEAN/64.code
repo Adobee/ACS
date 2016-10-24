@@ -1,0 +1,8 @@
+public NotificationChain basicSetMixed(Mixed newMixed, NotificationChain msgs)
+{
+Mixed oldMixed = mixed;
+mixed = newMixed;
+if (eNotificationRequired())
+ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, RegionaccesstestlanguagePackage.ROOT__MIXED, oldMixed, newMixed);
+if (msgs == null) msgs = notification; else msgs.add(notification);
+

@@ -1,0 +1,7 @@
+List<Oper> opersList = commonDao.findByHql(&quot;from Oper where operName=? and password=? and validflag = 1&quot;, oper.getOperName(),oper.getPassword());
+Oper op = null;
+if(opersList!=null &amp;&amp; opersList.size()>0){
+op = opersList.get(0);
+List<Oper> opersList = commonDao.findByHql(&quot;from Oper where operName=? and password=? and validflag = 1&quot;, oper.getOperName(),oper.getPassword());
+if(opersList!=null &amp;&amp; opersList.size()>0){
+

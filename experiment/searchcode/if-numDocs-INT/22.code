@@ -1,0 +1,8 @@
+private List<String>[] terms;
+private int numDocs;
+private List<String> termList;
+private int numTerms;
+segUtil = new SegUtil(new ComplexWordSeg(ForwardDictionary.getInstance()));
+for (int i = 0; i < numDocs; i++) {
+terms[i] = segUtil.segWords(docs[i], true);
+

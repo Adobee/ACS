@@ -1,0 +1,10 @@
+doc.add(new StringField(&quot;id&quot;, idBase + i, Field.Store.YES));
+w.addDocument(doc);
+
+if (i % 7 == 0) {
+if (withDeletions &amp;&amp; random().nextBoolean()) {
+w.commit();
+
+// TODO test multi seg with deletions
+if (withDeletions || random().nextBoolean()) {
+

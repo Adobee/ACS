@@ -1,0 +1,9 @@
+public boolean addDecision(Decision aDecision)
+{
+boolean wasAdded = false;
+if (decisions.contains(aDecision)) { return false; }
+//Unable to remove aDecision, as it must always have a decisionType
+if (!this.equals(aDecision.getDecisionType()))
+{
+decisions.remove(aDecision);
+

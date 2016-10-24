@@ -1,0 +1,7 @@
+public final long tEnd;
+public final StateToAction listener;
+public final double initialAsk;
+public Watcher(long horizon, long tEnd, StateToAction listener, double initialAsk, double initialBid) {
+this.horizon = horizon;
+this.tEnd = tEnd;
+

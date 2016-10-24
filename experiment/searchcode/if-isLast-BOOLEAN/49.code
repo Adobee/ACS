@@ -1,0 +1,13 @@
+class PrefixTrieNode {
+char Char;
+PrefixTrieNode[] kids;
+boolean isLast;
+
+PrefixTrieNode(char Char, boolean isLast) {
+this.kids = new PrefixTrieNode[26]; // 26 lower case chars.
+}
+
+public void add(String str, int idx) {
+if (str.length() == idx) {
+this.isLast = true;
+

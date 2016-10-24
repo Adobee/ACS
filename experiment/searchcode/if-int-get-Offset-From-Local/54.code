@@ -1,0 +1,10 @@
+public class ParserUtils
+{
+static Node getASTNodeAtOffset(Element el, Node root, int offset)
+{
+int line = el.getElementIndex(offset);
+//	root + &quot;:&quot; + offset + &quot;:&quot; + line);
+
+if(line < 0) return null;
+int line_offset = offset - el.getStartOffset();
+

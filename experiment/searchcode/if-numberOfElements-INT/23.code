@@ -1,0 +1,7 @@
+public DropStreamable(Streamable<T> original, int numberOfElements) {
+if (numberOfElements < 0)
+dropped = true;
+
+for (int i = 0; i < numberOfElements; i++) {
+if (!original.next())
+

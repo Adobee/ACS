@@ -1,0 +1,10 @@
+package steven.test;
+
+public class MultipFactor {
+private Double value;
+private Double xFactor;
+private Double nFactor;
+private MultipFactor prev;
+private MultipFactor aFactor;
+private MultipFactor bFactor;
+

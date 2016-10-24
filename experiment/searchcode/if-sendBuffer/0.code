@@ -1,0 +1,7 @@
+for (SocketChannel sub: subscribers) {
+if (sub.isOpen()) {
+sendBuffer.clear();
+sendBufferSize = sub.socket().getSendBufferSize();
+
+if (sendBuffer.capacity() > sendBufferSize) {
+

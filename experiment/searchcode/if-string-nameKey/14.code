@@ -1,0 +1,11 @@
+private int id;
+private String idKey;
+private String nameKey;
+private boolean state;
+private int icon;
+this.nameKey = &quot;Key&quot;;
+setState(false);
+}
+
+public KeyDoorLock(int id, String idKey, String nameKey, Boolean state) {
+

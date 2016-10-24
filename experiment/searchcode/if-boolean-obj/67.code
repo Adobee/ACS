@@ -1,0 +1,15 @@
+public static class And extends BinaryOperator {
+@Override
+public Term operate(Term p, Term q) {
+if (p instanceof Boolean &amp;&amp; q instanceof Boolean)
+return new Undefined();
+}
+
+@Override
+public boolean equals(Object obj) {
+return obj instanceof And;
+}
+}
+
+public static class Nand extends BinaryOperator {
+

@@ -1,0 +1,6 @@
+private static List<Integer> makeSlice(final Integer[] array, int baseIndex, int sliceLength) {
+final List<Integer> slice = new ArrayList<Integer>();
+for (int index = baseIndex; index < baseIndex + sliceLength; index ++) {
+if (isInRange(index, 0, array.length)) {
+slice.add(array[index]);
+

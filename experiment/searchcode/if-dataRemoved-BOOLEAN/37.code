@@ -1,0 +1,5 @@
+public ApplicationType createApplicationTypeFor(Application app, Jvm jvm, String mainClass) {
+if (&quot;com.bagri.xdm.cache.hazelcast.BagriCacheServer&quot;.equals(mainClass)) {
+String role = jvm.getSystemProperties().getProperty(&quot;xdm.cluster.node.role&quot;, &quot;&quot;);
+boolean isAdmin = &quot;admin&quot;.equalsIgnoreCase(role);
+

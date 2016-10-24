@@ -1,0 +1,11 @@
+public boolean fitsFor(char currentChar) {
+return currentChar == QUOTE_CHAR;
+}
+
+public String parse(Lisp lisp) {
+while (true) {
+char nextChar = lisp.nextChar();
+result.append(nextChar);
+
+if (nextChar == QUOTE_CHAR)
+

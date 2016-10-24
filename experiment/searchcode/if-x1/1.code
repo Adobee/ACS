@@ -1,0 +1,13 @@
+// x2 = x1 - f(x1)/f&#39;(x1)
+// x2 = x1 - (x1^2-a^2)/(2*x1)
+public int mySqrt(int a) {
+if (a == 0)
+while (true) {
+x1 = (x1 + a / x1) * 0.5;
+if (Math.abs(x1 * x1 - a) < eps)
+break;
+}
+return (int) x1;
+}
+}
+

@@ -1,0 +1,6 @@
+cal2.set(ZONE_OFFSET, gmtOffset);
+if (t1 != cal2.getTime().getTime() || dst != cal2.get(DST_OFFSET)) {
+error(&quot;Test1&quot;, loc, cal2, gmtOffset, dstOffset, t1);
+cal2.set(DST_OFFSET, dstOffset);
+if (t1 != cal2.getTime().getTime() || gmt != cal2.get(ZONE_OFFSET)) {
+

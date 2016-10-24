@@ -1,0 +1,15 @@
+PUT;
+
+public static HttpMethod findByString(String httpMethod) {
+Preconditions.checkNotNull(httpMethod, &quot;httpMethod is null&quot;);
+for (HttpMethod method : values()) {
+if (httpMethod.equals(method.name().toUpperCase())) {
+return method;
+}
+}
+
+return null;
+}
+
+}
+

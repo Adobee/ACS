@@ -1,0 +1,9 @@
+XContentParser.Token token;
+boolean idsProvided = false;
+while ((token = parser.nextToken()) != XContentParser.Token.END_OBJECT) {
+throw new ParsingException(parser.getTokenLocation(), &quot;[&quot; + IdsQueryBuilder.NAME + &quot;] unknown token [&quot; + token + &quot;] after [&quot; + currentFieldName + &quot;]&quot;);
+}
+}
+if (!idsProvided) {
+throw new ParsingException(parser.getTokenLocation(), &quot;[&quot; + IdsQueryBuilder.NAME + &quot;] query, no ids values provided&quot;);
+

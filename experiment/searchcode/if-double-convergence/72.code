@@ -1,0 +1,8 @@
+Node visited = convergenceProcess.handleNextEvent();
+registerVisit(visited, convergenceProcess);
+
+if(visitMap.get(visited).size() == group.size()) {
+for(CostConvergenceProcess process : convergenceProcesses.values()) {
+if(!process.isDone()) {
+return false;
+

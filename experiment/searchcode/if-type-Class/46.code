@@ -1,0 +1,10 @@
+sb.append(&quot;(&quot;);
+if (paramType != null) {
+for (Class<?> type : paramType) {
+sb.append(getDesc(type));
+public static String getDesc(Class<?> type) {
+if (type == boolean.class) {
+return &quot;Z&quot;;
+}
+if (type == char.class) {
+

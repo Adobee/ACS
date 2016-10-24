@@ -1,0 +1,6 @@
+STARTSWITH_METHOD = Constraint.class.getMethod(&quot;startsWith&quot;, boolean.class);
+ENDSWITH_METHOD = Constraint.class.getMethod(&quot;endsWith&quot;, boolean.class);
+queryProxy.trackOperation(constraint, AND_METHOD, with);
+Constraint andConstraint = constraint.and(with);
+if (andConstraint.equals(constraint)) {
+

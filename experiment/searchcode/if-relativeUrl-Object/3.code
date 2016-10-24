@@ -1,0 +1,11 @@
+Gson gson = new Gson();
+String paramStr = gson.toJson(params);
+
+json.put(&quot;url&quot;, this.relativeUrl);
+
+if (params.isJsonArray()) {
+json.put(&quot;param&quot;, jsonArray);
+
+} else if (params.isJsonObject()) {
+JSONObject jsonObject = new JSONObject(paramStr);
+

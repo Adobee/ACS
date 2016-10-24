@@ -1,0 +1,11 @@
+public class ParticleThunderLight extends Particle
+{
+@Override
+public void move(float offset)
+{
+int alpha = getAlpha()+getAlphaSpeed();
+if (alpha > 255 || alpha < -1000)
+{
+setAlphaSpeed(-getAlphaSpeed());
+if (alpha < -255)
+

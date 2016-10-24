@@ -1,0 +1,6 @@
+public static boolean dfs(int pos, int u1, int u2, int u3, boolean[] good, boolean[][][][] vis) {
+if (vis[pos][u1][u2][u3]) return false;
+vis[pos][u1][u2][u3] = true;
+if (pos == good.length - 1) return true;
+if (u1 < c1 &amp;&amp; pos + 1 < good.length &amp;&amp; good[pos + 1]) {
+

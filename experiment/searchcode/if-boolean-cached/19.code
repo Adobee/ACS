@@ -1,0 +1,10 @@
+return addresses.size();
+}
+
+// synchronization not needed
+public CachedLLA getCachedLLA(LLA lla, boolean create) {
+CachedLLA cachedLLA = addressTree.get(addressData);
+
+if(cachedLLA == null &amp;&amp; create) {
+cachedLLA = new CachedLLA(lla, cachedLLAStatusListener);
+

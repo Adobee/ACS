@@ -1,0 +1,16 @@
+private long bits;
+
+public long getBits() {
+return bits;
+}
+
+public static BitSetLong fromIntArray(int[] array) {
+array[i] = 1;
+}
+}
+
+return array;
+}
+
+public void setBits(long bits) {
+

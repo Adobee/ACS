@@ -1,0 +1,11 @@
+public int hash(Object data, int hashFun) {
+int hashCode = 0;
+if (data instanceof String) {
+try {
+byte[] bytesData = ((String)data).getBytes(&quot;utf-8&quot;);
+int intData = (Integer)data;
+hashCode = hash(intData, hashFun);
+}
+
+return hashCode;
+

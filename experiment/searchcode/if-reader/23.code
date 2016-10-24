@@ -1,0 +1,15 @@
+public RssReader createReader(String readerType) {
+
+RssReader specificReader = null;
+
+if(readerType.equals(&quot;15min&quot;)){
+specificReader = new RssReader15min();
+}else
+if(readerType.equals(&quot;delfi&quot;)){
+specificReader = new RssReaderDelfi();
+}
+return specificReader;
+}
+
+}
+

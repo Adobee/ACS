@@ -1,0 +1,11 @@
+public int divide(int dividend, int divisor) {
+if (divisor == 0)
+return Integer.MAX_VALUE;
+
+int res = 0;
+if (dividend == Integer.MIN_VALUE) {
+res = 1;
+dividend += Math.abs(divisor);
+}
+if (divisor == Integer.MIN_VALUE)
+

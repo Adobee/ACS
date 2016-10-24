@@ -1,0 +1,11 @@
+public class ArrayQueue<T> implements Queue<T> {
+
+private int queueCapacity;
+
+private T[] elements;
+private int count;
+private int front;
+public ArrayQueue(int queueCapacity){
+this.queueCapacity = queueCapacity;
+elements = (T[]) new Object[this.queueCapacity];
+

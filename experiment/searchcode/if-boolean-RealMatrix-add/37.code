@@ -1,0 +1,7 @@
+private static ArrayList<TestResult> covTest(ArrayList<BLAS> blasList,
+RealMatrix A, int obs, int vars, int repeatCount, boolean primitive) {
+// Use random data if no prepared data were provided
+if (A == null) {
+A = RealMatrix
+.createRandomDouble01(obs, vars, MatrixOrder.COLMAJOR);
+

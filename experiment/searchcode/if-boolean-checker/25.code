@@ -1,0 +1,9 @@
+public static interface Checker<T> {
+public boolean check(T res);
+}
+
+public static <T> boolean exist(Collection<T> resources, Checker<T> checker) {
+public static <T> boolean except(Collection<T> resources, Checker<T> checker) {
+for (T res : resources)
+if (!checker.check(res))
+

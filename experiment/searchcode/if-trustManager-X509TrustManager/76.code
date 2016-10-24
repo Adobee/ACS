@@ -1,0 +1,7 @@
+* Wraps a <code>SSLTrustManager</code> in a
+* <code>com.sun.net.ssl.X509TrustManager</code>.
+* @author Christoph Schwering &amp;lt;schwering@gmail.com&amp;gt;
+public TrustManagerJsseWrapper(SSLTrustManager trustManager) {
+if (trustManager == null) {
+throw new IllegalArgumentException(&quot;trustManager == null&quot;);
+

@@ -1,0 +1,7 @@
+Future<String> future = taskCache.get(taskName); //1.1,2.1
+if (future == null) {
+Callable<String> task = new Callable<String>() {
+FutureTask<String> futureTask = new FutureTask<String>(task);
+future = taskCache.putIfAbsent(taskName, futureTask); //1.3
+if (future == null) {
+

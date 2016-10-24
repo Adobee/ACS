@@ -1,0 +1,9 @@
+package com.l2k.module.querygeneration.sparql;
+
+public class QueryReader {
+
+public String getQuery(String graphIRI, String query) {
+
+if(!query.contains(&quot;from <&quot;)) {
+query = query.replace(&quot;where {&quot;, &quot;from <&quot; + graphIRI + &quot;> where {&quot;);
+

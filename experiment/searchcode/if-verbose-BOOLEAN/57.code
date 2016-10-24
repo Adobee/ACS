@@ -1,0 +1,8 @@
+@Component
+public class VerboseComponent {
+private AtomicBoolean verbosity = new AtomicBoolean(false);
+
+public void setVerbosity(boolean verbose) {
+this.verbosity.set(verbose);
+System.out.println(&quot;Verbosity set to: &quot; + verbose);
+

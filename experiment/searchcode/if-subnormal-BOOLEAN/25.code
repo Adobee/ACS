@@ -1,0 +1,7 @@
+if (biasedExponentA == 0) {
+if (biasedExponentB == 0) {
+return compareSubnormalNumbers(rawBitsA &amp; FRAC_MASK, rawBitsB &amp; FRAC_MASK, aIsNegative);
+return -compareAcrossSubnormalThreshold(rawBitsB, rawBitsA, aIsNegative);
+}
+if (biasedExponentB == 0) {
+

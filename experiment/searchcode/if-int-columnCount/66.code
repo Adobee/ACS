@@ -1,0 +1,10 @@
+int rowCount = in.readInt();
+int columnCount = in.readInt();
+if (rowCount == 1 || columnCount == 1) {
+out.printLine(rowCount * columnCount);
+return;
+}
+int answer = 0;
+int black = 0;
+if (columnCount % 4 == 0)
+

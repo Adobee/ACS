@@ -1,0 +1,8 @@
+// return number of Mandelbrot iterations to check z = x + iy
+static Color newton(Complex z) {
+double EPSILON = 0.00000001;
+Complex f  = z.times(z).times(z).times(z).minus(one);
+Complex fp = four.times(z).times(z).times(z);
+z = z.minus(f.divides(fp));
+if (z.minus(root1).abs() <= EPSILON) return Color.WHITE;
+

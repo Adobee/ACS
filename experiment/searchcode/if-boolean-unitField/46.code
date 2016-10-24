@@ -1,0 +1,12 @@
+public String getFilter() {
+return &quot;Message.CC_PSAP@clintoncountypa.com&quot;;
+}
+
+@Override
+protected boolean parseMsg(String body, Data data) {
+if (name.equals(&quot;UNIT&quot;)) return new UnitField(&quot;\\d+&quot;, true);
+if (name.equals(&quot;ID&quot;)) return new IdField(&quot;\\d{4}-\\d{8}&quot;, true);
+return super.getField(name);
+}
+}
+

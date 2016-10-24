@@ -1,0 +1,10 @@
+* @param biasCorrection if <code>true</code> the covariance estimate is corrected
+* for bias, i.e. n-1 in the denominator, otherwise there is no bias correction,
+biasCorrected = biasCorrection;
+}
+
+/**
+* Update the covariance estimation with a pair of variables (x, y).
+*
+* @param x the x value
+

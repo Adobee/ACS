@@ -1,0 +1,7 @@
+public void assertState(ClusterChangedEvent event,
+boolean stateInMemory,
+boolean expectMetaData) throws Exception {
+Set<Index> oldIndicesList = emptySet();
+if (stateInMemory) {
+inMemoryMetaData = event.previousState().metaData();
+

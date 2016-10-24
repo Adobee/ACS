@@ -1,0 +1,14 @@
+public enum EnchantmentTargets implements EnchantmentTarget {
+
+ALL {
+
+@Override
+public boolean includes(ItemStack itemStack) {
+return this.includes(itemStack.getItemType());
+}
+
+@Override
+public boolean includes(ItemType itemType) {
+
+if(itemType == ItemTypes.LIGHTER) {
+

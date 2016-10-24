@@ -1,0 +1,11 @@
+import org.eclipse.core.runtime.jobs.ISchedulingRule;
+
+
+public class ConvertRule implements ISchedulingRule {
+
+@Override
+public boolean contains(ISchedulingRule rule) {
+@Override
+public boolean isConflicting(ISchedulingRule rule) {
+if(rule instanceof PersistRule || rule instanceof DataProcessRule || rule instanceof ConvertRule)
+

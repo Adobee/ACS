@@ -1,0 +1,11 @@
+private String[] forwardStrings;
+
+private boolean discardForward = false;
+
+public ForwardReader(BufferedReader reader) throws IOException {
+for (int i = 0; i < forwardLines + 1; i++) {
+forwardStrings[i] = reader.readLine();
+lineNumber++;
+
+if (forwardStrings[i] == null) {
+

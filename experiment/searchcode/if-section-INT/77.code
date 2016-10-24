@@ -1,0 +1,9 @@
+private int internalGetSectionCount() {
+if (sectionCount >= 0) {
+return sectionCount;
+Integer cachedSection = sectionCache.get(position);
+if (cachedSection != null) {
+return cachedSection;
+}
+int sectionStart = 0;
+

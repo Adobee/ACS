@@ -1,0 +1,11 @@
+private UnqualifiedName columnName;
+private boolean isForward;
+
+public PEForeignKeyColumn(PEColumn c, PEColumn targCol) {
+super(c, null, -1L);
+columnName = missingColumn;
+isForward = true;
+}
+
+public PEForeignKeyColumn(PEColumn c, UnqualifiedName columnName, boolean forward) {
+

@@ -1,0 +1,10 @@
+protected void onConfigure() {
+super.onConfigure();
+Components.hideIfModelIsEmpty(detailedHelp);
+if(isFormInPreview()) {
+detailedHelpIcon.setVisible((isFormInPreview() || Strings.isEmpty((String) detailedHelp.getDefaultModelObject())) ? false : true);
+}
+
+@Override
+public boolean isFormInPreview() {
+

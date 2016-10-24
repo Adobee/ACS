@@ -1,0 +1,13 @@
+public ToSmash() {
+type = &quot;TO_SMASH&quot;;
+}
+
+public int getDamage() {
+if (currentDurability <= durability / 2 &amp;&amp; currentDurability != 1) {
+damage -= 1;
+}
+currentDurability -= 1;
+return damage;
+}
+}
+

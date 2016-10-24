@@ -1,0 +1,18 @@
+import javactor.JavactorContext;
+import javactor.msg.TimeoutMsg;
+
+public class Timeouter
+{
+private Cancellable timeoutCancellable;
+.toSelf().delay(timeout, timeoutTimeUnit).go();
+}
+
+public void doneWaiting()
+{
+if ( timeoutCancellable != null )
+timeoutCancellable.cancel();
+timeoutCancellable = null;
+}
+
+}
+

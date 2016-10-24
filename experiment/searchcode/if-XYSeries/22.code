@@ -1,0 +1,9 @@
+import org.jfree.data.xy.XYDataset;
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+
+public final class DatasetFilter {
+final int seriesCount = dataset.getSeriesCount();
+if (seriesCount > 1) {
+final XYSeriesCollection newData = new XYSeriesCollection();
+

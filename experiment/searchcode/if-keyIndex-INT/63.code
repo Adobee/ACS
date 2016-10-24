@@ -1,0 +1,9 @@
+private final byte[] key;
+
+private int keyIndex = 0;
+
+public XorInputStream(InputStream in, String key) {
+public int read(byte b[]) throws IOException {
+int nextByte = super.read();
+if (nextByte == EOF) {
+

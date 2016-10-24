@@ -1,0 +1,11 @@
+if (!com.tencent.mm.svg.frame.a.mO(paramInt)) {
+return paramInt;
+}
+if (ihN)
+{
+t.d(&quot;!44@/B4Tb64lLpI5J42RH1WXL9Hx8imQYmpvtKeiLsEVRYM=&quot;, &quot;getRandom, use svg: %d&quot;, new Object[] { Integer.valueOf(paramInt) });
+return paramInt;
+}
+a locala = (a)ihP.get(Integer.valueOf(paramInt));
+if (locala == null) {}
+

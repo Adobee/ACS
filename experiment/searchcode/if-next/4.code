@@ -1,0 +1,9 @@
+public ListNode removeElements(ListNode head, int val) {
+ListNode next = head, prev = head;
+
+while (next != null) {
+if (next.val == val) {
+if (next == prev) {
+next = next.next;
+prev = next;
+

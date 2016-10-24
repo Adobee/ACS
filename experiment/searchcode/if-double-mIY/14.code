@@ -1,0 +1,10 @@
+/* Check that these values aren&#39;t
+poking off the edge of the screen -
+if so then make them zero. */
+
+double fff, cff, fcf, ccf;
+double ffc, cfc, fcc, ccc;
+
+if( (x_f < 0) || (x_c < 0) ||
+(y_f < 0) || (y_c < 0) ||
+

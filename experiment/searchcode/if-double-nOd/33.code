@@ -1,0 +1,11 @@
+* @param nmNod : number of nodes
+* @param d : density
+* @param fileNameAndPath
+*/
+public static void getRandom(int nmNod, int d, String fileNameAndPath){
+DFSCheck dfsnew = new DFSCheck(adjmat,nmNod);
+if(dfsnew.dfCheck(0, nmNod)){
+
+System.out.println(&quot;DFS&quot;);
+System.out.println(&quot;-----------------------------------&quot;);
+

@@ -1,0 +1,11 @@
+public static double LeftGaussian(double c,double sigma,double x){
+if(x<=c)return 1;
+
+double value=-0.5*(((x-c)*(x-c))/(sigma*sigma));
+public static double Linear(double min, double max,double value){
+
+return (value-min)/(max-min);
+}
+
+}
+

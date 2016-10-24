@@ -1,0 +1,22 @@
+BUS(2),
+CAB(3),
+PRIVATE_CAR(4);
+
+private int intVal;
+
+private Transport(int intVal) {
+this.intVal = intVal;
+for(Transport transport : Transport.values()){
+if(transport.getIntVal() == intVal){
+return transport;
+}
+}
+return null;
+}
+
+public int getIntVal() {
+return intVal;
+}
+
+}
+

@@ -1,0 +1,12 @@
+import org.apache.log4j.Logger;
+import org.joda.time.DateTimeZone;
+
+import com.inthinc.pro.backing.TimeFrameBean;
+
+public abstract class BaseNotificationPaginationDataProvider<T> extends GenericPaginationTableDataProvider<T> {
+public void setTimeFrameBean(TimeFrameBean timeFrameBean) {
+this.timeFrameBean = timeFrameBean;
+}
+public DateTimeZone getDateTimeZone() {
+if (dateTimeZone == null)
+

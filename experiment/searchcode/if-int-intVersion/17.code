@@ -1,0 +1,8 @@
+String lines[] = IOUtils.toString(in).split(&quot;\\r?\\n&quot;);
+
+String version = lines[0];
+int intVersion = Integer.parseInt(lines[1]);
+if (intVersion > Details.getAppVersionInt()) {
+
+Details.showUpdate(version, intVersion, downloadURL, buildType, override);
+

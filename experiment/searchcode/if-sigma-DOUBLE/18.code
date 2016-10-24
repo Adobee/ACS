@@ -1,0 +1,12 @@
+public class TruncatedGaussianUnivariate implements IProbabilityFunctionUnivariate {
+double mean;
+double sigma;
+double sigma2x2;
+Normal n;
+
+public TruncatedGaussianUnivariate(double sigma) {
+this(0, sigma);
+}
+
+public TruncatedGaussianUnivariate(double mean, double sigma) {
+

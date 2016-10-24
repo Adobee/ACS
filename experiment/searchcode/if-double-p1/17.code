@@ -1,0 +1,11 @@
+public Edge(PointDouble p1, PointDouble p2)
+{
+this.p1 = p1;
+this.p2 = p2;
+}
+public PointDouble p1, p2;
+Edge other = (Edge)obj;
+return p1 == other.p1 &amp;&amp; p2 == other.p2;
+}
+public double length()
+

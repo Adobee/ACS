@@ -1,0 +1,13 @@
+double maxAxis = checkIfZero(maxValue);
+
+return maxAxis;
+}
+
+public double getMax(double[] y1, double[] y2, double[] y3, double[] y4) {
+double[] maxY = {maxY1,maxY2,maxY3,maxY4};
+double maxValue = getMax(maxY,0);
+
+double maxAxis = checkIfZero(maxValue);
+
+return maxAxis;
+

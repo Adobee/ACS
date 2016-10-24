@@ -1,0 +1,10 @@
+Args.notNull(cookie, &quot;Cookie&quot;);
+if (TextUtils.isBlank(value)) {
+throw new MalformedCookieException(&quot;Blank or null value for domain attribute&quot;);
+throw new CookieRestrictionViolationException(&quot;Illegal &#39;domain&#39; attribute \&quot;&quot; + domain + &quot;\&quot;. Domain of origin: \&quot;&quot; + host + &quot;\&quot;&quot;);
+}
+}
+
+static boolean domainMatch(String domain, String host) {
+if (InetAddressUtils.isIPv4Address(host) || InetAddressUtils.isIPv6Address(host)) {
+

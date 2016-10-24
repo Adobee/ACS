@@ -1,0 +1,10 @@
+import org.jfree.chart.plot.ValueMarker;
+import org.jfree.ui.RectangleInsets;
+
+public class Cursor{
+public Cursor(int numCursor){
+
+marker = new ValueMarker(3);
+if(numCursor == 2){
+marker.setPaint(new GradientPaint(1.0f, 2.0f, Color.green, 3.0f, 4.0f, Color.red));
+

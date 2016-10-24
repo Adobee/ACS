@@ -1,0 +1,7 @@
+public int calculateMinimumHP(int[][] dungeon) {
+if (dungeon == null || dungeon.length == 0 || dungeon[0] == null || dungeon[0].length == 0) {
+throw new IllegalArgumentException();
+}
+int nRow = dungeon.length, nCol = dungeon[0].length;
+int[][] minHP = new int[nRow][nCol];
+

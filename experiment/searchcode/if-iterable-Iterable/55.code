@@ -1,0 +1,8 @@
+public static boolean contains(Iterable<?> iterable, @Nullable Object object) {
+if (iterable instanceof Collection) {
+Collection collection = (Collection) iterable;
+return iterable instanceof Collection ? ((Collection) iterable).retainAll((Collection) Preconditions.checkNotNull(collection)) : Iterators.retainAll(iterable.iterator(), collection);
+}
+
+public static <T> boolean removeIf(Iterable<T> iterable, Predicate<? super T> predicate) {
+

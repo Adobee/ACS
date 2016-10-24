@@ -1,0 +1,9 @@
+return new SizeUnit(name);
+}
+
+public boolean equals(Object o) {
+if (o instanceof SizeUnit)
+return ((SizeUnit) o).name.equals(name);
+else if (o instanceof String)
+return ((String) o).equals(name);
+

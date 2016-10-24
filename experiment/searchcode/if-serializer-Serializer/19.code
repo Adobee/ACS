@@ -1,0 +1,7 @@
+Serializer serializer = null;
+if (value == null) {
+serializer = ByteBufferSerializer.get();
+} else if (value instanceof UUID) {
+serializer = UUIDSerializer.get();
+} else if (value instanceof String) {
+

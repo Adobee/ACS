@@ -1,0 +1,9 @@
+* A special action that checks for an abort-condition, and if met, the currently
+* executing transaction will be aborted by returning false.
+public AbortTransactionAction() {
+}
+
+@Override
+public boolean run(BluetoothGatt gatt) {
+if (shouldAbort()) {
+

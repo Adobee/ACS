@@ -1,0 +1,9 @@
+private int width, height;
+private int xOffset, yOffset;
+private boolean wrap;
+
+public OffsetFilter() {
+protected void transformInverse(int x, int y, float[] out) {
+if (wrap) {
+out[0] = (x + width - xOffset) % width;
+

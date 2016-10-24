@@ -1,0 +1,8 @@
+public double get(int row, int column) {
+if (row < 0 || row >= rows) {
+throw new IllegalArgumentException(&quot;Invalid row index: &quot; + row);
+int blockRow    = row >> SUBMATRIX_ORDER;
+int blockColumn = column >> SUBMATRIX_ORDER;
+
+PackedMatrix block = getBlock(blockRow, blockColumn);
+

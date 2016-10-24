@@ -1,0 +1,14 @@
+public class LimitBidStrategy implements BidStrategy {
+
+private final int limit;
+
+public static LimitBidStrategy towardsLimit(int limit) {
+return new LimitBidStrategy(limit);
+}
+
+public LimitBidStrategy(int limit) {
+this.limit = limit;
+}
+
+public int nextBid(BidHistory bidHistory) {
+

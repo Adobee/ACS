@@ -1,0 +1,13 @@
+enum IntervalType {
+REALTIME,
+FIXED,
+NO_INTERVAL
+}
+
+public long getInterval();
+public void updateInterval(long next, long previous);
+
+public IntervalType getIntervalType();
+
+public abstract class AbstractInterval implements Interval {
+

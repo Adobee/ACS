@@ -1,0 +1,7 @@
+protected String getCurrentValue(FacesContext context, UIComponent component) {
+String currentValue = null;
+Object currentObj = ((ValueHolder) component).getValue();
+
+if (currentObj != null) {
+currentValue = getFormattedValue(context, component, currentObj, ((ValueHolder) component).getConverter());
+

@@ -1,0 +1,9 @@
+public ChannelBuffer slice(int index, int length) {
+checkIndex(index, length);
+if (length == 0) {
+return buffer.toByteBuffer(index, length);
+}
+
+private void checkIndex(int index) {
+if (index < 0 || index >= capacity()) {
+

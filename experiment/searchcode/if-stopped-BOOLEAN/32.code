@@ -1,0 +1,15 @@
+public abstract class NThread extends Thread {
+
+private Boolean mayInterrupt = false;
+private Boolean stopped = false;
+
+public void run() {
+this.mayInterrupt = mayInterruptIfRunning;
+}
+
+/**
+* @return is stopped
+*/
+public Boolean isStopped() {
+return stopped;
+

@@ -1,0 +1,9 @@
+private TimeUtil( ) { }
+
+public static String getTimeZone( Calendar calendar ) // NO_UCD (use private)
+{
+int rawOffset = calendar.getTimeZone( ).getRawOffset( );
+int hoursOffset = ( rawOffset / 60 );
+int minsOffset = ( rawOffset % 60 );
+return sign + ( ( hoursOffset < 10 ) ? &quot;0&quot; + hoursOffset : hoursOffset ) + &quot;:&quot; +
+

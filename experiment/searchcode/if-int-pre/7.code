@@ -1,0 +1,8 @@
+if(s == null || s.isEmpty()) return 0;
+int preDigit = Integer.parseInt(s.substring(0, 1));
+if(preDigit == 0) return 0;
+int pre = 1, current = 1, prePre = 1;
+int digit = Integer.parseInt(s.substring(i, i + 1));
+if(digit == 0) {
+if(preDigit == 1 || preDigit == 2) current = prePre;
+

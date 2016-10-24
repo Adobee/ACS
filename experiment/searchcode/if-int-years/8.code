@@ -1,0 +1,10 @@
+if(rs.next())
+{
+if(tpYears == null)
+{
+for(int i = 0; i < 12; i++)
+teamArray.add(rs.getFloat(&quot;PCTO&quot;));
+if(tpYears.containsKey(&quot;2014&quot;))
+{
+teamArray.add(tpYears.get(&quot;2014&quot;));
+

@@ -1,0 +1,11 @@
+else            { this.limit = limit; }
+wert = 0;
+}
+
+public void setLimit( int limit ) {
+if( limit < 0 ) { this.limit = 0 }
+public int getLimit() { return this.limit; }
+
+public void setWert( int wert ) {
+if( wert < 0 )               { this.wert = 0 } // negativ nicht erlaubt
+

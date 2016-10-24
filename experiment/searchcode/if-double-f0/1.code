@@ -1,0 +1,17 @@
+if(F0[j]>0){
+C=C+1;
+}
+}
+
+double [] S;
+S= new double[C];
+
+for(int i=0; i<K;i++){
+if(F0[i]>0){
+public double[] histogrammeDePitch(){
+double[] S;
+
+S = new double[8];
+for(int i = 0; i<K; i++){
+if(F0[i]>0){
+

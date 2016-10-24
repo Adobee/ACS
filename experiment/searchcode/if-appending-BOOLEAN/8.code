@@ -1,0 +1,11 @@
+package delegation;
+
+import java.util.Iterator;
+
+public class AppendingIterator<T> implements Iterator<T> {
+
+private Iterator<T>[] iterators;
+private int pos;
+
+public AppendingIterator(Iterator<T>... iterators) {
+

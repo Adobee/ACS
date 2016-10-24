@@ -1,0 +1,7 @@
+/*  83:    */         }
+/*  84:    */       }
+/*  85:252 */       double stepEnd = this.stepStart + this.stepSize;
+/* 107:274 */       interpolator.reinitialize(stepEnd, this.stepSize, this.scaled, this.nordsieck);
+/* 108:276 */       if (!this.isLastStep)
+/* 109:    */       {
+

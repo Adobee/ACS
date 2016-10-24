@@ -1,0 +1,7 @@
+fetchSourceContext = in.readOptionalStreamable(FetchSourceContext::new);
+if (in.readBoolean()) {
+int size = in.readVInt();
+boolean hasScriptFields = scriptFields != null;
+out.writeBoolean(hasScriptFields);
+if (hasScriptFields) {
+

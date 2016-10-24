@@ -1,0 +1,11 @@
+private static <T> void quickSortRecursive(T[] array, int start, int end, SortableValue<T> value){
+if(end - start <= 1){
+return;
+}
+double pivotVal = value.getValue(array[start]);
+private static <T> void quickSortRecursive(List<T> list, int start, int end, SortableValue<T> value){
+if(end - start <= 1){
+return;
+}
+double pivotVal = value.getValue(list.get(start));
+

@@ -1,0 +1,13 @@
++((phr1.get(i - 1).equals(phr2.get(j - 1))) ? 0 : 1));
+}
+}
+
+return distance[phr1.size()][phr2.size()];
+}
+
+public static int computeDistance(CharSequence str1,
+CharSequence str2) {
+int[][] distance = new int[str1.length() + 1][str2.length() + 1];
+
+for (int i = 0; i <= str1.length(); i++) {
+

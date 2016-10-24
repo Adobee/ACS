@@ -1,0 +1,13 @@
+private boolean started;
+private long startTime, endTime;
+
+public synchronized void run() {
+long t = System.nanoTime();
+started = false;
+}
+
+public synchronized long getTime() {
+return endTime - startTime;
+}
+}
+

@@ -1,0 +1,14 @@
+package org.chaoticbits.mancala.player;
+
+public class Log {
+public enum Level {
+NONE, BATCH, VERBOSE
+return level;
+}
+
+public void println(Level logLevel, String message) {
+if (logLevel.ordinal() <= this.level.ordinal())
+System.out.println(message);
+}
+}
+

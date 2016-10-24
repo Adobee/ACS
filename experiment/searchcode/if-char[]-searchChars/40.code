@@ -1,0 +1,6 @@
+public static int indexOfAny(final CharSequence cs, final char... searchChars) {
+if (isEmpty(cs) || ArrayUtils.isEmpty(searchChars)) return INDEX_NOT_FOUND;
+final char ch = cs.charAt(i);
+for (int j = 0; j < searchLen; j++) {
+if (searchChars[j] == ch) {
+

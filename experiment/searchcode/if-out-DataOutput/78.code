@@ -1,0 +1,19 @@
+closeWriters();
+}
+
+private void closeWriters()
+{
+try
+{
+if (dataOutput != null)
+{
+dataOutput.close();
+dataOutput = null;
+}
+}
+catch (Exception e) {}
+
+try
+{
+if (fileOutput != null)
+

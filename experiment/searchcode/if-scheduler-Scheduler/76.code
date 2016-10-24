@@ -1,0 +1,10 @@
+package com.photoshare.quartz.cron;
+
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+public static final Scheduler getScheduler() {
+if (scheduler != null) {
+return scheduler;
+} else {
+try {
+

@@ -1,0 +1,11 @@
+public void addPacketReader(PacketReader reader) throws Exception {
+
+if (containsReadersWithId(reader.getPacketId())) {
+public PacketReader getReaderWithId(int id) {
+
+PacketReader reader = null;
+
+for (PacketReader r : readers) {
+
+if (r.getPacketId() == id) {
+

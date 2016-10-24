@@ -1,0 +1,5 @@
+dist = Point2.distanceSquared(target.getLocation(), _parent.getLocation());
+if (dist < closestDistance) {
+for (IActor target : EntityManager.get().getActorsAt(source.getLocation())) {
+if (target.getActorType() == actorType || (actorType == ActorTypes.get(Sps.ActorGroups.Non_Player) &amp;&amp; target.getActorType() != ActorTypes.get(Sps.Actors.Player)) || (actorType == ActorTypes.get(Sps.Actors.Player) &amp;&amp; target.getActorType() == ActorTypes.get(Sps.Actors.Player))) {
+

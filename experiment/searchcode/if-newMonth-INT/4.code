@@ -1,0 +1,13 @@
+public void testUpdate_monthWithNull()
+{
+int recordingId = 3;
+Recording recording = data.getRecording(recordingId);
+
+Integer newMonth = null;
+int oldMonth = recording.getMonth();
+
+Integer newMonth = 0;
+if( oldMonth > 11 )
+newMonth = oldMonth - 1;
+else
+

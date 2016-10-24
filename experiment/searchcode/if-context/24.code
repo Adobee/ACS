@@ -1,0 +1,8 @@
+@Override
+public IEvaluationContext getCurrentState() {
+if (legacyContext == null) {
+legacyContext = new ExpressionContext(e4Context);
+}
+return legacyContext;
+}
+

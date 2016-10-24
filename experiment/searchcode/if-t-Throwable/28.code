@@ -1,0 +1,6 @@
+public void throwRuntimeExceptionIfFailed() {
+if (throwable_ instanceof RuntimeException) {
+throw (RuntimeException) throwable_;
+} else if (throwable_ instanceof Exception) {
+throw new RuntimeException(throwable_);
+

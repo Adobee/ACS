@@ -1,0 +1,8 @@
+public class FoxAndGCDLCM
+{
+public long get( long gcd, long lcm )
+{
+if( lcm % gcd != 0 ) return -1;
+long lg = lcm / gcd, c = 0, d = 0;
+for( long i = 1; i * i <= lg; i++ ) if( lg % i == 0 &amp;&amp; gcd( i, lg/i ) == 1 )
+

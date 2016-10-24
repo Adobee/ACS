@@ -1,0 +1,7 @@
+super(in, DerivativePipelineAggregator.TYPE.name());
+format = in.readOptionalString();
+if (in.readBoolean()) {
+out.writeOptionalString(format);
+boolean hasGapPolicy = gapPolicy != null;
+out.writeBoolean(hasGapPolicy);
+

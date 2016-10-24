@@ -1,0 +1,10 @@
+List<Interval> ranges = new LinkedList<Interval>();
+
+long millisDifference = to.getMillis() - from.getMillis();
+
+long rangeInMillis = millisDifference / slices;
+long startMillis = from.getMillis();
+
+if (ranges.size() > 0) {
+// add 1 ms to end time of previous range
+

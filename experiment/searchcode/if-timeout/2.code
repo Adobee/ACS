@@ -1,0 +1,11 @@
+public static void createInstance(){
+if (instance == null)
+instance = new TimeoutManager();
+}
+
+public static TimeoutManager getInstance(){
+ArrayList <Timeout> timeoutToRemove = new ArrayList <Timeout> ();
+for (Timeout timeout : instance.timeoutList){
+if(timeout.stopped) continue;
+timeout.time--;
+

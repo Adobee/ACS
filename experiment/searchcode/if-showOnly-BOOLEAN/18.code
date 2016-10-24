@@ -1,0 +1,13 @@
+List<String> result = new ArrayList<>();
+
+Quote quote = dao.getRandomQuote();
+if (quote != null) {
+result.add(quote.getQuote());
+}
+
+return result;
+}
+
+@Override
+public boolean showOnly() {
+

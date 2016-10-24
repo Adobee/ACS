@@ -1,0 +1,11 @@
+private static final Map<DayOfWeek, Map<Integer, SliceDescriptor>> DESCRIPTORS = Maps.newHashMap();
+
+static {
+for (DayOfWeek dayOfWeek : DayOfWeek.VALUES_LIST) {
+public static SliceDescriptor forCoordinates(DayOfWeek dayOfWeek, int hour) {
+if (dayOfWeek == null) {
+return null;
+}
+
+return DESCRIPTORS.get(dayOfWeek).get(hour);
+

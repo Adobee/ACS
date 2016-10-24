@@ -1,0 +1,11 @@
+StringBuffer buffer = HOLDER.get();
+if (buffer == null) {
+buffer = new StringBuffer();
+HOLDER.set(buffer);
+StringBuffer buffer = HOLDER.get();
+if (buffer == null) {
+return null;
+}
+
+String result = buffer.toString();
+

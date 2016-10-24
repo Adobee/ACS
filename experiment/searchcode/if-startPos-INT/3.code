@@ -1,0 +1,10 @@
+boolean[][] lookup = new boolean[strLen][strLen];
+
+for (int len = 1; len <= strLen; len++) {
+for (int startPos = 0; startPos + len <= strLen; startPos++) {
+continue;
+}
+
+for (int breakAt = 1; breakAt < len; breakAt++) {
+if (lookup[startPos][startPos + breakAt - 1] &amp;&amp; lookup[startPos + breakAt][startPos + len - 1]) {
+

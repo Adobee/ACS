@@ -1,0 +1,13 @@
+long count = 0;
+long low = 0;
+long high = 0;
+public Count(long low, long high) {
+this.low = this.count = low;
+public String getNext(Object[] payload, int i) {
+long v = count++;
+if (high > 0 &amp;&amp; count > high) count = low;
+return String.valueOf(v);
+}
+
+}
+

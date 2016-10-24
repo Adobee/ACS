@@ -1,0 +1,8 @@
+public static String convert(String s, int nRows) {/*more straight forward, but O(n2)*/
+StringBuffer scvt = new StringBuffer();
+if (nRows == 1)
+return s;
+for (int j = 0; j < nRows; j++) {
+for (int i = 0; i < s.length(); i++) {
+if (i%(nRows*2-2) == j || i%(nRows*2-2) == nRows*2-2-j)
+

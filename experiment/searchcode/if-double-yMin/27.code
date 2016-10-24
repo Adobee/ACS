@@ -1,0 +1,15 @@
+private static final long serialVersionUID = 1L;
+
+/**
+* 实测硬度值
+*/
+protected Integer ying;
+
+/**
+* 硬度下限值
+*/
+protected Double ymin;
+ymax = ymax == null ? 0 : ymax;
+if (ymin <= (ying / 10d) &amp;&amp; ymax >= (ying / 10d)) {
+return SKIP_BODY;
+

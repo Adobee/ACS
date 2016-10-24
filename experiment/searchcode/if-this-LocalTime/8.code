@@ -1,0 +1,11 @@
+public abstract class Clock {
+int localTime;
+int utfOffset;
+
+protected Clock() {}
+
+protected Clock(int utfOffset) {
+public void setLocalTime(int localTime) {
+if (this.localTime != localTime) {
+this.localTime = (localTime + 24) % 24;
+

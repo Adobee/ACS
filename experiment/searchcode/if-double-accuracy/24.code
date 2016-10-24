@@ -1,0 +1,5 @@
+public QualifiedCoordinates(double latitude, double longitude,float altitude, float horizontalAccuracy, float verticalAccuracy) {
+* in meters, 1-sigma standard deviation), north accuracy (longitudinal error in meters, 1-sigma).
+*
+* @return the horizontal accuracy in meters. Float.NaN if this is not known
+

@@ -1,0 +1,7 @@
+public class _100SameTree {
+boolean isSameTree(TreeNode p, TreeNode q) {
+if (p == null &amp;&amp; q != null)
+return false;
+boolean isLeftSame = isSameTree(p.left, q.left);
+boolean isRightSame = isSameTree(p.right, q.right);
+

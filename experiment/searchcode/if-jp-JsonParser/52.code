@@ -1,0 +1,12 @@
+static JSONValue evaluate(String json, boolean strict) {
+
+JsonParser jp = null;
+try {
+JsonFactory f = new JsonFactory();
+if (!strict) {
+throw new GwtTestJSONException(&quot;Error while parsing JSON string &#39;&quot; + json
++ &quot;&#39;&quot;, e);
+} finally {
+if (jp != null) {
+try {
+

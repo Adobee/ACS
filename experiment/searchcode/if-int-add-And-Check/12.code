@@ -1,0 +1,6 @@
+private static void checkRightSide(int[][] boardMap, int i, int j, boolean checkblocked) {
+if (j + 2 <= 16) {
+if (i - 2 >= 0 &amp;&amp; j + 2 <= 16) {
+// check if row+1 and width +2 is free from a wall
+if (boardMap[i - 1][j + 2] == 5 &amp;&amp; boardMap[i - 2][j + 2] == 0) {
+

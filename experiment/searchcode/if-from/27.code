@@ -1,0 +1,7 @@
+return Math.max(nums[0] + rob(nums, 2, nums.length - 2), rob(nums, 1, nums.length - 1));
+}
+public int rob(int[] nums, int from, int to) {
+if (from > to) return 0;
+if (from == to) return nums[from];
+if (from == to - 1) return Math.max(nums[from], nums[to]);
+

@@ -1,0 +1,6 @@
+public static void writeShortValue(final OutputStream outputStream, final int n) {
+if (n > 32767) {
+throw new IOException(&quot;Value out of range exception.&quot;);
+}
+outputStream.write(n &amp; 0xFF);
+

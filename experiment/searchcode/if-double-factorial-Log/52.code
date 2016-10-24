@@ -1,0 +1,17 @@
+* Wrapper class for all non-standard mathematical functions
+*/
+public class Functions
+{
+public static double factorial(int d) throws Exception
+{
+if(d < 0)
+throw new Exception(&quot;Cannot perform factorial operation on a negative number.&quot;);
+
+if(d == 0)
+return 1;
+
+return d * factorial(d - 1);
+}
+
+public static double sin(Double d)
+

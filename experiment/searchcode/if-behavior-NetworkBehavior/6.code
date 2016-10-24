@@ -1,0 +1,6 @@
+public Builder networkBehavior(NetworkBehavior behavior) {
+if (behavior == null) throw new NullPointerException(&quot;behavior == null&quot;);
+public MockRetrofit build() {
+if (behavior == null) behavior = NetworkBehavior.create();
+if (executor == null) executor = Executors.newCachedThreadPool();
+

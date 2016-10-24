@@ -1,0 +1,13 @@
+return controls;
+}
+
+public void movePlayer(Direction direction) {
+if (movingDirection == Direction.NONE || movingDirection == direction) movingDirection = direction;
+if (dir == movingDirection) movingDirection = Direction.NONE;
+}
+}
+
+@Override
+protected void move(double movementSpeed) {
+if (movingDirection.getX() != 0 &amp;&amp; movingDirection.getY() == 0 || movingDirection.getX() == 0 &amp;&amp; movingDirection.getY() != 0) {
+

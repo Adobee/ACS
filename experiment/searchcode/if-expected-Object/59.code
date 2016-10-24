@@ -1,0 +1,12 @@
+failIfDifferent(expectedException, expectedMessage, actualException);
+return;
+}
+if (expectedException != null)
+throw new ComparisonFailure(&quot;Expected test to throw&quot;, expectedException.getName(), &quot;&quot;);
+}
+
+};
+}
+
+void failIfDifferent(Class<? extends Throwable> expectedException, String expectedMessage, Throwable actualException)
+

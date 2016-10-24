@@ -1,0 +1,5 @@
+public static <K,V> Map<K,List<V>> getKVListMap(K key,V value, Map<K,List<V>> map){
+if(map == null) throw new NullPointerException(&quot;map is not initialize&quot;);
+if(map.containsKey(key)) {
+map.get(key).add(value);
+

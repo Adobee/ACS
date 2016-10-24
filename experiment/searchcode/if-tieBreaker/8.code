@@ -1,0 +1,8 @@
+switch (selectionFunction) {
+case MINH:
+if (o1.getHeuristic() - o2.getHeuristic() == 0) {
+if (tieBreaker == TieBreaker.OLDEST) {
+if (o2.getHeuristic() - o1.getHeuristic() == 0) {
+if (tieBreaker == TieBreaker.OLDEST) {
+return o1.getIndex() - o2.getIndex();
+

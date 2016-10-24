@@ -1,0 +1,12 @@
+public class Contains extends Predicate<String> {
+private final String substring;
+
+public Contains(String substring) {
+public boolean passes(String s) {
+if (s == null || substring == null)
+return false;
+return s.toLowerCase().contains(substring);
+}
+
+}
+

@@ -1,0 +1,9 @@
+public class TextboxAction extends ActionSupport{
+private String username;
+
+//simple validation
+@Override
+public void validate(){
+if(this.getUsername().length()<=0){
+addFieldError(&quot;username&quot;, &quot;Username is required&quot;);
+

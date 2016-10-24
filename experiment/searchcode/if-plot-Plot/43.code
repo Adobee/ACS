@@ -1,0 +1,11 @@
+package sample;
+
+/*
+* Created by Prasanna on 12/12/2014.
+*/
+public class NewPlotControl {
+* write words to new file newPlot
+*/
+public static void newPlot(String filename, String txtPlot){
+if(txtPlot.isEmpty()) {
+

@@ -1,0 +1,8 @@
+protected void onDialogClosed(boolean positiveResult) {
+super.onDialogClosed(positiveResult);
+
+if (callChangeListener(positiveResult)) {
+protected void onRestoreInstanceState(Parcelable state) {
+if (!state.getClass().equals(SavedState.class)) {
+// Didn&#39;t save state for us in onSaveInstanceState
+

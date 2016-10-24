@@ -1,0 +1,5 @@
+private int lower(T[] array, int index, int lower, int upper) {
+//        while(lower < upper) if(array[lower].compareTo(array[index]) < 0) lower++; else break;
+private int upper(T[] array, int index, int lower, int upper) {
+//        while(lower < upper) if(0 < array[upper].compareTo(array[index])) upper--; else break;
+

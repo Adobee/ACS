@@ -1,0 +1,10 @@
+public class test07 extends JPanel
+{
+private int pointCount = 0;
+private Point[] points = new Point[10000];
+
+public test07()
+public void mouseDragged(MouseEvent event) {
+if (pointCount < points.length) {
+points[pointCount] = event.getPoint();
+

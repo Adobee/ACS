@@ -1,0 +1,9 @@
+for (int j = i + 1; j < _motions.length; j++) {
+final Motion two = _motions[j];
+// if (checkForDuplicates(ret, one, two)) { // This is removed
+String prefix = debugPrefix + frameno + &quot; &quot;;
+int offset = 0;
+for (int i = 0; i < currentFrame.planeCnt; i++) {
+
+int cslen = currentFrame.lengths[i];
+

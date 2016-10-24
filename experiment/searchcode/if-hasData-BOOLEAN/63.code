@@ -1,0 +1,10 @@
+public class GuiOptionRedirect extends Gui {
+
+private OptionRedirect o;
+boolean hasData;
+protected void init(Player player, boolean reentry) {
+if(!hasData) {
+open(o.getRedirected(this));
+} else {
+close();
+

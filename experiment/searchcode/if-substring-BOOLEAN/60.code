@@ -1,0 +1,17 @@
+import ncsa.d2k.modules.projects.dtcheng.io.*;
+
+
+public class SubstringFileFilter implements java.io.FileFilter {
+this.Substring = Substring;
+}
+
+
+public boolean accept(File file) {
+if (file.getName().indexOf(Substring) != -1)
+return true;
+else
+return false;
+}
+
+}
+

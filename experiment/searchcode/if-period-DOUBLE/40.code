@@ -1,0 +1,11 @@
+private final int period;
+private double sum;
+
+public MovingAverage(int period) {
+assert period > 0 : &quot;Period must be a positive integer&quot;;
+this.period = period;
+}
+
+public void newNum(double num) {
+sum += num;
+

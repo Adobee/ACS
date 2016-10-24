@@ -1,0 +1,8 @@
+/* 317 */         throw new NoSuchElementException(&quot;No more tokens in String&quot;);
+/*     */       }
+/*     */
+/* 320 */       if (this.m_returnDelimiters_) {
+/* 321 */         int tokenlimit = 0;
+/* 322 */         int c = UTF16.charAt(this.m_source_, this.m_nextOffset_);
+/* 323 */         boolean contains = (c < this.delims.length) &amp;&amp; (this.delims[c] != 0) ? true : this.delims == null ? this.m_delimiters_.contains(c) : false;
+

@@ -1,0 +1,6 @@
+this.contentType = contentType;
+MediaType mediaType = MediaType.parseMediaType(contentType);
+if (!mediaType.equals(MediaType.IMAGE_JPEG) &amp;&amp; !mediaType.equals(MediaType.IMAGE_PNG) &amp;&amp; !mediaType.equals(MediaType.IMAGE_GIF)) {
+if (!Arrays.equals(content, image.content)) return false;
+if (contentType != null ? !contentType.equals(image.contentType) : image.contentType != null) return false;
+

@@ -1,0 +1,7 @@
+for (int i = 0; i < mSupportServicePreparing.size(); i++) {
+final SupportThread supportThread = mSupportServicePreparing.get(i);
+if (supportThread.getCommand() == command)
+final SupportThread supportThread = mSupportServiceLaunched.get(i);
+// Does a service already completed
+if (supportThread.getCommand() == command &amp;&amp; !supportThread.isEndWork()) {
+

@@ -1,0 +1,7 @@
+import com.zuehlke.carrera.relayapi.messages.ObservableType;
+import com.zuehlke.carrera.relayapi.messages.RaceEventData;
+import com.zuehlke.carrera.relayapi.messages.RaceObservationContext;
+public TimeSeries<RaceObservationContext, Integer> getTimeSeries(String reference, ObservableType type) {
+
+RaceEventData data = documentStore.retrieve(reference);
+

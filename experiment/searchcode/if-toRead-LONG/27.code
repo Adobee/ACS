@@ -1,0 +1,14 @@
+open = false;
+}
+
+@Override
+public int read(ByteBuffer dst) throws IOException {
+int toRead = dst.remaining();
+if (toRead > size() - 1 - position) {
+return toRead;
+}
+
+@Override
+public int write(ByteBuffer src) throws IOException {
+if (!write) {
+

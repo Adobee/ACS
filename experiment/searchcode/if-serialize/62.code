@@ -1,0 +1,10 @@
+public class ObjectTargetedJsonWriter extends JsonWriterDecorator {
+
+private int _depth = 0;
+
+private boolean _serializeNulls;
+private boolean _originalSerializeNulls;
+
+public ObjectTargetedJsonWriter(JsonWriter delegate) {
+super(delegate);
+

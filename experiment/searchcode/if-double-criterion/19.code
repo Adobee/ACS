@@ -1,0 +1,9 @@
+@Override
+public double compute(int[] distributionVector) {
+double criterionValue = 0;
+//calcul de la somme des ni
+for (int i = 0; i < distributionVector.length; i++) {
+if(distributionVector[i] != 0) {
+double pi = distributionVector[i]/N;
+criterionValue += pi*Math.log(pi);
+

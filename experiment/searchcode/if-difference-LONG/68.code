@@ -1,0 +1,7 @@
+public abstract int get(long instant);
+public int getDifference(long minuendInstant, long subtrahendInstant) {
+return FieldUtils.safeToInt(getDifferenceAsLong(minuendInstant, subtrahendInstant));
+}
+public long getDifferenceAsLong(long minuendInstant, long subtrahendInstant) {
+if (minuendInstant < subtrahendInstant)
+

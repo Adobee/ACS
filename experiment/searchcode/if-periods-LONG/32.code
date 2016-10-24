@@ -1,0 +1,10 @@
+class PeriodSerializer extends Serializer<Period> {
+
+private static Map<Long, Period> periodsById;
+
+private void loadPeriods() {
+if (periodsById == null) {
+loadPeriods();
+}
+long id = input.readLong();
+

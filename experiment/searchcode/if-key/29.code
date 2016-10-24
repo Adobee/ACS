@@ -1,0 +1,13 @@
+* @param keyCode KeyCode of the key.
+*/
+public void pressKey(int keyCode) {
+Key key = keyMap.get(keyCode);
+if (key != null) {
+key.press();
+}
+}
+
+public void releaseKey(int keyCode) {
+Key key = keyMap.get(keyCode);
+if (key != null) {
+

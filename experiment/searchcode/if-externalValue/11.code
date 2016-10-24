@@ -1,0 +1,9 @@
+public Object convertExternalValue(Task task, AttributeInstance attributeInstance, AttributeDef attributeDef, String contextName, Object externalValue)
+{
+if ( externalValue == null )
+return null;
+externalValue = ((AttributeInstance) externalValue).getValue();
+
+if ( externalValue instanceof Number )
+return ((Number) externalValue).longValue();
+

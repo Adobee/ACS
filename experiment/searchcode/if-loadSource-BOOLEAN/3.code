@@ -1,0 +1,9 @@
+* Job that initializes a NubSource
+*/
+class LoadSource implements Callable<NubSource> {
+private final NubSource src;
+private final boolean parseNames;
+
+/**
+* @param parseNames if true parse names and populate SrcUsage.parsedName which will be null otherwise!
+

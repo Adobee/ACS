@@ -1,0 +1,9 @@
+int canTravelUpto = m;
+List<Integer> stopAt = new ArrayList<Integer>();
+for(int i=0;i<d.length-1;i++)
+{
+if(d[i] <= canTravelUpto &amp;&amp; d[i+1]>canTravelUpto)
+{
+stopAt.add(i+1);
+canTravelUpto = d[i]+m;
+

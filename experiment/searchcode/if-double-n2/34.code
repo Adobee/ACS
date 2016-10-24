@@ -1,0 +1,9 @@
+public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+int n1 = nums1.length;
+int n2 = nums2.length;
+int i,j;
+if((n1+n2)%2==0){
+while(a<n1 &amp;&amp; b<n2){
+if(nums1[a]>=nums2[b])
+ans[k++] = nums2[b++];
+

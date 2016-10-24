@@ -1,0 +1,11 @@
+return 33 * getType().getClass().getName().hashCode();
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj)
+ParameterizedCoercionTarget other = (ParameterizedCoercionTarget) obj;
+if (parameterizedType == null) {
+if (other.parameterizedType != null)
+return false;
+

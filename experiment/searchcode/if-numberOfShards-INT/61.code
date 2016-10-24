@@ -1,0 +1,11 @@
+public class ShardSearchRequest extends TransportRequest {
+
+private String index;
+
+private int shardId;
+
+private int numberOfShards;
+
+private SearchType searchType;
+public ShardSearchRequest(SearchRequest searchRequest, ShardRouting shardRouting, int numberOfShards) {
+

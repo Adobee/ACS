@@ -1,0 +1,10 @@
+return (tmpD.g == this.g &amp;&amp; super.equals(tmpD));
+}
+
+@Override
+public int hashCode() {
+int hash = 7;
+hash = hash + (intG != 0 ? intG.hashCode() : 0);
+hash = hash + (intF != 0 ? intF.hashCode() : 0);
+hash = hash + (super.hashCode() != 0 ? super.hashCode() : 0);
+

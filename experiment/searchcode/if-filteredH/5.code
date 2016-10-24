@@ -1,0 +1,8 @@
+float aspect = (float)filteredH / (float)filteredW;
+if(filteredW >= filteredH) {
+filteredW = MasterImage.MAX_BITMAP_DIM;
+roiRectF.bottom = (float)(roiRect[1] + roiRect[3])/(float)filteredH;
+
+// Check for ROI cropping
+if(!FilterCropRepresentation.getNil().equals(roiRectF)) {
+

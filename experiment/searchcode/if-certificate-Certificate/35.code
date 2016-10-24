@@ -1,0 +1,6 @@
+certificateStatus = certificateStatusRepository.getStatus(certificateStatus);
+
+if (certificateStatus.getCertificateStatus() != CertificateStatusValues.U)
+{
+if (certificateStatus.getNotAfter().before(new Date()) == true)
+

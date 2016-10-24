@@ -1,0 +1,7 @@
+protected void populateItem(Item<SavedState> item) {
+final SavedState savedState = (SavedState) item.getModelObject();
+DateTime dateTime = savedState.dateTime();
+public void onClick() {
+DateTime dateTime = ((SavedState) item.getModelObject()).dateTime();
+int steps = ((SavedState) item.getModelObject()).steps();
+

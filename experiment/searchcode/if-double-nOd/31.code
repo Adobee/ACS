@@ -1,0 +1,11 @@
+public void getSymbolCode(Tree.Node Nod,StringBuilder s)
+{
+
+if(Nod.getLeftchild()!=null)
+s.deleteCharAt(s.length()-1);
+}
+
+if(Nod.getRightchild()!=null)
+{
+s.append(&quot;1&quot;);
+

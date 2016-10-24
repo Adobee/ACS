@@ -1,0 +1,18 @@
+package general;
+
+
+public class Wearable extends Item{
+
+protected int durability = 1, MAXDUR = 1;
+public void repair(){
+durability = MAXDUR;
+}
+
+public boolean isBroke(){
+if(durability <= 0){
+return true;
+}
+return false;
+}
+}
+

@@ -1,0 +1,8 @@
+List<BlOrderItem> items = blOrder.getItems();
+if(items==null||items.size()==0){
+throw new BlException(&quot;订单必须有明细项！&quot;);
+}
+for(BlOrderItem blOrderItem : items){
+if(blDao.addOrderItem(blOrderItem)){
+BlStore store = new BlStore();
+

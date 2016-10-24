@@ -1,0 +1,9 @@
+rule = Pattern.compile(pattern);
+}
+
+protected boolean doesApply(String singular) {
+return rule.matcher(singular).matches();
+public InflectionResult apply(String word) {
+String singular = word.toLowerCase();
+if (doesApply(singular)) {
+

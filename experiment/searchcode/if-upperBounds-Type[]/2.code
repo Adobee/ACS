@@ -1,0 +1,12 @@
+public static final int DEFAULT = 0;
+
+private final Type[] upperBounds;
+
+private final Type[] lowerBounds;
+
+@Override
+public Type[] getUpperBounds() {
+return &quot;? super &quot; + this.lowerBounds[DEFAULT].getTypeName();
+}else if(this.upperBounds.length==0){
+return &quot;?&quot;;
+

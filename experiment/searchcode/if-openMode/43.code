@@ -1,0 +1,11 @@
+package fr.p10.miagem1.ppo.td1;
+
+public abstract class File {
+
+public enum OpenMode {
+READ(), WRITE(), APPEND();
+public UserRegistry.User getUser() { return user; }
+
+public boolean open(OpenMode mode) {
+if(!open) { this.open=true; this.mode = mode; return true; }
+

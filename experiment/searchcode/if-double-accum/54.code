@@ -1,0 +1,14 @@
+double ki, kp, kd;
+double pidout;
+double prevenc;
+double i_accum;
+Sensor[] e;
+int[] sign;
+double lasttime = 0;
+double izone=0;
+Sensor.type myType;
+double max_i_accum=0;
+
+
+public PID(double kp, double ki, double kd, Sensor.type myType, Sensor... e)
+

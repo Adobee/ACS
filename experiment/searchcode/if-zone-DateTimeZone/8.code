@@ -1,0 +1,11 @@
+package wa.timeseries.joda;
+
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
+static DateTime convertToDate(long offset, DateTimeZone zone)
+{
+return new DateTime(offset, DateTimeZone.UTC).toDateTime(zone);
+}
+
+static long convertToOffset(DateTime date)
+

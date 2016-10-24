@@ -1,0 +1,7 @@
+public void fit() throws LMAMatrix.InvertException {
+iterationCount = 0;
+if (Double.isNaN(calculateChi2())) throw new RuntimeException(&quot;INITIAL PARAMETERS ARE ILLEGAL.&quot;);
+double[][] cov = getCovarianceMatrixOfStandardErrorsInParameters();
+if (cov == null) return null;
+double[] result = new double[parameters.length];
+

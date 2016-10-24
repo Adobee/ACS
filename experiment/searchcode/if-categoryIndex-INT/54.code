@@ -1,0 +1,10 @@
+protected List<PointOfInterestCategory> poiCategories = new ArrayList<PointOfInterestCategory>();
+
+protected int townIndex = 0;
+protected int categoryIndex = 0;
+
+public ScraperMessage<String> next() {
+if (categoryIndex == poiCategories.size()) {
+townIndex++;
+categoryIndex = 0;
+

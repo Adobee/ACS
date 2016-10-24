@@ -1,0 +1,9 @@
+registeredUpgrades = new LinkedList<ItemUpgrade>();
+}
+
+public static UpgradeRegistry instance() {
+if (INSTANCE == null) {
+INSTANCE = new UpgradeRegistry();
+public void registerUpgrade(ItemUpgrade upgrade) {
+if (!isRegistered(upgrade.getUnlocalizedUpgradeName())) {
+

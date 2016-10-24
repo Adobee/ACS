@@ -1,0 +1,12 @@
+@Override
+public boolean equals(Object o) {
+if (!(o instanceof Segment))
+return false;
+
+Segment s = (Segment) o;
+
+return (s.a.equals(a) &amp;&amp; s.b.equals(b)) ||
+(s.a.equals(b) &amp;&amp; s.b.equals(a));
+}
+}
+

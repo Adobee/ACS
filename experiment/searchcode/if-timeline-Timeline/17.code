@@ -1,0 +1,11 @@
+package com.freegians.timeline.service;
+
+import com.freegians.timeline.domain.PostQ;
+import com.freegians.timeline.domain.Timeline;
+public Timeline postTimeline(Timeline timeline) {
+
+Timeline timelineResult = timelineRepository.save(timeline);
+
+
+if(timeline.getOriginal() == 1) {
+

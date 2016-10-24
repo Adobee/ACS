@@ -1,0 +1,9 @@
+
+public class Bottle {
+private String contents;
+private int maxCapacity;
+private int minCapacity;
+private int currentCapacity;
+
+public Bottle(int atMaxCapacity, int atMinCapacity, int atCurrentCapacity) {
+

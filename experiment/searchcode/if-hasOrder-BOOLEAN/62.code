@@ -1,0 +1,10 @@
+return orderArray;
+}
+
+private boolean hasOrder(int from, List<List<Integer>> adjs,BitSet visited,BitSet onStack,Deque<Integer> order){
+onStack.set(from);
+
+for(int to : adjs.get(from)){
+if(visited.get(to) == false){
+if(hasOrder(to,adjs,visited,onStack,order) == false)
+

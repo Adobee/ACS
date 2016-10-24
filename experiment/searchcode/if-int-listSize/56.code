@@ -1,0 +1,11 @@
+private static int listSize;
+private static int pointer = 0;
+}//end hasNext()
+
+
+//@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+
+
+public static int listSize()
+

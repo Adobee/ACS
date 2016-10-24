@@ -1,0 +1,6 @@
+setupSecurity(settings, environment);
+if (settings.getAsBoolean(&quot;bootstrap.mlockall&quot;, false)) {
+Natives.tryMlockall();
+if (settings.getAsBoolean(&quot;bootstrap.ctrlhandler&quot;, true)) {
+Natives.addConsoleCtrlHandler(new ConsoleCtrlHandler() {
+

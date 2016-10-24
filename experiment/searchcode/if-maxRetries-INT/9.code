@@ -1,0 +1,13 @@
+public abstract class AbstractRunnableWithRetry implements Runnable {
+
+private int maxRetries;
+
+protected AbstractRunnableWithRetry(int maxRetries) {
+this.maxRetries = maxRetries;
+}
+
+@Override
+public final void run() {
+
+int retries;
+

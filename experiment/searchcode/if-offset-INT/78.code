@@ -1,0 +1,8 @@
+* Unfortunately, this big switch seems to be a huge bottleneck! :-(
+*/
+protected final int encode(final int[] in, final int inOffset,
+final byte[] out, final int outOffset) {
+
+final int m0 = this.getNumOfBytes(in[inOffset]) - 1;
+final int m1 = this.getNumOfBytes(in[inOffset + 1]) - 1;
+

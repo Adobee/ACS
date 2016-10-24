@@ -1,0 +1,7 @@
+public void writeTo(StreamOutput out) throws IOException {
+stats.writeTo(out);
+out.writeBoolean(statsByShard != null);
+if (statsByShard != null) {
+String level = params.param(&quot;level&quot;, &quot;node&quot;);
+boolean isLevelValid = &quot;node&quot;.equalsIgnoreCase(level) || &quot;indices&quot;.equalsIgnoreCase(level) || &quot;shards&quot;.equalsIgnoreCase(level);
+

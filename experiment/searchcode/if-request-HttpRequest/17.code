@@ -1,0 +1,9 @@
+public class RequestManager {
+ArrayList<HttpRequest> requestList = null;
+
+public RequestManager() {
+for (final HttpRequest request : requestList) {
+if (request.getRequest() != null) {
+try {
+request.getRequest().abort();
+

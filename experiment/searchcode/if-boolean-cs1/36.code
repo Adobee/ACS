@@ -1,0 +1,10 @@
+public  MODELUser update( SQLiteDatabase db,MODELUser modelUser)
+{
+//Cursor cs1=db.query(&quot;User_Table&quot;, null, &quot;user_name=&#39;&quot;+modelUser.get_userId()+&quot;&#39;&quot;, null, null, null, null);
+Cursor cs1=db.query(&quot;User_Table&quot;, null, &quot;user_id=&#39;&quot;+modelUser.get_userId()+&quot;&#39;&quot;, null, null, null, null);
+if(cs1.moveToFirst())
+{
+
+updatedUserData.set_userId(cs1.getString(0));
+updatedUserData.set_firstName(cs1.getString(1));
+

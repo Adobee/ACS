@@ -1,0 +1,8 @@
+AExpression afterthought = ctx.afterthought() == null ? null : (AExpression)visit(ctx.afterthought());
+
+if (ctx.trailer() != null) {
+AExpression right = (AExpression)visit(ctx.expression(1));
+final Operation operation;
+
+if (ctx.MUL() != null) {
+

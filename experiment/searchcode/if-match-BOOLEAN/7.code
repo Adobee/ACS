@@ -1,0 +1,8 @@
+public class Solution {
+public boolean isMatch(String s, String p) {
+if (s == null || p == null) return true;
+if (p.replace(&#39;*&#39;, &quot;&quot;).length() > s.length()) return false;
+int row = s.length();
+int col = p.length();
+boolean[][] match = new boolean[row + 1][col + 1];
+

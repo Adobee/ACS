@@ -1,0 +1,13 @@
+import ch.qos.logback.core.rolling.TriggeringPolicy;
+
+public class TriggerOnce<E> implements TriggeringPolicy<E> {
+
+volatile boolean started;
+volatile boolean triggered = false;
+
+public boolean isStarted() {
+return started;
+}
+
+public void start() {
+

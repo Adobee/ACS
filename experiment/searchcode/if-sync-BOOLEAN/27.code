@@ -1,0 +1,13 @@
+import android.content.Intent;
+
+public class SyncService extends IntentService
+{
+public SyncService()
+{
+super(&quot;SyncService&quot;);
+Sync sync = new Sync(this);
+boolean result = sync.perform();
+Intent broadcast;
+
+if (result) {
+

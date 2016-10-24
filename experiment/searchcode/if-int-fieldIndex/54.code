@@ -1,0 +1,7 @@
+* @throws DatabaseException if the <code>fieldIndex</code> is out of range
+*/
+public String getFieldAsString(int fieldIndex) throws DatabaseException {
+private native char uncheckedGetFieldAsChar(int fieldIndex) /*-{
+var val = this.field(fieldIndex);
+if (val == null) {
+

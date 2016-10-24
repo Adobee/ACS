@@ -1,0 +1,10 @@
+public BracketingNthOrderBrentSolverDFP(final Dfp relativeAccuracy, final Dfp absoluteAccuracy, final Dfp functionValueAccuracy, final int maximalOrder) throws NumberIsTooSmallException {
+
+if(maximalOrder < 2) {
+// return the first endpoint if it is a perfect root.
+return x[0];
+}
+int nbPoints;
+int signChangeIndex;
+if(y[0].multiply(y[1]).negativeOrNull()) {
+

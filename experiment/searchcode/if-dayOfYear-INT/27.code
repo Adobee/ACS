@@ -1,0 +1,16 @@
+// the key is basically a composite of year and dayOfYear
+@Id
+private String key;
+@NaturalId
+private int year;
+@NaturalId
+private int dayOfYear;
+key = year + &quot;_&quot; + dayOfYear;
+}
+
+public Day(int year, int dayOfYear)
+{
+this.year = year;
+this.dayOfYear = dayOfYear;
+key = year + &quot;_&quot; + dayOfYear;
+

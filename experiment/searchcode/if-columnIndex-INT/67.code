@@ -1,0 +1,11 @@
+public Class<?> getColumnClass(int columnIndex) {
+/*if (!getColumnName(columnIndex).equals(&quot;Description of work&quot;)) {
+} else {
+if (columnIndex == 1) {
+return Period.class;
+}
+}
+return super.getColumnClass(columnIndex);
+}
+}
+

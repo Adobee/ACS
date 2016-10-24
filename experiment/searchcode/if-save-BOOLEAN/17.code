@@ -1,0 +1,14 @@
+for(int i=0,len = p.length;i<len;i++)
+{
+int save = -1;
+for(int j=0;j<len;j++)
+{
+if(!visited[j] &amp;&amp; (p[i]>=l[j] &amp;&amp; p[i]<=r[j]))
+{
+if(save == -1 || r[j] < r[save])
+save = j;
+}
+}
+if(save == -1)
+return &quot;Impossible&quot;;
+

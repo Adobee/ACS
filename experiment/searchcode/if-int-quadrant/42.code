@@ -1,0 +1,16 @@
+package org.lego.element;
+
+public class ImageBit {
+
+private int x;
+
+private int y;
+
+private int RGB;
+
+private boolean isCovered = false;
+
+private BlockType blockType;
+
+private Quadrant quadrant;
+

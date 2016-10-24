@@ -1,0 +1,6 @@
+public class Solution {
+public List<Integer> getRow(int rowIndex) {
+List<Integer> list = new ArrayList<>();
+if (rowIndex < 0) {
+return list;
+

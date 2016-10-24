@@ -1,0 +1,8 @@
+public String desc;
+public Object source;
+
+public NodeInfo(Object source, String name, String desc) {
+this.name = name;
+this.desc = desc;
+if (desc == null) {
+

@@ -1,0 +1,9 @@
+public int read() throws IOException {
+if (bytesLeft <= 0) {
+return -1;
+}
+int read = in.read();
+long skipped = in.skip(countToSkip);
+if (skipped > 0) {
+bytesLeft -= skipped;
+

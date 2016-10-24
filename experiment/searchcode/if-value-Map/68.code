@@ -1,0 +1,11 @@
+Map<Integer, Integer> map = new HashMap<>();
+
+for (int i : nums) {
+Integer value = map.get(i);
+if (value == null) {
+map.put(i, ++value);
+}
+for (Integer key : map.keySet()) {
+Integer value = map.get(key);
+if (value == 1) {
+

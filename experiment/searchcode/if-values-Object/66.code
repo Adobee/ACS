@@ -1,0 +1,11 @@
+public class ConstantSource extends OneShot {
+
+private Object value;
+private Collection<Object> values;
+
+@Override
+public void fireOnce() throws Exception {
+broadcast(value);
+} else if (values != null) {
+for (Object value : values) {
+

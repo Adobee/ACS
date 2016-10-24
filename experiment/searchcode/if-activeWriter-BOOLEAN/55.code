@@ -1,0 +1,8 @@
+try {
+if (activeWriter == null
+|| !hasDependency(activeWriter.changes, id)) {
+Lock exclusive = writerStateRWLock.writeLock();
+exclusive.lock();
+try {
+if (activeWriter == null
+

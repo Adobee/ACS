@@ -1,0 +1,7 @@
+public boolean checkVariance(Double sampleVariance, Double delta) {
+for (Double c : Arrays.asList(variance.getX(), variance.getY())) {
+if (Double.compare(c, sampleVariance) == 0) {
+continue;
+}
+if ((Math.abs(c - sampleVariance) >= delta)) {
+

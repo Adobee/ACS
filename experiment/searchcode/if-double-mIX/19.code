@@ -1,0 +1,11 @@
+public SumAndLexicographicalOrdering(int[] bandMix) {
+super();
+this.bandMix = bandMix;
+}
+
+
+private double reducedNorm(double [] o)
+for (int i = 0; i < o1.length; i++) {
+int c = Double.compare(o1[bandMix[i]], o2[bandMix[i]]);
+if (c != 0) {
+

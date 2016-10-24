@@ -1,0 +1,8 @@
+StringBuilder cookieStr = new StringBuilder(cookie.getName() + &quot;=&quot; + cookie.getValue() + &quot;;&quot;);
+int maxAge = cookie.getMaxAge();
+if (cookie.getValue() == null) {
+maxAge = 0;
+}
+if (maxAge >= 0) {
+cookieStr.append(&quot;Max-Age=&quot; + maxAge + &quot;;&quot;);
+

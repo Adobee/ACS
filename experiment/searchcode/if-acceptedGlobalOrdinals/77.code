@@ -1,0 +1,6 @@
+globalOrds = new FilteredOrdinals(globalOrds, acceptedGlobalOrdinals);
+} else if (includeExclude != null) {
+acceptedGlobalOrdinals = includeExclude.acceptedGlobalOrdinals(globalOrds, valuesSource);
+for (long globalTermOrd = 0; globalTermOrd < globalOrds.getValueCount(); ++globalTermOrd) {
+if (includeExclude != null &amp;&amp; !acceptedGlobalOrdinals.get(globalTermOrd)) {
+

@@ -1,0 +1,8 @@
+while(true) {
+int c = in.read();
+if(c == &#39;\r&#39; || c == &#39;\n&#39; || c == -1) break;
+request.append((char)c);
+int firstSpace = get.indexOf(&#39; &#39;);
+int secondSpace = get.indexOf(&#39; &#39;, firstSpace + 1);
+String theFile = get.substring(firstSpace + 1, secondSpace);
+

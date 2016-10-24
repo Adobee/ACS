@@ -1,0 +1,17 @@
+page = 1;
+}
+
+public void nextPage() {
+page++;
+}
+
+public int getPage() {
+if(page <= 0){
+page = 1;
+lastPage = (total + rows - 1) / rows;
+if (lastPage <= 1) {
+lastPage = null;
+return;
+}
+int page = getPage();
+

@@ -1,0 +1,10 @@
+this.mRunnable = runnable;
+}
+
+public void run() {
+if (this.mRequest.isCanceled()) {
+this.mRequest.finish(&quot;done&quot;);
+}
+if (this.mRunnable != null) {
+this.mRunnable.run();
+

@@ -1,0 +1,9 @@
+private static final double BASIC_SALES_TAX = 0.10; // 10%
+private static final double ROUND_OFF = 0.05;
+private static final double OLD_ITEM_EXEMPTION=0.5;
+public void calculate(boolean isNew, double price) {
+if(isNew)
+salesTax = roundOffTax(BASIC_SALES_TAX * price);
+else
+salesTax = roundOffTax(BASIC_SALES_TAX *OLD_ITEM_EXEMPTION* price);
+

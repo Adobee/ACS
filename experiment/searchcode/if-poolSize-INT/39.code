@@ -1,0 +1,9 @@
+* @return A Java.awt.Point representing the proper number of pools of poolSize fencers(X) and the number of pools of poolSize - 1 fencers(Y)
+*/
+public PoolSizeCalculator(int numPlayers, int poolSize) throws IllegalArgumentException{
+_numBigPools = 0;
+_numSmallPools = 0;
+int placedPlayers = 0;
+
+if (isInvalidPoolSizeForNumPlayers(numPlayers, poolSize)) {
+

@@ -1,0 +1,10 @@
+//	private final Set<Path> sharedFolders;
+
+private boolean cleanupRunning;
+
+private Set<Path> pendingEvents = new ConcurrentHashSet<Path>();
+public void onLocalFileModified(final Path path) {
+if(cleanupRunning){
+pendingEvents.add(path);
+return;
+

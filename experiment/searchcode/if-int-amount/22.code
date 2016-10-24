@@ -1,0 +1,8 @@
+public static int calculateNewAmountFromSwipe(float displacement, int amount) {
+if (displacement > 500) {
+return amount;
+}
+
+public static String amountToDisplay(int amount) {
+if (amount > MAX_AMOUNT) {
+

@@ -1,0 +1,14 @@
+package com.bravofly.dixieland.logic;
+
+import com.bravofly.dixieland.logic.visitor.Visitor;
+
+public class DepthFirstSearch<A>
+public int apply(Graph<A> g, int amount, A source, Visitor visitor)
+{
+if (visitor.done())
+{
+return visitor.getCounter();
+}
+
+visitor.increaseStep(amount);
+

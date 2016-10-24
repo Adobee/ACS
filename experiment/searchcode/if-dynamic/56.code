@@ -1,0 +1,7 @@
+loadedDynamicContribution = (ContributionItem) Util.safeLoadExecutableExtension(dynamicAddition, IWorkbenchRegistryConstants.ATT_CLASS, ContributionItem.class);
+if (loadedDynamicContribution == null) {
+alreadyFailed = true;
+return;
+loadedDynamicContribution.setParent(getParent());
+if (loadedDynamicContribution instanceof IWorkbenchContribution) {
+

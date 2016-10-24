@@ -1,0 +1,10 @@
+this.loadedFrom = loadedFrom;
+}
+
+@Override
+public void run() {
+if (imageAware.isCollected()) {
+L.d(LOG_TASK_CANCELLED_IMAGEAWARE_COLLECTED, memoryCacheKey);
+listener.onLoadingCancelled(imageUri, imageAware.getWrappedView());
+} else if (isViewWasReused()) {
+

@@ -1,0 +1,15 @@
+break;
+}
+
+}
+
+}
+
+public void generateB1(List<String> output, int maxDepth, int currentDepth) {
+//(a*b)
+if(currentDepth > maxDepth) { //prevent from exploding memory
+int i = rand.nextInt(4);
+if (i != 0) {
+generateA(output);
+generateB1(output, maxDepth, currentDepth + 1);
+

@@ -1,0 +1,8 @@
+return result;
+}
+
+public static double[] apply(double[] v1, double[] v2, DoubleBinaryOperator op) {
+private static void assertSameLength(double[] v1, double[] v2) {
+if (v1.length != v2.length) {
+throw new IllegalArgumentException();
+

@@ -1,0 +1,8 @@
+stats = CommonStats.readCommonStats(in);
+if (in.readBoolean()) {
+int entries = in.readVInt();
+public void writeTo(StreamOutput out) throws IOException {
+stats.writeTo(out);
+out.writeBoolean(statsByShard != null);
+if (statsByShard != null) {
+

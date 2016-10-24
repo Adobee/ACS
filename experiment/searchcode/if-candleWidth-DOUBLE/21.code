@@ -1,0 +1,10 @@
+double x = event.getX();
+double y = event.getY();
+
+if (x > CandleStickChart.this.width - chartMargin
+|| y > height - chartMargin) {
+int fristBarX = (candleWidth / 2);
+
+double lowestLow = lowestLow(candles, showFromBar, showToBar);
+double highestHigh = highestHigh(candles, showFromBar, showToBar);
+

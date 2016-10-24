@@ -1,0 +1,13 @@
+* limitations under the License.
+*/
+package connect.app.com.connect.retrofit;
+
+import java.io.IOException;
+import okhttp3.HttpUrl;
+Retrofit retrofit = new Retrofit.Builder()
+.baseUrl(&quot;http://www.coca-cola.com/&quot;)
+.callFactory(okHttpClient)
+.build();
+
+Pop pop = retrofit.create(Pop.class);
+

@@ -1,0 +1,15 @@
+ACTIVE, SUSPENDED, CANCELLED, BANNED, INVALID;
+
+private int status_id;
+
+public int getStatusId() {
+return status_id;
+}
+
+public void setStatusId(int status_id) {
+public static MemberStatus fromID(int status_id){
+if(status_id == -1){
+return INVALID;
+}
+for(MemberStatus status : MemberStatus.values()){
+

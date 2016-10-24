@@ -1,0 +1,8 @@
+// ---------------- top-level ----------------
+Object visit(Program ir) {
+for (int i=0, n=ir._functions.size(); i<n; i++) {
+FunDef fun = ir._functions.get(i);
+fun.accept(this);
+if (i != n - 1)
+pln();
+

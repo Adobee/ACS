@@ -1,0 +1,12 @@
+package fr.android.api.util;
+
+public class Notifiable {
+boolean notify = false;
+public void bnotify() {
+public void bwait() {
+synchronized (this) {
+if (!notify) {
+try {
+wait();
+} catch (InterruptedException e) {
+

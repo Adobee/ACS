@@ -1,0 +1,15 @@
+package test;
+
+/**
+* Dummy data
+* @author benbai123
+*
+*/
+public class Item {
+String _name = &quot;&quot;;
+public Item (String name) {
+setName(name);
+}
+public void setName (String name) {
+if (name == null)
+

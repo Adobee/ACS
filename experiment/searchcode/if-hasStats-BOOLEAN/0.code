@@ -1,0 +1,9 @@
+private final DataParsingMethod parsingMethod;
+
+private boolean hasStats;
+private long averageDecodeTime;
+private long averageEncodeTime;
+@Override protected Void doInBackground(Void... params) {
+if (parsingMethod.hasStats(context)) {
+hasStats = true;
+

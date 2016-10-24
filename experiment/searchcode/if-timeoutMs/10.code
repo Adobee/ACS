@@ -1,0 +1,9 @@
+public void showFor(long timeoutMs, boolean maximize, boolean disposeAfterTimeout) {
+if (timeoutMs < 0)
+timeoutMs = DEFAULT_WINDOW_SHOW_TIMEOUT;
+window.addWindowListener(this);
+synchronized (this) {
+try {
+if (timeoutMs > 0)
+this.wait(timeoutMs);
+

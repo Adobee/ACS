@@ -1,0 +1,8 @@
+currentT = currentT.subtract(INITIAL_TtT.divide(new BigDecimal(days), 10, RoundingMode.HALF_UP));
+
+service.setCurrentTtT(currentT);
+
+double base = (service.getPlanConfiguration().
+getRisklessAssetInterest().doubleValue() + 1);
+double exp = currentT.doubleValue();
+

@@ -1,0 +1,6 @@
+Fraction possibilities[][] = new Fraction[TURN + 1][TURN + 1];
+possibilities[0][0] = new Fraction(BigInteger.ONE, BigInteger.ONE);
+for (int i = 0; i < TURN; i++) {
+for (int j = 0; j <= i + 1; j++) {
+possibilities[i + 1][j] = new Fraction(BigInteger.ZERO,
+

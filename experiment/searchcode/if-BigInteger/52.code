@@ -1,0 +1,9 @@
+private static BigInteger gcd(BigInteger x, BigInteger y){
+if(x.compareTo(y)<0){
+return gcd(y,x);
+}
+if(y==BigInteger.ZERO)
+return x;
+else
+return gcd(x.subtract(y),y);
+

@@ -1,0 +1,11 @@
+RealMatrix rm = new Array2DRowRealMatrix(cellRefsVector.size(), clusterVector.size());
+for (CellFeature ft: featureList){
+if (ft.getCluster()!=null){
+rm.setEntry(cellRefsVector.indexOf(ft.getCellReference()), clusterVector.indexOf(ft.getCluster()), 1);
+}
+}
+return rm;
+}
+
+public RealMatrix computeMatrix(RealMatrix featureCellM, RealMatrix featureClusterM) {
+

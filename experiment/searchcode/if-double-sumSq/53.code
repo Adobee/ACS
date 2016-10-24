@@ -1,0 +1,10 @@
+public class StatSummary {
+
+public String name; // defaults to &quot;&quot;
+private double sum;
+private double sumsq;
+mean = sum / n;
+double num = sumsq - (n * mean * mean);
+if (num < 0) {
+// avoids tiny negative numbers possible through imprecision
+

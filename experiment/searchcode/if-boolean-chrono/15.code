@@ -1,0 +1,11 @@
+public FutureTaskLauncher(ChronoUnit chronoUnit) {
+boolean err = false;
+try {
+DurationConverter.convert(chronoUnit);
+logger.warn(&quot;The ChronoUnit supplied is not supported, using default of SECONDS&quot;, e);
+err=true;
+}
+
+if (err) {
+this.chronoUnit = ChronoUnit.SECONDS;
+

@@ -1,0 +1,8 @@
+RelationshipType relationshipType = null;
+if (StringUtils.isNotBlank(relationshipTypeId))
+relationshipType = ps.getRelationshipType(Integer.valueOf(relationshipTypeId));
+throw new APIException(&quot;Cannot find relation type with id:&quot; + relationshipType);
+
+boolean isPersonA = false;
+if (AorB != null &amp;&amp; (&quot;A&quot;.equalsIgnoreCase(AorB) || &quot;B&quot;.equalsIgnoreCase(AorB))) {
+

@@ -1,0 +1,9 @@
+public boolean isMatch(String s, String p) {
+if(p.length()==0)
+return s.length()==0;
+boolean[] res = new boolean[s.length()+1];
+res[0] = true;
+for(int j=0;j<p.length();j++)
+{
+if(p.charAt(j)!=&#39;*&#39;)
+

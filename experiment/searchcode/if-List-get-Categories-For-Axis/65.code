@@ -1,0 +1,11 @@
+* @param categories
+*            分类集
+*/
+public void setCategories( List<String> categories) {
+if(null != categoryAxis)categoryAxis.setDataBuilding(categories);
+List<String> dataSet = categoryAxis.getDataSet();
+if(null == dataSet)
+{
+Log.e(TAG,&quot;分类轴数据集为空.&quot;);
+return false;
+

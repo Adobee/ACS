@@ -1,0 +1,10 @@
+List<String> nGramTokens = new ArrayList<String>();
+String[] tokens = text.split(&quot;(?=[\\s+;])&quot;);
+int maxStartIndex = tokens.length - tokenSize + 1;
+for (int i = 0; i < maxStartIndex; i++)
+nGramTokens.add(getToken(i, i + tokenSize, tokens));
+return nGramTokens;
+}
+
+}
+

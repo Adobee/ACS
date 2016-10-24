@@ -1,0 +1,10 @@
+int search(int[] a, int target) {
+int low = 0, high = a.length - 1;
+while (low <= high) {
+int mid = low + (high - low) / 2;
+if (target == a[mid]) {
+return mid;
+}
+if (a[low] < a[mid]) {
+if (a[low] <= target &amp;&amp; target < a[mid]) {
+

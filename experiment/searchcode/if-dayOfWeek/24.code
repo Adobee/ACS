@@ -1,0 +1,12 @@
+package org.motechproject.model;
+
+import org.joda.time.LocalDate;
+
+public enum DayOfWeek {
+for (DayOfWeek day : DayOfWeek.values()) {
+if (day.getValue() == dayOfWeek)
+return day;
+}
+
+throw new IllegalArgumentException(&quot;Not a valid day&quot;);
+

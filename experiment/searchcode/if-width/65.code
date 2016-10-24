@@ -1,0 +1,9 @@
+package org.reactome.diagram.view;
+
+public class SegmentWidthAdjuster {
+private final double MIN_TOTAL_SEGMENT_PERCENTAGE = 0.1;
+public static SegmentWidthAdjuster getInstance() {
+if (segmentWidthAdjuster == null)
+segmentWidthAdjuster = new SegmentWidthAdjuster();
+return segmentWidthAdjuster;
+

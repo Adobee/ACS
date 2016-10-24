@@ -1,0 +1,10 @@
+protected String startPageUrl;
+protected boolean firstIteration;
+
+public Robot(WebClient client, CrawlerController controller,
+while (!storage.allVisited() || firstIteration) {
+try {
+if (firstIteration) {
+urlToVisit = startPageUrl;
+processPage(urlToVisit);
+

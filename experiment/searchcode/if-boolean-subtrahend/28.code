@@ -1,0 +1,10 @@
+boolean b_impliedZeroSubtrahend = (1 == x_dataset.getSeriesCount());
+
+
+if (isEitherSeriesDegenerate(x_dataset, b_impliedZeroSubtrahend)) {
+private boolean isEitherSeriesDegenerate(XYDataset x_dataset,
+boolean x_impliedZeroSubtrahend) {
+
+if (x_impliedZeroSubtrahend) {
+return (x_dataset.getItemCount(0) < 2);
+

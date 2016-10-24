@@ -1,0 +1,7 @@
+import com.goldCityWeb.dao.UpgradeDao;
+import com.goldCityWeb.domain.Upgrade;
+import com.goldCityWeb.service.UpgradeService;
+public void saveUpgrade(Upgrade upgrade) {
+if (upgrade.getId() != null &amp;&amp; upgrade.getId().intValue() > 0) {
+upgradeDao.updateUpgrade(upgrade);
+

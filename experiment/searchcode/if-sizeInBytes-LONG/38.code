@@ -1,0 +1,9 @@
+* @param sizeInBytes
+* @return
+*/
+public static String getReadableFileSize(long sizeInBytes) {
+if(dfFileSize == null) {
+String displaySize;
+if (sizeInBytes / ONE_GB > 0) {
+displaySize = dfFileSize.format(1.0 * sizeInBytes / ONE_GB) + &quot; GB&quot;;
+

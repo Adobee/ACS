@@ -1,0 +1,6 @@
+public static Buffer convertToPlatformByteOrder(Buffer buffer) {
+
+if (buffer instanceof ShortBuffer) {
+ShortBuffer swapBuffer = srcBuffer;
+if ((srcBuffer.order() == ByteOrder.BIG_ENDIAN)  &amp;&amp; !NativeGL10._isPlatformBigEndian()) {
+

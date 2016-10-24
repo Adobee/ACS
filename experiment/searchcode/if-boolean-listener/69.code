@@ -1,0 +1,10 @@
+private EventFutureListener listener;
+private boolean done;
+
+@Override
+public void addListener(EventFutureListener listener) {
+if (listener == null) {
+throw new NullPointerException(&quot;listener&quot;);
+}
+boolean notifyNow = false;
+

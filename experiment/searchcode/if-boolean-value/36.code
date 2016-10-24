@@ -1,0 +1,12 @@
+FALSE(Boolean.FALSE),
+NULL(null);
+
+private EnumExample(Boolean bool){
+value = bool;
+}
+private Boolean value;
+
+public boolean equals(Boolean that){
+if(that == null &amp;&amp; this.value == null) return true;
+return(this.equals(that.booleanValue()));
+

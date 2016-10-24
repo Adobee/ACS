@@ -1,0 +1,7 @@
+public static Matrix product(Matrix matrixA, Matrix matrixB) {
+Matrix result = new Matrix(matrixA.getnLin(), matrixB.getnCol());
+double[][] aux = new double[matrixA.getnLin()][matrixB.getnCol()];
+
+if (matrixA.getnCol() == matrixB.getnLin()) {
+for (int i = 0; i < matrixA.getnLin(); i++) {
+

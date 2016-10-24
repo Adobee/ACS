@@ -1,0 +1,9 @@
+setSubTask(token, currentStage.durationWeight, false);
+break;
+}
+case READ: {
+if (!executeSubTask()) break;
+AsynchronousToken token = worldHistory.writeToWorldWithUndoAsynchronous(entityPlayerMP, worldServer, sourceWorldFragment, xpos, ypos, zpos, quadOrientation, getUniqueTokenID());
+currentStage = ActionStage.WRITE;
+if (token != null) {
+

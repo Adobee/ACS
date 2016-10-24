@@ -1,0 +1,5 @@
+public static boolean hasColor(ItemStack itemStack) {
+
+return hasKey(itemStack, Names.NBT.DISPLAY, NBTType.COMPOUND) &amp;&amp; getTagCompound(itemStack, Names.NBT.DISPLAY).hasKey(Names.NBT.COLOR, NBTType.INT.ordinal());
+return itemStack.getTagCompound().getCompoundTag(Names.NBT.DISPLAY).getInteger(Names.NBT.COLOR);
+

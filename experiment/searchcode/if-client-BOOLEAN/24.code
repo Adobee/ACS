@@ -1,0 +1,11 @@
+public class ClientOperations {
+private ClientDB clientDB;
+
+public ClientOperations() {
+
+}
+
+public boolean checkClientById(int id) {
+clientDB = new ClientDB();
+if (clientDB.selectClientById(id) != null) {
+

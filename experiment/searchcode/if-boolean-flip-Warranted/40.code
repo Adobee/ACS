@@ -1,0 +1,6 @@
+* result code is failure then no message follows. If the result code
+* is success and a response is warranted it will follow and is length prefixed if necessary.
+final FastDeserializer ds = new FastDeserializer(resultTablesBuffer);
+// check if anything was changed
+final boolean dirty = ds.readBoolean();
+

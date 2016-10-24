@@ -1,0 +1,14 @@
+padsView.draw();
+applet.popMatrix();
+}
+private void assignPads() {
+ClipGroup[] groups = song.groups;
+for (int i = 0; i < groups.length; i++) {
+assignPads(clipGroup.getPads());
+}
+}
+
+private void assignPads(Clip[] pads) {
+for (int i = 0; i < pads.length; i++) {
+Clip pad = pads[i];
+

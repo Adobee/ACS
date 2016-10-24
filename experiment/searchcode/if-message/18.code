@@ -1,0 +1,8 @@
+public static void handleMessage(Message message, AppHandler appHandler) {
+IMessageHandler messageHandler = null;
+
+if (message instanceof SignInSuccesfullMessage) {
+messageHandler = new SignInSuccesfullMessageHandler(appHandler);
+}
+if (message instanceof SignInUnsuccesfullMessage) {
+

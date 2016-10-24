@@ -1,0 +1,13 @@
+//~ Instanzvariablen --------------------------------------------------
+
+private final HistoricEra era;
+private final int yearOfEra;
+HistoricEra era,
+int yearOfEra,
+int month,
+int dom
+) {
+super();
+
+this.era = era;
+

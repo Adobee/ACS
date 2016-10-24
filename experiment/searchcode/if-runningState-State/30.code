@@ -1,0 +1,14 @@
+import gobblin.runtime.JobState.RunningState;
+
+import lombok.Getter;
+
+/**
+* TODO
+*
+*/
+public class JobExecutionState implements JobExecutionStatus {
+RunningState oldState = this.runningState;
+this.runningState = newState;;
+if (this.listener.isPresent()) {
+this.listener.get().onStatusChange(this, oldState, this.runningState);
+

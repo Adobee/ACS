@@ -1,0 +1,16 @@
+public class EqualText implements Requirement
+{
+
+private final String _expected;
+
+public EqualText(String expected)
+{
+if (expected == null)
+throw new IllegalArgumentException(&quot;expected cannot be null&quot;);
+_expected = expected;
+}
+
+public boolean eval(Element e)
+{
+return _expected.equals(e.getText());
+

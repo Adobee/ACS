@@ -1,0 +1,15 @@
+public final int start, end;
+public final int cost;
+public final int tiebreaker;
+public static int nextTiebreaker = 0;
+public int compareTo(Edge other) {
+
+if (cost < other.cost) return -1;
+if (cost > other.cost) return +1;
+
+return tiebreaker - other.tiebreaker;
+}
+
+
+}
+

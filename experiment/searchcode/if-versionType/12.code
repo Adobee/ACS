@@ -1,0 +1,12 @@
+* 枚举[版本类型] create on 2014-03-16
+*
+* @author L.jinzhu@EB
+* @version 1.00
+*
+*/
+public enum VersionType {
+CURRENT(&quot;current&quot;), BACKUP(&quot;backup&quot;);
+public static VersionType getType(String type) {
+for (VersionType ceType : VersionType.values())
+if (type.equals(ceType.stringValue()))
+

@@ -1,0 +1,12 @@
+int nDim = samplePoints[0].length;
+double [] binWidth = new double[nDim];
+for (int i = 0; i < nDim; i++)
+{
+if (Utils.eq(upperBound[i], lowerBound[i]))
+highB[i] = -Double.MAX_VALUE;
+}
+for (int i = 0; i < nSample; i++)
+for (int j = 0; j < nDim; j++)
+{
+if (samples[i][j] < lowB[j])
+

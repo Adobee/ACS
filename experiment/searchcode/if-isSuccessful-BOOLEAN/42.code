@@ -1,0 +1,14 @@
+ReentrantLock lock = new ReentrantLock();
+
+public Boolean pickUp() {
+Boolean isSuccessful = lock.tryLock();
+return isSuccessful;
+}
+
+public void putDown() {
+if (lock.isHeldByCurrentThread()) {
+lock.unlock();
+}
+}
+}
+

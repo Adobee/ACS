@@ -1,0 +1,10 @@
+* http://www.careercup.com/question?id=9100691
+*/
+public class FormatArray {
+public int[][] format(int[] arr, int nCol) {
+int nRow = arr.length/nCol;
+if(arr.length%nCol != 0)
+nRow++;
+
+int[][] res = new int[nRow][nCol];
+

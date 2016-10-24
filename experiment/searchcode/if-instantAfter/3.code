@@ -1,0 +1,8 @@
+* Gets the default time zone.
+* <p>
+* The default time zone is derived from the system property {@code user.timezone}.
+* If that is {@code null} or is not a valid identifier, then the value of the
+long offsetBefore = getOffset(instantBefore);
+long offsetAfter = getOffset(instantAfter);
+if (offsetBefore <= offsetAfter) {
+

@@ -1,0 +1,12 @@
+this.realization = realization;
+this.parameters = parameters;
+}
+
+@Override
+public double logDensity()
+{
+return logDensity(realization.getIntegerValue(), parameters.getProb(), parameters.getTrials());
+return Double.NEGATIVE_INFINITY;
+
+double logDensity = CombinatoricsUtils.binomialCoefficientLog(trials, point);
+

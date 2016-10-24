@@ -1,0 +1,13 @@
+System.out.print(&quot;Vertices in independent set : &quot;);
+int i=optimal_soln.length-1;
+while( i>1 ) {
+if(optimal_soln[i-2] + path_graph[i] > optimal_soln[i-1]) {
+else {
+i -= 1;
+}
+}
+
+if(i == 1) {
+if(optimal_soln[i] > optimal_soln[i-1]) {
+System.out.println(i);
+

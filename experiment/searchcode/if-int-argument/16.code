@@ -1,0 +1,15 @@
+import railo.runtime.type.KeyImpl;
+
+public final class ArgumentIntKey extends KeyImpl {
+
+private static final ArgumentIntKey[] KEYS = new ArgumentIntKey[]{
+this.intKey=key;
+}
+
+public int getIntKey() {
+return intKey;
+}
+
+public static ArgumentIntKey init(int i) {
+if(i>=0 &amp;&amp; i<KEYS.length) return KEYS[i];
+

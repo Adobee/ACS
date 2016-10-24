@@ -1,0 +1,10 @@
+public class UtilPlugin {
+
+public static <T extends ExtensionPoint> T get(Class<T> extensionClass){//
+
+PluginManager pluginManager = PluginContainer.getPluginManager();
+* check if we have plugin to evaluate logical expression
+*/
+List<T> exprList = pluginManager.getExtensions(extensionClass);
+if (UtilValidate.isNotEmpty(exprList)){
+

@@ -1,0 +1,9 @@
+private Map<E, Integer> pushFrequency = new HashMap<E, Integer>();
+
+public void push(E value) {
+if(pushFrequency.containsKey(value)) {
+int frequency = pushFrequency.get(value);
+E mostedFrequentlyAddedItem = valueCount.keySet().iterator().next();
+int remainingCount = valueCount.get(mostedFrequentlyAddedItem) - 1;
+if(remainingCount == 0) {
+

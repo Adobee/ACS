@@ -1,0 +1,10 @@
+package tasks;
+
+import java.util.*;
+
+public class TaskStorage {
+private Map<Long, Task> taskList;
+public void addTask(Task task) throws Exception {
+if (task != null) {
+if (taskList.get(task.getId()) != null) {
+

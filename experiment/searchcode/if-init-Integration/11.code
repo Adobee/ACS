@@ -1,0 +1,12 @@
+public class ModIntegrationHandler {
+public enum Stage {
+PRE_INIT,
+INIT,
+POST_INIT
+}
+
+private final ArrayList<IModIntegration> modIntegrators;
+public void init(Stage stage) {
+for(IModIntegration integrator: modIntegrators) {
+if(verify(integrator.getDependencies())) {
+

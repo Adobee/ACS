@@ -1,0 +1,10 @@
+public class LogoutCustomerAction implements Action{
+
+@Override
+public ActionResponse execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+if(customer != null){
+session.invalidate();
+
+}
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;loginCustomer&quot;);
+

@@ -1,0 +1,13 @@
+public boolean getBooleanValue(){
+return booleanValue;
+}
+
+@Override
+public Object clone(){
+return new BooleanWrapper(this.booleanValue);
+}
+
+@Override
+public boolean equals(Object o){
+if (!(o  instanceof BooleanWrapper)) {
+

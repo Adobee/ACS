@@ -1,0 +1,13 @@
+int s_iter = 0, p_iter = 0;
+int p_star = -1, s_star = -1;
+
+while(s_iter < s.length()){
+if(p_iter < p.length() &amp;&amp; (s_char[s_iter] == p_char[p_iter] || p_char[p_iter] == &#39;?&#39;)){
+dp[0][0] = true;
+
+
+
+for(int p_iter = 0; p_iter < p.length(); p_iter++){
+dp[0][p_iter + 1] = false;
+if(p_iter > 0 &amp;&amp; p.charAt(p_iter ) == &#39;*&#39;){
+

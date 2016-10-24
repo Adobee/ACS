@@ -1,0 +1,10 @@
+private double nextX;
+private double nextZ;
+
+public Vector2DIterator(Vector2D min, Vector2D max)
+throw new NoSuchElementException();
+}
+
+Vector2D answer = new Vector2D(nextX, nextZ);
+if (++nextX <= max.getX())
+

@@ -1,0 +1,9 @@
+import org.apache.commons.math3.linear.RealMatrix;
+import org.apache.commons.math3.util.FastMath;
+
+public class MelMath {
+private final static double k = 1000.0/FastMath.log(1.0 + 1000.0 / 700.0);
+private MelMath(){}
+
+public static RealMatrix doubleAllExceptDCandNyquist(RealMatrix v, final RealMatrix c, final double mn, final double n, final double fn2){
+

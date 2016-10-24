@@ -1,0 +1,13 @@
+package javac.codegen;
+import javac.quad.*;
+public class LwSpCode extends Asm
+{
+Temp rd;
+int offset;
+&quot;\tsw &quot; + &quot;$t0&quot; + &quot;, &quot; + currentFrame.temps.get(rd.num) + &quot;($sp)&quot;;
+*/
+String td;
+String re = &quot;&quot;;
+if (!rd.isTemp) td = &quot;$t0&quot;; else td = rd.color;
+re += &quot;\tlw &quot; + td + &quot;, &quot; + offset + &quot;($sp)\n&quot;;
+

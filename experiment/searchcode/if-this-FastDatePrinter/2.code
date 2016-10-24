@@ -1,0 +1,13 @@
+i--;
+if (i < 0) {
+break;
+}
+len += this.mRules[i].estimateLength();
+}
+this.mMaxLengthEstimate = len;
+rule = selectNumberRule(10, tokenLen);
+break;
+case &#39;z&#39;:
+if (tokenLen >= 4) {
+rule = new TimeZoneNameRule(this.mTimeZone, this.mLocale, 1);
+

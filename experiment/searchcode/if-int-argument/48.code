@@ -1,0 +1,8 @@
+protected SecondOrderExpression (int line, int column, Expression firstArgument, Expression secondArgument) throws IllegalArgumentException
+return firstArgument;
+}
+
+protected void setFirstArgument (Expression firstArgument)
+{
+if (!canHaveAsArgument(firstArgument)) throw new IllegalArgumentException(&quot;Invalid first argument for second order expression.&quot;);
+

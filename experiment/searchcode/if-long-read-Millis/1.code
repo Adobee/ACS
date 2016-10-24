@@ -1,0 +1,8 @@
+import android.os.Parcelable;
+
+public final class ScanPeriodData implements Parcelable {
+public final long scanPeriodMillis;
+public ScanPeriodData createFromParcel(Parcel source) {
+long scanPeriodMillis = source.readLong();
+long waitTimeMillis = source.readLong();
+

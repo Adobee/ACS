@@ -1,0 +1,11 @@
+((XYBarRenderer) p.getRenderer()).setShadowVisible(b);
+}
+else if (plot instanceof CategoryPlot)
+{
+CategoryPlot p = (CategoryPlot) plot;
+XYPlot p = (XYPlot) plot;
+a1 = p.getDomainAxis();
+a2 = p.getRangeAxis();
+}
+else if (plot instanceof CategoryPlot)
+

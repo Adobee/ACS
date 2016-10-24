@@ -1,0 +1,7 @@
+assertArgCount(args, 1);
+Expr a = args[0];
+if (a instanceof ExprEvaluatable) {
+a = ((ExprEvaluatable) a).evaluate(context);
+}
+if (a instanceof ExprInteger) {
+

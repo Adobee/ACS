@@ -1,0 +1,9 @@
+import java.util.Vector;
+
+public class ListenerAbility {
+public Vector<WeakReference<Listener>> myListener;
+public boolean myIsInvalid = false;
+public void addListener(Listener listener) {
+if (myListener == null) {
+myListener = new Vector<WeakReference<Listener>>(2);
+

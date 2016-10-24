@@ -1,0 +1,5 @@
+List<ShardRouting> replicaShardRoutings = allocation.routingTable().shardRoutingTable(index, shard).replicaShards();
+if (replicaShardRoutings.size() > 0) {
+for (ShardRouting replica : replicaShardRoutings) {
+if (replica.unassigned()) {
+

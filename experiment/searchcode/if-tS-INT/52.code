@@ -1,0 +1,8 @@
+public class MessageComparator implements Comparator<TimeStampedMessage> {
+
+@Override
+public int compare(TimeStampedMessage m1, TimeStampedMessage m2) {
+if (m2.ts.isLess(m1.ts) || m2.ts.isLessOrEqual(m1.ts))
+return 1;
+else if (m1.ts.isLess(m2.ts) || m1.ts.isLessOrEqual(m2.ts))
+

@@ -1,0 +1,8 @@
+private String host = &quot;localhost&quot;;
+private boolean useHttps = getDefaultUseHttps();
+private int port = getDefaultUseHttps() ? getDefaultHttpsPort() : getDefaultHttpPort();
+public T useSpecificPort(final int port, final boolean useHttps)
+{
+this.port = port;
+this.useHttps = useHttps;
+

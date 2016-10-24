@@ -1,0 +1,9 @@
+private boolean noTransform = false;
+private long maxAgeSeconds = -1;
+private long sMaxAgeSeconds = -1;
+
+
+/** @return the original response that backs this response directive */
+/** Cache-Control: max-age=<deltaSeconds> ... implies public if none of private, no-cache, or no-store is defined */
+public CacheControl maxAge(int deltaSeconds) {
+

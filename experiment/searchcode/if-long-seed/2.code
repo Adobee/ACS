@@ -1,0 +1,9 @@
+private ISeedDao seedDao;
+
+@Override
+public Seed getSeed(Long idSeed) {
+logger.info(&quot;getSeed(&quot; + idSeed + &quot;)&quot;);
+public static Seed entityToObject(SeedEntity seedEntity){
+Seed seed = null;
+if(seedEntity!=null){
+

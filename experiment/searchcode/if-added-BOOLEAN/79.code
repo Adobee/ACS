@@ -1,0 +1,9 @@
+package hc.core;
+
+
+public abstract class RemoveableHCTimer extends HCTimer {
+boolean isAddedIn = true;
+public void setEnable(final boolean enable){
+if(enable &amp;&amp; (isAddedIn == false)){
+isAddedIn = true;
+

@@ -1,0 +1,6 @@
+private final double initialStepBoundFactor;
+/** Desired relative error in the sum of squares. */
+private final double costRelativeTolerance;
+* product of initialStepBoundFactor and the euclidean norm of
+* {@code diag * x} if non-zero, or else to {@code initialStepBoundFactor}
+

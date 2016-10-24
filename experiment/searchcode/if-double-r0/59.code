@@ -1,0 +1,6 @@
+public double mt_welle(double r0, double r1, double r2, double ny, double E, double delta, double e0) {
+Welle welle = null;
+double mt = 0, mt_previous = 0;
+for (int i = 0; i < 180; i++) {
+welle = new Welle(r0, r1, r2, ny, E, delta, e0, i);
+

@@ -1,0 +1,7 @@
+private void addNode(BinaryNode n, BinaryNode nodeToAdd){
+//check if node to add is smaller than current node
+if (nodeToAdd.get_value() <= n.get_value()){
+n.set_left(nodeToAdd); //make the node left child, if not existing
+} else {
+addNode(n.get_left(), nodeToAdd); //search left route for insertion place
+

@@ -1,0 +1,9 @@
+import org.apache.commons.math.linear.OpenMapRealVector;
+import org.apache.commons.math.linear.RealVectorFormat;
+
+
+public class DocVector {
+
+public Map<String, Integer> terms;
+public OpenMapRealVector vector;
+

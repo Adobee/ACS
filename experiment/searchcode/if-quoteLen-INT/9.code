@@ -1,0 +1,10 @@
+for (String target : signatures) {
+int index = output.indexOf(target);
+while (index >= 0) {
+if (target.equals(&quot;L&quot;) &amp;&amp; (StringUtils.isNumeric(output.substring(index + 1, index + 2)) || output.substring(index - 1, index).equals(&quot;/&quot;))) {
+i = output.indexOf(quote, i + 2);
+continue;
+}
+int quoteLen = output.substring(i + 1).indexOf(quote) + 1;
+int escapedQuote = output.substring(i + 1).indexOf(&quot;\\\&quot;&quot;) + 2;
+

@@ -1,0 +1,11 @@
+private int nrows;
+private int ncols;
+private double[][] data;
+
+public Matrix(double[][] dat) {
+this.data = dat;
+Matrix X_ = new Matrix(this.getNrows(), this.getNcols()+1);
+for (int i=0;i<X_.getNrows();i++) {
+for (int j=0;j<X_.getNcols();j++) {
+if (j==0)
+

@@ -1,0 +1,10 @@
+public class TilesDistance extends HexEvent {
+
+private double distance;
+
+public TilesDistance ( double distance ) {
+super ( &quot;tilesDistance&quot; );
+
+if ( distance < 0 )
+throw new IllegalArgumentException ( &quot;The distance between two tiles cannot be negative&quot; );
+

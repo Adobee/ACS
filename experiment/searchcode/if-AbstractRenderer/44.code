@@ -1,0 +1,10 @@
+package com.roo.pm.client.scaffold.ui;
+
+import com.google.gwt.text.shared.AbstractRenderer;
+import com.google.gwt.text.shared.Renderer;
+public class ByteRenderer extends AbstractRenderer<Byte> {
+private static ByteRenderer INSTANCE;
+
+/**
+* @return the instance
+

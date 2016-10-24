@@ -1,0 +1,7 @@
+public boolean validate(String s) {
+if (IntValidator.isInteger(s)) {
+int year = Integer.parseInt(s);
+Calendar calendar = Calendar.getInstance();
+int currentYear = calendar.get(Calendar.YEAR);
+int validYear = currentYear + 15;
+

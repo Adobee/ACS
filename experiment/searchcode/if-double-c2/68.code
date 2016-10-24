@@ -1,0 +1,12 @@
+for (int j = 0; j <= n; j++)
+c[j][k] = 0.0;
+c[0][0] = 1.0;
+for (int i = 1; i <= n; i++) {
+int mn = min(i, m);
+double c2 = 1.0;
+double c5 = c4;
+c4 = x[i] - z;
+for (int j = 0; j < i; j++) {
+double c3 = x[i] - x[j];
+c2 = c2 * c3;
+

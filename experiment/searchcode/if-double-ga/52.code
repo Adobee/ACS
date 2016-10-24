@@ -1,0 +1,9 @@
+Tour[] tours;
+double[] normalizedScores;
+
+public Population(boolean initialise) {
+tours = new Tour[TSP.ga.populationSize];
+if (initialise == true) {
+for (int i = 0; i < TSP.ga.populationSize; i++)
+tours[i] = new Tour(true);
+

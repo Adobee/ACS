@@ -1,0 +1,9 @@
+import java.util.Map;
+
+public class FECPenalty {
+private static Map<Double, Double> code_penalty_map;
+private static Double codeRateEstimate;
+
+public FECPenalty(){
+code_penalty_map=new LinkedHashMap<Double, Double>();
+

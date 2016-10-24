@@ -1,0 +1,10 @@
+class ColorPainter extends SynthPainter {
+
+/**
+* Method that do paints
+*/
+private void paintBackground(SynthContext context, Graphics g, int x,
+Color oldColor = g.getColor();
+g.setColor(style.getColor(context, ColorType.BACKGROUND));
+g.fillRect(x, y, x + w, y + h);
+

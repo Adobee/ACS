@@ -1,0 +1,11 @@
+private Logger logger = LoggerFactory.getLogger(BattleConfig.class);
+
+private static BattleConfig instance;
+private double hpFactor;
+private double critFactor;
+private int critRate;
+private double shortAtkFactor;
+private double shortDefFactor;
+
+private double moreDefFactor;
+

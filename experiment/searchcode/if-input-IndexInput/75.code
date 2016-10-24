@@ -1,0 +1,7 @@
+* random-access input stream.  Used for all Lucene index input operations.
+*
+* <p>{@code IndexInput} may only be used from one thread, because it is not
+* thread safe (it keeps internal state like file position). To allow
+* multithreaded use, every {@code IndexInput} instance must be cloned before
+* used in another thread. Subclasses must therefore implement {@link #clone()},
+

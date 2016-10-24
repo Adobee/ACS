@@ -1,0 +1,7 @@
+//    public static int[] initRandomArray(int arraySize, int upperBound, int lowerBound) {
+//        int array[] = new int[arraySize];
+//        upperBound += (1 + Math.abs(lowerBound));
+//
+//        for(int i = 0; i < array.length; i++){
+//            array[i] = random.nextInt(upperBound)+lowerBound;
+

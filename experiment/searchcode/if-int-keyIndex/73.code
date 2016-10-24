@@ -1,0 +1,8 @@
+public class MultiNoKeys extends LProbeProc {
+
+//The column where the &quot;line name&quot; is extracted from
+private int keyIndex = 0;
+public Boolean configure(Integer keyIndex, String separator) {
+if(keyIndex != null) {
+this.keyIndex = keyIndex;
+

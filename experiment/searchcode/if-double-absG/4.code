@@ -1,0 +1,12 @@
+public float crossCorrelationBourke(float[] x, float[] y, int n, int maxdelay)
+{
+int i,j;
+double mx,my,sx,sy,sxy,denom,r;
+maxValueF = absF;
+maxPosF = i;
+}
+
+if(absG > maxValueG)
+{
+maxValueG = absG;
+

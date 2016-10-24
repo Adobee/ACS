@@ -1,0 +1,10 @@
+return super.notifyMouseClicked(x, y, modifiers, clickCount);
+}
+
+
+public boolean refresh(Object clientFile) {
+//		forceRefresh(clientFile);
+//		return true;
+boolean changed;
+if (modelAdapter.getEstimatedAtomCount(clientFile) != modelSet.atoms.length) {
+

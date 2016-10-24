@@ -1,0 +1,11 @@
+L_0x012f:
+r0 = r41;
+r0 = r0.mDoubleTapListener;
+r35 = r0;
+if (r35 == 0) goto L_0x01a6;
+r23 = r35 - r14;
+r0 = r41;
+r0 = r0.mIsDoubleTapping;
+r35 = r0;
+if (r35 == 0) goto L_0x02a9;
+

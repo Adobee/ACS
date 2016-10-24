@@ -1,0 +1,9 @@
+System.out.println(getQuadrant(&quot;b&quot;,&quot;3&quot;));
+System.out.println(getQuadrant(&quot;a&quot;,&quot;9&quot;));
+System.out.println(getQuadrant(&quot;i&quot;,&quot;1&quot;));
+static String getQuadrant(String v, String h){
+int horizontal = Integer.valueOf(h);
+
+int vertikal = 0;
+if(v == &quot;a&quot;){
+

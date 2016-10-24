@@ -1,0 +1,16 @@
+public class ShardsKey {
+
+private final int[] _shards;
+
+public ShardsKey(int[] shards) {
+Arrays.sort(shards);
+_shards = shards;
+}
+
+public int[] getShards() {
+return _shards;
+}
+
+@Override
+public int hashCode() {
+

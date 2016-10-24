@@ -1,0 +1,11 @@
+public Solution findSolution(double To, double Tend, DataSet dataSet) {
+
+double T = To;
+
+Solution bestSolution = dataSet.initialSolution();
+
+int i = 0;
+
+while (T > Tend) {
+Solution randomSolution = pickRandomSolution(dataSet);
+

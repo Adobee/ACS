@@ -1,0 +1,8 @@
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.ImmutableSettings;
+protected TransportClient transportClient;
+
+protected void initConnection(boolean isTransport) {
+if (isTransport) {
+Settings settings = ImmutableSettings.settingsBuilder()
+

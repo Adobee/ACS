@@ -1,0 +1,9 @@
+//Upper limit would be 9! + 8! + 7! + ... which is about 500k
+int sumOfCuriousFactorials = 0;
+for(int i = 10; i < 500000; i++){
+if(isCuriousFactorial(i)){
+for(; valueMarker >= 1; valueMarker /= 10){
+if(value == (tmpValue % valueMarker)) continue;
+
+factorialValue += getFactorial(tmpValue / valueMarker);
+

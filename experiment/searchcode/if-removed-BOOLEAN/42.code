@@ -1,0 +1,13 @@
+private boolean pseudo;
+
+public RemovedBean(boolean pseudo){
+this.pseudo = pseudo;
+}
+public RemovedBean(){
+this.pseudo = true;
+}
+
+public void add(Priceable car, String reason){
+if(!pseudo){
+removed.add(new RemovedRecord(car, reason));
+

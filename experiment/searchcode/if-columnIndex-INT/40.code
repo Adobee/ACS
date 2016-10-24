@@ -1,0 +1,4 @@
+public static Date readDate(Cursor cursor, String columName) {
+int columnIndex = cursor.getColumnIndex(columName);
+int columnIndex = cursor.getColumnIndex(columName);
+

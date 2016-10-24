@@ -1,0 +1,7 @@
+public <T extends Throwable> ThrownExceptionAsserter<T> shouldThrow(Class<T> expectedThrowable) {
+if(givenExpression == null)
+throw new ActualValueIsNull();
+} catch (Throwable e) {
+Class<? extends Throwable> actualThrowableClass = e.getClass();
+if (actualThrowableClass.equals(expectedThrowable)) {
+

@@ -1,0 +1,12 @@
+public synchronized void remove(L listener)
+{
+super.remove(listener);
+if (isEmpty())
+{
+synchronized (ListenersByUuid.this)
+MyListeners listeners = map.get(uuid);
+if (listeners == null)
+{
+listeners = new MyListeners(uuid);
+map.put(uuid, listeners);
+

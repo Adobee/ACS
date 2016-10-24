@@ -1,0 +1,7 @@
+public boolean isMendelian(int fState, int mState, int oState) {
+double[][][] matrix = getSingleMarkerMatrix();
+if (matrix[fState][mState][oState] == 0) {
+CN[46] = new int[]{4, 3, 1, 1, 3, 2};
+CN[47] = new int[]{4, 3, 2, 1, 2, 2};
+double[] value = new double[48];
+

@@ -1,0 +1,10 @@
+public static double nd(Function<Double, Double> f, double x){
+double delta = 0.1;
+double r1 = nd(f, x, delta);
+delta /= 10.0;
+double r2 = nd(f, x, delta);
+double d1 = Math.abs(r2 - r1);
+while(true){
+r1 = r2;
+delta /= 10.0;
+

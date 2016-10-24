@@ -1,0 +1,10 @@
+for (CategoryDto categoryDto : categoryList) {
+Long categoryCount = categoryDto.getCategoryCount();
+if (categoryCount!=null&amp;&amp;categoryCount>0) {
+dishCon+=categoryCount;
+}
+}
+
+if (dishCon==0||totalPrice<=0) {
+return 0;
+

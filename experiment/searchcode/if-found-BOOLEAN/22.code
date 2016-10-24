@@ -1,0 +1,12 @@
+for(Def def: n.def_list) {
+found = (Boolean) def.accept(this);
+if(found) {
+return found;
+return false;
+}
+
+@Override
+public Boolean visit(Branch n) {
+boolean found = (Boolean) n.condition.accept(this);
+if(found) {
+

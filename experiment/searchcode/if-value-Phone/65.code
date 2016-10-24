@@ -1,0 +1,7 @@
+private Response buildPhoneList(List<Phone> phones) {
+if (phones != null) {
+return Response.ok().entity(PhoneList.convertPhoneList(phones)).build();
+public Response setPhoneSetting(String phoneId, String path, String value) {
+Phone phone = getPhoneByIdOrMac(phoneId);
+if (phone != null) {
+

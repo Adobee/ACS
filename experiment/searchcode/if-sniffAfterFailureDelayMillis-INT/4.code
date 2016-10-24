@@ -1,0 +1,7 @@
+public class SnifferBuilderTests extends RestClientTestCase {
+
+public void testBuild() throws Exception {
+int numNodes = RandomInts.randomIntBetween(getRandom(), 1, 5);
+HttpHost[] hosts = new HttpHost[numNodes];
+for (int i = 0; i < numNodes; i++) {
+

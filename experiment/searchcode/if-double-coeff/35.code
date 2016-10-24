@@ -1,0 +1,16 @@
+package tp4;
+
+public class monome {
+
+private int degre;
+private double coeff;
+
+public monome (){
+degre = 0;
+coeff = 0 ;
+}
+
+public monome ( int d , double c){
+degre = d;
+coeff = c;
+

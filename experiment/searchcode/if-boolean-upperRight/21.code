@@ -1,0 +1,9 @@
+public boolean equals(Object o) {
+if (this == o) {
+return true;
+}
+if (o == null || getClass() != o.getClass()) {
+int pixelSum = imageSum[upperRight.i][upperRight.j];
+if (lowerLeft.i >= 1) {
+pixelSum -= imageSum[lowerLeft.i - 1][upperRight.j];
+

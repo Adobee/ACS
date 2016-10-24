@@ -1,0 +1,7 @@
+return isRestrictedOrContainsSort(optional.symbol);
+}else if(construct instanceof PlusList){
+PlusList plusList = (PlusList) construct;
+return isRestrictedOrContainsSort(plusList.symbol) || containsRestrictedSort(plusList.separators);
+}else if(construct instanceof StarList){
+StarList starList = (StarList) construct;
+

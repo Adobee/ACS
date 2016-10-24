@@ -1,0 +1,9 @@
+private static final long serialVersionUID = 1L;
+
+private int mem_no;
+private String mem_email;
+private String mem_pw;
+List<GrantedAuthority> authorities = new ArrayList<GrantedAuthority>();
+if(getMem_email()!=&quot;&quot;||getMem_email()!=null)
+authorities.add(new SimpleGrantedAuthority(&quot;ROLE_USER&quot;));
+

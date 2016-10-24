@@ -1,0 +1,10 @@
+client().admin().indices().prepareFlush().execute().actionGet();
+}
+}
+if (randomBoolean()) {
+client().admin().indices().prepareFlush().execute().actionGet();
+client().admin().indices().prepareFlush().setWaitIfOngoing(true).setForce(true).get();
+
+boolean useSyncIds = randomBoolean();
+if (useSyncIds == false) {
+

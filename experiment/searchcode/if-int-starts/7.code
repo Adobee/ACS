@@ -1,0 +1,9 @@
+// DO NOT write main() function
+
+if (s.startsWith(&quot;M&quot;)) {
+return 1000 + romanToInt(s.substring(1));
+} else if (s.startsWith(&quot;CM&quot;)) {
+return 900 + romanToInt(s.substring(2));
+} else if (s.startsWith(&quot;D&quot;)) {
+return 500 + romanToInt(s.substring(1));
+

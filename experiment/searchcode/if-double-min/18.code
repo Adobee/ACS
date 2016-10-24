@@ -1,0 +1,9 @@
+public Double next() {
+
+double number = new Random(seed).nextDouble();
+
+if (number < ((max - min)/(moda - min))){
+return (double) (min + (Math.sqrt(number*(max - min)*(moda - min))));
+}
+else if (number > ((max-min) / (moda - min))){
+

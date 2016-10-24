@@ -1,0 +1,10 @@
+protected WorkerThread[] threads;
+
+/** Size of the pool. */
+protected int poolSize;
+
+/** running or not **/
+threads = new WorkerThread[poolSize];
+for (int i = 0; i < poolSize; i++) {
+threads[i] = new WorkerThread(this, threadName, i);
+

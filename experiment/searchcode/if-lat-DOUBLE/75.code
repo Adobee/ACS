@@ -1,0 +1,12 @@
+return desLatLng;
+}
+
+
+public static boolean outOfChina(double lat, double lon) {
+if (lon < 72.004 || lon > 137.8347)
+public static double[] transform(double lat, double lon) {
+if (outOfChina(lat, lon)) {
+return null;
+}
+double dLat = transformLat(lon - 105.0, lat - 35.0);
+

@@ -1,0 +1,13 @@
+public class ShapeStyle {
+public Pen outline;
+public Color fill;
+public boolean drawOutline;
+public boolean drawFill;
+drawOutline = true;
+drawFill = true;
+}
+
+public ShapeStyle(Color fill) {
+outline = new Pen(fill);
+if(fill == null) drawFill = false; else { this.fill = fill; drawFill = true; }
+

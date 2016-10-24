@@ -1,0 +1,9 @@
+public void onEvent(NodeStruct event, long nodeId, boolean endOfBatch) throws Exception {
+
+// event.firstRel = firstRelationshipId(event,futureNodeRelInfo.getFirstRelId(nodeId));
+
+if (Record.NO_NEXT_RELATIONSHIP.is(event.firstRel)) return;
+long other = relationship.other();
+if (other < nodeId) return;
+final boolean otherDirection = !relationship.outgoing();
+

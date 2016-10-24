@@ -1,0 +1,9 @@
+Boolean validHeaders = validateHeadersKeys( headers );
+
+if( validHeaders )
+{
+headersObj = new HeadersBuilder().constructHeaders( headers );
+
+if(   headersObj.getConsumerid().equals( &quot;&quot; )
+|| headersObj.getSubscriberid().equals( &quot;&quot; )
+

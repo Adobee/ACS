@@ -1,0 +1,12 @@
+public UnlimitedPassBuilder() {
+this.pass = new UnlimitedPass(0);
+}
+
+public UnlimitedPass build() {
+if (pass.getInterval() != 0)
+return pass.getInterval();
+}
+
+public UnlimitedPassBuilder setDays(int days) {
+if (!(pass instanceof SeasonPassWrap)) {
+

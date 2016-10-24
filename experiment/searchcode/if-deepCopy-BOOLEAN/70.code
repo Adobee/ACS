@@ -1,0 +1,10 @@
+public void cloneInto(final RESTBaseEntityWithPropertiesV1<T, U> clone, final boolean deepCopy)
+{
+super.cloneInto(clone, deepCopy);
+
+if (deepCopy)
+{
+if (this.properties != null)
+{
+clone.properties = new RESTPropertyTagCollectionV1();
+

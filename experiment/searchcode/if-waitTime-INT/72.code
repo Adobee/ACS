@@ -1,0 +1,11 @@
+public class Executor implements Runnable {
+Environment env;
+
+private boolean isRunning;
+private int waitTime;
+
+public Executor(Environment env, int waitTime) {
+this.env = env;
+this.isRunning = false;
+this.waitTime = waitTime;
+

@@ -1,0 +1,11 @@
+public class GaussSeidel implements LinearEquationSolver {
+int dimension;
+int maxIterations;
+
+public GaussSeidel(int dimension, int maxIterations) {
+Arrays.fill(result, 0);
+
+for(int a = 0; a < maxIterations; a++) {
+for(int i = 0; i < dimension; i++) {
+float o = 0;
+

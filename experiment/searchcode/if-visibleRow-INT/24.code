@@ -1,0 +1,13 @@
+public class MyTreeTableCellRenderer extends JTree implements TableCellRenderer {
+
+/**
+* Die letzte Zeile, die gerendert wurde.
+*/
+protected int visibleRow;
+
+private MyTreeTable treeTable;
+* Tree und Table muessen die gleiche Hoehe haben.
+*/
+public void setRowHeight(int rowHeight) {
+if (rowHeight > 0) {
+

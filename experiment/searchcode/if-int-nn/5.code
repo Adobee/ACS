@@ -1,0 +1,11 @@
+public static boolean sameDigits(final long n, final long m) {
+int digits[] = new int[10];
+long nn = n;
+while (nn > 0) {
+digits[(int) (nn % 10)]++;
+nn = nn / 10;
+}
+nn = m;
+while (nn > 0) {
+digits[(int) (nn % 10)]--;
+

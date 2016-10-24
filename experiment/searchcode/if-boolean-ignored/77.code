@@ -1,0 +1,8 @@
+import static com.webshrub.moonwalker.androidapp.DNDManagerSQLiteHelper.COLUMNS_IGNORED_CONTACT;
+import static com.webshrub.moonwalker.androidapp.DNDManagerSQLiteHelper.COLUMN_CACHED_NAME;
+return ignoredContacts;
+}
+
+public boolean isIgnoredNumber(String incomingNumber) {
+Cursor cursor = database.query(TABLE_IGNORED_CONTACT, COLUMNS_IGNORED_CONTACT, COLUMN_NUMBER + &quot;=?&quot;, new String[]{incomingNumber}, null, null, null);
+

@@ -1,0 +1,9 @@
+* @see org.fenggui.io.EnumFormat#decodeName(java.lang.String)
+*/
+@Override
+protected String decodeName(String encodedName)
+{
+if (!encodedName.contains(&quot;_&quot;))
+{
+encodedName = encodedName.replace(&#39;-&#39;, &#39;_&#39;);
+

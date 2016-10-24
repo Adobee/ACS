@@ -1,0 +1,9 @@
+package gabewest.project2;
+
+public class BB {
+public double x0, y0;
+public double x1, y1;
+public BBOwner owner;
+public boolean intersects(double xx0, double yy0, double xx1, double yy1){
+if(xx0 >= x1 || yy0 >= y0 || xx1 <= x1 || yy1 <= y1)
+

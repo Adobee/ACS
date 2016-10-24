@@ -1,0 +1,10 @@
+int resultOffset) {
+// Average(x) + floor((Raw(x-bpp)+Prior(x))/2)
+int raw;
+
+// Average(x) + floor((Raw(x-bpp)+Prior(x))/2)
+int above;
+int colors = getColors();
+if (getBitsPerComponent() != 8) {
+// TODO 2 @ehk implement
+

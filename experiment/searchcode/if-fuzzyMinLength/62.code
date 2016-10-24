@@ -1,0 +1,7 @@
+public static FuzzyOptions randomFuzzyOptions() {
+final FuzzyOptions.Builder builder = FuzzyOptions.builder();
+if (randomBoolean()) {
+builder.setFuzzyMinLength(-randomIntBetween(1, Integer.MAX_VALUE));
+fail(&quot;fuzzyMinLength must be >= 0&quot;);
+} catch (IllegalArgumentException e) {
+

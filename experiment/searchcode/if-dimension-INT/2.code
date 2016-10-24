@@ -1,0 +1,13 @@
+package com.lck.toyrobot.model;
+
+public class Table
+{
+/** Table x dimension */
+private int dimensionX;
+
+/** Table y dimension */
+private int dimensionY;
+
+/**
+* Construct table with dimension
+

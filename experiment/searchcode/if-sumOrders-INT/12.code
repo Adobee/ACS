@@ -1,0 +1,9 @@
+private static DateFormat dateFormat = new DateFormat();
+
+public static void main(String[] args) throws Exception {
+if (args.length != 5) {
+System.err.println(&quot;Nutzung: Uebung2C <Pfad zur Orders.tbl> <Pfad zur Lineitems.tbl> <Orderstatus-Filter> <Shipdate-Filter Von im Format \&quot;YYYY-MM-DD\&quot;> <Shipdate-Filter Bis im Format \&quot;YYYY-MM-DD\&quot;>&quot;);
+final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
+
+DataSet<Tuple2<Long, Double>> summedOrders = sumOrders(ordersPfad, lineitemsPfad, orderStatusFilter, finalShipDateToFilter, finalShipDateFromFilter, env);
+

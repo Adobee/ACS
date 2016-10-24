@@ -1,0 +1,7 @@
+distanceFunction = new EuclideanDistanceFunction();
+}
+
+public Cluster cluster(List<Item> items) {
+List<Cluster> clusters = buildInitialClusters(items); // todo use sets/hashmaps instead of list
+if(clusters.size() == 1) { return clusters.get(0); }
+

@@ -1,0 +1,11 @@
+public final class Atan extends OperatorVisitor
+{
+public void visitAnyByte (ByteI b)
+{
+result_ = new AnyDouble(Math.atan(b.getValue()));
+}
+
+public void visitAnyChar (CharI c)
+{
+result_ = new AnyDouble(Math.atan(c.getValue()));
+

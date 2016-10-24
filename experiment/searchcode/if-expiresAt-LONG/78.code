@@ -1,0 +1,6 @@
+Cookie.parse(50000L, url, &quot;a=b; Max-Age=-1&quot;).expiresAt());
+assertEquals(Long.MIN_VALUE,
+Cookie.parse(50000L, url, &quot;a=b; Max-Age=0&quot;).expiresAt());
+assertEquals(Long.MIN_VALUE,
+Cookie.parse(50000L, url, &quot;a=b; Max-Age=-9223372036854775808&quot;).expiresAt());
+

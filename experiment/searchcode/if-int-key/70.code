@@ -1,0 +1,9 @@
+Will only work correctly on UK keyboards :/
+*/
+public class VirtualKeyboard implements KeyListener {
+private static final int[] keys = new int[] {
+public void keyPressed( KeyEvent ke ) {
+int key;
+key = get_key( ke.getKeyCode() );
+if( key >= 10 ) { /* Note */
+

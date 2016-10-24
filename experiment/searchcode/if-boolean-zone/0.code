@@ -1,0 +1,12 @@
+return business.exists() &amp;&amp; ZoneDao.search(business);
+}
+
+/**
+* @param zone
+* @return
+*/
+public static boolean load(Zone zone) {
+boolean loaded = false;
+if (zone.exists() &amp;&amp; ZoneDao.load(zone)) {
+if (zone.getLocation() != null) {
+

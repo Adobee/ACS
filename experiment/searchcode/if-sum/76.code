@@ -1,0 +1,10 @@
+public class Solution {
+public int minCost(int[][] costs) {
+int n = costs.length;
+if (n == 0) {
+return 0;
+}
+int[][] sum = new int[n][3];
+sum[0][0] = costs[0][0];
+sum[0][1] = costs[0][1];
+

@@ -1,0 +1,6 @@
+Object latestVersion = restResponse.evaluate(&quot;version.number&quot;);
+if (latestVersion == null) {
+throw new RuntimeException(&quot;elasticsearch version not found in the response&quot;);
+}
+if (version == null) {
+

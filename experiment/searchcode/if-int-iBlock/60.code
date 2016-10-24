@@ -1,0 +1,11 @@
+private ArrayList<HashMap<BlockPos, IBlockState>> memory;
+private int memoryIndex;
+
+public BlockCache() {
+cache = new HashMap<BlockPos, IBlockState>();
+memoryIndex = 0;
+}
+
+public IBlockState get(int x, int y, int z) {
+return cache.get(new BlockPos(x, y, z));
+

@@ -1,0 +1,9 @@
+List<TextLongTuple> tempCache = new ArrayList<TextLongTuple>();
+long sumFreq = 0;
+for(TextLongTuple pair:value) {
+TextLongTuple copy = new TextLongTuple(pair.first.toString(),pair.second.get());
+tempCache.add(copy);
+sumFreq += pair.second.get();
+}
+for(TextLongTuple pair:tempCache) {
+

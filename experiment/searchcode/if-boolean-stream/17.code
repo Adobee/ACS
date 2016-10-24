@@ -1,0 +1,10 @@
+this.debugStream = debugStream;
+}
+
+@Override
+public void logMessage(String message, boolean newline) {
+if (newline) logStream.println(message);
+public void errorMessage(String message, boolean newline) {
+if (newline) errorStream.println(message);
+else errorStream.print(message);
+

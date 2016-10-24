@@ -1,0 +1,7 @@
+StringBuilder builder = new StringBuilder();
+if (ownerType != null) {
+builder.append(ownerType instanceof Class ? ((Class<?>)ownerType).getName() : ownerType.toString());
+int hashCode = 7;
+if (ownerType != null) {
+hashCode = 31 * hashCode + ownerType.hashCode();
+

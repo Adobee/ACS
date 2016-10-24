@@ -1,0 +1,7 @@
+public String transform(ObjectAdapter anOriginal) {
+String retVal = &quot;&quot;;
+if (anOriginal.isKeyAdapter()) {
+retVal = anOriginal.getRealObject().toString();
+} else  {
+retVal = ((ReferenceAdapter) anOriginal).getReferentAdapter().getReference();
+

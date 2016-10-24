@@ -1,0 +1,9 @@
+this.factor = (float) (factor*1.5);
+}
+
+@Override
+public float getInterpolation(float input) {
+if (input < 0.5)
+return (float) (0.5 * a(input * 2.0, factor));
+else
+

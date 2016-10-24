@@ -1,0 +1,6 @@
+public String buildUrl(ScmRepository repository, String url, String organizationIdentifier) {
+if (AuthenticationHelper.isAnonymous() || !repository.getScmLocation().equals(ScmLocation.CODE2CLOUD)) {
+for (String protocol : Arrays.asList(&quot;http://&quot;, &quot;https://&quot;, &quot;ssh://&quot;)) {
+if (url.startsWith(protocol)) {
+String encodedUserName = com.google.gwt.http.client.URL.encodePathSegment(ProfileGinjector.get
+

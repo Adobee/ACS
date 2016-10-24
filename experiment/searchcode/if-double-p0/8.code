@@ -1,0 +1,9 @@
+// Points de controle de la coubre de Bezier
+private static double P0[] = new double[2];
+private static double P1[] = new double[2];
+public static int KP = 20;
+public static int KV = 10; // Action derivee
+
+
+public void set_points(double pP0[], double pP1[], double pP2[], double pP3[]) {
+

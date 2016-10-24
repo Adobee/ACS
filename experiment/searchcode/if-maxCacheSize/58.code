@@ -1,0 +1,11 @@
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.stream.Stream;
+
+public class CacheLRU<K, V> implements CacheIF<K, V> {
+private int maxCacheSize = 1024;
+if (cache.get(k) != null) {
+return;
+}
+
+if (currentCacheSize.incrementAndGet() <= maxCacheSize) {
+

@@ -1,0 +1,7 @@
+*            The upper bound as set
+* @return Returns bounds for lambda
+*/
+public static double[] getLambdaBounds(double[] startPoint,
+double[] direction, double[] lowerBound, double[] upperBound) {
+double minUpper = 0;
+

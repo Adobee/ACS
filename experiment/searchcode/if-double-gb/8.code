@@ -1,0 +1,13 @@
+public static final Long GB = MB * KB;
+
+private Util() {}
+
+public static String toString(Long freeMemory){
+if(freeMemory / GB == 0l){
+return freeMemory.doubleValue()/MB + &quot; MB&quot;;
+}else{
+return freeMemory.doubleValue()/GB + &quot; GB&quot;;
+}
+}
+}
+

@@ -1,0 +1,9 @@
+@Override
+public final String setRequestURL(String keyword) {
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(&quot;http://food2fork.com/api/search?key=&quot; + api_key +
+&quot;&amp;q=&quot; + keyword + &quot;&amp;sort=r&quot;).newBuilder();
+
+String requestURL = urlBuilder.build().toString();
+System.out.println(requestURL);
+

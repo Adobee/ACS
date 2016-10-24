@@ -1,0 +1,15 @@
+package go4;
+
+public class Complex {
+
+public double real;
+public double imaginary;
+
+public Complex(double r, double i)
+{
+this.real = r;
+this.imaginary = i;
+
+}
+public Complex(double realPart)
+

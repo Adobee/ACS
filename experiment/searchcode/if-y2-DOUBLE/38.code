@@ -1,0 +1,9 @@
+// Keep quad positive, helps calculating if a point is inside
+if (y2 < y1) {
+double tmp = y1;
+y1 = y2;
+y2 = tmp;
+}
+if (x2 < x1) {
+double tmp = x1;
+

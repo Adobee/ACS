@@ -1,0 +1,7 @@
+private Direction _previousDirection;
+private double _changeDirectionModifer;
+
+/// <param name=&quot;changeDirectionModifier&quot;>Value from 0.0 to 1.0.  Percentage chance of changing direction.</param>
+public DirectionPicker(IRandom random, Direction previousDirection, double changeDirectionModifier) {
+_random = random;
+

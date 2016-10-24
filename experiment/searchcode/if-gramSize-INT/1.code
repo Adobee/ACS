@@ -1,0 +1,12 @@
+public class Shingler extends EvalFunc<DataBag> {
+private int gramSize;
+
+public Shingler(int gramSize) {
+this.gramSize = gramSize;
+}
+
+public Shingler(String gramSize) {
+// TODO we can use suffix tree to avoid substring eash k-subword and using hashset
+for (int i = 0; i + gramSize - 1 < document.length(); i++) {
+String shingl = document.substring(i, i + gramSize);
+

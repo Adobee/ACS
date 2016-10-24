@@ -1,0 +1,6 @@
+LOG.info((new StringBuilder()).append(&quot;Testing non interfered capacity. [N = &quot;).append(usersPerCell).append(&quot;, deltaN = &quot;).append(deltaN).append(&quot;]&quot;).toString());
+if(nonInterferedCapacityListener != null)
+deltaN = (int)Math.ceil((double)deltaN / 2D);
+usersPerCell -= deltaN;
+if(usersPerCell > 0)
+

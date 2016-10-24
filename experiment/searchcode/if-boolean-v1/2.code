@@ -1,0 +1,14 @@
+private int level;
+
+public Battery(int level){
+this.level = level;
+}
+boolean empty(){
+if(level == 0)return true;
+Vehicle v1 = new Vehicle(new Battery(100));
+if(v1.start()){
+System.out.println(&quot;v1 start&quot;);
+}
+
+v1 = new Vehicle(new Battery(0));
+

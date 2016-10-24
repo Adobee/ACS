@@ -1,0 +1,9 @@
+private final int threadCount;
+private final int iterationCount;
+
+
+public MultithreadedStressTester(int iterationCount) {
+public MultithreadedStressTester(int threadCount, int iterationCount) {
+this.threadCount = threadCount;
+this.iterationCount = iterationCount;
+

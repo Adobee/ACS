@@ -1,0 +1,10 @@
+void recordUpdated( String key );
+
+void recordOverwritten( String key );
+
+boolean isRecording();
+* @return the report maker; never null
+*/
+public static ReportBuilder create( boolean captureResults ) {
+if (!captureResults) return EMPTY_REPORT_BUILDER;
+

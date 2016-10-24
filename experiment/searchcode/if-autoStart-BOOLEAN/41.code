@@ -1,0 +1,5 @@
+SharedPreferences sharedPreferences = context.getSharedPreferences(context.getPackageName(), Context.MODE_PRIVATE); //私有数据
+boolean autostart=sharedPreferences.getBoolean(&quot;autostart&quot;,false);
+if(autostart) {
+Intent intent1 = new Intent(context, MainActivity.class);
+

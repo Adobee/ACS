@@ -1,0 +1,7 @@
+Array.ArrayType type = Array.ArrayType.OBJECT;
+
+if(reflected_elements[0].getType().isArray())
+type = Array.ArrayType.ARRAY;
+if(reflected_elements[0].getNative() instanceof String)
+type = Array.ArrayType.STRING;
+

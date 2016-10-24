@@ -1,0 +1,10 @@
+public class HtmlStripCharFilterFactory extends AbstractCharFilterFactory {
+
+private final ImmutableSet<String> escapedTags;
+
+private final int readAheadLimit;
+
+@Inject public HtmlStripCharFilterFactory(Index index, @IndexSettings Settings indexSettings, @Assisted String name, @Assisted Settings settings) {
+this.readAheadLimit = settings.getAsInt(&quot;read_ahead&quot;, HTMLStripCharFilter.DEFAULT_READ_AHEAD);
+String[] escapedTags = settings.getAsArray(&quot;escaped_tags&quot;);
+

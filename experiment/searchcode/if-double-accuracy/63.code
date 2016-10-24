@@ -1,0 +1,12 @@
+* The time in witch the game was completed.
+*/
+private int timeInMiliseconds;
+
+/**
+* Accuracy achieved in game.
+*/
+private double accuracy;
+public Score(int timeInMiliseconds, double accuracy)
+throws IllegalArgumentException{
+if(timeInMiliseconds < 0) {
+

@@ -1,0 +1,13 @@
+public final byte[] buffer;
+private int bufferLimit;
+
+public Client(Socket connection) {
+this.connection = connection;
+buffer = new byte[64];
+bufferLimit = 0;
+}
+
+public boolean fillBuffer(int min) {
+if (closed)
+return false;
+

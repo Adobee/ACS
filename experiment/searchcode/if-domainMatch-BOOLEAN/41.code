@@ -1,0 +1,7 @@
+private boolean verify(String host, javax.security.cert.X509Certificate[] certs) {
+boolean verifyHostname = true;
+boolean verifyExpiration = false;
+if (this.https != null) {
+String[] keyVal = token.split(&quot;=&quot;);
+if(keyVal.length > 1 &amp;&amp; keyVal[0].equals(&quot;CN&quot;) &amp;&amp; domainMatch(host, keyVal[1])) {
+

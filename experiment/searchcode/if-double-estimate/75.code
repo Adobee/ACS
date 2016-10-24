@@ -1,0 +1,6 @@
+public void setEstimates(double le, double ue){
+if (le > Double.NEGATIVE_INFINITY) lowerEstimate = le;
+else lowerEstimate = getXScale(0);
+if (ue < Double.POSITIVE_INFINITY) upperEstimate = ue;
+else upperEstimate = getXScale(getSize().width);
+

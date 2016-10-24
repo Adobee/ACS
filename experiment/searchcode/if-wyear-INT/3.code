@@ -1,0 +1,10 @@
+// source code copied from MFC 4.21 and modified.
+
+int wYear = getYear() + 1900;
+int wMonth = getMonth() + 1;
+int wDay = getDate();
+boolean bLeapYear = ((wYear &amp; 3) == 0)
+&amp;&amp; ((wYear % 100) != 0 || (wYear % 400) == 0);
+
+int nDaysInMonth = rgMonthDays[wMonth] - rgMonthDays[wMonth - 1]
+

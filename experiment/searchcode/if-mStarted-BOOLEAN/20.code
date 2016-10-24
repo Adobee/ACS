@@ -1,0 +1,6 @@
+public class IHRInputStreamBlocking extends IHRInputStream {
+protected boolean                               mStarted;
+
+public synchronized void append( byte[] inBuffer ) {
+if ( ! mStarted || inBuffer == null || inBuffer.length <= 0 ) return;
+

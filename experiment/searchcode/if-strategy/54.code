@@ -1,0 +1,12 @@
+public Strategy first() {
+return Strategy.C;
+}
+
+@Override
+public Strategy next(Strategy Answer) {
+if(Answer == Strategy.D ){
+if(last == Strategy.D){
+cautious = false;
+}else{
+cautious = !cautious;
+

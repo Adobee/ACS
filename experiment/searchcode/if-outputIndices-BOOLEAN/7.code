@@ -1,0 +1,12 @@
+public static void assertEvalEnergyBool(FactorFunction function, double expectedEnergy, boolean ... values)
+{
+Value[] discretes = new Value[values.length];
+for (int i = values.length; --i>=0;)
+assertEquals(0.0, function.evalEnergy(testCase), 0.0);
+assertEquals(1.0, function.eval(testCase), 0.0);
+
+
+if (prevTestCase != null)
+{
+boolean outputsDiffer = false;
+

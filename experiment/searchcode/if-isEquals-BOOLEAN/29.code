@@ -1,0 +1,10 @@
+public boolean equals(Object o) {
+boolean isEquals = false;
+
+if (o instanceof FloatingTaskData) {
+FloatingTaskData data = (FloatingTaskData) o;
+&amp;&amp; this.isCompleted == data.isCompleted();
+
+if (this.hasCategory() &amp;&amp; data.hasCategory()) {
+isEquals = isEquals &amp;&amp; this.category.equals(data.getCategory());
+

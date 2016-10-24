@@ -1,0 +1,10 @@
+final int numTerms;
+if (discountOverlaps)
+numTerms = state.getLength() - state.getNumOverlap();
+else
+//		float _lengthNorms = ((float) (1.0 / Math.sqrt(numTerms)));
+float _lengthNorms = 1f;
+
+if(numTerms>1)
+_lengthNorms = ((float) (1.0 / Math.cbrt(numTerms+1)));
+

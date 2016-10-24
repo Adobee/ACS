@@ -1,0 +1,13 @@
+public Goal find(String goal)
+{
+List<Goal> result = dao.findGoal(goal);
+if (result.size() ==1)
+public void save(Goal goal) {
+
+Goal oldGoal = find(goal.getName());
+if (oldGoal != null)
+dao.update(goal);
+else dao.insert(goal);
+}
+}
+

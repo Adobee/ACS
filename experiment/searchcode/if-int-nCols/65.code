@@ -1,0 +1,17 @@
+package com.bitspedia.servlets;
+
+public class Matrix {
+
+private int nrows;
+private int ncols;
+return nrows == ncols;
+}
+
+public int size() {
+if (isSquare())
+return nrows;
+return -1;
+}
+
+public Matrix multiplyByConstant(double constant) {
+

@@ -1,0 +1,14 @@
+BRIGHTCOVE	(&quot;8&quot;),
+YOUTUBE		(&quot;13&quot;),
+AKAMAI		(&quot;11&quot;);
+
+private String id;
+
+VideoID(String id) {
+return id;
+}
+
+public static VideoID getVideoID(String id) {
+if (id != null) {
+for (VideoID i : VideoID.values()) {
+

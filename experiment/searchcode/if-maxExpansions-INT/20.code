@@ -1,0 +1,8 @@
+} else if (parseContext.getParseFieldMatcher().match(currentFieldName, MAX_EXPANSIONS_FIELD)) {
+maxExpansions = parser.intValue();
+} else if (parseContext.getParseFieldMatcher().match(currentFieldName, TRANSPOSITIONS_FIELD)) {
+query = fieldType.fuzzyQuery(value, fuzziness, prefixLength, maxExpansions, transpositions);
+}
+if (query == null) {
+int maxEdits = fuzziness.asDistance(BytesRefs.toString(value));
+

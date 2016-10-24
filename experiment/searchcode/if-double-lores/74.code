@@ -1,0 +1,13 @@
+s1 = s1 + &quot; (&quot; + Potion.getPotionDurationString(potioneffect, durationFactor) + &quot;)&quot;;
+}
+
+if (potion.isBadEffect())
+{
+lores.add(TextFormatting.RED + s1);
+d1 = attributemodifier2.getAmount() * 100.0D;
+}
+
+if (d0 > 0.0D)
+{
+lores.add(TextFormatting.BLUE + I18n.translateToLocalFormatted(&quot;attribute.modifier.plus.&quot; + attributemodifier2.getOperation(), new Object[] {ItemStack.DECIMALFORMAT.format(d1), I18n.translateToLocal(&quot;attribute.name.&quot; + (String)tuple.getFirst())}));
+

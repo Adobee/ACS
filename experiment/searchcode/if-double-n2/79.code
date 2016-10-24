@@ -1,0 +1,6 @@
+Scanner input = new Scanner(System.in);
+double n1 = input.nextDouble();
+double n2 = input.nextDouble();
+double n3 = input.nextDouble();
+if ((n1 <= n2  &amp;&amp; n2 < n3) || (n1 < n2 &amp;&amp; n2 <= n3) || (n1 > n2 &amp;&amp; n2 >= n3) || (n1 >= n2 &amp;&amp; n2 > n3))
+

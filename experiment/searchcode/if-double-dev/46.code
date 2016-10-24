@@ -1,0 +1,9 @@
+private long doubleTouchTime = -1;
+private boolean doubleDoubleTouch = false;
+
+@Override
+public void onDoubleTouch() {
+if (doubleDoubleTouch) {
+long time = System.currentTimeMillis();
+if (time - doubleTouchTime < 1000) {
+

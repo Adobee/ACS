@@ -1,0 +1,14 @@
+public static final float HEIGHT = Assets.powerOutline.getRegionHeight();
+
+InputHandler input;
+
+int timeMouseDown;
+
+float power;
+float maxPower = 1000F;
+
+public PowerBar(float x, float y, InputHandler input) {
+power -= maxPower * delta;
+if(power < 0) power = 0;
+timeMouseDown = (int) ((power / maxPower) * 63) - 31;
+

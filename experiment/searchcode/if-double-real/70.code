@@ -1,0 +1,12 @@
+package com.arrayfire;
+
+public class DoubleComplex {
+private double real;
+private double imag;
+
+public double real() {
+return real;
+}
+
+public double imag() {
+

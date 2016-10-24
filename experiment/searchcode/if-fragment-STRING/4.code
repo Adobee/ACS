@@ -1,0 +1,6 @@
+private static BaseFragmentController instance;
+private Map<String, Fragment> mFragmentDatas = new HashMap<String, Fragment>();
+public static synchronized BaseFragmentController getInstance() {
+if (instance == null) {
+instance = new BaseFragmentController();
+

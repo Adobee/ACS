@@ -1,0 +1,20 @@
+static void dpdec(NumberChunk a, NumberChunk b)
+{
+if (a.a != 0.0)
+{
+double t1 = 0.3010299956639812 * a.n + log10(Math.abs(a.a));
+b.n = (int)t1;
+
+if (t1 < 0.0) b.n -= 1;
+
+b.a = fSign (Math.pow(10.0, (t1 - b.n)), a.a);
+}
+else
+{
+b.a = 0.0;
+b.n = 0;
+}
+}
+
+}
+

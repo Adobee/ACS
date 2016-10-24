@@ -1,0 +1,7 @@
+public void addBuild(SBuild build) {
+//noinspection ConstantConditions
+if ((build.getBranch() == null) || !build.getBranch().getName().equals(branch.getName())) {
+updateLatestStartDate(build);
+
+if (buildTypeWithLatestBuildViewState.containsKey(build.getBuildType())) {
+

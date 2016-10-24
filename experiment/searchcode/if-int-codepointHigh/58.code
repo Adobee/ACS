@@ -1,0 +1,8 @@
+private final int below;
+private final int above;
+private final boolean between;
+* @return the newly created {@code NumericEntityEscaper} instance
+*/
+public static NumericEntityEscaper outsideOf(int codepointLow, int codepointHigh) {
+return new NumericEntityEscaper(codepointLow, codepointHigh, false);
+

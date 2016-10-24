@@ -1,0 +1,5 @@
+public static SearchStrategy getStrategy(SearchBuilder searchBuilder, HttpServletRequest request) {
+if (SearchStrategyType.SOLR.toString().equals(searchBuilder.getStrategy())) {
+return solrStrategy;
+} else if (SearchStrategyType.HQL.toString().equals(searchBuilder.getStrategy())) {
+

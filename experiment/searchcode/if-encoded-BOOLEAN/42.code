@@ -1,0 +1,7 @@
+public ByteBuffer decode(ByteBuffer encoded, DecodingState state) {
+if (encoded.hasArray()) {
+return decodeWithHeap(encoded, state);
+private static ByteBuffer decodeTextAsBinary(ByteBuffer encoded, DecodingState state, boolean decodeAsUTF8,
+boolean unescapeZeroAndNewline) {
+if (encoded.hasArray()) {
+

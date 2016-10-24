@@ -1,0 +1,8 @@
+this.filter = filter;
+this.visitor = visitor;
+}
+
+public boolean visit(IMediaResource resource, IProgressMonitor mon) {
+if (filter.accept(resource)) {
+return visitor.visit(resource, mon);
+

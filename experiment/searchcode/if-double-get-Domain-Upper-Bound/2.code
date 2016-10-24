@@ -1,0 +1,9 @@
+builder.append(&quot;(&quot;);
+}
+
+builder.append(lowerBound.getBoundValue().doubleValue()).append(&quot;;&quot;)
+.append(upperBound.getBoundValue().doubleValue());
+
+if (BoundType.INCLUSIVE.equals(upperBound.getBoundType())) {
+builder.append(&quot;]&quot;);
+

@@ -1,0 +1,9 @@
+## Licensing requirements will be met:
+## http://www.opensource.org/licenses/gpl-license.php
+##
+## If you are unsure which license is appropriate for your use (for
+LinkRelevance[] linkRelevance = null;
+try {
+LinkNeighborhood[] lns = page.getLinkNeighboor();
+linkRelevance = new LinkRelevance[lns.length];
+

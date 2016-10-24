@@ -1,0 +1,9 @@
+private double[] regcf(int nreq) throws ModelSpecificationException {
+int nextr;
+if (nreq < 1) {
+throw new ModelSpecificationException(LocalizedFormats.NO_REGRESSORS);
+int[] series;
+if (iExclude > 0) {
+int j = 0;
+series = new int[variablesToInclude.length - iExclude];
+

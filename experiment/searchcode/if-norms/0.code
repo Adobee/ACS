@@ -1,0 +1,9 @@
+public static Byte getNorm(String field, String ID) throws Exception{
+
+FieldNorms idNorms = _norms.get(field);
+if((idNorms == null) || (!idNorms.isInUse())){
+idNorms = NormsTableSupport.getNorms(field);
+if(idNorms == null)
+return null;
+_norms.put(field, idNorms);
+

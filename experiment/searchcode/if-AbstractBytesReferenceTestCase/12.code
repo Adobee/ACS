@@ -1,0 +1,7 @@
+public class PagedBytesReferenceTests extends AbstractBytesReferenceTestCase {
+
+protected BytesReference newBytesReference(int length) throws IOException {
+// verify that array() is cheap for small payloads
+if (sizes[i] <= PAGE_SIZE) {
+BytesRef page = getSinglePageOrNull(pbr);
+

@@ -1,0 +1,5 @@
+HttpSession session = request.getSession();
+if (session.getAttribute(&quot;operButtons&quot;)!=null){
+Map<String,List<OperButton>> operButtons = (HashMap<String,List<OperButton>>)session.getAttribute(&quot;operButtons&quot;);
+if (operButtons!=null &amp;&amp; operButtons.containsKey(funcId)){
+

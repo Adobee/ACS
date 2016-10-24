@@ -1,0 +1,7 @@
+public class Solution {
+public void nextPermutation(int[] num) {
+int n = num.length;
+for(int i=n-2; i>=0; i--) {
+if(num[i] < num[i+1]) {
+int j = n-1;
+

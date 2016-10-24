@@ -1,0 +1,9 @@
+final INode positiveOrNegative = lhsUnuary.nodeChoice.choice;
+
+if (positiveOrNegative instanceof lhsPatternBind) {
+final lhsPatternBind lhsPatternBind = (lhsPatternBind) positiveOrNegative;
+final INode conjunctiveOrSimple = lhsNot.nodeChoice.choice;
+
+if (conjunctiveOrSimple instanceof lhsPatternBind) {
+final lhsPatternBind lhsPatternBind = (lhsPatternBind) conjunctiveOrSimple;
+

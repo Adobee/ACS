@@ -1,0 +1,11 @@
+void bfs(){
+Queue<P> q=new LinkedList<P>();
+q.offer(new P(0,0,1));
+while(!q.isEmpty()){
+P np=q.poll();
+if(np.x==n-1 &amp;&amp; np.y==m-1){
+ans=np.k;
+return;
+}
+if(np.x+2<n &amp;&amp; maze[np.y][np.x+1]!=1){
+

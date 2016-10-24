@@ -1,0 +1,15 @@
+package trees;
+
+public class MaxWidth {
+
+public int maxDepth(Tree root){
+if(root == null) return 0;
+int depth = maxDepth(root);
+int height[] = new int[depth];
+int max = 0;
+maxWidth(root,height,0);
+for(int i:height)if(i>max) max = i;
+return max;
+}
+}
+

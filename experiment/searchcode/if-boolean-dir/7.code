@@ -1,0 +1,13 @@
+public Arrow(MazeInterface maze, Pos pos, Dir dir) {
+super(maze, pos);
+// Arrows can not have no direction. Give a sane default.
+if (dir == Pos.Dir.STILL) dir = Pos.Dir.SOUTH;
+return dir;
+}
+
+/**
+* @param dir the dir to set
+*/
+public void setDir(Dir dir) {
+if (dir == Dir.STILL) dir = Dir.SOUTH;
+

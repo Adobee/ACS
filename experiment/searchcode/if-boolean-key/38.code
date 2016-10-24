@@ -1,0 +1,10 @@
+public class Key {
+
+private int key, keySum;
+
+public Key(int key, boolean command, boolean alt, boolean shift) {
+this.key = key;
+
+if (command) {
+if (System.getProperty(&quot;os.name&quot;).startsWith(&quot;Mac&quot;)) keySum += InputEvent.META_DOWN_MASK;
+

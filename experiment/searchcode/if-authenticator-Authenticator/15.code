@@ -1,0 +1,14 @@
+import android.content.Intent;
+import android.os.IBinder;
+
+public class AuthenticatorService extends Service {
+
+private Authenticator authenticator;
+private Authenticator getAuthenticator() {
+if (authenticator == null)
+authenticator = new Authenticator(this);
+return authenticator;
+}
+
+}
+

@@ -1,0 +1,12 @@
+private Dimensions dimensions;
+
+public void resize() {
+if (fixedWidth != null) {
+setWidth(fixedWidth);
+if (fixedHeight != null) {
+setHeight((int) Math.round(fixedWidth * aspectRatio));
+} else {
+setHeight(fixedWidth);
+}
+} else if (fixedHeight != null) {
+

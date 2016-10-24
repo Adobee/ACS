@@ -1,0 +1,9 @@
+private IType inferElementType(Context context) {
+if(entries.isEmpty())
+return MissingType.instance();
+IType lastType = null;
+IType elemType = e.getValue().check(context);
+if(lastType==null)
+lastType = elemType;
+else if(!lastType.equals(elemType)) {
+

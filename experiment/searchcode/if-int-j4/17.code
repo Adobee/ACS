@@ -1,0 +1,9 @@
+public boolean generate(World world, Random random, int i, int j, int k)
+{
+int l = random.nextInt(2);
+if(field_35266_a >= 0)
+for(int i4 = k - i3; i4 <= k + i3; i4++)
+{
+int j4 = 5;
+if(l3 == i - i3)
+

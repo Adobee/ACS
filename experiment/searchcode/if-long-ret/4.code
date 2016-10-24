@@ -1,0 +1,9 @@
+long ret = 0;
+long x = 0, y = 0;
+for (long i = 1; i <= square; ++i) {
+long other = M / square;
+long b = Math.min(other, H);
+long c = Math.min(i, H);
+long d = Math.min(i, W);
+if (a * b > ret) {
+

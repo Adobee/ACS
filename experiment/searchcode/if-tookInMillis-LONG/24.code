@@ -1,0 +1,12 @@
+private int quorumShards;
+
+private int successCount;
+
+private long tookInMillis;
+
+private List<ActionRequest<?>> actionRequests = new LinkedList<ActionRequest<?>>();
+super.writeTo(out);
+out.writeLong(tookInMillis);
+out.writeLong(ingestId);
+if (shardId == null) {
+

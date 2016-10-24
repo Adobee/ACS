@@ -1,0 +1,10 @@
+package net.metainf.asm.analyzer;
+
+import net.metainf.asm.analyzer.strategy.*;
+
+import java.util.HashMap;
+public static AnalyzerEnum parse(String string) {
+AnalyzerEnum result = cache.get(string.toUpperCase());
+if (result == null) {
+throw new IllegalArgumentException(&quot;Can&#39;t find Format named &quot; + string);
+

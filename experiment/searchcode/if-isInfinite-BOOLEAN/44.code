@@ -1,0 +1,10 @@
+@XmlSchemaType(name = &quot;nonNegativeInteger&quot;)
+private Integer value;
+
+@XmlAttribute
+private Boolean isInfinite;
+public XmlUnlimitedInteger(final UnlimitedInteger multiplicity) {
+this.isInfinite = false;
+if (multiplicity != null) {
+this.isInfinite =  multiplicity.isInfinite();
+

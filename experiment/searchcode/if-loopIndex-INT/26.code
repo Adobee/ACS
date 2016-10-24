@@ -1,0 +1,8 @@
+public static int compareVersion(String a, String b) {
+String[] A = a.split(&quot;\\.&quot;);
+String[] B = b.split(&quot;\\.&quot;);
+int loopIndex = A.length > B.length ? B.length:A.length;
+double bInt = Double.parseDouble(B[0]);
+if(aInt != bInt){
+return aInt > bInt ? 1 : -1;
+

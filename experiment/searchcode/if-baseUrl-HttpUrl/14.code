@@ -1,0 +1,12 @@
+private boolean questMark = true;
+
+public HttpUrl(String baseUrl) {
+this.url = new StringBuilder().append(baseUrl);
+}
+
+public HttpUrl(String scheme, String domain, String basePath) {
+public HttpUrl query(String name, Long value) {
+prepareQuery();
+this.url.append(name).append(&#39;=&#39;);
+if (value != null) {
+

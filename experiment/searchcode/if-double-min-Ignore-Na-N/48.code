@@ -1,0 +1,7 @@
+private void updateBoundsForAddedItem(XYDataItem item) {
+double x = item.getXValue();
+this.minX = minIgnoreNaN(this.minX, x);
+private double minIgnoreNaN(double a, double b) {
+if (Double.isNaN(a)) {
+return b;
+

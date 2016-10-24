@@ -1,0 +1,12 @@
+context.registerReceiver(receiver, new IntentFilter(ACTION));
+sReceiverMap.put(context, receiver);
+}
+
+public static void unregister(Context context) {
+if( sReceiverMap == null ) {
+MessageBroadcastReceiver receiver = sReceiverMap.remove(context);
+if( receiver != null ) {
+context.unregisterReceiver(receiver);
+}
+if( sReceiverMap.isEmpty() ) {
+

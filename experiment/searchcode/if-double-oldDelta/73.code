@@ -1,0 +1,9 @@
+double x2 = x0;
+double y2 = y0;
+double oldDelta = x2 - x1;
+int i = 0;
+return result;
+}
+if (FastMath.abs(oldDelta) <
+FastMath.max(relativeAccuracy * FastMath.abs(x1), absoluteAccuracy)) {
+

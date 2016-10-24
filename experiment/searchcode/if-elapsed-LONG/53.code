@@ -1,0 +1,10 @@
+public static long stop() {
+stopTime = System.currentTimeMillis();
+running = false;
+long elapsedTime = getElapsedTime();
+reset();
+public static long getElapsedTimeSeconds() {
+long elapsed;
+if (running) {
+elapsed = ((System.currentTimeMillis() - startTime) / 1000);
+

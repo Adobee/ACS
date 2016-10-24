@@ -1,0 +1,8 @@
+this.direction = direction;
+}
+
+public double getAngle(){
+if(this.equals(Direction.LEFT)) return 180;
+if(this.equals(Direction.RIGHT)) return 0;
+if(this.equals(Direction.UP)) return 270;
+

@@ -1,0 +1,10 @@
+package com.usda.fmsc.twotrails.objects;
+
+public class PointD {
+public double X;
+public double Y;
+
+public PointD(double X, double Y){
+this.X = X;
+this.Y = Y;
+

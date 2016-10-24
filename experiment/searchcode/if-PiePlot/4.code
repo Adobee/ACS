@@ -1,0 +1,7 @@
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.labels.StandardPieSectionLabelGenerator;
+import org.jfree.chart.plot.PiePlot;
+key=iter.next();
+if(i<colors.length){
+pieplot.setSectionPaint(key, colors[i]);
+

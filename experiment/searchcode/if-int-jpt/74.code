@@ -1,0 +1,7 @@
+protected String transform(Boolean v) {
+if (v != null) {
+String defaultStringValue = v.booleanValue() ? JptCommonUiMessages.BOOLEAN_TRUE : JptCommonUiMessages.BOOLEAN_FALSE;
+private ImageDescriptor getImageDescriptor(ClassRef classRef) {
+if (classRef.getJavaManagedType() == null) {
+return JptJpaUiImages.NULL_TYPE_MAPPING;
+

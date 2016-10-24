@@ -1,0 +1,6 @@
+* Instantiate the Listeners object, it has to be followed by startListeners() in order to start listening all events
+* @throws ListenersException	An exception is raised if we want to instantiate listeners when they are already instantiated/listening
+public static void instanciateListeners(TaupeGunPlugin plugin) throws ListenersException{
+
+if (Listeners.getStatus() == EnumListenersStatus.NOT_INSTANCIATED){
+

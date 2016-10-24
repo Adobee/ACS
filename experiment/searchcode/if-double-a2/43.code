@@ -1,0 +1,10 @@
+double diskriminante = Math.pow(p / 2, 2) - q;
+
+if (diskriminante < 0) {
+return new double[]{};
+}
+
+double x1 = -p / 2 + Math.sqrt(diskriminante);
+if (diskriminante == 1) {
+return new double[]{x1};
+

@@ -1,0 +1,8 @@
+final long value = (long) middle * middle;
+
+if (value < target)
+{
+left = middle + 1;
+}
+else if (value > target)
+

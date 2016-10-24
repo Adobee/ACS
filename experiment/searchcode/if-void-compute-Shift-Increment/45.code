@@ -1,0 +1,14 @@
+slider.adjustValue(slider.getMax());
+}
+
+void incrementValue() {
+final Slider slider = getControl();
+// RT-8634 If snapToTicks is true and block increment is less than
+slider.increment();
+}
+}
+
+// Used only if snapToTicks is true.
+double computeIncrement() {
+final Slider slider = getControl();
+

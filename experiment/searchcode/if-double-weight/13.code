@@ -1,0 +1,11 @@
+
+public class ShippingCharges {
+private double weight;
+
+public ShippingCharges(double weight) {
+this.weight = weight;
+}
+
+public double getShippingCharge(double distance) {
+double shipRate;
+

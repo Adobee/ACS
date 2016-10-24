@@ -1,0 +1,10 @@
+public class CachedShopDaoImpl implements CachedShopDao {
+
+@Override
+public void updateShops(Object... shops) {
+Shop shop;
+CachedShop cachedShop;
+String id;
+for (Object shop1 : shops) {
+shop = (Shop) shop1;
+

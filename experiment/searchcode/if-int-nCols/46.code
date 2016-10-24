@@ -1,0 +1,8 @@
+public void calculate(int _nrows, int _ncols, String _img1, String _img2) {
+int nrows, ncols;
+int img1[][], img2[][];
+ncols = _ncols;
+img1 = new int[nrows][ncols];
+img2 = new int[nrows][ncols];
+ArrayIO.readByteArray(_img1, img1, nrows, ncols);
+

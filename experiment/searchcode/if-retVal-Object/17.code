@@ -1,0 +1,11 @@
+synchronized (syncObject) {
+if (!isInitialized) {
+theContext = context;
+isInitialized = true;
+}
+retVal = isInitialized;
+boolean retVal = false;
+synchronized (syncObject) {
+if (isInitialized) {
+theContext = null;
+

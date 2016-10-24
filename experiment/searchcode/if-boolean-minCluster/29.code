@@ -1,0 +1,12 @@
+curDistance = countDistance(cluster.clo,cluster.cla,lo,la);
+if(curDistance < minDistance){
+minDistance  = curDistance;
+minCluster = cluster;
+}
+}
+
+if(minDistance < this.maxGridSize){
+minCluster.addPoint(pInfo);
+}else{
+cluster = new Cluster();
+

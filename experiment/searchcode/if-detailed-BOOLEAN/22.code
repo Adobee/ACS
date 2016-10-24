@@ -1,0 +1,11 @@
+private final int maxLevelForDetailedOutput;
+private boolean lastNodeWasDetailed;
+
+public MinimalOutputCallback(final int maxLevelForDetailedOutput) {
+public void nodeTraversed(final Document doc, final Node node, final int level) {
+if (!(node instanceof Element)) {
+return;
+}
+
+if (level < maxLevelForDetailedOutput) {
+

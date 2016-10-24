@@ -1,0 +1,8 @@
+private static Request makeRequest(String apiKey, String userKey, File file, String password, String updateDescription, boolean isPublishToPublic) throws Exception {
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder()
+.setType(MultipartBody.FORM)
+RequestBody.create(MediaType.parse(&quot;application/vnd.android.package-archive&quot;), file));
+
+if (password != null) {
+multipartBuilder.addFormDataPart(&quot;password&quot;, password);
+

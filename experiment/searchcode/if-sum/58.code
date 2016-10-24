@@ -1,0 +1,26 @@
+while (length > 1) {
+
+data = (((buf[i] << 8) &amp; 0xFF00) | ((buf[i + 1]) &amp; 0xFF));
+
+sum += data;
+
+
+if ((sum &amp; 0xFFFF0000) > 0) {
+
+sum = sum &amp; 0xFFFF;
+
+sum += 1;
+
+}
+
+
+
+i += 2;
+
+length -= 2;
+
+}
+
+
+if (length > 0) {
+

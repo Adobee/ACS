@@ -1,0 +1,7 @@
+public static List<TimeInstant<ReadableInstant>> generateScheduleTimeInstants(DateTime firstMatching, Period periodBetweenMatchings, DateTime end, boolean forceEnd){
+List<TimeInstant<ReadableInstant>> ans = new ArrayList<TimeInstant<ReadableInstant>>();
+for(ReadableInstant instant: generateSchedule(firstMatching,periodBetweenMatchings,end)){
+ans.add(new TimeInstant<ReadableInstant>(instant));
+}
+if(forceEnd &amp;&amp; !ans.get(ans.size()-1).getValue().equals(end)){
+

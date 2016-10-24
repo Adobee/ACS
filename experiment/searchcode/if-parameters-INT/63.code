@@ -1,0 +1,9 @@
+public class OrnsteinUhlenbeck extends CovarianceFunction{
+public DoubleMatrix parameters;
+public int numParams;
+public OrnsteinUhlenbeck(){
+public DoubleMatrix computeDerivatives(DoubleMatrix parameters, DoubleMatrix X, int index) {
+
+if(parameters.columns!=1 || parameters.rows!=numParams)
+throw new IllegalArgumentException(&quot;Wrong number of hyperparameters, &quot;+parameters.columns+&quot; instead of &quot;+numParams);
+

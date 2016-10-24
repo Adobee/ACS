@@ -1,0 +1,12 @@
+method 2: recursive method
+*/
+public class Power {
+//method 1
+public double pow(double x, int n) {
+if (x == 0)
+return x;
+double result = Math.abs(x);
+double absX = result;
+
+int absN = Math.abs(n);
+

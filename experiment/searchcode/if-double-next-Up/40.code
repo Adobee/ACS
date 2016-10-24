@@ -1,0 +1,8 @@
+static MoveState getNextState(MoveState state, double desiredVelocity, double desiredHeading){
+
+MoveState next = new MoveState();
+
+boolean backingUp = false;
+double workingHeading = state.Heading;
+if(state.Velocity < 0){
+

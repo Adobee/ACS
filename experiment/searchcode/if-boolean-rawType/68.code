@@ -1,0 +1,10 @@
+return t.toString();
+}
+}
+@Override
+public boolean equals(Object obj) {
+if (!(obj instanceof ParameterizedType)) {
+ParameterizedType ptype = (ParameterizedType) obj;
+if (!ptype.getRawType().equals(rawType)) {
+return false;
+

@@ -1,0 +1,11 @@
+public static long getFixTimeout(Method method, long defaultTimeout, Map<String, Long> methodTimeoutMap) {
+
+//        if (methodTimeoutCache.containsKey(method)) {
+if (null != timeout
+&amp;&amp; timeout > 0) {
+return timeout;
+}//if
+}//if
+
+final long timeout = defaultTimeout > 0 ? defaultTimeout : 500;
+

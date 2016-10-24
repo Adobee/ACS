@@ -1,0 +1,8 @@
+#if TIME_LOOP_HACKS
+
+#define CHECK_BC_LOOP												\
+if( _BC > 1 &amp;&amp; _PCD < 0xfffc ) {									\
+UINT8 op1 = cpu_readop(_PCD);									\
+UINT8 op2 = cpu_readop(_PCD+1); 								\
+if( (op1==0x78 &amp;&amp; op2==0xb1) || (op1==0x79 &amp;&amp; op2==0xb0) )		\
+

@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+public class OrdBuffer {
+private int maxord = 10;
+private ArrayList<String> ordliste;
+public synchronized String taUt() {
+if (ordliste.size() == 0)
+pause(0);
+
+String ret = ordliste.remove(0);
+

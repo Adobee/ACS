@@ -1,0 +1,7 @@
+// so we have to &quot;parse&quot; it manually.
+if (format.equals(&quot;24:00:00&quot;)){
+this.hours = 24;
+} else {
+LocalTime localTime = new LocalTime(format);
+this.seconds = localTime.getSecondOfMinute();
+

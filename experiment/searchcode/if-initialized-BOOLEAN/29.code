@@ -1,0 +1,9 @@
+public static <T> Supplier<T> withInitializer(Supplier<T> initializer) {
+return new Supplier<T>() {
+boolean initialized;
+T value;
+
+@Override
+public T get() {
+if (!initialized) {
+

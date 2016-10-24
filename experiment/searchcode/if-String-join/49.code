@@ -1,0 +1,11 @@
+joinKey = joinKeyMap.get(sourceName);
+}
+String ret = &quot;INVALID&quot;;
+if (joinKey != null) {
+Object object = record.get(joinKey);
+if (object != null) {
+ret = object.toString();
+}
+}
+LOGGER.info(&quot;source:{} JoinKey:{} value:{}&quot;, sourceName, joinKey, ret);
+

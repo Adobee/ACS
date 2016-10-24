@@ -1,0 +1,11 @@
+* double-checked locking for getting value from map.
+* @author fu.jian
+*
+* @param <K>
+* @param <V>
+this.map = map;
+}
+
+public V getValue(K key, Object synchronizedObject) {
+if (map.containsKey(key))
+

@@ -1,0 +1,7 @@
+static List<String> lores = new ArrayList<String>();
+
+public static boolean CheckMoney(Player p, double price, InventoryClickEvent e) {
+public static boolean CheckMoney1(Player p, double price, InventoryClickEvent e) {
+
+if(p.getInventory().firstEmpty() == -1){ p.sendMessage(&quot;§cVotre inventaire est full! §aVous devez avoir au moins un slot vide par sécurité!&quot;); return false;}
+

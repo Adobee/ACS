@@ -1,0 +1,11 @@
+* @exception ArithmeticException if the axis norm is null
+*/
+public Rotation(Vector3D axis, double angle) {
+
+double norm = axis.getNorm();
+if (norm == 0) {
+return new Vector3D(1, 0, 0);
+} else if (q0 < 0) {
+double inverse = 1 / Math.sqrt(squaredSine);
+return new Vector3D(q1 * inverse, q2 * inverse, q3 * inverse);
+

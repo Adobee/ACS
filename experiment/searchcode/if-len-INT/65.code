@@ -1,0 +1,7 @@
+public class Solution {
+public int minCut(String s) {
+int len = s.length();
+int[] f = new int[len+1];
+boolean[][] p = new boolean[len][len];
+// the worst case is cutting by each char
+

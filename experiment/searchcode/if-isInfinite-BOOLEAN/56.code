@@ -1,0 +1,6 @@
+public static final double density(double x, double a, double b, boolean give_log)
+{
+if (Double.isNaN(x) || Double.isNaN(a) || Double.isNaN(b)) return x + a + b;
+if (b < a || Double.isInfinite(a) || Double.isInfinite(b)) return Double.NaN;
+if (x >= b) return (lower_tail ? (log_p ? 0. : 1.) : (log_p ? Double.NEGATIVE_INFINITY : 0.));
+

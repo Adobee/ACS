@@ -1,0 +1,8 @@
+private int evictToRecoverBytes(int bytesToRecover) {
+int entriesToEvict = 0;
+if (bytesToRecover > 0) {
+while (!source.exhausted()) {
+int b = source.readByte() &amp; 0xff;
+if (b == 0x80) { // 10000000
+throw new IOException(&quot;index == 0&quot;);
+

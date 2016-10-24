@@ -1,0 +1,8 @@
+//noinspection ConstantConditions,PointlessBooleanExpression
+if (!BuildConfig.DEBUG) {
+Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
+final boolean initialize = extras.getBoolean(ContentResolver.SYNC_EXTRAS_INITIALIZE, false);
+
+if (uploadOnly) {
+return;
+

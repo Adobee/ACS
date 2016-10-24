@@ -1,0 +1,8 @@
+public static RegressionResult ComputeRegression(List<Float> xArray,
+List<Float> yArray) {
+
+if (xArray.size() != yArray.size())
+throw new IllegalArgumentException();
+for (int i = 0; i < xArray.size(); i++) {
+regression.addData(xArray.get(i), yArray.get(i));
+

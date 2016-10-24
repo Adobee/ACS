@@ -1,0 +1,8 @@
+private int findMinY(WeightedObservedPoint[] points) {
+int minYIdx = 0;
+for (int i = 1; i < points.length; i++) {
+if (points[i].getY() < points[minYIdx].getY()) {
+int maxYIdx = 0;
+for (int i = 1; i < points.length; i++) {
+if (points[i].getY() > points[maxYIdx].getY()) {
+

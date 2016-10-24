@@ -1,0 +1,7 @@
+public Query visit(Query query) {
+if(multi == null) multi = new multi(){};
+return multi.<Query>methodOption(query).getOrThrow(new UnsupportedOperationException());
+@multimethod private Query visit(ConstantScoreQuery query) {
+if (query.getQuery() == null) {
+throw new UnsupportedOperationException();
+

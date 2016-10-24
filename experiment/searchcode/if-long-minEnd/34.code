@@ -1,0 +1,9 @@
+int i=0;
+
+for(i=0;i<timeSeries_.size();i++){
+if(timeSeries_.get(i).getMaxEndTime()<minEnd){
+List<Double> tsdTimes=nonMinTsd.getTimes(j);
+for(int k=tsdTimes.size()-1;k>=0;k--){
+Double d=tsdTimes.get(k);
+if(d>minEnd &amp;&amp; d<=minEnd+JITTER_FACTOR_MS &amp;&amp; d>maxWithinJitter){
+

@@ -1,0 +1,10 @@
+throw new IllegalArgumentException();
+}
+
+//standardize it
+double chisquare=(n-1.0)*stdbar*stdbar/(H0std*H0std);
+
+boolean rejectH0=checkCriticalValue(chisquare, n, is_twoTailed, aLevel);
+protected static boolean checkCriticalValue(double score, int n, boolean is_twoTailed, double aLevel) {
+double probability=ContinuousDistributions.ChisquareCdf(score,n-1);
+

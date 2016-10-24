@@ -1,0 +1,8 @@
+/*  59:172 */     int xInt = Float.floatToIntBits(x);
+/*  60:173 */     int yInt = Float.floatToIntBits(y);
+/*  61:176 */     if (xInt < 0) {
+/*  64:179 */     if (yInt < 0) {
+/*  65:180 */       yInt = -2147483648 - yInt;
+/*  66:    */     }
+/*  67:183 */     boolean isEqual = FastMath.abs(xInt - yInt) <= maxUlps;
+

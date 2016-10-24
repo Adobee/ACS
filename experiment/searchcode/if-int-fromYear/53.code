@@ -1,0 +1,8 @@
+public class RandomSearchCriteria {
+private final int count;
+private final String genre;
+private final Integer fromYear;
+* @param musicFolderId Only return songs from this music folder. May be <code>null</code>.
+*/
+public RandomSearchCriteria(int count, String genre, Integer fromYear, Integer toYear, Integer musicFolderId) {
+

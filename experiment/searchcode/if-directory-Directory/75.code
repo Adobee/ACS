@@ -1,0 +1,7 @@
+public Directory navigate(Directory workingDirectory, String toDirectory) throws IllegalArgumentException {
+if (workingDirectory == null || toDirectory == null)
+throw new IllegalArgumentException(&quot;Current working dir and toPath string cannot be null. &quot;);
+
+//special case, empty space or . remains in current dir
+if (StringUtils.isBlank(toDirectory) || toDirectory.equals(Constants.CUR_DIR))
+

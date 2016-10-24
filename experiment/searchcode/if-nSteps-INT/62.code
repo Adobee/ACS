@@ -1,0 +1,8 @@
+public Step doStep(Game g) throws IOException;
+public String getName();
+public void carrotAndStick(int numberOfTheWinner) throws IOException;
+List l = new List();
+Data d = new Data(numberOfTheWinner);
+int NSteps[] = l.getNSteps();
+String BFs[] = l.getBFs();
+

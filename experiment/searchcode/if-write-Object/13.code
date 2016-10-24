@@ -1,0 +1,12 @@
+output.write(&#39;$&#39;);
+}
+
+protected void writeObject(UBFObject object)
+throws IOException
+{
+if (object.isString())
+writeString((UBFString)object);
+else if (object.isAtom())
+writeAtom((UBFAtom)object);
+else if (object.isInteger())
+

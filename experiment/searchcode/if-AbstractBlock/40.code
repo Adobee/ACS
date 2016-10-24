@@ -1,0 +1,7 @@
+for (AbstractBlock block : blocks) {
+if (block.size() > 1) {
+logger.debug(&quot;calculating local potential of Block: &quot; + block.toString());
+final List<AbstractBlock> filtered = new ArrayList<>();
+for (AbstractBlock block : blocks) {
+if (block.size() >= filterSize) {
+

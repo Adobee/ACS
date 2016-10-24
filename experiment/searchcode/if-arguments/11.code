@@ -1,0 +1,12 @@
+return new Multiplication(arguments[0].copy(), arguments[1].copy());
+}
+
+@Override
+public Function implementSimplify(){
+if(arguments[0].equals(Constant.ONE))
+return arguments[1];
+if(arguments[1].equals(Constant.ONE))
+return arguments[0];
+
+if(arguments[0].equals(Constant.NEGATIVE_ONE))
+

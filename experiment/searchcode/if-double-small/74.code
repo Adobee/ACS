@@ -1,0 +1,10 @@
+public class BoundNumbers {
+
+public static double TOO_SMALL = -1.0E20;
+
+public static double TOO_BIG = 1.0E20;
+
+public static double bound(double d) {
+if (d < TOO_SMALL) {
+return TOO_SMALL;
+

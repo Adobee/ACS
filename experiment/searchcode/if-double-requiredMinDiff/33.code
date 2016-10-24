@@ -1,0 +1,8 @@
+double biglsq = ZERO;
+double distsq = ZERO;
+
+// Update GOPT if necessary before the first iteration and after each
+final double errbig = Math.max(deltaOne, diffc);
+final double frhosq = rho * ONE_OVER_EIGHT * rho;
+if (crvmin > ZERO &amp;&amp;
+

@@ -1,0 +1,6 @@
+public void addPayment(String pName, Double pAmountPaid, Double pTendered, String rtnMsg) {
+if (paymentPaid.containsKey(pName)) {
+paymentPaid.put(pName, Double.parseDouble(paymentPaid.get(pName).toString()) + pAmountPaid);
+paymentTendered.put(pName, Double.parseDouble(paymentTendered.get(pName).toString()) + pTendered);
+rtnMessage.put(pName, rtnMsg);
+

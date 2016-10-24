@@ -1,0 +1,19 @@
+
+class Node {
+int data;
+Node left;
+Node right;
+}
+
+void Preorder(Node root) {
+if(root == null)
+Preorder(root.right);
+}
+
+
+void Inorder(Node root) {
+if(root == null)
+return;
+Inorder(root.left);
+System.out.print(root.data + &quot; &quot;);
+

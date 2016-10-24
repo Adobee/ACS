@@ -1,0 +1,10 @@
+package com.siberhus.springbatch.format;
+
+import java.text.DecimalFormat;
+
+public class NumberTypeFormat implements TypeFormat<Number>{
+public String format(Number value) {
+DecimalFormat numberFormat = formatCache.get();
+if(numberFormat==null){
+numberFormat = new DecimalFormat(pattern);
+

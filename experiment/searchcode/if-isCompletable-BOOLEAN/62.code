@@ -1,0 +1,10 @@
+userLov.setValue(selectedUser.getTitle());
+}
+}
+
+public boolean isDisplayGroup() {
+if (selectedUser.equals(workflowWebUI.getCurrentUser()) &amp;&amp; (workflowWebUI.getUserUnits().size() > 1 || workflowWebUI.getUserGroups().size() > 1))
+public String goCompleteTaskPage() {
+if (super.isCompletable(getSelectedUser())) {
+JsfUtils.storeOnPageFlow(Constants.WF_COMPLETE_ORIGIN_PAGE, Constants.WF_WORKLIST);
+

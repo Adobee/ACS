@@ -1,0 +1,8 @@
+public void addListener( final Class listenerType,
+final Object listener )
+{
+if( listenerType == null ) {
+private static void checkListenerType( final Class listenerType ) {
+if( !EventListener.class.isAssignableFrom( listenerType ) ) {
+String msg =   &quot;Parameter &#39;listenerType&#39; must implement &#39;&quot;
+

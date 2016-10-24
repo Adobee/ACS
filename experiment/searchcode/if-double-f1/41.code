@@ -1,0 +1,9 @@
+double x2=a+(b-a)*r;
+
+double f1=fun.function(x1);
+double f2=fun.function(x2);
+
+while(true){
+if (Math.abs(a-b)<=e) return new OptimalSolverStatus(OptimalSolverStatus.DONE,(a+b)/2,fun.function((a+b)/2));
+if ((Double.isNaN(f1))&amp;&amp;(Double.isNaN(f2))) return new OptimalSolverStatus(OptimalSolverStatus.BADINPUTDATA);
+

@@ -1,0 +1,15 @@
+return point.include(this);
+}
+
+@Override
+public boolean include(FromPoint point) {
+if(point.getValue() < this.getValue()){
+return true;
+}
+return false;
+}
+
+@Override
+public boolean include(ExactPoint point) {
+if(point.getValue() < this.getValue()){
+

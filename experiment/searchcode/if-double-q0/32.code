@@ -1,0 +1,8 @@
+//TZ: fields are much faster than arrays.
+double q0, q1, q2, q3; //!< x, y, z, w
+public void set(double x, double y, double z, double w) {
+q0 = x;
+q1 = y;
+q2 = z;
+q3 = w;
+

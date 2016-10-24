@@ -1,0 +1,9 @@
+public DetailedRule addDetailedRule(DetailedRule detailedRule) {
+if (!validate(detailedRule)) {
+throw new BusinessValidationException();
+&quot;detailedRule.addDetailedRule&quot;, detailedRule);
+return getSimpleDetailedRuleById(id);
+}
+
+private boolean validate(DetailedRule detailedRule) {
+

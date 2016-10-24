@@ -1,0 +1,10 @@
+protected Set<String> attributes;
+
+public boolean supports(Type type) {
+if (type == null) {
+return false;
+}
+if (type instanceof Class<?>) {
+return supports((Class<?>) type);
+} else if (type instanceof ParameterizedType) {
+

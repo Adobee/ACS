@@ -1,0 +1,11 @@
+public static boolean isRotatedPalindrome(String source){
+
+int strLen = source.length();
+boolean isRotatedPalindrome = false;
+for(int i=0;  i<strLen;   i++){
+
+// set the pivot
+int pivot = i;
+
+// check both ways
+

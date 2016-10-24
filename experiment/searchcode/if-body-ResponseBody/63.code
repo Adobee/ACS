@@ -1,0 +1,8 @@
+public void invoke(AMFServiceContext context) {
+nextFilter(context);
+
+AMFMessageBody responseBody = new AMFMessageBody();
+responseBody.setResponseURI(messageBody.getResponseURI());
+if (responseBody.getData() instanceof ErrorMessage) {
+responseBody.setResponseURI(responseBody.getResponseURI() + AMFMessageBody.STATUS_METHOD);
+

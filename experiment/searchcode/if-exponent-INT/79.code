@@ -1,0 +1,13 @@
+package org.recursion.power;
+
+
+public class Power {
+public int findPower(int base, int exponent){
+if(exponent == 1){
+return base;
+} else {
+return base *= findPower(base, exponent - 1);
+}
+}
+}
+

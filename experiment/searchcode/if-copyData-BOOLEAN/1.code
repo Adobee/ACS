@@ -1,0 +1,24 @@
+stack1.push(data);
+}
+
+public T remove() {
+copyData();
+return stack2.pop();
+}
+
+private void copyData() {
+if (stack2.size() == 0) {
+stack2.push(stack1.pop());
+}
+}
+
+public T peek() {
+copyData();
+return stack2.peek();
+}
+
+public boolean isEmpty() {
+return (stack1.isEmpty() &amp;&amp; stack2.isEmpty());
+}
+}
+

@@ -1,0 +1,7 @@
+// not same: 0;
+int ifSameSign = flip(signA^signB);
+int ifNotSameSign = signA^signB;
+int resultA = ifNotSameSign*signA+ifSameSign*signC;
+int resultB = flip(resultA);
+return resultA*a+resultB*b;
+

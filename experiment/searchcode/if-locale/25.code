@@ -1,0 +1,7 @@
+public static Locale getLocale(String localeStr) {
+Locale locale = Locale.getDefault();
+if (localeStr != null) {
+int index = localeStr.indexOf(&#39;_&#39;);
+if (index < 0) {
+locale = new Locale(localeStr, &quot;&quot;);
+

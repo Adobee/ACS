@@ -1,0 +1,7 @@
+for (NameValuePair n : params){
+String encodedName = encode(n.getName(), charset);
+String v = encode(n.getValue(), charset);
+obj.put(encodedName, v == null ? JSONObject.NULL : v);
+}
+return obj.toString();
+

@@ -1,0 +1,15 @@
+public class PhysicsObject extends GameObject
+{
+private double _vx, _vy;
+private double _ax, _ay;
+private double _dt;
+private double fX, fY, mass, friction, limit;
+public void setSpeedLimit(double l)
+{
+limit = 1.0/(l*l);
+}
+
+public void update(double dt)
+{
+if(_dt < 0)
+

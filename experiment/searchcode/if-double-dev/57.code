@@ -1,0 +1,11 @@
+values.add(value);
+}
+
+public double mean() {
+int elements = values.size();
+if (elements == 0) throw new IllegalStateException(&quot;No values&quot;);
+double mean = mean();
+double stddevtotal = 0;
+for (double value : values) {
+double dev = value - mean;
+

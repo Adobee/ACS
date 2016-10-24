@@ -1,0 +1,14 @@
+class Item implements Comparable<Item>{
+
+int item;
+int index;
+
+public Item(int index, int item){
+this.index=index;
+if(this.item==t.item) return true;
+else return false;
+}
+
+public int compareTo(Item otherItem){
+if(this.item<otherItem.item) return -1;
+

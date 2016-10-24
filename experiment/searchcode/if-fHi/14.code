@@ -1,0 +1,9 @@
+docm.setAutoCode(systemService.isAutoCode(FhiConfig.AutoCode_Document));
+if(docm.getId()!=null){
+documentForm.setDocm((FhiDocument) documentService.load(FhiDocument.class,docm.getId()));
+HttpServletRequest request, HttpServletResponse response)
+throws Exception {
+FhiDocument docm = documentForm.getDocm();
+
+if(docm.getId()!=null){
+

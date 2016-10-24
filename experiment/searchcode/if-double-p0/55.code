@@ -1,0 +1,15 @@
+Vector normal = getNormal(null);
+Float t = getT(ray, normal, p0);
+
+if (t != null) {
+
+Vector p = ray.getPoint(t);
+if (PointInTriangle(p, p0, p1, p2)) {
+return t;
+}
+}
+return null;
+}
+
+private Float getT(Ray ray, Vector normal, Vector point) {
+

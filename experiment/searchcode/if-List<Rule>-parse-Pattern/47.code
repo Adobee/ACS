@@ -1,0 +1,12 @@
+private void detectPackage(CharSequence rule) {
+pattern = Pattern.compile(PACKAGE_PATTERN);
+matcher = pattern.matcher(rule);
+if (matcher.find())
+matcher = pattern.matcher(rule);
+if (matcher.find())
+return matcher.group();
+return null;
+}
+
+private List<RuleLineContentInfo> detectLHS(CharSequence rule, int ruleOffset) {
+

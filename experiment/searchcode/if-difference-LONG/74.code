@@ -1,0 +1,5 @@
+public int calculateCosts(DateTimeDifference difference) {
+long completeDayCosts = (difference.weeks() * 7 + difference.days()) * COSTS_PER_DAY;
+if(difference.startedHours() == 0)
+return (int) completeDayCosts;
+

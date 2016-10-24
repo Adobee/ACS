@@ -1,0 +1,7 @@
+public class NameAddressComparator implements Comparator<Record> {
+
+public int compare(Record a, Record b) {
+if (a == null &amp;&amp; b == null) {
+int recordCompare = a.lastName.compareToIgnoreCase(b.lastName);
+if (recordCompare == 0) {
+

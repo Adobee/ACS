@@ -1,0 +1,10 @@
+public static ByLevelOrderBook create(OrderDto order)
+{
+if (order.isBuy())
+{
+return new BidByLevelOrderBook(order.getShortName());
+OrderBookLevel orderBookLevel = orderBookLevels.get(order.getPrice());
+if (orderBookLevel == null)
+{
+orderBookLevel = createOrderBookLevel(order);
+

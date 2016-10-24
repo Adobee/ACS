@@ -1,0 +1,20 @@
+public class Song {
+
+private final boolean loop;
+private final Music music;
+
+protected Song(Music music, boolean loop) {
+public void start(float pitch, float volume){
+if (loop){
+music.loop();
+}else{
+music.play();
+}
+}
+
+public void start(){
+start(1, 1);
+}
+
+}
+

@@ -1,0 +1,8 @@
+public class SemaphoreImplementation implements Semaphore{
+
+private volatile int availablePermits = 0;
+private final Object lock = new Object();
+
+public SemaphoreImplementation(int availablePermits) {
+this.availablePermits = availablePermits;
+

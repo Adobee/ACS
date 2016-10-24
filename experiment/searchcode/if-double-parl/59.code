@@ -1,0 +1,11 @@
+for (int k = 0; k < cols; ++k) {
+double dk = jacNorm[k];
+if (dk == 0) {
+dk = 1.0;
+}
+double xk = dk * parameters[k].getEstimate();
+// a lower bound, parl, for the zero of the function,
+// otherwise set this bound to zero
+double sum2, parl = 0;
+if (rank == solvedCols) {
+

@@ -1,0 +1,9 @@
+public static <E> E fromJson(String json, Class<E> clazz) {
+if (gson == null) {
+gson = new Gson();
+public static String toJson(Object src) {
+if (gson == null) {
+gson = new Gson();
+}
+return gson.toJson(src);
+

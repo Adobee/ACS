@@ -1,0 +1,6 @@
+public boolean isImplicitCastValidImpl(Type toType) {
+if (toType.isClass()){
+return isAutoBoxingValid(toType);
+private boolean isAutoBoxingValid(Type toType){
+if (!toType.isClass()) return false;
+

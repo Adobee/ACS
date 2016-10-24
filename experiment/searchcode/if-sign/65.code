@@ -1,0 +1,6 @@
+public static boolean Check_sign(String content,String signMsg,String signType, String signKey,String charset) throws Exception {
+if (&quot;MD5&quot;.equalsIgnoreCase(signType)) {
+return MD5.verify(content, signMsg, signKey, charset);
+} else if (&quot;RSA&quot;.equalsIgnoreCase(signType)) {
+return RSA.verify(content, signMsg,signKey,charset);
+

@@ -1,0 +1,6 @@
+public Future<Void> writeProtocolMessage(String message,int max){
+MessageBuffer sendBuffer = new MessageBuffer(1024);
+sendBuffer.writeByte(ProtocolHeader.kSessionMsg);
+sendBuffer.writeUTF(message);
+return channel.write(sendBuffer.flip().buffer(), new ClientProtocolWriter(this,max));
+

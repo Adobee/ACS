@@ -1,0 +1,13 @@
+private TypeInfo rawType;
+
+/** . */
+private List<TypeInfo> typeArguments;
+
+public ParameterizedTypeInfoImpl(TypeResolverImpl<T, M, A, P, F> domain, T type) {
+return type;
+}
+
+public TypeInfo getRawType() {
+if (rawType == null) {
+T rawType = domain.typeMetadata.getRawType(type);
+

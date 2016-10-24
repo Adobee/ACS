@@ -1,0 +1,9 @@
+while (!getClass(type).equals(baseClass)) {
+if (type instanceof Class) {
+// there is no useful information for us in raw types, so just keep going.
+resolvedTypes.put(typeParameters[i], actualTypeArguments[i]);
+}
+
+if (!rawType.equals(baseClass)) {
+type = rawType.getGenericSuperclass();
+

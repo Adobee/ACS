@@ -1,0 +1,8 @@
+import java.util.Map;
+
+public class ThreadIDFactory {
+private static final Map<Long, ThreadID> threadIDMap = new MapMaker().weakValues().makeMap();
+
+public ThreadID getOrCreate(long tid) {
+ThreadID threadID = threadIDMap.get(tid);
+

@@ -1,0 +1,14 @@
+return new BooleanWrapper(this.booleanValue);
+}
+
+@Override
+public boolean equals(Object o){
+if (!(o  instanceof BooleanWrapper)) {
+return false;
+}
+BooleanWrapper obj = (BooleanWrapper)o;
+return obj.getBooleanValue() == this.getBooleanValue();
+}
+
+}
+

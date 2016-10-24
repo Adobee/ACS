@@ -1,0 +1,12 @@
+public Timestamp convertToDatabaseColumn(LocalDateTime arg0) {
+if (arg0 != null) {
+return java.sql.Timestamp.valueOf(arg0.toString());
+public LocalDateTime convertToEntityAttribute(Timestamp arg0) {
+if (arg0 != null) {
+return new LocalDateTime(arg0);
+}
+return null;
+}
+
+}
+

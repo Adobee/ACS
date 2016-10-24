@@ -1,0 +1,13 @@
+public int axisHeight(int maxVal) {
+if(maxVal==0)
+return 1;
+int firstDigit = maxVal;
+int places = 0;
+while (firstDigit >= 10) {
+places++;
+firstDigit /= 10;
+}
+if(firstDigit > 4)
+places++;
+int resultFirstDigit;
+

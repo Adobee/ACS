@@ -1,0 +1,11 @@
+public PointF currentPoint;
+float distance;
+boolean canUpdate;
+public LimitedPath(float s_x, float s_y, float e_x, float e_y) {
+distance = Functions.distance(startPoint, endPoint);
+canUpdate = true;
+}
+
+public boolean isDone() {
+return !canUpdate;
+

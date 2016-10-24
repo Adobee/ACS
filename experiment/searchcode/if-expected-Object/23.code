@@ -1,0 +1,7 @@
+public void equal(String message, Object expected, Object actual) {
+boolean fail = false;
+
+if (expected == actual) {
+else if (expected.getClass().isArray() &amp;&amp; actual.getClass().isArray()) {
+if (!Arrays.equals((Object[]) expected, (Object[]) actual)) {
+

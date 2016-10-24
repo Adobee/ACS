@@ -1,0 +1,9 @@
+public class Triangle {
+Coordinate c1, c2, c3;
+ArrayList<Coordinate> coordinates;
+double centerX, centerY;
+double CCRadius;
+public Circle getCircumCircle(){
+double d = 2*(c1.x*(c2.y-c3.y)+c2.x*(c3.y-c1.y)+c3.x*(c1.y-c2.y));
+centerX = ((c1.x*c1.x+c1.y*c1.y)*(c2.y-c3.y)+(c2.x*c2.x+c2.y*c2.y)*(c3.y-c1.y)+(c3.x*c3.x+c3.y*c3.y)*(c1.y-c2.y))/d;
+

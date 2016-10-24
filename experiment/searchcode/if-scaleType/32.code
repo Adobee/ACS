@@ -1,0 +1,9 @@
+public BannerViewPagerAdapter(List<View> views, ScaleType scaleType, boolean adjustViewBounds) {
+super();
+this.views = views;
+if(null == scaleType)
+this.scaleType = scaleType;
+if (view instanceof ImageView){
+((ImageView) view).setScaleType(scaleType);
+if(adjustViewBounds)
+

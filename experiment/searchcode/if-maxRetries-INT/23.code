@@ -1,0 +1,7 @@
+public class RandomFive {
+private int maxRetries = 100;
+public int filterForRandomFives(ProceedingJoinPoint joinpoint) {
+try {
+for (int i = 0; i < maxRetries; i++) {
+int random = (Integer)joinpoint.proceed();
+

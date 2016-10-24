@@ -1,0 +1,8 @@
+if(theta == null) calculateProb();
+int numOfDocs = tfidfRecommender.numOfDocs;
+int[][] termIndex = tfidfRecommender.termIndex;
+double[] idf = tfidfRecommender.idf;
+
+for(int doc=0; doc < numOfDocs; doc++) {
+FeatureSequence fs = (FeatureSequence) tfidfRecommender.documents.get(doc).getData();
+

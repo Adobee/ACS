@@ -1,0 +1,8 @@
+if(mouseX>height||mouseY>width) //clicked outside of board
+{
+if(mouseX>=invX &amp;&amp; mouseX<=invX+invHeight &amp;&amp; mouseY>=invY &amp;&amp; mouseY <= invY+invWidth) //clicked inside of inventory
+graphics.drawRect(invX + 270, invY - 130, 90, 120);
+return;
+}
+else if(board.get(row,col) instanceof Actor)
+

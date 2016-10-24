@@ -1,0 +1,8 @@
+Customer customer = (Customer) session.getAttribute(&quot;customer&quot;);
+
+if (customer == null) {
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;loginCustomer&quot;);
+String description = request.getParameter(&quot;text&quot;);
+if(title == null){
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.FORWARD, &quot;generalErrorMessage&quot;);
+

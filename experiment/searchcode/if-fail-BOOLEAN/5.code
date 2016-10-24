@@ -1,0 +1,9 @@
+* User: Server
+* Date: 14/10/2009
+*/
+public class HbmFailMngr {
+private static final ThreadLocal < Boolean > failMode =
+public static void seFailMode(boolean enableFailMode){
+failMode.set(enableFailMode);
+if (enableFailMode){
+

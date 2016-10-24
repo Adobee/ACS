@@ -1,0 +1,8 @@
+public Relation get(Integer id) throws RelationNotFoundException {
+Relation relation = null;
+if (id instanceof Integer)
+relation = relationRepository.findOne(id);
+if (relation != null)
+return relation;
+throw new RelationNotFoundException(id);
+

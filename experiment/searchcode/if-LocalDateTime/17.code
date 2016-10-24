@@ -1,0 +1,12 @@
+package br.com.fiap.fundamentos.listas;
+
+import java.time.LocalDateTime;
+import java.time.temporal.ChronoUnit;
+LocalDateTime startedAt = LocalDateTime.now();
+
+for (int item : set)
+if (item == index)
+break;
+
+LocalDateTime endedAt = LocalDateTime.now();
+

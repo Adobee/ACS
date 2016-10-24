@@ -1,0 +1,8 @@
+public class Solution {
+// Be greedy.
+public int maxArea(int[] height) {
+if (height.length <= 1) return 0;
+while (l < r) {
+int area = (r - l) * Math.min(height[l], height[r]);
+if (area > ans) ans = area;
+

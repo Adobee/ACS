@@ -1,0 +1,12 @@
+public class TestReadClient {
+/*缓冲区大小*/
+private static int BLOCK = 1024*1024*10;
+/*接受数据缓冲区*/
+private static ByteBuffer sendbuffer = ByteBuffer.allocate(BLOCK);
+socketChannel.finishConnect();
+
+//往通道写
+sendbuffer.clear();
+sendbuffer.put(&quot;Hello,Server!I&#39;m Client.&quot;.getBytes());
+sendbuffer.flip();
+

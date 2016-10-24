@@ -1,0 +1,6 @@
+public Multimap<Integer, CommandStatistic> getUnprocessedData(long currentTime) {
+int currentMin = getMinute(currentTime);
+Multimap<Integer, CommandStatistic> storeCopy = HashMultimap.create();
+for(Integer key : store.keySet()) {
+if(key.equals(currentMin) == false) {
+

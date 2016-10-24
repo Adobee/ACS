@@ -1,0 +1,8 @@
+int i;
+double invX, invY;
+double diffX, diffY;
+double argX, argY;
+double diffX, diffY;
+double argX, argY;
+
+

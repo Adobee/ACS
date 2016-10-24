@@ -1,0 +1,18 @@
+this.iter = iter;
+}
+
+@Override
+public boolean hasNext() {
+return iter.hasNext() || !queue.isEmpty();
+return iter.next();
+}
+
+public E peek() {
+if (queue.isEmpty() &amp;&amp; iter.hasNext()) {
+queue.offer(iter.next());
+}
+return queue.peek();
+}
+
+}
+

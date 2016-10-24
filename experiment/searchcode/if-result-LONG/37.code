@@ -1,0 +1,9 @@
+class Persist {
+public static int persistence(long n) {
+long result = 1;
+if (n < 10) {
+while (true) {
+long multiplier = n % 10;
+result = result * multiplier;
+n /= 10;
+

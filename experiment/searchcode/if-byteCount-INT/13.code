@@ -1,0 +1,12 @@
+public final class ByteCount implements Comparable<ByteCount> {
+
+private static final int KIBI = 1024;
+
+private final long bytes;
+
+private ByteCount(long n, int bytesFactor) {
+this.bytes = n * bytesFactor;
+}
+
+public long byteCount() {
+

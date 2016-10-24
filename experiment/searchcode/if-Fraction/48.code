@@ -1,0 +1,9 @@
+Fraction h = new Fraction(3,5);
+if (!f.equals(g.multiply(h))) System.out.println(&quot;Multiply failed&quot;);
+// test equals
+sub(new Fraction(2,3), new Fraction(3,4), new Fraction(2,12),&quot;Subract 3 failed&quot;);
+f = new Fraction(8,9);
+g = new Fraction(2,3);
+h = new Fraction(3,4);
+if (!f.equals(g.divide(h))) System.out.println(&quot;Division 1 failed&quot;);
+

@@ -1,0 +1,18 @@
+double a;
+double A;
+double X;
+double T;
+double fb;
+double r;
+
+public void setPara(double upper_PAR,double lower_PAR, double zenith_angle_degree,double x){
+r = avgUpperPAR/(2550*Math.cos(zenithAngleRadian));
+
+if (r<0.2) {
+r=0.2;
+}else if (r>0.82) {
+r=0.82;
+}
+
+fb = 48.57 + r * (-59.024 + r * 24.835);
+

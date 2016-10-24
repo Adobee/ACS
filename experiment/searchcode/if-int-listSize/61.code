@@ -1,0 +1,18 @@
+@XmlAttribute(name = &quot;list-size&quot;, required = true)
+private int listSize = 10;
+
+/**
+* {@inheritDoc}
+*/
+@Override
+public String getClassName() {
+return Collections.singletonMap(&quot;size&quot;, String.valueOf(listSize));
+}
+
+/**
+* Gets {@link #listSize}.
+*
+* @return {@link #listSize}
+*/
+public int getListSize() {
+

@@ -1,0 +1,11 @@
+public class NumberPattern extends Pattern {
+
+private char[] pattern;
+private String appendum;
+
+public NumberPattern(String pattern) {
+this(pattern, &quot;&quot;);
+}
+
+public NumberPattern(String pattern, String appendum) {
+

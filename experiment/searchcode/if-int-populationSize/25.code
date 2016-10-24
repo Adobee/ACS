@@ -1,0 +1,6 @@
+public class PopulationAsArray extends Population{
+private static int populationSize = Configuration.getPopulationSize();
+private void initRandom() {
+population = new Chromosome[populationSize];
+for (int i = 0; i < populationSize; i++) {
+

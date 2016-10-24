@@ -1,0 +1,9 @@
+package org.bigmouth.fuhsi.access.filter;
+
+import org.apache.asyncweb.common.HttpRequest;
+import org.apache.mina.core.filterchain.IoFilterAdapter;
+public void messageReceived(NextFilter nextFilter, IoSession session, Object message)
+throws Exception {
+if(!HttpRequest.class.isAssignableFrom(message.getClass())){
+throw new RuntimeException(&quot;Expect HttpRequest,but &quot; + message.getClass());
+

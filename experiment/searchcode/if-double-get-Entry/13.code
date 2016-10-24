@@ -1,0 +1,6 @@
+Double y = diagram.get(x);
+if (y == null) {
+Map.Entry<Integer, Double> higherEntry = diagram.higherEntry(x);
+Map.Entry<Integer, Double> lowerEntry = diagram.lowerEntry(x);
+if (lowerEntry == null) {
+

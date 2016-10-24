@@ -1,0 +1,11 @@
+* A trust manager that calls a callback if the wrapped trustmanager fails to
+* validate a given certificate.
+*
+* @author Andre Dietisheim
+public class CallbackTrustManager implements X509TrustManager {
+
+private X509TrustManager trustManager;
+private TrustManagerCallback callback;
+
+private CallbackTrustManager(X509TrustManager trustManager, TrustManagerCallback callback) {
+

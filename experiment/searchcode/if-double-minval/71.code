@@ -1,0 +1,7 @@
+pixieX = (double) im.xsize / (double) (im.end - im.start);
+if (!gdef.logarithmic) {
+pixieY = (double) im.ysize / (im.maxval - im.minval);
+}
+else {
+pixieY = (double) im.ysize / (ValueAxisLogarithmic.log10(im.maxval) - ValueAxisLogarithmic.log10(im.minval));
+

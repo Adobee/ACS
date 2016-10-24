@@ -1,0 +1,9 @@
+return &quot;[tagValue=&quot; + tagValue + &quot;, valueCount=&quot; + valueCount + &quot;]&quot;;
+}
+
+public int compareTo(ValueCount o) {
+ValueCount v = (ValueCount) o;
+if (this.valueCount == v.valueCount)
+return 0;
+return valueCount > v.valueCount ? 1 : -1;
+

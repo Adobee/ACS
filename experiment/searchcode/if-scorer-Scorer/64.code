@@ -1,0 +1,11 @@
+this.ndocs = reader.numDocs();
+
+if (should != null &amp;&amp; should.length > 0) {
+
+Scorer[] shouldScorer = new Scorer[should.length];
+this.shouldBooleanScorer = new MatchAllBooleanScorer(similarity,
+this.ndocs);
+
+if (must != null &amp;&amp; must.length > 0) {
+Scorer[] mustScorer = new Scorer[must.length];
+

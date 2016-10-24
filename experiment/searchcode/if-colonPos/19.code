@@ -1,0 +1,8 @@
+public static String getHost(String vncServerName) {
+int colonPos = vncServerName.indexOf(&#39;:&#39;);
+if (colonPos == 0)
+return &quot;localhost&quot;;
+if (colonPos == -1)
+colonPos = vncServerName.length();
+return vncServerName.substring(0, colonPos);
+

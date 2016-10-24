@@ -1,0 +1,10 @@
+private static final long serialVersionUID = 1L;
+
+public LRUCache(int capacity) {
+super(capacity, 0.75f, true); // &#39;true&#39; for accessOrder.
+this.capacity = capacity;
+}
+
+public boolean removeEldestEntry(Map.Entry entry) {
+return (size() > this.capacity);
+

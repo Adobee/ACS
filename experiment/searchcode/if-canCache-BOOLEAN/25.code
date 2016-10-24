@@ -1,0 +1,9 @@
+this(meta, DEFAULT_CACHE_EXPIRY_SECONDS);
+}
+
+protected boolean canCache() {
+return Datastore.getCurrentTransaction() == null;
+public T get(@Nonnull Key id) throws EntityNotFoundException, IllegalArgumentException {
+if (!canCache()) {
+return super.get(id);
+

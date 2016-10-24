@@ -1,0 +1,12 @@
+//System.out.println((x2 - x1) + &quot; &quot; + (y2 - y1) + &quot; : &quot; + this.getAngle() + &quot; &quot; + this.getMagnitude());
+}
+
+public Rectangle2D.Double getBoundingBox() {
+if (x1 < x2) {
+if (y1 < y2) {
+return new Rectangle2D.Double(x1, y2, x2 - x1, y1 - y2);
+}
+} else {
+if (y1 < y2) {
+return new Rectangle2D.Double(x2, y1, x1 - x2, y2 - y1);
+

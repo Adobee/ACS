@@ -1,0 +1,13 @@
+int partition(int[] array, int start, int end) {
+int marker = start;
+for (int i = start; i <= end; i++) {
+if (array[i] <= array[end]) {
+marker += 1;
+}
+}
+return marker - 1;
+}
+
+void quicksort(int[] array, int start, int end) {
+if (start >= end) {
+

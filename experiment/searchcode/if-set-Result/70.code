@@ -1,0 +1,8 @@
+public Result format(RestData restData, String formatType) throws SQLException {
+Result result = null;
+Set<String> fields = restData.getFields();
+
+if (restData.getResultSet() != null) {
+if (formatType == null || formatType.equals(&quot;json&quot;)) {
+result = resultSetToJson(restData.getResultSet(), fields, (Integer) restData.getStatusCode());
+

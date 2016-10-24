@@ -1,0 +1,12 @@
+out.writeDouble(scaled[j]);
+}
+}
+
+if (nordsieck == null) {
+out.writeBoolean(false);
+} else {
+out.writeBoolean(true);
+final boolean hasNordsieck = in.readBoolean();
+if (hasNordsieck) {
+nordsieck = (Array2DRowRealMatrix) in.readObject();
+

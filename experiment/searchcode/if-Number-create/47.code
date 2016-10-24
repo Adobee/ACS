@@ -1,0 +1,8 @@
+public static AbstractRomanNumberFactory getInstance() {
+if (fact == null) {
+fact = new AbstractRomanNumberFactory();
+public RomanNumber getNumberFor(int value, int noOfOccurance, NumberCreator creator) {
+RomanNumber number = getFromCache(value);
+if (number == null) {
+number = performAction(noOfOccurance, creator);
+

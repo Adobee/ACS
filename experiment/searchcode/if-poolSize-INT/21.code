@@ -1,0 +1,11 @@
+public NIOReactorPool(String name, int poolSize) throws IOException {
+reactors = new NIOReactor[poolSize];
+for (int i = 0; i < poolSize; i++) {
+reactor.startup();
+}
+}
+
+public NIOReactor getNextReactor() {
+int i = ++nextReactor;
+if (i >= reactors.length) {
+

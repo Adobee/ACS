@@ -1,0 +1,10 @@
+//On indique qu&#39;on l&#39;a parcouru
+banlist.add(minnode);
+this.eval.newNoeudEnvisage();
+
+double newdistance;
+
+for (int i = 0; i < world.size(); i++){
+//On fais une mise à jour de la distance à la source pour les noeuds connectés au noeud courant
+if (!banlist.contains(i) &amp;&amp; (newdistance = world.get(world.getByIndex(minnode).getIndex(), world.getByIndex(i).getIndex())) < Double.MAX_VALUE){
+

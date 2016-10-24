@@ -1,0 +1,15 @@
+private VCUserPrefsBO() {
+}
+
+public static VCUserPrefsBO getInstance() {
+if (infoBo == null) {
+infoBo = new VCUserPrefsBO();
+DAOFactory dao = DAOFactory.getDAOFactory();
+IVCUserPrefsDAO vdao = dao.getVCUserPrefsDAO();
+boolean rowsUpdated = vdao.updateUser(vto);
+if (!rowsUpdated) {
+createVCUserPrefs(vto);
+}
+}
+}
+

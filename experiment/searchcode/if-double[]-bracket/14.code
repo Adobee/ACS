@@ -1,0 +1,9 @@
+public Double calculateTax(TaxRate taxRate, Double income) {
+
+List<TaxBracket> taxBrackets = taxRate.getTaxBrackets();
+
+Double tax = 0.00;
+for (TaxBracket taxBracket : taxBrackets) {
+
+tax += bracketTax(taxBracket.getIncomeFrom(), taxBracket.getIncomeTo(), taxBracket.getRate(), income);
+

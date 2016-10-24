@@ -1,0 +1,9 @@
+package accounting.patterns;
+
+import java.time.LocalDate;
+import java.util.LinkedHashMap;
+import java.util.Map;
+Map<LocalDate, T> entries = new LinkedHashMap<LocalDate, T>();
+
+public void put(LocalDate date, T rule) {
+

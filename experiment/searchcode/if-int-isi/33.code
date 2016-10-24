@@ -1,0 +1,8 @@
+private static final int ISI_BLOCK_COMMENT = 1;
+private static final int ISI_COMMENT_START = 2;
+private static final int ISI_STAR_IN_BLOCK_COMMENT = 3;
+if (oldState == ISI_BLOCK_COMMENT) {
+return new int[]{0, oldState};
+}
+if (oldState == ISI_TEXT_IN_BRACKETS) {
+

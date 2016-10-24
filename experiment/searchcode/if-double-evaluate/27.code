@@ -1,0 +1,9 @@
+public double getPoint(double u,double v){
+return this.evaluate(controlPoints,u,v,degree);
+}
+
+private double evaluate(double[][] points,double u,double v,int level){
+if(level>0){
+double[][] newPoints=new double[level][level];
+for(int i=0;i<level;i++){
+

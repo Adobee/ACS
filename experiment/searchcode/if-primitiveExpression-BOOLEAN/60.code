@@ -1,0 +1,8 @@
+public static Expression makePrimitive(final long val, final TypeReference type) {
+if (TypeAnalysis.isBoolean(type)) {
+return new PrimitiveExpression(Expression.MYSTERY_OFFSET, Boolean.TRUE);
+}
+
+if (type != null) {
+return new PrimitiveExpression(Expression.MYSTERY_OFFSET, JavaPrimitiveCast.cast(type.getSimpleType(), val));
+

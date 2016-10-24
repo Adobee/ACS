@@ -1,0 +1,7 @@
+private void printRequestLog(Request originalRequest) throws UnsupportedEncodingException {
+FormBody.Builder formBuilder = new FormBody.Builder();
+String msg = originalRequest.url() + &quot;\n&quot;;
+RequestBody oidBody = originalRequest.body();
+
+if(oidBody instanceof FormBody) {
+

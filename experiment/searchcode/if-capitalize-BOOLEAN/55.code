@@ -1,0 +1,14 @@
+private static final String BOOLEAN = &quot;boolean&quot;;
+
+public static String set(String name) {
+return SET + capitalize(name);
+}
+
+public static String get(String type, String name) {
+String prefix = type.equalsIgnoreCase(BOOLEAN) ? IS : GET;
+return prefix + capitalize(name);
+}
+
+public static boolean isNull(Object obj) {
+return obj == null;
+

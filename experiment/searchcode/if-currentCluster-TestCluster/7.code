@@ -1,0 +1,6 @@
+process.getClusters().getClusters().add(cluster);
+Assert.assertEquals(process.getClusters().getClusters().size(), 2);
+String currentCluster = process.getClusters().getClusters().get(0).getName();
+Process newProcess = EntityUtil.getClusterView(process, currentCluster);
+Assert.assertFalse(EntityUtil.equals(process, newProcess));
+

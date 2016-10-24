@@ -1,0 +1,13 @@
+public GregorianDate nextDate(){
+int newDay;
+int newMonth;
+int newYear;
+if(dayOfMonth() < monthLengths[month()-1]){
+newYear = year();
+}
+else {
+newDay = 1;
+if (month() == 12){
+newMonth = 1;
+newYear = year() + 1;
+

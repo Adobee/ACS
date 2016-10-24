@@ -1,0 +1,9 @@
+double[] currentPoint = new double[startPoint.length];
+double lambda = boundsLambda[0];
+double bestLambda = lambda;
+for (int j = 0; j < startPoint.length; j++) {
+int nIter = Integer.parseInt(Main.nIter);
+for (int i = 0; i <= nIter; i++) {
+lambda += (boundsLambda[1] - boundsLambda[0]) / nIter;
+for (int j = 0; j < startPoint.length; j++) {
+

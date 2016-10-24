@@ -1,0 +1,9 @@
+public Binding(FieldNode fieldNode, boolean bindOnCreation, boolean attachDefaultSerializer) {
+if (fieldNode == null){
+throw new WinterException(&quot;FieldNode for binding must not be null!&quot;);
+}
+
+this.fieldNode = fieldNode;
+
+if (fieldNode.getSerializerID() == null){
+

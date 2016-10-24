@@ -1,0 +1,13 @@
+public interface ResultType<T> {
+boolean success();
+
+String getError();
+
+T getType();
+}
+
+public TypeSpec(List<T> inputs, T output) {
+public ResultType<T> apply(Comparator<T> cmp, List<T> args) {
+if (inputs.size() != args.size()) {
+return fail(&quot;Wrong number of arguments (&quot; + &quot;inputs:&quot; + inputs.size() +
+

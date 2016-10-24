@@ -1,0 +1,14 @@
+abstract protected boolean isFalse(String value);
+
+@Override
+public Boolean decode(String value) {
+if (isTrue(value)) {
+return true;
+}
+if (isFalse(value)) {
+return false;
+}
+return decodingFailed();
+}
+}
+

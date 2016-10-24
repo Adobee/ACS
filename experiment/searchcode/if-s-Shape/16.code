@@ -1,0 +1,13 @@
+import rocks.byivo.solid.interfaces.IShapeArea;
+import rocks.byivo.solid.shapes.Shape;
+
+public class ShapeCalculator {
+
+private Shape shape;
+
+public ShapeCalculator(Shape shape) {
+public double calcularArea() {
+if (shape instanceof IShapeArea) {
+return ((IShapeArea) shape).calcular();
+} else {
+

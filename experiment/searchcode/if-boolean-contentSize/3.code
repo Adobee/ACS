@@ -1,0 +1,11 @@
+public class RequestInputStream extends InputStream {
+
+private InputStream stream;
+
+private TimeStat timeStat;
+
+private int contentSize;
+this.contentSize = contentSize;
+if (contentSize != -1) {
+timeStat.setReadTimeProgressTick(false);
+

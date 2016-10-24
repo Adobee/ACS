@@ -1,0 +1,7 @@
+public class UnaryOp implements LtlFormula {
+
+public static UnaryOp build(OpType opType, LtlFormula operand) {
+public boolean evaluate(Set<String> values) {
+if (opType != OpType.NEG) {
+throw new IllegalArgumentException(&quot;Invalid unary operator!&quot;);
+

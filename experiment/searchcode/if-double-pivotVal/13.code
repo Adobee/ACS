@@ -1,0 +1,8 @@
+private void buildPivotDataForRow(List<OntologyNode> ontologyNodes, Long tableId, Double countVal) {
+HashMap<Long, IntContainer> pivotVal = getPivot().get(ontologyNodes);
+if (pivotVal == null) {
+getPivot().put(ontologyNodes, pivotVal);
+}
+IntContainer groupCount = pivotVal.get(tableId);
+if (groupCount == null) {
+

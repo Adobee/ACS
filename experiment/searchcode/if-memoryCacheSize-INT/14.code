@@ -1,0 +1,9 @@
+private DiskCache diskCache;
+private FileNameGenerator diskCacheFileNameGenerator;
+
+
+private int memoryCacheSize = 0;
+public Builder memoryCacheSize(int memoryCacheSize) {
+if (memoryCacheSize <= 0)
+throw new IllegalArgumentException(&quot;memoryCacheSize must be a positive number&quot;);
+

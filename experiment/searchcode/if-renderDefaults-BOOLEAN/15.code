@@ -1,0 +1,7 @@
+final String[] names = request.paramAsStringArrayOrEmptyIfAll(&quot;name&quot;);
+final boolean renderDefaults = request.paramAsBoolean(&quot;include_defaults&quot;, false);
+cursor.value.toXContent(builder, request);
+builder.endObject();
+if (renderDefaults) {
+builder.startObject(&quot;defaults&quot;);
+

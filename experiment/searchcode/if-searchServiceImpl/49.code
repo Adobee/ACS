@@ -1,0 +1,7 @@
+* will exist either in the namespace set on the {@link
+* NamespaceManager}, or, if none was set, in an empty namespace.
+*
+* @return the default implementation of {@link SearchService}.
+static SearchService getSearchService(SearchApiHelper helper) {
+return new SearchServiceImpl(helper == null ? apiHelper : helper, NamespaceManager.get());
+

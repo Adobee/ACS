@@ -1,0 +1,7 @@
+public JGDateTime(int year, int month, int dayOfMonth, int hour, int minute) {
+this.localDateTime = LocalDateTime.of(year, month, dayOfMonth, hour, minute);
+ArrayList<String> holidayArrayList = new ArrayList<>(Arrays.asList(holidayList));
+
+DayOfWeek dayOfWeek = localDateTime.getDayOfWeek();
+if (dayOfWeek == DayOfWeek.SATURDAY || dayOfWeek == DayOfWeek.SUNDAY) {
+

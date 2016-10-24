@@ -1,0 +1,7 @@
+public int compare(final RoutingStep stepA, final RoutingStep stepB) {
+
+double a = getMetric(stepA.getEndNode());
+a = a + myMetric.getCost(stepA);
+double b = getMetric(stepB.getEndNode());
+b = b + myMetric.getCost(stepB);
+

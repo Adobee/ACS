@@ -1,0 +1,9 @@
+public class SendMail extends SocketClient{
+private String username = null;
+private String passwd = null;
+
+public SendMail(String mailServer, int port, String username,
+BASE64Encoder encoder = new BASE64Encoder();
+String encodedUserName = encoder.encode(username.getBytes());
+String encodedPwd = encoder.encode(passwd.getBytes());
+

@@ -1,0 +1,10 @@
+public static List<Integer> getRow(int rowIndex) {
+
+List<Integer> array = new ArrayList<Integer>(rowIndex+1);
+if(rowIndex<0) return array;
+array.add(1);
+}
+if(rowIndex>=2)
+{
+for(int i=2;i<=rowIndex;i++)
+

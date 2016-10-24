@@ -1,0 +1,7 @@
+public MemberDTO getMember(String mem_id){
+MemberDTO member = memberDao.selectMember(mem_id);
+if(member==null){
+MemberDTO tempMember = memberDao.selectMember(member.getMem_id());
+if(tempMember==null){
+int result = memberDao.insertMember(member);
+

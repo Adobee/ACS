@@ -1,0 +1,8 @@
+UpdateCheck updateCheckToUpdate = getUpdateCheck(updateCheck.getId());
+
+if (updateCheckToUpdate != null) {
+updateCheckToUpdate.setApplicationVersionRequest(updateCheck.getApplicationVersionRequest());
+UpdateCheck updateCheck = getUpdateCheck(id);
+if (updateCheck != null)
+getCurrentSession().delete(updateCheck);
+

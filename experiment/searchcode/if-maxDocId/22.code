@@ -1,0 +1,10 @@
+private final ValueType type;
+protected int maxDocID = -1;
+
+IndexDocValuesArray(AtomicLong bytesUsed, int bytesPerValue, ValueType type) {
+if (docId >= size) {
+adjustSize(grow(docId + 1));
+}
+if (docId > maxDocID) {
+maxDocID = docId;
+

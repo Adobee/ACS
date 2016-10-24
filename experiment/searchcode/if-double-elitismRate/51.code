@@ -1,0 +1,8 @@
+public class ElitisticListPopulation extends ListPopulation {
+
+/** percentage of chromosomes copied to the next generation */
+private double elitismRate = 0.9;
+public ElitisticListPopulation(final List<Chromosome> chromosomes, final int populationLimit,
+final double elitismRate)
+throws NullArgumentException, NotPositiveException, NumberIsTooLargeException, OutOfRangeException {
+

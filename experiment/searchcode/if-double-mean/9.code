@@ -1,0 +1,7 @@
+public static double arithmeticMean(List<Double> numbers) {
+if (numbers.isEmpty()) return Double.NaN;
+public static double geometricMean(List<Double> numbers) {
+if (numbers.isEmpty()) return Double.NaN;
+double mean = 1.0;
+for (Double number : numbers) {
+

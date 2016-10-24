@@ -1,0 +1,8 @@
+public class Solution {
+public int maxSubArray(int[] A) {
+if (A.length == 0)
+for (int i = 1; i < A.length; i++) {
+int sum;
+if (lastSum < 0)
+sum = A[i];
+

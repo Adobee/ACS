@@ -1,0 +1,12 @@
+return recur(A, 0, len - 1, target);
+}
+
+public int recur(int[] A, int start, int end, int target) {
+if (start > end) {
+return -1;
+}
+if (start == end) {
+return start;
+}
+int mid = start + (end - start) / 2;
+

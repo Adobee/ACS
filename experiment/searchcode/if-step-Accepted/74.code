@@ -1,0 +1,6 @@
+writer.write(&quot;# Current step accepted? [2]\n&quot;);
+writer.write(String.format(&quot;# Current step coordinates [3-%d]\n&quot;, (2+currentStep.getCoordinates().size())));
+log.info(&quot;Accepted Monte Carlo step {}&quot;, proposedStep.toString());
+numAcceptedSteps++;
+if (numStepsTaken > burnIn
+

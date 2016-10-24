@@ -1,0 +1,10 @@
+import org.apache.commons.math.linear.LUDecompositionImpl;
+import org.apache.commons.math.linear.RealMatrix;
+
+import rlpark.plugin.rltoys.algorithms.functions.stateactions.StateToStateAction;
+Map<GraphState, Integer> stateIndexes = new LinkedHashMap<GraphState, Integer>();
+int ci = 0;
+for (GraphState state : states) {
+GraphState s = state;
+if (!s.hasNextState())
+

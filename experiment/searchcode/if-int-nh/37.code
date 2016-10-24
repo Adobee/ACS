@@ -1,0 +1,12 @@
+public class Gr2d {
+
+private int nh;
+private int ne;
+private int nbn;
+private int ncn;
+private int nhPov;
+private Element[] EL;
+private Node[] ND;
+
+//<editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;geters&amp;setters&quot;>
+

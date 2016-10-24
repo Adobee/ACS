@@ -1,0 +1,12 @@
+private double[] w = null;
+private double[] Bc = null;
+//skipping decay update parameter
+private int skip = 0;
+double[] x = tlist.get(j).sample;
+n += 1;
+for(double d : x)
+if(d != 0)
+r++;
+}
+skip = (int) ((8 * n * w.length) / r);
+

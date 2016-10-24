@@ -1,0 +1,16 @@
+_stream.setSSL(isSSL);
+}
+
+/**
+* Set if this should be an SSL connection.
+*/
+public boolean isSSL()
+{
+return _stream.isSSL();
+* The stream is always writable (?)
+*/
+public boolean canWrite()
+{
+if (_stream != null)
+return _stream.canWrite();
+

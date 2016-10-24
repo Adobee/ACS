@@ -1,0 +1,13 @@
+// Has a fraction
+String valueDecimals = splitValue[1];
+
+if (valueDecimals.equals(&quot;25&quot;)) {
+valueFraction = &quot;¼&quot;;
+__text = capitalizeWords(__text);
+
+return __text;
+}
+
+public static String decodeHTMLEntities(String __source) {
+// Replaces the content with proper HTML entities
+

@@ -1,0 +1,17 @@
+import java.util.function.Predicate;
+
+public class Lager {
+
+private List<Container> list = new ArrayList<>();
+
+private boolean placed = false;
+private List<List<Container>> lister = new ArrayList<List<Container>>();
+
+
+public boolean modtagContainer(Container container) {
+
+int i = 0;
+
+if(lister.isEmpty()){
+lister.add(new ArrayList<Container>());
+

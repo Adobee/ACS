@@ -1,0 +1,9 @@
+public void process(Pair<K, U> input, Emitter<Pair<Pair<K, Integer>, U>> emitter) {
+K key = input.first();
+int numShards = shardingStrategy.getNumShards(key);
+if (numShards < 1) {
+K key = input.first();
+V value = input.second();
+int numShards = shardingStrategy.getNumShards(key);
+if (numShards < 1) {
+

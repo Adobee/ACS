@@ -1,0 +1,13 @@
+//In HSL, the Saturation S is defined as (src: https://en.wikipedia.org/wiki/HSL_and_HSV#Saturation)
+
+double s = 0.0;
+
+if(C != 0.0)
+s = C / (1 - Math.abs((2*L) - 1));
+x = c * (1 - Math.abs((hh % 2) - 1));
+
+if(0 <= hh &amp;&amp; hh < 1){
+r = c;
+g = x;
+} else if(1 <= hh &amp;&amp; hh < 2){
+

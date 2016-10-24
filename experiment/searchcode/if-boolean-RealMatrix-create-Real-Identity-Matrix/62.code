@@ -1,0 +1,8 @@
+int startRow, int endRow, int startColumn, int endColumn,
+boolean mustFail) {
+try {
+RealMatrix sub = m.getSubMatrix(startRow, endRow, startColumn, endColumn);
+m.setSubMatrix(detData2,1,1);
+RealMatrix expected = MatrixUtils.createRealMatrix
+(new double[][] {{1.0,2.0,3.0},{2.0,1.0,3.0},{1.0,2.0,4.0}});
+

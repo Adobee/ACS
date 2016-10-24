@@ -1,0 +1,11 @@
+import com.google.gwt.text.shared.AbstractRenderer;
+
+/**
+* Renderer for Rx/Tx transfer rates.
+*/
+public class RxTxRateRenderer extends AbstractRenderer<Double[]> {
+
+@Override
+public String render(Double[] values) {
+if (values.length != 2 || values[0] == null || values[1] == null) {
+

@@ -1,0 +1,13 @@
+package flexjson;
+
+public class DeferredInstantiation<T> {
+
+private Class<? extends T> clazz;
+public synchronized T get() throws IllegalAccessException, InstantiationException {
+if( instantiate == null ) {
+instantiate = clazz.newInstance();
+}
+return instantiate;
+}
+}
+

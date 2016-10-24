@@ -1,0 +1,6 @@
+String imagePath = dicomData.getPath();
+if (seriesExists(seriesName)) {
+this.series.get(seriesName).addImage(imagePath);
+private boolean seriesExists(String seriesName) {
+return this.series.containsKey(seriesName);
+

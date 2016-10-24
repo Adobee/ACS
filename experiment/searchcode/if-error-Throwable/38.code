@@ -1,0 +1,7 @@
+Throwable localThrowable = paramThrowable.getCause();
+if (localThrowable == null)
+break;
+paramThrowable = localThrowable;
+propagateIfInstanceOf(paramThrowable, Error.class);
+propagateIfInstanceOf(paramThrowable, RuntimeException.class);
+

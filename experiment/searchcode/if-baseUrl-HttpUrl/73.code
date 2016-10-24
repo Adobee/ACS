@@ -1,0 +1,8 @@
+import com.etb.app.Config;
+import com.etb.app.etbapi.RetrofitLogger;
+import com.squareup.okhttp.HttpUrl;
+import com.squareup.okhttp.Interceptor;
+Retrofit.Builder builder = new Retrofit.Builder()
+.baseUrl(Config.getCoreInterfaceSecureEndpoint())
+.addConverterFactory(GsonConverterFactory.create())
+

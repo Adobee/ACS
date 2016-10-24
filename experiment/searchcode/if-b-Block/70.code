@@ -1,0 +1,9 @@
+@SuppressWarnings(&quot;rawtypes&quot;)
+@SubscribeEvent
+public void onSkullPlacedEvent(PlaceEvent e)
+{
+if(!e.block.equals(ModBlocks.blockSkull) || !(e.world.getTileEntity(e.x, e.y, e.z) instanceof TileEntityBlockSkull))
+TileEntityBlockSkull tileSkull = (TileEntityBlockSkull) e.world.getTileEntity(e.x, e.y, e.z);
+
+if(tileSkull.func_145904_a() == 0 &amp;&amp; blockY >= 2 &amp;&amp; world.difficultySetting != EnumDifficulty.PEACEFUL &amp;&amp; !world.isRemote)
+

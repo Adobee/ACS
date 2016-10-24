@@ -1,0 +1,7 @@
+public class CursorHelper
+{
+// Sinon l&#39;autocast converti la valeur null en 0 !!
+static public Double getNDouble(Cursor cursor, int columnIdx) {
+if (cursor.isNull(columnIdx)) return null ;
+return cursor.getDouble(columnIdx);
+

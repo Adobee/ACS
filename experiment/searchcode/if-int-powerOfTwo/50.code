@@ -1,0 +1,12 @@
+public class PowerofTwo {
+private final static double epsilon = 10e-15;
+
+public boolean isPowerOfTwo(int n) {
+if (n == 0) {
+return true;
+}
+
+public boolean isPowerOfTwo1(int n) {
+if (n == 0) {
+return false;
+

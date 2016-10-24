@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class FoxProgression {
+
+public int theCount(int[] seq) {
+if(seq.length == 1) return -1;
+int gDiff = seq[1]/seq[0];
+int aDiff = seq[1]-seq[0];
+
+for(int i = 1; i < seq.length; i++){
+g = g &amp;&amp; (seq[i]/seq[i-1] == gDiff &amp;&amp; seq[i]%seq[i-1]==0);
+

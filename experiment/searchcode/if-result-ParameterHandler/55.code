@@ -1,0 +1,10 @@
+package com.xsyi.core.mybatis;
+
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+ParameterHandler parameterHandler = (ParameterHandler)ReflectionUtils.getFieldValue(handler,&quot;parameterHandler&quot;);
+parameterHandler.setParameters(ps);
+if (ps.execute()){
+ResultSet r = ps.getResultSet();
+

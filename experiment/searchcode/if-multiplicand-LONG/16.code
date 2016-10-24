@@ -1,0 +1,9 @@
+long m = -(((~r) &amp; (r - dLong)) >>> 63); // Mask if 0 <= r < d
+long qReturn = q &amp; m;
+long rReturn = r &amp; m;
+
+// Case 1 - underestimated quotient by 1
+++q;
+r -= dLong;
+m = -(((~r) &amp; (r - dLong)) >>> 63); // Mask if 0 <= r < d
+

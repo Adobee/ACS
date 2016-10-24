@@ -1,0 +1,15 @@
+package paypaltest;
+
+/**
+* Validates if the value is within the given Range
+* @param <T> value type
+this.range = range;
+}
+
+@Override
+public boolean isValid(final T amount) {
+return amount.compareTo(range.getMin()) >= 0 &amp;&amp; amount.compareTo(range.getMax()) <= 0;
+}
+
+}
+

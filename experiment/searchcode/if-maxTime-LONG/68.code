@@ -1,0 +1,11 @@
+private long time = 0;
+private final long maxTime;
+private final long period;
+private Handler timerHandler = new Handler();
+private Runnable timerRunnable = new Runnable()
+{
+public void run()
+{
+if (time >= maxTime)
+return;
+

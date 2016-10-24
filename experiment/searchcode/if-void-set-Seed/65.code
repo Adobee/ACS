@@ -1,0 +1,6 @@
+private ClientBridge(SeedValidator seedValidator){
+super(seedValidator);
+connection = null;
+this.setIncomingGardener(Gardener.watchSeeds(this, SeedListType.INCOMING, this.incomingSeedList, seedValidator));
+this.setOutcomingGardener(Gardener.watchSeeds(this, SeedListType.OUTCOMING, this.outcomingSeedList, seedValidator));
+

@@ -1,0 +1,8 @@
+private int size;
+
+public LoadParallel(Bins bins, String[] filenames, int size) {
+this.bins = bins;
+protected void compute() {
+if (size > 1) {
+LoadParallel next = new LoadParallel(bins, filenames, size-1);
+

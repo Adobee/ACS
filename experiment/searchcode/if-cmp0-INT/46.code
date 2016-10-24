@@ -1,0 +1,10 @@
+public static char charAt(String s, int pos) {
+if (pos < 0)
+pos += s.length();
+return s.charAt(pos);
+public static <T> List<T> left(List<T> list, int pos) {
+int size = list.size();
+if (pos < 0)
+pos += size;
+return list.subList(0, Math.min(pos, size));
+

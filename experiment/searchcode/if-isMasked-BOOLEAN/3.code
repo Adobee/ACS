@@ -1,0 +1,8 @@
+private byte[] maskingKey = null;
+private long payloadLength = 0;
+private boolean isMasked = false;
+private WebSocketFrame.OpCode opcode = WebSocketFrame.OpCode.text;
+public WebSocketFrameBuilder setIsMasked(boolean isMasked) {
+this.isMasked = isMasked;
+if (isMasked &amp;&amp; maskingKey == null)
+

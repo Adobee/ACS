@@ -1,0 +1,11 @@
+public enum WeightedHoles implements BoardRater {
+INSTANCE;
+
+@Override
+public double rate(TetrisGrid board) {
+int maxHeight = 0;
+int height = board.getColumnHeight(x);
+if (height > maxHeight)
+maxHeight = height;
+if (height < minHeight)
+

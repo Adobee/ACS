@@ -1,0 +1,10 @@
+return createJustInTimeBindingRecursive(key, errors);
+}
+}
+
+/**
+* Returns true if the key type is Provider (but not a subclass of Provider).
+Key<TypeLiteral<T>> key, Errors errors) throws ErrorsException {
+Type typeLiteralType = key.getTypeLiteral().getType();
+if (!(typeLiteralType instanceof ParameterizedType)) {
+

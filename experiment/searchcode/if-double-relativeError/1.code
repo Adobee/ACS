@@ -1,0 +1,10 @@
+public static double absoluteError(double a, double b)
+{
+return Math.abs(a-b);
+}
+
+public static double relativeError(double a, double b)
+* @return true if and only if &#39;d&#39; may be considered as zero..
+*/
+public static boolean isZero(double a)
+

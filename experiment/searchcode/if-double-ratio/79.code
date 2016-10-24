@@ -1,0 +1,5 @@
+private static final String[] header = {&quot;Response&quot;, &quot;Lower Margin&quot;, &quot;Upper Margin&quot;};
+
+private double[] lowersRatio   = new double[] {0, 1};
+private double[] uppersRatio   = new double[] {1, Double.POSITIVE_INFINITY};
+

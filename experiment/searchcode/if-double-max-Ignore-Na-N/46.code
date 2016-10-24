@@ -1,0 +1,11 @@
+/** The highest x-value in the series, excluding Double.NaN values. */
+@JsonIgnore
+private double maxX;
+
+/** The lowest y-value in the series, excluding Double.NaN values. */
+private double maxIgnoreNaN(double a, double b) {
+if (Double.isNaN(a)) {
+return b;
+}
+if (Double.isNaN(b)) {
+

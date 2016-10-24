@@ -1,0 +1,7 @@
+TwentyFourResult t1 = Solve24(nums);
+if(t1.success) System.out.println(t1.exp+&quot; = 24&quot;);
+else System.out.println(t1.exp+&quot; has no way reach 24&quot;);
+t1 = Solve24(nums[i]+nums[j], b, c, &quot;(&quot;+(int)nums[i]+&quot;+&quot;+(int)nums[j]+&quot;)&quot;, (int)b+&quot;&quot;, (int)c+&quot;&quot;);//1-3 combo
+if(t1.success) return t1;
+t1 = Solve24(b, c, nums[i]+nums[j], (int)b+&quot;&quot;, (int)c+&quot;&quot;, &quot;(&quot;+(int)nums[i]+&quot;+&quot;+(int)nums[j]+&quot;)&quot;);
+

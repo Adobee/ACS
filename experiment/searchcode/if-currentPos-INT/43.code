@@ -1,0 +1,11 @@
+int tmpoutpos = outpos.get();
+int currentPos = inpos.get();
+out[tmpoutpos++] = inlength;
+int finalpos = currentPos + inlength;
+out[tmpoutpos++] = res;
+currentPos += compressedNum;
+continue outer;
+}
+final int selector = 8;
+if (in[currentPos] >= 1 << bitLength[selector])
+

@@ -1,0 +1,8 @@
+public class RetryNTimesTest extends AbstractTest{
+
+@Test
+public void testSuccess() throws Exception{
+
+RetryNTimes<Object> retryNTimes = new RetryNTimes<Object>(100, new RetryDelay(100));
+Assert.assertNotNull(retryNTimes.execute(new TestRetryCommand(new Object())));
+

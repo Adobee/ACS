@@ -1,0 +1,11 @@
+private String endpoint;
+private String group;
+private String subject;
+private boolean shouldFail = false;
+
+public GrouperAddMemberStep(String group, String subject, String endpoint) {
+this(group, subject, false, endpoint);
+}
+
+public GrouperAddMemberStep(String group, String subject, boolean shouldFail, String endpoint) {
+

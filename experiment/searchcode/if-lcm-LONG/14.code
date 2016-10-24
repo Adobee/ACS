@@ -1,0 +1,12 @@
+public int solution(int N, int M) {
+// write your code in Java SE 8
+long lcm;
+if (N >= M)
+lcm = ((long) M * (long) N) / (long) gcd(N, M);
+else
+lcm = ((long) M * (long) N) / (long) gcd(M, N);
+
+return (int) (lcm / (long) M);
+}
+}
+

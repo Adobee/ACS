@@ -1,0 +1,7 @@
+Response response =   chain.proceed(request);
+if (ToolsUtil.isNetworkAvailable(UfunApplication.getContext())){
+int maxAge = 0 * 60;
+// 无网络时，设置超时为一年
+int maxStale = 60 * 60 * 24 * 365;
+response.newBuilder()
+

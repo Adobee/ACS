@@ -1,0 +1,6 @@
+public static int computeLevenshteinDistance(CharSequence str1, CharSequence str2) {
+
+int[][] distance = new int[str1.length() + 1][str2.length() + 1];
+distance[i - 1][j - 1] + ((str1.charAt(i - 1) == str2.charAt(j - 1)) ? 0 : 1));
+if(i > 1 &amp;&amp; j > 1 &amp;&amp; str1.charAt(i-1) == str2.charAt(j - 2) &amp;&amp; str1.charAt(i - 2) == str2.charAt(j-1)) {
+

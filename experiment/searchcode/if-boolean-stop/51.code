@@ -1,0 +1,11 @@
+public boolean stop()
+{
+synchronized (joiner)
+{
+if (mStopWatch == null) return false;
+return mStopWatch.finish();
+}
+}
+
+public boolean stop(int pos, long when)
+

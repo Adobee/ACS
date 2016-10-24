@@ -1,0 +1,9 @@
+int scaledExponent = exponent + n;
+
+if (n < 0) {
+// we are really in the case n <= -1023
+if (scaledExponent > 0) {
+return Double.longBitsToDouble(sign
+| (((long) scaledExponent) << 52) | mantissa);
+} else if (scaledExponent > -53) {
+

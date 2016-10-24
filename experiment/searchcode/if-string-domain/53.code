@@ -1,0 +1,8 @@
+private final Set<Domain> domainsInUseThreadSafe;
+private final Set<Domain> domainsInUse;
+private final Map<String,Domain> domainMap;
+String domainString = Domain.findDomain(url);
+Domain domain;
+if (!domainMapThreadSafe.containsKey(domainString)) {
+domain = new Domain(domainString);
+

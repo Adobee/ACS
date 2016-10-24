@@ -1,0 +1,16 @@
+public class SimpleCancelable implements DependentCancellable {
+
+boolean complete;
+
+boolean canceled;
+
+Cancellable parent;
+
+@Override
+public void setParent(Cancellable parent) {
+this.parent = parent;
+}
+
+@Override
+public boolean isDone() {
+

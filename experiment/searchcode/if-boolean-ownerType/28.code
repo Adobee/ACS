@@ -1,0 +1,12 @@
+public boolean isConstant() {
+return isStatic() &amp;&amp; isFinal();
+}
+
+@Override
+public boolean remove() {
+if (!super.remove()) return false;
+if (ownerType != null)
+ownerType.release();
+if (type != null)
+type.release();
+

@@ -1,0 +1,11 @@
+public class DomainPhoneNumberTest extends AbstractDomainImplTest {
+
+@Test
+public void testCreatePhoneNumber() {
+User user = createNewUser();
+Contact contact = createNewContact();
+
+user.addContact(contact);
+
+PhoneNumber phoneNumber = createNewPhoneNumber();
+

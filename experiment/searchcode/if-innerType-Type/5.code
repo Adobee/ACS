@@ -1,0 +1,9 @@
+public synchronized static PointerType make(Type innerType)
+{
+// We can&#39;t create void* pointers.
+assert innerType != null;
+
+PointerType t = instances.get(innerType);
+
+// null is not a valid type, so we don&#39;t have to use containsKey
+

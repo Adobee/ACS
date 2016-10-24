@@ -1,0 +1,11 @@
+public static int safeNegate(int value) {
+if (value == Integer.MIN_VALUE) {
+throw new ArithmeticException(&quot;Integer.MIN_VALUE cannot be negated&quot;);
+return (value % wrapRange) + minValue;
+}
+
+int remByRange = (-value) % wrapRange;
+
+if (remByRange == 0) {
+return 0 + minValue;
+

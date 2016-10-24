@@ -1,0 +1,8 @@
+private FragmentUtil() {
+}
+
+public static void addOnlyOnce(FragmentManager fragmentManager, Fragment fragment, String tag) {
+Fragment existingFragment = fragmentManager.findFragmentByTag(tag);
+if (existingFragment == null) {
+fragmentManager.beginTransaction()
+

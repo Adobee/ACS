@@ -1,0 +1,12 @@
+package com.delirium.boiler.tools;
+
+import okhttp3.Cookie;
+import okhttp3.CookieJar;
+import okhttp3.HttpUrl;
+public class RegularCookieJar implements CookieJar {
+
+private List<Cookie> cookies;
+
+@Override
+public void saveFromResponse(HttpUrl url, List<Cookie> cookies) {
+

@@ -1,0 +1,9 @@
+for ( int i = 0; i < parms.length; i++ )
+{
+Value val = parms[ i ];
+int outIndex = 2 * i;
+if ( val == null )
+{
+outParms[ outIndex ] = null;
+outParms[ outIndex + 1 ] = null;
+

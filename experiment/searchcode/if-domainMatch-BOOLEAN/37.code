@@ -1,0 +1,7 @@
+this.groupsRdn = groupsRdn;
+this.domainRdnIndex = new LdapName(groupsRdn).size() + 1;
+
+if (!dn.matches(&quot;cn=[a-z\\.\\-]{1,},&quot; + groupsRdn + &quot;(,dc=[a-z0-9\\-]{1,}){1,}&quot;)) {
+String domainMatch = &quot;(\\.[a-z\\-]{1,}){1,}&quot;;
+if (groupId.matches(adminGroupPrefix + domainMatch)) {
+

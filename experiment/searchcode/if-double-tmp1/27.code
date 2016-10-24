@@ -1,0 +1,7 @@
+for (int j = 0 ;j<tmp1.length;j++)
+strtmp += tmp1[j].toString() + &quot; &quot;;
+}
+else if (tmp instanceof Double[])
+}
+else if (tmp instanceof Double[])
+

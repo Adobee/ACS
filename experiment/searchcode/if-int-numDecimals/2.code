@@ -1,0 +1,9 @@
+public class DecimalNumberFilter extends DocumentFilter {
+int numDecimals = 0;
+
+@Override
+public void replace(FilterBypass fb, int offset, int length, String text,
+AttributeSet attrs) {
+System.out.println(text);
+if (text.matches(&quot;[0-9]&quot;) || (text.contains(&quot;.&quot;) &amp;&amp; numDecimals < 1)) {
+

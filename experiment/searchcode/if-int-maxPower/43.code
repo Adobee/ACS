@@ -1,0 +1,10 @@
+import nintendofan9797.CraftMine.api.interfaces.ElectricItem;
+
+public class MPNBattery extends ElectricItem {
+
+private static int num = 1;
+
+public MPNBattery(int id, String name, int maxPower) {
+super(id, name, maxPower);
+if (num == 0) this.setUnlocalizedName(&quot;mpnBattery1&quot;);
+

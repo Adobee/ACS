@@ -1,0 +1,13 @@
+public class GetWormbaseLineage
+{
+public static class WBCell
+{
+int btime;
+Integer duration=null;
+List<String> parent=new LinkedList<String>();
+for(String name:new LinkedList<String>(lin.particle.keySet()))
+if(name.startsWith(&quot;Z4.p&quot;) &amp;&amp; !name.equals(&quot;Z4.p&quot;))
+lin.removeParticle(name);
+
+//Missing hierarchy - Z4.aaa TODO
+

@@ -1,0 +1,8 @@
+double d = rnd.nextInt() * rnd.nextDouble();
+d *= Math.signum(d);
+double ulp = Math.ulp(StrictMath.sqrt(d));
+assertEquals(&quot;d=&quot; + d + &quot; ulp=&quot;+ulp, StrictMath.sqrt(d), Math.sqrt(d), ulp);
+//x87 trigonometry is less accurate...
+double ulp = 1.e-9; //Math.ulp(StrictMath.sin(d));
+assertEquals(&quot;d=&quot; + d + &quot; ulp=&quot;+ulp, StrictMath.sin(d), Math.sin(d), ulp);
+

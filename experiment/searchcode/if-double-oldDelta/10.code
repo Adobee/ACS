@@ -1,0 +1,7 @@
+// return the second endpoint if it is good enough
+double y1 = computeObjectiveValue(x1);
+if (FastMath.abs(y1) <= functionValueAccuracy) {
+double oldDelta = x2 - x1;
+while (true) {
+if (FastMath.abs(y2) < FastMath.abs(y1)) {
+

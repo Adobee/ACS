@@ -1,0 +1,10 @@
+private final short value;
+
+ABIVersion(final int intVersion) {
+Preconditions.checkArgument(intVersion >= 0 &amp;&amp; intVersion <= 65535);
+value = (short) intVersion;
+}
+
+/**
+* Return the unsigned short integer identifying this version.
+

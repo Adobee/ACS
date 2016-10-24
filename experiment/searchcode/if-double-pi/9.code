@@ -1,0 +1,9 @@
+//	Renvoyer une valeur normalisé d&#39;un angle
+//	soit entre 0 et 2*PI, soit entre -PI et +PI
+double AModulo( double angle ) {
+double m = angle;
+
+m = m % (2*Math.PI);
+if (angle_mode == 0) {
+if (m < 0) m += (2*Math.PI);
+

@@ -1,0 +1,14 @@
+// &quot;least common multiplier (lcm)&quot; (just a &quot;candidate&quot; for it)
+long lcm = 1;
+for (int i : ary) {
+lcm = lcm(lcm, i);
+}
+return (lcm == x) ? &quot;Possible&quot; : &quot;Impossible&quot;;
+}
+
+long lcm(long a, long b) {
+return a * b / gcd(a, b);
+}
+
+long gcd(long a, long b) {
+

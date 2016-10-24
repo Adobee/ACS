@@ -1,0 +1,8 @@
+public void update(@PathVariable String id, @RequestBody @Valid Currency c){
+Currency curr=masterService.findById(id);
+if(curr==null){
+logger.warn(&quot;Currency dengan id [{}] tidak ditemukan&quot;, id);
+Currency a=masterService.findById(id);
+if(a==null){
+logger.warn(&quot;Currency dengan id [{}] tidak ditemukan&quot;, id);
+

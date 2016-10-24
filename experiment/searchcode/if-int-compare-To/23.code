@@ -1,0 +1,7 @@
+public Bester(Bestable... thingsToCompare) {
+if (thingsToCompare == null) throw new NullPointerException();
+this.thingsToCompare = thingsToCompare;
+Bestable champion = thingsToCompare[0];
+for (int i = 0; i < thingsToCompare.length; i++) {
+if (thingsToCompare[i].moreThan(champion))
+

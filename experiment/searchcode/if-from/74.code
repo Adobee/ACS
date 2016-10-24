@@ -1,0 +1,8 @@
+public String longestPalindrome(String s) {
+if (s == null)
+return null;
+final int len = s.length();
+isPalindrome[from][to] = s.charAt(from) == s.charAt(to-1) &amp;&amp; isPalindrome[from+1][to-1];
+if (isPalindrome[from][to] &amp;&amp; to - from > maxLen) {
+maxLen = to - from;
+

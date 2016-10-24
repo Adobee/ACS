@@ -1,0 +1,9 @@
+package chapter1;
+
+public class List {
+private Object[] _elements = new Object[10];
+private boolean _readOnly;
+int newSize = _elements.length + 1;
+if (newSize > _elements.length) {
+_elements = copyElements();
+

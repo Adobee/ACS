@@ -1,0 +1,7 @@
+public OpenMapRealVector append(RealVector v) {
+if (v instanceof OpenMapRealVector) {
+return append((OpenMapRealVector) v);
+public double dotProduct(RealVector v) {
+if(v instanceof OpenMapRealVector) {
+return dotProduct((OpenMapRealVector)v);
+

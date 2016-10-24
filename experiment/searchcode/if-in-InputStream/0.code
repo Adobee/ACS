@@ -1,0 +1,13 @@
+public class DelayedObjectInputStream {
+private ObjectInputStream in;
+private InputStream inputStream;
+
+public DelayedObjectInputStream(InputStream inputStream) {
+in = new ObjectInputStream(inputStream);
+}
+return in.readObject();
+}
+
+public void close() throws IOException {
+if (in != null) {
+

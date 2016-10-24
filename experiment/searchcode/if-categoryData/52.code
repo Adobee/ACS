@@ -1,0 +1,8 @@
+public JSONArray GetData(){
+if(categoryData == null){
+String cg = getSharedPreferences().getString(&quot;CategoryData&quot;, &quot;&quot;);
+if(!cg.equals(&quot;&quot;)){
+try {
+categoryData = new JSONArray(cg);
+} catch (JSONException e) {
+

@@ -1,0 +1,8 @@
+protected static boolean hasType (Item i, int t) {
+return i != null &amp;&amp; (i.type &amp; ~CLASS_MASK) == t;
+return i != null &amp;&amp; (i.type &amp; CLASS_MASK) == c;
+}
+
+public static boolean isStartDocument (Item i) {
+return hasType(i, START_DOCUMENT);
+

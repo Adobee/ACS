@@ -1,0 +1,12 @@
+public String expand(String text) {
+//_ <i> </i>
+//* <b> </b>
+boolean isFirstI=false;
+boolean isFirstB=false;
+String expanded=&quot;&quot;;
+for(int i=0;i<text.length();i++){
+char token=text.charAt(i);
+if(token==&#39;_&#39;){
+if(!isFirstI){
+expanded+=&quot;<i>&quot;;isFirstI=true;
+

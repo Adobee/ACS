@@ -1,0 +1,10 @@
+* @author Anson Schwabecher
+*/
+public abstract class RuleChain implements Rule<Boolean> {
+
+private List<Rule<Boolean>> rules;
+@SafeVarargs
+protected RuleChain(final Rule<Boolean>... rules) {
+this();
+for (Rule<Boolean> rule : rules) {
+

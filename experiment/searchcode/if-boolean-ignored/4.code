@@ -1,0 +1,13 @@
+toBeIgnored.add(&quot;org.joda.time*&quot;);
+}
+
+void add(String toIgnore) {
+this.toBeIgnored.add(toIgnore);
+}
+
+boolean isIgnored(Class<?> targetClass) {
+String canonicalName = targetClass.getCanonicalName();
+for (String ignored : toBeIgnored) {
+
+if ( wildCardMatch(ignored, canonicalName) || equalityMatch(ignored, canonicalName) )  {
+

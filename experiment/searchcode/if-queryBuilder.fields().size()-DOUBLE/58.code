@@ -1,0 +1,8 @@
+for(int i=0;i<type_split.length;i++){
+if(type_split[i].equalsIgnoreCase(&quot;double precision&quot;) || type_split[i].equalsIgnoreCase(&quot;integer&quot;) || type_split[i].equalsIgnoreCase(&quot;float&quot;) || type_split[i].equalsIgnoreCase(&quot;double&quot;)){
+//				fields.put(col_split[i], 1);
+}
+}
+fields.put(&quot;_id&quot;, 0);
+DBObject project = new BasicDBObject(&quot;$project&quot;, fields );
+

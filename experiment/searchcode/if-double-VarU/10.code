@@ -1,0 +1,12 @@
+import se.chalmers.ait.dat215.project.ShoppingCart;
+
+/**
+*
+* @author Matildaandersson
+*/
+public class VaruPanel extends javax.swing.JPanel {
+ImageIcon RHeart = new javax.swing.ImageIcon(getClass().getResource(&quot;/resources/redHeart.png&quot;));
+
+/**
+* Creates new form VaruPanel
+

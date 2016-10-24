@@ -1,0 +1,12 @@
+public static Set<? extends Object> intersectSet(Set<? extends Object> orig, Set<? extends Object> intersect) {
+if (orig == null) {
+Set<Object> set = new HashSet<Object>(orig.size());
+for (Object p : orig) {
+if (intersect.contains(p))
+set.add(p);
+}
+return set;
+}
+
+}
+

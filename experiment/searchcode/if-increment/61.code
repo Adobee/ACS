@@ -1,0 +1,11 @@
+import actionEngines.ActionEngine;
+import actionEngines.ActorActionEngine;
+
+public class IncrementHPCommand extends BasicCommand implements GenericCommand {
+public void execute(ActionEngine actionEngine) {
+if (actionEngine instanceof ActorActionEngine){
+((ActorActionEngine)actionEngine).incrementHP(increment);}
+}
+
+}
+

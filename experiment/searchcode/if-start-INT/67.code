@@ -1,0 +1,5 @@
+public class Solution {
+public int findKth(int A[], int B[], int aStart, int aEnd, int bStart, int bEnd, int k){
+int m = aEnd-aStart+1, n = bEnd-bStart+1;
+// special cases
+

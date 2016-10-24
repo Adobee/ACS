@@ -1,0 +1,9 @@
+public String getResponseByGet(String httpUrl) {
+String response = httpHelper.mGet(httpUrl);
+if (AppUtil.isNotEmpty(response)) {
+return response;
+try {
+String response = httpHelper.mGet(httpUrl);
+if (AppUtil.isNotEmpty(response)) {
+return new JSONObject(response);
+

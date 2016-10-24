@@ -1,0 +1,11 @@
+pendingJoins.add(joinNodeAsync(node));
+}
+nodeJoinController.stopElectionContext(&quot;test&quot;);
+boolean hadSyncJoin = false;
+for (int i = randomInt(5); i > 0; i--) {
+nodes.add(node);
+joinNode(node);
+hadSyncJoin = true;
+}
+if (hadSyncJoin) {
+

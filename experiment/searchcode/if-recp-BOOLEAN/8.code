@@ -1,0 +1,8 @@
+* recpTo }, new String[] { recpCc }, subject, messageTxt, messageHtml, new String[] { attachment }); }
+*/
+public static boolean sendOrderMail(String recpTo[], String subject, String messageTxt, String messageHtml, String attachment) throws MessagingException {
+return sendOrderMail(recpTo, subject, messageTxt, messageHtml, new String[] { attachment });
+}
+
+public static boolean sendOrderMail(String recpTo, String subject, String messageHtml) throws MessagingException {
+

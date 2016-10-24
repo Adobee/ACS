@@ -1,0 +1,11 @@
+mItem = new Distance();
+}
+
+@Override
+public boolean isEmpty() {
+if (mItem.getDistanceStandard() <= 0) return true;
+String d = (String) json.get(JSON_DISTANCE);
+String u = (String) json.get(JSON_UNIT);
+
+double distance = Double.parseDouble(d);
+

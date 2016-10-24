@@ -1,0 +1,10 @@
+if (nodeToRemove != null) {
+if (nodeToRemove.parent != null) {
+Node<T> nodeParent = nodeToRemove.parent;
+// Splay the parent node to the root position
+Node<T> grandParent = (parent != null) ? parent.parent : null;
+if (parent == root) {
+// Zig step
+root = node;
+node.parent = null;
+

@@ -1,0 +1,11 @@
+package com.gilded.gbjam;
+
+public class Camera {
+public int x, y, width, height;
+
+public Camera (int width, int height) {
+if(x + GBJam.GAME_WIDTH > width) this.x = width - GBJam.GAME_WIDTH;
+if(y + GBJam.GAME_HEIGHT > height) this.y = height - GBJam.GAME_HEIGHT;
+}
+}
+

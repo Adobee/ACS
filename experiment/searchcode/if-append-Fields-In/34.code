@@ -1,0 +1,7 @@
+sb.append(getBlanks(2)).append(&quot;StringBuffer hql = new StringBuffer(\&quot;FROM &quot;).append(clazz.getSimpleName()).append(&quot; WHERE 1 = 1\&quot;);&quot;).append(BR);
+
+Field[] fields = clazz.getDeclaredFields();
+for(Field field : fields){
+Comment comment = field.getAnnotation(Comment.class);
+if (comment != null &amp;&amp; comment.searchable()) {
+

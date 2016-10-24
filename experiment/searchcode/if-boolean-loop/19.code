@@ -1,0 +1,16 @@
+public abstract class CloseableThread extends Thread{
+
+private final boolean loop;
+
+private volatile boolean enabled;
+
+public CloseableThread(boolean loop) {
+this.enabled = true;
+
+if(loop){
+while(enabled){
+commit();
+}
+}else{
+commit();
+

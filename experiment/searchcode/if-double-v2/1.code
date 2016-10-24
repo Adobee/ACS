@@ -1,0 +1,11 @@
+public Double somar(Double v1, Double v2){
+return v1+v2;
+}
+
+public Double multiplicar(Double v1, Double v2){
+return v1*v2;
+}
+
+public Double dividir(Double v1, Double v2){
+return v2!=0 ? v1/v2 : null;
+

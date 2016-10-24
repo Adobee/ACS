@@ -1,0 +1,11 @@
+Map<Character, Integer> map = new HashMap<Character, Integer>();
+
+for (int i = 0; i < strings.length; i++) {
+if (strings[i] != &quot;&quot;) {
+if (!map.containsKey(strings[i].charAt(0))) {
+map.put(strings[i].charAt(0), i);
+}
+else {
+if (map.get(strings[i].charAt(0)) != -1) {
+int index = map.get(strings[i].charAt(0));
+

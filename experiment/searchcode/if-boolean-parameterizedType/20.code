@@ -1,0 +1,10 @@
+boolean flag = true;
+if(obj instanceof ParameterizedType) goto _L2; else goto _L1
+_L1:
+flag = false;
+_L4:
+ParameterizedType parameterizedtype = (ParameterizedType)obj;
+if(this != parameterizedtype)
+{
+Type type = parameterizedtype.getOwnerType();
+

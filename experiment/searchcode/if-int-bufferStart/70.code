@@ -1,0 +1,9 @@
+private int bufferStart;
+private int bufferSize;
+
+public int read(char[] buf, int n) {
+int start = 0;
+while(start < n) {
+if(bufferStart < bufferSize) {
+buf[start] = buffer[bufferStart];
+

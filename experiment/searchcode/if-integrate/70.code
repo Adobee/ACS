@@ -1,0 +1,14 @@
+for (int j = i; j < physicsComponents.size(); j++) {
+PhysicsComponent jComponent = physicsComponents.get(j);
+this.integrate(iComponent, jComponent, delta);
+ICollider3D jCollider = jComponent.getCollider();
+if (iCollider == null || jCollider == null) {
+iComponent.integrate(delta);
+jComponent.integrate(delta);
+
+return;
+}
+}
+
+}
+

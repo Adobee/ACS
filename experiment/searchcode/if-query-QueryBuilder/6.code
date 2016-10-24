@@ -1,0 +1,12 @@
+this.matcher = matcher;
+}
+
+public QueryBuilder playsIn(String team) {
+if (matcher == null) {
+return new QueryBuilder(new PlaysIn(team));
+return new QueryBuilder(new And(matcher, new PlaysIn(team)));
+}
+
+public QueryBuilder hasAtLeast(int amountOf, String type) {
+if (matcher == null) {
+

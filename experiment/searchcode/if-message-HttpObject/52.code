@@ -1,0 +1,12 @@
+conn.setRequestProperty(&quot;Content-Type&quot;, &quot;application/x-www-form-urlencoded&quot;);
+conn.setDoOutput(true);
+conn.setDoInput(true);
+
+if(httpObject.getHeaders() != null) {
+conn.setRequestProperty(pair.getKey(), pair.getValue());
+}
+}
+
+if(httpObject.getParams() != null) {
+os = conn.getOutputStream();
+

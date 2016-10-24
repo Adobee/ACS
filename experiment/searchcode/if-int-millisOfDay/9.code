@@ -1,0 +1,7 @@
+return null;
+// this is ugly:
+int millisOfDay = data.getMillisOfDay();
+int secondsOfDay = millisOfDay / 1000;
+int hour = secondsOfDay / 3600;
+int minute = (secondsOfDay - 3600 * hour) / 60;
+

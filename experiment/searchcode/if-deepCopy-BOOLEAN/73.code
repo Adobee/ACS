@@ -1,0 +1,10 @@
+* @return duplicated value
+*/
+
+public static Object duplicate(Object object, boolean deepCopy) {
+if(object == null) 				return null;
+if(object instanceof Date)		return ((Date)object).clone();
+if(object instanceof Boolean)	return object;
+
+RefBoolean before=new RefBooleanImpl();
+

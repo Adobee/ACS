@@ -1,0 +1,11 @@
+@Override
+public void renderTileEntityAt(TileEntity ent,
+double x, double y, double z, float f)
+{
+if(ent == null || !(ent instanceof TileTank)) return;
+IIcon renderIcon = tent.getFluidStaticIcon();
+if(renderIcon != null)
+{
+float umin = renderIcon.getMinU();
+float umax = renderIcon.getMaxU();
+

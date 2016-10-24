@@ -1,0 +1,9 @@
+int j = 0;
+while(j<len){
+
+if(x[i] < SCALE*(j+1) &amp;&amp; SCALE*(j+1) <= x[i+1]){
+resample[j] = y[i] + (y[i+1] - y[i]) * ((SCALE*(j+1) - x[i] ) / ( x[i+1] -x[i]));
+j++;
+}
+else if(SCALE*(j+1) <= x[i] &amp;&amp; i==0){
+

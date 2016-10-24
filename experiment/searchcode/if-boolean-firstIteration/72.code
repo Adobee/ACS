@@ -1,0 +1,11 @@
+public void getCoMAcceleration(FrameVector comAccelerationToPack)
+{
+boolean firstIteration = true;
+double totalMass = 0.0;
+
+for (RigidBody rigidBody : rigidBodies)
+linkLinearMomentumDot.scale(mass);
+
+if (firstIteration)
+comAccelerationToPack.setIncludingFrame(linkLinearMomentumDot);
+

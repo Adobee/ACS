@@ -1,0 +1,10 @@
+public class GaussianEquation extends AbstractEquation {
+private double sigma;
+private double rho;
+
+private double exp_multiplier;
+private double exp_member;
+
+public GaussianEquation(double sigma) {
+setSigma(sigma);
+

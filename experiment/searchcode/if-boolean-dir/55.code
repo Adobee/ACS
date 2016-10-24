@@ -1,0 +1,13 @@
+super();
+this.dirName = dirName;
+}
+
+@Override
+public boolean accept(File pathname) {
+
+boolean directory = pathname.isDirectory();
+
+if (directory) {
+if (dirName == null) {
+return true;
+

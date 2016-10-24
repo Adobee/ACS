@@ -1,0 +1,8 @@
+private PatientDouble nextPatientDouble;
+private PatientDouble previousPatientDouble;
+
+public PatientDouble(String name, int age, String illness)
+if (this.nextPatientDouble == null)
+{
+//            if (this.previousPatientDouble == null)
+

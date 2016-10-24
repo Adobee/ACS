@@ -1,0 +1,9 @@
+shell.setLayout(fillLayout);
+
+xyPlotCanvas = new XYPlotCanvas(this.shell);
+xyPlotCanvas.addF1Listener(new Listener() {
+public void handleEvent(Event event) {
+IXYPlot xyplot = xyPlotCanvas.getXYPlot();
+xyplot.setXAxisText(&quot;Time&quot;);
+xyplot.setXUnitText(&quot;s&quot;);
+

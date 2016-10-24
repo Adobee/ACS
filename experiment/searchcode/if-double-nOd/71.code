@@ -1,0 +1,12 @@
+lower = denominator;
+searchNod();
+}
+
+public double getResult() {
+return (double) upper / lower;
+}
+
+public String toString() {
+if (nod > 1) {
+upper = upper / nod;
+

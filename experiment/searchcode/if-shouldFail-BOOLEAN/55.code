@@ -1,0 +1,7 @@
+private static Page tryGetPage(final URL url, final WebClient webClient, final boolean shouldFail) {
+try {
+LOG.debug(&quot;Visiting: &quot; + url + &quot; (fail=&quot; + shouldFail + &quot;)&quot;);
+private static Page returnNullOrFail(final Exception e, final boolean shouldFail) {
+if (shouldFail) {
+throw new RuntimeException(e);
+

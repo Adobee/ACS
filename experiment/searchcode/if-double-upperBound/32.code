@@ -1,0 +1,12 @@
+private double lowerBound;
+private double upperBound;
+
+public Gene() {
+
+}
+
+public Gene(double lowerBound, double upperBound) {
+private void normaliseBounds() {
+if(lowerBound > upperBound){
+double lowerBound = this.upperBound;
+

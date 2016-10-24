@@ -1,0 +1,9 @@
+public Fonds(String name, double course)
+{
+if(name.isEmpty())
+{
+throw new IllegalArgumentException(&quot;name cant be empty&quot;);
+Random r = new Random();
+double randomValue = 0 + (20 - 0) * r.nextDouble();
+randomValue = Math.round(randomValue * 100.0) / 100.0;
+

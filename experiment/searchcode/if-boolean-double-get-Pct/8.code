@@ -1,0 +1,14 @@
+package com.nube.core.vo.analytics;
+
+public class Usage {
+
+String type;
+int count;
+double pct;
+public void adjustPct(int total){
+pct = Math.round(((double)count/(double)total) * 100d);
+}
+
+public double getPct() {
+return pct;
+

@@ -1,0 +1,9 @@
+package org.wikiup.modules.quartz;
+
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+public void release() {
+try {
+if(scheduler != null)
+scheduler.shutdown();
+

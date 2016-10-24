@@ -1,0 +1,9 @@
+* <!-- begin-user-doc --> <!-- end-user-doc -->
+* @generated
+*/
+public Dimension getRowDimension() {
+if (rowDimension != null &amp;&amp; rowDimension.eIsProxy()) {
+InternalEObject oldRowDimension = (InternalEObject) rowDimension;
+rowDimension = (Dimension) eResolveProxy(oldRowDimension);
+if (rowDimension != oldRowDimension) {
+

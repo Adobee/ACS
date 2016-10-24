@@ -1,0 +1,7 @@
+IptEventData iptData = IptEventData.new_(sender, IptEventType_.KeyDown, keyState.Key(), keyState, mouseStateCur);
+//			if (keyState.Key().Eq(IptKey_.add_(IptKey_.F1))) {
+//				Tfds.Write(keyState.Key(), keyState.Key().Val());
+public static final IptEventMgr EventSink2 = new IptEventMgr(); IptEventMgr() {}
+public Object Invk(GfsCtx ctx, int ikey, String k, GfoMsg m) {
+if		(ctx.Match(k, Tmr_cmd))		MousePressTick();
+

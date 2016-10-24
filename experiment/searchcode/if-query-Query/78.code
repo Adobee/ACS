@@ -1,0 +1,6 @@
+public Object execute(Object query) throws ClassNotFoundException, SQLException, Exception {
+if(query instanceof QueryLoad){
+return controller.getQueryLoad((QueryLoad)query);
+} else if(query instanceof QueryFind){
+return controller.getQueryFind((QueryFind)query);
+

@@ -1,0 +1,11 @@
+//rot of UNSIGNED shift; rollback or WTVR
+
+while(shift < 0 &amp;&amp; Character.isLetter(ret)) {
+
+if(ret == &#39;A&#39;) {
+while(shift > 0 &amp;&amp; Character.isLetter(ret)) {
+
+if(ret == &#39;Z&#39;) {
+ret = &#39;A&#39;;
+}else {
+

@@ -1,0 +1,7 @@
+equal to <i>V</i>, otherwise it has one column equal to <i>V</i>  */
+public RealMatrix( final RealVector V, final boolean covariant ){
+this( covariant ? 1 : V.size(), covariant ? V.size(): 1 );
+/** return <tt>true</tt> if <i>this</i> equals <i>m</i> */
+public boolean equals( final RealMatrix m ){
+if(m.numRows!=numRows||m.numCols!=numCols) return false;
+

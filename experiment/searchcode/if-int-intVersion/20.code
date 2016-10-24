@@ -1,0 +1,7 @@
+public class Version implements Comparable<Version> {
+
+protected final int intVersion;
+protected final String strVersion;
+return this.intVersion - o.intVersion;
+} else if (o.strVersion == null &amp;&amp; this.strVersion == null) {
+

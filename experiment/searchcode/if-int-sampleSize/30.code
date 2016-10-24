@@ -1,0 +1,17 @@
+Random rnd = new Random(System.currentTimeMillis());
+for (int i = 0; i < limit; i++) {
+if (i < sampleSize)
+sample[i] = i;
+else {
+int j = rnd.nextInt(i + 1);
+if (j < sampleSize) {
+sample[j] = i;
+}
+}
+}
+Arrays.sort(sample);
+return sample;
+}
+
+}
+

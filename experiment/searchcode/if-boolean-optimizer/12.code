@@ -1,0 +1,12 @@
+protected final Set<OptimizerIterationListener> iterationListeners = new CopyOnWriteArraySet<OptimizerIterationListener>();
+
+protected boolean optimizing = false;
+
+/**
+* Constructs an {@link AbstractOptimizer} with a {@link Population}, an
+* @see org.opt4j.core.optimizer.Optimizer#isRunning()
+*/
+@Override
+public boolean isRunning() {
+return optimizing;
+

@@ -1,0 +1,8 @@
+public void addValue(Comparable<?>v){
+Object obj = v;
+if (v instanceof Integer) {
+obj = Long.valueOf(((Integer) v).longValue());
+Long count = (Long) freqTable.get(obj);
+if (count == null) {
+freqTable.put(obj, Long.valueOf(1));
+

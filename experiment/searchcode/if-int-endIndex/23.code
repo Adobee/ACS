@@ -1,0 +1,9 @@
+private static boolean search(int[] A, int beginIndex, int endIndex,
+int target) {
+if (beginIndex > endIndex) {
+return false;
+}
+int middle = (beginIndex + endIndex) / 2;
+if (A[middle] == target) {
+return true;
+

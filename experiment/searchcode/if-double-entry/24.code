@@ -1,0 +1,6 @@
+HashMap<HashMap<Double, Double>, ArrayList<HashMap<Double, Double>>> neighborList = createNeighborList(positionList);
+Iterator<Entry<HashMap<Double, Double>, ArrayList<HashMap<Double, Double>>>> it = neighborList
+.entrySet().iterator();
+while (it.hasNext()) {
+Entry<HashMap<Double, Double>, ArrayList<HashMap<Double, Double>>> entry = it
+

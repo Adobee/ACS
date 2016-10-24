@@ -1,0 +1,16 @@
+public abstract class FamiliaParametricaImpl implements FamiliaParametrica {
+private Double mu;
+
+public FamiliaParametricaImpl(){
+this.mu = 0.0;
+}
+
+public FamiliaParametricaImpl(Double mu){
+this.mu = mu;
+}
+
+
+
+public Double getMu(){
+return this.mu;
+

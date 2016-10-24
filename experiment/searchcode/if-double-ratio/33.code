@@ -1,0 +1,11 @@
+double f=0;
+double sumX=0;
+
+for (int i = 0; i < 4; i++) {
+if(x[i]>1)
+return 100000000;
+if(x[i]<0)
+return 100000000;
+double ratio=llr*x[i]/b[i];
+double Z=ratio/(ratio+1);
+

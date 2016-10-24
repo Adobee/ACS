@@ -1,0 +1,15 @@
+Position _position = position;
+if (_position != null){
+Position nextPosition = new Position(_position.get_x(), _position.get_y());
+nextPosition = nextPosition.change_Position(nextPosition, -1, 0);
+break;
+}
+if (_positionValidator.validate(nextPosition))
+{
+return nextPosition;
+}
+}
+return position;
+}
+}
+

@@ -1,0 +1,11 @@
+public RealInterval(double minVal, double maxVal)
+{
+this.min = minVal;
+this.max = maxVal;
+try
+{
+if (StringUtils.isEmpty(maxVal))
+return;
+
+max = Float.parseFloat(maxVal);
+

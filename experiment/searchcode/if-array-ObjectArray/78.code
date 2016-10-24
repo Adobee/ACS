@@ -1,0 +1,8 @@
+public static <E> ObjectArray<E> from(final E... elems) {
+if(elems.length == 0) return empty();
+final FingerTreeBuilder<E> builder = new FingerTreeBuilder<>();
+if(pos < 0 || len < 0 || len > size() - pos) throw new IndexOutOfBoundsException();
+if(len == 0) return empty();
+if(len == size()) return this;
+return new ObjectArray<E>(root.slice(pos, len).getTree());
+

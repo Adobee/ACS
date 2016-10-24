@@ -1,0 +1,6 @@
+public class ExactSlopSpanNearQuery extends SpanNearQuery {
+int _slopMin;
+int _slopMax;
+public ExactSlopSpanNearQuery(SpanQuery[] clauses, int slopMin, int slopMax, boolean inOrder) {
+super(clauses, slopMin, inOrder, false);
+

@@ -1,0 +1,9 @@
+private final Source framedMessageSource = new FramedMessageSource();
+
+private boolean closed;
+private boolean messageClosed;
+
+// Stateful data about the current frame.
+public WebSocketReader(boolean isClient, BufferedSource source, FrameCallback frameCallback) {
+if (source == null) throw new NullPointerException(&quot;source == null&quot;);
+

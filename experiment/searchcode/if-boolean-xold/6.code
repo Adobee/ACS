@@ -1,0 +1,8 @@
+int newYPos = pos.getY() + vel.getY();
+
+if (smoothXPath(xOld, newXPos, yOld)) {
+if (smoothYPath(yOld, newYPos, newXPos)) {
+} else {// x didn&#39;t work
+if (smoothYPath(yOld, newYPos, xOld)) {// y works, x doesn&#39;t.
+if (smoothXPath(xOld, newXPos, newYPos)) {// special case, y
+

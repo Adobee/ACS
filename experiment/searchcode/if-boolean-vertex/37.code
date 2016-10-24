@@ -1,0 +1,13 @@
+for (int i = 0; i < vertices.size(); i++)
+{
+DFSVertex vertex = vertices.get(i);
+if (vertex.getColor() == VertexColor.WHITE)
+dfsVisit(vertex, adjacencyMatrix[i]);
+}
+}
+}
+
+public void dfsVisit(DFSVertex vertex, boolean[] adjacencyRow)
+{
+vertex.setDiscoveredTime(System.currentTimeMillis());
+

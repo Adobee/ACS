@@ -1,0 +1,12 @@
+public String getDecimalNotated() {
+String returnValue = defaultDecString;
+
+if (precision == Precision.HALF) {
+String beforeShiftStr = beforeShift.toString();
+int i = 0;
+
+shiftLeft = 0;
+boolean decimalFound = false;
+
+while (!decimalFound) {
+

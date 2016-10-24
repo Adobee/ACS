@@ -1,0 +1,8 @@
+public double distSet(LinkedList<Point> points) {
+if (points.size() == 0)
+return Double.MAX_VALUE;
+double min = this.dist(points.get(0));
+for (Point p : points) {
+double tmp = this.dist(p);
+if (tmp < min) {
+

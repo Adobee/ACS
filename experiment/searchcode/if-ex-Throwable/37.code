@@ -1,0 +1,10 @@
+public List<Throwable> causes = new ArrayList<>();
+
+public ErrorInfo(String url, Throwable ex) {
+this.url = url;
+this.exception = ex;
+setCause(ex);
+}
+
+private void setCause(Throwable ex) {
+

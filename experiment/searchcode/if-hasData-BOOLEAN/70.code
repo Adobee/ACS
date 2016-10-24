@@ -1,0 +1,10 @@
+return signal1Data.getActualIntegrationTimeIn_ms();
+}
+
+//public boolean hasData(){
+//	if (sens1Data.hasData() &amp; sens2Data.hasData() &amp; darkCurrentData.hasData() &amp; signal1Data.hasData())
+// Rainer Winkler 30.05.2014 Ignoriere Sens1 und Sens2 Daten
+public boolean hasData(){
+if (darkCurrentData.hasData() &amp; signal1Data.hasData())
+return true;
+

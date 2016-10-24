@@ -1,0 +1,16 @@
+if(x <0)	return false;
+long high = 1;
+while(x / high > 0)
+high = high * 10;
+high = high / 10;
+while(x > 0){
+if( x / high != x % 10)
+return false;
+x = (int) (x % high);
+x = x /10;
+high = high / 100;
+}
+return true;
+}
+}
+

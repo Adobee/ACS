@@ -1,0 +1,12 @@
+throw new IllegalStateException();
+}
+
+for (DelimiterToken token : tokens) {
+String delimiter = token.getText();
+
+if (!delimiters.contains(delimiter)) {
+throw new IllegalStateException();
+}
+
+if (map.containsKey(delimiter)) {
+

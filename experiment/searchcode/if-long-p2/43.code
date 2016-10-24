@@ -1,0 +1,11 @@
+import java.util.*;
+public class Main {
+static int maxn=64;
+static long[] p2;
+static HashSet<Long> st=new HashSet<Long>();
+if (r-l+1L>1L){
+for(;i<maxn-1;i++)
+if (p2[i]<r-l+1L&amp;&amp;r-l+1L<=p2[i+1])
+break;
+if (r-l+1-p2[i]<p2[i]){
+

@@ -1,0 +1,9 @@
+public M_User getById(@PathVariable String id) {
+M_User m_User = masterService.getdById(id);
+if (m_User == null) {
+throw new IllegalStateException();
+public void update(@PathVariable String id,@RequestBody M_User m_User ){
+M_User mu = masterService.getdById(id);
+if(mu==null){
+throw new IllegalStateException();
+

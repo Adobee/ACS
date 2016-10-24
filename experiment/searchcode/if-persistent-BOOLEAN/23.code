@@ -1,0 +1,13 @@
+this.fast = fast;
+this.persistent = persistent;
+}
+
+@Override
+public boolean contains(K k) {
+return persistent.contains(k);
+}
+
+@Override
+public V read(K k) {
+if (fast.contains(k)) {
+

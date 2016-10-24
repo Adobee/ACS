@@ -1,0 +1,5 @@
+public TransactionAttribute(boolean readonly, Class<?>[] rollback, boolean nested, boolean required, int timeout) {
+this.nested = nested;
+this.timeout = timeout;
+if (required == false &amp;&amp; ((rollback != null &amp;&amp; rollback.length > 0) || timeout > 0)) {
+

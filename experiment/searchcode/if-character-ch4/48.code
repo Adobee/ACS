@@ -1,0 +1,12 @@
+return sb;
+}
+} else if (0xF0 <= ch &amp;&amp; ch <= 0xF4) {
+int ch2;
+int ch3;
+int ch4;
+unread();
+unread();
+
+return ERROR_CHARACTER;
+} else if ((ch4 &amp; 0xc0) != 0x80) {
+

@@ -1,0 +1,11 @@
+private int inFlow = 0;
+
+public FlowInputStream(InputStream in) {
+this.inputStream = in;
+}
+
+@Override
+int result = this.inputStream.read(b, off, len);
+if (result != -1) {
+this.inFlow = this.inFlow + result;
+

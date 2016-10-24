@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class GCDProduct {
+
+public static int GCD(int m, int n) {
+if (n == 0)
+for (int i = 2; i <= m; i++)
+for (int j = 2; j <= n; j++) {
+if (GCD[i][j] == 0 &amp;&amp; GCD[j][i] == 0) {
+GCD[i][j] = GCD[j][i] = GCD(i, j);
+

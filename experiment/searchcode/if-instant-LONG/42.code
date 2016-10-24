@@ -1,0 +1,10 @@
+/*
+* An XML document type.
+* Localname: TimeInstant
+* Namespace: http://www.opengis.net/gml/3.2
+public class TimeInstantDocumentImpl extends net.opengis.gml.x32.impl.AbstractTimeGeometricPrimitiveDocumentImpl implements net.opengis.gml.x32.TimeInstantDocument
+{
+private static final long serialVersionUID = 1L;
+
+public TimeInstantDocumentImpl(org.apache.xmlbeans.SchemaType sType)
+

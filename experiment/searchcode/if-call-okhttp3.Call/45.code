@@ -1,0 +1,13 @@
+package org.xl.util.http;
+
+import java.io.IOException;
+
+import okhttp3.MediaType;
+import okhttp3.OkHttpClient;
+//				.header(&quot;Authorization&quot;, credential)		//认证
+.url(url)
+.build();
+
+Response response = client.newCall(request).execute();
+if(response.isSuccessful()){
+

@@ -1,0 +1,9 @@
+//Find the grade level for the Flesh results
+int q = 0;
+for (int i = 1; i < 501; i++) {
+if (gbDoubleArray[q] >= 17.00) {
+evaluatedResults.add(GL + &quot;College&quot;);
+q = q +2;
+} else if (gbDoubleArray[q] >= 12.00) {
+evaluatedResults.add(GL + &quot;12th Grade&quot;);
+

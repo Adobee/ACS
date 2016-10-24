@@ -1,0 +1,8 @@
+public Action getAction(final Prince prince, final StepStrategy stepStrategy) {
+final Field next = stepStrategy.getNextStepField(prince);
+
+if (next != null &amp;&amp; EObstacle.THORNBUSH.equalsTo(next.getObstacle())) {
+Log.fine(&quot;-- thornbush&quot;);
+final boolean burnt = Boolean.parseBoolean(next.getObstacle().getProperty(&quot;burnt&quot;));
+if (!burnt) {
+

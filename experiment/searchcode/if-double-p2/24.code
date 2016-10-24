@@ -1,0 +1,7 @@
+public static final void sigma(double x, double end, double p1, double p2,
+double valAtp1, double valAtp2) {
+
+double a1,a2,v1,v2,a,b,c,d; //Auxilary variables
+
+if (x>=end) {
+

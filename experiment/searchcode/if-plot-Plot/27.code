@@ -1,0 +1,9 @@
+import com.google.gwt.user.client.Element;
+import com.googlecode.gflot.client.options.PlotOptions;
+
+public final class PlotFactory
+{
+public static SimplePlot createPlot()
+{
+return createPlot( createUniquePlotContainer(), new PlotModel(), null );
+

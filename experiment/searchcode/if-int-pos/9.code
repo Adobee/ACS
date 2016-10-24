@@ -1,0 +1,6 @@
+if (s.length() != 0 &amp;&amp; p.length() == 0) return false;
+int posS = 0, posP = 0, lastPosS = -1, lastPosP = -1;
+while(posS < s.length()) {
+if (posP < p.length()) {
+if (p.charAt(posP) == &#39;?&#39; || p.charAt(posP) == s.charAt(posS)) {
+

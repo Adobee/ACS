@@ -1,0 +1,12 @@
+* @author nicholasbartlett
+*/
+public class ByteInDelLikelihood { //implements Likelihood{
+
+private double[] lambda = new double[]{0.0
+private double[] logLambda = new double[8];
+
+private double logSum = 0d;
+
+private byte[] logProbContains;
+private double[] logProbs;
+

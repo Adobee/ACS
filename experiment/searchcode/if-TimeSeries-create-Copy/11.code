@@ -1,0 +1,6 @@
+protected Ordering<Result<TimeseriesResultValue>> makeOrdering(Query<Result<TimeseriesResultValue>> query)
+{
+return ResultGranularTimestampComparator.create(
+protected BinaryFn<Result<TimeseriesResultValue>, Result<TimeseriesResultValue>, Result<TimeseriesResultValue>> createMergeFn(
+Query<Result<TimeseriesResultValue>> input
+

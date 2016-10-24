@@ -1,0 +1,9 @@
+double fanReach = 200;
+double fanForce = 0.5;
+double force;
+if (distance > fanReach) {
+force = 0;
+} else {
+Point direction = new Point(p2.x-p1.x, p2.y-p1.y);
+direction.x = (int)Math.round(((double)direction.x)/Math.sqrt(direction.x*direction.x + direction.y*direction.y));
+

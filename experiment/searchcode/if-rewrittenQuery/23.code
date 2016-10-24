@@ -1,0 +1,9 @@
+rewrittenQuery.append(factNameAndAlias);
+
+if (!whereFilters.isEmpty()) {
+rewrittenQuery.append(&quot; where &quot;).append(StringUtils.join(whereFilters, &quot; and &quot;));
+if (StringUtils.isNotBlank(groupbytree)) {
+rewrittenQuery.append(&quot; group by &quot;).append(groupbytree);
+}
+if (StringUtils.isNotBlank(havingtree)) {
+

@@ -1,0 +1,10 @@
+return &quot;UnknownClass&quot;;
+}
+
+String className = &quot;UnknownClass&quot;;
+if (object instanceof Class) {
+className = ((Class) object).getCanonicalName();
+className = path[path.length - 1];
+if (className.endsWith(&quot;_&quot;)) {
+className = className.substring(0, className.length() - 1);
+

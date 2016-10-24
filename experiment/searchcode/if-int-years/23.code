@@ -1,0 +1,15 @@
+private int ageInYears;
+
+public Age() {
+}
+
+public Age(int ageInYears) {
+this.ageInYears = ageInYears;
+}
+
+public int getAgeInYears() {
+return ageInYears;
+}
+
+public void setAgeInYears(int ageInYears) {
+

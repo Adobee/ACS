@@ -1,0 +1,8 @@
+public void visit(ModuleBuild build) throws Exception {
+if (!build.getState().isComplete()) {
+// repository build can&#39;t be done if this module isn&#39;t done
+return;
+}
+
+RepositoryBuild repositoryBuild = repositoryBuildService.get(build.getRepoBuildId()).get();
+

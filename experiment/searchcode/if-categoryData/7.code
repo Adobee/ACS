@@ -1,0 +1,11 @@
+import com.brainmaster.mobitronik.dto.CategoryData;
+
+@Component
+@Scope(&quot;session&quot;)
+public class CategoryForm {
+
+private CategoryData category = new CategoryData(UUID.randomUUID());
+public void setSelectedParentCategory(CategoryData selectedParentCategory) {
+this.selectedParentCategory = selectedParentCategory;
+if (selectedParentCategory != null)
+

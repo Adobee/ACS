@@ -1,0 +1,9 @@
+MatrixNode mtxNode = gradient.getMatrixNode();
+if (mtxNode != null)
+{
+double tx = mtxNode.tx;
+double ty = mtxNode.ty;
+FXGMatrix matrix = new FXGMatrix();
+matrix.scale(w/SwfConstants.GRADIENT_SQUARE, h/SwfConstants.GRADIENT_SQUARE);
+if (!Double.isNaN(gradient.getRotation()) &amp;&amp; (gradient.getRotation() != 0))
+

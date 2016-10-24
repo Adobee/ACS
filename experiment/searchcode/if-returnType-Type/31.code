@@ -1,0 +1,14 @@
+public class MemberFunctionDeclaration extends MethodDeclaration {
+
+private Type returnType;
+
+public MemberFunctionDeclaration(final AccessModifierKind accessKind) {
+super.remove(node);
+if (this.returnType == node) {
+this.returnType = null;
+}
+}
+
+@Override
+protected boolean internalAdd(final Node node) throws InvalidNodeException {
+

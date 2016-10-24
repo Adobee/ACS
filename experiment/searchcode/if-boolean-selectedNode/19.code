@@ -1,0 +1,11 @@
+public boolean startActionMode(FileNode selectedNode) {
+if (this.selectedNode != null) return false;
+this.actionMode = this.activity.startActionMode(this);
+public FileNode getSelectedNode() {
+return selectedNode;
+}
+
+
+@Override
+public boolean onCreateActionMode(ActionMode mode, Menu menu) {
+

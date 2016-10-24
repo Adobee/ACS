@@ -1,0 +1,11 @@
+* Created by LeoPC on 2015/10/15.
+*/
+public class SeriesManager {
+private int countSeries = 0;
+private int countPoints = 0;
+public PointsGraphSeries<DataPoint> allPointsSeries = new PointsGraphSeries<>();
+
+public class MySeries {
+public int id;
+public PointsGraphSeries<DataPoint> series = new PointsGraphSeries<>();
+

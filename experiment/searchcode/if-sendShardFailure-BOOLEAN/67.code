@@ -1,0 +1,7 @@
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicLong;
+public void fail(RecoveryFailedException e, boolean sendShardFailure) {
+if (finished.compareAndSet(false, true)) {
+try {
+

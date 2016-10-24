@@ -1,0 +1,9 @@
+public class ReflectUtils {
+public static boolean isCollection(Type type) {
+if (!(type instanceof Class)) return false;
+return (Map.class.isAssignableFrom((Class)type));
+}
+
+public static boolean isMapOrCollection(Type type) {
+if (!(type instanceof Class)) return false;
+

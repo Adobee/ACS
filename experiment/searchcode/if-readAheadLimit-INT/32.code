@@ -1,0 +1,11 @@
+public synchronized void reset ()
+{
+if (readAheadLimit > 0)
+pos = mark;
+}
+
+void resize (int len)
+{
+int cur_size = limit - pos;
+if (readAheadLimit > 0 &amp;&amp; pos - mark <= readAheadLimit)
+

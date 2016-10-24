@@ -1,0 +1,8 @@
+public Triangle(double sideA, double sideB, double sideC) throws TriangleException {
+if (triangleInvalid(sideA, sideB, sideC)) { throw new TriangleException(); }
+
+this.sideA = sideA;
+public TriangleKind getKind() {
+if (sideA == sideB &amp;&amp; sideB == sideC &amp;&amp; sideA == sideC) {
+return TriangleKind.EQUILATERAL;
+

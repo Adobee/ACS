@@ -1,0 +1,12 @@
+autoItX.mouseUp(WoW.RIGHT_MB);
+}
+
+public void rotateCharacter(int d) {
+if (d == 0) return;
+autoItX.mouseMove(autoItX.mouseGetPosX() + d, autoItX.mouseGetPosY());
+autoItX.send(string, isRaw);
+}
+
+public void rightClick(int x, int y){
+autoItX.mouseClick(WoW.RIGHT_MB, x, y, 1, 10);
+

@@ -1,0 +1,8 @@
+int numTerms = qEntries.length;
+if (numTerms == 0)
+return new QueryResults(null, null, 0, 0);
+* WAND 1.sort 按照docID进行排序 2.pivot 累加Maximum Score，找到pivot 3.align
+* 所有的term的current docID skipTo(pivot) 4.score candidate进行评分
+*/
+PartialSort.fsort(iterators);
+

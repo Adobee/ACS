@@ -1,0 +1,12 @@
+Expr a = evalArg(context, args[0]);
+if (a instanceof ExprArray) {
+ExprArray ar = (ExprArray) a;
+a = ar.get(0);
+}
+if (a instanceof ExprNumber) {
+return new ExprDouble(((ExprNumber) a).doubleValue());
+}
+return ExprDouble.ZERO;
+}
+}
+

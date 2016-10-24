@@ -1,0 +1,11 @@
+import okhttp3.ResponseBody;
+import okio.Buffer;
+
+/**
+* Created by oceanzhang on 16/3/9.
+*/
+public class CacheOperateImpl implements ICacheOperate {
+public void put(String url, Buffer buffer, long time) throws IOException {
+byte[] rawResponse = buffer.readByteArray();
+String cacheKey = MD5.getMD5(url);
+

@@ -1,0 +1,11 @@
+throw new InternalException(&quot;Maximum age must be positive&quot;);
+denySequences = root.get(&quot;denySequences&quot;).asBoolean();
+if (root.has(&quot;rehashNumber&quot;))
+{
+rehashNumber = root.get(&quot;rehashNumber&quot;).asInt();
+throw new InternalException(&quot;Rehash number must be positive&quot;);
+}
+
+JsonNode resetNode = root.get(&quot;resetSettings&quot;);
+if (resetNode != null)
+

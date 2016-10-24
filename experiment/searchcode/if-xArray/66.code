@@ -1,0 +1,11 @@
+canvas.save();
+
+canvas.drawColor(Color.WHITE);
+for (int x = 0; x < xArray.size() - 1; x++) {
+
+if (colorArray.get(x).equals(&quot;transparent&quot;)) {
+paint.setColor(Color.BLACK);
+}
+if (utensilArray.get(x).equals(&quot;pen&quot;)) {
+canvas.drawLine(xArray.get(x + 1), yArray.get(x + 1), xArray.get(x), yArray.get(x), paint);
+

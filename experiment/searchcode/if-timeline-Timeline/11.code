@@ -1,0 +1,9 @@
+package com.crm.timeline.application;
+
+import com.crm.timeline.domain.model.negotiation.Negotiation;
+public TimelineNegotiation register(Negotiation negotiation) {
+
+Optional<TimelineNegotiation> result = repository.findBy(negotiation);
+
+if (result.isPresent()) {
+

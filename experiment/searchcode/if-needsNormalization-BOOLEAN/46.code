@@ -1,0 +1,9 @@
+static String normalizeHostname(String hostname) {
+if (needsNormalization(hostname)) {
+hostname = IDN.toASCII(hostname, IDN.ALLOW_UNASSIGNED);
+return hostname.toLowerCase(Locale.US);
+}
+
+private static boolean needsNormalization(String hostname) {
+final int length = hostname.length();
+

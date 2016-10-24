@@ -1,0 +1,9 @@
+* coeff[2] -> 0.6
+* coeff[3] -> 0.8
+* coeff[4] -> 1000
+*/
+private double[] coeff = {0, 0.5, 0.6, 0.8, 1000};
+public double valuta(Tavolo tavolo, byte giocatore) {
+// ritorno il coeff corretto corrispondente al numero di pezzi cattivi mangiati
+if (giocatore == 1)
+

@@ -1,0 +1,7 @@
+Request.Builder builder = request.newBuilder()
+.addHeader(&quot;Content-Type&quot;, &quot;application/json&quot;);
+if(NetworkUtil.isNetworkAvailable(context)) {
+builder.addHeader(&quot;Cache-Control&quot;, &quot;no-cache&quot;);
+}else{
+int maxStale = 60 * 60 * 24 * 28; // tolerate 4-weeks stale
+

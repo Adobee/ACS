@@ -1,0 +1,7 @@
+/*  49 */   private static final Path tmpdir = Paths.get((String)AccessController.doPrivileged(new GetPropertyAction(&quot;java.io.tmpdir&quot;)), new String[0]);
+/*     */
+/*  52 */   private static final boolean isPosix = FileSystems.getDefault().supportedFileAttributeViews().contains(&quot;posix&quot;);
+/*  90 */       paramString2 = paramBoolean ? &quot;&quot; : &quot;.tmp&quot;;
+/*  91 */     if (paramPath == null)
+/*  92 */       paramPath = tmpdir;
+

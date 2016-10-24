@@ -1,0 +1,13 @@
+public static FinishedBuildStatus from(StatusDescriptor descriptor) {
+if (asList(Status.ERROR, Status.FAILURE, Status.WARNING).contains(descriptor.getStatus())) {
+} else {
+return none;
+}
+}
+
+
+public boolean isGreen() {
+return asList(none, passed).contains(this);
+}
+}
+

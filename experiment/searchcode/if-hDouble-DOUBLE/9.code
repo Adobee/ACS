@@ -1,0 +1,11 @@
+public float floatValue() {
+return value;
+}
+
+@Override
+public double doubleValue() {
+return value;
+static HNumber add(final HLong addend1, final HLong addend2) {
+final long sum = addend1.value + addend2.value;
+if (((sum ^ addend1.value) >= 0) || ((sum ^ addend2.value) >= 0)) {
+

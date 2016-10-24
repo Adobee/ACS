@@ -1,0 +1,8 @@
+/* 69 */     float reqScore = this.reqScorer.score();
+/* 70 */     if (this.optScorer == null) {
+/* 71 */       return reqScore;
+/*    */     }
+/*    */
+/* 74 */     int optScorerDoc = this.optScorer.docID();
+/* 75 */     if ((optScorerDoc < curDoc) &amp;&amp; ((optScorerDoc = this.optScorer.advance(curDoc)) == 2147483647)) {
+

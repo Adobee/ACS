@@ -1,0 +1,14 @@
+//	private int targetX;
+
+public InfernoComet(double x, double y, int targetX, int targetY, double dir) {
+super(x, y, dir);
+//		this.targetX = targetX;
+this.targetY = targetY;
+
+}
+
+public void update() {
+move();
+
+if (anim < 999999999) anim++;
+

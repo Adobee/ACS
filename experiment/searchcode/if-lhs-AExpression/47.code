@@ -1,0 +1,7 @@
+final AStatement statement = ((AStatementEdge)cfaEdge).getStatement();
+if (statement instanceof AFunctionCall) {
+final AExpression functionNameExp = ((AFunctionCall)statement).getFunctionCallExpression().getFunctionNameExpression();
+List<? extends AExpression> params = ((AFunctionCall)statement).getFunctionCallExpression().getParameterExpressions();
+AExpression expr0 = params.get(0);
+if (!(expr0 instanceof CIdExpression)) {
+

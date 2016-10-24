@@ -1,0 +1,14 @@
+package algorithms.string;
+
+public class StringSearch {
+public boolean KMP(String source, String pattern) {
+} while (indexPattern != patternLength &amp;&amp; indexSource != sourceLength-patternLength);
+
+if (indexPattern == patternLength) {
+result = true;
+}
+
+return result;
+}
+}
+

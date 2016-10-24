@@ -1,0 +1,13 @@
+this.next = next;
+}
+
+public void handleRequest(Number request) {
+if (isAppropriate(request)) {
+delegateRequest(request);
+}
+}
+
+private void delegateRequest(Number request) {
+if (next != null) {
+next.handleRequest(request);
+

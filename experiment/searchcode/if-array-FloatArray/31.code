@@ -1,0 +1,13 @@
+import fan.sys.*;
+import java.util.Arrays;
+
+public abstract class FloatArray extends FanObj
+{
+
+public static FloatArray makeF4(long size) { return new F4((int)size); }
+public FloatArray fill(double val, Range range)
+{
+int start, end;
+int size = (int)size();
+if (range == null) { start = 0; end = size-1; }
+

@@ -1,0 +1,16 @@
+return flag;
+}
+
+public static double nullToDoubleZero(String tmp) {
+double num = 0;
+if(tmp != null &amp;&amp; !tmp.isEmpty()) {
+public static double nullToDoubleOne(String tmp) {
+double num = 1;
+if(tmp != null &amp;&amp; !tmp.isEmpty()) {
+num =  Double.parseDouble(tmp);
+}
+return num;
+}
+
+}
+

@@ -1,0 +1,9 @@
+public class DeltaLimitedYoVariable extends DoubleYoVariable
+{
+private final DoubleYoVariable maxDelta;
+private final DoubleYoVariable actual;
+private final DoubleYoVariable desired;
+public DeltaLimitedYoVariable(String name, YoVariableRegistry registry, double maxDelta)
+{
+super(name, registry);
+

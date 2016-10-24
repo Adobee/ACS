@@ -1,0 +1,7 @@
+System.out.println(&quot;Please enter a second number:&quot;);
+double n2 = keyboard.nextDouble();
+System.out.println(&quot;Please enter a third number:&quot;);
+double n3 = keyboard.nextDouble();
+
+if (n1<n2 &amp;&amp; n2<n3){
+

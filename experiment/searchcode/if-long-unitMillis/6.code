@@ -1,0 +1,9 @@
+private final long iUnitMillis;
+
+public PreciseDurationField(DurationFieldType type, long unitMillis) {
+super(type);
+iUnitMillis = unitMillis;
+}
+
+public final long getUnitMillis() {
+

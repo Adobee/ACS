@@ -1,0 +1,17 @@
+* and open the template in the editor.
+*/
+
+package com.chord.application;
+
+import com.chord.dhash.IdKey;
+
+/**
+*
+* @author gasparosoft
+*/
+public class FingerEntry implements Comparable<FingerEntry>
+{
+
+private IdKey idKey;
+private int lastElement;
+

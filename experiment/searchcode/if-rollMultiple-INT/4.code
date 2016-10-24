@@ -1,0 +1,11 @@
+@Override
+public void fight(Hero hero, Monster monster) {
+int heroStrength = calculateStrength(hero.getSkill().getCurrent());
+return !(calculateLuck() < hero.getLuck().getCurrent());
+}
+
+private int calculateLuck() {
+return DiceRoller.D6.rollMultiple(2);
+}
+}
+

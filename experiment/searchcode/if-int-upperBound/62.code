@@ -1,0 +1,11 @@
+private boolean[] primes;
+private int upperBound;
+
+public Prime(int upperBound){
+this.upperBound = upperBound;
+primes[i] = true;
+}
+
+for (int i = 2; i < primes.length; i++) {
+if (primes[i] == true) {
+

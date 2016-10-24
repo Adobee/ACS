@@ -1,0 +1,6 @@
+Class<?> rawType = getRawType(returnType);
+boolean isSingle = rawType == Single.class;
+boolean isCompletable = rawType == Completable.class;
+boolean isObservable = rawType == Observable.class;
+if (!isObservable &amp;&amp; !isSingle &amp;&amp; !isCompletable) {
+

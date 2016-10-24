@@ -1,0 +1,8 @@
+/** Compositions of multiple BasicStrokes. It would be theoretically
+nice to make CompositeStroke implement Stroke, but the amount of
+public void draw(Graphics2D g, Shape shape, double scale,
+boolean round) {
+Stroke oldStroke = g.getStroke();
+
+for (BasicStroke s: strokes) {
+

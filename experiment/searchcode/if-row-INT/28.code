@@ -1,0 +1,11 @@
+int[][] res = new int[n][n];
+int val = 1;
+int end = n*n;
+
+int leftRow = 0;
+int rightRow = n-1;
+
+int row,col;
+while(leftRow < rightRow){
+row = leftRow;col = leftRow;
+

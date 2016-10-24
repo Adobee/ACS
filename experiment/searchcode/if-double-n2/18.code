@@ -1,0 +1,11 @@
+package day11;
+public class Comparator {
+
+public double getMax(double n1, double n2) {
+if (n1 > n2) {
+return (int)getMax((double)n1, (double)n2);
+}
+
+public String getMax(String s1, String s2) {
+Integer n1 = Integer.parseInt(s1);
+

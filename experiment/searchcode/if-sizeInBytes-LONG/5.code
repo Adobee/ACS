@@ -1,0 +1,8 @@
+public static String formatSize(Long sizeInBytes) {
+NumberFormat nf = new DecimalFormat();
+nf.setMaximumFractionDigits(2);
+
+try {
+if (sizeInBytes < SPACE_KB) {
+return nf.format(sizeInBytes) + &quot; Byte(s)&quot;;
+

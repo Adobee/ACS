@@ -1,0 +1,11 @@
+private VersionType versionType = VersionType.INTERNAL;
+
+public Item() {
+}
+
+Item(Item copy) {
+if (copy.id == null &amp;&amp; copy.doc == null) {
+org.apache.lucene.index.Fields[] unlikeFields = getFieldsFor(unlikeItemsResponse);
+if (unlikeFields.length > 0) {
+mltQuery.setUnlikeText(unlikeFields);
+

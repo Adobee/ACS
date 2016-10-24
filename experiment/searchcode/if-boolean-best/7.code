@@ -1,0 +1,8 @@
+package tsp.tabusearch;
+
+import tsp.model.Solution;
+
+public class BestEverAspirationCriteria implements AspirationCriteria {
+public boolean isSatisfiedBy(Solution s, Move m) {
+if( (s.length() + m.evaluate()) < bestSolution.length() ){
+

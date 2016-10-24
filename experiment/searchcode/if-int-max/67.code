@@ -1,0 +1,16 @@
+for(int i=A.length-2; i>=0; i--){
+maxR[i]=max;
+if(A[i]>max)
+max=A[i];
+}
+
+for(int i=1; i<A.length-1; i++){
+int trap=Math.min(maxL[i], maxR[i]) - A[i];
+if(trap>0)
+result+=trap;
+}
+
+return result;
+}
+}
+

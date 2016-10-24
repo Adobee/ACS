@@ -1,0 +1,9 @@
+System.out.print(&quot;Please type three numbers: &quot;);
+double n1 = keyboard.nextDouble();
+double n2 = keyboard.nextDouble();
+public static double calcMin(double n1,double n2, double n3){
+double min =0;
+if (n1 < n2)
+if (n1 < n3)
+min = n1;
+

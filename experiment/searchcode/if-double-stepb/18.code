@@ -1,0 +1,9 @@
+private void setAllElementPointsByType()
+{
+double thicknessInnerOuter = -1;
+if (this._geometryType == DefineSystemConstant.COIL_TYPE1)
+for (int i = 0; i < iCount; i++)
+{
+double zM = hS + hIncrement * i;
+if (Math.abs(this._elementPtXZCoilStart.Y() - zM) < Math.abs(hIncrement) &amp;&amp; indexCoilStart == -1)
+

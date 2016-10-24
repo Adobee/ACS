@@ -1,0 +1,10 @@
+db.execSQL(CREATE_TABLE_TRANSACTION);
+db.execSQL(CREATE_TABLE_CATEGORIES);
+for (int i=INSERT_DEFAULT_CATEGORIES.length-1; i>=0; i--) {
+db.execSQL(&quot;DROP TABLE IF EXISTS &quot; + EXPENSES_TABLE_NAME);
+db.execSQL(&quot;DROP TABLE IF EXISTS &quot; + CATEGORIES_TABLE_NAME);
+onCreate(db);
+}
+
+}
+

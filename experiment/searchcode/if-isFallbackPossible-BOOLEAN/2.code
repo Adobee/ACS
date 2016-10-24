@@ -1,0 +1,15 @@
+private final List<VConnectionSpec> connectionSpecs;
+private int nextModeIndex;
+private boolean isFallbackPossible;
+private boolean isFallback;
+
+public VConnectionSpecSelector(List<VConnectionSpec> connectionSpecs) {
+public boolean connectionFailed(IOException e) {
+isFallback = true;
+
+if (!isFallbackPossible) {
+return false;
+}
+
+if (e instanceof ProtocolException) {
+

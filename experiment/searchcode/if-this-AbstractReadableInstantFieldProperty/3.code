@@ -1,0 +1,8 @@
+public boolean equals(Object obj) {
+if (this == obj) {
+return true;
+}
+if (!(obj instanceof AbstractReadableInstantFieldProperty)) {
+AbstractReadableInstantFieldProperty abstractReadableInstantFieldProperty = (AbstractReadableInstantFieldProperty) obj;
+if (get() == abstractReadableInstantFieldProperty.get() &amp;&amp; getFieldType().equals(abstractReadableInstantFieldProperty.getFieldType()) &amp;&amp; FieldUtils.equals(getChronology(), abstractReadableInstantFieldProperty.getChronology())) {
+

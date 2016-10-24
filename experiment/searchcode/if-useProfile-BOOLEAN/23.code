@@ -1,0 +1,10 @@
+private static Tracker mTracker;
+
+private static boolean canSend() {
+// We can only send Google Analytics when ALL the following conditions are true:
+return sAppContext != null &amp;&amp; mTracker != null;
+}
+
+public static void sendScreenView(String screenName) {
+if (canSend()) {
+

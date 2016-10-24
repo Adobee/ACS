@@ -1,0 +1,9 @@
+* @internal
+* @hide
+*/
+public synchronized static void blockOnInitialization() {
+if (sInitializationComplete) return;
+public void setAlwaysForceReauthentication(boolean force) {
+LogUtils.logd();
+blockOnInitialization();
+

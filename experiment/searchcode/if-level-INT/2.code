@@ -1,0 +1,7 @@
+public static org.apache.log4j.Level getLog4jLevelFromJUL (java.util.logging.Level level) {
+org.apache.log4j.Level log4jLevel;
+if ((level.intValue () >= Level.SEVERE.intValue ()) &amp;&amp; (level.intValue () < Level.OFF.intValue ())) {
+log4jLevel = org.apache.log4j.Level.ERROR;
+} else if (level.intValue () >= Level.WARNING.intValue ()) {
+log4jLevel = org.apache.log4j.Level.WARN;
+

@@ -1,0 +1,10 @@
+public void adjustForAdapter(DbAdapter adapter) {
+if (!adapter.supportsFkConstraints()
+&amp;&amp; booleanForBooleanProperty(CREATE_FK_PROPERTY)) {
+setCreateFK(Boolean.FALSE);
+}
+}
+
+/**
+* Updates DbGenerator settings, consulting its own state.
+

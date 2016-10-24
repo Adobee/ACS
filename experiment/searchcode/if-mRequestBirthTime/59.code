@@ -1,0 +1,8 @@
+private Integer mSequence; // 本次请求的优先级
+
+private final int mMethod; // 请求方式
+private final long mRequestBirthTime = 0;// 用于转储慢的请求。
+long requestTime = SystemClock.elapsedRealtime() - mRequestBirthTime;
+if (requestTime >= SLOW_REQUEST_THRESHOLD_MS) {
+LMELoger.debug(&quot;%d ms: %s&quot;, requestTime, this.toString());
+

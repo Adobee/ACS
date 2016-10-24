@@ -1,0 +1,12 @@
+* The constant part of the log density function. This must be
+* recomputed if df changes.
+*/
+private double logNorm;
+
+public ChiSquareDistribution(int df) {
+public double logDensity(double x) {
+return (0.5 * df - 1) * Math.log(x) - x / 2 - logNorm;
+}
+
+public double distribution(double x) {
+

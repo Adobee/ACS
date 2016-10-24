@@ -1,0 +1,10 @@
+private Polygon polygon;
+protected int pointCount;
+public PolygonCommand() {
+this(null, null);
+polygon = new Polygon(point1, point2);
+pointCount = 2;
+}
+public void setPolygonPoint(Point point) {
+if (++pointCount == 1) {
+

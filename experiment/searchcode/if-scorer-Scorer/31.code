@@ -1,0 +1,5 @@
+public class MetricScorerFactory {
+
+private static MetricScorer[] mFactory = new MetricScorer[]{new APScorer(), new NDCGScorer(), new PrecisionScorer()};
+private static Hashtable<String, MetricScorer> map = new Hashtable<String, MetricScorer>();
+

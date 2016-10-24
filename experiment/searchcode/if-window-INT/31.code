@@ -1,0 +1,8 @@
+public class Solution {
+public int[] maxSlidingWindow(int[] nums, int k) {
+if (nums.length == 0)
+PriorityQueue<Integer> window = new PriorityQueue<Integer>(Collections.reverseOrder());
+for(int i=0; i<k; i++)
+window.add(nums[i]);
+rst[0] = window.peek();
+

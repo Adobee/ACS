@@ -1,0 +1,14 @@
+public class FragmentFriend extends Fragment implements LettersSideBarView.OnTouchingLetterChangedListener {
+private TextView txtTopBarView;
+
+private Sort fSort = null;
+
+private Context fContext = null;
+fListView = (ListView) view.findViewById(R.id.friendLV);
+
+getFriendList();
+fSort = new Sort();
+
+
+newData = fSort.autoSort(oldData);
+

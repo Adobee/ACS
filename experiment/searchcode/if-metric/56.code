@@ -1,0 +1,7 @@
+public synchronized SimpleMetric newSimpleCountMetric(String s) {
+SimpleMetric metric = map.get(s);
+if ( metric == null ){
+SimpleMetric metric = map.get(s);
+if ( metric == null ){
+metric = new SimpleAverageMetric(s);
+

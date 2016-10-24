@@ -1,0 +1,6 @@
+boolean restoreState(DateTimeParserBucket enclosing) {
+if (enclosing != DateTimeParserBucket.this) {
+enclosing.iSavedFields = this.iSavedFields;
+if (this.iSavedFieldsCount < enclosing.iSavedFieldsCount) {
+// Since count is being restored to a lower count, the
+

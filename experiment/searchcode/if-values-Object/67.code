@@ -1,0 +1,8 @@
+private InsertColumnsBuilder insertColumnsBuilder;
+private Object[] values;
+
+public InsertValuesBuilder(InsertColumnsBuilder insertColumnsBuilder, Object... values) {
+Object[] check = new Object[values.length];
+for(int i=0;i<values.length;i++){
+if(values[i] instanceof String){
+

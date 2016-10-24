@@ -1,0 +1,7 @@
+config.getBaseUri());
+RepositoryConnection conn = cf.getConnection();
+try {
+if (parsedQuery instanceof ParsedTupleQuery) {
+return new TupleQueryTask(conn, query, config, out);
+} else if (parsedQuery instanceof ParsedBooleanQuery) {
+

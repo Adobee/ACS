@@ -1,0 +1,8 @@
+super.fetchSample(buf, 0);
+for (int i = 0; i < sampleSize; i++) {
+// if the dropped sample happens to be the biggest sample, then rescan the
+public MaximumFilter(SampleProvider source, int bufferSize) {
+super(source, bufferSize);
+max = new float[sampleSize];
+for (int i = 0; i < sampleSize; i++)
+

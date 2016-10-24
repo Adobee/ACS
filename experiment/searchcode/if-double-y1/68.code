@@ -1,0 +1,8 @@
+package com.mojang.mojam.math;
+
+public class BB {
+public double x0, y0;
+public double x1, y1;
+public boolean intersects(double xx0, double yy0, double xx1, double yy1) {
+if (xx0 >= x1 || yy0 >= y1 || xx1 <= x0 || yy1 <= y0)
+

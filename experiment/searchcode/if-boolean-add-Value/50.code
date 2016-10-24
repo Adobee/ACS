@@ -1,0 +1,11 @@
+public class Or extends Expression<Boolean> {
+
+public Boolean getValue() {
+return value;
+}
+
+public void refresh() {
+boolean newValue = false;
+for (Expression<Boolean> term : terms)
+newValue |= term.getValue();
+

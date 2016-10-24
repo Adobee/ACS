@@ -1,0 +1,13 @@
+int n = nums.length;
+if (n < 2)
+return n;
+int idx = 0;
+for (int i = 0; i < n; i++) {
+if (nums[i] != nums[idx]) {
+nums[++idx] = nums[i];
+}
+}
+return idx + 1;
+}
+}
+

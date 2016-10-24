@@ -1,0 +1,10 @@
+return value.getStringValue();
+}
+
+public String ago(int periodType) {
+return ago(periodType, 1);
+}
+
+public String ago(int periodType, int count) {
+long from = DateUtils.minus(getContext().getRuntime(), periodType, count);
+

@@ -1,0 +1,14 @@
+package util;
+
+@SuppressWarnings(&quot;serial&quot;)
+class AssertionFailed extends RuntimeException {
+
+}
+
+public class Assert {
+static public void assertTrue(boolean cond) {
+if (!cond)
+throw new AssertionFailed();
+}
+}
+

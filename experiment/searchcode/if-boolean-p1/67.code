@@ -1,0 +1,14 @@
+package com.example.android.lasergame;
+
+public class Line {
+Point p1;
+Point p2;
+
+public Line(Point pA, Point pB) {
+return &quot;{(&quot; + p1.x + &quot;, &quot; + p1.y + &quot;)(&quot; + p2.x + &quot;, &quot; + p2.y + &quot;)}&quot;;
+}
+
+public boolean equals(Object o) {
+if (o instanceof Line) {
+return ((Line) o).p1.x == p1.x &amp;&amp; ((Line) o).p1.y == p1.y &amp;&amp; ((Line) o).p2.x == p2.x
+

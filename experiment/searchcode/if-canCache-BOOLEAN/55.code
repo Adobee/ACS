@@ -1,0 +1,15 @@
+public void onCollideX(MovingTextureObject mto){
+if(mto instanceof Ball){
+if(((Ball)mto).getBounceDelay() == 0F){
+((Ball)mto).setBounceDelay(0.5F);
+texture = new TextureRegion(new Texture(Gdx.files.internal(&quot;data/diamond.png&quot;)), 0, 0, 20, 20);
+return texture;
+}
+
+
+@Override
+public boolean canCache(){
+return true;
+}
+}
+

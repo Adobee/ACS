@@ -1,0 +1,11 @@
+private Vector normal, N1, N2, N0;
+private double[][] invMatrix;
+
+public Triangle(Point3D p0, Point3D p1, Point3D p2) {
+// Compute the inverse matrix for barycentric coordinates
+invMatrix = new double[3][3];
+
+double a = p0.getX();
+double d = p0.getY();
+double g = p0.getZ();
+

@@ -1,0 +1,12 @@
+double g1 = f[index] - fdiscrete[index];
+double G = 0;
+if (x == 0){
+G = g0;
+} else if (x == 1){
+G = g1;
+// equation (29)
+double eta = (g1 + 2 * g0) / (g1 - g0);
+// equation (28)
+if (x <= eta){
+G = g0;
+

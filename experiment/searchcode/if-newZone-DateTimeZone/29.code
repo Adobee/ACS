@@ -1,0 +1,7 @@
+assertEquals(dateTimeInZone.toLocalDateTime(), schActivity.getScheduledOn().toLocalDateTime());
+
+// setting new time zone everything shifts only in zone, not date or time
+DateTimeZone newZone = DateTimeZone.forOffsetHours(3);
+schActivity.setTimeZone(newZone);
+LocalDateTime copy = schActivity.getScheduledOn().toLocalDateTime();
+

@@ -1,0 +1,9 @@
+public static double betai(final double a, final double b, final double x) {
+double bt;
+if (a <= 0.0 || b <= 0.0)
+final double EPS = 1.e-8;
+double pp, t, u, err, x, al, h, w, afac, a1 = a - 1., b1 = b - 1.;
+int j;
+if (p <= 0.)
+return 0.;
+

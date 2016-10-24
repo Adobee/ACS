@@ -1,0 +1,9 @@
+public ScanPeriodData createFromParcel(Parcel source) {
+
+long scanPeriodMillis = source.readLong();
+long waitTimeMillis = source.readLong();
+return new ScanPeriodData(scanPeriodMillis, waitTimeMillis);
+}
+
+public ScanPeriodData[] newArray(int size) {
+

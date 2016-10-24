@@ -1,0 +1,11 @@
+public class BSTBalanceImprove{
+public static Node rotateRight(Node root){
+if(root == NULL || root.left == NULL)
+return NULL;
+Node newRoot = root.left;
+root.left = newRoot.right;
+newRoot.right = root;
+return newRoot;
+}
+}
+

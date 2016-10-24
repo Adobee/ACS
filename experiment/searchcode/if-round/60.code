@@ -1,0 +1,18 @@
+this.score = score;
+}
+
+public void play( int scoreThrow) {
+currentRound.throwBall(score);
+if (currentRound.isFinished()) {
+// Note export not possible (throw 1 not accessible)
+round ++;
+}
+
+if (round > 10) {
+throw new GameFinishedException();
+}
+
+}
+
+public String toString(){
+

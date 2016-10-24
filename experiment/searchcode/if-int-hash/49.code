@@ -1,0 +1,14 @@
+package hashing;
+
+public class OpenAddressingHash {
+
+
+private final static int TABLE_SIZE=128;
+
+HashEntry[] table;
+
+public OpenAddressingHash() {
+
+table=new HashEntry[TABLE_SIZE];
+for(int i=0; i<TABLE_SIZE; i++){
+

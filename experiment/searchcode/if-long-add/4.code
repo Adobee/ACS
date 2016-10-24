@@ -1,0 +1,11 @@
+static long solve(int n, long[] c, long[] h) {
+if(n==1)
+return 1;
+long count = 2;
+long cur = c[0];
+for(int i = 1; i < n-1; i++) {
+long diff = c[i]-h[i];
+long add = c[i]+h[i];
+
+if(diff > c[i-1] &amp;&amp; diff > cur) {
+

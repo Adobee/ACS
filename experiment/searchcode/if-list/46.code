@@ -1,0 +1,8 @@
+public class Solution {
+public List<List<Integer>> levelOrderBottom(TreeNode root) {
+if(null == root)
+return new ArrayList<List<Integer>>();
+private void traverse(List<List<Integer>> list, int level, TreeNode node){
+if(node == null) return;
+if(list.size() - 1 < level) list.add(0, new ArrayList<Integer>());
+

@@ -1,0 +1,8 @@
+return it(source);
+}
+};
+
+private static final Transformer<Iterable<Character>, CharSequence> iterable2charSeq = new Transformer<Iterable<Character>, CharSequence>() {
+public static final Iterable<CharSequence> grouped(long groupSize, CharSequence xs) {
+return FunctionalImpl.map(iterable2charSeq, FunctionalImpl.grouped(groupSize, it(xs)));
+

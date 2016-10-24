@@ -1,0 +1,10 @@
+public enum KeyType {
+GOLD
+}
+
+protected KeyType keyType;
+
+public Key(World w, int id, KeyType keyType) {
+public void use(Interactable door) {
+if (((Door) door).getKeyType().ordinal() == this.keyType.ordinal()) {
+

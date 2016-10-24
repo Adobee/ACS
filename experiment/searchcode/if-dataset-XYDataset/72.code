@@ -1,0 +1,10 @@
+//		setBarPainter(new StandardXYBarPainter());
+}
+
+@Override
+public Paint getItemPaint(int x_row, int x_col) {
+XYDataset xyDataset = getPlot().getDataset(rendererIndex);
+double l_value = xyDataset.getYValue(x_row, x_col);
+
+if (l_value < 0) {
+

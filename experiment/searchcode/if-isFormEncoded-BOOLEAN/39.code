@@ -1,0 +1,8 @@
+private String httpMethod;
+private boolean hasBody;
+private boolean isFormEncoded;
+private boolean isMultipart;
+} else if (annotation instanceof Multipart) {
+if (isFormEncoded) {
+throw methodError(method, &quot;Only one encoding annotation is allowed.&quot;);
+

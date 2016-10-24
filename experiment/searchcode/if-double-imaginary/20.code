@@ -1,0 +1,8 @@
+public class ComplexNumber {
+private double imaginary;
+private double real;
+
+public ComplexNumber(double imaginary, double real) {
+this.imaginary = imaginary;
+this.real = real;
+

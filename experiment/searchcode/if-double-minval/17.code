@@ -1,0 +1,11 @@
+value = val;
+if (mn == 0 &amp;&amp; mx == 0 &amp;&amp; val > 0)
+{
+minval = 1e10;
+while (minval > val / 100)
+public final String name;
+public String text;
+public double value;
+public double minval;
+public final double maxval;
+

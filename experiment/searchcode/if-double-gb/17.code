@@ -1,0 +1,12 @@
+String unit = &quot;&quot;;
+double gB = 0.0;
+if(bytes > 1024*1024 ) {
+gB = (double)(bytes/1048576);
+unit = &quot;MB&quot;;
+double rate = 0.0;
+
+if(delay>0)
+rate = (double)(gB/delay);
+else
+rate = 0;
+

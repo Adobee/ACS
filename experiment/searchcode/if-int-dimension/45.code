@@ -1,0 +1,9 @@
+public void setDimension(Dimension dimension) {
+setChanged();
+notifyObservers(dimension);
+this.dimension = new Dimension((int)dimension.getSize().getWidth(), (int)dimension.getSize().getHeight()-88);
+}
+
+/**
+* Returns the current application size
+

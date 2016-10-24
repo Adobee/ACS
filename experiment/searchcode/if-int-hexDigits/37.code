@@ -1,0 +1,11 @@
+private static String byteToHexString(byte b) {
+int n = b;
+if (n < 0)
+n = 256 + n;
+int d1 = n / 16;
+int d2 = n % 16;
+return hexDigits[d1] + hexDigits[d2];
+}
+
+private final static String[] hexDigits = { &quot;0&quot;, &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;,
+

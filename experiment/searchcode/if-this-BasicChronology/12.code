@@ -1,0 +1,6 @@
+super(DateTimeFieldType.year(), basicChronology.getAverageMillisPerYear());
+this.iChronology = basicChronology;
+public long getDifferenceAsLong(long j, long j2) {
+if (j < j2) {
+return -this.iChronology.getYearDifference(j2, j);
+

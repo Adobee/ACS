@@ -1,0 +1,6 @@
+final class CardinalityAggregatorFactory extends ValuesSourceAggregatorFactory<ValuesSource> {
+
+private final long precisionThreshold;
+CardinalityAggregatorFactory(String name, ValuesSourceConfig config, long precisionThreshold, boolean rehash) {
+super(name, InternalCardinality.TYPE.name(), config);
+

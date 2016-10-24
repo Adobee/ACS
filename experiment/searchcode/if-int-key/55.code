@@ -1,0 +1,12 @@
+KEY_RIGHT(0x27), // RIGHT ARROW key
+KEY_DOWN(0x28); // DOWN ARROW key
+
+int irrlichtKeyCode;
+
+IrrlichtKeyCode(int irrlichtKeyCode)
+public static IrrlichtKeyCode getForKeyEvent(KeyEvent keyEvent)
+{
+IrrlichtKeyCode keyCode = null;
+
+if (keyEvent.getKeyCode() == KeyEvent.KEYCODE_DPAD_UP)
+

@@ -1,0 +1,13 @@
+import javax.persistence.Table;
+
+/**
+*
+* @author Chris Whiteley
+*/
+@IdClass(TransactionCapacityAssignmentPk.class)
+@Entity
+@Table(name = &quot;trans_capacity_assignment&quot;)
+@Override
+public int hashCode() {
+return Long.valueOf(getTransactionCapacityId()).hashCode();
+

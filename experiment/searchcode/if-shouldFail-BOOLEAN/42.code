@@ -1,0 +1,10 @@
+public void onError(Exception e);
+}
+
+private boolean shouldFail;
+private CountriesLoaderListener listener;
+
+public CountriesAsyncLoader(boolean shouldFail, CountriesLoaderListener listener) {
+this.listener = listener;
+this.shouldFail = shouldFail;
+

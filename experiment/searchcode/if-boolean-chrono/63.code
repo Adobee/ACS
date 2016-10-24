@@ -1,0 +1,10 @@
+startButton = (Button) view.findViewById(R.id.start);
+resetButton = (Button) view.findViewById(R.id.reset);
+
+//set current time of chrono
+if(savedInstanceState != null) {
+timeWhenStopped = savedInstanceState.getLong(TIMEWHENSTOPPED);
+timerPaused = savedInstanceState.getBoolean(TIMERPAUSED);
+
+chrono.setBase(SystemClock.elapsedRealtime() + timeWhenStopped);
+

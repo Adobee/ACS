@@ -1,0 +1,10 @@
+namespace = &quot;&quot;;
+
+boolean newMapping = false;
+List mappings = (List)namespaceMappings.get(prefix);
+if (mappings == null) {
+namespaceMappings.put(prefix, mappings);
+} else if (mappings.isEmpty()) {
+newMapping = true;
+mappings.add(namespace);
+

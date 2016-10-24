@@ -1,0 +1,11 @@
+* @see solver.StoppingCondition#isDone()
+*/
+@Override
+public boolean isDone() {
+boolean isDone = false;
+
+if (regressionCounter == 100) {
+System.out.println(&quot;Regression slope is: &quot; + regressionSlope);
+
+if (Math.abs(regressionSlope) < epsilon || regressionSlope > 0) {
+

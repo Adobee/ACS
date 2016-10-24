@@ -1,0 +1,10 @@
+import com.aliasi.util.Distance;
+import com.aliasi.util.Proximity;
+
+
+public class MWEdistance implements Distance<CharSequence>, Proximity<CharSequence>{
+public double distance(CharSequence s1, CharSequence s2) {
+String str1 = s1.toString();
+String str2 = s2.toString();
+if(str1.indexOf(str2)!=-1||str2.indexOf(str1)!=-1)
+

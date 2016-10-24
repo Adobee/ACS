@@ -1,0 +1,8 @@
+public class voiceRecognizer {
+
+public static Boolean isRecognitionEngine() {
+RecognizerModeDesc desc = new RecognizerModeDesc(Locale.ENGLISH,
+Boolean.TRUE);
+EngineList el = Central.availableRecognizers(desc);
+if (el.size() > 0) {
+

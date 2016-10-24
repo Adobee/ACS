@@ -1,0 +1,10 @@
+public static <T> Class<T> loadClass(String className)
+{
+Class<?> loadedClass = LOADED_CLASSES.get(className);
+
+try {
+if (loadedClass == null) {
+loadedClass = loadClass(THIS_CL, className);
+
+if (loadedClass == null) {
+

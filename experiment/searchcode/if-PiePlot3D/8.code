@@ -1,0 +1,12 @@
+import javax.swing.Timer;
+import org.jfree.chart.plot.PiePlot3D;
+
+class Spinner extends Timer
+implements ActionListener
+{
+
+private PiePlot3D plot;
+private int angle;
+
+Spinner(PiePlot3D pieplot3d)
+

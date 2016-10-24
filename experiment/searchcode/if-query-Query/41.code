@@ -1,0 +1,8 @@
+public static Query constructQuery(AbacusQuery abacusQuery, AbacusQueryParser queryParser)
+throws IOException {
+if (abacusQuery == null) {
+return null;
+}
+if (abacusQuery.isSetRangeQuery()) {
+return RANGE_QUERY_CONSTRUCTOR.construct(abacusQuery, queryParser);
+

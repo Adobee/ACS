@@ -1,0 +1,11 @@
+static double unInit = -999.999;
+static double deltaValidRes = 0.03;
+EMA(int periods)
+{
+alpha = 2.0/(1.0+periods);
+alphaN = unInit;
+}
+void Add(double val)
+{
+if (alphaN == unInit)
+

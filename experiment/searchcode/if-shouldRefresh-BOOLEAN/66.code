@@ -1,0 +1,10 @@
+protected Expression getExpression() {
+if (getElement().getValueExpression() == null) {
+final TextualExpression expression = ExpressionsFactory.eINSTANCE.createTextualExpression();
+return (AttributeAssignment) super.getElement();
+}
+
+@Override
+protected boolean shouldRefresh(Notification msg) {
+return super.shouldRefresh(msg)
+

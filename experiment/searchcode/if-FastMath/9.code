@@ -1,0 +1,7 @@
+// Normal distribution case (Box-Muller algorithm)
+if (alpha == 2d) {
+return FastMath.sqrt(2d * omega) * FastMath.sin(phi);
+double cosPhi = FastMath.cos(phi);
+// to avoid rounding errors around alpha = 1
+if (FastMath.abs(alpha - 1d) > 1e-8) {
+

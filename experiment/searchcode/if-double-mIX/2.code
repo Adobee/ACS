@@ -1,0 +1,15 @@
+Mix save(Mix mix);
+
+// false if not found
+boolean delete(int id);
+
+// null if not found
+Mix get(int id);
+
+List<Mix> getAll();
+
+double getRatingAvg();
+
+List<Mix> getTop10();
+}
+

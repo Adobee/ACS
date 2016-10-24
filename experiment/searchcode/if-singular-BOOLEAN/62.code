@@ -1,0 +1,17 @@
+System.out.println(isSingular(dArray));
+}
+
+private static boolean isSingular(int[][] dArray) {
+boolean boo = false;
+
+int singular = (dArray[0][0] * dArray[1][1] * dArray[2][2]) + (dArray[0][1] * dArray[1][2] * dArray[2][0])
++ (dArray[0][2] * dArray[1][0] * dArray[2][1]) - (dArray[0][2] * dArray[1][1] * dArray[2][0])
+- (dArray[0][0] * dArray[1][2] * dArray[2][1]) - (dArray[0][1] * dArray[1][0] * dArray[2][2]);
+if (singular == 0) {
+boo = true;
+}
+
+return boo;
+}
+}
+

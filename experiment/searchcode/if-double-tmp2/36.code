@@ -1,0 +1,13 @@
+tmp2 = tmp1 - a;
+}
+while (tmp2 - 1.0d != 0.0d);
+double b = 1.0d;
+while (radix == 0) {
+public static double getSmallnumber() {
+if (smallnumber == 0)
+snum();
+return smallnumber;
+}
+
+}
+

@@ -1,0 +1,10 @@
+this.mProgressBar = mProgressBar;
+}
+
+@Override
+public void onUIProgress(long currentBytes, long contentLength, boolean done) {
+// TODO Auto-generated method stub
+Log.e(&quot;TAG&quot;, &quot;bytesWrite:&quot; + currentBytes + &quot;, contentLength&quot; + contentLength + &quot;,&quot; + (100 * currentBytes) / contentLength + &quot; % done &quot;);
+
+if (contentLength != -1) {
+

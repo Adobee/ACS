@@ -1,0 +1,9 @@
+public class AlarmComparator implements Comparator<DssShortInfo> {
+
+
+
+@Override
+public int compare(DssShortInfo lhs, DssShortInfo rhs) {
+if (lhs.isAlarm_HasAlarm()==rhs.isAlarm_HasAlarm()) return 0;
+if (lhs.isAlarm_HasAlarm()==false&amp;&amp;rhs.isAlarm_HasAlarm()==true) return 1;
+

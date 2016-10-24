@@ -1,0 +1,10 @@
+* The maximum start duration in milliseconds.
+*
+* @serial
+*/
+private final long maxStart;
+/**
+* The minimum stop duration in milliseconds.
+* @throws IllegalArgumentException if <code>minStart</code> is greater
+* than <code>maxStart</code>, or <code>maxStart</code> is greater than
+

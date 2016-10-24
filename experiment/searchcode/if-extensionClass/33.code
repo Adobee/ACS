@@ -1,0 +1,12 @@
+for (Class extensionClass : extensions)
+{
+if (extensionPointClass.isAssignableFrom(extensionClass))
+{
+if (bound)
+Multibinder multibinder = Multibinder.newSetBinder(binder,
+extensionPointClass);
+
+for (Class extensionClass : extensions)
+{
+if (extensionPointClass.isAssignableFrom(extensionClass))
+

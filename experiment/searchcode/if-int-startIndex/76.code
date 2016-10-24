@@ -1,0 +1,10 @@
+public class Solution
+{
+public void quickSort(int[] S, int startIndex, int endIndex)
+{
+if (startIndex >= endIndex)
+{
+return;
+}
+int middleIndex = (startIndex + endIndex) / 2;
+

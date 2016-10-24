@@ -1,0 +1,10 @@
+public void findLongestSubarray(int[] arr) {
+int bestNum = arr[0], bestFreq = 0;
+int freq = 1;
+
+for(int i=1; i<arr.length; i++) {
+if(arr[i] == arr[i-1]) {
+freq++;
+} else {
+if(freq > bestFreq) {
+

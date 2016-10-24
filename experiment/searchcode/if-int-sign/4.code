@@ -1,0 +1,14 @@
+return 1^a;
+}
+/*
+* if a > 0, the sign is 1
+* if a < 0, the sign is 0
+*/
+public static int getSign(int a) {
+int c = a - b;
+int sign_a = getSign(a);
+int sign_b = getSign(b);
+int sign_c = getSign(c);
+
+int use_sign_of_a = sign_a ^ sign_b;
+

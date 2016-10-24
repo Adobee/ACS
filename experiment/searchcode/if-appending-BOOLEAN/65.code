@@ -1,0 +1,10 @@
+public AppendingObjectOutputStream(OutputStream out, boolean append)
+throws IOException
+{
+super(createStream(out, append));
+ObjectOutputStream stream;
+
+// if we are appending then return an append only stream
+if (append) {
+stream = new AppendObjectOutputStream(out);
+

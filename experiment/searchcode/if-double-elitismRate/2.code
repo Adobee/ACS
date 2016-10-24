@@ -1,0 +1,6 @@
+/*  11:    */ {
+/*  12: 36 */   private double elitismRate = 0.9D;
+/*  13:    */
+/*  14:    */   public ElitisticListPopulation(List<Chromosome> chromosomes, int populationLimit, double elitismRate)
+/*  15:    */   {
+

@@ -1,0 +1,7 @@
+if(inputs.containsKey(s)) return inputs.get(s).process(&quot;&quot;);
+if(defaultHandler == null) throw new Exception(&quot;No default handler specified&quot;);
+public String process(String s) throws Exception {
+if(s.isEmpty()) return &quot;Current default: &quot; + defaultHandler.getTag();
+
+InputHandler h = inputs.get(s);
+

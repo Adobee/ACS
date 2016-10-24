@@ -1,0 +1,9 @@
+int rightPadding = currentRightPadding();
+int bottomPadding = currentBottomPadding();
+
+if (mLeftPadding != null) {
+leftPadding = (int) calculateAnimatedValue(mLeftPadding.mFrom, mLeftPadding.mTo, animatedFraction);
+}
+if (mTopPadding != null) {
+topPadding = (int) calculateAnimatedValue(mTopPadding.mFrom, mTopPadding.mTo, animatedFraction);
+

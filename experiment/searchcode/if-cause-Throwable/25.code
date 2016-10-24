@@ -1,0 +1,11 @@
+return throwable.getStackTrace();
+}
+
+@Override
+public IThrowable getCause() {
+final Throwable cause = throwable.getCause();
+if (cause == null) {
+return null;
+}
+return new StandardThrowable(cause);
+

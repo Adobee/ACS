@@ -1,0 +1,6 @@
+float t = norm.dot(this.a.minus(ray.getOrigin())) / normDotDirection;
+Vector3D intersectionPoint = ray.getOrigin().add(ray.getDirection().multipy(t));
+ray.setT(t);
+ray.setIntersectionPoint(new Vector3D(alpha, beta, gamma));
+return true;
+

@@ -1,0 +1,14 @@
+import java.util.NoSuchElementException;
+import util.Parser;
+
+public class QueryFileParser extends Parser<QueryText> {
+
+public QueryFileParser(String filename) throws FileNotFoundException {
+super(filename);
+}
+
+@Override
+public QueryText next() throws Exception {
+if (!hashNext()) {
+throw new NoSuchElementException();
+

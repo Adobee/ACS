@@ -1,0 +1,11 @@
+abstract class AbstractAction implements Action {
+private Action nextAction;
+
+public AbstractAction(Action nextAction) {
+this.nextAction = nextAction;
+} catch (InterruptedException e) {
+e.printStackTrace();
+}
+executeImpl(params);
+if (this.nextAction != null) {
+

@@ -1,0 +1,9 @@
+private final Graph g;
+private boolean found;
+private boolean[] visited;
+
+public GraphPath(Graph g, int v, int w) {
+this.g = g;
+visited = new boolean[g.V()];
+found = search(v, w);
+

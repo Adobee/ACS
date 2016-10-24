@@ -1,0 +1,14 @@
+public class ShardId implements Streamable, Comparable<ShardId> {
+
+private Index index;
+
+private int shardId;
+
+private int hashCode;
+
+private ShardId() {
+}
+
+public ShardId(String index, int shardId) {
+this(new Index(index), shardId);
+

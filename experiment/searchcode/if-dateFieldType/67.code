@@ -1,0 +1,8 @@
+public static final DateFieldType FIELD_TYPE = new DateFieldType();
+
+static {
+FIELD_TYPE.freeze();
+if (strict) {
+DateFieldType other = (DateFieldType)fieldType;
+if (Objects.equals(dateTimeFormatter().format(), other.dateTimeFormatter().format()) == false) {
+

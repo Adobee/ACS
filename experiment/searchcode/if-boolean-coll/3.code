@@ -1,0 +1,13 @@
+this.coll = coll;
+}
+
+@Override
+public boolean hasNext() {
+return this.coll != ISeq.NULL;
+}
+
+@Override
+public Object next() {
+if (this.coll == ISeq.NULL) {
+throw new NoSuchElementException();
+

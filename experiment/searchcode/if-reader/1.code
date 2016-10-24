@@ -1,0 +1,10 @@
+package domain.impl;
+
+
+import entity.Reader;
+import domain.ReaderLogin;
+
+import dao.ReaderDAO;
+Reader tmpReader=readerDao.QueryReader(reader.getReaderid());
+if(tmpReader!=null &amp;&amp; reader.getPassword().equals(tmpReader.getPassword())){
+

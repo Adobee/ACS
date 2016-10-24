@@ -1,0 +1,11 @@
+* @return Local offset.
+*/
+public int getLocalOffset(final int absoluteOffset)
+{
+final OffsetCue result = findOffsetCue(absoluteOffset);
+* @return Absolute offsets corresponding to the given local offset.
+*/
+public int[] getAbsoluteOffset(final String filename, final int localOffset)
+{
+if (offsetCueList.isEmpty())
+

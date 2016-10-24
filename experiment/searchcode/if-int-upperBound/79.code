@@ -1,0 +1,15 @@
+final long INF = Long.MAX_VALUE;
+long lowBound = 0;
+long upperBound = INF;
+for (int i=0; i<=n; i++) {
+if (upperBound == INF) {
+return -1;
+}
+if (upperBound <= lowBound) {
+return 0;
+}
+return (int)( upperBound - lowBound - 1);
+}
+
+}
+

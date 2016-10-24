@@ -1,0 +1,11 @@
+this.minimum = min;
+}
+public int getRandom()
+{
+int range = this.maximum - this.minimum;
+if(this.maximum <= this.minimum )
+Random rand = new Random();
+int randomValue =(int)Math.abs( rand.nextInt());
+
+return randomValue % range+this.minimum;
+

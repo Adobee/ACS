@@ -1,0 +1,5 @@
+if (queryParam != null) {
+HttpUrl.Builder urlBuilder = HttpUrl.parse(apiURL).newBuilder();
+Map.Entry<String, String> pair = (Map.Entry) mapIterator.next();
+urlBuilder.addQueryParameter(pair.getKey(), pair.getValue());
+

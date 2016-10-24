@@ -1,0 +1,9 @@
+* @return
+*/
+public static String escapeStr(String str){
+if(str!=null &amp;&amp; !&quot;&quot;.equals(str)){
+* @return String 替换后的字符串
+*/
+public static String replaceIndex(int index,String res,String str){
+return res.substring(0, index)+str+res.substring(index+1);
+

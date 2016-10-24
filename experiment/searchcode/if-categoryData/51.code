@@ -1,0 +1,11 @@
+import java.util.ArrayList;
+
+/**
+* Created by Tacademy on 2015-10-30.
+*/
+public class CategoryData {
+private static CategoryData sCategoryData;
+public static CategoryData get(Context context) {
+if (sCategoryData == null) {
+sCategoryData = new CategoryData(context.getApplicationContext());
+

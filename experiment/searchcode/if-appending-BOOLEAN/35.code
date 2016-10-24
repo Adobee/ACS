@@ -1,0 +1,8 @@
+public AppendingStringBuffer filter(final AppendingStringBuffer responseBuffer){
+AppendingStringBuffer result=responseBuffer;
+if(this.shouldFilter(responseBuffer)){
+return result;
+}
+protected boolean shouldFilter(final AppendingStringBuffer responseBuffer){
+final int min=Math.min(150,responseBuffer.length());
+

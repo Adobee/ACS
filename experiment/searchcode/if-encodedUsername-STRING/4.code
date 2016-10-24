@@ -1,0 +1,10 @@
+public static final Username ME = new Username(&quot;me&quot;);
+
+private String encodedUsername;
+
+/**
+* Encodes the username returned from trakt so it is API compatible (currently replaces &quot;.&quot; and spaces with &quot;-&quot;).
+public Username(String username) {
+if (username == null || username.length() == 0) {
+throw new IllegalArgumentException(&quot;trakt username can not be empty.&quot;);
+

@@ -1,0 +1,16 @@
+public double perimeter()
+{
+return p1.dist(p2) + p2.dist(p3) + p3.dist(p1);
+}
+
+public Triangle midTriangle()
+Point nP3 = p3.middle(p1);
+
+return new Triangle(nP1, nP2, nP3);
+}
+
+public double area()
+{
+double a = p1.dist(p2);
+double b = p2.dist(p3);
+

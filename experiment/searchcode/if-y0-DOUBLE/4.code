@@ -1,0 +1,11 @@
+
+public class Edge {
+
+int x0, y0, x1, y1, a, b;
+double delta;
+
+public Edge(int x0, int y0, int x1, int y1) {
+if (y0 > y1) {
+int temp = x0; x0 = x1; x1 = temp;
+temp = y0; y0 = y1; y1 = temp;
+

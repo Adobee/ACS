@@ -1,0 +1,9 @@
+public GlobalSettings()
+{
+mSave = Gdx.app.getPreferences(&quot;save.txt&quot;);
+
+if (!mSave.getBoolean(String.valueOf(0)))
+for (int i = 3; i >=0 ; i--) {
+if (mSave.getBoolean(String.valueOf(i + level*10)))
+return i;
+

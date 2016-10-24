@@ -1,0 +1,10 @@
+this.frameLength = frameLength;
+minimumFrameLength = 1;
+maximumFrameLength = Integer.MAX_VALUE;
+
+if( this.frameLength <= 0 ) this.frameLength = 1;
+if( addedTime < 0 ) return;
+timeSinceLastTrigger += addedTime;
+
+if( timeSinceLastTrigger >= frameLength )
+

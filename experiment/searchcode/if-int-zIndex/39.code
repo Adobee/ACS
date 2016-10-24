@@ -1,0 +1,7 @@
+public abstract class WorldObject implements Comparable<WorldObject> {
+/* default z-index to zero */
+protected int zIndex = 0;
+@Override
+public int compareTo(WorldObject o) {
+return (this.zIndex < o.zIndex) ? 1 : (this.zIndex > o.zIndex) ? -1 : 0;
+

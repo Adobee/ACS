@@ -1,0 +1,11 @@
+for( String key: queryEntries.keySet()){
+String value = queryEntries.get(key);
+
+if (i > 0) {
+sb.append(&quot;&amp;&quot;);
+}
+
+// encode the characters in the name
+String encodedName = URL.encodeComponent(key);
+sb.append(encodedName);
+

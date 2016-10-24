@@ -1,0 +1,11 @@
+package org.joda.time;
+
+import java.util.Calendar;
+
+import org.joda.time.base.BaseSingleFieldPeriod;
+public Hours dividedBy(int divisor) {
+if (divisor == 1) {
+return this;
+}
+return new Hours(getValue() / divisor);
+

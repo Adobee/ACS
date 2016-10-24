@@ -1,0 +1,17 @@
+private static final int maxKey = 1024;
+private boolean[] keyPressed= new boolean[maxKey];
+private boolean[] keyClicked= new boolean[maxKey];
+public boolean wasClicked(int vk) {
+if (keyClicked[vk]) {
+
+keyClicked[vk] = false;
+return true;
+}
+
+return false;
+}
+
+
+
+}
+

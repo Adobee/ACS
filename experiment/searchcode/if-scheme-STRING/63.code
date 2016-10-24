@@ -1,0 +1,10 @@
+Scheme localScheme = get(paramString);
+if (localScheme == null) {
+throw new IllegalStateException(&quot;Scheme &#39;&quot; + paramString + &quot;&#39; not registered.&quot;);
+return (Scheme)registeredSchemes.put(paramScheme.getName(), paramScheme);
+}
+
+public void setItems(Map<String, Scheme> paramMap)
+{
+if (paramMap == null) {
+

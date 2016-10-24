@@ -1,0 +1,12 @@
+public class ReflectionToStringBuilder
+extends ToStringBuilder
+{
+private boolean appendStatics = false;
+private boolean appendTransients = false;
+return new ReflectionToStringBuilder(paramObject).setExcludeFieldNames(paramArrayOfString).toString();
+}
+
+protected boolean accept(Field paramField)
+{
+if (paramField.getName().indexOf(&#39;$&#39;) != -1) {}
+

@@ -1,0 +1,10 @@
+return areResolved( wildcardType.getUpperBounds() ) &amp;&amp; areResolved( wildcardType.getLowerBounds() );
+}
+}.doSwitch( t );
+}
+
+private static Boolean areResolved(Type[] types) {
+Type[] upperBounds = wildcardType.getUpperBounds();
+if ( upperBounds.length == 0 ) {
+return null;
+

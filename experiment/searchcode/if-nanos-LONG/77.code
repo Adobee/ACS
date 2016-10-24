@@ -1,0 +1,11 @@
+public class NanoClock {
+
+public static long baseMillis = -1;
+public static int  baseNanos  = -1;
+public static AbsoluteTime roundUp(AbsoluteTime t) { // round up to next or second next period
+
+long tNanos = t.getNanoseconds();
+long tMillis = t.getMilliseconds();
+
+long periodMillis = Constants.DETECTOR_PERIOD;
+

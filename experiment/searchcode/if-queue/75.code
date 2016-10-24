@@ -1,0 +1,9 @@
+public synchronized static QueueManager getInstance() {
+if(mQueueManager == null) {
+mQueueManager = new QueueManager();
+public synchronized boolean registerQueue(AbstractQueue<?, ?> queue) {
+if(queue == null) {
+return false;
+}
+for(AbstractQueue<?, ?> queueInside : queues) {
+

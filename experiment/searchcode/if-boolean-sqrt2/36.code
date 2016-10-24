@@ -1,0 +1,11 @@
+public Exception exception;
+public boolean actualizarTodasEtapas( Object[][] vDatosEtapas)
+{
+cn = new Conexion();
+
+boolean bBandera = false;
+try
+{
+cmd = cn.getConnection().createStatement();
+cn.getConnection().setAutoCommit(false);
+

@@ -1,0 +1,8 @@
+public class SSSPLoopInputOutput implements LoopInputOutput {
+
+@Override
+public List<String> getLoopInputs(JobConf conf, int iteration, int step) {
+paths.add(conf.getOutputPath() + &quot;/i&quot; + (currentPass - 1));
+if (currentPass == 0) {
+paths.add(conf.getInputPath());
+

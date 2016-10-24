@@ -1,0 +1,10 @@
+public void add(CategoryPlot categoryPlot, int n2) {
+if (categoryPlot == null) {
+throw new IllegalArgumentException(&quot;Null &#39;subplot&#39; argument.&quot;);
+this.notifyListeners(new PlotChangeEvent(this));
+}
+
+public void remove(CategoryPlot categoryPlot) {
+ValueAxis valueAxis;
+if (categoryPlot == null) {
+

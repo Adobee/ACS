@@ -1,0 +1,6 @@
+.peek(e -> System.out.println(&quot;Fetching &quot; + e))
+.limit(20).max(Double::compareTo)
+.ifPresent(System.out::println);
+.collect(groupingBy(Function.<Locale>identity(),
+reducing(&quot;&quot;, Locale::getCountry, (s, t) -> s.length() == 0 ? t : s + &quot;, &quot; + t))));
+

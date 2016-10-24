@@ -1,0 +1,11 @@
+listeners.get(i).changed();
+}
+}
+
+private int getOPWIndex0(double value) {
+if (this.aV.length < 2)
+double tZ = -1;
+
+if (hasNeighborDirection[0]) {
+tX = (base[0] + (double) neighborDirections[0][0] - pointOfEntry[0]) / direction[0];
+

@@ -1,0 +1,9 @@
+import org.mevenide.idea.project.goals.Goal;
+import org.mevenide.idea.project.goals.GoalContainer;
+public GoalContainer getContainer() {
+final GoalType goal = getGoal();
+if (goal == null)
+return null;
+
+return goal.getContainer();
+

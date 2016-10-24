@@ -1,0 +1,8 @@
+public class Solution {
+public String convert(String s, int nRows) {
+if (s == null || s.length() <= nRows || nRows <= 1) return s;
+StringBuffer sb = new StringBuffer();
+// the first row
+for (int i = 0; i < s.length(); i += (nRows - 1) * 2) {
+sb.append(s.charAt(i));
+

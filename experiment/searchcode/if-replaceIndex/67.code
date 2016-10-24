@@ -1,0 +1,11 @@
+return replaceIndex(ci);
+}
+
+@Override
+public double get(int i) {
+return source.unsafeGet(indexes[i]);
+if (v instanceof IndexedSubVector) {
+IndexedSubVector iv=(IndexedSubVector) v;
+if (iv.source==source) {
+return replaceIndex(IntArrays.concat(indexes,iv.indexes));
+

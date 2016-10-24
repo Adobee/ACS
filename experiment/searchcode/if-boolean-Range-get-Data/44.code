@@ -1,0 +1,5 @@
+if (!range.isIncludeNullSet() || Boolean.FALSE.equals(range.getIncludeNull())) {
+return rangePredicate;
+if (Boolean.TRUE.equals(range.getIncludeNull())) {
+return builder.isNull(root.get(range.getField()));
+

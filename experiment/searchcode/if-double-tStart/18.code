@@ -1,0 +1,10 @@
+public void add(Double value, Double weight, Date time) {
+
+if (_list.size() > 0 &amp;&amp; _list.getLast().v3().compareTo(time) > 0) {
+_dist.addObservation(value, weight);
+}
+
+public void removeBeforeAndReweight(Date tStart, Date tEnd) {
+
+double interval = DateUtils.daysBetween(tStart, tEnd);
+

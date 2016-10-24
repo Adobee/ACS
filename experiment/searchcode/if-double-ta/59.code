@@ -1,0 +1,12 @@
+public GeneratoreIperesp(long seme1, long seme2, double probabilita, double Ta, long seme1Iniziale, long seme2Iniziale){
+super();
+this.Ta = Ta;
+this.p = probabilita;
+double r = genUniforme.getNext();
+double X = genEsponenziale.getNext();
+
+if(r <= p)
+return (Ta / (2*p) ) * X;
+else
+return (Ta / (2*(1-p)) ) * X;
+

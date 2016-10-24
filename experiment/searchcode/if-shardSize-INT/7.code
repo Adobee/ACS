@@ -1,0 +1,11 @@
+return requiredSize;
+}
+
+public GeoGridAggregationBuilder shardSize(int shardSize) {
+if (shardSize <= 0) {
+int shardSize = this.shardSize;
+
+int requiredSize = this.requiredSize;
+
+if (shardSize < 0) {
+

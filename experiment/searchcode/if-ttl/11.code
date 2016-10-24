@@ -1,0 +1,13 @@
+import static java.util.Objects.hash;
+
+/**
+* Contains information whether specific region is cacheable. If it is then what is ttl and what is key strategy for building this region.
+public class CacheRegion {
+
+public enum Cacheability {
+CACHED,
+PASSTHROUGH
+}
+
+private final long ttl;
+

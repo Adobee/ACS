@@ -1,0 +1,8 @@
+import static java.lang.Double.*;
+
+public class ForegroundService extends Service{
+private LocationManager locationManager;
+private double stopLon;
+private double selectedDistance = 100; // Hardcoded for now....
+private static final String TAG = &quot;StopNotification&quot;;
+

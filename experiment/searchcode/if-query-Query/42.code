@@ -1,0 +1,6 @@
+public static void processPhraseQuery(Query rootQuery, int slop) {
+if (!(rootQuery instanceof BooleanQuery))
+for (BooleanClause clause : clauses) {
+Query subQuery = clause.getQuery();
+if (subQuery instanceof PhraseQuery) {
+

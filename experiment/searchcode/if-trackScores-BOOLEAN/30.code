@@ -1,0 +1,10 @@
+private final ArrayList<ScoreDoc> docs;
+
+/** The track scores. */
+private final boolean trackScores;
+
+/** The scorer. */
+ScanCollector(Map<IndexReader, ReaderState> readerStates, int from, int size, boolean trackScores) {
+this.readerStates = readerStates;
+this.from = from;
+

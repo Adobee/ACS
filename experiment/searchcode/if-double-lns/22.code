@@ -1,0 +1,11 @@
+float be = lns.contains(u, v) ? (lns.get(u, v) - min_lns) / (max_lns - min_lns) : 0f;
+
+lt = ab * be;
+
+if (lt > 0 &amp;&amp; isIn) {
+// integrity
+if (Debug.OFF) {
+for (Float val : uVals.elementSet()) {
+if (vVals.contains(val)) {
+double pvk = (vVals.count(val) + 0.0) / vVals.size();
+

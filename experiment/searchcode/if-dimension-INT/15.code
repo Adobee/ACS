@@ -1,0 +1,9 @@
+public static synchronized AdminDimension getInstance() {
+if (adminDimension == null)
+return adminDimension = new AdminDimension();
+return adminDimension;
+}
+
+public AdminDimension() {
+int screenWidth = Format.screenWidth(), screenHeight = Format.screenHeight();
+

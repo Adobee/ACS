@@ -1,0 +1,7 @@
+public Long getBuyPrice(long id, int quantity) {
+List<WowAuctionsDataAuction> list = this.auctions.getAuctions().stream().parallel()
+for (WowAuctionsDataAuction cur : list) {
+count += cur.getQuantity();
+price += cur.getBuyout();
+if (count >=  quantity) {
+

@@ -1,0 +1,9 @@
+public class UrlBuilder {
+
+private StringBuffer sb = new StringBuffer();
+
+private boolean appendingParam = false;
+public UrlBuilder append(String relativePath) {
+if (!appendingParam) {
+boolean endWith = sb.length() > 0 &amp;&amp; sb.charAt(sb.length() - 1) == &#39;/&#39;;
+

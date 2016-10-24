@@ -1,0 +1,11 @@
+this.tokens = tokens;
+}
+
+public boolean check(){
+State currState = State.START;
+if(tokens.get(0).category == Category.FOR) {
+currState = table[first][second];
+
+if (currState == State.INVALID) {
+return false;
+

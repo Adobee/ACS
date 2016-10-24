@@ -1,0 +1,9 @@
+public class BinaryMutation implements MutationPolicy {
+
+/**
+* Mutate the given chromosome. Randomly changes one gene.
+* @param original the original chromosome.
+public Chromosome mutate(Chromosome original) {
+if (!(original instanceof BinaryChromosome)) {
+throw new IllegalArgumentException(&quot;Binary mutation works on BinaryChromosome only.&quot;);
+

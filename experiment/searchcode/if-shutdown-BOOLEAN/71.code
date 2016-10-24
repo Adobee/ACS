@@ -1,0 +1,8 @@
+private Set<Runnable> hooks = Collections.synchronizedSet(new HashSet<Runnable>());
+
+/** */
+private AtomicBoolean shutdownInProgress = new AtomicBoolean(false);
+* @return TRUE/FALSE depending if the shutdownHook is is registered.
+*/
+public boolean hasShutdownHook(Runnable shutdownHook) {
+

@@ -1,0 +1,8 @@
+List<String> columnsMissingStats = Lists.newArrayList();
+for (SlotDescriptor slot: desc_.getSlots()) {
+if (!slot.getStats().hasStats()) {
+* or column stats relevant to this scan node.
+*/
+public boolean isTableMissingStats() {
+if (desc_.getTable().getNumRows() == -1) return true;
+

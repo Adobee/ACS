@@ -1,0 +1,10 @@
+private HTTPObject httpObject = new HTTPObject();
+
+@Override
+public void messageReceived(ChannelHandlerContext ctx, MessageEvent e) throws Exception {
+HttpRequest request = (HttpRequest) e.getMessage();
+
+httpObject.setUri(request.getUri());
+
+logger.info(&quot;--- request headers ---&quot;);
+

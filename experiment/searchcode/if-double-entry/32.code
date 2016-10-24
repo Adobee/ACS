@@ -1,0 +1,8 @@
+long keyword = (long)((double)adding.getKeyword());
+List<KeywordEntry<Double, T>> entry;
+if((entry = entries.get(keyword)) == null)
+long keyword = (long)((double)removing.getKeyword());
+List<KeywordEntry<Double, T>> entry;
+if((entry = entries.get(keyword)) != null)
+entry.remove(removing);
+

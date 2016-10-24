@@ -1,0 +1,12 @@
+
+public class SavingsAccount extends Account {
+
+public SavingsAccount(int amount, String PIN) {
+super(PIN);
+value = amount;
+}
+
+@Override
+public int withdraw(int amount) {
+if (value - amount >= 0) {
+

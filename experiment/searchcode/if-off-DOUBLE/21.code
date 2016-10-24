@@ -1,0 +1,14 @@
+blue = checkBounds(b);
+green = checkBounds(g);
+}
+
+private double checkBounds(double c)
+{
+if(c>255)
+return new IntColor(roundOff(red),roundOff(blue),roundOff(green));
+}
+
+private int roundOff(double c)
+{
+return (int)Math.round(c);
+

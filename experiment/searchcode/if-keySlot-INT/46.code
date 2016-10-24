@@ -1,0 +1,8 @@
+// Insert the new entry in the ID HashTable
+int keySlot = getSlot(e.keyHashCode);
+e.keyNextHash = keyEntries[keySlot];
+if (e.keyNextHash != null) {
+e.keyNextHash.keyPrevHash = e;
+}
+keyEntries[keySlot] = e;
+

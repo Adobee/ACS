@@ -1,0 +1,9 @@
+public static String standardize(String className) {
+if (className == null)
+return null;
+className = className.replaceAll(&quot;[$]\\d+$&quot;, &quot;&quot;);
+public static String forASM(String className) {
+if (className == null)
+return null;
+return ClassNameStandardizer.standardize(className).replaceAll(&quot;__&quot;, &quot;\\$&quot;).replaceAll(&quot;_&quot;, &quot;/&quot;);
+

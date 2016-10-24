@@ -1,0 +1,12 @@
+return new CookieIsSecureMatcher(false);
+}
+
+private final boolean secure;
+
+public CookieIsSecureMatcher(boolean secure) {
+this.secure = secure;
+}
+
+@Override
+protected boolean matchesSafely(Cookie item, Description mismatchDescription) {
+

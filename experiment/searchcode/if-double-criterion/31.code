@@ -1,0 +1,8 @@
+type = checkCriterionType(alt, criterion);
+
+//check if the criterion has a preference already defined, if not asks if it should have one
+private String checkPreference(ArrayList<Offering> alternatives, Criterion criterion){
+double value;
+
+if(criterion.getType() == Criterion.NON_NUMERICAL || criterion.getType() == Criterion.BINARY){ //non-numerical and binary criteria must have a preference
+

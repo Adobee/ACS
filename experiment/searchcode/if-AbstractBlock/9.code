@@ -1,0 +1,8 @@
+import generator.jim.composite.AbstractBlock;
+
+public class BlockRoot extends AbstractBlock {
+
+private Map<String, AbstractBlock> blockMap = new HashMap<String, AbstractBlock>();
+
+private static final String DEFINE_BOLCK = &quot;defineBlock&quot;;
+

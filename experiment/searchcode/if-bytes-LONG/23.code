@@ -1,0 +1,8 @@
+public static byte[] toBytes(UUID uuid) {
+byte[] bytes = new byte[16];
+
+writeLong(bytes, 0, uuid.getMostSignificantBits());
+writeLong(bytes, 8, uuid.getLeastSignificantBits());
+
+return bytes;
+

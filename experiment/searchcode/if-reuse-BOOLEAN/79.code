@@ -1,0 +1,8 @@
+protected final ManagedClientConnection managedConn;
+protected final boolean attemptReuse;
+
+public BasicEofSensorWatcher(ManagedClientConnection conn, boolean reuse)
+{
+Args.notNull(conn, &quot;Connection&quot;);
+this.managedConn = conn;
+

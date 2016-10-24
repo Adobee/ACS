@@ -1,0 +1,9 @@
+package util;
+
+public class Contract
+{
+public static void require (boolean b, String desc)
+{
+if (!b)
+throw new PreconditionViolation (desc);
+

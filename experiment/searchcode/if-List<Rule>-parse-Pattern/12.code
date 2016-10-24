@@ -1,0 +1,11 @@
+Object cacheResult = context.getFromCache( cacheKey );
+
+if ( cacheResult == null || !( cacheResult instanceof List ) ) {
+data = parse( rule, parameters[0].toString() );
+return ( groupNo >= 0 &amp;&amp; groupNo < data.size() ) ? data.get( groupNo ) : null;
+}
+
+private List<String> parse( StringParseRule rule, String src ) {
+
+Pattern pattern = Pattern.compile( rule.getPattern() );
+

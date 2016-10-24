@@ -1,0 +1,11 @@
+private byte[] buf = new byte[1024];
+private int curChar;
+private int numChars;
+private SpaceCharFilter filter;
+public interface SpaceCharFilter {
+boolean isSpaceChar(int ch);
+}
+
+public int read() {
+if (numChars == -1)
+

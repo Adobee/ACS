@@ -1,0 +1,16 @@
+private double r0 = 0;
+private double r1 = 0;
+private double r2 = 0;
+private double r3 = 0;
+private int size = 0;
+
+public Registers(double r0, double r1, double r2, double r3, int size) {
+r1 = 0;
+r2 = 0;
+r3 = 0;
+size = 0;
+}
+
+public double pop() throws MemoryEmptyException {
+if (size < 1)
+

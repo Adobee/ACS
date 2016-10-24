@@ -1,0 +1,9 @@
+public SeriesSummator(DoubleUnaryOperator function) {
+this.function = function;
+}
+
+public Double sum(Double lowerBound, Double upperBound) {
+Double x = lowerBound;
+Double sum = 0.0;
+while (x + step < upperBound) {
+

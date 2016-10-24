@@ -1,0 +1,13 @@
+Objects.requireNonNull(cookie, &quot;cookie is null&quot;);
+Iterator<Cookie> it = cookieJar.iterator();
+while (it.hasNext())
+if (equals(it.next(), cookie)) {
+return true;
+}
+return false;
+}
+
+@Override
+public boolean removeAll() {
+if (!cookieJar.isEmpty()) {
+

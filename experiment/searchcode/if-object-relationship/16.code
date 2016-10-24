@@ -1,0 +1,15 @@
+return relatedRelationship;
+}
+
+@Override
+public boolean getHasRelationshipName() {
+if (relationship == null) {
+return false;
+}
+
+if (StringUtils.isEmpty(relationship.getName())) {
+return false;
+}
+
+return true;
+

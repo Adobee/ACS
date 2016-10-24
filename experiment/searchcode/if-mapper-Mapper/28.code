@@ -1,0 +1,13 @@
+/**
+*
+*/
+package com.socialnetwork.utils;
+
+import org.modelmapper.ModelMapper;
+public static ModelMapper getMapperInstance()
+{
+if (modelMapper == null) {
+createCustomMapper();
+}
+return modelMapper;
+

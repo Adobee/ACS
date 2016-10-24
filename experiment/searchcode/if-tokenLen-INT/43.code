@@ -1,0 +1,14 @@
+ArrayList<Token> tokens;
+
+int tokenLen;
+int tokenOffset;
+InlineLexer inlineLexer = new InlineLexer();
+private Token token;
+return processor;
+
+}
+
+public Token next() {
+if (tokenOffset < tokenLen) {
+token = tokens.get(tokenOffset++);
+

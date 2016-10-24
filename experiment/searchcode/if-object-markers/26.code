@@ -1,0 +1,16 @@
+* @see org.eclipse.bpel.ui.adapters.IMarkerHolder#getMarkers(java.lang.Object)
+*/
+public IMarker[] getMarkers (Object object) {
+
+if (fMarkers.size() == 0) {
+for (IMarker m : fMarkers) {
+if (!m.exists())
+removed.add(m);
+}
+
+fMarkers.removeAll(removed);
+
+return fMarkers.toArray( EMPTY_MARKERS );
+}
+}
+

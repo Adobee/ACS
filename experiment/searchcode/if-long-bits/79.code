@@ -1,0 +1,9 @@
+protected void complement() {
+if (0 != enums.length) {
+bitsIndex = enums.length / BIT_IN_LONG;
+
+size = 0;
+bits[i] &amp;= ((HugeEnumSet<E>) set).bits[i];
+if (oldBits != bits[i]) {
+size = size - Long.bitCount(oldBits)
+

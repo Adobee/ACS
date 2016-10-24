@@ -1,0 +1,10 @@
+public class CoordinateLocation extends Location {
+
+private Double latitude;
+private Double longitude;
+private Double accuracy;
+private Double altitude;
+private Double altitudeAccuracy;
+
+public CoordinateLocation(Double latitude, Double longitude) {
+

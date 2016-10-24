@@ -1,0 +1,9 @@
+public class KeyManager
+{
+private static int upKey;
+private static int leftKey;
+private static int rightKey;
+private static int downKey;
+private static int invKey;
+private static int attackKey;
+

@@ -1,0 +1,8 @@
+@Override
+public ByteBuffer decode(ByteBuffer encoded, DecodingState state) {
+if (encoded.hasArray()) {
+final int length = encoded.remaining();
+
+if (length % 4 != 0) {
+throw new IllegalArgumentException(&quot;base64&quot;);
+

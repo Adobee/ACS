@@ -1,0 +1,11 @@
+private int maxDeflection = (int)Math.sqrt(Math.pow(Gdx.graphics.getWidth(),2)+Math.pow(Gdx.graphics.getHeight(),2));
+
+private double[] accuracy;
+private LinkedList<Double> accuracyBlock = new LinkedList<Double>();
+return accuracyBlock.get(accuracyBlock.size()-1);
+}
+
+public Double getLvlAccuracy() {
+if (accuracyLvl==0) {
+for (Double el : accuracyBlock) {
+

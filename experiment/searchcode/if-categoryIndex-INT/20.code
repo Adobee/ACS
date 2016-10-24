@@ -1,0 +1,11 @@
+public class CategoryExportFilter<T extends Record> implements ExportFilter<T> {
+
+private int categoryIndex;
+
+/**
+* Creates a new {@link CategoryExportFilter} for the given category name.
+throws IOException {
+int index = appinfo.findCategoryByName(categoryName);
+if (index < 0) {
+throw new IOException(&quot;Category &#39;&quot; + categoryName + &quot;&#39; is not defined&quot;);
+

@@ -1,0 +1,6 @@
+public static <V> RetryingFuture<V> create(final Callable<ListenableFuture<V>> callable, final int maxRetries,
+final Predicate<V> valuePredicate) {
+* @param maxRetries to retry
+*/
+private void call(final Callable<ListenableFuture<V>> callable, final int maxRetries) {
+

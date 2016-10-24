@@ -1,0 +1,11 @@
+node22 = g.getNext(node2);
+if (node2 == node1)
+break;
+
+double orignode2dist = w.getDistanceTo(node2, node22);
+double orignode3dist = w.getDistanceTo(node3, node33);
+
+double org = orignode3dist + orignode2dist + orignode1dist;
+
+double newdistance = w.getDistanceTo(node1, node22) + w.getDistanceTo(node3, node11) + w.getDistanceTo(node2, node33);
+

@@ -1,0 +1,11 @@
+ZoomLevel level = readZoomLevel();
+return level == null ? DEFAULT : level;
+}
+
+public boolean canZoomIn() {
+return getLevel() != ZoomLevel.ENLARGED;
+}
+
+public boolean canZoomOut() {
+return getLevel() != ZoomLevel.NORMAL;
+

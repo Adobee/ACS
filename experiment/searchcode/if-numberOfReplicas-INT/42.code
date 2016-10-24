@@ -1,0 +1,10 @@
+HashFunc hashFunc;
+/** 复制的节点个数 */
+private final int numberOfReplicas;
+/** 一致性Hash环 */
+private final SortedMap<Integer, T> circle = new TreeMap<Integer, T>();
+* @param numberOfReplicas 复制的节点个数，增加每个节点的复制节点有利于负载均衡
+* @param nodes 节点对象
+*/
+public ConsistentHash(int numberOfReplicas, Collection<T> nodes) {
+

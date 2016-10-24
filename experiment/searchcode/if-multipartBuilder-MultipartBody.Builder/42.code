@@ -1,0 +1,4 @@
+RequestBody requestBody = RequestBody.create(MediaType.parse(mimetype), tempFile);
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder();
+multipartBuilder.addFormDataPart(&quot;file&quot;, tempFile.getName(), requestBody);
+

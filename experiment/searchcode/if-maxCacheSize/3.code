@@ -1,0 +1,8 @@
+public class CacheFileEventLogger extends FileEventLogger implements EventLogger {
+private List<Event> cache;
+private int maxCacheSize;
+
+public CacheFileEventLogger(String filename, int maxCacheSize) {
+super(filename);
+this.maxCacheSize = maxCacheSize;
+

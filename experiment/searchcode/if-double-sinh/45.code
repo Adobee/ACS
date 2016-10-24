@@ -1,0 +1,9 @@
+public IExpr evaluateArg1(final IExpr arg1) {
+if (isNegativeExpression(arg1)) {
+return Times(CN1, Sinh(Times(CN1, arg1)));
+public IExpr numericEvalDC1(final ComplexNum arg1) {
+return ComplexUtils.sinh(arg1);
+}
+
+public double evalReal(final double[] stack, final int top, final int size) {
+

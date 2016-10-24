@@ -1,0 +1,7 @@
+public static class FieldType {
+public static final FieldType BOOLEAN = new FieldType(&quot;boolean&quot;);
+public static final FieldType STRING = new FieldType(&quot;String&quot;);
+public void setFieldType(FieldType fieldType) {
+// Only set fieldType to variable if there is no other fieldType found.
+if (fieldType == FieldType.VARIABLE &amp;&amp; this.fieldType == null) {
+

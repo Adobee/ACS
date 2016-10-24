@@ -1,0 +1,10 @@
+* called when physical data is all known
+*/
+protected void decode()
+{
+
+dataset[0] = new Boolean(((octetset[0] &amp; 0x0001)==0)?false:true);
+dataset[1] = new Boolean((((octetset[0] &amp; 0x0002)>>1)==0)?false:true);
+invalidity = (short)(((((Boolean)dataset[0]).booleanValue()?0:1) << 10) | ((((Boolean)dataset[1]).booleanValue()?0:1) << 10) | ((((Boolean)dataset[2]).booleanValue()?0:1) << 10) | (((Boolean)dataset[3]).booleanValue()?0:1 << 10) | (((Boolean)dataset[4]).booleanValue()?0:1 << 10) | ((((Boolean)dataset[5]).booleanValue()?0:1) << 10));
+if (invalidity!=0){
+

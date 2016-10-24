@@ -1,0 +1,9 @@
+private void validateRangeMinimum(Double rangeMinimum) {
+if (rangeMinimum < 0) {
+throw new IllegalArgumentException(&quot;Invalid Minimum Range value&quot;);
+}
+}
+
+private void validateRangeMaximum(Double rangeMaximum) {
+if (rangeMaximum < 0) {
+

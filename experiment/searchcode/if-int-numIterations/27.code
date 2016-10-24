@@ -1,0 +1,11 @@
+public String lookAndSay(String seed, int numIterations) {
+if (numIterations < 0)
+return seed;
+
+StringBuilder res = new StringBuilder(seed);
+StringBuilder next;
+
+for (int i = 1; i <= numIterations; i++) {
+next = new StringBuilder();
+char tag = res.charAt(0);
+

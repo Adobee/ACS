@@ -1,0 +1,9 @@
+* ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+* POSSIBILITY OF SUCH DAMAGE.
+*/
+package com.avcomofva.sbs.datagram.write;
+* The LNB power configuration. Default is to turn LNB power OFF. Change this
+* value ONLY if the device supports LNB power.
+*/
+private int lnbPower = 0;
+

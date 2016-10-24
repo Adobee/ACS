@@ -1,0 +1,8 @@
+// when their getSupertypes is called. So we just return Bottom.
+if (rawType.equals(RawType.coreBottom))
+return Type.NONE;
+return new Type[] {new ParameterizedType(RawType.coreBottom)};
+TypeDef myTypeDef = Project.singleton.resolve(rawType);
+if (that instanceof ParameterizedType) {
+ParameterizedType thatParamType = (ParameterizedType) that;
+

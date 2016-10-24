@@ -1,0 +1,13 @@
+private LinkedList<MyOperation> mRunningOperations;
+
+private static OperationDispatch sSelf;
+
+public static OperationDispatch getInstance() {
+if(sSelf == null)
+mOperationQueue.add(operation);
+checkOperationQueue();
+}
+
+public void onOperationFinished(MyOperation operation) {
+if(mRunningOperations.remove(operation))
+

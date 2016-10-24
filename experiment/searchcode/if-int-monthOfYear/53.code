@@ -1,0 +1,6 @@
+public CustomDatePicker(Context context, OnDateSetListener callBack, int year, int monthOfYear, int dayOfMonth) {
+super(context, callBack, year, monthOfYear, dayOfMonth);
+public void setMaxDate(long maxDate) {
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+getDatePicker().setMaxDate(System.currentTimeMillis());
+

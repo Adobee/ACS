@@ -1,0 +1,11 @@
+Reducer<LRSubMatrixKey, LRSubVector, LRSubMatrixKey, LRSubMatrix> {
+
+private boolean loadMatrix;
+@Override
+public void reduce(LRSubMatrixKey key, Iterator<LRSubVector> values,
+OutputCollector<LRSubMatrixKey, LRSubMatrix> output,
+Reporter reporter) throws IOException {
+
+LRSubMatrix subMatrix;
+if (loadMatrix)
+

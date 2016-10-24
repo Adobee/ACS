@@ -1,0 +1,9 @@
+return l10n.getString(&quot;CommonWebUtils.daysAgo&quot;, &quot;days&quot;, Long.toString(days));
+else if(days > 0)
+return l10n.getString(&quot;CommonWebUtils.daysHoursAgo&quot;, new String[] {&quot;days&quot;, &quot;hours&quot;}, new String[] {Long.toString(days), Long.toString(hours)});
+return l10n.getString(&quot;CommonWebUtils.hoursAgo&quot;, &quot;hours&quot;, Long.toString(hours));
+else
+return l10n.getString(&quot;CommonWebUtils.minutesAgo&quot;, &quot;minutes&quot;, Long.toString(minutes));
+}
+}
+

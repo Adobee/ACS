@@ -1,0 +1,8 @@
+double q2 = a * q1 + b * q0;
+boolean infinite = false;
+if ((Double.isInfinite(p2)) || (Double.isInfinite(q2))) {
+int maxPower = 5;
+double scale = FastMath.max(a, b);
+if (scale <= 0.0D) {
+throw new ConvergenceException(
+

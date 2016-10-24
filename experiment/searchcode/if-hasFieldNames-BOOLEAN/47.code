@@ -1,0 +1,8 @@
+this.mappedFields = new MappedFields(context);
+if (!context.hasFieldNames()) {
+if (context.hasPartialFields()) {
+fieldsVisitor = new CustomFieldsVisitor(true, false);
+}
+} else if (fieldNames != null) {
+boolean loadSource = extractFieldNames != null ||
+

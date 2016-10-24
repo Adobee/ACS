@@ -1,0 +1,9 @@
+/*    */   public boolean equals(Object other)
+/*    */   {
+/* 53 */     if (!(other instanceof IDKey)) {
+/* 54 */       return false;
+/*    */     }
+/* 56 */     IDKey idKey = (IDKey)other;
+/* 57 */     if (this.id != idKey.id) {
+/* 58 */       return false;
+

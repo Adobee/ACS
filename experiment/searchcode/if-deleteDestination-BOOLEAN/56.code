@@ -1,0 +1,9 @@
+protected void ln_copy(TransferableFileSystem fs) throws IOException,
+InterruptedIOException {
+if (!exists()) {
+deleteDestination(fs);
+log.warn(new TransferException(Messages.TransferMsg_SKIP_LINK,
+public boolean isSafeLink() {
+Path symTarget = getSymbolicLinkTarget();
+if (symTarget.isAbsolute()) {
+

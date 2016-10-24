@@ -1,0 +1,19 @@
+Integer quadrantCount[] = new Integer[4];
+Arrays.fill(quadrantCount, 0);
+for(Integer number : numbers){
+int column = (number + 10) % 10;
+for(Integer quadrant : quadrantCount){
+if (quadrant > 4) {
+return true;
+}
+}
+return false;
+}
+
+@Override
+public int value() {
+return 6;
+}
+
+}
+

@@ -1,0 +1,7 @@
+public void paint(Graphics2D g, Shape s, JPaint fillPaint, JPaint border, JStroke stroke) {
+if (fillPaint != null) {
+g.setPaint(fillPaint);
+gg.transform(tx);
+boolean isGrad = false;
+if (fillPaint.getPaintMode() == JPaint.LINEAR_GRADIENT_MODE || fillPaint.getPaintMode() == JPaint.RADIAL_GRADIENT_MODE) {
+

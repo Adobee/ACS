@@ -1,0 +1,10 @@
+import java.io.IOException;
+import org.elasticsearch.common.xcontent.XContentParser;
+import lombok.Getter;
+
+@Getter
+public class BulkItem {
+while ((token = parser.nextToken()) != XContentParser.Token.END_OBJECT) {
+if (token == XContentParser.Token.FIELD_NAME) {
+currentFieldName = parser.currentName();
+

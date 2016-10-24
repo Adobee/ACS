@@ -1,0 +1,13 @@
+* Constant learning rate, if any
+*/
+private double learningRate;
+
+/**
+* Currrent timeslot
+*/
+private AtomicInteger currentT= new AtomicInteger(0);
+public double getGammaForTime(long time){
+
+if(!this.hasConstantRate){
+double timeSlot=getTimeslotForTime(time);
+

@@ -1,0 +1,10 @@
+while(j<read.length){
+if(!read[j]){
+System.out.println(&quot;pages[&quot;+j+&quot;] &quot;+&quot;(&quot;+pages[j]+&quot;) not read yet&quot;);
+int len = pages[j] + minimums[i-1];
+int min = 999999;
+int minIndex = 0;
+for(int i=0;i<read.length;i++){
+if(!read[i]){
+if(pages[i]<min) { min = pages[i]; minIndex = i;}
+

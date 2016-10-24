@@ -1,0 +1,9 @@
+* @param base 是否为0，如何和0进行比较的问题。个人认为，前提条件应该保证base不为0。
+* @param exponent 正负数的考虑
+*/
+public double power1(double base, int exponent) {
+if(exponent >= 0) {
+return powerHelp(base,exponent);
+} else {
+return 1.0d / powerHelp(base,-exponent);
+

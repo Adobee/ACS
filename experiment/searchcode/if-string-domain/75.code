@@ -1,0 +1,9 @@
+import java.util.HashMap;
+import java.util.Iterator;
+
+public class T_Domain {
+String domain_name;
+ArrayList<String> domains;
+public void set_domain_ordering(ArrayList<T_Pair<String, String>> domain_ordering) {
+if(domain_ordering.size() > 0 &amp;&amp; domain_ordering.get(0).getFirst() == &quot;default&quot;) {
+

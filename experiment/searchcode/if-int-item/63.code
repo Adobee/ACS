@@ -1,0 +1,11 @@
+public void updateItem(Item item) {
+updateItemQuality(item);
+updateItemSellIn(item);
+if (item.sellIn < 0)
+protected void decrementQuality(Item item, int amount) {
+item.quality -= amount;
+if (item.quality < 0)
+item.quality = 0;
+}
+}
+

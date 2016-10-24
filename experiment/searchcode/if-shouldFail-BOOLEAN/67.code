@@ -1,0 +1,11 @@
+new ExpectedTenuringFlags());
+}
+
+private static void runTenuringFlagsConsistencyTest(String[] tenuringFlags,
+boolean shouldFail,
+ProcessBuilder pb = ProcessTools.createJavaProcessBuilder(vmOpts.toArray(new String[vmOpts.size()]));
+OutputAnalyzer output = new OutputAnalyzer(pb.start());
+
+if (shouldFail) {
+output.shouldHaveExitValue(1);
+

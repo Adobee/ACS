@@ -1,0 +1,7 @@
+public static void rejectIfMaxLength(Errors errors, String fieldName, String errorMessage, String fieldValue, int maxlength) {
+if (fieldValue != null &amp;&amp; fieldValue.length() > maxlength) {
+&quot;^[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$&quot;
+);
+
+if (!rfc2822.matcher(fieldValue).matches()) {
+

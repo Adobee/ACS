@@ -1,0 +1,7 @@
+public class HttpConnectPool {
+private static int POOLSIZE;
+private static LinkedList<HttpConnect> AvilibleConnectList;
+public static HttpConnectPool GetHttpConnectPool(int poolsize){
+if(poolsize<0){
+logger.fatal(&quot;poolsize should be greater than 0!&quot;);
+

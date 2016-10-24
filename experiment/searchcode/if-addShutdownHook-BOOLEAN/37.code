@@ -1,0 +1,17 @@
+} catch (Exception e) {
+e.printStackTrace();
+}
+
+try {
+Runtime.getRuntime().addShutdownHook(new ShutdownHookTest_Hook(0, -1));
+e.printStackTrace();
+}
+}
+}
+
+public class ShutdownHookTest {
+
+private static boolean a_running = false;
+
+static public void main(String args[]) throws Throwable {
+

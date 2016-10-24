@@ -1,0 +1,8 @@
+// Check whether we saved the state in onSaveInstanceState
+if (state == null || !state.getClass().equals(SavedState.class)) {
+// Didn&#39;t save the state, so call superclass
+// Set this Preference&#39;s widget to reflect the restored state
+data.clear();
+this.stringToData(savedState.value, data);
+if(this.fragment != null)
+

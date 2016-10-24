@@ -1,0 +1,12 @@
+public static String getPhoneAreaCode(String phone) {
+String retVal = &quot;&quot;;
+
+if (phone != null) {
+int index = phone.indexOf(&quot;-&quot;);
+if (index > -1) {
+retVal = phone.substring(0, index);
+}
+}
+
+return retVal;
+

@@ -1,0 +1,13 @@
+public DataTypesInputStream(InputStream in) {
+super(in);
+}
+
+public void readFully(byte[] buf) throws IOException {
+for (int i = 0, count = 0; i < buf.length; i += count) {
+public int readUINT8() throws IOException {
+int b = in.read();
+if (b < 0) {
+throw new EOFException();
+}
+return b;
+

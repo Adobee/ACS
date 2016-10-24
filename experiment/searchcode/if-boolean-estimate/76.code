@@ -1,0 +1,11 @@
+public void CalculateStats(int iteration, RandomAccessibleInterval<T> image, Img<T> estimate, Img<T> reblurred, Img<T> lastEstimate, Img<T> truth, Img<T> psf, boolean printStats)
+{
+if (truth!=null)
+{
+arrayError[iteration]=StaticFunctions.squaredError(estimate, truth);
+arrayTvEstimate[iteration] = StaticFunctions.totalVariation(estimate);
+
+if (lastEstimate!=null)
+{
+arrayRelativeChange[iteration] = StaticFunctions.relativeChange(lastEstimate, estimate);
+

@@ -1,0 +1,13 @@
+public String getQuery(String dialect)
+{
+String query = this.query.get(dialect);
+if (query == null) query = this.query.get(&quot;SQL&quot;);
+return query;
+}
+
+public boolean hasQuery()
+{
+return ! this.query.isEmpty();
+}
+}
+

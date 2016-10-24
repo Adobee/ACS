@@ -1,0 +1,6 @@
+// getting the Fields for unliked items
+if (unlikeItems.length > 0) {
+org.apache.lucene.index.Fields[] unlikeFields = getFieldsFor(responses, unlikeItems);
+if (unlikeFields.length > 0) {
+mltQuery.setUnlikeText(unlikeFields);
+

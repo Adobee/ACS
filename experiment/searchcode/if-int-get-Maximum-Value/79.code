@@ -1,0 +1,11 @@
+* @param stepSize the step size
+*/
+public WrappingSpinnerNumberModel( int value, int minimum, int maximum, int stepSize )
+{
+super( value, minimum, maximum, stepSize );
+* @see javax.swing.SpinnerNumberModel#getNextValue()
+*/
+public Object getNextValue()
+{
+if ( getNumber().equals( getMaximum()))
+

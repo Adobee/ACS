@@ -1,0 +1,6 @@
+Object remoteObj = (Object) ServiceLocator.getInstance().getRemoteObject(&quot;IReportPrinterEJB&quot;);
+if (remoteObj instanceof IReportPrinterEJB) {
+repPrinterEJB = (IReportPrinterEJB) remoteObj;
+public PrinterDTO updatePrinter(PrinterDTO repPrinterDTO, RequestProfile requestProfile, boolean force)
+throws ProcessException {
+

@@ -1,0 +1,7 @@
+public void setOrAnimatePlusCheckIcon(final ImageView imageView, boolean isCheck,
+boolean allowAnimate) {
+if (!hasL()) {
+mActivity.getResources().getColor(R.color.theme_accent_1) : Color.WHITE);
+if (allowAnimate) {
+imageView.setImageState(isCheck ? STATE_UNCHECKED : STATE_CHECKED, false);
+

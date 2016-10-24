@@ -1,0 +1,11 @@
+public class Solution {
+public int sqrt(int x) {
+long prev = 0;
+long curr = 1;
+curr = curr * 2;
+}
+
+while (prev <= curr) {
+long mid = (prev + curr) / 2;
+long temp = mid * mid;
+

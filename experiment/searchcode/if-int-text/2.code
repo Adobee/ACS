@@ -1,0 +1,12 @@
+public class JustifyText
+{
+public static String[] format(String[] text)
+{
+int max = 0;
+int n = 0;
+StringBuilder sb;
+
+for(int i = 0; i < text.length; i++)
+{
+if(text[i].length() > max)
+

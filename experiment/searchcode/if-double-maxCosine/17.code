@@ -1,0 +1,10 @@
+if (approx.rows() == 4 &amp;&amp; Math.abs(area) > SQUARE_SIZE &amp;&amp; isConvex) {
+double maxCosine = 0;
+
+Point[] approxArray = approx.toArray();
+maxCosine = Math.max(maxCosine, cosine);
+}
+
+if (maxCosine > THRESHOLD_COS) {
+squares.add(new Geometry.Quad(approxArray));
+

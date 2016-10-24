@@ -1,0 +1,13 @@
+
+public class Pascal {
+final int [][] table;
+final int depth;
+final int DefaultDepth = 12;
+table[y][x] = prevLeft + prevRight;
+}
+}
+}
+
+public void print(int depth) {
+if (depth < MinimumDepth) {
+

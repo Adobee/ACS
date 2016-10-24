@@ -1,0 +1,8 @@
+public class AgedBrieUpdateStrategy extends ItemUpdateStrategy {
+
+private static final int QUALITY_INCREASE = 1;
+private static final int MAXIMUM_QUALITY = 50;
+protected void updateQuality(Item item) {
+int increaseFactor = increaseFactor(item.sellIn);
+item.quality += increaseFactor * QUALITY_INCREASE;
+

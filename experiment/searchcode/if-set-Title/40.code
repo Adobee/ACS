@@ -1,0 +1,7 @@
+String titleCode = postData.getCode();
+
+if (!StringUtils.isBlank(titleCode)) {
+Title title = titleService.findByCode(titleCode, currentUser.getProvider());
+
+if (title != null) {
+

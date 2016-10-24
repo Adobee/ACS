@@ -1,0 +1,7 @@
+private final boolean firstMatch;
+private VideoStrExportListener strExportListener;
+private String subtitleLink, prevUrl;
+private static final Map<Long, String> cache = new HashMap<Long, String>(8);
+
+public SubtitleFinder(GuiListener guiListener, String format, String languageID, Video video, boolean firstMatch, VideoStrExportListener strExportListener) {
+

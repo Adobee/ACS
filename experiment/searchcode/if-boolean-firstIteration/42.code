@@ -1,0 +1,18 @@
+public class DijkstrasAlgorithmReducer extends Reducer<LongWritable, Text, LongWritable, Text> {
+
+boolean firstIteration;
+
+public DijkstrasAlgorithmReducer()
+{
+firstIteration=true;
+if(dmin>distance)
+{
+dmin=distance;
+}
+}
+}
+
+if(firstIteration==true)
+{
+context.getCounter(CONVERGE.COUNTER).setValue(0);
+

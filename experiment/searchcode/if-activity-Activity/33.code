@@ -1,0 +1,13 @@
+private ActivityManager() {
+}
+
+// 获得 activity 管理器
+public static ActivityManager getInstance() {
+if (instance == null) {
+Activity activity = activityStack.lastElement();
+
+activityStack.size();
+if (activity != null) {
+activity.finish();
+activityStack.remove(activity);
+

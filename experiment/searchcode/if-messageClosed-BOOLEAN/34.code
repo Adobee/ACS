@@ -1,0 +1,9 @@
+messageClosed = false;
+frameCallback.onMessage(Okio.buffer(framedMessageSource), type);
+if (!messageClosed) {
+throw new IllegalStateException(&quot;Listener failed to call close on message payload.&quot;);
+if (closed) throw new IOException(&quot;closed&quot;);
+if (messageClosed) throw new IllegalStateException(&quot;closed&quot;);
+
+if (frameBytesRead == frameLength) {
+

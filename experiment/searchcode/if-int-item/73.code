@@ -1,0 +1,10 @@
+import java.awt.Graphics2D;
+import java.util.ArrayList;
+
+public class Chart {
+private ArrayList<Item> itemSet = new ArrayList<Item>();
+public Item findItem(int x, int y) {
+Item pointedItem = null;
+for (Item item: itemSet) {
+if (item.isPointed(x, y)) {
+

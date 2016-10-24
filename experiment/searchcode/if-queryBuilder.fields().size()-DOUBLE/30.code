@@ -1,0 +1,11 @@
+StringBuilder queryBuilder = new StringBuilder(String.format(&quot;INSERT INTO \&quot;%s\&quot;.\&quot;%s\&quot;(&quot;, schemaName, handle.getTableName()));
+queryBuilder.append(&quot;id&quot;);
+
+if (sampled) {
+queryBuilder.append(&quot;,&quot;).append(columnName);
+}
+queryBuilder.append(&quot;) VALUES (?&quot;);
+
+if (sampled) {
+queryBuilder.append(&quot;,?&quot;);
+

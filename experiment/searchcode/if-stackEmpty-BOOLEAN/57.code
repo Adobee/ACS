@@ -1,0 +1,13 @@
+expr.writePushConstString(name.getName().toLowerCase());
+}
+}
+
+@Override
+public void write(InstanceofExprToken instanceOf, boolean returnValue) {
+if (expr.stackEmpty(true))
+StackItem R = expr.stackPop();
+StackItem L = expr.stackPop();
+
+boolean isInvert = !R.isKnown();
+if (!R.isKnown() &amp;&amp; !L.isKnown() &amp;&amp; R.getLevel() > L.getLevel())
+

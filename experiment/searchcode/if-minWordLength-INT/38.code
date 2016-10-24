@@ -1,0 +1,9 @@
+private final int minWordLength;
+private OutputCollector _collector;
+
+public WordSplitBolt(final int minWordLength) {
+private static final Function<String, String> getOnlyWordsOfMinThresholdLength(final int minWordLength) {
+return new Function<String, String>() {
+@Override
+public final String apply(final String word) {
+

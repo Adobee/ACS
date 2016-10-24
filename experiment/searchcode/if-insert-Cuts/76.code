@@ -1,0 +1,11 @@
+public String tree() throws Exception
+{
+List<ShortCut> shortCuts = shortCutService.tree();
+
+data.put(&quot;lists&quot;, shortCuts);
+return &quot;tree&quot;;
+String supid = Struts2Utils.getRequest().getParameter(&quot;supid&quot;);
+List<ShortCut> shortCuts = shortCutService.treechild(supid);
+
+arg.put(&quot;supid&quot;, supid);
+

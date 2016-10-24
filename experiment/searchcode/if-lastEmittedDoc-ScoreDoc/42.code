@@ -1,0 +1,11 @@
+private int[] docIds;
+
+private int size;
+
+private ScoreDoc lastEmittedDoc;
+
+public FetchSearchRequest() {
+public FetchSearchRequest(TransportRequest request, long id, IntArrayList list, ScoreDoc lastEmittedDoc) {
+super(request);
+this.id = id;
+

@@ -1,0 +1,9 @@
+return anInt3742;
+}
+
+private final native void put(long argument_0_, byte[] argument_1_,
+int argument_2_, int argument_3_,
+int argument_4_);
+
+protected final void method4152(long argument_5_, int argument_6_) {
+

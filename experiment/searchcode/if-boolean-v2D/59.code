@@ -1,0 +1,7 @@
+* Try to send the ball on the right peer
+*/
+public synchronized boolean goneOutsideRight(BallAgent agent, P2d pos, V2d v, double speed){
+public synchronized boolean goneOutsideLeft(BallAgent agent, P2d pos, V2d v, double speed){
+if (leftPeer!=null){
+leftPeer.sendBall(new P2d(1.0,pos.y),v,speed);
+

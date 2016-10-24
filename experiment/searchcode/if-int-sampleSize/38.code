@@ -1,0 +1,12 @@
+* @param sampleSize
+*/
+public MovingAverage(int sampleSize) {
+this.samples = new CircularArrayList<Float>(sampleSize);
+public synchronized void add(float value) {
+if (samples.size() == sampleSize) {
+samples.remove(0);
+}
+samples.add(value);
+}
+}
+

@@ -1,0 +1,11 @@
+int pos;
+for (int i = 0;; i++) {
+if (square[i] == -1) {
+pos = i;
+break;
+}
+}
+int currentRow = pos / 3;
+int nextRow = (currentRow + 1) % 3;
+return rowSum(square, nextRow) - rowSum(square, currentRow) - 1;
+

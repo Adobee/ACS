@@ -1,0 +1,16 @@
+OVERWORLD(0),
+END(1);
+
+private final int id;
+
+private Dimension(int id) {
+this.id = id;
+}
+
+public int getId() {
+return id;
+}
+
+public static Dimension getDimensionById(int id) {
+for(Dimension dimension : values())
+

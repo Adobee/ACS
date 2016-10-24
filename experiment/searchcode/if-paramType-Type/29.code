@@ -1,0 +1,9 @@
+return obj;
+}
+
+private Object parseFromString(Class<?> paramType, String s) {
+if (paramType.equals(String.class))
+return s;
+if (paramType.equals(byte.class) || paramType.equals(Byte.class))
+return Byte.parseByte(s);
+

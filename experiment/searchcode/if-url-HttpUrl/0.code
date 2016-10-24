@@ -1,0 +1,11 @@
+private final HttpUrl httpUrl;
+private final Object tag;
+
+private HttpRequest(Builder builder) {
+this.httpUrl = getUrlWithParameters(builder);
+this.tag = builder.tag;
+}
+
+private HttpUrl getUrlWithParameters(Builder builder) {
+if (builder.parameters.size() > 0) {
+

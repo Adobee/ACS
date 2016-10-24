@@ -1,0 +1,17 @@
+public enum Retry {
+BusySpin, SLEEPING {
+@Override
+public long check(long count) {
+if (count > 100) return --count;
+Thread.yield();
+}
+return count;
+}
+
+@Override
+public long getInitialCount() {
+return 200;
+}
+},
+YIELD {
+

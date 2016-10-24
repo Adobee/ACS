@@ -1,0 +1,7 @@
+private Collector createCollector(AtomicReaderContext reader) {
+
+// if rehash is false then the value source is either already hashed, or the user explicitly
+FixedBitSet bits = visitedOrds.get(bucketOrd);
+if (bits == null) {
+bits = new FixedBitSet(maxOrd);
+

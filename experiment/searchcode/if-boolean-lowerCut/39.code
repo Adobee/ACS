@@ -1,0 +1,6 @@
+final SubHyperplane<Euclidean1D> lowerCut =
+new OrientedPoint(new Vector1D(lower), false).wholeHyperplane();
+if (Double.isInfinite(upper) &amp;&amp; (upper > 0)) {
+return new BSPTree<Euclidean1D>(lowerCut,
+new BSPTree<Euclidean1D>(Boolean.FALSE),
+

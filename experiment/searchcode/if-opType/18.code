@@ -1,0 +1,6 @@
+JUMP,   // Jump unconditionally to line specified by tag.
+JZERO,  // Jump to line specified by tag if accumulator value is zero.
+// &quot;If the operand type is not within the valid types for this instruction type...&quot;
+if (!validOperands.get(insType).contains(opType)){
+System.err.println(String.format(&quot;%s: invalid %s operand.&quot;, insType, opType));
+

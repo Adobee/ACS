@@ -1,0 +1,18 @@
+public DiscardMove(GameModel pGameModel) {
+aGameModel = pGameModel;
+}
+
+@Override
+public boolean move() {
+if (aGameModel.discard())
+return false;
+
+}
+
+@Override
+public boolean undo() {
+return aGameModel.undoDiscard();
+}
+
+}
+

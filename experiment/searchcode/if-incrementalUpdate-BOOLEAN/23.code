@@ -1,0 +1,7 @@
+public static final CollectionSettingName name = new CollectionSettingName(&quot;enabled&quot;, &quot;agent&quot;);
+private volatile boolean enabled = true;
+
+public DisableAgentCollectionStrategy() {
+public void incrementalUpdate(CollectionSettingName update, Serializable value) {
+if (name.equals(update) &amp;&amp; (value instanceof Boolean)) {
+

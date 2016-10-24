@@ -1,0 +1,11 @@
+@Override
+public Stream<T> tail()
+{
+if (isEmpty())
+{
+throw new EmptyStreamException();
+}
+if (tail == null)
+{
+synchronized (this)
+

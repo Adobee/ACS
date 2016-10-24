@@ -1,0 +1,9 @@
+result[0] = 1;
+for (int index = 1; index < m; index++) {
+if (obstacleGrid[0][index] == 0) result[index] = result[index - 1];
+else result[index] = 0;
+}
+
+for (int indexN = 1; indexN < n; indexN++) {
+if (obstacleGrid[indexN][0] == 1) {
+

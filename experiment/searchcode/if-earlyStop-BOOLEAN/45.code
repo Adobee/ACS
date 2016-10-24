@@ -1,0 +1,9 @@
+private Bitmap bitmap;
+private int numFrames, delay;
+private double xPos, yPos;
+private boolean loop;
+
+public static Animation get(String name) throws IOException {
+Timeline timeline = Timeline.get(name);
+if (timeline == null) return null;
+

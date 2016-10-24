@@ -1,0 +1,8 @@
+private static final double INCREMENT=0.25; //increment of the ranges
+
+private static double[] numberArray=new double[NUMOFRANDOM];  // used to store normally distributed random number.
+* @param index: the location to store random number and next random number
+*/
+public static void ShiftRandomNumber(double [] data, int index) {
+// PRE: Array that can hold 20 double number; index>=0
+

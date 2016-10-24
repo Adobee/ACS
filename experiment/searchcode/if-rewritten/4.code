@@ -1,0 +1,7 @@
+Op rightChildRewritten = this.rewrite(rightChild);
+if (leftChildRewritten instanceof OpBGP &amp;&amp; rightChildRewritten instanceof OpBGP) {
+result = OpJoin.create(leftChildRewritten, rightChildRewritten);
+
+} else if (op instanceof OpLeftJoin) { // OPT pattern
+OpLeftJoin opLeftJoin = (OpLeftJoin) op;
+

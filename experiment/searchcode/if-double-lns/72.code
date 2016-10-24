@@ -1,0 +1,9 @@
+P = new DoublePoint[N+2];
+double maxX = 0, maxY = 0;
+double x, y;
+String[] lns;
+for(int i = 0; i < N; i++){
+lns = br.readLine().split(&quot; &quot;);
+x =  Double.parseDouble(lns[0]);
+y = Double.parseDouble(lns[1]);
+

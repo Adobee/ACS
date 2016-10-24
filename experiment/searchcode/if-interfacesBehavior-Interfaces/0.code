@@ -1,0 +1,6 @@
+public static List<Class<?>> getDeclaringClasseses(Method m,
+Interfaces interfacesBehavior) {
+Set<Method> declaredMethods = MethodUtils.getOverrideHierarchy(m,
+interfacesBehavior);
+final List<Class<?>> classes = new LinkedList<Class<?>>();
+

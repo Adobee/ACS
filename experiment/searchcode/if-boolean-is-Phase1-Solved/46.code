@@ -1,0 +1,8 @@
+static final short N_MOVE = 18;
+
+// All coordinates are 0 for a solved cube except for UBtoDF, which is 114
+URFtoDLF = URFtoDLF_Move[URFtoDLF][m];
+URtoUL = URtoUL_Move[URtoUL][m];
+UBtoDF = UBtoDF_Move[UBtoDF][m];
+if (URtoUL < 336 &amp;&amp; UBtoDF < 336)// updated only if UR,UF,UL,UB,DR,DF
+

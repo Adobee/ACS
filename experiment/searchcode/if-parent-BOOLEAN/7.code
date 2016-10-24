@@ -1,0 +1,14 @@
+return complete;
+}
+
+public boolean setComplete() {
+synchronized (this) {
+if (canceled)
+return true;
+}
+
+@Override
+public boolean cancel() {
+synchronized (this) {
+if (complete)
+

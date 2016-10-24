@@ -1,0 +1,11 @@
+public boolean isSquare() {
+return nrows == ncols;
+}
+
+public int size() {
+if (isSquare())
+for (int i=0;i<X_.getNrows();i++) {
+for (int j=0;j<X_.getNcols();j++) {
+if (j==0)
+X_.setValueAt(i, j, 1.0);
+

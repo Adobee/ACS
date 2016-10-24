@@ -1,0 +1,11 @@
+private final String mScheme;
+
+Scheme(final URL url, final String scheme) {
+super(url);
+mScheme = scheme;
+}
+
+@Override
+protected void store(final FinalURL storage) {
+if (storage.mScheme == null) {
+

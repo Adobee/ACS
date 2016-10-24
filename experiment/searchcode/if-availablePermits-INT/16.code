@@ -1,0 +1,8 @@
+private Queue<Function> waiters = new LinkedBlockingQueue<Function>();
+private int availablePermits;
+
+public AsyncSemaphore(int initialPermits) {
+synchronized (lock) {
+availablePermits += 1;
+if (availablePermits > 0 &amp;&amp; !waiters.isEmpty()) {
+

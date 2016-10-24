@@ -1,0 +1,9 @@
+SqlNode lowerBound, SqlNode upperBound, SqlLiteral allowPartial,
+SqlParserPos pos) {
+// If there&#39;s only one bound and it&#39;s &#39;FOLLOWING&#39;, make it the upper
+* @see org.apache.calcite.sql.validate.SqlValidatorImpl#resolveWindow(SqlNode, org.apache.calcite.sql.validate.SqlValidatorScope, boolean)
+*/
+public boolean isAlwaysNonEmpty() {
+final SqlWindow tmp;
+if (lowerBound == null || upperBound == null) {
+

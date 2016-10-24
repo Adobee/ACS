@@ -1,0 +1,8 @@
+Transport transport = checkStaleAndGet(session);
+if (transport == null) {
+transport = createTransport(session);
+public void release(Session session, Transport transport) {
+leased.remove(transport);
+if (stopped) {
+TransportUtils.closeQuietly(transport);
+

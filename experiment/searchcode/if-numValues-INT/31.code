@@ -1,0 +1,8 @@
+* A decorator that limits the number of values of a given {@link #generator} to {@link #numValues}
+* Note, that if the decorated generator has less values - the decoration won&#39;t take effect
+private final int numValues;
+
+private int valuesGenerated;
+
+public LimitedGenerator(LoadGenerator generator, int numValues) {
+

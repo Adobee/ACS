@@ -1,0 +1,8 @@
+public static int f(int x) {return x+1;}
+public static Object seri(Function<Object,Object> f, Function<Object,Object> g, Object x) {
+return g.apply(f.apply(x));
+}
+
+
+public static SmartLibrary lib_0 = SymProvider.mkLib(
+

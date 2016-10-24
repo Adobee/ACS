@@ -1,0 +1,9 @@
+package org.miniclient.common;
+
+
+public interface AuthRefreshPolicy extends WebClientPolicy, Performable
+{
+boolean isRefreshBeforeRequest();
+boolean isRefreshIfFails();
+int getFutureMarginSeconds();
+

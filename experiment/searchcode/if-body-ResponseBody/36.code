@@ -1,0 +1,5 @@
+//because the parser don&#39;t do this :(. If Json is not valid this will return null
+responseBody = responseBody.trim();
+if(responseBody.startsWith(&quot;{&quot;) || responseBody.startsWith(&quot;[&quot;)) {
+result = (JSONObject) new JSONTokener(responseBody).nextValue();
+

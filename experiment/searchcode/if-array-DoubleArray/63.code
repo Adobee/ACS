@@ -1,0 +1,11 @@
+DoubleArray vt = getArrayFactory().newDoubleArray(n, n);
+DoubleArray a = x.copy();
+if (m > n) {
+gesdd(&#39;a&#39;, a, s, u, vt);
+* @return the determinant
+*/
+@Override
+public double det(DoubleArray x) {
+if (x.isSquare()) {
+return lu(x).getDeterminant();
+

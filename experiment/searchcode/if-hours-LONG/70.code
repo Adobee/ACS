@@ -1,0 +1,12 @@
+return getAbsoluteDeviation() / (24*60*60);
+}
+
+long hours() {
+long daysInHours = days() * 24;
+return getAbsoluteDeviation() / (60*60) - daysInHours;
+}
+
+long minutes() {
+long hoursInMinutes = hours() * 60;
+long daysInMinutes = days() * 24 * 60;
+

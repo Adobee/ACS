@@ -1,0 +1,10 @@
+if (!complete) return;
+int i = getStageNumber(stage);
+if (i < stages.length - 1) setStage(stages[i + 1]);
+}
+
+public int getStageNumber(String stage)
+{
+for (int i = 0; i < stages.length; i++)
+if (stages[i].equals(stage)) return i;
+

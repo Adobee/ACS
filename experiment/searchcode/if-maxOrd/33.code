@@ -1,0 +1,10 @@
+private Collector pickCollector(LeafReaderContext ctx) throws IOException {
+if (valuesSource == null) {
+return new EmptyCollector();
+}
+
+if (valuesSource instanceof ValuesSource.Numeric) {
+final RandomAccessOrds ordinalValues = source.ordinalsValues(ctx);
+final long maxOrd = ordinalValues.getValueCount();
+if (maxOrd == 0) {
+

@@ -1,0 +1,8 @@
+public static String resolveClassOrder(int classOrder) {
+if (classOrder < 1 || classOrder > 25)
+return null;
+int weekday = (classOrder - 1) / 5;
+int targetWeekday = Calendar.MONDAY + (searchStartClassId - 1) / 5;
+int targetTimeOrder = searchStartClassId % 5;
+if (targetTimeOrder == 0)
+

@@ -1,0 +1,6 @@
+public static boolean tryCompareAndSwap(Object base, Offset offset, Object testValue, Object newValue) {
+if (MM_Constants.NEEDS_WRITE_BARRIER) {
+oldValue = VM_Magic.prepareObject(base, offset);
+if (oldValue != testValue) return false;
+} while (!VM_Magic.attemptObject(base, offset, oldValue, newValue));
+

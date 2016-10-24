@@ -1,0 +1,9 @@
+private boolean hasErrors;
+
+public FaultHidingSink(Sink delegate) {
+super(delegate);
+}
+
+public void write(Buffer source, long byteCount) throws IOException {
+if (this.hasErrors) {
+

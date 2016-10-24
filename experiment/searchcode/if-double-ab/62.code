@@ -1,0 +1,11 @@
+public static float similarity(double[] features1, double[] features2) {
+
+if (features1.length != features2.length) {
+throw new IllegalArgumentException(&quot;Feature vectors must be of the same length&quot;);
+int n = features1.length;
+double ab = 0.0;
+double a2 = 0.0;
+double b2 = 0.0;
+
+for (int i = 0; i < n; i++) {
+

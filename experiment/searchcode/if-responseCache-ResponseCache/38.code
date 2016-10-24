@@ -1,0 +1,8 @@
+import java.net.ResponseCache;
+
+/**
+* Back doors to enable the use of OkHttp within the Android platform libraries. OkHttp is used to
+public static void setResponseCache(OkUrlFactory okUrlFactory, ResponseCache responseCache) {
+OkHttpClient client = okUrlFactory.client();
+if (responseCache instanceof OkCacheContainer) {
+

@@ -1,0 +1,13 @@
+package PowerofTwo;
+
+/**
+* Created by marchon on 15/7/8.
+*/
+public class Solution2 {
+public boolean isPowerOfTwo(int n) {
+if (n > 0 &amp;&amp; (n &amp; (n - 1)) == 0)
+return true;
+return false;
+}
+}
+

@@ -1,0 +1,13 @@
+private double _height;
+private DoubleProperty height;
+
+public void setHeight(double value) {
+if (height == null) {
+public final DoubleProperty heightProperty() {
+if (height == null) {
+height = new SimpleDoubleProperty(_height);
+}
+return height;
+}
+}
+

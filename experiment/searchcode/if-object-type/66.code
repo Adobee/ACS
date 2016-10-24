@@ -1,0 +1,13 @@
+public boolean supports(final Class<?> type) {
+return Number.class.isAssignableFrom(type);
+}
+
+@Override
+public Object toJdbcValue(final Object object) {
+return object;
+}
+
+@Override
+public String toSqlStr(final Object object) {
+if (object == null)
+

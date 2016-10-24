@@ -1,0 +1,9 @@
+public ElementStack clone() {
+return new ElementStack(mElement, mAmount);
+}
+
+@Override
+public boolean equals(Object aObject) {
+if (aObject instanceof Element) return aObject == mElement;
+if (aObject instanceof ElementStack) return ((ElementStack)aObject).mElement == mElement &amp;&amp; (mAmount < 0 || ((ElementStack)aObject).mAmount < 0 || ((ElementStack)aObject).mAmount == mAmount);
+

@@ -1,0 +1,7 @@
+//If an outgoing edge is part of a shortest path to the end node of that edge, the end node must be reset.
+for(Edge e : resetNode.getOutgoingEdges()){
+if(!e.isOmission()){ //Omission edges are not affected by cost changes for rotation edges.
+public void resetNode(int centroidId, Node resetNode){
+resetNode.setLabels(centroidId, Integer.MAX_VALUE, null);
+if(resetNode.isFromCentroid() &amp;&amp; centroidId == resetNode.getPortId()){
+

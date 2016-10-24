@@ -1,0 +1,8 @@
+int currentT = (int) Math.floor(currentTime / stepSize);
+if (currentT >= t) {
+//accumulate remainder of the subinterval
+toAccumulate = accumulator.update(ret[t],(stepSize*t-oldTime));
+toAccumulate = accumulator.update(ret[t-1],stepSize);
+//accumulate the whole subinterval
+//if (t<currentT){
+

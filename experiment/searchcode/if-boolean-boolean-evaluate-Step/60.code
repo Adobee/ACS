@@ -1,0 +1,14 @@
+evaluate();
+}
+}
+}
+
+protected boolean evaluate() {
+ObjectiveValue nextObjVal = evaluate(data);
+
+boolean improvement = (lastObjVal == null || nextObjVal.betterThan(lastObjVal));
+// is it an improvement?
+boolean improvement = evaluate();
+if (!improvement) {
+value.set(originalValue);
+

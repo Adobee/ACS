@@ -1,0 +1,10 @@
+boolean flag1 = false;
+float f1 = 0.125F;
+List list = null;
+
+if (this.a == EnumMobType.EVERYTHING) {
+list = world.a(EntityPlayer.class, AxisAlignedBB.b((double) ((float) i + f1), (double) j, (double) ((float) k + f1), (double) ((float) (i + 1) - f1), (double) j + 0.25D, (double) ((float) (k + 1) - f1)));
+}
+
+if (list.size() > 0) {
+

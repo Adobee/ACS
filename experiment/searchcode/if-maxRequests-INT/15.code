@@ -1,0 +1,7 @@
+final int currentRequests = numOutstandingRequests.incrementAndGet();
+final int maxRequests = getMaxOutstandingRequests();
+if (currentRequests <= maxRequests) {
+private void logOutstandingRequestsWithinLimits(int currentRequests, int maxRequests) {
+if (logger.isTraceEnabled()) {
+logger.trace(&quot;outstanding requests within limits (&quot;
+

@@ -1,0 +1,7 @@
+//	private String searchEast(char[] searchChars){
+//		//x is constant. increment y to find out the word
+//		System.out.println(&quot;--searchEast for--&quot; + new String(searchChars));
+//			 for(int col=0;col<numOfColsInMatrix;col++){
+//				if (searchChars[0] == wordMatrix[row][col]){
+//					int i=0;
+

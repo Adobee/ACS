@@ -1,0 +1,7 @@
+public boolean equals(Object o) {
+if (o == null) return false;
+if (o instanceof RulePartial){
+if (((RulePartial) o).partialName.equals(this.partialName)){
+StringBuilder result = new StringBuilder();
+result.append(&quot;if (parse_&quot;+partialName+&quot;(currentChar)==TOKEN_&quot;+partialName+&quot;){&quot;);
+

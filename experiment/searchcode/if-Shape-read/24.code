@@ -1,0 +1,7 @@
+@RequestMapping(value = &quot;/{shapeId}&quot;, method = RequestMethod.GET)
+Shape readShape(@PathVariable long shapeId) {
+return shapeService.find(shapeId);
+Shape existingShape = shapeService.find(shapeId);
+if (existingShape != null) {
+newShape.setId(existingShape.getId());
+

@@ -1,0 +1,7 @@
+* @param firstEstimate first estimate of the parameter
+*/
+public EstimatedParameter(String name, double firstEstimate) {
+this.name = name;
+public EstimatedParameter(String name,
+double firstEstimate,
+

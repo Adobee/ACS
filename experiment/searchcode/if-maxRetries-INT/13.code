@@ -1,0 +1,8 @@
+private Sender inner;
+private int maxRetries;
+
+public RetrySender(int maxRetries, Sender inner) {
+this.inner = inner;
+public Response send(Request request) throws SmartyException, IOException {
+for (int i = 0; i <= this.maxRetries; i++) {
+

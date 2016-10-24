@@ -1,0 +1,15 @@
+* Date: 08.10.12
+* Time: 21:47
+*/
+public class PlayerAction {
+public enum ActionType {
+Fold, Check, Call, Rise, AllIn
+for (PlayerAction.ActionType actionType : PlayerAction.ActionType.values()) {
+if (actionType.toString().equals(actionPart)) {
+return actionType;
+}
+}
+return DEFAULT_ACTION_TYPE;
+}
+}
+

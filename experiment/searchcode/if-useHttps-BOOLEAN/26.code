@@ -1,0 +1,6 @@
+* @param detectFace - if true, attempts to focus the thumbnail to the face in the image.
+* @param useHttps - if true, returns an https URL. Otherwise, an HTTP URL.
+* @return A URL to be used in an <img src=&quot;&quot;> elements. The URL returns a thumbnail image created from the original image URL.
+public String getThumbnailUrl(int height, int width, boolean favicon, boolean detectFace, boolean useHttps) {
+return MessageFormat.format(&quot;{0}://thumb.pipl.com/image?height={1}&amp;width={2}&amp;favicon={3}&amp;zoom_face={4}&amp;token={5}&quot;, useHttps ? &quot;https&quot; : &quot;http&quot;, height, width, favicon ? 1 : 0, detectFace ? 1 : 0, thumbnailToken);
+

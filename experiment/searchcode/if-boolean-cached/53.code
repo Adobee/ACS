@@ -1,0 +1,11 @@
+public BooleanFormField(BeanField field, int flag) {
+super(field, flag);
+}
+
+public BooleanFormField(BeanField cachedField) {
+cachedField.set(object, convert);
+}
+} else {
+if (isWrapper())
+cachedField.set(object, Boolean.valueOf(args[0]));
+

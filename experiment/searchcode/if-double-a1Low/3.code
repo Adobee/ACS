@@ -1,0 +1,6 @@
+final double a1High     = Double.longBitsToDouble(Double.doubleToRawLongBits(a1) &amp; ((-1L) << 27));
+final double a1Low      = a1 - a1High;
+// accurate multiplication a1 * b1
+final double prod1High  = a1 * b1;
+final double prod1Low   = a1Low * b1Low - (((prod1High - a1High * b1High) - a1Low * b1High) - a1High * b1Low);
+

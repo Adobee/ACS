@@ -1,0 +1,14 @@
+ArrayList<Entity> closestEnts = layer.getClosestEntities(this, 24);
+for(Entity closest : closestEnts)
+if(closest != null)
+if(!pipeNetwork.contains(closest))
+{
+if(type == START)
+{
+pipeNetwork.addEntity(closest);
+}
+}
+}
+
+public EntityPipe getRandomChild()
+

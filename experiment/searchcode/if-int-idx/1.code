@@ -1,0 +1,8 @@
+//merge from back
+int idxA = m-1;
+int idxB = n-1;
+int idxN = m+n-1;
+while(idxA>=0 &amp;&amp; idxB>=0){
+if(A[idxA] <= B[idxB]){
+A[idxN] = B[idxB];
+

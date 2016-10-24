@@ -1,0 +1,9 @@
+public class colorNaming {
+private Color rgbColor = null;
+private int nFila = 0;
+private int nCol = 0;
+double fColor = ((Double) aux.get(3));
+this.nCol = 3;
+
+for(int i = 4; i < aux.size(); i++)
+

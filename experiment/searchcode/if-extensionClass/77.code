@@ -1,0 +1,7 @@
+public Object create(Class<?> extensionClass) {
+Object extension = createWithoutSpring(extensionClass);
+if (autowire &amp;&amp; extension != null) {
+PluginWrapper pluginWrapper = pluginManager.whichPlugin(extensionClass);
+if (pluginWrapper != null) {
+Plugin plugin = pluginWrapper.getPlugin();
+

@@ -1,0 +1,7 @@
+final ItemLabelAnchor order = (ItemLabelAnchor) o;
+if (!this.name.equals(order.toString())) {
+return false;
+private Object readResolve() throws ObjectStreamException {
+ItemLabelAnchor result = null;
+if (this.equals(ItemLabelAnchor.CENTER)) {
+

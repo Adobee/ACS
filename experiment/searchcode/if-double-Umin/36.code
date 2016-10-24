@@ -1,0 +1,10 @@
+public static SurfaceGeometryBuilder createByRange(final int uCount,
+final int vCount, final double uMin, final double uMax,
+/ (uCount - 1), vCount, vMin, (vMax - vMin) / (vCount - 1), s);
+}
+
+private final int uCount;
+
+private final double uMin;
+private final double uStep;
+

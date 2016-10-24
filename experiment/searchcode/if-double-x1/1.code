@@ -1,0 +1,14 @@
+public static void main(String[] args) {
+
+//√5を求める
+
+double x0 = 4.0;
+double x1 = 3.0;
+double eps = 1.0E-10;
+int N = 50;
+int count = 0;
+double a = 0;
+
+for(int i=0;i<N;i++){
+if(Math.abs(((x1-x0)/x1))<eps){ //相対誤差判定
+

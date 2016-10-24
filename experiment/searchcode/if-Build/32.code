@@ -1,0 +1,8 @@
+package webhook.teamcity.settings.converter;
+
+import webhook.teamcity.BuildState;
+import webhook.teamcity.BuildStateEnum;
+newStates.setEnabled(BuildStateEnum.BUILD_FAILED, OldStyleBuildState.enabled(OldStyleBuildState.BUILD_FINISHED, oldState));
+
+// If BUILD_CHANGED_STATUS was set, the user probably wanted to know iof the build went from broken to fixed.
+

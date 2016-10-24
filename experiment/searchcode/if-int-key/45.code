@@ -1,0 +1,9 @@
+key.get(i).isOldDown = key.get(i).isDown;
+}
+
+if(action != -1){
+for (int i = 0; i < key.size(); i++) {
+public boolean isKeyDown(int keyCode){
+for (int i = 0; i < key.size(); i++) {
+if(key.get(i).keyCode == keyCode){
+

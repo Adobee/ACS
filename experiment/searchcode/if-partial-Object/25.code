@@ -1,0 +1,10 @@
+protected PartialHandler currentPartialHandler = null;
+
+/**
+* Object being used.
+*/
+protected Object currentObject = null;
+public void characters(char[] ch, int start, int length) throws SAXException {
+if (currentPartialHandler == null) {
+if (currentBuffer != null) {
+

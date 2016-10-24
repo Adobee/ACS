@@ -1,0 +1,8 @@
+throw new Exception(&quot;Uninstantiable class.&quot;);
+}
+
+private static double summation(double[] var)
+public static double getCorrelation(double[] xVar, double[] yVar) throws Exception
+{
+if(xVar.length <= 1 &amp;&amp; yVar.length <= 1)
+

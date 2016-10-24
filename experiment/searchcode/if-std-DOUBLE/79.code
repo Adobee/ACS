@@ -1,0 +1,8 @@
+* @param stdCount how many std dev. you want to check with.
+* @return returns true if within, false otherwise.
+*/
+public static boolean isWithInSTD( double value, double average, double std, double stdCount ) {
+boolean state = false;
+
+double threshold = average + ( stdCount * std );
+

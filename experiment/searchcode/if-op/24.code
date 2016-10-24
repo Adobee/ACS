@@ -1,0 +1,11 @@
+private Op xform(Op0 op)
+{
+if ( ! alwaysCopy )
+return op ;
+return op.copy() ;
+}
+
+private Op xform(Op1 op, Op subOp)
+{
+if ( ! alwaysCopy &amp;&amp; op.getSubOp() == subOp )
+

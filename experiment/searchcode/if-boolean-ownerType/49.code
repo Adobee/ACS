@@ -1,0 +1,7 @@
+public boolean equals(final Object obj) {
+if (getClass() != obj.getClass()) return false;
+FileChunkKey<OwnerType> k = (FileChunkKey<OwnerType>)obj;
+@Override
+public int compareTo(@NotNull final FileChunkKey<OwnerType> o) {
+if (owner != o.owner) {
+

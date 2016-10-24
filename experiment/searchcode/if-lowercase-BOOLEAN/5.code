@@ -1,0 +1,12 @@
+public static final StringValueConverter LOWER_CASE = new StringValueConverter(true);
+
+private final boolean lowerCase;
+
+private StringValueConverter(boolean lowerCase) {
+this.lowerCase = lowerCase;
+}
+
+@Override
+public String convert(String s) {
+if (lowerCase &amp;&amp; s != null) {
+

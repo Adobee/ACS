@@ -1,0 +1,12 @@
+public DynamicArray(int initialSize) {
+this.size = initialSize;
+this.array = new Object[initialSize];
+}
+
+public void set(int index, E object) {
+expandIfNecessary(index);
+array[index] = object;
+}
+
+private void expandIfNecessary(int index) {
+

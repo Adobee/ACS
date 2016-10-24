@@ -1,0 +1,9 @@
+if (piece.getPieceColor() == objectColor.white) {
+// move forward one cell
+if (board[currX][currY - 1].getPiece() == null)
+retList.add(board[currX][currY - 1]);
+
+// check moving left
+if (currX > 0
+&amp;&amp; board[currX - 1][currY - 1].getPiece() != null
+

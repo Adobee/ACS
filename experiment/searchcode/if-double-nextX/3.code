@@ -1,0 +1,8 @@
+int x = 0, y = 0;
+while (y != m) {
+int nextX, nextY;
+if (y % 2 == 0) {
+if (x == n - 1) {
+nextX = x;
+nextY = y + 1;
+

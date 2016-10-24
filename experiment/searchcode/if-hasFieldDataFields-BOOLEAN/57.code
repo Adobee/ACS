@@ -1,0 +1,7 @@
+builder.fetchSourceContext = FetchSourceContext.optionalReadFromStream(in);
+boolean hasFieldDataFields = in.readBoolean();
+if (hasFieldDataFields) {
+boolean hasFieldDataFields = fieldDataFields != null;
+out.writeBoolean(hasFieldDataFields);
+if (hasFieldDataFields) {
+

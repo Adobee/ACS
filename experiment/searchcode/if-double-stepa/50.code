@@ -1,0 +1,9 @@
+for (int j = 0; j < n; j++) {
+double bdtest = bdtol;
+if (newPoint.getEntry(j) == lowerDifference.getEntry(j)) {
+final int nfxm = nfx - 1;
+double stepa = 0;
+double stepb = 0;
+if (nfm <= 2 * n) {
+if (nfm >= 1 &amp;&amp;
+

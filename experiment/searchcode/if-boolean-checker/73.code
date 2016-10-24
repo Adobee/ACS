@@ -1,0 +1,15 @@
+password = checker.generatePassword();
+}
+
+public Password() {
+this(new BasicChecker());
+}
+
+public boolean acceptable(String suggestion) {
+return !(suggestion.contains(&quot; &quot;)|| suggestion.length() < 6);
+}
+
+public boolean setWord(String oldPass, String newPass) {
+boolean result = false;
+if (testWord(oldPass) &amp;&amp; checker.acceptable(newPass)) {
+

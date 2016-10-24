@@ -1,0 +1,18 @@
+public void reseed() throws RngResponse
+{
+}
+
+@Override
+public byte next() throws RngResponse
+{
+if (this.length <= 0)
+{
+byte[] b = new byte[1];
+rng.nextBytes(b);
+return b[0];
+}
+else
+{
+this.length--;
+if (this.cnt > 42)
+

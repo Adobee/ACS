@@ -1,0 +1,9 @@
+private boolean firstIteration;
+
+/**
+* @see javax.servlet.jsp.tagext.Tag#doEndTag()
+*/
+public int doEndTag() throws JspException {
+if (this.firstIteration) {
+TableTag tableTag = (TableTag) findAncestorWithClass(this, TableTag.class);
+

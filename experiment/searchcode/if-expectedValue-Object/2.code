@@ -1,0 +1,5 @@
+public class ArrayMemberEqualAssert extends ValueMemberEqualAssert {
+public boolean assertValueEquals(String propertyName, Object expectedValue, Object actualValue) {
+if (expectedValue != null &amp;&amp; expectedValue.getClass().isArray()) {
+if (expectedValue.getClass().getComponentType() == byte.class) {
+

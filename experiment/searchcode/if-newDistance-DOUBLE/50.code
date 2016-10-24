@@ -1,0 +1,11 @@
+visited[currentVertex] = true;
+for (int i = 0; i < vertexes.size() - 2; ++i) {
+
+int closestVertex = -1;
+double closestDistance = 1e9;
+if (visited[nextVertex]) {
+continue;
+}
+
+double newDistance = Point.distance(vertexes.get(currentVertex).position, vertexes.get(nextVertex).position);
+

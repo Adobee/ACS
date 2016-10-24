@@ -1,0 +1,11 @@
+private static void computeS0(int[] s, int[] s0, int[] SA0, int[] SA12, int n0, int n12, int K) {
+for (int i = 0, j = 0; i < n12; i++) {
+if (SA12[i] < n0) {
+s0[j++] = 3 * SA12[i];
+private static int getIndexIntoS(int[] SA12, int t, int n0) {
+if (SA12[t] < n0) {
+return SA12[t] * 3 + 1;
+}
+else {
+return (SA12[t] - n0) * 3 + 2;
+

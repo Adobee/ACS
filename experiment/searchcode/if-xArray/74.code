@@ -1,0 +1,8 @@
+// please bear in mind tht this function is also used by GenerateKey (for Equivalent Inverse Cipher)
+private static void InvMixColumn (byte[] state)
+{
+
+byte[] xarray = new byte[48];	//array for storing multiplication with 0x02, 0x04, 0x08 values
+//basically, for every element in array a, there are 3 values corresponding to multiplication by 0x02, 0x04 and 0x08
+//eg for state[0], xarray[0] is state[0]*0x02, xarray[1] is state[0]*0x04, xarray[2] is state[0]*0x08 and so on
+

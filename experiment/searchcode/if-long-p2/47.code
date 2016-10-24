@@ -1,0 +1,8 @@
+int len1 = 0;
+int len2 = 0;
+LinkedListNode p1=headA, p2=headB;
+if (p1 == null || p2 == null) {
+//???? Why would this be a necessity, the previous loop is to keep at the same pace instead of finding the same node.
+while(p1 != null &amp;&amp; p2 != null){
+if(p1.data == p2.data){
+

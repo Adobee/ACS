@@ -1,0 +1,9 @@
+public static String compress(char[] compressMe) {
+
+StringBuilder retMe = new StringBuilder();
+int count = 1;
+retMe.append(compressMe[0]);
+
+for(int i=1; i<compressMe.length; i++) {
+if(compressMe[i] == compressMe[i-1]) {
+

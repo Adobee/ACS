@@ -1,0 +1,8 @@
+package com.myshop.member.application;
+
+import com.myshop.member.domain.Member;
+import com.myshop.member.domain.MemberId;
+public void block(String memberId) {
+Member member = memberRepository.findById(new MemberId(memberId));
+if (member == null) throw new NoMemberException();
+

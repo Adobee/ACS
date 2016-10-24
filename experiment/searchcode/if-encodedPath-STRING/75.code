@@ -1,0 +1,14 @@
+return true;
+}
+
+public File getFilePath() {
+String encodedPath = null;
+try {
+String filepath = null;
+if (urlString.length() > 100) {
+filepath = sp[sp.length-1];
+} else {
+filepath = urlString;
+}
+encodedPath = URLEncoder.encode(filepath, &quot;UTF-8&quot;);
+

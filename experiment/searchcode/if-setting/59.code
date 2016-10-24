@@ -1,0 +1,9 @@
+SettingKey settingKey = settingKeyDAO.findByName(key);
+if (settingKey == null) {
+return null;
+}
+
+Setting setting = settingDAO.findByKey(settingKey);
+if (setting != null) {
+return setting.getValue();
+

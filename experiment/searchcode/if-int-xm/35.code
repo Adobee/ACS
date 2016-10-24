@@ -1,0 +1,12 @@
+import java.awt.Color;
+
+public class Sierpinski {
+
+public static void sierpinski(int n, double x0, double y0, double x1,
+ym[1]= (y1+y2)/2;
+ym[2]= (y2+y0)/2;
+
+if (n == 0) {
+triangle(xm, ym);
+return;
+

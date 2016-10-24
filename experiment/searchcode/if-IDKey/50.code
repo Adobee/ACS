@@ -1,0 +1,9 @@
+private com.changestuffs.shared.constants.Tags tag;
+private java.lang.String idKey;
+
+public LookForAction(com.changestuffs.shared.constants.Tags tag, java.lang.String idKey) {
+if (idKey == null) {
+if (other.idKey != null)
+return false;
+} else if (!idKey.equals(other.idKey))
+

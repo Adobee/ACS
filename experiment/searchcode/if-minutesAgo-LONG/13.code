@@ -1,0 +1,7 @@
+long itemMillis = getMillisForDate(date);
+long todaysMillis = getMillisForDate(new java.util.Date());
+int minutesAgo = getDifferenceInMinutes(todaysMillis, itemMillis);
+
+if (minutesAgo < 0) {
+return context.getString(R.string.date_just_now);
+

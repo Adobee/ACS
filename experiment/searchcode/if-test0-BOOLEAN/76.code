@@ -1,0 +1,10 @@
+* This test executes random SQL statements to test if optimizations are working
+* correctly.
+*/
+public class TestFuzzOptimizations extends TestBase {
+conn = getConnection(&quot;optimizations&quot;);
+if (!config.diskResult) {
+testIn();
+}
+testGroupSorted();
+

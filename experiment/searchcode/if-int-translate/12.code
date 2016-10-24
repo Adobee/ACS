@@ -1,0 +1,10 @@
+private WeightedQuickUnionUF uf;
+
+public Percolation(int N) {
+if (N <= 0) {
+throw new IllegalArgumentException(&quot;N should be bigger than 0&quot;);
+checkBounds(i, j);
+int n = translateN(i, j);
+cells[n] = true;
+if (j > 1 &amp;&amp; cells[translateN(i, j - 1)]) {
+

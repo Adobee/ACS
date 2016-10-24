@@ -1,0 +1,9 @@
+if (nanStrategy == NaNStrategy.FIXED) {
+restoreNaNs(out, nanPositions);
+}
+return out;
+* @return array with NaN-valued entries removed
+*/
+private IntDoublePair[] removeNaNs(IntDoublePair[] ranks) {
+if (!containsNaNs(ranks)) {
+

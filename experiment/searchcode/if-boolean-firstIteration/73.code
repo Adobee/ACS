@@ -1,0 +1,6 @@
+List<TSource> group = null;
+TSource groupItem = null;
+boolean firstIteration = true;
+for(TSource item : sourceList) {
+if(firstIteration || comparer.compare(groupItem, item) != 0) {
+

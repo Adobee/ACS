@@ -1,0 +1,9 @@
+* Licensed to the User under the LGPL license.
+*/
+package org.sipfoundry.sipxconfig.setting;
+
+public class DelegatingSettingModel implements SettingModel {
+public void visitSetting(Setting setting) {
+// FIXME: downcast should not be necessary
+if (setting instanceof SettingImpl) {
+

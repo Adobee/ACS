@@ -1,0 +1,9 @@
+@Override
+public boolean apply(IndexWarmersMetaData.Entry warmer) {
+if (warmers.length != 0 &amp;&amp; types.length != 0) {
+return concreteIndices(aliasesOrIndices[0], indicesOptions, !indicesOptions.allowNoIndices());
+}
+
+// check if its a possible aliased index, if not, just return the passed array
+boolean possiblyAliased = false;
+

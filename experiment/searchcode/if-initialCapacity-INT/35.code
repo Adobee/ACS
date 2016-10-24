@@ -1,0 +1,12 @@
+public PartialIntArray() {
+this(10);
+}
+
+public PartialIntArray(int initialCapacity) {
+this.elements = new int[initialCapacity];
+}
+
+public void add(int e) {
+if (size >= elements.length) {
+int[] resizedArray = new int[elements.length * 2];
+

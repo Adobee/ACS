@@ -1,0 +1,3 @@
+for (Map.Entry<Integer, Double> entry : personARatedItems.entrySet()) {
+if (personBRatedItems.containsKey(entry.getKey())) {
+

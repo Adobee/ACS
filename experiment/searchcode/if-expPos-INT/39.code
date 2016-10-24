@@ -1,0 +1,5 @@
+String pos = catchers.get(rand.nextInt(expSize)).getDisplayPosition();
+if(!pos.contains(expPos)){
+String pos = out.get(rand.nextInt(expSize)).getDisplayPosition();
+if(!pos.contains(expPos)){
+

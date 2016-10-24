@@ -1,0 +1,8 @@
+public class ComponentStyle extends Style {
+
+int padding;
+public static final int TOP = 24;
+public static final int BOTTOM = 16;
+public void setPadding(int[] padding) {
+if (padding == null || padding.length != 4) {
+

@@ -1,0 +1,12 @@
+package introspection;
+
+import java.lang.reflect.Method;
+
+public class EventSet {
+private Method addMethod;
+public EventSet(Method method, String name) {
+if(method.getName().startsWith(&quot;add&quot;)) {
+addMethod = method;
+}
+else {
+

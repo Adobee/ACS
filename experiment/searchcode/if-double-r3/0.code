@@ -1,0 +1,14 @@
+package mx.iteso.electro.util;
+
+public class VectorR3 {
+public double x;
+public double y;
+public double z;
+public boolean closeEnough(VectorR3 pos){
+double e = 1.1;
+if(pos.x - x < e &amp;&amp; pos.z - z < e)
+return true;
+return false;
+}
+}
+

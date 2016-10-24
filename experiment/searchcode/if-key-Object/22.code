@@ -1,0 +1,11 @@
+private final Map<Class<?>, Object> singletons = new HashMap<>();
+
+@Override
+public <T> T apply(Key<T> key, T object) {
+if (!singletons.containsKey(key.type()))
+singletons.put(key.type(), object);
+return object;
+}
+
+@Override
+

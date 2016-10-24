@@ -1,0 +1,9 @@
+public static double root(double num) {
+if (num < 0) {
+throw new IllegalArgumentException(&quot;Negative number for root&quot;);
+}
+double lo = 0;
+double hi = num;
+double mid = (hi - lo) / 2;
+double mul = mid * mid;
+

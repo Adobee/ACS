@@ -1,0 +1,11 @@
+public class SearchFreq implements Comparable<SearchFreq> {
+private List<String> terms;
+private int docFreq;
+private TopDocs tds;
+public TopDocs getTds() {
+return tds;
+}
+
+public int compareTo(SearchFreq o) {
+if (docFreq > o.docFreq) {
+

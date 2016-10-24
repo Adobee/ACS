@@ -1,0 +1,8 @@
+public class AddDomainList implements DomainList {
+
+private static final ValidDomainEntries<String> CATCODES = new ValidDomainEntries<String>(null, &quot;A1&quot;, &quot;B1&quot;);
+private static final ValidDomainEntries<String> SUBSUBSUBCATCODES = new ValidDomainEntries<String>(null, &quot;A4&quot;, &quot;B4&quot;, &quot;AA4&quot;);
+
+public ValidDomainEntries<String> getDomainEntryList(String domainId) {
+if (&quot;categoryCode&quot;.equals(domainId)) {
+

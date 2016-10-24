@@ -1,0 +1,21 @@
+public Vector4f(float[] a)
+{
+v[0] = a[0];
+v[1] = a[1];
+v[2] = a[2];
+v[3] = a[3];
+}
+
+public Vector4f(Vector4f other)
+{
+v[0] = other.v[0];
+v[1] = other.v[1];
+return this;
+}
+
+public boolean equalsfloato (Vector4f other)
+{
+for (int i = 0; i < 4; i++)
+{
+if (v[i] != other.v[i])
+

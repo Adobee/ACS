@@ -1,0 +1,8 @@
+final double nextValue = histogram.getCountForClass(i + 1);
+
+final boolean isPeak = currentValue >= previousValue
+&amp;&amp; currentValue >= nextValue;
+
+// Don&#39;t bother calculating the local height score if it is not a
+// peak. This is not strictly needed, only for performance.
+

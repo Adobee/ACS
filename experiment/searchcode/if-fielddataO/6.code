@@ -1,0 +1,6 @@
+Object fielddataO = node.get(&quot;fielddata&quot;);
+if (fielddataO instanceof Map) {
+Map<?,?> fielddata = (Map<?, ?>) fielddataO;
+if (keyword == false) {
+node.put(&quot;fielddata&quot;, &quot;disabled&quot;.equals(fielddata.get(&quot;format&quot;)) == false);
+

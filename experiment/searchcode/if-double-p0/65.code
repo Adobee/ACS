@@ -1,0 +1,9 @@
+// Status set to false if no circle can be found
+
+public boolean status(double[] P_0, double[] P_1, double[] P_2) {
+double mb   = (P2[1]-P1[1])/(P2[0]-P1[0]);
+
+if (Math.abs(mb-ma)<1.0e-18) return false;
+
+double xcen = 0.5*(ma*mb*(P0[1]-P2[1]) + mb*(P0[0]+P1[0]) -ma*(P1[0]+P2[0]))/(mb-ma);
+

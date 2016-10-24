@@ -1,0 +1,7 @@
+private static String calculateDifference(Date start, Date end) {
+long difference = end.getTime() - start.getTime();
+if (difference > YEAR) {
+private static String calculateDifferenceAsDayOrSmaller(Date start, long difference) {
+if (difference > DAY) {
+return calculateDifference(start, difference, DAY, &quot;day&quot;);
+

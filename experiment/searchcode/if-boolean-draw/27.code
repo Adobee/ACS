@@ -1,0 +1,16 @@
+private static void drawLog(BoxDrawBasic draw, int x, int y, int z, int dir, int anim)
+{
+dir = dir % 3;
+int v = anim * 2;
+if (dir == 0)
+{
+draw.cube(x, y, z, 6, 2, 2);
+draw.ZDown();
+draw.selectUV(6, v);
+draw.XUp();
+draw.XDown();
+}
+if (dir == 1)
+{
+draw.cube(x, y, z, 2, 6, 2);
+

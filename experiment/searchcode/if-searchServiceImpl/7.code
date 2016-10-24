@@ -1,0 +1,7 @@
+import com.personalization.services.search.impl.SearchServiceImpl;
+import com.personalization.utils.SearchClient;
+
+public class SearchWorkerImpl implements SearchWorker {
+public SearchResponse execute(SearchClient client, SearchRequest request, ExecutionContext context) throws Exception{
+SearchServiceImpl service = new SearchServiceImpl(client);
+

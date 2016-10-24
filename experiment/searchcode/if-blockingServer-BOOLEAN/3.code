@@ -1,0 +1,9 @@
+import java.util.LinkedList;
+import java.util.List;
+
+public abstract class BlockingServer extends AbstractServer{
+private final List<BlockingClientConnection> connections;
+
+protected BlockingServer(final InetSocketAddress address){
+super(address);
+

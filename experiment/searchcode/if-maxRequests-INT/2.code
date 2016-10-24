@@ -1,0 +1,14 @@
+public static void addQosFilter(Binder binder, String path, int maxRequests)
+{
+if (maxRequests <= 0) {
+return;
+}
+
+Multibinder.newSetBinder(binder, ServletFilterHolder.class)
+private static class QosFilterHolder implements ServletFilterHolder
+{
+private final String path;
+private final int maxRequests;
+
+public QosFilterHolder(String path, int maxRequests)
+

@@ -1,0 +1,6 @@
+@Override protected Boolean createRandomValue(RandomSequence randomSequence) {
+return randomSequence.nextBoolean(probability);
+// Use mutation amount as the probability that we will randomize a new value.
+if (randomSequence.nextBoolean(mutationAmount)) {
+return randomSequence.nextBoolean(probability);
+

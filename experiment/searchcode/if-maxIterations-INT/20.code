@@ -1,0 +1,9 @@
+//private static final Logger logger = Logger.getLogger(CommonGA.class.getCanonicalName());
+private int maxIterations;
+private int counter;
+public Iterations(int maxIterations){
+this.maxIterations = maxIterations;
+counter = 0;
+}
+@Override
+

@@ -1,0 +1,8 @@
+writer.close();
+if (random().nextBoolean()) {
+for (String file : dir.listAll()) {
+for (String f : Lucene.files(Lucene.readSegmentInfos(dir))) {
+files.add(f);
+}
+final boolean simpleTextCFS = files.contains(&quot;_0.scf&quot;);
+

@@ -1,0 +1,9 @@
+this(new StringReader(str));
+}
+
+public ExprToken next() throws IOException {
+if (lastChar == 0 || Character.isWhitespace(lastChar))
+private ExprToken readToken() throws IOException {
+if (Character.isDigit(lastChar)) {
+return readNumber();
+

@@ -1,0 +1,9 @@
+int n = A.length, sum=0;
+int i=1, left=0, right, max=0;
+while(i<n){
+if(A[i]>=A[max])
+max=i;
+if(A[i]>=A[left]){
+right=i;
+sum+=getSum(A, left, right);
+

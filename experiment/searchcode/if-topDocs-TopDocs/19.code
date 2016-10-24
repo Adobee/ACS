@@ -1,0 +1,12 @@
+public int getDocId(int pos) {
+if (topDocs == null) {
+topDocs = tdc.topDocs();
+}
+return topDocs.scoreDocs[pos].doc;
+}
+
+@Override
+public float getScore(int pos) {
+if (topDocs == null) {
+topDocs = tdc.topDocs();
+

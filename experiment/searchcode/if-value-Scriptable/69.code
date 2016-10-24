@@ -1,0 +1,6 @@
+static public void getScriptableArrayElements(Scriptable o, Collection c) {
+int length = ((Number) o.get(&quot;length&quot;, o)).intValue();
+static public Expression getExpression(Scriptable scriptable, String name) {
+Object o = scriptable.get(name, scriptable);
+if (o instanceof Scriptable) {
+

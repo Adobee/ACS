@@ -1,0 +1,20 @@
+public class JMuleBitSet extends BitSet {
+private int partCount;
+
+public int getPartCount() {
+return partCount;
+}
+
+public void setPartCount(int partCount) {
+String value=&quot;&quot;;
+
+for(int i=0;i<this.partCount;i++)
+if (this.get(i)) value+=&quot; 1 &quot;;
+else
+value+=&quot; 0 &quot;;
+
+return value;
+}
+
+}
+

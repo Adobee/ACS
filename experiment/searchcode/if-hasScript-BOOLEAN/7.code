@@ -1,0 +1,7 @@
+ImmutableSet.Builder<ScriptName> missingScripts = ImmutableSet.builder();
+
+for (ScriptName script : requiredScripts) {
+boolean hasScript = scriptRepository.hasScript(script.getName(), script.getHash());
+if(!hasScript) {
+missingScripts.add(script);
+

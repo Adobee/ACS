@@ -1,0 +1,8 @@
+public int divide(int dividend, int divisor) {
+if(divisor == 1) return dividend;
+
+if(divisor == -1) {
+return dividend == Integer.MIN_VALUE ? Integer.MAX_VALUE : -dividend;
+boolean isDividendNegative = Integer.signum(dividend) == -1;
+if(!isDividendNegative) dividend = -dividend;
+

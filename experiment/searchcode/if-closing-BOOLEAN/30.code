@@ -1,0 +1,10 @@
+* The brackets must close in the correct order, &quot;()&quot; and &quot;()[]{}&quot; are all valid but &quot;(]&quot; and &quot;([)]&quot; are not.
+*/
+
+public boolean isValid(String s) {
+
+if (s == null) return false;
+if (isOpeningBracket(c)) brackets.push(c);
+else if (isClosingBracket(c)
+&amp;&amp; (brackets.isEmpty() || ! isSameType(brackets.pop(), c))) return false;
+

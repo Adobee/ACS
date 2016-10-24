@@ -1,0 +1,7 @@
+package com.fhi.system.classification.action;
+
+import javax.servlet.http.HttpServletRequest;
+user = (FhiUser) request.getSession().getAttribute(FhiConfig.USER_NAME);
+if (user == null) {
+return mapping.findForward(&quot;login&quot;);
+

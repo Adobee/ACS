@@ -1,0 +1,10 @@
+char c = word.charAt(index);
+
+if (c == node.getChar()) {
+if (index + 1 < word.length()) {
+result = search(node.getChild(), word, index + 1);
+char c = pattern.charAt(index);
+
+if (c == WILDCARD || c < node.getChar()) {
+patternMatch(node.getSmaller(), pattern, index, results);
+

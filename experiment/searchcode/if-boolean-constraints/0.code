@@ -1,0 +1,13 @@
+this.constraints = constraints;
+}
+
+@Override
+public boolean yes(int addr) {
+for(Constraint c : constraints) {
+if(!c.yes(addr))
+return false;
+}
+return true;
+}
+}
+

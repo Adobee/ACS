@@ -1,0 +1,9 @@
+public class CardRuntimeException extends RuntimeException {
+
+private short reason;
+
+public CardRuntimeException(short reason) {
+public static void throwIt(short reason) throws CardRuntimeException {
+if (VRE.debugMode)
+throw new CardRuntimeException(reason);
+

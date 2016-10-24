@@ -1,0 +1,12 @@
+obj2 = sr.get();
+if (obj2 == null) // GC freed this
+sr = new SoftReference(obj2 = new Object());
+obj2 = sr.get();
+if (obj2 == null) {
+sr = new SoftReference(new Object());
+obj2 = sr.get();
+}
+return obj2;
+}
+}
+

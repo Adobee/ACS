@@ -1,0 +1,9 @@
+if(height[ii]!=height[0]) break;
+if(ii==height.length) return height.length*height[0];
+
+for(int i=0;i<height.length;i++) {
+public int left(int i,int h,int[] height) {
+int l=0;
+for(;i>=0;i--)
+if(height[i]>=h) l++;
+

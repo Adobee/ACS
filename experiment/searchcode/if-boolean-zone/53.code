@@ -1,0 +1,12 @@
+getZoneTypes().add(new ZoneType(typeName));
+return getZoneTypes().size() - 1;
+}
+
+public boolean checkIfInZone(String zoneType, L2Object obj)
+return checkIfInZone(zoneType, obj.getX(), obj.getY());
+}
+
+public boolean checkIfInZone(String zoneType, int x, int y)
+{
+return ZoneManager.getInstance().getZoneType(zoneType).checkIfInZone(x, y);
+

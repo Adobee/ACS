@@ -1,0 +1,7 @@
+public boolean legalMove (int startRow, int startColumn, int desRow, int desColumn, int[][] playerMatrix)
+if (desRow == (startRow + 1) &amp;&amp; desColumn == startColumn)
+{
+return true;
+}
+else if (desRow == (startRow + 1) &amp;&amp; desColumn == (startColumn - 1))
+

@@ -1,0 +1,9 @@
+import org.apache.commons.math3.linear.RealMatrix;
+
+public class App {
+private static enum RC{
+Row,Col;
+private static int calcValue(RealMatrix matrix, RC rc) {
+if(rc == RC.Row)
+return calcValue(matrix.transpose(), RC.Col);
+

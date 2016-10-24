@@ -1,0 +1,9 @@
+while ((ch = reader.read()) >= 0) {
+if (ch == ERROR_CHARACTER)
+return false;
+return ERROR_CHARACTER;
+}
+else if ((ch4 &amp; 0xc0) != 0x80) {
+unread();
+unread();
+

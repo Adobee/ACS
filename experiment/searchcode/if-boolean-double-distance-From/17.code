@@ -1,0 +1,9 @@
+return bfRect.contains(point);
+}
+
+public double distanceFromTop(RPoint point) {
+return Math.abs(bfRect.height - point.y);
+public int distanceFromWallCategory(double distance) {
+if(distance < AGAINST_WALL_TOLERANCE)
+return AGAINST_WALL;
+

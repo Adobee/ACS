@@ -1,0 +1,11 @@
+this(rel, abs, null);
+}
+
+/** {@inheritDoc} */
+@Override
+protected UnivariatePointValuePair doOptimize() {
+final boolean isMinim = getGoalType() == GoalType.MINIMIZE;
+// Default stopping criterion.
+final boolean stop = FastMath.abs(x - m) <= tol2 - 0.5 * (b - a);
+if (!stop) {
+

@@ -1,0 +1,11 @@
+this.lp = lp;
+
+}
+
+public LPSolverStatus solve() {
+tableau = tableauSynchronizer.getTableau();
+if (tableau.isSolutionPrimalFeasible() &amp;&amp; tableau.isSolutionDualFeasible()) {
+return new LPSolverStatus(true, true);
+} else if (tableau.isSolutionPrimalFeasible()) {
+primalSimplex.solve(tableau);
+

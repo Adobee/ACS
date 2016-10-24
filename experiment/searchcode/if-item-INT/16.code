@@ -1,0 +1,9 @@
+public Item item;
+
+public ItemStack(Item item, int count) {
+super(item.getName(), item.getSprite(), item.buyCost, item.sellCost);
+public void remove(int amount) {
+if (itemList.size() >= amount) {
+for (int i = 0; i < amount; i++) {
+itemList.remove(0);
+

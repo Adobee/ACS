@@ -1,0 +1,11 @@
+import javax.mail.MessagingException;
+import javax.mail.internet.MimeMessage;
+
+
+public class HasContentType extends TypeSafeMatcherPredicate<MimeMessage> {
+private static final Logger LOG = LoggerFactory.getLogger(HasContentType.class);
+
+final String expectedContentType;
+
+public HasContentType(ContentType expectedContentType) {
+

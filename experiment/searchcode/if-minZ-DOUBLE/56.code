@@ -1,0 +1,9 @@
+if (Double.doubleToLongBits(minY) != Double.doubleToLongBits(other.minY)) return false;
+if (Double.doubleToLongBits(minZ) != Double.doubleToLongBits(other.minZ)) return false;
+return true;
+return getBoundingBox(minX + x, maxX + x, minY + y, maxY + y, minZ + z, maxZ + z);
+}
+
+public double calculateXOffset(AABB aabb, double x) {
+if (aabb.maxY <= minY || aabb.minY >= maxY) { return x; }
+

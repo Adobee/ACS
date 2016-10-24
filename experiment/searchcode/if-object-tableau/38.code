@@ -1,0 +1,6 @@
+public MatchState tryGetNextState(Move move) {
+MatchState newState = new MatchState(this);
+if (!move.tryPerform(newState.tableau, newState.stock)) {
+for (UnmodifiableTableauPile<Card> pile : tableau.getPiles()) {
+if (pile.getTotalCount() > 0) {
+

@@ -1,0 +1,8 @@
+for (int i = 0; i < getRangeAxisCount(); i++) {
+ValueAxis rangeAxis = getRangeAxis(i);
+if (rangeAxis != null) {
+if (rangeAxis instanceof LinkAndBrushAxis) {
+newRanges.add(new Pair<Integer, Range>(i, calculateZoomRange));
+} else if (zoomIn) {
+rangeAxis.zoomRange(lowerPercent, upperPercent);
+

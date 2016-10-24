@@ -1,0 +1,8 @@
+public DequePool(int initialCapacity, int preallocate) {
+data = new ArrayDeque(initialCapacity);
+//data = new ConcurrentLinkedDeque<>();
+//data = new CircularArrayList<>(initialCapacity);
+
+for (int i = 0; i < preallocate; i++)
+put(create());
+

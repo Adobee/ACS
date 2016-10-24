@@ -1,0 +1,9 @@
+public static final Date DateMax = new Date(TsMax);
+
+@Override
+public int compareTo(DateSpan rhs) {
+if (tsFrom < rhs.tsFrom) return -1;
+if (tsFrom > rhs.tsFrom) return +1;
+if (tsToex < rhs.tsToex) return -1;
+if (tsToex > rhs.tsToex) return +1;
+

@@ -1,0 +1,9 @@
+private List<Chromosome> chromosomes;
+
+/** maximal size of the population */
+private int populationLimit;
+* Creates a new ListPopulation instance and initializes its inner chromosome list.
+*
+* @param populationLimit maximal size of the population
+* @throws NotPositiveException if the population limit is not a positive number (&amp;lt; 1)
+

@@ -1,0 +1,11 @@
+private void my_iteration(int level, int searchIterate, int goodIterate){
+
+int true_level = level;
+
+if(true_level == 0){
+double[] bestCoefficients = population[true_level].getBest();
+IGS.changeCoefficients(bestCoefficients);
+//double[] bestCoefficients = {1, 0, 0};
+
+double firstEstimate = IGS.getOptimumValue().wid();
+

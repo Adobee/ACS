@@ -1,0 +1,9 @@
+* @return Whether specified concrete indices should be ignored when unavailable (missing or closed)
+*/
+public boolean ignoreUnavailable() {
+return (id &amp; IGNORE_UNAVAILABLE) != 0;
+return VALUES[id];
+}
+
+public static IndicesOptions fromOptions(boolean ignoreUnavailable, boolean allowNoIndices, boolean expandToOpenIndices, boolean expandToClosedIndices) {
+

@@ -1,0 +1,12 @@
+private final long expires;
+
+private final Object data;
+
+private transient boolean active = true;
+
+private transient boolean canceled = false;
+
+private transient ExpirationEventType lastType;
+
+public Expiration( final ExpirationKey key, final long expires, final Object data )
+

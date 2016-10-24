@@ -1,0 +1,9 @@
+List tempTitleList = teacherTitleDAO.findByTitleName(titleName);
+
+//如果已存在该头衔名，则返回空
+if(tempTitleList.size() > 0) {
+return result;
+}
+TeacherTitle teacherTile = new TeacherTitle();
+teacherTile.setTitleName(titleName);
+

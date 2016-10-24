@@ -1,0 +1,10 @@
+return new MaskedDoubleReplacement(attributes, source, mask, replacement);
+}
+
+@Override
+public double getElementAsDouble(int index) {
+if(result == null) {
+result.set(i, replacement.getElementAsDouble((replacementIndex++) % replacementLength));
+} else if(i < source.length()) {
+result.set(i, source.getElementAsDouble(i));
+

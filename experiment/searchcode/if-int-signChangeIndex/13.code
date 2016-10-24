@@ -1,0 +1,9 @@
+int signChangeIndex;
+if (y[0] * y[1] < 0) {
+
+// reduce interval if it brackets the root
+double yA    = y[signChangeIndex - 1];
+double absYA = FastMath.abs(yA);
+int agingA   = 0;
+double xB    = x[signChangeIndex];
+

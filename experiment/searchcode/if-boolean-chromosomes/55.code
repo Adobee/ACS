@@ -1,0 +1,10 @@
+private int getIndexFittestChromossome(){
+float maximal = 0 ;
+int index = 0;
+
+for(int i= 0; i< chromosomes.length; i++){
+if(chromosomes[i].fitness >= maximal){
+chromo_b = chromosomes[rnd.nextInt(10)];
+
+if(crossProb(chromo_a) &amp; crossProb(chromo_b)){// Select chromosome  by probability related fitness
+

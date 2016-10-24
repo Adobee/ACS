@@ -1,0 +1,9 @@
+public int compare(final Node stepA, final Node stepB) {
+
+if (stepA.getId() == stepB.getId()) {
+return 0;
+}
+
+double a = getMetric(stepA);
+double b = getMetric(stepB);
+

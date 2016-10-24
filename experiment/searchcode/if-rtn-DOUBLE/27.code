@@ -1,0 +1,12 @@
+public static double Fraction2Double(String value) {
+double rtn;
+
+String integer = value.replaceAll(&quot;(-)*(\\d+/\\d+$)*&quot;,&quot;&quot;);
+
+if (integer.length() <= 0) {
+rtn = (double)(Integer.parseInt(integer)
++ (double)Integer.parseInt(numerator) / (double)Integer.parseInt(denominator));
+return rtn;
+}
+}
+

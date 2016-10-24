@@ -1,0 +1,6 @@
+public class ODDistanceAggregator implements GroupReduceFunction<Tuple8<String, String, Boolean, Boolean, Boolean, String, Double, Integer>, Tuple7<String, String, String, Boolean, Boolean, Boolean, SerializableVector>> {
+
+@Override
+public void reduce(Iterable<Tuple8<String, String, Boolean, Boolean, Boolean, String, Double, Integer>> values, Collector<Tuple7<String, String, String, Boolean, Boolean, Boolean, SerializableVector>> out) throws Exception {
+Tuple7<String, String, String, Boolean, Boolean, Boolean, SerializableVector> result =
+

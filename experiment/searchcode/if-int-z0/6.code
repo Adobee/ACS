@@ -1,0 +1,11 @@
+private static void generateBlocks(int x0, int z0, int x, int z, UtilICircle callback)
+{
+callback.call(x0 + x, z0 + z);
+if (x != 0)
+{
+callback.call(x0 - x, z0 + z);
+private static void generateLines(int x0, int z0, int x, int z, UtilICircle callback)
+{
+line(x0 - x, z0 + z, x0 + x, callback);
+if ((x != 0) &amp;&amp; (z != 0))
+

@@ -1,0 +1,7 @@
+public void configure(List<IterationParameter> iterationParameters) {
+if (iterationParameters == null) {
+return;
+for (IterationParameter iterationParameter : iterationParameters) {
+if (iterationParameter.hasWorkflowConfiguration()) {
+WorkflowStep step = getStep(iterationParameter.getWorkflowStepName());
+

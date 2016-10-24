@@ -1,0 +1,11 @@
+for(String userid :list){
+UserIDKey key=new UserIDKey(userid.substring(3));
+if(usedmap.containsKey(key)){
+unusedmap.put(key, new UserIDData(true));
+}
+}
+}
+public String getID(){
+Iterator<UserIDKey> it=unusedmap.keySet().iterator();
+if(it.hasNext()){
+

@@ -1,0 +1,5 @@
+public static void printFormatted(String prefix, String str, int termWidth, PrintStream out, boolean prefixFirstLine) {
+int pfxLen = prefix.length();
+int maxwidth = termWidth - pfxLen;
+Pattern wrap = Pattern.compile(&quot;(\\S\\S{&quot; + maxwidth + &quot;,}|.{1,&quot; + maxwidth + &quot;})(\\s+|$)&quot;);
+

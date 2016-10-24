@@ -1,0 +1,6 @@
+protected double filterStep(final double h, final boolean forward, final boolean acceptSmall) throws org.apache.commons.math.ode.IntegratorException {
+double filteredH = h;
+if ((java.lang.Math.abs(h)) < (minStep)) {
+if (acceptSmall) {
+filteredH = forward ? minStep : -(minStep);
+

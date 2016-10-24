@@ -1,0 +1,9 @@
+public class PatientParkingStrategy implements ParkingStrategy {
+
+private final int maxRetries;
+private final long waitInterval;
+public boolean park(ParkingLot lot, Vehicle vehicle) {
+boolean parked = false;
+for (int i = 0; i < maxRetries; ++i) {
+if (parked = parkOrLeave(lot, vehicle)) {
+

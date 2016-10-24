@@ -1,0 +1,13 @@
+private boolean enableDataChanges = false;
+
+public FingeringRenderer(int numHoles)
+{
+createHoles(numHoles);
+Border border = new EmptyBorder(2, 2, 2, 2);
+int numHoles = mHoles.length;
+if (numHoles < 4)
+{
+numHoles = 4;
+}
+int width = numHoles * mHoleLength + 45;
+

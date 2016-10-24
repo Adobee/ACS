@@ -1,0 +1,9 @@
+public static boolean powerOfTwo(int n) {
+if ((n <= 2) &amp;&amp; (n > 0)) {
+return true;
+}
+if (n % 2 != 0 || n == 0) {
+return false;
+} else {
+return powerOfTwo(n/2);
+

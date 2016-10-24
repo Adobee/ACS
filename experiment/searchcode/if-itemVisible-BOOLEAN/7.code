@@ -1,0 +1,11 @@
+AiZone zone = ai.getZone();
+AiHero myHero = zone.getOwnHero();
+
+boolean result=false ;
+//
+if (zone.getHiddenItemsCount() > 0 || zone.getItems().size() > 0){
+boolean getSpeed = false;
+//
+if(needOfExtraBomb){
+if(ai.itemVisible(AiItemType.EXTRA_BOMB)||ai.itemVisible(AiItemType.GOLDEN_BOMB)){
+

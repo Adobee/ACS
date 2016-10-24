@@ -1,0 +1,10 @@
+private boolean hasStats() {
+return itemStack.getTag().hasKey(&quot;Stats&quot;);
+}
+private NBTTagCompound getStats() {
+public void setStat(String stat, double statValue){
+if(!hasStats()){
+addStats();
+}
+NBTTagDouble nbtStat;
+

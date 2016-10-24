@@ -1,0 +1,9 @@
+return result;
+}
+
+private Matcher matchRegex(Pattern pattern, String expression, int expPos, int expLen)
+private List<String> stringToList(String expression)
+{
+int expPos = 0;
+int expLen = expression.length();
+

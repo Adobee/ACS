@@ -1,0 +1,12 @@
+double tmidx=(((Line)o).qd.x+((Line)o).zd.x)/2;
+double tmidy=(((Line)o).qd.y+((Line)o).zd.y)/2;
+if(Math.abs(midy-tmidy)<this.PCL)
+{
+if(midx<tmidx) return -1;
+double len=Math.sqrt((qd.x-zd.x)*(qd.x-zd.x)+(qd.y-zd.y)*(qd.y-zd.y));
+return len;
+}
+public boolean is_vertical(){//是否是竖直的
+double pc=Math.abs(qd.x-zd.x);
+if(pc<this.PCL)
+

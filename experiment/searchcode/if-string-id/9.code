@@ -1,0 +1,15 @@
+package com.yjw.sql.adapter;
+
+public class IfId extends IfAdapter {
+
+int id;
+public IfId(int id) {
+this.id=id;
+}
+@Override
+String condition() {
+return &quot;id=&#39;&quot;+id+&quot;&#39;&quot;;
+}
+
+}
+

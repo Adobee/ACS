@@ -1,0 +1,17 @@
+package Matrix;
+
+public class Matrix {
+
+private int nRow;
+private int nCol;
+private double[] matrix;
+matrix[idx] = val;
+}
+
+/*
+* 显示矩阵
+*/
+void display() {
+for (int i = 0; i < nRow * nCol; ++i) {
+if (i != 0 &amp;&amp; i % nCol == 0) {
+

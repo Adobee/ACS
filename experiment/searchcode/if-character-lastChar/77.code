@@ -1,0 +1,14 @@
+if(normatedWordLength >0)
+{
+if(lastChar != whiteSpace)
+{
+lastChar = whiteSpace;
+normatedWord.append(lastChar);
+normatedWordLength++;
+}
+}
+}
+else
+{
+lastChar =Character.toLowerCase(ch);
+

@@ -1,0 +1,4 @@
+private org.apache.commons.math.optimization.linear.LinearConstraint normalize(final org.apache.commons.math.optimization.linear.LinearConstraint constraint) {
+if ((constraint.getValue()) < 0) {
+return new org.apache.commons.math.optimization.linear.LinearConstraint(constraint.getCoefficients().mapMultiply(-1) , constraint.getRelationship().oppositeRelationship() , ((-1) * (constraint.getValue())));
+

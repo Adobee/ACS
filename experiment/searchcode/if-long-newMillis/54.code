@@ -1,0 +1,8 @@
+if(newTime != null){
+Calendar tmpCal;
+long newMillis;
+long curTimeMillis;
+if(futureTime){
+if(curTimeMillis > newMillis)
+newMillis += 24 * 60 * 60 * 1000;
+

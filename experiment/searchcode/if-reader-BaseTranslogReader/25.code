@@ -1,0 +1,10 @@
+public class TranslogWriter extends BaseTranslogReader implements Closeable {
+
+public static final String TRANSLOG_CODEC = &quot;translog&quot;;
+public static final int VERSION_CHECKSUMS = 1;
+final TranslogReader reader = new TranslogReader(generation, channel, path, firstOperationOffset, getWrittenOffset(), operationCounter);
+success = true;
+return reader;
+} finally {
+if (success == false) {
+

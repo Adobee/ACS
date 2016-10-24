@@ -1,0 +1,10 @@
+public class DefaultTreeTableCellRenderer extends JTree implements
+TableCellRenderer  {
+
+protected int visibleRow;
+protected JTreeTable treeTable;
+public void setRowHeight(int rowHeight) {
+if (rowHeight > 0) {
+super.setRowHeight(rowHeight);
+if (treeTable != null &amp;&amp; treeTable.getRowHeight() != rowHeight) {
+

@@ -1,0 +1,7 @@
+int[] z = new int[x.length + y.length];
+int i, j;
+for (i = 0, j = 0; i < x.length &amp;&amp; j < y.length;) {
+if (x[i] < y[j]) {
+z[i + j] = x[i]; i++;
+} else {
+

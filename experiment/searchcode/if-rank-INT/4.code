@@ -1,0 +1,12 @@
+int[] suit = new int[5];
+int[] rank = new int[5];
+while(i<=t)
+{
+
+StringTokenizer st = new StringTokenizer(br.readLine());
+for (int j=3; j>=0; j--)					//problem found here
+{
+for (int k=0; k<=j; k++)
+{
+if (rank[k]>rank[k+1]) {temp=rank[k]; rank[k]=rank[k+1]; rank[k+1]=temp;}
+

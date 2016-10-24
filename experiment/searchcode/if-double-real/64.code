@@ -1,0 +1,14 @@
+public Complex(double real, double imaginary){
+this.real=real;
+this.imaginary=imaginary;
+}
+
+{
+}
+public boolean isZero(){
+public double con(double a){
+return a*-1;
+}
+public Complex div(Complex c){
+if (c.real == 0.0 || c.imaginary==0.0) {
+

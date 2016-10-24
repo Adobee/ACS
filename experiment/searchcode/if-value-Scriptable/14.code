@@ -1,0 +1,7 @@
+Object retval = ScriptableObject.getProperty(scriptable, key);
+if(retval instanceof Function) {
+return new RhinoFunctionModel((Function)retval, scriptable, wrapper);
+public TemplateModel get(int index) throws TemplateModelException {
+Object retval = ScriptableObject.getProperty(scriptable, index);
+if(retval instanceof Function) {
+

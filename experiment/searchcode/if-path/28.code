@@ -1,0 +1,10 @@
+public static final String SELF = &quot;.&quot;;
+
+public String resolve(String path, Request request) {
+if (path == null) {
+return null;
+}
+
+if (path.equals(SELF)
+|| path.startsWith(SELF)
+

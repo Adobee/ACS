@@ -1,0 +1,11 @@
+private Thread incrementAppIndexTaskThread;
+private AppIncrementIndexTask appIncrementIndexTask;
+
+public void start() {
+if (incrementIndexTaskThread == null) {
+incrementIndexTaskThread = new Thread(incrementIndexTask);
+}
+incrementIndexTaskThread.start();
+if (incrementAppIndexTaskThread == null) {
+incrementAppIndexTaskThread = new Thread(appIncrementIndexTask);
+

@@ -1,0 +1,14 @@
+package pipes;
+
+import interfaces.*;
+import interfaces.Readable;
+
+import java.io.StreamCorruptedException;
+public Pipe(Readable<E> readable) {
+_readable = readable;
+}
+
+/**
+* If the object is readable, it is a pull pipe.
+* If the object is writeable, it is a push pipe.
+

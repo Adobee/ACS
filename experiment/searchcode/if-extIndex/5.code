@@ -1,0 +1,7 @@
+path = path.replaceAll(&quot;[^0-9a-zA-Z-_/ \\.\\\\]&quot;, &quot;&quot;);
+int extIndex = path.lastIndexOf(&quot;.&quot;);
+if (forceLower) path=path.toLowerCase();
+if (extIndex > 0 &amp;&amp; includesExtension) {
+ext=path.substring(extIndex+1,path.length());
+path=path.substring(0,extIndex);
+

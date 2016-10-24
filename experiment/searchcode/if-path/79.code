@@ -1,0 +1,8 @@
+int index = path.lastIndexOf(&#39;/&#39;) + 1;
+if(index != -1) {
+Path folder = new Path(path.substring(0, index));
+int index = path.lastIndexOf(&#39;.&#39;);
+if(index != -1) {
+String extension = path.substring(index);
+return extension;
+

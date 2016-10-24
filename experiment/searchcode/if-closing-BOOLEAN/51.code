@@ -1,0 +1,9 @@
+WindowListener windowClosingAdapter = new WindowClosingAdapter();
+
+final boolean addClosingListenerImpl() {
+Window w = AWTMisc.getWindow(comp);
+if(null!=w) {
+public final boolean removeClosingListener() {
+if(closingListenerSet) { // volatile: ok
+synchronized(closingListenerLock) {
+

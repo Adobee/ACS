@@ -1,0 +1,8 @@
+protected final DiscoveryNodes nodes;
+
+protected final int expectedSuccessfulOps;
+private final int expectedTotalOps;
+protected void releaseIrrelevantSearchContexts(AtomicArray<? extends QuerySearchResultProvider> queryResults,
+AtomicArray<IntArrayList> docIdsToLoad) {
+if (docIdsToLoad == null) {
+

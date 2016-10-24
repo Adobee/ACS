@@ -1,0 +1,10 @@
+} else {
+double temp;
+if (x > y) {
+temp = y / x;
+mImaginary += rhs.getImaginary();
+}
+
+public static ComplexNumber add(ComplexNumber lhs, ComplexNumber rhs) {
+double real = lhs.getReal() + rhs.getReal();
+

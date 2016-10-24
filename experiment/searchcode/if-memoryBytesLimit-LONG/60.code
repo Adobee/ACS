@@ -1,0 +1,8 @@
+public class ChildMemoryCircuitBreaker implements CircuitBreaker {
+
+private final long memoryBytesLimit;
+private final BreakerSettings settings;
+// short-circuit on no data allowed, immediately throwing an exception
+if (memoryBytesLimit == 0) {
+circuitBreak(label, bytes);
+

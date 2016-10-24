@@ -1,0 +1,12 @@
+Configuration configuration = manager.getComponentDescriptor().getConfiguration();
+
+if ( object instanceof Configurable )
+{
+if ( null == configuration )
+configuration = DefaultConfiguration.EMPTY_CONFIGURATION;
+}
+( (Configurable) object ).configure( configuration );
+}
+}
+}
+

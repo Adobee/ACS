@@ -1,0 +1,13 @@
+* @author chaostone
+*/
+public class IndexMetadata {
+private String name;
+private List columns = new ArrayList();
+
+public IndexMetadata() {
+super();
+}
+
+public IndexMetadata(ResultSet rs) throws SQLException {
+name = rs.getString(&quot;INDEX_NAME&quot;);
+

@@ -1,0 +1,11 @@
+public void add(int index, Boolean e) {
+System.arraycopy(box, index, box, index + 1, size - index);
+size++;
+public Boolean get(int index) {
+return decode(box[index]);
+}
+
+@Override
+public void set(int index, Boolean e) {
+if (index >= size) {
+

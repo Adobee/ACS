@@ -1,0 +1,13 @@
+this.mapX = mapX;
+this.mapY = mapY;
+
+setType(type);
+}
+
+public void setType(String type){
+if(type.equals(&quot;Archer&quot;)){
+int newMapX = mapX, newMapY = mapY;
+
+if(inputEvent.keyTyped(KeyEvent.VK_UP)){
+if(tileMap.tiles[mapX+(mapY%2==1?1:0)][mapY-1].isPassable){
+

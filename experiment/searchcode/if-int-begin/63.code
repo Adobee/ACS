@@ -1,0 +1,8 @@
+public class Solution {
+public int maxArea(int[] height) {
+int max = 0, begin = 0, end = height.length-1, cur, temp;
+max = max > cur? max:cur;
+if (height[begin] <= height[end]){
+temp = height[begin];
+while (begin < end &amp;&amp; height[begin] <= temp)
+

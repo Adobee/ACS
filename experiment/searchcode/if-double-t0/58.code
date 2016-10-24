@@ -1,0 +1,12 @@
+private static Output instance = null;
+
+public static Output getInstace(){
+if(instance == null)
+instance = new Output();
+return instance;
+}
+
+public void write(Set<Particle> set, double time){
+if(time == 0){
+try{
+

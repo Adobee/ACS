@@ -1,0 +1,6 @@
+AbstractBlock currentBlock = (AbstractBlock) blocksIterator.next();
+if (maxComparisonsPerBlock < currentBlock.getNoOfComparisons()) {
+double[] totalComparisonsPerLevel = new double[distinctComparisonsLevel.size()];
+for (AbstractBlock block : blocks) {
+if (index == -1) {
+

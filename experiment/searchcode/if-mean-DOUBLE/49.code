@@ -1,0 +1,14 @@
+size = data.length;
+}
+
+double getMean()
+{
+double sum = 0.0;
+for(double a : data)
+double getVariance()
+{
+double mean = getMean();
+double temp = 0;
+for(double a :data)
+temp += (mean-a)*(mean-a);
+

@@ -1,0 +1,11 @@
+private final EventBus m_eventBus;
+private Timer m_dynamicTimer = null;
+private int m_dynamicRefreshMillis = 10000;
+private boolean m_dynamicUpdateNeeded = false;
+public void setDynamicRefreshMillis(int dynamicRefreshMillis) {
+m_dynamicRefreshMillis = dynamicRefreshMillis;
+}
+
+public void initDynamicRefreshTimer() {
+if (m_dynamicTimer != null) {
+

@@ -1,0 +1,9 @@
+averagePrecision += precision * total[i];
+s += formatString(Double.toString(precision), maxWidth) + &quot;|&quot;;
+}
+s += formatString(Double.toString(averagePrecision / totalDocs), maxWidth) + &quot;|\n&quot; +
+&quot;|&quot; + formatString(&quot;RECALL&quot;, maxWidth) + &quot;|&quot;;
+
+double averageRecall = 0.0;
+for(int i = 0; i < correct.length; i++){
+

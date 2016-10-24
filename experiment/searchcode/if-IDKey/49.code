@@ -1,0 +1,7 @@
+@NamedQuery(name = &quot;Usertab.findByIdkey&quot;, query = &quot;SELECT u FROM Usertab u WHERE u.idkey = :idkey&quot;)})
+public class Usertab implements Serializable {
+return false;
+}
+Usertab other = (Usertab) object;
+if ((this.idkey == null &amp;&amp; other.idkey != null) || (this.idkey != null &amp;&amp; !this.idkey.equals(other.idkey))) {
+

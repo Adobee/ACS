@@ -1,0 +1,7 @@
+createBasic$Column(context, fieldOutline, basic);
+
+if (basic.getLob() == null &amp;&amp; basic.getTemporal() == null
+&amp;&amp; basic.getEnumerated() == null) {
+if (isTemporal(fieldOutline)) {
+basic.setTemporal(getTemporalType(fieldOutline));
+

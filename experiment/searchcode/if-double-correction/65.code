@@ -1,0 +1,7 @@
+private static final long CORRECTION_PERIOD = 10, LINE_ERROR_THRESHOLD = 3;
+private static double TILE_LENGTH = 30.48;
+private final Odometer odo;
+// this ensure the odometry correction occurs only once every period
+correctionEnd = System.currentTimeMillis();
+if (correctionEnd - correctionStart < CORRECTION_PERIOD) {
+

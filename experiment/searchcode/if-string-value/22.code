@@ -1,0 +1,7 @@
+public String toJson(StringBuilder stringBuilder) {
+if(value == null) {
+return stringBuilder.append(&quot;null&quot;).toString();
+}
+if(value.contains(&quot;&#39;&quot;)) {
+value = value.replaceAll(&quot;&#39;&quot;, &quot;\&quot;&quot;);
+

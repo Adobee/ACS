@@ -1,0 +1,8 @@
+for(Map.Entry<Double, Double> entry : distr.entrySet()){
+Double count = distribution.get(entry.getKey());
+if(count == null){
+distribution.put(entry.getKey(), entry.getValue());
+for(Map.Entry<Double, Double> entry : distribution.entrySet()){
+if(entry.getValue() > max)
+max = entry.getValue();
+

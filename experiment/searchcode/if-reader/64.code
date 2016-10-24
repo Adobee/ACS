@@ -1,0 +1,10 @@
+private RfidReaderImpl() {
+}
+
+public static RfidReader getInstance() {
+if (rfidReader == null) return rfidReader = new RfidReaderImpl();
+public String readCard(Scanner scanner) {
+String readerInput = scanner.next();
+
+if (readerInput.equals(&quot;&quot;) || readerInput.isEmpty()) return null;
+

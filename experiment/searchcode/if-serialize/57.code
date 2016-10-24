@@ -1,0 +1,7 @@
+synchronized(_serializeThreads) {
+if (_terminated) {
+return false;
+}
+for (int i = 0; i < _serializeThreads.length; i++) {
+if (_serializeThreads[i] == null) {
+

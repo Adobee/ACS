@@ -1,0 +1,8 @@
+private void updateBD(double negccov) {
+if (ccov1 + ccovmu + negccov > 0 &amp;&amp;
+(iterations % 1. / (ccov1 + ccovmu + negccov) / dimension / 10.) < 1) {
+* @param negccov Negative covariance factor.
+*/
+private void updateBDFast(double negccov) {
+if (ccov1 + ccovmu + negccov > 0 &amp;&amp;
+

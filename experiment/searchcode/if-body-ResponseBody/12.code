@@ -1,0 +1,6 @@
+public static <T> ResponseEntity<ResponseBody<T>> buildFailed(Boolean isError, int errorCode, String errorLibelle){
+
+ResponseBody<T> body  = new ResponseBody<T>();
+body.setError(isError);
+body.setCodeError(errorCode);
+

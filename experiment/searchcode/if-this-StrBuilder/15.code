@@ -1,0 +1,9 @@
+StrBuilder strbuilder = new StrBuilder(s);
+if(substitute(strbuilder, 0, s.length()))
+return strbuilder.toString();
+public String replace(String s, int i, int j)
+{
+if(s == null)
+return null;
+StrBuilder strbuilder = (new StrBuilder(j)).append(s, i, j);
+

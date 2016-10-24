@@ -1,0 +1,14 @@
+// Backward iteration: replace &quot;a&quot;s with &quot;dd&quot;s starting from the end.
+int curIdx = writeIdx - 1;
+writeIdx = writeIdx + aCount - 1;
+int finalSize = writeIdx + 1;
+s[writeIdx--] = s[curIdx];
+}
+--curIdx;
+}
+return finalSize;
+}
+// @exclude
+
+static String randString(int len) {
+

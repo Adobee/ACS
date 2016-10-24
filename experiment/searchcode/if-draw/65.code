@@ -1,0 +1,25 @@
+import android.graphics.Path;
+
+
+/**
+* 复制操作事务
+* @author GuoJun
+*
+*/
+public class OpCopy extends Operation{
+
+private OpDraw opDraw;
+public OpDraw getDraw()
+{
+return opDraw;
+}
+
+
+
+
+@Override
+public void Redo() {
+if(opDraw!=null)
+{
+Path p = new Path();
+

@@ -1,0 +1,5 @@
+Bundle extras = this.getIntent().getExtras();
+ArrayList<Double> feedbackLatitude = (ArrayList<Double>) getIntent().getSerializableExtra(&quot;feedbackLatitude&quot;);
+int selectedDistance = extras.getInt(&quot;distanceSelected&quot;);
+double currentLatitude = extras.getDouble(&quot;currentLatitude&quot;);
+

@@ -1,0 +1,14 @@
+int result = 1;
+int base = b;
+int exponent = p - 1;
+while (exponent != 0) {
+if (exponent % 2 != 0) {
+result = (int) ((long) result * base % p);
+}
+exponent /= 2;
+base = (int) ((long) base * base % p);
+}
+return result;
+}
+}
+

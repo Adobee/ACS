@@ -1,0 +1,10 @@
+throw new NullPointerException(&quot;Executor is null&quot;);
+}
+
+boolean executeImmediate = false;
+
+// Lock while we check state. We must maintain the lock while adding the
+// If we want to change the contract to guarantee ordering among runnables we&#39;d have to modify the logic here to allow it.
+if (executeImmediate) {
+executor.execute(runnable);
+

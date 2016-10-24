@@ -1,0 +1,11 @@
+private static final @Nonnull Log logger = Log.getInstance();
+
+private final int maxRetries;
+
+HttpTimeoutRetryHandler(int maxRetries) {
+this.maxRetries = maxRetries;
+}
+
+@Override
+public boolean retryRequest(IOException exception, int executionCount, HttpContext context) {
+

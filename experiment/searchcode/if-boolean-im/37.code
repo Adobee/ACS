@@ -1,0 +1,17 @@
+public abstract class Device implements RemotelyControllable {
+
+private boolean isOn;
+
+@Override
+public boolean turnOn() {
+if (!isOn) {
+isOn = true;
+imOn();
+}
+return isOn;
+}
+
+@Override
+public boolean turnOff() {
+if (isOn) {
+

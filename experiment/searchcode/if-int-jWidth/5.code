@@ -1,0 +1,7 @@
+int qEnd = FastMath.min(qStart + BLOCK_SIZE, columns);
+int jWidth = qEnd - qStart;
+float[] block = new float[iHeight * jWidth];
+int widthExcess = jWidth + columnsShift - BLOCK_SIZE;
+int width2;
+if (heightExcess > 0) {
+

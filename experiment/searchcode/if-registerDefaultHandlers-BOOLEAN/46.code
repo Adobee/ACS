@@ -1,0 +1,5 @@
+protected RestDeleteIndexedScriptAction(Settings settings, RestController controller, boolean registerDefaultHandlers, Client client) {
+super(settings, controller, client);
+if (registerDefaultHandlers) {
+controller.registerHandler(DELETE, &quot;/_scripts/{lang}/{id}&quot;, this);
+

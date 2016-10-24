@@ -1,0 +1,9 @@
+
+public class TimeDepositAccount extends BankAccount
+{
+private double interestRate, penaltyFee;
+public TimeDepositAccount(double interestRate,int monthsToMaturity, double penaltyFee) {
+super();
+this.interestRate = interestRate;
+this.penaltyFee = penaltyFee;
+

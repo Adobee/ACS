@@ -1,0 +1,7 @@
+public PhysicalDisplay(ServiceConnector connector) {
+super(connector);
+if(System.getProperty(&quot;com.sun.javafx.isEmbedded&quot;)!=null &amp;&amp; System.getProperty(&quot;com.sun.javafx.isEmbedded&quot;).equals(&quot;true&quot;)){
+controller = GpioFactory.getInstance();
+} catch (Exception ex){
+LOG.warning(&quot;Could not load Pi4J library. If not running on raspberry pi you can discard this message.&quot;);
+

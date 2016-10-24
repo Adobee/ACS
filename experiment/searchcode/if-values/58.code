@@ -1,0 +1,9 @@
+public void setValuesTranspose(float[] v) {
+if (v.length == 16) {
+Matrix.transposeM(values, 0, v, 0);
+} else if (v.length == 9) {
+public void setValues(float[] v) {
+if (v.length == 16) {
+System.arraycopy(v, 0, values, 0, values.length);
+} else if (v.length == 9) {
+

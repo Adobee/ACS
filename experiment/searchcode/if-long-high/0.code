@@ -1,0 +1,12 @@
+if (x < 0) {
+return false;
+}
+
+long high = 1;
+long low = 1;
+
+while (x / high > 0) {
+while (low < high) {
+if (x / high % 10 != x / low % 10) {
+return false;
+

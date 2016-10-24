@@ -1,0 +1,7 @@
+Class<?> type = listener.getParameterTypes()[i];
+if (argument != null &amp;&amp; !primaries.containsKey(type) &amp;&amp; !type.isInstance(argument)) {
+throw new ClassCastException(&quot;can not cast argument of key:[&quot; + message.value() + &quot;] from type:[&quot; + argument.getClass() + &quot;] to type:[&quot; + type + &quot;] in frequency:[&quot; + frequency + &quot;]&quot;);
+}
+
+if (argument == null &amp;&amp; primaries.containsKey(type)) {
+

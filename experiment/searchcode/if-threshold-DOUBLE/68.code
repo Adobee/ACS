@@ -1,0 +1,13 @@
+private String motionFrame;
+private String motionDir;
+private double threshold;
+private String thresholdUnit;
+private boolean largerThan = true;
+return controllerType;
+}
+
+
+private double scale(){
+double ref =threshold;
+if( thresholdUnit.equals(&quot;N&quot;) ){
+

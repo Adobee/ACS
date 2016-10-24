@@ -1,0 +1,11 @@
+float angle = FastMath.atan2(center.y, center.x);
+
+if (dist >= r) {
+offset.x = (dist - r + .01f) * FastMath.cos(angle);
+offset.y = (dist - r + .01f) * FastMath.sin(angle);
+float dist = FastMath.sqrt(FastMath.pow(center.x, 2)
++ FastMath.pow(center.y, 2));
+
+// check if outside the circle
+if (dist + radius > r) {
+

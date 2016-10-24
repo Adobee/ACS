@@ -1,0 +1,5 @@
+public void handleRequest(final RestRequest request, final RestChannel channel) throws Exception {
+boolean helpWanted = request.paramAsBoolean(&quot;help&quot;, false);
+if (helpWanted) {
+Table table = getTableWithHeader(request);
+

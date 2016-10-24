@@ -1,0 +1,9 @@
+this.bounds_1 = bounds_1;
+this.bounds_2 = bounds_2;
+}
+@Deprecated
+@Override public boolean intersects(SamVector vector){return this.intersects(new SamLine(new SamVector(0,0,0),vector));}
+double bounds_1_projection = position.dot(bounds_1);
+double bounds_2_projection = position.dot(bounds_2);
+if(bounds_1_projection < 0 || bounds_1_projection > 1) return false;
+

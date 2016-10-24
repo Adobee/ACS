@@ -1,0 +1,8 @@
+* Override this function if you want to produce your own scorer.
+* */
+public abstract DecayFunction getDecayFunction();
+super(CombineFunction.MULT);
+this.mode = mode;
+if (userSuppiedScale <= 0.0) {
+throw new IllegalArgumentException(FunctionScoreQueryParser.NAME + &quot; : scale must be > 0.0.&quot;);
+

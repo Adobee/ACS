@@ -1,0 +1,12 @@
+private BlockingQueue<QueryOrderObject> queue = new LinkedBlockingQueue<QueryOrderObject>();
+
+private static QueryOrderPool pool;
+public static QueryOrderPool getInstance() {
+if (pool == null) {
+pool = new QueryOrderPool();
+}
+return pool;
+}
+
+public Iterator<QueryOrderObject> all() {
+

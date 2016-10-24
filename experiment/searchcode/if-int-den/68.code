@@ -1,0 +1,10 @@
+public class Razionale implements Comparable<Razionale> {
+private int num, den;
+public Razionale(int n, int d) {
+if (d == 0) {
+System.out.println(&quot;Denominatore nullo!&quot;);
+System.exit(-1);
+}
+if (n != 0) {
+int MCD = Mat.mcd(Math.abs(n), Math.abs(d));
+

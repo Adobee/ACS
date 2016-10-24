@@ -1,0 +1,10 @@
+final T[]   yTmp   = MathArrays.buildArray(getField(), y0.length);
+
+// set up integration control objects
+if (forward) {
+if (getStepStart().getTime().add(step).subtract(finalTime).getReal() >= 0) {
+setStepSize(step);
+}
+} else {
+if (getStepStart().getTime().subtract(step).subtract(finalTime).getReal() <= 0) {
+

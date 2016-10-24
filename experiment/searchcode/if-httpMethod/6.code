@@ -1,0 +1,8 @@
+public class HttpMethod {
+public static final HttpMethod GET = new HttpMethod(&quot;Get&quot;);
+public static final HttpMethod POST = new HttpMethod(&quot;Post&quot;);
+public static HttpMethod fromString(String method) {
+HttpMethod httpMethod = registry.get(method);
+
+if (httpMethod == null) {
+

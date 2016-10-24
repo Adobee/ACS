@@ -1,0 +1,13 @@
+private float total;
+private float elapsed;
+private long lastNanoTime;
+private Float maxElapsedTime;
+
+public GameTime() {
+lastNanoTime = System.nanoTime();
+}
+
+public void tick() {
+long nanoTime = System.nanoTime();
+elapsed = (nanoTime-lastNanoTime) / 1000000000.0f;
+

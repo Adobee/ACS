@@ -1,0 +1,8 @@
+return null;
+}
+
+private static String matchDomain(String url, int index, String domain) {
+int domainIndex = domain.startsWith(&quot;www.&quot;) ? 4 : 0;
+int domainLength = domain.length() - domainIndex;
+if (!url.regionMatches(true, index, domain, domainIndex, domainLength)) return null;
+

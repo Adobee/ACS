@@ -1,0 +1,8 @@
+long timestamp = date.getTime();
+long difference = current - timestamp;
+
+if (difference < 0) {
+return &quot;WTF&quot;;
+} else if (difference < SIXTY_SECS_IN_MILLIS) {
+return (difference / TimeUnit.MILLISECONDS.convert(1L, TimeUnit.SECONDS)) + &quot;s&quot;;
+

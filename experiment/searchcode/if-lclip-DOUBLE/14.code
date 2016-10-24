@@ -1,0 +1,8 @@
+RGB color = t.getEdgeColor();
+if (color != null) {
+
+Rectangle lClip = new Rectangle(localBounds.x, localBounds.y, localBounds.width, localBounds.height);
+double gx = cm.worldToLocal(new Point2D.Double(i, wy)).getX();
+r.drawShape(new Line2D.Double(gx, lClip.y, gx, lClip.y + lClip.height), color, 1,
+gridDisplayType.getLineStyle(), 1);
+

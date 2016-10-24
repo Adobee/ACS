@@ -1,0 +1,10 @@
+public Grade(int earned, int max){
+maxPoints = max;
+pointsEarned = earned;
+percentGrade = (double)((double)pointsEarned/(double)maxPoints)*100.0;
+return pointsEarned+&quot;/&quot;+maxPoints+&quot;\t&quot;+(new DecimalFormat(&quot;0.00&quot;).format(percentGrade))+&quot;% - &quot;+letterGrade+&quot; &quot;;
+}
+
+public static String toLetterGrade(double percent){
+if(percent <= 100 &amp;&amp; percent >= 96)
+

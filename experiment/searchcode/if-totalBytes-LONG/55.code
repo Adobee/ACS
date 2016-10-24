@@ -1,0 +1,7 @@
+final long totalBytes;
+final long freeBytes;
+
+public DiskUsage(String nodeId, long totalBytes, long freeBytes) {
+if ((totalBytes < freeBytes) || (totalBytes < 0)) {
+throw new IllegalStateException(&quot;Free bytes [&quot; + freeBytes +
+

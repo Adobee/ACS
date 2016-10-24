@@ -1,0 +1,10 @@
+import sdt.stepb.*;
+
+public class DataCap extends DataShell
+{
+private double _radius;
+private double _height;
+protected void createDataPointPeriodically(stepb_cartesian_point[][] ptSets)
+{
+double rCap = _point3DEndSection1.X();
+

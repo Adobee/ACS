@@ -1,0 +1,5 @@
+* @param hosts host names of the server to connect to.
+* @param useHTTPS indicates if HTTPS should be used.
+public ISignServerWSClient generateSignServerWSClient(String clientType, String[] hosts, boolean useHTTPS, IFaultCallback faultCallback) {
+return generateSignServerWSClient(clientType, hosts, useHTTPS, faultCallback, DEFAULT_PORT, DEFAULT_TIMEOUT, DEFAULT_WSDL_URL);
+

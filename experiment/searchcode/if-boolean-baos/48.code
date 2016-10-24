@@ -1,0 +1,17 @@
+public void generate(final Script script, final boolean includeLength)
+{
+ByteArrayOutputStream scriptBaos;
+if (includeLength)
+{
+// We need to include the length so write this to a temporary baos
+scriptBaos = new ByteArrayOutputStream();
+}
+else
+{
+scriptBaos = this.baos;
+}
+
+try
+{
+if (script != null)
+

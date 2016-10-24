@@ -1,0 +1,9 @@
+return index >= 0 ? valueAt(index) : 0;
+}
+
+public void put(long key, long value) {
+int index = putKey(key);
+for (;;) {
+long oldValue = unsafe.getLong(address);
+if (unsafe.compareAndSwapLong(null, address, oldValue, newValue)) {
+

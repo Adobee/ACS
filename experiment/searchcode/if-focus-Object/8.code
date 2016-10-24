@@ -1,0 +1,15 @@
+List arr = focusDao.findFocusByUser(focus);
+if(arr.size() > 0){
+Map<String, Object> jsonMap = common.success();
+return common.forbid();
+}
+
+
+}
+
+/**
+* 当前用户 关注的人
+*/
+public Map<String, Object> getNowUserFocus(UserView view) {
+if(null == view.getNowUserId()){
+

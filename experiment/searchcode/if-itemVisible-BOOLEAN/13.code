@@ -1,0 +1,10 @@
+public void assertItemNotOnscreenByCSSSelector(String cssSelector, String exceptionMessage, int timeToWait) throws Exception {
+boolean itemVisible = false;
+try{
+driver.manage().timeouts().implicitlyWait(timeToWait, TimeUnit.SECONDS);
+catch (NoSuchElementException ex){}
+if (itemVisible){
+throw new Exception (exceptionMessage);
+}
+driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+

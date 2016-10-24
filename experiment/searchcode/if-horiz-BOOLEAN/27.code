@@ -1,0 +1,21 @@
+else
+{
+return;
+}
+}
+if(mirror == true)
+{
+if(getGrid().isValid(getHorizNext(loc, dir+1))){
+
+next = getHorizNext(loc, dir+1);
+dir = dir+1;
+}
+else
+{
+return;
+}
+}
+else
+{
+if(getGrid().isValid(getHorizNext(loc, (-dir + 3))))
+

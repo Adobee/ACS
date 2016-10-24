@@ -1,0 +1,10 @@
+import org.apache.lucene.analysis.TokenStream;
+
+public class CustomAnalyzer extends Analyzer {
+public CustomAnalyzer() {
+// Radimo tokene na naèin da ih lomimo na zareze, toèke te na sve
+// whitespace charactere.
+
+@Override
+protected boolean isTokenChar(char c) {
+

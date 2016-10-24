@@ -1,0 +1,11 @@
+public static void addSchedulerProcessor(SchedulerProcessor schedulerProcessor) {
+
+String name = schedulerProcessor.getSchedulerName();
+
+if (name == null || name.length() < 1) {
+throw new IllegalArgumentException(&quot;schedulerProcessor doesn&#39;t have name&quot;);
+}
+
+if (schedulerContainer.containsKey(name)) {
+throw new RuntimeException(schedulerProcessor.getSchedulerName() + &quot;already exists&quot;);
+

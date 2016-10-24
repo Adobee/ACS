@@ -1,0 +1,7 @@
+public static  double[] ebeAdd( double[] a, double[] b )
+{
+if (a.length != b.length) {
+return null;
+}
+final double[] result = a.clone();
+

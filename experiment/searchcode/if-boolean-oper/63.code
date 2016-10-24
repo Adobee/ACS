@@ -1,0 +1,6 @@
+Date operDate = oper.getDateOper() == null ? null : DateUtil.parse(oper.getDateOper());
+boolean exists = false;
+for (Operation dbOper : dbOpers) {
+OperationType type = dbOper.getOperType();
+if (type.getTypeId().equals(oper.getOperTypeId()) &amp;&amp;
+

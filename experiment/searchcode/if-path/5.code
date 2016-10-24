@@ -1,0 +1,10 @@
+public static String getFullPath(String path) {
+String res = &quot;&quot;;
+if (path == null) {
+return res;
+}
+path = path.replace(&quot;\\&quot;, &quot;/&quot;);
+
+if (path.length() != 0) {
+if (path.substring(0,1).equals(&quot;.&quot;)) {
+

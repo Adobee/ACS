@@ -1,0 +1,11 @@
+int[] case3 = {10,9,8,7,6,5,4,3,2,1};
+RemoteHandler rh = new RemoteHandler();
+rh.reset();
+for (int i:case1){
+Assert.assertTrue(isRightOrder(rh.getDoneList()));
+rh.reset();
+for (int i:case2){
+rh.handle(i);
+}
+Assert.assertTrue(isRightOrder(rh.getDoneList()));
+

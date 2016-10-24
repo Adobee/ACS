@@ -1,0 +1,12 @@
+LinkedIn(&quot;LinkedIn&quot;),
+Excel(&quot;Excel&quot;);
+
+private String sourceLabel;
+
+private Source(String sourceLabel){
+this.sourceLabel = sourceLabel;
+}
+
+public static Source getSourceForSourceLabel(String sourceLabel) {
+for (Source source : Source.values()) {
+

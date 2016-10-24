@@ -1,0 +1,11 @@
+// Compute and check the objective value for this solution
+_dObjValue = computeObjective();
+double diff = Math.abs(_dObjValue - _solver.getObjective());
+_lSolnTime = GetElapsedTime();
+
+return _x;
+}
+
+/* Compute objective value */
+public double computeObjective() {
+

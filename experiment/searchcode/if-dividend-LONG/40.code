@@ -1,0 +1,9 @@
+boolean positive = ((dividend>=0) &amp;&amp; (divisor>0)) || ((dividend<=0) &amp;&amp; (divisor<0));
+long _dividend = Math.abs((long)dividend);
+long _divisor = Math.abs((long)divisor);
+long result = positive? absDivide(_dividend, _divisor) : -absDivide(_dividend, _divisor);
+private static long absDivide(long dividend, long divisor) {
+if(divisor > dividend)
+return 0;
+long temp = divisor;
+

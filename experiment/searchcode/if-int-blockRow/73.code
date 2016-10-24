@@ -1,0 +1,8 @@
+for (int j = 0; j < block.col; j++) {
+if (block.blockPos[i][j] == 1) {
+pos[blockRow + i][blockCol + j] = 1;
+for (int j = 0; j < block.col; j++) {
+for (int i = 0; i < block.row; i++) {
+if (block.blockPos[i][j] == 1) {
+if (pos[i + blockRow][j + blockCol - 1] == 1) {
+

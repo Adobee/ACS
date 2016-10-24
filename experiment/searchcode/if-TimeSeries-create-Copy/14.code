@@ -1,0 +1,6 @@
+protected BinaryFn<Result<TimeseriesResultValue>, Result<TimeseriesResultValue>, Result<TimeseriesResultValue>> createMergeFn(
+Query<Result<TimeseriesResultValue>> input
+final Map<String, Object> values = Maps.newHashMap();
+final TimeseriesResultValue holder = result.getValue();
+if (calculatePostAggs) {
+

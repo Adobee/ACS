@@ -1,0 +1,7 @@
+public int getAdditionalHealthBoosts(ItemStack i){
+int boost = 0;
+if(i == null) return boost;
+if(!(i.hasItemMeta())) return boost;
+if(!(i.getItemMeta().hasLore())) return boost;
+if(i.getItemMeta().getLore().isEmpty()) return boost;
+

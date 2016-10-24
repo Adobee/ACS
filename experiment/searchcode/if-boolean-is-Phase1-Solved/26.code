@@ -1,0 +1,9 @@
+* @return whether Phase 1 is solved
+*/
+private boolean isPhase1Solved() {
+if (table.getNumArtificialVariables() == 0) {
+* @return whether the model has been solved
+*/
+public boolean isOptimal() {
+if (table.getNumArtificialVariables() > 0) {
+

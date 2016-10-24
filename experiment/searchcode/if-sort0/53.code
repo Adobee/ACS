@@ -1,0 +1,11 @@
+public static <T extends Comparable<T>> void sort(final T[] a)
+{
+sort0(a);
+Collections.reverse(Arrays.asList(a));
+}
+
+private static <T extends Comparable<T>> void sort0(final T[] a)
+{
+for (int i = 1; i < a.length; i++) {
+int index = i;
+

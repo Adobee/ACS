@@ -1,0 +1,12 @@
+return value.getDoubleValue();
+}
+
+public double ago(int periodType) {
+return ago(periodType, 1);
+}
+
+public double ago(int periodType, int count) {
+long from = DateUtils.minus(getContext().getRuntime(), periodType, count);
+PointValueTime pvt = point.getPointValueBefore(from);
+if (pvt == null)
+

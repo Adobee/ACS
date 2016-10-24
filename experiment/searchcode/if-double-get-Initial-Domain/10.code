@@ -1,0 +1,8 @@
+public boolean performFinish() {
+String text = page.getText().getText();
+if(text.equals(&quot;&quot;)){
+text = domain.getInitialValue();
+}else if(domain instanceof DoubleDomain){
+this.value = Double.parseDouble(text);
+}else if(domain instanceof StringDomain){
+

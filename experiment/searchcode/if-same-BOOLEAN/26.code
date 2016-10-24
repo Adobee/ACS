@@ -1,0 +1,10 @@
+package net.commonAlg;
+import java.util.*;
+
+
+public class SameTree {
+public boolean isSameTree(TreeNode p, TreeNode q) {
+else if(p==null || q==null) return false;
+boolean result = (p.val==q.val);
+boolean left = isSameTree(p.left, q.left);
+

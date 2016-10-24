@@ -1,0 +1,7 @@
+byte[] sendBuffer;
+sendBuffer = new String(&quot;This is a datagram&quot;).getBytes();
+//创建一个字节数组，用来保存数据包信息的数据部分
+InetAddress address = InetAddress.getByName(host);
+//将主机名转换成InetAddress对象
+DatagramPacket datagramPacket = new DatagramPacket(sendBuffer,sendBuffer.length,address,5555);
+

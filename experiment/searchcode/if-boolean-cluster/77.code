@@ -1,0 +1,5 @@
+public static IFileSystem create(int clusterSize, int numClusters, RandomAccessFile file) throws IOException {
+if(clusterSize < 1 || numClusters < 1 || clusterSize > 65535 || numClusters > 65535)
+int numClusters = file.readUnsignedShort();
+if(clusterSize < 1 || numClusters < 1 || clusterSize > 65535 || numClusters > 65535)
+

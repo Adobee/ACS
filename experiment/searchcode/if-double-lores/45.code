@@ -1,0 +1,7 @@
+private PTitem makeItem(ItemStack stack, String lores, String enchants, int ID) {
+PTitem item = new PTitem(stack, ID);
+if ((lores != null) &amp;&amp; (!lores.equalsIgnoreCase(&quot;none&quot;))) {
+item = this.parseLores(lores, item);
+}
+if ((enchants != null) &amp;&amp; (!enchants.equalsIgnoreCase(&quot;none&quot;))) {
+

@@ -1,0 +1,8 @@
+public class Dodger implements Movement{
+int dodgeRadius = 50;
+int dodgeSpeed = 2;
+public Coordinates move(double xLoc, double yLoc, double vel) {
+Coordinates fleeFrom = EnemyUtilities.getClosestProjectile(xLoc, yLoc);
+EnemyUtilities.calcDistance(fleeFrom, new Coordinates(xLoc, yLoc));
+if(EnemyUtilities.calcDistance(fleeFrom, new Coordinates(xLoc, yLoc))<dodgeRadius){
+

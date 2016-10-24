@@ -1,0 +1,12 @@
+private boolean isEquals = true;
+
+public static boolean reflectionEquals(Object lhs, Object rhs)
+{
+return reflectionEquals(lhs, rhs, false, null, null);
+public EqualsBuilder append(boolean lhs, boolean rhs)
+{
+if (!this.isEquals) {
+return this;
+}
+this.isEquals = (lhs == rhs);
+

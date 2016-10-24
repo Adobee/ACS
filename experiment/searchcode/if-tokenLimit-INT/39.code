@@ -1,0 +1,10 @@
+String getTokenFilterId() {
+return tokenFilterId;
+}
+
+private int tokenLimit;
+public int getTokenLimit() {
+this.tokenFilterId = ruleElement.getAttributeValue(&quot;tokenFilter&quot;, null);
+this.tokenLimit = ruleElement.getAttributeInt(&quot;tokenLimit&quot;, 0);
+this.fromFirstTokenOnly = ruleElement.getAttributeBoolean(&quot;fromFirstTokenOnly&quot;, false);
+

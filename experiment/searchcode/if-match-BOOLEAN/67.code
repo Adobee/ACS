@@ -1,0 +1,18 @@
+import ecommerce.base.ITrueAndFalse;
+
+public class StopWhile6X implements IStop {
+
+@Override
+public boolean match(ITrueAndFalse taf) {
+boolean bMatch = false;
+if(pos<5)
+return bMatch;
+
+for(int i=0;i<6&amp;!bMatch;i++)
+bMatch = bMatch || result.get(pos-i);
+
+return !bMatch;
+}
+
+}
+

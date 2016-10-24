@@ -1,0 +1,15 @@
+grid[x][y] = false;
+if (dir==1){
+if(y<m-1 &amp;&amp; grid[x][y+1]){
+y++;
+cont=0;
+}
+else{
+dir%=4;
+dir++;
+cont++;
+}
+}
+else if(dir==2){
+if(x<n-1 &amp;&amp; grid[x+1][y]){
+

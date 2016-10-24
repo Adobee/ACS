@@ -1,0 +1,12 @@
+public String getLineName() {
+return lineName;
+}
+
+@Override
+public boolean equals(Object o) {
+if (o == null || getClass() != o.getClass()) return false;
+
+Line line = (Line) o;
+
+if (lineName != null ? !lineName.equals(line.lineName) : line.lineName != null) return false;
+

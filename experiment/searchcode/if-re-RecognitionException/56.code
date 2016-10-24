@@ -1,0 +1,10 @@
+token = BeeParser.tokenNames[misError.expecting];
+}
+else if (ex instanceof RecognitionException)
+{
+
+RecognitionException re = (RecognitionException) ex;
+errorLine = re.line;
+token = re.token.getText();
+re.printStackTrace();
+

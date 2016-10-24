@@ -1,0 +1,6 @@
+private static CodeStyle get(Defaults.Provider provider, Document doc, boolean embedded) {
+if (embedded) {
+return new CodeStyle(provider, CodeStylePreferences.get(doc, JsTokenId.JAVASCRIPT_MIME_TYPE).getPreferences());
+public boolean spaceBeforeIfParen() {
+return preferences.getBoolean(spaceBeforeIfParen, provider.getDefaultAsBoolean(spaceBeforeIfParen));
+

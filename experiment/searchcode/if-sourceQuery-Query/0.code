@@ -1,0 +1,10 @@
+public class Query extends Rule{
+
+//query expressed in source terms
+private ArrayList<SourceQuery> sourceQuery = new ArrayList<SourceQuery>();
+public String toString(){
+String s = super.toString();
+if(!sourceQuery.isEmpty()){
+s += &quot;\nSourceQuery:&quot;;
+for(int i=0; i<sourceQuery.size(); i++){
+

@@ -1,0 +1,14 @@
+mutation = new EvPermutationCycleRotationMutation(1.0);
+
+EvPermutationIndividual mutated_individual =
+mutation.mutate(individual);
+
+int[] original_chromosome = individual.getChromosome();
+for (int i = 0; i < chromosome_length; i++) {
+if(original_chromosome[i] != mutated_chromosome[i]) {
+different++;
+}
+}
+
+/*different should equal number_of_genes_mutated*/
+

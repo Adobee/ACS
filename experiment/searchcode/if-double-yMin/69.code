@@ -1,0 +1,10 @@
+package mods.eln.misc;
+
+public class FunctionTableYProtect extends FunctionTable {
+
+double yMin, yMax;
+public double getValue(double x) {
+double value = super.getValue(x);
+if(value > yMax) return yMax;
+if(value < yMin) return yMin;
+

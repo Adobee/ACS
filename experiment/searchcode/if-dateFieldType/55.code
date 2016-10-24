@@ -1,0 +1,9 @@
+json.put(&quot;isSuccess&quot;, customResult.isSuccess());
+if (customResult.getResult() instanceof Entity) {
+Map<String, Object> entityMap = ((Entity) customResult.getResult()).getValuedProperties();
+content.put(&quot;content&quot;, json.getString(&quot;content&quot;));
+break;
+}
+if (content != null) {
+CustomEntity customerReportData = new CustomEntityImpl();
+

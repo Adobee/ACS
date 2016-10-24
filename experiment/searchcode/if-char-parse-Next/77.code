@@ -1,0 +1,9 @@
+return isNormalUnitChar(currentChar);
+}
+
+public String parse(Lisp lisp) {
+char currentChar = lisp.currentChar();
+while (true) {
+char nextChar = lisp.nextChar();
+if (!isNormalUnitChar(nextChar)) {
+

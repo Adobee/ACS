@@ -1,0 +1,10 @@
+private final String string;
+private int currentPos, currentLine;
+private int lastLineBreak, lastQueriedPos;
+
+public LineNumberObtainer(final String string) {
+public int obtainLineNumber(final int pos) {
+assert(pos < string.length());
+lastQueriedPos = pos;
+if (pos < currentPos) {
+

@@ -1,0 +1,9 @@
+
+public class JumpGame {
+public boolean canJump(int[] A) {
+int len = A.length;
+if (len == 0) {
+int right = len - 1;
+for (int i = len - 2; i >= 0; i--) {
+if (A[i] + i >= right) {
+

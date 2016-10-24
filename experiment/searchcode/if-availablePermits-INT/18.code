@@ -1,0 +1,12 @@
+public class SoftwareGroupLicense {
+private Semaphore licenses;
+public SoftwareGroupLicense(int count) {
+licenses = new Semaphore(count);
+System.out.println(&quot;Licenses left &quot; + licenses.availablePermits());
+}
+
+public int getAvailableLicenses() {
+return licenses.availablePermits();
+}
+}
+

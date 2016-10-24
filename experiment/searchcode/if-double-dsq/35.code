@@ -1,0 +1,17 @@
+* An implementation of the WGS 84 for calculating true cartisian XYZ of
+* lat / long
+*
+*
+*
+* @author krol
+*
+*/
+public class Earth {
+
+public static Double EARTH_A = null;
+double asq, bsq, eccsq, ecc, clat, slat;
+double dsq, d,rn, rm, rho,rsq, r, z;
+
+if(Earth.EARTH_A == null) {
+Earth.wgs84();
+

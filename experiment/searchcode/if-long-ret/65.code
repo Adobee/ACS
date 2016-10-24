@@ -1,0 +1,8 @@
+if(a + b + c == N){
+dp[a][b][c] = 1;
+}else{
+long ret = 0;
+long p = (1 + b + c);
+long q = f(a + 1, b, c);
+ret += (int) (p * q % INF);
+

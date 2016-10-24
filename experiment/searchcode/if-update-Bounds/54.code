@@ -1,0 +1,8 @@
+private static final long serialVersionUID = 1L;
+
+public void updatePosition(Point position) {
+setBounds(new Rectangle(position.x, position.y, alignment.getWidth(), alignment.getHeight()));
+graphics.fillRect(bounds.x, bounds.y, bounds.width, bounds.height);
+
+if (alignment == Alignment.VERTICAL) {
+

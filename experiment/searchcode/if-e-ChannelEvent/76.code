@@ -1,0 +1,6 @@
+import net.ripe.db.whois.query.domain.QueryMessages;
+import org.jboss.netty.channel.ChannelDownstreamHandler;
+import org.jboss.netty.channel.ChannelEvent;
+public void handleDownstream(final ChannelHandlerContext ctx, final ChannelEvent e) {
+if (e instanceof QueryCompletedEvent) {
+

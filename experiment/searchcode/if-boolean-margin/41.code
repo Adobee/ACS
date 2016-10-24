@@ -1,0 +1,9 @@
+private Rectangle			rectangle;
+private int					margin;
+
+public RPoint(int x, int y, int margin) {
+super(x, y);
+this.margin = margin;
+if (margin > 0) {
+this.rectangle = new Rectangle(x - margin / 2, y - margin / 2, margin, margin);
+

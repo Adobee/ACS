@@ -1,0 +1,10 @@
+public static void main(String[] args) throws IOException {
+
+double accuracy = 0;
+double best = 0.0;
+Nbtest tester = new Nbtest();
+Nbtest.main(null);
+double temp = tester.getAccuracy();
+
+if(temp > accuracy){
+

@@ -1,0 +1,8 @@
+* @return true if rangeIndex is valid, otherwise false
+*/
+public final boolean getRange(int rangeIndex, int[] range) {
+if( rangeIndex<0) {
+range[1]=array[rangeIndex]-1;
+} else if(rangeIndex<length) {
+range[1]=((((int)array[rangeIndex])<<16)|array[rangeIndex+1])-1;
+

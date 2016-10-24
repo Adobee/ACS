@@ -1,0 +1,10 @@
+Coupon persistentCoupon = couponService.findByCouponCode(newPersistence.getCouponCode());
+if (persistentCoupon == null) {
+resolveConfig(newPersistence);
+throw new SyncToolRuntimeException(&quot;Unable to locate Coupon persistence&quot;, e);
+}
+}
+
+@Override
+public boolean remove(final String guid) throws SyncToolRuntimeException {
+

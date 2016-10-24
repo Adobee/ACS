@@ -1,0 +1,8 @@
+public class CustomFormulas {
+
+public static double calcClosingPositionForProfit(double position, double avgCost, double mid) {
+if(avgCost == 0) return 0;
+
+if(position < 0) {
+return (avgCost - mid) / avgCost;
+

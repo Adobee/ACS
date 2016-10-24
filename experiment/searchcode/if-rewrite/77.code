@@ -1,0 +1,10 @@
+* limitations under the License.
+*/
+package org.apache.hadoop.gateway.filter.rewrite.impl;
+
+import org.apache.hadoop.gateway.filter.rewrite.api.UrlRewriteFilterDescriptor;
+public void addRule( UrlRewriteRuleDescriptor rule ) {
+ruleList.add( rule );
+String name = rule.name();
+if( name != null &amp;&amp; name.length() > 0 ) {
+

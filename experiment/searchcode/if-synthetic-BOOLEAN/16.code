@@ -1,0 +1,11 @@
+SyntheticFieldExclusionStrategy(boolean flag)
+{
+skipSyntheticFields = flag;
+}
+
+public boolean shouldSkipClass(Class class1)
+public boolean shouldSkipField(FieldAttributes fieldattributes)
+{
+boolean flag;
+if(skipSyntheticFields &amp;&amp; fieldattributes.isSynthetic())
+

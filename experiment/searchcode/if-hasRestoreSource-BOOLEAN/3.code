@@ -1,0 +1,7 @@
+private void assertRecoveryStateWithoutStage(RecoveryState state, int shardId, Type type,
+String sourceNode, String targetNode, boolean hasRestoreSource) {
+assertThat(state.getShardId().getId(), equalTo(shardId));
+assertThat(state.getTargetNode().getName(), equalTo(targetNode));
+}
+if (hasRestoreSource) {
+

@@ -1,0 +1,10 @@
+public class ComplexNumber implements Serializable, Comparable<ComplexNumber> {
+
+private static final long serialVersionUID = 1L;
+
+private double real;
+private double imaginary;
+if (Double.doubleToLongBits(imaginary) != Double.doubleToLongBits(other.imaginary))
+return false;
+if (Double.doubleToLongBits(real) != Double.doubleToLongBits(other.real))
+

@@ -1,0 +1,8 @@
+* Close all CloseListener.
+* @return true if all CloseListener were closed
+* false if a CloseListener canceled the process
+*/
+public boolean closeEvent() {
+boolean realyClose = true;
+for(CloseListener close : closeListener) {
+

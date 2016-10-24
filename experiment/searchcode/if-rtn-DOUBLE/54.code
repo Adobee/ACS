@@ -1,0 +1,8 @@
+List<Object>   partnerList = partnerRtnPointDao.queryPartnerRtnPointByCondition(condition);
+if(partnerList!=null&amp;&amp;partnerList.size()>0){
+Map<String,Object> prp = (Map<String,Object>)partnerList.get(0);
+partnerRtnPoint.setTrxOrderId(tg.getTrxorderId());
+partnerRtnPoint.setVoucherId(tg.getVoucherId());
+
+if(tg.getPayPrice()<configAmount){
+

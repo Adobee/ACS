@@ -1,0 +1,12 @@
+*  文章内容表 （帮助中心）
+* @author shuang
+*/
+@Entity
+@Table(name = &quot;bl_t_noticecontext&quot;)
+@MyTable(tableName = &quot;bl_t_noticecontext&quot;,pkName=&quot;bl_st_id&quot;,anotherName=&quot;bl&quot;)
+* @param isAutoId true=是/false=否
+*/
+public Bl_t_noticecontext(boolean isAutoId) {
+if(isAutoId){
+this.bl_st_id =StringUtils.getUUID32();
+

@@ -1,0 +1,5 @@
+static void appendTabsLayout(LazyHtml content, ProblemService problemService, Problem problem) {
+if (problem.getType().equals(ProblemType.PROGRAMMING)) {
+ProgrammingProblemControllerUtils.appendTabsLayout(content, problemService, problem);
+} else if (problem.getType().equals(ProblemType.BUNDLE)) {
+

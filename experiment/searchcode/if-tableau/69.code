@@ -1,0 +1,8 @@
+public MoveCardTableauToFoundationController(Stack<Card> tableau  ,Foundation foundation) {
+this.foundation = foundation;
+this.tableau = tableau;
+if(tableau.size()>0){
+Card card = tableau.lastElement();
+if(foundation.isValidCard(card)){
+foundation.addCard(card);
+

@@ -1,0 +1,9 @@
+final double tolerance = circle.getTolerance();
+Vertex previousVertex = start;
+if(unwrappedEnd >= length - tolerance) {
+// the edge is entirely contained inside the circle
+previousVertex = addSubEdge(previousVertex, new Vertex(new S2Point(circle.getPointAt(edgeStart + unwrappedEnd))), unwrappedEnd, insideList, splitCircle);
+alreadyManagedLength = unwrappedEnd;
+}
+if(arcRelativeStart >= length - tolerance) {
+

@@ -1,0 +1,12 @@
+* @author Jaxon A Brown
+*/
+public abstract class Task {
+private boolean isCancelled;
+
+/**
+* Construct a new task, set cancelled to false.
+* @param cancelled the state of cancellation to set the task to
+*/
+public final synchronized void setCancelled(boolean cancelled) {
+this.isCancelled = cancelled;
+

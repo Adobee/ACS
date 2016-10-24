@@ -1,0 +1,11 @@
+Object value = newValue.getValue();
+if (value instanceof Object[]) {
+setFromArray((int[])value);
+} else {
+Integer subValue = (Integer)newValue.getSubValue(&quot;x&quot;);
+if (subValue != null) {
+setX(subValue);
+}
+
+subValue = (Integer)newValue.getSubValue(&quot;y&quot;);
+

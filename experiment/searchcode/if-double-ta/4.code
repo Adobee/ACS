@@ -1,0 +1,8 @@
+public static Logger log = Logger.getLogger(SAGETax.class);
+private String TA_Code;
+private String TA_Intitule;
+private Double TA_Taux;
+ResultSet rs1 = stmt1.executeQuery();
+if (rs1.next()) {
+setTA_Intitule(rs1.getString(&quot;TA_Intitule&quot;));
+

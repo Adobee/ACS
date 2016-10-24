@@ -1,0 +1,6 @@
+* Note this defaults to use a {@link NonValidatingHostnameVerifier} and {@link NonValidatingTrustManager} if none are
+* explicitly provided so that SSL certificates presented by remote hosts are never validated and are implicitly trusted.
+public class SslInitializer {
+
+private HostnameVerifier hostnameVerifier = new NonValidatingHostnameVerifier();
+

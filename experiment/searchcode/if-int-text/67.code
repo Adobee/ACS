@@ -1,0 +1,13 @@
+text = text.replace(&#39;Ñ&#39;, &#39;N&#39;);
+return text;
+}
+
+public static String daysCountToString(long days) {
+
+if (days <= 0)
+if (days > 1 &amp;&amp; days < 30)
+return String.format(&quot; %d dni temu&quot;, days);
+
+if (days >= 30 &amp;&amp; days < 365) {
+int months = (int) (days / 30);
+

@@ -1,0 +1,6 @@
+private String axisYName = &quot;Process number&quot;;
+double fixedAutoRange;
+private String name = null;;
+public void addOrUpdateData(String metric, long date, double value) {
+if(metric.equalsIgnoreCase(MetricNames.PROC_TOTAL)) seriesTotal.addOrUpdate(new Millisecond(new Date(date)), value);
+

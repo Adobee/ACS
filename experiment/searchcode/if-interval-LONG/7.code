@@ -1,0 +1,8 @@
+public abstract class DefaultRandomAlarm extends DefaultAlarm {
+private long randomInterval;
+
+public DefaultRandomAlarm(long interval, long randomInterval, boolean repeating) {
+Random random = new Random();
+if (randomInterval > 0) {
+generatedInterval = Math.abs(random.nextLong() % randomInterval);
+

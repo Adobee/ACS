@@ -1,0 +1,12 @@
+public float adjustYaw(float yaw, float roll) {
+if (inverted(roll)) {
+yaw = yaw * -1f;
+}
+return yaw;
+}
+
+boolean inverted(float roll) {
+boolean inverted = false;
+float modRoll = roll % 360;
+if (modRoll > 90f &amp;&amp; modRoll < 270f) {
+

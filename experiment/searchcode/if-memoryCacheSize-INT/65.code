@@ -1,0 +1,7 @@
+private String diskCachePath;
+/** 内存缓存大小：默认8M */
+private int memoryCacheSize = 1024 * 1024 * 8;
+public BitmapGlobalConfig setMemoryCacheSize(int memoryCacheSize) {
+if (memoryCacheSize >= MIN_MEMORY_CACHE_SIZE) {
+this.memoryCacheSize = memoryCacheSize;
+

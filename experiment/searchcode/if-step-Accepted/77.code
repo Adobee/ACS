@@ -1,0 +1,8 @@
+final double[] yTmp = new double[y0.length];
+org.apache.commons.math.ode.sampling.AbstractStepInterpolator interpolator;
+if ((requiresDenseOutput()) || (!(eventsHandlersManager.isEmpty()))) {
+yTmp[j] = (y[j]) + ((stepSize) * sum);
+}
+interpolator.storeTime(((stepStart) + (stepSize)));
+if (manager.evaluateStep(interpolator)) {
+

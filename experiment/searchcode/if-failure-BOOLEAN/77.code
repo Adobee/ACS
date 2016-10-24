@@ -1,0 +1,6 @@
+@Override
+public boolean areYouAlive() throws RemoteException {
+// Take a while before responding.
+if(FailureEventMonitor.getFailureEventMonitor().getCurrentFailureState() ==
+FailureEvent.FAILURE_EVENT){
+

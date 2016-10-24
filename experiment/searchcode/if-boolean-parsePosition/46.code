@@ -1,0 +1,9 @@
+import java.text.ParsePosition;
+
+import org.apache.commons.lang.StringUtils;
+
+public abstract class FormattedDataType implements ProcessDataType {
+Object result = formatter.parseObject(source, parsePosition);
+if (parsePosition.getIndex() == 0) {
+throw new ParseException(&quot;Error parsing String: \&quot;&quot;+source+&quot;\&quot;&quot;, parsePosition.getErrorIndex());
+

@@ -1,0 +1,16 @@
+public static Respuesta dp(int a, int b)
+{
+if(dp[a][b] != null)
+return dp[a][b];
+Respuesta tmp = new Respuesta();
+dp[a][b] = tmp;
+if(a == 0 || b == 0)
+{
+tmp.a = 0;
+tmp.b = 0;
+return tmp;
+}
+if(a == b)
+{
+tmp.a = 1;
+

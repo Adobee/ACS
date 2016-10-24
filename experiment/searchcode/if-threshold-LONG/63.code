@@ -1,0 +1,7 @@
+public boolean checkReached(ThresholdDefinition thresholdDefinition, ResultData resultData) {
+if (!(thresholdDefinition instanceof RangeThresholdDefinition)) {
+RangeThresholdDefinition rangeThresholdDefinition = (RangeThresholdDefinition) thresholdDefinition;
+if (resultData instanceof SimpleResultData) {
+try {
+long value = Long.valueOf(((SimpleResultData) resultData).getValue());
+

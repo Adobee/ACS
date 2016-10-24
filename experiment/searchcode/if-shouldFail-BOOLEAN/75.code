@@ -1,0 +1,10 @@
+private static void runTenuringFlagsConsistencyTest(String[] tenuringFlags,
+boolean shouldFail,
+ExpectedTenuringFlags expectedFlags) throws Exception {
+OutputAnalyzer output = new OutputAnalyzer(pb.start());
+
+if (shouldFail) {
+output.shouldHaveExitValue(1);
+} else {
+output.shouldHaveExitValue(0);
+

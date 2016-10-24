@@ -1,0 +1,11 @@
+package com.sapient.junit;
+
+public class Money {
+private int fAmount;
+private String fCurrency;
+
+public Money (int amount, String currency){
+if (amount >= 0){
+fAmount = amount;
+} else {
+

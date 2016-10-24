@@ -1,0 +1,7 @@
+private String ipAddress;
+private Enumeration<NetworkInterface> en;
+private Enumeration<InetAddress> enumIpAddr;
+while (enumIpAddr.hasMoreElements()) {
+inetAddress = enumIpAddr.nextElement();
+if (!inetAddress.isLinkLocalAddress()) {
+

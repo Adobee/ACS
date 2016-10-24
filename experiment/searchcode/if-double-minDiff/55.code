@@ -1,0 +1,7 @@
+public class Solution {
+public int closestValue(TreeNode root, double target) {
+if(root == null) {
+return 0;
+}
+if((root.left == null &amp;&amp; root.right == null) || (double)root.val == target) {
+

@@ -1,0 +1,14 @@
+public Boolean apply(T o) {
+if (o == null) {
+for (T object : this.iterable) {
+if (object == null) return true;
+}
+} else {
+for (T object : this.iterable) {
+if (o.equals(object)) return true;
+}
+}
+return false;
+}
+}
+

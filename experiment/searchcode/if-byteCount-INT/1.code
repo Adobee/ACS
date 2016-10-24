@@ -1,0 +1,9 @@
+public void update(int bytecount) {
+long time = System.currentTimeMillis();
+
+if ( _lasttime == -1 ) _lasttime = time;
+// only apply logic once we&#39;ve at least gone through 128 bytes or we&#39;re
+// done
+if ( _bytecount > 128 || bytecount == -1) {
+// +1  is easier than checking elapsed for 0 and then making it 1
+

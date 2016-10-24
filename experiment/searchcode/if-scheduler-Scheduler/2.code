@@ -1,0 +1,16 @@
+package com.cvte.job;
+
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+import org.quartz.impl.StdSchedulerFactory;
+public static Scheduler getScheduler() throws SchedulerException {
+if (scheduler == null) {
+scheduler = StdSchedulerFactory.getDefaultScheduler();
+scheduler.start();
+}
+return scheduler;
+}
+
+
+}
+

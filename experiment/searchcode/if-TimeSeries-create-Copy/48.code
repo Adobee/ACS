@@ -1,0 +1,5 @@
+final String parameterType = m_operation.getData().getParameterType();
+if( m_station.hasTimeseries( parameterType, quality, timestep ) )
+final IFile targetFile = createDataFile( quality, parameterType, timestep, stati );
+m_timeseries = createTimeseries( timestep, targetFile, daterange, parameterType, quality, description );
+

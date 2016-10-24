@@ -1,0 +1,11 @@
+String currentFieldName = null;
+XContentParser.Token token;
+boolean idsProvided = false;
+throw new QueryParsingException(parseContext.index(), &quot;[ids] filter does not support [&quot; + currentFieldName + &quot;]&quot;);
+}
+}
+}
+
+if (!idsProvided) {
+throw new QueryParsingException(parseContext.index(), &quot;[ids] filter requires providing a values element&quot;);
+

@@ -1,0 +1,9 @@
+public class Line extends Line2D.Double implements Comparable<Line>
+{
+
+protected Point p1, p2;
+
+public Line(Point p1, Point p2)
+long bits = java.lang.Double.doubleToLongBits(p1.hashCode() + p2.hashCode());
+bits ^= java.lang.Double.doubleToLongBits(p1.distance(p2)) * 31;
+

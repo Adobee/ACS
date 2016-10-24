@@ -1,0 +1,9 @@
+public void readTable(Table table) throws IOException {
+long bytesLeft = inputStream.length();
+while (bytesLeft > 0) {
+int valueLength = inputStream.readInt();
+
+bytesLeft -= 8;
+
+if (keyLength < 0 || valueLength < 0 || keyLength > bytesLeft || valueLength > bytesLeft) {
+

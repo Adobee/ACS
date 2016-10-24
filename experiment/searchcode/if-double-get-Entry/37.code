@@ -1,0 +1,10 @@
+public static double calculateWeightedAverage(Map<Integer, Integer> stats, Integer weight) {
+if (stats.size() == 0) {
+return 0;
+}
+
+double sum = 0;
+
+for (Entry<Integer, Integer> entry : stats.entrySet()) {
+sum += (entry.getKey() * entry.getValue());
+

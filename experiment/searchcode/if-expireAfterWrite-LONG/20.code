@@ -1,0 +1,10 @@
+private static final int DEFAULT_EXPIRE_AFTER_WRITE = 3600000;
+
+/**
+* Time to expire session after creation. Expressed in milliseconds.
+*/
+protected long expireAfterWrite = DEFAULT_EXPIRE_AFTER_WRITE;
+* @return Factory
+*/
+public AbstractCacheFactory<T, S> setExpireAfterWrite(long expireAfterWrite) {
+

@@ -1,0 +1,8 @@
+public class WordSplitterBolt extends BaseRichBolt {
+private final int minWordLength;
+
+private OutputCollector collector;
+
+public WordSplitterBolt(int minWordLength) {
+this.minWordLength = minWordLength;
+

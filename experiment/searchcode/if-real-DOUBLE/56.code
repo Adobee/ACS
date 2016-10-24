@@ -1,0 +1,11 @@
+public class Complex {
+double real,imag;
+
+public Complex(double a, double b){
+this.real = a;
+return new Complex(this.real - c.real, this.imag - c.imag);
+}
+
+public Complex multi(Complex c){
+double newReal = this.real * c.real - this.imag * c.imag;
+

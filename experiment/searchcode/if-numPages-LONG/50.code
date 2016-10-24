@@ -1,0 +1,16 @@
+.substring(path.lastIndexOf(&quot;/&quot;) + 1);
+
+// 总页数
+long numPages = count / range + (0 == count % range ? 0 : 1);
+
+if (numPages <= 1) {
+long currentPage = start / range + 1;
+
+long low = currentPage - 5;
+
+if (low <= 0) {
+low = 1;
+}
+
+long high = currentPage + 5;
+

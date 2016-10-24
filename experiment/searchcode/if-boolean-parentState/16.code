@@ -1,0 +1,9 @@
+public boolean getDepthMask() {
+Boolean b = depthMask;
+if (b == null &amp;&amp; parentState != null)
+return parentState.getDepthMask();
+public boolean getStencilTest() {
+Boolean b = stencilTest;
+if (b == null &amp;&amp; parentState != null)
+return parentState.getStencilTest();
+

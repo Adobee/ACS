@@ -1,0 +1,9 @@
+private boolean isFallbackPossible;
+private boolean isFallback;
+
+public ConnectionSpecSelector(List<ConnectionSpec> connectionSpecs) {
+// Any future attempt to connect using this strategy will be a fallback attempt.
+isFallback = true;
+
+if (!isFallbackPossible) {
+

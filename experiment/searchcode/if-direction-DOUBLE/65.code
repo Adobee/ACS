@@ -1,0 +1,7 @@
+public static final Point pointMakeRotation(Point point, Point direction, double angle) {
+if (angle == 0) {
+return point;
+Matrix result = matrixMakeFromArray(1, 4, temp);
+double temp1 = 0;
+if ((temp1 = direction.z * direction.z + direction.y * direction.y) != 0) {
+

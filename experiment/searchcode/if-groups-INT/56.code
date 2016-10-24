@@ -1,0 +1,12 @@
+public void setGroups(List<DataGroup> groups) {
+this.groups = groups;
+}
+
+public void addGroup(DataGroup group) {
+if(groups.isEmpty() || groups.get(groups.size()-1).getEndDate().before(group.getStartDate())){
+groups.add(group);
+return;
+}
+else{
+for(int i=groups.size()-2;i>=0;i--){
+

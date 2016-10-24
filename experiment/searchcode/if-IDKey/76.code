@@ -1,0 +1,6 @@
+public void migrate(DynamicRealm dynamicRealm, long oldVersion, long newVersion) {
+
+/*  if( l == VERSION - 1 ) {
+Table estudenteTable = dynamicRealm.getTable(Servicos.class);
+long idKey = estudenteTable.getColumnIndex(&quot;id&quot;);
+

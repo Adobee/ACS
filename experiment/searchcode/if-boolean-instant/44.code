@@ -1,0 +1,10 @@
+private InstantMessageService instantMessageService;
+
+@RequestMapping(&quot;/instant/send&quot;)
+@ResponseBody
+public boolean send(HttpServletRequest req, @RequestParam(value = &quot;instant[]&quot;) String[] instant) {
+System.out.println(&quot;보냄 : &quot; + instantMessage.getMessage());
+User receivingUser = userService.findUser(instant[2]);
+
+if(receivingUser.getUserStatus().isUserStatus()){
+

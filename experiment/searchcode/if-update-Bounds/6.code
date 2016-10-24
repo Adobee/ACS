@@ -1,0 +1,11 @@
+Rectangle original = new Rectangle(bounds);
+
+bounds.x += bx;
+
+for (CRGameEntity ent : world.entities) {
+if (ent == this) continue;
+
+if (ent.bounds.overlaps(bounds) &amp;&amp; ent.canCollide(true, this)) {
+
+if (ent.bounds.overlaps(original)) {
+

@@ -1,0 +1,9 @@
+import com.example.data.Sort1;
+
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+Cursor cursor=db.rawQuery(&quot;select id, name from sort_1 where id=?&quot;,new String[]{String.valueOf(id)});
+if(cursor.moveToNext()){
+Sort1 sort1=new Sort1();
+

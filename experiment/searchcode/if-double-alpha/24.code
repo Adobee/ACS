@@ -1,0 +1,12 @@
+public final void setAlpha(double alpha)
+{
+if(alpha <= 0)
+throw new ArithmeticException(&quot;Shape parameter must be > 0, not &quot; + alpha);
+return log(alpha) + alpha*log(xm) - (alpha+1)*log(x);
+}
+
+@Override
+public double pdf(double x)
+{
+if(x < xm )
+

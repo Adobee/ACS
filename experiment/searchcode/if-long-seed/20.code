@@ -1,0 +1,15 @@
+package com.zapcloudstudios.utils;
+
+
+public class LocationRandom
+{
+private long seed;
+private long lastseed;
+
+public LocationRandom(long seed)
+{
+this.seed = seed;
+}
+
+private long posSeed(long x, long y)
+

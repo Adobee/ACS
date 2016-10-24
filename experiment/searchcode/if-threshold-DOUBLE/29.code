@@ -1,0 +1,9 @@
+private final double noActivityThreshold;
+private final double maxActivityThreshold;
+private final double blockingThershold;
+activeIntervalLength = maxActivityThreshold - noActivityThreshold;
+}
+
+public double activate(double x) {
+if (x <= noActivityThreshold) {
+

@@ -1,0 +1,11 @@
+public class Solution {
+int  maxDepth = 0;
+public int maxDepth(TreeNode root) {
+if (root == null)
+return maxDepth;
+
+}
+public void findDepth(TreeNode root, int depth)
+{
+if (root == null)
+

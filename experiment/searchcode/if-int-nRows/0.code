@@ -1,0 +1,8 @@
+public class ZigZagConversion {
+public String convert(String s, int nRows) {
+String result = &quot;&quot;;
+int n = s.length();
+if (nRows == 1)
+return s;
+for (int i = 0; (nRows - 1) * 2 * i < n; i++) {
+

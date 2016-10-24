@@ -1,0 +1,8 @@
+public static String filterString(String str, boolean allowLineBreaks) {
+str = str.replace(&#39;\u0001&#39;, &#39; &#39;);
+str = str.replace(&#39;\u0002&#39;, &#39; &#39;);
+str = str.replace(&#39;\t&#39;, &#39; &#39;);
+if(!allowLineBreaks) {
+str = str.replace(&#39;\n&#39;, &#39; &#39;);
+str = str.replace(&#39;\r&#39;, &#39; &#39;);
+

@@ -1,0 +1,7 @@
+public <T> ReportedConfigurations add(ReportedConfigurationType type, T actual, T expected, boolean inSync) {
+String actualValue = Objects.toString(actual, null);
+* all network configuration is in sync with host.
+*/
+public boolean isNetworkInSync() {
+for (ReportedConfiguration reportedConfig : reportedConfigurationList) {
+

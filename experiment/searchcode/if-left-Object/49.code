@@ -1,0 +1,14 @@
+package edu.udel.cis.vsl.civl.util.IF;
+
+public class Pair<S, T> {
+
+public S left;
+
+public T right;
+return left.hashCode() + right.hashCode();
+}
+
+public boolean equals(Object object) {
+if (object instanceof Pair<?, ?>) {
+return left.equals(((Pair<?, ?>) object).left)
+

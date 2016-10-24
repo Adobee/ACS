@@ -1,0 +1,11 @@
+public SendMessageIntegerAction(World world,Integer message, Action nextAction) {
+super(world, nextAction);
+this.message = message;
+running = true;
+toDelete = true;
+if(nextAction!=null)
+new AddActionToRoom(world, nextAction).run();
+}
+
+}
+

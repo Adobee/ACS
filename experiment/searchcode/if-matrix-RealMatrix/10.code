@@ -1,0 +1,11 @@
+import org.apache.commons.math.linear.RealMatrix;
+
+/**
+* General quadratic programming:
+* <p>
+*      min 2 \ x&#39; * Q * x + c&#39; * x </br>
+PhaseIResult phaseIResult = GeneralQP.phaseI(A, b, B, d);
+if (phaseIResult.feasible) {
+fprintf(&quot;Phase II:\n\n&quot;);
+RealMatrix x0 = phaseIResult.optimizer;
+

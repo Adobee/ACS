@@ -1,0 +1,12 @@
+readInt(), readInt(), readDouble(), readDouble(), readPlayers(), readHockeyists(), readPuck()
+);
+}
+
+private Player[] readPlayers() throws IOException {
+int playerCount = readInt();
+if (playerCount < 0) {
+Player[] players = new Player[playerCount];
+
+for (int playerIndex = 0; playerIndex < playerCount; ++playerIndex) {
+if (readBoolean()) {
+

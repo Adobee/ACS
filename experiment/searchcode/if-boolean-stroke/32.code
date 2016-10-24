@@ -1,0 +1,12 @@
+for (Stroke stroke : frameList) {
+if (stroke.equals(recordedStroke)) {
+return stroke;
+}
+}
+return null;
+* @param aStroke the a stroke
+* @return true, if successful
+*/
+public boolean containsStroke(Stroke aStroke) {
+ArrayList<Stroke> frameList = getListForFrame(aStroke.getStartFrame());
+

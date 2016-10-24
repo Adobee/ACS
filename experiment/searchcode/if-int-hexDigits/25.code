@@ -1,0 +1,11 @@
+package com.tan.util;
+
+public class Password {
+private final static String hexDigits[] = {
+System.out.println(toHexString((byte) 19));
+}
+
+public static String toHexString(byte b) {
+int i = (int) b;
+if ( i < 0) i = 256 + i;
+

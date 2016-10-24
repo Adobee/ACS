@@ -1,0 +1,10 @@
+public BlockDevice(String deviceClass, int bus, int slot, int function, String path, boolean sync, boolean noCache, boolean readOnly) {
+super(bus, slot, function);
+_deviceType = parseValue(deviceClass);
+configString += &quot;,direct&quot;;
+}
+if(_nocache == true) {
+configString += &quot;,nocache&quot;;
+}
+if(_readonly == true) {
+

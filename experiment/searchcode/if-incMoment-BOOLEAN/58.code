@@ -1,0 +1,18 @@
+* Statistics based on (constructed from) external moments cannot be incremented or cleared.
+* </p>
+*/
+protected boolean incMoment;
+
+/**
+* Construct a Kurtosis
+*/
+public Kurtosis() {
+* Note that when {@link #Kurtosis(FourthMoment)} is used to create a Variance, this method does nothing. In that case, the FourthMoment should be incremented directly.
+* </p>
+*/
+@Override
+public void increment(final double d) {
+
+if(incMoment) {
+moment.increment(d);
+

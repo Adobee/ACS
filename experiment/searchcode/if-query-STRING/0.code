@@ -1,0 +1,10 @@
+public class SqlQueryGenerator implements QueryGenerator {
+
+@Override
+public String makeQuery(Predicate predicate, Query query) {
+String queryString = Predicate.empty == predicate ? &quot;&quot; : predicate.name();
+
+if (query instanceof QueryUnit) {
+QueryUnit unit = (QueryUnit) query;
+queryString += &quot; &quot; + unit.key() + &quot; &quot; + unit.operand().getSymbol() + &quot; &quot; +unit.value();
+

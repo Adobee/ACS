@@ -1,0 +1,13 @@
+return new MFA(&quot;math&quot;, &quot;atan2&quot;, 2);
+}
+
+@Specialization
+public double atan2(long a, long b) {
+return Math.atan2(a, b);
+}
+
+@Specialization
+@TruffleBoundary
+public double atan2(BigInteger a, long b) {
+return Math.atan2(a.doubleValue(), b);
+

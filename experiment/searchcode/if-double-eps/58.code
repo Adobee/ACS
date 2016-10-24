@@ -1,0 +1,8 @@
+public Dichotomy(Function<Double, Double> function, double left, double right, double eps) {
+super(function, left, right, eps);
+delta = eps / 3;
+double r = right;
+while (r - l > eps) {
+double m = (r + l) / 2;
+double fl = calculateFunction(m - delta);
+

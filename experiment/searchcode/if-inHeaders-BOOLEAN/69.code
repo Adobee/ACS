@@ -1,0 +1,7 @@
+private Boolean outFaultFlag = Boolean.FALSE;
+private Map<String, Object> inHeaders;
+private Map<String, Object> outHeaders;
+exchange.setExchangeId(payload.exchangeId);
+exchange.getIn().setBody(payload.inBody);
+if (payload.inHeaders != null) {
+

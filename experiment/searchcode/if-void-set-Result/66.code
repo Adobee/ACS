@@ -1,0 +1,7 @@
+private DeferredResultHandler resultHandler;
+
+public void setResult(Object result) {
+synchronized (this) {
+if (this.result != null) {
+throw new RuntimeException(&quot;Can&#39;t set result twice for DeferredResult &quot;);
+

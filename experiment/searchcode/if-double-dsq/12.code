@@ -1,0 +1,6 @@
+public void visit(Coord at, EnumFacing side, @Nonnull FlatFace face) {
+if (!face.canInteract(at, side, player)) return;
+subBestDSq = Double.POSITIVE_INFINITY;
+face.listSelectionBounds(at, side, player, this);
+if (subBestDSq < bestDistSq) {
+

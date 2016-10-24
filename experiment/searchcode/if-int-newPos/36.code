@@ -1,0 +1,11 @@
+Point newPos;
+switch(next){
+case UP:
+newPos = new Point(pos.x, pos.y - 1);
+if (!board.onBoard(newPos)) {
+newPos = new Point(pos.x - 1, pos.y);
+if (!board.onBoard(newPos)) {
+newPos = pos;
+}
+break;
+

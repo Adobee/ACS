@@ -1,0 +1,15 @@
+private static ActivityManagerUtil activityManager = null;
+
+private ActivityManagerUtil() {
+}
+
+public static ActivityManagerUtil getInstance() {
+
+if (activityManager == null) {
+return activityManager;
+}
+
+// 将activity移出栈
+public void popActivity(Activity activity) {
+if (activity != null) {
+

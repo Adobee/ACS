@@ -1,0 +1,13 @@
+else return (getRecFibAt(n-1) + getRecFibAt(n-2));
+}
+
+
+public static long getIterFibAt(int n){
+long prevTwiceRemoved = 0l;
+long prev = 1l;
+
+if (n==0) return prevTwiceRemoved;
+if (n==1) return prev;
+
+long fib = 0l;
+

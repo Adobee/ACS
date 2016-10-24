@@ -1,0 +1,9 @@
+//msgObject.put(&quot;sender&quot;, msg.getIssueId());
+msgObject.put(&quot;sender&quot;, msg.getIssueName());
+msgObject.put(&quot;receiver&quot;, msg.getReceiver());
+if (msg.isAck()) {
+// msgObject.put(&quot;ack&quot;, 0);
+// }
+if (msg.getResendCount() != 0) {
+msgObject.put(&quot;resendCount&quot;, msg.getResendCount());
+

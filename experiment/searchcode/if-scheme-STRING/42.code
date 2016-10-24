@@ -1,0 +1,9 @@
+@Deprecated
+@ThreadSafe
+public final class SchemeRegistry
+{
+private final ConcurrentHashMap<String, Scheme> registeredSchemes = new ConcurrentHashMap();
+Scheme localScheme = get(paramString);
+if (localScheme == null) {
+throw new IllegalStateException(&quot;Scheme &#39;&quot; + paramString + &quot;&#39; not registered.&quot;);
+

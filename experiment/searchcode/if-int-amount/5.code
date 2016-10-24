@@ -1,0 +1,14 @@
+public class Account {
+
+private final int id;
+private int currentAmount;
+
+public Account() {
+id = -1;
+public boolean checkForEnoughMoney(int amount) {
+return currentAmount > amount;
+}
+
+public void withdraw(int amount) {
+if (currentAmount > amount) {
+

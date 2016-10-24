@@ -1,0 +1,11 @@
+package com.timekeep.data;
+
+import java.io.Serializable;
+
+public class StrictDate implements Serializable, Comparable<StrictDate> {
+public int compareTo(StrictDate strictDate) {
+int yearDifference = year - strictDate.year;
+
+if (yearDifference != 0) {
+return yearDifference;
+

@@ -1,0 +1,9 @@
+public String modify(String crit) {
+String c = crit.trim();
+if (c.startsWith(getFieldname()+&quot;=&quot;) &amp;&amp; !c.endsWith(&quot;*&quot;) &amp;&amp; c.length()>getFieldname().length()+2) return c + &quot;*&quot;;
+//+++todo add star to specified fieldname
+}
+
+public String getFieldname() { return fieldname; }
+public void setFieldname(String s) { fieldname=s; }
+

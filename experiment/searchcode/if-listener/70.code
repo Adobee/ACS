@@ -1,0 +1,9 @@
+@Override
+public final void addListener(IPropertyMapListener listener) {
+if (listeners == null) {
+listeners = new PropertyListenerList();
+attachListener();
+}
+listeners.add(listener);
+}
+

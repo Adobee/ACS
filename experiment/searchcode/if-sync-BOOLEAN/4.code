@@ -1,0 +1,15 @@
+* when websocket connected, read from sync_rec table
+* if(sync_state=succ)
+*     last_succ_sync_time = sync_rec.sync_time
+public long sync_time_stamp;
+
+/**
+* 是否同步失敗
+*/
+public boolean is_sync_success;
+
+/**
+* 還有更多同步內容
+*/
+public boolean has_more;
+

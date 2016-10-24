@@ -1,0 +1,15 @@
+private String value;
+private boolean negated;
+
+public Proposition() {
+super();
+this.attribute = 0;
+this.value = &quot;&quot;;
+//are the exact same
+public boolean isEqual(Proposition p){
+if(negated != p.isNegated()){
+return false;
+}
+
+if(attribute == p.getAttribute() &amp;&amp; value.matches(p.getValue())){
+

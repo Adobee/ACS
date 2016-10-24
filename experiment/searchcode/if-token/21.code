@@ -1,0 +1,9 @@
+public Token closeToken(Token token) throws Exception {
+if(ParamConstants.TOKEN_STATUS_VALID.equals(token.getStatus())){
+return token;
+}
+
+@Override
+public void deleteToken(Token token) throws Exception {
+if(token != null &amp;&amp; token.getTokenId() != null)
+

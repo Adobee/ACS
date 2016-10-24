@@ -1,0 +1,13 @@
+int tmpMin=strExpression.length();
+for (int count=1;count<=ExpPos.length;count++)
+{
+if (tmpMin>ExpPos[count-1] &amp;&amp; ExpPos[count-1]!=-1)
+return tmpMin;
+}
+
+private static int GetPrivorPos(String strExpression)
+{
+int[] ExpPos=new int[6];
+
+// 负号,IF?
+

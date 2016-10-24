@@ -1,0 +1,7 @@
+public abstract class RequestBody {
+public abstract MediaType contentType();
+
+public long contentLength() { return -1; }
+public static RequestBody create(MediaType contentType, String content) {
+Charset charset = Util.UTF_8;
+

@@ -1,0 +1,12 @@
+package com.jtapi.call.demo;
+
+class StopSignal {
+boolean stopping = false;
+boolean stopped = false;
+synchronized boolean isStopping () {
+return stopping;
+}
+synchronized void stop () {
+if ( !stopped ) {
+stopping = true;
+

@@ -1,0 +1,11 @@
+while(a.size() != 0 &amp;&amp; b.size() != 0) {
+if(a.peek().compareTo(b.peek()) <= 0) {
+newQ.push(a.pop());
+} else {
+newQ.push(b.pop());
+}
+}
+if(a.peek() != null) {
+newQ.concatenate(a);
+} else if(b.peek() != null) {
+

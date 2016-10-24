@@ -1,0 +1,7 @@
+private volatile static LoaderManager sLoaderManager;
+
+public static LoaderManager getInstance() {
+if(sLoaderManager == null) {
+synchronized (LoaderManager.class) {
+if(sLoaderManager == null) {
+

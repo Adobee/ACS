@@ -1,0 +1,8 @@
+RealMatrix Matrix_XT = Matrix_X.transpose();
+RealMatrix Matrix_XT_X = Matrix_XT.multiply(Matrix_X);
+if (Matrix_XT_X.isSingular()) {
+throw new IllegalArgumentException(
+RealMatrix Res_T = Res.transpose();
+RealMatrix SSE = Res_T.multiply(Res);
+double mse = SSE.getEntry(0, 0)/(Matrix_Y.getRowDimension() - Matrix_X.getColumnDimension());
+

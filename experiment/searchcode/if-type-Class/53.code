@@ -1,0 +1,9 @@
+static {
+loadType(boolean.class, Boolean.class);
+loadType(byte.class, Byte.class);
+loadType(char.class, Character.class);
+* @return the wrapper type
+*/
+public static Class<?> unboxType(Class<?> wrapperType) {
+if (!wrapperType.isPrimitive()) {
+

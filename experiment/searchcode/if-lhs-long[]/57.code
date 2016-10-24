@@ -1,0 +1,13 @@
+String rhsId = rhs.getId();
+
+if (TextUtils.isDigitsOnly(lhsId) &amp;&amp; TextUtils.isDigitsOnly(rhsId)) {
+// Numeric comparison
+return Long.valueOf(lhsId).compareTo(Long.valueOf(rhsId));
+} else {
+// String comparison
+return lhsId.compareTo(rhsId);
+}
+}
+
+}
+

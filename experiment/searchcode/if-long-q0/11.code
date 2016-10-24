@@ -1,0 +1,10 @@
+// Quaternion Algorithm
+public class QuaternionAlgorithm {
+
+// current time
+private static long currentTime;
+public static Quaternion calculateQuaternionSixAxis(double accel1, double accel2, double accel3, double gyro1, double gyro2, double gyro3){
+
+if(currentTime != 0){
+long sampleTime = System.currentTimeMillis() - currentTime;
+

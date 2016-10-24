@@ -1,0 +1,12 @@
+public class Circle implements Shape {
+private double x;
+private double y;
+private double width;
+
+public Circle() {
+double width;
+double height;
+
+if (finishX < startX) {
+width = startX - finishX;
+

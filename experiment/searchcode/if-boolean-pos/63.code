@@ -1,0 +1,9 @@
+
+public class WildcardMatch {
+public boolean isMatch(String s, String p) {
+int s_pos = 0, p_pos = 0, star_pos = -1;
+while (s_pos < s.length()) {
+boolean p_pos_ok = p_pos < p.length();
+
+if (p_pos_ok &amp;&amp; (s.charAt(s_pos) == p.charAt(p_pos) || p.charAt(p_pos) == &#39;?&#39;)) {
+

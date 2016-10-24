@@ -1,0 +1,9 @@
+private transient Map<TaskStream, WindowState> recoveryStates;
+private transient boolean stateInitialized;
+return stateInitialized;
+}
+
+@Override
+public void initState(T state) {
+if (stateInitialized) {
+

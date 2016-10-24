@@ -1,0 +1,9 @@
+package net.minecraft.server.v1_8_R3;
+
+import java.util.Random;
+
+public class NoiseGenerator3
+public double[] a(double[] ☃, double ☃, double ☃, int ☃, int ☃, double ☃, double ☃, double ☃, double ☃)
+{
+if ((☃ == null) || (☃.length < ☃ * ☃)) {
+

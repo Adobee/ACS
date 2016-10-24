@@ -1,0 +1,7 @@
+public abstract class AbstractODESolver extends Object implements ODESolver {
+protected double stepSize = 0.1; // parameter increment such as delta time
+protected int numEqn = 0; // number of equations
+public void initialize(final double _stepSize) {
+stepSize = _stepSize;
+double state[] = ode.getState();
+

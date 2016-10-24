@@ -1,0 +1,6 @@
+public HttpUrl mapParams(Map<String, Object> searchParams, HttpUrl url) throws IOException {
+if (searchParams == null) {
+HttpUrl.Builder urlBuilder = url.newBuilder();
+
+for (Map.Entry<String, Object> entry : searchParams.entrySet()) {
+

@@ -1,0 +1,6 @@
+* Checks the exception chain to determine if it wants to handle it.
+* In most cases this class is overkill and SimpleExceptionHandlerDelegate with a purger will suffice.
+while (check &amp;&amp; it.hasNext()) {
+ChainPart chainPart = it.next();
+e = findChainPartThrowable(chainPart, e);
+

@@ -1,0 +1,10 @@
+public class SudokuPanel extends JPanel
+{
+private int dimension;
+private JTextField [][]matrix;
+
+public SudokuPanel(int dimension)
+{
+this.dimension = dimension;
+if (dimension != 9)
+

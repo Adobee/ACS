@@ -1,0 +1,10 @@
+private static boolean endsMatches(String xStr){
+int strLen = xStr.length();
+
+if (strLen<=1) return true;
+int strLen = str.length();
+String a = &quot;&quot;;
+String b = &quot;&quot;;
+int mid = strLen/2;
+if (strLen==1) return str;
+

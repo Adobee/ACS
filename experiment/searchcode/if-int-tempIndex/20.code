@@ -1,0 +1,11 @@
+int i=0,j=array.length-1,tempindex=i+1,tempcontent=-1;
+
+while( i<j ){
+if(array[i]==0 &amp;&amp; array[j]!=array[i]){
+//从i+1位置向后获取一个第一个不是0的值
+tempindex=i+1;
+while(tempindex<j &amp;&amp; array[tempindex]==array[i]){
+tempindex++;
+}
+if(array[tempindex]!=array[i]){
+

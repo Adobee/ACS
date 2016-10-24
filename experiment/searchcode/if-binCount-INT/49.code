@@ -1,0 +1,13 @@
+int hour = SegmentStatistics.getHourFromBin(bin);
+
+if(hours != null &amp;&amp; !hours.contains(hour))
+continue;
+
+long binCount = cursor.value;
+
+if(normalize)
+hourSpeedMap.putOrAdd(bin, (double)binCount, (double)binCount);
+
+
+int speedBin = SegmentStatistics.getSpeedBinFromBin(bin);
+

@@ -1,0 +1,11 @@
+return measurement.isGreater(other.measurement) ? 1 : -1;
+}
+
+public Length add(Length other){
+SIUnit sum  = this.measurement.add(other.measurement);
+return new Length(sum, Unit.METER);
+}
+
+@Override
+public boolean equals(Object o) {
+

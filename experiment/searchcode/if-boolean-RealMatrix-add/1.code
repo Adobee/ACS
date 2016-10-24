@@ -1,0 +1,11 @@
+RealMatrix d = null;
+double rou = -2;
+double HasEquality = 1;
+
+boolean generate = false;
+if (generate) {
+PhaseIResult phaseIResult = GeneralQP.phaseI(A, b, B, d);
+if (phaseIResult.feasible) {
+fprintf(&quot;Phase II:\n\n&quot;);
+RealMatrix x0 = phaseIResult.optimizer;
+

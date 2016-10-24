@@ -1,0 +1,16 @@
+package problem1;
+
+public class Tool {
+public static int gcd(int m, int n)
+{
+int tmp;
+if( m < n ){
+tmp = m;
+m = n;
+n = tmp;
+}
+tmp = m;
+while( m%n != 0 )
+{
+//System.out.println(&quot;m = &quot; + m + &quot; , n = &quot; + n);
+

@@ -1,0 +1,8 @@
+Tour[] tours;
+
+// Construct a population
+public Population(int populationSize, boolean initialise) {
+tours = new Tour[populationSize];
+// If we need to initialise a population of tours do so
+if (initialise) {
+

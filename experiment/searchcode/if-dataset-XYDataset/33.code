@@ -1,0 +1,12 @@
+public class CustomXYBlockRenderer extends XYBlockRenderer {
+public Range findDomainBounds(XYDataset dataset) {
+if (dataset == null) {
+return null;
+return r == null ? null : new Range(r.getLowerBound(), r.getUpperBound());
+}
+}
+
+public Range findRangeBounds(XYDataset dataset) {
+if (dataset != null) {
+Range r = DatasetUtilities.findRangeBounds(dataset, false);
+

@@ -1,0 +1,12 @@
+public QueueGrid(Space space, int xSize, int ySize) {
+super(space, ySize, xSize);
+}
+
+
+public void addLineWithShift(double[] line) {
+if (line != null) {
+if (currentLine < xSize) {
+data[currentLine++] = line;
+} else {
+for (int i = 1; i < xSize; i++)
+

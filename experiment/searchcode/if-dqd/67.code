@@ -1,0 +1,11 @@
+double projnorm = gradW.booleanConcat(W).concatV(gradH.booleanConcat(H)).norm();
+
+if (projnorm < tol * initGrad)
+break;
+
+MultResult w = nlssubprop(Vt, H.transpose(), W.transpose(), tolW, 1000);
+double dQd = WtW.mult(d).dotMult(d).sumValues();
+boolean suff_decr = (0.99 * gradd + 0.5 * dQd) < 0;
+if (inner_iter == 0) {
+decr_alpha = !suff_decr;
+

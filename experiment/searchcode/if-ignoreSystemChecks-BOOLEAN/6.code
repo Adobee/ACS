@@ -1,0 +1,5 @@
+public void testLogMessageInProductionMode() {
+final ESLogger logger = mock(ESLogger.class);
+final boolean ignoreSystemChecks = randomBoolean();
+BootstrapCheck.check(true, ignoreSystemChecks, Collections.emptyList(), logger);
+

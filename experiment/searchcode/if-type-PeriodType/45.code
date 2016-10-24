@@ -1,0 +1,11 @@
+LAST_MONTH;
+
+public static PeriodType getEnum(String value) {
+if (value == null)
+throw new IllegalArgumentException();
+for (PeriodType t:values())
+if (t.name().equalsIgnoreCase(value)) return t;
+throw new IllegalArgumentException();
+}
+}
+

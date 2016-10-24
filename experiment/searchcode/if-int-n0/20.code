@@ -1,0 +1,8 @@
+* the only way to get k adjacent 1 bits in a string ending in 0
+* is if left n-1 bits has k adjacent 1 bits
+* so N0(n,k) = N(n-1,k) = N0(n-1,k) + N1(n-1,k)
+* b) the bit before last is 1 and the first n-1 bits have AdjBC=k-1 i.e
+* N1(n,k) = N0(n-1,k) + N1(n-1,k-1)
+*
+* NOTE: N(n,k) = N0(n,k) = N1(n,k) = 0 if k < 0 or k >= n
+

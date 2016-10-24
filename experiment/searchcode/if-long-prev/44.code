@@ -1,0 +1,5 @@
+private static long doit(int ind, int prev, int nprev, int n) {
+if (ind == n) return memo[ind][prev][nprev] = 1;
+if (memo[ind][prev][nprev] != 0L) return memo[ind][prev][nprev];
+long re = 0;
+

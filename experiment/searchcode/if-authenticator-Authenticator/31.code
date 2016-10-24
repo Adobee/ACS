@@ -1,0 +1,10 @@
+
+package com.smc.app.mobile.authenticator;
+
+import static android.accounts.AccountManager.ACTION_AUTHENTICATOR_INTENT;
+return intent.getAction().equals(ACTION_AUTHENTICATOR_INTENT) ? getAuthenticator().getIBinder() : null;
+}
+
+private BootstrapAccountAuthenticator getAuthenticator() {
+if (AUTHENTICATOR == null)
+

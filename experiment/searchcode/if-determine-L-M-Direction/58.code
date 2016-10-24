@@ -1,0 +1,10 @@
+* direction should be NORTH_WEST or NORTH_EAST, respectively.
+*/
+private void evaluateMovingDirection() {
+
+if (heldDirections.isEmpty()) {
+for (int i = heldDirections.size() - 1; i >= 0; i--) { // skips top of stack
+Direction candidate = heldDirections.get(i);
+
+if (movingIn.getRightNeighbor().getRightNeighbor() == candidate) {
+

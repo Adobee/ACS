@@ -1,0 +1,13 @@
+public Probe get(int id) {
+return repository.get(id);
+}
+
+@Override
+public List<Probe> list() {
+return new ArrayList<>(repository.values());
+}
+
+@Override
+public Probe last() {
+if (repository.isEmpty())
+

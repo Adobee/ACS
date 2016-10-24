@@ -1,0 +1,12 @@
+if ( lhs == null )
+throw new InterpreterError( &quot;Error, null LHS&quot; );
+
+
+
+
+Object lhsValue = null;
+if ( operator != ASSIGN )
+throw new UtilEvalError(
+&quot;Illegal use of undefined object or &#39;void&#39; literal&quot; );
+else if ( lhs == Primitive.NULL || rhs == Primitive.NULL )
+

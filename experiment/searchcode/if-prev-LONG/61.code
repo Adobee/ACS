@@ -1,0 +1,10 @@
+int n = s.nextInt();
+long ans=1;
+if (n>1){
+ans=0;
+int prev=s.nextInt();
+int x=s.nextInt();
+int i=2;
+long prev_count=0;
+if(x==prev)ans++;
+

@@ -1,0 +1,12 @@
+int r = l2[i] >> 1;
+int lf = i >> 1 + r;
+int ri = i >> 1 + r;
+if ((i &amp; 1) == 1)
+lf++;
+for (;;) {
+int s = i + 1;
+if (f > s)
+s = f;
+for (int j = s; j <= ri; j++) {
+int copy = (i<<2) - s;
+

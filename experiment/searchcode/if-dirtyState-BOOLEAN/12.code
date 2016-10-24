@@ -1,0 +1,15 @@
+public abstract class DISaveableViewPart<C> extends DIViewPart<C> implements ISaveablePart2, IDirtyProviderService {
+private boolean dirtyState;
+
+public DISaveableViewPart(Class<C> clazz) {
+super(clazz);
+}
+
+public void doSave(IProgressMonitor monitor) {
+return false;
+}
+
+public void setDirtyState(boolean dirtyState) {
+if( dirtyState != this.dirtyState ) {
+this.dirtyState = dirtyState;
+

@@ -1,0 +1,12 @@
+protected void createBody(InputStream in) throws IOException {
+log.debug(&quot;createBody&quot;);
+if (isHTTP10()) {
+body = new Body(in, header.getContentLength());
+return getStartLine() + header.toString() + Constants.CRLF + body.toString();
+}
+
+public boolean isKeepAlive() {
+if (isHTTP10())
+return false;
+if (header.getConnection() == null)
+

@@ -1,0 +1,8 @@
+protected void decode(ChannelHandlerContext ctx, ByteBuf msg,
+List<Object> out) throws Exception {
+// int is 32bit, 4 bytes
+if (msg.isReadable() &amp;&amp; msg.readableBytes() > 4) {
+msg.markReaderIndex();
+int msgSize = msg.readInt();
+int totalSize = msg.readableBytes();
+

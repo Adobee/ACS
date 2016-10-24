@@ -1,0 +1,8 @@
+buf.append(&quot;%&quot;);
+buf.append(hexDigits[e].charAt(random.nextInt(16)));
+buf.append(hexDigits[e].charAt(j / 16));
+String c2 = var.substring(0, 1);
+int e = hexDigits[3].lastIndexOf(c2);
+e = e - 1;
+String c1 = String.valueOf(hexDigits[3].charAt(e));
+

@@ -1,0 +1,10 @@
+public class TpidOptions extends CliOptions {
+
+public String NPT_FLG = &quot;n&quot;;
+public String NPT_OPT = &quot;npt&quot;;
+super.initOptions(cmd, pc);
+
+// num items per invokation
+int numItemsPerInvokation;
+if (!(cmd.hasOption(NPT_OPT) &amp;&amp; cmd.getOptionValue(NPT_OPT) != null)) {
+

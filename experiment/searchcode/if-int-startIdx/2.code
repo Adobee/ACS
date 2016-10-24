@@ -1,0 +1,10 @@
+public class PermutationSequence {
+
+public String getPermutation(int n, int k) {
+if (n==0) return &quot;&quot;;
+if (k<=0) return &quot;&quot;;
+factorial[0]=1;
+int startIdx=1;
+for (startIdx=1; startIdx<n; startIdx++){
+factorial[startIdx]=startIdx*factorial[startIdx-1];
+

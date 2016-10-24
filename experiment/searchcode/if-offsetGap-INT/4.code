@@ -1,0 +1,10 @@
+* @param offsetGap gap between segmenters
+*/
+public static Builder builder(int offsetGap) {
+return new Builder(offsetGap);
+private final List<ConstituentSegmenter> segmenters = new ArrayList<ConstituentSegmenter>();
+private final int offsetGap;
+
+private Builder(int offsetGap) {
+this.offsetGap = offsetGap;
+

@@ -1,0 +1,7 @@
+public int TransferGrayTone(ROIClass roiClass,int originalGrayLevel, int binCount){
+
+int tempGreyTone;
+tempGreyTone=(originalGrayLevel-roiClass.getMinSignalList().get(1))/greyToneRange*binCount;
+
+int greyTone=(int)tempGreyTone==binCount?(binCount-1):(int)(tempGreyTone);
+

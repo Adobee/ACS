@@ -1,0 +1,10 @@
+private static boolean writeLogs = true;
+
+public static void setEnabled(boolean enabled) {
+writeLogs = enabled;
+public static void d(String logMessage) {
+if (writeLogs) Log.d(TAG, logMessage);
+}
+
+public static void e(String logMessage) {
+

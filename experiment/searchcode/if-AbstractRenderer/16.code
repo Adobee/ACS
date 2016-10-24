@@ -1,0 +1,7 @@
+import com.google.gwt.text.shared.AbstractRenderer;
+import com.anova.anovacloud.shared.dto.CustomerDto;
+
+public class CustomerRenderer extends AbstractRenderer<CustomerDto> {
+@Override
+public String render(CustomerDto customerDto) {
+

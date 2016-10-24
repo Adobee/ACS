@@ -1,0 +1,7 @@
+public class Solution {
+public int numSquares(int n) {
+int[] sum = new int[n + 1];
+// initialization
+for(int i = 1; i <= n; ++i) {
+sum[i] = i;
+

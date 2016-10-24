@@ -1,0 +1,13 @@
+EditInfo(String n, double val, double mn, double mx) {
+name = n;
+value = val;
+if (mn == 0 &amp;&amp; mx == 0 &amp;&amp; val > 0) {
+return this;
+}
+
+String name, text;
+double value, minval, maxval;
+TextField textf;
+Scrollbar bar;
+Choice choice;
+

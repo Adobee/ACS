@@ -1,0 +1,13 @@
+package cn.asmm.imagezoom.easing;
+
+public class Quart implements Easing {
+
+@Override
+public double easeOut( double t, double b, double c, double d ) {
+public double easeInOut( double t, double b, double c, double d ) {
+if ( ( t /= d / 2 ) < 1 ) return c / 2 * t * t * t * t + b;
+return -c / 2 * ( ( t -= 2 ) * t * t * t - 2 ) + b;
+}
+
+}
+

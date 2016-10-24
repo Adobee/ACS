@@ -1,0 +1,10 @@
+List<Category> categories = storeCategories.getCategories();
+return categories;
+}
+
+@Override
+public Category getCategory(int idCategory) {
+List<Category> categories = storeCategories.getCategories();
+for (Category category : categories) {
+if (category.getId() == idCategory) {
+

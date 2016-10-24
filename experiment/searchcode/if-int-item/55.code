@@ -1,0 +1,11 @@
+public void setMinItemDamage(int minItemDamage) {
+this.minItemDamage = minItemDamage;
+if (maxItemDamage < minItemDamage) {
+maxItemDamage = minItemDamage;
+}
+}
+
+public void setMaxItemDamage(int maxItemDamage) {
+this.maxItemDamage = maxItemDamage;
+if (minItemDamage > maxItemDamage) {
+

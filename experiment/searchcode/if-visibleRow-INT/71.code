@@ -1,0 +1,10 @@
+private static final long serialVersionUID = 1L;
+/** Last table/tree row asked to renderer. */
+protected int visibleRow;
+/**
+* Border to draw around the tree, if this is non-null, it will be painted.
+public void setRowHeight(int rowHeight) {
+if (rowHeight > 0) {
+super.setRowHeight(rowHeight);
+if (treeTable != null &amp;&amp; treeTable.getRowHeight() != rowHeight) {
+

@@ -1,0 +1,12 @@
+bits6 = bits24 &amp; 0x3f;
+out[outIndex++] = alphabet[bits6];
+}
+
+if (octetString.length - i == 2) {
+int bits24 = (octetString[i] &amp; 0xff) << 16;
+out[outIndex++] = alphabet[bits6];
+out[outIndex++] = &#39;=&#39;;
+} else
+if (octetString.length - i == 1) {
+int bits24 = (octetString[i] &amp; 0xff) << 16;
+

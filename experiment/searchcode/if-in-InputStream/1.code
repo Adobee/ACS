@@ -1,0 +1,9 @@
+private ObjectInputStream in;
+private InputStream inputStream;
+public DelayedObjectInputStream(InputStream inputStream)
+public Object readObject() throws IOException, ClassNotFoundException
+{
+if(null==in)
+{
+in=new ObjectInputStream(inputStream);
+

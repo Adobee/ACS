@@ -1,0 +1,9 @@
+// TODO Auto-generated method stub
+aStar.setMapname(mapname);
+String[] points=name.split(&quot;,&quot;);
+if(points.length<6){
+return null;
+}
+double[] point=new double[points.length];
+StringBuffer keyBuffer=new StringBuffer();
+

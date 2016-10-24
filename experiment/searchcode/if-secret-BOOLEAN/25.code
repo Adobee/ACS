@@ -1,0 +1,18 @@
+this.secretStore = secretStore;
+}
+
+@Override
+public boolean isValid(String issuer)
+{
+String clientId = secretStore.getClientId();
+String secret = secretStore.getSecret();
+
+if (null == secret)
+{
+throw new JwtIssuerLacksSharedSecretException(issuer);
+}
+
+return secret;
+}
+}
+

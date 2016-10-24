@@ -1,0 +1,7 @@
+public class SumDouble implements Testcase{
+
+/**
+* Return the sum of the two input numbers, but if they are equal return the double the sum
+* @pre none
+* @post sum returned (double if &#39;a&#39; and &#39;b&#39; are equal)
+

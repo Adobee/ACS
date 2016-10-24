@@ -1,0 +1,9 @@
+package invertedIndex;
+
+
+import org.apache.hadoop.io.LongWritable;
+import org.apache.hadoop.io.Text;
+import java.io.IOException;
+
+public class RetrievalMapper extends Mapper<LongWritable, Text, ScoreFileIdPair, QueryAnswer> {
+

@@ -1,0 +1,10 @@
+double a = result.a + rhs.a;
+if (a > 1.0)
+a = 1.0;
+double r = (result.r * (1.0 - rhs.a)) + (rhs.r * rhs.a);
+public static void add(Colour result, Colour rhs) {
+double a = result.a + rhs.a;
+if (a > 1.0)
+a = 1.0;
+double r = result.r + rhs.r;
+

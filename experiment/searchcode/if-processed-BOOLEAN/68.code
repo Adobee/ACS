@@ -1,0 +1,13 @@
+public class IncomingKeyExchangeMessage extends IncomingTextMessage {
+
+private boolean isStale;
+private boolean isProcessed;
+
+IncomingKeyExchangeMessage(IncomingTextMessage base, String newBody) {
+public boolean isProcessed() {
+return isProcessed;
+}
+
+public void setStale(boolean isStale) {
+this.isStale = isStale;
+

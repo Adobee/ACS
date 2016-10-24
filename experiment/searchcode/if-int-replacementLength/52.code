@@ -1,0 +1,12 @@
+extends CharEscaper
+{
+protected final int replacementLength;
+protected final char[][] replacements;
+int i = 0;
+for (;;)
+{
+String str = paramString;
+if (i < j)
+{
+int k = paramString.charAt(i);
+

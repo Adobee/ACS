@@ -1,0 +1,10 @@
+this.period = period;
+}
+@Override
+public boolean performFinish() {
+Period p = period.getPeriod();
+
+if (p.getType() == null ||
+!p.getType().equals(periodPage.getPeriodName()))
+getCommand().add(new EditPeriodType(period, periodPage.getPeriodName()));
+

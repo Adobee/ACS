@@ -1,0 +1,11 @@
+private String var;
+private Boolean negate;
+
+public Literal(String var, Boolean negate) {
+this.var = var;
+return new Literal(var,!negate);
+}
+
+public boolean isOpposite(Literal l) {
+return l.getVar().equals(var) &amp;&amp; l.isNegate()!=negate;
+

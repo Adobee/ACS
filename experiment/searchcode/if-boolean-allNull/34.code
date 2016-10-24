@@ -1,0 +1,19 @@
+public final class Nulls
+{
+
+private Nulls()
+{
+
+}
+
+public static boolean allNull(Object... objects)
+{
+if(requireNonNull(objects).length == 0)
+{
+return true;
+}
+
+for(Object object : objects)
+{
+if(object != null)
+

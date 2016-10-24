@@ -1,0 +1,12 @@
+public int getMissedUpdates(Date lastUpdated) {
+if (lastUpdated == null) {
+return 0;
+}
+long now = new Date().getTime();
+long secondsSinceLastUpdate = millisSinceLastUpdate(now, lastUpdated);
+private int millisSinceLastUpdate(long now, Date lastUpdated) {
+return (int)(now - lastUpdated.getTime());
+}
+
+private long millisSinceLastTick(long now, Date lastUpdated) {
+

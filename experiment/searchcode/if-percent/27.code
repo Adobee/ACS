@@ -1,0 +1,9 @@
+Percent percent = params.getParam(&quot;percent&quot;);
+double per = 0;
+if (StringUtils.isEmpty(percent.getProperty())) {
+params.setResultMessage(String.format(&quot;property is empty &quot;, percent));
+return;
+}
+List<Percent> init = (List<Percent>) percentRepo.findAll();
+if (init.size() == 0) {
+

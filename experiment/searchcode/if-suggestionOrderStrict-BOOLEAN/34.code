@@ -1,0 +1,5 @@
+private static void assertSuggestions(SuggestResponse suggestResponse, boolean suggestionOrderStrict, String name, String... suggestions) {
+String assertMsg = String.format(Locale.ROOT, &quot;Expected options %s length to be %s, but was %s&quot;, suggestionList, suggestions.length, options.size());
+assertThat(assertMsg, options.size(), is(suggestions.length));
+if (suggestionOrderStrict) {
+

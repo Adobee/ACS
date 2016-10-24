@@ -1,0 +1,13 @@
+public List<CompareResult> compare(List<DateObject> dates1,
+List<DateObject> dates2) {
+if (dates1 == null || dates2 == null) {
+return null;
+List<DateObject> prios = new ArrayList<DateObject>();
+for (DateObject l2 : dates2) {
+if (l2.isPrio()) {
+prios.add(l2);
+}
+}
+
+List<DateObject> comparedDateObjects = new ArrayList<DateObject>();
+

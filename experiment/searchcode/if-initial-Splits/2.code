@@ -1,0 +1,5 @@
+double initialEntropy = MathUtils.entropy(dataset);
+
+if (checkStopCriteriaForSplits(possibleSplits, initialDatasetLength, initialEntropy)) {
+SplitUtils.DatasetSplitInfo bestSplitInfo = SplitUtils.findBestSplit(possibleSplits, initialDatasetLength, initialEntropy);
+

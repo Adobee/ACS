@@ -1,0 +1,19 @@
+collV.y = posy;
+}
+
+public Rectangle collBul()
+{
+return bul.coll();
+}
+
+public void notifyBul(Boolean res)
+{
+if(alive)
+bul.notifyColl(res);
+}
+
+public void notifyCollision(Boolean res)
+{
+if(res)
+blocked = direction;
+

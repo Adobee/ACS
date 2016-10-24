@@ -1,0 +1,14 @@
+int[] fraction = new int[256];
+
+int sum = 0;
+int remain = number;
+
+int seqEnd = 0;
+remain -= i;
+}
+
+int compl = (remain / (fraction[seqEnd - 1] - 1));
+
+if (compl > 0) {
+for (int i = 0; i < seqEnd; i++) {
+

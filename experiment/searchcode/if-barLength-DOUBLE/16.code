@@ -1,0 +1,11 @@
+public void drawStatusBar(String type, int x, int y, int barLength, int barHeight, int currentNum, int maxNum)
+{
+GreenfootImage tempBarImage = new GreenfootImage(barLength, barHeight);
+
+if(type.equals(&quot;Health&quot;))
+tempBarImage.fill();
+
+GreenfootImage barImage = new GreenfootImage(barLength, barHeight);
+
+Double drawPos = (((double)currentNum / (double)maxNum) * barLength); //A percentage of the total length
+

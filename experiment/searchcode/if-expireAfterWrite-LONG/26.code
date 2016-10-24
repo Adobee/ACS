@@ -1,0 +1,7 @@
+long expireAfterWrite = config.getLong(&quot;expire-after-write&quot;);
+long refreshAfterWrite = config.getLong(&quot;refresh-after-write&quot;);
+if (expireAfterAccess != -1L) {
+builder.expireAfterAccess(expireAfterAccess, MILLISECONDS);
+}
+if (expireAfterWrite != -1L) {
+

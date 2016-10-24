@@ -1,0 +1,11 @@
+public static double cycleRange(double R){
+double highest=0.0;
+double lowest=0.0;
+double x=0.25;
+double fx=0.0;
+highest=fx;
+for(int i=0;i<1000;i++){
+fx=R*x*(1-x);
+if(fx>highest)highest=fx;
+if(fx<lowest)lowest=fx;
+

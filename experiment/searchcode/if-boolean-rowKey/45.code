@@ -1,0 +1,10 @@
+protected boolean esFilaModificableConModificarValorLista(RowKey rowKey) {
+boolean es = rowKey != null;
+if (es) {
+es = this.esFilaRecursoActivo(rowKey, FUNCION_MODIFICAR_VALOR_LISTA);
+boolean ok = rowKey != null;
+boolean es = ok;
+try {
+if (es) {
+if (this.getCachedRowSet().columnUpdated(COLUMNA_ID_LISTA_VALOR)) {
+

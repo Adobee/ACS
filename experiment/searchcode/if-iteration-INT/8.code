@@ -1,0 +1,9 @@
+public IntervalListener(int printInterval) {
+this.printInterval = printInterval;
+}
+
+@Override
+public void iterationStarted(int iteration) throws Exception {
+if(iteration % printInterval == 0) {
+iterationStartedAtInterval(iteration);
+

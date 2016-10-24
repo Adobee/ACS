@@ -1,0 +1,7 @@
+public static double regularizedUpperGamma(final double a, final double x) {
+if (x < 0.0 || a <= 0.0)
+return Double.NaN;
+
+if (x < a + 1.0)
+return 1.0 - regularizedLowerGammaByPowerSeries(a, x);
+

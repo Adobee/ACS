@@ -1,0 +1,15 @@
+private List<Receiver> receivers = new CopyOnWriteArrayList<Receiver>();
+
+/**
+* 通知上下文
+*/
+private Map<Object, Object> notifyContext = new ConcurrentHashMap<Object, Object>();
+public void addReceiver(Receiver receiver) {
+if (!receivers.contains(receiver)) {
+receivers.add(receiver);
+}
+}
+
+@Override
+public void removeReceiver(Receiver receiver) {
+

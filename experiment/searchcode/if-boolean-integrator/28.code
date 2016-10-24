@@ -1,0 +1,6 @@
+public String getLinkUrlPrefix(Adaptable adaptable, Set<String> runModes, Page currentPage, Page targetPage) {
+
+// if integrator template mode with placeholders is active return link url placeholder
+IntegratorHandler integratorHandler = AdaptTo.notNull(adaptable, IntegratorHandler.class);
+if (integratorHandler.isIntegratorTemplateMode()
+

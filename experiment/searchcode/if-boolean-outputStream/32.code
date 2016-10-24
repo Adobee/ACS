@@ -1,0 +1,12 @@
+public XOutputStream(){
+outputStream = new ByteArrayOutputStream();
+}
+
+@Override
+public void writeBoolean(boolean v) throws IOException {
+outputStream.write(v?-1:0);
+}
+
+@Override
+public void writeByte(int v) throws IOException {
+

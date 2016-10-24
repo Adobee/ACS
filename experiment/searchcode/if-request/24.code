@@ -1,0 +1,10 @@
+class PMRequestHandle implements RequestHandle {
+RequestHandle rh;
+public PMRequestHandle(RequestHandle rh)
+{
+this.rh=rh;
+}
+public void handleRequest(Request request)
+{
+if (request instanceof AddMoneyRequest) {
+

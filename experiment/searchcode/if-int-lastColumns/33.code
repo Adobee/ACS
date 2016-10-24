@@ -1,0 +1,6 @@
+final int iHeight = blockHeight(iBlock);
+for(int jBlock = 0; jBlock < blockColumns; ++jBlock, ++index) {
+if(blockData[index].length != iHeight * blockWidth(jBlock)) {
+final T[][] data = MathArrays.buildArray(getField(), getRowDimension(), getColumnDimension());
+final int lastColumns = columns - (blockColumns - 1) * BLOCK_SIZE;
+

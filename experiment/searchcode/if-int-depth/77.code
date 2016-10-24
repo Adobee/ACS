@@ -1,0 +1,13 @@
+public class DepthFilter extends URLTaskFilter
+{
+private static final int DEFAULT_DEPTH = 2;
+
+private int _depth;
+
+public DepthFilter()
+{
+_depth = DEFAULT_DEPTH;
+}
+
+public DepthFilter(int depth)
+

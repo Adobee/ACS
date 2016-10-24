@@ -1,0 +1,10 @@
+JMLNode hashNode = JMLUtils.createObjectNode(document, obj);
+PropertyMap pmap = (PropertyMap) obj;
+
+if (pmap != null) {
+Iterator iter = pmap.keySet().iterator();
+Object value = pmap.get(key);
+JMLNode propnode = null;
+if (JMLUtils.isPrimitive(value))
+propnode = JMLUtils.createPropertyNode(document, key.toString(), value.toString());
+

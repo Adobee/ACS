@@ -1,0 +1,11 @@
+package com.wellsfromwales.socket;
+
+import java.net.InetAddress;
+import java.net.UnknownHostException;
+public static void main(String[] args) throws UnknownHostException
+{
+if (args.length > 0)
+{
+String host = args[0];
+InetAddress[] addresses = InetAddress.getAllByName(host);
+

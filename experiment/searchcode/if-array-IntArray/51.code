@@ -1,0 +1,12 @@
+return 0;
+if (n == 2 || n == 3)
+return 1;
+
+int[] intArray = new int[n];
+intArray[0] = 0;
+intArray[1] = 1;
+intArray[2] = 1;
+
+for (int i = 3; i <= n - 1; i++) {
+intArray[i] = intArray[i-1] + intArray[i-2];
+

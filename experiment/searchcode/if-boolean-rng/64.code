@@ -1,0 +1,9 @@
+public ValidationResult canAddRngDevice(VDSGroup cluster, VmRngDevice rngDevice) {
+VmRngDevice.Source source = rngDevice.getSource();
+boolean supported = cluster != null &amp;&amp;
+isFeatureSupported(cluster.getCompatibilityVersion()) &amp;&amp;
+cluster.getRequiredRngSources().contains(source);
+
+if (!supported) {
+return new ValidationResult(EngineMessage.ACTION_NOT_SUPPORTED_FOR_CLUSTER_POOL_LEVEL);
+

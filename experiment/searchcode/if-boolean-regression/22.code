@@ -1,0 +1,8 @@
+public Map<FieldName, ?> evaluate(Map<FieldName, ?> arguments){
+RegressionModel regressionModel = getModel();
+if(!regressionModel.isScorable()){
+throw new InvalidResultException(regressionModel);
+List<RegressionTable> regressionTables = regressionModel.getRegressionTables();
+if(regressionTables.size() != 1){
+throw new InvalidFeatureException(regressionModel);
+

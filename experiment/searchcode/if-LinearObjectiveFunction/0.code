@@ -1,0 +1,8 @@
+package org.apache.commons.math.optimization.linear;
+
+
+public class LinearObjectiveFunction implements java.io.Serializable {
+return true;
+}
+if (other instanceof org.apache.commons.math.optimization.linear.LinearObjectiveFunction) {
+

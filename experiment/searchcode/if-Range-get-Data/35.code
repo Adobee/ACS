@@ -1,0 +1,9 @@
+public RangeAngleTable(String path)
+{
+try {
+mRangeData = CSVLoader.LoadCSVFile(FileSystems.getDefault().getPath(path));
+for(int i = 0; i < mRangeData.size(); ++i)
+{
+//there should only be two doubles in each row
+if(mRangeData.get(i).get(0) > range &amp;&amp; i > 0)
+

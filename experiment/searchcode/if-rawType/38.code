@@ -1,0 +1,14 @@
+* @since 3.1.0
+*/
+public abstract class TypeReference<T> {
+
+// 类型
+private Type rawType;
+
+protected TypeReference() throws TypeException {
++ &quot;Remove the extension or add a type parameter to it.&quot;);
+}
+rawType = ((ParameterizedType) superclass).getActualTypeArguments()[0];
+
+if (rawType instanceof ParameterizedType) {
+

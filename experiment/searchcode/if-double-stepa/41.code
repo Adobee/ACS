@@ -1,0 +1,24 @@
+a=Bottom.bindHeadA(MT_Bottom,n);
+
+return(a);
+}
+
+
+
+public double Step(double dt)
+{
+// If unbound: bind
+// If bound: try to step
+break;
+}
+
+switch(stepBottom)
+{
+case NOSTEP:
+
+break;
+
+case STEPA:
+
+if(Bottom.TimeSinceBoundA>=DelayTime)	// Keeps minimum time &amp; prevents stepping imediately after rebinding
+

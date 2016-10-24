@@ -1,0 +1,11 @@
+this.cipher = pool.borrow();
+}
+
+@Override
+public byte[] getBlob(int columnIndex) {
+if(!isEncrypted(columnIndex)) {
+return super.getBlob(columnIndex);
+public double getDouble(int columnIndex) {
+if(!isEncrypted(columnIndex)) {
+return super.getDouble(columnIndex);
+

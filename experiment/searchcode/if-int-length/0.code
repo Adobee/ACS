@@ -1,0 +1,17 @@
+int[] c = new int[a.length + b.length];
+
+int i = 0;
+int j = 0;
+
+while (i < a.length &amp;&amp; j < b.length) {
+
+if (a[i] < b[j]) {
+} else {
+c[i + j] = b[j];
+j++;
+}
+}
+
+if (i < a.length) {
+while (i < a.length) {
+

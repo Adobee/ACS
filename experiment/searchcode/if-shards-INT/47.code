@@ -1,0 +1,14 @@
+import lombok.ToString;
+
+
+/**
+* @author mindwind
+* @version 1.0, Jun 25, 2013
+*/
+@ToString(of = {&quot;shards&quot;})
+public abstract class AbstractMurmurHashSharded<R extends RedisCommand> {
+nodes = new TreeMap<Long, R>();
+for (int i = 0; i < shards.size(); i++) {
+R redis = shards.get(i);
+for (int n = 0; n < 160; n++) {
+

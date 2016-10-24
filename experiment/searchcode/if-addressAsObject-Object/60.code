@@ -1,0 +1,7 @@
+// only put the exception object in the stackframe if the catch block is expecting it.
+// (if the method hasn&#39;t allocated a stack slot for caught exceptions, then we can safely
+VM_Magic.setObjectAtOffset(VM_Magic.addressAsObject(fp), offset, exceptionObject);
+}
+
+// set address at which to resume executing frame
+

@@ -1,0 +1,9 @@
+// Just truncate the counts for now. These are from noise in the count estimates that we do not model.
+final double[] y2 = new double[n];
+for (int i = 0; i < n; i++)
+{
+if (y[i] < 0)
+stepLength[i] = (upper[i] - lower[i]) * 0.3333333;
+if (stepLength[i] <= 0)
+stepLength[i] = Double.POSITIVE_INFINITY;
+

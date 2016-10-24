@@ -1,0 +1,9 @@
+if ((maxPrimary == 0) &amp;&amp; (maxSecondary == 0)) {
+return actualPrimary;
+}
+
+// If ScaleType.FIT_XY fill the whole rectangle, ignore ratio.
+// If primary is unspecified, scale primary to match secondary&#39;s scaling ratio.
+if (maxPrimary == 0) {
+double ratio = (double) maxSecondary / (double) actualSecondary;
+

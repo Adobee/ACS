@@ -1,0 +1,9 @@
+private final Class<?> implementationType;
+private final boolean simpleType;
+
+public AbstractImmutableMapping(Class<?> declaredType, Class<?> implementationType) {
+simpleType = String.class.equals(declaredType) || ClassUtils.isPrimitiveOrAutoboxed(declaredType);
+
+if (!declaredType.isAssignableFrom(implementationType))
+throw new MappingException(&quot;Invalid mapping. Implementation type &quot; + implementationType.getName() + &quot; is not a subtype of declared type &quot;
+

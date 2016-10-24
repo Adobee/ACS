@@ -1,0 +1,6 @@
+public static void cooking(MSHalfHourProfile thisProfile, double startDayOfYear, int startDayOfWeek, int Nspan, int consumer_type)
+{
+if ( consumer_type == 1 )
+thisProfile.d_cook[48*i + HH]=MSConstArrays.cooking_sinescale_wkdays[HH]*Math.sin((2*Math.PI*((startDayOfYear + i)/365)-MSConstArrays.cooking_sinephase_wkdays[HH]))+MSConstArrays.cooking_const_wkdays[HH]+(RandomHelper.getNormal().nextDouble()*MSConstArrays.cooking_stddev_wkdays[HH]);
+if ( thisProfile.d_cook[48*i + HH] <0)
+

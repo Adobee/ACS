@@ -1,0 +1,10 @@
+public static ITransportProvider getTransportProvider(
+TransportProviders providerType) {
+ITransportProvider provider = providers.get(providerType);
+
+if (provider == null) {
+instantiateProvider(providerType);
+}
+
+return provider;
+

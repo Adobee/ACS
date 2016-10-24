@@ -1,0 +1,12 @@
+byte[] deflatedData = archive.getBinaryData();
+// m_deflated = null;
+// m_inflated = null;
+if (deflatedData == null)
+return null;
+// m_deflated = new Integer(deflatedData.length);
+if (deflatedData.length == 0)
+return null;
+
+byte[] inflatedData = null;
+try
+

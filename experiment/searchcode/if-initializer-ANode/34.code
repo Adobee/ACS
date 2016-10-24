@@ -1,0 +1,9 @@
+throw location(ctx).createError(new IllegalStateException(&quot;Illegal tree structure.&quot;));
+}
+
+@Override
+public ANode visitIf(IfContext ctx) {
+reserved.peek().setMaxLoopCounter(settings.getMaxLoopCounter());
+
+ANode initializer = ctx.initializer() == null ? null : visit(ctx.initializer());
+

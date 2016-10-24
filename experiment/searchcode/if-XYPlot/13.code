@@ -1,0 +1,10 @@
+pan.setHorizontalZoom( false ) ;
+
+if ( x < 0 &amp;&amp; y < 0 )
+{
+x = chart.getXYPlot().getHorizontalValueAxis().
+double ymin = yMid - ysize * toDown ;
+if ( ymin < 0 )
+ymin = 0 ;
+chart.getXYPlot().getDomainAxis().setMinimumAxisValue( 0 ) ;
+

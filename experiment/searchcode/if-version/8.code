@@ -1,0 +1,12 @@
+package com.galdosinc.glib.gml.schema;
+
+public class GmlVersion
+{
+public static GmlVersion GML_2 = new GmlVersion(2);
+private int version_;
+
+private GmlVersion(int version)
+{
+if ((version != 2) &amp;&amp; (version != 3)) {
+throw new IllegalArgumentException(&quot;Version code &quot; + version + &quot; is an invalid GML version.&quot;);
+

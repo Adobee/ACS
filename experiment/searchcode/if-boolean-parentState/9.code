@@ -1,0 +1,6 @@
+return new MockScheduledFuture<Void>() {
+@Override
+public boolean cancel(boolean mayInterruptIfRunning) {
+assertFalse(mayInterruptIfRunning);
+cancelled = true;
+

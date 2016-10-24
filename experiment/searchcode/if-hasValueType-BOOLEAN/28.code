@@ -1,0 +1,8 @@
+Map<Class<? extends IsContract>, ContractFormatter> contracts = _contractFormatters.get(valueType);
+
+boolean hasValueType = (contracts != null);
+if (!hasValueType) {
+ContractFormatter formatter = contracts.get(contractType);
+if (!hasValueType) {
+addContractFormatter(valueType, contractType, formatter);
+

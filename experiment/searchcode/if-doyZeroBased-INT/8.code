@@ -1,0 +1,12 @@
+// optimised for simple months
+int doy = getDayOfYear(millis) - 1;
+if (doy == 354) {
+return 30;
+return LONG_MONTH_LENGTH;
+}
+
+//-----------------------------------------------------------------------
+int getDaysInMonthMax(int month) {
+if (month == 12) {
+return LONG_MONTH_LENGTH;
+

@@ -1,0 +1,6 @@
+// even if dayInstant already MIN or MAX, this still works fine with int math
+long result = dayInstant + millisOfDay;
+if (result  < 0 &amp;&amp; dayInstant > 0) {
+return Long.MAX_VALUE;
+} else if (result  > 0 &amp;&amp; dayInstant < 0) {
+

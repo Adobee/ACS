@@ -1,0 +1,6 @@
+bls = blLogic.searchBl(blFilter);
+if (bls == null || bls.isEmpty()) {
+setWarningMessage(&quot;The query did not return data&quot;);
+String blCreatedStatus = FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap().get(&quot;status&quot;);
+if(null != blCreatedStatus &amp;&amp; !blCreatedStatus.equals(&quot;&quot;)) {
+

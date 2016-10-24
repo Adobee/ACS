@@ -1,0 +1,10 @@
+util.getMeasuredMainNoLNsOrVLSNs(), ERROR_ALLOWED);
+if (offHeap) {
+assertEquals(0, util.getMainNoLNsWithVLSNs());
+} else {
+util.getPreloadMainWithLNsAndVLSNs(), ERROR_ALLOWED);
+}
+
+private void check(String name,
+double expected,
+

@@ -1,0 +1,8 @@
+public long adjustTimestamp(long timestamp, boolean usePrevTimestamp) {
+if (timestamp < 0) {
+throw new RuntimeException(&quot;timestamp can&#39;t < 0&quot;);
+}
+
+if (firstFrameTimestamp < 0) {
+firstFrameTimestamp = timestamp;
+

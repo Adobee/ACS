@@ -1,0 +1,9 @@
+if (level >= 5)			text = &quot;&quot; + (int)(Math.random() * 99999);
+else if (level >= 3)	text = &quot;&quot; + (int)(Math.random() * 9999);
+else if (level >= 1)	text = &quot;&quot; + (int)(Math.random() * 999);
+
+dy = level;
+score++;
+}
+}
+

@@ -1,0 +1,8 @@
+else if(property.equals(&quot;visible&quot;)) { for(int i=0;i<9;i++) { for(int j=0;j<9;j++) { labels[i][j].setVisible(Boolean.valueOf(state)); } } }
+else if(property.equals(&quot;value&quot;)) { for(int i=0;i<9;i++) { for(int j=0;j<9;j++) { labels[i][j].setText(state); } } }
+if(this.Sudoku.table[rX][rY].stable==false){ this.Sudoku.table[rX][rY].stable=true; changed++; }
+}
+}
+}
+private void hide_all_labels(Boolean state){if(state==true) set_labels(&quot;value&quot;,&quot;*&quot;); else for(int i=0;i<9;i++)for(int j=0;j<9;j++) labels[i][j].setText(String.valueOf(this.Sudoku.table[i][j].value)); }
+

@@ -1,0 +1,8 @@
+public class BodyWeight extends ValueObjectBase<Double> {
+private final double bodyWeight;
+
+public BodyWeight(Double bodyWeight) throws IllegalArgumentException{
+
+if(bodyWeight <= 0){
+throw new IllegalArgumentException(&quot;bodyWeight can&#39;t be 0 or negative&quot;);
+

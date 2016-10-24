@@ -1,0 +1,13 @@
+private static final int sqrsize = 15;
+
+private boolean mouseResetted;
+
+public LoadingScreen() {
+super();
+
+this.setBackground(new Color(0, 0, 0));
+public void mouseDragged(MouseEvent arg0) {
+if (!mouseResetted) {
+int deltaX = arg0.getXOnScreen() - lastX;
+int deltaY = arg0.getYOnScreen() - lastY;
+

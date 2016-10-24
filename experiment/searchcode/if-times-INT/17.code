@@ -1,0 +1,12 @@
+private int successTimes = 0;
+
+public int throwTimes = 0 ;
+
+public TestRetryRunnable(int successTimes){
+this.successTimes = successTimes;
+}
+
+@Override
+public void run() {
+if(throwTimes == successTimes){
+

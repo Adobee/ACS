@@ -1,0 +1,21 @@
+step = recHandler.getNextTimeStep(stepO, stepA);
+if (step == null)
+break;
+
+
+ctThisInterv += getMetricForStep(step, metric);
+return perIntervCtArray;
+}
+
+
+
+
+
+
+
+
+
+public static double getMetricForStep(TimeStep step, Metric metric) {
+double ctr = 0;
+if (metric.equals(Metric.HREW)) {
+

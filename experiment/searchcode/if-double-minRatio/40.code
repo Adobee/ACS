@@ -1,0 +1,14 @@
+GeneralGridGeometry sourceGG;
+
+GeneralGridGeometry destGG;
+
+double minRatio;
+
+double maxRatio;
+
+MathTransform lastMT;
+if (ar < 1)
+ar = 1 / ar;
+final double maxRatioRatio = 2.0;
+double rr = maxRatio / minRatio;
+

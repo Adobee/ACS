@@ -1,0 +1,13 @@
+@Override
+public Color paintPoint(int iterationCount) {
+if (iterationCount >= 0) {
+double h = 0.55 + 10 * ((double) iterationCount / maxIterationCount);
+return new Color(Color.HSBtoRGB((float) h, (float) s, (float) v));
+} else if (iterationCount == -1) {
+return Color.BLACK;
+}
+
+return Color.WHITE;
+}
+}
+

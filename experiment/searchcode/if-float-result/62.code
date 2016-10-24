@@ -1,0 +1,17 @@
+public void setDOF(int dOF) {
+DOF = dOF;
+}
+
+public float distributionT(double x){
+float result = 0;
+result = t * s;
+return result;
+}
+
+
+
+public float gamma(float x){
+
+if(x == 1){
+return x;
+

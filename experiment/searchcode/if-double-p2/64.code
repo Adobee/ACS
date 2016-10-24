@@ -1,0 +1,7 @@
+if (done + n - i - 1 < m) {
+double p2 = Y[i] * .001;
+next[done + 1] += val + valP * p2 * e2;
+double p1 = X[i] * .001;
+double p2 = Y[i] * .001;
+next[Math.min(m, done + 1)] += val * p2 / (p1 + p2) + valP * e1 * p2;
+

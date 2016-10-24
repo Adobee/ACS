@@ -1,0 +1,9 @@
+double q_inv_w =  qw;
+double q_inv_x = -qx;
+double q_inv_y = -qy;
+double q_inv_z = -qz;
+
+double w1_w = -qx * vx - qy * vy - qz * vz;
+double w2_x = w1_w * q_inv_x + w1_x * q_inv_w + w1_y * q_inv_z - w1_z * q_inv_y;
+double w2_y = w1_w * q_inv_y - w1_x * q_inv_z + w1_y * q_inv_w + w1_z * q_inv_x;
+

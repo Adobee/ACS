@@ -1,0 +1,9 @@
+int sundayCount = 0;
+int dayOfWeek = 2; //It was a Tuesday
+int year = 1900;
+int month = 1;
+while(year <= 2000){
+|| month == 8 || month == 10 || month == 12){
+if(dayOfWeek == 1) sundayCount++;
+dayOfWeek = (dayOfWeek + 31)%7 + 1;
+

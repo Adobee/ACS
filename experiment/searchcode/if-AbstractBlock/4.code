@@ -1,0 +1,12 @@
+/** 実行回数が判明したときにブロックを追加するキューです。 */
+private Queue<AbstractBlock> validBlocks;
+
+/** 実行回数が不明なときにブロックを追加するキューです。 */
+private Queue<AbstractBlock> invalidBlocks;
+
+/**
+インスタンスを生成します。
+*/
+public Solver() {
+validBlocks = new ArrayDeque<AbstractBlock>();
+

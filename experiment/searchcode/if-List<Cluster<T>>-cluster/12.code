@@ -1,0 +1,10 @@
+this.clusterList = clusterList;
+}
+
+public void addCluster(Cluster cluster) {
+if(clusterList == null)
+clusterList = new ArrayList<Cluster>();
+if(!clusterList.contains(cluster)) {
+cluster.setAdmin(this);
+clusterList.add(cluster);
+

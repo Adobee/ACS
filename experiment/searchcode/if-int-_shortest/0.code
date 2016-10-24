@@ -1,0 +1,6 @@
+* distance from the destination. Returns -1 if
+* V1 < V2, 0 if equal or 1 otherwise. */
+public int compare(Integer v1, Integer v2) {
+double d2 = _shortest.getWeight(v2) + _shortest.estimatedDistance(v2);
+if (d < d2) {
+

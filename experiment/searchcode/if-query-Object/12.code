@@ -1,0 +1,8 @@
+public Query createQuery(String query) {
+return createQuery(query, new Object[0]);
+}
+
+public Query createQuery(String query, Object... parameters) {
+if (parameters.length == 0) {
+return new Query(query);
+

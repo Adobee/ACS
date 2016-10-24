@@ -1,0 +1,9 @@
+ModCardDetailsTCN2MSReqType item = objectFactory
+.createModCardDetailsTCN2MSReqType();
+request.getBody().getCardDetails().add(item);
+
+DeclaredByMSType declaredBy = objectFactory.createDeclaredByMSType();
+item.setCardNumber(&quot;12345668&quot;);
+item.setDeclaredBy(declaredBy);
+item.setNewCardStatus(NewCardStatusCodeEnumType.CONFISCATED);
+

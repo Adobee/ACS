@@ -1,0 +1,12 @@
+return keyCache;
+}
+/*
+*  »ñµÃkey¼¶±ð
+*/
+public Integer getLevel(String keyName){
+CspKeyInfo cki =  keyNameMap.get(keyName);
+if(cki==null){
+cki = KeyAo.get().getKeyInfo(keyName);
+if(cki!=null){
+keyNameMap.put(keyName, cki);
+

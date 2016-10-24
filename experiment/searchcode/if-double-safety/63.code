@@ -1,0 +1,8 @@
+public class CaseBasedBicycleSafetyFeatureConverter implements SimpleFeatureConverter<P2<Double>> {
+
+private String safetyAttributeName;
+private String directionAttributeName;
+String safetyKey = feature.getAttribute(safetyAttributeName).toString();
+Double safetyFeature = safetyFeatures.get(safetyKey);
+if (safetyFeature == null)
+

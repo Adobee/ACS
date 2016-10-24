@@ -1,0 +1,12 @@
+public final class ClusterIndexHealth implements Iterable<ClusterShardHealth>, Streamable, ToXContent {
+
+private String index;
+
+private int numberOfShards;
+
+private int numberOfReplicas;
+
+private int activeShards = 0;
+
+private int relocatingShards = 0;
+

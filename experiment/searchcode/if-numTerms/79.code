@@ -1,0 +1,9 @@
+rheap.reset();
+QueryEntry[] qEntries = query.getEntries();
+
+int numTerms = qEntries.length;
+if (numTerms == 0) return new QueryResults(null, null, 0, 0);
+for (i = 0; i < numTerms; i++){
+if (iterators[i].getDocId() == lastdoc &amp;&amp; !iterators[i].next()){
+iterators[i].close();
+

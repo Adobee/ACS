@@ -1,0 +1,10 @@
+public class PanditSimilarity extends DefaultSimilarity
+{
+@Override
+public float lengthNorm(FieldInvertState state)
+{
+final int numTerms;
+if(discountOverlaps)
+numTerms = state.getLength() - state.getNumOverlap();
+else
+

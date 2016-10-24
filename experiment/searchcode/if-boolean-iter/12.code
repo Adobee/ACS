@@ -1,0 +1,15 @@
+Iterator<T> iter;
+T value;
+
+public PeekIterator(Iterator<T> iter) {
+this.iter = iter;
+value = null;
+if (iter.hasNext()) {
+public T next() {
+T t = value;
+value = null;
+if (iter.hasNext()) {
+value = iter.next();
+}
+return t;
+

@@ -1,0 +1,10 @@
+* The total number of documents in the view.
+*/
+private int docCount;
+/**
+* The maximum number of documents per page.
+assertThat(page.getLastRowCount().intValue(), is(Math.min(startIndex + docsPerPage - 1,
+docCount)));
+assertThat(page.getPageNumber().intValue(), is(pageNumber));
+if (page.hasNextPage() || docCount % docsPerPage == 0) {
+

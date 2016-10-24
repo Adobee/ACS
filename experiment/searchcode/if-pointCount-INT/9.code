@@ -1,0 +1,12 @@
+public abstract class Shape {
+
+private final XYValue[] points;
+
+private final int pointCount;
+
+public Shape(int pointCount) {
+this.points = new XYValue[pointCount];
+
+for (int i=0; i<pointCount; ++i)
+this.points[i] = new XYValue(points[i]);
+

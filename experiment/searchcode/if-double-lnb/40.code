@@ -1,0 +1,11 @@
+//  Lanczos Gamma Function approximation - N (number of coefficients -1)
+private static int lgfN = 6;
+
+public static double LnB(
+double first = x + lgfGamma + 0.5;
+double second = lgfCoeff[0];
+
+if (x >= 0.0)
+{
+if (x >= 1.0 &amp;&amp; x - (int) x == 0.0)
+

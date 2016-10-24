@@ -1,0 +1,6 @@
+public IptEventType EventTypes() {return IptEventType_.KeyDown.Add(IptEventType_.MouseDown).Add(IptEventType_.MouseUp).Add(IptEventType_.MouseMove);}
+public void Exec(IptEventData iptData) {
+int val = iptData.EventType().Val();
+if		(val == IptEventType_.KeyDown.Val())		ExecKeyDown(iptData);
+else if (val == IptEventType_.MouseDown.Val())	ExecMouseDown(iptData);
+

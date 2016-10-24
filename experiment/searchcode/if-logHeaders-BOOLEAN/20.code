@@ -1,0 +1,13 @@
+log(uc.getRequestMethod() + &quot; &quot; + uc.getURL().toString());
+if (content instanceof String) {
+log(&quot;Content: &quot; + (String) content);
+}
+logHeaders(uc.getRequestProperties());
+* Iterate over request or response headers and log them.
+*
+* @param map
+*/
+private void logHeaders(Map<String, List<String>> map) {
+if (map != null) {
+for (String field : map.keySet()) {
+

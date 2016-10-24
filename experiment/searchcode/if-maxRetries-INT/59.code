@@ -1,0 +1,10 @@
+this.stepSize = Integer.parseInt(properties.getProperty(&quot;xmpp.client.retry.stepSize&quot;, &quot;2000&quot;));
+this.maxRetries = Integer.parseInt(properties.getProperty(&quot;xmpp.client.retry.maxRetries&quot;, &quot;-1&quot;));
+this.maxRetries = -1;
+}
+
+reset();
+}
+
+public RetryTracker(int minWait, int maxWait, int stepSize, int maxRetries) {
+

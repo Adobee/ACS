@@ -1,0 +1,8 @@
+super(messageBuffer); // This will call TowerMessage constructor reading Message ID and storing data
+
+if(messageId != VALID_MESSAGE_ID)
+lightState = new LightState();
+
+// Read the message data
+final byte[] messageData = getDataSection(messageBuffer);
+

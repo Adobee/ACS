@@ -1,0 +1,9 @@
+super(chrono);
+}
+
+public long addWrapField(long millis, int value) {
+int weekyear = get(millis);
+int newWeekyear = weekyear + FieldUtils.safeToInt(value);
+if (weekyear < 0) {
+if (newWeekyear >= 0) {
+

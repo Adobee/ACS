@@ -1,0 +1,11 @@
+package special;
+
+public class Task3 {
+
+public static void permute(int[] arr, int startindex) {
+
+if (arr.length == startindex) {
+displayArray(arr);
+} else {
+for (int i = startindex; i < arr.length; i++) {
+

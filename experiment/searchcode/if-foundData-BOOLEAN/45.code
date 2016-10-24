@@ -1,0 +1,9 @@
+OperationStatus retVal = myCursor.getSearchKey(foundKey, foundData,LockMode.DEFAULT);
+
+if (retVal == OperationStatus.SUCCESS &amp;&amp; myCursor.count() >= 1)
+while (retVal == OperationStatus.SUCCESS)
+{
+String dataString = new String(foundData.getData(), &quot;UTF-8&quot;);
+res.add(dataString);
+if(!dup) return res;
+

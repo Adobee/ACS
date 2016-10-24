@@ -1,0 +1,12 @@
+package jetdrone.convert;
+
+class N {
+double x;
+double y;
+double z;
+
+N(String[] args) {
+if(args.length > 0) x = Double.valueOf(args[0]);
+if(args.length > 1) y = Double.valueOf(args[1]);
+if(args.length > 2) z = Double.valueOf(args[2]);
+

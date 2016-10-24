@@ -1,0 +1,9 @@
+private boolean hasOptions = false;
+
+public ParsedOrder(String[] order) throws Exception{
+validateOrder(order);
+setBasePrice(order[0]);
+setnumPeople(order[1]);
+if(hasOptions){
+createOptions(order);
+

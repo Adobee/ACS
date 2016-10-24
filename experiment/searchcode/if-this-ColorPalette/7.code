@@ -1,0 +1,10 @@
+new ColorPalette(Color.WHITE, Color.ORANGE, 128)));
+}
+
+private ColorPalette(Color[] colors) {
+this.colors = colors;
+int pos = 0;
+lastColor = null;
+for (ColorPalette cp : subpalettes) {
+if (lastColor != null &amp;&amp; lastColor.equals(cp.colors[0])) {
+

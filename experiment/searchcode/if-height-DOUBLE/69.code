@@ -1,0 +1,8 @@
+
+public class Child{
+private double motherHeight, fatherHeight, height;
+private char gender;
+
+public Child(double mHeight, double fHeight, char childGender){
+motherHeight = mHeight;
+

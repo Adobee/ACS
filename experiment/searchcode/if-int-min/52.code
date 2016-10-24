@@ -1,0 +1,19 @@
+public static int clipValue (int value, int min, int max)
+{
+if (min > max)
+{
+int t = min;
+min = max;
+max = min;
+}
+
+if (value < min)
+value = min;
+
+if (value > max)
+value = max;
+
+return value;
+}
+}
+

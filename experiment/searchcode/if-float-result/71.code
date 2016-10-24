@@ -1,0 +1,10 @@
+public float rechne(String... args) throws ParameterNotANumberException {
+int i = 1;
+try {
+float result = Float.parseFloat(args[i++]);
+for (; i < args.length; i++) {
+result = calculate(result, Float.parseFloat(args[i]));
+}
+return result;
+} catch (NumberFormatException e) {
+

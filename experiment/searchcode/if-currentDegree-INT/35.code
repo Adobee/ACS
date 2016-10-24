@@ -1,0 +1,12 @@
+float degree = Math.round(event.values[0]);
+
+currentDegree = degree;
+
+
+if (currentDegree>180) {
+tempDegree = currentDegree - 180.0f;
+mPlayManagers[1].setVolume((180-tempDegree)/180);
+
+}
+if (currentDegree<180) {
+

@@ -1,0 +1,12 @@
+public Timer stop(){
+float difference = (System.nanoTime() - this.startTime);
+
+//for millaseconds
+if(difference > 1000000L &amp;&amp; difference < 1000000000L){
+System.out.println(  (difference / (float)1000000) + &quot; milla seconds&quot;);
+
+}
+//for seconds
+else if(difference > 1000000000L){
+System.out.println(  (difference / (float)1000000000) + &quot; seconds&quot;);
+

@@ -1,0 +1,10 @@
+logger.debug(&quot;New ifIndex value discovered >> &quot; + ifIndex);
+}
+return this.ifIndex;
+}
+
+public long getCurrentBitrate(int seconds, int direction)
+TimedValues finalValues = snmpHelper
+.getAsTimedValues(ifInOutOctetsOids);
+long[] finalOctets = SnmpHelper.castToLong(finalValues.getValues());
+

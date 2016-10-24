@@ -1,0 +1,16 @@
+public class BooleanRegister implements BooleanView
+{
+
+protected ValueSetListener listener;
+protected boolean value;
+
+
+@Override
+public boolean getValue()
+public void setValue(boolean v)
+{
+value = v;
+if (listener != null)
+{
+listener.onValueSet(this, v);
+

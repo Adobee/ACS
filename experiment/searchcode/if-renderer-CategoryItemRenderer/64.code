@@ -1,0 +1,14 @@
+import org.jfree.chart.renderer.category.CategoryItemRenderer;
+import org.xwiki.component.annotation.Component;
+
+/**
+* A {@link PlotGenerator} for generating area charts.
+public class AreaPlotGenerator extends AbstractCategoryPlotGenerator
+{
+@Override
+protected CategoryItemRenderer getRenderer(Map<String, String> parameters)
+{
+return new AreaRenderer();
+}
+}
+

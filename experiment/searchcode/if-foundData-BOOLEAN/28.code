@@ -1,0 +1,9 @@
+if(ConstantPool.PAXOS_RECOVERY_DL > 2) System.out.println(&quot; indirect entry &quot;);
+
+if( cursor.getSearchKeyRange(foundKey, foundData, LockMode.DEFAULT) != OperationStatus.NOTFOUND) {
+os.flush();
+os.writeInt(instance);
+os.writeBoolean(decided);
+
+if(!decided){
+

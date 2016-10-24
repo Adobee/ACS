@@ -1,0 +1,9 @@
+public class BiasedReadWriteLock {
+private boolean activeWriter = false;
+private int activeReaders = 0;
+readersQueue.deq();
+
+// DEBUG
+if (activeWriter == true
+|| activeReaders >= maxReaders
+

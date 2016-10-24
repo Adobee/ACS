@@ -1,0 +1,6 @@
+public static PureJwt parse(String p_encodedString) {
+if (StringUtils.isNotBlank(p_encodedString)) {
+String[] jwtParts = p_encodedString.split(&quot;\\.&quot;);
+if (jwtParts.length == 3) {
+return new PureJwt(jwtParts[0], jwtParts[1], jwtParts[2]);
+

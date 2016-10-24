@@ -1,0 +1,10 @@
+List tempTitleList = teacherTitleDAO.findByTitleName(titleName);
+
+//如果已存在该头衔名，则返回空
+if(tempTitleList.size() > 0) {
+List addedTitleList = teacherTitleDAO.findByTitleName(titleName);
+
+//如果刚添加的头衔名不成功，则返回空
+if(addedTitleList.size() == 0) {
+return result;
+

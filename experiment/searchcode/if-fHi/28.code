@@ -1,0 +1,14 @@
+Logger logger = Logger.getLogger(EmployeeImpl.class) ;
+
+//  查询方法
+public FhiOaEmployeeBasic getEmployeeById(String id){
+if(id == null||&quot;&quot;.equals(id)){return null;}
+logger.error(&quot;员工对象查询失败&#39;&quot;+id+&quot;&#39;&quot;) ;
+}
+return null ;
+}
+
+public List<FhiOaEmployeeBasic> getEmployees(String str) {
+
+if(str==null || str.trim().equals(&quot;&quot;))
+

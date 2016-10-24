@@ -1,0 +1,9 @@
+private int blockWidth;
+private int blockHeight;
+private int blockRow;
+private int blockColumn;
+private static int stage;
+for(int col = 0; col < blockColumn; col++) {
+if(!boardState[row][col])
+return false;
+

@@ -1,0 +1,12 @@
+public static int parseInt(CharSequence cs, int offset, int strLen) {
+char c;
+boolean positive = true;
+if ((c = cs.charAt(offset)) == &#39;-&#39;) {
+offset++;
+}
+
+int value = 0;
+while (offset < strLen) {
+c = cs.charAt(offset++);
+if (c >= &#39;0&#39; &amp;&amp; c <= &#39;9&#39;) {
+

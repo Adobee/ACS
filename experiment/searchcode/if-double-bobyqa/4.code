@@ -1,0 +1,9 @@
+* method, the Nelder-Mead simplex. As afterburner, we apply BOBYQA.
+*/
+final class _LSSimplexFittingJob
+extends OptimizationBasedFittingJob<_Candidate> {
+best = solution.quality;
+this.m_steps = 32L;
+if (this.refineWithBOBYQA(
+solution) != OptimizationBasedFittingJob.RET_IMPROVEMENT) {
+

@@ -1,0 +1,6 @@
+RestClient.builder(new HttpHost(&quot;localhost&quot;, 9200))
+.setMaxRetryTimeoutMillis(RandomInts.randomIntBetween(getRandom(), Integer.MIN_VALUE, 0));
+fail(&quot;should have failed&quot;);
+} catch(IllegalArgumentException e) {
+assertEquals(&quot;maxRetryTimeoutMillis must be greater than 0&quot;, e.getMessage());
+

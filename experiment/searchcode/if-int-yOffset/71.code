@@ -1,0 +1,11 @@
+private final CellGeneration cells;
+
+private int xOffset = -1;
+private int yOffset = -1;
+
+SourroundingCellsIterator(int x, int y, CellGeneration cells) {
+public Cell next() {
+Cell res = cells.at(x+xOffset, y+yOffset);
+++xOffset;
+if (xOffset > 1) {
+

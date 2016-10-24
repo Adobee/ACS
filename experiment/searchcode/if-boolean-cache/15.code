@@ -1,0 +1,7 @@
+public class Solution {
+public boolean wordBreak(String s, Set<String> dict) {
+if(s.length()==0) return false;
+boolean[] cache = new boolean[s.length()+1];
+cache[0] = true;
+for(int i=0;i<s.length();i++){
+

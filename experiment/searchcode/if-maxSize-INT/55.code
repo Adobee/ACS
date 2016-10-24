@@ -1,0 +1,12 @@
+int maxSize;
+
+public Stack(int maxSize) {
+this.maxSize = maxSize;
+top = -1;
+data = new int[maxSize];
+public boolean push(int number) {
+if (top == maxSize - 1)
+return false;
+data[++top] = number;
+return true;
+

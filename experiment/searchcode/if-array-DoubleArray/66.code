@@ -1,0 +1,10 @@
+public DoubleArray apply(final DoubleArray x) {
+final double[] data = x.toArray();
+if (data.length != 2) {
+static final Function<DoubleArray, DoubleMatrix> JACOBIAN2D = new Function<DoubleArray, DoubleMatrix>() {
+
+@Override
+public DoubleMatrix apply(final DoubleArray x) {
+if (x.size() != 2) {
+throw new IllegalArgumentException(&quot;This test is for 2-d vector only&quot;);
+

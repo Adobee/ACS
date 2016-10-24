@@ -1,0 +1,4 @@
+RGBImage = type==ImagePlus.COLOR_RGB;
+boolean snapshotChanged = RGBImage &amp;&amp; previousSnapshot!=null &amp;&amp; ((ColorProcessor)ip).getSnapshotPixels()!=previousSnapshot;
+if (imp.getID()!=previousImageID || snapshotChanged || type!=previousType || slice!=previousSlice)
+

@@ -1,0 +1,12 @@
+public Object assemble(Serializable cached, Object owner) throws HibernateException {
+return deepCopy(cached);
+}
+
+@Override
+return (Serializable) deepCopy(value);
+}
+
+@Override
+public boolean equals(Object x, Object y) throws HibernateException {
+if (x == y) {
+

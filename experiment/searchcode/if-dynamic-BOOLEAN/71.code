@@ -1,0 +1,9 @@
+public class DynamicServiceImpl implements IDynamicService{
+@Resource(name = &quot;dynamicDAO&quot;)
+private IGenericDAO<Dynamic> dynamicDao;
+
+public boolean save(Dynamic dynamic) {
+public Dynamic getObjById(Long id) {
+Dynamic dynamic = this.dynamicDao.get(id);
+if (dynamic != null) {
+

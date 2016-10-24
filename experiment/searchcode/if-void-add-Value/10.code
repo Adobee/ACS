@@ -1,0 +1,16 @@
+public Counter(int value) {
+this.value = value;
+}
+
+public Counter() {
+
+}
+
+public synchronized void add() {
+this.value++;
+}
+
+public synchronized void sub() {
+if (this.value > 0)
+this.value--;
+

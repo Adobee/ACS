@@ -1,0 +1,10 @@
+public PlaneCollisionSurface( Plane plane ) {
+Check.notNull( plane );
+this.plane = plane;
+}
+
+@Override
+public boolean intersects( Particle p ) {
+final float dot = p.getDirection().dot( plane.getNormal() );
+if( dot > 0 ) return false;
+
