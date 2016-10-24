@@ -1,0 +1,12 @@
+public void cleanup() {
+}
+
+public void execute(Tuple tuple) {
+MsgType msgType = (MsgType)tuple.getValue(0);
+if (config.debug &amp;&amp; msgType != TRAINING_EXAMPLE) {
+workingBlock.examples.add(ex);
+collector.ack(tuple);
+break;
+case PROCESS_BLOCK_REQ:
+bp = (BlockPair)tuple.getValue(1);
+

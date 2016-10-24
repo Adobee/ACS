@@ -1,0 +1,9 @@
+public Task(Callable<? extends T> callable) {
+if (callable == null)
+throw new IllegalArgumentException();
+this.callable = callable;
+}
+
+public T get() {
+if (result == null &amp;&amp; exception == null){
+

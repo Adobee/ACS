@@ -1,0 +1,9 @@
+.put(&quot;scriptFields&quot;, new ScriptFieldsParseElement());
+return parseElements.build();
+}
+
+@Override
+public boolean hitsExecutionNeeded(SearchContext context) {
+public boolean hitExecutionNeeded(SearchContext context) {
+return context.hasScriptFields();
+

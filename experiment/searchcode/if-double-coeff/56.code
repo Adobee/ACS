@@ -1,0 +1,7 @@
+String[] coeffStringArr = coefficientLine.split(&quot;,&quot;);
+double[] coeff = new double[coeffStringArr.length];
+// create an array of the coefficients
+while(input.hasNextDouble()){
+currVal = input.nextDouble();
+if(counter == coeff.length){
+

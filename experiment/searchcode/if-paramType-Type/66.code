@@ -1,0 +1,10 @@
+* Created by victor on 12/12/2015.
+*/
+
+@Path(&quot;/paramtypeQuestion&quot;)
+@Produces({MediaType.APPLICATION_XML, MediaType.APPLICATION_JSON})
+@GET
+public Response get(){
+List<ParamtypeQuestion> list = service.getAll();
+if(list == null){
+

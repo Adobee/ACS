@@ -1,0 +1,8 @@
+private double relX;
+private double relY;
+private double relWidth;
+private double absoluteProportion;// width/height
+public boolean setRelBorder(double relX, double relY, double relWidth, boolean isItInfPane, double parentAbsoluteProp) {
+double relProportion = absoluteProportion/parentAbsoluteProp;
+if (((relX >= 0) &amp;&amp; (relY >= 0) &amp;&amp; ((relWidth + relX) <= 1) &amp;&amp; ((relWidth/relProportion + relY) <= 1)) || isItInfPane) {//todo
+

@@ -1,0 +1,9 @@
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.transport.TransportAddress;
+public class ElasticSearchClientFactoryBean implements FactoryBean<Client>,DisposableBean{
+
+List<TransportAddress> addresses;
+TransportClient client ;
+@Override
+public Client getObject() throws Exception {
+

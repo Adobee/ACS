@@ -1,0 +1,11 @@
+private int[] hasread;           // positions where coveraged by reads
+private int reflength;           // Length of the reference
+for(int i = 0; i < reflength; i++){
+sum1 += hasread[i];
+if(hasread[i] > 0){
+sum2++;
+}
+}
+
+this.avgcov  = sum1 / (double)reflength;
+

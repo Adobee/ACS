@@ -1,0 +1,6 @@
+public static void merge(Mapper mergeInto, Mapper mergeWith) {
+mergeInto.merge(mergeWith, newStrictMergeResult());
+public static void collect(Mapper mapper, Collection<ObjectMapper> objectMappers, Collection<FieldMapper> fieldMappers) {
+if (mapper instanceof RootObjectMapper) {
+// root mapper isn&#39;t really an object mapper
+

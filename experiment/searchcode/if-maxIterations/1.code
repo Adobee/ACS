@@ -1,0 +1,10 @@
+public class JuliaFunction implements Function<Complex, Double> {
+final private int maxIterations;
+final private Complex c;
+public JuliaFunction(final int maxIterations, final Complex c) {
+double nsmooth;
+if (i == maxIterations) {
+nsmooth = i;
+} else {
+nsmooth = 1d + i - Math.log(Math.log(Math.sqrt(x*x + y*y)))/Math.log(2);
+

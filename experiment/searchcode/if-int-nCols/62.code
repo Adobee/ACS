@@ -1,0 +1,14 @@
+import java.math.*;
+import java.util.*;
+
+class BitMatrix {
+private int nRows;
+private int nCols;
+BigInteger[] data;   // column vectors of the matrix
+for (int i = 0; i < nRows; i++)
+t.data[i] = BigInteger.ZERO;
+
+for (int j = 0; j < nCols; j++)
+for (int i = 0; i < nRows; i++)
+if (data[j].testBit(i))
+

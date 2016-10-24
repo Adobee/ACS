@@ -1,0 +1,15 @@
+package com.renren.hydra.util;
+
+import org.apache.lucene.analysis.Analyzer;
+
+public abstract class HydraAnalyzerPool {
+public synchronized void giveBackAnalyzer(Analyzer analyzer){
+if(Math.abs(begin - end) == 1) {
+return;
+}
+analyzerPool[end] = analyzer;
+end = (end + 1) % size;
+notify();
+}
+}
+

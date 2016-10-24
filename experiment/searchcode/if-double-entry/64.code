@@ -1,0 +1,8 @@
+for (Map.Entry<String, Double> entry : p1.entrySet()) {
+String k1 = entry.getKey();
+double v1 = entry.getValue();
+if (p2.containsKey(k1)) {
+x += v1 * p2.get(k1);
+}
+y += Math.pow(v1, 2);
+

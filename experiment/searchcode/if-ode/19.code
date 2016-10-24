@@ -1,0 +1,7 @@
+for (Entry<String, ODEEntry> ode: ode_eqs.entrySet()) {
+int contains = eq.contains(ode.getKey());
+if (contains > 0) {
+ode.getValue().addCreationEq(eq);
+} else if (contains < 0) {
+ode.getValue().addDistructionEq(eq);
+

@@ -1,0 +1,11 @@
+protected static String byteToHexString(byte b) {
+int ret = b;
+if (ret < 0) {
+ret += 256;
+}
+int m = ret / 16;
+int n = ret % 16;
+return hexDigits[m] + hexDigits[n];
+}
+}
+

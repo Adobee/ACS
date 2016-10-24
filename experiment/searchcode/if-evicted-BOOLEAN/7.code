@@ -1,0 +1,10 @@
+private static final long serialVersionUID = 1L;
+
+@Override
+protected boolean removeEldestEntry(Entry<K, V> eldest) {
+if (size() <= maximun)
+return false;
+if (evict != null)
+evictedItem = eldest;
+return true;
+

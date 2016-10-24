@@ -1,0 +1,10 @@
+private double targetY;
+private double terminalX;
+private double terminalY;
+
+private double angle;
+double y_diff = initialY+10 - tY;
+
+double a = Math.atan(y_diff/x_diff);
+if (x_diff > 0) {
+

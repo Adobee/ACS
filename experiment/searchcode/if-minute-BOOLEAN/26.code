@@ -1,0 +1,19 @@
+hour += adder.getHour();
+
+minute += adder.getMinute();
+
+if (minute >= 60) {
+hour++;
+minute -= 60;
+}
+}
+
+public int toMinute() {
+minute += newMinute;
+}
+
+public boolean before(Time rTime) {
+if (hour < rTime.getHour())
+return true;
+else if (hour == rTime.getHour()) {
+

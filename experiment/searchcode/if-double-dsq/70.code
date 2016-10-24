@@ -1,0 +1,10 @@
+public int first=0;
+
+public static double signum(double x){
+int c = Double.compare(x,0.0);
+if(c<0) return -1;
+double er = Math.pow(lengths.getAt(n),2)/dsq-Math.pow(c,2);
+double e = Math.sqrt(er);
+// DEBUG:
+if(Double.isNaN(e)) {
+

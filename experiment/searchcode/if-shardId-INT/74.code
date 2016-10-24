@@ -1,0 +1,10 @@
+public boolean equals(Object o) {
+if (this == o) return true;
+ShardIterator that = (ShardIterator) o;
+return shardId.equals(that.shardId());
+}
+
+@Override
+public int hashCode() {
+return shardId.hashCode();
+

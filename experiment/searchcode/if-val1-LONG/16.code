@@ -1,0 +1,8 @@
+*  @param val1 The first object.
+*  @param val2 The second object.
+*  @return True, if objects fit wrt. the operator semantics.
+val2 = val2 instanceof ILazyValue? ((ILazyValue)val2).getValue(): val2;
+
+if(!(val1 instanceof String))
+throw new IllegalArgumentException(&quot;Matches operator only applies for strings: +&quot;+val1);
+

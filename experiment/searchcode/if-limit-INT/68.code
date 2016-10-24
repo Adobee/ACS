@@ -1,0 +1,11 @@
+package ch14;
+
+public class LimitSupport extends Support
+{
+private int limit;
+
+public LimitSupport(String name, int limit)
+{
+super(name);
+this.limit = limit;
+

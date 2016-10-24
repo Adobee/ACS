@@ -1,0 +1,8 @@
+checkCorrectClassification(classifier, POLITICS_INPUT, POLITICS_RESULT);
+} finally {
+if (leafReader != null) {
+leafReader.close();
+checkCorrectClassification(new SimpleNaiveBayesClassifier(leafReader, analyzer, query, categoryFieldName, textFieldName), TECHNOLOGY_INPUT, TECHNOLOGY_RESULT);
+} finally {
+if (leafReader != null) {
+

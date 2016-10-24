@@ -1,0 +1,6 @@
+import org.openhds.controller.service.RoundService;
+import org.openhds.dao.service.GenericDao;
+import org.openhds.domain.model.Round;
+public void evaluateRound(Round round) throws ConstraintViolations {
+if (round.getUuid() == null &amp;&amp; isDuplicateRoundNumber(round)) {
+

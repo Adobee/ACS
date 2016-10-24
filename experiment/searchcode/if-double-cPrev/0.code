@@ -1,0 +1,10 @@
+Candidate[] cTarget = new Candidate[cPrev.length];
+// Select candidates
+for (int i=0; i<cPrev.length; i++) {
+if (c(cMutant[i], cPrev[i], tPrev, getGame()))
+double c1w = g.evaluateCandidate(c1, tests[i], new Random(theSeed));
+double c2w = g.evaluateCandidate(c2, tests[i], new Random(theSeed));
+*/
+
+if (c1w > c2w)
+

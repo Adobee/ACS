@@ -1,0 +1,9 @@
+public class OperInfoAddAction extends ActionSupport {
+
+private boolean state;
+
+private boolean success;
+List<TAuOperInfoEntity> obj1 = operInfoDAO.myFindByHql(&quot;FROM TAuOperInfoEntity WHERE operId=? OR operName=?&quot;, operInfo.getOperId(), operInfo.getOperName());
+if (obj1.size() < 1) {
+Object obj = operInfoDAO.insert(operInfo);
+

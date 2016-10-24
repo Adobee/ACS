@@ -1,0 +1,11 @@
+this.p[2] = v[2];
+this.p[3] = w;
+}
+
+public void normalize() {
+double d = Math.sqrt(
++ this.p[1] * this.p[1]
++ this.p[2] * this.p[2]
++ this.p[3] * this.p[3]);
+if (d != 0) {
+

@@ -1,0 +1,13 @@
+import static com.elstele.bill.utils.Constants.SERVICE_PHONE;
+
+@Entity
+@Table(name=&quot;Service&quot;)
+@DiscriminatorValue(SERVICE_PHONE)
+public class ServicePhone extends Service {
+if (o == null || getClass() != o.getClass()) return false;
+if (!super.equals(o)) return false;
+
+ServicePhone that = (ServicePhone) o;
+
+if (!phoneNumber.equals(that.phoneNumber)) return false;
+

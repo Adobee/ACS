@@ -1,0 +1,10 @@
+double b2 = Math.pow(b, 2);
+double c2 = Math.pow(c, 2);
+if(a+b>c&amp;&amp;a+c>b&amp;&amp;b+c>a){
+System.out.println(&quot;這是三角形！&quot;);
+}else{
+System.out.println(&quot;這不是三角形：&quot;);
+}
+if(a2<b2+c2||b2<a2+c2||c2<a2+b2){
+System.out.print(&quot;這是銳角三角形！&quot;);
+

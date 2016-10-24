@@ -1,0 +1,10 @@
+public Object get(Object o, Field f) throws Exception {
+if(o instanceof HasType) {
+Type t = Type.fromUri(((HasType)o).getType());
+return Type.ARCHITECT.equals(t);
+}
+return Boolean.FALSE;
+}
+
+}
+

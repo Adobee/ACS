@@ -1,0 +1,6 @@
+iterations++;
+if (nextX.hasNaN() || iterations > iterationsLimit)
+return null;
+} while (s.a.multiply(nextX).subtract(s.b).norm() > epsilon * 0.1);
+if (!(s.a.multiply(nextX).subtract(s.b).norm() <= epsilon * 0.1)
+

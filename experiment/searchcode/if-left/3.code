@@ -1,0 +1,10 @@
+int left = 0, right = a.length - 1;
+int result = 0;
+if (a.length < 3)
+return 0;
+while (left + 1 < right) {
+left++;
+while (right > left + 1 &amp;&amp; a[right - 1] >= a[right])
+right--;
+if (left + 1 >= right)
+

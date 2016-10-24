@@ -1,0 +1,13 @@
+public class ScriptItem {
+
+public final Item item;
+
+private ScriptItem(Item item) {
+this.item = item;
+}
+
+public int getItemID() {
+Item item = null;
+if (Item.itemRegistry.containsKey(name))
+item = (Item)Item.itemRegistry.getObject(name);
+

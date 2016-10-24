@@ -1,0 +1,11 @@
+public static final ReadablePartialComparator NULLS_LAST = new ReadablePartialComparator(false);
+
+
+private final boolean nullFirst;
+
+private ReadablePartialComparator(boolean nullFirst) {
+public int compare(ReadablePartial lhs, ReadablePartial rhs) {
+if (lhs != null) {
+if (rhs != null) {
+return lhs.compareTo(rhs);
+

@@ -1,0 +1,10 @@
+float leftBound = 100 + (0.5f * width);  // horizontal position of leftmost line
+int upperBound = 0 - height;  // starting vertical position
+upperBound = upperBound + 5;
+horizy = horizy - 5;
+
+if (upperBound > 500) {
+upperBound = 0 - height;
+}
+if (horizy < -50) {
+

@@ -1,0 +1,7 @@
+public <T extends EventListener> T[] getListeners(Class<T> listenerType) {
+EventListener l = null;
+if  (listenerType == ComponentListener.class) {
+l = componentListener;
+} else if (listenerType == FocusListener.class) {
+l = focusListener;
+

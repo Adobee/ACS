@@ -1,0 +1,13 @@
+super.render(rc);
+}
+
+public boolean move(Vector2D dv) {
+Vector2D newPos = pos.translate(dv);
+if (pf.isFilled(newPos)) {
+newPos = newPos.translate(about);
+if (pf.isFilled(newPos)) {
+return false;
+}
+pf.clear(pos);
+pf.set(newPos, this);
+

@@ -1,0 +1,15 @@
+this.minus = minus;
+}
+public String toString(){
+return (minus?&quot;-&quot;:&quot;&quot;) + &quot;inf&quot;;
+}
+
+public ValueCount mul(int m){
+return this;
+}
+
+public int compare(ValueCount vc){
+if(vc instanceof ValueCount)
+return (minus?-1:1);
+else{
+

@@ -1,0 +1,8 @@
+@Bind(R.id.swipe_refresh_layout)
+public SwipeRefreshLayout mSwipeRefreshLayout;
+
+@Override
+public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+mSwipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary, R.color.colorPrimaryDark, R.color.colorAccent);
+mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+

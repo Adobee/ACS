@@ -1,0 +1,7 @@
+for (int j = 0; j < n - 1; j++) {
+
+int keyIndex = j;
+for (int i = j; i < n; i++) {
+if (A[i] > A[keyIndex]) {
+keyIndex = i;
+

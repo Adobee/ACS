@@ -1,0 +1,14 @@
+return false;
+}
+
+//
+// compute the fft&#39;s
+//
+if (!computeFFT(fft1, fft2)) {
+errorMessage = &quot;Fourier Transform of failed: fft1=&quot;
+for (int d = 0; d < numDimensions; ++d) {
+if (shift[d] >= 0) {
+// two possiblities
+//
+// shift=start end
+

@@ -1,0 +1,7 @@
+private Map<Object, Object> objectsPool = new HashMap<Object, Object>();
+
+public Object getObject(Object value) {
+if (value != null) {
+Object existingValue = objectsPool.get(value);
+if (existingValue != null) {
+

@@ -1,0 +1,9 @@
+public static final ParseField MULTI_VALUE_MODE = new ParseField(&quot;multi_value_mode&quot;);
+
+/**
+* Override this function if you want to produce your own scorer.
+super(CombineFunction.MULT);
+this.mode = mode;
+if (userSuppiedScale <= 0.0) {
+throw new ElasticsearchIllegalArgumentException(FunctionScoreQueryParser.NAME + &quot; : scale must be > 0.0.&quot;);
+

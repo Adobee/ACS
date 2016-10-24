@@ -1,0 +1,7 @@
+public Protocol getProtocol(Environment env) {
+if (this == GNUTELLA || this== SUPERPEER) {
+return new FloodProtocol(env);
+}
+if (this == CHORD) {
+return new ChordProtocol(env);
+

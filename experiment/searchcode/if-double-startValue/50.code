@@ -1,0 +1,11 @@
+public final class CumsumAccumulator<T extends Comparable<T>> extends Accumulator<T> {
+
+private final double _startValue;
+private double _currValue;
+public CumsumAccumulator(final double startValue) {
+_startValue = startValue;
+_currValue = startValue;
+}
+
+@Override
+

@@ -1,0 +1,10 @@
+public class ChannelInputStream extends BufferInputStream
+{
+private IChannel channel;
+
+private long millisBeforeTimeout = DEFAULT_MILLIS_BEFORE_TIMEOUT;
+
+private long millisInterruptCheck = DEFAULT_MILLIS_INTERRUPT_CHECK;
+
+public ChannelInputStream(IChannel channel)
+

@@ -1,0 +1,11 @@
+@Override
+public Stream read() {
+if(!hasData())
+return null;
+total += StreamUtils.readInt(in[0]);
+return new IntConstant(total);
+}
+
+@Override
+public boolean hasData() {
+

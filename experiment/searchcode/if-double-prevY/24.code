@@ -1,0 +1,12 @@
+if (prevX != 0 &amp;&amp; prevY != 0) {
+g.drawLine(x, y, prevX, prevY);
+}
+prevX = x;
+prevY = y;
+
+if (!inited) {
+double xDiff = startX - x;
+double yDiff = startY - y;
+double hookLenght = Math.sqrt(xDiff * xDiff + yDiff * yDiff);
+if (hookLenght > MAX_HOOK_LENGHT) {
+

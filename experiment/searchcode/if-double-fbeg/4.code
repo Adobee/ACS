@@ -1,0 +1,9 @@
+if (mCurrentSize == mArraySize)//if the Array is full, double it
+resize();
+Entry<K, V> nue = new MyEntry<K, V>(key, value); //the new Entry
+int end = binarySearch(stop);
+
+K fend = data[end].getKey();
+K fbeg = data[beg].getKey();
+if ( fend.compareTo(stop) < 0 )
+

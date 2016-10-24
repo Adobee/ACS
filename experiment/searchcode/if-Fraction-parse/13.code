@@ -1,0 +1,9 @@
+if (a.isError()) {
+return new ErrorValue();
+}
+if (a.isFraction() &amp;&amp; b.isFraction()) {
+MixedFraction n = ((FractionValue) b).getFraction();
+return Value.parseValue(m.plus(n).toString());
+}
+if (a.isCurrency() || b.isCurrency()) {
+

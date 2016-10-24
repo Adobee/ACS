@@ -1,0 +1,9 @@
+Z3_PARAMETER_FUNC_DECL (6),
+Z3_PARAMETER_DOUBLE (1),
+Z3_PARAMETER_SYMBOL (3),
+Z3_PARAMETER_INT (0),
+Z3_PARAMETER_AST (5),
+public static final Z3_parameter_kind fromInt(int v) {
+for (Z3_parameter_kind k: values())
+if (k.intValue == v) return k;
+

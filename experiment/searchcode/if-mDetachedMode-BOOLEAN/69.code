@@ -1,0 +1,13 @@
+public static final String BUNDLE_STATE_MAPVIEW = &quot;mapview&quot;;
+
+private boolean mDetachedMode;
+
+private MapFragment mMapFragment;
+
+private MapInfoFragment mInfoFragment;
+mMapFragment = (MapFragment) fm.findFragmentByTag(&quot;map&quot;);
+
+mDetachedMode = getIntent().getBooleanExtra(EXTRA_DETACHED_MODE, false);
+
+if (isFinishing()) {
+

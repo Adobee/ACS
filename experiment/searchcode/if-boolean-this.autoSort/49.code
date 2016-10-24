@@ -1,0 +1,8 @@
+public boolean sortItem(ItemStack item) { // Sort Chests by emptiest first
+if (AutoSort.emptiesFirst)
+Collections.sort(sortChests, new amountComparator(item));
+continue;
+}
+boolean ignoreData = true;
+if (AutoSort.customMatGroups.containsKey(chest.signText)) {
+

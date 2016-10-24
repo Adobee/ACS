@@ -1,0 +1,11 @@
+for (int i = 0; i < len; i++) {
+hash = (hash << (int) OneEighth) + bytes[i];
+
+if ((test = hash &amp; HighBits) != 0L) {
+hash = (hash ^ test >> (int) ThreeQuarters) &amp; (HighBits ^ 0xFFFFFFFF);
+public static long APHash(byte[] bytes, int len) {
+long hash = -1431655766L;
+
+for (int i = 0; i < len; i++) {
+if ((i &amp; 0x1) == 0)
+

@@ -1,0 +1,17 @@
+public int compareTo(Fraction f)
+{
+if (num == f.num &amp;&amp; den == f.den)
+return 0;
+double dif = (double) num / den - (double) f.num / f.den;
+if (dif < 0)
+return -1;
+return 1;
+}
+
+@Override
+public String toString()
+{
+return num + &quot;/&quot; + den;
+}
+}
+

@@ -1,0 +1,10 @@
+int intDiff = MathBase.floatUlps(lhs, rhs);
+
+if (intDiff <= maxUlps)
+return true;
+return false;
+
+long intDiff = MathBase.doubleUlps(lhs, rhs);
+
+if (intDiff <= maxUlps)
+

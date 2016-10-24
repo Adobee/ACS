@@ -1,0 +1,10 @@
+public class ManagerProblemServiceImpl implements ManagerProblemService {
+
+private ManagerProblemDao dao;
+
+@Override
+public Boolean addProblem(Problem problem, String domainId) {
+ManagerProblemBO existProblem = dao.findProblem(problem.getProblemId());
+
+if (existProblem == null) {
+

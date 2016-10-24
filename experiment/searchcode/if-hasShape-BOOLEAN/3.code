@@ -1,0 +1,9 @@
+* Unless forced, this will add object to all requested types or to none.
+*/
+public boolean add(EnumSet<ObjectType> types, QuadTree.HasShape object, boolean force) {
+assert Assert.validateSerializable(object);
+public boolean remove(EnumSet<ObjectType> types, QuadTree.HasShape object) {
+boolean result = true;
+for (ObjectType type : types) {
+if (!quadTrees.get(type).remove(object)) {
+

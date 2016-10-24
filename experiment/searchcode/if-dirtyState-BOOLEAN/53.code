@@ -1,0 +1,11 @@
+private final DirtyAttributeFlusher<Object, Object>[] dirtyAttributeFlushers;
+private final boolean useQueryFlush;
+private final String updateQuery;
+
+@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+sb.append(&quot;UPDATE &quot; + entityClass.getName() + &quot; SET &quot;);
+
+boolean first = true;
+boolean supportsQueryFlush = true;
+for (MethodAttribute<?, ?> attribute : attributes) {
+

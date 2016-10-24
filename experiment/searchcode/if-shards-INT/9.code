@@ -1,0 +1,7 @@
+for (byte [] shard : dataShards) {
+for (int i = 0; i < shard.length; i++) {
+shard[i] = (byte) random.nextInt(256);
+* Uses 5+5 coding, so there must be 5 input data shards.
+*/
+private void runEncodeDecode(int dataCount, int parityCount, byte[][] dataShards) {
+

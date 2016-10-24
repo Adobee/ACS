@@ -1,0 +1,8 @@
+public class NumericRangeContentDef implements ContentDef, Serializable {
+private double minVal;
+private double maxVal;
+private int precision = -1;
+int res = TestDataCreator.random.nextInt((int)(maxVal - minVal)) + (int)minVal;
+if(precision > 0){
+double d = TestDataCreator.random.nextDouble() + (double)res;
+

@@ -1,0 +1,10 @@
+public boolean equals(Object o)
+{
+if(!(o instanceof CIELAB))
+return false;
+CIELAB input=(CIELAB)o;
+double deltaL=Math.sqrt((this.L -input.L)*this.L -input.L);
+double deltaa=Math.sqrt((this.a -input.a)*this.a -input.a);
+double deltab=Math.sqrt((this.b -input.b)*this.b -input.b);
+if(deltaL/this.L>0.01)
+

@@ -1,0 +1,9 @@
+
+public class LeapYearCalculator {
+public boolean calculator (int year){
+boolean leapYear;
+
+
+if (year%100 == 0 &amp;&amp; year%400 == 0 || year%100 != 0 &amp;&amp; year%4 == 0){
+leapYear = true;
+

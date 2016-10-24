@@ -1,0 +1,9 @@
+boolean isIncrementalUpdate = videoHashcodes != null &amp;&amp; videoHashcodes.size() > 0;
+
+if (isIncrementalUpdate) {
+String hashCode = video.getImportHashcode();
+videosToKeep.add(video.id);
+
+// add video, if necessary
+if (!isIncrementalUpdate || !videoHashcodes.containsKey(video.id) ||
+

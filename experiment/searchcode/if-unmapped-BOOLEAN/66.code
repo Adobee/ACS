@@ -1,0 +1,7 @@
+this.visible = values.getBool(1);
+if (values.hasRemaining()) {
+setUnmappedObjects(values.buildRemaining());
+public void serialize(BserWriter writer) throws IOException {
+writer.writeBool(1, this.visible);
+if (this.getUnmappedObjects() != null) {
+

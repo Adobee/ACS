@@ -1,0 +1,13 @@
+synchronized(this)
+{
+if (nDomainId == WHOLE_DOMAIN_ID)
+return m_wholeModel.getModelInfo();
+
+if (!m_domainModels.containsKey(nDomainId))
+return m_domainModels.get(nDomainId).getModelInfo();
+}
+}
+
+//getModelAccuracy
+public double getModelAccuracy(int nDomainId)
+

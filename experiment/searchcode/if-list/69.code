@@ -1,0 +1,8 @@
+public static List<Integer> bubbleSort(final List<Integer> list) {
+if (list.isEmpty())
+return list;
+
+int lastSwapIndex = 0;
+for (int i = 1; i < list.size(); i++) {
+if (list.get(i - 1) > list.get(i)) { //slow if no random access list
+

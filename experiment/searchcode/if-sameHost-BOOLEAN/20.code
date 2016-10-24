@@ -1,0 +1,11 @@
+acceptableTokens = stream(acceptableTokens).collect(toList());
+acceptableTokensRef.set(acceptableTokens);
+
+if (LOGGER.isDebugEnabled()) {
+LOGGER.debug(&quot;Loaded {} acceptable tokens&quot;, stream(acceptableTokens).count());
+}
+}
+
+//    @Override
+public boolean allowClient(String clientName, String token) {
+

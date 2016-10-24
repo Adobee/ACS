@@ -1,0 +1,7 @@
+byte[] countBytes = fileCounts.get(contentSha);
+if(countBytes != null &amp;&amp; countBytes.length > 0) {
+int currentCount = KryoSerializer.deserialize(countBytes, int.class);
+byte[] contentSha = request.getDigest();
+byte[] countBytes = fileCounts.get(contentSha);
+if(countBytes != null &amp;&amp; countBytes.length > 0) {
+

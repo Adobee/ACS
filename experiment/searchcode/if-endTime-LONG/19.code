@@ -1,0 +1,12 @@
+startTime = System.nanoTime();
+}
+
+public long endTime;
+public void stop() {
+endTime = System.nanoTime();
+}
+
+public void dispatch(boolean ms) {
+if(!ms) {
+System.out.println(name+&quot; : &quot;+(endTime - startTime));
+

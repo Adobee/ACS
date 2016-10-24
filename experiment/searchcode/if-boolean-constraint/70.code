@@ -1,0 +1,5 @@
+private void findKeywords(syntax.resource.constraint.grammar.ConstraintSyntaxElement element, java.util.Set<String> keywords) {
+if (element instanceof syntax.resource.constraint.grammar.ConstraintKeyword) {
+keywords.add(((syntax.resource.constraint.grammar.ConstraintBooleanTerminal) element).getFalseLiteral());
+} else if (element instanceof syntax.resource.constraint.grammar.ConstraintEnumerationTerminal) {
+

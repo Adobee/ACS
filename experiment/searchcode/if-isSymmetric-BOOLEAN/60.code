@@ -1,0 +1,9 @@
+public class Solution {
+private boolean isSymmetric(TreeNode a, TreeNode b){
+if(a == null &amp;&amp; b == null){
+return (a.val == b.val) &amp;&amp; isSymmetric(a.left, b.right) &amp;&amp; isSymmetric(a.right, b.left);
+}
+}
+
+public boolean isSymmetric(TreeNode root) {
+

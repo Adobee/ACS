@@ -1,0 +1,12 @@
+// BUSINESS METHODS
+public Item(IContent content, Sync sync)
+{
+Guard.argumentNotNull(sync, &quot;sync&quot;);
+
+if (content == null)
+return this.getSync().getId();
+}
+
+public boolean hasSyncConflicts() {
+return this.getSync().getConflicts().size() > 0;
+

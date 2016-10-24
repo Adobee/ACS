@@ -1,0 +1,10 @@
+double histDiffPct = ((historicalValues.get(i) / historicalValues.get(i + 1)) - 1) * 100;
+
+if (histDiffPct > 100) {
+return -111;
+}
+
+if (histDiffPct > 0) {
+//plus
+double value = histDiffPct * currentWeightFactorPlus;
+

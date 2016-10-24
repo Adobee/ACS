@@ -1,0 +1,8 @@
+SimpleFeature feature = featureElevationComparer.getFeature();
+
+Geometry geometry = (Geometry) feature.getDefaultGeometry();
+int numGeometries = geometry.getNumGeometries();
+List<LineString> geomList = new ArrayList<LineString>(numGeometries);
+for( int i = 0; i < numGeometries; i++ ) {
+geomList.add((LineString) geometry.getGeometryN(i));
+

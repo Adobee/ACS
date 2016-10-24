@@ -1,0 +1,14 @@
+return annotation;
+}
+
+public Annotation root() {
+if (rootAnnotation == null) return annotation;
+
+Class<? extends Annotation> annClass = annotation.annotationType();
+AsmConstraint asmConstraint = annClass.getAnnotation(AsmConstraint.class);
+if (!asmConstraint.allowMessageOverride()) return annotation;
+
+return rootAnnotation;
+}
+}
+

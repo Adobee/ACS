@@ -1,0 +1,12 @@
+Util.threadFactory(&quot;OkHttp FramedConnection&quot;, true));
+
+/** True if this peer initiated the connection. */
+final boolean client;
+
+/**
+* User code to run in response to incoming streams or settings. Calls to this are always invoked
+*     except for in tests that don&#39;t check for a connection preface.
+*/
+void start(boolean sendConnectionPreface) throws IOException {
+if (sendConnectionPreface) {
+

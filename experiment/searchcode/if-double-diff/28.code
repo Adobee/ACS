@@ -1,0 +1,9 @@
+private final static double epsilon = Math.pow(10, -4);
+
+public static int compareDouble(double val1, double val2)
+{
+double diff = val1 - val2;
+double absDiff = Math.abs(diff);
+
+if(diff == 0 || (absDiff > 0 &amp;&amp; absDiff < epsilon)) {
+

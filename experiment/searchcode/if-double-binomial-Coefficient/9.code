@@ -1,0 +1,10 @@
+if (x < Math.max(0, n + K - N) || x > Math.min(K, n)) {
+return 0;
+} else {
+return (double) Utils.binomialCoefficient(K, x) * Utils.binomialCoefficient(N - K, n - x) / Utils.binomialCoefficient(N, n);
+}
+}
+
+@Override
+public double getExpectation() {
+

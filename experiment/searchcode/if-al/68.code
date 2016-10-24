@@ -1,0 +1,9 @@
+int[] source = new int[1];
+
+// Bind buffer with a source.
+al.alGenSources(1, source, 0);
+
+if (al.alGetError() != AL.AL_NO_ERROR) {
+// error on one machine with NVidia&#39;s OpenAL implementation. This
+// appears to be harmless, so just continue past the error if one
+

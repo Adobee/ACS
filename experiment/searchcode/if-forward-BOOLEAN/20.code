@@ -1,0 +1,9 @@
+ActionForward forward = mapping.findForward(nameForward);
+String newPath = forward.getPath();
+boolean tieneInterrogante = forward.getPath().split(&quot;\\?&quot;).length > 1;
+newPath = newPath + params.toString();
+} else
+newPath = newPath + &quot;&amp;&quot; + params.toString();
+
+boolean redirect = forward.getRedirect();
+

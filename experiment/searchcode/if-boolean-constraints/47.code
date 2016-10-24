@@ -1,0 +1,14 @@
+public void union(IExecutionState in) {
+this.constraints.union(in.getConstraints());
+}
+
+@Override
+public boolean belongTo(IExecutionState in){
+re.setConstraints(constraints.copy());
+
+return re;
+}
+
+public boolean equals(IExecutionState src) {
+return constraints.equals(src.getConstraints());
+

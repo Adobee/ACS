@@ -1,0 +1,7 @@
+double value = a.value % b.value;
+if (b.deriv != 0.0) {
+double dValue = Double.NaN;
+return new DerivationDouble(value, dValue);
+public static int dcmpl(DerivationDouble a, DerivationDouble b) {
+if (Double.isNaN(a.value)|| Double.isNaN(b.value)) return -1;
+

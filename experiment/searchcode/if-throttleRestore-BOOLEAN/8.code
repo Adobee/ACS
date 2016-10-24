@@ -1,0 +1,10 @@
+boolean throttleSnapshot = randomBoolean();
+boolean throttleRestore = randomBoolean();
+assertAcked(client.admin().cluster().preparePutRepository(&quot;test-repo&quot;)
+assertThat(snapshotPause, equalTo(0L));
+}
+
+if (throttleRestore) {
+assertThat(restorePause, greaterThan(0L));
+} else {
+

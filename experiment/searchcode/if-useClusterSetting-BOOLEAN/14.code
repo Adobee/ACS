@@ -1,0 +1,8 @@
+@Test
+public void testEnableClusterBalance() {
+final boolean useClusterSetting = randomBoolean();
+assertThat(clusterState.routingNodes().shardsWithState(RELOCATING).size(), equalTo(0));
+
+if (useClusterSetting) {
+prevState = clusterState;
+

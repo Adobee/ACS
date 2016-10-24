@@ -1,0 +1,11 @@
+long limit = (long) Math.pow(10, 7);
+
+double minRatio = 0.0;
+long bestN = 0;
+
+for (long n = 2; n < limit; n++) {
+double ratio = (double) n / (double) phiN;
+
+if (ratio < minRatio || minRatio == 0) {
+minRatio = ratio;
+

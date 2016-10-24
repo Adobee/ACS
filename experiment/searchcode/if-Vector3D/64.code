@@ -1,0 +1,12 @@
+package raytracer;
+
+/**
+* Created by Anton on 21.05.2014.
+*/
+public class Vector3D {
+public boolean equals(Vector3D v) {
+if (v == null) {
+return false;
+}
+return ((x <= v.x + EPSILON) &amp;&amp; (x >= v.x - EPSILON)) &amp;&amp;
+

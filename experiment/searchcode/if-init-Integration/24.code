@@ -1,0 +1,5 @@
+List pendingIntegrations = getIntegrationsInState(session, Integration.PENDING, projectId);
+if (pendingIntegrations.size() == 0) {
+Integration activeIntegration = getFirstIntegrationInState(session, Integration.ACTIVE, projectId);
+if (activeIntegration == null) {
+

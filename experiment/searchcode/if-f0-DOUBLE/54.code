@@ -1,0 +1,11 @@
+double[] p = new double[sys.getIndependentVarsNum()];
+
+double[] f0, aprox;
+
+if (sys.getTimeNature() == DynamicalSystem.CONTINOUS) {
+f0 = sys.eval(p);
+aprox = new double[f0.length - 1];
+
+} else {
+for (int n = 0; n < p.length; n++) {
+

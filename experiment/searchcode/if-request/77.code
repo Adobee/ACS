@@ -1,0 +1,13 @@
+private void setRequestLineData() {
+requestHash = new HashMap<String, String>();
+
+if (requestLineParts.length == 3) {
+requestHash.put(&quot;httpMethod&quot;, requestLineParts[0]);
+requestHash.put(&quot;httpProtocol&quot;, requestLineParts[3]);
+}
+}
+
+private void setQueryString() {
+if (queryStringExists())
+requestHash.put(&quot;queryString&quot;, request[request.length-1]);
+

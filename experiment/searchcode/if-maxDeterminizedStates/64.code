@@ -1,0 +1,6 @@
+PARSER.declareField((parser, builder, aVoid) -> {
+if (parser.currentToken() == XContentParser.Token.VALUE_STRING) {
+builder.setFlags(parser.text());
+public Builder setMaxDeterminizedStates(int maxDeterminizedStates) {
+if (maxDeterminizedStates < 0) {
+

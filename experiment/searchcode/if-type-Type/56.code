@@ -1,0 +1,18 @@
+package com.example.dto;
+
+public enum RecordTypeEnum {
+
+BIRTHDAY(1),ANNIVERSARY(2);
+
+private int type;
+for(RecordTypeEnum recordTypeEnum : RecordTypeEnum.values())
+{
+if(type == recordTypeEnum.getType())
+{
+return recordTypeEnum.name();
+}
+}
+return null;
+}
+}
+

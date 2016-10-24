@@ -1,0 +1,11 @@
+HeapBlobEntry entry = entries.get(blobId);
+boolean shouldPut = false;
+if (entry == null) {
+entry = new HeapBlobEntry();
+int bytesWritten = entry.write(data, offset, count);
+
+if (shouldPut) {
+entries.put(blobId, entry);
+}
+logger.debug(&quot;write {} {}-{} complete&quot;,blobId, offset, offset+count);
+

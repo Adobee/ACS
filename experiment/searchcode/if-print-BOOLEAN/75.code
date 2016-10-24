@@ -1,0 +1,12 @@
+package AST;
+
+public class BooleanExpr extends Expr {
+
+public BooleanExpr( boolean value ) {
+public void genC( PW pw, boolean putParenthesis  ) {
+if(value){
+pw.out.print(&quot;1&quot;);
+return;
+}
+pw.out.print(&quot;0&quot;);
+

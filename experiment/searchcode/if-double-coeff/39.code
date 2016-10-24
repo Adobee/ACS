@@ -1,0 +1,8 @@
+
+public class RouthSolver {
+private double equationCoeff [][];
+private boolean firstTime = true;
+public void solveEquation(double equationCoeff [] []){
+this.equationCoeff = equationCoeff;
+if(equationCoeff == null){
+

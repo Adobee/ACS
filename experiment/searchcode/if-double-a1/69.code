@@ -1,0 +1,12 @@
+public class MathTools {
+
+public static int safePerDivideP(int a1,int a2){
+int d=0;
+if(a2==0){
+return d;
+}
+
+public static double safePerDivide(int a1,int a2){
+double d=0;
+if(a2==0){
+

@@ -1,0 +1,8 @@
+cluster_A = currentEdge.a.getCluster();
+cluster_B = currentEdge.b.getCluster();
+if (cluster_A != null &amp;&amp; cluster_B == null) {
+cluster_A.addVertex(currentEdge.b);
+
+} else if (cluster_A == null &amp;&amp; cluster_B != null) {
+cluster_B.addVertex(currentEdge.a);
+

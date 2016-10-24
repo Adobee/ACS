@@ -1,0 +1,12 @@
+import io.netlibs.bgp.protocol.NetworkLayerReachabilityInformation;
+import lombok.Getter;
+
+public class AbstractMPLSLabelNLRI
+{
+@Getter
+private int label;
+public AbstractMPLSLabelNLRI(int label, boolean bos, int pfxlen, byte[] prefix){
+this.label = label;
+this.bos = bos;
+this.address = new NetworkLayerReachabilityInformation(pfxlen, NLRIHelper.trimNLRI(pfxlen, prefix));
+

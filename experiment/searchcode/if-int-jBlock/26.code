@@ -1,0 +1,10 @@
+solveSudokuAux(board, 0, 0);
+return;
+}
+
+public static void solveSudokuAux(char[][] board, int i, int j) {
+if (j == 9) {
+for (int k = 3 * iBlock; k < 3 * (iBlock + 1); k++) {
+for (int l = 3 * jBlock; l < 3 * (jBlock + 1); l++) {
+if (board[k][l] >= &#39;1&#39; &amp;&amp; board[k][l] <= &#39;9&#39;) {
+

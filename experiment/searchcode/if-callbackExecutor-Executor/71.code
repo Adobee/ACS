@@ -1,0 +1,7 @@
+public void init(Executor httpExecutor, Executor callbackExecutor, OkClient okClient) {
+setup(httpExecutor, callbackExecutor, okClient);
+.setLogLevel(RestAdapter.LogLevel.FULL);
+
+if (httpExecutor != null &amp;&amp; callbackExecutor != null) {
+builder.setExecutors(httpExecutor, callbackExecutor);
+

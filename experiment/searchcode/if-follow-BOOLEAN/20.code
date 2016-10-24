@@ -1,0 +1,13 @@
+* 检查是否已经关注
+*
+* @param follow
+*            Follow
+* @return boolean
+*/
+public Follow checkFollow(Follow follow)
+si.setObjectId(follow.getObjectId());
+
+List<Follow> searchList = this.getFollowList(follow, 1, 1);
+if (searchList.size() > 0)
+return searchList.get(0);
+

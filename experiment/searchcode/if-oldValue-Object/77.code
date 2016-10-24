@@ -1,0 +1,6 @@
+private static String generateFieldXml(String name, Object o1, Object o2, boolean logIfEqual) throws Exception {
+Object oldvalue = BeanUtils.getProperty(o1, name);
+Object newvalue = BeanUtils.getProperty(o2, name);
+if (oldvalue == null) {
+oldvalue = &quot;&quot;;
+

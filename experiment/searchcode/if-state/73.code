@@ -1,0 +1,11 @@
+package game.of.life;
+
+public class Cell {
+
+private CellState state;
+
+public Cell(CellState state) {
+public void update(int i) {
+if (state == CellState.ALIVE) {
+state = i > 1 &amp;&amp; i < 4 ? CellState.ALIVE : CellState.DEAD;
+

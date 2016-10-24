@@ -1,0 +1,7 @@
+double supersetProbability = (double) supersetFreq / (double) supersetSize;
+
+// Using absoluteProbabilityChange alone favours very common words e.g. you, we etc
+// In favouring common words as suggested features for search we would get high
+// recall but low precision.
+double absoluteProbabilityChange = subsetProbability - supersetProbability;
+

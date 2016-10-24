@@ -1,0 +1,9 @@
+private String imgPathToFilePath(String imgPath)
+{
+int i = imgPath.lastIndexOf(&quot;.&quot;);
+int j = imgPath.lastIndexOf(&quot;/&quot;);
+if ((i > 0) &amp;&amp; (i > j)) {
+imgPath = imgPath.substring(0, i);
+}
+if (imgPath.length() > 8) {
+

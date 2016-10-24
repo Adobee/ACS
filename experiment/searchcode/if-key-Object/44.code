@@ -1,0 +1,16 @@
+}else if(firstKey == null &amp;&amp; key == null){
+return true;
+}
+return false;
+}
+
+public boolean equalsOwnKey(Object key){
+if(ownKey != null &amp;&amp; key != null){
+this.ownKey = ownKey;
+}
+
+@Override
+public boolean equals(Object o){
+if(o instanceof DuplexKey){
+DuplexKey other = (DuplexKey)o;
+

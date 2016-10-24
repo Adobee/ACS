@@ -1,0 +1,8 @@
+static { callWithValues.setName(&quot;call-with-values&quot;); }
+
+public static Object callWithValues (Procedure producer, Procedure consumer)
+throws Throwable
+{
+Object values = producer.apply0();
+if (values instanceof Values)
+

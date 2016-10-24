@@ -1,0 +1,9 @@
+if (obj == this) {
+return true;
+}
+if (!(obj instanceof ShapeList)) {
+for (int i = 0; i < count; i++) {
+int index = stream.readInt();
+if (index != -1) {
+setShape(index, SerialUtilities.readShape(stream));
+

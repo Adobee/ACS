@@ -1,0 +1,12 @@
+this.cache = new HashMap<String, Double>();
+}
+
+private String Key(double base, double power) {
+// The key could be generated in a better fashion, e.g. as a hash
+return Double.toString(base) + &quot;^&quot; + Double.toString(power);
+}
+
+public boolean HasKey(double base, double power) {
+String key = Key(base, power);
+if(cache.get(key) != null) {
+

@@ -1,0 +1,12 @@
+import org.wowtalk.api.WowTalkVoipIF;
+
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+int setupStep = prefUtil.getSetupStep();
+
+if (setupStep != 2)
+return;
+
+if (WowTalkVoipIF.fGetMainActivity() == null) {
+

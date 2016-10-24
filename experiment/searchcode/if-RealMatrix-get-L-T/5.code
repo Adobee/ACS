@@ -1,0 +1,9 @@
+RealMatrix z=X.multiply(theta);
+RealMatrix h=sigmoid(z);
+double[] cost=new double[h.getRowDimension()];
+
+int m=X.getRowDimension();
+double mdouble=(double) m;
+for (int j = 0; j < X.getRowDimension(); j++) {
+if (y.getEntry(j, 0)==1){
+

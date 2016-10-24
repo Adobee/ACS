@@ -1,0 +1,14 @@
+private List<FileTransferMetric> uploads = new ArrayList<FileTransferMetric>();
+
+/** The total bytes. */
+private long totalBytes = -1;
+
+/** The total millis. */
+private long totalMillis = -1;
+* @param f the f
+*/
+public void beginNewUpload(File f) {
+if (totalBytes == -1)
+totalBytes = 0;
+if (totalMillis == -1)
+

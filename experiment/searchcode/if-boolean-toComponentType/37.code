@@ -1,0 +1,10 @@
+private static boolean isAssignable(Type type, Class<?> toClass) {
+if (type == null) {
+// consistency with ClassUtils.isAssignable() behavior
+return true;
+}
+
+Type toComponentType = toGenericArrayType.getGenericComponentType();
+
+if (type instanceof Class<?>) {
+

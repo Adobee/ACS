@@ -1,0 +1,8 @@
+public double DotTimes(double[] var1, double[] var2) {
+if (var1.length != var2.length) return 0;
+
+int len = var1.length;
+System.arraycopy(x, p-i-1, vecTmp1, 0, N-p);
+double[] vecTmp2 = new double[N-p];
+System.arraycopy(x, p-j-1, vecTmp2, 0, N-p);
+

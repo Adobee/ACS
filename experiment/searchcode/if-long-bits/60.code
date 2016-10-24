@@ -1,0 +1,11 @@
+// COMMENTED FOR SPEED: private int count = 0;
+private long bits = 0;
+private long cur = 0;
+
+public boolean nextBit() {
+if (cur == 0) {
+bits = Prng.nextLong();
+cur = 1L;
+}
+// COMMENTED FOR SPEED: System.out.printf(&quot;count = %6d bits = 0x%x cur = 0x%16x bit = %d\n&quot;, count, bits, cur, ((cur &amp; bits) == 0) ? 0 : 1);
+

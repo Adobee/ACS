@@ -1,0 +1,8 @@
+public String getEpc(DatacontainerEvent event, ALEDataTypes type,
+ALEDataFormats format) {
+if (event instanceof EPCGeneration1Event) {
++ event.readMemory(bank, offset, length).toString(16);
+}
+if (ALEDataFormats.DECIMAL.equals(format)) {
+return event.readMemory(bank, offset, length).toString(10);
+

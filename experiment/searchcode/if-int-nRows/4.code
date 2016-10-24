@@ -1,0 +1,7 @@
+public class ZigzagConversion {
+public String convert(String s, int nRows) {
+if (s.length() <= 1 || s == null || nRows == 1) {
+for (int i = 0; i < nRows; i++) {
+for (int j = 0; j < set; j++) {
+if (i == 0 || i == nRows - 1) {
+

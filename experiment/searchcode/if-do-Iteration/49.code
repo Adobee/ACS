@@ -1,0 +1,6 @@
+iteration_start = new Integer(CookieManager.matchCookie(cookies, &quot;iteration_start&quot;).getValue()).intValue();
+if(project.getCurrentIteration() - iteration_start > 9){
+for(int i = 0; i < project.getCurrentIteration(); i++){
+if(project.getStories().queryLabel(&quot;[&quot;+i+&quot;]&quot;).size()>0){
+page.println(&quot;<a href=&#39;PlanningFollowup?iteration=&quot;+i+&quot;&#39;>&quot;+i+&quot;</a> | &quot;);
+

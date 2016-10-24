@@ -1,0 +1,8 @@
+paramType = paramDefaultJSONParser.getLexer();
+long l;
+if (paramType.token() == 16)
+{
+paramType.nextToken(4);
+if (paramType.token() != 4)
+throw new JSONException(&quot;syntax error&quot;);
+

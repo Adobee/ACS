@@ -1,0 +1,12 @@
+private static void move(int rol, int coll) {
+
+matrix[rol][coll] = &quot;t&quot;;
+
+if (validate(rol, coll + 1, &quot;R&quot;)) {
+move(rol, coll + 1);
+matrix[rol][coll + 1] = &quot;0&quot;;
+result.remove(result.size() - 1);
+}
+
+if (validate(rol - 1, coll, &quot;U&quot;)) {
+

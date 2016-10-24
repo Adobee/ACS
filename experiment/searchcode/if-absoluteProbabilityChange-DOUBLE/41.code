@@ -1,0 +1,6 @@
+double supersetProbability = (double) supersetFreq / (double) supersetSize;
+
+// Using absoluteProbabilityChange alone favours very common words e.g. you, we etc
+double absoluteProbabilityChange = subsetProbability - supersetProbability;
+if (absoluteProbabilityChange <= 0) {
+

@@ -1,0 +1,14 @@
+httpsCallback = new HttpsCommunicationCallback() {
+@Override
+public void onResponseSuccess(HttpsCommunication hcn) {
+
+if(hcn.getResponseOrder().equals(&quot;get&quot;)){
+public void onResponseFailure(String errMsg) {
+Log.e(TAG,&quot;https : response failure&quot;);
+}
+};
+}
+
+public static Protocol getInstance(){
+if(instance==null)instance = new Protocol();
+

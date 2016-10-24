@@ -1,0 +1,6 @@
+SimpleSemaphore simpleSemaphore =
+new SimpleSemaphore(2, true);
+assertEquals(simpleSemaphore.availablePermits(), 2);
+simpleSemaphore.acquire();
+assertEquals(simpleSemaphore.availablePermits(), 1);
+

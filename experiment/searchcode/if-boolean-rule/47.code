@@ -1,0 +1,13 @@
+result = prime * result + ((rule == null) ? 0 : rule.hashCode());
+return result;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj)
+if (getClass() != obj.getClass())
+return false;
+RuleVO other = (RuleVO) obj;
+if (rule == null) {
+if (other.rule != null)
+

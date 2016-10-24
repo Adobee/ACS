@@ -1,0 +1,10 @@
+package leetcode;
+public class MaxArea {
+public int maxArea(int[] height) {
+int i = 0;
+int j = height.length - 1;
+int area = 0;
+int max = 0;
+while (j > i) {
+area = (j - i) * Math.min(height[i], height[j]);
+

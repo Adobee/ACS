@@ -1,0 +1,18 @@
+x=pos;
+name=n;
+}
+public String getname()
+{
+return name;
+}
+boolean move(int newpos) {
+
+if(x==newpos)
+return false;
+if(x>newpos)
+{   if(x>newpos+xa)
+{
+x=x-xa;
+}
+else x=newpos;
+

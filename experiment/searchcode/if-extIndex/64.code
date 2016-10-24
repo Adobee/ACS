@@ -1,0 +1,12 @@
+int extIndex = filename.lastIndexOf(EXTENSION_SEPARATOR);
+if (extIndex == -1) {
+return null;
+}
+return filename.substring(extIndex + 1);
+int extIndex = filename.lastIndexOf(EXTENSION_SEPARATOR);
+if (extIndex == -1) {
+return path;
+}
+
+return filename.substring(0, extIndex);
+

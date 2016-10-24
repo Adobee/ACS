@@ -1,0 +1,9 @@
+private IDialogueState objectToTest;
+
+@Before
+public void setup() throws Exception {
+when(mockDialogue.getContext()).thenReturn(mockDialogueContext);
+when(mockDialogueContext.getProvider()).thenReturn(mockProvider);
+when(mockDialogue.getDialogueId()).thenReturn(DIALOGUE_ID);
+objectToTest = new AtiDialogueEnd(mockDialogue);
+

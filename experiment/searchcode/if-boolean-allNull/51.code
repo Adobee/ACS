@@ -1,0 +1,11 @@
+super(ExpressionType.ANY, arr);
+}
+
+/**
+* Evaluates multiple boolean terms returning true if one evaluates as
+* true.
+public Object evaluate(EvaluationContext context) throws EvaluationException {
+// null &amp;&amp; null => null
+boolean allNull = true;
+for (Expression child : children) {
+

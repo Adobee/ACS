@@ -1,0 +1,9 @@
+int len = getObjectInputStream().readInt();
+if (len < 0)
+return null;
+
+return getObjectInputStream().readUTF();
+public Object readObject() throws IOException, ClassNotFoundException {
+byte b = getObjectInputStream().readByte();
+if (b == 0)
+

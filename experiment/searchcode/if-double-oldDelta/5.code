@@ -1,0 +1,8 @@
+public Chord[] decode(double[][] chromas) {
+int[][] psi = new int[chromas.length][totalChords];
+double[] oldDelta = new double[totalChords];
+for (int i = 0; i < totalChords; i++) {
+temp[i] = oldDelta[i] * A[i][j];
+if (temp[i] > max) {
+max = temp[i];
+

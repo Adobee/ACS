@@ -1,0 +1,7 @@
+matcher = this.conf.getPattern().matcher(line);
+if (matcher.matches()) {
+String relativeUrl = matcher.group(1);
+if (relativeUrl.contains(&quot;data:font&quot;) || relativeUrl.contains(&quot;data:application&quot;) || relativeUrl.contains(&quot;data:image&quot;))
+private String getFinalUriWithoutDealingQuotes(String relativeUrl, int num, Conf conf) {
+if (num > 0) {
+

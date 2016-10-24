@@ -1,0 +1,14 @@
+@Autowired
+BeneficialOwnerRepository service;
+
+public Boolean create(Company company) {
+Company existingCompany = repository.findByName(company.getName());
+Company saved = repository.save(existingCompany);
+if (saved == null)
+return false;
+
+return true;
+}
+
+public Boolean updateOwners(Company company) {
+

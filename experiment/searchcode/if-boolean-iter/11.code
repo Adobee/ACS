@@ -1,0 +1,15 @@
+public boolean eof() {
+return iter.eof();
+}
+
+@Override
+public int keyadr() {
+return iter.keyadr();
+}
+
+@Override
+public void next() {
+if (eof())
+return;
+if (! iter.isRewound() &amp;&amp; iter.isIndexModified())
+

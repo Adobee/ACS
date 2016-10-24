@@ -1,0 +1,13 @@
+package model.dao.impl;
+
+import java.util.List;
+
+import log.Loger;
+import model.CascadeOrder;
+Order order = orderDao.get(id);
+if(order == null){
+return null;
+}
+
+CascadeOrderItemDao cascadeOrderItemDao = new CascadeOrderItemDaoImpl();
+

@@ -1,0 +1,10 @@
+public static Nfm getUnbounded(Nfm x, int min) {
+if (min == 0)
+return getStar(x);
+if (min == 1)
+return getPlus(x);
+* &quot;{min,max}&quot; an existing nfm x -> x[0],x[1],...,x[min-1],x[min]?,...,x[max-1]? Frees or returns x.
+*/
+public static Nfm getMinMax(Nfm x, int min, int max) {
+if (max == Integer.MAX_VALUE)
+

@@ -1,0 +1,11 @@
+public class PyramidSequences {
+
+public long gcd(long a, long b) {
+// Euclid&#39;s algorithm: repeat (a,b) = (b, a%b) until b = 0:
+if (b == 0)
+return a;
+return gcd(b, a % b);
+}
+
+public long distinctPairs(int N, int M) {
+

@@ -1,0 +1,14 @@
+* Created by MoKunz on 3/6/2015.
+*/
+public enum Rule {
+ALLOW(true),
+DENY(false);
+private boolean result;
+
+Rule(boolean result) {
+return result;
+}
+
+public static Rule getRule(String ruleString) {
+if (ruleString == null) {
+

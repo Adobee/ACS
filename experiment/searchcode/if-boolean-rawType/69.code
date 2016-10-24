@@ -1,0 +1,6 @@
+public SqlType visit(RawType rawType) {
+if (rawType.getRawType().equals(JreTypes.javaLangBoolean)) {
+return SmallIntType.create();
+} else if (rawType.getRawType().equals(JreTypes.javaLangByte)) {
+return SmallIntType.create();
+

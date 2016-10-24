@@ -1,0 +1,8 @@
+@Override
+public String process(String text) {
+if (text.startsWith(&quot;RT &quot;)) {
+text = text.substring(3);
+}
+while (text.startsWith(&quot;@&quot;) &amp;&amp; text.indexOf(&quot; &quot;) > 0) {
+int firstSpace = text.indexOf(&quot; &quot;);
+

@@ -1,0 +1,8 @@
+private final List<ConnectionSpec> connectionSpecs;
+private int nextModeIndex;
+private boolean isFallbackPossible;
+* @return {@code true} if the connection should be retried using {@link
+* #configureSecureSocket(SSLSocket)} or {@code false} if not
+*/
+public boolean connectionFailed(IOException e) {
+

@@ -1,0 +1,9 @@
+public class StandardEvaluator extends AEvaluator {
+
+// ! current amount of evaluations
+protected Integer maxEvaluations = null;
+
+public StandardEvaluator(int maxEvaluations) {
+// 20 percent are okay - some times the population size will be larger..
+if (getEvaluations() >= (int) (maxEvaluations * 1.20))
+

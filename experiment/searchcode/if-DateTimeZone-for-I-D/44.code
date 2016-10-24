@@ -1,0 +1,7 @@
+DateTime dateTime = parsedDate.toDateTime(DateTimeZone.UTC);
+long millis = dateTime.getMillis();
+
+DateTimeZone dateTimeZone = queryGoogleForTimezone(latitude, longitude, millis);
+if (dateTimeZone != null) {
+dateTime = parsedDate.toDateTime(dateTimeZone);
+

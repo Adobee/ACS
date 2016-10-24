@@ -1,0 +1,15 @@
+while (a < 0 || a >= m) {
+if (a < 0) {
+rem -= 1;
+a += m;
+} else {
+rem += 1;
+a -= m;
+}
+}
+
+int[] result = {a, rem};
+String second_pad = Integer.toString(this.second);
+String[] pads = {hour_pad, minute_pad, second_pad};
+for(int i = 0; i < pads.length; i++) {
+

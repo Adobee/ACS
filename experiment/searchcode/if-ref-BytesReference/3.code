@@ -1,0 +1,6 @@
+public void testToChannelBufferWithSlice() throws IOException {
+BytesReference ref = getRandomizedBytesReference(randomIntBetween(1, 3 * PAGE_SIZE));
+int sliceOffset = randomIntBetween(0, ref.length());
+int sliceLength = randomIntBetween(ref.length() - sliceOffset, ref.length() - sliceOffset);
+BytesReference slice = ref.slice(sliceOffset, sliceLength);
+

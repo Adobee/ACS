@@ -1,0 +1,11 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class ShapeFactory {
+
+private static Map<ShapeType, Shape> shapePrototypes = new HashMap<ShapeType, Shape>();
+Shape shape = (Shape)shapePrototypes.get(shapeType).clone();
+shape.setWidth(width);
+
+if(shapeType == ShapeType.RECTANGLE) {
+

@@ -1,0 +1,9 @@
+public Chronology getChronology(Object obj, Chronology chronology) {
+if (chronology != null) {
+return chronology;
+return getChronology(obj, forTimeZone);
+}
+
+public Chronology getChronology(Object obj, DateTimeZone dateTimeZone) {
+if (obj.getClass().getName().endsWith(&quot;.BuddhistCalendar&quot;)) {
+

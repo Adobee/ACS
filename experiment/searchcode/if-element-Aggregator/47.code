@@ -1,0 +1,6 @@
+public AggregatorFactories build(AggregationContext context, AggregatorFactory<?> parent) throws IOException {
+if (aggregationBuilders.isEmpty() &amp;&amp; pipelineAggregatorBuilders.isEmpty()) {
+PathElement pathElement = bucketsPathElements.get(i);
+String aggName = pathElement.name;
+if ((i == bucketsPathElements.size() - 1) &amp;&amp; (aggName.equalsIgnoreCase(&quot;_key&quot;) || aggName.equals(&quot;_count&quot;))) {
+

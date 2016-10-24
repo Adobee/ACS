@@ -1,0 +1,8 @@
+private SearchService searchServiceImpl;
+
+@RequestMapping(value = &quot;&quot;, method = RequestMethod.GET)
+public String searchPage(@RequestParam(&quot;key&quot;) String queryKey, HttpServletRequest request) {
+@RequestParam(&quot;perPage&quot;) int perPage, @RequestParam MultiValueMap<String, String> allRequestParams) throws IOException {
+System.out.println(allRequestParams);
+if (key == null || key.equals(&quot;&quot;)) {
+

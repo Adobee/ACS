@@ -1,0 +1,11 @@
+public final long sizeof() { return 8 + this.set.sizeof(); }
+
+public synchronized final boolean put(long fp) {
+return this.set.put(fp);
+return this.set.contains(fp);
+}
+
+public final void exit(boolean cleanup) throws IOException {
+if (cleanup) {
+// Delete the metadata directory:
+

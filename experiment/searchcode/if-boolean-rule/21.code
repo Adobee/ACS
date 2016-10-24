@@ -1,0 +1,11 @@
+this.rule = rule;
+}
+
+/**
+* True if any rule matches.
+*/
+public boolean matches( ResourceAnnotation annotation ) {
+for ( int i = 0; i < rule.length; i++ ) {
+AbstractRule abstractRule = rule[i];
+if ( abstractRule.matches( annotation ) ) {
+

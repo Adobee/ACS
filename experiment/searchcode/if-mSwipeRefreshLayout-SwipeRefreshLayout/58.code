@@ -1,0 +1,10 @@
+mSwipeRefreshLayout = (MultiSwipeRefreshLayout) root.findViewById(R.id.swipe_refresh_layout);
+
+if(mSwipeRefreshLayout != null) {
+mSwipeRefreshLayout.setOnRefreshListener(() -> requestDataRefresh());
+public void requestDataRefresh() {}
+
+public void setRefreshing(boolean refreshing) {
+if(mSwipeRefreshLayout == null) {
+return;
+

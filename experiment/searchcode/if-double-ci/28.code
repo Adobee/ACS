@@ -1,0 +1,11 @@
+// compute external force contribution, clear direction and residual, compute b vector norm
+double bnorm = 0;
+for (NCPConstraint ci: constraints) {
++ ci.j4.dot(ci.body2.externaldeltaomega);
+
+ci.d = 0; ci.residual = 0;
+
+bnorm += Math.pow(ci.b+ci.Fext,2);
+
+//			if ( ci.coupling != null) {
+

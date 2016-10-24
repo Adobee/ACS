@@ -1,0 +1,9 @@
+public boolean searchMatrix(int[][] matrix, int target) {
+boolean found = false;
+int rows = matrix.length;
+int columns = matrix[0].length - 1;
+if (matrix != null &amp;&amp; rows > 0 &amp;&amp; columns >= 0) {
+int row = 0;
+while (row < rows &amp;&amp; columns >= 0) {
+if (matrix[row][columns] == target) {
+

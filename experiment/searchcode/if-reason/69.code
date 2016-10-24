@@ -1,0 +1,17 @@
+private String reason;
+
+public Message() {
+}
+
+public Message(String reason) {
+this.reason = reason;
+Message other = (Message)obj;
+if (reason == null) {
+if (other.reason != null)
+return false;
+} else if (!reason.equals(other.reason))
+return false;
+return true;
+}
+}
+

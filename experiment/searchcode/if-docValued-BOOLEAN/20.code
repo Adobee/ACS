@@ -1,0 +1,7 @@
+String[] multisSrc = readerSrc.document(docID).getValues(MULTI);
+if (multisSrc != null) {
+List<String> dvs = getSortedSetDocValues(readerDest, docID, MULTI);
+String singleSrc = readerSrc.document(docID).get(SINGLE);
+if (singleSrc != null) {
+String dv = getSortedDocValue(readerDest, docID, SINGLE);
+

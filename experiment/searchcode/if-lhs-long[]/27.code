@@ -1,0 +1,9 @@
+private boolean mustMatchTypes(){
+Type baseTypeLhs = lhs.type();
+if(lhs.type().isArray()){
+baseTypeLhs = baseTypeLhs.getBaseType();
+}
+
+Type baseTypeRhs = rhs.type();
+if(rhs.type().isArray()){
+

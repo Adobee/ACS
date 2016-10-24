@@ -1,0 +1,6 @@
+String difference;
+if(fromStamp != null) {
+long timeDiffInMilli = abs(new Date().getTime() -  fromStamp.getTime());
+long hoursAgo = ((timeDiffInMilli/(1000*60*60)) % 24);
+long minutesAgo = (long) (timeDiffInMilli/(1000*60)) % 60;
+

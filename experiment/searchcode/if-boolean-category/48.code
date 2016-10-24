@@ -1,0 +1,9 @@
+public long updateCategory(Category category){
+return categoryMapper.updateCategory(category);
+}
+
+public boolean removeCategory(Category category){
+public boolean removeCategoryById(long categoryId) {
+Category c = categoryMapper.getCategory(categoryId);
+if(c==null){
+

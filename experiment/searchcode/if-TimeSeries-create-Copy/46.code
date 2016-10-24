@@ -1,0 +1,5 @@
+public void requestSensorMetadata(NewTimeSeriesEvent evt) throws Exception {
+TimeseriesProperties props = createTimeseriesProperties(evt, evt.getServiceUrl());
+private TimeseriesProperties createTimeseriesProperties(NewTimeSeriesEvent evt, String serviceUrl) {
+int width = evt.getWidth();
+

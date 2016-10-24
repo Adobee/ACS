@@ -1,0 +1,10 @@
+public static ListNode insert(ListNode head, int num){
+ListNode n = new ListNode(num);
+ListNode iter = head;
+if(iter == null) return n;
+if(iter.val>num) {
+n.next = iter;
+return n;
+}
+while(iter.next!=null &amp;&amp; iter.next.val<num){
+

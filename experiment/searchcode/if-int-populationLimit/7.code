@@ -1,0 +1,7 @@
+private List<Chromosome> chromosomes;
+/** maximal size of the population */
+private int populationLimit;
+public ListPopulation(final int populationLimit) throws NotPositiveException {
+
+this(Collections.<Chromosome> emptyList(), populationLimit);
+

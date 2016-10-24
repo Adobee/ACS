@@ -1,0 +1,6 @@
+private static String getAbsoluteUrl(String relativeUrl) {
+return (BuildConfig.DEBUG ? UPGHttpClient.DEBUG_BASE_URL : UPGHttpClient.RELEASE_BASE_URL) + relativeUrl;
+public String post(String relativeUrl, RequestParams params) {
+String absoluteUrl = getAbsoluteUrl(relativeUrl);
+if(BuildConfig.DEBUG) Log.d(&quot;UPGSyncHttpClient %s&quot;,String.format(&quot;%s&amp;%s&quot;, absoluteUrl, params));
+

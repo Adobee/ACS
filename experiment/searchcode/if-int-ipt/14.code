@@ -1,0 +1,8 @@
+public static IptKey add_(IptKey... ary) {
+if (ary.length == 0) return IptKey_.None;
+int newVal = ary[0].Val();
+for (int i = 1; i < ary.length; i++)
+for (int i = 0; i < len; ++i) {
+IptKey key = ary[i];
+hash.Add_if_dupe_use_nth(Int_obj_ref.new_(key.Val()), key);
+

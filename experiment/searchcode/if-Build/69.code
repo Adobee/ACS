@@ -1,0 +1,13 @@
+private final String build;
+
+public Version(String version, String build) {
+this.version = version;
+public String toString() {
+if (null == build || build.isEmpty()) {
+return version;
+} else {
+return version + &quot;-&quot; + build;
+}
+}
+}
+

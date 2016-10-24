@@ -1,0 +1,8 @@
+protected final void _writeArraySuffix(final Object o, final JsonGenerator jsonGenerator, final String s) throws IOException {
+jsonGenerator.writeEndArray();
+if (s != null) {
+jsonGenerator.writeStringField(this._typePropertyName, s);
+jsonGenerator.writeEndObject();
+if (s != null) {
+jsonGenerator.writeStringField(this._typePropertyName, s);
+

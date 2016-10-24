@@ -1,0 +1,7 @@
+throw new IllegalArgumentException(&quot;Instant must not be null&quot;);
+}
+
+long instantMillis = instant.getMillis();
+int defaultYear = DateTimeUtils.getChronology(chrono).year().get(instantMillis);
+long instantLocal = instantMillis + chrono.getZone().getOffset(instantMillis);
+

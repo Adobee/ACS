@@ -1,0 +1,7 @@
+private static boolean isAssignable(Type type, Type toType,
+Map<TypeVariable<?>, Type> typeVarAssigns) {
+return isAssignable(type, (ParameterizedType) toType, typeVarAssigns);
+}
+
+if (toType instanceof GenericArrayType) {
+

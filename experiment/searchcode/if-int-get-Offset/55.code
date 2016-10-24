@@ -1,0 +1,15 @@
+p.registerMethod(&quot;mouseEvent&quot;, this);
+}
+
+public int getMouseX()
+{
+return p.mouseX - offsetX;
+}
+
+public int getMouseY()
+public void mouseEvent(MouseEvent e)
+{
+if (e.getAction() == MouseEvent.WHEEL)
+{
+int newOffsetY = offsetY + e.getCount();
+

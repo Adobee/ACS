@@ -1,0 +1,13 @@
+return VoidValue.VOID;
+}
+
+@Override
+public VoidValue caseGroup (final GroupPattern p)
+{
+p.getOperand1 ().apply (this);
+if (p.getOperand1 ().isNullable ())
+p.getOperand2 ().apply (this);
+return VoidValue.VOID;
+}
+}
+

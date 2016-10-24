@@ -1,0 +1,10 @@
+entitiesD2 = Integer.MIN_VALUE;
+if (blocks.get(0) instanceof BilateralBlock) {
+for (AbstractBlock block : blocks) {
+entitiesD2 = id2 + 1;
+}
+}
+}
+} else if (blocks.get(0) instanceof UnilateralBlock) {
+for (AbstractBlock block : blocks) {
+

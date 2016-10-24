@@ -1,0 +1,9 @@
+throw new IllegalArgumentException(&quot;Not an element&quot;);
+}
+
+public List<Rule> parseRules() {
+List<Rule> rulesList = new ArrayList<Rule>();
+if (ruleNode instanceof Element) {
+Element ruleElement = (Element) ruleNode;
+rulesList.add(parseRule(ruleElement));
+

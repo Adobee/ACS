@@ -1,0 +1,11 @@
+tmp = child.getX();
+if (child.getX() < 0) {
+tmp = 360 + tmp;
+}
+xArray[i++] = tmp;
+for (i = 0; i < node.getChildren().size() - 1; i++) {
+tmp = xArray[i + 1] - xArray[i];
+if (tmp > maxx) {
+maxx = tmp;
+startx = i;
+

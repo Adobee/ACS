@@ -1,0 +1,10 @@
+public Directory getBaseDirectory() {
+return mBaseDirectory;
+}
+
+public DirectoryContext(String basePath) {
+Directory dir  = new Directory();
+this.mBaseDirectory = dir;
+List<Directory> children = initDirectories();
+if (children != null &amp;&amp; children.size()  >0)
+

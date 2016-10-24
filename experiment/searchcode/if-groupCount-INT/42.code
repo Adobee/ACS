@@ -1,0 +1,8 @@
+public static String[] getGroupValues(String regex, String str) {
+Matcher m = getMatcher(regex, str);
+if(m==null) return null;
+if (m.find()) {
+int groupCount = m.groupCount();
+String[] result = new String[groupCount];
+for (int i = 1; i <= groupCount; i++) {
+

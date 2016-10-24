@@ -1,0 +1,16 @@
+package org.joda.time;
+
+import java.util.Calendar;
+
+import org.joda.time.base.BaseSingleFieldPeriod;
+* @throws ArithmeticException if the divisor is zero
+*/
+public Minutes dividedBy(int divisor) {
+if (divisor == 1) {
+return this;
+}
+return new Minutes(getValue() / divisor);
+}
+
+}
+

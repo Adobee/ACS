@@ -1,0 +1,7 @@
+ClusterState.Builder builder = null;
+for (int i = 0; i < changesCount; i++) {
+if (i > 0) {
+ClusterBlocks.Builder builder = ClusterBlocks.builder().blocks(clusterState.blocks());
+int globalBlocksCount = clusterState.blocks().global().size();
+if (globalBlocksCount > 0) {
+

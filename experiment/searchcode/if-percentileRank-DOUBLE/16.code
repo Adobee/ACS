@@ -1,0 +1,12 @@
+public double percent(double value) {
+return percentileRank(state, value);
+}
+
+@Override
+public double value(double key) {
+return TYPE;
+}
+
+static double percentileRank(TDigestState state, double value) {
+double percentileRank = state.cdf(value);
+

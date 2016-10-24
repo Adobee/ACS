@@ -1,0 +1,11 @@
+public abstract class PositionalNotationPrinter<E> {
+
+private final int maxDigits;
+
+public PositionalNotationPrinter(int maxDigits) {
+this.maxDigits = maxDigits;
+}
+
+public interface IDigitProvider {
+public int getNextDigit();
+

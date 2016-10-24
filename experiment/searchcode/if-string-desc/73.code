@@ -1,0 +1,9 @@
+public class TemplateDesc {
+private Object[] desc;
+
+public String[] getKeys() {
+List<String> result = new ArrayList<String>();
+for (Object o : desc) {
+if (o instanceof Tag) {
+result.add(((Tag) o).getTagName());
+

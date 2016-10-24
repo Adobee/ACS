@@ -1,0 +1,14 @@
+private SpaceMouse()
+{
+spacemouse = getSpaceMouse();
+if (spacemouse == null)
+{
+return;
+}
+
+int button = 0;
+if (c.isAnalog())
+{
+String lowerName = c.getName().toLowerCase();
+int axisIndex = lowerName.contains(&quot;z&quot;) ? 2 : lowerName.contains(&quot;y&quot;) ? 1 : 0;
+

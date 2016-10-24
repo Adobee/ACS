@@ -1,0 +1,9 @@
+private synchronized Seed getSeedIfNotTooOld() {
+long age = System.currentTimeMillis() - lastSeedTime;
+if (seed == null || age > 30000 || invalidSeed) {
+return seed;
+}
+
+private synchronized void setSeed(Seed seed) {
+this.seed = seed;
+

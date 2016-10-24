@@ -1,0 +1,9 @@
+static String StringCompress(String originalString) {
+StringBuffer newString = new StringBuffer();
+Character lastChar = null;
+int count = 0;
+
+// Start checking String character by character
+for (int i = 0; i < originalString.length(); i++) {
+if (lastChar == null) {
+

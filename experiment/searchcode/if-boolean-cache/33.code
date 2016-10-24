@@ -1,0 +1,8 @@
+public CacheAwareRowMapper(Class<T> clz, boolean lazy) {
+this.lazy = lazy;
+if (lazy) {
+this.cacheName = &quot;lazy&quot; + LimsUtils.capitalise(clz.getSimpleName()) + &quot;Cache&quot;;
+public CacheAwareRowMapper(String cacheName, boolean lazy) {
+this.lazy = lazy;
+if (lazy &amp;&amp; !cacheName.startsWith(&quot;lazy&quot;)) {
+

@@ -1,0 +1,17 @@
+CalculatorModel calculator;
+
+boolean updatedModel;
+boolean updatedView;
+
+public Controller() {
+calculator = new CalculatorModel();
+public void processCalculation() {
+if (updatedModel) {
+calculator.computeExpression();
+updatedModel = false;
+updatedView = true;
+}
+}
+
+}
+

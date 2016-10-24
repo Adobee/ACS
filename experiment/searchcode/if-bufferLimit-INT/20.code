@@ -1,0 +1,8 @@
+ByteBuffer buffer = ByteBuffer.wrap(this.text.getBytes());
+
+int bufferLimit = buffer.limit();
+int state = ~0;
+for (int pos = buffer.position(); pos < bufferLimit; pos++) {
+state <<= 1;
+state |= this.b[(buffer.get(pos)) &amp; 0xFF];
+

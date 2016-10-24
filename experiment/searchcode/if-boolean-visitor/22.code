@@ -1,0 +1,12 @@
+package syntaxtree;
+
+import visitor.ExpVisitor;
+import visitor.TypeVisitor;
+import visitor.Visitor;
+// has already been declared.  If so, we ignore this declaration.
+public boolean duplicate = false;
+
+public abstract void accept(Visitor v);
+
+public abstract Type accept(TypeVisitor v);
+

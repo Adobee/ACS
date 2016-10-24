@@ -1,0 +1,10 @@
+public static ICategoryDao getInstance(){
+if(INSTANCE == null)
+INSTANCE = new CategoryDemo();
+
+return INSTANCE ;
+public Category getCategoryByName(String name){
+for(Category eachCategory : categories )
+if(name.equals(eachCategory.getName()))
+return eachCategory;
+

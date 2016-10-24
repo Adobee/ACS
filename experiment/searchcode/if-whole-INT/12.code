@@ -1,0 +1,8 @@
+public static String CreatePaging(int startpage, int totpage, int conternp, int gotopage, String link) {
+String wholePaging = &quot;&quot;;
+wholePaging += &quot; [ 이전 &quot; + conternp + &quot; 개 ] &quot;;
+
+for(int i=startpage ; i<=totpage ; i++){
+if( i == gotopage ){
+wholePaging += &quot; <b>&quot; + i + &quot;</b> &quot;;
+

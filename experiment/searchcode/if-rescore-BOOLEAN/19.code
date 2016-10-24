@@ -1,0 +1,8 @@
+private static RescoreBuilder<?> mutate(RescoreBuilder<?> original) throws IOException {
+RescoreBuilder<?> mutation = serializedCopy(original);
+if (randomBoolean()) {
+if (randomBoolean()) {
+rescorer.setRescoreQueryWeight(randomFloat());
+}
+if (randomBoolean()) {
+

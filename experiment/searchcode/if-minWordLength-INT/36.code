@@ -1,0 +1,13 @@
+public class Boggle extends Graph{
+
+public int minWordLength;
+public int boggleSize;
+public Trie dictionary;
+
+public Boggle(Trie dictionary) {
+String [][] randomTiles = makeRandomTiles(boggleSize);
+createOrUpdateGraph(minWordLength, randomTiles);
+}
+
+public void shake(int minWordLength, int size){
+

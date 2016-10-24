@@ -1,0 +1,11 @@
+* @author Tony
+*
+*/
+public abstract class Particle implements Renderable {
+
+protected Timer timeToLive;
+public Particle(Vector2f pos, Vector2f vel, int timeToLive) {
+this.timeToLive = new Timer(false, timeToLive);
+if(timeToLive>0) {
+this.timeToLive.start();
+

@@ -1,0 +1,8 @@
+private static final long serialVersionUID = -4677223814028011723L;
+private final BasicChronology iChronology;
+this.iChronology = basicChronology;
+}
+
+private Object readResolve() {
+return this.iChronology.dayOfMonth();
+

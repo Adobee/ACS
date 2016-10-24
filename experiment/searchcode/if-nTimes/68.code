@@ -1,0 +1,10 @@
+.build();
+
+assertThat(policy, instanceOf(AttemptOnce.class));
+}
+
+@Test
+public void shouldBuildNTimes() throws Exception {
+public void shouldBuildNTimesWithFixedDelayIfLessThanMax() throws Exception {
+final long FIXED_DELAY = 5000L;
+

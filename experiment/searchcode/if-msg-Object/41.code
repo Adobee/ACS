@@ -1,0 +1,15 @@
+public static void i(String tag,String msg){
+if(isDebug){
+Log.i(tag, msg);
+}
+}
+
+/**
+* 使用object的类名作为tag
+* @param object
+* @param msg
+*/
+public static void i(Object object,String msg){
+if(isDebug){
+Log.i(object.getClass().getSimpleName(), msg);
+

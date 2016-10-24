@@ -1,0 +1,10 @@
+this.value = value;
+}
+
+
+public TimeSeriesDataItem(RegularTimePeriod period, double value) {
+this(period, new Double(value));
+TimeSeriesDataItem that = (TimeSeriesDataItem) obj;
+if (!ObjectUtilities.equal(this.period, that.period)) {
+return false;
+

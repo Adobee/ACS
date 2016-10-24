@@ -1,0 +1,17 @@
+public double getR() {
+return Math.sqrt(x*x + y*y + z*z);
+}
+
+public double getPhi() {
+if (x == 0.0) {
+if (y > 0.0)
+double r;
+double r0;
+
+r0 = Math.sqrt(x*x + y*y);
+
+double cosPhi;
+double sinPhi;
+
+if (r0 == 0) {
+

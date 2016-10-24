@@ -1,0 +1,5 @@
+for (FieldMapper fieldMapper : newFieldMappers) {
+MappedFieldType fieldType = fieldMapper.fieldType();
+for (MappedFieldType fieldType : this) {
+if (Regex.simpleMatch(pattern, fieldType.names().fullName())) {
+

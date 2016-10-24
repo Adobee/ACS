@@ -1,0 +1,8 @@
+private HBSet hbset=null;
+private String rowkey=null;
+private Put put=null;
+private boolean isAutoSave;
+hbset.getRunner().insert(hbset.getTableName(), HBBuilder.mkPut(this.rowkey, hbset.getFamily(), column,value));
+}else{//将通过hbset的save方法进行保存
+if(put==null){
+

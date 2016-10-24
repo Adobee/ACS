@@ -1,0 +1,9 @@
+private final SimpleSize blockSize;
+private int blockRows;
+private int blockCols;
+
+public Regionlike getBounds() {
+blockCols = mapSize.getWidth() / blockSize.getWidth();
+store = new ArrayList<>(blockRows * blockCols);
+for (int i = 0; i < blockRows * blockCols; i++) {
+

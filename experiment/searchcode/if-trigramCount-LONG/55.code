@@ -1,0 +1,8 @@
+private Session session;
+private PreparedStatement statement;
+private long wordcount,bigramcount,trigramcount;
+private SinhalaTokenizer tokenizer = new SinhalaTokenizer();
+public void connect(String node,String uname,String pwd) {
+wordcount = 0;bigramcount=0;trigramcount=0;
+cluster = Cluster.builder().addContactPoint(node).withCredentials(uname, pwd).build();
+

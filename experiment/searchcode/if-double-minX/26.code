@@ -1,0 +1,17 @@
+for (Point p : points) {
+expand(p.getX(), p.getY());
+}
+}
+
+public void expand(double x, double y) {
+if (minx > x) {
+miny = y;
+}
+if (maxy < y) {
+maxy = y;
+}
+}
+
+public double getMinx() {
+return minx;
+

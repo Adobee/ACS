@@ -1,0 +1,6 @@
+PrismObject<ObjectTemplateType> includeObject = includeRef.asReferenceValue().getObject();
+if (includeObject == null) {
+ObjectTemplateType includeObjectType = modelObjectResolver.resolve(includeRef, ObjectTemplateType.class,
+Map<ItemPath, ObjectTemplateItemDefinitionType> includedDefinitions = collectItemDefinitionsFromTemplate(includeObjectType, &quot;include &quot;+includeObject+&quot; in &quot;+objectTemplateType + &quot; in &quot; + contextDesc, task, result);
+if (includedDefinitions != null) {
+

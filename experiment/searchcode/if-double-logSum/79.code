@@ -1,0 +1,10 @@
+NormalDistribution normal = new NormalDistribution(lnMean, lnSD);
+
+double lnXMean = lnMean + 0.5 * lnSD * lnSD;
+
+double logSum = Double.NEGATIVE_INFINITY;
+double naive = logSum(Math.E, sample) - log(sample.length);
+double diff = 250 - naive;
+if(diff < 0.0)
+System.out.println(&quot;\n!!!! &quot; + diff);
+

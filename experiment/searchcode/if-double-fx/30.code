@@ -1,0 +1,10 @@
+public static Double solve(double a, double b, double eps, DoubleUnaryOperator func) {
+
+if (a > b) {
+double tmp = b;
+double min = func.applyAsDouble(a);
+double fx;
+
+for (double xi = a + eps; xi <= b; xi += eps) {
+fx = func.applyAsDouble(xi);
+

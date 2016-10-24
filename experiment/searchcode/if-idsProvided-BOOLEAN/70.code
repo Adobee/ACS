@@ -1,0 +1,12 @@
+String queryName = null;
+XContentParser.Token token;
+boolean idsProvided = false;
+while ((token = parser.nextToken()) != XContentParser.Token.END_OBJECT) {
+throw new QueryParsingException(parseContext, &quot;[ids] query does not support [&quot; + currentFieldName + &quot;]&quot;);
+}
+}
+}
+
+if (!idsProvided) {
+throw new QueryParsingException(parseContext, &quot;[ids] query, no ids values provided&quot;);
+

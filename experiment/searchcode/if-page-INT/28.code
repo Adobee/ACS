@@ -1,0 +1,11 @@
+* @param pageNo当前页面数
+*/
+public static int getStart(int pageNo, int count, int pageSize) {
+if (pageNo < 1) {
+pageNo = 1;
+public static int getStart(int pageNo, int pageSize) {
+if (pageNo < 1) {
+pageNo = 1;
+}
+return (pageNo - 1) * pageSize;
+

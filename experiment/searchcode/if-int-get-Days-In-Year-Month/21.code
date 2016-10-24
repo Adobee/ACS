@@ -1,0 +1,15 @@
+public static int getMonthDays(int year, int month) {
+int days = 31;// 默认每月31天
+switch (month) {
+// 特殊月
+case 2:
+if (isRun(year)) {
+return days;
+}
+
+/*
+* 计算给定年份和月份第一天距离1900-1-1过了多少天
+*/
+public static int getTotalDays(int year, int month) {
+int totalDays = 0;
+

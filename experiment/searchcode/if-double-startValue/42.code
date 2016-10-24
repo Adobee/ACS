@@ -1,0 +1,6 @@
+Encoder encoder;
+DigitalInput hallEffect;
+double startValue, endValue, currentValue, lastRecordedValue;
+
+public HallEffectEncoder(Encoder encoder, DigitalInput hallEffect, double startValue, double endValue) {
+

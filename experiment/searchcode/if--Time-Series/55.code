@@ -1,0 +1,8 @@
+int size = 0;
+for (DoubleTimeSeries ds: series.allseries()) {
+if(squarediffs == null){
+squarediffs = new Matrix(new double[][]{ds.getData()});
+for (DoubleTimeSeries doubleTimeSeries : series) {
+if(i!=0){
+doubleTimeSeries = doubleTimeSeries.process(new LinearInterpolationProcessor(importantTimes));
+

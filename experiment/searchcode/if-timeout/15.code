@@ -1,0 +1,10 @@
+package sc.aaron.tools.timer;
+
+public class TimeoutThread extends Thread {
+
+private long timeout;
+public void run() {
+try {
+Thread.sleep(timeout);
+if (!isCanceled) {
+

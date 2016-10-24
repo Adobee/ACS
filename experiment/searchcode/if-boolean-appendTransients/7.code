@@ -1,0 +1,12 @@
+* Whether or not to append transient fields.
+*/
+private boolean appendTransients = false;
+
+/**
+* Which field names to exclude from output. Intended for fields like <code>&quot;password&quot;</code>.
+this.setAppendStatics(outputStatics);
+}
+
+protected boolean accept(Field field) {
+if (field.getName().indexOf(ClassUtils_INNER_CLASS_SEPARATOR_CHAR) != -1) {
+

@@ -1,0 +1,5 @@
+for (int trialExponentNumber = 0; trialExponentNumber < exponents.size(); trialExponentNumber++) {
+if (trialExponentNumber == 0 || exponents.get(trialExponentNumber) < exponents.get(trialExponentNumber - 1)) {
+BigInteger trial = trialValue(trialExponentNumber);
+if (lowestNext == null || trial.compareTo(lowestNext) < 0) {
+

@@ -1,0 +1,6 @@
+@Override
+public String generate(ArrayParameters parameters) {
+PropertyType<?> innerType = parameters.getInnerType();
+sb.append(GeneratorRegistry.getGenerator(innerType.getName())
+.map(g -> g.generate(innerType.getParameters()))
+

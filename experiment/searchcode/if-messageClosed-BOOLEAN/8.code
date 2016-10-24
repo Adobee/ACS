@@ -1,0 +1,9 @@
+private final byte[] maskBuffer;
+private final byte[] maskKey;
+private boolean messageClosed;
+private FramedMessageSource() {
+}
+
+public void close() {
+if (!WebSocketReader.this.messageClosed) {
+

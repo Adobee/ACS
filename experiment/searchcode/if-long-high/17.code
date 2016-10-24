@@ -1,0 +1,10 @@
+public class Sqrt_x {
+public int sqrt(int x) {
+if(x<0)
+return 0;
+long low = 0;
+long high = x / 2 + 1;
+while (low + 1 < high){
+long mid = low + (high - low) / 2;
+if (mid * mid == x){
+

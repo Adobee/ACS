@@ -1,0 +1,9 @@
+private final Set<UnboundListener> unboundListeners;
+public MockSessionStore(){
+super();
+this.attributes=(Map<String,Serializable>)new HashMap();
+return (List<String>)Collections.unmodifiableList(new ArrayList(this.attributes.keySet()));
+}
+public String getSessionId(final Request request,final boolean create){
+if(create&amp;&amp;this.sessionId==null){
+

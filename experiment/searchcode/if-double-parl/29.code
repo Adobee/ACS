@@ -1,0 +1,10 @@
+double dk = jacNorm[k];
+if (dk == 0) {
+dk = 1.0;
+}
+double xk = dk * point[k];
+// otherwise set this bound to zero
+double sum2;
+double parl = 0;
+if (rank == solvedCols) {
+

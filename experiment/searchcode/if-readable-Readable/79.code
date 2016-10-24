@@ -1,0 +1,6 @@
+return readablePeriod != null ? new Interval(readablePeriod, parseDateTime) : new Interval(readableInstant, parseDateTime);
+} else if (readablePeriod == null) {
+public boolean abuts(ReadableInterval readableInterval) {
+if (readableInterval != null) {
+return readableInterval.getEndMillis() == getStartMillis() || getEndMillis() == readableInterval.getStartMillis();
+

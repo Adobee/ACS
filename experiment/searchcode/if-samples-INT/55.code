@@ -1,0 +1,13 @@
+public class TraceDistribution extends ADiscreteDistribution {
+protected final int[] samples;
+
+protected volatile int sampleIndex = -1;
+this.samples = samples;
+}
+
+@Override
+public double pmf(int n) {
+int count = 0;
+for (int sample: samples)
+if (n == sample)
+

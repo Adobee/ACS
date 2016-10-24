@@ -1,0 +1,12 @@
+sigmasHash.put(i, new Double[] {Controls.RW_SIG2E, Controls.RW_SIG2B});
+}
+}
+optimizer = new BOBYQAOptimizer(Controls.BOBYQA_INTERPOL_POINTS);
+
+
+if (Controls.SIG2E_FIX) {
+for (int i = 0; i < y.getDimension(); i++) {
+if (Double.isNaN(y.getEntry(i))) {
+
+//weights[is.na(y)] <- 0
+

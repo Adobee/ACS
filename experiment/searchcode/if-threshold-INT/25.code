@@ -1,0 +1,11 @@
+private final String LOG_TAG = &quot;distortion_effect&quot;;
+private int threshold;
+
+DistortionEffect() {
+nativePtr = _initNative();
+Log.d(LOG_TAG, &quot;Set Threshold to &quot; + threshold);
+int max_16 = 32767;
+
+if (threshold < 0) {
+threshold = 0;
+

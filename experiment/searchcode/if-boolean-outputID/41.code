@@ -1,0 +1,7 @@
+// Basic Propagator interface
+
+public BitWord ComputeOutput(OutputId output_id) {
+if (output_id == OutputId.GprSr1) {
+return regs_[sr1_addr_.ToInt()];
+} else if (output_id == OutputId.GprSr2) {
+

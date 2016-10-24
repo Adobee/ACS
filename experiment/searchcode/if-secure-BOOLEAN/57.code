@@ -1,0 +1,13 @@
+private SecureFile[] filenamesToFiles(String[] filenames) {
+if (filenames == null) {
+return new SecureFile[0];
+}
+SecureFile[] result = new SecureFile[filenames.length];
+return result;
+}
+
+@Override
+public boolean delete(){
+if (isFile())
+return super.delete();
+

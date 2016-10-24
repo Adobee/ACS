@@ -1,0 +1,9 @@
+super(size);
+}
+
+public int find(int parent, int current) {
+int hash = ((parent << 8)^(current)) % (size * size - 1);
+public int push(int parent, int current, int index) {
+int hash = ((parent << 8) ^ (current)) % (size * size - 1);
+if (hash < 256) hash = 256;
+

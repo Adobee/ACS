@@ -1,0 +1,13 @@
+System.out.println(&quot;[LOG] JK3(Q, J3, K3) = &quot; + &quot;JK(&quot; + x[3] + &quot;, &quot; + J3(x) + &quot;, &quot; + K3(x) + &quot;) = &quot; + JK(x[3], J3(x), K3(x)));
+}
+
+boolean[] tmp = copyArray(x);
+tmp[0] = JK(x[0], J0(x), K0(x));
+tmp[2] = JK(x[2], J2(x), K2(x));
+tmp[3] = JK(x[3], J3(x), K3(x));
+
+x = copyArray(tmp);
+
+if (log) {
+System.out.println(&quot;[LOG] updated status: &quot; + get() + &quot;\n&quot;);
+

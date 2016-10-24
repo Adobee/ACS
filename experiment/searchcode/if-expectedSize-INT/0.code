@@ -1,0 +1,9 @@
+public class SetUtils {
+
+public static int expectedSize( int expectedSize ) {
+if ( expectedSize < 0 ) {
+throw new IllegalArgumentException( &quot;expectedSize cannot be negative but was: &quot; + expectedSize );
+}
+if ( expectedSize < 3 ) {
+return expectedSize + 1;
+

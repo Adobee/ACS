@@ -1,0 +1,9 @@
+canvas.drawLine(bounds.right,bounds.top,bounds.right,bounds.top + 10,paint);
+}
+
+@Override
+public void updateBounds(int x, int y, Paint paint) {
+modifier.updateBoundsFromBottom(x, y - bounds.height(), paint);
+
+super.updateBoundsFromBottom(modifier.getBounds().right + (2 * GlobalConstants.spacing), y, paint);
+

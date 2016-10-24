@@ -1,0 +1,11 @@
+public Rotation(double q0, double q1, double q2, double q3,
+boolean needsNormalization) {
+
+if (needsNormalization) {
+* @exception ArithmeticException if the axis norm is zero
+*/
+public Rotation(Vector3D axis, double angle) {
+
+double norm = axis.getNorm();
+if (norm == 0) {
+

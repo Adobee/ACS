@@ -1,0 +1,7 @@
+public double integrate(IProbabilityFunctionBivariate function, double min_x, double max_x, double min_y, double max_y) {
+double step = 0.001;
+double sum = 0.0;
+for (x = min_x; x < max_x; x += step) {
+for (y = min_y; y < max_y; y += step) {
+double prob = function.getProbability(x, y);
+

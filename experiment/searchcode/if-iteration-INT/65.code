@@ -1,0 +1,15 @@
+import motion.Mover;
+
+public class ShakeMover extends Mover {
+
+private int iteration;
+
+public ShakeMover(Point v, Point a, MovableEntity me){
+me.d.y += iteration % 2 == 0 ? -1 * this.v.y : this.v.y;
+iteration++;
+if(iteration >= 100)
+iteration %= 2;
+}
+
+}
+

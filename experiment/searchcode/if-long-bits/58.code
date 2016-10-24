@@ -1,0 +1,9 @@
+int counterBits = 61;
+
+while (counterBits > 1) {
+
+long last3Bits = (number >> counterBits) &amp; 7;
+
+if (last3Bits == 7 || last3Bits == 0) {
+number = number ^ ((long) 7 << counterBits);
+

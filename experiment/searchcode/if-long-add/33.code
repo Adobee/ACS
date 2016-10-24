@@ -1,0 +1,13 @@
+public long nextPrime() {
+for ( long i = last+1; true; i++) {
+if (positions.containsKey(i) ) {
+for( long val : positions.remove(i) ) {
+primes.add(i);
+addPosition(i, i);
+return i;
+}
+}
+}
+
+private void addPosition(long i, long val) {
+

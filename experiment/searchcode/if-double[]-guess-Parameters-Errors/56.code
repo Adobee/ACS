@@ -1,0 +1,6 @@
+protected void init(LMAMultiDimFunction function, double[] parameters, double[] yDataPoints, double[][] xDataPoints, double[] weights, LMAMatrix alpha) {
+if (yDataPoints.length != xDataPoints.length)
+double[][] cov = getCovarianceMatrixOfStandardErrorsInParameters();
+if (cov == null) return null;
+double[] result = new double[parameters.length];
+

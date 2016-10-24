@@ -1,0 +1,11 @@
+public CPayoff_PutPV(double strike)
+{
+description = &quot;Put Plain Vanilla&quot;;
+this.strike = strike;
+public double value(double[] s)
+{
+double 	payoff 		= 0.0;
+
+if(s[s.length - 1] < strike)
+payoff = strike - s[s.length - 1];
+

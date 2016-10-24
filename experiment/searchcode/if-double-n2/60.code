@@ -1,0 +1,7 @@
+public static double chiSquare(final double n, final double n2) throws ArithmeticException {
+if (n2 < 0.0 || n < 1.0) {
+return 0.0;
+final double[] array4 = { 2.2605286322011726, 9.396035249380015, 12.048953980809666, 17.08144507475659, 9.608968090632859, 3.369076451000815 };
+double n2;
+if (n < 0.0) {
+

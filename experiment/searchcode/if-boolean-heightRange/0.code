@@ -1,0 +1,10 @@
+private DoubleRange	widthRange;
+private DoubleRange	heightRange;
+private DoubleRange	lengthRange;
+
+public void addWidthRangeCriteria(double minValue, double maxValue) {
+public boolean isValid(Size size) {
+boolean valid = true;
+if (size != null) {
+valid = (DoubleRange.isValid(this.widthRange, size.getWidth()) &amp;&amp; DoubleRange.isValid(this.heightRange, size.getHeight()) &amp;&amp; DoubleRange.isValid(
+

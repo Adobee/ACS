@@ -1,0 +1,7 @@
+public void boolean_method_named_properly_is_getter_if_return_type_is_boolean() {
+assertThat(isAccessor(&quot;class T { private  int a; int isA() { return a; } }&quot;)).isFalse();
+}
+
+@Test
+public void is_getter_if_has_one_return_statement() {
+

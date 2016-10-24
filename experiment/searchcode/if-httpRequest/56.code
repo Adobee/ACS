@@ -1,0 +1,8 @@
+public enum  HTTPRequest {
+GET, POST, HEAD, TRACE, OPTIONS;
+String request;
+ArrayList<MediaType> accepted;
+public static HTTPRequest fromString(String string) {
+for (HTTPRequest request : values()) {
+if (request.toString().equals(string)) {
+

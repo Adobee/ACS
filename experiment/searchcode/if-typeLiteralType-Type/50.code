@@ -1,0 +1,7 @@
+private <T> BindingImpl<MembersInjector<T>> createMembersInjectorBinding(Key<MembersInjector<T>> key, Errors errors)
+throws ErrorsException {
+Type membersInjectorType = key.getTypeLiteral().getType();
+if (!(membersInjectorType instanceof ParameterizedType)) {
+Type typeLiteralType = key.getTypeLiteral().getType();
+if (!(typeLiteralType instanceof ParameterizedType)) {
+

@@ -1,0 +1,6 @@
+SingularValueDecomposition svd = new SingularValueDecompositionImpl(matrix);
+RealMatrix wordVector = svd.getU();
+RealMatrix sigma = svd.getS();
+RealMatrix documentVector = svd.getV();
+// compute the value of k (ie where to truncate)
+

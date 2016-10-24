@@ -1,0 +1,19 @@
+public interface Factory<T> {
+T create();
+}
+
+private final Factory<T> factory;
+private T value;
+private boolean initialized;
+this.factory = factory;
+}
+
+public synchronized T get() {
+if (!initialized) {
+value = factory.create();
+initialized = true;
+}
+return value;
+}
+}
+

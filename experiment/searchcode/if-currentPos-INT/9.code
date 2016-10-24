@@ -1,0 +1,13 @@
+setYear(pYear);
+}
+
+public void setYear(int pYear) {
+setCurrentPos(pYear);
+if (!this.isValid()) {
+throw new IllegalArgumentException(&quot;Not a valid month&quot;);
+}
+}
+
+public int getYear() {
+return currentPos;
+

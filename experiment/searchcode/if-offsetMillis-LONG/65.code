@@ -1,0 +1,8 @@
+public String getDisplayName(boolean daylightTime, int style, Locale locale) {
+if (style == 0 || style == LONG) {
+return result;
+}
+int offsetMillis = getRawOffset();
+if (daylightTime) {
+offsetMillis += getDSTSavings();
+

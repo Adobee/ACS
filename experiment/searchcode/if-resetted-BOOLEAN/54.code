@@ -1,0 +1,12 @@
+public boolean isDelayResetted(){
+return delaying==null?true:false;
+}
+
+public boolean isReloadResetted(){
+return reloading==null?true:false;
+fireCounter.put(g, 0);
+}
+
+public boolean isOutOfAmmo(Gun g){
+if(this.getFireCounter(g)>=((Number)g.getProperty(&quot;SHOTSBETWEENRELOAD&quot;)).intValue()){
+

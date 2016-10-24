@@ -1,0 +1,7 @@
+Objects.requireNonNull(direction, &quot;direction is null&quot;);
+
+CasserPropertyNode propNode = MappingUtil.resolveMappingProperty(getter);
+
+if (propNode.getProperty().getColumnType() != ColumnType.CLUSTERING_COLUMN) {
+throw new CasserMappingException(&quot;property must be a clustering column &quot; + propNode.getProperty().getPropertyName());
+

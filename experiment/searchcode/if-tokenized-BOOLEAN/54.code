@@ -1,0 +1,8 @@
+Array array = (Array) sequence;
+if(isTokenized()) {
+if(sequence.isCompressed()) {
+return new TokenizedCompressedOnHeapPage(header, getOwner(), getRuntime(), array, stats);
+} else {
+if(sequence.isCompressed()) {
+return new NonTokenizedCompressedOnHeapPage(header, getOwner(), getRuntime(), array, stats);
+

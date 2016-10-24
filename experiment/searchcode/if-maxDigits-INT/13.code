@@ -1,0 +1,12 @@
+private static final long serialVersionUID = 1L;
+
+private final int maxDigits;
+
+public MaxDigitsValidator(final int maxDigits) {
+ValidateAs.positive(maxDigits, &quot;maxDigits&quot;);
+if (value == null || value.length() <= maxDigits) {
+return;
+}
+
+if (!isValid(value, maxDigits)) {
+

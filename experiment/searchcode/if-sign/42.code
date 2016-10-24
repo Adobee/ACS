@@ -1,0 +1,8 @@
+public class MapSignRegistry {
+
+private Map<String, MapSign> signs;
+private Map<String, String> matchSigns;
+public void registerSign(MapSign sign) {
+if (!signs.containsKey(sign.getSignId())) {
+signs.put(sign.getSignId(), sign);
+

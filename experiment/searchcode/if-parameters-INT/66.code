@@ -1,0 +1,11 @@
+double[] inx=new double[x.length];
+double[] iny=new double[y.length];
+int j=0;
+if(type.equals(&quot;y=a*x^b+c&quot;)){
+for(int i=0;i<x.length;i++){
+}else if(type.equals(&quot;y=a*b^x+c&quot;)){
+for(int i=0;i<x.length;i++){
+if((y[i]-parameters[2])>0){
+inx[j]=x[i];
+iny[j]=Math.log(y[i]-parameters[2]);
+

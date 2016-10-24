@@ -1,0 +1,7 @@
+static final Map<Integer,List<Dfp[]>> LEGENDRE_POLYNOMIALS = new HashMap<Integer, List<Dfp[]>>();
+final int m;
+final Dfp[] polynomial;
+// get (or create) the list of polynomials for the specified field
+List<Dfp[]> list = LEGENDRE_POLYNOMIALS.get(dfpField.getRadixDigits());
+if (list == null) {
+

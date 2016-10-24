@@ -1,0 +1,9 @@
+public void setKeyData(byte[] arr, int offset){
+lenScalar = new Scalar(arr[offset],arr[offset+1]);
+int dataLen = (int) lenScalar.getLength();
+
+this.data = new byte[dataLen];
+this.whole = new byte[dataLen+2];
+
+if(offset+2+dataLen > arr.length){
+

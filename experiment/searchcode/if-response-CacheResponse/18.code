@@ -1,0 +1,7 @@
+this.cacheResponse = cacheResponse;
+if (cacheResponse != null) {
+for (int i = 0; i < cacheResponse.headers().size(); i++) {
+String fieldName = cacheResponse.headers().name(i);
+String value = cacheResponse.headers().value(i);
+if (&quot;Date&quot;.equalsIgnoreCase(fieldName)) {
+

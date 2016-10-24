@@ -1,0 +1,10 @@
+Block block = blocks[blockIndex];
+
+if (block != null) {
+int currentRow = block.getRow();
+int currentColumn = block.getColumn();
+Block pivotBlock = blocks[0];
+
+if (pivotBlock != null) {
+int[] pivotVector = { pivotBlock.getRow(), pivotBlock.getColumn() };
+

@@ -1,0 +1,11 @@
+package com.amd.aparapi.test;
+
+public class ForIfMandel{
+int width = 1024;
+
+float scale = 1f;
+int count = 0;
+
+for (int iter = 0; iter < maxIterations; ++iter) {
+if (x2 + y2 <= scaleSquare) {
+

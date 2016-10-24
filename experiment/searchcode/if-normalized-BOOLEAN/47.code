@@ -1,0 +1,11 @@
+public ArrayList<Point> points;
+public boolean normalized = false;
+
+public Template(Gesture gesture, ArrayList<Point> points) {
+this.points = Recognizer.normalize(points);
+this.normalized = true;
+}
+
+public void normalizePoints() {
+if (!normalized) {
+

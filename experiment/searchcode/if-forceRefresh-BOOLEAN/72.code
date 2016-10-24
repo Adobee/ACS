@@ -1,0 +1,12 @@
+return getUrl(false);
+}
+
+public String getUrl(Boolean forceRefresh) {
+MinerData helper;
+String url;
+helper = new MinerData(context);
+url = null;
+
+if (!forceRefresh) {
+url = helper.getBookKeepingKey(helper.getReadableDatabase(), &quot;ckanurl&quot;);
+

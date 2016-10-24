@@ -1,0 +1,8 @@
+getStages().forEach(stage -> stage.toFront());
+focusedStage.ifPresent(stage -> stage.toFront());
+}
+
+public static void zoomFocusedStage() {
+getFocusedStage().ifPresent(stage -> {
+ObservableList<Screen> screens = Screen.getScreensForRectangle(stage.getX(), stage.getY(), stage.getWidth(),
+

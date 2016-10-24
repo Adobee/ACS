@@ -1,0 +1,10 @@
+System.setProperty(&quot;es.logger.prefix&quot;, &quot;&quot;);
+
+int numberOfIndices = 100;
+int numberOfDocs = 100;
+
+Settings settings = ImmutableSettings.settingsBuilder()
+ClusterState clusterState = node.client().admin().cluster().prepareState().execute().actionGet().getState();
+for (int i = 0; i < numberOfIndices; i++) {
+if (clusterState.blocks().indices().containsKey(&quot;index_&quot; + i)) {
+

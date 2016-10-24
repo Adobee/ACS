@@ -1,0 +1,8 @@
+directoryPath = &quot;\\&quot; + parentDirectory.getName() + directoryPath;
+parentDirectory = parentDirectory.getParent();
+}
+if (!directoryPath.equals(&quot;&quot;)) {
+String message = String.format(&quot;Directory of %s:\n&quot;, directoryPath);
+if (subDirectories.isEmpty()) {
+message += &quot;No subdirectories\n&quot;;
+

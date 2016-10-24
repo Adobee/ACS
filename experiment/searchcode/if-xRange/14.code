@@ -1,0 +1,14 @@
+t = getSet(f, i)
+for k in xrange(N):
+if k not in t:
+f[i] = k
+maxMiss = max(maxMiss, v[i][k] + dfs(v, i + 1, f))
+totLen += len(S[i])
+
+V = []
+for i in xrange(N):
+V.append([]);
+for j in xrange(N):
+V[i].append(0)
+if i != j:
+

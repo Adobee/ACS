@@ -1,0 +1,6 @@
+private static final float Y_SPACE = 150;
+// A reusable vector
+private Vector3 fieldVector = new Vector3();
+public static void rectangular2spherical(FieldSample fieldSample, Vector3 fieldVector) {
+if (fieldVector.x != 0 || fieldVector.y != 0) { // Avoid indeterminate theta
+

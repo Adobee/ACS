@@ -1,0 +1,10 @@
+import static org.hamcrest.Matchers.equalTo;
+
+/**
+* Basic Tests for {@link GeoDistance}
+*/
+public class GeoDistanceTests extends ESTestCase {
+// make sure that ordinals don&#39;t change, because we rely on then in serialization
+assertThat(GeoDistance.PLANE.ordinal(), equalTo(0));
+assertThat(GeoDistance.FACTOR.ordinal(), equalTo(1));
+

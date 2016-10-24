@@ -1,0 +1,11 @@
+public void handleRequest(final RestRequest request, final RestChannel channel, final NodeClient client) {
+ClusterAllocationExplainRequest req;
+if (RestActions.hasBodyContent(request) == false) {
+new BytesRestResponse(ExceptionsHelper.status(e), BytesRestResponse.TEXT_CONTENT_TYPE, BytesArray.EMPTY));
+return;
+}
+}
+
+try {
+req.includeYesDecisions(request.paramAsBoolean(&quot;include_yes_decisions&quot;, false));
+

@@ -1,0 +1,14 @@
+public enum Nucleotide {
+A, C, G, T, N;
+
+private final byte byteValue;
+
+private static final Nucleotide[] FROM_BYTE = new Nucleotide[Byte.MAX_VALUE];
+byteValue = (byte) toString().charAt(0);
+}
+
+public static Nucleotide fromByte(byte b) {
+if (b < 0)
+return N;
+return FROM_BYTE[b];
+

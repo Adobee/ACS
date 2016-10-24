@@ -1,0 +1,8 @@
+public class Lintcode_Sort_Letters_by_Case {
+public void sortLetters(char[] chars) {  // Two pointer partition
+if(chars==null||chars.length<2) return;
+while(i<j&amp;&amp;chars[j]>=&#39;A&#39;&amp;&amp;chars[j]<=&#39;Z&#39;) j--;
+if(i<j) {
+char temp=chars[i];
+chars[i]=chars[j];
+

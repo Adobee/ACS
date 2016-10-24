@@ -1,0 +1,7 @@
+public BooleanWritable evaluate(String pt_start, String pt_end,
+String start, String end) {
+// Deal with _INFINITY ...
+if (pt_end.charAt(6) == &#39;_&#39;) {
+if ( !pt_end.substring(0, 6).equals(end.substring(0, 6)))
+return falseWritable;
+

@@ -1,0 +1,11 @@
+public abstract class IntervalBound implements Comparable<IntervalBound> {
+private Double value;
+private boolean open;
+public IntervalBound(Double value, boolean open) {
+*         interval, <code>false</code> otherwise
+*/
+public boolean isClosed() { return !open; }
+/**
+* Tests if two bounds are equal.
+* @param bound The other bound to compare
+

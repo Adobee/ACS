@@ -1,0 +1,11 @@
+public int[] merge(int[] A, int[] B) {
+int ia = 0, ib = 0;
+int len = A.length + B.length;
+int[] C = new int[len];
+for (int i = 0; i < len; i++) {
+if (ia == A.length) {
+C[i] = B[ib];
+ib = ib + 1;
+}
+else if (ib == B.length) {
+

@@ -1,0 +1,13 @@
+errln(&quot;UScript.getScript(character with Script_Extensions) failed&quot;);
+}
+}
+
+@Test
+public void TestHasScript() {
+if(!(
+!UScript.hasScript(0x063f, UScript.COMMON) &amp;&amp;
+errln(&quot;UScript.hasScript(U+063F, ...) is wrong&quot;);
+}
+if(!(
+!UScript.hasScript(0x0640, UScript.COMMON) &amp;&amp;  /* main Script value */
+

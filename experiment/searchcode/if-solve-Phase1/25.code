@@ -1,0 +1,12 @@
+// 判断有无可行解
+public int phase1() {
+this.error = simplex(this.m + 1);
+if (this.error > 0) {
+return this.error;
+if (this.m != this.m1) {
+this.error = phase1();
+if (this.error > 0)
+return this.error;
+}
+return phase2();
+

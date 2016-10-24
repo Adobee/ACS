@@ -1,0 +1,9 @@
+public void run() throws Throwable;
+}
+
+public static <T extends Throwable> void assertThrow(Class<T> ex, ExRunnable r) {
+try {
+r.run();
+fail(&quot;Exception &quot; + ex.getName() + &quot; not thrown&quot;);
+} catch (Throwable e){
+

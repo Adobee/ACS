@@ -1,0 +1,14 @@
+int res = 0;
+int len = s.length();
+boolean ifEmpty = true;
+int preRes = 0;
+for(int i=0;i<len;i++){
+preRes = res==0? preRes : res;
+res = 0;
+}
+}
+if(res==0 &amp;&amp; ifEmpty==false)    res = preRes;
+return res;
+}
+}
+

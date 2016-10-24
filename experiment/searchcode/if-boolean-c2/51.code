@@ -1,0 +1,8 @@
+return (c >= &#39;0&#39; &amp;&amp; c <= &#39;9&#39;) || (c >= &#39;a&#39; &amp;&amp; c <= &#39;z&#39;) || (c >= &#39;A&#39; &amp;&amp; c <= &#39;Z&#39;);
+}
+
+private boolean isSameChar(char c1, char c2) {
+if (c1 == c2) return true;
+if (c1 >= &#39;a&#39; &amp;&amp; c1 <= &#39;z&#39; &amp;&amp; c2 >= &#39;A&#39; &amp;&amp; c2 <= &#39;Z&#39; &amp;&amp; c1-c2 == &#39;a&#39;-&#39;A&#39;) return true;
+if (c1 >= &#39;A&#39; &amp;&amp; c1 <= &#39;Z&#39; &amp;&amp; c2 >= &#39;a&#39; &amp;&amp; c2 <= &#39;z&#39; &amp;&amp; c1-c2 == &#39;A&#39;-&#39;a&#39;) return true;
+

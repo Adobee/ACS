@@ -1,0 +1,11 @@
+public void load(MementoIF load) {
+sign = ((Memento) load).getSaveSign();
+}
+
+private class Memento implements MementoIF {
+
+private String saveSign;
+
+public Memento() {
+saveSign = sign;
+

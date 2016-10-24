@@ -1,0 +1,9 @@
+super.tick(dt);
+if(fireCD > 0) {
+fireCD -= dt;
+} else {
+double mindsq = Double.POSITIVE_INFINITY;
+for(Entity e : game.entities) { // TODO Quadtree opti
+if(e instanceof Creep) {
+double dsq = Vec2.dsq(e.pos, this.pos);
+

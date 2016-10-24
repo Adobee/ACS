@@ -1,0 +1,8 @@
+public static Interval between(Instant start, Instant end){
+return new Interval(start, end);
+}
+
+public boolean contain(ZonedSnapElement<?> span) {
+Instant instant = span.object.instant();
+if (start.equals(instant) || end.equals(instant)) return true;
+

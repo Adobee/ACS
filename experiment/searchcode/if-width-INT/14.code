@@ -1,0 +1,12 @@
+width = y;
+data = new int[height][width];
+}
+
+public int getNode(int x, int y) {
+if (y < 0 || y >= height) return 0;
+if (x < 0 || x >= width) return 0;
+return data[y][x];
+}
+
+public void setNode(int x, int y, int t) {
+

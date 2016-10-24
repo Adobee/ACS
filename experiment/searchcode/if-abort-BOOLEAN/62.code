@@ -1,0 +1,8 @@
+@RealObject BroadcastReceiver receiver;
+
+private AtomicBoolean abort; // The abort state of the currently processed broadcast
+public void onReceive(Context context, Intent intent, AtomicBoolean abort) {
+this.abort = abort;
+onReceive(context, intent);
+// If the underlying receiver has called goAsync(), we should not finish the pending result yet - they&#39;ll do that
+

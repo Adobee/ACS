@@ -1,0 +1,7 @@
+totalErrors.incrementAndGet();
+AtomicInteger existingValue = vals.get(metricError.getMetricErrorType());
+if (existingValue != null) {
+} else {
+synchronized (this) {
+AtomicInteger previousValue = new AtomicInteger(1);
+

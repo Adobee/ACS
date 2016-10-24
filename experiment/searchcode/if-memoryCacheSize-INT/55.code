@@ -1,0 +1,7 @@
+public static DisplayImageOptions mNormalImageOptions;
+
+public static void init(Context context) {
+int memoryCacheSize = (int) (Runtime.getRuntime().maxMemory() / 10);
+MemoryCache memoryCache;
+File cacheDir = new File(FileUtils.getCacheDir(context),&quot;imageloader/Cache&quot;);
+

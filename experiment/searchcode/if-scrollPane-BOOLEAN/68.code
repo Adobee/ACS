@@ -1,0 +1,12 @@
+table = new PluginViewerTable();
+JScrollPane scrollPane = new JScrollPane(table);
+scrollPane.setSize(600, 400);
+scrollPane.setPreferredSize(scrollPane.getSize());
+setLocationRelativeTo(null);
+}
+
+@Override
+public void setVisible(boolean b) {
+if (b) {
+setTitle(table.currentContext.tabName);
+

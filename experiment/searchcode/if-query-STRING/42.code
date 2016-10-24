@@ -1,0 +1,12 @@
+public class QueryException extends PersistenceException {
+
+private static final long serialVersionUID = -3816965842838894324L;
+private String queryString;
+public String getMessage() {
+String msg = super.getMessage();
+if ( queryString!=null ) msg += &quot; [&quot; + queryString + &#39;]&#39;;
+return msg;
+}
+
+}
+

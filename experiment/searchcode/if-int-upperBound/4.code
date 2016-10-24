@@ -1,0 +1,15 @@
+public static void main(String[] args) {
+
+int upperBound[] = { 1,-8,2,5,-3,0,6,1,9};
+
+
+getSmallestMultiple(upperBound);
+
+}
+
+public static long getSmallestMultiple(int[] upperBound){
+for(int i=1;i<upperBound.length;i++){
+if(upperBound[i]>0){
+int c=0;
+upperBound1[c]=upperBound[i];
+

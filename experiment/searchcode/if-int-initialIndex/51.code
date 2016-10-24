@@ -1,0 +1,8 @@
+public static int[] arraySort(int [] array ,int initialIndex, int lastIndex){
+int [] sortedArray;
+
+if(initialIndex == lastIndex){
+int [] newArray = new int[1];
+newArray[0] = array[initialIndex];
+return newArray;
+

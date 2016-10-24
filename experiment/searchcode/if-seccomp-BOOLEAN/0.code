@@ -1,0 +1,9 @@
+// we couldn&#39;t link methods, could be some really ancient kernel (e.g. < 2.1.57) or some bug
+if (linux_libc == null) {
+throw new UnsupportedOperationException(&quot;seccomp unavailable: could not link methods. requires kernel 3.5+ with CONFIG_SECCOMP and CONFIG_SECCOMP_FILTER compiled in&quot;);
+default: throw new UnsupportedOperationException(&quot;prctl(PR_GET_NO_NEW_PRIVS): &quot; + JNACLibrary.strerror(errno));
+}
+}
+// check for SECCOMP
+if (linux_libc.prctl(PR_GET_SECCOMP, 0, 0, 0, 0) < 0) {
+

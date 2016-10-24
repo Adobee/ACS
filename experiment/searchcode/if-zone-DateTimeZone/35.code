@@ -1,0 +1,7 @@
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeConstants;
+import org.joda.time.DateTimeZone;
+import org.joda.time.Duration;
+public Interval getInterval(DateTimeZone dateTimeZone) {
+return new Interval(new DateMidnight(getCurrent(), dateTimeZone), new DateMidnight(getCurrent().plusDays(1), dateTimeZone).toDateTime().minusSeconds(1));
+

@@ -1,0 +1,7 @@
+public class LogInstant implements Comparable<LogInstant> {
+private final long recordedInstantMillis;
+private final int logLineNumber;
+
+public LogInstant(long recordedInstantMillis, int logLineNumber) {
+this.recordedInstantMillis = recordedInstantMillis;
+

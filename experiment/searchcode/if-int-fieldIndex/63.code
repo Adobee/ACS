@@ -1,0 +1,6 @@
+void deserialize(LoadContext lc, ClassDesc cd, Object dest, int fieldIndex) {
+// instanciate wrapper object
+if (cd.types[fieldIndex].clazz.equals(Boolean.class)) {
+UnsafeReflection.setObject(cd.fields[fieldIndex], dest, new Boolean(lc.loadBoolean()));
+} else if (cd.types[fieldIndex].clazz.equals(Character.class)) {
+

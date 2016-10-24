@@ -1,0 +1,5 @@
+static public double sgTemperatureCorrectionF(double SG, double F) {
+double correction = 1.313454 - 0.132674*F + 0.002057793*F*F - 0.000002627634*F*F*F;
+static public double sgTemperatureCorrectionC(double SG, double C) {
+return sgTemperatureCorrectionF(SG, celciusToFahrenheit(C));
+

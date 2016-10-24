@@ -1,0 +1,8 @@
+public RegulomeDbSupportingData(String supportData) throws Exception {
+String[] supportDataElements = PIPE_PATTERN.split(supportData);
+
+if(supportDataElements.length == 3){
+this.supportMethod = supportDataElements[1];
+this.supportValue = supportDataElements[2];
+} else if (supportDataElements.length == 2){
+

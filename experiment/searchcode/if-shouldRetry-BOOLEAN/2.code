@@ -1,0 +1,7 @@
+* @param result 結果
+* @return 再実行有無
+*/
+public boolean shouldRetry(Conditions conditions , TotalList<?> result) {
+boolean shouldRetry = result.getHitCount() > 0 &amp;&amp; result.isEmpty() &amp;&amp; conditions.getFirstResult() > 1;
+if(shouldRetry){
+

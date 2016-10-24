@@ -1,0 +1,8 @@
+public static BooleanWrapper combineWrappers(boolean desired, BooleanWrapper ... wrappers) {
+for (BooleanWrapper bw: wrappers){
+if (desired != bw.state)
+StringBuilder sb = new StringBuilder();
+for (BooleanWrapper error: errors){
+if (error.isFalse())
+sb.append(error.getMessage() + &quot;\n&quot;);
+

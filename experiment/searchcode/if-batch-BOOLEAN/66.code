@@ -1,0 +1,11 @@
+List<Batch> batchList = batchService.getAllBatchName();
+if (batchList != null) {
+model.addAttribute(&quot;batch&quot;, batchList);
+}
+List<CurrentBatch> currentBatchList = currentBatchService.getAllCurrentBatch();
+model.addAttribute(&quot;message&quot;, IConstant.CURRENT_BATCH_FAILURE_MESSAGE);
+}
+} else {
+boolean status = currentBatchService.saveCurrentBatch(currentBatch);
+if (status) {
+

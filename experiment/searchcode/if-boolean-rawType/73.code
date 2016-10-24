@@ -1,0 +1,6 @@
+IJavaClassType type = null;
+if( rawType.isArray() &amp;&amp; (rawType.isTypeVariable() || rawType.isParameterized()) ) {
+type = new AsmGenericArrayTypeJavaClassGenericArrayType( rawType, module );
+}
+else if( rawType.isTypeVariable() ) {
+

@@ -1,0 +1,7 @@
+public static double calc(ArrayList<Double> targetValues,
+ArrayList<Double> predictionValues) {
+if (ErrorChecker.check(targetValues, predictionValues))
+return 0.0;
+
+double targetMean = PearsonsCorrelationCoefficient.mean(targetValues);
+

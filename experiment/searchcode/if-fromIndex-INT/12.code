@@ -1,0 +1,9 @@
+* @param urlOrSomething
+* @return
+*/
+public static String getDomain(String urlOrSomething) {
+int fromIndex = urlOrSomething.indexOf(&quot;//&quot;);
+if (fromIndex > 0) {
+fromIndex = fromIndex + 2;
+int endIndex = urlOrSomething.indexOf(&quot;/&quot;, fromIndex);
+

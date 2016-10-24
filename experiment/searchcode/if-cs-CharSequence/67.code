@@ -1,0 +1,7 @@
+private static final int	NOT_FOUND	= -1;
+
+static int indexOf(final CharSequence cs, final int searchChar, int start) {
+if (cs instanceof String) return ((String) cs).indexOf(searchChar, start);
+final int sz = cs.length();
+if (start < 0) {
+

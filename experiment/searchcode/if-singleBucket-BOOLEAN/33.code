@@ -1,0 +1,6 @@
+public void loadItemsForSet(final MediaFeed feed, final MediaSet parentSet, int rangeStart, int rangeEnd) {
+if (parentSet != null) {
+DataSource dataSource = parentSet.mDataSource;
+if (dataSource != null) {
+dataSource.loadItemsForSet(feed, parentSet, rangeStart, rangeEnd);
+

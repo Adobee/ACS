@@ -1,0 +1,7 @@
+final double tolerance = circle.getTolerance();
+Vertex previousVertex = start;
+if (unwrappedEnd >= length - tolerance) {
+// the edge ends while still outside of the circle
+if (unwrappedEnd >= 0) {
+previousVertex = addSubEdge(previousVertex, end,
+

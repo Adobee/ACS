@@ -1,0 +1,7 @@
+Clazz clazz = getClazzCache(appId, name);
+if (clazz == null) {
+//未找到缓存
+clazz = clazzRepository.findByAppIdAndName(appId, name);
+if (clazz == null) {
+throw new SimpleError(SimpleCode.CLAZZ_NOT_FOUND);
+

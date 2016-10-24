@@ -1,0 +1,6 @@
+public static Map<String, InetAddress> getLocalIpAddress() {
+Map<String, InetAddress> result = new HashMap<String, InetAddress>();
+for (Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses(); enumIpAddr.hasMoreElements();) {
+InetAddress inetAddress = enumIpAddr.nextElement();
+if (!inetAddress.isLoopbackAddress() &amp;&amp; inetAddress instanceof Inet4Address) {
+

@@ -1,0 +1,13 @@
+double ACCURACY = 0.00001;
+double lower, upper, guess;
+if(num < 0) return -1;
+if(num == 0 || num == 1) return num;
+
+if(num <1)
+while(upper-lower > ACCURACY)
+{
+
+guess = (lower + upper)/2;
+if( guess * guess > num)
+upper = guess;
+

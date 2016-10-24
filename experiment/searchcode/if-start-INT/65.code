@@ -1,0 +1,9 @@
+//O(n)
+public class Solution {
+public int[][] generateMatrix(int n) {
+// Start typing your Java solution below
+// DO NOT write main() function
+if(n<0)
+return null;
+int [][] ans = new int[n][n];
+

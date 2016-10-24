@@ -1,0 +1,12 @@
+package TwoSubarraySameSum;
+
+public class TwoSubarraySameSum {
+public static boolean isSubsetSum(int[] a, int n, int sum) {
+for (int i = 0; i < n; i++)
+sum += a[i];
+
+if (sum % 2 != 0)
+return false;
+
+boolean[][] partition = new boolean[sum / 2 + 1][n + 1];
+

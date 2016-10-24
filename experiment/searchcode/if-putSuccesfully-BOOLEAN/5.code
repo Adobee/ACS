@@ -1,0 +1,7 @@
+* Decorator for {@link MemoryCacheAware}. Provides special feature for cache: if some cached object age exceeds defined
+* value then this object will be removed from cache.
+@Override
+public boolean put(K key, V value) {
+boolean putSuccesfully = cache.put(key, value);
+if (putSuccesfully) {
+

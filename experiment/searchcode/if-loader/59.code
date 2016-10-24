@@ -1,0 +1,9 @@
+public static ConfigLoader getInstance(Config type) {
+ConfigLoader loader = null;
+if (type.equals(Config.XML)) {
+if (xmlLoader == null) {
+xmlLoader = new XmlConfigLoader();
+}
+loader = xmlLoader;
+} else if (type.equals(Config.CLASS)) {
+

@@ -1,0 +1,14 @@
+private static Logger log = Logger.getLogger( &quot;PlotResponseTime&quot; );
+
+int bucketWidth=0;
+int numBuckets=0;
+Bucket[] good;
+long minStart = Long.MAX_VALUE;
+if( minStart > op.start )
+minStart = op.start;
+
+if( maxEnd < op.end )
+maxEnd = op.end;
+
+long duration = op.end - op.start;
+

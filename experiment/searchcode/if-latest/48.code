@@ -1,0 +1,11 @@
+return latestSuccessfulExecution;
+}
+
+public boolean consider(final JobExecution execution) {
+if (execution != null) {
+if (latestExecution == null) {
+latestExecution = execution;
+}
+
+if (latestSuccessfulExecution == null &amp;&amp; execution.getStatus() == BatchStatus.COMPLETED) {
+

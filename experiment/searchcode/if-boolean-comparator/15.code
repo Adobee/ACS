@@ -1,0 +1,10 @@
+package by.kov.training.hospital.webapp.common.comparator;
+
+import java.util.Comparator;
+
+public class DataSortComparator<T> implements Comparator<T> {
+private int factor;
+
+public DataSortComparator(Comparator<T> comparator, boolean isAscending) {
+if (comparator == null) {
+

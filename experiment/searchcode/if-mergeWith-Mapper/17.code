@@ -1,0 +1,6 @@
+final Mapper update = mapper.parse(context);
+if (update != null) {
+merge(mapper, update);
+public static void merge(Mapper mergeInto, Mapper mergeWith) {
+mergeInto.merge(mergeWith, newStrictMergeContext());
+

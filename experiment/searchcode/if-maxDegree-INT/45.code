@@ -1,0 +1,14 @@
+public int maxDegree()
+{
+int maxDegree = adj[0].size();
+
+for (int i=1; i < V; i++)
+maxDegree = (maxDegree < adj[i].size()?adj[i].size():maxDegree);
+}
+
+return maxDegree;
+}
+
+public int V() { return V; }
+public int E() { return E; }
+

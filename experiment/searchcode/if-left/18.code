@@ -1,0 +1,18 @@
+while (left < right &amp;&amp; nums[left] != val) {
+left++;
+}
+while (right > left &amp;&amp; nums[right] == val) {
+right--;
+}
+if (left < right) {
+left++;
+right--;
+}
+}
+if (nums[left] == val) {
+return left;
+}
+return left + 1;
+}
+}
+

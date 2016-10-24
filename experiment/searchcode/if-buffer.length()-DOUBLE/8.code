@@ -1,0 +1,11 @@
+private int size = 0;
+private double[] buffer;
+
+public CircularBuffer(int maxlen) {
+buffer = new double[maxlen];
+tail = (tail + 1) % buffer.length;
+if (size == buffer.length) {
+head = (head + 1) % buffer.length;
+} else {
+size++;
+

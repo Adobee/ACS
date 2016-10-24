@@ -1,0 +1,13 @@
+super();
+
+this.expected = expected;
+}
+
+@Override
+public boolean matches(Object o) {
+if (!o.getClass().equals(expected.getClass())) {
+boolean[][] m = (boolean[][]) o;
+
+if (m.length != expected.length) {
+return false;
+

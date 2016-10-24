@@ -1,0 +1,15 @@
+public static void main(String[] args) {
+
+boolean gui = true;
+boolean https = true;
+if (args.length != 0) {
+int i;
+for (i = 0; i < args.length; i++) {
+Common.initResourcesFolder();
+Common.initSettings();
+
+if (https) {
+Common.initCertificate();
+} else {
+Common.changeSetting(&quot;https&quot;, false);
+

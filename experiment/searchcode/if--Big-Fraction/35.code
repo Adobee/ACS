@@ -1,0 +1,10 @@
+if(denominator.equals(FractionConstants.ZERO)) throw new ArithmeticException(FractionConstants.ERR_DIVITE_BY_ZERO);
+
+BigFraction num, den;
+
+if (numerator instanceof BigInteger)
+{
+num = BigFraction.privateCreateFraction((BigInteger) numerator, BigInteger.ONE);
+}
+else if (numerator instanceof Long ||
+

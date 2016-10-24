@@ -1,0 +1,15 @@
+shortArray = new int[size];
+longArray = new int[size * 2];
+index = -1;
+first = true;
+}
+
+public void add(int val) {
+if (index >= shortArray.length - 1) {
+prevShortArrayLength = shortArray.length;
+shortArray = new int[longArray.length * 2];
+}
+shortArray[++index] = val;
+longArray[++index] = val;
+if (!first) {
+

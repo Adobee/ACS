@@ -1,0 +1,10 @@
+package com.selonj.retrofit.utils;
+
+import java.lang.annotation.Annotation;
+
+/**
+* Created by Administrator on 2016-04-19.
+public static <T extends Annotation> T getAnnotation(Class<T> annotationType, Annotation[] annotations) {
+for (Annotation candidate : annotations) {
+if (annotationType.isInstance(candidate)) {
+

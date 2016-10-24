@@ -1,0 +1,10 @@
+public class WidestDimensionChoicer implements DimensionChoicer<Float> {
+private int maxDimension;
+
+public WidestDimensionChoicer(int maxDimension) {
+this.maxDimension = maxDimension;
+}
+
+@Override
+public void reset(int maxDimension) {
+

@@ -1,0 +1,13 @@
+private Handler mHandler = new Handler(new Handler.Callback() {
+@Override
+public boolean handleMessage(Message msg) {
+if (msg.what == RES_COMPLETE) {
+isRefresh = true;
+getLiveList();
+}
+
+private boolean isBusy;
+
+private void getLiveList() {
+if (isBusy) {
+

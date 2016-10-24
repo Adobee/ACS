@@ -1,0 +1,8 @@
+public OptimizationObjective() {
+weights = new Hashtable<String, Double>();
+}
+
+public double getWeight(String name) {
+Double weight = weights.get(name);
+if (weight==null) weight = new Double(0.0);
+

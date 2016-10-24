@@ -1,0 +1,13 @@
+super.writeState(output);
+movingShape.writeState(output);
+}
+
+
+
+public boolean setMovingShape(MatrixShape shape) {
+MatrixShape temp = movingShape.getRotatedCopy(1);
+
+removeShape(movingShape);
+if (placeShape(temp)) movingShape=temp;
+else placeShape(movingShape);
+

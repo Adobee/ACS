@@ -1,0 +1,9 @@
+char character = string.charAt(0);
+for (int i = 1; i < string.length(); i++) {
+if (character != string.charAt(i)) {
+character = string.charAt(i);
+break;
+}
+}
+return character;
+

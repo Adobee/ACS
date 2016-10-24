@@ -1,0 +1,11 @@
+if(_effected.isDead())
+return false;
+
+if(_effected.getConsumedSouls() < 0)
+return false;
+
+int damage = (int) calc();
+
+if(_effected.getConsumedSouls() < damage)
+_effected.setConsumedSouls(0, null);
+

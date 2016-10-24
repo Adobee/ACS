@@ -1,0 +1,9 @@
+public IsSamePerson(Person expectedValue) {
+this.expectedValue = expectedValue;
+}
+
+@Override
+public boolean matches(Object actualValue) {
+if (actualValue == null) {
+return expectedValue == null;
+

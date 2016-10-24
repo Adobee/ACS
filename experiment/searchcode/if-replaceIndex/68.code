@@ -1,0 +1,10 @@
+ArrayList inputList = new ArrayList(input);
+int replaceIndex = 0;
+Object toReplace = null;
+
+for (Object object : inputList)
+{
+if (object instanceof Integer)
+{
+replaceIndex = inputList.indexOf(object);
+

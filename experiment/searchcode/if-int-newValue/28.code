@@ -1,0 +1,11 @@
+public void writeLong(final long value) {
+final boolean positive = value >= 0;
+long newValue;
+byte nextByte;
+if (positive) {
+long newValue;
+int nextByte;
+if (positive) {
+newValue = value;
+nextByte = 0;
+

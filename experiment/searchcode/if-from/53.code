@@ -1,0 +1,8 @@
+public int maxArea(int[] height) {
+if (height == null || height.length < 2)
+return 0;
+int from = 0;
+int to = height.length - 1;
+max = Math.max(max, Math.min(height[from], height[to]) * (to - from));
+if (height[from] < height[to]) {
+

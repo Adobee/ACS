@@ -1,0 +1,12 @@
+import jMusic.Source;
+import jMusic.Timer;
+
+
+final class StomperEnvelope extends Component implements RA
+{
+double t0,t1,v0,v1,a;
+double t = probe[Time].output();
+double x = (t-t0)/(t1-t0);
+if(x<0) return 0;
+if(x>1) return 0;
+

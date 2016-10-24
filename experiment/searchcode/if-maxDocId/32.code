@@ -1,0 +1,9 @@
+final public AtomicLong timeMeasure = new AtomicLong(0);
+private List<FilterBlockDocIdSet> docIdSets;
+private int maxDocId = Integer.MIN_VALUE;
+private int minDocId = Integer.MAX_VALUE;
+minDocId = Math.min(minDocId, blockDocIdSet.getMinDocId());
+maxDocId = Math.max(maxDocId, blockDocIdSet.getMaxDocId());
+}
+for (FilterBlockDocIdSet blockDocIdSet : docIdSets) {
+

@@ -1,0 +1,10 @@
+static double[][] initialMatrix;
+static double[] xValues;
+static final int height = 3;
+static final int length = 3;
+public static void main(String[] arg) {
+xValues = new double[3];
+
+//запросить ввод матрицы
+initialMatrix = new double [3][4];
+

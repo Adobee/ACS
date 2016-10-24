@@ -1,0 +1,11 @@
+public PlaneView(Plane plane, Mesh2d mesh) {
+if (plane == null)
+throw new NullPointerException(&quot;plane&quot;);
+
+if (mesh == null)
+double x = plane.getX() + plane.getWidth();
+double y = plane.getY() + plane.getHeight();
+gl.glTranslatef((float) x, (float) y, 0f);
+
+if (plane.getFlyDirection() == Direction.UP) {
+

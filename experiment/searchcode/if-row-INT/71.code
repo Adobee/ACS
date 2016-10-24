@@ -1,0 +1,12 @@
+if (board[1][col] == &#39;O&#39;)
+{
+nodes.add(new IntPair(1, col));
+}
+}
+if (board[ROW - 1][col] == &#39;O&#39;)
+if (pair.col > 0 &amp;&amp; board[pair.row][pair.col - 1] == &#39;O&#39;)
+{
+nodes.add(new IntPair(pair.row, pair.col - 1));
+}
+if (pair.col < COL - 1 &amp;&amp; board[pair.row][pair.col + 1] == &#39;O&#39;)
+

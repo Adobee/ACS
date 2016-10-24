@@ -1,0 +1,7 @@
+public final int denominator;
+
+public Fraction(final int numerator, final int denominator) {
+if(denominator == 0 ) throw new RuntimeException(&quot;undefined fraction&quot;);
+this.numerator = normalize(numerator,denominator)[0];
+this.denominator = normalize(numerator,denominator)[1];;
+

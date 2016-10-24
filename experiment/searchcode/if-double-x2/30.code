@@ -1,0 +1,9 @@
+public double newX1(double x1, double y1, double x2, double y2)
+{
+if (x1 == x2)
+{
+length = (Math.abs(y1 - y2) * ratio);
+public double newX2(double x1, double y1, double x2, double y2)
+{
+if (x1 == x2)
+

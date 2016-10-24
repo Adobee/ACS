@@ -1,0 +1,11 @@
+execute(command, hintFunction.apply(command));
+}
+
+
+private static int hint(Runnable command) {
+if (command instanceof PickyTask) {
+* A {@link FutureTask} implementing {@link PickyTask}.
+* <p>
+* Note: if the wrapped {@link Callable} or {@link Runnable} was an instance of
+* {@link PickyTask}, it will use {@link PickyTask#hint()} value, if not use {@link Object#hashCode()}.
+

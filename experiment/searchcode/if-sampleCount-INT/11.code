@@ -1,0 +1,10 @@
+solution.isFlipped[2] = true;
+
+int sampleCount = 0;
+for(OpSample s : solution.getTargetSamples()){
+++sampleCount;
+if(sampleCount == 1){
+assertFalse(s.isFlipped());
+}
+if(sampleCount == 2){
+

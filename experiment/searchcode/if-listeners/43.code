@@ -1,0 +1,12 @@
+public Listeners(List<Listener> listeners) {
+this.listeners = listeners;
+}
+
+public void addNewListener(String ref) {
+if (this.listeners == null) this.listeners = new ArrayList<Listener>();
+this.listeners.add(new Listener(ref));
+}
+
+public void removeListener(Listener listener) {
+if (this.listeners == null) return;
+

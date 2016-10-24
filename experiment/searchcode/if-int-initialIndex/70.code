@@ -1,0 +1,8 @@
+for (int i = 0; i <= s.length - 1; i++) { 								// Keeps track of the index of the words
+
+int initialIndex = 0;
+int finalIndex = 0;
+String wordString = &quot;&quot;;
+
+for (int j = 0; j <= s[i].length() - 1; j++) {	 					// Keeps track of the index of the letters
+

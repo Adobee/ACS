@@ -1,0 +1,13 @@
+this.postData = (null == postData ? &quot;&quot; : postData);
+}
+
+public boolean hasContentType () {
+return this.headers.containsKey(&quot;Content-Type&quot;) || this.headers.containsKey(&quot;content-type&quot;);
+return null;
+}
+}
+
+public MediaType getMediaType () {
+if (this.hasContentType()) {
+return MediaType.parse(this.getContentType());
+

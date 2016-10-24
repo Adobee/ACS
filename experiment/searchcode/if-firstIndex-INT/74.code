@@ -1,0 +1,14 @@
+log = new Value[LOG_SIZE];
+curSize = 0;
+firstIndex = 0;
+}
+
+public int size() {
+return curSize;
+}
+
+public Value get(int index) {
+int i = firstIndex + index;
+if (i >= LOG_SIZE) i -= LOG_SIZE;
+return log[i];
+

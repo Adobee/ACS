@@ -1,0 +1,12 @@
+getPositionInSectionForPosition(position), convertView, parent);
+}
+
+@Override
+public final int getItemViewType(int position) {
+if (isSectionHeader(position)) {
+Integer cachedSectionCount = mSectionCountCache.get(section);
+if (cachedSectionCount != null) {
+return cachedSectionCount;
+}
+int sectionCount = getCountForSection(section);
+

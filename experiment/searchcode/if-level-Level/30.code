@@ -1,0 +1,13 @@
+private Level currentLevel;
+
+public void addLevel(Level level) {
+levelMap.put(level.getName(), level);
+if (currentLevel == null) currentLevel = level;
+player.setPos(playerSpawn.getX(), playerSpawn.getY());
+if (level.getPlayer() == null) level.add(player);
+player.init(level);
+
+// do other initialization stuff to the level here
+}
+}
+

@@ -1,0 +1,10 @@
+public double getDirection() {
+return direction;
+}
+
+
+public String getCardinalDirectionString(double direction) {
+
+if (direction >= 347.75 || direction < 11.25) {
+return &quot;N&quot;;
+

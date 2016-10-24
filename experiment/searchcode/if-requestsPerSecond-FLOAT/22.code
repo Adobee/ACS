@@ -1,0 +1,5 @@
+internalRequest.setTaskId(new TaskId(request.param(&quot;taskId&quot;)));
+Float requestsPerSecond = AbstractBaseReindexRestHandler.parseRequestsPerSecond(request);
+if (requestsPerSecond == null) {
+throw new IllegalArgumentException(&quot;requests_per_second is a required parameter&quot;);
+

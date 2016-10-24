@@ -1,0 +1,14 @@
+printLCS(K, xarr, m, n);
+
+}
+
+public static void printLCS(int[][] K, int[] xArray, int m, int n) {
+
+if (m == 0 || n == 0) {
+return;
+}
+
+if (K[m - 1][n - 1] == 1) {
+printLCS(K, xArray, m - 1, n - 1);
+System.out.print(xArray[m - 1] + &quot; &quot;);
+

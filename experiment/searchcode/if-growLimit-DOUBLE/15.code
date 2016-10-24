@@ -1,0 +1,13 @@
+* Factor for expanding the interval.
+*/
+private final double growLimit;
+/**
+* Counter for function evaluations.
+*/
+private final Incrementor evaluations = new Incrementor();
+double w = xB - ((xB - xC) * tmp2 - (xB - xA) * tmp1) / denom;
+double wLim = xB + growLimit * (xC - xB);
+
+double fW;
+if ((w - xC) * (xB - w) > 0) {
+

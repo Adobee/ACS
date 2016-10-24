@@ -1,0 +1,8 @@
+package ca.ulaval.glo4002.centralServer.domain.user;
+
+public class UserDirectoryLocator {
+private UserDirectory userDirectory = new UserDirectory();
+
+public static synchronized UserDirectoryLocator getInstance() {
+if (instance == null) {
+

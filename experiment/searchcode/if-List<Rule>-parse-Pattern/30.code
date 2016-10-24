@@ -1,0 +1,9 @@
+public Rule parseRule(String input) throws ParseException {
+Matcher matcher = rulePattern.matcher(input);
+if (!matcher.matches()) {
+throw new ParseException(
+Matcher matcher = predicatePattern.matcher(input);
+if (!matcher.matches()) {
+throw new ParseException(
+&quot;The given input &#39;&quot; + input + &quot;&#39; is not a valid predicate.&quot;);
+

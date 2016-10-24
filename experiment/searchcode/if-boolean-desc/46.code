@@ -1,0 +1,13 @@
+import com.google.common.collect.Lists;
+
+public enum BooleanEnum {
+是(&quot;0&quot;,&quot;是&quot;),
+否(&quot;1&quot;,&quot;否&quot;);
+
+private String code;
+private String desc;
+public static BooleanEnum getByDesc(String desc){
+for(BooleanEnum enable : getAll()){
+if(enable.desc.equals(desc)){
+return enable;
+

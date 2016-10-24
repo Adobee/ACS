@@ -1,0 +1,6 @@
+public final static Vector3d crossProduct(Vector3d v1, Vector3d v2) {
+return new Vector3d(v1.y*v2.z-v1.z*v2.y, v1.z*v2.x-v1.x*v2.z, v1.x*v2.y
+public final static boolean isColinear(Vector3d v1, Vector3d v2) {
+return Vector3d.crossProduct(v1.normalize(),
+v2.normalize()).norm()<ACCURACY;
+

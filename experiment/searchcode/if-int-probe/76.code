@@ -1,0 +1,12 @@
+return images.get(PROBE_FAILED);
+}
+return null;
+}
+
+public String getColumnText(Object element, int columnIndex) {
+return null;
+}
+
+final IProbe probe = (IProbe) element;
+if(probe.getConnectState() == ConnectState.CONNECT_FAILED) {
+

@@ -1,0 +1,13 @@
+double intrests_2;
+double intrests_3;
+
+double threshold_1;
+double threshold_2;
+
+public CAccountStateB()
+public double setInterest(CAccount account)
+{
+double balance = account.GetBalance();
+
+if (balance < threshold_1)
+

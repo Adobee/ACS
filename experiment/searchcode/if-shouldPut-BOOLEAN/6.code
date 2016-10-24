@@ -1,0 +1,6 @@
+private boolean addNewDevice(BluetoothDevice input){
+boolean shouldPut = true;
+for (BluetoothDevice d : m_bluetoothDeviceList){
+if (d.getAddress().equals(input.getAddress())){
+shouldPut = false;
+

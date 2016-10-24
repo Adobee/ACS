@@ -1,0 +1,9 @@
+return this.jceMode;
+}
+
+public int getOutputSize(int blockSize, int inputLength) {
+if (this == CBC) {
+return blockSize * ((inputLength / blockSize) + 2);
+}
+if (this == ECB) {
+

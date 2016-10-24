@@ -1,0 +1,13 @@
+public void printAllPermutations(String string)
+{
+char[] chars = string.toCharArray();
+
+permute(chars, 0, new Count());
+permuteWithDuplicates(chars, 0, new Count());
+}
+
+
+private void permute(char[] chars, int i, Count count)
+{
+if (i == chars.length - 1)
+

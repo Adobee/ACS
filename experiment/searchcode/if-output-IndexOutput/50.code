@@ -1,0 +1,11 @@
+int region2 = labeled.data[indexLabeled+labeled.stride];
+
+if( region0 != region1 ) {
+output.data[indexOutput] = 1;
+output.data[indexOutput+1] = 1;
+}
+
+if( region0 != region2 ) {
+output.data[indexOutput] = 1;
+output.data[indexOutput+output.stride] = 1;
+

@@ -1,0 +1,15 @@
+return 1;
+}
+}
+
+@Test
+public void testPolyFit()
+{
+// y = (x-2)^2 = x^2 -4x + 4
+final double params[] = new double[] { 1.0, -4.0, 4.0 };
+lm.solve();
+
+// get params.
+final double[] fit_params = lm.getParameters();
+System.out.format(&quot;\n\n# Fit: y = %g * x^2 + %g *x + %g + Noise\n&quot;,
+

@@ -1,0 +1,9 @@
+public boolean isValidSudoku(char[][] board) {
+
+boolean[][] row = new boolean[9][9];
+boolean[][] column = new boolean[9][9];
+if(board[i][j]==&#39;.&#39;){
+continue;
+}
+if(row[i][c]||column[j][c]||block[i - i % 3 + j / 3][c]){
+

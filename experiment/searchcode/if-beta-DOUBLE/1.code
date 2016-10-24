@@ -1,0 +1,10 @@
+* @author <a href=&quot;mailto:jmdale@gmail.com&quot;>Joseph Dale</a>
+* @version 20060214
+*/
+public class BetaDistribution extends DoubleDistribution {
+private double logNorm;
+
+public BetaDistribution(double alpha, double beta) {
+if (alpha <= 0) {
+throw new IllegalArgumentException(&quot;alpha parameter must be positive: &quot; + alpha + &quot;.&quot;);
+

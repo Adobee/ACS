@@ -1,0 +1,12 @@
+private final DocumentText text;
+
+private final int startPos, endPos;
+
+public SourceContext(DocumentText text, int startPos, int endPos) {
+return text.substring(startPos, endPos);
+}
+
+@Override
+public String toString() {
+if (getStart().equals(getEnd()))
+

@@ -1,0 +1,14 @@
+package org.rzo.yajsw.nettyutils;
+
+import org.jboss.netty.channel.ChannelEvent;
+import org.jboss.netty.channel.ChannelPipelineCoverage;
+public SystemOutLoggingFilter(String name)
+{
+_name = name;
+}
+
+@Override
+public void log(ChannelEvent e)
+{
+if (e instanceof MessageEvent)
+

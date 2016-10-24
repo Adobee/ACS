@@ -1,0 +1,9 @@
+.put(&quot;cluster.routing.allocation.cluster_concurrent_rebalance&quot;, -1)
+.build());
+
+final int numberOfIndices = 50;
+logger.info(&quot;Building initial routing table with &quot; + numberOfIndices + &quot; indices&quot;);
+MetaData.Builder metaDataBuilder = MetaData.builder();
+for (int i = 0; i < numberOfIndices; i++) {
+metaDataBuilder.put(IndexMetaData.builder(&quot;test&quot; + i).numberOfShards(1).numberOfReplicas(0));
+

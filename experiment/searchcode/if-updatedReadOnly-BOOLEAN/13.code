@@ -1,0 +1,5 @@
+String autoExpandReplicas = indexMetaData.settings().get(IndexMetaData.SETTING_AUTO_EXPAND_REPLICAS);
+if (autoExpandReplicas != null &amp;&amp; Booleans.parseBoolean(autoExpandReplicas, true)) { // Booleans only work for false values, just as we want it here
+ClusterBlocks.Builder blocks = ClusterBlocks.builder().blocks(currentState.blocks());
+Boolean updatedReadOnly = openSettings.getAsBoolean(IndexMetaData.SETTING_READ_ONLY, null);
+

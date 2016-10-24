@@ -1,0 +1,8 @@
+public Boolean isOptionEquivalentTo(IMutationOption mutationOption) {
+if (mutationOption == null) {
+return false;
+}
+if (mutationOption.getClass() != this.getClass()) {
+RemoveRuleMutationOption otherRemoveRuleMutationOption = (RemoveRuleMutationOption) mutationOption;
+if (areEtlTransformationRulesEqual(transformationRule, otherRemoveRuleMutationOption.getTransformationRule())) {
+

@@ -1,0 +1,11 @@
+double del_Max = var_Max - var_Min;
+
+double l = ( var_Max + var_Min ) / 2.0;
+
+double s;
+if ( del_Max == 0 ) {
+double del_B = ( ( ( var_Max - var_B ) / 6 ) + ( del_Max / 2 ) ) / del_Max;
+
+double H = 0.0f;
+if      ( var_R == var_Max ) H = del_B - del_G;
+

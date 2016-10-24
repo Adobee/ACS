@@ -1,0 +1,12 @@
+@Override
+public boolean add(T object)
+{
+boolean res = super.add(object);
+if (res) {
+super.add(index, object);
+mOnAddedListener.onAdded();
+};
+
+@Override
+public boolean addAll(Collection<? extends T> collection)
+

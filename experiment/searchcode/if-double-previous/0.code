@@ -1,0 +1,11 @@
+package sfs.stat.cpu;
+
+public class CPUStat {
+
+private double previousUser;
+private double previousNice;
+private double previousSystem;
+private double previousIdle;
+private double usage;
+public static final String UNIT = &quot;%&quot;;
+

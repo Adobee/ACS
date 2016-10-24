@@ -1,0 +1,10 @@
+/** Tablica przechowuj¹ca informacje czy dzien istnieje w planie. Wartosc 1 = istnieje. */
+private int[] dayIndex = new int[7];
+public void saveAllData(int dayIndex[], Elements elements)
+{
+for(int i=0; i<7; i++)
+{
+if(dayIndex[i]!=-1)
+{
+findIndex(dayIndex, i, elements);
+

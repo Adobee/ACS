@@ -1,0 +1,12 @@
+private static final int DEFAULT_MAX_FILE_COUNT = 5;
+private final int maxFileCount;
+
+/**
+* 생성자 (기본 retry 횟수는 5)
+*/
+public SameNameCountingUniqueFileNamePolicyFactory() {
+* @param maxFileCount maxFileCount 횟수 - 1보다 작은 값이 유입되면 SameNameCountingUniqueFileNamePolicyFactory.DEFAULT_MAX_FILE_COUNT가 지정됩니다.
+*/
+public SameNameCountingUniqueFileNamePolicyFactory(int maxFileCount) {
+if (maxFileCount < 1) {
+

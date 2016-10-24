@@ -1,0 +1,8 @@
+import org.apache.commons.math.linear.OpenMapRealVector;
+import org.apache.commons.math.linear.RealVectorFormat;
+this.vector = new OpenMapRealVector(terms.size());
+}
+
+public void setEntry(String term, int freq) {
+if (terms.containsKey(term)) {
+

@@ -1,0 +1,12 @@
+public static Object eval(Object o ){
+
+if( 	&quot;interface&quot;.equals((String)o) &amp;&amp;
+((Boolean)Identifier.eval(o)) &amp;&amp;
+((Boolean)InterfaceBody.eval(o)) ){
+return true;
+}
+
+
+if( 	((Boolean)InterfaceModifiers.eval(o)) &amp;&amp;
+&quot;interface&quot;.equals((String)o) &amp;&amp;
+

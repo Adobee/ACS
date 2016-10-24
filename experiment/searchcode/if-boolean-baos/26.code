@@ -1,0 +1,11 @@
+public class MaplePacketLittleEndianWriter {
+
+private final ByteArrayOutputStream baos;
+private static final Charset ASCII = Charset.forName(&quot;US-ASCII&quot;); // US-ASCII,
+public final void write(final boolean b) {
+baos.write(b ? 1 : 0);
+}
+
+/**
+* Write a short integer to the stream.
+

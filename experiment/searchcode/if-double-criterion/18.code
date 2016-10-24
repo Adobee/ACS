@@ -1,0 +1,15 @@
+public class RatingsFunction extends MapFunction<Candidate, Double>
+{
+/** Criterion. */
+private final Criterion _criterion;
+Double answer = null;
+
+if (x != null)
+{
+answer = x.getRating(_criterion);
+}
+
+return answer;
+}
+}
+

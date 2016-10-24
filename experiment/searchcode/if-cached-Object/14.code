@@ -1,0 +1,7 @@
+private synchronized boolean setCachedObjectWithoutRefresh(CachedRemoteObject cachedObject) {
+if (this.cachedObject == cachedObject) {
+return false;
+}
+
+if (this.cachedObject != null &amp;&amp; this.cachedObject.equals(cachedObject)) {
+

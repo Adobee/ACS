@@ -1,0 +1,8 @@
+return Float.intBitsToFloat((hbits &amp; 0x8000) << 16 | exp << 13
+| 0x3ff);
+} else if (mant != 0) // &amp;&amp; exp==0 -> subnormal
+return sign | val - 0x38000000 >>> 13; // exp - 127 + 15
+if (val < 0x33000000) // too small for subnormal
+return sign; // becomes +/-0
+val = (fbits &amp; 0x7fffffff) >>> 23; // tmp exp for subnormal calc
+

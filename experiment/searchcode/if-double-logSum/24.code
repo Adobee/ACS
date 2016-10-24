@@ -1,0 +1,12 @@
+DoubleList xs = new ArrayDoubleList();
+
+public void add(double x) {
+if (x > Double.NEGATIVE_INFINITY) xs.add(x);
+}
+
+public double logSum() {
+return SloppyMath.logAdd(xs.toArray());
+}
+
+}
+

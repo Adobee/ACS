@@ -1,0 +1,7 @@
+private Calendar calendar = Calendar.getInstance();
+final int CUR_YEAR = calendar.get(Calendar.YEAR);
+final int CUR_MONTH = calendar.get(Calendar.MONTH);
+private int defaultYear = CUR_YEAR;
+private int defaultMonth = CUR_MONTH;
+private int defaultDay = CUR_DAY;
+

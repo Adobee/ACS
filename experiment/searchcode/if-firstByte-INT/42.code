@@ -1,0 +1,9 @@
+firstByte = setBit(firstByte, OB_INT_SIGN_BIT_POS);
+if (isAdd)
+firstByte = setBit(firstByte, OB_INT_OPERATION_BIT_POS);
+firstByte |= (Math.abs(value) <= OB_MAX_INT_1B &amp;&amp; Math.abs(value) >= 0 ? Math.abs(value)
+byte[] ret = new byte[encodeLengthStr(str, charset)];
+ret[0] = Serialization.encode(firstByte);
+if (lenSize > 1) {
+for (int n = 0; n < lenSize - 1; n++) {
+

@@ -1,0 +1,12 @@
+public class MixedPasswordEncoder implements PasswordEncoder {
+
+@Override
+public String encode(CharSequence rawPassword) {
+if (rawPassword == null)
+return CodecUtils.digest(rawPassword.toString());
+}
+
+@Override
+public boolean matches(CharSequence rawPassword, String encodedPassword) {
+if (rawPassword == null)
+

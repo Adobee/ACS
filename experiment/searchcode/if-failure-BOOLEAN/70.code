@@ -1,0 +1,13 @@
+return failure;
+}
+
+
+@Override
+public boolean equals(Object obj) {
+if (obj == null)
+return false;
+if (! (obj instanceof TestFailure))
+return false;
+TestFailure other = (TestFailure)obj;
+if (! getTestDescription().equals(other.getTestDescription()))
+

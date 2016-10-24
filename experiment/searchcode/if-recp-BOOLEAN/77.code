@@ -1,0 +1,8 @@
+public boolean connect(IUnknown pSinkIntf, String riid, long provConnID) {
+if (riid.equals(&quot;java.util.Map&quot;)){ return this.handlers.connectToRecp(pSinkIntf, riid, provConnID); }
+public boolean disconnect(String riid, long connID) {
+if (riid.equals(&quot;java.util.Map&quot;)){ return this.handlers.disconnectFromRecp(connID); }
+return false;
+}
+}
+

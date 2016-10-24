@@ -1,0 +1,14 @@
+data = new Complex[dimX][dimY];
+}
+
+
+
+public Spectrum(int dimX, int dimY, double[][] real){
+
+if(real != null){
+this.dimX= dimX;
+
+for(int x = 0; x < dimX; x++){
+
+if(dimY < 1 || real[x].length != dimY)
+

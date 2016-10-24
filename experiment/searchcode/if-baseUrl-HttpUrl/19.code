@@ -1,0 +1,7 @@
+public String get(String path, Map<String, String> params) {
+try {
+HttpURL httpURL = new HttpURL(baseUrl() + path);
+HttpMethod getMethod = factory.create(HttpMethodFactory.GET);
+getMethod.setURI(httpURL);
+if (params != null) {
+

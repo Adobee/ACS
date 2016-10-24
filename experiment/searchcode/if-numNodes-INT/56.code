@@ -1,0 +1,11 @@
+public class RandomGraph extends ConnectedGraph {
+
+public RandomGraph(int numNodes, int numEdges) {
+
+// Limit check
+if (numEdges < numNodes - 1 || numEdges > numNodes * (numNodes - 1) / 2)
+// Look for the node with highest degree
+GraphNode maxNode = nodes[0];
+for (int i = 1; i < numNodes; i++)
+if (nodes[i].GetDegree() > maxNode.GetDegree())
+

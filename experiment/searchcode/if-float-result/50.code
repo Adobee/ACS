@@ -1,0 +1,15 @@
+Float b = Float.valueOf(args[1]);
+
+System.out.println(a);
+System.out.println(b);
+
+
+float result = obj.add(a, b);
+System.out.println(&quot;Ñóììà = &quot; + result);
+System.out.println(&quot;Ðàçíîñòü = &quot; + result);
+
+result = obj.mul(a, b);
+System.out.println(&quot;Óìíîæåíèå = &quot; + result);
+
+if ( b != 0) {
+

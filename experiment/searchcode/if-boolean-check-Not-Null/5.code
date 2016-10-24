@@ -1,0 +1,8 @@
+public class InputAvoidNotShortCircuitOperatorsForBooleanCheck {
+public static boolean x;
+public boolean y, z;
+boolean result = x|y||z; // !
+| (this.z // ! (because true/false is here)
+|| InputAvoidNotShortCircuitOperatorsForBooleanCheck.x)
+&amp;&amp; true || false;
+

@@ -1,0 +1,17 @@
+private ObjectTree _tree;
+
+
+ObjectTreeListenerEvent(ObjectTree source)
+{
+super(checkParams(source));
+_tree = source;
+private static ObjectTree checkParams(ObjectTree source)
+{
+if (source == null)
+{
+throw new IllegalArgumentException(&quot;ObjectTree == null&quot;);
+}
+return source;
+}
+}
+

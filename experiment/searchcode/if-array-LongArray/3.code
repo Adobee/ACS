@@ -1,0 +1,9 @@
+long[] temp; // avoid new if possible.
+int otherLength = other.longArray.length;
+long carry = 0;
+int delta;
+if (longArray.length < otherLength) {
+delta = otherLength - longArray.length;
+for (int i = otherLength; i >= 0; i--) {
+if (i - delta >= 0) {
+

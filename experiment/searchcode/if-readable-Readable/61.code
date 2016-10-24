@@ -1,0 +1,8 @@
+import com.douban.book.reader.exception.HumanReadable;
+import com.douban.book.reader.util.StringUtils;
+
+public class ArkBizException extends RestServerException implements HumanReadable {
+public CharSequence getHumanReadableMessage() {
+if (StringUtils.isNotEmpty(this.mHumanReadableMessage)) {
+return this.mHumanReadableMessage;
+

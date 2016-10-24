@@ -1,0 +1,7 @@
+public DateTime determineStart(DateTime instant) {
+if (this.dateTimeFieldType != null) {
+return instant.property(this.dateTimeFieldType).roundFloorCopy();
+}
+
+if (this == AggregationInterval.FIVE_MINUTE) {
+

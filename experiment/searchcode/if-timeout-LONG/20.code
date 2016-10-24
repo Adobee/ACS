@@ -1,0 +1,8 @@
+package Utils;
+
+public class SyncUtils {
+public static long adjustTimeout(long lasttime, long timeout) {
+if (timeout != -1) {
+long now = System.currentTimeMillis();
+long elapsed = (now == lasttime) ? 1 : (now - lasttime);
+

@@ -1,0 +1,12 @@
+extendLogFactorial(n);
+return logFactorial.get(n);
+}
+
+public double log_choose(int N, int x) {
+if(x < 0 || N < 0 || x > N) {
+throw new IllegalArgumentException(&quot;params: &quot; + N + &quot; &quot; + x);
+}
+if(x == N || x == 0 || N == 0) { return 0.0; }
+extendLogFactorial(N);
+double numer = logFactorial.get(N);
+

@@ -1,0 +1,7 @@
+public static <T extends Collection> Class<T> toCollectionClass(Class<T> toClass) {
+if (toClass.isAssignableFrom(ArrayList.class)) {
+toClass = (Class<T>) ArrayList.class;
+
+} else if (toClass.isAssignableFrom(HashSet.class)) {
+toClass = (Class<T>) HashSet.class;
+

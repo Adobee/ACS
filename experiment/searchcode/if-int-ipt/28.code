@@ -1,0 +1,9 @@
+IptBndListItm itmList = list.Get_at(j);
+for (int i = 0; i < itmList.Count(); i++) {
+IptBnd bnd = itmList.Get_at(i);
+if (String_.Eq(key, bnd.Key())) {
+static int AryIdx(IptEventType eventType) {
+int v = eventType.Val();
+if		(v == IptEventType_.KeyDown.Val())		return 0;
+else if (v == IptEventType_.KeyUp.Val())		return 1;
+

@@ -1,0 +1,8 @@
+import com.imageloader.cache.memory.MemoryCacheAware;
+
+/**
+* Decorator for {@link MemoryCacheAware}. Provides special feature for cache: if some cached object age exceeds defined
+boolean putSuccesfully = cache.put(key, value);
+if (putSuccesfully) {
+loadingDates.put(key, System.currentTimeMillis());
+

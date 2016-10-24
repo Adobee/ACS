@@ -1,0 +1,13 @@
+public static void removeTask(String taskId)
+{
+if(null!=taskMap.get(taskId))
+{
+taskMap.get(taskId).interrupt();
+taskMap.remove(taskId);
+}
+}
+
+public static void clearTask()
+{
+if (taskMap == null)
+

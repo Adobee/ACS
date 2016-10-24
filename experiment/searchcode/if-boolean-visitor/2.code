@@ -1,0 +1,11 @@
+private final Session session;
+
+public VisitorDao(Session session) {
+this.session = session;
+}
+
+public boolean visitorExists(Visitor visitor) {
+public Long addVisitor(Visitor visitor) {
+Long idNewVisitor = null;
+if (!visitorExists(visitor)) {
+

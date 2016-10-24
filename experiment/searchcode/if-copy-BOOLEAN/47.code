@@ -1,0 +1,13 @@
+public static boolean[] nullSafe(boolean[] a){
+if(a==null){ return new boolean[0]; }
+return a;
+}
+
+public static int length(boolean[] a){
+if(a==null){ return 0; }
+return !isEmpty(a);
+}
+
+public static boolean[] copyFromCollection(Collection<Boolean> ins){
+if(CollectionTool.isEmpty(ins)){ return new boolean[0]; }
+

@@ -1,0 +1,11 @@
+@Override
+public Stop addStopDetails(Stop stopDetails) {
+if (exists(stopDetails.getStopId())) {
+return null;
+}
+return stopDAO.addStopDetails(stopDetails);
+}
+
+@Override
+public boolean exists(Long stopId) {
+

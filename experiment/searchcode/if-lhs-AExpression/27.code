@@ -1,0 +1,7 @@
+NamedElement lhsElement = DefaultBinder.getOperandType(lhsEntry.getKey());
+if (lhsElement != null) {
+for (Map.Entry<Expression, Type> rhsEntry : rhsMap.entrySet()) {
+Operation op = IRUtils.getBinaryOperation(lhsElement, rhsElement, binaryExpression.getOperator().toString());
+if (op != null) {
+// If the parameters are generic, we need to validate the arg type vs the resolved parm type.
+

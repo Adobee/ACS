@@ -1,0 +1,12 @@
+while(!queue.isEmpty()){
+currentNode = queue.pop();
+for(int j=0;j<numNodes;j++){
+if(adjacentList[currentNode][j] &amp;&amp; distances[j]==-1){
+distances[j] = distances[currentNode]+edgeLength;
+queue.add(j);
+}
+}
+}
+for(int j=0;j<numNodes;j++){
+if(distances[j] != 0)
+

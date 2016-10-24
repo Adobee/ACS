@@ -1,0 +1,14 @@
+package org.uiowa.cs2820.engine;
+
+
+public class Field {
+String fieldName;
+String fieldValue;
+
+public Field() {
+this.fieldName = &quot;&quot;;
+this.fieldValue = &quot;&quot;;
+}
+
+public Field(String fieldName) {
+

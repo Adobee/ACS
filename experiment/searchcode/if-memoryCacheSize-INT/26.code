@@ -1,0 +1,9 @@
+public static void initImageLoader(Context context) {
+int memoryCacheSize;
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR) {
+memoryCacheSize = 2;
+}
+int m = 2;
+if (memoryCacheSize > 200) {
+m = 10;
+

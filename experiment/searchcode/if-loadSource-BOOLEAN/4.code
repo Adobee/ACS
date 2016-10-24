@@ -1,0 +1,12 @@
+protected static Logger logger = LoggerFactory.getLogger(SourceDictionary.class);
+
+protected boolean ignoreCase;
+
+public SourceDictionary(boolean ignoreCase){
+this.ignoreCase = ignoreCase;
+}
+
+public void loadSource(File file) {
+InputStream is = null;
+try {
+

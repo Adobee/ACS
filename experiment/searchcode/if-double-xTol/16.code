@@ -1,0 +1,14 @@
+import java.util.ArrayList;
+
+public class DTW {
+
+private Metric metric;
+private int xTol;
+private int yTol;
+private double[][] r1orig;
+public DTW(Metric inMetric){
+metric = inMetric;
+}
+
+public double getDistance(double[][] a, double[][] b, int inXTol, int inYTol){
+

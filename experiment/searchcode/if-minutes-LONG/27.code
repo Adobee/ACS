@@ -1,0 +1,13 @@
+hours = Integer.parseInt(token[0]);
+minutes = Integer.parseInt(token[1]);
+}
+
+public DateNode(long time) {
+minutes = (int) (time % 60);
+this.hours = hours;
+this.minutes = minutes;
+}
+
+public long getTime() {
+return hours * 60 + minutes;
+

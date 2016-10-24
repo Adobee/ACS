@@ -1,0 +1,13 @@
+// TODO Auto-generated method stub
+
+int month = 2;
+int year = 2006;
+int i=year%4;
+String Days;
+case 12:  Days = &quot;31&quot;;
+break;
+default: Days = &quot;Invalid month&quot;;
+break;
+}
+if (Days == &quot;Invalid month&quot;)
+

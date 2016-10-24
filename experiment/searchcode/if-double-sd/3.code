@@ -1,0 +1,10 @@
+public class NormalDoubleDistribution implements Distribution<Double> {
+
+private final double mean, sd;
+
+public NormalDoubleDistribution(double mean, double sd) {
+public Double getValue(RandomSource randomSource) {
+if (sd == 0)
+return mean;
+return (double) (randomSource.nextGaussian() * sd + mean);
+

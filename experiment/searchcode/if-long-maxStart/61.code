@@ -1,0 +1,5 @@
+*     - if minStart is later/greater than maxStart,
+*     - if maxStart is later/greater than minStop,
+*    Date minStop, Date maxStop) constructor throws
+*    java.lang.IllegalArgumentException if minStart is later than maxStart.
+

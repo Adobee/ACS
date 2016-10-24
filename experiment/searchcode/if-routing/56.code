@@ -1,0 +1,6 @@
+public RoutingTableRecord getRouteForIp(IpAddress ipAddress) {
+for (RoutingTableRecord routingRecord : routingTable) {
+if (routingRecord.correspondsToAddress(ipAddress)) {
+for (RoutingTableRecord record : routingTable) {
+if (record.getPortIndex() > maxPortIndex) {
+

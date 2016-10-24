@@ -1,0 +1,10 @@
+import java.util.concurrent.Callable;
+import java.util.concurrent.TimeUnit;
+
+public class LazyPromise<T> extends BasePromise<T> implements Promise<T> {
+public void await() {
+if (!isRealized()) {
+try {
+callablePromise.call();
+} catch (Exception e) {
+

@@ -1,0 +1,9 @@
+return this;
+}
+
+
+public void addMarker(String tag) {
+if (mRequestBirthTime == 0) {
+long requestTime = SystemClock.elapsedRealtime() - mRequestBirthTime;
+if (requestTime >= SLOW_REQUEST_THRESHOLD_MS) {
+

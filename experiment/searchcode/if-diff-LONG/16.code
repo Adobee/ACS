@@ -1,0 +1,13 @@
+for (int n = 3200; n < 100000; n *= 2) {
+int[] a = new int[n];
+long start = System.nanoTime();
+int diff = maxDiff(a);
+for (int j = i+1; j < d.length; j++) {
+int diff = Math.abs(d[i] - d[j]);
+if (diff > maxDiff) maxDiff = diff;
+}
+}
+return maxDiff;
+}
+}
+

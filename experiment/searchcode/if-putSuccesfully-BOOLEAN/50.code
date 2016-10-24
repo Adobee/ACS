@@ -1,0 +1,9 @@
+this.maxAge = maxAge * 1000; // to milliseconds
+}
+
+@Override
+public boolean put(K key, V value) {
+boolean putSuccesfully = cache.put(key, value);
+if (putSuccesfully) {
+loadingDates.put(key, System.currentTimeMillis());
+

@@ -1,0 +1,6 @@
+public static double [] bayes(double [] priors, double [] conditionals) throws Exception {
+if(priors.length != conditionals.length) throw new Exception(&quot;Number of prior probabilities does not match number of conditional probabilities&quot;);
+double [] posteriors = new double [priors.length];
+
+if (total > 1.00) throw new Exception(&quot;Prior probabilities total &quot;+ total +&quot;, greater than 100%&quot;);
+

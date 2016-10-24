@@ -1,0 +1,9 @@
+public boolean canImplicitCastTo(Type toType) {
+if(toType == this) return true;
+return false;
+}
+
+@Override
+public boolean canExplicitCastTo(Type toType) {
+return super.canExplicitCastTo(toType) || toType == INT || canConcatenateCastTo(toType);
+

@@ -1,0 +1,13 @@
+row[pos] = (byte) value;
+return old;
+}
+int old = deflated[y];
+if (old == value) {
+return old;
+return true;
+}
+return false;
+}
+int old = deflated[y];
+if (old == expected) {
+

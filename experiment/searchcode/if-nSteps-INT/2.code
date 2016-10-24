@@ -1,0 +1,12 @@
+System.out.println(new Solution().climbStairs(n));
+}
+
+public static class Solution {
+/*
+public int climbStairs(int n) {
+if (n == 0) {
+public int climbStairs(int n) {
+final int STAIRS = 50;
+int[] nSteps = new int[STAIRS];
+nSteps[0] = 0;
+

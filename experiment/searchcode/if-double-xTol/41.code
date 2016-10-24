@@ -1,0 +1,6 @@
+public double apply(int n, Pointer<Double> x, Pointer<Double> gradient, Pointer<?> func_data) {
+if (gradient != Pointer.NULL) {
+double t = a * x.getDoubleAtIndex(0) + b;
+if (gradient != Pointer.NULL) {
+gradient.setDoubleAtIndex(0, 3 * a * t * t);
+

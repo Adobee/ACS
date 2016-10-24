@@ -1,0 +1,13 @@
+public class Missile {
+
+private double speed;
+private double stepRatioX;
+private double stepRatioY;
+targetX += 8;
+targetY += 8;
+
+x = origin[0];
+y = origin[1];
+
+double r = Math.sqrt(((targetX - origin[0])*(targetX - origin[0]))+((origin[1] - targetY)*(origin[1] - targetY)));
+

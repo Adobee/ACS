@@ -1,0 +1,11 @@
+public void setReadStyle(ReadStyle style) {
+if (style == ReadStyle.LIGHT) {
+putInt(KEY_READSTYLE, 1);
+} else if (style == ReadStyle.DARK) {
+putInt(KEY_READSTYLE, 2);
+}
+}
+
+/**
+* 设置屏幕旋转模式
+

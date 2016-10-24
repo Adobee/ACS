@@ -1,0 +1,13 @@
+package circles;
+
+public abstract class Puck extends Disk {
+public double weight;
+private boolean standard;
+public double getWeight() {
+return (weight);
+}
+
+public boolean getDivision() {
+
+if (weight > 5 &amp;&amp; weight < 5.5) {
+

@@ -1,0 +1,12 @@
+L.set(j,j,lii);
+
+for(int i=j+1;i<n;i++){
+double lij=0.0;
+lij = lij / L.get(j, j);
+L.set(i, j, lij);
+}
+}
+}
+
+public double[] solve(double[] b){
+

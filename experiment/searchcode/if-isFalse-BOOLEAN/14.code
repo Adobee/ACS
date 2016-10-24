@@ -1,0 +1,16 @@
+public synchronized void setValue(boolean newValue) {
+if ( newValue != value ) {
+value = newValue;
+notifyAll();
+}
+}
+
+public synchronized boolean isTrue() {
+return value;
+}
+
+public synchronized boolean isFalse() {
+return !value;
+}
+}
+

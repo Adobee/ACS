@@ -1,0 +1,8 @@
+public final static int latlngDigits = 5;
+public final static int defaultDigits = 3;
+
+public static String formatDouble(final double loc, final int decimalPlaces) {
+final String locStr = String.valueOf(loc);
+final int decPos = locStr.toString().indexOf(&quot;.&quot;);
+if (locStr.length() <= decPos + decimalPlaces &amp;&amp; decPos >= 0)
+

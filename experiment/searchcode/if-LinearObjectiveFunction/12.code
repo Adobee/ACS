@@ -1,0 +1,7 @@
+import org.apache.commons.math3.optimization.linear.LinearObjectiveFunction;
+import org.apache.commons.math3.optimization.linear.SimplexSolver;
+for(int i=0; i<100; i++){
+xp=x;
+x = step(x);
+if (Math.abs(fun.function(x)-fun.function(xp))<e) return x;
+

@@ -1,0 +1,8 @@
+public String compileCreate(Builder query, String schema) {
+schema = schema.trim();
+if (schema.length() > 0)
+schema = &quot; (&quot; + schema + &quot;)&quot;;
+String columnsList = wrapColumns(query.columns);
+if (!columnsList.equals(&quot;*&quot;))
+if (valueOf(query, &quot;distinct&quot;, Boolean.FALSE))
+

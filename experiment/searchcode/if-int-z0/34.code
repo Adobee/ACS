@@ -1,0 +1,9 @@
+private static final Pattern rfc2822 = Pattern.compile(
+&quot;^[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&amp;&#39;*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$&quot;
+Integer intPort = Integer.valueOf(port);
+if (intPort < 0 || intPort > 65535) {
+throw new Exception(&quot;Invalid port&quot;);
+}
+}
+}
+

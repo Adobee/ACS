@@ -1,0 +1,10 @@
+public class RpropMinus implements RpropInterface {
+private double[] stepSize;
+private int[] preSign;
+private double rhoplus;
+private double rhominus;
+public RpropMinus(int dim, double startvalue) {
+stepSize = new double[dim];
+preSign = new int[dim];
+for (int i = 0; i < dim; ++i) {
+

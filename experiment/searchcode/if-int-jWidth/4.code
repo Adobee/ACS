@@ -1,0 +1,7 @@
+for (int i = 0 ; i < (rawData.length) ; ++i) {
+final int length = rawData[i].length;
+if (length != columns) {
+final int qEnd = java.lang.Math.min((qStart + (BLOCK_SIZE)), columns);
+final int jWidth = qEnd - qStart;
+final T[] block = org.apache.commons.math.linear.AbstractFieldMatrix.buildArray(field, (iHeight * jWidth));
+

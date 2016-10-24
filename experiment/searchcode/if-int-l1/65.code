@@ -1,0 +1,14 @@
+l1 = l1.next;
+l2 = l2.next;
+}
+
+if(l2.next == null &amp;&amp; l1.next == null){
+int tempaddNum = l1.val + l2.val;
+l1.next = newNode;
+}
+return newHead;
+}
+
+if((l1.next == null) &amp;&amp; (l2.next != null)){
+int tempaddNum = l1.val + l2.val;
+

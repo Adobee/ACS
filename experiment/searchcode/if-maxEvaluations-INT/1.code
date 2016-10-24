@@ -1,0 +1,11 @@
+import jmetal.util.JMException;
+
+public class MonoRandomSearch extends Algorithm
+{
+private Problem problem_;
+private int maxEvaluations;
+
+public MonoRandomSearch(Problem problem, int maxEvaluations)
+{
+this.problem_ = problem;
+

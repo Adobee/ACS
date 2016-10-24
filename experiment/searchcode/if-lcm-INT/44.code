@@ -1,0 +1,13 @@
+for (int i = 0; i < A.length; i++) {
+long lcm = 1;
+for (int j = 0; j < B.length; j++)
+if (A[i] % B[j] == 0)
+lcm = lcm(lcm, B[j]);
+if (A[i] != lcm)
+return false;
+}
+return true;
+}
+
+private long lcm(long a, long b) {
+

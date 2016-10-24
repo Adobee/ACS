@@ -1,0 +1,21 @@
+
+class A {
+
+A() {
+}
+
+static int getLimit() {
+return 10;
+}
+}
+
+class B {
+(objetoB.printLimit());
+}
+
+dynamic String printLimit()
+var int limit;
+
+{
+limit = A.getLimit();
+

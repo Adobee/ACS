@@ -1,0 +1,11 @@
+import com.krustyburger.order.backend.dao.OrderStageDAO;
+import com.krustyburger.order.backend.model.OrderStage;
+
+@Repository
+this.orderStageDAO = orderStageDAO;
+}
+
+public OrderStage save(OrderStage orderStage) {
+if (orderStage.getId() == null) {
+this.orderStageDAO.persist(orderStage);
+

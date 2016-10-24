@@ -1,0 +1,10 @@
+public class CEntailsVisitor extends XGraphVisitor{
+CConstraint c1;
+ConstraintMaker c2m;
+XVar otherSelf;
+boolean result=true;
+public CEntailsVisitor(boolean hideEQV, boolean hideFake, CConstraint c1, ConstraintMaker c2m,
+t = t.subst(c1.self(), otherSelf);
+boolean myResult = c1.entails(t);
+if (! myResult &amp;&amp; c2m!=null) {
+

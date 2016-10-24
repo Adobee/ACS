@@ -1,0 +1,12 @@
+public boolean insertWinemaker(int wmid, String wmname, int cid) throws SQLException {
+String sqlInsert;
+int result;
+//check if cid exists first
+try {
+String sqlCheck= &quot;SELECT cid FROM countries WHERE cid= ?&quot; ;
+insertwm.setString(2, wmname);
+insertwm.setInt(3, cid);
+result= insertwm.executeUpdate();
+
+if (result == 1){  //1 line has been inserted, which is correct
+

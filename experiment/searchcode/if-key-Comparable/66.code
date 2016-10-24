@@ -1,0 +1,8 @@
+private void quicksort(int left, int right) {
+int l = left, r = right;
+Comparable key = data[(left + right) / 2];
+Comparable tmp;
+
+while (l <= r) {
+while (data[l].compareTo(key) < 0) { l++; }
+

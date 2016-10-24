@@ -1,0 +1,7 @@
+public void writeCustomTypePrefixForObject(final Object o, final JsonGenerator jsonGenerator, final String s) throws IOException {
+if (s == null) {
+jsonGenerator.writeStartObject();
+return;
+}
+if (jsonGenerator.canWriteTypeId()) {
+

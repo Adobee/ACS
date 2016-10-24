@@ -1,0 +1,9 @@
+int originalToMonth = toMonth;
+int originalToDay = toDay;
+while(fromYear <= toYear) {
+if(fromYear < toYear) {
+DateFormatSymbols dFS = new DateFormatSymbols();
+int originalToMonth = toMonth;
+while(fromYear <= toYear) {
+if(fromYear < toYear) {
+

@@ -1,0 +1,10 @@
+public class BlockAddressTuple implements WritableComparable<BlockAddressTuple>{
+
+private int blockRow=0;
+private int blockCol=0;
+
+@Override
+public void write(DataOutput d) throws IOException {
+d.writeInt(blockRow);
+d.writeInt(blockCol);
+

@@ -1,0 +1,11 @@
+A[i++] = ele;
+}
+return;
+}
+if(n==0) return;
+int length = m+n;
+int index_a = m-1;
+int index_b = n-1;
+while(index_a!=-1||index_b!=-1) {
+if(index_a!= -1 &amp;&amp; index_b!=-1 &amp;&amp;B[index_b]<A[index_a]) {
+

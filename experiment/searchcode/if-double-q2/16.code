@@ -1,0 +1,5 @@
+public double getCompatibility(Point2D.Double p1, Point2D.Double p2, Point2D.Double q1, Point2D.Double q2, boolean verbose)
+double pqDotProduct = ((p1.x - p2.x) * (q1.x-q2.x))+((p1.y - p2.y) * (q1.y-q2.y));
+double angComp =0;
+if(pLength!=0 &amp;&amp; qLength!=0){
+

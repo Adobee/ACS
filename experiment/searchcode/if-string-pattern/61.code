@@ -1,0 +1,7 @@
+public Rewrite matchIncoming(String path) {
+return returnIfMatch(inPattern().rewrite(path));
+}
+
+public Rewrite matchOutgoing(String path) {
+return returnIfMatch(outPattern().rewrite(path));
+

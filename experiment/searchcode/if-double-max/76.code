@@ -1,0 +1,15 @@
+public static double min(double[] v) {
+double ret = v[0];
+for (int i = 1; i < v.length; i++) {
+if (v[i] < ret) {
+ret = v[i];
+}
+}
+return ret;
+}
+
+
+
+public static double max(double[] v) {
+double ret = v[0];
+

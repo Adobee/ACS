@@ -1,0 +1,11 @@
+public final static int CURRENT_RECP_EXTRACTION_TIME_IDX = 1;
+public final static int CURRENT_EXTRACTED_ITEM_IDX = 2;
+
+private int remainingExtractionTime;
+public float getCurrentExtractPercent() {
+if (currentRecpExtractionTime == 0) {
+return 0;
+}
+
+return 1.0f - ((float)remainingExtractionTime / (float)currentRecpExtractionTime);
+

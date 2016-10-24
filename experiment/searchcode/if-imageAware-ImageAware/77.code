@@ -1,0 +1,8 @@
+this.loadedFrom = loadedFrom;
+}
+
+public void run() {
+if (this.imageAware.isCollected()) {
+this.listener.onLoadingCancelled(this.imageUri, this.imageAware.getWrappedView());
+} else if (isViewWasReused()) {
+

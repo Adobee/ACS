@@ -1,0 +1,13 @@
+@SuppressWarnings(&quot;rawtypes&quot;)
+public static void preInit() {
+modIntegrations = new ArrayList<Integration>();
+
+try {
+for (ClassInfo clazzInfo : ClassPath.from(ModIntegrator.class.getClassLoader()).getTopLevelClasses(&quot;ganymedes01.&quot; + Reference.MOD_ID + &quot;.integration&quot;)) {
+integration.init();
+}
+
+public static void postInit() {
+for (Integration integration : modIntegrations)
+if (integration.shouldIntegrate())
+

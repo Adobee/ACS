@@ -1,0 +1,9 @@
+public Object calc() {
+Object o = expr[0].calc();
+
+double d = 0.0;
+if (o instanceof Double)
+d = ((Double) o).doubleValue();
+else if (o instanceof Long)
+d = ((Long) o).doubleValue();
+

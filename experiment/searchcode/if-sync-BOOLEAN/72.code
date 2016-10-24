@@ -1,0 +1,12 @@
+Guard.argumentNotNull(sync, &quot;sync&quot;);
+
+if (content == null)
+this.content = new NullContent(sync.getId());
+else
+this.content = content;
+return this.getSync().getId();
+}
+
+public boolean hasSyncConflicts() {
+return this.getSync().getConflicts().size() > 0;
+

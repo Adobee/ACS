@@ -1,0 +1,5 @@
+public Request build() {
+HttpUrl.Builder urlBuilder = HttpUrl.parse(mDataManager.getUrl() + mModelID).newBuilder();
+addFilterToUrlBuilder(urlBuilder);
+if (mLevels > 1) {
+

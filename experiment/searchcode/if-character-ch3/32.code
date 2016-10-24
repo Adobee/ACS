@@ -1,0 +1,8 @@
+int ch3 = readByte();
+
+if (ch3 < 0) {
+unread();
+return ERROR_CHARACTER;
+
+if (ch3 < 0) {
+

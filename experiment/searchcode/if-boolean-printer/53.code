@@ -1,0 +1,10 @@
+private List<Printer> printers = new ArrayList<>();
+private int maxLine;
+private int activePrinterId = 0;
+private boolean running;
+this.maxLine = maxLine;
+}
+
+public Printer addPrinter(String message){
+if (running) throw new RuntimeException(&quot;Printing is running&quot;);
+

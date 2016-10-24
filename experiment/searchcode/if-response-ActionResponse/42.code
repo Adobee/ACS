@@ -1,0 +1,9 @@
+public class AddBooklistAction implements Action{
+
+@Override
+public ActionResponse execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+String description = Validation.sanitizeInput(request.getParameter(&quot;booklistDescription&quot;));
+
+if(customer == null){
+actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;loginCustomer&quot;);
+

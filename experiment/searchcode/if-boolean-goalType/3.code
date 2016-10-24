@@ -1,0 +1,11 @@
+public void OnKillMonster(String name, String mob)
+{
+if(this.RPG.PQLM.PlayerContainActiveGoal(name, GoalType.KILL, mob.replaceAll(&quot;_&quot;, &quot; &quot;)))
+this.RPG.PQLM.getPlayerQuestLog(name).GoalActionDone(GoalType.KILL, mob.replaceAll(&quot;_&quot;, &quot; &quot;), name);
+}
+}
+
+public boolean onItemPickup(String name, String itemname)
+{
+if(this.RPG.PQLM.PlayerContainActiveGoal(name, GoalType.COLLECT, itemname.replaceAll(&quot;_&quot;, &quot; &quot;)))
+

@@ -1,0 +1,9 @@
+public synchronized void addListener(Listener<T> listener) {
+if (listeners == null) {
+listeners = new LinkedList<>();
+listeners.add(listener);
+return;
+}
+if (listeners.contains(listener)) return;
+if (inFire) {
+

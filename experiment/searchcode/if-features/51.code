@@ -1,0 +1,11 @@
+public class FeatureConfig
+{
+@Valid
+private List<FeatureDto> features;
+
+public List<FeatureDto> getFeatures()
+{
+if (features == null)
+{
+features = new AutoPopulatingList<FeatureDto>(FeatureDto.class);
+

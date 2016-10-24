@@ -1,0 +1,9 @@
+private final double uMax= 10.0;
+private final double uMin= -10.0;
+private ProcessInput input;
+
+VelRegulator velRegul = new VelRegulator();
+case POS:
+u = new Double(posRegul.calculateOutput(posRef, input.getPos()));
+return limit(u,uMin,uMax);
+

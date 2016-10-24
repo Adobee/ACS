@@ -1,0 +1,11 @@
+* @see algorithms.Sorter#sort(E[], int, int)
+*/
+@Override
+public void sort(E[] array, int from, int len) {
+private final void q_sort(E[] array, int from, int to) {
+if (to - from < 1)
+return;
+int pivot = selectPivot(array, from, to);
+
+pivot = partion(array, from, to, pivot);
+

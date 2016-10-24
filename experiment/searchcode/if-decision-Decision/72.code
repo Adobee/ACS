@@ -1,0 +1,13 @@
+package ch.wylan.decision.model;
+
+public abstract class Rule<E> extends Condition<E> {
+
+protected Condition<E> condition;
+this( new TrueCondition<>(), decision,new Condition<>());
+}
+
+@Override
+public Boolean execute(E input) {
+if(condition.execute(input)){
+return decision.execute(input);
+

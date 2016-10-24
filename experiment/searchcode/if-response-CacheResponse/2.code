@@ -1,0 +1,9 @@
+if (!response.equals(&quot;&quot;)) { //if response not recevied //if error //or response is not
+if (HTTP_CODE == 200) {
+List<CacheResponse> cacheResponses = CacheResponse.findWithQuery(CacheResponse.class, &quot;SELECT * FROM CACHE_RESPONSE where URL = ? AND POST_DATA = ?&quot;, url, postJson);
+cacheResponse.setTime(getCurrentTimeLong());
+
+response = cacheResponse.getResponse();
+
+} else { // if not there in cache make new cache
+

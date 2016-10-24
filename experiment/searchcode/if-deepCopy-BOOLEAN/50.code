@@ -1,0 +1,7 @@
+public boolean equals(Object x, Object y) throws HibernateException {
+return Objects.equals(x, y);
+public Serializable disassemble(Object value, SharedSessionContractImplementor session) throws HibernateException {
+Object deepCopy = deepCopy(value);
+
+if (!(deepCopy instanceof Serializable)) {
+

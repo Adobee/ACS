@@ -1,0 +1,12 @@
+import javax.persistence.Embeddable;
+import java.time.LocalDate;
+
+/**
+*
+* Created by fabrizzio on 4/27/15.
+this.end = end;
+}
+
+public boolean isWithinPeriod(LocalDate date){
+if(isOpen() &amp;&amp; (start.isAfter(date) || start.equals(date))){
+

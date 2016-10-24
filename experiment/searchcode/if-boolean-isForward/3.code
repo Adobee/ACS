@@ -1,0 +1,10 @@
+public class SwitchThing implements Runnable{
+Joystick stick;
+int button;
+boolean running, isForward, defaultState;
+public void run() {
+running = true;
+isForward = defaultState;
+while(running){
+if(stick.getRawButton(button)){
+

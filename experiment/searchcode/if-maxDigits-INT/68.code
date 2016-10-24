@@ -1,0 +1,10 @@
+String valueString = Integer.toString(value);
+final int MAX_DIGITS = maxDigits;
+
+if (MAX_DIGITS < valueString.length()) {
+valueString = valueString.substring(maxDigits - valueString.length());
+}
+
+if (showLeadingZero) {
+final int diff = MAX_DIGITS - valueString.length();
+

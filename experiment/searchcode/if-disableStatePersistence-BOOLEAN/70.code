@@ -1,0 +1,8 @@
+public boolean disableStatePersistence() {
+for (ClusterBlock clusterBlock : global) {
+if (clusterBlock.disableStatePersistence()) {
+public ClusterBlockException indicesBlockedException(ClusterBlockLevel level, String[] indices) {
+boolean indexIsBlocked = false;
+for (String index : indices) {
+if (indexBlocked(level, index)) {
+

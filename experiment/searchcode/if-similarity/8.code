@@ -1,0 +1,9 @@
+/*Records the similarity of a user to another. Implements Comparable<SimilarityResult>*/
+
+public class SimilarityResult implements Comparable<SimilarityResult>{
+public int compareTo(SimilarityResult otherSim){
+if (similarity == otherSim.similarity){ //to stop double round errors
+return 0;
+}
+else{
+

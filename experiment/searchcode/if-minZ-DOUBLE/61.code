@@ -1,0 +1,12 @@
+double var12 = evt.player.lastTickPosZ + (evt.player.posZ - evt.player.lastTickPosZ) * (double)evt.partialTicks;
+
+int side = evt.target.sideHit;
+int[] sides = sidesMap[side];
+
+if(evt.currentItem != null &amp;&amp; evt.currentItem.getItem() instanceof ItemSheet)
+double maxX = minX + 0.0625;
+double maxY = minY + 0.0625;
+double maxZ = minZ + 0.0625;
+
+if(isConstruct &amp;&amp; hitY != 0  &amp;&amp; hitY != 1 &amp;&amp; hitZ != 0  &amp;&amp; hitZ != 1 &amp;&amp; hitX != 0  &amp;&amp; hitX != 1 &amp;&amp; world.getTileEntity(evt.target.blockX, evt.target.blockY, evt.target.blockZ) != null)
+

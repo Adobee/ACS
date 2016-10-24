@@ -1,0 +1,9 @@
+Matcher matcher = SEMVER_SIMPLE_VERSION_MATCHER.matcher(requiredVersion);
+boolean isRange = !matcher.matches();
+
+String tag = null;
+
+if (isRange) {
+log.info(availableVersion.toString() + &quot; compared to &quot; + requiredVersion.toString());
+if (requiredVersion.equals(availableVersion.toString())) {
+

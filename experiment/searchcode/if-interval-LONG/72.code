@@ -1,0 +1,10 @@
+@ManagedProperty(value = &quot;#{operationIntervalServiceImpl}&quot;)
+private OperationIntervalService operationIntervalService;
+
+private Long id;
+
+private OperationInterval operationInterval = new OperationInterval();
+public void loadOperationInterval() {
+if(id != null) {
+operationInterval = operationIntervalService.getOperationInterval(id);
+

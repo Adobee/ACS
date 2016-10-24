@@ -1,0 +1,14 @@
+public class Drinker implements Runnable {
+Semaphore client = null;
+Semaphore server = null;
+int resources = 0;
+boolean hasDrank=false;
+return !hasDrank;
+}
+
+@Override
+public void run() {
+
+while(true){
+if(client.availablePermits()==resources){
+

@@ -1,0 +1,14 @@
+import java.io.IOException;
+import java.util.Formatter;
+
+/**
+* @author Andreas Unger
+*
+*/
+public class PrintAppendable implements Appendable {
+private Formatter getFormatter() {
+if (formatter == null) {
+formatter = new Formatter(appendable);
+}
+return formatter;
+

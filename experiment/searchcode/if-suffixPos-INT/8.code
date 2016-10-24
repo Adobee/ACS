@@ -1,0 +1,12 @@
+private char[] suffix = new char[CSTextSearcher.FLOATING_CONTEXT_LENGTH];
+
+private int suffixPos = 0;
+
+public CSTextSearchCandidate(CSTextSearcher searcher) {
+return false;
+}
+
+public boolean acceptSuffix(char c) {
+suffix[suffixPos++] = c;
+if (suffixPos >= CSTextSearcher.FLOATING_CONTEXT_LENGTH) {
+

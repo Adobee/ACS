@@ -1,0 +1,7 @@
+protected String getUrl(String model, int width, int height) {
+Matcher m = PATTERN.matcher(model);
+int bestBucket = 0;
+if (m.find()) {
+for (String bucketStr : found) {
+bestBucket = Integer.parseInt(bucketStr);
+

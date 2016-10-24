@@ -1,0 +1,10 @@
+RasterToolsUtil.messageBoxError(&quot;error_roi_not_selected&quot;, tablePanel, new NullPointerException(&quot;ROI no seleccionada DrawMouseViewListener L 61&quot;));
+return;
+}
+roi.addGeometry(geometry);
+int numGeometries;
+Color geometryColor = (Color)tablePanel.getTable().getModel().getValueAt(selectedRow, 4);
+
+if(tablePanel.getPolygonToolButton().isSelected()){
+numGeometries = ((Integer)tablePanel.getTable().getModel().getValueAt(selectedRow,1)).intValue();
+

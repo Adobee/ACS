@@ -1,0 +1,10 @@
+private static int DEFAULT_INITIAL_SIZE = 16;
+private long[][] matrix;
+private int maximumSize;
+private int actualSize = 0;
+
+public Matrix() {
+private void checkBounds(int x, int y) {
+if (x > actualSize - 1 || y > actualSize - 1) {
+throw new IndexOutOfBoundsException(String.format(&quot;Accessing element [%d][%d] in matrix of size [%d][%d]&quot;, x, y,
+

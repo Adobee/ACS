@@ -1,0 +1,11 @@
+package org.freecode.demo.scheduler;
+
+import org.apache.log4j.Logger;
+import org.quartz.Scheduler;
+public Scheduler getScheduler() {
+if ( theScheduler == null )
+{
+try
+{
+SchedulerFactory schedulerFactory = new StdSchedulerFactory();
+

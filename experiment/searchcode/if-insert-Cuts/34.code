@@ -1,0 +1,7 @@
+Arrays.sort(cuts);
+int c = cuts.length;
+if (cuts[0] < 0 || cuts[c - 1] > list.size() - 1)
+throw new IllegalArgumentException();
+int startIndex = cuts[0] == 0 ? 1 : 0;
+if (cuts[c - 1] != list.size() - 1) {
+

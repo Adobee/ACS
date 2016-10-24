@@ -1,0 +1,8 @@
+min = volume;
+max = min * volume;
+
+if (AL10.alGetError() != AL10.AL_NO_ERROR) {
+AL10.alSourcef(source, AL10.AL_PITCH, 1.0f);
+if (threed) {
+AL10.alSourcef(source, AL10.AL_MAX_DISTANCE, max);
+

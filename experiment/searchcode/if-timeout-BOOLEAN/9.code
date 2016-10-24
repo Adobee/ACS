@@ -1,0 +1,7 @@
+private final AtomicBoolean cancelled = new AtomicBoolean();
+public volatile Timeout requestTimeout;
+public volatile Timeout readTimeout;
+
+public void cancel() {
+if (cancelled.compareAndSet(false, true)) {
+

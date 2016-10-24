@@ -1,0 +1,11 @@
+public abstract class ApplicableFormaComponent<M> extends FormaComponent<M> {
+private boolean readonly;
+
+@Override
+public boolean isEdit() {
+return readonly ? false : super.isEdit();
+}
+
+public boolean isReadonly() {
+return readonly;
+

@@ -1,0 +1,12 @@
+PropertyChange other = (PropertyChange) obj;
+if( newValue == null )
+{
+if( other.newValue != null )
+return false;
+}
+else if( !newValue.equals( other.newValue ) )
+return false;
+return true;
+}
+}
+

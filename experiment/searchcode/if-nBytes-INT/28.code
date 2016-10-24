@@ -1,0 +1,10 @@
+public static void main (String[] args)
+{
+FileInputStream fe = null;
+byte[] buffer = new byte[81];
+int nbytes;
+String nombreFichero = null;
+System.out.print(&quot;Nombre del fichero: &quot;);
+nbytes = System.in.read(buffer);
+nombreFichero = new String(buffer, 0, nbytes-2); // menos CR+LF
+

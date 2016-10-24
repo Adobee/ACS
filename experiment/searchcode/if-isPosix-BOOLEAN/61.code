@@ -1,0 +1,5 @@
+private static final boolean isPosix =
+FileSystems.getDefault().supportedFileAttributeViews().contains(&quot;posix&quot;);
+// if initial permissions not given by caller.
+if (isPosix &amp;&amp; (dir.getFileSystem() == FileSystems.getDefault())) {
+

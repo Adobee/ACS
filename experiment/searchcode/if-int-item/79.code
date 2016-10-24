@@ -1,0 +1,7 @@
+ArrayList<GroundItem> toRemove = new ArrayList<GroundItem>();
+for (int index = 0; index < items.size(); index++) {
+if (items.get(index) != null) {
+public void createGroundItem(Player p, int itemId, int itemX, int itemY, int itemAmount, int playerId) {
+if(itemId > 0) {
+if (itemId >= 2412 &amp;&amp; itemId <= 2414) {
+

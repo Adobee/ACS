@@ -1,0 +1,13 @@
+// 仮移動位置のパリティを計算する
+// 負の場合は反転させる
+boolean xP, yP;
+if (tsX >= 0) {
+xP = ((int) Math.floor(tsX / (tW - 2 * wR) % 2) == 0);
+tsX *= -1;
+}
+
+if (tsY >= 0) {
+yP = ((int) Math.floor(tsY / (tH - 2 * wR) % 2) == 0);
+} else {
+yP = !((int) Math.floor(tsY / (tH - 2 * wR) % 2) == 0);
+

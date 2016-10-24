@@ -1,0 +1,14 @@
+import org.json.JSONException;
+
+public class PlotContainer extends ModelContainer<Plot> {
+
+@Override
+public Plot getFirst() throws JSONException {
+Plot plot = null;
+if (data.length() > 0) {
+plot = new Plot(data.getJSONObject(0));
+}
+return plot;
+}
+}
+

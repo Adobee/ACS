@@ -1,0 +1,12 @@
+robot = new Robot();
+}
+
+public void addPress(int key) {
+if (!keyPresses.containsKey(key)) {
+keyPresses.put(key, 0);
+keyPresses.put(key, keyPresses.get(key) + 1);
+}
+
+public void removePress(int key) {
+if (!keyPresses.containsKey(key)) {
+

@@ -1,0 +1,10 @@
+private Map<String, Cell> headerMap = Maps.newHashMap();
+private List<Cell> currentCells;
+private boolean inHeaders = false;
+return this;
+}
+
+public Table endRow(boolean check) {
+if (currentCells == null) {
+throw new ElasticsearchIllegalStateException(&quot;no row started...&quot;);
+

@@ -1,0 +1,11 @@
+final static int MAX_ENLARGE_SIZE = 1024*1024*8;
+public byte[] array;
+public int startIdx;
+public int endIdx;
+public byte quickGet(int idx){
+return array[idx + startIdx];
+}
+
+public byte get(int idx){
+if (idx + startIdx >= endIdx)
+

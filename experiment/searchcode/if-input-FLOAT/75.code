@@ -1,0 +1,13 @@
+package com.epicpixel.Grow.Input;
+
+public class InputXY{
+public float X;
+public float Y;
+public boolean IsDown;
+public void normalizeXY(float maxMagnitude)
+{
+//normalize
+float magnitude = (float) Math.sqrt(X*X+Y*Y);
+
+if(magnitude < maxMagnitude)
+

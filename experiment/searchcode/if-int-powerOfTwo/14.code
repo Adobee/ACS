@@ -1,0 +1,13 @@
+* @return boolean
+* Time: O(1)
+* Space: O(1)
+*/
+public boolean powerofTwo (int n) {
+if (n <= 0) {
+return false;
+* Space: O(1)
+*/
+//	public boolean powerofTwo (int n) {
+//		if (n <= 0) {
+//			return false;
+

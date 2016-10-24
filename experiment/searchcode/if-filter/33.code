@@ -1,0 +1,9 @@
+public static ContainerFilter getContainerFilter(Filter filter)
+{
+if (filter instanceof SimpleStringFilter)
+{
+return getContainerFilter((SimpleStringFilter) filter);
+} else if (filter instanceof Compare)
+{
+return getContainerFilter((Compare) filter);
+

@@ -1,0 +1,18 @@
+public class FileUtil {
+
+
+public static void createDirByName(String dirName) {
+
+File dir = new File(dirName);
+if (dir.exists()) {
+dir.delete();
+}
+}
+
+dir.mkdir();
+}
+
+public static boolean deleteDir(File dir) {
+
+if (dir == null || dir.isDirectory() == false) {
+

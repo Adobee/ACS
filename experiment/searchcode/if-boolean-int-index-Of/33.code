@@ -1,0 +1,11 @@
+protected void ensureIndex( final int index ) {
+if ( index < 0 ) throw new IndexOutOfBoundsException( &quot;Index (&quot; + index + &quot;) is negative&quot; );
+return new BooleanSubList ( this, from, to );
+}
+
+
+
+public boolean rem( boolean k ) {
+int index = indexOf( k );
+if ( index == -1 ) return false;
+

@@ -1,0 +1,13 @@
+public void setCategory(String category) {
+this.category = category;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+
+Category category1 = (Category) o;
+
+if (category != null ? !category.equals(category1.category) : category1.category != null) return false;
+

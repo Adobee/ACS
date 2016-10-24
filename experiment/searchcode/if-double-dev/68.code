@@ -1,0 +1,11 @@
+double var=0.0;
+double ss=0.0;
+double[] dev = new double[n];
+for(int i=0;i<n;i++)
+{
+dev[i]=(double) ((dArray[i]-mean)*(dArray[i]-mean));
+}
+ss=sum(0,n-1,dev);
+var=(double)(ss/(n-1));
+return var ;
+

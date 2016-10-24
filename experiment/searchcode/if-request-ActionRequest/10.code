@@ -1,0 +1,8 @@
+public static RequestFunds populateRequestFundsFromForm(ActionRequest actionRequest) {
+
+RequestFunds requestFunds = new RequestFunds();
+
+if(actionRequest.getParameter(&quot;id&quot;) != null &amp;&amp;
+String[] selectedParticipants = ParamUtil.getParameterValues(actionRequest, &quot;rowIds&quot;);
+if(selectedParticipants != null &amp;&amp; selectedParticipants.length > 0){
+

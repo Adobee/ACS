@@ -1,0 +1,8 @@
+public String next() {
+if (iterator.hasNext()) {
+currentToken = iterator.next();
+} else {
+public void skip(String token) throws ParseException {
+if (!token.equals(currentToken)) {
+throw new ParseException(&quot;ParseException: &quot; + token + &quot; を期待しましたが、&quot; + currentToken + &quot;が見つかりました。&quot;);
+

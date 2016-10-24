@@ -1,0 +1,12 @@
+import java.io.Writer;
+
+/**
+*
+*/
+public class MockCertificateServer implements TrustedApplicationsFilter.CertificateServer
+public void writeCertificate(Writer writer) throws IOException
+{
+if (certificate != null)
+{
+writer.write(certificate);
+

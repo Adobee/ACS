@@ -1,0 +1,11 @@
+package ca.sukhni.net.android.api.client;
+
+public enum HttpMethod
+{
+GET(1001), PUT(1002), POST(1003), DELETE(1004);
+public static HttpMethod fromMethod(String method)
+{
+for(HttpMethod m: HttpMethod.values())
+{
+if(m.name().equalsIgnoreCase(method)) return m;
+

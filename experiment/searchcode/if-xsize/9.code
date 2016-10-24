@@ -1,0 +1,10 @@
+ir=0;
+for(iy=1;iy<ysize-1;iy++)
+for(ix=1;ix<xsize-1;ix++){
+if(image_out[iy*xsize+ix]!=HIGH)
+ia[6]=image_out[(iy+1)*xsize+ix];
+ia[7]=image_out[(iy+1)*xsize+ix+1];
+for(i=0;i<8;i++){
+if(ia[i]==m){
+ia[i]=HIGH;
+

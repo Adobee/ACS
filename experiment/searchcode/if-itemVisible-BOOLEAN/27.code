@@ -1,0 +1,7 @@
+ai.checkInterruption();
+if ( ai.modeHandler.getMode() == AiMode.COLLECTING )
+{
+Set<AiTile> selectedTiles = getAccessibleSafeTiles();
+combiA = new AiUtilityCombination(caseMap.get(itemVisible));
+combiA.setCriterionValue((CriterionMenace)criterionMap.get(CriterionMenace.NAME),Boolean.FALSE);
+

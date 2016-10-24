@@ -1,0 +1,11 @@
+return Pattern.compile(&quot;.*&quot; + value + &quot;$&quot;, Pattern.CASE_INSENSITIVE);
+}
+
+private boolean isRegex(String value) {
+for (String part : REGEX_PARTS) {
+if (value.contains(part)) {
+* Sanitize the given value if necessary.
+* @param key the key to sanitize
+* @param value the value
+* @return the potentially sanitized value
+

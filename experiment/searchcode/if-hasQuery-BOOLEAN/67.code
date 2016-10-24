@@ -1,0 +1,5 @@
+public static String buildFullRequestUrl(HttpServletRequest req, boolean hasQuery) {
+return buildFullRequestUrl(req.getScheme(), req.getServerName(), req.getServerPort(), req.getRequestURI(), req.getContextPath(), req.getServletPath(), req.getPathInfo(), hasQuery? req.getQueryString() : null);
+public static String buildRequestUrl(HttpServletRequest req, boolean hasQuery) {
+return buildRequestUrl(req.getServletPath(), req.getPathInfo(), req.getRequestURI(), req.getContextPath(), hasQuery ? req.getQueryString() : null);
+

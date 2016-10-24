@@ -1,0 +1,14 @@
+CircleShape circle = json.readValue(&quot;circle&quot;, CircleShape.class, jsonData);
+
+if(circle != null)
+{
+def.shape = circle;
+EdgeShape edge = json.readValue(&quot;edge&quot;, EdgeShape.class, jsonData);
+if(edge != null)
+{
+def.shape = edge;
+}
+else
+{
+chainShapeSerializer.setReadLoop(false);
+

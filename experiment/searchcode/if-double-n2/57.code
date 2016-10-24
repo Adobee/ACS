@@ -1,0 +1,7 @@
+n2 = numberFrom(n1);
+}
+Number retval;
+if (n1 instanceof Double || n2 instanceof Double) {
+retval = n2.doubleValue() + n1.doubleValue();
+} else if (n1 instanceof Float || n2 instanceof Float) {
+

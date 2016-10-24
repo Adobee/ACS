@@ -1,0 +1,7 @@
+return compareTo(partial) == 0;
+}
+private void isPartialNull(ReadablePartial partial){
+if (partial == null)
+long instantMillis = DateTimeUtils.getInstantMillis(baseInstant);
+long resolved = chrono.set(this, instantMillis);
+

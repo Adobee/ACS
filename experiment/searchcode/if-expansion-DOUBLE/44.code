@@ -1,0 +1,8 @@
+for (int l = 1; l <= res.numberOfTerms; l++) {
+Complex sum = zs.power(l).scale(-1.0*expansionNumerators[0].re()/((double) l));
+for (int k = 1; k <= l; k++) {
+//The centers should be the same
+if(!otherMP.center.equals(center))
+{
+System.err.println(&quot;MultipoleExpansion.add: The centers should be the same&quot;);
+

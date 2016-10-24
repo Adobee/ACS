@@ -1,0 +1,11 @@
+this.equations=new TreeSet<String>();
+}
+
+public boolean validate(){
+for(Module m: this.modules){
+if(!m.validate())
+for(Module m : this.modules){
+m.computeEquations();
+boolean op=this.equations.addAll(m.getEquations());
+if(!op){
+

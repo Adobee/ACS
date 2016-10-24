@@ -1,0 +1,10 @@
+* @author marcio.endo@objectos.com.br (Marcio Endo)
+*/
+public abstract class AbstractColumn<V> implements Column {
+
+private final Map<ColumnKey<?>, ? extends ColumnConverter<V, ?>> converterMap;
+protected abstract String getNullOrEmptyMessage(V value);
+
+private void checkNullOrEmpty(ColumnKey<?> key) {
+if (nullOrEmpty) {
+

@@ -1,0 +1,9 @@
+private Map<Long, MethodStack> _methodStacks = new HashMap<Long, MethodStack>();
+
+public void registerMethodStack(Long threadId, MethodStack methodStack) {
+if (_methodStacks.containsKey(threadId)) {
+public void cleanup(Long threadId) {
+_methodStacks.remove(threadId);
+}
+}
+

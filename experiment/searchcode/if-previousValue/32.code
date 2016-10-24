@@ -1,0 +1,6 @@
+public class RandomStableGrowthFundValuation implements Valuation{
+
+public BigDecimal evaluate(BigDecimal previousValue) {
+previousValue = previousValue.add(BigDecimal.valueOf(change).divide(BigDecimal.valueOf(100)));
+if (previousValue.intValue() < 0) {
+

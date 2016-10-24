@@ -1,0 +1,10 @@
+if (executor.shouldShutDownImmediately() || (isEmpty() &amp;&amp; executor.shouldShutDownWhenNothingToDo())
+|| earlyStop()) {
+if (executor.unregisterThread(this)) {
+return false;
+* thread.
+* <p>
+* The default implementation always returns false.
+*/
+protected boolean earlyStop() {
+

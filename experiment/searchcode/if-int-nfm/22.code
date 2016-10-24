@@ -1,0 +1,10 @@
+private Nfm qualifyNfm(Nfm nfm) {
+if (nfm == null)
+return null;
+if (fMin == 1 &amp;&amp; fMax == 1)
+return nfm;
+if (fMin == 0 &amp;&amp; fMax == 1) {
+return Nfm.getQuestion(nfm);
+}
+if (fMin == 0 &amp;&amp; fMax == UNBOUNDED) {
+

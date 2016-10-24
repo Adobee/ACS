@@ -1,0 +1,10 @@
+for (int i = 0; i < parameters.size(); i++) {
+Value value;
+AExpression exp = arguments.get(i);
+
+if (exp instanceof JExpression) {
+state.dropFrame(functionName);
+
+AExpression expression = returnEdge.getExpression().orNull();
+if (expression == null &amp;&amp; returnEdge instanceof CReturnStatementEdge) {
+

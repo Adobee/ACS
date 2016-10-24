@@ -1,0 +1,12 @@
+private int oldPos;
+private int newPos;
+
+public SwapFilter(int oldPos, int newPos) {
+this.oldPos = oldPos;
+this.newPos = newPos;
+}
+
+@Override
+public void apply(List<? super NImage> images) {
+if (oldPos != newPos) {
+

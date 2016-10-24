@@ -1,0 +1,11 @@
+package com.esipeng.diameter.node;
+
+import java.nio.ByteBuffer;
+
+abstract class ConnectionBuffers {
+consume(appInBuffer(), len);
+}
+
+static ByteBuffer makeSpaceInBuffer(ByteBuffer buffer, int len) {
+if (buffer.position() + len > buffer.capacity()) {
+

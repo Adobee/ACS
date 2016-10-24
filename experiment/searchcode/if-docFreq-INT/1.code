@@ -1,0 +1,7 @@
+public class DocFreqComparatorSortDescending implements Comparator<TermStats> {
+
+public int compare(TermStats a, TermStats b) {
+if (a.docFreq() < b.docFreq()) {
+return 1;
+} else if (a.docFreq() > b.docFreq()) {
+

@@ -1,0 +1,5 @@
+public void setValueAt(Object aValue, int row, int column) {
+if (aValue instanceof Boolean &amp;&amp; column == 0) {
+Vector rowData = (Vector)getDataVector().get(row);
+rowData.set(0, (boolean)aValue);
+

@@ -1,0 +1,10 @@
+import org.apache.lucene.search.Sort;
+import org.apache.lucene.search.TopDocs;
+
+import com.yangyang.lucene.index.manager.IndexManager;
+public SearchResultBean search(Query query, int start, int end, Sort sort)
+{
+start = start > 0 ? start : 0;
+end = end > 0 ? end : 0;
+if(query == null || start > end || indexManager == null) return null;
+

@@ -1,0 +1,10 @@
+* @return the lcm of the given array of integers
+*/
+public long lcm(Integer[] n) {
+long lcm = 1;
+
+for (long num : n) {
+if (lcm % num == 0)
+continue;
+long gcd = gcd(lcm, num);
+

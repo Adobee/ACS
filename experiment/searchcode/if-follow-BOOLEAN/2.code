@@ -1,0 +1,13 @@
+private FollowDAO dao;
+
+public FollowService() {
+this.dao = new FollowDAOjdbc();
+}
+
+public boolean follow(int memberId, int followId) {
+bean.setMemberId(memberId);
+bean.setFollowId(followId);
+int result = dao.insert(bean);
+if (result == 1) {
+return true;
+

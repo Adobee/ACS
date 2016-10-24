@@ -1,0 +1,8 @@
+long durationMillis = parseDurationMillis(line);
+long offsetMillis = parseVideoStartOffsetMillis(line);
+int totalBytesPerSecond = parseTotalBytesPerSecond(line);
+log.debug(&quot;          duration       = {} ms&quot;, durationMillis);
+}
+if (offsetMillis >= 0) {
+videoFile.setVideoStartOffsetMillis(offsetMillis);
+

@@ -1,0 +1,8 @@
+FieldCell cell = gameObject.getLocationCell();
+FieldCell leftUp = cell.getLeftUpCell();
+if (leftUp != null) {
+FieldCell leftDown = cell.getLeftDownCell();
+if (leftDown != null) {
+cell.removeGameObject(gameObject);
+leftDown.addGameObject(gameObject);
+

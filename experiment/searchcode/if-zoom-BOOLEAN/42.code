@@ -1,0 +1,12 @@
+public TouchZoomControl(Zoomable p, int w, int h) {
+super(w, h);
+screen = p;
+}
+
+@Override
+public boolean pinch(double amount) {
+if (maxZoom == 0)
+maxZoom = screen.getMaxZoom();
+int zoom = (int)(amount * maxZoom);
+if (zoom == 0)
+

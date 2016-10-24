@@ -1,0 +1,13 @@
+queue = new ConcurrentLinkedQueue<Proxy>();
+}
+
+public Proxy poll() {
+Proxy proxy = queue.poll();
+if (proxy == null) {
+return null;
+}
+if (ProxyUtil.checkProxy(proxy)) {
+return proxy;
+}
+return poll();
+

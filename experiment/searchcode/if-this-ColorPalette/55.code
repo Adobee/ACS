@@ -1,0 +1,8 @@
+public CircularAdapter(Context c, Integer[] colors) {
+CircularAdapter.inflater = LayoutInflater.from(c);
+this.colorPalette = colors;
+viewHolder = (View) convertView.getTag();
+}
+
+viewHolder.setBackgroundColor(this.colorPalette[position % colorPalette.length]);
+

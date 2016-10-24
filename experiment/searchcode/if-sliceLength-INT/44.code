@@ -1,0 +1,11 @@
+* The RR, for Round Robin, scheduler algorithm schedules
+* tasks one after another. So, if you have tasks A, B and
+* C, then in the first tick, A may run. In the second tick,
+public RoundRobin(double sliceLength) {
+setUpdatePriorityEveryTick(true);
+this.sL = sliceLength;
+}
+
+@Override
+protected int getPriority(Task task, double time) {
+

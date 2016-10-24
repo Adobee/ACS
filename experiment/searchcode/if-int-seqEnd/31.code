@@ -1,0 +1,12 @@
+boolean lastLoop = true, find;
+while((find=m.find())||lastLoop)
+{
+if(!find &amp;&amp; lastLoop) lastLoop=false;
+
+int endIndex = (find? m.start(): unicodeString.length());
+String temp = &quot;&quot;;
+int seqStart = 0;
+int seqEnd = 0;
+Pattern p1 = Pattern.compile(key);
+Matcher m2 = p1.matcher(word);
+

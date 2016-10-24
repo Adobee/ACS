@@ -1,0 +1,8 @@
+public String encode(CharSequence rawPassword) {
+String encodedPassword = null;
+
+try {
+encodedPassword = MessageDigestHelper.getMessageDigest(rawPassword.toString(), ALGORITHM, CHARSET_NAME);
+public boolean matches(CharSequence rawPassword, String encodedPassword) {
+if(encodedPassword.equals(encode(rawPassword))) {
+

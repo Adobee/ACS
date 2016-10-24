@@ -1,0 +1,16 @@
+private double speed;
+private double nextX;
+
+/**
+* Initialization.
+*
+* @param parent - Room that this object is in.
+panel.transform.x = nextX;
+nextX += panel.transform.width;
+}
+}
+
+@Override
+public void update(double dt) {
+nextX -= speed;
+

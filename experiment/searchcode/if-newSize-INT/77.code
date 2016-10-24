@@ -1,0 +1,13 @@
+package april.vis;
+
+public final class ShortArray
+{
+short data[] = new short[16];
+int  pos; // index of next index to write to.
+public void ensureSpace(int additionalCapacity)
+{
+if (pos + additionalCapacity < data.length)
+return;
+
+int newsize = 2 * data.length;
+

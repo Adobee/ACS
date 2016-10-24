@@ -1,0 +1,8 @@
+public ImplicitEulerMethod(double x0, double y0, double z0, double sigma, double b, double r, double ta, double tb, double dt) {
+super(x0, y0, z0, sigma, b, r, ta, tb, dt);
+}
+
+@Override
+public void run() {
+for (double i = ta + dt; i <= tb; i += dt) {
+

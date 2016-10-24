@@ -1,0 +1,13 @@
+public boolean equals(Object o) {
+if (!(o instanceof EncodedMessage))
+return false;
+EncodedMessage other = (EncodedMessage)o;
+return (int)Double.doubleToLongBits(value)+31*encodedGoods.hashCode();
+}
+public String toString () {
+if(encodedGoods==null)return &quot;&quot;;
+return value+&quot;, &quot;+encodedGoods.toString();
+}
+
+}
+

@@ -1,0 +1,8 @@
+Terms terms = MultiFields.getTerms(reader, fieldName);
+if (terms != null) {
+TermsEnum termsEnum = terms.iterator(null);
+
+boolean skip = false;
+TermsEnum.SeekStatus status = termsEnum.seekCeil(new BytesRef(getPrefix()));
+if (status == TermsEnum.SeekStatus.FOUND) {
+

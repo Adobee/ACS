@@ -1,0 +1,8 @@
+private Map<String, Class<?>> name2type = MapUtil.newHashMap();
+private Map<Class<?>, Object> defaultValues = MapUtil.newHashMap();
+register(Double.TYPE, &quot;d&quot;);
+register(Double.class, &quot;D&quot;);
+register(String.class, &quot;str&quot;);
+
+defaultValues.put(Void.TYPE, null);
+

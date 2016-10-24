@@ -1,0 +1,16 @@
+public StateVisualization(final AnimationSelector animations) {
+super(animations);
+animations.registerAnimationChangeListener(this);
+incrementalUpdate = false;
+this.currentTrace = trace;
+if (!(currentTrace == null)) {
+draw();
+}
+}
+
+@Override
+public void animatorStatus(final boolean busy) {
+}
+
+}
+

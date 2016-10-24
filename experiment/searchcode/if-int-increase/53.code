@@ -1,0 +1,12 @@
+public class UserIncreaseServiceImpl extends SpringServiceImpl implements UserIncreaseService {
+
+@Autowired
+UserIncreaseDAO userIncreaseDAO;
+
+public int insertUserIncrease(UserIncreaseDTO dto) {
+return userIncreaseDAO.updateUserIncrease(dto);
+}
+
+public int saveUserIncrease(UserIncreaseDTO dto) {
+if (dto.getId() > 0) {
+

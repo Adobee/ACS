@@ -1,0 +1,9 @@
+Assert.fail(&quot;should have exception&quot;);
+}
+catch (Throwable e) {
+Assert.assertTrue(e instanceof IllegalMetaClassException);
+repo.getMetadataService().createMetaClass(m, new MetadataContext());
+Assert.fail();
+}
+catch (Throwable e) {
+

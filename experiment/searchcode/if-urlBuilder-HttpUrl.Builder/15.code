@@ -1,0 +1,8 @@
+HttpUrl.Builder urlBuilder = original.url().newBuilder();
+addBasicHeaders(urlBuilder);
+String accessToken = accessTokenProvider.get();
+if (!TextUtils.isEmpty(accessToken)) {
+urlBuilder.addQueryParameter(&quot;oauth_token&quot;, accessToken);
+}
+HttpUrl newUrl = urlBuilder.build();
+

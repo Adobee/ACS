@@ -1,0 +1,11 @@
+public class PiThreads implements PiApproximation {
+
+@Override
+public double computePi(long iterations) throws InterruptedException {
+double y = rand.nextDouble();
+double lenght = x * x + y * y;
+if (lenght < 1.0)
+inside++;
+}
+pi = ((double) inside) / iterations * 4;
+

@@ -1,0 +1,12 @@
+public static BigDecimal divide(BigDecimal dividend, BigDecimal divisor) {
+if (divisor == null) {
+return null;
+}
+if (dividend == null) {
+return null;
+}
+if (isZero(divisor)) {
+return null;
+}
+return dividend.divide(divisor, MATH_CONTEXT);
+

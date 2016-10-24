@@ -1,0 +1,11 @@
+private static final long serialVersionUID = 2973009383388218128L;
+boolean isSuccessful;
+
+public ShotResultEvent(boolean isSuccessful) {
+this.isSuccessful = isSuccessful;
+}
+
+@Override
+public void run(ClientManagerStub manager) {
+if (EventUtil.isValidClientManagerStub(manager)) {
+

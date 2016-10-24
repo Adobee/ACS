@@ -1,0 +1,16 @@
+System.err.println(&quot;Unknown Weight Type.&quot;);
+}
+
+RealMatrix D = sum(W, 2);
+RealMatrix L = null;
+if (!NORMALIZE)
+L = diag(D).subtract(W);
+else {
+RealMatrix A = new OpenMapRealMatrix(n, n);
+
+RealMatrix dt = null;
+for (int i = 0; i < n; i++) {
+
+if (i == 9) {
+int a = 0;
+

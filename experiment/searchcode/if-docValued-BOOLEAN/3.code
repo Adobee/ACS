@@ -1,0 +1,7 @@
+boolean indexed, boolean docValued, boolean stored) {
+List<Field> fields = new ArrayList<>();
+fields.add(new HalfFloatPoint(name, value.floatValue()));
+}
+if (docValued) {
+fields.add(new SortedNumericDocValuesField(name,
+

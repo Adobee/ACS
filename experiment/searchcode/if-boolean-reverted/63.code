@@ -1,0 +1,12 @@
+public void clear() {
+m_executedCommands.clear();
+m_revertedCommands.clear();
+}
+
+public boolean canUndo() {
+m_revertedCommands.push(lastCommand);
+}
+
+public boolean canRedo() {
+return !m_revertedCommands.empty();
+

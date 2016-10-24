@@ -1,0 +1,5 @@
+StoreMechanism storeMechanism = createBundledStoreMechanism(valueProvider, new StoreParameters(15, 15, TimeUnit.SECONDS));
+
+if (argsResolver.isFileArgPresent()) {
+registerFileWriter(storeMechanism, encryptor);
+

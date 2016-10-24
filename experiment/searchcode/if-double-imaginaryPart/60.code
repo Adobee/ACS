@@ -1,0 +1,6 @@
+* @param realPart any <code>double</code> type number that will represent real part of complex number
+* @param imaginaryPart any <code>double</code> type number that will represent imaginary part of complex number
+*/
+public ComplexNumber(final double realPart, final double imaginaryPart) {
+this.real = realPart;
+

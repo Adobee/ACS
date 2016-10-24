@@ -1,0 +1,8 @@
+@Subscribe(threadMode = ThreadMode.MAIN)
+public void onEventMainThread(RenewedEvent renewedEvent) {
+int textId = 0;
+
+if (renewedEvent.isAllRenewed()) {
+textId = renewedEvent.getRenewedList().size() == 1 ? R.string.toast_prolong : R.string.toast_prolong_all;
+} else if (renewedEvent.isNoneRenewed()) {
+

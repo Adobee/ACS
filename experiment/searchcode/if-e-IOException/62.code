@@ -1,0 +1,8 @@
+package org.appwork.utils;
+
+import java.io.IOException;
+
+public class ExtIOException extends IOException {
+public static ExtIOException getInstance(Exception e, IOExceptionType type) {
+if (e instanceof ExtIOException &amp;&amp; ((ExtIOException) e).type == type) {
+

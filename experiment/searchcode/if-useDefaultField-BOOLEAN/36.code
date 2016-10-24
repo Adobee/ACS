@@ -1,0 +1,15 @@
+if (null == propertyId) {
+
+logger.warn(&quot;propertyId is null&quot;);
+return null;
+}
+
+boolean useDefaultField = false;
+Collection<?> visiblePropertyIds = null;
+
+if (form instanceof T4JForm) {
+
+T4JForm t4jForm = (T4JForm) form;
+
+if (Boolean.TRUE.equals(t4jForm.getIsVisibleItemPropertiesValueSet())) {
+

@@ -1,0 +1,11 @@
+public class Main {
+
+public static void main(String[] args) {
+if (args.length != 2) {
+Mixture mix = new Mixture(new DataSet(args[0], Integer.parseInt(args[1])));
+
+mix.printStats();
+
+Double oldLog = mix.logLike();
+Double newLog = oldLog - 100.0;
+

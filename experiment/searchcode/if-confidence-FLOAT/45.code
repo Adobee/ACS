@@ -1,0 +1,9 @@
+@SerializedName(&quot;confidence&quot;)
+private float[] confidence;
+
+public void setQuery(final String query) {
+if (query.isEmpty()) {
+public void setQuery(final String[] query, final float[] confidence) {
+if (query == null) {
+throw new IllegalStateException(&quot;Query array must not be null&quot;);
+

@@ -1,0 +1,8 @@
+if (A == null) return 0;
+int endIndex = A.length-1;
+
+if (target > A[endIndex])  return endIndex+1;
+if (target < A[0]) return 0;
+
+int startIndex = 0;
+

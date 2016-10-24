@@ -1,0 +1,9 @@
+public String rewriteUrl(String url, String tag, String attribute, MutableAttributes otherAttributes)
+{
+String rewrittenUrl = url;
+if (tag.equalsIgnoreCase(&quot;A&quot;) &amp;&amp; attribute.equalsIgnoreCase(&quot;href&quot;))
+// redirect navigation through portal content urls
+rewrittenUrl = portalURL(url);
+}
+else if (tag.equalsIgnoreCase(&quot;FORM&quot;) &amp;&amp; attribute.equalsIgnoreCase(&quot;action&quot;))
+

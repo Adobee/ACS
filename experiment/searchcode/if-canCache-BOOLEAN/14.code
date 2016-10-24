@@ -1,0 +1,12 @@
+if (ci.cacheName != null &amp;&amp; !method.getReturnType().equals(Void.class)) {
+ci.canCache = true;
+for (Class<?> klass : method.getParameterTypes()) {
+if (!klass.isPrimitive() &amp;&amp; !Serializable.class.isAssignableFrom(klass)
+&amp;&amp; !Cnd.class.equals(klass)) { //特别处理一下Cnd类
+ci.canCache = false;
+break;
+}
+}
+}
+cacheInfoMap.putIfAbsent(method, ci);
+

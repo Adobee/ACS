@@ -1,0 +1,9 @@
+String sign=signBean.getUuid()+&quot;&amp;&amp;&quot;+signBean.getTimestamp();
+
+//公钥加密
+//byte[] encodedData = AnguoEncryptUtil.encryptByPublicKey(sign.getBytes(), DEFAULT_PUBLIC_KEY);
+public static Sign deSign(Sign signBean, String DEFAULT_PRIVATE_KEY) throws Exception
+{
+
+byte[] signStrByte=AnguoEncryptUtil.decryptBASE64(signBean.getSign());
+

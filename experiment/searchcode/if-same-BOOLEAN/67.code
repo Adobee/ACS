@@ -1,0 +1,7 @@
+/** True iff both sequences are non-null and have the same length. */
+@EnsuresNonNullIf(
+result = true,
+boolean @Nullable [] seq3, boolean @Nullable [] seq4) {
+if (sameLength(seq3, seq4)) {
+boolean b1 = seq3[0];
+

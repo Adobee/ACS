@@ -1,0 +1,6 @@
+private static <F, T> T cast(Class<F> fromClass, Class<T> toClass, F fromObj) {
+
+if(fromClass == null || toClass == null) throw new NullPointerException(&quot;参数禁止为空&quot;);
+if(toClass.isAssignableFrom(fromClass)) return (T) fromObj;
+if(fromObj == null) return null;
+

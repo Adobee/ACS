@@ -1,0 +1,7 @@
+public double pow (double x, int n) {
+double res = 1.0;
+double step = x;
+for (int i = Math.abs(n); i > 0; i >>= 1) {
+if ((i &amp; 0x01) > 0)
+res = res * step;
+

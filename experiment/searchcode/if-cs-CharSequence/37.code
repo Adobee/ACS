@@ -1,0 +1,10 @@
+public static boolean isNoneBlank(final CharSequence... css) {
+for (CharSequence cs : css) {
+if (isBlank(cs)) {
+return true;
+}
+
+public static boolean isBlank(final CharSequence cs) {
+int strLen;
+if (cs == null || (strLen = cs.length()) == 0) {
+

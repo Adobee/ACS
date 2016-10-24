@@ -1,0 +1,8 @@
+if (x < min || x > max) {
+return 0d;
+}
+final int binIndex = findBin(x);
+final RealDistribution kernel = getKernel(binStats.get(binIndex));
+final double lower = binIndex == 0 ? min : binBounds[binIndex - 1];
+final RealDistribution kernel = k(x);
+

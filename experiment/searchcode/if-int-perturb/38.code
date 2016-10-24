@@ -1,0 +1,12 @@
+public Colormap getColormap() {
+return colormap;
+}
+
+@Override
+public int filterRGB(int x, int y, int rgb) {
+float nx = m00*x + m01*y;
+blu = (0.25f*brownLayer + 0.35f*greenLayer)*2.0f*grn;
+grn *= Math.max(brownLayer, greenLayer) * grnPerturb;
+int r = (rgb >> 16) &amp; 0xff;
+int g = (rgb >> 8) &amp; 0xff;
+

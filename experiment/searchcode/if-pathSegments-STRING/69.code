@@ -1,0 +1,9 @@
+List<String> pathSegments = parsePath(path);
+if(pathSegments == null) return null;
+
+return mapPath2Tree(pathSegments, treeRoot);
+VerySimpleXpathParser pathParser  = new VerySimpleXpathParser(path);
+List<String> pathSegments = pathParser.getFullPath();
+
+if (pathSegments == null){
+

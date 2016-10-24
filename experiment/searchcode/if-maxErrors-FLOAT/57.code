@@ -1,0 +1,8 @@
+* corrections with at most 1 misspelled term are returned.
+*/
+public PhraseSuggestionBuilder maxErrors(float maxErrors) {
+if (maxErrors <= 0.0) {
+} else if (parseFieldMatcher.match(fieldName, PhraseSuggestionBuilder.MAXERRORS_FIELD)) {
+suggestion.maxErrors(parser.floatValue());
+} else if (parseFieldMatcher.match(fieldName, PhraseSuggestionBuilder.GRAMSIZE_FIELD)) {
+

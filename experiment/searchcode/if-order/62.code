@@ -1,0 +1,15 @@
+package com.bao.order.service;
+
+import java.util.List;
+
+import com.bao.order.dao.OrderDao;
+public boolean addOrder(Order order){
+int num=orderDao.addOrder(order);
+if(num!=0){
+return true;
+}else{
+return false;
+}
+}
+}
+

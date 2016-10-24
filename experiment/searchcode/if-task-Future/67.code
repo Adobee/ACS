@@ -1,0 +1,8 @@
+private static ScheduledThreadPoolExecutor scheduledExecutor = (ScheduledThreadPoolExecutor) Executors
+.newScheduledThreadPool(1);
+
+public static Future<?> registerClientTask(Task task, int delay) {
+Future<?> taskFuture = TaskManager.scheduledExecutor.schedule(task,
+delay, TimeUnit.SECONDS);
+if (!task.isGlobal())
+

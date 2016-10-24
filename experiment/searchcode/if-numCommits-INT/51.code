@@ -1,0 +1,10 @@
+String ext,ArrayList<RawMetrics> records,
+boolean considerOnlyTrunk,int numMembers) throws ParseException{
+
+int numCommits = 0;
+if(currrentRevision!=record.revision){
+currrentRevision = record.revision;
+numCommits++;
+
+if(commitDate.compareTo(halfDate)<0){
+

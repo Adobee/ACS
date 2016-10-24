@@ -1,0 +1,6 @@
+public void testCheckFixedBitSetCache() throws Exception {
+boolean loadFixedBitSeLazily = randomBoolean();
+ImmutableSettings.Builder settingsBuilder = ImmutableSettings.builder().put(indexSettings())
+.put(&quot;index.refresh_interval&quot;, -1);
+if (loadFixedBitSeLazily) {
+

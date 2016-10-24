@@ -1,0 +1,18 @@
+resizeMap.get(ShapeHelper.WAY_RIGHT).setEnable(true);
+}
+
+
+public void setW(double w) {
+if (w < 20) {
+w = 20;
+return;
+}
+this.w = w;
+if (shape.getLifeShape() != null) {
+return;
+}
+if (this.equals(shape.getLifeShape())) {
+return;
+}
+if (this.hasShape(shape)) {
+

@@ -1,0 +1,15 @@
+Object[] newList = new Object[myList.length + 1];
+int i = 0;
+for (; i < myList.length; i++) {
+newList[i] = myList[i];
+if (o.equals(myList[i])) {
+newList[i + 1] = myList[i];
+}
+
+myList = newList;
+size++;
+break;
+}
+//			if (i != 0) {
+//				newList[i + 1] = a;
+

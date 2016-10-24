@@ -1,0 +1,11 @@
+return new DocValueFormat.Decimal(format);
+}
+}
+
+@Override
+public boolean equals(Object o) {
+if (super.equals(o) == false) {
+boolean indexed = fieldType().indexOptions() != IndexOptions.NONE;
+boolean docValued = fieldType().hasDocValues();
+boolean stored = fieldType().stored();
+

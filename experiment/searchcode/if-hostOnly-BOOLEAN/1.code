@@ -1,0 +1,8 @@
+String hostonlyIfsString = vBoxManage.run(&quot;list&quot;, &quot;hostonlyifs&quot;);
+if (hostonlyIfsString != null &amp;&amp; !hostonlyIfsString.isEmpty()) {
+hostonlyNw = this.modifyHostonlyIf(hostonlyIfsString);
+} else {
+hostonlyNw = this.createHostonlyIf();
+}
+hostonlyNw = hostonlyNw.replace(&quot;Ethernet Adapter&quot;, &quot;Network&quot;);
+

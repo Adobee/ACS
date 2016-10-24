@@ -1,0 +1,11 @@
+public void riskControl(int clientID) {
+//		if(warningCeil.getBasic() > 0 || closeCeil.getBasic() > 0){
+//设置初始劣后资金必须 >0才进行风控
+closeCeil.setBasic(clientFundsData.afterFunds);
+}
+
+@Override
+public void setValue(double now, double basic) {
+if(basic!=0){
+ErrorLog.log(&quot;设置了多余的参数&quot;,&quot;AfterBadMoney&quot;,&quot;now:&quot;+now+&quot;,basic:&quot;+basic);
+

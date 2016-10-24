@@ -1,0 +1,14 @@
+* gcd(p,q) = gcd(q, p%q)
+*/
+
+// Recursive
+// Time: O(n)
+// Space: O(n)
+public static int greatestCommonDivisor(int p, int q){
+if(q == 0) return p;
+return greatestCommonDivisor(q, p%q);
+}
+
+// Iterative
+// Time: O(n)
+

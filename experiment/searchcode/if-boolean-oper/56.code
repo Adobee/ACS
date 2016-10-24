@@ -1,0 +1,12 @@
+private String operPasswd;
+private String operNewPasswd1;
+private String operNewPasswd2;
+private boolean agree = true;
+private PlatformService platformService;
+
+
+@PostConstruct
+private void init() {
+if (operManager.isLogined()) {
+logger.info(&quot;已登录。&quot;);
+

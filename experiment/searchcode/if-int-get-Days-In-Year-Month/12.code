@@ -1,0 +1,10 @@
+* @return integer Returns the number of days in a given month.
+*/
+public int getDaysForMonth(int inYear, int inMonth) {
+int daysForMonth = 0;
+LeapYear leapYear = new LeapYear();
+leapYearFlag = leapYear.isLeapYear(inYear);
+
+daysForMonth = monthList[inMonth].getDays();
+if ((leapYearFlag) &amp;&amp; (inMonth == 2))
+

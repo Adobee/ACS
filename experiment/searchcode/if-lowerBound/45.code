@@ -1,0 +1,7 @@
+public static <T extends Comparable<? super T>> Range<T> closed(final T lowerBound, final T upperBound) {
+if (lowerBound == null) {
+throw new IllegalArgumentException(&quot;lower bound cannot be null&quot;);
+throw new IllegalArgumentException(&quot;upper bound cannot be null&quot;);
+}
+if (lowerBound.compareTo(upperBound) > 0) {
+

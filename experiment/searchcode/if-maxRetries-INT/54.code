@@ -1,0 +1,8 @@
+public ExponentialBackoffRetry(int baseSleepTimeMs, int maxRetries)
+{
+this(baseSleepTimeMs, maxRetries, DEFAULT_MAX_SLEEP_MS);
+public ExponentialBackoffRetry(int baseSleepTimeMs, int maxRetries, int maxSleepMs)
+{
+super(validateMaxRetries(maxRetries));
+this.baseSleepTimeMs = baseSleepTimeMs;
+

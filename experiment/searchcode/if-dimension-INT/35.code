@@ -1,0 +1,12 @@
+this.dimensionDao = dimensionDao;
+}
+
+public DimensionWrapper showDimension(int id) {
+return new DimensionWrapper(dimensionDao.findOne(id));
+dimensionWrapperList.add(new DimensionWrapper(dimension));
+}
+return dimensionWrapperList;
+}
+
+public List<DimensionWrapper> showDimensionsByQuestionnaireId(int questionnaireId) {
+

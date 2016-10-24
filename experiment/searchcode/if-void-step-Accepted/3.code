@@ -1,0 +1,16 @@
+private ArrayList<VRSensorListener> mStepListeners = new ArrayList<VRSensorListener>();
+
+public StepDetector()
+{
+}
+
+public void addStepListener(VRSensorListener sl)
+public void removeMovementListeners()
+{
+mStepListeners.clear();
+}
+
+public void onSensorChanged(SensorEvent event)
+{
+if (event.sensor.getType() == Sensor.TYPE_ACCELEROMETER)
+

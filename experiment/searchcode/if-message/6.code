@@ -1,0 +1,10 @@
+public class ChatFormatter {
+public static String translate(String message, Player player) {
+if (player == null || !player.hasPermission(&quot;saraswati.format.colors&quot;)) {
+message = message.replace(&quot;&amp;d&quot;, &quot;&quot;);
+message = message.replace(&quot;&amp;e&quot;, &quot;&quot;);
+message = message.replace(&quot;&amp;f&quot;, &quot;&quot;);
+}
+
+if (player == null || !player.hasPermission(&quot;saraswati.format.special&quot;)) {
+

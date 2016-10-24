@@ -1,0 +1,8 @@
+new Character[]{&#39;0&#39;, &#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;, &#39;5&#39;, &#39;6&#39;, &#39;7&#39;, &#39;8&#39;, &#39;9&#39;}));
+
+private static String asString(Set<Character> invalidChars, String delimiter) {
+boolean first = true;
+for(Character ch : invalidChars) {
+if(first) {
+first = false;
+

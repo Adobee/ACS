@@ -1,0 +1,8 @@
+public LruDiscCache(File cacheDir, File reserveCacheDir, FileNameGenerator fileNameGenerator, long cacheMaxSize,
+int cacheMaxFileCount) throws IOException {
+if (cacheDir == null) {
+private void initCache(File cacheDir, File reserveCacheDir, long cacheMaxSize, int cacheMaxFileCount)
+throws IOException {
+try {
+cache = DiskLruCache.open(cacheDir, 1, 1, cacheMaxSize, cacheMaxFileCount);
+

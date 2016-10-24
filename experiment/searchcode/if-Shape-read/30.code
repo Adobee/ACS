@@ -1,0 +1,10 @@
+shape = shapeList.get(i);
+if (shape.isInShape(x, y)) {
+selectedIndex = i;
+return shape;
+* @return next shape in set.
+*/
+public MyShape getNext() {
+if ((selectedIndex + 1) >= shapeList.size()) {
+return get(0);
+

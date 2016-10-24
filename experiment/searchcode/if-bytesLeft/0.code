@@ -1,0 +1,12 @@
+final private InputStream _is;
+
+@Override
+public int read() throws IOException {
+if (mBytesleft < 1) return -1;
+
+int r = _is.read();
+if (r > -1) {
+mBytesleft--;
+}
+return r;
+

@@ -1,0 +1,8 @@
+import com.rosettastone.succor.backgroundtask.ExceptionHandler;
+import com.rosettastone.succor.backgroundtask.model.Task;
+
+public abstract class AbstractDelegatExceptionHandler implements ExceptionHandler {
+ExceptionHandler delegat = doFindDelegatExceptionHandler(exception);
+if (delegat == null) {
+delegat = defaultExceptionHandler;
+

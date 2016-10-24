@@ -1,0 +1,9 @@
+boolean finished = false;
+int offset1 = 0;
+int offset2 = 1;
+
+final static int BUFFER_SIZE = 10000;
+public int read(byte[] bytes, int offset, int length) throws IOException {
+if(finished &amp;&amp; offset2 + 1 == offset1)
+return -1;//throw new IOException(&quot;stream is already finished&quot;);
+

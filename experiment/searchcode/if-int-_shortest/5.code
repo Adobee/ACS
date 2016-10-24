@@ -1,0 +1,8 @@
+/*    */   public LookupTranslator(CharSequence[][] lookup)
+/*    */   {
+/* 46 */     this.lookupMap = new HashMap();
+/* 47 */     int _shortest = 2147483647;
+/* 48 */     int _longest = 0;
+/* 49 */     if (lookup != null) {
+/* 50 */       for (CharSequence[] seq : lookup) {
+

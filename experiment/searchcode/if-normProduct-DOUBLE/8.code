@@ -1,0 +1,10 @@
+return closeTo(point);
+}
+
+
+@Override
+public final double angle(final VectorT that) {
+final double normProduct = length() * that.length();
+if (GMath.closeToZero(normProduct)) {
+throw new RuntimeException(&quot;the product of the length() of the vectors is zero&quot;);
+

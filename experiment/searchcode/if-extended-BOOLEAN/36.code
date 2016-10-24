@@ -1,0 +1,8 @@
+public ExtendsDirective(TemplateLoader templateLoader, String fileName, String selector) throws TemplateLoadingException, BehaviorInstantiationException {
+extendedDocument = templateLoader.parseTemplate(fileName);
+if (selector != null) {
+ParentNode extended;
+if (extendedTag == null) {
+extended = extendedDocument;
+} else {
+

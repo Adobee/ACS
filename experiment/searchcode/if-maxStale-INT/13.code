@@ -1,0 +1,8 @@
+Response response = chain.proceed(request);
+if (NetworkUtils.isNetworkConnected(mContext)) {
+int maxAge = 60 * 60;
+.build();
+} else {
+int maxStale = 60 * 60 * 24 * 28;
+response = response.newBuilder()
+

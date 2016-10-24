@@ -1,0 +1,12 @@
+dp[i][j] = -1;
+}
+}
+return match (s,p,s.length(),p.length(),dp) == 1;
+}
+
+
+public boolean match_nocache (String s, String p ,int x , int y) {
+return match_nocache (s, p , x - 1, y - 1);
+} else if (p.charAt(y - 1) == &#39;*&#39;) {
+return match_nocache (s, p , x - 1, y) || match_nocache (s, p , x, y - 1);
+

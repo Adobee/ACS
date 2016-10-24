@@ -1,0 +1,11 @@
+throw new NumberFormatException(&quot;null&quot;);
+}
+
+if (radix < Character.MIN_RADIX) {
+throw new NumberFormatException(&quot;radix &quot; + radix +
+&quot; less than Character.MIN_RADIX&quot;);
+}
+
+if (radix > Character.MAX_RADIX) {
+throw new NumberFormatException(&quot;radix &quot; + radix +
+

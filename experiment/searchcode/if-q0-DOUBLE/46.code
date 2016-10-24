@@ -1,0 +1,10 @@
+double p1 = getA(0, x);
+double q0 = 0.0D;
+double q1 = 1.0D;
+double c = p1 / q1;
+int n = 0;
+double relativeError = 1.7976931348623157E+308D;
+double q2 = a * q1 + b * q0;
+boolean infinite = false;
+if ((Double.isInfinite(p2)) || (Double.isInfinite(q2))) {
+

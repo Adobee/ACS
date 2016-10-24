@@ -1,0 +1,7 @@
+public static Comparable Largest(Comparable c1,Comparable c2,Comparable c3){
+
+if(0 < c1.compareTo(c2) &amp;&amp; 0 < c1.compareTo(c3)){
+return c1;
+}
+if(0 < c2.compareTo(c1) &amp;&amp; 0 < c2.compareTo(c3)){
+

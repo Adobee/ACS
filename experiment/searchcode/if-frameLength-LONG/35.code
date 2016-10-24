@@ -1,0 +1,10 @@
+if(lagUpdate) lag = in.readBits(10);
+}
+else lag = in.readBits(11);
+if(lag>(frameLength<<1)) throw new AACException(&quot;LTP lag too large: &quot;+lag);
+public void setPredictionUnused(int sfb) {
+if(longUsed!=null) longUsed[sfb] = false;
+}
+
+public void process(ICStream ics, float[] data, FilterBank filterBank, SampleFrequency sf) {
+

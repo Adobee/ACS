@@ -1,0 +1,11 @@
+System.out.println(&quot;QUERY: &quot; + queryText);
+}
+
+public String getQueryResult() throws Exception
+{
+if (this.queryText == null || &quot;&quot;.equals(this.queryText))
+return &quot;No Query&quot;;
+}
+QueryResult result = this.getDbSession().executeQuery(this.queryText);
+if (result.getType() == QueryResult.Type.ROWSET)
+

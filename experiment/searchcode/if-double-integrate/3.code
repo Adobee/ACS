@@ -1,0 +1,8 @@
+public static void main(String[] args) throws Exception {
+Benchmark be = new Benchmark(args);
+
+if (be.args.length > 0) {
+double exp = Double.parseDouble(be.args[0]);
+be.start();
+double a = recEval(Integrate.start, Integrate.end, Integrate.computeFunction(Integrate.start), Integrate.computeFunction(Integrate.end), 0);
+

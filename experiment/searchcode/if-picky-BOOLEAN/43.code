@@ -1,0 +1,16 @@
+public static final int QUALITY_STRICT=9;
+
+/**
+*
+*/
+public static boolean checkQuality(String pw, int severity) {
+
+// Long enough?
+if(pw.length() < 6) {
+if(severity <= QUALITY_LENIENT) {
+return true;
+}
+
+// Otherwise, we get picky...
+if(hasUpperCase &amp;&amp; hasLowerCase &amp;&amp; (hasDigits || hasPunctuation)) {
+

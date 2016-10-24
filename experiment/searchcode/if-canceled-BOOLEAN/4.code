@@ -1,0 +1,10 @@
+public class Event {
+
+/**
+* Whether or not the event has been canceled.
+*/
+private boolean canceled;
+public void setCanceled(boolean canceled) {
+if (!this.isCancelable()) {
+OpenModLoader.getLogger().warn(&quot;An attempt was made to cancel the &quot; + this.getClass().getName() + &quot; event, but that event can not be canceled!&quot;);
+

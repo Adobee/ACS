@@ -1,0 +1,14 @@
+return value.getRowBytes() * value.getHeight();
+}
+
+@Override
+protected void entryRemoved(boolean evicted, String key, Bitmap oldValue,
+super.entryRemoved(evicted, key, oldValue, newValue);
+if (evicted) {
+oldValue.recycle();
+oldValue = null;
+}
+}
+
+}
+

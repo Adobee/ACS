@@ -1,0 +1,9 @@
+public class StatisticsMath {
+public static double getPercentille(double y, double m, double l, double s) {
+double z = getZScore(y, m, l, s);
+
+return NormalDistribution.cdf(z);
+}
+
+public static double getZScore(double y, double m, double l, double s) {
+

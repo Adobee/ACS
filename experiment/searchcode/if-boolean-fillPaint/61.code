@@ -1,0 +1,13 @@
+private static final String TAG = &quot;PaintStyle&quot;;
+
+public final boolean hasFill;
+public final boolean hasStroke;
+
+private Paint fillPaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+private Paint strokePaint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
+public GvgPaintStyle(String style) {
+
+// initialize paints before assigning values
+fillPaint.setStyle(Paint.Style.FILL);
+

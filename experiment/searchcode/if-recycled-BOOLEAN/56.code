@@ -1,0 +1,12 @@
+Pool<? extends PoolItem> mParent;
+boolean mRecycled;
+
+public PoolItem() {
+super();
+this.mRecycled = true;
+return pool == this.mParent;
+}
+
+public boolean isRecycled() {
+return this.mRecycled;
+

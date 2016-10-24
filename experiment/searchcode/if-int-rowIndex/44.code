@@ -1,0 +1,7 @@
+public class Solution {
+public ArrayList<Integer> getRow(int rowIndex) {
+// Start typing your Java solution below
+ArrayList<Integer> result = new ArrayList<Integer>();
+if (rowIndex < 0) {
+return result;
+

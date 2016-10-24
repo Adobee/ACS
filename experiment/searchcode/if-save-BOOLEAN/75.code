@@ -1,0 +1,6 @@
+public void applySave(SaveComponent save) {
+super.applySave(save);
+try {
+inputs = SaveData.unserializeBooleanArray(save.getFirstDataByName(&quot;inputs&quot;));
+inputActive = SaveData.unserializeBooleanArray(save.getFirstDataByName(&quot;inputActive&quot;));
+

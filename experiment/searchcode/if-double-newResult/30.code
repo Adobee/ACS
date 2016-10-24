@@ -1,0 +1,6 @@
+private double compareNode(final double result, final TreeGenomeNode node1,
+final TreeGenomeNode node2) {
+double newResult = result;
+
+final int node1Size = node1.getChildren().size();
+

@@ -1,0 +1,9 @@
+public class OdometryCorrection extends Thread {
+private static final long CORRECTION_PERIOD = 10;
+private double Line = 30;				// establishes the threshold of the sensor to delineate what values indicate crossing a line.
+public void run() {
+float last_reading;
+float now_reading;
+long correctionStart, correctionEnd;
+double new_position;
+

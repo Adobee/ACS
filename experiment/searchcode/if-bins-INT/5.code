@@ -1,0 +1,10 @@
+public BinCounter(OpSolution solution) {
+this.solution = solution;
+}
+
+public int[] count(int numBins) {
+int[] bins = new int[numBins];
+Map<Integer, List<Integer>> binCountMap = new HashMap<Integer, List<Integer>>();
+for(int i = 0; i < bins.length; ++i){
+if(!binCountMap.containsKey(bins[i])){
+

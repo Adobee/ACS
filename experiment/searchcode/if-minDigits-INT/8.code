@@ -1,0 +1,11 @@
+class DivisorRoundingHelper
+{
+public static Real round(Real q, int minDigits, int maxDigits, RoundingFunction r)
+{
+Int intPart = q.floor();
+r.apply(intPart, maxDigits),
+r.apply(intPart.add(1), maxDigits)
+);
+
+if (borders.contains(q)) return q.precision(maxDigits);
+

@@ -1,0 +1,16 @@
+ordained = false;
+}
+
+@Override
+public void addSample(Graph g) {
+samples.add(g);
+}
+
+public int minimum() {
+return mean;
+}
+
+public int median() {
+if(ordained == false){
+Collections.sort(samples);
+

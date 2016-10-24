@@ -1,0 +1,13 @@
+this.next = next;
+}
+
+public void handleRequest(String request) {
+if (isAppropriateRequest(request)) {
+delegate(request);
+}
+}
+
+private void delegate(String request) {
+if (next != null) {
+next.handleRequest(request);
+

@@ -1,0 +1,6 @@
+private static final float WF_GET    = 0.8f; // weight increment to get you
+private static final float WF_GET2   = 0.2f; // weight increment to get you
+tried[t].update( s, n, k );
+if ( ( t = pos[1] ) > 0 ) {
+s = computeScore( 0, t, moves.value(k), wei_from, wei_to );
+

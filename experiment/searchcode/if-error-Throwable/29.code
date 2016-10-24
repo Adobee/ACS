@@ -1,0 +1,14 @@
+public class RGSErrorState implements RGSState {
+
+private String errorMessage;
+private Throwable throwable;
+
+public String getErrorMessage() {
+this.throwable = throwable;
+}
+
+@Override
+public String getPresentation() {
+if (throwable == null) {
+return &quot;Error&quot;;
+

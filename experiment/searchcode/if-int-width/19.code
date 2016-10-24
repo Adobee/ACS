@@ -1,0 +1,9 @@
+* @param newWidth
+*/
+public void newWidth(int newWidth) {
+if (width <= newWidth) {
+width = newWidth;
+public void newWidth(int extraPixels, String string, int extraChars) {
+if (string!=null) {
+newWidth(extraPixels, string.length() + extraChars);
+

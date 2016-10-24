@@ -1,0 +1,8 @@
+private boolean mStarted = false;
+private boolean mDown = false;
+
+private MotionEvent mOriginalEvent;
+Log.d(DEBUG_TAG, &quot;Action was UP &quot; + mStarted);
+if (mStarted) {
+mListener.onDragEnd(mOriginalEvent, event);
+

@@ -1,0 +1,11 @@
+public Vector plus(Vector v) {
+checkDimensions(v);
+Vector result = new Vector(getDimensionality());
+for(int i = 0; i < getDimensionality(); i++) {
+private void checkDimensions(Vector v) {
+if(this.getDimensionality() != v.getDimensionality()) {
+throw new IllegalArgumentException(&quot;Vector dimensions must agree.&quot;);
+}
+}
+}
+

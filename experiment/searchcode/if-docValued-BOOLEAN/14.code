@@ -1,0 +1,6 @@
+import static org.elasticsearch.common.xcontent.support.XContentMapValues.lenientNodeBooleanValue;
+
+public class SizeFieldMapper extends MetadataFieldMapper {
+boolean indexed = fieldType().indexOptions() != IndexOptions.NONE;
+boolean docValued = fieldType().hasDocValues();
+

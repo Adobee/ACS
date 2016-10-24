@@ -1,0 +1,8 @@
+import br.com.startup.infraestrutura.AbstractFiltro;
+import br.com.startup.query.QueryBuilder;
+import br.com.startup.query.conditions.ConditionFactory;
+final QueryBuilder queryBuilder = QueryBuilder.select(MenuPersistente.class);
+
+if (isMenuPai()) {
+queryBuilder.where(ConditionFactory.nullValue(&quot;menuPai&quot;));
+

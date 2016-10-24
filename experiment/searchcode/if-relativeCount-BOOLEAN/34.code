@@ -1,0 +1,9 @@
+private final static boolean DEFAULT_MARKED = false;
+
+private final static boolean AS_DESTINATION = false;
+private final static boolean AS_SOURCE = true;
+protected boolean isValidConfiguration(boolean asynchronous, boolean continueous) {
+if ( asynchronous &amp;&amp; continueous ) {
+return false;
+} else if ( asynchronous &amp;&amp; !continueous ) {
+

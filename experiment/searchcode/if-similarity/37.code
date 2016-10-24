@@ -1,0 +1,13 @@
+public class CachedStringSimilarityProvider implements StringSimilarityProvider {
+
+protected HashMap<String, Integer> cache = new HashMap<String, Integer>();
+Integer similarity = cache.get(one + &quot;-&quot; + other);
+if (similarity == null) {
+similarity = delegate.getSimilarity(one, other);
+cache.put(one + &quot;-&quot; + other, similarity);
+}
+return similarity;
+}
+
+}
+

@@ -1,0 +1,7 @@
+synchronized ( SOLUTION_LOCK ) {
+if ( _optimizer != null ) {
+_parameters = _optimizer.getActiveSolverSession().getFixedCustomParameters();
+public void setOptimizer( final OpticsOptimizer optimizer ) {
+synchronized( SOLUTION_LOCK ) {
+if ( _optimizer != null ) {
+

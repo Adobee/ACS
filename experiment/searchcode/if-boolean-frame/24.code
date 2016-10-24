@@ -1,0 +1,17 @@
+private float frameTime;
+
+private double lastFrame = 0;
+
+public boolean pause;
+
+private int currFrame = 0;
+
+public Animation(Sprite[] frames, float frameTime)
+this.frameTime = frameTime;
+}
+
+public void update(float delta)
+{
+if (!pause) lastFrame += delta;
+if(lastFrame >= frameTime)
+

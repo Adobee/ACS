@@ -1,0 +1,5 @@
+public double DerivationOfFiByLamda(RealMatrix newPoint, RealMatrix currentPoint){
+RealMatrix gradientTransponed = myFunction.GetGradient(newPoint).transpose();
+RealMatrix dVector = myFunction.GetGradient(currentPoint).scalarMultiply(-1.);
+return gradientTransponed.multiply(dVector).getColumn(0)[0]; //gets the first element of the first collumn, which is the only element in the matrix
+

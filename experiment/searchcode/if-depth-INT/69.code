@@ -1,0 +1,11 @@
+package xtu.cie.ldj;
+
+public class MaximumDepthofBinaryTree {
+public int maxDepth(TreeNode root) {
+return root == null ? 0 : (Math.max(maxDepth(root.left),maxDepth(root.right)) + 1);
+}
+
+public int maxDepth02(TreeNode root) {
+if(root == null) return 0;
+int leftDepth = maxDepth(root.left);
+

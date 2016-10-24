@@ -1,0 +1,9 @@
+private long frameBytesRead;
+private boolean isFinalFrame;
+private boolean isControlFrame;
+private boolean isMasked;
+
+private final byte[] maskKey = new byte[4];
+public WebSocketReader(boolean isClient, BufferedSource source, FrameCallback frameCallback) {
+if (source == null) throw new NullPointerException(&quot;source == null&quot;);
+

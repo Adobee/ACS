@@ -1,0 +1,8 @@
+public static int pop(char[] a, int endIndex) {
+char max = &#39;\u0000&#39;;
+if (endIndex == 0) {
+throw new RuntimeException(&quot;No more entries in array&quot;);
+public static void balance_down_heap(char[] a, int parentIndx, int endIndex) {
+if (rightChild(parentIndx) <= endIndex || leftChild(parentIndx) <= endIndex) {
+int indexToSwap = get_max_child_index(a, endIndex, parentIndx);
+

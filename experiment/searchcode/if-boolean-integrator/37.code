@@ -1,0 +1,11 @@
+long integratorOffset;
+int  integratorCountOffset;
+
+boolean calibrated;
+
+double voltsPerLSB = 4.0/65536; // property of the ADCs
+double integratorCount = s.gyroIntegratorCount[port] - integratorCountOffset;
+
+if (integratorCount == 0) {
+// no time has passed between reset and getTheta().
+

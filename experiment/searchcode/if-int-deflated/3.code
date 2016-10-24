@@ -1,0 +1,11 @@
+private final RankMatrix RANK_MATRIX;
+
+private Board(int[] deflatedBoard) {
+this.DEFLATED_BOARD = deflatedBoard;
+this.BOARD_MATRIX = BoardMatrix.valueOfDeflatedBoard(deflatedBoard);
+this.RANK_MATRIX = RankMatrix.valueOfBoardMatrix(BOARD_MATRIX);
+}
+
+static Board valueOf(int[] deflatedBoard) {
+return new Board(deflatedBoard.clone());
+

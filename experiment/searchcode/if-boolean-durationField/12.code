@@ -1,0 +1,9 @@
+return dateTimeField == null ? false : dateTimeField.isSupported();
+}
+
+private static boolean isSupported(DurationField durationField) {
+return durationField == null ? false : durationField.isSupported();
+public void copyFieldsFrom(Chronology chronology) {
+DurationField millis = chronology.millis();
+if (isSupported(millis)) {
+

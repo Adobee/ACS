@@ -1,0 +1,7 @@
+public class SearchUtils{
+
+static boolean nameIsSimilarEnough(String artistNameFromSearch, String artistNameFiltered){
+int matchedSegments = 0;
+for(int i=0; i < artistNameFiltered.length() - COMPARISON_SEGMENT_LENGTH; i++){
+if(artistNameFromSearch.contains(artistNameFiltered.substring(i, i+COMPARISON_SEGMENT_LENGTH))){
+

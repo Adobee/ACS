@@ -1,0 +1,10 @@
+public abstract class Initializer implements Initializable {
+
+private boolean initialized = false;
+
+protected abstract void init();
+
+public boolean initialize() {
+if (!initialized) {
+initialized = true;
+

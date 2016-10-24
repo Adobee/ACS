@@ -1,0 +1,10 @@
+ArrayDeque<Command> commandStack = new ArrayDeque<Command>();
+
+private int stackDepth;
+private int currentDepth = 0;
+public void execute(Command cmd) {
+cmd.execute();
+commandStack.push(cmd);
+
+if (currentDepth == stackDepth)
+

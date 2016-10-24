@@ -1,0 +1,6 @@
+/*  22:    */   protected void computeInterpolatedStateAndDerivatives(double theta, double oneMinusThetaH)
+/*  23:    */   {
+/*  24: 89 */     double coeffDot2 = 2.0D * theta;
+/*  25: 90 */     double coeffDot1 = 1.0D - coeffDot2;
+/*  26: 92 */     if ((this.previousState != null) &amp;&amp; (theta <= 0.5D))
+

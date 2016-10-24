@@ -1,0 +1,10 @@
+public static final FuzzyBoolean FALSE = new FuzzyBoolean(.0);
+
+private static final double DEFAULT_TRUTH_THRESHOLD = .5;
+
+private final double threshold;
+
+private final double value;
+
+public FuzzyBoolean(final double value) {
+

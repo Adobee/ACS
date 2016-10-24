@@ -1,0 +1,11 @@
+Iterable<Integer>reversePostOrder = new TopologicalSort(G).reversePostOrder();
+for (int i:reversePostOrder) if (!seen[i]) {
+++count;
+dfs(G,i);
+seen[i] = true;
+for (int j:G.adj(i)) if (!seen[j])
+dfs(G,j);
+}
+
+public boolean stronglyConnected(int v, int w)
+

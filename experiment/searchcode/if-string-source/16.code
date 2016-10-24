@@ -1,0 +1,9 @@
+public static String trim_comma_end(String sourceString) {
+String s = &quot;&quot;;
+
+if (sourceString != null &amp;&amp; !sourceString.equals(&quot;&quot;)) {
+s = sourceString.trim();
+int l = s.length();
+
+if (l > 1 &amp;&amp; s.charAt(l - 1) == &#39;,&#39;) {
+

@@ -1,0 +1,10 @@
+public Dichotomy(Equation equation) {
+super(equation);
+}
+
+@Override
+public void step() {
+double x = (left + right - d) / 2;
+double y = (left + right + d) / 2;
+if (equation.calculate(x) <= equation.calculate(y))
+

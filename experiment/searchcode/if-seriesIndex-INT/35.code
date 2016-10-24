@@ -1,0 +1,11 @@
+private int seriesIndex;
+private String title;
+
+public MACDynamicGraph(MACSource datasource, int seriesIndex, String title) {
+return datasource.getItemCount(seriesIndex);
+}
+
+@Override
+public Number getX(int index) {
+return datasource.getX(seriesIndex, index);
+

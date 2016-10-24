@@ -1,0 +1,9 @@
+private final CharArraySet words;
+
+private final boolean ignoreCase;
+
+private final boolean queryMode;
+this.ignoreCase = settings.getAsBoolean(&quot;ignore_case&quot;, false);
+this.queryMode = settings.getAsBoolean(&quot;query_mode&quot;, false);
+this.words = Analysis.parseCommonWords(env, settings, null, ignoreCase);
+

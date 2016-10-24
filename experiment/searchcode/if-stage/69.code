@@ -1,0 +1,10 @@
+public void nextStage() {
+if (currentStageIndex + 1 >= stages.size()) return;
+resetCurrentStage();
+currentStageIndex++;
+startCurrentStage();
+}
+
+public void previousStage() {
+if (currentStageIndex - 1 < 0) return;
+

@@ -1,0 +1,8 @@
+return Math.sqrt((x-e.x)*(x-e.x)+(y-e.y)*(y-e.y));
+}
+public void tampilPosisi(Lingkaran a){
+double r3 = r + a.r;
+double j = getJarakLingkaran(a);
+if (j == r3){
+System.out.println(&quot;Bersinggungan&quot;);
+

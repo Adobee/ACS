@@ -1,0 +1,10 @@
+private static boolean generate = false;
+
+public static double[] generate(int numSamples, double mu, double sigma) {
+double[] samples = new double[numSamples];
+generate = !generate;
+if (!generate) {
+return z1 * sigma + mu;
+}
+List<Double> us = Uniform.generateSamplePair(new Random(), epsilon);
+

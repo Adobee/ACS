@@ -1,0 +1,11 @@
+public final double deg = 0.017453292519943295; //conversion factor for deg to rad
+public final double r3 = Math.sqrt(3); //square root of 3
+
+/*
+* These local variables are only used within this class;
+* ten is adjacent to tiles 1, 4 and 5 and roads 12, 13 amd 20;
+*/
+
+public final double tiles[][] = {{-6, 2 * r3}, {-6, 0}, {-6, -2 * r3},
+{-3, 3 * r3}, {-3, r3}, {-3, -r3}, {-3, -3 * r3}, {0, 4 * r3}, {0, 2 * r3},
+

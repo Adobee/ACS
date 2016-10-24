@@ -1,0 +1,12 @@
+return &quot;[(DefaultNotEqualsExpr): &quot; + getLHS() + &quot;, &quot; + getRHS() + &quot;]&quot;;
+}
+
+protected boolean evaluateObjectObject( Object lhs, Object rhs )
+{
+if( eitherIsNumber( lhs, rhs ) )
+{
+
+
+Double left = (Double) lhs;
+Double right = (Double) rhs;
+

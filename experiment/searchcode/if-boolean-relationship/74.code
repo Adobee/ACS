@@ -1,0 +1,11 @@
+public void update(long relId, boolean outgoing, long prevId, long nextId) {
+RelationshipRecord record = relationshipStore.getRecord(relId);
+if (outgoing) {
+public void flush() {
+relationshipStore.flushAll();
+}
+
+@Override
+public void start(long maxRelationshipId) {
+if (relationshipStore.getHighId() <= maxRelationshipId) relationshipStore.setHighId(maxRelationshipId +1);
+

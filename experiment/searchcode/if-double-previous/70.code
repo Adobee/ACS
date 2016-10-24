@@ -1,0 +1,6 @@
+protected E data;
+protected DoubleLinkedNode<E> nextElement;
+protected DoubleLinkedNode<E> previousElement;
+
+public DoubleLinkedNode(E object, DoubleLinkedNode<E> next, DoubleLinkedNode<E> previous){
+

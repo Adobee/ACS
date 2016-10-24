@@ -1,0 +1,9 @@
+mlt.setMinTermFreq(minTermFrequency);
+if (minDocFreq >= 0) {
+mlt.setMinDocFreq(minDocFreq);
+}
+mlt.setMaxQueryTermsPerField(maxQueryTerms);
+if (maxQueryTerms != other.maxQueryTerms) return false;
+if (minDocFreq != other.minDocFreq) return false;
+if (minTermFrequency != other.minTermFrequency) return false;
+

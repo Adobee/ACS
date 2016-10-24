@@ -1,0 +1,7 @@
+public Double apply(Double x) {
+ArgChecker.inRangeInclusive(x, 0d, 1d, &quot;x&quot;);
+double pp, p, t, h, w, lnA, lnB, u, a1 = _a - 1;
+double b1 = _b - 1;
+if (_a >= 1 &amp;&amp; _b >= 1) {
+pp = x < 0.5 ? x : 1 - x;
+

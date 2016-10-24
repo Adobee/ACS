@@ -1,0 +1,6 @@
+public <T> T cast(Object src, Class<T> toType) throws Exception {
+// 原生数据的默认值
+if (toType.isPrimitive()) {
+if (toType == int.class)
+return (T) Integer.valueOf(0);
+

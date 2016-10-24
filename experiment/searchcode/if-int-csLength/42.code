@@ -1,0 +1,9 @@
+return false;
+}
+int csLength = cs.length();
+int searchLength = searchChars.length;
+int csLast = csLength - 1;
+int searchLast = searchLength - 1;
+for (int i = 0; i < csLength; i++) {
+char ch = cs.charAt(i);
+

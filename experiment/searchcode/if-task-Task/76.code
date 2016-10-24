@@ -1,0 +1,10 @@
+public Task update(Integer id, String name, Integer status, Integer version) {
+Task task = find(id);
+if (task != null) {
+task.setName(name);
+task.setStatus(status);
+@Transactional
+public Task update(Integer id, Task task) {
+Task currentTask = find(id);
+if (currentTask != null) {
+

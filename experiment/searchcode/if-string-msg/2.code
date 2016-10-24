@@ -1,0 +1,14 @@
+public Encrypt(){
+}
+
+public String encryptIt(String msg){
+String emsg = &quot;&quot;;
+for(int i=0; i<msg.length(); i++){
+char c = msg.charAt(i);
+String n = &quot;&quot;+c;
+
+if(c == &#39;v&#39;){
+n = &quot;ag&#39;,r&quot;;
+}
+if(c == &#39;m&#39;){
+

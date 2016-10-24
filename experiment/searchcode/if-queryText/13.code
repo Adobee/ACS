@@ -1,0 +1,11 @@
+public void focusGained(FocusEvent e) {
+JTextField queryText = (JTextField)e.getComponent();
+String keyword = queryText.getText();
+if (Constants.CGI_QUERY_TIPS.equals(keyword)) {
+String keyword = queryText.getText();
+if (Constants.EMPTY_STRING.equals(keyword)) {
+queryText.setText(Constants.CGI_QUERY_TIPS);
+}
+}
+}
+

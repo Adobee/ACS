@@ -1,0 +1,6 @@
+public class EntityMovingABFX extends EntityCustomFX{
+
+public double targetX, targetY, targetZ;
+
+public EntityMovingABFX(World world, double x, double y, double z, double targetX, double targetY, double targetZ) {
+

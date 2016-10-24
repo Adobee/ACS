@@ -1,0 +1,12 @@
+package com.tg.google.map;
+
+import android.os.Bundle;
+import android.os.Handler;
+import android.os.ResultReceiver;
+protected void onReceiveResult(int resultCode, Bundle resultData) {
+if (mReceiver != null) {
+mReceiver.onReceiveFetchLocationsResult(resultCode, resultData);
+}
+}
+}
+

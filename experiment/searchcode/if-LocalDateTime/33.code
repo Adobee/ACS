@@ -1,0 +1,14 @@
+package ch05.ex07;
+
+import java.time.LocalDateTime;
+
+/**
+* カレンダーの予定が重複していないか確かめるメソッドを作成する。
+* →二つのインターバルが重なっていないか確かめる。
+*
+* @author haneda
+*
+*/
+public class TimeInterval {
+LocalDateTime start;
+

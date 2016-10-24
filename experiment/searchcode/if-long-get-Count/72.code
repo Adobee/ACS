@@ -1,0 +1,7 @@
+public VineUser(JSONObject data) throws Exception {
+if (data != null) {
+userId = JSONUtil.getLong(data, &quot;userId&quot;);
+if (userId > 0) {
+followingCount = JSONUtil.getLong(data, &quot;followingCount&quot;);
+likeCount = JSONUtil.getLong(data, &quot;likeCount&quot;);
+

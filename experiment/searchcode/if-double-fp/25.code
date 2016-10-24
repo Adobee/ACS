@@ -1,0 +1,15 @@
+package ejercicios_fp_semana6;
+
+public class Calculadora {
+
+double suma(double a,double b){
+double multi(double a,double b){
+return a*b;
+}
+
+double div(double a,double b){
+if(b!=0){
+return a+b;
+}else{
+System.out.println(&quot;trataste de dividir entre cero...&quot;);
+

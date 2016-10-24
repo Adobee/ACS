@@ -1,0 +1,7 @@
+final Plane thisPlane  = (Plane) getHyperplane();
+final Line  inter      = (Line) otherPlane.intersection(thisPlane);
+
+if (inter == null) {
+Vector3D crossP = Vector3D.crossProduct(inter.getDirection(), thisPlane.getNormal());
+if (Vector3D.dotProduct(crossP, otherPlane.getNormal()) < 0) {
+

@@ -1,0 +1,16 @@
+package problem2;
+
+public class ReportNoTimeoutErrors extends Report{
+
+
+private boolean wasTimeoutError;
+boolean passed = sub.runTestCase();
+if (!passed){
+wasTimeoutError = sub.wasTimeoutError();
+}
+return wasTimeoutError;
+
+}
+
+}
+

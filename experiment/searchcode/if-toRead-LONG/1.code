@@ -1,0 +1,11 @@
+// Fields =================================================================
+
+private final RandomAccessFile myFile;
+private long offset;
+toRead = Math.min(userLength, toRead);
+length -= toRead;
+
+long pos = myFile.length();
+myFile.seek(offset);
+int result = myFile.read(buffer, userOffset, toRead);
+

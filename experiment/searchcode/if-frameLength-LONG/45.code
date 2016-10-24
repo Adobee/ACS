@@ -1,0 +1,15 @@
+return queue;
+
+}
+
+
+private AnimationThread thread = null;
+
+private long frameLength;
+
+private class AnimationThread extends Thread {
+long sleepTime = frameLength - (System.currentTimeMillis() - startFrame);
+
+if (sleepTime > 0) {
+try {
+

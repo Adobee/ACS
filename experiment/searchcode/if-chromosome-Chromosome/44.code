@@ -1,0 +1,6 @@
+public IChromosome doMutation(IChromosome chromosome) {
+if (randomGenerator.nextFloat() <= Configuration.MUTATION_RATIO) {
+switch (Configuration.MUTATION_TYPE){
+IChromosome newChromosome = new Chromosome(chromosomeString.toString());
+if (newChromosome.isInPriceBudget()) {
+

@@ -1,0 +1,9 @@
+Vec d = r.clone();
+double bnorm = b.norm2();
+double rnorm = r.norm2();
+double xnorm = x.norm2();
+double rrnorm = rnorm*rnorm;
+logInit(bnorm,rnorm,xnorm);
+int iter;
+for (iter=0; iter<_maxi &amp;&amp; rnorm>_tiny*(anorm*xnorm+bnorm); ++iter) {
+

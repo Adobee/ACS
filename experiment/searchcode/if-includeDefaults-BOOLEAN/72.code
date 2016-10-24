@@ -1,0 +1,9 @@
+private final AnnotationMirror annotationMirror;
+private int i = 0;
+private final boolean includeDefaults;
+
+public SettingInstancerPrinter(AnnotationMirror annotationMirror, MutableProcessingEnvironment processingEnv, FormattedPrintWriter pw, boolean includeDefaults) {
+super(processingEnv);
+this.pw = pw;
+this.annotationMirror = annotationMirror;
+

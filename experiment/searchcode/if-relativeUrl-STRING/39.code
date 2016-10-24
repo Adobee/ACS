@@ -1,0 +1,8 @@
+}else if(method.equals(&quot;GET&quot;) &amp;&amp; relativeUrl.equals(&quot;/getall&quot;)){
+return new GetAllServlet();
+}else if(method.equals(&quot;GET&quot;)){
+String file = relativeUrl.split(&quot;/&quot;)[2];
+return new PostEditServlet();
+}else if(method.equals(&quot;DELETE&quot;)){
+String file = relativeUrl.split(&quot;/&quot;)[2];
+

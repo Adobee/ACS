@@ -1,0 +1,10 @@
+else if (val instanceof Boolean)
+prefEditor.putBoolean(name, Convert.toBoolean(val));
+else if (val instanceof Double || val instanceof Float)
+int batchLevel = 0;
+boolean isDataDirty = false;
+
+@Override
+public void fireDataChangedEvent() {
+if (batchLevel > 0){
+

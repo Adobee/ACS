@@ -1,0 +1,8 @@
+public boolean equals(Mat3 other) {
+return equals(other, 2);
+}
+
+public boolean equals(Mat3 other, int maxUlps) {
+if (!compareFloatEquals(m00, other.m00, maxUlps)) {
+return false;
+

@@ -1,0 +1,9 @@
+// advance to the next character to get ready for the next call
+// before returning nextChar
+if (nextChar == -1)	// EOF
+return new Token (Kind.SEMICOLON, lineNum, charPos);
+default:
+if (isNumber ((char) nextChar))
+return parseNumber (lineNum, charPos);
+else
+

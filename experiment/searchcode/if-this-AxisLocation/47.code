@@ -1,0 +1,7 @@
+AxisLocation location = (AxisLocation) obj;
+if (!this.name.equals(location.toString())) {
+return false;
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(AxisLocation.TOP_OR_RIGHT)) {
+return AxisLocation.TOP_OR_RIGHT;
+

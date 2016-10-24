@@ -1,0 +1,12 @@
+import com.ameron32.game.kingsburg.core.local.JavaLogger;
+
+public class Printer {
+
+public static boolean debugOn = true;
+public static boolean filterOn = false;
+private static Logger printer;
+
+public static Logger get() {
+if (Printer.printer == null) {
+Printer.printer = new JavaLogger();
+

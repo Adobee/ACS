@@ -1,0 +1,7 @@
+for (int i = k + 1, idx = i + k * n_; i < n_; i++, idx++) {
+double cur = Math.abs(lu_[idx]);
+if (cur > pmax) {
+double kk = lu_[kn + k * n_];
+if (Math.abs(kk) < getEpsilon()) {
+throw new MatrixException(&quot;LU decomposition: Singular matrix&quot;);
+

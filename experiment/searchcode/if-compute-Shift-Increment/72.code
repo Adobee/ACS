@@ -1,0 +1,7 @@
+public void handleDownstream(ChannelHandlerContext ctx, ChannelEvent e) throws Exception {
+
+if (!(e instanceof MessageEvent)) {
+ctx.sendDownstream(e);
+private int computeBlockSequenceNumber(ChannelHandlerContext ctx) {
+int blockCounter = getAndIncrementBlockSequenceCounter(ctx);
+

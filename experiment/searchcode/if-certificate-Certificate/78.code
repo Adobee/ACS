@@ -1,0 +1,7 @@
+public boolean isCertificateValid(Certificate certificate) throws PKIException {
+if (certificate.size() == 0) {
+return true;
+}
+if (certificateRevocationList.contains(certificate)) {
+return false;
+

@@ -1,0 +1,7 @@
+int minDistance = Integer.MAX_VALUE;
+List<Integer> lambdaCells = mine.getLambdaCells();
+if (lambdaCells.size() == 0) return Delta.NULL;
+for (Integer lambda : lambdaCells) {
+if (ctx.isClosedSquare(lambda)) continue;
+int lambdaX = lambda % mine.getWidth();
+

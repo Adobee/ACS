@@ -1,0 +1,10 @@
+public static Real round(Real q, Interval split, int minDigits, int maxDigits)
+{
+Real f = q.frac();
+if (split.contains(f)) return q.precision(maxDigits);
+
+int comp = split.compareTo(f);
+int digits = minDigits - 1;
+Real fr;
+do
+

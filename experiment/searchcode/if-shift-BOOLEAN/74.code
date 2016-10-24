@@ -1,0 +1,9 @@
+@Override
+public boolean add(Integer a) {
+if (!(a - shift < sparse.length &amp;&amp; a - shift >= 0) || contains(a))
+return true;
+}
+
+public boolean contains(Integer a) {
+return (a - shift < sparse.length &amp;&amp; (0 <= sparse[a - shift] &amp;&amp; sparse[a - shift] < num)
+

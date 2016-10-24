@@ -1,0 +1,10 @@
+boolean[] trimmed = new boolean[dims];
+
+int axisIndex;
+String axis;
+
+Iterator<CellDomainElement> cdit = coverage.getCellDomainIterator();
+axisIndex = coverage.getDomainIndexByName(axis);
+if (axisIndex == -1) {
+throw new WCSException(ExceptionCode.InvalidParameterValue, &quot;Unknown axis: &quot; + axis);
+

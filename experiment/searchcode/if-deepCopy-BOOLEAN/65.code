@@ -1,0 +1,11 @@
+* @return
+*/
+@SuppressWarnings(&quot;unchecked&quot;)
+public static <T> T deepCopy(T obj) {
+if (obj == null) {
+if (obj instanceof Collection) {
+return (T) deepCopy((Collection) obj);
+}
+
+if (obj instanceof Map) {
+

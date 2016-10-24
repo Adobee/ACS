@@ -1,0 +1,9 @@
+throws ExprException {
+assertArgCount(args, 1);
+Expr a = evalArg(context, args[0]);
+if (a instanceof ExprArray) {
+ExprArray ar = (ExprArray) a;
+a = ar.get(0);
+}
+if (a instanceof ExprNumber) {
+

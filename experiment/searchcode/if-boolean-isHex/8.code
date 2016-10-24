@@ -1,0 +1,6 @@
+private static final String HEXES = &quot;0123456789abcdef&quot;;
+public static int toDecimal(String input){
+boolean  isHex = input.matches(&quot;^[0-9a-f]+&quot;);
+if (!isHex) return 0;
+return Arrays.stream(input.split(&quot;&quot;))
+

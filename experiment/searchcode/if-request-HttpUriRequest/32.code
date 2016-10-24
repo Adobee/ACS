@@ -1,0 +1,16 @@
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpUriRequest;
+
+public class ForecastServerRequest extends ServerRequest{
+mUrl = url;
+}
+@Override
+protected HttpUriRequest getRequestObject() {
+if (mUrl == null) {
+return null;
+}
+return new HttpGet(mUrl);
+}
+
+}
+

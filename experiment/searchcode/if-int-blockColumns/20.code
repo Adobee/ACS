@@ -1,0 +1,11 @@
+private final int columns;
+
+private final int blockRows;
+
+private final int blockColumns;
+
+public BlockFieldMatrix(final org.apache.commons.math.Field<T> field ,final int rows ,final int columns) throws java.lang.IllegalArgumentException {
+final T[] block = blocks[((iBlock * (blockColumns)) + jBlock)];
+final int available = (outBlock.length) - outIndex;
+if (jWidth > available) {
+

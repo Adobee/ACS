@@ -1,0 +1,11 @@
++ viewListeners.getClass().getName() + &quot;&#39; we found does not match the view attribute.&quot;, e);
+}
+}
+}
+
+private ViewListeners getViewListeners(Object view) {
+if (cachedViewListeners.containsKey(view)) {
+Class<? extends ViewListeners> viewListenersClass = viewListenersMap.findMostSuitable(viewClass);
+if (viewListenersClass == null) {
+throw new RuntimeException(&quot;no ViewListeners registered for &quot; + viewClass.getName());
+

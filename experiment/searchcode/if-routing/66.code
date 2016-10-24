@@ -1,0 +1,7 @@
+public RoutingTable validateRaiseException(MetaData metaData) throws RoutingValidationException {
+RoutingTableValidation validation = validate(metaData);
+if (!validation.valid()) {
+IndexRoutingTable indexRoutingTable = index(index);
+if (indexRoutingTable == null) {
+throw new IndexMissingException(new Index(index));
+

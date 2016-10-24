@@ -1,0 +1,11 @@
+public class DefaultRetryState implements RetryState {
+
+final private Object key;
+
+final private boolean forceRefresh;
+
+final private Classifier<? super Throwable, Boolean> rollbackClassifier;
+public DefaultRetryState(Object key, boolean forceRefresh, Classifier<? super Throwable, Boolean> rollbackClassifier) {
+this.key = key;
+this.forceRefresh = forceRefresh;
+

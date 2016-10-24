@@ -1,0 +1,12 @@
+public class User implements Observer {
+
+private String username;
+
+public User(String username) {
+setUsername(username);
+}
+
+@Override
+public void update(Observable arg0, Object arg1) {
+if (arg1 instanceof String)
+

@@ -1,0 +1,7 @@
+public boolean matches(CharSequence rawPassword, String encodedPassword) {
+if (encodedPassword.startsWith(&quot;$2a$10$&quot;) &amp;&amp; encodedPassword.length() == 60) {
+return bcryptPasswordEncoder.matches(rawPassword, encodedPassword);
+}
+
+if (encodedPassword.length() == 64) {
+

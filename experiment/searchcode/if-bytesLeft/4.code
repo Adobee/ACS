@@ -1,0 +1,9 @@
+public class SizeLimitedInputStream extends InputStream {
+
+private long		bytesLeft;
+private InputStream	capsulatedInputStream;
+public int read() throws IOException {
+int read = -1;
+if (bytesLeft()) {
+read = capsulatedInputStream.read();
+

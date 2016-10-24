@@ -1,0 +1,13 @@
+public SeedDriverFactory() {
+
+}
+public SeedDriverProperties getProp() {
+return this.prop;
+}
+
+public void setProp(SeedDriverProperties prop) {
+public SeedDriver getDriver(String type) {
+if(type.equalsIgnoreCase(&quot;chrome&quot;))
+driver = new SeedChromeDriver(prop);
+else if(type.equalsIgnoreCase(&quot;firefox&quot;))
+

@@ -1,0 +1,9 @@
+/** A pyramid with a 1x1 base in the XY plane reaching up to an apex at (0,0,1) **/
+public static void pyramidFilled(GL gl, boolean bottom)
+{
+double sqrt2 = 0.7071067812;
+
+gl.glBegin(GL.GL_TRIANGLES);
+gl.glNormal3d(sqrt2, 0, sqrt2);
+gl.glVertex3d(.5,-.5, 0);
+

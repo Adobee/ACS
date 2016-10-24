@@ -1,0 +1,5 @@
+List<Object[]> resultList = entityManager.createNativeQuery(sql).getResultList();
+if (resultList != null) {
+for (Object[] objectArray : resultList) {
+SaleCarShow carShow = new SaleCarShow((Double) objectArray[0], (String) objectArray[1],
+

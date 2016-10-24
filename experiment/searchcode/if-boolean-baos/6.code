@@ -1,0 +1,6 @@
+public void testLatinCharsOnly() throws Exception {
+final ByteArrayOutputStream baos = new ByteArrayOutputStream(10);
+baos.write(testChars.getBytes(Charsets.UTF_8));
+InputStream in = new ByteArrayInputStream(baos.toByteArray());
+if (oneByteAtATime) {
+

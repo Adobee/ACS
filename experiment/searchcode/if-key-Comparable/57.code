@@ -1,0 +1,6 @@
+* @see CollectionUtils#sortedByKeys(java.util.Collection, CollectionUtils.ComposedKeyProvider)
+*/
+public final class ComparableWithSortOrder<T> implements Comparable<ComparableWithSortOrder<T>> {
+public static <T> ComparableWithSortOrder<T> differently(Comparable<T> comparable, SortOrder order, NullOrder nullOrder) {
+if (comparable instanceof ComparableWithSortOrder) {
+

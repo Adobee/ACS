@@ -1,0 +1,9 @@
+public static Float getBootByConfig(IndexConfig indexConfig,ResultSet resultSet) throws SQLException{
+
+Float boost = 1f;
+int configType = indexConfig.getTypeCode();
+if(configType==IndexType.MERCHANT.getCode()){
+
+if(resultSet.getInt(&quot;type&quot;)==2){
+boost = boost * 1000;
+

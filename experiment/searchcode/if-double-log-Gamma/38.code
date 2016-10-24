@@ -1,0 +1,5 @@
+public static double p_gamma(double a, double x, double loggamma_a) { // 本文参照
+if (x >= 1 + a) return 1 - q_gamma(a, x, loggamma_a);
+public static double erfc(double x) { // 1 - erf(x)
+if (x >= 0) return q_gamma(0.5, x * x, LOG_PI / 2);
+

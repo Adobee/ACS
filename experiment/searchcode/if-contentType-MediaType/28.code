@@ -1,0 +1,7 @@
+String[] contentTypes = accept != null &amp;&amp; accept.isEmpty() == false ? accept.split(&quot;,&quot;) : new String[0];
+for (String contentType : contentTypes) {
+MediaType mediaType = MediaType.valueOf(contentType);
+mediaTypes.add(mediaType);
+}
+return new Accepts(mediaTypes);
+

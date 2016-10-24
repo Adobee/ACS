@@ -1,0 +1,7 @@
+boolean[][] rs = new boolean[9][9];
+boolean[][] cs = new boolean[9][9];
+boolean[][] bs = new boolean[9][9];
+int c = board[i][j] - &#39;1&#39;;
+if(rs[i][c] || cs[j][c] || bs[(i /3)* 3 + j/3][c]) return false;
+rs[i][c] = cs[j][c] = bs[(i /3)* 3 + j/3][c] = true;
+

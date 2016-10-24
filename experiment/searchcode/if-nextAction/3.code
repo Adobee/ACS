@@ -1,0 +1,11 @@
+private Action1<Throwable> nextAction = null;
+
+public void setNextAction(Action1<Throwable> nextAction) {
+this.nextAction = nextAction;
+}
+
+
+@Override
+public void call(Throwable throwable) {
+if (throwable instanceof OnErrorThrowable) {
+

@@ -1,0 +1,10 @@
+public class ExcelBooleanOptionFiller extends ExcelValueOptionFiller<BooleanOption> {
+
+@SuppressWarnings(&quot;deprecation&quot;)
+@Override
+protected void fillNumeric(double d, BooleanOption option) {
+protected void fillString(String s, BooleanOption option) {
+if (s == null) {
+option.setNull();
+return;
+

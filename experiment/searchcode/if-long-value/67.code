@@ -1,0 +1,17 @@
+public void setValue(Object value)
+{
+Long l = null;
+if (value instanceof Long) {
+l = (Long)value;
+} else {
+if (value != null) {
+String str = value.toString();
+if (str.length() > 0) {
+l = Long.parseLong(str);
+}
+}
+}
+setValue(l);
+}
+}
+

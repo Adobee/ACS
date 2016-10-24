@@ -1,0 +1,9 @@
+public class PowerWithSignedExponent {
+public double get(double base, int exponent){
+if(exponent==0){
+return 1;
+}
+
+double result = get(base,exponent>>1);
+if((exponent&amp;1)==0){
+

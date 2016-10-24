@@ -1,0 +1,7 @@
+idx = c.getColumnIndex(MessageData.KEY_CONTENT_TYPE);
+m.content_type = c.getString(idx);
+if (m.content_type != null &amp;&amp; m.content_type.length() == 0) {
+idx = c.getColumnIndex(MessageData.KEY_SOURCE_ID);
+m.source_id = c.getString(idx);
+if (m.source_id.length() == 0) {
+

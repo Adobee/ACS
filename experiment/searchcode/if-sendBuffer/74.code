@@ -1,0 +1,10 @@
+synchronized (sendBuffer) {
+messageEncdoer.encode(message, sendBuffer);
+}
+if (sendBuffer.length() > 4000)
+flush();
+int i = sendBuffer.length();
+if (i > 0) {
+i = Math.min(i, 8092);
+i = sendDataImpl(sendBuffer.getRawBytes(), 0, i);
+

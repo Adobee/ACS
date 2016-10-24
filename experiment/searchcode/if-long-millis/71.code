@@ -1,0 +1,6 @@
+public static String elapsedTimeBetween(Instant now, Instant since) {
+final long difference = now.getMillis() - since.getMillis();
+if (difference < 2 * SECOND_MILLIS) {
+return &quot;1 second ago&quot;;
+} else if (difference < MINUTE_MILLIS) {
+

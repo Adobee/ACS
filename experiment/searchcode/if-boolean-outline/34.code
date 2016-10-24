@@ -1,0 +1,9 @@
+* @return true if successful
+*/
+public boolean addJavadocs() {
+addJavadocsToClasses();
+addJavadocsToEnums();
+private void addJavadoc(EnumOutline enumOutline) {
+if (isCustomBindingApplied(enumOutline)) {
+return; // JAXB binding customization overwrites xsd:documentation
+

@@ -1,0 +1,16 @@
+public double extrae(double extrae) {
+double realExtrae = extrae;
+if (saldo < extrae) {
+realExtrae = saldo;
+saldo = 0;
+} else {
+saldo -= realExtrae;
+}
+return realExtrae;
+}
+
+public double saldo() {
+return saldo;
+}
+}
+

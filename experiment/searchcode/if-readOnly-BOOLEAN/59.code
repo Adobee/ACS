@@ -1,0 +1,12 @@
+public static final String ID_PREFIX = &quot;rootFolder:&quot;;
+
+@Id
+private String id;
+
+private boolean readOnly;
+
+public RootFolder(String name) {
+public RootFolder(String name, boolean readOnly) {
+super(name);
+this.id = ID_PREFIX + this.getName();
+

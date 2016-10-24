@@ -1,0 +1,7 @@
+Type type = parameterizedTypeReferenceSubclass.getGenericSuperclass();
+if (!(type instanceof ParameterizedType)) {
+throw new IllegalArgumentException(type + &quot; is not generic&quot;);
+ParameterizedType parameterizedType = (ParameterizedType) type;
+if (parameterizedType.getActualTypeArguments().length != 1) {
+throw new IllegalArgumentException(&quot;Generic superclass must have single generic parameter instead of &quot;
+

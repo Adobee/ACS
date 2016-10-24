@@ -1,0 +1,13 @@
+* @author jaunerc
+*/
+public class Spar extends Account {
+private double maxOut;
+
+public Spar(final double saldo, final double rate, final double maxOut) {
+this.maxOut = maxOut;
+}
+
+@Override
+public void payOut(final double value) {
+if(value <= maxOut) {
+

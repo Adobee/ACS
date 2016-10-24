@@ -1,0 +1,10 @@
+double startAngle = piePlot.getStartAngle();
+boolean simpleLabels = piePlot.getSimpleLabels();
+
+String str = (String) params.get(&quot;interiorGap&quot;);
+str = (String) params.get(&quot;simpleLabels&quot;);
+if (str != null)
+simpleLabels = &quot;true&quot;.equals(str);
+
+piePlot.setSimpleLabels(simpleLabels);
+

@@ -1,0 +1,9 @@
+void ProcessMessage(String msg) {
+if (msg.startsWith(&quot;MSG &quot;)) {
+String commandSuffix = msg.substring(4).trim();
+int firstSpace = commandSuffix.indexOf(&#39; &#39;);
+if (firstSpace == -1)
+return;
+else {
+String roomname = commandSuffix.substring(0, firstSpace);
+

@@ -1,0 +1,8 @@
++ &quot;the value is not an Integer so it&#39;s not a valid query id!&quot;);
+}
+}
+boolean success = mModel.requestModelUpdate(action, args);
+if (!success) {
+QueryEnum query = QueryEnumHelper.getQueryForId(loader.getId(), mModel.getQueries());
+boolean successfulDataRead = mModel.readDataFromCursor(data, query);
+

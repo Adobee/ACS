@@ -1,0 +1,13 @@
+public enum IuguEndpoint {
+
+POSTS(&quot;/posts&quot;, HttpMethod.GET),
+POST(&quot;/posts/%s&quot;, HttpMethod.GET);
+
+private String url;
+this.url = url;
+this.httpMethod = httpMethod;
+}
+
+public String getUrl(List<Object> pathParameters) {
+if (pathParameters == null || pathParameters.isEmpty()) {
+

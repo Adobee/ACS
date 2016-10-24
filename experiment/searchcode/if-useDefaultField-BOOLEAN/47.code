@@ -1,0 +1,7 @@
+type = in.readOptionalString();
+if (in.readBoolean()) {
+doc = (BytesReference) in.readGenericValue();
+private static void setDefaultIndexTypeFields(QueryShardContext context, Item item, List<String> moreLikeFields,
+boolean useDefaultField) {
+if (item.index() == null) {
+

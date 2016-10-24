@@ -1,0 +1,12 @@
+private void checkEigenCorrectness() {
+
+int numberOfVariables = problem.getNumberOfVariables();
+
+if (CMAESUtils.checkEigenSystem(numberOfVariables, c, diagD, b) > 0) {
+evaluations = maxEvaluations;
+}
+
+for (int i = 0; i < numberOfVariables; i++) {
+// Numerical problem?
+if (diagD[i] < 0) {
+

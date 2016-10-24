@@ -1,0 +1,12 @@
+FirstWatchdogMessage = true; // tells Oscar to send a refresh to Minions
+}
+
+@Override
+public void PerformTask()
+{
+String sendBuffer = &quot;<?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?>&quot;;
+sendBuffer += &quot;<Port>&quot; + Integer.toString(getConfig().getPort()) + &quot;</Port>&quot;;
+if (true == FirstWatchdogMessage)
+{
+sendBuffer += &quot;<RefreshRequested>True</RefreshRequested>&quot;;
+

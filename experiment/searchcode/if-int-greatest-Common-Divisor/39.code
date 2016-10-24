@@ -1,0 +1,9 @@
+public void saveGCD(int value) {
+
+GreatestCommonDivisor gcdSaved = em.find(GreatestCommonDivisor.class,
+value);
+if (gcdSaved != null) {
+return;
+}
+GreatestCommonDivisor gcd = new GreatestCommonDivisor();
+

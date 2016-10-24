@@ -1,0 +1,8 @@
+// Default constructor, if there is no explicit configuration:
+CacheConfig(MetaData.DATA_TYPE dataType) {
+if(dataType.equals(MetaData.DATA_TYPE.REFERENCE)) {
+_cacheSize = -1;
+}
+else if(dataType.equals(MetaData.DATA_TYPE.TRANSACTIONAL)) {
+_cachePolicy = CACHE_POLICY.LIMITED;
+

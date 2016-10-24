@@ -1,0 +1,8 @@
+public Position changePositionInDirection(Orientation orientation) {
+Position newPos = new Position(this.x, this.y);
+if(orientation == Orientation.NORTH)
+newPos.y++;
+else if(orientation == Orientation.EAST)
+newPos.x++;
+else if(orientation == Orientation.SOUTH)
+

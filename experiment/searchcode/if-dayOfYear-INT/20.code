@@ -1,0 +1,9 @@
+import com.google.common.base.Preconditions;
+
+public class DayOfYear {
+
+private static final int MIN_DAYS_IN_YEAR = 365;
+
+public static DayOfYear of(int dayOfYear) {
+Preconditions.checkArgument(dayOfYear > 0 &amp;&amp; dayOfYear <= MIN_DAYS_IN_YEAR);
+

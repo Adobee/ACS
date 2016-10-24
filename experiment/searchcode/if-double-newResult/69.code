@@ -1,0 +1,7 @@
+int lastIndexOfDoubleQuotes= s.lastIndexOf(ch);
+if (lastIndexOfDoubleQuotes >= 0) {
+result= s.substring(lastIndexOfDoubleQuotes + 1);
+while (true) {
+newResult= result.replaceAll(&quot;^([^\&quot;]*(?:\&quot;[^\&quot;]*\&quot;)[^\&quot;]*\\s)\\s+&quot;, &quot;$1&quot;);
+if (newResult.equals(result)) break;
+

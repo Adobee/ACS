@@ -1,0 +1,11 @@
+int hash = 0;
+int counter = 0;
+while (counter != hashTableSize) {
+if (hashTable[hash] != null) {
+int hash = key % hashTableSize;
+
+int swapkey = 0;
+int swapvalue = 0;
+
+if (hashTable[hash] != null) {
+

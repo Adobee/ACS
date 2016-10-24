@@ -1,0 +1,12 @@
+public AgedBrieUpdater(Item item) {
+super(item);
+}
+
+static boolean fits(Item item) {
+return &quot;Aged Brie&quot;.equals(item.name);
+}
+
+public void updateSellInAndQuality() {
+if (item.quality < 50) {
+item.quality = item.quality + 1;
+

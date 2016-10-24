@@ -1,0 +1,10 @@
+import net.minecraft.server.MinecraftServer;
+
+public class SetDimension extends ServerAction {
+Entity entity;
+int dimension;
+
+public SetDimension(Entity e, int dim) {
+this.entity = e;
+this.dimension = dim;
+

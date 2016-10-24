@@ -1,0 +1,11 @@
+Vector times = (Vector) persistentObject.getContents();
+if(times == null) {
+times = new Vector();
+return times;
+}
+
+public static boolean save() {
+if(active)
+return false;
+persistentObject.setContents(HomeScreen.timeZones);
+

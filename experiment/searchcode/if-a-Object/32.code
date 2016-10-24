@@ -1,0 +1,18 @@
+public void handleEvent(IInputEvent event, IInterfaceableObject object) {
+if(currentObject == null){
+currentObject = object;
+currentObject.mouseEntered();
+}
+else if(object != currentObject){
+
+currentObject.mouseExited();
+object.mouseEntered();
+currentObject = object;
+
+
+}
+
+}
+
+}
+

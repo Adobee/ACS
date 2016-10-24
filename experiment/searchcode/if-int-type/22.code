@@ -1,0 +1,14 @@
+if (type.equals(&quot;pitch&quot;) || type.equals(&quot;velocity&quot;) || type.equals(&quot;duration&quot;) || type.equals(&quot;int&quot;) || type.equals(&quot;instrument&quot;))
+type = &quot;int&quot;;
+
+}
+
+public String toString() {
+
+if (type.equals(&quot;pitch&quot;) || type.equals(&quot;velocity&quot;) || type.equals(&quot;duration&quot;) || type.equals(&quot;int&quot;)|| type.equals(&quot;instrument&quot;))
+return &quot;int&quot;;
+if (type.equals(&quot;decimal&quot;))
+return &quot;double&quot;;
+if (type.equals(&quot;boolean&quot;))
+return &quot;boolean&quot;;
+

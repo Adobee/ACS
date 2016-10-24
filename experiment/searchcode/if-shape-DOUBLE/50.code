@@ -1,0 +1,10 @@
+public class ShapeVolumeCalculator extends ShapeCalculator {
+
+public ShapeVolumeCalculator(Shape shape) {
+super(shape);
+}
+
+public double calcularVolume() {
+if (this.getShape() instanceof IShapeVolume) {
+return ((IShapeVolume) this.getShape()).calcularVolume();
+

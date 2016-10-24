@@ -1,0 +1,16 @@
+private final int nVars;
+
+public ExecutableBlock(List<ExecutableStatement> statements, int nVars) {
+this.statements = statements;
+if (stack.rvIsSet()) {
+return;
+}
+}
+}
+
+@Override
+public int nVars() {
+return nVars;
+}
+}
+

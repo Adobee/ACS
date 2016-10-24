@@ -1,0 +1,9 @@
+for (int j = 0; j < kingdom[i].length; j++) {
+if (!visitedWater[i][j]) {
+Node top = new Node(j, i, null);
+if (kingdom[top.y][top.x] == &#39;#&#39;) {
+q.add(top);
+while (!q.isEmpty()) {
+top = q.poll();
+if (top.x < 0 || top.x >= kingdom[i].length || top.y < 0 || top.y >= kingdom.length) {
+

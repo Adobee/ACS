@@ -1,0 +1,11 @@
+private int startIndex;
+
+public Key(int stringNumber, int startIndex) {
+this.stringNumber = stringNumber;
+public int getStartIndex() {
+return this.startIndex;
+}
+
+public int compareTo(Key rhs) {
+if (this.stringNumber > rhs.stringNumber) {
+

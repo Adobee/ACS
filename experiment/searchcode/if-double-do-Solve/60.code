@@ -1,0 +1,10 @@
+private double q;
+
+public GaussZeidel(Matrix A, double[] b,double epsilon){
+if(A.getN()!=b.length) throw new IllegalArgumentException(&quot;Wrong size of matrix&quot;);
+this.q = qNorm();
+}
+
+public double[] solve(){
+if(!CanSolve()) throw new RuntimeException(&quot;System cannot be resolve&quot;);
+

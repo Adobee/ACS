@@ -1,0 +1,7 @@
+import org.jfree.chart.plot.CategoryPlot;
+import net.sf.jasperreports.engine.JRChart;
+import net.sf.jasperreports.engine.JRChartCustomizer;
+public void customize(JFreeChart chart, JRChart jasperChart) {
+if(chart == null) return;
+if(!(chart.getPlot() instanceof CategoryPlot)) return;
+

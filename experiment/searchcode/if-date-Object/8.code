@@ -1,0 +1,14 @@
+public class StringToDate implements ConversionType<Date, String> {
+
+@SuppressWarnings(&quot;deprecation&quot;)
+@Override
+public Date conversion(final String object) {
+Date date = null;
+if (object != null &amp;&amp; !object.isEmpty()) {
+date = new Date(Date.parse(object));
+}
+return date;
+}
+
+}
+

@@ -1,0 +1,11 @@
+if (getScenario() != null) {
+sb.append(getScenario());
+sb.append(comma);
+}
+if (fromYear != null) {
+sb.append(comma);
+}
+if (fromYear != null) {
+sb.append(&quot;from_year&quot;);
+sb.append(comma);
+

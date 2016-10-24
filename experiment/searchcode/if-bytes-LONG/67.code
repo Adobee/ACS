@@ -1,0 +1,10 @@
+static public final int ENCODING = AudioFormat.ENCODING_PCM_16BIT;
+
+static public long msToBytes(long milliseconds) {
+long result = RATE * milliseconds / 500;
+if (result % 2 == 1) --result;
+return result;
+}
+
+static public long bytesToMs(long bytes) {
+

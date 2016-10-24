@@ -1,0 +1,12 @@
+private void init(Iterator<Collection<T>> iterator) {
+collectionIterator = iterator;
+if(collectionIterator != null){
+elementIterator = collectionIterator.next().iterator();
+}
+}
+
+
+@Override
+public boolean hasNext() {
+if (elementIterator != null &amp;&amp; elementIterator.hasNext()) {
+

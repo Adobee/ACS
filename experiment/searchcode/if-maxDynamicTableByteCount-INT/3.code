@@ -1,0 +1,8 @@
+readLiteralHeaderWithIncrementalIndexingIndexedName(index - 1);
+} else if ((b &amp; 0x20) == 0x20) {  // 001NNNNN
+maxDynamicTableByteCount = readInt(b, PREFIX_5_BITS);
+int bytesToRecover = (dynamicTableByteCount + delta) - maxDynamicTableByteCount;
+int entriesEvicted = evictToRecoverBytes(bytesToRecover);
+
+if (index == -1) { // Adding a value to the dynamic table.
+

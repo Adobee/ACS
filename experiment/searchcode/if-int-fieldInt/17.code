@@ -1,0 +1,10 @@
+import newtonERP.orm.field.type.FieldInt;
+import newtonERP.orm.field.type.FieldString;
+
+/**
+* Entité Bank du module finances: représente les coordonnées des banques avec
+@Override
+public Fields initFields() throws Exception
+{
+FieldInt transit = new FieldInt(&quot;Transit&quot;, &quot;transit&quot;);
+

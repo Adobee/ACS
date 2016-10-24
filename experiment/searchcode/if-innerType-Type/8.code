@@ -1,0 +1,7 @@
+private static Map<Type, PointerType> instances = new HashMap<Type, PointerType>();
+
+public synchronized static PointerType make(Type innerType)
+{
+// We can&#39;t create void* pointers.
+assert innerType != null;
+

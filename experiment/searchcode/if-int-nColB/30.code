@@ -1,0 +1,9 @@
+public double getDeterminant() {
+if (singular) {
+return 0;
+} else {
+final int m = pivot.length;
+public double[] solve(double[] b) throws java.lang.IllegalArgumentException, org.apache.commons.math.linear.InvalidMatrixException {
+final int m = pivot.length;
+if ((b.length) != m) {
+

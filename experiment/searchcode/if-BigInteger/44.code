@@ -1,0 +1,10 @@
+BigInteger d;
+
+BigInteger two = BigInteger.valueOf(2);
+if (y.mod(two).equals(BigInteger.ZERO)) return two;
+
+int iters = 0;
+do {
+if (++iters > 3000) return BigInteger.ZERO;
+x = x.multiply(x).mod(y).add(c).mod(y);
+

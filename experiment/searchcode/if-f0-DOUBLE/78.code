@@ -1,0 +1,9 @@
+gtData = trackIDToGT.get(data.getId());
+rawData = data
+.get2dDoubleArrayMetadata(NemaDataConstants.MULTI_F0_EST_DATA);
+for (int t = 0; t < tot; t++) {
+double gtF0 = rawGtData[t][1];
+double detF0;
+if (t >= rawData.length) {
+detF0 = 0.0;
+

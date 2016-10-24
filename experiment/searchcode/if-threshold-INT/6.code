@@ -1,0 +1,12 @@
+public class MultiThresholdFilter extends PixelFilter {
+
+private int[] threshold;
+
+public MultiThresholdFilter(int... threshold){
+this.threshold = threshold;
+}
+
+@Override
+protected int calculate(int pixel) {
+if(getBrightness(pixel)>threshold[threshold.length-1]){
+

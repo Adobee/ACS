@@ -1,0 +1,14 @@
+gridPlane[(int) plane.planepoint[i].x][(int) plane.planepoint[i].y] = Component.wing;
+}
+}
+
+// 检查2架飞机是否相撞
+boolean is2PlaneCrash(Plane a, Plane b) {
+Vector2[] pointlist1 = a.planepoint;
+Plane plane = new Plane(randPos, randDirectiondirection);
+if (isPlaneOutBound(plane)) {
+continue;
+}
+boolean isCrash = false;
+for (Plane otherplain : planeList) {
+

@@ -1,0 +1,5 @@
+public String allStar(String str) {
+if (str.length() <= 1) return str;
+return str.charAt(0) + &quot;*&quot; + allStar(str.substring(1));
+}
+

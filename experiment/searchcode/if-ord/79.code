@@ -1,0 +1,7 @@
+@org.hibernate.annotations.Entity(dynamicInsert = true, dynamicUpdate = true)
+@SequenceGenerator(name=&quot;seq&quot;,sequenceName=&quot;ordem_ord_codigo_seq&quot;,allocationSize=1)
+@Table(name = &quot;ordem&quot;)
+public void calculaOrdValorRestante() {
+ordValorRestante = 0.0;
+if (getOrdValorTotal() != null &amp;&amp; getOrdFundoRural() != null &amp;&amp; getOrdDesconto() != null &amp;&amp; getOrdAdiantemento() != null) {
+

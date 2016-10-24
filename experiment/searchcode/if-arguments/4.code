@@ -1,0 +1,9 @@
+import com.beust.jcommander.JCommander;
+
+
+public class ArgumentsInput {
+public static Arguments inputArguments(String[] args) throws InvalidArgumentsException {
+try {
+JCommander commander = new JCommander(arguments, args);
+if (arguments.isHelp()) {
+

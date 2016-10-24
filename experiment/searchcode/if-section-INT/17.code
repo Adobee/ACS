@@ -1,0 +1,15 @@
+protected boolean isUpload() {
+boolean result = false;
+if (2 == mSection.getUploadStatus()) {
+result = true;
+}
+return result;
+}
+
+@Override
+protected int getRowId() {
+return (mSection != null) ? mSection.getID() : -1;
+}
+
+}
+

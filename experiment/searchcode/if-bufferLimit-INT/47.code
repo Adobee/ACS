@@ -1,0 +1,14 @@
+final List<Integer> matches = new ArrayList<Integer>();
+final int bufferLimit = buffer.limit();
+int d = 0;
+for (int pos = buffer.position(); pos < bufferLimit; pos++) {
+matches.add(pos - this.patternLen + 1);
+}
+}
+return matches;
+}
+
+
+public final int matchFirst(final IoBuffer buffer) {
+if (buffer == null) {
+

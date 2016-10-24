@@ -1,0 +1,11 @@
+public double getLerp() {
+if(time < duration)
+return time * difference;
+else
+return 1;
+}
+
+public double getSlerp() {
+if(time < duration)
+return Math.sin(-time * difference + Math.PI) / Math.sin(-duration * difference + Math.PI);
+

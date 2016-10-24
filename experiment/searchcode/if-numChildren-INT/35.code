@@ -1,0 +1,10 @@
+// recursive version
+private void dfs1(Node node) {
+if (node != null) {
+node.visit();
+int numChildren = node.numChildren();
+node.visit();
+if (level < limit) {
+int numChildren = node.numChildren();
+for (int c=0; c<numChildren; c++)
+

@@ -1,0 +1,11 @@
+import com.google.common.base.Preconditions;
+
+public class NTuple {
+
+private final int numValues;
+private final int[] locations;
+* Watch out: Locations are margin-based (not 0-based)
+*/
+public NTuple(int numValues, int[] locations, double[] weights) {
+Preconditions.checkArgument(locations.length > 0);
+

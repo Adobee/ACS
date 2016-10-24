@@ -1,0 +1,16 @@
+public static void main(String[] args)
+{
+
+int range=1000000;
+BitSet primes = Sieve(range+10);
+
+int p1 = 5, p2 =7;
+
+long sum =0;
+while(p1 <=range)
+{
+long min = S(p1,p2);
+sum +=min;
+p1 = p2;
+p2 = primes.nextSetBit(p2+1);
+

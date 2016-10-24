@@ -1,0 +1,7 @@
+public static boolean isFilteredResource(Object bean) {
+
+Class<?> clazz = bean.getClass();
+FilteredResource annotation = clazz.getAnnotation(FilteredResource.class);
+boolean isFilteredResource = false;
+if (annotation != null) {
+

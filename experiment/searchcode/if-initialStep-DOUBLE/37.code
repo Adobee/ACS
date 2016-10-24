@@ -1,0 +1,6 @@
+* @return x| f(x) is rough minimum
+*/
+public static double gradientDescent(Function f, double x0, double initialStep, double precision) {
+double derivative = f.totalDerivative(arg)[0];
+double step = initialStep, x = x0, x1, min = f.calculate(arg);
+

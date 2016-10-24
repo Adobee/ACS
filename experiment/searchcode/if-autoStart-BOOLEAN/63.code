@@ -1,0 +1,9 @@
+private final WorkflowDispatcher dispatcher;
+private final boolean autoStart;
+private final Thread dispatcherThread;
+
+@Inject
+public WorkflowLifecycle(WorkflowDispatcher dispatcher, @NFlow ThreadFactory nflowThreadFactory, Environment env) {
+this.dispatcher = dispatcher;
+autoStart = env.getRequiredProperty(&quot;nflow.autostart&quot;, Boolean.class);
+

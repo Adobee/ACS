@@ -1,0 +1,17 @@
+public class KleofasTail {
+
+public long countGoodSequences(long K, long A, long B) {
+if (K == 0)
+return B - A + 1;
+
+long r = 0;
+
+if (K % 2 == 1) {
+if (K >= A &amp;&amp; K <= B)
+r++;
+
+K *= 2;
+}
+
+for (long M = K + 2; K <= B; K *= 2, M *= 2) {
+

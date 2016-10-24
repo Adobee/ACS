@@ -1,0 +1,7 @@
+timedOut = in.readBoolean();
+size = in.readVInt();
+if (size == 0) {
+validationFailures = ImmutableList.of();
+String level = params.param(&quot;level&quot;, &quot;cluster&quot;);
+boolean outputIndices = &quot;indices&quot;.equals(level) || &quot;shards&quot;.equals(level);
+

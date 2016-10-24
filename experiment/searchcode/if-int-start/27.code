@@ -1,0 +1,10 @@
+public void quickSort(int[] A, int start, int end){
+int index = partition(A, start, end);
+
+if (start < index - 1) quickSort(A, start, index - 1);
+while (A[start] < pivot) start++;
+while (A[end] > pivot) end--;
+
+if (start <= end){
+int temp = A[start];
+

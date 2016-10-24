@@ -1,0 +1,10 @@
+static String REPORTED_ARCH = &quot;UNKNOWN&quot;;
+
+static Boolean ISHEADLESS = false;
+
+public static void setPlatform() throws PlatformException {
+setReportedArch();
+if(REPORTED_OS.startsWith(&quot;Windows&quot;)){
+OS = OS_WINDOWS;
+System.setProperty(&quot;com.resource.dir&quot;, &quot;resources&quot;);
+

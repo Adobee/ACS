@@ -1,0 +1,11 @@
+Integer count = this.categoryCount.get(category);
+if (count == null) {
+this.categoryCount.put(category, 0);
+count = this.categoryCount.get(category);
+if (count == null) {
+return;
+}
+if (count.intValue() == 1) {
+features.remove(feature);
+if (features.size() == 0) {
+

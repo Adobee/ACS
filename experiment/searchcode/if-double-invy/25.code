@@ -1,0 +1,15 @@
+class MiscDoor extends CoreGameObjects {
+
+private long 	id;
+private static final long serialVersionUID = 1L;
+
+private double	x,y,r;
+void setSpeed(double inVX, double inVY) {
+// TODO Auto-generated method stub
+
+}
+
+@Override
+void setRad(double inR) {
+// TODO Auto-generated method stub
+

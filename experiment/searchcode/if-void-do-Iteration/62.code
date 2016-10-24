@@ -1,0 +1,8 @@
+for (int iteration = 0; iteration < max; iteration++) {
+if (calculate(iteration) == 0) {
+addPrimesToList(primes, iteration);
+int count = 0;
+for (int i = 2; i <= iteration / 2; i++) {
+if (isModuloZero(iteration, i)) {
+count++;
+

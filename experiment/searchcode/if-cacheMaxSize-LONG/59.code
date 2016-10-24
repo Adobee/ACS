@@ -1,0 +1,8 @@
+public LruDiskCache(File cacheDir, FileNameGenerator fileNameGenerator, long cacheMaxSize) throws IOException {
+this(cacheDir, null, fileNameGenerator, cacheMaxSize, 0);
+if (cacheMaxSize == 0) {
+cacheMaxSize = Long.MAX_VALUE;
+}
+if (cacheMaxFileCount == 0) {
+cacheMaxFileCount = Integer.MAX_VALUE;
+

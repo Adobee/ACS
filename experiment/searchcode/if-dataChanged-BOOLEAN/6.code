@@ -1,0 +1,12 @@
+import java.util.ArrayList;
+
+public class MyCoverFlowAdapter extends CoverFlowAdapter {
+
+private boolean dataChanged;
+public void changeBitmap(ArrayList<Bitmap> images) {
+dataChanged = true;
+notifyDataSetChanged();
+}
+
+@Override
+

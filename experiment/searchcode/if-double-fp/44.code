@@ -1,0 +1,17 @@
+totalPositive++;
+}
+}
+Collections.sort(sortedProb);
+
+double fp = 0;
+double tp = 0;
+double fpPrev = 0;
+double tpPrev = 0;
+fPrev = curF;
+fpPrev = fp;
+tpPrev = tp;
+}
+double label = pair.value;
+if (label == +1) {
+tp++;
+

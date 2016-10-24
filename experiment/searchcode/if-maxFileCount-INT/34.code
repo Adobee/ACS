@@ -1,0 +1,11 @@
+public FileCountLimitedDiscCache(File cacheDir,
+NameGeneratable fileNameGenerator, int maxFileCount) {
+super(cacheDir, fileNameGenerator, maxFileCount);
+}
+
+@Override
+protected int getSize(File file) {
+return 1;
+}
+}
+

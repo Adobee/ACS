@@ -1,0 +1,14 @@
+return 0;
+}
+
+char first = s.charAt(0);
+int firstIndex = 0;
+while(firstIndex + 1 < s.length() &amp;&amp; s.charAt(firstIndex + 1) == first) {
+firstIndex++;
+}
+if(firstIndex == s.length() - 1) {
+return s.length();
+}
+
+char second = s.charAt(firstIndex + 1);
+

@@ -1,0 +1,6 @@
+Arc(ConstVec2d c, double r, ConstVec2d tn, ConstVec2d hn) {
+double tAngle = Math.atan2(tn.y(), tn.x());
+double hAngle = Math.atan2(hn.y(), hn.x());
+if (tn.cross(hn) > 0) {
+if (hAngle - tAngle < 0)
+

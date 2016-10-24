@@ -1,0 +1,8 @@
+return intervalMinutes;
+}
+
+private void cancelBackgroundSchedule(boolean uploadOnly) {
+getAlarmManager().cancel(getBackgroundSynchronizationPendingIntent(uploadOnly, false));
+private void scheduleSynchronization(int synchIntervalMinutes, boolean uploadOnly, boolean startNow) {
+if (uploadOnly) {
+

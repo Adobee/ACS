@@ -1,0 +1,10 @@
+public void debug(String msg, Object arg) {
+if (logger.isDebugEnabled()) {
+msg = dealMsg(msg, arg);
+logger.info(msg);
+}
+}
+
+public void info(String msg, Object arg) {
+if (logger.isInfoEnabled()) {
+

@@ -1,0 +1,8 @@
+public boolean equals(Object o) {
+if (this == o) return true;
+if (!(o instanceof Tag)) return false;
+
+Tag tag = (Tag) o;
+
+if (tagValue != null ? !tagValue.equals(tag.tagValue) : tag.tagValue != null) return false;
+

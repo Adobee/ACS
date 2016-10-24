@@ -1,0 +1,11 @@
+public NormalizeCount computeNormalizeTerm(int level, int numdocs) {
+if (nc == null) {
+nc = new NormalizeCount(this.ngram);
+ngramnum = new double[NGRAM];
+ngramfreq = new double[NGRAM];
+}
+
+public void add(NormalizeCount in) {
+if (in != null) {
+this.termnormfactor += in.termnormfactor;
+

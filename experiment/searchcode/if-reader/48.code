@@ -1,0 +1,8 @@
+int writer = A[0] == A[1] ? 1 : 0;
+int reader = writer + 1;
+while (reader < length) {
+if (A[reader] != A[writer]) {
+A[writer] = A[reader];
+if (reader < length - 1 &amp;&amp; A[reader] == A[reader + 1]) {
+writer++;
+

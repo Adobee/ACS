@@ -1,0 +1,12 @@
+final double[] ret = new double[nreq];
+boolean rankProblem = false;
+for(int i = nreq - 1; i > -1; i--) {
+if(FastMath.sqrt(d[i]) < tol[i]) {
+for(int j = i + 1; j < nreq; j++) {
+ret[i] = smartAdd(ret[i], -r[nextr] * ret[j]);
+++nextr;
+}
+}
+}
+if(rankProblem) {
+

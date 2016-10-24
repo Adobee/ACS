@@ -1,0 +1,7 @@
+* @return covariance matrix
+*/
+protected RealMatrix computeCovarianceMatrix(RealMatrix matrix, boolean biasCorrected) {
+int dimension = matrix.getColumnDimension();
+protected RealMatrix computeCovarianceMatrix(double[][] data, boolean biasCorrected) {
+return computeCovarianceMatrix(new BlockRealMatrix(data), biasCorrected);
+

@@ -1,0 +1,12 @@
+* The unit text field
+*/
+private Text unitField = null;
+
+/**
+* Used to avoid update collisions
+*/
+private boolean isUpdating = true;
+int preferredUnitWidth = 40;
+int unitWidth = unitField.computeSize(SWT.DEFAULT, SWT.DEFAULT).x;
+if (unitWidth < preferredUnitWidth) {
+

@@ -1,0 +1,8 @@
+Util.threadFactory(&quot;OkHttp FramedConnection&quot;, true));
+
+/** True if this peer initiated the connection. */
+final boolean client;
+public Http2Stream pushStream(int associatedStreamId, List<Header> requestHeaders, boolean out)
+throws IOException {
+if (client) throw new IllegalStateException(&quot;Client cannot push requests.&quot;);
+

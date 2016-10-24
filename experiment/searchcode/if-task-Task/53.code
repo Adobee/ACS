@@ -1,0 +1,11 @@
+public void add(final Task<?> task, final List<TaskItem<?>> taskItems) {
+if (taskItems != null &amp;&amp; !taskItems.isEmpty()) {
+taskItemRepository.add(task, taskItems);
+}
+
+taskRepository.add(task);
+}
+
+public Task<?> process(final int limit) {
+if (!taskRepository.hasMoreTasks()) {
+

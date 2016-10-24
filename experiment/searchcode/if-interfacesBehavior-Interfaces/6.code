@@ -1,0 +1,7 @@
+Class<?>[] interfaces = cls.getInterfaces();
+for (int i = 0; i < interfaces.length; i++) {
+if (Modifier.isPublic(interfaces[i].getModifiers())) {
+public static Set<Method> getOverrideHierarchy(Method method, ClassUtils.Interfaces interfacesBehavior)
+{
+Validate.notNull(method);
+

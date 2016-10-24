@@ -1,0 +1,11 @@
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.collect.Lists;
+import org.elasticsearch.common.transport.InetSocketTransportAddress;
+addrList.add(new InetSocketTransportAddress(host, port));
+return this;
+}
+
+@Override
+public boolean start() {
+if (addrList.size() > 0) {
+

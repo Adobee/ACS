@@ -1,0 +1,13 @@
+public double[] integrate(DifferentialEquations system, double t0, double[] x0, double t1) {
+double t = t0;
+double[] x = x0;
+
+while (t < t1) {
+double dt = t1 - t;
+
+if (dt > maximalStep) {
+dt = maximalStep;
+}
+
+double[] k1 = system.getDerivatives(t, x);
+

@@ -1,0 +1,11 @@
+this.sets = new FPSet[fpSetConfiguration.getMultiFPSetCnt()];
+
+if (fpMemSize == MEM_DEFAULT) {
+fpMemSize = HeapBasedDiskFPSet.DefaultMaxTblCnt / 20;
+return this.sets[idx];
+}
+
+/**
+* Returns <code>true</code> iff the fingerprint <code>fp</code> is in this
+* set. If the fingerprint is not in the set, it is added to the set as a
+

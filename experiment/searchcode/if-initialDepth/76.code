@@ -1,0 +1,8 @@
+public class MamPrefsIQProvider extends IQProvider<MamPrefsIQ> {
+
+@Override
+public MamPrefsIQ parse(XmlPullParser parser, int initialDepth) throws XmlPullParserException, IOException {
+String defaultBehaviorString = parser.getAttributeValue(&quot;&quot;, &quot;default&quot;);
+DefaultBehavior defaultBehavior = null;
+if (defaultBehaviorString != null) {
+

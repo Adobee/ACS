@@ -1,0 +1,4 @@
+public double getCostAtConsumption(Amount<Power> consumption) {
+double costs = trendline.predict(consumption.abs().doubleValue(Power.UNIT));
+if (consumption.isLessThan(Amount.valueOf(0, Power.UNIT))) {
+

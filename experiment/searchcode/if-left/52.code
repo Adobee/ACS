@@ -1,0 +1,11 @@
+while(left <= right){
+mid = (left + right) / 2;
+if(target == A[mid]) break;
+if(target >= A[mid])
+right = mid - 1;
+}
+
+if(left > right) return num;
+left = mid;
+right = mid;
+

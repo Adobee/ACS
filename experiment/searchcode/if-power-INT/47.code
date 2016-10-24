@@ -1,0 +1,17 @@
+private I2cCommunicator communicator;
+private int i2cCommandNumber;
+private boolean invert;
+private int currentPower;
+
+public PowerMotor(I2cCommunicator communicator, int i2cCommandNumber, boolean invert){
+this.currentPower = 0;
+}
+
+public void powerOff(){
+setPower(0);
+}
+
+public void setPower(int power)
+{
+if (power > 100) {
+

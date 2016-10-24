@@ -1,0 +1,11 @@
+//region Fields
+
+private final IMillisFormatter mFormatter;
+private final long mIncrement;
+private final long mIncrementRoundingThreshold;
+public RoundingMillisDecoratorFormatter(IMillisFormatter formatter, final long increment)
+{
+if (formatter == null)
+{
+throw new IllegalArgumentException(&quot;Formatter cannot be null.&quot;);
+

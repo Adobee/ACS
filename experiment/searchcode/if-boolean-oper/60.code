@@ -1,0 +1,10 @@
+package com.shinowit.actions.Oper;
+
+import com.opensymphony.xwork2.ActionSupport;
+import com.shinowit.dao.BaseDao;
+List<TAuOperInfo> obj = (List)dao.findByHql(&quot;from TAuOperInfo where operName=? and state=&#39;true&#39;&quot;, oper.getOperName());
+
+if (obj.size()>0) {
+
+setSuccess(true);
+

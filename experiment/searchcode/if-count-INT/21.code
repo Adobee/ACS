@@ -1,0 +1,9 @@
+int[] count = new int[N];
+for(int i=0;i<N;i++){
+if(A[i]>N) return 0;
+count[A[i]-1]++;
+}
+
+for(int i=0;i<count.length;i++){
+if(count[i]!=1){
+

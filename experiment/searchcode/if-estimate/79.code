@@ -1,0 +1,10 @@
+import com.simoncomputing.app.burndown.domain.*;
+
+public class TestEstimateDao {
+
+private static StringBuilder sb = new StringBuilder();
+public void test() throws Exception {
+
+SqlSession session = SessionFactory.getSession();
+EstimateDao estimateDao = session.getMapper( EstimateDao.class );
+

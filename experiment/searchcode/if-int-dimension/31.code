@@ -1,0 +1,7 @@
+public class ShapeS extends BaseShape {
+public static Dimension[] TRANSFORM_RULE1 = {
+new Dimension(20, 0),
+new Dimension(0, 20),
+new Dimension(20, -40),
+new Dimension(0, -20)
+

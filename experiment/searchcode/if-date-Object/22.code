@@ -1,0 +1,10 @@
+import java.util.Date;
+
+import com.parse.ParseObject;
+
+public class HistoryDateComparator implements Comparator<ParseObject> {
+
+@Override
+public int compare(ParseObject lhs, ParseObject rhs) {
+Date lhsDate = lhs.getCreatedAt();
+

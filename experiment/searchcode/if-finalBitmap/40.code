@@ -1,0 +1,7 @@
+@Override
+public Bitmap process(Bitmap originalBitmap) {
+Bitmap finalBitmap = null;
+if(mProcessor != null){
+Bitmap middle = mProcessor.process(originalBitmap);
+finalBitmap =  DrawableUtils.roundCornered(middle, 6, 6);
+

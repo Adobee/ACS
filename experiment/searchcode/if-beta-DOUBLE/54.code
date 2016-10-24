@@ -1,0 +1,12 @@
+// (used for slice sampling)
+public class BetaPosteriorLogDensityFn implements LogDensityFn {
+double Q = 0.0;
+public double eval(double[] x) {
+double beta = x[0];
+
+if (beta <= 0.0) {
+return -1.0/0.0;
+}
+
+double h = -Q*Gamma.logGamma(beta/2.0) + ((Q*beta-3.0)/2.0)*Math.log(beta/2.0) - (1.0/(2.0*beta));
+

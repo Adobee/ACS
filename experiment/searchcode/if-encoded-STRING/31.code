@@ -1,0 +1,7 @@
+public HtmlTextNode(String content) {
+for (String key: getEncodedCharacterMap().keySet()) {
+content = content.replaceAll(key, getEncodedCharacterMap().get(key));
+private static Map<String, String> getEncodedCharacterMap() {
+if (encodedCharactersMap != null)
+return encodedCharactersMap;
+

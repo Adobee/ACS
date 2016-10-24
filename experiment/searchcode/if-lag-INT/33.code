@@ -1,0 +1,8 @@
+lagLng = new LagLng();
+//判断network是否可用
+if(networkLocation.setCurrentLocation()){
+lagLng.setLocationServiceType(networkLocation.locationServiceType);
+lagLng.setLongitude(networkLocation.lagLngBean.getLongitude());
+return lagLng;
+}else if(gpsLocation.setCurrentLocation()){//判断GPS是否可用
+

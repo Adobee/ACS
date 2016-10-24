@@ -1,0 +1,6 @@
+final int numberOfMasterNodes = goodNodes + errorNodes + timeOutNodes + 1; // master
+final boolean expectingToCommit = randomBoolean();
+final MockNode mockNode = createMockNode(&quot;data_&quot; + i, Settings.builder().put(Node.NODE_MASTER_SETTING.getKey(), false).build());
+discoveryNodesBuilder.put(mockNode.discoveryNode);
+if (randomBoolean()) {
+

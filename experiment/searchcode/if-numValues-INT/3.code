@@ -1,0 +1,8 @@
+protected final int numValues;
+protected final int numBits;
+
+public DDVariable(String name, int numValues) {
+this.name = name;
+this.numValues = numValues;
+numBits = (int) Math.floor(Math.log(numValues)/Math.log(2) + 1.0f);
+

@@ -1,0 +1,15 @@
+* @return
+*/
+public boolean isEmpty() {
+return finalized.isEmpty();
+}
+
+/**
+* Returns the instruction ready to go on to next stage.
+* @return
+*/
+public boolean removeTop() {
+if (!finalized.isEmpty()) {
+finalized.removeFirst();
+return true;
+

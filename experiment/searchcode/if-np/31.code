@@ -1,0 +1,8 @@
+TreeLinkNode start = root;
+while (np != null) {
+if (pp != null)
+pp.right.next = np.left;
+if (np.left == null)
+break;
+np.left.next = np.right;
+

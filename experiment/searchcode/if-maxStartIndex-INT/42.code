@@ -1,0 +1,16 @@
+static void maxSubArray(int [] arr){
+int currStartIndex=0;
+int currEndIndex=0;
+int maxStartIndex=0;
+int maxEndIndex=0;
+
+
+int maxsum=Integer.MIN_VALUE;
+for(;currEndIndex<arr.length;currEndIndex++){
+
+currMaxSum+=arr[currEndIndex];
+
+if(currMaxSum>maxsum){
+maxsum=currMaxSum;
+maxStartIndex=currStartIndex;
+

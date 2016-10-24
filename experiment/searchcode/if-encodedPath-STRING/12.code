@@ -1,0 +1,13 @@
+public static String encodeZipPathName( String path ) {
+String[] folders = path.split( &quot;/&quot; );
+StringBuilder encodedPath = new StringBuilder( path.length() * 2 );
+if ( i != folders.length - 1 || path.endsWith( &quot;/&quot; ) ) {
+encodedPath.append( &quot;/&quot; );
+}
+}
+return encodedPath.toString();
+}
+
+/**
+* Decode the path back into the repo path
+

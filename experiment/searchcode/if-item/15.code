@@ -1,0 +1,6 @@
+public class MenuItemFactory {
+public static JMenuItem create(Item item) {
+if (item instanceof HierarchicalItem) {
+HierarchicalItem hierarchicalItem = (HierarchicalItem) item;
+if (hierarchicalItem.getSize() == 0) {
+

@@ -1,0 +1,11 @@
+yc = 0.5*(y1+y0);
+}
+
+public Line(double x0, double y0, double x1, double y1, boolean isHorizontal){
+if(isHorizontal){
+this.y1 = y1+minimumInterval*0.5;	this.x1 = x1;
+}
+else if(y0<y1){
+if(y1-y0 < minimumInterval){
+double yavg = 0.5*(y0+y1);
+

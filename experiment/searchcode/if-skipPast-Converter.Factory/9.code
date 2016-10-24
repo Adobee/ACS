@@ -1,0 +1,7 @@
+* Get a field converter to be used as a delegate. The converter can be used in a {@link cupboard.convert.FieldConverter} to delegate
+* to the default converter for example.
+*
+* @param skipPast the FieldConverterFactory to skip when searching for the delegate converter
+public FieldConverter<?> getDelegateFieldConverter(FieldConverterFactory skipPast, Type type) throws IllegalArgumentException {
+return mConverterRegistry.getDelegateFieldConverter(skipPast, type);
+

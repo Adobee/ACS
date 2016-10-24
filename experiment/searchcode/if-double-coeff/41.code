@@ -1,0 +1,11 @@
+double[] x = P.getCoeff();
+
+if (x.length >= n){
+sol = new double[x.length];
+for (int i = 0; i < n; i++)
+double[] sol;
+double[] x = P.getCoeff();
+if (x.length>=n){
+sol = new double[n];
+for (int i=0; i<n; i++)
+

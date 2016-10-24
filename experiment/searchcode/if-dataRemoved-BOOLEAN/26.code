@@ -1,0 +1,8 @@
+CDOMObject cdo = dfce.getCDOMObject();
+QualifiedObject<Boolean> hdw = cdo.get(ObjectKey.HAS_DEITY_WEAPONPROF);
+if (hdw != null)
+Collection<QualifiedObject<Boolean>> set = getQualifiedSet(id);
+for (QualifiedObject<Boolean> qo : set)
+{
+if (qo.getRawObject())
+

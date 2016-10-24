@@ -1,0 +1,11 @@
+System.out.println(&quot;Please enter a second number:&quot;);
+double n2 = keyboard.nextDouble();
+System.out.println(&quot;Please enter a third number:&quot;);
+double n4 = keyboard.nextDouble();
+
+
+
+//first block n1 smaller
+if (n1<n2 &amp;&amp; n1<n3 &amp;&amp; n1<n4){
+if (n2<n3 &amp;&amp; n2<n4){
+

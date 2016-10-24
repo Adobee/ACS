@@ -1,0 +1,14 @@
+* Time: 2:59 AM
+*/
+public class VarLong implements Var {
+
+private long longValue;
+
+public VarLong() {
+public String toString() {
+return String.valueOf( this.longValue );
+}
+
+public boolean equals(Object obj) {
+if( !(obj instanceof VarLong))
+

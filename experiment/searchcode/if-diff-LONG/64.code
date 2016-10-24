@@ -1,0 +1,11 @@
+insertDiffForNode(newDiff, node);
+}
+
+public void insertDiffForNode(int diff, long node) {
+Map<Long, Long> nodes = map.get(diff);
+if (nodes == null) {
+Map<Long, Long> nodes = map.get(diff);
+if (nodes != null) {
+if (nodes.containsKey(node)) {
+nodes.remove(node);
+

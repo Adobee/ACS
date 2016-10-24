@@ -1,0 +1,9 @@
+double x = 0.4;
+double sum = 1;
+
+double prevChiselnik = 1;
+long prevZnamennik = 1;
+prevZnamennik = prevZnamennik * n;
+double dodanok = prevChiselnik / prevZnamennik;
+if (Math.abs(dodanok) < precision) {
+

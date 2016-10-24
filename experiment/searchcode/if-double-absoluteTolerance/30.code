@@ -1,0 +1,9 @@
+m_currentInputValue = current;
+double result;
+m_error = m_targetInputValue - m_currentInputValue;
+
+if (i != 0)
+{
+double potentialIGain = (m_totalError + m_error) * i;
+if (potentialIGain < m_maximumOutput)
+

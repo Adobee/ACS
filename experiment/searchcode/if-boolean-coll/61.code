@@ -1,0 +1,16 @@
+import org.valdaynet.java.economy.AbsentEconomy;
+
+import com.massivecraft.massivecore.store.Coll;
+import com.massivecraft.massivecore.store.MStore;
+super(&quot;economy_systems&quot;, EconomySystem.class, MStore.getDb(), AbsentEconomy.get());
+}
+
+@Override
+public void setActive(boolean b)
+{
+super.setActive(b);
+
+if (!b) return;
+
+if (!get().containsId(&quot;Default&quot;)) { EconomySystem.i = get().create(&quot;Default&quot;); return; }
+

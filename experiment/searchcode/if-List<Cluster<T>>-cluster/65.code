@@ -1,0 +1,8 @@
+private void clusterHealthCheack() {
+//获取集群列表
+List<Cluster> clulist=new ArrayList<Cluster>();
+try {
+clulist=clusterService.listAllCluster();
+} catch (Exception e) {
+LOGGER.error(&quot;list All Cluster error!&quot;);
+

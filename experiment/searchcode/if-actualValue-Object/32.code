@@ -1,0 +1,10 @@
+public class ControllerActualValue implements Observer, ActionListener{
+
+private Arguments arg;
+private JTextField actualValue;
+
+public ControllerActualValue(Arguments arg, JTextField actualValue) {
+public void update(Observable o, Object argu) {
+actualValue.setText(arg.getActualValue()+&quot;&quot;);
+if(actualValue.getText()!=null){
+

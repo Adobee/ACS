@@ -1,0 +1,11 @@
+private final Set<RetrievedBlockInfo> blocks;
+
+private final boolean isBeforeRevision;
+
+public CloneSetInfoRetriever(Set<RetrievedBlockInfo> blocks,
+for (final RetrievedBlockInfo block : blocks) {
+final int hash = block.getHash();
+
+if (cloneSets.containsKey(hash)) {
+final RetrievedCloneSetInfo cloneSet = cloneSets.get(hash);
+

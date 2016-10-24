@@ -1,0 +1,10 @@
+r2 = com.whatsapp.ContactPicker.a(r2, r3, r12);
+r3 = r1.getCount();
+if (r2 >= r3) goto L_0x00ad;
+r3 = com.whatsapp.ContactPicker.n(r3);
+if (r3 != 0) goto L_0x0034;
+L_0x0027:
+r3 = r9.b;
+r3 = r3.a;
+r4 = r1.a(r2);
+

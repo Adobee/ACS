@@ -1,0 +1,15 @@
+previousWasNewLine=true;
+buffer.mark();
+}
+
+@Override
+protected void unwindImpl(int l) {
+int tokenLimit=tokens.limit()+l;
+tokens.position(tokens.limit());
+}
+
+public int lastChar() {
+if (buffer.position()==0)
+return -1;
+return buffer.get(buffer.position()-1);
+

@@ -1,0 +1,12 @@
+private boolean doReset = false;
+
+@Override
+public void notifyIterationEnds(IterationEndsEvent event) {
+this.doReset = true;
+}
+}
+
+@Override
+public void notifyIterationStarts(IterationStartsEvent event) {
+if (this.doReset) {
+

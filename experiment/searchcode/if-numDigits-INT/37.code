@@ -1,0 +1,9 @@
+public static boolean cancelFrac(int num, int den) {
+int[] numDigits = {num / 10, num % 10};
+int[] denDigits = {den / 10, den % 10};
+
+if (numDigits[0] == denDigits[1]) {
+return (((double) (num)) / ((double) (den)) == ((double) (numDigits[1])) / ((double) (denDigits[0]))) &amp;&amp; numDigits[1] != 0;
+
+} else if (numDigits[1] == denDigits[0]) {
+

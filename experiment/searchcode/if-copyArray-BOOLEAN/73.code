@@ -1,0 +1,9 @@
+public static int[] mergeSort(int[] a, int p, int q, boolean order){
+if (p == q){
+return a;
+}
+int[] l = copyArray(a, 0, q/2);
+l = mergeSort(l, 0, l.length - 1, order);
+int[] r = copyArray(a, q/2 + 1, q);
+r = mergeSort(r, 0, r.length - 1, order);
+

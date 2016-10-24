@@ -1,0 +1,10 @@
+private static final int STREAMID_LENGTH_IN_BIT = 31;
+
+private int streamId;
+
+private byte[] data;
+
+DefaultDataFrame(int streamId, byte flags, byte[] data) {
+super(false, flags);
+this.streamId = streamId;
+

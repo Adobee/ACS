@@ -1,0 +1,13 @@
+this.formatName = formatName;
+}
+
+public static Format from(String formatName) {
+if (JPEG.formatName.equalsIgnoreCase(formatName))
+return JPEG;
+else if (PNG.formatName.equalsIgnoreCase(formatName))
+return PNG;
+
+return null;
+}
+}
+

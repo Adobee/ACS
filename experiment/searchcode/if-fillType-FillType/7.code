@@ -1,0 +1,12 @@
+public ShapeBrush(float size, int color) {
+this(size, color, FillType.Hollow);
+}
+
+public ShapeBrush(float size, int color, FillType fillType) {
+public FillType getFillType() {
+if (isEraser()) {
+return FillType.Solid;
+}
+
+if (this.fillType == null) {
+

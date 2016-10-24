@@ -1,0 +1,8 @@
+public long maxTurns(long N, long K) {
+long total = N - K + 1;
+if (total <= K) {
+return ways(total);
+}
+long full = ways(K);
+for (long answer = total / K - 1; answer <= total / K + full; answer++) {
+

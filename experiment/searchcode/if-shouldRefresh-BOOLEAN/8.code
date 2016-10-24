@@ -1,0 +1,8 @@
+synchronized (this) {
+if ((!isSet) || shouldRefresh()) {
+Callable<T> refreshAction = new Callable<T>() {
+abstract protected boolean shouldRefresh();
+
+abstract protected T refreshObject() throws Exception;
+}
+

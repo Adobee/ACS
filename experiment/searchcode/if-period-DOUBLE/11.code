@@ -1,0 +1,8 @@
+public static double DDB(double Cost, double Salvage, double Life, double Period, double Factor) {
+if ((((Factor <= 0.0) || (Salvage < 0.0)) || (Period <= 0.0)) || (Period > Life))
+double num6 = Cost * (1.0 - Math.pow(num5, Period));
+double num2 = (num6 - Cost) + Salvage;
+if (num2 > 0.0)
+{
+num4 -= num2;
+

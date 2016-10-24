@@ -1,0 +1,12 @@
+
+package topcoder.challenges;
+
+public class PassingGrade {
+public int pointsNeeded(int[] pointsEarned, int[] pointsPossible, int finalExam) {
+int pointsRequired = (int) Math.ceil(65 * totalPointsPossible / 100.0) - totalPointsEarned;
+
+if (pointsRequired < 0) {
+return 0;
+}
+if (pointsRequired > finalExam) {
+

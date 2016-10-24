@@ -1,0 +1,9 @@
+public class Solution {
+public int maxDepth(TreeNode root) {
+if (root == null) return 0;
+return recursiveDepth(root, 1);
+public int recursiveDepth(TreeNode node, int currentDepth) {
+if (node.left == null &amp;&amp; node.right == null) return currentDepth;
+
+int leftDepth = currentDepth;
+

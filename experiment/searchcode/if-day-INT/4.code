@@ -1,0 +1,13 @@
+// index of monday is 0, so it&#39;s 6 for sunday
+
+int day = 0; // 1900-01-01 was a monday
+day = (day + 366) % 7; // jump to 1901-01-01
+for (int year = 1901; year < 2001; year++) {
+// januar
+if (day == 6)
+sundays++;
+day += 31;
+day %= 7;
+// februar
+if (day == 6)
+

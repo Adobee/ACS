@@ -1,0 +1,9 @@
+Arrays.fill(degree, 0);
+Arrays.fill(minStart, 0);
+for (int i = 0; i < n; i++) {
+if (graph.firstInbound(i) == -1) {
+for (int i = 0; i < n; i++) {
+if (minStart[i] == 0)
+cGraph.addFlowEdge(2 * n, 2 * i, budget + 1);
+if (minEnd[i] == answer)
+

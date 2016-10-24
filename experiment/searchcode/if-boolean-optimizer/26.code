@@ -1,0 +1,9 @@
+accessorCompilers.put(DYNAMIC, new DynamicOptimizer());
+/**
+* By default, activate the JIT if ASM is present in the classpath
+defaultOptimizer = SAFE_REFLECTIVE;
+}
+
+if (Boolean.getBoolean(&quot;mvel2.disable.jit&quot;))
+setDefaultOptimizer(SAFE_REFLECTIVE);
+

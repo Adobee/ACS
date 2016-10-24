@@ -1,0 +1,11 @@
+@Override protected long at8_impl(int idx) {
+int off = findOffset(idx);
+if(getId(off) != idx)return 0;
+double d = getFValue(off);
+if(Double.isNaN(d)) throw new IllegalArgumentException(&quot;at8_abs but value is missing&quot;);
+return (long)d;
+}
+@Override protected double atd_impl(int idx) {
+int off = findOffset(idx);
+if(getId(off) != idx)return 0;
+

@@ -1,0 +1,10 @@
+package net.violet.platform.daemons.crawlers;
+
+import gnu.getopt.Getopt;
+import gnu.getopt.LongOpt;
+final long after = System.currentTimeMillis();
+final long took = after - getStartTime();
+
+if (!runOnce()) {
+if (took < getDelay()) {
+

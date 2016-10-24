@@ -1,0 +1,11 @@
+public class TimeZoneViewerFinder extends ViewerFilter {
+
+private String pattern;
+
+public TimeZoneViewerFinder(String pattern) {
+this.pattern = pattern;
+public boolean select(Viewer viewer, Object parentElement, Object element) {
+if (element instanceof TimeZone) {
+TimeZone zone = (TimeZone) element;
+return zone.getDisplayName().contains(pattern);
+

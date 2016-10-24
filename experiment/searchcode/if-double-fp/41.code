@@ -1,0 +1,14 @@
+b = Math.max(a, b);
+a = temp;
+
+double f_a = f.f(a);
+double f_b = f.f(b);
+
+if (f_a * f_b < 0) {
+System.out.println(&quot;Error - Function as same sign at a and b.&quot;);
+return a;
+}
+}
+
+public static final double newton(Function f, Function fp, double x, int nmax, double epsilon, double delta) {
+

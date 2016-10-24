@@ -1,0 +1,10 @@
+package tictactoe;
+
+public enum Diagonals {
+TopLeft, TopRight;
+
+public int getColumnIndex(int rowIndex) {
+if(rowIndex > 2 || rowIndex < 0)
+throw new IllegalArgumentException();
+switch(this) {
+

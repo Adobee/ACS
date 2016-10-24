@@ -1,0 +1,9 @@
+private int maxSize;
+
+private static final float DEFAULT_LOAD_FACTOR = 0.75f;
+
+public MRUCache(int maxSize) {
+super(maxSize, DEFAULT_LOAD_FACTOR, true);
+if (maxSize <= 0) {
+throw new IllegalArgumentException(&quot;Max Size must be greater than 0.&quot;);
+

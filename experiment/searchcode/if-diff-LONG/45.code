@@ -1,0 +1,8 @@
+public static DateResult getDifferenceResult(Date today, Date other) {
+
+long diff = other.getTime() - today.getTime();
+//long duration  = endDate.getTime() - startDate.getTime();
+
+long diffInMinutes = diff / (60 * 1000) % 60;
+long diffInHours = diff / (60 * 60 * 1000);
+

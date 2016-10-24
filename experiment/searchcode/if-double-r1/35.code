@@ -1,0 +1,12 @@
+public int num;
+
+public double r0;
+public double r1;
+public double r2;
+public double r3;
+
+public double getMaxRoot() {
+if( num == 0 ) return Double.NaN;
+
+double r = r0;
+

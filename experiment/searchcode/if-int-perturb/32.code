@@ -1,0 +1,13 @@
+public static void main(String[] args) {
+runTestsOfThisClass(args);
+}
+
+@Test
+public void testIntFieldPerturbation() {
+
+if (!isJPFRun()) {
+&quot;+listener=.listener.Perturbator&quot;,
+&quot;+perturb.fields=data&quot;,
+&quot;+perturb.data.class=.perturb.IntOverUnder&quot;,
+&quot;+perturb.data.field=gov.nasa.jpf.test.mc.data.PerturbatorTest.data&quot;,
+

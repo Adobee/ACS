@@ -1,0 +1,6 @@
+public synchronized void tryRegisterExtension(final Class<?> extensionClass, final DeploymentUnit deploymentUnit) throws DeploymentUnitProcessingException {
+if (!Extension.class.isAssignableFrom(extensionClass)) {
+throw WeldMessages.MESSAGES.extensionDoesNotImplementExtension(extensionClass);
+}
+if (extensions.containsKey(extensionClass)) {
+

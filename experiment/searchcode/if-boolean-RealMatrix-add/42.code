@@ -1,0 +1,11 @@
+return (km1.transpose().multiply(km2)).getTrace();
+}
+
+public static boolean checkIsPSD (RealMatrix km)
+{
+EigenDecomposition ed = new EigenDecomposition (km);
+for (String modality: modalities)
+{
+RealMatrix km = (RealMatrix) readMatrix (folder + modality + &quot;.data&quot;);
+kms.add (km);
+

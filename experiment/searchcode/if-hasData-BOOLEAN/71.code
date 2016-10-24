@@ -1,0 +1,11 @@
+) throws IOException, InterruptedException {
+
+Iterator<Text> it=values.iterator();
+boolean hasData = false;
+while (it.hasNext()) {
+if(hasData) {
+totalPubList.append(&quot;||&quot;);
+}
+totalPubList.append( it.next() );
+hasData = true;
+

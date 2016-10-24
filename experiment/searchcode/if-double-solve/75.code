@@ -1,0 +1,11 @@
+double[] na = vect(va1, va2);
+double[] nb = vect(vb1, vb2);
+double[] f = vect(na, nb);
+if (hypot(f) < 1e-6) {
+double[] fb = vect(f, nb);
+
+double[] cf = solve(fa, f, fb, subt(b, a));
+
+double[] c = new double[3];
+for (int i = 0; i < 3; i++) {
+

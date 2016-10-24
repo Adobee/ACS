@@ -1,0 +1,10 @@
+public class Pet_Ct_Viewer implements PlugIn {
+public void run(String arg) {
+PetCtFrame dlg = new PetCtFrame();
+if( dlg.foundData == 0) {
+dlg.dispose();
+return;
+}
+if( dlg.foundData == 1) {
+Display3Frame frm3 = new Display3Frame();
+

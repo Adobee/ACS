@@ -1,0 +1,14 @@
+public class MyCompressorOutputStream extends OutputStream {
+
+OutputStream out;
+byte last;
+byte counter;
+
+public MyCompressorOutputStream(OutputStream aout)
+{
+out= aout;
+}
+
+@Override
+public void write(int b) throws IOException {
+

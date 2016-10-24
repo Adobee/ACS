@@ -1,0 +1,11 @@
+public void decryptAndUpdate() {
+if (!isDecryptable())
+return;
+
+mActivity.updateBusy(true);
+mJsEncryptor.decrypt(mActivity.trimmedMessage(), mActivity.trimmedPassword(),
+mActivity.updateBusy(false);
+
+if (decryptedTextFromJs != null &amp;&amp; !decryptedTextFromJs.trim().isEmpty()) {
+mActivity.setMessage(decryptedTextFromJs);
+

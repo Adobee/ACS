@@ -1,0 +1,18 @@
+return this.intX;
+}
+
+public int getIntY()
+{
+return this.intY;
+}
+
+@Override
+public int compareTo(IntPair pair)
+return this.getIntX() == pair.getIntX() ? this.getIntY() - pair.getIntY() : this.getIntX() - pair.getIntX();
+}
+
+@Override
+public boolean equals(Object obj)
+{
+if (!(obj instanceof IntPair))
+

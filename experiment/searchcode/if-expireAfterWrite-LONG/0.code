@@ -1,0 +1,10 @@
+public CacheEntry(String key, Object value, long expireAfterWrite, long expireAfterAccess) {
+setKey(key);
+setValue(value);
+setExpireAfterWrite(expireAfterWrite);
+}
+
+public boolean isExpired() {
+if (expireAfterWrite >= 0) {
+return creationTimestamp + expireAfterWrite * 1000L > System.currentTimeMillis();
+

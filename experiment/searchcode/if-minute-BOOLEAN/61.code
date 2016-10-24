@@ -1,0 +1,7 @@
+@Override
+public Minute patchMinute(Minute minute, Long id) {
+Minute orig = getMinuteById(id);
+Boolean changed = false;
+if (minute.getName() != null &amp;&amp; !orig.getName().equals(minute.getName())) {
+orig.setName(minute.getName());
+

@@ -1,0 +1,7 @@
+Matcher m = PATTERN.matcher(url);
+int bestBucket = 0;
+if (m.find()) {
+String[] found = m.group(1).split(&quot;-&quot;);
+for (String bucketStr : found) {
+bestBucket = Integer.parseInt(bucketStr);
+

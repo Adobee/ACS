@@ -1,0 +1,12 @@
+this.delegate = delegate;
+this.repeatCount = infiniteRepeatCount;
+}
+
+@Override
+public boolean doAct() {
+if (delegate.act()) {
+if (repeatCount > 0) {
+executedCount++;
+}
+if (executedCount == repeatCount) {
+

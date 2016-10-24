@@ -1,0 +1,5 @@
+public void writeCustomTypePrefixForArray(final Object o, final JsonGenerator jsonGenerator, final String s) throws IOException {
+if (jsonGenerator.canWriteTypeId()) {
+if (s != null) {
+jsonGenerator.writeTypeId(s);
+

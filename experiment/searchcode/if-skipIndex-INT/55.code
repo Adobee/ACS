@@ -1,0 +1,6 @@
+public static ConstantPool extractConstantPool(final DataInputStream stream) throws IOException {
+if (stream.readInt() != MAGIC) {
+boolean skipIndex = false;
+Constant c = null;
+final int type = stream.readUnsignedByte();
+

@@ -1,0 +1,12 @@
+public class SizeLimitedList<E> extends ArrayList<E> {
+
+private int maximumSize;
+
+public SizeLimitedList(int maximumSize) {
+private void checkSize() {
+if (size() > maximumSize) {
+remove(0);
+}
+}
+}
+

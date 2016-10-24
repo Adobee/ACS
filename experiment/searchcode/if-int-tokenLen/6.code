@@ -1,0 +1,7 @@
+final int len = termAtt.length();
+char[] buffer = termAtt.buffer();
+int tokenLen = 0;
+foundOne = true;
+if (tokenLen > 0) {
+CompoundToken ct = new CompoundToken(i - tokenLen,
+

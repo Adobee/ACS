@@ -1,0 +1,16 @@
+*  - move primaries to the appropriate member.
+*
+*  Note that unlike other directors, this director performs all the work in
+if(this.satisfyRedundancy) {
+satisfyRedundancyDirector.nextStep();
+}
+
+if(this.movePrimaries) {
+movePrimariesDirector.nextStep();
+}
+
+return false;
+}
+
+}
+

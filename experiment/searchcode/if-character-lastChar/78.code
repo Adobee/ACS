@@ -1,0 +1,10 @@
+private boolean withDot = false;
+private Character lastChar = &#39;0&#39;;
+
+@Override
+public boolean isZero() {
+public String addNum(char num) {
+if (withDot) {
+if (lastChar == &#39;.&#39;) {
+curString = curString.substring(0, curString.length() - 1) + num;
+

@@ -1,0 +1,11 @@
+public static void main(String argv[])
+{
+// Handle command line arguments.
+
+if(argv.length > 2)
+{
+usage();
+}
+else if( (argv.length == 1) &amp;&amp;
+((&quot;-help&quot;.equals(argv[0])) || (&quot;-h&quot;.equals(argv[0]))) )
+

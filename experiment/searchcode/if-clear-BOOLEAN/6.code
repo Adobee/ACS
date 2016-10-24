@@ -1,0 +1,7 @@
+SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+boolean clearBookmarks = sp.getBoolean(getString(R.string.sp_clear_bookmarks), false);
+boolean clearHistory = sp.getBoolean(getString(R.string.sp_clear_history), true);
+boolean clearPasswords = sp.getBoolean(getString(R.string.sp_clear_passwords), false);
+
+if (clearBookmarks) {
+

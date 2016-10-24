@@ -1,0 +1,12 @@
+public class Bool extends AbstractRule {
+
+@Override
+public Boolean validate(Object input) {
+
+if (input==null)
+return Boolean.FALSE;
+if (input instanceof Boolean)
+return Boolean.TRUE;
+if (input instanceof String) {
+String stringVal = ( (String) input ).toLowerCase();
+

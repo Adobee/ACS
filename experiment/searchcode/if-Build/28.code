@@ -1,0 +1,14 @@
+package com.lq.demo.booking;
+
+import java.util.Hashtable;
+
+public class BuildDatabase {
+
+private Hashtable<String,BuildData> builds;
+public BuildData findBuild(String applicationName){
+if (!init){
+initDatabase();
+init = true;
+}
+return builds.get(applicationName);
+

@@ -1,0 +1,13 @@
+double r = node.getRelativeSize();
+
+int x0, y0;
+int x1, y1;
+
+double xOffset0, yOffset0;
+double xOffset1, yOffset1;
+value += data[x0][y1] * invArea * xOffset0 * yOffset1;
+
+// x1
+for (int i = x0 + 1; i < x1; i++) {
+value += data[i][y1] * invArea * xStep * yOffset1;
+

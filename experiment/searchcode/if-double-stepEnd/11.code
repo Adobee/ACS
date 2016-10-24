@@ -1,0 +1,7 @@
+SpacecraftState state = interpolator.getInterpolatedState();
+
+// evaluate step size
+double stepSize;
+if (mode == MASTER_MODE) {
+if (Double.isNaN(fixedStepSize)) {
+

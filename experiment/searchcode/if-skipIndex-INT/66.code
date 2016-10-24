@@ -1,0 +1,8 @@
+public static boolean compareBuffers(int from, ByteBuffer insertBytes, ByteBuffer sample, int ... skip) {
+
+if (insertBytes.getInt(0) != sample.getInt(0)){
+int skipIndex = 0;
+
+for(int i = from; i<insertBytes.limit(); i++) {
+if (skipIndex<skip.length &amp;&amp;  skip[skipIndex] == i){
+

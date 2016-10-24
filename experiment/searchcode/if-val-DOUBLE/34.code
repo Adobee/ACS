@@ -1,0 +1,11 @@
+private double recurse(double val, double half, double pres) {
+if(pres < PRECISION  ){
+return half;
+}
+pres = pres/10;
+return recurse(val, half, pres);
+}
+
+private double recurseUpper(double val, double half) {
+if(half*half > val){
+

@@ -1,0 +1,10 @@
+StringBuffer query = new StringBuffer(&quot;UPDATE player SET hp=&quot;+hp);
+
+if(dirtyState.get(DIRTY_MN))
+query.append(&quot;,mn=&quot;+mn);
+
+if(dirtyState.get(DIRTY_ND))
+query.append(&quot;,nd=&quot;+nd);
+
+if(dirtyState.get(DIRTY_BHP))
+

@@ -1,0 +1,11 @@
+static final int FORMAT_VERSION = 2;
+
+static void headerSkip(DataInputStream inAsData, long toSkip) throws IOException {
+while (0 != toSkip) {
+final long skipped = inAsData.skip(toSkip);
+if (0 < skipped)
+toSkip = toSkip - skipped;
+}
+}
+}
+

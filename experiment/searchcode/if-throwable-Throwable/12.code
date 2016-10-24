@@ -1,0 +1,9 @@
+Throwable throwable1 = throwable.getCause();
+if(throwable1 != null)
+throwable = throwable1;
+else
+public static RuntimeException propagate(Throwable throwable) throws Throwable
+{
+propagateIfPossible((Throwable)Preconditions.checkNotNull(throwable));
+throw new RuntimeException(throwable);
+

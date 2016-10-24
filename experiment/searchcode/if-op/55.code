@@ -1,0 +1,18 @@
+private HashMap<String,Integer> op;
+
+
+public Operations(){
+op = new HashMap<String,Integer>();
+op.put(&quot;chartrequest&quot;, 1);
+op.put(&quot;testing&quot;, 99);
+
+
+}
+
+public int getOP(String msg){
+if(op.containsKey(msg))
+return op.get(msg);
+return 0;
+}
+}
+

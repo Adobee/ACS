@@ -1,0 +1,12 @@
+public Complex(double real, double img){
+a = real;
+b = img;
+}
+public Complex add(Complex c2){
+Complex c1 = this;
+double re = c1.a + c2.a;
+double re = c1.b + c2.b;
+return new Complex(re,im);
+}
+public Complex multiply(Complex c2){
+

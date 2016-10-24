@@ -1,0 +1,12 @@
+
+public class KEdge implements Comparable {
+
+protected Object v1;
+protected Object v2;
+public int hashCode() {
+return v1.hashCode() + v2.hashCode();
+}
+
+public boolean equals(Object other) {
+return v1.equals(((KEdge)other).v1) &amp;&amp; v2.equals(((KEdge)other).v2);
+

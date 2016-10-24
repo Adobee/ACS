@@ -1,0 +1,7 @@
+final double frhosq = rho * ONE_OVER_EIGHT * rho;
+if (crvmin > ZERO &amp;&amp;
+final int nfxm = nfx - 1;
+double stepa = 0;
+double stepb = 0;
+if (nfm <= 2 * n) {
+

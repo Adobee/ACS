@@ -1,0 +1,11 @@
+private final QueryBuilder negativeQuery;
+
+private float negativeBoost = -1;
+
+
+/**
+* Create a new {@link BoostingQueryBuilder}
+if (parseContext.getParseFieldMatcher().match(currentFieldName, NEGATIVE_BOOST_FIELD)) {
+negativeBoost = parser.floatValue();
+} else if (parseContext.getParseFieldMatcher().match(currentFieldName, AbstractQueryBuilder.NAME_FIELD)) {
+

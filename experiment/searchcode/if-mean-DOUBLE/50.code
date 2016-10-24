@@ -1,0 +1,10 @@
+* @author Alexander Stautner
+*/
+public class AutoCorrelation {
+
+private double[] calcMeanAndSTD(double[] numbers)
+{
+int n = numbers.length;
+double mean = 0;
+double std = 0;
+

@@ -1,0 +1,9 @@
+import Evaluator.StringBiggerEqual;
+import Evaluator.StringEqual;
+import Evaluator.StringNotEqual;
+import Evaluator.StringSmaller;
+public Filter(String threadname, int Id, Node filter) {
+super(threadname, Id, filter.getAllProducers(), filter.getAllConsumers());
+
+if(threadname.equalsIgnoreCase(&quot;notnull&quot;))
+

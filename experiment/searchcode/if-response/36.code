@@ -1,0 +1,7 @@
+public Response createResponse(HttpResponse response, File file) throws IOException {
+String contentType = response.getResponseHeader(&quot;content-type&quot;);
+if (!contentType.equals(&quot;text/plain&quot;)) {
+public void createQRCode(HttpResponse response, File file) throws IOException{
+int statusCode = response.getStatusCode();
+if (statusCode == 200) {
+

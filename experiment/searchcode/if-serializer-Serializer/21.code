@@ -1,0 +1,9 @@
+package com.ppcg.kothcomm.messaging.serialization;
+
+public class OptionalSerializer<T> implements Serializer<T> {
+public String serialize(T value) {
+if (value == null){
+return &quot;&quot;;
+}
+return serializer.serialize(value);
+

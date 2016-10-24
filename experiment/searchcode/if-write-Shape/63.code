@@ -1,0 +1,11 @@
+* Gets a specific shape from every shape pool.
+*
+* @param id the shape id.
+* @return ShapeObject, or null if id is not found.
+ShapeObject object = null;
+
+readLock.lock();
+try {
+for(ShapeObject shape : shapes){
+if(shape.getID() == id){
+

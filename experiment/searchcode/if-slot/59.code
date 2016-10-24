@@ -1,0 +1,9 @@
+import com.jaquadro.minecraft.gardencore.api.block.garden.ISlotShareProfile;
+
+public class SlotShare8Profile implements ISlotShareProfile
+{
+int indexBase;
+public ISlotMapping[] getNeighborsForSlot (int slot) {
+if (slot < indexBase || slot >= indexBase + map.length)
+return null;
+

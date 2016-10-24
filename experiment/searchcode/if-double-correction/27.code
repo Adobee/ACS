@@ -1,0 +1,7 @@
+// this ensures the odometry correction occurs only once each period
+correctionEnd = System.currentTimeMillis();
+if (correctionEnd - correctionStart < CORRECTION_PERIOD) {
+switch ((int) Math.round(odometer.getTheta() / 90)) {
+case 0: {
+double correction = Math.round(odometer.getX())
+

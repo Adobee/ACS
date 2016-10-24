@@ -1,0 +1,11 @@
+public class DataByteArray extends ByteArrayOutputStream {
+
+public void writeFourBytes(int anInt) {
+write(anInt >> 24);
+public void writeOneByte(int aByte) {
+write(aByte);
+}
+
+public void writeBytes(int bytes, int nBytes) {
+if (nBytes > 0 &amp;&amp; nBytes <= 4) {
+

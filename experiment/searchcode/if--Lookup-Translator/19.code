@@ -1,0 +1,5 @@
+import org.apache.commons.lang3.text.translate.LookupTranslator;
+import org.apache.commons.lang3.text.translate.NumericEntityEscaper;
+import org.apache.commons.lang3.text.translate.NumericEntityUnescaper;
+public static final CharSequenceTranslator ESCAPE_JAVA = new LookupTranslator(new String[][] { { &quot;\&quot;&quot;, &quot;\\\&quot;&quot; }, { &quot;\\&quot;, &quot;\\\\&quot; } }).with(new CharSequenceTranslator[] { new LookupTranslator(EntityArrays.JAVA_CTRL_CHARS_ESCAPE()) }).with(new CharSequenceTranslator[] { JavaUnicodeEscaper.outsideOf(32, 127) });
+

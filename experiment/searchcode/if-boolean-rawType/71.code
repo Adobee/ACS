@@ -1,0 +1,12 @@
+public ParameterizedTypeImpl(Class rawType, Type[] actualTypeArguments, Type ownerType) {
+this.rawType = rawType;
+this.actualTypeArguments = actualTypeArguments;
+if(ownerType != null) {
+public Type getOwnerType() {
+return ownerType;
+}
+
+@Override
+public boolean equals(Object o) {
+if(!(o instanceof ParameterizedType)) {
+

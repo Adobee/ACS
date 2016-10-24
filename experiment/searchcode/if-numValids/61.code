@@ -1,0 +1,7 @@
+private LongFilter(int numValids, int numInvalids) {
+if (numValids > 0) {
+valids = new LongHashSet(numValids);
+LongFilter result = new LongFilter(numValids, numInvalids);
+if (includeValues != null) {
+for (BytesRef val : includeValues) {
+

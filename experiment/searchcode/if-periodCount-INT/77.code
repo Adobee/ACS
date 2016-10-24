@@ -1,0 +1,10 @@
+public static void schedule(GameLogicTask task, int delayCount,
+int periodCount, int priority) {
+if (task == null || delayCount < 0 || periodCount < 0 || priority < 0
+currentTasks[priority].add(new GameLogicTaskInformation(task,
+delayCount, periodCount));
+}
+}
+
+public static void schedule(GameLogicTask task, int delayCount, int priority) {
+

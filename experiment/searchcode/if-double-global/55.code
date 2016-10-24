@@ -1,0 +1,12 @@
+package svg.path;
+
+public class MoveTo extends PathElement{
+
+public MoveTo(double x, double y, boolean relative) {
+this.next().makeAbsolute(this.x, this.y);
+}
+
+public String toCamm(double globalScale) {
+String res = &quot;PU%x%y;&quot;;
+res = res.replaceAll(&quot;%x&quot;, this.fNumber(x, globalScale));
+

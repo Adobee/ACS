@@ -1,0 +1,12 @@
+return SimpleRNG::nonNegativeInt;
+}
+
+public static Tuple<Boolean, RNG> booleanRnd(RNG rng) {
+Tuple<Integer, RNG> t = rng.nextInt();
+public static Function<RNG, Tuple<Boolean, RNG>> booleanRnd() {
+return SimpleRNG::booleanRnd;
+}
+
+/*
+* We generate an integer >= 0 and divide it by one higher than the maximum.
+

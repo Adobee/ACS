@@ -1,0 +1,9 @@
+* Created by Administrator on 01.02.2015.
+*/
+public class PieceUtil {
+
+public static void checkMoveAndAdd(Set<Position> positions, Position position, Set<Position> pieces, Set<Position> enemyPieces) {
+public static void checkAndAddIterable(Set<Position> positions, Position position, Set<Position> pieces, Set<Position> enemyPieces, int columnDirection, int rowDirection) {
+for (int i = 1; i <= 7; i++) {
+if (!checkAndAdd(positions, position.getPosition(-i * columnDirection, -i * rowDirection), pieces, enemyPieces)) {
+

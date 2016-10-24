@@ -1,0 +1,13 @@
+private static final String KINDEDITOR = &quot;kindeditor&quot;;
+
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+if(request.getRequestURI().contains(KINDEDITOR))
+{
+return false;
+}
+return super.isMultipart(request);
+}
+
+}
+

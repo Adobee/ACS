@@ -1,0 +1,9 @@
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.ConcurrentMap;
+
+public class ReceiverRegistry {
+private ConcurrentMap<UUID, EventReceiver> _flows;
+private volatile static ReceiverRegistry instance;
+
+private ReceiverRegistry() {
+

@@ -1,0 +1,6 @@
+for (int i=0; i<len; i++) {
+char ch1 = str.charAt(i);
+if (Character.isHighSurrogate(ch1)
+|| Character.isLowSurrogate(ch1)) {
+buf.append(ch1);
+

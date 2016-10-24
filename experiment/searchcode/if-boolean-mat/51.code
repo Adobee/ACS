@@ -1,0 +1,14 @@
+* @return whether the matrix is an identity one or not
+*/
+public boolean isIdentity() {
+for (int i = 0; i < 4; i++) {
+if (mat[i][i] == 1) continue;
+mat.append(&quot;\n&quot;);
+}
+return mat.toString();
+}
+
+@Override
+public boolean equals(Object obj) {
+if ((Matrix4)obj == this) return true;
+

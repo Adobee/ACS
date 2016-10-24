@@ -1,0 +1,9 @@
+public class MinSumPath {
+public int minPathSum(int[][] grid){
+int R = grid.length;
+int C = grid[0].length;
+if (R == 1 &amp;&amp; C == 1) return grid[0][0];
+int[] minColumn = new int[C];
+int[] minRow = new int[R];
+minColumn[0] = grid[0][0];
+

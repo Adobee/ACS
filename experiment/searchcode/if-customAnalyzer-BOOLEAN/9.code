@@ -1,0 +1,10 @@
+@Indexed
+@Table(name = &quot;resource&quot;)
+@AnalyzerDef(name = &quot;customanalyzer&quot;,
+charFilters = {
+@Field
+@Analyzer(definition = &quot;customanalyzer&quot;)
+private String sdescription;
+
+@Column(name = &quot;name&quot;, nullable = false)
+

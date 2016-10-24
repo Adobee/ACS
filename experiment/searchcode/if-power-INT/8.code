@@ -1,0 +1,13 @@
+
+public class PowerOfNumber {
+
+public double getPower(double number, int power) {
+
+if(power == 0) {
+return 1;
+}
+
+if(power < 0) {
+assert number!= 0;
+return 1/getPower(number,-power);
+

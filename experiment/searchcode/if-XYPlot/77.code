@@ -1,0 +1,8 @@
+private XYPlot mySimpleXYPlot;
+private String equation;
+private int size,menorX,aR,bR,a,b,c,menorY=0,mayorY=0,max;
+super.onCreate(savedInstanceState);
+setContentView(R.layout.activity_equation_graphic);
+
+// initialize our XYPlot reference:
+

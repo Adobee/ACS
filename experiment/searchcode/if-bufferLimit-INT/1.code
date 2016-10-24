@@ -1,0 +1,13 @@
+int lastPos;
+int currentPos;
+final int bufferLimit = outBuffer.length;
+
+if (startPos < 0) {
+startPos += bufferLimit;
+}
+
+lastPos = startPos + length;
+currentPos = startPos;
+
+if (lastPos > bufferLimit) {
+

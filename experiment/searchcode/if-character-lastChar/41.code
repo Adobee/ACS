@@ -1,0 +1,11 @@
+private boolean lineSeperatorOneChar;
+private Character lastChar;
+
+public LineSplitter() {
+if (lineSeperator.length() == 1) {
+if (c == lineSeperator.charAt(0)) {
+lastChar = c;
+return true;
+} else if (lastChar == lineSeperator.charAt(0)){
+if (lineSeperator.length() == 2) {
+

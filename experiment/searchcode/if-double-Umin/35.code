@@ -1,0 +1,7 @@
+@Property(description = &quot;Minimum of the U-range&quot;)
+private double uMin;
+
+@Property(description = &quot;Maximum of the U-range&quot;)
+// Don&#39;t calculate the actual bounding box because this may cause unexpected results if the object was deformed by another tansformer before
+double objUMin = -(double) width / 2.0;
+

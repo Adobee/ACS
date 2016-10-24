@@ -1,0 +1,7 @@
+final ITryM<ITryM<U>> mapped = (ITryM<ITryM<U>>) applicativeFunction.map(this::map);
+final ITryM<U> result;
+if (mapped.isFailure()) {
+final ITryM<ITryM<U>> mapped = applicativeFunction.mapT(this::mapT);
+final ITryM<U> result;
+if (mapped.isFailure()) {
+

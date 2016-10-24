@@ -1,0 +1,10 @@
+class DoubleRange implements Iterable<Double> {
+private final double d1;
+private final double d2;
+private double skip;
+private final boolean invalid;
+public DoubleRange(double d1, double d2, double skip) {
+if (skip == 0 || (d1 != d2 &amp;&amp; (d1 < d2 != skip > 0))) {
+invalid = true;
+} else {
+

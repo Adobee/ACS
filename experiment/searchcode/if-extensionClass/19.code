@@ -1,0 +1,10 @@
+return authenticatedUsername+&quot;-&quot;+travelerId;
+}
+
+@SuppressWarnings(&quot;unchecked&quot;)
+public <T> T getOrCreateExtension(Class<T> extensionClass) {
+T result = (T)travelerExtensions.get(extensionClass);
+if (result == null) {
+try {
+result = extensionClass.newInstance();
+

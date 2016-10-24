@@ -1,0 +1,8 @@
+public ArrayList<Integer> getRow(int rowIndex) {
+ArrayList<Integer> ans = new ArrayList<Integer>();
+if(rowIndex<0)  return ans;
+ArrayList<Integer> ret = new ArrayList<Integer>();
+if(rowIndex < 0)  return ret;
+ret.add(1);
+for(int k = 1; k <= rowIndex; k++)  {
+

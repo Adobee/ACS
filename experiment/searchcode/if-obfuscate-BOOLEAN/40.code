@@ -1,0 +1,10 @@
+public void obfuscate(Obfuscatable target, TdarUser user) {
+
+if ((target == null) || target.isObfuscated()) {
+// logger.debug(&quot;user is editor: {} ({}}&quot;, target, user);
+return;
+}
+
+// don&#39;t obfuscate someone for themself
+if ((target instanceof Person) &amp;&amp; Objects.equals(user, target)) {
+

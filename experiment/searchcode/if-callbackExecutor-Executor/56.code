@@ -1,0 +1,7 @@
+* @param httpExecutor     executor for http request. Cannot be null.
+* @param callbackExecutor executor for callbacks. If null is passed than the same
+*                         thread that created the instance is used.
+*/
+public WalmartApi(Executor httpExecutor, Executor callbackExecutor) {
+mWalmartService = init(httpExecutor, callbackExecutor);
+

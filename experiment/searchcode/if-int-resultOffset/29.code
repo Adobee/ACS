@@ -1,0 +1,14 @@
+int resultOffset) {
+int raw;
+int left;
+int above;
+int upperLeft;
+int colors = getColors();
+
+if (getBitsPerComponent() != 8) {
+sourceOffset = sourceOffset + 1;
+
+if (sourceOffset == 1) {
+for (int c = 0; c < colors; c++) {
+result[resultOffset + c] = source[sourceOffset + c];
+

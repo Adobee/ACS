@@ -1,0 +1,9 @@
+package name.hersen.lambdaunit.matchers;
+
+class NotExpect implements Matcher {
+private Object actual;
+public void toBe(Object expected) {
+if (expected.equals(actual)) throw new AssertionFailedException(expected, actual);
+}
+}
+

@@ -1,0 +1,9 @@
+public int compareTo(ModelingTimeAPI<U> o) {
+if (isInfinite() &amp;&amp; o.isInfinite()) return 0;
+if (isInfinite()) return 1;
+if (o.isInfinite()) return -1;
+return time_.compareTo(o.get());
+}
+
+public abstract boolean isInfinite();
+

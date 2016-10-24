@@ -1,0 +1,23 @@
+i=(x+c*c)%a.length;
+c++;
+}
+if(k[i]==key)
+return a[i];
+else
+return null;
+}
+int hash2(int v)
+{
+return (v%(a.length-1)+1)%a.length;
+Object searchDoubleHash(int key)
+{
+int i=hash(key);
+while(k[i]!=key&amp;&amp;k[i]!=0)
+i=(i+hash2(key))%a.length;
+if(k[i]==key)
+return a[i];
+else
+return null;
+}
+}
+

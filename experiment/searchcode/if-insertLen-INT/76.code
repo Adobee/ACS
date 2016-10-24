@@ -1,0 +1,14 @@
+ro.internal = true;
+
+int idist = 0;
+boolean ok = true;
+
+if      (ro.rc &amp;&amp; !rc) { idist = ro.dist - offset + 1; }
+else
+{
+int dist = offset;
+
+if (!rc) { dist = len - offset; }
+
+ReadOffset ro = new ReadOffset(rc, dist, read);
+

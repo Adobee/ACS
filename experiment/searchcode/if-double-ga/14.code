@@ -1,0 +1,7 @@
+this.gen = ga.createArray(ga.getPopulationSize());
+this.fitnesses = new double[ga.getPopulationSize()];
+initiatePopulation();
+for (int i = elite; i < gen.length; i++) {
+if (r.nextDouble() < ga.getMutationProbability()) {
+gen[i] = ga.mutate(gen[i], r);
+

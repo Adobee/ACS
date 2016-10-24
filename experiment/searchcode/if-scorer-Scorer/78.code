@@ -1,0 +1,11 @@
+//getResolver().setNextScorer(nullResolver);
+
+if (getScorer().isEndOfChain())
+getScorer().setNextScorer(new NullScorer());
+ScoredHand lhsHand = getScorer().score(lhs),
+rhsHand = getScorer().score(rhs);
+
+int result = lhsHand.compareTo(rhsHand);
+
+if (result == 0)
+

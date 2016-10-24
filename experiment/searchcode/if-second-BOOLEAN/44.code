@@ -1,0 +1,15 @@
+public class MutablePair<F, S> implements Pair<F, S>{
+
+public static final int MAGIC = (int) 1e9 + 9;
+
+public F first;
+public S second;
+
+public MutablePair(F first, S second) {
+return first.hashCode() + MAGIC * second.hashCode();
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) {
+

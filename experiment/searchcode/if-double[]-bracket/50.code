@@ -1,0 +1,9 @@
+* initial points a and b.
+*/
+static Bracket bracket(Function f, double a, double b) {
+return (new BracketMin(f, a, b)).findMin();
+* bracket br.
+*/
+static Bracket goldenSectionBracket(Function f, Bracket br, double eps) {
+return (new GoldenSectionSearch(f, br, eps)).findMin();
+

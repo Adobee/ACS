@@ -1,0 +1,9 @@
+protected void parseCreateField(ParseContext context, List<Field> fields) throws IOException {
+Object addressAsObject;
+if (context.externalValueSet()) {
+addressAsObject = context.parser().textOrNull();
+}
+
+if (addressAsObject == null) {
+addressAsObject = fieldType().nullValue();
+

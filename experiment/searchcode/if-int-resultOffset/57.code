@@ -1,0 +1,9 @@
+int[] bitStr = IOControl.addPadding(in, MDES.BLOCK_SIZE);
+
+
+int[] outBitStr = {0};
+if (encOrDec == &#39;e&#39;) {
+int resultOffset = 0;
+for (int i = 0; i < xs.length; i++) {
+t = MDES.encryptKernel(IOControl.intToBitStr(c + i, MDES.BLOCK_SIZE),
+

@@ -1,0 +1,9 @@
+int times = 0, ww = walk+wait;
+if( start==end ) return start%ww>wait &amp;&amp; (start%ww)+late<=ww ? 1 : 0;
+for( int t = start; t < end; t++ )
+if( (t%ww)+0.5>wait &amp;&amp; (t%ww)+late+0.5<ww )
+times++;
+return 1.0*times/(end-start);
+}
+}
+

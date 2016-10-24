@@ -1,0 +1,5 @@
+public void lockInterruptibly(int threadID) throws InterruptedException {
+if (Thread.currentThread().isInterrupted()) throw new InterruptedException();
+while(flag[otherThreadID] == 1 &amp;&amp; turn==otherThreadID &amp;&amp; !Thread.currentThread().isInterrupted()) {/*spin*/}
+if (Thread.interrupted()) { flag[threadID] = 0; throw new InterruptedException(); }
+

@@ -1,0 +1,14 @@
+int right = left + 1;
+while (right < a.length) {
+if (right == left + 1) {
+if (a[left] == a[right]) {
+best=Math.max(best,right-left);
+left=right;
+if (left < a.length &amp;&amp; a[left - 1] != a[left]) {
+left--;
+}
+}
+
+return best;
+}
+

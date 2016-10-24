@@ -1,0 +1,13 @@
+public class WLProcedureInvocationResult extends WLResponse
+{
+private static final String JSON_KEY_IS_SUCCESSFUL = &quot;isSuccessful&quot;;
+private JSONObject jsonResult;
+return this.jsonResult;
+}
+
+public boolean isSuccessful()
+{
+try
+{
+boolean bool = getResult().getBoolean(&quot;isSuccessful&quot;);
+

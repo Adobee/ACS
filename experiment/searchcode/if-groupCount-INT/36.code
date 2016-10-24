@@ -1,0 +1,15 @@
+double boundary[];
+int[] groupCount;
+int ngroup;
+public Distribution (int[] a, int ngroup) {
+Arrays.sort(a);
+this.calGroupCount(a, ngroup);
+}
+
+public int[] getGroupCount () {
+return groupCount;
+}
+
+public double[][] getBounds () {
+double[][] bounds = new double[ngroup][2];
+

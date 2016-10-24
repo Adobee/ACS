@@ -1,0 +1,7 @@
+double frequency = 1000.0 / (currentEvent - previousEvent);
+// if the frequency value is not unusually high (>50) or low
+// (<1) the frequency is added to the PSF
+this.dischargeRates.add(currentEvent, frequency);
+//
+if (frequency > highestFrequency) {
+

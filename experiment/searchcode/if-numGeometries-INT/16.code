@@ -1,0 +1,11 @@
+|| boundary instanceof MultiLineString : &quot;Boundary must be the linear ring.&quot;; //$NON-NLS-1$
+
+this.intersectState = new IntersectMemento();
+
+int numGeometries = 0;
+Geometry intersection = SplitUtil.intersection(coordinates, i, boundary, true);
+
+int numGeometries = intersection.getNumGeometries();
+
+// if the intersection is found, return;
+

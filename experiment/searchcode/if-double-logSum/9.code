@@ -1,0 +1,9 @@
+public static BikeLogsum getBikeLogsum(Map<String,String> rbMap) {
+if (instance == null) {
+synchronized (BikeLogsum.class) {
+if (instance == null) { //check again to see if we waited for another thread to do the initialization already
+if (columnName.contains(&quot;logsum&quot;))
+logsumIndex = i;
+if (columnName.contains(&quot;time&quot;))
+timeIndex = i;
+

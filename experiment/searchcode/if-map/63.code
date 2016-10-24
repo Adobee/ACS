@@ -1,0 +1,15 @@
+mapSizeY = y;
+initMap();
+if (tester == true) {
+map[0][0].setMapObject(new Player(map[0][0]));
+map[mapSizeX - 1][mapSizeY - 1].setMapObject(new Player(map[mapSizeX - 1][mapSizeY - 1]));
+return mapSizeX;
+}
+
+public int getMapSizeY() {
+return mapSizeY;
+}
+
+public boolean setMap(int x, int y) {
+if (map == null) {
+

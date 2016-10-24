@@ -1,0 +1,26 @@
+class Dimension {
+
+/**
+*
+*/
+private int width;
+
+/**
+* ߶
+*/
+private int height;
+
+/**
+* ôС
+* @param width
+return height;
+}
+
+/**
+* ÿ
+* @param width
+*/
+public void setWidth(int width) {
+if(width<0){
+this.width = 0;
+

@@ -1,0 +1,11 @@
+private static LineNumberReader reader;
+
+public static synchronized void initialize() {
+if(reader == null) {
+reader = new LineNumberReader(new InputStreamReader(System.in));
+System.out.println(&quot;[WARN] Debug Console exiting because input stream was closed&quot;);
+break;
+}
+
+int firstSpace = line.indexOf(&#39; &#39;);
+

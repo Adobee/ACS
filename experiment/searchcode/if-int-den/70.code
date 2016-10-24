@@ -1,0 +1,12 @@
+protected int den;
+
+public Fraction(int num, int den)
+{
+this.num = num;
+this.den = den;
+}
+
+public Fraction add(Fraction otherFraction)
+{
+int temp1 = (this.num * otherFraction.den) + (otherFraction.num * this.den);
+

@@ -1,0 +1,11 @@
+public abstract class BaseResume implements Resumable {
+
+protected int blockCount;
+protected String key;
+protected Block[] blocks;
+
+public BaseResume(int blockCount, String key){
+this.blockCount = blockCount;
+this.key = key;
+initBlocks();
+

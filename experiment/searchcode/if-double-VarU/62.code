@@ -1,0 +1,10 @@
+private JTextArea köpTA;
+private JScrollPane köpSP;
+
+public KvittoPanel
+(VaruValActionListener lyssnare, Köp[] köpArray) {
+köpSP=new JScrollPane(köpTA);
+avbrytKnapp = new JButton(&quot;Stäng&quot;);
+double attBetala=0;
+int antalVaror=0;
+

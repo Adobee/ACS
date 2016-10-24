@@ -1,0 +1,12 @@
+public class IncrementalNamesDispenser extends AbstractNamesDispenser {
+
+private Set<String> namesPool = new HashSet<String>();
+
+private int initialIndex;
+
+public IncrementalNamesDispenser() {
+initialIndex = 2;
+}
+
+public IncrementalNamesDispenser(int initialIndex) {
+

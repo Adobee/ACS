@@ -1,0 +1,7 @@
+SharedPreferences.Editor edit = getDefaultPreferences().edit();
+
+if(preferenceType.isBoolUsed())
+edit.putBoolean(getKey(preferenceType), (Boolean)newValue);
+if(preferenceType.isIntUsed())
+edit.putInt(getKey(preferenceType), (Integer) newValue);
+

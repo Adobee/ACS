@@ -1,0 +1,9 @@
+public static int indexOfAny(String str, char[] searchChars) {
+if(!str.isEmpty() &amp;&amp; searchChars.length > 0) {
+int csLen = str.length();
+if(i >= csLast || j >= searchLast) {
+return i;
+}
+
+if(searchChars[j + 1] == str.charAt(i + 1)) {
+

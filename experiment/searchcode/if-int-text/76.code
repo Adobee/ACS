@@ -1,0 +1,9 @@
+@Override
+public int[] shuffling() {
+if(text==null || text.isEmpty())
+throw new NullPointerException(&quot;Text must not be null.&quot;);
+ArrayList<Integer> arrayList = new ArrayList<>();
+
+for (int i = 0; i < text.length(); i++) {
+if (!arrayList.contains(CharIntMapper.getIntRepresentative(text.charAt(i)))) {
+

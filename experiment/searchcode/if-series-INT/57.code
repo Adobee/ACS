@@ -1,0 +1,10 @@
+for(XYEdgeSeries series : seriesList) {
+sb.append(series.getKey() + &quot;:\n&quot;);
+for (int i = 0; i < series.getItemCount(); i++) {
+return sb.toString();
+}
+
+@Override
+public int getSeriesCount() {
+return seriesList.size();
+

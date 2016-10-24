@@ -1,0 +1,6 @@
+public static InetAddress getInetAddressPreferIPV4(final String ipString) {
+final InetAddress inetAddress = InetAddresses.forString(ipString);
+final String ipString, final int port) {
+InetAddress inetAddress = InetAddresses.forString(ipString);
+if (inetAddress instanceof Inet6Address) {
+

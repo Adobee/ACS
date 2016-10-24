@@ -1,0 +1,8 @@
+readAttributes(aDef);
+readExpressionDef(aDef);
+aDef.setName(getAttribute(TAG_NAME));
+if (getParentXmlDef() != null)
+readAttributes(aDef);
+if (getParentXmlDef() != null)
+((AePeopleAssignmentsDef)getParentXmlDef()).setBusinessAdministrators(aDef);
+

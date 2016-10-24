@@ -1,0 +1,5 @@
+Certificate certificate = ks.getCertificate(alias);
+if (certificate == null)
+throw new CertificateException(&quot;Unable to locate certificate &#39;&quot; + alias + &quot;&#39;&quot;);
+if (certificateVerifier.isValid(certificate))
+

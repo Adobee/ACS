@@ -1,0 +1,10 @@
+double doubleVal = Double.valueOf(lineSplit[i]);
+if(doubleVal < 0.0)
+temp[i] = 0.0;
+else
+temp[i] = doubleVal;
+if(i<len-1)
+unique = unique.concat(lineSplit[i]);
+}
+double labelVal = Double.valueOf(lineSplit[len-1]);
+

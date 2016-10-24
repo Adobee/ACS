@@ -1,0 +1,11 @@
+* Return a file instance of the directory denoted by dirName.
+* If it does not exist, dirName and all its parent dirs are created
+File dir = new File(dirName);
+if (dir.exists() &amp;&amp; dir.isDirectory())
+return dir;
+
+dir.mkdirs();
+return dir;
+}
+}
+

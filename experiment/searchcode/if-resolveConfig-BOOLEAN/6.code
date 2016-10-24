@@ -1,0 +1,7 @@
+if (loadConfigSettings) {
+boolean loadFromEnv = true;
+// if its default, then load it, but also load form env
+settingsBuilder.loadFromUrl(environment.resolveConfig(System.getProperty(&quot;es.default.config&quot;)));
+}
+// if explicit, just load it and don&#39;t load from env
+

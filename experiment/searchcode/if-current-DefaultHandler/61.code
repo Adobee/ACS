@@ -1,0 +1,7 @@
+private static volatile boolean enableShutdownHandler = true;
+private static volatile Runnable defaultHandler = null;
+
+static {
+ThreadGroup threadGroup = Thread.currentThread().getThreadGroup();
+ThreadGroup parentThreadGroup;
+

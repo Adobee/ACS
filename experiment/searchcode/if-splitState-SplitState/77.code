@@ -1,0 +1,10 @@
+*             if the StopWatch has not been split.
+*/
+public void unsplit() {
+if (this.splitState != SplitState.SPLIT) {
+throw new IllegalStateException(&quot;Stopwatch has not been split. &quot;);
+* @since 3.0
+*/
+public long getSplitNanoTime() {
+if (this.splitState != SplitState.SPLIT) {
+

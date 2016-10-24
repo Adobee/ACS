@@ -1,0 +1,9 @@
+for (Edgel edgel : edgels) {
+double theta = edgel.theta;
+double r     = edgel.x*Math.cos(theta) + edgel.y*Math.sin(theta);
+smoothedArray[iTheta][iR] += array[(iTheta + sizeTheta - 1)%sizeTheta][iR];
+
+smoothedArray[iTheta][iR] += array[(iTheta + 1)%sizeTheta][iR];
+
+if (iR > 0)
+

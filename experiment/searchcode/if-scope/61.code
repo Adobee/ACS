@@ -1,0 +1,8 @@
+* Gives instances of static scopes based on compile mode.
+*/
+public class StaticScopeFactory {
+private final StaticScope dummyScope;
+public static StaticScope newStaticScope(StaticScope parent, StaticScope.Type type, String[] names) {
+if(names == null) {
+return new StaticScope(type, parent);
+

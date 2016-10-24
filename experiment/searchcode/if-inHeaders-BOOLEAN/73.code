@@ -1,0 +1,6 @@
+JwsSignatureVerifier theVerifier = null;
+String inHeaderKid = null;
+if (inHeaders != null) {
+//TODO: optionally validate inHeaders.getAlgorithm against a property in props
+if (inHeaders.getHeader(JoseConstants.HEADER_JSON_WEB_KEY) != null) {
+

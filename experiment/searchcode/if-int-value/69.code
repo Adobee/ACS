@@ -1,0 +1,15 @@
+this.value = value;
+}
+
+@Override
+public int compareTo(Cell o) {
+if(x != o.x)
+return x - o.x;
+else if(y != o.y)
+return y - o.y;
+
+return value - o.value;
+}
+
+public int getValue() {
+

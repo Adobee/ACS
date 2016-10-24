@@ -1,0 +1,9 @@
+//            sum += localState[index];
+//            localState[index] = i;
+//        }
+//        if ( countDown > 0 ) {
+public int doWork(int iterations, Executor executor, int countDown, CountDownLatch latch ) {
+
+int key = rand.nextInt(hmapSize);
+if ( localState.get(key) == null ) { // redundant hash accesses by intent
+

@@ -1,0 +1,7 @@
+*  immediately after the delimiter), or -1 if end of string found
+*/
+private int readNextToken(final char[] srcChars, int start, final int len, final StrBuilder workArea, final List<String> tokenList) {
+private boolean isQuote(final char[] srcChars, final int pos, final int len, final int quoteStart, final int quoteLen) {
+for (int i = 0; i < quoteLen; i++) {
+if (pos + i >= len || srcChars[pos + i] != srcChars[quoteStart + i]) {
+

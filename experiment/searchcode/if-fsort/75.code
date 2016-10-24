@@ -1,0 +1,9 @@
+Integer fOrgId= getInt(&quot;FOrgId&quot;, 0);
+List<TAppUser> users=null;
+if(txt_name!=null){
+users = userService.findUserByName(txt_name);
+Integer FId=getInt(&quot;FId&quot;, 0);
+Integer fOrgId= getInt(&quot;FOrgId&quot;, 0);
+String pwdString = getString(&quot;FPassword&quot;, &quot;&quot;);
+if(!(pwdString.length()>26)){
+

@@ -1,0 +1,11 @@
+* @param relatedId the related id
+*/
+@Override
+public void newRelation(int relatedId) {
+if(relationInfos.contains(relatedId)){
+* {@inheritDoc}
+*/
+@Override
+protected void newDirectRelation(AbstractRelation otherRelation) {
+if(relationInfos.contains(otherRelation.parentEntity)){
+

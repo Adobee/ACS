@@ -1,0 +1,11 @@
+public View getView(final int position, View convertView, ViewGroup parent)
+{
+ViewHolder vh = null;
+
+if (convertView == null)
+vh.btn.setVisibility(View.VISIBLE);
+vh.text3.setVisibility(View.VISIBLE);
+if (isWei)
+{
+vh.text1.setText(&quot;患者：&quot; + info.getPatientName());
+

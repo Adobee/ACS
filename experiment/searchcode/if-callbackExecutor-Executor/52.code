@@ -1,0 +1,7 @@
+private final IController<T> callback;
+private final Executor callbackExecutor;
+private final AtomicBoolean mCancelled = new AtomicBoolean();
+public EARunnable(IController<T> callback, Executor callbackExecutor) {
+this.callback = callback;
+this.callbackExecutor = callbackExecutor;
+

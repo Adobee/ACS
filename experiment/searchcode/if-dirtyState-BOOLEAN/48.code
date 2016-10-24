@@ -1,0 +1,6 @@
+public abstract class AbstractEditorPresenter extends AbstractPartPresenter implements EditorPartPresenter {
+protected boolean     dirtyState;
+protected void updateDirtyState(boolean dirty) {
+dirtyState = dirty;
+firePropertyChange(EditorPartPresenter.TITLE_PROPERTY);
+

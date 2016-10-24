@@ -1,0 +1,10 @@
+return createJustInTimeBindingRecursive(key, errors);
+}
+}
+
+/**
+* Returns true if the key type is Provider (but not a subclass of Provider).
+Key<MembersInjector<T>> key, Errors errors) throws ErrorsException {
+Type membersInjectorType = key.getTypeLiteral().getType();
+if (!(membersInjectorType instanceof ParameterizedType)) {
+

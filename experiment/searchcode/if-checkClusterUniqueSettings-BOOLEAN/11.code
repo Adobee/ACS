@@ -1,0 +1,6 @@
+int numClientNodes = randomIntBetween(0, 10);
+boolean enableHttpPipelining = randomBoolean();
+String nodePrefix = randomRealisticUnicodeOfCodepointLengthBetween(1, 10);
+public static void assertClusters(InternalTestCluster cluster0, InternalTestCluster cluster1, boolean checkClusterUniqueSettings) {
+Settings defaultSettings0 = cluster0.getDefaultSettings();
+

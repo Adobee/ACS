@@ -1,0 +1,10 @@
+final double time, final double theta,
+final double thetaH, final double oneMinusThetaH) {
+
+// the coefficients below have been computed by solving the
+final double coeffDot7 =      theta * (   3            /   5.0 + theta * (   -3                   + theta *     3));
+
+if (getGlobalPreviousState() != null &amp;&amp; theta <= 0.5) {
+
+final double coeff1    =  1 + theta * ( -27            /   5.0 + theta * (   12                   + theta * ( -47            /  4.0 + theta *   21           /  5.0)));
+

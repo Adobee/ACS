@@ -1,0 +1,12 @@
+this.streamId = streamId;
+}
+
+@Override
+public boolean isControlFrame() {
+return false;
+}
+
+@Override
+fixSizeStreamIDInByteWithControlBit[0] = (byte) (fixSizeStreamIDInByteWithControlBit[0] &amp; ((1 << STREAMID_LENGTH_IN_BIT) - 1));//最高位清0
+if (isControlFrame()) {
+

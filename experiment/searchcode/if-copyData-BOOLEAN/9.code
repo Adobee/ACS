@@ -1,0 +1,10 @@
+static final DataFlavor DATA_FLAVOR = new DataFlavor(NodeEdgeWrapper.class, &quot;Nodes and Edges&quot;);
+
+private final NodeEdgeWrapper copyData;
+
+NetPanelTransferable(NodeEdgeWrapper wrapper) {
+public Object getTransferData(DataFlavor flavor) throws UnsupportedFlavorException, IOException {
+if (flavor.equals(DATA_FLAVOR)) {
+return copyData;
+} else {
+

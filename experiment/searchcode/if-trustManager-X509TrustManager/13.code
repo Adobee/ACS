@@ -1,0 +1,13 @@
+public class FileBasedX509TrustManager implements X509TrustManager
+{
+
+//Actual trustmanager
+private X509TrustManager trustManager;
+
+public FileBasedX509TrustManager(String trustStorePath) throws Exception
+// acquire X509 trust manager from factory
+TrustManager tms[] = tmf.getTrustManagers();
+for (int i = 0; i < tms.length; i++)
+{
+if (tms[i] instanceof X509TrustManager)
+

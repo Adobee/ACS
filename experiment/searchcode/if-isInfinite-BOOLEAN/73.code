@@ -1,0 +1,8 @@
+v[3] = (p2.x - p1.x) * (l.p2.y - p1.y) - (p2.y - p1.y) * (l.p2.x - p1.x);
+
+if (Double.isInfinite(v[0] * v[1]) || Double.isNaN(v[0] * v[1]) ||
+Double.isInfinite(v[2] * v[3]) || Double.isNaN(v[2] * v[3]) )
+public double distance() throws OverflowException {
+double d = (p1.x - p2.x)*(p1.x - p2.x) + (p1.y - p2.y)*(p1.y - p2.y);
+if (Double.isInfinite(d) || Double.isNaN(d))
+

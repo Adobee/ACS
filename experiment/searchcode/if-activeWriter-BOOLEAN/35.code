@@ -1,0 +1,11 @@
+synchronized (this)
+{
+if (!activeWriter)
+{ // No active or pending writer
+activeReaders++;
+synchronized (Thread.currentThread())
+{
+synchronized (this)
+{
+if ((activeReaders == 0) &amp;&amp; !activeWriter)
+

@@ -1,0 +1,11 @@
+lruMinTime = block.time;
+lruEvictedBlock = block;
+}
+
+}
+
+//If the evicted block is more recently used than some other block,
+//the other block was protected by love, and its love should be decreased
+if(lruEvictedBlock.love != PIN_LEVEL &amp;&amp; lruEvictedBlock.time < evictedBlock.time){
+lruEvictedBlock.love--;
+

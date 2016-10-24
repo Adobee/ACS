@@ -1,0 +1,12 @@
+public ListNode swapPairs(ListNode head) {
+if (head == null) return null;
+ListNode p = head;
+ListNode q = head.next;
+if (q == null) return head;
+head = q;
+while(p != null &amp;&amp; q != null) {
+p.next = q.next;
+q.next = p;
+
+if (p.next == null) break;
+

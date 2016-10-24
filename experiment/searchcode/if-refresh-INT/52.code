@@ -1,0 +1,13 @@
+* @param delay 延时时间 ms
+* @return
+*/
+public Builder setRefreshSuccessDelay(int delay) {
+refreshParams.successDelay = delay;
+refreshParams.pullToRefreshLayout.setOnRefreshListener(refreshParams.listener);
+if (refreshParams.autoRefresh) {
+refreshParams.pullToRefreshLayout.autoRefresh();
+}
+}
+}
+}
+

@@ -1,0 +1,13 @@
+public class KernelRBF extends KernelFunction {
+
+private double[] hyp;
+private double amplitude2;
+private double invLengthscale2;
+
+public KernelRBF() {
+final double kj = 2 * invLengthscale2 * (x1[j] - x2[j]);
+double k = k0 * ki * kj;
+if (i == j)
+k = k - 2 * invLengthscale2 * k0;
+return k;
+

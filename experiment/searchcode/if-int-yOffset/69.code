@@ -1,0 +1,14 @@
+EnemyPlane(String ref, int xOffset, int yOffset)
+{
+super(ref, xOffset, yOffset);
+
+}
+
+//remove enemy if out of range
+public boolean remove() {
+if (getYOffset() < -300) {
+return true;
+}
+
+if (getXOffset() < -300) {
+

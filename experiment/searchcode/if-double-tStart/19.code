@@ -1,0 +1,10 @@
+import tt.euclidtime3i.discretization.Straight;
+
+public class Geometry3i {
+
+public static double distance(Straight x, Straight y) {
+int tStart = Math.max(x.getStart().getTime(), y.getStart().getTime());
+int tEnd = Math.min(x.getEnd().getTime(), y.getEnd().getTime());
+
+if (tStart > tEnd)
+

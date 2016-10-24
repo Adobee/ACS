@@ -1,0 +1,17 @@
+private static UserConfigModule userConfigModule = null;
+
+/**
+*
+*/
+public static synchronized AuthModule getAuthModule() {
+if (authModule == null) {
+if (Config.REPOSITORY_NATIVE) {
+return authModule;
+}
+
+/**
+*
+*/
+public static synchronized RepositoryModule getRepositoryModule() {
+if (repositoryModule == null) {
+

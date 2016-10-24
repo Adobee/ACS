@@ -1,0 +1,6 @@
+public static IptKey add_(IptKey... ary) {
+if (ary.length == 0) return IptKey_.None;
+int newVal = ary[0].Val();
+for (int i = 1; i < ary.length; i++)
+boolean mod_c = Bitmask_.Has_int(val, IptKey_.Ctrl.Val());	if (mod_c) {mod_str += &quot;c&quot;; val = Bitmask_.Flip_int(Bool_.N, val, IptKey_.Ctrl.Val());}
+

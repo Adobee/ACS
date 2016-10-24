@@ -1,0 +1,14 @@
+private ExistingListElement<T> insertedElement = null;
+
+@Override
+public T get() {
+if (insertedElement == null) {
+throw new NoSuchElementException(&quot;Element does not exist yet: &quot; + toString());
+return insertedElement.get();
+}
+
+@Override
+public void set(T value) {
+if (insertedElement != null) {
+insertedElement.set(value);
+

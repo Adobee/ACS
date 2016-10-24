@@ -1,0 +1,9 @@
+public double value, accel, decel, lower, upper;
+
+public LinearForce(double value, double accel, double decel, double lower, double upper)
+{
+this.value = value;
+this.accel = accel;
+this.decel = decel;
+this.lower = lower;
+

@@ -1,0 +1,7 @@
+private long lastTimestamp = getTimestamp();
+private long totalBytes, transferredBytes = 0;
+private long startTimestamp = getTimestamp();
+
+public ProgressTracker(long totalBytes) {
+window = new long[5];
+

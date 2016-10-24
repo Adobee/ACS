@@ -1,0 +1,8 @@
+public static boolean scaleImage(File input, File output, double scale) throws IOException {
+BufferedImage source = ImageIO.read(input);
+if (source == null) {
+int fixedHeight = desiredHeight;
+if (desiredHeight > oriHeight) {
+fixedHeight = oriHeight;
+fixedWidth = (int) (oriHeight * rate);
+

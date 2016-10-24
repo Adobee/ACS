@@ -1,0 +1,6 @@
+public String generateLabel(final CategoryDataset categoryDataset, final int n) {
+if (categoryDataset == null) {
+throw new IllegalArgumentException(&quot;Null &#39;dataset&#39; argument.&quot;);
+}
+return MessageFormat.format(this.formatPattern, this.createItemArray(categoryDataset, n));
+

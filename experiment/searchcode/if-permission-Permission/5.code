@@ -1,0 +1,9 @@
+package com.cmcc.shiro.permission;
+
+import org.apache.shiro.authz.Permission;
+import org.apache.shiro.authz.permission.PermissionResolver;
+public class MyPermissionResolver implements PermissionResolver {
+
+public Permission resolvePermission(String permissionString) {
+if(permissionString.startsWith(&quot;+&quot;)) {
+

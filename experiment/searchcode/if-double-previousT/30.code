@@ -1,0 +1,8 @@
+* You should have received a copy of the GNU General Public License
+* along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+package eu.geopaparazzi.library.util.debug;
+try {
+if (previousT < 0) {
+Thread.sleep(2000);
+

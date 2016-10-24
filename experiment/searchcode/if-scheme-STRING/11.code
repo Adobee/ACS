@@ -1,0 +1,12 @@
+public SchemeObject expand(Scheme scheme, SchemePair old, SchemeObject args){
+SchemeObject expansion = this.apply(scheme, args);
+if(expansion instanceof SchemePair){
+old.cdr = SchemeUtils.cons(expansion, SchemeNull.instance);
+}
+
+return old;
+}
+
+@Override
+public String toString() {
+

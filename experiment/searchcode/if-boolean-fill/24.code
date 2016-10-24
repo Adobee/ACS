@@ -1,0 +1,8 @@
+for (int j=0;j<9;++j)
+if (b[i][j]!=&#39;.&#39;) fill(b, used, i, j, true);
+dfs(b,used,0,0);
+}
+boolean dfs(char[][]b, boolean[][][]used, int i, int j) {
+if (i==b.length)return true;
+if (j==b.length)return dfs(b, used, i+1, 0);
+

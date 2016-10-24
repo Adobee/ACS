@@ -1,0 +1,10 @@
+public abstract class Transmitter<A, N extends DynamicNetwork<A, N>> implements IGridTransmitter<A, N>
+{
+public N theNetwork = null;
+
+public boolean orphaned = true;
+@Override
+public boolean hasTransmitterNetwork()
+{
+return !isOrphan() &amp;&amp; getTransmitterNetwork() != null;
+

@@ -1,0 +1,13 @@
+String tempQuery;
+String firstPart;
+String secondPart;
+
+if(!queryText.contains(&quot;DESCRIBE &quot;)){
+
+int bracketIndex = -1;
+tempQuery = queryText.substring(0, queryText.indexOf(&quot;{&quot;));
+
+index = tempQuery.indexOf(&quot; SELECT &quot;);
+if(index >= 0 ){
+bracketIndex = queryText.indexOf(&quot;{&quot;);
+

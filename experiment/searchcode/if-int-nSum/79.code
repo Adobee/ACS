@@ -1,0 +1,9 @@
+for(int i = 0; i < freqArr.length; i++) {
+int nsum = 0;
+String pattern = sh.numberToPattern(i, k);
+String neighbors[] = sh.neighbors(pattern, d).split(&quot; &quot;);
+String neighborsRC[] = sh.neighbors(sh.reverseComplement(pattern), d).split(&quot; &quot;);
+
+for(int j = 0; j < neighbors.length; j++) {
+nsum = nsum + Integer.parseInt(strArr[(int) sh.patternToNumber(neighbors[j])]);
+

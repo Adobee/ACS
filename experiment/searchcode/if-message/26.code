@@ -1,0 +1,8 @@
+public static SubcommMessage parse(String netchatMessage) {
+if (netchatMessage == null || netchatMessage.length() == 0)
+throw new IllegalArgumentException(&quot;Invalid message&quot;);
+SubcommMessage message = null;
+
+message = SubcommChangeFrequencyMessage.parseNetchatMessage(netchatMessage);
+if (message != null)
+

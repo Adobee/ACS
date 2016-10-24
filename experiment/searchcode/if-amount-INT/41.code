@@ -1,0 +1,11 @@
+public class BeltPouch extends Container {
+
+private int goldAmount;
+
+public BeltPouch(int maxItems) {
+super(maxItems);
+}
+
+public void setGoldAmount(int goldAmount) {
+goldAmount = normalize(goldAmount);
+

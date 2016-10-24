@@ -1,0 +1,6 @@
+new ParseField(&quot;commands&quot;), ValueType.OBJECT_ARRAY);
+PARSER.declareBoolean(ClusterRerouteRequest::dryRun, new ParseField(&quot;dry_run&quot;));
+builder.endObject();
+if (clusterRerouteRequest.explain()) {
+assert response.getExplanations() != null;
+

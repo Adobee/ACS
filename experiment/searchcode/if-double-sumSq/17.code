@@ -1,0 +1,10 @@
+return res;
+}
+
+public static double sum(double[] arr) {
+if (arr == null) return 0;
+public static double var(double[] arr) {
+if (arr == null) return 0;
+int l = arr.length;
+if (l <= 1) return 0;
+

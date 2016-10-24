@@ -1,0 +1,10 @@
+public void addDataToSeries(DataSeries data){
+if (this.series == null)
+this.series = new ArrayList<DataSeries>();
+this.series = series;
+}
+
+public int size(){
+if(series == null || series.isEmpty()) return 0;
+return this.series.size();
+

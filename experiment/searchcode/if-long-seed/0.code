@@ -1,0 +1,10 @@
+private final Actions actions;
+private Seed seed;
+private long lastSeedTime;
+private boolean invalidSeed;
+
+public SeedProvider(Actions actions) {
+private synchronized Seed getSeedIfNotTooOld() {
+long age = System.currentTimeMillis() - lastSeedTime;
+if (seed == null || age > 30000 || invalidSeed) {
+

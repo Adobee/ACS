@@ -1,0 +1,8 @@
+Sum myNorm = normalizedSum();
+Sum otherNorm = other.normalizedSum();
+if(myNorm.equals(otherNorm)) return true;
+if(myNorm.equals(otherNorm.minusOne())) return true;
+OperatorTree eqSum = eq.normalizedSum();
+for(OperatorTree s : normalizedSums()) {
+if(eqSum.equals(s) || eqSum.minusOne().equals(s))
+

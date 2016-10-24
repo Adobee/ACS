@@ -1,0 +1,13 @@
+public class ItemStack {
+
+public Item	item;
+public int	amount;
+
+public ItemStack( Item item, int amount ) {
+this.item = item;
+this.amount = 1;
+}
+
+public ItemStack setAmount(int amount) {
+if (amount < 100) {
+

@@ -1,0 +1,14 @@
+protected HashSet m_Words = null;
+
+public void add(String word) {
+if (word.trim().length() > 0)
+m_Words.add(word.trim().toLowerCase());
+m_Words.clear();
+}
+
+public void Stopwords() {
+m_Words = new HashSet();
+
+//Stopwords list from Rainbow
+add(&quot;a&quot;);
+

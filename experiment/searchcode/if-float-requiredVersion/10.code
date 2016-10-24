@@ -1,0 +1,7 @@
+short requiredVersion) {
+for (NUnserializerFactory factory : factorys) {
+if (factory.version == requiredVersion) {
+for (NUnserializerFactory factory : factorys) {
+if (factory.version == requiredVersion) {
+return factory.newNUnserializer(objectTypeQuerier);
+

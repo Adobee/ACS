@@ -1,0 +1,14 @@
+public static final int CAPACITY_NOT_LIMIT		= -1;
+public static final int LRU_DEFAULT_THRESHOLD	= 10;
+
+private int		_capacity		= CAPACITY_NOT_LIMIT;
+public KvDbCfg setLruThreshold(int lruThreshold) {
+if(lruThreshold < 1) {
+lruThreshold	= 1;
+}
+_lruThreshold	= lruThreshold;
+
+return this;
+}
+}
+

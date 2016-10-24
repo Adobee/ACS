@@ -1,0 +1,12 @@
+char[] charArray = name.toCharArray();
+
+char lastChar = &#39; &#39;;
+for(int i = 0; i < charArray.length; i++) {
+char c = charArray[i];
+if(lastChar == &#39; &#39;) {
+c = Character.toLowerCase(c);
+}
+
+lastChar = c;
+charArray[i] = c;
+

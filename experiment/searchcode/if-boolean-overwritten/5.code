@@ -1,0 +1,8 @@
+ModelPlayerBase overwritten = internalModelPlayerAPI.GetOverwrittenGetRandomModelBox(this);
+
+net.minecraft.client.model.ModelRenderer _result;
+if(overwritten == null)
+_result = modelPlayerAPI.localGetRandomModelBox(paramRandom);
+else if(overwritten != this)
+_result = overwritten.getRandomModelBox(paramRandom);
+

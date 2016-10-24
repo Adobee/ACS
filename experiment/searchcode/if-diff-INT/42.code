@@ -1,0 +1,12 @@
+package array;
+
+public class Diff2Elem {
+
+private static int diffElem(int[] arr){
+// Create a diff array of size n-1. The array will hold
+int max_diff = diff[0];
+for (int i=1; i<n-1; i++)
+{
+if (diff[i-1] > 0)
+diff[i] += diff[i-1];
+

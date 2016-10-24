@@ -1,0 +1,12 @@
+public class BooleanFactor implements BooleanValue {
+
+boolean isNot;
+BooleanValue booleanValue;
+
+public BooleanFactor(boolean isNot, BooleanValue booleanValue){
+this.booleanValue = booleanValue;
+}
+
+public boolean Test(Record record) throws WhereClauseException {
+if (booleanValue == null) return false;
+

@@ -1,0 +1,11 @@
+private volatile long storeFileSize = 0;
+private volatile double requestsPerSecond = 0.0;
+private volatile long readRequestsCount = 0;
+private Runnable runnable;
+private long period;
+
+/**
+* Can be null if not on hdfs.
+*/
+private DFSHedgedReadMetrics dfsHedgedReadMetrics;
+

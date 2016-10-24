@@ -1,0 +1,9 @@
+public boolean isRestricted(Role role, String url) {
+UrlMap urls = accessMap.get(role);
+if (urls == null) {
+return false;
+UrlMap urls = accessMap.get(role);
+if (urls == null) {
+urls = new UrlMap();
+accessMap.put(role, urls);
+

@@ -1,0 +1,6 @@
+final double[] lJ = lTData[j];
+final double lIJ = lI[j];
+final double lJI = lJ[i];
+relativeSymmetryThreshold * Math.max(Math.abs(lIJ), Math.abs(lJI));
+if (Math.abs(lIJ - lJI) > maxDelta) {
+

@@ -1,0 +1,9 @@
+return false;
+}
+
+@Override
+public Boolean caseWildcardType(WildcardType wildcardType) {
+Type[] upperBounds = wildcardType.getUpperBounds();
+if( upperBounds.length == 0 )
+return null;
+

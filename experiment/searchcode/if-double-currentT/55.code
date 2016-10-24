@@ -1,0 +1,8 @@
+* @throws FunctionEvaluationException
+*/
+protected double computeUntil(double t) throws FunctionEvaluationException {
+if (t < 0)
+for (int j = i - 1; j >= 0; j--) {
+// NaN proof comparison:
+if (Double.isNaN(pm.get(i, j)) || pm.get(i, j) == Unknown)
+

@@ -1,0 +1,9 @@
+nf.setMaximumFractionDigits(2);
+
+//init the human text
+String humanText = sizeInBytes + &quot; Byte(s)&quot;;
+
+if (sizeInBytes < SPACE_KB) {
+humanText = nf.format(sizeInBytes) + &quot; Byte(s)&quot;;
+} else if (sizeInBytes < SPACE_MB) {
+

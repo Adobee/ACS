@@ -1,0 +1,12 @@
+---
+"Basic /_search_shards test":
+  - do:
+      indices.create:
+        index: test_1
+
+  - do:
+      search_shards:
+        index:  test_1
+        routing: foo
+
+  - match: { shards.0.0.index: test_1 }

@@ -1,0 +1,12 @@
+docSource = in.readBytesReference();
+onlyCount = in.readBoolean();
+if (in.getVersion().onOrAfter(Version.V_1_2_0)) {
+out.writeBytesReference(docSource);
+out.writeBoolean(onlyCount);
+if (out.getVersion().onOrAfter(Version.V_1_2_0)) {
+out.writeVInt(numberOfShards);
+}
+}
+
+}
+

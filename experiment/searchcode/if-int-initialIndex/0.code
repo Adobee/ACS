@@ -1,0 +1,8 @@
+public int recursiveBinarySearch(int initialIndex, int finalIndex) {
+
+if (array.length == 0 || (finalIndex - initialIndex < 1 &amp;&amp; array[initialIndex] != target)) {
+return -1;
+}
+else if (finalIndex - initialIndex < 1 &amp;&amp; array[initialIndex] == target ) {
+return initialIndex;
+

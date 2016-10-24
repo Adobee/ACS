@@ -1,0 +1,7 @@
+while ((sCurrentLine = br.readLine()) != null) {
+String[] aux = sCurrentLine.split(&quot;\\|&quot;);
+if(aux.length >2)
++ &quot; WITH RECURSIVE http://db.ing.puc.cl/temp2 AS&quot;
++ &quot; {&quot;
++ &quot;CONSTRUCT {?newversion ?user ?oldversion . ?intversion ?user2 ?oldversion} &quot;
+

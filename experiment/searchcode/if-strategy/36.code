@@ -1,0 +1,9 @@
+private DiscountStrategy discountStrategy;
+
+public DiscountContext(DiscountStrategy discountStrategy) {
+this.discountStrategy = discountStrategy;
+public double getDiscountPrice(double price) {
+// 如果没有主动选择打折策略，则使用旧版本的打折策略
+if(discountStrategy == null) {
+discountStrategy = new OldDiscount();
+

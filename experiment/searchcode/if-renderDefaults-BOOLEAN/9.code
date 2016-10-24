@@ -1,0 +1,5 @@
+public void handleRequest(final RestRequest request, final RestChannel channel, final Client client) {
+final String[] names = request.paramAsStringArrayOrEmptyIfAll(&quot;name&quot;);
+final boolean renderDefaults = request.paramAsBoolean(&quot;include_defaults&quot;, false);
+GetSettingsRequest getSettingsRequest = new GetSettingsRequest()
+

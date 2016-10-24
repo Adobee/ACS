@@ -1,0 +1,6 @@
+OkHttpClient client = new OkHttpClient.Builder()
+.build();
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.OPEN_WEATHER_URL).newBuilder();
+urlBuilder.addQueryParameter(Constants.OPEN_WEATHER_APPID_QUERY_PARAMETER, location);
+

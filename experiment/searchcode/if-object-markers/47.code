@@ -1,0 +1,9 @@
+if (m.getOwner() == owner) for (Object o: m.getPath()) if (o == node) it.remove();
+}
+pcs.firePropertyChange(PROP_MARKERS, prev, getMarkers());
+SortedSet<Marker> accum = new TreeSet<Marker>();
+for (Marker m: markers) {
+if (transitive) {
+for (Object o: m.getPath()) {
+if (o == target) {
+

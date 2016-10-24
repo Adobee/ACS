@@ -1,0 +1,11 @@
+public void popActivity() {
+Activity activity = activityStack.lastElement();
+if (activity != null) {
+activity.finish();
+activity = null;
+}
+}
+
+public void popActivity(Activity activity) {
+if (activity != null) {
+

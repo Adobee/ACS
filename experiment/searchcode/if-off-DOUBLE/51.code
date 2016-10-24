@@ -1,0 +1,10 @@
+double newFuelRate = ThrusterAccelRate * Z;
+
+if (newFuelRate > FuelGiven){
+break;
+}
+double Velocity = AccelerationRate(ThrusterAccelRate, Z);
+CoastingTime = RemainingDistance / Velocity;
+
+double TimeComplete = CoastingTime + RoundOff(TimeDecel) + RoundOff(Z);
+

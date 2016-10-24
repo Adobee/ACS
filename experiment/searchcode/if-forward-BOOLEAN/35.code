@@ -1,0 +1,13 @@
+ListNode current = head;
+ListNode forward = head.next;
+while (current != null) {
+
+boolean isDuplicate = false;
+while (forward != null &amp;&amp; current.val == forward.val) {
+isDuplicate = true;
+}
+if (isDuplicate) {
+current = forward;
+if (forward != null) {
+forward = forward.next;
+

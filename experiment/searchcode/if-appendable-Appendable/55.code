@@ -1,0 +1,16 @@
+writeCompleteClose(appendable);
+}
+else
+{
+writeClose(appendable);
+
+if (hasXMLText)
+{
+writeValueAsText(object, rootObjectClassDescriptor.getScalarTextFD(), appendable);
+if (translationContext.needsHashCode(object))
+{
+writeSimplIdAttribute(object, appendable, translationContext);
+}
+
+if (isRoot &amp;&amp; translationContext.isGraph())
+

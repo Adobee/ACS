@@ -1,0 +1,12 @@
+boolean justSeenExp = false;
+boolean seenDigit = false;
+for (int i=0; i < value.length(); i++)
+{
+char c = value.charAt(i);
+seenDigit = true;
+}
+}
+if ( ! seenDigit) return false;
+try {
+Integer.parseInt(value);
+

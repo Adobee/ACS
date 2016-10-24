@@ -1,0 +1,10 @@
+for (int i=0; i<balls.length; i++) {collide(balls[i]);}
+}
+private void collide(Ball other) {
+if (!other.isAlive | !intersects(other)) return;
+
+//Contact before to increase bounce precision.
+other.contactWall(this);
+
+if ((other.x>x &amp; other.x<x+w) &amp; (other.y>y-11 &amp; other.y<y+h+11)) {
+

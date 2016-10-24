@@ -1,0 +1,8 @@
+private int chronoListViewHeight = 0;
+private String chronoTime;
+private boolean toggleLapTotal = true;
+private int athletsNumber;
+getViewTreeObserver().addOnPreDrawListener(new OnPreDrawListener() {
+public boolean onPreDraw() {
+chronoListViewHeight = getMeasuredHeight();
+

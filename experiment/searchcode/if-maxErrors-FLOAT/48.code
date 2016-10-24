@@ -1,0 +1,14 @@
+private final BytesRef SEPARATOR = new BytesRef(&quot; &quot;);
+private float maxErrors = 0.5f;
+private BytesRef separator = SEPARATOR;
+private float realworldErrorLikelihood = 0.95f;
+public PhraseSuggestionContext(Suggester<? extends PhraseSuggestionContext> suggester) {
+super(suggester);
+}
+
+public float maxErrors() {
+return maxErrors;
+}
+
+public void setMaxErrors(Float maxErrors) {
+

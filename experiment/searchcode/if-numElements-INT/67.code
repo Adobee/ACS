@@ -1,0 +1,13 @@
+public void add(int f) {
+if (numElements == data.length) {
+resize(1 + numElements);
+}
+data[numElements++] = f;
+public int size() {
+return numElements;
+}
+
+public int get(int index) {
+if (index >= numElements) {
+throw new ArrayIndexOutOfBoundsException(index);
+

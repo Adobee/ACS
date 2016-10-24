@@ -1,0 +1,11 @@
+ComplexNumber temp = ComplexNumber.exp(z.multiply(ComplexNumber.I));
+temp = temp.subtract(temp.inverse());
+return temp.divide(new ComplexNumber(0,2));
+}
+public static ComplexNumber cos(ComplexNumber z) {
+ComplexNumber temp = ComplexNumber.exp(z.multiply(ComplexNumber.I));
+temp = temp.add(temp.inverse());
+return temp.divide(new ComplexNumber(2,0));
+}
+public static ComplexNumber tan(ComplexNumber z) {
+

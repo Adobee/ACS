@@ -1,0 +1,13 @@
+package cn.edu.bjtu.foodie.idao;
+
+import cn.edu.bjtu.foodie.bean.Category;
+
+public interface ICategoryDao {
+Category getById(String id);
+
+/** check if Category exist **/
+boolean isCategoryExist(String id);
+
+/** add one row **/
+String add(Category category);
+

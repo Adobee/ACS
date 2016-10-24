@@ -1,0 +1,6 @@
+@Override public Set<SendTo> coordinate(Object message) {
+if (message instanceof Increment) {
+List<ActorRef> friends = increment.getFriends();
+if (!friends.isEmpty()) {
+Increment coordMessage = new Increment(friends.subList(1, friends.size()), increment.getLatch());
+

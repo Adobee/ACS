@@ -1,0 +1,11 @@
+
+public class HashMapLinearProbing {
+
+int m = 100;
+int[] keys = new int[m];
+String[] values = new String[m];
+
+private int hash(Integer key)
+{
+return (key.hashCode() &amp; 0x7fffffff) % m;
+

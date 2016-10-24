@@ -1,0 +1,10 @@
+* Listener interface for the owning fragment
+*/
+public interface Listener
+{
+void handleDatePicked(int year, int monthOfYear, int dayOfMonth);
+public void onDateSet(DatePicker view, int year, int monthOfYear,
+int dayOfMonth)
+{
+if (isResumed()) {
+

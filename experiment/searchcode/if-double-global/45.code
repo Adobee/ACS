@@ -1,0 +1,9 @@
+public static double findMax(double[] data) {
+double localMaximum = 0;
+double globalMaximum = data[0];
+
+// if (data.length == 1) {
+for (int i = 0; i < data.length - 1; i++) {
+localMaximum = Math.max(data[i], data[i + 1]);
+if (localMaximum >= globalMaximum) {
+

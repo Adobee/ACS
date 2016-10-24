@@ -1,0 +1,10 @@
+public Node LCA(Node root, Node p, Node q){
+if (!root)
+return null;
+if (root == p || root == q)
+Node R = LCA(root.right, p, q);
+if (L &amp;&amp; R)
+return root;
+return L ? L : R;
+}
+

@@ -1,0 +1,7 @@
+public static HttpMethod fromString(String text) {
+// Credits: http://stackoverflow.com/a/2965252
+if (text != null) {
+for (HttpMethod method : HttpMethod.values()) {
+if (text.equalsIgnoreCase(method.text)) {
+return method;
+

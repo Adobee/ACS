@@ -1,0 +1,7 @@
+public static final Cmp ensureCmp(Configuration config)
+{
+Cmp retval = cmpMap.get(config);
+if (retval == null)
+Cmp cmp = ClassWrapper.wrap(Cmp.class, factory, config);
+Cmp temp = cmpMap.putIfAbsent(config, cmp);
+

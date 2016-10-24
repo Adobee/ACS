@@ -1,0 +1,12 @@
+public int divide(int dividend, int divisor) {
+if(divisor==0)
+return Integer.MAX_VALUE;
+
+int res = 0;
+if(dividend==Integer.MIN_VALUE)
+dividend += Math.abs(divisor);
+}
+if(divisor==Integer.MIN_VALUE)
+return res;
+boolean isNeg = ((dividend^divisor)>>>31==1)?true:false;
+

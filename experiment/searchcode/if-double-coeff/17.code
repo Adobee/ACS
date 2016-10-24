@@ -1,0 +1,10 @@
+private static final double ERROR = 0.000001;
+
+double yCoeff;
+double xCoeff;
+double intersect;
+
+Line (double yCoeff, double xCoeff, double intersect) {
+this.yCoeff = yCoeff;
+this.xCoeff = xCoeff;
+

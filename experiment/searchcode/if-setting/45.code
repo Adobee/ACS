@@ -1,0 +1,6 @@
+public static Setting getSettingByName(String name) {
+for (Setting setting : settings) {
+if (setting.getNames().get(0).equalsIgnoreCase(name)) return setting;
+for (Setting setting : settings) {
+if (setting.getNames().get(0).toLowerCase().startsWith(name.toLowerCase())) return setting;
+

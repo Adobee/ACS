@@ -1,0 +1,8 @@
+WorkSheetRowData rowData = getRowData();
+if (rowData.isConstantTableLookup())
+return rowData.getDataView();
+else if (Tag.isControlField(rowData.getTag()))
+return String.copyValueOf(rowData.getControlField().getData());
+else if (rowData.isRelatedDatabaseLookup())
+return WorksheetWebUtils.makeCaption(this,true);
+

@@ -1,0 +1,9 @@
+if(velocities.length == consumptions.length) {
+size = velocities.length;
+}
+double bestRatio = 0.0;
+double currentRatio = 0.0;
+for(int i = 0; i < size; i++) {
+currentRatio = (double)velocities[i]/consumptions[i];
+if(currentRatio > bestRatio) {
+

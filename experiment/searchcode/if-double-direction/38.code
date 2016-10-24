@@ -1,0 +1,18 @@
+package org.catacomb.be;
+
+import org.catacomb.report.E;
+
+
+
+
+public class Direction {
+
+double vx;
+double vy;
+
+double cosine;
+double sine;
+
+
+public Direction(Direction d) {
+

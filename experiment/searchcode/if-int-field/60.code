@@ -1,0 +1,11 @@
+public class GolLogic{
+int[][] field;
+int h,w;
+
+public GolLogic(int h, int w){
+return n;
+}
+
+private int simStepSingleCell(int c, int r){
+if(field[c][r]==1&amp;&amp;countNeighbors(c,r)!=3){
+

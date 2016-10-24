@@ -1,0 +1,9 @@
+final Throwable cause = throwable.getCause();
+if (cause == null) {
+return null;
+}
+return new StandardThrowable(cause);
+public IThrowable[] getSuppressed() {
+final Throwable[] suppressed = throwable.getSuppressed();
+if (suppressed == null) {
+

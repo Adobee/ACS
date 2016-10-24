@@ -1,0 +1,9 @@
+package algorithm.cuttingCondition;
+
+import java.util.List;
+
+import algorithm.chromosome.Chromosome;
+public void onNewGenerationReached(int newGeneration, List<Chromosome> generation, Chromosome bestChromosome) {
+if (bestChromosome.fitness() >= goal)
+goalReached = true;
+

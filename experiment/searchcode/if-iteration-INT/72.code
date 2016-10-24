@@ -1,0 +1,10 @@
+public class HSVMandelbrotPainter implements MandelbrotPainter {
+
+private int maxIterationCount;
+
+public HSVMandelbrotPainter(int maxIterationCount) {
+@Override
+public Color paintPoint(int iterationCount) {
+if (iterationCount >= 0) {
+double h = 0.55 + 10 * ((double) iterationCount / maxIterationCount);
+

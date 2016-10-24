@@ -1,0 +1,13 @@
+private float value;
+
+public Accumulator(float bound) {
+if (bound <= 0) {
+throw new IllegalArgumentException(&quot;Bound must be above zero&quot;);
+throw new IllegalStateException(&quot;Accumulator is not ready yet&quot;);
+}
+value -= bound;
+}
+
+public boolean useIfReady() {
+if (ready()) {
+

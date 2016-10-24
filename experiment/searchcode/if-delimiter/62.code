@@ -1,0 +1,9 @@
+public static char toChar(String delimiter)
+{
+if(delimiter.length()==1){
+return delimiter.charAt(0);
+}else if(delimiter.toLowerCase().startsWith(&quot;0x&quot;) &amp;&amp; delimiter.length()==4){
+return (char)Integer.parseInt(delimiter.substring(2), 16);
+}else if(delimiter.toLowerCase().startsWith(&quot;\\0&quot;) &amp;&amp; delimiter.length()==4){
+return (char)Integer.parseInt(delimiter.substring(2));
+

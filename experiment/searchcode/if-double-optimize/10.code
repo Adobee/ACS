@@ -1,0 +1,7 @@
+public List<Contract> findOptimizeSchedule( List<List<Contract>> schedules ) {
+double minSalary = Double.MAX_VALUE;
+List<Contract> optimizeSchedule = null;
+for( List<Contract> schedule : schedules ){
+double currSalary = calcScheduleTotalSalary(schedule);
+if( minSalary > currSalary ){
+

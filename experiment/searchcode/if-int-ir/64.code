@@ -1,0 +1,9 @@
+private int PC;	// Program Counter
+private int[] IR;	// Instruction Register
+private int[] reg;	// general purpose registers
+IR[1] = (RD>>>16) &amp; 255;
+IR[2] = (RD>>>8) &amp; 255;
+IR[3] = RD &amp; 255;
+// print CPU status to check if it is ok
+System.err.print(&quot;CPU &quot; + id + &quot;: PC=&quot; + PC);
+

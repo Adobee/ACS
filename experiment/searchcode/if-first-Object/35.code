@@ -1,0 +1,14 @@
+first = null;
+last = null;
+}
+
+void enqueue(Object item) {
+if (first == null) {
+last.next = new Node(item);
+last = last.next;
+}
+}
+
+Object dequeue() {
+if (first != null) {
+

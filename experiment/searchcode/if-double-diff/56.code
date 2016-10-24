@@ -1,0 +1,8 @@
+double diffE = Hamiltonian.getDE();
+if (!x.containsKey(diffE)) {
+x.put(diffE, 1 / (1 + Math.exp(diffE * Hamiltonian.Beta())));
+}
+return R.nextDouble() < x.get(diffE);
+}
+}
+

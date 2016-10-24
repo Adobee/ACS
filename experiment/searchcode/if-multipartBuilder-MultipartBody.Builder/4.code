@@ -1,0 +1,6 @@
+final File file = new File(fileUploadInfo.getUploadFilePath());
+
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder().setType(MultipartBody.FORM);
+RequestBody multipartBody = multipartBuilder.build();
+RequestBody requestBody = new ProgressRequestBody(multipartBody, fileTransferredListener);
+

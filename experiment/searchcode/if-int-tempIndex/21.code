@@ -1,0 +1,9 @@
+MedusaTree GetReachableIndices() {
+MedusaTree mt = new MedusaTree();
+int tempIndex;
+
+//Upper moves
+for(int i=-1;i<2;i++){
+tempIndex = this.index-Constants.MAX_INDEX_ROW+i;
+if(tempIndex/Constants.MAX_INDEX_ROW == (this.index/Constants.MAX_INDEX_ROW)-1 &amp;&amp; tempIndex>0) mt.AddBranch(tempIndex);
+

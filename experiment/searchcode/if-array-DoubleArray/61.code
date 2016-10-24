@@ -1,0 +1,10 @@
+public Integer countTotalNegative(Integer[][] doubleArray,int row,int column){
+int count=0;
+int incRow=0;
+int incCol=column-1;
+while(incCol>=0 &amp;&amp; incRow<row){
+System.out.println(&quot;incRow==&quot; + incRow +&quot; incCol ==&quot; + incCol +&quot;=doubleArray[incRow][incCol]&quot;);
+int val=doubleArray[incRow][incCol];
+if(val<0){
+count=count+incCol+1;
+

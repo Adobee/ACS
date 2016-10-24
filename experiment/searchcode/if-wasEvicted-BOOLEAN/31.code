@@ -1,0 +1,16 @@
+REPLACED {
+@Override
+boolean wasEvicted() {
+return false;
+}
+},
+
+/**
+* The entry was removed automatically because its key or value was garbage-collected. This
+* {@link CacheBuilder#softValues}.
+*/
+COLLECTED {
+@Override
+boolean wasEvicted() {
+return true;
+

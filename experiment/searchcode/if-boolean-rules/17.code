@@ -1,0 +1,10 @@
+this.iocUuid = iocUuid;
+this.rules = rules;
+}
+
+public Boolean verify(Set<String> enabledRules){
+boolean enabled = true;
+
+for(String rule : rules){
+if(!enabledRules.contains(rule)){
+

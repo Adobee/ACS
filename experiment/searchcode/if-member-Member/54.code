@@ -1,0 +1,7 @@
+MemberDO m = memberDAO.queryMember(member.getMemberId()) ;
+if(m != null){
+throw new MemberExistsException() ;
+MemberDO m = memberDAO.queryMember(memberId,password) ;
+if(m == null){
+throw new MemberOrPasswordIncorrectException() ;
+

@@ -1,0 +1,12 @@
+/* #ifdef JAVA5 */
+implements Appendable
+/* #endif */
+{
+char[] buffer;
+int readAheadLimit;
+int mark;   // Mark position.
+void resize (int len)
+{
+int cur_size = limit - pos;
+if (readAheadLimit > 0 &amp;&amp; pos - mark <= readAheadLimit)
+

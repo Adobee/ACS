@@ -1,0 +1,8 @@
+import org.sosy_lab.cpachecker.cfa.ast.AExpressionStatement;
+import org.sosy_lab.cpachecker.cfa.ast.ALiteralExpression;
+import org.sosy_lab.cpachecker.cfa.ast.ASimpleDeclaration;
+CFAEdge predEdge = predNode.getEnteringEdge(FIRST);
+
+if (predEdge instanceof FunctionCallEdge) {
+List<AExpressionStatement> formalVarsAssumption = handleFunctionCall((FunctionCallEdge) predEdge, pConcreteState);
+

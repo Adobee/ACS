@@ -1,0 +1,8 @@
+private final int blockColumns;
+
+/**
+* Create a new matrix with the supplied row and column dimensions.
+* @throws NotStrictlyPositiveException if row or column dimension is not
+* positive.
+* @see #createBlocksLayout(int, int)
+

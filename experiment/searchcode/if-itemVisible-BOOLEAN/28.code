@@ -1,0 +1,7 @@
+protected Set<AiTile> selectTiles() throws StopRequestException
+{
+ai.checkInterruption();
+if ( ai.modeHandler.getMode() == AiMode.COLLECTING )
+combiA = new AiUtilityCombination(caseMap.get(itemVisible));
+combiA.setCriterionValue((CriterionMenace)criterionMap.get(CriterionMenace.NAME),Boolean.FALSE);
+

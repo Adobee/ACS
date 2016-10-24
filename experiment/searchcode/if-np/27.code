@@ -1,0 +1,9 @@
+public void run() {
+NumberProperties np = askUserImputPrimaryNumber();
+while (np.number > 1) {
+np.evenPreviousNumber = np.evenNumber;
+if (np.evenNumber) {
+np.number /= 2;
+} else {
+np.number = np.number * 3 + 1;
+

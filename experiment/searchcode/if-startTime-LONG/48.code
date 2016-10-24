@@ -1,0 +1,12 @@
+package framework.utils;
+
+import android.util.Log;
+
+public class FPSCounter {
+long startTime = System.nanoTime();
+int frames = 0;
+
+public void logFrame() {
+frames++;
+if(System.nanoTime() - startTime >= 1000000000) {
+

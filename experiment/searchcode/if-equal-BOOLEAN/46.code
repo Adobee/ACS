@@ -1,0 +1,13 @@
+public boolean hasPathSum(TreeNode root, int sum) {
+boolean equal = false;
+int tmpSum = 0;
+if(root == null) {
+// do nothing
+}
+else {
+equal = pathSumEqual(root, sum, tmpSum);
+}
+return equal;
+}
+private boolean pathSumEqual(TreeNode root, int target, int tmpSum) {
+

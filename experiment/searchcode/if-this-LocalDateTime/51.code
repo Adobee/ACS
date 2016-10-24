@@ -1,0 +1,14 @@
+this._hasBeenSetOff = false;
+}
+
+LocalDateTime getTime()
+{
+return this._when;
+}
+
+boolean maybeSetOff()
+{
+synchronized(this) {
+if (this._hasBeenSetOff) return false;
+if (this._when.isBefore(LocalDateTime.now())) {
+

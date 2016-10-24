@@ -1,0 +1,11 @@
+private Filter addFilter(FilterItem param, List<Filter> filters) {
+Filter f = null;
+f = buildHibernateFilter(param);
+if (f != null) {
+filters.add(f);
+addFilter((FilterItem) treeItem, filters);
+}
+Filter rootFilter = null;
+if (filters.size() > 1) {
+if (filterBuilder.getRootFilter().getJunctionValue() == JunctionType.OR) {
+

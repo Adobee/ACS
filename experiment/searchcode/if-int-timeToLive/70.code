@@ -1,0 +1,7 @@
+private final DateTime collectionTime;
+private final TimeInterval timeToLive;
+private final BigDecimal metricValue;
+if (!collectionTime.equals(dataPoint.collectionTime)) return false;
+if (!timeToLive.equals(dataPoint.timeToLive)) return false;
+if (!metricValue.equals(dataPoint.metricValue)) return false;
+

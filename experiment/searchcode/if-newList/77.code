@@ -1,0 +1,11 @@
+List<List<Integer>> result = new ArrayList<List<Integer>>();
+List<Integer> newList = new ArrayList<Integer>();
+List<Integer> lastList;
+
+if (numRows<=0) return result;
+for (int j=0; j<lastList.size(); j++) {
+if (j==0)
+newList.add(1);
+else
+newList.add(lastList.get(j)+lastList.get(j-1));
+

@@ -1,0 +1,9 @@
+private final int SIZE_ONE_QUADRANT = 64;
+private final int MIN_QUADRANT_COORDINATE = 0;
+private final int MAX_QUADRANT_COORDINATE = 512;
+int coord = 4 * SIZE_ONE_QUADRANT;
+Random r = new Random();
+int index = r.nextInt(3);
+
+if (index == 0) {
+

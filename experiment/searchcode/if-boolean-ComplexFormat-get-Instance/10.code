@@ -1,0 +1,8 @@
+DecimalFormat df = (DecimalFormat)NumberFormat.getNumberInstance(Locale.US);
+df.setGroupingUsed(false);
+
+// Numerical format ###.## (decimal symbol is the point)
+// This is because there is a bug parsing complex number. 9i is parsed as 9
+if (complex.getImaginary() == 0 &amp;&amp; value.contains(&quot;i&quot;)) isComplex = false;
+} catch (Exception e) {
+

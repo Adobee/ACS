@@ -1,0 +1,13 @@
+import java.io.OutputStream;
+
+public class Sender{
+private OutputStream outputStream;
+private boolean debug;
+
+public Sender(boolean debug){
+this.debug = debug;
+}
+
+public void writeToPort(String outString) {
+if (outputStream == null)
+

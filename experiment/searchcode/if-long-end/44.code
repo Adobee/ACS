@@ -1,0 +1,11 @@
+private long endPos;
+public Piece(long begPos,long curPos,long endPos){
+this.begPos=begPos;
+this.curPos=curPos;
+this.curPos = curPos;
+}
+protected Piece toCutPieces(){
+long toCut=endPos-curPos;
+if(toCut>4*1024){
+long begPos=(long) (curPos+Math.ceil(toCut/2));
+

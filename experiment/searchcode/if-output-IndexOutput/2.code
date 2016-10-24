@@ -1,0 +1,9 @@
+cassandraDirectory.close();
+}
+}
+
+public void testWriteFile() throws IOException {
+IndexOutput indexOutput =
+cassandraDirectory.createOutput(&quot;hello.txt&quot;, IOContext.DEFAULT);
+indexOutput.writeString(&quot;hello sun&quot;);
+

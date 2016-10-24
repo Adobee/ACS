@@ -1,0 +1,9 @@
+// IDataChangedAware implementation
+IEvent<DataChangedEventArgs> dataChanged = null;
+int batchLevel = 0;
+boolean isDataDirty = false;
+isDataDirty = true;
+} else {
+if (dataChanged != null)
+dataChanged.fireEvent(this, new DataChangedEventArgs());
+

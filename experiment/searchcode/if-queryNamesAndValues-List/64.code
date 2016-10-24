@@ -1,0 +1,12 @@
+* empty, or non-empty.
+*/
+private final List<String> queryNamesAndValues;
+
+/** Decoded fragment. */
+private final String fragment;
+* may be null (for URLs with no query), empty (for URLs with an empty query) or non-empty (all
+* other URLs).
+*/
+public String encodedQuery() {
+if (queryNamesAndValues == null) return null; // No query.
+

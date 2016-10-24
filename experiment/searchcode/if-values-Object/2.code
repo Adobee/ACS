@@ -1,0 +1,10 @@
+public class RollKey extends Object{
+public int[] values;
+public int die;
+public int turn;
+public boolean equals(Object o){
+RollKey r = (RollKey)o;
+if(r==null)
+return false;
+return turn ==r.turn &amp;&amp; die==r.die &amp;&amp; values[0]==r.values[0]&amp;&amp; values[1]==r.values[1]&amp;&amp; values[2]==r.values[2]&amp;&amp; values[3]==r.values[3]&amp;&amp; values[4]==r.values[4];
+

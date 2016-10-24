@@ -1,0 +1,17 @@
+package org.saga.shape;
+
+
+import org.bukkit.block.Block;
+import org.bukkit.block.BlockFace;
+public boolean checkBlock(Block block) {
+
+
+if(super.checkBlock(block.getRelative(BlockFace.DOWN))) return false;
+
+return super.checkBlock(block);
+
+}
+
+
+}
+

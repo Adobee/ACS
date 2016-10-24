@@ -1,0 +1,12 @@
+public static synchronized boolean check(Object a, Object b) {
+boolean res = true;
+if (a != null) {
+res = res &amp;&amp; a.equals(b);
+} else if (b != null) {
+res = res &amp;&amp; b.equals(a);
+}
+return res;
+}
+
+public static synchronized boolean check(Object[] aArr, Object[] bArr) {
+

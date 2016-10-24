@@ -1,0 +1,13 @@
+public Integer getTotalPage() {
+if(totalRows != null){
+int r = totalRows / rows;
+r = (totalRows % rows > 0) ? r++ : r;
+return totalRows;
+}
+
+public void setTotalRows(Integer totalRows) {
+this.totalRows = totalRows;
+}
+
+public int getStart() {
+

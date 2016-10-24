@@ -1,0 +1,15 @@
+package model.game;
+
+public class Game {
+
+static boolean started;
+static boolean paused;
+static boolean levelEnded;
+public void endGame() {
+started = false;
+paused = false;
+}
+
+public boolean isOn() {
+if (started &amp;&amp; !paused)
+

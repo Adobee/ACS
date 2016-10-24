@@ -1,0 +1,8 @@
+public final ISession session;
+public final Object[] result;
+
+public SessionResult(ISession session, Object[] result) {
+this.session = session;
+if (result.length == 1 &amp;&amp; result[0] == null) {
+this.result = new Object[0];
+

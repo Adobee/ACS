@@ -1,0 +1,8 @@
+@Override
+public void transformPage(View view, float position) {
+if (position < -1) {
+view.setAlpha(0);
+} else if (position <= 1) {
+float alpha = 1 - Math.abs(position);
+alpha = alpha < MIN_ALPHA ? MIN_ALPHA : alpha;
+

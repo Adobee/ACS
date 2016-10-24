@@ -1,0 +1,11 @@
+public long getStartTime()
+{
+if (this.runningState == 0) {
+throw new IllegalStateException(&quot;Stopwatch has not been started&quot;);
+return this.stopTime - this.startTime;
+}
+if (this.runningState == 0) {
+return 0L;
+}
+if (this.runningState == 1) {
+

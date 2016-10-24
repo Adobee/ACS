@@ -1,0 +1,16 @@
+public BoundedSprite( CSVTokenizer tokenizer )
+{
+super( tokenizer );
+}
+
+public void update()
+{
+super.update();
+
+if ( bounded &amp;&amp; isMoving() &amp;&amp; isOutOfBounds() )
+if (locx <= bounds.x)
+{
+vx = -vx;
+}
+else if ( ( locx + width ) >= bounds.width)
+

@@ -1,0 +1,15 @@
+package math;
+
+public class Sqrt {
+public int sqrt(int x) {
+int n = x;
+int cnt = 0;
+long ret = 0;
+return (int) ret;
+}
+
+public int sqrt1(int x) {
+long high=x;
+long low=0;
+if(x==1) return 1;
+

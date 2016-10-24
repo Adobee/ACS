@@ -1,0 +1,13 @@
+* (1) set action: AbstractAction(nextAction)
+* (2) execute next state: setNext(state)
+*
+*/
+
+public abstract class AbstractAction <T extends Enum<?>> {
+* This is Chain of Responsibility Design Pattern
+*
+*/
+public void setNext(T state) throws Exception {
+
+if (nextAction != null) {
+

@@ -1,0 +1,13 @@
+public List<User> findUser(Map<String, String> queryMap){
+
+String hql = &quot; from User &quot;;
+StringBuffer querySb = new StringBuffer();
+boolean hasQuery = false;
+String key = queryMapit.next().getKey();
+querySb.append( key + &quot; = &#39;&quot; + queryMap.get(key) + &quot;&#39; and &quot;);
+}
+
+if(hasQuery){
+
+hql = hql + &quot; Where &quot; + StringUtils.removeEnd(querySb.toString(), &quot; and &quot;);
+

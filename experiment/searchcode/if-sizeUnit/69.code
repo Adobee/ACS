@@ -1,0 +1,18 @@
+* limitations under the License.
+*/
+package org.openestate.io.immobiliare_it.xml.types;
+
+/**
+* SizeUnit.
+*
+* @since 1.0
+public static SizeUnit fromXmlValue( String xmlValue )
+{
+for (SizeUnit val : SizeUnit.values())
+{
+if (val.xmlValue.equalsIgnoreCase( xmlValue )) return val;
+}
+return null;
+}
+}
+

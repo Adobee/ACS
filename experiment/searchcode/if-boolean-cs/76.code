@@ -1,0 +1,8 @@
+public class CSPermissions implements PermissionsInterface {
+
+public boolean hasPermission(CommandSender cs, String node, boolean bln) {
+return cs instanceof ConsoleCommandSender || (node != null &amp;&amp; cs.hasPermission(node));
+public boolean hasAllPermission(CommandSender cs, List<String> list, boolean bln) {
+for (String node : list) {
+if (!cs.hasPermission(node)) {
+

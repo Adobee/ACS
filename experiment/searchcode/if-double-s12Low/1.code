@@ -1,0 +1,7 @@
+final double s12Prime   = s12High - prod2High;
+final double s12Low     = (prod2High - (s12High - s12Prime)) + (prod1High - s12Prime);
+double result = s12High + (prod1Low + prod2Low + s12Low);
+
+if (Double.isNaN(result)) {
+// either we have split infinite numbers or some coefficients were NaNs,
+

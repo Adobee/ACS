@@ -1,0 +1,12 @@
+// Bind buffer with a source.
+al.alGenSources(1, source, 0);
+if (JALSoundManager.checkError(al)) {
+throw new Exception(&quot;Error generating OpenAL source !&quot;);
+JALSoundManager.checkError(al);
+}
+}
+
+@Override
+public float getVolume() {
+if (source != null) {
+

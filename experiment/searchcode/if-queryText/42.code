@@ -1,0 +1,6 @@
+&quot;,name=&#39;New RefNode&#39;&quot;+
+&quot;WHERE IEEEaddr=&#39;&quot;+longAddr+&quot;&#39;;&quot;;
+if (!db.queryNoResponse(queryText)) System.out.println(&quot;Failed Query: &quot; + queryText);
+queryText=&quot;DELETE FROM blindsdata WHERE IEEEaddr=&#39;&quot;+longAddr+&quot;&#39;;&quot;;//cancello i dati blind
+if (!db.queryNoResponse(queryText)) System.out.println(&quot;Failed Query: &quot; + queryText);
+

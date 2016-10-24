@@ -1,0 +1,17 @@
+return docCount;
+}
+
+public void addDocCount(DocCount doc){
+this.docCount.add(doc);
+}
+
+@Override
+public int compareTo(IIEntity II2) {
+int cmp = term.compareTo(II2.getTerm());
+return cmp;
+}
+
+public String toString(){
+String s = term;
+for(int i = 0;i < docCount.size(); i++){
+

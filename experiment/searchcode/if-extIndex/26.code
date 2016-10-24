@@ -1,0 +1,9 @@
+public static void main(String[] args) throws FileNotFoundException {
+if (args.length < 1) {
+System.err.println(&quot;error: missing parameter: input file&quot;);
+public static String getOutputFileName(String inputFileName) {
+int extIndex = inputFileName.lastIndexOf(&quot;.in&quot;);
+
+if (extIndex == -1) {
+System.err.println(&quot;error: invalid input file extension: expected .in&quot;);
+

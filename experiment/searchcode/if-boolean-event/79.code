@@ -1,0 +1,10 @@
+public class TransactionInfoEventFilter implements EventFilter {
+
+private boolean needTsInfo = false;
+
+public void init(boolean needTsInfo) {
+this.needTsInfo = needTsInfo;
+}
+
+public boolean accept(ChangedEvent event, EventFilterChain eventfilterChain) {
+

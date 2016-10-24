@@ -1,0 +1,8 @@
+mark P as visited
+NeighborPts = regionQuery(P, eps)
+if sizeof(NeighborPts) < MinPts
+mark P as NOISE
+NeighborPts&#39; = regionQuery(P&#39;, eps)
+if sizeof(NeighborPts&#39;) >= MinPts
+NeighborPts = NeighborPts joined with NeighborPts&#39;
+

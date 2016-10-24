@@ -1,0 +1,12 @@
+throw new NullPointerException(&quot;No input&quot;);
+}
+
+int colonPos = s.indexOf (&quot;:&quot;);
+
+if (colonPos == -1) {
+throw new IllegalArgumentException(&quot;No colon&quot;);
+String hr = s.substring(0, colonPos);
+String min = s.substring(colonPos+1);
+
+if ((hr.length() != 1 &amp;&amp; hr.length() != 2) || min.length() != 2) {
+

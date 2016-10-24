@@ -1,0 +1,8 @@
+public static String toString(long time) {
+long seconds = time;
+long minutes = time /  60;
+long hours   = time / (60 * 60);
+long days    = time / (60 * 60 * 24);
+return new String(Long.toString(hours) + &quot; Hours, &quot; + Long.toString(minutes - hours * 60) + &quot; Minutes.&quot;);
+else if (minutes > 0)
+

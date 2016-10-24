@@ -1,0 +1,11 @@
+public HashMap<Integer,DateLine> lineReference=new HashMap<Integer,DateLine>();
+private double minWidth=100d;
+private static final long timeUnitLength[]= {1000,10000,60000,900000,3600000,21600000,86400000,604800000,2629743000L,7889231000L,31556926000L,315569260000L}; //helper array
+int tu=0;
+
+for(int i=0; i<timeUnitLength.length; i++)
+{
+tu=i;
+
+if((((double)timeUnitLength[i]/(double)s)*w)>mw)
+

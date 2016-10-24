@@ -1,0 +1,12 @@
+if(dict.contains(s))	return true;
+
+boolean earlyStop = true;
+for(int i=s.length()-1; i>0; i--){
+if(dict.contains(s.substring(i))){
+// No need to do the recursion.
+if(earlyStop){
+return false;
+}
+
+// find matches for the substrings of s,
+

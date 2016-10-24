@@ -1,0 +1,7 @@
+public static Protocol createProtocol(ProtocolConfig protocolConfig, SmsProtocolHandler protocolHandler) {
+Protocol protocol = null;
+if (protocolConfig instanceof Cmpp2Config) {
+protocol = new CmppProtocol(protocolConfig.getProtocolId(), (Cmpp2Config) protocolConfig, protocolHandler);
+}
+if (protocolConfig instanceof SgipConfig) {
+

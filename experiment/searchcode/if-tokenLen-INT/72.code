@@ -1,0 +1,7 @@
+final int time = in.readInt();
+final int tokenLen = in.readShort();
+final byte[] devToken = in.readBytes(tokenLen).array();
++ FeedBackDecoder.TOKEN_LEN + tokenLen
++ FeedBackDecoder.DEV_TOKEN + devToken);
+int octet = 0;
+

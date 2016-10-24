@@ -1,0 +1,12 @@
+static long permute (int n, int k) {
+if (n < k)
+return 0;
+long ret = 1;
+for (int i = 0; i < k; i++)
+ret = (ret * (n - i));
+return ret;
+}
+
+static long permute (int n, int k, long m) {
+if (n < k)
+

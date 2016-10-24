@@ -1,0 +1,11 @@
+private Scanner scanner;
+private boolean running = true;
+
+@Inject
+public CommandExternalInterface(ResponseUnifierFactory responseUnifierFactory, RequestDistributor requestDistributor) {
+public void run() {
+addShutdownHook();
+scanner = new Scanner(System.in);
+while (running) {
+if (scanner.hasNextLine()) {
+

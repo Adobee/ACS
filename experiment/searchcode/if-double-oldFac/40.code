@@ -1,0 +1,8 @@
+private void updateCovarianceDiagonalOnly(boolean hsig,
+final RealMatrix bestArz) {
+// minor correction if hsig==false
+double oldFac = hsig ? 0 : ccov1Sep * cc * (2 - cc);
+.scalarMultiply(ccov1); // rank one update
+// minor correction if hsig==false
+double oldFac = hsig ? 0 : ccov1 * cc * (2 - cc);
+

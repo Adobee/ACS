@@ -1,0 +1,12 @@
+private static Logger log = Logger.getLogger(JavaConfigConstraintsResolver.class);
+
+JavaConfigConstraintsResolver() {
+}
+
+@Override
+public boolean resolve(PropertyDescriptor propertyDescriptor) {
+String fieldName = field.getName();
+Constraints constraints = field.getAnnotation(Constraints.class);
+if(constraints != null) {
+String constraintsDefinition = AnnotationUtils.simplify(constraints);
+

@@ -1,0 +1,11 @@
+public class GreaterThanStrategy<I> extends AbstractFilterStrategy<I> {
+
+public GreaterThanStrategy(I start) {
+super(start, start);
+}
+
+public boolean compare(I compared) throws Exception {
+
+if (reflector.isBoolean(compared)) {
+throw new IllegalArgumentException(
+

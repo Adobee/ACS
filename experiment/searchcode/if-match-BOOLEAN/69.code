@@ -1,0 +1,18 @@
+public boolean isMatch(String s, String p)
+{
+if(s.length() == 0)
+{
+if(p.length() == 0){
+return true;
+return isMatch(s, p.substring(2));
+}
+else
+{
+return false;
+}
+}
+
+
+boolean match = false;
+if(p.length()>1 &amp;&amp; p.charAt(1) == &#39;*&#39;)
+

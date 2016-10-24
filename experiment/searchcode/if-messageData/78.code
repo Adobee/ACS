@@ -1,0 +1,7 @@
+public abstract class MessageToFrontend extends Message {
+private final JSONObject messageData;
+
+public MessageToFrontend(Address from, Address to, JSONObject messageData) {
+super(from, to);
+this.messageData = messageData;
+

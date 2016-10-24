@@ -1,0 +1,11 @@
+public class Discount {
+
+private final Double priceThreshold;
+private final int quantityThreshold;
+private final Double percentage;
+public double apply(int quantity, Double price) {
+
+Double fullPrice = quantity * price;
+
+if (quantity >= quantityThreshold &amp;&amp; price >= priceThreshold) {
+

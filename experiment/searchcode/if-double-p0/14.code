@@ -1,0 +1,9 @@
+public static class Point implements Comparable<Point> {
+double x, y, r;
+Point p0;
+public Point(double x, double y) {
+public int compareTo(Point p) {
+double s = ccw(p0, p, this);
+if (s != 0) return (int) Math.signum(s);
+else return (int) Math.signum(p.r - r);
+

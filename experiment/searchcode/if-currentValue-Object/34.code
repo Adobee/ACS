@@ -1,0 +1,10 @@
+public class SearchDetailsXMLHandler extends DefaultHandler {
+Boolean currentElement = false;
+String currentValue = null;
+public ArrayList<SearchDetailsObject> placeList = new ArrayList<SearchDetailsObject>();
+currentElement = true;
+currentValue = &quot;&quot;;
+if (localName.equalsIgnoreCase(&quot;result&quot;))
+{
+place= new SearchDetailsObject();
+

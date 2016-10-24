@@ -1,0 +1,10 @@
+DefaultHandler handler = getCurrentHandler();
+if (handler != this) {
+handler.characters(ch, start, length);
+* Returns the handler at the top of the stack.
+*
+* @return The handler.
+*/
+public DefaultHandler getCurrentHandler() {
+DefaultHandler result = this;
+

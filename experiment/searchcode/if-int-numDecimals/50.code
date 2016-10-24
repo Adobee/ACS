@@ -1,0 +1,10 @@
+public class RoundDoubleIndex  extends ColumnIndex
+{
+private int rounder;
+public RoundDoubleIndex(@NotNull String column, String alias, int numDecimals)
+{
+super(column, alias);
+rounder = 1;
+if (numDecimals > 0) {
+rounder = (int)Math.pow(10, numDecimals);
+

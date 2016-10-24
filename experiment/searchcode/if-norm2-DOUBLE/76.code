@@ -1,0 +1,12 @@
+double cosineSimilarity(String item1, String item2){
+double[] vec1 = itemVectors.get(item1);
+if (vec1 == null){
+System.out.println(&quot;Warning: item1 does not exists!&quot;);
+throw new RuntimeException(&quot;vec1.length != vec2.length&quot;);
+
+double norm1 = 0;
+double norm2 = 0;
+double innerProduct = 0;  // inner product
+
+for(int i = 0; i < vec1.length; i++){
+

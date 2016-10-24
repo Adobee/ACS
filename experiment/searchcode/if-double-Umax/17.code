@@ -1,0 +1,8 @@
+double u = item.getTagCompound().getDouble(&quot;voltage&quot;);
+u *= u;
+if (E < 0) E = Math.max(E, -u);
+else E = Math.min(E, (double)Umax * (double)Umax - u);
+if (E != 0) {
+u = Math.sqrt(u + E);
+if (Double.isNaN(u)) u = 0F;
+

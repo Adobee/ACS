@@ -1,0 +1,10 @@
+public SizeLimitedToolAgentMap (int maxSize) {
+this();
+if (maxSize<0) {
+maximumSize=Integer.MAX_VALUE-1;
+public synchronized Object put( Object key, Object value ) {
+int mapSize = size();
+
+if (mapSize >= maximumSize) {
+System.err.println(&quot;Tool agent map can&#39;t accept more mappings - the maximum no. of mappings is &quot;+maximumSize+&quot; !&quot;);
+

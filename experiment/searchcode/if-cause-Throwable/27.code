@@ -1,0 +1,10 @@
+private MoreThrowables() {}
+
+public static <T extends Throwable> T initializeCause(final T throwable, @Nullable final Throwable cause) {
+throwable.initCause(cause);
+
+return throwable;
+}
+
+public static <T extends Throwable> T initializeCause(final T throwable, final Optional<? extends Throwable> cause) {
+

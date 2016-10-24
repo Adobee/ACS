@@ -1,0 +1,7 @@
+private static void encode(final byte[] inData, final int inIndex,
+final char[] outData, final int outIndex) {
+final char[] outData, final int outIndex) {
+
+int i = inData[inIndex] &amp; 0xff;
+outData[outIndex] = ENCODE_TABLE[i >> 2];
+

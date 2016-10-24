@@ -1,0 +1,22 @@
+public interface ASProjectSource {
+
+String getID();
+
+String getName();
+
+String getDescription();
+
+boolean isEnabled();
+
+List<ASNewProjectStep> getSteps();
+Project createProject(Project currentProject) throws ProjectNotCreatedException;
+
+/**
+* @return error message if any, <code>null</code> otherwise
+*/
+String createDirs();
+
+ASNewProjectSettings getSettings();
+
+}
+

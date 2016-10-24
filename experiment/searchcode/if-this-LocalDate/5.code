@@ -1,0 +1,9 @@
+public HolidaysList(String name, DayOfWeek[] weekend, LocalDate[] list) {
+holidays = new HashSet<>(300, 0.9f);
+if (list != null) {
+for (LocalDate d : list)
+holidays.add(d);
+}
+
+this.weekendDays = new HashSet<>();
+

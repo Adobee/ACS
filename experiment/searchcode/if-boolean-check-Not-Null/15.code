@@ -1,0 +1,13 @@
+public static void that(boolean condition) {
+Check.that(condition, &quot;Condition is not satisfied.&quot;);
+}
+
+public static <T> T notNull(T reference, String format, Object... args) {
+return reference;
+}
+
+public static <T> T notNull(T reference) {
+return Check.notNull(reference, &quot;Reference is null.&quot;);
+}
+}
+

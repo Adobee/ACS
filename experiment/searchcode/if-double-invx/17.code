@@ -1,0 +1,6 @@
+IVector2 pos = vp.getPosition().copy().negate().add(vp.getObjectShift()).add(dcPos).add(position).divide(vp.getPaddedSize()).multiply(canvasSize);
+if (invX)
+pos.negateX().add(new Vector2Double(canvasSize.getXAsDouble(), 0));
+if (invY)
+pos.negateY().add(new Vector2Double(0, canvasSize.getYAsDouble()));
+

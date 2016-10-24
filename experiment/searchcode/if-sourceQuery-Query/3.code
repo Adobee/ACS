@@ -1,0 +1,14 @@
+public DebugQueryListener(PrintStream os) {
+this.os = os;
+}
+
+public void queryNameChanged(
+Query sourceQuery,
+String oldName,
+String newName) {
+os.println(sourceQuery);
+}
+
+public void datasetChanged(
+Query source,
+

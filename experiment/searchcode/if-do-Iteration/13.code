@@ -1,0 +1,13 @@
+Point b = new Point(bX, SharedComputation.findY(polynomial, bX));
+if (iterationLimit == -1) {
+iterationLimit = 1000;
+}
+
+if (!(a.getY() > 0 &amp;&amp; b.getY() < 0 || a.getY() < 0 &amp;&amp; b.getY() > 0)) {
+double relativeError = 0;
+
+do {
+// choose new side of the binary split
+i++;
+if (mid.getY() > 0) {
+

@@ -1,0 +1,12 @@
+public class Pixmap implements Resource {
+
+
+private int numComponents;
+private int width;
+private int height;
+private byte[] data;
+int[] color = new int[numComponents];
+byte[] colorData = getColor_byte(x, y);
+int i = 0;
+if(numComponents > 0) { color[i++] = colorData[0]; }
+

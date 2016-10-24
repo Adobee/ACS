@@ -1,0 +1,9 @@
+private final TypeName returnType;
+
+// TODO: make this into a builder.
+private ConfigParamSpecification(Name simpleName, TypeName returnType) {
+public void validate() {
+Objects.requireNonNull(simpleName);
+Objects.requireNonNull(returnType);
+if (!allowedReturnTypes.contains(returnType)) {
+

@@ -1,0 +1,9 @@
+public class MaxTime extends TimeBasedFixtureDecorator {
+public static final String MAX_TIME = &quot;maxTime&quot;;
+protected long maxTime;
+maxTime = Long.parseLong(arguments[0]);
+summary.put(MAX_TIME, new Long(maxTime));
+}
+
+protected void updateColumnsBasedOnResults(Parse table) {
+

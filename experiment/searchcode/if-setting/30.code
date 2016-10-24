@@ -1,0 +1,12 @@
+this.add2Redis(RedisUtil.getKey(&quot;setting&quot;, setting.getName()),
+setting);
+}
+
+@Override
+public void updateSetting(Setting setting) {
+
+if (setting == null || setting.getSettingId() == 0) {
+Setting setting  = this.findById(id);
+if(setting != null){
+this.deleteFromRedis(RedisUtil.getKey(&quot;setting&quot;, setting.getName()));
+

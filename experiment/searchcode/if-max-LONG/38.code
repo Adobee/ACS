@@ -1,0 +1,10 @@
+public class BuildingTowers {
+
+public long maxHeight(int N, int K, int[] x, int[] t) {
+int n = x.length;
+if(n==0) return ((long)N-1)*K;
+long localMax = getMax(x[i-1], t[i-1], x[i], t[i], K);
+if(max<localMax) max = localMax;
+}
+long last = getMax(t[n-1],x[n-1], ((long)N-x[n-1])*K, N-1, K);
+

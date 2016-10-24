@@ -1,0 +1,8 @@
+/** Determine if the object hasn&#39;t started yet, and is waiting for the program to start it or waiting in line. */
+public boolean isPending() {
+if (state == OldState.paused ||
+state == OldState.queued) return true;
+/** Determine if the object is performing some operation right now, making network and disk activity. */
+public boolean isActive() {
+if (state == OldState.opening ||
+

@@ -1,0 +1,7 @@
+@SuppressWarnings({&quot;UnusedDeclaration&quot;})
+public abstract class Function4 extends AbstractBlock implements IFunction4 {
+
+public Object invokeWithArgs(Object[] args) {
+if(args.length != 4) {
+throw new IllegalArgumentException(&quot;You must pass 4 args to this block, but you passed&quot; + args.length);
+

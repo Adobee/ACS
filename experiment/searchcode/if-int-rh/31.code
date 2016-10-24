@@ -1,0 +1,12 @@
+public void drawText(String text, int x, int y, int fontSize, int align, int rotate, int style) {
+int rh = convH(fontSize);
+if (mirrorY) rh = -rh;
+int ry = convY(y);
+int rh = convH(h);
+int ry = convY(y);
+if (rh < 0) {
+ry = rh + ry;
+rh = -rh;
+}
+vis.drawRect(convX(x), ry, convW(w), rh, fill);
+

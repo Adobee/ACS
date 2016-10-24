@@ -1,0 +1,10 @@
+int[][] posx;
+int[] d;
+int[] dsq;
+int[] dCount;
+int mind,maxd;
+int maxdCount = 0;
+double[] cellStats = new double[3];
+int lineage = 1;
+int firstx = 0;//gets set by first saveCA
+

@@ -1,0 +1,7 @@
+final long xRawMantissa = xBits &amp; MASK_DOUBLE_MANTISSA;
+
+if (yRawExp > 1085) {
+return Double.NaN;
+} else if (xRawExp == 1023 &amp;&amp; xRawMantissa == 0) {
+// x = -1.0 or x = +1.0
+

@@ -1,0 +1,8 @@
+public MessageQueue getQueue(String queueId) {
+InMemoryQueue queue = idToQueue.get(queueId);
+if (queue == null) {
+public MessageQueue deleteQueue(String queueId) {
+InMemoryQueue queue = idToQueue.get(queueId);
+if (queue != null) {
+queue.close();
+

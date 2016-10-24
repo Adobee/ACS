@@ -1,0 +1,7 @@
+public OpenMapRealVector append(RealVector v) {
+if (v instanceof OpenMapRealVector) {
+return append((OpenMapRealVector) v);
+* @throws IllegalArgumentException If the dimensions don&#39;t match
+*/
+public double dotProduct(OpenMapRealVector v) throws IllegalArgumentException {
+

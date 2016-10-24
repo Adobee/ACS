@@ -1,0 +1,10 @@
+public synchronized int read(CharBuffer target) throws IOException {
+checkNotNull(target);
+checkOpen();
+if (!hasRemaining()) {
+return -1;
+}
+int charsToRead = Math.min(target.remaining(), remaining());
+public synchronized void mark(int readAheadLimit) throws IOException {
+checkArgument(readAheadLimit >= 0, &quot;readAheadLimit (%s) may not be negative&quot;, readAheadLimit);
+

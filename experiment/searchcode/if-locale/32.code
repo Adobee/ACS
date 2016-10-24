@@ -1,0 +1,19 @@
+//specify package
+package model;
+
+import java.util.Locale;
+
+public class LocaleConfig
+{
+private static Locale currentLocale;
+currentLocale = locale;
+}
+
+public static Locale currentLocale() {
+if(currentLocale == null) {
+currentLocale = new Locale(&quot;en&quot;, &quot;US&quot;);
+}
+return currentLocale;
+}
+}
+

@@ -1,0 +1,5 @@
+@Override
+public Publisher<Integer> removeRangeHeadByLex(String toElement, boolean toInclusive) {
+String toValue = value(toElement, toInclusive);
+return commandExecutor.writeReactive(getName(), StringCodec.INSTANCE, RedisCommands.ZREMRANGEBYLEX, getName(), &quot;-&quot;, toValue);
+

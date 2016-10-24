@@ -1,0 +1,13 @@
+if (nanStrategy == NaNStrategy.FIXED) {
+restoreNaNs(out, nanPositions);
+}
+return out;
+}
+
+/**
+* Returns an array that is a copy of the input array with IntDoublePairs
+* @param nanPositions list of index values to set to <code>Double.NaN</code>
+*/
+private void restoreNaNs(double[] ranks, List<Integer> nanPositions) {
+if (nanPositions.size() == 0) {
+

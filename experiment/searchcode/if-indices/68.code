@@ -1,0 +1,14 @@
+private HashMap<Triangle,Integer> triangles;
+
+private int numIndices;
+private Integer[] indices;
+
+public TriangleBatch(int maxSize)
+{
+triangles = new HashMap<>(maxSize, 1.0f);
+public void addTriangle(Triangle t)
+{
+Integer i = triangles.get(t);
+if(i == null) {
+triangles.put(t, numIndices);
+

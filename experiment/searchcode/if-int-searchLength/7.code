@@ -1,0 +1,6 @@
+int searchLength = searchValue.length();
+int cellAppearance = 0;
+for (int a = 0; a < compareLength; a++) {
+if (searchLength > compareLength) {
+break;
+

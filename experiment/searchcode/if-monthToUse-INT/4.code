@@ -1,0 +1,9 @@
+// Order of calculation is important.
+//
+int yearToUse = thisYear;;
+// Initially, monthToUse is zero-based
+int monthToUse = thisMonth - 1 + months;
+int remMonthToUse = (int)(monthToUse % iMax);
+if (remMonthToUse == 0) {
+remMonthToUse = iMax;
+

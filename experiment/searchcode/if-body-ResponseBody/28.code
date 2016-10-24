@@ -1,0 +1,11 @@
+import okhttp3.ResponseBody;
+import retrofit2.Converter;
+
+/**
+* Created by liubo on 2016/5/24.
+*/
+final class ScalarResponseBodyConverters {
+public Character convert(ResponseBody value) throws IOException {
+String body = value.string();
+if (body.length() != 1) {
+

@@ -1,0 +1,7 @@
+public class BasicTable extends FlexTable {
+
+private ValueModel<Integer> mouseOverRow = new ValueHolder<Integer>(-1);
+public void onMouseMove(MouseMoveEvent event) {
+int rowIndex = getRowIndex(event);
+if (rowIndex != -1) {
+

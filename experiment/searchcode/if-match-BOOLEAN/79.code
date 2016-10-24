@@ -1,0 +1,11 @@
+public class Solution {
+public boolean isMatch(String s, String p) {
+boolean[][] matched = new boolean[s.length() + 1][p.length() + 1];
+return matched[s.length()][p.length()];
+}
+
+private boolean isMatch(char a, char b) {
+return a == b || b == &#39;?&#39;;
+}
+}
+

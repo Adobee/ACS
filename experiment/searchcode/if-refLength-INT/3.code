@@ -1,0 +1,7 @@
+public class LengthMetric<TK,FV> implements SentenceLevelMetric<TK, FV> {
+
+private int bestMatchLength(List<Sequence<TK>> refs, int candidateLength) {
+int best = Integer.MAX_VALUE;
+for (Sequence<TK> ref : refs) {
+if (Math.abs(candidateLength - best) > Math.abs(candidateLength
+

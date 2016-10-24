@@ -1,0 +1,7 @@
+public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+// Just drop all the tables.
+db.execSQL(&quot;DROP TABLE IF EXISTS consoles&quot;);
+// Get the numeric indexes for each of the columns that we&#39;re updating.
+final int nameColumn = ih.getColumnIndex(&quot;console_name&quot;);
+final int aliasColumn = ih.getColumnIndex(&quot;console_alias&quot;);
+

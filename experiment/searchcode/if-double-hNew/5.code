@@ -1,0 +1,7 @@
+public static double[] resize(int w, int h, double[] data, int wNew, int hNew) {
+if (wNew < w &amp;&amp; hNew < h) {
+Raster downsampled = downsample(new Raster(w, h, data), wNew, hNew);
+Raster downsampled = downsample(new Raster(w, h, data), wNew, h);
+if (hNew > h) {
+Raster upsampled = upsample(downsampled, wNew, hNew);
+

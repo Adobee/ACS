@@ -1,0 +1,8 @@
+public class Solution {
+public int largestRectangleArea(int[] height) {
+if (height.length == 0)
+pre[0] = -1;
+left[0] = height[0];
+for (int i = 1; i < height.length; i ++) {
+if (height[i] <= height[i - 1]) {
+

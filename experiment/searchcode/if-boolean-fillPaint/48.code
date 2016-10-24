@@ -1,0 +1,8 @@
+Paint oldPaint = g.getPaint();
+Paint fillPaint = rc.getVertexFillPaintTransformer().transform(v);
+
+if (animate) {
+Rectangle r = shape.getBounds();
+if(pickedState != null &amp;&amp; pickedState.isPicked(v)) {
+fillPaint = new GradientPaint((float)r.getMinX(), (float)r.getMinY(), pickedColorOne,
+

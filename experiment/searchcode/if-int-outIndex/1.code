@@ -1,0 +1,10 @@
+public int validate(QName[] children, int offset, int length) {
+int inIndex;
+int outIndex;
+int type;
+String uri;
+if (this.fOrdered) {
+inIndex = 0;
+outIndex = 0;
+while (outIndex < length) {
+

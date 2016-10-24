@@ -1,0 +1,15 @@
+this.sumXSquared += t*t;
+
+++this.len;
+}
+
+public void finalize()
+{
+if(this.len*this.sumXSquared - this.sumX*this.sumX != 0)
+public double evaluate(double t)
+{
+return this.m*t + this.b;
+}
+
+private double sumXY = 0;
+

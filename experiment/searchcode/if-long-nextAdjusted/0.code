@@ -1,0 +1,7 @@
+public abstract String getNameKey(long instant);
+public String getShortName(long instant, Locale locale) {
+if (locale == null)
+long nextAdjusted = nextTransition(instantLocal - offsetAdjusted);
+
+if (nextAdjusted == (instantLocal - offsetAdjusted))
+

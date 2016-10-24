@@ -1,0 +1,15 @@
+public class MaxFilter extends SubtitleFilter {
+
+private final long maxTime;
+
+public MaxFilter(long maxTime) {
+this.maxTime = maxTime;
+while (hasNextEntry()) {
+Entry next = nextEntry();
+if (next.length() > maxTime) {
+removeLastEntry();
+}
+}
+}
+}
+

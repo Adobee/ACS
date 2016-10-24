@@ -1,0 +1,9 @@
+import java.io.UnsupportedEncodingException;
+
+public class UrlUtil {
+
+public static String encodeUrlPathSegment(final String pathSegment, final HttpServletRequest httpServletRequest) {
+String encodedPathSegment = pathSegment;
+String enc = httpServletRequest.getCharacterEncoding();
+if (null == enc) {
+

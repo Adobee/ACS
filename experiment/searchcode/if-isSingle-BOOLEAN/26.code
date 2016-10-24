@@ -1,0 +1,12 @@
+private String[] exts;
+private boolean isSingle;
+
+public ExtensionFilter(String extension) {
+this.extension = extension;
+this.isSingle = false;
+}
+
+@Override
+public boolean accept(File dir, String name) {
+// ignore case in name string
+

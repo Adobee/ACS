@@ -1,0 +1,13 @@
+Title daoTitle = dao.findTitleByID(title.getImdbID());
+if(daoTitle!=null){
+rateTitle = dao.rateTitle(title);
+}
+else{
+throw new TitleNotFoundException();
+throw new UnauthorizedException();
+}
+
+Title newTitle = null;
+Title daoTitle = dao.findTitleByID(title.getImdbID());
+if(daoTitle==null){
+

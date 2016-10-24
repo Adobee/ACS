@@ -1,0 +1,8 @@
+try {
+tokenNum = Double.parseDouble(token);
+} catch(NumberFormatException e) { }
+if (tokenNum != null) {
+stack.push(tokenNum);
+} else if (token.equals(&quot;*&quot;)) {
+double second = stack.pop();
+

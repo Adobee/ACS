@@ -1,0 +1,12 @@
+AccountState state = byIdCache.getByUsername(
+keyValue.substring(keyScheme.length()));
+if (state != null) {
+byEmailCache.evict(newEmail);
+}
+if (toUpdate != null) {
+byIdCache.evict(toUpdate.getId());
+}
+}
+
+private Account load(Account toUpdate, Account.Id accountId, ReviewDb db)
+

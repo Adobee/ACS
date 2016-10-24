@@ -1,0 +1,5 @@
+p1 = p1.substring(p1.lastIndexOf(&quot;/&quot;) + 1);		//	p1473298817.jpg
+p2 = p2.substring(p2.lastIndexOf(&quot;/&quot;) + 1);
+if (p1.matches(regex) &amp;&amp; p2.matches(regex)) {
+long i1 = Long.parseLong(p1.substring(1,p1.lastIndexOf(&quot;.&quot;)));	//1473298817
+

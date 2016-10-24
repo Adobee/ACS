@@ -1,0 +1,13 @@
+* 32 booleans: 1 is true, 0 is false. An generated int is only used once. A new one is generated when
+* needed.
+*/
+class RandomBoolean {
+
+ThreadLocalRandom localRandom = ThreadLocalRandom.current();
+
+public RandomBoolean() {
+n = localRandom.nextLong();
+bit = 0;
+}
+private long n; // generated number
+

@@ -1,0 +1,7 @@
+public class Solution {
+public boolean isValidSudoku(char[][] board) {
+boolean[][] row=new boolean[9][9];
+if(board[i][j]!=&#39;.&#39;){
+int x=board[i][j]-&#39;1&#39;;
+if(row[i][x]||col[j][x]||cell[(j/3)*3+i/3][x]){
+

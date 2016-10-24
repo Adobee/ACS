@@ -1,0 +1,6 @@
+String[] blockRows = blockSource.split(&quot;,&quot;);
+blocks = new int[blockRows.length][blockRows[0].length()];
+for (int i = 0; i < blockRows.length; i++) {
+String blockRow = blockRows[i];
+for (int j = 0; j < blockRow.length(); j++) {
+

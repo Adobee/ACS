@@ -1,0 +1,13 @@
+double prevX = x1;
+double prevY = y1;
+double[][] trendPoint = new double[1][2];
+
+this.slope = (currY-prevY)/(currX-prevX);
+//System.err.println(&quot;slope - &quot;+slope);
+
+
+if((slope<0)&amp;&amp;(slope>-1)&amp;&amp;(slope<-.01))
+{
+
+yList =  new ArrayList<double[][]>();
+

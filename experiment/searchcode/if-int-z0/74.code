@@ -1,0 +1,8 @@
+public static int mand(Complex z0) {
+Complex z = z0;
+for (int t = 0; t < 30; t++) {
+if (z.abs() > 2.0) return t;
+z = z.times(z).plus(z0);
+}
+return 30;
+

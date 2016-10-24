@@ -1,0 +1,8 @@
+return Float.parseFloat((String) value);
+
+if (Boolean.class.equals(toClass) || Boolean.TYPE.equals(toClass))
+return &quot;&quot; + value;
+
+if (value instanceof Boolean &amp;&amp; toClass.equals(String.class))
+return &quot;&quot; + value;
+

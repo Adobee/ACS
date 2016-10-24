@@ -1,0 +1,9 @@
+Session() {
+}
+
+synchronized void updateCookie(Set<Cookie> addCookies) {
+if (addCookies.isEmpty()) {
+Set<Cookie> newCookies = new HashSet<>();
+for (Cookie cookie : cookies) {
+if (!cookie.expired(now) &amp;&amp; !addCookies.contains(cookie)) {
+

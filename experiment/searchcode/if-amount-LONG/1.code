@@ -1,0 +1,12 @@
+return balance;
+}
+
+public void deposit(long amount) {
+checkAmountNonNegative(amount);
+balance += amount;
+}
+
+public void withdraw(long amount) {
+checkAmountNonNegative(amount);
+if (balance < amount) {
+

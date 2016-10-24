@@ -1,0 +1,8 @@
+* testRequest.getMaxRetries and controled by the failWithRejection parameter.
+*/
+private void bulkRetryTestCase(boolean failWithRejection) throws Exception {
+request.add(new IndexRequest(&quot;index&quot;, &quot;type&quot;, &quot;id&quot; + i));
+}
+action.sendBulkRequest(request);
+if (failWithRejection) {
+

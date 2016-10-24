@@ -1,0 +1,5 @@
+public static boolean leftOfTheLine(double x0, double y0, double x1, double y1, double x2, double y2) {
+if (getPosition(x0, y0, x1, y1, x2, y2) > 0) {
+public static boolean rightOfTheLine(double x0, double y0, double x1, double y1, double x2, double y2) {
+if (getPosition(x0, y0, x1, y1, x2, y2) < 0) {
+

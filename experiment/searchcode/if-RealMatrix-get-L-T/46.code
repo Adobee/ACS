@@ -1,0 +1,15 @@
+output = InputHelper.createZeroMatrix(1, numNodes);
+}
+
+public void calculateOutput(RealMatrix input) {
+
+clearResults();
+
+if (w == null) {
+w = InputHelper.createRandomMatrix(input.getColumnDimension() + 1, numNodes, -1, 1);
+}
+
+RealMatrix preG = getInputWithBias(input).multiply(w);
+double g = 0;
+for (int nodeIndex = 0; nodeIndex < this.numNodes; nodeIndex++) {
+

@@ -1,0 +1,8 @@
+public Sin(double sinValue, Quadrant quadrant) {
+if (Math.abs(sinValue) > 1) {
+throw new IllegalArgumentException(&quot;Absolute value of sin must be less or equal to 1. sin = &quot; + sinValue);
+@Override
+public int compareTo(Object other) {
+Sin otherSin = (Sin) other;
+Quadrant otherQuadrant = otherSin.getQuadrant();
+

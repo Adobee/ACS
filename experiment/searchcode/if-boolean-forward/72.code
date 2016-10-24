@@ -1,0 +1,17 @@
+private boolean isForwardOrder;
+
+public FieldComparator(boolean isForwardOrder) {
+this.isForwardOrder = isForwardOrder;
+if (o1 == o2)
+return 0;
+if (o1 == null)
+return 1;
+if (o2 == null)
+return -1;
+if (isForwardOrder)
+return o1.compareTo(o2);
+return o2.compareTo(o1);
+}
+
+}
+

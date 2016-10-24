@@ -1,0 +1,9 @@
+public int diff21(int n) {
+
+int diff = n-21;
+
+if(diff>0) return diff*2;
+else return -diff;
+
+}
+

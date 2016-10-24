@@ -1,0 +1,11 @@
+return orig_val;
+}
+
+private OpBGP dispatch(Op op) {
+if(op instanceof Op0)
+return xform((Op0) op);
+
+if(op instanceof Op1) {
+Op1 op1 = (Op1)op;
+return xform(op1,op1.getSubOp());
+

@@ -1,0 +1,8 @@
+public class NetworkStorageTest extends BaseStorageTest<NetworkStorage>  {
+
+private HttpUrl baseUrl;
+
+@NonNull
+static NetworkStorage createNetworkStorage(final HttpUrl baseUrl) throws IOException {
+UrlResolver urlResolver = Mockito.mock(UrlResolver.class);
+

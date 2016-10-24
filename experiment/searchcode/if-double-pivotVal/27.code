@@ -1,0 +1,9 @@
+protected static RobotMap RM = new RobotMap();
+protected static Watchdog wd;
+double pivotval;
+double[] drivemotorvalues;
+while (isAutonomous()) {
+wd.feed();
+if (autonomfcount == 4) {
+for (double it = 0; it <= 8; it++) {
+

@@ -1,0 +1,7 @@
+private static volatile CountDownLatch keepAliveLatch;
+private static Bootstrap bootstrap;
+
+private void setup(boolean addShutdownHook, Tuple<Settings, Environment> tuple) throws Exception {
+if (tuple.v1().getAsBoolean(&quot;bootstrap.ctrlhandler&quot;, true)) {
+Natives.addConsoleCtrlHandler(new ConsoleCtrlHandler() {
+

@@ -1,0 +1,9 @@
+ChatMembersPanel membersPanel = gui.getMembersPanel();
+if (isJoinMessage(message)) {
+String memberName = message.substring(5);
+if (!isMyself(gui, memberName)) {
+membersPanel.addMember(memberName);
+}
+} else {
+int secondSpace = message.indexOf(&quot; &quot;, 4);
+

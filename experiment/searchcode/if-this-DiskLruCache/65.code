@@ -1,0 +1,9 @@
+public BitmapAsyncTask(DiskLruCache diskLruCache) {
+this.diskLruCache = diskLruCache;
+}
+
+public interface OnCompletedListener {
+//          bitmap = BitmapFactory.decodeStream(bis);不能这样写，这样的话bis的数据会被bitmap拿走了
+DiskLruCache.Editor editor = diskLruCache.edit(key);
+if (editor != null) {
+

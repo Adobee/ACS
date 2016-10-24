@@ -1,0 +1,13 @@
+
+public class GameOfLife {
+public void gameOfLife(int[][] board) {
+if (board == null || board.length == 0 || board[0].length == 0) {
+board[row][col] = board[row][col] >> 1;
+}
+}
+}
+
+private int liveNeighbor(int[][] board, int row, int col) {
+int result = 0;
+if (row-1 >= 0 &amp;&amp; col-1 >= 0) {
+

@@ -1,0 +1,8 @@
+Primes primes = new Primes();
+primes.head(5); // drop until 5
+
+long p1 = primes.current(), p2 = primes.next();
+long tenpower = 10;
+while (p1 < 1000000) {
+if (tenpower < p1) {
+

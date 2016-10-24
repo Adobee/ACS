@@ -1,0 +1,12 @@
+CustomEventHandler eventHandler = new CustomEventHandler(model.getvPeak(), model.getC(), model.getD());
+
+
+/*
+* Event handler parameters : IMPORTANT!!
+*/
+double maxCheckInterval = 0.01; // maximal time interval between switching function checks
+public Action eventOccurred(double t, double[] y, boolean increasing) {
+//epspTime = 100000;
+//if(!increasing)
+return Action.RESET_STATE;
+

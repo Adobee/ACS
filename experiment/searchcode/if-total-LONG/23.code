@@ -1,0 +1,8 @@
+private static Long calculateTotalPage(Long totalRecord){
+if(totalRecord==null||totalRecord<=0){
+return Long.valueOf(0);
+}
+if(totalRecord % pageSize==0){
+return totalRecord / pageSize;
+}else{
+

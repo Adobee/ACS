@@ -1,0 +1,6 @@
+long xl = Double . doubleToRawLongBits ( x . val ) ; long yl = Double . doubleToRawLongBits ( y . val ) ; return new LDouble ( Double . longBitsToDouble ( xl &amp; yl ) ) ;
+}
+
+public Estimate estimate(Estimate inputs[]) {
+if ( x . isConstant ( ) &amp;&amp; y . isConstant ( ) ) { double v = x . getCValue ( ) . val / y . getCValue ( ) . val ; return new Estimate_d ( v , v ) ; } else if ( y . getMinimum ( ) > 0 || y . getMaximum ( ) < 0 ) { double xmax = x . getMaximum ( ) ; double xmin = x . getMinimum ( ) ; double ymax = y . getMaximum ( ) ; double ymin = y . getMinimum ( ) ; double a = xmax / ymax ; double b = xmin / ymax ; double c = xmax / ymin ; double d = xmin / ymin ; double min = Math . min ( Math . min ( a , b ) , Math . min ( c , d ) ) ; double max = Math . max ( Math . max ( a , b ) , Math . max ( c , d ) ) ; return new Estimate_d ( min , max ) ; } else return new Estimate_d ( ) ;
+

@@ -1,0 +1,10 @@
+public static UptimeGrade createUptimeGrade(List<ResultsSummary> buildList) {
+if(buildList == null || buildList.size() <= 0){
+return new UptimeGrade(null, 0, false, null);
+currentBuildIndex++;
+}
+
+// Calculate the uptime starting from the current build.
+long totalUptime = 0;
+if(currentBuildDate != null){
+

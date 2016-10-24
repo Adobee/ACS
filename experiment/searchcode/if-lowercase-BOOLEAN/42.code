@@ -1,0 +1,8 @@
+public abstract class Nucleotide<E> {
+
+private final Base base;
+private final BooleanProperty lowerCase = new SimpleBooleanProperty(this, &quot;lowerCase&quot;);
+Nucleotide(Base base, boolean lowerCase) {
+this.base = base;
+this.lowerCase.setValue(lowerCase);
+

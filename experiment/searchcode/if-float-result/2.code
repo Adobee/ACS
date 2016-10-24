@@ -1,0 +1,14 @@
+s = (max-min) / (2 - (max+min)); //(max-min > 0)?
+}
+
+float[] result = new float[4];
+result[0] = h;
+result[1] = s;
+result[2] = l;
+result[3] = a;
+float[] result = new float[4];
+if (s == 0) {
+result[0] = l;
+result[1] = l;
+result[2] = l;
+

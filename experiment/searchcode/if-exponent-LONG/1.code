@@ -1,0 +1,11 @@
+static long fastPower(long base, long exponent) {
+if (exponent == 0)
+return 1;
+long x = fastPower(base, exponent >> 1);
+x = x * x % mod;
+if ((exponent &amp; 1) != 0)
+x = x * base % mod;
+return x;
+}
+}
+

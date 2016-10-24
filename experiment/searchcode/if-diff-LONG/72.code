@@ -1,0 +1,14 @@
+long rightSum = sum - leftSum;
+long minDiff = Math.abs(leftSum - rightSum);
+for (int i = 2; i < A.length; i++) {
+long diff = Math.abs(leftSum - rightSum);
+
+if (diff < minDiff) {
+minDiff = diff;
+}
+}
+
+return (int)minDiff;
+}
+}
+

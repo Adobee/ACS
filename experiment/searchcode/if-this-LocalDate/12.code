@@ -1,0 +1,10 @@
+public DMCal15Rule(int year, Set<Holiday> holidayList) {
+this.year = year;
+this.holidays = holidayList;
+}
+
+@Override
+public List<LocalDate> getResults() {
+private LocalDate getWorkday15(LocalDate localDate) {
+if (localDate.getDayOfWeek() == DateTimeConstants.SATURDAY) {
+

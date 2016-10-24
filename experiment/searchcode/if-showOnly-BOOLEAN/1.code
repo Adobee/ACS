@@ -1,0 +1,11 @@
+private int result = CANCEL_OPTION;
+
+private JEditorPane licensePane;
+
+private URL licenseURL;
+private boolean showOnly = false;
+private LicenseAgreementDialog(Window parent, String pluginName, URL licenseURL,
+boolean showOnly) {
+super(parent);
+if (parent instanceof Dialog || parent instanceof Frame) {
+

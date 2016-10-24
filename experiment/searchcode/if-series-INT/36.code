@@ -1,0 +1,6 @@
+public boolean addSeries(Series series){
+Brand brand = brandService.queryBrandById(Integer.valueOf(series.getOfOrigin()));
+if(brand == null)
+List<Series> list = seriesDao.querySeriesAccurateForName(series);
+if(list != null &amp;&amp; list.size() >= 1)
+

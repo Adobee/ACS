@@ -1,0 +1,6 @@
+/* Can&#39;t do that since MavenModuleSet is in maven-plugin artefact which is in test scope
+if(build.getProject() instanceof MavenModuleSet){
+buildName = ((MavenModuleSet)build.getProject()).getRootModule().toString();
+// Link to build infos will be provided only if build result has not been purged
+// @see issue #7240
+

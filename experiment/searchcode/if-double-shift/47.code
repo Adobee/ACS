@@ -1,0 +1,12 @@
+private int shift;
+private double hourlyPay;
+
+ProductionWorker() {
+
+}
+
+ProductionWorker(int shift, double hourlyPay, String name, String empNum, Date hireDate) throws InvalidPayRate, InvalidShift, InvalidEmployeeNumber {
+if (hourlyPay < 0) {
+throw new InvalidPayRate();
+// Throws an exception if the shift is not a 1 or a two.
+

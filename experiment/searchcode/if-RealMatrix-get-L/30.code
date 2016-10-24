@@ -1,0 +1,10 @@
+PhaseIResult phaseIResult = phaseI(A, b, B, d);
+if (phaseIResult.feasible) {
+fprintf(&quot;Phase II:\n\n&quot;);
+RealMatrix x0 = phaseIResult.optimizer;
+double t_sum_of_inequalities = toc();
+
+RealMatrix x_opt = getRows(x, 0, n_ori - 1);
+fprintf(&quot;x_opt:\n&quot;);
+disp(x_opt.transpose());
+

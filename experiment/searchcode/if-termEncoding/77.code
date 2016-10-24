@@ -1,0 +1,8 @@
+import org.apache.lucene.spatial.geopoint.document.GeoPointField.TermEncoding;
+import org.apache.lucene.spatial.util.GeoDistanceUtils;
+public GeoPointDistanceQuery(final String field, final double centerLon, final double centerLat, final double radiusMeters) {
+this(field, TermEncoding.PREFIX, centerLon, centerLat, radiusMeters);
+}
+
+public GeoPointDistanceQuery(final String field, final TermEncoding termEncoding, final double centerLon, final double centerLat, final double radiusMeters) {
+

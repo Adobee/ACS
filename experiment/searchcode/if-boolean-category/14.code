@@ -1,0 +1,13 @@
+public final class CategoryDao extends GenericJpaDao<Integer, Category> {
+@Override
+public Category save(Category categoryToSave) {
+
+if (isNewCategory(categoryToSave)) {
+return null;
+}
+
+private static boolean isNewCategory(Category category) {
+return category.getId() == Category.DEFAULT_ID;
+}
+}
+

@@ -1,0 +1,7 @@
+private void placeQueen(int rowIndex, int n, int[] queenAddr){
+if(rowIndex == n){
+this.result ++;
+int num = rowIndex * n + column;
+for(int i = 0; i < rowIndex; i++){
+if((num % n) == (queenAddr[i] % n)){
+

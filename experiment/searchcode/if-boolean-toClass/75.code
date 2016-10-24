@@ -1,0 +1,13 @@
+private <From, To> To doMapping(final Class<To> toClass, From from, String mappingName, MappingType mappingType, boolean hasFullAutoParent, To nonFinalTo) {
+
+final boolean hasFullAutoParentFinal;
+
+if (from == null) return null;
+
+if (from instanceof CustomMappingWrapper) {
+nonFinalTo = orikaMapper.map(from, toClass);
+
+hasFullAutoParentFinal = true;
+
+} else if (nonFinalTo == null){
+

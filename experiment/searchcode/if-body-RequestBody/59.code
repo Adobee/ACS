@@ -1,0 +1,13 @@
+return this;
+}
+
+public OtherRequestBuilder requestBody(String content) {
+if (content != null)
+requestBody = RequestBody.create(MediaType.parse(&quot;text/plain;charset=utf-8&quot;), content);
+return this;
+}
+
+@Override
+protected RequestBody buildRequestBody() {
+if (requestBody == null &amp;&amp; HttpMethod.requiresRequestBody(method)) {
+

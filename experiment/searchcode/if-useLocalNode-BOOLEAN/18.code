@@ -1,0 +1,9 @@
+// will not get this callback called on the connections done in this setup
+final boolean useLocalNode = randomBoolean();
+final CountDownLatch latch = new CountDownLatch(useLocalNode ? 2 : 4);
+serviceA.addConnectionListener(waitForConnection);
+serviceB.addConnectionListener(waitForConnection);
+
+if (useLocalNode) {
+logger.info(&quot;--> using local node optimization&quot;);
+

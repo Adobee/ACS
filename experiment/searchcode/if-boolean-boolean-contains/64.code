@@ -1,0 +1,9 @@
+public class Solution {
+public boolean canWin(String s) {
+return canWin(s, new HashMap<String, Boolean>());
+private boolean canWin(String s, Map<String, Boolean> map){
+if(map.containsKey(s)){
+return map.get(s);
+}
+for(int i = 0; i < s.length() - 1; i ++){
+

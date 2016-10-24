@@ -1,0 +1,9 @@
+public final class ImmutableInstant implements Instant {
+
+public static ImmutableInstant create(long aClockTime) {
+return new ImmutableInstant(aClockTime);
+}
+
+public static ImmutableInstant create(Instant anInstant) {
+if (anInstant == null)
+

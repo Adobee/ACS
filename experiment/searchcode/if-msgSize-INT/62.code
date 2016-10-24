@@ -1,0 +1,9 @@
+synchronized (lock) {
+int curLen = end_cursor - start_cursor;
+if (curLen >= 4) {
+byte[] msgHead = new byte[] { msg[start_cursor], msg[start_cursor + 1], msg[start_cursor + 2],
+msg[start_cursor + 3] };
+int msgSize = 0;//MessageFormat.decodeHeader(msgHead);
+
+if (curLen >= msgSize + 4) {
+

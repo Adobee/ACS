@@ -1,0 +1,12 @@
+private Entry<IValue, IValue>[] data;
+
+private int threshold;
+
+private int load;
+
+private int currentHashCode;
+modSize = INITIAL_LOG_SIZE;
+int tableSize = 1 << modSize;
+hashMask = tableSize - 1;
+data = (Entry<IValue, IValue>[]) new Entry[tableSize];
+

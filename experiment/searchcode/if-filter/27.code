@@ -1,0 +1,9 @@
+public boolean equals(Object o)
+{
+if (this == o) return true;
+if (!(o instanceof NotFilter)) return false;
+
+NotFilter notFilter = (NotFilter) o;
+
+if (filter != null ? !filter.equals(notFilter.filter) : notFilter.filter != null) return false;
+

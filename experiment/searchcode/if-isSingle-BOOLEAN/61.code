@@ -1,0 +1,17 @@
+descriptors = (PropertyDescriptor[]) v.toArray( new PropertyDescriptor[v.size()] );
+
+}
+
+boolean isSingle() {
+return list.size()<=1;
+}
+
+public int getRowCount() {
+return isSingle() ? list.size() + 1 : (descriptors != null ? descriptors.length : 0);
+}
+
+public Object getValueAt(int row, int col) {
+if(isSingle()) {
+if(col==0) {
+return descriptors[row].getDisplayName();
+

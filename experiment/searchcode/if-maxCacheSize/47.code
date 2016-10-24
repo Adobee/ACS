@@ -1,0 +1,10 @@
+public TTotalSizeLimitedDiscCache(File cacheDir, int maxCacheSize) {
+this(cacheDir, TCacheManager.createFileNameGenerator(), maxCacheSize);
+}
+
+public TTotalSizeLimitedDiscCache(File cacheDir,
+TIFileNameGenerator fileNameGenerator, int maxCacheSize) {
+super(cacheDir, fileNameGenerator, maxCacheSize);
+if (maxCacheSize < 2097152)
+TLog.w(this, String.format(
+

@@ -1,0 +1,14 @@
+queryBuilder.append(&quot;LIMIT &quot;);
+queryBuilder.append(limit);
+
+try {
+Cursor cursor = db.rawQuery(queryBuilder.toString(), null);
+
+if (cursor != null) {
+queryBuilder.append(&quot;ORDER BY `hidden`.`_id` ASC &quot;);
+
+try {
+Cursor cursor = db.rawQuery(queryBuilder.toString(), null);
+
+if (cursor != null) {
+

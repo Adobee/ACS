@@ -1,0 +1,10 @@
+private void testDataset(Dataset ta) {
+IndexIterator iter = new StrideIterator(ta.getElementsPerItem(), ta.getShape());
+double[] data = (double[]) ta.getBuffer();
+for (int i = 0; iter.hasNext(); i++) {
+assertEquals(i, ta.getDouble(pos), 1e-5*i);
+}
+
+iter.reset();
+for (int i = 0; iter.hasNext(); i++) {
+

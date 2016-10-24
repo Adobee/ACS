@@ -1,0 +1,12 @@
+return this.store;
+}
+
+/**
+* returns true if this shard supports indexing (i.e., write) operations.
+*/
+public boolean canIndex() {
+index = indexingOperationListeners.preIndex(index);
+final boolean created;
+try {
+if (logger.isTraceEnabled()) {
+

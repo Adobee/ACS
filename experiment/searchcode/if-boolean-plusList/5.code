@@ -1,0 +1,7 @@
+private AbstractStackNode buildStackNode(AbstractSymbol symbol, boolean endNode){
+if(symbol instanceof Epsilon){
+return new EpsilonStackNode(++idCounter, endNode, symbol.beforeFilters, symbol.afterFilters);
+AbstractStackNode child = buildStackNode(plusList.symbol, true);
+AbstractSymbol[] separatorSymbols = plusList.separators;
+if(separatorSymbols.length == 0){
+

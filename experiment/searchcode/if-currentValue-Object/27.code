@@ -1,0 +1,9 @@
+this.previousValue = lowValue;
+}
+public T oneShot(T currentValue)
+{
+//If T is Integer, Double, etc., .equals will compare by value, not by object
+if(!currentValue.equals(previousValue))
+{
+System.out.println(&quot;Hit: &quot; + currentValue + &quot;Previous Value: &quot; + previousValue);
+

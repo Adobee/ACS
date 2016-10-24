@@ -1,0 +1,10 @@
+public abstract class BaseInput extends BaseObject implements Input{
+
+@Override
+public List<Object> read(int size) {
+return read(this,size);
+List<Object> result = new ArrayList<Object>();
+for(int i = 0; i < size; i++) {
+Object obj = input.readObject();
+if(obj == null) {
+

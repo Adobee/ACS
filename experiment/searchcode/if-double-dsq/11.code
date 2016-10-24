@@ -1,0 +1,6 @@
+List<EntityLiving> list = worldObj.getEntitiesWithinAABB(EntityLiving.class, AABBUtils.getAreaBoundingBox(explosionX, explosionY, explosionZ, 16));
+for (EntityLiving ent : list) {
+double distance = ent.getDistance(explosionX, explosionY, explosionZ) / explosionSize;
+double dsq = MathHelper.sqrt_double(dx * dx + dy * dy + dz * dz);
+if (dsq != 0.0D) {
+

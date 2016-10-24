@@ -1,0 +1,10 @@
+public class EarnCuts {
+
+final static Logger logger = Logger.getLogger(EarnCuts.class);
+
+@POST
+@Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+logger.debug(&quot;ettId : &quot; + ettId+&quot;| url : &quot;+url+&quot; | title : &quot;+title);
+
+String query = &quot;insert into EarnCutsClicks (ettId,createdTime,url,appName) values (?,now(),?,?)&quot;;
+

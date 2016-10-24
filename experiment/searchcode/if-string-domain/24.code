@@ -1,0 +1,9 @@
+import com.hung.auction.domain.IntegerDomainSetting;
+import com.hung.auction.domain.StringDomainSetting;
+import com.hung.auction.service.DomainService;
+this.domainService = domainService;
+this.domainSettingDAO = domainSettingDAO;
+}
+
+public StringDomainSetting getDomainSettingFromCache(String settingName, String domainName) {
+

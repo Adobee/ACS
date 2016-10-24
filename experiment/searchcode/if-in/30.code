@@ -1,0 +1,19 @@
+package hardware;
+
+public class SignExtender {
+
+public String extend(String in){
+
+String a;
+if (in.charAt(0)==&#39;0&#39;)
+a=&quot;0&quot;;
+else
+a=&quot;1&quot;;
+while(in.length()<32){
+in = a+in;
+}
+
+return in;
+}
+}
+

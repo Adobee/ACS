@@ -1,0 +1,6 @@
+import org.openrdf.query.impl.FallbackDataset;
+import org.openrdf.query.parser.ParsedQuery;
+public Dataset getActiveDataset() {
+if (dataset != null) {
+return FallbackDataset.fallback(dataset, parsedQuery.getDataset());
+

@@ -1,0 +1,12 @@
+public void setEyeProjection(Matrix4 projection) {
+this.projection.set(projection);
+}
+
+final Matrix4 tmpMatrix = new Matrix4();
+final Vector3 tmpVec = new Vector3();
+combined.set(projection);
+Matrix4.mul(combined.val, tmpMatrix.val);
+
+if (updateFrustum) {
+invProjectionView.set(combined);
+

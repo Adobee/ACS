@@ -1,0 +1,10 @@
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Properties;
+
+import org.apache.ibatis.executor.parameter.ParameterHandler;
+PreparedStatement prepareStatement = connection.prepareStatement(countSql);
+parameterHandler.setParameters(prepareStatement);
+ResultSet rs = prepareStatement.executeQuery();
+int count = 0;
+

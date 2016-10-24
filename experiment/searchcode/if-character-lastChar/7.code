@@ -1,0 +1,8 @@
+private char lastChar = &#39;\0&#39;;  // The last character
+
+/**
+* Returns if the character is escaped
+* Note create new instance for every independent string
+* @param currChar The current character.
+* @return true if the character is escaped, false if not.
+

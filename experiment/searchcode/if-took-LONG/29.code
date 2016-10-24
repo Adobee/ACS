@@ -1,0 +1,10 @@
+import org.apache.commons.lang.mutable.MutableLong;
+
+public class TookPhasedFileQueue {
+
+private final static MetricLogger logger = MetricLoggerFactory.getLogger();
+private final UniqueOrderableFileName queueId;
+private final FileQueue took;
+private final AtomicLong approximateCount;
+private final AtomicLong consumedCount;
+

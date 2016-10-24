@@ -1,0 +1,12 @@
+public SameShiftOnWeekend() {
+crime = new LocalizationUnit(&quot;crime.SameShiftOnWeekend&quot;);
+}
+
+@Override
+protected boolean isOffender(Shift shift, Set<Shift> shifts) {
+return shift.getZaciatok().getDayOfWeek().equals(DayOfWeek.SUNDAY);
+}
+
+private boolean isCounterpart(Shift shift, Shift test) {
+if ((isSaturday(shift) &amp;&amp; isSunday(test)) ||
+

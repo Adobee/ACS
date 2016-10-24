@@ -1,0 +1,6 @@
+final AxisBuilder<?> valuesAxisBuilder = getLineChart().getValuesAxisBuilder();
+
+// Rebuild line for series values
+final List<? extends AxisValue<?>> valuesAxisValues = valuesAxisBuilder.getValues(series.getValuesAxisProperty());
+final List<? extends AxisValue<?>> categoryAxisValues = categoriesAxisBuilder.getValues(getLineChart().getData().getCategoryAxisProperty());
+

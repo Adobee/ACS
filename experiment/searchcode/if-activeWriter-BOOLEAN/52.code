@@ -1,0 +1,9 @@
+* The active writer or <code>null</code> if there is none.
+*/
+private WriteLockImpl activeWriter;
+
+private volatile Object activeWriterId;
+try {
+if (activeWriter == null
+|| !hasDependency(activeWriter.changes, id)) {
+

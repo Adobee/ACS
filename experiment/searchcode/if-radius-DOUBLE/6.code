@@ -1,0 +1,11 @@
+
+class Circle {
+private Point o;
+private double radius;
+Circle(Point p, double r) {
+o = p;
+radius = r;
+}
+Circle(double r) {
+o = new Point(0.0, 0.0);
+

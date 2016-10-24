@@ -1,0 +1,8 @@
+((CustomAnalyzerProvider) analyzerFactory).build(this);
+}
+Analyzer analyzerF = analyzerFactory.get();
+if (analyzerF == null) {
+NamedAnalyzer analyzer;
+// if we got a named analyzer back, use it...
+if (analyzerF instanceof NamedAnalyzer) {
+

@@ -1,0 +1,5 @@
+private static final long ONE_SECOND_MILLIS = 1000;
+private static final long ONE_MINUTE_MILLIS = ONE_SECOND_MILLIS * 60;
+private static final long ONE_HOUR_MILLIS   = ONE_MINUTE_MILLIS * 60;
+private static final long ONE_DAY_MILLIS    = ONE_HOUR_MILLIS   * 24;
+

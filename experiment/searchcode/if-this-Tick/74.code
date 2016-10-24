@@ -1,0 +1,14 @@
+public void setTickInterval(int tickInterval) {
+this.tickInterval = tickInterval;
+}
+public int getMaxInterval() {
+return step;
+}
+public void setStep(long step) {
+this.step = step;
+}
+
+public Tick(){
+tickCount++;
+timer=new Timer(tickInterval,new ActionListener(){
+

@@ -1,0 +1,10 @@
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Properties;
+
+import org.apache.ibatis.executor.parameter.ParameterHandler;
+System.out.println(&quot;parameterHandler &quot;+JSON.toJSONString(parameterHandler));
+parameterHandler.setParameters(preparedStatement);
+//执行sql，获取结果
+ResultSet rs = preparedStatement.executeQuery();
+

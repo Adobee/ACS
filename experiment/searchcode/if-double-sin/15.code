@@ -1,0 +1,17 @@
+//Not planning on doing an inverse function for now
+//az23
+public class SinTable{
+double[] sinTable;
+
+
+public double sin(int angle){
+if(angle > -1 &amp;&amp; angle < 360){
+int t = angle + 90;
+if(t>359){
+t = t - 360;
+}
+if(t > -1 &amp;&amp; t < 360){
+return sinTable[t];
+}
+else{
+

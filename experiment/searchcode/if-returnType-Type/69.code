@@ -1,0 +1,6 @@
+throws Throwable {
+Class<?> returnType = method.getReturnType();
+if (returnType.isAssignableFrom(Number.class) || returnType.isAssignableFrom(int.class)) {
+return 0;
+} else if (returnType.isAssignableFrom(Boolean.class) || returnType.isAssignableFrom(boolean.class)) {
+

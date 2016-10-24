@@ -1,0 +1,12 @@
+public TrueRealSemiring() {
+
+}
+public double plus(double a, double b) {
+return a+b;
+}
+public double minus(double a, double b) {
+return 1/a;
+}
+// can be infinity if divergent (i.e. if < 0)!
+public double star(double a) throws UnusualConditionException {
+

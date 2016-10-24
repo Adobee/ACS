@@ -1,0 +1,7 @@
+/*  58 */     Chronology localChronology = ((ReadableInstant)paramObject).getChronology();
+/*  59 */     if (localChronology == null) {
+/*  60 */       return ISOChronology.getInstance(paramDateTimeZone);
+/*     */     }
+/*  62 */     DateTimeZone localDateTimeZone = localChronology.getZone();
+/*  63 */     if (localDateTimeZone != paramDateTimeZone) {
+

@@ -1,0 +1,9 @@
+Iterator<SelectionKey> iterable = set.iterator();
+while (iterable.hasNext()) {
+SelectionKey key = iterable.next();
+if (key.isReadable()) {
+System.out.println(&quot;客户端向服务器端读取数据--：&quot; + new String(sendBuffer.array()));
+socketChannel.register(selector, SelectionKey.OP_WRITE);
+
+} else if (key.isWritable()) {
+

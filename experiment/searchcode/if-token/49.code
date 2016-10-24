@@ -1,0 +1,8 @@
+TokenNavigation tokenNavigation = new TokenNavigation();
+setTokenIndex(tokenNavigation, tokenDTOs, selectedTokenId);
+if (tokenNavigation.getTokenIndex() != null)
+private void setTokenKey ( TokenNavigation tokenNavigation, List<TokenDTO> tokenDTOs )
+{
+if (tokenNavigation.getTokenIndex() == null) return;
+String tokenKey = tokenDTOs.get(tokenNavigation.getTokenIndex()).getKey();
+

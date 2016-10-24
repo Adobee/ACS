@@ -1,0 +1,17 @@
+private static void validate(long theLong) {
+long high = theLong >>> 32;
+long low = 0xffffffffL &amp; theLong;
+
+if(high != low) {
+System.err.println(&quot;Concurrency issue detected. Read: 0x&quot; + Long.toHexString(theLong) + &quot;L&quot;);
+System.exit(1);
+}
+}
+
+protected void setGlobal(long id) {
+global = id;
+
+validate(global);
+}
+}
+

@@ -1,0 +1,14 @@
+public class MultiServoState extends Thread {
+TwoWaySerialComm serialCom;
+int currentPos[];
+
+/**
+* コンストラクタ
+*
+* @param input_sc
+public void initServo() {
+currentPos = new int[5];
+synchronized (this) {
+// 100を中心に定めた
+serialCom.sendMessage(&quot;100 100 100 100 100&quot;);
+

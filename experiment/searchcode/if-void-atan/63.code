@@ -1,0 +1,13 @@
+private static double atan(double ratio) {
+if (ratio < 0) {
+int index = (int) (-ratio * ATAN_RESOLUTION);
+if (index >= ATAN_TABLE_LENGTH)
+int index = (int) (ratio * ATAN_RESOLUTION);
+if (index >= ATAN_TABLE_LENGTH)
+return 90;
+
+return ATAN_TABLE[index];
+}
+
+public static double atan(double y, double x) {
+

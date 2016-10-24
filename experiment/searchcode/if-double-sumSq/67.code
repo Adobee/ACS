@@ -1,0 +1,8 @@
+public static void main(String[] args){
+int tempno=0;
+int min, max;
+double s,sumsq = 0.0, average = 0.0;
+sum = sum + tempno;
+sumsq = sumsq + Math.pow(tempno, 2.0);
+double inner =  (sumsq - (Math.pow(sum, 2.0)/counter))/(counter-1);
+

@@ -1,0 +1,13 @@
+package com.podts.solarserver.economy;
+
+public class Credits {
+
+private long amount, max = -1;
+public void giveCredits(long c) {
+amount += c;
+if (amount > max &amp;&amp; max > 0)
+amount = max;
+}
+
+public void takeCredits(long c) {
+

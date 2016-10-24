@@ -1,0 +1,8 @@
+public class Solution {
+public int lengthOfLongestSubstring(String s) {
+if (s == null || s.length() == 0) {
+int maxValue = Integer.MIN_VALUE;
+int startIndex = 0;
+int endIndex = 0;
+while (endIndex < s.length()) {
+

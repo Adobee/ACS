@@ -1,0 +1,10 @@
+for(col=0; col<n; col++){
+if(!isConflicted(placedQueens, row, col, n)){
+placedQueens[row] = col;
+solveR(placedQueens, row+1, n, result);
+}
+}
+}
+
+//check if conflicted with other queens
+

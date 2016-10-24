@@ -1,0 +1,10 @@
+public class CalDay {
+public CalWeek week;
+public int day;
+
+public CalDay (CalWeek week, int day) throws WrongInputException {
+this.week=week;
+this.day=day;
+
+if (day<1 || day>7) throw new WrongInputException (&quot;Weekday has to be a number between 1 and 7&quot;);
+

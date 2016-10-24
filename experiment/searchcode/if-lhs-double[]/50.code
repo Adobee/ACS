@@ -1,0 +1,10 @@
+public int compare(Point lhs, Point rhs) {
+int result = Double.compare(lhs.getY(), rhs.getY());
+if (result == 0) {
+result = Double.compare(lhs.getX(), rhs.getX());
+}
+return result;
+
+/*
+if (lhs.getY() < rhs.getY()) {
+

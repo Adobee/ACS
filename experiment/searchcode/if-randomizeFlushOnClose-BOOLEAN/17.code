@@ -1,0 +1,7 @@
+final class MockInternalEngine extends InternalEngine {
+private MockEngineSupport support;
+private final boolean randomizeFlushOnClose;
+public void flushAndClose() throws IOException {
+if (randomizeFlushOnClose) {
+switch (support().flushOrClose(MockEngineSupport.CloseAction.FLUSH_AND_CLOSE)) {
+

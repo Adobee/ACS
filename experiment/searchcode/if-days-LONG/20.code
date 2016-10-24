@@ -1,0 +1,13 @@
+private static final int DEFAULT_STAY_DAYS = 1;
+
+private Long hotelId;
+
+private Integer days;// 入住天数
+public Long getHotelId() {
+return hotelId;
+* 获取入住天数,如果数据库中取不到有效值,则取默认值:一天.
+* @return 返回入住天数.
+*/
+public Integer getDays() {
+if (days == null || days == 0) {
+

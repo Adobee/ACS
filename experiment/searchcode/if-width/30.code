@@ -1,0 +1,15 @@
+import java.awt.Toolkit;
+import java.util.ArrayList;
+
+abstract class RoadBlock
+{
+static final int WIDTH=16;
+abstract void draw(Graphics g);
+}
+
+class Wall extends RoadBlock
+{
+private static int[][] HEARTMAP=
+{
+{6*WIDTH,0},{7*WIDTH,0},{8*WIDTH,0},{18*WIDTH,0},{19*WIDTH,0},{20*WIDTH,0},
+

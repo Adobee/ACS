@@ -1,0 +1,12 @@
+private Context context;
+private VideoView videoView;
+private OnPauseListener onPauseListener;
+private IsPauseListener ispPauseListener;
+return ((LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE)).inflate(getResources().getIdentifier(&quot;videoview_mediacontroller&quot;, &quot;layout&quot;, context.getPackageName()), this);
+}
+
+@Override
+public void doPauseResume() {
+super.doPauseResume();
+if (videoView.isPlaying()) {
+

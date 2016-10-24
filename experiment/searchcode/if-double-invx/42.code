@@ -1,0 +1,19 @@
+void setPos(double inX, double inY) {
+x = inX;
+y = inY;
+}
+
+@Override
+void setSpeed(double inVX, double inVY) {
+v_x = inVX;
+v_y = inVY;
+}
+
+@Override
+void setRad(double inR) {
+r = inR;
+}
+
+@Override
+void setHP(int inHP) {
+

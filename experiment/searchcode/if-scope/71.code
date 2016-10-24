@@ -1,0 +1,14 @@
+import semanticAnalyzer.ObjectType;
+
+public class Scopes {
+static Stack<Scope> scopes = new Stack<Scope>();
+
+private Scopes() {}
+Scope scope = scopes.pop();
+scope.leave();
+return scope;
+}
+
+public static int getCurrentAllocatedSize() {
+if(scopes.isEmpty()) {
+

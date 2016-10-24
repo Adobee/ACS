@@ -1,0 +1,6 @@
+public ParsedDocument parseDocument(SourceToParse source) throws MapperParsingException {
+if (docMapper.type().equals(MapperService.DEFAULT_MAPPING)) {
+throw new IllegalArgumentException(&quot;It is forbidden to index into the default mapping [&quot; + MapperService.DEFAULT_MAPPING + &quot;]&quot;);
+final Mapping mapping = docMapper.mapping();
+if (source.type() != null &amp;&amp; !source.type().equals(docMapper.type())) {
+

@@ -1,0 +1,14 @@
+public class Size {
+
+public static int[] levels = {4, 6, 12, 16};
+
+public static int getLevelSize(int size) {
+for(int i = 0; i < levels.length; i++) {
+if(size <= levels[i]) {
+return levels[i];
+}
+}
+return levels[levels.length-1];
+}
+}
+

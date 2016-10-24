@@ -1,0 +1,10 @@
+private int  permits;
+private int availablePermits;
+final private Object lock;
+
+
+public SemaphoreImpl(int permits) {
+@Override
+public synchronized void  release(int permits) {
+if ((this.permits - this.availablePermits) >= permits) {
+

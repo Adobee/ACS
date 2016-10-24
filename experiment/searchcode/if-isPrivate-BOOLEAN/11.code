@@ -1,0 +1,9 @@
+public ClassType origin;
+public boolean isProtected, isPrivate;
+
+Member(String name, boolean isProtected, boolean isPrivate) {
+if (isPrivate &amp;&amp; isProtected) {
+throw new InternalError();
+}
+this.name = name;
+

@@ -1,0 +1,15 @@
+package managers;
+
+/**
+* @author ender
+*/
+public class BaseManager {
+
+protected volatile boolean initialized;
+
+public void initialize() {
+}
+
+public synchronized final void doInitialize() {
+if (initialized) {
+

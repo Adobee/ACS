@@ -1,0 +1,7 @@
+public void createWindow(int windowNumber) {
+if (windowNumber == this.START_WINDOW) {
+windows[windowNumber] = new StartWindow(this, controller);
+public void keyPressed(int keyCode) {
+if (windows[currentWindow] != null) {
+windows[currentWindow].keyPressed(keyCode);
+

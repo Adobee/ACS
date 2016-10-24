@@ -1,0 +1,16 @@
+static public void setDimension(int dimension) {
+init();
+gs.dimension = dimension;
+}
+
+static private void init() {
+private GlobalSettings() {
+// Init default values in the default constructor.
+dimension = 2;
+}
+
+//members
+int dimension;
+
+}
+

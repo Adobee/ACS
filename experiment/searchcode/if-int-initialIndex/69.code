@@ -1,0 +1,5 @@
+Class<?> type = field.getType();
+int initialIndex = JsonUtils.getBeginIndexOfValue(json, nameOfField);
+
+if (initialIndex == -1) { //no key in json, the field should stay with the default value
+

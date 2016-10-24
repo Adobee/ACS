@@ -1,0 +1,7 @@
+int n = a + b + c + d;
+
+double x = Logsum(a+b)+Logsum(c+d)+Logsum(a+c)+Logsum(b+d);
+//double x = pv[a+b]+pv[c+d]+pv[a+c]+pv[b+d];
+//System.out.println(x);
+double y = Logsum(a)+Logsum(b)+Logsum(c)+Logsum(d)+Logsum(n);
+

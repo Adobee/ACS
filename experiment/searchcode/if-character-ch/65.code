@@ -1,0 +1,8 @@
+scanner = new Scanner (System.in);
+System.out.println(&quot;Enter the character :-&quot;);
+ch = scanner.next().charAt(0);
+
+if (ch == &#39;a&#39; || ch == &#39;A&#39; || ch == &#39;e&#39; || ch == &#39;E&#39; || ch == &#39;i&#39; || ch == &#39;I&#39; || ch ==&#39;o&#39; || ch==&#39;O&#39; || ch == &#39;u&#39; || ch == &#39;U&#39;)
+
+System.out.println(&quot;The given character &quot;+ ch +&quot; is vowel&quot;);
+

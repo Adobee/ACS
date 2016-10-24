@@ -1,0 +1,7 @@
+/** @return <b>true</b> - if task should be interrupted; <b>false</b> - otherwise */
+private boolean waitIfPaused() {
+AtomicBoolean pause = engine.getPause();
+// If ImageAware is reused for another task then current task should be cancelled.
+boolean imageAwareWasReused = !memoryCacheKey.equals(currentCacheKey);
+if (imageAwareWasReused) {
+

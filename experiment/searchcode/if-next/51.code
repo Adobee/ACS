@@ -1,0 +1,8 @@
+public static void reorderList(ListNode head) {
+if (head == null || head.next == null || head.next.next == null) {
+slow = slow.next;
+next = next.next.next;
+}
+if (slow != null) {
+next.next = slow;
+

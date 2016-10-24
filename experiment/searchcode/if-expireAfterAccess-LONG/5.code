@@ -1,0 +1,7 @@
+capacity = capacity > 0 ? capacity : ICacheManager.DEFAULT_CACHE_CAPACITY;
+setCapacity(capacity);
+long expireAfterAccess = getExpireAfterAccess();
+public void set(String key, Object entry, long expireAfterWrite, long expireAfterAccess) {
+if (!(entry instanceof CacheEntry)) {
+CacheEntry ce = new CacheEntry(key, entry, expireAfterWrite, expireAfterAccess);
+

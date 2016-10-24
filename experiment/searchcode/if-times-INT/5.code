@@ -1,0 +1,12 @@
+* @author emmanuel
+*
+*/
+public class BridgeCrossing {
+
+public int minTime(int[] times) {
+if (times.length == 1)
+return times[0];
+Arrays.sort(times);
+int total = 0, rest = times.length;
+while (rest > 3) {
+

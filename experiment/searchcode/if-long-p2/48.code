@@ -1,0 +1,11 @@
+Proof proofOld = closeOld(prover2, problem, times);
+Proof proof = close(prover, problem, times);
+
+if (expectedClose) {
+assertFalse(proofOld.isClosed());
+}
+
+if (show) {
+System.out.println(proof);
+System.err.println(proofOld);
+

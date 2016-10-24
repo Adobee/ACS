@@ -1,0 +1,12 @@
+import bone008.bukkit.deathcontrol.util.ParserUtil;
+
+public class KeepHungerAction extends ActionDescriptor {
+
+double keepPct;
+boolean dropLeftovers;
+public KeepHungerAction(List<String> args) throws DescriptorFormatException {
+keepPct = 1.0;
+
+if (args.size() > 0) {
+keepPct = ParserUtil.parsePercentage(args.get(0));
+

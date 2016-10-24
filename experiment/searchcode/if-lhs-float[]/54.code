@@ -1,0 +1,9 @@
+private static int compareHsb(float[] lhs, float[] rhs) {
+int result = Comparators.FLOAT.compare(lhs[0], rhs[0]);
+if (result == 0) result = Comparators.FLOAT.compare(lhs[1], rhs[1]);
+if (result == 0) result = Comparators.FLOAT.compare(lhs[2], rhs[2]);
+return result;
+}
+
+}
+

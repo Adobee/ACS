@@ -1,0 +1,11 @@
+public class Girokonto extends Konto {
+private double limit;
+
+public Girokonto(int nummer, double limit) {
+super(nummer);
+if (limit < 0)
+// −−> Reimplementierung
+public void auszahlen(double betrag) {
+if (betrag <= saldo + limit)
+super.auszahlen(betrag);
+

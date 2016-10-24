@@ -1,0 +1,9 @@
+if (!(o instanceof ListCompanyCategoryResponse)) return false;
+
+ListCompanyCategoryResponse that = (ListCompanyCategoryResponse) o;
+
+if (categories != null ? !categories.equals(that.categories) : that.categories != null) return false;
+@Override
+public int hashCode() {
+return categories != null ? categories.hashCode() : 0;
+

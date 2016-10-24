@@ -1,0 +1,7 @@
+private HashMap<String, List<Receiver>> registry = new HashMap<>();
+
+public void registerReceiver(String signal, Receiver receiver)
+{
+if (registry.containsKey(signal)) {
+List<Receiver> receivers = registry.get(signal);
+

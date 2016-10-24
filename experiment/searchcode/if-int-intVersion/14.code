@@ -1,0 +1,10 @@
+protected static URLFetcher urlF;
+protected String version;
+protected int intVersion;
+protected Date date;
+return intCurrentVersion < intVersion;
+}
+
+public int compareTo(Object anotherVersion) throws ClassCastException {
+if (!(anotherVersion instanceof Version))
+

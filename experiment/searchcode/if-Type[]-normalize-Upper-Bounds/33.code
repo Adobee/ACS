@@ -1,0 +1,7 @@
+// so long as one of the upper bounds is assignable, it&#39;s good
+for (Type bound : getImplicitUpperBounds((WildcardType) type)) {
+if (isAssignable(bound, toGenericArrayType)) {
+public static Type[] normalizeUpperBounds(Type[] bounds) {
+// don&#39;t bother if there&#39;s only one (or none) type
+if (bounds.length < 2) {
+

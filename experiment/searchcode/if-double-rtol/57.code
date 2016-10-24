@@ -1,0 +1,9 @@
+// Store initial residual
+if (isFirst())
+initR = r;
+
+if (r <= rtol)
+throw new IterativeSolverDoubleNotConvergedException(DoubleNotConvergedException.Reason.Divergence, this);
+if (iter >= maxIter)
+throw new IterativeSolverDoubleNotConvergedException(DoubleNotConvergedException.Reason.Iterations, this);
+

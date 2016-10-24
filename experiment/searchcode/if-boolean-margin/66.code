@@ -1,0 +1,11 @@
+static final MarginLayoutParamsCompatImpl IMPL;
+
+static
+{
+if (Build.VERSION.SDK_INT >= 17)
+IMPL = new MarginLayoutParamsCompat.MarginLayoutParamsCompatImplJbMr1();
+return IMPL.getMarginStart(paramMarginLayoutParams);
+}
+
+public static boolean isMarginRelative(ViewGroup.MarginLayoutParams paramMarginLayoutParams)
+

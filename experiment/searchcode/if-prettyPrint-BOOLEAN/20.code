@@ -1,0 +1,11 @@
+public static final Gson gson;
+
+static {
+boolean prettyPrint = Play.mode == Mode.DEV;
+
+comicSerializer = new JSONSerializer().include(
+&quot;id&quot;, &quot;label&quot;, &quot;title&quot;, &quot;author&quot;, &quot;homepage&quot;, &quot;tags&quot;, &quot;enabled&quot;).exclude(&quot;*&quot;).prettyPrint(prettyPrint);
+
+stripSerializer = new JSONSerializer().include(
+&quot;id&quot;, &quot;cid&quot;, &quot;sid&quot;, &quot;url&quot;, &quot;title&quot;).exclude(&quot;*&quot;).prettyPrint(prettyPrint);
+

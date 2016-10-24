@@ -1,0 +1,8 @@
+* Created by mhjang on 10/17/15.
+*/
+public class ResultReport {
+public double[] tableAccuracy = new double[2];
+public void setAccuracy(int componentID, double prec, double recall) {
+if(componentID == TagConstant.BEGINTABLE) {
+tableAccuracy[0] = prec;
+

@@ -1,0 +1,15 @@
+public enum APIFormat {
+
+json(&quot;JSON&quot;), xml(&quot;XML&quot;);
+
+private final String format;
+
+private APIFormat(String format) {
+for (APIFormat currentFormat : formats) {
+if (format.equals(currentFormat.getFormat()))
+return currentFormat;
+}
+return json; // default method;
+}
+}
+

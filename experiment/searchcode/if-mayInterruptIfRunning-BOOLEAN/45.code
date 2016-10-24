@@ -1,0 +1,13 @@
+public boolean isFinished(){
+return handler.isPaused(); //源代码直接 return false;
+}
+
+/**
+* 打断发送
+* @param mayInterruptIfRunning true:打断连接/false:不处理
+*/
+public void cancel(boolean mayInterruptIfRunning){
+handler.cancel(mayInterruptIfRunning);
+}
+}
+

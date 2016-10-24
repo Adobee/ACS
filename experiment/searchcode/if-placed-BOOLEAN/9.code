@@ -1,0 +1,13 @@
+import com.agentfactory.logic.lang.FOS;
+import modules.PlacedBets;
+
+/**
+*
+* @author  roregan
+*/
+public class AddPlacedBet extends Actuator {
+double stake = Double.parseDouble(action.argAt(2).toString());
+
+PlacedBets placedBets = (PlacedBets) this.getModuleByName(&quot;PlacedBets&quot;);
+if (placedBets == null) {
+

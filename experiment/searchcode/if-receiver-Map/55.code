@@ -1,0 +1,19 @@
+ReceiverBean receiver = new ReceiverBean();
+
+receiver.type = type;
+receiver.x = x;
+receiver.y = y;
+
+return receiver;
+}
+
+private Map<String, ReceiverBean> map = new HashMap<String, ReceiverBean>();
+map.put(key, copy());
+}
+
+@Override
+public ReceiverBean restore(String key) {
+ReceiverBean backup = map.get(key);
+
+if (backup != null) {
+

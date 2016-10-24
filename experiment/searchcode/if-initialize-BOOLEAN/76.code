@@ -1,0 +1,17 @@
+return this.value;
+}
+
+public int compareTo(Boolean ob)
+{
+if (this.value == ob.value)
+return 0;
+
+//false is less than true
+return this.value ? 1231 : 1237;
+}
+
+public static boolean parseBoolean(String s)
+{
+if (s == null || s.length() != 4)
+return false;
+

@@ -1,0 +1,9 @@
+String arguments = getArguments(context);
+int firstSpace = arguments.indexOf(&#39; &#39;);
+if (firstSpace == -1) {
+sendUsageBack(context);
+String target = arguments.substring(0, firstSpace);
+String message = arguments.substring(firstSpace + 1).trim();
+
+PircBotX bot = context.getBot();
+

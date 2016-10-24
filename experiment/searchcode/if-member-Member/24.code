@@ -1,0 +1,17 @@
+Boolean pMatch = bcryptPasswordEncoder.matches(member.getMemberPassword(), cMember.getMemberPassword());
+if(pMatch){
+result = memberDao.memberInfoUp(member);
+
+}else{
+Boolean pMatch = bcryptPasswordEncoder.matches(member.getMemberPassword(), cMember.getMemberPassword());
+if(pMatch){
+result = 1;
+}
+
+return result;
+}
+
+
+
+}
+

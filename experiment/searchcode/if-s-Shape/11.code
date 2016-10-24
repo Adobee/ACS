@@ -1,0 +1,13 @@
+import com.chris.tictactoe.service.exceptions.UnsupportedShapeException;
+
+public enum PlayerShape {
+CIRCLE(&quot;O&quot;), CROSS(&quot;X&quot;);
+
+private String aShape;
+for(PlayerShape shape : PlayerShape.values()){
+if(shape.aShape.equalsIgnoreCase(shapeStr)){
+return shape;
+}
+}
+throw new UnsupportedShapeException();
+

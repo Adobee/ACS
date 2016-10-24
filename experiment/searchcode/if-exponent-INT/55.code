@@ -1,0 +1,14 @@
+package main;
+
+public class Power {
+public static int get(int base, int exponent) {
+if (base == 1)
+return base * get(base, exponent / 2) * get(base, exponent / 2);
+}
+}
+
+public static double getOptimized(int base, int exponent) {
+if (base == 1)
+return 1d;
+if (exponent == 1)
+

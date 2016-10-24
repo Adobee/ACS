@@ -1,0 +1,11 @@
+public class AimState extends State {
+
+private Point curGoal = null;
+private boolean issued = false;
+private boolean finished = false;
+public State transition() {
+if (finished) {
+return parentState;
+} else {
+return this;
+

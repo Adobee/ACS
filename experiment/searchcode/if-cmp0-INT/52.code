@@ -1,0 +1,11 @@
+public Expr app(Expr...args) {
+if(args[0].isNum(0, 0)) {
+// 0 + r -> r
+return args[1];
+}
+
+int cmp0 = args[0].compareTo(args[1]);
+int cmp1 = args[1].compareTo(args[0]);
+
+if(cmp0 != -cmp1) {
+

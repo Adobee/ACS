@@ -1,0 +1,5 @@
+public static MarketplaceName fromString(String name) {
+if (StringUtils.isNotBlank(name)) {
+for (MarketplaceName marketplaceName : MarketplaceName.values()) {
+if (StringUtils.equals(marketplaceName.name, name)) {
+

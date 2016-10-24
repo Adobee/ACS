@@ -1,0 +1,15 @@
+return (month() - 1) * 30 + dayOfMonth();
+}
+
+public Date nextDate(){
+int newDay;
+int newMonth;
+int newYear;
+if((month() < 12 &amp;&amp; dayOfMonth() < 30) || (month()== 13 &amp;&amp; dayOfMonth() < 5)){
+newDay = 1;
+if (month() == 13){
+newMonth = 1;
+newYear = year() + 1;
+}
+else {
+

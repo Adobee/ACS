@@ -1,0 +1,14 @@
+double weight;
+
+public Edge(int v, int w, double weight){
+this.v = v;
+this.w = w;
+this.weight = weight;
+}
+
+public int either(){
+return v;
+}
+public int other(int x){
+if(this.v == x) return w;
+

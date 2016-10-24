@@ -1,0 +1,9 @@
+Map<Object, CachedObject> cache = getCache();
+if (!cache.containsKey(key))
+return false;
+
+CachedObject cachedObject = cache.get(key);
+long now = System.currentTimeMillis();
+
+if ((cachedObject.getLastAccess() - now) <= ttlInMs) {
+

@@ -1,0 +1,17 @@
+// static final double PHI   = 1.0;
+
+double LijMess = 0, Lij = 0, Rij = 0;
+
+// (deprecated)
+double Jij = 0, AbwRij = 0;
+double deviationRelativeToPeriod = 0;
+public double resEstimated() {
+return Rij;
+}
+
+public double resSmoothed() {
+return Lij;
+}
+
+//	public double resDeviation() {
+

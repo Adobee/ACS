@@ -1,0 +1,13 @@
+values.add(null);
+}
+}
+boolean enqueue(T data) {
+if (data == null) return false;
+if (((tail + 1) % values.size()) == head) {
+tail = tail % values.size();
+return true;
+}
+T dequeue() {
+T data = null;
+if (tail != head) {
+

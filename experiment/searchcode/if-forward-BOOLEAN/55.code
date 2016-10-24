@@ -1,0 +1,14 @@
+protected int currentFrame = 0;
+
+protected int milliDelay;
+protected int elapsedTime = 0;
+
+protected boolean forward; // true if we&#39;re moving forward, false if backward
+public boolean getMovingForward() {
+return forward;
+}
+
+@Override
+public void update(long delta) {
+if ((forward &amp;&amp; currentFrame >= imgs.length-1) || (!forward &amp;&amp; currentFrame <= 0)) {
+

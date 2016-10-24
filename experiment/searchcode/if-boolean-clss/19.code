@@ -1,0 +1,12 @@
+this(id, clss, false);
+}
+
+public ClassValidator( T id, Class<U> clss, boolean nullable ) {
+super(id, nullable );
+this.clss = clss;
+}
+
+@Override
+public boolean validate(Object value) {
+if( !super.validate(value) )
+

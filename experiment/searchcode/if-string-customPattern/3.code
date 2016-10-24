@@ -1,0 +1,9 @@
+private Pattern customPattern;
+
+public void setCustomPattern(Pattern customPattern) {
+this.customPattern = customPattern;
+@Override
+public boolean isValid(String value) {
+boolean result = Strings.isValid(value);
+if (result &amp;&amp; hasCustomPattern()) {
+

@@ -1,0 +1,13 @@
+package runtime.model;
+
+
+
+public class P2{
+
+public static final int MAX_Y = 10;
+public int x;
+@Override
+public boolean equals(Object obj) {
+if(obj==null || !(obj instanceof P2)){
+return false;
+

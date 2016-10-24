@@ -1,0 +1,7 @@
+for(Entry<String, List<RealVector>> entry: dataForCaching.entrySet()){
+cache.putIfAbsent(entry.getKey(), entry.getValue());
+Map<Integer, List<RealVector>> tmpResult = new HashMap<>();
+
+for(Pair<Integer, RealVector> pair: tmp){
+if(tmpResult.containsKey(pair.getLeft())){
+

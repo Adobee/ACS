@@ -1,0 +1,4 @@
+* Opens a GZip compressed output stream and connects it to a PrintStream object. If the file exists, it is overwritten.
+public GZipPrintStreamHandler(File gzipFile, boolean append) throws IOException {
+this.gzipOut = new GZIPOutputStream(new FileOutputStream(gzipFile, append));
+

@@ -1,0 +1,12 @@
+double dur;
+double amp;
+double off;
+double expo;
+double trep;
+double tend;
+public double realVal(double[] vals) throws Xcept {
+double t = vals[0];
+if(trep>0) {
+t=t%trep;
+if(t<0) t=t+trep;
+

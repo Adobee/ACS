@@ -1,0 +1,10 @@
+* @return preference if successful; or null otherwise
+*/
+public Preference findPreference(CharSequence asKey) {
+if (mCallingActivity != null) {
+this.mPreferences.unregisterOnSharedPreferenceChangeListener(aoListener);
+}
+
+public boolean putInt(String asKey, int aInt) {
+this.mEditor = mPreferences.edit();
+

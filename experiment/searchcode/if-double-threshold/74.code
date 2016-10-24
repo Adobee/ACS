@@ -1,0 +1,14 @@
+double value;
+
+Threshold( double value ) {
+this.value = value;
+}
+
+}
+
+Map<Threshold,Double> thresholds = new HashMap<Threshold, Double>();
+
+Set<String> relationTypes = new HashSet<String>();
+
+public ArgumentationConf() {
+

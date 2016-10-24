@@ -1,0 +1,8 @@
+this.temperature = 20;
+}
+
+public boolean isTemperatureOptimal() {
+if (temperature == optimalTemperature) {
+System.out.println(&quot;Temperature is optimal&quot;);
+return true;
+

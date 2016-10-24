@@ -1,0 +1,13 @@
+for (int e = last[u1]; e >= 0; e = prev[e]) {
+int u2 = matching[head[e]];
+if (u2 >= 0 &amp;&amp; dist[u2] < 0) {
+dist[u2] = dist[u1] + 1;
+Q[sizeQ++] = u2;
+}
+}
+}
+}
+
+private boolean dfs(int u1) {
+vis[u1] = true;
+

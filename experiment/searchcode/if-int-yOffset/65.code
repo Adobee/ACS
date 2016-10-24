@@ -1,0 +1,11 @@
+if(sprite!=null)
+sprite.draw(g,x,y-12,imageIndex+(walk/8)%4);
+if(stats!=null)
+{
+int yoffset=0;
+switch(sprite.name)
+g.setColor(Color.orange);
+g.fillRect((int)x,(int)y-yoffset,(int)(effect.percentLeft()*16),3);
+}
+if(conditions.contains(PlayerEffect.paralysis))
+

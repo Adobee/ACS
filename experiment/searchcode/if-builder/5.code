@@ -1,0 +1,12 @@
+* 20/dic/2009
+*/
+public class TypeFactory {
+
+private ITypeBuilder typeBuilder;
+
+public ITypeBuilder typeBuilder() {
+if (typeBuilder == null) {
+typeBuilder = createTypeBuilder();
+}
+return typeBuilder;
+

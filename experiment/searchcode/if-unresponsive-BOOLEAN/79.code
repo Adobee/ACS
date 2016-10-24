@@ -1,0 +1,10 @@
+private List<Proxy> filterUnresponsiveProxiesFromList(List<Proxy> proxyList) {
+if (this.failedDelayCache.isEmpty()) {
+return proxyList;
+for (Proxy proxy : proxyList) {
+if (isDirect(proxy) || isNotUnresponsive(proxy)) {
+result.add(proxy);
+}
+}
+return result;
+

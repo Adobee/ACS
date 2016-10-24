@@ -1,0 +1,10 @@
+public static String toJson(Object... kvpair) {
+StringBuilder sb = new StringBuilder();
+sb.append(&#39;{&#39;);
+for (int i = 0; i < kvpair.length; i += 2) {
+sb.append(&#39;&quot;&#39;);
+sb.append(&#39;:&#39;);
+if (kvpair[i + 1] instanceof Number) {
+sb.append(&#39;&quot;&#39;);
+sb.append(kvpair[i + 1]);
+

@@ -1,0 +1,7 @@
+protected final List<Throwable> errors = new ArrayList<>();
+protected final long took;
+
+protected SuggestDeleteResponse(final List<Throwable> errors, final long took) {
+this.took = took;
+if (errors != null &amp;&amp; !errors.isEmpty()) {
+

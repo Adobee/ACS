@@ -1,0 +1,10 @@
+public List<NDimPoint> generate(int centers, int totalPoints) {
+
+if (mapCenter == null)
+mapCenter = SimpleNDimPoint.getZeroPoint(dim);
+for (int i = 0; i < centers; i++) {
+NDimPoint center = genCenter();
+result.add(center);
+
+for (int j = 0; j < pointsPerCenter; j++) {
+

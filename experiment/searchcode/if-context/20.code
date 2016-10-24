@@ -1,0 +1,14 @@
+package constants;
+
+import android.content.Context;
+
+public class SingletonContext {
+
+private static SingletonContext mSingletonContext;
+public static void initializeContext(Context context) {
+if (mSingletonContext == null)
+mSingletonContext = new SingletonContext(context);
+}
+
+public static SingletonContext getInstance() {
+

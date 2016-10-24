@@ -1,0 +1,17 @@
+public long get(long G, long L) {
+long min = Long.MAX_VALUE;
+for (long i = 1; i*i*G <= L; i++) {
+long A = i*G;
+if (L % A == 0) {
+min = Math.min(min, A + B);
+}
+}
+}
+if (min == Long.MAX_VALUE) {
+return -1;
+}
+return min;
+}
+
+public static long gcd(long a, long b) {
+

@@ -1,0 +1,14 @@
+public FuzzyFunction(double start, double end, double value) {
+this.start = start;
+this.end = end;
+this.value = value;
+}
+
+public double getFuzzyValue(double input)
+{
+if (input < start || input > end)
+return 0d;
+
+double FuzzyValue = 0.0d;
+if (flatStartPoint == 0.0d &amp;&amp; flatEndPoint == 0.0d){
+

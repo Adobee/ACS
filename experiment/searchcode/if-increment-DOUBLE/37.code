@@ -1,0 +1,13 @@
+public class LinearWaveform extends AbstractWaveform {
+
+private Double fromValue = 0d;
+private Double increment = 0d;
+private int currentReading = 0;
+public double nextValue() {
+
+double currentValue = fromValue + (increment * currentReading);
+
+currentReading++;
+
+if (currentReading == readings) {
+

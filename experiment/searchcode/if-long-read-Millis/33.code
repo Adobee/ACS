@@ -1,0 +1,12 @@
+long idleTimeMillis) {
+}
+};
+
+private volatile long idleTimeMillisForRead;
+private volatile long idleTimeMillisForWrite;
+if (status == IdleStatus.READER_IDLE) {
+return idleTimeMillisForRead;
+}
+
+if (status == IdleStatus.WRITER_IDLE) {
+

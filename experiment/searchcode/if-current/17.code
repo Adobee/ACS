@@ -1,0 +1,7 @@
+visitedList.add(r);
+if (r.e &amp;&amp; !visitedList.contains(rooms[r.current.x][r.current.y+1]) &amp;&amp; !queue.contains(rooms[r.current.x][r.current.y+1])) {
+rooms[r.current.x][r.current.y+1].parent = new Pair(r.current.x, r.current.y);
+
+queue.add(rooms[r.current.x][r.current.y+1]);
+}else if(r.e &amp;&amp; queue.contains(rooms[r.current.x][r.current.y+1]) &amp;&amp; rooms[r.current.x][r.current.y+1].cost>cost){
+

@@ -1,0 +1,6 @@
+protected abstract void computeInterpolatedStateAndDerivatives(double theta, double oneMinusThetaH) throws org.apache.commons.math.ode.DerivativeException;
+
+public double[] getInterpolatedState() throws org.apache.commons.math.ode.DerivativeException {
+final double oneMinusThetaH = (currentTime) - (interpolatedTime);
+final double theta = (h) == 0 ? 0 : ((h) - oneMinusThetaH) / (h);
+

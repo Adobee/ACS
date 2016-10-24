@@ -1,0 +1,11 @@
+private boolean finished = false;
+private boolean shutdown = false;
+
+public Task(Runnable task) {
+public Runnable getTask() {
+return task;
+}
+
+public synchronized boolean setTask(Runnable task) {
+if (isFinished()) {
+

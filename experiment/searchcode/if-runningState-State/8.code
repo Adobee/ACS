@@ -1,0 +1,11 @@
+runningState = 0;
+splitState = 10;
+}
+
+public long getNanoTime()
+{
+if(runningState == 2 || runningState == 3)
+return stopTime - startTime;
+if(runningState == 0)
+return 0L;
+

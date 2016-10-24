@@ -1,0 +1,13 @@
+* Numerical approximation of error function, accurate to 1.2x10^-7. Used for cumulative distribution function.
+*/
+public static double erf(double x){
+
+int sign = -1;
+
+double t = 1/(1+0.5 * Math.abs(x));
+* Inverse error function. Binary search approximation because I&#39;m too lazy.
+*/
+public static double inverseErf (double x) {
+
+//Higher divisions = more accuracy, this function runs in O(divisons) time
+

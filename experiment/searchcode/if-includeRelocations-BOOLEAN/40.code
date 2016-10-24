@@ -1,0 +1,9 @@
+* <code>cluster.routing.allocation.disk.watermark.high</code> is the high disk
+* watermark. If a node has usage higher than this, shards are not allowed to
+node.nodeId(), usage.getTotalBytes(), usage.getFreeBytes(), usage.getFreeDiskAsPercentage());
+}
+}
+
+if (diskThresholdSettings.includeRelocations()) {
+long relocatingShardsSize = sizeOfRelocatingShards(node, allocation, true, usage.getPath());
+

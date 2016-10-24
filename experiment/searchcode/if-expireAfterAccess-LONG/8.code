@@ -1,0 +1,6 @@
+private long expireAfterAccess = -1;
+private long expireAfterWrite = -1;
+private ToLongBiFunction<K, V> weigher;
+public CacheBuilder<K, V> setMaximumWeight(long maximumWeight) {
+if (maximumWeight < 0) {
+

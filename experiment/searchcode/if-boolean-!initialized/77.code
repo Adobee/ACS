@@ -1,0 +1,11 @@
+private final Logger logger = LoggerFactory.getLogger(this.getClass());
+
+private static boolean initialized = Boolean.TRUE;
+
+private List<AbstractInitializedCacheService> abstractInitializedCacheServices;
+public void onApplicationEvent(ApplicationEvent event) {
+if (initialized) {
+logger.info(&quot;init start...&quot;);
+initialized = Boolean.FALSE;
+this.doInitializedData();
+

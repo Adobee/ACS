@@ -1,0 +1,11 @@
+package com.bol.openapi;
+
+public class QueryLimit {
+
+private final int limit;
+
+private QueryLimit(int limit) {
+private void verifyLimit(int limit) {
+if (limit > 100) {
+throw new IllegalArgumentException(&quot;limit may not be larger than 100&quot;);
+

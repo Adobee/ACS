@@ -1,0 +1,8 @@
+public class SocketWriteHandler extends SocketHandler{
+private  int BLOCK = 4096;
+private  ByteBuffer sendbuffer = ByteBuffer.allocate(BLOCK);
+@Override
+public void runnerExecute(int readyKeyOps) throws IOException {
+// TODO Auto-generated method stub
+if (readyKeyOps == SelectionKey.OP_WRITE)
+

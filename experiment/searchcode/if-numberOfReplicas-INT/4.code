@@ -1,0 +1,9 @@
+public class ConsistentHash<T> {
+
+private final HashFunction hashFunction;
+private final int numberOfReplicas;
+public ConsistentHash(HashFunction hashFunction,
+int numberOfReplicas, Collection<T> nodes) {
+
+this.hashFunction = hashFunction;
+

@@ -1,0 +1,9 @@
+public ArrayList<QueryObject> getFilterQuery() {
+ArrayList<QueryObject> queryList = new ArrayList<QueryObject>();
+
+if(permList.getQueryObject() != null){
+queryList.add(new QueryObject(QueryEnum.G_PERMS, null, true, null));
+}
+
+if(statusList.getQueryObject() != null){
+

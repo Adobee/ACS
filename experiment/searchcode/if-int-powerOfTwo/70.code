@@ -1,0 +1,7 @@
+* 2. e.g. 1000 ^ 0111 -> 0000 == 0 (^ ->且)
+*/
+public class PowerOfTwo {
+
+public boolean isPowerOfTwo(int n){
+if (n <= 0) {
+

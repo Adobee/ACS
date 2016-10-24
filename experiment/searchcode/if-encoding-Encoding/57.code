@@ -1,0 +1,14 @@
+return true;
+}
+
+if (format == ANY) {
+return true;
+}
+
+return (this.encoding == format.encoding || this.encoding == null || format.encoding == null || isSameEncoding(format));
+public boolean isSameEncoding(Format other) {
+if (other == null) {
+return false;
+}
+if (other.encoding == null) {
+

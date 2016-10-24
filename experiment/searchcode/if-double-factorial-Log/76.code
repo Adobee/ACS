@@ -1,0 +1,10 @@
+private static final LogFuncs _theInstance=new LogFuncs();
+
+private final static int maxFactorial=10000;
+
+private LogFuncs() {
+public static double LogFactorial(int n) {
+if(n>=0 &amp;&amp; n<maxFactorial)
+return _theInstance.factorials[n];
+return LogGamma(n-1);
+

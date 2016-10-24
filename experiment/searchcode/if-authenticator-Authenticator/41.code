@@ -1,0 +1,11 @@
+* Created by mael on 04/07/16.
+*/
+public class AccountAuthenticatorService extends Service {
+
+private static AccountAuthenticator AUTHENTICATOR = null;
+return intent.getAction().equals(AccountManager.ACTION_AUTHENTICATOR_INTENT) ? getAuthenticator().getIBinder() : null;
+}
+
+private AccountAuthenticator getAuthenticator() {
+if (AUTHENTICATOR == null)
+

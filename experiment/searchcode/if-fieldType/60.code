@@ -1,0 +1,6 @@
+public final static boolean isValidFieldContent(String fieldContent, FieldType fieldType)
+{
+if (FieldType.EMAIL.equals(fieldType))
+return fieldContent.matches(RegEx.VALID_EMAIL.getRegEx());
+else if (FieldType.PSEUDO.equals(fieldType))
+

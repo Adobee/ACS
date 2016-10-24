@@ -1,0 +1,7 @@
+public int compareTo(Object o) {
+
+Amount amount2 = (Amount) o;
+if (this.amount == amount2.amount) {
+return 0;
+} else if(this.amount < amount2.amount) {
+

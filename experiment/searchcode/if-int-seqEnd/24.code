@@ -1,0 +1,16 @@
+public int maxSubSum(int[] a)
+{
+int maxSum = 0;
+int thisSum = 0;
+int seqStart = 0;
+int seqEnd = 0;
+
+for( int i = 0, j = 0; j < a.length; j++ )
+if( thisSum > maxSum )
+{
+maxSum = thisSum;
+seqStart = i;
+seqEnd   = j;
+}
+else if( thisSum < 0 )
+

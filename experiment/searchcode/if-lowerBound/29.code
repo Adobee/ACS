@@ -1,0 +1,10 @@
+upperBound = new Vector2(Math.max(upperBound.x, a.upperBound.x), Math.max(upperBound.y, a.upperBound.y));
+}
+
+public boolean overlap(AABBrect t)
+{
+if (t.lowerBound.x - upperBound.x > 0.0f || t.lowerBound.y - upperBound.y > 0.0f)
+return false;
+
+if (lowerBound.x - t.upperBound.x > 0.0f || lowerBound.y - t.upperBound.y > 0.0f)
+

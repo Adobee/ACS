@@ -1,0 +1,9 @@
+private AlphaToAlphaInverseFunction()
+{
+}
+
+public static double getAlphaPrimeInverse(AlphaToAlphaFunction function, double alphaPrime)
+{
+double leftAlpha = 0.0;
+double rightAlpha = function.getMaxAlpha();
+

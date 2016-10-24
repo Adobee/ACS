@@ -1,0 +1,8 @@
+// We&#39;ll use &#39;long&#39; for our seeds to avoid signed-integer problems
+private long seedA;
+private long seedB;
+// Generate &quot;random&quot; number.  This will fit into an unsigned 32bit integer
+// We use &#39;long&#39; because...  java...
+long randomNumber = seedA - seedB;
+if(seedA < seedB)
+

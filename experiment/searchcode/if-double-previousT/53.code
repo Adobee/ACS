@@ -1,0 +1,10 @@
+public static double invXlnX(double y)
+{
+//Method from Numerical Recipies, 3rd edition
+if(y >= 0 || y <= -exp(-1))
+throw new ArithmeticException(&quot;Inverse value can not be computed for the range [-e^-1, 0]&quot;);
+double u;
+
+if(y < -0.2)
+u = log(exp(-1) - sqrt(2*exp(-1)* (y+exp(-1)) ) );
+

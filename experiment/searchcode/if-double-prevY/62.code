@@ -1,0 +1,8 @@
+double[] coords = new double[6];
+double prevX = 0, prevY = 0;
+double moveX = 0, moveY = 0;
+for (PathIterator i = new FlatteningPathIterator(shape.getPathIterator(new AffineTransform(), tolerance), tolerance); !i.isDone(); i.next()) {
+case PathIterator.SEG_LINETO:
+if (Geom.lineContainsPoint(
+prevX, prevY, coords[0], coords[1],
+

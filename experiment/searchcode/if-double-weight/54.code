@@ -1,0 +1,10 @@
+private Set<Criterion> criteria;
+private double majorWeight ;
+private double minorWeight ;
+private double trivialWeight ;
+private double  criticalWeight ;
+private double tagWeight;
+
+
+public Config(){}
+

@@ -1,0 +1,10 @@
+* limitations under the License.
+*/
+package okhttp3;
+
+import java.net.ResponseCache;
+import okhttp3.internal.huc.CacheAdapter;
+public static void setResponseCache(OkUrlFactory okUrlFactory, ResponseCache responseCache) {
+OkHttpClient.Builder builder = okUrlFactory.client().newBuilder();
+if (responseCache instanceof OkCacheContainer) {
+

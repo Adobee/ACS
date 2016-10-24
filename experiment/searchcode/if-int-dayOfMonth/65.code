@@ -1,0 +1,10 @@
+int week = input.nextInt();
+String monthString = &quot;&quot;;
+
+for (int i = 1; i <= 12; i++) {
+int dayOfMonth = 0;
+int realDays = 0;
+switch (i-1) {
+case 0://实际是1月，1月1日的星期以输入
+dayOfMonth = 0;
+

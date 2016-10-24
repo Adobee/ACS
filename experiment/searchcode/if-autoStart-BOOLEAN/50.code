@@ -1,0 +1,10 @@
+import android.preference.PreferenceManager;
+import android.util.Log;
+
+public class Autostart extends BroadcastReceiver {
+public Autostart() {
+this.context = context;
+
+if (getBootup(context)) {
+Intent intent1 = new Intent(context, AutostartService.class);
+

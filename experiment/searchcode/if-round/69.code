@@ -1,0 +1,15 @@
+round = nextRound;
+if (round == 1) {
+current = 30;
+}
+
+runTask();
+}
+
+public void runTask() {
+id = Bukkit.getScheduler().runTaskTimer(arena.getPlugin(), new Runnable() {
+public void run() {
+if (current >= 0) {
+if (current == 0) {
+arena.sendMessage(&quot;  &amp;aRound &quot; + round + &quot; beginning!&quot;);
+

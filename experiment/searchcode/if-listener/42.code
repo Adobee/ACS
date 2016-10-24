@@ -1,0 +1,8 @@
+@Override
+protected void lastListenerRemoved() {
+if (staleListener != null) {
+decorated.removeStaleListener(staleListener);
+staleListener = null;
+}
+}
+

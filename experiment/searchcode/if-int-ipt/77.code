@@ -1,0 +1,9 @@
+input = s.nextLine();
+ipt = input + &quot;#&quot;;		//添加数学表达式结尾标志&quot;#&quot;
+for(int i=0;i<ipt.length();i++){
+//判断字符是否为数学运算符
+if(ipt.charAt(i)==&#39;+&#39;||ipt.charAt(i)==&#39;-&#39;||ipt.charAt(i)==&#39;*&#39;||ipt.charAt(i)==&#39;/&#39;||ipt.charAt(i)==&#39;(&#39;||ipt.charAt(i)==&#39;)&#39;||ipt.charAt(i)==&#39;#&#39;){
+} else {
+//如果前一个计数器所指字符也为数字,那么将前一个数字乘以10,再加上新数字替换原来的数字,否则直接将新数字入栈
+if(i>0&amp;&amp;ipt.charAt(i-1)>=&#39;0&#39;&amp;&amp;ipt.charAt(i-1)<=&#39;9&#39;){
+

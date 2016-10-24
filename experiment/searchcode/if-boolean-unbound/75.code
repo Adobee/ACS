@@ -1,0 +1,15 @@
+return Collections.unmodifiableList(new ArrayList<String>(attributes.keySet()));
+}
+
+public String getSessionId(Request request, boolean create)
+{
+if (create &amp;&amp; sessionId == null)
+for (UnboundListener l : unboundListeners)
+{
+l.sessionUnbound(sessId);
+}
+
+}
+
+public Session lookup(Request request)
+

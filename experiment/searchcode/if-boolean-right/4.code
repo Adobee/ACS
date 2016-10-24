@@ -1,0 +1,10 @@
+public static boolean calculate(Object valueLeft,Object valueRight,Operator operator){
+boolean left = getBoolean(valueLeft);
+boolean right = getBoolean(valueRight);
+
+if(operator.isOr()){
+return left || right;
+}
+
+return left &amp;&amp; right;
+

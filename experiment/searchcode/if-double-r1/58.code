@@ -1,0 +1,8 @@
+public double A;    // Directional relation
+
+/**Initializes relations between two given rectangles r1,r2
+/** Calculates the distance between the centroids two rectangles.
+*/
+
+public static double distance(rectangle r1 , rectangle r2)
+

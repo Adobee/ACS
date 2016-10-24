@@ -1,0 +1,7 @@
+public Map<String, Object> getKeyValuesByName(String... keyNames) {
+Map<String, Object> result = new HashMap<String, Object>();
+
+for (String keyName : keyNames) {
+if (!StringUtils.isEmpty(keyName)) {
+KeyValue keyValue = keyValueMapper.queryKeyValueByKeyName(keyName);
+

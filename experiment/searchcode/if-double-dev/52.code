@@ -1,0 +1,10 @@
+return K * Math.exp(-x * x / 2);
+}
+
+public double getNext(double dev, double mean) {
+return cdfInv(rand.nextDouble()) * dev + mean;
+}
+
+public double cdfInv(double y) {
+return interpolateInv(f, y, min, max);
+

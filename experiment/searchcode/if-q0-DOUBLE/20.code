@@ -1,0 +1,8 @@
+static final double SQRT2 = Math.sqrt(2);
+protected double q0, q1, q2, q3;         // quaternion components
+protected double ox = 0, oy = 0, oz = 0; // origin for this rotation
+public final void normalize() {
+double norm = q0*q0+q1*q1+q2*q2+q3*q3;
+if(norm==1) {
+return; // often doesn&#39;t happen due to roundoff
+

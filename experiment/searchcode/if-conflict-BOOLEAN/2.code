@@ -1,0 +1,13 @@
+for (int workingDay : workingDays) {
+meetings[workingDay - 1] = true;
+}
+int conflict = 0;
+for (int i = 0; i < K; i++) {
+if (meetings[i]) {
+for (int i = 1; i + K <= N; i++) {
+if (meetings[i - 1]) {
+conflict--;
+}
+if (meetings[i + K - 1]) {
+conflict++;
+

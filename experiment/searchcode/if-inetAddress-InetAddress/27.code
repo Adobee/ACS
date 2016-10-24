@@ -1,0 +1,6 @@
+NetworkInterface ni = NetworkInterface.getByName(&quot;eth0&quot;);
+Enumeration<InetAddress> inetAddresses = ni.getInetAddresses();
+for (InetAddress inetAddress : Collections.list(inetAddresses)) {
+if(inetAddress instanceof Inet4Address) {
+System.out.printf(&quot;Inet4Address: %s\n&quot;, ((Inet4Address)inetAddress).getHostAddress());
+

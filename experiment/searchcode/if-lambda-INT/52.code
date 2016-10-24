@@ -1,0 +1,10 @@
+this.mu = mu;
+lambda = new double[K];
+L = new double[K];
+R = new double[K];
+for(int i = 0; i < L.length; i++) L[i] = 0;
+for(int i = 0; i < K;i++){
+double sum = 0;
+for(int j = 0; j < K; j++) sum += alpha[j]*R[j];
+if(i == 0) lambda[i] = n/sum;
+

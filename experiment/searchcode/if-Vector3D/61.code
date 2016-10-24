@@ -1,0 +1,9 @@
+package de.nerogar.gameV1.physics;
+
+import de.nerogar.gameV1.Vector3d;
+
+public class BoundingAABB extends Bounding {
+
+public Vector3d a = new Vector3d(0, 0, 0);
+public Vector3d b = new Vector3d(0, 0, 0);
+

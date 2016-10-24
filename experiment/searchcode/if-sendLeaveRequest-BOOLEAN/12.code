@@ -1,0 +1,12 @@
+public void create(LeaveRecord leaveRecord) throws BusinessException {
+/*
+* 必须先设置审批人才能请假
+*/
+if (this.approveService.getApprover() == null) {
+if (isAfterEndDate || isBeforeStartDate) {
+return;
+}
+
+boolean inDateRange = this.inDateRange(sourceLeave, targetLeave);
+if (inDateRange) {
+

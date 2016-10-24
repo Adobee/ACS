@@ -1,0 +1,6 @@
+DocParser docParser = new DocParser(docPath);
+ArrayList<double[]> tfidfMatrix = docParser.tfIdfCalculator();
+Entity[] my_doc_set = new Entity[tfidfMatrix.size()];
+for(int i = 0; i < tfidfMatrix.size(); i++){
+double[] temp = new double[tfidfMatrix.get(i).length];
+

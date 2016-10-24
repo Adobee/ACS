@@ -1,0 +1,8 @@
+protected boolean removeEldestEntry(final Map.Entry<TranspositionTableEntry, TranspositionTableEntry> eldest) {
+if (super.size() > maxEntries) {
+evictedKey = eldest.getKey();
+lruCache.put(key, value);
+
+if (lruCache.evictedKey != null) {
+recycledKey = lruCache.evictedKey;
+

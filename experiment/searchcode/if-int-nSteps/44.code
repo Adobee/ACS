@@ -1,0 +1,9 @@
+public int exitmode;
+public int nsteps;
+public int hiddenlines;
+public int ncycles;
+private int startSpeed;
+private static int stringToExit(final String sexit) {
+for (int i = 0; i < RunLog.exitstrings.length; ++i) {
+if (sexit.equalsIgnoreCase(sexit)) {
+

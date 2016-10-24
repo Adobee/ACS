@@ -1,0 +1,10 @@
+private synchronized byte[] getCachedValue() throws IOException {
+if (!cached) {
+cached = true;
+return resource.getPath();
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+

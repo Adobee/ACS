@@ -1,0 +1,10 @@
+public void deinitializeLCM() {
+//if (mLCM != null) mLCM.close();
+}
+
+public void publishPreviewJpeg(byte[] jpeg, int width, int height) {
+frame.pixelformat = image_t.PXIEL_FORMAT_NV21;
+
+if (mLCM != null) {
+mLCM.publish(LCM_VIDEO_LEFT, frame);
+

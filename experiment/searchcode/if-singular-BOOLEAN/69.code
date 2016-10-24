@@ -1,0 +1,11 @@
+public void setSingularName(String singularName)
+throws ModelException
+{
+if (!Utility.isValidJavaIdentifier(singularName)){
+throw new ModelException(&quot;Invalid join name: &quot; + singularName);
+}
+this.singularName = singularName;
+}
+
+public abstract boolean referencesUniqueRow();
+

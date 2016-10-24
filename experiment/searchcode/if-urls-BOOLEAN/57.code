@@ -1,0 +1,11 @@
+public List<ImageUrl> get636x400() {
+return getImageUrls(ImageSize.SIZE_636_BY_400);
+}
+
+public boolean hasImageUrls(ImageSize size) {
+return (urls != null) &amp;&amp; (urls.size() > 0);
+}
+
+public boolean hasImageUrls(int width, int height) {
+List<ImageUrl> urls = getImageUrls(width, height);
+

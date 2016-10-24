@@ -1,0 +1,15 @@
+
+public class Range {
+
+double min;
+
+double max;
+
+Range(double min, double max) {
+this.min = min;
+this.max = max;
+}
+
+public boolean inRange(double value) {
+if (value >= min &amp;&amp; value <= max)
+

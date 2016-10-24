@@ -1,0 +1,6 @@
+EmbeddedConfiguration config = Db4oEmbedded.newConfiguration();
+config.common().objectClass(CashFloDay.class).cascadeOnUpdate(true);
+System.out.println(&quot;in updating balances&quot;);
+if(cfds == null ||cfds.size() ==0) break;
+CashFloDay cfd = cfds.get(0);
+

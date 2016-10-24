@@ -1,0 +1,12 @@
+public class Solution {
+public int trap(int[] A) {
+if(A.length == 0) return 0;
+int result = 0;
+for(int i=0;i<A.length;i++) {
+int tmp = Math.min(maxL[i], maxR[i]) - A[i];
+if(tmp > 0) result += tmp;
+}
+return result;
+}
+}
+

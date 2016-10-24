@@ -1,0 +1,6 @@
+Map<Class<? extends MetadataFieldMapper>, MetadataFieldMapper> metadataMappersMap = new HashMap<>();
+for (MetadataFieldMapper metadataMapper : metadataMappers) {
+if (indexCreated.before(Version.V_2_0_0_beta1) &amp;&amp; LEGACY_INCLUDE_IN_OBJECT.contains(metadataMapper.name())) {
+MetadataFieldMapper mergeWithMetadataMapper = mergeWith.metadataMapper(metadataMapper.getClass());
+if (mergeWithMetadataMapper != null) {
+

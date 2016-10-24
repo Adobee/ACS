@@ -1,0 +1,15 @@
+* copyright 2014© Azhdev
+*
+*/
+
+public class entityBattery extends Entity{
+
+private double startY;
+private double targetY;
+targetY = startY + worldObj.rand.nextDouble() * 5;
+}
+
+if(posY < targetY){
+motionY = 0.05;
+}else{
+

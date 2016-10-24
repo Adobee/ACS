@@ -1,0 +1,9 @@
+package es.borjabravo.rxjava;
+
+import retrofit.GsonConverterFactory;
+import retrofit.Retrofit;
+public static Retrofit getInstance() {
+if (RETROFIT == null)
+RETROFIT = new Retrofit.Builder()
+.baseUrl(&quot;http://www.omdbapi.com/&quot;)
+

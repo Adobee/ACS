@@ -1,0 +1,6 @@
+public Frame buildFromByte(byte[] headInByte, byte[] dataInByte, boolean isForProxy) {
+boolean isControlFrame = (headInByte[0] &amp; 0x80) > 0;
+Frame product = null;
+if (isControlFrame) {
+//getVersion 暂时不用
+

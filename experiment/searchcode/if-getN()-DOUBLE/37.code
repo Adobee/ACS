@@ -1,0 +1,13 @@
+int aux=0;
+for(int j = 0; j < (a.getN()-1); j++)
+{
+if(a.getNTeste(j) < a.getNTeste(j+1))
+{
+aux++;
+}
+}
+if(a.getNTeste(a.getN()-1) < a.getPf())
+aux++;
+
+aI.displayA(a, c, 0,aux==a.getN());
+

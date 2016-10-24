@@ -1,0 +1,9 @@
+final String msg, final Throwable throwable) {
+if (throwable == null) {
+try {
+return exClazz.getConstructor(String.class).newInstance(msg);
+} catch (final Exception e) {
+}
+}
+if (exClazz.isAssignableFrom(throwable.getClass())) {
+

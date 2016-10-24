@@ -1,0 +1,11 @@
+public class LowercaseTrieVocabulary implements Vocabulary {
+private boolean isWord = false;
+
+// The number of possible children is the number of letters in the alphabet
+public boolean add(String s) {
+char first = s.charAt(0);
+
+int index = LOWERCASE.getIndex(first);
+
+if (index < 0) {
+

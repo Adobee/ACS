@@ -1,0 +1,7 @@
+int bigIndex2 = nums2.length - 1;
+
+while (small < big) {
+if (smallIndex1 < nums1.length &amp;&amp; smallIndex2 < nums2.length) {
+if (nums1[smallIndex1] < nums2[smallIndex2]) {
+small = nums1[smallIndex1];
+

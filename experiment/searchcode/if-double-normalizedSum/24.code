@@ -1,0 +1,9 @@
+s1 += r * r;
+}
+} else {
+if (xabs > x3max) {
+double r = x3max / xabs;
+public static double[] normalizeArray(double[] values, double normalizedSum) {
+if (Double.isInfinite(normalizedSum)) {
+throw new MathIllegalArgumentException(LocalizedFormats.NORMALIZE_INFINITE);
+

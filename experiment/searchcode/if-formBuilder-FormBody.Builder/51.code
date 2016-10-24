@@ -1,0 +1,7 @@
+builder.addHeader(entry.getKey(), entry.getValue());
+}
+
+FormBody.Builder formBuilder = new FormBody.Builder();
+for (Map.Entry<String, String> entry : getParams().entrySet()) {
+formBuilder.add(entry.getKey(), entry.getValue());
+

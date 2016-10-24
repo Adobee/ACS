@@ -1,0 +1,11 @@
+public boolean canCast(Class<?> type) {
+return (Boolean[].class == type);
+}
+
+public Object cast(Object obj, Class<?> type) {
+if (obj == null) {
+return null;
+}
+if ((obj instanceof boolean[]))
+return (boolean[]) obj;
+

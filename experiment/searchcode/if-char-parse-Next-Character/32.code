@@ -1,0 +1,14 @@
+public static LogicParser getInstance() {
+return ourInstance;
+}
+
+private char getChar() {
+if (next < 0 || next >= s.length()) {
+char c = getChar();
+
+if (Character.isDigit(c)) {
+return getGap(c);
+}
+
+if (Character.isUpperCase(c)) {
+

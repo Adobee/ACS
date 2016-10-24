@@ -1,0 +1,9 @@
+public IdScheme getIdSchemeByName(String name) {
+int index = Collections.binarySearch(this.getIdScheme(), new IdScheme(name));
+if (index == -1)
+return null;
+return this.getIdScheme().get(index);
+}
+
+public List<IdScheme> getIdScheme() {
+

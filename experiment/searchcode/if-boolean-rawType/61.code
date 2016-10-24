@@ -1,0 +1,10 @@
+public final boolean equals( final Object obj ) {
+if ( obj == this ) {
+return true;
+} else if ( ! ( obj instanceof ParameterizedType ) ) {
+builder.append( &#39;<&#39; );
+
+boolean isFirst = true;
+for ( Type type : this.actualTypeArguments ) {
+if ( isFirst ) {
+

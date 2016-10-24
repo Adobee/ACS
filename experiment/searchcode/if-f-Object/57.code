@@ -1,0 +1,8 @@
+for (int i = 0; i < 10; ++i) {
+Runtime.getRuntime().gc();
+if (i == 0) {
+cdl.countDown();
+// It is an abstract class to exercise the non-embedded imt/vtable case.
+static abstract class BigClass {
+static Object sf1;
+

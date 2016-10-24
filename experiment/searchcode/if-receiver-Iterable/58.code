@@ -1,0 +1,7 @@
+return FluentIterable.from(producers.get(ruleName));
+}
+
+public static FluentIterable<HttpReceiver> getHttpReceivers(Method input){
+public static FluentIterable<ExchangeReceiver> getExchangeReceivers(Method input){
+return getReceivers(input, ExchangeReceiver.class, ExchangeReceivers.class);
+

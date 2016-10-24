@@ -1,0 +1,12 @@
+return result;
+}
+
+@Override
+public Group addGroup(int fieldIndex) {
+SimpleGroup g = new SimpleGroup(schema.getType(fieldIndex).asGroupType());
+public Group getGroup(int fieldIndex, int index) {
+return (Group)getValue(fieldIndex, index);
+}
+
+private Object getValue(int fieldIndex, int index) {
+

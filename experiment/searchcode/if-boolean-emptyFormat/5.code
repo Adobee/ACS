@@ -1,0 +1,11 @@
+return (plr == null) || (plr.isOp()) || (PermApi.has(plr, &quot;permapi.command.data&quot;)) ? &quot;/data <player|g:group> [adress] [newvalue(\\r:empty value, \\r\\:remove adress)]&quot; : null;
+}
+
+public void handleCommand(MC_Player plr, String[] args)
+{
+if (args.length == 0) {
+plr.sendMessage(getHelpLine(plr));
+}
+else {
+boolean group = args[0].startsWith(&quot;g:&quot;);
+

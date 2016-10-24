@@ -1,0 +1,16 @@
+double r = x * x + y * y + z * z;
+double scale = 3d;
+double MI = 10000;
+int i = 0;
+
+for (i = 0; i < MI &amp;&amp; r < 9d; i++) {
+x = x1;
+}
+if (y - z < 0d) {
+double y1 = z;
+z = y;
+y = y1;
+}
+
+x = scale * x - 1d * (scale - 1d);
+

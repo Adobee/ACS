@@ -1,0 +1,9 @@
+// compute the number of slices where this shard appears
+int numSlicesInShard = max / numShards;
+int rest = max % numShards;
+if (rest > targetShard) {
+numSlicesInShard++;
+}
+
+if (numSlicesInShard == 1) {
+

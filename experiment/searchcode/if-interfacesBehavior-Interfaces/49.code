@@ -1,0 +1,6 @@
+* @param method lowest to consider
+* @param interfacesBehavior whether to search interfaces, {@code null} {@code implies} false
+public static Set<Method> getOverrideHierarchy(final Method method, final Interfaces interfacesBehavior) {
+org.apache.commons.lang3.Validate.notNull(method);
+final Set<Method> result = new LinkedHashSet<Method>();
+

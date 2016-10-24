@@ -1,0 +1,7 @@
+// check with offsetof() when adding a new arch, move to Arch if different.
+static final int SECCOMP_DATA_NR_OFFSET   = 0x00;
+static final int SECCOMP_DATA_ARCH_OFFSET = 0x04;
+long ret = linux_syscall(arch.seccomp, bogusArg);
+if (ret != -1) {
+throw new UnsupportedOperationException(&quot;seccomp unavailable: seccomp(BOGUS_OPERATION) returned &quot; + ret);
+

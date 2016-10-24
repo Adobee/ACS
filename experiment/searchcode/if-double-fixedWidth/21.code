@@ -1,0 +1,10 @@
+private DoubleProperty fixedWidth = new SimpleDoubleProperty(this, &quot;fixedWidth&quot;); //$NON-NLS-1$
+
+private DoubleProperty yOffset = new SimpleDoubleProperty(this, &quot;yOffset&quot;); //$NON-NLS-1$
+protected double computeMinWidth(double height) {
+return this.fixedWidth.get();
+}
+
+@Override
+protected double computeMaxWidth(double height) {
+

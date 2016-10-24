@@ -1,0 +1,13 @@
+package org.lewch.timeout;
+
+/***
+* 本线程设置了一个超时时间
+*
+* 该线程开始运行后，经过指定超时时间，
+public void run() {
+try {
+Thread.sleep(timeout);
+
+if (!isCanceled) {
+throw timeoutException;
+

@@ -1,0 +1,11 @@
+private final AtomicInteger queueLength;
+
+private int queueCapacity;
+private boolean statusIsOpen;
+private boolean statusIsProcessing;
+
+
+public Server(int queueCapacity) {
+taskQueue = new LinkedBlockingQueue<Task>();
+queueLength = new AtomicInteger(0);
+

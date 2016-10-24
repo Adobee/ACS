@@ -1,0 +1,11 @@
+* @author Kashif Ahmed Khan
+*/
+public class Complex {
+
+private double real;
+private double imaginary;
+
+public Complex() {
+final Complex other = (Complex) obj;
+if (Double.doubleToLongBits(this.real) != Double.doubleToLongBits(other.real)) {
+

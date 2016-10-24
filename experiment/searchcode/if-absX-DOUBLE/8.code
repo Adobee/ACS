@@ -1,0 +1,12 @@
+return volume[x][y][z];
+}
+
+public double getValue(double x, double y, double z)
+{
+x = x % xFrequency;
+if (x < 0) x += xFrequency;
+int absz = (int) SimpleMath.floord(z);
+double fractx = x - absx;
+double fracty = y - absy;
+double fractz = z - absz;
+

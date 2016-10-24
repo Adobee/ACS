@@ -1,0 +1,7 @@
+notNull(configuration, &quot;Configuration defined by property source cannot be null&quot;);
+
+if (configuration instanceof EventSource) {
+((EventSource) configuration).addConfigurationListener(new ConfigurationListener() {
+public void configurationChanged(final ConfigurationEvent event) {
+if (event.getType() == AbstractConfiguration.EVENT_SET_PROPERTY) {
+

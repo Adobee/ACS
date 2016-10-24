@@ -1,0 +1,8 @@
+* Created by john on 5/27/15.
+*/
+public class mSwipeRefreshLayout extends SwipeRefreshLayout {
+private OnChildScrollUpListener mScrollListenerNeeded;
+public boolean canChildScrollUp() {
+if (mScrollListenerNeeded == null) {
+Log.e(mSwipeRefreshLayout.class.getSimpleName(), &quot;listener is not defined!&quot;);
+

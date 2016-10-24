@@ -1,0 +1,11 @@
+protected Collection<StepHandler> stepHandlers;
+
+/** Current step start time. */
+protected double stepStart;
+
+/** Current stepsize. */
+final double[] y, final double[] yDot, final double tEnd)
+throws MathIllegalStateException {
+
+double previousT = interpolator.getGlobalPreviousTime();
+

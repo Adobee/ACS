@@ -1,0 +1,7 @@
+public void addMasterService(final MasterService service) {
+final MasterService payment1 = this.jdoTemplate.makePersistent(service);
+if (cache.containsKey(ALL_SERVICE_CACHE)) {
+final Collection<MasterService> results = this.jdoTemplate.detachCopyAll(this.jdoTemplate.find(
+MasterService.class, &quot;hidden==false&quot;));
+if (results != null) {
+

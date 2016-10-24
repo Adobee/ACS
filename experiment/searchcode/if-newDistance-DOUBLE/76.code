@@ -1,0 +1,9 @@
+while(running){
+double old_vel = vel;
+double newDistance = myDistance.getDistance();
+System.out.println(&quot;new distance: &quot;+newDistance);
+System.out.println(&quot;new vel: &quot;+vel);
+double diff = Math.abs(targetHeight-newDistance);
+
+if (diff < 5 &amp;&amp; Math.abs(vel) < 0.002) {
+

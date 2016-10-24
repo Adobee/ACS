@@ -1,0 +1,12 @@
+super(plugin);
+}
+
+@Override
+public boolean initialize() {
+loader = new ConfigLoader(plugin, &quot;stats.yml&quot;);
+public boolean hasStats() {
+return config.getKeys(false).size() > 0;
+}
+
+public void add(String name, Stat s, int amount) {
+

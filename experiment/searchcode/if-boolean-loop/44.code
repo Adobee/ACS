@@ -1,0 +1,16 @@
+private Clip clip;
+private boolean loop;
+public PlayLoopFile(String n, boolean l) {
+loop = l;
+try {
+File file = new File(n);
+clip.stop();
+}
+public void play() {
+clip.start();
+loop();
+}
+public void loop() {
+if (loop) {
+clip.setLoopPoints(0, -1);
+

@@ -1,0 +1,9 @@
+super.analyzeDependencies();
+if (root != null) {
+root.setContextValue(UPDATE_EXECUTED_FLAG, Boolean.TRUE);
+* @param analyzer the analyzer to close
+*/
+@Override
+protected void closeAnalyzer(Analyzer analyzer) {
+if (analyzer instanceof CPEAnalyzer) {
+

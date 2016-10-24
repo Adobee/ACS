@@ -1,0 +1,7 @@
+void onClose() {
+if (electionContext.compareAndSet(this, null)) {
+stopAccumulatingJoins();
+final ElectionContext context = electionContext.get();
+if (context == null) {
+return;
+

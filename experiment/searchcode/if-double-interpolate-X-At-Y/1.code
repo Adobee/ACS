@@ -1,0 +1,8 @@
+public static double interpolate(double x, ArrayList fct) {
+int len = fct.size();
+if (len == 0) {
+return Double.NaN;
+} else if (len == 1) {
+// function is a constant
+double[] pt = (double[])fct.get(0);
+

@@ -1,0 +1,8 @@
+public DeviceSecret secret() {
+if (hasBeenRegistered()) return secret;
+throw new RuntimeException(&quot;The secret has not been loaded yet.&quot;);
+}
+
+@Override
+public boolean hasBeenRegistered() {
+

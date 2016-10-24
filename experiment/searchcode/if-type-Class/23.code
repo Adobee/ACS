@@ -1,0 +1,8 @@
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+
+public class GenericsUtil {
+public static Class getSuperClassGenricType(Class clazz, int index) {
+Type genType = clazz.getGenericSuperclass();
+if (!(genType instanceof ParameterizedType)) {
+

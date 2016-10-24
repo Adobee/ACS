@@ -1,0 +1,10 @@
+public boolean moveIsValid(Position endPosition, ChessBoard chessBoard, ArrayList<Piece> darkPieces, ArrayList<Piece> lightPieces)
+{
+boolean valid = false;
+if(moveCount == 0 &amp;&amp; endPosition.getRow() == position.getRow() + (2 * colorModifier)
+&amp;&amp; ChessFunctions.findPiece(new Position(position.getRow() + colorModifier, position.getColumn()), chessBoard, darkPieces, lightPieces) == null)
+{
+valid = true;
+}
+else if(endPosition.getRow() == position.getRow() + colorModifier
+

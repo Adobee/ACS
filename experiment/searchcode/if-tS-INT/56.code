@@ -1,0 +1,8 @@
+@Override
+public double closestToZero(double[] ts) throws Exception {
+if (ts == null || ts.length == 0) {
+double maxNegative = MIN_TEMPERATURE;
+double minPositive = ts[0];
+for (int i = 0; i < ts.length; i++) {
+if (ts[i] < MIN_TEMPERATURE || ts[i] > MAX_TEMPERATURE) {
+

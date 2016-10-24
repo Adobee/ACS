@@ -1,0 +1,8 @@
+* @return the instant from 1970-01-01T00:00:00Z
+*/
+private long localToUTC(long localInstant) {
+int offset = zone.getOffsetFromLocal(localInstant);
+localInstant -= offset;
+if (offset != zone.getOffset(localInstant)) {
+throw new IllegalInstantException(localInstant, zone.getID());
+

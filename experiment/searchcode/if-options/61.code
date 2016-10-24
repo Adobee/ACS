@@ -1,0 +1,13 @@
+public class Cell implements Comparable<Cell> {
+
+private ArrayList<Integer> options;
+private int data;
+
+
+public int compareTo(Cell c){
+return this.options.size() - c.options.size();
+}
+
+public int getAmountOfOptions(){
+if(options == null){
+

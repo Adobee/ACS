@@ -1,0 +1,13 @@
+public Map<Material, Boolean> getBlockZoneRule() {
+return this.blockZoneRule;
+}
+
+public boolean getRule(Material material) {
+if (this.blockZoneRule.get(material) != null) {
+this.blockZoneRule.put(material, rule);
+}
+}
+
+public void editRule(Material material, boolean newRule) {
+if (this.blockZoneRule.containsKey(material)) {
+

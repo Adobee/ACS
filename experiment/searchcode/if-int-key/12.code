@@ -1,0 +1,4 @@
+public void keyPressed(boolean [] keyPressed,int KEY_LEFT, int KEY_RIGHT, int KEY_UP, int KEY_DOWN, int KEY_Q, int KEY_ENTER, int KEY_BACKSPACE, int KEY_P, KeyEvent e) {
+keyPressed[KEY_Q]=false;
+keyPressed[KEY_P]=false;
+

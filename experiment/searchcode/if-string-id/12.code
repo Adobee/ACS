@@ -1,0 +1,10 @@
+public class EmbeddedIdDummy implements Serializable{
+private int idInteger;
+private String idString;
+
+public EmbeddedIdDummy() {
+if (idInteger != that.idInteger) return false;
+if (!idString.equals(that.idString)) return false;
+
+return true;
+

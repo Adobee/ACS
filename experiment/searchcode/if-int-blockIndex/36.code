@@ -1,0 +1,9 @@
+public boolean isInstructionInCache(int pc) throws Exception {
+
+int wordIndex, blockIndex;
+int pcounter = pc;
+ICacheBlock iBlock = this.iCache[blockIndex];
+
+if (iBlock.words[wordIndex] == pc)
+return true;
+

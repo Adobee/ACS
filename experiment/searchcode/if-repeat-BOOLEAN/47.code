@@ -1,0 +1,11 @@
+public boolean onStep()
+{
+if(_repeatNum >= _repeatTotal)
+return true;
+else if(_action.onStep())
+{
+_repeatNum++;
+_action.onComplete();
+if(_repeatNum >= _repeatTotal)
+return true;
+

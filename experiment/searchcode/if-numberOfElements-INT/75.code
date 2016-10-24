@@ -1,0 +1,12 @@
+queue = temp;
+
+}
+
+@Override
+public void insert(int priority, T data) {
+if (numberOfElements == queue.length) {
+if (numberOfElements > 0) {
+int indexOfHigh = 0;
+for (int i = 0; i < numberOfElements; i++) {
+if (queue[i].getPriority() < queue[indexOfHigh].getPriority()) {
+

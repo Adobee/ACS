@@ -1,0 +1,9 @@
+} catch (SQLException e) {
+
+e.printStackTrace();
+
+} finally {
+
+try { if (result != null) result.close(); } catch (SQLException e) { e.printStackTrace(); }
+try { if (statement != null) statement.close(); } catch (SQLException e) { e.printStackTrace(); }
+

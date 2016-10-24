@@ -1,0 +1,14 @@
+public double[] weights = new double[] { 1.8, 1.2, 1.0, 2.4, 3.6, 4.0, 1.4,
+1.8 };
+// maximum weight
+public double W = 5.0;
+
+public double start() {
+// entry point into recursive function
+public double knapsack(int i, double W) {
+if (i < 0) {
+return 0;
+}
+if (weights[i] > W) {
+return knapsack(i - 1, W);
+

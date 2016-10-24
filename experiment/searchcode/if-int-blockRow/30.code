@@ -1,0 +1,12 @@
+public boolean backtrack(int [][] sudokuArray, int row, int col) {
+//GET NEXT
+if (row > 8) {
+row = 0;
+if (++col > 8) return true;
+}
+if (sudokuArray[row][col] != 0) return backtrack(sudokuArray, (row + 1), col);
+//boolean bool = new boolean[row];
+int blockRow = 0, blockCol = 0;
+if (valueRow < 3) blockRow = 0;
+else if (valueRow >= 3 &amp;&amp; valueRow < 6) blockRow = 3;
+

@@ -1,0 +1,8 @@
+import org.jfree.chart.plot.Plot;
+import org.jfree.chart.renderer.category.CategoryItemRenderer;
+import org.jfree.chart.renderer.xy.XYItemRenderer;
+public Plot create(DataSource dataSource, ChartParams params) throws GenerateException, DataSourceException
+{
+Class rendererClass = params.getClass(ChartParams.RENDERER);
+if (rendererClass == null || XYItemRenderer.class.isAssignableFrom(rendererClass)) {
+

@@ -1,0 +1,15 @@
+public long getSuccesses() {
+return successes;
+}
+
+public long getFailures() {
+return failures;
+public ObservedArmPerformance addFailure() {
+failures = failures + 1;
+return this;
+}
+
+@Override
+public int hashCode() {
+return 997 * Long.valueOf(successes).hashCode() ^ 991 * Long.valueOf(failures).hashCode();
+

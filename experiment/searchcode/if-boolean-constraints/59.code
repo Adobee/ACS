@@ -1,0 +1,8 @@
+import gov.nasa.jpf.constraints.expressions.NumericBooleanExpression;
+import gov.nasa.jpf.constraints.expressions.NumericComparator;
+public class ExpressionClassifier extends AbstractExpressionVisitor<Expression<?>, List<Expression<Boolean>>> {
+
+protected ExpressionClassifier() {}
+
+public static Expression<Boolean> getLinearConstraints(Expression<Boolean> constraint) {
+

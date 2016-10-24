@@ -1,0 +1,7 @@
+* @throws org.apache.commons.math3.exception.OutOfRangeException
+*             if {@code initValue <= 0} or {@code initValue > 1}.
+public static LearningFactorFunction quasiSigmoidDecay(final double initValue, final double slope, final long numCall) {
+
+if(initValue <= 0 || initValue > 1) {
+throw new OutOfRangeException(initValue, 0, 1);
+

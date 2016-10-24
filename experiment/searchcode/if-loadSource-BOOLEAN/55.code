@@ -1,0 +1,15 @@
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+public class Source {
+
+public static final boolean CACHE = false;
+public String getSource() throws Exception {
+if (CACHE) {
+if (cache == null) {
+cache = loadSource();
+}
+
+return cache;
+} else {
+

@@ -1,0 +1,9 @@
+if(!selection.metadata &amp;&amp; !selection.text &amp;&amp; !selection.tokenize) return d;
+
+int metadataSize = input.readInt();
+int textSize = input.readInt();
+int termsSize = input.readInt();
+
+if (selection.metadata) {
+d.metadata = SerializerCommon.readMetadata(input, buffer);
+

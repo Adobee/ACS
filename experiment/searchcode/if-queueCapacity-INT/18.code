@@ -1,0 +1,6 @@
+* A SynchronousQueue is used if the queueCapacity <= 0. A SynchronousQueue is
+* essentially a queue with 0 capacity, hence the associated ExecutorService
+public BoundedExecutorService(String threadPoolName, int poolSize, int queueCapacity) {
+
+this(threadPoolName, poolSize, queueCapacity, false);
+

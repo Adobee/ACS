@@ -1,0 +1,10 @@
+public class Utils {
+
+public static final long BYTES_TO_KB = 1024;
+public static final long BYTES_TO_MB = BYTES_TO_KB * 1024;
+public static String formatBytes(final long bytes) {
+if (bytes <= 0)
+return &quot;0 bytes&quot;;
+
+return bytes / BYTES_TO_GB > 0 ? String.format(&quot;%.2f GB&quot;, bytes / (float) BYTES_TO_GB) :
+

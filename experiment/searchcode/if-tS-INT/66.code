@@ -1,0 +1,12 @@
+this.tsVersionnum = tsVersionnum;
+}
+
+@Override
+public int hashCode() {
+int hash = 0;
+hash += (tsId != null ? tsId.hashCode() : 0);
+return false;
+}
+TtsProducts other = (TtsProducts) object;
+if ((this.tsId == null &amp;&amp; other.tsId != null) || (this.tsId != null &amp;&amp; !this.tsId.equals(other.tsId))) {
+

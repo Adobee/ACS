@@ -1,0 +1,4 @@
+public static Integer irnpoi(final double mu) {
+if (mu >= 88) {
+return (int) (random.nextGaussian() * mu + mu);
+

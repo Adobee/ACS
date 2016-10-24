@@ -1,0 +1,9 @@
+import mimickit.util.PeriStimulusTimeHistogram;
+
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+dataset.addSeries(derivativeXYSeries);
+
+if (SOEASYController.getInstance().isSimulationRunning()) {
+MNDischargeRates dataSet2 = SOEASYController.getInstance()
+

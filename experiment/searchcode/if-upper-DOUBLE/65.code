@@ -1,0 +1,11 @@
+@Author(&quot;Julian Fleischer&quot;)
+@Deprecated
+public class Range {
+public final double $lower;
+public final double $upper;
+public final double $step;
+public Range(final double $a, final double $b, final double $step) {
+this.$step = $step;
+if ($a > $b) {
+$upper = $a;
+

@@ -1,0 +1,7 @@
+//Case 1: if node to be deleted has no children
+if(current.left==null &amp;&amp; current.right==null){
+resetNode(parent, current, isLeftChild, null);
+// if right is null then set left as value
+else if(current.right == null){
+resetNode(parent, current, isLeftChild, current.left);
+

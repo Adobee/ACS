@@ -1,0 +1,7 @@
+private static Map<String, Bitmap> cachedImages = new HashMap<String, Bitmap>();
+
+public static Bitmap loadBitmap(String urlString) {
+if (cachedImages.containsKey(urlString)) {
+URLConnection connection = url.openConnection();
+int maxStale = 60 * 60 * 24 * 28; // tolerate 4-weeks stale
+

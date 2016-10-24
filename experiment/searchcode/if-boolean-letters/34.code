@@ -1,0 +1,16 @@
+return hintData.getKnownWords().getWords(maxDesired, this);
+}
+
+@Override
+public boolean isOK(Word w) {
+int accum = 0;
+for (char c : this.letters) {
+if (w.getWord().indexOf(c) >= 0) {
+accum++;
+}
+}
+return accum >= numLetters;
+}
+
+}
+

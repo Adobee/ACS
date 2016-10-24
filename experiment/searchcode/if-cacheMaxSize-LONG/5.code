@@ -1,0 +1,10 @@
+private LatestExchangeRateProvider latestExchangeRateProvider;
+private boolean cachingEnabled;
+private long cacheMaxSize;
+private long cacheExpirationTimeInMillis;
+public void setCacheMaxSize(long cacheMaxSize) {
+this.cacheMaxSize = cacheMaxSize;
+}
+
+@Value(&quot;${tunedLatestExchangeRateProvider.cache.expirationTimeInMillis}&quot;)
+

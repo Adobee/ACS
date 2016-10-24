@@ -1,0 +1,10 @@
+import java.util.ConcurrentModificationException;
+import java.util.Iterator;
+
+import org.jboss.netty.channel.ChannelEvent;
+import org.jboss.netty.channel.ExceptionEvent;
+final ChannelEvent[] a = new ChannelEvent[size];
+for (int i = 0; i < size; i++) {
+final ChannelEvent product = nextChannelEvent();
+if (product == null) {
+

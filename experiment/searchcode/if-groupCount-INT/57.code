@@ -1,0 +1,8 @@
+List<List<DataTuple>> group = ds.group();
+for(int i = 0; i < Config.labelNum; i++){
+groupCount[i] = (double)group.get(i).size() / ds.size();
+public RandomClassifier(String dir) throws IOException {
+groupCount = new double[Config.labelNum];
+Scanner scan = new Scanner(new File(dir));
+for(int i = 0; i < Config.labelNum; i++){
+

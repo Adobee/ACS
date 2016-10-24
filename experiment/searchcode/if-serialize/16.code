@@ -1,0 +1,15 @@
+public class StringSerializer extends BaseSerializer<String> {
+
+@Override
+public String serialize(String k, String v) {
+if(baseJsonSerialize(k)!=null){
+public String serialize(String v) {
+if(v!=null){
+return &quot;\&quot;&quot;+v+&quot;\&quot;&quot;;
+} else {
+return &quot;null&quot;;
+}
+}
+
+}
+

@@ -1,0 +1,12 @@
+public void setTopUrls(LinkedHashMap<String, Long> topUrls) {
+this.topUrls = topUrls;
+}
+
+@Override
+public boolean equals(Object o) {
+if (o == null || getClass() != o.getClass()) return false;
+
+TopUrlsReport that = (TopUrlsReport) o;
+
+if (topUrls != null ? !topUrls.equals(that.topUrls) : that.topUrls != null) return false;
+

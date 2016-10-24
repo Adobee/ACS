@@ -1,0 +1,14 @@
+public class ROC {
+
+public ROC(){
+
+}
+
+private double trapezoidArea(double x1, double x2, double y1, double y2){
+double tp = 0;
+double fp = 0;
+double tpPrev = 0;
+double fpPrev = 0;
+double area = 0;
+double p = pCount;
+

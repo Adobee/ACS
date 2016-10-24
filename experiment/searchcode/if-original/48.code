@@ -1,0 +1,13 @@
+package com.tcks.javor;
+
+public class DelegatedTracer
+extends Tracer
+{
+private Tracer original;
+Tracer tracer = this.getOriginal();
+if(null!=tracer){
+tracer.trace(str);
+}
+}
+}
+

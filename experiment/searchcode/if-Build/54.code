@@ -1,0 +1,9 @@
+generateNewBuild();
+}
+
+boolean isBuilding(boolean notBuildingTime) {
+Build lastBuild = getLastBuild();
+if (notBuildingTime) {
+if (lastBuild.building) {
+updateBuildAfterBuilding(lastBuild);
+

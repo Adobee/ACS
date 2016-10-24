@@ -1,0 +1,7 @@
+public static int frameMsg(byte[] sendMsg, int msgSize, int protocol) throws IllegalArgumentException, IOException {
+
+switch (protocol) {
+case SDKConst.PROTOCOL_LIERDA:
+for (int i=0; i< msgSize ;i++) {
+if (sendMsg[i] == DELIMITER_MOORE) {
+

@@ -1,0 +1,8 @@
+public class Solution {
+public List<Integer> getRow(int rowIndex) {
+int i = 0;
+int j = rowIndex;
+List<Integer> res = new ArrayList<Integer>();
+if(rowIndex < 0)
+return res;
+

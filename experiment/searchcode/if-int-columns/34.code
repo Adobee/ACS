@@ -1,0 +1,13 @@
+public static final int COLUMNS_COUNT = SENSORS_COLUMNS + MOVES_COLUMNS;
+
+private int[] values = new int[COLUMNS_COUNT];
+
+public RowsData(int...vals){
+if (vals.length != COLUMNS_COUNT)
+public int getAt(int index){
+if (index >= COLUMNS_COUNT)
+throw new IllegalArgumentException(&quot;Wrong argument!&quot;);
+return values[index];
+}
+}
+

@@ -1,0 +1,13 @@
+public class Exp{
+public double doExp(double x, int y){
+if(y==0) return 1;
+if(y<0){
+x = 1.0/x;
+y = -y;
+}
+if((y &amp;1) ==1){
+return x*doExp(x, y/2) * doExp(x, y/2);
+
+}
+else{
+

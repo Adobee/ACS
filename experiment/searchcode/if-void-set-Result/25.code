@@ -1,0 +1,11 @@
+this.deferredResult = deferredResult;
+}
+
+public void complete(String result) {
+if (deferredResult.isSetOrExpired()) {
+} else {
+deferredResult.setResult(result);
+}
+}
+}
+

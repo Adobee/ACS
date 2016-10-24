@@ -1,0 +1,9 @@
+public abstract class NumericStringValue extends Value {
+
+protected NumericStringValue(int type, byte[] data, int contentLength) {
+super(type, data, contentLength);
+// Reject value creation if the length of the buffer exceeds
+// the maximum Integer number
+if (contentLength > Integer.MAX_VALUE) {
+throw new IllegalArgumentException(&quot;Content is too long for &quot; +
+

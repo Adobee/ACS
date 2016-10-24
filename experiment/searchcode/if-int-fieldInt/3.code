@@ -1,0 +1,9 @@
+import newtonERP.orm.field.type.FieldInt;
+import newtonERP.orm.field.type.FieldString;
+
+/**
+* Représente un entité d&#39;employé
+Vector<Field<?>> fieldsData = new Vector<Field<?>>();
+fieldsData.add(new FieldInt(&quot;Numéro&quot;, getPrimaryKeyName()));
+fieldsData.add(new FieldString(&quot;nom&quot;, &quot;Name&quot;));
+

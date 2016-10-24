@@ -1,0 +1,6 @@
+chain.doFilter(request, response);
+} catch (Exception ex) {
+Throwable[] causeChain = throwableAnalyzer.determineCauseChain(ex);
+
+Throwable securityException = throwableAnalyzer.getFirstThrowableOfType(AuthenticationException.class, causeChain);
+

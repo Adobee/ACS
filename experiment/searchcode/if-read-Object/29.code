@@ -1,0 +1,9 @@
+throws IOException, ClassNotFoundException
+{
+in.defaultReadObject();
+if (readObjectException != null) {
+if (readObjectException instanceof IOException) {
+throw (IOException) readObjectException;
+} else if (readObjectException instanceof ClassNotFoundException) {
+throw (ClassNotFoundException) readObjectException;
+

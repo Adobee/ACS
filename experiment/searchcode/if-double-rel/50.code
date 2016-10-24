@@ -1,0 +1,9 @@
+String paramsFn = args[1];
+
+Map<String, Double> relToMinScore = new HashMap<String, Double>();
+BufferedReader br = new BufferedReader(new FileReader(paramsFn));
+String[] parts = line.split(&quot; &quot;,3);
+double score = Double.parseDouble(parts[0]);
+String rel = parts[1];
+if (!relToMinScore.containsKey(rel)) {
+

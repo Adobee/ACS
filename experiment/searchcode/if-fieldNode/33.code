@@ -1,0 +1,8 @@
+public FieldNode(FieldNode parent,Field field){
+children = new ArrayList<FieldNode>();
+if(parent==null){
+this.deep=1;
+for(Field f:fields){
+if(!FieldUtils.isFinal(f)){
+children.add(new FieldNode(this,f));
+

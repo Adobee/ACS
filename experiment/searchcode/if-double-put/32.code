@@ -1,0 +1,9 @@
+public DoublePointer(DoubleBuffer paramDoubleBuffer)
+{
+super(paramDoubleBuffer);
+if ((paramDoubleBuffer != null) &amp;&amp; (paramDoubleBuffer.hasArray()))
+allocateArray(arrayOfDouble.length);
+put(arrayOfDouble);
+position(paramDoubleBuffer.position());
+limit(paramDoubleBuffer.limit());
+

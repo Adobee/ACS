@@ -1,0 +1,15 @@
+public nfu(String paramString, jjw paramjjw1, jjw paramjjw2, ngs paramngs, nrg paramnrg)
+{
+b = ((jjw)jju.a(paramjjw2));
+if (Build.VERSION.SDK_INT < 19) {}
+for (paramString = null;; paramString = new nfv(paramString, paramjjw1, paramjjw2, paramngs, paramnrg))
+{
+c = paramString;
+return;
+}
+}
+
+private static void a()
+{
+if (Build.VERSION.SDK_INT < 19) {
+

@@ -1,0 +1,10 @@
+public class BalancedBinaryTree {
+private boolean balanced = true;
+
+private int findDepth(TreeNode node, int depth) {
+if(!balanced || node == null) {
+return depth - 1;
+}
+
+int lDepth = findDepth(node.left, depth + 1);
+

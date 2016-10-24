@@ -1,0 +1,9 @@
+@Override
+public Double add(final Double q0, final Double q1)
+{
+return q0+q1;
+}
+
+@Override
+public Double subtract(final Double q0, final Double q1)
+

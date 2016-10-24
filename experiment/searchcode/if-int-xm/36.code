@@ -1,0 +1,15 @@
+throw new ArithmeticException(&quot;Shape parameter must be > 0, not &quot; + alpha);
+this.alpha = alpha;
+}
+
+public final void setXm(double xm)
+{
+if(xm <= 0)
+this.xm = xm;
+}
+
+public double logPdf(double x)
+{
+if(x < xm )
+return Double.NEGATIVE_INFINITY;
+

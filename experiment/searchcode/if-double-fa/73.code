@@ -1,0 +1,14 @@
+import org.nfunk.jep.*;
+
+public class LinearizationGraph extends Graph{
+
+double fa;
+double fb;
+
+public LinearizationGraph( CalculusApplet applet, String f, double a, double b ){
+drawLine( g, a, fa, b, fa );
+drawLine( g, b, fa, b, stat );
+drawLine( g, b, fa, b, fb );
+
+double xa = w/2 + (a - originX)*scale;
+

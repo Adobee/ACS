@@ -1,0 +1,6 @@
+public CustomerEmployer(Date expiresAt, Double salary, Contact contact, Address address, String name, Customer customer) {
+public void setExpiresAt(Date expiresAt) {
+if(expiresAt != null) {
+if(expiresAt.before(new Date())) {
+throw new IllegalArgumentException(&quot;bad date!&quot;);
+

@@ -1,0 +1,13 @@
+public void insert(Person person) {
+if (person.getAge() > 65) {
+olderQueue.insert(person);
+} else if (person.getAge() > 18) {
+childQueue.insert(person);
+}
+}
+
+public Person retrieve() {
+if (olderQueue.size() > 0) {
+return olderQueue.retrieve();
+} else if (adultQueue.size() > 0) {
+

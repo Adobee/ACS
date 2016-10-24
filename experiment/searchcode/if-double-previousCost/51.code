@@ -1,0 +1,10 @@
+double dk = jacNorm[k];
+if (dk == 0) {
+dk = 1.0;
+}
+double xk = dk * parameters[k].getEstimate();
+double actRed = -1.0;
+if (0.1 * cost < previousCost) {
+double r = cost / previousCost;
+actRed = 1.0 - r * r;
+

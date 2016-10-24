@@ -1,0 +1,11 @@
+StringBuilder sql = new StringBuilder(&quot;from FhiPicture where 1=1&quot;);
+
+FhiPicture pic = form.getPic();
+if (pic.getCode() != null
+&amp;&amp; !&quot;&quot;.equals(pic.getCode())) {
+sql.append(&quot; and (&quot;);
+//按角色查询
+//TODO 权限设置 如果 没有全部查看权限 进行可见性HQL拼装
+if(true){
+FhiRole role = user.getRole().values().iterator().next();
+

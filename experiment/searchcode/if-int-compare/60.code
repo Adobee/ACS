@@ -1,0 +1,9 @@
+public class StudentCompare implements Comparator<Student> {
+
+public int compare(Student compare1, Student compare2)
+{
+int ageCompare = compare1.getAge() - compare2.getAge();
+
+if(ageCompare != 0)
+return ageCompare;
+

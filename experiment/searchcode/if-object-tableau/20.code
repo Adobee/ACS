@@ -1,0 +1,12 @@
+* @see java.lang.Object#equals(java.lang.Object)
+*/
+@Override
+public boolean equals(Object o){
+if(!(o instanceof Tableau))return false;
+return ((Tableau)o).getId().equals(getId());
+* @see java.lang.Object#clone()
+*/
+@Override
+public Tableau cloneObject(Object object){
+Tableau newTableau = new Tableau();
+

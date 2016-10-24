@@ -1,0 +1,13 @@
+public Shape getShape() {
+return shape;
+}
+
+public void setShape(Shape shape) {
+this.shape = shape;
+}
+
+public double calcularArea() {
+if (shape instanceof IShapeArea) {
+return ((IShapeArea) shape).calcular();
+} else {
+

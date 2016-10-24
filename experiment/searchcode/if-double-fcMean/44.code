@@ -1,0 +1,8 @@
+* observed points (see the other {@link #fit(double[]) fit} method.
+* @throws NumberIsTooSmallException if the sample is too short for the
+// initialize the means
+double fcMean = 0;
+double fsMean = 0;
+
+double currentX = observations[0].getX();
+

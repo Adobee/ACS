@@ -1,0 +1,9 @@
+Assert.assertFalse((one.equals(zero) ||zero.equals(one)));
+}
+
+@Test
+public void testGetReducedFraction() {
+Fraction threeFourths = new Fraction(3, 4);
+Assert.assertTrue(threeFourths.equals(Fraction.getReducedFraction(6, 8)));
+Assert.assertTrue(Fraction.ZERO.equals(Fraction.getReducedFraction(0, -1)));
+

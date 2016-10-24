@@ -1,0 +1,10 @@
+public DayOfWeekEntity getDayOfWeekById(int id) {
+DayOfWeekEntity dayOfWeek = super.readById(id);
+if (dayOfWeek != null) {
+super.update(dayOfWeek);
+}
+
+@Override
+public void deleteDayOfWeek(int id) {
+DayOfWeekEntity dayOfWeek = super.readById(id);
+

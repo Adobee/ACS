@@ -1,0 +1,9 @@
+public CustomTextPaintContainer(final TextPaint defPaint) {
+this.defPaint = defPaint;
+}
+
+public final CustomTextPaint getTextPaint(final TypefaceEx face, final int textSize) {
+final int key = (face.id &amp; 0x0000FFFF) + ((textSize &amp; 0x0000FFFF) << 16);
+CustomTextPaint paint = paints.get(key);
+if (paint == null) {
+

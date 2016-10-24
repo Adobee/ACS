@@ -1,0 +1,10 @@
+this.receiptPrinter = receiptPrinter;
+}
+
+public List<Printer> getKitchenPrinters() {
+if (kitchenPrinters == null) {
+for (Printer printer : kitchenPrinters) {
+if (printer.isDefaultPrinter()) {
+defaultKitchenPrinter = printer;
+break;
+

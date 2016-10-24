@@ -1,0 +1,9 @@
+* Created by vivam on 1/13/16.
+*/
+public class DownloadLruCache extends LruCache<Long, String> {
+
+private static DownloadLruCache instance;
+
+public static DownloadLruCache getInstance(int maxSize) {
+if (instance == null) {
+

@@ -1,0 +1,9 @@
+for (Enumeration<InetAddress> enumIpAddr = intf.getInetAddresses(); enumIpAddr.hasMoreElements();)
+{
+InetAddress inetAddress = enumIpAddr.nextElement();
+if (!inetAddress.isLoopbackAddress() &amp;&amp; inetAddress instanceof Inet4Address)
+inetAddress = getLocalIpAdressFromIntf(&quot;wlan0&quot;);
+if(inetAddress!=null)
+{
+Log.d(TAG, &quot;Got an ip for interfarce wlan0&quot;);
+

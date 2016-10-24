@@ -1,0 +1,7 @@
+Request.Builder r = chain.request().newBuilder();
+if (isConnected()) {
+int maxAge = 2 * 60;
+r.addHeader(&quot;cache-control&quot;, &quot;public, max-age=&quot; + maxAge);
+} else {
+int maxStale = 30 * 24 * 60 * 60; // 30 days
+

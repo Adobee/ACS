@@ -1,0 +1,9 @@
+private int findKth(int A[], int startA, int B[], int startB, int k) {
+if(startA >= A.length) {
+return B[startB+k-1];
+int i, j;
+//i+j = k;
+int lenA = A.length - startA;
+int lenB = B.length - startB;
+if(lenA < lenB) {
+

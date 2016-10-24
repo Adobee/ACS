@@ -1,0 +1,8 @@
+} else if (len == 0) {
+return 0;
+}
+long toRead = Math.min(myLength, len);
+toRead = mySource.read(b, off, (int) toRead);
+if (toRead >= 0) {
+myLength -= toRead;
+

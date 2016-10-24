@@ -1,0 +1,10 @@
+public byte[][] readRAW_DAT(String name, int iw, int ih)
+{
+byte[][] pix = new byte[iw][ih];
+
+try
+DataInputStream  in = new DataInputStream(fin);
+
+//磁盘文件读入数据
+for(int j = 0; j < ih; j++)
+

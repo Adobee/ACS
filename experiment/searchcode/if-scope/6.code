@@ -1,0 +1,10 @@
+package enumtest;
+
+public enum AttributeScope {
+TITLE(&quot;${title}&quot;),
+DESCRIPTION(&quot;${description}&quot;);
+public static AttributeScope fromScope(String key) {
+
+for (AttributeScope scope: AttributeScope.values()) {
+if (scope.getScope().equals(key)) {
+

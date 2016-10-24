@@ -1,0 +1,12 @@
+public class UsuarioGerenciadorTxLocal implements TxLocal{
+private List<Map<String,String>> oldstate;
+
+@Override
+public void prepare() throws Exception {
+public void rollback() throws Exception {
+if(oldstate != null){
+new UsuarioGerenciador().escreverUsuario(oldstate);
+}
+}
+}
+

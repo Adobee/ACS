@@ -1,0 +1,17 @@
+temp.rhs.add(&quot;NULL&quot;);
+
+return temp;
+}
+
+public boolean isEpsilonRule()
+{
+if(rhs.size() == 1 &amp;&amp; rhs.get(0).equals(&quot;NULL&quot;))  return true;
+rhs_temp += &quot; &quot;;
+}
+return rhs_temp;
+}
+
+public boolean isTheRightLexicalRule(String l, String r)
+{
+if (l.equals(this.lhs) &amp;&amp; r.equals(this.rhs.get(0))) return true;
+

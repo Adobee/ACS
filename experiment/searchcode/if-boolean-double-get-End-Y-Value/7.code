@@ -1,0 +1,9 @@
+public void onBlockForm(BlockFormEvent event)
+{
+if(rr.restoring)
+{
+boolean s = (double)event.getBlock().getX() >= rr.start.getX() &amp;&amp; (double)event.getBlock().getY() >= rr.start.getY() &amp;&amp; (double)event.getBlock().getZ() >= rr.start.getZ();
+boolean e = (double)event.getBlock().getX() <= rr.end.getX() &amp;&amp; (double)event.getBlock().getY() <= rr.end.getY() &amp;&amp; (double)event.getBlock().getZ() <= rr.end.getZ();
+if(s &amp;&amp; e)
+event.setCancelled(true);
+

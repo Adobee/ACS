@@ -1,0 +1,11 @@
+e.printStackTrace();
+}
+}
+
+public static int getByteSize(int skipIndex,String... keys){
+int length = 0;
+for(int i=0;i<keys.length;i++){
+byte[] keyByte = null;
+if(i != skipIndex){
+keyByte = md.digest(Bytes.toBytes(keys[i]));
+

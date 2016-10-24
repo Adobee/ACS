@@ -1,0 +1,7 @@
+List<RevCommit> commits = findCommitsUntilSomeTag(repo, headCommit, tagObjectIdToName);
+
+// if there is no tags or any tag is not on that branch then return generic describe
+if (tagObjectIdToName.size() > 0) {
+List<String> maybeList = tagObjectIdToName.get(objId);
+if (maybeList != null &amp;&amp; maybeList.get(0) != null) {
+

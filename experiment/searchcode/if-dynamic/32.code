@@ -1,0 +1,16 @@
+public Color getColor()
+{
+if (isDynamic)
+return dynamicC.getStaticColor();
+else
+return staticC;
+}
+
+public void setAlpha(int alpha)
+if (alpha < 0 || alpha > 255) throw new RuntimeException(&quot;Alpha out of range&quot;);
+if (isDynamic) dynamicC.setAlpha(alpha);
+else staticC = new Color(staticC.getRed(),staticC.getGreen(),staticC.getBlue(),alpha);
+}
+
+}
+

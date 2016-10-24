@@ -1,0 +1,8 @@
+public void setTickUnit(NumberTickUnit unit, boolean notify,
+boolean turnOffAutoSelect) {
+
+ParamChecks.nullNotPermitted(unit, &quot;unit&quot;);
+this.tickUnit = unit;
+if (turnOffAutoSelect) {
+setAutoTickUnitSelection(false, false);
+

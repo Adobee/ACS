@@ -1,0 +1,9 @@
+private final int value;
+
+MediaTypeEncoding(final int value) {
+this.value = value;
+}
+
+public int getValue()          {return value;}
+public int getEncodedValue()   {return value << TagEncoding.MEDIA_TYPE.getBitPos();}
+

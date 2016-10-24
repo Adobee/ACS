@@ -1,0 +1,14 @@
+this.userTimePlaced = packet.getTimePlaced();
+this.delta = delta;
+}
+
+public boolean shouldExplode() {
+long currentTime = System.currentTimeMillis();
+if (userTimePlaced + delta <= currentTime) {
+return true;
+} else {
+return false;
+}
+}
+}
+

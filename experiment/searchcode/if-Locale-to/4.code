@@ -1,0 +1,14 @@
+private Language( Locale locale ) {
+if( locale == null ) {
+throw new InvalidParameterException( &quot;locale cannot be null&quot; );
+this( new Locale( token ) );
+}
+
+public Locale getLocale() {
+return locale;
+}
+
+@Override
+public String toString() {
+return getLocale().toString();
+

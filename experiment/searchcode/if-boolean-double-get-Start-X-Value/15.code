@@ -1,0 +1,6 @@
+public boolean isIncrease(ExtremeSegment current){
+if(current.getStartEntry() == null || current.getEndEntry() == null) return false;
+Double start = current.getStartEntry().getValue();
+Double end = current.getEndEntry().getValue();
+return end.compareTo(start)<0;
+

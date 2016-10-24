@@ -1,0 +1,9 @@
+result.addChecker(ExpectedThrowableChecker.create(method));
+return result;
+}
+
+@Override
+public boolean assertThrowable(Throwable throwable) {
+boolean result = false;
+for (ThrowableChecker checker : checkers) {
+

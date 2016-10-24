@@ -1,0 +1,10 @@
+private static Logger log = LoggerFactory.getLogger(ConsensusBasedDecisionManager.class);
+
+List<DecisionVoter<T>> decisionVoters;
+
+private boolean allowIfAllAbstainDecisions = false;
+
+private boolean allowIfEqualGrantedDeniedDecisions = true;
+
+public void setDecisionVoters(List<DecisionVoter<T>> voters) {
+

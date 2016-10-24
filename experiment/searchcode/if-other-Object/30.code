@@ -1,0 +1,12 @@
+package br.xmock;
+
+abstract class Parameter {
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj) return true;
+return equalsWithAnyObject((AnyObjectParameter)this, other);
+
+if (other instanceof AnyObjectParameter)
+return equalsWithAnyObject((AnyObjectParameter)other, this);
+

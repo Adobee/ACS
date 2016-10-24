@@ -1,0 +1,9 @@
+private static Boolean debugEnabled  = S_LOGGER.isDebugEnabled();
+
+public String forum() {
+if (S_LOGGER.isDebugEnabled())S_LOGGER.debug(&quot;entered forumIndex()&quot;);
+byte[] usernameEncode = Base64.encodeBase64(username.getBytes());
+String encodedUsername = new String(usernameEncode);
+
+String password = credentials.getPassword();
+

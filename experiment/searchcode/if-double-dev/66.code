@@ -1,0 +1,7 @@
+public final class DoubleMaxStdDevClassifier
+implements RegionClassifier<Double, DoubleStream> {
+private final double maxStdDev;
+
+public DoubleMaxStdDevClassifier(double maxStdDev) {
+this.maxStdDev = maxStdDev;
+

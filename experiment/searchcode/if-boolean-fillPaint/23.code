@@ -1,0 +1,9 @@
+private DocumentView documentView;
+private final TextPaint textPaint = textPaint();
+private final Paint fillPaint = fillPaint();
+public void draw(Canvas canvas) {
+if (!isVisible()) {
+return;
+}
+canvas.drawRect(bounds, fillPaint);
+

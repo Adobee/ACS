@@ -1,0 +1,13 @@
+this.days = days;
+}
+
+public void setDate(int day, boolean on) {
+if (on) {
+days |= (Integer.parseInt(&quot;1000000&quot;, 2) >>> (day - 1));
+days &amp;= all;
+}
+}
+
+public void setSunday(boolean on) {
+if (on) days |= Integer.parseInt(&quot;1000000&quot;, 2);
+

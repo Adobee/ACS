@@ -1,0 +1,14 @@
+package com.maths;
+
+public class LCM {
+
+public int lcm(int A, int B) {
+
+int lcm = 1;
+
+int max = A > B ? A : B;
+int min = A > B ? B : A;
+
+for(int i = 1; i <= min; i++) {
+lcm = max * i;
+

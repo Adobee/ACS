@@ -1,0 +1,8 @@
+public void offerAt(int pos, E e) {
+if(pos == IN_TIES) {
+for(Iterator<E> i = ties.iterator(); i.hasNext();) {
+E e2 = i.next();
+// Updated object will be worse than the current ties
+if(pos >= 0 &amp;&amp; !ties.isEmpty() &amp;&amp; compare(e, ties.get(0)) < 0) {
+removeAt(pos);
+

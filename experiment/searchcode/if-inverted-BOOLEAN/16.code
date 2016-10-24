@@ -1,0 +1,14 @@
+super(moduleNumber, channel);
+mInverted = inverted;
+}
+
+public void set(boolean on) {
+if(mInverted) {
+super.set(on);
+}
+}
+
+public boolean get() {
+if(mInverted) {
+return !super.get();
+

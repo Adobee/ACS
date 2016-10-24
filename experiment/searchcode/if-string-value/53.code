@@ -1,0 +1,14 @@
+public static String removeZerosAtEnd(String value) {
+if (value.contains(&quot;.&quot;)) {
+while (value.endsWith(&quot;0&quot;)) {
+value = value.substring(0, value.length() - 1);
+}
+if (value.endsWith(&quot;.&quot;)) {
+value = value.substring(0, value.length() - 1);
+}
+}
+return value;
+}
+
+}
+

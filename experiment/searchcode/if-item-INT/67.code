@@ -1,0 +1,12 @@
+return item_list[i];
+}
+
+public ItemStack putInSlot(ItemStack items, int i) {
+
+if (items == null) {
+ItemStack out = item_list[i];
+if (item_list[i].getItem().equalTo(items.getItem())) {
+int excedent = item_list[i].add(items.size, max_stack_size);
+if (excedent == 0)
+return null;
+

@@ -1,0 +1,9 @@
+List<Dfp[]> list = LEGENDRE_POLYNOMIALS.get(dfpField.getRadixDigits());
+if (list == null) {
+list = new ArrayList<Dfp[]>();
+list.add(new Dfp[] {
+dfpField.getOne()                     // P0(X) = 1
+});
+list.add(new Dfp[] {
+dfpField.getZero(), dfpField.getOne() // P1(X) = 0 + 1 * X
+

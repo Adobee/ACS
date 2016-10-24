@@ -1,0 +1,8 @@
+public Double add(Double a, Double b) {
+return Double.valueOf(a.doubleValue() + b.doubleValue());
+}
+public Double mul(Double a, Double b) {
+return Double.valueOf(a.doubleValue() * b.doubleValue());
+}
+public Double div(Double a, Double b) {
+

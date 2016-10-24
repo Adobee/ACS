@@ -1,0 +1,12 @@
+Short chrom = arrayDatum.getReporter().getChromosome();
+ChromosomeArrayData cad = this.chromosomeArrayData.get(chrom);
+if (cad == null) {
+this.chromosomeArrayData.put(chrom, cad);
+}
+cad.add(arrayDatum);
+}
+
+
+/**
+* Add chromosome array data.  If an existing
+

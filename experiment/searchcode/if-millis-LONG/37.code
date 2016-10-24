@@ -1,0 +1,9 @@
+private long sleepMillis=5*1000;
+private long microSleepMillis=1000;
+
+public SleepTask(long sleepMillis) {
+this.sleepMillis=sleepMillis;
+}
+
+public SleepTask(long sleepMillis, long microSleepMillis) {
+

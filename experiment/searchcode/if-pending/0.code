@@ -1,0 +1,8 @@
+int size = pendingPostPool.size();
+if(size > 0) {
+//优先移除末尾的
+PendingPost pendingPost = (PendingPost)pendingPostPool.remove(size - 1);
+List var1 = pendingPostPool;
+synchronized(pendingPostPool) {
+if(pendingPostPool.size() < 10000) {
+

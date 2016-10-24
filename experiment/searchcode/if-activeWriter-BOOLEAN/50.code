@@ -1,0 +1,8 @@
+final private File diskFile;
+final private boolean delOnClose;
+
+private Writer activeWriter;
+private IGTWriter newWriter(long startOffset) throws IOException {
+synchronized (lock) {
+if (activeWriter != null || !activeReaders.isEmpty())
+

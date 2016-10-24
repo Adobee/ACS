@@ -1,0 +1,10 @@
+public int hashCode() {
+return (int) partialName.charAt(1);
+}
+
+@Override
+public boolean equals(Object o) {
+if (o == null) return false;
+if (o instanceof RulePartial){
+if (((RulePartial) o).partialName.equals(this.partialName)){
+

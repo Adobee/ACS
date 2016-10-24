@@ -1,0 +1,13 @@
+this.baseType = baseType;
+}
+
+public void count(Object obj) {
+Class<?> type = obj.getClass();
+if (!baseType.isAssignableFrom(type)) {
+Class<?> superClass = type.getSuperclass();
+if (superClass!=null &amp;&amp; baseType.isAssignableFrom(superClass)) {
+countClass(superClass);
+}
+}
+}
+

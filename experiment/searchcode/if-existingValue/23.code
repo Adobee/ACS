@@ -1,0 +1,11 @@
+public class ContainedElementREFSVAdapter extends DmcTypeContainedElementREFSV implements DmcAdapterIF {
+
+transient DmcTypeContainedElementREFSV existingValue;
+
+public ContainedElementREFSVAdapter(DmcAttributeInfo ai){
+public void resetToExisting() {
+if (existingValue == null)
+value = null;
+else
+value = existingValue.getSVCopy();
+

@@ -1,0 +1,11 @@
+public abstract class BaseEntity extends BBPersistentObject implements IEntity, IArtifactOwner<EntityType, String>, IStatusable, Serializable {
+
+private EntityType ownerType;
+private String name;
+this.ownerType = ownerType;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+

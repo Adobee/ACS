@@ -1,0 +1,11 @@
+public boolean search(int[] A, int target) {
+if(A.length==0)
+return false;
+int low = 0;
+int high = A.length-1;
+while(low<high){
+int mid = low+(high-low)/2;
+if(A[mid]==target)
+return true;
+if(A[mid]>A[low]){
+

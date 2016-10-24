@@ -1,0 +1,10 @@
+public ListIdentifier(final Collection<? extends Object> values) {
+if (values == null || values.size() == 0) {
+this.values = Collections.emptyList();
+this.values = Collections.unmodifiableList(new ArrayList<>(values));
+}
+}
+
+public ListIdentifier(final Object... values) {
+if (values == null || values.length == 0) {
+

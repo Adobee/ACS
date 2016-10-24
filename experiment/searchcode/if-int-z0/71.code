@@ -1,0 +1,5 @@
+// final String exp = &quot;^([a-zA-Z0-9 ]+)=([a-zA-Z0-9 ]+)[#]*$&quot;;
+// final String exp = &quot;^([a-zA-Z0-9 ]+)=([a-zA-Z0-9 ]+)&quot;;
+final String exp = &quot;^([a-zA-Z0-9 ]+)=([a-zA-Z0-9 ]+)([^=]*)$|&quot;
++ &quot;^([a-zA-Z0-9 ]+)=([a-zA-Z0-9 ]+)#(.*)$&quot;;
+

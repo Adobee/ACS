@@ -1,0 +1,10 @@
+Response(&quot;response&quot;);
+
+private String mRawType;
+
+MessageType(String rawType) {
+mRawType = rawType;
+public static MessageType fromRawType(String rawType) {
+if (Request.is(rawType)) return Request;
+if (Response.is(rawType)) return Response;
+

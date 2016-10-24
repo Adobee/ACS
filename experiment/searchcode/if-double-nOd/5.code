@@ -1,0 +1,10 @@
+public class DoubleConnectedEdgeList<T extends Comparable> implements Iterable{
+NodDCEL<T> start;
+NodDCEL<T> finish;
+
+public DoubleConnectedEdgeList(){
+NodDCEL<T> first = start.next;
+NodDCEL<T> second;
+if(first == finish){
+return null;
+

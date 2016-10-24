@@ -1,0 +1,6 @@
+public void summarize(Step step) {
+for(Region field : step.getJustClosedFields()) {
+boolean granaryJustPlaced = step.getTile().getAreas().stream().filter(a -> a.getActor().getActorType().isGranary()).findAny().isPresent();
+if(field.isContainsGranary()) {
+evaluateAndAccrue(step, field, new FieldsEvaluator().evaluateField(field, granaryJustPlaced, false));
+

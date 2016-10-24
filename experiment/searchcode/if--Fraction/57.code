@@ -1,0 +1,15 @@
+package my_math;
+/**
+*
+*/
+
+/**
+* @author Adam Snaider
+*
+*/
+public class Fraction {
+private int numerator;
+private int divisor;
+
+public Fraction(int numerator, int divisor) {
+

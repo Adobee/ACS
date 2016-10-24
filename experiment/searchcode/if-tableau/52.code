@@ -1,0 +1,10 @@
+Tableau tableau = gson.fromJson(jsTableau, Tableau.class);
+
+if (horloge != null) {
+stopHorloge();
+// si il n&#39;y a pas de thread actif on en lance un
+if (horloge == null) {
+return send(jsTableau);
+}
+Tableau tableau = gson.fromJson(jsTableau, Tableau.class);
+

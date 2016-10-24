@@ -1,0 +1,6 @@
+XYItemRenderer xyitemrenderer = xyplot.getRenderer();
+if (xyitemrenderer instanceof XYLineAndShapeRenderer) {
+public void renderMultiAxisChart(XYDataset xyDataset, XYPlot xyPlot, int i,
+String name) {
+if (i == 1) {
+

@@ -1,0 +1,14 @@
+import org.jfree.chart.renderer.category.CategoryItemRenderer;
+import org.xwiki.component.annotation.Component;
+
+/**
+* A {@link PlotGenerator} for generating bar charts.
+public class BarPlotGenerator extends AbstractCategoryPlotGenerator
+{
+@Override
+protected CategoryItemRenderer getRenderer(Map<String, String> parameters)
+{
+return new BarRenderer();
+}
+}
+

@@ -1,0 +1,12 @@
+public class LinkedVector implements Vector, Cloneable, Serializable{
+
+protected Nod head;
+protected int size;
+
+public class Nod implements Serializable{
+public double element;
+@Override
+public void addElement(double d) {
+if (head == null) {
+head = new Nod(d);
+

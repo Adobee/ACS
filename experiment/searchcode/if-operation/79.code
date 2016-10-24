@@ -1,0 +1,14 @@
+
+public class Operation {
+private Operation() {
+System.out.println(&quot;+&quot;);
+}
+private static Operation instance = null;
+public static Operation getSingleton() {
+if (instance == null)
+return new Operation();
+else
+return instance;
+}
+}
+

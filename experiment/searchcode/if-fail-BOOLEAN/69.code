@@ -1,0 +1,12 @@
+private boolean dfs(String s, int idx, Set<String> dict, Set<Integer> fail) {
+if (s.length() == idx) return true;
+if (fail.contains(idx)) return false;
+if (dict.contains(s.substring(idx, i))) {
+if (dfs(s, i, dict, fail)) return true;
+}
+}
+fail.add(idx);
+return false;
+}
+}
+

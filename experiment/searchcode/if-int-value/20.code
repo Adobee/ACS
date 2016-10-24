@@ -1,0 +1,8 @@
+int[] count = new int[N];
+int maxValue = 0, lastMaxValue = 0;
+
+for (int k = 0; k < A.length; k++) {
+if (A[k] <= N) {
+if (count[A[k] - 1] < lastMaxValue) {
+count[A[k] - 1] = lastMaxValue + 1;
+

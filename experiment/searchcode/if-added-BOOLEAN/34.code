@@ -1,0 +1,16 @@
+this.limit = limit;
+}
+
+@Override
+public boolean add(E o) {
+boolean added = super.add(o);
+return added;
+}
+
+public boolean isFull()
+{
+if(this.size()>=limit) return true;
+return false;
+}
+}
+

@@ -1,0 +1,8 @@
+public class ClassType extends Type {
+
+/** Superclass, if there is one. */
+protected ClassType superclass;
+for (ClassType type = this.superclass;type != null;type = type.superclass)
+if (type == this)
+throw new SemanticError(&quot;Cyclic class hierarchy detected, on class: &quot; + this.getName(), this.getName() + &quot;.ic&quot;, 1); // TODO
+

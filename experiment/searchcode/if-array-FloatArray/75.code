@@ -1,0 +1,9 @@
+* @author jplaisance
+*/
+public final class FloatArray {
+private static final Logger log = Logger.getLogger(FloatArray.class);
+private final long length;
+
+public FloatArray(Memory buffer, long address, long length) {
+if (address < 0) throw new IndexOutOfBoundsException(&quot;address must be >= 0&quot;);
+

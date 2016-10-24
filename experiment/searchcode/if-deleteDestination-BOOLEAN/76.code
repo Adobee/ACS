@@ -1,0 +1,5 @@
+public boolean sendMessage(String text, String destination) {
+try {
+jmsTemplate.convertAndSend(destination, text,new ConversationMessagePostProcessor(conversations.get(destination)));
+if(log.isDebugEnabled())
+

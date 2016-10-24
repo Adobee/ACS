@@ -1,0 +1,8 @@
+public class IterableUtils {
+
+public static <T> boolean isEmpty(Iterable<T> iterable) {
+return iterable == null || iterable.iterator() == null || !iterable.iterator().hasNext();
+public static <T> List<T> toList(Iterable<T> iterable) {
+List<T> list = new ArrayList<T>();
+if (isEmpty(iterable)) return list;
+

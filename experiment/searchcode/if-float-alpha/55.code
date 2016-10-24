@@ -1,0 +1,11 @@
+import android.util.AttributeSet;
+import android.widget.FrameLayout;
+
+public class AlphaLayout extends FrameLayout{
+public void setFloatAlpha(float alpha){
+if(alpha < 0.001){
+this.alpha = 0;
+invalidate();
+}
+if(alpha > 0.999){
+

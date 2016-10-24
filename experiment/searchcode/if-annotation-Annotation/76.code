@@ -1,0 +1,8 @@
+package com.minehut.scaffold.snap;
+
+import java.lang.annotation.Annotation;
+import java.util.List;
+default <T extends Annotation> Optional<T> getAnnotation(Class<T> annotationType) {
+for (Annotation annotation : getAnnotations())
+if (annotation.annotationType() == annotationType)
+

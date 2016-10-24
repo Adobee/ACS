@@ -1,0 +1,12 @@
+import com.google.common.hash.Hashing;
+
+public class PasswordCredential {
+final String passwordPlaintext;
+String passwordSha256;
+public static PasswordCredential fromPlaintext(String password) {
+return new PasswordCredential(password, null);
+}
+
+public String getSha256() {
+if (passwordSha256 == null) {
+

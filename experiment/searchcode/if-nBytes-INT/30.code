@@ -1,0 +1,10 @@
+public static void main(String[] args) throws IOException, InterruptedException {
+int port = 12345;
+long nbytes = 1024;
+String address = &quot;127.0.0.1&quot;;
+if (args.length > 0) {
+} else if (&quot;client&quot;.equals(args[0])) {
+address = args[1];
+nbytes = Integer.parseInt(args[2]);
+if (args.length > 3) {
+

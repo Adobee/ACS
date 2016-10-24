@@ -1,0 +1,7 @@
+public double hit(Ray ray, ShadeRec sr, final double tMax, final Stack stack) {
+if (!getBoundingBox().hit(ray)) {
+return Double.NEGATIVE_INFINITY;
+}
+
+double a = p0.x - p1.x, b = p0.x - p2.x, c = ray.direction[0], d = p0.x - ray.origin.x;
+

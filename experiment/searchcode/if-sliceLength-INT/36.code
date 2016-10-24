@@ -1,0 +1,6 @@
+int sliceOffset = randomIntBetween(0, length / 2);
+int sliceLength = Math.max(1, length - sliceOffset - 1);
+BytesReference slice = pbr.slice(sliceOffset, sliceLength);
+index = randomIntBetween(sliceOffset, sliceOffset + sliceLength - 1);
+assertEquals(pbr.get(index), slice.get(index - sliceOffset));
+

@@ -1,0 +1,11 @@
+private static final long serialVersionUID = 1L;
+
+private Game ga;
+private int w,h;
+
+private double mx,my = 0;
+
+private Timer ref;
+for(int k = (int)(Math.min(ga.getCamX(),ga.getCamY())/50D)*50-50; k <= (int)(Math.max(ga.getCamX()+w/ga.getZoom(),ga.getCamY()+h/ga.getZoom())/50D)*50+50; k+=50){
+if((k-ga.getCamX())*ga.getZoom()>0 &amp;&amp; (k-ga.getCamX())*ga.getZoom()<w){
+

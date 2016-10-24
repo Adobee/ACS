@@ -1,0 +1,11 @@
+return this.seriesRenderingOrder;
+}
+
+
+public void setSeriesRenderingOrder(SeriesRenderingOrder order) {
+if (order == null) {
+int passCount = renderer.getPassCount();
+
+SeriesRenderingOrder seriesOrder = getSeriesRenderingOrder();
+if (seriesOrder == SeriesRenderingOrder.REVERSE) {
+

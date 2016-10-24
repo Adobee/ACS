@@ -1,0 +1,9 @@
+private String stopAt;
+
+public WeaCCCore(File standardClassesLocation, String stopAt) {
+this(standardClassesLocation, null, stopAt);
+executor.shutdown();
+if(stopAt.equals(&quot;precompilation&quot;)) {
+try {
+if(executor.awaitTermination(1000L, TimeUnit.HOURS)) {
+

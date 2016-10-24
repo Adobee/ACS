@@ -1,0 +1,14 @@
+public abstract class AbstractConfigKeyModel implements ConfigKeys {
+
+private boolean hasChanged = false;
+
+protected void propertyChanged(String newValue, String oldValue){
+hasChanged = true;
+}
+} else if (oldValue == null) {
+hasChanged = true;
+}
+}
+
+protected boolean isEmpty(String value){
+

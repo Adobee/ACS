@@ -1,0 +1,8 @@
+DateTimeZone zone = cDefault;
+if (zone == null) {
+synchronized(DateTimeZone.class) {
+zone = cDefault;
+public long getMillisKeepLocal(DateTimeZone newZone, long oldInstant) {
+if (newZone == null) {
+newZone = DateTimeZone.getDefault();
+

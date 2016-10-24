@@ -1,0 +1,10 @@
+public int uniquePaths(int m, int n) {
+if (m == 1 || n == 1) {
+return 1;
+}
+
+int[][] data = new int[m][n];
+for (int nn = n - 2; nn >= 0; nn--) {
+if(obstacleGrid[m - 1][nn] == 0){
+data[m - 1][nn] = data[m - 1][nn + 1];
+

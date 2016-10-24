@@ -1,0 +1,12 @@
+hooks = new HashMap<Integer, Thread>();
+}
+
+public int addShutdownHook(Runnable r) {
+synchLock.lock();
+try {
+hooks.put(handle, hook);
+Runtime.getRuntime().addShutdownHook(hook);
+return handle;
+} finally {
+synchLock.unlock();
+

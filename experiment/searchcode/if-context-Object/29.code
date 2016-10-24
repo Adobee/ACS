@@ -1,0 +1,9 @@
+/* 29 */     super(name);
+/*    */   }
+/*    */
+/*    */   public ConverterContext(String name, Object object)
+/*    */   public static ConverterContext getElementConverterContext(ConverterContext context)
+/*    */   {
+/* 61 */     if (isArrayConverterContext(context)) {
+/* 62 */       return new ConverterContext(context.getName().substring(0, context.getName().length() - 2));
+

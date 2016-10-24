@@ -1,0 +1,8 @@
+
+private void rotateLeft(Entry<K,V> p) {
+if (p != null) {
+Entry<K,V> r = p.right;
+p.right = r.left;
+if (r.left != null)
+r.left.parent = p;
+

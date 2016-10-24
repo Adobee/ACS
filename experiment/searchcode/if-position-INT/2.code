@@ -1,0 +1,14 @@
+int[] x, w;
+int positionI, positionJ;
+
+public CompareThread(int[] x, int[] w, int positionI, int positionJ) {
+this.positionJ = positionJ;
+}
+
+public void run() {
+boolean i;
+
+if (x[positionI] < x[positionJ]) {
+i = true;
+w[positionI] = 0;
+

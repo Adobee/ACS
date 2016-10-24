@@ -1,0 +1,17 @@
+* Set if this should be an SSL connection.
+*/
+public void setSSL(boolean isSSL)
+{
+_stream.setSSL(isSSL);
+}
+
+/**
+* Set if this should be an SSL connection.
+* The stream is always writable (?)
+*/
+public boolean canWrite()
+{
+if (_stream != null)
+return _stream.canWrite();
+else
+

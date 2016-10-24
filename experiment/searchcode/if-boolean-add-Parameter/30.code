@@ -1,0 +1,12 @@
+setParameter(null, arg);
+}
+}
+
+public void setParameter(String name, Object value) {
+parameterList.add(new Parameter(name, value));
+public <T> void setParameter(String name, Class<T> type, T value) {
+parameterList.add(new Parameter(name, type, value));
+}
+
+public Parameter getParameter(String name) {
+

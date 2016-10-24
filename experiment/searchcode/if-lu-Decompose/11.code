@@ -1,0 +1,8 @@
+LUDecompositionAlt_D64 alg = new LUDecompositionAlt_D64();
+alg.decompose(A);
+double luVal = alg.computeDeterminant().real;
+for (int j = 0; j < width; j++) {
+double real = LU.get(i, j);
+if( j <= i ) {
+if( j == i )
+

@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Calculadora {
+
+protected double v1, v2;
+
+@Override
+public String toString() {
+return v1 * v2;
+}
+
+public double div() {
+if (v2 != 0) {
+return v1 / v2;
+} else {
+

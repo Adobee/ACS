@@ -1,0 +1,9 @@
+return 0d;
+}
+final int binIndex = findBin(x);
+final RealDistribution kernel = getKernel(binStats.get(binIndex));
+* @return within-bin kernel parameterized by bStats
+*/
+protected RealDistribution getKernel(SummaryStatistics bStats) {
+if (bStats.getN() == 1 || bStats.getVariance() == 0) {
+

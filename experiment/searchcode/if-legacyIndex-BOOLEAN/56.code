@@ -1,0 +1,7 @@
+public Loader<Cursor> onCreateLoader(int id, Bundle args) {
+String selection;
+String selectionArgs[] = null;
+if (mComponentFilters.isEmpty()) {
+String styleImagePath = mCursor.getString(styleIdx);
+boolean isLegacyTheme = mCursor.getInt(legacyIndex) == 1;
+

@@ -1,0 +1,6 @@
+public static <T> List allMatches(List<T> list, java.util.function.Predicate<T> predicate){
+List<T> newList = new ArrayList<>();
+for(T word : list){
+if(predicate.test(word)){
+newList.add(word);
+

@@ -1,0 +1,10 @@
+javaIgnoredTypes.add(PatternType.SUPER);
+javaIgnoredTypes.add(PatternType.ATTRIBUTE_ASSIGNMENT);
+
+javaIgnoredTypes.add(PatternType.IF);
+* @see tests.tmp.IgnoredPatterns#javaIgnoredContainsAny(java.util.List)
+*/
+@Override
+public  boolean ignoredContainsAny(List<PatternType> types){
+boolean attdec=types.contains(PatternType.ATTRIBUTE_DECLARATION);
+

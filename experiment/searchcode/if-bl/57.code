@@ -1,0 +1,11 @@
+void SetForm1(int x, int y) {
+if (form == 1) {
+if (TryMove(-2, -1, 0, 1, 2, 1, 0, -1)) {
+bl[0].SetCoods(-2 + x, 2 + y);
+bl[3].SetCoods(1 + x, -1 + y);
+form = 0;
+}
+} else {
+if (TryMove(2, 1, 0, -1, -2, -1, 0, 1)) {
+bl[0].SetCoods(2 + x, -2 + y);
+

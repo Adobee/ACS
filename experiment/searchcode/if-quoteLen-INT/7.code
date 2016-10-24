@@ -1,0 +1,11 @@
+tokens = (String[]) split.toArray(new String[split.size()]);
+}
+}
+}
+
+protected List tokenize(char[] chars, int offset, int count) {
+if (chars == null || count == 0) {
+// handle found token
+int quoteLen = getQuoteMatcher().isMatch(chars, start, start, len);
+if (quoteLen > 0) {
+

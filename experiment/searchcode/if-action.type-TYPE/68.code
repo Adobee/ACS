@@ -1,0 +1,11 @@
+import action.SwapCardAction;
+import action.UnitAction;
+import action.UnitActionType;
+
+public class ActionEncoding {
+
+private static Map<String, Card> cardCodes = new HashMap<String, Card>();
+return &quot;s&quot; + ((SwapCardAction)action).card.name().substring(0, 2);
+} else if (action instanceof DropAction){
+return &quot;d&quot; + ((DropAction)action).type.name().substring(0, 2) + ((DropAction)action).to.toString();
+

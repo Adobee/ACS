@@ -1,0 +1,9 @@
+package com.spring4.chap03;
+
+import java.util.Date;
+
+public class MemberRegisterService {
+Member member = memberDao.selectByEmail(req.getEmail());
+if(member != null){
+throw new AlreadyExistingMemberException(&quot;dup email&quot; + req.getEmail());
+

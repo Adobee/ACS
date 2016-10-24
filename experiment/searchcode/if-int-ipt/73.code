@@ -1,0 +1,8 @@
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+*/
+package gplx.gfui; import gplx.*;
+public class IptEventType {
+public int Val() {return val;} int val;
+@Override public String toString() {return name;}
+@gplx.Internal protected IptEventType(int v, String s) {this.val = v; this.name = s;}
+

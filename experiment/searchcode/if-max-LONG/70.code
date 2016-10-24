@@ -1,0 +1,11 @@
+long maxPrime = 1;
+long k = n;
+if (n%2 == 0) {
+k = k/2;
+maxPrime = Math.max(2, maxPrime);
+}
+for (long i=3;i<=k;i+=2) {
+if (n%i == 0) {
+k = k/i;
+maxPrime = Math.max(i, maxPrime);
+

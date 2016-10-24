@@ -1,0 +1,13 @@
+float length2() {
+return (float) x*x+y*y+z*z;
+}
+
+float Normalize() {
+float Result = length();
+if (Result!=0)
+MultiplyScalar(1/Result);
+return Result;
+}
+
+Vector3 MultiplyScalar(float d) {
+

@@ -1,0 +1,5 @@
+int flags = (int)PSTObject.convertLittleEndianBytesToLong(timeZoneData, ruleOffset+4, ruleOffset+6);
+if ( (flags &amp; 0x0002) != 0 ) {
+SYSTEMTIME(byte[] timeZoneData, int offset) {
+wYear = (short)(PSTObject.convertLittleEndianBytesToLong(timeZoneData, offset, offset+2)&amp;0x7FFF);
+

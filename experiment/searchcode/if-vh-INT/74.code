@@ -1,0 +1,10 @@
+types.add(new Object[] {vhStaticField, Arrays.asList()});
+types.add(new Object[] {vhArray, Arrays.asList(double[].class, int.class)});
+
+return types.stream().toArray(Object[][]::new);
+static void testArrayUnsupported(VarHandle vh) {
+double[] array = new double[10];
+
+int i = 0;
+checkUOE(() -> {
+

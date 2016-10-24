@@ -1,0 +1,7 @@
+byte[] buf = new byte[1000];
+int amt;
+while ((amt = in.read(buf)) > 0) {
+out.write(buf, 0, amt);
+File tempDir = new File(System.getProperty(&quot;java.io.tmpdir&quot;));
+tempDir = new File(tempDir, &quot;joda-test-&quot; + (new java.util.Random().nextInt() &amp; 0xffffff));
+

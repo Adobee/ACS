@@ -1,0 +1,9 @@
+int start = 0;
+for(int end = A.length-1; start<end;){
+if(A[start] <= 0){
+int tmp = A[start];
+while(A[i] != i+1){
+if(A[i] > start+1 )
+break;
+int tmp = A[A[i]-1];
+

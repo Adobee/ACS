@@ -1,0 +1,13 @@
+System.err.println(Util.getTimestampStr() + &quot;UnknownHostException error.&quot;);
+e.printStackTrace();
+}
+
+if(transportClient.connectedNodes() == null){
+System.err.println(Util.getTimestampStr() + &quot;No connected nodes found.&quot;);
+System.err.println(Util.getTimestampStr() + &quot;ES Client obtained&quot;);
+
+return transportClient;
+}
+
+public boolean createIndex(String indexname, String mappingName, String mappingType, XContentBuilder mappingSource) throws IOException {
+

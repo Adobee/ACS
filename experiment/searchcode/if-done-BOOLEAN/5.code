@@ -1,0 +1,9 @@
+Field field = this.getClass().getDeclaredField(&quot;a&quot; + i);
+Boolean done = (Boolean) field.get(this);
+if(done != null &amp;&amp; done) {
+exercisesDone[i - 1] = true;
+int exercisesDone = 0;
+boolean[] done = allExercisesDone();
+for(int i = 0; i < done.length; i++) {
+if(done[i]) exercisesDone++;
+

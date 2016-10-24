@@ -1,0 +1,6 @@
+public class VariableSpeedLimit {
+public double journeyTime(int journeyLength, int[] speedLimit) {
+int time = 0;
+for (int i = 0;; i = (i + 1) % speedLimit.length) {
+if (journeyLength <= speedLimit[i]) {
+

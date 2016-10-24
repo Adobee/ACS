@@ -1,0 +1,14 @@
+public class EntropySplit implements AbstractSplitCalculation {
+
+private static final double logBase = Math.log(2.0);
+
+private double x_log2_x(double x) {
+if (x == 0.0) {
+return 0.0;
+}
+return x * Math.log(x) / logBase;
+}
+
+@Override
+public double calculateSplit(double leftPositive, double leftNegative, double leftSize, double rightPositive, double rightNegative, double rigthSize) {
+

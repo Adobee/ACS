@@ -1,0 +1,8 @@
+protected Void doInBackground(String... strings) {
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(API_URL).newBuilder();
+urlBuilder.addQueryParameter(&quot;zip&quot;, strings[0]);
+urlBuilder.addQueryParameter(&quot;APPID&quot;, APP_ID);
+urlBuilder.addQueryParameter(&quot;units&quot;, &quot;metric&quot;);
+HttpUrl httpUrl = urlBuilder.build();
+

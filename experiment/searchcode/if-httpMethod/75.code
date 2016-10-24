@@ -1,0 +1,13 @@
+methodMap.put(CONNECT.toString(), CONNECT);
+}
+
+public static HttpMethod valueOf(String name)
+{
+if (name == null) {
+throw new NullPointerException(&quot;name&quot;);
+HttpMethod result = (HttpMethod)methodMap.get(name);
+if (result != null) {
+return result;
+}
+return new HttpMethod(name);
+

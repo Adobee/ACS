@@ -1,0 +1,10 @@
+public void onReceive(Context paramContext, Intent paramIntent) {
+
+if (paramIntent.getAction()
+.equals(NotifyService.NOTIFY_DATA_UPDATE)) {
+initData();
+private void initData() {
+mNotifyViewLl.removeAllViews();
+mNotifyInfoList.clear();
+boolean isHasQueueType = false;
+

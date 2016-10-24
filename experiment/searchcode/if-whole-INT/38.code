@@ -1,0 +1,9 @@
+if(n == null || n.length() == 0)
+return &quot;ERROR&quot;;
+
+int wholeNum = Integer.parseInt(n.substring(0, n.indexOf(&quot;.&quot;)));
+while(wholeNum / 2 != 0){
+
+int remain = wholeNum % 2;
+sb.insert(0, Integer.toString(remain));
+

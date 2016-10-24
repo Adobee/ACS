@@ -1,0 +1,9 @@
+String[] ruleSpecList = decompose(ruleSetSpec, combinator) ;
+
+for ( String ruleSpec : ruleSpecList ) {
+if ( MinValidationRule.canHandle(ruleSpec)) {
+ruleSet.addRule(rule);
+}
+if ( BooleanValidationRule.canHandle(ruleSpec)) {
+ValidationRule rule = new BooleanValidationRule(ruleSpec);
+

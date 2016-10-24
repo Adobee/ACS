@@ -1,0 +1,15 @@
+@Resource(name = &quot;dynamicDAO&quot;)
+private IGenericDAO<Dynamic> dynamicDao;
+
+public boolean save(Dynamic dynamic) {
+try {
+this.dynamicDao.save(dynamic);
+Dynamic dynamic = (Dynamic) this.dynamicDao.get(id);
+if (dynamic != null) {
+return dynamic;
+}
+return null;
+}
+
+public boolean delete(Long id) {
+

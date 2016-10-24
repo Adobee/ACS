@@ -1,0 +1,10 @@
+private File diskCacheDir;
+private DiskLruCache diskLruCache;
+private String cacheDirName;
+
+
+public DiskLruCacheEntity(Context context, String cacheDirName){
+synchronized (diskCacheLock) {
+if (diskLruCache != null &amp;&amp; !diskLruCache.isClosed()) {
+try {
+

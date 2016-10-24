@@ -1,0 +1,12 @@
+rule = false;
+}
+}
+private static boolean[] ruleset = new boolean[13];
+static void enable(int rule) {
+if(rule > ruleset.length || rule < 0)
+ruleset[rule] = false;
+}
+static boolean getRule(int rule) {
+if(rule > ruleset.length || rule < 0)
+throw new IllegalArgumentException(&quot;This rule does not exist&quot;);
+

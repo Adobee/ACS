@@ -1,0 +1,19 @@
+String hemisphere = getHemisphere(latZone);
+double latitude = 0.0;
+double longitude = 0.0;
+
+if (hemisphere.equals(&quot;S&quot;))
+double n0;
+
+double r0;
+
+double _a1;
+
+double dd0;
+
+double t0;
+
+double Q0;
+
+double lof1;
+

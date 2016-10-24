@@ -1,0 +1,12 @@
+this.size = size;
+}
+
+@Override
+public int getDocId(int pos) {
+if (topDocs == null) {
+public float getScore(int pos) {
+if (topDocs == null) {
+topDocs = tdc.topDocs();
+}
+return topDocs.scoreDocs[pos].score;
+

@@ -1,0 +1,14 @@
+// and columns of A and the number of rows of B respectively.
+//
+@SuppressWarnings(&quot;unused&quot;)
+int nrowa, ncola, nrowb;
+if (transa == OP.None) {
+if (transb == OP.None)
+nrowb = k;
+else
+nrowb = n;
+int info = 0;
+if (m < 0)
+info = 3;
+else if (n < 0)
+

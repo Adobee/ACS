@@ -1,0 +1,10 @@
+private int xOffset;
+private int yOffset;
+
+public Screen(int width, int height) {
+pixels = new Array2D(width, height);
+int yp = y + yOffset + yPos;
+for (int x = 0; x < width; x++) {
+int xp = x + xOffset + xPos;
+if (xp < 0 || yp < 0 || xp >= pixels.getWidth() || yp >= pixels.getHeight())
+

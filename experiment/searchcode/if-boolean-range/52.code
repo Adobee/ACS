@@ -1,0 +1,10 @@
+private int[]	rangeData	= new int[8];
+private int		ranges;
+
+public void addRange(int start, int end) {
+if (ranges == 0 || end < rangeData[0]) {
+insertRange(0, start, end);
+return;
+}
+if (start > rangeData[ranges * 2 - 1]) {
+

@@ -1,0 +1,10 @@
+BlockingQueue<Runnable> taskQueue = null;
+private boolean isStopped = false;
+
+public PoolThread(String name,BlockingQueue queue){
+while(!isStopped){
+try{
+if(!taskQueue.isEmpty()){
+Runnable task = taskQueue.dequeue();
+task.run();
+

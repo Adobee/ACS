@@ -1,0 +1,9 @@
+this.memberDao = memberDao;
+}
+
+public Member save(Member member) {
+if(member.getUsername() != null &amp;&amp; member.getUsername().trim().length() > 0) {
+public Member update(Member member) {
+Member origMember = memberDao.getById(member.getId());
+if(origMember != null) {
+

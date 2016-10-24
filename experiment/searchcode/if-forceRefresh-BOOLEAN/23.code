@@ -1,0 +1,9 @@
+mBus.post(new LoadingEvent(true, R.string.loading_hosts));
+}
+
+@Override
+protected List<Host> doInBackground(Boolean... params) {
+Boolean forceRefresh = params[0];
+if (forceRefresh == null) {
+forceRefresh = false;
+

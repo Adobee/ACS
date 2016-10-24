@@ -1,0 +1,7 @@
+new Setting<>(&quot;action.auto_create_index&quot;, &quot;true&quot;, AutoCreate::new, Property.NodeScope);
+
+private final boolean dynamicMappingDisabled;
+private final IndexNameExpressionResolver resolver;
+public boolean shouldAutoCreate(String index, ClusterState state) {
+if (autoCreate.autoCreateIndex == false) {
+

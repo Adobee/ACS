@@ -1,0 +1,7 @@
+public void onCompleted(Object object) {
+if (object == null) {
+apiQuery.queryConversation(conversationUUID, new OnQueryCallback() {
+memoryQuery.cacheConversation((Conversation) object);
+}
+if (queryCallback != null) {
+

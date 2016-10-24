@@ -1,0 +1,6 @@
+import com.google.gwt.text.shared.AbstractRenderer;
+import com.gsr.myschool.common.client.proxy.EtablissementScolaireProxy;
+
+public class EtablissementRenderer extends AbstractRenderer<EtablissementScolaireProxy> {
+@Override
+

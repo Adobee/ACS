@@ -1,0 +1,11 @@
+public DelayGameTickListener(int tick_delay){
+this.tick_delay = tick_delay;
+this.tick_current = 0;
+}
+
+@Override
+public void tick(Game game) {
+
+if(tick_current >= tick_delay){
+tick_current = 0;
+

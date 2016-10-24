@@ -1,0 +1,12 @@
+public boolean canMoveToStarted() throws IllegalApiStateException {
+State localState = this.state;
+if (localState == State.INITIALIZED) {
+return true;
+}
+
+if (localState == State.STARTED) {
+return false;
+}
+
+if (localState == State.CLOSED) {
+

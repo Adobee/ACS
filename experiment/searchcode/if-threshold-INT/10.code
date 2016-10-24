@@ -1,0 +1,10 @@
+private int i;
+private IntSupplier is;
+public Loop(int threshold){
+this(0, 1, threshold);
+}
+public Loop(int initial, int threshold){
+public Loop(int initial, int add, int threshold){
+i = initial - 1;
+if(add > 0)is = () -> (i += add) > threshold ? (i = initial) : i;
+

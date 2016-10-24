@@ -1,0 +1,7 @@
+* @throws SecurityException if the application does not have sufficient security rights
+*/
+public static final void setCurrentMillisOffset(long offsetMillis) throws SecurityException {
+checkPermission();
+if (offsetMillis == 0) {
+cMillisProvider = SYSTEM_MILLIS_PROVIDER;
+

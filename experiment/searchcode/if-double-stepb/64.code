@@ -1,0 +1,8 @@
+GeoJsonChoroplethMap mapGeoJson = new GeoJsonChoroplethMap ();
+List <Double> ranges = Controller.calculateRanges(map);
+List<String> colors = Controller.generateColors(ranges.size(),map.getFirstColor(), map.getLastColor());
+List <String> features = new ArrayList<String>();
+
+//Get attributes
+HashMap<String,Double> values=Controller.getAttributes(map);
+

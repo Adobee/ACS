@@ -1,0 +1,6 @@
+assertThat(cluster0.numDataNodes(), equalTo(cluster1.numDataNodes()));
+if (checkClusterUniqueSettings) {
+assertThat(cluster0.getClusterName(), equalTo(cluster1.getClusterName()));
+public static void assertSettings(Settings left, Settings right, boolean checkClusterUniqueSettings) {
+Set<Map.Entry<String, String>> entries0 = left.getAsMap().entrySet();
+

@@ -1,0 +1,11 @@
+public final class Date {
+
+private Calendar calendar;
+private int year;
+private int month;
+private int dayOfMonth;
+int month = a.getMonth();
+int dayOfMonth = a.getdayOfMonth();
+boolean compare;
+if (this.year == year) {
+

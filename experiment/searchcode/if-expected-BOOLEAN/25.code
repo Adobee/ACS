@@ -1,0 +1,12 @@
+public class TitlePresentCondition implements ExpectedCondition<Boolean> {
+String expectedTitle;
+
+public TitlePresentCondition() {
+this(null);
+this.expectedTitle = expectedTitle;
+}
+
+@Override
+public Boolean apply(WebDriver d) {
+String title = d.getTitle();
+

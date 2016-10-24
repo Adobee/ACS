@@ -1,0 +1,10 @@
+dsq = BRISK.getDistance(s1, curr);
+if (dsq < 0)
+continue;
+if (dsq < distsq1) {
+distsq2 = distsq1;
+distsq1 = dsq;
+best = curr;
+} else if (dsq < distsq2) {
+distsq2 = dsq;
+

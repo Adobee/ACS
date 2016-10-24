@@ -1,0 +1,11 @@
+protected Direction direction;
+public Vector2D(double x, double y) {
+this.x = x;
+this.y = y;
+this.direction = Direction.RIGHT;
+public double getYSpeed() {
+return Math.abs(this.y);
+}
+public Direction getDirection() {
+if(this.x > 0) {
+

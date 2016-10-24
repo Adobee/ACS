@@ -1,0 +1,11 @@
+public class EggTrials{
+
+public int countTrials(int eggs, int floors){
+int[][] dp=new int[eggs+1][floors+1];
+
+for(int i=0;i<=eggs;i++){
+dp[i][0]=0;
+dp[i][1]=1;
+}
+for(int i=0;i<=floors;i++){
+

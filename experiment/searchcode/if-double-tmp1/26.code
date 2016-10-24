@@ -1,0 +1,9 @@
+* ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+* POSSIBILITY OF SUCH DAMAGE.
+*
+* The views and conclusions contained in the software and documentation are
+//			     	  t1*u1*v*y4  + t*u1*v*y5  + t*u*v*y6  + t1*u*v*y7;
+
+//final float y0 = strategy.get(baseX1    , baseX2,     baseX3);
+tmp1.set( cursor.getType() );
+

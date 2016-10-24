@@ -1,0 +1,14 @@
+public static int f(String exp, boolean res, int s, int e){
+if(s == e){
+if(exp.charAt(s) == &#39;1&#39; &amp;&amp; res)
+return 1;
+else if(exp.charAt(s) == &#39;0&#39; &amp;&amp; !res)
+c += f(exp, false, s, i - 1) * f(exp, true, i + 1, e);
+}
+}
+}
+else{
+for (int i = s + 1; i <= e; i += 2) {
+char op = exp.charAt(i);
+if(op == &#39;&amp;&#39;) {
+

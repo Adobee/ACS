@@ -1,0 +1,6 @@
+public <MODEL extends MasterDataWithDto, BUILDER extends MasterDataBuilderWithDto> List<MODEL> loadAll(MasterDataRepositoryWithDto<MODEL, BUILDER> repository, EnabledState enabledState) {
+List<MODEL> entities = new ArrayList<>();
+if (repository != null) {
+if (EnabledState.Enabled == enabledState) {
+entities = repository.loadAll(Enabled.TRUE);
+

@@ -1,0 +1,10 @@
+protected TimeData readTime(Type type) throws IOException {
+
+if (type.typeCode == Types.SQL_TIME) {
+long millis = readLong();
+protected TimestampData readDate(Type type) throws IOException {
+
+long millis = readLong();
+
+millis = HsqlDateTime.convertMillisFromCalendar(HsqlDateTime.tempCalDefault,
+

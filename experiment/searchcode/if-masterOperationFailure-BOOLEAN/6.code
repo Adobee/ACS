@@ -1,0 +1,8 @@
+final boolean masterOperationFailure = randomBoolean();
+
+Request request = new Request();
+PlainActionFuture<Response> listener = new PlainActionFuture<>();
+protected void masterOperation(Request request, ClusterState state, ActionListener<Response> listener) throws Exception {
+if (masterOperationFailure) {
+listener.onFailure(exception);
+

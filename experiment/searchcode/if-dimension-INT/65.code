@@ -1,0 +1,12 @@
+public class Dimension {
+int w;
+int h;
+
+public Dimension size (String name) {
+if (name.equals(&quot;0&quot;) {
+return new Dimension(1500,700); // A0
+}
+
+else if (name.charAt(0) == &#39;0)&#39;) {
+Dimension smallD = size(name.substring(1,name.lenght());
+

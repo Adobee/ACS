@@ -1,0 +1,16 @@
+package scheduling;
+
+public abstract class Task {
+
+boolean stopped = true;
+
+boolean sticky = false;
+stopped = false;
+onStart();
+}
+
+public final void stop() {
+if(!this.sticky) {
+onStop();
+stopped = true;
+

@@ -1,0 +1,8 @@
+boolean indexToAllShards = randomBoolean();
+
+if (indexToAllShards) {
+// insert enough docs so all shards will have a doc
+boolean useSyncIds = randomBoolean();
+if (useSyncIds == false) {
+logger.info(&quot;--> disabling allocation while the cluster is shut down&quot;);
+

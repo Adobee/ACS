@@ -1,0 +1,9 @@
+Request request = chain.request();
+
+boolean noStore = request.cacheControl().noStore();
+
+Timber.w(&quot;No store %s&quot;, noStore);
+
+// 如果已经在请求中配置了&quot;Cache-Control: no-store&quot;，则该请求不使用缓存
+if (noStore) return chain.proceed(request);
+

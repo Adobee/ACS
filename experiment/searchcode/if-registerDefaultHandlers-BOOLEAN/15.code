@@ -1,0 +1,9 @@
+Object obj = methodCall.getInvokedObject();
+Object toObj = methodCall.getArguments()[0];
+
+if (toObj == null) return false;
+
+if(parent.getTemplateObject() != null){
+try {
+if(Skeleton.isSkeleton(toObj) &amp;&amp;Skeleton.getSkeleton(toObj).getTemplateObject() != null){
+

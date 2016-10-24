@@ -1,0 +1,11 @@
+private static final double REL_TOL = 1e-7;
+private static final double ABS_TOL = 1e-15;
+
+public enum Optimizer { Simplex, CMAES, BOBYQA }
+public static double optimize(FitFunction f, MultivariateOptimizer opt, double min) {
+double res = Double.NaN;
+try {
+PointValuePair result;
+
+if (opt instanceof BOBYQAOptimizer) {
+

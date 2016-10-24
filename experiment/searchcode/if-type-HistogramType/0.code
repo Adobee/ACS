@@ -1,0 +1,7 @@
+private Object readResolve() {
+if (this.equals(HistogramType.FREQUENCY)) {
+return HistogramType.FREQUENCY;
+}
+if (this.equals(HistogramType.RELATIVE_FREQUENCY)) {
+return HistogramType.RELATIVE_FREQUENCY;
+

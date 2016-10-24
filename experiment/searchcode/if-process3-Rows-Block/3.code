@@ -1,0 +1,10 @@
+4.  Interchange the names of items Key_Block.Process2_Image   GS     07/03/97
+and Key_Block.Process3_Image.
+5.  Add code to INIT_NEXT_SELECTION to handle GUIOBJS Select  GS     07/03/97
+IF NOT ID_NULL(TimerID) THEN
+G$_WF_DRIVER.WF_EXECUTE(&#39;WF_DISCONNECT_B2K&#39;);
+END IF;
+--
+:KEY_BLOCK.NEXT_SELECTION := &#39;&#39;;
+--
+

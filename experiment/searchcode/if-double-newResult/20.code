@@ -1,0 +1,9 @@
+public class InputRangeDouble implements Iterable<CellReference>
+{
+private Range range;
+
+private double lowerBound;
+private double upperBound;
+
+public InputRangeDouble(String r, double lower, double upper)
+

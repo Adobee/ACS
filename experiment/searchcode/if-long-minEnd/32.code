@@ -1,0 +1,8 @@
+long millis = (long)((start - (double)((long)(start))) * 1000);
+
+
+long HourEnd = TimeUnit.SECONDS.toHours((long) end);
+long MinEnd = TimeUnit.SECONDS.toMinutes((long) end) - TimeUnit.HOURS.toMinutes(HourEnd);
+long SecEnd = TimeUnit.SECONDS.toSeconds((long) end) - TimeUnit.MINUTES.toSeconds(MinEnd);
+long millisEnd = (long)((end - (double)((long)(end))) * 1000);
+

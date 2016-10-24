@@ -1,0 +1,8 @@
+Gson gson  = new Gson();
+
+ServletUtils.addJSONSettings(response);
+if (picky == null) {
+response.setStatus(ServletUtils.NOT_FOUND);
+return;
+} if (picky.getUser().getId() != user.getId()) {
+

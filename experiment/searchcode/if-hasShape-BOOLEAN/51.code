@@ -1,0 +1,13 @@
+indexedDimensions.add(rhsArrayDimensions.get(i).cloneThisValue());
+}
+}
+else if (((HasShape<V>)indices.get(i)).getShape().isScalar()) {
+if (POS == indices.size() &amp;&amp; POS < rhsArrayDimensions.size()) {
+return new ShapeFactory<V>().getOutOfBoundShape();
+}
+}
+indexedDimensions.add(new DimValue(1, null));
+}
+}
+else if (!((HasShape<V>)indices.get(i)).getShape().isScalar()) {
+

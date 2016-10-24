@@ -1,0 +1,8 @@
+public ResolverSocketFactory(Resolver resolver, SocketFactory socketFactory) {
+if (socketFactory == null) {
+socketFactory = SocketFactory.getDefault();
+public Socket createSocket(InetAddress host, int port)
+throws IOException {
+if (checkAddress(host)) {
+return socketFactory.createSocket(host, port);
+

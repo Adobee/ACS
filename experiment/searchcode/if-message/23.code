@@ -1,0 +1,7 @@
+public void onMessage(Message message) {
+try {
+if (message instanceof TextMessage) {
+TextMessage textMessage = (TextMessage) message;
+String messageText = textMessage.getText();
+if (messageText.equalsIgnoreCase(&quot;ACK&quot;)) {
+

@@ -1,0 +1,10 @@
+super(state);
+
+File fileOrDir = new File(state.getDirectoryPath());
+
+if (!fileOrDir.exists()) {
+throw new IllegalStateException(&quot;Directory does not exist: &quot; + state.getDirectoryPath());
+}
+if (!fileOrDir.isDirectory()) {
+throw new IllegalStateException(&quot;No directory: &quot; + state.getDirectoryPath());
+

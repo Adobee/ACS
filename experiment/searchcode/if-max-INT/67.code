@@ -1,0 +1,9 @@
+public class TrappingRainWater {
+public int trap(int[] height) {
+if (height.length <= 1)
+return 0;
+int n = height.length;
+int[] maxLeft = new int[n];
+int[] maxRight = new int[n];
+int max = height[0];
+

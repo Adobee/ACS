@@ -1,0 +1,13 @@
+private int byteCount = 0;
+
+public ByteBuffer(int size) {
+buff = new byte[size];
+}
+
+public void add(String str) {
+public void add(byte[] data) {
+byteCount += data.length;
+if(byteCount > buff.length)
+resize();
+for(int i = 0; i < data.length; i++)
+

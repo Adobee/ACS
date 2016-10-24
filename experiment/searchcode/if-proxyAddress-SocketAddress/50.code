@@ -1,0 +1,9 @@
+public HttpProxyHandler(SocketAddress proxyAddress) {
+super(proxyAddress);
+username = null;
+password = null;
+Unpooled.EMPTY_BUFFER, false);
+
+SocketAddress proxyAddress = proxyAddress();
+if (proxyAddress instanceof InetSocketAddress) {
+

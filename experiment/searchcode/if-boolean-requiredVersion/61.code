@@ -1,0 +1,11 @@
+@Override
+public boolean accepts(URI uri, DataCategory category) {
+if (super.accepts(uri, category)) {
+return entryName.replaceAll(&quot;[^/]*/&quot;, &quot;&quot;).replace(VERSION_EXT, &quot;&quot;);
+}
+
+protected boolean accepts(String version) {
+boolean accepts = true;
+
+if (version == null || version.trim().isEmpty())
+

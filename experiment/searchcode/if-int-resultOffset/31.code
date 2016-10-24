@@ -1,0 +1,15 @@
+public void decodeRow(byte[] source, int sourceOffset, byte[] result,
+int resultOffset) {
+int raw;
+int left;
+int above;
+int upperLeft;
+int colors = getColors();
+return;
+}
+
+sourceOffset = sourceOffset + 1;
+
+if (sourceOffset == 1) {
+for (int c = 0; c < colors; c++) {
+

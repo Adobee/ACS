@@ -1,0 +1,10 @@
+public static void enableContainer( Container container, boolean enabled ) {
+for ( int i = 0; i < container.getComponents().length; i++ ) {
+component.setEnabled( enabled );
+if ( component instanceof Container ) {
+enableContainer( (Container)component, enabled );
+}
+}
+}
+}
+

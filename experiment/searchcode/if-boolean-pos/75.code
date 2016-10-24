@@ -1,0 +1,9 @@
+public static ArrayList<Boolean> derechaAbajo(int posicion, int lado, boolean enemigo, ArrayList<Boolean> tablero) {
+int pos = posicion + 1 + lado;
+int cantidad = 0;
+if (pos % lado != 0 &amp;&amp; pos < (lado * lado) &amp;&amp; tablero.get(pos) != null &amp;&amp; tablero.get(pos) == enemigo) {
+public static ArrayList<Boolean> izquierda(int posicion, int lado, boolean enemigo, ArrayList<Boolean> tablero) {
+int pos = posicion - 1;
+int cantidad = 0;
+if (pos % lado != lado - 1 &amp;&amp; pos > 0 &amp;&amp; tablero.get(pos) != null &amp;&amp; tablero.get(pos) == enemigo) {
+

@@ -1,0 +1,11 @@
+public void setUpperBound(double upperBound) {
+this.upperBound = upperBound;
+}
+
+public boolean belongs(double value){
+return ( ge(value,lowerBound) &amp;&amp; se(value,upperBound) );
+return &quot;#&quot;+this.id + &quot;<&quot; + this.lowerBound + &quot;, &quot;  +this.upperBound + &quot;>&quot;;
+}
+public boolean covers(Domain value) {
+if (this.getLowerBound() <= value.getLowerBound() &amp;&amp; this.upperBound >= value.getUpperBound())
+

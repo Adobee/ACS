@@ -1,0 +1,11 @@
+Bitmap img;
+float x = 0, y = 0;
+int step = 0;
+
+
+public void judge_level2(int color,int loc,int num  ){
+if (loc == 1){
+if (color == LevelView.arraycolor[step]){
+step++;
+if(step>num){
+

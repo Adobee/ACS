@@ -1,0 +1,8 @@
+public int read(char[] buf, int from, int len) throws IOException{
+int numchars = 0;
+
+while (numchars == 0){
+numchars = in.read(buf, from, len);
+if (numchars == -1){
+return -1;
+

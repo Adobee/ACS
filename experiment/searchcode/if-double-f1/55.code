@@ -1,0 +1,12 @@
+this.left = left;
+}
+
+public void setRight(double right) {
+this.right = right;
+}
+
+public void setF1(IFunction1D f1) {
+private void getAB(){
+if(Math.abs(f1.getXi() - f2.getXi())<0.0000000000000000001){
+a = Math.max(f1.getXi()-f1.gethLeft(), left);
+

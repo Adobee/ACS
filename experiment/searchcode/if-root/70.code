@@ -1,0 +1,6 @@
+public Root getRoot() {
+if (root != null &amp;&amp; root.eIsProxy()) {
+InternalEObject oldRoot = (InternalEObject) root;
+root = (Root) eResolveProxy(oldRoot);
+if (root != oldRoot) {
+

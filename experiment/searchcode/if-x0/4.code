@@ -1,0 +1,13 @@
+System.out.println(sqrt(y));
+
+}
+
+public static float sqrt(float y) {
+
+if (y < 0)
+throw new IllegalArgumentException(&quot;Cannot be negative&quot;);
+
+double e = 0.000000001f;
+float x0 = y, x1 = 0.0f;
+while (Math.abs((x0 - x1) / x0) > e) {
+

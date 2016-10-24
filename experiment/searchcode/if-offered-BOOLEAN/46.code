@@ -1,0 +1,14 @@
+@OneToMany (mappedBy = &quot;seller&quot;)
+private Set<Item> offeredItems;
+
+public User() {
+}
+
+public User(String email) {
+public Iterator<Item> getOfferedItems() {
+return offeredItems.iterator();
+}
+
+public boolean addItem(Item item) {
+if (this.offeredItems.contains(item)) {
+

@@ -1,0 +1,15 @@
+public class Threshold implements WeightFunction {
+private double m_threshold;
+
+public Threshold(double threshold) {
+public double getIncrement(EventNetwork g, String source, String target,
+double currentTime, double weight) {
+if(weight > m_threshold) {
+return 1.0;
+} else {
+return 0.0;
+}
+}
+
+}
+

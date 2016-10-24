@@ -1,0 +1,15 @@
+while (e > s &amp;&amp; arr[e] >= val)
+e--;
+if (e > s) // not necessary
+arr[s] = arr[e];
+while (e > s &amp;&amp; arr[s] <= val)
+binSort(arr, s, mid - 1);
+if (mid < e - 1)
+binSort(arr, mid + 1, e);
+}
+
+/**
+* 精简后的代码
+*/
+public void binSort0(int A[], int s, int e) {
+

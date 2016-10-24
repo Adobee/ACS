@@ -1,0 +1,9 @@
+private final Logger LOGGER = LoggerFactory.getLogger(getClass());
+
+private AtomicBoolean isInitialized = new AtomicBoolean(false);
+//prevent re-initialization
+private AtomicBoolean hasBeenInitialized = new AtomicBoolean(false);
+
+@Override
+public void init() throws AlreadyInitializedException {
+

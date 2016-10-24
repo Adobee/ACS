@@ -1,0 +1,9 @@
+while (true) {
+long waitNanos = cleanup(System.nanoTime());
+if (waitNanos == -1) return;
+if (waitNanos > 0) {
+assert (Thread.holdsLock(this));
+if (!cleanupRunning) {
+cleanupRunning = true;
+executor.execute(cleanupRunnable);
+

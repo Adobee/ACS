@@ -1,0 +1,11 @@
+import java.util.NoSuchElementException;
+
+
+public class OneElementEnumeration implements Enumeration {
+private Object myElement;
+public Object nextElement() {
+if (myElement == null) {
+throw new NoSuchElementException();
+}
+Object element = myElement;
+

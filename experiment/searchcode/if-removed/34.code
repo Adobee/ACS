@@ -1,0 +1,10 @@
+* @author bartosz walacik
+*/
+public final class ObjectRemoved extends Change {
+public ObjectRemoved(GlobalId removed, Optional<Object> removedCdo) {
+super(removed);
+setAffectedCdo(removedCdo);
+}
+
+public ObjectRemoved(GlobalId removed, Optional<Object> removedCdo, CommitMetadata commitMetadata) {
+

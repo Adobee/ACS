@@ -1,0 +1,9 @@
+public static double[][] multiply(double[][] A, double[][] B){ //returns AB //TODO: OPTIMIZE
+int newR=A.length;
+int newC=B[0].length;
+int sharedDim=A[0].length;
+
+if(sharedDim==B.length){ //m×n * n×o
+if(A[pivotRow][pivotCol]==0){ //if position isn&#39;t a pivot
+for(int i=pivotRow+1; i<numRows; i++){ //go through every lower row (in same column)
+

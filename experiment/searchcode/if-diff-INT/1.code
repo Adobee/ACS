@@ -1,0 +1,9 @@
+public int[] singleNumber(int[] nums) {
+int diff = 0;
+for(int n : nums) {
+diff ^= n;
+}
+diff = (diff&amp;-diff);
+int[] result = {0, 0};
+for (int n : nums) {
+

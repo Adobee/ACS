@@ -1,0 +1,8 @@
+throw new Exception(&quot;Can&#39;t instantiate module &quot; + moduleName + &quot; : &quot; + e.getMessage());
+}
+
+// set module as generator or emitter
+if (module != null) {
+if (module instanceof XMttrGenerator) {
+xmttr.setGenerator((XMttrGenerator) module);
+

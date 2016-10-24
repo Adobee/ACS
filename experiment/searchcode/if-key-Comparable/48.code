@@ -1,0 +1,7 @@
+public class KeyAndPartitionWritableComparable implements WritableComparable<KeyAndPartitionWritableComparable> {
+dataOutput.write(comparableKey.array(), comparableKey.position(), comparableKey.remaining());
+}
+
+public int compareTo(KeyAndPartitionWritableComparable other) {
+if (keyAndPartitionWritable.getPartition() < other.keyAndPartitionWritable.getPartition()) {
+

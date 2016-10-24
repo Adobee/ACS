@@ -1,0 +1,16 @@
+package com.example.app8;
+
+public class SignButton extends Button{
+int sign;
+
+public SignButton(int a, int b, int c, int d) {
+MainScreen.sign=sign;
+}
+
+public void set(int a){
+sign=a;
+}
+
+public void draw(){
+if (sign==MainScreen.sign) Assets.sheet.draw(26-9+sign*52, 282, sign*52+26+8, 299, sign+20);
+

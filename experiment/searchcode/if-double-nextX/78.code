@@ -1,0 +1,9 @@
+private static final double TURNING_ANGLE = Math.PI;
+
+private Vehicle vehicle;
+private PathSection section;
+private double nextX, nextY;
+double distance = Geometry.distance(vehicle.x, vehicle.y, nextX, nextY);
+if(distance < CHANGING_LIMIT) {
+if(section.getNext() == null) {
+

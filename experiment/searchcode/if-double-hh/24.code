@@ -1,0 +1,5 @@
+thisProfile.d_fridge[48*i + HH]=MSConstArrays.scale_fridge[HH]*Math.sin(2*Math.PI*(startDayOfYear + i/365)-MSConstArrays.phase_fridge[HH])+MSConstArrays.const_fridge[HH]+(RandomHelper.getNormal().nextDouble()*MSConstArrays.stddev_fridge[HH]);
+if ( thisProfile.d_fridge[48*i + HH] < 0)
+thisProfile.d_freezer[48*i + HH]=MSConstArrays.scale_freezer[HH]*Math.sin(2*Math.PI*(startDayOfYear + i/365)-2.05)+MSConstArrays.const_freezer[HH]+(RandomHelper.getNormal().nextDouble()*MSConstArrays.stddev_freezer[HH]);
+if ( thisProfile.d_freezer[48*i + HH] < 0)
+

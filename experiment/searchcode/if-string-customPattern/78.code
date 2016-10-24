@@ -1,0 +1,8 @@
+Pattern pat = patMgr.getPattern(CLUtilities.getString(element, &quot;pattern&quot;, DEFAULT_PATTERN));
+if (pat instanceof CustomPattern) {
+this.pattern = (CustomPattern) pat;
+this.pattern = patMgr.getAllCustom().get(0);    // use the first CustomPattern
+makeDrawables();
+if (pattern != null) {
+pattern.addPropertyChangeListener(this);
+

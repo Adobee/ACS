@@ -1,0 +1,13 @@
+public class NettyTransportMultiPortTests extends ESTestCase {
+
+private String host;
+
+@Before
+public void setup() {
+if (NetworkUtils.SUPPORTS_V6 &amp;&amp; randomBoolean()) {
+.put(&quot;transport.profiles.client1.port&quot;, 0)
+.build();
+
+ThreadPool threadPool = new ThreadPool(&quot;tst&quot;);
+try (NettyTransport transport = startNettyTransport(settings, threadPool)) {
+

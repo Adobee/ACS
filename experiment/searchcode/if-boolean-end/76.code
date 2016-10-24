@@ -1,0 +1,16 @@
+int index, end;
+public BooleanGenerator(boolean[] array) {
+this(array, 0, array.length);
+}
+
+public BooleanGenerator(boolean[] array, int from, int to) {
+end = to;
+}
+
+public Boolean next() throws NoSuchElementException{
+if (index >= end) throw new NoSuchElementException();
+return array[index++];
+}
+
+}
+

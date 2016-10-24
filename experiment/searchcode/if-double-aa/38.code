@@ -1,0 +1,9 @@
+float score=0;
+if(myAA.length > freq2.myAA.length)
+score=freq2.computeIndepCost(this);
+else
+{
+double t1 = System.currentTimeMillis();
+for (int i = 0; i < myAA.length; i++) {
+score += this.myFreq[i] * freq2.costInFrontOfAA[this.myAA[i]];
+

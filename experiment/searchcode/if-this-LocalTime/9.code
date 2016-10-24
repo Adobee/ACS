@@ -1,0 +1,8 @@
+public MarketHours(LocalTime open, LocalTime close) {
+this(new Session[] { new Session(open, close) });
+for (Session p : sessionsList) {
+LocalTime open = p.getOpen();
+LocalTime close = p.getClose();
+
+if (((!openExclusive &amp;&amp; open.equals(t)) || open.isBefore(t)) &amp;&amp; ((!closeExclusive &amp;&amp; close.equals(t)) || close.isAfter(t))) {
+

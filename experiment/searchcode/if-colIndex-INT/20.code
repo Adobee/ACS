@@ -1,0 +1,11 @@
+public boolean exist(char[][] board, String word) {
+int m = board.length;
+int n = board[0].length;
+if (m * n < word.length())
+return false;
+return false;
+}
+
+public boolean dfs(char[][] board, String word, int index, int rowindex,
+int colindex, boolean[][] visited) {
+

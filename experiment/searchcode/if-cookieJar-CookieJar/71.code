@@ -1,0 +1,7 @@
+@Test public void
+createsAFreshSessionIfClientSessionHasExpired() throws Exception {
+CookieJar cookieJar = fillCookieJar(new Cookie(SESSION_COOKIE, &quot;expired&quot;));
+@Test public void
+doesNotSendTheSameSessionIdIfItDidNotChange() throws Exception {
+CookieJar cookieJar = fillCookieJar(new Cookie(SESSION_COOKIE, &quot;existing&quot;));
+

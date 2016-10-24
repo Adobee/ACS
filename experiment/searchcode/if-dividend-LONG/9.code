@@ -1,0 +1,9 @@
+public int divide(int dividend, int divisor) {
+long result = divideLong(dividend, divisor);
+return result>Integer.MAX_VALUE?Integer.MAX_VALUE:(int)result;
+}
+
+public long divideLong(long dividend, long divisor)
+{
+boolean isNegative = dividend<0!=divisor<0;
+

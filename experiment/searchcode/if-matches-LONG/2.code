@@ -1,0 +1,10 @@
+@Override
+boolean isPrototype(StringBuffer source) {
+String s = source.toString();
+
+if (s.matches(&quot;.*\\{[\\w\\W]*&quot;) || s.matches(&quot;.*\\n\\{[\\w\\W]*&quot;)) {
+return true;
+}
+
+if (s.matches(&quot;for[\\w\\W]*&quot;) || s.matches(&quot;while[\\w\\W]*&quot;)
+

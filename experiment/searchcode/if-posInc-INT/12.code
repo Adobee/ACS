@@ -1,0 +1,14 @@
+public final static class BinaryToken {
+BytesRef term;
+int posInc;
+int posLen;
+int startOffset;
+int endOffset;
+
+public BinaryToken(BytesRef term) {
+this.posLen = 1;
+}
+
+public BinaryToken(BytesRef term, int posInc, int posLen) {
+this.term = term;
+

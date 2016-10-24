@@ -1,0 +1,12 @@
+public int[] searchRange(int[] A, int target) {
+int[] res = new int[] { -1, -1 };
+int n = A.length;
+
+if (A == null || n == 0) {
+int high = n - 1;
+int mid = 0;
+
+while (low <= high) {
+mid = (high - low) / 2 + low;
+if (A[mid] == target &amp;&amp; (mid == 0 || A[mid - 1] < target)) {
+

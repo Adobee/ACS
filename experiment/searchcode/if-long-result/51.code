@@ -1,0 +1,10 @@
+package solvedTopcoder;
+public class FoxAndGCDLCM {
+public long get(long G, long L) {
+if (L % G != 0) {
+return -1;
+}
+long product = L / G;
+long result = Long.MAX_VALUE;
+for (long i = 1; i * i <= product; i++) {
+

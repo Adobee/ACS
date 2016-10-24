@@ -1,0 +1,10 @@
+public void setPressAvailable(Boolean pressAvailable) {
+if (pressAvailable != null) {
+store.put(KEY_PRESS_AVAILABLE, pressAvailable);
+store.remove(KEY_PRESS_AVAILABLE);
+}
+}
+
+public Boolean getPressAvailable() {
+return (Boolean) store.get(KEY_PRESS_AVAILABLE);
+

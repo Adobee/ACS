@@ -1,0 +1,8 @@
+if (DateUtil.isLeapYear(year) &amp;&amp; month.toInt() > Month.FEBRUARY.toInt())
+daysUpToMonth++;
+int daysInMonth = day - 1;
+return daysUpToYear + daysUpToMonth + daysInMonth + EARLIEST_DATE_ORDINAL;
+private int daysBeforeThisMonth(int aMonth){
+if (isLeapYear())
+return LEAP_YEAR_AGGREGATE_DAYS_TO_END_OF_PRECEDING_MONTH[aMonth] - 1;
+

@@ -1,0 +1,19 @@
+moneyInserted = 0;
+}
+
+
+
+public void coinInserted( int value)
+{
+moneyInserted += value;
+if ( value > priceLeft)
+{
+priceLeft = 0;
+}
+else
+{
+priceLeft -= value;
+}
+
+if (insertedCoins.containsKey( value))
+

@@ -1,0 +1,12 @@
+public static boolean validArgs(String[] args) {
+boolean isValid = true;
+if (args == null || args.length < 1 || args.length > 2) {
+isValid = false;
+}
+if (isValid &amp;&amp; args.length > 1 &amp;&amp; null == CleanMode.check(args[1])) {
+isValid = false;
+}
+return isValid;
+}
+}
+

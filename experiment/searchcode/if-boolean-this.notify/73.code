@@ -1,0 +1,11 @@
+public void onReceive(Context paramContext, Intent paramIntent) {
+
+if (paramIntent.getAction()
+.equals(NotifyService.NOTIFY_DATA_UPDATE)) {
+initData();
+super.onCreate(arg0);
+
+mContext = NotifyListActivity.this;
+setContentView(R.layout.notify);
+initView();
+

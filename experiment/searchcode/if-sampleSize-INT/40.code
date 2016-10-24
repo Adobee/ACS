@@ -1,0 +1,6 @@
+public static int[] sampleWithoutReplacement(int sampleSize, int n) {
+// This implements a modified form of the genshuf() function from
+for (int i=0; i<sampleSize; i++) {
+int j = Prng.nextInt(n - i) + i;
+// Swap array[i] and array[j]
+

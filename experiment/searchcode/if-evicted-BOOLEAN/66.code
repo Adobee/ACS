@@ -1,0 +1,9 @@
+// remove old users
+validUsers = removeOldUsers(validUsers);
+evictedUsers = removeOldUsers(evictedUsers);
+
+if(singleUserAccess) {
+String cheaterToken = findCheater(user);
+if(cheaterToken != null) {
+evictedUsers.put(cheaterToken, validUsers.remove(cheaterToken));
+

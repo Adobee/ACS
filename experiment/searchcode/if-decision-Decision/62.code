@@ -1,0 +1,8 @@
+this.decisionIndex = _prevDecisionModel.getDecisionIndex() + 1;
+if (_branchedDecisionSymbol != null &amp;&amp; _branchedDecisionSymbol.length() > 0) {
+this.branchedDecisionSymbols = _branchedDecisionSymbol;
+instanceModel.finalizeSentence(dependencyGraph);
+}
+if (nextDecisionModel != null) {
+nextDecisionModel.finalizeSentence(dependencyGraph);
+

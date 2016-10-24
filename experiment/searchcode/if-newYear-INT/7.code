@@ -1,0 +1,13 @@
+public void addYear(String year){
+addYear(new Year(year));
+}
+public void addYear(Year newYear){
+if(next == null)
+next = newYear;
+else
+next.addYear(newYear);
+}
+
+private boolean removeNextYear(){
+if(next != null){
+

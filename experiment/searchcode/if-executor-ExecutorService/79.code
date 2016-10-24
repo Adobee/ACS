@@ -1,0 +1,14 @@
+this.executorService = executorService;
+}
+
+public Response status() {
+if (executorService.isStopped()) {
+return ok(ExecutorStatus.STOPPED);
+public Response shutdownNow() {
+executorService.shutdown(true);
+return ok();
+}
+
+public Response ok(Object items) {
+if (items == null) {
+

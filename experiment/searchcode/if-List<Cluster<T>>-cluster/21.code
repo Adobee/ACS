@@ -1,0 +1,10 @@
+* @param clusterId the clusterId of the cluster to find
+* @return if found, the cluster, null otherwise
+*/
+public Cluster findCluster(Long clusterId) {
+Cluster cluster_ = entityManager.find(Cluster.class, clusterId);
+if(cluster_ == null)
+return false;
+
+List<Cluster> parentsOfDeleted = cluster_.getSuperClusters();
+

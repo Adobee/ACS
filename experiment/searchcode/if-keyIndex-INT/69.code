@@ -1,0 +1,10 @@
+import com.cboe.client.util.*;
+
+public class IntStringMultipleValuesMap implements HasSizeIF
+{
+protected int[][]   keys;
+int keyIndex = CollectionHelper.binarySearch(keys[bucketIndex], key, numberKeys[bucketIndex]);
+if (keyIndex >= 0)
+{
+int removed = values[bucketIndex][keyIndex].length;
+

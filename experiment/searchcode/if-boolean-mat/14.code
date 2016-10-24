@@ -1,0 +1,12 @@
+mat=new char[][]{
+{&#39;b&#39;,&#39;e&#39;, &#39;f&#39;},
+{&#39;h&#39;, &#39;d&#39;, &#39;a&#39;},
+{&#39;i&#39;, &#39;c&#39;, &#39;a&#39;}
+};
+printMatrix(mat);
+System.out.println(findLongestIncreasing(mat,&#39;b&#39;));
+}
+static boolean[][] visited;
+private static int getMaxCount(char[][] mat, int i, int j, boolean[][] visited) {
+if(i<0||i>=mat.length||j<0||j>=mat[0].length||visited[i][j])
+

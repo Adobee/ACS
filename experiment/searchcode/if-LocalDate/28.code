@@ -1,0 +1,9 @@
+public class LocalDatePersistenceConverter implements AttributeConverter<LocalDate, Date> {
+@Override
+public Date convertToDatabaseColumn(LocalDate localDate) {
+if (localDate != null) {
+@Override
+public LocalDate convertToEntityAttribute(Date date) {
+if (date != null) {
+return date.toLocalDate();
+

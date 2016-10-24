@@ -1,0 +1,7 @@
+public class Solution {
+public int rob(int[] nums) {
+if (nums.length == 1) {
+int max = 0, maxPre = 0, maxPrePre = 0;
+for (int i = start; i <= end; ++i) {
+max = Math.max(nums[i] + maxPrePre, maxPre);
+

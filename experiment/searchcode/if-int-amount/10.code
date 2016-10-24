@@ -1,0 +1,16 @@
+public int getAmount() {
+return amount;
+}
+
+public void consume(int n) {
+if (n > amount) amount = 0;
+else amount -= n;
+}
+
+public void add(int n) {
+if (n < 0) return;
+amount += n;
+}
+
+public String info() {
+

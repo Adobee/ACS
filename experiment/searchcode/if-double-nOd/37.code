@@ -1,0 +1,7 @@
+package thebeast.nodmem.expression;
+
+import thebeast.nod.expression.DoubleConstant;
+import thebeast.nod.expression.ExpressionVisitor;
+import thebeast.nod.type.DoubleType;
+import thebeast.nod.value.DoubleValue;
+

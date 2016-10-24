@@ -1,0 +1,7 @@
+AddDashboardGadgetWizard wiz = new AddDashboardGadgetWizard(configModule);
+WizardDialog dlg = new WizardDialog(RCPUtil.getActiveShell(), wiz);
+if (dlg.open() == Window.OK) {
+private void createIndex(boolean force) {
+if (entryMap == null || entries == null || force) {
+entries = new LinkedList<IGridDataEntry>();
+

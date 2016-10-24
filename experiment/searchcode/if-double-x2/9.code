@@ -1,0 +1,9 @@
+private double a = 0;
+private double b = 1;
+private double x;
+private double x2;
+private double y;
+private double y2;
+
+public InterpLinear(double x, double x2, double y, double y2) {
+

@@ -1,0 +1,12 @@
+resultStr.append(&quot;[&quot;);
+
+RealVector r = getRightVector(decompositionSolver);
+
+
+double sum = r.getL1Norm();
+EigenDecomposition decompositionSolver = new EigenDecomposition(matrix);
+
+RealVector r =  decompositionSolver.getEigenvector(0).unitVector();
+
+double sum = r.getL1Norm();
+

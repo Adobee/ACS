@@ -1,0 +1,10 @@
+return this.historyCount;
+}
+
+protected int translateGet(int n2) {
+if (this.oldestAt == 0) {
+return n2;
+}
+int n3 = n2 + this.oldestAt;
+if (n3 < this.historyCount) return n3;
+

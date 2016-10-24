@@ -1,0 +1,12 @@
+createRoom(roomCounts);
+}
+
+private void createRoom(int roomCount) {
+String keyIndex = &quot;&quot;;
+for (int i = 1; i <= roomCount; i++) {
+private static String getRoomKeyIndex(int rc){
+String keyIndex = null;
+if(rc < 10){
+keyIndex = &quot;room000&quot; + rc;
+}else if(rc < 100){
+

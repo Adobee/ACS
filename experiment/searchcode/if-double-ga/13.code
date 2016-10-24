@@ -1,0 +1,14 @@
+private GestorAlquiler() {
+
+}
+
+public static GestorAlquiler getInstance() {
+if (ga == null) {
+ga = new GestorAlquiler();
+}
+return ga;
+}
+
+public double calcularPrecio(int id, int dias) {
+Vehiculo vh = GestorVehiculo.getInstance().buscar(id);
+

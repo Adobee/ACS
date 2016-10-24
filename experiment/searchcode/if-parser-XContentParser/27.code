@@ -1,0 +1,6 @@
+while (parser.nextToken() != XContentParser.Token.END_OBJECT || level >= 0) {
+
+if (parser.currentToken() == XContentParser.Token.FIELD_NAME) {
+while(parser.nextToken() != XContentParser.Token.END_OBJECT || innerLevel >= 0) {
+if (parser.currentToken() == XContentParser.Token.FIELD_NAME) {
+

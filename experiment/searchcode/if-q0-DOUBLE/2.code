@@ -1,0 +1,9 @@
+public class ConstantTimedPumpInRate extends PumpInRate implements Serializable{
+
+double q0=1;
+double tstart,tend;
+
+public ConstantTimedPumpInRate(double q0,double tstart,double tend){
+this.q0=q0;
+this.tstart=tstart;
+

@@ -1,0 +1,6 @@
+* @return an integer indicating nature of roots
+*/
+public static int findDiscriminantNature(double coeffA, double coeffB, double coeffC){
+double discriminant = (coeffB*coeffB) - (4*coeffA*coeffC);
+if(discriminant == 0.0) {
+

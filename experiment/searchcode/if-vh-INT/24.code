@@ -1,0 +1,13 @@
+return -1;
+}
+
+public int LEDGreenOn() throws IOException {
+if (vhDevice != null) {
+return vhDevice.ioctl_BMI_VH_GLEDON();
+}
+return -1;
+}
+
+public int LEDRedOff() throws IOException {
+if (vhDevice != null) {
+

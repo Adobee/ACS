@@ -1,0 +1,14 @@
+protected boolean breakOnEOF;
+
+public EndStrategy(char end) {
+this.endChar = end;
+}
+
+public EndStrategy(char end, boolean breakOnEOF) {
+public boolean end(char c) {
+if (c == ICharacterScanner.EOF &amp;&amp; breakOnEOF) {
+return true;
+}
+
+if (endChar == c) {
+

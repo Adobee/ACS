@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+public class NSTEPS {
+public static void main(String[] args) {
+int numCases = 0;
+int x = 0; // x coordinate
+y = in.nextInt();
+
+// Valid input
+if (x == y || x - 2 == y) {
+if (x % 2 == 0) { // x is even
+

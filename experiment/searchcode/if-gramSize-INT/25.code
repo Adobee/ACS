@@ -1,0 +1,11 @@
+public static Side BACK = new Side(&quot;back&quot;);
+private Side(String label) {}
+}
+private int gramSize;
+private Side side;
+private int inLen;
+public EdgeNGramTokenizer(Reader input, Side side, int gramSize) {
+super(input);
+if (gramSize < 1) {
+throw new IllegalArgumentException(&quot;gramSize must be greater than zero&quot;);
+

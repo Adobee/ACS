@@ -1,0 +1,7 @@
+public enum ECompound {
+SMP		(1)
+{ 	public double getIntFactor(double rate, double timeFactor){
+return (1+ rate* timeFactor);
+}
+public double getIntRateFrom(double intFactor, double timeFactor){
+

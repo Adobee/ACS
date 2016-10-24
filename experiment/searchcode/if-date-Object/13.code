@@ -1,0 +1,9 @@
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+
+DateRange dateRange = (DateRange) o;
+
+if (endDate != null ? !endDate.equals(dateRange.endDate) : dateRange.endDate != null) return false;
+

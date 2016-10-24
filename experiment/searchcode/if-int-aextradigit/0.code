@@ -1,0 +1,10 @@
+byte asign, bsign, rsign;
+int aextradigit = 0, bextradigit = 0;
+
+/* handle special cases */
+if (nans != FINITE || x.nans != FINITE)
+/* Call round to test for over/under flows */
+int excp = result.round((aextradigit+bextradigit));
+if (excp != 0)
+result = dotrap(excp, &quot;add&quot;, x, result);
+

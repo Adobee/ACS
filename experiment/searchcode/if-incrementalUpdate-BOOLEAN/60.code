@@ -1,0 +1,7 @@
+HashMap<String, String> sessionHashCodes = loadSessionHashCodes();
+boolean incrementalUpdate = (sessionHashCodes != null) &amp;&amp; (sessionHashCodes.size() > 0);
+HashSet<String> sessionsToKeep = new HashSet<String>();
+
+if (incrementalUpdate) {
+LOGD(TAG, &quot;Doing incremental update for sessions.&quot;);
+

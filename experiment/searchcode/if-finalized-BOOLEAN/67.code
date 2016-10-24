@@ -1,0 +1,10 @@
+public void setStartStatusIndex(int startStatusIndex) {
+if ((!isLifecycleInUse) &amp;&amp; (!isFinalized)) {
+this.startStatusIndex = startStatusIndex;
+} else return null;
+}
+
+@Override
+public boolean remove(Object o) {
+if ((!isLifecycleInUse) &amp;&amp; (!isFinalized)) {
+

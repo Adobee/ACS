@@ -1,0 +1,8 @@
+@Override
+public double getDensity(Vector v) {
+double np = 0, p = 0, nn = 0, n = 0;
+for(DensityFunction f: fs) {
+double d = f.getDensity(v);
+if ( d > 0.5 ) {
+p = np == 0 ? d : Math.min(d, p);
+

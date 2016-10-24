@@ -1,0 +1,7 @@
+public class LeapYear {
+public boolean isALeapYear(int year) {
+if (year % 4 == 0 &amp;&amp; year % 100 != 0) {
+return true;
+}
+if (year % 4 == 0 &amp;&amp; year % 100 == 0 &amp;&amp; year % 400 == 0) {
+

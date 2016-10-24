@@ -1,0 +1,9 @@
+private volatile boolean canceled;
+
+// All guarded by this.
+private okhttp3.Call rawCall;
+private Throwable creationFailure; // Either a RuntimeException or IOException.
+okhttp3.Call call = serviceMethod.callFactory.newCall(request);
+if (call == null) {
+throw new NullPointerException(&quot;Call.Factory returned null.&quot;);
+

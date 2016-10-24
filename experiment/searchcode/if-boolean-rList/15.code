@@ -1,0 +1,7 @@
+synchronized (rlist) {
+Revision r = findVisibleRevision(rlist, txId);
+if (r == null) {
+// find older version and set deletionTxId
+Revision old = findVisibleRevision(rlist, txId);
+if (old != null) {
+

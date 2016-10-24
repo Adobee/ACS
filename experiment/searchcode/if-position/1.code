@@ -1,0 +1,10 @@
+public void executeLongExit(Position position) {
+if (position.positionType == PositionType.position_long_entry){
+position.positionType = PositionType.position_long_exit;
+position.executePosition();
+}
+}
+
+public void executeShortExit(Position position) {
+if (position.positionType == PositionType.position_short_entry){
+

@@ -1,0 +1,6 @@
+private Explicit<Long> minDocCount;
+private Explicit<Long> shardMinDocCount;
+private Explicit<Integer> requiredSize;
+public BucketCountThresholds(long minDocCount, long shardMinDocCount, int requiredSize, int shardSize) {
+this.minDocCount = new Explicit<>(minDocCount, false);
+

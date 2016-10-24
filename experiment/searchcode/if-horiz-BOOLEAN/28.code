@@ -1,0 +1,16 @@
+import blocks.Token.Type;
+
+/*
+* Expr ::= VertExpr Eos .
+* VertExpr ::= HorizExpr (VertOp HorizExpr)* .
+* HorizExpr ::= PrimaryExpr (HorizOp PrimaryExpr)* .
+return tokenizer.token().type();
+}
+
+private boolean isHorizOp()
+{
+return type() == Type.Horiz;
+}
+
+private BlockNode subVertExpr() throws IOException
+

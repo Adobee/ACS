@@ -1,0 +1,11 @@
+List<Object> aValues = new ArrayList<>(values.size());
+boolean allNull = true;
+for (LabelledValue v: values)
+{
+aValues.add(v.getValue());
+if (v.getValue() != null)
+allNull = false;
+}
+
+return allNull ? null :
+

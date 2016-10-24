@@ -1,0 +1,11 @@
+package linkedlist;
+
+public class ReverseDoublyList {
+
+public static DoubleListNode ReverseDoubleList(DoubleListNode head){
+while(p != null){
+DoubleListNode next = p.next;
+p.next = end;
+if(end != null)
+end.previous = p;
+

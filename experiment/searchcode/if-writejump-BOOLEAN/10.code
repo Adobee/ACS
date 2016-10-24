@@ -1,0 +1,8 @@
+private void writeVarDef(String name, boolean initialize) {
+if (initialize) {
+writeXop(JsFunction.XOP_PUSH_STR, getStringLiteralIndex(name));
+setLabel(statement, &quot;continue&quot;);
+writeJump(JsFunction.XOP_NEXT, statement, &quot;break&quot;);
+
+if (statement.variable instanceof Identifier) {
+

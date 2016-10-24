@@ -1,0 +1,11 @@
+* @return true if <code>type</code> is assignable to <code>toClass</code>.
+*/
+private static boolean isAssignable(Type type, Class<?> toClass) {
+if (type == null) {
+return isAssignable(((GenericArrayType) type).getGenericComponentType(),
+toComponentType, typeVarAssigns);
+}
+
+if (type instanceof WildcardType) {
+// so long as one of the upper bounds is assignable, it&#39;s good
+

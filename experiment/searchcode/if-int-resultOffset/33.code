@@ -1,0 +1,9 @@
+public static Date localTimeToUtilDate(LocalTime input){
+if(input == null) return null;
+ZonedDateTime zdt = input.atDate(LocalDate.now()).atZone(ZoneId.of(&quot;UTC&quot;));
+* @param resultOffset the offset expressed in minutes
+* @return
+*/
+public static ZoneOffset getTimezone(int resultOffset) {
+return ZoneOffset.of(
+

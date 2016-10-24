@@ -1,0 +1,12 @@
+public class PeriodicSaveThread extends Thread {
+SerializationManager sm;
+boolean keepRunning = false;
+boolean doSave = false;
+setDaemon(true);
+}
+
+public void run() {
+keepRunning=true;
+while(keepRunning) {
+if(isSaveScheduled()) {
+

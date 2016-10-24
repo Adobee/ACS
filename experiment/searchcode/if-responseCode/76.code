@@ -1,0 +1,13 @@
+public enum ResponseCode {
+RESULT_OK,
+RESULT_USER_CANCELED,
+RESULT_SERVICE_UNAVAILABLE,
+public static ResponseCode valueOf(int index) {
+ResponseCode[] values = ResponseCode.values();
+if (index < 0 || index >= values.length) {
+return RESULT_ERROR;
+}
+return values[index];
+}
+}
+

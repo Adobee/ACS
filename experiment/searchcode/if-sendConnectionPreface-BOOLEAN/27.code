@@ -1,0 +1,10 @@
+object2.configureTls((SSLSocket)object, this.route.address.uriHost, this.route.tlsVersion);
+boolean bl2 = this.route.supportsNpn();
+if (bl2) {
+boolean isConnected() {
+return this.connected;
+}
+
+boolean isExpired(long l2) {
+if (this.getIdleStartTimeNs() < System.nanoTime() - l2) {
+

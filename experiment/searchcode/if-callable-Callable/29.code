@@ -1,0 +1,14 @@
+public ConcatCallableFactory(CallableFactory... factories) {this.factories = factories;}
+
+@Override
+public Callable<?> create() {
+if (index < factories.length) {
+Callable<?> callable = factories[index].create();
+if (callable != null) return callable;
+index += 1;
+return create();
+}
+return null;
+}
+}
+

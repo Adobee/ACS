@@ -1,0 +1,14 @@
+public void scheduleEvent(Event event) throws ConcurrentEventException{
+for (Event existingEvent : events) {
+if (existingEvent.overlaps(event))
+throw new ConcurrentEventException();
+}
+events.add(event);
+}
+
+public boolean contains(Event theEvent) {
+return events.contains(theEvent);
+}
+
+}
+

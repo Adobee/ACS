@@ -1,0 +1,12 @@
+if (byteCount >= 0) {
+while (byteCount > 0) {
+if (byteCount < BUFFER_SIZE)
+len = in.read(buffer, 0, (int) byteCount);
+public long copy(Reader in, Writer out, long byteCount) throws IOException {
+char buffer[] = new char[BUFFER_SIZE];
+int len;
+
+long returnVal = 0;
+
+if (byteCount >= 0) {
+

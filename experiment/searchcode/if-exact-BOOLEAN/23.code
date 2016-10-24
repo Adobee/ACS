@@ -1,0 +1,10 @@
+import org.echocat.jomon.runtime.logic.ExactBooleanRequirement.Adapter;
+
+import javax.annotation.Nonnull;
+import javax.annotation.Nullable;
+import javax.annotation.concurrent.Immutable;
+@ThreadSafe
+@Immutable
+@XmlJavaTypeAdapter(Adapter.class)
+public class ExactBooleanRequirement extends ExactValueRequirementSupport<Boolean> implements BooleanRequirement {
+

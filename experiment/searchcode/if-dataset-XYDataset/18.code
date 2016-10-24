@@ -1,0 +1,6 @@
+public static boolean isEmptyOrNull(XYPlot plot) {
+if (plot != null) {
+for (int i = 0, n = plot.getDatasetCount(); i < n; i++) {
+final XYDataset dataset = plot.getDataset(i);
+if (!DatasetUtilities.isEmptyOrNull(dataset)) {
+

@@ -1,0 +1,15 @@
+this.horn = null;
+}
+
+public NPolylinje (Punkt[] horn)
+{
+if (horn.length > 0)
+{
+Nod		nod = new Nod (new Punkt (horn[0]));
+int 	nodSize = 0;
+Nod 	nodPekare = horn;
+if ( nodPekare != null )
+{
+nodSize = 1;
+boolean finnsNastaNod = (nodPekare.nastaNod != null);
+

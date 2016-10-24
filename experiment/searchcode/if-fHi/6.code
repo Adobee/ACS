@@ -1,0 +1,8 @@
+ArrayList<FileHashItem> list = new ArrayList<FileHashItem>();
+for (File t: f.listFiles())
+{
+if (!t.isDirectory() &amp;&amp; !t.getName().equalsIgnoreCase(&quot;filehash.msf&quot;))
+System.out.println(&quot;Process &quot; + t.getName() + &quot;...&quot;);
+FileHashItem fhi = new FileHashItem();
+fhi.name = t.getName().getBytes(Charset.forName(&quot;UTF-8&quot;));
+

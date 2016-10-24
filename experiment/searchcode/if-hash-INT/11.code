@@ -1,0 +1,11 @@
+public class MyHashTable {
+private MyElement hash[];
+
+MyHashTable(int size){
+if(size < 4){	size = 10;	}
+hash = new MyElement[size];
+public boolean delete(double square){
+boolean result = false;
+for (int i = 0; i < hash.length; i++){
+if(hash[i] != null &amp;&amp; hash[i].getFigure().square() < square){
+

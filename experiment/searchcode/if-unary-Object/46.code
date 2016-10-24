@@ -1,0 +1,9 @@
+private final boolean unary;
+
+public OperatorInsn(EnumOperators operator) {
+super(operator.isUnary() ? UNARY_OPERATOR : BINARY_OPERATOR);
+public boolean equals(Object obj) {
+if(!super.equals(obj))
+return false;
+if(obj instanceof OperatorInsn) {
+

@@ -1,0 +1,13 @@
+public class Solution {
+public boolean isUgly(int num) {
+if (num <= 0) {
+while (num % 5 == 0) {
+num /= 5;
+}
+if (num < 7) {
+return true;
+}
+return false;
+}
+}
+

@@ -1,0 +1,11 @@
+private double creationRate;
+
+private RandomValue v = new RandomValue(0, 300);
+
+private RandomValue azimuth =  new RandomValue(0,360);
+private RandomValue lifespan = new RandomValue(0, 10);
+
+private double t = 0.0;
+
+private Color color = Color.RED;
+

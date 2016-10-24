@@ -1,0 +1,12 @@
+if (v >= beta) {return v;}
+if (v > alpha) { alpha = v;}
+}
+return v;
+}
+
+protected static float minValue(Game g, float alpha, float beta){
+if(g.cutOff()){
+return g.evaluation();
+}
+float v = Game.range[1];
+

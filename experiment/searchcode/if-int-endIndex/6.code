@@ -1,0 +1,8 @@
+public int removeElement(int[] A, int elem) {
+int startIndex = 0, endIndex = A.length - 1, tmp = 0;
+while (startIndex <= endIndex) {
+if (A[startIndex] != elem) {
+startIndex++;
+} else {
+endIndex = getEndIndex(A, endIndex, elem);
+

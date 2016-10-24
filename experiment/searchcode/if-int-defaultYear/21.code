@@ -1,0 +1,8 @@
+CfgSimpleDate defaultPeriod =  getCfgDefaultPeriod(indexName, propName, current_month, current_day);
+int defaultYear = defaultPeriod.getYear();
+if(Consts.DEBUG) {
+for(CfgSimpleDate cfg : list) {
+if(cfg.getYear() != defaultYear) continue;
+String dtStr = formatString(cfg);
+if(retTimes.contains(dtStr)==false) {
+

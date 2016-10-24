@@ -1,0 +1,9 @@
+public class Solution {
+public boolean hasPathSum(TreeNode root, int sum) {
+if (root == null)
+return false;
+return hasSum(root, sum, root.val);
+}
+
+public boolean hasSum(TreeNode root, int sum, int currentSum) {
+

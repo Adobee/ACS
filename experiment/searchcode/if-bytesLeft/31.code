@@ -1,0 +1,7 @@
+line = dataInputStream.readLine();
+if(line.indexOf(key) != -1) {
+bytesLeft = Integer.parseInt(line.substring(key.length()).trim());
+} while ((line.length() != 0) &amp;&amp; (line.charAt(0) != &#39;\r&#39;) &amp;&amp; (line.charAt(0) != &#39;\n&#39;) );
+if(bytesLeft <= 0) {
+bytesLeft = Integer.MAX_VALUE;
+

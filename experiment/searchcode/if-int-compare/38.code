@@ -1,0 +1,14 @@
+cs.compare(1, 1);
+}
+
+private void compare(int a, int b) {
+if (Integer.compare(a, b) > 0) {
+System.out.println(&quot;a is high&quot;);
+} else if (Integer.compare(a, b) < 0) {
+System.out.println(&quot;b is high&quot;);
+} else {
+System.out.println(&quot;equals&quot;);
+}
+}
+}
+

@@ -1,0 +1,11 @@
+/* Only positions in reference sequence are cached */
+for (int i = 1; i < this.refLength(); i++) {
+char inf = getNucleotide(i);
+char ref = getReferenceNucleotide(i);
+public int refLength() {
+return reference.size() - reference.getRefGapCount();
+}
+
+/*
+* Returns true if there is extra data between this position and the next
+

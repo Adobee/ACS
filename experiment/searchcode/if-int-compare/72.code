@@ -1,0 +1,14 @@
+public static int Linear(int[] arr,int target){
+int compare=0;
+int index =-1;
+for(int i=0;i<arr.length;i++){
+compare++;
+if(arr[i]==target){
+int j=arr.length-1;
+int m=0;
+while(i<=j){
+m=i+(j-i)/2;
+if (arr[m]>target){
+j=m-1;
+compare++;
+

@@ -1,0 +1,8 @@
+package servlets;
+
+public final class JDBCUtils {
+private static boolean initialized;
+
+public static synchronized void initDriver (String DriverClass){
+if(!initialized){
+

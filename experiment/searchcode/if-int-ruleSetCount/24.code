@@ -1,0 +1,8 @@
+FormProcessor fp = new FormProcessor(request);
+if (fp.getString(&quot;designer&quot;).equals(&quot;&quot;)) {
+isDesigner = false;
+isDesigner = Boolean.parseBoolean(fp.getString(&quot;designer&quot;));
+}
+if (fp.getString(&quot;showMoreLink&quot;).equals(&quot;&quot;)) {
+showMoreLink = true;
+

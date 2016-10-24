@@ -1,0 +1,12 @@
+public class Tanamoto {
+public static double getScore(double[] a, double[] b) {
+int c1 = 0;
+int c2 = 0;
+int shr = 0;
+
+for (int i = 0; i < a.length; i++) {
+if (a[i] != 0.0) {
+c1 += 1;
+}
+if (b[i] != 0.0) {
+

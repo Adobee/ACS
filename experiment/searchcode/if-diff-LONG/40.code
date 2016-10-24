@@ -1,0 +1,9 @@
+d1 = format.parse(bTime);
+d2 = format.parse(eTime);
+
+long diff = d2.getTime() - d1.getTime();
+long diffMinutes = diff / (60 * 1000) % 60;
+long diffHours = diff / (60 * 60 * 1000) % 24;
+
+if (diffSeconds < 10) {
+

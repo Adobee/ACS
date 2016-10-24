@@ -1,0 +1,12 @@
+package assignment1;
+
+public class WordList {
+
+private int listSize ;
+private int capList ;
+String[] newSubList = new String[j] ;
+
+for (int i = 0; i < listSize ; i++)
+{
+if (List[i].charAt(0) >= init &amp;&amp; List[i].charAt(0) <= fin)
+

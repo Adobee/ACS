@@ -1,0 +1,10 @@
+//System.out.println(&quot;null position is out of hop distance 8&quot;);
+int newPos = tempPos - 7 ;
+
+
+// if there is some 8 bit binary value associated with element out of hop of 8 then check it to get idea about
+//System.out.println(hop[newPos]);
+hop[tempPos] = 0;
+
+if(hop[newPos]>127 &amp;&amp; hop[newPos]<256)
+

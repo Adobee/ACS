@@ -1,0 +1,12 @@
+package com.avinash;
+
+
+public class Plateau {
+private int width;
+private int height;
+this.height = height;
+}
+
+public boolean isPointInside(int x, int y) {
+if((x >= 0 &amp;&amp; x <= width) &amp;&amp; (y >= 0 &amp;&amp; y <= height))
+

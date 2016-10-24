@@ -1,0 +1,11 @@
+return new Vector3d(this.x + value.x, this.y + value.y, this.z + value.z);
+}
+
+public Vector3d crossProduct(Vector3d value) {
+return new Vector3d(this.y * value.z - this.z * value.y, this.z * value.x - this.x * value.z, this.x * value.y - this.y * value.x);
+}
+
+@Override
+public boolean equals(Object obj) {
+if (obj.getClass() != getClass())
+

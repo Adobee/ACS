@@ -1,0 +1,11 @@
+double[] fitted = new double[trans.length];
+double[] chiSquare = new double[1];
+double chiSquareTarget = getChiSquareTarget();
+double chiSquareAdjust = fitStop - fitStart - 3;
+assertEquals(&quot;Poisson data RLD Chisquare&quot;, X2_VALUE_2, (chiSquare[0] / chiSquareAdjust), TOLERANCE); //TODO ARG note this noise value gives a different chisquare!
+}
+
+@Test
+public void doFit1b() {
+double xInc = getXInc1();
+

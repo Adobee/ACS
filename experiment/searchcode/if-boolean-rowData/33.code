@@ -1,0 +1,10 @@
+public OrderByHandler(LinkedHashMap<String, Boolean> columns) {
+this.columns = columns;
+}
+
+public List<RowData> handle(List<RowData> results) {
+if (columns == null)
+@SuppressWarnings(&quot;unchecked&quot;)
+public int compare(RowData row1, RowData row2) {
+for (Map.Entry<String, Boolean> column : columns.entrySet()) {
+

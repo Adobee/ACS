@@ -1,0 +1,10 @@
+private void acceptIt() {
+currentToken = scanner.scan();
+if (currentToken.kindInt == Token.ERROR) {
+parseError(MSG_INVALID_CHAR, FLAG_ERR_MSG);
+}
+}
+
+private void accept(int expectedKind) {
+if (currentToken.kindInt != expectedKind ) {
+

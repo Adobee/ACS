@@ -1,0 +1,10 @@
+public static Time from(int hour, int minute) {
+if (hour < 0 || hour > 23 || minute < 0 || minute > 59) {
+throw new IllegalArgumentException(&quot;Wrong time value.&quot;);
+return new Time(hour, minute);
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+

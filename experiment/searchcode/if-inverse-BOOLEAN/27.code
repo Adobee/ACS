@@ -1,0 +1,10 @@
+public InverseOfSubpropertyMustBeSubpropertyOfInverseOfSuperpropertyTest() {
+super(SANITY_GROUP, null);
+}
+
+
+public static boolean fails(RDFProperty property) {
+if (property instanceof OWLObjectProperty) {
+RDFProperty inverseProperty = property.getInverseProperty();
+if (inverseProperty != null &amp;&amp; property.getSuperpropertyCount() == 1 &amp;&amp; !property.equals(inverseProperty)) {
+

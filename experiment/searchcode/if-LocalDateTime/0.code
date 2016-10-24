@@ -1,0 +1,16 @@
+package application.util;
+
+import java.time.LocalDateTime;
+
+public class TimeUtil {
+
+public static LocalDateTime checkForZero(LocalDateTime localDateTime) {
+if (localDateTime != null) {
+
+}
+
+return null;
+}
+
+}
+

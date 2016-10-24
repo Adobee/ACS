@@ -1,0 +1,11 @@
+public class Battery extends Block {
+
+private boolean isVertical;
+
+@Override
+public void draw(Graphics2D g2, int fontSize) {
+if (isVertical) {
+double step = bounds.getHeight() / 9;
+
+Line2D positiveSide = new Line2D.Double(bounds.getCenterX(), bounds.getY(), bounds.getCenterX(),
+

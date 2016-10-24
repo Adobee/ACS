@@ -1,0 +1,11 @@
+System.out.println(&quot;hola bo!&quot;);
+}
+public static void quicksort(int[] t, int v, int h) {
+if (h - v > 2) {
+return m;
+}
+
+private static int splitt(int[] t, int v, int h) {
+int iv, ih;
+int m = median3sort(t, v, h);
+

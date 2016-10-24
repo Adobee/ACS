@@ -1,0 +1,10 @@
+package json;
+
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
+public class GsonFactory {
+public synchronized static Gson getGsonInstance() {
+if (gson == null) {
+GsonBuilder builder = new GsonBuilder();
+

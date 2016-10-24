@@ -1,0 +1,9 @@
+int samples = 100;
+double length = 0;
+double prevX = getStartX();
+double prevY = getStartY();
+double x = point.getX();
+double y = point.getY();
+length += MathUtils.distance(prevX, prevY, x, y);
+prevX = x;
+

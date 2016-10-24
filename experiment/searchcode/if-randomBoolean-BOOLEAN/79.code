@@ -1,0 +1,10 @@
+return new Random().nextInt(max - min + 1) + min;
+}
+
+public boolean randomBoolean() {
+return randomInt(0, 1) == 0 ? false : true;
+}
+
+public Date randomDate() {
+return createPerson(randomInt(0, 999), randomName(), randomBoolean(), randomDate(), createPersonWithNoMother(), 0, 0, randomInt(0, 10));
+

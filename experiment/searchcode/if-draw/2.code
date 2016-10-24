@@ -1,0 +1,15 @@
+package com.ulab.SpringIoc_2;
+
+public class ServiceProvider {
+Draw draw;
+public Draw getBean(String beanType){
+if(beanType==&quot;drawBean&quot;){
+draw=new Draw();
+draw.setType(new Triangle());
+return draw;
+}
+return null;
+}
+
+}
+

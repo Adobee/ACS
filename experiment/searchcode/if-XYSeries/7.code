@@ -1,0 +1,9 @@
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+
+public class PSFCUSUMPanel extends LineChartPanel {
+XYSeriesCollection dataset = new XYSeriesCollection();
+dataset.addSeries(cusumXYSeries);
+
+if (SOEASYController.getInstance().isSimulationRunning()) {
+

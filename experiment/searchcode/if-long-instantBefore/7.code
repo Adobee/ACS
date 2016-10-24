@@ -1,0 +1,9 @@
+* @return the human-readable short name in the specified locale
+*/
+public String getShortName(long instant, Locale locale) {
+if (locale == null) {
+// a bit messy, but will work in all non-pathological cases
+
+// evaluate 3 hours before and after to work out if anything is happening
+long instantBefore = instant - 3 * DateTimeConstants.MILLIS_PER_HOUR;
+

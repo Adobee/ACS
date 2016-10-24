@@ -1,0 +1,10 @@
+package org.trinity.common.locale;
+
+import java.util.Locale;
+
+import javax.servlet.http.HttpServletRequest;
+Locale locale = localeResolver.resolveLocale(request);
+
+if (!supportLocale(locale)) {
+locale = defaultLocale;
+

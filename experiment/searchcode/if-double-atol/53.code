@@ -1,0 +1,10 @@
+return atolDriver.isConnected();
+}
+
+private boolean connect() {
+boolean isSuccess = true;
+if (!atolDriver.isConnected()) {
+ArrayList<Byte> list = new ArrayList<>();
+if (connect()) {
+list = atolDriver.executeCommand(cmd, password);
+

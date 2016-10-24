@@ -1,0 +1,15 @@
+Player user = round.getUser(rAccess);
+
+if (user.blackjack())
+{
+if (dealer.blackjack())
+round.sendEvent(rAccess, Round.RoundEvent.UserLost);
+while ((dealer.getScore() < PlayerDealer.dealerHitLimit) || dealer.soft17())
+{
+round.hitDealer(rAccess);
+}
+
+if (dealer.busted())
+{
+round.sendEvent(rAccess, Round.RoundEvent.DealerBusted);
+

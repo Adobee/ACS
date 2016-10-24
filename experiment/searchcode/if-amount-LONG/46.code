@@ -1,0 +1,12 @@
+return balance;
+}
+
+public void deposit(long amount, Currency currency) {
+validateAmount(amount);
+this.balance += convertCurrency(amount, currency);
+return exchange.convert(amount, this.currency, currency);
+}
+
+private void validateBalance(long amount) {
+if (balance - amount < 0) {
+

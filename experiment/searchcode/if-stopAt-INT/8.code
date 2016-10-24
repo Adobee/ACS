@@ -1,0 +1,7 @@
+public class WildcardBlock implements Block {
+private final int[] dictionary;
+
+public WildcardBlock(String stopAt) {
+if (stopAt == null || stopAt.length() == 0) {
+throw new IllegalArgumentException(&quot;Stop characters cannot be undefined or empty&quot;);
+

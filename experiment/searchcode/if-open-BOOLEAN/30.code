@@ -1,0 +1,23 @@
+private volatile boolean open;
+
+@Override
+protected T filter(T from) {
+if (open) {
+return from;
+}
+else {
+return null;
+}
+}
+
+public boolean isOpen() {
+return open;
+}
+
+public void setOpen(boolean open) {
+this.open = open;
+}
+
+
+}
+

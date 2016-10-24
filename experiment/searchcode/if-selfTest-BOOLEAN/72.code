@@ -1,0 +1,7 @@
+private static StopwatchTimer sinceLast = new StopwatchTimer();
+
+private static final BooleanIO selfTest = new InstinctModule() {
+rents.add(RConf.button(selfTest.get() ? &quot;End Test&quot; : &quot;Begin Test&quot;));
+rents.add(RConf.autoRefresh(selfTest.get() ? 100 : 5000));
+boolean stale = !selfTest.get() &amp;&amp; sinceLast.get() >= 30;
+

@@ -1,0 +1,9 @@
+return new Period(new int[] {years, 0, 0, 0, 0, 0, 0, 0, 0}, PeriodType.standard());
+}
+public static Period months(int months) {
+return getPeriodType().getIndexedField(this, PeriodType.MILLI_INDEX);
+}
+
+public Period withFields(ReadablePeriod period) {
+if (period == null) {
+

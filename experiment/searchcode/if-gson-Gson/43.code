@@ -1,0 +1,13 @@
+private static Gson gsonWithExpose;
+
+public static Gson getCommonGsonInstance() {
+if (commonGson == null) {
+commonGson = new Gson();
+}
+
+return commonGson;
+}
+
+public static Gson getGsonInstanceWithExpose() {
+if (gsonWithExpose == null) {
+

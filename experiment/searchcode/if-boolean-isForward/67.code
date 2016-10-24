@@ -1,0 +1,12 @@
+public class HorizontalDock extends ControlsDock {
+
+private HBox hBox;
+private boolean isForward;
+
+public HorizontalDock() {
+hBox = HBoxBuilder.create().spacing(10).alignment(Pos.CENTER_RIGHT).build();
+if (Double.compare(me.getSceneX(), startDragX) > 0) {
+isForward = true;
+}
+if (Double.compare(me.getSceneX(), startDragX) < 0) {
+

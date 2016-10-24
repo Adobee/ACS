@@ -1,0 +1,11 @@
+private final CommandFactory commandFactory;
+private Controller controller;
+private boolean commandFlag = false;
+
+public CommandManager(TestSystem testSystem, Controller controller) {
+commandFactory = new CommandFactory(testSystem);
+this.controller = controller;
+}
+
+public boolean commandFlag() {
+

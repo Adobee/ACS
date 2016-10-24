@@ -1,0 +1,11 @@
+ReturnObject current=get(index);
+if(!current.hasError()){
+for(int i=size;i>=index;i--){
+objectArray[i+1]=objectArray[i];
+return null;
+}
+private boolean isAlmostFull() {
+if (objectArray.length - size < 2) {
+return true;
+} else {
+

@@ -1,0 +1,10 @@
+public Object umin(Object param) throws ParseException {
+if (param instanceof Complex)
+return ((Complex)param).neg();
+if (param instanceof Number)
+return new Double(-((Number)param).doubleValue());
+
+throw new ParseException(&quot;Invalid parameter type&quot;);
+}
+}
+

@@ -1,0 +1,16 @@
+//boolean exists = false;
+
+Bullet()
+{
+super();
+color = new Vector4f();
+}
+
+void update(float gameBounds)
+{
+if (exists){
+updatePos();
+
+// check if bullet is out of bounds
+if (pos.x > gameBounds || pos.x < -gameBounds || pos.y > gameBounds
+

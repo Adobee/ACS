@@ -1,0 +1,8 @@
+private MultivaluedMap<String, Object> headers;
+private OutputStream stream;
+private boolean headersFlushed = false;
+@SuppressWarnings(value = &quot;unchecked&quot;)
+protected void flushHeaders() throws IOException {
+if (headersFlushed)
+return;
+

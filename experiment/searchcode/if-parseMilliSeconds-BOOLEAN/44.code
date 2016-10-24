@@ -1,0 +1,10 @@
+* @return
+*/
+public boolean isDownloadingThumbnail(){
+if (!checkCursor()){
+Log.e(Utils.LOG_TAG, &quot;called isDownloadingThumbnail on a bad cursor&quot;);
+boolean isDownloading = getBoolean(KEY_IS_THUMBNAIL_DOWNLOADING);
+boolean isTimeout;
+try {
+isTimeout = Utils.parseMilliseconds(Utils.getNowTime()) -
+

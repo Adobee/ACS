@@ -1,0 +1,9 @@
+import org.joda.time.ReadablePartial;
+
+class InternalPrinterDateTimePrinter implements DateTimePrinter, InternalPrinter {
+private InternalPrinterDateTimePrinter(InternalPrinter internalPrinter) {
+this.underlying = internalPrinter;
+}
+
+static DateTimePrinter of(InternalPrinter internalPrinter) {
+

@@ -1,0 +1,11 @@
+List<Point> points = new LinkedList<Point>();
+for(int i=0;i<N;i++)
+for(int j=0;j<M;j++)
+if(A[i][j]==&#39;1&#39;)
+points.add(new Point(i,j));
+List<Point> nextPoints = new LinkedList<Point>();
+for(Point pt:points)
+//check here
+for(Point npt:pt.neigh())
+if(npt.x>=0 &amp;&amp; npt.y>=0 &amp;&amp; npt.x<N &amp;&amp; npt.y<M)
+

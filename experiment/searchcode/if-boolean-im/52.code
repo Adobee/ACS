@@ -1,0 +1,10 @@
+//		return JassIm.ImVar(p.attrTyp().imTranslateType(), p.getName());
+//	}
+
+public static ImType toArray(ImType t) {
+if (t instanceof ImSimpleType) {
+String type = t.getTypename();
+if (type.equals(&quot;integer&quot;)) {
+return JassIm.ImIntVal(0);
+}else if (type.equals(&quot;boolean&quot;)) {
+

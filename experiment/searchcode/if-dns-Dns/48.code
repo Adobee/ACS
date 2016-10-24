@@ -1,0 +1,11 @@
+String answer = dnsClient.resolveA(&quot;google.com&quot;);
+dnsClient.stop();
+
+if (answer == null) {
+fail(&quot;Error fetching answer for DNS&quot;);
+String answer = dnsClient.resolvePTR(&quot;204.228.150.3&quot;);
+dnsClient.stop();
+
+if (answer == null) {
+fail(&quot;Error fetching answer for DNS&quot;);
+

@@ -1,0 +1,6 @@
+public static Closure<NetworkInfo, Boolean> CHECK_IF_WIFI_CONNECTION = new Closure<NetworkInfo, Boolean>() {
+@Override
+public Boolean execute(NetworkInfo networkInfo) {
+public boolean isInterface(NetworkInfo interFace, boolean atLeastOne, Closure<NetworkInfo, Boolean>... checks) {
+if (interFace == null) return false;
+

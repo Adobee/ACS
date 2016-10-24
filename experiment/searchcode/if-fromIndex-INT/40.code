@@ -1,0 +1,11 @@
+public String nextWord() {
+StringBuffer sb = new StringBuffer();
+char c = s.charAt(fromIndex);
+if (!isLetter(c)) {
+fromIndex++;
+if (fromIndex < s.length()) {
+c = s.charAt(fromIndex);
+} else c = (char)-1;
+}
+return sb.toString();
+

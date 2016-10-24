@@ -1,0 +1,17 @@
+import core.session.Session;
+import core.trial.Trial;
+
+public class MaxSampleSizeMap extends Mapper
+{
+
+int	sampleSize;
+public void nextSession(Session session)
+{
+sampleSize = -1;
+}
+
+@Override
+public void nextTrial(Trial trial)
+{
+if (trial.sampleSetSize > sampleSize) sampleSize = trial.sampleSetSize;
+

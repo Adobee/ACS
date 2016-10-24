@@ -1,0 +1,8 @@
+int step = 0;
+String ret = &quot;&quot;;
+while (lenA >=0 &amp;&amp; lenB >= 0) {
+int sum = Character.getNumericValue(a.charAt(lenA--)) + Character.getNumericValue(b.charAt(lenB--)) + step;
+int sum = Character.getNumericValue(b.charAt(lenB--)) + step;
+step = sum / 2;
+ret = String.valueOf(sum % 2) + ret;
+

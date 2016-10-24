@@ -1,0 +1,9 @@
+public class Record extends AbstractRecord implements Comparable<Record> {
+
+public Record(String title, int similarity) throws IndexException {
+if (title.isEmpty() || title == null || similarity < 0) {
+public int compareTo(Record r) {
+if (this.similarity > r.similarity) {
+return 1;
+} else if (r.similarity == this.similarity) {
+

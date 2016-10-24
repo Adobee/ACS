@@ -1,0 +1,11 @@
+StringBuilder sb = new StringBuilder((endIndex - startIndex) * 2);
+boolean escaping = false;
+int curlies = 0;
+char c;
+for (int i = startIndex; i < endIndex; i++) {
+c = chars[i];
+
+switch (c) {
+case &#39;*&#39;:
+if (escaping) {
+

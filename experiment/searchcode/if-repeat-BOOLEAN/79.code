@@ -1,0 +1,10 @@
+import org.springframework.batch.repeat.CompletionPolicy;
+import org.springframework.batch.repeat.RepeatCallback;
+import org.springframework.batch.repeat.RepeatContext;
+Integer count = (Integer) context.getAttribute(&quot;count&quot;);
+return count > 5;
+}
+
+@Override
+public boolean isComplete(RepeatContext context) {
+

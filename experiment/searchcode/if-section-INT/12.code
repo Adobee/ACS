@@ -1,0 +1,10 @@
+public int getSectionForPosition(final int flatPos) {
+if (flatPos < 0)
+return -1;
+int start = 0, end = mSectionArray.length - 1;
+int piv = (start + end) / 2;
+public int getItemsCount() {
+if (mSectionArray.length == 0)
+return 0;
+return mSectionArray[mSectionArray.length - 1].endIndex + 1;
+

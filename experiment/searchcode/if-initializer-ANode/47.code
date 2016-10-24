@@ -1,0 +1,8 @@
+ModelRegistrations.Builder registrationBuilder;
+if (shouldHaveANodeInitializer(property, propertySchema)) {
+registrationBuilder = managedRegistrationBuilder(childPath, property, nodeInitializerRegistry, publicType);
+throw new UnmanagedPropertyMissingSetterException(property.getName());
+}
+}
+} else if (!shouldHaveANodeInitializer(property, propertySchema) &amp;&amp; !property.isWritable() &amp;&amp; !isNamePropertyOfANamedType(property)) {
+

@@ -1,0 +1,9 @@
+public int totalNQueensHelper(int index, int n, int[] cols){
+if(index == n){
+return 1;
+}
+int total = 0;
+for(int val = 0; val < n; ++val){
+if(checkValid(index, val, cols)){
+int[] colsClone = new int[n];
+

@@ -1,0 +1,7 @@
+if (s.charAt(i - 1) == &#39;1&#39; || (s.charAt(i - 1) == &#39;2&#39; &amp;&amp; s.charAt(i) <= &#39;6&#39;)) {
+if (i == 1) mem[i] += 1;
+else mem[i] += mem[i - 2];
+for (int i = 1; i < s.length(); i++) {
+if (set.contains(s.substring(i, i + 1))) mem[i] = mem[i - 1];
+if (set.contains(s.substring(i - 1, i + 1))) {
+

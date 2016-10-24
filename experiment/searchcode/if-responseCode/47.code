@@ -1,0 +1,12 @@
+public Type(String cmd, String param, SessionState session){
+super(cmd,param,session);
+if(param != null){
+responseCode = ResponseCode.CODE_501_Syntax_error_in_parameters;
+}
+}
+
+@Override
+public String getResponse(){
+String str ;
+if(responseCode == ResponseCode.CODE_200_Action_successfully_completed){
+

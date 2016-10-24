@@ -1,0 +1,12 @@
+public boolean give(EnergyEntity from, EnergyEntity to, long energy) {
+
+if (from == null || from.getEnergy() >= energy) {
+
+if (from != null) {
+from.setEnergy(from.getEnergy() - energy);
+from.merge();
+}
+
+if (to != null) {
+to.setEnergy(to.getEnergy() + energy);
+

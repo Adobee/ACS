@@ -1,0 +1,6 @@
+public void increment(final double d) {
+if (incMoment) {
+moment.increment(d);
+* Returns the arithmetic mean of the entries in the specified portion of
+* the input array, or <code>Double.NaN</code> if the designated subarray
+

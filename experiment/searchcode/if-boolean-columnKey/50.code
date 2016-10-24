@@ -1,0 +1,9 @@
+public boolean contains(Object rowKey, Object columnKey, Object layerKey) {
+if(rowKey == null || columnKey == null || layerKey == null) {
+HashMap<L, V> layerMap = columnMap.get(columnKey);
+if(layerMap == null) {
+return false;
+}
+
+return layerMap.containsKey(layerKey);
+

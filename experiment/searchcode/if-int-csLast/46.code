@@ -1,0 +1,10 @@
+return false;
+}
+int csLength = cs.length();
+int searchLength = searchChars.length;
+int csLast = csLength - 1;
+char ch = cs.charAt(i);
+for (int j = 0; j < searchLength; j++) {
+if (searchChars[j] == ch) {
+if (Character.isHighSurrogate(ch)) {
+

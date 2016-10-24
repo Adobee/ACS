@@ -1,0 +1,5 @@
+public static CharSequence applySpannable(CharSequence text, final String token, final CharacterStyle... cs) {
+final int tokenLen = token.length();
+final int start = text.toString().indexOf(token) + tokenLen;
+final int end = text.toString().indexOf(token, start);
+

@@ -1,0 +1,9 @@
+this.metaworksContext = metaworksContext;
+}
+
+public ContextFilter(String[] compareContextList, Object object){
+this.compareContextList = compareContextList;
+
+if(object instanceof ContextAware)
+this.metaworksContext = ((ContextAware)object).getMetaworksContext();
+

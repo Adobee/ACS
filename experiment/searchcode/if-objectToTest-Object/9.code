@@ -1,0 +1,6 @@
+fieldValueString = String.valueOf(privateDeclaredField.get(objectToTest));
+if (!toString.contains(fieldValueString)) {
+String toString = getToString(objectToTest);
+if (!toString.contains(classToVerify.getSimpleName())) {
+throw WrongToStringImplementationException.forClassNameNotFound(toString, classToVerify.getSimpleName(), classToVerify);
+

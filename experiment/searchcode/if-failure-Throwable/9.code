@@ -1,0 +1,11 @@
+public class Failure<T> extends TryMImpl<T> {
+
+public final Throwable throwable;
+
+public Failure(Throwable throwable) {
+if (throwable == null) { throw new IllegalArgumentException(&quot;Value of Success<T> can not be null!&quot;); }
+public Throwable throwable() { return this.throwable; }
+
+@Override
+public <U> U fold(Function<Throwable, U> ifFailure, Function<T, U> ifSuccess) { return ifFailure.apply(this.throwable); }
+

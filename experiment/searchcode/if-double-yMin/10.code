@@ -1,0 +1,13 @@
+package com.jrsolutions.mapserver.geometry;
+
+
+public class Rect {
+
+double xmin,xmax,ymin,ymax;
+
+public Rect(){
+xmin=ymin=Double.MAX_VALUE;
+xmax=ymax=-Double.MAX_VALUE;
+}
+public Rect(Rect r){
+

@@ -1,0 +1,7 @@
+Amount<Length> d = idx.getD();
+double x = wavelength.doubleValue(unit) / (2.0 * d.doubleValue(unit));
+if (x > 1)
+CombinationGenerator<HKL> combinations = new CombinationGenerator<HKL>(twoTheta.keySet(), peaks.size());
+Double minVar = Double.MAX_VALUE;
+for (List<HKL> comb : combinations) {
+

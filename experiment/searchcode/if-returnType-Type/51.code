@@ -1,0 +1,7 @@
+Class<?> returnType = DebuggerCLI.callStack.getCurrentMethod()
+.getReturnType();
+
+if (returnType.equals(byte.class) || returnType.equals(Byte.class)) {
+DebuggerCLI.returnObject = Byte.parseByte(returnVal);
+} else if (returnType.equals(short.class) || returnType.equals(Short.class)) {
+

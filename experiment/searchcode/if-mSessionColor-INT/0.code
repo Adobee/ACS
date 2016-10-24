@@ -1,0 +1,12 @@
+private int mSessionColor;
+private boolean colorSet = false;
+private Bitmap mSessionImage;
+
+private int mPos;
+private boolean mIsNew;
+mSessionName = savedInstanceState.getString(SAVE_NAME_SESSION);
+mSessionColor = savedInstanceState.getInt(SAVE_COLOR);
+
+if(!mIsNew){
+mSession = (new Mediator()).getDataSession().get(mPos);
+

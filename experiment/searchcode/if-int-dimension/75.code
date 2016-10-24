@@ -1,0 +1,12 @@
+height = (int) Math.ceil(d1);
+}
+
+public Dimension getSize() {
+return new Dimension(width, height);
+setSize(dimension.width, dimension.height);
+}
+
+public void setSize(int i, int j) {
+width = i;
+height = j;
+

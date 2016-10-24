@@ -1,0 +1,12 @@
+// TODO Auto-generated method stub
+return super.coord(overlap, maxOverlap);
+}
+
+
+@Override
+public float idf(long docFreq, long numDocs) {
+for (String field: labels) {
+try {
+long docfreq_new = reader.totalTermFreq(new Term(field, term));
+if (docfreq_new > max_docFreq) max_docFreq = docfreq_new;
+

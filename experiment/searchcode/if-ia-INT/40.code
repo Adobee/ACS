@@ -1,0 +1,6 @@
+public class Solution {
+public void merge(int A[], int m, int B[], int n) {
+int index = m+n-1, ia = m-1, ib = n-1;
+while (index >= 0 &amp;&amp; ia >= 0 &amp;&amp; ib >= 0) {
+if (A[ia] >= B[ib]) A[index--] = A[ia--];
+

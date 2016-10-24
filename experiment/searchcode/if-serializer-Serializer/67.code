@@ -1,0 +1,9 @@
+import com.github.mongoutils.collections.DBObjectSerializer;
+import com.mongodb.DBCollection;
+
+public interface MapPutCommand<K, V> extends CollectionCommand {
+void putAll(DBCollection collection, DBObjectSerializer<K> keySerializer, DBObjectSerializer<V> valueSerializer,
+Map<K, V> data);
+
+V putIfAbsent(DBCollection collection, DBObjectSerializer<K> keySerializer, DBObjectSerializer<V> valueSerializer,
+

@@ -1,0 +1,9 @@
+public class PowerOfTwo {
+public static int powerOfTwo(int number) {
+if (number <= 0) {
+return 1;
+}
+return powerOfTwo(number - 1) * 2;
+}
+}
+

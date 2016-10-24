@@ -1,0 +1,9 @@
+import org.apache.hadoop.mapred.RecordReader;
+
+public class PrimeNumberRecordReader implements RecordReader<LongWritable, NullWritable>
+public boolean next(LongWritable key, NullWritable value)
+{
+if (this.currentNumber <= this.endingNumber)
+{
+key.set(this.currentNumber);
+

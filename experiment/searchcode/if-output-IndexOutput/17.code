@@ -1,0 +1,7 @@
+final ConcurrentMap<String, IndexOutput> outputs = openIndexOutputs;
+if (canceled || outputs == null) {
+return null;
+final ConcurrentMap<String, IndexOutput> outputs = openIndexOutputs;
+openIndexOutputs = null;
+if (outputs == null) {
+

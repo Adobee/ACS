@@ -1,0 +1,6 @@
+if ((era != null) &amp;&amp; entity.contains(history.yearOfEra())) {
+int yearOfEra = entity.get(history.yearOfEra());
+int doy = entity.get(history.dayOfYear());
+if (entity.contains(StdHistoricalElement.YEAR_OF_DISPLAY)) {
+yearOfEra = entity.getInt(StdHistoricalElement.YEAR_OF_DISPLAY);
+

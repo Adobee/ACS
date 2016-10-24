@@ -1,0 +1,11 @@
+return filter != null;
+}
+
+protected boolean inRoot() {
+if (isFiltered()) {
+if (generator.isClosed()) {
+return;
+}
+if (writeLineFeedAtEnd) {
+flush();
+

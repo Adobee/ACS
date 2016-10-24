@@ -1,0 +1,6 @@
+for (String line : response) {
+if (line.startsWith(&quot;outputid:&quot;)) {
+this.id = Integer.parseInt(line.substring(&quot;outputid: &quot;.length()));
+} else if (line.startsWith(&quot;outputname:&quot;)) {
+this.name = line.substring(&quot;outputname: &quot;.length());
+

@@ -1,0 +1,13 @@
+public class DataSourceContainer extends AbstractMap<String, DataSource> implements Steppable {
+
+private final Map<String, DataSource> sources;
+private double currentT;
+sources = new HashMap<String, DataSource>();
+currentT = 0;
+deltaT = 0.01;
+}
+
+@Override
+public void step() {
+double stopTime = currentT + deltaT;
+

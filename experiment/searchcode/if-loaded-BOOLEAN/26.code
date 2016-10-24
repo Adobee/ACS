@@ -1,0 +1,7 @@
+public abstract class AbstractLoadable<T extends Loadable> implements Loadable {
+private boolean loaded;
+private List<LoadableListener<T>> listeners = new ArrayList<LoadableListener<T>>();
+
+/**
+* Sets the loaded state. If the state is set to true the loadablelisteners will be
+

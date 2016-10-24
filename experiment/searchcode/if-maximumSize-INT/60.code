@@ -1,0 +1,13 @@
+import java.util.Map;
+
+public class LRUMap<K, V> extends LinkedHashMap<K, V> {
+
+private int maximumSize;
+
+public LRUMap (int maximumSize) {
+
+this(100, .75F, false, maximumSize);
+}
+
+public LRUMap (boolean accessOrder, int maximumSize) {
+

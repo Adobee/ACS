@@ -1,0 +1,9 @@
+public static FontDot getLastLineDot(FontDot dot, int xOffset, int yOffset, Map<String, FontDot> xyMap) {
+FontDot nextDot = dot;
+while (true) {
+String key = (nextDot.getPt().x + xOffset) + &quot;,&quot; + (nextDot.getPt().y + yOffset);
+FontDot getDot = xyMap.get(key);
+if (getDot != null) {
+nextDot = getDot;
+} else {
+

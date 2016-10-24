@@ -1,0 +1,5 @@
+valid = valid &amp;&amp; validateQueryResponse.isValid();
+if (request.explain() || request.rewrite()) {
+Query queryRewrite = searcher.rewrite(query);
+if (queryRewrite instanceof MatchNoDocsQuery) {
+

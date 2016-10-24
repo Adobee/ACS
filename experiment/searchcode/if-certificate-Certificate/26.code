@@ -1,0 +1,9 @@
+import projectNS.library.security.persistance.dao.ManualCertificateDao;
+import projectNS.library.security.persistance.model.CertificatePK;
+
+public class CertificateManager {
+private ManualCertificateDao manualCertificateDao;
+
+public static CertificateManager getInstance(){
+if(Singleton == null) return new CertificateManager();
+

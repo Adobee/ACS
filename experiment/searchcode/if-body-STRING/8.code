@@ -1,0 +1,17 @@
+public class ReverseStrategy implements IEncryptionStrategy {
+
+@Override
+public String encrypt(String body) {
+if(body.length() <= 1) {
+return body;
+public String decrypt(String encryptedBody) {
+if(encryptedBody.length() <= 1) {
+return encryptedBody;
+}
+return new StringBuilder(encryptedBody).reverse().toString();
+}
+
+
+
+}
+

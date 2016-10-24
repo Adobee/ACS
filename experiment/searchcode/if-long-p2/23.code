@@ -1,0 +1,10 @@
+primes.add(number);
+if ((long) number * number > LIMIT) {
+break;
+}
+}
+number += 2;
+long p1 = primes.get(i);
+long p2 = primes.get(i + 1);
+sum += multipleSum(p1, p1 * p1 + 1, Math.min(p2 * p2 - 1, LIMIT));
+

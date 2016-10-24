@@ -1,0 +1,10 @@
+private int failures;
+
+public MethodsThrowingExceptions(final int failures){
+this.failures = failures;
+throw new RandomException(failures+++ &quot; failures yet&quot;);
+}
+
+public void thisMethodMayFail(final boolean fail){
+if (fail) {
+

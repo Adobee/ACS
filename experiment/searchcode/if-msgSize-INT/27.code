@@ -1,0 +1,9 @@
+private boolean heartbeat() {
+int msgSize;
+String serverReply;
+char[] buffer = null;
+try {
+while (totalRead < msgSize) {
+int read = in.read(buffer, totalRead, msgSize - totalRead);
+if (read == -1) {
+

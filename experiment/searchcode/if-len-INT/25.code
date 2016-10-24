@@ -1,0 +1,22 @@
+int len = A.length;
+
+if (len == 0 || len == 1) {
+return len;
+}
+
+int i = 0;
+int j = 1;
+
+while (j < len) {
+if (A[j] != A[j - 1]) {
+i++;
+A[i] = A[j];
+}
+
+j++;
+}
+
+return i + 1;
+}
+}
+

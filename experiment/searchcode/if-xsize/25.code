@@ -1,0 +1,11 @@
+FactionBuildingLevelSection torches = new FactionBuildingLevelSection(building, xSize, zSize);
+if(xSize%2 == 0)
+{
+torches.addBlockToLevel(Blocks.torch, ((int)xSize/2), zSize - 1);
+torches.addBlockToLevel(Blocks.torch, (int)xSize/2, 0);
+}
+
+if(zSize%2 == 0)
+{
+torches.addBlockToLevel(Blocks.torch, xSize - 1, (int)zSize/2);
+

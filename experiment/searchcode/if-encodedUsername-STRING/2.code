@@ -1,0 +1,7 @@
+private static final boolean DEFAULT_CHECKED = false;
+
+public static String getUserName() {
+//String encodedUsername = new String(Base64.encode(DEFAULT_USERNAME.getBytes()));
+String encodedUsername = settings.getString(USERNAME, DEFAULT_USERNAME);
+if(encodedUsername == null || encodedUsername.equals(&quot;&quot;)) {
+

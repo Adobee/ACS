@@ -1,0 +1,6 @@
+/*  29: 90 */       throw new NotStrictlyPositiveException(LocalizedFormats.DEGREES_OF_FREEDOM, Double.valueOf(numeratorDegreesOfFreedom));
+/*  30:    */     }
+/*  31: 93 */     if (denominatorDegreesOfFreedom <= 0.0D) {
+/*  50:123 */     double logm = FastMath.log(this.denominatorDegreesOfFreedom);
+/*  51:124 */     double lognxm = FastMath.log(this.numeratorDegreesOfFreedom * x + this.denominatorDegreesOfFreedom);
+

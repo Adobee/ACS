@@ -1,0 +1,10 @@
+public boolean match(String string, String pattern, String subPattern) {
+// Found Pattern
+if (subPattern.length() == 0) {
+// Pattern not found.
+if (string.length() == 0) {
+return false;
+}
+
+if (subPattern.charAt(0) == string.charAt(0)) {
+

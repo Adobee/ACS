@@ -1,0 +1,10 @@
+public class Cos extends Func{
+Sin sin = new Sin();
+
+public Cos(double accuracy, boolean fromTable) {
+super(accuracy, fromTable);
+double unsignedCos = sqrt(1 - pow(sin.calc(arg), 2)), cos;
+double tmpA = abs(abs(arg) > PI*2 ? arg % PI*2 : arg);
+
+if(tmpA >= 0 &amp;&amp; tmpA <= PI/2 || tmpA >= 3*PI/2 &amp;&amp; tmpA <= 2*PI)
+

@@ -1,0 +1,10 @@
+public void sort(int startIndex, int endIndex) {
+
+if(startIndex >= endIndex) return;
+
+int pivotIndex = divide(startIndex, endIndex);
+int optimalIndex = getOptimalIndex(startIndex, endIndex);
+
+int pivot = a[optimalIndex];
+swap(optimalIndex, endIndex);
+

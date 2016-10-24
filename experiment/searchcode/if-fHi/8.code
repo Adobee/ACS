@@ -1,0 +1,7 @@
+public int delAll(String[] ids,HttpServletRequest request){
+if(ids==null){
+return 0;
+}
+FhiUser user = (FhiUser) request.getSession().getAttribute(FhiConfig.USER_NAME);
+if(user==null){
+

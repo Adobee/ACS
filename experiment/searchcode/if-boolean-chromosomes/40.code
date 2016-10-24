@@ -1,0 +1,7 @@
+NBTTagCompound nbttagcompound1 = (NBTTagCompound) nbttaglist.tagAt(i);
+byte byte0 = nbttagcompound1.getByte(SLOT_TAG);
+if (byte0 >= 0 &amp;&amp; byte0 < chromosomes.length) {
+chromosomes[byte0] = chromosome;
+if (Config.clearInvalidChromosomes) {
+chromosome.overrideInvalidAlleles(defaultTemplate[byte0]);
+

@@ -1,0 +1,12 @@
+long sSeconds = Long.parseLong(secondTime[2]);
+
+sMinutes += 60 * sHours;
+sSeconds += 60 * sMinutes;
+
+long difference = fSeconds - sSeconds;
+
+long hours = difference / 3600;
+difference -= hours * 3600;
+
+long minutes = difference / 60;
+

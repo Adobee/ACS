@@ -1,0 +1,6 @@
+int intKeyCode = e.getKeyCode();
+if (intKeyCode == KeyEvent.VK_W)		UP			= true;
+if (intKeyCode == KeyEvent.VK_S)		DOWN		= true;
+if (intKeyCode == KeyEvent.VK_A)		LEFT		= true;
+if (intKeyCode == KeyEvent.VK_D)		RIGHT		= true;
+

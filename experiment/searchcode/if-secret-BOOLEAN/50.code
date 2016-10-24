@@ -1,0 +1,11 @@
+MasterSecret masterSecret = getMasterSecret();
+onRun(masterSecret);
+}
+
+@Override
+public boolean onShouldRetry(Exception exception) {
+if (exception instanceof RequirementNotMetException) return true;
+public abstract boolean onShouldRetryThrowable(Exception exception);
+
+private MasterSecret getMasterSecret() throws RequirementNotMetException {
+

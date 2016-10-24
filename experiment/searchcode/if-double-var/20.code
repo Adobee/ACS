@@ -1,0 +1,12 @@
+Scanner tec =new Scanner(System.in).useLocale(Locale.US);
+
+double varA, varB, varC;
+
+//
+if(args.length == 3){
+varB = Double.parseDouble(args[1]);
+varC = Double.parseDouble(args[2]);
+
+}else{
+if(args.length != 0)
+

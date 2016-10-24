@@ -1,0 +1,12 @@
+int height = board.length - offset * 2;
+
+boolean flip = false;
+for (int i = 0; i < width; ++i) {
+if (board[offset][offset + i] == &#39;O&#39; &amp;&amp; flip)
+flip = false;
+}
+
+flip = false;
+for (int i = 0; i < width; ++i) {
+if (board[offset + height - 1][offset + i] == &#39;O&#39; &amp;&amp; flip)
+

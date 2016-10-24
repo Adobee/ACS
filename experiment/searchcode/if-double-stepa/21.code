@@ -1,0 +1,9 @@
+private int maxA = 120;
+private int stepA = 20;
+
+private int minB = -120;
+private int maxB = 120;
+private int stepB = 20;
+private int invalidColor = Color.WHITE.getRGB();
+private double baseLabL = 75;
+

@@ -1,0 +1,12 @@
+int[] temp = new int[A.length];
+
+int max=0;
+for(int i=A.length-1;i>=0;--i)
+{
+temp[i]=max;
+
+if(A[i]>max) max=A[i];
+}
+
+int i=0, store=0;
+

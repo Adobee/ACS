@@ -1,0 +1,8 @@
+int newElement = arr[k];
+int newPos = Arrays.binarySearch(arr, 0, k, newElement);
+
+if (newPos <0)
+newPos=-newPos-1;
+
+int lng = k - newPos;
+

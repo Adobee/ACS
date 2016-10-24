@@ -1,0 +1,10 @@
+public static boolean isPandigital(int a) {
+int numDigits = (int)(Math.log10(a)+1);
+
+int[] digits = new int[numDigits];
+
+int b = a;
+
+for (int i = 0; i < numDigits; i++) {
+digits[i] = b % 10;
+

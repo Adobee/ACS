@@ -1,0 +1,13 @@
+return Math.sqrt(x * x + y * y + z * z);
+}
+
+public static double Clamp(double v, double min, double max) {
+if(v > max)
+return max;
+else if(v < min)
+return min;
+else
+return v;
+}
+}
+

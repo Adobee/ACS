@@ -1,0 +1,8 @@
+double r;
+double aa = Math.abs(a);
+double bb = Math.abs(b);
+if (aa > bb) {
+r = b / a;
+r = aa * Math.sqrt(1 + r * r);
+} else if (b != 0) {
+

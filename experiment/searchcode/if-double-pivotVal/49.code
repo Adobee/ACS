@@ -1,0 +1,9 @@
+for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getHeight(); i++) {
+double rhs = tableau.getEntry(i, tableau.getWidth() - 1);
+if (MathUtils.compareTo(tableau.getEntry(i, col), 0, epsilon) >= 0) {
+throw new UnboundedSolutionException();
+}
+
+// set the pivot element to 1
+double pivotVal = tableau.getEntry(pivotRow, pivotCol);
+

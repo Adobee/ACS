@@ -1,0 +1,8 @@
+Node temp = head;
+
+for (int i = 0; i < listSize; i++){
+if (temp.data.equals(o))
+public Object remove(int index) {
+if (index < 0 || index > listSize)
+throw new ArrayIndexOutOfBoundsException(&quot;Index of&quot; + index + &quot; is invalid&quot;);
+

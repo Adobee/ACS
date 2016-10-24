@@ -1,0 +1,6 @@
+* Lazily creates (and caches) values for keys. If creating the value fails (with errors), an
+* exception is thrown on retrieval.
+public V get(K key, Errors errors) throws ErrorsException {
+Object resultOrError = delegate.get(key);
+if (resultOrError instanceof Errors) {
+

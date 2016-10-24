@@ -1,0 +1,5 @@
+public CholeskyDecomposition(final RealMatrix matrix,
+final double relativeSymmetryThreshold,
+final double absolutePositivityThreshold) {
+if (!matrix.isSquare()) {
+

@@ -1,0 +1,12 @@
+public class GompertzVariate extends RandomVariateBase {
+private double alpha = 1;
+private double beta = 1;
+public GompertzVariate() {
+}
+
+@Override
+public double generate() {
+final double r = rng.draw();
+
+return Math.log(1-beta_alpha*Math.log(1-r)*exp_minusBeta_Age)/beta;
+

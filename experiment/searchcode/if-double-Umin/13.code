@@ -1,0 +1,12 @@
+private double cena;
+private int trajanjeUMin;
+private List<Preparat> listaPreparata;
+
+public Tretman() {
+public void setCena(double cena) {
+this.cena = cena;
+}
+
+public int getTrajanjeUMin() {
+return trajanjeUMin;
+

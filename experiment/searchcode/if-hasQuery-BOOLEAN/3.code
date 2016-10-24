@@ -1,0 +1,10 @@
+protected StringBuffer buf;
+protected boolean hasQuery;
+
+public HttpURI(String spec) throws URISyntaxException {
+URI uri = new URI(spec);
+buf.append(&quot;:&quot;);
+buf.append(uri.getSchemeSpecificPart());
+if (uri.getQuery() != null) {
+hasQuery = true;
+

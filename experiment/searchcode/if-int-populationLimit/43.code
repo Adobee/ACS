@@ -1,0 +1,8 @@
+private boolean alwaysKeepBest;
+private double[] scaledFitness;
+private double totalFitness;
+private int populationLimit;
+public KeepPopulationThread(int start, int end, boolean alwaysKeepBest, int populationLimit, int choices, int information) {
+this.start = start;
+this.end = end;
+

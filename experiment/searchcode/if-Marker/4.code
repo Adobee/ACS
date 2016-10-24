@@ -1,0 +1,10 @@
+return this.marker.getMarkerType();
+}
+
+private static MarkerType[] types;
+
+private static MarkerType[] getTypes() {
+if(types == null){
+for(MarkerType markerType : MarkerType.getTypes()){
+if(ComparatorUtils.equals(markerType.marker.getMarkerType(), type)){
+

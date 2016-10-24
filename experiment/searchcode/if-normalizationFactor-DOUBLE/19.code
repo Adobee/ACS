@@ -1,0 +1,7 @@
+bestClassifier.computeAlpha();
+double normalizationFactor = updateProbabilities(bestClassifier);
+boundOnNormalizationFactor *= normalizationFactor;
+double normalizationFactor = 0, q;
+for(int i = 0; i < exampleSet.size(); i++){
+if(exampleSet.get(i).getTagetAttribute() == classifier.classifiedExamples.get(i).getTagetAttribute()){
+

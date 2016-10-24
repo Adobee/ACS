@@ -1,0 +1,12 @@
+package ninja.mpnguyen.bisque.nio;
+
+import java.util.concurrent.Callable;
+
+public class CallerTask<T> extends FetcherTask<T> {
+this.callable = callable;
+}
+
+@Override
+public T doBlockingStuff() throws Exception {
+if (callable != null) return callable.call();
+

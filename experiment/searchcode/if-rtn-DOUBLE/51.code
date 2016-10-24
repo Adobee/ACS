@@ -1,0 +1,7 @@
+String rtnValue = value[0];
+if(!rtnValue.equals(&quot;面议&quot;)){
+rtnValue = rtnValue.substring(0,rtnValue.indexOf(&quot;（&quot;));
+if(rtnValue.indexOf(&quot;万&quot;) != -1){
+rtnValue = rtnValue.replace(&quot;万&quot;, &quot;&quot;);
+double valueD = Double.parseDouble(rtnValue);
+

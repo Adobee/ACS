@@ -1,0 +1,11 @@
+for (Entry e : new MatrixIterable(new double[4][4])) {
+if (e.row == e.col)
+assertEquals(e.toString(), 1, t.entry(e.row, e.col), PRECISION);
+assertEquals(e.toString(), 0, t.entry(e.row, e.col), PRECISION);
+}
+}
+
+@Test
+public void testTranslationDoubleDoubleDouble() {
+double[][] expected = new double[4][4];
+

@@ -1,0 +1,7 @@
+void nth_element(int[] a, int low, int high, int n) {
+while (true) {
+int k = randomizedPartition(a, low, high);
+if (n < k) high = k;
+else if (n > k) low = k + 1;
+else return;
+

@@ -1,0 +1,7 @@
+public Rubbish(Position p, int quantity) {
+super(MapObject.RUBBISH,p,true,false,false,true);
+if( quantity <= 0 )
+public void cleaning(final int maxPower, MutableInt usedPower) {
+/*	int maxCleaned,needEnergy;
+if ( type == 1 )
+

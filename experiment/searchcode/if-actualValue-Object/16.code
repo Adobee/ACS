@@ -1,0 +1,6 @@
+Object actualValue, JSONCompareResult result, String maskWord, String splitChars) throws JSONException {
+if ( (expectedValue instanceof String &amp;&amp; ((String) expectedValue).contains(maskWord))) {
+String [] expectedWords= ((String)expectedValue).split(splitWords);
+String [] actualWords= ((String)actualValue).split(splitWords);
+if ( (expectedWords.length == 1 &amp;&amp; expectedWords[0].compareTo(maskWord)!=0) &amp;&amp; expectedWords.length != actualWords.length) {
+

@@ -1,0 +1,6 @@
+public abstract boolean isMoreThanMinLength(String input, int minLength);
+
+public abstract boolean isLessThanMaxLength(String input, int maxLength);
+
+private static final String EMAIL_PATTERN = &quot;^[a-zA-Z0-9#_~!$&amp;&#39;()*+,;=:.\&quot;(),:;<>@\\[\\]\\\\]+@[a-zA-Z0-9-]+(\\.[a-zA-Z0-9-]+)*$&quot;;
+

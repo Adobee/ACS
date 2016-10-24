@@ -1,0 +1,9 @@
+public class ServerTest {
+private int randomPort;
+private EventLoopGroup group;
+
+@Before
+public void setUp() {
+randomPort = ThreadLocalRandom.current().nextInt(1024, 65535);
+group = new NioEventLoopGroup();
+

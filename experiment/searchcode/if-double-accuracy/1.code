@@ -1,0 +1,8 @@
+private Double latitude;
+private Double longitude;
+private Double accuracy;
+private Double altitude;
+private Double altitude_accuracy;
+
+public GeoCoordinate(Double latitude, Double longitude) {
+

@@ -1,0 +1,8 @@
+private CurrentWeather currentWeatherByAddr(String addrRequest) {
+String rawResponse = makeGETRequest(addrRequest);
+return new CurrentWeather(getJson(rawResponse));
+private JSONObject getJson(String rawResponse) {
+JSONObject jsonResponse = null;
+
+if (rawResponse != null) {
+

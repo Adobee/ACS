@@ -1,0 +1,12 @@
+package com.marcinrabiej.twentyonedays.domain;
+
+import org.joda.time.LocalDate;
+
+import java.util.Iterator;
+return current != null;
+}
+
+public LocalDate next() {
+if (current == null) {
+throw new NoSuchElementException();
+

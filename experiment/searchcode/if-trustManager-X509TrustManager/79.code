@@ -1,0 +1,8 @@
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
+
+import org.apache.commons.ssl.HostnameVerifier;
+public HostnameVerifyingTrustManager(TrustManager trustManager) {
+if (!(trustManager instanceof X509TrustManager)) {
+throw new IllegalArgumentException(
+

@@ -1,0 +1,14 @@
+package complexNumber;
+
+/*
+* 複素数のクラス
+*/
+
+public class Complex {
+private double real; // 実部の値
+// 複素空間での実軸からの角度を返すメソッド
+public double arg() {
+double theta = 2 * Math.PI;// z=0の時に返される所定外の値 2π
+if (this.real == 0) {
+if (this.imag > 0) {
+

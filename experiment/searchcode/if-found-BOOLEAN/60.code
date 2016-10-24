@@ -1,0 +1,9 @@
+public static void main(String[] args) {
+boolean[] isPrime = EulerMath.getSieve(N);
+boolean found = false;
+
+for(int c = 9; c < isPrime.length; c += 2)
+if( !isPrime[c] ) {
+found = false;
+for(int p = 2; !found &amp;&amp; p < c; p++) {
+

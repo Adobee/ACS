@@ -1,0 +1,10 @@
+public class Button implements AbstractButton {
+public ButtonClient client;
+public boolean on;
+boolean buttonOn = getState();
+if (buttonOn) {
+this.on = false;
+client.off();
+} else {
+this.on = true;
+

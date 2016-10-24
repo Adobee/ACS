@@ -1,0 +1,6 @@
+public void add(T x) {
+if (sample.size() < sampleSize) {
+sample.add(x);
+} else if (FastRandom.rand().nextUniform() < sampleSize*1.0 / (numSeen+1)) {
+int replaceIndex = FastRandom.rand().nextInt(sampleSize);
+

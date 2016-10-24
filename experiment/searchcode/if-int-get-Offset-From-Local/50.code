@@ -1,0 +1,5 @@
+public static long toLocalDate(final Calendar calendar, final TimeZone localTimeZone, final Date utcDate) {
+final int offsetFromUTC = localTimeZone.getOffset(utcDate.getTime());
+public static Date toUtcDate(final Calendar calendar, final TimeZone localTimeZone, final Date localDate) {
+final int offsetFromUTC = localTimeZone.getOffset(localDate.getTime()) * (-1);
+

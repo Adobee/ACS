@@ -1,0 +1,8 @@
+Map markers = (Map) viewer.getProperty(KEY);
+if (markers == null) {
+markers = new HashMap();
+viewer.setProperty(KEY, markers);
+private static Set getMarkers(EditPartViewer viewer, String viewId,
+boolean create) {
+Set markers = (Set) getMarkers(viewer).get(viewId);
+

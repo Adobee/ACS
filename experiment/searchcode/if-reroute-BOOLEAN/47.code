@@ -1,0 +1,12 @@
+Log.e(TAG, &quot;Timeout while connecting to server!&quot;);
+}
+
+public void onRerouteAdd(Reroute r) {
+if (mMap == null) {
+mActiveReroutes.add(r);
+unlockActiveReroutes();
+
+updateNumberStatus();
+
+if (currentRerouteIndex == -1) {
+

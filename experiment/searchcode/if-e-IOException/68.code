@@ -1,0 +1,12 @@
+package com.xiaomi.infra.galaxy.api.io;
+
+import java.io.IOException;
+
+public interface RecordWriter<R> {
+* Close the underlying stream, don&#39;t call this if the underlying stream is self managed.
+*
+* @throws IOException
+*/
+void close() throws IOException;
+}
+

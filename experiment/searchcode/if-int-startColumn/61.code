@@ -1,0 +1,8 @@
+public boolean legalMove (int startRow, int startColumn, int desRow, int desColumn, int[][] playerMatrix)
+{
+
+if (startRow == desRow || startColumn == desColumn)
+{
+
+strErrorMsg = &quot;Goniec moze poruszac sie jedynie na skos&quot;;
+

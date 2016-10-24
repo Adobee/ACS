@@ -1,0 +1,10 @@
+String propertyKey = (String) it.next();
+Object property = aMap.get(propertyKey);
+
+if (property instanceof String) {
+
+String propertyString = (String) property;
+
+if ( propertyString.contains(&quot;null&quot;) ){
+query = query + objectName + &quot;.&quot; + propertyKey + &quot; is &quot;
+

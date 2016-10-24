@@ -1,0 +1,12 @@
+public boolean isPersistent() {
+return (null != expiryDate);
+}
+
+public void setDomain(String dom) {
+if (dom != null) {
+int ndx = dom.indexOf(&quot;:&quot;);
+String encodedName = name;
+String encodedValue = value;
+try {
+encodedName = URLEncoder.encode(encodedName, &quot;UTF-8&quot;);
+

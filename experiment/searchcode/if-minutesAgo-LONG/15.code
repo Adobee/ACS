@@ -1,0 +1,9 @@
+long now = System.currentTimeMillis() / 1000;
+long diff = now - timestamp;
+
+if (diff < minute) {
+return &quot;Just now&quot;;
+} else if (diff < hour) {
+return minutesAgo(diff);
+} else if (diff < day) {
+

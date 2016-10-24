@@ -1,0 +1,13 @@
+immutableGraph = ImmutableGraph.loadOffline(edgesfilename, pl); //We need random access
+System.out.println(&quot;Loading offline the graph!&quot;);
+}
+}
+
+public int maxDegree() {
+if(maxDegree != null)
+Iterator<Integer> degIter = immutableGraph.outdegrees();
+maxDegree = -1;
+while(degIter.hasNext()) {
+Integer deg = degIter.next();
+if(deg > maxDegree)
+

@@ -1,0 +1,7 @@
+* @return Si es posible o no mover esta ficha
+*/
+public boolean legalMove(int startRow, int startColumn, int desRow, int desColumn, int[][] playerMatrix) {
+strErrorMsg = &quot;Caballo sole se puede mover en L&quot;;
+
+if (desRow == (startRow - 2) &amp;&amp; desColumn == (startColumn - 1)) //2N, 1E
+

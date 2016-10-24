@@ -1,0 +1,10 @@
+AddAccountPolicyRequest addAccountPolicyRequest) {
+
+if (addAccountPolicyRequest == null) {
+throw new AmazonClientException(
+if (addAccountPolicyRequest.getAccount() == null) {
+throw new AmazonClientException(&quot;must specifiy a account&quot;);
+}
+
+if (addAccountPolicyRequest.getPolicyBody() == null) {
+

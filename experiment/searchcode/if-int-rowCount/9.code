@@ -1,0 +1,13 @@
+package pl.kwi;
+
+public class Solution4 {
+
+public int count_tilings(int N, int M){
+
+if(N < 2 || M < 2){
+int count = 1;
+
+int rowCount = countForOneRow(cols);
+count += countForAllSingleRows(rowCount, rows);
+count += countForAllCombinateRows(rowCount, rows);
+

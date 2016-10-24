@@ -1,0 +1,12 @@
+graph.setXRange((xrange[0]-p)*q+p, (xrange[1]-p)*q+p);
+}
+*/
+
+if( timeAutoscale ) {
+if( time > xrange[1] ) {
+graph.setXRange(xrange[0], time);
+}
+}
+if( fluxAutoscale ) {
+if( !timeAutoscale &amp;&amp; time > cumulativeTime+(xrange[1]-xrange[0]) ) {
+

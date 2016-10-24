@@ -1,0 +1,6 @@
+// Note that in my implementation it is not enforced what kind of lock type
+// will wake up after a notifyAll() call. This means that if, for example, we
+synchronized public void unlock() throws RuntimeException {
+if (activeWriter) {
+activeWriter = false;
+

@@ -1,0 +1,10 @@
+public final class TredecimalDateInterval implements Comparable<TredecimalDateInterval> {
+
+private final long days;
+
+private final long years;
+
+private final int daysOfYear;
+public TredecimalDateInterval(long days) {
+this.days = checkedArgument(days, d -> d >= 0);
+

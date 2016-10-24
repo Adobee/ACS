@@ -1,0 +1,9 @@
+if( profileObj.has( CFG_LOAD_PROFILE_SCAN_PCT_KEY) )
+this._scanPct = profileObj.getDouble( CFG_LOAD_PROFILE_SCAN_PCT_KEY );
+public CassandraLoadProfile(long interval, int numberOfUsers, String mixName, long transitionTime, String name)
+{
+super(interval, numberOfUsers, mixName, transitionTime, name);
+}
+
+public double getScanPct() { return this._scanPct; }
+

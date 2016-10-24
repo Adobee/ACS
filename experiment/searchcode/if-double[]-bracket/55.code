@@ -1,0 +1,12 @@
+public Bracket getBracket(String name)
+{
+if (name == null) {
+return null;
+}
+return (Bracket)this.brackets.get(name.toLowerCase());
+public void addBracket(Bracket bracket)
+{
+if (bracket != null)
+{
+String name = bracket.getName().toLowerCase();
+

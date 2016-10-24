@@ -1,0 +1,8 @@
+* Execute the given op on the servers that this pool connects to.
+* This method is responsible for retrying the op if an attempt fails.
+* It will only execute it once and on one server.
+* @return the result of execution if any; null if not
+* @since 5.7
+*/
+public Object execute(Op op);
+

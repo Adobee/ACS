@@ -1,0 +1,8 @@
+private int getTotalCount(Connection connection, String sql, ParameterHandler parameterHandler) throws SQLException {
+int result = 0;
+if (rs.next()) {
+result = rs.getInt(1);
+}
+} finally {
+if (ps != null) {
+

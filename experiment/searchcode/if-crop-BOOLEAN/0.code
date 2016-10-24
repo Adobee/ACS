@@ -1,0 +1,7 @@
+public ByteBuffer writeTo(ByteBuffer buffer, boolean boxed) throws Exception {
+int oldPos = buffer.position();
+if (boxed) {
+buffer.putDouble(crop_top);
+buffer.putDouble(crop_width);
+if (oldPos + length() + (boxed ? 4 : 0) != buffer.position()) {
+

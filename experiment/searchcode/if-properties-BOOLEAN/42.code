@@ -1,0 +1,5 @@
+public static Properties getProperties(String propertiesName, boolean isCache) {
+Properties resultProperties = (Properties)propertiesMap.get(propertiesName);
+if(resultProperties == null) {
+Properties defaultProp = createProperties(propertiesName + DEFAULT);
+

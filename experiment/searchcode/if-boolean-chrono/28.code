@@ -1,0 +1,14 @@
+public Era<C> getEra() {
+
+return getChrono().eraOf(get(ERA));
+}
+
+@Override
+public boolean isLeapYear() {
+
+return getChrono().isLeapYear(getLong(YEAR));
+public boolean isSupported(DateTimeField field) {
+
+if (field instanceof ChronoField) {
+return ((ChronoField) field).isDateField();
+

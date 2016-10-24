@@ -1,0 +1,8 @@
+import com.googlecode.easyec.spirit.mybatis.executor.resultset.DefaultResultSetHandlerEx;
+import org.apache.ibatis.executor.Executor;
+import org.apache.ibatis.executor.parameter.ParameterHandler;
+public Object intercept(Invocation invocation) throws Throwable {
+Object target = invocation.getTarget();
+
+if (target instanceof DefaultResultSetHandler) {
+

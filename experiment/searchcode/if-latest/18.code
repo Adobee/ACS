@@ -1,0 +1,6 @@
+final int latestSizeNew = utils.parseInt( params.get(MonitorAttributeNames.ATTRIBUTE_NAME_LATEST_SIZE), data.latestSize );
+if((latestSizeNew > 0) &amp;&amp; (latestSizeNew != data.latestSize)) {
+data.latestSize = latestSizeNew;
+if(data.latestLines != null) {
+data.latestLines = new CircularStack(data.latestLines, data.latestSize);
+

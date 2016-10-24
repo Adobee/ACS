@@ -1,0 +1,6 @@
+int offset = timeZone.getOffset(instantLocal - offsetLocal);
+// if the offsets differ, we must be near a DST boundary
+if (offsetLocal != offset) {
+long nextLocal = timeZone.nextTransition(instantLocal - offsetLocal);
+if (nextLocal == (instantLocal - offsetLocal)) {
+

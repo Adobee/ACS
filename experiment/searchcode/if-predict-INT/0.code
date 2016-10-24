@@ -1,0 +1,10 @@
+@Override
+public int predictedClass(DoubleVector features, double threshold) {
+DoubleVector predict = predict(features);
+return predict.divide(predict.sum());
+}
+
+@Override
+public int extractPredictedClass(DoubleVector predict) {
+if (predict.getLength() == 1) {
+

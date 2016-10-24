@@ -1,0 +1,7 @@
+private Long count(Connection connection, String sql, ParameterHandler parameterHandler) {
+PreparedStatement preparedStatement = null;
+ResultSet resultSet = null;
+preparedStatement = connection.prepareStatement(countSql(sql));
+parameterHandler.setParameters(preparedStatement);
+resultSet = preparedStatement.executeQuery();
+

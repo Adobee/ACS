@@ -1,0 +1,7 @@
+public static RecordIterator<StaticBuffer> getKeys(KeyColumnValueStore store, StoreFeatures features, int keyLength, int sliceLength, StoreTransaction txh) throws StorageException {
+SliceQuery slice = new SliceQuery(ByteBufferUtil.zeroBuffer(sliceLength), ByteBufferUtil.oneBuffer(sliceLength)).setLimit(1);
+} else throw new UnsupportedOperationException(&quot;Scan not supported by this store&quot;);
+}
+
+public static boolean containsKey(KeyColumnValueStore store, StaticBuffer key, int sliceLength, StoreTransaction txh) throws StorageException {
+

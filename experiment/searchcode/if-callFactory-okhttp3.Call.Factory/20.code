@@ -1,0 +1,7 @@
+assertThat(retrofit.callFactory()).isNotNull();
+}
+
+@Test public void callFactoryPropagated() {
+okhttp3.Call.Factory callFactory = mock(okhttp3.Call.Factory.class);
+Retrofit retrofit = new Retrofit.Builder()
+

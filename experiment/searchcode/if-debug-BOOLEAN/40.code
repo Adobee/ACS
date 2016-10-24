@@ -1,0 +1,9 @@
+package com.zpush.util;
+
+public class DebugFlag {
+static public boolean debug = false;
+static {
+String debugString = System.getProperty(&quot;zpush.debug&quot;);
+if (debugString != null) {
+if (debugString.equals(&quot;1&quot;) || debugString.equalsIgnoreCase(&quot;true&quot;)) {
+

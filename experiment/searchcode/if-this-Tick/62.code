@@ -1,0 +1,6 @@
+public void process() {
+long lastTime = this.time;
+this.time = System.currentTimeMillis();
+if (!this.tickChanged) {
+this.tick += (TGDuration.QUARTER_TIME * ((float) getTempo() * (float) (this.time - lastTime) / 60f) / SECOND_IN_MILLIS);
+

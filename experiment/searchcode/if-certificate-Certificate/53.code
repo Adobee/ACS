@@ -1,0 +1,9 @@
+import java.security.cert.Certificate;
+import java.security.cert.CertificateException;
+import java.security.cert.CertificateFactory;
+return Play.application().getFile(this.certificatePath);
+}
+
+public Certificate getIdpCert() throws CertificateException, FileNotFoundException {
+if (this.certificate == null) {
+

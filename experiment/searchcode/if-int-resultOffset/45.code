@@ -1,0 +1,6 @@
+int[] outBitStr = {0};  // initialize to int[1] that contains only 0
+if (encOrDec == &#39;e&#39;) {
+int c = RDUtils.bitStrToInt(iv);
+int resultOffset = 0;
+for (int i = 0; i < xs.length; i++) {
+

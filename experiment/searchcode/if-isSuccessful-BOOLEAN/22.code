@@ -1,0 +1,7 @@
+public boolean execute(UserAction input) {
+boolean isSuccessful = input.execute(); // execute command
+if (isSuccessful) {
+undoStack.push(input);
+}
+return isSuccessful;
+

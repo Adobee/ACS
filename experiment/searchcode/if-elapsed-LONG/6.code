@@ -1,0 +1,12 @@
+public static String timeInWords(long time) {
+long elapsed = System.currentTimeMillis() - time;
+
+// seconds
+elapsed /= 1000;
+
+if (elapsed < 10) {
+return &quot;time.now&quot;;
+}
+if (elapsed < 60) {
+return &quot;time.minute.less&quot;;
+

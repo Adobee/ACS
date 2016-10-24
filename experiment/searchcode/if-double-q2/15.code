@@ -1,0 +1,9 @@
+double pLength = Point.distance(p1.x, p1.y, p2.x, p2.y);
+double qLength=Point.distance(q1.x, q1.y, q2.x, q2.y);
+
+if (pLength == 0 || qLength == 0) return 0;
+double pqDotProduct = ((p1.x - p2.x) * (q1.x-q2.x))+((p1.y - p2.y) * (q1.y-q2.y));
+double angComp =0;
+if(pLength!=0 &amp;&amp; qLength!=0){
+angComp = Math.abs(pqDotProduct / (pLength * qLength));
+

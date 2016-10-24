@@ -1,0 +1,13 @@
+* Visit http://practicalunittesting.com for more information.
+*
+* @author Tomek Kaczanowski
+*/
+public class RequestHandler {
+
+private final RequestProcessor requestProcessor;
+public void handle(Request request) throws InvalidRequestException {
+if (invalidRequest(request)) {
+throw new InvalidRequestException();
+}
+requestProcessor.process(request);
+

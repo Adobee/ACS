@@ -1,0 +1,7 @@
+subtrahend = newSubtrahend;
+if (eNotificationRequired()) {
+ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, AstPackage.MINUS_OP__SUBTRAHEND, oldSubtrahend, newSubtrahend);
+public void setSubtrahend(Expression newSubtrahend) {
+if (newSubtrahend != subtrahend) {
+NotificationChain msgs = null;
+

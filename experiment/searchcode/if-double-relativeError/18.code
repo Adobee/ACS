@@ -1,0 +1,15 @@
+result.add(iteration);
+
+if (mid.getY() == 0) {
+return result;
+}
+
+int i = 0;
+double previousMid = midX;
+double relativeError = 0;
+
+do {
+// choose new side of the binary split
+i++;
+if (mid.getY() > 0) {
+

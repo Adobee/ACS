@@ -1,0 +1,6 @@
+public void succeedsWithEnoughAttempts() throws Exception {
+Class<FailNTimesBeforeSuccess> clazz = asyncFactory.getModifiedClass(FailNTimesBeforeSuccess.class);
+@Retry(maximumAttempts = 10, maximumAttemptsExceededException = FailNTimesBeforeSuccessException.class)
+public void check() {
+if (failedCount++ < failedCountTarget) throw new IllegalStateException();
+

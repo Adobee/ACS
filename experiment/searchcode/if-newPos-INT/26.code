@@ -1,0 +1,12 @@
+&amp;&amp; !collisionMap[newPos.getX()][newPos.getY() + 1]) {
+pos = newPos;
+}
+} else if (dir == Direction.RIGHT) {
+if (!collisionMap[newPos.getX() + 2][newPos.getY()]
+&amp;&amp; !collisionMap[newPos.getX() + 2][newPos.getY() + 2]) {
+pos = newPos;
+} else {
+TileMap.releaseBlocks(tiles);
+}
+} else if (dir == Direction.LEFT) {
+

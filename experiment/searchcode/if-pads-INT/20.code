@@ -1,0 +1,7 @@
+public class FormulaPadManager {
+
+public static List<Pad<?, ?>> getFollowingPads(Pad<?, ?> pad) {
+List<Pad<?, ?>> pads = pad.getContainer().getContainerManager().selectPadsByType(pad.getType());
+
+Collections.sort(pads, new Comparator<Pad<?, ?>>() {
+

@@ -1,0 +1,12 @@
+public double[] getCoords() {
+return (new double[] { x, y,z });
+}
+
+public boolean equals(Object o) {
+if (o instanceof Vector3D) {
+return new Vector3D(value * x, value * y, value * z);
+}
+
+public Vector3D crossProduct(Vector3D other) {
+double x = this.y * other.z - other.y * this.z;
+

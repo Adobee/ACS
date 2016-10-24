@@ -1,0 +1,12 @@
+for (int j = 0; j < nbpixels; j++) {
+
+double val = 0;
+for (int k = 0; k < nbclasses; k++) {
+if (Dprev[k][j] > 0) {
+val += Math.pow(Dprev[i][j] / Dprev[k][j],
+for (int j = 0; j < nbpixels; j++) {
+
+double val = 0;
+for (int k = 0; k < nbclasses; k++) {
+if (Dprev[k][j] > Dprev[i][j] &amp;&amp; k != i) {
+

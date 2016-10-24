@@ -1,0 +1,8 @@
+private final BytesRefBuilder payloadSpare = new BytesRefBuilder();
+private final boolean hasPayloads;
+private final boolean hasContexts;
+hasContexts = source.hasContexts();
+while((spare = source.next()) != null) {
+entries.append(spare);
+if (hasPayloads) {
+

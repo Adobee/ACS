@@ -1,0 +1,10 @@
+* @param inst
+*/
+private void emit(Instr inst) {
+if (last != null) {
+last = last.tail = new List<Instr>(inst, null);
+* @param idx Base index for the first register in the string (`u<idx>).
+* @return
+*/
+private String getMemAddressString(MEM m, int idx) {
+

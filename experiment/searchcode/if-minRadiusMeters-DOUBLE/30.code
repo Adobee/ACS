@@ -1,0 +1,5 @@
+protected Query newDistanceRangeQuery(String field, double centerLat, double centerLon, double minRadiusMeters, double radiusMeters) {
+return new GeoPointDistanceRangeQuery(field, termEncoding, centerLon, centerLat, minRadiusMeters, radiusMeters);
+protected Boolean rectContainsPoint(GeoRect rect, double pointLat, double pointLon) {
+if (GeoEncodingUtils.compare(pointLon, rect.minLon) == 0.0 ||
+

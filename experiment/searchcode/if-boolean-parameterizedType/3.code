@@ -1,0 +1,8 @@
+public static Class getSuperClassGenericsType(Class clazz, int index){
+ParameterizedType parameterizedType = getParameterizedType(clazz, true);
+if(parameterizedType == null){
+return null;
+}
+Type[] params = parameterizedType.getActualTypeArguments();
+if (!(params[index] instanceof Class)) {
+

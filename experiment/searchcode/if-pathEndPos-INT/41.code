@@ -1,0 +1,7 @@
+this.params = request.getParameters() == null ? new HashMap<String, String>() : request.getParameters();
+
+int pathEndPos = request.getUri().indexOf(&#39;?&#39;);
+if (pathEndPos < 0) {
+this.rawPath = request.getUri().substring(0, pathEndPos);
+RestUtils.decodeQueryString(request.getUri(), pathEndPos + 1, params);
+

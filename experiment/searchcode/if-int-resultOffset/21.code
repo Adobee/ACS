@@ -1,0 +1,7 @@
+// encrypt or decrypt bit string
+int[] outBitStr = {0};  // initialize to int[1] that contains only 0
+if (encOrDec == &#39;e&#39;) {
+int[] t = RDUtils.bitStrXOR(iv, xs[0]);
+ys[0] = MDES.encryptKernel(t, key);
+int resultOffset = RDUtils.copyIntArrIntoArr(result, 0, ys[0]);
+

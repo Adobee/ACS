@@ -1,0 +1,9 @@
+import com.amazonaws.AmazonClientException;
+import com.amazonaws.annotation.SdkInternalApi;
+
+@SdkInternalApi
+public abstract class AwsDirectoryBasePathProvider implements AwsProfileFileLocationProvider {
+String userHome = System.getProperty(&quot;user.home&quot;);
+if (userHome == null) {
+throw new AmazonClientException(
+

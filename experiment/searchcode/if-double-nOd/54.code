@@ -1,0 +1,10 @@
+private static final long serialVersionUID = -8520216300991932022L;
+
+
+class Nod implements Cloneable {
+public double element;
+public Nod next;
+public Nod prev;
+
+public Nod(double element) {
+

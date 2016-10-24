@@ -1,0 +1,10 @@
+package com.example.sbdm.service;
+
+
+public interface Pagination {
+
+default int currentPage(final int pageNo) {
+int calcPage = pageNo - 1;
+if (calcPage < 0) {
+calcPage = 0;
+

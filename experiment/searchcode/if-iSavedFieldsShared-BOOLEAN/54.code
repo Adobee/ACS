@@ -1,0 +1,7 @@
+if (savedFieldsCount == savedFields.length || iSavedFieldsShared) {
+// Expand capacity or merely copy if saved fields are shared.
+SavedField[] savedFields = iSavedFields;
+int count = iSavedFieldsCount;
+if (iSavedFieldsShared) {
+iSavedFields = savedFields = (SavedField[])iSavedFields.clone();
+

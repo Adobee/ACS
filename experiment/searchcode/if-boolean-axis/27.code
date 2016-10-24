@@ -1,0 +1,10 @@
+joystick = new Joystick(port);
+}
+
+public boolean button(Button button) {
+if (button instanceof AxisButton) {
+double result = joystick.getRawAxis(axis.axis);
+boolean sign = result > 0d;
+result = Math.abs(result);
+result -= axis.deadZone;
+

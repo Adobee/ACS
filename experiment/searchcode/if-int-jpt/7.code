@@ -1,0 +1,9 @@
+public void process( OutputStream output, Object context, Map<String, Object> dictionary,
+JPTOutputFormat jptOutputFormat ) throws PageTemplateException {
+
+try {
+if ( jptOutputFormat == null ){
+// Process instructions
+TALRepeat talRepeat = jptElement.getTALRepeat( this.jptDocument );
+if ( talRepeat != null ){
+

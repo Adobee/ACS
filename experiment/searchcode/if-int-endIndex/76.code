@@ -1,0 +1,6 @@
+public static int binarySearch(int[] haystack, int needle) {
+int startIndex = 0;
+int endIndex = haystack.length;
+while(startIndex <= endIndex) {
+int middleIndex = (startIndex + endIndex) / 2;
+

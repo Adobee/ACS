@@ -1,0 +1,8 @@
+String result;
+
+if (format == null) {
+result = NumberFormat.getInstance().format(value);
+result = NumberFormat.getIntegerInstance().format(value);
+} else if (&quot;currency&quot;.equals(format)) {
+result = NumberFormat.getCurrencyInstance().format(value);
+

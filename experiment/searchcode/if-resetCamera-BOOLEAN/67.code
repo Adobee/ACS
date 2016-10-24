@@ -1,0 +1,9 @@
+public static Handler UIHandler;
+private boolean startedBluetooth = false;
+
+private DateTime startTime;
+LocationListener locationListener = new LocationListener(){
+@Override
+public void onLocationChanged(Location location) {
+if(!startedBluetooth){
+

@@ -1,0 +1,13 @@
+linux, solaris, windows, macos, unknown;
+}
+
+public static boolean isPosix() {
+if (getPlatform().ordinal() == 0 || getPlatform().ordinal() == 1
+|| getPlatform().ordinal() == 3 || getPlatform().ordinal() == 4)
+return true;
+return false;
+}
+
+public static boolean isUnix() {
+if (getPlatform().ordinal() == 0 || getPlatform().ordinal() == 1
+

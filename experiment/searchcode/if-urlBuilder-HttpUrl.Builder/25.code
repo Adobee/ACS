@@ -1,0 +1,8 @@
+public String getConnectionString() {
+Set parameters = httpParameters.keySet();
+
+StringBuilder URLBuilder = new StringBuilder(getHttpUrl());
+
+if (parameters.size() > 0) {
+if (URLBuilder.charAt(URLBuilder.length() - 1) != &#39;?&#39;) {
+

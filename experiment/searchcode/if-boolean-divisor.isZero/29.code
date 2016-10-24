@@ -1,0 +1,10 @@
+public static BigDecimal divide(BigDecimal dividend, BigDecimal divisor) {
+if (dividend == null || isZero(divisor))
+return ZERO;
+return dividend.divide(divisor, 4, HALF_EVEN);
+return number == null ? false : number.compareTo(ZERO) > 0;
+}
+
+public static boolean isZero(BigDecimal number) {
+return number == null ? true : number.compareTo(ZERO) == 0;
+

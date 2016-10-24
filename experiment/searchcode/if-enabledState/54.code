@@ -1,0 +1,7 @@
+public void propertyChange(PropertyChangeEvent e) {
+String propertyName = e.getPropertyName();
+if (e.getPropertyName().equals(Action.NAME)) {
+abstractButton.setText(text);
+} else if (propertyName.equals(&quot;enabled&quot;)) {
+Boolean enabledState = (Boolean) e.getNewValue();
+

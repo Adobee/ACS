@@ -1,0 +1,8 @@
+double nextX = balls[0].getX() + this.actualStep * dXNormalized;
+double nextY = balls[0].getY() + this.actualStep * dYNormalized;
+xStep *= -1;
+}
+
+if (nextY < holesY[0]) {
+nextY = holesY[0]-nextY;
+

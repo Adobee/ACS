@@ -1,0 +1,11 @@
+public String canWalkExactly(int N, int[] from, int[] to) {
+this.from = from;
+this.to = to;
+
+if(visit(0, N)) {
+if(N < 0) return false;
+if(cur == 1 &amp;&amp; N == 0) {
+return true;
+}
+for(int i = 0; i < from.length; i++) {
+

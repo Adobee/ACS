@@ -1,0 +1,8 @@
+* Utility methods for creating, loading and initializing bindings.
+*
+*/
+public final class Bindings {
+List<BindingImpl<?>> bindings = new ArrayList<BindingImpl<?>>();
+private static class BinderImpl implements Binder {
+private final List<BindingImpl<?>> bindings = new ArrayList<BindingImpl<?>>();
+

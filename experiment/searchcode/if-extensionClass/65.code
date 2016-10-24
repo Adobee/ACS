@@ -1,0 +1,9 @@
+activators.add(new ExtensionMethodActivator());
+}
+
+@Override
+public void activate(Class<?> extensionClass) {
+for (ConditionalActivator activator : activators) {
+if (activator.supports(extensionClass)) {
+activator.activate(extensionClass);
+

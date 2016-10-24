@@ -1,0 +1,18 @@
+public class AsteriskViolation extends Violation {
+
+public static Violation getInstance(boolean isFatal) {
+Violation result = new AsteriskViolation();
+@Override
+public String toString() {
+String result = &quot;*&quot;;
+if (isFatal()) {
+result+=&quot;!&quot;;
+}
+return result;
+}
+
+
+
+
+}
+

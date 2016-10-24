@@ -1,0 +1,12 @@
+private static void fibonacci(double l, double r, double eps) {
+long f1 = 1;
+long f2 = 1;
+for (int i = 0; i < 50; i++) {
+long t = f2;
+f2 = f2 + f1;
+f1 = t;
+}
+
+Double fl = null;
+Double fr = null;
+

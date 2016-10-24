@@ -1,0 +1,15 @@
+pos[i] = i;
+}
+search(pos, 0);
+return total;
+}
+
+void search(int[] pos, int d) {
+if (d == pos.length) {
+pos[d] = v;
+}
+
+boolean isValid(int[] pos, int d) {
+for (int i = 0; i < d; i++)
+if (d - i == Math.abs(pos[d] - pos[i]))
+

@@ -1,0 +1,13 @@
+// let&#39;s try the shading
+if (valueMarkers != null)
+{
+plotMarkers(xyPlot, valueMarkers);
+}
+
+xyPlot.getRenderer().setBaseSeriesVisibleInLegend(true);
+public static void clearLegMarkers(final XYPlot xyPlot, final XYPlot bearingPlot)
+{
+if (xyPlot != null)
+{
+xyPlot.clearDomainMarkers();
+

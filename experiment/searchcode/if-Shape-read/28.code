@@ -1,0 +1,16 @@
+public void write(DataOutput out) throws IOException {
+
+if(this.shape == null)
+{
+out.writeInt(0);
+return;
+}
+out.writeInt(this.shape.length);
+int l = in.readInt();
+if(l == 0 )
+{
+this.shape = null;
+return;
+}
+this.shape = new int [l];
+

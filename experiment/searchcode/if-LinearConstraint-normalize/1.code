@@ -1,0 +1,8 @@
+for (LinearConstraint c : constraints) {
+if (c.value < 0) {
+c.invert();
+private void addSlackVariables() {
+
+for (LinearConstraint c : constraints) {
+if (c.relationship == LESS_THAN_OR_EQUAL_TO) {
+

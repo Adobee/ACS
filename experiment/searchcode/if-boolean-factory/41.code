@@ -1,0 +1,15 @@
+import javax.faces.context.Flash;
+import javax.faces.context.FlashFactory;
+
+/**
+*
+* @author Leonard
+*/
+public class FlashCustomFlashFactory extends FlashFactory {
+this.handler = null;
+}
+
+@Override
+public Flash getFlash(boolean create) {
+if (handler == null) {
+

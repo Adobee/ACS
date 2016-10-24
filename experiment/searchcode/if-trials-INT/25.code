@@ -1,0 +1,9 @@
+public class BulkTests {
+private static final int TRIALS = 15000000;
+
+public static void runtests(int trials, long overhead) {
+long ts = System.currentTimeMillis();
+for (int i = 0; i < trials; i++) {
+if ((i + 1) % 1000000 == 0) {
+System.out.println((System.currentTimeMillis() - ts) + &quot;ms, evaluated &quot; + ((i + 1) / 1000000) + &quot; million hands&quot;);
+

@@ -1,0 +1,11 @@
+public void setNameProviderForClass(Class<?> cls, NameProvider np) {
+nameProviders.put(cls, np);
+}
+
+public NameProvider getNameProviderForClass(Class<?> cls) {
+throw new IllegalArgumentException(&quot;No Entity &quot; + cls.getSimpleName());
+}
+
+if (nameProviders.get(cls) == null) {
+NameProvider np = p.nameProvider().newInstance();
+

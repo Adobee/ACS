@@ -1,0 +1,13 @@
+public void init(boolean compress, int level)
+{
+free();
+
+this.compress = compress;
+this.ctx = nativeCompress.init( compress, level );
+}
+
+@Override
+public void free()
+{
+if ( ctx != 0 )
+

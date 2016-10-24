@@ -1,0 +1,9 @@
+double biglsq = ZERO;
+double distsq = ZERO;
+
+// Update GOPT if necessary before the first iteration and after each
+final int nfxm = nfx - 1;
+double stepa = 0;
+double stepb = 0;
+if (nfm <= 2 * n) {
+

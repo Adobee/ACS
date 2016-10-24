@@ -1,0 +1,7 @@
+for (int i = 0; i < row; i++) {
+for (int j = 0; j < col; j++) {
+if (dfs(board, word, 0, i, j, visited))
+private boolean dfs(char[][] board, String word, int index, int rowindex,
+int colindex, boolean[][] visited) {
+if (index == word.length())
+

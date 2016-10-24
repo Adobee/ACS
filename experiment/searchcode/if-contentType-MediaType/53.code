@@ -1,0 +1,10 @@
+private Charset charset()
+{
+MediaType mediatype = contentType();
+if (mediatype != null)
+return Util.UTF_8;
+}
+}
+
+public static ResponseBody create(final MediaType contentType, final long contentLength, final BufferedSource content)
+

@@ -1,0 +1,11 @@
+this.queries.clear();
+}
+
+public boolean hasQuery(int i) {
+return this.lastQuery == i || this.queries.containsKey(i);
+}
+
+public void channelAdded(int i) {
+if (!hasQuery(i)) {
+ChannelInfo cinfo = JanetTS.getApi().getChannelInfo(i);
+

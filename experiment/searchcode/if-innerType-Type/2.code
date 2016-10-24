@@ -1,0 +1,11 @@
+private final int length;
+private int size = Type.UNKOWN_SIZE;
+
+public SizedArray(Type innerType, int length) {
+return length;
+}
+
+public int sizeOf() {
+if (size == Type.UNKOWN_SIZE) {
+size = length * innerType.sizeOf();
+

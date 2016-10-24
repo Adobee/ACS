@@ -1,0 +1,9 @@
+String isValid = &quot;true&quot;;
+if ( Boolean.getBoolean(isValid) ) { // Noncompliant {{Often Misused: Boolean.getBoolean(String)}}
+System.out.println(&quot;FALSE&quot;);
+}
+Boolean.valueOf(isValid); // Compliant
+Boolean.parseBoolean(isValid); // Compliant
+}
+}
+

@@ -1,0 +1,10 @@
+public void getImages(double ra, double dec, double size, java.util.ArrayList<String> list) {
+
+size       += Double.parseDouble(Settings.get(&quot;imagesize&quot;));
+if (Math.abs(cDec - inDec) < inSize) {
+
+for (int jRA = 0; jRA < nr; jRA += 1) {
+double cRA = jRA*dRA;
+
+if (skyview.geometry.Util.sphdist(cRA,cDec, inRA,inDec) < inSize) {
+

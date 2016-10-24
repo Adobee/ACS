@@ -1,0 +1,8 @@
+public final double doIntegrateParabola(double lowerBoundary,
+double upperBoundary){
+if(!validIntegrationInterval(lowerBoundary, upperBoundary)){
+throw new IllegalArgumentException(&quot;Wrong boundaries&quot;);
+}
+double[] partition = partition(lowerBoundary,upperBoundary);
+return integrateNumerically(partition);
+

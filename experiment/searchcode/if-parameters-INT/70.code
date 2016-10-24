@@ -1,0 +1,8 @@
+this.parameters = parameters;
+}
+
+public int validate() {
+for (int i = 0; i < parameters.size(); i++) {
+Map.Entry<String, String> entry = parameters.get(i);
+if (!checker.check(entry.getKey(), entry.getValue()))
+

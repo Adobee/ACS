@@ -1,0 +1,16 @@
+private String _value;
+
+
+public Parameter(String name,String value){
+_name = name;
+_value = value;
+
+if(_name == null)
+_name = &quot;&quot;;
+if(_value == null)
+_value = &quot;&quot;;
+}
+
+public Parameter(String pair){
+if(pair != null) {
+

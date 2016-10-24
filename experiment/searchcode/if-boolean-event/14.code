@@ -1,0 +1,14 @@
+return this.enabled;
+}
+
+@Override
+public boolean passFilter(T event) {
+if(enabled) {
+return true;
+}
+
+protected abstract boolean passEventFilter(T event);
+
+
+}
+

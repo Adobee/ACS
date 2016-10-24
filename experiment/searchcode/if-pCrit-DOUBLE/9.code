@@ -1,0 +1,12 @@
+public double calc(Creature creature, Optional<Double> base, Stats stat)
+{
+throwIfPresent(base);
+
+double baseValue = calcWeaponBaseValue(creature, stat);
+if (creature.isPlayer())
+return validateValue(creature, Stats.defaultValue(creature, stat, baseValue * dexBonus * 10), 0, Config.MAX_PCRIT_RATE);
+}
+
+@Override
+public double calcEnchantBodyPartBonus(int enchantLevel, boolean isBlessed)
+

@@ -1,0 +1,12 @@
+for (Object o:levelList
+) {
+Level level = (Level)o;
+if(level.start<=rawlevel&amp;&amp;rawlevel<=level.end){
+return levelList.indexOf(o);
+}
+}
+return levelList.size()+1;
+}
+public int getLevelProgress(List<Object> levelList){
+if(getCurrentLevel(levelList)!=levelList.size()+1){
+

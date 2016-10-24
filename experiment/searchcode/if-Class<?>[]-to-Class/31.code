@@ -1,0 +1,8 @@
+public static Class<?> toClass(Member member)
+{
+Class<?> result;
+if (member instanceof Field)
+result = toClass(((Field) member).getType());
+if (member instanceof Method)
+result = toClass(((Method) member).getReturnType());
+

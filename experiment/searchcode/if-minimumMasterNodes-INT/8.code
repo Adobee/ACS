@@ -1,0 +1,7 @@
+private final NodeComparator nodeComparator = new NodeComparator();
+
+private volatile int minimumMasterNodes;
+super(settings);
+this.minimumMasterNodes = settings.getAsInt(DISCOVERY_ZEN_MINIMUM_MASTER_NODES, -1);
+logger.debug(&quot;using minimum_master_nodes [{}]&quot;, minimumMasterNodes);
+

@@ -1,0 +1,12 @@
+package jml.kernel;
+
+import org.apache.commons.math.linear.RealMatrix;
+
+import static jml.matlab.Matlab.*;
+double kernelParam, RealMatrix X1, RealMatrix X2) {
+
+RealMatrix K = null;
+if (kernelType.equals(&quot;linear&quot;)) {
+K = X1.transpose().multiply(X2);
+} else if (kernelType.equals(&quot;cosine&quot;)) {
+

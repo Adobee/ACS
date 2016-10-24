@@ -1,0 +1,6 @@
+package nl.brusque.iou;
+
+class TestGenericThenCallable<T, R> extends AbstractThenCallableStrategy<T, R> {
+<TFullfill, TReject> IThenCallable<TFullfill, TReject> convert(final IThenCallable<TFullfill, TReject> thenCallable) throws Exception {
+if (thenCallable instanceof TestThenCallable) {
+

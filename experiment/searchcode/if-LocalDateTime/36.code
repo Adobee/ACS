@@ -1,0 +1,11 @@
+package com.yukon.servicemonitor.model;
+
+import java.time.LocalDateTime;
+
+/**
+* Created by Serhiy Makhov on 25.05.2016.
+* There is no equivalent in JSR-310 to JodaTime-Interval-class. So I&#39;ve implemented mine. Immutable.
+*/
+public class OutageInterval {
+private LocalDateTime outageStart;
+

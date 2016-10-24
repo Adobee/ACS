@@ -1,0 +1,9 @@
+public class WeatherDataParser {
+
+public static double getMaxTemperatureForDay(String weatherJsonStr, int dayIndex) throws JSONException{
+JSONObject jsonObject = new JSONObject(weatherJsonStr);
+
+JSONArray jsonList = jsonObject.getJSONArray(&quot;list&quot;);
+
+if(jsonList.length() >= dayIndex+1) {
+

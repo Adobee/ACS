@@ -1,0 +1,12 @@
+String urlDecode = new String();
+int a;
+char ch;
+
+for (int i=0; i<s.length(); i++) {
+ch = s.charAt(i);
+
+if (ch == &#39;+&#39;) {
+ch = &#39; &#39;;
+} else if (ch == &#39;%&#39;) {
+ch = s.charAt(++i);
+

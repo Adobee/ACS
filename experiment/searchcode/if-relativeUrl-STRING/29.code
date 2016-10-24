@@ -1,0 +1,11 @@
+this.apiBaseUrl = apiBaseUrl;
+}
+
+protected String apiUrl(String relativeUrl) {
+if (apiBaseUrl.endsWith(&quot;/&quot;)) apiBaseUrl = apiBaseUrl.substring(0, apiBaseUrl.length() - 1);
+return apiBaseUrl + relativeUrl;
+}
+
+protected String httpGet(String relativeUrl, Map<String, Object> params)  {
+try {
+

@@ -1,0 +1,10 @@
+double rSquaredAdjusted,
+double[] tStats,
+double[] pValues,
+boolean hasIntercept) {
+super(betas, residuals, meanSquareError, standardErrorOfBeta, rSquared, rSquaredAdjusted, tStats, pValues, hasIntercept);
+}
+
+public double getWeightedPredictedValue(double[] x, double[] w) {
+if (x == null) {
+

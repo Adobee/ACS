@@ -1,0 +1,10 @@
+private int currentHour;
+private BigLogStatsResult newResult = new BigLogStatsResult();
+private List<BigLogStatsResult> resultList = null;
+if(s.MapDate().getHours() == currentHour) {
+if(s.MapHttpCode() == 200) {
+newResult.setHttpCode200();
+}
+} else {
+resultList.add(newResult);
+

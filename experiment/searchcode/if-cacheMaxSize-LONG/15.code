@@ -1,0 +1,8 @@
+public LruDiscCache(File cacheDir, FileNameGenerator fileNameGenerator, long cacheMaxSize) {
+this(cacheDir, fileNameGenerator, cacheMaxSize, 0);
+if (cacheMaxSize == 0) {
+cacheMaxSize = Long.MAX_VALUE;
+}
+if (cacheMaxFileCount == 0) {
+cacheMaxFileCount = Integer.MAX_VALUE;
+

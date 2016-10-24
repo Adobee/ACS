@@ -1,0 +1,9 @@
+public final class Complex{
+
+private final double realPart;
+private final double imaginaryPart;
+
+public Complex(double realPart, double imaginaryPart){
+this.realPart = realPart;
+this.imaginaryPart  = imaginaryPart;
+

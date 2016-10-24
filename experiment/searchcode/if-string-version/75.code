@@ -1,0 +1,10 @@
+return getInteger(APP_MINOR_VERSION);
+}
+
+public String getVersionString()
+{
+if (versionString == null)
+versionString = String.format(&quot;%s.%s.%s&quot;, buildVersion, majorVersion, minorVersion);
+
+if (versionString.contains(&quot;?&quot;))
+

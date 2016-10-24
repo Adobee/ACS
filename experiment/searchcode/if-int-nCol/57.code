@@ -1,0 +1,9 @@
+if (da[0].length == 0) {
+ret = new double[0];
+} else {
+int nl = da.length;
+int ncol = da[0].length;
+ret = new double[nl * ncol];
+for (int i = 0; i < nl; i++) {
+for (int j = 0; j < ncol; j++) {
+

@@ -1,0 +1,7 @@
+for(char c : sourceChars){
+if(c == lastChar){ counter++;}
+else {
+compressed += getCompressedCharacterString(lastChar, counter);
+lastChar = c;
+counter = 0;
+

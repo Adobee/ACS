@@ -1,0 +1,13 @@
+private double[] coefficients;
+
+private final double[] x;
+
+private final double[] y;
+
+private boolean coefficientsComputed;
+public double[] getCoefficients() {
+if (!(coefficientsComputed)) {
+computeCoefficients();
+}
+double[] out = new double[coefficients.length];
+

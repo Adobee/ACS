@@ -1,0 +1,7 @@
+public void assertState(ClusterChangedEvent event,
+boolean stateInMemory,
+boolean expectMetaData) throws Exception {
+boolean masterEligible = randomBoolean();
+boolean expectMetaData = true;
+ClusterChangedEvent event = generateEvent(initializing, versionChanged, masterEligible);
+

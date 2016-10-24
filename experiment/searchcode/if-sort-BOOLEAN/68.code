@@ -1,0 +1,10 @@
+private final Property<? extends Serializable> sortProperty;
+
+private final boolean sortAscending;
+
+public static SortItem ascending(Property<? extends Serializable> sortProperty) {
+return new SortItem(sortProperty, false);
+}
+
+private SortItem(Property<? extends Serializable> sortProperty, boolean sortAscending) {
+

@@ -1,0 +1,11 @@
+int idx = currentIndex;
+for(int i = 0; i < STOCK_SIZE; ++i) {
+if(stock[idx].isRecycled) {
+stock[idx].isRecycled = false;
+public static MotionCommand obtain(MotionCommand motionCommand) {
+MotionCommand lhs = searchReadyCommand();
+if(lhs == null)
+return lhs;
+
+lhs.commandType = motionCommand.commandType;
+

@@ -1,0 +1,6 @@
+protected ValuesSourceAggregationBuilder(String name, Type type, ValuesSourceType valuesSourceType, ValueType targetValueType) {
+super(name, type);
+if (valuesSourceType == null) {
+ValuesSourceType valuesSourceType = valueType != null ? valueType.getValuesSourceType() : this.valuesSourceType;
+if (valuesSourceType == null || valuesSourceType == ValuesSourceType.ANY) {
+

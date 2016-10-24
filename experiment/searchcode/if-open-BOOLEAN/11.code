@@ -1,0 +1,13 @@
+a[i][j] = StdRandom.bernoulli(p);
+}
+}
+return a;
+}
+
+public static boolean[][] flow(boolean[][] open){
+
+int N = open.length;
+boolean[][] full = new boolean[N][N];
+for (int j=0; j<N; j++){
+flow(open, full, 0, j);
+

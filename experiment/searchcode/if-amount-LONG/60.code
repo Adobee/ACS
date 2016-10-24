@@ -1,0 +1,10 @@
+private Account destination;
+private long amount;
+
+public Transfer(Account source, Account destination, long amount) throws NegativeAmount {
+source.withdraw(amount);
+destination.deposit(amount);
+}
+
+private void setAmount(long amount) throws NegativeAmount {
+

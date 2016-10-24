@@ -1,0 +1,7 @@
+public void loadDocumentFromFile(String filePath){
+IndexWriter index = new IndexWriter();
+IndexOutput indexOutput = new IndexOutput();
+//if(numOfDoc % 1000 == 0){
+if(numOfDoc % 2000 == 0){
+indexOutput.writeIndexToFile(index.getIndex(), &quot;index/part&quot; + part + &quot;.txt&quot;);
+

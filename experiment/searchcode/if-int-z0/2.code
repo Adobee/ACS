@@ -1,0 +1,16 @@
+package deuscraft.oak;
+
+public class Line
+{
+public static void generate(int x0, int z0, int x1, int z1, GenerateBlock generate)
+while(true)
+{
+generate.Call(x0, z0);
+if(x0 == x1 &amp;&amp;
+z0 == z1)
+{
+break;
+}
+
+int error2 = 2 * error;
+

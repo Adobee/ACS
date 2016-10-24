@@ -1,0 +1,12 @@
+private SqlSessionTemplate sqlSession;
+
+//override to print log on console
+
+protected void printQueryId(String queryId) {
+if(log.isDebugEnabled()){
+log.debug(&quot;\t QueryId  \t:  &quot; + queryId);
+}
+}
+
+public Object insert(String queryId, Object params){
+

@@ -1,0 +1,13 @@
+private long value;
+
+public MyLong(long value) {
+super();
+this.value = value;
+}
+
+public int compareTo(Object object) {
+if (object == null || !(object instanceof MyLong)) {
+return -10;
+}
+MyLong ml = (MyLong) object;
+

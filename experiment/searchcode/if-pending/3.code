@@ -1,0 +1,11 @@
+int size = pendingPostPool.size();
+if (size > 0) {
+PendingPost pendingPost = (PendingPost) pendingPostPool.remove(size - 1);
+synchronized (pendingPostPool) {
+if (pendingPostPool.size() < 10000) {
+pendingPostPool.add(pendingPost);
+}
+}
+}
+}
+

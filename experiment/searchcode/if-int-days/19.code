@@ -1,0 +1,10 @@
+int sundays = 0, sundayparts = 2;
+int days = 0, month, year;
+
+for(year = 1901; year < 2001; year++) {
+for(month = 1; month <= 12; month++) {
+if(year % 4 == 0 &amp;&amp; (year % 100 == 0 ? year % 400 == 0 : true)) {
+for(days = 1; days <= 29; days++) {
+sundayparts += 1;
+if(days == 1 &amp;&amp; sundayparts % 7 == 0) sundays++;
+

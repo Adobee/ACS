@@ -1,0 +1,10 @@
+package sda;
+
+public class BubSort {
+public static int[] sort(int[] original2){
+int[] original = new int[original2.length];
+for(int i=0; i<original.length-1; i++){
+if(original[i] > original[i+1]){
+original[i] ^= original[i+1];
+original[i+1] ^= original[i];
+

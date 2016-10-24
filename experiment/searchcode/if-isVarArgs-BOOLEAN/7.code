@@ -1,0 +1,10 @@
+private int formalIndex;
+
+public BindingTypePattern(UnresolvedType type, int index,boolean isVarArgs) {
+super(type, false,isVarArgs);
+public BindingTypePattern(FormalBinding binding, boolean isVarArgs) {
+this(binding.getType(), binding.getIndex(),isVarArgs);
+}
+
+public int getFormalIndex() {
+

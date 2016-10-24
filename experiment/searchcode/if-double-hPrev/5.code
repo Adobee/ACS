@@ -1,0 +1,9 @@
+import java.util.*;
+
+public class PmiManager implements DataManager
+{
+HashMap<String, Double> data;
+String key = word + &quot; &quot; + context;
+if(!data.containsKey(key)) return 1.1;
+double result = data.get(key);
+

@@ -1,0 +1,12 @@
+response = cacheResponse.getResponse();
+
+} else { // if not there in cache make new cache
+response = cacheResponse.getResponse();
+}
+}
+}
+
+} else {    //if user is not connected to internet
+
+List<CacheResponse> cacheResponses = CacheResponse.findWithQuery(CacheResponse.class, &quot;SELECT * FROM CACHE_RESPONSE where URL = ? AND POST_DATA = ?&quot;, url, postJson);
+

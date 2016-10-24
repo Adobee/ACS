@@ -1,0 +1,8 @@
+private Throwables() {
+}
+
+public static <X extends Throwable> void propagateIfInstanceOf(@Nullable Throwable throwable, Class<X> declaredType) throws Throwable {
+public static void propagateIfPossible(@Nullable Throwable throwable) {
+propagateIfInstanceOf(throwable, Error.class);
+propagateIfInstanceOf(throwable, RuntimeException.class);
+

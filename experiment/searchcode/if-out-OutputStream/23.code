@@ -1,0 +1,10 @@
+protected NativeJavaObjectOutput(ObjectOutputStream out) {
+this.outputStream = out;
+}
+
+protected ObjectOutputStream getObjectOutputStream() {
+public void writeBytes(byte[] v) throws IOException {
+if (v == null) {
+outputStream.writeInt(-1);
+} else {
+

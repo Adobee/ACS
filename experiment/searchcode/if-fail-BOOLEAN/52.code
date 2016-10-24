@@ -1,0 +1,10 @@
+public abstract class FailableHealthCheck extends HealthCheck {
+protected boolean failCheck = false;
+
+public boolean getFailCheck() {
+return this.failCheck;
+}
+
+public boolean toggleFailCheck() {
+this.failCheck = !this.failCheck;
+

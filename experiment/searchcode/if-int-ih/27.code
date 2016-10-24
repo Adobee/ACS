@@ -1,0 +1,9 @@
+ArrayList<BranchPair> branches = new ArrayList<BranchPair>();
+InstructionHandle ih;
+String[] instrElems;
+int codeLength = countLines(codeLines);
+labels++;
+} else if (instrName.equals(&quot;iinc&quot;)) {
+int arg1 = 0;
+int arg2 = 0;
+

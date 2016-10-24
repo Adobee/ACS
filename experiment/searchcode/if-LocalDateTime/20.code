@@ -1,0 +1,10 @@
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
+
+/**
+* Message sent by server to clients to determine if they&#39;re still there.
+

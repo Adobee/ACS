@@ -1,0 +1,19 @@
+private double gama;
+
+private double[] h;
+
+private double Q0;
+
+private int stability;
+
+public List<Sensor> getSensors() {
+public double[] getH() {
+return h;
+}
+
+public double getQ0() {
+return Q0;
+}
+
+public double getU() {
+

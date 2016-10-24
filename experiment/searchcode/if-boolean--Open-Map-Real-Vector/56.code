@@ -1,0 +1,7 @@
+public RealVector add(RealVector v) throws IllegalArgumentException {
+checkVectorDimensions(v.getDimension());
+if (v instanceof OpenMapRealVector) {
+/** {@inheritDoc} */
+public OpenMapRealVector append(RealVector v) {
+if (v instanceof OpenMapRealVector) {
+

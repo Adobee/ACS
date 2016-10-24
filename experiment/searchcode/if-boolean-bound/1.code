@@ -1,0 +1,13 @@
+public class Area {
+public Location BoundA;
+public Location BoundB;
+
+public double Width(){
+if(BoundA.X < BoundB.X){
+return BoundA.X - BoundB.X;
+}
+}
+public boolean isInside(Location LOC){
+if(BoundA.X < BoundB.X){
+if (LOC.X < BoundA.X) return false;
+

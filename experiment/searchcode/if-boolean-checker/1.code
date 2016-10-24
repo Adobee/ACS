@@ -1,0 +1,15 @@
+import java.util.function.Function;
+
+@FunctionalInterface
+public interface BooleanChecker {
+
+boolean check();
+
+default void execConditionally(Function<Void, Void> procedure) {
+if (check()) {
+procedure.apply(null);
+}
+}
+
+default BooleanChecker and(final BooleanChecker checker) {
+

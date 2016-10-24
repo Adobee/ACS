@@ -1,0 +1,8 @@
+public String serialize(Boolean object, RushStringSanitizer stringSanitizer) {
+return stringSanitizer.sanitize(Boolean.toString(object));
+}
+
+@Override
+public Boolean deserialize(String value) {
+if(value.equals(&quot;0&quot;)) {
+

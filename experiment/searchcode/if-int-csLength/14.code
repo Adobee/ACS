@@ -1,0 +1,12 @@
+public void fill(String csPhysicalDesc)
+{
+int nIndex = csPhysicalDesc.indexOf(&quot;,&quot;);
+if(nIndex >= 0)
+{
+m_csPath = csPhysicalDesc.substring(0, nIndex).trim();
+if(csVersion != null)
+{
+if(!StringUtil.isEmpty(csVersion))
+{
+int nVersion = NumberParser.getAsInt(csVersion);
+

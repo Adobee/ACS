@@ -1,0 +1,9 @@
+import com.fachrur_122.movieapp2.viewModel.Movie;
+import com.squareup.moshi.JsonAdapter;
+import com.squareup.moshi.Moshi;
+
+import java.io.IOException;
+public void setFavorite(Movie movie) {
+SharedPreferences.Editor editor = pref.edit();
+Moshi moshi = new Moshi.Builder().build();
+

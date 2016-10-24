@@ -1,0 +1,5 @@
+public static java.util.Date parse(String dateString,String dateFormat) {
+return parse(dateString, dateFormat,java.util.Date.class);
+public static <T extends java.util.Date> T parse(String dateString,String dateFormat,Class<T> targetResultType) {
+if(StringUtils.isEmpty(dateString))
+

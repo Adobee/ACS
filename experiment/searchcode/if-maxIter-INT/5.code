@@ -1,0 +1,9 @@
+public class MaxIter implements OptimizationData {
+/** Allowed number of evalutations. */
+private final int maxIter;
+* @throws NotStrictlyPositiveException if {@code max <= 0}.
+*/
+public MaxIter(int max) {
+if (max <= 0) {
+throw new NotStrictlyPositiveException(max);
+

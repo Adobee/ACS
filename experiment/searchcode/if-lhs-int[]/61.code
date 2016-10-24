@@ -1,0 +1,9 @@
+BSHPrimaryExpression lhsNode =
+(BSHPrimaryExpression)jjtGetChild(0);
+
+if ( lhsNode == null )
+throw new InterpreterError( &quot;Error, null LHSnode&quot; );
+LHS lhs = lhsNode.toLHS( callstack, interpreter);
+if ( lhs == null )
+throw new InterpreterError( &quot;Error, null LHS&quot; );
+

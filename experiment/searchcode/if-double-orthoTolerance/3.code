@@ -1,0 +1,12 @@
+private double parRelativeTolerance;
+
+private double orthoTolerance;
+
+public LevenbergMarquardtEstimator() {
+setMaxCostEval(1000);
+this.parRelativeTolerance = parRelativeTolerance;
+}
+
+public void setOrthoTolerance(double orthoTolerance) {
+this.orthoTolerance = orthoTolerance;
+

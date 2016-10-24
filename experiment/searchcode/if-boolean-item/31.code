@@ -1,0 +1,10 @@
+public Item vendItem(String itemCode){
+if(!isItemExist(itemCode)) return null;
+
+ItemInventory itemInv = itemInventory.get(itemCode);
+return itemInv.getItem();
+}
+
+public boolean isItemCodeValid(String itemCode) {
+return itemInventory.containsKey(itemCode);
+

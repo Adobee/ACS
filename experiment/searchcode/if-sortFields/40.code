@@ -1,0 +1,8 @@
+this.offset = offset;
+this.limit = limit;
+if (sortFields != null) {
+this.sortFields = sortFields;
+public void setSortColumn(String sortColumn) {
+if (!this.sortFields.isEmpty()) {
+this.sortFields.get(0).setSortColumn(sortColumn);
+

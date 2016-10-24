@@ -1,0 +1,12 @@
+theta = d1 % (2 * Math.PI);
+if (theta > 0 &amp;&amp; d1 < 0)
+{
+theta = theta - (2 * Math.PI);
+}
+coords = new double[] {r * Math.cos(theta), r * Math.sin(theta)};
+public void setCoords(double[] a)
+{
+coords = Arrays.copyOfRange(a, 0, 2);
+theta = Math.atan2(a[1], a[0]);
+if (a[0] == 0)
+

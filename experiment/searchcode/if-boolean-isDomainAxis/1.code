@@ -1,0 +1,9 @@
+public Range getDataRange(ValueAxis axis) {
+if (series == null) {
+return new Range(0.0, 1.0);
+}
+boolean isDomainAxis = true;
+int domainIndex = getDomainAxisIndex(axis);
+if (domainIndex >= 0) {
+isDomainAxis = true;
+

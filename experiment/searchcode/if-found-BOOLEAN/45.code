@@ -1,0 +1,5 @@
+public void test() {
+new Eql(&quot;mysql&quot;).execute(&quot;drop table if exists eql_boolean&quot;);
+new Eql(&quot;mysql&quot;).execute(&quot;create table eql_boolean(id tinyint(1) primary key, found tinyint(1) default 0)&quot;);
+new Eql(&quot;mysql&quot;).params(true).execute(&quot;insert into eql_boolean values(1, ##)&quot;);
+

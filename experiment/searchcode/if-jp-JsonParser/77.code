@@ -1,0 +1,11 @@
+public <T> T parseJSONToObject(InputStream in, Class<T> objectClass) throws BitcasaException {
+JsonParser jp = null;
+try {
+JsonFactory jsonFactory = new JsonFactory();
+throw new BitcasaJSONException(&quot;Problem parsing json from server&quot;, e);
+} finally {
+try {
+if (jp != null) jp.close();
+} catch (IOException ioe) {
+throw new BitcasaException(ioe);
+

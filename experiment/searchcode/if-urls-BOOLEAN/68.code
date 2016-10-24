@@ -1,0 +1,8 @@
+public synchronized boolean addLink(String s){
+if(traversedURLs.contains(s) || remainingURLs.contains(s)){
+emails.add(s);
+return true;
+}
+public boolean isDone(){
+//If !remainingURLs.isEmpty() makes some problems because at the start there will only be 1 which thread 0 removes. Then the next wont start.
+

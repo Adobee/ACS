@@ -1,0 +1,16 @@
+public static String secondsToTimeString(int seconds) {
+String lengthString = &quot;&quot;;
+// hours
+if(seconds >= 60*60) {
+int hours = (int)Math.floor(seconds/(60*60));
+seconds -= 60*60*hours;
+}
+
+if(lengthString != &quot;&quot;) {
+lengthString += &quot;:&quot;;
+}
+
+// minutes
+if(seconds >= 60) {
+int minutes = (int)Math.floor(seconds/60);
+

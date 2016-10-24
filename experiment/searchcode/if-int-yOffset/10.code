@@ -1,0 +1,15 @@
+private static float animationStep = 1/4f; // 1/(how many steps animation takes)
+
+private Map map;
+private int x, y;
+private float xOffset, yOffset;
+
+public WorldCoordinates(Map map, int x, int y){
+xOffset = xOffset + delta*animationStep;
+if(xOffset >= 0)
+xOffset = 0;
+}
+
+if(yOffset > 0){ //down
+yOffset = yOffset - delta*animationStep;
+

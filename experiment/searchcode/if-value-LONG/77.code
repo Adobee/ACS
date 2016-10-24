@@ -1,0 +1,6 @@
+public long divide(UnsignedLong v)
+{
+if(v.longValue() != 0)
+{
+BigInteger left = BigInteger.valueOf(value);
+

@@ -1,0 +1,8 @@
+for (Character curChar : input.toCharArray()) {
+if (lastChar == null) {
+// First character
+lastChar = Character.toUpperCase(curChar);
+} else {
+if (Character.isLowerCase(lastChar)
+&amp;&amp; (Character.isUpperCase(curChar)) || Character.isDigit(curChar)) {
+

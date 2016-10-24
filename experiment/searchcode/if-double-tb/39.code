@@ -1,0 +1,8 @@
+protected double ta;
+protected double tb;
+protected double dt;
+
+protected List<Double> x = new ArrayList<>();
+public Method(double x0, double y0, double z0, double sigma, double b, double r, double ta, double tb, double dt) {
+this.sigma = sigma;
+

@@ -1,0 +1,12 @@
+import rcs.math.linalg.Vector3d;
+
+
+public class Plane3d implements Movable3d, Transformable3d {
+
+private Vector3d origin;
+public Vector3d closestPoint(Vector3d q) {
+return q.sub(normal.mul(signedDistance(q)));
+}
+
+public Vector3d intersection(final Vector3d p, final Vector3d q) {
+

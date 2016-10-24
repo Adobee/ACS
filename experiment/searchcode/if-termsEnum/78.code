@@ -1,0 +1,9 @@
+import org.apache.lucene.index.Terms;
+import org.apache.lucene.index.TermsEnum;
+
+import java.io.IOException;
+import java.util.HashMap;
+String termString = termsEnum.term().utf8ToString();
+if (queryTokens.contains(termString)) {
+termFreqMap.put(termString, termsEnum.totalTermFreq());
+

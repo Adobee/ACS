@@ -1,0 +1,7 @@
+T s = ort[0][0].add(ort[1][1]).add(ort[2][2]);
+if (s.getReal() > -0.19) {
+// compute q0 and deduce q1, q2 and q3
+return new FieldVector3D<T>(field.getOne(), field.getZero(), field.getZero());
+} else if (q0.getReal() < 0) {
+T inverse = squaredSine.sqrt().reciprocal();
+

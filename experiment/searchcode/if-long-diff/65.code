@@ -1,0 +1,9 @@
+public String getTime() {
+long diff = System.nanoTime() - this.tick;
+if (diff / 100000000L >= 15L) {
+return ((int) (diff / 10000L) / 100.0F) + &quot;ms&quot;;
+}
+
+public int getTimeInMs() {
+long diff = System.nanoTime() - this.tick;
+

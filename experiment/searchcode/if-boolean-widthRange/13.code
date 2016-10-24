@@ -1,0 +1,8 @@
+@Override
+public void onVisibilityChanged(boolean visible) {
+mVisible = visible;
+if (visible) {
+boolean touchEnabled = prefs.getBoolean(&quot;touch&quot;, true);
+
+if (touchEnabled &amp;&amp; event.getAction() == MotionEvent.ACTION_DOWN) {
+

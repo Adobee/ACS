@@ -1,0 +1,9 @@
+nodeJoinController.stopElectionContext(&quot;test&quot;);
+boolean hadSyncJoin = false;
+for (int i = randomInt(5); i > 0; i--) {
+joinNode(node);
+hadSyncJoin = true;
+}
+if (hadSyncJoin) {
+for (Future<Void> joinFuture : pendingJoins) {
+

@@ -1,0 +1,10 @@
+package cop.ifree.test.autoservice.rest.response;
+
+import javax.ws.rs.core.Response;
+
+public class ResponseCreator {
+Response.ResponseBuilder response = Response.ok();
+response.header(&quot;version&quot;, version);
+if (object != null) {
+response.entity(object);
+

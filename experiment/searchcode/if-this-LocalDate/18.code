@@ -1,0 +1,9 @@
+LocalDate sommerAnfang = LocalDate.of(year, 5, 15);
+LocalDate uebergangSeptemberAnfang = LocalDate.of(year, 9, 15);
+
+if (localDate.compareTo(winterAnfang) >= 0 || localDate.compareTo(uebergangMaerzAnfang) < 0){
+return Periode.WINTER;
+}
+
+if (localDate.compareTo(uebergangMaerzAnfang) >= 0 &amp;&amp; localDate.compareTo(sommerAnfang) < 0){
+

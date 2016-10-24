@@ -1,0 +1,8 @@
+Object propNode = entry.getValue();
+if (propName.equals(&quot;null_value&quot;)) {
+builder.nullValue(propNode.toString());
+builder.searchQuotedAnalyzer = parserContext.analysisService().defaultSearchQuoteAnalyzer();
+}*/
+} else if (propName.equals(&quot;ignore_above&quot;)) {
+builder.ignoreAbove(XContentMapValues.nodeIntegerValue(propNode, -1));
+

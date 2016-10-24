@@ -1,0 +1,14 @@
+} catch (Exception e) {
+output = defaultValue;
+}
+
+if (output < minVal)
+output = minVal;
+if (maxVal == -1) {
+output = Double.parseDouble(inputString);
+} catch (Exception e) {
+output = defaultValue;
+}
+
+if (output < minVal)
+

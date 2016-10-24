@@ -1,0 +1,9 @@
+package org.deeplearning4j.optimize.terminations;
+
+import org.deeplearning4j.optimize.api.TerminationCondition;
+public class EpsTermination implements TerminationCondition {
+private double eps = 1e-4;
+private double tolerance = Nd4j.EPS_THRESHOLD;
+
+public EpsTermination(double eps, double tolerance) {
+

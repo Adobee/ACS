@@ -1,0 +1,11 @@
+private volatile T object;
+
+public T get() {
+T result = object;
+
+if (result == null) {
+synchronized (this) {
+result = object;
+if (result == null) {
+object = result = initialize();
+

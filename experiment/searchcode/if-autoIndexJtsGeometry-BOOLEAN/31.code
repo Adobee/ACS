@@ -1,0 +1,10 @@
+protected static final Logger LOGGER = LoggerFactory.getLogger(ShapeBuilder.class);
+
+private static final boolean DEBUG;
+static {
+// if asserts are enabled we run the debug statements even if they are not logged
+if (autoValidateJtsGeometry)
+jtsGeometry.validate();
+if (autoIndexJtsGeometry)
+jtsGeometry.index();
+

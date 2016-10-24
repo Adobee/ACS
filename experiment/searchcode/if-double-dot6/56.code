@@ -1,0 +1,9 @@
+protected void computeInterpolatedStateAndDerivatives(final double theta,
+final double oneMinusThetaH) {
+
+if (! vectorsInitialized) {
+
+if (v1 == null) {
+v1 = new double[interpolatedState.length];
+v2 = new double[interpolatedState.length];
+

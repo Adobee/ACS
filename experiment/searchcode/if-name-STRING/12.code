@@ -1,0 +1,12 @@
+
+public class Symbol {
+String name;
+Scope scope;
+public Symbol(String name) { this.name = name; }
+public String toString() {
+String s = &quot;&quot;;
+if ( scope!=null ) s = scope.getScopeName()+&quot;.&quot;;
+return s+getName();
+}
+}
+

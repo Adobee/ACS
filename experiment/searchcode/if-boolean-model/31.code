@@ -1,0 +1,12 @@
+* ar.com.fwcommon.templates.modulo.model.meta.Model#isGroupModel()
+*/
+@Override
+public final boolean isGroupModel() {
+return model;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (obj instanceof SingleModel) {
+return model.equals(((SingleModel<?>)obj).getModel());
+

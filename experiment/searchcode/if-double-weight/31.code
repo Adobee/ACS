@@ -1,0 +1,13 @@
+public class StandardKnapsackEvaluationFunction<T> implements EvaluationFunction<T> {
+
+private double maxWeight;
+
+public StandardKnapsackEvaluationFunction(double maxWeight) {
+value	+= profits[i] * variables[i];
+}
+
+if(weight > maxWeight) return Double.MIN_VALUE;
+else return value;
+}
+}
+

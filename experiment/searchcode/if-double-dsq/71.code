@@ -1,0 +1,14 @@
+* @author Robert L. Bocchino Jr.
+* @author Rakesh Komuravelli
+*/
+package DPJBenchmarks;
+
+import DPJRuntime.ArrayDouble;
+
+public class Cell extends Node {
+* Decide if a node should be opened.
+*/
+@Override
+protected <region R> boolean subdivp(Node p, double dsq,
+double tolsq, HGStruct<R> hg)
+

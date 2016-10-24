@@ -1,0 +1,16 @@
+package generator.jim.entites;
+
+import generator.jim.composite.AbstractBlock;
+
+public class BlockInit extends AbstractBlock {
+
+public BlockInit() {
+super(&quot;init {&quot;, &quot;}&quot;);
+}
+
+@Override
+public void removeEmptyIf() {
+return;
+}
+}
+

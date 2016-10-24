@@ -1,0 +1,10 @@
+private transient long timeStarted;
+private transient long totalBytes;
+private transient long bytesUploaded;
+public UploadInfo(final int totalBytes){
+this.timeStarted=System.currentTimeMillis();
+this.totalBytes=totalBytes;
+}
+public long getBytesUploaded(){
+return this.bytesUploaded;
+

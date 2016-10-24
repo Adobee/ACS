@@ -1,0 +1,7 @@
+public FloatMatrix readRowMajor(float[] values) {
+if (getRows() * getColumns() != values.length)
+throw new IllegalArgumentException(&quot;Array&#39;s length is not the size of rows times columns.&quot;);
+public FloatMatrix transpose(FloatMatrix matrix, FloatMatrix transposed) {
+CudaFloatMatrix mat = (CudaFloatMatrix)matrix;
+CudaFloatMatrix result = (CudaFloatMatrix)transposed;
+

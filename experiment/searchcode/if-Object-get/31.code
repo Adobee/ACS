@@ -1,0 +1,14 @@
+this.object = object;
+}
+
+public Object getObject() {
+return object;
+}
+
+public String getContentType() {
+Object comparableObject = null;
+if ( o instanceof ObjectValue ) {
+comparableObject = ((ObjectValue)o).getObject();
+}
+if ( comparableObject != null &amp;&amp; object.getClass().equals(comparableObject.getClass()) ) {
+

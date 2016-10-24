@@ -1,0 +1,14 @@
+package caveexplorer.cavelorer;
+
+public class Monies implements Tickable
+{
+private	int amount = 0;
+return amount;
+}
+
+public boolean deduct(int amount)
+{
+if ( this.amount >= amount)
+{
+this.amount -= amount;
+

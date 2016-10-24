@@ -1,0 +1,20 @@
+ERROR(4),
+FATAL(5);
+
+private int level;
+
+Level(int level) {
+this.level = level;
+}
+
+protected int getLevel() {
+for (Level level : Level.values())
+if (name.equals(level.name()))
+return level;
+
+return null;
+
+}
+
+}
+

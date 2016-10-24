@@ -1,0 +1,8 @@
+public class AbstractBlock {
+public int id;
+public int metadata;
+public String texture;
+public String name;
+
+public AbstractBlock(String idAndMetadata, String textureAndName) {
+

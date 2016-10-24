@@ -1,0 +1,14 @@
+* under the License.
+*/
+
+package org.apache.ode.jbi;
+
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+OdeService ode = _ode.getService(myrolemex.getServiceName());
+if (ode !=  null)
+ode.onResponse(myrolemex);
+else {
+__log.error(&quot;No active service for message exchange: &quot;  + myrolemex);
+

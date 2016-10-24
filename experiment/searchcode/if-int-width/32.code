@@ -1,0 +1,10 @@
+public class Rectangle {
+int colour;
+int x, y;
+int width, height;
+
+public Rectangle( int C, int X, int Y, int W, int H ) {
+public boolean onCell( int cellX, int cellY ) {
+if ( cellX >= x &amp;&amp; cellX < ( x + width ) &amp;&amp;
+cellY >= y &amp;&amp; cellY < ( y + height ) ) return true;
+

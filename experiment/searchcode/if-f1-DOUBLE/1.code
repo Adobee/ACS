@@ -1,0 +1,9 @@
+double q = 4;
+double[] pq = pqFormel(p, q);
+if (pq == null) return;
+System.out.printf(&quot;x1: %.3f; x2: %.3f&quot;, pq[0], pq[1]);
+double[] rueckgabe = new double[2];
+double f1 = -(p/2);
+double square = f1*f1-q;
+if (square < 0) return null;
+

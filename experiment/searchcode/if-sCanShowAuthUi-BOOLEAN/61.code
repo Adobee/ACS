@@ -1,0 +1,9 @@
+public void setVideos(List<VideoData> videos) {
+if (!isAdded()) {
+return;
+reportAuthFailure();
+
+/*if (sCanShowAuthUi) {
+sCanShowAuthUi = false;
+LogUtils.d(&quot;Showing recovery dialog for status code &quot; + statusCode);
+

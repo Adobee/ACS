@@ -1,0 +1,11 @@
+extends AbstractStepInterpolator {
+
+/** Previous steps times. */
+protected double[] previousT;
+
+/** Previous steps derivatives. */
+super(interpolator);
+
+if (interpolator.currentState != null) {
+previousT = interpolator.previousT.clone();
+

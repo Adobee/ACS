@@ -1,0 +1,9 @@
+private final int numberOfBitsForNominator;
+private final long maxDenominator;
+private final long maxNominator;
+final long denominator = ((val &amp; maxDenominator) >> numberOfBitsForNominator);
+if (denominator == 0) {
+return null;
+}
+final long nom = val &amp; maxNominator;
+

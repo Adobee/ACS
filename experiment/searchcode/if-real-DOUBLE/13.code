@@ -1,0 +1,18 @@
+public class ComplexNumber {
+
+/**
+* 実部
+*/
+private double real;
+/**
+* 虚部
+*/
+private double imaginary;
+
+/**
+* コンストラクタ。
+* @param real 実部
+* @param imaginary 虚部
+*/
+public ComplexNumber(double real, double imaginary) {
+

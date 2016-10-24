@@ -1,0 +1,8 @@
+ListNode preM = null, iter = d;
+for(int i=1; i<=n; i++) {
+if(i <= m) {
+preM = i == m ? iter : null;
+iter = iter.next;
+} else if(i > m &amp;&amp; i <= n) {
+ListNode tmp = iter.next;
+

@@ -1,0 +1,12 @@
+package modelo;
+
+import org.joda.time.ReadableInstant;
+
+public class ModificadorDePrecioEnUnPeriodo implements IModificadorDePrecio {
+this.modificacion = modificacion;
+}
+
+@Override
+public Integer getModificacion(ReadableInstant fecha) {
+if (periodo.perteneceAlPeriodo(fecha)) {
+

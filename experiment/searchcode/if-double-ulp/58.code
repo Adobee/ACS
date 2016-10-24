@@ -1,0 +1,9 @@
+Supplier<DoubleStream> ds = () -> DoubleStream.iterate(0.0, e -> 0.0).limit(10);
+
+return  compareUlpDifference(0.0, ds.get().average().getAsDouble(), 0);
+* naive summation algorithm will return 1.0 since (1.0 +
+* ulp(1.0)/2) will round to 1.0 again.
+*/
+double base = 1.0;
+double increment = Math.ulp(base)/2.0;
+

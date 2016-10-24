@@ -1,0 +1,13 @@
+changeIndex=fromIndex;
+if (fromIndex==0)
+break;
+while(changeIndex+1<numOfTrain&amp;&amp;original[changeIndex+1]>original[fromIndex-1]) ++changeIndex;
+invertArray(fromIndex,endIndex);
+}while(true);
+
+
+}
+
+private static void sort(int fromIndex,int endIndex) {
+Arrays.sort(original,fromIndex,endIndex-fromIndex+1);
+

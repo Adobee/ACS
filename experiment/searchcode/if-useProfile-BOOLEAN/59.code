@@ -1,0 +1,7 @@
+* @param addThis if true this setting name will be also added to path
+* @param useProfile if true build path from profile names
+* @return path created by joining components with a separator
+private String getPath(char separator, boolean useProfile, boolean useIndex) {
+List<String> names = new LinkedList<String>();
+names.add(0, getPathItem(useProfile, useIndex));
+

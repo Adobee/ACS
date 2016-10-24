@@ -1,0 +1,10 @@
+private volatile Boolean expectContinue;
+
+private volatile Boolean webDav;
+
+private final ConcurrentMap<HttpHost, AuthSchemePool> authSchemePools;
+expectContinueKey = new CompoundKey( repo.getUrl(), repo.getProxy() );
+authSchemePools = global.getAuthSchemePools();
+}
+if ( !ConfigUtils.getBoolean( session, true, CONFIG_PROP_WEBDAV + &#39;.&#39; + repo.getId(), CONFIG_PROP_WEBDAV ) )
+

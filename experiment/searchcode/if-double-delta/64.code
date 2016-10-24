@@ -1,0 +1,12 @@
+lookAt=delta.add(pos);
+}
+
+public void strafeRight(double distance)
+{
+Vector3D delta=lookAt.subtract(pos);
+delta.normalize();
+lookAt=delta.add(pos);
+}
+
+public void mouseLook(double dx,double dy)
+

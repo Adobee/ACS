@@ -1,0 +1,7 @@
+public MessageAnalyzer create(String name, long start, long duration, long extraTime) {
+if (name.equals(&quot;problem&quot;)) {
+ProblemAnalyzer analyzer = lookup(ProblemAnalyzer.class);
+return analyzer;
+} else if (name.equals(&quot;transaction&quot;)) {
+TransactionAnalyzer analyzer = lookup(TransactionAnalyzer.class);
+

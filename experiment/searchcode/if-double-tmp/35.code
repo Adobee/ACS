@@ -1,0 +1,9 @@
+TEMPERATURE_AMBIENT   = &quot;IA&quot;;
+
+public TextView TmpText;
+
+//	final static double TEMP_PP4  = (double) 29.5,
+tmpFormat = new DecimalFormat(&quot;#####0&quot;);
+
+if(tmpFormat.format(tmpDouble).length() == 5) tmpString = &quot;0&quot; + tmpFormat.format(tmpDouble);
+

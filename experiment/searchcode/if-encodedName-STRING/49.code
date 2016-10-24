@@ -1,0 +1,8 @@
+final Map result = new IndexedMap();
+if (queryString == null || queryString.isEmpty()) {
+return result;
+for (Map.Entry entry : map.entrySet()) {
+String encodedName = (String)entry.getKey();
+if (!encoded) {
+encodedName = EncodingUtils.encode(encodedName, charset);
+

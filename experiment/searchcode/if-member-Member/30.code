@@ -1,0 +1,12 @@
+package login;
+
+import exception.ExceptionMemberNotFound;
+import member.DaoMember;
+import member.Member;
+Member member = daoMember.selectByEmail(email);
+if (member == null) {
+throw new ExceptionMemberNotFound();
+}
+
+member.changePassword(olPwd, newPwd);
+

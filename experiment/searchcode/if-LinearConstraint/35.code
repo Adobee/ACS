@@ -1,0 +1,5 @@
+static void simplex() {
+LinearObjectiveFunction lof = new LinearObjectiveFunction(new double[]{1, 2, 5}, 0);
+List<LinearConstraint> l = new ArrayList<LinearConstraint>();
+l.add(new LinearConstraint(new double[]{1, 0, 1}, Relationship.LEQ, 4));
+

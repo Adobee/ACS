@@ -1,0 +1,9 @@
+final String worldName = damager.getWorld().getName();
+final int damageDealt = (int) Math.round(event.getFinalDamage());
+
+if (damagee instanceof LivingEntity) {
+EntityCode code = EntityCode.fromEntity(entity);
+
+String entityValue;
+if (entity instanceof Player) {
+

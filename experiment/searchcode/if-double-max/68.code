@@ -1,0 +1,12 @@
+void pivot(int k,double a[][],int N){
+double max,copy;
+//ipは絶対値最大となるk列の要素の存在する行を示す変数で、
+//とりあえずk行とする
+int ip=k;
+//k+1行以降、最後の行まで、|a[i][k]|の最大値とそれが存在する行を
+//調べる
+for(int i=k+1; i<N; i++){
+if(max<Math.abs(a[i][k])){
+ip=i;
+max=Math.abs(a[i][k]);
+

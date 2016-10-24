@@ -1,0 +1,11 @@
+mapping.put(Boolean.FALSE, MyBoolean.FALSE);
+return mapping.get(b);
+}
+
+MyBoolean ifTrue(Runnable block);
+
+MyBoolean ifFalse(Runnable block);
+public MyBoolean ifTrue(Runnable block) {
+block.run();
+return this;
+

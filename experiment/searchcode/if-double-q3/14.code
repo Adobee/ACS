@@ -1,0 +1,10 @@
+package jp.co.jjs.java_seminar.self_study.q3_2;
+
+public class Q3_2 {
+
+public static void main(String[] args) {
+double y = Double.valueOf(args[1]).doubleValue();
+
+if(y == 0){
+System.out.println(&quot;0のため除算できません&quot;);
+

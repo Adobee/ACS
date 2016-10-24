@@ -1,0 +1,7 @@
+for(int blockColumn = 0; blockColumn < 3; ++blockColumn)
+for(int cellRow = 0; cellRow < 3; ++cellRow)
+for(int cellColumn = 0; cellColumn < 3; ++cellColumn)
+{
+int number = numbers[blockRow][blockColumn][cellRow][cellColumn];
+if(number != 0)
+

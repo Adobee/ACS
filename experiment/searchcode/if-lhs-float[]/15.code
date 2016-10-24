@@ -1,0 +1,10 @@
+else if (lhs instanceof float[])
+check((float[])lhs, (float[])rhs);
+else if (lhs instanceof boolean[])
+isEquals = Double.doubleToLongBits(lhs) == Double.doubleToLongBits(rhs);
+}
+
+private void check(float lhs, float rhs) {
+if (isEquals)
+isEquals = Float.floatToIntBits(lhs) == Float.floatToIntBits(rhs);
+

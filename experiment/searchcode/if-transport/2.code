@@ -1,0 +1,9 @@
+private TransportClient transport;
+
+public TransportClient getTransport(Settings settings) {
+if (settings == null) {
+return getTransport();
+}
+if (transport == null) {
+transport = new TransportClient(settings);
+

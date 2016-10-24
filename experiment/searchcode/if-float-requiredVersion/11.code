@@ -1,0 +1,5 @@
+private final float JAVA_VERSION_FLOAT = getJavaVersionAsFloat();
+private final int JAVA_VERSION_INT = getJavaVersionAsInt();
+public final boolean isJavaVersionAtLeast(float requiredVersion) {
+return getVersionFloat() >= requiredVersion;
+

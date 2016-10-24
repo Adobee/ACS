@@ -1,0 +1,8 @@
+public static boolean isAssignable(Class<?> cls, final Class<?> toClass, final boolean autoboxing) {
+if (toClass == null) {
+return false;
+return Float.TYPE.equals(toClass)
+|| Double.TYPE.equals(toClass);
+}
+if (Boolean.TYPE.equals(cls)) {
+

@@ -1,0 +1,13 @@
+String outpath = args[1];
+int numOfdocs = Integer.parseInt(args[2]);
+fs.delete(new Path(&quot;tfidf1&quot;));
+int res = driver.runTf(args[0],&quot;tfidf1&quot;);
+res = driver.runIdf(&quot;tfidf1&quot;,outpath,numOfdocs);
+if(res==1)
+{
+System.out.println(&quot;Module 2 failed&quot;);
+System.exit(0);
+}
+}
+private int runIdf(String inpath, String outpath, Integer numOfdocs)throws Exception {
+

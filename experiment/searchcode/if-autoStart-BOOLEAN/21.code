@@ -1,0 +1,7 @@
+private boolean isAutostart() {
+return getSharedPreferences(this).getBoolean(AUTOSTART, true);
+}
+
+private void setAutostart(boolean value) {
+getSharedPreferences(this).edit().putBoolean(AUTOSTART, value).commit();
+

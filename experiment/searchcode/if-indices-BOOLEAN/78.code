@@ -1,0 +1,10 @@
+private static <T> void generateForIndex(int index, List<List<T>> results, int[] indices, List<T> values) {
+if (index == indices.length) {
+List<T> result = new ArrayList<>(index);
+for (int i = 0; i < index; i++) {
+results.add(result);
+return;
+}
+for (int i = 0; i < indices.length; i++) {
+if (alreadyUsed(index, indices, i)) {
+

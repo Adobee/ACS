@@ -1,0 +1,12 @@
+public String nameKey;
+
+public String toString() {
+return name;
+}
+
+public Map<String, String> toTokenMap() {
+if (StringUtils.isNotEmpty(name)) {
+sb.append(&quot;    name: &quot;).append(name).append(&quot;\n&quot;);
+}
+if (StringUtils.isNotEmpty(nameKey)) {
+

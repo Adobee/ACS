@@ -1,0 +1,15 @@
+* object = { members }
+*/
+protected Object parse_object()
+{
+int n0 = index();
+debug(&quot;parse_object() at &quot;+n0);
+
+if(!goToNext()) return reset(n0,&quot;!goToNext()&quot;);
+private Object parse_nextMember()
+{
+int n0 = index();
+debug(&quot;parse_nextMember() at &quot;+n0);
+
+if(!goToNext()) return reset(n0,&quot;&quot;);
+

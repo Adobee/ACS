@@ -1,0 +1,14 @@
+public void setPeriod(long periodTicksIn) {
+periodTicks = periodTicksIn;
+}
+
+public long getPeriod() {
+return periodTicks;
+}
+
+public boolean isTime() {
+if (periodTicks == 0) {
+return true;
+}
+long now = TimerUtil.INSTANCE.currentTicks();
+

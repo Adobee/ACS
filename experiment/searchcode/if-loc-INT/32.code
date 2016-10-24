@@ -1,0 +1,11 @@
+final int history_len = 6;
+double[] mLocHistory = new double[history_len];
+int mLocPos = 0;
+int average(double d) {
+float avg = 0;
+
+mLocHistory[mLocPos] = d;
+
+mLocPos++;
+if (mLocPos > mLocHistory.length - 1) {
+

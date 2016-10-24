@@ -1,0 +1,10 @@
+* the differential is evaluated with an accuracy of one tenth of tol.
+* @returns integral */
+public Complex numEval(int index, ComplexVector path, double tol) {
+final int n = path.size();
+
+if (n < 2)
+return new Complex();
+
+d1stpi.setIntegrationTol(tol);
+

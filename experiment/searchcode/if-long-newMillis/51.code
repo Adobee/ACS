@@ -1,0 +1,12 @@
+public class BenchmarkDataGenerator
+{
+private final List<BenchmarkColumnSchema> columnSchemas;
+private final long seed;
+
+private List<BenchmarkColumnValueGenerator> columnGenerators;
+currentTime += timestampIncrement;
+timeCounter = 0;
+}
+long newMillis = Math.round(currentTime);
+if (newMillis > endTime) {
+

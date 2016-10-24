@@ -1,0 +1,8 @@
+* It builds the service root document according to spec.
+*
+* @return output in json
+* @throws ODataRenderException If unable to render the json service document
+for (EntitySet entity : entities) {
+if (entity.isIncludedInServiceDocument()) {
+writeObject(jsonGenerator, entity);
+

@@ -1,0 +1,14 @@
+private boolean noStore = false;
+private boolean noCache = false;
+
+public CacheControl(long maxAge) {
+this.date = new HttpDate();
+return this;
+}
+
+public boolean noStore() {
+return this.noStore;
+}
+
+public CacheControl noCache(boolean noCache) {
+

@@ -1,0 +1,12 @@
+* @return
+*/
+public static Order creatOrder (String[] orderStr, int orderLine){
+Order order=null;
+int i=0;
+try{
+if (orderStr[i].equals(&quot;size&quot;)){
+order = new SizeOrder();
+}
+
+else if (orderStr[i].equals(&quot;abs&quot;)||orderStr[0].equals(&quot;&quot;) ){
+

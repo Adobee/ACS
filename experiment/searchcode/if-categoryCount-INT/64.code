@@ -1,0 +1,11 @@
+// key stores category, value stores how many sources reported that category
+private Map<String, Integer> map;
+private int categoryCount;
+
+
+public RankedCategoryPicker() {
+int max = Integer.MIN_VALUE;
+for (String category : map.keySet()) {
+int current = map.get(category);
+if (current == max) {
+

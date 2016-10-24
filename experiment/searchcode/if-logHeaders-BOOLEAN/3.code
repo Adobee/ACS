@@ -1,0 +1,20 @@
+logger.info(&quot;\n\nREQUEST &quot; + req.method() + &quot; &quot; + req.uri() + &quot;?&quot; + req.query() + &quot; &quot; + res.status() + &quot; &quot; + duration + &quot;msec&quot;);
+if (options.logHeaders) {
+logger.info(&quot;  HEADERS:&quot;);
+for (Map.Entry<String, String> entry : req.headers().entrySet()) {
+logger.info(&quot;    &quot; + entry.getKey() + &quot;: &quot; + entry.getValue());
+}
+}
+};
+}
+
+public static class Options {
+
+/**
+* Log headers
+*/
+public boolean logHeaders;
+
+}
+}
+

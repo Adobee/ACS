@@ -1,0 +1,10 @@
+// Pow(x, n)
+
+// Implement pow(x, n).
+
+public class Solution {
+double pow(double x, int n) {
+if (n == 0) { return 1d; }
+double half = pow(x, n / 2);
+double extra = n % 2 == 0 ? 1 : x;
+

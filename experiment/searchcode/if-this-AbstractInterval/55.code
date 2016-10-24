@@ -1,0 +1,14 @@
+public class emptyInterval <T> extends AbstractInterval {
+
+public emptyInterval(Comparator<T> comparator){super(comparator);}
+
+@Override
+return BoundType.Open;
+}
+
+@Override
+public boolean includes(Interval other) {
+Objects.requireNonNull(other);
+
+if(other.isEmpty()){
+

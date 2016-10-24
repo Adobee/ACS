@@ -1,0 +1,10 @@
+* <pre>
+* FormatIdentification identifier = new FormatIdentification(String config);
+* FormatDescription desc = identifier.identify(&amp;quot;file&amp;quot;);
+public FormatIdentification(String configFile) throws FileNotFoundException {
+init(configFile);
+}
+
+public FormatDescription identify(byte[] data) {
+if (data == null || data.length < 1) {
+

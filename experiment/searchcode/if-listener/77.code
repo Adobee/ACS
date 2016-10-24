@@ -1,0 +1,9 @@
+@Override
+protected void lastListenerRemoved() {
+super.lastListenerRemoved();
+if (valueChangeListener != null) {
+decorated.removeValueChangeListener(valueChangeListener);
+valueChangeListener = null;
+}
+}
+

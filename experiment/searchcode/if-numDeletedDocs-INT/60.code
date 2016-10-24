@@ -1,0 +1,10 @@
+/** Returns the number of deleted documents. */
+public abstract int numDeletedDocs();
+
+/** Returns true if there are any deletions. */
+public boolean hasDeletions() {
+public static DocMap build(AtomicReader reader) {
+final int maxDoc = reader.maxDoc();
+if (!reader.hasDeletions()) {
+return new NoDelDocMap(maxDoc);
+

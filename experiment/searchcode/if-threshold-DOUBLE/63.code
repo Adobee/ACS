@@ -1,0 +1,9 @@
+public static void hard(double[] in, double threshold) {
+
+if (threshold <= 0.0) return;
+if (threshold == Double.MAX_VALUE)
+public static void hard(float[] in, float threshold) {
+
+if (threshold <= 0.0) return;
+if (threshold == Double.MAX_VALUE)
+

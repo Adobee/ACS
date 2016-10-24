@@ -1,0 +1,10 @@
+public int getValue() {
+return value;
+}
+
+@Override
+protected Object onGetDefaultValue(TypedArray a, int index) {
+protected void onRestoreInstanceState(Parcelable state) {
+if (state == null || !state.getClass().equals(SavedState.class)) {
+// Didn&#39;t save state for us in onSaveInstanceState
+

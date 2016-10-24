@@ -1,0 +1,8 @@
+public synchronized static ObjectType getObjectType(Class<? extends PersistentObject> objectClass)
+{
+ObjectType objectType = objectTypeByClass.get(objectClass);
+if (objectType == null) {
+Class<? extends PersistentObject> entryClass = entry.getKey();
+if (entryClass.isAssignableFrom(objectClass)) {
+objectType = entry.getValue();
+

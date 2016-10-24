@@ -1,0 +1,10 @@
+package garbage;
+
+public class Complex {
+double realPart;
+double imaginePart;
+
+public Complex(double realPart, double imaginePart) {
+this.realPart = realPart;
+this.imaginePart = imaginePart;
+

@@ -1,0 +1,9 @@
+for (int i = 0; i < len - 1; i++)
+if (s[i] == &#39; &#39;)
+numOfSpaces++;
+
+for (int i = len - 1; i >= 0; i--) {
+if (s[i] != &#39; &#39;) {
+int newPos = i + numOfSpaces * 2;
+s[newPos] = s[i];
+

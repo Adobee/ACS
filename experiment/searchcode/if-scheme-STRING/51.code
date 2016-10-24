@@ -1,0 +1,13 @@
+public static void main(String[] args)
+{
+Scheme scheme = new Scheme();
+Language.setCurrentLanguage(scheme);
+Language.setDefaults(scheme);
+boolean ok = Shell.run(scheme, scheme.getEnvironment());
+if (!ok)
+{
+System.exit(-1);
+}
+}
+}
+

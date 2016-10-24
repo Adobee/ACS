@@ -1,0 +1,6 @@
+private Map<Integer, String> loopWithBrackets (final int digit, final int numTerms, final int i, final int loops, final int length, final int pos, final String [] brackets, final Observer [] observers) {
+if (length == numTerms) {
+return this.oneLoop (digit, numTerms, i, loops, brackets, observers);
+} else if ((pos + length) >= numTerms) {
+return this.loopWithBrackets (digit, numTerms, i, loops, length + 1, 0, brackets, observers);
+

@@ -1,0 +1,10 @@
+import org.redcross.sar.work.IWorkLoop;
+import org.redcross.sar.work.IWorkLoop.LoopState;
+
+public interface IService {
+public boolean suspend();
+public boolean stop();
+
+public LoopState getLoopState();
+public boolean isLoopState(LoopState state);
+

@@ -1,0 +1,14 @@
+public Random(long seed, boolean escape) {
+super(seed);
+if (escape &amp;&amp; RANDOM_SEED == seed) {
+_mySeed = System.nanoTime()*System.currentTimeMillis();
+super.setSeed(_mySeed);
+} else {
+_mySeed = seed;
+}
+}
+public long getOriginalSeed() {
+return _mySeed;
+}
+}
+

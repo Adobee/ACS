@@ -1,0 +1,9 @@
+private int calcOrderStatistic(int[] a, int startIdx, int endIdx, int i) {
+int pivotIdx = randomChoosePivot(startIdx,endIdx);
+a[startIdx] = a[pivotIdx];
+a[pivotIdx] = tmp;
+int pivot = a[startIdx];
+
+for (j = startIdx+1; j < endIdx; j++) {
+if (a[j]<pivot) {
+

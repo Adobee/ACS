@@ -1,0 +1,9 @@
+String value, int vfrom, int vto) {
+
+int index = pattern.indexOf(&quot;%&quot;, pfrom);
+int length = 0;
+if (index == -1 || index >= pto) {
+length = pto - pfrom;
+if (length != vto - vfrom)
+return false;
+

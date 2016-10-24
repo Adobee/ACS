@@ -1,0 +1,14 @@
+public class SimpleBatchingStrategy implements BatchingStrategy {
+
+private final int batchSize;
+
+private final int bufferLimit;
+
+private final long timeout;
+
+private final List<Message> messages = new ArrayList<Message>();
+* to a single message.
+* @param timeout the batch timeout.
+*/
+public SimpleBatchingStrategy(int batchSize, int bufferLimit, long timeout) {
+

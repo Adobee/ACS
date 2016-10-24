@@ -1,0 +1,7 @@
+// We don&#39;t free the action if it is in a loop, it&#39;s still in use
+if (a == null &amp;&amp; isInLoop()) {
+AbstractAction nextAction = this.getNextAction();
+// To avoid null exception with actions that are linked directly to themselves
+if (!(a == null &amp;&amp; nextAction == this)) {
+super.setActor(a);
+

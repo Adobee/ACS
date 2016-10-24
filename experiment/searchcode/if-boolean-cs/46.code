@@ -1,0 +1,8 @@
+private static String CryptoPrimitive(String s, boolean isCrypto) {
+char[] cs = s.toCharArray();
+int len = cs.length;
+for (int i = 0; i < len; i++) {
+if (cs[i] >= 48 &amp;&amp; cs[i] <= 57) {
+// 数字
+cs[i] = isCrypto ? (cs[i] == 57 ? 48 : (char) (cs[i] + 1)) : (cs[i] == 48 ? 57 : (char) (cs[i] - 1));
+

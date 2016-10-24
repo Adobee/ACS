@@ -1,0 +1,11 @@
+public void startEval() {
+negaMax(this.initialDepth, maxSide);
+}
+
+public int negaMax(int depth, boolean maxSide) {
+if(depth == 0) {
+int score = -negaMax(depth - 1, !maxSide);
+if(score > max) {
+max = score;
+if(depth == this.initialDepth) {
+

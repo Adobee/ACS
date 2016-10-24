@@ -1,0 +1,11 @@
+public class ProgressLZMA implements ICodeProgress {
+/**
+* totalsize
+*/
+long totalSize;
+
+public ProgressLZMA(long totalBytes) {
+public void SetProgress(long inputSize, long outputSize) {
+outputSize /= 1024L;
+if (outputSize % 100L == 0L) {
+

@@ -1,0 +1,6 @@
+long serverSessionKey = secureBuffer.readLong();
+
+long encodedUsername = secureBuffer.readLong();
+String username = Base37Utils.decodeBase37(encodedUsername);
+String password = ByteBufUtils.readString(secureBuffer);
+

@@ -1,0 +1,17 @@
+int size = A.length;
+int minPos, temp;
+for (int i=0; i<size; i++) {
+minPos=i;
+for (int j=i+1; j<size; j++) {
+if (A[j] < A[minPos])
+minPos = j;
+}
+if (minPos != i) {
+temp = A[i];
+A[i] = A[minPos];
+A[minPos] = temp;
+}
+}
+}
+}
+

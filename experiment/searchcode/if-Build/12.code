@@ -1,0 +1,9 @@
+public void buildFinished(SRunningBuild build) {
+if (buildShouldBeIgnored(build)) {
+return;
+}
+if (buildWasSuccessful(build)) {
+addPointsToAllCommitters(build, SUCCESS_SCORE);
+} else if (buildHasFailed(build)) {
+addPointsToAllCommitters(build, FAILURE_SCORE);
+

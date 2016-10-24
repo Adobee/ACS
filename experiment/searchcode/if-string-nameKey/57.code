@@ -1,0 +1,10 @@
+if (message!=null) {
+
+String previous_status=getLastStatus(nameKey);
+
+if (!previous_status.equals(message)){
+SharedPreferences.Editor editor = sharedPreferences.edit();
+
+String nameKey=&quot;&quot;;
+if (tubeLine.equals(getString(R.string.bakerloo_label))){
+

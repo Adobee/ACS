@@ -1,0 +1,12 @@
+import workshop.exchange.exceptions.OrderNotFoundException;
+
+public class Exchange {
+
+private int orderId;
+
+private Map<Integer, Order> ordersToBuy = new HashMap<Integer, Order>();
+public Integer placeOrder(OrderType orderType, double price, int amount) {
+int orderId = getNewOrderId();
+
+Map<Integer, Order> ordersToMatch = new HashMap<Integer, Order>();
+

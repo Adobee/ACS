@@ -1,0 +1,13 @@
+* The original setting of the knownDeleted flag.  It parallels abortLsn.
+*/
+boolean abortKnownDeleted;
+
+/*
+* Size of the original log entry, or zero if abortLsn is NULL_LSN or if
+* when to set abortLsn.
+*/
+boolean neverLocked;
+
+/*
+* True if the node was created this transaction.
+

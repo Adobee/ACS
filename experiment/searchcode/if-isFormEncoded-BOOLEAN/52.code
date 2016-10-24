@@ -1,0 +1,9 @@
+MediaType contentType, boolean hasBody, boolean isFormEncoded, boolean isMultipart) {
+this.method = method;
+this.baseUrl = baseUrl;
+if (headers != null) {
+requestBuilder.headers(headers);
+}
+
+if (isFormEncoded) {
+

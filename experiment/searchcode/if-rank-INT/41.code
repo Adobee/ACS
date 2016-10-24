@@ -1,0 +1,17 @@
+public abstract class RankTile extends Tile {
+public int rank;
+
+public RankTile(int rank){
+this.rank = rank;
+}
+
+public boolean matches(Tile other) {
+RankTile rankTile = (RankTile) other;
+
+if(super.matches(other) &amp;&amp; rank == rankTile.rank)
+return true;
+else
+return false;
+}
+}
+

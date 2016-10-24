@@ -1,0 +1,11 @@
+* Query sub phase which pulls data from field data (using the cache if
+* available, building it if not).
+*
+* Specifying {@code &quot;fielddata_fields&quot;: [&quot;field1&quot;, &quot;field2&quot;]}
+.put(&quot;fielddataFields&quot;, new FieldDataFieldsParseElement());
+return parseElements.build();
+}
+
+@Override
+public boolean hitsExecutionNeeded(SearchContext context) {
+

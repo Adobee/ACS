@@ -1,0 +1,6 @@
+selectedGeoPoint = new GeoPoint(Double.parseDouble(intent.getStringExtra(&quot;latitude&quot;)), Double.parseDouble(intent.getStringExtra(&quot;longitude&quot;)));
+selectedDistance = Integer.parseInt(intent.getStringExtra(&quot;distance&quot;));
+String priceMax = String.valueOf(etPriceMax.getText().toString());
+if (!focus) {
+if (priceMin.length() > 0 &amp;&amp; Double.valueOf(priceMin) < 0) {
+

@@ -1,0 +1,7 @@
+private transient volatile boolean transfer;
+
+private final transient LinkedBlockingQueue<Long> windowsToTransfer = Queues.newLinkedBlockingQueue();
+while (transfer) {
+transferWindowFiles();
+if (latestExpiredTimeBucket.get() > -1) {
+

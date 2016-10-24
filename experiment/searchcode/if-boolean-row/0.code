@@ -1,0 +1,9 @@
+public class Solution {
+public boolean isValidSudoku(char[][] board) {
+if (board == null || board.length != 9 || board[0].length != 9) {
+return false;
+}
+boolean[][] rowFlag = new boolean[9][9];
+boolean[][] colFlag = new boolean[9][9];
+boolean[][] boxFlag = new boolean[9][9];
+

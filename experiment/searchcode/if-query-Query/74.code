@@ -1,0 +1,8 @@
+public static SparqlQueryType getQueryType(Query query){
+
+if (query instanceof TupleQuery) {
+return SparqlQueryType.TUPLE_QUERY;
+}else if (query instanceof GraphQuery) {
+return SparqlQueryType.GRAPH_QUERY;
+} else if (query instanceof BooleanQuery) {
+

@@ -1,0 +1,5 @@
+private boolean isAutoBoxingValid(Type toType){
+if (!toType.isClass()) return false;
+if (this.isInt() &amp;&amp; (toType.isInt() || toType.isShort() || toType.isByte() || toType.isChar() || ts.isSubtype(ts.IntegerWrapper(), toType))) return true;
+if (this.isBoolean() &amp;&amp; (toType.isBoolean() || ts.isSubtype(ts.BooleanWrapper(), toType)) ) return true;
+

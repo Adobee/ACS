@@ -1,0 +1,10 @@
+if ( maxnfn > 0 ) {
+double Gnorm = 0;
+for ( int i = 0; i < g.length; ++i )
+Gnorm += g[i]*g[i];
+G[0] += 0;// (pr-y); // MUST BE ZERO ! I dont know how to handle bias term !
+
+double add = -y*wx + pr;
+
+if ( Double.isNaN(add) || Double.isInfinite(add) ) {
+

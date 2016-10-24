@@ -1,0 +1,6 @@
+maxMergeAtOnce = adjustMaxMergeAtOnceIfNeeded(maxMergeAtOnce, segmentsPerTier);
+mergePolicy.setNoCFSRatio(noCFSRatio);
+int newMaxMergeAtOnce = (int) segmentsPerTier;
+// max merge at once should be at least 2
+if (newMaxMergeAtOnce <= 1) {
+

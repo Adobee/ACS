@@ -1,0 +1,12 @@
+public static void remove(Activity activity) {
+
+if (activity != null) {
+activity.finish();
+activityList.remove(activity);
+activity = null;
+Activity activity = currentActivity();
+if (activity == null) {
+break;
+}
+if (activity.getClass().equals(cls)) {
+

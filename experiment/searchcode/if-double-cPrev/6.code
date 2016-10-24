@@ -1,0 +1,12 @@
+if(r<M*N){
+Cnow=Rp[r];
+Pnow=(Cnow-z2n[i]-Cprev-Pprev)%256;
+if(Pnow<0)
+Pnow=Pnow+256;
+break;
+}
+case 1:
+if(g<M*N){
+Cnow=Gp[g];
+Pnow=(Cnow-z2n[i]-Cprev-Pprev)%256;
+

@@ -1,0 +1,7 @@
+import org.apache.lucene.util.IOUtils;
+import org.elasticsearch.common.lucene.index.ElasticsearchDirectoryReader;
+import org.elasticsearch.test.ESTestCase;
+try (DirectoryReader reader = DirectoryReader.open(writer, random().nextBoolean())) {
+ElasticsearchDirectoryReader wrap = ElasticsearchDirectoryReader.wrap(reader, id);
+assertEquals(id, ShardUtils.extractShardId(wrap));
+

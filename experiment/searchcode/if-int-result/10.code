@@ -1,0 +1,8 @@
+public class Solution {
+public int[][] generateMatrix(int n) {
+int[][] result = new int[n][n];
+if (n == 0) {
+return result;
+}
+int x = 0, y = 0, i = 1;
+

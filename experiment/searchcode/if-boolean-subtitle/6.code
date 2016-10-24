@@ -1,0 +1,6 @@
+@Override
+public boolean equals(Object o) {
+if(o instanceof SubtitleModel) {
+SubtitleModel orther = (SubtitleModel)o;
+if (Utils.getTimeString(orther.getTime()).equals(Utils.getTimeString(time))) return true;
+

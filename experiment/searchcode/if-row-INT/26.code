@@ -1,0 +1,12 @@
+return res[0];
+}
+
+private void dfs(int[] res, int[] queenRow, int row, int n) {
+if (row == n) {
+res[0] += 1;
+return;
+} else {
+for (int i = 0; i < n; i++) {
+queenRow[row] = i;
+if (isValid(queenRow, row)) {
+

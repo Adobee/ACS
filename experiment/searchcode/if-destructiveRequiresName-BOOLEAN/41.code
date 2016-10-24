@@ -1,0 +1,8 @@
+public static final Setting<Boolean> REQUIRES_NAME_SETTING = Setting.boolSetting(&quot;action.destructive_requires_name&quot;, false, true, Setting.Scope.CLUSTER);
+private volatile boolean destructiveRequiresName;
+
+@Inject
+public DestructiveOperations(Settings settings, ClusterSettings clusterSettings) {
+private void setDestructiveRequiresName(boolean destructiveRequiresName) {
+this.destructiveRequiresName = destructiveRequiresName;
+

@@ -1,0 +1,8 @@
+public static void sort(Comparable[] a) {
+for (int i = 0; i < a.length - 1; i++) {
+int minPos = minimumPosition(a, i);
+private static int minimumPosition(Comparable[] a, int from) {
+int minPos = from;
+for (int i = from + 1; i < a.length; i++) {
+if (a[i].compareTo(a[minPos]) < 0) {
+

@@ -1,0 +1,5 @@
+public static String timeDifferenceFormat(long diffInSeconds) {
+long[] diff = new long[] { 0, 0, 0, 0 };
+/* sec */diff[3] = diffInSeconds >= 60 ? diffInSeconds % 60 : diffInSeconds;
+long diffInMinutes = diffInSeconds / 60;
+

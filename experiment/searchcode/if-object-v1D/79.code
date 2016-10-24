@@ -1,0 +1,8 @@
+public byte[] getAttachmentAsByteArray(String cid) {
+Object obj = MyAttachmentMarshaller.attachments.get(cid);
+if(obj instanceof byte[]){
+return (byte[])obj;
+this.getAttachmentAsDataHandlerWasCalled = true;
+Object obj = MyAttachmentMarshaller.attachments.get(cid);
+if (obj instanceof DataHandler) {
+

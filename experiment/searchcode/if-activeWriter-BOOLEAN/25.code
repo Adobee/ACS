@@ -1,0 +1,13 @@
+private final LockManager activeWriter;
+
+/**
+* Counter that keeps track of the numer of active read locks.
+*/
+private final LockManager activeReaders;
+protected boolean isWriterActive() {
+return activeWriter.isActiveLock();
+}
+
+/**
+* If one or more readers are active
+

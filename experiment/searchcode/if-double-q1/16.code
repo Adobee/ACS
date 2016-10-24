@@ -1,0 +1,10 @@
+double T = 1 + mat.m00 + mat.m11 + mat.m22;
+if( T > 0.00000001 ) //to avoid large distortions!
+{
+double S = Math.sqrt(T) * 2;
+this.w = (float) (0.25 * S);
+} else if(T == 0)
+{
+if ( mat.m00 > mat.m11 &amp;&amp; mat.m00 > mat.m22 )  {	// Column 0:
+double S  = Math.sqrt( 1.0 + mat.m00 - mat.m11 - mat.m22 ) * 2;
+

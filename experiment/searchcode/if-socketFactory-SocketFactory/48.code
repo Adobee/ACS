@@ -1,0 +1,12 @@
+private final UdpIpSocketFactory socketFactory;
+private byte[] buffer;
+private int position = 0;
+
+public UdpIpOutputStream(@SpiInitializer UdpIpOutputStreamInitializer init) {
+this.buffer = new byte[this.socketFactory.getMaxPacketSize()];
+}
+
+@Override
+public void write(int b) throws IOException {
+if (this.buffer == null) { throw new IOException(&quot;Stream must be configured&quot;); }
+

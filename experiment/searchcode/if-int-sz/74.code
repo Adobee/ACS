@@ -1,0 +1,12 @@
+package UnionFind;
+
+public final class UnionFind {
+int[] id;
+int[] sz;
+int count;
+
+public UnionFind(int n) {
+id = new int[n];
+sz = new int[n];
+for (int i=0; i<n; ++i) {
+

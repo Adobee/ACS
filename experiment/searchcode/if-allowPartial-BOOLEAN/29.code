@@ -1,0 +1,9 @@
+private static final Logger LOG = LoggerFactory.getLogger(GroupCodex.class);
+protected boolean allowPartial;
+protected Codex codex[];
+
+public GroupCodex(CodexFactory factory) {
+public void init(Codex parent, String id, Config config) throws Exception {
+super.init(parent, id, config);
+allowPartial = config.getBooleanValue(&quot;@allow-partial&quot;, false);
+

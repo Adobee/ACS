@@ -1,0 +1,12 @@
+public RemoteMarvinTask(String ID, String TaskID)
+{
+_MarvinID = ID;
+_TaskID = TaskID;
+if (RemoteMarvinTask._RequestNumber == 0)
+String strTask = getDataValue(_TaskID);
+if (null == strTask)
+{
+return;
+}
+String sendBuffer = &quot;<?xml version=\&quot;1.0\&quot; encoding=\&quot;UTF-8\&quot;?>&quot;;
+

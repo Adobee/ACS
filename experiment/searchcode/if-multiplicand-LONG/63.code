@@ -1,0 +1,15 @@
+int index = 10;
+for(int i = 10; i<10000000; i++)
+{
+if(!sieve[i])
+{
+double tot = totient(i,primeFac(i));
+for(long i = 2; i<1000000; i++)
+{
+if(sieve[(int)i])
+{
+for(long j = 0; ; j++)
+{
+long val = i*i+i*j;
+if(val<0||val>=1000000)
+

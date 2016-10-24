@@ -1,0 +1,11 @@
+public class PhButton extends Composite implements HasClickHandlers, HasTouchHandlers,
+HasText, HasTag, HasModel {
+
+private Widget impl;
+
+private final boolean useAnchor = MGWT.getOsDetection().isAndroid();
+MGWTStyle.getTheme().getMGWTClientBundle().getButtonCss().ensureInjected();
+
+if (useAnchor) {
+impl = new Anchor();
+

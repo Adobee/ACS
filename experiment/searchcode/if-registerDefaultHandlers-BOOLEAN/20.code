@@ -1,0 +1,7 @@
+public static void registerDefaultHandlers() {
+registerHandler(new TokenComment());
+registerHandler(new TokenReference());
+while (!isEOF()) {
+Token token = nextToken();
+if (token!=null) {
+

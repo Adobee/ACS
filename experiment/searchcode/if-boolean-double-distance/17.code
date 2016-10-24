@@ -1,0 +1,10 @@
+public class DoubleEKmeans extends AbstractEKmeans<double[], double[]> {
+
+public interface DoubleDistanceFunction {
+
+double distance(double[] p1, double[] p2);
+this.doubleDistanceFunction = doubleDistanceFunction;
+}
+
+public void distance(boolean[] changed, double[][] distances, double[][] centroids, double[][] points) {
+

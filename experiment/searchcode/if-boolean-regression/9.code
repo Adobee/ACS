@@ -1,0 +1,12 @@
+import java.util.Map;
+
+/**
+* The RegressionSuite asset.
+*/
+@MetaDataAttribute(&quot;RegressionSuite&quot;)
+public class RegressionSuite extends BaseAsset {
+* @param regressionTest Regression Test to un-assign.
+*/
+public void unassignRegressionTest(RegressionTest regressionTest) {
+if (!getRegressionTests().contains(regressionTest)) {
+

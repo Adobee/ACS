@@ -1,0 +1,12 @@
+game = new Simple(WIDTH , HEIGHT , R) ;
+
+int q = 0 ;
+if (chain2[q] == null) {}
+else {
+while(k > q ){
+if(game.performMove(chain2[q]) == true )
+int x3 ,int y3 ,int z3 ,int x4 ,int y4 ,int z4){
+
+if (equalInt(equalInt(x,y,z,x2),equalInt(y2,z2,x3,y3),
+equalInt(z3,x4,y4,z4),1) == 1 )
+

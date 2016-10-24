@@ -1,0 +1,9 @@
+public static int[] random(final int size, final int n, final boolean allowDuplicate) {
+// We can&#39;t select n elements from array smaller than n.
+assert !allowDuplicate &amp;&amp; n <= size;
+final int[] result = new int[n];
+
+if (allowDuplicate) {
+for (int i = 0; i < n; ++i) {
+final int r = random.nextInt(size);
+

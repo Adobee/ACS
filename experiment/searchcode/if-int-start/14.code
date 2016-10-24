@@ -1,0 +1,11 @@
+public int canCompleteCircuit(int[] gas, int[] cost) {
+for (int i = 0; i < gas.length; i++) {
+gas[i] -= cost[i];
+}
+int start = 0;
+for(start = 0;start<gas.length;start++){
+int left = 0;
+int i = start;
+
+while(true){
+

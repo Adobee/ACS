@@ -1,0 +1,7 @@
+boolean goodInput = (doubleArray != null || doubleArray.length != 0);
+if (goodInput){
+this.Array = doubleArray;
+this.chooseMedianOfThree(leftIndex, rightIndex);
+double pivotVal = this.Array[rightIndex - 1];
+int i= leftIndex;
+

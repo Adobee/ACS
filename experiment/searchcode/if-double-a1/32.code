@@ -1,0 +1,7 @@
+public static PointD intersect(PointD a1, PointD a2, PointD b1, PointD b2) {
+double z1 = twistedProduct(a1, a2, a1, b1);
+double z2 = twistedProduct(a1, a2, a1, b2);
+
+double z3 = twistedProduct(b1, b2, b1, a1);
+double z4 = twistedProduct(b1, b2, b1, a2);
+

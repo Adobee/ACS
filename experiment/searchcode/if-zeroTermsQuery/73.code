@@ -1,0 +1,8 @@
+* {@link MatchQuery.ZeroTermsQuery#ALL} instead.
+*/
+public MatchQueryBuilder zeroTermsQuery(MatchQuery.ZeroTermsQuery zeroTermsQuery) {
+if (zeroTermsQuery == null) {
+builder.field(MatchQueryParser.ZERO_TERMS_QUERY_FIELD.getPreferredName(), zeroTermsQuery.toString());
+if (cutoffFrequency != null) {
+builder.field(MatchQueryParser.CUTOFF_FREQUENCY_FIELD.getPreferredName(), cutoffFrequency);
+

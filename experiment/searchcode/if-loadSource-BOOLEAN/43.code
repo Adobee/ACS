@@ -1,0 +1,8 @@
+static final String DEFAULT_CONF_FILE = &quot;config/fb/app_credentials.conf&quot;;
+
+private Properties fbconf;
+private boolean loaded;
+public void loadSource() throws IOException{
+fbconf.load(new FileReader(DEFAULT_CONF_FILE));
+loaded = true;
+

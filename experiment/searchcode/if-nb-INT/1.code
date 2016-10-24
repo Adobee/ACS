@@ -1,0 +1,12 @@
+private String[] playerNames = new String[maxPlayers];
+private int nbPlayers = 4;
+private int nbHuman = 1;
+
+public GameSettings(int nbP, int nbH, String[] names)
+nbPlayers = (nbP > maxPlayers) ? maxPlayers : ((nbP < 2) ? 2 : nbP);
+if (nbPlayers < nbHuman)
+nbHuman = nbPlayers;
+}
+
+public void setNbHumans(int nbH)
+

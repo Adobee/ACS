@@ -1,0 +1,9 @@
+public class MyCalendar {
+
+public static String checkDayOfWeekMatches(int dayOfMonth, int day, GregorianCalendar c) {
+return &quot;-&quot;;
+
+int dayWeek = c.get(GregorianCalendar.DAY_OF_WEEK);
+if(dayOfMonth < 8) {
+if (dayOfMonth == dayWeek)
+

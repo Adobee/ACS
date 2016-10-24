@@ -1,0 +1,13 @@
+TreeNode* left = root->left;
+TreeNode* right = root->right;
+
+if (left) {
+root->right = left;
+rightmost->right = right; // point the right most to the original right child
+}
+
+class Solution {
+public:
+void flatten(TreeNode *root) {
+if (!root) return;
+

@@ -1,0 +1,10 @@
+float[][] buffer = new float[3][bufferLength];
+
+
+public void filtering(float x, float y, float z){
+if(countBuffer >= bufferLength){
+return;
+}else{
+if(countBuffer >= 0 &amp;&amp; countBuffer < bufferLength){
+buffer[0][countBuffer] = x;
+

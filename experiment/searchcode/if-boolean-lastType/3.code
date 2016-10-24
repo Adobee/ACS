@@ -1,0 +1,11 @@
+private IVPProgram model;
+private short      lastType;
+private Vector     returnedVector;
+private short      newType;
+public void setDomainModel(DomainModel m) {
+model = (IVPProgram) m;
+}
+
+protected void executeAction() {
+if (isRedo()) {
+

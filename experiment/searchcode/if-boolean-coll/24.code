@@ -1,0 +1,7 @@
+public static void calcCollTime(CollisionData collPair)
+{
+if (collPair.obj1 instanceof Circle &amp;&amp; collPair.obj2 instanceof Circle)
+double coll_time = ((distance - min_distance) / velocity) + collPair.min_time;
+//TODO: (distance - 0.01) not beautiful
+if (coll_time > collPair.max_time || coll_time < collPair.min_time || (distance - 0.01) < Util.minus(collPair.obj1.getPosition(coll_time), collPair.obj2.getPosition(coll_time)).getLength())
+

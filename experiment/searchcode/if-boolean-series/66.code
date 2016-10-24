@@ -1,0 +1,9 @@
+this.seriesList = new java.util.ArrayList();
+
+if (series != null) {
+this.seriesList.add(series);
+series.addChangeListener(this);
+public MatrixSeries getSeries(int seriesIndex) {
+if ((seriesIndex < 0) || (seriesIndex > getSeriesCount())) {
+throw new IllegalArgumentException(&quot;Index outside valid range.&quot;);
+

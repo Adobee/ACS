@@ -1,0 +1,10 @@
+// trigger the event
+interpolator.setInterpolatedTime(eventT);
+final double[] eventY = interpolator.getInterpolatedState().clone();
+remaining.stepAccepted(eventT, eventY);
+}
+return eventT;
+}
+
+if (currentEvent.reset(eventT, eventY)) {
+

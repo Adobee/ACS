@@ -1,0 +1,8 @@
+private final Matcher<T> matcher;
+private final Map<T, Boolean> cachedMap;
+
+public CachedMatcher(Matcher<T> matcher, Map<T, Boolean> cachedMap) {
+final Boolean valueInCache = cachedMap.get(target);
+if (null == valueInCache) {
+final boolean value = matcher.matching(target);
+

@@ -1,0 +1,16 @@
+public class JSONRequest {
+
+private Request httpRequest;
+
+JSONRequest (Request httpRequest) {
+this.httpRequest = httpRequest;
+}
+
+public void cancel() {
+if (httpRequest != null) {
+httpRequest.cancel();
+}
+}
+
+}
+

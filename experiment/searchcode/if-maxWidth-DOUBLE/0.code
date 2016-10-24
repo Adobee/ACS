@@ -1,0 +1,5 @@
+@Override public Bitmap transform(Bitmap source) {
+if(source.getWidth() > maxWidth) {
+double aspectRatio = (double) source.getHeight() / (double) source.getWidth();
+int targetHeight = (int) (maxWidth * aspectRatio);
+

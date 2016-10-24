@@ -1,0 +1,9 @@
+* Messages posted to a Handler will be executed FIFO serially. If you require parallel background thread callbacks use
+* {@link com.bottlerocketstudios.groundcontrol.policy.AgentPolicyBuilder#setParallelBackgroundCallback(boolean)}
+AgentPolicyBuilder setClearCache(boolean clearCache);
+
+boolean shouldClearCache();
+
+/**
+* Clear this builder to build a new instance.
+

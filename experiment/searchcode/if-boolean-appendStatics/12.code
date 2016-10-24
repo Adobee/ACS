@@ -1,0 +1,12 @@
+/*     */ public class ReflectionToStringBuilder extends ToStringBuilder
+/*     */ {
+/* 351 */   private boolean appendStatics = false;
+/*     */
+/* 356 */   private boolean appendTransients = false;
+/* 459 */     setAppendStatics(outputStatics);
+/*     */   }
+/*     */
+/*     */   protected boolean accept(Field field)
+/*     */   {
+/* 475 */     if (field.getName().indexOf(&#39;$&#39;) != -1)
+

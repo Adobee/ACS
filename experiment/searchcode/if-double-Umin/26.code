@@ -1,0 +1,8 @@
+if (Minecraft.isFancyGraphicsEnabled()) icon = ((BlockWeedWoodBush)block).iconFancy;
+double umin = icon.getMinU();
+double vmin = icon.getMinV();
+tessellator.addVertexWithUV(0.5, -0.1, 0.5, umin, vmax);
+
+IIcon iconStick = ((BlockWeedWoodBush)block).iconStick;
+double uminStick = iconStick.getMinU();
+

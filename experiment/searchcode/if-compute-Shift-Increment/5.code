@@ -1,0 +1,6 @@
+/*  96 */     else if (&quot;IncrementValue&quot;.equals(paramString)) incrementValue();
+/*  97 */     else if (&quot;DecrementValue&quot;.equals(paramString)) decrementValue(); else
+/* 200 */       localSlider.adjustValue(localSlider.getValue() - computeIncrement());
+/*     */     else
+/* 202 */       localSlider.decrement();
+

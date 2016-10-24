@@ -1,0 +1,7 @@
+//        super.propertyChanged(event);
+//        if (event.getProperty().getName().equals(&quot;date&quot;)) {
+//            final DayOfWeek dayOfWeek = dateToDayOfWeek((Date) event.getNewValue());
+final GregorianCalendar cal = new GregorianCalendar();
+cal.setTime(newValue);
+final int iDayOfWeek = cal.get(GregorianCalendar.DAY_OF_WEEK);
+

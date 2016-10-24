@@ -1,0 +1,9 @@
+public class DistanceFunctionHelper {
+
+public static DistanceFunctionFactory buildFactory(String df) {
+if (df == null)
+df = &quot;&quot;;
+df = df.toLowerCase();
+if (&quot;stoean&quot;.equals(df))
+return StoeanDistanceFunction.Factory;
+

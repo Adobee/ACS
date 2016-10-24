@@ -1,0 +1,7 @@
+Cursor c = mResultsAdapter.getCursor();
+c.moveToPosition(position);
+boolean isTopicTag = c.getInt(SearchTopicsSessionsQuery.IS_TOPIC_TAG) == 1;
+String tagOrSessionId = c.getString(SearchTopicsSessionsQuery.TAG_OR_SESSION_ID);
+if (isTopicTag) {
+Intent intent = new Intent(this, ExploreSessionsActivity.class);
+

@@ -1,0 +1,8 @@
+* @return boolean true if all nodes in the subtree are equal
+*/
+@Override public boolean equalsDeep(SqlNode node, boolean fail) {
+SqlLiteral allowPartial = this.allowPartial;
+
+if (refName != null) {
+SqlWindow win = validator.resolveWindow(this, operandScope, false);
+

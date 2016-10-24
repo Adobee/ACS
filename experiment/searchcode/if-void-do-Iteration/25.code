@@ -1,0 +1,8 @@
+public abstract void arbitrate(Iteration current, Iteration conflicter);
+
+protected abstract void commitIteration(Iteration it, int iterationId, T item, boolean releaseLocks);
+protected final void doAbort() {
+abortIteration(currentIteration);
+numAborted++;
+// TODO(ddn): Implement this better using control algo! Needed something fast
+

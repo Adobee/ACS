@@ -1,0 +1,11 @@
+public int threeSumClosest(int[] nums, int target) {
+Arrays.sort(nums);
+int closest = 0;
+if(nums.length >= 3) {
+closest = nums[nums.length-1] + nums[nums.length-2] + nums[nums.length-3];
+if(isCloser(target, closest, sum)){
+closest = sum;
+}
+if(target == closest){
+return closest;
+

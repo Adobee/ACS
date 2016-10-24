@@ -1,0 +1,7 @@
+private Integer getPivotColumn(SimplexTableau tableau) {
+double minValue = 0;
+Integer minPos = null;
+for (int i = 0; i < tableau.getHeight(); i++) {
+if (i != pivotRow) {
+double multiplier = tableau.getEntry(i, pivotCol);
+

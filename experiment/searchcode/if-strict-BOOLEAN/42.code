@@ -1,0 +1,13 @@
+protected Class<?>[] types;
+
+protected boolean strict;
+
+//
+// Constructors
+//
+
+public MethodSignaturePatternCriteria(String regex, Class<?>[] types, boolean strict) {
+protected boolean matchParameterType(Class<?> type, Class<?> parameterType, boolean strict) {
+if (strict) {
+if (type!=null &amp;&amp; !type.equals(parameterType)) {
+

@@ -1,0 +1,7 @@
+public OQueryContextNative<T> matches(Object iValue) {
+if (checkOperator())
+partialResult = currentValue.toString().matches(iValue.toString());
+public OQueryContextNative<T> minor(Object iValue) {
+if (checkOperator())
+partialResult = ((Comparable<Object>) currentValue).compareTo(iValue) < 0;
+

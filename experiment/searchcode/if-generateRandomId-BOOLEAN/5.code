@@ -1,0 +1,9 @@
+* @return 唯一标识。
+*/
+public static String generateRandomId() {
+return UUID.randomUUID().toString();
+* @return 如果业务对象是系统保留对象，则返回 true；否则返回 false。
+*/
+public static boolean isReservedObject( BaseModel obj ) {
+if( obj == null ) {
+

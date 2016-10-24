@@ -1,0 +1,7 @@
+@FormParam(&quot;name&quot;) String name,
+@FormParam(&quot;conventionxml&quot;) String xml) {
+if (data().getConvention().isLatest() == false) {
+@FormParam(&quot;conventionXML&quot;) String xml) {
+if (data().getConvention().isLatest() == false) {
+return Response.status(Status.FORBIDDEN).entity(getHTML()).build();
+

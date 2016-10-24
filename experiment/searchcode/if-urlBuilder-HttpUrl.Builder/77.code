@@ -1,0 +1,9 @@
+@Override
+public final String setRequestURL(String keyword) {
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(
+&quot;https://api.yummly.com/v1/api/recipes?&quot; +
+&quot;_app_id=&quot; + this.app_id).newBuilder();
+
+urlBuilder.addQueryParameter(&quot;_app_key&quot;, this.api_key);
+

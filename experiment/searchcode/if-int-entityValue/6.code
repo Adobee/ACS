@@ -1,0 +1,11 @@
+* Time: 1:43 PM
+*/
+public class EntityValue implements Value {
+private SimpleEntity entity;
+
+public EntityValue(EmbeddedEntity entity) {
+this.entity = entity;
+}
+
+public SimpleEntity toEntity() {
+

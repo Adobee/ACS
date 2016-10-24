@@ -1,0 +1,8 @@
+public class SimplexSolver extends AbstractLinearOptimizer {
+
+/** Default amount of error to accept in floating point comparisons. */
+private static final double DEFAULT_EPSILON = 1.0e-6;
+for (int i = 0; i < tableau.getHeight(); i++) {
+if (i != pivotRow) {
+double multiplier = tableau.getEntry(i, pivotCol);
+

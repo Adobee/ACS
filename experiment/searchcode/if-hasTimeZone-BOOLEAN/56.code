@@ -1,0 +1,12 @@
+int     len         = o.length();
+boolean hasTimeZone =
+((o.charAt(len - 3) == &#39;:&#39;) &amp;&amp; ((o.charAt(len - 6) == &#39;-&#39;) || (o.charAt(len - 6) == &#39;+&#39;)));
+mss = mss.substring(0, 4);
+}
+
+o = o.substring(0, pos) + mss + o.substring(endPos, len);
+}
+
+if (hasTimeZone) {
+// convert hh:mm to hhmm in timezone
+

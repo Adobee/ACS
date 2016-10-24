@@ -1,0 +1,9 @@
+super();
+}
+
+public boolean add(Relationship relationship) {
+int curSize = size();
+boolean success = super.add(relationship);
+if (success) {
+if (relationship.getDepth() < shallowestIndex) {
+

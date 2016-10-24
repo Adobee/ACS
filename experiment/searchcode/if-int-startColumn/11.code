@@ -1,0 +1,7 @@
+for (int row = 0; row < field.totalRows; row++) {
+int startColumn = -1;
+for (int column = 0; column <= field.totalColumns; column++) {
+field.horizontalLine(row, startColumn, column - 1);
+startColumn = -1;
+} else if (column != field.totalColumns &amp;&amp; field.shouldBeColored(row, column) &amp;&amp; startColumn == -1) {
+

@@ -1,0 +1,15 @@
+public boolean isSelfOf (RangeID rangeID)
+{
+return this.compareTo(rangeID) == 0;
+}
+
+public boolean isAncestorOf(RangeID rangeID)
+{
+if ((this.lRange < rangeID.getLeft()) &amp;&amp; (this.rRange > rangeID.getRight())) return true;
+return false;
+} // isAncestorOf
+
+public boolean isAncestorOrSelfOf(RangeID rangeID) throws DBException
+{
+if(this.isSelfOf(rangeID))
+

@@ -1,0 +1,14 @@
+private static MessageDao instance;
+RuntimeExceptionDao<MessageData, Integer> dao;
+
+private MessageDao() {
+dao = PadIMApplication.getInstance().getHelper().getMessageDataDao();
+public static MessageDao getInstance() {
+if (instance == null) {
+instance = new MessageDao();
+}
+return instance;
+}
+
+public long createOrUpdate(MessageData messageVO) {
+

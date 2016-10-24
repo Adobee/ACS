@@ -1,0 +1,8 @@
+HttpServletResponse httpResponse = (HttpServletResponse) servletResponse;
+if (acceptsGZipEncoding(httpRequest) ) {
+httpResponse.addHeader(&quot;Content-Encoding&quot;, GZipString);
+public void destroy() {
+}
+private boolean acceptsGZipEncoding(HttpServletRequest httpRequest) {
+String acceptEncoding = httpRequest.getHeader(&quot;Accept-Encoding&quot;);
+

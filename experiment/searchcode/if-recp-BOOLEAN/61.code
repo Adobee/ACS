@@ -1,0 +1,8 @@
+public abstract class BinaryOp extends OpenCOMComponent implements IConnections, ILifeCycle, IMetaInterface, INb, IUnknown {
+
+protected int Nb;
+protected boolean isEval;
+public OCM_MultiReceptacle<INb> m_PSR_INb;
+public boolean disconnect(String riid, long connID) {
+if (riid.toString().equalsIgnoreCase(&quot;passc.INb&quot;)) {
+

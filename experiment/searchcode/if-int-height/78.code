@@ -1,0 +1,12 @@
+
+public class Solution
+{
+public int maxArea(int [] height)
+{
+int n=height.length;
+if(n==0) return 0;
+nmax=Math.max(nmax,(j-i)*Math.min(height[i],height[j]));
+if(height[i]>height[j]){
+int temp=j;
+while(i<j&amp;&amp;height[j]<=height[temp]) j--;
+

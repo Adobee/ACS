@@ -1,0 +1,8 @@
+PageResponse p = xmDownloadStatusDao.findPage(getPageRequest(),fillDetachedCriteria(XmDownloadStatus.class,sVO));
+
+List list = p.getList();
+for (int i = 0; i < list.size(); i++) {
+XmMeetingInfo xmMeetingInfo=xmMeetingInfoDao.findById(xmmiGuid);
+xmDownloadStatus.setXmmiGuidLabel(xmMeetingInfo.getXmmiName());
+if(null!=xmPadDevice){
+

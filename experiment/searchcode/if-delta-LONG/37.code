@@ -1,0 +1,8 @@
+protected  int      size;
+public  long[]   values;
+protected long[] delta;
+protected LongIntervalTree(int size) {
+int nodeCount   =   Math.max(1,Integer.highestOneBit(size) << 2);
+values          =   new long[nodeCount];
+delta            =  new long[nodeCount];
+

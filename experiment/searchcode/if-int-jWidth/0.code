@@ -1,0 +1,8 @@
+public void setTiles(Graphics2D g2d) {
+int num = 0;
+if(grid != null &amp;&amp; !tilesSet) {
+for (int i = 0; i < grid.length / 2; i++) {
+for(int j = 0; j < grid[0].length / 2; j++) {
+int x, width;
+x = ((RunClass.jWidth/ grid[0].length) * j * 2);
+

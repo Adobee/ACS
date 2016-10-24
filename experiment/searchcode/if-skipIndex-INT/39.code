@@ -1,0 +1,12 @@
+public abstract class BaseServiceImpl	implements IBaseService {
+
+private final int PAGE_SIZE = 10;
+
+/*** 获取dao类 **/
+public abstract BaseMapper getMapper();
+//得到记录的开始数
+int skipIndex = (currPage - 1) * pageSize + 1;
+int totalRows = 0;
+
+//        long startTime = System.currentTimeMillis();
+

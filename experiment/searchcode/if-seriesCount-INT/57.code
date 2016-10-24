@@ -1,0 +1,8 @@
+alg.setXYDataset(dataset);
+
+/* make a data container big enough to hold it all */
+int arraysize = 0;
+int seriescount = dataset.getSeriesCount();
+for(int i = 0; i < seriescount; i++) {
+if(dataset.getItemCount(i) > arraysize) {
+

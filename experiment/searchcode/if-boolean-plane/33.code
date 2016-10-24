@@ -1,0 +1,7 @@
+package com.suushiemaniac.cubing.alglib.move.plane;
+
+public enum SkewbPlane implements Plane {
+public static SkewbPlane fromNotation(String notation) {
+for (SkewbPlane plane : SkewbPlane.values())
+if (plane.getNotation().equals(notation)) return plane;
+

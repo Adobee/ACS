@@ -1,0 +1,5 @@
+List<String> strings = new ArrayList<String>();
+strings.add(&quot;Hello&quot;);
+strings.add(strings); // Noncompliant; StackOverflowException if strings.hashCode() called
+strings.addAll(strings); // Noncompliant; behavior undefined
+

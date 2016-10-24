@@ -1,0 +1,7 @@
+for(int heightIndex = 0; heightIndex < this.height; heightIndex++)
+{
+if( matrixElements[heightIndex].length != this.width )
+throw new IllegalArgumentException(&quot;All rows must have the same length.&quot;);
+for(int widthIndex = widthStart; widthIndex <= widthEnd; widthIndex++)
+subMatrix[heightIndex - heightStart][widthIndex - widthStart] = this.matrixElements[heightIndex][widthIndex];
+

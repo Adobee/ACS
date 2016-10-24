@@ -1,0 +1,8 @@
+private User resetUser; // The user responsible requesting this reset token
+
+@Column(name = &quot;expires_at&quot;, nullable = false)
+private Long expiresAt;
+public PasswordResetRequest(String resetToken, User resetUser, Long expiresAt) {
+this.resetToken = resetToken;
+this.resetUser = resetUser;
+

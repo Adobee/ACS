@@ -1,0 +1,7 @@
+import com.bidding.prediction.exception.InvalidFeaturesException;
+
+public class InvalidFeaturesValidator implements FeaturesValidator {
+@Override
+public void validate(Map<String, String> features) {
+if (features == null || features.isEmpty()) {
+

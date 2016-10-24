@@ -1,0 +1,10 @@
+rtn[i++] = m.invoke(o, args);
+return rtn;
+}
+
+public Method[] getCommonMethods() {
+if (isEmpty())
+Method[] methods = get(i).getClass().getMethods();
+for (int j = 0; j < rtn.length; j++)
+if (rtn[j] != null &amp;&amp; !in(rtn[j], methods)) {
+

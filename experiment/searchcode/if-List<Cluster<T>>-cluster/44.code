@@ -1,0 +1,7 @@
+commandList = new HashMap<String, ExtendJedisCommands>();
+for (ClusterConfig clusterConfig : config.getClusterList()) {
+clusterConfig.setClusterList(config.getClusterName());
+for (ClusterConfig clusterConfig : config.getClusterList()) {
+if (clusterName.equalsIgnoreCase(clusterConfig.getCluster()))
+return clusterConfig.getSplitTag();
+

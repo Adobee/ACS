@@ -1,0 +1,9 @@
+public void startOperation(Operation operation) {
+if (runningOperations.contains(operation))
+throw new OperationAlreadyRunning(operation);
+listener.started(operation, this);
+}
+
+public void endOperation(Operation operation) {
+if (!runningOperations.contains(operation))
+

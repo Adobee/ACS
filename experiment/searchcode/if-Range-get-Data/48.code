@@ -1,0 +1,8 @@
+for (int y = range.getMinY(); y < range.getMinY() + range.getHeight(); y++) {
+if (!(0 <= y &amp;&amp; y < rows.length)) {
+continue;
+}
+
+int pos1 = Arrays.binarySearch(rows[y], range.getMinX());
+if (pos1 < 0) {
+

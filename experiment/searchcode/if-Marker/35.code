@@ -1,0 +1,8 @@
+package org.spantus.chart.marker;
+
+import java.awt.Point;
+import java.util.Collections;
+import java.util.List;
+public Marker remove(MarkerSetComponent markerSetComponent, MarkerComponent markerComponent) {
+if(markerComponent == null){
+

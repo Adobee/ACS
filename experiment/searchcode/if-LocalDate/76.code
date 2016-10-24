@@ -1,0 +1,10 @@
+package com.yutax77.java8_ans.chap5;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+public static long friday13th() {
+LocalDate start = LocalDate.of(1900, 1, 1);
+LocalDate end = LocalDate.of(2000, 1, 1);
+
+int count = 0;
+

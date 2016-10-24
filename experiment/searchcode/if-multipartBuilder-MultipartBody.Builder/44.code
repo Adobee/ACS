@@ -1,0 +1,4 @@
+RequestBody fileBody = RequestBody.create(IMAGE_MEDIA_TYPE, request.image);
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder();
+multipartBuilder.addFormDataPart(&quot;image&quot;, request.image.getName(), fileBody);
+

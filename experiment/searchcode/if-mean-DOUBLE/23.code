@@ -1,0 +1,11 @@
+static double l1value(double[][] modelMean,double[] Mean){
+double c=0;
+double tmp;
+for(int i=0;i<modelMean.length;i++){
+tmp=0;
+tmp=calculatel1(modelMean[i],Mean);
+if(i==0)
+c=tmp;
+else
+c=c>tmp?c:tmp;
+

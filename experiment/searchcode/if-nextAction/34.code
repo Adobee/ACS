@@ -1,0 +1,14 @@
+* it&#39;s a function used by doStep() who do the next step of the action. This function increments index by one.
+*/
+public void reallyDoOneStep() {
+Actions nextAction = actions.get(0);
+
+try {
+nextAction.doStep();
+}
+catch (IllegalStateException e) {
+System.out.println(e);
+}
+
+if(nextAction.isFinished()) {
+

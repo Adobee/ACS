@@ -1,0 +1,10 @@
+int[][] result = new int[n][n];
+
+int s = 1;
+int round = 0;
+int totalRound = (n + 1) / 2;
+
+while (round < totalRound) {
+if (n - round * 2 == 1) {
+result[round][round] = s++;
+

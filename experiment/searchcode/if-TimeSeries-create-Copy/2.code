@@ -1,0 +1,11 @@
+this.queryWatcher = queryWatcher;
+}
+
+@Override
+public QueryRunner<Result<TimeseriesResultValue>> createRunner(final Segment segment)
+Query<Result<TimeseriesResultValue>> input,
+Map<String, Object> responseContext
+)
+{
+if (!(input instanceof TimeseriesQuery)) {
+

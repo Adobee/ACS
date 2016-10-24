@@ -1,0 +1,18 @@
+public int isBlockSame(World world, int x, int y, int z, Block block) {
+if (world.getBlock(x, y, z) == block) {
+return 1;
+} else {
+return 0;
++ isBlockSame(world, x - 1, y - 1, z + 1, block);
+
+if (BlockCount == 29) {
+
+return true;
+} else {
+return false;
+}
+
+}
+
+}
+

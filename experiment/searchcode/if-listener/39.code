@@ -1,0 +1,7 @@
+@Override
+public synchronized void removeStaleListener(IStaleListener listener) {
+if (!disposed) {
+changeSupport.removeStaleListener(listener);
+}
+}
+

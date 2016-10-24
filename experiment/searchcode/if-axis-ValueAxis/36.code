@@ -1,0 +1,15 @@
+import com.bordag.parasyn.util.*;
+
+/**
+* @author not attributable
+* @version 1.0
+*/
+public abstract class ValueAxis
+{
+protected DBUtilUncached dbUtil = null;
+public ValueAxis(DBUtilUncached dbUtil)
+{
+if ( dbUtil == null )
+{
+throw new IllegalArgumentException(&quot;In ValueAxis constructor called with a null-connection.&quot;);
+

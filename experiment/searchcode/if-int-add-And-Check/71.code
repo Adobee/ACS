@@ -1,0 +1,8 @@
+public List<ICell> getCellNeighbors(ICell cell) throws InvalidCoordinateException {
+int[] coordinates = cell.getCoordinates();
+if(super.checkCoordinate(coordinates) == false)
+int y = coordinates[1];
+
+if(super.checkCoordinate(x - 1, y)) {
+neighbors.add(super.getCell(x - 1, y));
+

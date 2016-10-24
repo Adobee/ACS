@@ -1,0 +1,14 @@
+private double lowerBound;
+private double upperBound;
+
+
+
+public Domain(){
+id = 0;
+lowerBound = 0;
+upperBound = 0;
+return &quot;#&quot;+this.id + &quot;<&quot; + this.lowerBound + &quot;, &quot;  +this.upperBound + &quot;>&quot;;
+}
+public boolean covers(Domain value) {
+if (this.getLowerBound() <= value.getLowerBound() &amp;&amp; this.upperBound >= value.getUpperBound())
+

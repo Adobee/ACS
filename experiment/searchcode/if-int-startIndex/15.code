@@ -1,0 +1,9 @@
+private void sortList(int startIndex) {
+int minIndex = findMinimum(startIndex);
+if(minIndex != startIndex) {
+//swap
+swap(minIndex, startIndex);
+}
+startIndex++;
+if(startIndex < toSort.length) {
+

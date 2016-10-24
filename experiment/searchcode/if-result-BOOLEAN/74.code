@@ -1,0 +1,12 @@
+public boolean compute(Tuple tuple) {
+for (BooleanFactor booleanFactor : booleanFactors) {
+boolean result = booleanFactor.compute(tuple);
+
+if (!result)
+return false;
+}
+
+return true;
+}
+}
+

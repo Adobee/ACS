@@ -1,0 +1,13 @@
+* @return
+*/
+@Override
+public boolean hasZ(int pos, int v) {
+if (v < nvars_) {
+int t = v;
+v = w;
+w = t;
+}
+int iv = 2 * v, iw = 2 * w;
+if (w < nvars_) {
+double dv = weight(pos, v), dw = weight(pos, w);
+

@@ -1,0 +1,10 @@
+symTab.put(decl.varName, decl.type);
+
+decl.expr.accept(this);
+if (!canBeAssigned(lastType, decl.type)) {
+throw new TypeError(&quot;Assignment to undeclared variable: &quot; + assignment.varName);
+}
+
+assignment.expr.accept(this);
+if (!canBeAssigned(lastType, varTy)) {
+

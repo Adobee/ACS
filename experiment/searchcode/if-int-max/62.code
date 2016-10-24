@@ -1,0 +1,11 @@
+package second;
+
+public class MaxSubArray {
+public int maxSubArray(int[] a) {
+int n = a.length;
+if(n == 0){
+return 0;
+}
+
+int[] dp = new int[n];
+

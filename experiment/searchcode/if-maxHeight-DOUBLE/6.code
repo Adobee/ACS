@@ -1,0 +1,15 @@
+private int maxWidth;
+private int maxHeight;
+
+public enum Orientation {
+HORIZONTAL,
+VERTICAL;
+}
+
+public RelationSizeUtils(int maxWidth, int maxHeight) {
+this.maxHeight = maxHeight;
+}
+
+public int getAbsoluteSize(double value, Orientation flagOrientation) {
+if (value > 1) {
+

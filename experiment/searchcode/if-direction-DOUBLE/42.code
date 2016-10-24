@@ -1,0 +1,13 @@
+public static final double PI2 = Math.PI*2;
+private double direction;
+private double y;
+private double x;
+
+public Player(double x, double y, double direction) {
+this.x = x;
+this.y = y;
+this.direction = direction;
+}
+
+public void rotate(double angle) {
+

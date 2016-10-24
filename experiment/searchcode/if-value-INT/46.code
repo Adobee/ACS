@@ -1,0 +1,11 @@
+package gameBoard;
+
+public class Card {
+int value;
+
+public Card(int v){setValue(v);}
+int getFaceValue(){return(value<3)?(value+1):(6*(value-2));} //cards 1st, 2nd and 3rd give 1, 2 and 3. 4th = 6, 5th = 12, etc
+int getScore(){
+if(value<2)return 0; //1 and 2 are worth 0 points
+int score=1;
+

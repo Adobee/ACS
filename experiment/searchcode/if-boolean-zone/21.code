@@ -1,0 +1,8 @@
+public class TreeRectUnionUtils {
+public static void add(Node node, Zone2D zone) {
+if (node.isLeaf() &amp;&amp; node.isCovered)
+return;
+if (!zone.intersects(node.zone))
+return;
+if (zone.contains(node.zone)) {
+

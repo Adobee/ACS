@@ -1,0 +1,11 @@
+if(b[off] != &#39;I&#39; || b[off+1] != &#39;D&#39; || b[off+2] != &#39;3&#39;)
+return 0;
+
+intVersion = b[off+3] &amp; 0xff;
+
+if(intVersion > 2 &amp;&amp; (b[off+5] &amp; 0x40) != 0)
+fsize = len = makeInt(b, off, id_part);
+off += id_part;		// frame size = frame id bytes
+if (intVersion > 2)
+off += 2;		// flag: 2 bytes
+

@@ -1,0 +1,7 @@
+@MethodTrigger(stratgy=&quot;curStatistics&quot;)
+public void acceptOrd(LoanOrd loanOrd) throws Exception {
+if (loanOrd.getOrdStat() == OrdStat.APPLY){
+if (isExpire(loanOrd)){
+this.expireOrd(loanOrd);
+throw new Exception(&quot;订单已过期&quot;);
+

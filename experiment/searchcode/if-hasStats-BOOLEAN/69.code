@@ -1,0 +1,8 @@
+for (SlotDescriptor slot: desc_.getSlots()) {
+if (!slot.getStats().hasStats()) {
+columnsMissingStats.add(slot.getColumn().getName());
+for (SlotDescriptor slot: desc_.getSlots()) {
+if (!slot.getStats().hasStats()) return true;
+}
+return false;
+

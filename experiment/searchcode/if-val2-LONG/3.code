@@ -1,0 +1,8 @@
+public abstract class AbstractSynchronizer {
+
+protected boolean updMoney(Consumer<Long> c, Long val1, BigDecimal val2) {
+if (val2 == null &amp;&amp; val1 != null) {
+// wir runden hier, obwohl das eigentlich nicht nötig sein sollte, aber float in der DB ist unberechenbar
+long v = val2.movePointRight(2).setScale(0, RoundingMode.HALF_UP).longValue();
+if (val1 == null || val1.longValue() != v) {
+

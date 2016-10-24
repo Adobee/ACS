@@ -1,0 +1,9 @@
+public boolean connect(String host, int port) {
+if (localState == LocalState.DISCONNECTED) {
+try {
+this.socket = new Socket(host, port);
+boolean handleProtocolCommand(INetworkCommand command) {
+
+if (localState == LocalState.WAITINGFORNETWORKID) {
+if (command instanceof ServerAckConnect) {
+

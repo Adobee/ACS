@@ -1,0 +1,9 @@
+public static int greatestCommonDivisor(int first, int second)
+{
+if (first == 0)
+return second;
+if (second == 0)
+return first;
+if (first > second)
+return greatestCommonDivisor(second, first % second);
+

@@ -1,0 +1,9 @@
+* a {@link JointDomainIndexer}, which will be directed if {@code outputIndices} is non-null.
+* <p>
+* May return a previously cached value.
+public static <T extends Domain> DomainList<T> create(@Nullable int[] outputIndices, T ... domains)
+{
+if (allDiscrete(domains))
+{
+DiscreteDomain[] discreteDomains = Arrays.copyOf(domains, domains.length, DiscreteDomain[].class);
+

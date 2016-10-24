@@ -1,0 +1,14 @@
+return hasOnlineResult() || hasPeriodicResult();
+}
+
+public boolean hasOnlineResult() {
+if (onlineResult != null) {
+return periodicResult.hasResult();
+}
+return false;
+}
+
+public boolean hasStaticResult() {
+if (staticResult != null) {
+return staticResult.hasResult();
+

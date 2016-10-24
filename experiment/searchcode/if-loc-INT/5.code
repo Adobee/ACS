@@ -1,0 +1,8 @@
+public static char search(char input) {
+Location loc = searchLocation(input);
+
+if (content[loc.x - 1][loc.y] == &#39;|&#39;
+&amp;&amp; content[loc.x - 1][loc.y + 1] != &#39;-&#39;)) {
+return search(loc, DIRECTION.NORTH);
+} else if (content[loc.x + 1][loc.y] == &#39;|&#39;
+

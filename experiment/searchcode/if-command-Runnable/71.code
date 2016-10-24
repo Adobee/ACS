@@ -1,0 +1,10 @@
+protected void afterExecute(Runnable r, Throwable t) {
+if (r != null &amp;&amp; r instanceof CustomRunnable) {
+CustomRunnable finishedRunnable = (CustomRunnable) r;
+super.beforeExecute(t, r);
+}
+
+@Override
+public void execute(Runnable command) {
+if (command != null &amp;&amp; command instanceof CustomRunnable) {
+

@@ -1,0 +1,10 @@
+order.order = -1;
+order.charLength = 1;
+
+int firstByte = buf[offset] &amp; 0xFF;
+if (firstByte == SINGLE_SHIFT_2 ||
+(firstByte >= FIRSTPLANE_HIGHBYTE_BEGIN &amp;&amp;
+firstByte <= FIRSTPLANE_HIGHBYTE_END)) {
+order.charLength = 2;
+} else if (firstByte == SINGLE_SHIFT_3) {
+

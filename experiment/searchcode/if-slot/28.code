@@ -1,0 +1,9 @@
+QuickSlot noteSlot = findSlotByNote(note);
+if(slotNumber == 0) {
+if(noteSlot != null) {
+quickData.remove(noteSlot);
+(new Thread(new DeleteQuickSlotRunnable(noteSlot))).start();
+}
+} else {
+if(noteSlot != null) {
+

@@ -1,0 +1,17 @@
+package Assigh;
+
+public class ZDigit {
+
+int rank;
+char ch;
+
+public ZDigit( char ch ){
+
+
+if(Character.isUpperCase(ch))
+{
+this.ch = ch;
+rank = (int)ch - &#39;A&#39; + 1 ;
+}
+else if(ch ==&#39;0&#39;)
+

@@ -1,0 +1,10 @@
+Set<NotifyTime> notifyTimes = new TreeSet<NotifyTime>(new NotifyTimeComparator());
+
+notifyProfile.setIsDefault(notifyProfileVo.getIsDefault());
+if (notifyProfileVo.getIsEdit() != null) {
+* @see com.nbcedu.function.documentflow.biz.NotifyProfileBiz#removeNotifyProfile(com.nbcedu.function.documentflow.vo.NotifyProfileVO)
+*/
+@Override
+public boolean removeNotifyProfile(NotifyProfileVO notifyProfileVo) {
+if (isInuse(notifyProfileVo)) {
+

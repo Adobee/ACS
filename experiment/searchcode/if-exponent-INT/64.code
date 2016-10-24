@@ -1,0 +1,15 @@
+int base = input.nextInt();
+System.out.print(&quot;Enter exponent: &quot;);
+int exponent = input.nextInt();
+
+System.out.println(exponent(base,exponent));
+}
+
+public static int exponent(int b, int e) {
+if (e == 0)
+return 1;
+else
+return b * exponent(b, e-1);
+}
+}
+

@@ -1,0 +1,9 @@
+public boolean[] encrypt(boolean[] input, boolean[] key)
+{
+boolean[] keyBitstring = matchLengths(input, key);
+boolean[] output = xorInputByKey(input, keyBitstring);
+return output;
+}
+
+private boolean[] xorInputByKey(boolean[] input, boolean[] keyBitstring)
+

@@ -1,0 +1,7 @@
+public static double[] segundoGrau(double a, double b, double c) throws Exception {
+double delta = Math.pow(b, 2) - (4 * a * c);
+if (delta < 0) {
+throw new Exception(&quot;Não tem raiz para delta: &quot; + delta);
+}
+double rDelta = Math.pow(delta, 0.5);
+

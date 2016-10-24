@@ -1,0 +1,11 @@
+public PickyConsumer<Boolean> setter() {
+return _setter;
+}
+
+@Override
+public JCheckBox getMainWidget() {
+my(GuiThread.class).assertInGuiThread();
+
+boolean isSelected = _component.isSelected();
+if (isSelected == _source.currentValue()) return;
+

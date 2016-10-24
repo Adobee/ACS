@@ -1,0 +1,9 @@
+public HttpRequest buildRequest(String s, GenericUrl genericurl, HttpContent httpcontent)
+{
+HttpRequest httprequest = transport.buildRequest();
+if (initializer != null)
+httprequest.setRequestMethod(s);
+if (genericurl != null)
+{
+httprequest.setUrl(genericurl);
+

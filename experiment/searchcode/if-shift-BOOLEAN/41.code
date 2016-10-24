@@ -1,0 +1,8 @@
+public class ChangeEffectFilter implements Filter<ChangeEffect> {
+
+boolean downstream = false;
+boolean frameShift = false;
+boolean intergenic = false;
+public boolean anythingSet() {
+return downstream || frameShift || intergenic || intron || upstream || utr;
+

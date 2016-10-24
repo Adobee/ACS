@@ -1,0 +1,16 @@
+public void setExcludedUrls(List<String> excludedUrls) {
+this.excludedUrls = excludedUrls;
+}
+
+public boolean isExcluding(String requestUrl) {
+
+for (String url : this.excludedUrls) {
+if (requestUrl.endsWith(url)) {
+return true;
+}
+}
+
+return false;
+}
+}
+

@@ -1,0 +1,15 @@
+synchronized (mValue) {
+mValue[0] += x;
+mValue[1] += y;
+}
+}
+
+public void add(float value[]) {
+synchronized (mValue) {
+mValue[0] += value[0];
+mValue[1] += value[1];
+}
+}
+
+public void add(SFVec2f value) {
+

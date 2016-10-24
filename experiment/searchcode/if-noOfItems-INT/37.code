@@ -1,0 +1,11 @@
+public static String join(final Object[] array, String separator) {
+if (array == null) {
+return null;
+}
+final int noOfItems = array.length;
+if (noOfItems <= 0) {
+final StringBuilder buf = new StringBuilder(noOfItems * 16);
+for (int i = 0; i < array.length; i++) {
+if (i > 0) {
+buf.append(separator);
+

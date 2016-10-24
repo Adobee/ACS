@@ -1,0 +1,13 @@
+SelectionSort(arr,n);
+}
+
+static void SelectionSort(int arr[], int n)
+{
+int minpos;
+for(int i=0;i<n-1;i++)
+{
+minpos = i; //set as first position of i
+for(int j=i+1;j<n;j++)
+{
+if(arr[j] < arr[minpos])
+

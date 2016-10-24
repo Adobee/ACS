@@ -1,0 +1,8 @@
+private boolean checkExpected(SortedList sl, int[] ids) {
+if (Arrays.equals(sl.toNativeArray(), ids)) {
+SortedList sl = new SortedList();
+sl.init(1);
+
+sl.add(10, 10.0F);
+checkExpected(sl, new int[] {10});
+

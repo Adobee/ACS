@@ -1,0 +1,9 @@
+public Seed createSeed(Seed newSeed) throws IllegalArgumentException {
+List<Seed> seeds = seedRepo.getSeeds();
+for (Seed seed : seeds) {
+if (seed.getUrl().equalsIgnoreCase(newSeed.getUrl())) {
+public void deleteSeed(String id) throws Exception {
+Seed seed = seedRepo.getSeed(id);
+if (seed == null) {
+throw new Exception(&quot;Seed not found&quot;);
+

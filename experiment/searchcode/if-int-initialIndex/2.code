@@ -1,0 +1,9 @@
+package tsg;
+
+public class ConstituentLabelSpan {
+Label label;
+int initialIndex, finalIndex;
+
+public ConstituentLabelSpan(Label label, int initialIndex, int finalIndex) {
+this.label = label;
+

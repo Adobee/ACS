@@ -1,0 +1,9 @@
+public static void main(String[] args) {
+int sum = 0;
+for (int i = 10; i < 1000000; i++) {
+if (check(i)) {
+sum += i;
+public static boolean check(int num) {
+int numDigits = 1 + (int) Math.log10(num);
+int[] digits = new int[numDigits];
+

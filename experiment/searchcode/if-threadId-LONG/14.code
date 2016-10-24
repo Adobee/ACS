@@ -1,0 +1,9 @@
+public static long getThreadId() {
+final Long threadId = threadLocal.get();
+if (threadId != null) {
+return Thread.currentThread().getId();
+}
+
+public static void setThreadId(long threadId) {
+threadLocal.set(threadId);
+

@@ -1,0 +1,18 @@
+private int idkey;
+
+@NoSqlIndexed
+private String name;
+
+@NoSqlIndexed
+private String type;
+
+private boolean something = true;
+EmbeddedEmail other = (EmbeddedEmail) obj;
+
+if (other.idkey == idkey)
+return true;
+
+return false;
+}
+}
+

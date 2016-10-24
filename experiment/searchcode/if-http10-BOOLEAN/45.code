@@ -1,0 +1,10 @@
+boolean connect, boolean[] connectionClose) throws IOException {
+// Response Header
+boolean http10 = false, close = false, gzip = false;
+int status = 0, contentLength = 0;
+status = Numbers.parseInt(ss[1]);
+if (ss[0].toUpperCase().equals(&quot;HTTP/1.0&quot;)) {
+http10 = true;
+}
+} else if (status >= 200) {
+

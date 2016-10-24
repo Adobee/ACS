@@ -1,0 +1,9 @@
+private static void factorLU(MatrixBigDecimal[] lu, MatrixBigDecimal m) {
+MatrixBigDecimal L = lu[0];
+
+int pivotRow = 0;
+int pivotCol = 0;
+while (pivotRow != m.height - 1 &amp;&amp; pivotCol != m.width - 1) {
+BigDecimal pivotValue = m.get(pivotRow, pivotCol);
+if (!pivotValue.equals(new BigDecimal(&quot;0&quot;))) {                for (int row = pivotRow + 1; row < m.height; row++) {
+

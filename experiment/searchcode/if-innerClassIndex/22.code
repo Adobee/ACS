@@ -1,0 +1,9 @@
+public static String getNameNoPackage( String className )
+{
+if( className == null )
+{
+return null;
+}
+int packageIndex = className.lastIndexOf( &#39;.&#39; ) + 1;
+int innerClassIndex = className.lastIndexOf( &#39;$&#39; ) + 1;
+

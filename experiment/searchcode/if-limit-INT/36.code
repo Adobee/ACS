@@ -1,0 +1,11 @@
+PersonBuilder personBuilder;
+ParticipationLimit participation = new ParticipationLimit();
+
+private int limit = 5;
+
+
+public boolean Limit(){
+if( person.getPersons().size()<= limit);
+{
+return true;
+

@@ -1,0 +1,11 @@
+public void _encodeRecursive(DataOutput outs) throws IOException
+{
+outs.writeLong(this.utime);
+
+outs.writeInt(this.datalen);
+
+if (this.datalen > 0)
+outobj.data = new byte[(int) datalen];
+if (this.datalen > 0)
+System.arraycopy(this.data, 0, outobj.data, 0, this.datalen);
+

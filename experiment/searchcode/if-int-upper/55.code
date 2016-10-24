@@ -1,0 +1,15 @@
+// Attribute  ------------------------------------------------------------------
+
+private int lower;
+
+private int upper;
+
+private boolean isEmpty;
+
+// Konstruktoren  --------------------------------------------------------------
+public Intervall(int lower, int upper) {
+this(lower, upper, lower > upper);
+}
+
+private Intervall(int lower, int upper, boolean isEmpty) {
+

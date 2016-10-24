@@ -1,0 +1,8 @@
+import io.realm.RealmObject;
+import io.realm.RealmResults;
+
+public class SavedState extends RealmObject{
+public static SavedState getSavedState(Realm r) {
+RealmResults<SavedState> iterator = r.allObjects(SavedState.class);;
+if (iterator.size() == 0) {
+

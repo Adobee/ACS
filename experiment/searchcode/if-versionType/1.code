@@ -1,0 +1,9 @@
+public static String checkNewIndFile(JGraph graph, String versiontype,
+String industryCode, String programCode) {
+StringBuffer errMsg = new StringBuffer();
+String curVersiontype = StringUtil.isEmptyWithTrim(versiontype) ? MDPConstants.BASE_VERSIONTYPE
+: versiontype;
+try {
+if (Integer.parseInt(curVersiontype) <= Integer
+.parseInt(oldVersionType)) {
+

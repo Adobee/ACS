@@ -1,0 +1,7 @@
+import org.apache.lucene.index.TermsEnum;
+import org.apache.lucene.util.BytesRef;
+import org.elasticsearch.index.fielddata.plain.AbstractIndexFieldData;
+public BytesRef next() throws IOException {
+BytesRef term = termsEnum.next();
+if (term == null &amp;&amp; this.flushBuffer != 0) {
+

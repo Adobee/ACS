@@ -1,0 +1,9 @@
+private final Map<String, GfsCheckoutConflict> conflicts = new HashMap<>();
+private final boolean failsOnConflict;
+
+public GfsCheckoutChangesCollector(boolean failsOnConflict) {
+this.failsOnConflict = failsOnConflict;
+}
+
+public void addConflict(GfsCheckoutConflict conflict) {
+

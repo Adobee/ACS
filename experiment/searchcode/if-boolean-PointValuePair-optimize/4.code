@@ -1,0 +1,10 @@
+* @return PointValuePair
+* @throws InterruptedException
+*/
+public PointValuePair optimize (double [] initialParameters) throws InterruptedException {
+while (true) {
+if (cost < opt.getValue())
+opt = new PointValuePair(parameters, cost);
+
+if (iteration > maxIterations) {
+

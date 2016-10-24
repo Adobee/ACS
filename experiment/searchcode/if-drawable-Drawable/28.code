@@ -1,0 +1,6 @@
+public static void setBackgroundDrawable(View view, Drawable drawable) {
+if(android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.JELLY_BEAN) {
+StateListDrawable stateDrawable = makeStateDrawable(drawable, pressedDrawable, disabledDrawable);
+if (stateDrawable != null) {
+setBackgroundDrawable(view, stateDrawable);
+

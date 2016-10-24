@@ -1,0 +1,8 @@
+double result = Double.MAX_VALUE;
+for (int i = 0; i < sample.length; i++)
+if (result > sample[i])
+public static double getVariance(double[] sample, double mid) {
+double var = 0.0;
+for (int i = 0; i < sample.length; i++)
+var += Math.pow(sample[i] - mid, 2);
+

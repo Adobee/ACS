@@ -1,0 +1,12 @@
+index[universalHash(word)] = word;
+
+}
+
+private int hashCode(String word) {
+
+int hashcode = word.hashCode() % index.length;
+if (hashcode < 0) {
+hashcode = hashcode * -1;
+}
+return hashcode;
+

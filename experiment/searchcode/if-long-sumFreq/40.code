@@ -1,0 +1,8 @@
+protected Task addItem(@NotNull Task i) {
+super.addItem(i);
+long occ = i.occurrence();
+if ((occ < min) || (occ > max)) {
+protected Task removeItem(@NotNull Task removed) {
+if (super.removeItem(removed) == removed) {
+long occ = removed.occurrence();
+

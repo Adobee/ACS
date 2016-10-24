@@ -1,0 +1,17 @@
+public E get() {
+throw new RuntimeException(&quot;Cannot get value from failure&quot;);
+}
+
+
+@Override
+public Try<E> ifFailure(Supplier<Try<E>> supplier) {
+return supplier.get();
+}
+
+
+@Override
+public boolean isFailure() {
+return true;
+}
+}
+

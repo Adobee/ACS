@@ -1,0 +1,13 @@
+package org.emmef.fileformat.riff.wave;
+
+enum FormatType {
+WAVE_FORMAT_PCM(0x0001),
+for (FormatType type : values()) {
+if (type.formatValue == formatValue) {
+return type;
+}
+}
+throw new IllegalArgumentException(&quot;No format type for &quot; + formatValue);
+}
+}
+

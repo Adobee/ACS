@@ -1,0 +1,8 @@
+* (Returns negative long if duration does not exist)
+* @return duration of RetryAfterHeader
+*/
+public long getDuration() {
+RetryAfter retryAfter=(RetryAfter)sipHeader;
+DeltaSeconds ds=retryAfter.getDuration();
+if (ds==null) {
+

@@ -1,0 +1,21 @@
+package rules;
+
+public class MultipleRule extends Rule
+{
+public int multiple;
+
+public MultipleRule(String word, int multiple)
+this.multiple = multiple;
+}
+
+public String apply(int n)
+{
+String result = &quot;&quot;;
+
+if( n % multiple == 0 )
+result = word;
+
+return result;
+}
+}
+

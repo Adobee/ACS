@@ -1,0 +1,9 @@
+public BaseDataShape createMenuShapeByType(String type) {
+BaseDataShape shape = null;
+// ����ͼ
+if (type.equals(ShapeHelper.SERI_ACTIVE)) {
+SeriActiveShape active = new SeriActiveShape();
+active.setH(40);
+shape = active;
+} else if (type.equals(ShapeHelper.SERI_CONSTRAIN)) {
+

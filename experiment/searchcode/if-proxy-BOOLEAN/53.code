@@ -1,0 +1,9 @@
+private static INetworkProxy PROXY = null;
+
+public static boolean isFiddlerRunning() {
+synchronized (ProxyHolder.class) {
+if (PROXY == null)
+return false;
+else
+return PROXY.isProxyRunning();
+

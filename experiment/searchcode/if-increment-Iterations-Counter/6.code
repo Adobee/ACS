@@ -1,0 +1,11 @@
+public static synchronized void increment() {
+long tempValue = counter;
+tempValue = tempValue + 1;
+counter = tempValue;
+tempValue = tempValue - 1;
+counter = tempValue;
+}
+
+public class IncrementThread extends Thread {
+public void run() {
+

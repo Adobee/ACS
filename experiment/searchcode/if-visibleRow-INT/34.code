@@ -1,0 +1,12 @@
+private static final Color SELECTED_BG_COLOR = BindingUI.getColor(BindingUI.BACKGROUND_STATE_MARKER_SELECTED, new Color(200, 200, 255));
+
+protected int visibleRow;
+
+private final JTable table;
+
+public TreeTableCellRenderer(JTable table, TreeModel model) {
+@Override
+public void setRowHeight(int rowHeight) {
+if (rowHeight > 0) {
+super.setRowHeight(rowHeight);
+

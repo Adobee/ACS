@@ -1,0 +1,11 @@
+private Potentiometer shootAngle;
+private static final double absoluteTolerance = 0.01;
+
+public ShooterPivot(int aimingMotorPort, int shooterAnglePort) {
+//		return Math.abs(getPosition() - getSetpoint()) < absoluteTolerance;
+//	}
+
+@Override
+protected double returnPIDInput() {
+double angle = shootAngle.get();
+

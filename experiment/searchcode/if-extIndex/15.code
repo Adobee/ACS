@@ -1,0 +1,7 @@
+if (path.contains(&quot;.&quot;) &amp;&amp; includesExtension) {
+int extIndex = path.lastIndexOf(&quot;.&quot;);
+if (!stripExtension &amp;&amp; ext==null) {
+ext=path.substring(extIndex+1,path.length());
+ext = ext.replaceAll(&quot;[-_ \\.\\\\]+&quot;, &quot;-&quot;);
+if (forceLower) ext=ext.toLowerCase();
+

@@ -1,0 +1,7 @@
+public static DateTimeField getInstance(DateTimeField dateTimeField, Chronology chronology) {
+if (dateTimeField == null) {
+return null;
+}
+if (dateTimeField instanceof StrictDateTimeField) {
+dateTimeField = ((StrictDateTimeField) dateTimeField).getWrappedField();
+

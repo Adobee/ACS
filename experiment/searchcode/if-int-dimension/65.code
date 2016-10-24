@@ -1,0 +1,10 @@
+public static void registerDimensionWorldInfoHandler(int dimension,
+IExtraDimensionsWorldInfoHandler worldInfo) {
+if (dimension >= 0) {
+public static void removeDimensionWorldInfoHandler(int dimension) {
+if ((dimension >= 0) &amp;&amp; (hasHandler(dimension))) {
+dimensionWorldInfoMap.remove(Integer.valueOf(dimension));
+}
+}
+}
+

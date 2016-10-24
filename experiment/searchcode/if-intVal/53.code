@@ -1,0 +1,10 @@
+// There must be an easier way to do this (right?)
+int intval = buffer[i];
+
+if(intval <= 0)
+intval += 256;
+
+String s = Integer.toHexString(intval);
+
+if(s.length() == 1)
+

@@ -1,0 +1,11 @@
+public class WeakHandler extends Handler {
+private WeakReference<Activity> mActivity;
+
+public WeakHandler(Activity activity) {
+public void handleMessage(Message msg) {
+if(mActivity.get()==null){
+return;
+}
+}
+}
+

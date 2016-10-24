@@ -1,0 +1,11 @@
+public void onMouseDrag(int mouseX, int mouseY){
+if (dragMouseY != Integer.MIN_VALUE){
+offsetDrag += dragMouseY-mouseY;
+offsetDragPeak = offsetDrag;
+}
+}
+}
+
+public void onMouseRelease(int mouseX, int mouseY){
+if (dragMouseY != Integer.MIN_VALUE){
+

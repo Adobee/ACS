@@ -1,0 +1,13 @@
+this.mRange = null;
+}
+
+public Range getRange() {
+if (this.mRange == null) {
+this.mRange = calculateRange();
+protected Range peekRange() {
+return this.mRange;
+}
+
+public boolean isRangeValid() {
+return getRange().isValid();
+

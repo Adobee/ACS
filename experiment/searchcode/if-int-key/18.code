@@ -1,0 +1,19 @@
+
+
+class BST{
+private Node root;
+class Node{
+int key;
+Node left;
+Node right;
+
+Node(int key){
+this.key=key;
+}
+}
+
+
+Node put(int key, Node x){
+if (x==null){
+return Node(key);
+

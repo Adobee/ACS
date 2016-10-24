@@ -1,0 +1,9 @@
+private static boolean initialised = false;
+
+@Before
+public void before() {
+if (!initialised) {
+Runtime.getRuntime().addShutdownHook(new Thread() {
+@Override
+public void run() {
+

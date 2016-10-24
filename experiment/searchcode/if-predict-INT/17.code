@@ -1,0 +1,9 @@
+public PredictDao(Session session) {
+super.session = session;
+}
+
+public Predict loadPredict(int id) {
+return (Predict) session.load(Predict.class, id);
+public int getPredictId(Model model, TestPeriod testPeriod) {
+String strQuery = &quot;from mylib.hibernate.entity.Predict as p &quot;
+

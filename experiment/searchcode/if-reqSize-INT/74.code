@@ -1,0 +1,8 @@
+if (event.getResponse().getHeaders().getHeader(&quot;Content-Length&quot;) == null) {
+return true;
+}
+final int reqSize = Integer.valueOf(event.getResponse().getHeaders()
+.getHeader(&quot;Content-Length&quot;));
+if (reqSize > maxSize) {
+log.info(&quot;Request size too big. Permission denied&quot;);
+

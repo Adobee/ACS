@@ -1,0 +1,12 @@
+public class LogProductAggregator extends NumericalAggregator {
+
+private double logSum = 0;
+
+public LogProductAggregator(AggregationFunction function) {
+super(function);
+}
+
+@Override
+public void count(double value) {
+logSum += Math.log(value);
+

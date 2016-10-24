@@ -1,0 +1,10 @@
+public static boolean isIf(String line) {
+line = line.trim();
+return (line.startsWith(GNUMakefileConstants.CONDITIONAL_IF) &amp;&amp; line.length() > 2 &amp;&amp; Character.isWhitespace(line.charAt(2))) ||
+line.trim().startsWith(GNUMakefileConstants.AT_TERMINAL_ENDIF);
+}
+
+public static boolean isOverrideDefine(String line) {
+line = line.trim();
+if (line.startsWith(GNUMakefileConstants.VARIABLE_OVERRIDE)) {
+

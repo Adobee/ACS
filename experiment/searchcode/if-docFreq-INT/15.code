@@ -1,0 +1,10 @@
+private Long totalFreq;
+
+private SummaryStatistics summaryStatistics;
+
+public TermInfo setDocFreq(int docFreq) {
+public void readFrom(StreamInput in) throws IOException {
+boolean b = in.readBoolean();
+if (b) {
+setDocFreq(in.readInt());
+

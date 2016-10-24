@@ -1,0 +1,8 @@
+GfuiElem elem = GfuiElem_.cast(iptData.Sender());
+int x = iptData.MousePos().X(), y = iptData.MousePos().Y();
+SizeAdp buttonSize = elem.Size();
+elem.Click();
+}
+public Object Invk(GfsCtx ctx, int ikey, String k, GfoMsg m) {
+if		(ctx.Match(k, ExecMouseUp_cmd))		ExecMouseUp(IptEventData.ctx_(ctx, m));
+

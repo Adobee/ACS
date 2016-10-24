@@ -1,0 +1,14 @@
+protected Integer[]  optimizeH(BagImage x) {
+int hp = -1;
+int hn = -1;
+double maxVal = -Double.MAX_VALUE;
+double minVal = Double.MAX_VALUE;
+for(int i=0; i<x.getInstances().size(); i++) {
+double val = valueOf(x,i);
+if(val < minVal) {
+minVal = val;
+hn = i;
+}
+}
+return hn;
+

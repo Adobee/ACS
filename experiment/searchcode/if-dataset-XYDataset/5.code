@@ -1,0 +1,16 @@
+package net.oemig.scta.jfreechart;
+
+import net.oemig.scta.jfreechart.data.SctaDataset;
+
+import org.jfree.chart.labels.XYToolTipGenerator;
+public String generateToolTip(XYDataset dataset, int series, int item) {
+if (dataset instanceof SctaDataset) {
+return ((SctaDataset) dataset).getSessionName(series, item);
+}
+
+return &quot;???&quot;;
+
+}
+
+}
+

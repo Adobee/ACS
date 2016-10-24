@@ -1,0 +1,11 @@
+super(p1, p1.add(p2));
+this.p1 = p1;
+this.p2 = p2;
+}
+
+@Override
+public boolean canPointBeOnLine(Vector point) {
+if (p2.x < 0) {
+if (p2.y < 0) {
+return point.x <= p1.x &amp;&amp; point.y <= p1.y;
+

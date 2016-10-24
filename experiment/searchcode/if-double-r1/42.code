@@ -1,0 +1,12 @@
+public int ranbinom(int n, double p){
+/**
+Knuth Vol 2, p 131
+*/
+int a, b ;
+double x ;
+if (p>=1) return n ;
+if (p<=0) return 0 ;
+r1 = random.randomDouble();
+if (r1 <= p) {
+x = t * Math.pow(r1 / p, s);
+

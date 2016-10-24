@@ -1,0 +1,11 @@
+final static Pattern BIGGER_EQUAL = Pattern.compile(&quot;>=(\\d+)&quot;);
+final static Pattern SMALLER_EQUAL = Pattern.compile(&quot;<=(\\d+)&quot;);
+
+long threshold = -1;
+ThresholdComp comp;
+
+public Threshold(String thresholdStr) {
+Matcher matcher;
+
+if((matcher = DEFAULT.matcher(thresholdStr)).matches() || (matcher = BIGGER.matcher(thresholdStr)).matches()){
+

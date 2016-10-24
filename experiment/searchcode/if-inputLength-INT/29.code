@@ -1,0 +1,8 @@
+public static <T extends Comparable<T>> void sort(T[] input) {
+int inputLength = input.length;
+// the tmp array will contain only T instances copied from input array
+T[] tmp = (T[]) new Comparable[inputLength];
+
+// first loop setting the step size, starting with 1-by-1 merge
+for (int step = 1; step < inputLength; step += step) {
+

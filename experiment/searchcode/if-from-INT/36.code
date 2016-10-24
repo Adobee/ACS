@@ -1,0 +1,13 @@
+System.out.println(Arrays.toString(merge(a, 0, a.length - 1)));
+}
+
+public static int[] merge(int[] a, int from, int to) {
+int mid = from + ((to - from) / 2);
+
+if (to <= from) {
+return a;
+}
+
+merge(a, from, mid);
+merge(a, mid + 1, to);
+

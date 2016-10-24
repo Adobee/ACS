@@ -1,0 +1,11 @@
+public void merge(int A[], int m, int B[], int n){
+if(m<0 || n<0 || A==null || B==null ){
+return;
+}
+
+int idxA=m-1 ;
+int idxB=n-1;
+int idxM=m+n-1;
+while(idxA>=0 &amp;&amp; idxB>=0){
+if(A[idxA]<=B[idxB]){
+

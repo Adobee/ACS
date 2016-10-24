@@ -1,0 +1,7 @@
+int numberOfIndices = clusterState.routingTable().indicesRouting().size();
+if (numberOfIndices > 0) {
+List<String> randomIndices = randomSubsetOf(randomInt(numberOfIndices - 1), clusterState.routingTable().indicesRouting().keys().toArray(String.class));
+int globalBlocksCount = clusterState.blocks().global().size();
+if (globalBlocksCount > 0) {
+List<ClusterBlock> blocks = randomSubsetOf(randomInt(globalBlocksCount - 1), clusterState.blocks().global().toArray(new ClusterBlock[globalBlocksCount]));
+

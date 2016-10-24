@@ -1,0 +1,7 @@
+long diffMin = 0;
+if (diffDay > 0) { // 大于1天
+long hour = time - diffDay * sDayms; // 多少个小时的毫秒
+diffHour = hour / sHourms;
+if (diffHour > 0) { // 大于一个小时
+long m = hour - diffHour * sHourms; // 多少分钟的毫秒
+

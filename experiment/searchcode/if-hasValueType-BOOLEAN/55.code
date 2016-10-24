@@ -1,0 +1,6 @@
+if (!validate_NoCircularContainment(oqlQuery, diagnostics, context)) return false;
+boolean result = validate_EveryMultiplicityConforms(oqlQuery, diagnostics, context);
+if (result || diagnostics != null) result &amp;= validate_EveryDataValueConforms(oqlQuery, diagnostics, context);
+if (result || diagnostics != null) result &amp;= validateOqlQuery_ConditionMustBeBoolean(oqlQuery, diagnostics, context);
+if (result || diagnostics != null) result &amp;= validateOqlQuery_WhereClauseMustBeSideEffectFree(oqlQuery, diagnostics, context);
+

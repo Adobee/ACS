@@ -1,0 +1,9 @@
+package org.twd2.game.HelloParticle.Math;
+
+
+public class Equation2Val {
+
+public double A1,B1,C1,A2,B2,C2;
+
+public Equation2Val(double A1, double B1, double C1, double A2, double B2, double C2) {
+

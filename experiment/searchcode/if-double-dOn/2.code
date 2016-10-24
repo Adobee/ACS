@@ -1,0 +1,15 @@
+{task.res=&quot; X1 =&quot; + task.list.get(0) + &quot;     ,       X2 = &quot;+task.list.get(1)  ;}
+else
+{task.res=&quot;don&#39;t have any solution&quot;;}
+return task;
+}
+public static List <Double> calcresult(double a ,double b ,double c) {
+double d = 0;
+double bb =b*b;
+d= bb -(4*a*c);
+if(d==0)
+{double x = -(b/(2*a));
+t.add(x);
+}
+else if(d > 0)
+

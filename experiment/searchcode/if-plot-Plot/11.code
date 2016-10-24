@@ -1,0 +1,12 @@
+import com.google.gson.annotations.Expose;
+
+import java.sql.Timestamp;
+
+public class SensorPlotDataset {
+@Expose
+public long PlotX;
+public Timestamp getPlotX() { // TODO check if timestamp can be changed to date
+return new Timestamp(PlotX);
+}
+}
+

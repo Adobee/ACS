@@ -1,0 +1,8 @@
+import passambler.exception.ParserException;
+
+public class BooleanValue extends Value {
+public BooleanValue(Boolean value) {
+public Value onOperator(Value value, Token operatorToken) throws ParserException {
+if (value instanceof BooleanValue) {
+switch (operatorToken.getType()) {
+

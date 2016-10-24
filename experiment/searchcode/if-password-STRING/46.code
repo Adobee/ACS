@@ -1,0 +1,6 @@
+public class PasswordEncoderGenerator {
+
+public String encodePassword(String password) {
+BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+String hashedPassword = passwordEncoder.encode(password);
+

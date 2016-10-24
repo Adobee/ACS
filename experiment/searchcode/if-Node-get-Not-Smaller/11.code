@@ -1,0 +1,9 @@
+parent = node;
+cmp = _comparator.compare(key, node.getKey());
+if (cmp == 0) {
+* @return The predecessor; or <code>null</code>.
+*/
+public Node predecessor() {
+if (getSmaller() != null) {
+return getSmaller().maximum();
+

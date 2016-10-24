@@ -1,0 +1,8 @@
+private String axisYName = &quot;Size used in GB&quot;;
+double fixedAutoRange;
+private String name = null;
+* @param e  the action event.
+*/
+public void addOrUpdateData(String metric, long date, double value) {
+if(metric.equalsIgnoreCase(MetricNames.DISK_USED)) seriesUsed.addOrUpdate(new Millisecond(new Date(date)), value);
+

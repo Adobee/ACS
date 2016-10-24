@@ -1,0 +1,12 @@
+package org.seasar.cms.ymir.response.constructor.impl;
+
+import org.seasar.cms.ymir.Response;
+Response response = (Response) returnValue;
+if (response == null) {
+response = VoidResponse.INSTANCE;
+}
+
+return response;
+}
+}
+

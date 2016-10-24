@@ -1,0 +1,8 @@
+Matcher matcher = pattern.matcher(str);
+if (matcher.find()) {
+int groupCount = matcher.groupCount();
+// 正则表达式的group索引从1开始
+for (int i = 1; i < groupCount + 1; i++) {
+String group = matcher.group(i);
+System.out.println(&quot;group index：&quot; + i + &quot;    group：&quot; + group);
+

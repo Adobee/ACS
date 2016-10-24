@@ -1,0 +1,13 @@
+public class RuleRerollSticks extends Rule {
+
+public boolean checkRule(Model model){
+boolean res = false;
+if(model instanceof HyeneModel){
+res = checkRule(hmod);
+}
+return res;
+}
+
+public boolean checkRule(HyeneModel model){
+if(model.getSticksResult() != 2)
+

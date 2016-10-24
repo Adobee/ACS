@@ -1,0 +1,11 @@
+querySource = in.readBytesReference();
+
+int typesSize = in.readVInt();
+if (typesSize > 0) {
+types = new String[typesSize];
+types[i] = in.readString();
+}
+}
+int aliasesSize = in.readVInt();
+if (aliasesSize > 0) {
+

@@ -1,0 +1,13 @@
+* Uniquely identifies a virtual shard
+*
+*/
+public class ShardId {
+
+private static final String SPLIT = &quot;_&quot;;
+
+private final int shardId;
+public static ShardId findByShardId(List<ShardId> shardIds, int id){
+for(ShardId shardId : shardIds) {
+if (shardId.getId() == id){
+return shardId;
+

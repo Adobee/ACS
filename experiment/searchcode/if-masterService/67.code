@@ -1,0 +1,10 @@
+SystemContext.setPageOffset(0);
+Pager<Createmaster> mp = masterService.find();
+
+model.addAttribute(&quot;pager&quot;, mp);
+return &quot;admin/master/list&quot;;
+Pager<Createmaster> mp = masterService.find();
+mp.setPageoffSize(page);
+System.out.println(&quot;page=&quot;+page);
+model.addAttribute(&quot;pager&quot;, mp);
+

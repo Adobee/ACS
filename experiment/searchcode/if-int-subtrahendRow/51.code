@@ -1,0 +1,9 @@
+// initialize the objective function rows
+if (getNumObjectiveFunctions() == 2) {
+matrix.setEntry(0, 0, -1);
+}
+int zIndex = (getNumObjectiveFunctions() == 1) ? 0 : 1;
+boolean isOptimal() {
+for (int i = getNumObjectiveFunctions(); i < getWidth() - 1; i++) {
+if (MathUtils.compareTo(tableau.getEntry(0, i), 0, epsilon) < 0) {
+

@@ -1,0 +1,13 @@
+public interface CouldBeBlank {
+public boolean isBlank();
+}
+
+public static boolean isNull(Object o) {
+return null == o;
+return !isNull(o);
+}
+
+public static boolean isBlank(Object o) {
+if ( isNull(o) )
+return true;
+

@@ -1,0 +1,7 @@
+public synchronized static SerializerFactory getInstance()
+{
+if (factory_instance == null)
+{
+factory_instance = new SerializerFactory();
+* Gets a serializer from registered serializers to convert to and from Java object and JSON string. If there is no appropriate serializer, then return default ObjectSerializer.
+

@@ -1,0 +1,14 @@
+import org.neuroph.core.exceptions.NeurophException;
+
+
+public class DataSet_handler {
+private DataSet ds;
+private double[] ga_old;
+private double[] ga_new;
+this.ds.saveAsTxt(fn, &quot;;&quot;);
+util.File_Handler.removeFirstLine(fn);
+}
+
+public void add_ga(double[] ga) {
+if(this.ga_old==null){
+

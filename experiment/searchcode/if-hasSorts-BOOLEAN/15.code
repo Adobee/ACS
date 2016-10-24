@@ -1,0 +1,11 @@
+protected Search getSearch(SearchCriteria searchCriteria) {
+Search search = null;
+if (searchCriteria != null) {
+search = new Search();
+search.setCountQuery(&quot;select count(*) &quot; + buffer.toString());
+
+if (searchCriteria.hasSorts()) {
+buffer.append(&quot;order by &quot;);
+int index = 0;
+for (final Map.Entry<String, SortOrder> entry : searchCriteria.getSorts().entrySet()) {
+

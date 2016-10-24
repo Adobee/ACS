@@ -1,0 +1,6 @@
+public void onResponse(okhttp3.Call rawCall, okhttp3.Response rawResponse) {
+if (canceled) {
+EasyResponse<DownLoadResult> easyResponse;
+if (rawResponse.isSuccessful()) {
+boolean writtenToDisk = Utils.writeResponseBodyToDisk(rawResponse.body(), file, OkHttpDownLoadEasyCall.this);
+

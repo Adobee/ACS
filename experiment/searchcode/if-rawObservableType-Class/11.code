@@ -1,0 +1,9 @@
+Type observableType = Utils.getSingleParameterUpperBound((ParameterizedType) returnType);
+Class<?> rawObservableType = Utils.getRawType(observableType);
+if (rawObservableType == Response.class) {
+Type responseType = Utils.getSingleParameterUpperBound((ParameterizedType) observableType);
+return new ResponseCallAdapter<>(responseType);
+}
+
+if (rawObservableType == Result.class) {
+

@@ -1,0 +1,9 @@
+int leftLevel = A[left], rightLevel = A[right];
+
+while(left < right){
+if(leftLevel < rightLevel){
+if(A[++left] > leftLevel) leftLevel = A[left];
+sum += leftLevel - A[left];
+}else{
+if(A[--right] > rightLevel) rightLevel = A[right];
+

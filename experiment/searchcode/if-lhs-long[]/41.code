@@ -1,0 +1,14 @@
+private static final long serialVersionUID = 6212726366672386484L;
+private long m_id;
+private S m_lhs;
+
+public BasicRule() {
+public BasicRule(S lhs, List<S> rhs) {
+m_id = next_id++;
+m_lhs = lhs;
+addAll(rhs);
+}
+
+/**
+* Getter for the {@code long} {@code id} attribute.
+

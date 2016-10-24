@@ -1,0 +1,11 @@
+return (o1 == null &amp;&amp; o2 == null) || o1.equals(o2);
+}
+
+public int nullSafeCompare(ValueObject o1, ValueObject o2) {
+if (o1 == null &amp;&amp; o2 == null) {
+if (o1 != null &amp;&amp; o1.getValue() == null) {
+return -1;
+}
+if (o2 != null &amp;&amp; o2.getValue() == null) {
+return 1;
+

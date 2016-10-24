@@ -1,0 +1,18 @@
+private static class Factory extends ShapeFactory
+{
+protected ShapeIf create()
+{
+return new Line();
+}
+}
+
+static
+{
+ShapeFactory.addFactory( Line.class.getName(), new Factory() );
+}
+
+@Override
+protected boolean needsNormalization() {
+
+return false;
+

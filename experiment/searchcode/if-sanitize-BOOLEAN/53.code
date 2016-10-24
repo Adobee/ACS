@@ -1,0 +1,10 @@
+@Inject private WebSocketServiceExceptionSanitizer webSocketServiceExceptionSanitizer;
+
+private boolean sanitize = true;
+private boolean log = true;
+return invocationContext.proceed();
+}
+catch (Exception e){
+if (sanitize) {
+webSocketServiceExceptionSanitizer.sanitize(e);
+

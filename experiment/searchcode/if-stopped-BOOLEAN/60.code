@@ -1,0 +1,23 @@
+private boolean stopped;
+
+public StopThread(long time) {
+this.time = time;
+}
+
+@Override
+public void run() {
+setStop(true);
+break;
+}
+}
+
+public void setStop(boolean stopped) {
+this.stopped = stopped;
+}
+
+public boolean isStop() {
+return stopped;
+}
+
+}
+

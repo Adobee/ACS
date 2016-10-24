@@ -1,0 +1,11 @@
+boolean goodPredict = expectLabel.equals(predict.label) ;
+if(goodPredict) {
+reporter.incr(&quot;Document&quot;,  &quot;correct&quot;, &quot;all&quot;, 1) ;
+} else {
+reporter.incr(&quot;Document&quot;,  &quot;incorrect&quot;, &quot;all&quot;, 1) ;
+reporter.incr(&quot;Predict Incorrect&quot;, predict.label, &quot;all&quot;, 1) ;
+}
+
+if(goodPredict) reporter.incr(&quot;Good Predict&quot;, &quot;all&quot;, 1) ;
+else            reporter.incr(&quot;Bad  Predict&quot;, &quot;all&quot;, 1) ;
+

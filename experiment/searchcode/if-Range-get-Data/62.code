@@ -1,0 +1,6 @@
+final List<NicHandleRange> nicHandleRanges = getNicHandleRanges(nicHandle.getSpace(), nicHandle.getSuffix());
+nicHandleRanges.add(new NicHandleRange(Range.closed(nicHandle.getIndex(), nicHandle.getIndex())));
+Collections.sort(nicHandleRanges, NICH_HANDLE_RANGE_COMPARATOR);
+
+if (nicHandleRanges.isEmpty() || nicHandleRanges.get(0).range.lowerEndpoint() > 1) {
+

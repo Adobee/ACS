@@ -1,0 +1,6 @@
+@Override
+public boolean isMultipart(javax.servlet.http.HttpServletRequest request) {
+String uri = request.getRequestURI();
+//过滤使用百度UEditor的URI
+if (uri.indexOf(&quot;ueditor/dispatch&quot;) > 0) {
+

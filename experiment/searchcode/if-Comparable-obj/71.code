@@ -1,0 +1,9 @@
+public static Boolean execute(Function function,Map<String,Object> params){
+Object operatedObj = function.getKeyValue();
+if(operatedObj == null || !(operatedObj instanceof Comparable)){
+return false;
+}
+
+try {
+Comparable comp = (Comparable)operatedObj;
+

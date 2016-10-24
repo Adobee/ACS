@@ -1,0 +1,7 @@
+You should have received a copy of the GNU Lesser General Public License
+along with Zeidon JOE.  If not, see <http://www.gnu.org/licenses/>.
+public Object convertExternalValue(Task task, AttributeInstance attributeInstance, AttributeDef attributeDef, String contextName, Object externalValue)
+{
+if ( externalValue instanceof CharSequence )
+return new Blob( Base64.decodeBase64( externalValue.toString() ) );
+

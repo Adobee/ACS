@@ -1,0 +1,10 @@
+double stepG = (double) (endRGB[1] - startRGB[1]) / (double) getHeight();
+double stepB = (double) (endRGB[2] - startRGB[2]) / (double) getHeight();
+tmp[2] = (int) ((double) startRGB[2] + i * stepB);
+results[i] = getColor(tmp);
+}
+return results;
+}
+
+public int getColor(int[] rgb) {
+

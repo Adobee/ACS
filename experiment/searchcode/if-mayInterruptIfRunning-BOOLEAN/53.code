@@ -1,0 +1,16 @@
+protected AsyncTask<Object, Object, Integer> mTask;
+protected boolean mRunning;
+
+public BaseAsyncLoader() {
+mRunning = false;
+public void stopTask(boolean mayInterruptIfRunning) {
+if(null == mTask) return;
+if(mRunning) {
+mTask.cancel(mayInterruptIfRunning);
+
+mRunning = false;
+}
+mTask = null;
+}
+}
+

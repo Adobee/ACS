@@ -1,0 +1,11 @@
+public int read() {
+if (pos == count) {
+return -1;
+} else {
+int rv = (buffer.charAt(pos) &amp; 0xff);
+pos++;
+int toRead = Math.min(length, available());
+if (toRead > 0) {
+for(int i = 0; i < toRead; i++) {
+bytes[offset + i] = (byte) (buffer.charAt(pos + i) &amp; 0xff);
+

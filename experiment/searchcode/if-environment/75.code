@@ -1,0 +1,14 @@
+import de.podolak.agenten.environment.Environment;
+
+/**
+*
+* @version $version$
+* @author $author$
+*/
+public class DirtSensor extends AbstractSensor {
+public byte getMeasurement() {
+byte value = 0;
+
+if (environment != null) {
+value = environment.measure(agent, SensorType.DIRT);
+

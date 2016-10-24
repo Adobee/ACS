@@ -1,0 +1,11 @@
+synchronized (immediateSearch) {
+try {
+// wait if empty
+if (immediateSearch.size() == 0)
+immediateSearch.wait();
+SearchInstance[] sis;
+synchronized (immediateSearch) {
+if (immediateSearch.size() == 0)
+return;
+sis = new SearchInstance[immediateSearch.size()];
+

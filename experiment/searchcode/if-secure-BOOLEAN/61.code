@@ -1,0 +1,11 @@
+package com.xgame.util;
+
+import java.security.SecureRandom;
+import java.util.Random;
+
+public class RandomUtil {
+SecureRandom random = secureRandomThreadLocal.get();
+if (random == null) {
+random = new SecureRandom();
+secureRandomThreadLocal.set(random);
+

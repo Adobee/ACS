@@ -1,0 +1,11 @@
+@Getter private int clicks;
+
+public Adder() {
+super(new TypeData(Integer.class, Integer.class));
+return new Adder(this);
+}
+
+public Adder withClicks(int newClicks) {
+if (isMutable()) {
+this.clicks = newClicks;
+

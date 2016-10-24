@@ -1,0 +1,13 @@
+@Value( &quot;${app.productDiscountSilver:0.1}&quot; ) private double productDiscountSilver;
+
+public double getServiceDiscountRate(MemberType memberType){
+if(memberType == null)
+return serviceDiscountSilver;
+default :
+return 0;
+}
+}
+
+public double getProductDiscountRate(MemberType memberType){
+if(memberType == null)
+

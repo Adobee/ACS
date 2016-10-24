@@ -1,0 +1,6 @@
+settings.setCompress(compressValue);
+
+final ToggleButton obfuscate = (ToggleButton) findViewById(R.id.obfuscate);
+if (!getPreferences(MODE_MULTI_PROCESS).contains(OBFUSCATE)) {
+getPreferences(MODE_MULTI_PROCESS).edit().putBoolean(OBFUSCATE, false).commit();
+

@@ -1,0 +1,7 @@
+void read(ByteBuffer buf) {
+if (msgSize < 0) {
+int remaining = buf.remaining();
+// If there are more bytes in buffer.
+if (remaining > 0) {
+int missing = msgSize - msgBytes.getSize();
+

@@ -1,0 +1,5 @@
+private Map<String, Mapping> internalPerformTranslogRecovery(boolean skipTranslogRecovery) throws ElasticsearchException {
+if (state != IndexShardState.RECOVERING) {
+// also check here, before we apply the translog
+if (Booleans.parseBoolean(checkIndexOnStartup, false)) {
+

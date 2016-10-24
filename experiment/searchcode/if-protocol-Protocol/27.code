@@ -1,0 +1,17 @@
+import jzombies.Request;
+
+/**
+*This class will check if a request uses certain protocol.
+* @author User-Zero
+*
+*/
+public class ProtocolCheck extends SubCondition {
+public ProtocolCheck(Protocol protocol) {
+this.protocol = protocol;
+}
+
+
+@Override
+public boolean check(Request r) {
+if(protocol.getStatusCode() == r.getProtocol().getStatusCode()){
+

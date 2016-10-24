@@ -1,0 +1,11 @@
+* An XOR gate. There are two modes of operation for this gate: strict and non-strict.
+* While in strict mode, if exactly one input is set to true, the output will be true,
+public void setStrict(boolean strict) {
+this.strict = strict;
+}
+
+@Override
+public void tick() {
+if (strict) {
+boolean temp = false;
+

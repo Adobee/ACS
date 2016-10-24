@@ -1,0 +1,10 @@
+public MonitoringDB(String callerName)
+{
+m_callerName = callerName;
+}
+
+public void queryTime(long timeStart, long timeStop, String query, int maxTime)
+{
+long qTime = timeStop - timeStart;
+if ((maxTime == 0 &amp;&amp; qTime > 10)|| (maxTime != 0 &amp;&amp; qTime > maxTime))
+

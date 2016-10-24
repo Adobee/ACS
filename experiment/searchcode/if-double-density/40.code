@@ -1,0 +1,9 @@
+public static int getDensity( Block block )
+{
+if( block instanceof IBlockDensity )
+return ( (IBlockDensity)block ).getDensity();
+if( block instanceof BlockSlab &amp;&amp; !( (BlockSlab)block ).isDouble() )
+density = (int)Math.round( density * 0.5 );
+
+if( block instanceof BlockStairs )
+

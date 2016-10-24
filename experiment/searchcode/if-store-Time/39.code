@@ -1,0 +1,11 @@
+Date now = Calendar.getInstance().getTime();
+if (result.hasErrors()) {
+return &quot;stores/add_store&quot;;
+}
+Store storeToAdd = new Store();
+public String updateStore(@Validated @ModelAttribute(&quot;storeForm&quot;) StoreForm storeForm,BindingResult result, Model model) {
+if (result.hasErrors()) {
+return &quot;stores/update_store&quot;;
+}
+Store storeToUpdate = storeService.findOne(storeForm.getIdStore());
+

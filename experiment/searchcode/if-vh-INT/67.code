@@ -1,0 +1,8 @@
+public View getView(int p, View v, ViewGroup arg2) {
+VH vh = null;
+if (v == null) {
+v = inflater.inflate(R.layout.adapter_appdownload_grid, null);
+private void bindData(VH vh, final int p) {
+
+vh.name_tv.setText(PublicTools.doWithNullData(lists.get(p).getName()));
+

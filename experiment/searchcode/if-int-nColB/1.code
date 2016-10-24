@@ -1,0 +1,8 @@
+final int m = lTData.length;
+if (b.length != m) {
+throw new DimensionMismatchException(b.length, m);
+} catch (ClassCastException cce) {
+
+final int m = lTData.length;
+if (b.getDimension() != m) {
+

@@ -1,0 +1,10 @@
+import static org.seasar.doma.internal.util.AssertionUtil.*;
+
+import java.lang.reflect.GenericDeclaration;
+import java.lang.reflect.ParameterizedType;
+Type arg = inferrer.infer();
+if (arg instanceof Class) {
+return (Class<?>) arg;
+}
+return null;
+

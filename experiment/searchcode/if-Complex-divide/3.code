@@ -1,0 +1,8 @@
+c.setComplex((this.real * other.complex) + (this.complex * other.real));
+return c;
+}
+
+public Complex divide(Complex other)   {
+c.setComplex(((this.complex * other.real) - (this.real * other.complex)) / ((Math.pow(other.real, 2) + Math.pow(other.complex, 2))));
+if(Double.isNaN(c.getReal()) || Double.isNaN(c.getComplex()))   {
+

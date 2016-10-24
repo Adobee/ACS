@@ -1,0 +1,10 @@
+new Setting<>(&quot;action.auto_create_index&quot;, &quot;true&quot;, AutoCreate::new, Property.NodeScope);
+
+private final boolean dynamicMappingDisabled;
+private final IndexNameExpressionResolver resolver;
+if (autoCreate.autoCreateIndex == false) {
+return false;
+}
+if (dynamicMappingDisabled) {
+return false;
+

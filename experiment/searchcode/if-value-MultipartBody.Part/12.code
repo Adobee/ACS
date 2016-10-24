@@ -1,0 +1,8 @@
+MultipartBody.Builder builder = new MultipartBody.Builder();
+if (param != null &amp;&amp; param.size() > 0) {
+for (Map.Entry<String, String> entry : param.entrySet()) {
+builder.addFormDataPart(entry.getKey(), entry.getValue());
+}
+}
+if (files != null &amp;&amp; files.size() > 0) {
+

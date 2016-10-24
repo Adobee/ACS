@@ -1,0 +1,9 @@
+String result;
+
+double Gb = bytes / (double) ONE_GIGABYTE;
+double Mb = bytes / (double) ONE_MEGABYTE;
+// Size in Giga-bytes.
+if (Gb >= 1)
+{
+result = String.format(&quot;%.2f GB&quot;, Gb);
+

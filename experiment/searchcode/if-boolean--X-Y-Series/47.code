@@ -1,0 +1,10 @@
+private static final String CLASS_NAME = &quot;availableSeries&quot;;
+private final boolean exists, inProfile;
+
+private AvailableSeries(Series s, boolean exists, boolean inProfile) {
+this.exists = exists;
+this.inProfile = inProfile;
+
+if (s instanceof BasicSeries) {
+BasicSeries t = ((BasicSeries)s);
+

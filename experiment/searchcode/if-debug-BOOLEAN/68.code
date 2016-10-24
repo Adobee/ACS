@@ -1,0 +1,11 @@
+private Logger logger = Logger.getLogger(&quot;PENS&quot;);
+private boolean isDebug = true;
+
+public Debug(boolean isDebug){
+this.isDebug = isDebug;
+}
+
+public void debug(String message){
+if(isDebug){
+logger.debug(message);
+

@@ -1,0 +1,12 @@
+MONTHLY(&quot;monthly&quot;), YEARLY(&quot;yearly&quot;);
+
+private String url;
+
+private PeriodType(String url) {
+this.url = url;
+}
+
+public static PeriodType getPeriodType(String url) {
+for (PeriodType periodType : PeriodType.values()) {
+if (periodType.url.equals(url)) {
+

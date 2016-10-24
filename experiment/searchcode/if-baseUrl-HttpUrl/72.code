@@ -1,0 +1,9 @@
+import okhttp3.HttpUrl;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+public static void findWeather(String location, Callback callback) {
+String ApiKey = Constants.ApiKey;
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.baseUrl).newBuilder();
+

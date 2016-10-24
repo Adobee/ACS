@@ -1,0 +1,14 @@
+public void check(final boolean isOK, final String msg, final Object...msgArgs) throws E
+{
+if(! isOK)
+{
+exceptionFactory.throwError(String.format(msg, msgArgs));
+}
+}
+
+public void check(final boolean isOK) throws E
+{
+if(! isOK)
+{
+exceptionFactory.throwError();
+

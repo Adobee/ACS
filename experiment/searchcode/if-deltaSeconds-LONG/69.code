@@ -1,0 +1,8 @@
+// convert from nano seconds into seconds
+if (lastUpdateTime > 0)
+deltaSeconds = (time - lastUpdateTime) / 1000000000.0;
+public void render(Graphics g) {
+if (deltaSeconds > 0) {
+// calculate the frames per second (as an integer)
+int fps = (int) (1.0 / deltaSeconds);
+

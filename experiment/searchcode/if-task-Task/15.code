@@ -1,0 +1,15 @@
+for (Task t : task.getChildTasks())
+{
+task = t;
+if (AtomicTask.class.getName().equals(task.getClass().getName()))
+task = null;
+
+if (!queue.isEmpty())
+{
+task = queue.poll();
+}
+}
+
+}
+}
+

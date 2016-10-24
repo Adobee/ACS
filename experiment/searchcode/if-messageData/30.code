@@ -1,0 +1,9 @@
+break;
+NBTTagCompound messageData = message.getNBTValue();
+if (message.key.equals(&quot;registerOre&quot;)) {
+if (!messageData.getString(&quot;oreName&quot;).equals(&quot;&quot;) &amp;&amp; !Ores.manager.isOreRegistered(messageData.getString(&quot;oreName&quot;))) {
+Ores.manager.registerOre(messageData.getString(&quot;oreName&quot;), GameRegistry.findBlock(message.getSender(), messageData.getString(&quot;oreName&quot;)));
+}
+}
+else if (message.key.equals(&quot;registerGenerator&quot;)) {
+

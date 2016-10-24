@@ -1,0 +1,12 @@
+public static boolean TryExecute(Runnable expression, long timeoutMs) throws InterruptedException{
+Thread t = new Thread(expression);
+t.start();
+
+t.join(timeoutMs);
+if(t.isAlive()){
+t.interrupt();
+return false;
+}
+
+return true;
+

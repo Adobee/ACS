@@ -1,0 +1,11 @@
+public SelectionSorter(int[] anArray){
+a=anArray;
+}
+public void sort(){
+for(int i=0;i<a.length-1;i++){
+int minPos=minimumPosition(i);
+for(int i=from+1;i<a.length;i++)
+if(a[i]<a[minpos])minpos=i;
+return minpos;
+}//find smallest element in array
+

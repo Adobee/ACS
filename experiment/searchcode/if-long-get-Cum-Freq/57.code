@@ -1,0 +1,8 @@
+Long count = freqTable.get(obj);
+if (count == null) {
+freqTable.put(obj, Long.valueOf(1));
+public double getPct(Comparable<?> v) {
+final long sumFreq = getSumFreq();
+if (sumFreq == 0) {
+return Double.NaN;
+

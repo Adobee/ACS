@@ -1,0 +1,7 @@
+float floatValue = randomFloat();
+String json = jsonBuilder().startObject()
+.field(Fuzziness.X_FIELD_NAME, floatValue)
+assertThat(parser.nextToken(), anyOf(equalTo(XContentParser.Token.VALUE_NUMBER), equalTo(XContentParser.Token.VALUE_STRING)));
+Fuzziness parse = Fuzziness.parse(parser);
+if (value.intValue() >= 1) {
+

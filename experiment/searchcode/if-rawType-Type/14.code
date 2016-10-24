@@ -1,0 +1,10 @@
+public final class SynteticParameterizedType implements ParameterizedType {
+private final Type owner;
+private final Type rawType;
+private final Type[] arguments;
+public SynteticParameterizedType(Type owner, Type rawType, Type[] arguments) {
+if (rawType == null) {
+throw new IllegalArgumentException(&quot;rawType&quot;);
+}
+if (arguments == null) {
+

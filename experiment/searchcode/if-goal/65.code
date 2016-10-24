@@ -1,0 +1,9 @@
+package org.easy.scrum.controller.goal;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+return getGoalModel(facesContext).getElements();
+}
+private GoalModel getGoalModel(FacesContext facesContext) {
+if (goalModel == null) goalModel = (GoalModel)getBeanFromJsfContex(facesContext, &quot;goalModel&quot;);
+

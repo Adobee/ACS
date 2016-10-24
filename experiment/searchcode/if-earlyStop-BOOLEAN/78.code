@@ -1,0 +1,10 @@
+private volatile transient IAtomicReference<Boolean> earlyStop;
+
+private volatile transient IMap<String,Serializable> references;
+private volatile transient IAtomicReference<Boolean> done;
+String startApi = System.getProperty(&quot;startapi&quot;,&quot;false&quot;);
+Boolean b = Boolean.parseBoolean(startApi);
+if(!b)
+return;
+try {
+

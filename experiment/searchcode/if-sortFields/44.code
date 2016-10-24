@@ -1,0 +1,10 @@
+private int[] reverseMul;
+private FieldComparator[] comparators;
+private SortField[] sortFields;
+private int mergeMul;
+public HydraSortScoreDocPriorityQueue(int maxSize,SortField[] sortFields,boolean merge){
+initialize(maxSize);
+this.mergeMul = merge ? -1 : 1;
+this.sortFields = sortFields;
+if(this.sortFields!=null){
+

@@ -1,0 +1,11 @@
+private LinkedList<Conference> conferences;
+private LinkedList<Conference> finalizedConferences;
+private boolean listEmpty;
+
+public ConferenceList() {
+finalizedConferences = ConferenceDAO.getAllWhere(&quot;schedule_finalized=1&quot;);
+}
+
+public boolean isListEmpty() {
+if (conferences == null) {
+

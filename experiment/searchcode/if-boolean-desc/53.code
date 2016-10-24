@@ -1,0 +1,12 @@
+public void copyDesc(ILocalizedDesc desc) {
+if (!(desc instanceof DictTermDesc)) {
+throw new IllegalArgumentException(&quot;Invalid desc class &quot; + desc);
+this.value = ((DictTermDesc)desc).getValue();
+}
+
+/**
+* {@inheritDoc}
+*/
+@Override
+public boolean descDefined() {
+

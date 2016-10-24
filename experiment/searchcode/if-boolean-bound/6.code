@@ -1,0 +1,11 @@
+class Frame{
+
+boolean mpu;
+public int upperBound;
+public int lowerBound;
+
+public Frame(int index, boolean isMpu, int upBound, int lrBound, int levels){
+if(!isMpu){
+
+upperBound =  upBound + index*((lrBound-upBound)/levels);
+

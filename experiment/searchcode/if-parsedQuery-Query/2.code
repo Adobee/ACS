@@ -1,0 +1,6 @@
+public String parse(final String query) {
+String parsedQuery;
+for (QueryInspector parser : this.inspectors) {
+parsedQuery = parser.inspect(query);
+if (!query.equals(parsedQuery)) {
+

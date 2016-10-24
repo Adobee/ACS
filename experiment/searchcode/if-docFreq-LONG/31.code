@@ -1,0 +1,14 @@
+public class TweakSimilarity extends DefaultSimilarity implements Serializable {
+
+/**
+*
+*/
+private static final long serialVersionUID = 1L;
+
+public TweakSimilarity(){}
+
+public float idf(long docFreq, long numDocs) {
+
+//Default logarithmic
+return (float)(Math.log(numDocs/(double)(docFreq+1)) + 1.0);
+

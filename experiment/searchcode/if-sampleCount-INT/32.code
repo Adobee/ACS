@@ -1,0 +1,7 @@
+public ReservoirSampler(Class<T> clazz, int sampleCount){
+@SuppressWarnings(&quot;unchecked&quot;)
+final T[] array = (T[]) Array.newInstance(clazz, sampleCount);
+int randomInt = getRandomNumber(currentIndex);
+if (randomInt < sampleCount){
+reservoirArray[randomInt] = item;
+

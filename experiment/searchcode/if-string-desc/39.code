@@ -1,0 +1,10 @@
+public static void parse(List<Message> mList, StormSync plugin)
+{
+String desc = &quot;&quot;;
+for(Message message:mList)
+{
+if(message.isCurrent())
+desc = message.getDesc();
+}
+if(desc.contains(&quot;thunder&quot;)||desc.contains(&quot;lightning&quot;)||desc.contains(&quot;storm&quot;)||desc.contains(&quot;Thunder&quot;)||desc.contains(&quot;Lightning&quot;)||desc.contains(&quot;Storm&quot;))
+

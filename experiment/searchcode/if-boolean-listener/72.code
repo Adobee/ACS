@@ -1,0 +1,14 @@
+public void transactionCompletion(boolean successful) {
+if ( listenerList == null ) {
+return;
+}
+
+for ( SessionEventListener listener : listenerList ) {
+listener.cacheGetStart();
+}
+}
+
+@Override
+public void cacheGetEnd(boolean hit) {
+if ( listenerList == null ) {
+

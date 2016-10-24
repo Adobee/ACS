@@ -1,0 +1,10 @@
+public static final boolean DEBUG = true;
+
+public static void write(String s) {
+if (!DEBUG) return;
+Log.d(&quot;DEBUG&quot;, &quot;--- &quot; + s + &quot; ----&quot;);
+}
+
+public static void write(Object o) {
+write(o == null ? &quot;null&quot; : o.toString());
+

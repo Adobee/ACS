@@ -1,0 +1,7 @@
+public void checkServiceOffered (PublicProfile publicProfile){
+
+boolean anyOffered = publicProfile.isMaintenanceOffered();
+anyOffered = anyOffered ||  publicProfile.isWaterFeaturesOffered();
+if(!anyOffered){
+errors.add(&quot;you must select some services for your profile to be returned in search results&quot;);
+

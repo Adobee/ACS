@@ -1,0 +1,14 @@
+String result = &quot;&quot;; int start=0,end=0;
+boolean[][] f = new boolean[s.length()][s.length()];
+for(int j=0; j<s.length(); j++){
+f[i][j] = (s.charAt(i)==s.charAt(j))&amp;&amp;(j-i<2 || f[i+1][j-1]);
+if(f[i][j] &amp;&amp; j-i+1 > end-start)
+{
+start = i; end = j+1;
+}
+}
+}
+return s.substring(start, end);
+}
+}
+

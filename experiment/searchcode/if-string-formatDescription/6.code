@@ -1,0 +1,12 @@
+private boolean cancel = false;
+
+@Override
+public FormatDescription identify(File file)
+{
+FileInputStream fileInputStream;
+String magicSignature = new String(magicSignatureBytes);
+
+if (magicSignature.equals(&quot;ANDROID!&quot;))
+{
+FormatDescription formatDescription = new FormatDescription();
+

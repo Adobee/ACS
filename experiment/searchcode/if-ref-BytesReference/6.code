@@ -1,0 +1,7 @@
+int length = randomIntBetween(10, PAGE_SIZE * randomIntBetween(2, 8));
+BytesReference pbr = newBytesReference(length);
+BytesRefIterator iterator = pbr.iterator();
+public static int getNumPages(BytesReference ref) throws IOException {
+int num = 0;
+if (ref.length() > 0) {
+

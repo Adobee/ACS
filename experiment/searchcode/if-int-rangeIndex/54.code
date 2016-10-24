@@ -1,0 +1,12 @@
+private RandomAccessFile fileHandle;
+private byte[] multiPartBlock;
+List<Pair<Long, Long>> ranges;
+
+private int rangeIndex = 0;
+public int available()
+{
+if (rangeIndex > ranges.size())
+return 0;
+
+if (rangeIndex == ranges.size())
+

@@ -1,0 +1,6 @@
+int BlockRow, BlockColumn;						// ブロックの行列数
+int Block[ ][ ] = new int[20][30];				// ブロックの確認用配列
+int BallCheckX[ ] = new int[8];					// ボールチェックポイント
+BlockRow = Integer.parseInt(getParameter(&quot;BlockRow&quot;));		// ブロックの行数
+BlockColumn = Integer.parseInt(getParameter(&quot;BlockColumn&quot;));// ブロックの列数
+

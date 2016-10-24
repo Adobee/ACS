@@ -1,0 +1,12 @@
+package patternDesc.values;
+
+public enum Method {
+INTERVAL(1),
+TABATA(2),
+EMOM(3),
+AMRAP(4),
+public Method getByCode(int methodCode) {
+Method ret = null;
+for(Method met : Method.values()) {
+if(met.getMethodCode() == methodCode) {
+

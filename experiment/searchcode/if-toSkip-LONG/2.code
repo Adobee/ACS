@@ -1,0 +1,14 @@
+toSkip -= origin.skip(toSkip); // may throw
+
+return n;
+}
+
+@Override
+public Async<ByteBuffer> read()
+{
+if(toSkip==0) // fast path
+long r = (long) bb.remaining();
+if (r <= toSkip) // discard entire bb
+{
+toSkip -= r;
+

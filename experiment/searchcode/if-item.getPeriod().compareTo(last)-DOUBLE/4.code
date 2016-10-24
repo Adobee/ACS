@@ -1,0 +1,7 @@
+final List<TimeStampedDataItem> duplicates = findRegisteredDuplicatesFor(existing);
+myTimeSeries.delete(existing.getPeriod());
+if (!duplicates.isEmpty()) {
+final TimeStampedDataItem luckyDomainItem = duplicates.get(0);
+final TimeSeriesDataItem lastChartItem = myTimeSeries.getDataItem(seriesSize - 1);
+if (lastChartItem.compareTo(chartItem) < 0) {
+

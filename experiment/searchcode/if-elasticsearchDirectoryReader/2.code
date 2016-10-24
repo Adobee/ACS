@@ -1,0 +1,6 @@
+public static void addReaderCloseListener(DirectoryReader reader, IndexReader.ReaderClosedListener listener) {
+ElasticsearchDirectoryReader elasticsearchDirectoryReader = getElasticsearchDirectoryReader(reader);
+if (elasticsearchDirectoryReader != null) {
+public static ElasticsearchDirectoryReader getElasticsearchDirectoryReader(DirectoryReader reader) {
+if (reader instanceof FilterDirectoryReader) {
+

@@ -1,0 +1,8 @@
+* @see org.primordion.xholon.base.IXholon#act()
+*/
+public void act() {
+if ((xhc.getXhType() &amp; XholonClass.XhtypePureActiveObject) == XholonClass.XhtypePureActiveObject) {
+case CeGlycolysis.Gly1CE:
+amtGlucose = ((XhGlycolysis)port[P_SM_SUB1]).getPheneVal();
+nTimes = (amtCytosol * function_0(amtGlucose, 1500.0, 100.0));
+

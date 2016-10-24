@@ -1,0 +1,6 @@
+public static int compareYear(long endTimeInMillis, long startTimeInMillis) {
+if(endTimeInMillis < startTimeInMillis) {
+throw new InvalidParameterException(&quot;endTimeInMillis must >= startTimeInMillis&quot;);
+Date delta = new Date(endTimeInMillis - startTimeInMillis);
+int year = Integer.valueOf(getYear(delta));
+

@@ -1,0 +1,9 @@
+private final ReentrantReadWriteLock lock = new ReentrantReadWriteLock();
+private final LinkedHashMap<K, V> map;
+
+LinkedHashMapCache(final int size, boolean accessOrder) {
+if (size <= 0) {
+throw new IllegalArgumentException(&quot;Non-positive size: &quot; + size);
+}
+map = new LinkedHashMap<K, V>(INITIAL_CAPACITY, LOAD_FACTOR, accessOrder) {
+

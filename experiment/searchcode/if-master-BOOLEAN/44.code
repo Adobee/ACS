@@ -1,0 +1,11 @@
+public void EXECUTEUSERPROGRAM(MasterMode master) throws IOException {
+boolean exit=false;
+int mlocation;
+// TODO: loop terminate condition
+MasterMode.IC++;
+
+switch (MasterMode.IR[0]) {
+case &#39;G&#39;: {
+if (MasterMode.IR[1] == &#39;D&#39;) {
+master.MOS(1,getLocation()); //call master mode with SI 1
+

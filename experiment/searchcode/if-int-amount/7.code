@@ -1,0 +1,8 @@
+public int rob(final int nums[]) {
+int amount = 0;
+if (nums != null &amp;&amp; nums.length > 0) {
+amount = robAmount[0] = nums[0];
+for (int i = 1; i < nums.length; i++) {
+if (i > 1) {
+robAmount[i] = Math.max(nums[i] + robAmount[i - 2], robAmount[i - 1]);
+

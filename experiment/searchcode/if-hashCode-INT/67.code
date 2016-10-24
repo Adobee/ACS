@@ -1,0 +1,18 @@
+HashCode self = new HashCode();
+
+private HashCode() {
+}
+
+public HashCode getInstance() {
+return self;
+}
+
+public static int getHashCode(Object obj) {
+if (obj == null)
+return &quot;&quot;.hashCode();
+else
+return obj.toString().hashCode();
+}
+
+}
+

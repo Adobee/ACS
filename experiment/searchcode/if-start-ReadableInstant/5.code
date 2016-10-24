@@ -1,0 +1,7 @@
+return readablePeriod != null ? new Interval(readablePeriod, parseDateTime) : new Interval(readableInstant, parseDateTime);
+} else if (readablePeriod == null) {
+long startMillis2 = getStartMillis();
+long endMillis2 = getEndMillis();
+if (startMillis2 > endMillis) {
+return new Interval(endMillis, startMillis2, getChronology());
+

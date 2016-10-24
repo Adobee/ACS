@@ -1,0 +1,14 @@
+public static class Result {
+List<Double> list;
+int numRows;
+int pct;
+}
+
+public static class TopNPercentEvaluator implements UDAFEvaluator {
+res.list = new ArrayList<Double>();
+res.numRows = 0;
+res.pct = 0;
+}
+
+public boolean iterate(double rowVal, int pct) {
+

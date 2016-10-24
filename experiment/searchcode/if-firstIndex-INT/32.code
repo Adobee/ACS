@@ -1,0 +1,12 @@
+public String findSubDna(String dna) {
+int firstIndex = dna.indexOf(&quot;tag&quot;);
+
+if (firstIndex ==  -1) {
+return &quot;nope&quot;;
+}
+
+String tag = &quot;atg&quot;;
+int lastIndex = dna.indexOf(tag, firstIndex + 3);
+
+if ((lastIndex - firstIndex) % 3 != 0) {
+

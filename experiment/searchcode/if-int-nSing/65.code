@@ -1,0 +1,8 @@
+System.out.println(&quot;Geben Sie die Matrixdimension an:&quot;);
+int n = input.nextInt();
+double A[][] = new double[n][n];
+double A_inverse[][] = new double[n][n];
+double sing = first_norm * MachineEpsilonDouble();
+System.out.println(&quot;\n\nSING: &quot; + sing);
+if (A[pivot][hauptschritt] < sing){
+

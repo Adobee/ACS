@@ -1,0 +1,12 @@
+* executing in order to avoid partial/duplicate function executions.
+*/
+public class ShutdownSignal {
+
+private boolean shutdownFlag = false;
+public synchronized void setShutdownFlag() {
+shutdownFlag = true;
+}
+
+/**
+* Return a boolean indicating if shutdown for this member has been initiated.
+

@@ -1,0 +1,11 @@
+* Temporary state and rate arrays are allocated by invoking the superclass
+* method.
+*
+* @param stepSize
+*/
+public void initialize(final double stepSize) {
+while (remainder < tol * fixedStepSize) { // check to see if we are
+// close enough
+counter++;
+double oldRemainder = remainder;
+

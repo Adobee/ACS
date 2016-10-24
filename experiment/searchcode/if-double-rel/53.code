@@ -1,0 +1,11 @@
+public Missile(Ship shooter, Entity target){
+super(shooter.getX(),shooter.getY(),shooter.getX(),500,10,0.5,0);
+
+double relX = target.getX() - shooter.getX();
+double randomXZ = Math.toRadians((int)(121 * Math.random()) - 60);
+
+
+double angleXZ = Math.acos(relX/relXZ) + randomXZ;
+if(relZ < 0){
+angleXZ *= -1;
+

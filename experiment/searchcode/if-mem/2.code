@@ -1,0 +1,15 @@
+mem.d = memory[mem.pc+2];
+mem.pc+=2;
+print(); break;
+}
+case &quot;0x13&quot;:{	//INX D
+mem.e++;
+if(mem.e == 0){
+mem.l++;
+if(mem.l == 0){
+mem.h++;
+}
+print(); break;
+}
+case &quot;0x26&quot;:{	//MVI H,D8
+

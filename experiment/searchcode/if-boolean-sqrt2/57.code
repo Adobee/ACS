@@ -1,0 +1,15 @@
+updateFrame();
+}
+
+private void getInputMovement(){
+double sqrt2 = Math.sqrt(2);
+boolean verticalInput = KeyboardController.isUpHeld() || KeyboardController.isDownHeld();
+if(KeyboardController.isUpHeld()){
+if(!horizontalInput){
+dy=-8;
+}else{
+dy=-(int)(8 / sqrt2);
+}
+}
+if(KeyboardController.isDownHeld()){
+

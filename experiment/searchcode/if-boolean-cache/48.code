@@ -1,0 +1,9 @@
+package cache;
+
+import java.util.Collections;
+import javax.cache.CacheException;
+import javax.cache.CacheManager;
+public V get(K key, boolean nocache) {
+Object r = cache.get(key);
+if ((r == null) || nocache) {
+

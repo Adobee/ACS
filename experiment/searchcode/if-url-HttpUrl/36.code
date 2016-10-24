@@ -1,0 +1,10 @@
+import com.google.common.collect.ImmutableSet;
+import eu.goodlike.libraries.okhttp.HttpUrls;
+import okhttp3.HttpUrl;
+import org.hamcrest.BaseMatcher;
+public boolean matches(Object item) {
+if (!(item instanceof HttpUrl))
+return false;
+
+HttpUrl url = (HttpUrl) item;
+

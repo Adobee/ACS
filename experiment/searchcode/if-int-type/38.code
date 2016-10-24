@@ -1,0 +1,7 @@
+package com.gannon.asm.components;
+
+public class Triangle {
+public int triangleType(int a, int b, int c) {
+if ((a < b + c) &amp;&amp; (b < a + c) &amp;&amp; (c < a + b)) {
+if ((a == b) &amp;&amp; (b == c))
+

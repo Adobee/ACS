@@ -1,0 +1,15 @@
+* limit the length of the title
+*/
+public static String teaseTitle (String title) {
+String [] words = title.split(&quot; &quot;);
+if (words.length > 10) {
+title = &quot;&quot;;
+for (int i = 0; i < 10; i++) {
+title += words[i] + &quot; &quot;;
+}
+title += &quot;...&quot;;
+}
+return title;
+}
+}
+

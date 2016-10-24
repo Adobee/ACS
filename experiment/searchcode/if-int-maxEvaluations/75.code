@@ -1,0 +1,12 @@
+public class DynamicIBEABuilder<S extends Solution<?>> implements AlgorithmBuilder<DynamicIBEA<S>> {
+
+/**
+* NSGAIIBuilder class
+*/
+private final Problem<S> problem;
+private int maxEvaluations;
+private int populationSize;
+public DynamicIBEABuilder<S> setMaxEvaluations(int maxEvaluations) {
+if (maxEvaluations < 0) {
+throw new JMetalException(&quot;maxIterations is negative: &quot; + maxEvaluations);
+

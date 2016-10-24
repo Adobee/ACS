@@ -1,0 +1,9 @@
+assertThat(grid.cellIsAlive(1, 1)).isFalse();
+assertThat(grid.cellBirthed).isFalse();
+assertThat(grid.cellKilled).isFalse();
+}
+
+@Test
+public void deadCellWithThreeNeighboursIsBirthed() {
+grid = new SpyGrid(false, 3);
+

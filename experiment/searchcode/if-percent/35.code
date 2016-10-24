@@ -1,0 +1,10 @@
+private final float percent;
+
+public Probability(BigDecimal percent) {
+this(percent.floatValue());
+}
+
+private Probability(float percent) {
+if (!isValid(percent)) {
+throw new IllegalArgumentException();
+

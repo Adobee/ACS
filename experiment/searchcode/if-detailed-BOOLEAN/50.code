@@ -1,0 +1,9 @@
+@Override
+public DetailedResult<Duty> apply(Duty duty)
+{
+boolean notFound = tryAndFindDutyTypeForRank(duty);
+
+if (notFound)
+{
+return detailedResultFactory.createFrom(duty, &quot;invalidRank&quot;);
+

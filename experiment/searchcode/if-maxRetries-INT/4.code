@@ -1,0 +1,8 @@
+private int maxRetries;
+
+public RetryOnFailure(int maxRetries) {
+this.maxRetries = maxRetries;
+System.out.println(&quot;FAILED - Command failed on retry &quot; + retryCounter + &quot; of &quot; + maxRetries + &quot; error: &quot; + ex);
+if (retryCounter >= maxRetries) {
+System.out.println(&quot;Max retries exceeded.&quot;);
+

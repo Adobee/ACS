@@ -1,0 +1,8 @@
+public static Generator getGenerator(String generator){
+Generator _generator = null;
+if(Constants.GENERATORS.containsKey(generator)){
+if(Constants.COCOA_GENERATOR.equals(generator)){
+_generator = new CocoaGenerator();
+}
+else if(Constants.BANANA_GENERATOR.equals(generator)){
+

@@ -1,0 +1,7 @@
+int y = (int) event.getY();
+boolean sendToDelegate = false;
+boolean hit = true;
+switch (event.getAction()) {
+sendToDelegate = this.mPlayDelegateTargeted;
+if (sendToDelegate &amp;&amp; !this.mPlaySlopBounds.contains(x, y)) {
+

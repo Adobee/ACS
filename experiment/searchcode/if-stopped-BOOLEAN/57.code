@@ -1,0 +1,9 @@
+private TimerAction action;
+private int targetNumber;
+private int progress;
+private boolean stopped;
+public void updateTimer(int delta) {
+if (!stopped) {
+progress += delta;
+if (progress >= targetNumber) {
+

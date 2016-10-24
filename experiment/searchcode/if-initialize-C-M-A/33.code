@@ -1,0 +1,8 @@
+ValueFetcher create(final InitializeAdapter initializeAdapter) {
+if (initializeAdapter == null) {
+return VALUE_FETCHER;
+} else if (initializeAdapter.getBundleName() != null) {
+return new DefaultValueFetcher(initializeAdapter.getBundleName());
+} else if (initializeAdapter.getValueFetcher() == null) {
+return initializeAdapter.getValueFetcher();
+

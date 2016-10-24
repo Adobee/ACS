@@ -1,0 +1,12 @@
+public Object convertValue(Map context, Object value, Class toType) {
+if (toType.isEnum()) {
+if (value == null)
+return null;
+if (value instanceof String[]) {
+//						oo[i] = Enum.valueOf(toType, ss[i]);
+//					}
+//					return oo;
+//				}
+} else if(value instanceof String){
+return Enum.valueOf(toType, (String)value);
+

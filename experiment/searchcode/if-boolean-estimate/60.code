@@ -1,0 +1,10 @@
+return (SiteEstimateItem) session.get(SiteEstimateItem.class, siteEstimateItemId);
+}
+
+public boolean saveSiteEstimateItem(SiteEstimateItem item) {
+session.persist(item);
+return true;
+}
+
+public boolean updateSiteEstimateItem(SiteEstimateItem item) {
+

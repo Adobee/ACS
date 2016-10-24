@@ -1,0 +1,8 @@
+double yMin = Double.POSITIVE_INFINITY;
+double yMax = Double.NEGATIVE_INFINITY;
+for (int i = 0; i <= N; i++) {
+if (yMin > y[i]) { yMin = y[i]; }
+if (yMax < y[i]) { yMax = y[i]; }
+}
+StdOut.println(yMin + &quot; &quot; + yMax);
+

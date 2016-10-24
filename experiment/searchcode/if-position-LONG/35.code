@@ -1,0 +1,11 @@
+public int findMissing(int[] program, int wantedResult) {
+Stack<Long> stack = new Stack<Long>();
+
+int position = -1;
+for (int i = 0; i < program.length; ++i) {
+Long a = stack.pop();
+Long b = stack.pop();
+stack.push(a + b);
+
+if (position != -1 &amp;&amp; position != 1) {
+

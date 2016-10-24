@@ -1,0 +1,9 @@
+public class IpNetFlowDecoder extends Decoder
+{
+public int getFieldIndex(String fieldName, byte fieldType)
+{
+if (fieldName.equals(&quot;nhi&quot;)) {
+if (fieldType != STRING_TYPE)
+reportMismatch(&quot;nhi&quot;, fieldType);
+return 36;
+

@@ -1,0 +1,16 @@
+
+public class MergeSort1 {
+
+private int nelems;
+public MergeSort1(){
+
+int[] A = new int[nelems];
+public void Recmergesort( int[] A, int lowerbound, int upperbound){
+
+if(lowerbound == upperbound)
+return;
+
+else {
+
+int mid = (lowerbound + upperbound)/2;
+

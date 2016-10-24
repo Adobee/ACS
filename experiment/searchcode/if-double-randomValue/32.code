@@ -1,0 +1,14 @@
+public String createRandomValue(List<String> list) {
+if (randomGenerator == null) {
+randomGenerator = new Random();
+}
+int index = randomGenerator.nextInt(list.size());
+public double getGaussian(double mean, double variance) {
+if (randomGenerator == null) {
+randomGenerator = new Random();
+}
+return mean + randomGenerator.nextGaussian() * variance;
+}
+
+}
+

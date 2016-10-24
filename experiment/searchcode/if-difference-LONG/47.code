@@ -1,0 +1,7 @@
+private double CalculateWinningPartyRate(double WinningIssueRate, double Difference) {
+double Factor=1;
+if ( WinningIssueRate <= 10 )
+{
+if ( Difference >= 0 &amp;&amp; Difference < 30 ) Factor = (1.0/0.3) * Difference;
+else if ( Difference >=30 &amp;&amp; Difference <= 100 ) Factor = 100;
+

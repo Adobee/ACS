@@ -1,0 +1,10 @@
+VectorWritable diagVecWritable=new VectorWritable(diagVec);
+
+double eps =lbfgs.eps;//eps
+double xtol=lbfgs.xtol;//xtol
+
+output.writeInt(m);
+diagVecWritable.write(output);
+output.writeDouble(eps);
+output.writeDouble(xtol);
+

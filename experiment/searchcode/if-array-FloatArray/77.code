@@ -1,0 +1,13 @@
+package konoha;
+
+import java.util.Arrays;
+import jkonoha.KObject;
+
+public class FloatArray extends KObject {
+public static FloatArray newArray(int size) {
+return new FloatArray(size);
+}
+
+public float get(int n) {
+if(n >= this.capacity) throw new ArrayIndexOutOfBoundsException();
+

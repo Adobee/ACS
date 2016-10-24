@@ -1,0 +1,9 @@
+public class ArrayQueueADT {
+static final int SIZE = 3;
+private Object[] queue = new Object[SIZE];
+private static void check(ArrayQueueADT queue, int size) {
+if (size <= queue.queue.length) {
+return;
+}
+Object[] narray = new Object[queue.queue.length * 2];
+

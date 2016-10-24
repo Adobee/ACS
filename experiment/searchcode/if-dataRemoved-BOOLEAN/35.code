@@ -1,0 +1,8 @@
+String packageName = context.getPackageManager().getNameForUid(uid);
+Boolean dataRemoved = intent.getBooleanExtra(Intent.EXTRA_DATA_REMOVED, false);
+Boolean replacing = intent.getBooleanExtra(Intent.EXTRA_REPLACING, false);
+onPackageRemoved(context, intent, uid, packageName, dataRemoved, replacing);
+}
+// Intent.ACTION_PACKAGE_REPLACED
+if(action.equals(Intent.ACTION_PACKAGE_REPLACED)) {
+

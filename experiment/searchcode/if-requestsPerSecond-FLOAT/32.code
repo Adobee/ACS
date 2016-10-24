@@ -1,0 +1,8 @@
+public MeasuringAggregatedRequestsBinningStrategy(final long startOfFirstBin, final NumberFormat intNumberFormat, final NumberFormat floatNumberFormat) {
+super(startOfFirstBin, intNumberFormat, floatNumberFormat);
+String[] tokens = tokenizer.getTokenArray();
+
+long timestampMillis = Long.parseLong(tokens[0]);
+
+if (!&quot;AGENT&quot;.equals(tokens[MEASURING_NORMALIZED_COL_REQUEST_TYPE])) {
+

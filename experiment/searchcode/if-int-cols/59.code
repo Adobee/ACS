@@ -1,0 +1,11 @@
+private int result = 0;
+
+public int totalNQueens(int n) {
+int[] cols = new int[n];
+placeQueen(cols, 0);
+private void placeQueen(int[] cols, int row) {
+int n = cols.length;
+
+for (int i = 0; i < n; i++) {
+if (isValid(cols, row, i)) {
+

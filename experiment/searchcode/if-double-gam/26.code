@@ -1,0 +1,14 @@
+/* (Xs - X0) / (Xt - X0) is Beta(s, t - s)
+*  and V / (V + W) is Beta(s, t - s)
+*  if V ~ Gam(s) and W ~ Gam(t - s)
+// even with rounding error in floating point arithmetic
+double z;
+if (W > V)
+z = X0 + (Xt - X0) * V / (V + W);
+else
+z = Xt - (Xt - X0) * W / (V + W);
+
+return z;
+}
+}
+

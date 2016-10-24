@@ -1,0 +1,9 @@
+public void setMinorVersion(long minorVersion) {
+this.minorVersion = minorVersion;
+}
+
+@Override
+public int compareTo(HttpVersion o) {
+if (getMajorVersion() > o.getMajorVersion()) return 1;
+if (getMajorVersion() < o.getMajorVersion()) return -1;
+

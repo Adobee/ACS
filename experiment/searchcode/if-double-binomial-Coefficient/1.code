@@ -1,0 +1,10 @@
+public static long binomialCoefficientRec(long n, long k) {
+if (k == 0 || k == n)
+return 1;
+return  binomialCoefficientRec(n - 1, k - 1) + binomialCoefficientRec(n - 1, k);
+public static long binomialCoefficient(long n, long k) {
+if (k == n)
+return 1;
+long res = 1;
+for (long i=0; i<k; i++) {
+

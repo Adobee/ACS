@@ -1,0 +1,9 @@
+public List<Integer> subScoreRolls(int frameNo) {
+int firstIndex = (frameNo-1) * 2;
+if (isStrike(firstIndex)) {
+return this.rolls.subList(firstIndex, firstIndex + range);
+}
+
+boolean isSpare(int firstIndex) {
+if (!isStrike(firstIndex) &amp;&amp; rolls.get(firstIndex) + rolls.get(firstIndex+1) == 10) {
+

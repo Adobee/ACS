@@ -1,0 +1,6 @@
+@Path(&quot;/dologin&quot;)
+public Response doLogin(@QueryParam(&quot;p1&quot;) String encodedUserName, @QueryParam(&quot;p2&quot;) String encodedPassword) {
+String result = &quot;User Name : &quot; + userName + &quot;--> Password : &quot; + password;
+if (StringUtils.isNotBlank(userName)) {
+isAuthenticated = LDAPAuthentication.doLogin(userName, password);
+

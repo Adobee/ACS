@@ -1,0 +1,8 @@
+* @param maxCostEval maximal number of cost evaluations allowed
+* @see #estimate
+*/
+public final void setMaxCostEval(int maxCostEval) {
+int m = problem.getMeasurements().length;
+int p = problem.getUnboundParameters().length;
+if (m <= p) {
+

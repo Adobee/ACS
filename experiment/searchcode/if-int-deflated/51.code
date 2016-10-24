@@ -1,0 +1,11 @@
+row[pos] = (short) value;
+return old;
+}
+int old = deflated[y];
+if (old == value) {
+return false;
+}
+int old = deflated[y];
+if (old == expected) {
+inflated[y] = new short[getSizeXZ()];
+

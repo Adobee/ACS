@@ -1,0 +1,13 @@
+private int degreesOfFreedom;
+
+private double entropy;
+
+public ChiSquareDistribution(int degreesOfFreedom) {
+this.degreesOfFreedom = degreesOfFreedom;
+return degreesOfFreedom;
+}
+
+@Override
+public double Mean() {
+return degreesOfFreedom;
+

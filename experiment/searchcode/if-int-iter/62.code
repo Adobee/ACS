@@ -1,0 +1,11 @@
+iter.next=copy;
+iter=copy.next;
+}
+iter=head;
+while(iter!=null){
+if(iter.random!=null) iter.next.random=iter.random.next;
+while(iter!=null){
+RandomListNode copy=iter.next;
+iter.next=copy.next;
+if(copy.next!=null) copy.next=copy.next.next;
+

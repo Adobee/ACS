@@ -1,0 +1,13 @@
+* Treat pixels as different when one is below threshold, and the other above.
+*/
+public class Thresholded implements PixelPairs {
+private float threshold;
+private long count, total;
+public void reset() {
+count = total = 0;
+}
+
+public void add(float v1, float v2) {
+total++;
+if (v1 <= threshold) {
+

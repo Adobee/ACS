@@ -1,0 +1,16 @@
+this(null);
+}
+
+BadHasher(EqualityComparator<? super T> equalityComparator) {
+if (equalityComparator != null) {
+public boolean equals(T a, T b) {
+return equalityComparator.equals(a, b);
+}
+
+@Override
+public int hashCode(T o) {
+return 1;
+}
+
+}
+

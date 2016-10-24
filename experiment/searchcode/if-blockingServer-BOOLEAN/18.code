@@ -1,0 +1,7 @@
+this.workerCount = componentSettings.getAsInt(&quot;worker_count&quot;, Runtime.getRuntime().availableProcessors() * 2);
+this.blockingServer = componentSettings.getAsBoolean(&quot;redis.blocking_server&quot;, settings.getAsBoolean(TCP_BLOCKING_SERVER, settings.getAsBoolean(TCP_BLOCKING, false)));
+this.serverOpenChannels = new OpenChannelsHandler(logger);
+
+if (blockingServer) {
+serverBootstrap = new ServerBootstrap(new OioServerSocketChannelFactory(
+

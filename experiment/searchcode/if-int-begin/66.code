@@ -1,0 +1,8 @@
+public int search(int[] A, int target) {
+int begin = 0;
+int end = A.length - 1;
+while(begin <= end) {
+int mid = (begin + end) / 2;
+if(A[mid] == target) return mid;
+if(target < A[mid] &amp;&amp; (A[mid] > A[begin] &amp;&amp; A[begin] <= target || A[mid] < A[begin]) || target > A[mid] &amp;&amp; A[begin] > A[mid] &amp;&amp; A[end] < target)
+

@@ -1,0 +1,10 @@
+for(int i=0;i<s.length();i++){
+if(!dp[i]) continue;
+for(String ss:dict){
+int end = i+ss.length();
+if(end > s.length())
+continue;
+if(dp[end])
+continue;
+dp[end] = s.substring(i,end).equals(ss);
+

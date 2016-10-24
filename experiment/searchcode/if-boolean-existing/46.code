@@ -1,0 +1,9 @@
+private UserRepository repository;
+
+public Boolean create(User user){
+User existing = repository.findByUsername(user.getUsername());
+if (existing != null)
+return false;
+
+User saved = repository.save(user);
+

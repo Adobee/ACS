@@ -1,0 +1,13 @@
+public static ImageProcessor convert2D(ModelImage mi) {
+if(!mi.is2DImage()) {
+return null;
+}
+int type = mi.getType();
+
+if(!(type == ModelStorageBase.UBYTE || type == ModelStorageBase.FLOAT || type == ModelStorageBase.USHORT || type == ModelStorageBase.ARGB)) {
+int zDim = mi.getExtents()[2];
+int sliceLength = width * height;
+
+if(type == ModelStorageBase.UBYTE) {
+is = new ImageStack(width,height);
+

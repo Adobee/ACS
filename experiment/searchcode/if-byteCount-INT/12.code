@@ -1,0 +1,6 @@
+public int read(@NonNull byte[] buffer, int byteOffset, int byteCount) throws IOException {
+if (mOffset < 0) {
+long padByteCount = -mOffset;
+if (padByteCount < byteCount) {
+int newOffset = (int) (byteOffset + padByteCount);
+

@@ -1,0 +1,5 @@
+for(int wlength=8; wlength <= 8; wlength++){int num = 1;boolean ignored = false;while(!ignored){
+GuessExecutor ng = new GuessExecutor(wlength,num, new FrequencyGuesser());
+ignored = ng.stress1();num++;}
+if(ignored==true){num = num-1;System.out.println(&quot;It takes &quot;+num+&quot; guesses for words that are &quot;+wlength+&quot; letters long&quot;);}
+

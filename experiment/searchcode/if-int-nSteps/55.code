@@ -1,0 +1,10 @@
+public class LightningBolt {
+
+public final int nsteps;
+
+public double variance = 1;
+public double velocity = 1;
+public LightningBolt(DecimalPosition p1, DecimalPosition p2, int steps) {
+nsteps = steps;
+start = p1;
+

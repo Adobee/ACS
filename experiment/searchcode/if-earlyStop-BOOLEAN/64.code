@@ -1,0 +1,7 @@
+public void holdBackValidation(double validationPercent, boolean shuffle,
+int seed) {
+List<DataDivision> dataDivisionList = new ArrayList<DataDivision>();
+MLTrain train = this.createTrainer(method, fold.getTraining());
+
+if (train.getImplementationType() == TrainingImplementationType.Iterative) {
+

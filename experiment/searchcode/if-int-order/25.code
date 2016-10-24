@@ -1,0 +1,8 @@
+private int nextOrderId = 1;
+
+List<Order> orders = new ArrayList<Order>();
+
+@Override
+public Integer place(Direction buyOrSell, int amount, double price) {
+Order order = new Order(nextOrderId++, buyOrSell, amount, price);
+

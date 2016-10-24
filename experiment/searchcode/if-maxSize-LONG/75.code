@@ -1,0 +1,12 @@
+private static final long serialVersionUID = -972646765794714920L;
+
+public static final int DEFAULT_MAX_SIZE = 256;
+public V put(K key, V value) {
+if (size() >= maxSize) {
+evict();
+}
+
+return super.put(key, value);
+}
+}
+

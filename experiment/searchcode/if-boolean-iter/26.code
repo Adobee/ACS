@@ -1,0 +1,15 @@
+// delete iter_;
+iter_ = iter;
+if (iter_ == null) {
+valid_ = false;
+} else {
+Update();
+iter_.SeekToLast();
+Update();
+}
+
+private void Update() {
+valid_ = iter_.Valid();
+if (valid_) {
+key_ = iter_.key();
+

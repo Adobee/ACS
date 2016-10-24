@@ -1,0 +1,10 @@
+import java.util.LinkedList;
+
+
+public class CSLastContactChecker extends Thread{
+private repository repo;
+
+public CSLastContactChecker(repository passed_repo)
+{
+repo = passed_repo;
+

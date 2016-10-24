@@ -1,0 +1,9 @@
+import net.gnehzr.cct.statistics.StatisticsUpdateListener;
+
+public class DynamicButton extends JButton implements StatisticsUpdateListener, DynamicStringSettable{
+public void setDynamicString(DynamicString s){
+if(s != null){
+s.getStatistics().removeStatisticsUpdateListener(this);
+}
+this.s = s;
+

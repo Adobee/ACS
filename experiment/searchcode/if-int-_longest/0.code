@@ -1,0 +1,8 @@
+/* 48 */     int _longest = 0;
+/* 49 */     if (lookup != null) {
+/* 50 */       for (CharSequence[] seq : lookup) {
+/* 54 */           _shortest = sz;
+/*    */         }
+/* 56 */         if (sz > _longest) {
+/* 57 */           _longest = sz;
+

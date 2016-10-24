@@ -1,0 +1,8 @@
+Object unMarshal(JavaScriptEvent jse, int index, Class toClass) {
+try {
+if (toClass == String.class)
+return jse.userEventArgs.get(index);
+else if (toClass == Boolean.class)
+return !jse.userEventArgs.get(index).equals(&quot;0&quot;);
+else if (toClass == WMouseEvent.class)
+

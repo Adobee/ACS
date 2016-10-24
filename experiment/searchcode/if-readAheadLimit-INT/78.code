@@ -1,0 +1,10 @@
+private boolean markedSkipLF = false;
+
+@Override
+public void mark(int readAheadLimit) throws IOException {
+if (readAheadLimit < 0) {
+/* Marked */
+int delta = nextChar - markedChar;
+if (delta >= readAheadLimit) {
+/* Gone past read-ahead limit: Invalidate mark */
+

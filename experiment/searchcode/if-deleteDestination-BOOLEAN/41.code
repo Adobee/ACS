@@ -1,0 +1,8 @@
+Log.w(TAG, &quot;Upgrading database from version &quot; + oldVersion + &quot; to &quot;
++ newVersion + &quot;, which will destroy all old data&quot;);
+db.execSQL(&quot;DROP TABLE IF EXISTS notes&quot;);
+// delete destination
+public boolean deleteDestination(long rowId) {
+
+return mDb.delete(DATABASE_TABLE, KEY_ROWID + &quot;=&quot; + rowId, null) > 0;
+

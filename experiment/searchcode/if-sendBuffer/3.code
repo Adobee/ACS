@@ -1,0 +1,10 @@
+System.out.println(((sendBuffer[4] << 24) + (sendBuffer[5] << 16) + (sendBuffer[6] << 8) + sendBuffer[7])+1);
+
+
+if(((recieveBuffer[8] << 24) + (recieveBuffer[9] << 16) + (recieveBuffer[10] << 8) + recieveBuffer[11]) == ((sendBuffer[4] << 24) + (sendBuffer[5] << 16) + (sendBuffer[6] << 8) + sendBuffer[7]) + 1)
+sendBuffer[2] = copyArray[2];
+sendBuffer[3] = copyArray[3];
+
+//byte 4-7: seq #
+if(SYN == 1 &amp;&amp; ACK == 1)
+

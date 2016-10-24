@@ -1,0 +1,11 @@
+tg.addBusy(busy.getTitle(), busy.getDay(), busy.getStart(), busy.getLength());
+return tg;
+}
+
+public void setNrDays(int days) {
+if (iNrDays == days) return;
+iNrDays = days;
+boolean empty = true;
+for (int i = 0; i < 3; i++) {
+if (iMeetingTable[iDayOfWeek].length <= iStartSlot + i) { empty = false; break; }
+

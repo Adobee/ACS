@@ -1,0 +1,10 @@
+KnapsackAssignment assignment = new KnapsackAssignment(itemId, isItemIn);
+final boolean fail = !incrementalUpdate(false, assignment);
+if (fail) {
+result[0] = 0L;
+result[1] = getAggregatedProfitUpperBound();
+}
+
+final boolean failRevert = !incrementalUpdate(true, assignment);
+if (failRevert) {
+

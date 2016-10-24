@@ -1,0 +1,8 @@
+byte[] rowkeyBytes = prefixRowKey.toBytes();
+
+Util.check(rowkeyBytes.length != 0);
+
+boolean isAllByteIsFF = true;
+for (byte b : rowkeyBytes) {
+if ((b &amp; 0xFF) != 0xFF) {
+

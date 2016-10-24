@@ -1,0 +1,8 @@
+//endregion
+CursorUtilities.setWaitCursor();
+boolean isSucceeded = false;
+
+for (Dataset dataset : datasets) {
+// 非栅格或者影像数据集，跳过
+if (!(dataset instanceof DatasetGrid) &amp;&amp; !(dataset instanceof DatasetImage) &amp;&amp; !(dataset instanceof DatasetGridCollection) &amp;&amp; !(dataset instanceof DatasetImageCollection)) {
+

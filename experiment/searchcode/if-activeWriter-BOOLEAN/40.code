@@ -1,0 +1,10 @@
+private int waitingWriters = 0;
+/** True if there is an active writer */
+private boolean activeWriter = false;
+
+public ReadersWriter() {}
+public synchronized void readLock() {
+while (activeWriter || waitingWriters != 0) {
+try {
+wait();
+

@@ -1,0 +1,11 @@
+private final boolean isLast;
+
+public Interval(final double a, final double b, final boolean isLast) {
+if (a > b) {
+return isLast;
+}
+
+public boolean contains(final double x) {
+if (!isLast) {
+return a <= x &amp;&amp; x < b;
+

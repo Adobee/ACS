@@ -1,0 +1,11 @@
+public class SimpleCacheObject implements CacheObject
+{
+private Cacheable object;
+private Date dateOfExpiration;
+private int timeToLive;
+
+public SimpleCacheObject(Cacheable object, int timeToLive)
+{
+this.object = object;
+this.timeToLive = timeToLive;
+

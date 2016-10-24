@@ -1,0 +1,12 @@
+package org.dayatang.dddlib.event.api;
+
+import java.lang.reflect.ParameterizedType;
+
+/**
+* 抽象事件处理器
+public abstract class AbstractEventListener<T extends Event> implements EventListener<T> {
+
+@Override
+public void onEvent(T event) {
+if (!supports(event)) {
+

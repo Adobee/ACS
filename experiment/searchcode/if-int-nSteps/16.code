@@ -1,0 +1,18 @@
+this.data=data;
+}
+
+/**
+*
+*/
+
+public void bubbleSort(){
+
+int max;
+nSteps =0;
+change++;
+}
+nSteps++;
+}
+for(int i=1; i<n;i+=2) {
+if (data.array[i] > data.array[i + 1]) {
+

@@ -1,0 +1,6 @@
+package com.intellectualcrafters.plot.database;
+
+import com.intellectualcrafters.plot.flag.Flag;
+import com.intellectualcrafters.plot.object.Plot;
+import com.intellectualcrafters.plot.object.PlotArea;
+

@@ -1,0 +1,9 @@
+if(normatedWordLength >0)
+{
+if(lastChar != whiteSpace)
+{
+lastChar = whiteSpace;
+lastChar =Character.toLowerCase(ch);
+if(lastChar == valueE) lastChar = &#39;\u0435&#39;;
+normatedWord.append(lastChar);
+

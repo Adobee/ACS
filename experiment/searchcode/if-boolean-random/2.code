@@ -1,0 +1,12 @@
+public class UniformRandomBooleanGenerator extends ParametrizedRandomGenerator<Boolean> {
+
+double p;
+public Boolean generateNext() {
+if(random.nextDouble() > p) {
+return Boolean.TRUE;
+}
+return Boolean.FALSE;
+}
+
+}
+

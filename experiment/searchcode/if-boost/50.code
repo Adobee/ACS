@@ -1,0 +1,16 @@
+public class MultiplicativeFacetTermScoringFunction implements FacetTermScoringFunction
+{
+private float _boost = 1.0f;
+
+public final void clearScores()
+{
+_boost = 1.0f;
+public final void scoreAndCollect(int df,float boost)
+{
+if (boost>0){
+_boost *= boost;
+}
+}
+
+public final float getCurrentScore()
+

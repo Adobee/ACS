@@ -1,0 +1,9 @@
+protected Object commonVisitBinaryExpression(BinaryExpression expr, Object attr) throws SBQLException {
+
+if (tryPushRemoteQueryExpression(expr))
+return null;
+else
+if (expr instanceof RemoteQueryExpression)
+return null;
+else if (tryPushRemoteQueryExpression(expr))
+

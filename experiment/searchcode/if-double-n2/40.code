@@ -1,0 +1,10 @@
+package hgc.graph;
+
+public class Edge {
+private Node n1, n2;
+private double value;
+
+Edge(Node n1, Node n2, double value) {
+if (n1 == null || n2 == null)
+throw new NullPointerException();
+

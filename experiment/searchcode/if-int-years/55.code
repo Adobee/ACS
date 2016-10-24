@@ -1,0 +1,10 @@
+DEAD(301);
+
+private final int maximumYears;
+private final Random random = new Random();
+
+private Age(int maximumYears) {
+public static Age ageOf(Person p) {
+for (Age age : Age.values()) {
+if(p.getYears() <= age.maximumYears) {
+

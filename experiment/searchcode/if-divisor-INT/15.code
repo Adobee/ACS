@@ -1,0 +1,9 @@
+public class Solution1 {
+public int divide(int dividend, int divisor) {
+long dividendL = (long) dividend;
+dividendL = Math.abs(dividendL);
+divisorL = Math.abs(divisorL);
+
+if (divisorL == 0) return Integer.MAX_VALUE;
+if (dividendL < divisorL) return 0;
+

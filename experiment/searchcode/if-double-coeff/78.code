@@ -1,0 +1,8 @@
+package polynomes;
+public class Polynome {
+private String nom;
+private double[] coeff;
+public Polynome(String nom, double a, double b, double c, double d) {
+this.coeff = new double[4];
+this.coeff[0] = a;
+

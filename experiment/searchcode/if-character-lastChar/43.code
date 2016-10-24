@@ -1,0 +1,8 @@
+int line = context.getLineNumber();
+
+if ((&#39;A&#39; <= c[lastChar] &amp;&amp; c[lastChar] <= &#39;Z&#39;) || (&#39;a&#39; <= c[lastChar] &amp;&amp; c[lastChar] <= &#39;z&#39;)
+context.setState(this, false);
+} else {
+// keyword or identifier ends
+if (ScannerSymbol.contains(c[lastChar]) || (&#39; &#39; == c[lastChar]) || (&#39;\t&#39; == c[lastChar])
+

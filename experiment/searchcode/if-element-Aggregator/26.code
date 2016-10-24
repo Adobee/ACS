@@ -1,0 +1,12 @@
+public JSONTupleAggregator( Fields fieldDeclaration )
+{
+super( 1, fieldDeclaration );
+
+if( !fieldDeclaration.isSubstitution() &amp;&amp; fieldDeclaration.size() != 1 )
+throw new IllegalArgumentException( &quot;fieldDeclaration may only declare 1 field, got: &quot; + fieldDeclaration.size() );
+}
+
+public void start( FlowProcess flowProcess, AggregatorCall<Context> aggregatorCall )
+{
+if( aggregatorCall.getContext() != null )
+

@@ -1,0 +1,11 @@
+super.reset();
+controllers.clear();
+}
+
+@Override
+public void act(float deltaSeconds) {
+super.act(deltaSeconds);
+for (Controller controller : controllers) {
+if (controller instanceof NonContinuousRenderingController) {
+long controllerMaxSleepTimeMillis =
+

@@ -1,0 +1,12 @@
+public SoundType impactSound;
+@Override
+public BufferedImage get() {
+// -0.5 .. +0.5
+double a = normalizedAngle() / Math.PI / 2;
+* @return the normalized angle between -PI and +PI.
+*/
+public double normalizedAngle() {
+return Math.atan2(Math.sin(angle), Math.cos(angle));
+}
+}
+

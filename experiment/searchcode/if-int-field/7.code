@@ -1,0 +1,6 @@
+public static FieldState isWin(FieldState[][] field,int fieldLength) {
+//tate
+for(int i = 0;i<fieldLength;i++){
+FieldState firstField = field[i][0];
+int j = 1;
+

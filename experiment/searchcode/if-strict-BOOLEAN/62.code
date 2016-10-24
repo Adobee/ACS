@@ -1,0 +1,12 @@
+public static boolean isValidDisambigRankFileStrict(String san) {
+if (san.length() == 5) {
+return VALID_DISAMBIG_RANK_FILE_REGEX.reset(san).matches();
+//return san.equals(&quot;O-O&quot;);
+}
+
+/**
+* VALID_P_MOVE_REGEX = &quot;[a-h][1-8]&quot;
+*/
+public static boolean isValidPMoveStrict(String san) {
+if (san.length() == 2) {
+

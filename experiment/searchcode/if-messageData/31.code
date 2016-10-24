@@ -1,0 +1,11 @@
+public class MessageResource implements IMessageResource {
+
+private String url = null;
+private MessageData messageData;
+
+@Override
+public void get(Result<MessagePublic> result) {
+MessageData md = messageData;
+if(messageData == null) {
+md = new MessageData();
+

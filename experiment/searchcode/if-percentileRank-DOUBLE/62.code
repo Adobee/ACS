@@ -1,0 +1,10 @@
+return TYPE;
+}
+
+static double percentileRank(TDigestState state, double value) {
+double percentileRank = state.cdf(value);
+if (percentileRank < 0) {
+percentileRank = 0;
+}
+else if (percentileRank > 1) {
+

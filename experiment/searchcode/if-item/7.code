@@ -1,0 +1,8 @@
+@Override
+protected void setExpanded(Item item, boolean expand) {
+super.setExpanded(item, expand);
+if (expand &amp;&amp; item instanceof TreeItem) {
+initializeItem((TreeItem) item);
+}
+}
+

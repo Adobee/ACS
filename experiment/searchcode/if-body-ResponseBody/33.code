@@ -1,0 +1,9 @@
+import com.github.jasminb.jsonapi.ResourceConverter;
+import com.squareup.okhttp.ResponseBody;
+import retrofit.Converter;
+
+import java.io.IOException;
+public T convert(ResponseBody responseBody) throws IOException {
+if (isCollection) {
+return (T) parser.readObjectCollection(responseBody.bytes(), clazz);
+

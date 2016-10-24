@@ -1,0 +1,6 @@
+*            separate folder for cached files. It&#39;s needed for right cache
+*            limit work.
+* @param maxFileCount Maximum file count for cache. If file count in cache
+public FileCountLimitedDiscCache(File cacheDir, int maxFileCount) {
+this(cacheDir, new Md5FileNameGenerator(), maxFileCount);
+

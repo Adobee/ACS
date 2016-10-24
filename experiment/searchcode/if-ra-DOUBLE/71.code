@@ -1,0 +1,9 @@
+for(Map.Entry<String, RankModel> entry:outLinks.entrySet()){
+Double ra=0.0;
+ArrayList<String> incoming=this.inLinks.get(entry.getKey()).getInL();
+for(String i:incoming){
+Double r= ranks.get(i)/outLinks.get(i).outL.size();
+ra=ra+r;
+}
+ra=(0.85*ra)+0.15;
+

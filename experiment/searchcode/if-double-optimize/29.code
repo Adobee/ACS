@@ -1,0 +1,12 @@
+public void setFunction(C1Function1D f) {
+_f = f;
+}
+
+public Pair<Double,Double> optimize(double x) {
+double x1 = x;
+double f1 = _f.eval(x1);
+double factor = tooClose ? 10 : 0.1;
+for (int i = 0; i < 10; i++) {
+if (f1 > f2)
+return optimize(bracket(x1, f1, x2, f2));
+

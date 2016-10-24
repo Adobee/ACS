@@ -1,0 +1,11 @@
+public void insertHead(NodeSub nodeSub) {
+if (nodeSub.nextNodeSub != null)
+nodeSub.unlinkSub();
+nodeSub.nextNodeSub = head.nextNodeSub;
+NodeSub nodeSub = head.prevNodeSub;
+if (nodeSub == head) {
+return null;
+} else {
+nodeSub.unlinkSub();
+return nodeSub;
+

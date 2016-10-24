@@ -1,0 +1,10 @@
+public Arena getArena() {
+return arena;
+}
+
+public boolean step() {
+if (!roundOver) {
+arena.simulate();
+checkEndCondition();
+if (roundOver) {
+

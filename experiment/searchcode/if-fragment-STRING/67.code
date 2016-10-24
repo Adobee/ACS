@@ -1,0 +1,6 @@
+Fragment fragment = fragmentManager.findFragmentByTag(String.valueOf(position));
+if(fragment==null || !fragments.contains(fragment)){
+fragment = getFragment(position);
+}
+fragmentTransaction.replace(R.id.container_body_layout,fragment,String.valueOf(position));
+

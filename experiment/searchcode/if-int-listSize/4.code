@@ -1,0 +1,9 @@
+public static ArrayList<String> pageMaker(int cp, int listsize, int pagesize, int totalCnt) {
+
+ArrayList<String> arr = new ArrayList<String>();
+int totalpage = (totalCnt-1)/(listsize)+1;
+int totalpagenum = (totalpage-1)/pagesize+1;
+
+if (pagenum!=1) {
+arr.add(&quot;<li><a href=&#39;bbs.do?cp=&quot;+((pagenum-1)*listsize)+&quot;&#39;>&amp;laquo;</a></li>&quot;);
+

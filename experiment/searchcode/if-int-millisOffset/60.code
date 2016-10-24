@@ -1,0 +1,20 @@
+public class ControlTimer {
+
+long millisOffset;
+
+int ms, s, m, h, d;
+
+float _mySpeed = 1;
+
+int current, previous;
+// ((ms<100) ? &quot;0&quot; + ms: &quot;&quot; +ms)
+);
+}
+
+/**
+* called to update the timer.
+*/
+public void update() {
+current = (int) time();
+if (current > previous + 10) {
+

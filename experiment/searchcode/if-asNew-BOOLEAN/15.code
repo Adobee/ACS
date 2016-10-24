@@ -1,0 +1,15 @@
+if (o == null || getClass() != o.getClass()) return false;
+
+ASNewProjectStep that = (ASNewProjectStep) o;
+
+// Equal by class
+if (getClass() != null ? !getClass().equals(that.getClass()) : that.getClass() != null) return false;
+public void _commit(boolean finishChosen) throws CommitStepException {
+if (finishChosen) {
+_check();
+}
+super._commit(finishChosen);
+}
+
+}
+

@@ -1,0 +1,6 @@
+double max = Double.NaN;
+for (double value: values) {
+if ((Double.isNaN(max) &amp;&amp; !Double.isNaN(value)) || value > max) {
+for (double value: values) {
+if ((Double.isNaN(min) &amp;&amp; !Double.isNaN(value)) || value < min) {
+

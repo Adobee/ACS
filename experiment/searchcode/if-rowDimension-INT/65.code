@@ -1,0 +1,11 @@
+int rowDimension;
+int columnDimension;
+
+public DataTrainer2(int level){
+this.level = level;
+initFreq();
+matrix2 = new Array2DRowRealMatrix(1,columnDimension);
+
+for(int i=0;i<rowDimension;i++){
+double[] rowM1 = bulidRow4M1_fixed(i);
+

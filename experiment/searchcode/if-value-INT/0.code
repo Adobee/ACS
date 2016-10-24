@@ -1,0 +1,13 @@
+package hello;
+
+public class Ability {
+private final int value;
+
+public Ability() {
+this.value = 10;
+}
+
+public Ability(int value) {
+if (value > 20) {
+value = 20;
+

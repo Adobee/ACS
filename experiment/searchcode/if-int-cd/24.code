@@ -1,0 +1,8 @@
+private Map<String, Long> lastTriggerTimes = new HashMap();
+
+public long remainCd(String cdId) {
+if ((null == cdId) || (&quot;&quot;.equals(cdId))) {
+Long cdTime = this.lastTriggerTimes.get(cdId);
+if (null != cdTime) {
+int i = (int) (cdTime.longValue() - System.currentTimeMillis());
+

@@ -1,0 +1,8 @@
+public static void main(String[] args) {
+
+for (int dayofMonth =1; dayofMonth <=28; dayofMonth++){
+
+System.out.printf(&quot;\nFebuary %d&quot;, dayofMonth);
+
+if (dayofMonth == 14)
+

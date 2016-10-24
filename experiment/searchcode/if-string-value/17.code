@@ -1,0 +1,14 @@
+package sisql.database.utils;
+
+public class StringValue extends DBItem<String> {
+
+private String value;
+public boolean equals(Object compare){
+
+StringValue comp;
+
+if(compare instanceof StringValue)
+comp = (StringValue) compare;
+else
+return false;
+

@@ -1,0 +1,7 @@
+final EditText myEditText = (EditText) view.findViewById(R.id.username);
+if (myEditText != null) {
+myEditText.setText(mData);
+protected void onRestoreInstanceState(Parcelable state) {
+if (!state.getClass().equals(SavedState.class)) {
+// Didn&#39;t save state for us in onSaveInstanceState
+

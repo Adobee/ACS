@@ -1,0 +1,10 @@
+public void write(DataOutput out) throws IOException {
+
+if(this.shape == null)
+{
+out.writeInt(0);
+return;
+}
+out.writeInt(this.shape.length);
+for(int i = 0 ; i < this.shape.length; i++)
+

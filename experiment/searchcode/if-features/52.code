@@ -1,0 +1,16 @@
+for (int i = 0; i < _nFeatures; i++)
+{
+_features[i]._release();
+}
+}
+
+public final GLFeature get(int i)
+{
+if (_nFeatures < i)
+public final void add(GLFeature f)
+{
+_features[_nFeatures++] = f;
+f._retain();
+
+if (_nFeatures >= MAX_CONCURRENT_FEATURES_PER_GROUP)
+

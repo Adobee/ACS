@@ -1,0 +1,7 @@
+public String delDel(String str) {
+if (str.length() >= 4 &amp;&amp; str.substring(1,4).equals(&quot;del&quot;)) {
+return str.substring(0,1) + str.substring(4);
+}
+return str;
+}
+

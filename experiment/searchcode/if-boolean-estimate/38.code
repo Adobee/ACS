@@ -1,0 +1,12 @@
+public void setEstimate(Integer estimate) {
+this.estimate = estimate;
+}
+
+@Override
+public boolean equals(Object o) {
+if (o == null || getClass() != o.getClass()) return false;
+
+BacklogItem that = (BacklogItem) o;
+
+if (estimate != null ? !estimate.equals(that.estimate) : that.estimate != null) return false;
+

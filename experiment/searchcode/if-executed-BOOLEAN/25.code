@@ -1,0 +1,14 @@
+public AddAction(IEntities entities, IEntity entity) {
+super(entities, entity);
+}
+
+public boolean execute() {
+boolean executed = getEntities().add(getEntity());
+return executed;
+}
+
+public boolean undo() {
+boolean undone = false;
+if (!isExecuted()) {
+String error = &quot;An action must be executed first.&quot;;
+

@@ -1,0 +1,9 @@
+* if there is no feasible solution
+*/
+protected void solvePhase1(final SimplexTableau tableau)
+throws OptimizationException {
+new SimplexTableau(f, constraints, goalType, restrictToNonNegative, epsilon);
+solvePhase1(tableau);
+tableau.discardArtificialVariables();
+while (!isOptimal(tableau)) {
+

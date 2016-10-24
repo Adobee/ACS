@@ -1,0 +1,6 @@
+public void parseAnnotation(StringField annotation, Map<String, Object> fieldDefinition, String pathPrefix,
+Indexable indexable) {
+if (fieldDefinition.get(&quot;type&quot;) != null) {
+fieldDefinition.put(&quot;include_in_all&quot;, annotation.includeInAll());
+if (annotation.ignoreAbove() > 0) {
+

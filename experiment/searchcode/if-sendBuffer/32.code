@@ -1,0 +1,6 @@
+&quot;[<client-port>,<server-ip>,<server-port>]\n&quot; +
+&quot;If you need default configs[8000,127.0.0.1,7000] just skip by typing ENTER key:\n&quot; +
+String cmd = screen.print(&quot;:>&quot;);
+if (cmd.equals(&quot;bye&quot;)) {
+tcpClient.sendToServer(cmd, sendBuffer);
+

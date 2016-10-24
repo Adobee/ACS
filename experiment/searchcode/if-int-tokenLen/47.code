@@ -1,0 +1,11 @@
+i = indexRef[0];
+
+int tokenLen = token.length();
+if (tokenLen == 0) {
+break;
+rule = new TextField(0, ERAs);
+break;
+case &#39;y&#39;:
+if (tokenLen == 2) {
+rule = TwoDigitYearField.INSTANCE;
+

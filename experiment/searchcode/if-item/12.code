@@ -1,0 +1,14 @@
+public class BackstagePassesUpdateQuality implements IUpdateQuality {
+
+@Override
+public void updateQuality(Item item) {
+item.sellIn--;
+
+if (item.sellIn > 10)
+item.quality ++;
+
+if (item.sellIn <= 10 &amp; item.sellIn >= 6)
+item.quality += 2;
+
+if (item.sellIn <= 5 &amp; item.sellIn >= 0)
+

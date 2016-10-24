@@ -1,0 +1,9 @@
+int _shortest = Integer.MAX_VALUE;
+int _longest = 0;
+if (lookup != null) {
+for (CharSequence[] seq : lookup) {
+_shortest = sz;
+}
+if (sz > _longest) {
+_longest = sz;
+

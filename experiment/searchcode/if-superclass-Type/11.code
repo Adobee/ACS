@@ -1,0 +1,10 @@
+public Type mType;
+
+public ResultCallback() {
+mType = getSuperclassTypeParameter(getClass());
+}
+public abstract void onResponse(T t);
+public static Type getSuperclassTypeParameter(Class<?> subclass) {
+Type superclass = subclass.getGenericSuperclass();
+if (superclass instanceof Class) {
+

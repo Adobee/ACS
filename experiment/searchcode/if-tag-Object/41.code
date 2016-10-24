@@ -1,0 +1,12 @@
+* @author huangyue  2013-10-21
+*/
+public abstract class Callback<T> {
+
+private String tag;
+
+public Callback() {
+@SuppressWarnings(&quot;unchecked&quot;)
+public void notify(Object object, boolean isSuceecd) {
+if (isSuceecd) {
+onSucceed((T) object);
+

@@ -1,0 +1,7 @@
+Appointment a1, Appointment a2) {
+Date minEnd =  a1.getMaxEnd();
+if ( a1.getMaxEnd() != null &amp;&amp; a2.getMaxEnd() != null &amp;&amp; a2.getMaxEnd().before( a1.getMaxEnd())) {
+// look for  10 years in the future (365 days * 10 days +3 for possible leap years)
+if ( minEnd == null)
+minEnd = new Date(maxStart.getTime() + DateTools.MILLISECONDS_PER_DAY * (365 * 10 +3));
+

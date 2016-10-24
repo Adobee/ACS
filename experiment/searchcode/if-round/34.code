@@ -1,0 +1,10 @@
+public static RoundCounter getInstance()
+{
+if (instance == null) instance = new RoundCounter();
+public boolean isNextRound()
+{
+if ((currentRound-lastMarkedRound)==1) return true;
+return false;
+}
+public int roundsFromMark()
+

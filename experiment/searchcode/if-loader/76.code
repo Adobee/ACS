@@ -1,0 +1,7 @@
+public ClassLoader getClassLoader(ClassLoader classLoader, Class clazz) {
+ClassLoader t = classLoader;
+if (t == null) {
+t = clazz.getSuperclass().getClassLoader();
+}
+if (t == null) {
+

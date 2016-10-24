@@ -1,0 +1,12 @@
+* @throws NoFeasibleSolutionException if there is no feasible solution
+*/
+protected void solvePhase1(final SimplexTableau tableau)
+throws MaxCountExceededException, UnboundedSolutionException, NoFeasibleSolutionException {
+epsilon,
+maxUlps);
+
+solvePhase1(tableau);
+tableau.dropPhase1Objective();
+
+while (!tableau.isOptimal()) {
+

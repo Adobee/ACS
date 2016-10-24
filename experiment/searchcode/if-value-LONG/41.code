@@ -1,0 +1,7 @@
+public static long safeAdd (long x, long y)
+{
+if (x > 0 &amp;&amp; y > 0 &amp;&amp; (x > Long.MAX_VALUE - y))
+throw new RuntimeException (&quot;Long number overflow&quot;);
+
+if (x < 0 &amp;&amp; y < 0 &amp;&amp; (x < Long.MIN_VALUE - y))
+

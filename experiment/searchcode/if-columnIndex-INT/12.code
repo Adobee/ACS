@@ -1,0 +1,9 @@
+c[0][columnIndex] = x + columnIndex;
+}
+
+for (int rowIndex = 1; rowIndex <= A.length(); rowIndex++) {
+for (int rowIndex = 1; rowIndex <= A.length(); rowIndex++) {
+int w = 2147483647;
+
+if (A.charAt(rowIndex - 1) == B.charAt(columnIndex - 1)) {
+

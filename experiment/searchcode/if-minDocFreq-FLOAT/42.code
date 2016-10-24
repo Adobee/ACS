@@ -1,0 +1,7 @@
+if (maxQueryTerms != other.maxQueryTerms) return false;
+if (minDocFreq != other.minDocFreq) return false;
+if (minTermFrequency != other.minTermFrequency) return false;
+if (!Arrays.equals(moreLikeFields, other.moreLikeFields)) return false;
+if (Float.floatToIntBits(percentTermsToMatch) != Float
+.floatToIntBits(other.percentTermsToMatch)) return false;
+

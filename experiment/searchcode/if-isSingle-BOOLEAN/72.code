@@ -1,0 +1,10 @@
+public class ExpressionSolver extends Solver implements NumericSolver{
+Node expr = null;
+Node[] exprArray = null;
+boolean isSingle;
+this.exprArray = expr;
+this.isSingle = false;
+this.isConst = true;
+for(Node n: expr){
+if (n instanceof ASTConstant) continue;
+

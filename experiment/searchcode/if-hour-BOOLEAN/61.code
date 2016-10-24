@@ -1,0 +1,9 @@
+public static final Time END = new Time(&quot;23:00&quot;, false);
+
+private int hour, minute;
+
+public Time(String timeString, boolean eve) {
+String[] split = timeString.replace(&#39;.&#39;, &#39;:&#39;).split(&quot;:&quot;);
+hour = Integer.parseInt(split[0]);
+if (split.length > 1) {
+

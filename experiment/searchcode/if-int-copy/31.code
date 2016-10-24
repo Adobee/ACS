@@ -1,0 +1,12 @@
+int l = a.length;
+if (l == 0)
+return -1;
+int m = (l-1)/2;
+if (n == a[m]) {
+return (f + m);
+}
+if (n < a[m]) {
+return rbinsearch(Arrays.copyOfRange(a, 0, m), n, f);
+}
+if (n > a[m]) {
+

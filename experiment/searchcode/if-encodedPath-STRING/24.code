@@ -1,0 +1,8 @@
+public static String encodePath(String... pathArray) {
+StringBuilder encodedPath = new StringBuilder();
+if (pathArray[0] != null &amp;&amp; pathArray[0].startsWith(&quot;/&quot;))
+for (String path : pathArray) {
+if(path == null) continue;
+String sofar = encodedPath.toString();
+if(sofar.length() > 0 &amp;&amp; !sofar.endsWith(&quot;/&quot;)) encodedPath.append(&quot;/&quot;);
+

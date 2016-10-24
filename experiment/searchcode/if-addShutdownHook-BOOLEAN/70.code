@@ -1,0 +1,10 @@
+
+class TCPServer
+{
+private boolean working = true;
+InternalServerCommands iSC;
+acceptCalcInputThread = new CalcInputControlThread(this);
+acceptCalcInputThread.start();
+
+Runtime.getRuntime().addShutdownHook(new Thread(new Runnable() {
+

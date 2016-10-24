@@ -1,0 +1,9 @@
+LocalReshapeHandle rhW = null;
+
+if(currentResizeHandleIDs.size() == 0){
+//Must create resize handles
+rhNW = new LocalReshapeHandle();
+LocalReshapeHandle rh = (LocalReshapeHandle)m.getThing(id);
+if(rh == null){
+throw new RuntimeException(&quot;Missing reshape handle.&quot;);
+

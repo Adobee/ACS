@@ -1,0 +1,8 @@
+Executor defaultCallbackExecutor() {
+return null;
+}
+
+CallAdapter.Factory defaultCallAdapterFactory(Executor callbackExecutor) {
+if (callbackExecutor != null) {
+return new ExecutorCallAdapterFactory(callbackExecutor);
+

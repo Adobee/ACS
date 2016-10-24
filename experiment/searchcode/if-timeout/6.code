@@ -1,0 +1,13 @@
+* 本线程设置了一个超时时间 该线程开始运行后，经过指定超时时间， 该线呈会抛出一个未检查异常通知调用该线呈的程序超时
+* 在超时结束前可以调用该类的cancel方法取消计时
+*
+* @author solonote
+*/
+public class TimeoutThread extends Thread {
+try {
+Thread.sleep(timeout);
+if (!isCanceled){
+isTimeout=true;
+}
+} catch (InterruptedException e) {
+

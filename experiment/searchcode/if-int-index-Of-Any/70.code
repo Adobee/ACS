@@ -1,0 +1,7 @@
+public static Map<String, String> split(String query) {
+Map<String, String> result = null;
+int queryStartIndex = query.indexOf(QUERY_START_CHAR);
+// extract name
+int startOfNameIndex = currentIndex;
+int endOfNameIndex = query.indexOf(NAME_VALUE_SEPARATOR_CHAR, startOfNameIndex);
+

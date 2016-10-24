@@ -1,0 +1,8 @@
+ClientEnvironment environment = new ClientEnvironment(settingsBuilder.build());
+
+if (loadConfigSettings) {
+boolean loadFromEnv = true;
+settingsBuilder.loadFromUrl(environment.resolveConfig(System.getProperty(&quot;es.config&quot;)));
+}
+if (System.getProperty(&quot;elasticsearch.config&quot;) != null) {
+

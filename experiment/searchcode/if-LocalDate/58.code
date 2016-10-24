@@ -1,0 +1,17 @@
+package ch05.ex05_06;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+
+public class FridayThe13th {
+LocalDate localDate = LocalDate.of(year, month, 13);
+DayOfWeek dayOfWeek = localDate.getDayOfWeek();
+if(dayOfWeek == DayOfWeek.FRIDAY) {
+System.out.println(localDate);
+}
+}
+}
+}
+
+}
+

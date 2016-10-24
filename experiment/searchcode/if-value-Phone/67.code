@@ -1,0 +1,8 @@
+@RequestMapping(method = RequestMethod.GET, value = &quot;/stolen&quot;)
+public List<PhoneDTO> getPhonesStolen() {
+ArrayList<PhoneDTO> phoneStolen = new ArrayList<>();
+for (int i = 1; i < phone.size(); i++) {
+PhoneDTO listPhone = phone.get(i);
+System.out.println(&quot;for&quot;);
+if (listPhone.getStolen()) {
+

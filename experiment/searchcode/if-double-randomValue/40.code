@@ -1,0 +1,15 @@
+public int modify(double value, float randomValue, float changePixel) {
+if (changePixel <= intensity) {
+return (int) (value * randomValue);
+}
+return (int) value;
+}
+
+// Remove this
+@Override
+public int apply(int pixel) {
+return 0;
+}
+
+}
+

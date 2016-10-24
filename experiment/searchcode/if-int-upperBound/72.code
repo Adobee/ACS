@@ -1,0 +1,9 @@
+public static void main(String[] args) {
+
+int upperBound = 7;
+System.out.println(&quot;Smallest multiple from 1 to &quot; + upperBound + &quot; is: &quot; + getSmallestMultiple(upperBound));
+
+}
+
+public static int getSmallestMultiple(int upperBound) {
+

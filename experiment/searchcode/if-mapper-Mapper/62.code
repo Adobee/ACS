@@ -1,0 +1,14 @@
+DatasourceMapper mapper = this.getMapper(DatasourceMapper.class);
+if(mapper != null) {
+return mapper.insert(ds);
+}
+return 0;
+DatasourceMapper mapper = this.getMapper(DatasourceMapper.class);
+if(mapper != null) {
+return mapper.update(ds);
+}
+return 0;
+}
+
+public int delete(String id) {
+

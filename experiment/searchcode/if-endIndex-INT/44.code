@@ -1,0 +1,8 @@
+public class Palindrome {
+
+private void reverse(StringBuilder b, int startIndex, int endIndex)
+{
+for (int i = 0; i < (endIndex - startIndex)/2; i++)
+{
+char tmp = b.charAt(startIndex + i);
+

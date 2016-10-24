@@ -1,0 +1,11 @@
+int m = Integer.valueOf(times[1]);
+
+int nh = m / 5;
+int nm = h * 5;
+
+if (nh == 0) nh = 12;
+if (nm == 60) nm = 0;
+return String.format(&quot;%02d:%02d&quot;, nh, nm);
+}
+}
+

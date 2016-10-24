@@ -1,0 +1,8 @@
+public class EncodingUtils {
+
+/**
+* If an encoding is not filled, default it by platform encoding.
+public String defaultByPlatformEncoding(String encoding, Log log) {
+if (StringUtils.isEmpty(encoding)) {
+encoding = System.getProperty(&quot;file.encoding&quot;);
+

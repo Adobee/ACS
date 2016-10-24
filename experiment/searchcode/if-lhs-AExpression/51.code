@@ -1,0 +1,9 @@
+public void caseAExpressionConstraintFactor(AExpressionConstraintFactor rawConstraintFactor) {
+
+try {
+if (logger.isDebugEnabled()) logger.debug(&quot;Found factor expression constraint factor &quot; + rawConstraintFactor);
+PConstraintExpression embeddedConstraintExpression =
+((AExpressionConstraintFactor)rawConstraintFactor).getConstraintExpression();
+
+if (logger.isDebugEnabled()) logger.debug(&quot;Recursing with constraint factor &quot; + embeddedConstraintExpression);
+

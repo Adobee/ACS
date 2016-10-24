@@ -1,0 +1,10 @@
+import java.util.List;
+
+import org.bigloupe.web.chart.dao.XYSeriesDao;
+import org.bigloupe.web.chart.model.Series;
+import org.bigloupe.web.chart.model.xy.XYSeries;
+key = key.replace(&quot;%&quot;, &quot;(\\d*)&quot;);
+
+for (XYSeries series : listSeries) {
+if (series.getKey().matches(key))
+

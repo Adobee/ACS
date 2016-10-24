@@ -1,0 +1,11 @@
+package evaluator;
+
+public class FuzzyMembership {
+
+private double upperBound;
+private double lowerBound;
+public FuzzyMembership(double up, double low)
+{
+upperBound = up;
+lowerBound = low;
+

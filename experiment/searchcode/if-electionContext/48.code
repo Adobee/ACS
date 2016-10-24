@@ -1,0 +1,12 @@
+final ElectionContext newContext = new ElectionContext(callback, requiredMasterJoins) {
+@Override
+void onClose() {
+if (electionContext.compareAndSet(this, null)) {
+assert false : &quot;failed to remove current election context&quot;;
+}
+done.countDown();
+}
+};
+
+if (electionContext.compareAndSet(null, newContext) == false) {
+

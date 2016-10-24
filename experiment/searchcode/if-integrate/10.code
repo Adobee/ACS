@@ -1,0 +1,6 @@
+import static org.matheclipse.core.expression.F.*;
+import static org.matheclipse.core.integrate.rubi45.UtilityFunctionCtors.*;
+ast = MemberQ(List($s(&quot;Sin&quot;), $s(&quot;Cos&quot;), $s(&quot;Tan&quot;), $s(&quot;Cot&quot;), $s(&quot;Sec&quot;), $s(&quot;Csc&quot;)),
+If(AtomQ(Sin(Times(C2, x))), Sin(Times(C2, x)), Head(Sin(Times(C2, x)))));
+check(ast, &quot;True&quot;);
+

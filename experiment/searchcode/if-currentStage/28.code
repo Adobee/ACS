@@ -1,0 +1,11 @@
+Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
+if(currentStage != null){
+currentStage.draw();
+super.dispose();
+}
+
+@Override
+public void resize(int width, int height) {
+if(currentStage != null)
+currentStage.getViewport().update(width, height, false);
+

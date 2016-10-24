@@ -1,0 +1,7 @@
+private void backTrack(int[] numbers, int p, int x, int removed, int goal) {
+if (p == numbers.length) {
+res = Math.min(res, removed);
+} else {
+if ((goal | numbers[p]) != goal) {
+backTrack(numbers, p + 1, x, removed, goal);
+

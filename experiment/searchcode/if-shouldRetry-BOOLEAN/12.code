@@ -1,0 +1,8 @@
+import java.util.concurrent.TimeoutException;
+
+public interface RetryStrategy {
+boolean shouldRetry(HttpRequest request, HttpResponse response);
+boolean shouldRetry(HttpRequest request, IOException exception);
+
+public RetryStrategy DEFAULT = new RetryStrategy() {
+

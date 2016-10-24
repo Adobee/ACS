@@ -1,0 +1,10 @@
+private int millis;
+
+public Timer(int millis, GameLoop loop) {
+this.millis = millis;
+this.loop = loop;
+now = System.currentTimeMillis();
+delta = now - lastTime;
+if(delta >= millis) {
+//System.out.println(&quot;Delta: &quot; + (delta - millis));
+

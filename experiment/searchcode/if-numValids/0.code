@@ -1,0 +1,7 @@
+private LongFilter(int numValids, int numInvalids) {
+if (numValids > 0) {
+valids = new LongOpenHashSet(numValids);
+int numInvalids = excludeValues == null ? 0 : excludeValues.size();
+LongFilter result = new LongFilter(numValids, numInvalids);
+if (includeValues != null) {
+

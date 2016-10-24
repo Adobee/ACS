@@ -1,0 +1,10 @@
+ClusterState.Builder builder = null;
+for (int i = 0; i < changesCount; i++) {
+if (i > 0) {
+throw new IllegalArgumentException(&quot;Shouldn&#39;t be here&quot;);
+}
+}
+clusterState = builder.incrementVersion().build();
+
+if (randomIntBetween(0, 10) < 1) {
+

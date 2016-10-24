@@ -1,0 +1,10 @@
+public float y;
+private Block[] blocks = new Block[7];
+
+public BlockRow(float y, int roadType) {
+this.y = y;
+for (int i = 0; i < 7; i++) {
+int a = (1 << (i * 4));
+int b = a | roadType;
+if (b == roadType) {
+

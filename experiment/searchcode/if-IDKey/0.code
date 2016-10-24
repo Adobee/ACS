@@ -1,0 +1,12 @@
+package co.jufeng.core.string;
+
+final class IDKey {
+private final Object value;
+IDKey idKey = (IDKey) other;
+if (id != idKey.id) {
+return false;
+}
+return value == idKey.value;
+}
+}
+

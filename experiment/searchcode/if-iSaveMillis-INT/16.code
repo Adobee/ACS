@@ -1,0 +1,13 @@
+dout.writeShort(idToIndex.get(id).shortValue());
+}
+}
+
+static int parseYear(String str, int def) {
+str = str.toLowerCase();
+if (str.equals(&quot;minimum&quot;) || str.equals(&quot;min&quot;)) {
+return Integer.MAX_VALUE;
+} else if (str.equals(&quot;only&quot;)) {
+return def;
+}
+return Integer.parseInt(str);
+

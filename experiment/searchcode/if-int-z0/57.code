@@ -1,0 +1,15 @@
+* Regular expression for
+* proxy host address
+*/
+static final String regexHost
+= &quot;(\\d+(\\.\\d+){3})|([a-zA-Z0-9][-a-zA-Z0-9]{0,62}(\\.[a-zA-Z0-9][-a-zA-Z0-9]{0,62})+)&quot;;
+public static boolean checkProxy(String host, int port) {
+if(host != null &amp;&amp; host.matches(regexHost)
+&amp;&amp; port > 0 &amp;&amp; port < 65535) {
+return true;
+}
+return false;
+}
+
+}
+

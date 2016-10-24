@@ -1,0 +1,9 @@
+public static Class<?> getClassForType(Type type)
+throws TypeException {
+
+/* Simple, but convert primitives */
+if (type instanceof Class) {
+final Type declaredBy = getGenericSupertype(type, rawType, declaringClass);
+if (declaredBy instanceof ParameterizedType) {
+int index = indexOf(declaringClass.getTypeParameters(), variable);
+

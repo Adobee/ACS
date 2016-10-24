@@ -1,0 +1,9 @@
+log.debug(&quot;shifumi received&quot;);
+}
+double randomValue = Math.random();
+byte[] response;
+if(randomValue < 0.3333){
+response = ShifumiMessage.PIERRE;
+}else if(randomValue < 0.6666){
+response = ShifumiMessage.FEUILLE;
+

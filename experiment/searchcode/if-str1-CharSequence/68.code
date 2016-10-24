@@ -1,0 +1,12 @@
+String str1 = this.mLoginData.mUsername;
+int i = str1.indexOf(&#39;@&#39;);
+if (i < 0)
+{
+String str2 = &quot;Invalid user name (missing \&quot;@\&quot;): &quot; + str1;
+Log.w(&quot;EnterpriseLoginIntroActivity&quot;, str2);
+}
+int j;
+if (i >= 0)
+j = i + 1;
+for (String str3 = str1.substring(j); ; str3 = str1)
+

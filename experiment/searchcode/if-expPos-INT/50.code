@@ -1,0 +1,12 @@
+private Vector2 levelPos;
+private Vector2 hpPos;
+private Vector2 strPos;
+private Vector2 expPos;
+_isInitialized=true;
+}
+
+@Override
+public void reposition(int x, int y, int width, int height)
+{
+if(_isInitialized)
+

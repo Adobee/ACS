@@ -1,0 +1,10 @@
+public class p21
+{
+public static void main(String args[])
+{
+
+int i, j, k=0, limit = 10000, temp, l, ans=0;
+int[] a = new int[limit+1];
+int[] prime = new int[limit];
+for( i=0; i<=limit; i++ )
+

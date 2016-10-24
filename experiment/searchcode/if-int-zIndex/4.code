@@ -1,0 +1,12 @@
+private static final long serialVersionUID = 1L;
+
+@Override
+public void zindex(int zIndex) {}
+
+@Override
+public int zindex() { return 0; }
+@Override
+public int compareTo(Drawable d) {
+System.out.println(zindex()+&quot;:&quot;+d.zindex());
+if(zindex() < d.zindex()) return -1;
+

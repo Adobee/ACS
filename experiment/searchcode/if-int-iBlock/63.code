@@ -1,0 +1,11 @@
+private int iblock = 0x0;
+private int shift = B2LLKmer.FIRST_SHIFT;
+
+
+public B2LLKmerFiller(int length){
+public void push(int c){
+code[iblock] |= c << shift;
+shift -= B2LLKmer.BITS_PER_MER;
+if(shift < 0){
+shift = B2LLKmer.FIRST_SHIFT;
+

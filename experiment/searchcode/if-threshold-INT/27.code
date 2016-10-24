@@ -1,0 +1,8 @@
+@Override
+public int calcula(int[][] pixels) {
+int menor = thresholdRange.getCeiling();
+for (int i = 0; i < getTamanho(); i++) {
+for (int j = 0; j < getTamanho(); j++) {
+int r = pixels[i][j] - threshold.getThreshold();
+if(r < menor) {
+

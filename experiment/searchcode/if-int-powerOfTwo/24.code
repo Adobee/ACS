@@ -1,0 +1,10 @@
+package manfred.leetcode;
+
+public class PowerOfTwo {
+public static void main(String[] args){
+PowerOfTwo test = new PowerOfTwo();
+boolean res = test.isPowerOfTwo(1);
+
+}
+public boolean isPowerOfTwo(int n) {
+

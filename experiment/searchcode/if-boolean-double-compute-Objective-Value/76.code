@@ -1,0 +1,7 @@
+private boolean updateFirst(DataObject<E> inputVector){
+double kValue = kernel.compute(inputVector, inputVector);
+vectors.put(inputVector,kValue);
+for(Entry<DataObject<E>,Double> entry : vectors.entrySet()){
+double kValue = kernel.compute(entry.getKey(), vector);
+sum+=kValue*entry.getValue();
+

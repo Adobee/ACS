@@ -1,0 +1,18 @@
+public class InArg extends Access {
+
+private IRExp irCode;
+private int offset;
+
+public InArg(int i) {
+if (i < X86_64Frame.arguments.size()) {
+@Override
+public String toString() {
+if (offset == -1) {
+return irCode.toString();
+} else {
+return &quot;&quot; + offset + &quot;(%rbp)&quot;;
+}
+}
+
+}
+

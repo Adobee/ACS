@@ -1,0 +1,7 @@
+* NOTE: code needs to be modified further if INF or -INF values
+*       are expected.
+*/
+public static double LogSum(double log_a, double log_b) {
+if (log_a == Double.NEGATIVE_INFINITY) return log_b;
+if (log_b == Double.NEGATIVE_INFINITY) return log_a;
+

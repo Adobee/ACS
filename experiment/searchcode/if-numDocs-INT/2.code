@@ -1,0 +1,13 @@
+IndexReader r = IndexReader.open( &quot;prdb_index&quot;);
+
+int num = r.numDocs();
+for ( int i = 0; i < num; i++)
+{
+if ( ! r.isDeleted( i))
+{
+Document d = r.document( i);
+System.out.println( &quot;d=&quot; +d);
+}
+}
+r.close();
+

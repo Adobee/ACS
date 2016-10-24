@@ -1,0 +1,11 @@
+public void move(int xAxis, int yAxis)
+{
+if(xAxis != 0 &amp;&amp; yAxis != 0)// if on axis
+{
+// run for each axis, for seperate collision
+move(xAxis,0);
+move(0,yAxis);
+return;
+}
+if (xAxis > 0){direction = 1;}// Right
+

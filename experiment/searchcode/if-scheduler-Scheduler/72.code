@@ -1,0 +1,10 @@
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+import org.quartz.impl.StdSchedulerFactory;
+
+public final class QuartzScheduler {
+public static Scheduler getInstance(String config) {
+if(scheduler == null) {
+if(StringUtils.isNotBlank(config)) {
+try {
+

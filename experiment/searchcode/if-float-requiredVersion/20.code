@@ -1,0 +1,8 @@
+private float requiredVersion = 0;
+private float clientVersion;
+
+public Update(String urlToCurrentServerVersionJSON, float clientVersion){
+requiredVersion =  (Float) jsonPackage.getJSON(&quot;version&quot;).get(&quot;required&quot;);
+
+if(clientVersion < requiredVersion){
+

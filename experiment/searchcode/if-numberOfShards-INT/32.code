@@ -1,0 +1,7 @@
+* @param numberOfShards
+*            The number of shards being queried.
+* @return A suggested default for the size of any shard-side PriorityQueues
+public static int suggestShardSideQueueSize(int finalSize, int numberOfShards) {
+assert numberOfShards >= 1;
+if (numberOfShards == 1) {
+

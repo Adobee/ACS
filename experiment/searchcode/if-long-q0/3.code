@@ -1,0 +1,10 @@
+public AttitudeData(double[] a, Long t) {
+super(t);
+
+double _q0 = Double.NaN;
+double _q1 = Double.NaN;
+double _q2 = Double.NaN;
+if (pair[0].compareTo(&quot;Q0&quot;) == 0) {
+_q0 = Double.parseDouble(pair[1]);
+} else if (pair[0].compareTo(&quot;Q1&quot;) == 0) {
+

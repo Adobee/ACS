@@ -1,0 +1,8 @@
+Object responseBody = Util.getObjFromJson(bodyStream);
+if (responseBody != null) onResponse(responseCode, responseBody);
+}
+}
+
+protected void onResponse(int responseCode, Object responseBody) {
+if (200 <= responseCode &amp;&amp; responseCode < 300 &amp;&amp; (responseBody == null || !(responseBody instanceof ServerException))) {
+

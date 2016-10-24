@@ -1,0 +1,8 @@
+public KVColumnType(DB db) {
+if (db == DB.mysql) {
+setMysqlColumns();
+} else if (db == DB.sqlserver) {
+columns.clear();
+columns.put(&quot;int&quot;, &quot;int&quot;);
+columns.put(&quot;varchar&quot;, &quot;String&quot;);
+

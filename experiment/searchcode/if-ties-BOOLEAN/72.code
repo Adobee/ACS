@@ -1,0 +1,10 @@
+java.util.List<java.lang.Integer> tiesTrace = new java.util.ArrayList<java.lang.Integer>();
+tiesTrace.add(ranks[0].getPosition());
+for (int i = 1 ; i < (ranks.length) ; i++) {
+if ((java.lang.Double.compare(ranks[i].getValue(), ranks[(i - 1)].getValue())) > 0) {
+tiesTrace.add(ranks[i].getPosition());
+}
+out[ranks[i].getPosition()] = pos;
+}
+if ((tiesTrace.size()) > 1) {
+

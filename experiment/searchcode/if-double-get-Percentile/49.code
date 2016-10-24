@@ -1,0 +1,7 @@
+public static boolean isFasterThanXPercentOfAllRequests(long executionTimeNanos, double percentileLimit, Timer timer) {
+boolean faster = true;
+faster = false;
+} else {
+final double percentile = timer.getSnapshot().getValue(percentileLimit);
+if (executionTimeNanos < percentile) {
+

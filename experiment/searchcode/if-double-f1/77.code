@@ -1,0 +1,7 @@
+double avgInput = (a+b+c)/3;
+double f1 = Math.pow(((Math.pow(a,2) + Math.pow(b,2))/(Math.pow(a,2) - Math.pow(b,2))), ((a+b+c)/Math.sqrt(c)));
+double f2 = Math.pow((Math.pow(a,2) + Math.pow(b,2) - Math.pow(c,3)), (a-b));
+double avgResult = (f1 + f2)/2;
+double diff = avgInput - avgResult;
+if (diff<0){
+

@@ -1,0 +1,7 @@
+@Table(name = &quot;DETAILED_REQUEST_OF_ITEMS&quot;)
+@XmlRootElement
+@NamedQueries({
+@NamedQuery(name = &quot;DetailedRequestOfItems.findAll&quot;, query = &quot;SELECT d FROM DetailedRequestOfItems d&quot;),
+DetailedRequestOfItems other = (DetailedRequestOfItems) object;
+if ((this.detailedRequestOfItemsPK == null &amp;&amp; other.detailedRequestOfItemsPK != null) || (this.detailedRequestOfItemsPK != null &amp;&amp; !this.detailedRequestOfItemsPK.equals(other.detailedRequestOfItemsPK))) {
+

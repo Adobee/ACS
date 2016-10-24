@@ -1,0 +1,10 @@
+int max = Integer.MIN_VALUE;
+for ( int i = 0 ; i < a.length; i++){
+int newValue = prev > 0 ? a[i] + prev: a[i];
+if ( newValue > max ) max = newValue;
+prev = newValue;
+}
+return max;
+}
+}
+

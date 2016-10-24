@@ -1,0 +1,10 @@
+private volatile boolean running = true;
+private volatile DirtyState dirty = DirtyState.DIRTY;
+
+@Override
+message.connection.sendPacket(new PlayerStatus(player.getName(), true));
+}
+}
+}
+if (dirty != DirtyState.CLEAN) sortIter();
+

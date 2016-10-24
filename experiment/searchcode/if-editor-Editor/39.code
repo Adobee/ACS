@@ -1,0 +1,7 @@
+// Types: WALL->DIRT->BOULDER->DIAMOND->EMPTY->BORDER->WALL
+public void selectNextEditorElement() {
+if(editorEntity.getType() == EditorEntity.EditorElementType.WALL) {
+editorEntity.setSprite(game.getAssets().getDirtEditorSprite());
+editorEntity.setType(EditorEntity.EditorElementType.DIRT);
+} else if(editorEntity.getType() == EditorEntity.EditorElementType.DIRT) {
+

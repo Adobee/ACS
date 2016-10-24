@@ -1,0 +1,12 @@
+private SolrServer cloudClient;
+private int numDeletes;
+private int numAdds;
+
+public StopableIndexingThread(SolrServer controlClient, SolrServer cloudClient, String id, boolean doDeletes) {
+numDeletes = 0;
+numAdds = 0;
+
+while (true &amp;&amp; !stop) {
+if (numCycles != -1) {
+if (numDone > numCycles) {
+

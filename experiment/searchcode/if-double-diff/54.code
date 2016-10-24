@@ -1,0 +1,8 @@
+int n = in.nextInt();
+double[] a = new double[n];
+for (int i = 0; i < n; i++) {
+a[i] = in.nextDouble();
+for (int i = 1; i < n; i++) {
+double diff = Math.abs(a[i] - a[i - 1]);
+if (2 * Math.PI - diff < diff) {
+

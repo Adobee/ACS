@@ -1,0 +1,8 @@
+int nTPos = newvalue.indexOf(&quot;T&quot;, nStart + 1);
+nLastEnd = (nTPos > nLastEnd ? nTPos : nLastEnd);
+try {
+if (nEnd > nStart) {
+nEnd = newvalue.indexOf(&quot;M&quot;, nStart + 1);
+nLastEnd = (nEnd > nLastEnd ? nEnd : nLastEnd);
+if ( (nEnd > nStart) &amp;&amp; (nTPos == -1 || nEnd < nTPos)) {
+

@@ -1,0 +1,7 @@
+protected void onMeasure(double availableWidth, double availableHeight) {
+int childCount = getChildCount();
+if (childCount == 0) {
+UIElement child = getChild(0);
+child.measure(availableWidth, availableHeight);
+double maxWidth = child.getMeasuredWidth();
+

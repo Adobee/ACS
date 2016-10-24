@@ -1,0 +1,7 @@
+if (target < A[0] || target > A[A.length - 1]) return result;
+int start = 0;
+int end = A.length - 1;
+while (start <= end){
+int mid = start + (end - start) / 2;
+if (target > A[mid]) start = mid + 1;
+

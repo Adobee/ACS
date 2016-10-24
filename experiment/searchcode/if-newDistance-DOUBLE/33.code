@@ -1,0 +1,8 @@
+throws ExtensionException, LogoException {
+
+String whichView = args[0].getString();
+double newDistance = args[1].getDoubleValue();
+
+if (newDistance < MIN_DISTANCE ) {
+throw new ExtensionException(&quot;Cannot set observer distance below &quot; + MIN_DISTANCE);
+

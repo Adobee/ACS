@@ -1,0 +1,9 @@
+SearchResult result = findNext(results, request.getParameter(&quot;view&quot;), ch0);
+rObj = new ResponseObject(results.size(), result);
+}
+else if (results.size() == 1)
+// search result is in current view and after ch0
+else if (result.view.equals(view) &amp;&amp; result.ch > ch0)
+{
+log.debug(&quot;result.view.equals(lastView) &amp;&amp; result.ch > ch0 -- returning result.ch=&quot; + result.ch);
+

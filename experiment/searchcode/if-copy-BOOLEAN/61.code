@@ -1,0 +1,9 @@
+public Boolean apply(A a) {
+for (Function<A, Boolean> f : fs) {
+if (!f.apply(a))
+return false;
+@Override
+public Boolean apply(A a) {
+for (Function<A, Boolean> f : fs) {
+if (f.apply(a))
+

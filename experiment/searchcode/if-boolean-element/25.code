@@ -1,0 +1,6 @@
+public static <Element> Collection<Element> filter(Collection<Element> collection,
+final MonadicFunction<? super Element, Boolean> filterer) {
+return filter(collection, new DyadicFunction<Integer, Element, Boolean>() {
+@Override
+public Boolean apply(Integer integer, Element element) {
+

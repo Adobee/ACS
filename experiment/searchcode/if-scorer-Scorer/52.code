@@ -1,0 +1,10 @@
+public float score() throws IOException {
+int curDoc = reqScorer.docID();
+float reqScore = reqScorer.score();
+if (optScorer == null) {
+return reqScore;
+}
+
+int optScorerDoc = optScorer.docID();
+if (optScorerDoc < curDoc &amp;&amp; (optScorerDoc = optScorer.advance(curDoc)) == NO_MORE_DOCS) {
+

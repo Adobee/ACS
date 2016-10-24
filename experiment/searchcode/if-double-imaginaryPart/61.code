@@ -1,0 +1,16 @@
+private double realPart;
+private double imaginaryPart;
+
+// Konstruktori
+public Complex() {
+}
+
+public Complex(double a) {
+this.realPart = a;
+this.imaginaryPart = b;
+}
+
+// Getteri
+public double getRealPart() {
+return realPart;
+

@@ -1,0 +1,7 @@
+static final ReadablePartialConverter INSTANCE = new ReadablePartialConverter();
+
+public Chronology getChronology(Object paramObject, Chronology paramChronology)
+{
+if (paramChronology == null)
+paramChronology = DateTimeUtils.getChronology(((ReadablePartial)paramObject).getChronology());
+

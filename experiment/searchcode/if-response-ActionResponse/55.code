@@ -1,0 +1,8 @@
+import org.opennaas.core.resources.action.ActionResponse;
+import org.opennaas.core.resources.action.ActionResponse.STATUS;
+public boolean isOk() {
+for (ActionResponse action : responses)
+{
+if (action.getStatus() == STATUS.ERROR)
+return false;
+

@@ -1,0 +1,12 @@
+private long timeoutMillis;
+
+private long startTimeMillis;
+
+private static Logger logger = LoggerFactory.getLogger(ActiveWait.class);
+public long getIntervalMillis() {
+return intervalMillis;
+}
+
+public long getTimeLeftMillis(){
+return startTimeMillis + timeoutMillis - System.currentTimeMillis();
+

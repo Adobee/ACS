@@ -1,0 +1,12 @@
+public ChannelException(Throwable cause) {
+super(cause);
+}
+
+public boolean addFaultyNode(JvmNode node, Exception x) {
+return addFaultyNode(new FaultyNode(node, x));
+return result;
+}
+
+public boolean addFaultyNode(FaultyNode node) {
+if (this.faultyNodes == null) {
+

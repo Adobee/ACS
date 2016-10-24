@@ -1,0 +1,13 @@
+private static final long serialVersionUID = -4099792402691141643L;
+
+private AtomicInteger value;
+
+private int startValue;
+private int endValue;
+
+/**
+* Creates a new AtomicInteger with the given initial value and max value
+int next = current >= this.endValue ? this.startValue : current + 1;
+if (value.compareAndSet(current, next))
+return current;
+

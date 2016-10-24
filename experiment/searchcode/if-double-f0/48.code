@@ -1,0 +1,14 @@
+vs[i] = randomVector();
+}
+}
+
+private Vector randomVector() {
+Vector v = null;
+if ( v == null || v.lengthSquared() > 1 ) {
+Vector f1 = f0.minus(Vector.ONES);
+Vector w = smoothStep(f0);
+
+double vx0, vx1, vy0, vy1, vz0, vz1;
+
+vx0 = gLattice(i, f0);
+

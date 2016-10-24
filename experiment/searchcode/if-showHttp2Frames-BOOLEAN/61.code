@@ -1,0 +1,10 @@
+@Option(name = &quot;--frames&quot;, description = &quot;Log HTTP/2 frames to STDERR&quot;)
+public boolean showHttp2Frames = false;
+
+@Option(name = &quot;--debug&quot;, description = &quot;Debug&quot;)
+public boolean debug = false;
+@Override public void run() {
+LoggingUtil.configureLogging(debug, showHttp2Frames);
+
+if (outputHandler == null) {
+

@@ -1,0 +1,7 @@
+String rootCacheNodeId = null;
+if (cacheNodes != null &amp;&amp; cacheNodes.length > 0)
+rootCacheNodeId = cacheNodes[0];
+// 获取缓存树根节点
+if (!tree.containsKey(rootCacheNodeId))
+tree.put(rootCacheNodeId, new CacheNode(rootCacheNodeId));
+

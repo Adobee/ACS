@@ -1,0 +1,12 @@
+public String toString() {
+
+String res;
+
+Integer c = (int) dividend / divisor;
+
+if (dividend % divisor == 0)
+res = c.toString();
+else if (c > 0) {
+fractAbb(dividend, divisor);
+res = c + &quot;(&quot; + (dividend - (divisor * c)) + &quot;/&quot; + divisor + &quot;)&quot;;
+

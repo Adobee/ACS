@@ -1,0 +1,15 @@
+public void setTimeout(int timeout) {
+if(timeout >= 0) {
+this.timeout = timeout;
+}
+}
+
+public int getTimeout() {
+// don&#39;t allow negative timeout values
+if(timeout < 0) {
+timeout = 0;
+}
+return timeout;
+}
+}
+

@@ -1,0 +1,12 @@
+super();
+}
+public accountstate(boolean iscopy, int depth) {
+super(iscopy, depth);
+}
+
+@override
+long prev = currentindex - 1;
+
+if ((prev &amp; 0xff) == 0) {
+hash256 skipindex = index.ledgerhashes(prev);
+

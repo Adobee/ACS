@@ -1,0 +1,8 @@
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.SSLSocketFactory;
+
+public final class Address {
+int hashCode2 = (((((this.uriHost.hashCode() + 527) * 31) + this.uriPort) * 31) + (this.sslSocketFactory != null ? this.sslSocketFactory.hashCode() : 0)) * 31;
+if (this.hostnameVerifier != null) {
+hashCode = this.hostnameVerifier.hashCode();
+

@@ -1,0 +1,10 @@
+final int n = s.length();
+boolean[][] f = new boolean[n][n];
+
+int start = 0;
+int len = 1;
+f[j][i] = s.charAt(j) == s.charAt(i) &amp;&amp; (i-j<2 || f[j+1][i-1]);
+
+if (i-j+1 > len &amp;&amp; f[j][i]){
+len = i-j+1;
+

@@ -1,0 +1,16 @@
+this.vertexList[1] = v1;
+}
+
+public Vertex[] getVertexList(){
+return this.vertexList;
+}
+
+
+@Override
+public boolean equals(Object o){
+Vertex[] edgeVertexList = edge.getVertexList();
+
+boolean equals = true;
+for (Vertex edgeVertex : edgeVertexList ){
+if (!this.contains(edgeVertex)){
+

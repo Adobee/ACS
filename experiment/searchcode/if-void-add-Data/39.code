@@ -1,0 +1,14 @@
+throw new IllegalArgumentException(&quot;Saving value out of range for type&quot;);
+}
+mData[mPos++] = (byte)v;
+}
+
+public void addU16(int v) {
+if ((v < 0) || (v > 0xffff)) {
+mData[mPos++] = (byte)((v >> 16) &amp; 0xff);
+mData[mPos++] = (byte)((v >> 24) &amp; 0xff);
+}
+
+public void addU64(long v) {
+if (v < 0) {
+

@@ -1,0 +1,6 @@
+final double a2High     = Double.longBitsToDouble(Double.doubleToRawLongBits(a2) &amp; ((-1L) << 27));
+final double a2Low      = a2 - a2High;
+final double b2High     = Double.longBitsToDouble(Double.doubleToRawLongBits(b2) &amp; ((-1L) << 27));
+final double prod2High  = a2 * b2;
+final double prod2Low   = a2Low * b2Low - (((prod2High - a2High * b2High) - a2Low * b2High) - a2High * b2Low);
+

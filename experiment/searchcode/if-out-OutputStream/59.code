@@ -1,0 +1,15 @@
+import java.io.IOException;
+import java.io.OutputStream;
+
+/**
+* This output stream scrambler puts bytes out into another stream. This
+nextByte ^= pattern[patternPosition];
+patternPosition++;
+if (patternPosition >= pattern.length) {
+patternPosition = 0;
+}
+outputStream.write(nextByte);
+}
+
+}
+

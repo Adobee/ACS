@@ -1,0 +1,6 @@
+ClusterStateRequest clusterStateRequest = Requests.clusterStateRequest()
+.routingTable(false)
+.nodes(false);
+final boolean renderDefaults = request.paramAsBoolean(&quot;include_defaults&quot;, false);
+private XContentBuilder renderResponse(ClusterState state, boolean renderDefaults, XContentBuilder builder, ToXContent.Params params) throws IOException {
+

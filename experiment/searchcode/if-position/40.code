@@ -1,0 +1,7 @@
+while (position.x() <= 7 &amp;&amp; position.y() <= 7 &amp;&amp; position.x() >= 0 &amp;&amp; position.y() >= 0 &amp;&amp; super.board.getPiece(position) == null) {
+if(!position.equals(super.position())){
+d.add(position);
+position = new Position(super.position().x() + (i * scalar), super.position().y() + (j * scalar));
+}
+if (super.board.getPiece(position) != null &amp;&amp; super.board.getPiece(position).team() == !super.team()) {
+

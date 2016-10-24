@@ -1,0 +1,7 @@
+T service = (T)myServices.get(serviceClass);
+if (service == null) {
+final Iterator<T> iterator = ServiceLoader.load(serviceClass, serviceClass.getClassLoader()).iterator();
+List<?> cached = myExtensions.get(extensionClass);
+if (cached == null) {
+final ServiceLoader<T> loader = ServiceLoader.load(extensionClass, extensionClass.getClassLoader());
+

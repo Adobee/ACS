@@ -1,0 +1,9 @@
+return result;
+}
+
+
+public boolean applies(File file) {
+for (Iterator i = ruleSets.iterator(); i.hasNext();) {
+if (((RuleSet)i.next()).applies(file)) {
+return true;
+

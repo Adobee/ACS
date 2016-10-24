@@ -1,0 +1,9 @@
+int direction = 1;
+while(ret.size()< size) {
+int[] newPos = nextPos(pos, direction);
+return ret;
+}
+
+private boolean isValid(int[] newPos,boolean[][] flags, int x, int y) {
+if(newPos[0]<0|| newPos[0]>x-1 || newPos[1]<0 || newPos[1] > y-1 || flags[newPos[1]][newPos[0]]) return false;
+

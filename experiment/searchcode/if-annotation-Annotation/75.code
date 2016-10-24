@@ -1,0 +1,11 @@
+public boolean canHandle(Annotation annotation) {
+if (baseAnnotation.isInstance(annotation)) {
+return true;
+public void assertViolation(Annotation annotation, Object value) {
+if (!canHandle(annotation)) {
+throw new IllegalArgumentException(&quot;Cannot handle &quot; + annotation);
+}
+}
+
+}
+

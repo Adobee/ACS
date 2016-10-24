@@ -1,0 +1,9 @@
+public static long getSeed() {
+if(seed == -1)
+seed = System.currentTimeMillis();
+return seed;
+* @return	True iff the seed was set to the new seed
+*/
+public static boolean setSeed(long seed) {
+if(seed == -1)
+

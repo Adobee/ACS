@@ -1,0 +1,6 @@
+return new TestSuite(OptimizeFunctionTest.class);
+}
+
+public void testMin(double expected, MultivariateFunction function, MultivariateVectorFunction gradient, double startPoint) {
+assertEqualsAbsoluteThreshold(expected, OptimizeFunction.optimize(GoalType.MINIMIZE, function, gradient, new double[]{startPoint})[0], 0.001);
+

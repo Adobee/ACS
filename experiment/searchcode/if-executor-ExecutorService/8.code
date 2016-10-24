@@ -1,0 +1,10 @@
+import org.slf4j.LoggerFactory;
+
+import java.util.concurrent.ExecutorService;
+
+/**
+* 执行者实现,如果设置了线程池则使用异步调用,否则同步调用.
+public Executor execute(Executable executable) {
+if (executorService != null) {
+logger.debug(&quot;execute async&quot;);
+

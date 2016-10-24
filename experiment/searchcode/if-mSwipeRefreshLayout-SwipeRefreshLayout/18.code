@@ -1,0 +1,9 @@
+public abstract class BaseActivity extends AppCompatActivity implements BaseView {
+
+protected SwipeRefreshLayout mSwipeRefreshLayout;
+
+protected abstract int getContentView();
+setContentView(getContentView());
+this.mSwipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipeRefreshLayout);
+if (mSwipeRefreshLayout != null) {
+

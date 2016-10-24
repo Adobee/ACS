@@ -1,0 +1,10 @@
+package com.hackbulgaria.algo.week2;
+
+public class Roots {
+private final double EPS = 0.00001;
+candidate = (low + high) / 2;
+double candidateSquared = candidate * candidate;
+double diff = dnumber - candidateSquared;
+
+if (diff > 0 &amp;&amp; diff < EPS || diff == 0) {
+

@@ -1,0 +1,10 @@
+private BytesReference documentSource;
+
+private boolean indexedDocumentExists = true;
+
+@Override
+protected Collection<Class<? extends Plugin>> getPlugins() {
+assertThat(getRequest.version(), Matchers.equalTo(indexedDocumentVersion));
+if (indexedDocumentExists) {
+return new GetResponse(
+

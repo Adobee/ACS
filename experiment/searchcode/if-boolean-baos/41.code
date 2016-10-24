@@ -1,0 +1,8 @@
+/* 31 */       baos.write(sequenceNumber);
+/* 32 */       if (lastPad != null)
+/* 33 */         baos.write(lastPad);
+/* 34 */       lastPad = md.digest(baos.toByteArray());
+/* 35 */       baos.reset();
+/* 36 */       if (pad != null)
+/* 37 */         baos.write(pad);
+

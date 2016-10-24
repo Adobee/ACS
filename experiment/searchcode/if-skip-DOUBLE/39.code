@@ -1,0 +1,8 @@
+for (int j = 0; j < Y.length; j++)
+draw.drawDot(new double[] { X[i], Y[j], Z[j][i] });
+}
+
+if (fill_shape) {
+for (int i = 0; i < X.length - 1-skipX-1; i+=skipX)
+draw.drawLine(new double[] { X[i], Y[j], Z[j][i] }, new double[] { X[i + 1], Y[j], Z[j][i + 1] });
+

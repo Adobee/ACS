@@ -1,0 +1,18 @@
+package threaded.file.reader;
+
+import java.util.concurrent.Callable;
+
+public abstract class JobThread<T> implements Callable<T>{
+reader.jobWaiting();
+while(true){
+waitOnReader();
+if(!process(r, reader.cur)){
+reader.jobDone();
+return r;
+}
+reader.jobWaiting();
+}
+}
+
+}
+

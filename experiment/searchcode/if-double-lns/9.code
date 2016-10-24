@@ -1,0 +1,14 @@
+int lnsBits = Float.floatToIntBits(lhs);
+int rhsBites = Float.floatToIntBits(rhs);
+if( lnsBits == rhsBites)
+{
+return 0;
+}
+if(lnsBits  < rhsBites)
+{
+return -1;
+}
+else
+{
+return 1;
+

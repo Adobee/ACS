@@ -1,0 +1,4 @@
+public static List<ParseError> checkSyntax(final FileUnit fileUnit, final ScopeManager scopeManager, final boolean lenient) throws ParseException {
+private static void checkJScopeIntegrity(final FileUnit fileUnit, final List<ParseError> errors, final ScopeManager scopeManager, final boolean lenient) throws ParseException {
+final SyntaxValidator validator = new JScopeIntegrityChecker(scopeManager);
+

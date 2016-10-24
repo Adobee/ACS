@@ -1,0 +1,9 @@
+ROUND_DOWN,
+
+/** Rounds away from zero if discarded digit is non-zero. */
+ROUND_UP,
+
+/** Rounds towards nearest unless both are equidistant in which case it rounds away from zero. */
+private static void computeStringConstants(final int highPrecisionDecimalDigits) {
+if (sqr2String == null || sqr2String.length() < highPrecisionDecimalDigits - 3) {
+

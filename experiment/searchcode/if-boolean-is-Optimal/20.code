@@ -1,0 +1,10 @@
+Score score = mc.findOptimal(grid, pieceInfo.getPosition());
+
+if(optimal == null || score.getPoints() < optimal.getPoints()){
+optimal = score;
+boolean cleared = false;
+
+GameInfo info = pi.getCurrentInfo();
+
+//If no info can be found, the game is over
+

@@ -1,0 +1,13 @@
+cipherInt[i]=Character.getNumericValue(encodeArray[i]);
+
+}
+int[] textInt=new int[size];
+textInt[0]=cipherInt[0];
+int j=0;
+for(int i=1;i<size;i++){
+
+if(i<repeat)
+textInt[i]=cipherInt[i]^cipherInt[i-1];
+else{
+textInt[i]=cipherInt[i]^cipherInt[i-1]^textInt[j];
+

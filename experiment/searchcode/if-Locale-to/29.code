@@ -1,0 +1,7 @@
+public static Locale getLocale(String symbol) {
+if (StringUtils.isEmpty(symbol))
+return null;
+for (Locale locale : Locale.values()) {
+if (StringUtils.isEquivalent(locale.getLocale_symbol(), symbol)) {
+return locale;
+

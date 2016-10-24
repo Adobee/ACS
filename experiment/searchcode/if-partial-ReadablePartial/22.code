@@ -1,0 +1,8 @@
+import org.joda.time.DateTimeField;
+import org.joda.time.LocalDateTime;
+import org.joda.time.ReadablePartial;
+
+public class IsLeapYearPrinter extends AbstractPrinterParser {
+public String fromPartial(ReadablePartial partial, Locale locale) {
+DateTimeField year = partial.getChronology().year();
+

@@ -1,0 +1,7 @@
+public static <T> void assertEquals(T expected, T actual) {
+if (expected instanceof Object) {
+if (!expected.equals(actual))
+} else {
+if (expected != actual)
+fail(&quot;Expected &quot; + expected + &quot; was &quot; + actual);
+

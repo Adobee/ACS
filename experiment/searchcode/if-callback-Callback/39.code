@@ -1,0 +1,7 @@
+public void handle(Callback[] callbacks) throws IOException, UnsupportedCallbackException {
+for (Callback callback : callbacks) {
+if (callback instanceof NameCallback)
+NameCallback nameCallback = (NameCallback)callback;
+nameCallback.setName(profile.getLogin());
+} else if (callback instanceof PasswordCallback){
+

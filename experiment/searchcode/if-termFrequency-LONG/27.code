@@ -1,0 +1,8 @@
+private Map<String, Long> negTermFrequency;
+private Map<String, Long> termFrequency;
+
+private QueryParser parser;
+public FileVisitResult visitFile(Path file, BasicFileAttributes attrs) throws IOException {
+Map<String, Long> map;
+if(file.toString().contains(&quot;pos&quot;)){
+

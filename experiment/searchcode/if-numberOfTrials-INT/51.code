@@ -1,0 +1,11 @@
+DisplayFrame  	displayFrame = new DisplayFrame(&quot;Kinetic Ising Model&quot;);
+int Tmax;
+int numberOfTrials;
+int stepsBetweenPlots;
+double rAccumulator[];
+ising.createRandomConfiguration();
+int tData = 2;
+for(int t = 0; t < Tmax; t++) {
+ising.doOneMCStep();
+if(t % stepsBetweenPlots == 0) displayFrame.show();
+

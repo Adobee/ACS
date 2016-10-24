@@ -1,0 +1,9 @@
+public static boolean contains(int[] list, int n)
+{
+if (list.length == 0) return false;
+
+if (list.length % 2 == 0)
+{
+if ( list[(list.length / 2) - 1] == n) return true;
+if ( list[(list.length / 2) - 1] > n) return contains(first(list, (list.length / 2) - 1) , n);
+

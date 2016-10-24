@@ -1,0 +1,6 @@
+protected Logger logger = Logger.getLogger(DefaultIndexQueryAgent.class);
+protected Set<String> loadFields = null;
+protected QueryBuilder queryBuilder = null;
+Query labelQuery = queryBuilder.createBooleanQuery(EntityIndexer.LABEL_FIELD, query, BooleanClause.Occur.SHOULD);
+if (labelQuery == null) {
+

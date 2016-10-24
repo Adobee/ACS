@@ -1,0 +1,9 @@
+return formatter.format(value);
+}
+@Override
+public ValueTick getTickMark(double value)
+{
+return new ValueTick(createLabel(value), value);
+final List<ValueTick> result = new ArrayList<ValueTick>();
+if(max_labels < 2 || Double.isNaN(range.getUpperBound()) || Double.isNaN(range.getLowerBound()))
+

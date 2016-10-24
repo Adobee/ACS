@@ -1,0 +1,5 @@
+public FreqTermsEnum(IndexReader reader, String field, boolean needDocFreq, boolean needTotalTermFreq, @Nullable Filter filter, BigArrays bigArrays) throws IOException {
+this.needTotalTermFreqs = needTotalTermFreq;
+if (needDocFreq) {
+termDocFreqs = bigArrays.newIntArray(INITIAL_NUM_TERM_FREQS_CACHED, false);
+

@@ -1,0 +1,11 @@
+public double add(double lhs, Double rhs) {
+// TODO Auto-generated method stub
+return lhs+rhs;
+return lhs-rhs;
+}
+
+@Override
+public double div(Double lhs, int rhs) {
+// TODO Auto-generated method stub
+if (rhs == 0)
+

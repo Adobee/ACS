@@ -1,0 +1,11 @@
+DoubleArrayValue daValue = (DoubleArrayValue)v;
+if(daValue.doubleArray != null) {
+this.doubleArray = daValue.doubleArray.clone();
+} else {
+return this.doubleArray != null;
+}
+
+@Override
+public Value setValue(String v) {
+if(v.startsWith(&quot;\&quot;&quot;) &amp;&amp; v.endsWith(&quot;\&quot;&quot;)){
+

@@ -1,0 +1,16 @@
+public class OpDelete extends Operation{
+
+private OpDraw opDraw;
+
+public OpDelete() {
+type = Op.DELETE;
+this.opDraw = opManage.getNowDraw();
+}
+
+
+
+@Override
+public void Redo() {
+opDraw = opManage.getNowDraw();
+if(opDraw!=null)
+

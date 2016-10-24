@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class Recursion{
+public long fact(int n){
+if (n==0)
+return 1;
+else
+return n * fact(n-1);
+}
+
+public long fibRec(int n){
+if (n == 0)
+

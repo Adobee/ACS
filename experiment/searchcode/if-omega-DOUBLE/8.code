@@ -1,0 +1,20 @@
+public Control (double s, double omega){
+if (omega < -Math.PI)
+this._omega = -Math.PI;
+else if (omega > Math.PI)
+else if (omega > 10)
+this._s = 10;
+else
+this._s = s;
+
+}
+
+public double getSpeed() {
+return _s;
+}
+
+public double getRotVel() {
+return _omega;
+}
+}
+

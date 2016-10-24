@@ -1,0 +1,8 @@
+EolPrimitiveExpression oldPrimitiveExpression = primitiveExpression;
+primitiveExpression = newPrimitiveExpression;
+if (eNotificationRequired()) {
+if (newPrimitiveExpression != primitiveExpression) {
+NotificationChain msgs = null;
+if (primitiveExpression != null)
+msgs = ((InternalEObject)primitiveExpression).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - EtlMetaModelPackage.EOL_ITEM_SELECTOR_EXPRESSION__PRIMITIVE_EXPRESSION, null, msgs);
+

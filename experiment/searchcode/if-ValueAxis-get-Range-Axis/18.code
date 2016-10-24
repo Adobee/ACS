@@ -1,0 +1,12 @@
+public void setFourValueAxis(NumberAxis axis) {
+this.fourValueAxis = axis;
+}
+
+public ValueAxis getDummyValueAxis() {
+return new ValueAxis() {
+protected String getTickMarkLabel(Object t) {return null;}
+};
+}
+public ValueAxis getDummyTwoArgValueAxis() {
+return new ValueAxis(2.0, 100.0) {
+

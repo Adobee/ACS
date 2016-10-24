@@ -1,0 +1,10 @@
+/**
+* Wrapper class for an int that may be changed.
+* Does not support autoboxing or unboxing.
+return Integer.toString(value);
+}
+
+public boolean equals(Object other) {
+if (other instanceof MutableInteger)
+return value == ((MutableInteger) other).value;
+

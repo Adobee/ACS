@@ -1,0 +1,10 @@
+public Expr evaluate(IEvaluationContext context, Expr[] args) throws ExprException {
+assertArgCount(args, 1);
+
+Expr a = evalArg(context, args[0]);
+String s = null;
+
+if (a instanceof ExprString) {
+s = ((ExprString) a).str;
+} else if (a instanceof ExprNumber) {
+

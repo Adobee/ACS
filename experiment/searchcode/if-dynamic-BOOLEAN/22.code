@@ -1,0 +1,6 @@
+dynamicViewsByComponent.put(dynamicView.getComponentModel(), dynamicView);
+if (dynamicView.getFileName() != null)
+dynamicViewsById.remove(new Integer(dynamicView.getId()));
+dynamicViewsByComponent.remove(dynamicView.getComponentModel());
+if (dynamicViewsByPath.containsKey(dynamicView.getFileName()))
+

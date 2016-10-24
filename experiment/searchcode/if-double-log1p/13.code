@@ -1,0 +1,11 @@
+* @summary Tests for {Math, StrictMath}.log1p
+* @author Joseph D. Darcy
+*/
+
+import sun.misc.DoubleConsts;
+failures += testLog1pCase(-d, -d);
+}
+
+// For x > 2^53 log1p(x) ~= log(x)
+for(int i = 53; i <= DoubleConsts.MAX_EXPONENT; i++) {
+

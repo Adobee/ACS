@@ -1,0 +1,7 @@
+public void crawlPage(HttpUrl url) {
+// Skip hosts that we&#39;ve visited many times.
+for (String l:page.ls) {
+HttpUrl lU=base.resolve(l);
+if (lU!=null&amp;&amp;!fetchedUrls.add(lU)) {
+crawlPage(lU);
+

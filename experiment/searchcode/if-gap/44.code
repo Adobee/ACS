@@ -1,0 +1,10 @@
+package Main;
+
+public class ShellSort {
+static void sort(int[] ary){
+int k;
+for(int gap=(ary.length/2);gap>0;gap/=2){
+if(gap%2==0)gap++;
+for(int i=0;i<gap;i++){
+for(int j=i+gap;j<ary.length;j +=gap){
+

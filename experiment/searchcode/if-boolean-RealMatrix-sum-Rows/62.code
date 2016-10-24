@@ -1,0 +1,5 @@
+RealMatrix arzneg = selectColumns(arz, MathArrays.copyOf(arReverseIndex, mu));
+RealMatrix arnorms = sqrt(sumRows(square(arzneg)));
+private static RealMatrix sumRows(final RealMatrix m) {
+final double[][] d = new double[1][m.getColumnDimension()];
+

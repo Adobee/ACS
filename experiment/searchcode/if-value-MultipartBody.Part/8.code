@@ -1,0 +1,8 @@
+if ( !(request.body() instanceof MultipartBody) ) {
+return request;
+}
+List<MultipartBody.Part> parts = ((MultipartBody) request.body()).parts();
+MultipartBody.Builder builder = new MultipartBody.Builder()
+.setType(MultipartBody.FORM)
+.addFormDataPart(&quot;username&quot;, &quot;leichao&quot;)
+

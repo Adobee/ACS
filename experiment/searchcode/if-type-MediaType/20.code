@@ -1,0 +1,9 @@
+public static MediaType wrapperLite(alexclin.httplite.MediaType type){
+if(type == null) return null;
+if(type instanceof OkMediaType){
+return ((OkMediaType)type).raw();
+}else
+return MediaType.parse(type.toString());
+}
+}
+

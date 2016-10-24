@@ -1,0 +1,15 @@
+protected DenseMatrix64F dummyV;
+protected double[][] k;
+
+public RungeKutta4thOrderSolver(double step) {
+super(step);
+}
+
+@Override
+this.k = new double[c.length][ode.getDimensionOfVectorField()];
+}
+
+@Override
+protected double findNextState(double t, double[] x, double step, double maxStep) {
+if (step > maxStep)
+

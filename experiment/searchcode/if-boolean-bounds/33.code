@@ -1,0 +1,13 @@
+assert(bounds.length == point.length);
+for(int i=0; i<bounds.length; i++)
+{
+if(point[i] < bounds[i][0])
+return true;
+}
+
+public boolean contains(double[] point)
+{
+for(int i=0; i<bounds.length; i++)
+{
+if(bounds[i][0] > point[i]) return false;
+

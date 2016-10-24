@@ -1,0 +1,7 @@
+int pos = itemListHandler.getListView().pointToPosition((int) e1.getX(), (int) e2.getY());
+if (pos >= 0 &amp;&amp; temp_position == pos) {
+long expPos = itemListHandler.getListView().getExpandableListPosition(pos);
+int groupPos = ExpandableListView.getPackedPositionGroup(expPos);
+int childPos = ExpandableListView.getPackedPositionChild(expPos);
+if (childPos >= 0) {
+

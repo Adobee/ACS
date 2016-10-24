@@ -1,0 +1,9 @@
+public Time(int hour, int minute) {
+if(hour >= 24 || minute >= 60 || hour < 0 || minute < 0) {
+throw new InvalidParameterException(&quot;Invalid time&quot;);
+this.minuteOfDay = (hour * 60) + minute;
+}
+
+public Time(int minuteOfDay) {
+if(minuteOfDay < 0 || minuteOfDay >= 1440) {
+

@@ -1,0 +1,6 @@
+public static void test(DifferentiableFunction func, double[] x) {
+double[] nextX = DoubleArrays.clone(x);
+while (delta > DEL_MIN &amp;&amp; !ok) {
+nextX[i] += delta;
+double nextVal = func.valueAt(nextX);
+

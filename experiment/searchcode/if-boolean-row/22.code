@@ -1,0 +1,15 @@
+package leetcode.n_queens_ii;
+
+public class Solution {
+public int dfs(boolean[] row, boolean[] col, boolean[] diag, boolean[] rdiag, int n, int c){
+row[r] = col[c] = diag[r + c] = rdiag[r - c + n - 1] = false;
+}
+}
+return ans;
+}
+}
+
+public int totalNQueens(int n) {
+if(n == 0) return 1;
+boolean[] row = new boolean[n];
+

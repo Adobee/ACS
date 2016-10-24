@@ -1,0 +1,10 @@
+package easycare.web.converter;
+
+import org.joda.time.LocalDate;
+import org.springframework.beans.factory.annotation.Autowired;
+private ApplicationMessageSource messageSource;
+
+@Override
+public String convert(LocalDate localDate) {
+if (localDate == null) {
+

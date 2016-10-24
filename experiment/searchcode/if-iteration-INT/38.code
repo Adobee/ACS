@@ -1,0 +1,12 @@
+// PWCypher extends the Cypher class, it invokes a piecewise method to determine shift values based on the key and the iteration
+
+public class PWCypher extends Cypher
+{
+protected int shiftFunction(int key, int iteration)
+{
+if(key<10)
+{
+if(iteration<2)
+{
+return key*iteration;
+

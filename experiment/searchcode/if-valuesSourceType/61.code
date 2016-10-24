@@ -1,0 +1,9 @@
+super(scriptable, formattable, false, ValuesSourceType.ANY, null);
+}
+}
+
+public abstract static class NumericValuesSourceParser extends AbstractValuesSourceParser<ValuesSource.Numeric> {
+ValuesSourceAggregatorBuilder<VS, ?> factory = createFactory(aggregationName, this.valuesSourceType, this.targetValueType,
+otherOptions);
+if (field != null) {
+

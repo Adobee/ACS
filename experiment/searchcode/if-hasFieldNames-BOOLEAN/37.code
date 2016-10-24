@@ -1,0 +1,15 @@
+fAliased = aliased;
+fParameters = parameters;
+}
+
+@Override
+public boolean isParameterized() {
+return !fParameters.equivalent(VoidType.getInstance());
+public Type compose(Type other) {
+return fAliased.compose(other);
+}
+
+@Override
+public boolean hasFieldNames() {
+return fAliased.hasFieldNames();
+

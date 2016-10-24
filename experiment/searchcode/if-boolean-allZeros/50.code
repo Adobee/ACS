@@ -1,0 +1,6 @@
+static String concat(List<Integer> list) {
+boolean allZeros = list.stream().allMatch(s -> s.equals(0));
+StringBuilder result = new StringBuilder();
+if (allZeros) {
+result.append(list.get(0));
+

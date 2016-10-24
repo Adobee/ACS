@@ -1,0 +1,6 @@
+public static int computeLevenshteinDistance(CharSequence lhs, CharSequence rhs) {
+if (&quot;&quot;.equals(lhs) &amp;&amp; &quot;&quot;.equals(rhs))
+distance[i][j] = minimum(distance[i - 1][j] + 1, distance[i][j - 1] + 1, distance[i - 1][j - 1] + ((lhs.charAt(i - 1) == rhs.charAt(j - 1)) ? 0 : 1));
+
+return distance[lhs.length()][rhs.length()];
+

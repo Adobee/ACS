@@ -1,0 +1,7 @@
+public static void checkLengthLegal(double[] v1, double[] v2) {
+if (!isLengthLegal(v1, v2)) {
+throw new IllegalArgumentException(lengthMismatch);
+public static void checkLengthLegal(double[] v1, double[] v2, double[] v3) {
+if (!isLengthLegal(v1, v2, v3)) {
+throw new IllegalArgumentException(lengthMismatch);
+

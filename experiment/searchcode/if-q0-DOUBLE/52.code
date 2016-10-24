@@ -1,0 +1,13 @@
+package us.wthr.jdem846.math;
+
+
+public class Quaternion
+{
+private double q0;
+private double q1;
+public void set(Vector axis, double angle)
+{
+double halfTheta = angle / 2.0f;
+
+q0 = MathExt.cos(halfTheta);
+

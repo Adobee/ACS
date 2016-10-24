@@ -1,0 +1,9 @@
+private static Retrofit.Builder builder;
+
+public static <S> S createService(Class<S> serviceClass, HttpUrl baseURL) {
+builder = new Retrofit.Builder()
+return createService(serviceClass,baseURL , null, null);
+}
+
+public static <S> S createService(Class<S> serviceClass, HttpUrl baseURL, String username, String password) {
+

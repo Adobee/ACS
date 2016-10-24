@@ -1,0 +1,12 @@
+return this;
+}
+
+public MeasureAssert hasValue(boolean expected) {
+isNotNull();
+
+if (actual.getValueType() != Measure.ValueType.BOOLEAN) {
+Measure.ValueType.DOUBLE, actual.getValueType());
+}
+
+if (actual.getBooleanValue() != expected) {
+

@@ -1,0 +1,11 @@
+long seconds = timeDifference / 1000;
+final long days = seconds / DAY;
+if (days > 0) {
+text.append(days + &quot;d &quot;);
+}
+seconds %= DAY;
+
+long hours = seconds / HOUR;
+if (hours > 0) {
+text.append(hours + &quot;h &quot;);
+

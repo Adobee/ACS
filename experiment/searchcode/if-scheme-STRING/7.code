@@ -1,0 +1,11 @@
+private String _scheme;
+
+Scheme(String scheme_) {
+_scheme = scheme_;
+}
+
+public static Scheme matchScheme(String imageUrl_){
+if(!TextUtils.isEmpty(imageUrl_)){
+for(Scheme scheme : values()){
+if(scheme.isMatch(imageUrl_))
+

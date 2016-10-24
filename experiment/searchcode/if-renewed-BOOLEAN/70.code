@@ -1,0 +1,12 @@
+public NewBookDecorator(Book decoratedBook) {
+this.decoratedBook = decoratedBook;
+}
+
+// New books cannot be renewed
+@Override
+public boolean renew(Member member) {
+return false;
+}
+@Override
+public boolean checkFines(Member member) {
+

@@ -1,0 +1,11 @@
+rectangles[i] = new int []{s.nextInt(), s.nextInt(), s.nextInt(), s.nextInt()};
+}
+
+int pointCount = s.nextInt();
+int [][] points = new int[pointCount][2];
+for( int i = 0; i<pointCount; i++){
+for(int i = 0; i<rectCount; i++){
+int intersectionCount = 0;
+for(int j = 0; j<pointCount; j++){
+if ( ((rectangles[i][0] < points[j][0] &amp;&amp; points[j][0] < rectangles[i][2]) || (rectangles[i][0] > points[j][0] &amp;&amp; points[j][0] > rectangles[i][2])) &amp;&amp; ((rectangles[i][1] < points[j][1] &amp;&amp; points[j][1] < rectangles[i][3])|| (rectangles[i][1] > points[j][1] &amp;&amp; points[j][1] > rectangles[i][3]) )) {
+

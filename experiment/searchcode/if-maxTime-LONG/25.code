@@ -1,0 +1,10 @@
+private long maxTime;
+
+public AbstractMeasurementAccumulator() {
+minTime = Long.MAX_VALUE;
+maxTime = 0;
+}
+
+@Override
+public final void recordAt(final long timestampMillis, final long measurement) {
+

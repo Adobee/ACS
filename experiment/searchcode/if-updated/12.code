@@ -1,0 +1,10 @@
+public static void checkAndUpdateUser(CracUser old, CracUser updated){
+
+BCryptPasswordEncoder bcryptEncoder = new BCryptPasswordEncoder();
+
+if (updated.getPassword() != null) {
+old.setPassword(bcryptEncoder.encode(updated.getPassword()));
+}
+
+if (updated.getName() != null) {
+

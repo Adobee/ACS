@@ -1,0 +1,9 @@
+Dialog dialog;
+
+if (upgradeConfig.dialogInterceptor == null) {
+dialog = UpgradeDialog.createDialog(upgradeConfig.context, upgrade, upgradeListener);
+dialog = upgradeConfig.dialogInterceptor.intercept(upgrade, upgradeListener);
+}
+
+if (dialog != null) {
+

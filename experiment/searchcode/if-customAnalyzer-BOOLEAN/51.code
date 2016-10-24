@@ -1,0 +1,9 @@
+includeAttributes.add(attribute.toLowerCase(Locale.ROOT));
+}
+}
+
+CustomAnalyzer customAnalyzer = null;
+if (analyzer instanceof CustomAnalyzer) {
+customAnalyzer = (CustomAnalyzer) analyzer;
+} else if (analyzer instanceof NamedAnalyzer &amp;&amp; ((NamedAnalyzer) analyzer).analyzer() instanceof CustomAnalyzer) {
+

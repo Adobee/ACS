@@ -1,0 +1,6 @@
+int frames = buffer.getUnsignedByte();
+int[] primaries = new int[frames], secondaries = new int[frames], durations = new int[frames];
+if (obj instanceof FrameCollection) {
+FrameCollection other = (FrameCollection) obj;
+if (!Arrays.equals(primaries, other.primaries) || !Arrays.equals(secondaries, other.secondaries)) {
+

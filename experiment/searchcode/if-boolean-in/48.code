@@ -1,0 +1,15 @@
+private boolean state = false;
+private boolean oldIn = false;
+
+public void feed(boolean in) {
+if(oldIn == false &amp;&amp; in == true) {
+state = false;
+}
+oldIn = in;
+}
+
+public boolean get() {
+return state;
+}
+}
+

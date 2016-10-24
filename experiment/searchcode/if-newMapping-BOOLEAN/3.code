@@ -1,0 +1,7 @@
+public abstract class BaseAction extends Action {
+
+/** Retorna true si se ha pulsado un botón submit de alta */
+protected boolean isAlta(HttpServletRequest request) {
+ActionForm newForm = RequestUtils.createActionForm(request, newMapping, config, this.servlet);
+if (&quot;session&quot;.equals(newMapping.getScope())) {
+

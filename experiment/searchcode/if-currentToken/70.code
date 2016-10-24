@@ -1,0 +1,6 @@
+JsonParser parser = new JsonFactory().createJsonParser(content.getBytes());
+JsonToken currentToken = parser.nextToken();
+if (currentToken.equals(JsonToken.START_OBJECT)) {
+while (currentToken != null &amp;&amp; !currentToken.equals(JsonToken.END_OBJECT)) {
+if (currentToken.toString().startsWith(&quot;VALUE_&quot;)) {
+

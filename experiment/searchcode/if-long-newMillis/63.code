@@ -1,0 +1,10 @@
+resCal.setTime(newDate);
+}
+
+if (newTime != null) {
+Calendar tmpCal;
+long newMillis;
+long curTimeMillis;
+
+tmpCal = Calendar.getInstance();
+

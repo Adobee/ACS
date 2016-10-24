@@ -1,0 +1,14 @@
+private int batchSize ;
+
+private int defaultBatchSize ;
+
+private boolean autoExecuteUpdate = true ;
+
+protected AbstractBatcher(int defaultBatchSize){
+this.defaultBatchSize = defaultBatchSize ;
+}
+
+protected void checkAndAutoExecuteBatch(int objectsCountInBatch){
+//exceeds the batchSize
+if(autoExecuteUpdate){
+

@@ -1,0 +1,11 @@
+public class EaseOutElastic extends SimpleTweener {
+private double amplitude;
+private double period;
+
+public EaseOutElastic(double period, double amplitude) {
+if (t == 1)
+return b + c;
+double p = Double.isNaN(this.period) ? d * 0.3 : this.period;
+double s;
+double a = Double.isNaN(this.amplitude) ? 0 : this.amplitude;
+

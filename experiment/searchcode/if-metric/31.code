@@ -1,0 +1,13 @@
+Metric metric = null;
+if (name.startsWith(&quot;a&quot;)) {
+metric = new AUC();
+} else if (name.startsWith(&quot;c&quot;)) {
+metric = new Error();
+} else if (name.startsWith(&quot;r&quot;)) {
+metric = new RMSE();
+}
+return metric;
+}
+
+}
+

@@ -1,0 +1,10 @@
+assertEquals(1, results.size());
+assertEquals(foo2, results.get(0));
+
+// test And double args
+where = qb.where();
+assertEquals(1, dao.create(foo2));
+assertEquals(2, dao.queryForAll().size());
+
+QueryBuilder<Foo, Object> qb = dao.queryBuilder();
+

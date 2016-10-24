@@ -1,0 +1,16 @@
+import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
+
+public class TeeAppendable implements Appendable, Closeable {
+@Override
+public void close() throws IOException {
+for (Appendable o : wrapped) {
+if (o instanceof Closeable) {
+Closeable c = (Closeable) o;
+c.close();
+}
+}
+}
+}
+

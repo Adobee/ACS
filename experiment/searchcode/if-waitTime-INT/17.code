@@ -1,0 +1,9 @@
+int curTime = 0;
+int max = 0; // first one
+
+int waitTime = 0;
+for (int i = 1; i < arrival.length; ++i) {
+curTime = arrival[i - 1] + service[i - 1] + waitTime;
+waitTime = 0;
+if (curTime <= arrival[i]) {
+

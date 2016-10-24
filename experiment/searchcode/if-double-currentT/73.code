@@ -1,0 +1,7 @@
+TransitionState nextTs = startBeamState.transState;
+double startScore = startBeamState.score;
+if (startScore != Double.NEGATIVE_INFINITY) {
+double emissionScore = emissionModel.score(t, e, nextT-t);
+double score = startScore + emissionScore;
+if (score != Double.NEGATIVE_INFINITY) {
+

@@ -1,0 +1,13 @@
+private final static double MIN_VALUE = Double.MIN_NORMAL;
+
+private double max;
+private double average;
+private double correction;
+
+public Normalizer() {
+return correction;
+}
+
+public void setCorrection(double correction) {
+if (correction < 0 || correction > 1) {
+

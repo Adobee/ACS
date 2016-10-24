@@ -1,0 +1,7 @@
+String[] names = dataset[datasetIndex].toArray(new String[dataset[datasetIndex].size()]);
+if (names[0] == null) {
+names = null;
+plot.points(y, names);
+} else if (dataset[datasetIndex].response() != null) {
+int[] labels = dataset[datasetIndex].toArray(new int[dataset[datasetIndex].size()]);
+

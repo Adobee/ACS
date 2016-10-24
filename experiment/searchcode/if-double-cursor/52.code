@@ -1,0 +1,7 @@
+for (Vehicle vehicle : params) {
+cursor = vehicle.getFuelStopCursor();
+if (cursor.moveToFirst()) {
+Log.v(TAG, &quot;Date: &quot; + cursor.getString(cursor.getColumnIndex(FuelStop.DATE)));
+while (!cursor.isLast() &amp;&amp; !cursor.isAfterLast()) {
+if (cursor.getInt(cursor.getColumnIndex(FuelStop.COMPLETE_FILL_UP)) == 1 &amp;&amp;
+

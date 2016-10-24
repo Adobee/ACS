@@ -1,0 +1,17 @@
+System.out.print(a[i]);
+}
+
+
+System.out.print(&quot;.&quot;);
+
+int j=0;
+double tmp2 = 0;
+
+while(y !=0.0){
+tmp2 = y*2;
+System.out.print((int)tmp2);
+y = tmp2 - (int)tmp2;
+j++;
+
+if(j==10) break;
+

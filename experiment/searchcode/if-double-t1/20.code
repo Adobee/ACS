@@ -1,0 +1,15 @@
+public Game() {
+this.r = new Random();
+}
+
+public Team play(Team t1, Team t2) {
+double pab = (t1.wp()-(t1.wp()*t2.wp()))/(t1.wp()+t2.wp()-(2*t1.wp()*t2.wp()));
+this.d = this.r.nextDouble();
+if (pab>=this.d) {
+return t1;
+} else {
+return t2;
+}
+}
+}
+

@@ -1,0 +1,9 @@
+private static final Logger logger = Logger.getLogger(Route.class);
+
+private String pathSegment = null;
+private String segmentName = null;
+private boolean wildcardSegment = Boolean.FALSE;
+public Route<T> getRouteForSegment(String pathSegment) {
+Route<T> r = getRoutes().get(pathSegment);
+if (r != null) {
+

@@ -1,0 +1,11 @@
+private LogUtil() {
+}
+
+private static volatile boolean writeLogs = true;
+
+public static void writeLogs(boolean writeLogs) {
+LogUtil.writeLogs = writeLogs;
+}
+
+private static boolean showLogs() {
+

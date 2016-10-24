@@ -1,0 +1,9 @@
+package geometria;
+import java.awt.*;
+public class Circulo extends Geometria{
+private int x1,y1;
+private boolean relleno;
+public void dibujar(Graphics figura,int x,int y){
+if(relleno)
+figura.fillOval((x<x1)?x:x1 , (y<y1)?y:y1 , ((x1-x)<0)?((x1-x)*-1):(x1-x) , ((y1-y)<0)?((y1-y)*-1):(y1-y) );
+

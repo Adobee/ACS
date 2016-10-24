@@ -1,0 +1,10 @@
+stmtLoader.load(GET_MEMBERTYPE_BY_UID),
+params,
+new MemberTypeMapper()
+);
+
+if (types.size() == 1) {
+return types.get(0);
+} else if (types.size() == 0) {
+LOGGER.warn(&quot;MemberType with ID of [{}] was not found.&quot;, id);
+

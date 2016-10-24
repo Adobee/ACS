@@ -1,0 +1,11 @@
+this.tsTableid = tsTableid;
+}
+
+@Override
+public int hashCode() {
+int hash = 0;
+hash += (tsId != null ? tsId.hashCode() : 0);
+public boolean equals(Object object) {
+if (!(object instanceof TsSelections)) {
+return false;
+

@@ -1,0 +1,7 @@
+private final OutputStream os;
+
+private boolean writeLineFeedAtEnd;
+private static final SerializedString LF = new SerializedString(&quot;\n&quot;);
+public JsonXContentGenerator(JsonGenerator jsonGenerator, OutputStream os, String[] filters, boolean inclusive) {
+if (jsonGenerator instanceof GeneratorBase) {
+

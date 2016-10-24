@@ -1,0 +1,12 @@
+private final double e;
+private final double deltaStep;
+private double step;
+private boolean decreases = true;
+
+public BatchGradientDescent(double e, double deltaStep) {
+this.step = deltaStep;
+}
+
+private void changeStep(double previousError, double currentError) {
+if(decreases) {
+

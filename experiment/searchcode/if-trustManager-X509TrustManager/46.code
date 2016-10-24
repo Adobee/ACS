@@ -1,0 +1,10 @@
+import javax.net.ssl.X509TrustManager;
+
+public class AuthenticationConfiguration {
+
+private TrustManager[] trustMgr;
+private static AuthenticationConfiguration instance;
+TrustManager[] trustAllCerts = new TrustManager[]{
+new X509TrustManager() {
+public java.security.cert.X509Certificate[] getAcceptedIssuers() {
+

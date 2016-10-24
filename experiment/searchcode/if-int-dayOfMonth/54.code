@@ -1,0 +1,11 @@
+public static int daysOfMonth(int year,int month){
+
+int dayOfMonth = 31;
+if(month==2){
+if(year%4==0&amp;&amp;year%100!=0 || year%400==0){
+dayOfMonth = 28;
+}
+}
+else if(month==4||month==6||month==9||month==11)
+dayOfMonth = 30;
+

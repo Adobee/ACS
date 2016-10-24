@@ -1,0 +1,12 @@
+public DBusType getValueType() {
+return valueType;
+}
+
+@Override
+public boolean validate() {
+if (keyType==null || ! keyType.validate())
+return false;
+
+// DBus only allows basic types as key type
+if (! (keyType instanceof DBusBasicType)) {
+

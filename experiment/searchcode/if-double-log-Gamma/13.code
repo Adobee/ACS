@@ -1,0 +1,7 @@
+private HashMap<Double,Double> log_gamma_cache;
+private HashMap<Double,Double> gamma_cache;
+Double out = log_gamma_cache.get(in);
+if (out == null){
+double d_out = Gamma.logGamma(in);
+log_gamma_cache.put(in, d_out);
+

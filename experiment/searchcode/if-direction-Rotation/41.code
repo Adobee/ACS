@@ -1,0 +1,9 @@
+public static Direction giroDerechaIzquierda(Direction direction, Rotation rotation) {
+Direction dir = UNKNOWN;
+
+if (direction == Direction.NORTH) {
+if (rotation == Rotation.LEFT)
+dir = Direction.WEST;
+else if (rotation == Rotation.RIGHT)
+dir = Direction.EAST;
+

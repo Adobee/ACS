@@ -1,0 +1,13 @@
+private final int threshold;
+private final int errorThreshold;
+
+public FieldTypeInt(String name, int threshold, int errorThreshold) {
+public boolean isSaving(int v1, int v2) {
+int t = Math.abs(v1 - v2);
+if (t < threshold || t > errorThreshold) {
+return false;
+}
+return true;
+}
+}
+

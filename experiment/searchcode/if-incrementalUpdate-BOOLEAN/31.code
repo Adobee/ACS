@@ -1,0 +1,14 @@
+@Inject
+public SignatureMerge(final AnimationSelector animations) {
+super(animations);
+incrementalUpdate = false;
+final AsyncContext context) {
+sendInitMessage(context);
+if (!(stateSpace == null)) {
+draw();
+}
+}
+
+@Override
+public void performTraceChange(final Trace trace) {
+

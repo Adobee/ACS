@@ -1,0 +1,12 @@
+synchronized (getProcessTimerMap())
+{
+timer = (Timer) getProcessTimerMap().remove(aProcessId);
+}
+
+// If the process had a release timer running, then cancel the timer and
+wrapper.decrementCount();
+}
+finally
+{
+// If this is the last reference to the process, then
+

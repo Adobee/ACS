@@ -1,0 +1,10 @@
+public static int minimumJumps(int[] arr, int currentPos, int[] cache){
+if (currentPos >= arr.length-1){
+return 0;
+}
+if (cache[currentPos] != 0){
+for (int i=currentPos+1; i<=currentPos+arr[currentPos]; i++){
+int temp = minimumJumps(arr, i, cache);
+if (temp < min){
+min = temp;
+

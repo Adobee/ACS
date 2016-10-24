@@ -1,0 +1,8 @@
+void readChunkRange(int startw, int rangew, IVField fSort, boolean asc,
+ISuccess signal) {
+if (!clearCache)
+for (Chunk c : cList) {
+if (c.start == startw &amp;&amp; c.len == rangew) {
+boolean eqSort = false;
+if (fSort == null &amp;&amp; c.fSort == null) {
+

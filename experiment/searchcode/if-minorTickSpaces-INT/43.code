@@ -1,0 +1,8 @@
+while (tickDate.before(upperDate)) {
+int minorTick;
+if (!hasRolled) {
+tickDate = correctTickDateForPosition(tickDate, unit, this.tickMarkPosition);
+long distance = unit.addToDate(tickDate, this.timeZone).getTime() - lowestTickTime;
+int minorTickSpaces = getMinorTickCount();
+if (minorTickSpaces <= 0) {
+

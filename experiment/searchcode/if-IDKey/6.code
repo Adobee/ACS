@@ -1,0 +1,9 @@
+public void setFirstElement(int element) {
+firstElement = element;
+}
+
+/**
+* Checks if this IdKey is equals to the specified
+* @param idKey - IdKey value to be compared
+* @return true if idKey equals to this idKey
+

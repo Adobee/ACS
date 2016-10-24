@@ -1,0 +1,12 @@
+public boolean isConverged() {
+boolean isConverged = (Math.abs(newValue-oldValue) <= tolerance);
+isConverged = isConverged || cc.isConverged();
+break;
+} // end of switch .. case
+} // end while
+} // end if
+
+return isConverged;
+}
+}
+

@@ -1,0 +1,15 @@
+public StringField(){
+super();
+setSize(1);
+}
+private int Size;
+private boolean blobMode = false;
+public int getSize(){return Size;}
+public long getMemorySize() {
+if(blobMode)
+return 2;
+else
+return getSize() * 2;
+}
+public void setBlobMode(boolean b) {
+

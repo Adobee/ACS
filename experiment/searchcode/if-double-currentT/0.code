@@ -1,0 +1,8 @@
+private final double initialT;
+private double currentT = 0;
+private double avgFitnessExp;
+
+public BoltzmannScaling(double initialT) {
+this.initialT = initialT;
+this.currentT = initialT;
+

@@ -1,0 +1,13 @@
+inc = increment;
+}
+
+public long nextValue() {
+long next = 0;
+if(inc <= Long.MAX_VALUE - cur) {
+cur += inc;
+next = cur;
+} else {
+throw new ArithmeticException(&quot;Overflow long!&quot;);
+}
+return next;
+

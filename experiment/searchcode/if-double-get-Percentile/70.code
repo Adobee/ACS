@@ -1,0 +1,9 @@
+int bucket = (int) ((Double.doubleToRawLongBits(time) >> (52 - fractionBits)) - floor);
+if (bucket >= sampleCount.length)
+totalCount++;
+return bucket;
+}
+
+public double percentile(double fraction) {
+long value = (long) (totalCount * (1 - fraction));
+

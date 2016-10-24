@@ -1,0 +1,8 @@
+//            sm.checkPermission(new JodaTimePermission(&quot;DateTimeZone.setDefault&quot;));
+//        }
+//        if (zone == null) {
+//            throw new IllegalArgumentException(&quot;The datetime zone must not be null&quot;);
+public long getMillisKeepLocal(DateTimeZone newZone, long oldInstant) {
+if (newZone == null) {
+newZone = DateTimeZone.getDefault();
+

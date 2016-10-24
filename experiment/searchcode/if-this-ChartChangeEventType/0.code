@@ -1,0 +1,9 @@
+return this.name.hashCode();
+}
+
+private Object readResolve() {
+if (this.equals(ChartChangeEventType.GENERAL)) {
+return ChartChangeEventType.GENERAL;
+}
+if (this.equals(ChartChangeEventType.NEW_DATASET)) {
+

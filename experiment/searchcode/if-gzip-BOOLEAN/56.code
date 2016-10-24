@@ -1,0 +1,7 @@
+public void handleBuffer (GZipUnpacker unpacker, byte[] buf, int off, int len) {
+if (len <= 0)
+return;
+byte b = buf[off];
+if (b != GZIP_DEFLATE) {
+String err = &quot;unknown compression method: &quot; + b;
+

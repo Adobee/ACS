@@ -1,0 +1,9 @@
+data_iris_samples = data.getSubMatrix(0, nRows - 1, 0, 3);
+data_iris_labels = data.getSubMatrix(0, nRows - 1, 4, nCols - 1);
+}
+
+public RealMatrix removeMean(RealMatrix M) {
+int nRows = M.getRowDimension();
+int nCols = M.getColumnDimension();
+RealMatrix R = new Array2DRowRealMatrix(nRows,nCols);
+

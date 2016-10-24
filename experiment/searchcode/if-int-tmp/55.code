@@ -1,0 +1,6 @@
+float[][][] toreturn = new float[tmp.length][tmp[0].length][3];
+for (int p = 0; p < numPasses; p++) {
+for (int i = 1; i < tmp.length - 1; i++) {
+for (int j = 1; j < tmp[0].length - 1; j++) {
+for (int k = 0; k < 3; k++) {
+

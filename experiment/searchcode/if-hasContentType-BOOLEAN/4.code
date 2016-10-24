@@ -1,0 +1,13 @@
+* @see org.eclipse.core.resources.IResourceVisitor#visit(org.eclipse.core.resources.IResource)
+*/
+public boolean visit(IResource resource) throws CoreException {
+if (resource instanceof IFile) {
+// would have already been caught by the outer try, leave the stream open
+}
+}
+}
+
+boolean hasContentType = false;
+if (contentTypes != null) {
+for (int i = 0; i < contentTypes.length &amp;&amp; !hasContentType; i++) {
+

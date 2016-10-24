@@ -1,0 +1,8 @@
+public double solution(double a, double b, double eps) {
+double x0 = a;
+double tmpXfirst;
+double tmpXsecond;
+double tmpEps;
+if (function(a) * function(b) > 0) {
+// если нет решение
+

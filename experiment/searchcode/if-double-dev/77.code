@@ -1,0 +1,10 @@
+public static double std_dev(double mean, double... x){
+double sum=0;
+for(int i=0; i<x.length; i++){
+sum += (x[i]-mean)*(x[i]-mean);
+}
+return Math.sqrt( sum/x.length );
+}
+
+public static double std_dev(double... x){
+

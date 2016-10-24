@@ -1,0 +1,8 @@
+// The following assert should fail to verify, because nothing is known
+// about function &quot;dude&quot;.
+//@ assert (boolean)\dttfsa(boolean, &quot;dude&quot;, x-1, x+1);
+}
+
+/*@ requires (\forall int a, b; a < b ==>
+(boolean)\dttfsa(boolean, &quot;dude&quot;, a, b)); */
+

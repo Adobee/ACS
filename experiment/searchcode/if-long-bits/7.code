@@ -1,0 +1,6 @@
+public long nextLongBits() {
+readyLongBits();
+int lowBits = nextBits();
+int highBits = nextBits();
+return ((long)highBits << 32) | ((long)lowBits &amp; 0xffffffffL);
+

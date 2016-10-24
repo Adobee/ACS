@@ -1,0 +1,7 @@
+public class ResetKeyListener implements KeyListener {
+
+private volatile boolean resetRequested;
+public void keyTyped(KeyEvent ke) {
+if (ke.getKeyChar() == &#39; &#39;) {
+resetRequested = true;
+

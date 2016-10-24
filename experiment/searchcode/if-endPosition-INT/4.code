@@ -1,0 +1,10 @@
+* 给出数组以及需要归并排序的开始位置和结束位置，然后计算中间位置，然后合并两个数组。重要的是中间有一个临时数组用于存储结果。
+*
+*/
+public void mergeSort(int[] A, int[] tempA, int startPosition,int endPosition){
+if(startPosition >= endPosition){
+return;
+}else{
+int middle = (startPosition + endPosition) >> 1;
+mergeSort(A,tempA,startPosition,middle);
+

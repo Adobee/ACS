@@ -1,0 +1,13 @@
+public double evaluate(double x){
+
+int x0 = (int)x;
+int x1 = x0+1;
+double y0 = values[x0];
+double y1 = values[x1];
+double s0;
+double s1;
+
+if(x0==0){
+s0 = midSlope(-y1,y0,y1);
+if(x1==values.length-1) s1 = midSlope(y0,y1,-y0);
+

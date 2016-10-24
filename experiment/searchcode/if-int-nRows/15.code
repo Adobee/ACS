@@ -1,0 +1,12 @@
+public String convert(String s, int nRows) {
+assert nRows >= 1;
+
+if (nRows == 1) {
+return s;
+}
+
+String ans = &quot;&quot;;
+
+for (int j = 0; j < nRows; j++) {
+for (int i = 0; i + j < s.length(); i += 2 * (nRows - 1)) {
+

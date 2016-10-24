@@ -1,0 +1,10 @@
+package controllers;
+
+
+public class SecurityClient extends Secure.Security
+{
+static boolean authenticate(String username, String password) {
+models.Client client = models.Client.find(&quot;login=?&quot;, username).first();
+if(client==null){return false;}
+if(!client.getPassword().equals(password)){return false;}
+

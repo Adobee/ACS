@@ -1,0 +1,6 @@
+final MethodHandle ctor = TypeUtils.getConstructor(clazz, Object.class);
+ReadableInstant instance = TypeUtils.invoke(ctor, value);
+
+// If possible, ensure that the return ReadableInstant is in UTC
+if (AbstractInstant.class.isAssignableFrom(clazz))
+

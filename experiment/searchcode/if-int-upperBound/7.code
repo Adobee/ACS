@@ -1,0 +1,13 @@
+public static void main(String[] args) {
+int upperBound = 100;
+int result = 0;
+int count = 0;
+int i = 0;
+
+//		for(i = 0; i<=upperBound; i++, count++) {
+//			result+=i;
+//		}
+
+//		for(i = 0; i<=upperBound; i++, count++) {
+//			if(i % 2 != 0) {
+

@@ -1,0 +1,8 @@
+this.displayDebug = debug;
+
+int blockRow, blockCol, blockLength, blockWidth;
+
+s = in.readLine();
+blockWidth = Integer.parseInt(Token.nextToken());
+blockRow = Integer.parseInt(Token.nextToken());
+

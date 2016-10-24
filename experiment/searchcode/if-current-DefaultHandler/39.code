@@ -1,0 +1,9 @@
+public void startElement(String string, String string2, String string3, Attributes attributes) {
+DefaultHandler defaultHandler = this.getCurrentHandler();
+if (defaultHandler != this) {
+DefaultHandler defaultHandler = this.getCurrentHandler();
+if (defaultHandler == this) return;
+defaultHandler.endElement(string, string2, string3);
+}
+}
+

@@ -1,0 +1,7 @@
+* @return
+*/
+public static String getTime(long timeInMillis, SimpleDateFormat dateFormat) {
+return dateFormat.format(new Date(timeInMillis));
+public static String getTime(long timeInMillis) {
+return getTime(timeInMillis, DEFAULT_DATE_FORMAT);
+

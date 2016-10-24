@@ -1,0 +1,9 @@
+package org.robolectric.internal.bytecode;
+
+enum RoboType {
+VOID(Void.TYPE),
+BOOLEAN(Boolean.TYPE),
+public static Class findPrimitiveClass(String name) {
+for (RoboType type : RoboType.values()) {
+if (type.type != null &amp;&amp; type.type.getName().equals(name)) {
+

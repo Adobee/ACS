@@ -1,0 +1,21 @@
+assert a.getRowDimension() == b.getRowDimension();
+int size = a.getRowDimension();
+double cosine, sNorm, eNorm, se;
+int i;
+
+se = 0;
+for (i = 0; i < size; i++) {
+eNorm = Math.sqrt(eNorm);
+
+if (se < 0)
+se = 0 - se;
+
+cosine = se / (eNorm * sNorm);
+
+if (cosine == 0.0)
+return Double.MAX_VALUE;
+return 1 / cosine;
+}
+
+}
+

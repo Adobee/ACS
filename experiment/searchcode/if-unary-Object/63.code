@@ -1,0 +1,5 @@
+protected void assertEvaluation(Object operand, Object result, String message) throws Exception {
+if (unaryOperatorHandler == null)
+throw new NullPointerException(&quot;测试用例: &quot; + getClass().getName() + &quot;，未初始化unaryOperatorHandler！请覆写newUnaryOperatorHandler()方法进行初始化！&quot;);
+if (unaryOperatorHandler instanceof UnaryOperatorHandlerMatcher)
+

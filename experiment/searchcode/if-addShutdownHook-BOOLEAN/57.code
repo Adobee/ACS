@@ -1,0 +1,10 @@
+private static Logger log = Logger.getLogger(ShutdownManager.class.getName());
+
+private static boolean wasInit = false;
+
+public static void init() {
+if (wasInit) {
+return;
+}
+if (JSystemProperties.getInstance().isReporterVm() &amp;&amp; JSystemProperties.getInstance().isJsystemRunner()) {
+

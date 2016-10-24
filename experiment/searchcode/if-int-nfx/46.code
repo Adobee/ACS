@@ -1,0 +1,8 @@
+public class RotationGestureDetector {
+private static final int INVALID_POINTER_ID = -1;
+private float fX, fY, sX, sY;
+private int ptrID1, ptrID2;
+private float mAngle;
+
+private OnRotationGestureListener mListener;
+

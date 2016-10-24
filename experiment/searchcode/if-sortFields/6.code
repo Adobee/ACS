@@ -1,0 +1,12 @@
+public SqlSort on(String field, SqlOrder sqlOrder){
+if(this.sortFields == null){
+this.sortFields = new ArrayList<SortField>();
+}
+SortField sortField = new SortField(field, sqlOrder);
+* 重写的toString，转为sql排序语句
+*/
+@Override
+public String toString(){
+if(this.sortFields != null){
+StringBuffer buffer = new StringBuffer();
+

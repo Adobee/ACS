@@ -1,0 +1,8 @@
+protected void setImplicit(HttpUrl url, boolean filtered) {
+if (_implicitUrls == null) _implicitUrls = new HashSet<HttpUrl>();
+if (filtered) {
+private ArrayList<HttpUrl> getFilteredChildren(HttpUrl parent) {
+ArrayList<HttpUrl> childList = _cache.get(parent);
+if (childList != null) {
+hit++;
+

@@ -1,0 +1,10 @@
+if (&quot;&quot;.equals(text)) { return null; }
+
+char ch0 = text.charAt(0);
+if (ch0 == &#39;\n&#39; || ch0 == &#39;\r&#39;) { return LINEBREAK; }
+if (ch0 == &#39; &#39;) { return SPACE; }
+
+int n = text.length();
+if (n >= 2) {
+char ch1 = text.charAt(1);
+

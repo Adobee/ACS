@@ -1,0 +1,8 @@
+public static int getGeneValue(Gene g){
+if(g.tag.equals(&quot;size&quot;)){
+char c1 = g.type.charAt(0);
+char c2 = g.type.charAt(1);
+if(c1 == &#39;L&#39; || c2 == &#39;L&#39;) return 6;
+if(c1 == &#39;S&#39; || c2 == &#39;S&#39;) return 2;
+if((c1 == &#39;l&#39; &amp;&amp; c2 == &#39;s&#39;) || (c1 == &#39;s&#39; &amp;&amp; c2 == &#39;l&#39;)) return 4;
+

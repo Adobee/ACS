@@ -1,0 +1,13 @@
+package algorithm.powerOfTwo;
+
+public class PowerOfTwo {
+public boolean isPowerOfTwo(int n) {
+if(n == 0){
+return false;
+}
+if(n == 1){
+return true;
+}
+while(true){
+if (n % 2 == 1 || n % 2 ==-1) {
+

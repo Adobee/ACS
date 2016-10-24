@@ -1,0 +1,17 @@
+private String[] fields;
+
+/**
+* 是否忽略集合
+*/
+private boolean ignoreColl = false;
+
+/**
+* 空参构造方法<br/> 默认不忽略集合
+this.ignoreColl = ignoreColl;
+}
+
+@SuppressWarnings(&quot;unchecked&quot;)
+public boolean apply(Field filed) {
+if (ignoreColl) {
+Class c = filed.getType();
+

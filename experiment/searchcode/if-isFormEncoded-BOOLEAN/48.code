@@ -1,0 +1,10 @@
+RequestBuilder(String method, HttpUrl baseUrl, String relativeUrl, Headers headers,
+MediaType contentType, boolean hasBody, boolean isFormEncoded, boolean isMultipart) {
+this.hasBody = hasBody;
+
+if (headers != null) {
+requestBuilder.headers(headers);
+}
+
+if (isFormEncoded) {
+

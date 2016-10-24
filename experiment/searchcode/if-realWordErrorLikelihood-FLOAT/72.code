@@ -1,0 +1,6 @@
+public PhraseSuggestionBuilder realWordErrorLikelihood(float realWordErrorLikelihood) {
+if (realWordErrorLikelihood <= 0.0) {
+} else if (parseFieldMatcher.match(fieldName, PhraseSuggestionBuilder.RWE_LIKELIHOOD_FIELD)) {
+suggestion.realWordErrorLikelihood(parser.floatValue());
+} else if (parseFieldMatcher.match(fieldName, PhraseSuggestionBuilder.CONFIDENCE_FIELD)) {
+

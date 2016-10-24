@@ -1,0 +1,15 @@
+public void addItem(ListItem item)
+{
+if (firstItem == null) firstItem = item;
+else firstItem.addItem(item);
+}
+
+public void printList()
+if (firstItem != null &amp;&amp; firstItem.getName().equals(name)) firstItem = firstItem.getNextItem();
+}
+
+public int itemCount()
+{
+if (firstItem == null) return 0;
+else return firstItem.restCount();
+

@@ -1,0 +1,10 @@
+// start receiving messages from client
+int msgSize;
+long n;
+
+while (true){
+if(inputStream.available() > 0){
+msgSize = inputStream.readByte();
+
+byte[] byteArray = new byte[msgSize];
+

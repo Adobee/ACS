@@ -1,0 +1,9 @@
+HttpEntityEnclosingRequestBase httpEntityEnclosingRequestBase = (HttpEntityEnclosingRequestBase) super.clone();
+if (this.entity != null) {
+httpEntityEnclosingRequestBase.entity = (HttpEntity) CloneUtils.cloneObject(this.entity);
+return httpEntityEnclosingRequestBase;
+}
+
+public boolean expectContinue() {
+Header firstHeader = getFirstHeader(HTTP.EXPECT_DIRECTIVE);
+

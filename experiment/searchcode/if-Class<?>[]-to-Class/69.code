@@ -1,0 +1,6 @@
+* returns Class.forName(className, true, classLoader). <br>
+* Throws a RuntimeExcepiton if the class is not found.
+return Class.forName(className, true, classLoader);
+} catch (ClassNotFoundException e) {
+throw new RuntimeException(&quot;failed to load class &quot; + className, e);
+

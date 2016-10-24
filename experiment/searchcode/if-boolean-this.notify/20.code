@@ -1,0 +1,15 @@
+private static SharedData sharedData = null;
+
+private boolean showNewMessageNotify = true;
+private SharedData(){};
+
+public static synchronized SharedData getInstance(){
+return showNewMessageNotify;
+}
+
+public void setShowNewMessageNotify(boolean showNewMessageNotify) {
+this.showNewMessageNotify = showNewMessageNotify;
+}
+
+}
+

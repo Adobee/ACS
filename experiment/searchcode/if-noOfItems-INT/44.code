@@ -1,0 +1,11 @@
+log(&quot;Step 8: Started giving responses&quot;);
+
+for(int noofitems=1;noofitems<noofitem+1;noofitems++)
+{
+JavascriptExecutor js = (JavascriptExecutor) driver;
+js.executeScript(&quot;javascript:window.scrollBy(0,8000)&quot;);
+itemnavigation(driver, noofitems);
+verifyitemnumber(driver, noofitems);
+
+int count = (driver.findElements(By.xpath(&quot;//table[@id=&#39;item_area_0_multiple_selections&#39;]/tbody/tr&quot;)).size());
+

@@ -1,0 +1,11 @@
+HashSet<Integer> neighbors = epsilonNeighborhood(pts, pts[p],
+eps);
+if (neighbors.size() < minPts) {
+noise[p] = true;
+expandCluster(pts, p, neighbors, cluster, eps, minPts);
+}
+}
+}
+
+for (int i = 0; i < noise.length; ++i) {
+

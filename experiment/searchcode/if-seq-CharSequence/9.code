@@ -1,0 +1,15 @@
+public Object convertObject(Object value) {
+
+CharSequence charSeq;
+if (value instanceof CharSequence) {
+charSeq = (CharSequence)value;
+return null;
+}
+
+CharSequence charSeq = value;
+
+if (charSeq.length() == 0) {
+return charSeq;
+}
+int idx = indexOfNotBlankChar(charSeq, this.extBlankChars);
+

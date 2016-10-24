@@ -1,0 +1,9 @@
+public class myLengthRange implements Comparable {
+public myLengthRange(int min_seconds, int max_seconds) {
+this.max_seconds = max_seconds;
+public myLengthRange() { // no value
+}
+public int compareTo(myLengthRange b) {
+if (max_seconds < b.max_seconds) return -1;
+if (max_seconds > b.max_seconds) return 1;
+

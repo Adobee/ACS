@@ -1,0 +1,8 @@
+* @param expr The expression to be visited.
+*/
+public void visitExpr(BasicExpr expr) {
+if (expr instanceof MathExpr) {
+visitMathExpr((MathExpr) expr);
+} else if (expr instanceof ConstExpr) {
+visitConstExpr((ConstExpr) expr);
+

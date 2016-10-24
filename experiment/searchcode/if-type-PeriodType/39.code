@@ -1,0 +1,8 @@
+public IType checkAdd(Context context, IType other, boolean tryReverse) {
+if(other instanceof PeriodType)
+return this;
+public IType checkSubstract(Context context, IType other) {
+if(other instanceof PeriodType)
+return this;
+return super.checkSubstract(context, other);
+

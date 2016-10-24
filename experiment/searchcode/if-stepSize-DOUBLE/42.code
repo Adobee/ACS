@@ -1,0 +1,5 @@
+public SolutionContainer solveStep(double[] state, double stepSize) {
+SolutionContainer k1 = function.function(state);
+SolutionContainer k2 = function.function(doubleArrayAdd(state, doubleArrayScale(k1.state, stepSize / 2.0)));
+SolutionContainer k3 = function.function(doubleArrayAdd(state, doubleArrayScale(k2.state, stepSize / 2.0)));
+

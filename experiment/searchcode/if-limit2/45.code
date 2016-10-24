@@ -1,0 +1,13 @@
+Set<Long> temp = new HashSet<Long>();
+
+for (long i = 1; i <= limit; i++){
+if (Prime(i)) temp.add(i);
+}
+
+Long[] Primes = temp.toArray(new Long[temp.size()]);
+long a = (long) Math.pow(Primes[i], 2);
+
+for (int j = 0; j < limit2; j++){
+long b = (long) Math.pow(Primes[j], 3);
+if ((a+b) > target) break;
+

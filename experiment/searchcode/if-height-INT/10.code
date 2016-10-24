@@ -1,0 +1,11 @@
+package leetcode;
+
+public class ContainerWithMostWater {
+public int maxArea(int[] height) {
+if(height.length <2) return 0;
+int result = (y-x)*Math.min(height[y],height[x]);
+int i = x+1;
+int j = y-1;
+while(i < j){
+if(height[x] <= height[y]){
+

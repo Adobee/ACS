@@ -1,0 +1,14 @@
+this.type = Variable.typeFromString(type);
+}
+
+public static int typeFromString(String type){
+if(&quot;i32&quot;.equals(type)){
+return Variable.TYPE_INT;
+}
+if(&quot;i32*&quot;.equals(type)){
+return Variable.TYPE_ARRAY_INT;
+}
+return Variable.TYPE_INT;
+}
+}
+

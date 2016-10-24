@@ -1,0 +1,8 @@
+public static String trim(String text) {
+text = text.trim();
+byte[] byteArray = text.getBytes();
+
+for (int i = 0; i < byteArray.length; i++) {
+if (byteArray[i] == 32) {
+byteArray = ArrayHandler.removeElementAt(byteArray, i);
+

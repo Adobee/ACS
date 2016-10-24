@@ -1,0 +1,11 @@
+public int KMP(String text, String pattern) {
+int[] prefixTable = generatePrefixTable(pattern);
+
+// i = textIndex;
+int textIndex = 0;
+
+// j = patternindex
+int patternIndex = 0;
+
+while (textIndex < text.length()) {
+

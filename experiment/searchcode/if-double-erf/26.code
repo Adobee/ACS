@@ -1,0 +1,8 @@
+// although subject to catastrophic cancellation when z in very close to 0
+// from Chebyshev fitting formula for erf(z) from Numerical Recipes, 6.2
+public static double erf(double z)
+{
+final double t = 1.0 / (1.0 + 0.5 * Math.abs(z));
+
+// use Horner&#39;s method
+

@@ -1,0 +1,10 @@
+public static int Lunar2Gregorian(Date_T tLCDate, Date_T tChDate) {
+if (tLCDate.wYear < 1900) {
+return -1;
+}
+int tian = 0;
+tian = ((Lunar_LunarMonthDay[tLCDate.wYear - 1900] &amp; flag) != 0) ? 30
+: 29;
+
+if ((SpringDay + tian) > (int) DayOfMon[(SpringMonth - 1) % 12]) {
+

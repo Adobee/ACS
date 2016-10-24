@@ -1,0 +1,9 @@
+import java.lang.Math;
+
+public class PowerOfTwo {
+public static void main(String[] args) {
+int i = 12;
+int j = 32;
+System.out.println(powerOfTwo(4));
+System.out.println(powerOfTwo(8));
+

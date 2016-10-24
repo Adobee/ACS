@@ -1,0 +1,17 @@
+throw new IllegalArgumentException();
+data = str;
+index = 0;
+}
+
+
+
+public int read() {
+if (index >= data.length())
+return index % 8;
+}
+
+
+public int readByte() throws IOException {
+index = (index + 7) / 8 * 8;
+if (data.length() - index < 8)
+

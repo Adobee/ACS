@@ -1,0 +1,10 @@
+consumer.updateList(pl);
+}
+
+public void retrieveTo(PodcastsConsumer consumer, Boolean forceRefresh) throws Exception {
+if (!forceRefresh) {
+populateCachedDataTo(consumer);
+}
+
+if (forceRefresh || mustRefresh()) {
+

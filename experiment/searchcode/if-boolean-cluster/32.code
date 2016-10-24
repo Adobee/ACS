@@ -1,0 +1,12 @@
+public int compareTo(ClusterPair o) {
+int result;
+if (o == null || o.getLinkageDistance() == null) {
+result = getLinkageDistance().compareTo(o.getLinkageDistance());
+}
+
+return result;
+}
+
+public Cluster agglomerate(String name) {
+if (name == null) {
+

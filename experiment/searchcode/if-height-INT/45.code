@@ -1,0 +1,8 @@
+public int largestRectangleArea(int[] height) {
+if (height.length == 0) return 0;
+int max = 0;
+int[] f,g;
+f= new int[height.length];
+g= new int[height.length];
+f[0] = -1;
+

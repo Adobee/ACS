@@ -1,0 +1,6 @@
+* Creates a default, order-sensitive mapping. If your hostnames are in conflict, the mapping
+* will choose the one you add first.
+static String normalizeHostname(String hostname) {
+if (needsNormalization(hostname)) {
+hostname = IDN.toASCII(hostname, IDN.ALLOW_UNASSIGNED);
+

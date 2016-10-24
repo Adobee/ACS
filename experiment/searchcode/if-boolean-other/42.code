@@ -1,0 +1,12 @@
+return &quot;boolean&quot;;
+}
+
+@Override
+public boolean equals(Object other) {
+if (other instanceof LuaBoolean) {
+LuaBoolean bool = (LuaBoolean) other;
+return bool.getBool() == this.getBool();
+}
+
+return false;
+

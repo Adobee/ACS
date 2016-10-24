@@ -1,0 +1,15 @@
+public  int xdir;
+public  int ydir;
+public  int targetx;
+public  int targety;
+public  double fraction;
+public  int speed;
+if(xpos!=0 &amp;&amp; Window.room.block[ypos][xpos-1].groundId == value.groundPath){
+targetx = xpos - 1;
+targety = ypos;
+return;
+}
+
+}
+if (ydir == 1){
+

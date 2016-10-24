@@ -1,0 +1,14 @@
+private long threadId;
+
+public MqTransactionSynchronization(long threadId){
+this.threadId = threadId;
+ActiveMQThreadLocal.removeEndTransaction();
+ActiveMQThreadLocal.clear();
+}
+
+public long getThreadId() {
+return threadId;
+}
+
+public void setThreadId(long threadId) {
+

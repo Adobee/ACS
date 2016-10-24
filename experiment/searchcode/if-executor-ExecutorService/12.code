@@ -1,0 +1,12 @@
+package com.yzw.eventbus;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.ThreadPoolExecutor;
+public void enqueue(Runnable runnable) {
+if (this.executorService != null)
+this.executorService.execute(runnable);
+}
+
+
+}
+

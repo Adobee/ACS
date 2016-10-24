@@ -1,0 +1,16 @@
+package cg.dimension.model.aggregate;
+
+public class IncrementalAggregateSumLong implements Aggregate<Long>
+return sum;
+}
+
+@Override
+public void addValue(Long value)
+{
+if(value == null)
+return;
+sum += value;
+}
+
+}
+

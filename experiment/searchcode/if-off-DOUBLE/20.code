@@ -1,0 +1,9 @@
+double X = points[i].x - origin.x;
+double Y = points[i].y - origin.y;
+
+if (points[i].equals(origin))
+offAngles[i] = -2.0;	// 确定原点的偏移角为一个（够用的！）值
+if (X == 0 &amp;&amp; !points[i].equals(origin))
+offAngles[i] = Double.MAX_VALUE;
+if (Y == 0 &amp;&amp; !points[i].equals(origin))
+

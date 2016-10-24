@@ -1,0 +1,12 @@
+private JCertifExceptionHandler(){
+}
+
+public static Result resolve(Throwable throwable){
+
+Logger.info(&quot;JCertif ExceptionHandler&quot;);
+Result result = Results.status(Http.Status.INTERNAL_SERVER_ERROR, null == throwable.getMessage()? &quot;&quot; : throwable.getMessage());
+
+Throwable unwrappedThrowable = unwrap(throwable);
+
+if(null != unwrappedThrowable
+

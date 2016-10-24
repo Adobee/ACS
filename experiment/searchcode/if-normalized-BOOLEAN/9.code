@@ -1,0 +1,9 @@
+public static ONB fromU(final Vec3 u_) {
+final Vec3 /* normalized */u = u_.normalized();
+Vec3 /* normalized */v = u.cross(Vec3.X);
+if (v.sdot < EPS)
+final Vec3 /* normalized */v = v_.normalized();
+Vec3 /* normalized */u = v.cross(Vec3.X);
+if (u.sdot < EPS)
+u = v.cross(Vec3.Y);
+

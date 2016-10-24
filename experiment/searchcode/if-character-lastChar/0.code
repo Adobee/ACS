@@ -1,0 +1,12 @@
+for (char c : str.toCharArray()) {
+if (lastChar != &#39;\t&#39;) {
+if (c == lastChar) {
+runCount++;
+} else {
+sb.append(Character.toString(lastChar) + runCount);
+runCount = 1;
+}
+}
+
+lastChar = c;
+

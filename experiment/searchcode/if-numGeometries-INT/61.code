@@ -1,0 +1,10 @@
+roi = (VectorialROI)tablePanel.getROI(roiName);
+roi.addGeometry(geometry);
+int numGeometries;
+
+ISymbol sym = null;
+Color geometryColor = (Color)tablePanel.getTable().getModel().getValueAt(selectedRow, 4);
+
+if(tablePanel.getPolygonToolButton().isSelected()){
+numGeometries = ((Integer)tablePanel.getTable().getModel().getValueAt(selectedRow,1)).intValue();
+

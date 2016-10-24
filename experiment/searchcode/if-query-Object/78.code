@@ -1,0 +1,8 @@
+implements IQueryProxy {
+
+@Override
+public <T> T query(Object obj, Class<T> specificationType)
+throws QueryException {
+if (obj instanceof IQueryable) {
+IQueryable queryable = (IQueryable) obj;
+

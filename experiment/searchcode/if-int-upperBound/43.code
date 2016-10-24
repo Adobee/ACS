@@ -1,0 +1,12 @@
+private int search(int[] array,int lowerbound,int upperbound,int value)
+{
+// System.out.println(&quot;lowerbound: &quot; + lowerbound + &quot;  upperbound: &quot; + upperbound + &quot; index: &quot; + (lowerbound+upperbound)/2 + &quot; array[index]: &quot; + buffer[(lowerbound+upperbound)/2]+&quot; value: &quot; + value) ;
+return -1;
+}
+
+int index = (lowerbound + upperbound)/2;
+
+if (array[index]==value)
+{
+return index;
+

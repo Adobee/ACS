@@ -1,0 +1,9 @@
+private static double[] bracketRoot(Function f, double lo, double hi, double fLo, double fHi) {
+dump(&quot;bracket&quot;, lo, hi, fLo, fHi);
+return new double[]{lo, hi};
+} else {
+double mid = (lo + hi) / 2;
+double fMid = f.apply(mid);
+
+if (fLo * fMid <= 0) {
+

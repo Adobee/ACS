@@ -1,0 +1,8 @@
+ListRewrite blockRewrite;
+if (declarationNode.getParent() instanceof AbstractTypeDeclaration) {
+blockRewrite= rewrite.getListRewrite(declarationNode.getParent(), ((AbstractTypeDeclaration)declarationNode.getParent()).getBodyDeclarationsProperty());
+ASTNode lastStatement= declarationNode;
+
+if (fragmentsToChange.contains(lastFragment)) {
+ModifierRewrite modifierRewrite= ModifierRewrite.create(rewrite, declarationNode);
+

@@ -1,0 +1,10 @@
+* It is used by list term, plan body, ... to not create the array list for terms.
+*/
+public Structure(String functor, int termsSize) {
+super(functor);
+if (termsSize > 0)
+terms = new ArrayList<Term>(termsSize);
+}
+
+public static Structure parse(String sTerm) {
+

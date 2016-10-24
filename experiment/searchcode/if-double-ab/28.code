@@ -1,0 +1,9 @@
+public void moveObject(EObject obj, int x, int y, long d, int t)
+{
+if(moveQue.contains(obj))
+moveQue.remove(obj);
+AnimateObjectQue ab = new AnimateObjectQue(obj,x,y,d,t,rate);
+if(d < (Math.round(1000.0/rate)))
+{
+ab.incX = ab.targetX - ab.object.x;
+

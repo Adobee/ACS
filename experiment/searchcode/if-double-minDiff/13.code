@@ -1,0 +1,9 @@
+final double ASPECT_TOLERANCE = 0.05;
+double targetRatio = (double) w / h;
+if (supportedSizes == null) return null;
+
+Size optimalSize = null;
+double minDiff = Double.MAX_VALUE;
+
+int targetHeight = h;
+

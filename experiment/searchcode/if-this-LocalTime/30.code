@@ -1,0 +1,6 @@
+public TimeInterval(LocalTime start, LocalTime end) {
+if (start == null || end == null) {
+throw new IllegalArgumentException(&quot;start or end is null&quot;);
+public TimeInterval(CharSequence start, CharSequence end) {
+this(LocalTime.parse(start), LocalTime.parse(end));
+

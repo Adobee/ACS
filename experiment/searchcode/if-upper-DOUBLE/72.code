@@ -1,0 +1,11 @@
+public TruncatedDistribution(Distribution source, double lower, double upper) {
+this.source = source;
+
+if (lower == upper) {
+this.lowerCDF = source.cdf(lower);
+} else {
+this.lowerCDF = 0;
+}
+
+if (!Double.isInfinite(this.upper)) {
+

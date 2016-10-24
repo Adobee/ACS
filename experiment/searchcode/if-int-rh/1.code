@@ -1,0 +1,20 @@
+temp = Math.min(lh, rh) * (j - i);
+if (temp > area) {
+area = temp;
+}
+if (lh < rh) {
+while (i < j &amp;&amp; height[i] <= lh) {
+while (i < j &amp;&amp; height[j] <= rh) {
+j--;
+}
+if (i < j) {
+rh = height[j];
+}
+}
+}
+return area;
+
+}
+
+}
+

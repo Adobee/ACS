@@ -1,0 +1,7 @@
+private ConcurrentHashMap<Direction, Direction> rotationMap;
+
+public Robot(Sensor sensor, Position position) {
+this.rotationMap = new ConcurrentHashMap<>();
+this.rotationMap.put(Direction.west(), Direction.north());
+this.rotationMap.put(Direction.north(), Direction.east());
+

@@ -1,0 +1,12 @@
+case 0:
+this.markerName = this.getInputAsString();
+if (this.inputValid) {
+this.title = &quot;Marker Group:&quot;;
+this.error = &quot;marker must have a group name&quot;;
+this.state++;
+}
+break;
+case 1:
+this.markerGroup = this.getInputAsString();
+if (this.inputValid) {
+

@@ -1,0 +1,7 @@
+int aa = a.realPart().compareTo(BigDecimal.ZERO);
+int bb = a.imaginaryPart().compareTo(BigDecimal.ZERO);
+if (aa == 0 || bb == 0) return XOMComplex.NaN;
+return XOMComplex.makeInfinity((double)aa, (double)bb);
+}
+else if (a.isInfinite()) {
+

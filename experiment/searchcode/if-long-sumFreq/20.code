@@ -1,0 +1,11 @@
+public ms_StatisticsFrequency(Vector<Comparable<?>> v) {
+freqTable = new TreeMap<Comparable<?>, Long>();
+int m=v.size();
+for (int i=0; i<m; i++) {
+if (addValue(v.get(i))<0) {clear(); break;}
+* @return the proportion of values equal to v
+*/
+public double getPct(Comparable<?> v) {
+final long sumFreq = getSumFreq();
+if (sumFreq == 0) {
+

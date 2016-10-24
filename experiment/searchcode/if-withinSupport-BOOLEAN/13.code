@@ -1,0 +1,8 @@
+private static boolean withinSupport;
+
+@BeforeClass
+public static void createNodes() throws Exception {
+for (GeohashCellFilter.Builder builder : filterBuilders) {
+if (randomBoolean()) {
+builder.cache(randomBoolean());
+

@@ -1,0 +1,9 @@
+package ch05.ex05_03;
+
+import java.time.LocalDate;
+import java.time.temporal.TemporalAdjuster;
+TemporalAdjuster result = LocalDate.now();
+while(true) {
+result = ((LocalDate)result).plusDays(1);
+if (filter.test((LocalDate)result)) {
+

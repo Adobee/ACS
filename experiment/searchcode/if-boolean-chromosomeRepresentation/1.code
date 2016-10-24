@@ -1,0 +1,8 @@
+for (final Double value : chromosomeRepresentation) {
+if (!isValid(value)) {
+throw new InvalidRepresentationException(LocalizedFormats.OUT_OF_BOUND_SIGNIFICANCE_LEVEL, value,
+* @return True iff the value is acceptable for a gene
+*/
+public boolean isValid(final double value) {
+if (mLowerInclusive ? mLowerBound > value : mLowerBound >= value) {
+

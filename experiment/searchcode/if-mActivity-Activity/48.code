@@ -1,0 +1,9 @@
+@SuppressWarnings(&quot;deprecation&quot;)
+@Provides
+@Singleton
+BaseActivity provideBaseActivity() {
+if (mActivity instanceof BaseActivity) {
+BaseActivitySupport provideBaseActivitySupport() {
+if (mActivity instanceof BaseActivitySupport) {
+return (BaseActivitySupport) mActivity;
+

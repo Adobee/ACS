@@ -1,0 +1,10 @@
+public Dictionary(String path, boolean readOnly) {
+super(path,readOnly);
+}
+
+@Override
+protected void onOpenSecondary(SecondaryConfig secConfig) {
+DatabaseEntry foundKey = new DatabaseEntry();
+DatabaseEntry foundData = new DatabaseEntry();
+while (cursor.getNext(foundKey, foundData, LockMode.DEFAULT) == OperationStatus.SUCCESS) {
+

@@ -1,0 +1,9 @@
+private boolean fill(char[][] board, boolean[][] row, boolean[][] col, boolean[][] block) {
+for (int i = 0; i < 9; i++) {
+for (int j = 0; j < 9; j++) {
+if (board[i][j] == &#39;.&#39;) {
+for (int k = 0; k < 9; k++) {
+if (!row[i][k] &amp;&amp; !col[j][k] &amp;&amp; !block[blockIdx][k]) {
+row[i][k] = true;
+col[j][k] = true;
+

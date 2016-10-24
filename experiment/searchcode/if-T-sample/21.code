@@ -1,0 +1,13 @@
+package com.pcmsolutions.device.EMU.E4.events.sample;
+
+import com.pcmsolutions.device.EMU.E4.sample.SampleListener;
+public SampleRefreshEvent(Object source, Integer sample) {
+super(source, sample);
+}
+
+public void fire(SampleListener sl) {
+if (sl != null)
+sl.sampleRefreshed(this);
+}
+}
+

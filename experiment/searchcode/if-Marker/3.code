@@ -1,0 +1,11 @@
+package dcad.process.recognition.marker;
+
+public class MarkerRecogManager
+{
+private static MarkerRecogManager markerRecogMan;
+private MarkerToConstraintConverter m_markerConverter;
+
+public static MarkerRecogManager getInstance()
+{
+if (markerRecogMan == null) markerRecogMan = new MarkerRecogManager();
+

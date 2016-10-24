@@ -1,0 +1,8 @@
+public int maxsum(int x[][],int n,int m)
+{
+int sum[][]=new int[n][m];
+for(int i=0;i<n;i++)
+for(int j=0;j<m;j++)
+{
+if(i>0 &amp;&amp; j>0)
+

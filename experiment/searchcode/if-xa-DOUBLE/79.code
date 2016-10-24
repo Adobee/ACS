@@ -1,0 +1,10 @@
+protected enum Direction{
+UP,DOWN,LEFT,RIGHT
+}
+
+protected Direction dir;
+
+public void Move(double xa, double ya){// change in x, change in y
+if(xa!=0 &amp;&amp; ya!= 0){
+Move(xa, 0); // split up moving for seperate x and y axis movement
+

@@ -1,0 +1,11 @@
+
+public class Year {
+private int year;
+public Year (int year){
+this.year = year;
+}
+public boolean isLeapYear(){
+
+if ((year > 1582) &amp;&amp; year % 4 == 0){
+if ((year % 100 != 0) || (year % 400 ==0)) {
+

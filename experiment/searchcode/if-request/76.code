@@ -1,0 +1,10 @@
+public void sendRequest(RequestBase request) {
+if (request == null)
+return;
+
+synchronized (this) {
+mRequestList.add(request);
+RequestBase request = mRequestList.get(i);
+OnRequestListener h = request.getRequestListener();
+if (h == handler) {
+

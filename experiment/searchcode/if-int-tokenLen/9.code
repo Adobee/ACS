@@ -1,0 +1,13 @@
+peek = (char)readc;
+return readc;
+}
+
+public LexToken getNextToken() {
+
+int readc = 0;
+if(peek!=&#39;\0&#39;) {
+boolean potentialNumeral = false;
+int tokenLen = 0;
+LexTokenID tokenID = LexTokenID.UNKNOWN;
+LexToken lexToken = null;
+

@@ -1,0 +1,10 @@
+private long totalProcessTime;
+
+public void updateProcess(boolean successfulExecuted, long time) {
+executedTotal++;
+totalProcessTime += time;
+if (successfulExecuted) {
+executedWithSuccess++;
+} else {
+executedWithFailure++;
+

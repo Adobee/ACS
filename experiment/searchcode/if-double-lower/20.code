@@ -1,0 +1,12 @@
+this.upper = upper;
+this.n = upper - lower + 1;
+}
+
+public double pdf(double x) {
+if (x < lower) {
+return Math.log(Math.pow(1-p,x)) + Math.log(Math.pow(p, r)) + GammaFunction.lnGamma(r + x) - GammaFunction.lnGamma(r) - GammaFunction.lnGamma(x+1);
+*/
+if (x < lower) {
+return Double.NEGATIVE_INFINITY;
+} else if (x > upper) {
+

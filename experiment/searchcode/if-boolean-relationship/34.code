@@ -1,0 +1,11 @@
+relationshipDao = new RelationshipDaoImpl();
+}
+
+@Override
+public boolean removeFriend(Relationship relationship) {
+// TODO Auto-generated method stub
+if (relationshipDao.delete(relationship) > 0)
+return true;
+else
+return false;
+

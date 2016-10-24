@@ -1,0 +1,6 @@
+final RealMatrix zmean = bestArz.multiply(weights);
+final boolean hsig = updateEvolutionPaths(zmean, xold);
+if(diagonalOnly <= 0) {
+optimum = new PointValuePair(fitfun.repair(bestArx.getColumn(0)), isMinimize ? bestFitness : -bestFitness);
+if(getConvergenceChecker() != null &amp;&amp; lastResult != null &amp;&amp; getConvergenceChecker().converged(iterations, optimum, lastResult)) {
+

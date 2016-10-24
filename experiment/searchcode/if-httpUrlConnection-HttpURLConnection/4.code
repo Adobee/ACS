@@ -1,0 +1,7 @@
+int responseCode = httpURLConnection.getResponseCode();
+if (responseCode == 200) {
+return httpURLConnection.getInputStream();
+}
+String str = &quot;Bad response: &quot; + responseCode;
+if (responseCode == 404) {
+

@@ -1,0 +1,9 @@
+store = new CompactCharSequence[columns];
+}
+
+void storeChars(CompactCharSequence cs) {
+int columnIndex = cs.columnIndex;
+CompactCharSequence stored = store[columnIndex];
+if (stored == null || stored.capacity < cs.capacity) {
+store[columnIndex] = cs;
+

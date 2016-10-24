@@ -1,0 +1,7 @@
+for(FieldNode fieldNode : node.fields)
+{
+fieldCount++;
+if(((fieldNode.access &amp; Opcodes.ACC_STATIC) == 0))
+if(fieldNode.desc.equals(&quot;L&quot; + classnames.get(&quot;Node&quot;) + &quot;;&quot;))
+nodeCount++;
+

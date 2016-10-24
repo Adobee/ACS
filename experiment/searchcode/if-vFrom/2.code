@@ -1,0 +1,13 @@
+Object vfrom = exchange.get(from);
+Object vto = exchange.get(to);
+
+if ((vfrom instanceof Map<?, ?>) &amp;&amp; (vto instanceof Map<?, ?>)) {
+} else if (vfrom != null) {
+exchange.set(to, vfrom);
+}
+
+context.send(exchange);
+}
+
+public void recover(TaskContext context, MessageExchange exchange) throws Exception {
+

@@ -1,0 +1,15 @@
+package d.ty.desc;
+
+import java.util.Arrays;
+
+import common.RawType;
+import d.*;
+import d.ty.nf.*;
+@Override
+public String toString() {
+if (genericArgs.length == 0)
+return rawType.toString();
+return rawType + Arrays.toString(genericArgs);
+}
+}
+

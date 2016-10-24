@@ -1,0 +1,7 @@
+public class StopsCollection extends ArrayList<Stop> implements Comparator<Stop> {
+
+public StopsCollection(ArrayList<Stop> stops, boolean isForward) {
+for (Stop stop : stops) {
+if ((stop.getStopIndex() > 0) == isForward) {
+super.add(stop);
+

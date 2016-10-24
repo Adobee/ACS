@@ -1,0 +1,9 @@
+int selectedTableau = new AskNumberView().askNumberView(numberOfTableaus, &quot;¿Mover desde qué escalera?&quot;);
+TableauDeck tableauDeck = (TableauDeck) board.getTableauDeckByNumber(selectedTableau);
+
+if (tableauDeck.getCards().size() > 0) {
+
+Card card = tableauDeck.removeAndRetrieveLast();
+
+if (card.isCovered()) {
+

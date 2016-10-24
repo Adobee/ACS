@@ -1,0 +1,11 @@
+public static void addNorm(String field, String docID, byte norm)throws Exception{
+
+if(_tManager == null)
+throw new NotInitializedException();
+HTableInterface norms = _tManager.getNormsTable();
+Get get = new Get(Bytes.toBytes(field));
+Result result = norms.get(get);
+if(result == null){
+_tManager.releaseTable(norms);
+return null;
+

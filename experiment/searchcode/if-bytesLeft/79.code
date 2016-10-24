@@ -1,0 +1,8 @@
+if (!contentLengthFound || bytesLeft < 0) {
+// This really shouldn&#39;t happen, but if it does, shoud we fail??
+bytesLeft = Integer.MAX_VALUE;
+}
+bytesLeftAtMark = bytesLeft;
+
+if (RMIMasterSocketFactory.proxyLog.isLoggable(Log.VERBOSE)) {
+

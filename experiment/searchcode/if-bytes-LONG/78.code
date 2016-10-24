@@ -1,0 +1,8 @@
+super(inputStream);
+}
+
+public long skip(long n) throws IOException {
+long totalBytesSkipped = 0;
+while (totalBytesSkipped < n) {
+long bytesSkipped = this.in.skip(n - totalBytesSkipped);
+

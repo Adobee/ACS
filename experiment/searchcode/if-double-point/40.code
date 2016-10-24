@@ -1,0 +1,10 @@
+package geometry;
+
+public class Point implements Comparable<Point> {
+
+public double x, y;
+
+public Point(double x, double y) {
+this.x = (float) x;
+this.y = (float) y;
+

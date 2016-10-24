@@ -1,0 +1,12 @@
+import java.util.Random;
+
+public class PercolationStats {
+
+private double[] count;
+double m = mean();
+double sumsq = 0;
+double var;
+double sd;
+
+for (int i = 0; i < time; i++)
+

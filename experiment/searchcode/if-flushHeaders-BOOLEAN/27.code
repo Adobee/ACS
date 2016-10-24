@@ -1,0 +1,11 @@
+public final byte[] EOL = {(byte) &#39;\r&#39;, (byte) &#39;\n&#39;};
+
+private boolean statusSent = false;
+private int status = 200;
+return out;
+}
+
+public void flushHeaders() throws IOException {
+if (! statusSent) sendStatus();
+if (! headersSent) sendHeaders();
+

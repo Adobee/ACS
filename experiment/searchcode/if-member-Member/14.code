@@ -1,0 +1,9 @@
+if (getClass() != obj.getClass())
+return false;
+Member other = (Member) obj;
+if (memberEmail == null) {
+if (other.memberEmail != null)
+return false;
+} else if (!memberEmail.equals(other.memberEmail))
+return false;
+

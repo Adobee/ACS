@@ -1,0 +1,8 @@
+* <p>The table data is stored in an instance of
+* {@link SnmpCachedData}, which is kept in a {@link WeakReference}.
+* If the WeakReference is null or empty, the cached data is recomputed.</p>
+protected transient WeakReference<SnmpCachedData> datas;
+
+/**
+* true if the given cached table data is obsolete.
+

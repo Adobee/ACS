@@ -1,0 +1,10 @@
+private Integer value;
+
+@XmlAttribute
+private Boolean isInfinite;
+
+@XmlAttribute(name = &quot;nil&quot;, namespace=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;)
+this.isInfinite = false;
+if (multiplicity != null) {
+this.isInfinite =  multiplicity.isInfinite();
+

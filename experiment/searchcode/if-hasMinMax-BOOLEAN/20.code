@@ -1,0 +1,11 @@
+* @return The number of values contained in this data point.
+*/
+public int getPointCount() {
+if (this.hasMinMax())
+return 5;
+* Determines whether or not this data point has min and max values set.
+*
+* @return True if both min and max values are set, false if not.
+*/
+public boolean hasMinMax() { return hasMin &amp;&amp; hasMax; } /* Should be in TimeSeries (?) */
+

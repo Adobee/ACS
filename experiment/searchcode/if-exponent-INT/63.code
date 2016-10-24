@@ -1,0 +1,11 @@
+public class myNumberUtils {
+public static int recPower(int base, int exponent) {
+if(exponent == 0) {
+return 1;
+}
+else {
+return base * myNumberUtils.recPower(base, (exponent - 1));
+}
+}
+}
+

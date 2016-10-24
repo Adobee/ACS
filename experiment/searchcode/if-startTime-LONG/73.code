@@ -1,0 +1,13 @@
+public class StopWatch implements IStopWatch {
+private long startTime = 0;
+
+private long stopTime = 0;
+
+private long elapsed = 0;
+
+private boolean running = false;
+
+public long getElapsedTimeMicro() {
+if (running) {
+elapsed = ((System.nanoTime() - startTime) / 1000);
+

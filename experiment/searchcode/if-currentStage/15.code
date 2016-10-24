@@ -1,0 +1,15 @@
+List<Texture> animList = new ArrayList<Texture>(16);
+int animSpeed = 0;
+int currentStage = 0;
+int timer = 0;
+
+public Animation(List<Texture> anim, int fps){
+public void stepAnimation(int delta){
+timer += delta;
+
+if (timer >= animSpeed){
+timer = 0;
+currentStage++;
+
+if (currentStage > animList.size() - 1){
+

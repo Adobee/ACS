@@ -1,0 +1,11 @@
+double p = RAND(prng);
+
+if (p < 0.0 || p > 1.0) {
+throw new OutOfRangeException(p, 0, 1);
+}
+
+long lower = FastMath.max(0, sampleSize + numberOfSuccesses - populationSize);
+private boolean numericalVarianceIsCalculated = false;
+
+protected double calculateNumericalVariance() {
+

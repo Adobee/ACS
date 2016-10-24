@@ -1,0 +1,5 @@
+public static boolean isInside1(double x1, double y1, double x2, double y2,
+double x3, double y3, double x, double y) {
+double area1 = getArea(x1, y1, x2, y2, x, y);
+double area2 = getArea(x1, y1, x3, y3, x, y);
+

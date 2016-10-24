@@ -1,0 +1,24 @@
+listener = d;
+}
+
+public void addRequest(HTTPRequest r) {
+r.setQueue(this);
+queue.add(r);
+}
+
+public void onRequestFinished() {
+public void onRequestFailed() {
+c++;
+fail = true;
+
+if(c == queue.size()) {
+listener.onHTTPRequestQueueFailed();
+}
+}
+
+
+
+
+
+}
+

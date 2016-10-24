@@ -1,0 +1,16 @@
+import nc.liat6.frame.locale.L;
+
+/**
+* 字符数限制（默认最大字符数限制，即不能超过多少个字符）
+*
+* @author 6tail
+*
+*/
+public class RuleLength extends AbstractRule{
+
+private int length = -1;
+
+public RuleLength(int length){
+this.length = length;
+setErrorMessage(L.get(&quot;reg.length_prefix&quot;)+length+L.get(&quot;reg.length_suffix&quot;));
+

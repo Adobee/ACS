@@ -1,0 +1,7 @@
+String setLevel = ((UdalSetLoggerLevelStatement)statement).getKv().getValue();
+int affectedRows = 0;
+Level level = Level.getLevel(setLevel);
+
+if (name != null &amp;&amp; !name.isEmpty() &amp;&amp;  level != null) {
+affectedRows = new UdalSetLoggerLevelStatementResponse().new Log4jLoggerFactory2().setLoggerLevel(name, level);
+

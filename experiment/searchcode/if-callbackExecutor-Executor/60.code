@@ -1,0 +1,8 @@
+* @param httpExecutor executor for http request. Cannot be null.
+* @param callbackExecutor executor for callbacks. If null is passed, then the same thread
+public VoatApi(@NonNull Executor httpExecutor, @Nullable Executor callbackExecutor) {
+mVoatService = init(httpExecutor, callbackExecutor);
+}
+
+private VoatService init(Executor httpExecutor, Executor callbackExecutor) {
+

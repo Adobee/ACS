@@ -1,0 +1,10 @@
+* The methods from this class throw an {@code IOException} if they detect an I/O error from the underlying
+* {@code Appendable} object.
+*
+* @author Ricardo Fonseca &amp;lt;rfonseca&amp;#064;lasige.di.fc.ul.pt&amp;gt;
+public static NoisyPrintableAppendable of(Appendable appendable) {
+
+Objects.requireNonNull(appendable);
+
+if (appendable instanceof PrintStream) {
+

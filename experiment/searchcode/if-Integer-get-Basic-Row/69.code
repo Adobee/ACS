@@ -1,0 +1,8 @@
+Resource resource = m_project.getResourceByUniqueID(row.getInteger(&quot;PERMANENT_RESOURCEID&quot;));
+Resource group = m_project.getResourceByUniqueID(row.getInteger(&quot;ROLE&quot;));
+if (resource != null &amp;&amp; group != null)
+Task startTask = m_project.getTaskByUniqueID(row.getInteger(&quot;START_TASK&quot;));
+Task endTask = m_project.getTaskByUniqueID(row.getInteger(&quot;END_TASK&quot;));
+
+if (startTask != null &amp;&amp; endTask != null)
+

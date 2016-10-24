@@ -1,0 +1,9 @@
+public CustomTimePickerDialog(Context context, OnTimeSetListener callBack, int hourOfDay, int minute, boolean is24HourView)
+{
+super(context, callBack, hourOfDay, minute, is24HourView);
+}
+
+private static int getRoundedMinute(int minute)
+{
+if (minute % TIME_PICKER_INTERVAL != 0)
+

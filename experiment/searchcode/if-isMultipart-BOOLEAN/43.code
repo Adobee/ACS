@@ -1,0 +1,6 @@
+public class MyMultipartResolver extends CommonsMultipartResolver {
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+String url=request.getRequestURI();
+if(&quot;/product/ssmCreate.shtml&quot;.equals(url)||&quot;/haoDuan/addHcode.shtml&quot;.equals(url)||&quot;/product/updateMms.shtml&quot;.equals(url)){
+

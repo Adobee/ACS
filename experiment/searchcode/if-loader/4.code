@@ -1,0 +1,10 @@
+package net.bodz.bas.c.loader;
+
+public class ClassLoaders {
+
+public static ClassLoader getCompileClassLoader() {
+ClassLoader loader = Thread.currentThread().getContextClassLoader();
+if (loader == null)
+loader = ClassLoader.getSystemClassLoader();
+return loader;
+

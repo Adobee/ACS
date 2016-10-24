@@ -1,0 +1,6 @@
+protected static Class<?> resolveBound(Class<?> type, TypeVariable typeVariable) {
+java.lang.reflect.Type bound = typeVariable.getBounds()[0];
+if (bound instanceof Class) {
+return (Class<?>) typeVariable.getBounds()[0];
+} else if (bound instanceof TypeVariable) {
+

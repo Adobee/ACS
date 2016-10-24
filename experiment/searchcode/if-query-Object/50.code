@@ -1,0 +1,6 @@
+public static void putValueInQuery(Query query, List<QueryPara> queryParas) {
+if (queryParas != null &amp;&amp; queryParas.size() > 0) {
+for (QueryPara queryPara : queryParas) {
+if (queryPara.getOp().equalsIgnoreCase(Constants.OP_IN)) {
+query.setParameterList(QueryParaUtils
+

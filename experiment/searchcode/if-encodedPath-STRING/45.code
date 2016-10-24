@@ -1,0 +1,8 @@
+public SvnNode node(URI uri, Object extra) throws NodeInstantiationException {
+String encodedSchemeSpecific;
+String encodedPath;
+String separator;
+String root;
+root = repository.getRepositoryRoot(true).toString();
+if (!encodedSchemeSpecific.startsWith(root)) {
+

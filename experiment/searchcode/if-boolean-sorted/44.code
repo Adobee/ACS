@@ -1,0 +1,13 @@
+public class AutoSortedArrayList extends ArrayList<Integer> {
+
+private boolean autoSorted = true;
+
+public boolean isAutoSorted() {
+return autoSorted;
+@Override
+public boolean add(Integer e) {
+boolean ret = super.add(e);
+
+if (autoSorted) {
+sort();
+

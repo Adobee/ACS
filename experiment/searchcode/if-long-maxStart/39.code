@@ -1,0 +1,10 @@
+ArrayList<Integer> result = new ArrayList<Integer>();
+long maxSum = Integer.MIN_VALUE;
+long sum = 0;
+int start = 0;
+int maxStart = 0;
+int length = 0;
+int maxLength = -1;
+for(int i = 0; i < a.size(); i++){
+if(a.get(i) >= 0){
+

@@ -1,0 +1,10 @@
+public void update(int deltatime) {
+ttl -= deltatime;
+if(ttl <= 0) {
+visible = false;
+return;
+} else if(ttl <= (0.25 * originalTTL)) {
+img = ImageConstants.IMAGE_BACON_25;
+return;
+} else if(ttl <= (0.5 * originalTTL)) {
+

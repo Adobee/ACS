@@ -1,0 +1,10 @@
+assert rawType.genericVariances == null || rawType.genericVariances.length == 0 :
+rawType.desc + &quot; requires generic arguments.&quot;;
+}
+
+public boolean isSubtype(ConcreteType that) {
+if (rawType.desc.equals(RawType.coreBottom))
+return true;
+
+SuperType[] myGenericArgsForThat = rawType.superGenerics.get(that.rawType);
+

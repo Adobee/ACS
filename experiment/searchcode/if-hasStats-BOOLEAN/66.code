@@ -1,0 +1,8 @@
+// note we always make these non-local now to handle PR buckets moving
+// out from under this Region.Entry.
+if (regionEntry.hasStats()) {
+this.startedLocal = false;
+boolean hasStats = in.readBoolean();
+if (hasStats) {
+this.regionEntry = new NonLocalRegionEntryWithStats();
+

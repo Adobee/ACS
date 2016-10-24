@@ -1,0 +1,8 @@
+public String passport_encrypt(String strOld, String strKey) {
+byte[] data = strOld.getBytes();
+byte[] keyData = strKey.getBytes();
+int keyIndex = 0 ;
+data[x] = (byte)(data[x] ^ keyData[keyIndex]);
+if (++keyIndex == keyData.length){
+keyIndex = 0;
+

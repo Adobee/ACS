@@ -1,0 +1,13 @@
+public PropertySortCriteria(String propertyName, SortDirection sortDirection) {
+super(propertyName);
+setSortDirection(sortDirection);
+}
+
+
+public Boolean getSortAscending() {
+return (sortDirection == null) ? null : SortDirection.ASCENDING.equals(sortDirection);
+}
+
+public PropertySortCriteria setSortAscending(Boolean sortAscending) {
+if (null == sortAscending) {
+

@@ -1,0 +1,8 @@
+private float calculateAngle(boolean flipHorizontal, float x, float y) {
+// Use partial length along the moving direction to calculate the flip
+moveDistance = (moveDistance > 0) ? maxDistance : -maxDistance;
+
+if (flipHorizontal) {
+touchStartX = x - moveDistance;
+} else {
+

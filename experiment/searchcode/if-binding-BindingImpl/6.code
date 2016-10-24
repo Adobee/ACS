@@ -1,0 +1,12 @@
+public class BindingImpl implements Binding {
+
+private String description;
+
+/**
+* An empty constructor used by JAXB
+* Clone a Binding
+*/
+public BindingImpl(final Binding feature) {
+if (feature != null)
+this.description = feature.getDescription();
+

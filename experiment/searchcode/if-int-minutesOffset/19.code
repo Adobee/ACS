@@ -1,0 +1,7 @@
+int hoursOffset = (int) (value / 3600.0);
+value -= hoursOffset * 3600.0;
+int minutesOffset = (int) (value / 60.0);
+value -= minutesOffset * 60.0;
+int secondsOffset = (int) (value);
+int hundredsOffset = (int) (value - secondsOffset) * 100;
+

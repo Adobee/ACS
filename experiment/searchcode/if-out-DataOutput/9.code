@@ -1,0 +1,11 @@
+private final DataOutput out;
+
+public static OutputStream constructOutputStream(DataOutput out) {
+if (out instanceof OutputStream) {
+return new DataOutputOutputStream(out);
+}
+}
+
+private DataOutputOutputStream(DataOutput out) {
+this.out = out;
+

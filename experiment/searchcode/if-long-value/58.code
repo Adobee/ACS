@@ -1,0 +1,10 @@
+* To change this template use File | Settings | File Templates.
+*/
+public class AnjiBoundedLongValue extends AbstractAnjiValue<Long> implements IAnjiNumberValue<Long> {
+@Override
+public void setValue(Long value) {
+if (inBounds(value))
+super.setValue(value);
+}
+}
+

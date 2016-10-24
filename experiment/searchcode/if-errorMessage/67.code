@@ -1,0 +1,10 @@
+public Error(String e, Node extra) {
+errorMessage = e;
+extraInfo = extra;
+}
+
+public void print(int n) {
+if (n >= 0) {
+System.out.println(&quot;ERROR: &quot; + errorMessage);
+if (extraInfo != null) extraInfo.print(n);
+

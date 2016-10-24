@@ -1,0 +1,8 @@
+@Override
+public void addOption(String name, String value) {
+if (getOptions(null).size() > 1)
+throw new UnsupportedOperationException(&quot;Can&#39;t add any more options to Boolean list&quot;);
+super.addOption(name, value);
+}
+}
+

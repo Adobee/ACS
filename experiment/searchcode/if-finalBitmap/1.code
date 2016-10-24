@@ -1,0 +1,8 @@
+public HttpBitmap(Context context) {
+if (finalBitmap == null) {
+finalBitmap = FinalBitmap.create(context);
+// finalBitmap.configLoadingImage(R.drawable.portrait_person_default);
+public void displayBitmap(View imageView, String uri) {
+if (finalBitmap != null) {
+finalBitmap.display(imageView, uri);
+

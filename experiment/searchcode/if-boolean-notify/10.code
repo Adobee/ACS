@@ -1,0 +1,12 @@
+private NotifyService<T> notifyService = null;
+
+private T message = null;
+
+private boolean isSuccess = false;
+
+private NotifyHandler<T> handler = null;
+@Override
+public void run() throws SysNotifyException{
+try {
+if(message != null) {
+

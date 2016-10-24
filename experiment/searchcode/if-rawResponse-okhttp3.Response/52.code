@@ -1,0 +1,7 @@
+try {
+Response rawResponse = responseBodyCall.execute();
+if (rawResponse != null &amp;&amp; rawResponse.body() != null) {
+FormalisticsAPIResponse formalisticsApiResponse = (FormalisticsAPIResponse) rawResponse.body();
+
+if (formalisticsApiResponse != null &amp;&amp; formalisticsApiResponse.status == &quot;SUCCESS&quot;) {
+

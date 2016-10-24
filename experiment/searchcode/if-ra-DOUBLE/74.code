@@ -1,0 +1,11 @@
+public ExponentialProxyingRunningAverage(RunningAverage ra) {
+this.ra = ra;
+}
+
+public double currentValue() {
+return Math.exp(ra.currentValue());
+}
+
+public void report(double d) {
+ra.report(Math.log(d));
+

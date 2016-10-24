@@ -1,0 +1,13 @@
+new Problem5557_JW().solve();
+}
+
+private void solve() {
+Scanner sc = new Scanner(System.in);
+int nn = sc.nextInt();
+int[] V = new int[nn];
+long[][] SS = new long[nn][21];
+SS[0][V[0]] = 1;
+for (int i = 1; i < nn-1; i++) {
+for (int s = 0; s <= 20; s++) {
+if (s - V[i] >= 0) {
+

@@ -1,0 +1,6 @@
+public abstract class AbstractEventFilter implements EventFilter {
+public boolean accept(ChangedEvent event, EventFilterChain eventfilterChain) {
+
+if (checkEvent(event)) {
+return eventfilterChain.doNext(event);
+

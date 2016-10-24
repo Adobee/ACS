@@ -1,0 +1,9 @@
+.addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+.build();
+}
+
+public static RetrofitHelper newInstance() {
+if (mRetrofit == null){
+synchronized (RetrofitHelper.class){
+if (mRetrofit == null)
+

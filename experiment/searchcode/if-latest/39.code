@@ -1,0 +1,9 @@
+import com.google.gson.Gson;
+import com.renova.zhihudailylab.api.GetLatestNewsApi;
+import com.renova.zhihudailylab.base.BaseApi;
+boolean responseSuccessful = BaseApi.isResponseSuccessful(latestNews);
+
+if (responseSuccessful) {
+Gson gson = new Gson();
+LatestNews latestNewsEntity = gson.fromJson(latestNews, LatestNews.class);
+

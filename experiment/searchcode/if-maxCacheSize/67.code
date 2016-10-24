@@ -1,0 +1,8 @@
+/*     */   public static void init(boolean autoCreatScaled, int maxCacheSize, String appCacheImgsPath, boolean isCheckImgFileSizeMax)
+/*     */   {
+/*  83 */     if (maxCacheSize > 1) {
+/*  84 */       imgsCache = new LruMemoryCache(
+/*  85 */         maxCacheSize * 1024 * 1024);
+/*     */     }
+/*  87 */     if (new SdcardHelper().ExistSDCard()) {
+

@@ -1,0 +1,10 @@
+public static void main(String[] args) {
+
+Scanner scanner = new Scanner(System.in);
+
+int numDays = scanner.nextInt();
+
+while (numDays > 0) {
+int[] days = new int[numDays];
+for (int i = 0; i < numDays; i++) {
+

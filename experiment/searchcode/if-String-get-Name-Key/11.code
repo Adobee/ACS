@@ -1,0 +1,8 @@
+return client.getObject(idKey,User.class);
+}
+
+public User getByNickName(String nickname){
+if(StringUtils.isBlank(nickname))return null;
+String nickNameKey = this.getNickNameKey(nickname);
+return client.getObject(nickNameKey,User.class);
+

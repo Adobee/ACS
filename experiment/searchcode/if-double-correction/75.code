@@ -1,0 +1,11 @@
+import static com.google.common.base.Preconditions.checkNotNull;
+
+public class Correction {
+
+private final Phrase phrase;
+private final double weight;
+
+public Correction(Phrase phrase, double weight) {
+this.phrase = checkNotNull(phrase);
+this.weight = weight;
+

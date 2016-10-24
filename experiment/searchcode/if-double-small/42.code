@@ -1,0 +1,9 @@
+package Misc;
+
+public class BoundNumber {
+public static double TOO_SMALL = -1.0E20;
+public static double TOO_BIG = 1.0E20;
+
+public static double bound(final double d) {
+if (d < TOO_SMALL) {
+

@@ -1,0 +1,6 @@
+/** Calculates kernel value of vectors x and y. */
+public double calculateDistance(double[] x1, double[] x2) {
+double norm2 = norm2(x1, x2);
+double exp1 = sigma1 == 0.0d ? 0.0d : Math.exp((-1) * norm2 / sigma1);
+double exp2 = sigma2 == 0.0d ? 0.0d : Math.exp((-1) * norm2 / sigma2);
+

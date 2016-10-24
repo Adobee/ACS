@@ -1,0 +1,14 @@
+static int get( int d, int l1, int l2, int l3 )
+{
+int t, j, k, i, h;
+
+if( l1 == 0 &amp;&amp; l2 == 0 &amp;&amp; l3 == 0 &amp;&amp; d >= 0 )
+if( ( t = s[d][l1][l2][l3] ) >= 0 )
+return t;
+
+t = 0;
+
+if( d == 1 )
+{
+if( l1!=0 ) t += get( d, l1-1, l2, l3 );
+

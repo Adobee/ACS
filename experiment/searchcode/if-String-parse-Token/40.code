@@ -1,0 +1,11 @@
+System.out.println(&quot;Error: Token is not program!&quot;); System.exit(0);
+}
+t.getToken();
+progTree.addChild(parseDeclSeq(t));
+if (t.currentToken().token != TokenType.BEGIN) {
+System.out.println(&quot;Error: Token is not begin!&quot;); System.exit(0);
+}
+t.getToken();
+progTree.addChild(parseStmtSeq(t));
+if (t.currentToken().token != TokenType.END) {
+

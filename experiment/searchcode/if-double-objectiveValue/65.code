@@ -1,0 +1,11 @@
+int idxVar = idToIndexVarMapings.get(id);
+double value = wtRef.get(id);
+
+if (value != 0.0) objTerms.add(new L1VarTerm(idxVar, -1 / value, 1));
+List<LPConstraint> constraits = internalProblem.getProblem().getConstraints();
+
+problem.setConstraints(constraits);
+
+try {
+double objectiveValue = getObjectiveValue();
+

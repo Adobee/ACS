@@ -1,0 +1,13 @@
+public class BetweenStrategy<I> extends AbstractFilterStrategy<I> {
+
+public BetweenStrategy(I start, I end) {
+super( start, end );
+}
+
+public boolean compare(I compared) throws Exception {
+throw new IllegalArgumentException( &quot;specified type is Boolean. Boolean can&#39;t operate on between filter.&quot; );
+
+}
+
+if ( ( reflector.compareTo( start, compared ) == 0 || reflector.compareTo( start, compared ) < 0 )
+

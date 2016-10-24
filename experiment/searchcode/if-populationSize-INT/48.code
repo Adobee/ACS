@@ -1,0 +1,8 @@
+public static int POPULATIONSIZE = 20;
+public static double MUTATIONRATE = .05;
+public static int MAXPOPFITNESS = (3*64*(POPULATIONSIZE - 1))*POPULATIONSIZE;
+System.out.println(beginGame(NUMBEROFGENERATIONS, POPULATIONSIZE, MUTATIONRATE));
+}
+
+public static String beginGame(int numberOfGenerations, int populationSize, double mutationRate) throws FileNotFoundException{
+

@@ -1,0 +1,11 @@
+//Select elements which are contiguous
+public static int maxArrayContiguous(int[] input)
+{
+int max = 0 ;
+int[] window = new int[input.length];
+
+if(input[0] > 0) window[0] = input[0];
+else	window[0] = 0 ;
+
+for(int i = 1 ; i < input.length ; i++)
+

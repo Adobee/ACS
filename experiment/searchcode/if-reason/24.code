@@ -1,0 +1,15 @@
+import com.oreon.cerebrum.encounter.Reason;
+
+/**
+*
+* @author WitchcraftMDA Seam Cartridge -
+*
+*/
+public abstract class ReasonListQueryBase extends BaseQuery<Reason, Long> {
+refresh();
+}
+
+public void setCodeId(Long id) {
+if (reason.getCode() == null) {
+reason.setCode(new com.oreon.cerebrum.codes.Code());
+

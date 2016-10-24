@@ -1,0 +1,14 @@
+import org.idekerlab.PanGIAPlugin.data.DoubleMatrix;
+import org.idekerlab.PanGIAPlugin.data.DoubleVector;
+
+public class SVD
+public double[][] V()
+{
+return V;
+}
+
+protected static double normalize(double[] vec)
+{
+double norm2 = 0;
+for (int i=0;i<vec.length;i++)
+

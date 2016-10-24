@@ -1,0 +1,8 @@
+super.afterSet(t);
+
+for (int i = t.blockRow - LIGHT_RANGE; i <= t.blockRow + LIGHT_RANGE; i++) {
+for (int j = t.blockColumn - LIGHT_RANGE; j <= t.blockColumn + LIGHT_RANGE; j++) {
+WorldMap.map[t.blockRow + LIGHT_RANGE][t.blockColumn - LIGHT_RANGE].lightened--;
+WorldMap.map[t.blockRow + LIGHT_RANGE][t.blockColumn + LIGHT_RANGE].lightened--;
+if (World.weather == Const.V_RAIN_HARD) {
+

@@ -1,0 +1,15 @@
+return this.phoneService.findAll();
+}
+
+/**
+* *
+* GET
+* @param phoneId
+* @return
+*/
+
+@RequestMapping(value = &quot;/{phoneId}&quot;, method = RequestMethod.GET)
+for (PhoneDTO phone : this.phoneService.findAll()){
+if(phone.getId() == phoneId) {
+findPhone = phone; break;
+

@@ -1,0 +1,9 @@
+System.out.print(&quot;Do you want to enter a custom (1) or use the current (2) date?\n> &quot;);
+Scanner scanner = new Scanner(System.in);
+if (scanner.nextInt() == 1) {
+dayOfYear = LocalDate.now().getDayOfYear();
+}
+
+// Generate a number between 0 and QUOTES.length
+int dayIndex = (dayOfYear % QUOTES.length) - 1;
+

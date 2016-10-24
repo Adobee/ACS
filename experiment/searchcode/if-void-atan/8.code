@@ -1,0 +1,13 @@
+public TAtan getAtan() {
+return this._atan_;
+}
+
+public void setAtan(TAtan node) {
+if (this._atan_ != null) {
+this._atan_.parent(null);
+}
+
+if (node != null) {
+if (node.parent() != null) {
+node.parent().removeChild(node);
+

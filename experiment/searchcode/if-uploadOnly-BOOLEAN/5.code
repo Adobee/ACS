@@ -1,0 +1,8 @@
+if (entryManager.needsSession())
+scheduler.setNeedsSynchronizationNotification();
+else {
+boolean uploadOnly = SynchronizationService.ACTION_SYNC_UPLOAD_ONLY.equals(intent.getAction());
+Intent i = new Intent(c, SynchronizationService.class);
+if (uploadOnly)
+i.setAction(SynchronizationService.ACTION_SYNC_UPLOAD_ONLY);
+

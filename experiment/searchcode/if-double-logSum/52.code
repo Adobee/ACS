@@ -1,0 +1,14 @@
+//			for (int k = 0;k < alphabet.length; k++){
+//				double numExp = 0;
+//				for (int t = 0; t < T; t++){
+//					if (observations.charAt(t)==(alphabet[k])){
+sumBeta[k] = beta[k][t+1] +    Math.log(states[i].getTransitionProbability(states[k].getName()))  + Math.log(states[k].getEmissionProbability(observations.charAt(t+1)));
+}
+beta[i][t] = logsum(sumBeta) ;
+}
+}
+
+//Calculating gamma
+
+double [][] gamma = new double [N][T];
+

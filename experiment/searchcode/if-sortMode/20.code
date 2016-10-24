@@ -1,0 +1,7 @@
+public class TripSortListByDepartureExec implements Comparator<DTOTrip>{
+
+private SortMode sortMode;
+public int compare(DTOTrip dto1, DTOTrip dto2) {
+if(this.sortMode == SortMode.ASCENDING){
+return compareSorteModeAsc(dto1, dto2);
+

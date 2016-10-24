@@ -1,0 +1,9 @@
+* @throws NullPointerException if {@code f} is {@code null}
+*/
+public Matrix(int rows, int cols, Field<T> f) {
+if (rows <= 0 || cols <= 0)
+* @throws IndexOutOfBoundsException if the specified row or column exceeds the bounds of the matrix
+*/
+public void set(int row, int col, T val) {
+if (row < 0 || row >= values.length || col < 0 || col >= values[0].length)
+

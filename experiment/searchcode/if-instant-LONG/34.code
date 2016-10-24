@@ -1,0 +1,12 @@
+@Override
+public Long convertToDatabaseColumn(Instant attribute) {
+if (attribute == null) {
+public Instant convertToEntityAttribute(Long dbData) {
+if (dbData == null) {
+return null;
+}
+return Instant.ofEpochSecond(dbData);
+}
+
+}
+

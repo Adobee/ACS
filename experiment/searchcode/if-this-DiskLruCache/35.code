@@ -1,0 +1,9 @@
+import android.os.Environment;
+
+import com.google.common.io.CharStreams;
+import com.jakewharton.disklrucache.DiskLruCache;
+DiskLruCache diskLruCache = getDiskLruCache(&quot;json&quot;);
+DiskLruCache.Editor edit = diskLruCache.edit(HashUtil.hashKeyForDisk(key));
+
+if (edit != null) {
+

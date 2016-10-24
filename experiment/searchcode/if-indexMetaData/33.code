@@ -1,0 +1,13 @@
+public boolean equals(Object obj) {
+if (this == obj) {
+return true;
+}
+
+if (!(obj instanceof IndexMetadata)) {
+return false;
+}
+
+IndexMetadata indexMetadata = (IndexMetadata)obj;
+
+if (Validator.equals(getTableName(), indexMetadata.getTableName()) &amp;&amp;
+

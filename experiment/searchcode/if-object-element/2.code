@@ -1,0 +1,9 @@
+class Some {
+
+private boolean canBePatternVariable(PsiElement element) {
+if (element instanceof LeafElement) {
+while (!(element instanceof LeafElement) &amp;&amp; element != null) {
+element = getNextObject(element);
+}
+return element != null;
+

@@ -1,0 +1,12 @@
+public class DFS<T extends Comparable<T>>{
+
+boolean[][] adjMatrix;
+Deque<Integer>[] adjList;
+int numNodes;
+boolean[] visited;
+
+DFS(int num){
+this.numNodes=num;
+this.adjMatrix=new boolean[num][num];
+this.adjList=new Deque[num];
+

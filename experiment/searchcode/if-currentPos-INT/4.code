@@ -1,0 +1,7 @@
+public int sweep() {
+switch (heading) {
+case NORTH:
+if (map.containsLine(currentPos, new Point(currentPos.getX() + 5, currentPos.getY()))) {
+return 1;
+} else if (map.containsLine(currentPos, new Point(currentPos.getX() - 5, currentPos.getY()))) {
+

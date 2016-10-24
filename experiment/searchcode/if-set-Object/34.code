@@ -1,0 +1,11 @@
+public NonNullGetSet(T object) {
+if (object == null) {
+throw new IllegalArgumentException(&quot;Object cannot be null&quot;);
+return object;
+}
+
+@Override
+public void set(T newObject) {
+if (newObject != null) {
+this.object = newObject;
+

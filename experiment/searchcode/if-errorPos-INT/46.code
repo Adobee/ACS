@@ -1,0 +1,11 @@
+while (receiveBin.length() < 11)
+receiveBin = &quot;0&quot; + receiveBin;
+int errors = 0, errorPos = 0;
+for (int i = 0; i < 11; i++) {
+if (!sendBin.substring(i, i + 1).equals(receiveBin.substring(i, i + 1))) {
+errorPos = i + 1;
+errors++;
+}
+}
+if (errors == 0)
+

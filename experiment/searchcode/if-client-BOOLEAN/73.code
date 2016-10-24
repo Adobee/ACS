@@ -1,0 +1,11 @@
+return this.clientType.hashCode()+this.clientId.hashCode();
+}
+@Override
+public boolean equals(Object o){
+if(!(o instanceof CID))
+return false;
+CID n = (CID)o;
+if(this.clientType == null || this.clientId == null)
+return false;
+if(this.clientType != n.getClientType() || this.clientId != n.getClientId())
+

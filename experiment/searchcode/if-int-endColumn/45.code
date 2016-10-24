@@ -1,0 +1,7 @@
+int rowLenght = matrix.length;
+if (rowLenght == 0)
+return 0;
+int columnLength = matrix[0].length;
+for (int startColumn = 0; startColumn < columnLength; startColumn++) {
+for (int endColumn = startColumn; endColumn < columnLength; endColumn++) {
+

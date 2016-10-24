@@ -1,0 +1,14 @@
+* This value is added for test case execution control without any change in
+* the simulation scenario.
+*/
+private boolean shuffleMove = false;
+
+@Override
+public void move() {
+if (shuffleMove) {
+super.move();
+}
+}
+
+public void setShuffleMove(boolean shuffleMove) {
+

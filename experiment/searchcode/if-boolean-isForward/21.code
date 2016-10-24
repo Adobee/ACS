@@ -1,0 +1,11 @@
+private DrivetrainRotation drivetrainRotation;
+private double distanceThreshold;
+private double speed;
+private boolean isForward;
+drivetrainRotation.setMecanumPolarRotate(0.0);
+}
+
+protected boolean isFinished() {
+if(isForward) {
+return drivetrain.getUltrasonicSensor().getDistance() < distanceThreshold;
+

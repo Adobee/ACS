@@ -1,0 +1,8 @@
+/** {@inheritDoc} */
+public RealMatrix getU()
+throws InvalidMatrixException {
+
+if (cachedU == null) {
+// cache the matrix for subsequent calls
+cachedS = MatrixUtils.createRealDiagonalMatrix(singularValues);
+

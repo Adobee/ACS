@@ -1,0 +1,11 @@
+if (i[4] == null) {
+p = 0;
+} else if (((Double) i[4]).doubleValue() <= 0.6) {
+p = RachelClassifier.N3860910f1(i);
+} else if (((Double) i[4]).doubleValue() > 0.6) {
+p = 1;
+}
+return p;
+}
+static double N3860910f1(Object []i) {
+

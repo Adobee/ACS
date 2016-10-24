@@ -1,0 +1,14 @@
+return output;
+
+}
+
+public double activate(double net) {
+if (net > 100) {
+return 1.0;
+} else if (net < -100) {
+return 0.0;
+}
+
+double den;
+den = 1d + Math.exp(-this.slope * net);
+

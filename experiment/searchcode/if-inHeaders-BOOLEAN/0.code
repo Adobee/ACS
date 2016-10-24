@@ -1,0 +1,9 @@
+public class HeadersAndBodyLineOutputStreamMux implements LineOutputStream {
+
+private boolean inHeaders = true;
+private boolean inBody = false;
+private LineOutputStream headerOutput;
+// empty line separates headers and body
+if (line.equals(&quot;&quot;) &amp;&amp; inHeaders) {
+headerOutput.onFinish();
+

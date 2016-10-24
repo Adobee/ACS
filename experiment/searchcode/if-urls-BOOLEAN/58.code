@@ -1,0 +1,10 @@
+Integer id = fileUrlsDao.create(fileUrlsPO);
+if (id == null) {
+return null;
+}
+fileUrlsPO.setId(id);
+* @return
+*/
+public boolean deleteSysFileUrl(Integer id) {
+return fileUrlsDao.deleteSysFileUrl(id);
+

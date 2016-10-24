@@ -1,0 +1,22 @@
+int ans = 0;
+for(ans = 0; ; ans++)
+{
+long gcd = 0;
+if(ans % 2 == 0)
+gcd = gcd(a, n);
+else
+gcd = gcd(b, n);
+if(n < gcd)
+{
+ans++;
+break;
+}
+n -= gcd;
+}
+
+System.out.println(ans % 2);
+
+}
+
+}
+

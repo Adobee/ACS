@@ -1,0 +1,8 @@
+public ATCSAction closeProject = new ATCSAction(&quot;Close project&quot;, &quot;Closes the project, unloading all resources from memory&quot;) {
+public void actionPerformed(ActionEvent e) {
+if (!(selectedNode instanceof Project)) return;
+public ATCSAction deleteProject = new ATCSAction(&quot;Delete project&quot;, &quot;Deletes the project, and all created/altered data, from disk&quot;) {
+public void actionPerformed(ActionEvent e) {
+if (selectedNode instanceof Project) {
+if (JOptionPane.showConfirmDialog(ATContentStudio.frame, &quot;Are you sure you wish to delete this project ?\nAll files created for it will be deleted too...&quot;, &quot;Delete this project ?&quot;, JOptionPane.OK_CANCEL_OPTION) == JOptionPane.OK_OPTION) {
+

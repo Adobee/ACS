@@ -1,0 +1,8 @@
+System.out.println(&quot;로그인&quot;);
+MemberVO retValue = (MemberVO) point.proceed();
+if(retValue != null){
+String grade = memberService.confirmGrade(memberId).getMemberGrade();
+System.out.println(&quot;등급&quot;+grade);
+if(grade.equals(&quot;ADMIN&quot;)){
+return retValue;
+

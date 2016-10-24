@@ -1,0 +1,9 @@
+private MockHttpServletResponse mockResponse;
+private final HttpResponse response;
+
+public NetMvcResult(MockHttpServletRequest request, HttpResponse response) {
+public synchronized MockHttpServletResponse getResponse() {
+// conversion needs to happen just once
+if (null == mockResponse) {
+mockResponse = convertResponseToMockResponse(response);
+

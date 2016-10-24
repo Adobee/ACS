@@ -1,0 +1,11 @@
+private String fixed_format(double d, int precision)
+{  boolean removeTrailing = true;
+
+if (precision == 0)
+return (long)(d + 0.5) + (removeTrailing ? &quot;&quot; : &quot;.&quot;);
+String z = leading_zeroes + l;
+z = &quot;.&quot; + z.substring(z.length() - precision, z.length());
+
+if (removeTrailing)
+{  int t = z.length() - 1;
+

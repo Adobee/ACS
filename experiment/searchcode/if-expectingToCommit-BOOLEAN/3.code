@@ -1,0 +1,6 @@
+final boolean expectingToCommit = randomBoolean();
+Settings.Builder settings = Settings.builder();
+final MockNode mockNode = createMockNode(&quot;data_&quot; + i, Settings.builder().put(&quot;node.master&quot;, false).build());
+discoveryNodesBuilder.put(mockNode.discoveryNode);
+if (randomBoolean()) {
+

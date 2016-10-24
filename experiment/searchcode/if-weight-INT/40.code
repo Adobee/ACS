@@ -1,0 +1,9 @@
+// initialize minWeights
+for (int i = 2; i <= numNodes; i++) {
+if (weight[1][i] != -1) {
+minWeight[i] = weight[1][i];
+// find next min. weight edge to add to MST
+minWeightAll = 999;
+for (int j = 2; j <= numNodes; j++)
+if ((!inMST[j]) &amp;&amp; (minWeight[j] < minWeightAll)) {
+

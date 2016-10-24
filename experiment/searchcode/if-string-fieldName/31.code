@@ -1,0 +1,6 @@
+Map<String, String> fields = new TreeMap<String, String>();
+// 加入一个头部域
+public void addFieldValue(String fieldName, String value) {
+if (validateFieldValue(fieldName, value))
+fields.put(fieldName, value);
+

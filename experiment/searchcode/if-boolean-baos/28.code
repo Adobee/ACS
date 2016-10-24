@@ -1,0 +1,13 @@
+if ( value != null ){
+
+if ( o_key instanceof byte[]){
+
+encode( baos, (byte[])o_key);
+String	key = (String)o_key;
+
+if ( byte_keys ){
+
+try{
+
+encode( baos, byte_charset.encode(key));
+

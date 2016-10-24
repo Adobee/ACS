@@ -1,0 +1,9 @@
+private static final Map<String, Measurement> UNIT_TO_MEASUREMENT = new HashMap<String, Measurement>();
+
+private static void add(Measurement measurement){
+MeasurementSystem ms = measurement.getMeasurementSystem();
+MeasurementOf mo = measurement.getMeasurementOf();
+String unit = measurement.getUnit();
+
+if(UNIT_TO_MEASUREMENT.containsKey(unit)){
+

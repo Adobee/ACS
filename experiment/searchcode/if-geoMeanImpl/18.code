@@ -1,0 +1,9 @@
+varianceImpl.increment(value);
+}
+if (geoMeanImpl != geoMean) {
+geoMeanImpl.increment(value);
+dest.meanImpl = source.meanImpl.copy();
+}
+if (source.getGeoMeanImpl() instanceof GeometricMean) {
+dest.geoMeanImpl = new GeometricMean((SumOfLogs) dest.sumLogImpl);
+

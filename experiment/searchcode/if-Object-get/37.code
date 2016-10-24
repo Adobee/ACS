@@ -1,0 +1,9 @@
+public CollisionObject(VisibleObject a, VisibleObject b) {
+this.a = a;
+this.b = b;
+}
+
+public boolean checkCollision() {
+if (a != null &amp;&amp; b != null) {
+if ((a.getX() + a.getWidth() >= b.getX()) &amp;&amp; (a.getX() < b.getX() + b.getWidth())) {
+

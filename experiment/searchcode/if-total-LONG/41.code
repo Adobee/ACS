@@ -1,0 +1,12 @@
+private long total;
+private long progress;
+
+public Progress(long total){
+this.total = total;
+progress = 0;
+}
+
+public void addProgress(){
+progress++;
+if (progress > total) throw new RuntimeException(&quot;progress = &quot;+progress+&quot; is greater than total =&quot; + total);
+

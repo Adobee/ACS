@@ -1,0 +1,10 @@
+private float[][] values;
+private int currentIndex = 0;
+private int countToCache;
+private int itemCount;
+private int numValid = 0;
+public void put(float[] values) {
+if (values.length == itemCount) {
+for (int i = 0; i < itemCount; i++) {
+this.values[currentIndex][i] = values[i];
+

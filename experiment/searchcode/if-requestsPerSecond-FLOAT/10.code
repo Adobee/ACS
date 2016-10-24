@@ -1,0 +1,15 @@
+comment|/**      * The throttle to apply to all matching requests in sub-requests per second. 0 means set no throttle. Throttling is done between      * batches, as we start the next scroll requests. That way we can increase the scroll&#39;s timeout to make sure that it contains any time      * that we might wait.      */
+DECL|field|requestsPerSecond
+specifier|private
+name|Float
+name|requestsPerSecond
+decl_stmt|;
+name|float
+name|requestsPerSecond
+parameter_list|)
+block|{
+if|if
+condition|(
+name|requestsPerSecond
+operator|<=
+

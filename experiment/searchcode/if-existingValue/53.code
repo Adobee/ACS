@@ -1,0 +1,10 @@
+@Override
+public void resetToExisting() {
+if (existingValue == null)
+value = null;
+else
+public void setExisting(DmcAttribute<?> attr) {
+existingValue = (DmcTypeValueSV) attr;
+if (existingValue != null)
+value = existingValue.getSVCopy();
+

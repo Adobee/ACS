@@ -1,0 +1,5 @@
+SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(context);
+boolean autoStart = sp.getBoolean(GeneralPreferences.AUTOSTART, GeneralPreferences.PREFERENCE_DEFAULT_AUTOSTART);
+if(autoStart){
+Intent registerPhoneLister = new Intent(context, PhoneStateListenerStarterService.class);
+

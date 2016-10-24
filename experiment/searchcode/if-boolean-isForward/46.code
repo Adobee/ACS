@@ -1,0 +1,15 @@
+this.ctrl = ctrl;
+}
+
+public boolean isForward() {
+return (ctrl &amp; FORWARD)==FORWARD;
+}
+
+public boolean isLeft() {
+public String toString() {
+String ret = &quot;CMD{&quot;;
+if(isForward())
+ret += &quot;FWD&quot;;
+if(isBackward())
+ret += &quot;BWD&quot;;
+

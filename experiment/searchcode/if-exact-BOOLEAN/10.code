@@ -1,0 +1,13 @@
+public class FromRestriction implements Restriction {
+
+String from;
+boolean exactMatch;
+
+public FromRestriction(String pattern, boolean exactMatch) {
+from = pattern;
+this.exactMatch = exactMatch;
+}
+
+@Override
+public boolean validateRestriction(MimeInfoSimplified data) {
+

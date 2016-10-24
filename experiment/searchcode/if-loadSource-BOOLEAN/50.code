@@ -1,0 +1,12 @@
+int start = buffer.length();
+if (loadSource(sourceUrl, buffer)) {
+buffer.append(&quot;\n&quot;);
+} else {
+buffer.setLength(start);
+}
+}
+return buffer.toString();
+}
+
+private boolean loadSource(URL sourceUrl, StringBuilder buffer) {
+

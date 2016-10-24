@@ -1,0 +1,13 @@
+* Check to see whether the named directory exists and appears to contain
+* a security directory.
+*/
+private static boolean isSecurityDir(File secDir) {
+if (!secDir.exists() || !secDir.isDirectory()) {
+usage(null);
+}
+}
+
+@Override
+public boolean checkArg(String arg) {
+if (arg.equals(StorageNodeAgent.CONFIG_FLAG)) {
+

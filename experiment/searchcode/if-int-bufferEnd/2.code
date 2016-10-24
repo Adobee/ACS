@@ -1,0 +1,16 @@
+private final CharSequence buffer;
+
+private int bufferStart;
+private int bufferEnd;
+
+public SharedBufferCharSequence(@Nonnull final CharSequence buffer)
+return bufferEnd - bufferStart;
+}
+
+@Override
+public char charAt(int index)
+{
+if (bufferEnd <= index)
+{
+throw new StringIndexOutOfBoundsException(index);
+

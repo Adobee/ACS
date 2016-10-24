@@ -1,0 +1,14 @@
+return &quot;PLACE DATE TIME&quot;;
+}
+}
+
+private class MyUnitField2 extends UnitField {
+@Override
+public boolean canFail() {
+return true;
+}
+
+@Override
+public boolean checkParse(String field, Data data) {
+if (field.contains(&quot; &quot;)) return false;
+

@@ -1,0 +1,8 @@
+* @throws IllegalArgumentException if no suitable {@link XRangeConverter} was found
+*/
+public XRangeConverter getXRangeConverter(Class<? extends XRange> clazz) {
+Preconditions.checkNotNull(clazz);
+
+for (XRangeConverter xRangeConverter : xRangeConverters) {
+if (xRangeConverter.isApplicable(clazz)) {
+

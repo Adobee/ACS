@@ -1,0 +1,12 @@
+public int sqrt(int x) {
+long high = x;
+long low = 0;
+long mid = 0;
+
+while (low <= high){
+mid = low + (high - low) / 2;
+if (x < mid * mid){
+high = mid - 1;
+}else if (x > mid * mid){
+low = mid + 1;
+

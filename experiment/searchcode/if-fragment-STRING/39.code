@@ -1,0 +1,9 @@
+mFragmentTransaction.setTransition(FragmentTransaction.TRANSIT_FRAGMENT_OPEN);
+mFragmentTransaction.addToBackStack(null);
+mFragmentTransaction.commit();
+
+if(activity.findViewById(R.id.masterFragmentContainer) != null){
+Fragment oldDetail = mFragmentManager.findFragmentById(R.id.fragmentContainer);
+if(oldDetail!=null){
+mFragmentTransaction.remove(oldDetail);
+

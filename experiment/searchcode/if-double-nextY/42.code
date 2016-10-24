@@ -1,0 +1,7 @@
+k3 = deltaT * equation.evaluate(t + .75 * deltaT, addToVector(ys, .75 * k2));
+
+double nextY = ys[index] + 2f/9 * k1 + 3f/9 * k2 + 4f/9 * k3;
+protected boolean accept(ODEquation equation, double t, double[] ys, double nextY, double deltaT, int index)
+{
+if (Math.abs(nextY - mNextYHat) > mEpsilon * deltaT)
+

@@ -1,0 +1,11 @@
+args[0] = b;
+double fb = (double) m.invoke(obj, args);
+double fc, p, q, r, s, tol1, xm;
+if ((fa > price &amp;&amp; fb > price) || (fa < price &amp;&amp; fb < price)) {
+throw new RuntimeException(&quot;Root must be bracketed in zbrent&quot;);
+}
+fc = fb;
+for (int i = 0; i < ITMAX; i++) {
+
+if ((fb > price &amp;&amp; fc > price) || (fb < price &amp;&amp; fc < price)) {
+

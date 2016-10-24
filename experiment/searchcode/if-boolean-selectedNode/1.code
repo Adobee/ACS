@@ -1,0 +1,6 @@
+public void keyReleased(KeyReleasedEvent e) {
+TreeNode selectedNode = tree.getSelectedNode();
+if (selectedNode == null) {
+ITreeState state = tree.getTreeState();
+boolean expanded = state.isNodeExpanded(selectedNode);
+

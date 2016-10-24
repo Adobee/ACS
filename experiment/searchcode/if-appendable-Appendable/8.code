@@ -1,0 +1,7 @@
+public interface AttributeRenderer<V> {
+
+void render(String name, V value, Appendable appendable) throws IOException;
+public void render(String name, Boolean value, Appendable appendable) throws IOException {
+if (value) {
+appendable.append(&quot; &quot;).append(name);
+

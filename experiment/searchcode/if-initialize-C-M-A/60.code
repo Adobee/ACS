@@ -1,0 +1,12 @@
+public class ValidateDb {
+@Autowired
+private InitializeJsonDao initializeJsonDao;
+
+public void validate() {
+File file = new File(&quot;jsonDataBase.json&quot;);
+if (!file.exists()) {
+initializeJsonDao.initializeJsonDataBase();
+}
+}
+}
+

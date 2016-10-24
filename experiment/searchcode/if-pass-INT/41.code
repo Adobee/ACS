@@ -1,0 +1,15 @@
+//@ ensures \result == 2;
+private int prefix2TestPass() {
+int x = 2;
+if (x++ > x) {
+return 1;
+} else {
+return 2;
+}
+}
+
+//@ ensures \result == 4;
+private int prefix3TestPass() {
+int x = 2;
+if (x++>x++) {
+

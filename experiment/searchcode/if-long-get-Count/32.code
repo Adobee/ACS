@@ -1,0 +1,10 @@
+public static void incMapItem(String key, Map<String, Long> countMap) {
+Long count = new Long(0);
+if (countMap.containsKey(key)) {
+count = countMap.get(key);
+}
+count = count + 1;
+countMap.put(key, count);
+}
+}
+

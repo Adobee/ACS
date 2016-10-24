@@ -1,0 +1,6 @@
+lightVal = sensor.getNormalizedLightValue();
+if (lightVal < LIGHT_THRESHOLD){
+double theta = odometer.getTheta();
+if (theta > 315 || theta < 45 || (135 < theta &amp;&amp; theta < 225) ){ //affects y
+double y = odometer.getY();
+

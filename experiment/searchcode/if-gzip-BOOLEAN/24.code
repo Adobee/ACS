@@ -1,0 +1,8 @@
+private AtomicBoolean flagReadGzip;
+private String dataType;
+private Logger logger = LoggerFactory.getLogger(ThreadedReadGzip.class);
+public ThreadedReadGzip(ReadGzip readGzip, BlockingQueue<String> pathQueue,AtomicBoolean flagReadGzip, String dataType)
+{
+this.flagReadGzip = flagReadGzip;
+this.readGzip = readGzip;
+

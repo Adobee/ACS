@@ -1,0 +1,16 @@
+for (Pair<Frame, Frame> unlabeledPair : unlabeledVectors.keySet()) {
+boolean negFlag = true;
+if (score >= threshold + deepLevel * 0.01) {
+negFlag = false;
+break;
+}
+}
+
+if (negFlag)
+negativePairs.add(unlabeledPair);
+}
+
+return negativePairs;
+}
+}
+

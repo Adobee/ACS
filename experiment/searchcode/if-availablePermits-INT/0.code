@@ -1,0 +1,8 @@
+private int availablePermits = 0;
+private Object lock = new Object();
+
+public MySemaphoreImp(int availablePermits) {
+public void acquire(int permits) throws InterruptedException {
+synchronized (lock) {
+if (availablePermits >= permits) {
+

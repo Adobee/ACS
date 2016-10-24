@@ -1,0 +1,6 @@
+private static void solve(long[][] weeks, int S) {
+long cost = 0;
+int lw = 0;
+for (int i = 0; i < weeks.length; i++) {
+if ((weeks[lw][0] + S * (i - lw)) > weeks[i][0]) lw = i;
+

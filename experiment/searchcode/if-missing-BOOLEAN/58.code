@@ -1,0 +1,8 @@
+public TeXMFFileNotFoundException(String missing_file, String default_file_extension) {
+if (missing_file.indexOf(&#39;.&#39;) < 0 &amp;&amp; default_file_extension != null)
+this.missing_file = missing_file + &quot;.&quot; + default_file_extension;
+String main_message = MessageFormat.format(Task.strings.getString(&quot;missing_file&quot;), missing_file);
+if (missing_packages == null) {
+return main_message;
+} else {
+

@@ -1,0 +1,6 @@
+private Lesson checkLesson(Calendar date, int hourStart, int minStart, int hourEnd, int minEnd, long id){
+Lesson lesson;
+SimpleDateFormat sdf = new SimpleDateFormat(DATE_FORMAT);
+Cursor cursor = db.rawQuery(query, new String[]{dateToFind, &quot;&quot;+hourEnd, &quot;&quot;+minEnd, &quot;&quot;+hourStart, &quot;&quot;+minStart, &quot;&quot;+id});
+if(cursor==null)
+

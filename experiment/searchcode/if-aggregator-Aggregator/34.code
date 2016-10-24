@@ -1,0 +1,12 @@
+public static IAggregator getAggregator(String aggregatorName) {
+String name = aggregatorName.trim().toUpperCase();
+
+if (name.equals(&quot;SUM&quot;))
+return new SumAggregator();
+else if (name.equals(&quot;MAX&quot;))
+return new MaxAggregator();
+else
+return null;
+}
+}
+

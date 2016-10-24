@@ -1,0 +1,10 @@
+if ((lhs instanceof long[])) {
+append((long[])lhs, (long[])rhs);
+} else if ((lhs instanceof int[])) {
+public CompareToBuilder append(long lhs, long rhs)
+{
+if (this.comparison != 0) {
+return this;
+}
+this.comparison = (lhs > rhs ? 1 : lhs < rhs ? -1 : 0);
+

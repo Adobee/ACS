@@ -1,0 +1,9 @@
+public static Class<?> ofType(Type type) {
+//raw
+if(type instanceof Class) {
+return (Class) type;
+return (Class) ((ParameterizedType) type).getRawType();
+}
+
+if(type instanceof GenericArrayType) {
+

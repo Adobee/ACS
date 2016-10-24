@@ -1,0 +1,10 @@
+public class NoDupsArrayList<E> extends ArrayList<E> {
+
+
+@Override
+public boolean add(E element) {
+if (this.size() > 0) {
+boolean dup = isDuplicate(element);
+if (dup) {
+return false;
+

@@ -1,0 +1,10 @@
+super(stateMachine);
+}
+
+@Override
+public boolean expectedTlsMessage(TlsMessage message) {
+return isHandshakeMessageOfType(message, TlsHandshakeType.finished) || isApplicationDataMessage(message);
+public void receivedTlsMessage(TlsMessage message) {
+if (isApplicationDataMessage(message)) {
+MyLogger.info(&quot;Server cached application data message in WaitingForFinishedState.&quot;);
+

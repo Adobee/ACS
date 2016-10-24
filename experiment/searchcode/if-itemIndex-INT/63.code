@@ -1,0 +1,15 @@
+return itemIndex;
+}
+
+if (playlist.isRandom()) {
+Random rand = new Random();
+int lastIndex = itemIndex;
+itemIndex = rand.nextInt(playlist.getItemSize());
+}
+return itemIndex;
+}
+
+int nextIndex = itemIndex + 1;
+
+if (nextIndex < playlist.getItemSize()) {
+

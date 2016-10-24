@@ -1,0 +1,10 @@
+private static final long serialVersionUID = 1L;
+
+/** The &quot;Manage Periods&quot; service. */
+@EJB
+private ManagePeriodsService managePeriodsService;
+public String delete() {
+String errorMessageKey = managePeriodsService.validateExclusion(selectedEntity);
+
+if(errorMessageKey.equals(&quot;&quot;)) {
+

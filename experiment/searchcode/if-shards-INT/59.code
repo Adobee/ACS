@@ -1,0 +1,14 @@
+public class ClusterIndexHealth implements Iterable<ClusterShardHealth>, Streamable {
+
+private String index;
+
+private int numberOfShards;
+
+private int numberOfReplicas;
+
+int activeShards = 0;
+
+int relocatingShards = 0;
+
+int initializingShards = 0;
+

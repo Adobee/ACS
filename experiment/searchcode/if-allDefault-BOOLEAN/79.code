@@ -1,0 +1,7 @@
+private ArrayList<String> hdfsList = new ArrayList<String>();
+private boolean allDefault = true;
+private Configuration conf = null;
+String hdfsScheme = getHdfsPathFromDB(dbname);
+if (!defaultNNSchema.equalsIgnoreCase(hdfsScheme)) {
+allDefault = false;
+

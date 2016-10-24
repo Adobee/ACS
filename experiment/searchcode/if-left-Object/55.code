@@ -1,0 +1,7 @@
+protected Expression right;
+
+public Object evaluate(Binding binding) {
+return operator.eval(left.evaluate(binding), right.evaluate(binding));
+@Override public Object eval(Object left, Object right) {
+return AstUtils.unresolvedOrFalse(left) || AstUtils.unresolvedOrFalse(right);
+

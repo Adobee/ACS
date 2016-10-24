@@ -1,0 +1,11 @@
+Node r = subp[i];
+if (r != null) {
+double mr = r.hackcofm();
+mq = mr + mq;
+tmpv.multScalar(r.pos, mr);
+@Override
+public final HG walkSubTree(double dsq, HG hg)
+{
+if (subdivp(dsq, hg)) {
+for (int k = 0; k < Cell.NSUB; k++) {
+

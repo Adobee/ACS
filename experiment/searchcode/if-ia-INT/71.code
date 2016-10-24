@@ -1,0 +1,9 @@
+if (m == 0) return B[b_s+k-1];
+if (k == 1) return Math.min(A[a_s], B[b_s]);
+
+// divide k into two parts
+int ia = Math.min(k/2, m);
+int ib = k - ia;
+if (A[a_s+ia-1] < B[b_s+ib-1])
+return helper(A, a_s+ia, m-ia, B, b_s, n, k-ia);
+

@@ -1,0 +1,11 @@
+Circle c = new Circle(center, 1.0);
+Point2D.Double p = new Point2D.Double(1.0, 0);
+
+double eps = 1.0;
+double one = 1.0;
+while (true) {
+//			p.x = one - eps;
+c.r = one + eps;
+if (!c.isPointInside(p)) {
+break;
+

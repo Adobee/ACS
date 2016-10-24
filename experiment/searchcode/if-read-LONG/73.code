@@ -1,0 +1,10 @@
+private long doReadItemCount() throws IOException {
+long result = readLong();
+if (result < 0) {
+readLong(); // Consume byte-count if present
+result = -result;
+}
+return result;
+}
+}
+

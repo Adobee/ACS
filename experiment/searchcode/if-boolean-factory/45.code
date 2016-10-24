@@ -1,0 +1,10 @@
+this.beanFactory = beanFactory;
+}
+
+public Object createObject(String name) {
+if (beanFactory.containsBean(name)) {
+public boolean hasObject(String name) {
+return beanFactory.containsBean(name) || super.hasObject(name);
+}
+}
+

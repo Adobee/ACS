@@ -1,0 +1,8 @@
+public LocalVariableTableReader(ClassReader.AttrIterator iter) throws InvalidClassFileException {
+super(iter, &quot;LocalVariableTable&quot;);
+
+int offset = attr + 6;
+if (iter.getName().equals(&quot;LocalVariableTable&quot;)) {
+if (r == null) {
+r = new int[code.getBytecodeLength()][];
+

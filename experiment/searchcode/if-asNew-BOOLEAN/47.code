@@ -1,0 +1,8 @@
+PagingPanel<ReferenceModel> panel = (PagingPanel)item.getItem(0);
+if (panel instanceof BibliographyViewTab)
+public void onSaveSuccessful(final Reference returnedRef, final boolean asNew) {
+if (original == null || asNew)
+afterSave(null);
+else {
+original.getModel().setId(returnedRef.getReferenceID());
+

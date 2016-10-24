@@ -1,0 +1,9 @@
+* get serializer for given class; will generate one if not exist.
+*
+* @param cls
+* @return
+*/
+public static <T> Serializer<T> get(Class<T> cls) {
+Serializer<T> serializer = serializerMap.get(cls);
+if (serializer == null) {
+

@@ -1,0 +1,9 @@
+package com.db.core.util;
+
+
+import java.lang.annotation.Annotation;
+import java.lang.reflect.Method;
+public static <A extends Annotation> A findAnnotation(Method method, Class<A> annotationType) {
+A annotation = AnnotationUtils.findAnnotation(method, annotationType);
+if (annotation == null) {
+

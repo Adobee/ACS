@@ -1,0 +1,6 @@
+private void processMapOverlayFiles(Collection<Tile> collection, boolean downloadAllowed) {
+boolean shouldClearCache = false;
+if (!MapUtils.hasTile(mContext, filename)) {
+shouldClearCache = true;
+if (MapUtils.hasTileAsset(mContext, filename)) {
+

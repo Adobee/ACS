@@ -1,0 +1,10 @@
+protected FileKind fileKind;
+
+protected int pageSize;
+protected int numPages;
+protected long capacity;
+
+// We now use an implicit file name, that can always be
+public FileId(FileKind k, int pageSize, int numPages, long capacity) {
+this(counter++, k, pageSize, numPages, capacity);
+

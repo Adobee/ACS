@@ -1,0 +1,6 @@
+final int LENGTH = s.length();
+final char[] c = s.toCharArray();
+boolean[][] dp = new boolean[LENGTH][LENGTH];
+for (int start = 0; start < LENGTH - len + 1; ++ start) {
+if (dp[start][start + len - 1] == true) {
+

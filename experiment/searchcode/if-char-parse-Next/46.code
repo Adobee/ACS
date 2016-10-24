@@ -1,0 +1,11 @@
+private static Tuple parseFormula() {
+Tuple t = parseExpression();
+
+skipBlanks();
+if (nextChar() != &#39;=&#39;) {
+if (nextChar() == &#39;(&#39;) {
+skipChar();
+t = parseExpression();
+
+if (nextChar() != &#39;)&#39;) {
+

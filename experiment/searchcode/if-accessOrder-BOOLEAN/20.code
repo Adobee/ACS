@@ -1,0 +1,5 @@
+protected Cache(int size, boolean threadSafe, boolean accessOrder) {
+maxCacheSize = size;
+final Map<Key, Value> tempMap = new LinkedHashMap<Key, Value>(size + 1, 0.75f, accessOrder) {
+@Override
+

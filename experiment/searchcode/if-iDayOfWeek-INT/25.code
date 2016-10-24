@@ -1,0 +1,11 @@
+if (iDayOfWeek_prevMonth == 7)
+iDayOfWeek_prevMonth = 0;
+
+int iDayOfWeek = calendar.get(Calendar.DAY_OF_WEEK);
+int iDayOfMonth = calendar.get(Calendar.DAY_OF_MONTH);
+this.addColumnSelectionInterval(iDayOfWeek - 1, iDayOfWeek - 1);
+this.iRow=iCurentRow - 1;
+this.iColumn=iDayOfWeek - 1;
+// 当前日期之前
+int iBack = iDayOfMonth;
+

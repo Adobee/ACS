@@ -1,0 +1,10 @@
+public class VideoBuffer extends HashMap<Long, Frame> {
+
+private static final long serialVersionUID = 1L;
+int maxSize = 0;
+
+public VideoBuffer(int maxSize) {
+public int checkNeeded(int lastplayed) {
+for (int i = 0; i < maxSize; i++) {
+if (get(new Long(lastplayed + i)) == null) {
+

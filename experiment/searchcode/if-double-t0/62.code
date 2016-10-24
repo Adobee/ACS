@@ -1,0 +1,12 @@
+super(parameters);
+}
+
+@Override
+public double evaluate(double x) {
+double t0 = params[1];
+if(x < t0) { return 0; }
+
+double kA = params[0];
+double n = params[2];
+double d = Math.pow(kA * (x-t0), n);
+

@@ -1,0 +1,9 @@
+public class ValueGenerator extends Generator {
+private Object[] values;
+private int index = -1;
+
+public ValueGenerator(List<Object> values) {
+public Object next() {
+if (isRandomized()) {
+index = getRandom(values.length);
+

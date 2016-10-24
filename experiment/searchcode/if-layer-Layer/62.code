@@ -1,0 +1,7 @@
+BiomeLayer layer;
+if (hostility != FictionWorldHostility.APOCALYPSE) {
+layer = new BiomeLayerRNGBase(seed);
+for (int size = 0; size < 4; ++size) {
+layer = new BiomeLayerZoom((long) (seed + size), layer);
+if (size == 0) {
+

@@ -1,0 +1,17 @@
+double lowerBound = Double.MIN_VALUE;
+
+double beta = 0;
+while ( lowerBound < upperBound ) {
+if ( g == lowerBound ) {
+//	g = AlphaBetaWithMemory (root, beta-1, beta, d);
+if ( g < beta ) {
+upperBound = g;
+}
+else {
+lowerBound = g;
+}
+}
+return g;
+}
+}
+

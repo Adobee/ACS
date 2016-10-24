@@ -1,0 +1,10 @@
+protected void onCreate() {
+if (createdBy == null &amp;&amp; updatedBy != null) {
+createdBy = updatedBy;
+created = new Timestamp(new Date().getTime());
+}
+
+@PreUpdate
+protected void onUpdate() {
+if (updatedBy != null &amp;&amp; createdBy == null) {
+

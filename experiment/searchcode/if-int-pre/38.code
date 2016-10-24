@@ -1,0 +1,12 @@
+public class MinimunSteps {
+
+public static int minSteps(int m, int n) {
+if(m == n) return Integer.MAX_VALUE;
+
+int steps = 0;
+
+while(m > 1 || n > 1) {
+int preM = 0;
+int preN = 0;
+if(m > n) {//m = preM + preN, n = preN
+

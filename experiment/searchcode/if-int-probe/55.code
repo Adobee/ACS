@@ -1,0 +1,6 @@
+public DefaultProbeAttribute(int field, String name, ProbeAttributeType type, String units) {
+super(field, name, type, units);
+
+if (type == ProbeAttributeType.TABLE) {
+throw new Error(&quot;Table type not allowable in DefaultProbeAttribute&quot;);
+

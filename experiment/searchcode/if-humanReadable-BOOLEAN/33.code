@@ -1,0 +1,15 @@
+public void setHumanReadable(String humanReadable) {
+this.humanReadable = humanReadable;
+}
+
+public Date getDate() {
+try {
+if (machineReadable != null) {
+return DateFormat.getDateInstance().parse(machineReadable);
+}
+} catch (Exception e) {
+}
+try {
+if (humanReadable != null) {
+yearOnly = humanReadable.matches(&quot;\\d\\d\\d\\d&quot;);
+

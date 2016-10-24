@@ -1,0 +1,9 @@
+private void checkValid(double v){
+if(Double.isInfinite(v)||Double.isNaN(v))
+throw new InvalidIntervalException(&quot;&quot;+v);
+public DoubleInterval recip(){
+return one.div(this);
+}
+public DoubleInterval sqrt(){
+if(this.lo<0){
+

@@ -1,0 +1,11 @@
+protected synchronized void setBufferSize(short packetBufferSize) {
+if (sendBuffer != null) {
+flush();
+}
+sendBuffer = ByteBuffer.allocate(packetBufferSize);
+
+}
+
+@Override
+public void enableMultiMetrics(boolean enable) {
+

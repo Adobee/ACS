@@ -1,0 +1,9 @@
+HashMap<Integer,Integer> typePos = new HashMap<Integer,Integer>();
+int i = 1;
+for (GameEvent e : t.getGameEvents()) {
+if (e.getType() == GameEventType.PENALTY) {
+String[] row = new String[types.size() + 2];
+for (Integer[] val : vals) {
+row[0] = nameMap.get(val[0]);
+int r = 1;
+

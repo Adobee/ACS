@@ -1,0 +1,14 @@
+public class VehicleLaterRequestXmlHandler extends DefaultHandler {
+private StringBuilder result;
+private String currentTag;
+
+public VehicleLaterRequestXmlHandler(StringBuilder result) {
+public void characters(char[] ch, int start, int length)
+throws SAXException {
+if (currentTag.equalsIgnoreCase(&quot;description&quot;)) {
+result.append(ch, start, length);
+}
+}
+
+}
+

@@ -1,0 +1,7 @@
+class TrustManagerDecorator implements X509TrustManager {
+
+private final X509TrustManager trustManager;
+private final TrustStrategy trustStrategy;
+
+TrustManagerDecorator(final X509TrustManager trustManager, final TrustStrategy trustStrategy) {
+

@@ -1,0 +1,9 @@
+&quot;  Endpoints: [&quot; + min + &quot;,&quot; + max + &quot;]&quot;);
+}
+
+// return the initial guess if it is good enough
+double yInitial = f.value(initial);
+// return the first endpoint if it is good enough
+double yMin = f.value(min);
+if (Math.abs(yMin) <= functionValueAccuracy) {
+

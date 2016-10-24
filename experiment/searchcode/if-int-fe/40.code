@@ -1,0 +1,10 @@
+return feTreeRepository.save(feTree);
+}
+
+@Override
+public void deleteById(int id) {
+feTreeRepository.delete(id);
+public int updatePageByTreeId(int id, String code) {
+FeTree feTree = feTreeRepository.findOne(id);
+if (null != feTree &amp;&amp; feTree.getPages().size() > 0) {
+

@@ -1,0 +1,7 @@
+private static final String DEFAULT_DELIMITERS = &quot;[,\n]&quot;;
+private static final Pattern customPattern = Pattern.compile(&quot;\\[([^\\]]+)]&quot;);
+List<String> delimiters = new ArrayList<String>();
+
+if(numberString.contains(&quot;[&quot;)) {
+Matcher m = customPattern.matcher(numberString);
+

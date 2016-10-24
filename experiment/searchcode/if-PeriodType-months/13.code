@@ -1,0 +1,9 @@
+int endMonths = endCalendar.get(Calendar.YEAR) * 12 + endCalendar.get(Calendar.MONTH);
+
+PeriodType periodType = period.getType();
+if (periodType == null) {
+periodType = PeriodType.NORMAL;
+}
+
+int diffMonths = endMonths - beginMonths;
+

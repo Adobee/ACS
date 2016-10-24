@@ -1,0 +1,13 @@
+return buffer.asLongBuffer();
+}
+return null;
+}
+
+protected void prepareBuffer(int capacity, Buffer buffer)
+{
+if (buffer == null)
+buffer = ByteBuffer.allocateDirect(capacity);
+else
+{
+if (buffer.capacity() < capacity || buffer.capacity() > capacity)
+

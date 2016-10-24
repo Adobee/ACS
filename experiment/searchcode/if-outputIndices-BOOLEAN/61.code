@@ -1,0 +1,8 @@
+boolean outputIndices = &quot;indices&quot;.equals(level) || &quot;shards&quot;.equals(level);
+
+
+if (!getValidationFailures().isEmpty()) {
+// if we don&#39;t print index level information, still print the index validation failures
+// so we know why the status is red
+if (!outputIndices) {
+

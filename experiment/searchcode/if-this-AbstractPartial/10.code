@@ -1,0 +1,9 @@
+import marubinotto.util.message.CodedException;
+
+public abstract class AbstractPartial extends AbstractMainUiHtml {
+
+public String error;
+public void setRedirect(String location) {
+if (location.startsWith(getContext().getPagePath(LoginPage.class))) {
+this.error = getMessage(&quot;session-expired&quot;);
+

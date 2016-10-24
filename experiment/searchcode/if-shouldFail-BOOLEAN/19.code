@@ -1,0 +1,9 @@
+public void execute(DelegateExecution execution) throws Exception {
+Boolean shouldFail = (Boolean) execution.getVariable(&quot;shouldFail&quot;);
+
+if (shouldFail != null &amp;&amp; shouldFail) {
+throw new RuntimeException(&quot;I fail as commanded&quot;);
+}
+}
+}
+

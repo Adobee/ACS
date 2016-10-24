@@ -1,0 +1,8 @@
+int      p = MPI.COMM_WORLD.Size() ; //Number of processes
+int blockSize = a1.length/2;
+int[][][][] messageBuffer = new int[1][2][blockSize][blockSize]; //buffer in which to store received me\
+int[][][][] messages = new int[p][2][blockSize][blockSize];
+
+if (myrank == 0) {
+int[][] a1block11 = new int[blockSize][blockSize];
+

@@ -1,0 +1,8 @@
+public static void test() throws Exception {
+long val1 = get();
+c.v = 1L; long val2 = get();
+assertEquals(val1, 0);
+c.v = 5;              long val1 = get();
+c.v = Long.MAX_VALUE; long val2 = get();
+assertEquals(val1, 5);
+

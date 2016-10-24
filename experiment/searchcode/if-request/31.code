@@ -1,0 +1,9 @@
+package com.rcc.web;
+
+import org.springframework.web.servlet.support.RequestContext;
+
+import javax.servlet.http.HttpServletRequest;
+RequestContext ctx = (RequestContext) request.getAttribute(&quot;springRequestContext&quot;);
+if (ctx == null) {
+ctx = new RequestContext(request);
+

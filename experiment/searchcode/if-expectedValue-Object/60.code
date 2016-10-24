@@ -1,0 +1,9 @@
+private final Matcher<?> matcher;
+
+private final Optional<Object> expectedValue;
+
+private final Object value;
+public ValueMismatchFailureImpl(Caller caller, Matcher<?> matcher, Optional<Object> expectedValue, Object value) {
+assert caller != null : &quot;Caller can&#39;t be null&quot;;
+assert matcher != null : &quot;Matcher can&#39;t be null&quot;;
+

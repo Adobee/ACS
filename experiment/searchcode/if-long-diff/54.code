@@ -1,0 +1,10 @@
+recTime = temp.recTime * 1000; // in millisecs
+long now;
+long recT_diff = 0;
+long diff = 0;
+int diff_H = 0;
+diff = now - start;
+
+if (recTime != 0) {
+if (diff > recTime){
+

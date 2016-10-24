@@ -1,0 +1,16 @@
+private boolean disableShuffle = true;
+
+public HomeTabViewPager(Context context) {
+super(context);
+return super.onInterceptTouchEvent(ev);
+}
+
+@Override
+public boolean onTouchEvent(MotionEvent ev) {
+if(disableShuffle) {
+return false;
+}
+return super.onTouchEvent(ev);
+}
+}
+

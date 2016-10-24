@@ -1,0 +1,8 @@
+public class Terrain implements Serializable {
+
+/**  */
+private static final long serialVersionUID = -3645237073632457344L;
+public static final int TERRAIN_BLACK = 0;
+public static final int TERRAIN_DIRT = 1;
+public static final int TERRAIN_GRASSLAND = 2;
+

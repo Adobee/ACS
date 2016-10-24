@@ -1,0 +1,8 @@
+Set<String> words;
+HashMap<String, Integer> unigramCount;
+HashMap<String, Integer> bigramCount;
+long totalWords;
+String bigram = prevWord + word;
+if (bigramCount.containsKey(bigram))
+bigramCount.put(bigram, (bigramCount.get(bigram)+1));
+

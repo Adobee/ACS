@@ -1,0 +1,7 @@
+public static String setStringLength(String s, int howLong) {
+String result;
+if (s.length() > howLong) {
+result = s.substring(0, howLong - 3) + &quot;...&quot;;
+} else if (s.length() == howLong) {
+result = s;
+

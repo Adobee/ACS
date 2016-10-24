@@ -1,0 +1,9 @@
+/** A sink that never throws IOExceptions, even if the underlying sink does. */
+class HQ_FaultHidingSink extends ForwardingSink {
+private boolean hasErrors;
+
+public HQ_FaultHidingSink(Sink delegate) {
+@Override public void write(Buffer source, long byteCount) throws IOException {
+if (hasErrors) {
+source.skip(byteCount);
+

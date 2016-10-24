@@ -1,0 +1,11 @@
+public void add(Object value) {
+if(value == null) return;
+if(!(value instanceof Number)) return;
+
+Number numValue = (Number) value;
+
+if(getNumberValue() == null)
+this.value = numValue;
+else
+this.value = numValue.doubleValue() + getNumberValue().doubleValue();
+

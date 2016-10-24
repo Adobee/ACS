@@ -1,0 +1,9 @@
+//  Modifying the Grid View
+//
+
+public void ScaleUp(){
+if((currentRatio*minRatio<=maxRatio)
+currentRatio *= minRatio;
+if (listMaxRatio<currentRatio)
+listMinRatio *= minRatio;
+

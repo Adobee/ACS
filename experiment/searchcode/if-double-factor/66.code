@@ -1,0 +1,19 @@
+public class LowPassFilter implements Filter {
+
+/**
+* フィルタの強度を表す係数.
+*/
+private double factor;
+
+/**
+* ローパスフィルタ通過後の値.
+*/
+private double low;
+
+/**
+* ローパスフィルタのインスタンスを生成する.
+*
+* @param pFactor フィルタ強度 (0 < factor < 1)
+*/
+public LowPassFilter(final double pFactor) {
+

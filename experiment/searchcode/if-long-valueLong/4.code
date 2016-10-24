@@ -1,0 +1,9 @@
+// if the second operand is 0, then overflow can not occur
+if (sv == so || so == 0) {
+return ValueLong.get(value - other.value);
+}
+// now, if the other value is Long.MIN_VALUE, it must be an overflow
+ValueLong other = (ValueLong) v;
+long result = value * other.value;
+if (value == 0 || value == 1 || other.value == 0 || other.value == 1) {
+

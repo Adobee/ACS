@@ -1,0 +1,9 @@
+public class Session implements DataTransferObject {
+
+private static final long serialVersionUID = -468421830309668406L;
+public User user;
+@Temporal(value = TemporalType.TIMESTAMP)
+public Date expiresAt;
+
+@OneToMany(fetch=FetchType.EAGER, targetEntity = SessionData.class, mappedBy = &quot;session&quot;, orphanRemoval = true, cascade = CascadeType.REMOVE)
+

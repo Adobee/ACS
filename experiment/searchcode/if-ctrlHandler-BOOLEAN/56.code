@@ -1,0 +1,9 @@
+private void setup(boolean addShutdownHook, Settings settings, Environment environment) throws Exception {
+if (settings.getAsBoolean(&quot;bootstrap.mlockall&quot;, false)) {
+node.close();
+}
+});
+}
+
+if (settings.getAsBoolean(&quot;bootstrap.ctrlhandler&quot;, true)) {
+

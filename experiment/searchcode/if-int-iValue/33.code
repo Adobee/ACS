@@ -1,0 +1,11 @@
+final int anyPos = iValue.indexOf(WILDCARD_ANY);
+final int charAnyPos = iValue.indexOf(WILDCARD_ANYCHAR);
+
+if (anyPos == -1 &amp;&amp; charAnyPos == -1)
+return value.startsWith(iValue);
+
+} else {
+final int pos = iValue.indexOf(WILDCARD_ANY);
+if (pos > -1) {
+// XX%XXX
+

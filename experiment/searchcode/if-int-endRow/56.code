@@ -1,0 +1,9 @@
+import it.unipr.aotlab.dmat.core.generated.RectangleWire.RectangleBody;
+
+public class Rectangle {
+public int startRow;
+public int endRow;
+public int compare(Rectangle rhs) {
+int rv = startRow - rhs.startRow;
+if (rv == 0) rv = endRow - rhs.endRow;
+

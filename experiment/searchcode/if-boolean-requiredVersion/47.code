@@ -1,0 +1,11 @@
+ZipInputStream file = new ZipInputStream(new FileInputStream(new File(jarFilePath, &quot;bin/&quot; + &quot;minecraft.jar&quot;)));
+ZipEntry ent;
+ent = file.getNextEntry();
+while(ent != null) {
+if(ent.getName().contains(&quot;Minecraft.class&quot;)) {
+return &quot;unknown&quot;;
+}
+
+public boolean shouldUpdate(String jarFilePath) {
+String requiredVersion = ModPack.getSelectedPack().getMcVersion();
+

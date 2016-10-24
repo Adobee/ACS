@@ -1,0 +1,11 @@
+import java.time.LocalDateTime;
+
+public class TimeManager {
+
+private final static TimeManager instance = new TimeManager();
+this.startDate = LocalDateTime.now();;
+}
+
+public LocalDateTime getCurrentDate() {
+if(referenceDate == null) {
+

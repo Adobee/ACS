@@ -1,0 +1,12 @@
+private SimplexTableau tableau, modified;
+private boolean primalDual;
+
+public void setLP(LP lp) {
+this.lp = lp;
+
+}
+
+public LPSolverStatus solve() {
+tableau = tableauSynchronizer.getTableau();
+if (tableau.isSolutionPrimalFeasible() &amp;&amp; tableau.isSolutionDualFeasible()) {
+

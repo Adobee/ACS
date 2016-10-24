@@ -1,0 +1,12 @@
+g.fillRect(0, 0, picSideLength, picSideLength);
+g.setColor(Color.BLACK);
+
+//对每一个簇，画点
+int blockRow=0;
+for(int i=0;i<clusterNum;i++){
+int blockColume=i%blockPerRow;
+//换行
+if(i!=0&amp;&amp;blockColume==0)
+blockRow++;
+drawBlock(V,blockRow,blockColume,pointNumPerBlockRow,g);
+

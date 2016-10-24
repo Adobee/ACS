@@ -1,0 +1,10 @@
+DecimalFormat format = new DecimalFormat(&quot;#.#&quot;);
+Double size = (double) s;
+
+
+if (size < K) {
+return format.format(size) + &quot; B&quot;;
+}
+if (size < M) {
+return format.format(size / K) + &quot; KB&quot;;
+

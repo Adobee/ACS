@@ -1,0 +1,14 @@
+LOGGER.log(Level.WARNING, &quot;Suppressing exception.&quot;, suppressed);
+}
+}
+}
+}
+
+public static RuntimeException throwUncheckedIO(Throwable ex) throws IOException {
+if (ex instanceof IOException) {
+throw throwUnchecked(ex);
+}
+
+public static RuntimeException throwUnchecked(Throwable ex) {
+if (ex instanceof RuntimeException) {
+

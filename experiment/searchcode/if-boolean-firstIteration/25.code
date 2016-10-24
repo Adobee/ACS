@@ -1,0 +1,15 @@
+private Level level = null;
+
+private boolean firstIteration = true;
+
+public void update(Input input)
+{
+if (firstIteration)
+{
+Entity.setGame(this);
+firstIteration = false;
+}
+
+level.update();
+overPlayer.update(input);
+

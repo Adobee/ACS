@@ -1,0 +1,8 @@
+public String lettersToPractice(String letters, int[] times) {
+int avg = times[0];
+for (int i = 1; i < times.length; i++) {
+avg +=times[i]-times[i-1];
+StringBuilder res = new StringBuilder(times[0] > avg ? letters.charAt(0)+&quot;&quot;: &quot;&quot;);
+for (int i = 1; i < letters.length(); i++) {
+if(times[i]-times[i-1] > avg){
+

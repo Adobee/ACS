@@ -1,0 +1,7 @@
+import org.apache.flink.runtime.StreamingMode;
+import org.apache.flink.runtime.minicluster.LocalFlinkMiniCluster;
+import org.apache.flink.streaming.api.CheckpointingMode;
+public static void main(String[] args) throws Exception {
+if ((Runtime.getRuntime().maxMemory() >>> 20) < 5000) {
+throw new RuntimeException(&quot;This test program needs to run with at least 5GB of heap space.&quot;);
+

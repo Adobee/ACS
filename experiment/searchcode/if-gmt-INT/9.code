@@ -1,0 +1,6 @@
+for (int minute = 0; minute <= 59; minute++) {
+for (int gmt = -9; gmt <= 9; gmt++) {
+String produced = produceTime(hour, minute, gmt);
+if (isMatched(produced, time)) {
+String normalized = produceTime((hour - gmt + 24) % 24,
+

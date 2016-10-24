@@ -1,0 +1,13 @@
+public Hours dividedBy(int paramInt)
+{
+if (paramInt == 1) {
+return this;
+}
+return hours(getValue() / paramInt);
+public Hours plus(int paramInt)
+{
+if (paramInt == 0) {
+return this;
+}
+return hours(FieldUtils.safeAdd(getValue(), paramInt));
+

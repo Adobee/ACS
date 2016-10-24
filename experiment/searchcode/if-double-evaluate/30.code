@@ -1,0 +1,9 @@
+public Object evaluate(Expression expression)
+{
+switch (expression.getType()) {
+case DOUBLE:
+return evaluateDouble(expression);
+return Math.pow(evaluateDouble(expression.get(0)),
+evaluateDouble(expression.get(1)));
+case IF:
+

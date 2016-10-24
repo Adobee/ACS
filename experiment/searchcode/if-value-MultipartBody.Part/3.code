@@ -1,0 +1,10 @@
+RequestBody requestBody = RequestBody.create(MediaType.parse(&quot;image/png&quot;),s);
+builder.addFormDataPart(String.valueOf(&quot;photo&quot; + num), s.getName(), requestBody);
+for (Map.Entry<String,String> entry : ListMap.entrySet()) {
+multipartBody.addFormDataPart(entry.getKey(),entry.getValue());
+}
+return multipartBody;
+}
+
+}
+

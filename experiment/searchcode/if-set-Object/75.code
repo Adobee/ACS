@@ -1,0 +1,11 @@
+super(new MapType(elementBinding.type(), RecordType.VOID_TYPE), elementBinding, VoidBinding.VOID_BINDING);
+}
+
+@Override
+public void clear(Object set) throws BindingException {
+TreeSet<Object> _set = (TreeSet<Object>) set;
+public void put(Object set, Object key, Object value)
+throws BindingException {
+TreeSet<Object> _set = (TreeSet<Object>) set;
+if (value!=null) throw new BindingException(&quot;Cannot put non-null to a Set&quot;);
+

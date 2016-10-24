@@ -1,0 +1,14 @@
+public PointDouble getPoint(int i) {
+return (PointDouble) points.elementAt(i);
+}
+
+public void removePoint(int i) {
+points.removeElementAt(i);
+double t = ((Double) ths.elementAt(i)).doubleValue();
+if (t < lt) {
+lt = t;
+ind = i;
+}
+}
+pts[j] = (PointDouble) v.elementAt(ind);
+

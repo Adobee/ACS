@@ -1,0 +1,7 @@
+boolean newMaster = master == null || !isSameMaster(master, rs);
+if (newMaster)
+master = masterReader.read(rs);
+D detail = detailReader.read(rs);
+if (detail != null)
+addDetail(master, detail);
+

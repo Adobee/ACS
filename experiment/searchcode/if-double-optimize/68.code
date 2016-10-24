@@ -1,0 +1,11 @@
+// valid java.
+optimize(&quot;int&quot;,
+&quot;int j = 1;&quot;,
+&quot;if (b) {&quot;,
+&quot;  switch (1) {&quot;,
+optimize(&quot;int&quot;, nonConstantSwitch).into(nonConstantSwitch);
+}
+
+public void testIfOptimizations() throws Exception {
+optimize(&quot;int&quot;, &quot;if (true) return 1; return 0;&quot;).into(&quot;return 1;&quot;);
+

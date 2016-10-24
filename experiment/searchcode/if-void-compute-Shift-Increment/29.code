@@ -1,0 +1,8 @@
+final boolean computeWishartStatistics = getComputeWishartSufficientStatistics();
+
+if (computeWishartStatistics) {
+postOrderTraverse(treeModel, treeModel.getRoot(), traitPrecision, logDetTraitPrecision, computeWishartStatistics);
+
+if (DEBUG) {
+System.err.println(&quot;mean: &quot; + new Vector(cacheHelper.getMeanCache()));
+

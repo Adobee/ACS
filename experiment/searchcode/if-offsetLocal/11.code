@@ -1,0 +1,6 @@
+public long setExpirationTime(int offsetLocal, int offsetServer, int duration) {
+Calendar c = Calendar.getInstance();
+long mst= System.currentTimeMillis();
+long mlt = getLocalTime(offsetLocal, offsetServer);
+long dif = mlt - mst;
+

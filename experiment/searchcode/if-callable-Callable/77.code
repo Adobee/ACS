@@ -1,0 +1,10 @@
+import static scotch.runtime.RuntimeSupport.callable;
+
+import java.util.List;
+import scotch.data.double_.Double_;
+import scotch.runtime.Callable;
+public Callable<Integer> signum(Callable<Double> operand) {
+return callable(() -> {
+double value = operand.call();
+if (value > 0) {
+

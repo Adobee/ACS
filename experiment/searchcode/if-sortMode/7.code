@@ -1,0 +1,9 @@
+public int compare(Line l1, Line l2) {
+int res = 0;
+if (sortMode == 0) {
+if (l1.getId() > l2.getId()) {
+res = -1;
+}
+} else if (sortMode == 1) {
+res = l1.getName().compareTo(l2.getName());
+

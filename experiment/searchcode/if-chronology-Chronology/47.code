@@ -1,0 +1,7 @@
+public static CopticChronology getInstance(DateTimeZone dateTimeZone, int i) {
+CopticChronology copticChronology;
+if (dateTimeZone == null) {
+synchronized (cCache) {
+CopticChronology[] copticChronologyArr = (CopticChronology[]) cCache.get(dateTimeZone);
+if (copticChronologyArr == null) {
+

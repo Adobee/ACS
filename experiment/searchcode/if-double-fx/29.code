@@ -1,0 +1,10 @@
+package pl.shockah.glib.animfx;
+
+public class TimelineDouble extends Timeline<Double,Fx<Double>> {
+public void add(Fx<Double> fx) {
+fxs.add(fx);
+if (maxTime < fx.time) maxTime = fx.time;
+}
+
+public void copyFirst(double time) {
+

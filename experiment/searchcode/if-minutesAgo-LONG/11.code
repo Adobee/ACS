@@ -1,0 +1,7 @@
+long ago = System.currentTimeMillis() - message.getTimestamp();
+if (ago < MILLISECONDS_IN_MINUTE) {
+long secondsAgo = ago / MILLISECONDS_IN_SECOND;
+agoText = secondsAgo + &quot; &quot; + (secondsAgo == 1 ? SECOND : SECONDS);
+} else {
+long minutesAgo = (System.currentTimeMillis() - message.getTimestamp()) / MILLISECONDS_IN_MINUTE;
+

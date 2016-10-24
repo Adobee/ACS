@@ -1,0 +1,8 @@
+byte[] buffer = new byte[length];
+int pos = 0;
+while (length > 0) {
+int nbytes = is.read(buffer, pos, length);
+if (nbytes > 0) {
+pos += nbytes;
+length -= nbytes;
+

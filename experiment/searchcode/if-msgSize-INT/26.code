@@ -1,0 +1,9 @@
+private Pipe output;
+private final int msgSize;
+
+public ReflectionStage(GraphManager gm, Pipe input, Pipe output) {
+@Override
+public void run() {
+
+if (Pipe.hasContentToRead(input, msgSize) &amp;&amp; Pipe.roomToLowLevelWrite(output, msgSize)) {
+

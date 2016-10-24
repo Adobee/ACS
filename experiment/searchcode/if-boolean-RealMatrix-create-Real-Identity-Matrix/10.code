@@ -1,0 +1,8 @@
+return new RealMatrix(m, n, data, order);
+}
+
+public static RealMatrix createIdentity(int m, MatrixOrder order) {
+JBlasBLAS jbb = new JBlasBLAS();
+RealMatrix copyMtx = this.copy();
+RealMatrix identity = createIdentity(rows(), MatrixOrder.COLMAJOR);
+

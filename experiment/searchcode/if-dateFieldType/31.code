@@ -1,0 +1,11 @@
+Date d = dateFieldType.getDefault();
+if( d != null ){
+sb.append(&quot; DEFAULT ?&quot;);
+args.add(dateFieldType.getDefault().getTime()/1000);
+}
+
+}
+
+private void doNull(FieldType field) {
+if( !  field.canBeNull() ){
+

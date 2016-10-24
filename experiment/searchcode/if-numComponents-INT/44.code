@@ -1,0 +1,14 @@
+this(0);
+}
+
+/**
+* VerticalFlowLayout constructor comment.
+*/
+public VerticalFlowLayout(int vgap) {
+if (vgap < 0) vgap = 0;
+int numComponents = parent.getComponentCount();
+
+if (numComponents > 0) {
+Insets insets = parent.getInsets();
+int w = parent.getSize().width - insets.left - insets.right;
+

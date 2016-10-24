@@ -1,0 +1,9 @@
+public class TakeSnapshotChecker extends AbstractQuestChecker
+{
+private int nReq = 0;
+
+private TakeSnapshotChecker(int nReq, CheckerLogPool logPool)
+String strSnapshot = DBContext.Redis().get(getLogPool().getKey(&quot;take_snapshot&quot;));
+int currentSnapshot = 0;
+if (strSnapshot != null)
+

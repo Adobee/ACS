@@ -1,0 +1,10 @@
+/** Set to true if the formatter is not a printer. */
+private boolean iNotPrinter;
+/** Set to true if the formatter is not a parser. */
+private boolean iNotParser;
+public PeriodParser toParser() {
+if (iNotParser) {
+return null;
+}
+return toFormatter().getParser();
+

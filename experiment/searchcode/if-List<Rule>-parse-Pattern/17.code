@@ -1,0 +1,12 @@
+String rawRules = associator.toString();
+return parseAssociatorOutput(rawRules);
+}
+
+private List<Rule> parseAssociatorOutput(String rawRules) {
+for (String line : rawRules.split(&quot;\n&quot;)) {
+if (line.matches(RULE_REGEX)) {
+rules.add(parseRule(line));
+}
+}
+return rules;
+

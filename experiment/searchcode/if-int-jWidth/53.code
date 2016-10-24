@@ -1,0 +1,9 @@
+for (int i = 0; i < rawData.length; ++i) {
+final int length = rawData[i].length;
+if (length != columns) {
+final int qEnd   = Math.min(qStart + BLOCK_SIZE, columns);
+final int jWidth = qEnd - qStart;
+
+// allocate new block
+final double[] block = new double[iHeight * jWidth];
+

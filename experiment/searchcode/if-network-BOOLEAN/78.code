@@ -1,0 +1,18 @@
+public NetworkState(){
+
+}
+
+public boolean checkConnection (Context context) {
+
+NetworkInfo networkInfo = (NetworkInfo)((ConnectivityManager)context
+.getSystemService(Context.CONNECTIVITY_SERVICE)).getActiveNetworkInfo();
+
+if (networkInfo == null || !networkInfo.isConnected()){
+return false;
+}
+
+return true;
+}
+
+}
+

@@ -1,0 +1,8 @@
+private final AlgebraicNumber number;
+
+public Number( AlgebraicField field, int... ints )
+{
+if ( ints .length > field .getOrder() )
+throw new IllegalArgumentException( &quot;too many integer arguments for this field: &quot; + field .getName() );
+number = field .createAlgebraicNumber( ints );
+

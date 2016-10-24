@@ -1,0 +1,13 @@
+double WEIGHTPARAM = options.graphWeightParam;
+boolean NORMALIZE = options.graphNormalize;
+
+if (WEIGHTTYPE.equals(&quot;inner&quot;) &amp;&amp; !DISTANCEFUNCTION.equals(&quot;cosine&quot;))
+System.err.println(&quot;Unknown Weight Type.&quot;);
+}
+
+RealMatrix D = sum(W, 2);
+RealMatrix L = null;
+if (!NORMALIZE)
+L = diag(D).subtract(W);
+else {
+

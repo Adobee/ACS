@@ -1,0 +1,11 @@
+public class CWMW {
+public int maxArea(int[] height) {
+if (height.length == 0) {
+return 0;
+}
+int result = 0;
+int lh = height[left];
+int rh = height[right];
+int temp = (right - left) * Math.min(lh, rh);
+if (temp > result) {
+

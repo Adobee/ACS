@@ -1,0 +1,10 @@
+for(int i = 0; i<numEntradas; ++i)
+tmp[i] = scan.nextDouble();
+
+double[] tmp2 = new double[numSaidas];
+tmp2[2] = 0;
+}
+else if(out.equals(&quot;Iris-versicolor&quot;))
+{
+tmp2[0] = 0;
+

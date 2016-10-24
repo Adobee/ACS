@@ -1,0 +1,9 @@
+package engine;
+
+public class CelestialModel {
+public static float[] propStates(double mu, double massOffset, float[] states) {
+float[] k1= new float[]{0,0,0,0}, k2=new float[]{0,0,0,0}, k3=new float[]{0,0,0,0}, k4=new float[]{0,0,0,0};
+float stepsize = Ts/5.0f;
+
+for (int kn=1;kn<6;kn++) {
+

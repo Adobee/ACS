@@ -1,0 +1,8 @@
+private float getMaxRatio(int bitmapWidth, int bitmapHeight, int viewWidth, int viewHeight) {
+if (viewWidth <= 0 || viewHeight <= 0) {
+return 1;
+}
+int sampleSize = 2;
+while (true) {
+double intervalLength = 1.0 / (2 * sampleSize);
+

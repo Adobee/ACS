@@ -1,0 +1,12 @@
+public final int inIndex;
+public final int outIndex;
+
+
+public BindPair(int inIndex, int outIndex) {
+this.inIndex = inIndex;
+this.outIndex = outIndex;
+}
+
+public int getInIndex() {
+return inIndex;
+

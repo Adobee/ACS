@@ -1,0 +1,14 @@
+public static Gson getGson() {
+Gson gson = sGson;
+if (gson == null) {
+synchronized (GsonHolder.class) {
+gson = sGson;
+if (gson == null) {
+gson = sGson = new Gson();
+}
+}
+}
+return gson;
+}
+}
+

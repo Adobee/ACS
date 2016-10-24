@@ -1,0 +1,7 @@
+protected EmptyResult shardOperation(Request request, ShardRouting shardRouting) {
+if (rarely()) {
+shards.put(shardRouting, Boolean.TRUE);
+// simulate removing the master
+final boolean simulateFailedMasterNode = rarely();
+DiscoveryNode failedMasterNode = null;
+

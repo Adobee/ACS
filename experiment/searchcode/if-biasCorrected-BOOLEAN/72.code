@@ -1,0 +1,10 @@
+* The cutoff value defaults to the mean, bias correction defaults to <code>true</code> and the &quot;variance direction&quot; (upside or downside) defaults to downside. The variance direction and bias correction may be set using property setters or their values can provided as parameters to {@link #evaluate(double[], double, Direction, boolean, int, int)}.
+* </p>
+*
+* <p>
+* If the input array is null, <code>evaluate</code> methods throw <code>IllegalArgumentException.</code> If the array has length 1, <code>0</code> is returned, regardless of the value of the <code>cutoff.</code>
+* Determines whether or not bias correction is applied when computing the
+* value of the statisic. True means that bias is corrected.
+*/
+private boolean biasCorrected = true;
+

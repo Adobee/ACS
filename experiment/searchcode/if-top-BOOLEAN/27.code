@@ -1,0 +1,9 @@
+if (((Boolean)stack[top]).booleanValue())
+{
+stack[top] = new Boolean(true);
+return;
+}
+
+jjtGetChild(1).interpret();
+stack[--top] = new Boolean(((Boolean)stack[top]).booleanValue() ||
+

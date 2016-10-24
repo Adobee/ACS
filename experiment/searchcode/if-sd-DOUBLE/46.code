@@ -1,0 +1,10 @@
+public class FPointStatics {
+private double aveX,aveY;
+private double sdX,sdY;
+private int totalFrame;
+private double aveFI,sdFI;
+private double aveOffset,sdOffset;
+private double runlength;
+
+public FPointStatics(List<FPoint> pl,double bg) {
+

@@ -1,0 +1,10 @@
+@Override
+public double solve() {
+double r = 0;
+double l = 0;
+if(super.getLeft() != null){l = super.getLeft().solve();}
+if(super.getRight() != null){r = super.getRight().solve();}
+return  l/r;
+}
+}
+

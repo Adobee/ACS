@@ -1,0 +1,9 @@
+this.mapping = new HashSet<TwoVertices>();
+}
+
+public boolean equals(Object o) {
+if (o instanceof UnfinishedMapping) {
+double editDistance = editDistance(mapping);
+if (editDistance < minimalDistance) {
+minimalDistance = editDistance;
+

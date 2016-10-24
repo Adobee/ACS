@@ -1,0 +1,13 @@
+public class Consumer implements Runnable {
+
+private BoundedBuffer buffer;
+private int identity;
+this.identity = identity;
+this.buffer = buffer;
+}
+
+public void run() {
+int x = 0;
+while (x < 10) {
+if (!buffer.isEmpty()) {
+

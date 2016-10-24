@@ -1,0 +1,13 @@
+public static ObjInstance getObjInstance() {
+if (null == objInstance) { // 无锁判定
+synchronized (ObjInstance.class) {
+if (null == objInstance) { // 加锁判定
+objInstance = new ObjInstance();
+}
+}
+}
+return objInstance;
+}
+
+}
+

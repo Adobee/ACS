@@ -1,0 +1,11 @@
+* Stores shared trellises during a training iteration.
+*/
+public class HMMTrainingCache extends TrainingCache {
+
+private int maxCacheSize;
+
+public HMMTrainingCache(int maxCacheSize) {
+trellis = new WATrellis(factory, I, params, pair);
+if(I <= maxCacheSize)
+trellisCache.put(I, trellis);
+

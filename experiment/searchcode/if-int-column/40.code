@@ -1,0 +1,23 @@
+private ${java_p(column)} ${column.columnNameLower};
+</#if>
+</#if>
+</#list>
+private int page;
+
+/**getAndSet**/
+<#list table.columns as column>
+this.${column.columnNameLower} = ${column.columnNameLower};
+}
+</#if>
+</#if>
+</#list>
+
+public int getPage() {
+return page;
+}
+
+public void setPage(int page) {
+this.page = page;
+}
+}
+

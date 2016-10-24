@@ -1,0 +1,10 @@
+public static String retrieve(String base, String to) {
+StringBuilder builder = new StringBuilder(base);
+if (builder.charAt(builder.length() - 1) != &#39;/&#39;) {
+return builder.toString();
+}
+
+public static String encodePath(String path) {
+String encodedPath = Uri.encode(path, &quot;/&quot;);
+if (!encodedPath.startsWith(&quot;/&quot;)) {
+

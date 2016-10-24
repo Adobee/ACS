@@ -1,0 +1,7 @@
+final String replacement = rewriteURI.getAttributeValue(&quot;rewritePrefix&quot;);
+try {
+if (Files.exists(IO.toPath(new URI(replacement)))) {
+public boolean appliesTo(String href) {
+for (PrefixUrlRewrite rewrite : rewrites) {
+if (rewrite.appliesTo(href)) {
+

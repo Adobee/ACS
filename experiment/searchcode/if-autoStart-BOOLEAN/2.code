@@ -1,0 +1,11 @@
+File f = new File(_userHome + &quot;.kde/Autostart&quot;);
+if ((f.exists()) &amp;&amp; (f.isDirectory())) {
+autostartFileName = _userHome + &quot;.kde/Autostart/&quot;
+Map<String, String> autostartFiles = getAutostartFiles();
+
+if (autostartFiles.isEmpty())
+return false;
+
+boolean ret = false;
+for (Map.Entry<String, String> file : autostartFiles.entrySet()) {
+

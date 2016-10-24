@@ -1,0 +1,6 @@
+public static void initializeModule(Application application, Module module) throws Exception {
+if (module.getGroupId() == null)
+module.setGroupId(application.getGroupId());
+if (module.getArtifactId() == null)
+module.setArtifactId(getDefaultArtifactId(application, module.getType()));
+

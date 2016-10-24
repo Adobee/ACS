@@ -1,0 +1,10 @@
+public static synchronized void setTracker(final Tracker tracker) {
+GoogleAnalyticsManager.tracker = tracker;
+}
+
+private static boolean canSend() {
+GoogleAnalyticsManager.context = context;
+if (tracker == null) {
+int useProfile;
+if (BuildConfig.DEBUG) {
+

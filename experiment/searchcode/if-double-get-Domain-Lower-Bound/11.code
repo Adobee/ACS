@@ -1,0 +1,14 @@
+* @return the maximum value of the density function
+*/
+public double getMaxDensity(){
+return 1 / (upperBound - lowerBound);
+}
+
+/**
+* This method computes the mean of the distribution in terms of the parameters.
+* @return the cumulative probability at x
+*/
+public double getCDF(double x){
+if (x < lowerBound) return 0;
+else if (x >= upperBound) return 1;
+

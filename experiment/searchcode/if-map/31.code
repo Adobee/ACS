@@ -1,0 +1,12 @@
+Map map = (Map)get();
+if ( map == null ) {
+map = new IdentityHashMap();
+set( map );
+}
+map.put( key, value );
+}
+
+public Object get( Object key ) {
+Map map = (Map)get();
+if ( map == null ) {
+

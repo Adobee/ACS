@@ -1,0 +1,9 @@
+this.defLanguage = defLanguage;
+}
+
+public void indexProduct(Product product, boolean isNew) {
+FileUtils.forceMkdir(indexFolder);
+FSDirectory dir = FSDirectory.open(indexFolder);
+
+CustomAnalyzer analyzer = new CustomAnalyzer(Version.LUCENE_31);
+

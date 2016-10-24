@@ -1,0 +1,10 @@
+break;
+}
+}
+} else {
+if (type == ObservableType.POWER) {
+observations.addAll(powerControls.stream().map(control -> new Observation<>(
+(int) control.getP())).collect(Collectors.toList()));
+
+} else if (type == ObservableType.VELO) {
+

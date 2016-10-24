@@ -1,0 +1,9 @@
+public static boolean containsSqlScriptDelimiters(String script, char delim) {
+boolean inLiteral = false;
+char[] content = script.toCharArray();
+if (content[i] == &#39;\&#39;&#39;) {
+inLiteral = !inLiteral;
+}
+if (content[i] == delim &amp;&amp; !inLiteral) {
+return true;
+

@@ -1,0 +1,18 @@
+return Math.hypot(re, im);
+}
+public double arg()
+{
+if (re != 0.0 || im != 0.0)
+{
+if (re >= 0.0 || im != 0.0)
+return Math.acos(re/Math.hypot(re, im))*Math.signum(im);
+return this;
+}
+
+public Complex pow(double r)
+{
+if (re == 0.0 &amp;&amp; im == 0.0)
+return this;
+log();
+re *= r;
+

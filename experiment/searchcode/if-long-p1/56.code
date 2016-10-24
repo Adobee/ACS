@@ -1,0 +1,12 @@
+abstract class SkeinSmallCore implements Digest {
+
+private static final int BLOCK_LEN = 32;
+
+private byte[] buf, tmpOut;
+private int ptr;
+private long h0, h1, h2, h3;
+long m2 = decodeLELong(buf, 16);
+long m3 = decodeLELong(buf, 24);
+long p0 = m0;
+long p1 = m1;
+

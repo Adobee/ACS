@@ -1,0 +1,11 @@
+* The arguments of the command. (Including the command itself!)
+* @return
+* If executing worked fine. Note:
+*/
+public final boolean execute(JavaPlugin plugin, CommandSender sender, Player player, String command, String[] args) {
+boolean ret = this.doExecute(plugin, sender, player, command, args);
+used = true;
+if (!ret) {
+if (isFallbackPossible()) {
+ret = fallback(plugin, sender, player, command, args);
+

@@ -1,0 +1,10 @@
+private void iterate (int num) {
+String ts = rl.start;
+s = ts;
+for (int i = 0; i < num; i++) {
+int j = 0;
+while (j < ts.length()) {
+char c = ts.charAt (j);
+
+if (c != &#39;[&#39; &amp;&amp; c != &#39;]&#39; &amp;&amp; c != &#39;-&#39; &amp;&amp; c!= &#39;+&#39;) {
+

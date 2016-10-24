@@ -1,0 +1,8 @@
+public boolean domainMatch(String host, String domain)
+{
+boolean match = (host.equals(domain)) || ((domain.startsWith(&quot;.&quot;)) &amp;&amp; (host.endsWith(domain)));
+throw new CookieRestrictionViolationException(&quot;Domain attribute \&quot;&quot; + cookie.getDomain() + &quot;\&quot; violates RFC 2965: the value contains no embedded dots &quot; + &quot;and the value is not .local&quot;);
+}
+if (!domainMatch(host, cookieDomain)) {
+throw new CookieRestrictionViolationException(&quot;Domain attribute \&quot;&quot; + cookie.getDomain() + &quot;\&quot; violates RFC 2965: effective host name does not &quot; + &quot;domain-match domain attribute.&quot;);
+

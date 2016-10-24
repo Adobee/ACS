@@ -1,0 +1,18 @@
+private int seconds;
+
+public Time(int seconds) {
+this.seconds = seconds;
+}
+
+@Override
+return seconds == time.seconds;
+
+}
+
+@Override
+public int hashCode() {
+return seconds;
+}
+
+public int getSeconds() {
+

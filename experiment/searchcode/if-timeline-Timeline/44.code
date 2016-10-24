@@ -1,0 +1,7 @@
+newblock.time_end = newblock.time_start+Timeline.getTimeline().default_width;
+//---播放头跟踪---
+if (!Timeline.getTimeline().getPlaying()) {
+Timeline.getTimeline().time_total = (playhead-1)/Timeline.getTimeline().getTimeUnitWidth()/(1000/Timeline.getTimeline().time_unit)+6;
+//如果播放头位置即将大于时间轴宽度，则增加总时间，并加宽时间轴
+if (playhead >= getWidth()) {
+

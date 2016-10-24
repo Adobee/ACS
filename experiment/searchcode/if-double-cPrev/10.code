@@ -1,0 +1,12 @@
+public static double regularizedBeta(double x, final double a,
+final double b, double epsilon, int maxIterations) {
+double ret;
+
+if (Double.isNaN(x) || Double.isNaN(a) || Double.isNaN(b) || x < 0
+double dN = a + b * dPrev;
+if (near(dN, 0.0, small)) {
+dN = small;
+}
+double cN = a + b / cPrev;
+if (near(cN, 0.0, small)) {
+

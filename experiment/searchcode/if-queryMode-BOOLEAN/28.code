@@ -1,0 +1,8 @@
+import exec.csharp.queries.QueryMode;
+import exec.csharp.utils.ModelHelper;
+import exec.validate_evaluation.microcommits.MicroCommit;
+private BoxplotData getResult2(Map<QueryMode, BoxplotData> resByMode, QueryMode mode) {
+BoxplotData bpd = resByMode.get(mode);
+if (bpd == null) {
+bpd = new BoxplotData();
+

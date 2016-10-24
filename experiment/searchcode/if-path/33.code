@@ -1,0 +1,9 @@
+public Path(String path) {
+this.path = path;
+if (!isValid(this.path))
+throw new RippleException(&quot;Invalid path&quot;);
+}
+
+public Path(Path parent, String sub) {
+if (parent.path == null) {
+

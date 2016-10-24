@@ -1,0 +1,9 @@
+public void beforeTest() {
+//storeを初期化するコード
+String storeDir=getProperty(&quot;storeDir&quot;);
+if(storeDir==null){
+throw new IllegalStateException(&quot;fail to get storeDir&quot;);
+}
+File dir=new File(storeDir);
+if(dir.exists()){
+

@@ -1,0 +1,8 @@
+public void doGet(HttpServletRequest req, HttpServletResponse resp)
+throws IOException{
+int offset = Integer.parseInt(req.getParameter(&quot;offset&quot;));
+Long streamId = new Long(req.getParameter(&quot;streamId&quot;));
+resp.sendRedirect(&quot;/ViewStreamImage.jsp?streamId=&quot; + streamId + &quot;&amp;&quot;
++ &quot;streamName=&quot; + streamName + &quot;&amp;offset= &quot; + offset);
+}else if (req.getParameter(&quot;PreviousPage&quot;)!=null){
+

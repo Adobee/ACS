@@ -1,0 +1,13 @@
+public class StopCompressor extends CommandBase {
+
+private boolean isExecuted = false;
+
+public StopCompressor() {
+requires(pickup);
+if (!isExecuted)
+pickup.compressorStop();
+isExecuted = true;
+}
+
+protected boolean isFinished() {
+

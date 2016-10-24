@@ -1,0 +1,7 @@
+public void layout(boolean changed, boolean all) {
+Control content = getContent();
+if (getContent() != null) {
+Point contentSize = content.getSize();
+if (!getExpandHorizontal())
+contentSize.x = contentPreferredSize.x;
+

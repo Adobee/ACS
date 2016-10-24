@@ -1,0 +1,12 @@
+public int[][] generateMatrix(int n) {
+int[][] matrix = new int[n][n];
+int k = 1, i = 0, j =0, step = 0;
+while (step < n - step - 1) {
+for (i = n - step - 1; i >= step + 1; i--) matrix[i][step] = k++;
+step += 1;
+}
+if (step == n - step - 1) matrix[n/2][n/2] = k++;
+return matrix;
+}
+}
+

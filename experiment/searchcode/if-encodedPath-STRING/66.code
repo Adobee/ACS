@@ -1,0 +1,7 @@
+public boolean serialize(final ByteBuffer buffer) {
+if (this.encodedPath != null) {
+if (this.encodedPath.length > 255) {
+final int encodedPath_size = buffer.get() &amp; 0xFF;
+if (encodedPath_size > 0) {
+buffer.get(this.encodedPath = new byte[encodedPath_size]);
+

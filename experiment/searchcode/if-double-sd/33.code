@@ -1,0 +1,15 @@
+ave  =  ave / system.MNR;
+
+double sd = 0;
+for(int i = 0; i < problemSize ; i++)
+{
+if(replicaLoad[i] > 0)
+for(int j = 0 ; j < problemSize ; j++)
+{
+if(set[i][j])
+{
+replicaLoad[i] = replicaLoad[i] + 1;
+}
+}
+double ave = 0;
+

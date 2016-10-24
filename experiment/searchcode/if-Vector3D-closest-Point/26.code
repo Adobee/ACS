@@ -1,0 +1,8 @@
+MutableVector3D finalPoint = closestIntersection(origin, finalRay).asMutableVector3D();
+if (finalPoint.isNan())
+{
+//printf (&quot;--invalid final point in drag!!\n&quot;);
+//    finalPoint = closestPointToSphere(origin, finalRay).asMutableVector3D();
+finalPoint.copyFrom(closestPointToSphere(origin, finalRay));
+if (finalPoint.isNan())
+

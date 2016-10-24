@@ -1,0 +1,10 @@
+* @author chenlb 2009-3-16 上午11:28:27
+*/
+public class SmallestVarianceRule extends Rule {
+
+private double smallestVariance = Double.MAX_VALUE;
+
+@Override
+public void addChunk(Chunk chunk) {
+if(chunk.getVariance() <= smallestVariance) {
+

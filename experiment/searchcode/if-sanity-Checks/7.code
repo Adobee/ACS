@@ -1,0 +1,8 @@
+* This class performs sanity checks for Simple collectors.
+*/
+@Uninterruptible
+public final class SanityChecker implements Constants {
+public boolean collectionPhase(int phaseId) {
+if (phaseId == Simple.SANITY_SET_PREGC) {
+preGCSanity = true;
+

@@ -1,0 +1,8 @@
+protected XYPlot getXYPlot() {
+if (this.xyPlot != null)
+return this.xyPlot;
+return (XYPlot) this.getChart().getPlot();
+NumberAxis rangeAxis = (NumberAxis) xyPlot.getRangeAxis(i);
+if (rangeAxis != null) {
+this.initRangeAxis(rangeAxis);
+

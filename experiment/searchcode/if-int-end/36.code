@@ -1,0 +1,10 @@
+public void quickSort(int[] A, int start, int end){
+int index = partition(A, start, end);
+
+if (start < index - 1) quickSort(A, start, index - 1);
+if (index < end) quickSort(A, index, end);
+}
+
+// 返回pivot后一个数的index
+private int partition(int[] A, int start, int end){
+

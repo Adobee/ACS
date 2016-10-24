@@ -1,0 +1,9 @@
+syslogPort!=null?Integer.parseInt(syslogPort):514
+));
+try
+{
+hostname = InetAddress.getLocalHost().getHostName();
+int domainIndex=hostname.indexOf(&#39;.&#39;);
+if(domainIndex>0)
+hostname=hostname.substring(0,domainIndex);
+

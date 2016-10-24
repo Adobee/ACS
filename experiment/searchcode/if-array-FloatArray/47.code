@@ -1,0 +1,21 @@
+package org.galagosearch.core.util;
+
+/**
+*
+* @author trevor
+*/
+public class FloatArray {
+float[] _array;
+int _position;
+
+public FloatArray(int capacity) {
+_position = 0;
+}
+
+public FloatArray() {
+this(16);
+}
+
+public void add(float value) {
+if(_position == _array.length) {
+

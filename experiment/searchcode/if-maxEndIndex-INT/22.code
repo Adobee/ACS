@@ -1,0 +1,12 @@
+int tempCount = 1;
+int maxEndIndex = 0;
+int tempEndIndex = 0;
+for (int i = 0; i < integers.length - 1; i++) {
+if (integers[i] < integers[i + 1]) {
+if (i == integers.length - 2) {
+if (tempCount > maxCount) {
+maxCount = tempCount;
+maxEndIndex = tempEndIndex;
+}
+int startIndex = tempEndIndex - tempCount + 1;
+

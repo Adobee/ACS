@@ -1,0 +1,8 @@
+public static int firstMissingPositive(int[] A) {
+int idx = 0;
+while (idx < A.length) {
+int num = A[idx];
+if (num == idx + 1 || num <= 0) {
+++idx;
+continue;
+

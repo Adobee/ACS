@@ -1,0 +1,10 @@
+protected String toNonNullString(Object value) throws HibernateException
+{
+if (value instanceof ReadablePartial) {
+return value.toString();
+throw new HibernateException(&quot;Cannot save &quot; + value.getClass().getName() + &quot; as &quot; +
+ReadablePartial.class.getName() + &quot;. Implement it if needed.&quot;);
+}
+}
+}
+

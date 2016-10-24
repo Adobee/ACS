@@ -1,0 +1,10 @@
+* @return
+*/
+public String getEpc(DatacontainerEvent event, ALEDataTypes type,
+ALEDataFormats format) {
+if (event instanceof EPCGeneration1Event) {
++ ((EPCGeneration1Event) event).getEPCMemory()
+.toString(16);
+}
+if (ALEDataFormats.EPC_DECIMAL.equals(format)) {
+

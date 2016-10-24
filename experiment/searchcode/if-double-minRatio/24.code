@@ -1,0 +1,8 @@
+double minRatio = Double.MAX_VALUE;
+long n = 0;
+for (int i = 2; i < 10000000; i++) {
+int phi = phi(i);
+if (arePermutations(i, phi)) {
+double ratio = new Double(i) / phi;
+if (ratio < minRatio) {
+

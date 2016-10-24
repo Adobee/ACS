@@ -1,0 +1,10 @@
+public String getClosingToken(Node aNode, @SuppressWarnings(&quot;unchecked&quot;) V... values) {
+if (aNode == null) {
+return null;
+}
+
+if (aNode instanceof MethodDeclaration) {
+return CLOSING_MDEC;
+} else if (aNode instanceof ConstructorDeclaration) {
+return CLOSING_CNSTR;
+

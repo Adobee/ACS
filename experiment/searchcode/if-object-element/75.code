@@ -1,0 +1,12 @@
+Element head = null;
+
+public void push(Object newElement) {
+if (head == null) head = new Element(newElement, null);
+Element newNode = new Element(newElement, head);
+head = newNode;
+}
+}
+
+public Object pop() {
+if (head == null) return null;
+

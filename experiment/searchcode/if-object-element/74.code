@@ -1,0 +1,6 @@
+public String getQuickNavigateInfo(PsiElement element) {
+if (element instanceof DBObject) {
+DBObject object = (DBObject) element;
+return object.getNavigationTooltipText();
+} else if (element instanceof IdentifierPsiElement) {
+

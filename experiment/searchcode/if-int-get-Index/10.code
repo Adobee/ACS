@@ -1,0 +1,12 @@
+this.setStartIndex(startIndex);
+this.setFinishIndex(finishIndex);
+}
+
+public int getStartIndex(){
+return startIndex;
+if(getStartIndex()>getFinishIndex())return getFinishIndex();
+return getStartIndex();
+}
+public int getCorrectedFinishIndex(){
+if(getStartIndex()>getFinishIndex())return getStartIndex();
+

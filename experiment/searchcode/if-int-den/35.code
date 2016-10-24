@@ -1,0 +1,19 @@
+num = den;
+den = temp;
+}
+
+public void reduce()
+{
+for (int i = Math.abs(num); i > 1; i--)
+if (Math.abs(num) % i == 0 &amp;&amp; den % i == 0)
+return num;
+}
+public int getDenominator()
+{
+return den;
+}
+
+public String toString()
+{
+if (den == 0)
+

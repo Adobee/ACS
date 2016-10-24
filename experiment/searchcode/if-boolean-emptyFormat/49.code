@@ -1,0 +1,9 @@
+FastDateFormat format = (FastDateFormat) cInstanceCache.get(emptyFormat);
+if (format == null) {
+format = emptyFormat;
+format.init();  // convert shell format into usable one
+* @param obj  the object to compare to
+* @return <code>true</code> if equal
+*/
+public boolean equals(Object obj) {
+

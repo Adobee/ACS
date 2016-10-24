@@ -1,0 +1,14 @@
+closestGeoname = u;
+}
+
+// set layers
+if (u.getType() == GeoUnit.Type.NEIGHBORHOOD)
+{
+logger.debug( String.format( &quot;   GEO: Area: %s  (%s) center: %s  %s&quot;, u
+.getName(), u.getType(), uCenter, uDistString ) );
+}
+u = u.getParent();
+}
+
+if (closestGeoname != null)
+

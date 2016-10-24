@@ -1,0 +1,16 @@
+private AspectManager() {
+configuration = new LoadConfiguration();
+}
+
+private synchronized static AspectManager initManager(){
+if (manager == null){
+Thread t = new Thread(new FileMonitor());
+t.setDaemon(true);
+t.start();
+}
+return manager;
+}
+
+
+public synchronized static AspectManager instance(){
+

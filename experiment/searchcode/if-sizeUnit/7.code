@@ -1,0 +1,12 @@
+package com.gks2.api.scrapper;
+
+
+
+public enum SizeUnit {
+B(&quot;&quot;,1L),
+KB(&quot;K&quot;,1024L),
+MB(&quot;M&quot;,1024L*1024L),
+public static SizeUnit parse(String s) {
+for (SizeUnit su : SizeUnit.values()) {
+if (su.unit.equalsIgnoreCase(s)) return su;
+

@@ -1,0 +1,9 @@
+StringBuilder sb = new StringBuilder(strLen);
+boolean escaping = false;
+int inCurlies = 0;
+for (char currentChar : line.toCharArray()) {
+switch (currentChar) {
+case &#39;*&#39;:
+if (escaping) {
+sb.append(&quot;\\*&quot;);
+

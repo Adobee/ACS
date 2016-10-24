@@ -1,0 +1,12 @@
+long long getSumUtil(long long *st, long long ss, long long se, long long qs, long long qe, long long index)
+{
+if (qs <= ss &amp;&amp; qe >= se)
+return st[index];
+
+if (se < qs || ss > qe)
+return 0;
+
+
+long long mid = getMid(ss, se);
+return getSumUtil(st, ss, mid, qs, qe, 2*index+1) +
+

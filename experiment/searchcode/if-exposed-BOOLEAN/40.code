@@ -1,0 +1,6 @@
+public Operation getExposedOp() {
+if (exposedOp != null &amp;&amp; exposedOp.eIsProxy()) {
+InternalEObject oldExposedOp = (InternalEObject)exposedOp;
+exposedOp = (Operation)eResolveProxy(oldExposedOp);
+if (exposedOp != oldExposedOp) {
+

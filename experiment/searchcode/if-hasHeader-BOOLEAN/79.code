@@ -1,0 +1,12 @@
+private CloseableIterator<String> knownIter;
+
+private final boolean hasHeader;
+
+public FileLineSource(final File source,boolean hasHeader) {
+this.source = source;
+this.hasHeader = hasHeader;
+}
+
+@Override
+public void close() throws IOException {
+

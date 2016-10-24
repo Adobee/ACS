@@ -1,0 +1,10 @@
+public class Temperature extends SerialPort {
+
+public TextView TmpText;
+private Toast toast;
+
+public static double tempReadValue;
+public static String ADTempRead;
+tmpFormat = new DecimalFormat(&quot;#####0&quot;);
+if(tmpFormat.format(tmpDouble).length() == 5) tmpString = &quot;0&quot; + tmpFormat.format(tmpDouble);
+

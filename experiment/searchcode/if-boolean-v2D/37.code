@@ -1,0 +1,16 @@
+public class FallingBlock extends Block{
+private boolean 		colliding;
+private List<String> 	list;
+
+public FallingBlock(){
+this(new Position(0,0));
+list.add(this.getType());
+}
+
+/**
+* Handles collision with this block
+*
+* Sets the block to fall if a player walks on it
+*/
+public void collide(CollisionEvent evt) {
+

@@ -1,0 +1,8 @@
+int doMove(int x, int y, int play) {
+
+if (x >= 0 &amp;&amp; x < this.a &amp;&amp; y >= 0 &amp;&amp; y < this.a &amp;&amp; field[x][y] == &#39;.&#39;) {
+for (int i = 0; i < this.a; i++) {
+follow = 0;
+for (int j = 0; j < this.a; j++) {
+if (field[i][j] == symbol) {
+

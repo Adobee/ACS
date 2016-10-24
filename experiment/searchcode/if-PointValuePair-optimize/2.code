@@ -1,0 +1,7 @@
+private PointValuePair iteration(final PointValuePair init) {
+PointValuePair result = init;
+if (bounds != null) {
+result = select(&quot;CM&quot;, cmaes(init.getFirst(), 10), result);
+private PointValuePair select(final String method, final PointValuePair newResult, final PointValuePair oldResult) {
+if (newResult.getValue() < oldResult.getValue() || convergence.trainMax != null
+

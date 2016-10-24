@@ -1,0 +1,8 @@
+public ScopeFilter(String artifactScope) {
+if (Artifact.SCOPE_COMPILE.equals(artifactScope) || artifactScope==null) {
+providedScope = true;
+compileScope = true;
+runtimeScope = false;
+testScope = false;
+} else if (Artifact.SCOPE_RUNTIME.equals(artifactScope)) {
+

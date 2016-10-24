@@ -1,0 +1,8 @@
+public static int Optimize(double[] x, Function function, Gradient gradient, double eps, double eps1, int[] fCount) {
+double[] x_new = new double[x.length];          // x_{k+1}
+double[] grad = gradient.gradf(x);              // current gradient
+System.arraycopy(x, 0, xArray[iteration + 1], 0, x.length);
+
+// print
+if (iteration > 0) {
+

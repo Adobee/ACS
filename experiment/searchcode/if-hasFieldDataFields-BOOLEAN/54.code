@@ -1,0 +1,9 @@
+* Return whether to profile query execution, or {@code null} if
+* unspecified.
+*/
+public boolean profile() {
+builder.fetchSourceContext = FetchSourceContext.optionalReadFromStream(in);
+boolean hasFieldDataFields = in.readBoolean();
+if (hasFieldDataFields) {
+int size = in.readVInt();
+

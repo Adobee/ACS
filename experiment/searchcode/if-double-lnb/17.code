@@ -1,0 +1,9 @@
+/*
+* $Id: LnbCell.java,v 1.6 2005/05/13 18:33:32 jeffmc Exp $
+*
+* Copyright  1997-2016 Unidata Program Center/University Corporation for
+while ((++i <= lastI) &amp;&amp; (buoys[i] <= 0));
+
+if (i <= lastI) {
+lnb = interpolatePres(pressures[i - 1], buoys[i - 1],
+

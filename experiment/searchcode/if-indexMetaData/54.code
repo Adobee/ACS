@@ -1,0 +1,8 @@
+//$Id: IndexMetadata.java,v 1.2 2004/08/13 08:05:47 oneovthafew Exp $
+package org.hibernate.tool.hbm2ddl;
+public class IndexMetadata {
+private final String name;
+private final List columns = new ArrayList();
+
+IndexMetadata(ResultSet rs) throws SQLException {
+

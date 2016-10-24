@@ -1,0 +1,6 @@
+String clusterName = config.getClusterName(cluster);
+if (clusterName != null) {
+for (ClusterConfig clusterConfig : config.getClusterList()) {
+if (clusterName.equalsIgnoreCase(clusterConfig.getCluster()))
+return clusterConfig.getSplitTag();
+

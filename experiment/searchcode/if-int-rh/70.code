@@ -1,0 +1,9 @@
+@Test
+public void testDeleteIf() {
+assertTrue(rh.deleteIf() instanceof RubyEnumerator);
+assertEquals(ra(hp(1, 2), hp(3, 4), hp(5, 6)), rh.deleteIf().toA());
+}
+
+@Test
+public void testDeleteIfWithBlock() {
+

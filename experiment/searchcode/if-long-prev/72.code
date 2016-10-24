@@ -1,0 +1,13 @@
+package org.pegasia.util;
+
+public class CodeTimer {
+boolean enabled = true;
+long prevTime = 0;
+this.enabled = enabled;
+}
+
+public void time(String comment) {
+long endTime = System.nanoTime();
+
+if (enabled &amp;&amp; prevTime != 0)
+

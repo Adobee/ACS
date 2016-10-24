@@ -1,0 +1,11 @@
+protected OperationType operationType;
+
+protected long operationTime;
+private transient int retryTimes;
+
+public ComputeOperation(Compute compute, OperationType operationType) {
+this(compute, operationType, System.currentTimeMillis());
+}
+
+public ComputeOperation(Compute compute, OperationType operationType, long operationTime) {
+

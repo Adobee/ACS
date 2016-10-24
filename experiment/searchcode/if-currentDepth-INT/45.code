@@ -1,0 +1,10 @@
+import utils.TreeNode;
+
+public class Binary_Tree_Right_Side_View {
+private int currentdepth;
+private List<Integer> SideView;
+private void DFStree(TreeNode root, int depth) {
+if (root != null) {
+if (depth > currentdepth) {
+SideView.add(root.val);
+

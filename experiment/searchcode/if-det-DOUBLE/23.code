@@ -1,0 +1,11 @@
+final double b = matrix[ 1 ];
+final double c = matrix[ 2 ];
+final double d = matrix[ 3 ];
+
+final double det = 1.0 / ( a*d - b*c );
+matrix[ 2 ] = -c * det;
+matrix[ 3 ] = a * det;
+}
+
+final static public void invert( final double[] m ) throws NoninvertibleModelException
+

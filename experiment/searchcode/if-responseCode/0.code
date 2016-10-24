@@ -1,0 +1,11 @@
+import com.hcs.hitiger.api.model.otp.ResponseCode;
+
+public class HitigerResponse {
+@SerializedName(&quot;responseCode&quot;)
+public ResponseCode getResponseCode() {
+return responseCode;
+}
+
+public boolean isSuccesfull() {
+if (responseCode != null &amp;&amp; &quot;200&quot;.equals(responseCode.getResponsecode())) {
+

@@ -1,0 +1,12 @@
+public synchronized void onAutoFocus(boolean success, Camera theCamera) {
+if (active) {
+outstandingTask = new AutoFocusTask();
+taskExec.execute(outstandingTask);
+}
+}
+
+synchronized void start() {
+if (useAutoFocus) {
+active = true;
+try {
+

@@ -1,0 +1,12 @@
+if( (card.getBind(0) &amp;&amp; Distance[EdgeNum(x,y + 1,Horizontal)] >= 100) || (!card.getBind(0) &amp;&amp; Distance[EdgeNum(x,y + 1,Horizontal)] == 0))
+return false;
+return true;
+}
+public boolean shouldPut(int x,int y){
+if(Distance[EdgeNum(x,y + 1,Horizontal)] == 0)
+return true;
+return true;
+}
+private boolean noRoad(int x, int y){
+if(EdgeWeight(EdgeNum(x,y+1,Horizontal),EdgeNum(x,y,Vertical)) == 1 ||EdgeWeight(EdgeNum(x,y+1,Horizontal),EdgeNum(x,y,Vertical)) == 600)
+

@@ -1,0 +1,13 @@
+import jdistlib.Normal;
+
+public class Team {
+String name;
+String abrv;
+double[] meanDistY;
+double[] sdDistY;
+public void normalizeSd() {
+double sum = 0.0;
+for (int i = 0; i < resolutionSd; i++) {
+if (i == 0) {
+sum += this.sdDistY[i] * (Team.sdDistX[1] - Team.sdDistX[0]);
+

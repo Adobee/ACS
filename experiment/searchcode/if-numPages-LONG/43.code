@@ -1,0 +1,9 @@
+protected int pageSize;
+protected int numPages;
+protected long capacity;
+
+public FileId(String fileName) {
+this(new File(fileName).getAbsoluteFile(), 0, 0, Defaults.getDefaultFileSize());
+public FileId(String fileName, int pageSize, int numPages, long capacity) {
+this(new File(fileName).getAbsoluteFile(), pageSize, numPages, capacity);
+

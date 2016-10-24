@@ -1,0 +1,12 @@
+public NodeRelop(int pos, String relop) {
+this.pos = pos;
+this.relop = relop;
+}
+
+public boolean op(double o1, double o2) throws EvalException {
+if (relop.equals(&quot;>&quot;))
+return o1 > o2;
+
+if (relop.equals(&quot;>=&quot;))
+return o1 >= o2;
+

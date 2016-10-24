@@ -1,0 +1,15 @@
+public class Utils
+{
+public static boolean wrapBody(Vector2 position)
+{
+boolean wrap = false;
+
+if(position.x > WorldRenderer.VIEWPORT_WIDTH)
+else if(position.x < 0)
+{
+wrap = true;
+position.x += WorldRenderer.VIEWPORT_WIDTH;
+}
+
+if(position.y > WorldRenderer.VIEWPORT_HEIGHT)
+

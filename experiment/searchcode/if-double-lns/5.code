@@ -1,0 +1,8 @@
+/** The coefficients L<sub>n</sub><sup>s</sup>(γ). */
+private final double[][] lns;
+
+/** The coefficients dL<sub>n</sub><sup>s</sup>(γ) / dγ. */
+// if (n - s) is not even L<sub>n</sub><sup>s</sup>(γ) is 0
+if ((n - s) % 2 == 0) {
+final double coef = roaPow[n] * Vns.get(new NSKey(n, s));
+

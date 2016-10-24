@@ -1,0 +1,12 @@
+currentShape =currentDrawShape.generateShapeFromPath(gs.CTM,gs.getLineWidth(), Cmd.F);
+}
+
+boolean hasShape=currentShape!=null || fxPath!=null;
+customShapeTracker.addShape(tokenNumber, Cmd.F, currentShape, gs.nonstrokeColorSpace.getColor(), gs.strokeColorSpace.getColor());
+}
+
+}
+
+//do not paint white CMYK in overpaint mode
+if(hasShape &amp;&amp; gs.getAlpha(GraphicsState.FILL)<1 &amp;&amp;
+

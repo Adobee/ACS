@@ -1,0 +1,8 @@
+private Object readResolve() throws ObjectStreamException {
+ItemLabelAnchor result = null;
+if (this.equals(ItemLabelAnchor.CENTER)) {
+result = ItemLabelAnchor.CENTER;
+} else
+if (this.equals(ItemLabelAnchor.INSIDE1)) {
+result = ItemLabelAnchor.INSIDE1;
+

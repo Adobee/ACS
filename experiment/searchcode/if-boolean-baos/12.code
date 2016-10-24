@@ -1,0 +1,10 @@
+while ((b = bis.read()) != -1) {
+baos.write(b);
+
+if (readingHeaders) {
+if (detectDoubleCRLF(bis)) {
+request.setRequestHeader(baos.toString().trim());
+baos.reset();
+
+if (!request.hasContentLength()) {
+

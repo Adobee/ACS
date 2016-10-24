@@ -1,0 +1,9 @@
+protected E data;
+protected DoubleNode<E> nextElement;
+protected DoubleNode<E> previousElement;
+public DoubleNode(E v, DoubleNode<E> next, DoubleNode<E> previous) {
+data = v;
+nextElement = next;
+previousElement = previous;
+if (nextElement != null){
+

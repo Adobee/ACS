@@ -1,0 +1,9 @@
+import com.ninetwozero.bf4intel.database.dao.unlocks.SortMode;
+
+public abstract class AbstractSorter<T> {
+
+public T sort(final SortMode mode){
+if (mode == SortMode.PROGRESS) {
+return sortByProgress();
+} else {
+

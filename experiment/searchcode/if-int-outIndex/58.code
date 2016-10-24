@@ -1,0 +1,11 @@
+private int    inIndex;
+private String outName;
+private int    outIndex;
+
+
+public FeldVerbindung(String inName, int inIndex, String outName,
+int outIndex) {
+super();
+this.inName = inName;
+this.inIndex = inIndex;
+

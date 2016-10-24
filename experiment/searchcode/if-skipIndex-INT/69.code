@@ -1,0 +1,10 @@
+return new ComposedIterable<T>(_element, _restPermutations.next());
+}
+}
+
+private Iterable<T> makeRest(int skipIndex) {
+Iterable<T> result = EmptyIterable.make();
+int i = 0;
+for (T e : _original) {
+if (i != skipIndex) { result = new ComposedIterable<T>(result, e); }
+

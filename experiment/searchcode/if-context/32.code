@@ -1,0 +1,11 @@
+final ServletContext servletContext =
+request.getSession().getServletContext();
+
+if (null == servletContext.getAttribute(CONTEXT_KEY)) {
+(Context) ReflectionUtils.INSTANCE.createInstance
+(contextClassPath);
+
+if (null != context) {
+
+context.init(servletContext);
+

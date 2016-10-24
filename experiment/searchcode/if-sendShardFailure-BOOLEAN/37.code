@@ -1,0 +1,8 @@
+import java.util.concurrent.atomic.AtomicBoolean;
+import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.atomic.AtomicReference;
+* @param sendShardFailure indicates whether to notify the master of the shard failure
+**/
+public void fail(RecoveryFailedException e, boolean sendShardFailure) {
+if (finished.compareAndSet(false, true)) {
+

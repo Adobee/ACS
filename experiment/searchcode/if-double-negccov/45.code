@@ -1,0 +1,7 @@
+/*  276: 501 */     for (int i = 0; i < lB.length; i++) {
+/*  277: 502 */       if ((!Double.isInfinite(lB[i])) || (!Double.isInfinite(uB[i])))
+/*  429:     */   private void updateCovariance(boolean hsig, RealMatrix bestArx, RealMatrix arz, int[] arindex, RealMatrix xold)
+/*  430:     */   {
+/*  431: 692 */     double negccov = 0.0D;
+/*  432: 693 */     if (this.ccov1 + this.ccovmu > 0.0D)
+

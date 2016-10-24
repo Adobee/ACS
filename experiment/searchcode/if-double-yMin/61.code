@@ -1,0 +1,6 @@
+double xmin=i%2==0?man.xmin:(man.xmin+man.xmax)/2;
+double xmax=i%2!=0?man.xmax:(man.xmax+man.xmin)/2;
+double ymin=i/2==0?man.ymin:(man.ymin+man.ymax)/2;
+double ymax=i/2!=0?man.ymax:(man.ymin+man.ymax)/2;
+fraks[i]=new Mandel(man.iteration,man.max,xmin,xmax, ymin,ymax,(long) man.scale);
+

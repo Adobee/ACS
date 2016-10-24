@@ -1,0 +1,9 @@
+
+public class FiguraTridimensional extends Figura {
+
+private int dimensionUno;
+private int dimensionDos;
+private int dimensionTres;
+
+public FiguraTridimensional(int numeroDeLados, String nombreFigura) {
+

@@ -1,0 +1,13 @@
+protected long max = Long.MIN_VALUE;
+protected boolean set = false;
+
+public LongMaxAccumulator() {
+}
+
+public LongMaxAccumulator(long max) {
+public void accumulate(long value) {
+if (set) {
+max = Math.max(max, value);
+} else {
+max = value;
+

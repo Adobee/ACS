@@ -1,0 +1,8 @@
+public ObjectText(ObjectTextModel model, ConceptManager manager) {
+super(model, manager);
+}
+
+public BaseObject getObject() {
+if (getModel().getObjectId() != null &amp;&amp; !getModel().getObjectId().equals(&quot;0&quot;)) {
+return getManager().getObjectById(getModel().getObjectId());
+

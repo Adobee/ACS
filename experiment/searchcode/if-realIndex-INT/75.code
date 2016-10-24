@@ -1,0 +1,9 @@
+public abstract class LoopFPageAdapter extends CommonFPageAdapter {
+
+private int realIndex;//少于4个的情况，需要标记其真正的索引
+
+public LoopFPageAdapter(FragmentManager fm) {
+public boolean add(BaseFragment item) {
+if (realIndex <= 0)
+return super.add(item);
+

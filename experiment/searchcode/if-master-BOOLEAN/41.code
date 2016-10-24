@@ -1,0 +1,11 @@
+public ParallelVectorCursor(VectorCursor<D> masterCursor, VectorSlaveCursor<D> slaveCursor, boolean swap) {
+this.masterCursor = masterCursor;
+this.slaveCursor = slaveCursor;
+
+if (swap) {
+lhs = slaveCursor;
+rhs = masterCursor;
+}
+else {
+lhs = masterCursor;
+

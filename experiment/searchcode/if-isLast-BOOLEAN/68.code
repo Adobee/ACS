@@ -1,0 +1,10 @@
+public void writeToFile(File f, int num) {
+try {
+boolean isLast = false;
+PrintWriter pw = new PrintWriter(f);
+for (int i = 0; i < num; i++) {
+if (i == num - 1)
+isLast = true;
+Random r = new Random();
+int ran = r.nextInt(100);
+

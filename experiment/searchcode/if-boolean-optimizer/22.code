@@ -1,0 +1,9 @@
+Class<? extends Object> klass = obj.getClass();
+DataTypeOptimizer optimizer = optimizers.get(klass);
+if (null != optimizer)
+{
+obj = optimizer.optimize(null, obj, context);
+Class<? extends Object> klass = obj.getClass();
+DataTypeOptimizer optimizer = optimizers.get(klass);
+if (null != optimizer)
+

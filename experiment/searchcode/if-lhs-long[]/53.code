@@ -1,0 +1,8 @@
+public Object interpret(ExecutionContext context, boolean debug) {
+
+if ( this.getOp().equals( &quot;+&quot; ) ) {
+Object lhs = Types.toPrimitive(context, getValue(this.lhsGet, context, getLhs().interpret(context, debug)));
+Object rhs = Types.toPrimitive(context, getValue(this.rhsGet, context, getRhs().interpret(context, debug)));
+
+if (lhs instanceof String || rhs instanceof String) {
+

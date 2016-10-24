@@ -1,0 +1,12 @@
+double sumxx = 0;
+double sumyy = 0;
+for (int i = 0; i < x.length; i++) {
+sumxy += x[i] * y[i];
+sumxx += x[i] * x[i];
+sumyy += y[i] * y[i];
+}
+if (sumxx <= 0 || sumyy <= 0) return 0;
+return sumxy / Math.sqrt(sumxx * sumyy);
+}
+}
+

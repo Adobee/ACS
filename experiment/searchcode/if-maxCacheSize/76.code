@@ -1,0 +1,10 @@
+public class MapTableEntityService extends AbstractCacheTableEntityService {
+
+private int maxCacheSize = 0;
+
+private Map<Object, Object> idCache, vCache;
+public void setMaxCacheSize(final int maxCacheSize) {
+this.maxCacheSize = maxCacheSize;
+if (maxCacheSize > 0) {
+idCache = Collections.synchronizedMap(new LRUMap<Object, Object>(maxCacheSize));
+

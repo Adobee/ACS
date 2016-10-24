@@ -1,0 +1,6 @@
+* @throws NotPositiveException if {@code eps < 0.0} or {@code minPts < 0}
+*/
+public DBSCANClusterer(final double eps, final int minPts)
+throws NotPositiveException {
+this(eps, minPts, new EuclideanDistance());
+

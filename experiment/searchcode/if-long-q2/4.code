@@ -1,0 +1,12 @@
+private int tail = 0;
+boolean enqueue(T data) { //
+if (data == null) return false;
+if (((tail + 1) % values.length) == head) {
+tail = tail % values.length;
+return true;
+}
+T dequeue() {
+T data = null; //
+if (tail != head) {
+data = (T)values[head++];
+

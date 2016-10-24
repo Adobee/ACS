@@ -1,0 +1,7 @@
+private HTTPObject httpObject = new HTTPObject();
+
+@Override
+public void messageReceived(ChannelHandlerContext ctx, MessageEvent e) throws Exception {
+if (!readingChunks) {
+HttpResponse response = (HttpResponse) e.getMessage();
+

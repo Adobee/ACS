@@ -1,0 +1,10 @@
+package com.sr178.game.framework.scheduler;
+
+import org.quartz.Scheduler;
+import org.quartz.SchedulerException;
+private static SchedulerFactory getSchedulerFactoryInstance() {
+if (schedulerFactory == null) {
+schedulerFactory = new StdSchedulerFactory();
+}
+return schedulerFactory;
+

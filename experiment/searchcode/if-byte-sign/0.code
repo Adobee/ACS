@@ -1,0 +1,11 @@
+return (byte) (b | (byte) (1 << 7));
+}
+
+/**
+* Checks to see if the sign bit is set on the byte
+* @param b
+* @return true if the sign bit is set
+*/
+public static boolean isSignBitSet(byte b) {
+return ((b &amp; (1 << 7)) > 0);
+

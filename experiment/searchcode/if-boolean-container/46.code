@@ -1,0 +1,8 @@
+public void add(T t, Container<S,T> c) {
+list.add(t);
+containerList.add(c);
+if (t != null) {
+if (c instanceof SingleContainer) {
+SingleContainer<S,T> singleContainer = (SingleContainer<S, T>) c;
+if (!parent.equals(singleContainer.get()))
+

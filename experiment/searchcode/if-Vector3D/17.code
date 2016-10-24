@@ -1,0 +1,12 @@
+*   along with MT4j.  If not, see <http://www.gnu.org/licenses/>.
+import org.mt4j.util.math.Vector3D;
+
+
+
+/**
+* The Class MTDollarTemplates.
+*/
+public class UnistrokeTemplates {
+
+/** The List of registered templates. */
+

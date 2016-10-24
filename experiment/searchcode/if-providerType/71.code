@@ -1,0 +1,10 @@
+public enum PROVIDERTYPE {
+NULL, GPS_PROVIDER, NETWORK_PROVIDER
+}
+private PROVIDERTYPE providerType = PROVIDERTYPE.NULL;
+if (networkIsEnabled &amp;&amp; gpsIsEnabled) {
+locationServiceBoolean = true;
+providerType = PROVIDERTYPE.GPS_PROVIDER;
+
+} else if (!networkIsEnabled &amp;&amp; gpsIsEnabled) {
+

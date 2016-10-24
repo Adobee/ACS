@@ -1,0 +1,7 @@
+SecondObject secondObject = secondObjects.get(secondObjectName);
+if (secondObject == null) {
+throw new NotFoundException(&quot;Second Object with content &quot; + secondObjectName + &quot; not found.&quot;);
+String firstContent = profile.getSecondObjectName();
+if (firstContent.isEmpty() || !secondObjects.containsKey(firstContent)) {
+throw new NotFoundException(&quot;Cannot update first object with content &quot; + firstContent + &quot;.&quot;);
+

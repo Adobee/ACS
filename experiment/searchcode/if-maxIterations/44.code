@@ -1,0 +1,16 @@
+public class MultibrotSetGenerator extends FractalGenerator {
+
+private int n;
+
+public MultibrotSetGenerator(int width, int height, int maxIterations,
+Color color, int pow) {
+for (i = 0; i < maxIterations; ++i) {
+z = z.pow(n).add(c);
+if (escapesToInfinity(z))
+return scaleColor(i);
+}
+return Color.BLACK;
+}
+
+}
+

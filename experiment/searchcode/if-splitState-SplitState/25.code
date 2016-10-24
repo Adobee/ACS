@@ -1,0 +1,7 @@
+public class PolygonSlicer {
+
+private static class SplitState {
+public static ArrayList<Point2DFloat[]> links = new ArrayList<Point2DFloat[]>();
+public static void tryToConnectWithUpperMerge(Edge edgeJ, Point2DFloat v, SplitState s) {
+if (edgeJ == null || s.helper.get(edgeJ) == null) {
+

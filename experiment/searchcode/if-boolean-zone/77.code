@@ -1,0 +1,9 @@
+zones = new HashMap<String, NoMagicZone>();
+
+Set<String> zoneNodes = config.getKeys(&quot;no-magic-zones&quot;);
+if (zoneNodes != null) {
+ConfigurationSection zoneConfig = config.getSection(&quot;no-magic-zones.&quot; + node);
+
+// check enabled
+if (!zoneConfig.getBoolean(&quot;enabled&quot;, true)) {
+

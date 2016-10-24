@@ -1,0 +1,17 @@
+public int segSize() {
+int max=0;
+for(Sentence s:sentences) {
+if(s.size()>max) max=s.size();
+}
+return max;
+public void addLM(float lm) { this.lm=lm;};
+public float getLM() { return lm;}
+
+public void addLMnorm(double r) {
+lmn=r;
+}
+public double getLMnorm(){ return lmn;}
+
+
+}
+

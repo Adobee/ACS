@@ -1,0 +1,10 @@
+private final long processed;
+
+public Result() {
+this(0, 0);
+}
+
+private Result(int code, long processed) {
+if (processed < 0) {
+throw new IllegalArgumentException(&quot;Processed characters number cannot be negative: &quot; + processed);
+

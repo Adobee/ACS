@@ -1,0 +1,17 @@
+import kr.ac.ssu.yoobh17.Omok.game.Board.BoardInfor;
+
+
+public class Point {
+
+private int	posX;
+private int	posY;
+
+public Point(){
+
+}
+
+public Point( int posX, int posY ){
+
+this.posX = posX;
+this.posY = posY;
+

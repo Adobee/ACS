@@ -1,0 +1,13 @@
+str = DTsansMS;
+}
+}
+
+/*
+* Check and handle timezones
+*/
+boolean hasTimezone = false;
+str = str.substring(0, str.length() - 1); // remove Z
+str = str + &quot;+0000&quot;;
+hasTimezone = true;
+} else if (str.contains(&quot;NZ&quot;)) {
+

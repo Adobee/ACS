@@ -1,0 +1,10 @@
+// -System.out.println(inPartType.toString());
+if (inPartType.getPrefix() != null
+&amp;&amp; inPartType.getPrefix().length() > 0) {
+dummyCo.setObjectType(new QName(inPartType.getPrefix() + &quot;:&quot;
+} else {
+dummyCo.setObjectType(new QName(inPartType.getLocalPart()));
+}
+
+if (mitsosOperationInput != null)
+

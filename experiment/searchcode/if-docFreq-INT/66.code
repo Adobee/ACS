@@ -1,0 +1,12 @@
+/** the word */
+public String word;
+public long docFreq = 0;
+public long totalTermFreq = 0;
+
+private List<Word> children = new ArrayList<Word>();
+Collections.sort(children, new Comparator<Word>() {
+
+@Override
+public int compare(Word w1, Word w2) {
+if (w1.getTotalTermFreq() > w2.getTotalTermFreq())
+

@@ -1,0 +1,6 @@
+long upperEstimate = 1L;
+for (CardinalityEstimate inputEstimate : inputEstimates) {
+if (inputEstimate == null) {
+upperEstimate *= 1 + 10 * inputEstimate.getUpperEstimate();
+if (upperEstimate < 0L) {
+

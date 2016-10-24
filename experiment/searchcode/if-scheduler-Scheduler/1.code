@@ -1,0 +1,12 @@
+public static Scheduler getInstance() throws SchedulerException{
+if(scheduler == null){
+synchronized (SchedulerFactory.class) {
+if(scheduler == null){
+scheduler = new StdSchedulerFactory().getScheduler();
+}
+}
+}
+return scheduler;
+}
+}
+

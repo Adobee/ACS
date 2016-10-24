@@ -1,0 +1,16 @@
+package tools;
+
+public class UnionFind {
+
+private int[] id;
+private int[] sz;
+private int count;
+int i = find(p);
+int j = find(q);
+if (i == j) return;
+if (sz[i] < sz[j]) { id[i] = j; sz[j] += sz[i]; }
+else { id[j] = i; sz[i] += sz[j]; }
+count--;
+}
+}
+

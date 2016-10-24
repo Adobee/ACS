@@ -1,0 +1,11 @@
+public void setBoundsInset(float boundsInset) {
+this.boundsInset = boundsInset;
+}
+
+@Override
+public void update(float delta) {
+TransformPart tr = this.getPart().getEntity().get(TransformPart.class);
+
+if (tr.getX() <= PLAY_ORIGX + boundsInset) {
+tr.setX(PLAY_ORIGX + boundsInset);
+

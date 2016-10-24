@@ -1,0 +1,9 @@
+end = new Date(date.getTime()-millis);
+if (end.before(Clock.getTime())) {
+throw new JbpmException(&quot;Duedate &quot;+ end+ &quot; in the past&quot;);
+} else {
+long millis = convertToMillis(duration);
+end = new Date(date.getTime()+millis);
+}
+return end;
+

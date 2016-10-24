@@ -1,0 +1,5 @@
+// if we have a list of GateThreeBaseBean object, if all the objects are UserActionEnum.DELETE, the list isn&#39;t &quot;empty&quot; in memory
+// but after the save, it will be. Be sure that we have at least one item not in UserActionEnum.DELETE in the list to avoid empty list on delete
+if (value instanceof List<?>) {
+if (((List<?>) value).size() > 0) {
+

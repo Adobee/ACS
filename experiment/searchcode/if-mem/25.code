@@ -1,0 +1,11 @@
+import org.hibernate.validator.constraints.NotEmpty;
+
+public class AdminMemberCommand {
+@NotEmpty
+private String mem_id;
+private int mem_penalty;
+
+/*// 비밀번호 일치 여부 체크
+public boolean isCheckedPasswd(String userPasswd) {
+if (mem_passwd.equals(userPasswd)) {
+

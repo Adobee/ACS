@@ -1,0 +1,9 @@
+* @return false if no query passed as parameter, true otherwise
+*/
+protected boolean parseParams(Form form) {
+boolean result;
+if (form.getFirstValue(&quot;mode&quot;) != null) {
+Map<String, Object> requestAttributes = getRequestAttributes();
+boolean hasQuery = false;
+getLogger().info(&quot;Processing GET in mode &quot; + Integer.toString(this.getMode()));
+

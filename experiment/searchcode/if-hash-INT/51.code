@@ -1,0 +1,9 @@
+boolean[] primeHash = new boolean[100000000];
+for (int i = 0; i < primeHash.length; i++)
+primeHash[i] = true;
+for (int i = 2; i < primeHash.length; i++)
+{
+if (primeHash[i])
+{
+for (int n = 2*i; n < primeHash.length; n+=i)
+

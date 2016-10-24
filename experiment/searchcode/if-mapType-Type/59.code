@@ -1,0 +1,14 @@
+package com.henriquemalheiro.trackit.presentation.view.map;
+
+public enum MapType {
+MAP(&quot;MAP&quot;), SATELLITE(&quot;SATELLITE&quot;), HYBRID(&quot;HYBRID&quot;), TERRAIN(&quot;TERRAIN&quot;);
+for (int i = 0; i < descriptions.length; i++) {
+if (MapType.values()[i].getMapType().equalsIgnoreCase(mapType)) {
+return MapType.values()[i];
+}
+}
+
+return null;
+}
+}
+

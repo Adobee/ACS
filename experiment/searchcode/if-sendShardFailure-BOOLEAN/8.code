@@ -1,0 +1,6 @@
+public void failRecovery(long id, RecoveryFailedException e, boolean sendShardFailure) {
+RecoveryStatus removed = onGoingRecoveries.remove(id);
+* @return true if a recovery was cancelled
+*/
+public boolean cancelRecoveriesForShard(ShardId shardId, String reason, Predicate<RecoveryStatus> shouldCancel) {
+

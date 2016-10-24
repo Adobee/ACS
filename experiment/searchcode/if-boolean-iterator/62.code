@@ -1,0 +1,11 @@
+public class CircularIterator<E> implements Iterator<E> {
+
+Iterable<E> iterable;
+Iterator<E> iterator;
+boolean nonEmptyCollection;
+
+public CircularIterator(Iterable<E> iterable) {
+
+this.iterable = iterable;
+if (iterable != null){
+

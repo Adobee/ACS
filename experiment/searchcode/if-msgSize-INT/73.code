@@ -1,0 +1,9 @@
+public MessageEnvelope readMsg() throws IOException {
+int msgType = Varint.readUnsignedVarInt(dataIn);
+if (msgType == MSG_TICK || msgType == MSG_STRINGS)
+throw new RuntimeException(&quot;readMsg called for INTERNAL MsgType:&quot;+msgType);
+
+int msgSize = Varint.readUnsignedVarInt(dataIn);
+
+if (msgSize <= MAX_MSG_SIZE) {
+

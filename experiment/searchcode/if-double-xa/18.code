@@ -1,0 +1,7 @@
+public WinPipeParticle(double x, double y, double xa, double ya) {
+this(x, y, xa, ya, 0);
+}
+
+public WinPipeParticle(double x, double y, double xa, double ya, double pipeY) {
+super(x, y, xa, ya, COLOR, MAX_LIFE);
+

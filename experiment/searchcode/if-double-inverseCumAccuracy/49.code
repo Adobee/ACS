@@ -1,0 +1,9 @@
+public CauchyDistribution(double median, double scale,
+double inverseCumAccuracy) {
+this(new Well19937c(), median, scale, inverseCumAccuracy);
+double scale,
+double inverseCumAccuracy) {
+super(rng);
+if (scale <= 0) {
+throw new NotStrictlyPositiveException(LocalizedFormats.SCALE, scale);
+

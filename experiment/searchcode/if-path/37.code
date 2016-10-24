@@ -1,0 +1,12 @@
+public static String getParent(String path) {
+
+if (path.equals(&quot;/&quot;)) {
+return null;
+}
+if (path.endsWith(&quot;/&quot;)) {
+path = path.substring(0, path.length() - 1);
+}
+
+int index = path.lastIndexOf(&quot;/&quot;);
+if (index == -1) {
+

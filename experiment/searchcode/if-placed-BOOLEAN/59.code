@@ -1,0 +1,7 @@
+private final List<WorldCoordinate> notPlayerPlacedList = new ArrayList<>();
+
+public boolean isPlayerPlaced(@NonNull WorldCoordinate coordinate) {
+PlayerPlacedBlocksTable row;
+row = PlayerPlacedBlocksTable.find(coordinate.toChunkCoordinate());
+if (row == null) return false;
+

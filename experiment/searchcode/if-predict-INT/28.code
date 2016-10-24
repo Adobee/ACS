@@ -1,0 +1,16 @@
+int lastHint = firstHint + hint[1];
+
+// max
+int max = adapter.getCount();
+
+// overflow
+if (lastHint > max) {
+lastHint = max;
+}
+
+// hint count
+int hintCount = lastHint - firstHint;
+
+// predict bound
+int firstPredict = firstHint;
+

@@ -1,0 +1,11 @@
+package com.rabidgremlin.mutters.core;
+
+public class CompoundSlot
+extends Slot
+{
+private String name;
+public SlotMatch match(String token, Context context)
+{
+SlotMatch match = firstSlot.match(token, context);
+if (match == null)
+

@@ -1,0 +1,15 @@
+public class Domain {
+
+private long id;
+
+private static final double EPSILON = 1e-2;
+private double lowerBound;
+private double upperBound;
+
+
+
+public Domain(){
+id = 0;
+lowerBound = 0;
+upperBound = 0;
+

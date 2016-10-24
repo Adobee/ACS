@@ -1,0 +1,8 @@
+long defaultTimeoutMs = 300;
+long timeoutMs = 300;
+Callable<T> callable;
+final Executor threadPool;
+public synchronized void requestExecution(long timeoutMs) {
+this.timeoutMs = timeoutMs;
+if (delayedExecutionTask == null) {
+

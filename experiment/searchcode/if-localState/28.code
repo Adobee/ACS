@@ -1,0 +1,9 @@
+public class WorkActor extends Actor<WorkActor> {
+//    public Random rand = new Random(13);
+//
+//    int localState[];
+public void doWork(int iterations) {
+
+int key = rand.nextInt(hmapSize);
+if ( localState.get(key) == null ) { // redundant hash accesses by intent
+

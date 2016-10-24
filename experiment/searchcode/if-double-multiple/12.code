@@ -1,0 +1,14 @@
+return fromHsvA(h, s, v, 100);
+}
+
+@MultipleResults(4)
+public Double[] toHsvA() {
+double r = ((argb >>> 16) &amp; 255) / 255.0;
+double mm = max - min;
+double h;
+double s;
+if (mm == 0) {
+h = 0;
+s = 0;
+} else {
+

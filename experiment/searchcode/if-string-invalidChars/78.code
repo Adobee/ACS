@@ -1,0 +1,9 @@
+public static boolean requestHasInvalidParameters(String str)
+{
+if (str == null) str = &quot;&quot;;
+
+String[] invalidChars = { &quot;<script>&quot;, &quot;javascript:&quot;};
+for( int i=0; i<invalidChars.length; i++ )
+{
+if ( str.indexOf(invalidChars[i]) != -1 )
+

@@ -1,0 +1,9 @@
+public final boolean match(boolean isTypeParameter, Type p, Type a) {
+if (p instanceof Class<?>) {
+if (!isTypeParameter &amp;&amp; a instanceof Class<?>) {
+Debug.TODO(&quot;ParameterizedType %p %s\n&quot;, p, a.getClass().getName());
+return false;
+}
+if (p instanceof WildcardType) {
+WildcardType w = (WildcardType) p;
+

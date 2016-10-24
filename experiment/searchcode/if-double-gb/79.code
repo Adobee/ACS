@@ -1,0 +1,6 @@
+private String hostName;    // hostname of the TaskTracker
+private int numCpu;         // number of CPU on the TaskTracker
+private double memTotalGB;  // total amount of memory in GB
+private double cpuTotalGHz; // total CPU cycles on the TaskTracker
+private double memUsageGB;  // memory usage (GB) on the TaskTracker
+

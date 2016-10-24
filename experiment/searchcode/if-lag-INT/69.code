@@ -1,0 +1,11 @@
+package forecasting;
+
+public class LagMethod {
+
+static double[][] lagMethod(int start_index, int lag, int offset, double[] variable) {
+for (int t = 0; t < observations_interested; t++)
+{
+for (int l = 0; l < lag; l++)
+{
+if (start_index + t - l + offset > variable.length-1){
+

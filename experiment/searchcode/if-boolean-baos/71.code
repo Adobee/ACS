@@ -1,0 +1,9 @@
+private final Map<String, ByteArrayOutputStream> files = new HashMap<>();
+
+public byte[] get(String path) {
+ByteArrayOutputStream baos = files.get(path);
+if (baos == null) {
+return null;
+}
+return baos.toByteArray();
+

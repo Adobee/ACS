@@ -1,0 +1,13 @@
+return t1 &amp;&amp; !t2;
+}
+
+@Override
+public boolean less( Boolean t1, Boolean t2 ) {
+if ( t1 == null ) return t2 != null;
+return !t1 &amp;&amp; t2;
+}
+
+@Override
+public boolean greaterEquals( Boolean t1, Boolean t2 ) {
+if ( t1 == null ) return t2 == null;
+

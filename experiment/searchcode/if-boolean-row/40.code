@@ -1,0 +1,8 @@
+public class ValidSudoku {
+
+public boolean isValidSudoku(char[][] board) {
+boolean[][] rowValid = new boolean[9][9];
+for (int col = 0; col < 9; col++) {
+if (board[row][col] == &#39;.&#39;) continue;
+int index = board[row][col] - &#39;1&#39;;
+

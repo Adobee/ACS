@@ -1,0 +1,10 @@
+double[] vertex = reflect(simplex, 2.0);
+double eval = objectiveFunction.evaluate(vertex);
+
+if (eval < evaluation[vertices - 1]) {
+vertex = reflect(simplex, 0.5);
+eval = objectiveFunction.evaluate(vertex);
+
+if (eval >= tmp) {
+contract(simplex, 0.5);
+

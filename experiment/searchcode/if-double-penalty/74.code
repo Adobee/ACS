@@ -1,0 +1,6 @@
+String newMessage = request.getParameter(PENALTY_MESSAGE);
+double newSum = Double.parseDouble(request.getParameter(PENALTY_SUM));
+isUpdated = penaltyService.updatePenaltyById(penaltyId, newMessage, newSum);
+if (!isUpdated) {
+request.setAttribute(PENALTY_UPDATE_FAILED, &quot;penalty.update.failed&quot;);
+

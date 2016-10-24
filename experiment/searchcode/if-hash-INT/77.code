@@ -1,0 +1,13 @@
+if(A[] == null || A.length() == 0){
+System.out.println(&quot;no result&quot;);
+}
+
+for(int a : A){
+if(hash.containKey(a)){
+hash.put(a, 1);
+}
+
+for(int a : A){
+if(hash.containKey(target - a)){
+if(hash.get(a) >= 1 &amp;&amp; hash.get(target - a) >= 1){
+

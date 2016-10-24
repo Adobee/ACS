@@ -1,0 +1,10 @@
+private void clickEnableDisable(String locName) {
+boolean itemVisible = false;
+try{
+driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+itemVisible = e.isDisplayed();
+}
+catch (NoSuchElementException ex) {};
+if(itemVisible) {
+WebElement e = driver.findElementByXPath(&quot;.//tr[contains(.,&#39;&quot; + locName + &quot;&#39;)]/*/a/img[@alt=&#39;&quot; + this.properties.get(&quot;locDisable&quot;) + &quot;&#39;]&quot;);
+

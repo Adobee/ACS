@@ -1,0 +1,9 @@
+public int getIndex(int begin, int end) {
+if (begin < 0 || end < begin || end < 0)
+return -1;
+int rd = -1;
+do {
+rd = (int) (Math.random() * (end - begin)) + begin;
+} while (rd == lastIndex);
+lastIndex = rd;
+

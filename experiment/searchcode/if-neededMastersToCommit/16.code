@@ -1,0 +1,6 @@
+boolean committed;  // true if cluster state was committed
+int neededMastersToCommit; // number of master nodes acks still needed before committing
+masterNode, clusterState.version(), pendingMasterNodes, neededMastersToCommit);
+neededMastersToCommit--;
+if (neededMastersToCommit == 0) {
+

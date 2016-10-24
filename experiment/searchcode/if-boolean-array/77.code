@@ -1,0 +1,8 @@
+* @param array an array
+* @param readOnly if false the wrapper allows writes to the array
+*/
+public ArrayBoolean(boolean[] array, boolean readOnly) {
+public void setBoolean(int index, boolean value) {
+if (!readOnly) {
+array[index] = value;
+

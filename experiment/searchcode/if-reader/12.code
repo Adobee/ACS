@@ -1,0 +1,18 @@
+import org.apache.lucene.index.IndexReader;
+
+public abstract class SourceQuery {
+
+private IndexReader reader;
+
+public abstract Source[] query(String q);
+public void close() {
+if (reader != null) {
+try {
+reader.close();
+} catch (IOException e) {
+e.printStackTrace();
+}
+}
+}
+}
+

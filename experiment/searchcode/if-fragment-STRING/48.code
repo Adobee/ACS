@@ -1,0 +1,8 @@
+FragmentTransaction transaction = fragmentManger.beginTransaction();
+Fragment fragment = null;
+String tag = null;
+if (clearBackStack) {
+tag = ScanFragment.class.getSimpleName();
+fragment = fragmentManger.findFragmentByTag(tag);
+if (fragment == null) {
+

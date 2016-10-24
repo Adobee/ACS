@@ -1,0 +1,11 @@
+public NavigationRule getTheSame(ActivityEnum previous,
+ActivityEnum current, boolean isForward) {
+for (NavigationRule rule : this) {
+if (rule.almostEquivalent(previous, current, isForward))
+return rule;
+}
+return null;
+}
+
+}
+

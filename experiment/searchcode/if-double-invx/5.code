@@ -1,0 +1,10 @@
+import ray.math.Vector3;
+
+public class Box extends Surface {
+private final static Double EPSILON = 1e-10;
+double txMin, txMax, tyMin, tyMax, tzMin, tzMax;
+
+double invx = 1 / rayIn.direction.x;
+double tx1 = (minPt.x - rayIn.origin.x) * invx;
+double tx2 = (maxPt.x - rayIn.origin.x) * invx;
+

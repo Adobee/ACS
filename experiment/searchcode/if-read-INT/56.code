@@ -1,0 +1,13 @@
+public int available() throws IOException {
+int av = bk.available();
+synchronized(this) {
+if(av > limit - read)
+av = (int)(limit - read);
+public int read() throws IOException {
+synchronized(this) {
+if(read >= limit)
+return(-1);
+int ret = bk.read();
+if(ret >= 0)
+read++;
+

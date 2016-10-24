@@ -1,0 +1,16 @@
+import java.lang.reflect.Type;
+
+/**
+*
+* @author zhou
+*
+*/
+public class TypeUtils {
+
+public static Class<?> getClass(Type type) {
+if (type.getClass() == Class.class) {
+return (Class<?>) type;
+}
+
+if (type instanceof ParameterizedType) {
+

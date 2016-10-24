@@ -1,0 +1,8 @@
+public InvokeDependOnVersionHelper version(int version, OnVersionInvoke invoke){
+
+if(null != invoke &amp;&amp; !isInvoked &amp;&amp; Build.VERSION.SDK_INT == version){
+invoke.invoke();
+public InvokeDependOnVersionHelper version(Object ... versionAndInvoke){
+
+if(null != versionAndInvoke &amp;&amp; !isInvoked){
+

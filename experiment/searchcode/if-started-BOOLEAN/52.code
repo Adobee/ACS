@@ -1,0 +1,14 @@
+private static final Logger LOG = LoggerFactory.getLogger(AbstractService.class);
+
+private AtomicBoolean started = new AtomicBoolean(false);
+
+@Override
+public boolean isStarted() {
+return started.get();
+}
+
+@Override
+public void start() {
+synchronized (started) {
+if (!isStarted()) {
+

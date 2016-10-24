@@ -1,0 +1,12 @@
+public class DeltaKey<Q, S> implements Comparable<DeltaKey<Q, S>> {
+public final Q q;
+public final S s;
+
+public DeltaKey(Q q, S s) {
+@SuppressWarnings({ &quot;rawtypes&quot;, &quot;unchecked&quot; })
+public int compareTo(DeltaKey<Q, S> dk) {
+try {
+if(q.equals(dk.q)) {
+// S 비교(String)
+if(s.equals(dk.s)) {
+

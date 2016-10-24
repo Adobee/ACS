@@ -1,0 +1,7 @@
+private boolean phoneValueExist(String phoneValue) {
+Phone phone = repository.findByPhoneValue(phoneValue);
+
+if (phone != null) {
+public Phone savePhone(Phone phone) throws DuplicatePhoneException {
+if (phoneValueExist(phone.getPhoneValue())) {
+

@@ -1,0 +1,9 @@
+//result = (SparseDoubleMatrix1D) A_h.zMult(x, result, 1, 0, false);
+DoubleMatrix1D result_h = alg.mult(A_h, x);
+for(int i=0; i<result_h.size(); i++){
+if(result_h.get(i) < 1){
+tmp = (SparseDoubleMatrix2D) mappingMatrix.zMult(lowLevelMatrix, tmp, 1, 0, false, false);*/
+
+SparseDoubleMatrix2D tmp;
+if(this.tmpMatrix == null || this.mappingMatrix == null){
+

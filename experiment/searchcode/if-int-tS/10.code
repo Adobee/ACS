@@ -1,0 +1,8 @@
+public boolean vitalCalculations(){
+int brakeDecision = brakeCalculation();
+if(ts.approachingStation &amp;&amp; !ts.atStation){
+public int brakeCalculation(){
+int brakeDecision = vh.shouldBrake(ts);
+if(!transmitBraking()){
+System.out.println(&quot;ERROR IN BRAKE TRANSMISSION....trying again&quot;);
+

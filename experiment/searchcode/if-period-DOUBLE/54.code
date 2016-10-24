@@ -1,0 +1,9 @@
+public double[][] computeTrendStatistic(double[] high, double[] low, double[] close, int period) {
+int resultLength = high.length - (period - 1);
+double[] ts = new double[resultLength];
+int lower = 0;
+double currentClose = close[(period - 1) + j];
+
+for (int i = j; i < j + period; i++) {
+if (currentClose < low[i]) {
+

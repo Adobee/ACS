@@ -1,0 +1,15 @@
+private int highThreshold;
+private boolean isForward;
+private int counts;
+private int period;
+
+public AnalogShaftEncoder(AnalogInput input, int lowThreshold,
+public void updateDirection(boolean isForward) {
+this.isForward = isForward;
+}
+
+public void run() {
+try {
+boolean wasHigh = false;
+if (input.sample() > lowThreshold)
+

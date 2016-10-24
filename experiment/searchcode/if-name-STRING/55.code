@@ -1,0 +1,11 @@
+private String name;
+public  String getName() { return name; }
+
+public String getSignature() {
+if(name.equals(&quot;real&quot;))
+if(name.equals(&quot;string&quot;))
+return &quot;Ljava/lang/String;&quot;;
+
+if(name.equals(&quot;void&quot;))
+return &quot;V&quot;;
+

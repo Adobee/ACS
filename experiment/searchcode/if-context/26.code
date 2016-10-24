@@ -1,0 +1,13 @@
+public static MemberContext getMemberContext(){
+MemberContext c = memberContextHolder.get() ;
+if(c == null){
+RequestContext c = requestContextHolder.get() ;
+if(c == null){
+return new RequestContext();
+}
+return c ;
+}
+
+
+}
+

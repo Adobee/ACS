@@ -1,0 +1,9 @@
+public class GuessTheNumber {
+public int noGuesses(int upper, int answer) {
+int l = 1, e = upper, m, cnt = 0;
+while (l <= e) {
+++cnt;
+m = (l+e) >> 1;
+if (m == answer) return cnt;
+if (m > answer) e = m-1;
+

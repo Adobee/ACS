@@ -1,0 +1,10 @@
+public synchronized void tickTock(){
+try{
+Thread.sleep(1000);
+}catch(InterruptedException e){}
+if(tick == true){
+System.out.println(&quot;Tick&quot;);
+this.tick = false;
+}else{
+System.out.println(&quot;Tock&quot;);
+

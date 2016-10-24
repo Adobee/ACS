@@ -1,0 +1,8 @@
+Map<String, CQPeriodsInfo> periodsInfoMap = icqPeriodsInfoLogic.getPeriodsInfoFromBetTableForReLotteryEOD(scheme);
+
+if (MapUtils.isNotEmpty(periodsInfoMap)) {
+
+// 如果获取的盘期列表，投注表里有没有兑奖的数据，执行该期重新兑奖的操作
+boolean flag = lotteryResultLogic.saveReportPeriod(periodsInfo.getPeriodsNum(), Constant.LOTTERY_TYPE_CQSSC, scheme);// 统计报表
+if (flag) {
+

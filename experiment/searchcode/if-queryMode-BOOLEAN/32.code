@@ -1,0 +1,7 @@
+strSQL = strSQL.trim();
+boolean isForUpdate = false;
+if (strSQL.toLowerCase().endsWith(&quot; for update&quot;)) {
+strSQL = strSQL.substring(0, strSQL.length() - 11);
+if (value != null &amp;&amp; !&quot;&quot;.equals(value.trim())) {
+if (nQueryModel.equals(QueryParam.QUERYMODE_EQUAL)) sql.append(key + &quot; = &quot; + value);
+

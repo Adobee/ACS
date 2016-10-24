@@ -1,0 +1,8 @@
+keyCol.open();
+DocumentScorer scorer = onlyPronouns ? new PronounScorer() : new CorefScorer();
+for (int docCount = 0; docCount < col.size(); docCount++) {
+col.open();
+keyCol.open();
+CorefScorer scorer = new CorefScorer();
+for (int docCount = 0; docCount < col.size(); docCount++) {
+

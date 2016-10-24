@@ -1,0 +1,8 @@
+public class CollectionUtil {
+
+public static List<?> toList(Object maybeList) {
+if (maybeList instanceof List<?>) {
+return new ArrayList<Object>((Collection<?>) maybeList);
+} else if (maybeList != null) {
+Class<?> clazz = maybeList.getClass();
+

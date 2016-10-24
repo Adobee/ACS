@@ -1,0 +1,12 @@
+/* Copyright (c) 2013, Regents of the University of California.  See License.txt for details */
+
+package edu.uci.imbs.actor;
+
+public class FitnessFunction
+{
+private double surviveThreshold = 0;
+private double thriveThreshold = 0;
+public double getSurviveThreshold()
+{
+return surviveThreshold;
+

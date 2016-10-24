@@ -1,0 +1,11 @@
+names[0], homeSym, names[1], awaySym);
+}
+
+board.reset();
+if (players[0].DQd &amp;&amp; players[1].DQd) {
+m.printf(&quot;Draw. Both DQ&#39;d%n&quot;);
+result = GameState.Status.DRAW;
+return;
+} else if (players[0].DQd) {
+m.printf(&quot;%s won. %s DQ&#39;d&quot;, names[1], names[0]);
+

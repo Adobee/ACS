@@ -1,0 +1,11 @@
+public LayerRandom getRandom() {
+return random;
+}
+
+public byte getBlockData(int x, int y, int z) {
+if (isChunkGenerated(x >> 4, z >> 4)) {
+// The methods starting with an underscore are internal and will only work properly on chunks which are in the correct state.
+byte _getBlockData(int x, int y, int z) {
+if (outOfBounds(y)) {
+return 0;
+

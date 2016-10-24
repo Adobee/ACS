@@ -1,0 +1,13 @@
+return waitIfFalse(timeout);
+}
+
+public synchronized boolean waitIfFalse(long timeout)
+{
+waitIfFalse = true;
+public synchronized boolean waitIfTrue(long timeout)
+{
+waitIfFalse = false;
+if( flag )
+{
+justWait(timeout);
+

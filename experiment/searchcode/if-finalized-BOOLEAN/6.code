@@ -1,0 +1,10 @@
+class ComplexTypeDefinition extends TypeDefinition {
+// fields
+private boolean finalized;
+private List<Attribute> attributes;
+ComplexTypeDefinition(String name, String namespace) {
+super(name, namespace);
+finalized = false;
+}
+boolean finalize(List<Attribute> attributes, Particle particle) {
+

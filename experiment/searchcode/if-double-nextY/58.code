@@ -1,0 +1,10 @@
+private Vector max;
+private boolean hasNext;
+private double nextX;
+private double nextY;
+private double nextZ;
+nextZ = min.getZ();
+if(++nextY <= max.getY())
+{
+return answer;
+

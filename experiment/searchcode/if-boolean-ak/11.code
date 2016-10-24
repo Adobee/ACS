@@ -1,0 +1,11 @@
+return AK;
+}
+
+public String whichAK (char[] codon){
+return whichAK (String.valueOf(codon));
+}
+
+public boolean isSinonim (String c1, String c2){
+if (!c2.equals(c1) &amp;&amp; whichAK(c1) == whichAK(c2)){
+return true;
+

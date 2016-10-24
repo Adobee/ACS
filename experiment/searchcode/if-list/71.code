@@ -1,0 +1,12 @@
+import java.util.*;
+
+public class PowerSet {
+public List<List<Integer>> powerSet(int[] A){
+if(A == null || A.length == 0) return new LinkedList<>();
+private void helper(int[] A, int i, List<Integer> list, List<List<Integer>> totalList){
+if(i == A.length){
+totalList.add(new LinkedList<>(list));
+return;
+}
+for(int k = i; k < A.length; k++){
+

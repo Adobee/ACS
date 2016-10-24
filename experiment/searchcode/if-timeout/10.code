@@ -1,0 +1,13 @@
+this.timeout = timeout;
+}
+
+public synchronized String waitBack() {
+try {
+if (timeout >= 0) {
+wait(timeout);
+if (isTimeout) {
+content = &quot;TIMEOUT:&quot; + timeout;
+}
+}
+} catch (InterruptedException e) {
+

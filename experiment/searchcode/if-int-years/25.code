@@ -1,0 +1,13 @@
+public Prosecutor(String name) {
+super(name);
+}
+
+@Override
+public void setYearsInService(int years) {
+if(years >= 10){
+super.setYearsInService(years);
+}
+}
+
+}
+

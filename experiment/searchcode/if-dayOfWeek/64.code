@@ -1,0 +1,12 @@
+public DayOfWeekPredicate(int dayOfWeek) {
+if (dayOfWeek < DateTimeConstants.MONDAY || dayOfWeek > DateTimeConstants.SUNDAY) {
+public boolean evaluate(ProjectActivity activity) {
+if (activity == null) {
+return false;
+}
+
+return activity.getDay().getDayOfWeek() == this.dayOfWeek;
+}
+
+}
+

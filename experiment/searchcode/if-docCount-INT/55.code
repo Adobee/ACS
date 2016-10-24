@@ -1,0 +1,10 @@
+private String term;
+private IntsRef docs = new IntsRef(1024);
+private int doccount = 0;
+
+public RedisUpdatingPostingsWriter(String segmentname) {
+// TODO: store frequencies as well?
+docs.ints[doccount] = docID;
+if (++doccount > docs.length) {
+docs.grow(docs.length * 2);
+

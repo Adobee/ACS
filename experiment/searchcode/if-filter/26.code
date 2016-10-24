@@ -1,0 +1,13 @@
+public class FilterExecute {
+
+FilterBuilder filterBuilder;
+
+
+public FilterExecute() {
+if(null == this.filterBuilder) {
+this.filterBuilder = new FilterBuilder();
+List<Filter> filters = filterBuilder.getFilterChina().getFilters();
+for (Filter filter : filters) {
+if (null != filter) {
+str = filter.doFilter(str);
+

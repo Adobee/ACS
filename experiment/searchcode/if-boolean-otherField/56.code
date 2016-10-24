@@ -1,0 +1,11 @@
+* @param otherRow
+* @return
+*/
+public boolean isSubtypeOf(TypeRow otherRow) {
+if (otherRow==null)
+throw new IllegalArgumentException(&quot;otherType cannot be null&quot;);
+for (String otherField : otherRow.getRange()){
+RGLType rglType = get(otherField);
+if (rglType==null)
+return false; // we don&#39;t have all fields of otherRow, so we are not a subtype
+

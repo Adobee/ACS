@@ -1,0 +1,13 @@
+implements X509TrustManager
+{
+
+private final X509TrustManager trustManager;
+private final TrustStrategy trustStrategy;
+TrustManagerDecorator(X509TrustManager x509trustmanager, TrustStrategy truststrategy)
+{
+trustManager = x509trustmanager;
+trustStrategy = truststrategy;
+}
+
+public void checkClientTrusted(X509Certificate ax509certificate[], String s)
+

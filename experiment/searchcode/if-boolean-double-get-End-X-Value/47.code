@@ -1,0 +1,8 @@
+@Override
+public Double getValue(Object parameters, Node[] childNodes) {
+StrategyParameters now = (StrategyParameters) parameters;
+for(long time = beginTime; time <= endTime; time += timeStep) {
+loop.time = time;
+boolean value = (Boolean) iter.getValue(loop);
+if((which == COUNT_TRUE &amp;&amp; value) || (which == COUNT_FALSE &amp;&amp; !value))
+

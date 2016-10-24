@@ -1,0 +1,10 @@
+public class MinAvgTwoSlice {
+public int solution(int[] A) {
+if (A.length == 2) {
+return 0;
+int diff = sum(prefixSums, startIndex2, 2) * 3
+- sum(prefixSums, startIndex3, 3) * 2;
+int startIndex;
+if (diff < 0) {
+startIndex = startIndex2;
+

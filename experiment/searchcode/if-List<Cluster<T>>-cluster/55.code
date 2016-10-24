@@ -1,0 +1,17 @@
+String id = UUID.randomUUID().toString();
+cluster.setId(id);
+
+if (clusterStore.add(cluster))
+return id;
+
+return null;
+return clusterStore.get(id);
+}
+
+@Override
+public List<Cluster> getClusters() {
+return clusterStore.get();
+}
+
+}
+

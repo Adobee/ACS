@@ -1,0 +1,11 @@
+public Double toDouble(String key) {
+Object val = map.get(key);
+if (val == null) return null;
+if (val instanceof Double) return (Double) val;
+return Integer.valueOf(strVal);
+}
+public Long toLong(String key) {
+Object val = map.get(key);
+if (val == null) return null;
+if (val instanceof Long) return (Long) val;
+

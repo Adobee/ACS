@@ -1,0 +1,13 @@
+setIconStyle(null);
+}
+}
+}
+
+private String formatLastSyncTime() {
+long secondsAgo = secondsSinceSync();
+if (secondsAgo <= 60) {
+return I18N.MESSAGES.minutesAgo((int) minutesAgo);
+}
+long hoursAgo = minutesAgo / 60;
+if (hoursAgo <= 48) {
+

@@ -1,0 +1,15 @@
+this.name = name;
+this.value = value;
+}
+
+public double mean(){
+if(mean != Double.POSITIVE_INFINITY){
+mean = sum/value.length;
+}
+return mean;
+}
+
+public double sigma(){
+if(sigma != Double.POSITIVE_INFINITY){
+double mean = mean();
+

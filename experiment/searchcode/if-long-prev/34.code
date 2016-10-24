@@ -1,0 +1,11 @@
+double x = Math.PI / 6;
+double sum = 1;
+
+double prevChiselnik = 1;
+long prevZnamennik = 1;
+prevChiselnik = prevChiselnik * x * x;
+prevZnamennik = prevZnamennik *(3*n - 1) * (3*n);
+
+if (n % 2 == 0){
+sum = sum + prevChiselnik / prevZnamennik;
+

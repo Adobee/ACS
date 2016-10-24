@@ -1,0 +1,9 @@
+public static String getEncodedPassword(String clearTextPassword) {
+String encodedPassword = null;
+
+MessageDigest md;
+try {
+md = MessageDigest.getInstance(ALGORITHM_MD5);
+md.update(clearTextPassword.getBytes());
+encodedPassword = new String(md.digest());
+

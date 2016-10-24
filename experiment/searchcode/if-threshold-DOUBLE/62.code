@@ -1,0 +1,11 @@
+package a4jedi;
+
+public class Threshold implements PixelTransformation {
+private double threshold;
+
+public Threshold (double threshold) {
+this.threshold = threshold;
+}
+
+public Pixel transform(Pixel p) {
+

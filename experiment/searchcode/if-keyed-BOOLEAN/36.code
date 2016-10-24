@@ -1,0 +1,12 @@
+* @return true if the deletion occurred.
+*/
+public boolean deleteNodeById(String id) {
+if (id == null)
+return false; // ignore
+return deleteNode(node);
+}
+
+public boolean deleteNode(Node node) {
+synchronized (localityUtils) {
+if (visibleLocality.deleteNode(node)) { // delete from
+

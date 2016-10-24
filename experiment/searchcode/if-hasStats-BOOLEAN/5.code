@@ -1,0 +1,14 @@
+private int number;
+private Date date;
+private boolean hasStats = false;
+
+@ManyToOne(fetch = FetchType.LAZY)
+public Boolean getHasStats()
+{
+return hasStats;
+}
+
+public void setHasStats(Boolean hasStats)
+{
+this.hasStats = hasStats;
+

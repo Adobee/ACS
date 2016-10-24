@@ -1,0 +1,10 @@
+public Point basePoint;
+private final double EPS = 0.00001;
+
+public Line(Point p1, Point p2)
+{
+if(p1.x - p2.x == 0)
+slope = Integer.MAX_VALUE;
+else
+slope = (double)((p2.y - p1.y))/((p2.x - p1.x));
+

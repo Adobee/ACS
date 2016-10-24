@@ -1,0 +1,9 @@
+public double getValue() {
+if (sigma.getValue() == null) {
+double d = 0;
+for (int i = 0; i < parts.length; i++)
+private double compute() {
+if (e > 0) {
+final long edelta = -sigma.E.delta;
+long q = e / edelta;
+

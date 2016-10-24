@@ -1,0 +1,11 @@
+public static final int IS_POSITIVE_HASH_VALUE = 145;
+int count = 0;
+boolean isPositive = true;
+
+@Override
+protected double operation(double val) {
+if (isPositive &amp;&amp; val < 0.0) {
+count = -1;
+isPositive = false;
+} else if (!isPositive &amp;&amp; val >= 0.0) {
+

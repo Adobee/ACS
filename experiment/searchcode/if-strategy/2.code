@@ -1,0 +1,7 @@
+public void addDependencyStrategy(StrategyUserHelper<?> helper) {
+for (S strategy : strategies) {
+if (strategy instanceof DependencyStrategy) {
+DependencyStrategy dependencyStrategy = (DependencyStrategy) strategy;
+if (dependencyStrategy.isDependencyStrategyChanged()) {
+dependencyStrategy.addDependencyStrategy(helper);
+

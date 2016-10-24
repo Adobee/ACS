@@ -1,0 +1,9 @@
+public boolean isImplicitCastValidImpl(Type toType) {
+JL5TypeSystem ts = (JL5TypeSystem) typeSystem();
+if (toType.isClass()){
+return super.isImplicitCastValidImpl(toType);
+}
+
+private boolean isAutoBoxingValid(Type toType){
+if (!toType.isClass()) return false;
+

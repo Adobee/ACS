@@ -1,0 +1,10 @@
+protected final BaseJsonGenerator generator;
+private boolean writeLineFeedAtEnd;
+private static final SerializedString LF = new SerializedString(&quot;\n&quot;);
+if (generator.isClosed()) {
+return;
+}
+if (writeLineFeedAtEnd) {
+flush();
+generator.writeRaw(LF);
+

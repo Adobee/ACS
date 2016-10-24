@@ -1,0 +1,13 @@
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class JacksonJsonMapper
+{
+private static volatile ObjectMapper objectMapper = null;
+public static ObjectMapper getInstance()
+{
+if (objectMapper == null)
+{
+synchronized (ObjectMapper.class)
+{
+if (objectMapper==null)
+

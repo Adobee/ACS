@@ -1,0 +1,7 @@
+int[] t = IOControl.bitStrXOR(iv, xs[0]);
+ys[0] = MDES.encryptKernel(t, key);
+int resultOffset = IOControl.copyIntArrIntoArr(result, 0, ys[0]);
+ys[i] = MDES.encryptKernel(t, key);
+
+resultOffset = IOControl.copyIntArrIntoArr(result, resultOffset, ys[i]);
+

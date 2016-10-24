@@ -1,0 +1,10 @@
+private ElasticsearchTemplate elasticsearchTemplate;
+private int numberOfShards = 1;
+private int numberOfReplicas = 1;
+return createIndex(indexName, numberOfShards, numberOfReplicas);
+}
+return true;
+}
+
+private boolean createIndex(String indexName, int numberOfShards, int numberOfReplicas) {
+

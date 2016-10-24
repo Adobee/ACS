@@ -1,0 +1,11 @@
+public class RangeStatistics implements Statistics {
+
+long start;
+long end;
+
+public RangeStatistics(long start, long end){
+public long estimate(byte[] min, byte[] max) {
+long start=WritableHelper.parseInt(min);
+long end=WritableHelper.parseInt(max);
+if(start<this.start)start = this.start;
+

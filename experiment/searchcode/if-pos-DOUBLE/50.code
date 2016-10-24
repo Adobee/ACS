@@ -1,0 +1,9 @@
+double[] test = new double[] { 10, 9, 8, 7, 6, 5, 4, 3, 2, 1 };
+
+}
+
+private static double max (double[] input, int pos) {
+if (pos+1 == input.length)
+return input[pos];
+double max = Math.max(input[pos], max (input, pos+1));
+

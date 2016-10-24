@@ -1,0 +1,10 @@
+//  Parsing is different depending on the number of delimiters
+
+if (singleDelimiter || delimiter.length() == 1)
+{
+return parseUsingSingleDelimiter();
+//  A character search is faster than a String search
+
+if (delimiter.length() == 1)
+delimiterPosition = text.indexOf(delimiter.charAt(0), position);
+

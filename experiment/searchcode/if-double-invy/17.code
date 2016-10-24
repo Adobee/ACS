@@ -1,0 +1,11 @@
+LINE_INDI_GENERAL);
+cbPayFeesInvyDetail = true;
+// if there is an item year, print it
+if (aiInvItemYr > 0)
+FEES_ITEM_YEAR_LENGTH,
+LEFT,
+LINE_INDI_GENERAL);
+cbPayFeesInvyDetail = true;
+}
+// if there is an item number, print it
+

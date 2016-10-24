@@ -1,0 +1,10 @@
+private HashMap<Integer, Boolean> keyCodes;
+private HashMap<Character, Boolean> keyChars;
+
+public Keyboard() {
+public boolean keyDown(int key) {
+Boolean down = keyCodes.get(key);
+
+if(down == null)
+down = false;
+

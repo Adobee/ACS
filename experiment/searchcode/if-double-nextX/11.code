@@ -1,0 +1,9 @@
+table.put(x,y);
+}
+
+public double interpolate(double x) {
+if(x < table.firstEntry().getValue()) {
+double nextX = table.higherKey(curX);
+double nextY = table.get(nextX);
+if(curX <= x &amp;&amp; nextX >= x) {
+

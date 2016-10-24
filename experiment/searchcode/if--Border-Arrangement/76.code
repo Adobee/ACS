@@ -1,0 +1,7 @@
+JavaElementArrangementEntry getter = propertyInfo.getGetter();
+JavaElementArrangementEntry setter = propertyInfo.getSetter();
+if (getter != null &amp;&amp; setter != null &amp;&amp; setter.getDependencies() == null) {
+for (JavaArrangementMethodDependencyInfo dependencyInfo : current.getDependentMethodInfos()) {
+JavaElementArrangementEntry dependencyMethod = dependencyInfo.getAnchorMethod();
+if (dependencyMethod.getDependencies() == null) {
+

@@ -1,0 +1,10 @@
+divisorB += (B[i] * B[i]);
+}
+long divisor = divisorA * divisorB;
+if(divisor == 0) {
+return 2.0;
+}
+return ((double)dividend) / (Math.sqrt(divisor));
+}
+}
+

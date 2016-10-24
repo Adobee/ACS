@@ -1,0 +1,10 @@
+public static final IntRange ONE = between(1, 1);
+
+private Range<Integer> range;
+
+private IntRange(int fromInclusive, int toInclusive) {
+range = Range.between(fromInclusive, toInclusive);
+}
+
+public static IntRange valueOf(int value) {
+

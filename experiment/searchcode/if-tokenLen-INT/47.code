@@ -1,0 +1,10 @@
+for (i = 0; i < 20; i++) {
+long val = (long) Math.pow(base, i + 1);
+if (id < val) {
+break;
+}
+}
+int tokenLen = Math.max(i, MIN_CODE_LENGTH);
+int numRandom = tokenLen - (i + 2);
+if (numRandom > 0) {
+

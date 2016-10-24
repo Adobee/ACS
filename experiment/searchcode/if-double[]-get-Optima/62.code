@@ -1,0 +1,6 @@
+addOptimum(pos); // the global optimum
+double refinedX = 0;
+if (getProblemDimension() < 18) {
+pos = refineSolution(this, pos, dir, 0.0005, 1e-20, 0);
+if (EuclideanMetric.euclideanDistance(pos, listOfOptima.getEAIndividual(0).getDoublePosition()) < 0.5) {
+

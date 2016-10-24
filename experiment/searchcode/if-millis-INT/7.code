@@ -1,0 +1,10 @@
+public class BurstSquareWave extends WaveForm {
+final long periodTimeMillis;
+final long onTimeMillis;
+final long burstOnMillis;
+Thread.sleep(burstOffMillis);
+t += burstOffMillis;
+}
+if (t < periodTimeMillis) {
+Thread.sleep(periodTimeMillis - t);
+

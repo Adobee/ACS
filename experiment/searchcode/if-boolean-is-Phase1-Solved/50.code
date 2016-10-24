@@ -1,0 +1,13 @@
+return ((a&amp;&amp;b)/*||c*/);
+}
+public boolean addValue(int x, int y, int t){
+int d = map.length;
+if((x>d)||(x<0)||(y>d)||(y<0)||(t<1)||(t>d*d)){
+System.out.println(&quot;Error: Input numbers are out of bounds of the puzzle!&quot;);
+return false;
+}
+boolean w = this.eligible(x, y, t);
+
+if(w){
+map[x][y].setT(t);
+

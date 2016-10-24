@@ -1,0 +1,13 @@
+public Rgba(int r, int g, int b, int a) {
+super(r, g, b, a);
+}
+
+public Xyz toXyz() {
+double r0 = getRed() / 255d;
+double g0 = getGreen() / 255d;
+double b0 = getBlue() / 255d;
+
+r0 = convert(r0);
+g0 = convert(g0);
+b0 = convert(b0);
+

@@ -1,0 +1,16 @@
+protected NGPoint2D FB;
+
+public NGLine2D() {
+this(0.0, 0.0, 0.0, 0.0);
+}
+
+public NGLine2D(double aAX, double aAY, double aBX, double aBY) {
+double dx = FA.getX() - FB.getX();
+double dy = FA.getY() - FB.getY();
+if (dx!=0) {
+return dy/dx;
+}
+return 0;
+}
+}
+

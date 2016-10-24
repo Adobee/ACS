@@ -1,0 +1,10 @@
+List<Integer> topological = new ArrayList<Integer>();
+for (int i = 0; i < noOfItems; i++) {
+if (!visited[i]) {
+topologicalSort(input, visited, noOfItems, i, topological);
+int node = stack.peek();
+int i = 0;
+while (i < noOfItems) {
+
+if (input[node][i] == 1 &amp;&amp; visited[i] == true) {
+

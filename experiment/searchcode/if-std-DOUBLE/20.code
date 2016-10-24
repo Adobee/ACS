@@ -1,0 +1,7 @@
+return numeratorSum / (x.length > y.length ? x.length : y.length);
+}
+
+public static double covarStd(double[] x, double[] y, boolean population) {
+if (population) {
+return covar(x, y) / (ListStats.popStdDev(x) * ListStats.popStdDev(y));
+

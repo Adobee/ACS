@@ -1,0 +1,11 @@
+private Date expires;
+private long maxAge;//非0,单位秒
+private boolean httpOnly;
+
+public Cookie(String field,String value){
+this(field,value,&quot;&quot;,&quot;/&quot;,expires,0,false,false);
+}
+
+public Cookie(String field,String value,Date expires,boolean secure,boolean httpOnly){
+this(field,value,&quot;&quot;,&quot;/&quot;,null,0,secure,httpOnly);
+

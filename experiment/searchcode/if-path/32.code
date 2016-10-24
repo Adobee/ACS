@@ -1,0 +1,10 @@
+String contextPath = request.getContextPath();
+
+path = path.substring(contextPath.length());
+
+if (path.length() > 0) {
+path = path.substring(1);
+}
+
+if (!path.startsWith(SLASH)) {
+

@@ -1,0 +1,11 @@
+for(Entry<T, Double> set: valueMap.entrySet())
+{
+if(set.getValue() < 0.0)
+{
+continue;
+sumValue += set.getValue();
+}
+
+double randomValue = new Random().nextDouble() * sumValue;
+for(Entry<T, Double> set: valueMap.entrySet())
+

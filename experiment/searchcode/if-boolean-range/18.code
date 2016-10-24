@@ -1,0 +1,10 @@
+this.up = up;
+}
+
+public boolean isSubrangeOf(Range otherRange) {
+return this.isSubrange(otherRange);
+}
+
+public boolean hasIntersectionWith(Range otherRange) {
+if (otherRange.up < this.low) return false;
+

@@ -1,0 +1,10 @@
+package org.xcounter.geoip;
+
+abstract class AbstractBlock implements Comparable<AbstractBlock>
+return end;
+}
+
+public int compareTo(AbstractBlock o)
+{
+if (this.begin < o.begin)
+

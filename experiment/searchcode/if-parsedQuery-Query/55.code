@@ -1,0 +1,7 @@
+* @param  searchNode   Root node of a &quot;search&quot; request.
+*/
+public OlapQuery(UNode searchNode) {
+assert searchNode != null;
+ParsedQuery parsedQuery = new ParsedQuery(&quot;search&quot;, searchNode);
+m_query = parsedQuery.get(&quot;query&quot;);
+

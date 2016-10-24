@@ -1,0 +1,11 @@
+public class P2{
+public static void main(String args[]){
+System.out.print(fib(4000000));
+}
+
+public static long fib(int n){
+int a = 1, b = 2, c=0;
+long sum = 0;
+
+while(c <= n){
+

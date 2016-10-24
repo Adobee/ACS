@@ -1,0 +1,9 @@
+float reqScore = reqScorer.score();
+if (optScorer == null) {
+return reqScore;
+}
+
+DocTf optScorerDoc = optScorer.docTf();
+if (optScorerDoc.doc < curDoc.doc
+&amp;&amp; (optScorerDoc = optScorer.advance(curDoc)) == NO_MORE_DOCS) {
+

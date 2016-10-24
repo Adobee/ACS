@@ -1,0 +1,13 @@
+int result = rawType.hashCode() ^ Arrays.hashCode(actualTypeArguments);
+if (ownerType != null)
+result ^= ownerType.hashCode();
+return result;
+}
+
+@Override
+String clazz = rawType.getName();
+
+if (ownerType != null)
+{
+sb.append(Generics.getTypeName(ownerType)).append(&#39;.&#39;);
+

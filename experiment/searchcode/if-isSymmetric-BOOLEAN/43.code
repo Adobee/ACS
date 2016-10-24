@@ -1,0 +1,11 @@
+* http://www.programcreek.com/2014/03/leetcode-symmetric-tree-java/
+*/
+public class SymmetricTree {
+
+public boolean isSymmetric(TreeNode root) {
+return isSymmetric(root.left, root.right);
+}
+
+public boolean isSymmetric(TreeNode l, TreeNode r) {
+if (l == null &amp;&amp; r == null) {
+

@@ -1,0 +1,13 @@
+int dirFB = 0; //forward-backward
+int dirLR = 0; //left-right
+
+float speed = -0.5f * (fastMode? 10 : 4);
+
+if (KeyIn.down(&quot;NUMPAD4&quot;)) me.a(0, 1, 0);
+Point3d origDest = new Point3d(p3d.x + x, p3d.y + y, p3d.z + z);
+int rx = (int)p3d.x;
+int ry = (int)p3d.y;
+int rz = (int)p3d.z;
+
+if (x != 0 &amp;&amp; rx == (int)origDest.x) {p3d.x += x; x = 0;}
+

@@ -1,0 +1,8 @@
+private byte[] array; // Array to temporarily store data from HDFS
+private String line = null;
+private boolean restore = false;
+private int MAXSHM; // Should make it configurable
+// linux user API: shmget, ****man shmget for detail***
+if(MAXSHM % 4096 != 0){
+MAXSHM += (4096 - MAXSHM % 4096);
+

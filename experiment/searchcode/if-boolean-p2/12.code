@@ -1,0 +1,10 @@
+p1 = p1.next;
+
+p2 = p2.next;
+if (p2 == null)
+return false;
+else
+p2 = p2.next;
+
+if (p1 == p2)
+

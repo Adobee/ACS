@@ -1,0 +1,16 @@
+private Class<?> type;
+
+private boolean deep;
+private boolean includeObject;
+
+private Field[] fields;
+
+public FieldMatcher(Class<?> clazz) {
+this.fields = null;
+return this;
+}
+
+public FieldMatcher includingObject() {
+this.includeObject = true;
+this.fields = null;
+

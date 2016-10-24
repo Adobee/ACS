@@ -1,0 +1,9 @@
+return parameters.toArray(new org.apache.commons.math.estimation.EstimatedParameter[parameters.size()]);
+}
+
+public org.apache.commons.math.estimation.EstimatedParameter[] getUnboundParameters() {
+java.util.List<org.apache.commons.math.estimation.EstimatedParameter> unbound = new java.util.ArrayList<org.apache.commons.math.estimation.EstimatedParameter>(parameters.size());
+for (org.apache.commons.math.estimation.EstimatedParameter p : parameters) {
+if (!(p.isBound())) {
+unbound.add(p);
+

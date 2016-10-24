@@ -1,0 +1,10 @@
+ro=this.factoryResolverProvider.getResolverObject(objectSource);
+
+if(ro==null &amp;&amp; this.objectSourceResolverProvider!=null)
+ro=this.objectSourceResolverProvider.getResolverObject(objectSource);
+public Class<?> getResolverClass(ObjectSource objectSource) throws Exception
+{
+Class<?> re=null;
+
+if(this.factoryResolverProvider != null)
+

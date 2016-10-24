@@ -1,0 +1,10 @@
+return removeSeparator(strSeats, separator);
+}
+
+public static String removeSeparator(String str, String separator) {
+int separatorLen = separator.length();
+int strLen = str.length();
+
+if (separatorLen > 0 &amp;&amp; strLen > separatorLen)
+str = str.substring(0, strLen - separatorLen);
+

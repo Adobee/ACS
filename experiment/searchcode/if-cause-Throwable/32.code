@@ -1,0 +1,10 @@
+cause = getCauseByFieldName(delegatedThrowable, throwableClass, CAUSE_FIELD_NAMES[i]);
+}
+}
+
+if (cause == delegatedThrowable) {
+isWellKnownType = true;
+cause = ((ChainedThrowable) throwable).getCause();
+}
+else if (throwable instanceof SQLException) {
+

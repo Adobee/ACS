@@ -1,0 +1,11 @@
+public HttpFuture(RequestHandle handle){
+this.handle = handle;
+}
+public boolean isCancelled(){
+return handle.isFinished();
+}
+public void cancel(boolean mayInterruptIfRunning){
+handle.cancel(mayInterruptIfRunning);
+}
+}
+

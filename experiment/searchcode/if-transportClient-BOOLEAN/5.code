@@ -1,0 +1,8 @@
+import java.util.Map.Entry;
+
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.ImmutableSettings;
+final TransportClient client = new TransportClient(settings);
+if (null != transportAddresses) {
+for (final Entry<String, Integer> address : transportAddresses.entrySet()) {
+

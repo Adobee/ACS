@@ -1,0 +1,5 @@
+final int qEnd   = Math.min(qStart + BLOCK_SIZE, columns);
+final int jWidth = qEnd - qStart;
+// copy data
+for (int p = pStart, index = 0; p < pEnd; ++p, index += jWidth) {
+

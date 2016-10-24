@@ -1,0 +1,8 @@
+public class User {
+private Rank userRank;
+
+private int PROGRESS_WORTH_RANK_UPGRADE = 100;
+private int progress=0;
+private void updateProgressFromActivity(Activity activity) {
+int diffRank =activity.getRank().getValue() - userRank.getValue();
+

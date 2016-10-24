@@ -1,0 +1,8 @@
+public TValue get(TRowKey rowKey, TColKey colKey) {
+if (map.containsKey(rowKey) == false)
+throw new NoSuchElementException();
+
+Map<TColKey, TValue> rowMap = map.get(rowKey);
+if (rowMap.containsKey(colKey) == false)
+throw new NoSuchElementException();
+

@@ -1,0 +1,14 @@
+public Color getColor(float x, float y) {
+checkRanges(x, y);
+
+// rot
+double rot;
+if (x <= 0.25 &amp;&amp; y <= 0.25)
+rot = interpolate(255, 205, 255, 230, x * 4, y * 4);
+else if (gx > 0.25 &amp;&amp; gx <= 0.50 &amp;&amp; gy > 0.75)
+gruen = interpolate(50, 50, 0, 0, (gx - 0.25) * 4, (gy - 0.75) * 4);
+
+// blau
+double blau;
+if (x <= 0.25 &amp;&amp; y <= 0.25)
+

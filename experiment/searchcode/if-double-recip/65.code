@@ -1,0 +1,10 @@
+String recip = SlackItem.getSlackEmail(username,client,token);
+if (recip == null){
+return &quot;Incorrect Username. Try /slackpay @<username> $<X.XX> <note>&quot;;
+}
+
+double amt = 0;
+if (s.hasNext()){
+String temp = s.next();
+if (temp.matches(&quot;[$][0-9]*.[0-9][0-9]&quot;)){
+

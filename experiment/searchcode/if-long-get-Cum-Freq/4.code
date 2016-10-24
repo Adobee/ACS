@@ -1,0 +1,16 @@
+tree[i] /= c;
+}
+}
+
+public int find(long cumFreq) {
+
+int idx = 0;
+int bitMask;
+
+// Get a nubmer with only the most significant bit in N set
+while ((bitMask != 0) &amp;&amp; (idx < N)) {
+
+int tIdx = idx + bitMask;
+
+if (tIdx <= N &amp;&amp; cumFreq >= tree[tIdx]) {
+

@@ -1,0 +1,12 @@
+import java.util.regex.*;
+
+public class Solution {
+
+public static int getMaxWidth(int i,int j,int[] width)
+{
+int min=width[i];
+int x=i;
+while(x<=j)
+{
+if(width[x]<=min)
+

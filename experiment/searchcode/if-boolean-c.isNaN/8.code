@@ -1,0 +1,8 @@
+public static boolean fuzzyEquals(double x, double y) {
+if (Double.isNaN(x) || Double.isNaN(y))
+return Math.abs(x - y) <= EPSILON || Double.valueOf(x).equals(Double.valueOf(y));
+}
+
+public static boolean fuzzyLessThanOrEqualTo(double x, double y) {
+if (fuzzyEquals(x, y)) {
+

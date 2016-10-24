@@ -1,0 +1,8 @@
+@SuppressWarnings(&quot;serial&quot;)
+public class Command_SetSeed extends ModelManagerCommand {
+private long seed;
+private boolean useTimeSeed;
+
+public Command_SetSeed(long seed, boolean useTimeSeed) {
+this.seed = seed;
+

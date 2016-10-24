@@ -1,0 +1,12 @@
+double s2 = Math.sin(r2);
+double c2 = Math.cos(r2);
+
+double s3 = Math.sin(r3);
+double c3 = Math.cos(r3);
+double s3 = Math.sin(rz2);
+double c3 = Math.cos(rz2);
+
+if (c2 >= threshold) {
+/*
+* singularity at north pole, i.e. angles[1]=0; c2=1; s2=0
+

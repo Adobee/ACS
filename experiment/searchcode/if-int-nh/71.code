@@ -1,0 +1,12 @@
+this.IH = new int[A.length + 1];
+this.IP = new int[A.length + 1];
+}
+
+public void print_rec(int i) {
+if (i < 0) {
+for (int i = 0; i < A.length; i++) {
+int j = upperBound(A[i], 0, nh - 1);
+IP[i] = (j == 0) ? -1 : IH[j - 1];
+IH[j] = i;
+if (j == nh) {
+

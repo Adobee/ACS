@@ -1,0 +1,14 @@
+try {
+OldState oldState = new OldState();
+command.execute();
+if (isUndoAvailable() &amp;&amp; undoStack.peek().isCollapsible(command)) {
+} catch (IllegalStateException e) {
+// report and log
+}
+}
+
+public void undo() {
+if (!undoStack.isEmpty()) {
+try {
+OldState oldState = new OldState();
+

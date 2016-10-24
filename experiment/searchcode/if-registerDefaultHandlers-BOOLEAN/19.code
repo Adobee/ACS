@@ -1,0 +1,12 @@
+public TypeHandlerFactoryImpl() {
+registerDefaultHandlers();
+}
+
+private String getParamsId(String[] params) {
+if (params == null || params.length == 0) {
+public TypeHandler create(Class<?> forClass, String[] params) throws InstantiationException, IllegalAccessException {
+String key;
+TypeHandler handler = null;
+
+if (TypeHandler.class.isAssignableFrom(forClass)) {
+

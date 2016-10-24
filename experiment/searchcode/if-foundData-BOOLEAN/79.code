@@ -1,0 +1,7 @@
+private int lookForData(int data) {
+int[] hashes = Hash.getInstance().generateHashValues(data);
+boolean foundData = false;
+for (int j = 0; j < hashes.length; j++) {
+if (bloomFilters[bfIndex].isBitSet(hashes[j])) {
+foundData = true;
+

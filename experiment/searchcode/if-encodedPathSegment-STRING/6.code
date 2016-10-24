@@ -1,0 +1,7 @@
+public URI pathToUri(String encodedPathSegment, Map<String, String> queryParameters, String... pathSegments) {
+StringBuilder sb = new StringBuilder(baseUrl);
+if (baseUrl.endsWith(&quot;/&quot;)) {
+sb.setLength(sb.length() - 1);
+}
+if (!encodedPathSegment.isEmpty()) {
+

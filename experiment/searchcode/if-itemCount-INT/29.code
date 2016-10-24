@@ -1,0 +1,11 @@
+public class ReadOnlyIterableIndexedAccess<E> implements Iterable<E>, IndexedIterable<E> {
+private final int	        itemCount;
+
+private final Iterator<E>	iterator;
+this.itemCount = itemCount;
+}
+
+@Override
+public synchronized E get(final int index) {
+if (index < 0 || index >= itemCount)
+

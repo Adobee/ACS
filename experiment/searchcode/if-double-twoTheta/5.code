@@ -1,0 +1,12 @@
+public class XPDFCoordinates {
+
+private double wavelength;
+private Dataset twoTheta;
+private Dataset phi;
+private Dataset gamma;
+* @param twoTheta
+*/
+public void setTwoTheta(Dataset twoTheta) {
+this.twoTheta = twoTheta;
+if (phi == null) this.phi = DatasetFactory.zeros(this.twoTheta, DoubleDataset.class).fill(Math.toRadians(210));
+

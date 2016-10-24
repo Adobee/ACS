@@ -1,0 +1,9 @@
+append((long[]) lhs, (long[]) rhs);
+} else if ((lhs instanceof int[])) {
+append((int[]) lhs, (int[]) rhs);
+public CompareToBuilder append(int lhs, int rhs) {
+if (result != 0) {
+return this;
+}
+result = (lhs > rhs ? 1 : lhs < rhs ? -1 : 0);
+

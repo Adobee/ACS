@@ -1,0 +1,9 @@
+private static CategoryData instance = null;
+
+public JSONArray getTicketCategory(){
+if(categoryData == null){
+String cg = getSharedPreferences().getString(&quot;CategoryData&quot;, &quot;&quot;);
+if(!cg.equals(&quot;&quot;)){
+try {
+categoryData = new JSONArray(cg);
+

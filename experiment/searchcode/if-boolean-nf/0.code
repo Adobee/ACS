@@ -1,0 +1,14 @@
+public NF_Final validateNF(NF_Abstract nf) {
+NF_Final finalNF = null;
+if (!nf.isFinal())
+{
+finalNF = NF_Builder.constructNF_Final((NF) nf, nfID_++);
+public NF_Final getNF(int ID){
+return finalNFs_.get(ID);
+}
+public boolean contains(NF_Final nf){
+return finalNFs_.contains(nf);
+}
+
+}
+

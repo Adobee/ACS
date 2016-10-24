@@ -1,0 +1,7 @@
+public void setCacheControl( final GetableResource resource, final Response response, Auth auth ) {
+Long delta = resource.getMaxAgeSeconds( auth );
+if( log.isTraceEnabled() ) {
+log.trace( &quot;setCacheControl: &quot; + delta + &quot; - &quot; + resource.getClass() );
+//            Date expiresAt = calcExpiresAt( new Date(), delta.longValue() );
+//            if( log.isTraceEnabled() ) {
+

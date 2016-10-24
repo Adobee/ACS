@@ -1,0 +1,8 @@
+if(other.equals(bottom)) return BooleanLatticeElement.bottom;
+
+if(other instanceof NotUIntStringLatticeElement)
+return BooleanLatticeElement.generateBooleanLatticeElement(string.equals(((NotUIntStringLatticeElement) other).getString()));
+
+if(other.containedIn(uIntStringTop))
+return BooleanLatticeElement.boolFalse;
+

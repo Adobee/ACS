@@ -1,0 +1,14 @@
+private Bug() {}
+
+private void init(){
+weak.add(Fight.getInstance());
+weak.add(Flying.getInstance());
+public static Bug getInstance() {
+if(instance == null){
+instance = new Bug();
+instance.init();
+}
+return instance;
+}
+}
+

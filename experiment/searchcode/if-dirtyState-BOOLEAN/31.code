@@ -1,0 +1,8 @@
+protected void feedback(final boolean show) {
+final DirtyState shownState = this.shownState;
+if (shownState != null) {
+switch (shownState) {
+Animation.Status _status = this.dirtyAnimation.getStatus();
+boolean _notEquals = (!Objects.equal(_status, Animation.Status.RUNNING));
+if (_notEquals) {
+

@@ -1,0 +1,8 @@
+private Comparable[] aux;
+private int[] pass; //记录自然有序子串的开始index
+private int natureNum; //记录当前循环下的子串的数目
+natureNum++;
+for (int i = 1; i < N; i++) {
+if (less(a[i], a[i - 1])) {
+pass[natureNum++] = i;
+

@@ -1,0 +1,7 @@
+public void AddRecord(ArrayList<FieldContentHandler> fieldContentArr)
+throws SQLException {
+String queryText = &quot;insert into &quot; + tableName + &quot;\n&quot; + &quot;(&quot;;
+public boolean ValueExists(ArrayList<FieldContentHandler> primaryKeyArr) throws SQLException {
+if (primaryKeyArr.size() == 0) return false;
+String queryText = &quot;select count(*) from &quot; + tableName + &quot;\n&quot;;
+

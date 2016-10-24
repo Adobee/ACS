@@ -1,0 +1,9 @@
+package com.mmakowski.citron.expression;
+
+import java.math.BigDecimal;
+
+public class DecimalNumber implements Value, Expression<DecimalNumber> {
+public boolean equals(Object o) {
+if (!(o instanceof DecimalNumber)) return false;
+return value.equals(((DecimalNumber) o).toBigDecimal());
+

@@ -1,0 +1,8 @@
+public Result eval(LogicContext context, Integer patientId, Map<String, Object> parameters) throws LogicException {
+if (parameters == null) {
+newResult.setResultDate(weightResult.getResultDate());
+return newResult;
+} else {
+double ounces = fPart * 16;
+int intOunces = (int) Math.round(org.openmrs.module.chirdlutil.util.Util.round(ounces, 0));
+

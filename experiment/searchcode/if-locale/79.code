@@ -1,0 +1,10 @@
+public static Locale currencyForLanguageTag(String tag) {
+if (StringUtils.isBlank(tag)) {
+return DEFAULT_LOCALE;
+}
+
+String[] localeTags = tag.split(&quot;-&quot;);
+
+if (localeTags.length >= 2) {
+return new Locale(localeTags[0], localeTags[1]);
+

@@ -1,0 +1,10 @@
+public void onBankClick(PlayerInteractEntityEvent e)
+{
+if ((e.getRightClicked() instanceof Player))
+{
+Player p = (Player)e.getRightClicked();
+if ((e.getCurrentItem().getItemMeta().hasDisplayName()) &amp;&amp; (e.getCurrentItem().getItemMeta().getDisplayName().equalsIgnoreCase(GREEN + &quot;Slow Horse&quot;)))
+{
+double pay = 5000.0D;
+if (this.plugin.econ.getBalance(p.getName()) >= pay)
+

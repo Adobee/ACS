@@ -1,0 +1,8 @@
+public static void addRow(HTable table, String email, String lastCommit,
+int numBugs, int numCommits, int consecCommits, String newBadges,
+String[] badges, String pushTime) {
+row.add(Bytes.toBytes(&quot;Info&quot;), Bytes.toBytes(&quot;newBadges&quot;),
+Bytes.toBytes(newBadges));
+if (badges != null) {
+for (int i = 0; i < badges.length; i++) {
+

@@ -1,0 +1,12 @@
+return value*(1 + rate*(Math.random() - 0.5));
+}
+
+public static double randValue(double min, double max){
+public static double capValue(double value, double min, double max){
+if(value < min) return min;
+else if(value > max) return max;
+else return value;
+}
+
+}
+

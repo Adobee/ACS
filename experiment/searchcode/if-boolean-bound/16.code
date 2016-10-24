@@ -1,0 +1,12 @@
+public UpperBoundCommand getUpperBound() {
+return upperBound;
+}
+
+@Override
+public boolean equals(Object o) {
+if (o == null || getClass() != o.getClass()) return false;
+
+ConstraintCommand that = (ConstraintCommand) o;
+
+if (lowerBound != null ? !lowerBound.equals(that.lowerBound) : that.lowerBound != null) return false;
+

@@ -1,0 +1,8 @@
+for (int i = 0; !order.isEmpty(); i++) orderArray[i] = order.pop();
+return orderArray;
+}
+
+private boolean hasOrder(int from, List<List<Integer>> adjs, BitSet visited, BitSet onStack, Deque<Integer> order) {
+if (visited.get(to) == false) {
+if (hasOrder(to, adjs, visited, onStack, order) == false) return false;
+

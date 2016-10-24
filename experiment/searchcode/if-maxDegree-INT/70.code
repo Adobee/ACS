@@ -1,0 +1,9 @@
+String word1 = mainDocWords.get(i).getValue();
+
+double maxDegree = 0;
+for (int j = 0; j < currentDocumentWordCount; j++) {
+String word2 = currentDocWords.get(j).getValue();
+double msF = membershipFunction(word1, word2);
+if (msF > maxDegree) {
+maxDegree = msF;
+

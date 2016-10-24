@@ -1,0 +1,7 @@
+public static QueryBuilder randomQueryBuilder(List<String> stringFields, List<String> numericFields, int numDocs, int depth) {
+assertTrue(&quot;Must supply at least one string field&quot;, stringFields.size() > 0);
+QueryBuilder q =  QueryBuilders.rangeQuery(randomField(fields));
+
+if (randomBoolean()) {
+((RangeQueryBuilder)q).from(randomIntBetween(0, numDocs / 2 - 1));
+

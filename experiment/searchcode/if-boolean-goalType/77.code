@@ -1,0 +1,7 @@
+Trigger<RavenBot>       m_pGiverTrigger;
+
+//true if a path to the item has been formulated
+boolean                 m_bFollowingPath;
+public boolean hasItemBeenStolen(){
+if (m_pGiverTrigger != null &amp;&amp; !m_pGiverTrigger.isActive() &amp;&amp; m_pOwner.hasLOSto(m_pGiverTrigger.pos())) {
+

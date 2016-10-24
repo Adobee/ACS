@@ -1,0 +1,9 @@
+public class Solution {
+public boolean isSameTree(TreeNode p, TreeNode q) {
+if (p == null &amp;&amp; q == null)
+return true;
+if (p.val != q.val)
+return false;
+boolean isLeftSame = isSameTree(p.left, q.left);
+if (!isLeftSame) {
+

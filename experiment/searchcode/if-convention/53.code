@@ -1,0 +1,5 @@
+public void testUndetectable() throws IOException {
+final String ftl = &quot;<#if true>${x?size}</#if>&quot;;
+assertEquals(getActualNamingConvention(ftl,
+Configuration.AUTO_DETECT_NAMING_CONVENTION), Configuration.AUTO_DETECT_NAMING_CONVENTION);
+

@@ -1,0 +1,8 @@
+private ProxyType proxyType = ProxyType.UNSPECIFIED;
+private boolean autodetect = false;
+private String ftpProxy;
+private String httpProxy;
+public Proxy(Map<String, ?> raw) {
+if (raw.containsKey(&quot;proxyType&quot;) &amp;&amp; raw.get(&quot;proxyType&quot;) != null) {
+setProxyType(ProxyType.valueOf((String) raw.get(&quot;proxyType&quot;)));
+

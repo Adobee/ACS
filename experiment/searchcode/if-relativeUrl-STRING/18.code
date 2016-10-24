@@ -1,0 +1,11 @@
+* @return
+*/
+public String convertToAbsoluteUrl(String relativeUrl) {
+// to prevent NPE
+if(relativeUrl == null) {
+return &quot;&quot;;
+}
+
+// If path is absolute, return it
+if (relativeUrl.startsWith(&quot;http&quot;)) {
+

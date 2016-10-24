@@ -1,0 +1,7 @@
+// TODO: Warning - this method won&#39;t work in the case the id fields are not set
+if (!(object instanceof WtrPlotMst)) {
+return false;
+}
+WtrPlotMst other = (WtrPlotMst) object;
+if ((this.plotSrno == null &amp;&amp; other.plotSrno != null) || (this.plotSrno != null &amp;&amp; !this.plotSrno.equals(other.plotSrno))) {
+

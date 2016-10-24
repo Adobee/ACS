@@ -1,0 +1,10 @@
+public class BigDecimalFormat implements Format<BigDecimal> {
+
+private int precision = -1;
+
+public BigDecimalFormat(int precision) {
+this.precision = precision;
+public BigDecimal parse(String string) throws Exception {
+BigDecimal result = new BigDecimal(string);
+if (precision != -1) {
+

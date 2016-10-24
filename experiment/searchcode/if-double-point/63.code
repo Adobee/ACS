@@ -1,0 +1,12 @@
+// TODO Eigentlich sollte Line von DoubleLine erben...
+public class DoubleLine {
+
+private DoublePoint p2;
+private DoublePoint p1;
+private DoublePoint A;
+
+public DoubleLine(DoublePoint p1, DoublePoint p2) {
+if (p1.x < p2.x) {
+this.p1 = p1;
+this.p2 = p2;
+

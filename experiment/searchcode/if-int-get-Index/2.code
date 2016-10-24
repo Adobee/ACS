@@ -1,0 +1,10 @@
+public static int getInt(Cursor c, int index){
+if (!c.isNull(index)){
+return c.getInt(index);
+}
+return 0;
+}
+
+public static int getInt(Cursor c, int index, int defaultValue){
+if (!c.isNull(index)){
+

@@ -1,0 +1,11 @@
+package legendary.utility;
+
+public class DoubleRange {
+
+double upperBound;
+double lowerBound;
+
+public DoubleRange(double upperBound, double lowerBound) {
+
+this.upperBound = upperBound;
+

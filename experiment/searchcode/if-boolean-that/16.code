@@ -1,0 +1,14 @@
+public final int compareTo(final BooleanValue that) {
+
+if (this.asBoolean() == that.asBoolean()) {
+return 0;
+}
+
+return this.asBoolean() ? 1 : -1;
+return this.asBoolean() ? 1 : 0;
+}
+
+@Override
+public final boolean equals(Object that) {
+if (that instanceof BooleanValue) {
+

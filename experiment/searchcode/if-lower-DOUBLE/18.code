@@ -1,0 +1,11 @@
+package com.pwngres.histogram;
+
+public class Range {
+
+public double lower;
+public double upper;
+
+public Range(double lower, double upper) {
+this.lower = lower;
+this.upper = upper;
+

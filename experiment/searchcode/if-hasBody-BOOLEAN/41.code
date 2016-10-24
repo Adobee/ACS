@@ -1,0 +1,17 @@
+this.ctx = ctx;
+setStatus(Status.OK);
+hasBody = false;
+}
+
+@Override
+protected boolean hasBody() {
+return hasBody;
+public void binary(byte[] chunk) {
+if (chunk == null) {
+end();
+return;
+}
+
+hasBody = true;
+// this call can come from other thread,
+

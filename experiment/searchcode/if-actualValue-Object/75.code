@@ -1,0 +1,10 @@
+public int doStartTag() throws JspException {
+init();
+Object actualValue =  evaluateActualValue();
+Object tovalue = getConvertValue(actualValue);
+//		String key = actualValue.toString();
+//		Object key = actualValue;
+if(scope.equals(scope_request))
+{
+Map datas = (Map)request.getAttribute(this.convertData);
+

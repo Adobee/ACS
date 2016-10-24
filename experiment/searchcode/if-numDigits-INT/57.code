@@ -1,0 +1,10 @@
+for (int testCase = 0; testCase < numTestCases; ++testCase) {
+int numDigits = Integer.parseInt(readLineQuietly(br));
+
+if (noSolutions.contains(numDigits)) {
+StringBuilder builder;
+int numberOfFives;
+switch (numDigits % 3) {
+case 0:
+builder = new StringBuilder(numDigits);
+

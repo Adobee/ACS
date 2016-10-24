@@ -1,0 +1,8 @@
+double ri = this.getGcm1().getNextRi();
+double xi = -1.0 * 1.0 * Math.log(this.getGcm2().getNextRi());
+if (ri <= this.getP()) {
+double avgk = -1 * this.getAvg() / 3;
+double sumlog = 0.0;
+for (int j = 0; j < 3; j++) {
+sumlog += Math.log(ri);
+

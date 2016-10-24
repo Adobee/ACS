@@ -1,0 +1,9 @@
+public class Quaterniond implements jvictor.vector.interfaces.Quaterniond<Quaterniond> {
+
+private static final double TOLERANCE = 0.000000000000001;
+public Quaterniond(Matrix4d m) {
+double tr = m.m00 + m.m11 + m.m22;
+double s;
+
+if (tr > TOLERANCE) {
+

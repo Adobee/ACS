@@ -1,0 +1,10 @@
+//while ((1 << pow2) < ((n - 1) / 5 + 1)) pow2++;
+int group = 1;
+long groupCount = 5;
+while (groupCount + 5 * (1 << group) < n) {
+group++;
+}
+if (n <= 5) {
+System.out.print(names[((int) (n - 1))]);
+return;
+

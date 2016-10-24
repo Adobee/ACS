@@ -1,0 +1,9 @@
+abstract public class LineSearch {
+
+Optimizable m_func;
+double m_istp; // current step size
+double m_ftol; // sufficient descent for function value
+final static double MAX_STEP = 1e32, MIN_STEP = 1e-32;
+
+public LineSearch(Optimizable func, double initStep, double ftol, double gtol, int maxStep) {
+

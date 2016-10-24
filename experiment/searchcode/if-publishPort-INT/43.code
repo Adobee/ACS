@@ -1,0 +1,12 @@
+new DynamicComponentCreationOutboundPort(this);
+dcco.publishPort();
+
+this.addPort(dcco);
+if(AbstractCVM.isDistributed)
+dcco.doConnection(&quot;request_generator_jvm_uri&quot;
+&quot;controlTOrep&quot; + appId, this);
+//rbs.put(appId, pcr);
+this.addPort(pcz);
+if (AbstractCVM.isDistributed) {
+pcz.publishPort() ;
+

@@ -1,0 +1,10 @@
+return !isFinished(event) &amp;&amp; event.getCurrentNFE() >= event.getMaxNFE();
+}
+
+public boolean isFinished(ProgressEvent event) {
+return event.getCurrentSeed() > event.getTotalSeeds();
+}
+
+public boolean isRunning(ProgressEvent event) {
+return !firstRun &amp;&amp; event.getCurrentNFE() > 0;
+

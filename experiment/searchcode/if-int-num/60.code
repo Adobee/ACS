@@ -1,0 +1,7 @@
+public class FindMinimumInRotatedSortedArray  {
+public int findMin(int[] num) {
+int l = 0;
+int r = num.length-1;
+int m = (l + r) / 2;
+while (l < r) {
+

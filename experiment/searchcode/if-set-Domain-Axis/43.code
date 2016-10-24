@@ -1,0 +1,10 @@
+return axisTitle;
+}
+
+public String getDomainCode() {
+if(xAxis.getDomain()!=null)
+domainCode = &quot;x.domain(&quot;+xAxis.getDomain()+&quot;);\n&quot;;
+domainCode = &quot;x.domain(d3.extent(data, function(d) { return d.x; }));\n&quot;;
+if(yAxis.getDomain()!=null)
+domainCode += &quot;y.domain(&quot;+yAxis.getDomain()+&quot;);\n&quot;;
+

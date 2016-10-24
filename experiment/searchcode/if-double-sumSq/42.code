@@ -1,0 +1,12 @@
+public static double sd(double[] d) {
+double sumsq = 0.;
+double sum  = 0;
+int n = 0;
+if (d != null) {
+for (int i = 0; i < d.length; i++) {
+public static double sd(double[][] dd) {
+double sumsq = 0.;
+double sum  = 0;
+int n = 0;
+if (dd != null) {
+

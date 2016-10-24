@@ -1,0 +1,13 @@
+public class BigIntegerArrayInputStream {
+
+private BigInteger[] data;
+private int pos;
+private int count;
+private int mark = 0;
+public boolean markSupported() {
+return true;
+}
+
+public void mark(int readAheadLimit) {
+mark = pos;
+

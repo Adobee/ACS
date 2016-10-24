@@ -1,0 +1,12 @@
+public void append(StringBuilder buffer, String fieldName, Object[] array, Boolean fullDetail) {
+appendFieldStart(buffer, fieldName);
+
+if (array == null) {
+appendInternal(buffer, fieldName, item, arrayContentDetail);
+}
+}
+buffer.append(arrayEnd);
+}
+
+protected void reflectionAppendArrayDetail(StringBuilder buffer, String fieldName, Object array) {
+

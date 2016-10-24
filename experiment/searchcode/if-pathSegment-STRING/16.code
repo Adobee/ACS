@@ -1,0 +1,10 @@
+public static ResourcePath parse(String pathInfo) {
+
+if (pathInfo.startsWith(&quot;/&quot;)) {
+pathInfo = pathInfo.substring(1);
+}
+
+String[] parts = pathInfo.split(&quot;/&quot;);
+if (parts.length == 0) {
+throw new IllegalArgumentException(&quot;Empty path&quot;);
+

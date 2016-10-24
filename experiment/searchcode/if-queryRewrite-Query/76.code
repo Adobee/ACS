@@ -1,0 +1,8 @@
+public class MarcQueryRewrite implements QueryRewrite
+{
+private String pauthor;
+private String psubject;
+private String tauthor;
+public SearchQuery termClause_old(String field, String term) throws StopwordException {
+if (isWorthless(stopList, term)) throw new StopwordException(term);
+

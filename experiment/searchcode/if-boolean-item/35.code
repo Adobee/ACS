@@ -1,0 +1,13 @@
+super(name, descripiton, when_effective);
+}
+
+@Override
+public boolean add(ExpenseItem item) {
+if (item instanceof DeductionItem)
+return super.add(item);
+return false;
+}
+
+@Override
+public boolean remove(ExpenseItem item) {
+

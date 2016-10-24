@@ -1,0 +1,8 @@
+LineOptimizer.ByGradient lineMaximizer;
+
+double initialStepSize = 1;
+double tolerance = 0.0001;
+double gradientTolerance = 0.001;
+public MyConjugateGradient(Optimizable.ByGradientValue optimizable, double initialStepSize) {
+this.optimizable = optimizable;
+

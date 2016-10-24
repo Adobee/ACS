@@ -1,0 +1,9 @@
+import java.util.concurrent.LinkedBlockingQueue;
+
+public class Handler {
+
+Queue<Message> messages = new LinkedBlockingQueue<Message>();
+public void removeMessages(int updateWhat) {
+for(Message message: messages) {
+if(message.what == updateWhat) {
+

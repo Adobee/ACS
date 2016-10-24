@@ -1,0 +1,15 @@
+Marker marker = ((LoggingEvent) event).getMarker();
+
+if (marker == null) {
+return onMismatch;
+}
+
+if (markerToMatch.contains(marker)) {
+public void setMarker(String markerStr) {
+if (markerStr != null) {
+markerToMatch = MarkerFactory.getMarker(markerStr);
+}
+}
+
+}
+

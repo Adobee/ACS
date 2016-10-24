@@ -1,0 +1,9 @@
+URISyntaxException, InstantiationException, IllegalAccessException,
+ClassNotFoundException {
+if (buffer.size() == 0)
+return docCount;
+docCount += autoCompClient.updateDocuments(buffer);
+buffer.clear();
+if (infoCallBack != null)
+infoCallBack.setInfo(docCount + &quot; term(s) indexed&quot;);
+

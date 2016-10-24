@@ -1,0 +1,12 @@
+* Projects the part without the file type suffix.
+*
+* @return basename of pathname
+*/
+public String basename()
+{
+final int suffixPos = name_.lastIndexOf(&#39;.&#39;);
+if (suffixPos == -1) {
+return name_;
+} else {
+return name_.substring(0, suffixPos);
+

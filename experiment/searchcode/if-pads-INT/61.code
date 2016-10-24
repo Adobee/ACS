@@ -1,0 +1,8 @@
+public boolean onTouch(Vector3d camPos , Vector3d ray){
+int i = getTapedPadNum(camPos,ray);
+if(!pads.get(i).isFlipping())pads.get(i).Rotate(180, 1);
+y=camPos.y + ray.y*multipliyer;
+Log.d(&quot;TEST&quot;, String.format(&quot;- x;y = %f;%f&quot;, x,y));
+for(int i=0;i<pads.size();i++){
+if(pads.get(i).isIntersect(x, y)){
+

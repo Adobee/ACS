@@ -1,0 +1,6 @@
+public ShardId selectShardIdForNewObject(Object obj) {
+if (obj instanceof Weather) {
+int shardId = 1;
+String date = ((Weather) obj).getDATE();
+char firstchar = date.charAt(6);
+

@@ -1,0 +1,10 @@
+public Progress( IProgressMonitor monitor, int nsteps ) {
+this( monitor, nsteps, 100 );
+}
+
+/**
+* New instance with specified total steps
+* @param totsteps
+*/
+public Progress( IProgressMonitor monitor, int nsteps, int totsteps ) {
+

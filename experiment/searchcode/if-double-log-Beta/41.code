@@ -1,0 +1,11 @@
+* Computes the natural logarithm of the beta function.
+*/
+public static double logBeta(double w, double z) {
+return lgamma(w) + lgamma(z) - lgamma(w + z);
+public static double beta(double w, double z) {
+return Math.exp(logBeta(w, z));
+}
+
+/**
+* Computes the incomplete beta function.
+

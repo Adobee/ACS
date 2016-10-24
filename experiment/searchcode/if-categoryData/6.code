@@ -1,0 +1,10 @@
+public static Category fromData(CategoryData categoryData) {
+if(categoryData == null) {
+return null;
+}
+Category category = new Category();
+category.setCategoryName(categoryData.getName());
+
+if(categoryData.getFatherId() != null) {
+Category fatherCategory = new Category();
+

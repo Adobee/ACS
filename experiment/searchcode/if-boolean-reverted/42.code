@@ -1,0 +1,17 @@
+protected int id;
+
+protected boolean done=false;
+protected boolean reverted=false;
+
+private static List<Action> actions = new ArrayList<>();
+public boolean revert(){
+if(!reverted &amp;&amp; done){
+undo();
+reverted=true;
+return true;
+}
+return false;
+}
+
+}
+

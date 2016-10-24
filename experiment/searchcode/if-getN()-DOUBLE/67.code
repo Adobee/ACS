@@ -1,0 +1,10 @@
+public TrapMethod(double a, double b,double eps) {
+this.a = a;
+this.b = b;
+this.eps = eps;
+}
+public boolean getN(double h){
+double res = Function.func(a)+Function.func(b);
+for(int i = 1;i<100;i++){
+if(getN((b - a) / i)) {
+

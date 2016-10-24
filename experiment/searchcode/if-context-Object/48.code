@@ -1,0 +1,7 @@
+public static Object getObjectFromSession(String objectName) {
+FacesContext context = FacesContext.getCurrentInstance();
+if(context==null){
+return null;
+}
+return context.getExternalContext().getSessionMap().get(objectName);
+

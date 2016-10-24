@@ -1,0 +1,11 @@
+int count = 0;
+long lcm = 1L;
+for(int i=0; i<S.length; i++){
+if(x % S[i] ==0) {
+count++;
+long div = gcd(lcm, S[i]);
+lcm = div * (lcm / div) * (S[i] / div);
+}
+}
+if(lcm == x) return &quot;Possible&quot;;
+

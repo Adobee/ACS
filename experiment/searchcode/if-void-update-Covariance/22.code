@@ -1,0 +1,12 @@
+yoKalmanFilter = new YoKalmanFilter(name + &quot;YoKalman&quot;, registry);
+updateYoKalmanFilterConfiguration(controlDT);
+}
+
+private void updateYoKalmanFilterConfiguration(double controlDT)
+yoKalmanFilter.configure(modelStateEvolutionF, modelInputInfluenceG, modelOutputH);
+}
+
+private void populateMatrices()
+{
+processCovariance = new DenseMatrix64F(nStates, nStates);
+

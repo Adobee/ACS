@@ -1,0 +1,10 @@
+private ApplicationState applicationState;
+private LocalState localState;
+private Project project;
+
+
+@Transient
+public String getName() {
+if (this.localState != null) {
+return this.localState.getName();
+

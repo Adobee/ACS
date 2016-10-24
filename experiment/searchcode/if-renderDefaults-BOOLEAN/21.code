@@ -1,0 +1,16 @@
+protected IConfigurableOption[] options;
+
+private static final String OPTIONS_CONFIG_FILE = &quot;RenderDefaults.cfg&quot;;
+
+public void setInitParameters( Map params )
+public void setLocale( Locale locale )
+{
+if ( this.locale != locale )
+{
+this.locale = locale;
+initOptions( );
+}
+}
+
+public IConfigurableOptionObserver createOptionObserver( )
+

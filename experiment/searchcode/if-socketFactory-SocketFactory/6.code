@@ -1,0 +1,10 @@
+import javax.net.SocketFactory;
+
+@Singleton
+public class GSocketProvider implements Provider<Socket> {
+
+private final SocketFactory socketFactory;
+private Socket existingConnection = null;
+
+@Inject GSocketProvider(SocketFactory socketFactory) {
+

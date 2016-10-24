@@ -1,0 +1,9 @@
+LocalDate today = LocalDate.now();
+
+// we might have to move on to next year
+LocalDate thisYearBirthDay = LocalDate.of(today.getYear(), birthday.getMonth(), birthday.getDayOfMonth());
+int birthdayNoNextYear = nextYearBirthDay.getDayOfYear();
+
+if(thisYearBirthDay.isAfter(today)){
+waitDays = (int)today.until(thisYearBirthDay, ChronoUnit.DAYS);
+

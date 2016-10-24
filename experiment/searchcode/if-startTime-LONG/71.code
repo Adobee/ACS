@@ -1,0 +1,9 @@
+public long findGap(long startTime, long endTime, int length) {
+if (endTime <= startTime)
+return -1;
+
+for (long left : processed.keySet()) {
+long p = startTime;
+for (long time : processed.keySet()) {
+if (!(time < p &amp;&amp; time + operations.get(processed.get(time)) < p)
+

@@ -1,0 +1,9 @@
+public boolean operate(EventData data, boolean left, IDataProvider<Boolean> right) throws BailException
+{
+if (!left) return false;
+public boolean operate(EventData data, boolean left, IDataProvider<Boolean> right) throws BailException
+{
+if (left) return true;
+Boolean b = right.get(data);
+if (b == null) return false;
+

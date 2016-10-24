@@ -1,0 +1,10 @@
+package com.metamedia.persistentmodel;
+
+public class PersistentSQLiteObject extends PersistentObject
+@Override
+protected void setHasChanges(boolean hasChanges)
+{
+super.setHasChanges(hasChanges);
+
+if (persistentStore != null &amp;&amp; hasChanges == true)
+

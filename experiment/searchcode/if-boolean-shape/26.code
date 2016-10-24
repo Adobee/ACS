@@ -1,0 +1,11 @@
+tryCreateShape();
+}
+
+public boolean tryCreateShape(){
+int shapeId = (int)(Math.random()*RootShape.SHAPE_TYPE_NUMBER);
+return !currentShape.detectCollisionWithBlocksFrame(blocksFrame);
+}
+
+public boolean tryMoveShapeDown(){
+if(currentShape.detectShapeStopMoveDown(blocksFrame)){
+

@@ -1,0 +1,10 @@
+public NamedLocale(String name, Locale locale) {
+this.name = name;
+this.locale = locale;
+
+if (name == null || locale == null)
+@Override
+public boolean equals(Object obj) {
+if (obj instanceof NamedLocale) {
+NamedLocale other = (NamedLocale) obj;
+

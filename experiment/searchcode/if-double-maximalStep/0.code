@@ -1,0 +1,13 @@
+public class RungeKutta implements Integrator {
+private final double maximalStep;
+
+public RungeKutta(double maximalStep) {
+this.maximalStep = maximalStep;
+double dt = t1 - t;
+
+if (dt > maximalStep) {
+dt = maximalStep;
+}
+
+double[] k1 = system.getDerivatives(t, x);
+

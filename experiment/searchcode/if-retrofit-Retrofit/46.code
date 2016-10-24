@@ -1,0 +1,10 @@
+public static synchronized RetrofitServiceImpl getInstance() {
+if (mInstances == null) {
+mInstances = new RetrofitServiceImpl();
+mRetrofitService = retrofit.create(RetrofitService.class);
+return mRetrofitService;
+}
+
+public RetrofitService getRetrofitService() {
+if(mRetrofitService == null) {
+

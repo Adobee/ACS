@@ -1,0 +1,10 @@
+protected abstract T newObject( Node node );
+
+private T newObject( Relationship relationship )
+{
+return newObject( relationship.getOtherNode( this.node ) );
+T existingObject = null;
+if ( existingRelationship != null )
+{
+existingObject = newObject( existingRelationship );
+

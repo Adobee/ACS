@@ -1,0 +1,8 @@
+private PartialSynchronizedLogger() {
+}
+
+public static PartialSynchronizedLogger getLogger() {
+if (instance == null) {
+synchronized (PartialSynchronizedLogger.class) {
+if (instance == null) {
+

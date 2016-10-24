@@ -1,0 +1,9 @@
+code = getValueAsString(value, targetClass);
+}
+
+private String getValueAsString(Object value, Class<?> targetClass) {
+if (value instanceof Class) {
+return getValueAsString((Class<?>) value);
+}
+if (value instanceof CtClass) {
+

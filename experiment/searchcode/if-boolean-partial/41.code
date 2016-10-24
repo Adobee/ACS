@@ -1,0 +1,14 @@
+private PartialResult partial;
+
+public void init() {
+partial = null;
+}
+
+public boolean iterate(DoubleWritable value) {
+return partial;
+}
+
+public boolean merge(PartialResult other) {
+if (other == null) {
+return true;
+

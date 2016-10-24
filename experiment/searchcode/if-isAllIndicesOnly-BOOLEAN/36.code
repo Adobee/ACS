@@ -1,0 +1,5 @@
+clusterStateRequest.local(request.paramAsBoolean(&quot;local&quot;, clusterStateRequest.local()));
+clusterStateRequest.masterNodeTimeout(request.paramAsTime(&quot;master_timeout&quot;, clusterStateRequest.masterNodeTimeout()));
+boolean isAllIndicesOnly = indices.length == 1 &amp;&amp; &quot;_all&quot;.equals(indices[0]);
+if (!isAllIndicesOnly) {
+

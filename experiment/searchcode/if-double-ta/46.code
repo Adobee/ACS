@@ -1,0 +1,12 @@
+this.takeProfitRate = pr;
+}
+
+protected double orderMarketPrice(TaSide dir) {
+if (dir.isUp()) {
+return this.quotesMonitor.getRate(this.symbol).getAsk();
+//				&quot; is exceed the maxOrderRisk:&quot;,
+//				TaLang::DoubleTo(this.maxOrderRisk)));
+return false;
+}
+if (oA.getInternalOrder().getRisk() < this.minOrderRisk) {
+

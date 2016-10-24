@@ -1,0 +1,8 @@
+for (int i = 0; i < decisions.size(); i++) {
+Decision decision = decisions.get(i);
+if(!this.decisions.containsKey(decision.getLocation())) {
+this.decisions.put(decision.getLocation(), new HashSet<Decision>());
+}
+if(!this.decisions.get(decision.getLocation()).contains(decision)) {
+this.decisions.get(decision.getLocation()).add(decision);
+

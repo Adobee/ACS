@@ -1,0 +1,6 @@
+public List getAccAuthrization(AccAuthAction accAuthAction, HttpServletRequest httpServletRequest) throws ServiceLocatorException {
+ArrayList<AccauthVTO> searchklist = new ArrayList<AccauthVTO>();
+resultSet = statement.executeQuery(queryString);
+while (resultSet.next()) {
+AccauthVTO accauthVTO = new AccauthVTO();
+

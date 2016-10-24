@@ -1,0 +1,9 @@
+private void arvore1Aux(double comprimento, double largura, double xAnterior, double yAnterior,
+double dir) {
+if(largura > 2){
+private void arvores(double comprimento, double largura, double prevX,
+double prevY, double direction) {
+this.posX = prevX;
+this.posY = prevY;
+this.direction = direction;
+

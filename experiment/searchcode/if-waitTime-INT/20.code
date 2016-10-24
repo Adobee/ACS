@@ -1,0 +1,18 @@
+public int maxWait(int[] arrival, int[] service) {
+int maximumWaitTime = 0;
+int waitTime = 0;
+int currentTime = 0;
+int i = 0;
+while(i < arrival.length) {
+currentTime += service[i];
+}
+
+if(waitTime > maximumWaitTime) {
+maximumWaitTime = waitTime;
+}
+i++;
+}
+return maximumWaitTime;
+}
+}
+

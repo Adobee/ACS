@@ -1,0 +1,11 @@
+public final static AttributeType LONG_TYPE     = new AttributeType();
+
+public static AttributeType getType(String type) throws ParseException {
+
+if (type == null)
+type = type.toLowerCase();
+
+if (type.equals(&quot;string&quot;)) {
+return STRING_TYPE;
+} else if (type.equals(&quot;int&quot;)) {
+

@@ -1,0 +1,9 @@
+public static class NameKey extends
+StringKey<com.google.gwtorm.client.Key<?>> implements Comparable<NameKey> {
+private static final long serialVersionUID = 1L;
+
+@Column(id = 1)
+protected String name;
+
+protected NameKey() {
+

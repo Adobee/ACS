@@ -1,0 +1,9 @@
+public booleanArray() { }
+public booleanArray(booleanArray a) {
+if(a == null) throw new PreconditionViolationException.Impl(&quot;Invalid precondition while manipulating the array&quot;, null);
+this.array = a.toArray();
+this.n = array.length;
+}
+public booleanArray(boolean[] array) {
+if(array == null) throw new PreconditionViolationException.Impl(&quot;Invalid precondition while manipulating the array&quot;, null);
+

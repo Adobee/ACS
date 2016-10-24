@@ -1,0 +1,12 @@
+public boolean placeOrder(Order order) throws BOException {
+try {
+int result = orderDAO.create(order);
+if(result == 0){
+public boolean deleteOrder(int orderId) throws BOException {
+try {
+int result = orderDAO.delete(orderId);
+if(result == 0){
+return false;
+}
+} catch (SQLException e) {
+

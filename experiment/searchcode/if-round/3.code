@@ -1,0 +1,7 @@
+package checkout;
+
+public class RoundEntity implements PersistentEntity<Integer, Integer> {
+Round round = Round.findFirst(&quot;number = ?&quot;, roundNumber);
+if (round == null) {
+round = new Round(roundNumber, pointsAvailable);
+

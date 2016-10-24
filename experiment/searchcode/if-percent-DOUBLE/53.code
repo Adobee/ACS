@@ -1,0 +1,9 @@
+public static double calculateSkillResurrectRestorePercent(double baseRestorePercent, L2Character caster)
+{
+if(baseRestorePercent == 0 || baseRestorePercent == 100)
+{
+return baseRestorePercent;
+}
+
+double restorePercent = baseRestorePercent * BaseStats.WIT.calcBonus(caster);
+

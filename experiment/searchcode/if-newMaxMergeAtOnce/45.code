@@ -1,0 +1,7 @@
+* <li><code>index.merge.policy.expunge_deletes_allowed</code>:
+*
+*     When expungeDeletes is called, we only merge away a segment if its delete
+// max merge at once should be at least 2
+if (newMaxMergeAtOnce <= 1) {
+newMaxMergeAtOnce = 2;
+

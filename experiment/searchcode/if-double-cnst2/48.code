@@ -1,0 +1,10 @@
+dest.writeString((String) val);
+}
+break;
+case AE_CNST2_W:
+if (val instanceof Long) {
+idx = dest.addIfNew(CONSTANT_FLOAT, cnst);
+}
+} else if (cnst instanceof Double) {
+if (IMPLICIT[AE_I_D0].equals(cnst)) {
+

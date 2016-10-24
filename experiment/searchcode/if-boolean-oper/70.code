@@ -1,0 +1,10 @@
+DeptOperShow deptOperShowForExcelTemp= (DeptOperShow)BeanUtils.cloneBean(deptOperShowUnit);
+DeptOperShow deptOperShowForExcelTemp2=new DeptOperShow();
+if((&quot;0&quot;).equals(deptOperShowForExcelTemp.getType())){
+return false;
+}
+return true;
+}
+private boolean submitOperPreCheck(Oper operPara) {
+if (StringUtils.isEmpty(operPara.getId())) {
+

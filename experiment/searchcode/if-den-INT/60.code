@@ -1,0 +1,17 @@
+public Rational(int n) {
+this(n, 1);
+}
+
+public Rational(int x, int y) {
+if(y == 0) throw new ErrorException(&quot;Division by 0&quot;);
+public String toString() {
+if(den == 1) {
+return &quot;&quot; + num;
+}
+else {
+return num +&quot;/&quot; + den;
+}
+}
+
+private int  gcd(int x, int y) {
+

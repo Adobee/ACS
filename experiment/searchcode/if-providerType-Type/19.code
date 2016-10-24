@@ -1,0 +1,9 @@
+package gov.medicaid.screening.dao.impl;
+
+import gov.medicaid.entities.ProviderType;
+import gov.medicaid.screening.services.ConfigurationException;
+public ProviderType getProviderType() {
+if (providerType == null) {
+providerType = new ProviderType();
+providerType.setId(getProviderTypeId());
+

@@ -1,0 +1,16 @@
+Test(double a,double b)
+{
+x=a;
+y=b;
+}
+void dist(Test c1,  Test c2)
+{
+double s;
+s= Math.sqrt((c2.x-c1.x)*(c2.x-c1.x)+(c2.y-c1.y)*(c2.y-c1.y));
+void slop(Test c1,Test c2)
+{
+
+double d1;
+if((c2.x-c1.x)==0)
+System.out.println(&quot;Undefined&quot;);
+

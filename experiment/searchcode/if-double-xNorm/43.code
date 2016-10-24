@@ -1,0 +1,9 @@
+double[] yy = null;
+double[] xnorm = null;
+double[] gnorm = null;
+double[] beta = null;
+step = new double[1];
+xnorm = new double[1];
+gnorm = new double[1];
+beta = new double[1];
+

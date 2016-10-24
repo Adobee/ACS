@@ -1,0 +1,11 @@
+Result calculate(int input[]) {
+
+int startIdx = 0;
+int endIdx = 0;
+int sum = input[startIdx];
+Result result = new Result(sum, startIdx, endIdx);
+for (int idx = 1; idx < input.length; idx++) {
+int tmpSum = sum + input[idx];
+if (tmpSum >= input[idx]) {
+sum = tmpSum;
+

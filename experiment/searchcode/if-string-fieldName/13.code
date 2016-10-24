@@ -1,0 +1,11 @@
+* @since 2016/1/19
+*/
+public class QueryField {
+
+private String table;
+private String fieldname;
+
+public QueryField(String fieldname) {
+int i = fieldname.indexOf(&#39;.&#39;);
+if (i > 0) {
+

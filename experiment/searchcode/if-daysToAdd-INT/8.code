@@ -1,0 +1,8 @@
+* The method takes a Double as argument for the daysToAdd, this will be converted to an int using Double.intValue() before adding it to the date.
+Calendar cal = Calendar.getInstance();
+cal.setTime(date);
+cal.add(Calendar.DATE, daysToAdd.intValue());
+return cal.getTime();
+}
+}
+

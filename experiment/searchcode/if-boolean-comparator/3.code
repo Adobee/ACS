@@ -1,0 +1,10 @@
+private T value;
+private Comparator<T> comparator;
+
+private boolean equals(T a, T b){
+// use comparator if present
+if (comparator!=null)
+return comparator.compare(a,b)==0;
+
+// compare using equals
+

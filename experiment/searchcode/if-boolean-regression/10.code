@@ -1,0 +1,10 @@
+public class LinearRegressionProcessor implements TimeSeriesProcessor<double[], Double, DoubleTimeSeries>{
+
+private LinearRegression reg;
+private boolean regdefined;
+Matrix x = new Matrix(new double[][]{ArrayUtils.longToDouble(series.getTimes())}).transpose();
+if(!regdefined)
+{
+this.reg = new LinearRegression();
+Matrix y = new Matrix(new double[][]{series.getData()}).transpose();
+

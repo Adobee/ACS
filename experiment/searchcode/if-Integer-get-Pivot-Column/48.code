@@ -1,0 +1,12 @@
+this._pivotTableDefinition = PivotTableDefinitionDocument.Factory.parse(in).getPivotTableDefinition();
+
+long cacheId = getCacheId();
+for (PivotCache e : pivotCaches)
+if (e.getCacheId() == cacheId) {
+return this._pivotTableDefinition.getCacheId();
+}
+
+public List<PivotField> getColumnFields()
+{
+CTColFields colFields = this._pivotTableDefinition.getColFields();
+

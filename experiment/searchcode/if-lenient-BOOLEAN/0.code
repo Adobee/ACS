@@ -1,0 +1,11 @@
+return new PartialChars(lenientChars);
+}
+
+public abstract boolean isLenient(int c);
+
+protected static class AllChars extends LenientChars{
+protected final boolean lenientAll;
+
+public AllChars(boolean lenientAll){
+this.lenientAll = lenientAll;
+

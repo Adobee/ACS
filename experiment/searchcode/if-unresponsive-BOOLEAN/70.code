@@ -1,0 +1,6 @@
+// if device doesn&#39;t connect in alloted time it&#39;s unresponsive
+if (timer.hasConnected == false) {
+System.out.println(&quot;Unknown host &quot; + e.getMessage());
+// if unresponsive
+this.deviceManager.reportDeviceStatus(this.deviceToMonitor, DeviceManager.DEVICE_STATUS_UNRESPONSIVE);
+

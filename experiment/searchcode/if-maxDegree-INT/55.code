@@ -1,0 +1,11 @@
+* @author Barre Dijkstra
+*/
+public class ReferenceEvaluator implements Evaluator {
+private final int maxDegree;
+private final Predicate<Integer> degreePredicate;
+public ReferenceEvaluator(Label label) {
+this(0, null, label);
+}
+
+public ReferenceEvaluator(int maxDegree, Label label) {
+

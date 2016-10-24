@@ -1,0 +1,7 @@
+public Percolation(final int N) {
+if (N <= 0) {
+throw new IllegalArgumentException(String.format(&quot;Number of sites &#39;%s&#39; should be greater then 0&quot;, N));
+int realIndex = getRealIndex(row, column);
+open[realIndex] = true;
+//check if there is left neighbour
+

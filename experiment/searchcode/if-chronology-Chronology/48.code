@@ -1,0 +1,7 @@
+public static EthiopicChronology getInstance(DateTimeZone dateTimeZone, int i) {
+EthiopicChronology ethiopicChronology;
+if (dateTimeZone == null) {
+EthiopicChronology[] ethiopicChronologyArr = (EthiopicChronology[]) cCache.get(dateTimeZone);
+if (ethiopicChronologyArr == null) {
+ethiopicChronologyArr = new EthiopicChronology[7];
+

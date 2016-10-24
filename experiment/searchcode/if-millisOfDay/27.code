@@ -1,0 +1,9 @@
+int millisOfDay = (int) newValue;
+
+if (preference.equals(getMorningPreference())) {
+if (millisOfDay >= getAfternoonPreference().getMillisOfDay()) {
+return true;
+}
+} else if (preference.equals(getAfternoonPreference())) {
+if (millisOfDay <= getMorningPreference().getMillisOfDay()) {
+

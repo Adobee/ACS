@@ -1,0 +1,9 @@
+Set<String> threadIgnoredFields = ignoredFields.get();
+if (threadIgnoredFields == null) {
+ignoredFields.set(threadIgnoredFields = new HashSet<>());
+}
+threadIgnoredFields.add(fieldToIgnore);
+}
+
+public static boolean isIgnored(String field) {
+

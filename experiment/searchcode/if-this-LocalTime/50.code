@@ -1,0 +1,10 @@
+public Clock(Event position) {
+this.localTime = 0;
+this.position = position;
+}
+
+public double time() { return localTime; }
+Event offset = newPosition.minus(position);
+if (offset.t() < 0) { System.err.printf(&quot;dt negative %f&quot;, offset.t()); }
+localTime += offset.timeElapsed();
+

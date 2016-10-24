@@ -1,0 +1,9 @@
+package parse;
+
+import java.text.CharacterIterator;
+import java.text.StringCharacterIterator;
+CharacterIterator chars = new StringCharacterIterator(json);
+
+if (json.charAt(0) != &#39;{&#39;) {
+throw new ParseException(&quot;Invalid json string, the first char of json must be &#39;{&#39;&quot;);
+

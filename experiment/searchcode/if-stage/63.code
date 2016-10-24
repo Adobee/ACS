@@ -1,0 +1,11 @@
+abstract public void initEvents();
+
+protected void showDialog(Form form, boolean wait) {
+if (form.getStage().getOwner() == null) {
+form.getStage().initOwner( getMainStage().getScene().getWindow() );
+}
+if (wait) form.getStage().showAndWait();
+else form.getStage().show();
+}
+}
+

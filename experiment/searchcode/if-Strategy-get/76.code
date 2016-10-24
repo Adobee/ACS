@@ -1,0 +1,11 @@
+public class StrategyFactory {
+
+public static SpamDetectionStrategy getStrategy(String strategyName)
+{
+if (&quot;fifty&quot;.equals(strategyName))
+{
+return new FiftyMessagePerMinuteStrategy();
+}
+else
+if (&quot;multiuser&quot;.equals(strategyName))
+

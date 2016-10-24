@@ -1,0 +1,10 @@
+this.thermalLoad = thermalLoad;
+}
+
+@Override
+public void process(double time) {
+double U = batteryProcess.getU();
+if (U < -0.1 * batteryProcess.uNominal) { destroy() ;return; }
+if (U > getUMax()) { destroy(); return; }
+if (SaveConfig.instance.batteryAging) {
+

@@ -1,0 +1,8 @@
+TextLayout layout;
+float drawPosX;
+float drawPosY;
+int initialIndex;
+int containerIndex;
+public LayoutContainer(TextLayout layout, float drawPosX, float drawPosY, int initialIndex, int containerIndex){
+this.layout=layout;
+

@@ -1,0 +1,12 @@
+for(int T=0;;T++){
+R r0 = robot[0], r1 = robot[1];
+if(r0.t==T&amp;&amp;r1.t==T){
+if(r0.event == WIN &amp;&amp; r1.event == WIN){
+r1.putPrepare();
+}
+}
+}
+//double win check
+if(r0.event == WIN &amp;&amp; r1.event == WIN){
+winA = r0.lastCard.isStrong(r1.lastCard);
+

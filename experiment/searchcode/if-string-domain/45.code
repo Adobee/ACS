@@ -1,0 +1,13 @@
+private int domainId;
+
+private String domainName;
+
+/**
+*
+* @param domainId
+*            -
+* @param domainName
+*            -
+*/
+private DomainTypes(int pDomainId, String pDomainName) {
+

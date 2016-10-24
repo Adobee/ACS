@@ -1,0 +1,14 @@
+void setLangNumberFormat(String lang, NumberFormat format)
+{
+langTable.put(lang, format);
+}
+
+public NumberFormat getFormat(String lang, String letterValue)
+int i = lang.lastIndexOf(&#39;-&#39;);
+if (i > 1) {
+return getFormat(lang.substring(0, i), letterValue);
+}
+return defaultFormat;
+}
+}
+

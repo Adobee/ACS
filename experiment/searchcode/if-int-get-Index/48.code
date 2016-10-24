@@ -1,0 +1,10 @@
+private boolean isValid(int rowIndex, int columnIndex, int[] state) {
+for (int i = 0; i < rowIndex; i++) {
+if (state[i] == columnIndex || Math.abs(rowIndex - i) == Math.abs(columnIndex - state[i])) {
+return false;
+}
+}
+return true;
+}
+private int getSolutions(int n, int solutions, int rowIndex, int[] state) {
+

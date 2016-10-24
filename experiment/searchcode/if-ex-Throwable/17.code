@@ -1,0 +1,9 @@
+final static private Logger errorlog = Logger.getLogger(&quot;ERRORLOG&quot;);
+
+public void handleThrowable(Thread thread, Throwable throwable)
+{
+if (throwable instanceof ShastaException)
+{
+ShastaException ex = (ShastaException)throwable;
+log.error(&quot;!!! ShastaException: &quot; + ex.getMessage());
+

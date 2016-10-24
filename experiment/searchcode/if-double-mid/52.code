@@ -1,0 +1,8 @@
+public double helper(int[] A, int[] B, int startA, int endA, int startB, int endB, int k){
+if(startA > endA)
+return (double) B[startB + k];
+if(startB > endB)
+return (double) A[startA + k];
+if(k == 0)
+return (A[startA] <= B[startB]) ? (double)A[startA] : (double)B[startB];
+

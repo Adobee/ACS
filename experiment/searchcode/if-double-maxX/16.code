@@ -1,0 +1,10 @@
+package angrycars.engine;
+
+public class Rectangle {
+public double minX;
+public double maxX;
+public void expand(Rectangle other) {
+if (other.minX < minX) minX = other.minX;
+if (other.maxX > maxX) maxX = other.maxX;
+if (other.minY < minY) minY = other.minY;
+

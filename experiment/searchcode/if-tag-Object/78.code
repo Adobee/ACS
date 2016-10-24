@@ -1,0 +1,10 @@
+public TagWord findTagWord(String tagWord) {
+return tagWordRepository.findObjectByTagWord(tagWord);
+}
+
+public TagTime tagTimeFactory(String tag,
+Tag creatingTag = findTag(tag);
+if(creatingTag == null) {
+creatingTag = new Tag(tag);
+tagRepository.save(creatingTag);
+

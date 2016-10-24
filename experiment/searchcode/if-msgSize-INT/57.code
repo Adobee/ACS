@@ -1,0 +1,9 @@
+public class Receiver extends Ajil
+{
+private int multicastTraffic = 0;
+private int newMulticastTraffic = 0;   // new since last report
+public void receiveMulticast(NodeId src, int msgSize)
+{
+if (!src.equals(node.id)) {
+multicastTraffic += msgSize;
+

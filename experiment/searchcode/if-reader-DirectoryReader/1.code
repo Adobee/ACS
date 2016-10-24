@@ -1,0 +1,6 @@
+public IndexReader getObject() throws Exception {
+if(directoryReader == null){
+directoryReader = DirectoryReader.open(directory);
+}else{
+directoryReader = DirectoryReader.openIfChanged(directoryReader);
+

@@ -1,0 +1,10 @@
+* search the pageInSwap and return if can find this page.
+*/
+public boolean isInSwap(int pid, int vpn) {
+if(!IPT.containsKey(new IPTKey(pid, vpn)))
+* called within handlePageFault.
+*
+*/
+public TranslationEntry pageInIPT(int pid, int vpn) {
+if(!IPT.containsKey(new IPTKey(pid, vpn)))
+

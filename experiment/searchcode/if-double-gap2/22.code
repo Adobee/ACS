@@ -1,0 +1,13 @@
+int gap2 = 1;
+int gap3 = 1;
+
+int[] twos;
+int[] threes;
+
+Double d = 0.0;
+gapCount = 0;
+
+while(gap2 < size)
+{
+gapValues += Integer.toString(gap2) + &quot;,&quot;;
+

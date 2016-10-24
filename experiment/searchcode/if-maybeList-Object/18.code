@@ -1,0 +1,8 @@
+Object object = getFieldValue(path, Object.class);
+if (object instanceof byte[]) {
+return (byte[]) object;
+} else if (object instanceof String) {
+Map<String, Object> map = (Map<String, Object>) context;
+context = map.get(pathElement);
+} else if (context instanceof List) {
+

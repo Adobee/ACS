@@ -1,0 +1,8 @@
+public static final Interval emptyInterval = new Interval(true,
+Double.POSITIVE_INFINITY, Double.NEGATIVE_INFINITY);
+public static Interval everything = new Interval(Double.NEGATIVE_INFINITY, Double.POSITIVE_INFINITY);
+public IntervalLocation getIntervalLocation(double x) {
+if (x < low)
+return IntervalLocation.LEFT_OF;
+else if (x > high)
+

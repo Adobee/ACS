@@ -1,0 +1,11 @@
+private static final long serialVersionUID = 1L;
+double x1, y1, x2, y2;
+Node node;
+
+public Rectangle(double x1, double x2, double y1, double y2){
+|| (x1 < r.x2 &amp;&amp; r.x2 <= x2) &amp;&amp; ( y1 < r.y2 &amp;&amp; r.y2 <= y2);
+}
+
+double area(){
+return Math.abs(x2-x1)*Math.abs(y2-y1);
+

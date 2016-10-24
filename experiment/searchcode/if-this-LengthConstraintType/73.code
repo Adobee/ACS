@@ -1,0 +1,14 @@
+return false;
+}
+LengthConstraintType that = (LengthConstraintType) obj;
+if (!this.name.equals(that.toString())) {
+return LengthConstraintType.RANGE;
+}
+else if (this.equals(LengthConstraintType.FIXED)) {
+return LengthConstraintType.FIXED;
+}
+return null;
+}
+
+}
+

@@ -1,0 +1,8 @@
+protected Class<?> clazz;
+
+/** {@link Object}クラスも反復する場合は {@literal true} */
+protected final boolean includeObject;
+public boolean hasNext() {
+if (!includeObject &amp;&amp; clazz == Object.class) {
+return false;
+

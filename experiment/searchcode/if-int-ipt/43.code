@@ -1,0 +1,8 @@
+for (int k=i;k>-1;k--){
+if(Integer.parseInt(&quot;&quot;+ipt.charAt(k))>Integer.parseInt(&quot;&quot;+ipt.charAt(num-k-1))){
+for (int l=num-1;l>-1;l--){
+opt_r = opt_r + opt_l.charAt(l);
+}
+break;
+} else if (Integer.parseInt(&quot;&quot;+ipt.charAt(k))<Integer.parseInt(&quot;&quot;+ipt.charAt(num-k-1))){
+

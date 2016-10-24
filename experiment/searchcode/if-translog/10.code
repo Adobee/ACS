@@ -1,0 +1,7 @@
+super.setUp();
+// if a previous test failed we clean up things here
+translogDir = createTempDir();
+translog.close();
+if (translog.currentId() > 1) {
+// ensure all snapshots etc are closed if this fails something was not closed
+

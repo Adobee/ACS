@@ -1,0 +1,9 @@
+} else if (inst instanceof JumpInstruction) {
+writeJump((JumpInstruction) inst);
+
+} else if (inst instanceof ReturnInstruction) {
+stream.writeChar(((CharacterValue) value).getValue());
+
+} else if (value instanceof BooleanValue) {
+stream.writeBoolean(((BooleanValue) value).getValue());
+

@@ -1,0 +1,6 @@
+public static RowKey getEndRowKeyOfPrefix(RowKey prefixRowKey) throws Exception {
+byte[] rowkeyBytes = prefixRowKey.toBytes();
+boolean isAllByteIsFF = true;
+for (byte b : rowkeyBytes) {
+if ((b &amp; 0xFF) != 0xFF) {
+

@@ -1,0 +1,16 @@
+protected ShapeSet shapeSet = new ShapeSet();
+protected boolean animated = false;
+
+public ShapeSet getShapeSet() {
+return this.shapeSet;
+}
+
+public void paint(Graphics g) {
+if (animated) {
+shapeSet.animate(g);
+} else {
+shapeSet.drawShapes(g);
+}
+}
+}
+

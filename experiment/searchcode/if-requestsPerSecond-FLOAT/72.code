@@ -1,0 +1,9 @@
+protected static org.apache.hadoop.hbase.tmpl.master.RegionServerListTmpl.ImplData __jamon_setOptionalArguments(org.apache.hadoop.hbase.tmpl.master.RegionServerListTmpl.ImplData p_implData)
+{
+if(! p_implData.getServers__IsNotDefault())
+ServerLoad sl = master.getServerManager().getLoad(serverName);
+double requestsPerSecond = 0.0;
+int numRegionsOnline = 0;
+
+if (sl != null) {
+

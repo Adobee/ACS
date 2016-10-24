@@ -1,0 +1,9 @@
+public static int[] sort(int[] a, int low, int high){
+if(low < high){
+int p = partition(a, low, high);
+sort(a, low, p-1);
+public static int partition(int[] a, int low, int high){
+int key = a[low];
+while(low < high){
+while(low < high &amp;&amp; a[high] >= key) high--;
+

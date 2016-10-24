@@ -1,0 +1,10 @@
+public static int roundDown(double a) {
+double r = a % 1;
+if (r < 0) r += 1;
+return r == 0.5 ? (int)Math.round(a) - 1 : (int)Math.round(a);
+/** Returns ceiling for absolute value of a, keeping the sign. */
+public static int ceilingAbs(double a) {
+int ceil = (int) a;
+if (a >= 0) {
+return a > (double) ceil ? ceil + 1 : ceil;
+

@@ -1,0 +1,13 @@
+public int nextItem(IPlaylist playlist, int itemIndex) {
+if (itemIndex < 0) {
+itemIndex = -1;
+}
+
+if (playlist.isRepeat()) {
+return itemIndex;
+}
+
+if (playlist.isRandom()) {
+int lastIndex = itemIndex;
+if (playlist.getItemSize() > 1) {
+

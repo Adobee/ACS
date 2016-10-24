@@ -1,0 +1,6 @@
+public final void serialize(final Iterator<?> iterator, final JsonGenerator jsonGenerator, final SerializerProvider serializerProvider) throws IOException {
+if (((this._unwrapSingle == null &amp;&amp; serializerProvider.isEnabled(SerializationFeature.WRITE_SINGLE_ELEM_ARRAYS_UNWRAPPED)) || this._unwrapSingle == Boolean.TRUE) &amp;&amp; this.hasSingleElement(iterator)) {
+public void serializeContents(final Iterator<?> iterator, final JsonGenerator jsonGenerator, final SerializerProvider serializerProvider) throws IOException {
+if (iterator.hasNext()) {
+final TypeSerializer valueTypeSerializer = this._valueTypeSerializer;
+

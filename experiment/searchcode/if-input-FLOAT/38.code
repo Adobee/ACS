@@ -1,0 +1,9 @@
+public class FloatConverter implements Converter<Float> {
+
+public Float fromString(String value) {
+if (value == null || value.length() == 0)
+return 0F;
+if (value.indexOf(&quot;,&quot;) != -1)
+return Float.parseFloat(value.replace(&quot;,&quot;, &quot;.&quot;));
+else
+

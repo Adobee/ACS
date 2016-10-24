@@ -1,0 +1,7 @@
+public final void update(final float delta, final Entity entity) {
+if (entity.hasActive(BoundsRemovePart.class)) {
+BoundsRemovePart dieOutOfBoundsPart = entity.get(BoundsRemovePart.class);
+Rectangle collisionBox = entity.get(TransformPart.class).getBoundingBox();
+Rectangle adjustedBoundsBox;
+if (dieOutOfBoundsPart.isPartial()) {
+

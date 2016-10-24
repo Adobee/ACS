@@ -1,0 +1,10 @@
+public class Pi extends Thread{
+private Point[] points;
+private int chunkSize;
+
+public Pi(int nbPoints) {
+chunkSize = nbPoints/4;
+points = new Point[nbPoints];
+for (int i = 0; i < nbPoints; i++)
+points[i] = new Point(Math.random(), Math.random());
+

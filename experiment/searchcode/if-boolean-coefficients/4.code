@@ -1,0 +1,10 @@
+return coefficients.size() - 1;
+}
+
+public boolean equals(Polynomial polynomial) {
+return polynomial.coefficients.equals(this.coefficients);
+public Polynomial differentiate() {
+if (this.degree() == 0) {
+coefficients.set(0, 0f);
+return this;
+

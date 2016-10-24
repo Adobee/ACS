@@ -1,0 +1,15 @@
+private final HeaderCollector headerCollector;
+
+private final Writer writer;
+
+private boolean hasFlushed = false;
+
+public WrappedPrintWriter(Writer writer, HeaderCollector headerCollector) {
+public void close() throws IOException {
+flushHeaders();
+writer.close();
+}
+
+private void flushHeaders() {
+if ( !hasFlushed ) {
+

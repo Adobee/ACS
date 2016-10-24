@@ -1,0 +1,8 @@
+public double power(double base, int exponent) throws Exception {
+if (equal(base, 0) &amp;&amp; exponent < 0)
+throw new Exception(&quot;非法输入&quot;);
+private double powerWithExponent(double base, int exponent) {
+if (exponent == 1)
+return base;
+double result = powerWithExponent(base, exponent >>> 1);
+

@@ -1,0 +1,6 @@
+final Keyword keyword = updateRequest.getKeyword();
+if (Keyword.HELP.equals(keyword) || Keyword.HOWTO.equals(keyword)) {
+final Collection<Update> updates = updateRequest.getUpdates();
+if (updateContext.isDryRun() &amp;&amp; updates.size() > 1) {
+for (final Update update : updates) {
+

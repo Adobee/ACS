@@ -1,0 +1,6 @@
+public static Set<Interval> invert(final Date beginning, final Date end, final Set<Interval> intervals) {
+if (intervals.size() == 0) {
+final Set<Interval> newIntervals = getIntervalSet();
+final Interval interval = intervals.iterator().next();
+if (interval.getStartMillis() == beginning.getTime() &amp;&amp; interval.getEndMillis() == end.getTime()) {
+

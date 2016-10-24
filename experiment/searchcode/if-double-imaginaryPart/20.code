@@ -1,0 +1,10 @@
+public EthanJordanSupreme_Complex(double realPart, double imaginaryPart) {
+super();
+this.realPart = realPart;
+* @return the imaginaryPart
+*/
+public double getImaginaryPart() { return imaginaryPart; }
+
+/* (non-Javadoc)
+* @see java.lang.Object#toString()
+

@@ -1,0 +1,9 @@
+if(a == b) { // 包括a = null,b = null的情况
+return true;
+} else if (a instanceof Class) {
+Class<?> declaredByRaw = declaringClassOf(unknown);
+
+// we can&#39;t reduce this further
+if (declaredByRaw == null) {
+return unknown;
+

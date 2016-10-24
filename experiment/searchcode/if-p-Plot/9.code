@@ -1,0 +1,12 @@
+if (o == null || getClass() != o.getClass()) return false;
+
+PlotCoords that = (PlotCoords) o;
+
+if (plotX != that.plotX) return false;
+if (plotZ != that.plotZ) return false;
+
+return true;
+}
+
+@Override
+

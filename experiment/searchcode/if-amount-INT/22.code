@@ -1,0 +1,14 @@
+package diogen2006;
+
+public class Mixture {
+int amount;
+double water;
+
+public Mixture() {}
+* Returns amount of water deducted
+* @param amount
+* @return
+*/
+public double deduct(int amount) {
+if(amount > this.amount) {
+

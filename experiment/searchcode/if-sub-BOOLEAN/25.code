@@ -1,0 +1,14 @@
+public boolean wordBreak(String s, Set<String> wordDict) {
+boolean[] isSub = new boolean[s.length() + 1];
+isSub[0] = true;
+for (int i = 0; i < s.length(); i++) {
+isSub[i + 1] = isSub[i] &amp;&amp; wordDict.contains(s.substring(j, i + 1));
+if (isSub[i + 1]) {
+break;
+}
+}
+}
+return isSub[s.length()];
+}
+}
+

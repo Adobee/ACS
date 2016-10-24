@@ -1,0 +1,9 @@
+Duration elapsedTime = Duration.between(date, instant);
+long elapsedSeconds = elapsedTime.get(ChronoUnit.SECONDS);
+
+if (elapsedSeconds >= 60) {
+return presentAsSeconds(elapsedSeconds);
+}
+
+private String presentAsSeconds(long elapsedSeconds) {
+

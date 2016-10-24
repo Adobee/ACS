@@ -1,0 +1,12 @@
+public class LightMinMaxAggregator<Element> implements AbstractMinMaxAggregator<Element>{
+
+/**
+*
+*/
+private static final long serialVersionUID = -1009202828940368240L;
+protected Element min;
+AggregatorFunction<Element> f;
+
+public LightMinMaxAggregator(final AggregatorFunction<Element> f){
+this.min = f.getSupBound();
+

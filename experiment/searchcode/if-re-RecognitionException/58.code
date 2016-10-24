@@ -1,0 +1,12 @@
+return;
+}
+try {
+_list();
+}
+catch (RecognitionException re) {
+* element: name &#39;=&#39; NAME | NAME | list;
+* assignment, name or list
+*/
+void element() throws RecognitionException {
+if (LA(1) == BacktrackLexer.NAME &amp;&amp; LA(2) == BacktrackLexer.EQUALS) {
+

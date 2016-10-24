@@ -1,0 +1,7 @@
+public final void onLoadFinished(Loader<LoaderResult<D>> loaderResultLoader, LoaderResult<D> dLoaderResult) {
+if(dLoaderResult == null) {
+onLoadSuccess(loaderResultLoader,null,false);
+else onLoadFailure(loaderResultLoader,e,dLoaderResult.mIsRefresh);
+}else {
+if(e == null) onLoadSuccess(loaderResultLoader,result,false);
+

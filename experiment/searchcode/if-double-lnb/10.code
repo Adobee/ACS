@@ -1,0 +1,12 @@
+TextView tvSatPosition = (TextView)v.findViewById(R.id.tvPosition);
+double satPos = mSat.getSatPos();
+
+if(satPos > 1800)
+tvSatPosition.setText( (satPos - 1800) / 10 + &quot; W&quot;);
+if(event.getAction() == MotionEvent.ACTION_DOWN)
+{
+if(tvLnbF.getClass() == v.getClass())
+{
+tvLnbF.setTextColor(Color.RED);
+tvLnbF.setBackgroundColor(COLOR_SEL);
+

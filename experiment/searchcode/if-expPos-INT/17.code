@@ -1,0 +1,10 @@
+pw.println(&quot;public static int s16DecompressOneNumberWithHardCodesIntegrated(int[] out, int outOffset, int value, int numIdx, int oribits, int[] expPos){&quot;);
+pw.println(&quot;  switch(numIdx){&quot;);
+int i,j,shift, s16Bits;
+for(i=0; i<S16_BITS.length; ++i)
+s16Bits = S16_BITS[i][j];
+if(shift>0)
+{
+if(j>0)
+pw.println(&quot;      out[expPos[outOffset+&quot; + j + &quot;]] |= (((value >>> &quot; + shift + &quot;)  &amp; &quot; + MASK[s16Bits] + &quot;)<<oribits);&quot;);
+

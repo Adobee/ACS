@@ -1,0 +1,7 @@
+// TODO:LPTR What happens when the property has multiple accessors in the same role but with different type?
+// if (accessors.containsKey(type)) {
+//     throw new IllegalStateException(&quot;Accessor already registered: &quot; + type + &quot; &quot; + accessor);
+public void dropInvalidAccessor(PropertyAccessorType type, ImmutableCollection.Builder<Method> droppedMethods) {
+PropertyAccessorExtractionContext removedAccessor = accessors.remove(type);
+if (removedAccessor != null) {
+

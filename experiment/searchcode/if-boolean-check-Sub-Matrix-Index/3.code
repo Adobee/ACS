@@ -1,0 +1,7 @@
+Matrix1D colMatrixIndex, Matrix2D matrix) throws ModelException {
+if (!checkData(rowMatrixIndex, matrix, 2) || !checkData(colMatrixIndex, matrix, 1))
+IndexedMatrix2D imf = (IndexedMatrix2D) o;
+boolean ok = super.equals(o);
+if (this.colMatrixIndex != null)
+ok = (ok &amp;&amp; this.colMatrixIndex.equals(imf.colMatrixIndex));
+

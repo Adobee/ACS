@@ -1,0 +1,8 @@
+import net.ripe.db.whois.common.rpsl.ObjectType;
+import org.apache.commons.lang.Validate;
+
+import java.util.Map;
+public static ObjectType getType(final int serialType) throws IllegalArgumentException {
+final ObjectType objectType = BY_TYPE_ID.get(serialType);
+if (objectType == null) {
+

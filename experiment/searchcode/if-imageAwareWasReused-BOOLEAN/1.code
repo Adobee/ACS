@@ -1,0 +1,11 @@
+private boolean waitIfPaused() {
+AtomicBoolean pause = this.engine.getPause();
+if (pause.get()) {
+L.e(ERROR_PROCESSOR_FOR_DISK_CACHE_NULL, this.memoryCacheKey);
+}
+}
+if (bmp == null) {
+return false;
+}
+boolean saved = this.configuration.diskCache.save(this.uri, bmp);
+

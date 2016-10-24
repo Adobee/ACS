@@ -1,0 +1,7 @@
+public static long parse(Object value) {
+if (value == null) {
+return Long.MIN_VALUE;
+} else if (value.getClass() == Long.class) {
+return (Long) value;
+} else if (value.getClass() == String.class) {
+

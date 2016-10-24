@@ -1,0 +1,12 @@
+minScore = in.readFloat();
+
+querySource = in.readBytesReference();
+
+int typesSize = in.readVInt();
+if (typesSize > 0) {
+for (int i = 0; i < typesSize; i++) {
+types[i] = in.readString();
+}
+}
+int aliasesSize = in.readVInt();
+

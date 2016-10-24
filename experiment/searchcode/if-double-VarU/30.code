@@ -1,0 +1,7 @@
+double v1 = TypeInference.toDouble(o1);
+double v2 = TypeInference.toDouble(o2);
+if(v1>v2) {
+Double tiValue = TypeInference.toDouble(ti);
+Object value = testTable.get2d(ti, &quot;mi&quot;);
+if(value==null) {
+

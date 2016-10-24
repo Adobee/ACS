@@ -1,0 +1,13 @@
+return false;
+}
+if (!(obj instanceof ValueMarker)) {
+return false;
+}
+ValueMarker that = (ValueMarker) obj;
+if (this.value != that.value) {
+return false;
+}
+return true;
+}
+}
+

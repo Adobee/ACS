@@ -1,0 +1,10 @@
+double P,I,D;
+double previousError;
+double Kp,Ki,Kd;
+
+public PID(double Kp, double Ki, double Kd){
+public double next(double error){
+P=error;
+D=(error-previousError)/(Constants.clock/1000.0);
+I+=error*Constants.clock/1000.0;
+

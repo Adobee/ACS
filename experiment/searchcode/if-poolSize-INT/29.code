@@ -1,0 +1,11 @@
+import java.util.Arrays;
+
+public class ConnectionManager {
+private static int poolSize = 10;
+private static DBConnector [] pool = new DBConnector [10];
+public static synchronized DBConnector getDBConnector() {
+DBConnector result = null;
+int i = 0;
+for (i = 0; i < poolSize; i++) {
+if (!allocation[i]) {
+

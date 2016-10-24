@@ -1,0 +1,10 @@
+public static abstract class Bucket extends Terms.Bucket {
+
+long bucketOrd;
+
+protected long docCount;
+protected InternalAggregations aggregations;
+final Bucket b = sameTermBuckets.get(0).reduce(sameTermBuckets, reduceContext.bigArrays());
+if (b.docCount >= minDocCount) {
+ordered.insertWithOverflow(b);
+

@@ -1,0 +1,9 @@
+import org.apache.commons.lang3.Validate;
+
+class FieldByNameKey implements Key {
+private final String fieldName;
+
+FieldByNameKey(String fieldName) {
+Validate.notNull(fieldName, &quot;fieldName&quot;);
+this.fieldName = fieldName;
+

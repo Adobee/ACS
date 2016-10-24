@@ -1,0 +1,10 @@
+Customer customer = (Customer) session.getAttribute(&quot;customer&quot;);
+
+if (customer == null) {
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;loginCustomer&quot;);
+return actionResponse;
+}
+
+if(order == null){
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.FORWARD, &quot;generalErrorMessage&quot;);
+

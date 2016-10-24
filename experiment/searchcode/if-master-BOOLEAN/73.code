@@ -1,0 +1,10 @@
+MasterDataDirectoryPaths masterDataDirectoryPaths;
+BasicFileAttributes master;
+BasicFileAttributes data;
+boolean masterExists;
+boolean dataExists;
+public boolean masterIsABackLinkPointingSomewhereElseInTheDataDirectory() {
+if (!masterExists || !master.isSymbolicLink())
+return false;
+boolean masterWithinDataTree = masterPointsWithinDataTree();
+

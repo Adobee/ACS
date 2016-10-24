@@ -1,0 +1,9 @@
+import com.google.inject.spi.UntargettedBinding;
+
+final class UntargettedBindingImpl<T> extends BindingImpl<T> implements UntargettedBinding<T> {
+return visitor.visit(this);
+}
+
+public BindingImpl<T> withScoping(Scoping scoping) {
+return new UntargettedBindingImpl<T>(getSource(), getKey(), scoping);
+

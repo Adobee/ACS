@@ -1,0 +1,11 @@
+public char getSymbol(){return Symbol;}
+
+private boolean Draw;
+public boolean getDraw(){return Draw;}
+
+private boolean Rotate;
+public DrawingRule(char symbol,boolean draw, boolean rotate, float degrees) throws Exception{
+//this is a draw rule
+if(draw){
+if(rotate)throw new Exception(&quot;Cannot be both draw and rotation rule&quot;);
+

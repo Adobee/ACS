@@ -1,0 +1,8 @@
+public boolean matches(CharSequence rawPassword, String encodedPassword) {
+if (!rehashIsNeeded(encodedPassword)) {
+return passwordEncoder.matches(rawPassword, encodedPassword);
+return oldPasswordEncoder.isPasswordValid(encodedPassword, rawPassword.toString(), null);
+}
+
+public boolean rehashIsNeeded(String encodedPassword) {
+

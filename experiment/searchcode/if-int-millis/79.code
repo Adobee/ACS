@@ -1,0 +1,10 @@
+private DateTime startedAt;
+
+private int duration;
+
+public DateTimeHelper(DateTime startedAt, int duration) {
+Log.e(&quot;secondsMillis&quot;, secondsMillis + &quot;&quot;);
+
+if (duration > 60) {
+long hoursMillis = minutesMillis / 60;
+

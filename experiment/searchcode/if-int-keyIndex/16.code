@@ -1,0 +1,10 @@
+public boolean containsKey(long key)
+{
+int keyIndex = keyFind(key);
+if (keyIndex >= 0)
+public boolean containsValue(Object value)
+{
+for (int keyIndex = 0; keyIndex < keyCount; keyIndex++)
+{
+if (value != null &amp;&amp; value.equals(values[keyIndex]))
+

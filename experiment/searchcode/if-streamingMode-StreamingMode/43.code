@@ -1,0 +1,8 @@
+* Used when an HTTP request requires a retry, but cannot be retried
+* automatically because streaming mode
+* (HttpURLConnection.set[...]StreamingMode()) was enabled.
+public class HttpRetryException extends HttpException
+{
+/**
+* The response code of the request, if a response was received from the
+

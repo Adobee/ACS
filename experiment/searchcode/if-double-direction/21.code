@@ -1,0 +1,10 @@
+import org.lubbenb.raytracer.RayTracer;
+
+public class Spot extends Light {
+
+Ray direction;
+
+double angle;
+public double getIntensity(Ray lightRay) {
+double a = (direction.getDirectionX() * lightRay.getDirectionX() + direction.getDirectionY()
+

@@ -1,0 +1,9 @@
+int xl = (int) Math.ceil(x - r);
+int xr = (int) Math.floor(x + r);
+int maxX = 0, maxY = 0;
+double maxDis = 0;
+double dis = (i - x) * (i - x) + (yl - y) * (yl - y);//compare the small y
+if (dis - maxDis > EPS) {
+maxX = i;
+maxY = yl;
+

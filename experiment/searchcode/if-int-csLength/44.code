@@ -1,0 +1,12 @@
+if (cs == null) {
+eq = strs == null;
+}
+
+if (strs != null) {
+for (int i = 0; i < strs.length; i++) {
+if (isEmpty(cs) || isEmpty(searchChars)) {
+return false;
+}
+int csLength = cs.length();
+int searchLength = searchChars.length;
+

@@ -1,0 +1,10 @@
+import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.ImmutableSettings;
+public class RingBufferConsumer implements EventHandler<PushEntry>
+{
+
+TransportClient transportClient;
+MQTTNotifier mqttnotifier;
+final static Logger logger = Logger.getLogger(RingBufferConsumer.class);
+

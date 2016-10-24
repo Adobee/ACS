@@ -1,0 +1,5 @@
+final double global = otherPlane.getOffset(thisPlane);
+if (global < -tolerance) {
+Vector3D crossP = Vector3D.crossProduct(inter.getDirection(), thisPlane.getNormal());
+if (crossP.dotProduct(otherPlane.getNormal()) < 0) {
+

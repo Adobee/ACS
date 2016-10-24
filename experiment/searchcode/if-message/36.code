@@ -1,0 +1,7 @@
+public void messageReceived(HostedConnection source, Message msg) {
+if (msg instanceof BasicMessage) {
+BasicMessage message = (BasicMessage) msg;
+
+if (message.str.equals(&quot;ready&quot;)){
+server.ready += 1;
+

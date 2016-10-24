@@ -1,0 +1,13 @@
+return getFMeasure(p, r);
+}
+
+public static double getPrecision(int tp, int fp) {
+if (tp + fp == 0) {
+return 0;
+}
+return 1d*tp/(tp + fp);
+}
+
+public static double getRecall(int tp, int fn) {
+if (tp + fn == 0) {
+

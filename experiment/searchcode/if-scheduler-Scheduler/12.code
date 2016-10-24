@@ -1,0 +1,7 @@
+private static Scheduler schedulerInstance = null;
+
+public static Scheduler newInstance(String type) {
+if (type.equals(&quot;FIFOScheduler&quot;))
+schedulerInstance = new FIFOScheduler();
+else if (type.equals(&quot;DelayScheduler&quot;))
+

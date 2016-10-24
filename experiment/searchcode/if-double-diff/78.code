@@ -1,0 +1,10 @@
+for (; i < n + 1; i++)
+{
+double diff = prices.get(i) - prices.get(i - 1);
+if (diff > 0.0)
+double diff = prices.get(i) - prices.get(i - 1);
+double diffn = prices.get(i - n) - prices.get(i - n - 1);
+if (diff > 0.0)
+{
+rise += diff;
+

@@ -1,0 +1,12 @@
+public void bresenham() {
+double a2 = a * a  ;
+double b2 = b * b ;
+// nhanh 1
+int x = 0 ;
+int y = b ;
+double p = 2 * b2/a2 - 2*b + 1 ;
+p = 2 *(a2/b2) - 2 * a + 1 ;
+while( ( a2/b2 * (double)y/x  ) <=1 ) {
+drawEllipse(x, y);
+if(p<0)  {
+

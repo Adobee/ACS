@@ -1,0 +1,13 @@
+public class ArrayPointer<T> implements VariableBoxer<T> {
+private final int index;
+private final Object container;
+
+boolean isString;
+this.index = index;
+isString = container instanceof StringBuilder;
+}
+
+@Override
+public T get() {
+if (isString) {
+

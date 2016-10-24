@@ -1,0 +1,10 @@
+AcceleratorNode aNode = (AcceleratorNode) objNode;
+
+PropertyAccessor nodeAccessor = getAccessorFor( aNode );
+if (nodeAccessor == null) {
+addInputOverrides( aNode, valueMap );
+
+if (DEBUG) printValueMap( aNode, valueMap );
+
+return valueMap;
+

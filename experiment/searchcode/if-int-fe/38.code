@@ -1,0 +1,10 @@
+private FeProjectRepository feProjectRepository;
+
+@Override
+public FeProject findOne(int id) {
+return feProjectRepository.findOne(id);
+FeProject tmp = feProjectRepository.findOne(feProject.getId());
+if (null != tmp) {
+tmp.setRemark(feProject.getRemark());
+tmp.setName(feProject.getName());
+

@@ -1,0 +1,13 @@
+public void addToReceivedUpdates(UpdateMessage update) {
+boolean added = false;
+for (int i=0;i<updates.size();i++){
+
+if (update.generation<=updates.get(i).generation){
+updates.add(i,update);
+added=true;
+break;
+}
+}
+
+if (!added)
+

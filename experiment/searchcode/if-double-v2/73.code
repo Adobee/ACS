@@ -1,0 +1,12 @@
+this.x = x;
+this.y = y;
+this.z = 0;
+}
+
+static double dist(Vector v1, Vector v2) {
+return new Vector(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z);
+}
+
+public static float angleBetween(Vector v1, Vector v2) {
+double dot = v1.dot(v2);
+

@@ -1,0 +1,7 @@
+import automenta.spacenet.Stops;
+import automenta.spacenet.var.number.DoubleVar;
+import automenta.spacenet.var.number.IfDoubleChanges;
+import automenta.spacenet.var.vector.Vector3;
+
+/** a sphere whose scale is managed by a radius number */
+

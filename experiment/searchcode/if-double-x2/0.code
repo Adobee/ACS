@@ -1,0 +1,10 @@
+return 1 / power(x, -n);
+}
+}
+public double power(double x, int n) {
+if (n % 2 == 0) {
+double x2 = pow(x, n/2);
+return x2 * x2;
+} else {
+double x2 = pow(x, n/2);
+

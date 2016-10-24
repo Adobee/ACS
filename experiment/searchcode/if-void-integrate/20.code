@@ -1,0 +1,12 @@
+public static double integrate(DoubleFunction<Double> f, double a, double b) {
+double eps = 1e-10;
+double m = (a + b) / 2;
+return (f.apply(a) + 4 * f.apply((a + b) / 2) + f.apply(b)) * (b - a) / 6;
+}
+
+// Usage example
+public static void main(String[] args) {
+System.out.println(integrate(x -> Math.sin(x), 0, Math.PI / 2));
+}
+}
+

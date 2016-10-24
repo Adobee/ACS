@@ -1,0 +1,11 @@
+Map<Integer, Double> featV2) {
+
+double sum = 0.0;
+
+if (featV1.size() < featV2.size()){
+for (Entry<Integer,Double> entry : featV1.entrySet()) {
+
+Double val = featV2.get(entry.getKey());
+
+if (val != null){
+

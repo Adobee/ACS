@@ -1,0 +1,16 @@
+System.out.println(longestHailI(1000000));
+}
+
+public static void hail(long n) {
+if (n==1) {
+System.out.println(n);
+} else if (n % 2 == 0) {
+hail(3 * n + 1);
+}
+}
+
+public static long hailLen(long n) {
+if (n==1) {
+return 1;
+} else if (n % 2 == 0) {
+

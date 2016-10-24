@@ -1,0 +1,9 @@
+public static final String[] DOWS = { &quot;So&quot;, &quot;Mo&quot;, &quot;Die&quot;, &quot;Mit&quot;, &quot;Do&quot;, &quot;Fr&quot;, &quot;Sa&quot; };
+
+public static void printAvailSelect(int doy, AvailType thisType, JspWriter out) throws IOException {
+out.print(&quot;</select>&quot;);
+}
+
+public static AvailType getType(int doy, String avails) {
+return AvailType.get(avails.charAt(doy));
+

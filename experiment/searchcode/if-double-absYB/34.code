@@ -1,0 +1,9 @@
+double xB    = x[signChangeIndex];
+double yB    = y[signChangeIndex];
+double absYB = FastMath.abs(yB);
+int agingB   = 0;
+// target for the next evaluation point
+double targetY;
+if (agingA >= MAXIMAL_AGING) {
+// we keep updating the high bracket, try to compensate this
+

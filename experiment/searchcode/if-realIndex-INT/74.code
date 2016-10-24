@@ -1,0 +1,8 @@
+public class LoopFPageAdapter extends CommonFPageAdapter {
+
+private int realIndex;//少于4个的情况，需要标记其真正的索引
+@Override
+public int getCount() {
+if (getRealCount() <= 1) {
+return getRealCount();
+

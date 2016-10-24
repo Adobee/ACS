@@ -1,0 +1,9 @@
+public static double integrate(DoubleFunction df, double a, double b, int n) {
+if (n < 0 || n > 100_000) {
+String message = n + &quot;out of range&quot;;
+return 0;
+
+double x, deltaX, sum2 = 0.0, sum4;
+
+if (n % 2 != 0)   // make sure that n is even
+

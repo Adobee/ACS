@@ -1,0 +1,8 @@
+private static void runTenuringFlagsConsistencyTest(String[] tenuringFlags,
+boolean shouldFail,
+OutputAnalyzer output = new OutputAnalyzer(pb.start());
+
+if (shouldFail) {
+output.shouldHaveExitValue(1);
+} else {
+

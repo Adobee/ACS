@@ -1,0 +1,16 @@
+public class MockUpRetryTask implements Task {
+private boolean retry = true;
+
+public String getName() {
+return null;
+}
+
+public boolean shouldRetry() {
+if (retry) {
+retry = false;
+return true;
+}
+return retry;
+}
+}
+

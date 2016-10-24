@@ -1,0 +1,10 @@
+private Integer size;
+private List<SortBuilder> sorts;
+private Boolean trackScores;
+private HighlightBuilder highlightBuilder;
+* Similar as {@link #setTrackScores(boolean)}, but whether to sort by the score descending.
+*/
+public PercolateSourceBuilder setSort(boolean sort) {
+if (sort) {
+addSort(new ScoreSortBuilder());
+

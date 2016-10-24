@@ -1,0 +1,9 @@
+* Base class for all Impala SQL statements.
+*/
+abstract class StatementBase implements ParseNode {
+// True if this Stmt is top level of an explain stmt.
+protected boolean isExplain_ = false;
+
+/**
+* Analyzes the statement and throws an AnalysisException if analysis fails. A failure
+

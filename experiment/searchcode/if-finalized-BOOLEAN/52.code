@@ -1,0 +1,12 @@
+public synchronized void finalized(boolean flatten) {
+if (_executionFinalized)
+throw new IllegalStateException(&quot;Execusion has been finalized: &quot; + _type);
+public void executionEnded(boolean finalized, boolean flatten) {
+executionEnded();
+
+if(finalized)
+finalized(flatten);
+}
+
+}
+

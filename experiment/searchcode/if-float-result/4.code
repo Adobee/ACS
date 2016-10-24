@@ -1,0 +1,8 @@
+if(args[i].equals(&quot;+&quot;)) {
+result = plus(result, Float.parseFloat(args[i+1]));
+
+} else if(args[i].equals(&quot;-&quot;)) {
+result = minus(result, Float.parseFloat(args[i+1]));
+
+} else if(args[i].equals(&quot;x&quot;)) {
+

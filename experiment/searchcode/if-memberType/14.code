@@ -1,0 +1,15 @@
+memberTypes = new MemberTypeManager().getList();
+}
+
+public MemberTypeController() {
+
+if (memberType == null) {
+memberType = (MemberType) FacesUtil.getObjectFromRequestParameter(&quot;id&quot;, new MemberTypeConverter(), null);
+}
+if (memberType == null) {
+memberType = new MemberType();
+}
+}
+
+public String insert() {
+

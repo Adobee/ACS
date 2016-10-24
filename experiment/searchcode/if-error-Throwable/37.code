@@ -1,0 +1,9 @@
+public static RuntimeException rethrowCause(Throwable throwable)
+{
+Throwable cause = throwable;
+if (cause.getCause() != null) {
+throw ((RuntimeException)throwable);
+}
+if ((throwable instanceof Error)) {
+throw ((Error)throwable);
+

@@ -1,0 +1,13 @@
+package inherit;
+
+public class inherit {
+
+public void empsal() {
+//if(ih instanceof teacher)
+System.out.println(&quot;in main class&quot;);
+
+}
+
+public void test(inherit ih){
+if (ih instanceof teacher){
+

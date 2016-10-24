@@ -1,0 +1,9 @@
+public IFieldDecl getFieldDecl() {
+if (fieldVector.isEmpty())
+return null;
+else
+return fieldVector.get(fieldVector.size() - 1);
+for (IFieldDecl fieldDecl : fieldVector) {
+obj = fieldDecl.getAccessor().getValue(obj);
+if (obj == null)
+

@@ -1,0 +1,12 @@
+GlyphVector gv = font.createGlyphVector(frc, alphabet.toString());
+
+double hDouble = gv.getOutline().getBounds2D().getHeight();
+
+Map<Character, Image2DData> charMap = new HashMap<>();
+int w = (int) Math.ceil(advX);
+int h = (int) Math.ceil(hDouble);
+
+if (w % 2 != 0)
+w++;
+if (h % 2 != 0)
+

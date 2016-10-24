@@ -1,0 +1,13 @@
+package euler;
+
+import java.io.IOException;
+import java.time.DayOfWeek;
+import java.util.ArrayList;
+int[] dayAdvances = yearsFrom1901.limit(100).map(y -> {
+if (y % 4 != 0)
+return 1;
+else if (y % 400 != 0)
+return 2;
+else
+return 1;
+

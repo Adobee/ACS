@@ -1,0 +1,12 @@
+private final Condition conProduced = lock.newCondition();
+private int value;
+private boolean consumed = true;
+
+public FinegrainedIntCell() {
+this.value = 0;
+@Override
+public int getValue() {
+lock.lock();
+if (consumed) {
+try {
+

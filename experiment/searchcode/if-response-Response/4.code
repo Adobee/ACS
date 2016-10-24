@@ -1,0 +1,10 @@
+static String sanitizeNATResponse(String response)
+{
+response = response.trim();
+
+if(response.contains(&quot;http&quot;))
+{
+response = response.replaceAll(&quot;http.*&quot;, &quot;&quot;);
+}
+if(response.endsWith(&quot;.&quot;) &amp;&amp; response.length() > 1)
+

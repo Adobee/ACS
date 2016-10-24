@@ -1,0 +1,13 @@
+public DataCache(int maxCacheTime) {
+this.maxCacheTime = maxCacheTime;
+}
+
+public Object get(String key) {
+if (maxCacheSize <= 0) {
+return dataCacheEntry.getData();
+}
+}
+
+public void put(String key, Object value) {
+if (maxCacheSize <= 0) {
+

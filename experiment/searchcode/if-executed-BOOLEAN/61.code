@@ -1,0 +1,22 @@
+this.argsNumber = argsNumber;
+}
+
+@Override
+public boolean	tryToExecute(String[] args)
+{
+boolean		executed;
+
+if (args.length != argsNumber)
+DebugLog.getInstance().err.print(&quot;Bad args number for command &quot; + args[0]);
+executed = false;
+}
+else
+{
+executed = this.execute(args);
+}
+
+return (executed);
+}
+
+}
+

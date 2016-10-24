@@ -1,0 +1,9 @@
+hasConsumption = hasConsumption &amp;&amp; InventoryTraitUtils.containsAtLeast(inventory, toBeConsumed.getType(), toBeConsumed.getAmount());
+
+
+if (hasConsumption)
+Tuple<List<ItemStack>, List<ItemStack>> getResult = InventoryTraitUtils.getItem(inventory, selectedProduction.getItemsNeededToConsume());
+for (ItemStack consumed : getResult.fst)
+{
+if (consumed.getType() == Material.LOG || consumed.getType() == Material.LOG_2)
+

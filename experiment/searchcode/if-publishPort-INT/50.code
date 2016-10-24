@@ -1,0 +1,12 @@
+extends AbstractComponent
+{
+protected String 					arrayBlockingQueueURI;
+protected int 						arraySize;
+protected boolean 					isDistributed;
+p = new ArrayBlockingQueuePutInboundPort(newURI, this) ;
+}
+this.addPort(p) ;
+
+if(isDistributed) {
+p.publishPort();
+

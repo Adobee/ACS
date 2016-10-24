@@ -1,0 +1,13 @@
+private final double im;
+
+public Complex(double re, double im) {
+this.re = re;
+this.im = im;
+return new Complex((re * c.re + im * c.im) / tmp, (im * c.re - re * c.im) / tmp);
+}
+
+public boolean equals(Object o) {
+if (o == this)
+return true;
+if (!(o instanceof Complex))
+

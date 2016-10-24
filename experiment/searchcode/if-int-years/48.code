@@ -1,0 +1,13 @@
+return years(BaseSingleFieldPeriod.between(paramReadableInterval.getStart(), paramReadableInterval.getEnd(), DurationFieldType.years()));
+}
+
+public Years dividedBy(int paramInt)
+{
+if (paramInt == 1) {
+return years(FieldUtils.safeNegate(getValue()));
+}
+
+public Years plus(int paramInt)
+{
+if (paramInt == 0) {
+

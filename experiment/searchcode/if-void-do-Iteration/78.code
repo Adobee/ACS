@@ -1,0 +1,8 @@
+log.d(&quot;Starting iterations with initial solution &quot; + Arrays.toString(solution));
+int iterationCount = 0;
+do {
+norm = iteration(matrix, free, solution, temp);
+} while (norm > epsilon &amp;&amp; iterationCount < maxIterations);
+
+if (iterationCount == maxIterations) {
+

@@ -1,0 +1,10 @@
+static final double EPS = 1e-8;
+
+static boolean equals(double a, double b) {
+return Math.abs(a - b) < EPS;
+}
+
+static double[] solveQuadratic(double a, double b, double c)
+{
+double delta = b * b - 4 * a * c;
+

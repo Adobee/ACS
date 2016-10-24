@@ -1,0 +1,9 @@
+semaphore.reducePermits(6);
+
+int availablePermits = semaphore.availablePermits();
+assertEquals(availablePermits, 4, &quot;Expected a decrease to 4 permits available.&quot;);
+semaphore.increasePermits(4);
+
+int availablePermits = semaphore.availablePermits();
+assertEquals(availablePermits, 14, &quot;Expected an increase to 14 permits available.&quot;);
+

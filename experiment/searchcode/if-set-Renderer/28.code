@@ -1,0 +1,10 @@
+public static final String VERTICAL_LINES_RENDERER = &quot;LINES&quot;;
+///////////////////////////////////////
+
+@Override
+public Renderer parse(String token) {
+Renderer renderer = null;
+if (token.equals(RendererValue.XY_PLOT_RENDERER)) {
+renderer = new XYPlotRenderer();
+renderer.setLayout(renderer.getDefaultLayout());
+

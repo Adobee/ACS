@@ -1,0 +1,10 @@
+class MarkerViewerContentProvider implements ITreeContentProvider {
+
+// private MarkersTreeViewer viewer;
+private Object input;
+
+private final ExtendedMarkersView markersView;
+public Object[] getElements(Object inputElement) {
+//use clone
+return getLimitedChildren(((Markers) input).getElements());
+

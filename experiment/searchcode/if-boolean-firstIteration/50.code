@@ -1,0 +1,10 @@
+public boolean hasNext() {
+if(firstIteration)
+return true;
+else if (isBreak())
+return false;
+public Statement next() throws NoSuchElementException{
+if (! hasNext())
+throw new NoSuchElementException();
+if (firstIteration){
+

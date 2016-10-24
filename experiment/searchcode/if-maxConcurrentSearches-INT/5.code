@@ -1,0 +1,6 @@
+clusterState.blocks().globalBlockedRaiseException(ClusterBlockLevel.READ);
+
+int maxConcurrentSearches = request.maxConcurrentSearchRequests();
+if (maxConcurrentSearches == 0) {
+maxConcurrentSearches = defaultMaxConcurrentSearches(availableProcessors, clusterState);
+

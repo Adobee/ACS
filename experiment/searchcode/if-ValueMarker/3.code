@@ -1,0 +1,13 @@
+import org.jfree.chart.event.MarkerChangeEvent;
+
+
+public class ValueMarker extends Marker {
+
+
+private double value;
+
+
+public ValueMarker(double value) {
+super();
+this.value = value;
+

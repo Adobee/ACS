@@ -1,0 +1,8 @@
+public static String getDifferenceTime(long currentTime, long logTime) {
+long diff = currentTime - logTime;
+if(diff == 0) {
+return &quot;just now&quot;;
+}
+int diffSeconds = (int)Math.ceil(diff / 1000);
+if(diffSeconds == 0){
+

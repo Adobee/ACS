@@ -1,0 +1,10 @@
+import java.util.List;
+
+import com.cagst.swkroa.member.MemberType;
+import com.cagst.swkroa.member.MemberTypeRepository;
+import com.cagst.swkroa.web.util.WebAppUtils;
+LOGGER.info(&quot;Received request to save membertype [{}]&quot;, memberType.getMemberTypeUID());
+
+// determine if this is a new MemberType before we save it
+boolean newMemberType = (memberType.getMemberTypeUID() == 0);
+

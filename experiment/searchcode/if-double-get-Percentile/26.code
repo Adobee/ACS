@@ -1,0 +1,11 @@
+this.percentileDefinitions = percentileDefinitions;
+}
+
+public double getCompression() {
+return compression;
+}
+
+public void setCompression( double compression ) {
+for ( PercentileDefinition percentileDefinition : percentileDefinitions ) {
+double percentile = percentileDefinition.getPercentile();
+

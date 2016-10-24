@@ -1,0 +1,12 @@
+int y0 = 0;
+int z0 = 0;
+
+double[] expected = new double[]{};
+double[] actual = solution.collision(vx, vy, vz, x0, y0, z0);
+int vz = 1;
+int x0 = -1;
+int y0 = -1;
+int z0 = 0;
+
+double[] expected = new double[]{0.0, 1.0, 0.5};
+

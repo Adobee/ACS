@@ -1,0 +1,8 @@
+public ConcurrentSkipListMap<String, Integer> countingStringMap = new ConcurrentSkipListMap<String, Integer>();
+
+public void putAdd(int key, int value) {
+
+if (countingMap.containsKey(key)) {
+double existingValue = countingMap.get(key);
+existingValue += incrementer;
+

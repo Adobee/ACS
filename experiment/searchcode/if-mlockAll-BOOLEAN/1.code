@@ -1,0 +1,6 @@
+// Set to true, in case native mlockall call was successful
+public static boolean LOCAL_MLOCKALL = false;
+try {
+int result = CLibrary.mlockall(CLibrary.MCL_CURRENT);
+if (result != 0) {
+

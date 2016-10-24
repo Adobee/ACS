@@ -1,0 +1,13 @@
+import java.math.BigDecimal;
+
+/**
+* Created by Lawrence on 7/18/2015.
+*/
+public class Boolean implements Node {
+private boolean yesNo;
+public BigDecimal evaluate(VariableMap<String, BigDecimal> map) throws InvalidExpressionException {
+if (yesNo) {
+return new BigDecimal(1);
+} else {
+return new BigDecimal(0);
+

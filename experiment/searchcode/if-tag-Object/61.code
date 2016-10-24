@@ -1,0 +1,8 @@
+Tag tag =  MQL.select(mTag).where(mTag.getName(), MQL.Comp.EQUAL, name).getFirst();
+if (tag == null) {
+tag = ModelObjectService.create(Tag.class);
+tag.setSkaicius(tag.getSkaicius() + 1);
+}
+ModelObjectService.save(tag);
+ModelObjectSearchService.put(tag);
+

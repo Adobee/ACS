@@ -1,0 +1,11 @@
+public class CountedInputStream extends FilterInputStream {
+
+private int bytesLeft;
+
+/**
+* @param instrm       The InputStream being counted
+*  is exhausted, returns -1 to signify end of file. */
+public int read() throws IOException {
+if (bytesLeft <= 0) {
+return -1;
+

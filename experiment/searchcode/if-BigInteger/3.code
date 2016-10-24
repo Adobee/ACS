@@ -1,0 +1,10 @@
+public BigInteger gcd(BigInteger a, BigInteger b){
+if (a.signum() != 1 || b.signum() != 1)
+throw new IllegalArgumentException();
+
+BigInteger g = BigInteger.ONE;
+if (a.compareTo(b) < 0){
+BigInteger t = a; a = b; b = t;
+}
+for (BigInteger n = BigInteger.valueOf(2);
+

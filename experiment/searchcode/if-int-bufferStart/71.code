@@ -1,0 +1,10 @@
+private static final byte[] CRLF = new byte[] {&#39;\r&#39;, &#39;\n&#39;};
+
+private byte[] buffer;
+private int bufferStart = 0;
+private int lineLength = 0;
+@Override
+public void write(int oneByte) throws IOException {
+// Buffer full?
+if (lineLength == buffer.length) {
+

@@ -1,0 +1,18 @@
+public double getValue() {
+if (isFinished()) {
+return endValue;
+}
+return startValue + (endValue - startValue) * timer / time;
+public void invert() {
+double val = startValue;
+startValue = endValue;
+endValue = val;
+}
+
+public void update(double dt) {
+if (!isFinished()) {
+timer += dt;
+}
+}
+}
+

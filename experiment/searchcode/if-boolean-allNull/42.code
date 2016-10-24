@@ -1,0 +1,13 @@
+static String concat(final String... elements) {
+boolean allNull = true;
+final StringBuilder sb = new StringBuilder();
+for (final String element : elements) {
+if (element != null) {
+allNull = false;
+sb.append(element);
+}
+}
+return allNull ? null : sb.toString();
+}
+}
+

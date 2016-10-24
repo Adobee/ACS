@@ -1,0 +1,6 @@
+final LevenbergMarquardtTraining train = new LevenbergMarquardtTraining(network, mlTrainingSet);
+SimpleEarlyStoppingStrategy earlyStop = new SimpleEarlyStoppingStrategy(mlValidationSet);
+File csvfile = new File(simulatorParameters.getOutputPath(), RESULTS_FILENAME);
+boolean appendToFile = false;
+if (csvfile.exists()) {
+

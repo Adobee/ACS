@@ -1,0 +1,13 @@
+//System.out.println(&quot;WR: &quot; + wr);
+}
+
+public double[] rechnen(ArrayList<double[]> aPs, int length) {
+//if (length == 4) {
+double a1 = aPs.get(0)[0];
+double c3 = aPs.get(2)[2];
+double r3 = getdistance(aPs.get(2)[3]);
+
+//Wlan 4
+double a4 = aPs.get(3)[0];
+double b4 = aPs.get(3)[1];
+

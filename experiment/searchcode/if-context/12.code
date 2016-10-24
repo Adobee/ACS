@@ -1,0 +1,15 @@
+package com.example.memoryleak.contextleak;
+
+import android.content.Context;
+
+public class ContextLeakHolder {
+public ContextLeakHolder() {
+}
+
+public static void setContext(Context context) {
+if (sContext == null) {
+sContext = context;
+}
+}
+}
+

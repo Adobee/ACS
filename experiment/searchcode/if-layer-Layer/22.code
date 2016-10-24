@@ -1,0 +1,9 @@
+public static List<Layer> layerStack = new ArrayList<Layer>();
+
+
+public static void gainFocus(Layer layer){
+if(layerStack.get(layerStack.size() - 1).equals(layer)){
+for(int i = 0; i < layerStack.size(); i++) {
+if(layerStack.get(i).equals(layer)){
+layerStack.remove(i);
+

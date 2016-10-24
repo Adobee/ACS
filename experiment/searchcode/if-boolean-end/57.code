@@ -1,0 +1,17 @@
+int len = a.length();
+int end = i + len;
+if(end > s.length() ){
+continue;
+}
+if(t[end] == true){
+continue;
+}
+if(s.substring(i, end).equals(a)){
+t[end] = true;
+}
+}
+}
+return t[s.length()];
+}
+}
+

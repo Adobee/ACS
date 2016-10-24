@@ -1,0 +1,9 @@
+public ZSplitPattern(int limit, Pattern nearPatter, Pattern farPattern) {
+super(limit, nearPatter, farPattern);
+}
+
+@Override
+public BasicBlock applyTo(Point position, PositionModification positionModification) {
+if ( position.getZ() > limit ) {
+return farPattern.applyTo( position, positionModification );
+

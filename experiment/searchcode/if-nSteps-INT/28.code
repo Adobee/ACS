@@ -1,0 +1,11 @@
+//  public int jump(int[] A) {
+//	if(A == null) return -1;
+//	int[] L = new int[A.length];
+//	L[A.length -1] = 0;
+* @param A
+* @return
+*/
+public int jump(int[] A) {
+if(A == null) return -1;
+if(A.length == 1) return 1;
+

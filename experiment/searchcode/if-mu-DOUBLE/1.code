@@ -1,0 +1,7 @@
+public class awgn extends noiseModel{
+private double muX, muY, muZ, sigmaX, sigmaY, sigmaZ;
+private boolean is3d;
+private void setParams(double[] params){
+if (params.length ==2){ //mu&amp;sigma
+muX = muY = muZ = params[0];
+

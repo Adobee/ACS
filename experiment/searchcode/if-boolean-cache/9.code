@@ -1,0 +1,12 @@
+Cache cache = cacheManager.getCache(cacheName);
+if(cache!=null){
+ValueWrapper valueWrapper = cache.get(key);
+if(valueWrapper!=null){
+value = valueWrapper.get();
+}
+}
+return value;
+}
+
+public static boolean put(String cacheName, Object key, Object value) {
+

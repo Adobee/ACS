@@ -1,0 +1,9 @@
+public class objPaintInstruction
+{
+
+private int startRow = 0, startColumn = 0, rowCells = 0, columnCells = 0;
+public objPaintInstruction (int startRow, int startColumn, int numCells)
+{
+
+this.startRow = startRow;
+

@@ -1,0 +1,9 @@
+return getCheckerCreator(checkerName).getDataFilesExtensions();
+}
+
+public static boolean checkArgumentList(final String checkerName,
+final List<File> args) throws UnsupportedOperationException {
+final CheckerCreator creator = creatorsDictionary.get(checkerName);
+if (creator == null)
+throw new UnsupportedOperationException(&quot;Checker &#39;&quot; + checkerName +
+

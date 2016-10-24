@@ -1,0 +1,9 @@
+public static HttpMethod byString(String method) {
+for (HttpMethod value : HttpMethod.values())
+if (value.toString().equals(method)) return value;
+
+throw new RuntimeException(method + &quot; isn&#39;t a HttpMethod&quot;);
+}
+
+}
+

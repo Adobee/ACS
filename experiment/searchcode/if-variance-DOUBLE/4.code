@@ -1,0 +1,8 @@
+double [][] meanVariance = new double [3][4];
+double [][] newMeanVariance = new double [3][4];
+double [][] probs;
+probs[i][2] = getProb(nums[i],meanVariance[2][0],meanVariance[2][1])*meanVariance[2][3];
+double totalProb = probs[i][0] + probs[i][1] + probs[i][2];
+
+if(totalProb!=0){
+

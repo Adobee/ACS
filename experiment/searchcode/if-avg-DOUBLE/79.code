@@ -1,0 +1,10 @@
+public int solution(int[] A) {
+int n = A.length;
+
+if(n < 2) return 0;
+
+double min = (A[0]+A[1])/2.0;
+int ret = 0;
+for(int i = 2; i<n; i++){
+double avg = (A[i]+A[i-1])/2.0;
+

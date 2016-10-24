@@ -1,0 +1,9 @@
+for (int iModifier = 0; iModifier < features.length; iModifier++)
+{
+if(test[iModifier] == gold[iModifier]) continue;
+int i = 0, j = 0;
+
+while (i < testFeatures.length &amp;&amp; j < goldFeatures.length)
+{
+if (testFeatures[i] < goldFeatures[j]) { i++; diff++; }
+

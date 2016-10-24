@@ -1,0 +1,11 @@
+public static void main(String[] args) throws Exception
+{
+// numThreads workers, numIterations each
+int numIterations = numSamples / numThreads;
+new Master().doRun(numIterations, numThreads);
+* Creates workers to run the Monte Carlo simulation
+* and aggregates the results.
+*/
+class Master {
+public void doRun(int numIterations, int numWorkers) throws InterruptedException, ExecutionException
+

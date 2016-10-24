@@ -1,0 +1,9 @@
+private static final String LONG_FORM_PREFIX = &quot;--&quot;;
+private final String shortFormat;
+private final String longFormat;
+private final String valueKey;
+return (LONG_FORM_PREFIX + longFormat).equals(argument) || (SHORT_FORM_PREFIX + shortFormat).equals(argument);
+}
+
+private static boolean isArgumentSuitable(final String argument) {
+

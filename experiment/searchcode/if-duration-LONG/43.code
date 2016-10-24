@@ -1,0 +1,12 @@
+* @return formatted duration String or i18ned &quot;unknown&quot; if null.
+*/
+public String format(Long duration)
+{
+if (duration == null)
+return jiraDurationUtils.getFormattedDuration(duration, i18nHelper.getLocale());
+}
+
+public String shortFormat(Long duration)
+{
+if (duration == null)
+

@@ -1,0 +1,16 @@
+public class FIDDetector {
+Matrix W;
+Matrix WTW;
+int n;
+int r;
+int maxIterations;
+
+public FIDDetector(Matrix W) {
+this.W = W;
+public FIDDetector(Matrix W, int maxIterations) {
+this(W);
+this.maxIterations = maxIterations;
+}
+
+double getAnomalyIndex(double[] X) throws IllegalArgumentException {
+

@@ -1,0 +1,9 @@
+package part1.week4;
+
+public class HeapSort<Key extends Comparable<Key>> {
+
+public void sort(Key[] a) {
+int N = a.length;
+for (int i = N / 2; i >= 1; i--) {
+sink(a, i, N);
+

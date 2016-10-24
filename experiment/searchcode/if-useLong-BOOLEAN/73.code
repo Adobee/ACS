@@ -1,0 +1,10 @@
+public boolean equals(Object obj) {
+if (!super.equals(obj)) {
+return false;
+}
+
+if (getRank() == 0) // already true for zero-rank dataset
+Dataset bds = b instanceof Dataset ? (Dataset) b : DatasetFactory.createFromObject(b);
+boolean useLong = bds.elementClass().equals(Long.class);
+if (bds.getSize() == 1) {
+

@@ -1,0 +1,15 @@
+public abstract class Event {
+
+protected boolean constant, executed;
+
+public Event(boolean constant) {
+this.constant = constant;
+if (!constant &amp;&amp; !executed) {
+effect(c, s);
+executed = true;
+}
+}
+}
+
+public boolean isExecuted() {
+

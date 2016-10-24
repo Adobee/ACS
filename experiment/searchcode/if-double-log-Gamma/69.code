@@ -1,0 +1,11 @@
+return Math.exp(-x / scale) / scale;
+}
+
+double a = Math.exp((shape - 1.0) * Math.log(x / scale) - x / scale
+- GammaFunction.lnGamma(shape));
+// double a = Math.pow(scale,-shape) * Math.pow(x, shape-1.0);
+// double b = x/scale + GammaFunction.lnGamma(shape);
+// return Math.log(a) - b;
+
+// AR - changed this to return -ve inf instead of throwing an
+

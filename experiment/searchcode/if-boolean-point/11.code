@@ -1,0 +1,11 @@
+private boolean ok = false;
+
+private Point point;
+
+public RemovePointCommand(Point point) {
+this.point = point;
+}
+
+public void execute(PointStorage points) {
+if (points.containsPoint(point)) {
+

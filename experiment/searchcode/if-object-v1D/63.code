@@ -1,0 +1,8 @@
+assertThat(request.get(&quot;user&quot;), is(not(nullValue())));
+
+final Map<String, Object> user = (Map<String, Object>) request.get(&quot;user&quot;);
+assertThat(user.get(&quot;age&quot;), is(not(nullValue())));
+
+final Map<String, Object> age = (Map<String, Object>) user.get(&quot;age&quot;);
+assertThat((Integer) age.get(&quot;min&quot;), is(equalTo(21)));
+

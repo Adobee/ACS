@@ -1,0 +1,9 @@
+public boolean addElement(int newElm) {
+int[] newList = new int[list.length+1];
+for (int i = 0; i < list.length; i++) {
+if (list[i] == newElm)
+return false;
+newList[i] = list[i];
+}
+newList[newList.length-1] = newElm;
+

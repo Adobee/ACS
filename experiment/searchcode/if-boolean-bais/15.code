@@ -1,0 +1,9 @@
+public GlyfSimpleDescript(GlyfTable parentTable, short numberOfContours, ByteArrayInputStream bais) {
+
+super(parentTable, numberOfContours, bais);
+
+// Simple glyph description
+for (int index = 0; index < flagCount; index++) {
+flags[index] = (byte) bais.read();
+if ((flags[index] &amp; repeat) != 0) {
+

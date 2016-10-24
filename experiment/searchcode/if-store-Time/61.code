@@ -1,0 +1,10 @@
+public TimerDebug(boolean pShouldStore)
+{
+super();
+shouldStore = pShouldStore;
+if (shouldStore)
+long elapsed = endTime - startTime;
+if (shouldStore)
+store.add( new Long( elapsed ) );
+return elapsed;
+

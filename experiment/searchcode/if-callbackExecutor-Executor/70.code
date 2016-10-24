@@ -1,0 +1,6 @@
+public class RunnableCallbackExecutor implements CallbackExecutor {
+private static final Logger log = Logger.getLogger(RunnableCallbackExecutor.class.getName());
+if (callback instanceof Runnable) {
+if (executor != null) {
+executor.execute((Runnable) callback);
+

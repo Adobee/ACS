@@ -1,0 +1,12 @@
+public Line(double xa, double ya, double xb, double yb) {
+points = new Matrix(2, 2);
+points._values[0][0] = xa;
+points._values[0][1] = ya;
+} else {
+double delta = Math.abs(run / rise);
+int x = xa;
+if(ya > yb){
+int z;
+z = ya;
+ya = yb;
+

@@ -1,0 +1,14 @@
+public class Validator {
+private String errorMessage;
+
+/**
+* @return the errorMessage
+*/
+public String getErrorMessage() {
+this.errorMessage = errorMessage;
+}
+
+public String validateDir(File file) {
+if (file.isFile()) {
+errorMessage = &quot;Please enter a directory!&quot;;
+

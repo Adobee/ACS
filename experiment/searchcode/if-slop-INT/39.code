@@ -1,0 +1,7 @@
+private void startServers(int... nodeIds) throws IOException {
+for(int nodeId: nodeIds) {
+if(nodeId < NUM_SERVERS) {
+.getStorageEngine(nextSlop.getStoreName());
+if(nextSlop.getOperation().equals(Slop.Operation.PUT)) {
+assertNotSame(&quot;entry should be present at store&quot;,
+

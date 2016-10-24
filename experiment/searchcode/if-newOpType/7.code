@@ -1,0 +1,9 @@
+for (SearchHit doc : docs) {
+if (accept(doc)) {
+RequestWrapper<?> request = scriptApplier.apply(copyMetadata(buildRequest(doc), doc), doc);
+scriptChangedTTL(request, newValue);
+}
+
+OpType newOpType = OpType.fromString(newOp);
+if (newOpType !=  oldOpType) {
+

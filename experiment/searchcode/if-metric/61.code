@@ -1,0 +1,19 @@
+private static final Object lock = new Object();
+
+public static MetricRegistry getInstance()
+{
+if(metricRegistry == null)
+{
+synchronized (lock)
+{
+if(metricRegistry == null)
+{
+metricRegistry = new MetricRegistry();
+}
+}
+}
+
+return metricRegistry;
+}
+}
+

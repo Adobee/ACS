@@ -1,0 +1,7 @@
+public static double asymptotic(AsymptoticRangeConfig config, long count) {
+double p = 0.0;
+if (count > 0)
+double range = (config.maxVal - config.minVal)*config.percent;
+double low = center - 0.5*range;
+low = Math.max(config.minVal, low);
+

@@ -1,0 +1,10 @@
+import java.io.IOException;
+
+import grability.com.appability.BuildConfig;
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+public void onFailure(Call call, IOException e) {
+if(listener != null) {
+listener.onError();
+

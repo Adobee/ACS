@@ -1,0 +1,9 @@
+* @return the metric.
+*/
+public static Metric getMetric(String name) {
+Metric metric = null;
+if (name.startsWith(&quot;a&quot;)) {
+metric = new AUC();
+} else if (name.startsWith(&quot;c&quot;)) {
+metric = new Error();
+

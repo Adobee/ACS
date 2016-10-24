@@ -1,0 +1,10 @@
+public Object getDefaultValue(Class<?> paramClass)
+{
+if ((paramClass == null) || (paramClass == ScriptRuntime.ScriptableClass) || (paramClass == ScriptRuntime.FunctionClass)) {
+return this.obj.getDefaultValue(paramClass);
+}
+
+public Scriptable getDelegee()
+{
+return this.obj;
+

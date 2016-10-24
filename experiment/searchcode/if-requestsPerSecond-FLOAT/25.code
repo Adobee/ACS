@@ -1,0 +1,10 @@
+protected volatile int currentAsyncRequests;
+protected volatile float hertz;
+protected volatile float requestsPerSecond;
+protected volatile float responsesPerSecond;
+public synchronized float getRequestsPerSecond(){
+return requestsPerSecond;
+}
+
+public synchronized void setRequestsPerSecond(float requestsPerSecond){
+

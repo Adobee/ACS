@@ -1,0 +1,10 @@
+/** Границі обчислень для поточного потоку. */
+private int startRow;
+private int endRow;
+
+/** Проміжний вектор відовіді. */
+public MultiplierThread(int[][] matrix, int[] vector, int startRow, int endRow) {
+N = vector.length;
+if (matrix.length != vector.length) {
+throw new UnsupportedOperationException();
+

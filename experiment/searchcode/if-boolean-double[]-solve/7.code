@@ -1,0 +1,12 @@
+import eqsolve.equation.LinearEquation;
+
+public class LinearSolver implements Solver {
+
+@Override
+public boolean canSolve(Equation eq) {
+return eq instanceof LinearEquation;
+}
+
+@Override
+public double[] solve(Equation eq) {
+

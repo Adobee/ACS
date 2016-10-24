@@ -1,0 +1,13 @@
+public class PageContext<T extends Serializable> implements Serializable
+{
+protected T context;
+
+protected boolean readOnly;
+
+protected Map<String, Serializable> params = new HashMap<>();
+this.context = context;
+this.readOnly = false;
+}
+
+public PageContext(T context, boolean readOnly)
+

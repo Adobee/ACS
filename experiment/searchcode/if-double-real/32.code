@@ -1,0 +1,17 @@
+* @author albertlockett
+*
+*/
+public class Complex {
+
+public Double real;
+public Double imag;
+this.imag = 0.0;
+}
+
+/**
+* @param real
+* @param imag
+* @return real + imag * j
+*/
+public Complex(Double real, Double imag){
+

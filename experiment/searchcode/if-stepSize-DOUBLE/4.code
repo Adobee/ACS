@@ -1,0 +1,8 @@
+public class RungeKutta implements DiffEqSolver {
+DiffEq ode;
+double[] inp, k1, k2, k3, k4;
+public void step(double stepSize) {
+double[] vars = ode.getVars();
+int N = vars.length;
+if ((inp == null) || (inp.length != N)) {
+

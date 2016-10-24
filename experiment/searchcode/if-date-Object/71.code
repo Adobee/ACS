@@ -1,0 +1,11 @@
+private static final Date NULL_DATE = Dates.create(1,1,1);
+
+
+public Object toJava(Object o) throws ConversionException {
+if(o == null) return null;
+return (date.compareTo(NULL_DATE) == 0) ? null : date;
+}
+
+public Object toDB(Object o) throws ConversionException {
+if (o == null) return Dates.toSQL(NULL_DATE);
+

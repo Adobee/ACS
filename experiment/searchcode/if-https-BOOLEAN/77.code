@@ -1,0 +1,9 @@
+public Result call(Http.Context ctx) throws Throwable {
+if(!isHttpsRequest(ctx.request())){
+return redirect(&quot;https://&quot; + ctx.request().host() + ctx.request().uri());
+return delegate.call(ctx);
+}
+
+private boolean isHttpsRequest(Http.Request request){
+if(Play.isDev()){
+

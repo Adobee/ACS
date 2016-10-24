@@ -1,0 +1,14 @@
+String expression,
+Class<?> expectedType)
+{
+CoerceType type = _coerceMap.get(expectedType);
+
+if (type == null)
+return new ObjectValueExpression(expr, expression, expectedType);
+}
+
+private enum CoerceType {
+BOOLEAN,
+CHARACTER,
+STRING,
+

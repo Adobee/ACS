@@ -1,0 +1,9 @@
+public static final Rank[] SET = {TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, T, J, Q, K, ACE};
+
+public static Integer getValue(Rank rank){
+for (int i = 0; i < SET.length; i++)
+if (rank == SET[i]) return i+2;
+throw new RuntimeException(&quot;Never Executes&quot;);
+}
+}
+

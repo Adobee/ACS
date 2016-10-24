@@ -1,0 +1,6 @@
+public class ArrayMergeSortInplace<T> extends ArraySortInplaceBase<T> implements ArraySort<T> {
+
+protected T[] sort0(T[] ts, int from, int to, Comparator<T> comp) {
+if (to - from < 8) {
+ArrayInsertionSortInplace<T> is = Algorithms.arrayInsertionSortInplace();
+

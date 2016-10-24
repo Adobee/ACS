@@ -1,0 +1,8 @@
+private static char convertToHalfNumber(char ch) {
+char ret;
+if ((ch >= &#39;０&#39;) &amp;&amp; (ch <= &#39;９&#39;)) {
+ret = (char) ((ch - &#39;０&#39;) + &#39;0&#39;);
+public static String convertToHalfCharacter(String str) {
+String ret;
+if ((str == null) || str.isEmpty()) {
+

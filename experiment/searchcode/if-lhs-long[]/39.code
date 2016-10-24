@@ -1,0 +1,9 @@
+public class Auftritt_Sorter implements Comparator<GTEvent> {
+
+@Override
+public int compare(GTEvent lhs, GTEvent rhs) {
+long start_lhs = lhs.getStart();
+long start_rhs = rhs.getStart();
+if (start_lhs < start_rhs) {
+return -1;
+

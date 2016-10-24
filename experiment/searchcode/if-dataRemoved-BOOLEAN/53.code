@@ -1,0 +1,9 @@
+public void setMaximumItemCount(int maximum) {
+this.maximumItemCount = maximum;
+boolean dataRemoved = false;
+this.data.remove(0);
+dataRemoved = true;
+}
+if (dataRemoved) {
+fireSeriesChanged();
+

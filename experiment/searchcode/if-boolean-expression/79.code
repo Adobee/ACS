@@ -1,0 +1,8 @@
+public BooleanExpression booleanExpression;
+public ArithmeticExpression arithmeticExpression;
+
+public Expression(BooleanExpression booleanExpression) {
+public void visitChildren(IASTVisitor visitor) throws CompileException {
+if (construction == Construction.BOOLEANEXPRESSION) {
+this.booleanExpression.acceptVisitor(visitor);
+

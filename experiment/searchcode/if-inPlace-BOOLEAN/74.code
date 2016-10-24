@@ -1,0 +1,5 @@
+public class GrMethodInplaceRenameHandler extends MemberInplaceRenameHandler {
+@Override
+protected boolean isAvailable(PsiElement element, Editor editor, PsiFile file) {
+if (!editor.getSettings().isVariableInplaceRenameEnabled()) return false;
+

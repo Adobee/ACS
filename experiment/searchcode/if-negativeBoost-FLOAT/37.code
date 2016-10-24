@@ -1,0 +1,7 @@
+public BoostingQueryBuilder negativeBoost(float negativeBoost) {
+if (negativeBoost < 0) {
+throw new IllegalArgumentException(&quot;query requires negativeBoost to be set to positive value&quot;);
+if (parseContext.getParseFieldMatcher().match(currentFieldName, NEGATIVE_BOOST_FIELD)) {
+negativeBoost = parser.floatValue();
+} else if (parseContext.getParseFieldMatcher().match(currentFieldName, AbstractQueryBuilder.NAME_FIELD)) {
+

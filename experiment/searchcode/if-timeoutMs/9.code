@@ -1,0 +1,7 @@
+public static void tryAcquireSemaphore(Semaphore semaphore, int timeoutMs) {
+try {
+if (!semaphore.tryAcquire(timeoutMs, TimeUnit.MILLISECONDS)) {
+throw new RuntimeException(&quot;TestUtils.acquireSemaphore seems to be stuck. Ellapsed &quot; + timeoutMs + &quot; ms.&quot;);
+}
+} catch (InterruptedException e) {
+

@@ -1,0 +1,7 @@
+private void addScoresForProximityCriteria(final UserSystem userSystem, final Function<String, Double> priorityProvider, final Map<EntityPair, Map<String, Score>> result) {
+Map<EntityPair, Double> lifecycleScores = new CohesiveGroupCriterionScorer()
+.getScores(couplingInstancesRepo.findByUserSystemAndCriterion(userSystem, CouplingCriterion.IDENTITY_LIFECYCLE));
+addScoresByCriterionToResult(result, CouplingCriterion.IDENTITY_LIFECYCLE, lifecycleScores, priorityProvider.apply(CouplingCriterion.IDENTITY_LIFECYCLE));
+
+Map<EntityPair, Double> semanticProximityScores = new SemanticProximityCriterionScorer()
+

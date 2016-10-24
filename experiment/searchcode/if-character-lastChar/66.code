@@ -1,0 +1,11 @@
+lastChar = reader.read();
+}
+}
+
+// skip comment lines
+if ( lastChar == commentCharacter )
+// handle pragma lines
+if ( lastChar == pragmaCharacter )
+{
+throw new IOException( &quot;Pragma lines (starting with &quot; + pragmaCharacter +
+

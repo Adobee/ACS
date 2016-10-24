@@ -1,0 +1,9 @@
+private static boolean isAssignable(Type type, WildcardType toWildcardType,
+Map<TypeVariable<?>, Type> typeVarAssigns) {
+// would have cause the previous to return true
+if (toWildcardType == null) {
+return false;
+}
+
+// all types are assignable to themselves
+

@@ -1,0 +1,19 @@
+public class SecureParam<T extends SecureParam<T>> {
+
+/*
+* Fields
+*/
+
+private boolean finalized = false;
+
+private final List<Runnable> checks;
+public SecureParam () { this.checks = null; }
+
+/*
+* Methods
+*/
+
+protected final void set () { check.not(finalized); }
+
+public final boolean isFinalized () { return finalized; }
+

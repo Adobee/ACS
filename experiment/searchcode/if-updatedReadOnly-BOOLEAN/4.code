@@ -1,0 +1,7 @@
+* Updates transient and persistent cluster state settings if there are any changes
+* due to the update.
+*/
+final class SettingsUpdater {
+boolean updatedReadOnly = MetaData.SETTING_READ_ONLY_SETTING.get(metaData.persistentSettings()) || MetaData.SETTING_READ_ONLY_SETTING.get(metaData.transientSettings());
+if (updatedReadOnly) {
+

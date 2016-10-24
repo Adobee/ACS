@@ -1,0 +1,9 @@
+// TODO break up into smaller methods
+public int findMatch(int number, int y, int p) {
+BigInteger valueToAdd, numInverse, currentY;
+valueToAdd = valueToAdd.mod(BigInteger.valueOf(p));
+numberExpons.add(valueToAdd);
+}
+
+for (int i = 0; (i <= n) &amp;&amp; (!matchFound); i++) {
+

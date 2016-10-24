@@ -1,0 +1,9 @@
+for (Map.Entry<Integer, AbstractConstant> e : constant_pool.entrySet()) {
+tag = e.getValue().getTag();
+
+if (tag == Constants.CONSTANT_Double || tag == Constants.CONSTANT_Long) {
+AbstractConstant constant = AbstractConstant.readConstant(file);
+
+tag = constant.getTag();
+if (tag == Constants.CONSTANT_Double || tag == Constants.CONSTANT_Long) {
+

@@ -1,0 +1,9 @@
+import java.time.LocalDate;
+
+import javax.persistence.AttributeConverter;
+import javax.persistence.Converter;
+public class LocalDateConverter implements AttributeConverter<LocalDate, java.sql.Date>{
+
+public Date convertToDatabaseColumn(LocalDate localDate) {
+if (localDate == null) {
+

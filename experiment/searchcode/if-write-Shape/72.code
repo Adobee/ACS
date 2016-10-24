@@ -1,0 +1,13 @@
+write.write(&quot;  \&quot;&quot; + shape.getClass().getName() + &quot;\&quot;&quot; + &quot;:&quot;);
+write.newLine();
+write.write(&quot;  {&quot;);
+write.newLine();
+
+//color
+if(shape.getColor() == null){
+write.newLine();
+if(shape.getFillColor() == null){
+write.write(&quot;    \&quot;fillColor\&quot;: &quot; + &quot;null&quot;);
+}
+else write.write(&quot;    \&quot;fillColor\&quot;: &quot; + shape.getFillColor().getRGB());
+

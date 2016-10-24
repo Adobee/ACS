@@ -1,0 +1,10 @@
+int numberOfVariablesToOptimize = numberOfParameters- fixedParameters;
+if(numberOfVariablesToOptimize == 0){
+return;
+}
+double[] initialValues = new double[numberOfVariablesToOptimize];
+
+
+
+if(numberOfVariablesToOptimize >=1){
+

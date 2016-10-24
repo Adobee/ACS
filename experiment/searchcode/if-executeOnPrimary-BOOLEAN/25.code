@@ -1,0 +1,7 @@
+Request request = new Request(shardId);
+boolean timeout = randomBoolean();
+if (timeout) {
+ShardRouting primaryShard = state.getRoutingTable().shardRoutingTable(shardId).primaryShard();
+boolean executeOnPrimary = true;
+// whether shard has been marked as relocated already (i.e. relocation completed)
+

@@ -1,0 +1,10 @@
+public void setOrAnimatePlusCheckIcon(final FloatingActionButton fab, boolean isCheck,
+boolean allowAnimate) {
+if (!hasL()) {
+drawable.setTint(res.getColor(R.color.fab_icon_color));
+fab.setImageDrawable(drawable);
+}
+
+if (allowAnimate) {
+drawable.setState(isCheck ? STATE_UNCHECKED : STATE_CHECKED);
+

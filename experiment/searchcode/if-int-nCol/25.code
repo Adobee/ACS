@@ -1,0 +1,5 @@
+int nrow = crow + moveRow[i];
+int ncol = ccol + moveCol[i];
+if (nrow >= 0 &amp;&amp; nrow < height &amp;&amp; ncol >= 0 &amp;&amp; ncol < width) {
+if (maze[nrow].charAt(ncol) == &#39;.&#39; &amp;&amp; mark[nrow][ncol] == 0) {
+

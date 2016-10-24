@@ -1,0 +1,7 @@
+public class RFC2965DomainAttributeHandler implements CommonCookieAttributeHandler {
+public boolean domainMatch(String str, String str2) {
+return str.equals(str2) || (str2.startsWith(&quot;.&quot;) &amp;&amp; str.endsWith(str2));
+throw new CookieRestrictionViolationException(&quot;Domain attribute \&quot;&quot; + cookie.getDomain() + &quot;\&quot; violates RFC 2965: the value contains no embedded dots &quot; + &quot;and the value is not .local&quot;);
+} else if (!domainMatch(toLowerCase, toLowerCase2)) {
+throw new CookieRestrictionViolationException(&quot;Domain attribute \&quot;&quot; + cookie.getDomain() + &quot;\&quot; violates RFC 2965: effective host name does not &quot; + &quot;domain-match domain attribute.&quot;);
+

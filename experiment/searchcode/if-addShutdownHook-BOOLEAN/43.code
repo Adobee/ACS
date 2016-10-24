@@ -1,0 +1,10 @@
+private TestServer testServer;
+
+private static boolean initialised = false;
+
+@Before
+public void before() {
+if (!initialised) {
+start(testServer);
+initialised = true;
+

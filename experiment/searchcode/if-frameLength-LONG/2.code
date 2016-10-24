@@ -1,0 +1,8 @@
+* The length of the stream, expressed in sample frames rather than bytes
+*/
+private long frameLength;
+
+public AudioEvent(AudioFormat format,long frameLength){
+this.format = format;
+this.converter = AudioFloatConverter.getConverter(format);
+

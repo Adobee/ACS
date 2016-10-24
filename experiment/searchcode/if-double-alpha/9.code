@@ -1,0 +1,9 @@
+double calcFirstFunction(double alphaLevel, double a, double b) {
+
+if (alphaLevel < 0.5)
+return a + Math.sqrt(alphaLevel * Math.pow(b - a, 2) / 2);
+else if (alphaLevel == 0.5)
+return (a + b) / 2;
+else
+return b -  Math.sqrt((1 - alphaLevel) * Math.pow(b - a, 2) / 2);
+

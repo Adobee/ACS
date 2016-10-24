@@ -1,0 +1,15 @@
+String cnfClause = &quot;&quot;;
+boolean firstIteration = true;
+for (SubClause cs : subClauses) {
+if (firstIteration) {
+cnfClause += cs.assignment;
+firstIteration = false;
+} else {
+cnfClause += &quot; or &quot; + cs.assignment;
+}
+}
+
+return &quot;[&quot; + cnfClause + &quot;]&quot;;
+}
+}
+

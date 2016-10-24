@@ -1,0 +1,8 @@
+private int timeToLive;
+private int cacheMaxSize;
+private ReadWriteLock lock = new ReentrantReadWriteLock();
+private Map<String, CacheEntry<T>> cache = new LinkedHashMap<String, CacheEntry<T>>();
+
+public Cache(int timeToLive, int cacheMaxSize) {
+this.timeToLive = timeToLive;
+

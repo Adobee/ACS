@@ -1,0 +1,10 @@
+private final int color;
+
+HealthStep(float limit, int argb) {
+healthLimit = limit;
+color = argb;
+}
+
+public static HealthStep getStep(Minecraft mc, EntityLivingBase entity, float time) {
+if (entity instanceof EntityPlayer &amp;&amp; (((EntityPlayer) entity).capabilities.isCreativeMode || ((EntityPlayer) entity).isSpectator())) return CREATIVE;
+

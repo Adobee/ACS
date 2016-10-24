@@ -1,0 +1,8 @@
+// store.putInt(AGGREG_COUNT_ID, columns.length);
+for (IColumn column : this.columns) {
+IAggregator aggregatorUsed = column.getAggregator();
+if (aggregatorUsed != null) {
++ AggregatorSavable.AGGREG_POSTFIX_ID, aggregatorUsed
+.getClass().getCanonicalName());
+if (aggregatorUsed instanceof ISaveable) {
+

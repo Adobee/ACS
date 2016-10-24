@@ -1,0 +1,8 @@
+Path translogPath = getTranslogPath(options);
+Path idxLocation = translogPath.getParent().resolve(&quot;index&quot;);
+
+if (Files.exists(translogPath) == false || Files.isDirectory(translogPath) == false) {
+String translogUUID = commitData.get(Translog.TRANSLOG_UUID_KEY);
+if (translogGeneration == null || translogUUID == null) {
+throw new ElasticsearchException(&quot;shard must have a valid translog generation and UUID but got: [{}] and: [{}]&quot;,
+

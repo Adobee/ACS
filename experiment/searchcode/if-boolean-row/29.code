@@ -1,0 +1,8 @@
+class Queen {
+static int[] x = new int[128];
+static boolean[] a = new boolean[128];  // row                 (-)
+for (int row = 0; row < n; row++) {
+if (a[row] &amp;&amp; b[row+col] &amp;&amp; c[row-col+n]) {
+x[col] = row;
+a[row] = b[row+col] = c[row-col+n] = false;
+

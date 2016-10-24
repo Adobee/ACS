@@ -1,0 +1,9 @@
+JsonObject deflated = projectElement.getAsJsonObject();
+
+// check for the unique identifier <idNum> field.
+if (!deflated.has(&quot;idNum&quot;)) {
+// for all other attributes: instantiate as null, fill in if given.
+
+//int idNum = deflated.get(&quot;idNum&quot;).getAsInt();
+String idNum = deflated.get(&quot;idNum&quot;).getAsString();
+

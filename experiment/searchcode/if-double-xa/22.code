@@ -1,0 +1,9 @@
+// Makes the poles to the left of the complex plane so as to make sure that xa[0] converges
+// to y, the measured value.
+// If the value of y is completely unreliable, we choose Kx=0, Kv=0 and we have
+// away from the origin, that is, xa[0] converges to y two time faster (in time) than
+// xa[0] converges to the target value.
+
+public StateObserver(double coeff, double dtime) {
+this.coeff = coeff;
+

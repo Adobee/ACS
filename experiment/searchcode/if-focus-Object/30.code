@@ -1,0 +1,7 @@
+public Object findShopFocusAd(Object object){
+HeadObject head=new HeadObject();
+List<ShopFocusAd> listFocusAds=null;
+try{
+listFocusAds = shoFocusAdMapper.selectShopFocusAd((ShopFocusAd) object);
+head.setRetCode(ErrorCode.SUCCESS);
+

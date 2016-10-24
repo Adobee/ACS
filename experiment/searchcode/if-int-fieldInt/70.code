@@ -1,0 +1,8 @@
+//represents a sunday, monday, ..., saturday bitfield if mRecurrenceType is DAYS_OF_WEEK
+private long mRecurrenceValue;
+
+private int mReminderAdvanceTime;
+// The code is currently pretty verbose, though. Can revise later to iterate through a for
+// loop of masks instead.
+private static boolean[] unpackWeek(long fieldInt){
+

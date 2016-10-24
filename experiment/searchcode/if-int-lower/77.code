@@ -1,0 +1,10 @@
+while (lower < upper) {
+int mid = (upper + lower) / 2;
+
+if (target > A[mid]) {
+lower = mid + 1;
+while (lower < upper) {
+int mid = (upper + lower) / 2;
+
+if (target < A[mid]) {
+

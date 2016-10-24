@@ -1,0 +1,16 @@
+private double y;
+private boolean infiniteP;
+
+public Point() {
+infiniteP = true;
+}
+
+public Point(double x, double y) {
+this.x = x;
+this.y = y;
+}
+
+public double getX() {
+if (infiniteP)
+throw new IllegalArgumentException();
+

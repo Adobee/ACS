@@ -1,0 +1,8 @@
+protected Paint lookupSectionOutlinePaint(Comparable key,boolean autoPopulate){
+Paint result=getSectionOutlinePaint();
+if (result != null) {
+return result;
+}
+if (autoPopulate) {
+DrawingSupplier ds=getDrawingSupplier();
+

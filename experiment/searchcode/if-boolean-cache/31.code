@@ -1,0 +1,13 @@
+String str = Arrays.toString(result);
+System.out.println(str);
+}
+
+public static boolean[] jumpGame(int[] input) {
+if (input == null) return null;
+jumpGameHelp(input, cache, 0);
+return cache;
+}
+
+public static void jumpGameHelp(int[] input, boolean[] cache, int i) {
+if (i >= input.length || i < 0) return;
+

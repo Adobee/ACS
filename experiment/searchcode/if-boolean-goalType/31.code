@@ -1,0 +1,10 @@
+public class GoalVisionTargetingCommandBase extends Command {
+private double VISION_TARGETING_TIMEOUT_SECS = 5.0;
+
+private int goalType;
+private VisionTargetFinderClient vtfc;
+// Make this return true when this Command no longer needs to run execute()
+protected final boolean isFinished() {
+
+if (!foundAngle &amp;&amp; this.isTimedOut()) {
+

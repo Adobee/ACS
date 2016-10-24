@@ -1,0 +1,6 @@
+int rows = obstacleGrid.length, cols = obstacleGrid[0].length;
+if(rows == 0 || cols == 0) return 0;
+for(int i = rows-2; i >= 0; i--){
+for(int j = cols-2; j >= 0; j--){
+if (obstacleGrid[i][j] == 1) obstacleGrid[i][j] = 0;
+

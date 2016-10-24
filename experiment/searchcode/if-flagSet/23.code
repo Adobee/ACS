@@ -1,0 +1,7 @@
+EnumSet<RequestHandlerFlag> flagSet = null;
+
+for (RequestHandlerFlag v : values()) {
+if (0 != (value &amp; v.getValue())) {
+if (flagSet == null) {
+flagSet = EnumSet.of(v);
+

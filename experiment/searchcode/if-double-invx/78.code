@@ -1,0 +1,8 @@
+*  For additional precision, the code splits double numbers into two parts,
+*  by clearing the low order 30 bits if possible, and then performs the arithmetic
+final double result = x * y;
+final double invx = 1d / x;
+final double invy = 1d / y;
+
+if (invx == 0) { // X is infinite
+

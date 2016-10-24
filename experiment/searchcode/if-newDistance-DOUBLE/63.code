@@ -1,0 +1,9 @@
+mMap.mMultiTouchScale=1;
+oldDistance = newDistance;
+}else if(oldDistance/newDistance > 1) {
+mMap.setZoom(mMap.getZoom()-1);
+preMotionPoint = p2;
+}else if(mode==MODE_ZOOM){
+newDistance = spacing(event);
+if(newDistance==1) return;
+

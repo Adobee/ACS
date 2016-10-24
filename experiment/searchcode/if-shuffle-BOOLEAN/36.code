@@ -1,0 +1,12 @@
+* @author Kobe
+*
+*/
+public class IsShuffle {
+public boolean isShuffle(String a, String b, String c) {
+if (a == null || a.length() == 0) {
+if (a.charAt(0) == c.charAt(0)) {
+return isShuffle(a.substring(1), b, c.substring(1));
+}
+
+if (b.charAt(0) == c.charAt(0)) {
+

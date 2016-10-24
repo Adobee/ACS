@@ -1,0 +1,11 @@
+stageToObject( offsetLocal );
+}
+
+
+if ( Gdx.input.isKeyPressed(Input.Keys.ALT_LEFT) ) {
+
+float ang = stageCoord.angle() - downStagePos.angle();
+moveBbControlPoint( selectedControlPoint, getBbTopRightControlPoint(),
+offsetLocal, offsetStage, downLocalPos, downStagePos );
+} else if ( selectedControlPoint == getBbDownRightControlPoint() ) {
+

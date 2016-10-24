@@ -1,0 +1,14 @@
+public Primitive intersect(Hyperplane h)
+{
+double dot1 = h.dotPlane(v[0].pos);
+double dot2 = h.dotPlane(v[1].pos);
+
+if(dot1 * dot2 > 0)
+return null;
+
+if(dot1 == 0 &amp;&amp; dot2 == 0)
+return this;
+
+if(dot1 == 0)
+return new Point(v[0]);
+

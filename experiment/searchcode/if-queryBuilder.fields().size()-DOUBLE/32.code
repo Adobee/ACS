@@ -1,0 +1,6 @@
+public static Object rangeQuery(String field, double start, double end) {
+QueryBuilder qb = QueryBuilders.rangeQuery(field).from(start).to(end).includeLower(true).includeUpper(false);
+public static Object lessThanQuery(String field, double end) {
+if (field.equalsIgnoreCase(&quot;age&quot;)) {
+return dateLessThanQuery(field, (int) end);
+

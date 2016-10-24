@@ -1,0 +1,13 @@
+public final class Matriz {
+
+private int nren, ncol;
+private double datos[][];
+
+/**
+* Crea una matriz nula
+* @param c int
+*/
+public void inicializa(int r, int c) {
+// Si la matriz es nula reserva memoria.
+if ((nren == 0 &amp;&amp; ncol == 0) || this == null) {
+

@@ -1,0 +1,13 @@
+public class geom_cylinder extends Geometry {
+
+Vector z1,z2,dz;
+private double r, denom; // maxN;
+
+// A Cylinder is composed from all points within a radius of r from a line between z1 and z2.
+public geom_cylinder (Vector z1, Vector z2, double radius)
+{
+this.z1 = z1;
+this.z2 = z2;
+this.r  = radius;
+denom = z2.sub(z1).mag();
+

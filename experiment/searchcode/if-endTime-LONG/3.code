@@ -1,0 +1,6 @@
+songs[i].timer = in.nextInt();
+if (i < k) {
+songs[i].endtime = songs[i].time + songs[i].timer;
+} else {
+if(songs[i-1].endtime>songs[i].time)songs[i].endtime = min(i - k, i) + songs[i].timer;
+

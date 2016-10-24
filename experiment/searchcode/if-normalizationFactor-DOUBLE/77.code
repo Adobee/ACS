@@ -1,0 +1,8 @@
+Classifier bestClassifier = selectBestClassifier();
+bestClassifier.computeC(epsilon);
+double normalizationFactor = updateProbab(bestClassifier);
+for(int l = 0; l < exampleSet.size(); l++){
+double targtAttr  = computeTargetAttribute(l);
+System.out.print(targtAttr + &quot;,&quot;);
+if((exampleSet.get(l).getTagetAttribute()==-1 &amp;&amp; targtAttr >= 0.0) ||
+

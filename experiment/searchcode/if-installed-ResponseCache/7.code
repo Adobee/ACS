@@ -1,0 +1,6 @@
+ResponseCache responseCache = ResponseCache.getDefault();
+if (responseCache instanceof JamendoCache) {
+Log.d(TAG, &quot;Cache has already been installed.&quot;);
+} else if (responseCache == null) {
+JamendoCache dropCache = new JamendoCache(context);
+

@@ -1,0 +1,10 @@
+package pl.cougy.minesweeper;
+
+public enum FieldType {
+BOMB(&quot;*&quot;), EMPTY(&quot;.&quot;), ONE(&quot;1&quot;), TWO(&quot;2&quot;), THREE(&quot;3&quot;),
+public static FieldType increment(FieldType fieldType) {
+if(!isIncrementable(fieldType)) {
+return fieldType;
+}
+else {
+

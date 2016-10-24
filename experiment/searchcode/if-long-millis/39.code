@@ -1,0 +1,8 @@
+private static void runWithSpin(String[] args) {
+long nowNanos = 0, startNanos = 0;
+long startMillis = System.currentTimeMillis();
+long nowMillis = startMillis;
+
+while (startMillis == nowMillis) {
+startNanos = System.nanoTime();
+

@@ -1,0 +1,7 @@
+for (String s : this.getGrid()) {
+int startColumn = -1;
+int curColumn = 0;
+for (Character c : s.toCharArray()) {
+if (startColumn != -1 &amp;&amp; c == &#39;.&#39;) {
+ans.add(&quot;PAINT_LINE &quot; + row + &quot; &quot; + startColumn + &quot; &quot; + row + &quot; &quot; + (curColumn-1));
+

@@ -1,0 +1,10 @@
+import com.google.gwt.text.shared.AbstractRenderer;
+
+public class EnumRenderer <T extends Enum<?>> extends AbstractRenderer<T> {
+
+private String emptyValue = &quot;&quot;;
+
+@Override
+public String render(T object) {
+if (object == null)
+

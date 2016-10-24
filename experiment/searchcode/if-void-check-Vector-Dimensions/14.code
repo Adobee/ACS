@@ -1,0 +1,12 @@
+return (float) Math.sqrt(modulus2());
+}
+
+protected Vector add(Vector rhs) {
+checkDimensions(rhs);
+Vector result = new Vector(this);
+return (this.modulus() < 0.001f) ? v.mul(0) : v.mul(1.0f/modulus());
+}
+
+private void checkDimensions(Vector vec) {
+if (values.length != vec.size()) {
+

@@ -1,0 +1,5 @@
+double[] movingaverage_weight_array = new double[5];
+Map<String,Double> inaccuracy_array=new HashMap<String,Double>();
+for (double weight_week5 = 1; weight_week5 > 0; weight_week5 = weight_week5 - step) {
+for (double weight_week4 = weight_week5 - step; weight_week4 >= 0; weight_week4 = weight_week4 - step) {
+

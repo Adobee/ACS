@@ -1,0 +1,15 @@
+private long millis;
+private long nanos;
+
+@Override
+public long nanoTime() {
+return nanos;
+}
+
+@Override
+public long milliTime() {
+return millis;
+}
+
+/** Here millis are simply nanos divided by {@link SimonClock#NANOS_IN_MILLIS}. */
+

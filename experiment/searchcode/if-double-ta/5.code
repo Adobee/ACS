@@ -1,0 +1,10 @@
+public class ASMEWetAir implements Serializable, Cloneable {
+private double RHMz;
+private double Pa;
+private double Ta;
+
+public ASMEWetAir() {
+}
+
+public ASMEWetAir(double Pa, double Ta, double MFrWA, Object fake) {
+

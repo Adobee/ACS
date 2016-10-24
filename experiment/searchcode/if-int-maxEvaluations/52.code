@@ -1,0 +1,11 @@
+private int lambda;
+private int maxEvaluations;
+private MutationOperator<S> mutation;
+private EvolutionStrategyVariant variant ;
+this.lambda = lambda;
+
+return this;
+}
+
+public EvolutionStrategyBuilder<S> setMaxEvaluations(int maxEvaluations) {
+

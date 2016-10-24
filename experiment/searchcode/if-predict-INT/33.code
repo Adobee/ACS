@@ -1,0 +1,11 @@
+return extractPredictedClass(predict, threshold);
+}
+
+@Override
+public int predictedClass(DoubleVector features) {
+DoubleVector predict = predict(features);
+public int extractPredictedClass(DoubleVector predict) {
+if (predict.getLength() == 1) {
+return (int) Math.rint(predict.get(0));
+} else {
+

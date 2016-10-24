@@ -1,0 +1,15 @@
+return StringUtils.isBlank(str);
+}
+
+
+/**
+* 引用类型的store
+*/
+public static boolean isStoreA(int seen) {
+if (seen == ASTORE || (seen >= ASTORE_0 &amp;&amp; seen <= ASTORE_3 )) {
+return mulOrDivList.contains(Short.valueOf(String.valueOf(seen)));
+}
+
+public static boolean isStore(int seen) {
+if (seen >= ISTORE &amp;&amp; seen <= SASTORE) {
+

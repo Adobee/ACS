@@ -1,0 +1,12 @@
+public Poblacion selectPadres(Poblacion p) {
+double fit=0.0;
+Poblacion h= new Poblacion();
+Random r= new Random();
+double prob=0.0;
+for (int j=0 ; j<p.getIndividuos().size(); j++){
+prob=r.nextDouble();
+fit=0.0;
+
+for(Individuo i : p.getIndividuos()){
+fit+=i.getFit()/p.sumFit();
+

@@ -1,0 +1,7 @@
+public static void testCase(Settings indexSettings, Runnable restartCluster, ESLogger logger, boolean useSyncIds) {
+/*
+* prevent any rebalance actions during the peer recovery if we run into
+client().admin().indices().prepareFlush().setWaitIfOngoing(true).setForce(true).get();
+
+if (useSyncIds == false) {
+

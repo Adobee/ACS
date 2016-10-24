@@ -1,0 +1,11 @@
+* {@link org.elasticsearch.common.io.stream.StreamableReader#readFrom(StreamInput)} */
+static final Fuzziness PROTOTYPE = AUTO;
+
+private Fuzziness(int fuzziness) {
+if (fuzziness != 0 &amp;&amp; fuzziness != 1 &amp;&amp; fuzziness != 2) {
+return Double.parseDouble(fuzziness.toString());
+}
+
+public float asFloat() {
+if (this.equals(AUTO)) {
+

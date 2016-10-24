@@ -1,0 +1,10 @@
+public class QtyDiscount implements DiscountStrategy{
+private double percent =.10 ;
+private double minQuantity =5;
+
+public QtyDiscount(double percent, double qty, double minQuantity) {
+public double getAmountSaved(double price, double qty){
+double amtSaved = 0;
+if(qty >= minQuantity){
+amtSaved = price * qty * percent;
+

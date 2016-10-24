@@ -1,0 +1,12 @@
+public static final float c(float f1) {
+return (float) Math.sqrt((double) f1);
+}
+
+public static final float a(double d1) {
+int i = (int) f1;
+
+return f1 < (float) i ? i - 1 : i;
+}
+
+public static int b(double d1) {
+

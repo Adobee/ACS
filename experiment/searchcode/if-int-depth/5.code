@@ -1,0 +1,10 @@
+package leetcode;
+
+public class Maximum_Depth_of_Binary_Tree {
+
+private int depth;
+private int maxDepth;
+public int maxDepth(TreeNode root) {
+if(root==null)
+return 0;
+

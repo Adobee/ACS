@@ -1,0 +1,11 @@
+final private double kilogram = 0.02835;
+
+private double factor;
+
+public WeightConverter(String unit) {
+
+if (unit.equals(&quot;Ounce&quot;)) {
+factor = ounce;
+}
+else if (unit.equals(&quot;Pound&quot;)) {
+

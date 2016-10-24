@@ -1,0 +1,9 @@
+final int sizeOfBuffer = sendBuffer.position();
+
+if (sizeOfBuffer <= 0) {
+return false;
+sendBuffer.limit(sendBuffer.capacity());
+sendBuffer.rewind();
+
+if (sizeOfBuffer == nbSentBytes) {
+

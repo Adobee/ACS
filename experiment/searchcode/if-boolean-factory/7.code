@@ -1,0 +1,16 @@
+import com.frugalbin.communication.services.impl.ServiceFactory;
+
+public abstract class AbstractCache implements Cache
+{
+private boolean isInitialized = false;
+this.serviceFactory = serviceFactory;
+
+if (!isInitialized())
+{
+refreshCache();
+isInitialized = true;
+}
+}
+
+protected boolean isInitialized()
+

@@ -1,0 +1,13 @@
+private static void getRoots(double r) {
+seq[0] = x0;
+double curX = x0;
+double nextX = x0;
+int step = 0;
+do {
+if (step == MAXSTEPS) {
+break;
+}
+++step;
+curX = nextX;
+nextX = r * curX * (1 - curX);
+

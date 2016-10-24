@@ -1,0 +1,8 @@
+* A {@linkplain Converter.Factory converter} which uses Moshi for JSON.
+* <p>
+* This converter assumes that it can handle all types.
+* If you are using retro-jus mixing JSON serialization with
+private MoshiConverterFactory(Moshi moshi) {
+if (moshi == null) throw new NullPointerException(&quot;moshi == null&quot;);
+this.moshi = moshi;
+

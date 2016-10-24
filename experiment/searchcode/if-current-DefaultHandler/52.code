@@ -1,0 +1,7 @@
+private static volatile boolean enableShutdownHandler = true;
+private static volatile Runnable defaultHandler = null;
+if (enableShutdownHandler) {
+if (defaultHandler == null) {
+defaultHandler = handler;
+Runtime.getRuntime().addShutdownHook(new Thread() {
+

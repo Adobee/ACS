@@ -1,0 +1,10 @@
+import org.apache.commons.math.MathException;
+import org.apache.commons.math.distribution.PoissonDistributionImpl;
+import org.peerfact.impl.scenario.XMLConfigurableConstructor;
+public class PoissonDistribution implements Distribution {
+private double lambda;
+
+private PoissonDistributionImpl poisson;
+
+@XMLConfigurableConstructor({ &quot;lambda&quot; })
+

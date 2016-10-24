@@ -1,0 +1,12 @@
+package org.limeprotocol.network;
+
+import org.limeprotocol.Reason;
+
+public class LimeException extends RuntimeException {
+this(new Reason(reasonCode, reasonDescription));
+}
+
+public LimeException(Reason reason) {
+
+if (reason == null) {
+

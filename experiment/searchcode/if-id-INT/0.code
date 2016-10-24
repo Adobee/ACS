@@ -1,0 +1,24 @@
+class UnionFind
+{
+private int N;
+int[] id;
+UnionFind(int N)
+{
+this.N = N;
+id = new int[N];
+public boolean find(int p, int q)
+{
+return id[p]==id[q];
+}
+
+public void union(int p, int q)
+{
+int pid = id[p];
+for(int i=0;i<N;i++)
+{
+if(id[i]==pid)
+id[i] = id[q];
+}
+}
+}
+

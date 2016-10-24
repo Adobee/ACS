@@ -1,0 +1,8 @@
+public class ClassDescriptor extends TypeDescriptor {
+private Type superClass;
+
+public ClassDescriptor(Type type, Map<String, String> classMap) {
+public Collection<String> getImportsInternal() {
+Collection<String> imports = super.getImportsInternal();
+if (superClass != null) {
+

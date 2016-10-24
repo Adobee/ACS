@@ -1,0 +1,8 @@
+synchronized (DiskLruCache.this)
+{
+if (!DiskLruCache.this.initialized) {
+i = 1;
+}
+if ((i | DiskLruCache.this.closed) != 0) {
+return;
+

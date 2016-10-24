@@ -1,0 +1,9 @@
+package behavioral_patterns.chainOfResponsibility.src;
+
+
+public class Request {
+private String request;
+public boolean hasType(RequestType requestType) {
+for (RequestType type : this.requestTypes) {
+if (type.equals(requestType))
+

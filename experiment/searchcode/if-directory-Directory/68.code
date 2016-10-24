@@ -1,0 +1,10 @@
+private void validateIsReadable(File directory) {
+if (!directory.canRead()) {
+throw new IllegalArgumentException(&quot;Directory cannot be read: &quot;
++ directory);
+}
+}
+
+private void validateIsDirectory(File directory) {
+if (!directory.isDirectory()) {
+

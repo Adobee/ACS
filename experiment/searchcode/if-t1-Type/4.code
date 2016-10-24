@@ -1,0 +1,10 @@
+abstract R<T2> caseCompare(Compare expr);
+abstract <F<T1,T2>> R<F<T1,T2>> caseIf(If<F> expr);
+}
+class IntLit extends Expr<<T1,T2> => T1> {
+return v.caseCompare(this);
+}
+}
+class If<F<T1,T2>> extends Expr<F> {
+Expr<<T1,T2> => T2> x; Expr<F> y; Expr<F> z;
+

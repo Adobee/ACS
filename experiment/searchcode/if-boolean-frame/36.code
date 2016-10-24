@@ -1,0 +1,13 @@
+public void stepAhead(int millis) {
+if (!firstFrame)
+frameSet.advanceFrame();
+firstFrame = false;
+}
+
+public void start() {
+firstFrame = true;
+frameSet.beginSequence(sequence);
+}
+
+public boolean isFinished() {
+

@@ -1,0 +1,7 @@
+public static boolean rotate(BlockRotationMode mode, World world, int x, int y, int z, ForgeDirection axis) {
+if (mode == BlockRotationMode.NONE) return false;
+return new RotationHelper(mode, world, x, y, z).rotate(axis);
+public boolean rotate(ForgeDirection axis) {
+ForgeDirection newRotation = calculateRotation(axis);
+if (newRotation != null) {
+

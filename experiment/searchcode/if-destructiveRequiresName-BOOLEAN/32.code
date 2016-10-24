@@ -1,0 +1,7 @@
+public static final String REQUIRES_NAME = &quot;action.destructive_requires_name&quot;;
+private volatile boolean destructiveRequiresName;
+
+@Inject
+super(settings);
+destructiveRequiresName = settings.getAsBoolean(DestructiveOperations.REQUIRES_NAME, false);
+

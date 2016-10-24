@@ -1,0 +1,10 @@
+private static int map[][] = new int[MAX_X][MAX_Y];
+
+public static int getTile( int x, int y){
+try{
+if ( x > MAX_X || y > MAX_Y){
+throw new TileException(&quot;Requested tile from GameMap not found: indexing out of MapArray bounds.&quot;);
+}
+if ( x == 0 || y == 0){
+throw new TileException(&quot;Requested tile from GameMap not found: the tile is not initialized properly: x = &quot; + x + &quot;; y = &quot; + y);
+

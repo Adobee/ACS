@@ -1,0 +1,8 @@
+bs.setNetwork(this);
+if (bs.getCluster() == null) {
+double dist = 1e16;
+Cluster cluster = null;
+for (Cluster c : clusters) {
+double tmp = Utils.getEntityDistance(ue, c);
+if (tmp < dist) {
+

@@ -1,0 +1,11 @@
+private double v1;
+private double v2;
+
+public Range(double v1, double v2) {
+this.v1 = v1;
+this.v2 = v2;
+}
+
+public static Range newInstance(double v1, double v2) {
+return new Range(v1, v2);
+

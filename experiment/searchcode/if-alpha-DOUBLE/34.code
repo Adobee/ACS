@@ -1,0 +1,8 @@
+double c = h[i-1] * h[i-1];
+double d = h[i] + h[i-1];
+double alpha = (2*a+b-c) / h[i];
+double beta  = d*d*d / b;
+// Add the last slice separately for an even n+1
+if ((n+1)%2 == 0) {
+double alpha = h[n-1]*(3-h[n-1] / (h[n-1] + h[n-2]));
+

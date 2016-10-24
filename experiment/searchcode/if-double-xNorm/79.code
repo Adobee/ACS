@@ -1,0 +1,10 @@
+public Collision getCollision(BoundingBox b, Vector3d relativePosition, Vector3d relativeVelocity, double dtime, double precision) {
+if(!checkCollision(b, relativePosition, relativeVelocity, dtime))
+offset -= dtime;
+}
+
+double deltaTime = precision / 2;
+dtime /= 2;
+while(dtime >= precision) {
+if(checkCollision(b, relativePosition, relativeVelocity, dtime)) {
+

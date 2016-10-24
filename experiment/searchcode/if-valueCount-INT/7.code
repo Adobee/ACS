@@ -1,0 +1,8 @@
+private int valueCount = 0;
+private boolean isEmpty = true;
+
+public synchronized void put(int i) {
+if (valueCount == 5) {
+try {
+System.out.println(&quot;producer wait...&quot;);
+

@@ -1,0 +1,12 @@
+@Override
+public boolean onPrepareOptionsMenu(Menu menu) {
+super.onPrepareOptionsMenu(menu);
+if (service == null) return true;
+return true;
+}
+
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {
+int id = item.getItemId();
+if (id == R.id.action_previous) {
+

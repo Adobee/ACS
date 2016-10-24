@@ -1,0 +1,10 @@
+import java.util.Map;
+import java.util.Set;
+
+public class MultivaluedMapImpl<K, V> extends LinkedHashMap<K, Set<V>>  implements MultivaluedMap<K, V> {
+Set<V> valueList = get(key);
+
+boolean found = valueList.remove(value);
+
+if (valueList.isEmpty()) {
+

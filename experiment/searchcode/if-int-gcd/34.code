@@ -1,0 +1,14 @@
+package beauty;
+
+public class Q2_7_3_Gcd {
+public static int gcd(int x,int y){
+if(x < y){
+return gcd(y,x%y);
+}
+}
+public static int gcd2(int x,int y){
+if(x < y)
+return gcd(y,x);
+if(y == 0)
+return x;
+

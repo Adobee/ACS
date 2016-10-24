@@ -1,0 +1,11 @@
+* @author aberglas
+*/
+public class SValidatorGreaterEqual  extends SValidatorI {
+double minVal;
+
+public SValidatorGreaterEqual(double minVal) {
+double dval = instance.getDouble(field);
+
+if (dval < minVal)
+throw new SException.Validation(
+

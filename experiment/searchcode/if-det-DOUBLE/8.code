@@ -1,0 +1,16 @@
+weight[k] = 1 / u;
+}
+
+double det = 1.0;
+for( int k=0; k<n; k++ ){
+double u = 0.0;
+int m = 0;
+for( int i=k; i<n; i++ ){
+int ik = ip[m];
+if( m != k ){
+ip[m] = ip[k];
+ip[k] = ik;
+det = -det;
+}
+u = a[ik][k];
+

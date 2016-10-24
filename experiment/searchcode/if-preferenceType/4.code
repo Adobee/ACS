@@ -1,0 +1,10 @@
+return editor;
+}
+
+protected  <T> void commit(String preference, T preferenceType) {
+if (preferenceType instanceof Boolean) {
+getEditor().putBoolean(preference, (Boolean) preferenceType);
+}
+if (preferenceType instanceof Float) {
+getEditor().putFloat(preference, (Float) preferenceType);
+

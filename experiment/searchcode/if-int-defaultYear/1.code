@@ -1,0 +1,11 @@
+public DateDialog(Activity activity, Task task, Date defaultDate) {
+this.activity = activity;
+this.task = task;
+
+int defaultDay;
+int defaultMonth;
+int defaultYear;
+
+if (defaultDate == null) {
+final Calendar c = Calendar.getInstance();
+

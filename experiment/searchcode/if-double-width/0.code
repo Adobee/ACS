@@ -1,0 +1,20 @@
+public class Rectangle
+{
+double x;
+double y;
+double width;
+double height;
+
+public void setX(double arg)
+public void setWidth(double width)
+{
+if (width > 0)
+{
+this.width = width;
+}
+}
+
+public double getWidth()
+{
+return width;
+

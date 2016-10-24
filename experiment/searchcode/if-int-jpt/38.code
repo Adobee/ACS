@@ -1,0 +1,11 @@
+String baseTypeID = baseTypeElement.getAttribute(ID_ATTRIBUTE);
+InternalJptResourceType baseType = this.getResourceType(baseTypeID);
+if (baseType == null) {
+this.logInvalidBaseType(assoc.getValue(), baseTypeElement, baseTypeID);
+String version = element.getAttribute(VERSION_ATTRIBUTE);
+if (version == null) {
+version = JptResourceType.UNDETERMINED_VERSION;
+}
+
+if (this.containsResourceType(contentType, version)) {
+

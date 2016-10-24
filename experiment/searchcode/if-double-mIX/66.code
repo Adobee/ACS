@@ -1,0 +1,6 @@
+private double queryMixRuntime;//whole runtime of actual run in seconds
+private double minQueryMixRuntime;
+private double maxQueryMixRuntime;
+private double queryMixGeoMean;
+private double totalRuntime;//Total runtime of all runs
+

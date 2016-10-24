@@ -1,0 +1,12 @@
+private Image image;
+
+private double width, height;
+private double posX, posY;
+
+public Level(Image image) {
+posY += scrollSpeed;
+double delta = posY;
+if(posY > SpaceInvadersApp.APP_H) posY = 0;
+
+gc.drawImage(image, posX, posY);
+

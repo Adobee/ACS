@@ -1,0 +1,14 @@
+
+public class Heap<key extends Comparable<key>> {
+private key[] pq;
+private int n;
+
+public void sink(Comparable[] arr,int start,int end){
+exchng(pq,0,n--);
+sink(pq,0,n);
+}
+}
+
+public void exchng(Comparable[] pq,int i,int j){
+key dummy= (key) pq[j]; pq[j]=pq[i];pq[i]=dummy;
+

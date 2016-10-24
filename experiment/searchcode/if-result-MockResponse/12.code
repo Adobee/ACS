@@ -1,0 +1,13 @@
+logger.info(&quot;served &quot; + requestLine);
+return new MockResponse().setResponseCode(HttpURLConnection.HTTP_NOT_FOUND);
+}
+
+if (failFastResponse != null &amp;&amp; responseQueue.peek() == null) {
+// Fail fast if there&#39;s no response queued up.
+return failFastResponse;
+}
+
+MockResponse result = responseQueue.take();
+
+// If take() returned because we&#39;re shutting down, then enqueue another dead letter so that any
+

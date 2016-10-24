@@ -1,0 +1,11 @@
+double GetRawValueWithBounds(int x, int y, int z)
+{
+if (x >= Sizes[0]) x=Sizes[0]-1;
+if (y >= Sizes[1]) y=Sizes[1]-1;
+return myroi.InROIRange(x+(int) DisplayOffset[0],y+(int) DisplayOffset[1],z+(int) DisplayOffset[2]);
+}
+
+boolean InsideBounds(int x, int y, int z)
+{
+if (x >= Sizes[0]) return false;
+

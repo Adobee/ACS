@@ -1,0 +1,11 @@
+conn.setAutoCommit(false);
+
+pps1 = conn.prepareStatement(sql1);
+
+if (vto.getFirstName() != null) {
+pps1.setNull(1, Types.VARCHAR);
+}
+
+if (vto.getLastName() != null) {
+pps1.setString(2, vto.getLastName());
+

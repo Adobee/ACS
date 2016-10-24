@@ -1,0 +1,15 @@
+package model.utils;
+
+import java.util.Map;
+import java.util.Map.Entry;
+
+public class StatisticsCalculator {
+public static double calculateWeightedAverage(Map<Integer, Integer> stats, Integer weight) {
+if (stats.size() == 0) {
+return 0;
+}
+
+double sum = 0;
+
+for (Entry<Integer, Integer> entry : stats.entrySet()) {
+

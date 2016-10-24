@@ -1,0 +1,12 @@
+public T getUpToDateObject(CacheEntryRefresher<T> refresher) throws Exception {
+boolean shouldRefresh = false;
+
+DateTime currentTime = DateTime.now();
+if (lastRefreshedDate == null || this.nextRefreshDate.isBefore(currentTime)) {
+shouldRefresh = true;
+}
+
+if (shouldRefresh) {
+if (refresher != null) {
+this.object = refresher.refreshData();
+

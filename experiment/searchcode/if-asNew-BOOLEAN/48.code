@@ -1,0 +1,14 @@
+Scope s = new Scope(this, locationIn.asNew());
+
+setScope(s);
+}
+
+/**
+* Get the String that is used to identify the specified MatchCase.<br>
+* @see net.fathomsoft.nova.tree.Node#pendingScopeFragment(Node)
+*/
+@Override
+public boolean pendingScopeFragment(Node node)
+{
+return getScope().isEmpty();
+

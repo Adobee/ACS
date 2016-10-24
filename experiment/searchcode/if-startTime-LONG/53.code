@@ -1,0 +1,11 @@
+package com.example.gamelib;
+
+public class GameTimer {
+private long startTime;
+private int interval;
+public boolean isExpired(){
+long t = System.currentTimeMillis();
+if(t - startTime >= interval){
+if(loopF){
+this.startTime = t + ((t - startTime) - interval);
+

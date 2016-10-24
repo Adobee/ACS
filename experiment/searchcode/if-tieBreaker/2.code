@@ -1,0 +1,14 @@
+tiebreaker = nextTiebreaker++;
+}
+@Override
+public int compareTo(Edge other) {
+
+if (cost < other.cost) return -1;
+if (cost > other.cost) return +1;
+
+return tiebreaker - other.tiebreaker;
+}
+
+
+}
+

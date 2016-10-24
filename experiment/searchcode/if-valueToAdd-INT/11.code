@@ -1,0 +1,13 @@
+initialAmount = value;
+}
+
+if (displayAsAmount) {
+setAmount((int) value);
+
+} else {
+double valueToAdd = 0, currentValue = ((double) returnValue);
+
+valueToAdd = (event.isShiftClick()) ? increment * 10 : increment;
+
+if (event.isRightClick()) {
+

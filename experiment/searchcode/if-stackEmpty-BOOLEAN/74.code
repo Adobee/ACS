@@ -1,0 +1,9 @@
+public State(int sentenceSize, boolean rootFirst) {
+this(sentenceSize);
+if (rootFirst) {
+return bufferH + position;
+}
+
+public boolean isTerminalState() {
+return bufferEmpty() &amp;&amp; stackEmpty() || stack.size() == 0 &amp;&amp; bufferH == rootIndex;
+

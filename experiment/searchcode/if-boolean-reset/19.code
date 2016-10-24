@@ -1,0 +1,10 @@
+private volatile boolean resetRequested = false;
+
+@Override
+public synchronized boolean handle(int messageType, int[] argBuffer, int argCount) throws Exception
+this.wait(Constants.MONITOR_WAIT_TIMEOUT);
+
+if (resetRequested)
+{
+resetRequested = false;
+

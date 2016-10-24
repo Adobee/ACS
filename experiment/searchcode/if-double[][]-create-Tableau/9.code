@@ -1,0 +1,7 @@
+for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) {
+final double entry = tableau.getEntry(0, i);
+if (MathUtils.compareTo(entry, minValue, getEpsilon(entry)) < 0) {
+int column = i + tableau.getArtificialVariableOffset();
+final double entry = tableau.getEntry(row, column);
+if (MathUtils.equals(entry, 1d, getEpsilon(entry)) &amp;&amp;
+

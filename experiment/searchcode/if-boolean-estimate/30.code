@@ -1,0 +1,12 @@
+this.name = generateStateName(stateEstimate);
+this.nonsecret = isSecretOpaque(stateEstimate);
+}
+
+public boolean isOpaque (){
+return nonsecret;
+}
+
+private boolean isSecretOpaque (ArrayList<State> stateEstimate)
+{
+for (int i = 0; i < stateEstimate.size(); i++) {
+

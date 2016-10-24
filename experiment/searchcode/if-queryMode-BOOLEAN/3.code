@@ -1,0 +1,12 @@
+protected IExpr<T> left;
+protected IExpr<T> right;
+
+@Override
+public boolean supportsMode(QueryMode mode)
+{
+return mode == QueryMode.WHERE;
+}
+
+@Override
+public boolean add(IExpr<T> expr)
+

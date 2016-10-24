@@ -1,0 +1,10 @@
+private TsPeriod period;
+private Double relativeError;
+private Double absoluteError;
+private Status validity;
+public Double getRelativeError() {
+return relativeError;
+}
+
+public void setRelativeError(Double relativeError) {
+

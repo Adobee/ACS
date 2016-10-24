@@ -1,0 +1,11 @@
+package io.mycat.ep.v1.receiver.impl;
+
+import java.util.List;
+import java.util.Map;
+
+import Ice.Current;
+String json=redis.get(key);
+ReceiverResult result=new ReceiverResult();
+result.status=CommonAccessStatus.SUCCESS;
+if(Help.isEmpty(json)){
+

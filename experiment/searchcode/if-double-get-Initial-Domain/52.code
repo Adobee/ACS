@@ -1,0 +1,9 @@
+double diff=y.get(i)-cval;
+double thisy=y.get(i);
+if (thisy == 0) {
+thisy=-1;
+double dot=current[i];
+double cval=1.0/(1+Math.exp(-1 * dot));
+if (y.get(i) == 1) {
+loss-=Math.log(cval);
+

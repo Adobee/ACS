@@ -1,0 +1,9 @@
+public GaussianDistribution(double mean, double sd, int type) {
+this.mean = mean;
+this.sd = sd;
+public void setMean(double mean) {
+this.mean = mean;
+}
+
+public double getSd() {
+

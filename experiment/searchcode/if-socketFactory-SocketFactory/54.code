@@ -1,0 +1,9 @@
+import java.net.*;
+import javax.net.SocketFactory;
+import java.io.*;
+import java.security.cert.*;
+import org.apache.commons.httpclient.*;
+int timeout = params.getConnectionTimeout();
+if (timeout == 0) {
+return socketFactory.createSocket(host, port, localAddress, localPort);
+

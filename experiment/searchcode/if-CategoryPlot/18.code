@@ -1,0 +1,7 @@
+import org.jfree.chart.axis.CategoryLabelPositions;
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+JFreeChart jfreechart = ChartFactory.createBarChart3D(title, xAxisLabel, yAxisLabel, dataset, PlotOrientation.VERTICAL, true, true, false);
+CategoryPlot categoryplot = jfreechart.getCategoryPlot();
+categoryplot.setDomainGridlinesVisible(true);
+

@@ -1,0 +1,12 @@
+import net.minecraft.util.IIcon;
+
+public class BlockTexturedOre extends Block
+{
+int currentPass;
+Block base;
+public boolean canRenderInPass(int pass)
+{
+currentPass = pass;
+
+return pass == 1 || pass == 0;
+

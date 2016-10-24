@@ -1,0 +1,6 @@
+public void addArgument(Argument argument) {
+if(argument instanceof NamedArgument)_hasNamedArgs=true;
+Argument[] tmp=new Argument[arguments.length+1];
+for(int i=0;i<arguments.length;i++){
+tmp[i]=arguments[i];
+

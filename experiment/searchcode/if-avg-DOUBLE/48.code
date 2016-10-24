@@ -1,0 +1,17 @@
+public class MovingAveragePoint extends DerivedPoint {
+
+private double sum;
+private Double yAvg;
+
+public MovingAveragePoint(long x) {
+super(x);
+}
+
+@Override public void add(double y) {
+super.add(y);
+sum += y;
+yAvg = null;
+}
+
+public double yAvg() {
+

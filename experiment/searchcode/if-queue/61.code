@@ -1,0 +1,5 @@
+private static void ensureCapacity(ArrayQueueADT queue, int capacity) {
+if (capacity > queue.elements.length) {
+queue.elements = Arrays.copyOf(queue.elements, capacity * 2);
+} else if (capacity == 0) {
+

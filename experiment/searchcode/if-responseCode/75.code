@@ -1,0 +1,10 @@
+private File file;
+
+private int responseCode;
+
+public WebFileResponse(String uri, File file) {
+this.uri = uri;
+this.file = file;
+if (file.exists()) responseCode = 200;
+else responseCode = 404;
+

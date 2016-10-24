@@ -1,0 +1,6 @@
+/* 66 */     SocketFactory theFactory = (SocketFactory)factories.get(protocol);
+/*    */
+/* 68 */     if (theFactory == null) {
+/* 71 */       if (protocol.equalsIgnoreCase(&quot;http&quot;)) {
+/* 72 */         theFactory = (SocketFactory)AxisProperties.newInstance(SocketFactory.class, classes, objects);
+

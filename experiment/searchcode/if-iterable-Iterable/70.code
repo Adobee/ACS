@@ -1,0 +1,10 @@
+* Workaround for https://github.com/alibaba/fastjson/issues/478
+*/
+public class FastJsonIterable<T> implements Iterable<T> {
+public FastJsonIterable(Iterable<T> iterable) {
+E.illegalArgumentIf(iterable instanceof FastJsonIterable);
+it = iterable;
+}
+
+@Override
+

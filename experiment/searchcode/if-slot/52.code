@@ -1,0 +1,12 @@
+inventory = new ArrayList<Slot>();
+isActive = false;
+}
+
+public void update() {
+if (!isActive){
+return;
+}
+
+for (Slot slot : inventory) {
+if (slot.getItemStack() != null &amp;&amp; slot.getItemStack().getStacksize() <= 0) {
+

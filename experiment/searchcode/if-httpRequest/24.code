@@ -1,0 +1,7 @@
+httprequest = httprequest.getHeaders().getAuthorization();
+if (httprequest != null &amp;&amp; httprequest.startsWith(&quot;Bearer &quot;))
+httprequest = ((HttpRequest) (getData(httprequest).get(&quot;access_token&quot;)));
+if (httprequest == null)
+{
+return null;
+

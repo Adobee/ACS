@@ -1,0 +1,10 @@
+public class BowlingGameResultCalculatorMikolajImpl implements BowlingGameResultCalculator {
+List<Round> mRounds = new ArrayList<Round>();
+
+@Override
+public void roll(int numberOfPins) { // filling game with roll data
+return isLastRoundOfGame();
+}
+private int spareBonus(Round round, Roll roll) {
+if (ifSecondRoundOrHigher(round) &amp;&amp; ifEarlierRoundHadSpare(round)
+

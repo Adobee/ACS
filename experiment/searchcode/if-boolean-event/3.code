@@ -1,0 +1,12 @@
+super(description);
+}
+
+@Override
+public boolean process(Event event) {
+if(!(event instanceof ScribenginEvent)) return false;
+return process((ScribenginEvent) event);
+}
+
+abstract public boolean process(ScribenginEvent event) ;
+}
+

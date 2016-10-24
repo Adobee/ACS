@@ -1,0 +1,13 @@
+public String getProperty(String key) {
+if (!properties.containsKey(key))
+throw new RuntimeException(&quot;Not found application config properties key : &quot; + key);
+public boolean getBoolean(String key) {
+return Boolean.valueOf(getString(key)).booleanValue();
+}
+
+public Properties getProperties() {
+return properties;
+}
+
+}
+

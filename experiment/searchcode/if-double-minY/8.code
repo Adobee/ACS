@@ -1,0 +1,17 @@
+public class ClampingProvider implements PixelProvider {
+
+public PixelProvider prov;
+
+/**
+* Min and max are inclusive.
+*/
+public double minX, minY, maxX, maxY;
+public KColor getPixel(double x, double y) {
+if (x < minX)
+x = minX;
+if (y < minY)
+y = minY;
+if (x > maxX)
+x = maxX;
+if (y > maxY)
+

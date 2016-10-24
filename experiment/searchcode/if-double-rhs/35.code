@@ -1,0 +1,16 @@
+return (double[])xyz.clone();
+}
+
+public Vector3 add(Vector3 rhs)
+{
+return new Vector3(
+xyz[0] + rhs.xyz[0],
+public Vector3 div(double c)
+{
+return new Vector3(xyz[0]/c, xyz[1]/c, xyz[2]/c);
+}
+
+public double dot(Vector3 rhs)
+{
+return xyz[0]*rhs.xyz[0] +
+

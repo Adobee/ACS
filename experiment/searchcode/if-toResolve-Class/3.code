@@ -1,0 +1,9 @@
+/** class that represents a procedure that is to be called later. (late resolve) */
+private class ToResolve<From, To> {
+public From obj;
+public Procedure1<To> proc;
+public boolean multiple;
+public void solveLateResolvings() {
+for (ToResolve<?,?> toResolve : resolvings)
+if (toResolve.multiple)
+

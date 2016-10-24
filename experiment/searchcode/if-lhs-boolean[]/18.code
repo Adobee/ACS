@@ -1,0 +1,11 @@
+} else if ((lhs instanceof float[])) {
+append((float[])lhs, (float[])rhs);
+} else if ((lhs instanceof boolean[])) {
+append((boolean[])lhs, (boolean[])rhs);
+return append(Float.floatToIntBits(lhs), Float.floatToIntBits(rhs));
+}
+
+public EqualsBuilder append(boolean lhs, boolean rhs)
+{
+if (!this.isEquals) {
+

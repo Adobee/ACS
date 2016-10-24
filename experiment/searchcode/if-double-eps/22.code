@@ -1,0 +1,11 @@
+void dfs(double l, double r, double p, int k){
+if(l+EPS>T+E||r<T-E+EPS)return;
+if(T-E<l+EPS&amp;&amp;r<T+E+EPS){
+ans += p;
+return;
+}
+double h = (l+r)/2;
+if(k==K){
+if(T-E<h+EPS&amp;&amp;h<T+E+EPS)ans+=p;
+return;
+

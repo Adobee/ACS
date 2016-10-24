@@ -1,0 +1,13 @@
+protected void dataChanged() {
+dataChanged(true);
+}
+
+protected void dataChanged(boolean send) {
+dataUpdatedListener.onUpdate(this, key, send);
+}
+}
+
+public void info(Arguments arguments) {
+dataChanged();
+if (arguments.useVoice()) Speech.speakAsync(getSummaryText());
+

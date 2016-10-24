@@ -1,0 +1,6 @@
+Stream stream;
+if (socketFactory != null) {
+stream = new SocketStream(serverAddress, settings, socketFactory, bufferProvider);
+} else if (sslSettings.isEnabled()) {
+stream = new SocketStream(serverAddress, settings, SSLSocketFactory.getDefault(), bufferProvider);
+

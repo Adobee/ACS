@@ -1,0 +1,7 @@
+public class SimpleShutdown extends Thread {
+
+private static SimpleShutdown instance = null;
+private AtomicBoolean finished = new AtomicBoolean(false);
+private AtomicBoolean shutdown = new AtomicBoolean(false);
+private static Logger logger = Logger.getLogger(SimpleShutdown.class);
+

@@ -1,0 +1,13 @@
+private long writeOrCountBytes(VBufferedSink sink, boolean countBytes) {
+long byteCount = 0L;
+
+VBuffer buffer;
+if (countBytes) {
+buffer = new VBuffer();
+buffer.writeUtf8(encodedNames.get(i));
+buffer.writeByte(&#39;=&#39;);
+buffer.writeUtf8(encodedValues.get(i));
+}
+
+if (countBytes) {
+

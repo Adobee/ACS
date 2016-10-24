@@ -1,0 +1,6 @@
+dirtyState = isChanged ? NodeEntry.DirtyState.REBUILDING
+: NodeEntry.DirtyState.CHECK_DEPENDENCIES;
+if (dirtyState == NodeEntry.DirtyState.CHECK_DEPENDENCIES) {
+* #dirtyDirectDepIterator} to null so that the final call to {@link #signalDep(boolean)} will
+* know to mark this entry as {@link DirtyState#VERIFIED_CLEAN} if no deps have changed.
+

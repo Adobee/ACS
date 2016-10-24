@@ -1,0 +1,9 @@
+Fraction a = new Fraction(3,10);
+Fraction b = new Fraction(1,2);
+Fraction c = new Fraction(3,5);
+if (!a.equals(b.multiply(c)))
+Fraction f = new Fraction(2,10);
+if (!d.equals(e.subtract(f)))
+{
+System.out.println(&quot;Subtract failed&quot;);
+

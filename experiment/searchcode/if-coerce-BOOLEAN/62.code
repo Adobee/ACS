@@ -1,0 +1,9 @@
+import org.gvsig.tools.dataTypes.CoercionException;
+import org.gvsig.tools.dataTypes.DataTypesManager.Coercion;
+
+public class CoerceToBoolean implements Coercion {
+
+public Object coerce(Object value) throws CoercionException {
+try {
+if (!(value instanceof Boolean)) {
+

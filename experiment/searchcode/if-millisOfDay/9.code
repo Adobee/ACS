@@ -1,0 +1,9 @@
+conjunction.add(Restrictions.lt(&quot;date&quot;,dateTime.dayOfYear().withMaximumValue().millisOfDay().withMaximumValue().toDate()));
+}
+
+if (invoiceFilter.getF2() == 2) {
+conjunction.add(Restrictions.lt(&quot;date&quot;, new DateTime().millisOfDay().withMaximumValue().toDate()));
+}
+
+if (invoiceFilter.getF2() == 3) {
+

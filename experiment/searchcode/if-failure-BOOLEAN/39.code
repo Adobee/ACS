@@ -1,0 +1,14 @@
+Optional<Failure> failure();
+
+/**
+* @return True if the {@literal Result<E>} is a success.
+*/
+
+default boolean isSuccess()
+* @return True if the {@literal Result<E>} is a failure.
+*/
+
+default boolean isFailure()
+{
+return failure().isPresent();
+

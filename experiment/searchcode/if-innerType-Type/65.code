@@ -1,0 +1,9 @@
+@NonNull ConfigType innerType;
+
+@Override
+public Object coerce(Node node) {
+SequenceNode listNode = (SequenceNode)node;
+innerType.typeCheck(innerNode);
+Object obj = innerType.coerce(innerNode);
+if (results.contains(obj)) {
+

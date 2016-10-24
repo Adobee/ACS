@@ -1,0 +1,10 @@
+* @author user
+*/
+public class save_client_route_query extends GeneralQueryFormat {
+
+private boolean isInsert;
+public void update(ClientRoute route, boolean isInsert) {
+this.isInsert = isInsert;
+if (isInsert) {
+super.setPreparedStatement(new Object[]{route.getRouteName(), route.getClientRouteId()});
+

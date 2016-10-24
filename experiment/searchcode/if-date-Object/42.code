@@ -1,0 +1,8 @@
+public static boolean isEmptyOrNull(Object object){
+if(object instanceof Collection){
+@SuppressWarnings({ &quot;rawtypes&quot; })
+Collection collection = (Collection) object;
+} else if(object instanceof String){
+String string = (String) object;
+return string == null || string.length() == 0;
+

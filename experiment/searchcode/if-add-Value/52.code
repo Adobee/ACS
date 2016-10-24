@@ -1,0 +1,10 @@
+public void add(String word) {
+if (word.trim().length() > 0)
+stopWords.add(word.trim());
+for (String word : words) {
+wordsList.add(word);
+}
+
+for (int i = 0; i < wordsList.size(); i++) {
+if (stopWords.contains(wordsList.get(i))) {
+

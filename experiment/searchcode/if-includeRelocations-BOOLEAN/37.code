@@ -1,0 +1,6 @@
+private volatile ByteSizeValue freeBytesThresholdLow;
+private volatile ByteSizeValue freeBytesThresholdHigh;
+private volatile boolean includeRelocations;
+this.freeBytesThresholdHigh = thresholdBytesFromWatermark(highWatermark, CLUSTER_ROUTING_ALLOCATION_HIGH_DISK_WATERMARK);
+this.includeRelocations = settings.getAsBoolean(CLUSTER_ROUTING_ALLOCATION_INCLUDE_RELOCATIONS, true);
+

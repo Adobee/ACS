@@ -1,0 +1,8 @@
+private Map<String, String> defaultValues;
+
+abstract protected void initParams(Collection<ISysParamDefinition> params);
+
+@Override
+public Collection<ISysParamDefinition> getSysParamDefinitions() {
+if (this.params == null) {
+

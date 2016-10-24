@@ -1,0 +1,4 @@
+*         &amp;lt;element name=&quot;resultoffset&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}int&quot; minOccurs=&quot;0&quot;/>
+*         &amp;lt;element name=&quot;maxresultcount&quot; type=&quot;{http://www.w3.org/2001/XMLSchema}int&quot; minOccurs=&quot;0&quot;/>
+*       &amp;lt;/sequence>
+

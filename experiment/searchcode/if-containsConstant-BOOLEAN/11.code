@@ -1,0 +1,11 @@
+return constants.put(c.id, c.expr.accept(this));
+}
+
+public boolean containsConstant(String id) {
+return constants.containsKey(id);
+}
+
+@Override
+public Value visit(IdExpr e) {
+if (constants.containsKey(e.id)) {
+

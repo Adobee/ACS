@@ -1,0 +1,6 @@
+public class PacketCheckers {
+public static boolean isIntact(PacketParameters parameters) {
+int[] rebuiltPacket = PacketHelper.packetize(parameters);
+
+int computedChecksum = ChecksumHelper.computeChecksum(new int[]{
+

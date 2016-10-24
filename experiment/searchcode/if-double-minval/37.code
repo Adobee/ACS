@@ -1,0 +1,14 @@
+output = Integer.parseInt(inputString);
+}
+catch (Exception e){
+output = defaultValue;
+}
+
+if (output < minVal) output = minVal;
+if (maxVal == -1) { if (output < minVal) output = minVal; }
+else if (output > maxVal) output = maxVal;
+return output;
+}
+
+public double getDouble(double minVal, double maxVal, double defaultValue, String inputString) {
+

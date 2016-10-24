@@ -1,0 +1,7 @@
+&quot; только, если препятствия присутствуют в игровом цикле.&quot;;
+private int standardOffset;
+/**
+* Конструктор менеджера блоков пропятствий
+int rand = new Random().nextInt(100);
+if (GameLoop.getGameLoop().getBlockInstances().size() != 0){
+

@@ -1,0 +1,10 @@
+public static String getFileExtension(final String path) {
+if (path == null) {
+return null;
+}
+int extIndex = path.lastIndexOf(&#39;.&#39;);
+if (extIndex == -1) {
+return null;
+}
+int folderIndex = getFileSeparatorIndex(path);
+

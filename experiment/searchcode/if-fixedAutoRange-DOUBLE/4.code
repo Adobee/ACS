@@ -1,0 +1,9 @@
+long date = iter.next();
+double value = newValues.getValue(date);
+addOrUpdateData(metricName,date, value);
+public CPUHistoryChart(String hostName,double range) {
+this.name = hostName+&quot;|cpu&quot;;
+
+fixedAutoRange = range;
+seriesIdle = new TimeSeries(nameOfTheDataToPlotIdle, Millisecond.class);
+

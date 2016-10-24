@@ -1,0 +1,10 @@
+* Check whether the Internet is available or not, it may be WiFi, Mobile network..
+* @param context
+* @return boolean
+*/
+public static boolean isNetAvailable(Context context){
+ConnectivityManager mgr = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+
+if ( mgr != null ){
+boolean mobileNetwork = false;
+

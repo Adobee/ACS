@@ -1,0 +1,10 @@
+pointCount = i;
+}
+}
+chkLns.removeAllElements();
+repaint();
+//这个最外侧的点已在凸包集合
+if(isOnList[pointCount]) {
+for (int j=0; j<points.size(); j++) {
+if (!((Line)tempLns.elementAt(i)).onLeft((pointExt)points.elementAt(j))) {
+

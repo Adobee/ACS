@@ -1,0 +1,7 @@
+public static ArgumentType getType(String argument) {
+if (argument.charAt(0) == &#39;$&#39;) return REGISTER;
+if (argument.contains(&quot;(&quot;) &amp;&amp; argument.contains(&quot;)&quot;)) return OFFSET;
+
+try {
+Integer.parseInt(argument);
+

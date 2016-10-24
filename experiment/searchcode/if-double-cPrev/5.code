@@ -1,0 +1,12 @@
+for (int j = 0; j < nnbr; j++) {
+double[] div = subdiv[i][j];
+if (div != null &amp;&amp; div.length > 0) {
+MeshPoint cq = anbrs[j];
+
+double rp = cp.getR();
+double rq = cq.getR();
+
+
+if (cq.getWork() == 2 &amp;&amp;
+cq.getNeighborCount() == 2 &amp;&amp;
+

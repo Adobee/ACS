@@ -1,0 +1,11 @@
+public void odex(ODE ode, double[] x, double tStart, double tEnd) {
+
+if( this.numOfEquations < ode.getNumberOfEquations())
+this.setNumOfEquations( ode.getNumberOfEquations() );
+public static void odex(
+final ODE ode,
+final double[] x,
+final double tStart,
+final double tEnd,
+final int numOfSteps,
+

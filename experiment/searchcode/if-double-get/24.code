@@ -1,0 +1,9 @@
+graph.put((double) 10, (double) 1.94);
+}
+
+public static double findPeakResponseParameter(final double x) {
+if ((x > 0) &amp;&amp; (x <= 3)) {
+float coeff = 10f;
+double nearestTenthValue = Math.round(x * coeff) / 10.0;
+return (graph.get(nearestTenthValue));
+

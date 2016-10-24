@@ -1,0 +1,7 @@
+public Page<? extends DBModel> getTopicPw(String userId, int page, int size, double userTagPCT, double topicStatusPCT, double commentCountPCT, double curCommentCountPCT) {
+, VwTopic.lastcommentorder, VwTopic.lastuser, VwTopic.lastusernick
+, VwTopic.authoravatar
+).from(VwTopic.TABLE_NAME);
+if (isLogin) {
+sql.where(&quot; AND &quot;, SQLTool.NOTIN(VwTopic.id,
+

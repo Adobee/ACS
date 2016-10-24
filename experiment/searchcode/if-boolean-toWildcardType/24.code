@@ -1,0 +1,10 @@
+throw new IllegalStateException(&quot;found an unhandled type: &quot; + type);
+}
+
+private static boolean isAssignable(Type type, WildcardType toWildcardType, Map<TypeVariable<?>, Type> typeVarAssigns)
+{
+if (type == null) {
+return true;
+}
+if (toWildcardType == null) {
+

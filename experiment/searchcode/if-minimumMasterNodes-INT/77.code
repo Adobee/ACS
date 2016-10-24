@@ -1,0 +1,5 @@
+private void handleMinimumMasterNodesChanged(final int minimumMasterNodes) {
+if (lifecycleState() != Lifecycle.State.STARTED) {
+public ClusterState execute(ClusterState currentState) {
+final int prevMinimumMasterNode = ZenDiscovery.this.electMaster.minimumMasterNodes();
+

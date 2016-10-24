@@ -1,0 +1,10 @@
+public void itemChanged(final Marker item)
+{
+final Marker oldMarker = marker;
+marker = item;
+if (mapMarker == null)
+{
+mapMarker = createMarker();
+}
+else if (marker.getColour() != oldMarker.getColour())
+

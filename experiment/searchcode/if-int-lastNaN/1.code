@@ -1,0 +1,5 @@
+// sort the optima from best to worst, followed by NaN elements
+int lastNaN = optima.length;
+for (int i = 0; i < lastNaN; ++i) {
+if (Double.isNaN(optima[i])) {
+

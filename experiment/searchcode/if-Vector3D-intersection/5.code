@@ -1,0 +1,8 @@
+double[] t = Vector3d.quadForm(quadA, quadB, quadC);
+if(t!=null)
+{
+Intersection intersection = new Intersection(t[0],t[1],ray,this);
+public Ray calculateNormal(Ray ray, double[] intersectionPoint)
+{
+return new Ray(intersectionPoint, Vector3d.normalize(Vector3d.sub(intersectionPoint, origin)));
+

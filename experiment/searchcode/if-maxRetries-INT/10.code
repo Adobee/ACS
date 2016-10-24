@@ -1,0 +1,7 @@
+public class ExponentialRetry implements Func1<Observable<? extends Throwable>, Observable<?>> {
+
+private final int maxRetries;
+public Observable<?> call(Observable<? extends Throwable> attempts) {
+return attempts.flatMap(throwable -> {
+if (++retryCount < maxRetries) {
+

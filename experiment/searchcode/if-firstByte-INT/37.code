@@ -1,0 +1,11 @@
+order.charLength = 1;
+
+int firstByte = buf[offset] &amp; 0xFF;
+if (firstByte == SINGLE_SHIFT_2 ||
+} else if (firstByte == SINGLE_SHIFT_3) {
+order.charLength = 3;
+}
+
+if (firstByte == HIRAGANA_HIGHBYTE) {
+int secondByte = buf[offset + 1] &amp; 0xFF;
+

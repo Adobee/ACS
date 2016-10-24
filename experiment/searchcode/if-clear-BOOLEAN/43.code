@@ -1,0 +1,8 @@
+getFragmentManager().beginTransaction().replace(android.R.id.content, new ClearFragment()).commit();
+}
+
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(this);
+boolean clearBookmarks = sp.getBoolean(getString(R.string.sp_clear_bookmarks), false);
+

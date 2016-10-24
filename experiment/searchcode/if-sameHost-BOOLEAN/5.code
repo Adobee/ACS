@@ -1,0 +1,6 @@
+public SameHostExpression(KloudmakeLangParser.QuerySameHostMatchContext sh, Resource baseResource) throws InvalidQueryException {
+if (baseResource == null) {
+throw new InvalidQueryException(&quot;samehost must only be used with a resource in scope&quot;);
+}
+this.baseResource = baseResource;
+

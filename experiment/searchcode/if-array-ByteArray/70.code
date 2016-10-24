@@ -1,0 +1,8 @@
+int g=(byteArray[i] &amp; 0x0000ff00)>>8;
+int b=byteArray[i] &amp; 0x000000ff;
+if (r>g &amp;&amp; r>b) {
+byteArray[i] =b + (g<<8) + (r<<16) + (a<<24) ;
+//                byteArray[i] =0xff00ff00 ;
+}
+//            if (byteArray[i] > 0xFF000000) {
+

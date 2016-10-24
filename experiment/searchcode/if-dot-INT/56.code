@@ -1,0 +1,8 @@
+double dotProgress = ((((double)Math.min(currentBytes, totalBytes)/totalBytes)*1000)) / 10;
+if (dotProgress > dotNext) {
+int diff = (int)(dotProgress - dotNext);
+//System.out.println(totalBytes + &quot; -> &quot; + currentBytes + &quot; -> &quot; + dotProgress + &quot; -> &quot; + dotNext + &quot; -> &quot; + diff);
+dotNext += diff;
+for (int i = 0; i < diff; i++) {
+if ((dotNext-diff+i) % 10 == 0 &amp;&amp; dotNext-diff+i != 0) {
+

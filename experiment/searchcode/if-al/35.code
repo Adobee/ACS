@@ -1,0 +1,13 @@
+int num = Integer.parseInt(t);
+if(num < lastMed)
+{
+if(alA.size() == alB.size()+1)
+{
+alA.set(1,alA.get(alA.size()-1));
+alA.add(new Integer(num));
+heapifyUp(alA,alA.size()-1,false);
+}
+else
+{
+if(alB.size() == alA.size()+1)
+

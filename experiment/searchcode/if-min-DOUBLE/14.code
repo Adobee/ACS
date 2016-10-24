@@ -1,0 +1,7 @@
+public static class Result{      // local result class
+private double max;
+private double min;
+public Result(double max, double min){   // local assignment
+this.max = max;
+this.min = min;
+

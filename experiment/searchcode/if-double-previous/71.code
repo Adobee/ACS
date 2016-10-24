@@ -1,0 +1,5 @@
+public double computeNextNumber(double previous) {
+double range = (max - min) / 20;
+double scaled = (random.nextDouble() - 0.5 + bias) * range;
+double shifted = previous + scaled;
+

@@ -1,0 +1,10 @@
+@Override
+public final void removeHandlerListener(final IHandlerListener listener) {
+if (listenerList != null) {
+listenerList.remove(listener);
+if (listenerList.isEmpty()) {
+listenerList = null;
+}
+}
+}
+

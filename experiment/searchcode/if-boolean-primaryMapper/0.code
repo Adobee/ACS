@@ -1,0 +1,9 @@
+final long idx = idxForHash(hash);
+final long pos = idxToPos(idx);
+final long adr = primaryMapper.getLong(pos);
+if(adr == 0) return null;
+final long pos = idxToPos(idx);
+final long adr = primaryMapper.getLong(pos);
+if(adr == 0){
+final long insertPos = allocateForRecord(toWriteBucket);
+

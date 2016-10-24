@@ -1,0 +1,9 @@
+return String.valueOf(responseCode);
+}
+
+public static HttpResponseCode getCode(String responseCode) {
+if (responseCode != null) {
+for (HttpResponseCode code : HttpResponseCode.values()) {
+if (responseCode.equals(String.valueOf(code.responseCode))) {
+return code;
+

@@ -1,0 +1,9 @@
+return Math.abs( first - second ) < precision;
+}
+
+public static double random( double lowerLimit, double upperLimit ) {
+double randomNumber = 0;
+double temp;
+
+if ( lowerLimit > upperLimit ) {
+

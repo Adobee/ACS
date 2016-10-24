@@ -1,0 +1,10 @@
+static final double BETHA = 0.25;
+static final double PHI   = 4.0;
+
+private double LijMess = 0, Lij = 0;
+private double Jij = 0, AbwRij = 0, Rij = 0;
+StringBuffer lastConfig = new StringBuffer();
+
+public synchronized void resSample(double measuredValue) {
+LijMess = measuredValue;
+

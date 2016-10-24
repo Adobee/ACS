@@ -1,0 +1,9 @@
+public float[][] A;
+public int nRow;
+public int nCol;
+//Constructor
+public Matrix(int _numRow, int _numCol) {
+nRow = _numRow;
+nCol = _numCol;
+A = new float[nRow][nCol];
+

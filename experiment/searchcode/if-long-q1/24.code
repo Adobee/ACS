@@ -1,0 +1,9 @@
+/*     */   public final void mul(Quat4d q1, Quat4d q2)
+/*     */   {
+/* 185 */     if ((this != q1) &amp;&amp; (this != q2)) {
+/* 629 */     double dot = this.x * q1.x + this.y * q1.y + this.z * q1.z + this.w * q1.w;
+/*     */
+/* 631 */     if (dot < 0.0D)
+/*     */     {
+/* 633 */       q1.x = (-q1.x); q1.y = (-q1.y); q1.z = (-q1.z); q1.w = (-q1.w);
+

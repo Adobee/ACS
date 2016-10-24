@@ -1,0 +1,9 @@
+@Override
+public void pause() {
+checkRealm();
+pauseDepth++;
+if (pauseDepth == 1) {
+sideEffects.forEach( s -> s.pause());
+}
+}
+

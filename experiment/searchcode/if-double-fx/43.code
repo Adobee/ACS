@@ -1,0 +1,10 @@
+public void compute() {
+for(int i=0; i<fx.size(); i++) {
+if(fx.get(i).isDead()) { fx.remove(i); i--; }
+else fx.get(i).compute();
+public void getScore(double x, double y, int score, double playerVX, double playerVY) {
+fx.add(new ScoreFX(main,x,y,score));
+
+//SPOUT SOME STARS!!!
+double mag = Math.sqrt(playerVX*playerVX+playerVY*playerVY);
+

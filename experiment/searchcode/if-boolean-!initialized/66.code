@@ -1,0 +1,10 @@
+private boolean initialized;
+
+public static Init init(Objects... args) {
+if (instance == null) {
+instance = Init();
+instance.initialize(args);
+}
+if (!instance.isInitialized())
+instance.initialize(args);
+

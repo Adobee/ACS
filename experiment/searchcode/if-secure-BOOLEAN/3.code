@@ -1,0 +1,9 @@
+* @author Adam Warski (adam at warski dot org)
+*/
+@Secure(&quot;#{var3 == true}&quot;)
+public class SecureBeanCompoundContextual {
+@AccessIfVar1Set
+@Secure(&quot;#{var2 == true}&quot;)
+public void method1(@SecureVar(&quot;var1&quot;) boolean var1, @SecureVar(&quot;var2&quot;) boolean var2, @SecureVar(&quot;var3&quot;) boolean var3) { }
+}
+

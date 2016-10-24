@@ -1,0 +1,9 @@
+this.params = new HashMap<String, String>();
+String uri = request.getUri();
+int pathEndPos = uri.indexOf(&#39;?&#39;);
+if (pathEndPos < 0) {
+while ((toIndex = queryString.indexOf(&#39;&amp;&#39;, fromIndex)) >= 0) {
+int idx = queryString.indexOf(&#39;=&#39;, fromIndex);
+if (idx < 0) {
+continue;
+

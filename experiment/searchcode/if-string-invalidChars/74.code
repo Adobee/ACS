@@ -1,0 +1,5 @@
+if (!Arrays.equals(invalidChars, symbol.invalidChars)) return false;
+if (name != symbol.name) return false;
+&quot;, invalidChars=&quot; + Arrays.toString(invalidChars) +
+&quot;, needBeforeSpace=&quot; + needBeforeSpace +
+

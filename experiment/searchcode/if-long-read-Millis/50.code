@@ -1,0 +1,9 @@
+private InputStream _in;
+private long _lastCounter;
+private long _lastMillis;
+private long _maxBytesPerSecond;
+int result = _in.read();
+if (result != -1) {
+_counter++;
+waitIfNecessary();
+

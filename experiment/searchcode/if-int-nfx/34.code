@@ -1,0 +1,6 @@
+import org.springframework.context.support.ResourceBundleMessageSource;
+
+import com.netflexity.schema.software.nfx_wmq.messages._1.GetAllBaseChannels;
+import com.netflexity.schema.software.nfx_wmq.messages._1.GetAllBaseChannelsOut;
+import com.netflexity.schema.software.nfx_wmq.messages._1.GetAllBaseQueues;
+

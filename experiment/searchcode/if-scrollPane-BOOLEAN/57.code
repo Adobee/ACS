@@ -1,0 +1,10 @@
+scrollPane.setBounds(x,y,width,height);
+scrollPane.layout();
+textArea.layout();
+}
+
+private boolean atBottom() {
+if (textArea.getHeight() != textArea.getPrefHeight())
+scrollPane.invalidate();
+if(textlines < textArea.getLines() &amp;&amp; atBottom()){
+

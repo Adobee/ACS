@@ -1,0 +1,9 @@
+boolean hasScript = false;
+ISession session = null;
+for (String s : scriptFiles) {
+
+if (session == null)
+session = new Session();
+
+if (!hasScript &amp;&amp; MiscUtilities.getFileName(s).startsWith(&quot;.&quot;))
+

@@ -1,0 +1,12 @@
+public class DatastoreServiceImpl extends RemoteServiceServlet implements
+DatastoreService {
+
+public String saveUser (CUser user) {
+SUser suser = new SUser(user);
+return strip.getTripId().getId();
+}
+
+public List<CTrip> getTripsFor (String encodedUsername) {
+List<CTrip> trips;
+PersistenceManager pm = PMF.get().getPersistenceManager();
+

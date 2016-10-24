@@ -1,0 +1,8 @@
+public abstract class ProblemFactory<T extends Problem> {
+public static int DEFAULT_POPULATION_SIZE = 500;
+private int populationSize;
+
+public ProblemFactory(int populationSize) {
+if(populationSize > 0) {
+this.populationSize = populationSize;
+

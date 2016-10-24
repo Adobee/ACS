@@ -1,0 +1,9 @@
+MultipartBody multipartBody = (MultipartBody) requestBody;
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder();
+if (multipartBody.size() > 0){
+for (int idx = 0; idx < multipartBody.size(); idx ++){
+multipartBuilder.addPart(multipartBody.part(idx));
+}
+}
+if (added != null &amp;&amp; added.size() > 0) {
+

@@ -1,0 +1,6 @@
+public List<TimesWrap> getSumTimes(int sceneId, int locationId, long startDate, long endDate) {
+TimesRequest timesRequest = TimesRequest.newBuilder()
+List<TimesAndMac> timesAndMacs  = timesStub.getTimes(timesRequest);
+int times = 0;
+if (null != timesAndMacs &amp;&amp; timesAndMacs.size() == 1) {
+

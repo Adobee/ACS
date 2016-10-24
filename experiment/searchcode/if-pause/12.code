@@ -1,0 +1,9 @@
+public void save(PauseInfo pauseInfo) throws DAOException, ValidateObjectException
+{
+Pause pause = pauseInfo.getPause();
+if(pause.getKey() == null)
+{
+List<Integer> pauseList = pauseDAO.getPauseCodesByDomainKey(pauseInfo.getDomainKey());
+for(Integer tmp : pauseList)
+if (pause.getPauseCode().equals(tmp))
+

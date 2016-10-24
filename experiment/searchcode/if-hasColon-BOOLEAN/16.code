@@ -1,0 +1,10 @@
+newTable = newTableForType(tableClass, table, tableId, slimTestContext);
+} else if (!hasColon(tableType)) {
+newTable = new DecisionTable(table, tableId, slimTestContext);
+newTable.setFixtureName(getRawFixtureName(tableType));
+return newTable;
+}
+
+private boolean hasColon(String tableType) {
+return tableType.contains(&quot;:&quot;);
+

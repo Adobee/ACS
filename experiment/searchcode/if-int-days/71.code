@@ -1,0 +1,12 @@
+package hw2;
+
+public class ChildrensMovie extends Movie {
+
+private int daysRented;
+
+public ChildrensMovie(String title) {
+super(title);
+}
+
+public void rentMovie(Customer c, int days) {
+

@@ -1,0 +1,16 @@
+for (int i = 0; i < poolSize; i++) {
+if (pool[i].length == size) {
+final int[] toReturn = pool[i];
+pool[i] = pool[poolSize - 1];
+final int[] toReturn = new int[size];
+
+return toReturn;
+}
+
+public final void returnArray(final int[] array) {
+if (array != null) {
+pool[poolSize++] = array;
+}
+}
+}
+

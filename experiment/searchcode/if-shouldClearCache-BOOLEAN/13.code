@@ -1,0 +1,7 @@
+// clear the tile cache on disk if any tiles have been updated
+boolean shouldClearCache = false;
+// keep track of used files, unused files are removed
+if (!MapUtils.hasTile(mContext, filename)) {
+shouldClearCache = true;
+// copy or download the tile if it is not stored yet
+

@@ -1,0 +1,11 @@
+public static void traverse(final File directory, final IDirectoryTraversalVisitor callback) {
+
+if (directory.isDirectory()) {
+for (final File file : directory.listFiles()) {
+if (!file.isDirectory()) {
+callback.visit(file);
+}
+}
+
+for (final File file : directory.listFiles()) {
+

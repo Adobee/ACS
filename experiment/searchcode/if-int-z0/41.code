@@ -1,0 +1,11 @@
+double step = 0.005;
+int it;
+
+p.window(-range, range, -range, range);
+while (z0.getImg() < range) // outer loop in imag direction
+it++;
+}
+if (it < 4)
+putPixel(z0, Color.GRAY);
+else if (it < 5)
+

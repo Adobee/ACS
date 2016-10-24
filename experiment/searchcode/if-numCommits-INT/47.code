@@ -1,0 +1,11 @@
+private int nActiveSerializable;
+
+/* Locker Stats */
+private int numCommits;
+private int numAborts;
+private int numXAPrepares;
+updateMiscMemoryUsage(txn.getAccumulatedDelta() -
+txn.getInMemorySize());
+if (isCommit) {
+numCommits++;
+

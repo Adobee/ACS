@@ -1,0 +1,10 @@
+import com.netflix.astyanax.util.StringUtils;
+
+public class RetryNTimes implements RetryPolicy {
+private final int max;
+private int attempts;
+
+public RetryNTimes(int max) {
+this.max = max;
+this.attempts = 0;
+

@@ -1,0 +1,13 @@
+long quotient = 0;
+while(longDsr < longDen) longDsr <<= 1;
+while(longDsr >= lim){
+quotient <<= 1;
+if(longDen >= longDsr){
+quotient += 1;
+longDen -= longDsr;
+}
+longDsr >>= 1;
+}
+int res = 0;
+if(neg){
+

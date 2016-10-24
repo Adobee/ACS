@@ -1,0 +1,7 @@
+int compareRight = 1;
+int compareLeft = 0;
+while (compareRight < length) {
+buff.append(compareLeft).append(&quot;,&quot;);
+int currVal=a[compareRight];
+if(currVal < 0 || currVal >20 ){
+

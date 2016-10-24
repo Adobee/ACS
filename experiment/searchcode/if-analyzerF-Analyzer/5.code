@@ -1,0 +1,7 @@
+Analyzer analyzerF = analyzerFactory.get();
+if (analyzerF == null) {
+throw new IllegalArgumentException(&quot;analyzer [&quot; + analyzerFactory.name() + &quot;] created null analyzer&quot;);
+}
+NamedAnalyzer analyzer;
+if (analyzerF instanceof NamedAnalyzer) {
+

@@ -1,0 +1,11 @@
+public static double toDouble(Object obj) {
+if (obj == null) {
+return 0.0;
+}
+double value = Double.parseDouble(obj.toString());
+public static double divide(Object divisor, Object dividend) {
+double divisorD = toDouble(divisor);
+double dividendD = toDouble(dividend);
+
+if (divisorD == 0.0 || dividendD == 0.0) {
+

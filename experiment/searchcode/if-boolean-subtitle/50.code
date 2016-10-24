@@ -1,0 +1,7 @@
+public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
+boolean hasFocus, int row, int column)
+{
+Subtitle subtitle = subs.getSubtitles().get(row);
+setText(value.toString());
+if (column == 2 &amp;&amp; !subtitle.isFixed())
+

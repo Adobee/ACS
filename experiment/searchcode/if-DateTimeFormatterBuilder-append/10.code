@@ -1,0 +1,11 @@
+public ExpirationTimePrinter() {
+tomorrowFormatter = new DateTimeFormatterBuilder()
+.appendLiteral(&quot;tomorrow at &quot;)
+.appendHourOfHalfday(1)
+.appendLiteral(&quot; &quot;)
+.appendHalfdayOfDayText()
+.toFormatter();
+
+thisWeekFormatter = new DateTimeFormatterBuilder()
+.appendLiteral(&quot;on &quot;)
+

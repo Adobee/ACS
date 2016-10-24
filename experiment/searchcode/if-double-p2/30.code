@@ -1,0 +1,7 @@
+public static double calculateContinuous(Double[] p1, Double [] p2)
+{
+double kldiv = 0;
+for(int i=0;i<p1.length;i++)
+{
+if(p1[i] == 0){continue;}
+

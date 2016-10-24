@@ -1,0 +1,7 @@
+public List<Range> joinRanges(List<Range> ranges) {
+if (ranges == null || ranges.isEmpty())
+return Collections.emptyList();
+Range currentRange = ranges.get(i);
+if (previousRange.intersects(currentRange)) {
+previousRange = previousRange.plus(currentRange);
+

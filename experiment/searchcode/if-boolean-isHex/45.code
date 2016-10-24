@@ -1,0 +1,10 @@
+public class ParsePrimitiveUtils {
+
+public static boolean isHex(String s) {
+return s.startsWith(&quot;0x&quot;) || s.startsWith(&quot;0X&quot;);
+}
+
+public static byte parseByte(String s) {
+if (isHex(s)) {
+return Byte.parseByte(s.substring(2), 16);
+

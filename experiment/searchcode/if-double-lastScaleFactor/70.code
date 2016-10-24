@@ -1,0 +1,10 @@
+private Font scaledFont = null;
+private double lastScaleFactor = -1;
+
+protected float fontSize = 0.0f;
+protected Font font = null;
+this.text = argMap.get(TEXT);
+this.fontSize = font.getSize2D();
+if (!argMap.containsKey(ShapeAnnotationImpl.WIDTH)) {
+double width = getTextWidth((Graphics2D)this.getGraphics())+8;
+

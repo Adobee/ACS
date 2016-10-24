@@ -1,0 +1,12 @@
+* limitations under the License.
+*/
+package com.intellij.openapi.util;
+
+import org.jetbrains.annotations.NotNull;
+
+/**
+* Text range which asserts its non-negative startOffset and length
+public TextRange intersection(@NotNull TextRange textRange) {
+TextRange range = super.intersection(textRange);
+if (range != null) assertProperRange(range);
+

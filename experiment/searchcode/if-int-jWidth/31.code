@@ -1,0 +1,8 @@
+final int qEnd = FastMath.min(qStart + BLOCK_SIZE, columns);
+final int jWidth = qEnd - qStart;
+
+// allocate new block
+final double[] block = blocks[iBlock * blockColumns + jBlock];
+final int available = outBlock.length - outIndex;
+if (jWidth > available) {
+

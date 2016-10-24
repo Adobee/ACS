@@ -1,0 +1,7 @@
+PhaseIResult phaseIResult = GeneralQP.phaseI(A, b, B, d);
+if (phaseIResult.feasible) {
+fprintf(&quot;Phase II:\n\n&quot;);
+RealMatrix x0 = phaseIResult.optimizer;
+RealMatrix l = new BlockRealMatrix(B.getRowDimension(), 1);
+RealMatrix v = new BlockRealMatrix(A.getRowDimension(), 1);
+

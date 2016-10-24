@@ -1,0 +1,19 @@
+this.flusher = flusher;
+}
+
+@Override
+public void write(int oneByte) throws IOException {
+text[nBytes++] = (byte) oneByte;
+if (oneByte == &#39;\n&#39; || nBytes == MAXLEN) {
+public void flush() throws IOException {
+if (nBytes == 0) {
+return;
+}
+flusher.flush(new String(text, 0, nBytes));
+
+nBytes = 0;
+Arrays.fill(text, (byte) 0);
+}
+
+}
+

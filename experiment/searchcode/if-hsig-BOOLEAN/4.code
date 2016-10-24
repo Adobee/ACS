@@ -1,0 +1,7 @@
+public class HysteresisExample implements StepHandler, FirstOrderDifferentialEquations{
+
+private Signal Hsig = new Signal(&quot;H&quot;, &quot;H&quot;, &quot;A/m&quot;, true);
+public void handleStep(StepInterpolator si, boolean bln) throws MaxCountExceededException {
+
+if (Double.isNaN(si.getInterpolatedState()[0]) ){
+

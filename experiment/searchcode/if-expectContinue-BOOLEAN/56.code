@@ -1,0 +1,12 @@
+public interface HttpEntityEnclosingRequest extends HttpRequest {
+
+/**
+* Tells if this request should use the expect-continue handshake.
+* @return true if the expect continue handshake should be used, false if
+* not.
+*/
+boolean expectContinue();
+
+/**
+* Associates the entity with this request.
+

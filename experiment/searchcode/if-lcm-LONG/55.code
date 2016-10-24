@@ -1,0 +1,13 @@
+long temp = a;
+a = b;
+b = temp;
+}
+static long gcd (long a, long b) {
+if (b > a) {
+int r = a % b;
+return gcd(b,r);
+}
+
+static long lcm (long a, long b) {
+return (a * b)/gcd(a,b);
+

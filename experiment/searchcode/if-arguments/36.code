@@ -1,0 +1,9 @@
+public class ResolverActive {
+
+public static void resolve(ArgumentsActive arguments) {
+if (arguments.active != null) {
+ConfigurationNode node = arguments.active.effects.get(effect);
+
+int delay = node.getInt(&quot;delay&quot;, 0);
+if (delay > 0) {
+

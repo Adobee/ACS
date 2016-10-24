@@ -1,0 +1,8 @@
+DateTickUnitType rollUnitType, int rollMultiple,
+DateFormat formatter) {
+super(DateTickUnit.getMillisecondCount(unitType, multiple));
+throw new IllegalArgumentException(&quot;Requires &#39;multiple&#39; > 0.&quot;);
+}
+if (rollMultiple <= 0) {
+throw new IllegalArgumentException(&quot;Requires &#39;rollMultiple&#39; > 0.&quot;);
+

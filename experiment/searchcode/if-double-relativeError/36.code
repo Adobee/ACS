@@ -1,0 +1,4 @@
+double thisValue = this.getValue().getValueAsDouble();
+double relativeError;
+if (thisValue < RELATIVE_ERROR_THRESHOLD
+

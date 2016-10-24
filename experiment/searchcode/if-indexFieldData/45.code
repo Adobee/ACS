@@ -1,0 +1,5 @@
+public static IndexOrdinalsFieldData build(final IndexReader indexReader, IndexOrdinalsFieldData indexFieldData, Settings settings, CircuitBreakerService breakerService, ESLogger logger) throws IOException {
+for (int i = 0; i < indexReader.leaves().size(); ++i) {
+atomicFD[i] = indexFieldData.load(indexReader.leaves().get(i));
+subs[i] = atomicFD[i].getOrdinalsValues();
+

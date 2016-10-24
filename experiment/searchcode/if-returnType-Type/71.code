@@ -1,0 +1,10 @@
+public DialogueManager manager;
+
+// ----------------------------------------------------------------------
+public ReturnType advance()
+{
+if ( index == actions.size ) { return ReturnType.COMPLETED; }
+
+ReturnType returnType = actions.get( index ).process();
+if ( returnType == ReturnType.COMPLETED )
+

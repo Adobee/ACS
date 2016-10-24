@@ -1,0 +1,10 @@
+* @param offsetGap The offset gap that should be used.
+*/
+public void setOffsetGap(int offsetGap) {
+this.offsetGap = offsetGap;
+* @param fieldName Currently not used, the same offset gap is returned for each field.
+*/
+@Override
+public int getOffsetGap(String fieldName) {
+return offsetGap == null ? super.getOffsetGap(fieldName) : offsetGap;
+

@@ -1,0 +1,9 @@
+public class BufferedProperty<V, T extends ObjectProperty<V>> {
+private T original;
+private T actual;
+
+public BufferedProperty(T original, T actual) {
+public boolean isDirty() {
+Object actual = this.actual.get();
+Object original = this.original.get();
+

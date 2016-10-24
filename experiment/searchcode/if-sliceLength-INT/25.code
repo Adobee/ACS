@@ -1,0 +1,8 @@
+public class FindMin extends RecursiveTask<Integer> {
+private static final long serialVersionUID = 1L;
+private static int counter = 0;
+private int[] numbers;
+protected Integer compute() {
+int sliceLength = (endIndex - startIndex) + 1;
+if (sliceLength > 2) {
+

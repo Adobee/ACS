@@ -1,0 +1,10 @@
+@QueryParam(value = &quot;daysToAdd&quot;) int daysToAdd)
+{
+Date result = null;
+int secondsToAdd = (int) (SECONDS_IN_DAY * daysToAdd);
+for (int workSeconds = 0; workSeconds < secondsToAdd - diff;)
+{
+c.add(Calendar.SECOND, SECONDS_IN_DAY);
+int dayOfWeek = c.get(Calendar.DAY_OF_WEEK);
+if (!(dayOfWeek == Calendar.SATURDAY || dayOfWeek == Calendar.SUNDAY))
+

@@ -1,0 +1,13 @@
+endMillis -= seconds * 1000;
+}
+
+public int getSeconds() {
+calculate();
+int seconds = (int) (countdownMillis / 1000);
+if (seconds > 60) {
+public int getMinutes() {
+calculate();
+int minutes = (int) (countdownMillis / (60 * 1000));
+if (minutes >= 60) {
+minutes = minutes % 60;
+

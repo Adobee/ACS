@@ -1,0 +1,13 @@
+* @param vector2
+* @return
+*/
+public static double cosineSimilarity(double[] vector1, double[] vector2) {
+if (vector1 == null || vector2 == null) {
+throw new RuntimeException(&quot;vector cannot be null!&quot;);
+}
+if (vector1.length != vector2.length) {
+return 1.0;
+}
+double dotProduct = 0.0;
+double norm1 = 0.0;
+

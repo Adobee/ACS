@@ -1,0 +1,11 @@
+private final String regex;
+private final int flags;
+
+private int groupCount = 1;
+
+private Pattern pattern;
+if (item instanceof OpenBracket) {
+int groupCount = ((OpenBracket)item).getGroupNumber();
+if (groupCount != -1) {
+this.groupCount = groupCount + 1;
+

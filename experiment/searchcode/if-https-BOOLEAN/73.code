@@ -1,0 +1,11 @@
+return (null != url) &amp;&amp; (url.length() > 6)
+&amp;&amp; url.substring(0, 7).equalsIgnoreCase(&quot;http://&quot;);
+}
+
+public static boolean isHttpsUrl(String url) {
+&amp;&amp; url.substring(0, 8).equalsIgnoreCase(&quot;https://&quot;);
+}
+
+public static boolean isNetworkUrl(String url) {
+if (url == null || url.length() == 0) {
+

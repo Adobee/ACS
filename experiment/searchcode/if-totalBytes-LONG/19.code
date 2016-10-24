@@ -1,0 +1,13 @@
+public class DataOperationStats extends AllRecordingOperationStats {
+protected long totalBytes = 0;
+
+@Override
+public DataOperationStats newInstance() {
+public void setTotalBytes(Long totalBytes) {
+if (totalBytes != null) {
+this.totalBytes = totalBytes.longValue();
+}
+}
+
+public String getResponseTimes() {
+

@@ -1,0 +1,9 @@
+import java.awt.print.PrinterException;
+import java.awt.print.PrinterJob;
+
+public class PrintPic {
+PrinterJob job = PrinterJob.getPrinterJob();
+job.setPrintable(new HelloWorldPrinter());
+boolean doPrint = job.printDialog();
+if (doPrint) {
+

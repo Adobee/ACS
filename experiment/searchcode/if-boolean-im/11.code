@@ -1,0 +1,9 @@
+public double arg() { return Math.atan2(re, im); }
+
+// Ïðîâåðêà, ÿâëÿåòñÿ ëè ÷èñëî äåéñòâèòåëüíûì
+public boolean isReal() { return (Math.abs(im) < EPS); }
+// -- Ïåðåîïðåäåëåíèå ìåòîäîâ êëàññà Object ------------------------------------------
+@Override public boolean equals(Object z)
+{
+if (z instanceof Complex)
+

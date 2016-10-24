@@ -1,0 +1,8 @@
+Assert.notNull(clazz, &quot;Class must not be null&quot;);
+Map<TypeVariable, Type> typeVariableMap = getTypeVariableMap(clazz);
+Type rawType = getRawType(genericType, typeVariableMap);
+else if (arg instanceof TypeVariable) {
+TypeVariable tv = (TypeVariable) arg;
+arg = getTypeVariableMap(ownerClass).get(tv);
+if (arg == null) {
+

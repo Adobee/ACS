@@ -1,0 +1,11 @@
+GL11.glEnd();
+}
+
+public boolean touchesEntity(Entity o) {
+if ((o.loc.x >= loc.x &amp;&amp; o.loc.x <= loc.x + size.w &amp;&amp; o.loc.y >= loc.y &amp;&amp; o.loc.y <= loc.y + size.h) ||
+return false;
+}
+
+public boolean basicCollide(Entity o) {
+if ((o.loc.x > loc.x &amp;&amp; o.loc.x < loc.x + size.w &amp;&amp; o.loc.y > loc.y &amp;&amp; o.loc.y < loc.y + size.h) ||
+

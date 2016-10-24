@@ -1,0 +1,9 @@
+int nrows = getRows();
+int ncols = getColumns();
+if (nrows > 0) {
+ncols = (ncomponents + nrows - 1) / nrows;
+int ncomponents = parent.getComponentCount();
+int nrows = getRows();
+int ncols = getColumns();
+if (ncomponents == 0) {
+

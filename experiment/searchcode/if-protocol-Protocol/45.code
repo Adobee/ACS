@@ -1,0 +1,10 @@
+/**
+*
+*/
+package com.cross.plateform.common.rpc.core.protocol.factory;
+
+import com.cross.plateform.common.rpc.core.protocol.RpcProtocol;
+private static void registerProtocol(int type,RpcProtocol customProtocol){
+if(type > protocolHandlers.length){
+RpcProtocol[] newProtocolHandlers = new RpcProtocol[type + 1];
+

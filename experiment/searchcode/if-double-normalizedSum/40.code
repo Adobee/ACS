@@ -1,0 +1,7 @@
+throws MathIllegalArgumentException, MathArithmeticException {
+if (Double.isInfinite(normalizedSum)) {
+throw new MathIllegalArgumentException(LocalizedFormats.NORMALIZE_INFINITE);
+}
+if (Double.isNaN(normalizedSum)) {
+throw new MathIllegalArgumentException(LocalizedFormats.NORMALIZE_NAN);
+

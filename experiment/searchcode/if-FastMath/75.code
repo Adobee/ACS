@@ -1,0 +1,8 @@
+Vector3D rhoDot = obj.getVelocity().subtract(v_site);
+
+if (FastMath.sqrt(FastMath.pow(rho.getX(), 2) + FastMath.pow(rho.getY(), 2)) != 0) {
+sinRA = rho.getY() / FastMath.sqrt(FastMath.pow(rho.getX(), 2) + FastMath.pow(rho.getY(), 2));
+RA = FastMath.atan2(sinRA, cosRA);
+if (RA <= 0) {
+RA = RA + 2 * FastMath.PI;
+

@@ -1,0 +1,8 @@
+import newtonERP.orm.field.type.FieldCurrency;
+import newtonERP.orm.field.type.FieldInt;
+import newtonERP.orm.field.type.FieldString;
+public Fields initFields() throws Exception
+{
+Vector<Field<?>> fieldsData = new Vector<Field<?>>();
+fieldsData.add(new FieldInt(&quot;Numéro d&#39;employé&quot;, getPrimaryKeyName()));
+

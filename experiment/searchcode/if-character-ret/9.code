@@ -1,0 +1,9 @@
+if (!value()) {
+ret = false;
+} else {
+skipWhiteSpace();
+if (c != CharacterIterator.DONE) {
+for (t = ci.next(); t != CharacterIterator.DONE; t = ci.next()) {
+if (t != nextCharacter()) {
+ret = false;
+

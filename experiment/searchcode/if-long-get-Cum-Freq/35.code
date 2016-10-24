@@ -1,0 +1,9 @@
+* @param v the value to lookup.
+* @return the proportion of values equal to v
+*/
+public long getCumFreq(Object v) {
+if (v instanceof Integer) {
+return getCumFreq(((Integer) v).longValue());
+}
+Comparator c = freqTable.comparator();
+

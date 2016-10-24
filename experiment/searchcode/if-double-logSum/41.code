@@ -1,0 +1,13 @@
+private final int maxWarnCnt = 3;
+
+private double logSum;
+private Scenario scenario;
+
+
+public void calculateLogsum() {
+
+Population population = scenario.getPopulation();
+for(Person person : population.getPersons().values()){
+double logsumOfPerson = calculateLogsumOfPerson(person);
+this.logSum += logsumOfPerson;
+

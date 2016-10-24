@@ -1,0 +1,9 @@
+if (!BaseUtils.isAuthorityEditing()) {
+scs = createNewFileShortCuts();
+}
+if (!ArrayUtils.isEmpty(scs)) {
+menuDef.addShortCut(scs);
+shortCuts.add(SeparatorDef.DEFAULT);
+if (ComparatorUtils.equals(ProductConstants.APP_NAME,FINEREPORT)) {
+shortCuts.add(new FeedBackAction());
+

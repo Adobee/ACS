@@ -1,0 +1,12 @@
+public Point p1;
+public Point p2;
+public double x;
+public double y;
+public double z;
+this.y = p2.y-p1.y;
+this.z = p2.z-p1.z;
+}
+
+public Vector(double x, double y, double z){
+this.p1 = new Point(0.d, 0.d, 0.d);
+

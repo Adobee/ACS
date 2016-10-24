@@ -1,0 +1,7 @@
+public static Writer writerForAppendable(Appendable appendable)
+{
+if(appendable instanceof Writer)
+return (Writer)appendable;
+else
+return new AppendableWriter(appendable, null);
+

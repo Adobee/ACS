@@ -1,0 +1,9 @@
+* @param ommitFinalS checks whether to ommit the final &quot;S&quot; letter or not
+* @return the new keyword
+*/
+public String mapCharacters(String keyword, boolean ommitFinalS) {
+keyword = keyword.replaceAll(&quot;ϊ&quot;, &quot;ι&quot;);
+keyword = keyword.replaceAll(&quot;ϋ&quot;, &quot;υ&quot;);
+if (ommitFinalS) {
+keyword = keyword.replaceAll(&quot;ς&quot;, &quot;&quot;);
+

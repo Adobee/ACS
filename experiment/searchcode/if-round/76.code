@@ -1,0 +1,10 @@
+boolean accept=false;
+try{
+Round filter=new Round();
+filter.setRoundName(roundName);
+if( roundDao.retrieve(filter)!=null){
+Round filter=new Round();
+filter.setRoundName(roundName);
+filter.setRoundId(id);
+if( roundDao.retrieveExclude(filter)!=null){
+

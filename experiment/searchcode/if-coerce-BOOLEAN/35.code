@@ -1,0 +1,9 @@
+public boolean coerceToBool() {
+return value != 0;
+}
+
+@Override
+public PythonType getType() {
+public NumericValue lt(NumericValue rhs) {
+return BooleanType.wrap((this.coerceToInt() < rhs.coerceToInt()));
+

@@ -1,0 +1,9 @@
+private ImageParameters im;
+private double pixieX, pixieY;
+
+Mapper(RrdGraph rrdGraph) {
+this.gdef = rrdGraph.gdef;
+pixieX = (double) im.xsize / (double) (im.end - im.start);
+if (!gdef.logarithmic) {
+pixieY = (double) im.ysize / (im.maxval - im.minval);
+

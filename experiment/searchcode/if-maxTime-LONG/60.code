@@ -1,0 +1,9 @@
+protected static final Log slowLogger = Log4jFactory.getDataSourceLogger(SlowLog.class);
+
+private long maxTime;
+private String name;
+Object result = this.invoke();
+long time = System.currentTimeMillis() - startTime;
+if (time > maxTime) {
+slowLogger.debug(name + &quot; time:&quot; + time);
+

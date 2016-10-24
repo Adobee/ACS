@@ -1,0 +1,7 @@
+public static double lower(double z) { // 累積確率（下側）
+double  z2 = z * z,
+t = z * Math.exp(-0.5 * z2) / Math.sqrt(2 * Math.PI),
+for (int i = 3; i < 200; i+= 2) {
+double prev = p;  t *= z2 / i;  p += t;
+if (p == prev) return 0.5 + p;
+

@@ -1,0 +1,11 @@
+public class AdaptiveCommonsMathIntegratorAdapter implements AdaptiveStepSolver {
+
+private double absTolerance;
+private double relTolerance;
+private double stepSize;
+xTemp2 = integrator.singleStep(commonsMathOde, t + halfStep, xTemp2, t + curStep);
+double err = Double.NaN;
+if (absTolerance > 0) {
+double absError = 0.0;
+for (int i=0; i < commonsMathOde.getDimension(); i++)
+

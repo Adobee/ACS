@@ -1,0 +1,10 @@
+private static JDinkObjectOutput objectOutput;
+
+public static void writeObject(String name, Object o) {
+if (objectOutput != null) {
+objectOutput.writeObject(name, o);
+}
+}
+
+public static JDinkObjectOutput getObjectOutput() {
+

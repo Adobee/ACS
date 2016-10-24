@@ -1,0 +1,11 @@
+package com.fuwei.constant;
+
+public class OrderStatusUtil {
+public static OrderStatus get(int status){
+for(OrderStatus OrderStatus : statuses){
+if(OrderStatus.ordinal() == status){
+return OrderStatus;
+}
+}
+return null;
+

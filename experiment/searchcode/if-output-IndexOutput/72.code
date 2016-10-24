@@ -1,0 +1,11 @@
+* @author l.xue.nong
+*/
+public abstract class OpenBufferedIndexOutput extends IndexOutput {
+
+/** The Constant DEFAULT_BUFFER_SIZE. */
+* @see org.apache.lucene.store.DataOutput#writeByte(byte)
+*/
+@Override
+public void writeByte(byte b) throws IOException {
+if (bufferPosition >= BUFFER_SIZE)
+

@@ -1,0 +1,9 @@
+* @param datasetCacheKey
+* @return
+*/
+public boolean isCached(DatasetCacheKey datasetCacheKey) {
+return cache.get(datasetCacheKey) != null;
+public Point[] getDataset(DatasetCacheKey datasetCacheKey) {
+if(cache.get(datasetCacheKey) != null){
+//cache.get(datasetCacheKey).setDate(new Date());
+

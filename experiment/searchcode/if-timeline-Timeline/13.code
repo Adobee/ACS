@@ -1,0 +1,9 @@
+public Play(){
+//如果是新加入的视频（还没有播放过），则从头开始播放
+if (TimelineX.getTimelineX().videoJustOpened) {
+Timeline.getTimeline().setCurrTime(0);
+public void run() {
+//如果检测到modle停止，则马上退出播放
+if (!Timeline.getTimeline().getPlaying()){
+TimelineX.tlx.getPlayPane().getMediaPlayer().pause();
+

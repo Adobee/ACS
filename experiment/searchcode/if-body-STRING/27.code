@@ -1,0 +1,12 @@
+public String 					routingKey = &quot;&quot;;
+public String 					body = &quot;&quot;;
+
+public Message(String routingKey, String body){
+this.routingKey = routingKey;
+this.body = body;
+}
+
+public String toString(){
+if (exchange.length() > 0) {
+return String.format(&quot;Exchange=&#39;%s&#39; Key=&#39;%s&#39;, &#39;%s&#39;&quot;, exchange, routingKey, body);
+

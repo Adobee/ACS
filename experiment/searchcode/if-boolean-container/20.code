@@ -1,0 +1,10 @@
+public Warehouse(int size) {
+containerList = new ArrayList<Container>(size);
+this.size = size;
+}
+
+public boolean addContainer(Container container) {
+public boolean addContainer(List<Container> containers) {
+boolean result = false;
+if(containerList.size() + containers.size() <= size){
+

@@ -1,0 +1,7 @@
+public Map<String, IndexUpgradeStatus> getIndices() {
+if (indicesUpgradeStatus != null) {
+return indicesUpgradeStatus;
+boolean outputShards = &quot;shards&quot;.equals(level);
+boolean outputIndices = &quot;indices&quot;.equals(level) || outputShards;
+if (outputIndices) {
+

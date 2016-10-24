@@ -1,0 +1,9 @@
+public void addListener( Class listenerType, EventListener listener ) {
+if( listenerType == null ) {
+SWT.error( SWT.ERROR_NULL_ARGUMENT );
+return result;
+}
+
+private static void checkTypeCompatibility( Class<?> listenerType, Object listener ) {
+if( !listenerType.isAssignableFrom( listener.getClass() ) ) {
+

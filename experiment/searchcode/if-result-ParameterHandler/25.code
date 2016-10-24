@@ -1,0 +1,15 @@
+rs = ps.executeQuery();
+if (rs.next()) {
+result = rs.getInt(1);
+ps.close();
+}
+if (rs != null) {
+rs.close();
+}
+}
+return result;
+}
+
+public abstract String getCountSql(String sql);
+}
+

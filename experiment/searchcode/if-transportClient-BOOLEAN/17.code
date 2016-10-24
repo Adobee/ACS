@@ -1,0 +1,9 @@
+import com.yandex.disk.client.TransportClient;
+import com.yandex.disk.client.exceptions.CancelledPropfindException;
+
+import java.text.Collator;
+private final Comparator<ListItem> LIST_ITEM_COMPARATOR = (f1, f2) -> {
+if (f1.isCollection() &amp;&amp; !f2.isCollection()) {
+return -1;
+} else if (f2.isCollection() &amp;&amp; !f1.isCollection()) {
+

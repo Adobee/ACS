@@ -1,0 +1,17 @@
+/*
+* $Id$
+*/
+
+package org.opendds.jms.transport;
+
+import javax.jms.JMSException;
+
+import OpenDDS.DCPS.transport.TransportImpl;
+public synchronized TransportImpl getTransport() throws JMSException {
+if (transport == null) {
+createTransport();
+}
+return transport;
+}
+}
+

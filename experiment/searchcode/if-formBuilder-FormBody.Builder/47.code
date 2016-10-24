@@ -1,0 +1,9 @@
+public void bodyParam(WebParam webParam) {
+Request request = null;
+FormBody.Builder formBuilder = new FormBody.Builder();
+formBuilder.add(key, (String) webParam.requestParam.get(key));
+}
+body = formBuilder.build();
+builder.url(webParam.url).put(body);
+if (webParam.headerParam.size() > 0) {
+

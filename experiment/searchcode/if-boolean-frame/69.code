@@ -1,0 +1,13 @@
+stepFrame();
+rollOnOpenFrames(pins);
+}
+
+private void stepFrame() {
+if (frames[currentFrame].isAllRollsUsed() &amp;&amp; !lastFrame()) {
+currentFrame++;
+}
+}
+
+private boolean lastFrame() {
+return currentFrame == frames.length-1;
+

@@ -1,0 +1,9 @@
+public synchronized static final SSLSocketFactory getSSLSocketFactory(boolean insecure) {
+if (insecure) {
+if (sInsecureFactory == null) {
+sInsecureFactory = SSLCertificateSocketFactory.getInsecure(0, null);
+}
+return sInsecureFactory;
+} else {
+if (sSecureFactory == null) {
+

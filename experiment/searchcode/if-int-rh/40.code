@@ -1,0 +1,10 @@
+public <R extends IResultsHandler> void injectHandler(R rh) {
+
+if (rh == null) throw new IllegalArgumentException(&quot;Expecting ResultsHandler; got &#39;null&#39; instead&quot;);
+
+this.rh = rh;
+}
+
+@Override
+public void update(double temp, int x, int y) {
+

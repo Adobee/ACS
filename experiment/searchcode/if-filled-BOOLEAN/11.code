@@ -1,0 +1,13 @@
+class Tank {
+boolean isFilled = false;
+
+Tank(boolean isFilled) {
+this.isFilled = isFilled;
+void SetEmpty() {
+isFilled = false;
+}
+
+protected void finalize() {
+if (isFilled)
+System.out.println(&quot;Error! Tank is not empty&quot;);
+

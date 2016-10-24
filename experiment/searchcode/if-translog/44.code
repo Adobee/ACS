@@ -1,0 +1,8 @@
+super.setUp();
+translog = create();
+// if a previous test failed we clean up things here
+try {
+final Path[] locations = translog.locations();
+translog.close();
+if (translog.currentId() > 1) {
+

@@ -1,0 +1,11 @@
+private String[] ranks = {&quot;Ace&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, &quot;9&quot;, &quot;10&quot;, &quot;Jack&quot;, &quot;Queen&quot;, &quot;King&quot;};
+
+Card(int rank, int suit) {
+this.rank = rank;
+this.suit = suit;
+if(rank > 0 &amp;&amp; rank < 10)
+Random random = new Random();
+rank = random.nextInt(13);
+suit = random.nextInt(4);
+if(rank > 0 &amp;&amp; rank < 10)
+

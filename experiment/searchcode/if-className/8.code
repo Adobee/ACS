@@ -1,0 +1,9 @@
+private final String className;
+
+public Node(String className) {
+if (className == null) {
+throw new IllegalArgumentException();
+}
+if (className.endsWith(&quot;[]&quot;)) {
+className = className.substring(0, className.length() - 2);
+

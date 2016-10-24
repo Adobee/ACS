@@ -1,0 +1,9 @@
+public class FieldValueBoolean extends FieldValue<Boolean> {
+private Boolean allowNulls = false;
+
+public FieldValueBoolean(String fieldName, FieldConversion<Boolean> converter) {
+public void initializeValue(Boolean value) {
+if (allowNulls) {
+super.initializeValue(value);
+} else {
+

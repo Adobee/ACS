@@ -1,0 +1,10 @@
+/** {@inheritDoc} */
+public RealMatrix getP() {
+if ((cachedP == null) &amp;&amp; !singular) {
+final int m = pivot.length;
+public double getDeterminant() {
+if (singular) {
+return 0;
+} else {
+final int m = pivot.length;
+

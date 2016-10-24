@@ -1,0 +1,10 @@
+import org.jfree.chart.axis.DateAxis;
+import org.jfree.chart.axis.Timeline;
+import org.jfree.chart.event.AxisChangeEvent;
+import org.jfree.chart.event.AxisChangeListener;
+long start = (long) (getValue() / ratio + rangeMin);
+long end = (long) (start + dateRange);
+
+if (end > start) {
+Timeline timeLine = dateAxis.getTimeline();
+

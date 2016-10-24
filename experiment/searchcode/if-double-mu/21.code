@@ -1,0 +1,12 @@
+public class WaldDistribution implements Distribution
+{
+private double mu;
+private double lambda;
+
+/**
+* Wald distribution == Inverse Gaussian distribution
+public WaldDistribution (double mu, double lambda)
+{
+this.mu = mu;
+this.lambda = lambda;
+

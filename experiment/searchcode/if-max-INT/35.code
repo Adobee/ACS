@@ -1,0 +1,9 @@
+package me.seanxiao.leetcode;
+
+public class MaximumSubarray {
+
+public int maxSubArray(int[] A) {
+int maxSum = Integer.MIN_VALUE;
+int max[] = new int[A.length];
+if (A.length > 0) {
+

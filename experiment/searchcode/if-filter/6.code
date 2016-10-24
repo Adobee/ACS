@@ -1,0 +1,10 @@
+import java.util.List;
+
+import mikera.tyrant.engine.Thing;
+
+
+public class OrFilter implements IThingFilter {
+for (Iterator<IThingFilter> iter = filters.iterator(); iter.hasNext();) {
+IThingFilter filter = iter.next();
+if(filter.accept(thing, query)) return true;
+

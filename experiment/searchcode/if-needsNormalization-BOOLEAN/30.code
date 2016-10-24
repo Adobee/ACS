@@ -1,0 +1,7 @@
+static String normalizeHostnamePattern(String hostnamePattern) {
+requireNonNull(hostnamePattern, &quot;hostnamePattern&quot;);
+if (needsNormalization(hostnamePattern)) {
+new DomainNameMappingBuilder<>(Boolean.FALSE).add(hostnamePattern, Boolean.TRUE).build();
+
+if (!mapping.map(defaultHostname)) {
+

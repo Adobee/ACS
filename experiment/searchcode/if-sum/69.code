@@ -1,0 +1,6 @@
+public class Solution {
+boolean hasPathSum(TreeNode p, int currentSum, int sum) {
+if (p == null) return false;
+currentSum += p.val;
+if (currentSum == sum &amp;&amp; p.left == null &amp;&amp; p.right == null) return true;
+

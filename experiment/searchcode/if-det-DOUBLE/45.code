@@ -1,0 +1,9 @@
+public static double przynaleznosc(double xx, double xy, double yx, double yy, double zx, double zy)    {
+double det; //wyznacznik macierzy
+
+det = xx*yy + yx*zy + zx*xy - zx*yy - xx*zy - yx*xy;
+if (det!=0)
+return 0 ;
+else {
+if ((Math.min(xx, yx) <= zx) &amp;&amp; (zx <= Math.max(xx, yx)) &amp;&amp;
+

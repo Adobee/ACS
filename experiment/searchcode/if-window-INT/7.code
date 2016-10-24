@@ -1,0 +1,14 @@
+private static WindowInfo instance;
+
+private int windowWidth;
+private int windowHeight;
+
+private WindowInfo(){
+}
+
+public static WindowInfo getInstance(){
+if(instance != null){
+return instance;
+}
+WindowInfo windowInfo = new WindowInfo();
+

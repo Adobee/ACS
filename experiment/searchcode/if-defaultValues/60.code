@@ -1,0 +1,9 @@
+private Map<VisualProperty<?>, Object> defaultValues;
+
+public DefaultValueSet() {
+this.defaultValues = new HashMap<VisualProperty<?>, Object>();
+public Object getDefaultValue(VisualProperty<?> visualProperty) {
+Object defaultValue = defaultValues.get(visualProperty);
+
+if (defaultValue == null) {
+

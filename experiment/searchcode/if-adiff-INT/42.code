@@ -1,0 +1,10 @@
+StringBuilder html = new StringBuilder();
+int i = 0;
+for (Diff aDiff : diffs) {
+String text;
+if (escapeSourceHtml){
+text = text.replaceAll(&quot;(\r\n|\n\r|\r|\n)&quot;, &quot;<br/>&quot;);
+
+if (aDiff.operation == Operation.DELETE
+&amp;&amp; output != TextType.MODIFIED) {
+

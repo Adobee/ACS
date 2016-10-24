@@ -1,0 +1,12 @@
+return Double.longBitsToDouble(asLong);
+}
+
+public byte[] array(int len, boolean current) {
+if(len==-1) {
+len = remaining();
+byte[] result = new byte[len];
+int start=0;
+if(current) {
+if(len>0 &amp;&amp; position <0) {
+position = 0;
+

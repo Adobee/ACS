@@ -1,0 +1,11 @@
+this.myType = type;
+}
+public int compareTo(PooledResource<T> other) {
+if (this == other) {
+return 0;
+}
+if (this.permit.availablePermits() > other.permit.availablePermits()) {
+return -1;
+}
+if (this.permit.availablePermits() < other.permit.availablePermits()) {
+

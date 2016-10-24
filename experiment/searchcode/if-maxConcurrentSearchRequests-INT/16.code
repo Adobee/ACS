@@ -1,0 +1,8 @@
+public class TransportMultiSearchAction extends HandledTransportAction<MultiSearchRequest, MultiSearchResponse> {
+
+private final int availableProcessors;
+private final ClusterService clusterService;
+clusterState.blocks().globalBlockedRaiseException(ClusterBlockLevel.READ);
+
+int maxConcurrentSearches = request.maxConcurrentSearchRequests();
+

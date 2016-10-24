@@ -1,0 +1,11 @@
+import org.malai.swing.action.library.SetWidgetPosition;
+
+public class SetVisibleComponent extends SetWidgetPosition {
+protected boolean visible;
+protected void doActionBody() {
+component.setVisible(visible);
+component.repaint();
+if(visible)
+super.doActionBody();
+done();
+

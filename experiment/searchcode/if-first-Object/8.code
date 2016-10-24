@@ -1,0 +1,10 @@
+private Object first;
+
+public FirstRowHandler ( RowHandler rowHandler ) {
+this.rowhandler = rowHandler;
+}
+
+public void handleRow(Object object) {
+rowhandler.handleRow(object);
+if (first == null) {
+

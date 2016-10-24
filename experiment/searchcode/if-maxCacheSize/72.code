@@ -1,0 +1,11 @@
+public void addToCache(String id,Bitmap bitmap){
+cacheSize+=bitmap.getRowBytes();
+if(cacheSize>maxCacheSize){
+imageCache.remove(key);
+}
+if(cacheSize>maxCacheSize){
+isFullQueue();
+}
+}
+}
+

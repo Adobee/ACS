@@ -1,0 +1,10 @@
+final Call.Factory callFactory = new OkHttpClient.Builder().build();
+
+createBuilder()
+.setSpace(DEFAULT_SPACE)
+.setCallFactory(callFactory)
+.build()
+.fetchSpace();
+
+assertThat(server.getRequestCount()).isEqualTo(1);
+

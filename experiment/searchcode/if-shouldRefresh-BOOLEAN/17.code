@@ -1,0 +1,12 @@
+public class AddInstance extends AbstractWandoraTool implements WandoraTool {
+
+private boolean shouldRefresh = false;
+
+public AddInstance() {
+}
+public AddInstance(Context preferredContext) {
+public void execute(Wandora wandora, Context context) throws TopicMapException {
+shouldRefresh = false;
+Iterator topics = context.getContextObjects();
+if(topics != null &amp;&amp; topics.hasNext()) {
+

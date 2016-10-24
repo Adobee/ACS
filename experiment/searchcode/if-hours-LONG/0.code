@@ -1,0 +1,10 @@
+public class TimeUtils
+{
+public static String getDurationBreakdown(long millis) {
+if (millis < 0L) {
+throw new IllegalArgumentException(&quot;Duration must be greater than zero!&quot;);
+final long seconds = TimeUnit.MILLISECONDS.toSeconds(millis);
+final StringBuilder sb = new StringBuilder(64);
+if (hours != 0L) {
+sb.append(hours);
+

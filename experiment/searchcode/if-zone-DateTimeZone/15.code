@@ -1,0 +1,9 @@
+private final ZoneId dateTimeZone;
+
+public JavaLocalTimeTojuDateConverter(ZoneId dateTimeZone) {
+public Date convert(LocalTime in) throws Exception {
+if (in == null) return null;
+return Date.from(in.atDate(LocalDate.now()).atZone(dateTimeZone).toInstant());
+}
+}
+

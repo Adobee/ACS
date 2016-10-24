@@ -1,0 +1,13 @@
+case 3: dayOfMonth= new Integer(tokens[2]);//threw
+if(!(dayOfMonth>0 &amp;&amp; dayOfMonth<32))
+{
+throw new IllegalArgumentException(&quot;Bad day of month: \&quot;&quot;+s+&quot;\&quot;&quot;);
+public Integer getDayOfMonth() {
+return dayOfMonth;
+}
+
+@Override
+public int compareTo(Date o) {
+if(o==this) return 0;
+int i= year.compareTo(o.year);
+

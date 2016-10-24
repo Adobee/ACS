@@ -1,0 +1,8 @@
+* Ant int array scratchpad
+* @author Zeno410
+*/
+public class IntPad {
+private WeakHashMap<Thread,int []> pads = new WeakHashMap<Thread,int []>();
+int [] result = pads.get(Thread.currentThread());
+if ( result == null||size != result.length) {
+

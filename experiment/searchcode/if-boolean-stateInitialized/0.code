@@ -1,0 +1,8 @@
+public static final String SERVLET_ATTRIB_KEY = &quot;vizzlyState&quot;;
+
+private Boolean stateInitialized = false;
+
+private long numberOfRequests = 0L;
+private synchronized void initStateContainer(VizzlyConfiguration config) throws VizzlyException {
+if(!stateInitialized) {
+

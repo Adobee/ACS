@@ -1,0 +1,16 @@
+boolean negate = true;
+
+BoolCondition(String a)
+{
+if(a.contains(&quot;!&quot;))
+{
+this.negate = true;
+@Override
+boolean evaluate()
+{
+if(this.negate)
+return !a();
+return a();
+}
+}
+

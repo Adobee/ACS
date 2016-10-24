@@ -1,0 +1,6 @@
+// Return an operator based on mutation type
+public static IMutationOperator getOperator(String mutationType){
+if (mutationType.equals(IMutationOperator.XSD_MUTATION_ENUMERATION))
+return new EnumerationOperator();
+if (mutationType.equals(IMutationOperator.XSD_MUTATION_MININCLUSIVE))
+

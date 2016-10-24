@@ -1,0 +1,10 @@
+int discrepancies = 0;
+double objectiveValue = objectiveFunction();
+while (true) {
+System.out.println(&quot;Objective value = &quot; + objectiveValue);
+if (newObjectiveValue > objectiveValue) {
+discrepancies++;
+}
+if (Double.isInfinite(newObjectiveValue)) {
+System.out.println(&quot;Failed to teach due to objective value overflow.&quot;);
+

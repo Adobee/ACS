@@ -1,0 +1,14 @@
+private int capacity = 10;
+private int size = 0;
+
+private T[] stack = (T[]) new Object[capacity];
+
+public boolean isEmpty() {
+return size;
+}
+
+public void push(T element) {
+stack[size] = element;
+size++;
+copyArray();
+

@@ -1,0 +1,11 @@
+private static final String LOG_TAG = CancellationToken.class.getCanonicalName();
+
+private volatile boolean cancelled;
+this.cancelled = true;
+}
+
+/**
+* Returns true if the operation has been canceled.
+*/
+public synchronized boolean isCancelled() {
+

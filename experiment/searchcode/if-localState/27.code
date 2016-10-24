@@ -1,0 +1,10 @@
+return arguments.get(1).evaluate(globalState, localState);
+}
+});
+} else if (arguments.size() == 1 &amp;&amp; op.isUnaryOp()) {
+return op.evaluateUnaryOperator(arguments.get(0).evaluate(globalState, localState));
+public static ILconst eval(ImVarAccess e, ProgramState globalState, LocalState localState) {
+ImVar var = e.getVar();
+if (var.isGlobal()) {
+if (isMagicCompiletimeConstant(var)) {
+

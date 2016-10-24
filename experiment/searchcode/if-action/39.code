@@ -1,0 +1,9 @@
+public class GuestListActionFactory extends ActionFactory {
+@Override
+public Action getAction(String actionName){
+Action action = null;
+
+if(&quot;delete&quot;.equals(actionName)){
+action = new DeleteAction();
+}else if(&quot;insert&quot;.equals(actionName)){//완료
+

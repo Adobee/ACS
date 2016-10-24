@@ -1,0 +1,16 @@
+@Override
+public void sort(int[] a) {
+for (int gap = a.length / 2; gap > 0; gap = gap - 2) {
+for(int i = gap;i < a.length;i++){
+int temp = a[i];
+for(j = i-gap;j>=0;j-=gap){
+if(temp < a[j]){
+a[j+gap] = a[j];
+}else
+break;
+}
+a[j+gap] = temp;
+}
+}
+}
+

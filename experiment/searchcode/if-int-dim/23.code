@@ -1,0 +1,9 @@
+public boolean equals(Vect<E> compare_vect) {
+int size = getDim();
+if (compare_vect.getDim() != size) {
+return false;
+}
+
+for (int dim = 0; dim < size; dim++) {
+if (compare_vect.vectArr[dim] != vectArr[dim]) {
+

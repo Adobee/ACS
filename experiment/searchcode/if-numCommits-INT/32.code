@@ -1,0 +1,11 @@
+public class MySQLiteDbHelper {
+
+private static final int DATABASE_VERSION = 1;
+private static final String DATABASE_NAME = &quot;NITELIGHTS&quot;;
+public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+db.execSQL(&quot;DROP TABLE IF EXISTS &quot; + VENUE_TABLE);
+onCreate(db);
+}
+}
+}
+

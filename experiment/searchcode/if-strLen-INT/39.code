@@ -1,0 +1,10 @@
+public String withoutX2(String str) {
+int strLen = str.length();
+String result = &quot;&quot;;
+
+if(strLen<3) return str.replace(&quot;x&quot;,&quot;&quot;);
+result += str.substring(0,2).replace(&quot;x&quot;,&quot;&quot;) + str.substring(2);
+
+return result;
+}
+

@@ -1,0 +1,5 @@
+public static Scoping forAnnotation(final Class<? extends Annotation> scopingAnnotation) {
+if (scopingAnnotation == Singleton.class || scopingAnnotation == javax.inject.Singleton.class) {
+public <V> V acceptVisitor(BindingScopingVisitor<V> visitor) {
+return visitor.visitScopeAnnotation(scopingAnnotation);
+

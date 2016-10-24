@@ -1,0 +1,12 @@
+import java.util.List;
+
+import de.greenrobot.dao.query.QueryBuilder;
+
+public class ExtendedMoodScopeDao {
+public MoodScopeDao dao;
+this.dao = moodScopeDao;
+}
+
+public List<MoodScope> getAllMoodScopes() {
+QueryBuilder<MoodScope> queryBuilder = dao.queryBuilder();
+

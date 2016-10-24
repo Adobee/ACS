@@ -1,0 +1,9 @@
+public final class PackedDuration extends AbstractDuration {
+private final long seconds;
+
+/**
+* Construct a duration in terms of its length in seconds.
+public PackedDuration(long seconds) {
+if (seconds < 0) {
+throw new IllegalArgumentException(&quot;duration must be non-negative&quot;);
+

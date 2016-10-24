@@ -1,0 +1,9 @@
+StringBuffer sb = new StringBuffer();
+sb.append(&quot;bytes=&quot;).append(emptyRange.getStart()).append(&quot;-&quot;);
+if (emptyRange.getEnd() > emptyRange.getStart()) {
+length += blen;
+// 更新下载信息，已填充和空白更新
+bisect.setBytesOk(emptyRange, blen);
+
+if (downThread.stopFlag
+

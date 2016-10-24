@@ -1,0 +1,9 @@
+public class PageDefaultNameManager {
+
+public String getNextName(final int siteId, final String customPattern) {
+return new DefaultNameUtil().getNext(customPattern != null ? customPattern : &quot;Page&quot;, true, namesInUse);
+}
+
+public String getNextUrl(final Integer siteId) {
+if (siteId == null) {
+

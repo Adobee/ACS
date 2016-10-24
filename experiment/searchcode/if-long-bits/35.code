@@ -1,0 +1,11 @@
+while (n > 1 << 15) {
+long mask;
+final long n0 = n;
+
+mask = (BITS_0 << n0) >> 63;
+result -= mask;
+
+final long n1 = n;
+mask = (BITS_3 << n0) >> 63;
+n = (n>>>1) + ((n+1) &amp; mask);
+

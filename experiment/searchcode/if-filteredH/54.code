@@ -1,0 +1,12 @@
+throws IntegratorException {
+
+double filteredH = h;
+if (Math.abs(h) < minStep) {
+if (acceptSmall) {
+&quot;minimal step size ({0}) reached, integration needs {1}&quot;,
+minStep, Math.abs(h));
+}
+}
+
+if (filteredH > maxStep) {
+

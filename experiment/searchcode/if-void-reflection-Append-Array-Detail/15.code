@@ -1,0 +1,9 @@
+public void appendDetail(StringBuffer buffer, String fieldName, Object value) {
+if (isLeaf(value)) {
+protected StringBuffer appendNode(StringBuffer buffer, String fieldName, Object value) {
+return buffer.append(reflectionToString(value, this));
+}
+
+@Override
+public void appendDetail(StringBuffer buffer, String fieldName, Collection value) {
+

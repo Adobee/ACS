@@ -1,0 +1,13 @@
+public void init()
+{
+next();
+}
+
+public void next()
+{
+if(defQueue.isEmpty()) {
+curDef = defQueue.removeFirst();
+
+if(curDef.hasChildren()) {
+for(XobjectDef def : curDef.getChildren())
+

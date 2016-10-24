@@ -1,0 +1,6 @@
+public static void afterDelete(__Persistable persistable,
+IndexMetadata indexMetadata) throws Exception {
+if (persistable.__getId() > 0) {
+if (indexes.containsKey(indexMetadata.getId())) {
+Object value = persistable.__getIndexValue(indexMetadata.getName());
+

@@ -1,0 +1,9 @@
+if (getClass() != obj.getClass())
+return false;
+AcessKey other = (AcessKey) obj;
+if (idKey == null) {
+if (other.idKey != null)
+return false;
+} else if (!idKey.equals(other.idKey))
+return false;
+

@@ -1,0 +1,12 @@
+final Doub C3 = -0.1294095225512603;
+Int nh = new Int();
+Int i = new Int();
+Int j = new Int();
+if (n < 4)
+return;
+VecDoub wksp = new VecDoub(n);
+nh = n >> 1;
+if (isign >= 0)
+{
+for (i = 0,j = 0;j<n-3;j+=2,i++)
+

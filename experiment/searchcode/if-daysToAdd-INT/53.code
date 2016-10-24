@@ -1,0 +1,8 @@
+public static int difference(Date date1, Date date2) {
+int daysToAdd = 0;
+int daysToSubtract = 0;
+for (int year=date2.getYear(); year < date1.getYear(); year++) {
+daysToAdd += getDaysInYear(year);
+}
+for (int month_index = date2.getMonth().ordinal();
+

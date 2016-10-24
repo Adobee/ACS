@@ -1,0 +1,9 @@
+int pos_num = 1;
+int[] pos = new int[10000];
+for(int i = 0; i < nums.length ; i++){
+if(nums[i] >= 1){
+pos[nums[i]] = 1;
+}
+}
+for(int i =1; i<= pos.length;i++){
+

@@ -1,0 +1,9 @@
+for (int ch = 0; ch < channels; ch++) {
+part2Start = br.getBitCount();
+if (header.version() == Header.VERSION_MPEG1) {
+out1d[sb18 + ss] = -out1d[sb18 + ss];
+}
+}
+if (ch == 0) {
+for (int ss = 0; ss < SSLIMIT; ss++) {
+

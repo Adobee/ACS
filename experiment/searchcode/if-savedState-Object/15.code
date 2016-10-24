@@ -1,0 +1,7 @@
+SavedState savedState = (SavedState) state;
+super.onRestoreInstanceState(savedState.getSuperState());
+if (mTimePicker != null) {
+protected Parcelable onSaveInstanceState() {
+final SavedState savedState = new SavedState(super.onSaveInstanceState());
+if (mTimePicker == null) {
+

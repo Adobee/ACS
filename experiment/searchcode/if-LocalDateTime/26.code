@@ -1,0 +1,11 @@
+package java8traning.ch05.ex07;
+
+import java.time.LocalDateTime;
+
+public class TimeInterval {
+private LocalDateTime start;
+private LocalDateTime end;
+
+public TimeInterval(LocalDateTime start, LocalDateTime end){
+if (start.isBefore(end)){
+

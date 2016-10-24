@@ -1,0 +1,10 @@
+versionInfo = RuntimeStreamer.execute(new String[] { &quot;/usr/libexec/java_home&quot;, &quot;-v &quot; + javaVersion });
+
+// Unable to find any JVMs matching version &quot;1.7&quot;
+if (versionInfo.contains(&quot;version \&quot;&quot; + javaVersion + &quot;\&quot;&quot;)) {
+protected static List<JavaInfo> findMacJavas () {
+List<String> javaExecs = Lists.newArrayList();
+String javaVersion;
+
+javaVersion = getMacJavaPath(&quot;1.6&quot;);
+

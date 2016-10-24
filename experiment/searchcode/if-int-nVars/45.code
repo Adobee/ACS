@@ -1,0 +1,8 @@
+public int[] scoreTestingData( DataSource testingData,
+List chdrs, int nVars) {
+if (chdrs.size() < 1)
+for (int i = 0; i < dataSource.nPts; i++) {
+if (dataSource.predictedValues[i] < 0) {
+for (int j = 0; j < nVars; j++)
+row[j] = dataSource.data[j][i];
+

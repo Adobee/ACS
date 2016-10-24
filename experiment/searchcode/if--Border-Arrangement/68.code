@@ -1,0 +1,7 @@
+final ArrangementColorsProvider colorsProvider;
+if (rearranger instanceof ArrangementColorsAware) {
+colorsProvider = new ArrangementColorsProviderImpl((ArrangementColorsAware)rearranger);
+myMatchingRulesPanel = new ArrangementMatchingRulesPanel(myLanguage, settingsManager, colorsProvider);
+
+myContent.setBorder(BorderFactory.createEmptyBorder(0, 10, 10, 10));
+

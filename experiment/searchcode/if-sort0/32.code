@@ -1,0 +1,22 @@
+public ChooseSortImpl(Comparable[] a){
+super(a);
+}
+
+@Override
+public void sort() {
+sort0();
+}
+
+public void sort0(){
+int l = a.length;
+for(int j = i + 1; j < l; j++){
+if(less(a[j], a[min])){
+min = j;
+}
+}
+exch(i,min);
+}
+}
+//性能提升不大
+public void sort1(){
+

@@ -1,0 +1,10 @@
+public static void AssertExpectedEqualsActual(Object expected, Object actual) {
+if (expected == null &amp;&amp; actual == null)
+return;
+if (expected != null &amp;&amp; expected.equals(actual))
+return;
+throw new AssertionError();
+}
+
+}
+

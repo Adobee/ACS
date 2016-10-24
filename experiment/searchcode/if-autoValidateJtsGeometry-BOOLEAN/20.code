@@ -1,0 +1,8 @@
+private static final boolean DEBUG;
+static {
+// if asserts are enabled we run the debug statements even if they are not logged
+JtsGeometry jtsGeometry = new JtsGeometry(geom, SPATIAL_CONTEXT, false, multiPolygonMayOverlap);
+if (autoValidateJtsGeometry)
+jtsGeometry.validate();
+if (autoIndexJtsGeometry)
+

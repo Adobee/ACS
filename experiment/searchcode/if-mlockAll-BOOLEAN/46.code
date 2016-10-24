@@ -1,0 +1,11 @@
+private static native int munlockall() throws LastErrorException;
+
+private static boolean isOperatingSystem(String os) {
+if(System.getProperty(&quot;os.name&quot;).toLowerCase().contains(os))
+return false;
+}
+
+public static void tryMlockall() {
+try {
+if(isOperatingSystem(&quot;windows&quot;))
+

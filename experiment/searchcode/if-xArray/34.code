@@ -1,0 +1,14 @@
+int cur = xArray[i];
+// equal case
+if (cur == n) {
+return (float)cur;
+}
+else if (cur > n) {
+if (start == -1) {
+start = 0;
+end = 1;
+}
+// larger case
+else if (end == xArray.length) {
+start = xArray.length - 2;
+

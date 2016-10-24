@@ -1,0 +1,8 @@
+@Override
+protected boolean shouldRemoveRow(WdbcResult result, int row) {
+String desc = (String) result.getCell(row, &quot;desc&quot;);
+
+if (desc == null) {
+return true;
+} else {
+

@@ -1,0 +1,13 @@
+* @return	 the penalty metric
+*/
+public double getMetric();
+
+/**
+* Returns the current penalty score (metric mapped on cost function)
+* Reverts the penalty score to the previous value, discarding any changes made by the latest incremental update
+*/
+public void revertIncrementalPenalty();
+
+/**
+* Indicates if this penalty works on the ranking or on (sub)network level
+

@@ -1,0 +1,6 @@
+private void handleSending() {
+int w = Math.min(MAX_WINDOW_SIZE, destWindowSize);
+while (!sendBuffer.waiting.isEmpty()) {
+SimpleTCPPacket p = sendBuffer.waiting.getLast();
+if (sendBuffer.isEmpty()
+

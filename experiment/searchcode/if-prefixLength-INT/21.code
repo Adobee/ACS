@@ -1,0 +1,5 @@
+public class BufferHelper {
+public static boolean prefixedDataAvailable(ChannelBuffer in, int prefixLength) {
+public static boolean prefixedDataAvailable(ChannelBuffer in, int prefixLength, int maxDataLength) {
+if (in.readableBytes() < prefixLength) {
+

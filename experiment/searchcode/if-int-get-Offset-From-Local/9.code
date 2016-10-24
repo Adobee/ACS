@@ -1,0 +1,8 @@
+public final LocalFileRecordExt localFileRecordExt;
+
+public LocalFileRecordReader(final byte[] body, final int offset) {
+localFileRecord = new LocalFileRecord(body, offset);
+
+LocalFileRecordExt ext = new LocalFileRecordExt(body, offset + localFileRecord.getLength());
+if (ext.startsWith(LocalFileRecordExt.HeaderSignature)) {
+

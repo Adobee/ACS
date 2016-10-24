@@ -1,0 +1,6 @@
+public static void setEndpoint(AWSECommerceServicePortType port, AmazonProductAdvertisingLocale locale, boolean useHttps) {
+// set endpoint depending on locale
+final String endpoint = useHttps ? locale.getSecureEndpoint() : locale.getEndpoint();
+
+if (endpoint == null) {
+

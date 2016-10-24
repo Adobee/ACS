@@ -1,0 +1,13 @@
+package pl.kamcio96.kamciosql.query.impl;
+
+class LimitModule {
+
+private int limit = -1;
+private int offset = -1;
+
+void limit(int limit) {
+this.limit = limit;
+}
+
+void offset(int offset) {
+

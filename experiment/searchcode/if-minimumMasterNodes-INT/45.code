@@ -1,0 +1,10 @@
+int masterNodes = clusterState.nodes().masterNodes().size();
+if (intValue > masterNodes) {
+return &quot;cannot set &quot; + ElectMasterService.DISCOVERY_ZEN_MINIMUM_MASTER_NODES + &quot; to more than the current master nodes count [&quot; + masterNodes + &quot;]&quot;;
+private final NodeComparator nodeComparator = new NodeComparator();
+
+private volatile int minimumMasterNodes;
+
+@Inject
+public ElectMasterService(Settings settings, Version version) {
+

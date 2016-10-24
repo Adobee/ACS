@@ -1,0 +1,10 @@
+* INs, it only contains LNs and bottom internal nodes (BINs). When a level 2
+* IN is evicted from the main cache, its children (BINs and LNs) in the
+* off-heap cache, if any, must also be evicted, which can be undesirable,
+assert offHeapCache;
+
+mainNoLNsWithVLSNs = 0;
+
+/*
+* If all INs fit in main, then no off-heap cache is needed.
+

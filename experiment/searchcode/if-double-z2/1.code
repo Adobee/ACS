@@ -1,0 +1,14 @@
+TextField tf1, tf2, tf3,tfmin,tfmax,tfmid;
+
+@FXML
+public void bt1OnAction(ActionEvent e){
+double z1,z2,z3, tmp;
+tmp = 0;
+z1 = Integer.parseInt(tf1.getText());
+z3 = Integer.parseInt(tf3.getText());
+tfmid.setText(&quot;&quot; + ((z1+z2+z3)/3));
+if ( z3<z2) {
+tmp = z3;
+z3 = z2;
+z2 = tmp;
+

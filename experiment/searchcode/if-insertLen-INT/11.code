@@ -1,0 +1,7 @@
+public void update(DocumentEvent event) {
+String text = event.getText();
+int insertLen = text != null ? text.length() : 0;
+private void update(int offset, int deleteLen, int insertLen) {
+if (insertLen > deleteLen) {
+insert(offset + deleteLen, insertLen - deleteLen);
+

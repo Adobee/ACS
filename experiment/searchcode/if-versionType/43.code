@@ -1,0 +1,5 @@
+public void testInternalVersionConflict() throws Exception {
+assertFalse(VersionType.INTERNAL.isVersionConflictForWrites(10, Versions.MATCH_ANY, randomBoolean()));
+// Old indexing code
+//        if (index.versionType() == VersionType.INTERNAL) { // internal version type
+

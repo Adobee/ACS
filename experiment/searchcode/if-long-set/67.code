@@ -1,0 +1,9 @@
+return isHappy(set, n);
+}
+private boolean isHappy(Set<Long> set, long cur) {
+if (cur == 1L) {
+return true;
+} else {
+long next = getNext(cur);
+if (!set.add(next)) {
+

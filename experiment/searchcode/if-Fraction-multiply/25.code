@@ -1,0 +1,9 @@
+if (b.compareTo(BigInteger.ZERO)==-1){
+b=b.multiply(BigInteger.valueOf(-1));
+a=a.multiply(BigInteger.valueOf(-1));
+}
+}
+fraction add(fraction t){
+fraction temp=new fraction(a.multiply(t.b).add(b.multiply(t.a)),b.multiply(t.b));
+temp.reduction();
+

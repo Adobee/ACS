@@ -1,0 +1,11 @@
+return new Iterator<Object>() {
+
+@SuppressWarnings(&quot;unchecked&quot;)
+@Override
+public boolean hasNext() {
+if(flatIterator== null)
+{
+while(outerIterator.hasNext())
+{
+flatIterator = (Iterator<Object>) outerIterator.next();
+

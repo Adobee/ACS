@@ -1,0 +1,10 @@
+public static Vertex[] orderVertex(Vertex a, Vertex b) {
+boolean aXisSmaller = a.position.x < b.position.x;
+boolean aXisEquals = a.position.x == b.position.x;
+boolean aYisSmaller = a.position.y < b.position.y;
+
+if (aXisEquals) {
+if (aYisSmaller) {
+return new Vertex[]{a, b};
+} else {
+

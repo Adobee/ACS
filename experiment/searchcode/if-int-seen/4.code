@@ -1,0 +1,11 @@
+private int unconnected(String[] graph, int[] seen, int k) {
+if (seen[k] == 1) { return 0; }
+
+seen[k] = 1;
+
+int count = 1;
+for (int i = 0; i < n; i++) {
+for (int k = 0; k < n; k++) {
+if (seen[k] == 1) { continue; }
+for (int i = 0; i < n; i++) {
+

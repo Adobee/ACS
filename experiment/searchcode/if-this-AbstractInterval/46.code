@@ -1,0 +1,9 @@
+import org.github.vmendes.timeline.AbstractInterval;
+import org.github.vmendes.timeline.Interval;
+
+public class DateInterval<V> extends AbstractInterval<Date, V> {
+public boolean overlaps(Interval<Date, V> other) {
+long thisStart = getStart().getTime();
+long thisEnd = getEnd().getTime();
+if (other == null) {
+

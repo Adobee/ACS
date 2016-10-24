@@ -1,0 +1,13 @@
+public static void rec(char arr[][],Box obj)
+{
+
+int i=0,j=0;
+label1:
+for(i=obj.x1;i<=obj.x2;i++)
+for(j=obj.y1;j<=obj.y2;j++)
+if(arr[i][j]==&#39;0&#39;)
+break label1;
+
+
+if(i-1==obj.x2&amp;&amp;j-1==obj.y2&amp;&amp;(obj.x2-obj.x1)>obj.maxx&amp;&amp;(obj.y2-obj.y1)>obj.maxy)
+

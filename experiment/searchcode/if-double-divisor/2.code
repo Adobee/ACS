@@ -1,0 +1,8 @@
+assert(divisor != 0);
+if (dividend == 0 || divisor == 1) return dividend;
+if (divisor == -1) return -dividend;
+long divs = (long)Math.abs((double)divisor);
+int result = 0;
+
+while (divd >= divs) {
+

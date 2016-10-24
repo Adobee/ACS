@@ -1,0 +1,8 @@
+boolean[] doesExistRow = new boolean[9];
+boolean[] doesExistColumn = new boolean[9];
+
+int blockRow = (i / 3) * 3, blockColumn = (j / 3) * 3;
+for (int k = 0; k < 3; k++) {
+for (int l = 0; l < 3; l++) {
+if (board[blockRow + k][blockColumn + l] == &#39;.&#39;) {
+

@@ -1,0 +1,11 @@
+private double ymax,ymin,xmin,xmax;
+
+public Mandelbrot(){
+
+
+hwin=700;
+for(int j=0;j<lwin;j++)
+{
+
+Complexe c = new Complexe((i*(xmax-xmin)/(double)(hwin) + xmin),(ymax - j*(ymax-ymin)/(double)(lwin)));
+

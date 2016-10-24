@@ -1,0 +1,11 @@
+MutableDateTime mdt = new MutableDateTime(0, getLenientISOChronology());
+int pos = 0;
+if (str.startsWith(&quot;-&quot;)) {
+pos = 1;
+}
+int newPos = p.parseInto(mdt, str, pos);
+throw new IllegalArgumentException(str);
+}
+int millis = (int)mdt.getMillis();
+if (pos == 1) {
+

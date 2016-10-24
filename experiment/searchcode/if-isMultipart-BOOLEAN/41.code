@@ -1,0 +1,11 @@
+public class MultipartResolver extends org.springframework.web.multipart.commons.CommonsMultipartResolver {
+
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+String uri = request.getRequestURI();
+if (uri.indexOf(&quot;ueditor&quot;) > 0)
+return false;
+return super.isMultipart(request);
+}
+}
+

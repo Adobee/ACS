@@ -1,0 +1,7 @@
+private static volatile RelationEnshrineManager relationEnshrineManager;
+
+public static RelationEnshrineManager getInstance(){
+if (relationEnshrineManager==null){
+synchronized (RelationEnshrineManager.class){
+if (relationEnshrineManager==null){
+

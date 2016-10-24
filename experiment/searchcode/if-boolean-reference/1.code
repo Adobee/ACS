@@ -1,0 +1,12 @@
+public class VersionedAtomicMarkableReference<V>
+{
+private static class ReferenceBooleanTriplet<T>
+{
+private final T reference;
+private final boolean bit;
+public void set (V newRef, boolean newMark)
+{
+ReferenceBooleanTriplet<V> curr = atomicRef.get();
+
+if (newRef != curr.reference || newMark != curr.bit)
+

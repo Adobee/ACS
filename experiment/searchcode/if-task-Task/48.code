@@ -1,0 +1,7 @@
+public class TaskFactory {
+public Task getTask(String taskName){
+if(taskName.startsWith(&quot;Select&quot;))
+return new SelectTask();
+else if(taskName.startsWith(&quot;Association&quot;))
+return new AssociationTask();
+

@@ -1,0 +1,9 @@
+this.rg = rg;
+}
+
+@Override
+public double perturb(int dimension, double value) {
+double maxDelta = maxPercentageChange;
+double delta = (rg.nextGaussian() * (maxDelta / 2)) + (maxDelta / 2);
+if (new Random().nextBoolean()) {
+

@@ -1,0 +1,8 @@
+public ListPopulation(java.util.List<org.apache.commons.math.genetics.Chromosome> chromosomes ,int populationLimit) {
+if ((chromosomes.size()) > populationLimit) {
+this.populationLimit = populationLimit;
+}
+
+public ListPopulation(int populationLimit) {
+if (populationLimit < 0) {
+

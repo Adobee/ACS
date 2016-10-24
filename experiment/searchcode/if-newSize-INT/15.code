@@ -1,0 +1,14 @@
+size = permits;
+}
+
+public int size() {
+return size;
+}
+
+public synchronized int resize(int newSize) {
+size = newSize;
+} else if (newSize < size) {
+try {
+int acquired = size - newSize;
+for (; acquired != 0 &amp;&amp; ! tryAcquire(acquired, 20, TimeUnit.MILLISECONDS); acquired--);
+

@@ -1,0 +1,12 @@
+int water = 0;
+for (int i = 0; i < height.length; i++) {
+if (height[i] < h)
+continue;
+h = height[i];
+highestPoint = i;
+}
+
+int left = 0;
+for (int i = 0; i < highestPoint; i++) {
+if (height[i] < left) {
+

@@ -1,0 +1,14 @@
+public synchronized boolean removeTask(Task task) {
+for (Task t : taskPool) {
+if (t == task) {
+t.setEffective(false);
+return true;
+public synchronized Task getTask() throws InterruptedException {
+if (taskPool.size() == 0) {
+wait();
+}
+
+return taskPool.get(0);
+}
+}
+

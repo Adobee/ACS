@@ -1,0 +1,10 @@
+* @return true, if the cell is occupied,and false, if not.
+*/
+public boolean isOccupied() {
+if (!owner.equals(NO_OWNER))
+return true;
+public void checkForSide(Corner first, Corner second) {
+if (upperLeft.sameTo(first)) {
+if (second.sameTo(upperRight)) {
+setTop(true);
+

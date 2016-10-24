@@ -1,0 +1,12 @@
+linkElement.setAttribute(&quot;onclick&quot;, href.substring(&quot;javascript:&quot;.length()) + &quot;;return false;&quot;);
+return;
+}
+
+//设置连接
+linkElement.setHref(href);
+//设置连接打开方式
+if(openMode==null || openMode.equals(&quot;&quot;)) {
+linkElement.removeAttribute(&quot;target&quot;);
+}
+else if(&quot;_blank&quot;.equals(openMode) || &quot;_self&quot;.equals(openMode) || &quot;_top&quot;.equals(openMode)) {
+

@@ -1,0 +1,8 @@
+public TreeNode removeAndReturnRoot( TreeNode root, int target ) {
+if( root == null ) {
+return root ;
+}
+if( root.val == target ) {
+if( root.left != null &amp;&amp; root.right != null ) {
+root.val = findMin(root.right).val ;
+

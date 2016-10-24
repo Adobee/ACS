@@ -1,0 +1,6 @@
+public void parse() throws IOException {
+int typesSize = (int)dexPointerBlock.getTypeIdsSize();
+file.seek( dexPointerBlock.getTypeIdsOffset() );
+types = new int[ typesSize ];
+for( int i = 0 ; i < typesSize ; ++i ) {
+

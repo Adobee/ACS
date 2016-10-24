@@ -1,0 +1,13 @@
+Weeks retrieveWeeks(int numeral) {
+
+Weeks result = getWeeks(numeral);
+
+if (result == null) {
+addWeeks(numeral, result);
+}
+return result;
+}
+
+private void addWeeks(int numeral, Weeks week) {
+this.weeks.put(numeral, week);
+

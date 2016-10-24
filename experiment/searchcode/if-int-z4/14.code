@@ -1,0 +1,6 @@
+int z3 = Integer.parseInt(token2[1]);
+int z4 = Integer.parseInt(token2[1]);
+int z5 = Integer.parseInt(token2[2]);
+int z6 = Integer.parseInt(token2[2]);
+if(abs(z5-z6)>0)
+

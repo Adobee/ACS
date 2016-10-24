@@ -1,0 +1,8 @@
+estimateGroup = estimateGroupDao.create(estimateGroup);
+
+//estimate by user
+if(estimateGroup.getEstimateByUserList()!=null&amp;&amp;estimateGroup.getEstimateByUserList().size()>0){
+for(EstimateByUser estimateByUser :  estimateGroup.getEstimateByUserList()){
+if(estimateByUser.getUserId()!=null){
+estimateByUser.setEstimateGroupId(estimateGroup.getEstimateGroupId());
+

@@ -1,0 +1,10 @@
+if (_rows == 1 &amp;&amp; _columns == 1) {
+return Integer.toString(_values[0]);
+}
+
+boolean all_zeros = true;
+for (int i = 0; i < _rows * _columns; i++) {
+if (_values[i] != 0) {
+all_zeros = false;
+break;
+

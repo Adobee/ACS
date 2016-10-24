@@ -1,0 +1,14 @@
+includingEnd = includingStart = value;
+}
+
+
+public boolean isContain(double value) {
+return (value > start &amp;&amp; value < end) || (includingStart &amp;&amp; value == start) || (includingEnd &amp;&amp; value == end);
+}
+
+public boolean isInside(double value) {
+return (value > start &amp;&amp; value < end);
+}
+
+public SimpleDoubleInterval boundStart(double value) {
+

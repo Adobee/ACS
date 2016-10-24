@@ -1,0 +1,6 @@
+public double[] minimize(DifferentiableFunction function, double[] initial, double[] direction) {
+double stepSize = 1.0;
+double initialFunctionValue = function.valueAt(initial);
+guess = DoubleArrays.addMultiples(initial, 1.0, direction, stepSize);
+guessValue = function.valueAt(guess);
+

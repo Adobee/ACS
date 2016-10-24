@@ -1,0 +1,8 @@
+for (int i = 0; i < a.length; i++){
+boolean[] seen = new boolean[9];
+for (int j = 0; j < a[i].length; j++) {
+for (int j = 0; j < a[0].length; j++) {
+boolean[] seen = new boolean[9];
+for (int i = 0; i < a.length; i++){
+if (seen[a[i][j]-1]) {
+

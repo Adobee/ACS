@@ -1,0 +1,6 @@
+if (shouldSucceed) {
+String res = h.validateUpdate(update);
+if (res != null) fail(m + &quot;update was not successful: &quot; + res);
+String res = h.validateErrorUpdate(update);
+if (res != null) fail(m + &quot;update succeeded, but should have failed: &quot; + res);
+

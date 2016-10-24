@@ -1,0 +1,7 @@
+// connect all top row to the virtual top site
+for (int i = 1; i <= N; ++i) {
+uf.union(0, translate(1, i));
+uf2.union(translate(i, j), translate(i, j + 1));
+}
+if (isInRange(j-1) &amp;&amp; isOpen(i, j - 1)) {
+

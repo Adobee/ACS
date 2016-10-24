@@ -1,0 +1,5 @@
+for (int i = 0; i<all.length; i++) for (int j = i+1; j<all.length; j++)
+if (all[i] < all[j]) { int sw = all[i]; all[i] = all[j]; all[j] = sw; }
+int z0 = div4[x1], z1 = div4[x2], z2 = div4[x3], z3 = div4[x4], z4 = div4[x5];
+int c0 = mod4[x1], c1 = mod4[x2], c2 = mod4[x3], c3 = mod4[x4], c4 = mod4[x5];
+

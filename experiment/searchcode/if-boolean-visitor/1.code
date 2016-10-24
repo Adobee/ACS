@@ -1,0 +1,15 @@
+public DelayedVisitorProxy(Provider<Visitor> visitorProvider) {
+this.visitorProvider = visitorProvider;
+}
+
+@Override
+public boolean visit(ExactMatch exactMatch) {
+cachedVisitor = visitorProvider.get();
+}
+return cachedVisitor.visit(exactMatch);
+}
+
+@Override
+public boolean visit(Regex regex) {
+if (cachedVisitor == null) {
+

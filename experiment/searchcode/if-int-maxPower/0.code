@@ -1,0 +1,8 @@
+for(int j=2; i*j<=bound; i++) isPrime[i*j] = false;
+}
+int maxPower = 0;
+int ret = 0;
+for(int i=2; i<=bound; i++){
+if(isPrime[i]){
+int count=0;
+

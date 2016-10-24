@@ -1,0 +1,7 @@
+List<CounterIncrementer> counterIncrementers = executeBenchmark(numThreads, iterations, counters);
+if (startPcp) {
+double counterIncrements = computeTotalCounterIncrements(counters);
+
+double incrementRate = counterIncrements / ((double) timeTaken / 1000);
+NumberFormat numberFormat = NumberFormat.getNumberInstance();
+

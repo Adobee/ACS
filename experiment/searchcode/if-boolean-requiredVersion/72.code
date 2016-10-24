@@ -1,0 +1,6 @@
+checkApplicationDependencies(pkg, env, context, missingDependencies);
+if (!missingDependencies.isEmpty()) {
+throw new IllegalArgumentException(&quot;Cannot deploy because of missing dependencies: &quot; + missingDependencies);
+private void checkApplicationDependencies(Version pkg, Environment env, DeploymentPlanningContext context, List<String> missingDependencies) {
+if (pkg.hasProperty(APPLICATION_DEPENDENCIES_PROPERTY_NAME)) {
+

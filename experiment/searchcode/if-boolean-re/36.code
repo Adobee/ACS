@@ -1,0 +1,14 @@
+boolean hasSubTree(TreeNode root1, TreeNode root2) {
+boolean re = false;
+if (root1 != null &amp;&amp; root2 != null) {
+if (root1.val == root2.val) {
+re = hasSubTree(root1.right, root2);
+}
+}
+return re;
+}
+
+boolean does_contain(TreeNode root1, TreeNode root2) {
+if (root2 == null) {
+return true;
+

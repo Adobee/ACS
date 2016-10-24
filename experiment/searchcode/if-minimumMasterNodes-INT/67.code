@@ -1,0 +1,8 @@
+List<DiscoveryNode> generateRandomNodes() {
+int count = scaledRandomIntBetween(1, 100);
+ArrayList<DiscoveryNode> nodes = new ArrayList<>(count);
+int min_master_nodes = randomIntBetween(0, nodes.size());
+service.minimumMasterNodes(min_master_nodes);
+
+int master_nodes = 0;
+

@@ -1,0 +1,8 @@
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.Settings;
+import org.elasticsearch.common.transport.InetSocketTransportAddress;
+public void destroy() throws Exception {
+logger.debug(&quot;TransportClient close start...&quot;);
+if(null != this.client){
+this.client.close();
+

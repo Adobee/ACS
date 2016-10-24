@@ -1,0 +1,11 @@
+* @return true if and only if c was actually added to the collection.
+*/
+public boolean add(Constraint c) {
+if (!hasEquivalent(c) &amp;&amp; !isCovered(c)) {
+constraints.add(c);
+public boolean addAll(Constraints cs, Constraints addedConstraints) {
+boolean added = false;
+for (Constraint c : cs) {
+if (add(c)) {
+if (addedConstraints != null)
+

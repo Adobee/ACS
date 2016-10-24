@@ -1,0 +1,8 @@
+public static Class<?> resolveParameterType(MethodParameter methodParam, Class clazz)
+{
+Type genericType = getTargetType(methodParam);
+Map<TypeVariable, Type> typeVariableMap = getTypeVariableMap(clazz);
+private static void populateTypeMapFromParameterizedType(ParameterizedType type, Map<TypeVariable, Type> typeVariableMap)
+{
+if (type.getRawType() instanceof Class)
+

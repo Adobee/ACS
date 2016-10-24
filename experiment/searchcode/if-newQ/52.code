@@ -1,0 +1,16 @@
+public ResizingArrayQueueOfStrings{
+q = new String[2];
+}
+
+public void enqueue(String item){
+if (N==q.length)
+resizing(q.length*2);
+q[last] = item;
+last += 1;
+if (last == q.length)
+last = 0;
+N += 1;
+}
+
+public String dequeue(){
+

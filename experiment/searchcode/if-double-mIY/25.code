@@ -1,0 +1,7 @@
+public double[] getOptimaValues() throws java.lang.IllegalStateException {
+if ((optimaValues) == null) {
+if ((goalType == (org.apache.commons.math.optimization.GoalType.MAXIMIZE)) ^ (currY < prevY)) {
+int i = j - 1;
+double mIX = optima[i];
+double mIY = optimaValues[i];
+

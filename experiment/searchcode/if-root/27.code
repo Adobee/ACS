@@ -1,0 +1,11 @@
+root.right = build(mid + 1, r);
+return root;
+}
+
+public void insert (int l, int r, Node root) {
+if (l <= root.lo &amp;&amp; r >= root.hi) {
+root.cover++;
+}
+else {
+if (l <= root.lo + (root.hi - root.lo) / 2) {
+

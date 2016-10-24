@@ -1,0 +1,10 @@
+for(int idx=0;idx<tmpList1.size();idx++)
+{
+Object[] tmp = new Object[]{new Object(),new Double(0),new Double(0),new Double(0)};
+tmpList2.remove(idx2);
+break;
+}
+}
+if(Double.parseDouble(tmp[2].toString()) > 0)
+tmp[3] = new Double((Double.parseDouble(tmp[1].toString())-Double.parseDouble(tmp[2].toString()))
+

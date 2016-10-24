@@ -1,0 +1,7 @@
+public static void withProperty(String name, String value, Runnable runnable) {
+String previousValue = System.getProperty(name);
+runnable.run();
+}finally{
+if( previousValue == null ){
+System.clearProperty(name);
+

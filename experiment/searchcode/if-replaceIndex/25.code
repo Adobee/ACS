@@ -1,0 +1,9 @@
+* Time: 下午5:28
+*/
+public class A1_LCSReplacement {
+public static int replaceIndex(int[] array){
+int maxLen = 0;
+for(int i = 0; i < array.length; i++){
+if(array[i] == 0){
+if(replaceIdx == -1) {
+

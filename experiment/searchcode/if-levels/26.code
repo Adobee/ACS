@@ -1,0 +1,14 @@
+package rabbitescape.engine;
+
+import rabbitescape.engine.menu.LevelsCompleted;
+
+public class CompletedLevelWinListener implements LevelWinListener
+this.levelNumber = levelNumber;
+this.levelsCompleted = levelsCompleted;
+}
+
+@Override
+public void won()
+{
+if ( levelsCompleted.highestLevelCompleted( levelsDir ) < levelNumber )
+

@@ -1,0 +1,14 @@
+while (factor < 600851475143L) {
+if (600851475143L % factor == 0) {
+if(isPrime(factor) == true) {
+System.out.println(factor);
+}
+}
+factor--;
+}
+}
+
+static boolean isPrime(long factor) {
+if (factor%2==0) return false;
+for(int i=3;i*i<=factor;i+=2) {
+

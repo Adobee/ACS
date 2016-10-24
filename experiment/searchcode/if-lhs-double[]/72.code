@@ -1,0 +1,10 @@
+append((byte[])lhs, (byte[])rhs);
+} else if ((lhs instanceof double[])) {
+append((double[])lhs, (double[])rhs);
+public EqualsBuilder append(double lhs, double rhs)
+{
+if (!this.isEquals) {
+return this;
+}
+return append(Double.doubleToLongBits(lhs), Double.doubleToLongBits(rhs));
+

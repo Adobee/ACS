@@ -1,0 +1,10 @@
+* Unit tests {@link org.apache.commons.lang3.BooleanUtils}.
+*
+* @version $Id: BooleanUtilsTest.java 1199724 2011-11-09 12:51:52Z sebb $
+assertFalse(BooleanUtils.toBoolean((Boolean) null));
+}
+
+@Test
+public void test_toBooleanDefaultIfNull_Boolean_boolean() {
+assertTrue(BooleanUtils.toBooleanDefaultIfNull(Boolean.TRUE, true));
+

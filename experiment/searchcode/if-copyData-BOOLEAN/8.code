@@ -1,0 +1,12 @@
+public abstract class ListItem<E> extends IdCheckObject<E> implements
+ListItemable<E> {
+private static final long serialVersionUID = 1L;
+private boolean disabled;
+super(id);
+}
+
+@Override
+public void copyData(Idable<E> other) {
+super.copyData(other);
+if (!(other instanceof ListItem<?>))
+

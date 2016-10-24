@@ -1,0 +1,12 @@
+this.metric = metric;
+}
+
+@Override
+public int compareTo(MetricHolder o) {
+if( this.getMetric() > o.getMetric() ) return 1;
+if( this.getMetric() < o.getMetric() ) return -1;
+return 0;
+}
+
+public double getMetric() {
+

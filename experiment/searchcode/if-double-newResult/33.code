@@ -1,0 +1,6 @@
+* accompanied this code.  If applicable, add the following below the License
+* Header, with the fields enclosed by brackets [] replaced by your own
+//        double cycleAverageForRun = (double)(endTimeOfRun - startTimeOfRun) / cycleCount;
+//        if (runNumber > 1) {
+//            double newCycleAverage = (double) (runNumber - 1) / runNumber * oldCycleAverage + cycleAverageForRun / runNumber;
+

@@ -1,0 +1,6 @@
+private static double check(double v) {
+if (Double.isNaN(v))
+throw Py.ValueError(&quot;math domain error&quot;);
+if (Double.isInfinite(v))
+throw Py.OverflowError(&quot;math range error&quot;);
+

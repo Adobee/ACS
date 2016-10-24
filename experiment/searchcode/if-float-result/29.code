@@ -1,0 +1,9 @@
+package com.scgame.adozeneggs.tweener;
+
+public class Linear implements EasingIF
+* @param c change
+* @param d duration
+* @return Result of the ease
+*/
+public float easeNone (float t, float b, float c, float d)
+

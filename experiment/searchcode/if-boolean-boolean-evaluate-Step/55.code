@@ -1,0 +1,7 @@
+public Expression<Boolean> createBooleanLiteral(final int line, final int column, final boolean b) {
+return new Expression<Boolean>(Boolean.class){
+@Override
+public Boolean evaluate() {
+public Boolean evaluate() {
+return ((Boolean)e1.evaluate()) &amp;&amp; ((Boolean)e2.evaluate());
+

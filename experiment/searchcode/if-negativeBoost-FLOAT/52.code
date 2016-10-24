@@ -1,0 +1,9 @@
+Query positiveQuery = null;
+Query negativeQuery = null;
+float boost = -1;
+float negativeBoost = -1;
+if (&quot;negative_boost&quot;.equals(currentFieldName) || &quot;negativeBoost&quot;.equals(currentFieldName)) {
+negativeBoost = parser.floatValue();
+} else if (&quot;boost&quot;.equals(currentFieldName)) {
+boost = parser.floatValue();
+

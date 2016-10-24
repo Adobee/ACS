@@ -1,0 +1,8 @@
+private String blobName;
+private int numberOfRetries;
+private boolean serverSideEncryption;
+
+private byte[] buffer;
+public S3OutputStream(S3BlobStore blobStore, String bucketName, String blobName, int bufferSizeInBytes, int numberOfRetries, boolean serverSideEncryption) {
+this.blobStore = blobStore;
+

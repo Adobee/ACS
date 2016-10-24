@@ -1,0 +1,7 @@
+int size = pendingPostPool.size();
+if (size > 0) {
+PendingPost pendingPost = pendingPostPool.remove(size - 1);
+synchronized (pendingPostPool) {
+// Don&#39;t let the pool grow indefinitely
+if (pendingPostPool.size() < 10000) {
+

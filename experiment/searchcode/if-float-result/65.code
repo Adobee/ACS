@@ -1,0 +1,7 @@
+public static float[] multiply(float[] update, float scalar) {
+float[] result = new float[update.length];
+for (int i = 0; i < update.length; i++) {
+public static float[] subtract(float[] point, float[] point2) {
+float[] result = new float[point.length];
+for (int i = 0; i < point.length; i++) {
+

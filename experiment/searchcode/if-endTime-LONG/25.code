@@ -1,0 +1,15 @@
+package sial.compiler;
+
+public class Timer {
+long startTime;
+long endTime;
+
+public Timer reset(){
+public Timer end(){
+endTime = System.currentTimeMillis();
+return this;
+}
+
+public long getElapsed(){
+if (endTime == 0) endTime = System.currentTimeMillis();
+

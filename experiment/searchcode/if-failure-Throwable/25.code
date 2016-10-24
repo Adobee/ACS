@@ -1,0 +1,13 @@
+@Override
+public synchronized void onFailure(Throwable throwable) {
+_throwable = throwable;
+setDone();
+public T getValue(int timeout) throws DalException {
+waitForDone(timeout);
+if (_throwable != null) {
+throw new DalException(_throwable);
+}
+return _value;
+}
+}
+

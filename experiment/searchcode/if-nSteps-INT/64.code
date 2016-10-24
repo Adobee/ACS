@@ -1,0 +1,11 @@
+public void initSchedule(double tStart, double tEnd, int nSteps) {
+if (tStart <= DEFAULT_TSTART)
+tStart = DEFAULT_TSTART;
+if (tEnd <= DEFAULT_TEND)
+stepValues = new double[nSteps];
+for (int i = 0; i < nSteps; i++)
+stepValues[i] = getTemperature(tStart, tEnd, i, nSteps);
+}
+
+}
+

@@ -1,0 +1,10 @@
+private static final long serialVersionUID = 1196748342062419384L;
+private double current, future, stepSize;
+
+public RealCell(double current, double stepSize) {
+this.stepSize = stepSize;
+this.current = Math.min(current, getRange());
+}
+
+public double get() {
+

@@ -1,0 +1,12 @@
+boolean compareGT127(int pos) {
+int b = buf[pos];
+return b > 127;
+}
+
+boolean compareGE127(int pos) {
+for (int i = pos; i < pos + 8; i++) {
+
+int b = buf[pos];
+if (b >= 0)
+result = result << 8 | b;
+

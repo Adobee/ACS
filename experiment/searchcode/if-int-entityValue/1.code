@@ -1,0 +1,13 @@
+public class QAEntity {
+
+private String entityType;
+private String entityValue;
+
+public String getEntityType() {
+this.entityType = entityType;
+}
+public String getEntityValue() {
+return entityValue;
+}
+public void setEntityValue(String entityValue) {
+

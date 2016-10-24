@@ -1,0 +1,8 @@
+import static org.elasticsearch.common.xcontent.XContentParser.Token.END_ARRAY;
+import static org.elasticsearch.common.xcontent.XContentParser.Token.FIELD_NAME;
+name = parser.text();
+
+XContentParser.Token token;
+while ((token = parser.nextToken()) != END_ARRAY) {
+if (token.isValue()) {
+

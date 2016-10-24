@@ -1,0 +1,9 @@
+Integer row = null;
+for (int i = getNumObjectiveFunctions(); i < getHeight(); i++) {
+if (MathUtils.equals(getEntry(i, col), 1.0, epsilon) &amp;&amp; (row == null)) {
+protected void discardArtificialVariables() {
+if (numArtificialVariables == 0) {
+return;
+}
+int width = getWidth() - numArtificialVariables - 1;
+

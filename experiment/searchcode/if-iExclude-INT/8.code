@@ -1,0 +1,8 @@
+* Returns the server list for the requested cluster cluster excluding any tags like <NEW_NODES> and iExclude if any.
+*
+* @param iClusterName
+*          Cluster name, or null for *
+final List<String> partitions = getOriginalServers(clusterName);
+if (partitions != null) {
+final int newNodePos = partitions.indexOf(ODistributedConfiguration.NEW_NODE_TAG);
+

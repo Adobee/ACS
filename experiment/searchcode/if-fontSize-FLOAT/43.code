@@ -1,0 +1,16 @@
+public class Font3D {
+int textureId;
+int base;
+int fontSize;
+
+public int fontSize(){
+return fontSize;
+}
+
+public Font3D(String fontmap, int size){
+public void print(String msg, int x, int y, int color){
+float a = (color>>24)&amp;0xFF;
+if(a == 0.0f) a = 1.0f;
+GL11.glPushMatrix();
+GL11.glColor4f((color>>16)&amp;0xFF, (color>>8)&amp;0xFF, color&amp;0xFF,a);
+

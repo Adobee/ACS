@@ -1,0 +1,19 @@
+if(x>0&amp;&amp;y>=0){
+return Math.atan(y/x);
+}
+if(x>0&amp;&amp;y<0){
+return Math.atan(y/x)+2.0*Math.PI;
+}
+if(x<0){
+return Math.atan(y/x)+Math.PI;
+}
+if(x==0&amp;&amp;y<0){
+return 1.5*Math.PI;
+}
+if(x==0&amp;&amp;y>0){
+return Math.PI*0.5;
+}
+return 0.0;
+}
+}
+

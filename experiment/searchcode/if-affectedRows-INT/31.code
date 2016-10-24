@@ -1,0 +1,13 @@
+public Integer executeUpdate() throws SQLException {
+
+ResultSet rs = null;
+
+try {
+affectedRows = this.pstmt.executeUpdate();
+
+if (affectedRows > 0) {
+rs = pstmt.getGeneratedKeys();
+
+if (rs.next()) {
+return rs.getInt(1);
+

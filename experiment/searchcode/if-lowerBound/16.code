@@ -1,0 +1,8 @@
+public boolean touch(Coverage c) {
+if (!intersect(c)) {
+if (right(c)) {
+if (above(c)) {
+return c.lowerBound.x + c.size == lowerBound.x &amp;&amp; c.lowerBound.y + c.size == lowerBound.y;
+} else if (under(c)) {
+return c.lowerBound.x + c.size == lowerBound.x &amp;&amp; c.lowerBound.y - 1 == lowerBound.y;
+

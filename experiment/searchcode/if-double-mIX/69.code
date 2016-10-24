@@ -1,0 +1,9 @@
+protected CompiledQuery[] queryMix;
+int queryNr;
+
+private double[] aqet;//arithmetic mean query execution time
+private double[] qmin;//Query minimum execution time
+private int queryMixRuns;//number of query mix runs
+private double queryMixRuntime;//whole runtime of actual run in seconds
+private double minQueryMixRuntime;
+

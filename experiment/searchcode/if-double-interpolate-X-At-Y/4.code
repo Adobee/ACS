@@ -1,0 +1,8 @@
+* @return Interpolation for single band image
+*/
+public static <T extends ImageSingleBand> InterpolatePixelS<T>
+createPixelS(double min, double max, TypeInterpolate type, ImageDataType dataType )
+{
+
+Class t = ImageDataType.typeToSingleClass(dataType);
+

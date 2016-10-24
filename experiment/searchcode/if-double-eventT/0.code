@@ -1,0 +1,8 @@
+createElement(eData, &quot;Calendar:&quot;, &quot;Timezone&quot;, eventT.getTimezone());
+if(eventT.getAllDayEvent() != null) {
+} else {
+createElement(eData, &quot;Calendar:&quot;, &quot;AllDayEvent&quot;, &quot;0&quot;);
+}
+String body = eventT.getBody();
+if(body != null) {
+

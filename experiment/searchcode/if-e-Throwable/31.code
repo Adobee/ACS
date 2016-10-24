@@ -1,0 +1,11 @@
+Throwable localThrowable = paramThrowable.getCause();
+if (localThrowable == null)
+break;
+paramThrowable = localThrowable;
+return localStringWriter.toString();
+}
+
+public static RuntimeException propagate(Throwable paramThrowable)
+{
+propagateIfPossible((Throwable)Preconditions.checkNotNull(paramThrowable));
+

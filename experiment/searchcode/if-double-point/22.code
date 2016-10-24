@@ -1,0 +1,18 @@
+public class Translation extends Transformation
+{
+
+// Variables
+private double _x;
+private double _y;
+private double _z;
+public void transform(Vertex point)
+{
+if (point == null) return;
+
+point.x = _x+point.x;
+point.y = _y+point.y;
+point.z = _z+point.z;
+}
+
+}
+

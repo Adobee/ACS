@@ -1,0 +1,19 @@
+x.right = y.left;
+
+if(y.left != T.nil)
+y.left.p = x;
+
+y.p = x.p
+
+if(x.p == T.nil)
+T.root = y;
+else if(x == x.p.left)
+x.p.left = y;
+else x.p.right = y;
+
+y.left = x;
+x.p = y;
+}
+
+public void rightRotate(tree_t T, node_t y){
+

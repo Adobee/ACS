@@ -1,0 +1,8 @@
+protected void appendConditions(StringBuilder queryBuilder) {
+if (this.where.size() > 0) {
+
+queryBuilder.append(&quot; WHERE &quot;);
+
+for (String _where : this.where) {
+queryBuilder.append(_where).append(&quot; AND &quot;);
+

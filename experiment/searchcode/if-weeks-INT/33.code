@@ -1,0 +1,8 @@
+System.out.print(&quot;输入过的天数：&quot;);
+int days =input.nextInt();
+int weeks = days / 7;
+int dayinweek = days % 7;
+int week = today + dayinweek;
+if (7 < week) {
+weeks = weeks + 1;
+

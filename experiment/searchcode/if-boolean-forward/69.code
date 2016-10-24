@@ -1,0 +1,7 @@
+String forwardTo = request.getParameter(&quot;forwardTo&quot;);
+if(forwardTo.indexOf(&quot;.&quot;)==-1)
+{
+forwardTo+=&quot;.jsp&quot;;
+for (String action : LogFilter.actionsToIgnore) {
+if (forwardTo.endsWith(action) || forwardTo.indexOf(action)!=-1) {
+

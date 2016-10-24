@@ -1,0 +1,5 @@
+final long instantAdjusted = instantLocal - offsetLocal;
+final int offsetAdjusted = getOffset(instantAdjusted);
+// if the offsets differ, we must be near a DST boundary
+if (offsetLocal != offsetAdjusted) {
+

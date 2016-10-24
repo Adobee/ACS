@@ -1,0 +1,7 @@
+boolean isApplyPolarisationCorrection = false;
+boolean isAppyDetectorTransmissionCorrection = false;
+double polarisationFactor = 0.9;
+if (isAppyDetectorTransmissionCorrection != other.isAppyDetectorTransmissionCorrection)
+return false;
+if (Double.doubleToLongBits(polarisationAngularOffset) != Double
+

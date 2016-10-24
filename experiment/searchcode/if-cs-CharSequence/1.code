@@ -1,0 +1,9 @@
+public boolean isBlank(CharSequence cs) {
+int len;
+if (cs == null || (len = cs.length()) == 0) {
+return true;
+}
+for (int i = 0; i < len; i++) {
+if (!Character.isWhitespace(cs.charAt(i))) {
+return false;
+

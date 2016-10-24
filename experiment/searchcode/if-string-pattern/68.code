@@ -1,0 +1,8 @@
+&quot;DOT&quot;,
+TokenPattern.STRING_TYPE,
+&quot;.&quot;);
+addPattern(pattern);
+pattern = new TokenPattern(Asn1Constants.DOUBLE_DOT,
+&quot;DOUBLE_DOT&quot;,
+TokenPattern.STRING_TYPE,
+

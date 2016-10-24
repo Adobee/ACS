@@ -1,0 +1,8 @@
+Plan topLevelGoalPlan = topLevelGoal.getPlan();
+
+if(collaboration.getActualFocus(eventGoal.getPlan()) == null)
+GOAL_STATUS topLevelGoalStatus= collaboration.getGoalStatus(topLevelGoalPlan);
+
+if (topLevelGoalStatus.equals(GOAL_STATUS.ACHIEVED))
+return DESIRABILITY.HIGH_DESIRABLE;
+

@@ -1,0 +1,19 @@
+DataManager dm = new DataManager(pl, base);
+
+if(base.exists())
+{
+messageData = (MessageData) dm.readYAML(MessageData.class);
+DataManager dm = new DataManager(pl, base);
+
+if(base.exists())
+{
+dm.writeYAML(messageData);
+}
+}
+
+public MessageData getMessageData()
+{
+return messageData;
+}
+}
+

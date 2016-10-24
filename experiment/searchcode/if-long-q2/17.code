@@ -1,0 +1,9 @@
+public static byte[] toBytes(long i) {
+if (i == Long.MIN_VALUE)
+return minValue;
+int size = (i < 0) ? stringSize(-i) + 1 : stringSize(i);
+r = i2 - ((q2 << 3) + (q2 << 1)); // r = i2-(q2*10) ...
+buf[--charPos] = IntegerUtil.digits[r];
+i2 = q2;
+if (i2 == 0)
+

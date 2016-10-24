@@ -1,0 +1,9 @@
+* case of filters and other query arguments changing VS just a data refresh.
+*/
+private boolean mFullReload = true;
+
+public View onCreateView(LayoutInflater inflater, ViewGroup container,
+// If the cursor is the same as the old one, swapCursor returns a null.
+if (oldCursor == null) {
+mFullReload = false;
+

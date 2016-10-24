@@ -1,0 +1,15 @@
+package npi.algo;
+
+public class WeightedQuickUnion extends QuickUnion {
+
+int[] sz;
+
+public WeightedQuickUnion(int n) {
+int rootQ = root(q);
+int szP = sz[rootP];
+int szQ = sz[rootQ];
+
+if(rootP != rootQ){
+if(szP < szQ){
+id[rootP] = rootQ;
+

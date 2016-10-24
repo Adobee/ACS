@@ -1,0 +1,12 @@
+String secretParam = null;
+
+if(args.length > 0){
+secretParam = args[0];
+} else {
+secretParam = &quot;True&quot;; //comment or uncomment as needed. Comment out to hide secret code
+}
+
+boolean showSecret = Boolean.parseBoolean(secretParam);
+
+Game g = Factory.getInstance(Mastermind.class, showSecret);
+

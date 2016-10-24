@@ -1,0 +1,13 @@
+public class LocalDateTimeConverter implements AttributeConverter<LocalDateTime, String> {
+@Override
+public String toGraphProperty(LocalDateTime localDateTime) {
+if(Objects.isNull(localDateTime)){
+public LocalDateTime toEntityAttribute(String string) {
+if(Objects.isNull(string)) {
+return LocalDateTime.parse(string);
+} else {
+return null;
+}
+}
+}
+

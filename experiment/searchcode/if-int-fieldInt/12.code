@@ -1,0 +1,8 @@
+private int fieldInt;
+private boolean fieldBoolean;
+private long fieldLong;
+private float fieldFloat;
+public ItemSer(int fieldInt,
+boolean fieldBoolean,
+long fieldLong,
+

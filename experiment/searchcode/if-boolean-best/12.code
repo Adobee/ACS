@@ -1,0 +1,15 @@
+private int bestScore = Integer.MAX_VALUE;
+
+public synchronized int getBestScore() {
+return bestScore;
+}
+
+public synchronized boolean setIfBestScore(int bestScore) {
+boolean result = bestScore < this.bestScore;
+if (result) {
+this.bestScore = bestScore;
+}
+return result;
+}
+}
+

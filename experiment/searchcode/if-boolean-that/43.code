@@ -1,0 +1,10 @@
+@Override
+public boolean equals(final Object o)
+{
+if (this == o) return true;
+if (!(o instanceof BooleanRestriction)) return false;
+BooleanRestriction that = (BooleanRestriction) o;
+
+if (booleanLogic != that.getBooleanLogic()) return false;
+if (restrictions == null)
+

@@ -1,0 +1,8 @@
+Arrays.sort(b);
+int length = a.length + b.length;
+if ((length &amp; 0x01) == 0) {
+return (double)(findK(a, 0, b, 0, length / 2) + findK(a, 0, b, 0, length / 2 + 1)) / 2.0;
+private double findK(int[] A, int startA, int[] B, int startB, int k) {
+if (startA >= A.length) {
+return B[startB + k - 1];
+

@@ -1,0 +1,11 @@
+this.constraint = constraint;
+}
+
+@Override
+public int compareTo(Constraint constraint) {
+if (constraint instanceof Exists) {
+return 1;
+} else if (constraint instanceof ForAll) {
+return 1;
+} else if (constraint instanceof Equiv) {
+

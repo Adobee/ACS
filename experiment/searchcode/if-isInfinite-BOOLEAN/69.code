@@ -1,0 +1,14 @@
+super(value, format, timeout, 0.000000000001);
+}
+
+@Override
+protected boolean equalityCheck(Double v)
+{
+if (super.equalityCheck(v))
+return true;
+
+if (Double.isNaN(value) &amp;&amp; Double.isNaN(v))
+return true;
+
+if (Double.isInfinite(value) &amp;&amp; Double.isInfinite(v))
+

@@ -1,0 +1,10 @@
+private int minesPlaced;
+private int piecesPlaced;
+
+public GameDifficulty(int width, int height, int mines) {
+public boolean getProbabilisticMine() {
+
+boolean ret = (Math.random() * ((width * height) - piecesPlaced)) < (mines - minesPlaced);
+
+if(ret) {
+

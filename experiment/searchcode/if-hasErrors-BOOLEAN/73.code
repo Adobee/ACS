@@ -1,0 +1,15 @@
+class FaultHidingSink extends ForwardingSink {
+private boolean hasErrors;
+
+public FaultHidingSink(Sink delegate) {
+super(delegate);
+onException(e);
+}
+}
+
+@Override
+public void flush() throws IOException {
+if (hasErrors) return;
+try {
+super.flush();
+

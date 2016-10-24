@@ -1,0 +1,9 @@
+public class Solution {
+public int minDepth(TreeNode root) {
+if (root == null) { return 0; }
+return helper(1, root);
+}
+
+public int helper(int currentDepth, TreeNode node) {
+if (node.left == null &amp;&amp; node.right == null) {
+

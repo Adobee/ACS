@@ -1,0 +1,14 @@
+public void increment(T key) {
+increment(key, 1.0);
+}
+
+public void increment(T key, double value) {
+double new_count;
+if (!containsKey(key)) {
+new_count = get(key) + value;
+put(key, new_count);
+}
+if (new_count > max_value) {
+max_key = key;
+max_value = new_count;
+

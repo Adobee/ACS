@@ -1,0 +1,18 @@
+package org.tbot.objects;
+
+/**
+*
+*/
+public enum CrawlObjectType {
+
+Domain(&quot;domain&quot;),
+URL(&quot;url&quot;);
+for (CrawlObjectType type : CrawlObjectType.values()) {
+if (name.equals(type.toString())) {
+return type;
+}
+}
+return null;
+}
+}
+

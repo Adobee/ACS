@@ -1,0 +1,15 @@
+int diff = series[1] - series[0];
+if(series.length == 2)
+{
+return &quot;Arithmetic&quot;;
+}
+
+for(int i=1; i<series.length-1;i++)
+float diff = series[1]/ series[0];
+if(series.length == 2)
+{
+return &quot;Geometric&quot;;
+}
+
+for(int i=1; i<series.length-1;i++)
+

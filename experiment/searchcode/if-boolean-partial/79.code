@@ -1,0 +1,8 @@
+public class CardError extends Exception {
+
+boolean partialOk;
+
+public CardError(boolean partialOk, String detailMessage) {
+public static CardError create(Context context, boolean partialOk, int errorStringId) {
+return new CardError(partialOk, context.getString(errorStringId));
+

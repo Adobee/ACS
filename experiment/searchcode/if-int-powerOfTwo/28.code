@@ -1,0 +1,14 @@
+public class PowerOfTwo {
+public boolean isPowerOfTwo(int number) {
+if (number <= 0) {
+return false;
+}
+int temp = number - 1;
+if ((number &amp; temp) == 0) {
+return true;
+}
+return false;
+}
+
+public static void main(String[] args) {
+

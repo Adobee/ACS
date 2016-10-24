@@ -1,0 +1,13 @@
+FileNameGenerator fileNameGenerator, long cacheMaxSize,
+int cacheMaxFileCount) throws IOException {
+if (cacheDir == null) {
+throw new IllegalArgumentException(&quot;cacheDir&quot; + ERROR_ARG_NULL);
+throw new IllegalArgumentException(&quot;fileNameGenerator&quot;
++ ERROR_ARG_NULL);
+}
+
+if (cacheMaxSize == 0) {
+cacheMaxSize = Long.MAX_VALUE;
+}
+if (cacheMaxFileCount == 0) {
+

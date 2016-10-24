@@ -1,0 +1,16 @@
+public class Queue{
+Node first;
+Node last;
+
+void enqueue(Object o){
+if(first == null){
+last = new Node(o);
+last = last.getNext();
+}
+}
+
+Object dequeue(){
+if(first != null){
+Object o = first.getData();
+first = first.getNext();
+

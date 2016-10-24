@@ -1,0 +1,8 @@
+* Created by hadoop on 5/30/16.
+*/
+public class FSort {
+public static class FSortMap extends Mapper<LongWritable, Text, MyPairWritable, NullWritable> {
+MyPairWritable mw = new MyPairWritable();
+if(val.length == 2){
+mw.set(new Text(val[0]), new IntWritable(Integer.parseInt(val[1])));
+

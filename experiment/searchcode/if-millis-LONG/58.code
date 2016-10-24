@@ -1,0 +1,11 @@
+package Lib.Utils;
+
+public abstract class Repeater {
+
+private long time = System.currentTimeMillis();
+this.repeatMillis = repeatMillis;
+}
+
+public void update() {
+if ((System.currentTimeMillis() - time)>repeatMillis) {
+

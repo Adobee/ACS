@@ -1,0 +1,11 @@
+long result = go(0, 0) * total % MOD;
+return (int) result;
+}
+
+private long go(int step, int groups) {
+if (groups > maxGroups)
+if (step + groups > total &amp;&amp; groups != 1)
+return answer[step][groups] = 0;
+if (step == count) {
+int remainingSeats = total - count;
+

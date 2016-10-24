@@ -1,0 +1,16 @@
+package generators;
+
+public class LCG {
+
+long a;
+long b;
+long m;
+long seed;
+
+long last;
+
+public LCG(long a, long b, long m, long seed) {
+this.a = a;
+this.b = b;
+this.m = m;
+

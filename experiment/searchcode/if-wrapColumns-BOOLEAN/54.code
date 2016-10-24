@@ -1,0 +1,11 @@
+CassandraConnection.class, ConnectionPool.class);
+
+this.columnFamily = entityType.getSimpleName();
+
+if (CassandraOpenColumn.class.isAssignableFrom(entityType) || CassandraOpenSuperColumn.class.isAssignableFrom(entityType)) {
+return new Entity<T>(this.entityService, this.entityType, key, node);
+}
+
+public Entity<T> wrapColumns(String key, List<ColumnOrSuperColumn> cols) {
+Map<String, Object> parsed = this.entityStreamer.parse(cols);
+

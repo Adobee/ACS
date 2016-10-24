@@ -1,0 +1,7 @@
+Element domainSettingElement = domainSettingCache.get(key);
+if (domainSettingElement != null) {
+stringDomainSetting = (StringDomainSetting) domainSettingElement.getObjectValue();
+public void putStringDomainSetting(StringDomainSetting stringDomainSetting) {
+if (stringDomainSetting != null) {
+String key = stringDomainSetting.getSettingDomain().getName() + &quot;/&quot; + stringDomainSetting.getName();
+

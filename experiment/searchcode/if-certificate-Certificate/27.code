@@ -1,0 +1,12 @@
+import org.shopfoundry.core.security.certificates.CertificateManager;
+
+/**
+* Default security manager
+*
+* @author Bojan Bijelic
+*/
+public class DefaultSecurityProvider implements SecurityProvider {
+throws SecurityProviderException {
+if (this.certificateManager == null)
+throw new SecurityProviderException(&quot;Certificate manager not set.&quot;);
+

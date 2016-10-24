@@ -1,0 +1,7 @@
+public static LoggerPrinter getFactory(String tag, boolean debug) {
+final LoggerPrinter printer = new LoggerPrinter();
+printer.init(tag);
+LogLevel level = LogLevel.NONE;
+if (debug) {
+level = LogLevel.FULL;
+

@@ -1,0 +1,6 @@
+public <T> ParamConverter<T> getConverter(java.lang.Class<T> rawType, Type genericType, Annotation[] annotations) {
+
+if (LocalDate.class.equals(rawType)) {
+} else if (LocalTime.class.equals(rawType)) {
+return new LocalTimeParamConverter<T>(rawType);
+

@@ -1,0 +1,10 @@
+protected long value(long p, int exponent, long power) {
+return exponent + 1;
+}
+};
+
+public static final MultiplicativeFunction DIVISOR_SUM = new MultiplicativeFunction() {
+@Override
+protected long value(long p, int exponent, long power) {
+return (power * p - 1) / (p - 1);
+

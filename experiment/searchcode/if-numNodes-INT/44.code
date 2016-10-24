@@ -1,0 +1,12 @@
+public RandomGraphGenerator(int numNodes, double edgeDensity,
+boolean directed, boolean weighted)
+{
+if ((numNodes > 0) &amp;&amp; (edgeDensity >= 0) &amp;&amp; (edgeDensity <= 1))
+adjMatrix = new double[numNodes][numNodes];
+
+numEdges = 0;
+
+if (directed)
+{
+for (int firstNode = 0; firstNode < numNodes; firstNode++)
+

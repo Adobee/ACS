@@ -1,0 +1,10 @@
+@Override
+protected List<RT_Result> internalSearch(IX_Collection.PreparedQuery pq,
+SearchConfig config) {
+if (config != null) {
+int nt = t.getFreq();
+double idft = this.idftNormal(nt);
+
+for (IX_TermMatch tm : t.getMatches()) {
+int freq = tm.getCount();
+

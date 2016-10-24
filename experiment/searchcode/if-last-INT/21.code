@@ -1,0 +1,15 @@
+public static void printSeries(int n, int max) {
+int i;
+int last_n[] = new int[n];
+int last_sum = 0;
+
+for(i = 0; i < n; ++i) {
+last_n[i] = last_n[i + 1];
+}
+last_sum += last_n[i];
+last_n[i] = last_sum;
+if(last_sum > max) {
+break;
+}
+else
+

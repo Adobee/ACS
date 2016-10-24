@@ -1,0 +1,11 @@
+public void handle(Address address, ByteBuffer deflated) {
+if (!activated) {
+wrappee.handle(address, deflated);
+return;
+}
+
+int r = deflated.remaining();
+
+if (r > 0) {
+inflater.setInput(deflated.array(), deflated.position(), r);
+

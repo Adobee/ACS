@@ -1,0 +1,13 @@
+a = a - fraction * b;
+builder.append(fraction);
+fractionIndex++;
+Long index = fractionMap.get(a);
+if (index != null) {
+fractionMap.put(a, fractionIndex);
+}
+}
+
+if (repeated) {
+long repeatedeIndex = fractionMap.get(a);
+return ((sign==-1)?&quot;-&quot;:&quot;&quot;)+builder.substring(0, (int) repeatedeIndex) + &quot;(&quot; + builder.substring((int) repeatedeIndex, builder.length()) + &quot;)&quot;;
+

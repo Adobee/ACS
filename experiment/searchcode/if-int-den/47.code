@@ -1,0 +1,10 @@
+package fracciones;
+public class Fraccion {
+private int num;
+private int den;
+public Fraccion() {
+num = 0;
+den = 1;
+}
+public Fraccion(int num, int den) {//Con esto se introduce el denominador
+

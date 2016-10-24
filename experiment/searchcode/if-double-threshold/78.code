@@ -1,0 +1,6 @@
+* @return 0, 1 or -1 (if failed threshold)
+*/
+public static synchronized int[] thresholdArray(double threshold, double[] candidatez) {
+double upper_threshold = 1.0 - threshold;
+double lower_threshold = threshold;
+

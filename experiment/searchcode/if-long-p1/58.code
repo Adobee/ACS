@@ -1,0 +1,12 @@
+long m3 = decodeLELong(buf, 24);
+long p0 = m0;
+long p1 = m1;
+long p2 = m2;
+long p3 = m3;
+long h4 = (h0 ^ h1) ^ (h2 ^ h3) ^ 0x1BD11BDAA9FC1A22L;
+long t1 = (bcount >>> 59) + ((long)etype << 55);
+long t2 = t0 ^ t1;
+p0 += h0;
+p1 += h1 + t0;
+p2 += h2 + t1;
+

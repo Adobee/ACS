@@ -1,0 +1,8 @@
+//		  		System.out.println(derivatives[offset+rule]+&quot; &quot;+spanGoldCounts[rule]);
+total += derivatives[offset+rule];
+derivatives[offset+rule] += spanGoldCounts[rule];
+//		  		if (derivatives[offset+rule]!=0)
+//		  			System.out.println(&quot;cant count! rule &quot;+rule+&quot; &quot;+derivatives[offset+rule]+&quot; &quot;+spanGoldCounts[rule]);
+//		  		derivatives[offset+rule] = 0;
+if (SloppyMath.isVeryDangerous(derivatives[offset+rule]))
+

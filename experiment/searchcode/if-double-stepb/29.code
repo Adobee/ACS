@@ -1,0 +1,15 @@
+import sdt.stepb.*;
+
+/**
+* <p>Title: </p>
+*
+* <p>Description: </p>
+*
+* <p>Copyright: Copyright (c) 2012</p>
+protected ElementPoint _elementPtYZRightUp;
+
+
+//stepb_cartesian_point[][][] ptSets;
+
+public DataMagnet(SDT_DataManager dataManger)
+

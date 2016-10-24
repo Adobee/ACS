@@ -1,0 +1,10 @@
+public class MySemaphoreImp implements MySemaphore {
+
+private int availablePermits = 0;
+private Object lock = new Object();
+
+public MySemaphoreImp(int availablePermits) {
+synchronized (lock) {
+if (availablePermits >= permits) {
+for (int i = 0; i < permits; i++) {
+

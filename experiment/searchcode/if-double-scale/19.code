@@ -1,0 +1,7 @@
+public class NewtonSqrt {
+static double sqrt(double radicand, double guess, int precision) {
+double scale = Math.pow(10, precision);
+double candidate = 0.5f * (guess + radicand/guess);
+
+if(((double) Math.round(candidate * scale)/scale) != ((double) Math.round(guess * scale)/scale)) {
+

@@ -1,0 +1,9 @@
+public Range intersection(Range range) {
+if (this.to < range.from || this.from > range.to) {
+return null;
+return new Range(Math.min(this.from, range.from), Math.max(this.to, range.to));
+}
+
+public Range[] subtraction(Range range) {
+if (this.intersection(range) != null) {
+

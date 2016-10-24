@@ -1,0 +1,10 @@
+public void accelerate(double ax, double ay, double maxMove) {
+dx2 += ax;
+dy2 += ay;
+
+double d = dx2 * dx2 + dy2 * dy2;
+if (d > maxMove * maxMove) {
+double normalizationFactor = maxMove / Math.sqrt(d);
+dx2 *= normalizationFactor;
+dy2 *= normalizationFactor;
+

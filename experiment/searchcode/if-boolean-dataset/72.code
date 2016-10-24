@@ -1,0 +1,10 @@
+static HashMap<Integer, ArrayList<SuperBucket>> datasetObjectFilters = new HashMap<Integer, ArrayList<SuperBucket>>();
+
+public void loadDatasetObjectFilter(int datasetID) {
+if(!datasetObjectFilters.containsKey(datasetID)){
+datasetObjectFilters.put(datasetID, new ObjectsBucket().getFiltersFromDataset(datasetID));
+}
+}
+public void loadDatasetSubjectFilter(int datasetID) {
+if(!datasetSubjectFilters.containsKey(datasetID)){
+

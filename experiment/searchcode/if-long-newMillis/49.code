@@ -1,0 +1,9 @@
+extends BaseDateTime
+implements ReadableDateTime, Serializable {
+
+private static final long serialVersionUID = 156371964018738L;
+return (newMillis == getMillis() ? this : new DateMidnight(newMillis, chrono));
+}
+public DateMidnight withDurationAdded(long durationToAdd, int scalar) {
+if (durationToAdd == 0 || scalar == 0)
+

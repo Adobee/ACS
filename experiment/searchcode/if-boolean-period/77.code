@@ -1,0 +1,13 @@
+for (String period : supportedPeriodNames) {
+sentimentCountersByPeriod.put(period, new SentimentCounter());
+}
+}
+
+private boolean isValidPeriod(String period) {
+sentimentCountersByPeriod.get(period).increment(sentimentClass);
+}
+}
+
+public Map<String, Integer> getAllForPeriod(String period) {
+if(!isValidPeriod(period)) {
+

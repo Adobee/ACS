@@ -1,0 +1,8 @@
+int x = (int)event.getX();
+int y = (int)event.getY();
+boolean sendToDelegate = false;
+sendToDelegate = mDelegateTargeted;
+if (sendToDelegate) {
+Rect slopBounds = mSlopBounds;
+if (!slopBounds.contains(x, y)) {
+

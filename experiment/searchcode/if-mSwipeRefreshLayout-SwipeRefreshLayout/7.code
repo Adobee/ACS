@@ -1,0 +1,7 @@
+@Bind(R.id.swipe_refresh_layout) SwipeRefreshLayout mSwipeRefreshLayout;
+
+@Override protected void onCreate(Bundle savedInstanceState) {
+mSwipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary, R.color.colorPrimaryDark);
+mSwipeRefreshLayout.setOnRefreshListener(() -> {
+if (prepareRefresh()) {
+

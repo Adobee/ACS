@@ -1,0 +1,11 @@
+List<Sort> sortList=sortDaoImpl.querySortByPId(model);
+for(Sort s:sortList){
+s.setCourses(null);
+if(s.getPid()==0){
+return sortList;
+}
+@Override
+public boolean addSort(SortDTO sortDTO) {
+Sort sort=new Sort();
+sort.setName(sortDTO.getName());
+

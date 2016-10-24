@@ -1,0 +1,13 @@
+private final int denominator;
+
+public Rational(int numerator, int denominator) {
+int denGcd = Euclid.gcd(numerator, denominator);
+this.denominator = denominator / denGcd;
+}
+
+public int numerator() {
+return numerator;
+}
+
+public int denominator() {
+

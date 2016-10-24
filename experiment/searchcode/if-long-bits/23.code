@@ -1,0 +1,16 @@
+public class Power2 {
+
+/**
+* @param args
+*/
+public static int determine(int number) {
+
+long a = new Long(number).longValue();
+if (a < 0)
+{
+return 0;
+}
+String bits= Long.toBinaryString(a);
+int power;
+if (bits.indexOf(&quot;1&quot;) == bits.lastIndexOf(&quot;1&quot;))
+

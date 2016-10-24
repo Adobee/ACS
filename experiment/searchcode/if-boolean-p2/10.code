@@ -1,0 +1,8 @@
+int LIMIT = 10000000;
+
+boolean[] pentagonal = new boolean[LIMIT];
+
+for (int P = 1, dP = 4; P < LIMIT; P += dP, dP += 3)
+for (int P2 = 1, dP2 = 4; !found &amp;&amp; dP2 <= P1 &amp;&amp; P1 + P2 + P2 < LIMIT; P2 += dP2, dP2 += 3) {
+if (pentagonal[P1 + P2] &amp;&amp; pentagonal[P1 + P2 + P2]) {
+

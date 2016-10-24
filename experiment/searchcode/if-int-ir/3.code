@@ -1,0 +1,9 @@
+package IR;
+
+public class IrBreakStmt extends IrStatement{
+IrStatement stmt;
+public IrBreakStmt() {
+if (IrStatement.EnclosingStmt == null)
+error(&quot;unenclosed break&quot;);
+stmt = IrStatement.EnclosingStmt;
+

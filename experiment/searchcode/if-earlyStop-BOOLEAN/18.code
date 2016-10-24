@@ -1,0 +1,8 @@
+// DP, O(N^2)
+public boolean wordBreak(String s, Set<String> dict) {
+if (s == null || dict == null) return false;
+// A[i] = true means s.substring(0, i) (i.e., [1, i] if 1 is start index) is a legal split
+int len = s.length();
+//if (len == 0) return true;
+boolean[] A = new boolean[len+1];
+

@@ -1,0 +1,10 @@
+public Variance(StatisticRange range) {
+super(range, &quot;variance&quot;);
+}
+
+public double transform(List<Double> values, Cluster cluster) {
+public double transform(List<Double> values, double mean)
+{
+double variance = 0;
+int numElements = values.size();
+

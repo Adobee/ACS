@@ -1,0 +1,15 @@
+callback.produceStatement(table);
+}
+
+for (CreateIndex index : indexes) {
+callback.produceStatement(index);
+}
+
+if (convertDataToInsert) {
+createIndex = new CreateIndex(new Name(indexName), tableName);
+
+indexes.add(createIndex);
+
+if (!indexesRs.getBoolean(&quot;NON_UNIQUE&quot;)) {
+createIndex.setUnique(true);
+

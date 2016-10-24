@@ -1,0 +1,10 @@
+for(File f : signFolder.listFiles()){
+BowSign sign = new BowSign(f);
+if(sign.getWorld()!=null){
+signs.add(sign);
+sign.update();
+public BowSign getSign(int signID){
+for(BowSign s : signs){
+if(s.getID()==signID){
+return s;
+

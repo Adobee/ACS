@@ -1,0 +1,23 @@
+long L=in.nextLong();
+long a=m-n,b=L,c=y-x;
+if(a<0){
+a=-a;
+c=-c;
+}
+long d=extendgcd(a,b);
+if((m==n&amp;&amp;x!=y)||c%d!=0)
+public static long extendgcd(long a,long b){
+if(b==0){
+t=1;
+p=0;
+return a;
+}
+long d=extendgcd(b,a%b);
+long temp=t;
+t=p;
+p=temp-a/b*t;
+return d;
+}
+
+}
+

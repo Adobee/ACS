@@ -1,0 +1,11 @@
+public int divide(int dividend, int divisor) {
+if (dividend == Integer.MIN_VALUE &amp;&amp; divisor == -1)
+return Integer.MAX_VALUE;
+return -getDivideNeg(-divisor - dividend, divisor) - 1;
+}
+return 0;
+}
+
+public int getDivideNeg(long dividend, long divisor) {
+if (dividend == 0)
+

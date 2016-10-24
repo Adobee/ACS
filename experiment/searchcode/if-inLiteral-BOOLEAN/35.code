@@ -1,0 +1,9 @@
+int secondLength, secondIndex;
+char firstChar, secondChar, previousChar, literalChar;
+boolean inLiteral;
+
+firstLength = first.length();
+firstIndex = firstNonWhitespaceOrComment(first, firstIndex, inLiteral);
+secondIndex = firstNonWhitespaceOrComment(second, secondIndex, inLiteral);
+if (firstIndex >= firstLength) {
+

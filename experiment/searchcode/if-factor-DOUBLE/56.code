@@ -1,0 +1,16 @@
+double num;
+double factor;
+double rem;
+
+public Factorgen(double n){
+num = n;
+factor = 2;
+rem = num;
+}
+
+public double nextFactor(){
+return factor;
+}
+
+public boolean hasMoreFactors(){
+

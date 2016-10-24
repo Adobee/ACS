@@ -1,0 +1,11 @@
+private final long memoryBytesLimit;
+private final double overheadConstant;
+private final AtomicLong used;
+private final AtomicLong trippedCount;
+// short-circuit on no data allowed, immediately throwing an exception
+if (memoryBytesLimit == 0) {
+circuitBreak(label, bytes);
+}
+
+long newUsed;
+

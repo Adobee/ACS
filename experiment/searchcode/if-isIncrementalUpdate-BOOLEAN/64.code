@@ -1,0 +1,11 @@
+HashSet<String> videosToKeep = new HashSet<String>();
+boolean isIncrementalUpdate = videoHashcodes != null &amp;&amp; videoHashcodes.size() > 0;
+
+if (isIncrementalUpdate) {
+buildVideo(isNew, video, list);
+}
+}
+
+int deletedVideos = 0;
+if (isIncrementalUpdate) {
+

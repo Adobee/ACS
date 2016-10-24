@@ -1,0 +1,14 @@
+BigInteger p;
+BigInteger q;
+BigInteger g1;
+BigInteger g2;
+HashFunction H;
+SpongePRG sr;
+int hashBits = 512;
+public BigInteger[] makeKeyPair(String passwd) {
+// c, d, h
+BigInteger[] retorno = new BigInteger[3];
+
+sr.init(hashBits);
+sr.feed(&quot;Cramer-Shoup&quot;.getBytes(), &quot;Cramer-Shoup&quot;.length());
+

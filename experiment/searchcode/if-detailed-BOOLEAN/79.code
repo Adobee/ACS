@@ -1,0 +1,12 @@
+*   <li>{@link extented.impl.MyExtendedClassImpl#getDetailedField <em>Detailed Field</em>}</li>
+* </ul>
+* </p>
+*
+* @generated
+*/
+public class MyExtendedClassImpl extends MyBaseClassImpl implements MyExtendedClass {
+String oldDetailedField = detailedField;
+detailedField = newDetailedField;
+if (eNotificationRequired())
+eNotify(new ENotificationImpl(this, Notification.SET, ExtentedPackage.MY_EXTENDED_CLASS__DETAILED_FIELD, oldDetailedField, detailedField));
+

@@ -1,0 +1,18 @@
+public class Numbers1 {
+
+public static void main(String[] args) {
+int i=0;
+int step = 3;
+while (i<=100){
+System.out.print(i + &quot; &quot;);
+i=i+step;
+if (step == 3){
+step = 5;
+} else {
+step =3;
+}
+}
+}
+
+}
+

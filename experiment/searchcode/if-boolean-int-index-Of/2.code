@@ -1,0 +1,9 @@
+public class CountPrimes {
+public int countPrimes(int n) {
+boolean[] index = new boolean[n];
+for (int i = 2; i < n; i++) {
+for (int i = 2; i * i < n; i++) {
+if (!index[i])
+continue;
+for (int j = i * i; j < n; j += i) {
+

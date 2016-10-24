@@ -1,0 +1,12 @@
+public class ComplexityAdjustedScore implements AdjustScore {
+
+/**
+* The starting complexity penalty.
+*/
+private double complexityPenalty = .2;
+double score = genome.getScore();
+double result = 0;
+
+if (genome.size() > this.complexityPenaltyThreshold) {
+int over = genome.size() - this.complexityPenaltyThreshold;
+

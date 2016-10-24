@@ -1,0 +1,10 @@
+return ((Integer) val1).intValue() != ((Integer) val2).intValue() ? Boolean.TRUE
+: Boolean.FALSE;
+case BW_AND:
+if (val2 instanceof Long) {
+return (Integer) val1 &amp; (Long) val2;
+}
+return (Integer) val1 &amp; (Integer) val2;
+case BW_OR:
+if (val2 instanceof Long) {
+

@@ -1,0 +1,11 @@
+public class Camera {
+
+private double xOff, yOff;
+private Game g;
+
+public Camera(double xOff, double yOff, Game g) {
+public void checkBlankSpace(Game g) {
+if (xOff < 0) {
+xOff = 0;
+} else if (xOff > MapLoader.getWidth() * 100 - g.getWidth()) {
+

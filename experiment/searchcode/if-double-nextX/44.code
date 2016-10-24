@@ -1,0 +1,6 @@
+int nextX = point.x + offsetX[j];
+int nextY = point.y + offsetY[j];
+if (nextX >= 0 &amp;&amp; nextX < row &amp;&amp; nextY >= 0
+&amp;&amp; nextY < column &amp;&amp; grids[nextX][nextY] != &#39;#&#39;) {
+if (distances[nextX][nextY] == -1) {
+

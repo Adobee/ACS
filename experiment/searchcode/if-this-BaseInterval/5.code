@@ -1,0 +1,8 @@
+public WanderingController(PhysSprite target, float strength, int baseInterval,
+int addInterval)
+{
+this(target, strength, baseInterval, addInterval, 0);
+this.baseInterval = (int) (baseInterval * (1f + (random().nextFloat() -
+0.5f) * variance));
+this.addInterval = (int) (addInterval * (1f + (random().nextFloat() -
+

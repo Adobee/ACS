@@ -1,0 +1,9 @@
+throws DimensionMismatchException {
+checkVectorDimensions(v.getDimension());
+if (v instanceof OpenMapRealVector) {
+return add((OpenMapRealVector) v);
+/** {@inheritDoc} */
+@Override
+public OpenMapRealVector append(RealVector v) {
+if (v instanceof OpenMapRealVector) {
+

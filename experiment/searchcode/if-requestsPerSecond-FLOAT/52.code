@@ -1,0 +1,8 @@
+private volatile long storeFileSize = 0;
+private volatile double requestsPerSecond = 0.0;
+private volatile long readRequestsCount = 0;
+TimeUnit.MILLISECONDS);             //制定进程排期,使得runnable定期执行
+
+if (LOG.isInfoEnabled()) {
+LOG.info(&quot;Computing regionserver metrics every &quot; + this.period + &quot; milliseconds&quot;);
+

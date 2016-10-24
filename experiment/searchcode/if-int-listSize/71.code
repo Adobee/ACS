@@ -1,0 +1,9 @@
+Scanner in = new Scanner(System.in);
+// instance variables - replace the example below with your own
+int listSize = 5;
+int[] list = new int[listSize];
+int holder = 0;
+int pointer = 0;
+
+for (int i = 0; i < listSize; i++)
+

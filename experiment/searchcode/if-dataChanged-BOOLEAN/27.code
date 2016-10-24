@@ -1,0 +1,11 @@
+Debug.logd(String.format(Locale.getDefault(), &quot;WearCastListenerService.onDataChanged() called with %d events&quot;, dataEvents.getCount()));
+boolean dataChanged = false;
+for (DataEvent dataEvent : dataEvents) {
+dataChanged |= dataEvent.getDataItem().getUri().getPath().startsWith(C.WEAR_CAST_BASE_PATH);
+}
+if (dataChanged)
+WearCastIntentService.updateNotifications(this);
+dataEvents.release();
+}
+}
+

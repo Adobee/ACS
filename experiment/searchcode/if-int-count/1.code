@@ -1,0 +1,8 @@
+public void merge(int A[], int m, int B[], int n) {
+int countA = m - 1;
+int countB = n - 1;
+for(int i = m + n - 1; i >= 0; --i){
+if(countA < 0)
+A[i] = B[countB--];
+else if(countB < 0)
+

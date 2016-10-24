@@ -1,0 +1,11 @@
+*            number of terms in poly (order + 1)
+* @return
+*/
+private static double[] initialGuess(Fit fit) {
+double bb[] = GaussianFit.initialGuess(fit);
+int ntot = ng3 + fit.getPolynomialOrder() + 1;
+double aa[] = new double[ntot];
+for (int i = 0; i < ntot; i++) {
+if (i < ng3) {
+aa[i] = bb[i];
+

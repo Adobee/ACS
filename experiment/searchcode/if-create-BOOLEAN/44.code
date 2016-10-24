@@ -1,0 +1,10 @@
+package block1.javaGame.verifyers;
+
+public abstract class Verifier {
+
+private BooleanMethod[] conditions;
+public abstract BooleanMethod[] createConditions();
+
+public boolean check(Object... args) {
+for (BooleanMethod m : conditions) {
+

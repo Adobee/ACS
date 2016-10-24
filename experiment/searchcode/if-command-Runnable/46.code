@@ -1,0 +1,9 @@
+private static final String ParameterRunnableID = &quot;zephyr.plugin.core.command.parameter.runnableid&quot;;
+
+
+@SuppressWarnings(&quot;rawtypes&quot;)
+String runnableID = (String) parameters.get(ParameterRunnableID);
+if (runnableID == null)
+return null;
+RunnableFactory runnableFactory = ZephyrCore.findRunnable(runnableID);
+

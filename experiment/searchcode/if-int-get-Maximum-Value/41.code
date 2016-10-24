@@ -1,0 +1,8 @@
+public RangeSpinnerModel (int currentValue, int minimum, int maximum, int stepSize) {
+this.current = currentValue;
+this.minimum = minimum;
+public Integer peekNext() {
+int ret;
+if(current + stepSize > maximum) {
+//the diff value leads to strange changes, e.g.:
+

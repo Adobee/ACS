@@ -1,0 +1,9 @@
+public class NewVirus {
+static int virusCount = 0;
+private int newSeconds = 0;
+
+public NewVirus() {
+boolean setNewSeconds(int newValue) {
+if ((newValue > 59) &amp; (newValue < 101)) {
+newSeconds = newValue;
+

@@ -1,0 +1,7 @@
+public ExceptionResponse(Throwable throwable) {
+if(throwable == null) {
+this.error_message = &quot;(No message attached)&quot;;
+} else {
+if(throwable.getMessage() == null) {
+this.error_message = throwable.getClass().getName()+&quot;: (No message attached)&quot;;
+

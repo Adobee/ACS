@@ -1,0 +1,10 @@
+c.objectId = c.getInStream().readUnsignedWord();
+c.objectY = c.getInStream().readUnsignedWordA();
+c.objectDistance = 1;
+if (c.goodDistance(c.getX(), c.getY(), c.objectX, c.objectY, 1)) {
+c.objectX = c.getInStream().readUnsignedWordA();
+c.objectDistance = 1;
+
+if (c.playerRights == 3) {
+Misc.println(&quot;objectId: &quot; + c.objectId + &quot;  ObjectX: &quot;
+

@@ -1,0 +1,8 @@
+public double integrateStep(double t, double[] x, double t1, double[] xOut) {
+double _stepSize = stepSize;
+if (t + _stepSize > t1)
+_stepSize = t1 - t;
+protected double findNextState(double t, double[] x, double stepSize, double maxStep) {
+if (stepSize > maxStep)
+stepSize = maxStep;
+

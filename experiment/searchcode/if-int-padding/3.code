@@ -1,0 +1,11 @@
+package roge.androidextended;
+
+public class Padding{
+private int left=0;
+private int top=0;
+private int right=0;
+private int bottom=0;
+
+/*Begin Constructors*/
+public Padding(){
+

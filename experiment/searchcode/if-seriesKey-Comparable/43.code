@@ -1,0 +1,13 @@
+if (!this.seriesKey.equals(that.seriesKey)) {
+return false;
+}
+if (this.itemIndex != that.itemIndex) {
+int result = this.seriesKey.compareTo(key.seriesKey);
+if (result == 0) {
+result = this.itemIndex - key.itemIndex;
+}
+return result;
+}
+
+}
+

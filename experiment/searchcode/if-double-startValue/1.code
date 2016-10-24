@@ -1,0 +1,7 @@
+public final double startValue, endValue, time;
+private double curValue, timer;
+
+public QInterpolator(double startValue, double endValue, double time) {
+this.startValue = startValue;
+this.endValue = endValue;
+

@@ -1,0 +1,11 @@
+private boolean isFinalFrame;
+private boolean isControlFrame;
+private boolean isMasked;
+
+private final byte[] maskKey = new byte[4];
+readHeader();
+if (isControlFrame) {
+readControlFrame();
+} else {
+readMessageFrame();
+

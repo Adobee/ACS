@@ -1,0 +1,7 @@
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.renderer.category.BarRenderer3D;
+DefaultCategoryDataset dataset = new DefaultCategoryDataset();
+if (userList != null &amp;&amp; userList.size() > 0) {
+for (ElecUser elecUserForm : userList) {
+

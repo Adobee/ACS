@@ -1,0 +1,7 @@
+void heapifyDown(int idx) {
+if ( idx < insertIdx ) {
+int heapifyIdx = getHeapifyIdx(idx);
+if (heapifyIdx != idx) {
+int getHeapifyIdxForMin(int heapifyIdx, int leftChildIdx, int rightChildIdx) {
+if (leftChildIdx < insertIdx &amp;&amp; data[heapifyIdx] > data[leftChildIdx]) {
+

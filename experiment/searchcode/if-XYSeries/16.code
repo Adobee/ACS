@@ -1,0 +1,12 @@
+import org.xml.sax.ContentHandler;
+
+/**
+* Class XYSeries.
+*
+* @version $Revision$ $Date$
+*/
+public class XYSeries implements java.io.Serializable {
+//-- check bounds for index
+if ((index < 0) || (index > _XYSeriesItemList.size())) {
+throw new IndexOutOfBoundsException();
+

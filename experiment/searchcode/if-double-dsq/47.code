@@ -1,0 +1,9 @@
+public abstract double hackcofm();
+
+/**
+*  Decide if a node should be opened.
+* @param p Node of interest
+protected abstract <region R> boolean subdivp(Node p, double dsq,
+double tolsq, HGStruct<R> hg) reads MP writes R;
+}
+

@@ -1,0 +1,7 @@
+private double[] size; // size range (for x,y in normal rooms; corridors are different)
+private int fixedheight=-1; // overrides height if present
+private Building parent;
+size = ConfigUtils.getDoubleRange(cf, &quot;size&quot;);
+if(cf.contains(&quot;height&quot;))
+height = ConfigUtils.getRandomValueInRange(cf,&quot;height&quot;);
+

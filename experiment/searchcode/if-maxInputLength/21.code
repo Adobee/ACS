@@ -1,0 +1,9 @@
+private InputMethodManager showSoftInput;
+
+public NumberPickerSingle(Context context, String title, int maxinputlength) {
+super(context);
+FilterArray[0] = new InputFilter.LengthFilter(maxinputlength);
+etValue.setFilters(FilterArray);
+
+bOK = (Button) this.findViewById(R.id.bDialogNumberPickerSingle_OK);
+

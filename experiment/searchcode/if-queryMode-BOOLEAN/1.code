@@ -1,0 +1,9 @@
+public void addParameter(String parameterName, String OperateSymbol, Object value) {
+if (queryMode == QueryMode.NormalSQL) {
+sqlParameters.add(new SqlParameter(value));
+}
+}
+
+public boolean isNormalSQLQueryMode() {
+if (queryMode == QueryMode.NormalSQL) {
+

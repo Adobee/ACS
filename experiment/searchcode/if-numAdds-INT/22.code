@@ -1,0 +1,8 @@
+@Path(&quot;/add/{arg1}/{arg2}&quot;)
+public int add(@PathParam(&quot;arg1&quot;) int arg1, @PathParam(&quot;arg2&quot;) int arg2) {
+numAdds.inc();
+public int div(@PathParam(&quot;arg1&quot;) int arg1, @PathParam(&quot;arg2&quot;) int arg2) {
+numDivs.inc();
+if (arg2 == 0) {
+return (arg1 < 0) ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+

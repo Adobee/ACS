@@ -1,0 +1,7 @@
+public GaussNewtonEstimator(int maxCostEval,
+double convergence,
+double steadyStateThreshold) {
+RealMatrix a = MatrixUtils.createRealMatrix(parameters.length, parameters.length);
+for (int i = 0; i < measurements.length; ++i) {
+if (! measurements [i].isIgnored()) {
+

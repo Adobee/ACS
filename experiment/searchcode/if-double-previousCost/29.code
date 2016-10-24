@@ -1,0 +1,8 @@
+System.out.println(&quot;5 Distribution Test Cases&quot;);
+int M = 30;
+double previousCost = 0;
+for(int i = 1; i <= 10; i++){
+previousCost = i % 2 != 0 ? testDistribution.getOptimalTree().getCost() : previousCost;
+if(i % 2 == 0)
+System.out.println(&quot;Greedy path cost &quot; + (previousCost == testDistribution.getOptimalTree().getCost() ? &quot;is&quot; : &quot;is not&quot;) + &quot; optimal!&quot;);
+

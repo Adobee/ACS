@@ -1,0 +1,7 @@
+float relaxationFactor; // 0 < relaxationFactor < 2 (bigger = faster but higher inaccuracy)
+int maxIterations;
+
+public SuccessiveOverRelaxation(int dimension, float relaxationFactor, int maxIterations) {
+this.dimension = dimension;
+this.relaxationFactor = relaxationFactor;
+

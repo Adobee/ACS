@@ -1,0 +1,9 @@
+public Set<User> getFollowers(User user) {
+if (user.getFollowers() == null) {
+user.setFollowers(followDAO.getFollowers(user));
+return user.getFollowees();
+}
+
+public void follow(User user1, User user2) {
+if (user1.equals(user2)) {
+

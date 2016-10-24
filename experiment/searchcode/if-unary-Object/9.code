@@ -1,0 +1,11 @@
+@Override
+public Object clone()
+{
+return new ASimpleLeftUnaryExp(
+cloneNode(this._rightUnaryExp_));
+public void setRightUnaryExp(PRightUnaryExp node)
+{
+if(this._rightUnaryExp_ != null)
+{
+this._rightUnaryExp_.parent(null);
+

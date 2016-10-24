@@ -1,0 +1,13 @@
+wa1[j] = qtb[j];
+if (r[j][j] == 0.0 &amp;&amp; nsing == n) nsing = j;
+if (nsing < n) wa1[j] = 0.0;
+}
+for (int j = nsing-1; j >= 0; -- j)
+parl = 0.0;
+if (nsing == n)
+{
+for (int j = 0; j < n; ++ j)
+{
+int l = ipvt[j];
+wa1[j] = diag[l]*(wa2[l]/dxnorm);
+

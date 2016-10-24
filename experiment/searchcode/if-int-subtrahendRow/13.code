@@ -1,0 +1,7 @@
+* @return the row that the variable is basic in.  null if the column is not basic
+*/
+protected Integer getBasicRow(final int col) {
+for (int i = 0; i < getNumArtificialVariables(); i++) {
+int col = i + getArtificialVariableOffset();
+if (getBasicRow(col) == null) {
+

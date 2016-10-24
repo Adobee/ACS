@@ -1,0 +1,11 @@
+* Test if character is alphanumeric.
+*
+* @param ch Character to be tested
+* @return True if ch is alphanumeric
+*/
+public static boolean isalnum(int ch) {
+* Test if character is alphabetic.
+*
+* @param ch Character to be tested
+* @return True if ch is alphabetic
+

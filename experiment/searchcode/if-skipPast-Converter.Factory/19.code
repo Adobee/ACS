@@ -1,0 +1,6 @@
+* {@linkplain #converterFactories() factories} except {@code skipPast}.
+*
+* @throws IllegalArgumentException if no converter available for {@code type}.
+public <T> Converter<T, RequestBody> nextRequestBodyConverter(Converter.Factory skipPast,
+Type type, Annotation[] parameterAnnotations, Annotation[] methodAnnotations) {
+

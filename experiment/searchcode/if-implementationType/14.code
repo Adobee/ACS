@@ -1,0 +1,5 @@
+public class GateInProviderFactory implements ProviderFactory {
+public <T> Provider<? extends T> getProvider(final Class<T> implementationType) throws Exception {
+if (PortalRequest.class == implementationType) {
+return new Provider<T>() {
+

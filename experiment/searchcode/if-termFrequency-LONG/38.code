@@ -1,0 +1,10 @@
+public static FDMVoc read(Configuration conf, String query) {
+FDMVoc voc = new FDMVoc(conf, query);
+if (voc.df.existsFile()) {
+for (String line : voc.df.readLines()) {
+return voc;
+}
+
+HashMapInt<Long> termFrequency = new HashMapInt();
+HashMapInt<Long> orderedFrequency = new HashMapInt();
+

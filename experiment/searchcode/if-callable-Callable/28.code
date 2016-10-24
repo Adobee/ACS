@@ -1,0 +1,11 @@
+protected void onPreExecute() {
+if (callable != null &amp;&amp; callable.getDialogId() != 0) {
+callable.getActivity().showDialog(callable.getDialogId());
+removeDialog();
+callable = null;
+}
+
+@Override
+protected void onPostExecute(Result result) {
+if (callable != null) {
+

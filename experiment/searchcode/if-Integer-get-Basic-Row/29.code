@@ -1,0 +1,9 @@
+BlockVariable var = (BlockVariable) basicVar;
+int index = var.getIndex();
+if(var.isRow()){
+if(rowSums.containsKey(index)){
+int maxColIndex = -1;
+
+for (Integer key : rowSums.keySet()){
+if(rowSums.get(key) >= maxRowValue){
+

@@ -1,0 +1,13 @@
+public class SetAggregator<T> implements IAggregator<T, Set<T>> {
+
+private Set<T> result;
+
+public SetAggregator(boolean threadSafe) {
+if (threadSafe)
+result = Collections.synchronizedSet(new HashSet<T>());
+else
+result = new HashSet<T>();
+}
+
+public void add(T t) {
+

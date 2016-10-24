@@ -1,0 +1,7 @@
+DERObject object = derSequence.getObjectAt(i).getDERObject();
+if (object instanceof DERTaggedObject) {
+TAG tag = TAG.getTag(derTaggedObject.getTagNo());
+switch (tag) {
+case signerAlgorithmConstraints:
+this.signerAlgorithmConstraints = new AlgorithmConstraints();
+

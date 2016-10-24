@@ -1,0 +1,8 @@
+public void addToVocabulary(String text, long df, int start, int end) {
+if(MAXDF < df ) MAXDF =(int) df;
+VocabularyEntry entry = new VocabularyEntry(df, start, end);
+String firstLine = file.readLine();
+numOfDocs = Integer.parseInt(firstLine);
+
+for (String line; (line = file.readLine()) != null;) {
+

@@ -1,0 +1,10 @@
+private double uBound;
+private double lBound;
+
+public boolean within(double n, double upperBound){
+return within(0, n, upperBound);
+}
+
+public boolean withinI(double n, double upperBound){
+return withinI(0, n, upperBound);
+

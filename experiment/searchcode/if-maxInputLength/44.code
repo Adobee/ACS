@@ -1,0 +1,8 @@
+public Builder maxInputLength(int maxInputLength) {
+if (maxInputLength <= 0) {
+throw new IllegalArgumentException(Fields.MAX_INPUT_LENGTH.getPreferredName() + &quot; must be > 0 but was [&quot; + maxInputLength + &quot;]&quot;);
+builder.field(Fields.MAX_INPUT_LENGTH.getPreferredName(), this.maxInputLength);
+multiFields.toXContent(builder, params);
+
+if(fieldType().requiresContext()) {
+

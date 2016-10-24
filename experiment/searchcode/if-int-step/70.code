@@ -1,0 +1,12 @@
+for (int i = 0; i < n; i++) {
+used[i][i] = true;
+}
+int remaining = n;
+int step = 1;
+while (true) {
+if (remaining == 1) {
+return new int[]{-1};
+}
+if (k == 1) {
+for (int j = 1; j < remaining; j++) {
+

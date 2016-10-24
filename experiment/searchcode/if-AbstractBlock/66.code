@@ -1,0 +1,7 @@
+@SuppressWarnings({&quot;UnusedDeclaration&quot;})
+public abstract class Function10 extends AbstractBlock implements IFunction10 {
+
+public Object invokeWithArgs(Object[] args) {
+if(args.length != 10) {
+throw new IllegalArgumentException(&quot;You must pass 10 args to this block, but you passed&quot; + args.length);
+

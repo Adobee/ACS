@@ -1,0 +1,9 @@
+public LocaledToolBar(@NotNull String nameKey) {
+this(nameKey, HORIZONTAL);
+super.setName(LocaledString.valueOf(name));
+}
+
+@Override
+public void setName(@Nullable String nameKey) {
+if (LocaleUtils.isEmpty(nameKey)) {
+

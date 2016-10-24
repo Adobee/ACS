@@ -1,0 +1,11 @@
+public ComplexNumber divideComplex (int x, int y)
+{
+return new ComplexNumber (((int) ((this.r*x+this.i*y)/(Math.pow(x,2)+Math.pow(y,2)))), ((int) ((this.i*x-this.r*y)/(Math.pow(x,2)+Math.pow(y,2)))));
+}
+
+public ComplexNumber divideComplex (ComplexNumber cnumb)
+{
+return divideComplex (cnumb.r,cnumb.i);
+}
+}
+

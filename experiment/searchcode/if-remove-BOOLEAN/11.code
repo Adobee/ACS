@@ -1,0 +1,14 @@
+public class RemoveEntity implements Runnable {
+
+Entity removeMe;
+boolean explode;
+
+public RemoveEntity(Entity victim){
+public RemoveEntity(Entity victim, boolean explode){
+this.removeMe = victim;
+this.explode  = explode;
+}
+
+@Override
+public void run() {
+

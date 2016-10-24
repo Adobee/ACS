@@ -1,0 +1,11 @@
+Semaphore sem = new Semaphore(100, true);
+
+public boolean addResource(T t) throws InterruptedException{
+sem.acquire();
+boolean added = false;
+try{
+added = set.add(t);
+return added;
+}finally{
+if(!added){
+

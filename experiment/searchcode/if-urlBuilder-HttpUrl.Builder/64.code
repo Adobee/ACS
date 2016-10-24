@@ -1,0 +1,7 @@
+HttpUrl.Builder urlBuilder = HttpUrl.parse(&quot;https://maps.googleapis.com&quot;).newBuilder();
+urlBuilder.addPathSegment(&quot;maps&quot;)
+.addQueryParameter(API_KEY, &quot;AIzaSyDJM5AGR7UchF-LuIPcwFtIWLoSgMA2NKE&quot;);
+
+String okUrl = urlBuilder.build().toString();
+Request request = new Request.Builder()
+

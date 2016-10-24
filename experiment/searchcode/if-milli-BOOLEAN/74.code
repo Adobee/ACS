@@ -1,0 +1,8 @@
+public static void delay(final Integer timeoutInMilliSeconds) {
+try {
+Thread.sleep(timeoutInMilliSeconds);
+public static boolean waitForCondition(Callable<Boolean> condition, final int sleepInMilliSeconds) {
+return waitForCondition(condition, sleepInMilliSeconds, WAITER_HELPER_TIMEOUT);
+}
+}
+

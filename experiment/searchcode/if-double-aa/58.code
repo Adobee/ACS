@@ -1,0 +1,7 @@
+void lu_solution(double a[][],double u[][],double l[][]){	//ＬＵ分解のメゾット
+int n = a.length;
+double[][] aa = new double[n][n];
+for(int k=0;k<n;k++){
+for(int p=k+1;p<aa.length;p++){
+aa[p][k] = a[p][k]/a[k][k];
+

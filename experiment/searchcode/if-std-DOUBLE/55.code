@@ -1,0 +1,10 @@
+double random = StdRandom.uniform(l, r);
+//double random = StdRandom.gaussian(a[N / 2 - 1], StdStats.stddev(a));
+public static int discrete(double[] a, double random)
+{
+for (int i = 0; i < a.length; i++)
+if (random < a[i]) return i;
+return a.length - 1;
+}
+}
+

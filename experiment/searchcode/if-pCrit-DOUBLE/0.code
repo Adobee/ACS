@@ -1,0 +1,13 @@
+for (Node v : nodes)
+{
+if (v.dv - 1 < LAMBDA * (this.VPrime-1) &amp;&amp; !w.adj.contains(v))
+{
+pcrit.add(v);
+}
+}
+return pcrit;
+}
+public double rVPrimeW (Node w)
+{
+return EPrime + w.dv - LAMBDA * VPrime * (VPrime-1) / 2.0;
+

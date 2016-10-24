@@ -1,0 +1,12 @@
+this.missingValue = missingValue;
+return this;
+}
+
+
+
+public DataSet build(){
+if (!valid()){
+DataSet dataSet;
+if (dense){
+dataSet = new DenseDataSet(numDataPoints,numFeatures,missingValue);
+

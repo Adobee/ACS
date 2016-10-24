@@ -1,0 +1,7 @@
+public TLongFloatHashMap(TLongFloatMap map, int numProcs) {
+super(map.size());
+if (map instanceof TLongFloatHashMap) {
+/** {@inheritDoc} */
+public boolean equalsPar (Object other, int numProcs)	{
+if (!((other instanceof TLongFloatMap)||(other instanceof Map<?,?>)))	{
+

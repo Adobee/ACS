@@ -1,0 +1,7 @@
+DefaultHandler defaultHandler = this.getCurrentHandler();
+if (defaultHandler == this) return;
+defaultHandler.characters(arrc, n2, n3);
+DefaultHandler defaultHandler = this;
+if (this.subHandlers == null) return defaultHandler;
+if (this.subHandlers.size() <= 0) return defaultHandler;
+

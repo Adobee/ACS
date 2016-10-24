@@ -1,0 +1,8 @@
+public VideoSize(long theByteCount) {
+byteCount = theByteCount;
+if(byteCount - oneGB >= 0) {
+value = byteCount / (double) oneGB;
+unit = GB;
+} else if (byteCount - oneMB >= 0) {
+value = byteCount / (double) oneMB;
+

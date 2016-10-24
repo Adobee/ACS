@@ -1,0 +1,7 @@
+static private final Logger log = LoggerFactory.getLogger(NinjaVertxTest.class);
+
+static int randomPort = StandaloneHelper.findAvailablePort(8081, 9000);
+NinjaVertx standalone = new NinjaVertx()
+.externalConfigurationPath(&quot;conf/vertx.minimal.conf&quot;)
+.port(randomPort);
+

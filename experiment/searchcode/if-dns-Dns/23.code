@@ -1,0 +1,8 @@
+public static void setNameMap(String name, String real) {
+synchronized (sync) {
+if (dnsMap == null) dnsMap = new ConcurrentHashMap(50, 48, 1024);
+synchronized (sync) {
+if (dnsMap != null) {
+dnsMap.remove(name);
+if (dnsMap.size() == 0) {
+

@@ -1,0 +1,12 @@
+int j = 0; for (int k = this.ihB.size(); j < k; j++) {
+if (((axU)this.ihB.get(j)).aJE()) {
+this.ihF += 1;
+if (!this.ihE) {
+return;
+}
+
+int i = this.ihC.size();
+int j;
+if (i > 0) {
+for (j = 0; j < i; j++) {
+

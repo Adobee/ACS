@@ -1,0 +1,14 @@
+package Kwantyle;
+
+import java.util.Arrays;
+
+public class Q1 {
+
+public static double quartile1(double[] tab) {
+double q1 = 0;
+double positionq1;
+int n = tab.length;
+
+Arrays.sort(tab);
+if (tab == null || n == 0) {
+

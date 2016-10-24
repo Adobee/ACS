@@ -1,0 +1,7 @@
+String line = iniFileIterator.next();
+if (line.length() != 0 &amp;&amp; !line.startsWith(&quot;#&quot;)) {
+String[] columns = line.split(&quot;=&quot;);
+String variable = columns[0].trim();
+/** Set paths */
+if(variable.equals(&quot;MRCONSO&quot;)) mrconsoPath = columns[1].trim();
+

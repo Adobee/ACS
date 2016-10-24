@@ -1,0 +1,12 @@
+public void generate(final Transaction transaction, final boolean includeLength)
+{
+ByteArrayOutputStream transBaos;
+if (includeLength)
+{
+// We need to prepend the length so write this to a temporary baos
+transBaos.write(Utils.longToUint32LE(transaction.getLockTime()));
+
+if (includeLength)
+{
+Utils.writeBytesWithLength(this.baos, transBaos.toByteArray());
+

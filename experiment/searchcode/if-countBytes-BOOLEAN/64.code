@@ -1,0 +1,8 @@
+private long writeOrCountBytes(OutputStream sink, boolean countBytes) {
+long byteCount = 0L;
+
+BufferedWriter buffer;
+CountOutputStream bos = null;
+OutputStreamWriter outputStreamWriter;
+if (countBytes) {
+

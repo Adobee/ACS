@@ -1,0 +1,12 @@
+package generator.jim.composite;
+
+import java.util.*;
+
+public abstract class AbstractBlock extends AbstractComponent {
+if(c instanceof AbstractInline) {
+continue;
+}
+if(c instanceof AbstractBlock) {
+pointer++;
+if(pointer == index) {
+

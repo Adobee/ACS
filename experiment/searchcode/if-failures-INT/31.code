@@ -1,0 +1,15 @@
+public boolean valid() {
+return valid;
+}
+
+public List<String> allFailures() {
+if (failures().isEmpty() &amp;&amp; indicesFailures().isEmpty()) {
+allFailures.add(&quot;Index [&quot; + entry.getKey() + &quot;]: &quot; + failure);
+}
+}
+return allFailures;
+}
+
+public List<String> failures() {
+if (failures == null) {
+

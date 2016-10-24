@@ -1,0 +1,6 @@
+* Stores information about all corrupt blocks in the File System. A Block is
+* considered corrupt only if all of its replicas are corrupt. While reporting
+* @return true if replica is corrupt, false if does not exists in this map
+*/
+boolean isReplicaCorrupt(Block blk, DatanodeDescriptor node) {
+

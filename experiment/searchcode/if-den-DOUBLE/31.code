@@ -1,0 +1,8 @@
+public void reduce() {
+if (utils.isPrime((int) num) || utils.isPrime((int) den)) {
+return;
+for (int i : numFacts) {
+if (denFacts.contains(i)) {
+denFacts.remove((Object) i);
+sharedFacts.add(i);
+

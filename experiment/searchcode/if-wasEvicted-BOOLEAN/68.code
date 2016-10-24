@@ -1,0 +1,21 @@
+* {@link Map#remove}, {@link ConcurrentMap#remove}, or {@link Iterator#remove}.
+*/
+
+EXPLICIT {
+@Override
+boolean wasEvicted() {
+return false;
+}
+},
+
+/**
+* The entry itself was not actually removed, but its value was replaced by the user. This can
+@Override
+boolean wasEvicted() {
+return true;
+}
+};
+
+/**
+* Returns {@code true} if there was an automatic removal due to eviction (the cause is neither
+

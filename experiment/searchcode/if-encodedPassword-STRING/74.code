@@ -1,0 +1,13 @@
+StringBuilder encodedPassword = new StringBuilder(digest.length * 2);
+for (byte b : digest) {
+byte left = (byte) ((b &amp; 0xf0) >> 4);
+.append(getSymbol(right));
+
+}
+
+return encodedPassword.toString();
+}
+
+private char getSymbol(byte b) {
+if (b >= 0 &amp;&amp; b <= 9) {
+

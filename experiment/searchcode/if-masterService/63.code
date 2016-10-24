@@ -1,0 +1,9 @@
+import com.gls.framework.master.service.MasterService;
+
+@Controller
+@RequestMapping(&quot;/master&quot;)
+public class MasterController extends BaseController {
+MasterUser user = masterService.getLoginUser(email, password);
+if (user == null) {
+return &quot;master/login&quot;;
+

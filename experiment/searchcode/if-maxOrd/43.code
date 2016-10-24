@@ -1,0 +1,9 @@
+public static CellCoordinates convertIndexToCoordinates(int i, int width, int height) {
+if (i == 0) {
+return new CellCoordinates(0, 0);
+}
+final int x = i % width;
+int maxAbs = x == gridWidth - 1 ? x : x + 1;
+int minOrd = y < 1 ? 0 : y - 1;
+int maxOrd = y == gridHeight - 1 ? y : y + 1;
+

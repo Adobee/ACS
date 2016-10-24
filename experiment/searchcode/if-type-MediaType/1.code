@@ -1,0 +1,13 @@
+package org.bongiorno.ws.core.client.headers;
+
+import org.springframework.http.MediaType;
+
+import java.util.function.Function;
+public MediaType apply(javax.ws.rs.core.MediaType mediaType) {
+if(mediaType == null ){
+return null;
+}
+return MediaType.parseMediaType(mediaType.toString());
+}
+}
+

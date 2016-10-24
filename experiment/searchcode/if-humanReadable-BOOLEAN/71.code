@@ -1,0 +1,7 @@
+private String getPrettySize(long size) {
+if (humanReadable()) {
+return Size.getReadableSize(size, &quot;#0.0&quot;);
+private boolean humanReadable() {
+if (humanReadable == null) {
+humanReadable = hasOption(&#39;h&#39;);
+

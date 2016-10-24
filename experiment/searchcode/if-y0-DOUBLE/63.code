@@ -1,0 +1,13 @@
+// TODO Auto-generated method stub
+
+Scanner input = new Scanner (System.in);
+
+double x, y, x0, y0, R;
+*  x1 = x0 + sqrt(R^2 - y0^2)
+*  x1 = x0 - sqrt(R^2 - y0^2)
+*/
+y=0;
+
+if((R*R - y0*y0) > 0){
+x1 = x0 + Math.sqrt(R*R - y0*y0);
+

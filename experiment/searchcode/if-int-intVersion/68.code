@@ -1,0 +1,6 @@
+private static final String strState;//=toStringState(state);
+private static final int intVersion;
+private static final int fullVersion;
+StringUtil.addZeros(patches,3);
+intVersion=(major*1000000)+(minor*10000)+(releases*100)+patches;
+

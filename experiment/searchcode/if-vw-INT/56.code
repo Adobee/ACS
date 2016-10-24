@@ -1,0 +1,8 @@
+private static final int TARGET_CLOWNS_AMOUNT = 20;
+private static int clownsCount = 0;
+private static final Volkswagen vw = new Volkswagen();
+@Override
+public int hashCode() {
+if (++clownsCount < TARGET_CLOWNS_AMOUNT) {
+vw.add(new RecursiveClown());
+

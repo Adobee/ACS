@@ -1,0 +1,11 @@
+import com.datumbox.framework.core.statistics.distributions.ContinuousDistributions;
+
+/**
+* One-sample Parametric Chisquare test.
+*
+* @author Vasilis Vryniotis <bbriniotis@datumbox.com>
+boolean rejectH0=false;
+
+double a=aLevel;
+if(is_twoTailed) { //if to tailed test then split the statistical significance in half
+

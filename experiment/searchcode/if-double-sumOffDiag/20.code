@@ -1,0 +1,6 @@
+final double mji = matrix.getEntry(j, i);
+if (Math.abs(mij - mji) > (Math.max(Math.abs(mij), Math.abs(mji)) * eps)) {
+final double p     = q0 * q1 - e12;
+final double delta = s * s - 4 * p;
+if (delta < 0) {
+

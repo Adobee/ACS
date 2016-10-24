@@ -1,0 +1,11 @@
+public void addListener(GPXReaderListener listener) {
+
+if(listener == null)
+return;
+
+if(mListener == null)
+mListener = new ArrayList<>();
+
+if(!mListener.contains(listener))
+mListener.add(listener);
+

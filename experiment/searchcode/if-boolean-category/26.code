@@ -1,0 +1,8 @@
+public void					createCategory(Category cat) {
+this.categoryDao.saveCategory(cat);
+}
+
+public Boolean				updateCategory(Category cat, CategoryRO category) {
+boolean modified = false;
+if (category.getTitle() != null &amp;&amp; !category.getTitle().trim().isEmpty()) {
+

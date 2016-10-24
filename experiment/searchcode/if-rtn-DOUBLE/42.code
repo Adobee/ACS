@@ -1,0 +1,19 @@
+n.setData(data);
+
+n.setNext(top);
+count++;
+top = n;
+}
+
+@Override
+public double pop() {
+double rtn = top.getData();
+pop();
+}
+}
+
+public String toString() {
+String rtn = &quot;&quot;;
+if (count == 0) {
+rtn = &quot;<Empty>&quot;;
+

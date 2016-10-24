@@ -1,0 +1,7 @@
+while(queue.iterator().hasNext()){
+CachedObject<T> next = queue.iterator().next();
+if(next.getCachedObject().getId() == id){
+public void cacheObject(T object){
+queue.add(new CachedObject<T>(object));
+if(queue.size()>10){
+

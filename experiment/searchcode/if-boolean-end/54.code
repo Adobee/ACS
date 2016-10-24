@@ -1,0 +1,14 @@
+int end = start + word.length();
+
+if (end>s.length()) continue;
+
+if (t[end]) continue;
+
+if (s.substring(start, end).equals(word)) t[end] = true;
+}
+}
+
+return t[s.length()];
+}
+}
+

@@ -1,0 +1,6 @@
+@Deprecated
+static final boolean PREFER_V6 = Boolean.parseBoolean(System.getProperty(&quot;java.net.preferIPv6Addresses&quot;, &quot;false&quot;));
+/** Sorts an address by preference. This way code like publishing can just pick the first one */
+static int sortKey(InetAddress address, boolean prefer_v6) {
+int key = address.getAddress().length;
+

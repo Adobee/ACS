@@ -1,0 +1,13 @@
+public class HourSecond implements Comparable<HourSecond> {
+private int seconds;
+
+public HourSecond(int seconds) {
+this.seconds = seconds;
+}
+
+@Override
+public String toString() {
+if (seconds == Integer.MAX_VALUE)
+return &quot;--&quot;;
+return String.format(&quot;%d:%02d&quot;, seconds / 60, seconds % 60);
+

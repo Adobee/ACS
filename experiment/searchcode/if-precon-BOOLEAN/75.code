@@ -1,0 +1,11 @@
+import com.jcwhatever.nucleus.utils.PreCon;
+import com.jcwhatever.nucleus.utils.observer.ISubscriber;
+import com.jcwhatever.nucleus.utils.observer.script.IScriptUpdateSubscriber;
+private final SubscriberArrayDeque<ISubscriber> _subscribers = new SubscriberArrayDeque<>(20);
+private boolean _isDisposed;
+
+
+@Override
+public boolean isDisposed() {
+return _isDisposed;
+

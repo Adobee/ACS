@@ -1,0 +1,8 @@
+private static final String TAG = RemoteNode.class.getSimpleName();
+
+private final List<NodeRange> rangePending = new ArrayList<NodeRange>();
+private final List<NodeRange> rangeHistory = new ArrayList<NodeRange>();
+/** Get previous (or current) range */
+public synchronized NodeRange getRange(int index) {
+if (rangeHistory.size() > 0 &amp;&amp; rangeHistory.size() < index) {
+

@@ -1,0 +1,7 @@
+headers.add(&quot;Cache-Control&quot;, &quot;MIN-FRESH=80&quot;);
+headers.add(&quot;Cache-Control&quot;, &quot;ONLY-IF-CACHED&quot;);
+RequestHeaders parsedHeaders = new RequestHeaders(uri, headers);
+assertEquals(70, parsedHeaders.getMaxStaleSeconds());
+assertEquals(80, parsedHeaders.getMinFreshSeconds());
+assertTrue(parsedHeaders.isOnlyIfCached());
+

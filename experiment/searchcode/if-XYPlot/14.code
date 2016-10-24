@@ -1,0 +1,11 @@
+public class DatasetXYPlot {
+
+protected String seriesname;
+protected String color;
+protected String alpha;
+this.sets = sets;
+}
+public void addSet(SetXYPlotElement set){
+if(this.sets == null){
+this.sets = new LinkedList<SetXYPlotElement>();
+

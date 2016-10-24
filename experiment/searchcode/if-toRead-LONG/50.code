@@ -1,0 +1,7 @@
+@Override
+public byte get(long pos) throws IOException {
+if (bitmap.isAllocated(pos, 1)) {
+int toRead;
+while (length > 0) {
+if (pos % bitmap.getBitmapChunckSize() == 0) {
+

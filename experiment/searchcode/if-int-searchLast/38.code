@@ -1,0 +1,9 @@
+int count_check = 0;
+
+for(int i = 0; i < nums.size(); i++)
+for(Numero n: nums.get(i))
+if(n.isChecked())
+return &quot;win CARTON PLEIN sur le carton&quot; + carton.getName() + &quot; !!&quot;;
+else if(count_check == 14)
+return &quot;Il manque le numero &quot; + this.SearchLast(nums).getNum() + &quot; avant le CARTON PLEIN sur le carton &quot; + carton.getName() + &quot; !!&quot;;
+

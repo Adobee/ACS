@@ -1,0 +1,9 @@
+* @throws AggregateException
+*/
+public Object process(Object oldValue, Object currentValue) throws AggregateException {
+if (currentValue == null) {
+return oldValue;
+}
+
+Class<?> type = currentValue.getClass();
+

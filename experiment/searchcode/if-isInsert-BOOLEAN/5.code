@@ -1,0 +1,13 @@
+private boolean isInsert;
+
+public EmployeePreparedStatementSetter(Employee a, boolean isInsert) {
+this.employee = a;
+arg0.setDate(6,ResultSetUtil.converttoSQLDate(employee.getCreatedDate()));
+arg0.setString(7, employee.getDescription());
+if (!isInsert) {
+arg0.setInt(8, employee.getId());
+}
+
+}
+}
+

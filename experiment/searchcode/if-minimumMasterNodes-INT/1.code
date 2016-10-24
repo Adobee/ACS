@@ -1,0 +1,11 @@
+private final NodeComparator nodeComparator = new NodeComparator();
+
+private volatile int minimumMasterNodes;
+
+public ElectMasterService(Settings settings) {
+public boolean hasEnoughMasterNodes(Iterable<DiscoveryNode> nodes) {
+if (minimumMasterNodes < 1) {
+return true;
+}
+int count = 0;
+

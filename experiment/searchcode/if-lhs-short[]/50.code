@@ -1,0 +1,8 @@
+public static TupleFunction function(String oper, TupleFunction lhs, TupleFunction rhs) throws PlannerException {
+Class type = TypeChecker.type(lhs.returnType().getSimpleName());
+if (Double.class.isAssignableFrom(type)) {
+return new StringEval(operators.get(oper), lhs, rhs);
+}
+if (Short.class.isAssignableFrom(type)) {
+return new ShortEval(operators.get(oper), lhs, rhs);
+

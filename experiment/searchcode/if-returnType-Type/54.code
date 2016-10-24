@@ -1,0 +1,10 @@
+import java.util.concurrent.TimeUnit;
+
+public class Task implements Callable<ReturnType> {
+
+private InputType inputType;
+public ReturnType call() throws Exception {
+ReturnType returnType = new ReturnType();
+try {
+if (cancel) {
+

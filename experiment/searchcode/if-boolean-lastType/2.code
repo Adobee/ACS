@@ -1,0 +1,10 @@
+public Component getTableCellEditorComponent(JTable jtable, Object value, boolean isSelected, int row, int col) {
+if (value!=null) {
+input.setText(value.toString());
+return input;
+}
+
+@Override
+public Object getCellEditorValue() {
+if (lastType==null) {
+

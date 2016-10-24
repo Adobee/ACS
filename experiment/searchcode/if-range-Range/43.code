@@ -1,0 +1,11 @@
+RangeReading r1 = null;
+RangeReading r2 = null;
+for(RangeReading r : this)
+{
+if(r1 == null || r.getRange() >= r1.getRange())
+{
+r2 = r1;
+r1 = r;
+}
+else if(r2 == null || r.getRange() >= r2.getRange())
+

@@ -1,0 +1,13 @@
+return em.find(Goal.class, id);
+}
+
+@Transactional
+public Goal RemoveGoal(Long id) {
+Goal goal = getGoal(id);
+if (goal != null)
+em.remove(goal);
+public Goal UpdateGoal(long id, Goal goal) {
+Goal result = getGoal(id);
+if (result == null) {
+System.out.println(&quot;creating goal...&quot;);
+

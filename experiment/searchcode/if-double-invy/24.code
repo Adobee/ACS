@@ -1,0 +1,13 @@
+public GateHandle getClosestHandle(QPointF pos, double cutoff)
+{
+if(!tool.allowHandle())
+return null;
+GateHandle ch=null;
+double dx=pos.x()-h.getX();
+double dy=pos.y()-h.getY();
+double d2=dx*dx + dy*dy;
+if(d2<cd)
+{
+cd=d2;
+ch=h;
+

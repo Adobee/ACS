@@ -1,0 +1,8 @@
+public int uniquePathsWithObstacles(int[][] obstacleGrid) {
+int m = obstacleGrid.length;
+int n = obstacleGrid[0].length;
+int[] pre = new int[n];
+int[] cur = new int[n];
+for (int i = 0; i < n; i++) {
+if (obstacleGrid[0][i] == 0) {
+

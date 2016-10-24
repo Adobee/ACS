@@ -1,0 +1,9 @@
+public static ConnFourListener getConnFourListener(String listenerType) {
+ConnFourModel game = ConnFourGameSingletonFactory.getGame();
+if (listenerType == null) {
+return null;
+}
+
+if (listenerType == &quot;gui&quot;) {
+ConnFourListener newListener = new ConnFourGUI.Builder().addModel(game).build();
+

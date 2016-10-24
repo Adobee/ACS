@@ -1,0 +1,12 @@
+public Vector3 rotate(Quaternion q)
+{
+if(q.axis.x == 0 &amp;&amp; q.axis.y == 0 &amp;&amp; q.axis.z == 0) return new Vector3(1,0,0);
+Vector3 axis = q.axis.normalize();
+return new Vector3(x,y,z);
+}
+
+public boolean nanGuard()
+{
+if(Float.isNaN(x)) return true;
+if(Float.isNaN(y)) return true;
+

@@ -1,0 +1,7 @@
+* @return double
+*/
+public static double add(double dou, double... dous) {
+BigDecimal b1 = new BigDecimal(Double.toString(dou));
+for (double d : dous) {
+b1 = b1.add(new BigDecimal(Double.toString(d)));
+

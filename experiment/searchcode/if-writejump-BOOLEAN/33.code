@@ -1,0 +1,10 @@
+this.action = this.action.foldConstants();
+}
+if (this.condition != null)
+{
+if (this.condition.valueTag() == BOOLEAN &amp;&amp; !this.condition.booleanValue())
+String actionPrefix = Formatting.getIndent(&quot;repeat.indent&quot;, prefix);
+if (Formatting.getBoolean(&quot;repeat.newline_after&quot;))
+{
+buffer.append(&#39;\n&#39;).append(actionPrefix);
+

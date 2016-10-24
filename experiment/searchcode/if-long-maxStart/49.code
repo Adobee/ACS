@@ -1,0 +1,8 @@
+public List<Integer> sol(List<Integer> a){
+int  currentStart=0, maxStart=0, currentEnd=0, maxEnd=0;
+long currentMax = a.get(0), max = currentMax;
+maxEnd = currentEnd;
+}
+else if(currentMax == max){
+if((maxEnd - maxStart) < (currentEnd - currentStart)){
+

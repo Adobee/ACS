@@ -1,0 +1,14 @@
+mapSwitchPort.put(sw, port);
+return true;
+}
+
+@Override
+public boolean allocLambda(int port, int lambda) {
+if (port < 0 || lambda <= 0)
+return lambdaSet.add(lambda);
+}
+
+@Override
+public boolean freeLambda(int port, int lambda) {
+if (port < 0 || lambda <= 0)
+

@@ -1,0 +1,12 @@
+private volatile Boolean expectContinue;
+
+private volatile Boolean webDav;
+
+private final ConcurrentMap<HttpHost, AuthSchemePool> authSchemePools;
+public boolean isExpectContinue()
+{
+if ( expectContinue == null )
+{
+expectContinue =
+!Boolean.FALSE.equals( ( global != null ) ? global.getExpectContinue( expectContinueKey ) : null );
+

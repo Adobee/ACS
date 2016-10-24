@@ -1,0 +1,11 @@
+String digits = num.toString();
+int numDigits = digits.length();
+for(int i = 0; i <= numDigits/2; ++i){
+if(digits.charAt(i) != digits.charAt(numDigits - 1 - i))
+return false;
+}
+return true;
+}
+
+public static void main(String[] args){
+

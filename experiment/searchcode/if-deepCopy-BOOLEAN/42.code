@@ -1,0 +1,8 @@
+public boolean equals(Object x, Object y) throws HibernateException {
+if (x == y) {
+return true;
+Object deepCopy = deepCopy(value);
+
+if (!(deepCopy instanceof Serializable)) {
+throw new SerializationException(
+

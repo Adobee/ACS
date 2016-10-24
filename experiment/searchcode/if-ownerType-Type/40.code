@@ -1,0 +1,8 @@
+int result = rawType.hashCode() ^ Arrays.hashCode(actualTypeArguments);
+if (ownerType != null) {
+result ^= ownerType.hashCode();
+String clazz = rawType.getName();
+
+if (ownerType != null) {
+sb.append(GenericTypeReflector.getTypeName(ownerType)).append(&#39;.&#39;);
+

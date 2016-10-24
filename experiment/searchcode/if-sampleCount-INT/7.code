@@ -1,0 +1,10 @@
+public static int getMaxSampleCount(MultichannelSampleSource sampleSource) {
+
+int maxSampleCount = 0;
+int sampleCount = 0;
+
+int channelCount = sampleSource.getChannelCount();
+
+for (int i=0; i<channelCount; i++) {
+sampleCount = sampleSource.getSampleCount(i);
+

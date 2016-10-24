@@ -1,0 +1,14 @@
+import org.junit.Test;
+
+
+public class ComposedServiceTest {
+
+private FakeComposedService masterService;
+
+
+@Before
+serviceRegistry.startRegistry();
+
+// Check if connected
+FakeComposedService masterService = serviceRegistry.getService(FakeComposedService.class);
+

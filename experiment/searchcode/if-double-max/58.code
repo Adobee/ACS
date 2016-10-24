@@ -1,0 +1,11 @@
+System.out.println(max(a));
+System.out.println(min(a));
+System.out.println(avg(a));
+}
+static double max(double a[]){
+double max = Integer.MIN_VALUE;
+
+for(double i : a){
+if(max < i){
+max = i;
+

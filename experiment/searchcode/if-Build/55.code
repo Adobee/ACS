@@ -1,0 +1,6 @@
+for (BuildStatus status : statuses) {
+if (FAILURE.equals(status.getBuildResult())) {
+overallBuildResult = FAILURE;
+break;
+} else if (ABORTED.equals(status.getBuildResult()) &amp;&amp; !overallBuildResult.equals(FAILURE)) {
+

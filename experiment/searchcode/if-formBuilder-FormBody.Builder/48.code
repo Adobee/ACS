@@ -1,0 +1,6 @@
+getClient.setReadTimeout(30, TimeUnit.SECONDS);
+Request.Builder builder = new Builder();
+if (isProxy) {
+RequestBody formBody = formBuilder.build();
+builder.post(formBody);
+

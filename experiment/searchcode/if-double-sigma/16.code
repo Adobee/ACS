@@ -1,0 +1,9 @@
+@Override
+public double apply(double sigma, double productivity) {
+
+/*if(productivity < 0){
+sigma = sigma * 1.5;
+System.out.println(&quot;Mejoro&quot;);
+}else if(productivity > 0){
+sigma = Math.pow(1.5, -1/4) * sigma;
+

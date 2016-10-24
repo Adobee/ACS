@@ -1,0 +1,10 @@
+static double probUnchosen(int i) {
+if (i < 0) return 1;
+return (unchosen - i) / (total - i);
+}
+
+static double probUnchosenAccum(int i) {
+double accum = 1;
+for (int k = i; k >= 0; k--) {
+accum *= probUnchosen(k);
+

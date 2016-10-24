@@ -1,0 +1,8 @@
+Integer minutesTravaillees = 0;
+
+if (toAffectationAnnuelle().isCalculAutomatique()) {
+minutesTravaillees = super.minutesTravaillees();
+} else {
+int minutesDues 	= minutesDues().intValue();
+int minutesConges	= toAffectationAnnuelle().toMouvementDroitsCongesNonAutomatiques().mouvementMinutes().intValue();
+

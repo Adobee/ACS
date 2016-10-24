@@ -1,0 +1,10 @@
+// test multiply
+Fraction f = new Fraction(1,5);
+Fraction g = new Fraction(1,3);
+Fraction h = new Fraction(3,5);
+if (!f.equals(g.multiply(h))) System.out.println(&quot;Multiply failed&quot;);
+Fraction a=new Fraction(1,2);
+Fraction b=new Fraction(1,4);
+Fraction c=new Fraction(2,8);
+if (!a.equals(b.add(c))) System.out.println(&quot;Add failed&quot;);
+

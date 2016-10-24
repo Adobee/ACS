@@ -1,0 +1,10 @@
+MLTrain train = trainFactory.create(method, dataset, MLTrainFactory.TYPE_SVM,
+&quot;&quot;);
+return train;
+}
+
+private static MLRegression train(EncogModel model, int iterations, boolean shuffle) {
+MLTrain train = createTrainer(model, method, model.getTrainingDataset());
+
+if (train.getImplementationType() == TrainingImplementationType.Iterative) {
+

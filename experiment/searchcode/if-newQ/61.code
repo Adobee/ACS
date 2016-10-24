@@ -1,0 +1,7 @@
+/** Creates a TimeInterval with the units and value.
+* @throws IllegalArgumentException if the units are not time.
+*/
+public TimeInterval(double f, UnitImpl the_unit) {
+super(f, the_unit);
+if ( ! the_unit.isConvertableTo(UnitImpl.TIME)) {
+

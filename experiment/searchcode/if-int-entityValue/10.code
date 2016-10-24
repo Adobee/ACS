@@ -1,0 +1,8 @@
+* @author John McCrae, National Institute of Informatics
+*/
+public class BeginTag implements TypeExpr {
+final String entityType, entityValue;
+BeginTagToken btt = (BeginTagToken)token;
+if(btt.type.equals(entityType) &amp;&amp; btt.val.equals(entityValue))
+return next;
+

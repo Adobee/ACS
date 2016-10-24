@@ -1,0 +1,9 @@
+return (depth(root) >= 0);
+}
+
+public int depth(TreeNode node) {
+if (node == null) return 0;
+int leftDepth = depth(node.left);
+int rightDepth = depth(node.right);
+if (leftDepth < 0 || rightDepth < 0) return -1;
+

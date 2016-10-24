@@ -1,0 +1,9 @@
+public void drawRangeMarker(Graphics2D g2, XYPlot plot,
+ValueAxis rangeAxis, Marker marker, Rectangle2D dataArea) {
+Range range = rangeAxis.getRange();
+if (!(range.intersects(start, end))) {
+return;
+}
+
+double start2d = rangeAxis.valueToJava2D(start, dataArea, plot
+

@@ -1,0 +1,10 @@
+for (int n = 0; n < a.length - 1; n++)
+{
+int minPos = minimumPosition(a, n);
+
+if (minPos != n)
+public static int minimumPosition(int[] a, int from)
+{
+int minPos = from;
+for (int i = from + 1; i < a.length; i++)
+

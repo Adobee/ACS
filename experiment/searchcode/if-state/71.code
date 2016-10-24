@@ -1,0 +1,10 @@
+public void update() {
+if (currentState != null) {
+currentState.update(this);
+}
+}
+
+public void setState(State state) {
+if (currentState != null) {
+currentState.exitState(this);
+

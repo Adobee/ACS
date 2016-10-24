@@ -1,0 +1,12 @@
+public void pan(int axis, float pan) {
+if (axis == 0) {
+modifyPan(0, pan);
+modifyPan(1, pan);
+} else if (axis == 1) {
+axisMaxSizes[axis] += zoom;
+axisMinSizes[axis] += zoom;
+axisSizes[axis] += zoom;
+}
+
+private boolean canModifyAxis(int axis, float zoom) {
+

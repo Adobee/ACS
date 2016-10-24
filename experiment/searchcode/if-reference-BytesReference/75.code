@@ -1,0 +1,9 @@
+import java.io.IOException;
+import org.elasticsearch.common.bytes.BytesReference;
+import org.elasticsearch.common.xcontent.XContentHelper;
+return Observable.just(new UpdateSettingsResponse().doParse(new ByteBufBytesReference(content)));
+}
+
+private UpdateSettingsResponse doParse(BytesReference bytesReference) {
+try (XContentParser parser = XContentHelper.createParser(bytesReference)) {
+

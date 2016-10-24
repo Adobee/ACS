@@ -1,0 +1,6 @@
+public AbstractNumberRangeWrapper(T startFrom, T stopAt, T stepBy) {
+final int stepComp = stepBy.compareTo(fromInt(0));
+require(stepComp != 0, &quot;stepBy must not be zero&quot;);
+if (stepComp < 0) {
+require(startFrom.compareTo(stopAt) >= 0,
+

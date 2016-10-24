@@ -1,0 +1,10 @@
+package tracing;
+
+import java.util.*;
+
+/**
+* A ThreadLocal implementation of a RequestMarker. The marker is local
+RequestMarker marker = (RequestMarker)threadLocalMarker.get();
+if (marker == null) {
+marker = new RequestMarker();
+

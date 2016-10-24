@@ -1,0 +1,6 @@
+public class VampireNumberFactoryTests {
+protected void runTest(IVampireNumberFactory factory, int numDigits, int numFactors)
+ArrayList<VampireNumber> actual = factory.getVampireNumbers(numDigits, numFactors);
+int expected = getExpectedVampireNumbers(numDigits, numFactors);
+Assert.assertEquals(expected, actual.size());
+

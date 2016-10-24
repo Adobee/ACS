@@ -1,0 +1,8 @@
+for(int k=0; k<2*n; k++) {
+if(k==0) {
+x2[k] = a * (b[0] - gamma * x1[1] - x1[n]);
+} else if(k>0 &amp;&amp; k<n-1) {
+x2[k] = a * (b[k] - beta * x1[k-1] - gamma * x1[k+1] - x1[k+n]);
+} else if(k==n-1) {
+x2[k] = a * (b[n-1] - beta * x1[n-2] - x1[2*n-1]);
+

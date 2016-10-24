@@ -1,0 +1,8 @@
+int startSlot, int endSlot) {
+if (startRow == endRow)
+for (int slot = startSlot; slot < endSlot; slot++) {
+board.setHoleState(startRow, slot, HoleState.PLAYER1);
+}
+else if (startRow == endRow)
+for (int row = startRow; row < endRow; row++) {
+

@@ -1,0 +1,11 @@
+public RandomPaint(final int delay, final RectF bounds){
+this.delay = delay;
+this.bounds = bounds;
+
+lastUpdate = System.currentTimeMillis();
+paint.setShader(paint.setShader(new LinearGradient(bounds.left, bounds.top, bounds.right, bounds.bottom, color(), color(), Shader.TileMode.MIRROR)));
+}
+
+public void update(){
+if(System.currentTimeMillis() - lastUpdate < delay)
+

@@ -1,0 +1,12 @@
+*  In the end it restarts a sequence
+*/
+@Override
+public void doStep() {
+ActionComponent nextAction = actions.get(0);
+nextAction.doStep();
+if (nextAction.isFinished())
+actions.remove(0);
+}
+
+}
+

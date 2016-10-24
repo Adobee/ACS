@@ -1,0 +1,10 @@
+public SolutionSet execute() throws JMException, ClassNotFoundException
+{
+int maxEvaluations;
+//int evaluations;
+
+maxEvaluations = ((Integer) getInputParameter(&quot;maxEvaluations&quot;)).intValue();
+
+// Initialize the variables
+//evaluations = 0;
+

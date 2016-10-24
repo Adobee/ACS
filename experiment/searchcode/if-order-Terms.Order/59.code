@@ -1,0 +1,9 @@
+List<ProfileOrderAuthorization> existingAuthorizations =
+listAuthorizationsByProfile(profile);
+for(OrderAuthorizationType type : authorizations) {
+if(listContainsAuthorizationType(existingAuthorizations, type)) {
+List<UserOrderAuthorization> existingAuthorizations =
+listAuthorizationsByUser(user);
+for(OrderAuthorizationType type : authorizations) {
+if(listContainsAuthorizationType(existingAuthorizations, type)) {
+

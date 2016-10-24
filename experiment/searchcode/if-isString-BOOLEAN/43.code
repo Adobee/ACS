@@ -1,0 +1,9 @@
+public static JCharacter[] getFull(JCharacter[] data, int begin, String open, String close){
+ArrayList<JCharacter> back = new ArrayList<JCharacter>();
+boolean isString = false, isEchap = false;
+for(int i=begin;i<data.length;i++){
+String c = data[i].getValue();
+if(c.equals(&quot;\&quot;&quot;)){
+if(!isEchap)
+isString = !isString;
+

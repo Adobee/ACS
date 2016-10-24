@@ -1,0 +1,9 @@
+public class OffsetTimeSource implements TimeSource
+{
+final TimeSource parentTimeSource;
+final long offsetMillis;
+this.offsetMillis = startTimeMillis - parentTimeSource.millis();
+}
+
+private long getMillisFromSource()
+

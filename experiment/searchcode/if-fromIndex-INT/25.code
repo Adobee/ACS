@@ -1,0 +1,5 @@
+
+public static void parallelQuickSort(char[] a, int fromIndex, int toIndex, CharComparator c) {
+rangeCheck(a.length, fromIndex, toIndex);
+if ((ConcurrencyUtils.getNumberOfThreads() > 1) &amp;&amp; (a.length >= ConcurrencyUtils.getThreadsBeginN_1D())) {
+

@@ -1,0 +1,11 @@
+INSTANCES.add(this);
+}
+
+@Override
+public ByteArray newByteArray(long size, boolean clearOnResize) {
+final ByteArrayWrapper array = new ByteArrayWrapper(super.newByteArray(size, clearOnResize), clearOnResize);
+if (!clearOnResize) {
+array.randomizeContent(0, size);
+}
+return array;
+

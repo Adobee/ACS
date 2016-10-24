@@ -1,0 +1,8 @@
+private Properties detect(String key) {
+for (Properties properties : this.properties)
+if (properties != null &amp;&amp; properties.contains(key))
+@Override
+public boolean contains(String key) {
+Properties properties = detect(key);
+return properties != null;
+

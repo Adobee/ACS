@@ -1,0 +1,6 @@
+DateTimeZone current = DateTimeZone.getDefault();
+int offsetMillis = current.getOffset(new DateTime());
+for (int i = 0; i < n; ++i) {
+long next = timeZone.nextTransition(current);
+if (next != current) {
+

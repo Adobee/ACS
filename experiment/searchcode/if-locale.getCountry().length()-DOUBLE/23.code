@@ -1,0 +1,8 @@
+for (String s : parameterString.split(&quot;&amp;&quot;)) {
+String[] ss = s.split(&quot;=&quot;);
+if (ss.length > 1) {
+parameters.put(ss[0], ss[1]);
+lang.append(locale.getLanguage().toLowerCase());
+if (!TextUtils.isEmpty(locale.getCountry())) {
+lang.append(&quot;-&quot;).append(locale.getCountry().toLowerCase());
+

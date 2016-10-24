@@ -1,0 +1,13 @@
+int currentRound = g.getCurrentRound();
+if (currentRound > 20) {
+currentStrategy = after20RoundsStrategy;
+currentStrategy = before20RoundsStrategy;
+}
+
+return currentStrategy.getWinner(currentGame);
+
+}
+
+
+}
+

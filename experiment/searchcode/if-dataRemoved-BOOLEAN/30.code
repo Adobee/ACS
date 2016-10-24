@@ -1,0 +1,10 @@
+for(TreeNode node : this.tobeRemoved) {
+
+if(node.isLeaf()) {
+Structure s = (Structure) node.getData();
+dataRemoved.add(s.getId());
+access.removeAll(dataRemoved);
+
+boolean success = true;
+ClassAccessDAO classAccessDao = new ClassAccessDAO();
+

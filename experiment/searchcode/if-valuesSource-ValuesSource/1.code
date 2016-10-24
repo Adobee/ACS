@@ -1,0 +1,12 @@
+super(name, context, parent, pipelineAggregators, metaData);
+this.valuesSource = valuesSource;
+this.formatter = formatter;
+if (valuesSource != null) {
+final BigArrays bigArrays = context.bigArrays();
+return valuesSource != null &amp;&amp; valuesSource.needsScores();
+}
+
+@Override
+public double metric(long owningBucketOrd) {
+if (valuesSource == null || owningBucketOrd >= sums.size()) {
+

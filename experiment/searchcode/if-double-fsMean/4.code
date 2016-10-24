@@ -1,0 +1,7 @@
+/* 131:310 */           double y = this.observations[i].getY();
+/* 132:311 */           if (y < yMin) {
+/* 150:330 */       double fcMean = 0.0D;
+/* 151:331 */       double fsMean = 0.0D;
+/* 152:    */
+/* 153:333 */       double currentX = this.observations[0].getX();
+

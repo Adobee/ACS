@@ -1,0 +1,12 @@
+return new complex_t(re.multiply(y.re).subtract(im.multiply(y.im)), im.multiply(y.re).add(re.multiply(y.im)));
+}
+
+public complex_t divide(complex_t y) {
+real_t abs_y_re = y.re.compareTo(real_t.ZERO) < 0 ? y.re.negate() : y.re;
+real_t abs_y_im = y.im.compareTo(real_t.ZERO) < 0 ? y.im.negate() : y.im;
+real_t r, den;
+
+if (abs_y_re.compareTo(abs_y_im) < 0) {
+r = y.re.divide(y.im);
+den = y.im.add(r.multiply(y.re));
+

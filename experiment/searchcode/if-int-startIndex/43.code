@@ -1,0 +1,7 @@
+public class RotateArray {
+public void rotate(int[] nums, int k) {
+if (nums == null || nums.length == 0 || k == 0) {
+private void reverse(int[] nums, int startIndex, int endIndex) {
+while (startIndex < endIndex) {
+int temp = nums[startIndex];
+

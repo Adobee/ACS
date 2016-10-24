@@ -1,0 +1,14 @@
+public class PointGeneratorTarget implements Target<Generator<Point>>
+{
+private int sampleSize;
+private List<Point> target;
+
+public PointGeneratorTarget(int sampleSize, List<Point> target)
+List<Point> generatedPoints;
+List<Point> targetPoints;
+
+if(sampleSize == 0)
+{
+targetPoints = target;
+generatedPoints = object.generate(target.size());
+

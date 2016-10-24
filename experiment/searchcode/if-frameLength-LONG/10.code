@@ -1,0 +1,10 @@
+int actualLengthFieldOffset = dataSink.readerIndex();
+long frameLength;
+switch (headLength) {
+case 1:
+frameLength = dataSink.getUnsignedByte(actualLengthFieldOffset);
+frameLength = dataSink.getUnsignedInt(actualLengthFieldOffset);
+break;
+case 8:
+frameLength = dataSink.getLong(actualLengthFieldOffset);
+

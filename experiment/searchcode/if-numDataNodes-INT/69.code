@@ -1,0 +1,8 @@
+public void testNameNode() throws Exception {
+int numDatanodes = 2;
+cluster = new MiniDFSCluster.Builder(config).numDataNodes(numDatanodes).build();
+assertEquals(numDatanodes, Integer.parseInt(
+jmx.getValue(&quot;NumOpenConnections&quot;)));
+
+cluster.shutdown();
+

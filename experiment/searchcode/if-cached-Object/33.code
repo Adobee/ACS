@@ -1,0 +1,8 @@
+public class ReactiveLoaderManager {
+
+private final Map<Object, Object> cachedResults = new HashMap<>();
+private final Map<Object, PublishSubject<?>> cachedRequests = new HashMap<>();
+private <K> void removeCachedResultSafely(K key) {
+Object oldValue = cachedResults.get(key);
+if (oldValue != null) {
+

@@ -1,0 +1,9 @@
+public class UdpReceiveSocket {
+private DatagramSocket socket ;
+private int dataLen ;
+private byte[] data ;
+
+protected UdpReceiveSocket(int port , int timeOut , int dataLen) throws SocketException{
+this.dataLen = dataLen ;
+socket = new DatagramSocket(port) ;
+

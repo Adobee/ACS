@@ -1,0 +1,8 @@
+WordGene wordGeneOriginal = new WordGene(word1, solutionChromosome);
+solutionChromosome.addGene(wordGeneOriginal);
+
+solutionChromosome.removeGene(1);
+
+assertSame(wordGeneOriginal, solutionChromosome.getGenes().get(0));
+assertEquals(1, solutionChromosome.getGenes().size());
+

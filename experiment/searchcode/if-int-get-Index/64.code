@@ -1,0 +1,15 @@
+public class CyclicList<E> extends ArrayList<E> {
+private int index;
+
+public E current() {
+return get(index);
+}
+
+public E next() {
+if (index < size() - 1) {
+public E remove(int index) {
+if (index > 0) {
+this.index = index - 1;
+}
+return super.remove(index);
+

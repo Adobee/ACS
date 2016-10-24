@@ -1,0 +1,9 @@
+public static final String SEPARATOR = &quot;;&quot;;
+
+private File csvFile = null;
+private boolean hasHeader;
+private BufferedReader reader;
+
+public CsvExplorer(String fileName, boolean hasHeader) {
+this(new File(fileName), hasHeader);
+

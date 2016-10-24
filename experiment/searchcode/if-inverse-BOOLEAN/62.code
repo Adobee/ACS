@@ -1,0 +1,13 @@
+private static final long serialVersionUID = -6446820161477363281L;
+
+private boolean inverse;
+private String var;
+
+public int doStartTag() {
+//User user = SecurityContext.getUser(pageContext.getSession());
+boolean authenticated = user != null;
+if (inverse == authenticated) {
+return SKIP_BODY;
+}
+if (authenticated &amp;&amp; var != null) {
+

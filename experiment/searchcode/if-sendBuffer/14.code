@@ -1,0 +1,10 @@
+public void appendResponseStartToString(StringBuilder sendBuffer) {
+sendBuffer.append(&#39;[&#39;);
+}
+
+@Override
+public void appendBundleToString(Bundle row, StringBuilder sendBuffer) {
+ValueObject o = firstRow.getValue(field);
+if (count++ > 0) {
+sendBuffer.append(&#39;,&#39;);
+

@@ -1,0 +1,12 @@
+/* package */void setCellValues(Object... cellValues) {
+this.cellValues = cellValues;
+}
+
+public Object getCellValue(int columnIndex) {
+throw new IllegalArgumentException(&quot;Invalid columnIndex: &quot; + columnIndex);
+}
+}
+
+public void setCellValue(int columnIndex, Object cellValue) {
+if (columnIndex < cellValues.length) {
+

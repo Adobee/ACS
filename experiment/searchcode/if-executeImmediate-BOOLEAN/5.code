@@ -1,0 +1,13 @@
+public MoveNodesCommand(BinarySearchTreeView tree) {
+super();
+this.tree = tree;
+}
+
+@Override
+public boolean canExecute() {
+// tree.setChangeLocation(true);
+
+// Muevo los nodos y agrego comando para mover nuevamente si es
+// necesario
+if (tree.moveAllNodes()) {
+

@@ -1,0 +1,9 @@
+return 0;
+int nCol = obstacleGrid[0].length;
+if (nCol == 0)
+return 0;
+int[][] dp = new int[2][nCol];
+int i, j;
+if (obstacleGrid[0][0] == 0)
+dp[0][0] = 1;
+

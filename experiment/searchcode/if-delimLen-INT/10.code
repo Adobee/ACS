@@ -1,0 +1,9 @@
+public static String uncapitalize(String str, char... delimiters)
+{
+int delimLen = delimiters == null ? -1 : delimiters.length;
+if (isEmpty(str) || delimLen == 0)
+{
+return str;
+}
+char[] buffer = str.toCharArray();
+

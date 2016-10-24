@@ -1,0 +1,9 @@
+public boolean almostEqualComplement(float[] A, float[] B)
+{
+for (int i = 0; i < A.length; i++)
+if (!almostEqualComplement(A[i], B[i], maxUlps, maxAbsoluteError))
+public static int compareComplement(float A, float B, int maxUlps)
+{
+int c = signedComplement(A, B);
+if (c < -maxUlps)
+

@@ -1,0 +1,9 @@
+if (type instanceof Class<?>) {
+return (Class<?>)type;
+}
+
+if (type instanceof ParameterizedType) {
+ParameterizedType parameterizedType = (ParameterizedType)type;
+Type rawType = parameterizedType.getRawType();
+if (!(rawType instanceof Class)) throw new IllegalArgumentException();
+

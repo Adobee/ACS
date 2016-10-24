@@ -1,0 +1,7 @@
+public Image annotateIcon(Image icon, VCSContext context) {
+boolean folderAnnotation = false;
+if (LOG.isLoggable(Level.FINE)) {
+String annotation = af.format.format(arguments, new StringBuffer(), null).toString().trim();
+if(annotation.equals(af.emptyFormat)) {
+return &quot;&quot;; // NOI18N
+

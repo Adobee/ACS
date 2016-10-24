@@ -1,0 +1,13 @@
+private String name, version, description, mainClass, resources;
+private Object[] developers;
+private int intVersion;
+private YamlMap doc;
+private URL jarUrl;
+@Override
+public String getDescription() {
+return description;
+}
+
+/**
+* @return the intVersion
+

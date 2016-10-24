@@ -1,0 +1,8 @@
+final String errorMessage = instance.connect();
+if (errorMessage != null) {
+Log.d(&quot;onClick&quot;,errorMessage);
+conn.setDoInput(true);
+conn.connect();
+int response = conn.getResponseCode();
+if (response == 200) {
+

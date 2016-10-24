@@ -1,0 +1,12 @@
+final int z2Second = ((z2 &amp; 0x00020000) != 0) ? (z2Prime ^ 0xb729fcec)
+: z2Prime;
+int z4 = z0 ^ (z1 ^ (z1 >>> 20)) ^ z2Second ^ z3;
+z4 = z4 ^ ((z4 << 7) &amp; 0x93dd1400);
+z4 = z4 ^ ((z4 << 15) &amp; 0xfa118000);
+
+return z4;
+}
+
+@Override
+public final int read(byte[] bytes) {
+

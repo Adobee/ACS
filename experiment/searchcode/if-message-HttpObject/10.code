@@ -1,0 +1,10 @@
+DecoderResult result = httpObject.getDecoderResult();
+if (!result.isSuccess())
+{
+throw new BadRequestException(result.cause());
+}
+
+if (httpObject instanceof FullHttpRequest)
+{
+FullHttpRequest httpRequest = (FullHttpRequest) httpObject;
+

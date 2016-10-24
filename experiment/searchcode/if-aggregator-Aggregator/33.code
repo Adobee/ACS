@@ -1,0 +1,10 @@
+* Contains the list of aggregators that the ECKClient specifically knows about
+*/
+public enum Aggregator {
+CultureGridLive,
+CultureGridTest,
+public static Aggregator get(String value) {
+if (value != null) {
+for (Aggregator aggregator : values()) {
+if (aggregator.toString().equalsIgnoreCase(value)){
+

@@ -1,0 +1,10 @@
+public class Ant {
+
+int type, targetNum,prox,prox0;
+double xcoor,ycoor,bearing,targetx,targety;
+}else if(direction==&#39;t&#39;){
+bearing=Math.atan((targety-ycoor)/(targetx-xcoor));
+if(xcoor<0)
+bearing+=Math.PI;
+move(1.1);
+

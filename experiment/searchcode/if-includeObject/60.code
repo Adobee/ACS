@@ -1,0 +1,9 @@
+public boolean isConfigured() {
+return isConfigured;
+}
+
+public void load(ConfigurationNode node) {
+if (getClass().isAnnotationPresent(SettingBase.class)) {
+for (Field field : getFieldsRecur(getClass())) {
+if (!field.isAnnotationPresent(Setting.class)) continue;
+

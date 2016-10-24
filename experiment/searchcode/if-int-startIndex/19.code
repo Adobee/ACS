@@ -1,0 +1,10 @@
+int numsLen = nums.length;
+
+if (numsLen == 0) {
+return result;
+}
+
+int startIndex = 0;
+for (int i=0 ; i < numsLen - 1 ; i++) {
+if (nums[i+1] != nums[i] + 1) {
+

@@ -1,0 +1,11 @@
+queryBuilder.append(&quot; as integer) y&quot;);
+
+Join join = source.getJoin();
+if(join != null) {
+queryBuilder.append(&quot;, jt.&quot;);
+queryBuilder.append(&quot; from &quot;);
+queryBuilder.append(source.getTable());
+queryBuilder.append(&quot; bt &quot;);
+
+if(join != null) {
+

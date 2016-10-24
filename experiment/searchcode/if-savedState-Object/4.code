@@ -1,0 +1,7 @@
+ObjectOutputStream out = new ObjectOutputStream(fos);
+System.out.println(&quot;TIME: &quot; + savedState.getTimer().getTime());
+out.writeObject(savedState);
+FileInputStream fis = new FileInputStream(&quot;save&quot;);
+ObjectInputStream ois = new ObjectInputStream(fis);
+s = (SavedState) ois.readObject();
+

@@ -1,0 +1,8 @@
+final int offXX = (nvars - in) * (nvars - in - 1) / 2;
+if (in < -1 || in >= nvars) {
+return null;
+}
+final int nvm = nvars - 1;
+final int base_pos = r.length - (nvm - in) * (nvm - in + 1) / 2;
+if (d[in] > 0.0) {
+

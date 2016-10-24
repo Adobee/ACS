@@ -1,0 +1,7 @@
+p = compile(&quot;    \\d&quot;);
+m = p.matcher(currentLine);
+m.find();
+int minStartIndex = m.end() - 1;
+int minEndIndex = m.end();
+int minTemp = valueOf(currentLine.substring(minStartIndex, minEndIndex));
+

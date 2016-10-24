@@ -1,0 +1,5 @@
+/*  276: 501 */     for (int i = 0; i < lB.length; i++) {
+/*  277: 502 */       if ((!Double.isInfinite(lB[i])) || (!Double.isInfinite(uB[i])))
+/*  286: 511 */       for (int i = 0; i < lB.length; i++) {
+/*  287: 512 */         if ((Double.isInfinite(lB[i])) || (Double.isInfinite(uB[i])))
+

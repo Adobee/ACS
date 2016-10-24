@@ -1,0 +1,9 @@
+//takes a value in the central region of the grid, defined by MSol.X_REF &amp; MSol.Y_REF (16,17) and MSol.RND_BAND(13)
+public void resetNode(final EvolutionState state, final int thread) {
+y = MSol.Y_REF - 1 + state.random[thread].nextInt(MSol.RND_BAND);
+}
+
+public int nodeHashCode() { return this.getClass().hashCode() + 40*x + y;}
+
+public boolean nodeEquals(final GPNode node) {
+

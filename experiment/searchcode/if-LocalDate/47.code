@@ -1,0 +1,10 @@
+package sample.code;
+
+import java.time.LocalDate;
+import java.time.Period;
+
+public class Fatura {
+
+public boolean emAtraso(LocalDate vencimento, LocalDate pagamento) {
+return pagamento.isAfter(vencimento);
+

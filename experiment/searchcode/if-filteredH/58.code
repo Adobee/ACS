@@ -1,0 +1,12 @@
+protected double filterStep(final double h, final boolean forward, final boolean acceptSmall) throws NumberIsTooSmallException {
+
+double filteredH = h;
+if(FastMath.abs(h) < minStep) {
+if(acceptSmall) {
+throw new NumberIsTooSmallException(LocalizedFormats.MINIMAL_STEPSIZE_REACHED_DURING_INTEGRATION, FastMath.abs(h), minStep, true);
+}
+}
+if(filteredH > maxStep) {
+filteredH = maxStep;
+} else if(filteredH < -maxStep) {
+

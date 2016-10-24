@@ -1,0 +1,10 @@
+for(Range<V> checkRange : this.rangeList) {
+if(checkRange.isInRange(value)) {
+rangeValue = checkRange.getRangeValue();
+.append(&#39;\n&#39;)
+.append(range.toString(level + 1));
+}
+if(this.defaultRange != null) {
+sb
+.append(&#39;\n&#39;)
+

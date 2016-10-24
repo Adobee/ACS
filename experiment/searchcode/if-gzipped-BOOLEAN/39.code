@@ -1,0 +1,10 @@
+import static org.junit.Assert.fail;
+
+public class GzipSourceTest {
+
+@Test public void gunzip() throws Exception {
+OkBuffer gzipped = new OkBuffer();
+@Test public void gunzipThrowsIfSourceIsNotExhausted() throws Exception {
+OkBuffer gzippedSource = new OkBuffer()
+.write(ByteString.decodeHex(&quot;1f8b08000000000000004b4c4a0600c241243503000000&quot;)); // &#39;abc&#39;
+

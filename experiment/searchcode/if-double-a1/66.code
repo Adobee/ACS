@@ -1,0 +1,7 @@
+System.out.println(&quot;-------Arithemetic Sequence-------&quot;);
+double a1 = Double.parseDouble(args[0]);
+double d = Double.parseDouble(args[1]);
+double n = Double.parseDouble(args[2]);
+double an = a1;
+double sumLoop = a1;
+

@@ -1,0 +1,9 @@
+nanPositions = getNanPositions(ranks);
+if (nanPositions.size() > 0) {
+throw new MathIllegalArgumentException(LocalizedCoreFormats.NAN_NOT_ALLOWED);
+private void restoreNaNs(double[] ranks, List<Integer> nanPositions) {
+if (nanPositions.size() == 0) {
+return;
+}
+Iterator<Integer> iterator = nanPositions.iterator();
+

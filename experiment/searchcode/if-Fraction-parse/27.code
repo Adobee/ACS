@@ -1,0 +1,11 @@
+return whole.toInt(x.floor());
+}
+
+@Override
+public Fraction<N> parse(String s) {
+final String[] parts = s.split(&quot;/&quot;);
+return Fraction.create(whole.parse(parts[0]), whole.parse(parts[1]), whole);
+}
+
+@Override
+

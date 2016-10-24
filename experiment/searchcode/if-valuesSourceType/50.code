@@ -1,0 +1,7 @@
+Class valuesSourceType = valueType != null ? (Class<VS>) valueType.getValuesSourceType() : this.valuesSourceType;
+if (valuesSourceType == null || valuesSourceType == ValuesSource.class) {
+IndexFieldData<?> indexFieldData = context.fieldData().getForField(fieldType);
+
+ValuesSourceConfig config;
+if (valuesSourceType == ValuesSource.class) {
+

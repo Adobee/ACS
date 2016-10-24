@@ -1,0 +1,7 @@
+* Get the default {@link MetadataFieldMapper} to use, if nothing had to be parsed.
+* @param fieldType null if this is the first root mapper on this index, the existing
+MetadataFieldMapper getDefault(Settings indexSettings, MappedFieldType fieldType, String typeName);
+}
+
+public abstract static class Builder<T extends Builder, Y extends MetadataFieldMapper> extends FieldMapper.Builder<T, Y> {
+

@@ -1,0 +1,9 @@
+public JiraUserProfileLink(GenericLinkParser parser, RenderContext context)
+{
+super(parser);
+
+if (TextUtils.stringSet(parser.getNotLinkBody()) &amp;&amp; parser.getNotLinkBody().startsWith(&quot;~&quot;))
+private String buildProfileUrl(RenderContext context, String username) throws UnsupportedEncodingException
+{
+String encodedUsername = URLCodec.encode(username, context.getCharacterEncoding());
+

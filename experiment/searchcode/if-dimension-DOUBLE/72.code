@@ -1,0 +1,13 @@
+public static int dimension = 1;
+
+//単体ガウス配列
+Gauss[] gausses = null;
+//結合重み
+double[] weights = null;
+//ガウスの数
+int numberofgauss = 0;
+for(int i=0;i<TestGMM.dimension;i++){
+for(int j=0;j<TestGMM.dimension;j++){
+if(i<j){
+double buf = tempv[j][i] / tempv[i][i];
+

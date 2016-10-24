@@ -1,0 +1,10 @@
+public static int [] shellSort(int [] array){
+int i,j;
+int increment=array.length;
+int temp;
+do{
+for(i=increment;i<array.length;i++){
+if(array[i]<array[i-increment]){
+temp=array[i];
+for(j=i-increment;j>=0&amp;&amp;temp<array[j];j-=increment){
+

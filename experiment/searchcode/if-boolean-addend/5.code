@@ -1,0 +1,14 @@
+Position augendCopy = convertToAggregate(augend);
+Position addendCopy = convertToAggregate(addend);
+
+if (!canAggregate(augendCopy, addendCopy)) {
+return augendCopy.aggregate(addendCopy);
+}
+
+@Override
+public boolean canAggregate(Position augend, Position addend) {
+return augend.canAggregate(addend);
+}
+
+}
+

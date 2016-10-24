@@ -1,0 +1,7 @@
+Map map = null;
+if(mapType == MapType.TOP_WORLD) {
+map = mapTable.get(MapType.TOP_WORLD);
+if(map == null) {
+map = new TopWorldMap();
+mapTable.put(MapType.TOP_WORLD, map);
+

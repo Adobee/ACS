@@ -1,0 +1,10 @@
+CPlayer client = new CPlayer(null, cmd.jsonCmd.getString(&quot;ipAddr&quot;), cmd.jsonCmd.getInt(&quot;port&quot;));
+CUtils.sendMsg(ctrlHandler, 2, client);
+}
+else if(cmdName.equals(&quot;disconnectCtoSCmd&quot;))
+CUtils.send(out, NTPTimesyncAns);
+
+if(!cmd.jsonCmd.getBoolean(&quot;Done&quot;))
+cmd.jsonCmd = CUtils.receive(in);
+else
+

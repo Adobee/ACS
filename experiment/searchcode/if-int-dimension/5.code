@@ -1,0 +1,13 @@
+last = new Dimension((int)getDimension().getWidth(),(int) getDimension().getHeight());
+setLast(last);
+
+if (!up)
+{
+int x = (int)getDimension().getWidth();
+int y = (int)getDimension().getHeight();
+originalDimension.setSize(new Dimension(x + (steps), y));
+
+if (getDimension().getWidth() >= originalDimension.getWidth() + movement)
+{
+setDimension((int) getDimension().getWidth() - 1, (int) getDimension().getHeight());
+

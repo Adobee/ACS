@@ -1,0 +1,8 @@
+import java.io.File;
+
+public class Main {
+public static void main(String args[]) {
+OptionsReader.init(&quot;cfg.ini&quot;);
+if(!new File(&quot;cfg.ini&quot;).exists()){
+OptionsReader.addOptions(&quot;Portnum&quot;, String.valueOf(13379));
+

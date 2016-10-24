@@ -1,0 +1,8 @@
+public final static String baseUrl = &quot;http://guangdiu.com/m/&quot;;
+
+public static String MapUrl(String relativeUrl) {
+if (Strings.isNullOrEmpty(relativeUrl) || relativeUrl.toLowerCase().startsWith(&quot;http://&quot;)) {
+URL base = new URL(baseUrl);
+URL absoluteUrl = new URL(base, relativeUrl);
+return absoluteUrl.toString();
+

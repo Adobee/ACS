@@ -1,0 +1,9 @@
+int optLevel = assembler.getOptLevel();
+boolean useProfile = assembler.useProfile();
+boolean useCodeCoverage = assembler.useCodeCoverage();
+cmd.add( &quot;-Wc,-fprofile-arcs&quot; );
+}
+
+if ( useProfile ) {
+cmd.add( &quot;-finstrument-functions&quot; );
+

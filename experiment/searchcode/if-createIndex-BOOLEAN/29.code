@@ -1,0 +1,9 @@
+@SuppressWarnings(&quot;SimplifiableIfStatement&quot;)
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+KeyValue keyValue = (KeyValue) o;
+
+if (createIndex != keyValue.createIndex) return false;
+if (flags != keyValue.flags) return false;
+

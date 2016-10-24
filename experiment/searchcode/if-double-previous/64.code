@@ -1,0 +1,9 @@
+public static ArrayList<Double> insertionSort(ArrayList<Double> list) {
+double temp;
+int previousIndex;
+
+for (int index = 1; index < list.size(); index++) {
+previousIndex -= 1;
+}
+if (previousIndex >= 0 &amp;&amp; list.get(previousIndex) > temp) {
+

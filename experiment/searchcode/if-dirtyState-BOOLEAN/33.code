@@ -1,0 +1,11 @@
+return dirtyState != null;
+}
+
+/**
+* Returns true if the entry is known to require re-evaluation.
+*
+* @see NodeEntry#isChanged()
+*/
+boolean isChanged() {
+return dirtyState == DirtyState.NEEDS_REBUILDING || dirtyState == DirtyState.REBUILDING;
+

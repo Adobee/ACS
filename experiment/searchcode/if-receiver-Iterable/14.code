@@ -1,0 +1,7 @@
+for (Resource resource : MakeIterable.wrap(model.listSubjects())) {
+if (resource.isURIResource()) {
+getReceiver().startRecord(resource.getURI());
+if (obj.isLiteral()) {
+getReceiver().literal(statement.getPredicate().getURI(), obj.asLiteral().getString());
+} else if (obj.isURIResource()) {
+

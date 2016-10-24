@@ -1,0 +1,10 @@
+pos.add(new Position[] { start, end });
+}
+
+private boolean isGuarded(int offset, int length) {
+int u1 = offset, u2 = offset + length;
+int g1 = p[0].getOffset() - 1, g2 = p[1].getOffset() + 1;
+
+// u1, g1, u2, g2 --> guarded
+if (g1 < u2 &amp;&amp; u2 < g2) {
+

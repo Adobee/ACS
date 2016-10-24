@@ -1,0 +1,15 @@
+package Day4;
+
+public class CheckingAccount extends Account {
+
+long overdraftAmount=0;
+public CheckingAccount(String holderName,long overdraftAmount) {
+this.transaction(&quot;Checking Deposit&quot;, amount);
+return true;
+}
+
+@Override
+boolean withdraw(long amount) {
+
+if(amount<=(this.getBalance()+overdraftAmount))
+

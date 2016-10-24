@@ -1,0 +1,18 @@
+if (equals(groupList.get(i), groupList.get(i+1))) {
+groupList.remove(i+1);
+}
+
+}
+
+}
+
+public void addShape(Shape shape) {
+if (shape instanceof Group) {
+copyList.add(shape.copy());
+}
+return new Group(copyList);
+}
+
+public void setActiveShape(boolean active) {
+for (Shape shape : groupList) {
+

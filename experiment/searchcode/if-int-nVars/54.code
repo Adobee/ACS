@@ -1,0 +1,11 @@
+final double prevBest,
+final int nVars,
+final Class objFunCls) {
+z[i] = point[i];
+}
+
+for (i = 0; i < nVars; i++) {
+z[i] = point[i] + delta[i];
+
+if (objFunCls.equals(Rosenbrock.class)) {
+

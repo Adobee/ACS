@@ -1,0 +1,8 @@
+for (int i = 0; i < EVALUATIONS_NUMBER; i += TOURNAMENT_SIZE) {
+double newResult = playTournament();
+result = newResult < result ? newResult : result;
+}
+
+for (int i = 0; i < POP_SIZE; i++) {
+double newResult = evaluator.evaluate(population[i]);
+

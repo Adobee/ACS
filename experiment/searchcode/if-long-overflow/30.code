@@ -1,0 +1,8 @@
+DiskRegion dr = lr.getDiskRegion();
+synchronized (this.overflowMap) {
+if (this.lastOverflowWrite != null) {
+if (this.lastOverflowWrite.modify(dr, entry, value, isSerializedObject, async)) {
+* @param minSize the minimum size this oplog can be
+*/
+private OverflowOplog createOverflowOplog(long minSize) {
+

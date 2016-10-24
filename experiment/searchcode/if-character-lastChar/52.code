@@ -1,0 +1,11 @@
+public boolean canFinalizeDocument() {
+return false;
+}
+
+public IState processCharacter(char c, Context context) {
+if ((c == &#39;E&#39;) &amp;&amp; (lastChar != &#39;E&#39;)) {
+ProcessingELEMENTDeclaration ped = new ProcessingELEMENTDeclaration(
+&#39;E&#39;);
+return ped.processCharacter(c, context);
+} else if ((c == &#39;N&#39;) &amp;&amp; (lastChar == &#39;E&#39;)) {
+

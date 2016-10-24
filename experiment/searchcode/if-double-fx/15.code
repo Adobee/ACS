@@ -1,0 +1,20 @@
+* and open the template in the editor.
+*/
+package ngmf.util.cosu;
+
+/**
+*
+* @author od
+*/
+class Sample {
+
+double[] x;
+double fx;
+
+Sample() {
+}
+
+Sample(double[] x, double fx) {
+this.fx = fx;
+if (x == null) {
+

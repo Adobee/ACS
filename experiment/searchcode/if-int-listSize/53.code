@@ -1,0 +1,18 @@
+protected int listSize;
+
+protected class Node {
+T data;
+Node next;
+
+protected Node() {
+data = null;
+return temp.data;
+}
+
+public int getSize() {
+return listSize;
+}
+
+/**************************
+* implements iterator
+

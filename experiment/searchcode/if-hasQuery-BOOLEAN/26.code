@@ -1,0 +1,14 @@
+if(anchorStart < 0){
+anchorStart = url.length();
+}
+
+int queryStart = url.indexOf(&#39;?&#39;);
+boolean hasQuery = queryStart >= 0 &amp;&amp; queryStart < anchorStart;
+buf.append(url, 0, anchorStart);
+if(hasQuery){
+buf.append(&#39;&amp;&#39;);
+}else{
+buf.append(&#39;?&#39;);
+}
+buf.append(URLEncoder.encode(name, &quot;UTF-8&quot;));
+

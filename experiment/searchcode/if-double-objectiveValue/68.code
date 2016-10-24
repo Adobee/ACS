@@ -1,0 +1,8 @@
+cplex.setParam(IloCplex.IntParam.Threads, super.getMaxCPUThreads());
+}
+if(getMaxSolveSeconds() > 0) {
+cplex.setParam(IloCplex.DoubleParam.TiLim, super.getMaxSolveSeconds());
+}
+if(getRelativeMipGap() > 0)   {
+cplex.setParam(IloCplex.DoubleParam.EpGap, super.getRelativeMipGap());
+

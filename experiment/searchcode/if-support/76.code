@@ -1,0 +1,7 @@
+mProgress = values[0];
+if(mSenderSupportListener != null) {
+mSenderSupportListener.onSendingSupportProgress(this, mProgress);
+protected void onCancelled(Void aVoid) {
+if(mSenderSupportListener != null) {
+mSenderSupportListener.onSendingSupportCancelled(this);
+

@@ -1,0 +1,10 @@
+xml.write(String.valueOf(osmObject.getId()));
+xml.write(&quot;&#39;&quot;);
+if (osmObject.getId() > -1) {
+if (osmObject.getTimestamp() != null) {
+xml.write(new SimpleDateFormat(&quot;yyyy-MM-dd&#39;T&#39;HH:mm:ssZ&quot;).format(new Date(osmObject.getTimestamp())));
+xml.write(&quot;&#39;&quot;);
+}
+
+if (osmObject.getUid() != null) {
+

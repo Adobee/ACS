@@ -1,0 +1,16 @@
+* @author Lee John Smith
+*
+*/
+public class ModuleList {
+
+private ArrayList<Module> moduleList;
+
+public ModuleList() {
+public Module getModuleByID(int id) throws UnknownModuleException {
+for (Module s : moduleList) {
+if (s.getModuleID() == id) {
+return s;
+}
+}
+throw new UnknownModuleException(&quot;Unknown Module&quot;);
+

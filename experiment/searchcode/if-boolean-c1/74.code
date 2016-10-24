@@ -1,0 +1,10 @@
+public class CEntailsVisitor extends XGraphVisitor{
+CConstraint c1;
+ConstraintMaker c2m;
+XVar otherSelf;
+boolean result=true;
+t2 = t2.subst(c1.self(), otherSelf);
+boolean myResult = c1.disEntails(t1, t2);
+if (! myResult &amp;&amp; c2m!=null) {
+try {
+

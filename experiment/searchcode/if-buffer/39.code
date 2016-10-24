@@ -1,0 +1,9 @@
+public void flushAll(int txnum) {
+for (Buffer buffer : bufferPool) {
+if (buffer.isModifiedBy(txnum)) {
+Buffer buffer = findExistingBuffer(blk);
+if (buffer == null) {
+buffer = chooseUnpinnedBuffer();
+if (buffer == null) {
+return null;
+

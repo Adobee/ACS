@@ -1,0 +1,10 @@
+StringBuffer lastWord = new StringBuffer();
+boolean firstIteration = true;
+for(String word : line.split(&quot;\\W+&quot;))
+{
+if (word.length() > 0)
+{
+if(firstIteration)
+{
+lastWord.append(word.toLowerCase());
+

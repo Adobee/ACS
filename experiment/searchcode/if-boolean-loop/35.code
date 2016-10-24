@@ -1,0 +1,9 @@
+public static void sort(Comparable<?>[] a) {
+boolean loop = true;
+int cur = 0;
+int N = a.length;
+while (cur <= (N - 2) &amp;&amp; loop) {
+loop = false;
+for (int walker = N - 1; walker > cur; walker--) {
+if (Utils.less(a[walker], a[walker - 1])) {
+

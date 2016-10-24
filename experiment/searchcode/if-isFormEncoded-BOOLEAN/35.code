@@ -1,0 +1,9 @@
+private String httpMethod;
+private boolean hasBody;
+private boolean isFormEncoded;
+private boolean isMultipart;
+private String relativeUrl;
+} else if (annotation instanceof Multipart) {
+if (isFormEncoded) {
+throw RestUtils.methodError(method, &quot;Only one encoding annotation is allowed.&quot;);
+

@@ -1,0 +1,9 @@
+// A cheap variant of request tracing used to dump slow requests.
+private long mRequestBirthTime = 0;
+
+/**
+* Pixel metrics associated with the view.
+} else {
+long requestTime = SystemClock.elapsedRealtime() - mRequestBirthTime;
+if (requestTime >= SLOW_REQUEST_THRESHOLD_MS) {
+

@@ -1,0 +1,11 @@
+public static Fill getFill(String key) {
+if (fillType.get(key) != null) {
+return fillType.get(key);
+}
+return new Fill_01(0, 0);
+}
+
+public static Fill getFillRandom() {
+if (fillType.isEmpty()) {
+return new Fill_01(0, 0);
+

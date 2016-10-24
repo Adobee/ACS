@@ -1,0 +1,11 @@
+throw new ArithmeticException(&quot;This number is too big for doing the action of factorial&quot;);
+}
+
+double accuracy = 0.0001;
+
+long number = (long) v;
+
+if (v - number > accuracy) {
+
+double result = Math.exp(Math.log(factorial(number)) + (v - number) * Math.log(number + 1));
+

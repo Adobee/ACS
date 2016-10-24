@@ -1,0 +1,8 @@
+* @param flush   Indicates whether or not the message context should be flushed.
+*/
+public TransportClient<T_CHANNEL,T_SERVER> write (MessageContext context, boolean flush) {
+public TransportClient<T_CHANNEL,T_SERVER> write (Object object, boolean flush) {
+if (flush) {
+getChannel().writeAndFlush(object);
+} else {
+

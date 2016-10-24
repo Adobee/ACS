@@ -1,0 +1,7 @@
+// select a random domain for a parent domain
+DomainVO parentDomain = randDomainSelect(true);
+
+// create a random string for a new domain
+String domainName = &quot;D&quot; + generateRandString();
+String domainPath = parentDomain.getPath() + domainName + &quot;/&quot;;
+

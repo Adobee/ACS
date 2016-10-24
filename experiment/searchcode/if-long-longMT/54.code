@@ -1,0 +1,6 @@
+// we use a long masked by 0xffffffffL as a poor man unsigned int
+long longMT = seed;
+// NB: unlike original C code, we are working with java longs, the cast below makes masking unnecessary
+mt[0]= (int) longMT;
+for (mti = 1; mti < N; ++mti) {
+

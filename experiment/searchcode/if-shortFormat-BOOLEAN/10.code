@@ -1,0 +1,9 @@
+public class DateTimeSerializer extends StdSerializer<DateTime> implements ContextualSerializer {
+
+private boolean shortFormat;
+
+public DateTimeSerializer() {
+public void serialize(DateTime value, JsonGenerator jgen, SerializerProvider provider) throws IOException, JsonProcessingException {
+if (shortFormat) {
+jgen.writeString(DateTimeUtil.formatDate(value));
+

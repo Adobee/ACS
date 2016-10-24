@@ -1,0 +1,6 @@
+for (int i = 3; i < entries.length; i++) {
+double number = Double.parseDouble(entries[i]);
+if (i % 2 == 0) {
+number = Double.valueOf(format1.format(number));
+//if (number >= 100) number = Integer.valueOf(format0.format(number));
+

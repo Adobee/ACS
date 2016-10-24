@@ -1,0 +1,9 @@
+Long count = (Long) freqTable.get(obj);
+if (count == null) {
+freqTable.put(obj, new Long(1));
+* @return the proportion of values equal to v
+*/
+public long getCumFreq(Object v) {
+if (getSumFreq() == 0) {
+return 0;
+

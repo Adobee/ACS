@@ -1,0 +1,15 @@
+
+public class Player extends GameObject {
+
+private double jumpSpeed = -900;
+private boolean canJump;
+public void correctPositionY(double correction)
+{
+if(correction < 0)
+{
+canJump = true;
+}
+super.correctPositionY(correction);
+}
+}
+

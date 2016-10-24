@@ -1,0 +1,18 @@
+thread1.start();
+}
+
+public void destruir() {
+if (mep != null)
+mep.release();
+}
+
+public void iniciar(View v) {
+tvpos.setText(&quot;0&quot;);
+
+iniciarH();
+}
+
+public void pausar(View v) {
+if (mep != null &amp;&amp; mep.isPlaying()) {
+pos = mep.getCurrentPosition();
+

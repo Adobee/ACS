@@ -1,0 +1,18 @@
+for(int i=0; i<a.length; i++){
+int minPos = minPosition(i);
+swap(minPos,i);
+}
+}
+
+private int minPosition(int frm){
+int minPos = frm;
+for(int i=frm+1; i<a.length; i++){
+if(a[i]<a[minPos]){
+minPos=i;
+}
+}
+return minPos;
+}
+
+}
+

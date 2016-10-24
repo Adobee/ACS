@@ -1,0 +1,10 @@
+import org.ejml.simple.SimpleMatrix;
+
+public class Kalman{
+private int sdIdx, sdCount;
+private double[] curAcc;
+private double[] sd_x, sd_y;
+private double[] sdNmean;
+private Matrices mat;
+private SM sm;
+

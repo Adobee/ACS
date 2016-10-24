@@ -1,0 +1,12 @@
+private String[] extensions;
+private String[] lowercaseExtensions;
+
+public ExtensionFilenameMatcher(boolean ignoreCase, String... extensions) {
+this.lowercaseExtensions = lowercaseExtensions;
+}
+}
+
+@Override
+public boolean accept(File dir, String name) {
+if (this.extensions == null) {
+

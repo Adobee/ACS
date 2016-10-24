@@ -1,0 +1,9 @@
+protected void checkInterval(long start, long end) {
+if (end < start) {
+throw new IllegalArgumentException(&quot;The end instant must be greater or equal to the start&quot;);
+* @throws ArithmeticException if the duration exceeds the capacity of a long
+*/
+public Duration toDuration() {
+long durMillis = toDurationMillis();
+if (durMillis == 0) {
+

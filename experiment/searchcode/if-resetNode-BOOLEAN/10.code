@@ -1,0 +1,9 @@
+attribute =state.random[thread].nextInt(problem.attributes);
+if (attribute == problem.classAttribute)
+{
+resetNode(state, thread);
+double options[] = problem.getSortedAttributeSplits(attribute);
+if (options.length == 0)
+{
+resetNode(state, thread);
+

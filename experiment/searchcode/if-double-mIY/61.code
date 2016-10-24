@@ -1,0 +1,8 @@
+* objective value (i.e in ascending order if minimizing and in
+* descending order if maximizing), followed by Double.NaN elements
+* corresponding to the runs that did not converge. This means all
+* @see #getOptimaValues()
+*/
+public double[] getOptima() throws IllegalStateException {
+if (optima == null) {
+

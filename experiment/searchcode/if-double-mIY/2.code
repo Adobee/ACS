@@ -1,0 +1,14 @@
+if (l[i] == -1 || j + m - 1 < l[i] || j > r[i]) {
+if (mi > cur2) {
+mi = cur2;
+miX = i;
+miY = j;
+}
+}
+if (j + m - 1 < xc) {
+if (l[miX] == -1) {
+l[miX] = miY;
+r[miX] = miY + m - 1;
+} else if (l[miX] > miY) {
+l[miX] = miY;
+

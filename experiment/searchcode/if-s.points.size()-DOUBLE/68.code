@@ -1,0 +1,11 @@
+public Polygon(ArrayList<Point> points){
+this.points = points;
+this.count = points.size();
+
+this.xmin = Double.MAX_VALUE;
+this.xmax = Double.MIN_VALUE;
+int cn = 0;
+int n = points.size();
+for (int i = 0; i < n - 1; i++) {
+if(points.get(i).y!=points.get(i+1).y&amp;&amp;!((p.y<points.get(i).y)&amp;&amp;(p.y<points.get(i+1).y))&amp;&amp;!((p.y>points.get(i).y)&amp;&amp;(p.y>points.get(i+1).y))){//rule#3: erase the condition of horizonal line
+

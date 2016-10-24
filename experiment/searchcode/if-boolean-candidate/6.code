@@ -1,0 +1,6 @@
+for(Map.Entry<Candidate, Integer> entry: candidateVotes.entrySet()){
+boolean candidateFound = false;
+for(CandidateVotes cur: _candidateVotesList) {
+if(cur.getCandidate().equals(entry.getKey())) {
+cur.addVote(entry.getValue());
+

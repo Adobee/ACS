@@ -1,0 +1,9 @@
+super(system, dt, t0, X0);
+}
+
+/** Performs a single integration step. */
+private void step(boolean verbose) {
+// First increment
+double[] K1 = system.evaluate(t, X);
+for (i = 0; i < system.getNDims(); i++)
+

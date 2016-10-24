@@ -1,0 +1,10 @@
+Long ignoredRecipientId = (Long) attributes.get(&quot;ignoredRecipientId&quot;);
+
+if (ignoredRecipientId != null) {
+setIgnoredRecipientId(ignoredRecipientId);
+return _messagingIgnoredRecipients.isNew();
+}
+
+@Override
+public void setNew(boolean n) {
+

@@ -1,0 +1,13 @@
+RealMatrix x = new Array2DRowRealMatrix(1, features.length + 1);
+x.setRow(0, xs);
+
+RealMatrix h1 = sigmoidAddOnes(x.multiply(theta1Transpose));
+double g = 1.0 / (1.0 + Math.exp(-y));
+m.setEntry(i, j, g);
+}
+}
+return m;
+}
+
+RealMatrix sigmoidAddOnes(RealMatrix z) {
+

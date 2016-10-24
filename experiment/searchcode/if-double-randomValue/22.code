@@ -1,0 +1,11 @@
+/*Generate random factor  between 0.4 and 1.6 from normal distribution with mean=1 and std=0.3*/
+
+double randomValue = 0.0;
+do {
+randomValue = generator.nextGaussian();
+values.add(randomValue);
+sum = sum + randomValue;
+}
+
+//		long seed = Double.doubleToLongBits(Math.random());
+

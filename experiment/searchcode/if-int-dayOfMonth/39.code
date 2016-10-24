@@ -1,0 +1,14 @@
+int dates = 0;
+int Month;
+int DayOfMonth;
+for(int i=1900;i<1900+N;i++){
+for(Month=1;Month<=12;Month++){
+break;
+}
+dates = (dates + DayOfMonth) % 7;
+}
+}
+for(int i=0;i<7;i++){
+if(i>0)
+out.print(&#39; &#39;);
+

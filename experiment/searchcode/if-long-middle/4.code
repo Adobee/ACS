@@ -1,0 +1,6 @@
+long endIndex = x / 2 + 1;
+while (startIndex <= endIndex) {
+long middle = startIndex + (endIndex - startIndex) / 2;
+if (middle * middle == x) {
+return (int)middle;
+

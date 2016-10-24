@@ -1,0 +1,9 @@
+Date now = new Date();
+long diffInSeconds = (now.getTime() - created.getTime()) / 1000;
+
+long diff[] = new long[] { 0, 0, 0, 0 };
+diff[1] = (diffInSeconds = (diffInSeconds / 60)) >= 24 ? diffInSeconds % 24 : diffInSeconds;
+diff[0] = (diffInSeconds = (diffInSeconds / 24));
+
+if(diff[0] > 0) {
+

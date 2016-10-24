@@ -1,0 +1,10 @@
+// IN == 1.0, OUT == 0.0 (double)
+if (expr.value() != 0) {
+agentsInArea.add(agentId); // IN
+}
+}
+} catch (SyntaxException e) {
+if (movement.getFirstNode(&quot;timeEnd&quot;) != null)
+stepEnd = ((Double) movement.getFirstNode(&quot;timeEnd&quot;).getValue()).intValue();
+if (movement.getFirstNode(&quot;numberLeap&quot;) != null) {
+

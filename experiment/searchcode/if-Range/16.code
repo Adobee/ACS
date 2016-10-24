@@ -1,0 +1,12 @@
+this.maxRange = maxRange;
+}
+public void recordEliminationSuccess()
+{
+if(currentRange < maxRange)
+public void recordEliminationTimeout()
+{
+if(currentRange > 1)
+currentRange--;
+}
+public int getRange()
+

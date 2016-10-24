@@ -1,0 +1,8 @@
+//	kernel:	 2nd order b-spline
+public static double kernel(double x_){
+if(x_ <-1.5) return 0.0;
+else if(x_ <-0.5) return (x_+1.5)*(x_+1.5);
+double ybar = x[4];
+for(int i = index_min; i < index_max; ++i){
+double delta_t =  (tnow - xdata.getTi(i))/dt;
+

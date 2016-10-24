@@ -1,0 +1,9 @@
+package com.adrianlomas.strategy.test.repository;
+
+import com.adrianlomas.strategy.Strategy;
+import com.adrianlomas.strategy.test.repository.exception.StrategyNotFoundException;
+Strategy strategy = strategyMap.get(selector);
+
+if(strategy==null){
+throw new StrategyNotFoundException();
+

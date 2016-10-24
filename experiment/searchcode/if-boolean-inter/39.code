@@ -1,0 +1,13 @@
+logger.info(&quot;InterMailSendResultThread has created...&quot;);
+}
+
+public void run(){
+
+InterMailInfo interMailInfo = null;
+boolean sendOK = false;
+while(true){
+try{
+sendOK = false;
+interMailInfo = sendResultQueue.take();
+if(interMailInfo!=null)interMailInfos.add(interMailInfo);
+

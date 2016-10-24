@@ -1,0 +1,11 @@
+public static boolean getKeyPressed(int key) {
+if (key < 0 || key > 255) {
+return false;
+}
+return keyPressed[key];
+}
+
+public static void setKeyPressed(int key, boolean pressed) {
+if (key < 0 || key > 255) {
+return;
+

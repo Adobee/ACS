@@ -1,0 +1,13 @@
+for (Constraint c : constraints) {
+if (!c.isSatisfiedBy(event))
+return false;
+}
+return true;
+}
+
+public final boolean hasConstraints() {
+for (Constraint filterConstr : filter) {
+
+for (Constraint myConstr : constraints) {
+if (!filterConstr.covers(myConstr)) {
+

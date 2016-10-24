@@ -1,0 +1,11 @@
+private ConcurrentLinkedDeque<ShutdownListener> _shutdownListeners = new ConcurrentLinkedDeque<>();
+private volatile boolean _shuttingDown = false;
+
+
+private ShutdownHandler()
+public static synchronized ShutdownHandler getInstance()
+{
+if (_instance == null)
+{
+_instance = new ShutdownHandler();
+

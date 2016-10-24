@@ -1,0 +1,9 @@
+private boolean isConnected = false;
+private boolean shouldFail = false;
+
+private String username = &quot;&quot;;
+private String password = &quot;&quot;;
+public void connect() throws XMPPException {
+if(shouldFail)
+throw new XMPPException(&quot;failed!&quot;);
+

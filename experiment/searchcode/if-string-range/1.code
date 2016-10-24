@@ -1,0 +1,11 @@
+this.startRange = start;
+this.endRange = end;
+}
+
+public String toString() {
+return &quot;&quot; + this.startRange + &quot; &quot; + this.endRange;
+}
+
+boolean isDisjointFrom( Range r ){
+if ( this.endRange < r.startRange || this.startRange > r.endRange)
+

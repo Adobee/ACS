@@ -1,0 +1,10 @@
+// fix minpts
+super.minpts = (int) Math.max(1, datasequence.size() / (N*100));
+
+double dmin = 0;
+System.out.println(&quot;Running density based clustering with dist = &quot;+super.eps+&quot; and minpts = &quot;+super.minpts);
+
+super.perform();
+
+int nfound = super.getNumberOfClusters();
+

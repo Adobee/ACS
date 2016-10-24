@@ -1,0 +1,10 @@
+if (parts.length != 2)
+continue;
+try {
+int rangeIndex = Integer.parseInt(parts[0]);
+long rangeTotal = Long.parseLong(parts[1]);
+for (int i = 0; i < 4; i++)
+_rangeIndex[i] = _key[i];
+ByteBuffer bbuf = ByteBuffer.wrap(_rangeIndex);
+int rangeIndex = bbuf.getInt();
+

@@ -1,0 +1,9 @@
+public class quicksort{
+private void quick(int[] num, int l, int r){
+if(l>=r) return;
+int pit = num[l];
+int i = l, j = r;
+while(i<j){
+while(i<j &amp;&amp; num[j]>=pit) j--;
+if(i<j) num[i++] = num[j];
+

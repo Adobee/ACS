@@ -1,0 +1,12 @@
+public class MyHandler extends Handler {
+private final WeakReference<Activity> mActivity;
+
+public MyHandler(Activity activity) {
+public void handleMessage(Message msg) {
+if (mActivity.get() == null) {
+return;
+}
+super.handleMessage(msg);
+}
+}
+

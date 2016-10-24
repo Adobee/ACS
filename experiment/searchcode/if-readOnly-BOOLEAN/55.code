@@ -1,0 +1,9 @@
+public static void setReadonly(boolean bl) {
+Deque<Boolean> deque = readonly.get();
+if (deque == null) {
+deque = new LinkedList<Boolean>();
+public static boolean isReadonly() {
+Deque<Boolean> deque = readonly.get();
+if (deque == null || deque.size() == 0)
+return false;
+

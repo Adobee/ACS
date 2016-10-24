@@ -1,0 +1,12 @@
+package core.flow;
+
+import java.util.Set;
+
+public class Cell<ValueT> extends Flow<ValueT> {
+public Cell() {
+public void setValue(ValueT value) { setValue(value, Flow.newBlacklist()); }
+
+@Override
+public void setValue(ValueT value, Set<Node> blacklist) {
+if (!blacklist.contains(this)) {
+

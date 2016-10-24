@@ -1,0 +1,11 @@
+public boolean hasNonNullableForeignKey() {
+for (Object object : rowData.values()) {
+if(object instanceof NonNullableForeignKey){
+return null;
+}
+
+@Override
+public boolean equals(Object obj) {
+if(obj instanceof RowData){
+RowData anotherOne = (RowData)obj;
+

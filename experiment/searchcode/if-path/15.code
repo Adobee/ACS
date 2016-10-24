@@ -1,0 +1,11 @@
+ArrayList<Path> path= new ArrayList<Path>();
+return getPath(x, y, path);
+}
+public boolean getPath(int x, int y, ArrayList<Path> path){
+if(x == 0 &amp;&amp; y == 0){
+return true;
+}
+boolean OK = false;
+if(x >= 1 &amp;&amp; isFree(x-1, y)){
+OK = getPath(x-1, y, path);
+

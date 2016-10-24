@@ -1,0 +1,12 @@
+package math;
+
+public class MovingAverage {
+private int n;
+double mean;
+double std;
+
+public MovingAverage() {
+square = n*(val-mean)*(val-mean)/(n+1);
+mean = (((double)n)*mean + val)/(n+1);
+if (n > 0) std = Math.sqrt(square/n);
+

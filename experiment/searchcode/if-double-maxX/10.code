@@ -1,0 +1,6 @@
+private double maxX = Double.NEGATIVE_INFINITY;
+private double maxY = Double.NEGATIVE_INFINITY;
+private double minX = Double.POSITIVE_INFINITY;
+public void drawLine(double x1, double y1, double x2, double y2) {
+if (x1 > maxX) {
+

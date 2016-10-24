@@ -1,0 +1,5 @@
+private static final TestCluster globalCluster = new TestCluster(SHARED_CLUSTER_SEED, TestCluster.clusterName(&quot;shared&quot;, ElasticSearchTestCase.CHILD_VM_ID, SHARED_CLUSTER_SEED));
+private static TestCluster currentCluster;
+public TestCluster buildAndPutCluster(Scope currentClusterScope, boolean createIfExists) throws IOException {
+TestCluster testCluster = clusters.get(this.getClass());
+

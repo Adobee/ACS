@@ -1,0 +1,15 @@
+Keyboard.skipLine();
+System.out.println();
+System.out.print(&quot;Enter third character:&quot;);
+ch3=Keyboard.readChar();
+ch1=ch2;
+ch2=temp;
+}
+if(ch1>ch3)
+;
+else{
+char temp;
+temp=ch1;
+ch1=ch3;
+ch3=temp;
+

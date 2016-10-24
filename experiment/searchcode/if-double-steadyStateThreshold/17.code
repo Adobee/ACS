@@ -1,0 +1,10 @@
+private static final double DEFAULT_CONVERGENCE = 1.0e-6;
+
+/** Threshold for cost steady state detection. */
+private double steadyStateThreshold;
+
+/** Threshold for cost convergence. */
+final double steadyStateThreshold) {
+setMaxCostEval(maxCostEval);
+this.steadyStateThreshold = steadyStateThreshold;
+

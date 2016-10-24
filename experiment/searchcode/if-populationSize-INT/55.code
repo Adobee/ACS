@@ -1,0 +1,9 @@
+public class SimpleEDA
+{
+private int chromosomeLength;
+private int populationSize;
+private int maxGeneration;
+Type type;
+
+public SimpleEDA(int chromosomeLength, int populationSize, Type type, int eliteNumber)
+

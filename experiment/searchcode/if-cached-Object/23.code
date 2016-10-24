@@ -1,0 +1,8 @@
+if (cachedObjects.getCacheData(persistentObjectName + &quot;_access&quot;) != null) {
+
+if (cachedObjects.getCacheData(persistentObjectName + &quot;_access&quot;).toString().equals(&quot;use&quot;)) {
+throw new FixFlowException(&quot;当前流程实例正在被另一个用户处理中!请稍后再试!&quot;);
+}
+
+if (cachedObjects.getCacheData(persistentObjectName + &quot;_access&quot;).toString().equals(&quot;dirty&quot;)) {
+

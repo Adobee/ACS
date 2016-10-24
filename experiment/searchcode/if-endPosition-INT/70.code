@@ -1,0 +1,13 @@
+protected boolean moveIsClear(Position endPosition, ChessBoard chessBoard, ArrayList<Piece> darkPieces, ArrayList<Piece> lightPieces)
+{
+boolean isClear = false;
+
+if(position.compareTo(endPosition) != 0)
+{
+if(position.getRow() == endPosition.getRow())
+isClear = rowMoveIsClear(endPosition, chessBoard, darkPieces, lightPieces);
+}
+else if(position.getColumn() == endPosition.getColumn())
+{
+isClear = columnMoveIsClear(endPosition, chessBoard, darkPieces, lightPieces);
+

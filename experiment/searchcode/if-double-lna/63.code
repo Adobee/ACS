@@ -1,0 +1,9 @@
+// Returns incomplete beta function Ix.a; b/ for positive a and b,
+// and x between 0 and 1.
+double bt;
+if (a <= 0.0 || b <= 0.0)
+x = a / (a + b * exp(2. * w));
+} else {
+double lna = log(a / (a + b)), lnb = log(b / (a + b));
+t = exp(a * lna) / a;
+

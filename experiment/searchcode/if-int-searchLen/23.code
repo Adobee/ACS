@@ -1,0 +1,9 @@
+int strLen = str.length();
+int searchLen = searchText.length();
+int beginMatchOffset = offset;
+
+if (strLen == 0 || searchLen == 0) {
+searchText.getChars(0, searchLen, pattern, 0);
+for (int next = 0, i = offset; i < strLen; i++)
+if (getUpper(buffer[i]) == getUpper(pattern[next])) {
+

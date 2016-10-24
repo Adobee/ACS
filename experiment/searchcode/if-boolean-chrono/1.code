@@ -1,0 +1,18 @@
+public boolean setChrono(int nouveauChrono) {
+this.chrono = nouveauChrono;
+return true;
+}
+
+public Statut getStatutPhaseCourante() {
+public boolean setStatutPhaseCourante(Statut nouveauStatut) {
+boolean set = false;
+
+if (nouveauStatut != Phase.Statut.INACTIF) {
+this.statut = nouveauStatut;
+set = true;
+}
+
+return set;
+}
+}
+

@@ -1,0 +1,13 @@
+for (int i = 1; i<a.length; i++)
+{
+if (a[i] == m)
+return true;
+}
+return false;
+countseq(spmat, N);
+
+int nmol=1;
+int nsteps=1000000;
+double[][] ind = new double[nsteps+1][2];
+double[][] ind2 = new double[nsteps+1][nmol];
+

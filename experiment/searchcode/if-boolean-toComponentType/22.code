@@ -1,0 +1,6 @@
+Class<?> clazz = null;
+if (element instanceof Class<?>) {
+clazz = ((Class<?>) element);
+} else if (element instanceof Method) {
+clazz = ((Method) element).getDeclaringClass();
+

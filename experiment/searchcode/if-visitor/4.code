@@ -1,0 +1,11 @@
+package grinder.pattern.visitor.acyclic;
+
+public class Meat extends Food {
+
+public void accept(IVisitor visitor) {
+if (visitor instanceof IMeatVisitor) {
+((IMeatVisitor)visitor).visit(this);
+}
+}
+}
+

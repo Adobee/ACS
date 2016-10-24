@@ -1,0 +1,7 @@
+public class OkHttpGetRequest extends OkHttpRequest {
+private int maxStale = 3 * 60;  // 3分钟
+
+protected OkHttpGetRequest(String url,
+case READ_CACHE_AND_NET:
+builder.cacheControl(new CacheControl.Builder().maxStale(maxStale, TimeUnit.SECONDS).onlyIfCached().build());
+

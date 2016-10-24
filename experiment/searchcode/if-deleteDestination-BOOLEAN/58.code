@@ -1,0 +1,10 @@
+@NamedQuery(name = &quot;Destination.findByDatedepart&quot;, query = &quot;SELECT d FROM Destination d WHERE d.datedepart = :datedepart&quot;),
+@NamedQuery(name = &quot;Destination.deleteDestination&quot;, query = &quot;DELETE FROM Destination d WHERE d.destinationPK.destinationidDestination = :destinationidDestination&quot;)})
+hash += (destinationPK != null ? destinationPK.hashCode() : 0);
+return hash;
+}
+
+@Override
+public boolean equals(Object object) {
+// TODO: Warning - this method won&#39;t work in the case the id fields are not set
+

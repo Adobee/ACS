@@ -1,0 +1,9 @@
+package lmsldemo;
+
+import lejos.hardware.Button;
+import edu.hendrix.lmsl.FlagSet;
+import edu.hendrix.lmsl.FlagSetter;
+public void pollSensor(FlagSet<FlagName> flags) {
+if (Button.LEFT.isDown()) {
+flags.add(FlagName.PICK_LEFT);
+

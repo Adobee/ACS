@@ -1,0 +1,12 @@
+private int index;
+
+public PathToken(String token) {
+this.token = token;
+parseToken(token);
+public String toString() {
+return token;
+}
+
+private void parseToken(String token) {
+if (token.charAt(token.length() - 1) != &#39;]&#39; || token.length() < 4) {
+

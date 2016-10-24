@@ -1,0 +1,12 @@
+public Period getPeriod( String isoPeriod )
+{
+Period period = PeriodType.getPeriodFromIsoString( isoPeriod );
+
+if ( period != null )
+return identifiers == null ? periods : FilterUtils.filter( periods, new Filter<Period>()
+{
+@Override
+public boolean retain( Period object )
+{
+return identifiers.contains( object.getId() );
+

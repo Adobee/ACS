@@ -1,0 +1,8 @@
+private final String value;
+
+public StringValue(String value) {
+if (isQuoted(value, &quot;&#39;&quot;)) {
+this.value = removeQuotes(value, &quot;&#39;&quot;);
+} else if (isQuoted(value, &quot;\&quot;&quot;)) {
+this.value = removeQuotes(value, &quot;\&quot;&quot;);
+

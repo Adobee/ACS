@@ -1,0 +1,11 @@
+protected int idNumber;
+protected double gpa;
+
+@Override
+public String toString() {
+return &quot;Student{&quot; +
+public void setGpa(double gpa) {
+if (gpa>0 &amp;&amp; gpa<100) {
+this.gpa = gpa;
+}else {
+

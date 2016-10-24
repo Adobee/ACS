@@ -1,0 +1,16 @@
+package kz.sev.OOP;
+
+public class Circle
+{
+private double r;
+private Point point;
+
+public Circle(double r,Point point)
+{
+this.r = r;
+this.point = point;
+}
+
+
+public double getR()
+

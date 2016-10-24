@@ -1,0 +1,9 @@
+public class Solution {
+public int jump(int[] A) {
+int len = A.length;
+if (len <= 1) return 0;
+
+int step = 0;
+int next = 0;
+int max = 0;
+

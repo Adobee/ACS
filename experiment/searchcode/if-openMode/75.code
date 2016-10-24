@@ -1,0 +1,8 @@
+import org.apache.lucene.index.IndexWriterConfig;
+import org.apache.lucene.index.IndexWriterConfig.OpenMode;
+import org.apache.lucene.index.Term;
+private final IndexWriter writer;
+
+public VRVSuggestIndexer(OpenMode openMode) throws IOException {
+Directory dir = FSDirectory.open(new File(FSearchHelp.suggestPath()));
+

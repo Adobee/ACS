@@ -1,0 +1,7 @@
+for (int i = 1; i <= len1; i++) {
+m[0] = i;
+int upperLeft = m[0] - 1;
+for (int j = 1; j <= len2; j++) {
+int upper = m[j];
+if (word1.charAt(i - 1) == word2.charAt(j - 1)) m[j] = upperLeft;
+

@@ -1,0 +1,12 @@
+import org.apache.commons.math.linear.RealMatrix;
+
+/***
+* Joint l_{2,1}-norms minimization.
+*
+* Optimization problem:
+* min_W gamma \ || X&#39; * W - Y ||_{2,1} + || W ||_{2,1}
+int d = X.getRowDimension();
+RealMatrix I_n = eye(n);
+RealMatrix XI = horzcat(X.transpose(), times(gamma, I_n));
+RealMatrix A = XI;
+

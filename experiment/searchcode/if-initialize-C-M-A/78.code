@@ -1,0 +1,13 @@
+class Cache {
+static {
+initializeIfNecessary();
+}
+
+private static int sum;
+public static int getSum() {
+initializeIfNecessary();
+return sum;
+}
+
+private static boolean initialized = false;
+

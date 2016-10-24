@@ -1,0 +1,7 @@
+final RandomAccessOrds ordinalValues = source.ordinalsValues();
+final long maxOrd = ordinalValues.getValueCount();
+if (maxOrd == 0) {
+FixedBitSet bits = visitedOrds.get(bucketOrd);
+if (bits == null) {
+bits = new FixedBitSet(maxOrd);
+

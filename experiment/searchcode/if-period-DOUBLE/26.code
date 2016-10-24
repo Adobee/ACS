@@ -1,0 +1,14 @@
+public class MA extends AbstractIndicator {
+int period;
+DoubleBuffer buf;
+double value;
+
+public MA(int period) {
+this.period = period;
+this.buf = new DoubleBuffer(period);
+value = Double.NaN;
+}
+
+public void reset() {
+buf.clear();
+

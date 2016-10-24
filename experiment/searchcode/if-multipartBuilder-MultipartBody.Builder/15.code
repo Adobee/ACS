@@ -1,0 +1,7 @@
+OkHttpClient okHttpClient = getUnsafeOkHttpClient();
+
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder()
+.setType(MultipartBody.FORM);   //Here you can add the fix number of data.
+
+multipartBuilder.addFormDataPart(&quot;username&quot;, username);
+

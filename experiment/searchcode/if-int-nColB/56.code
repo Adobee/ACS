@@ -1,0 +1,8 @@
+public FieldMatrix<T> getL() {
+if ((cachedL == null) &amp;&amp; !singular) {
+final int m = pivot.length;
+public FieldMatrix<T> getU() {
+if ((cachedU == null) &amp;&amp; !singular) {
+final int m = pivot.length;
+cachedU = new Array2DRowFieldMatrix<T>(field, m, m);
+

@@ -1,0 +1,10 @@
+int width = 0, height = 0;
+double startTime = System.currentTimeMillis() / 1000.0;
+
+static final double r1 = Math.sqrt((5 - Math.sqrt(5))/10);
+{-r2,-r1,0,1},{r2,-r1,0,1},{0,r2,-r1,1},{0,-r2,-r1,1},{r1,0,-r2,1},{-r1,0,-r2,1}
+}
+};*/
+// vertices of Icosahedron for drawing line
+double Icosahedron[][][] = {
+

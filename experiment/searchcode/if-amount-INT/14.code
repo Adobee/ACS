@@ -1,0 +1,12 @@
+public class ShopItem extends Item {
+
+private int standardAmount = 0;
+
+public ShopItem(int id, int amount) {
+super(id, amount);
+this.standardAmount = amount;
+}
+
+public int getStandardAmount() {
+return standardAmount;
+

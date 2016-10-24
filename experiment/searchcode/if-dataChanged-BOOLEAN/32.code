@@ -1,0 +1,13 @@
+private static final String TAG = BaseLoader.class.getSimpleName();
+
+private Exception error;
+private boolean dataChanged = false;
+private T data;
+
+public BaseLoader(Context context) {
+если данные были загружены при свернутом экране, то рассылаем новые данные
+*/
+if(dataChanged) {
+dataChanged = false;
+super.deliverResult(data);
+

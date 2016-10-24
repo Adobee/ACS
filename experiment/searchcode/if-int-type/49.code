@@ -1,0 +1,8 @@
+public Equations(int type) {
+if (type == 1) {
+a = (int)(Math.random() * (10-1) +1);
+b = (int)(Math.random() * (10-1) +1);
+result = (&quot;&quot;+intResult);
+equation = &quot;(&quot; + a + &quot; + &quot; + b + &quot;)&quot; + &quot; * &quot; + c;
+} else if (type == 2) {
+

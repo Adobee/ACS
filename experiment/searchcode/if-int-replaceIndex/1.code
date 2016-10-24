@@ -1,0 +1,10 @@
+/* Application(s): Find k items from a stream of items with equal probability
+*/
+
+T add(T item) {
+T old = null;
+if(position < numSamples) {// reservoir not yet full, just append
+} else {// find a item to replace
+int replaceIndex = rand.nextInt(position + 1);
+if(replaceIndex < numSamples) {// replacement opportunity decreases over a time
+

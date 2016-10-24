@@ -1,0 +1,8 @@
+private volatile boolean includeRelocations;
+private volatile boolean enabled;
+
+public static final String CLUSTER_ROUTING_ALLOCATION_DISK_THRESHOLD_ENABLED = &quot;cluster.routing.allocation.disk.threshold_enabled&quot;;
+Boolean newEnableSetting =  settings.getAsBoolean(CLUSTER_ROUTING_ALLOCATION_DISK_THRESHOLD_ENABLED, null);
+
+if (newEnableSetting != null) {
+

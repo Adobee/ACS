@@ -1,0 +1,8 @@
+public class ForwardScorer extends HMMScorer {
+
+private static final double[] logsumLookup = new double[16000];
+
+static {
+for (int i = 0; i < 16000; i++) {
+logsumLookup[i] = log(1 + exp((double) i / 1000));
+

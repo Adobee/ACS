@@ -1,0 +1,11 @@
+import org.mytests.nestedtransactions.model.Collection;
+
+public class DefaultContentService implements ContentService{
+private boolean fail = false;
+System.out.println(&quot;DefaultContentService.createCollection()&quot;);
+if(fail){
+throw new RuntimeException();
+}
+
+return c;
+

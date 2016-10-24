@@ -1,0 +1,10 @@
+private void dfs(char[][] image, int x, int y, int[] res) {
+if (x < 0 || x >= image.length|| y < 0 || y >= image[0].length || image[x][y] == &#39;2&#39; || image[x][y] == &#39;0&#39;) {
+return;
+}
+image[x][y] = &#39;2&#39;;
+if (x < res[0]) {
+res[0] = x;
+}
+if (x > res[1]) {
+

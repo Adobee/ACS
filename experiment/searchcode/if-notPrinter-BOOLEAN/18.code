@@ -1,0 +1,7 @@
+private List<Object> iElementPairs;
+/** Set to true if the formatter is not a printer. */
+private boolean iNotPrinter;
+private static PeriodFormatter toFormatter(List<Object> elementPairs, boolean notPrinter, boolean notParser) {
+if (notPrinter &amp;&amp; notParser) {
+throw new IllegalStateException(&quot;Builder has created neither a printer nor a parser&quot;);
+

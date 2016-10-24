@@ -1,0 +1,10 @@
+private static final Logger logger = Logger.getLogger(CodonPos.class);
+public int startPos;
+public int endPos;
+public void addEndPos(int x) {
+this.endPos = x;
+}
+
+public boolean isOrfan(){
+if(endPos - startPos != 2){ // one less than three because end is inclusive
+

@@ -1,0 +1,6 @@
+public class Border implements Effect {
+private int upWidth, rightWidth, downWidth, leftWidth;
+private Color color;
+
+public Border(int upWidth, int rightWidth, int downWidth, int leftWidth, Color color) {
+

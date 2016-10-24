@@ -1,0 +1,10 @@
+private static boolean isAssignable(Type type, ParameterizedType toParameterizedType, Map<TypeVariable<?>, Type> typeVarAssigns)
+{
+if (type == null) {
+return true;
+}
+if (toParameterizedType == null) {
+return false;
+}
+if (toParameterizedType.equals(type)) {
+

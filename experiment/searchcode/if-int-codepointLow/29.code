@@ -1,0 +1,7 @@
+* @return the newly created {@code NumericEntityEscaper} instance
+*/
+public static NumericEntityEscaper between(int codepointLow, int codepointHigh) {
+return new NumericEntityEscaper(codepointLow, codepointHigh, true);
+public static NumericEntityEscaper outsideOf(int codepointLow, int codepointHigh) {
+return new NumericEntityEscaper(codepointLow, codepointHigh, false);
+

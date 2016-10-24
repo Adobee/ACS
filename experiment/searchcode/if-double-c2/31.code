@@ -1,0 +1,10 @@
+
+public class CheckeredTexture extends Texture {
+double dx, dy;
+Color3d c1, c2;
+
+public CheckeredTexture(double dx, double dy, Color3d c1, Color3d c2) {
+this.dx=dx;
+this.dy=dy;
+this.c1=c1;
+

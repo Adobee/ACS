@@ -1,0 +1,11 @@
+PlayerSelectionCriteria<Player> {
+
+private Random random;
+
+@Max(value = 1)
+private double probability;
+
+public ProbabilityBasedPlayerSelectionCriteria(
+@Max(value = 1) double probability) {
+this(probability, new Random());
+

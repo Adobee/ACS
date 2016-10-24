@@ -1,0 +1,7 @@
+protected String doInBackground(Integer... integers) {
+if (CallerFlashlight.LOG) Log.d(TAG, &quot;doInBackgroung Started&quot;);
+long start = System.currentTimeMillis();
+while (System.currentTimeMillis() - start <= durMillis &amp;&amp; tries > 0) {
+flash.enableFlash(Long.valueOf(integers[0]), Long.valueOf(integers[1]));
+if (!Flash.gotCam) {
+

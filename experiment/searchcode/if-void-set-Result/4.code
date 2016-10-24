@@ -1,0 +1,12 @@
+public class ResultParser extends XPTPParser {
+
+private ResultListener resultListener;
+
+@Override
+public void parser(Packet requestPacket, Packet responsePacket) {
+public interface ResultListener {
+public void handle(Result result);
+}
+
+public void setResultListener(ResultListener resultListener) {
+

@@ -1,0 +1,10 @@
+byte[] pkd = privkey.getData();
+boolean haslong = false;
+for (int i = 0; i < 8; i++) {
+if (pkd[i] != 0) {
+haslong = true;
+break;
+}
+}
+boolean uselong = getContext().keyGenerator().useLongElGamalExponent();
+

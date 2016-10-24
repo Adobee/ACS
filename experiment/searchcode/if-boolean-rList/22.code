@@ -1,0 +1,7 @@
+public List<List<String>> solveNQueens(int n) {
+List<List<String>> rList = new ArrayList<List<String>>();
+if(n != 1 &amp;&amp; n <= 3) return rList;
+private void sNQueens(int n, int i, List<List<String>> rList) {
+for(int j = 0; j < n; j++) {
+if(isValid(i, j, n)) {
+

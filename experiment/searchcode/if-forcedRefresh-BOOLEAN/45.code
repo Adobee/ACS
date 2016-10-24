@@ -1,0 +1,11 @@
+this.hbox.getChildren().addAll(imageView, label);
+
+DexTaskItem item = getItem();
+if (item != null)
+Dragboard db = evt.getDragboard();
+boolean success = false;
+
+try
+{
+if (db.hasContent(DEX_TASK_CREATE))
+

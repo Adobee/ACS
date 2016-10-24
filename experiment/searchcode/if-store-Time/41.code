@@ -1,0 +1,11 @@
+store.setStoreState(Const.VLDSTATE_VALID);
+store.setManagerPwd(createInitPwd(store));
+store.setCreTime(new Date());
+store = storeDao.save(store);
+return Md5Utils.digest(Const.DEFAULT_PWD).toString();
+}
+
+@Override
+public Store updateStore(Store store) {
+store.setUpdTime(new Date());
+

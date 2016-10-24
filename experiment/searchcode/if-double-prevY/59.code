@@ -1,0 +1,9 @@
+private Shapes() {
+}
+
+/**
+* Returns true, if the outline of this bezier path contains the specified
+public static boolean outlineContains(Shape shape, Point2D.Double p, double tolerance) {
+double[] coords = new double[6];
+double prevX = 0, prevY = 0;
+

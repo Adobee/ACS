@@ -1,0 +1,10 @@
+minute = getMinutesUntilToday()+(hours*60)+Integer.parseInt(minutes);
+}
+
+public MinuteTime(MinuteTime reference, int minutesOffset) {
+public boolean withinMinutesOf(MinuteTime current, int minutesOffset) {
+return ((minute - current.minute)<minutesOffset) &amp;&amp; ((minute - current.minute)>0);
+}
+
+}
+

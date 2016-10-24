@@ -1,0 +1,14 @@
+* Remember last function value;
+*/
+private double lastFx = Double.POSITIVE_INFINITY;
+
+/**
+* Constructor.
+public boolean terminated(double fx, double[] x) {
+boolean terminated = Math.abs(fx - lastFx) < epsilon;
+lastFx = fx;
+return terminated;
+}
+
+}
+

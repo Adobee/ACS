@@ -1,0 +1,14 @@
+Runner.main(CaliperBenchmark.class, args);
+}
+
+BenchmarkTester objectToTest = new BenchmarkTester();
+
+@Override
+protected void setUp()
+{
+objectToTest.init();
+}
+public void timeChecking1(int reps)
+{
+for (int i = 0; i < reps; i++)
+

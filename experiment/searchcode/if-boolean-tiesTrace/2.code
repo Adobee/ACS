@@ -1,0 +1,9 @@
+// tie sequence has ended (or had length 1)
+pos = i + 1;
+if (tiesTrace.size() > 1) {  // if seq is nontrivial, resolve
+tiesTrace.add(ranks[i].getPosition());
+}
+out[ranks[i].getPosition()] = pos;
+}
+if (tiesTrace.size() > 1) {  // handle tie sequence at end
+

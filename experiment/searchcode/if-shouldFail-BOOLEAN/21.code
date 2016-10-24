@@ -1,0 +1,13 @@
+public void onSuccess(List<Country> countries);
+
+public void onError(Exception e);
+}
+
+private boolean shouldFail;
+if (isCancelled() || countries == null) {
+return;
+}
+
+if (shouldFail) {
+listener.onError(new Exception(&quot;Oops something went wrong&quot;));
+

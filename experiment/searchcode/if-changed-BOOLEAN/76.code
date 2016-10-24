@@ -1,0 +1,12 @@
+this(new ArrayList<V>());
+}
+
+@Override
+public synchronized boolean add(V element) {
+boolean changed = value.add(element);
+if (changed) changed();
+return changed;
+}
+
+@Override
+

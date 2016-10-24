@@ -1,0 +1,9 @@
+public synchronized boolean updateControl() {
+boolean result = false;
+XYGraphLibSWT.Rect r = xyplot.getRedrawArea();
+if (r != null) {
+* Implementation of the {@link IKeypad} interface to react on a key event
+*/
+public void onEnterKey() {
+if (xyplot.evalKey(XYPlot.CMD_SHOW_ALL)) {
+

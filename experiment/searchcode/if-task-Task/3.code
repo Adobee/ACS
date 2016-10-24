@@ -1,0 +1,13 @@
+package com.mingchao.snsspider.task;
+
+import com.mingchao.snsspider.executor.TaskExcutor;
+
+public class ExeRunnableTask extends RunnableTask{
+public void after() {
+super.after();
+if (taskExecutor != null) {
+taskExecutor.after();
+}
+}
+}
+

@@ -1,0 +1,12 @@
+/** The minimum master nodes. */
+private volatile int minimumMasterNodes;
+
+/**
+* Instantiates a new elect master service.
+public boolean hasEnoughMasterNodes(Iterable<DiscoveryNode> nodes) {
+if (minimumMasterNodes < 1) {
+return true;
+}
+int count = 0;
+for (DiscoveryNode node : nodes) {
+

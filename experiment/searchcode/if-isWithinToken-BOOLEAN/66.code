@@ -1,0 +1,8 @@
+private Query getFieldQuerySingle(String field, String queryText, boolean quoted) throws ParseException {
+if (!quoted &amp;&amp; queryText.length() > 1) {
+if (queryText.charAt(0) == &#39;>&#39;) {
+if (!analyzeWildcard) {
+return super.getWildcardQuery(field, termStr);
+}
+boolean isWithinToken = (!termStr.startsWith(&quot;?&quot;) &amp;&amp; !termStr.startsWith(&quot;*&quot;));
+

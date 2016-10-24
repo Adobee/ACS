@@ -1,0 +1,13 @@
+Response() {}
+
+void setResult(Value result) {
+synchronized (this) {
+if (this.result != null)
+return;
+return result;
+}
+
+public Value awaitResult(long waitMillisecondsBeforeTimeout) {
+synchronized (this) {
+if (result != null)
+

@@ -1,0 +1,9 @@
+long baseTime = getBaseAnimationTime();
+float alpha = toAlpha - fromAlpha;
+if (interval == 0)
+protected boolean onAnimation() {
+if (alpha == Float.MIN_VALUE)
+{
+alpha = fromAlpha;
+return false;
+

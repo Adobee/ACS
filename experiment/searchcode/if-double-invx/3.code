@@ -1,0 +1,8 @@
+double txMin, txMax, tyMin, tyMax, tzMin, tzMax;
+
+double invx = 1 / rayIn.direction.x;
+double tx1 = (minPt.x - rayIn.origin.x) * invx;
+double tx2 = (maxPt.x - rayIn.origin.x) * invx;
+txMin = Math.min(tx1, tx2);
+txMax = Math.max(tx1, tx2);
+

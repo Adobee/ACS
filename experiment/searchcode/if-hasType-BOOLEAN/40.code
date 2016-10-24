@@ -1,0 +1,7 @@
+public boolean hasObj () { return (mask &amp; HasObj) == HasObj; }
+public boolean hasType () { return (mask &amp; HasType) == HasType; }
+public void setMask ( boolean hasSubj, boolean hasProp, boolean hasObj, boolean hasType ) {
+if ( hasSubj ) mask |= HasSubj;
+if ( hasProp) mask |= HasPred;
+if ( hasObj) mask |= HasObj;
+

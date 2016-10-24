@@ -1,0 +1,11 @@
+public class SupplierFilterSettings extends AbstractChromatogramFilterSettings implements ISupplierFilterSettings {
+
+private float normalizationBase = ISupplierFilterSettings.DEFAULT_NORMALIZATION_BASE;
+return normalizationBase;
+}
+
+@Override
+public void setNormalizationBase(float normalizationBase) {
+
+if(normalizationBase >= MIN_NORMALIZATION_BASE &amp;&amp; !Float.isNaN(normalizationBase) &amp;&amp; !Float.isInfinite(normalizationBase)) {
+

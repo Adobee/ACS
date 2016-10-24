@@ -1,0 +1,11 @@
+public long topKtoMap(ResultScanner rss,long limit, int index,boolean onlyCount) {
+long count =0;
+try {
+Result rr=null;
+byte[] rowKey=null;
+byte[] rrk = null;
+HTableInterface rht = null;
+if(!onlyCount) {
+rrk = new byte[9];
+rht = init.pool.getTable(init.tableName);
+

@@ -1,0 +1,13 @@
+public ProblemRequestor() {
+this(false);
+}
+
+public ProblemRequestor(boolean showInternalErrors) {
+public void acceptProblem(IProblem problem) {
+problems.add(problem);
+if (problem.isError())
+fatal++;
+}
+
+public void beginReporting() {
+

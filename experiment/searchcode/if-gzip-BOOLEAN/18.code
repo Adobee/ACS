@@ -1,0 +1,8 @@
+public RequestHelper(HttpServletRequest request) {
+this.request = request;
+}
+
+public boolean supportsGzip() {
+String encoding = request.getHeader(&quot;Accept-Encoding&quot;);
+boolean supportsGzip = false;
+

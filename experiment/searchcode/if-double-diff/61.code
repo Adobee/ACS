@@ -1,0 +1,13 @@
+package selfConsis;
+
+public class DiffFunc {
+private final int Nt;
+
+DiffFunc(int N){
+this.Nt = N;
+public double[] funcCalc(double[] m, double h){
+double[] dm = new double[m.length];
+for(int i = 0;i<Nt;i++){
+if(i>=1 &amp;&amp; i<Nt-1){
+dm[i] = (m[i+1] - m[i-1]) / (2*h) ;
+

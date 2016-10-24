@@ -1,0 +1,6 @@
+// We can&#39;t cache this yet in ValuesSource, since ValuesSource is reused per field for aggs during the execution.
+// If aggs with same field, but different include/exclude are defined, then the last defined one will override the
+globalOrds = new FilteredOrdinals(globalOrds, acceptedGlobalOrdinals);
+} else if (includeExclude != null) {
+acceptedGlobalOrdinals = includeExclude.acceptedGlobalOrdinals(globalOrds, valuesSource);
+

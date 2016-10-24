@@ -1,0 +1,15 @@
+public ByteRangePointer(int position, ByteRange dataRange) {
+super(position);
+this.dataRange = dataRange;
+
+if (dataRange.isUsed()) {
+throw new IllegalStateException(&quot;data range already used&quot;);
+dataRange.markAsUsed();
+}
+}
+
+public ByteRange getDataRange() {
+return dataRange;
+}
+}
+

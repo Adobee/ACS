@@ -1,0 +1,9 @@
+double sin1 = Math.sqrt(1-Math.pow(cos1, 2));
+double sin2 = Math.sqrt(1-Math.pow(cos2, 2));
+
+if(Math.pow(x12-d13*cos1, 2)+Math.pow(y12-d13*sin1, 2)>Math.pow(r, 2)
+double c2 = Math.sqrt(Math.pow(x12-x23, 2)+Math.pow(y12-y23, 2));
+double c3 = Math.sqrt(Math.pow(x23-x13, 2)+Math.pow(y23-y13, 2));
+
+boolean check = d13*sin1 < y13+((y23-y13)/(x23-x13))*(d13*cos1-x13);
+

@@ -1,0 +1,9 @@
+List<Transport> transportList = transportDao.queryList(pager);
+
+if(transportList != null){
+
+// 查询出各运费模板相关的运费模板扩展表数据
+for (Transport transport : transportList) {
+
+if(transport != null &amp;&amp; transport.getId() != null){
+

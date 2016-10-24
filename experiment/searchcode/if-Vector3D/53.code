@@ -1,0 +1,10 @@
+protected Point3D[] points;
+
+public Triangle3D(Point3D[] ps)
+{
+super(ps);
+if(Vector3D.getProduct(new Vector3D(ps[0],ps[1]),
+new Vector3D(ps[0],ps[2])) == 0)
+rectangular = true;
+else if(Vector3D.getProduct(new Vector3D(ps[0],ps[1]),
+

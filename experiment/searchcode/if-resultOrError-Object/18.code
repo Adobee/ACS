@@ -1,0 +1,10 @@
+import com.google.common.collect.MapMaker;
+
+import java.util.Map;
+
+/**
+* Lazily creates (and caches) values for keys. If creating the value fails (with errors), an
+Object resultOrError = delegate.get(key);
+if (resultOrError instanceof Errors) {
+errors.merge((Errors) resultOrError);
+

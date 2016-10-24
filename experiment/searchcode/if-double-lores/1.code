@@ -1,0 +1,5 @@
+lores.add(new Lore(Block.chest, &quot;Chest&quot;, &quot;Made from planks.&quot;, &quot;Holds 27 slots.&quot;, &quot;Can be joined to&quot;, &quot;another chest to&quot;, &quot;make a double&quot;, &quot;chest.&quot;, 0));
+lores.add(new Lore(Block.blockDiamond, &quot;Diamond&quot;, &quot;Crafted from 9&quot;, &quot;diamonds.&quot;, &quot;Decorative block&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, 0));
+lores.add(new Lore(Item.bucketEmpty, &quot;Bucket&quot;, &quot;Made from iron.&quot;, &quot;Can pick up water&quot;, &quot;and lava.&quot;, &quot;If used on a cow,&quot;, &quot;milk may be&quot;, &quot;obtained&quot;, 0));
+lores.add(new Lore(Item.bucketWater, &quot;Water Bucket&quot;, &quot;Can be used to&quot;, &quot;place a water&quot;, &quot;source&quot;, &quot;&quot;, &quot;&quot;, &quot;&quot;, 0));
+

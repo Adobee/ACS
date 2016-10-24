@@ -1,0 +1,12 @@
+public class Solution {
+public int removeDuplicates(int[] A) {
+int total = 0;
+while (j < A.length &amp;&amp; A[j] == A[i]) j++;
+A[total++] = A[i];
+if (j - i > 1) A[total++] = A[i];
+i = j;
+}
+return total;
+}
+}
+

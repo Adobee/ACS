@@ -1,0 +1,11 @@
+public class ConstantInitializer<T>
+implements ConcurrentInitializer<T>
+{
+private static final String FMT_TO_STRING = &quot;ConstantInitializer@%d [ object = %s ]&quot;;
+public boolean equals(Object paramObject)
+{
+if (this == paramObject) {
+return true;
+}
+if (!(paramObject instanceof ConstantInitializer)) {
+

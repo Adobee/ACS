@@ -1,0 +1,6 @@
+String flag = request.getParameter(&quot;act&quot;);
+HttpSession session = request.getSession();
+if(!fromYear.equals(&quot;&quot;)&amp;&amp;!toYear.equals(&quot;&quot;)){
+Integer fYear = Integer.parseInt(fromYear);
+Integer tYear = Integer.parseInt(toYear);
+

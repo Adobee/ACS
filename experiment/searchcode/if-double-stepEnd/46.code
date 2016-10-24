@@ -1,0 +1,8 @@
+* @exception NumberIsTooSmallException if order is 1 or less
+*/
+public AdamsBashforthIntegrator(final int nSteps,
+// predict a first estimate of the state at step end
+final double stepEnd = stepStart + stepSize;
+interpolator.shift();
+interpolator.setInterpolatedTime(stepEnd);
+

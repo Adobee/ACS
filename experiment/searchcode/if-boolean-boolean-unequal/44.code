@@ -1,0 +1,13 @@
+* A {@link CollectionMismatch}that is used when two collections don&#39;t contain the same number of instances of two
+* objects.
+*/
+class UnequalObjectCountCollectionMismatch extends CollectionMismatch {
+
+private final int numInCollectionOne;
++ &quot;in collection one, but &quot; + this.numInCollectionTwo + &quot; times in collection two.&quot;;
+}
+
+@Override
+public boolean equals(Object that) {
+if (!(that instanceof UnequalObjectCountCollectionMismatch)) return false;
+

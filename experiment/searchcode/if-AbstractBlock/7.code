@@ -1,0 +1,7 @@
+for (AbstractBlock abstractBlock : blocks) {
+if (abstractBlock.containPosition(i)) {
+public boolean isInnerInList(List<? extends AbstractBlock> blocks){
+for (AbstractBlock block : blocks) {
+if (this.isInnerIn(block)) {
+return true;
+

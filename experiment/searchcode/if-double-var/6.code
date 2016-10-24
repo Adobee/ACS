@@ -1,0 +1,12 @@
+double var_R = ( (double)(r+128) / 255.0);
+double var_G = ( (double)(g+128) / 255.0);
+double var_B = ( (double)(b+128) / 255.0);
+
+if (var_R > 0.04045) {
+//Now convert to CIE
+double var_X = X / ref_X;
+double var_Y = Y / ref_Y;
+double var_Z = Z / ref_Z;
+
+if (var_X > 0.008856)
+

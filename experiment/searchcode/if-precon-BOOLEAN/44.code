@@ -1,0 +1,8 @@
+* @return  True if the flag is set.
+*/
+public boolean has(Object player, String flagName) {
+Player p = PlayerUtils.getPlayer(player);
+PreCon.notNull(p);
+
+return _dataNode.getBoolean(p.getUniqueId().toString() + &#39;.&#39; + flagName, false);
+

@@ -1,0 +1,7 @@
+public class KGameMsgCompressConfig {
+
+private static int _msgLengthForAutoCompress = 1024 * 1024; // 自动压缩的长度（默认长度1M）
+public static void init(Element element) {
+
+_msgLengthForAutoCompress = Integer.parseInt(element.getChildText(&quot;msgLengthForAutoCompress&quot;));
+

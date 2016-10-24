@@ -1,0 +1,7 @@
+* @param replacement has someone else been the leader already?
+*/
+private void checkIfIamLeader(final ElectionContext context, boolean replacement) throws KeeperException,
+ElectionWatcher watcher = this.watcher;
+ElectionContext ctx = context.copy();
+if (electionContexts != null) {
+

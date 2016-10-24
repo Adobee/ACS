@@ -1,0 +1,11 @@
+public double pow2(double x, int n) {
+double result = 1.0;
+if(n<0){
+return result;
+}
+
+
+public double pow(double x, int n) {
+double[] tmp = new double[35];
+tmp[0] = 1;tmp[1] = x;
+

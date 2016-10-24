@@ -1,0 +1,13 @@
+for (Pregunta preg : this.obtenerPreguntaDelSistema()) {
+if (this.getIntervalo().contains(preg.fechaDePublicacion())) {
+resultado.add(preg);
+}
+}
+return resultado;
+}
+
+private AbstractInterval getIntervalo() {
+return this.intervalo;
+}
+}
+

@@ -1,0 +1,10 @@
+double  flp1, flp2, flp3, flp4, flp5, flp6, flp7;
+double  Pi;
+double  initp1e;
+double  initQ3;
+new double[state.length],
+new double[4]};
+double  p1, p2;
+double  Q3, pfl;
+double  delta;
+

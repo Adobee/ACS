@@ -1,0 +1,6 @@
+maybeSet(testBuilder::maxTermFreq, randomFloat());
+maybeSet(testBuilder::prefixLength, randomInt(Integer.MAX_VALUE));
+try {
+builder.maxTermFreq(1.5f);
+fail(&quot;If max term freq is greater than 1, it must be a whole number.&quot;);
+

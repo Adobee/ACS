@@ -1,0 +1,15 @@
+
+public class Queue {
+Node first, last;
+
+void enqueue(Object item) {
+Node p = new Node(item);
+last.next = p;
+last = last.next;
+}
+}
+
+Object dequeue() {
+if (first == null) return null;
+Object item = first.val;
+

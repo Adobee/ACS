@@ -1,0 +1,17 @@
+package com.cognizant.rif.dto;
+
+public class TokenDelimiter {
+
+int startIndex;
+
+int endIndex;
+public void setStartIndex(int startIndex) {
+this.startIndex = startIndex;
+}
+
+public int getEndIndex() {
+return endIndex;
+}
+
+public void setEndIndex(int endIndex) {
+

@@ -1,0 +1,8 @@
+private Object outBody;
+private Boolean outFaultFlag = Boolean.FALSE;
+private Map<String, Object> inHeaders;
+private Map<String, Object> outHeaders;
+exchange.getIn().setBody(payload.inBody);
+if (payload.inHeaders != null) {
+exchange.getIn().setHeaders(payload.inHeaders);
+

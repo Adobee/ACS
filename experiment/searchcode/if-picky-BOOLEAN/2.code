@@ -1,0 +1,9 @@
+Gson gson  = new Gson();
+
+ServletUtils.addJSONSettings(response);
+if (picky == null) {
+ServletUtils.addError(response, gson, &quot;Picky does not exists&quot;);
+response.setStatus(ServletUtils.NOT_FOUND);
+return;
+} if (voteService.userVoted(user.getId(), pickyId)) {
+

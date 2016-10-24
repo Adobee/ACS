@@ -1,0 +1,14 @@
+private int data = 0;
+private boolean hasData = false;
+
+public BasicListItem(Material mat, Integer data) {
+this.type = mat;
+if (data != null) {
+this.data = data;
+hasData = true;
+}
+}
+
+@Override
+public boolean matches(ItemStack itemStack) {
+

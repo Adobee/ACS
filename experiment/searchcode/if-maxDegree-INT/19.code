@@ -1,0 +1,9 @@
+public int[] order(GraphBitSet graph) {
+int n = graph.size();
+int[] vert = new int[n];
+int maxDegree = 0;
+
+// find max degre
+for (int i = 0; i < n; i++) {
+if (graph.degree(i) > maxDegree) maxDegree = graph.degree(i);
+

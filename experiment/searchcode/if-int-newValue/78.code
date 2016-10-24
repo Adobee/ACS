@@ -1,0 +1,14 @@
+this.maximum = maximum;
+}
+
+public void increment()
+{
+final int newValue = clamp(getValue() + 1);
+int clamp(int newValue)
+{
+if (newValue < minimum)
+{
+newValue = minimum;
+}
+if (newValue > maximum)
+

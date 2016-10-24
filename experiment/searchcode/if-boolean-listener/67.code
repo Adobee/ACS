@@ -1,0 +1,8 @@
+public abstract class Command<T> {
+
+private static CommandListener nullListener = new NullListener();
+
+private boolean isAvailable = true;
+private boolean canExecute = true;
+private CommandListener listener = nullListener;
+

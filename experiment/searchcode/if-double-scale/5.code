@@ -1,0 +1,9 @@
+protected final NoiseGenerator[] octaves;
+protected double xScale = 1.0D;
+protected double yScale = 1.0D;
+protected double zScale = 1.0D;
+
+protected OctaveGenerator(NoiseGenerator[] octaves)
+{
+this.octaves = octaves;
+

@@ -1,0 +1,18 @@
+package codigo;
+
+class Rental {
+
+private Movie _movie;
+private int  _daysRented;
+
+public Rental(Movie movie, int daysRented) {
+return _movie.getCharge(_daysRented);
+}
+
+public int getFrequentRenterPoints(){
+if ((getMovie().getPriceCode() == Movie.NEW_RELEASE) &amp;&amp; getDaysRented() > 1) return 2;
+else return 1;
+}
+
+}
+

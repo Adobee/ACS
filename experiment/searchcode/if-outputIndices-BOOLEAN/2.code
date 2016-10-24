@@ -1,0 +1,12 @@
+for (int i = 0; i < nDomains; ++i)
+{
+if (outputs.get(i))
+{
+outputIndices[curOutput] = i;
+++curOutput;
+boolean canonicalOrder = true;
+for (int i = 0; i < nOutputs; ++i)
+{
+int j = outputIndices[i];
+if (i != j)
+

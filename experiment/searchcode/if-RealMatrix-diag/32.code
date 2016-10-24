@@ -1,0 +1,9 @@
+double[] squareSV = square(sv);
+RealMatrix S = convertToDiagMatrix(squareSV);
+UHalfS = svd.getU().multiply(S);
+return result;
+}
+
+public static RealMatrix convertToDiagMatrix(double[] array) {
+double[][] result = new double[array.length][array.length];
+

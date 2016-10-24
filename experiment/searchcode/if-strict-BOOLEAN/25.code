@@ -1,0 +1,10 @@
+public class AttrBoolean implements AttrType<Boolean> {
+@Override
+public Boolean parse(String value, boolean strict) throws MetaParseException {
+if (value.equals(&quot;&quot;)) {
+return Boolean.FALSE;
+}
+
+if( strict )
+throw new MetaParseException(&quot;Invalid boolean value: &quot; + value);
+

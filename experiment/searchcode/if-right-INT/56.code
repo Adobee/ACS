@@ -1,0 +1,14 @@
+public static void quicksort(int[] array,int left,int right){
+int index=partition(array,left,right);
+while(array[right]>pivot) right--;
+if(left<=right){
+int i=array[left];
+array[left]=array[right];
+array[right]=i;
+left++;
+right--;
+}
+}
+return left;
+}
+

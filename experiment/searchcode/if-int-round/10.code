@@ -1,0 +1,10 @@
+public class BowlingGameResultCalc implements BowlingGameResultCalculator {
+Round firstRound;
+Round currentRound;
+int noOfFinishedRounds = 0;
+
+public BowlingGameResultCalc() {
+public void roll(int numberOfPins) {
+if (!currentRound.isFinished(noOfFinishedRounds)) {
+currentRound.setNewRoll(numberOfPins);
+

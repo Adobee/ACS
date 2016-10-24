@@ -1,0 +1,9 @@
+isResumed = true;
+getEventBus().register(this);
+
+if (requestLock) {
+requestLock();
+if (id == SettingsAdapter.ID_CURRENCIES) {
+CurrenciesActivity.start(this);
+} else if (id == SettingsAdapter.ID_CATEGORIES) {
+

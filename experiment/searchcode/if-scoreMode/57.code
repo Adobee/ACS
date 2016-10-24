@@ -1,0 +1,6 @@
+final String field;
+final BytesRefHash collectedTerms = new BytesRefHash();
+final ScoreMode scoreMode;
+static TermsWithScoreCollector create(String field, boolean multipleValuesPerDocument, ScoreMode scoreMode) {
+if (multipleValuesPerDocument) {
+

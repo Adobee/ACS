@@ -1,0 +1,8 @@
+public class RandomGaussian2D {
+private final Random rand;
+private final double[] mu;
+private final double[][] sigma;
+private double x, y;
+
+public RandomGaussian2D(double[] mu, double[][] sigma, long seed) {
+

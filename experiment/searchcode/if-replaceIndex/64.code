@@ -1,0 +1,11 @@
+public synchronized boolean hasPoint() {
+return start != end;
+}
+
+public synchronized void addPoint(Pair p) {
+if(scheduled[p.x + p.y*width]) {
+scheduled[p.x + p.y*width] = true;
+operations[wrap(end++)] = p;
+if(end >= start + operations.length) {
+throw new ArrayIndexOutOfBoundsException(&quot;exceeded storage space of backing array&quot;);
+

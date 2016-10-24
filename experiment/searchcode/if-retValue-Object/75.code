@@ -1,0 +1,10 @@
+private static final String safeBoolean(Boolean b) {
+if (b==null) return &quot;NULL&quot;; else return b.toString();
+}
+
+@Override
+public Object getAsObject(FacesContext facesContext, UIComponent component, String value) {
+l.info(&quot;inside TriStateCheckboxToBooleanConverter getAsString&quot;);
+if      (  value == null)          retValue = TWO;
+else if (  ((Boolean) value) == Boolean.TRUE)  retValue = ONE;
+

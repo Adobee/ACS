@@ -1,0 +1,9 @@
+private void init() {
+boolean exist = indexExist();
+if (deleteOnStartup &amp;&amp; exist) {
+deleteIndex();
+createIndex();
+
+} else if(!exist) {
+createIndex();
+

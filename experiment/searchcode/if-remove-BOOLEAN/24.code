@@ -1,0 +1,14 @@
+return (containsFalse ? 1 : 0) + (containsTrue ? 1 : 0);
+}
+
+@Override
+public boolean add(boolean e) {
+if (e) return containsTrue ^ (containsTrue = true);
+if (e) return containsTrue;
+return containsFalse;
+}
+
+@Override
+public boolean remove(boolean e) {
+if (e) return containsTrue ^ (containsTrue = true);
+

@@ -1,0 +1,9 @@
+public Sequence execute(Unit unit, int[] selectedCube) {
+Unit followUnit;
+
+if (getFollowUnit() instanceof IUnitExpression){
+followUnit = (Unit) getFollowUnit().evaluate(unit.getAssignedTask(), unit);
+}
+else if (getFollowUnit() instanceof ReadVariable){
+followUnit = (Unit) ((IUnitExpression) getFollowUnit().evaluate(unit.getAssignedTask(), unit)).
+

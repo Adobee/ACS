@@ -1,0 +1,8 @@
+private double[]			aRange, bRange;
+private double				x0;
+private int					warmup;
+private boolean				swap;
+private boolean				recolor;
+private double				stepa, stepb;
+private double				a0, b0;
+

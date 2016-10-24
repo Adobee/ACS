@@ -1,0 +1,9 @@
+private int findSolutions(int[] rowQ, int row, int n) {
+int rtn = 0;
+for (int c = 0; c < n; c++) {
+if (!isAttack(rowQ, row, c)) {
+rowQ[row] = c;
+private boolean isAttack(int[] rowQ, int row, int col) {
+for (int r = 0; r < row; r++) {
+if ((rowQ[r] == col) || (col - rowQ[r] == row - r)
+

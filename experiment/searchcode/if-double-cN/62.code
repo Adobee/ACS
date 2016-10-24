@@ -1,0 +1,7 @@
+groundNetwork.getNeighbors(e.getNode2())).size();
+double hop3CNs;
+Set<Node> cn = groundNetwork.getNeighbors(e.getNode1());
+Set<Node> nodes = groundNetwork.getNeighbors(n);
+for (Node hop2Cn : nodes) {
+if (!cn.contains(hop2Cn)) { // 不能回到1跳邻居的节点中形成内部的环
+

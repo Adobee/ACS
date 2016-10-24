@@ -1,0 +1,14 @@
+private int interval = 5;
+protected int cImg = 0;
+
+protected boolean readytoUpdate(){
+boolean temp = false;
+if(last + interval <= System.currentTimeMillis()){
+last = System.currentTimeMillis();
+}
+return temp;
+}
+
+protected int getCurrent(int current, int length){
+if(current < length){
+

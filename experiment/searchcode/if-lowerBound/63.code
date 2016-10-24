@@ -1,0 +1,7 @@
+* @author Jaime Bárez Lobato - jaimebarez@gmail.com
+*/
+public class GeneralUtilities {
+
+public static int generateRandomNumber(int lowerbound, int upperbound) {
+/*Why 1f? Example: If upperbound is Integer.MAX_VALUE and lowerbound is 0,
+

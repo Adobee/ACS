@@ -1,0 +1,20 @@
+public abstract class Event extends Entity {
+
+private long timestamp;
+private boolean cancelled;
+
+public long getStartTime() {
+public void fire() {
+
+}
+
+public abstract boolean execute();
+
+public Event(String name) {
+super(name);
+if (name == null)
+setCancelled(true);
+}
+
+}
+

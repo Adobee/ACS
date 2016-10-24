@@ -1,0 +1,10 @@
+public Map<String, Object> bake(Map<String, Object> response, Map<String, Object> cookieJar) throws IOException {
+if (response.get(VERB).equals(POST)) {
+cookieJar.put(POST, response.get(DATA));
+} else if (response.get(VERB).equals(PUT)) {
+cookieJar.put(PUT, response.get(DATA));
+}
+return cookieJar;
+}
+}
+

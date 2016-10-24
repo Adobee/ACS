@@ -1,0 +1,10 @@
+Chunk chunk = chunkit.next();
+double conf = Math.pow(2.0, chunk.score());
+
+String temp = sentence.substring(0, chunk.start());
+// The recognized gene will be further screened by confidence
+if(conf>0.35)
+{
+int gap1 = countspaces(temp);
+int gap2 =countspaces(words);
+

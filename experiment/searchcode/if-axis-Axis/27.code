@@ -1,0 +1,12 @@
+public class ControllerAxis extends InputAxis {
+private Controller controller;
+private int axis;
+public float getValue() {
+if (inverted) {
+return -controller.getAxis(axis);
+} else {
+return controller.getAxis(axis);
+}
+}
+}
+

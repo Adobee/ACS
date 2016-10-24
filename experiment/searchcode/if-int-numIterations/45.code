@@ -1,0 +1,14 @@
+protected Population population;
+protected Chromosome mostOptimalChromosome;
+protected int endCriteria;
+
+//Constructors
+public NonThreadedGA(Population population, int endCriteria)
+this.mostOptimalChromosome = this.population.getMostOptimalMember();
+int numIterations = 0;
+
+while(numIterations < this.endCriteria)
+{
+try {
+this.population.evolve();
+

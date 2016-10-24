@@ -1,0 +1,9 @@
+double limit = Math.pow(10,10);
+int limit2 = 1000000;
+int[] p = MyLib.generatePrimes(limit2);
+for(int i = 0; i < limit2; i++){
+long n = i+1;
+long pn = p[i];
+long mod = pn*pn;
+long a = MyLib.powerMod(pn-1, n, mod);
+

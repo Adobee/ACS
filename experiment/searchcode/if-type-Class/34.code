@@ -1,0 +1,9 @@
+public static final boolean isArrayType( final Type type ) {
+if ( type instanceof Class< ? > ) {
+Class< ? > aClass = (Class< ? >)type;
+return aClass.isArray();
+} else if ( type instanceof GenericArrayType ) {
+return true;
+} else {
+return false;
+

@@ -1,0 +1,8 @@
+return logDirichletNormalizer(a,new FastDoubleGamma());
+}
+public static double logDirichletNormalizer (double[] a, FastGamma gamma){
+for (int i = 0; i < a.length; i++){
+double ai = a[i];
+sum += ai;
+out += gamma.logGamma(ai);
+

@@ -1,0 +1,10 @@
+public static void moveDelta(int deltaX, int deltaY, long delay, boolean varrySpeed) {
+double distance = hypotenuse(deltaX, deltaY);
+if(distance > DELTA_MIN) {
+if(varrySpeed) {
+deltaX = (int)(deltaX * Math.abs(deltaX) * TOUCHPAD_SPEED); //more distance covered for fast movements
+deltaY = (int)(deltaY * Math.abs(deltaY) * TOUCHPAD_SPEED);
+}
+}
+double newDistance = hypotenuse(deltaX, deltaY);
+

@@ -1,0 +1,10 @@
+class Container1 extends Container{
+private Timer r;
+private int x;
+private int y;
+private int limitXLeft = 5;
+private int limitYUp = 25;
+private int limitXRight = 368;
+private int limitYDown = 279;
+private int diameter = 17;
+

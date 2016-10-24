@@ -1,0 +1,10 @@
+private final VersionNumber requiredVersion;
+private boolean allowEarlyAccess = false;
+
+public CheckJvmVersion(String requiredVersion)
+final EnvironmentCheckResult result = checkVersionIsAtLeast(requiredVersion, actualJvmVersion);
+
+if (result.isPassed())
+{
+if (!allowEarlyAccess &amp;&amp; EARLY_ACCESS_QUALIFIER.equalsIgnoreCase(actualJvmVersion.getQualifier()))
+

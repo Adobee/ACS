@@ -1,0 +1,11 @@
+import org.apache.lucene.util.BytesRefIterator;
+
+/**
+* A TokenStream created from a {@link org.apache.lucene.index.TermsEnum}
+*/
+public class TermsEnumTokenStream extends TokenStream {
+clearAttributes();
+BytesRef bytes = termsEnum.next();
+if (bytes == null)
+return false;
+

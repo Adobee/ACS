@@ -1,0 +1,7 @@
+import org.eclipse.edt.mof.egl.InvocationExpression;
+import org.eclipse.edt.mof.egl.IsAExpression;
+import org.eclipse.edt.mof.egl.NewExpression;
+public void genIsaExpressionBoxing(Type type, Context ctx, TabbedWriter out, IsAExpression arg) {
+if (!(arg.getObjectExpr() instanceof BoxingExpression)) {
+BoxingExpression box = factory.createBoxingExpression();
+

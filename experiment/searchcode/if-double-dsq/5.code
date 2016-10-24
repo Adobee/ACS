@@ -1,0 +1,8 @@
+package dsq.sedition.maze.herring;
+
+import dsq.sedition.maze.data.Bounds;
+import dsq.sedition.maze.data.Direction;
+import dsq.sedition.maze.data.Path;
+import dsq.sedition.maze.data.Spot;
+import dsq.sedition.maze.path.DirectPather;
+

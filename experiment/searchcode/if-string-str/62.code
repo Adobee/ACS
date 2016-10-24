@@ -1,0 +1,7 @@
+public String zipZap(String str) {
+for (int i=0; i<str.length()-2; i++)
+if (str.charAt(i)==&#39;z&#39; &amp;&amp; str.charAt(i+2)==&#39;p&#39;)
+str = str.substring(0,i+1) + str.substring(i+2);
+return str;
+}
+

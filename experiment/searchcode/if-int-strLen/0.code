@@ -1,0 +1,8 @@
+public  boolean isBlank(String text) {
+int strLen;
+if (text == null || (strLen = text.length()) == 0) {
+return true;
+}
+for (int i = 0; i < strLen; i++) {
+if (Character.isWhitespace(text.charAt(i)) == false) {
+

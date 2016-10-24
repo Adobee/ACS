@@ -1,0 +1,8 @@
+public class BoxLoader {
+
+public int mostItems(int boxX, int boxY, int boxZ, int itemX, int itemY, int itemZ){
+int[] box = {boxX, boxY, boxZ};
+int[] item = {itemX, itemY, itemZ};
+
+int j = 0;
+

@@ -1,0 +1,12 @@
+protected int currX, currY;
+protected BitmapTerrain t;
+protected double res;
+
+
+public RoverState(int x, int y, BitmapTerrain t){
+if (currX != other.currX)
+return false;
+if (currY != other.currY)
+return false;
+return true;
+

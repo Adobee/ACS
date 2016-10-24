@@ -1,0 +1,14 @@
+return 0;
+}
+
+public double getPrcPositive(String relation) {
+for(RelationStat rel:relStat)
+if (rel.relation.equals(relation))
+for(RelationStat relS:relStat)
+if (relS.relation.equals(rel))
+return relS.npositive;
+return 0;
+}
+
+public double getNobs(String rel) {
+

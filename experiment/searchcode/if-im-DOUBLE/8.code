@@ -1,0 +1,8 @@
+pixieX = (double) im.xsize / (double) (im.end - im.start);
+if (!gdef.logarithmic) {
+pixieY = (double) im.ysize / (im.maxval - im.minval);
+int ytr(double value) {
+double yval;
+if (!gdef.logarithmic) {
+yval = im.yorigin - pixieY * (value - im.minval) + 0.5;
+

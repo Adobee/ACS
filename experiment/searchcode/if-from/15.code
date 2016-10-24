@@ -1,0 +1,14 @@
+package model;
+
+public class Reservation {
+
+private int from;
+private int to;
+private Room room;
+public boolean crash(Reservation r){
+if(from > r.getFrom() &amp;&amp; from < r.getTo()) return true;
+if(to > r.getFrom() &amp;&amp; to < r.getTo()) return true;
+return false;
+}
+}
+

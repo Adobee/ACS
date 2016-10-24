@@ -1,0 +1,7 @@
+CacheObjectRecord record = new CacheObjectRecord(i, creationTime, Long.MAX_VALUE);
+if (i == EXPECTED_EVICTED_RECORD_VALUE) {
+// The record in the middle will be minimum access time.
+CacheObjectRecord evictedRecord = candidateEvictedRecord.getEvictable();
+assertNotNull(evictedRecord);
+if (useExpiredEntry) {
+

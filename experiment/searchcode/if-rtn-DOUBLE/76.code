@@ -1,0 +1,20 @@
+public static double stirling(int k){
+double rtn=PIE_TOW_SQRT*Math.sqrt(k)*Math.pow(k/E, k);
+
+return rtn;
+if(r==0){
+return 1;
+}
+if(k==r){
+return 1;
+}
+if (r>k){
+return -1;
+}
+
+double rtn=stirling(k)/stirling(r)/stirling(k-r);
+return rtn;
+}
+
+}
+

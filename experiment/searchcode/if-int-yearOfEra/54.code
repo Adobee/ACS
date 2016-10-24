@@ -1,0 +1,8 @@
+public Chronology getChronology() {
+return DiscordianChronology.INSTANCE;
+}
+
+public ChronoLocalDate date(int yearOfEra, int month, int day) {
+public ChronoLocalDate dateYearDay(int yearOfEra, int dayOfYear) {
+return getChronology().dateYearDay(this, yearOfEra, dayOfYear);
+

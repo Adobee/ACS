@@ -1,0 +1,9 @@
+public int compareTo(Line o) {
+if(equals(o)){
+return 0;
+}
+else{
+if(this.getP1().getX() <= o.getP1().getX()){
+long bits = java.lang.Double.doubleToLongBits(p1.hashCode() + p2.hashCode());
+bits ^= java.lang.Double.doubleToLongBits(p1.distance(p2)) * 31;
+

@@ -1,0 +1,11 @@
+public class SetTorqueCommand extends Command {
+double percent;
+
+public SetTorqueCommand(double percent) {
+this.percent = percent;
+
+if ( percent > 100 )
+percent = 100;
+
+if ( percent < -100 )
+

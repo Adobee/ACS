@@ -1,0 +1,7 @@
+public void appendDetail(StringBuffer buffer, String fieldName, Object value) {
+if (isLeaf(value)) {
+public void appendDetail(StringBuffer buffer, String fieldName, Collection value) {
+appendDetail(buffer, fieldName, value.toArray());
+}
+}
+

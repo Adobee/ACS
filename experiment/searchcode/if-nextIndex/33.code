@@ -1,0 +1,9 @@
+public static int dp(int a, int b, int index,int count) {
+int res = 0;
+int thisIndex = index;
+int nextIndex = 1 << index + 1;
+index++;
+}
+if ((a &amp; nextIndex) == 0) {
+res = dp((a | (1 << thisIndex + 1)), b, index,count);
+

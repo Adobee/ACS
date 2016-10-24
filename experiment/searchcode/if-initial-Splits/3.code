@@ -1,0 +1,8 @@
+while (!isEmpty()) {
+SplitHolder holder = splits.get(headIndex);
+if (!holder.isProcessed) {
+return holder;
+int configNumSplits = conf.getInt(TezConfiguration.TEZ_AM_GROUPING_SPLIT_COUNT, 0);
+if (configNumSplits > 0) {
+// always use config override if specified
+

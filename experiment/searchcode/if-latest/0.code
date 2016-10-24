@@ -1,0 +1,12 @@
+mLatestListParser = new LatestListParser();
+}
+
+private boolean isOverInterval() {
+if (TimerUtil.getCurrentTime() - mLatestListDatabase.getLatestUpdateDate() > REFRESH_INTERVAL) {
+return false;
+}
+
+public List<Comic> refresh() {
+List<Comic> latestList = mLatestListDatabase.getLatestList();
+if (latestList.isEmpty() || isOverInterval()) {
+

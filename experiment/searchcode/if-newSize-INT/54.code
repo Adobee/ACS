@@ -1,0 +1,15 @@
+m_iUseSize	= 0;
+m_iMaxSize	= 0;
+}
+
+public	int	AllocMem(int newsize)	//重新分配内存
+{
+if (newsize > m_iMaxSize)
+return m_iMaxSize;
+}
+
+public	boolean	Add(int size)
+{
+int newsize = size + m_iUseSize;
+if (AllocMem(newsize +1) >= newsize)
+

@@ -1,0 +1,8 @@
+super(parameters, commandContext);
+}
+
+protected boolean canDoAction() {
+if (!super.canDoAction()) {
+if (getTemplateType() != VmEntityType.INSTANCE_TYPE) {
+if (!validate(getVirtioRngValidator().canAddRngDevice(getVdsGroup(), getParameters().getRngDevice()))) {
+

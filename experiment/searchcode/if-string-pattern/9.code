@@ -1,0 +1,9 @@
+public static boolean matchesOrEquals(String pattern, String match) {
+if (pattern.matches(&quot;^/.*/$&quot;)) {
+return match.equalsIgnoreCase(pattern);
+}
+}
+
+private static String unstripPattern(String pattern) {
+if (pattern.length() == 2 &amp;&amp; pattern.equals(&quot;//&quot;)) {
+

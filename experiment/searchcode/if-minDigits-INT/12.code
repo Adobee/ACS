@@ -1,0 +1,15 @@
+StringBuilder sb = new StringBuilder();
+
+int num = sc.nextInt();
+
+if (num <= 25) {
+sb.append(&#39;a&#39;);
+sb.append(Character.toChars(num + &#39;a&#39;));
+int numOf25 = num / 25;
+
+int localMin = numOf25 - 1;
+
+int minDigits = numOf25 + ((isOdd) ? 1 : 2);
+
+int secondCharValue = (num - localMin * 25);
+

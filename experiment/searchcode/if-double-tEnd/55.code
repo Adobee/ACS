@@ -1,0 +1,10 @@
+public static void main(String[] args)
+{
+double lambdaA = 19.0;
+double lambdaS = 20.0;
+double tEnd = 8.0;
+simulateSingleServer(lambdaA, lambdaS, tEnd);
+}
+
+public static void simulateSingleServer(double lambdaA, double lambdaS, double tEnd)
+

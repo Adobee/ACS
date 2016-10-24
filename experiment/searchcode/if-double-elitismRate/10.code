@@ -1,0 +1,13 @@
+*            next generation [in %]
+*/
+public void setElitismRate(double elitismRate) {
+if (elitismRate < 0 || elitismRate > 1)
+* Access the elitism rate.
+* @return the elitism rate
+*/
+public double getElitismRate() {
+return this.elitismRate;
+}
+
+}
+

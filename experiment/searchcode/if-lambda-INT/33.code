@@ -1,0 +1,8 @@
+this.invStepSize = amplitudes.length / (maxLambda - minLambda);
+}
+
+public float getValue(float lambda) {
+final int maxidx = amplitudes.length - 1;
+if (lambda <= minLambda) return amplitudes[0];
+if (lambda >= maxLambda) return amplitudes[maxidx];
+

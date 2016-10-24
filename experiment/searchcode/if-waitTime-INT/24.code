@@ -1,0 +1,10 @@
+public class TimedPrinter {
+
+private int waitTime;
+private Date lastTime = new Date(0);
+
+public TimedPrinter(int waitTime) {
+Date now = new Date();
+long timePassed = now.getTime() - lastTime.getTime();
+if (timePassed > waitTime) {
+

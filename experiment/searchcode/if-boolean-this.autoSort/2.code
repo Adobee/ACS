@@ -1,0 +1,7 @@
+public SortChest(Block block, Block sign, String signText, int priority, boolean disregardDamage) {
+this.block = block;
+this.sign = sign;
+List<ItemStack> result = new ArrayList<ItemStack>();
+for(String id : parts) {
+if (AutoSort.customMatGroups.containsKey(id)) {
+

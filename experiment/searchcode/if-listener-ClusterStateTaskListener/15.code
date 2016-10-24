@@ -1,0 +1,8 @@
+public interface AckedClusterStateTaskListener extends ClusterStateTaskListener {
+
+/**
+* Called to determine which nodes the acknowledgement is expected from
+* @return true if the node is expected to send ack back, false otherwise
+*/
+boolean mustAck(DiscoveryNode discoveryNode);
+

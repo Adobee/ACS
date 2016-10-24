@@ -1,0 +1,11 @@
+long N = N_;
+long size = N*(N+1L)/2L;
+if (N == 1) {
+return R+G+B;
+} else if (size % 3 == 0) {
+long high = (R+G+B) / size;
+long max = 0;
+while (low <= high) {
+long mid = (low+high)/2;
+if (valid(mid, size, N, R, G, B)) {
+

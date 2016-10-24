@@ -1,0 +1,8 @@
+private static void subdivide(SeededRandom random, List<Point> points, Point A, Point B, Point C, Point D, double minLength)
+{
+if (A.subtract(C).length() < minLength || B.subtract(D).length() < minLength) {
+Point H = Point.interpolate(E, F, q);
+
+// Divide the quad into subquads, but meet at H
+double s = 1.0 - random.nextDoubleRange(-0.4, +0.4);
+

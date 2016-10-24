@@ -1,0 +1,15 @@
+return finalized;
+}
+
+public boolean calculateFinalized() {
+boolean finalizedX;
+
+if (speed.getDoubleX() >= 0.0d) {
+finalizedX = objectPosition.getDoubleX() < target.getDoubleX();
+}
+
+boolean finalizedY;
+
+if (speed.getDoubleY() >= 0.0d) {
+finalizedY = objectPosition.getDoubleY() >= target.getDoubleY();
+

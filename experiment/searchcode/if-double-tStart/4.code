@@ -1,0 +1,6 @@
+* @throws NullPointerException if integrand is null
+*/
+public EvaluatePath(Function integrand, double tStart, double tEnd, int steps) {
+if (integrand.inputDimension() != 2) {
+throw new IllegalArgumentException(&quot;Integrand must have dimension 2&quot;);
+

@@ -1,0 +1,11 @@
+return false;
+}
+}
+
+@Override
+public boolean onTouchEvent(MotionEvent event) {
+if (event.getAction() == MotionEvent.ACTION_DOWN &amp;&amp; event.getEdgeFlags() != 0) {
+linearLayoutParams = (LinearLayout.LayoutParams)layoutParams;
+heightRange = linearLayoutParams.bottomMargin;
+}else if(layoutParams instanceof RelativeLayout.LayoutParams){
+

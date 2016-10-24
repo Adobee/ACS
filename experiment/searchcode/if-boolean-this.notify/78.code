@@ -1,0 +1,11 @@
+if (l == null) {
+return;
+}
+boolean notifyAncestors;
+synchronized (this) {
+notifyAncestors = (notifyAncestors &amp;&amp; hierarchyListener != null);
+newEventsOnly = true;
+}
+if (notifyAncestors) {
+synchronized (getTreeLock()) {
+

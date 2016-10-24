@@ -1,0 +1,13 @@
+* This factory class is responsible for instantiating &quot;chained&quot; {@link Analyzer} instances
+*/
+public class AnalyzerFactory {
+
+private static AnalyzerFactory obj;
+public static AnalyzerFactory getInstance() {
+
+if( obj == null )
+{
+obj = new  AnalyzerFactory();
+}
+return obj;
+

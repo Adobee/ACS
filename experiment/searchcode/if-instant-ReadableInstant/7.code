@@ -1,0 +1,6 @@
+Constructor<?> ctor = TypeUtils.getConstructor(clazz, Object.class);
+ReadableInstant instance = (ReadableInstant) TypeUtils.newInstance(ctor, value);
+
+// If possible, ensure that the return ReadableInstant is in UTC
+if (AbstractInstant.class.isAssignableFrom(clazz))
+

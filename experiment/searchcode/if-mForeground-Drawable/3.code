@@ -1,0 +1,11 @@
+protected void drawableStateChanged() {
+super.drawableStateChanged();
+if (this.mForeground != null &amp;&amp; this.mForeground.isStateful()) {
+this.mForeground.setState(getDrawableState());
+}
+}
+
+public void setForeground(Drawable drawable) {
+if (this.mForeground != drawable) {
+if (this.mForeground != null) {
+

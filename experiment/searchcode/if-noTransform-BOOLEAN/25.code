@@ -1,0 +1,9 @@
+private final boolean noTransform;
+
+String headerValue; // Lazily computed, if absent.
+
+private CacheControl(boolean noCache, boolean noStore, int maxAgeSeconds, int sMaxAgeSeconds,
+int minFreshSeconds, boolean onlyIfCached, boolean noTransform, String headerValue) {
+this.noCache = noCache;
+this.noStore = noStore;
+

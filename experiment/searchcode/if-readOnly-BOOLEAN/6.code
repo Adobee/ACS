@@ -1,0 +1,12 @@
+public void calculateReadonly(){
+// Sólo lectura en el control
+if (!getReadonly()) {
+
+// Sólo lectura en el formulario
+isReadonly = (String) TagUtils.getInstance().lookup(pageContext, name, getPropertyReadonly(), null);
+}
+catch (JspException e) {
+}
+
+if ((isReadonly != null) &amp;&amp;
+

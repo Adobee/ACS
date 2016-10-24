@@ -1,0 +1,10 @@
+return factory.getId();
+}
+
+public boolean delFactory(int id){
+FactoryDAO factoryDAO = new FactoryDAO();
+Factory factory = factoryDAO.findById(id);
+
+ItemDAO itemDAO = new ItemDAO();
+if(itemDAO.findByParent(id+&quot;&quot;).size()>0){
+

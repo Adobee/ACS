@@ -1,0 +1,13 @@
+int actualLengthFieldOffset = dataSink.readerIndex();
+long frameLength;
+switch (headLength) {
+case 1:
+frameLength = dataSink.getUnsignedByte(actualLengthFieldOffset);
+break;
+case 8:
+frameLength = dataSink.getLong(actualLengthFieldOffset);
+
+break;
+default:
+throw new Error(&quot;should not reach here&quot;);
+

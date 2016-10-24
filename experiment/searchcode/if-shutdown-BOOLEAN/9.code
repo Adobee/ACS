@@ -1,0 +1,13 @@
+public ShutdownException() {
+}
+
+public ShutdownException(String message) {
+super(message);
+}
+
+public static void throwIf(boolean isShutdown) {
+throwIf(isShutdown, &quot;Was shut down&quot;);
+}
+
+public static void throwIf(boolean isShutdown, String message) {
+

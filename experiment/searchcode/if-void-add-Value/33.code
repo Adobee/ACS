@@ -1,0 +1,10 @@
+public void add(Boolean value) {
+if (value != null) {
+_query.setBoolean(_pos++, value.booleanValue());
+_query.setDouble(_pos++, value);
+}
+
+public void add(Double value) {
+if (value != null) {
+_query.setDouble(_pos++, value.doubleValue());
+

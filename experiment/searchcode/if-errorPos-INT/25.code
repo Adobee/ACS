@@ -1,0 +1,10 @@
+r = random.nextInt();
+if (r < 0) r = -r;
+if (r / (double)Integer.MAX_VALUE < 0.9) {
+int errorPos = r % 15;
+int[] detectErrorBitPosition(int[] s) {
+
+int[] e = calcErrorPositionVariable(s);
+int[] errorPos = new int[4];
+if (e[0] == -1) {
+

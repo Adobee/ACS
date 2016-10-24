@@ -1,0 +1,7 @@
+public ObjectReplacement(Replacement replacement, Class<?> reportedClass) {
+this.replacement = replacement;
+if (null == replacement) {
+this.reportedClass = null;
+} else if (null == reportedClass) {
+this.reportedClass = replacement.getClass();
+

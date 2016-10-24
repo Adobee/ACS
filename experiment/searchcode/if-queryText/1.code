@@ -1,0 +1,12 @@
+queryText = queryText.replace(&quot;\n&quot;, &quot; &quot;);
+
+String tempQuery;
+String firstPart;
+String secondPart;
+
+if(!queryText.contains(&quot;DESCRIBE &quot;)){
+tempQuery = queryText.substring(0, queryText.indexOf(&quot;{&quot;));
+
+index = tempQuery.indexOf(&quot; SELECT &quot;);
+if(index >= 0 ){
+

@@ -1,0 +1,8 @@
+return clamp(start * (1.0 - t) + end * t, start, end);
+}
+
+public static double relPos(double t, double start, double end) {
+public static double map(double t, double sourceStart, double sourceEnd, double targetStart, double targetEnd) {
+double r = relPos(t, sourceStart, sourceEnd);
+return mix(r, targetStart, targetEnd);
+

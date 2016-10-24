@@ -1,0 +1,8 @@
+import java.util.Comparator;
+
+public class StrategyFactory {
+
+public static Comparator<CachedItem> getComparator(Strategy strategy) {
+if (strategy == Strategy.FIFO)
+return new FIFOComparator();
+

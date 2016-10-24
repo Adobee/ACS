@@ -1,0 +1,7 @@
+for (Entry<A, B> entry : map.entrySet()) {
+DoubleEntry<A, B> entry2 = new DoubleEntry<A, B>(entry.getKey(), entry.getValue());
+KEYS.add(entry2);
+for (DoubleEntry<A, B> entry : KEYS) {
+if (entry.getKey().equals(key)) {
+return entry.getValue();
+

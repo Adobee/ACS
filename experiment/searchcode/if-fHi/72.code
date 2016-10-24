@@ -1,0 +1,11 @@
+public AcceptCondition setAcceptHql(AcceptForm form,FhiUser user){
+
+//设置分页
+Integer pageNo = form.getPageNo();
+if (pageNo != null) {
+this.setPageNo(pageNo);
+StringBuilder hql = new StringBuilder(&quot;select new com.fhi.accept.vo.FhiOaAcceptBordereauxExcelBean(accept) from FhiOaAccept accept where (1=1) &quot;) ;
+
+String code = form.getAccept().getInnerCode();
+if(code!=null &amp;&amp; !code.trim().equals(&quot;&quot;)){
+

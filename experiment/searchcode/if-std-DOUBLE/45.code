@@ -1,0 +1,8 @@
+int N = Integer.parseInt(args[0]);
+double p = Double.parseDouble(args[1]);
+double [][] points = new double[N][2];
+for (int i = 0; i<N; i++) {
+for (int j = i+1; j<N; j++) {
+if (Math.random() < p) {
+StdDraw.line(points[i][0], points[i][1], points[j][0], points[j][1]);
+

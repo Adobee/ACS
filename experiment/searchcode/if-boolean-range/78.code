@@ -1,0 +1,10 @@
+public void validate(Object target, Errors errors) {
+if (range != null &amp;&amp; !range.isEmpty() &amp;&amp; !range.contains((Number) target)) {
+errors.reject(CODE, &quot;Value &quot; + target + &quot; is out of the valid range &quot; + range);
+public WPSInputValidator copy() {
+return new NumberRangeValidator(range);
+}
+
+@Override
+public boolean isUnset() {
+

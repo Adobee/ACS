@@ -1,0 +1,7 @@
+Version requiredVersion = null;
+if (requiredVersionStr != null) {
+requiredVersion = Version.parseVersion(requiredVersionStr);
+Module dependencyModule = findModule(moduleMap, dependency.getModuleSymbolicName(),
+requiredVersion);
+if (dependencyModule == null) {
+

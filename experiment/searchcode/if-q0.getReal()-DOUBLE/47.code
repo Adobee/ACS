@@ -1,0 +1,6 @@
+DerivativeStructure[][] m3 = r.getMatrix();
+double d00 = m2[0][0] - m3[0][0].getReal();
+double d01 = m2[0][1] - m3[0][1].getReal();
+FieldRotation<DerivativeStructure> quat = new FieldRotation<DerivativeStructure>(u1, u2, v1, v2);
+double q2 = quat.getQ0().getReal() * quat.getQ0().getReal() +
+

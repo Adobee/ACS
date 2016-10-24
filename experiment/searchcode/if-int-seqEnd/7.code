@@ -1,0 +1,10 @@
+// globala, lagrar start och slut på sekvensen
+public static int seqStart = 0;
+public static int seqEnd = -1;
+
+/**
+* contiguous subsequence sum algorithm.
+for( int j = i; j < a.length; j++ ) {
+thisSum += a[ j ];
+if( thisSum > maxSum ) {
+

@@ -1,0 +1,12 @@
+package rtl;
+
+class RTLException extends Exception {
+
+private String message;
+
+public RTLException(String message)
+public RTLException(String message, Position p)
+{
+if (p != null)
+this.message = message + &quot; @ &quot; + p.toString();
+

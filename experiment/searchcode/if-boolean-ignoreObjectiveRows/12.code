@@ -1,0 +1,8 @@
+/** Whether to restrict the variables to non-negative values. */
+private final boolean restrictToNonNegative;
+
+/** Simple tableau. */
+private Integer getBasicRow(final int col, boolean ignoreObjectiveRows) {
+Integer row = null;
+int start = ignoreObjectiveRows ? getNumObjectiveFunctions() : 0;
+

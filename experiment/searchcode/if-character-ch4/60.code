@@ -1,0 +1,11 @@
+package Ch4;
+
+import java.text.NumberFormat;
+import java.util.Locale;
+
+/**
+* Created by m805958 on 5/14/15.
+for (int i = 0; i < string.length(); i++) {
+char c = string.charAt(i);
+if (Character.isDigit(c)) {
+

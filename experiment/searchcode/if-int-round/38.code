@@ -1,0 +1,8 @@
+double[][][] p = new double[rounds + 1][n][n];
+p[0][startX][startY] = 1;
+for (int round = 1; round <= rounds; round++) {
+p[round][x - 1][y] += p[round - 1][x][y] / options;
+}
+if (x < n - 1) {
+p[round][x + 1][y] += p[round - 1][x][y] / options;
+

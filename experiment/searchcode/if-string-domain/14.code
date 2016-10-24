@@ -1,0 +1,12 @@
+package com.ogomonkey.architect;
+
+public final class AppConfig {
+public static enum Domain {
+public static void initialize(String appName, String appGroupName, String[] args) {
+if (initialized_)
+return;
+// TODO
+initialized_ = true;
+}
+}
+

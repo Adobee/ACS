@@ -1,0 +1,10 @@
+private int initialIndex;
+private int finalIndex;
+
+//========================
+// Public Methods
+* @param initialIndex		The index of the member to move.
+* @param finalIndex		The destination index
+*/
+public UpdateMemberOrder(int initialIndex, int finalIndex) {
+

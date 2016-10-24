@@ -1,0 +1,13 @@
+PostTypeEnum(int type){
+this.type = type;
+}
+
+public static PostTypeEnum getPostType(int type){
+if(type == 1)
+return QUESTION;
+
+if(type == 2)
+return ANSWER;
+
+throw new RuntimeException(&quot;Invalid type: &quot;+ type);
+

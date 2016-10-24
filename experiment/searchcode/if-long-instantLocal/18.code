@@ -1,0 +1,6 @@
+public IllegalInstantException(long instantLocal, String zoneId) {
+super(createMessage(instantLocal, zoneId));
+}
+
+private static String createMessage(long instantLocal, String zoneId) {
+

@@ -1,0 +1,14 @@
+package ch08.Exer08_12;
+
+public class Complex
+{
+private double parteReal, parteImaginaria;
+
+public Complex()
+{
+parteReal = 0;
+parteImaginaria = 1;
+}
+
+public Complex(double real, double img)
+

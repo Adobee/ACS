@@ -1,0 +1,16 @@
+private static double euclideanNorm( double vector[] )
+{
+
+int n = vector.length;
+
+if ( n < 1 )
+{
+return 0;
+double gnorm1 = delta;
+double gnorm = gnorm1;
+
+if ( gnorm <= eps * gnorm1 )
+search = 0;
+
+iter = 1;
+

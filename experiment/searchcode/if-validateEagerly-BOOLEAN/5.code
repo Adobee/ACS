@@ -1,0 +1,9 @@
+private final List<CallAdapter.Factory> adapterFactories;
+private final Executor callbackExecutor;
+private final boolean validateEagerly;
+
+private Retrofit(OkHttpClient client,   BaseUrl baseUrl, List<Converter.Factory> converterFactories,
+List<CallAdapter.Factory> adapterFactories, Executor callbackExecutor,
+boolean validateEagerly) {
+this.client = client;
+

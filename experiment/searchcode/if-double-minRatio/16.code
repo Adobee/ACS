@@ -1,0 +1,13 @@
+private static int DISTANCE = 5;
+private static double MIN_RATIO = 0.5;
+
+private int distance;
+private double minRatio;
+throw new IllegalArgumentException(&quot;Invalid distance &quot; + line);
+}
+this.distance = distance;
+break;
+
+case 2:
+final double minRatio = Double.valueOf(s[i]);
+

@@ -1,0 +1,10 @@
+public Object process(Object oldValue, Object currentValue) throws AggregateException {
+if (currentValue == null) {
+return oldValue;
+}
+
+Class<?> type = currentValue.getClass();
+
+if (oldValue == null) {
+return currentValue;
+

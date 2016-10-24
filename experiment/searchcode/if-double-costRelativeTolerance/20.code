@@ -1,0 +1,8 @@
+final double costRelativeTolerance = 1e-9;
+final double parRelativeTolerance = 1e-9;
+final double orthoTolerance = 1e-9;
+double[] p = previous.getPoint();
+double[] c = current.getPoint();
+
+if ( Math.abs(p[INDEX_I0] - c[INDEX_I0]) < 5  &amp;&amp;
+

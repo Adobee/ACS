@@ -1,0 +1,14 @@
+private int nextIndex = 0;
+
+public Selection() {
+super();
+select(0);
+}
+
+public void next() {
+if (nextIndex == elements.size()) {
+lastIndex = nextIndex;
+} else {
+if (select(currentIndex) <= select(localMinimum)) {
+deselect(localMinimum);
+

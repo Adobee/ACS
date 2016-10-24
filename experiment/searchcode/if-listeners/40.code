@@ -1,0 +1,5 @@
+void addListenerToFamily(Object family, IJobBusyListener listener) {
+synchronized (familyListeners) {
+Collection currentListeners = (Collection) familyListeners.get(family);
+if (currentListeners == null) {
+

@@ -1,0 +1,12 @@
+import org.jboss.perf.test.server.model.Threshold;
+
+
+public class ThresholdHelper {
+private Map<String, Double> globalThresholdMap;
+ThresholdStatus thStatus = ThresholdStatus.NONE;
+if (value == null) {
+return thStatus;
+}
+
+Double threshold = globalThresholdMap.get(attrName);
+

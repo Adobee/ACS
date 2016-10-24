@@ -1,0 +1,8 @@
+String sort = request.getParameter(&quot;sort&quot;);
+if (sort != null &amp;&amp; !sort.isEmpty()) {
+// 排序
+String fsort = null;
+String order = Page.ORDER_ASC;
+if (sort.charAt(0) == &#39;-&#39;) {
+fsort = sort.substring(1);
+

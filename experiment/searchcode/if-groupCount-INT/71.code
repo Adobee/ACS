@@ -1,0 +1,12 @@
+public static StatusText getInstance(int GroupCount, String[] titles)
+{
+if( instance == null )
+instance = new StatusText(GroupCount, titles);
+throw new IllegalArgumentException();
+}
+
+public Builder(int GroupCount)
+{
+if( GroupCount <= 0 )
+throw new IllegalArgumentException();
+

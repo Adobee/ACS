@@ -1,0 +1,7 @@
+jObject.put(ScheduleColumns.REPEAT_FINISHED, repeat.isRepeatFinished());
+if (repeat.getRepeatStopTime() != null)
+jObject.put(ScheduleColumns.REPEAT_STOP_TIME, repeat.getRepeatStopTime().getTime());
+repeat.setRepeatCount(jObject.getInt(ScheduleColumns.REPEAT_COUNT));
+repeat.setRepeatFrequency(jObject.getInt(ScheduleColumns.REPEAT_FREQUENCY));
+if (jObject.has(ScheduleColumns.REPEAT_MONTH))
+

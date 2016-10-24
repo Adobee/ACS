@@ -1,0 +1,12 @@
+private Map<K, AutoMapValue<K, V>> map;
+private V value;
+
+public Map<K, AutoMapValue<K, V>> getMap()
+{
+if (map == null) map = new HashMap<K, AutoMapValue<K, V>>();
+public AutoMapValue<K, V> get(K key)
+{
+Map<K, AutoMapValue<K, V>> map = getMap();
+AutoMapValue<K, V> e = map.get(key);
+if (e == null) map.put(key, e = new AutoMapValue<K, V>());
+

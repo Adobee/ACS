@@ -1,0 +1,10 @@
+public class GuestBookActionFactory extends ActionFactory{
+
+@Override
+public Action getAction(String actionName) {
+Action action =null;
+if(&quot;insert&quot;.equals(actionName)){
+action = new InsertAction();
+}else if(&quot;form&quot;.equals(actionName)){
+action = new FormAction();
+

@@ -1,0 +1,10 @@
+public static <K, V> HashMap<K, V> newHashMapWithExpectedSize(int expectedSize)
+{
+return new HashMap(capacity(expectedSize));
+}
+
+static int capacity(int expectedSize)
+{
+if (expectedSize < 3) {
+Validate.isTrue(expectedSize >= 0);
+

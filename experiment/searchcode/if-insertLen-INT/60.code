@@ -1,0 +1,11 @@
+fSwapper.cancel();
+fSwapper = null;
+}
+for (int i = 0; i < fScratchFiles.length; ++i) {
+if (fScratchFiles[i] != null) {
+StringBuffer strBuf = new StringBuffer(len);
+if (len > 0) {
+RunSpec spec = findPrevRun(from, fRunSpec);
+try {
+int done = spec.fRun.appendTo(strBuf, len, spec.fOff);
+

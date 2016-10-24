@@ -1,0 +1,11 @@
+* @param drawer The spriteDrawer that is used for drawing the button
+* @param initialDepth The initial drawing depth of the button
+*/
+public AbstractSpriteButton(Vector3D position, HandlerRelay handlers,
+SpriteDrawerType drawer, int initialDepth)
+{
+super(position, handlers, initialDepth);
+
+if (drawer != null)
+drawer.setMaster(this);
+

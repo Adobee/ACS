@@ -1,0 +1,11 @@
+protected boolean modified;
+protected boolean exists=false;
+
+public boolean save() {
+boolean success = true;
+if(!exists()){
+System.out.println(&quot;ABSTRACT : ABOUT TO INSERT&quot;);
+success = insert();
+}
+else if(modified){
+

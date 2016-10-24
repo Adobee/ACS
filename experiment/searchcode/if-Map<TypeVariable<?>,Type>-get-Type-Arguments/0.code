@@ -1,0 +1,7 @@
+return Types.parameterizedType(parameterizedType.getRawType(), typeArgumentsOf(parameterizedType).map(this));
+}
+if (type instanceof TypeVariable) {
+TypeVariable typeVariable = (TypeVariable) type;
+if (!typeMap.containsKey(typeVariable)) {
+throw new UnsupportedOperationException(&quot;Unknown TypeVariable &quot; + typeVariable);
+

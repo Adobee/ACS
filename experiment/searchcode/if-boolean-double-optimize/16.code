@@ -1,0 +1,5 @@
+addSnippetClassDecl(&quot;static boolean test() { return b; }&quot;);
+optimize(&quot;int&quot;, &quot;if (test()) {} else {}; return 0;&quot;).into(
+public void testIfStatementToBoolean_ThenElseOptimization() throws Exception {
+optimize(&quot;void&quot;, &quot;if (b) i = 1; else i = 2;&quot;).intoString(
+

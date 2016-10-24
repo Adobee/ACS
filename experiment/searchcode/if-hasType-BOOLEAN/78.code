@@ -1,0 +1,12 @@
+return new MetricLocation(packageName, typeInfo, null);
+} else if (hasType()) {
+return new MetricLocation(packageName, null, null);
+return packageName;
+}
+
+public boolean hasType() {
+return typeInfo != null;
+}
+
+public NamedLineNumber getTypeInfo() {
+

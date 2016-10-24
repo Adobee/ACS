@@ -1,0 +1,11 @@
+return toVersionFloat(toJavaVersionIntArray(JAVA_VERSION, 3));
+}
+
+private static int getJavaVersionAsInt()
+{
+return toVersionInt(toJavaVersionIntArray(JAVA_VERSION, 3));
+private static int[] toJavaVersionIntArray(String version, int limit)
+{
+if (version == null) {
+return ArrayUtils.EMPTY_INT_ARRAY;
+

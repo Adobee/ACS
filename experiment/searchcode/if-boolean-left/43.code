@@ -1,0 +1,10 @@
+return visit (n.left, n.right);
+}
+
+public Boolean visit (Exp e1, Exp e2)
+{   if (! e1.getClass().equals (e2.getClass()))
+((Boolean) visit (e1.left, e2.right)) &amp;&amp;
+((Boolean) visit (e1.right, e2.left));
+
+if (e1 instanceof Difference)
+

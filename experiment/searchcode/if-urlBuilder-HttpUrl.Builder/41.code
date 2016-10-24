@@ -1,0 +1,4 @@
+public static void findMovies(String userInput, Callback callback){
+HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.Base_URL).newBuilder();
+urlBuilder.addQueryParameter(Constants.Search_Query_Paramater, userInput);
+

@@ -1,0 +1,10 @@
+import cz.muni.fi.raytracer.Intersection;
+import cz.muni.fi.raytracer.Ray;
+import cz.muni.fi.raytracer.Vector3D;
+import cz.muni.fi.raytracer.materials.IMaterial;
+// Fast, Minimum Storage Ray Triangle Intersection, Moller-Trumbore Method
+
+final Vector3D p = ray.getDirection().cross(this.edge2);
+
+final double det = this.edge1.dot(p);
+

@@ -1,0 +1,11 @@
+public class BtCom extends Com
+{
+public static final String TAG=&quot;BtCom&quot;;
+public static final boolean D=true;
+
+private BluetoothChatService chatService;
+public BtCom(Context context,Handler infoHandler,Handler ctrlHandler)
+{
+super(context, infoHandler,ctrlHandler);
+chatService=new BluetoothChatService(context, ctrlHandler);
+

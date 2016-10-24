@@ -1,0 +1,13 @@
+* Purpose: Service that bind authenticator to framework
+*/
+
+
+import android.app.Service;
+import android.content.Intent;
+ret = getAuthenticator().getIBinder();
+return ret;
+}
+
+private Authenticator getAuthenticator() {
+if (authenticator == null)
+

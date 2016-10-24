@@ -1,0 +1,10 @@
+import org.isistan.flabot.javamodel.MixedImplementationsException;
+
+public class ThrowableImpl extends ObjectImpl implements JThrowable {
+Throwable getJavaThrowable() {
+return javaThrowable;
+}
+
+static Throwable getJavaThrowable(JThrowable jThrowable) {
+if(jThrowable instanceof ThrowableImpl) {
+

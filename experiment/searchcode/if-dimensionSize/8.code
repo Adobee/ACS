@@ -1,0 +1,9 @@
+private static final long serialVersionUID = 1081388790985568192L;
+private int dimensionSize;
+private Tokenizer tokenizer;
+private WordWeighting weighting;
+public HashedTextVectorCreator(int dimensionSize, Tokenizer tokenizer, WordWeighting weighting)
+{
+if(dimensionSize <= 1)
+throw new ArithmeticException(&quot;Vector dimension must be a positive value&quot;);
+

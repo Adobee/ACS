@@ -1,0 +1,7 @@
+import org.joda.time.DateTime;
+import org.joda.time.DateTimeZone;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+DateTimeZone zone = DateTimeZone.forID((String) object);
+if (!zone.isFixed() &amp;&amp; zone.nextTransition(now) != now) {
+

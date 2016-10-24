@@ -1,0 +1,9 @@
+public class secretValidator implements Validator{
+
+@Override
+public boolean supports(Class<?> clazz) {
+public void validate(Object target, Errors errors) {
+Secret secretValidate = (Secret)target;
+
+if(secretValidate.getSecret()==null || secretValidate.getSecret().trim().isEmpty())
+

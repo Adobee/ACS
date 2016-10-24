@@ -1,0 +1,15 @@
+public RollingLoggingProfiler(long sleep) {
+if (sleep>0) {
+runMonitor(sleep);
+}
+}
+
+public void logResult() {
+for(String key: taskMeterMap.keySet()) {
+taskIdSet.add(extractId(key));
+}
+
+int i = 0;
+long minStart = -1l;
+long maxEnd = -1l;
+

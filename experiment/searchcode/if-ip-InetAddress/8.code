@@ -1,0 +1,8 @@
+import java.net.UnknownHostException;
+
+public class RestrictedIP {
+
+public static boolean isBanned(InetAddress inetAddress) throws UnknownHostException {
+System.out.println(inetAddress);
+if ( inetAddress.equals(InetAddress.getByName(&quot;127.0.0.1&quot;)) ) {
+

@@ -1,0 +1,8 @@
+StringBuilder buf = new StringBuilder(super.getMessage());
+if (faultyMembers==null || faultyMembers.size() == 0 ) {
+buf.append(&quot;; No faulty members identified.&quot;);
+* @param x Exception
+*/
+public boolean addFaultyMember(Member mbr, Exception x ) {
+return addFaultyMember(new FaultyMember(mbr,x));
+

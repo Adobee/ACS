@@ -1,0 +1,8 @@
+* style variables but there isn&#39;t an AtomicFloat so we just use a volatile.
+*/
+private volatile float requestsPerSecond;
+/**
+* Reference to any the last delayed prepareBulkRequest call. Used during rethrottling and canceling to reschedule the request.
+public BulkByScrollTask(long id, String type, String action, String description, TaskId parentTask, float requestsPerSecond) {
+super(id, type, action, description, parentTask);
+

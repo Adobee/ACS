@@ -1,0 +1,20 @@
+super.add(toBeAdded);
+}
+
+@Override
+public void insert(int toInsert, int pos) {
+if (myCount == cap) {
+resize();
+}
+super.insert(toInsert, pos);
+}
+
+@Override
+public void remove(int pos) {
+if (myCount == cap / 2) {
+downsize();
+}
+super.remove(pos);
+}
+}
+

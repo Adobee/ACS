@@ -1,0 +1,17 @@
+public class FF extends Memory {
+
+private boolean previousClk;
+public FF(int delay) {
+super(delay);
+boolean clk = inputSignals[0].getValue();
+boolean data = inputSignals[1].getValue();
+
+if (clk &amp;&amp; (!previousClk)) {
+result = data;
+}
+previousClk=clk;
+return result;
+}
+
+}
+

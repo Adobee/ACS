@@ -1,0 +1,8 @@
+public class URLRewriter {
+public String rewrite(String siteURL, String baseURL, String urlToRewrite) {
+if(siteURL == null || baseURL == null || urlToRewrite == null) {
+StringBuilder b = new StringBuilder() ;
+char[] buf = urlToRewrite.toCharArray() ;
+for(int i = 0; i < buf.length; i++) {
+if(CharacterSet.isBlank(buf[i])) continue ;
+

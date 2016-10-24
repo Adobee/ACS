@@ -1,0 +1,13 @@
+public class Resize_Canvas implements PlugInFilter {
+
+ImagePlus imp;
+
+public int setup(String arg, ImagePlus imp) {
+this.imp = imp;
+if (IJ.versionLessThan(&quot;1.17y&quot;))
+public void run(ImageProcessor ip) {
+int wOld, hOld, wNew, hNew;
+boolean fIsStack = false;
+
+wOld = ip.getWidth();
+

@@ -1,0 +1,10 @@
+System.out.println(new RockSkipping().probability(s, 50));
+}
+public double probability(String pads, int maxDist){
+
+double state[]=new double[6000];
+for(int i=5999;i>=0;--i){
+char c=pads.charAt(i%pads.length());
+if(state[i]>0&amp;&amp;c!=&#39;X&#39;){
+for(int j=1;j<=maxDist;++j){
+

@@ -1,0 +1,7 @@
+this.min = min;
+this.max = max;
+}
+
+public AxisAlignedBoundingBox(double mix, double miy, double miz, double max, double may, double maz) {
+this(new Vector3d(mix, miy, miz), new Vector3d(max, may, maz));
+

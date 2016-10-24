@@ -1,0 +1,11 @@
+/* PrototypeObjectWrapper.java
+* 8.3.2003 Tatu Tarvainen
+*
+* Wraps a plain object into a Prototype.
+protected Object makeObject() {
+if(object instanceof Persistent)
+((Persistent)object).setId(this.id);
+return object;
+}
+}
+

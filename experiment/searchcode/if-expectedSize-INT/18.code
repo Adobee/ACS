@@ -1,0 +1,8 @@
+static <E> LinkedHashSet<E> newLinkedHashSetWithExpectedSize(int expectedSize) {
+return new LinkedHashSet(calculateInitialCapacity(expectedSize));
+return new LinkedHashMap(calculateInitialCapacity(expectedSize));
+}
+
+private static int calculateInitialCapacity(int expectedSize) {
+if (expectedSize < 3) {
+

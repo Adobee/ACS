@@ -1,0 +1,10 @@
+* @param n
+* @return
+*/
+protected double[] chebyshev(double[] coeff, int n) {
+if (n == 0 || n == 1) {
+coeff[n] = 1;
+}
+if (n > 1) {
+double[] a = new double[coeff.length];
+

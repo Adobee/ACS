@@ -1,0 +1,8 @@
+campaignLevel = campaign.getLevel(levelNumber);
+
+// if level has been saved, load the saved level
+if(campaignLevel.hasUserSave) {
+Level level = FileManager.loadLevelSave(campaign.getName(), ((Integer)levelNumber).toString());
+levelLoaded = level;
+}else if(campaign.hasMasterFiles){// Otherwise, load the level from master file
+

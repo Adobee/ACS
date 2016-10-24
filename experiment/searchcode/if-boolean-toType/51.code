@@ -1,0 +1,11 @@
+if (ancestor.isReference()) return true;
+return false;
+}
+
+public boolean isImplicitCastValidImpl(Type toType) {
+return toType.isNull() || toType.isReference();
+public boolean isCastValidImpl(Type toType) {
+return toType.isNull() || toType.isReference();
+}
+}
+

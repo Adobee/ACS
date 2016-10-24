@@ -1,0 +1,9 @@
+package com.sftpFtp.enumeration;
+
+public enum ProtocolType {
+SFTP, FTP;
+
+public static ProtocolType fromInt(Integer ordinal) {
+for (ProtocolType protocolType : ProtocolType.values()) {
+if (ordinal != null &amp;&amp; ordinal.equals(protocolType.ordinal())) {
+

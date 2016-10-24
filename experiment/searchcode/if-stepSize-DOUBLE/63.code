@@ -1,0 +1,19 @@
+&amp; (x < upperValue + 0.5D * stepSize); cumProb += density(x))
+x += stepSize;
+
+return x;
+}
+if (p <= (double) 0)
+return lowerValue;
+if (p >= (double) 1)
+for (double x = lowerValue; x < upperValue + 0.5D * stepSize; x += stepSize) {
+double d = density(x);
+if (d > max)
+max = d;
+}
+
+return max;
+}
+
+public double median() {
+

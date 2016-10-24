@@ -1,0 +1,12 @@
+* The currently running value
+*/
+private double value;
+
+/**
+* Create a SumOfLogs instance
+*/
+public SumOfLogs() {
+throws MathIllegalArgumentException {
+double sumLog = Double.NaN;
+if (test(values, begin, length, true)) {
+

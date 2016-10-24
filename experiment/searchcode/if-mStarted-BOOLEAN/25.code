@@ -1,0 +1,9 @@
+private final Handler mHandler;
+private final Runnable mRunnable;
+private final long mDelayMillis;
+private boolean mStarted;
+synchronized (this) {
+if (mStarted &amp;&amp; mInterrupted) {
+mStarted = false;
+mInterrupted = false;
+

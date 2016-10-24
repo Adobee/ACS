@@ -1,0 +1,11 @@
+public class MatrixTest
+{
+private static final boolean VERBOSE = false;
+
+int rowDimension = 40;
+int columnDimension = 30;
+fillMatrix(rowDimension, rowDimension);
+if (VERBOSE) displayMatrix(matrix, &quot;matrix&quot;);
+
+Matrix matrixMultiplicationResult = new Matrix(rowDimension, rowDimension);
+

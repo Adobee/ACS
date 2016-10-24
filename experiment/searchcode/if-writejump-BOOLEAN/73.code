@@ -1,0 +1,10 @@
+final BlockContext blockctx = ctx.block();
+boolean allLast = false;
+
+if (blockctx != null) {
+final StatementMetadata blocksmd = metadata.getStatementMetadata(blockctx);
+final ExpressionContext exprctx = ctx.expression();
+final boolean initialize = exprctx == null;
+
+if (!initialize) {
+

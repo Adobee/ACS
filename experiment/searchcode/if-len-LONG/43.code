@@ -1,0 +1,8 @@
+Map<Long , Long> lengthList = new HashMap<Long, Long>();
+for(int i = 1; i < 1000000; i++){
+long len = hailstoneLength(i, lengthList);
+Long maxLong = new Long(0);
+for(Long n: lengthList.keySet()){
+int len = lengthList.get(n).intValue();
+if(len > max){
+

@@ -1,0 +1,8 @@
+if( begin == str.charAt( nonSpace ) ){
+++nonSpace;++runningLength;
+int expPos = expPatternMatcher( str, nonSpace );
+if( expPos == 0 ) {
+expPos = expPatternMatcher( str, nonSpace );
+if( 0 == expPos ) return 0; //this is compile error
+nonSpace += expPos;
+

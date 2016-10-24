@@ -1,0 +1,13 @@
+super.setDao(dao);
+}
+
+public boolean validateIfExecute() {
+
+// by default is true
+boolean execute = true;
+
+String host = IpServer.ipServer();
+
+// search if the actual server is config
+ServerExisting serverExisting = dao.getDataByHost(host);
+

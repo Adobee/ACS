@@ -1,0 +1,13 @@
+public class BossVsEngineerTestCpuTimeEncode {
+
+
+private static final int ROUNDS = 1024;
+
+
+static {
+if (ROUNDS < 7) {
+final double[] consumedLikeAnEngineer = new double[ROUNDS];
+
+for (int i = 0; i < ROUNDS; i++) {
+final byte[] decoded = Tests.decodedBytes();
+

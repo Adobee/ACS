@@ -1,0 +1,9 @@
+public class CustomTimestampEditor extends PropertyEditorSupport {
+
+private final SimpleDateFormat dateFormat;
+private final boolean allowEmpty;
+public CustomTimestampEditor(SimpleDateFormat dateFormat, boolean allowEmpty) {
+this.dateFormat = dateFormat;
+this.allowEmpty = allowEmpty;
+this.exactDateLength = -1;
+

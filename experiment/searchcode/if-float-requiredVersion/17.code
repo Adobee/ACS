@@ -1,0 +1,10 @@
+JAVA_1_7(1.7f, &quot;1.7&quot;),
+JAVA_1_8(1.8f, &quot;1.8&quot;);
+
+private float value;
+private String name;
+
+JavaVersion(final float value, final String name) {
+this.value = value;
+this.name = name;
+

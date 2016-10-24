@@ -1,0 +1,14 @@
+public enum TownKey {
+A, B, C, D, E;
+
+public static boolean isKeyValid(String key) {
+for (TownKey k : TownKey.values()) {
+if (k.name().equals(key)) {
+public static TownKey convert(String key) {
+if (isKeyValid(key)) {
+return TownKey.valueOf(key);
+}
+throw new InvalidTownKeyException(&quot;No valid town key [&quot; + key + &quot;]&quot;);
+}
+}
+

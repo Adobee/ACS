@@ -1,0 +1,7 @@
+// if U1 smaller use computed value for left tail
+double leftTail = firstGreater ? 1 - oneTail : oneTail;
+// if U2 smaller, computed value for right tail
+// http://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U#Normal_approximation
+final double EU = n1n2prod / 2.0;
+final double VarU = n1n2prod * (n1 + n2 + 1) / 12.0;
+

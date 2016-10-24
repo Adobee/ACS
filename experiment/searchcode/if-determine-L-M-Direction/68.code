@@ -1,0 +1,8 @@
+for (Entry<Direction, RouteInfo> entry : adjacentRouteInfos.entrySet()) {
+if (entry.getValue().equals(RouteInfo.UNEXPLORED)) {
+nextDirection = entry.getKey();
+break;
+}
+if (entry.getValue().equals(RouteInfo.VISITED)) {
+Direction directionCandidate = entry.getKey();
+

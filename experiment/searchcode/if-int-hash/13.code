@@ -1,0 +1,9 @@
+public int hash(String key) {
+int hash = 0, x = 0;
+
+for(int i = 0; i < key.length(); i++) {
+hash = (hash << 4) + key.charAt(i);
+
+if((x = hash &amp; 0xF0000000) != 0) {
+hash ^= (x >> 24);
+

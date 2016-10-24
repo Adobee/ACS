@@ -1,0 +1,10 @@
+if (isAcknowlegementMessage) {
+return FillType.AcknowlegementFill;
+} else {
+if (ExecutionTypeConsts.isNormalExecution(executionType)) {
+if (ReportTypeConsts.isFill(messageStatus)) {
+return FillType.NormalFill;
+}
+/** 下单被自动撤单 */
+if (ReportTypeConsts.isCancelled(messageStatus)) {
+

@@ -1,0 +1,9 @@
+double max = arr.length - 1;
+double min = 0;
+double randomValue = min + (max - min) * rng.nextDouble();
+return randomValue;
+}
+
+public double randomf(double min, double max){
+double randomValue = min + (max - min) * rng.nextDouble();
+

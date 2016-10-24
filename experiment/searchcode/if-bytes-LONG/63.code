@@ -1,0 +1,8 @@
+public EopAppBeanRowkey fromBytes(byte[] bytes) {
+if (bytes == null || bytes.length <= Bytes.SIZEOF_LONG) {
+return null;
+}
+
+int strBytesLen = bytes.length - Bytes.SIZEOF_LONG;
+this.setTimestamp(Bytes.toLong(bytes, strBytesLen));
+

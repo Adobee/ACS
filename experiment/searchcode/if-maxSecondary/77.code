@@ -1,0 +1,11 @@
+return (int) (actualPrimary * ratio);
+}
+
+if (maxSecondary == 0) {
+return maxPrimary;
+}
+
+double ratio = (double) actualSecondary / (double) actualPrimary;
+if (scaleType == ImageView.ScaleType.CENTER_CROP) {
+if ((resized * ratio) < maxSecondary) {
+

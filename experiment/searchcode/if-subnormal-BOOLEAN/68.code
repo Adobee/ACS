@@ -1,0 +1,6 @@
+private static int compareSubnormalNumbers(long fracA, long fracB, boolean isNegative) {
+int cmp = fracA > fracB ? +1 : fracA < fracB ? -1 : 0;
+private static int compareAcrossSubnormalThreshold(long normalRawBitsA, long subnormalRawBitsB, boolean isNegative) {
+long fracB = subnormalRawBitsB &amp; FRAC_MASK;
+if (fracB == 0) {
+

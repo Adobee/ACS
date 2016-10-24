@@ -1,0 +1,7 @@
+private IntTreeNode tighten(IntTreeNode root) {
+if (root != null) {
+root.left = this.tighten(root.left);
+root.right = this.tighten(root.right);
+if (root.left == null &amp;&amp; root.right != null) {
+root = root.right;
+

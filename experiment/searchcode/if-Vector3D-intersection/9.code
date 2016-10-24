@@ -1,0 +1,10 @@
+Intersection returnIntersection = new Intersection();
+returnIntersection.intersectedShape = this;
+Vector3D u,v,n;
+u = v2.pSubtract(v1);
+v = v3.pSubtract(v1);
+if(Math.abs(b) < 0.00000001){ // ray is parallel
+if(a == 0){ // ray lies on triangle plane
+returnIntersection.distance = -1;
+return returnIntersection;
+

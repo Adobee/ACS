@@ -1,0 +1,8 @@
+import org.joda.time.DurationField;
+import org.joda.time.DurationFieldType;
+
+public abstract class BaseDurationField extends DurationField implements Serializable {
+protected BaseDurationField(DurationFieldType durationFieldType) {
+if (durationFieldType == null) {
+throw new IllegalArgumentException(&quot;The type must not be null&quot;);
+

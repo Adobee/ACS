@@ -1,0 +1,11 @@
+int tokenLen;
+
+public NMer (int tl) {
+if (tl <= 0) {
+throw new IllegalArgumentException
+(&quot;Token length must be positive&quot;);
+for (int i = 0; i < line.length() - tokenLen + 1; i++) {
+String token = line.substring (i, i + tokenLen);
+IntHolder ih = lineTab.get (token);
+if (ih == null) {
+

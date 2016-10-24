@@ -1,0 +1,8 @@
+public boolean delete(Long id) {
+Data foundData = dataRepository.findOne(id);
+if (foundData != null) {
+logger.info(&quot;Delete data: &quot; + id);
+public boolean update(Data data) {
+Data foundData = dataRepository.findOne(data.getDataId());
+if (foundData != null) {
+

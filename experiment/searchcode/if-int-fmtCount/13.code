@@ -1,0 +1,8 @@
+final char[] c = pattern.toCharArray();
+int fmtCount = 0;
+while (pos.getIndex() < pattern.length()) {
+switch (c[pos.getIndex()]) {
+Validate.isTrue(foundFormats.size() == fmtCount);
+Validate.isTrue(foundDescriptions.size() == fmtCount);
+if (c[pos.getIndex()] != END_FE) {
+

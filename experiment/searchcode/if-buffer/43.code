@@ -1,0 +1,9 @@
+private void strip(StringBuilder buffer) {
+boolean doMore = true;
+while ((doMore) &amp;&amp; (buffer.length() > 3)) {
+if ((buffer.length() + this.substCount > 5) &amp;&amp; (buffer.substring(buffer.length() - 2, buffer.length()).equals(&quot;nd&quot;))) {
+buffer.delete(buffer.length() - 2, buffer.length());
+continue;
+}
+if ((buffer.length() + this.substCount > 4) &amp;&amp; (buffer.substring(buffer.length() - 2, buffer.length()).equals(&quot;em&quot;))) {
+

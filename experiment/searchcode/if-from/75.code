@@ -1,0 +1,8 @@
+public void parameterDeal(String fromYear,String fromMonth) throws BillySearchException{
+if(fromYear == null || (fromMonth != null &amp;&amp; fromMonth.length()>0 &amp;&amp; !Tool.isRightMonth(fromMonth) || !Tool.isRightYear(fromYear))){
+throw new BillySearchException(BillySearchException.ERROR_PARAMETER);
+}
+toDate = null;
+boolean yearCompute = false;
+if(fromMonth == null || fromMonth.length()==0){
+

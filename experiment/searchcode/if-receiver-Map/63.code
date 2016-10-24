@@ -1,0 +1,6 @@
+CopyOnWriteArrayList<ReceiverWrapper> list=receiverMap.get(wrapper.meta.eventType);
+if(list==null){
+list=new CopyOnWriteArrayList<ReceiverWrapper>();
+listenner.sendStickEvent(wrapper);
+CopyOnWriteArrayList<ReceiverWrapper> temp= receiverMap.putIfAbsent(wrapper.meta.eventType, list);
+

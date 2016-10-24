@@ -1,0 +1,11 @@
+else { lower = x; fl = fx;}
+}
+return(x);
+}
+
+public static  double defIntegral(double a, double b, int nsteps,Function f){
+int i;
+double h = (b-a)/nsteps;
+double x = a;
+double sum = (f.evaluate(a)+f.evaluate(b))/2;
+

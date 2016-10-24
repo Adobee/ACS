@@ -1,0 +1,16 @@
+public class OffspringNumsStopCondition extends StopCondition {
+
+private int offspringNums;
+private boolean stop;
+
+public OffspringNumsStopCondition(int offspringNums) {
+@Override
+public boolean stop() {
+if(super.offspringNums>this.offspringNums) {
+stop = true;
+}
+return stop;
+}
+
+}
+

@@ -1,0 +1,10 @@
+private double minChisquare = 10.83;
+
+private double minSupport = 0.1;
+
+private long maxInterval = 0;
+
+public static long maxTimeInSec = 60 * 60 * 4; // 4 hours for each case
+public ExperimentTestCase(String algorithmName, String eventFileName,
+int topK, double minChisquare, double minSupport, long maxInterval) {
+

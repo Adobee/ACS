@@ -1,0 +1,17 @@
+* @see com.sohlman.dataset.GroupCalc#calculateGroupBy(Object[])
+*/
+public Object calculateGroupBy(Object[] a_Objects)
+{
+if(a_Objects==null)
+Comparable l_Comparable_Current = (Comparable)a_Objects[li_index];
+
+if(l_Comparable_Current.compareTo(l_Comparable_Max) > 0)
+{
+l_Comparable_Max = l_Comparable_Current;
+}
+}
+
+return l_Comparable_Max;
+}
+}
+

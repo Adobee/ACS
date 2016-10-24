@@ -1,0 +1,8 @@
+public class Reverse {
+
+public String reverse(String str) {
+if(str.length() <= 1) {
+return str;
+}
+String result = &quot;&quot; + str.charAt(str.length() - 1);
+

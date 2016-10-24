@@ -1,0 +1,8 @@
+private final String name;
+
+/** The change in the screens seen */
+private final int changeInScreensSeen;
+public APKScreensSeenChanged(String name, int changeInScreensSeen) {
+if (name == null) {
+throw new IllegalArgumentException(&quot;APK name must be not null.&quot;);
+

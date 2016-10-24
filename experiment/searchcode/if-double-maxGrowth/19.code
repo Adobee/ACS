@@ -1,0 +1,16 @@
+private double safety;
+
+private double minReduction;
+
+private double maxGrowth;
+
+protected MultistepIntegrator(final java.lang.String name ,final int nSteps ,final int order ,final double minStep ,final double maxStep ,final double scalAbsoluteTolerance ,final double scalRelativeTolerance) {
+this.minReduction = minReduction;
+}
+
+public double getMaxGrowth() {
+return maxGrowth;
+}
+
+public void setMaxGrowth(final double maxGrowth) {
+

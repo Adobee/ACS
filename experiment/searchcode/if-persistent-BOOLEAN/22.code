@@ -1,0 +1,10 @@
+private boolean persistent;
+private boolean unique;
+private boolean hash;
+private boolean scan;
+private boolean spatial;
+public static IndexType createPrimaryKey(boolean persistent, boolean hash)
+{
+IndexType type = new IndexType();
+type.primaryKey = true;
+

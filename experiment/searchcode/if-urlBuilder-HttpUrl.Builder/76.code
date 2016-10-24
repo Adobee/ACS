@@ -1,0 +1,6 @@
+OkHttpClient client = new OkHttpClient.Builder().build();
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(&quot;http://api.themoviedb.org/3/movie&quot;).newBuilder();
+urlBuilder.addPathSegment(movieId);
+urlBuilder.addPathSegment(&quot;videos&quot;);
+

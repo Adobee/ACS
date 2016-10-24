@@ -1,0 +1,7 @@
+private static final double ANGLE_CORRECTION_INTENSITY = 0.02, MAX_ANGLE_CORRECTION_SPEED = 0.2;
+private boolean initialized = false;
+
+public double getTurnValue(double correctionIntensity)
+{
+if(initialized == false)
+

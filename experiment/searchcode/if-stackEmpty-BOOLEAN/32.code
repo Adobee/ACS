@@ -1,0 +1,9 @@
+} else if (action == Actions.RightArc) { //right arc
+if (state.stackEmpty())
+return false;
+return !(!state.bufferEmpty() &amp;&amp; state.bufferHead() == state.rootIndex) &amp;&amp; !state.bufferEmpty() &amp;&amp; !state
+.stackEmpty();
+
+} else if (action == Actions.LeftArc) { //left arc
+if (state.stackEmpty() || state.bufferEmpty())
+

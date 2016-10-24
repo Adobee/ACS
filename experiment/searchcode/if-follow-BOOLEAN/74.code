@@ -1,0 +1,7 @@
+public void addFollower(String follow, String follower) {
+if (!followers.containsKey(follow)) followers.put(follow, new HashSet<>());
+followers.get(follow).add(follower);
+}
+
+public boolean isFollower(String follow, String follower) {
+

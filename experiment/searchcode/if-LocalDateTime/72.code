@@ -1,0 +1,15 @@
+package it.macke.blog.domain;
+
+import java.time.LocalDateTime;
+
+import javax.persistence.Column;
+public void updateCreatedAt()
+{
+final LocalDateTime now = LocalDateTime.now();
+if (getCreatedAt() == null)
+{
+setCreatedAt(now);
+}
+}
+}
+

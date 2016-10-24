@@ -1,0 +1,13 @@
+throw new InvalidPathException(&quot;Two-character path contained an illegal character &quot;+ONECHARSIMPLENAME);
+}
+}
+else
+{
+boolean hasColon = false;
+if( ch == &#39; &#39; &amp;&amp; (i != 0 || i != component.length()) )
+continue;
+
+if( ch == &#39;:&#39; )
+{
+if( hasColon ) throw new InvalidPathException(&quot;More than one colon&quot;);
+

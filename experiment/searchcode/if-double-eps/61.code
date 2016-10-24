@@ -1,0 +1,11 @@
+public class ScalarFirstOrderDifferentiator
+implements Differentiator<Double, Double, Double> {
+
+private static final double DEFAULT_EPS = 1e-5;
+ArgChecker.isTrue(domain.apply(x), &quot;point {} is not in the function domain&quot;, x.toString());
+
+double[] y = new double[3];
+double[] w;
+
+if (!domain.apply(x + eps)) {
+

@@ -1,0 +1,13 @@
+public class MySemaphore extends Thread{
+Semaphore position;
+private int id;
+
+public MySemaphore(int i,Semaphore s){
+this.id = i;
+this.position = s;
+}
+
+public void run(){
+if(position.availablePermits() > 0){
+System.out.println();
+

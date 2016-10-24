@@ -1,0 +1,12 @@
+public boolean search(int[] a, int t) {
+int n = a.length;
+if(n == 0){
+return false;
+}
+return binarySearch(a, 0, n-1, t);
+boolean binarySearch(int[] a, int start, int end, int t){
+if(start > end){
+return false;
+}
+int m = (start + end)/2;
+

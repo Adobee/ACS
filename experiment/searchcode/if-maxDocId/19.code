@@ -1,0 +1,10 @@
+//here we get posting list as inverted index
+Map<Integer,Integer> temporalMap = index.getSinglePostingList(term.getKey());
+if (temporalMap == null || temporalMap.size()== 0)
+for ( int i = 0 ; i < count ; i++){
+int maxDocID = maxResult(input);
+if( maxDocID == -1){
+break;
+}
+results.add(maxDocID);
+

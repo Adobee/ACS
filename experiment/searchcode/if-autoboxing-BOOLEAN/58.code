@@ -1,0 +1,9 @@
+* >IntegerInstantiation</a>. It replaces an Integer instantiation with autoboxing.
+*
+* @author Philip Graf
+*/
+public class IntegerInstantiationAutoboxingQuickFix extends ASTQuickFix<ClassInstanceCreation> {
+private static final Pattern ARGUMENT = Pattern.compile(&quot;\\((.*)\\)&quot;);
+
+public IntegerInstantiationAutoboxingQuickFix(final PMDMarker marker) {
+

@@ -1,0 +1,10 @@
+package com.aron.utils;
+
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
+HttpURLConnection httpURLconnection = (HttpURLConnection) url.openConnection();
+httpURLconnection.setDoInput(true);
+httpURLconnection.connect();
+if (httpURLconnection.getResponseCode() == 200) {
+

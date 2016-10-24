@@ -1,0 +1,9 @@
+Locale locale = (Locale) request.getSession().getAttribute(Globals.LOCALE_KEY);
+if(locale==null) {
+locale = request.getLocale();
+}
+if(locale==null) {
+locale = new Locale(&quot;es&quot;);
+}
+if( !&quot;es&quot;.equals(locale.getLanguage()) &amp;&amp; !&quot;ca&quot;.equals(locale.getLanguage()) ) {
+

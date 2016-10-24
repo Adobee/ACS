@@ -1,0 +1,11 @@
+public static BuilderEncodedValue defaultValueForType(String type) {
+switch (type.charAt(0)) {
+case &#39;Z&#39;:
+return BuilderBooleanEncodedValue.FALSE_VALUE;
+throw new ExceptionWithContext(&quot;Unrecognized type: %s&quot;, type);
+}
+}
+
+public static class BuilderBooleanEncodedValue extends BaseBooleanEncodedValue
+implements BuilderEncodedValue {
+

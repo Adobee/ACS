@@ -1,0 +1,12 @@
+return post(nod.l) + &quot; &quot; + nod.n;
+}
+return post(nod.l) + &quot; &quot; + post(nod.r) + &quot; &quot; + nod.n;
+}
+public static double eval(Node nod)
+{
+if(nod.l == null &amp;&amp; nod.r == null)
+{
+return Double.parseDouble(nod.n);
+}
+if(nod.n.equals(&quot;+&quot;))
+

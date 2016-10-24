@@ -1,0 +1,12 @@
+import org.apache.wicket.util.lang.Bytes;
+
+public class BytesToLongModel extends LoadableDetachableModel<Long> {
+
+private static final long serialVersionUID = 3511276823849427019L;
+@Override
+protected Long load() {
+if (bytesModel.getObject() == null) {
+return null;
+} else {
+return Long.valueOf(bytesModel.getObject().bytes());
+

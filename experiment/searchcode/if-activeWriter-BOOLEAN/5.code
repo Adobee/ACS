@@ -1,0 +1,8 @@
+private final TransactionableStringIntHashMap table = new TransactionableStringIntHashMap(1024, 1);
+private StringWriter activeWriter;
+
+public static StringRegistry getInstance() {
+public void writeToIfStarted(PrimitiveAmfOutputStream to) {
+if (stringRegistry.activeWriter == null) {
+assert counter == 0;
+

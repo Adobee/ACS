@@ -1,0 +1,12 @@
+return this.getLinesInView(world.getLinesList());
+}
+public ArrayList<LineFloat> getLinesInView(ArrayList<LineFloat> lines)
+{
+ArrayList<LineFloat> lns = new ArrayList<LineFloat>();
+for(LineFloat line : lines)
+if(inView(line.getP1()) || inView(line.getP2()))
+lns.add(line);
+return lns;
+}
+public ArrayList<LineFloat> getLinesInView(LineFloat... lines)
+

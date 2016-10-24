@@ -1,0 +1,14 @@
+return speedXGenerate[speedX_i++];
+}
+
+private double getSpeedY()
+{
+if (speedY_i > (speedYGenerate.length - 1))
+speedy[i] = getSpeedY();
+currentLifeNs[i] = lifeNs;
+}
+
+public void update(double ns)
+{
+if (delayNs > 0)
+

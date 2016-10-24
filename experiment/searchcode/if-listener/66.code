@@ -1,0 +1,12 @@
+private List<T> listenerListe = new LinkedList<T>();
+
+@Override
+public void addListener(T listener) {
+if (listenerListe.contains(listener) == false)
+listenerListe.add(listener);
+}
+
+@Override
+public void removeListener(T listener) {
+if (listenerListe.contains(listener))
+

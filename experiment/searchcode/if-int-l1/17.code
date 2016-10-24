@@ -1,0 +1,12 @@
+if (l1.size() == 6 &amp;&amp; l2.size() == 6) {
+if (constraintsSatisfied(l1, l2)) {
+return 1;
+} else {
+return 0;
+}
+}
+int solutions = 0;
+if (l1.size() < 6) {
+for (int i = 0; i < 10; i++) {
+if (l1.contains(i) || (l1.size() > 0 &amp;&amp; l1.get(l1.size() - 1) > i)) {
+

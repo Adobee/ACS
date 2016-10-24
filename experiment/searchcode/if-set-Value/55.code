@@ -1,0 +1,14 @@
+synchronized (mValue) {
+mValue.setValue(value);
+}
+if (doShare == true)
+postShareField(this);
+}
+
+public void setValue(boolean value) {
+setValue(value, true);
+}
+
+public void setValue(String value) {
+if (value.equalsIgnoreCase(&quot;TRUE&quot;) == true)
+

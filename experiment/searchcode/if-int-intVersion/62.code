@@ -1,0 +1,11 @@
+private float	yCoord;
+
+/**
+* Construct a Point2f from a Point2i
+*
+* @param intVersion The Point2i to convert to a float
+*/
+public Point2f(Point2i intVersion)
+{
+this(intVersion.getX(), intVersion.getY());
+

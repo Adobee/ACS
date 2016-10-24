@@ -1,0 +1,12 @@
+ResultType res = helper(root, target);
+return res.val;
+}
+
+public ResultType helper(TreeNode root, double target) {
+if(root == null){
+ResultType right = helper(root.right, target);
+
+int closestVal = 0;
+double minDiff = 0;
+// get the minimum difference in the left and right tree
+

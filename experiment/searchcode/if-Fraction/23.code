@@ -1,0 +1,11 @@
+assertEquals(new Fraction(1,4), result);
+
+Boolean a = f.equals(g.multiply(h));
+assertEquals(true, a);
+
+if (!f.equals(g.multiply(h)))
+System.out.println(&quot;Multiply ok&quot;);
+
+if(new Fraction(1, 2).equals(new Fraction(1, 2)))
+System.out.println(&quot;Both fractions are equal&quot;);
+

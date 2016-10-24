@@ -1,0 +1,10 @@
+* Supplemental class for operations with precision
+*/
+public class Precision
+{
+private final double delta;
+
+public Precision(double delta) {
+if (!Double.isFinite(delta))
+throw new IllegalArgumentException(&quot;delta is not finite&quot;);
+

@@ -1,0 +1,9 @@
+private static final int speed = 10;
+private int targetX, targetY;
+private double dist;
+
+public Projectile(int x, int y, int targetX, int targetY) {
+public void update() {
+double tx = targetX - x, ty = targetY - y;
+dist = Math.sqrt(tx * tx + ty * ty);
+

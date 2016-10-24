@@ -1,0 +1,9 @@
+package com.company.module.secure;
+
+import org.springframework.aop.MethodBeforeAdvice;
+
+import java.lang.reflect.Method;
+public void before(Method method, Object[] objects, Object o) throws Throwable {
+String logedInUser = &quot;Sergey&quot;;
+boolean isLoggedIn = secureManager.isLogedIn(logedInUser);
+

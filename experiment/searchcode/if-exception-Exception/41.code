@@ -1,0 +1,11 @@
+package com.ery.base.support.jdbc;
+
+import java.sql.SQLException;
+
+
+public class JdbcException extends RuntimeException {
+super(e.getMessage());
+if(e instanceof JdbcException){
+JdbcException je = (JdbcException)e;
+baseException = je.getException();
+

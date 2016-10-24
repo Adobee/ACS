@@ -1,0 +1,11 @@
+super(temporaryParent, locationIn);
+
+Scope scope = new Scope(this, locationIn.asNew());
+setScope(scope);
+* @see net.fathomsoft.nova.tree.Node#pendingScopeFragment(Node)
+*/
+@Override
+public boolean pendingScopeFragment(Node node)
+{
+return getScope().isEmpty();
+

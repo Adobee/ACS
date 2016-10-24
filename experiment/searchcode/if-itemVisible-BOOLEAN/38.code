@@ -1,0 +1,10 @@
+public void clickButtonAddOrEditSubmission() {
+boolean itemVisible = false;
+try{
+driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
+itemVisible = button.isDisplayed();
+}
+catch (NoSuchElementException ex){}
+if (itemVisible){
+WebElement button = driver.findElementByCssSelector(&quot;input[value=&#39;&quot; +
+

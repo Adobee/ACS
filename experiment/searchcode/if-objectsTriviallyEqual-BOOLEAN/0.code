@@ -1,0 +1,8 @@
+public DiffBuilder append(String fieldName, final boolean lhs, final boolean rhs)
+{
+if (fieldName == null) {
+throw new IllegalArgumentException(&quot;Field name cannot be null&quot;);
+}
+if (this.objectsTriviallyEqual) {
+return this;
+

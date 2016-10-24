@@ -1,0 +1,10 @@
+import java.util.Map.Entry;
+
+public abstract class AExpressionLib {
+private String packageName; //表情包名
+private int packageIcon; //表情包图标
+public int getImgId(String name) {
+for(Map.Entry<String, Integer> entry : expressions) {
+if(entry.getKey().equals(name))
+return entry.getValue();
+

@@ -1,0 +1,8 @@
+return true;
+boolean[][] row=new boolean[9][9];
+boolean[][] col=new boolean[9][9];
+boolean[][] block=new boolean[9][9];
+int val=board[i][j]-&#39;1&#39;;
+if(row[i][val]||col[j][val]||block[i/3*3+j/3][val])
+return false;
+

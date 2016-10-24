@@ -1,0 +1,11 @@
+if(getClass() != obj.getClass()) {
+return false;
+}
+Pair<?, ?> other = (Pair<?, ?>) obj;
+if(lhs == null) {
+if(other.lhs != null) {
+return false;
+}
+} else if(!lhs.equals(other.lhs)) {
+return false;
+

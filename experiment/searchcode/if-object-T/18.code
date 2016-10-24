@@ -1,0 +1,19 @@
+public T createObject(P params) {
+T object = findObject(params);
+Logger.debug(&quot;params(%s), object(%s)&quot;,
+params, object);
+
+if (object != null) {
+return object;
+}
+
+object = super.createObject(params);
+if (object != null) {
+cacheObject(object);
+}
+
+return object;
+}
+
+}
+

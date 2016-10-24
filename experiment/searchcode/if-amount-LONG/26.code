@@ -1,0 +1,10 @@
+public synchronized void withDraw(long amount){
+checkAmountNotNegative(amount);
+if (balance < amount){
+balance -= amount;
+}
+
+private static void checkAmountNotNegative(long amount){
+if (amount < 0){
+throw new IllegalArgumentException(&quot;negative amount&quot;);
+

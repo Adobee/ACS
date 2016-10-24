@@ -1,0 +1,16 @@
+public class StackWithLinkedList<T> implements IStack<T> {
+
+LinkedListNode<T> head;
+int itemCount;
+
+public StackWithLinkedList() {
+head = null;
+head = new LinkedListNode<T>(item,head);
+itemCount++;
+}
+
+@Override
+public T pop() {
+if(itemCount == 0){
+return (T)null;
+

@@ -1,0 +1,15 @@
+public class Triple<P, K, L> {
+P v1;
+K v2;
+L v3;
+
+public Triple(P v1, K v2, L v3) {
+super();
+this.v1 = v1;
+return v1.hashCode() + v2.hashCode() + v3.hashCode();
+}
+
+@Override
+public boolean equals(Object obj) {
+if (!Triple.class.isInstance(obj))
+

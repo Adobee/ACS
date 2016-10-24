@@ -1,0 +1,11 @@
+this.columnDimension = columnDimension;
+setupParameters();
+}
+
+public void setRowDimension(int rowDimension) {
+matrixParameter = new TransposedMatrixParameter(name);
+}
+
+if (xo.hasAttribute(ROW_DIMENSION)) {
+int rowDimension = xo.getIntegerAttribute(ROW_DIMENSION);
+

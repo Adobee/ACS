@@ -1,0 +1,14 @@
+public void $initializeObject(Object object) {
+if (object instanceof Persistent) {
+this.$object = object;
+this.$modified = false;
+}
+
+public void $SetModified(Object value) {
+if (this.$object != null) {
+((Persistent)this.$object).$SetModified(value);
+}
+}
+
+}
+

@@ -1,0 +1,7 @@
+public class UeditorMultipartResolver extends CommonsMultipartResolver {
+
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+String requestURI = request.getRequestURI();
+if (!StringUtil.isNull(requestURI) &amp;&amp; requestURI.indexOf(ConstantUtil.UEDITOR_UPLOAD_URL) != -1) {
+

@@ -1,0 +1,19 @@
+
+package cn.featherfly.conversion.core.basic;
+
+
+
+/**
+* <p>
+* 双精度浮点数转换器
+* </p>
+*
+* @author 钟冀
+//    protected Double doToObject(String value, GenericType<Double> genericType) {
+//        if (StringUtils.isNotBlank(value)) {
+//            return Double.parseDouble(value);
+//        }
+//        return -1d;
+//    }
+}
+

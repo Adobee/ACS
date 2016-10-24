@@ -1,0 +1,10 @@
+public DetectionSettings(String language, String cloneGranularity,
+String cloneSetType, String sourceTransformation, boolean verbose, String ... cloneTypes) {
+super();
+* @param cloneType : Type-1, Type-2, Type-3
+* @return
+*/
+public boolean containsType(String cloneType){
+if(!cloneType.startsWith(&quot;Type&quot;))
+new SimcadException(&quot;Invalid type string : &quot;+ cloneType);
+

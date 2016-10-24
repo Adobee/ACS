@@ -1,0 +1,12 @@
+package com.hosa.web.context;
+
+
+
+public class ContextHolder {
+
+private static final ThreadLocal<Context> contextHolder = new ThreadLocal<Context>();
+Context context = contextHolder.get();
+if(context==null){
+context = new Context(-1L);
+contextHolder.set(context);
+

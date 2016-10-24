@@ -1,0 +1,13 @@
+private int xSize;
+
+private int ySize;
+
+private List<Probe> probes;
+
+public Plateau(int xSize, int ySize) {
+this.xSize = xSize;
+public void probePositionUpdated(Probe probe) throws ProbeNotFoundException, ProbeOutPlateauException {
+int index = probes.indexOf(probe);
+if(index >= 0) {
+int probeX = probe.getX();
+

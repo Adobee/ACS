@@ -1,0 +1,13 @@
+private T[] data;
+private int numValues ;
+
+public InternalArrayIterator  iter;
+
+public Array(int quantity){
+data = (T[]) new Object[quantity];  //instantiate an array of a finite capacity
+return new ArrayIterator<T>(data, numValues);
+}
+
+class InternalArrayIterator  {
+private int position;
+

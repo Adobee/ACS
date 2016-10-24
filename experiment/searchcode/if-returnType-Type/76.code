@@ -1,0 +1,8 @@
+class DefaultResponseBuilder {
+
+public static Object getDefaultResponseForType (final Class<?> returnType) {
+if (Arrays.asList (int.class, byte.class, char.class, double.class, float.class, int.class, long.class, short.class).contains (returnType)) {
+return 0;
+}
+if ( (returnType == boolean.class) || (returnType == Boolean.class)) {
+

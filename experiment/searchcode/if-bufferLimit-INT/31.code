@@ -1,0 +1,9 @@
+isOpen = false;
+
+
+protected int bufferLimit = 5000;
+protected String bufferLines = &quot;&quot;;
+// do we need to flush this data to disk?
+if(bufferLines.length() > bufferLimit){
+saveToDisk(bufferLines);
+

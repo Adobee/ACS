@@ -1,0 +1,10 @@
+return new MutableDateTime();
+}
+public static MutableDateTime now(DateTimeZone zone) {
+if (zone == null)
+Chronology chrono = getChronology();
+
+if (chrono.getZone() != newZone)
+{
+setChronology(chrono.withZone(newZone));  // set via this class not super
+

@@ -1,0 +1,20 @@
+public void delete(ChecksumPair key){
+
+return;
+}
+
+@Override
+public boolean matched(int blockIndex) {
+
+if (blockIndex > 0 &amp;&amp; blockIndex < this.blockcount()) {
+return matchMap[blockIndex] != null;
+}
+
+return false;
+}
+
+@Override
+public void removematch(int blockIndex) {
+
+if (blockIndex > 0 &amp;&amp; blockIndex < this.blockcount()) {
+

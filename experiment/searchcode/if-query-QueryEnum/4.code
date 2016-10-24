@@ -1,0 +1,8 @@
+public class IDFilteredScorer<E extends Enum<E>> extends FilteredScorer {
+
+private final E queryEnum;
+private final ScorerAttributionCollector<E> attrCollector;
+if (attrCollector != null) {
+if (docid != NO_MORE_DOCS) {
+attrCollector.collectScorerAttribution(docid, queryEnum, this);
+

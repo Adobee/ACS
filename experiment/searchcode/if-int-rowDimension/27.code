@@ -1,0 +1,14 @@
+return factor;
+}
+
+public int rowOrder() {
+return rowDimension().width();
+}
+
+public int columnOrder() {
+public IndexSet nthRowIndexSet(int n) {
+return rowDimension().nthIndexSet(n);
+}
+
+public IndexSet nthColumnIndexSet(int n) {
+

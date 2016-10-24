@@ -1,0 +1,8 @@
+* @throws NotPositiveException
+*             if {@code numberOfSuccesses < 0}.
+* @throws NumberIsTooLargeException
+static void checkParameters(int numberOfTrials, int numberOfSuccesses, double confidenceLevel) {
+
+if(numberOfTrials <= 0) {
+throw new NotStrictlyPositiveException(LocalizedFormats.NUMBER_OF_TRIALS, numberOfTrials);
+

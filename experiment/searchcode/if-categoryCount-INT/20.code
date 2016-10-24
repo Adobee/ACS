@@ -1,0 +1,7 @@
+// Calculate which category is most often a neighbour
+final int[] categoryCount = new int[categories.length];
+for (Pair<Float, Integer> pair : heap) {
+int maxValue = -1;
+for (int i = 0; i < categoryCount.length; i++) {
+if (categoryCount[i] > maxValue) {
+

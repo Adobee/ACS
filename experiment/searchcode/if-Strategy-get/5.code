@@ -1,0 +1,7 @@
+this.currentStrategy = null;
+}
+@Override
+public Player winner(ExtendedGame game) {
+if (game.getRoundsPlayed() <= 20) {
+currentStrategy = before20RoundsStrategy;
+

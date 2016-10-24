@@ -1,0 +1,14 @@
+public L2EffectType getEffectType()
+{
+return L2EffectType.NEGATE;
+}
+
+@Override
+public boolean onStart()
+for (int negateSkillId : skill.getNegateId())
+{
+if (negateSkillId != 0)
+getEffected().stopSkillEffects(negateSkillId);
+}
+for (L2SkillType negateSkillType : skill.getNegateStats())
+

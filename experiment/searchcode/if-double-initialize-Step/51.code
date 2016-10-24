@@ -1,0 +1,9 @@
+private static final double START_TIME = 0.;
+private static final double STOP_TIME = 10.;
+
+@Test
+public void testDoStep() {
+public void testStepCantBeCancelled() {
+assumeTrue(systemIsWin32() || systemIsLinux32());
+if(systemIsWin32()) testCancelStepsForWin32Fmus();
+

@@ -1,0 +1,9 @@
+interpolatedTime   = interpolator.interpolatedTime;
+
+if (interpolator.currentState == null) {
+currentState     = null;
+primaryMapper    = null;
+forward             = in.readBoolean();
+primaryMapper       = (EquationsMapper) in.readObject();
+secondaryMappers    = new EquationsMapper[in.read()];
+

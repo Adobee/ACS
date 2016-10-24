@@ -1,0 +1,13 @@
+private static final long serialVersionUID = -6074996219705033171L;
+
+
+protected AbstractSeriesDataset() {
+super();
+}
+
+
+public abstract int getSeriesCount();
+public int indexOf(Comparable seriesKey) {
+int seriesCount = getSeriesCount();
+for (int s = 0; s < seriesCount; s++) {
+

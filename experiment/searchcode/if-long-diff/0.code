@@ -1,0 +1,9 @@
+public class TimeHelper {
+
+public static String timeSince(long d1){
+Date current = new Date();
+long diffInSeconds = (current.getTime()/1000 - d1);
+
+long diff[] = new long[] { 0, 0, 0, 0 };
+/* sec */diff[3] = (diffInSeconds >= 60 ? diffInSeconds % 60 : diffInSeconds);
+

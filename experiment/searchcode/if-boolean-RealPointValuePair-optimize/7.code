@@ -1,0 +1,8 @@
+import org.apache.commons.math.optimization.RealPointValuePair;
+import org.apache.commons.math.random.MersenneTwister;
+import org.junit.Assert;
+import org.junit.Test;
+stopValue, isActive, diagonalOnly, 0, new MersenneTwister(),false);
+RealPointValuePair result = optim.optimize(maxEvaluations, func, goal, startPoint);
+Assert.assertEquals(expected.getValue(),
+

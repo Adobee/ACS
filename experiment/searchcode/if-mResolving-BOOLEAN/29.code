@@ -1,0 +1,10 @@
+// Are we in the started state? Started state is between onStart and onStop.
+boolean mStarted = false;
+
+// True if we are currently showing UIs to resolve a connection error.
+boolean mResolving = false;
+
+
+public interface Callbacks {
+void onPlusInfoLoaded(String accountName);
+

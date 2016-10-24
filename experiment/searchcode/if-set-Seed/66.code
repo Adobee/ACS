@@ -1,0 +1,8 @@
+public void update(Prop prop, float delta) {
+SeedProp seed = (SeedProp) prop;
+
+if (seed.getGerminationProgress() >= 1f) {
+seed.setGerminationProgress(1f);
+Growable germinate = seed.germinate();
+Domain.getWorld(seed.getWorldId()).props().removeProp(seed.id);
+

@@ -1,0 +1,11 @@
+public void storeOpponentHistory(Decision opponentDecision) {
+opponentDecisionHistory.add(opponentDecision);
+}
+
+private Decision chooseMode(){
+if( opponentDecisionHistory.size() == 0){
+return Decision.COOPERATE;
+}
+
+if( opponentDecisionHistory.contains( Decision.DEFECT)){
+

@@ -1,0 +1,12 @@
+private double calIdf(int codewordIndex, double[][] matrix, int numOfDocs)
+{
+int numContain = 0;
+for(int i = 0; i < numOfDocs; i++)
+{
+if(matrix[codewordIndex][i] != 0)
+{
+numContain ++;
+}
+}
+return Math.log(numOfDocs/numContain + 1);
+

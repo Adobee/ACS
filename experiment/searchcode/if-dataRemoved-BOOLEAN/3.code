@@ -1,0 +1,9 @@
+private RangeLong dateOpenedRange = new RangeLong(0, 0);
+
+public void setDateOpenedRange(RangeLong range) {
+if (dateOpenedRange.equals(range)) return;
+Calendar c = Calendar.getInstance();
+if (event.min != 0) {
+c.setTimeInMillis(event.min);
+DateTimeUtil.resetHours(c);
+

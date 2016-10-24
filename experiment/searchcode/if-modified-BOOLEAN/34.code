@@ -1,0 +1,11 @@
+public static String toJson(Date date)
+{
+boolean modified = false;
+StringBuilder sb = new StringBuilder(&quot;{&quot;);
+
+{
+if (modified)
+sb.append(&quot;,&quot;);
+sb.append(&quot;\&quot;day\&quot;:&quot;).append(date.day);
+modified = true;
+

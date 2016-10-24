@@ -1,0 +1,11 @@
+import com.qburst.bloodbank.daoImpl.EmployeeDaoImpl;
+import com.qburst.bloodbank.services.SearchService;
+
+
+public class SearchServiceImpl implements SearchService
+public Response getEmployeeDetail(String employeeId)
+{
+if(employeeId == null)
+{
+return Response.status(Response.Status.BAD_REQUEST).build();
+

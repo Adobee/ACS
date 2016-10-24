@@ -1,0 +1,8 @@
+LocalDate localDate=LocalDate.now().withDayOfMonth(1);
+int month;
+
+if(args.length>=2){
+localDate=localDate.plusDays(1);
+if(localDate.getDayOfWeek().getValue() ==7)
+System.out.println();
+

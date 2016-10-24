@@ -1,0 +1,8 @@
+String majorStr = val.substring(0, idx);
+try {
+this.major = Integer.parseInt(majorStr);
+if (this.major < 0) {
+this.minor = Integer.parseInt(minorStr);
+if (this.minor < 0) {
+throw new BOSHException(&quot;Minor version may not be < 0&quot;);
+

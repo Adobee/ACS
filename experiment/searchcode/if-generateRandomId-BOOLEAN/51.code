@@ -1,0 +1,6 @@
+protected RemoteTransaction createRemoteTransaction(GlobalTransaction tx, int viewId, boolean totalOrder) {
+if (totalOrder) {
+return new TotalOrderRemoteTransactionImpl(tx, viewId);
+public void init(boolean dldEnabled, boolean recoveryEnabled, boolean xa) {
+if (dldEnabled &amp;&amp; recoveryEnabled &amp;&amp; xa) {
+

@@ -1,0 +1,8 @@
+final FactorizedTimeseriesBean[] timeseries = catchment.getTimeseries();
+for( final FactorizedTimeseriesBean timeseriesBean : timeseries )
+{
+if( timeseriesBean.getFactor() > 0 )
+final ZmlLink dataLink = feature.getDataLink();
+if( dataLink != null )
+usedTimeseries.add( dataLink.getHref() );
+

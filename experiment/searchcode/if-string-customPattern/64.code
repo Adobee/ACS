@@ -1,0 +1,7 @@
+final Collection<String> fieldNames = CharSequenceUtils.listParams(builder, FIELD_DELIMITER_START, FIELD_DELIMITER_END);
+final String ret;
+if (CollectionUtils.isEmptyOrNull(fieldNames)) {
+for (final String field : fieldNames) {
+if (field.startsWith(SPELLED_PREFIX)) {
+map.put(field, getFieldValue(date, field.substring(SPELLED_PREFIX.length()), true, ordinalOnFirstDayOfMonth));
+

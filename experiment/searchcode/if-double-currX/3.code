@@ -1,0 +1,14 @@
+int deltaX = Math.abs(o.x-p.x), deltaY = Math.abs(o.y-p.y);
+
+if(deltaX >= deltaY){
+int currX;
+double currY;
+return true;
+}
+} else {
+int currY;
+double currX;
+//complete?
+if(o.x > p.x &amp;&amp; o.y < p.y){
+deltaX = o.x - p.x;
+

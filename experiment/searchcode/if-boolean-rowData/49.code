@@ -1,0 +1,15 @@
+String[] columnNames = { &quot;Tipo&quot;, &quot;Nome&quot;, &quot;Codice&quot;,&quot;Prezzo confezione&quot;,&quot;Barcode&quot; };
+
+int len,i,j;
+Object[][] rowData;
+
+public TabellaRicerca(String arg0) {
+
+len=Database.database.size();
+Sigaretta s = it.next();
+
+if(s.nome.contains(arg0.toUpperCase())){
+
+rowData[j][0] = s.tipo;
+rowData[j][1] = s.nome;
+

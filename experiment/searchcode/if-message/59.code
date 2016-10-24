@@ -1,0 +1,9 @@
+package info.devfiles.mailman.messaging;
+
+import javax.jms.MapMessage;
+import javax.jms.Message;
+public void onMessage(Message message) {
+
+if (message instanceof MapMessage) {
+MapMessage mapMessage = (MapMessage) message;
+

@@ -1,0 +1,8 @@
+public int compare(SimpleTicket t1, SimpleTicket t2) {
+int compareNull = compareNull(t1, t2);
+if(compareNull != 0)
+return compareNull;
+
+int comparePriority = comparePriority(t1.getPriority(), t2.getPriority());
+if(comparePriority != 0)
+

@@ -1,0 +1,8 @@
+public Sprite(Dimension dimension){
+this.dimension = dimension;
+this.setImage(new BufferedImage((int) dimension.getWidth(), (int) dimension.getHeight(), BufferedImage.TYPE_INT_ARGB ));
+}
+
+/**
+* @return The sprite image
+

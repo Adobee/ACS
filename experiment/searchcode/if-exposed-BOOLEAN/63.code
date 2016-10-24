@@ -1,0 +1,7 @@
+.pruningClassName(&quot;com.google.cloud.dataflow.sdk.util.common.ReflectHelpers&quot;);
+
+checkedApiSurface.getExposedClasses();
+for (Class<?> clazz : checkedApiSurface.getExposedClasses()) {
+if (!classIsAllowed(clazz)) {
+disallowedClasses.put(clazz, checkedApiSurface.getAnyExposurePath(clazz));
+

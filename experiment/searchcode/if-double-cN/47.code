@@ -1,0 +1,7 @@
+if (this == objE)   {
+return true;
+}
+if (objE instanceof  ComplexNumber) {
+ComplexNumber cn = (ComplexNumber)objE;
+if ((this.getRe() == cn.getRe()) &amp;&amp; (this.getIm() == cn.getIm()))   {
+

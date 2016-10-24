@@ -1,0 +1,8 @@
+public static void nglGetnMapdvARB(int target, int query, int bufSize, long data) {
+long __functionAddress = getInstance().GetnMapdvARB;
+if ( LWJGLUtil.CHECKS )
+public static void glGetnMapdvARB(int target, int query, int bufSize, ByteBuffer data) {
+if ( LWJGLUtil.CHECKS )
+checkBuffer(data, bufSize << 3);
+nglGetnMapdvARB(target, query, bufSize, memAddress(data));
+

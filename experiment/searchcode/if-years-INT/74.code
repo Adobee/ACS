@@ -1,0 +1,12 @@
+public static void main(String[] args) {
+int sum=1+2+3+4+5;
+String type;
+
+if ( sum % 2 == 0)
+type = &quot;even&quot;;
+else
+type = &quot;odd&quot;;
+int currentAge = 45;
+int moreYears = 3;
+System.out.println(&quot;Bob is &quot; + currentAge + &quot; years old.&quot;);
+

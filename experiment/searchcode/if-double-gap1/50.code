@@ -1,0 +1,9 @@
+int gap2 = random.nextInt(ROW / 10) + 1;
+for (int i = 0; i < ROW; ++i) {
+if (i % gap1 != 0 &amp;&amp; i % gap2 != 0) {
+Point p = new Point(i, j);
+Attribute att = (Attribute) it.next();
+if (att.getName().toString().equals(&quot;lon&quot;))
+lon = Double.parseDouble(att.getValue());
+else if (att.getName().toString().equals(&quot;lat&quot;))
+

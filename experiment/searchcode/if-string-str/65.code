@@ -1,0 +1,6 @@
+public String delDel(String str) {
+if (str.indexOf(&quot;del&quot;) == 1)
+return str.charAt(0) + str.substring(4);
+return str;
+}
+

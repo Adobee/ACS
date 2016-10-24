@@ -1,0 +1,14 @@
+public class RidingMower extends Mower {
+private int pressed = 0;
+private boolean started;
+
+RidingMower() {
+super.setSpeed(225);
+//make super.setImage (with the file);
+}
+
+public boolean getStarted() {
+if (pressed >= 10) {
+started = true;
+pressed = 0;
+

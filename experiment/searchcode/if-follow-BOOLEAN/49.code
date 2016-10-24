@@ -1,0 +1,13 @@
+import bd.sql.UserBD;
+
+public class FollowService {
+
+
+public static boolean addFollow(String user1,String user2, String key){
+return FollowBD.addFollow(user1,user2);
+}
+}
+
+public static boolean removeFollow(String key, String user1, String user2) {
+if(key == null || user1 == null || user2 == null || !UserBD.myKey(user1, key) || user1.isEmpty() || user1.equals(&quot;&quot;) || user2.isEmpty() || user2.equals(&quot;&quot;)){
+

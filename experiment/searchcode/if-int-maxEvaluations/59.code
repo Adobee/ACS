@@ -1,0 +1,11 @@
+* Builder class
+*/
+private Problem<S> problem;
+private int maxEvaluations;
+private int populationSize;
+this.variant = GeneticNSAlgorithmVariant.GENERATIONAL ;
+}
+
+public GeneticNSAlgorithmBuilder<S> setMaxEvaluations(int maxEvaluations) {
+this.maxEvaluations = maxEvaluations;
+

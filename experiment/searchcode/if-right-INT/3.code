@@ -1,0 +1,7 @@
+public class Solution {
+public void merge(int[] a, int m, int[] b, int n) {
+int right = m + n;
+while (n > 0 &amp;&amp; m > 0) {
+if (b[n-1] > a[m-1])
+a[--right] = b[--n];
+

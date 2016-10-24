@@ -1,0 +1,5 @@
+while ((token = parser.nextToken()) != XContentParser.Token.END_OBJECT) {
+if (token == XContentParser.Token.FIELD_NAME) {
+currentFieldName = parser.currentName();
+} else if (token == XContentParser.Token.START_OBJECT &amp;&amp; &quot;buckets&quot;.equals(currentFieldName)) {
+

@@ -1,0 +1,8 @@
+public int longestIncreasingContinuousSubsequence(int[] A) {
+int n = A.length;
+if(n<2) return n;
+int max_increase =1, max_decrease = 1;
+for(int i=1; i<n; i++){
+if(A[i]>A[i-1]){
+count_increase++;
+

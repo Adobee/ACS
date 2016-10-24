@@ -1,0 +1,7 @@
+int amt = is.read(data, 3, GZIP_STATIC_HEADER_SIZE_MINUS_3);
+if(amt != GZIP_STATIC_HEADER_SIZE_MINUS_3) {
+throw new GZIPFormatException(&quot;Short header&quot;);
+public void writeTo(byte[] buf, int offset) {
+if(buf.length - offset < GZIP_STATIC_HEADER_SIZE) {
+throw new IndexOutOfBoundsException();
+

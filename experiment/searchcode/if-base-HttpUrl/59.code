@@ -1,0 +1,11 @@
+package com.example.app.rxjava.base.cookie;
+
+import com.example.app.rxjava.AppApplication;
+
+import java.util.List;
+private final PersistentCookieStore cookieStore = new PersistentCookieStore(AppApplication.getInstance().getApplicationContext());
+
+@Override
+public void saveFromResponse(HttpUrl url, List<Cookie> cookies) {
+if (cookies != null &amp;&amp; cookies.size() > 0) {
+

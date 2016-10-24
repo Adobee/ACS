@@ -1,0 +1,14 @@
+public class DefaultSpdyWindowUpdateFrame
+implements SpdyWindowUpdateFrame
+{
+private int streamId;
+private int deltaWindowSize;
+public int streamId()
+{
+return this.streamId;
+}
+
+public SpdyWindowUpdateFrame setStreamId(int streamId)
+{
+if (streamId < 0) {
+

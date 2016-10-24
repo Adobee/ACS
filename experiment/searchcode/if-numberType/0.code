@@ -1,0 +1,9 @@
+private Number value = null;
+
+public JsonNumber(String text, NumberType numberType) {
+if (numberType == NumberType.Double) {
+value = new Double(text);
+} else {
+if (numberType == NumberType.Binary) {
+this.value = Integer.parseInt(text.substring(2), 2);
+

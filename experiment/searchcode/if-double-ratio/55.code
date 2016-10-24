@@ -1,0 +1,12 @@
+public static final RatioNumber ZERO = new RatioNumber(0, 0);
+
+private final double ratio;
+private final double value;
+
+public RatioNumber(double value, double ratio) {
+this.value = value;
+this.ratio = ratio;
+}
+
+public static RatioNumber valueOf(String valueString) {
+

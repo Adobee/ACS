@@ -1,0 +1,11 @@
+public static MemberType fromCode(String code) {
+if (code == null) {
+return null;
+}
+for (MemberType memberType : values()) {
+if (memberType.code.equals(code)) {
+return memberType;
+}
+}
+throw new IllegalArgumentException(&quot;Failed to locate the MemberType with the given code: &quot; + code);
+

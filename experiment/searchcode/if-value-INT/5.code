@@ -1,0 +1,7 @@
+public class Solution {
+public void merge(int A[], int m, int B[], int n) {
+int i = m - 1;
+int a = i >= 0 ? A[i] : Integer.MIN_VALUE;
+int b = j >= 0 ? B[j] : Integer.MIN_VALUE;
+if (a < b) {
+

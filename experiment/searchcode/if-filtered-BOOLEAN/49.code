@@ -1,0 +1,8 @@
+this.filteredValues = Arrays.asList(filteredValues);
+}
+
+public Filter(T template, Method filteredMethod, V rangeFrom, V rangeTo, boolean isRange) {
+if (isRange) {
+this.filteredType = inferFilteredType(template);
+this.filteredMethod = filteredMethod;
+

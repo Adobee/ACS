@@ -1,0 +1,11 @@
+public boolean canEncode(Record record) {
+return record instanceof MimeRecord;
+}
+
+@Override
+public NdefRecord encodeRecord(Record record, NdefMessageEncoder messageEncoder) {
+MimeRecord mimeRecord = (MimeRecord)record;
+
+if(!mimeRecord.hasContentType()) {
+throw new NdefEncoderException(&quot;Expected content type&quot;, mimeRecord);
+

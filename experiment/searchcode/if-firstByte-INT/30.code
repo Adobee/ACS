@@ -1,0 +1,16 @@
+int startOffset = x1 % 8;
+int firstByte = x1 / 8;
+
+if (startOffset != 0) {
+firstByte++;
+}
+
+int endOffset = x2 % 8;
+int endByte = x2 / 8;
+
+if (endOffset != 7) {
+endByte--;
+}
+
+for (int b = firstByte; b <= endByte; b++) {
+

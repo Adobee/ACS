@@ -1,0 +1,9 @@
+for (int i = 0; i < sent.length; i++) {
+wrd=sent[i].split(&quot;/&quot;);
+if (isSentiWrd(wrd)) {//如果为情感词,
+String[] fwrd;
+boolean negFlag,termi;
+if(SD.getNeg().contains(fwrd[0])){//判断否定副词，
+negFlag=true;
+}else if(!SD.getDeg().containsKey(fwrd[0]))//不为程度副词，终止匹配
+

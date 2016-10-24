@@ -1,0 +1,7 @@
+public abstract class BaseSwipeRefreshActivity extends BaseActivity implements ISwipeRefreshView {
+
+@Bind(R.id.swipe_refresh_layout)
+protected SwipeRefreshLayout mSwipeRefreshLayout;
+mSwipeRefreshLayout.setColorSchemeColors(R.color.colorPrimary, R.color.colorPrimaryDark, R.color.colorAccent);
+mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+

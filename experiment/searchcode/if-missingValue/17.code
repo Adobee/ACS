@@ -1,0 +1,9 @@
+// this value should never be set for production data
+private final DateTime missingValue;
+
+@JsonCreator
+public TimestampSpec(
+@JsonProperty(&quot;column&quot;) String timestampColumn,
+// this value should never be set for production data
+@JsonProperty(&quot;missingValue&quot;) DateTime missingValue
+

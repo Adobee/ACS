@@ -1,0 +1,7 @@
+private static String findRawReadPattern(Class<?> type, String override) {
+if (override != null) {
+return override;
+}
+MatchBy customPattern = type.getAnnotation(MatchBy.class);
+if (customPattern == null || customPattern.value() == null) {
+

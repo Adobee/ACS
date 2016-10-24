@@ -1,0 +1,16 @@
+public void close() {
+if (dqdSocket != null &amp;&amp; os != null &amp;&amp; is != null) {
+killSocket();
+}
+}
+
+
+
+public void bang()
+//create a new thread to listen
+Thread t = new Thread(){
+public void run()
+{
+aThreadIsOpen = true;
+if (dqdSocket != null &amp;&amp; os != null &amp;&amp; is != null) { //if socket etc is initialized
+

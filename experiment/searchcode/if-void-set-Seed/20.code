@@ -1,0 +1,10 @@
+public static void setSeed(long seed) {
+globalRnd._setSeed(seed);
+}
+
+public static void setSeed(String seed) {
+setSeed(STRING_SEED | seed.hashCode());
+}
+
+public static void setSeed(String seed1, String seed2) {
+

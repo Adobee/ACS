@@ -1,0 +1,7 @@
+public boolean PaintFill(Color[][] screen, int r, int c, Color ncolor) {
+if (screen[r][c] == ncolor) return false;
+return PaintFill(screen, r, c, screen[r][c], ncolor);
+}
+
+public boolean PaintFill(Color[][] screen, int r, int c, Color ocolor, Color ncolor) {
+

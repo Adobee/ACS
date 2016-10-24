@@ -1,0 +1,7 @@
+public Collection<?> coerce(Object o, Class<?> toType) {
+if(o instanceof String) {
+return coerce((String) o, toType);
+}
+if(o instanceof Collection) {
+return coerce((Collection<?>) o, toType);
+

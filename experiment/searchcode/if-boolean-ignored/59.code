@@ -1,0 +1,9 @@
+return Arrays.asList(NbPreferences.forModule(Options.class).get(IGNORED_DIRECTORY_OPTIONS_NAME, &quot;&quot;).split(&quot;;&quot;));
+}
+
+public static boolean isIgnoredDirectoriesEmpty() {
+return NbPreferences.forModule(Options.class).get(IGNORED_DIRECTORY_OPTIONS_NAME, &quot;empty&quot;).equals(&quot;empty&quot;);
+ignoredDirectories += model.getElementAt(i);
+if (isLastElement(i, model)) {
+ignoredDirectories += &quot;;&quot;;
+

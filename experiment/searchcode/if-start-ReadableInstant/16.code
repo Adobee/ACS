@@ -1,0 +1,6 @@
+public Infection(String infectionId, Patient patient, ReadableInstant susceptibilityStart, ReadableInstant transition, ReadableInstant endOfInfectiousness) {
+this.infectionId = infectionId;
+this.patient = patient;
+if (susceptibilityStart.isAfter(transition)) {
+throw new IllegalArgumentException();
+

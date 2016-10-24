@@ -1,0 +1,6 @@
+private static final Long TIMEOUT = 60 * 1000L;
+private static Hashtable<String,CachedObject> cachedObjects = new Hashtable<String,CachedObject>();
+public static void setCachedObject(String key, Object obj) {
+if (cachedObjects.containsKey(key)) {
+CachedObject cachedObj = cachedObjects.get(key);
+

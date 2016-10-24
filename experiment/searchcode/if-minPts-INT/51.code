@@ -1,0 +1,10 @@
+OpticsClustering<?> optics = (OpticsClustering<?>) getClusteringAlgorithm();
+int minPts = getEvolutionaryAlgorithm().getPopulationSize() / 4;
+if (minPts > 20) {
+minPts = 20;
+}
+if (minPts < 10) {
+minPts = 10;
+}
+optics.setMinPoints(minPts);
+

@@ -1,0 +1,8 @@
+public boolean isPalindrome(int x) {
+if(x < 0) return false;
+int probe = 1;
+while(probe <= x/10){
+int lowest = x % 10;
+int highest = x / probe;
+if(lowest != highest)   return false;
+

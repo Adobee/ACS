@@ -1,0 +1,15 @@
+cssUrl = cssUrl.substring(0, questionIndex);
+
+}
+
+linkInfo.setLinkWithoudParam(cssUrl);
+
+String relativeURL = null;
+
+if (ctx.getWebRoot() != null&amp;&amp; ctx.getWebRoot().length() < cssUrl.length()) {
+String containingDir = null, fileName = null,relativePath=null;
+
+if (relativeURL == null || relativeURL.length() == 0) {
+
+containingDir = ctx.getMainRoot();
+

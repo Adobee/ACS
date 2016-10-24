@@ -1,0 +1,9 @@
+JSONObject jsonObject = new JSONObject(wsResponse);
+Bundle bundle = new Bundle();
+if (jsonObject.has(ResponseBean.RESPONSE_STATE)) {
+jsonObject.getInt(ResponseBean.RESPONSE_STATE));
+}
+
+if (jsonObject.has(ResponseBean.RESPONSE_ID)) {
+bundle.putString(ResponseBean.RESPONSE_ID,
+

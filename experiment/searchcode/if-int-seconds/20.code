@@ -1,0 +1,20 @@
+* and open the template in the editor.
+*/
+package sudoku_desktop;
+
+/**
+*
+* @author Nasko_Nastolen
+*/
+public class Time
+{
+int seconds;
+public Time(int seconds)
+{
+setSeconds(seconds);
+}
+
+public void setSeconds(int seconds)
+{
+if(seconds > 0)
+

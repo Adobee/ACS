@@ -1,0 +1,9 @@
+@Named(&quot;queryListManager&quot;)
+public class QueryListManager extends AbstractDomainListManager<Query, QueryListObject> implements Serializable {
+public Object getRecordKey(Query query) {
+return QueryUtil.getKey(query);
+}
+
+@Override
+public String getRecordName(Query query) {
+

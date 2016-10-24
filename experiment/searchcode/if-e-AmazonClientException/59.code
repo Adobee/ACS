@@ -1,0 +1,9 @@
+import com.amazonaws.AmazonClientException;
+import com.amazonaws.auth.AWSCredentials;
+import com.netapp.snap2cloud.model.S3BackupModel;
+timestamp = System.currentTimeMillis();
+}
+
+public void delete(String backupName) throws AmazonClientException {
+S3Util s3Util = new S3Util(credentials);
+

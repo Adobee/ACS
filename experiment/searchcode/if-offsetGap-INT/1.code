@@ -1,0 +1,9 @@
+private final Iterator<HitEnum> delegates;
+private final int positionGap;
+private final int offsetGap;
+
+private HitEnum current;
+public ConcatHitEnum(Iterator<HitEnum> delegates, int positionGap, int offsetGap) {
+this.delegates = delegates;
+this.positionGap = positionGap;
+

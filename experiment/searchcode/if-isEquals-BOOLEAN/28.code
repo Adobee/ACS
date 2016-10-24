@@ -1,0 +1,9 @@
+public EqualsBuilder appendSuper(boolean superEquals) {
+if (this.isEquals) {
+this.isEquals = superEquals;
+return !this.isEquals ? this : append(Float.floatToIntBits(lhs), Float.floatToIntBits(rhs));
+}
+
+public EqualsBuilder append(boolean lhs, boolean rhs) {
+if (this.isEquals) {
+

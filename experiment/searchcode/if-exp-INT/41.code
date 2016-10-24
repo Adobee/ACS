@@ -1,0 +1,9 @@
+SLOW, MEDIUM_SLOW, MEDIUM, FAST, ERRATIC, FLUCTUATING, NONE;
+
+public static int expToNextLevel(ExpCurve curve, int currLevel, int totalExp) {
+if (curve == NONE)
+return 0;
+
+int n = currLevel + 1; //next level
+int nextExp = lowestExpForLevel(curve, n);
+

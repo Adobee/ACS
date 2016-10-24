@@ -1,0 +1,7 @@
+public static void drawAFormat(int n, double x0, double y0, double x1, double y1, boolean horizontal) {
+if (n < 0) { return; }
+double[] x = {x0, x0, x1, x1};
+double[] y = {y0, y1, y1, y0};
+StdDraw.polygon(x, y);
+if (horizontal) {
+

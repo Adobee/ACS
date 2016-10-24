@@ -1,0 +1,7 @@
+addAll( SzakaszEredmeny.loadAllForSzakasz( db, ( Szakasz ) item ) );
+addAll( SzlalomOsszesitettEredmeny.loadAllForSzakasz( db, ( Szakasz ) item ) );
+} else if ( item instanceof Etap ) {
+addAll( EtapEredmeny.loadAllForEtap( db, ( Etap ) item ) );
+} else if ( item instanceof Szlalom ) {
+addAll( SzlalomFutam.loadAllForSzlalom( db, ( Szlalom ) item ) );
+

@@ -1,0 +1,10 @@
+for(AbstractBlock block : row) {
+if(!block.isSolid()) {
+isRowFull = false;
+break;
+for(int i = highestRemainingRow; i >= 0; --i) {
+for(AbstractBlock block : blocks[i]) {
+AbstractBlock newBlock;
+
+if(block.isSolid()) {
+

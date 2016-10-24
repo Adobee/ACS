@@ -1,0 +1,4 @@
+private Builder initializeAsRestore(IndexMetaData indexMetaData, RestoreSource restoreSource, boolean asNew) {
+if (!shards.isEmpty()) {
+throw new ElasticsearchIllegalStateException(&quot;trying to initialize an index with fresh shards, but already has shards created&quot;);
+

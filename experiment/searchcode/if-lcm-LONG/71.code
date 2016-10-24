@@ -1,0 +1,20 @@
+static long findHCF(long a, long b)
+{
+if(a==0)
+return b;
+else
+return findHCF(b%a,a);
+}
+static long findLCM(long a, long b, long hcf)
+for(j1=1;j1<=n;j1++)
+{
+if(d[j1]==1)
+{
+j=(long)j1;
+hcf=findHCF(j,hcf);
+lcm=findLCM(j,lcm,hcf);
+hcf=lcm;
+}
+}
+for(j1=1;j1<=n;j1++)
+

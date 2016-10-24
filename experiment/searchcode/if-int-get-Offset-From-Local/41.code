@@ -1,0 +1,12 @@
+public int available( ) throws IOException
+{
+long av = entry.getLength( ) - getOffset( );;
+if ( av > Integer.MAX_VALUE )
+{
+return Integer.MAX_VALUE;
+}
+return (int) av;
+}
+
+public long getOffset( ) throws IOException
+

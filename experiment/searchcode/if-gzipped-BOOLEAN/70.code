@@ -1,0 +1,5 @@
+private void init(final int statusCode, final String contentType, final Collection<Header<? extends Serializable>> headers,  final byte[] body, boolean storeGzipped) throws AlreadyGzippedException {
+if (headers != null) this.responseHeaders.addAll(headers);
+public static boolean isGzipped(byte[] candidate) {
+if (candidate == null || candidate.length < 2) {
+

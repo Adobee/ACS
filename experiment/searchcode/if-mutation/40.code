@@ -1,0 +1,13 @@
+protected Random random = new Random(System.currentTimeMillis());
+protected double mutationChance;
+
+public void mutate(Chromosome c) {
+if (random.nextDouble() < mutationChance) {
+mutation(c);
+}
+}
+
+protected abstract void mutation(Chromosome c);
+
+public double getMutationChance() {
+

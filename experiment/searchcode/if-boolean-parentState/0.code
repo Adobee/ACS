@@ -1,0 +1,14 @@
+public ParentalCommunicationData(){
+this(false);
+}
+
+public ParentalCommunicationData(boolean initialize){
+if(initialize){
+jan = feb = mar = apr = may = jun = jul = aug = sep = oct = nov = dec = ParentState.NONE;
+}
+}
+
+public void nullToNone(){
+if(jan==null) jan = ParentState.NONE;
+if(feb==null) feb = ParentState.NONE;
+

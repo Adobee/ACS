@@ -1,0 +1,10 @@
+if (&quot;&quot;.equals(input)) return true;
+
+boolean ret = true;
+it = new StringCharacterIterator(input);
+c = it.first();
+} else {
+skipWhiteSpace();
+if (c != CharacterIterator.DONE) {
+ret = error(&quot;end&quot;, col);
+

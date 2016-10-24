@@ -1,0 +1,11 @@
+import java.util.List;
+
+public class ReduceSubSets {
+
+public interface SubSetCheck<E> {
+public boolean isSub(E sub, E sup);
+public static class AscIntArraySubSetCheck implements SubSetCheck<int[]> {
+@Override
+public boolean isSub(int[] sub, int[] sup) {
+if (sub.length > sup.length) {
+

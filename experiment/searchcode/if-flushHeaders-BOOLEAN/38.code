@@ -1,0 +1,14 @@
+private List headerBytes;
+private Map headers;
+
+private boolean headersFlushed = false;
+
+
+public JSHttpServletResponse(OutputStream out) {
+OutputStream getSocketOutputStream() throws IOException {
+flushHeaders();
+return out;
+}
+
+public void close() throws IOException {
+

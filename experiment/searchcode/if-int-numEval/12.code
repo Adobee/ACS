@@ -1,0 +1,10 @@
+public class FloatingPointPrikaz implements Prikaz {
+
+private int velPop;
+private double mut;
+private int numEval;
+private int dg;
+private int gg;
+public FloatingPointPrikaz(int velPop, double mut, int numEval, Function f, int dg, int gg, int dim){
+this.velPop = velPop;
+

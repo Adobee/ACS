@@ -1,0 +1,19 @@
+private String name;
+private boolean neg; // true if atom is neg(v)
+
+public Atom(String v, boolean neg) {
+this.name = v;
+return name;
+}
+
+public boolean getNeg() {
+return neg;
+}
+
+public String toString() {
+if (neg)
+return &quot;not(&quot; + name + &quot;)&quot;;
+return name;
+}
+}
+

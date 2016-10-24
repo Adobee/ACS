@@ -1,0 +1,12 @@
+double[] x;
+double[] y;
+double[] y2;
+int n;
+
+CubicSpline(double[] xInput, double[] yInput) {
+int index;
+int i, k;
+double p, qn, sig, un;
+double[] u;
+if (xInput.length != yInput.length) {
+

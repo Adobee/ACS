@@ -1,0 +1,11 @@
+package nars.rl.horde.functions;
+
+
+import org.apache.commons.math3.linear.RealVector;
+
+public class RewardObservationFunction<A> implements RewardFunction, HordeUpdatable<A> {
+//observationIndex = legend.indexOf(label);
+observationIndex = index;
+if (observationIndex < 0)
+throw new RuntimeException(label + &quot; not found in the legend&quot;);
+

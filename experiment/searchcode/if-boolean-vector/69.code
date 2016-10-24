@@ -1,0 +1,12 @@
+import r.lang.LogicalVector;
+import r.lang.SEXP;
+import r.lang.Vector;
+
+public class BooleanConverter extends PrimitiveScalarConverter<Boolean> {
+return clazz == Boolean.TYPE || clazz == Boolean.class;
+}
+
+@Override
+public SEXP convertToR(Boolean value) {
+if(value == null) {
+

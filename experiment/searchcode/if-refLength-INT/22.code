@@ -1,0 +1,6 @@
+final String[] alnFields = splitterPattern.split(currentLine.trim().substring(1));
+int direction = (alnFields[3].equals(&quot;-&quot;)) ? 1 : 0;
+final int refLength = refAln.replace(&quot;-&quot;, &quot;&quot;).length();
+ArtAlnRecord record = new ArtAlnRecord(alnFields[0], Integer.parseInt(alnFields[2]) + 1, direction, alnFields[1], refLength);
+if (record.direction == 1) {
+

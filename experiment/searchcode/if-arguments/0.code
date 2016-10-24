@@ -1,0 +1,13 @@
+package Utils;
+
+public abstract class MultipleArgumentsRunnableObject implements Runnable {
+public Object getArgumentAtIndex(int index){
+if (index < 0 || index >= arguments.length) {
+return null;
+}
+
+return arguments[index];
+}
+
+}
+

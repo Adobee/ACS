@@ -1,0 +1,13 @@
+* @return True if c is hex character.
+*/
+public static boolean isHex(char c) {
+c = Character.toUpperCase(c);
+return (c >= &#39;0&#39; &amp;&amp; c <= &#39;9&#39;) || (c >= (int) &#39;A&#39; &amp;&amp; c <= (int) &#39;F&#39;);
+public static boolean isHex(String hex) {
+if (hex.length() != 2)
+return false;
+return isHex(hex.charAt(0)) &amp;&amp; isHex(hex.charAt(1));
+}
+
+}
+

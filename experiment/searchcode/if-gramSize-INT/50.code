@@ -1,0 +1,8 @@
+private final int maxNumCorrections;
+private final int gramSize;
+
+public CandidateScorer(WordScorer scorer, int maxNumCorrections, int gramSize) {
+updateTop(candidates, path, corrections, cutoffScore, pathScore + scorer.score(path, candidates, ord, gramSize));
+if (numMissspellingsLeft > 0) {
+for (int i = 0; i < current.candidates.length; i++) {
+

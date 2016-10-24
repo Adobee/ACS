@@ -1,0 +1,8 @@
+private int lightThreshold = 3 * 192;
+private double darkThreshold = 3 * 100;
+private boolean selected;
+int h = c.getRed() + c.getGreen() + c.getBlue();
+if (h > lightThreshold)
+setForeground(Color.black);
+if (h < darkThreshold)
+

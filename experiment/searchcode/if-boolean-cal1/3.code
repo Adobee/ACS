@@ -1,0 +1,12 @@
+Calendar cal2 = Calendar.getInstance();
+cal2.setTime(date2);
+return isBeforeOrSameDay(cal1, cal2);
+}
+
+public static boolean isBeforeOrSameDay(Calendar cal1, Calendar cal2) {
+return isBeforeDay(cal1, cal2);
+}
+
+public static boolean isBeforeDay(Calendar cal1, Calendar cal2) {
+if (cal1 == null || cal2 == null) {
+

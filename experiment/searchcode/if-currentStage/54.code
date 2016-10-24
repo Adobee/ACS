@@ -1,0 +1,11 @@
+if (pSceneTouchEvent.isActionDown()) {
+switch (currentStage) {
+case INTRO:
+if (currentAction == EditorActions.EDITOR) {
+return super.onSceneTouchEvent(pScene, pSceneTouchEvent);
+}
+
+@Override
+protected void placeSelectionOnScene(float x) {
+if (currentStage == TutorialStage.MAKE_SELECTION_B) {
+

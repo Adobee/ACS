@@ -1,0 +1,9 @@
+shp = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
+}
+
+public void setRepeatAllEnable(boolean enable) {
+shp.edit().putBoolean(REPEAT_ALL, enable).apply();
+}
+
+public void setRepeatOneEnable(boolean enable) {
+

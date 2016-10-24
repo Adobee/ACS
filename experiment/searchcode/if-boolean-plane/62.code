@@ -1,0 +1,11 @@
+plane.set(planeNear);
+
+return (plane);
+}
+
+/**
+* Quick check to see if an orthogonal bounding box is inside the frustum
+*/
+private static final boolean quickClassify(Plane p, Box box) {
+if (p.distanceTo(box.getLowerX(), box.getLowerY(), box.getLowerZ()) > 0.0f)
+

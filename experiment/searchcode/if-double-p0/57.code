@@ -1,0 +1,8 @@
+//return R1 * (2.0 * Math.log(1.0 / p) - p * p * Math.pow(1.0, -2.0) + 1.0) / d / 8.0 + R1 * p * (-2.0 / p - 2.0 * p * Math.pow(1.0, -2.0)) / d / 8.0 + q0 * (8.0 * 1.0 * 1.0 * p + 16.0 * Math.log(1.0 / p) * p * 1.0 * 1.0 - 8.0 * Math.pow(p, 3.0)) * Math.pow(1.0, -2.0) / d / 64.0;
+
+}
+};
+double p0 = new NewtonMethod().evaluateTask(task);//Получаем p0 разрешив нелинейное уравнения методом Ньютона
+double[] qn = new double[n + 1];
+//R1 = 4.576875327; p0 = 0.8282522503;
+

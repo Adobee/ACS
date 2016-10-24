@@ -1,0 +1,12 @@
+if(c==&#39;\r&#39; || c==&#39;\n&#39;)
+{
+CharSequence line = _CharSubSeq.of(msg, i1, i2 - 1);
+out.accept(prefix+line);
+i1=i2;
+}
+}
+CharSequence line = _CharSubSeq.of(msg, i1, i2);
+out.accept(prefix+line);
+}
+}
+

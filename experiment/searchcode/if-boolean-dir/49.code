@@ -1,0 +1,6 @@
+public static boolean deleteDir(File dir) {
+if (dir.isDirectory()) {
+String[] childs = dir.list();
+for (int i = 0; i < childs.length; i++) {
+Boolean success = deleteDir(new File(dir, childs[i]));
+

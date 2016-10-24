@@ -1,0 +1,9 @@
+public interface IObjectReader<T extends Serializable> {
+/**
+* Read an object from a source file.
+* @return the object that is read
+* @throws ObjectReadException if an error occurs while reading the object
+*/
+T read(String source) throws ObjectReadException;
+}
+

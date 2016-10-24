@@ -1,0 +1,6 @@
+public static void For(int fromInclusive, int toExclusive, ExecutorService threadPoolExecutor, final Task task)
+throws InterruptedException {
+if (fromInclusive >= toExclusive) return;
+
+final CountDownLatch stopLatch = new CountDownLatch(toExclusive - fromInclusive);
+

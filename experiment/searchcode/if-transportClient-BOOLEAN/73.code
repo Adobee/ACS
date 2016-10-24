@@ -1,0 +1,7 @@
+.put(InternalSettingsPreparer.IGNORE_SYSTEM_PROPERTIES_SETTING, true);
+
+try (TransportClient transportClient = new TransportClient(builder.build())) {
+//use both variants of execute method: with and without listener
+if (randomBoolean()) {
+clusterState = transportClient.admin().cluster().state(clusterStateRequest).get().getState();
+

@@ -1,0 +1,13 @@
+package strategy;
+
+public class DiscountContext
+{
+// 组合一个DiscountStrategy对象
+private DiscountStrategy strategy;
+public double getDiscountPrice(double price)
+{
+// 如果strategy为null，系统自动选择OldDiscount类
+if (strategy == null)
+{
+strategy = new OldDiscount();
+

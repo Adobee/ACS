@@ -1,0 +1,10 @@
+A annotation = clazz.getAnnotation(annotationClass);
+if (null != annotation) {
+return annotation;
+}
+
+for (Class<?> ifc : clazz.getInterfaces()) {
+annotation = ifc.getAnnotation(annotationClass);
+if (null != annotation) {
+return annotation;
+

@@ -1,0 +1,14 @@
+private TitleBar titleBar;
+
+private boolean shouldRefresh;
+
+private boolean hasLoaded;
+
+protected DataChangeNeedRefreshReceiver dataChangeNeedRefreshReceiver = new DataChangeNeedRefreshReceiver();
+hasLoaded = false;
+}
+
+public boolean pollRefresh(){
+if(shouldRefresh){
+shouldRefresh = false;
+

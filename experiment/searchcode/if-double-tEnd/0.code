@@ -1,0 +1,15 @@
+import com.ibanheiz.tenduf.model.TendUf;
+
+import java.util.List;
+
+/**
+* The persistent class for the tend_cidade database table.
+return false;
+TendCidade other = (TendCidade) obj;
+if (idCidade != other.idCidade)
+return false;
+return true;
+}
+
+}
+

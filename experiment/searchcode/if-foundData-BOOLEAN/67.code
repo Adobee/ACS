@@ -1,0 +1,6 @@
+public long delete(Context context, ValueRelation tuplesToDelete, boolean errorIfNotIncluded) {
+final HashMap<ValueTuple, Boolean> toDelete = new HashMap<ValueTuple, Boolean>();
+Iterator<Boolean> valueIterator = values.iterator();
+while (valueIterator.hasNext())
+if (!valueIterator.next().booleanValue())
+

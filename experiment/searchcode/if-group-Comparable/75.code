@@ -1,0 +1,8 @@
+list.sort(comparator.reversed());
+
+Comparator<ComparableTarget> groupByComparator = Comparator
+.thenComparing(ComparableTarget::getB)
+.thenComparing(ComparableTarget::getC);
+list.sort(groupByComparator);
+String sortedString1 = list.toString();
+

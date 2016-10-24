@@ -1,0 +1,8 @@
+public static void waitForJobTopComplete(MasterBatchContext batchContext) {
+boolean running = true;
+while (running) {
+try {
+System.out.println(&quot;Waiting... Batch Job Status:&quot; + batchContext.getBatchStatus() );
+if ( isJobFinished(batchContext) ) {
+running = false;
+

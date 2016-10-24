@@ -1,0 +1,7 @@
+protected SnapshotArray<LISTENER> listeners = new SnapshotArray<LISTENER>();
+protected Comparator<LISTENER> comparator;
+
+public boolean addListener(LISTENER listener) {
+if (listener == null || listeners.contains(listener, true)) {
+return false;
+

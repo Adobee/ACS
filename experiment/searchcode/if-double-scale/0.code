@@ -1,0 +1,12 @@
+public void scalePercent(double percent) {
+if (percent == 0)
+return;
+scale *= percent;
+checkScale();
+public double getMaxScale() {
+return maxscale;
+}
+
+public void setMaxScale(double nscale) {
+if (nscale <= 0)
+

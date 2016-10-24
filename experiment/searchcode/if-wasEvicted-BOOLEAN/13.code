@@ -1,0 +1,18 @@
+* {@link Map#remove}, {@link ConcurrentMap#remove}, or {@link Iterator#remove}.
+*/
+EXPLICIT {
+@Override
+boolean wasEvicted() {
+return false;
+}
+},
+
+/**
+* The entry itself was not actually removed, but its value was replaced by the user. This can
+* {@link ConcurrentMap#replace(Object, Object, Object)}.
+*/
+REPLACED {
+@Override
+boolean wasEvicted() {
+return false;
+

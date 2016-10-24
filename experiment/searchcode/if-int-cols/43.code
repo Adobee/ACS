@@ -1,0 +1,10 @@
+private void solve(List<String[]> result, List<Integer> cols, int n) {
+for (int col = 0; col < n; col++) {
+if (!isValid(cols, col)) {
+continue;
+}
+
+cols.add(col);
+
+if (cols.size() == n) {
+

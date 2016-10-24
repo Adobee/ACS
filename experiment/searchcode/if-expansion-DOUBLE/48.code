@@ -1,0 +1,13 @@
+double det = detleft-detright;
+double detsum;
+if (detleft>0.0) {
+if (detright<=0.0) {
+return det;
+detsum = -detleft-detright;
+}
+} else {
+return det;
+}
+double errbound = O2DERRBOUND*detsum;
+if (det>=errbound || -det>=errbound)
+

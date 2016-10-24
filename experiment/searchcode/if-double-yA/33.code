@@ -1,0 +1,11 @@
+if(x + xa > pongDouble.getWidth() - DIAMETER) {
+xa = -pongDouble.speed;
+}
+if(y + ya < 0) {
+ya = pongDouble.speed;
+}
+if(y + ya > pongDouble.getHeight() - DIAMETER) {
+pongDouble.gameOver();
+}
+if(collision()) {
+

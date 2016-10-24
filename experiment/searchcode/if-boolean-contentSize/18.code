@@ -1,0 +1,7 @@
+Rectangle viewRectangle = this.toSpaceRectangle(new Rectangle(new Point(0, 0), contentSize));
+for (int i = 0; i < this.achievementsDrawn.length; i++) {
+if (Achievement.achievements[i].shouldShow()) {
+PaintUtils.drawCurrentMoney(g, contentSize);
+if (this.showingHelp) {
+PaintUtils.paintGenericHelpScreen(g, contentSize);
+

@@ -1,0 +1,10 @@
+* Returns the value held by the instance (in true form, not as log, and with sign applied).
+*/
+public double value() {
+if(this.isZero()) return 0.0;
+* Returns logarithm of the value represented by the instance. Returns NaN if the
+* value is negative.
+*/
+public double lnValue() {
+if(isPositive) return lnValue;
+

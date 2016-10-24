@@ -1,0 +1,14 @@
+this.splitState = SplitState.UNSPLIT;
+}
+
+public void split()
+{
+if (this.runningState != State.RUNNING) {
+this.stopTime = System.nanoTime();
+this.splitState = SplitState.SPLIT;
+}
+
+public void unsplit()
+{
+if (this.splitState != SplitState.SPLIT) {
+

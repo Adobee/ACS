@@ -1,0 +1,11 @@
+res.setEntry(iter.key(), iter.value() / v[iter.key()]);
+}
+return res;
+}
+
+/** {@inheritDoc} */
+public OpenMapRealVector ebeMultiply(RealVector v) {
+public OpenMapRealVector ebeMultiply(double[] v) {
+checkVectorDimensions(v.length);
+OpenMapRealVector res = new OpenMapRealVector(this);
+

@@ -1,0 +1,8 @@
+double[] d1 = forwardEst(-m1T1*(Math.PI/180), m2T1*(Math.PI/180));
+return d1;
+}
+
+public double[] forwardEst(double theta1, double theta2) {
+double x = l1*Math.cos(theta1) + l2*Math.cos(theta1 + theta2);
+double y = l1 * Math.sin(theta1) + l2*Math.sin(theta1 + theta2);
+

@@ -1,0 +1,7 @@
+private transient Instant toKey;
+private transient boolean toInclusive;
+private final List<Entry<V>> data = new ArrayList<>();
+Entry<V> toEntry = new Entry<>(toKey, null);
+if (toInclusive) {
+toIndex = CollectionUtils.upperBound(instance.data, toEntry, COMPARATOR);
+

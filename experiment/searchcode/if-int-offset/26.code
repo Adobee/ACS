@@ -1,0 +1,11 @@
+System.out.println(solve(new char[n], 0));
+}
+
+private static int solve(char c[], int offset) {
+if(offset == c.length) return 1;
+
+int cmp = next(c, offset), sum = 0;
+if(cmp <= 0) {
+c[offset] = &#39;1&#39;;
+sum += solve(c, offset+1);
+

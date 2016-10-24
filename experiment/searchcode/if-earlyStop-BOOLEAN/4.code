@@ -1,0 +1,7 @@
+public static boolean earlystop;
+
+public static boolean checkConnection(IBlockAccess world, double dx, double dy, double dz, int id, int meta) {
+for (IConnectionCheck check : checks) {
+boolean res = check.checkConnection(world, dx, dy, dz, id, meta);
+if (!check.continueCheck()) {
+

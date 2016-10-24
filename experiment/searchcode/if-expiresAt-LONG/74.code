@@ -1,0 +1,14 @@
+long now = System.currentTimeMillis();
+long expiresAt = now + unit.toMillis(expiresIn);
+
+SharedPreferences sharedPref = getSharedPreferences(appContext);
+long expiresAt = sharedPref.getLong(EXPIRES_AT, 0L);
+
+if (token == null || expiresAt < System.currentTimeMillis()) {
+return null;
+}
+
+return token;
+}
+}
+

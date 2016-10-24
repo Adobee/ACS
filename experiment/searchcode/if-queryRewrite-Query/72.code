@@ -1,0 +1,16 @@
+for(ASTNode node : new NameExpressionFinder().findNodes(query))
+{
+NameExpression nameExpression = (NameExpression)node;
+
+if(nameExpression.getSignature() instanceof ReferenceSignature)
+throw new OptimizationException(e);
+}
+}
+}
+
+return wrappers;
+}
+
+/**
+* Returns if a query contains only relational names.
+

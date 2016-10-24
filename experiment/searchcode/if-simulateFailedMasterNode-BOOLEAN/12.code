@@ -1,0 +1,9 @@
+final boolean simulateFailedMasterNode = rarely();
+DiscoveryNode failedMasterNode = null;
+if (simulateFailedMasterNode) {
+transport.handleResponse(requestId, nodeResponse);
+}
+}
+if (simulateFailedMasterNode) {
+totalShards += map.get(failedMasterNode.getId()).size();
+

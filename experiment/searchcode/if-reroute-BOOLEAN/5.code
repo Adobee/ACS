@@ -1,0 +1,11 @@
+private void addErr(boolean err) {
+if (errors != null) {
+errors.addElement(err);
+}
+}
+
+double run() throws RerouteNetException, DefaultPathRouterException {
+if (event instanceof FlowStartEvent) {
+FlowStartEvent flowStart = (FlowStartEvent) event;
+boolean result = rerouteNet.addFlow(
+

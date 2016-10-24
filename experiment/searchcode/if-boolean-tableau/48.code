@@ -1,0 +1,9 @@
+public MoveWasteToTableauController(GameController startGameController) {
+this.gameController = startGameController;
+}
+
+public boolean move(int tableauNumber) {
+Card moveCard = gameController.wasteCard();
+if( (tableau.size() == 0) &amp;&amp; (moveCard.getNumber() == 12)){
+return moveCard(tableauNumber, moveCard);
+

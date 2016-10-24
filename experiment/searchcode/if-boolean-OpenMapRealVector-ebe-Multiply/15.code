@@ -1,0 +1,13 @@
+return res;
+}
+
+/** {@inheritDoc} */
+public OpenMapRealVector ebeMultiply(RealVector v) throws IllegalArgumentException {
+res.setEntry(iter.key(), iter.value() * v.getEntry(iter.key()));
+}
+return res;
+}
+
+/** {@inheritDoc} */
+public OpenMapRealVector ebeMultiply(double[] v) throws IllegalArgumentException {
+

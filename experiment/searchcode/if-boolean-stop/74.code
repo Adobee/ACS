@@ -1,0 +1,12 @@
+public enum StopType {
+COMPLETE_STOP,
+READONLY_STOP;
+}
+
+public void stop(StopType stopType, String reason) {
+if (stopType == null) {
+throw new IllegalArgumentException(&quot;StopType cannot be null.&quot;);
+}
+
+if (isEmpty(reason)) {
+

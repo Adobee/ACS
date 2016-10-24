@@ -1,0 +1,12 @@
+public class Solution {
+public int reverse(int x) {
+int result = 0;
+int sign = 1;
+
+if(x < 0){
+sign = -1;
+}
+x = x * sign;
+
+while(x > 0){
+

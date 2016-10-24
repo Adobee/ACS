@@ -1,0 +1,14 @@
+addShape(s2);
+}
+
+private void addShape(Shape shape) {
+if (shape instanceof Group) {
+Group group = (Group) shape;
+shape.inc();
+}
+}
+
+@Override
+public void setActive(boolean active) {
+for (Shape shape : list) {
+

@@ -1,0 +1,11 @@
+public static double map(double t, double sourceMin, double sourceMax, double destMin, double destMax) {
+if (sourceMax == sourceMin) return 0.5 * (destMax + destMin);
+else {
+double rel = (t - sourceMin) / (sourceMax - sourceMin);
+return destMin * (1.0-rel) + destMax * rel;
+}
+}
+
+public static double clampZeroToOne(double v) {
+if (v > 1) return 1;
+

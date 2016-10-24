@@ -1,0 +1,11 @@
+public static double getNNDCG(List<List<Double>> predict){
+double sum = 0;
+for(int i=0;i<predict.size();i++){
+sum += getNDCG(predict.get(i));
+}
+return sum / predict.size();
+double s1 = getDCG(predict);
+predict.sort(new Comparator<Double>() {
+@Override
+public int compare(Double o1, Double o2) {
+

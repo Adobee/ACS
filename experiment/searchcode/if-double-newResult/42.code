@@ -1,0 +1,13 @@
+private int b;
+//private double result;
+
+public Rational(int a, int b) {
+this.a = a;
+this.b = b;
+int d = this.b * other.b;
+Rational newresult = new Rational(c,d);
+return newresult;
+}
+
+/*returns 0 if this and other represent equal rational numbers,
+

@@ -1,0 +1,11 @@
+InstallableUnit iu = (InstallableUnit) it.next();
+if (id.equals(iu.getId()))
+return iu;
+}
+fail(&quot;Can&#39;t find: &quot; + id);
+return null;
+private void assertRequirement(IRequiredCapability asserted, IRequiredCapability[] reqs) {
+boolean found = false;
+for (int i = 0; i < reqs.length; i++) {
+if (asserted.getName().equals(reqs[i].getName())) {
+

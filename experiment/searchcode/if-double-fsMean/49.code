@@ -1,0 +1,10 @@
+* @return the parameters of the harmonic function that best fits the
+* observed points (in the same order as above).
+*/
+public double[] fit(double[] initialGuess) {
+// initialize the means
+double fcMean = 0;
+double fsMean = 0;
+
+double currentX = observations[0].getX();
+

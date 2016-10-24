@@ -1,0 +1,13 @@
+public String getPlatformPartName() {
+return platformPartName;
+}
+
+public boolean isPOSIX() {
+return isPOSIX(this);
+//<editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Public Static Methods&quot;>
+public static boolean isPOSIX(final OS OS) {
+return isPOSIX(OS.getFamily());
+}
+
+public static boolean isPOSIX(final OSFamily OSFamily) {
+

@@ -1,0 +1,6 @@
+public SinInterval(Sin startSin, Sin endSin) {
+if (Quadrant.FORTH.compareTo(startSin.getQuadrant()) < 0) {
+throw new IllegalArgumentException(&quot;Acceptable only 1th, 2nd, 3d and 4th quadrants. Start sin quadrant = &quot; + startSin.getQuadrant());
+}
+if (Quadrant.FORTH.compareTo(endSin.getQuadrant()) < 0) {
+

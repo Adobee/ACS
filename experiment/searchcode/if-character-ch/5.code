@@ -1,0 +1,10 @@
+int ch = src.charAt(i);
+
+if( !isXMLNameChar(ch) ||
+(ch == &#39;_&#39; &amp;&amp; i < src.length()-5 &amp;&amp; src.charAt(i+1) == &#39;x&#39; &amp;&amp;
+int ch = src.charAt(i);
+
+if( ch == &#39;_&#39; &amp;&amp; i < src.length()-6 )
+{
+if( src.charAt(i+1) == &#39;x&#39; &amp;&amp; src.charAt(i+6) == &#39;_&#39; )
+

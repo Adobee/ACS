@@ -1,0 +1,9 @@
+private T instance;
+
+protected abstract T newInstance();
+
+public final T getInstance() {
+if (instance == null) {
+synchronized (SingletonUtils.class) {
+if (instance == null) {
+

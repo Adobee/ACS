@@ -1,0 +1,9 @@
+private static double df(double l0, double b, double l) {
+double dl = l - l0;
+double bm = b / 2;
+
+double tb = Math.tan(bm);
+double cb = Math.cos(bm);
+double sb = Math.sin(bm);
+double tb2 = tb * tb;
+

@@ -1,0 +1,8 @@
+// predict a first estimate of the state at step end
+final double stepEnd = stepStart + stepSize;
+// evaluate the derivative
+computeDerivatives(stepEnd, y, yDot);
+
+// update Nordsieck vector
+final double[] predictedScaled = new double[y0.length];
+

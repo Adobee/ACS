@@ -1,0 +1,11 @@
+b.put((byte) Deflater.DEFLATED);
+b.put((byte) 0);
+b.putInt(time);
+b.put((byte) 0);
+b.put((byte) OS_TYPE_UNKNOWN);
+gzipHeaderWritten = true;
+}
+while (true) {
+ByteBuffer deflated = ByteBuffer.allocate(BUFFER_SIZE);
+int c = deflater.deflate(deflated.array(), deflated.position(),
+

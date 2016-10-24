@@ -1,0 +1,8 @@
+public final class L {
+private static volatile boolean writeDebugLogs = false;
+private static volatile boolean writeLogs = true;
+
+public static void d(String msg, Object[] arg) {
+if (writeDebugLogs)
+log(3, null, msg, arg);
+

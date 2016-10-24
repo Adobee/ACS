@@ -1,0 +1,9 @@
+this.end = new SubtitleTiming(end);
+}
+
+public static boolean checkDifference(Subtitle first, Subtitle next, int minTime) {
+boolean result=true;
+if (checkOrder(first, next))
+{
+SubtitleTiming difference=(next.beginning).difference(first.end);
+

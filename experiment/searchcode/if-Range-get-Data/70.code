@@ -1,0 +1,6 @@
+public Filter getFilter(Filter filter) {
+if (rangeDuration.min == 0 &amp;&amp; rangeDuration.max == 0) return filter;
+protected boolean _accept(Data data) {
+VideoDataType video = (VideoDataType)data.getContent();
+if (rangeDuration.min > 0 &amp;&amp; video.getDuration() < rangeDuration.min) return false;
+

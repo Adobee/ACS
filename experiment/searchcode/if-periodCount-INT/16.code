@@ -1,0 +1,10 @@
+builder.setNodeCount(nodeCount).setArcCount(arcCount).setEps(scanner.nextDouble());
+
+int periodCount = 0;
+while (scanner.hasNext()) {
+int nodeBase = periodCount * nodeCount;
+parseArc(arcs.get(++arcNumber), nodes, nodeBase, scanner);
+}
+if (periodCount > 0) {
+for (int nodeNumber = nodeBase + 1; nodeNumber <= nodeBase + nodeCount; nodeNumber++) {
+

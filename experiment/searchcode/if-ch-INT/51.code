@@ -1,0 +1,12 @@
+public static boolean scan(String s)
+{
+int state = 0;
+int i = 0;
+while(state >= 0 &amp;&amp; i < s.length()) {
+final char ch = s.charAt(i++);
+switch(state) {
+case 0:
+if(ch == &#39; &#39; )
+state = 0;
+else if(ch == &#39;+&#39; || ch == &#39;-&#39; )
+

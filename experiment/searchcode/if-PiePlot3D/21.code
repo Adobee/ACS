@@ -1,0 +1,8 @@
+import org.jfree.chart.labels.StandardPieSectionLabelGenerator;
+import org.jfree.chart.plot.PiePlot3D;
+import org.jfree.data.general.DefaultPieDataset;
+import org.jfree.data.general.PieDataset;
+public static PieChart getMe(Long id) {
+if (pieChart == null) {
+pieChart = new PieChart(&quot;Portfolio Composition&quot;, id);
+

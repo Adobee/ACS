@@ -1,0 +1,9 @@
+return findTaskOutput(taskId, true);
+}
+
+static void delete(Connection dbConn, long outputId) throws SQLException
+{
+deleteOutputDocs(dbConn, outputId);
+
+PreparedStatement deleteStmt = dbConn.prepareStatement(&quot;DELETE FROM task_output_parameters WHERE OUTPUT_ID = ?&quot;);
+

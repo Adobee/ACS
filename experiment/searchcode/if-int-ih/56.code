@@ -1,0 +1,17 @@
+IIntIterator ih;
+int vValue = -1;
+
+
+
+public TwoDScaleIterator(IIntIterator iv, IIntIterator ih) {
+public TwoDScaleIteratorNotResetable(IIntIterator iv, IIntIterator ih) {
+super(iv, ih);
+}
+
+
+
+
+@Override
+protected int nextH() {
+if (itH != null)
+

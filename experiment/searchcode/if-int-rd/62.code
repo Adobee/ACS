@@ -1,0 +1,11 @@
+return explore(n, 0, 0, 0, 0);
+}
+
+private int explore(int n, int i, int colMask, int ldMask, int rdMask) {
+int mask = colMask | ldMask | rdMask;
+
+for (int j = 0; j < n; ++j) {
+int p = 1 << j;
+
+if ((p &amp; mask) == 0) {
+

@@ -1,0 +1,6 @@
+matrix[y][x] = newColor.toColor().getRGB();
+
+C3 err = oldColor.sub(newColor);
+
+if (x+1 < w)         d[y  ][x+1] = d[y  ][x+1].add(err.mul(7./16));
+

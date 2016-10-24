@@ -1,0 +1,8 @@
+package es.upm.miw.epf.store;
+
+public class LocalState extends State {
+protected static LocalState localState = null;
+public static LocalState getLocalState() {
+if (LocalState.localState == null) {
+LocalState.localState = new LocalState();
+

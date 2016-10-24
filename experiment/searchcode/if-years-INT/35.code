@@ -1,0 +1,11 @@
+private static YearsPool myInstance;
+
+private YearsPool() {}
+
+public static YearsPool getInstance() {
+if (myInstance == null) {
+@Override protected Years create(int numeral) {
+return new Years(numeral);
+}
+}
+

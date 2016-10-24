@@ -1,0 +1,22 @@
+package com.griffith.binarygap;
+
+public class PowerOf {
+
+public PowerOf() {
+}
+
+public int power(int x, int y) {
+if (y == 0) {
+return 1;
+}
+
+int d = power(x, y / 2);
+if (y % 2 == 0) {
+return d * d;
+}
+
+else
+return x * d * d;
+}
+}
+

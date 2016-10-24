@@ -1,0 +1,13 @@
+package org.moon.util;
+
+import java.net.URL;
+
+public class ClassLoaderUtils {
+
+public static ClassLoader getDefaultClassLoader() {
+ClassLoader loader = Thread.currentThread().getContextClassLoader();
+if (loader == null) {
+loader = ClassLoaderUtils.class.getClassLoader();
+}
+return loader;
+

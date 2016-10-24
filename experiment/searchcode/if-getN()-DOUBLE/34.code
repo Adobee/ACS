@@ -1,0 +1,8 @@
+public Matrix cross(Matrix matrix2) throws InCompatibleElementException
+{
+if (this.getN() != matrix2.getM())
+{
+throw new InCompatibleElementException(&quot;Matrix 1 (&quot; + this.getM() + &quot;X&quot; + this.getN() + &quot;) and Matrix 2 (&quot; + matrix2.getM() + &quot;X&quot; + matrix2.getN() + &quot;) cannot be cross multiplied&quot;);
+}
+double arr[][] = new double[this.getM()][matrix2.getN()];
+

@@ -1,0 +1,9 @@
+import com.directmodelling.api.Updates;
+import com.directmodelling.api.Updates.Receiver;
+import com.directmodelling.api.Value;
+import com.directmodelling.impl.util.FunctionCache;
+public abstract class IteratorBinding<In, Out> implements Receiver,
+Function<In, Out> {
+
+protected final Iterable<Out> container;
+

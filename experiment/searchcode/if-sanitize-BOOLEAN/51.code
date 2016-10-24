@@ -1,0 +1,11 @@
+@Inject private CacheExceptionSanitizer cacheStoreExceptionSanitizer;
+
+private boolean sanitize = true;
+private boolean log = true;
+
+@AroundInvoke
+if (sanitize) {
+cacheStoreExceptionSanitizer.sanitize(e);
+}
+if (log) {
+

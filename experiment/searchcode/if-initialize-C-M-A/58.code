@@ -1,0 +1,6 @@
+public class PersistentUtils {
+public static void initialize(Object entity){
+if(entity!=null){
+if(entity instanceof Optional &amp;&amp; ((Optional) entity).isPresent()){
+Hibernate.initialize(((Optional) entity).get());
+

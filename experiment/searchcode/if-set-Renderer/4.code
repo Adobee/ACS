@@ -1,0 +1,7 @@
+myProperties.setClassName(CommonClassNames.JAVA_LANG_OBJECT);
+LOG.assertTrue(labelRenderer == null || labelRenderer instanceof ReferenceRenderer);
+public void setClassName(@NotNull String name) {
+myProperties.setClassName(name);
+if(getRawLabelRenderer() != null) {
+final ValueLabelRenderer originalLabelRenderer = super.getLabelRenderer();
+

@@ -1,0 +1,13 @@
+private double Ymin;
+private double Ymax;
+
+/**
+* construit le plus petit rectangle contenant le segment donné en argument.
+if(p.getX()<=Xmin){
+Xmin = p.getX();
+}
+if(p.getY()>=Ymax){
+Ymax = p.getY();
+}
+if(p.getY()<=Ymin){
+

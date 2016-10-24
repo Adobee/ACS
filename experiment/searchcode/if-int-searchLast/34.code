@@ -1,0 +1,10 @@
+int tail = nums.length - 1;
+while (head <= tail) {
+int mid = (head + tail) >> 1;
+if (nums[mid] >= target) {
+tail = mid - 1;
+return (tail < nums.length &amp;&amp; tail >= 0 &amp;&amp; nums[tail] == target) ? tail : -1;
+}
+
+private int searchLast(int[] nums, int target) {
+

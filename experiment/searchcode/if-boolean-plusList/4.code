@@ -1,0 +1,11 @@
+public int getProdBuildCount(BuildingList buildingList)
+{
+int value = 0;
+for (Building building : buildingList.values())
+{
+if (building.getWorkerNeeded() > 0)
+ArrayList<RegionConfig> regionList = new ArrayList<RegionConfig>();
+
+File regionFolder = new File(HeroStrongholdPath, &quot;RegionConfig&quot;);
+if (!regionFolder.exists())
+

@@ -1,0 +1,8 @@
+JsonSerialize jsonSerialize = serializeMap.get(clazz);
+if (jsonSerialize == null) {
+jsonSerialize = JsonSerializeConfig.getSerialize(clazz);
+}
+
+// 使用默认
+if (jsonSerialize == null) {
+

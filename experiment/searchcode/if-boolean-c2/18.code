@@ -1,0 +1,8 @@
+while (lo < hi){
+char c1 = s.charAt(lo);
+char c2 = s.charAt(hi);
+if (isValid(c1) &amp;&amp; isValid(c2)){
+c1 = (char) ((&#39;a&#39; <= c1 &amp;&amp; c1 <= &#39;z&#39; || &#39;0&#39; <= c1 &amp;&amp; c1<= &#39;9&#39;)? c1 : (c1 - &#39;A&#39; + &#39;a&#39;));
+c2 = (char) ((&#39;a&#39; <= c2 &amp;&amp; c2 <= &#39;z&#39; || &#39;0&#39; <= c2 &amp;&amp; c2<= &#39;9&#39;)? c2 : (c2 - &#39;A&#39; + &#39;a&#39;));
+if (c1 == c2) {
+

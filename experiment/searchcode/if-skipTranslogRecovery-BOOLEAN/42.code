@@ -1,0 +1,6 @@
+public Engine.CommitId flush(FlushRequest request) throws ElasticsearchException {
+boolean waitIfOngoing = request.waitIfOngoing();
+boolean force = request.force();
+if (logger.isTraceEnabled()) {
+logger.trace(&quot;flush with {}&quot;, request);
+

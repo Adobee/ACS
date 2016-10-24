@@ -1,0 +1,13 @@
+package principal;
+public class CSuma {
+private double n1,n2,resultado;
+private String op;
+public void setN1(double n1) {
+this.n1 = n1;
+}
+
+/**
+* @param n2 the n2 to set
+*/
+public void setN2(double n2) {
+

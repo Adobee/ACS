@@ -1,0 +1,10 @@
+localeHolder.remove();
+}
+
+private static Locale correct(Locale locale) {
+if(locale == null){
+return null;
+}
+if (locale.getLanguage().equals(&quot;kr&quot;)) {
+return new Locale(&quot;ko&quot;, locale.getCountry());
+

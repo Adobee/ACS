@@ -1,0 +1,9 @@
+* @param $coll
+* @return
+*/
+public static Set<Object> makeSet(final Object $coll) {
+if ($coll instanceof int[]) {
+} else if ($coll instanceof Object[]) {
+return makeSet((Object[]) $coll);
+} else if ($coll instanceof Collection) {
+

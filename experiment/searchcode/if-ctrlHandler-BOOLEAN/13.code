@@ -1,0 +1,10 @@
+btnPause.addActionListener(new ActionListener() {
+public void actionPerformed(ActionEvent arg0) {
+if (pathPaused) {
+ctrlHandler.resumePath();
+* Controlhandler starts the path. If path is empty, do nothing
+*/
+protected void startPath() {
+if (commands.size() > 0) {
+ctrlHandler.startPath(commands);
+

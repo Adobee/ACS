@@ -1,0 +1,15 @@
+package specit.util;
+
+/**
+*
+*
+*/
+public class Time {
+
+private static long currentTimeMillis = -1;
+Time.currentTimeMillis = -1;
+}
+
+public static long currentTimeMillis() {
+if (currentTimeMillis == -1) {
+

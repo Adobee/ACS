@@ -1,0 +1,9 @@
+* @param point The point to check for inclusion
+* @return True if containing
+*/
+public boolean contains(Vector3d point) {
+public Vector3d closestPointOnAABBToPoint(Vector3d p) {
+Vector3d r = new Vector3d(p);
+
+if (p.x < minX()) r.x = minX();
+

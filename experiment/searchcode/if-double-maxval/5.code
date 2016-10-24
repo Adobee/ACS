@@ -1,0 +1,11 @@
+throw new ParamValueException(this, &quot;Double must be greater than &quot; + minVal);
+
+if (maxVal != null &amp;&amp; intVal > maxVal)
+throw new ParamValueException(this, &quot;Double must be less than &quot; + maxVal);
+
+}
+
+@Override
+public Double getValue(String data) {
+if (data == null)
+

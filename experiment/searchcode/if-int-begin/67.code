@@ -1,0 +1,10 @@
+public static void mergeSort(int[] array, int begin, int end) {
+if (end - begin < 1)
+return;
+int middle = begin + (end - begin)/2;
+mergeSort(array, begin, middle);
+public static void merge(int[] array, int begin, int middle, int end) {
+if (begin == end)
+return;
+int[] wa = new int[end-begin+1];
+

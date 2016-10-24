@@ -1,0 +1,10 @@
+public void addIndex(String name,boolean build,boolean backgroundIndex){
+allIndexes.put(name, new RangeIndex());
+if(build){
+build(name,backgroundIndex);
+continue;
+}
+int count=rangeIndex.getIdenticalIndexCount();
+if(count>max){
+max=count;
+

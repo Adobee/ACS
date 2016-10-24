@@ -1,0 +1,16 @@
+return solve(x, n, cache);
+}
+
+private double solve(double x, int n, Map<Integer, Double> cache) {
+if (!cache.containsKey(n)) {
+double result = x;
+if (n > 1) {
+result = solve(x, n / 2) * solve(x, n / 2) * solve(x, n % 2);
+}
+cache.put(n, result);
+}
+
+return cache.get(n);
+}
+}
+

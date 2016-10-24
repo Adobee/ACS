@@ -1,0 +1,13 @@
+public class DateTimeAdapter extends TypeAdapter<DateTime> {
+public DateTime read(JsonReader reader) throws IOException {
+if (reader.peek() == JsonToken.NULL) {
+public void write(JsonWriter writer, DateTime value) throws IOException {
+if (value == null) {
+writer.nullValue();
+return;
+}
+long millis = value.getMillis();
+writer.value(millis);
+}
+}
+

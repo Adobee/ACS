@@ -1,0 +1,15 @@
+for (int i=0; i<prods.length; i++)
+{
+String lhs=prods[i].getLHS();
+if (ch==&#39;S&#39; || ch==&#39;T&#39;)
+{
+ch++;
+}
+int aa=lhs.indexOf(&quot;V(&quot;);
+//		System.out.println(&quot;in 1st &quot;+lhs+&quot;===>    &quot;);
+int bb=lhs.indexOf(&quot;)&quot;);
+String var=&quot;&quot;;
+if ((aa+bb+1) > lhs.length())
+{
+var=lhs.substring(aa, aa+bb);
+

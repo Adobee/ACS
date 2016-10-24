@@ -1,0 +1,8 @@
+plStore = new PostingListStore(this);
+
+// 开始拷贝old dwpt到新的dwpt中来
+int maxDocId = oldInvertedIndexer.maxDoc;
+Bits fakeBits = oldInvertedIndexer.liveDocs(maxDocId);
+int uid = 0;
+int[] old2doc = new int[1 << 24];// 旧的文档对应新文档的位置
+

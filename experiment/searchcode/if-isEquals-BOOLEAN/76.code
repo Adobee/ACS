@@ -1,0 +1,11 @@
+public static RepositoryEqualsBuilder getInstance() {
+if (instance == null) {
+instance = new RepositoryEqualsBuilder();
+}
+return instance;
+}
+
+@Override
+public boolean isEquals(Repository obj1, Object obj2) {
+boolean isEquals = false;
+

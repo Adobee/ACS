@@ -1,0 +1,17 @@
+System.out.println(bg.getMaxGap());
+}
+
+public void countGap(int value)
+{
+if(value >= 2)
+{
+countGap(value / 2);
+}
+
+temp = value % 2;
+
+if(temp == 0) currentGap++;
+else
+{
+if(currentGap > maxGap) maxGap = currentGap;
+

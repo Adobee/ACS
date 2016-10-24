@@ -1,0 +1,13 @@
+public class AgeValidator implements Validator {
+private final int maxAge;
+
+public AgeValidator(int maxAge) {
+this.maxAge = maxAge;
+private boolean isValidAge(int age, int ageLimit) {
+if (age >= ageLimit &amp;&amp; age <= maxAge) {
+return true;
+}
+return false;
+}
+}
+

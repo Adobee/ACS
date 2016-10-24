@@ -1,0 +1,13 @@
+return divUp(Math.ulp(Math.abs(x)), 2.0);
+//return Math.nextUp(u*Math.abs(x));
+}
+
+public static double up1(double x) {
+if(x == Double.NEGATIVE_INFINITY)
+return Math.nextUp(x + Math.ulp(x));
+}
+
+
+public static double down1(double x) {
+if(x == Double.POSITIVE_INFINITY)
+

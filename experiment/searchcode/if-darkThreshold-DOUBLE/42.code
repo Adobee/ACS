@@ -1,0 +1,12 @@
+final static int K_HEIGHT = kinect_status_t.HEIGHT;
+
+private final static double darkThreshold = .35;
+
+// LCM
+ArrayList<double[]> currentPoints = new ArrayList<double[]>();
+if(kinectData == null){
+return currentPoints;
+}
+
+for (int y = (int) KUtils.viewRegion.getMinY(); y < KUtils.viewRegion.getMaxY(); y++) {
+

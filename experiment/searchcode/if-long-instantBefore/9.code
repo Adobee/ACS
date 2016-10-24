@@ -1,0 +1,8 @@
+* @return the human-readable long name in the specified locale
+*/
+public String getName(long instant, Locale locale) {
+if (locale == null) {
+locale = Locale.getDefault();
+// evaluate 3 hours before and after to work out if anything is happening
+long instantBefore = instant - 3 * DateTimeConstants.MILLIS_PER_HOUR;
+

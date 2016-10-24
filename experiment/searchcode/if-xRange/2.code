@@ -1,0 +1,7 @@
+public static Rectangle frameFor(Definition def, Range xRange) {
+double ymin = Double.MAX_VALUE;
+double ymax = -Double.MAX_VALUE;
+Multidef inter = IntervalTransform.intervalize(def.toMultidef(), def.args);
+for(int i = 0; i < intervals; i++) {
+inputs[2 * i] = (xRange.max - xRange.min) * i / intervals + xRange.min;
+

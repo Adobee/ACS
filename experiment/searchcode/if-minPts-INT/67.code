@@ -1,0 +1,6 @@
+double eps = 30; //seconds
+int minPts = 5;
+Trajectory trajectory = PltFileReader.read(&quot;20081023055305.plt&quot;);//&quot;20081023025304.plt&quot;);
+public static DBScanResult<Coordinate> distanceDBScan(Trajectory trajectory, double eps, int minPts) {
+System.out.println(&quot;=== Trajectory Evaluation with &quot;+trajectory.getCoordinates().size()+ &quot; coordinates ===&quot;);
+

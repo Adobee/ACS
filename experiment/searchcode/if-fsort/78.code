@@ -1,0 +1,9 @@
+KnRole role=roleInfoService.Save(kr);
+if(role==null){
+redirectAttributes.addFlashAttribute(&quot;stat&quot;,&quot;false&quot;);
+List<KnRoleApplicationInfo> list=roleInfoService.SaveToApp(rids,appids);
+if(list==null){
+return false;
+}else{
+return true;
+

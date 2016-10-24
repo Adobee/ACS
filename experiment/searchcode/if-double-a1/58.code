@@ -1,0 +1,8 @@
+public static double calculateSubtendedAngle(double d1, double a1, double d2, double a2)
+{
+if ((a1 >= -180.0 &amp;&amp; a1 <= 180.0) &amp;&amp; (a2 >= -180.0 &amp;&amp; a2 <= 180.0) &amp;&amp; (d1 >= -90.0 &amp;&amp; d1 <= 90.0)  &amp;&amp; (d2 >= -90.0 &amp;&amp; d2 <= 90.0))
+double d1Radian = Math.toRadians(d1);
+double a1Radian = Math.toRadians(a1);
+double d2Radian = Math.toRadians(d2);
+double a2Radian = Math.toRadians(a2);
+

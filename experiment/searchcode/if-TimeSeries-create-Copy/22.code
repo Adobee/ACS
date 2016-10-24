@@ -1,0 +1,10 @@
+*          The timeseries link.
+*/
+public void put( final String catchmentId, final TimeseriesLinkType link )
+{
+if( !m_hash.containsKey( catchmentId ) )
+/* Build the hash code of the timeseries links for the catchment. */
+final String hashCode = buildHashCode( timeseriesLinks );
+
+/* If the hash code is already available, reuse the merged observation. */
+

@@ -1,0 +1,9 @@
+this.directory = new HashMap<>();
+}
+
+protected User addUser(InetAddress ip, String nickname) {
+User u = directory.get(ip);
+if (u == null) {
+u = User.createUser(nickname, ip);
+directory.put(ip, u);
+

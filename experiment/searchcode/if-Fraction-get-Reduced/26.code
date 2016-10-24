@@ -1,0 +1,11 @@
+public void testReducedFactory_int_int() {
+Fraction f = null;
+
+// zero
+f = Fraction.getReducedFraction(0, 1);
+assertEquals(1, f.getDenominator());
+
+// normal
+f = Fraction.getReducedFraction(1, 1);
+assertEquals(1, f.getNumerator());
+

@@ -1,0 +1,7 @@
+Locale locale = Locale.getDefault();
+if (locale.getLanguage().equals(&quot;ms&quot;)) {
+return &quot;ml&quot;;
+}
+if (locale.toString().startsWith(Locale.CHINESE.toString())) {
+return locale.toString().replace(&quot;_&quot;, &quot;-&quot;);
+

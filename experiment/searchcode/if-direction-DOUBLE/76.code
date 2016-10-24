@@ -1,0 +1,9 @@
+public class Vector3D {
+double[] position;
+double[] direction;
+double magnitude;
+
+public Vector3D(double[] position, double[] direction, double magnitude) {
+this.position = position;
+this.direction = direction;
+

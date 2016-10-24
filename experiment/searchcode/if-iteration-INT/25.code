@@ -1,0 +1,10 @@
+populateFlash(iteration);
+
+if(validation.hasErrors()) {
+renderTemplate(&quot;Iteration/iteration.html&quot;, mode, iteration);
+iteration.stories = new ArrayList<Story>();
+
+if(validation.hasErrors()) {
+populateFlash(iteration);
+renderTemplate(&quot;Iteration/iteration.html&quot;, mode, iteration);
+

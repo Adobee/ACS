@@ -1,0 +1,14 @@
+int T = Integer.parseInt(stdin.readLine());
+int ncol = 5;
+
+int[] vals = new int[L];
+for (i = 1; i <= L; ++i)
+vals[i - 1] = Integer.parseInt(tok[i]);
+boolean ok = false;
+while (!ok)
+{
+ok = true;
+try
+{
+ncol *= 2;
+

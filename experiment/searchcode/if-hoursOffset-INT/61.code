@@ -1,0 +1,9 @@
+this.getLogger().info(&quot;Loading CircadianRhythm.jar&quot;);
+try {
+File file;
+if (!this.getDataFolder().exists()) {
+this.getDataFolder().mkdirs();
+double timespeed = (24/hpd);
+Calendar d = Calendar.getInstance();
+int h = d.get(11) + this.getConfig().getInt(&quot;hoursOffset&quot;);
+

@@ -1,0 +1,11 @@
+private final List<PipelineAggregatorFactory> pipelineAggregatorFactories = new ArrayList<>();
+
+public Builder addAggregator(AggregatorFactory factory) {
+if (!names.add(factory.name)) {
+this.pipelineAggregatorFactories.add(pipelineAggregatorFactory);
+return this;
+}
+
+public AggregatorFactories build() {
+if (factories.isEmpty() &amp;&amp; pipelineAggregatorFactories.isEmpty()) {
+

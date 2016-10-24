@@ -1,0 +1,10 @@
+public Map<String, Object> persistenceOptions = new HashMap<String, Object>();
+}
+
+Args optionalArgs;
+
+private int numShards;
+private Coordinator coordinator;
+public DomainSpec(Coordinator coordinator, ShardingScheme shardingScheme, int numShards, Args args) {
+if (numShards <= 0) {
+

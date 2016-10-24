@@ -1,0 +1,6 @@
+String httpMethod = (String) msgContext.getProperty(
+Constants.Configuration.HTTP_METHOD);
+if (httpMethod == null) {
+String forceHttp10 = (String) msgContext.getProperty(PassThroughConstants.FORCE_HTTP_1_0);
+if (&quot;true&quot;.equals(forceHttp10)) {
+

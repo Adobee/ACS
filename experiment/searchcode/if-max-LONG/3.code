@@ -1,0 +1,20 @@
+public class KleofasTail {
+
+public long countGoodSequences(long K, long A, long B) {
+if (K == 0)
+return B - A + 1;
+
+long r = 0;
+for (long M = K + 2; K <= B; K *= 2, M *= 2) {
+long min = max(K, A);
+long max = min(M, B + 1);
+
+if (max > min)
+r += max - min;
+}
+
+return r;
+}
+
+}
+

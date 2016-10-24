@@ -1,0 +1,13 @@
+public class QuickUnionImprovementUF {
+
+private int[] id;
+private int[] sz;
+sz[i] = 1;
+}
+}
+
+public void union(int p, int q) {
+int i = root(p);
+int j = root(q);
+if (sz[i] < sz[j]) { id[i] = j; sz[j] += sz[i]; }
+

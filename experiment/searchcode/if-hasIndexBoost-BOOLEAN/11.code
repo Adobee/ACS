@@ -1,0 +1,8 @@
+* Return whether to profile query execution, or {@code null} if
+* unspecified.
+*/
+public boolean profile() {
+boolean hasIndexBoost = in.readBoolean();
+if (hasIndexBoost) {
+int size = in.readVInt();
+

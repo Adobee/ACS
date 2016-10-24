@@ -1,0 +1,8 @@
+package com.sqsgalaxys.example1_3;
+
+public class Algorithm<T> {
+IComparator<T> cmp; // 比较器 是 AbstractComparator 的子类
+public T median(T x, T y, T z) {
+if (cmp.less(x, y)) {
+return cmp.less(y, z) ? y : cmp.less(x, z) ? z : x;
+

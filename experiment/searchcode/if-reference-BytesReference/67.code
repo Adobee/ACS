@@ -1,0 +1,6 @@
+import java.io.IOException;
+import org.elasticsearch.common.bytes.BytesReference;
+import org.elasticsearch.common.xcontent.XContentHelper;
+private static DeleteIndexResponse doParse(BytesReference bytesReference, int status) {
+try (XContentParser parser = XContentHelper.createParser(bytesReference)) {
+

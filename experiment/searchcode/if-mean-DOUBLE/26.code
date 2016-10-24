@@ -1,0 +1,12 @@
+private Mean<T> meanAggregator;
+
+protected int count;
+protected double mean;
+
+public StandardDeviation() {
+clear();
+double res = Math.sqrt(mean
+- Math.pow(meanAggregator.result().doubleValue(), 2));
+if (res < 1e-8) res = 0;
+return res;
+

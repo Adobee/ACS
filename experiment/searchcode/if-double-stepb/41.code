@@ -1,0 +1,10 @@
+public stepb_cartesian_point[][] getShellPts(int index, double scale)
+{
+if (this._ptSetsShell == null)
+{
+setDataToElementXY();
+}
+if(index != -1)
+{
+stepb_cartesian_point_array displacementArray = this._dataManager.getDisplacementArray(index);
+

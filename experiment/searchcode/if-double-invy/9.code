@@ -1,0 +1,6 @@
+g.setColor(new Color(red, 0, blue, 0.05f));
+double x = ((double) i)/ years * (w - 2*offset) + offset;
+double invY = ((sizes.get(i).get(j) - minSize) / (maxSize-minSize)) * (h - 2*offset) + offset;
+double y = h - invY;
+g.fillOval((int) x, (int)y, pointRadius, pointRadius);
+

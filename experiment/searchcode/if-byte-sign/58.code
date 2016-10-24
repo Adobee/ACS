@@ -1,0 +1,13 @@
+for (Location loc : Signs.JOIN_SIGNS_LOCATION)
+{
+inactiveSigns.add(loc);
+}
+}
+
+public void setSignInactive(Sign sign)
+{
+if (activeSigns.contains(sign.getLocation()))
+activeSigns.remove(sign.getLocation());
+
+if (!inactiveSigns.contains(sign.getLocation()))
+

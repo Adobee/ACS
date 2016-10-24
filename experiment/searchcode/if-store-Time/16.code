@@ -1,0 +1,7 @@
+public Map<String, Object> preProcessBeanValues(final Map<String, Object> row) {
+if (row.get(&quot;store&quot;) == null) {
+public Object preProcessBeforePersist(final Object bean, Map<String, Object> row) {
+Store store = (Store)row.get(&quot;store&quot;);
+if(store != null){
+store.setStoreOwnerName(row.get(&quot;storeOwnerName&quot;).toString());
+

@@ -1,0 +1,6 @@
+Map<String, NCPeriodsInfo> periodsInfoMap = ncPeriodsInfoLogic.getPeriodsInfoFromBetTableForReLotteryEOD(scheme);
+
+if (MapUtils.isNotEmpty(periodsInfoMap)) {
+boolean flag = lotteryResultLogic.saveReportPeriod(periodsInfo.getPeriodsNum(), Constant.LOTTERY_TYPE_NC, scheme);// 统计报表
+if (flag) {
+

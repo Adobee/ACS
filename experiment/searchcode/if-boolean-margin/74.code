@@ -1,0 +1,13 @@
+static final MarginLayoutParamsCompatImpl IMPL;
+
+static
+{
+if (Build.VERSION.SDK_INT >= 17)
+{
+IMPL = new MarginLayoutParamsCompatImplJbMr1();
+public static int getLayoutDirection(ViewGroup.MarginLayoutParams paramMarginLayoutParams)
+{
+int j = IMPL.getLayoutDirection(paramMarginLayoutParams);
+int i = j;
+if (j != 0)
+

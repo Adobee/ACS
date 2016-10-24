@@ -1,0 +1,7 @@
+// note, sometimes, we want to check with the fact that an index gets created, sometimes not...
+boolean autoCreateIndex = randomBoolean();
+} catch (ClusterBlockException e) {
+if (indexShouldBeAutoCreated) {
+// timeout is 200
+assertThat(System.currentTimeMillis() - now, greaterThan(timeout.millis() - 50));
+

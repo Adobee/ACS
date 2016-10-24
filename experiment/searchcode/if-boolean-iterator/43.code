@@ -1,0 +1,12 @@
+final Iterator<T> iterator;
+boolean peeked = false;
+T item;
+
+public PeekingIterator(@Nonnull Iterator<T> iterator) {
+this.iterator = iterator;
+}
+
+public T peek() {
+if (!peeked) {
+item = iterator.next();
+

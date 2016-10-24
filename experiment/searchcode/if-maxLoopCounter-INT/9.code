@@ -1,0 +1,7 @@
+public static Locals newLambdaScope(Locals programScope, Type returnType, List<Parameter> parameters,
+int captureCount, int maxLoopCounter) {
+Locals locals = new Locals(programScope, returnType);
+// Loop counter to catch infinite loops.  Internal use only.
+if (maxLoopCounter > 0) {
+locals.defineVariable(null, Definition.INT_TYPE, LOOP, true);
+

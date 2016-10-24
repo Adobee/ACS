@@ -1,0 +1,7 @@
+private MoshiConverterFactory(Moshi moshi, boolean lenient) {
+if (moshi == null) throw new NullPointerException(&quot;moshi == null&quot;);
+public Converter<ResponseBody, ?> responseBodyConverter(Type type, Annotation[] annotations,
+Retrofit retrofit) {
+JsonAdapter<?> adapter = moshi.adapter(type);
+if (lenient) {
+

@@ -1,0 +1,7 @@
+if (operation.equalsIgnoreCase(&quot;insert&quot;)) {
+if (issueDateObject != null &amp;&amp; expiryDateObject != null) {
+issueDate = CommunicationUtility.checkDateFormat(issueDateObject);
+expiryDate = CommunicationUtility.checkDateFormat(expiryDateObject);
+if (expiryDate.before(issueDate)) {
+throw new BusinessLogicException(&quot;Document expiry date must be greater than OR equal to issue date.&quot;);
+

@@ -1,0 +1,10 @@
+public static final NativeMailNotifierDriver theInstance() {
+if (instance == null) {
+instance = new NativeMailNotifierDriver();
+}
+return instance;
+public void openMailNotifierConnection() throws IOException {
+if (dreamCheeky == null) {
+ClassPathLibraryLoader.loadNativeHIDLibrary();
+HIDManager instance = HIDManager.getInstance();
+

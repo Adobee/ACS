@@ -1,0 +1,6 @@
+if (dataType.equals(XSD_FLOAT) || dataType.equals(XSD_DOUBLE)) {
+matrix = new CMLMatrix(splitDoubleData(rawData));
+} else if (dataType.equals(XSD_INTEGER)) {
+String[] cols = rows[i].split(Gaussian03AST2CML.ARRAY_DELIMITER);
+matrix[i] = new int[cols.length];
+

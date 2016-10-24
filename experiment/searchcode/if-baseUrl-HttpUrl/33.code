@@ -1,0 +1,6 @@
+private EndpointInterface endpointInterface;
+
+public RequestHandler(HttpUrl baseURL) {
+public RequestHandler(HttpUrl baseURL, String username, String password) {
+endpointInterface = RestClient.createService(EndpointInterface.class, baseURL, username, password);
+

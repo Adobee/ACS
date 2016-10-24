@@ -1,0 +1,9 @@
+* Tham số: một đối tượng Im, sẽ cập nhật các trường của đối tượng Im hiện tại theo iId
+* Trả lại: boolean cho biết kết quả cập nhật
+@SuppressWarnings(&quot;finally&quot;)
+public boolean deleteIm(int iId) {
+boolean bRes = false;
+try
+{
+if(databaseHelper.delete(HrmContactSqliteHelper.TABLE_IM, HrmContactSqliteHelper.PRIMARY_KEY + &quot; = &quot; + iId, null) > 0)
+

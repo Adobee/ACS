@@ -1,0 +1,9 @@
+listener.onException(aHandlerContext, new OnExceptionEvent(e, channelEvent));
+}
+//        else if (channelEvent.getEventHeader().getExceptionListener() != null) {
+public void sendUpStream(HandlerContext handlerContext, ChannelEvent channelEvent) {
+
+HandlerContext aHandlerContext = getActualUpStreamContext(handlerContext);
+
+if (aHandlerContext != null)
+

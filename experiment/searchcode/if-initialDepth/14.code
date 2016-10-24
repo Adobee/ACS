@@ -1,0 +1,9 @@
+public void deletaArquivoExistente(String nomeArquivo) {
+File f = new File(nomeArquivo);
+if (f.exists()) {
+public List<String> fileTreePrinter(File initialPath, int initialDepth) {
+
+int depth = initialDepth++;
+if (initialPath.exists()) {
+File[] contents = initialPath.listFiles();
+

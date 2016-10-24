@@ -1,0 +1,6 @@
+final RealDistribution kernel = getKernel(binStats.get(binIndex));
+return kernel.density(x) * pB(binIndex) / kB(binIndex);
+final double lower = binIndex == 0 ? min : binBounds[binIndex - 1];
+final RealDistribution kernel = k(x);
+final double withinBinCum =
+

@@ -1,0 +1,11 @@
+comma = money.indexOf(&#39;,&#39;);
+}
+
+if (comma == -1) {
+return Integer.parseInt(money) >= 0;
+}
+
+int big = Integer.parseInt(money.substring(0, comma));
+
+if (big < 0) {
+

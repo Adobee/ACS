@@ -1,0 +1,13 @@
+private String invDescription;
+private double price;
+
+public Product() {
+this(&quot;&quot;, 0.0);
+if (invDescr != &quot;&quot;) {
+invDescription = invDescr;
+}
+}
+
+public void setPrice(double pr) {
+if (pr != 0.0) {
+

@@ -1,0 +1,9 @@
+// compute the intersection on infinite line
+Vector3D v1D = line.intersection(subLine.line);
+if (v1D == null) {
+return null;
+Location loc2 = subLine.remainingRegion.checkPoint(subLine.line.toSubSpace(v1D));
+
+if (includeEndPoints) {
+return ((loc1 != Location.OUTSIDE) &amp;&amp; (loc2 != Location.OUTSIDE)) ? v1D : null;
+

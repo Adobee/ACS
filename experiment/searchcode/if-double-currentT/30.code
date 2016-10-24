@@ -1,0 +1,14 @@
+public static void displayWaitMessage() {
+ht.putMessage(Messages.PLEASE_WAIT_MESSAGE);
+}
+
+void putMessage(String s) {
+if (currentT != null) {
+currentT = new Thread(t);
+currentT.start();
+}
+
+void stopTicker() {
+if (currentT != null) {
+currentT.interrupt();
+

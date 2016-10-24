@@ -1,0 +1,8 @@
+StringBuilder afterFilter  = new StringBuilder(&quot;&quot;);
+afterFilter.append(result);
+int endIndex = -1;
+int beginIndex  = afterFilter.indexOf(&quot;<&quot;);
+endIndex = afterFilter.indexOf(&quot;>&quot;);
+if(endIndex != -1 &amp;&amp; beginIndex < endIndex)
+afterFilter.replace(beginIndex, endIndex+1, &quot;&quot;);
+

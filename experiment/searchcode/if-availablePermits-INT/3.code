@@ -1,0 +1,9 @@
+private volatile int availablePermits;
+private final int MAX_AVAILABLE;
+
+
+public SemaphoreImpl(int permits) {
+@Override
+public synchronized void acquire(int permits) throws InterruptedException {
+if (availablePermits <= permits) {
+

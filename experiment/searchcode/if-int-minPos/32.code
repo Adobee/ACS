@@ -1,0 +1,10 @@
+public static void main(String[] args){
+
+
+int[] array = {1, 4, 5, 2, 3};
+
+
+int minPos, temp;
+for(int i = start; i < array.length; i++){
+if(array[i] < array[minPos])
+

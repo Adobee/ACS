@@ -1,0 +1,9 @@
+public void onValueChange(NumberPicker picker, int oldVal, int newVal) {
+if(picker == mNpMonth){
+mShowDate.add(Calendar.MONTH, newVal-oldVal);
+iMaxDay = (iStartDay+miPeriodInDay)<=iDayOfMonth?iEndDay:iDayOfMonth;
+}
+}else if(iEndMonth == iCurMonth){
+if(0 > miPeriodInDay){
+int iDayOfMonth = mShowDate.getActualMaximum(Calendar.DAY_OF_MONTH);
+

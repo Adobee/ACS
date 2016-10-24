@@ -1,0 +1,11 @@
+return getUrl(domain.web_protocol, format(&quot;%s.%s&quot;, domain.user_domain, mainDomain), port);
+}
+
+public String getExternalUrl() {
+if (domain.ip == null || domain.web_port == null)
+return getUrl(domain.web_protocol, domain.ip, domain.web_port);
+}
+
+public String getInternalUrl() {
+if (domain.local_ip == null || domain.web_local_port == null)
+

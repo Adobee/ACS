@@ -1,0 +1,18 @@
+targetY = ty;
+targetX = tx;
+}
+
+public int[] getDirection() {
+int[] a = new int[5];
+
+if(targetY < fromY)
+a[3] = 100;
+else if(targetX > fromX)
+a[4] = 100;
+
+return a;
+}
+
+public int getDistance() {
+return Math.abs(targetY - fromY) + Math.abs(targetX - fromX);
+

@@ -1,0 +1,8 @@
+* https://leetcode.com/problems/wiggle-subsequence/
+*/
+public class No367 {
+public int wiggleMaxLength(int[] nums) {
+if (nums.length <= 1) return nums.length;
+int lastDiff = nums[1] - nums[0];
+int maxLength = lastDiff == 0 ? 1 : 2;
+

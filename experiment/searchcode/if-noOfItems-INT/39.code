@@ -1,0 +1,9 @@
+private double travelTime;
+private String blocked;
+private String symbol;
+private double noOfItems;
+
+public InteriorDecorShop() {
+hash = 37 * hash + Objects.hashCode(this.symbol);
+hash = 37 * hash + (int) (Double.doubleToLongBits(this.noOfItems) ^ (Double.doubleToLongBits(this.noOfItems) >>> 32));
+

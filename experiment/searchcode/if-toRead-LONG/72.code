@@ -1,0 +1,9 @@
+public final long nextLong() { // should never been used
+ByteBuffer buffer; // loosing performance
+read(buffer = ByteBuffer.allocate(LONG_SIZE_BYTES));
+try {
+final int max = maximumRequest();
+
+for (int toRead = 0, len = rem; bytes < len;) {
+if (len - bytes >= max)
+

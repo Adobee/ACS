@@ -1,0 +1,9 @@
+* @return
+*/
+public static long generateBellNumber(int index){
+if(index < 0)
+throw new IllegalArgumentException(&quot;Argument must be non-negative&quot;);
+long binomialCoeff = Binomial.coefficient(index - 1, i);
+sum += binomialCoeff * prevBellNum;
+if(sum < 0) throw new RuntimeException(&quot;Long integer overflow exception&quot;);
+

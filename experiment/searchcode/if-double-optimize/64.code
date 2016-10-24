@@ -1,0 +1,11 @@
+public double getValue() {
+// System.out.println(&quot;get value called&quot;);
+if (paramChanged) {
+double x = parameters[0];
+return latestValue;
+}
+
+@Override
+public void getValueGradient(double[] gradient) {
+if (paramChanged) {
+

@@ -1,0 +1,14 @@
+tag = pcounter >> 2;
+
+ICacheBlock iBlock = ICache.getInstance().iCache[blockIndex];  // this.iCache[blockIndex];
+
+if(iBlock != null)
+if(iBlock.tag == tag)
+return true;
+
+return false;
+
+}
+
+// Fetch instruction from Memory to store in the cache
+

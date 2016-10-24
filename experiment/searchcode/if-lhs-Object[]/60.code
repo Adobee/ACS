@@ -1,0 +1,12 @@
+public class JAXBEqualsBuilder extends EqualsBuilder {
+
+@Override
+public EqualsBuilder append(Object lhs, Object rhs) {
+if (!isEquals()) {
+return this;
+}
+if (lhs == rhs) {
+return this;
+}
+if (lhs == null || rhs == null) {
+

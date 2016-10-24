@@ -1,0 +1,7 @@
+public static Object getTargetObject(Object source) {
+if (!objectCache.containsKey(source)) {
+LOGGER.fine(&quot;Source object is not in cache! Source object:&quot; + source);
+public synchronized static <SourceType, TargetType> void saveObjects(SourceType source, TargetType target) {
+if (objectCache.containsKey(source)) {
+LOGGER.fine(&quot;Object is already in cache! Source object&quot; + source + &quot;; Target object:&quot; + target);
+

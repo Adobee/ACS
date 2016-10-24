@@ -1,0 +1,9 @@
+public class ElitisticListPopulation extends ListPopulation {
+
+/** percentage of chromosomes copied to the next generation */
+private double elitismRate = 0.9;
+* @throws OutOfRangeException if the elitism rate is outside the [0, 1] range
+*/
+public void setElitismRate(final double elitismRate) throws OutOfRangeException {
+if (elitismRate < 0 || elitismRate > 1) {
+

@@ -1,0 +1,9 @@
+package cz.muni.fi.pathtracer.sceneobjects;
+
+import cz.muni.fi.pathtracer.Intersection;
+import cz.muni.fi.pathtracer.Material;
+public Intersection getIntersection(final Ray ray) {
+// Fast, Minimum Storage Ray Triangle Intersection, Moller-Trumbore Method
+
+final Vector3D p = ray.getDirection().cross(this.edge2);
+

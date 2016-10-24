@@ -1,0 +1,10 @@
+public class ContextPath {
+private final List<String> pathSegments;
+
+private ContextPath(final @Nonnull List<String> pathSegments) {
+this.pathSegments = pathSegments;
+}
+
+@Nonnull
+public static ContextPath from(final @Nonnull String context) {
+

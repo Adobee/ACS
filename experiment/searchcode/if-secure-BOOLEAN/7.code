@@ -1,0 +1,12 @@
+public class WebSocketDesc {
+private final String uri;
+
+private boolean secure = false;
+
+public WebSocketDesc(String uri) {
+public String getUri() {
+return (secure ? &quot;wss://&quot; : &quot;ws://&quot;) + uri;
+}
+
+public boolean isSecure() {
+

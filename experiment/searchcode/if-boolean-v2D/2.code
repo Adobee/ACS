@@ -1,0 +1,14 @@
+pid=-1;
+}
+
+public void move(v2d M){
+if (pid<0) return;
+C[pid].setTo(M);
+fillPts(1.0/(num-1));
+v2d[][] Grid;
+public boolean bend = true;
+
+public void computeGrid(){
+if (bend) computeBendGrid();
+else computeNobendGrid();
+

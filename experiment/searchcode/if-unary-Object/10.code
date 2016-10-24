@@ -1,0 +1,7 @@
+private final UnaryObjectDescription unaryObjectDescription;
+
+public BinarySelectorMessageElement(BinarySelector binarySelector, UnaryObjectDescription unaryObjectDescription) {
+nodeVisitor.visitBegin(this, binarySelector.value(), binarySelector.line());
+if (unaryObjectDescription != null)
+unaryObjectDescription.accept(nodeVisitor);
+

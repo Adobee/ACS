@@ -1,0 +1,11 @@
+private double ry;
+private double q;
+
+public MutableCharge(double x0, double y0, double q0) {
+rx = x0;
+ry = y0;
+q = q0;
+}
+
+public double potentialAt(double x, double y) {
+

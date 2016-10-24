@@ -1,0 +1,17 @@
+public void setY(int v) {
+y = v;
+}
+
+public int getX() {
+return x;
+}
+
+public int getY() {
+return y;
+}
+
+public Quadrant getQuadrant() {
+if (x > 0 &amp;&amp; y > 0) {
+return Quadrant.FIRST;
+} else if (x < 0 &amp;&amp; y > 0) {
+

@@ -1,0 +1,10 @@
+* Check if the given email address is valid
+*
+* @param addr
+*            value to test
+* @return true if the string contains valid email characters
+* Determines if the character is in inValidChars array
+*/
+private boolean isValidChar(String value) {
+if (inValidChars.contains(value)) {
+

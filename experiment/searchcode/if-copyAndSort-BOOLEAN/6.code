@@ -1,0 +1,11 @@
+return results;
+}
+
+public long getPercentile(double percentile,boolean copyAndSort) {
+
+DataSet ds;
+if (copyAndSort) {
+ds = copyAndSort();
+} else {
+ds = tlDataSet.get();
+

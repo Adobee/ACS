@@ -1,0 +1,6 @@
+return JapaneseDate.now(clock);
+}
+
+public static JapaneseDate of(JapaneseEra era, int yearOfEra, int month, int dayOfMonth) {
+return JapaneseDate.of(era, yearOfEra, month, dayOfMonth);
+

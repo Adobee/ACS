@@ -1,0 +1,11 @@
+public class KeywordMatcher<T extends CharSequence &amp; Serializable> implements Matcher<T> {
+private final T keyword;
+private final MatchType matchType;
+
+KeywordMatcher(final T keyword, final MatchType matchType) {
+this.keyword = keyword;
+this.matchType = matchType;
+}
+
+public T getKeyword() {
+

@@ -1,0 +1,10 @@
+Integer minRange = this.startRange;
+Integer maxRange = list2.endRange;
+if(!doesRangeOverLap(list2)){
+return null;
+}
+if (this.startRange > list2.startRange){
+minRange = list2.startRange;
+}
+if (list2.endRange < this.endRange){
+

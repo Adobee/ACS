@@ -1,0 +1,7 @@
+if (mode == FIRST_POSITIVE) {
+for (int j = 0; j < numberOfVariables + numberOfConstraints; j++) {
+if(tableau[numberOfConstraints][j] > 0) {
+double[] slackVariables = new double[numberOfConstraints];
+for (int i = 0; i < numberOfConstraints; i++) {
+if (basisIndices[i] >= numberOfVariables) {
+

@@ -1,0 +1,9 @@
+int argument_3_, int argument_4_, int argument_5_, int argument_6_,
+int argument_7_) {
+if (argument_4_ >= 1 &amp;&amp; argument >= 1
+&amp;&amp; MapRelated.mapWidth - 2 >= argument_4_
+int anLocalInt = argument_7_;
+if (anLocalInt < 3
+&amp;&amp; Class274.method3388(argument_4_, argument, 1))
+anLocalInt++;
+

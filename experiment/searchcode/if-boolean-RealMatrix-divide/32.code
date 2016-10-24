@@ -1,0 +1,7 @@
+/*  188: 400 */       RealMatrix zmean = bestArz.multiply(this.weights);
+/*  189: 401 */       boolean hsig = updateEvolutionPaths(zmean, xold);
+/*  190: 402 */       if (this.diagonalOnly <= 0) {
+/*  393:     */   private boolean updateEvolutionPaths(RealMatrix zmean, RealMatrix xold)
+/*  394:     */   {
+/*  395: 634 */     this.ps = this.ps.scalarMultiply(1.0D - this.cs).add(this.B.multiply(zmean).scalarMultiply(Math.sqrt(this.cs * (2.0D - this.cs) * this.mueff)));
+

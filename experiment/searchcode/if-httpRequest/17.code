@@ -1,0 +1,11 @@
+public static HttpRequest proxy(HttpRequest httpRequest){
+if(useFiddlerProxy){
+httpRequest.useProxy(&quot;localhost&quot;, 8888).trustAllCerts().trustAllHosts();
+proxy(httpRequest);
+if(useDefaultUserAgent){
+httpRequest.userAgent(DEFAULT_USER_AGENT);
+}
+return httpRequest;
+}
+}
+

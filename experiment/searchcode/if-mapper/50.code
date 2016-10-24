@@ -1,0 +1,10 @@
+import org.dozer.DozerBeanMapper;
+import org.dozer.Mapper;
+
+public class MapperUtil {
+
+private static Mapper mapper;
+public static synchronized Mapper getMapper() {
+if (myMapper == null) {
+final List<String> mappingFiles = new ArrayList<String>();
+

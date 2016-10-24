@@ -1,0 +1,8 @@
+try {
+Long count = freqTable.get(obj);
+if (count == null) {
+freqTable.put(obj, Long.valueOf(1));
+public long getCount(Comparable<?> v) {
+if (v instanceof Integer) {
+return getCount(((Integer) v).longValue());
+

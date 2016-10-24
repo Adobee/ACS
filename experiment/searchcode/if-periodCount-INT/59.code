@@ -1,0 +1,8 @@
+long remainder = time - LEAP_ORIGIN;
+int periodCount = (int) (remainder / FOUR_MILLENNIA);
+fields[YEAR] = periodCount * 4000;
+fields[YEAR] += periodCount * 400;
+remainder %= FOUR_CENTURIES;
+periodCount = (int) (remainder / ONE_CENTURY);
+if (periodCount > 3) {
+

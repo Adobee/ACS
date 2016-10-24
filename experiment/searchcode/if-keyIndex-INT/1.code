@@ -1,0 +1,15 @@
+for(int i=0;i<input.length-1;i++) {
+int keyIndex = i;
+int j;
+for(j=i+1;j<input.length;j++) {
+
+if(input[j].compareTo(input[keyIndex]) < 0){
+swap(input,keyIndex,j);
+}
+
+}
+
+private void swap(T[] input, int keyIndex,int i) {
+T temp = input[keyIndex];
+input[keyIndex]=input[i];
+

@@ -1,0 +1,8 @@
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+
+MockResponse response = (MockResponse) o;
+
+if (status != response.status) return false;
+if (body != null ? !body.equals(response.body) : response.body != null) return false;
+

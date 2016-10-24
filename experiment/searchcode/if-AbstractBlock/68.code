@@ -1,0 +1,7 @@
+@SuppressWarnings({&quot;UnusedDeclaration&quot;})
+public abstract class Function3 extends AbstractBlock implements IFunction3 {
+
+public Object invokeWithArgs(Object[] args) {
+if(args.length != 3) {
+throw new IllegalArgumentException(&quot;You must pass 3 args to this block, but you passed&quot; + args.length);
+

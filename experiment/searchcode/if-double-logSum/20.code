@@ -1,0 +1,7 @@
+public double getLogPValue(int N, int pos, int bestE) {
+if(pos > N) { throw new IllegalArgumentException(); }
+private double getLogPValueError(int N, int pos, int error, double denom) {
+Double logsum = null;
+for(int b = 0; b <= N; b++) {
+if(logsum == null) {
+

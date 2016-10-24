@@ -1,0 +1,8 @@
+public boolean detectAndDoCollision( Collidable bodyA, Collidable bodyB ) {
+boolean haveCollided = false;
+if ( detector.applies( bodyA, bodyB ) &amp;&amp; detector.areInContact( bodyA, bodyB )
+SphericalBody sA = (SphericalBody) cbA;
+SphericalBody sB = (SphericalBody) cbB;
+
+double dPrev = sA.getPositionPrev().distance( sB.getPositionPrev() );
+

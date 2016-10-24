@@ -1,0 +1,10 @@
+import java.util.List;
+
+public class IdSchemeResource {
+
+List<IdScheme> idScheme;
+
+public IdScheme getIdSchemeByName(String name) {
+int index = Collections.binarySearch(this.getIdScheme(), new IdScheme(name));
+if (index == -1)
+

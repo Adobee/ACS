@@ -1,0 +1,7 @@
+if (isEmpty(cs) || ArrayUtils.isEmpty(searchChars)) return INDEX_NOT_FOUND;
+final int csLen = cs.length();
+final int csLast = csLen - 1;
+final int searchLen = searchChars.length;
+final int searchLast = searchLen - 1;
+for (int i = 0; i < csLen; i++) {
+

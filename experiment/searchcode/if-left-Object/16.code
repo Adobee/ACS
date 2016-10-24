@@ -1,0 +1,11 @@
+public R getRight() { return right; }
+
+@Override
+public boolean equals(Object object) {
+if (!(object instanceof Pair)) return false;
+Pair pairObject = (Pair)object;
+return this.left.equals(pairObject.getLeft()) &amp;&amp;
+this.right.equals(pairObject.getRight());
+}
+}
+

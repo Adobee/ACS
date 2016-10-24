@@ -1,0 +1,8 @@
+private double valueFiltered = 0.0;
+private double tLast = Double.NaN;
+private double f = 1.0;
+private double rc_inv = f * 2 * Math.PI;
+public double getOutput(double t, double in) {
+if (rc_inv == 0.0) {
+this.valueFiltered = in;
+

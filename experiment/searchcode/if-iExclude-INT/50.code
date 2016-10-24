@@ -1,0 +1,9 @@
+all.setCount(((Number)query.select(&quot;count(distinct e)&quot;).exclude(&quot;query&quot;).exclude(&quot;mode&quot;).query(hibSession).uniqueResult()).intValue());
+response.add(&quot;mode&quot;, all);
+if (context.isAuthenticated() &amp;&amp; context.getUser().getCurrentAuthority() != null) {
+Entity my = new Entity(1l, &quot;My&quot;, &quot;My Events&quot;); my.setCount(myCnt);
+response.add(&quot;mode&quot;, my);
+
+if (context.hasPermission(Right.HasRole)) {
+int approvedCnt = ((Number)query.select(&quot;count(distinct e)&quot;).where(&quot;m.approvalStatus = 1&quot;)
+

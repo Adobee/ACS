@@ -1,0 +1,9 @@
+List<DenseMatrix64F> thetas, int numberOfRuns) {
+double cost = 0;
+double previousCost = 0;
+for (int i = 0; i < numberOfRuns; i++) {
+forwardPropagationResults.getOutputLayerPredictions(),
+expectedOutput);
+if (previousCost == cost) {
+System.out.println(String.format(&quot;Took %s iterations to converge&quot;, i));
+

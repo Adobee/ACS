@@ -1,0 +1,8 @@
+final Object[] array = { categoryDataset.getRowKey(n).toString(), categoryDataset.getColumnKey(n2).toString(), null, null, null };
+final Number value = categoryDataset.getValue(n, n2);
+if (this.getNumberFormat() != null) {
+array[2] = this.getDateFormat().format(value);
+}
+if (categoryDataset instanceof IntervalCategoryDataset) {
+final IntervalCategoryDataset intervalCategoryDataset = (IntervalCategoryDataset)categoryDataset;
+

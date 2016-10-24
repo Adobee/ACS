@@ -1,0 +1,6 @@
+PixelRange pxr1=new PixelRange(f0.getY(), f0.getY() + f0.getHeight(), Orientation.HORIZONTAL);
+
+if (pxr0.isInRange(f1.getLocation(), f1.getSize())  &amp;&amp;  pxr1.isInRange(f1.getLocation(), f1.getSize())) {
+
+double base_frac=(f0.getY() + (f0.getHeight() / 2)) / (f0.getX() + (f0.getWidth() / 2));
+

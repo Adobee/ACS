@@ -1,0 +1,12 @@
+private static void initPlotFrameStack() {
+if (plotFrameStack == null) {
+plotFrameStack = new ArrayList<PlotFrame>();
+}
+}
+
+/**
+* 初始化当前图形窗口
+*/
+private static void initCurrentPlotFrame() {
+if (currenPlotFrame == null) {
+

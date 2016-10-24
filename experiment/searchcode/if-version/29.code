@@ -1,0 +1,9 @@
+* expr is of the form <code>v1:v2</code>
+*
+* @param expr
+*/
+public VersionRange(String expr) {
+if (expr != null &amp;&amp; expr.length() > 0) {
+int p = expr.indexOf(&#39;:&#39;);
+if (p == -1) { // only min version
+

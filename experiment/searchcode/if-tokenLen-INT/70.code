@@ -1,0 +1,14 @@
+public int lookAhead() throws IOException {
+prepareLookAhead();
+return crToLf(next);
+}
+
+private int crToLf(int ch) {
+if (ch == &#39;\r&#39;)
+private void prepareLookAhead() throws IOException {
+if (next == -1)
+next = reader.read();
+}
+
+public int read() throws IOException {
+

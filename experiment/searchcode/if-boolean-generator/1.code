@@ -1,0 +1,8 @@
+public enum GeneratorRegistry {
+
+ARRAY(&quot;array&quot;, new ArrayGenerator()),
+BOOLEAN(&quot;bool&quot;, new BooleanGenerator()),
+public static Optional<Generator> getGenerator(String type) {
+for (GeneratorRegistry generatorRegistry : values()) {
+if (generatorRegistry.getType().equals(type)) {
+

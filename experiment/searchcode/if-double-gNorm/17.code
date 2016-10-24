@@ -1,0 +1,12 @@
+double gnorm1 = delta;
+double gnorm = gnorm1;
+
+if (gnorm <= eps * gnorm1)
+search = 0;
+
+iter = 1;
+info(&quot;iter {} act {} pre {} delta {} f {} |g| {} CG {}&quot;,
+iter, actred, prered, delta, f, gnorm, cg_iter);
+
+if (actred > eta0 * prered) {
+

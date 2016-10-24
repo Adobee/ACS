@@ -1,0 +1,10 @@
+package com.youdevise.hsd;
+
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class ResultSetTraverser implements Traverser<ResultSet> {
+public boolean traverse(ResultSet resultSet) throws SQLException {
+while(resultSet.next()) {
+if (!handler.handle(resultSet)) { return false; }
+

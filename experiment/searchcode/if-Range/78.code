@@ -1,0 +1,10 @@
+package range;
+
+import java.util.LinkedList;
+import java.util.List;
+
+public class MergeRanges {
+List<Range> results = new LinkedList<Range>();
+for(Range range:ranges){
+if((range.end < newRange.begin) || (newRange.end > range.begin)){
+

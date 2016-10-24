@@ -1,0 +1,12 @@
+long startTime = System.currentTimeMillis();
+answer = obj.solve(p0);
+try {
+if (testNum >= 100) {
+BufferedWriter bw = new BufferedWriter(new FileWriter(&quot;ANSWER&quot;, true));
+all_right = KawigiEdit_RunTest(299, p0, true, p1) &amp;&amp; all_right;
+// -----------------------
+
+
+if (all_right) {
+System.out.println(&quot;You&#39;re a stud (at least on the example cases)!&quot;);
+

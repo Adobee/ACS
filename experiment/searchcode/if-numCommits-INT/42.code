@@ -1,0 +1,14 @@
+System.out.printf(&quot;%3dx - %s&quot;, count, type, numUsages);
+
+int numCommits = allNumCommits.get(type);
+
+if (numUsages > 0 &amp;&amp; numCommits > 0) {
+return String.format(&quot;n/a&quot;, sign(added), removed);
+}
+
+}
+
+private static Object sign(int num) {
+if (num > 0) {
+return &quot;+&quot; + num;
+

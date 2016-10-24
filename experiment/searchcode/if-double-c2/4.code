@@ -1,0 +1,6 @@
+for (a = 1; a < 1000; a++) {
+for (b = 1; b < 1000; b++) {
+c2 = a * a + b * b;
+if (Double.compare(Math.sqrt(a * a + b * b), Math.sqrt(c2)) == 0) {
+if (Double.compare(a + b + Math.sqrt(c2), 1000) == 0) {
+

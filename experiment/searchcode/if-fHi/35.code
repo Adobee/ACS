@@ -1,0 +1,10 @@
+List list = this.dbDao.queryObjects(hql) ;
+if(list!=null &amp;&amp; list.size()>0){
+return (FhiOaAccept)list.get(0) ;
+this.dbDao.addObject(em) ;
+}
+}
+if(moneys!=null &amp;&amp; moneys.size()>0){
+for(FhiOaRetmoney one:moneys){
+one.setAcceptOrderId(accept.getId()) ;
+

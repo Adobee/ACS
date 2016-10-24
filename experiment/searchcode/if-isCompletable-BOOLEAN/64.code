@@ -1,0 +1,14 @@
+return mTerminating;
+}
+
+/**
+* Returns true if this object is currently executing.
+*/
+public boolean isExecuting()
+* @see org.activebpel.rt.bpel.impl.IAeBpelObject#isCompletable()
+*/
+public boolean isCompletable()
+{
+if (!getState().isTerminatable())
+return false;
+

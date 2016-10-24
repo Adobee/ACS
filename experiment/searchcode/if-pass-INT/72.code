@@ -1,0 +1,13 @@
+public class PayPassValidator implements Validator {
+
+private PayPass pass;
+private int numOfPass;
+private static final double DEFAULT_COST = 2;
+return this.pass.getTYPE() == Ticket.Type.PayPerRide;
+}
+
+@Override
+public boolean validate() {
+if(numOfPass > 0){
+pass.setNumOfPass(--numOfPass);
+

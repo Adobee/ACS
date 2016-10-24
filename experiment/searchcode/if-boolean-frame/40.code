@@ -1,0 +1,10 @@
+int nowFrame = 0;
+
+for(int frameNum=0; frameNum < 10; frameNum++){
+FrameStatus frame;
+
+if(isStrike(player, nowFrame)) {
+frame = new Strike();
+} else if (isSpare(player, nowFrame)) {
+frame = new Spare();
+

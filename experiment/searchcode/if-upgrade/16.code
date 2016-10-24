@@ -1,0 +1,10 @@
+List tasks = upgradeManager.getUpgradeTasks();
+if (tasks.size() > 0 &amp;&amp; !upgradeManager.isUpgradeStarted()) {
+log.info(&quot;Upgrade manager has pending tasks, initializing upgrade.&quot;);
+return;
+}
+if (upgradeManager.isUpgradeStarted())
+return;
+try {
+List actions = postUpgradeManager.getUpgradeTasks();
+

@@ -1,0 +1,6 @@
+public SpecialNamedaysStrategy createStrategyForLocale(NamedayLocale locale, NamedayRawJSONProvider rawloader) {
+if (isGreekLocale(locale)) {
+return GreekSpecialNamedaysStrategy.newInstance(jsonArray);
+} else if (isRomanian(locale)) {
+JSONArray jsonArray = rawloader.getSpecialNamedays();
+

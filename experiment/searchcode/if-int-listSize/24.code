@@ -1,0 +1,6 @@
+System.out.println(strings.toString());
+System.out.println(strings.size());
+int listsize = (null==strings)?0:strings.size();//List总记录条数，做非空判断避免程序出现异常
+int sumpagenumber = listsize/perpagesize;//总共需要多少个子List，整数相除会直接舍去小数部分
+int lastListsize = listsize%perpagesize;//最后一个List的size
+

@@ -1,0 +1,11 @@
+private String name;
+private double size;
+private int depth;
+
+public IslandAndLakeLSystem(String name, Turtle t, double size, int depth){
+public void f(Turtle t, int depth){
+if(depth == 0)
+t.move(getSize());
+else{
+//F =  F+f-FF   +F+FF+F   f+FF-f  +FF-F  -FF-F   f-FFF
+

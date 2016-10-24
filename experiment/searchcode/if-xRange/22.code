@@ -1,0 +1,6 @@
+public PyXRange(int start, int stop, int step) {
+if (step == 0)
+throw Py.ValueError(&quot;zero step for xrange()&quot;);
+Py.DeprecationWarning(&quot;xrange object slicing is deprecated; &quot; + &quot;convert to list instead&quot;);
+if (copies != 1) {
+

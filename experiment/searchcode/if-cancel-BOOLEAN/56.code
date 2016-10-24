@@ -1,0 +1,10 @@
+public class EntityCombustEvent extends EntityEvent implements Cancellable {
+private boolean cancel;
+
+public EntityCombustEvent(Type type, Entity what) {
+super(type, what);
+this.cancel = false;
+}
+
+public boolean isCancelled() {
+

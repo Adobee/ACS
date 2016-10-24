@@ -1,0 +1,9 @@
+public class Interval implements Test {
+double[] numbers;
+
+Interval(double[] numbers) {
+int numberOfIntervals = 10;
+double a = 0.5;
+int current = 0;
+int[] c = new int[numberOfIntervals + 1];
+

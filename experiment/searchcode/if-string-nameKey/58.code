@@ -1,0 +1,11 @@
+return propertiesUtil;
+}
+
+public String getFilePath(String proPath, String nameKey) {
+String propValue = &quot;&quot;;
+propValue = bundle.getString(nameKey);
+
+return propValue;
+}
+}
+

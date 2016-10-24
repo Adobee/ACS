@@ -1,0 +1,9 @@
+package pingpong.screen;
+
+public class Bitmap {
+private int width, height;
+private int pixels[];
+
+public Bitmap(int width, int height) {
+this(width, height, new int[width * height]);
+

@@ -1,0 +1,5 @@
+public static boolean checkPattern(PatternType patternType, String object) {
+boolean patternPassed = false;
+Pattern pattern = getPattern(patternType);
+if (pattern.matcher(object).matches()) {
+

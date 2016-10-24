@@ -1,0 +1,10 @@
+public long M( long n ) { return n % MOD; }
+
+public int computeAnswer( long n )
+{
+if( n < 2 ) return -1;
+long p = 2;
+while( p * p <= n &amp;&amp; n % p != 0 ) p++;
+if( n % p != 0 ) p = n;
+long ans = M( M( 4 * M( p - 2 ) + 3 ) * M( n ) + 2 * M( p - 1 ) );
+

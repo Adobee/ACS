@@ -1,0 +1,21 @@
+public int out() {
+if(isEmpty()) {
+return -1;
+}
+//获取当前出队节点的对象
+int result = queue[outIndex];
+//清空当前位置
+return inIndex;
+}
+//出队游标指向下一个节点
+private int nextOutIndex() {
+if(outIndex + 1 < queue.length) {
+outIndex += 1;
+} else {
+outIndex = 0;
+}
+return outIndex;
+}
+
+}
+

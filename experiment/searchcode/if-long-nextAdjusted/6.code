@@ -1,0 +1,7 @@
+nextAdjusted = Long.MAX_VALUE;
+}
+if (nextLocal != nextAdjusted) {
+long nextAdjusted = nextTransition(instantLocal - offset);
+if (nextAdjusted == (instantLocal - offset)) {
+nextAdjusted = Long.MAX_VALUE;
+

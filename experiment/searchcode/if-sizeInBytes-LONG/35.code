@@ -1,0 +1,14 @@
+255L,
+65535L,
+4294967295L,
+-1L
+};
+
+public long cIntegerTypeMaxValue(long sizeInBytes, boolean isUnsigned) {
+public long cIntegerTypeMinValue(long sizeInBytes, boolean isUnsigned) {
+if (isUnsigned) {
+return 0;
+}
+
+return tableLookup(sizeInBytes, signedMinValues);
+

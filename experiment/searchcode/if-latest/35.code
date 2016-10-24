@@ -1,0 +1,8 @@
+LatestDesign latestDesign = (LatestDesign) session.createCriteria(LatestDesign.class).add(Restrictions.eq(&quot;latestDesignId&quot;,latestDesignId)).uniqueResult();
+session.getTransaction().commit();
+session.close();
+if(latestDesign!=null) {
+boolean isLatestDesignAvailable = new LatestDesignDAOImpl().findLatestDesignById(latestDesignId);
+if(isLatestDesignAvailable) {
+Session session = sessionFactory.openSession();
+

@@ -1,0 +1,8 @@
+package adf.embers.query.impl;
+
+import adf.embers.query.QueryExecutor;
+import adf.embers.query.QueryFormatter;
+Query query = queryDao.findQueryByName(queryRequest.getQueryName());
+if(query==null) {
+queryResultBuilder.addError(&quot;Query not found: &quot; + queryRequest.getQueryName());
+

@@ -1,0 +1,9 @@
+public void assertCoordLength(double... coord)
+throws IndexOutOfBoundsException {
+if(coord.length != 2) {
+throw new IndexOutOfBoundsException(&quot;F4 demands 2 arguments&quot;);
+public double calculate(double... coord) throws IndexOutOfBoundsException {
+assertCoordLength(coord);
+
+double x = coord[0];
+

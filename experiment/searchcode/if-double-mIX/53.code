@@ -1,0 +1,9 @@
+if (mixDescriptor.isPrivateMix() == true) {
+double[] spatialValues = mixDescriptor.getSpatialValues();
+
+if (MixDescriptor.isSpatiallyNeutral(spatialValues) &amp;&amp;
+* set the volume to volume - 1 and add that in.
+*/
+if (mixDataSource.contributionIsInCommonMix()) {
+double[] sv = new double[4];
+

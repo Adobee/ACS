@@ -1,0 +1,8 @@
+String s = tokenizedExpr.getFirst();
+if (s.equals(&quot;log&quot;)) {
+tokenizedExpr.removeFirst(); // remove &#39;log&#39;
+return Math.log10(parseExpression(tokenizedExpr))/Math.log10(operand1);
+} else {
+double operand1 = parseNumber(tokenizedExpr);
+if (tokenizedExpr.isEmpty()) {
+

@@ -1,0 +1,10 @@
+protected void resolveSort(String sortMethod) {
+
+SortField[] sortFields = new SortField[1];
+
+if ( Search.ORDER_SCORE.equalsIgnoreCase(sortMethod) ) {
+
+sortFields[0] = null;
+
+} else if ( Search.ORDER_ALPHA.equalsIgnoreCase(sortMethod) ) {
+

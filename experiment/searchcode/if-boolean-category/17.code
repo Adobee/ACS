@@ -1,0 +1,12 @@
+this.categoryTitle = categoryTitle;
+}
+
+public QuestionCategory(String categoryTitle) {
+this.categoryTitle = categoryTitle;
+if (categoryTitle.equals(randomCategoryTitle)) {
+return new QuestionCategory(QuestionCategory.randomCategoryName, randomCategoryTitle);
+}
+
+public static boolean isQuestionCategoryTitle(String title) {
+boolean result = false;
+

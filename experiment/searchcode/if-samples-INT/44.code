@@ -1,0 +1,7 @@
+public static int countFrequency(double sampleFreq, double[] samples) {
+int count = countFrequency(samples);
+return (int) (count * (sampleFreq / samples.length));
+int count = 0;
+for (int i = 1; i < samples.length; i++) {
+if (samples[i - 1] > 0 &amp;&amp; samples[i] < 0) {
+

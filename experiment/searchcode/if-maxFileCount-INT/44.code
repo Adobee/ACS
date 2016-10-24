@@ -1,0 +1,8 @@
+public XFileCountLimitedDiscCache(File cacheDir, int maxFileCount) {
+super(cacheDir, new Md5FileNameGenerator(),maxFileCount);
+}
+
+@Override
+public File get(String key) {
+if(key.startsWith(&quot;http&quot;)){
+

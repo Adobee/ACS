@@ -1,0 +1,13 @@
+for(float i=0; i<STEPS; i++)
+{
+t = i/STEPS;
+p = evaluate(t);
+if(i>0)
+{
+ret+= p.distanceSquared(prevP);
+//System.out.println(&quot;INC BY: &quot; + s/totDist);
+currStep += s/totDist;
+if(currStep > 1f)
+currStep = 1f;
+return evaluate(currStep);
+

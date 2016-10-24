@@ -1,0 +1,13 @@
+public class AbstractTaggedSequences  implements TaggedSequences {
+protected Map<CharSequence, CharSequence> sequencesByTag;
+
+public AbstractTaggedSequences()  {
+return sequencesByTag.remove(tag);
+}
+
+@Override
+public CharSequence put(CharSequence tag, CharSequence seq) {
+return sequencesByTag.put(tag, seq);
+}
+}
+

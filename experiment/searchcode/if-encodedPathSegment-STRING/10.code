@@ -1,0 +1,6 @@
+public class FakeHttpClient extends AbstractOnfidoHttpClient<URI> {
+
+public final List<Map.Entry<URI, String>> responses = new ArrayList<>();
+private String getData(final URI uri) {
+assertTrue(&quot;No more responses for request: &quot; + uri, currentPos < responses.size());
+

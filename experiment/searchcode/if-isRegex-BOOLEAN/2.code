@@ -1,0 +1,6 @@
+public List<Concept> doSearch(UcumModel model, ConceptKind kind, String text, boolean isRegex) {
+List<Concept> concepts = new ArrayList<Concept>();
+if (kind == null || kind == ConceptKind.PREFIX)
+searchPrefixes(concepts, model.getPrefixes(), text, isRegex);
+if (kind == null || kind == ConceptKind.BASEUNIT)
+

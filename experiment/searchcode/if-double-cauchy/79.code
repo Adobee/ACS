@@ -1,0 +1,14 @@
+public class CauchyGen extends RandomVariateGen  {
+protected double alpha;
+protected double beta;
+
+
+
+/**
+* Creates a Cauchy random variate generator with parameters
+*     using stream <TT>s</TT>.
+*
+*/
+public CauchyGen (RandomStream s, double alpha, double beta)  {
+super (s, new CauchyDist(alpha, beta));
+

@@ -1,0 +1,8 @@
+private long frameBytesRead;
+private boolean isFinalFrame;
+private boolean isControlFrame;
+private boolean isMasked;
+public void processNextFrame() throws IOException {
+readHeader();
+if (isControlFrame) {
+

@@ -1,0 +1,12 @@
+return level;
+}
+
+
+public void log( int level, String message) {
+if(level <= 0){
+throw new LevelOutOfRangeException();
+}
+else{
+if(level <= this.getLevel()){
+System.out.println(level + &quot; => &quot; + message);
+

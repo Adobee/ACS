@@ -1,0 +1,10 @@
+mBigramIndex.addToken(t);
+}
+
+int docId = t.getDocId();
+if (docId > maxDocId) maxDocId = docId;
+postingLists.getDocLengths().remove(docId);
+
+if (docId == maxDocId) {
+maxDocId = -1;
+

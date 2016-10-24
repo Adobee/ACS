@@ -1,0 +1,6 @@
+import org.apache.commons.math3.optimization.PointValuePair;
+import org.apache.commons.math3.optimization.SimplePointChecker;
+import org.apache.commons.math3.optimization.general.ConjugateGradientFormula;
+ConjugateGradientFormula.POLAK_RIBIERE, new SimplePointChecker<>(0.0001, -1));
+PointValuePair p = optimizer.optimize(MAX_EVAL, errorFunction, GoalType.MINIMIZE, new double[3]);
+

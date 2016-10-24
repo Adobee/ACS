@@ -1,0 +1,9 @@
+public MyTurnState damage(BoardState oldstate, int amount) {
+Hero hero = this.fresh();
+if (hero.getArmour()>=amount) hero.setArmour(hero.getArmour()-2);
+Weapon newWeapon = new Weapon(weapon);
+newWeapon.setId(oldstate.getNextId());
+hero.setWeapon(weapon);
+
+if (side.equals(TargetsType.ALLYCHAR)) return  new BoardState(oldstate.getViewType(),hero,oldstate.getEnemy(),oldstate.getOppSide(),oldstate.getMySide(),oldstate.getIdsInPlayOrder(),oldstate.getEnemyHandSize(),oldstate.isTurnEnded(),oldstate.getIdCounter()+1);
+

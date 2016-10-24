@@ -1,0 +1,12 @@
+public static void findNextMove(int N, int nSteps, int x[], int y[], int whoFirst, boolean hasAI){
+if (nSteps == 0){
+nextMoveX = RandomInt(N);
+nextMoveY = RandomInt(N);
+return;
+}
+
+int table[][] = new int [N][N];
+createTable(table, N, nSteps, x, y, whoFirst);
+
+if (!hasAI){
+

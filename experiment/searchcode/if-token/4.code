@@ -1,0 +1,10 @@
+token = peekToken();
+if (token == TokenType.BEGIN){
+matchToken(token);
+statementList();
+token = peekToken();
+if (token == TokenType.END){
+matchToken(token);
+} else {
+throwException();
+

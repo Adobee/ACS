@@ -1,0 +1,6 @@
+public class SynchronizedStatic implements Runnable {
+static boolean flag = true;
+public static synchronized void test0() {//同步监视器是该类本身
+for (int i = 0; i < 1000; i++) {
+System.out.println(&quot;test0: &quot; + Thread.currentThread().getName()
+

@@ -1,0 +1,11 @@
+return;
+}
+
+Bundle extras = data.getExtras();
+
+if (!streamingMode) {
+streamingMode = extras.getBoolean(&quot;edu.uml.cs.isense.upload.stream&quot;, false);
+try {
+if (!streamingMode)
+data = new JSONArray((String)extras.getString(&quot;edu.uml.cs.isense.upload.data&quot;));
+

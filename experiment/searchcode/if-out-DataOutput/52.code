@@ -1,0 +1,10 @@
+package org.hackreduce.streetmapper.model;
+
+import java.io.DataOutput;
+import java.io.IOException;
+public void write(DataOutput out) throws IOException {
+if (get() == 0) throw new IOException(&quot;Non-initialized&quot;);
+super.write(out);
+}
+}
+

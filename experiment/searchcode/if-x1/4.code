@@ -1,0 +1,15 @@
+int count = 0;
+double a = 0;
+
+for(int i=0;i<N;i++){
+if(Math.abs(((x1-x0)/x1))<eps){ //相対誤差判定
+x1 = x1-F(x1)*((x1-x0)/(F(x1)-F(x0)));
+x0 = a;
+if(count==N){
+break;
+}
+}
+
+System.out.println(&quot;√5=&quot;+x1);
+System.out.println(&quot;再帰回数&quot;+count);
+

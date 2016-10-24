@@ -1,0 +1,15 @@
+public static void main(String[] args) {
+
+}
+
+public static void nextPermutation(int[] num) {
+int n = num.length;
+
+int i = n - 2;
+while (i >= 0 &amp;&amp; num[i] >= num[i + 1]) {
+i -= 1;
+}
+
+if (i < 0) {
+for (int k = 0, l = n - 1; k < l; k++, l--) {
+

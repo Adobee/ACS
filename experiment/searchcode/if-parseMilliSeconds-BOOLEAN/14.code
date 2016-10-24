@@ -1,0 +1,9 @@
+return this;
+}
+
+@Override
+public boolean onCommand(final CommandSender sender, Command command, String label, String[] args) {
+final String worldName = (args.length >= 4) ? args[3] : null;
+final boolean global = (worldName == null || &quot;global&quot;.equals(worldName));
+if (!plugin.getUserManager().canUserExist(playerName)) {
+

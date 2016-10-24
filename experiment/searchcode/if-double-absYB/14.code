@@ -1,0 +1,6 @@
+double xB    = x[signChangeIndex];
+double yB    = y[signChangeIndex];
+double absYB = FastMath.abs(yB);
+getRelativeAccuracy() * FastMath.max(FastMath.abs(xA), FastMath.abs(xB));
+if (((xB - xA) <= xTol) || (FastMath.max(absYA, absYB) < getFunctionValueAccuracy())) {
+

@@ -1,0 +1,6 @@
+public String print(boolean shortFormat) {
+if (mSourcePosition.equals(SourcePosition.UNKNOWN)) {
+return mSourceFile.print(shortFormat);
+} else {
+return mSourceFile.print(shortFormat) + &#39;:&#39; + mSourcePosition.toString();
+

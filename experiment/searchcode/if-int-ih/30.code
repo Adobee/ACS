@@ -1,0 +1,11 @@
+table = new int[h+1][w+1];
+
+for(int ih=0;ih<h;ih++)
+for(int iw=0;iw<w;iw++)
+table[ih+1][iw+1]=scan.nextInt();
+
+dp = new int[h+1][w+1];
+
+int sum=0;
+for(int ih=0;ih<h;ih++)
+

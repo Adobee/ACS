@@ -1,0 +1,14 @@
+public String _endDate;
+public int getMask() {
+int days = 0;
+int m = 1;
+int i;
+for(i = 0; i < 7; ++i) {
+if(_days[i])
+days |= m;
+m <<= 1;
+}
+return days;
+}
+}
+

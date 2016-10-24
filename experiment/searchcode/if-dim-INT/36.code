@@ -1,0 +1,9 @@
+private ArrayList<Double> pi = new ArrayList<Double>();
+private int dim;
+private int [][] content ;
+Random rand = new Random();
+
+public Grille(int dim) {
+this.dim=dim;
+this.content= new int [dim][dim];
+

@@ -1,0 +1,8 @@
+* @param rule The rule to be added to this engine.
+*/
+public void addRewriteRule(LogicalPlanRewriteRule rule) {
+if (!rewriteRules.containsKey(rule.getName())) {
+for (Entry<String, LogicalPlanRewriteRule> rewriteRule : rewriteRules.entrySet()) {
+rule = rewriteRule.getValue();
+if (rule.isEligible(context)) {
+

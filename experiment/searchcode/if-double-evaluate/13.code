@@ -1,0 +1,9 @@
+public class JQuarticSpline implements IKernelFunction, IFunction1D{
+
+public double evaluateNorm(double x, double y) {
+double xx = Math.abs(Math.sqrt(x*x+y*y));
+public double evaluateDerivaty(double x) {
+if(Math.abs(x)>1){ return 0.0;}
+else{
+return -12.0*x + 24.0*x*x - 12.0*x*x*x;
+

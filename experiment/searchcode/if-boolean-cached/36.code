@@ -1,0 +1,10 @@
+private volatile ResourceCallback resourceCallback;
+private boolean loading = false;
+private final CachedFieldsListener cachedFieldsToObserve;
+return getClass().getSimpleName() + &quot; with &quot; + cachedFieldsToObserve.getRegisterCount();
+}
+
+@Override
+public boolean isIdleNow() {
+return !loading;
+

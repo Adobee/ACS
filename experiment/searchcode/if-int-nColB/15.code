@@ -1,0 +1,8 @@
+return solve(((org.apache.commons.math.linear.ArrayRealVector)(b)));
+} catch (java.lang.ClassCastException cce) {
+final int m = lTData.length;
+if ((b.getDimension()) != m) {
+final int m = lTData.length;
+if ((b.getRowDimension()) != m) {
+throw org.apache.commons.math.MathRuntimeException.createIllegalArgumentException(&quot;dimensions mismatch: got {0}x{1} but expected {2}x{3}&quot;, b.getRowDimension(), b.getColumnDimension(), m, &quot;n&quot;);
+

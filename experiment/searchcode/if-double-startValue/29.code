@@ -1,0 +1,9 @@
+* @param endValue value at the last iteration.
+*/
+public LinearTuningParameter(Iteration iter, double startValue, double endValue) {
+if (iter == null) {
+throw new IllegalArgumentException(&quot;Iteration object for linear proposer weight must not be null.&quot;);
+}
+if (Double.isInfinite(startValue) || Double.isInfinite(endValue)) {
+throw new IllegalArgumentException(&quot;Start or end weight for linear tuning parameter out-of-range.&quot;);
+

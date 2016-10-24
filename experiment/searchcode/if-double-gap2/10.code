@@ -1,0 +1,12 @@
+if (ld1 == null || ld2 == null)
+return &quot;&quot;;
+
+String gap1 = ld1.gap;
+String gap2 = ld2.gap;
+
+if ((ld1.lapTime.toString().equals(&quot;&quot;) &amp;&amp; ld1.gap.equals(&quot;&quot;)) ||
+if (ld1.pos == 1)
+return &quot;-&quot; + (gap2.equals(&quot;&quot;) ? &quot;1L <&quot; : gap2) + (gap2.contains(&quot;L&quot;) ? &quot; <&quot; : &quot;&quot;);
+
+if (ld2.pos == 1)
+

@@ -1,0 +1,8 @@
+protected GraphicsDevice graphicsDevice;
+
+private AtomicBoolean initialized = new AtomicBoolean(false);
+private long lastTime;
+public void onDrawFrame(GL10 gl10) {
+long currentTime = System.nanoTime();
+float deltaSeconds = (currentTime - lastTime) / 1000000000;
+

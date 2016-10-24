@@ -1,0 +1,8 @@
+private static RoundCounter instance = null;
+private int currentRound = 0;
+private int lastMarkedRound = 0;
+private RoundCounter(){};
+public static RoundCounter getInstance()
+{
+if (instance == null) instance = new RoundCounter();
+

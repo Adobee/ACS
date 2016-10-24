@@ -1,0 +1,7 @@
+if (!args[TIME_LOCATION].matches(&quot;^(\\d\\d:\\d\\d:\\d\\d)&quot;)) return;
+if (ChronoTimer.power)
+ChronoTimer.setSystemClock(Time.valueOf(args[TIME_LOCATION]));
+@Override
+public void execute(String args[]) {
+if (!ChronoTimer.channels[ChronoTimer.START_CHANNEL].isToggled()) return;
+

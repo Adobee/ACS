@@ -1,0 +1,9 @@
+Scanner s = new Scanner(System.in);
+String[] input;
+int num, den, gcd;
+while (s.hasNextLine()) {
+continue;
+}
+den = Integer.parseInt(input[1]);
+if (num == den) {
+

@@ -1,0 +1,12 @@
+this.monthOfYear = monthOfYear;
+}
+private int dayOfMonth;
+public int getDayOfMonth() {
+return dayOfMonth;
+}
+public void setDayOfMonth(int dayOfMonth) {
+this.dayOfMonth = dayOfMonth;
+}
+private String personId;
+public String getPersonId() {
+

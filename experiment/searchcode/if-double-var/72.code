@@ -1,0 +1,11 @@
+public static void main(String[] args) {
+
+Double d1 = new Double(-1.0/0.0);
+Double d2 = new Double(0.0/0.0);
+
+// returns true if this Double value is a Not-a-Number (NaN)
+System.out.println(d2 + &quot; = &quot; + d2.isNaN()); // true
+
+double var = 0; // false
+System.out.println(var+&quot; is Not a Number? &quot;+(var == Double.NaN));
+

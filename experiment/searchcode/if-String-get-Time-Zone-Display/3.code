@@ -1,0 +1,10 @@
+return formatter.format(instant.toInstant().toDate(),timeZone);
+}
+
+private static TimeZone getTimeZone(DateTimeZone displayZone) {
+if(displayZone==null)
+return null;
+}
+DateTimeZone nextZone = GwtZoneInfoProvider.singleton().getZone(displayZone.getID());
+if(nextZone instanceof GwtTimeZone){
+

@@ -1,0 +1,13 @@
+for (int i = 0; i < array.length; i++) {
+int diff = RMAX[i] - LMIN[i];
+if (diff > maxDiff) {
+maxDiff = diff;
+}
+}
+return maxDiff;
+}
+
+// O(2^n)???
+public static int maxIndexDiffRec(int[] array, int start, int end) {
+if (end < start)
+

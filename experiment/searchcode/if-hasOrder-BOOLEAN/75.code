@@ -1,0 +1,11 @@
+this.orderLine = new QueueLL<IceCreamCone>();
+}
+
+public boolean hasOrder()
+{
+return !this.orderLine.empty();
+public IceCreamCone getNextOrder()
+{
+IceCreamCone nextOrder = (IceCreamCone)this.orderLine.dequeue();
+if (nextOrder != null)
+

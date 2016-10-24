@@ -1,0 +1,10 @@
+//System.out.println(ipt);
+int k=1;
+int c1=0,c2=0;
+String lft=&quot;&quot;,mdl=&quot;&quot;,rgt=&quot;&quot;;
+if (ipt.charAt(k) != &#39;(&#39;){
+lft = String.valueOf(ipt.charAt(k));
+} else {
+for (k=2;k<ipt.length();k++){
+if (ipt.charAt(k)==&#39;)&#39;){
+

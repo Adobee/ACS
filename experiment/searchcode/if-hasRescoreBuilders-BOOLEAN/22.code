@@ -1,0 +1,9 @@
+* Indicates whether the response should contain the stored _source for
+* every hit
+*/
+public SearchSourceBuilder fetchSource(boolean fetch) {
+if (this.fetchSourceContext == null) {
+boolean hasRescoreBuilders = rescoreBuilders != null;
+out.writeBoolean(hasRescoreBuilders);
+if (hasRescoreBuilders) {
+

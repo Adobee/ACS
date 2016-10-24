@@ -1,0 +1,7 @@
+return this.styleProperties;
+}
+
+public int getWidth(int _default) {
+for (StyleProperty styleProperty : this.styleProperties) {
+if (styleProperty.getName().equals(org.fugazi.qls.ast.style.style_property.Width.PROPERTY_NAME)) {
+

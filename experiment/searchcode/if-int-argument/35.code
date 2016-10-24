@@ -1,0 +1,7 @@
+private final native void S(NativeToolkit argument_1_, ya argument_2_,
+byte[][] argument_3_, int[] argument_4_,
+int[] argument_5_, int[] argument_6_,
+int[] argument_7_, int[] argument_8_);
+
+final native void drawCharacter2(char character_, int x_, int y_, int colour_, boolean argument_13_);
+

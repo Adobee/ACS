@@ -1,0 +1,7 @@
+public static Circle solveApollonius(Circle c1, Circle c2, Circle c3, int s1, int s2, int s3) {
+double x1 = c1.center[0];
+double y2 = c2.center[1];
+double r2 = c2.radius;
+double x3 = c3.center[0];
+double y3 = c3.center[1];
+

@@ -1,0 +1,12 @@
+public ASTVariableDeclaration getVariables() {
+return (ASTVariableDeclaration) jjtGetChild(0);
+}
+
+public boolean hasBody() {
+return node.getBody() != null;
+}
+
+public EcmascriptNode getBody() {
+if (hasBody()) {
+return (EcmascriptNode) jjtGetChild(jjtGetNumChildren() - 1);
+

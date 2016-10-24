@@ -1,0 +1,9 @@
+package me.geso.yoki.expects;
+
+import static org.junit.Assert.fail;
+
+public class BooleanExpect extends Expect<Boolean> {
+public void toBeTrue() {
+if (getActual() == null || !getActual()) {
+fail(&quot;expected true, but was <&quot; + getActual() + &quot;>&quot;);
+

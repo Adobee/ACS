@@ -1,0 +1,11 @@
+public static List<Goal> getGoalList() throws Exception {
+List<Goal> goal = goalData.readGoalList();
+if (goal == null) {
+return null;
+Goal goal = goalData.readGoal(goalId);
+if (goal == null) {
+return null;
+}
+else {
+return goal;
+

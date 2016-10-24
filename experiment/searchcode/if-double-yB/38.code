@@ -1,0 +1,9 @@
+F.addVariable( variable, b );
+double yb = F.getValue();
+F.addVariable( variable, c );
+double yc = F.getValue();
+
+// draw secant circle
+double s = ((a-c)*(b-c) + (ya-yc)*(yb-yc))/((a-c)*(ya-yb)-(a-b)*(ya-yc));
+double x = (a + b - (ya-yb)*s)/2.0;     // x coordinate of center of circle
+

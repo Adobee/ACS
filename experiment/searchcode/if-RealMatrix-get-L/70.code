@@ -1,0 +1,8 @@
+rmean[i]=sum(row)/(double) matrix.getColumnDimension();
+}
+RealMatrix rowmean=MatrixUtils.createColumnRealMatrix(rmean);
+double[] column=matrix.getColumn(i);
+cmean[i]=sum(column)/(double) matrix.getRowDimension();
+}
+RealMatrix colmean=MatrixUtils.createColumnRealMatrix(cmean);
+

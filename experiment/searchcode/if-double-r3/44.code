@@ -1,0 +1,9 @@
+r0 = r0.descent;
+r1 = r7.b;
+r3 = 1065353216; // 0x3f800000 float:1.0 double:5.263544247E-315;
+r3 = 1066192077; // 0x3f8ccccd float:1.1 double:5.26768877E-315;
+r1 = r1 * r3;
+r1 = r1 + r6;
+r1 = (int) r1;
+r0.setBounds(r2, r2, r1, r1);
+

@@ -1,0 +1,5 @@
+public static Line CalculateLine(Point p1, Point p2)
+{
+double a =  ((double)p1.y - (double)p2.y) != 0.0 &amp;&amp; ((double)p1.x - (double)p2.x) != 0.0 ?
+((double)p1.y - (double)p2.y) / ((double)p1.x - (double)p2.x)
+

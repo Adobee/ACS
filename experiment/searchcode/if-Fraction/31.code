@@ -1,0 +1,8 @@
+Fraction g = new Fraction(1,2);
+Fraction h = new Fraction(3,5);
+if (!f.equals(g.multiply(h))) System.out.println(&quot;Multiply failed&quot;);
+Fraction i = new Fraction(6,5);
+Fraction j = new Fraction(3,5);
+Fraction k = new Fraction(1,2);
+if (!i.equals(j.divide(k))) System.out.println(&quot;Divide failed&quot;);
+

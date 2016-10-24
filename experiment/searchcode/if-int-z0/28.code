@@ -1,0 +1,16 @@
+public int[] sortColors(int[] nums) {
+int z0 = 0;
+int s2 = nums.length - 1;
+
+for (int i = 0; i < nums.length; i++) {
+while (nums[i] == 2 &amp;&amp; i < s2) {
+while (nums[i] == 0 &amp;&amp; i > z0) {
+swap(nums, i, z0++);
+}
+}
+
+return nums;
+}
+
+public void swap(int[] nums, int i, int j) {
+

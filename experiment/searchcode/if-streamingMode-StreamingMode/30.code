@@ -1,0 +1,8 @@
+import org.apache.flink.configuration.Configuration;
+import org.apache.flink.runtime.StreamingMode;
+import org.apache.flink.runtime.taskmanager.TaskManager;
+* Runs the JobManager process in {@link StreamingMode#STREAMING} (can handle both batch
+* and streaming jobs).
+*
+* <p>All arguments are parsed to a {@link Configuration} and passed to the Taskmanager,
+

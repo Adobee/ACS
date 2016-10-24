@@ -1,0 +1,16 @@
+
+public class Task37_reduce_File_Path {
+
+static String reduce_file_path(String path){
+
+path = path.replaceAll(&quot;(?:/[\\w]+)?/\\.\\.&quot;, &quot;&quot;).replaceAll(&quot;(/\\.)&quot;, &quot;&quot;).replaceAll(&quot;([/]+)&quot;, &quot;/&quot;);
+
+if(path.length() > 1){
+path = path.replaceAll(&quot;/$&quot;, &quot;&quot;);
+}
+
+
+return path;
+}
+}
+

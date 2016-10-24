@@ -1,0 +1,8 @@
+static public CommaOk<Integer> Println(Object... objects) {
+int nr = 0;
+CommaOk<Integer> commaOk;
+for (Object object : objects) {
+commaOk = Print(object);
+if (!commaOk.ok) return commaOk;
+nr += commaOk.value;
+

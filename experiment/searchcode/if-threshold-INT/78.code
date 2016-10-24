@@ -1,0 +1,21 @@
+for (int i = 2; i < threshold; i++) {
+if (primes[i])
+{
+for (int j = 2; i*j < threshold; j++)
+{
+primes[i*j] = false;
+}
+}
+}
+
+for (int z = 2; z < threshold; z++)
+if (primes[z])
+sum += z;
+
+
+System.out.println(sum);
+
+}
+
+}
+

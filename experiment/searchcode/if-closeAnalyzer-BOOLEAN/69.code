@@ -1,0 +1,8 @@
+conf.setInfoStream(new TestPointInfoStream(conf.getInfoStream(), testPoint));
+DirectoryReader reader = null;
+if (r.nextBoolean() &amp;&amp; DirectoryReader.indexExists(dir) &amp;&amp; conf.getOpenMode() != IndexWriterConfig.OpenMode.CREATE) {
+w = mockIndexWriter(dir, c, r);
+flushAt = TestUtil.nextInt(r, 10, 1000);
+if (closeAnalyzer) {
+analyzer = w.getAnalyzer();
+

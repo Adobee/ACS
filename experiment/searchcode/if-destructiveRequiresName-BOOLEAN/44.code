@@ -1,0 +1,10 @@
+private volatile boolean destructiveRequiresName;
+
+@Inject
+public DestructiveOperations(Settings settings, ClusterSettings clusterSettings) {
+if (!destructiveRequiresName) {
+return;
+}
+
+if (aliasesOrIndices == null || aliasesOrIndices.length == 0) {
+

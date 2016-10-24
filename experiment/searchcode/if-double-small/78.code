@@ -1,0 +1,11 @@
+public static void assertSmall(short value) {
+if(value >= SMALL) throw EXC;
+}
+
+public static void assertSmall(int value) {
+if(value >= SMALL) throw EXC;
+}
+
+public static void assertSmall(double value) {
+if(value >= SMALL) throw EXC;
+

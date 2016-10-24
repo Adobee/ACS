@@ -1,0 +1,10 @@
+import com.senior.junkbot.util.BB;
+
+public class MovingEntity extends Entity {
+protected double xa, ya;
+public MovingEntity(double x, double y, double xa, double ya) {
+this(x, y, xa, ya, null);
+}
+
+public MovingEntity(double x, double y, double xa, double ya, Level level) {
+

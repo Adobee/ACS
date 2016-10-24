@@ -1,0 +1,7 @@
+* @param maxCycle max value of the base to compute the key for
+*                 (this method throws UserException if the computed absolute value of the cycle number is higher than this value).
+final int readOrderFactor = isSecondInPair ? -1 : 1;
+final int increment;
+int cycle;
+if (isNegStrand) {
+

@@ -1,0 +1,9 @@
+Map<Integer, AtomicInteger> nptDistribution = new HashMap<Integer, AtomicInteger>();
+int maxNptCount = 0;
+int maxLenCount = 0;
+
+for (Edge e : graph.getEdges()) {
+AtomicInteger nptCount = nptDistribution.get(n);
+if (nptCount == null) {
+nptCount = new AtomicInteger(0);
+

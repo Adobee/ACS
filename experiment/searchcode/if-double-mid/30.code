@@ -1,0 +1,8 @@
+double high = number;
+double low = 0;
+double diff = 0.01;
+double mid = (high + low) / 2.0;
+
+while( Math.abs( mid * mid - number ) >= diff){
+if(mid*mid < number){
+

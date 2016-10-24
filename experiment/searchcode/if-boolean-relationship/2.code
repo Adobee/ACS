@@ -1,0 +1,6 @@
+relationship.getProposer().getUsername(), relationship.getContact().getUsername());
+if (relationshipDAO.isFoundInDatabase(relationship)){
+relationship.setUpdateDate(Calendar.getInstance());
+if (relationship.getStatus() == RelationshipStatus.ACCEPTED){
+logger.info(&quot;Relationship accepted, creating reversed relationship&quot;);
+

@@ -1,0 +1,10 @@
+import pl.jsolve.sweetener.exception.InvalidArgumentException;
+
+public abstract class Generator {
+
+public abstract double random();
+
+public final double generate() {
+double randomValue = random();
+if (randomValue < 0 || randomValue > 1) {
+

@@ -1,0 +1,8 @@
+WB_Point3d closestPoint = WB_Intersection.closestPointToTriangle(new WB_Point3d(getOrigin().x, getOrigin().y, getOrigin().z), new WB_Point3d(triangle.getPointOne().x, triangle.getPointOne().y, triangle.getPointOne().z), new WB_Point3d(triangle.getPointTwo().x, triangle.getPointTwo().y, triangle.getPointTwo().z), new WB_Point3d(triangle.getPointThree().x, triangle.getPointThree().y, triangle.getPointThree().z));
+if((origin.x - closestPoint.x) * (origin.x - closestPoint.x) + (origin.y - closestPoint.y) * (origin.y- closestPoint.y) + (origin.z - closestPoint.z) * (origin.z - closestPoint.z) > distance * distance)
+v = new Vector3D(triangle.getPointThree().x, triangle.getPointThree().y, triangle.getPointThree().z);
+v = v.subtract(p1);
+n = Vector3D.crossProduct(u, v);
+
+if (n.getNorm() == 0) {
+

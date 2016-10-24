@@ -1,0 +1,9 @@
+public abstract class AbstractQuadric extends Node {
+private Point m_centre;
+private double m_A, m_B, m_C, m_D, m_E, m_F, m_G, m_H, m_I, m_J;
+newResult.addIntersection(tArray[i], computeQuadricNormal(vec.set(m_centre, pt)));
+}
+}
+if(newResult.getT() < result.getT()) {
+// Set the material property for the primitive
+

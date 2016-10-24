@@ -1,0 +1,7 @@
+public CnValue(CnFormat cnFormat, CnType cnType, T value) {
+if (cnFormat.needsLength()) {
+throw new IllegalArgumentException(&quot;Fixed-value types must use constructor that specifies length&quot;);
+// return datatype.format((Double)value ,12);
+return cnFormat.format((BigDecimal) value, 12);
+} else if (value instanceof Number) {
+

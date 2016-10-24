@@ -1,0 +1,7 @@
+private static Type determineType(Temporary lhst, Temporary rhst){
+Type lhs = lhst.getType();
+Type rhs = rhst.getType();
+if(lhs == rhs){
+return lhs;
+}else if(lhs == Type.BYTE_TYPE || lhs == Type.SHORT_TYPE || lhs == Type.CHAR_TYPE || lhs == Type.BOOLEAN_TYPE){
+

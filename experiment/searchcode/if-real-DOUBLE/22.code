@@ -1,0 +1,12 @@
+package algebra.linear.field;
+
+
+public class Real implements Field {
+
+public Real(double real) {
+return new Real(-1.0 * real);
+}
+
+public Field reciprocal() {
+if (real == 0) throw new IllegalArgumentException(&quot;Can not divide by zero.&quot;);
+

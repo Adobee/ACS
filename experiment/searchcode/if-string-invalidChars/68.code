@@ -1,0 +1,8 @@
+private static final String[] invalidChars = new String[] { &quot;\\&quot;, &quot;/&quot;, &quot;:&quot;, &quot;*&quot;, &quot;?&quot;, &quot;\&quot;&quot;, &quot;<&quot;, &quot;>&quot;, &quot;|&quot; };
+return;
+}
+boolean reject = false;
+for(String c : invalidChars)
+{
+if(newString.contains(c))
+

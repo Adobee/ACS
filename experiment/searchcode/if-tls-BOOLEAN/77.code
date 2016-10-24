@@ -1,0 +1,14 @@
+* Returns whether to call {@link StartTlsResponse#close()} when {@link #close(RequestControl[])} is called.
+*
+* @return  stop TLS on close
+*/
+public boolean getStopTLSOnClose()
+{
+return stopTLSOnClose;
+throws LdapException
+{
+try {
+if (stopTLSOnClose) {
+if (startTlsResponse != null) {
+startTlsResponse.close();
+

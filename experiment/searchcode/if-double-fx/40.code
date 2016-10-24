@@ -1,0 +1,11 @@
+public Fx fade(double start, double end) {
+if(get(0)!=null)
+fx(FXFade.smartRange(get(0), start, end));
+return fx!=null? fx : data(&quot;FX&quot;, FX.class);
+}
+
+public Queue animate() {
+FX fx = getFx();
+
+if(fx!=null)
+

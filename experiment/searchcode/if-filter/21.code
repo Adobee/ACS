@@ -1,0 +1,9 @@
+public CollapsingNotFilter(RowFilter<M,I> filter) {
+if (filter == null) {
+throw new IllegalArgumentException(
+&quot;filter must be non-null&quot;);
+}
+
+// Collapses !!!filter into !filter
+if (filter instanceof CollapsingNotFilter)
+

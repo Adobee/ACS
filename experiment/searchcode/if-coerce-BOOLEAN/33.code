@@ -1,0 +1,8 @@
+import org.zkoss.zkplus.databind.TypeConverter;
+
+public class BooleanToLabelConverter implements TypeConverter {
+
+public Object coerceToUi(Object val, Component comp) {
+if(val instanceof Boolean){
+if((Boolean) val){
+

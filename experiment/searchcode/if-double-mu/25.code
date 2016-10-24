@@ -1,0 +1,17 @@
+public final class Laplace extends Distribution
+{
+/**
+* location
+*/
+private double mu;
+/*
+* Scale
+public double getMu()
+{
+return mu;
+}
+
+public void setB(double b)
+{
+if (b <= 0)
+

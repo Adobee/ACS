@@ -1,0 +1,8 @@
+fieldDataFields = (List<String>) in.readGenericValue();
+if (in.readBoolean()) {
+int size = in.readVInt();
+scriptFields = new HashSet<>(size);
+fetchSourceContext = in.readOptionalStreamable(FetchSourceContext::new);
+if (in.readBoolean()) {
+int size = in.readVInt();
+

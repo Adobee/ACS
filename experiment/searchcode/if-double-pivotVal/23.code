@@ -1,0 +1,10 @@
+final double xi = x.get(i);
+final double yi = y.get(i);
+if (Double.isNaN(xi) || Double.isNaN(yi)) {
+++counter;
+}
+if (counter == 0) {
+return Double.NaN;
+}
+if (counter == 1) {
+

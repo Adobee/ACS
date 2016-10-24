@@ -1,0 +1,6 @@
+URI uri = httpurirequest.getURI();
+if (httpurirequest instanceof RequestWrapper)
+{
+HttpRequest httprequest = ((RequestWrapper)httpurirequest).getOriginal();
+if (httprequest instanceof HttpUriRequest)
+

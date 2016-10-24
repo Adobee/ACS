@@ -1,0 +1,9 @@
+public static double computePValue(int Dof, double Cv) {
+if (Cv < 0 || Dof < 1) {
+return 0.0;
+}
+double K = ((double) Dof) * 0.5;
+double X = Cv * 0.5;
+if (Dof == 2) {
+return Math.exp(-1.0 * X);
+

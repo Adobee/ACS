@@ -1,0 +1,12 @@
+String dateFormate = new SimpleDateFormat(&quot;yyyy-MM-dd HH:mm:ss&quot;)
+.format(date);
+Timestamp now = Timestamp.valueOf(dateFormate);
+
+long timeDifference = now.getTime() - t.getTime();
+long year = 1000L*60*60*24*365;
+
+String time = &quot;&quot;;
+
+if(timeDifference > second &amp;&amp; timeDifference <= minute) {
+// 时间大于1秒钟，小于1小分钟
+

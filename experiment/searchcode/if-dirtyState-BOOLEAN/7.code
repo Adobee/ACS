@@ -1,0 +1,9 @@
+public PlayerState state;
+private boolean facingLeft = false;
+private boolean dirtyState = true;
+private int health;
+private int maxHealth;
+public void setFacingLeft(boolean facingLeft){
+if(facingLeft != this.facingLeft) dirtyState = true;
+this.facingLeft = facingLeft;
+

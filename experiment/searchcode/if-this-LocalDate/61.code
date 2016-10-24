@@ -1,0 +1,11 @@
+import com.avaje.ebeaninternal.server.core.BasicTypeConverter;
+
+/**
+* ScalarType for Joda LocalDate. This maps to a JDBC Date.
+*/
+public class ScalarTypeJodaLocalDate extends ScalarTypeBaseDate<LocalDate> {
+@Override
+public Object toJdbcType(Object value) {
+if (value instanceof LocalDate) {
+return new java.sql.Date(((LocalDate) value).toDateMidnight().getMillis());
+

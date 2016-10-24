@@ -1,0 +1,8 @@
+public void fetchEmoticons(final int delay, final boolean forceFetch, final DisplayMetrics displayMetrics) {
+
+_dm = displayMetrics;
+
+if (!forceFetch) {
+synchronized(this) {
+if (_isRunning) {
+

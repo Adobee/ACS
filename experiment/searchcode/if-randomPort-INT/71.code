@@ -1,0 +1,10 @@
+public PortAssignerImpl() {
+}
+
+private BitSet ports = new BitSet(1000);
+
+private/* synchronized */int randomPort() {
+do {
+port = ports.nextClearBit((int) (Math.random() * maxRandom));
+if (port < maxRandom) {
+

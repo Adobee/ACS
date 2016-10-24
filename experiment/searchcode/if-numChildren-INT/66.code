@@ -1,0 +1,13 @@
+static private int numChildren = 0;
+
+public DBMoaraResources() {
+super();
+if (numChildren==0) {
+conn = this.init(&quot;moara_resources&quot;);
+numChildren--;
+if (numChildren==0)
+closeConnection(conn);
+}
+
+public String[] getIdText(boolean start, String[] organisms) throws SQLException {
+

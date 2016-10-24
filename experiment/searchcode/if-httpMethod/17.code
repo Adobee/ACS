@@ -1,0 +1,13 @@
+public class HttpMethod extends HttpString {
+
+public final static HttpMethod GET = new HttpMethod(&quot;GET&quot;);
+public static HttpMethod valueOf(String name) {
+HttpMethod result = methodMap.get(name);
+if (result != null) {
+return result;
+} else {
+return new HttpMethod(name);
+}
+}
+}
+

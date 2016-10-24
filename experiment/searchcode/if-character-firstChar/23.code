@@ -1,0 +1,7 @@
+public boolean canDisplay(char ch) {
+if (Character.isLowerCase(ch) &amp;&amp; !hasLowercase) {
+ch = Character.toUpperCase(ch);
+char ch = s.charAt(i);
+if (Character.isLowerCase(ch) &amp;&amp; !hasLowercase) {
+ch = Character.toUpperCase(ch);
+

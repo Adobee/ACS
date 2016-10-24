@@ -1,0 +1,8 @@
+this.singleLineCommentDetector = new JavaSingleLineCommentDetector();
+}
+
+@Override
+public boolean isValidCodeLine(String line, boolean openCPPComment) {
+line = line.trim();
+if (openCPPComment) {
+

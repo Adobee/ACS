@@ -1,0 +1,10 @@
+final int N;
+final double absoluteError;
+final double relativeError;
+
+SimpleRunner(String args[], Simulator simulator) {
+N = Integer.parseInt(args[0]);
+absoluteError = Double.parseDouble(args[1]);
+relativeError = Double.parseDouble(args[2]);
+this.sim = simulator;
+

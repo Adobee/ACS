@@ -1,0 +1,11 @@
+startTime = LocalDateTime.now();
+}
+
+public void stopEvent() {
+if (endTime == null) {
+LocalDateTime tempEnd = endTime;
+if (tempEnd == null) {
+tempEnd = LocalDateTime.now();
+}
+return Duration.between(startTime, tempEnd);
+

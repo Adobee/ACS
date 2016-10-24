@@ -1,0 +1,12 @@
+public class HygieiaResponse {
+private int responseCode;
+private String responseValue;
+
+public HygieiaResponse(int responseCode, String responseValue) {
+this.responseValue = responseValue;
+}
+
+public String toString() {
+String resp = &quot;Response Code: &quot; + responseCode + &quot;. &quot;;
+if (StringUtils.isEmpty(responseValue)) return resp;
+

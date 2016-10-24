@@ -1,0 +1,20 @@
+DONE, READY, FAILED, RUNNING;
+
+public boolean hasFailed() {
+return (this.equals(FAILED));
+}
+
+public boolean isReady() {
+return (this.equals(READY));
+String description = &quot;READY&quot;;
+
+if (this.isDone()) {
+description = &quot;DONE&quot;;
+} else if ( this.hasFailed() ) {
+description = &quot;FAILED&quot;;
+}
+
+return description;
+}
+}
+

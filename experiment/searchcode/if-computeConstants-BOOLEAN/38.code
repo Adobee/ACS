@@ -1,0 +1,8 @@
+public static Tree createRandom(NodeCollection nodeCollection) {
+Tree tree = new Tree(nodeCollection);
+if (GP.FULL_INIT) {
+INode node;
+INode choice;
+if (startDepth < GP.MAX_DEPTH) {
+choice = nodeCollection.getRandomOfAll();
+

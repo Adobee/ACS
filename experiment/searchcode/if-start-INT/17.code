@@ -1,0 +1,10 @@
+int[][] res = new int[n][n];
+if(n==0)return res;
+
+int startX=0;
+int startY=0;
+int endX=res.length-1;
+while(true){
+for(int i=startY;i<=endY;i++){res[startX][i]=s;s++;}
+if(++startX>endX)break;
+

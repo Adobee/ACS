@@ -1,0 +1,7 @@
+public int minGap(int t2From ,int t2To,int marginInMinutes,Double timeTravel)
+{
+if (t2From==0 &amp;&amp; t2To==0) return 0; // Algo con restricción intersecta a algo sin restricción
+int upperGap2=Math.abs(this.timeWindowFrom+timeTravel.intValue()+getServiceDuration()-t2To);
+
+if (lowGap2<=marginInMinutes || upperGap2<=marginInMinutes) return 0;
+

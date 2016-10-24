@@ -1,0 +1,12 @@
+public static ReverseStep obtain(final boolean reverse,
+final ReversableStep step) {
+
+final ReverseStep reverseStep = Step.obtain(ReverseStep.class);
+reverseStep.reverse = reverse;
+
+return reverseStep;
+}
+
+private boolean reverse;
+private boolean toggle;
+

@@ -1,0 +1,9 @@
+private final Map<String, String> expectedMdcs = new HashMap<String, String>();
+
+public boolean fulfillsExpectations(LogEntry<LEVEL> logEntry) {
+&amp;&amp; matchesMdcs(logEntry);
+}
+
+private boolean eventHasCorrectLevel(LEVEL level) {
+return expectedLevel == null || expectedLevel.equals(level);
+

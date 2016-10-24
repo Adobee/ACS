@@ -1,0 +1,14 @@
+private int maxCacheSize;
+private LinkedHashMap<K, SoftReference<V>> cache;
+
+/**
+* 以默认256容量创建缓存。
+*/
+public DataCache() {
+this(256);
+}
+
+/**
+* 以自定义容量创建缓存
+* @param maxCacheSize 指定最大可缓存的条目数量
+

@@ -1,0 +1,10 @@
+public void ErrorMessage(String QueryText, String methodName) {
+if (AppConfig.IS_TESTING) {
+System.out.println(&quot;{Error : &quot; + QueryText + &quot; \nMethod Name: [&quot; + methodName + &quot;]&quot;);
+System.out.println(&quot;}&quot;);
+}
+}
+
+public void ErrorMessage(Exception e, String QueryText) {
+if (AppConfig.IS_TESTING) {
+

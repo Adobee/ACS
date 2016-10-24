@@ -1,0 +1,7 @@
+package mypackage.constraints;
+
+import org.joda.time.LocalDateTime;
+import org.joda.time.format.DateTimeFormat;
+public boolean isValid(LocalDateTime localDateTime, ConstraintValidatorContext constraintValidatorContext) {
+if (localDateTime == null)
+

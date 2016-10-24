@@ -1,0 +1,13 @@
+public class CachedObject
+implements Serializable
+{
+
+private Object object;
+
+private DateTime FAR_PAST = new DateTime( 0 );
+private boolean cached = true;
+
+public CachedObject( Object object )
+{
+if ( object == null )
+

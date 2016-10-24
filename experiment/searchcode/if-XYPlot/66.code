@@ -1,0 +1,8 @@
+import org.jfree.chart.axis.ValueAxis;
+import org.jfree.chart.plot.XYPlot;
+import org.jfree.data.time.Day;
+import org.jfree.data.time.TimeSeries;
+JFreeChart jfreeChart = ChartFactory.createTimeSeriesChart(title, x_name, y_name, xydataset, true, true, true);
+XYPlot xyplot = (XYPlot) jfreeChart.getPlot();
+DateAxis dateaxis = (DateAxis) xyplot.getDomainAxis();
+

@@ -1,0 +1,9 @@
+Class[] exceptions = reflected_method.getExceptionTypes();
+for (int i = 0; i < exceptions.length; i++) {
+if (exceptions[i] == org.apache.yoko.rmi.api.RemoteOnewayException.class) {
+private String attributeName() {
+String methodName = getJavaName();
+StringBuffer buf = new StringBuffer();
+
+int pfxLen;
+

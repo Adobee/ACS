@@ -1,0 +1,8 @@
+int index, numExitTransitions;
+double validTransitionsProbability, randomValue;
+
+if (currentState.getExitTransitions() != null) {
+validTransitionsProbability = (1.0 - probabilityOfError) / numExitTransitions;
+randomValue = Math.random();
+if (randomValue >= 0 &amp;&amp; randomValue < (1.0 - probabilityOfError)) {
+

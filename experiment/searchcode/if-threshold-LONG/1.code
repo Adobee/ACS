@@ -1,0 +1,12 @@
+private final long	lowThreshold;
+private final long	highThreshold;
+
+private boolean		state	= false;
+
+/**
+* LOW state by default.
+* */
+public SchmittTrigger(long lowThreshold, long highThreshold)
+{
+this(lowThreshold, highThreshold, false);
+

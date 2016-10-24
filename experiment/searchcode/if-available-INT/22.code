@@ -1,0 +1,13 @@
+package prak03.event;
+
+public class Ticket {
+
+String category;
+int price;
+int available;
+int sold;
+public int buyTicket(int amount){
+if(this.available >= amount) {
+int total_price = amount * this.price;
+this.sold = this.sold + amount;
+

@@ -1,0 +1,6 @@
+public static void findMovies(String title, Callback callback){
+OkHttpClient client = new OkHttpClient.Builder().build();
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.SEARCH_BASE_URL).newBuilder();
+urlBuilder.addQueryParameter(Constants.QUERY_PARAMATER, title);
+

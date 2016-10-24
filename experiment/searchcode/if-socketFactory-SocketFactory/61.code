@@ -1,0 +1,7 @@
+import java.net.*;
+
+public class SocketFactory implements IClientSocketFactory, IServerSocketFactory {
+public synchronized static SocketFactory getDefaultSocketFactory() {
+if (defaultFactory == null) {
+defaultFactory = new SocketFactory();
+

@@ -1,0 +1,12 @@
+return new Boolean(value).hashCode();
+}
+
+@Override
+public boolean equals(Object obj) {
+if (obj == null || !(obj instanceof BooleanValue))
+return value ? BigInteger.ONE : BigInteger.ZERO;
+}
+
+@Override
+public boolean coerceToBool() {
+

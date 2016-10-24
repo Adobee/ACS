@@ -1,0 +1,11 @@
+final int solvedCols = FastMath.min(nR, nC);
+/* Parameters evolution direction associated with lmPar. */
+double[] lmDir = new double[nC];
+dxNorm = FastMath.sqrt(dxNorm);
+double fp = dxNorm - delta;
+if(fp <= 0.1 * delta) {
+lmPar = 0;
+return lmPar;
+}
+// if the jacobian is not rank deficient, the Newton step provides
+

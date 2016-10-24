@@ -1,0 +1,9 @@
+public ObjectMapper merge(Mapper mergeWith, boolean updateAllTypes) {
+if (!(mergeWith instanceof ObjectMapper)) {
+throw new IllegalArgumentException(&quot;Can&#39;t merge a non object mapping [&quot; + mergeWith.name() + &quot;] with an object mapping [&quot; + name() + &quot;]&quot;);
+return merged;
+}
+
+protected void doMerge(final ObjectMapper mergeWith, boolean updateAllTypes) {
+if (nested().isNested()) {
+

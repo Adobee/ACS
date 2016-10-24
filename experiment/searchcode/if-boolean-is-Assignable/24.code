@@ -1,0 +1,12 @@
+public static Object parse(Class<?> clazz, String val)
+{
+val = val.trim();
+
+if (clazz.isAssignableFrom(Byte.class) || clazz.isAssignableFrom(Byte.TYPE))
+return Boolean.parseBoolean(val);
+}
+
+if (clazz.isAssignableFrom(String.class))
+{
+return String.valueOf(val);
+

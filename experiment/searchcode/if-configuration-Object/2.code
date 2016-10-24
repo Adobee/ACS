@@ -1,0 +1,7 @@
+ConfigurationManager configurationManager = ConfigurationManager.getInstance();
+Object confObject = configurationManager.loadConfiguration(configPath, defaultConfiguration.getClass());
+T configuration = null;
+
+// existuje konfigurační soubor ?
+if (confObject == null) {
+

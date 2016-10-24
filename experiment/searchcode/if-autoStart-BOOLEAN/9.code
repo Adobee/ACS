@@ -1,0 +1,10 @@
+SyncPeriod selectedPeriod = findPeriod(periods, syncConfig.getSyncPeriod());
+setSelectedPeriod(selectedPeriod);
+}
+
+private void updateAutostart(boolean runOnStart) {
+Autostart autostart = factory.getAutostart();
+try {
+if (runOnStart)
+autostart.enableUserAutostart();
+

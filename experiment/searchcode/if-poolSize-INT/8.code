@@ -1,0 +1,12 @@
+import craterstudio.util.HighLevel;
+
+public class Semaphore
+{
+private int          available;
+private int          poolSize;
+private final Object lock;
+
+public Semaphore(int poolSize)
+{
+if (poolSize < 0)
+

@@ -1,0 +1,13 @@
+super(dateTimeField, DateTimeFieldType.yearOfEra());
+this.iChronology = basicChronology;
+}
+
+private Object readResolve() {
+FieldUtils.verifyValueBounds((DateTimeField) this, i, 1, getMaximumValue());
+if (this.iChronology.getYear(j) <= 0) {
+i = 1 - i;
+}
+return super.set(j, i);
+}
+}
+

@@ -1,0 +1,11 @@
+IDocument doc = context.getDocument();
+
+// Keyword proposals
+int backslashPos = -1;
+int firstSpace = -1;
+int p = pos - 1;
+kw: try {
+while (p >= 0) {
+char c = doc.getChar(p);
+if (c == &#39; &#39; || c == &#39;\t&#39;) {
+

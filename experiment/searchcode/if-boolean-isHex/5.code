@@ -1,0 +1,11 @@
+public static boolean isHex(String str){
+Pattern pattern = Pattern.compile(&quot;[0-9a-f]*&quot;);
+Matcher isHex = pattern.matcher(str);
+if( !isHex.matches() ){
+return false;
+}
+return true;
+}
+
+}
+

@@ -1,0 +1,9 @@
+protected Integer getAsgnTargetSymbol(int blockIndex, int instrIndex) {
+IlocBlock block = m_CFG.getBlock(blockIndex);
+IlocInstr instr = block.getInstruction(instrIndex);
+return instr.getTargetRegister(0).getID();
+}
+
+@Override
+protected int getNumberOfInstructions(int blockIndex){
+

@@ -1,0 +1,11 @@
+private boolean[] shortUsed, shortLagPresent, longUsed;
+private int[] shortLag;
+
+public LTPrediction(int frameLength) {
+this.frameLength = frameLength;
+public void setPredictionUnused(int sfb) {
+if(longUsed!=null) longUsed[sfb] = false;
+}
+
+public void process(ICStream ics, float[] data, FilterBank filterBank, SampleFrequency sf) {
+

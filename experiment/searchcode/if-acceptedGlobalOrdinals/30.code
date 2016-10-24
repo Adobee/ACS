@@ -1,0 +1,8 @@
+private LongSet invalids;
+
+private LongFilter(int numValids, int numInvalids) {
+if (numValids > 0) {
+long ord = globalOrdinals.lookupTerm(term);
+if (ord >= 0) {
+acceptedGlobalOrdinals.set(ord);
+

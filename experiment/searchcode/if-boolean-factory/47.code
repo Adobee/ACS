@@ -1,0 +1,8 @@
+private volatile Object instance = UNINITIALIZED;
+
+private SingleCheck(Factory<T> factory) {
+if ($assertionsDisabled || factory != null) {
+Factory<T> factoryReference = this.factory;
+if (this.instance == UNINITIALIZED) {
+this.instance = factoryReference.get();
+

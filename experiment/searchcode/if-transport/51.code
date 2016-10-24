@@ -1,0 +1,8 @@
+for (Iterator<TransportInterceptor> transportInterceptors = findTransportInterceptors(interceptorList); transportInterceptors.hasNext(); ) {
+
+TransportInterceptor transportInterceptor = transportInterceptors.next();
+
+if (log.isDebugEnabled()) log.debug(&quot;Executing transport interceptor &quot; + transportInterceptor.getClass().getSimpleName() + &quot; (before).&quot;);
+
+if (transportInterceptor.before(transport, request, response, messagingTarget, messageEnvelope, executionContext)) {
+

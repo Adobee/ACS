@@ -1,0 +1,8 @@
+import AbstractPanzers.AbstractPanzer;
+
+public class GermanMoveRange extends AbstractMoveRange{
+
+private final int xrange = 3;
+public boolean getMoveRange(AbstractPanzer panzer, int x, int y) {
+if(x<=panzer.getX()+this.xrange &amp;&amp; x>=panzer.getX()-this.xrange &amp;&amp; y==panzer.getY()){
+

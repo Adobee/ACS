@@ -1,0 +1,6 @@
+final String longCt = &quot;text/plain;aaa=aaa1;bbb=bbb1;charset=UTF-8;ccc=ccc1;ddd=ddd1;eee=eee1;fff=fff1&quot;;
+final String longMt = longCt.replace(&quot;charset=UTF-8;&quot;, &quot;&quot;);
+new String(ct.getByteArray(), 0, ct.getArrayLen(),
+Charsets.ASCII_CHARSET));
+assertEquals(longMt, ct.getMimeType());
+

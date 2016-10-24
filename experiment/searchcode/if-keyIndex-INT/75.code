@@ -1,0 +1,13 @@
+private int keyIndex;
+private boolean keyDown;
+private boolean oldKeyDown;
+
+private KeyInput(int keyIndex)
+this.defaultKeyIndex = keyIndex;
+this.keyIndex = keyIndex;
+}
+
+public void setKey(int keyIndex)
+{
+if (keyIndex == 1)
+

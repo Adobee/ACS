@@ -1,0 +1,10 @@
+private int maxSize; // Max size of list
+private int listSize; // Current # of list items
+private int curr; // Position of current elements
+ArrList() { this(defaultSize); }
+
+ArrList(int size) {
+maxSize = size;
+listSize = curr = 0;
+listArray = (E[])new Object[size]; // Create listArray
+

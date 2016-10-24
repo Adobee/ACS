@@ -1,0 +1,8 @@
+public class Intersection {
+
+static double X0, X1, Y0, Y1;
+
+public static boolean int0(double x0, double y0, double x1, double y1) {
+public static boolean int1(double x0, double y0, double x1, double y1) {
+return (x1 > X0) &amp; (x0 < X1) &amp; (y1 > Y0) &amp; (y0 < Y1); // true if
+

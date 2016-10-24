@@ -1,0 +1,9 @@
+protected void parseMessages(Buffer buffer, int start, int len) {
+//System.out.println(&quot;Parsing command buffer: &quot; + len);
+if (start >= buffer.length()) {
+break;
+}
+case ReadCommandSize: {
+int read = readRest(buffer, start, len);
+if (awaiting == 0) { // read all bytes for the command size: if not, wait for the next buffer
+

@@ -1,0 +1,8 @@
+public int[] plusOne(int[] digits) {
+int len = digits.length;
+if (len == 0) return null;
+digits[len-1] += 1;
+int lag = len-1;
+while(digits[lag]==10&amp;&amp;lag>0){
+digits[lag] = 0;
+

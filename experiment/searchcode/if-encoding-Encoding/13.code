@@ -1,0 +1,5 @@
+public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
+if (encoding != null || (forceEncoding &amp;&amp; request.getCharacterEncoding() == null)) {
+request.setCharacterEncoding(getEncoding());
+if (forceEncoding) {
+

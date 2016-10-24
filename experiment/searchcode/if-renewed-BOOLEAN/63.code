@@ -1,0 +1,10 @@
+package renewed.data.queue;
+
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+public boolean add(Event event) {
+boolean result = eventQueue.add(event);
+
+if (eventQueue.size() > n) {
+eventQueue.removeFirst();
+

@@ -1,0 +1,8 @@
+import java.util.function.ToLongBiFunction;
+
+public class CacheBuilder<K, V> {
+private long maximumWeight = -1;
+private long expireAfterAccess = -1;
+public CacheBuilder<K, V> setMaximumWeight(long maximumWeight) {
+if (maximumWeight < 0) {
+

@@ -1,0 +1,9 @@
+public final static int DEFAULT_QUEUE_CAPACITY = Integer.MAX_VALUE;
+
+private String name = &quot;default&quot;;
+
+private int poolSize = DEFAULT_POOL_SIZE;
+public ExecutorConfig setPoolSize(final int poolSize) {
+if (poolSize <= 0) {
+throw new IllegalArgumentException(&quot;poolSize must be positive&quot;);
+

@@ -1,0 +1,11 @@
+package info.metadude.java.library.brockman;
+
+import com.squareup.moshi.Moshi;
+import info.metadude.java.library.brockman.adapters.StreamAdapter;
+private static Retrofit createRetrofit(String baseUrl, OkHttpClient okHttpClient) {
+if (okHttpClient == null) {
+okHttpClient = new OkHttpClient();
+}
+
+Moshi moshi = new Moshi.Builder()
+

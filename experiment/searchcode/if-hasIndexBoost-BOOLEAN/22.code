@@ -1,0 +1,10 @@
+builder.highlightBuilder = in.readBytesReference();
+}
+boolean hasIndexBoost = in.readBoolean();
+if (hasIndexBoost) {
+out.writeBytesReference(highlightBuilder);
+}
+boolean hasIndexBoost = indexBoost != null;
+out.writeBoolean(hasIndexBoost);
+if (hasIndexBoost) {
+

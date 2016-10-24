@@ -1,0 +1,9 @@
+public static void drawLine(BufferedImage i, int x0, int y0, int x1, int y1, int color) {
+if (x0 == x1) {
+for (int index = y0; index <= y1; index++)
+i.setRGB(x0,index,color);
+return;
+}
+double m = (y1 - y0)/(x1 - x0);
+if (y0 == y1) {
+

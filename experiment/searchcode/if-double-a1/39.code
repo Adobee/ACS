@@ -1,0 +1,11 @@
+protected Point2D intersection(Point2D a1, Point2D a2, Point2D b1, Point2D b2) {
+
+double ua_t = (b2.getX() - b1.getX()) * (a1.getY() - b1.getY()) - (b2.getY() - b1.getY())
+* (a2.getY() - a1.getY());
+
+if (u_b != 0) {
+double ua = ua_t / u_b;
+double ub = ub_t / u_b;
+
+if ((0 <= ua) &amp;&amp; (ua <= 1) &amp;&amp; (0 <= ub) &amp;&amp; (ub <= 1)) {
+

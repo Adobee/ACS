@@ -1,0 +1,16 @@
+private static double f( double t )
+{
+if (t > lab_e) {
+return (double) (Math.pow(t, 1.0f / 3.0f));
+} else {
+return (double) (7.787 * t + 16 / 116.0);
+private static double[] LUV_XYZ( double tuple[] )
+{
+double L, U, V, X, Y, Z, varU, varV, varY;
+
+L = tuple[0];
+U = tuple[1];
+V = tuple[2];
+
+if (L == 0) {
+

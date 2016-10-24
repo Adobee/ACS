@@ -1,0 +1,6 @@
+public void save(DataOutputStream dos, Object object) throws IOException {
+Boolean[] values;
+if ( object instanceof boolean[] ) {
+// sadly, autoboxing does not work for primitive types.
+boolean[] primitiveArray = (boolean[]) object;
+

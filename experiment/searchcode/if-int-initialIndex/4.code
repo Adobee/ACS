@@ -1,0 +1,6 @@
+public void getNumberOfInversionArray( int [] inputArr, int initialIndex,
+int finalIndex ) {
+if ( initialIndex < finalIndex ) {
+int middleIndex = ( finalIndex + initialIndex ) / 2;
+this.getNumberOfInversionArray( inputArr, initialIndex, middleIndex );
+

@@ -1,0 +1,9 @@
+* @throws MathIllegalArgumentException if {@code numberOfVariables is less than 1}
+*/
+public MillerUpdatingRegression(int numberOfVariables, boolean includeConstant, double errorTolerance)
+throw new MathIllegalArgumentException(LocalizedCoreFormats.NO_REGRESSORS);
+}
+if (includeConstant) {
+this.nvars = numberOfVariables + 1;
+} else {
+

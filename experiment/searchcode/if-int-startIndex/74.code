@@ -1,0 +1,6 @@
+private static void selectionSortRecursive(int[] array, int startIndex) {
+if(startIndex < array.length) {
+
+// find smallest element in array[startIndex...n]
+int smallest = indexOfSmallest(array, startIndex);
+

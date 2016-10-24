@@ -1,0 +1,10 @@
+public static Double std(List<Double> vector, Double avg) {
+Double accum = 0.0;
+Double dev = 0.0;
+Double accum2 = 0.0;
+dev = float1 - avg;
+accum += dev * dev;
+accum2 += dev;
+}
+Double var = (accum - (accum2 * accum2 / len)) / len;
+

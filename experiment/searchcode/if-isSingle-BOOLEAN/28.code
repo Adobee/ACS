@@ -1,0 +1,11 @@
+private int writeP; //写指针
+private int readP; //读指针
+
+private boolean isSingle=true; //是否仅一个生产者和一个消费者
+private Object writeLock=new Object();
+* 构造一个默认容量为256的队列
+* </pre>
+* @param isSingle 是否是单线程队列
+*/
+public StrArrayQueueG(boolean isSingle) {
+

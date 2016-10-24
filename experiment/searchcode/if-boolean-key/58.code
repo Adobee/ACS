@@ -1,0 +1,7 @@
+* @return property value converted to boolean if exists, or false otherwise
+*/
+public boolean getBooleanProperty(String key) {
+public boolean getBooleanProperty(String key, boolean defaultValue) {
+final String propertyStrValue = getProperty(key);
+if (propertyStrValue != null) {
+

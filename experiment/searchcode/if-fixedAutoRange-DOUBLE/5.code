@@ -1,0 +1,9 @@
+private String axisXName = &quot;Time&quot;;
+private String axisYName = &quot;Load&quot;;
+double fixedAutoRange;
+private String name = null;
+* @param e  the action event.
+*/
+public void addOrUpdateData(String metric, long date, double value) {
+if(metric.equalsIgnoreCase(MetricNames.LOAD_ONE)) seriesOne.addOrUpdate(new Millisecond(new Date(date)), value);
+

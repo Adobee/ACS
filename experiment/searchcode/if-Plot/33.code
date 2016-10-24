@@ -1,0 +1,13 @@
+import org.bukkit.World;
+
+public class PlotRunnableDeleteExpire implements Runnable {
+
+public void run()
+{
+if(PlotMe.worldcurrentlyprocessingexpired != null)
+for(String id : plots.keySet())
+{
+Plot plot = plots.get(id);
+
+if(!plot.protect &amp;&amp; !plot.finished &amp;&amp; plot.expireddate != null &amp;&amp; PlotMe.getDate(plot.expireddate).compareTo(date.toString()) < 0)
+

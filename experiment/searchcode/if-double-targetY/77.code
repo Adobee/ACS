@@ -1,0 +1,17 @@
+boolean running = true;
+double x = 5;
+double y = 10;
+int startx = 5;
+int starty = 10;
+
+static int width;
+while (running){
+render();
+update();
+}
+}
+
+public void render(){
+s = getBufferStrategy();
+if(s!=null){
+

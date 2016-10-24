@@ -1,0 +1,13 @@
+private Status status = Status.UNINITIALIZED;
+
+@Override
+public void initialize() {
+if(status != Status.UNINITIALIZED &amp;&amp; status != Status.SHUTDOWNED) {
+this.status = Status.INITIALIZED;
+}
+
+@Override
+public void start() {
+if(status != Status.INITIALIZED) {
+throw new IllegalStateException();
+

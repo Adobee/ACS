@@ -1,0 +1,15 @@
+System.out.println(new Ackermann().calculate(3,11));
+}
+}
+
+class Ackermann{
+public int calculate(int m, int n){
+int ret;
+if(m < 1){
+ret = n+1;
+}else{
+if(0 < m &amp;&amp; n < 1){
+ret = this.calculate(m-1,1);
+}else{
+ret = this.calculate(m-1, this.calculate(m, n-1));
+

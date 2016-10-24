@@ -1,0 +1,9 @@
+* @author dangcat
+*/
+class ResourceLocaleLoader {
+private ClassLoader classLoader = null;
+private Map<Locale, ResourceLoader> resourceLocaleLoaderMap = new HashMap<Locale, ResourceLoader>();
+ResourceLoader resourceLoader = this.getResourceLoader(locale);
+if (resourceLoader == null) {
+resourceLoader = new ResourceLoader(this, locale);
+

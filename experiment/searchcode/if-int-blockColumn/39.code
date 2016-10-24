@@ -1,0 +1,6 @@
+private static Dimension getActualBlockSize(Dimension imageSize,
+int blockSize, int blockColumn, int blockRow) {
+int actualWidth = Math.min(imageSize.width - (blockColumn * blockSize),
+blockSize);
+int actualHeight = Math.min(imageSize.height - (blockRow * blockSize),
+

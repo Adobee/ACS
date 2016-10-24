@@ -1,0 +1,13 @@
+private int durability;
+private int type;
+private Item item;
+
+public Brick(int imageId, int type, int durability) {
+// Brick with durability of 4 will be unable to destroy
+if (durability <= 3) {
+durability--;
+}
+
+// Refresh image
+if (durability > 0) {
+

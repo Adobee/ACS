@@ -1,0 +1,8 @@
+public boolean sameAs(Variable other) {
+if (!(other instanceof FieldVariable))
+return false;
+FieldVariable otherField = (FieldVariable) other;
+if (isStatic() != otherField.isStatic())
+return false;
+return (ref == null || ref.equals(otherField.ref))
+

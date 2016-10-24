@@ -1,0 +1,7 @@
+public static String convert(String s){
+int first_sharp_index;
+while((first_sharp_index=s.indexOf(&#39;#&#39;))!=-1){
+int begin_index=first_sharp_index;
+int end_index=s.indexOf(&#39;\n&#39;, begin_index);
+String source=s.substring(begin_index, end_index);
+

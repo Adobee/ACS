@@ -1,0 +1,13 @@
+package android.support.v4.graphics.drawable;
+
+import android.graphics.drawable.Drawable;
+
+class DrawableCompatHoneycomb
+public static Drawable wrapForTinting(Drawable paramDrawable)
+{
+if (!(paramDrawable instanceof DrawableWrapperHoneycomb))
+paramDrawable = new DrawableWrapperHoneycomb(paramDrawable);
+return paramDrawable;
+}
+}
+

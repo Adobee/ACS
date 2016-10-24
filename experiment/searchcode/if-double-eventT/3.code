@@ -1,0 +1,7 @@
+/* 185:294 */     double currentT = interpolator.getGlobalCurrentTime();
+/* 186:297 */     if (!this.statesInitialized)
+/* 211:    */
+/* 212:    */
+/* 213:330 */       double eventT = currentEvent.getEventTime();
+/* 214:331 */       interpolator.setSoftPreviousTime(previousT);
+

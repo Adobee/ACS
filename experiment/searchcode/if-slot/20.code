@@ -1,0 +1,8 @@
+for (ClothingSlot slot : article.getSlots()) {
+if (slot.ordinal() < topSlot.ordinal()) {
+topSlot = slot;
+public int compare(Clothing a, Clothing b) {
+ClothingSlot aSlot = getTopSlot(a);
+ClothingSlot bSlot = getTopSlot(b);
+if (aSlot == bSlot) {
+

@@ -1,0 +1,7 @@
+} else if (type.isPrimitive() &amp;&amp; ((Number) value).doubleValue() == 0) {
+return false;
+} else if(!type.isPrimitive() &amp;&amp; value == null) {
+List<DBColumn> toReturn = new ArrayList<>();
+for(DBColumn c : QueryBuilder.tables.get(table)) {
+if(columns.contains(c.name())) toReturn.add(c);
+

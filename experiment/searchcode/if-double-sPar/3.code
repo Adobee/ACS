@@ -1,0 +1,11 @@
+foreldreSpar = _init_foreldreSpar();
+
+}
+
+private boolean operator_equals(final double n1, final double n2) {
+boolean _lessEqualsThan = (_minus <= n2);
+if (!_lessEqualsThan) {
+_and = false;
+} else {
+double _plus = (n1 + epsilon);
+

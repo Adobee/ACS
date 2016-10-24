@@ -1,0 +1,11 @@
+System.out.print(&quot;The point : (&quot; + x + &quot;,&quot; + y + &quot;)&quot; + &quot; is in Quadrant &quot; + quadrant(x, y));
+
+}
+
+public static int quadrant(double x, double y) {
+int quadrantNum = 0;
+if (x > 0 &amp;&amp; y > 0){
+quadrantNum = 1;
+}else if (x < 0 &amp;&amp; y > 0) {
+quadrantNum = 2;
+

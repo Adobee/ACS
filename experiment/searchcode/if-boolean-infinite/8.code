@@ -1,0 +1,11 @@
+private final int value;
+
+private final boolean infinite;
+
+private BorderValue(int value, boolean infinite)
+{
+if (value == 4 &amp;&amp; !infinite) {
+throw new RuntimeException(&quot;Fail&quot;);
+}
+this.value = value;
+

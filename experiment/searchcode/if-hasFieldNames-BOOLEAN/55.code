@@ -1,0 +1,10 @@
+private void writeTupleType(Type tupleType) throws IOException{
+boolean hasFieldNames = tupleType.hasFieldNames();
+
+if(hasFieldNames){
+private void writeMapType(Type mapType) throws IOException{
+boolean hasFieldNames = mapType.hasFieldNames();
+
+if(hasFieldNames){
+out.write(MAP_TYPE_HEADER | HAS_FIELD_NAMES);
+

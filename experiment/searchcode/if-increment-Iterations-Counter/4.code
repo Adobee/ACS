@@ -1,0 +1,12 @@
+public static void increment() {
+long tempValue = counter;
+tempValue = tempValue + 1;
+counter = tempValue;
+tempValue = tempValue - 1;
+counter = tempValue;
+}
+
+public class IncrementThread extends Thread {
+public void run() {
+for (long i = 0; i < iterations; i++) {
+

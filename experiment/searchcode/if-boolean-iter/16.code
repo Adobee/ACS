@@ -1,0 +1,16 @@
+this.iter = iter;
+if (iter.hasNext()) {
+top = iter.next();
+}
+}
+
+public boolean hasNext() {
+return top != null ;
+}
+
+@Override
+public T next() {
+T item = top;
+if (iter.hasNext()) {
+top = iter.next();
+

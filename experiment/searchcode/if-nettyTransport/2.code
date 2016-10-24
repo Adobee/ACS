@@ -1,0 +1,9 @@
+import org.elasticsearch.transport.TransportRequestOptions;
+import org.elasticsearch.transport.netty.NettyTransport;
+
+import com.floragunn.searchguard.service.SearchGuardService;
+public class SearchGuardNettyTransport extends NettyTransport {
+
+@Inject
+public SearchGuardNettyTransport(final Settings settings, final ThreadPool threadPool, final NetworkService networkService,
+

@@ -1,0 +1,13 @@
+we ignore anything in between &quot;#|&quot; and &quot;|#
+
+*/
+
+if (!br.ready()) return null;
+
+String currentToken = null;
+do {
+if (c==&#39;;&#39;) {
+// skip the whole line:
+br.readLine();
+if (currentToken!=null) return currentToken;
+

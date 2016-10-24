@@ -1,0 +1,11 @@
+r1 = r1.e;
+r1 = r1.Q;
+if (r0 != r1) goto L_0x007b;
+L_0x000f:
+r0 = r4.b;
+r2 = r4.a;
+r0.<init>(r1, r2);
+r1 = r4.b;
+r1 = r1.a;
+if (r1 == 0) goto L_0x006c;
+

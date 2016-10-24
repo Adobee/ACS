@@ -1,0 +1,12 @@
+public void incPointCount(String seedId) {
+template.incr(seedId+&quot;.point&quot;);
+}
+
+public void incPointCount(String seedId, long count) {
+template.incrBy(seedId+&quot;.point&quot;, count);
+template.incrBy(seedId+&quot;.link&quot;, count);
+}
+
+public long getPointCount(String seedId) {
+if (!template.exists(seedId + &quot;.point&quot;)) {
+

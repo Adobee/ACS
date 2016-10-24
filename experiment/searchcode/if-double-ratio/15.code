@@ -1,0 +1,11 @@
+package season2;
+
+
+public  class Job implements Comparable<Job>{
+double weight,length,ratio;
+
+public Job(double d, double e){
+this.length = e;
+this.weight = d;
+this.ratio = d - e;
+

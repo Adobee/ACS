@@ -1,0 +1,9 @@
+public class Solution1 {
+
+public int maximalSquare(char[][] matrix) {
+if(matrix==null ||matrix.length==0){
+for(int j=0; j<col; j++){
+if(matrix[i][j]==&#39;1&#39;){
+int step=step(matrix, i, j, row, col);
+int area=step*step;
+

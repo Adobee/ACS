@@ -1,0 +1,13 @@
+public Weapon weapon;
+
+public void move(double xa, double ya){
+if(xa != 0 &amp;&amp; ya != 0){
+move(0, ya);
+move(xa, 0);
+return;
+}
+
+if(ya > 0) dir = 2;
+if(ya < 0) dir = 0;
+if(xa > 0) dir = 1;
+

@@ -1,0 +1,8 @@
+public static String clock(long millis) {
+millis/=1000;
+int millisUntilFinished = (int) millis;
+StringBuffer timeBuffer = new StringBuffer();
+- ((millisUntilFinished / 3600) * 3600);
+String minutes = String.valueOf(millisUntilFinished / 60);
+if (minutes.length() == 2) {
+

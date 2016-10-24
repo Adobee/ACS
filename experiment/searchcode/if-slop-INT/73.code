@@ -1,0 +1,9 @@
+public DefaultPhraseSlopAttributeImpl() {}
+
+public void setDefaultPhraseSlop(int defaultPhraseSlop) {
+this.config.set(ConfigurationKeys.PHRASE_SLOP, defaultPhraseSlop);
+}
+
+public int getDefaultPhraseSlop() {
+return config.get(ConfigurationKeys.PHRASE_SLOP, 0);
+

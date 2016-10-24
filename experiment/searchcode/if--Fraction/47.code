@@ -1,0 +1,8 @@
+public final int denominator;
+
+public Fraction(final int numerator, final int denominator) {
+if(denominator == 0 ) throw new RuntimeException(&quot;undefined fraction&quot;);
+public Fraction dividedBy(Fraction fraction) {
+if(fraction.equals(ZERO)) throw new ArithmeticException(&quot;DivideByZero&quot;);
+return reduce(new Fraction(numerator * fraction.denominator,
+

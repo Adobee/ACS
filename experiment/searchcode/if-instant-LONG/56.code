@@ -1,0 +1,9 @@
+import org.yamcs.ui.archivebrowser.ArchivePanel.IndexChunkSpec;
+import org.yamcs.utils.TimeEncoding;
+
+public class ZoomSpec {
+long startInstant, stopInstant; //the start and stop of all the visible data (i.e. scrolling to the left and right)
+long selectionStart, selectionStop; //optional start/stop of the selection before next zoom in (to restore on zoomout)
+long viewLocation;
+long viewTimeWindow; //the total time visible at one time(i.e. if the scroll is not used)
+

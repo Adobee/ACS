@@ -1,0 +1,7 @@
+public final class CustomAllocator implements Allocator{
+private static final int INITIAL_RECYCLED_ALLOCATION_CAPACITY = 100;
+
+private final int individualAllocationSize;
+int targetRecycledAllocationCount = Math.max(0, targetAllocationCount - allocatedCount);
+if (targetRecycledAllocationCount < recycledCount) {
+

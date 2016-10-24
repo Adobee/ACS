@@ -1,0 +1,11 @@
+public class StringStuff{
+public String stringSplosion(String str) {
+String s=&quot;&quot;;
+int l;
+for(l=0;l<=str.length();l++){
+public String stringX(String str) {
+String s=&quot;&quot;;
+int x;
+for (x=0;x<str.length();x++){
+if (!(x>0 &amp;&amp; x<(str.length()-1) &amp;&amp; str.substring(x,x+1).equals(&quot;x&quot;))){
+

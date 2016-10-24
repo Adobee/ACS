@@ -1,0 +1,9 @@
+public boolean isBalanced(TreeNode root) {
+// Start typing your Java solution below
+// DO NOT write main() function
+if (root == null) return true;
+if (!isBalanced(root.left)) {
+return false;
+}
+if (!isBalanced(root.right)) {
+

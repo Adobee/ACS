@@ -1,0 +1,5 @@
+private boolean isOkayDuplicate(BindingImpl<?> original, BindingImpl<?> binding, State state) {
+if (original instanceof ExposedBindingImpl) {
+original = (BindingImpl<?>) state.getExplicitBindingsThisLevel().get(binding.getKey());
+// If no original at this level, the original was on a parent, and we don&#39;t
+

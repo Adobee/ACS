@@ -1,0 +1,12 @@
+public int[][] blurFilter(int[][] image) {
+
+int dim = (int) Math.ceil(sigma * 6);
+if (dim % 2 == 0) {
+dim += 1;
+}
+
+int matrix[][] = new int[image.length][image[0].length];
+
+double[][] gauss = new double[dim][dim];
+gauss = Utils.getGaussian(sigma, dim);
+

@@ -1,0 +1,15 @@
+double step = 0.1;
+double period = Math.PI*2;
+double t = 0;
+double omegaMax=314000;
+double omega=0;
+* Calculate the value of the function, with y the reactive and x the resistive
+*
+*/
+
+while (omega <= omegaMax){
+
+if(omega>125){
+setA(Cm,omega, Lm);
+double x =  resitive(Re, T, Rm, omega);
+

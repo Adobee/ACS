@@ -1,0 +1,11 @@
+private int mu = 6;
+private int lambda = 36;
+
+private int maxEvaluations = 18000;
+private MutationOperatorName mutationOperatorName = MutationOperatorName.ALL_KIND; // DEFAULT
+return this;
+}
+
+public Builder setMaxEvaluations(int maxEvaluations) {
+if (maxEvaluations != 0)
+

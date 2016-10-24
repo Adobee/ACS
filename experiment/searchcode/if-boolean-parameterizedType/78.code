@@ -1,0 +1,9 @@
+return parentClass.isAssignableFrom((Class<?>) testedType);
+} else if (testedType instanceof ParameterizedType) {
+return parentClass.isAssignableFrom((Class<?>) ((ParameterizedType) testedType).getRawType());
+throw new IllegalArgumentException(&quot;Parameters Type must be Class or ParameterizedType, unsupported type:&quot; + testedType);
+}
+
+/**
+* Check if testedType is ParameterizedType and it&#39;s parameter is assignable from innerClass;
+

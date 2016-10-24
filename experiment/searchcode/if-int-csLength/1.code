@@ -1,0 +1,9 @@
+coords[i][j] = coordsTable[1][i][j];
+}
+}
+} else if (type.equalsIgnoreCase(&quot;T&quot;)){
+coords = new int[5][3];
+for (int i = 0; i < otherCoords.length; i++) {
+for (int j = 0; j < coords.length; j++) {
+if (otherCoords[i][0] + otherBCoords[0] == coords[j][0] + baseCoords[0] &amp;&amp; otherCoords[i][1] + otherBCoords[1] == coords[j][1] + baseCoords[1] &amp;&amp; otherCoords[i][2] + otherBCoords[2] == coords[j][2] + baseCoords[2])
+

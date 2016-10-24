@@ -1,0 +1,8 @@
+public class Solution {
+public String convert(String s, int nRows) {
+if(nRows <= 1 || s.length() <= nRows) {
+StringBuilder sb = new StringBuilder();
+int unit = 2 * nRows - 2;
+for(int i = 0; i < nRows; i++) {
+for(int j = i; j < s.length(); j = j + unit) {
+

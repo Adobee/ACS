@@ -1,0 +1,15 @@
+if(sf==null){
+sf = new SolverFactory();
+}
+int degree = sf.polynomialDegree(params);
+
+if(degree < 2){
+int maxDegree = 0;
+for(int i=0;i<params.length;i++){
+maxDegree = params[i]!=0? i:maxDegree;
+}
+return maxDegree;
+}
+
+}
+

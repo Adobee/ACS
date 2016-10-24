@@ -1,0 +1,11 @@
+// This should get the distance to the closest point on the wire
+r.sub(pos, position_d);
+v = getDirection();
+rperp.sub(r, rpar);
+
+
+B.cross(rperp, v);
+if (r.length() == 0)
+return new Vector3d();
+else {
+

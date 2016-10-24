@@ -1,0 +1,7 @@
+* @author Daniel Felix Ferber
+*/
+public abstract class TypeCaller<ListenerType extends Bus.Listener> implements Bus.Caller {
+protected TypeCaller(Class<ListenerType> listenerType) {
+if (listenerType == null) {
+throw new IllegalArgumentException();
+

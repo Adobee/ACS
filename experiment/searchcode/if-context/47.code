@@ -1,0 +1,6 @@
+MessageContext messageContext = MessageContext.getCurrentMessageContext();
+if (messageContext != null) {
+ServiceContext serviceContext = messageContext.getServiceContext();
+if (serviceContext != null) {
+serviceContext.setProperty(name, obj);
+

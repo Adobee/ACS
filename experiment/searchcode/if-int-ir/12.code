@@ -1,0 +1,10 @@
+public Cell(IR child){
+this.child = child;
+}
+
+public static IR decellify(IR ir, int maxDepth){
+IR test = ir;
+for (int i = 0; i < maxDepth; i ++){
+if (test instanceof Cell){
+test = ((Cell)test).child;
+

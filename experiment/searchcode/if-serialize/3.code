@@ -1,0 +1,8 @@
+return SerializeBaseFactoryHolder.serializeBaseFactory;
+}
+
+public SerializeBase getSerializeType(SerializeType serializeType) throws Exception {
+if (serializeType == SerializeType.SCFBinary) {
+return scfSerialize;
+}else if(serializeType== SerializeType.JAVABinary) {
+

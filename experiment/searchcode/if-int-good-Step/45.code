@@ -1,0 +1,11 @@
+public void init() {
+count = new int[Constants.GOOD_TYPE_COUNT];
+cost = new int[Constants.GOOD_TYPE_COUNT];
+space = Constants.ROOM_INIT;
+public void storeGoods(int id, int goodCount, int price) {
+count[id] += goodCount;
+cost[id] += goodCount*price;
+}
+
+public int sellGoods(int id, int number) {
+

@@ -1,0 +1,10 @@
+* specific to a document type, it can properly build the list
+* of role names.
+*
+*/
+@Override
+public List<KeyValue> getKeyValues() {
+Object form = getFormOrView();
+
+if (form instanceof PermissionsForm) {
+

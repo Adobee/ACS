@@ -1,0 +1,9 @@
+int masterNodes = clusterState.nodes().masterNodes().size();
+if (intValue > masterNodes) {
+public boolean hasEnoughMasterNodes(Iterable<DiscoveryNode> nodes) {
+if (minimumMasterNodes < 1) {
+return true;
+}
+int count = 0;
+for (DiscoveryNode node : nodes) {
+

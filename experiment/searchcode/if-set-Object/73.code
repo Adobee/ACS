@@ -1,0 +1,9 @@
+public static <T> ObjectContainer<T> fromObject(T object) {
+if (object == null)
+throw new NullPointerException(&quot;Parameter object is null&quot;);
+return new ObjectContainer<T>(object);
+}
+
+public void setObject(T object) {
+this.object = object;
+

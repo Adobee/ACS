@@ -1,0 +1,9 @@
+public class MasterPassword implements BasePassword {
+
+private String password;
+
+public void init(String password) throws EmptyStringException {
+public void setPassword(String password) throws EmptyStringException {
+if (password.length() == 0) {
+throw new EmptyStringException(&quot;Password field in MasterPassword object must not be empty string&quot;);
+

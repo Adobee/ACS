@@ -1,0 +1,10 @@
+private static final long EXPONENT_BITS_32 = 8;
+private static final long MANTISSA_MASK_32 = 0x007fffff;
+private static final long EXPONENT_MASK_32 = 0x7f800000;
+// Assemble the pieces.
+
+long result;
+
+if (signed) {
+result = (sign << SIGN_SHIFT_32) | (exponent << MANTISSA_BITS_32)
+

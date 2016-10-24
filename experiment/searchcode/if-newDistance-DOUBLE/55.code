@@ -1,0 +1,9 @@
+protected boolean hasNextVertex(int current) {
+if(current == getSource())
+return (!visited[current]) &amp;&amp; (current != getTarget());
+return super.hasNextVertex(current) &amp;&amp; (!pq.isEmpty());
+}
+
+@Override
+protected void updateValues(int currentVertex, int neighbourId, double newDistance) {
+

@@ -1,0 +1,9 @@
+ps.setString(1, adr.getstrada());
+ps.setInt(2,  adr.getnumar());
+ps.setString(3, adr.getjudet());
+int affectedRows = ps.executeUpdate();
+ps.setString(3, adr.getjudet());
+int affectedRows = ps.executeUpdate();
+closeConnection(conn);
+return affectedRows == 1;
+

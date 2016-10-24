@@ -1,0 +1,12 @@
+public class CloseableFilterIterator<T> implements CloseableIterator<T> {
+FilterIterator<T> filterIterator;
+boolean closeable;
+
+public CloseableFilterIterator(CloseableIterator<T> itr, Predicate<? super T> filter) {
+public CloseableFilterIterator(Iterator<T> itr, Predicate<? super T> filter) {
+filterIterator = new FilterIterator<T>(itr, filter);
+closeable = false;
+}
+
+public boolean hasNext() {
+

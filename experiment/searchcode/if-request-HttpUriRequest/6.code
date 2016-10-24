@@ -1,0 +1,12 @@
+package com.jvanier.android.sendtocar.common;
+
+import org.apache.http.client.methods.HttpUriRequest;
+private static void doAbort(HttpUriRequest... requests) {
+for(HttpUriRequest request : requests) {
+if(request != null) {
+request.abort();
+}
+}
+}
+}
+

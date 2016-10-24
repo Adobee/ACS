@@ -1,0 +1,13 @@
+return writable.get();
+}
+
+@Override
+public OutputStream getOutputStream() throws IOException {
+if (!writable.get()) {
+return outputStream;
+}
+
+@Override
+public boolean equals(Object obj) {
+return (obj == this ||
+

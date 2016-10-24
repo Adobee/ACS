@@ -1,0 +1,12 @@
+return Jsons.fromJson((CharSequence)value, toType);
+}
+if (value instanceof Reader) {
+return Jsons.fromJson((Reader)value, toType);
+}
+if (value instanceof InputStream) {
+return Jsons.fromJson((InputStream)value, Charsets.UTF_8, toType);
+}
+return value;
+}
+}
+

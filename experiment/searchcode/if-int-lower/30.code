@@ -1,0 +1,10 @@
+// INVARIANT: lower <= upper
+
+private volatile int lower = 0;
+private volatile int upper = 0;
+
+public void setLower(int i)
+{
+if (i > upper) {
+throw new IllegalArgumentException(
+

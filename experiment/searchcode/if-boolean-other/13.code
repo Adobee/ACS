@@ -1,0 +1,10 @@
+if (op.toString().equals(&quot;not&quot;))
+return BooleanValue.fromBoolean(!value);
+return super.applyOperator(op, otherValues);
+}
+if (otherValues.size() > 1)
+throw new FunctionNotFoundException(&quot;bool&#39;s &#39;and&#39; operator not defined with value &quot; + other);
+case &quot;or&quot;:
+if (other instanceof BooleanValue)
+return BooleanValue.fromBoolean(value || ((BooleanValue) other).value);
+

@@ -1,0 +1,11 @@
+public abstract class MultiValuedTranslater {
+
+int nVars = 0;
+
+List<IVecInt> clauses;
+
+List<WeightedClause> weightedClauses;
+for (IVecInt clause : clauses) {
+for (int i = 0; i < clause.size(); i++) {
+nVars = Math.max(nVars, Math.abs(clause.get(i)));
+

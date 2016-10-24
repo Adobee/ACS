@@ -1,0 +1,8 @@
+//	    curDir = thisDir;
+//	    cross = ConvexCross(dprev, dcur);
+//	    if ( cross > 0 ) { if ( angleSign == -1 ) return NotConvex;
+cross = ConvexCross(dprev, dcur);
+
+if ( cross > 0 ) {
+if ( angleSign == -1 ){
+

@@ -1,0 +1,9 @@
+public void insertAt(int index, E element){
+int realIndex = index - backIndex;
+if(realIndex >= 0){
+ensureFrontCapacity();
+public E get(int index){
+int realIndex = index - backIndex;
+if(realIndex >= 0){
+if(realIndex >= frontIndex) throw new ArrayIndexOutOfBoundsException(index+&quot; >= the the current size of the list (&quot;+size()+&quot;)&quot;);
+

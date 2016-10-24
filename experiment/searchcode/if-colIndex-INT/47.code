@@ -1,0 +1,11 @@
+public Armour(Cursor cursor) {
+int colIndex;
+colIndex = cursor.getColumnIndex(&quot;ArmourTypeId&quot;);
+if (colIndex != -1) {
+colIndex = cursor.getColumnIndex(&quot;Biological&quot;);
+if (colIndex != -1) {
+this.setBiological(cursor.getInt(colIndex) == 1);
+}
+}
+public int getArmourTypeId() {
+

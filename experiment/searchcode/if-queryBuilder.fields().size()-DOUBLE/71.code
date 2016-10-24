@@ -1,0 +1,7 @@
+queryBuilder.append(&quot;SELECT * FROM Document&quot;);
+if (whereClause != null) {
+queryBuilder.append(getQueryElement(model, whereClause, params));
+String sortClause = getSortClause(sortInfos);
+if (sortClause != null &amp;&amp; sortClause.length() > 0) {
+queryBuilder.append(&quot; &quot;);
+

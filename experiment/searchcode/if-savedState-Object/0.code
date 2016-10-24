@@ -1,0 +1,11 @@
+public class BundleService {
+private final Bundle data;
+public Bundle savedState;
+
+public BundleService(Bundle savedState, Bundle intentExtras) {
+this.savedState = savedState;
+if (this.savedState != null) {
+data.putAll(savedState);
+}
+if (intentExtras != null) {
+

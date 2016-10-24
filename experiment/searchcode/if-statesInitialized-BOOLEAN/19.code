@@ -1,0 +1,9 @@
+* @since 2.2
+*/
+protected void setStateInitialized(final boolean stateInitialized) {
+
+this.statesInitialized = stateInitialized;
+final double currentT = interpolator.getGlobalCurrentTime();
+// initialize the events states if needed
+if(!statesInitialized) {
+

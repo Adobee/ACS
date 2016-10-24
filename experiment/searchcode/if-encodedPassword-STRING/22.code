@@ -1,0 +1,7 @@
+md.update(unencodedPassword);
+byte[] encodedPassword = md.digest();
+StringBuffer buf = new StringBuffer();
+
+for (int i = 0; i < encodedPassword.length; i++) {
+if ((encodedPassword[i] &amp; 0xff) < 0x10) {
+

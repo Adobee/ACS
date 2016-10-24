@@ -1,0 +1,9 @@
+package cp120a.dia99.hw3;
+
+public class Rectangle extends Shape {
+
+private double ymin;
+public Rectangle(double xmin, double ymin, double xmax, double ymax) {
+this.ymin = ymin;
+this.ymax = ymax;
+

@@ -1,0 +1,8 @@
+snapshot = diskLruCache.get(getHashOf(key));
+if (snapshot == null) {
+return null;
+try {
+snapshot = diskLruCache.get(getHashOf(key));
+if (snapshot != null) {
+found = true;
+

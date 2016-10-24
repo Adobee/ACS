@@ -1,0 +1,13 @@
+if ((minX <= 0) &amp;&amp; (maxX >= 0)) {
+xAxisLoc = (int)(((double)getWidth())/(maxX - minX)*Math.abs(minX));
+}
+
+if (xAxisLoc != null) {
+g.drawLine(0, yAxisLoc, getWidth(), yAxisLoc);
+}
+
+Integer prevX = null;
+Integer prevY = null;
+
+for (Map.Entry<Double, Double> currF1 : function1.entrySet()) {
+

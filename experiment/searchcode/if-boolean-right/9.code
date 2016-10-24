@@ -1,0 +1,8 @@
+if(left == null || right == null)
+return false;
+if(left.val != right.val)
+return false;
+boolean left_val = check(left.left, right.right);
+boolean right_val = check(left.right, right.left);
+if(left_val  == false || right_val == false)
+

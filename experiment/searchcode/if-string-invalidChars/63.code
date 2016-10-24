@@ -1,0 +1,8 @@
+private String invalidChars = &quot;&quot;;
+/** Index when looped strategy is used. */
+private int loopIndex = 0;
+public Character nextInvalidLoop() {
+loopIndex++;
+if (loopIndex >= invalidChars.length()) {
+loopIndex = 0;
+

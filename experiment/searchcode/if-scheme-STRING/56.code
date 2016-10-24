@@ -1,0 +1,9 @@
+throws SchemeFactoryException {
+String stringURL = schemeURL.toString();
+
+if (stringURL.endsWith(&quot;xsd&quot;)) {
+return new XMLScheme(schemeURL);
+} else if (stringURL.endsWith(&quot;owl&quot;)) {
+try {
+return new OWLScheme(schemeURL);
+

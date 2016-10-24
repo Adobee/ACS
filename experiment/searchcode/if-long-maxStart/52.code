@@ -1,0 +1,13 @@
+* The maximum start duration in milliseconds.
+*
+* @serial
+*/
+private final long maxStart;
+/**
+* The minimum stop duration in milliseconds.
+long maxStart,
+long minStop,
+long maxStop)
+{
+if (minStart > maxStart || maxStart > minStop || minStop > maxStop ||
+

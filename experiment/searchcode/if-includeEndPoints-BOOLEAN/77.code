@@ -1,0 +1,7 @@
+public static boolean isPointWithinLineSegmentBounds(double x, double y, RectangularCoordinate a1, RectangularCoordinate a2, boolean includeEndPoints) {
+double minX = Math.min(a1.getDoubleX(), a2.getDoubleX());
+double maxY = Math.max(a1.getDoubleY(), a2.getDoubleY());
+
+boolean within = false;
+if (includeEndPoints) {
+

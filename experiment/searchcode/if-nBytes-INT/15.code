@@ -1,0 +1,8 @@
+public static byte[] toValidString(byte[] bytes) {
+byte[] nbytes = new byte[bytes.length];
+int wrote = 0;
+for(int i = 0; i < bytes.length; i++) {
+if(bytes[i] != 0) {
+nbytes[wrote] = bytes[i];
+wrote++;
+

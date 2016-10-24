@@ -1,0 +1,6 @@
+private int shardSize = SamplerAggregationBuilder.DEFAULT_SHARD_SAMPLE_SIZE;
+private int maxDocsPerValue = MAX_DOCS_PER_VALUE_DEFAULT;
+public DiversifiedAggregationBuilder shardSize(int shardSize) {
+if (shardSize < 0) {
+throw new IllegalArgumentException(
+

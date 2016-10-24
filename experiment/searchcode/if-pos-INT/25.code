@@ -1,0 +1,9 @@
+public static int[] sort(int[] arr){
+if(arr.length <= 1) return arr;
+
+for (int pos = 0; pos < arr.length; pos++) {
+int leastPos = pos + 1;
+
+for (int j = leastPos; j < arr.length; j++) {
+if (arr[j] < arr[leastPos]) {
+

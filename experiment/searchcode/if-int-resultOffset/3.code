@@ -1,0 +1,10 @@
+final int dataoffset,
+final double[] result,
+final int resultoffset,
+final int size
+) {
+int o1 = dataoffset;
+int o2 = resultoffset;
+//
+for (int i = 0; i < size; i++) {
+

@@ -1,0 +1,9 @@
+Debug.assertAlways(def.type() == null || def instanceof ReturnValueDef);
+def.type(org.objectfabric.TypeDef.parse(def.Type, _model));
+
+if (!isJavaIdentifier(def.Name))
+throw new IllegalArgumentException(&quot;Illegal iddentifier: \&quot;&quot; + def.Name + &quot;\&quot;.&quot;);
+
+if (def.type().isJavaEnum())
+getValueSetDef().registerEnum(def.type());
+

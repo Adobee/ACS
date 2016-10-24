@@ -1,0 +1,12 @@
+public ButtonClient client;
+public boolean state;
+
+public Button(ButtonClient client) {
+this.client = client;
+this.state = false;
+public void press() {
+boolean buttonOn = getState();
+if (buttonOn) {
+this.state = false;
+client.off();
+

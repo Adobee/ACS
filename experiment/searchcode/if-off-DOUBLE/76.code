@@ -1,0 +1,9 @@
+b[off + 0] = (byte) (val >>> 56);
+return off + 8;
+}
+
+protected static final int putDouble(final byte[] b, final int off, final double val)
+{
+final long j = Double.doubleToLongBits(val);
+b[off + 7] = (byte) (j >>> 0);
+

@@ -1,0 +1,12 @@
+public Collection<Series> getSeries() {
+return seriesList.values();
+}
+
+public boolean allPositiveValues() {
+for (Series series : seriesList.values()) {
+if (!series.allPositiveValues()) {
+return false;
+}
+}
+return true;
+

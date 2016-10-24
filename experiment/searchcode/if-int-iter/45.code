@@ -1,0 +1,13 @@
+int N = arr.length;
+int min;
+
+for (int iter = 0; iter < N; iter++)
+{
+min = iter;
+
+for (int inner = iter + 1; inner < N; inner++)
+if (menor(arr[inner], arr[iter]))
+min = inner;
+
+intercambiar(arr, iter, min);
+

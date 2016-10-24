@@ -1,0 +1,9 @@
+import java.util.*;
+
+public class CountsManager implements DataManager
+{
+HashMap<String, Double> data;
+public static CountsManager Instance(String countsFile) throws IOException
+{
+if(instance == null) instance = new CountsManager(countsFile);
+

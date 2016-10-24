@@ -1,0 +1,12 @@
+UP, DOWN, LEFT, RIGHT
+}
+
+protected Direction dir;
+
+protected void move(double xa, double ya){
+if(xa != 0 &amp;&amp; ya != 0){
+//urcovanie spritu uz robim v samotnych moboch, toto je tu na kkt...
+if (xa > 0) dir = Direction.RIGHT;
+if (xa < 0) dir = Direction.LEFT;
+if (ya > 0) dir = Direction.DOWN;
+

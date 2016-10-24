@@ -1,0 +1,11 @@
+import okhttp3.CookieJar;
+import okhttp3.HttpUrl;
+
+/**
+* Created by cj on 2016/2/25.
+*/
+public class CookiesManger implements CookieJar{
+private final PersistentCookieStore cookieStore = new PersistentCookieStore(UIUtils.getContext());
+@Override
+public void saveFromResponse(HttpUrl httpUrl, List<Cookie> list) {
+

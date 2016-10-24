@@ -1,0 +1,10 @@
+private IpFilter delegate;
+private ConcurrentMap<String, Boolean> cachedMap = new ConcurrentHashMap<String, Boolean>();
+this.delegate = delegate;
+}
+
+@Override
+public boolean accept(String ip) {
+if (cachedMap.containsKey(ip))
+return cachedMap.get(ip);
+

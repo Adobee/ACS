@@ -1,0 +1,6 @@
+public static void main(String[] args) throws IOException {
+BufferedReader ler = new BufferedReader(new InputStreamReader(System.in));
+double a,b,c,R1,R2;
+R2 = (-b - Math.sqrt(delta)) / (2 * a);
+if(Double.isInfinite(R1) || Double.isInfinite(R2) || Double.isNaN(R1) || Double.isNaN(R2)){
+

@@ -1,0 +1,11 @@
+BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(filename)));
+// write header
+int rowdimension = image.numrows;
+int columndimension = image.numcolumns;
+for(r = 0; r < blurLen; r++)
+{
+int newColumn = r + column;
+if(newColumn >= columndimension)
+break;
+avgRed = avgRed +  image.getRed()[row][newColumn];
+

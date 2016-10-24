@@ -1,0 +1,7 @@
+final double[] z = concatenateSamples(x, y);
+final double[] ranks = naturalRanking.rank(z);
+double sumRankX = 0;
+* e.g. x, n1 is the number of observations in sample 1.
+*/
+final double U1 = sumRankX - ((long)x.length * (x.length + 1)) / 2;
+

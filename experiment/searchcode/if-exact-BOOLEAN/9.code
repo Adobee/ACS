@@ -1,0 +1,10 @@
+public class FromRestriction implements Restriction {
+
+String from;
+boolean exactMatch;
+
+public FromRestriction(String pattern, boolean exactMatch) {
+public boolean validateRestriction(MimeInfoSimplified data) {
+if (exactMatch) {
+if (data.getFrom().toLowerCase().equals(from)) {
+

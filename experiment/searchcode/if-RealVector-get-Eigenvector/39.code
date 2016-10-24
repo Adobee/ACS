@@ -1,0 +1,10 @@
+while(real < .99999999){
+i++;
+real = eigen.getRealEigenvalue(i);
+}
+axis = eigen.getEigenvector(i);
+
+RealVector v;
+if(axis.getEntry(2) < .98)
+v = Funcs.crossProduct(axis, new ArrayRealVector(new double[] {0, 0, 1}));
+

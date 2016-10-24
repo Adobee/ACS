@@ -1,0 +1,5 @@
+double prevY = y;
+double nextX = prevX + (-calcFirstFunc(x,y)*calcSecondDerY(x,y) + calcSecondFunc(x,y)*calcFirstDerY(x,y))
+/ determinant(x,y);
+double nextY = prevY + (-calcFirstDerX(x,y)*calcSecondFunc(x,y) + calcFirstFunc(x,y)*calcSecondDerX(x,y))
+

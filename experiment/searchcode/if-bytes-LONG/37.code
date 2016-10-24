@@ -1,0 +1,9 @@
+public static byte[] getBytes(long data) {
+byte[] bytes = new byte[8];
+bytes[0] = (byte) (data &amp; 0xff);
+return getBytes(intBits);
+}
+
+public static byte[] getBytes(double data) {
+long intBits = Double.doubleToLongBits(data);
+

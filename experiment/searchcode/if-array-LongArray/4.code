@@ -1,0 +1,14 @@
+* Array of primitive long which has growing capability. Useful for large arrays of arrays.
+*
+* @author Felipe Albrecht
+*/
+public class LongArray {
+
+private static long[] EMPTY_ARRAY = new long[0];
+* Constructor that gives the block size.
+*/
+public LongArray() {
+this.finalArray = null;
+this.actualBlock = null;
+this.actualBockPos = 0;
+

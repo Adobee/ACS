@@ -1,0 +1,10 @@
+import org.eclipse.jdt.debug.core.IJavaStackFrame;
+
+public class IfStepStatement extends StepStatement {
+
+private boolean hasThen = false;
+boolean evaluated = expression.evaluateForTruth(stackframe);
+step.value = new BooleanValue(evaluated);
+
+if (evaluated) {
+

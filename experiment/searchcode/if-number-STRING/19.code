@@ -1,0 +1,13 @@
+@Override
+public Double fromString (String string)
+{
+Double number;
+
+try {
+number = new Double(string);
+
+if (!check(number))
+number = null;
+
+} catch (NumberFormatException error) {
+

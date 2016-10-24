@@ -1,0 +1,14 @@
+import com.codahale.metrics.Metric;
+import com.codahale.metrics.MetricFilter;
+
+public class AndMetricFilter implements MetricFilter {
+for (MetricFilter metricFilter : metricFilters) {
+if (metricFilter != null &amp;&amp; !metricFilter.matches(name, metric)) {
+return false;
+}
+}
+return true;
+}
+
+}
+

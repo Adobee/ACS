@@ -1,0 +1,14 @@
+import java.util.List;
+
+import com.linkedin.thirdeye.api.MetricSpec;
+
+/**
+*
+*/
+public class MetricSpecUtils {
+
+public static MetricSpec findMetricSpec(String metricName, List<MetricSpec> metricSpecs) {
+for (MetricSpec metricSpec : metricSpecs) {
+if (metricName.equals(metricSpec.getName())) {
+return metricSpec;
+

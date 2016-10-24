@@ -1,0 +1,10 @@
+for(int i = 0; i < pruningIndex; i++)
+{
+if(unresponsiveNodes.get(i).contains(addr))
+unresponsiveNodes.get(i).remove(addr);
+if(unresponsiveNodes.get(j).contains(currentUnresponsiveNodes.get(i)))
+{
+unresponsiveNodes.get(j).remove(currentUnresponsiveNodes.get(i));
+
+if(j == pruningIndex - 1)
+

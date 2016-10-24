@@ -1,0 +1,10 @@
+public class ChiSquare implements Test {
+double[] numbers;
+public static HashMap<Integer, Pair<Double, Double>> chiTable;
+
+ChiSquare(double[] numbers) {
+public static boolean test(int[] c, double[] p, int vertexOfFreedom) {
+double chiSquare = 0;
+int n = 0;
+for (int i : c) {
+

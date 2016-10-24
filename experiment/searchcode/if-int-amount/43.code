@@ -1,0 +1,16 @@
+public class DollarAmount implements Comparable<DollarAmount>{
+private int amount;
+
+public DollarAmount(int amt){
+this.amount = amt;
+}
+
+public DollarAmount(DollarAmount that){
+public boolean substract(DollarAmount amt){
+this.amount = this.amount - amt.amount;
+return true;
+}
+
+@Override
+public int compareTo(DollarAmount that) {
+

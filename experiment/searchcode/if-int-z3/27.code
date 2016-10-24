@@ -1,0 +1,15 @@
+Z3_GOAL_PRECISE (0),
+Z3_GOAL_UNDER_OVER (3),
+Z3_GOAL_OVER (2);
+
+private final int intValue;
+
+Z3_goal_prec(int v) {
+for (Z3_goal_prec k: values())
+if (k.intValue == v) return k;
+return values()[0];
+}
+
+public final int toInt() { return this.intValue; }
+}
+

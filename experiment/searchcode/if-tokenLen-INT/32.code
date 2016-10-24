@@ -1,0 +1,9 @@
+public void setData(StringTokenizer st) {
+int tokenLen = st.countTokens();
+
+//System.out.println(&quot;token len : &quot; + tokenLen);
+
+for(int i=0; i<tokenLen; i++) {
+switch(i) {
+case 0 : setName(st.nextToken()); break;
+

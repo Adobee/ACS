@@ -1,0 +1,8 @@
+private BindingSupport<T> getBindingSupport() {
+if (bindingSupport == null) {
+bindingSupport = new BindingSupport<T>() {
+ObservableValue<?>... dependencies) {
+checkIfBound();
+BindingSupport<T> bindingSupport = getBindingSupport();
+bindingSupport.bindReadOnly(other, dependencies);
+

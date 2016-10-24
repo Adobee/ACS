@@ -1,0 +1,9 @@
+public void Bounce(int edge) {
+MoveIntoBounds();
+
+// Normalize heading to [0, 360)
+double normalizedAngle = userHeading % 360;
+// The following step is necessary because Java&#39;s modulus operation yields a
+// negative number if the dividend is negative and the divisor is positive.
+if (normalizedAngle < 0) {
+

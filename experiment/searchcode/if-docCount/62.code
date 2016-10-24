@@ -1,0 +1,11 @@
+/** Amount of documents in the collection. */
+private Double docCount;
+
+/**
+* {@inheritDoc}
+*/
+@Override
+public double weight(SourceDoc docToWeight, Term term) {
+if (docCount == null) {
+GlobalStat docCountStat = statDao.findByKey(GlobalStat.KEY_ALL_DOCS_COUNT);
+

@@ -1,0 +1,8 @@
+* @return column with the most negative coefficient
+*/
+private Integer getPivotColumn(SimplexTableau tableau) {
+* @return whether the model has been solved
+*/
+public boolean isOptimal(final SimplexTableau tableau) {
+if (tableau.getNumArtificialVariables() > 0) {
+

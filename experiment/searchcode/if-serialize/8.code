@@ -1,0 +1,11 @@
+public static <T> byte[] serialize(T obj) {
+if(serializeStrategy == null){
+throw new NullPointerException();
+}
+return serializeStrategy.serialize(obj);
+public static <T> T deserialize(byte[] bytes, Class<?> clazz) throws Exception {
+if(serializeStrategy == null){
+throw new NullPointerException();
+}
+return serializeStrategy.deserialize(bytes,clazz);
+

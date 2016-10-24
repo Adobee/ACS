@@ -1,0 +1,6 @@
+if (v.length == 0) {
+if ((Boolean) getTree(false).getAttribute()) {
+setSize(Double.POSITIVE_INFINITY);
+ComparableSegment       selectedSegment  = null;
+double                  selectedDistance = Double.POSITIVE_INFINITY;
+

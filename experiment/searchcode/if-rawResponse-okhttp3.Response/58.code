@@ -1,0 +1,7 @@
+requestBuilder.addHeader(&quot;Content-Type&quot;, resourceMapping.getMediaType());
+requestBuilder.method(resourceMapping.getHttpMethod(), null);
+Response rawResponse = makeCall(requestBuilder);
+byte[] bytes = rawResponse.body().bytes();
+if (bytes.length > 0) {
+Res response = (Res) mapper.readValue(bytes, resourceMapping.getResponseClass());
+

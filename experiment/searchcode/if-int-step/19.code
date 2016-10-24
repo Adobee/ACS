@@ -1,0 +1,9 @@
+public class Solution {
+public int climbStairs(int n) {
+if(n<=2) return n;
+
+int step_n1 = 1;
+int step_n2 = 2;
+
+for(int i=3; i<=n; i++){
+

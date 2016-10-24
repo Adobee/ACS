@@ -1,0 +1,9 @@
+public class ThresholdProcessor extends PrecisProcessor {
+
+private class ThresholdContainer {
+public double threshold = Double.MAX_VALUE;
+public double value = 1.0;
+
+public String toString() {
+return &quot;threshold distance = &quot; + threshold + &quot; value = &quot; + value;
+

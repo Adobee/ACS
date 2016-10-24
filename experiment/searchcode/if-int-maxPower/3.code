@@ -1,0 +1,10 @@
+
+public class BinaryProcessor {
+private int query;
+private int[] binaryArray;
+int maxPower;
+int twoPower = 0;
+for (int i = maxPower - 1; i >= 0; i--) {
+twoPower = (int) Math.pow(2,i);
+if(query - twoPower >= 0){
+

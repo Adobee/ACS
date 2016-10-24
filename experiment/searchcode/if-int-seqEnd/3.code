@@ -1,0 +1,9 @@
+public static int seqStart = 0;
+public static int seqEnd = -1;
+
+/**
+* contiguous subsequence sum algorithm.
+for( int i = 0, j = 0; j < a.length; j++ ) {
+thisSum += a[ j ];
+if( thisSum > maxSum ) {
+

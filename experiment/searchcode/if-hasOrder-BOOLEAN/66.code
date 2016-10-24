@@ -1,0 +1,14 @@
+public OrderMatcher(Order order) {
+this.order = order;
+}
+
+@Override
+public boolean matches(Object argument) {
+return msg.hasOrder() &amp;&amp; matchesOrder(msg.getOrder());
+}
+
+return false;
+}
+
+private boolean matchesOrder(Order otherOrder) {
+

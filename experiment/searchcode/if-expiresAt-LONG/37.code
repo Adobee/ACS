@@ -1,0 +1,8 @@
+private static final AtomicLong sequence = new AtomicLong(0);
+private final long sequenceNumber;
+private final long expiresAt;
+private final T data;
+
+public DelayedWarper(T data, long timeout, TimeUnit timeUnit) {
+this.expiresAt = System.currentTimeMillis()
+

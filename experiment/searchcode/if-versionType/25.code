@@ -1,0 +1,8 @@
+assertTrue(VersionType.FORCE.isVersionConflictForWrites(10, Versions.MATCH_ANY));
+
+// if we didn&#39;t find a version (but the index does support it), we always accept
+assertThat(VersionType.FORCE.updateVersion(11, 10), equalTo(10l));
+
+// Old indexing code
+//        if (index.versionType() == VersionType.INTERNAL) { // internal version type
+

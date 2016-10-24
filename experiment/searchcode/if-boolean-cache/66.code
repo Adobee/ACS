@@ -1,0 +1,6 @@
+public boolean isMatch(String s, String p) {
+if (p == null || p.length() == 0) {
+if(s.length()>300 &amp;&amp; p.charAt(0)==&#39;*&#39; &amp;&amp; p.charAt(p.length()-1)==&#39;*&#39;)
+return false;
+boolean[] cache = new boolean[s.length() + 1];
+

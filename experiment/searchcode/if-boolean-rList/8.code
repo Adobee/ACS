@@ -1,0 +1,11 @@
+public class MasterBlacksmith extends Power implements Listener {
+
+private Map<Material, Material> rList;
+
+@Override
+public boolean onEnable() {
+items[0] = inv.getItem(2);
+items[1] = inv.getItem(3);
+items[2] = inv.getItem(4);
+if (rList.containsKey(base.getType())) {
+

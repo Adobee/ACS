@@ -1,0 +1,7 @@
+float p = (p4.x - p3.x) * (p1.y - p3.y) - (p4.y - p3.y) * (p1.x - p3.x);
+u = p * inv_d;
+if (u < 0.0f /*|| u > 1.0f*/) // ray is infinitely long
+return false;
+
+float q = (p2.x - p1.x) * (p1.y - p3.y) - (p2.y - p1.y) * (p1.x - p3.x);
+

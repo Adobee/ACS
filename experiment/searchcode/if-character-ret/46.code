@@ -1,0 +1,8 @@
+// Start typing your Java solution below
+// DO NOT write main() function
+Stack<Character> pStack = new Stack<Character>();
+boolean ret = true;
+for(char c:s.toCharArray())
+{
+if(c==&#39;(&#39;||c==&#39;{&#39;||c==&#39;[&#39;)
+

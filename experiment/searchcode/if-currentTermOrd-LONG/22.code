@@ -1,0 +1,8 @@
+termDocFreqs = null;
+}
+if (needTotalTermFreq) {
+termsTotalFreqs = bigArrays.newLongArray(INITIAL_NUM_TERM_FREQS_CACHED, false);
+//Check cache
+long currentTermOrd = cachedTermOrds.add(text);
+if (currentTermOrd < 0) { // already seen, initialize instance data with the cached frequencies
+

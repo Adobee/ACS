@@ -1,0 +1,11 @@
+public static boolean checkValidity(int[][] matrix, int n) {
+boolean ans = false;
+int row=0;
+int col=0;
+
+// Rows
+if (matrix[0][0] != 0)
+for (row=0; row<n; row++) {
+for (col=1; col<n; col++) {
+if(matrix[row][col] != matrix[row][col-1]) {
+

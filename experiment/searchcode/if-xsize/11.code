@@ -1,0 +1,11 @@
+import version2.prototype.util.GdalUtils;
+
+public class ImageArray {
+private double [] array;
+private int xSize;
+GdalUtils.register();
+
+synchronized (GdalUtils.lockObject) {
+xSize=band.getXSize();
+ySize=band.getYSize();
+

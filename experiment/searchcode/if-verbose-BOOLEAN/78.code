@@ -1,0 +1,15 @@
+package com.jglue;
+
+public class JGlueFlags {
+
+public static boolean verbose = false;
+
+public static void init(String[] args) {
+for (String s : args) {
+if (s.equalsIgnoreCase(&quot;--jglueenableverbose&quot;)) {
+verbose = true;
+}
+}
+}
+}
+

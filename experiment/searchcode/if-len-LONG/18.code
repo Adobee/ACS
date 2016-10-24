@@ -1,0 +1,10 @@
+long w = input.nextLong(), m = input.nextLong(), k = input.nextLong();
+w /= k;
+int len = (m+&quot;&quot;).length();
+long res = 0;
+long allowed = getTenPow(len) - m;
+while(true)
+{
+long canMake = w/len;
+long make = Math.min(allowed, canMake);
+

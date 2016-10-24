@@ -1,0 +1,5 @@
+public Phenotype mutation(Phenotype phenotype) {
+if (RandomNumber.random.nextDouble() < swapProbability) {
+if (RandomNumber.random.nextDouble() < 0.5)
+singlePointMutation.swap(phenotype.getList(), 0, 1 + Math.abs(RandomNumber.random.nextInt() % (phenotype.getList().size() - 1)));
+

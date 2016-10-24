@@ -1,0 +1,10 @@
+dxNorm = FastMath.sqrt(dxNorm);
+double fp = dxNorm - delta;
+if (fp <= 0.1 * delta) {
+lmPar = 0;
+dxNorm = FastMath.sqrt(dxNorm);
+double previousFP = fp;
+fp = dxNorm - delta;
+
+// if the function is small enough, accept the current value
+

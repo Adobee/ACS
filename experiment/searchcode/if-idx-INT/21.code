@@ -1,0 +1,8 @@
+for (int i = 0 ; i < nums.length ; i ++){
+nums[i] --;
+}
+int idx = 0;
+while (idx < nums.length){
+if (nums[idx] >= nums.length || nums[idx] < 0){
+idx ++;
+

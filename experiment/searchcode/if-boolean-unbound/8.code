@@ -1,0 +1,10 @@
+class BoundProperty<R extends Record<R>, T> implements Property<R, T> {
+
+private final Property<R, T> unboundProperty;
+private final Record<R> boundTarget;
+
+public static <R extends Record<R>, T> Property<R, T> bind(Property<R, T> unboundProperty, Record<R> boundTarget) {
+public boolean equals(Object obj) {
+if (this == obj) { return true; }
+if (obj == null || !(obj instanceof BoundProperty)) { return false; }
+

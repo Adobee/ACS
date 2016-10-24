@@ -1,0 +1,10 @@
+private String _title;
+private List<String> _mediaFileURLs = new ArrayList<String>();
+private Boolean _randomMediaFile = false;
+firePropertyChange(&quot;mediaURLs&quot;, oldValue, _mediaFileURLs);
+}
+
+public String getMediaURL(){
+if (_randomMediaFile){
+Random rnd = new Random();
+

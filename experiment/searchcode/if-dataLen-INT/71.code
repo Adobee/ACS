@@ -1,0 +1,13 @@
+private static void displayCacheElementList(int cacheSize, String[] dataArr) {
+StringBuilder cache = new StringBuilder();
+String data;
+int dataLen;
+for (int i = 0; i < dataArr.length; i++) {
+dataLen = cache.length() - cacheSize;
+if(dataLen>0)
+{
+cache.delete(0, dataLen);
+}
+System.out.print(cache+&quot; &quot;);
+//			if(!(i==dataArr.length-2))
+

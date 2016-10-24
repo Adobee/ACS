@@ -1,0 +1,9 @@
+c = st2.pop();
+if (c == &#39;1&#39;) {
+if (go == true)
+ret = &#39;0&#39; + ret;
+} else {
+if (go == true) {
+ret = &#39;1&#39; + ret;
+go = false;
+

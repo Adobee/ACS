@@ -1,0 +1,8 @@
+private int lenEnvelope;
+private Wave orig;
+
+public Envelope(Wave orig, double lenSeconds, double lenEnvelopeSeconds) {
+public double getSample(int sampleNum) {
+if (sampleNum < lenEnvelope)
+return orig.getSample(sampleNum) * ((double) sampleNum)
+

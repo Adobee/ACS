@@ -1,0 +1,11 @@
+return this.wordsintitle;
+}
+
+@Override
+public double termFrequency() {
+if (this.termFrequency == 0.0) this.termFrequency = (((double) hitcount()) / ((double) (wordsintext() + wordsintitle() + 1)));
+int v;
+long w;
+double d;
+if (this.hitcount > (v = other.hitcount)) this.hitcount = v;
+

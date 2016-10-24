@@ -1,0 +1,11 @@
+public OperationBuilder begin(Operation oper) throws InvalidOperationException {
+if (IsBuilding)
+throw new InvalidOperationException();
+IsBuilding = true;
+
+return this;
+}
+
+public OperationBuilder end() throws InvalidOperationException {
+if (!IsBuilding)
+

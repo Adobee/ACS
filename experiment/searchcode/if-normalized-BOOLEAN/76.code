@@ -1,0 +1,9 @@
+public static String normalize(String path, boolean replaceBackSlash) {
+
+if (path == null) {
+return null;
+String normalized = path;
+
+if (replaceBackSlash &amp;&amp; normalized.indexOf(&#39;\\&#39;) >= 0)
+normalized = normalized.replace(&#39;\\&#39;, &#39;/&#39;);
+

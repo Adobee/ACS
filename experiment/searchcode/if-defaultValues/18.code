@@ -1,0 +1,6 @@
+public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+db.execSQL(&quot;DROP TABLE IF EXISTS&quot; + DefaultValues.TABLE_SAVEDWORKOUT);
+Cursor cursor = db.rawQuery(&quot;SELECT * FROM &quot; + DefaultValues.TABLE_SAVEDWORKOUT, null);
+
+if (cursor.moveToFirst()) {
+

@@ -1,0 +1,8 @@
+Build buildByBuildNumber = buildDao.findByBuildNumber(build.getBuildNumber());
+
+if (buildByBuildNumber != null) {
+buildByBuildNumber.setBranch(savedBranch);
+Build buildFromDB = buildDao.findByBuildNumber(build.getBuildNumber());
+
+if (buildFromDB != null) {
+

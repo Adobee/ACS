@@ -1,0 +1,9 @@
+public static List getCausalChain(Throwable throwable)
+{
+Preconditions.checkNotNull(throwable);
+ArrayList arraylist = new ArrayList(4);
+do
+{
+Throwable throwable1 = throwable.getCause();
+if (throwable1 != null)
+

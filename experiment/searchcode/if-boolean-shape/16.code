@@ -1,0 +1,13 @@
+int[][] sArray =  {{1,6},{1,5},{1,4},{0,4}};
+super.shapeArray = sArray;
+}
+
+public void rotate()
+{
+if(shapeArray[1][1] > 0 &amp;&amp; shapeArray[1][1] < 9)
+{
+switch(counter % 4)
+{
+case 0:
+if(!GameThread.occArray[shapeArray[0][0] + 1][shapeArray[0][1] - 1] &amp;&amp; !GameThread.occArray[shapeArray[2][0] - 1][shapeArray[2][1] + 1] &amp;&amp; !GameThread.occArray[shapeArray[3][0]][shapeArray[3][1] + 2])
+

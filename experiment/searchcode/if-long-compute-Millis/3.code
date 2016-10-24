@@ -1,0 +1,11 @@
+private static final int N = 93;
+
+public static long computeRecursively(int n) {
+if (n > 1)
+return computeRecursively(n - 2) + computeRecursively(n - 1);
+public static long computeRecursivelyWithLoop(int n) {
+if (n > 1) {
+long result = 1;
+do {
+result += computeRecursivelyWithLoop(n - 2);
+

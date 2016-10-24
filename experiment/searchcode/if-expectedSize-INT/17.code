@@ -1,0 +1,9 @@
+public class IncorrectResultSizeDataAccessException extends DataRetrievalFailureException {
+
+private static final long serialVersionUID = 936541065489949510L;
+
+private int expectedSize;
+* @param actualSize the actual result size (or -1 if unknown)
+*/
+public IncorrectResultSizeDataAccessException(int expectedSize, int actualSize) {
+

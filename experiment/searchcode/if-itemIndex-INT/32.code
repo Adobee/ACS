@@ -1,0 +1,10 @@
+private void bubbleUp(int itemIndex) {
+int parentIndex = getParentIndex(itemIndex);
+while (itemIndex > 0 &amp;&amp; !isInHeapCondition(itemIndex)) {
+parentIndex = getParentIndex(itemIndex);
+}
+}
+
+private int getChildOne(int itemIndex) {
+return 2 * itemIndex + 1;
+

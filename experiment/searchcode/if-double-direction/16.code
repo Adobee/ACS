@@ -1,0 +1,15 @@
+public class MovementDirectionComponent extends Component
+{
+private double direction = 0;
+
+
+private double rotationRate = Math.PI;
+
+
+public MovementDirectionComponent()
+{
+}
+
+
+public MovementDirectionComponent(double direction)
+

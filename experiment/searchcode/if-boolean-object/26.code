@@ -1,0 +1,8 @@
+public static final BooleanParser INSTANCE = new BooleanParser();
+
+@Override
+public Boolean parse(final JSONValue object)
+{
+if (object == null || object.isBoolean() == null) { return null; }
+return object.isBoolean().booleanValue();
+

@@ -1,0 +1,10 @@
+class CacheInvocationParameterImpl implements CacheInvocationParameter {
+
+private final Class<?> rawType;
+public CacheInvocationParameterImpl(Class<?> rawType, Object value, Set<Annotation> annotations, int position) {
+this.value = value;
+if (value == null) {
+this.rawType = rawType;
+} else {
+this.rawType = value.getClass();
+

@@ -1,0 +1,7 @@
+GradientPaintTransformer t = renderer.getGradientPaintTransformer();
+if (t != null &amp;&amp; itemPaint instanceof GradientPaint) {
+itemPaint = t.transform((GradientPaint) itemPaint, bar);
+// invisible so we shouldn&#39;t draw any shadow
+Paint itemPaint = renderer.getItemPaint(row, column);
+if (itemPaint instanceof Color) {
+

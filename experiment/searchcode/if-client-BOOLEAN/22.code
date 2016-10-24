@@ -1,0 +1,17 @@
+public Client addClient(Client client)
+{
+if(!this.queryKey(client.getKey()))
+{
+this.clientDaoImpl.save(client);
+}
+return client;
+return this.clientDaoImpl.queryClient(key);
+}
+
+public boolean queryKey(String key)
+{
+return this.clientDaoImpl.queryKey(key);
+}
+
+public boolean updateClient(Client client)
+

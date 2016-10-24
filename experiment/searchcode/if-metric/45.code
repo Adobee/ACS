@@ -1,0 +1,15 @@
+package model;
+
+import java.util.HashMap;
+
+public class Metric {
+public enum Type {
+double getMetric(Type type) {
+return metric.get(type);
+}
+
+void addMetric(Type type, double metric) {
+this.metric.putIfAbsent(type, metric);
+}
+}
+

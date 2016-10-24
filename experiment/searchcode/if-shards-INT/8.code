@@ -1,0 +1,13 @@
+private final List<ShardRouting> shards;
+
+/** The size. */
+private final int size;
+
+/** The index. */
+private final int index;
+public int sizeActive() {
+int count = 0;
+for (int i = 0; i < size; i++) {
+if (shards.get(i).active()) {
+count++;
+

@@ -1,0 +1,13 @@
+while (newCoupons<N) {
+couponCount++;
+int r = (int)(Math.random()*N);
+if (!coupons[r]) {
+System.out.println(&quot;Calculated &quot; + (double)couponCount/100);
+double Hn = 0.0;
+for (int i = 1; i<=N; i++) {
+Hn += 1.0/i;
+}
+System.out.println(&quot;Exact &quot; + N*Hn);
+}
+}
+

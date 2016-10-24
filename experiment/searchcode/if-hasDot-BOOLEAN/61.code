@@ -1,0 +1,8 @@
+if (t.length == 0 || t.length > 2)
+return false;
+boolean res = valid(t[0], false);
+if (t.length > 1)
+res = res &amp;&amp; valid(t[1], true);
+private boolean valid(String s, boolean hasDot) {
+if (s.length() > 0 &amp;&amp; (s.charAt(0) == &#39;+&#39; || s.charAt(0) == &#39;-&#39;)) //avoid &quot;1+&quot;, &quot;+&quot;, &quot;+.&quot;
+

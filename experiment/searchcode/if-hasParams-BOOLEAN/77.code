@@ -1,0 +1,8 @@
+private boolean hasParams = false;
+
+public PushMessageRequest(int method, String subUrl,
+@Override
+public String getUrl() {
+if (hasParams) {
+StringBuilder sb = new StringBuilder();
+

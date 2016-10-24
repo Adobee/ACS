@@ -1,0 +1,6 @@
+public <T extends Collection> Collection create(Class<T> rawType) {
+if (rawType.isAssignableFrom(ArrayList.class)) {
+return new ArrayList();
+} else if(rawType.isAssignableFrom(HashSet.class)) {
+return new HashSet();
+

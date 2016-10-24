@@ -1,0 +1,12 @@
+import com.mysema.query.types.expr.BooleanExpression;
+import com.mysema.query.types.path.BooleanPath;
+
+public class BooleanBuilderTest {
+
+private final BooleanExpression first = BooleanConstant.TRUE;
+private final BooleanExpression second = BooleanConstant.FALSE;
+
+@Test
+public void AndAnyOf() {
+BooleanBuilder builder = new BooleanBuilder();
+

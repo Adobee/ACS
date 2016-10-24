@@ -1,0 +1,8 @@
+public abstract boolean openLamp(int duration, boolean lock);
+public abstract boolean closeLamp(int duration);
+
+public boolean toggleLamp(int duration,boolean lock){
+if (LAMP_ON){
+LAMP_ON = false;
+return closeLamp(duration);
+

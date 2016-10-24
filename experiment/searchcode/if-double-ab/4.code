@@ -1,0 +1,11 @@
+import java.util.function.DoubleFunction;
+
+public class SimpsonIntegration {
+
+public static double integrate(DoubleFunction<Double> f, double a, double b) {
+double mb = simpsonIntegration(f, m, b);
+double ab = simpsonIntegration(f, a, b);
+if (Math.abs(am + mb - ab) < eps)
+return ab;
+return integrate(f, a, m) + integrate(f, m, b);
+

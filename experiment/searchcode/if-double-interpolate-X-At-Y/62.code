@@ -1,0 +1,10 @@
+*            the end
+* @return the interpolator
+*/
+public static final Interpolator<Double> interpolateNumber(final double a,
+return new JavascriptFunctionInterpolatorDecorator<Double>(
+interpolateNumber0(a, b)) {
+@Override
+public Double cast(final Value v) {
+return new Double(v.asDouble());
+

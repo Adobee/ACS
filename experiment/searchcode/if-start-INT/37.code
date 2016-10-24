@@ -1,0 +1,10 @@
+int [][] matrix = new int[n][n];
+int start = 0, end = n - 1, num = 1;
+while(start < end){
+for(int j = start; j < end; j++){
+matrix[start][j] = num;
+num++;
+}
+for(int i = start; i < end; i++){
+matrix[i][end] = num;
+

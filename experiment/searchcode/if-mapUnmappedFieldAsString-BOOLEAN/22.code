@@ -1,0 +1,11 @@
+private boolean mapUnmappedFieldAsString;
+
+private NestedScope nestedScope;
+
+private boolean isFilter;
+
+public QueryParseContext(Index index, IndexQueryParserService indexQueryParser) {
+if (allowUnmappedFields) {
+return fieldMapping;
+} else if (mapUnmappedFieldAsString){
+

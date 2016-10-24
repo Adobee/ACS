@@ -1,0 +1,18 @@
+public void simpleNoMsg()
+throws Exception
+{
+try
+{
+throw new Exception();
+}
+catch (Throwable ex)
+throw new Exception(&quot;FOO: tricky!&quot;);
+}
+catch (Throwable ex)
+{
+serialize(ex);
+}
+}
+
+@Test
+

@@ -1,0 +1,8 @@
+* on across test suites.
+*/
+private static TestCluster currentCluster;
+
+private static final double TRANSPORT_CLIENT_RATIO = transportClientRatio();
+public TestCluster buildAndPutCluster(Scope currentClusterScope, boolean createIfExists) throws IOException {
+TestCluster testCluster = clusters.get(this.getClass());
+

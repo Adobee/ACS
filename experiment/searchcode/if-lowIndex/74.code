@@ -1,0 +1,11 @@
+private static void mergeSort(EnhancedString[] array, EnhancedString[] temp, int lowIndex, int highIndex) {
+if (highIndex <= lowIndex) {
+return;
+}
+int midIndex = (lowIndex + highIndex) / 2;
+mergeSort(temp, array, lowIndex, midIndex);
+int j = midIndex + 1;
+for (int k = lowIndex; k <= highIndex; k++) {
+if (i > midIndex) {
+array[k] = temp[j++];
+

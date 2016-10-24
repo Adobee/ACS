@@ -1,0 +1,12 @@
+val = val >>> (63 - e % 64 + s % 64);
+} else {
+long val1 = B.get((int) (s / 64L)) << (s % 64);
+long val2 = B.get((int) (e / 64L)) >>> (63 - e % 64);
+val1 = val1 >>> (s % 64 - (e % 64 + 1));
+val = val1 | val2;
+}
+
+return val;
+}
+}
+

@@ -1,0 +1,9 @@
+public class IntervalTimePattern extends TimePattern {
+
+private final long interval;
+private long lastSpawn = 0;
+
+public IntervalTimePattern(long interval) {
+if (interval < 0) {
+throw new IllegalArgumentException();
+

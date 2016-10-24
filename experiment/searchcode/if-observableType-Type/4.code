@@ -1,0 +1,7 @@
+public class OSCTMessage extends SerialMessage {
+
+private Map<ObservableType, int[]> typeMap = new HashMap<ObservableType, int[]>();
+public String toString(boolean graphical, ObservableType type, int... axes) {
+if (graphical) {
+return stringRep(type, axes);
+

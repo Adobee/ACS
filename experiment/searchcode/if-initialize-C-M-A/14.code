@@ -1,0 +1,9 @@
+public static void Initialize (boolean autonomous) {
+Sensory.Initialize();
+////		Lucid.Initialize();
+if (autonomous) Autonomous.Initialize();
+else{
+Actuator.Initialize();
+Gyro.Initialize();
+Climb.Initialize();
+

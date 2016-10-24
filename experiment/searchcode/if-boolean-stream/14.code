@@ -1,0 +1,12 @@
+public StreamState<T> tail()
+{
+if (!firstStream.isEmpty())
+{
+return new ConcatenatedStreamState<T>(firstStream.tail(), secondStream);
+return secondStreamAsDefaultStream.getStreamState();
+}
+}
+
+@Override
+public boolean isEmpty()
+

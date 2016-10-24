@@ -1,0 +1,12 @@
+public class BFSHandler implements Handler{
+
+@Override
+public Object init(int sequence) {
+if(sequence == 0) return 0;
+else return Integer.MAX_VALUE;
+}
+
+@Override
+public Object compute(Object val, Object mVal) {
+int oldVal = (int)val;
+

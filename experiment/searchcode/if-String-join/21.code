@@ -1,0 +1,10 @@
+import com.querybuilder.query.QueryObject;
+
+public class JoinExpression implements Expression {
+
+public String parse(QueryObject queryObject) {
+StringBuilder sb = new StringBuilder();
+if (!joins.isEmpty()) {
+sb.append(&quot; &quot;);
+Iterator<Join> iterator = joins.iterator();
+

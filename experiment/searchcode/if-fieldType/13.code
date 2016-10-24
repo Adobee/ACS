@@ -1,0 +1,10 @@
+final static public Object getRealValue(Type fieldType, String value) {
+if(StringUtils.isEmpty(value))
+return null;
+
+if (fieldType == String.class) {
+return value;
+}
+else if (fieldType == Short.class || fieldType == short.class) {
+return Short.parseShort(value);
+

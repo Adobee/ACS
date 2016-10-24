@@ -1,0 +1,10 @@
+/** angles inf et sup du secteur */
+private double theta1, theta2;
+public static final double DEUXPI = 2 * java.lang.Math.PI;
+* @return le meme angle recaler dans [0;2PI]
+*/
+private double recaler(double angle) {
+angle = angle % DEUXPI;
+if (angle < 0.0) {
+angle += DEUXPI;
+

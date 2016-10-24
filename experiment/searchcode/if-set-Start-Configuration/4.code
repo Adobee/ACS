@@ -1,0 +1,11 @@
+this.configuration = configuration;
+}
+
+@Override
+public void start() {
+super.start();
+if (configuration.getTopCometMessageListener() == null) {
+throw new NullPointerException(&quot;Comet message listener must not null&quot;);
+}
+configuration.getDriver().setReportCount(configuration.getReportCount());
+

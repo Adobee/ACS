@@ -1,0 +1,11 @@
+private final InvalidateBlockDataAccess<InvalidatedBlock> dataAccess;
+private boolean allInvBlocksRead = false;
+
+public InvalidatedBlockContext(InvalidateBlockDataAccess dataAccess) {
+return new BlockPK.ReplicaPK(hopInvalidatedBlock.getBlockId(),
+hopInvalidatedBlock.getInodeId(), hopInvalidatedBlock.getStorageId());
+}
+
+@Override
+protected boolean snapshotChanged() {
+

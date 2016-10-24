@@ -1,0 +1,11 @@
+public static final int DEFAULT_PAGESIZE = 100;
+public static final int MAX_PAGESIZE = 10000;
+
+private PaginationUtil() {}
+public static int dealMaxPageSize(int pageSize) {
+if (pageSize > MAX_PAGESIZE) {
+return MAX_PAGESIZE;
+}
+
+return pageSize;
+

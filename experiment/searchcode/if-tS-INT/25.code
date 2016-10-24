@@ -1,0 +1,10 @@
+public double closestToAverege(double[] ts) {
+if (ts.length < 2) {
+if (ts.length == 1) {
+tsMeater(ts[0]);
+return ts[0];
+Arrays.sort(ts);
+int goalIndex = 0;
+boolean findGoalIndex = true;
+for (int index = 0; index < ts.length; index++) {
+

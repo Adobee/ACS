@@ -1,0 +1,10 @@
+public void setSize(long sizeInBytes) {
+fileSize = sizeInBytes;
+}
+
+public long getSize() {
+long sizeInBytes = 0;
+try {
+if (multipartFile != null) {
+sizeInBytes = multipartFile.getSize();
+

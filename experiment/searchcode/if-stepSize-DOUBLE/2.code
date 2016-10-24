@@ -1,0 +1,12 @@
+this.b = zeitreihe[0] - this.m;
+
+double autokovarianz;
+
+double stepsize= this.b/10;
+
+//Schleife wird solange iteriert, bis sie über den Befehl &quot;break;&quot; abgebrochen wird s.u.
+while(stepsize > 0.01){
+autokovarianz = getAutoKoVarianz(this.m, this.b, zeitreihe);
+//m+stepsize und b gleich
+double autokovarianzNew = getAutoKoVarianz((this.m + stepsize), this.b, zeitreihe);
+

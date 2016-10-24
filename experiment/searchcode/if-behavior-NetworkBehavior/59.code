@@ -1,0 +1,8 @@
+import retrofit2.mock.MockRetrofit;
+import retrofit2.mock.NetworkBehavior;
+import rx.Observer;
+import rx.android.schedulers.AndroidSchedulers;
+MockRetrofit mockRetrofit = new MockRetrofit.Builder(getRestAdapter())
+.networkBehavior(NetworkBehavior.create()).build();
+BehaviorDelegate<GitHub> delegate = mockRetrofit.create(GitHub.class);
+

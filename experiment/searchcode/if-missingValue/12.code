@@ -1,0 +1,7 @@
+private Object parseMissingValue(DataType dataType, String missingValue) {
+Object parsedMissingValue;
+if (dataType.equals(DataType.DOUBLE)) {
+parsedMissingValue = Float.parseFloat(missingValue);
+} else if (dataType.equals(DataType.INTEGER)) {
+parsedMissingValue = Integer.parseInt(missingValue);
+

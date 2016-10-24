@@ -1,0 +1,7 @@
+@Override
+public <K, V> Cache<K, V> getCache(String cacheName, boolean createIfAbsent) {
+return new GraftedModeCache<K, V>(super.<K, V>getCache(cacheName, createIfAbsent));
+}
+
+}
+

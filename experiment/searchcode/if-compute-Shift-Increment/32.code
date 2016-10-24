@@ -1,0 +1,10 @@
+static final int MAX_CONCURRENCY_LEVEL = 65536;
+int fragmentShift;
+int fragmentMask;
+
+public ConcurrentWeakDictionary(int initialCap, float loadFactor, int concurrencyLevel) {
+makeRoom(this.elements.length << ROOM_INCREMENT_SLAB);
+}
+
+int index = computeIndex(keyHash, this.elements.length - 1);
+

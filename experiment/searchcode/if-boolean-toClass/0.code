@@ -1,0 +1,8 @@
+public static Object toAny(Boolean v, Class toclass) {
+if(v==null || toclass==null) return null;
+if(toclass==int.class || toclass==Integer.class) {
+}else if(toclass==char.class || toclass==Character.class) {
+return toCharacter(v);
+}else if(toclass==boolean.class || toclass==Boolean.class) {
+return v;
+

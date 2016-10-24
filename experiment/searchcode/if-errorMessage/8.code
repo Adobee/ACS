@@ -1,0 +1,10 @@
+this.errorMessage = errorMessage+&quot; &quot;+cause.getMessage();
+}
+
+@Override
+public String getMessage(){
+if(errorMessage.contains(&quot;NullPointerException&quot;)){
+errorMessage = &quot;Null exception&quot;;
+}
+else if(errorMessage.equals(null)){
+

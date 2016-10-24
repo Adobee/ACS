@@ -1,0 +1,11 @@
+private final Map<String, Field> fields;
+
+private boolean globalForceSource = false;
+
+public SearchContextHighlight(Collection<Field> fields) {
+this.globalForceSource = globalForceSource;
+}
+
+public boolean forceSource(Field field) {
+if (globalForceSource) {
+

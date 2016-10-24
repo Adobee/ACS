@@ -1,0 +1,8 @@
+double dy = (double)(world.rand.nextFloat() * 2.0F - 1.0F);
+double dz = (double)(world.rand.nextFloat() * 2.0F - 1.0F);
+
+if (dx * dx + dy * dy + dz * dz <= 1.0D)
+double y = entity.boundingBox.minY + (double)(entity.height / 2.0F) + dy * (double)entity.height / 4.0D;
+double z = entity.posZ + dz * (double)entity.width / 4.0D;
+entityFX = newEffectFromID(typeId, world, x, y, z, dx, dy + 0.2D, dz);
+

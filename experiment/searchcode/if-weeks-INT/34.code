@@ -1,0 +1,6 @@
+@Test(expectedExceptions = ArithmeticException.class)
+public void test_plus_int_overflowTooBig() {
+Weeks.of(Integer.MAX_VALUE - 1).plus(2);
+public void test_plus_int_overflowTooSmall() {
+Weeks.of(Integer.MIN_VALUE + 1).plus(-2);
+

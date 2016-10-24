@@ -1,0 +1,13 @@
+import gov.usgs.cida.datatable.DataTable;
+
+/**
+*
+*
+*/
+public class RowRangeFilter implements RowFilter {
+protected int startRow;
+protected int rowCount;
+
+public RowRangeFilter(int startRow, int rowCount) {
+if (startRow < 0 || rowCount <= 0) {
+

@@ -1,0 +1,12 @@
+boolean retVal = tmpNormInf != PrimitiveMath.ZERO;
+double tmpVal;
+double tmpNorm2 = PrimitiveMath.ZERO;
+
+if (retVal) {
+retVal = !TypeUtils.isZero(tmpNorm2);
+}
+
+if (retVal) {
+
+double tmpScale = tmpVector[aCol] / tmpNormInf;
+

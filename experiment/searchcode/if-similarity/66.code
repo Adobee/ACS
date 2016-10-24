@@ -1,0 +1,8 @@
+public SimilarityMeasureResult(double unweightedSimilarity, SimilarityMeasure usedSimilarityMeasure, @Nullable Double customWeight) throws Exception {
+if(unweightedSimilarity <=1 &amp;&amp; unweightedSimilarity >=0)
+public double getWeightedSimilarity()
+{
+if(this.customWeight!=null)
+{
+return unweightedSimilarity * this.customWeight;
+

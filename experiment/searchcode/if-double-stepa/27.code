@@ -1,0 +1,15 @@
+import java.awt.Insets;
+
+/**
+*
+* @author stepa
+*/
+public class Layout
+{
+public String className;
+public Insets insets;
+public GridBagConstraintsAnchor anchor;
+public int gridx, gridy;
+public double weightx, weighty;
+public int gridwidth, gridheight;
+

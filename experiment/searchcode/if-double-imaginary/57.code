@@ -1,0 +1,14 @@
+public class ComplexNumber {
+private double realPart;
+private double imaginaryPart;
+
+public ComplexNumber(double realPart) {
+} else if (imaginaryPart == 0 &amp;&amp; o instanceof Number) {
+Number n = (Number)o;
+return (realPart == n.doubleValue());
+} else {
+return false;
+}
+}
+}
+

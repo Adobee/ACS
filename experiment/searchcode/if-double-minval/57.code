@@ -1,0 +1,10 @@
+this.min=Double.parseDouble(minVal);
+this.max=Double.parseDouble(maxVal);
+}
+/**
+* 根据给定参数构造Range的新实例
+* @param minVal 最小值
+* @param maxVal 最大值
+*/
+public Range(double minVal,double maxVal){
+

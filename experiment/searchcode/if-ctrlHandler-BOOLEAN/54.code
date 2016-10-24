@@ -1,0 +1,9 @@
+private void setup(boolean addShutdownHook, Tuple<Settings, Environment> tuple) throws Exception {
+if (tuple.v1().getAsBoolean(&quot;bootstrap.mlockall&quot;, false)) {
+node.close();
+}
+});
+}
+
+if (tuple.v1().getAsBoolean(&quot;bootstrap.ctrlhandler&quot;, true)) {
+

@@ -1,0 +1,10 @@
+private final List<Clause> clauses;
+private final CompoundType opType;
+
+public enum CompoundType{
+ANY (&quot; OR &quot;),
+CompoundType(String op){ this.op = op; }
+public String op(){ return this.op; }
+public CompoundType negate(){
+if( this == ANY ) return ALL;
+

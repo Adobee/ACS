@@ -1,0 +1,10 @@
+final PendingIntent toggleContractionPendingIntent = PendingIntent.getService(this, 0, toggleContractionIntent,
+PendingIntent.FLAG_UPDATE_CURRENT);
+if (contractionOngoing) {
+views.setViewVisibility(R.id.contraction_toggle_on, View.VISIBLE);
+views.setViewVisibility(R.id.contraction_toggle_on, View.GONE);
+}
+// Close the cursors
+if (data != null)
+data.close();
+

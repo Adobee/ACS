@@ -1,0 +1,7 @@
+private UnivariateStatistic minImpl = new Min();
+private UnivariateStatistic percentileImpl = new Percentile();
+private UnivariateStatistic skewnessImpl = new Skewness();
+public double getPercentile(double p) {
+if (percentileImpl instanceof Percentile) {
+((Percentile) percentileImpl).setQuantile(p);
+

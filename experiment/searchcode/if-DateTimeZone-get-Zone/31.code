@@ -1,0 +1,6 @@
+public static ISOChronology getInstance(DateTimeZone dateTimeZone) {
+if (dateTimeZone == null) {
+ISOChronology iSOChronology = (ISOChronology) cCache.get(dateTimeZone);
+if (iSOChronology != null) {
+return iSOChronology;
+

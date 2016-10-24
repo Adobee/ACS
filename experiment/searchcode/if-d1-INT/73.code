@@ -1,0 +1,8 @@
+public int rob(int[] nums) {
+if (nums.length == 0) return 0;
+int d1 = nums[0];
+if (nums.length == 1) return d1;
+int d2 = Math.max(d1,nums[1]);
+
+for (int i = 2; i < nums.length; i++) {
+

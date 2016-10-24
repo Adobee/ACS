@@ -1,0 +1,16 @@
+aTok.nextToken();
+
+if (aTok.hasMoreTokens())
+{
+int domainIndex = 0;
+
+try
+{
+domainIndex =
+Math.max(0, Integer.parseInt(aTok.nextToken()) - 1);
+String subToken = aTok.nextToken();
+
+if (&quot;POWER&quot;.equals(subToken))
+{
+retString = getPowerToken(pc, domainIndex);
+

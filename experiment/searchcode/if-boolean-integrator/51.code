@@ -1,0 +1,10 @@
+public void stepFinnished(UpdateEvent evt) {
+super.stepFinnished(evt);
+
+final boolean shouldHaveGeneratedSpike = (integrator.getTime() > 0.0)
+} else {
+// baaad
+if (spikeGenerated) {
+numSpikesUnwanted++;
+//System.out.println(integrator.getTime() + &quot;:\t\tgot unwanted spike!&quot;);
+

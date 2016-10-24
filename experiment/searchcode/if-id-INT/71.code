@@ -1,0 +1,12 @@
+package com.company;
+
+public class WeightQuickUnionUF implements IUnionFind
+{
+int[] id;
+int[] sz;
+public void union(int p, int q)
+{
+int idP = find(p);
+int idQ = find(q);
+if(idP == idQ)
+

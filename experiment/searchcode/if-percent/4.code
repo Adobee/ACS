@@ -1,0 +1,10 @@
+for (float percent = 0F; percent <= 1F; percent = (percent >= 1F)?(percent + timeInterval):(((percent += timeInterval) > 1F)?1F:percent)) {
+if (compare(a,b,percent)) {
+Rectangle r2 = b.getCollisionAABB();
+
+return Rectangle.intersect(r1,r2);
+}
+
+//	if (percent >= 1F) {
+//		percent = percent + timeInterval;
+

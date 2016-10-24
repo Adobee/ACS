@@ -1,0 +1,14 @@
+public abstract class Dialog extends AnchorPane {
+protected Stage currentStage = null;
+
+public abstract String getTitle();
+public void close() {
+onClose();
+
+if (currentStage != null) {
+currentStage.close();
+}
+}
+
+}
+

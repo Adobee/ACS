@@ -1,0 +1,7 @@
+List<PcAgencyRelation> agencyRelationList = pcAgencyRelationDaoImpl.getAgencyRelationList();
+if (agencyRelationList != null &amp;&amp; agencyRelationList.size() > 0) {
+for (PcAgencyRelation agencyRelation : agencyRelationList) {
+List<PcAgencyRelation> agencyRelationList = pcAgencyRelationDaoImpl.getChildrenByParentId(agencyId);
+if (agencyRelationList != null &amp;&amp; agencyRelationList.size() > 0) {
+for (PcAgencyRelation agencyRelation : agencyRelationList) {
+

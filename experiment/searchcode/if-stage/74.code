@@ -1,0 +1,11 @@
+stage = _stage;
+}
+
+/****************************************************************************************/
+@Override
+public void update() {
+if (stage.goals != null)
+stage.goals.checkGoals();
+
+if (stage.characters.isEmpty() &amp;&amp; stage.currentCharacter.isDead()) {
+

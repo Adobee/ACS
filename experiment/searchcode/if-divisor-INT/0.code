@@ -1,0 +1,9 @@
+int greatestCommonPrimeDivisor(int a, int b) {
+
+int gcd = -1;
+for (int divisor = 2; a > 1 &amp;&amp; b > 1; divisor++) {
+if ( a%divisor==b%divisor ) {
+gcd = divisor;
+}
+while (a % divisor == 0) {
+

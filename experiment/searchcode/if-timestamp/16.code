@@ -1,0 +1,12 @@
+package node;
+
+public class LamportsClock {
+private int timestamp;
+
+public LamportsClock() {
+public int event(int eventTimestamp)
+{
+if ( eventTimestamp > this.timestamp )
+this.timestamp = eventTimestamp;
+return (this.timestamp++);
+

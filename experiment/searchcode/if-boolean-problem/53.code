@@ -1,0 +1,11 @@
+problemName = problem;
+}
+
+@Override
+public boolean accept(File f) {
+boolean answer = f.isFile() &amp;&amp; f.getName().toLowerCase().endsWith(&quot;opt.tour&quot;);
+if(problemName == null || !answer) return answer;
+else return f.getName().startsWith(problemName);
+}
+}
+

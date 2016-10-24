@@ -1,0 +1,17 @@
+private File storageDir = new File(&quot;/var/errorreportsserver&quot;);
+
+@XmlElement
+private String publishAddress = &quot;localhost&quot;;
+
+@XmlElement
+private int publishPort = 6008;
+public void bindAddress(String bindAddress) {
+this.bindAddress = bindAddress;
+}
+
+public int publishPort() {
+return publishPort;
+}
+
+public void publishPort(int publishPort) {
+

@@ -1,0 +1,8 @@
+protected Object initConstructorInjection(IocContainer container) throws Exception {
+Constructor constructor = determineConstructor();
+List<Object> params = determineConsParams(container, constructor);
+return initInstanceWithParams(params, constructor);
+}
+
+protected abstract List<Object> determineConsParams(IocContainer container, Constructor constructor) throws Exception;
+

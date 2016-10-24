@@ -1,0 +1,9 @@
+public void addFinalMatches(Matches m) {
+if (allFinalMatches == null)
+allFinalMatches = Lists.newArrayList();
+public void readFields(DataInput in) throws IOException {
+super.readFields(in);
+matches.readFields(in);
+int n = in.readInt();
+if (n == 0)
+

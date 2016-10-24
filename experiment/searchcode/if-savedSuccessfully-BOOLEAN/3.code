@@ -1,0 +1,7 @@
+OutputStream os = new BufferedOutputStream(new FileOutputStream(tmpFile), DEFAULT_BUFFER_SIZE);
+boolean savedSuccessfully = false;
+try {
+savedSuccessfully = image.compress(DEFAULT_COMPRESS_FORMAT, DEFAULT_COMPRESS_QUALITY, os);
+IOUtils.closeSliently(os);
+if (savedSuccessfully &amp;&amp; !tmpFile.renameTo(imageFile)) {
+

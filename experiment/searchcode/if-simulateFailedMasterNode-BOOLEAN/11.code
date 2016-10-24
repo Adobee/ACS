@@ -1,0 +1,6 @@
+// simulate removing the master
+final boolean simulateFailedMasterNode = rarely();
+DiscoveryNode failedMasterNode = null;
+if (simulateFailedMasterNode) {
+failedMasterNode = clusterService.state().nodes().masterNode();
+

@@ -1,0 +1,11 @@
+package com.comcast.technucleus.cache;
+
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+public static ExecutorService getExecutorServiceInstance() {
+
+String threadPoolSize = &quot;10&quot;;
+
+if(null == executorService) {
+executorService = Executors.newFixedThreadPool(Integer.parseInt(threadPoolSize));
+

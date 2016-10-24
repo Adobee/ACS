@@ -1,0 +1,10 @@
+return ffts;
+}
+
+private static double[] getFFTMagnitude(double[] data, int binCount) {
+if (data.length % binCount != 0) {
+double[] fftData = new double[binCount * 2];
+int sumCount = 0;
+
+for (int startIndex = 0; startIndex + binCount <= data.length; startIndex += binCount) {
+

@@ -1,0 +1,9 @@
+public SlicedChannelBuffer(ChannelBuffer buffer, int index, int length) {
+if (index < 0 || index > buffer.capacity()) {
+throw new IndexOutOfBoundsException(&quot;Invalid index of &quot; + index
+return buffer.toByteBuffer(index + adjustment, length);
+}
+
+private void checkIndex(int index) {
+if (index < 0 || index >= capacity()) {
+

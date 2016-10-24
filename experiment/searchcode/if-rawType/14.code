@@ -1,0 +1,11 @@
+private Class<?> rawType;
+
+private TypeInfo(Class<?> rawType, Class<?> componentType) {
+
+this.componentType = componentType;
+public TypeInfo(Type type) {
+
+if (type instanceof ParameterizedType) {
+
+this.rawType = (Class<?>) ((ParameterizedType) type).getRawType();
+

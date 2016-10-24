@@ -1,0 +1,13 @@
+public class BraggComparator implements Comparator<BraggReflection> {
+
+@Override
+public int compare(BraggReflection arg0, BraggReflection arg1) {
+double Q0 = arg0.getQ().length();
+double Q1 = arg1.getQ().length();
+if(Q0 < Q1) { return -1; }
+if(Q0 == Q1) { return 0; }
+return 1;
+}
+
+}
+

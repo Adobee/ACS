@@ -1,0 +1,10 @@
+public static int divide(int dividend, int divisor) {
+if (divisor == 1) {
+return dividend;
+}
+if (divisor == -1) {
+return dividend == Integer.MIN_VALUE ? Integer.MAX_VALUE : -dividend;
+}
+if (divisor == Integer.MIN_VALUE) {
+return dividend == Integer.MIN_VALUE ? 1 : 0;
+

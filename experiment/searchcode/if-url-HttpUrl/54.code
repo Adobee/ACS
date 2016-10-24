@@ -1,0 +1,9 @@
+final int defaultPort;
+if (httpUrl.startsWith(HTTP_PREFIX)) {
+prefix = HTTP_PREFIX;
+defaultPort = 80;
+} else if (httpUrl.startsWith(HTTPS_PREFIX)) {
+prefix = HTTPS_PREFIX;
+defaultPort = 443;
+} else {
+

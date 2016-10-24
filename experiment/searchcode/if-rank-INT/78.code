@@ -1,0 +1,9 @@
+public String rankList(){
+int totalCount = rankService.getAllCount(rank);
+rank.setTotalCount(totalCount); // 设置总条数
+rankList = rankService.rankList(rank);
+if (flag == 1) {
+return &quot;ajaxpage&quot;;
+} else {
+return SUCCESS;
+

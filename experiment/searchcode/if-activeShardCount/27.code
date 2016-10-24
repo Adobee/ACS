@@ -1,0 +1,8 @@
+public ClusterHealthRequest waitForActiveShards(ActiveShardCount waitForActiveShards) {
+if (waitForActiveShards.equals(ActiveShardCount.DEFAULT)) {
+// the default for cluster health request is 0, not 1
+waitForNoRelocatingShards = in.readBoolean();
+waitForActiveShards = ActiveShardCount.readFrom(in);
+waitForNodes = in.readString();
+if (in.readBoolean()) {
+

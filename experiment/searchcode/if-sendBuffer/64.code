@@ -1,0 +1,8 @@
+private static ByteBuffer sendbuffer = ByteBuffer.allocate(BLOCK);
+/* 发送数据缓冲区 */
+private static ByteBuffer receivebuffer = ByteBuffer.allocate(BLOCK);
+iterator = selectionKeys.iterator();
+while (iterator.hasNext()) {
+selectionKey = iterator.next();
+if (selectionKey.isConnectable()) {
+

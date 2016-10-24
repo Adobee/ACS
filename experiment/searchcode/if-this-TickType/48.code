@@ -1,0 +1,9 @@
+import cpw.mods.fml.common.ITickHandler;
+import cpw.mods.fml.common.TickType;
+
+public class TimeKeeperHandler implements ITickHandler {
+public void tickEnd(EnumSet<TickType> type, Object... tickData) {
+for (TickType tickType : type) {
+if (tickType != TickType.CLIENT) {
+continue;
+

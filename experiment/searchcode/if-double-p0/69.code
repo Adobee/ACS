@@ -1,0 +1,11 @@
+public class FourMeasurement {
+
+private final double p0;
+private final double p1;
+private final double p2;
+private final double p3;
+double tanPhi = (p2 - p3) / (p1 - p0);
+double phi = Math.atan(tanPhi);
+if (p1 < p0) {
+phi += Math.PI;
+

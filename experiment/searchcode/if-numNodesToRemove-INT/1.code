@@ -1,0 +1,7 @@
+* The average number of nodes to add/remove and QEdges to change is computed as follows:
+*
+* [ int numNodesToAdd =    numStates * dynamicity * dGamma ]
+* [ int numNodesToRemove = numStates * dynamicity * dGamma ]
+// we can not remove all nodes, because the one where the agent is on should never be removed
+int numNodesToRemove = MathOperations.getRandomInt(avgNodesToRemove, variance, 1, mdp.countActions());
+

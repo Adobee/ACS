@@ -1,0 +1,8 @@
+final static public BytesRef from(final Long value) {
+if (value == null)
+return new BytesRef(BytesRef.EMPTY_BYTES);
+final byte[] bytes = checkByteSize(bytesRef, Long.BYTES, &quot;Cannot convert value to long&quot;);
+if (bytes == null)
+return null;
+return NumericUtils.sortableBytesToLong(bytesRef.bytes, 0);
+

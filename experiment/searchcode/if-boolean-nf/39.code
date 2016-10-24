@@ -1,0 +1,11 @@
+* Desc: 具有兄弟节点（跳过空白文本节点）
+*/
+public class HasSiblingIgnoreBTFilter implements NodeFilter {
+NodeFilter nf;
+
+public HasSiblingIgnoreBTFilter(NodeFilter nf) {
+this.nf = nf;
+}
+
+public boolean accept(Node node) {
+

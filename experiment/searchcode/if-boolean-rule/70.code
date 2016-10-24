@@ -1,0 +1,13 @@
+rb = new HashSet<Rule>();
+}
+
+
+public void addRule(boolean md, VariableAuto var) {
+Rule r = new Rule(md, var);
+rb.add(r);
+}
+
+public boolean isCorrect(boolean md, VariableAuto var) {
+for (Rule r: rb) {
+if (r.isCorrect(md, var)) {
+

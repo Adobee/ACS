@@ -1,0 +1,5 @@
+private static void performGradientDescent(Map<Chao, Integer> chaoRecords, List<Map<String, Integer>> minMaxes, boolean batch, List<Double> thetas, double delta, double stochasticAlpha, double batchAlpha, String thetaFileName, boolean power) {
+if (chaoRecords.size() != 0) {
+double x = sample.getStats().get(thetaIndex);
+double xNorm = normalizeX(minMaxes, power, thetaIndex, x);
+

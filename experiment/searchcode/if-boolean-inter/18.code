@@ -1,0 +1,9 @@
+} else if (s1.length() + s2.length() != s3.length()) {
+return false;
+}
+
+boolean[][] inter = new boolean[s1.length() + 1][s2.length() + 1];
+for (int i = 1; i <= s1.length(); i++) {
+if (s1.substring(0, i).equals(s3.substring(0, i))) {
+inter[i][0] = true;
+

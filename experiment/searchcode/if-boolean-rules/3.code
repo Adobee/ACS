@@ -1,0 +1,13 @@
+System.out.print(__s);
+}
+
+protected static boolean[][] initialiseRegles(int __noCA)
+{
+boolean[][] rules = new boolean[8][4];
+for ( int i = 0 ; i != 8 ; i++ )
+{
+if ( ( i &amp; 1 ) == 1 )
+rules[i][2] = true;
+if ( ( i &amp; 2 ) == 2 )
+rules[i][1] = true;
+

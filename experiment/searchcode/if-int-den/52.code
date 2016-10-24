@@ -1,0 +1,14 @@
+System.out.println(m[i][n].print());
+}
+}
+}
+class Ratio {
+private int num;
+private int den;
+Ratio(int numerator, int denominator){
+this.num = numerator;
+this.den = denominator;
+normalize();
+}
+Ratio(int numerator){
+

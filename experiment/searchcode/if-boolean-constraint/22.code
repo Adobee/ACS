@@ -1,0 +1,12 @@
+public String getConstraintString() {
+return this.constraintString;
+}
+
+@Override
+public boolean equals(Object o) {
+if (o == null || getClass() != o.getClass()) return false;
+
+EntityConstraint that = (EntityConstraint) o;
+
+if (constraintString != null ? !constraintString.equals(that.constraintString) : that.constraintString != null)
+

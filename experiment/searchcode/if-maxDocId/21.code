@@ -1,0 +1,9 @@
+secIopTerm = (QryIopTerm) q_i;
+}else if (q_i instanceof QryIopNear){
+secIopTerm = (QryIopNear) q_i;
+}
+int maxDocid = Qry.INVALID_DOCID;
+// break loop and evaluate for the next term
+if (maxDocid == Qry.INVALID_DOCID) {
+secIopTerm.docIteratorReInitialize();
+

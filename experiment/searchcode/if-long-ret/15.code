@@ -1,0 +1,13 @@
+den = Math.abs(den);
+
+long ret = 0;
+for(long t = 0, i = 31; i >= 0; --i){
+long tmp = t+(den<<i);
+if (tmp <= num){
+t = tmp;
+ret |= (1<<i);
+}
+}
+
+ret = sign < 0 ? -ret : ret;
+

@@ -1,0 +1,12 @@
+public class HistoryTimerTask extends TimerTask {
+
+public static final int dataLen_dcs = 208;
+
+private SerialportDAO serialportDAO;
+public void setSerialportDAO(SerialportDAO serialportDAO) {
+TreeMap dataMap = new TreeMap();
+
+Integer pos = 1; //字段起始位（1代表h1）
+Integer dataLen = 1; //字段的个数（包括起始位）
+String tbName = &quot;&quot;; //表名
+

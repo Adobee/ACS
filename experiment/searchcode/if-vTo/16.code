@@ -1,0 +1,10 @@
+contactVTO.setDontSend(resultSet.getBoolean(&quot;DontSendEmail&quot;));
+}
+
+if(contactVTO.getPrimaryAddressId() != 0){
+contactVTO.setZip(resultSet.getString(&quot;Zip&quot;));
+}//closing while loop
+}
+
+if(contactVTO.getSecondaryAddressId() != 0){
+

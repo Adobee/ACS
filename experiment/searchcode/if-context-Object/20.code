@@ -1,0 +1,10 @@
+* Created by sky91 on 2/14/15.
+*/
+public class ContextConverter {
+public Context convert(Object object) {
+if(object instanceof Context) {
+return new VelocityContext((Context) object);
+}
+if(object instanceof Map) {
+return new VelocityContext((Map) object);
+

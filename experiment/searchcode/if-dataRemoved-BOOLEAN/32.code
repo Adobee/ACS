@@ -1,0 +1,10 @@
+while(current.mNext != null){
+if(current.mNext.mData.equals(data)){
+dataRemoved = current.mNext.mData;
+current = current.mNext;
+}
+
+//Element not found
+if(dataRemoved == null)
+throw new NoSuchElementException();
+

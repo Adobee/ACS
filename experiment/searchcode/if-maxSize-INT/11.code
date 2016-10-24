@@ -1,0 +1,16 @@
+int N = matrix.length;
+int maxSize=0;
+for(int c=0;c<N;c++){
+for(int r=0;r<N;r++){
+for(int s=1;s<=N-Math.max(r,c);s++){
+if(isSquare(matrix,r,c,s)){
+maxSize = s>maxSize?s:maxSize;
+}
+}
+}
+}
+
+return maxSize;
+}
+}
+

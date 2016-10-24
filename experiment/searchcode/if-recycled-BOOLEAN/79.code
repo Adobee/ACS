@@ -1,0 +1,10 @@
+Pool<? extends PoolItem> mParent;
+boolean mRecycled = true;
+
+public Pool<? extends PoolItem> getParent() {
+return this.mParent;
+}
+
+public boolean isFromPool(Pool<? extends PoolItem> pool) {
+if (pool != this.mParent) return false;
+

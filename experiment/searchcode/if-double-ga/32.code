@@ -1,0 +1,16 @@
+public static void main (String[] args){
+
+//double TempScore = 0;
+String input;
+GradeAnalyzer GA = new GradeAnalyzer();
+
+do{
+
+input = JOptionPane.showInputDialog(&quot;Insert the grade: &quot;);
+//GA.isValidGrade(Double.parseDouble(input));
+if(input.equalsIgnoreCase(&quot;q&quot;))
+{
+break;
+}
+GA.addGrade(Double.parseDouble(input));
+

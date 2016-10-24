@@ -1,0 +1,9 @@
+this.fieldName = fieldName;
+}
+
+protected abstract LeafCollector newLeafCollector(final LeafReader leafReader, final D docValues)
+final LeafReader leafReader = context.reader();
+FieldInfo fieldInfo = leafReader.getFieldInfos().fieldInfo(fieldName);
+if (fieldInfo == null)
+return DoNothingCollector.INSTANCE;
+

@@ -1,0 +1,13 @@
+int mid_num=2;
+int mid_den=1;
+while(true)
+{
+if(mid_num == num &amp;&amp; mid_den == den)
+int up_den=1;
+
+int mid_num=1;
+int mid_den=2;
+while(true)
+{
+if(mid_num == num &amp;&amp; mid_den == den)
+

@@ -1,0 +1,9 @@
+private Double minY = null;
+private Double minZ = null;
+
+@Override
+public void accept(Point p) {
+if (maxY == null || p.y > maxY) maxY = p.y;
+if (minY == null || p.y < minY) minY = p.y;
+if (maxZ == null || p.z > maxZ) maxZ = p.z;
+

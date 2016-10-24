@@ -1,0 +1,11 @@
+public CharSwap(String text) {
+this.text = text;
+}
+
+public String swap(int i, int j) {
+if (i < 0 || j < 0 || i >= text.length() || j >= text.length()) {
+throw new IndexOutOfBoundsException();
+}
+if (i == j) {
+return text;
+

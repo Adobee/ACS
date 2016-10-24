@@ -1,0 +1,8 @@
+//get some data from different source
+assertEquals(numDatanodes, Integer.parseInt(
+jmx.getValue(&quot;NumLiveDataNodes&quot;)));
+assertGauge(&quot;CorruptBlocks&quot;, Long.parseLong(jmx.getValue(&quot;CorruptBlocks&quot;)),
+getMetrics(&quot;FSNamesystem&quot;));
+assertEquals(numDatanodes, Integer.parseInt(
+jmx.getValue(&quot;NumOpenConnections&quot;)));
+

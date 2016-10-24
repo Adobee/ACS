@@ -1,0 +1,17 @@
+package liczymydelte;
+
+/**
+*
+* @author Kasia
+*/
+public class delt {
+double a,b,c,delta,x1,x2,x0;
+this.c = c;
+}
+
+public double getDelta() {
+return delta;
+}
+
+public void setDelta(double delta) {
+

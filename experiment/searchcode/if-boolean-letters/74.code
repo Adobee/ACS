@@ -1,0 +1,9 @@
+letters = new ArrayList<Letter>();
+}
+public Bag(ArrayList<Letter> letters) {
+this();
+if(letters==null) throw new IllegalArgumentException();
+Collections.shuffle(letters);
+Iterator<Letter> i = letters.iterator();
+if(!i.hasNext()) return null;
+

@@ -1,0 +1,11 @@
+SWAMPLAND(0),  FOREST(1),  TAIGA(2),  DESERT(3),  PLAINS(4),  HELL(5),  OCEAN(6),  HILLS(7),  RIVER(8),  SKY(9);
+
+private static HashMap<String, Biome> BiomeTranslate;
+private int i;
+
+private Biome(int index)
+public static Biome getBiomeFromString(String name)
+{
+if (!BiomeTranslate.containsKey(name)) {
+throw new NullPointerException(&quot;No such Biome &quot; + name);
+

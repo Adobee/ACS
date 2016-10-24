@@ -1,0 +1,12 @@
+private ResourceLocation image;
+private double rotation;
+private double currX;
+private int newX;
+private long lastTime;
+int desZ = posZ;
+
+double rotationToDest = Math.atan2(desZ - z, desX - x);
+
+rotation %= 360d;
+if (rotation < 0)
+

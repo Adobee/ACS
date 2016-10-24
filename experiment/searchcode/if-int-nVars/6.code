@@ -1,0 +1,8 @@
+public class CombinationGenerator implements Iterator<int[]> {
+private int nVars;
+private boolean hasNext;
+private int[] combo;
+public void set(final int nVars, final int nCombo) {
+if (nCombo < 0) {
+throw new IllegalArgumentException(&quot;nCombo must be non-negative&quot;);
+

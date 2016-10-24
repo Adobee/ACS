@@ -1,0 +1,9 @@
+solve(6.0, 7.0, 1.0E-10, 300, false);
+solve(-6.0, -5.0, 1.0E-10, 300, false);
+}
+
+public static double solve(double x0, double x1, double eps, int n, boolean flag) {
+xk2 = xk1 - Solve.f(xk1) * (xk1 - xk) / (Solve.f(xk1) - Solve.f(xk));
+error = (flag) ? Solve.relativeError(xk1, xk2) : Solve.residualError(xk2);
+if (error < eps) {
+

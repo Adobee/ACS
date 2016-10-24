@@ -1,0 +1,17 @@
+decision = decider.decide(true, 0);
+
+for (int i = 0; i < 100; i++)
+{
+if (decision)
+{
+decision = decider.decide(true, -1);
+for (int i = 0; i < 100; i++)
+{
+if (decision)
+{
+decision = decider.decide(true, 1);
+}
+else
+{
+decision = decider.decide(true, -1);
+

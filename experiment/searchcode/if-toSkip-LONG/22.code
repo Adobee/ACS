@@ -1,0 +1,9 @@
+private InputStream m_inputStream;
+private long currentPosition;
+private long endPosition;
+
+public ControlledInputStream(InputStream inputStream) {
+public boolean fseek(long position) throws IOException {
+long toSkip = position - currentPosition;
+if (toSkip < 0L)
+

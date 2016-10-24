@@ -1,0 +1,10 @@
+// check orthogonality between function vector and jacobian columns
+double maxCosine = 0;
+if (cost != 0) {
+for (int j = 0; j < solvedCols; ++j) {
+dxNorm = FastMath.sqrt(dxNorm);
+double previousFP = fp;
+fp = dxNorm - delta;
+
+// if the function is small enough, accept the current value
+

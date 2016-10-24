@@ -1,0 +1,14 @@
+package com.thotgate.mb.context;
+
+/**
+* Created by lalu on 16/4/16.
+*/
+public class ApplicationContext {
+private ApplicationContext(){
+
+}
+
+public static ApplicationContext getContext(){
+synchronized (instanceLock){
+if(ApplicationContext.context == null){
+

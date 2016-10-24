@@ -1,0 +1,15 @@
+public RepeatTask(long interval) {
+_interval = interval;
+_active = true;
+}
+
+public long getInterval() {
+return _interval;
+}
+
+public abstract void execute();
+
+@Override
+public final void run() {
+if (!_active) {
+

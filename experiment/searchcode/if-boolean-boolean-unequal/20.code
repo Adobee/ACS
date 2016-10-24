@@ -1,0 +1,13 @@
+public void assertEqualsAndHashCodeContract()
+{
+testAllUnequalsAreUnequal();
+
+testReflexive();
+
+testSymmetric();
+Assert.assertTrue( &quot;reflexive equals&quot;, !x.equals( unequalToX ) &amp;&amp; !unequalToX.equals( x ) );
+}
+
+/**
+* For any non-null reference values x, y, and z, if x.equals(y) returns true and y.equals(z) returns true, then x.equals(z) should
+

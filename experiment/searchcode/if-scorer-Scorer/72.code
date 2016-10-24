@@ -1,0 +1,10 @@
+public boolean next() throws IOException {
+if (firstTime) {
+if (! exclScorer.next()) {
+exclScorer = null; // exhausted at start
+}
+firstTime = false;
+}
+if (reqScorer == null) {
+return false;
+

@@ -1,0 +1,9 @@
+return translatedQuery;
+}
+
+private Query translateQuery(Query query, boolean isFirst) {
+try {
+if (query instanceof BooleanQuery){
+return extractBooleanQuery((BooleanQuery) query);
+} else if (query instanceof PhraseQuery){
+

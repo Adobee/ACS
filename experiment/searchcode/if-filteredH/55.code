@@ -1,0 +1,9 @@
+protected double filterStep(final double h, final boolean forward, final boolean acceptSmall)
+throws IntegratorException {
+
+double filteredH = h;
+if (Math.abs(h) < minStep) {
+if (acceptSmall) {
+filteredH = forward ? minStep : -minStep;
+} else {
+

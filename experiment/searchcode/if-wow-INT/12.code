@@ -1,0 +1,10 @@
+import org.wowtalk.api.PrefUtil;
+import org.wowtalk.api.WowTalkVoipIF;
+
+public class PhoneStateChangedReceiver extends BroadcastReceiver {
+public void onReceive(Context context, Intent intent) {
+int setupStep = PrefUtil.getInstance(context).getSetupStep();
+
+if (setupStep == 2) {
+final String extraState = intent.getStringExtra(TelephonyManager.EXTRA_STATE);
+

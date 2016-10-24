@@ -1,0 +1,11 @@
+public Logger(int level) {
+setLevel(level);
+}
+
+public void setLevel(int level) {
+if (level > 0) {
+this.level = level;
+public void log(int level, String message) {
+if (level <= getLevel()) {
+System.out.printf(&quot;%d => %s\n&quot;, level, message);
+

@@ -1,0 +1,8 @@
+public Dimensions dimensions(double mag, double maxWidth) {
+double length = lengthWc94(mag);
+return new Dimensions(length, min(maxWidth, length));
+}
+
+@Override
+public Map<Dimensions, Double> dimensionsDistribution(double mag, double maxWidth) {
+

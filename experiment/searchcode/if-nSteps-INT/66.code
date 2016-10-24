@@ -1,0 +1,10 @@
+public class MultistepIntegrators extends AdaptiveStepsizeIntegrators {
+
+public static String NSTEP = &quot;nSteps&quot;;
+
+public MultistepIntegrators(Class<?> integratorClass) {
+Object[] processParameters = super.processParameters(startTime, stopTime, stepSize, parameters);
+Integer nSteps = 4;
+if (parameters.containsKey(NSTEP)) {
+nSteps = (Integer) parameters.get(NSTEP);
+

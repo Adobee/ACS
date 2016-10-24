@@ -1,0 +1,9 @@
+private double minRatio; // ratio = width / height
+private double maxRatio;
+
+public FixAspectRatioCropTransform(double minRatio, double maxRatio) {
+double sourceRatio = (double) sourceWidth / (double) sourceHeight;
+if (sourceRatio < minRatio){
+// too high
+int height = (int)(sourceWidth / minRatio);
+

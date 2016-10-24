@@ -1,0 +1,8 @@
+stats = CommonStats.readCommonStats(in);
+if (in.readBoolean()) {
+int entries = in.readVInt();
+statsByShard = new HashMap<>();
+stats.writeTo(out);
+out.writeBoolean(statsByShard != null);
+if (statsByShard != null) {
+

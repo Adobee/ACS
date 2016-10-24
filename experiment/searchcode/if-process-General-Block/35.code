@@ -1,0 +1,7 @@
+rest.assign(runtime, context, self, RubyArray.newEmptyArray(runtime), block, true);
+blockVar.assign(runtime, context, self, Helpers.processBlockArgument(runtime, block), Block.NULL_BLOCK, false);
+}
+
+@Override
+public void assign(Ruby runtime, ThreadContext context, IRubyObject self, IRubyObject value1,
+

@@ -1,0 +1,16 @@
+private int[][] map;
+
+private void floodFill(int x, int y, int color) {
+if (x < 0 || x >= N || y < 0 || y >= M || visited[x][y] || map[x][y] != color) {
+for (int j = 0; j < M; j++) {
+if (!visited[i][j]) {
+count++;
+floodFill(i, j, A[i][j]);
+}
+}
+}
+
+return count;
+}
+}
+

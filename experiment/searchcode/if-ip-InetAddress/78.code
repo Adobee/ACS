@@ -1,0 +1,12 @@
+import java.net.UnknownHostException;
+
+public class NetLocation
+{
+private InetAddress ip;
+public NetLocation(String ip, Integer port) throws UnknownHostException
+{
+this(InetAddress.getByName(ip), port);
+}
+
+public NetLocation(InetAddress ip, Integer port)
+

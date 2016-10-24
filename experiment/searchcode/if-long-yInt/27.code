@@ -1,0 +1,12 @@
+return l;
+}
+else if (b.atInfinity) {
+slope = b.slope;
+yInt= a.y-a.x*slope;
+l = new Line(0, yInt, slope, false, false);
+l= Line.roundL(l);
+return l;
+}
+
+else if(Math.abs((a.x-b.x))<1e-8) {
+

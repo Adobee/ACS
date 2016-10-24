@@ -1,0 +1,16 @@
+static ICodePosition between(ICodePosition start, ICodePosition end)
+{
+int startIndex = start.endIndex();
+int endIndex = end.startIndex();
+if (startIndex == endIndex)
+return new CodePosition(start.endLine(), end.startLine(), startIndex, endIndex);
+}
+
+int startIndex();
+
+int endIndex();
+
+int startLine();
+
+int endLine();
+

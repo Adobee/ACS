@@ -1,0 +1,9 @@
+import htsjdk.samtools.filter.SamRecordFilter;
+
+public class MateUnmappedFilter implements SamRecordFilter {
+
+private boolean include= false;
+* @return true if the SAMRecord matches the filter, otherwise false
+*/
+public MateUnmappedFilter(final boolean include) {
+

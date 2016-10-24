@@ -1,0 +1,10 @@
+static Random rand = new Random(12345);
+public MyTime(int d, double s, int r) {
+if (r != 0)
+seconds = s + rand.nextInt() % r;
+public void forward(double s, int r) {
+seconds += s;
+seconds += rand.nextInt() % r;
+if (seconds > dayTime) {
+seconds -= dayTime;
+

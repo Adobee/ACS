@@ -1,0 +1,9 @@
+FhiFile fhiFile = filePolicy.getFhiFile();
+fileName = fhiFile.getFileName();
+
+if (f != null &amp;&amp; fhiFile != null) {
+logger.info(&quot;文件上传成功，文件名：&quot; + fileName + &quot;，文件路径：&quot;
++ saveDirectory + &quot;\\&quot; + fileID);
+fhiFile.setCreator(user.getUserId());
+if (!uploadService.saveFhiFile(fhiFile)) {
+

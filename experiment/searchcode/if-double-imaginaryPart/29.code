@@ -1,0 +1,11 @@
+* Creates a Complex out of two doubles, representing real- and
+* imaginary part.
+*
+* @param realPart
+* @param imaginaryPart
+*/
+
+public Complex(double realPart, double imaginaryPart) {
+this.realPart = new Rational(realPart);
+this.imaginaryPart = new Rational(imaginaryPart);
+

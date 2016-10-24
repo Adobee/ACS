@@ -1,0 +1,9 @@
+public int maxProfit(int[] prices) {
+if(prices.length<2)
+return 0;
+int startIndex=0;
+int sum=0;
+int i;
+for(i=1;i<prices.length;i++){
+if(prices[i-1]>prices[i]){
+

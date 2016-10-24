@@ -1,0 +1,12 @@
+release = .4;
+double attackIncrement = 1 / (attack * size);
+double sustainIncrement = 1;
+double releaseIncrement = -1 * (1 / (release * size));
+trapezium[c][i] = trapezium[c][i - 1] + releaseIncrement;
+}
+}
+}
+return trapezium;
+}
+double[][] createEmpty(int size, int channels) {
+

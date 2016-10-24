@@ -1,0 +1,12 @@
+return forwardingServer;
+}
+
+private boolean equals(int src, int dst){
+return (src == dst);
+}
+
+public int route(int src, int dst){
+ArrayList<Integer> fwd_chain = Database.getInstance().forwarding_chain(dst);
+if(fwd_chain.size()>0){
+if(BlockingServer.getInstance().blocking_check(src, fwd_chain))
+

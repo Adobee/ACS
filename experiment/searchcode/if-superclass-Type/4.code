@@ -1,0 +1,6 @@
+public static Type getSuperclassTypeParameter(Class subclass) {
+Type superclass = subclass.getGenericSuperclass();
+if (superclass instanceof Class)
+throw new RuntimeException(&quot;Missing type parameter.&quot;);
+else
+

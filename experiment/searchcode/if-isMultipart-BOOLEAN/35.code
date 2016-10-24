@@ -1,0 +1,14 @@
+public class MyMultipartResolver extends CommonsMultipartResolver{
+
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+String dir = request.getParameter(&quot;dir&quot;);
+// kindeditor 上传图片的时候 不进行request 的转换
+if(dir!=null){
+return false;
+}
+return super.isMultipart(request);
+}
+
+}
+

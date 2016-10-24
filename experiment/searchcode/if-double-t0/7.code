@@ -1,0 +1,26 @@
+private int t0;
+
+/**
+* @param t0
+*/
+public myGammaFun(int t0) {
+this.t0 = t0;
+}
+
+
+public double[] gradient(double arg0, double... arg1) {
+double t = arg0 - t0;
+
+if (t > 0)
+return  (k * FastMath.pow((t), alfa))
+* FastMath.exp(-((t) / beta));
+else
+return 0;
+
+
+}
+
+
+
+}
+

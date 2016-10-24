@@ -1,0 +1,9 @@
+public class SimpleMessage extends Dialogue {
+
+@Override
+public void start() {
+if (parameters.length == 1)
+sendDialogue(SEND_1_TEXT_INFO, (String) parameters[0]);
+else if (parameters.length == 2)
+sendDialogue(SEND_2_TEXT_INFO, (String) parameters[0],
+

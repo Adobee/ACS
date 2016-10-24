@@ -1,0 +1,13 @@
+public class pointComparator implements Comparator<point_generic_opt_sb> {
+
+
+public int compare(point_generic_opt_sb p1, point_generic_opt_sb p2) {
+
+if(p1.get_no_of_dimension()==2){
+.append(p1.get_dimension(0), p2.get_dimension(0)).toComparison();
+
+}
+else if(p1.get_no_of_dimension()==3){
+return new CompareToBuilder()
+.append(p1.get_dimension(2), p2.get_dimension(2))
+

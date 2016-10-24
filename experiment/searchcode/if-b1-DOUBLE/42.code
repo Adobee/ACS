@@ -1,0 +1,12 @@
+public static void main(String[] args)
+{
+Double m1, b1, m2, b2;
+Scanner kb = new Scanner(System.in);
+System.out.println(&quot;What is m1?&quot;);
+return m + b;
+}
+
+private static double XIntercept(double m1, double m2, double b1, double b2)
+{
+if (m1 == m2)
+

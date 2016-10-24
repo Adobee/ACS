@@ -1,0 +1,10 @@
+int blockSize = 4096;
+ByteBuffer sendBuffer = ByteBuffer.allocate(blockSize);
+ByteBuffer receiveBuffer = ByteBuffer.allocate(blockSize);
+client.register(selector, SelectionKey.OP_WRITE);
+}
+}
+if(selectionKey.isWritable()){
+sendBuffer.clear();
+client = (SocketChannel) selectionKey.channel();
+

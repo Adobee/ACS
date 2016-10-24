@@ -1,0 +1,13 @@
+private final long[] samples;
+
+private int sampleCount = 0;
+
+private int position;
+
+private final int capacity;
+public synchronized double getAverage()
+{
+if(sampleCount > 0)
+{
+double sum = 0d;
+

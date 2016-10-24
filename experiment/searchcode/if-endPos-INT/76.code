@@ -1,0 +1,9 @@
+public static String getField(String nmeaString, int nField) {
+if (nmeaString == null) return &quot;&quot;;
+int startPos=0, endPos=0;
+int pos;
+int n=0;
+while((pos=nmeaString.indexOf(&#39;,&#39;, startPos)) >= 0) {
+startPos = pos + 1;
+if (++n == nField) {
+

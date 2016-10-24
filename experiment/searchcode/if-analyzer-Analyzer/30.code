@@ -1,0 +1,9 @@
+String stopWordsFileName = &quot;data/stopwords/stopwords_&quot; + analyzerType + &quot;.txt&quot;;
+File stopWordsFile = new File (stopWordsFileName);
+if (stopWordsFile.exists() == false) {
+Analyzer analyzer = null;
+
+int type = -1;
+if (analyzerTypes.containsKey(analyzerType)) {
+type = analyzerTypes.get(analyzerType);
+

@@ -1,0 +1,12 @@
+return timeHelper.getCalendarDateUnit();
+}
+
+///////////////////////////////////////////////
+
+private boolean valuesLoaded;
+
+protected void loadValuesIfNeeded() {
+if (isRegular() || valuesLoaded) return;
+synchronized (this) {
+if (values == null &amp;&amp; reader != null)
+

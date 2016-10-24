@@ -1,0 +1,7 @@
+public AbstractPerfMonMetric getMetricProvider(String metricType, MetricParamsSigar metricParams, SigarProxy sigarProxy) {
+AbstractPerfMonMetric metric;
+if (metricType.equalsIgnoreCase(&quot;exec&quot;)) {
+metric = new ExecMetric(metricParams);
+} else if (metricType.equalsIgnoreCase(&quot;tail&quot;)) {
+metric = new TailMetric(metricParams);
+

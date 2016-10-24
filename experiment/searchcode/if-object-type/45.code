@@ -1,0 +1,8 @@
+public static ObjectParameterType create(ObjectType objectType,
+ComponentType componentType) {
+
+if (objectType == ObjectType.ARRAY) {
+return TypeCache.arrayTypeCache[componentType.ordinal()];
+
+} else if (objectType == ObjectType.BUFFER) {
+

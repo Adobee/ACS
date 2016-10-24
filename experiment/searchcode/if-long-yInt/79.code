@@ -1,0 +1,12 @@
+xInt = SGN_MASK_FLOAT - xInt;
+}
+if (yInt < 0) {
+yInt = SGN_MASK_FLOAT - yInt;
+}
+
+final boolean isEqual = FastMath.abs(xInt - yInt) <= maxUlps;
+long xInt = Double.doubleToLongBits(x);
+long yInt = Double.doubleToLongBits(y);
+
+// Make lexicographically ordered as a two&#39;s-complement integer.
+

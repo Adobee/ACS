@@ -1,0 +1,13 @@
+return (0xDC00 <= ch &amp;&amp; ch <= 0xDFFF);
+}
+
+/**
+* Returns true if the specified character can be considered markup. Markup characters include
+return isChar(ch);
+}
+
+/**
+* Returns true if the specified character is invalid.
+*
+* @param ch
+

@@ -1,0 +1,10 @@
+public abstract double setNumber(final EvolutionState state, final int thread);
+
+@Override
+public void resetNode(final EvolutionState state, final int thread) {
+value = setNumber(state, thread);
+}
+
+@Override
+public boolean nodeEquals(final GPNode node) {
+

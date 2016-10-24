@@ -1,0 +1,8 @@
+* The individual weighing coefficients associated with each penalty
+*
+*/
+private HashMap<String,Double> penaltyCoef;
+long score = penaltyFunction.getPenaltyScore();
+Double perNetScore = this.perNetwork.get(penaltyFunction.getPenaltyName());
+if(perNetScore == null){
+

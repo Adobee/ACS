@@ -1,0 +1,16 @@
+package Actions;
+
+import javax.swing.Icon;
+
+import Units.Unit;
+import Game.PathSegment;
+import Geometry.Point;
+public String toString() {
+return &quot;move&quot;;
+}
+
+@Override
+public void reset() {
+started = false;
+pathSegment = computePathSegment(unit.getIntX(), unit.getIntY(), destination.ix, destination.iy);
+

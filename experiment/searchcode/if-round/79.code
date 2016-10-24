@@ -1,0 +1,12 @@
+return baseScore + getBonus();
+}
+
+private int getBonus() {
+int bonus = 0;
+if (isSpareRound()) {
+bonus = nextRound.firstBall;
+}
+
+if (isStrikeRound()) {
+if (nextRound.isStrikeRound() &amp;&amp; nextRound.nextRound != null) {
+

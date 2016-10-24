@@ -1,0 +1,16 @@
+double sqrt = Math.sqrt(thc);
+double t0 = (-B - sqrt)/2.0;
+double t1 = (-B + sqrt)/2.0;
+
+if (t0 > t1){
+double t = t0;
+t0 = t1;
+t1 = t;
+}
+if (t1 < 0)
+return null;
+
+return new double[]{t0, t1, pDotp < radius2? 1 : 0};
+}
+}
+

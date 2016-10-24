@@ -1,0 +1,6 @@
+public static <F> F getFormat(Class<F> fClass, Decorable decorable) {
+F returnValue = null;
+if (decorable.has(FORMAT)) {
+Object objectValue = decorable.get(FORMAT);
+if (null != objectValue &amp;&amp; fClass.isInstance(objectValue)) {
+

@@ -1,0 +1,10 @@
+stepNumber = experiment.getStepNumber();
+}
+
+public void carryOut(){
+init();
+for(int j = 0; j < experiment.getIterationNumber(); j++){
+boolean accepted = isAccepted(offers);
+accept(accepted, offers);
+if (accepted) acceptanceCounter++;
+

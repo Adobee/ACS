@@ -1,0 +1,8 @@
+import java.net.UnknownHostException;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+public class ShutdownListener {
+private String shutdownKey = &quot;SHUTDOWN&quot;;
+private ShutdownCallback shutdownCallback;
+private final AtomicBoolean shutdownRequested = new AtomicBoolean(false);
+

@@ -1,0 +1,9 @@
+double maxV = getMaxVelocity();
+if (velocity.getMagnitude() > maxV) {
+velocity = new Velocity(velocity, maxV);
+}
+this.velocity = velocity;
+public void update(long millisElapsed, World world) {
+double deltaSeconds = millisElapsed / 1000.0;
+Position deltaPosition = getVelocity().getDeltaPosition(deltaSeconds);
+

@@ -1,0 +1,11 @@
+public static void DecimalToBinary(Double number) {
+String numStr = String.valueOf(number);
+boolean sign = false;
+if(numStr.charAt(0) == &#39;-&#39;) {
+numStr = numStr.substring(1);
+}
+
+int numInt = Integer.parseInt(numStr.split(&quot;\\.&quot;)[0]);
+double numFlo = 0;
+if(numStr.split(&quot;\\.&quot;).length>1) {
+

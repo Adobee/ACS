@@ -1,0 +1,14 @@
+public void execute(InputMaps inputMaps, Query query, String parsedQuery,
+QueryExecutorDAO queryExecutorDAO) throws Exception {
+inputMaps = queryExecutorDAO.executePayload(query,parsedQuery);
+} else {
+if (successor != null) {
+successor.execute(inputMaps, query, parsedQuery, queryExecutorDAO);
+}
+
+}
+
+}
+
+}
+

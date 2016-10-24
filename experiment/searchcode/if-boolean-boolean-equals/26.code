@@ -1,0 +1,8 @@
+public class BooleanParser implements Parser<Boolean> {
+@Override
+public Boolean fromString(String value) throws ParseException {
+if (&quot;true&quot;.equals(value) || &quot;1&quot;.equals(value)) {
+return Boolean.TRUE;
+}
+if (&quot;false&quot;.equals(value) || &quot;0&quot;.equals(value)) {
+

@@ -1,0 +1,12 @@
+private final String className;
+
+public Service(String name, String className) {
+
+super(name);
+
+if (!className.startsWith(&quot;\\&quot;)) {
+className = &quot;\\&quot; + className;
+}
+
+this.className = className;
+

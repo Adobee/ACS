@@ -1,0 +1,8 @@
+public long getTimeAsElapsed() {
+return new Date().getTime();
+}
+public String getTimeForGMT(int gmt) throws Exception {
+if (gmt > 14 || gmt < -12)
+throw new Exception(&quot;GMT should be a number between -12 and 14&quot;);
+TimeZone.setDefault(TimeZone.getTimeZone(&quot;GMT&quot;+Integer.toString(gmt)));
+

@@ -1,0 +1,9 @@
+public static EqualStrategy<Object> DEFAULT_EQUAL_STRATEGY = OBJECT_EQUAL_STRATEGY;
+
+public interface EqualStrategy<E>{
+boolean isEqual(E actual, E expected);
+* compare as arrays
+*/
+if (actual instanceof Object[]) {
+return deepEquals((Object[]) actual, (Object[]) expected);
+

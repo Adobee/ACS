@@ -1,0 +1,11 @@
+g.translate(this.translateX, this.translateY);
+drawRect(g, _bodyRect,0);
+for (int i = 0; i < _components.size(); i++) {
+g.translate(-this.translateX, -this.translateY);
+if (isScroll()) {
+drawScroll(g);
+}
+}
+
+}
+

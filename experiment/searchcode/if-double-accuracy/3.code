@@ -1,0 +1,12 @@
+* Immutable point in Cartesian coordinate system with x, y and accuracy
+*/
+public class Point {
+
+private final double x;
+private final double y;
+private final double accuracy;
+
+
+public Point(double x, double y) {
+this(x, y, -1);
+

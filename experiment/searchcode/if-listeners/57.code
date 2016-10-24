@@ -1,0 +1,12 @@
+private IdentitySet4 _listeners;
+
+public void register(Listener4<E> listener){
+if(_listeners == null){
+_listeners = new IdentitySet4();
+}
+_listeners.add(listener);
+}
+
+public void notifyListeners(E event){
+if(_listeners == null){
+

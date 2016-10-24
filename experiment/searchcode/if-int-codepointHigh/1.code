@@ -1,0 +1,7 @@
+public static NumericEntityEscaper outsideOf(int codepointLow, int codepointHigh)
+{
+return new NumericEntityEscaper(codepointLow, codepointHigh, false);
+}
+
+public boolean translate(int codepoint, Writer out)
+

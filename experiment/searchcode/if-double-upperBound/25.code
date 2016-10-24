@@ -1,0 +1,6 @@
+public void uniformMutation(double probability, double lowerBound, double upperBound)
+{
+for(int i = 0; i < data.size(); i++)
+{
+if(random.nextDouble() < probability)
+

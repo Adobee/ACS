@@ -1,0 +1,13 @@
+public class Flusher {
+
+private boolean flushInProgress = false;
+
+public void flush() {
+synchronized (this) {
+if (flushInProgress)
+return;
+flushInProgress = true;
+}
+
+System.out.println(&quot;Flush water&quot;);
+

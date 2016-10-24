@@ -1,0 +1,19 @@
+import yapl.interfaces.Symbol;
+
+public class Type {
+private boolean isReadonly;
+
+public boolean isCompatible(Type t){
+if (this instanceof ArrayType &amp;&amp; t instanceof ArrayType) {
+return this.getClass().equals(t.getClass());
+}
+
+public boolean isReadonly() {
+return isReadonly;
+}
+
+public void setReadonly(boolean readOnly) {
+isReadonly = readOnly;
+}
+}
+

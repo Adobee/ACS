@@ -1,0 +1,6 @@
+public Strategy search(Class selector) throws StrategyNotFoundException {
+Strategy strategy = strategyMap.get(selector);
+
+if(strategy==null){
+throw new StrategyNotFoundException();
+

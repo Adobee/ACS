@@ -1,0 +1,7 @@
+public static interface Function {
+double f(double x);
+}
+static public double Integrate(Function f, double min, double max, double step) {
+int steps = (int) ((max-min)/step);
+if (steps == 0) steps = 1;
+

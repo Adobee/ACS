@@ -1,0 +1,15 @@
+* @author bogdan
+*
+*/
+class SyncTimer extends Thread {
+int currentMillis;
+int prevMillis;
+int startMillis;
+int maxTime;
+NetMuseClient a;
+
+/**
+*
+* @param a
+* @param time
+

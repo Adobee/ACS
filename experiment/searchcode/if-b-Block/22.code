@@ -1,0 +1,7 @@
+Block compareBlock = cmpBlock;
+//参照ブロック、private変数ブロックでない場合はスコープを確認
+if (isCompareBlock(cmpBlock)
+&amp;&amp; !cmpBlock.getGenusName().contains(&quot;private&quot;)) {
+//直前のブロックがプラグを持っている場合、そちらが直前のブロックになる
+if (Block.getBlock(beforeBlock.getPlugBlockID()) != null) {
+

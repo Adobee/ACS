@@ -1,0 +1,8 @@
+public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+int layout;
+if (viewType == TYPE_HEADER) {
+layout = R.layout.row_convention;
+public void onBindViewHolder(ViewHolder holder, int position) {
+if (holder.mType == TYPE_HEADER) {
+holder.mConventionNameTextView.setText(mConvention.getName());
+

@@ -1,0 +1,7 @@
+HostNetworkQos qos = getQos();
+boolean shouldFail = qos != null &amp;&amp; qos.getOutAverageLinkshare() == null;
+return ValidationResult.failWith(EngineMessage.ACTION_TYPE_FAILED_HOST_NETWORK_QOS_MISSING_VALUES).when(
+public ValidationResult requiredQosValuesPresentForOverriding(String networkName) {
+HostNetworkQos qos = getQos();
+boolean shouldFail = qos != null &amp;&amp; !qos.isEmpty() &amp;&amp; qos.getOutAverageLinkshare() == null;
+

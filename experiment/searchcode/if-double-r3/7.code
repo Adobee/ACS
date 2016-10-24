@@ -1,0 +1,14 @@
+public int num;
+
+public double r0;
+public double r1;
+public double r2;
+public double r3;
+if( num >= 4 &amp;&amp; 0.0 <= r3 &amp;&amp; r3 < r ) { okay = true; r = r3; }
+if(okay)
+return r;
+else
+return Double.NaN;
+}
+}
+

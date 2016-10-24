@@ -1,0 +1,10 @@
+private int columnIndex;
+private int keyIndex;
+private String name;
+private int type;
+
+public PK_Column(int columnIndex, int keyIndex, String name, int type) {
+super();
+this.columnIndex = columnIndex;
+this.keyIndex = keyIndex;
+

@@ -1,0 +1,9 @@
+boolean renewDomain(Domain domain, Long years, String promoCode) throws Exception;
+
+boolean reactivateDomain(Domain domain) throws Exception;
+Domain addDomain(Domain domain) throws Exception;
+
+Domain updateDomain(Domain domain) throws Exception;
+
+String getDomainStatus(Domain domain) throws Exception;
+

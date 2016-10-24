@@ -1,0 +1,7 @@
+public double inversePositionX(double x, double theta) {
+double centerCorrection = 4.5;
+if (theta > 45 &amp;&amp; theta < 135) { // x is changing positively
+public double inversePositionY(double y, double theta) {
+double centerCorrection = 4.5;
+if (theta > 315 || theta < 45) { // x is changing positively
+

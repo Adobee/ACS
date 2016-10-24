@@ -1,0 +1,8 @@
+upper = upper == 0 ? 1 : upper*2;
+}
+if(upper*d == c){
+return positive ? (int) upper : (int)(-upper);
+long mid = (upper + lower) / 2;
+if(mid * d == c){
+return positive ? (int) mid : (int)(-mid);
+

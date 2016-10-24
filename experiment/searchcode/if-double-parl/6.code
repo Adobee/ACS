@@ -1,0 +1,13 @@
+for (int k = 0 ; k < (cols) ; ++k) {
+double dk = jacNorm[k];
+if (dk == 0) {
+dk = 1.0;
+double fp = dxNorm - delta;
+if (fp <= (0.1 * delta)) {
+lmPar = 0;
+return ;
+}
+double sum2;
+double parl = 0;
+if ((rank) == (solvedCols)) {
+

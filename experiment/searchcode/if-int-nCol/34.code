@@ -1,0 +1,8 @@
+int nrow = (int) row;
+int ncol = (int) col;
+this.dir = dir;
+if(dir == 0){
+i = 0;
+//System.out.println(&quot;row,col:&quot; +nrow + ncol + row + col);
+if(nrow < Constant.ROW - 1 &amp;&amp; map.mapdata[nrow + 1][ncol] < 1 )
+

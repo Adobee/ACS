@@ -1,0 +1,7 @@
+public class Coercer {
+
+public static Object coerce(Class<?> type, Object value) {
+if (value instanceof JsonPrimitive) {
+JsonPrimitive p = (JsonPrimitive) value;
+if (type == int.class || type == Integer.class) {
+

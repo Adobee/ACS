@@ -1,0 +1,9 @@
+private final InputStream inputStream;
+private int bytesPastEnd;
+
+private JpegClosedInputStream(final InputStream iInputStream) {
+public int read() throws IOException {
+int buffer = inputStream.read();
+if (buffer == -1) {
+if (bytesPastEnd > 0) {
+

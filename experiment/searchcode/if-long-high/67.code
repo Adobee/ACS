@@ -1,0 +1,9 @@
+public static boolean isPrimeInt(long j) {
+long k = sqrtLong(j);
+if (j % 2 == 0)
+return false;
+for (long p = 3; p <= k; p += 2)
+if (j % p == 0)
+return false;
+return true;
+

@@ -1,0 +1,11 @@
+maz = (int) (points.get(0).getPoint().getBlockZ() + dist);
+if(points.get(0).getPoint().getY() < points.get(1).getPoint().getY()){
+miy = points.get(0).getPoint().getBlockY();
+for(int z = miz; z <= maz; z++){
+tmp.setZ(z);
+
+double m;
+double r2 = Math.pow(dist, 2);
+
+if(dir.equals(&quot;y&quot;))
+

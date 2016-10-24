@@ -1,0 +1,7 @@
+mutRange = new Float(value);
+}
+else if(selIndex == 4){
+numEval = new Integer((int)value);
+numEval = new Integer((int)value);
+}
+

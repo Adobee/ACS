@@ -1,0 +1,11 @@
+public static long calculate(long ... a)
+{
+if (a.length < 1)
+return -1 ;
+else if (a.length == 1)
+return a[0] ;
+else {
+long temp = a[0] ;
+for (int i = 1; i < a.length; i++) {
+temp = LCM.calculate (a[i], temp) ;
+

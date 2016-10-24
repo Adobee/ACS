@@ -1,0 +1,16 @@
+private static int[][] translate(int[] histogram, int maxheight) {
+if (histogram.length != 256) {
+return null;
+}
+int max = histogram[0];
+int number = (int) (((double) histogram[i] / (double) max) * maxheight);
+for (int j = maxheight - number; j < maxheight; j++) {
+metadata[j][i] = 0;
+}
+}
+return metadata;
+}
+
+
+}
+

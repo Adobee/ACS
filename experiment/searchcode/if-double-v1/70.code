@@ -1,0 +1,5 @@
+* @throws IllegalArgumentException if {@code v1} or {@code v2} is not a three dimensional vector
+*/
+public static double dotPd(double[] v1, double[] v2){
+checkArgument(v1.length == 3 &amp;&amp; v2.length == 3, &quot;the length of the args should be 3&quot;);
+

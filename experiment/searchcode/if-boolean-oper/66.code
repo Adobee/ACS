@@ -1,0 +1,7 @@
+private Md5 md;
+public boolean login(TAuOperInfoEntity oper){
+boolean cade = false;
+md = new Md5();
+if((null!=oper.getOpername())&amp;&amp;(null!=oper.getPwd())){
+operInfo = menuInfoDao.queryOne(&quot;from TAuOperInfoEntity where operName=?&quot;, oper.getOpername());
+

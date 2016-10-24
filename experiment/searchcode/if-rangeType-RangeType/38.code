@@ -1,0 +1,14 @@
+* 包括：等于、不等于、包含、不包含、大于、大于等于、小于、小于等于、起止范围
+* @author Orion
+*
+*/
+public enum RangeType {
+/* 等于 */
+EQUAL,
+/* 不等于 */
+UNEQUAL,
+public static RangeType obtainEnum(String value) {
+RangeType[] rangeValues = RangeType.values();
+for (RangeType rangeType : rangeValues) {
+if (rangeType.name().equals(value))
+

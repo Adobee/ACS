@@ -1,0 +1,12 @@
+private long startTime;
+private long endTime = -1;
+
+public TimeInterval() {
+startTime = System.currentTimeMillis();
+this.endTime = endTime;
+}
+
+public long getDuration() {
+if (endTime != -1)
+return endTime - startTime;
+

@@ -1,0 +1,5 @@
+public boolean readBoolean(Object target, String name, boolean oldValue) {
+return ( ( Boolean ) intercept( target, name, oldValue  ? Boolean.TRUE : Boolean.FALSE ) )
+public byte readByte(Object target, String name, byte oldValue) {
+return ( ( Byte ) intercept( target, name, new Byte( oldValue ) ) ).byteValue();
+

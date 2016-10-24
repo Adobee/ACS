@@ -1,0 +1,12 @@
+import ua.org.shaddy.microtools.TimerTools;
+
+class ExecuteTimeoutFlag {
+private volatile boolean timeoutReached = false;
+public synchronized void stopTimer(){
+if (timeoutObject != null){
+TimerTools.clearTimeout(timeoutObject);
+}
+}
+
+}
+

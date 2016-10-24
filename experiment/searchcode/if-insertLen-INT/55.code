@@ -1,0 +1,9 @@
+int rightReadStart = firstRightBlock.getReadStart();
+
+
+int trimLength = 0;
+if ((leftStop >= rightStart) || (leftReadStop >= rightReadStart)) {
+int totalLength = this.getTotalLength(leftElements, rightElements);
+//				int insertLen = read1.getReadLength() - totalLength;
+int insertLen = read1.getReadLength() - totalLength - alignmentGap;
+

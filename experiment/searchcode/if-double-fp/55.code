@@ -1,0 +1,12 @@
+double[][] xi = getStandardBasis(n);
+double[] xit  = new double[n];
+double fp = fn.valueAt(p);
+double lastValue = fp;
+for (int iter=0; iter < 10; ++iter) {
+xit[i] = p[i] - pt[i];
+pt[i] = p[i];
+}
+double fptt = fn.valueAt( ptt );
+if (fptt < fp) {
+double t=2.0*(fp-2.0*(lineMin)+fptt)*Math.sqrt(fp-(lineMin)-del)-del*Math.sqrt(fp-fptt);
+

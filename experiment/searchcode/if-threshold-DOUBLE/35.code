@@ -1,0 +1,10 @@
+private final double threshold;
+
+public StepActivationFunction(double threshold) {
+this.threshold = threshold;
+}
+
+@Override
+public double apply(double input) {
+return input > threshold ? 1 : 0;
+

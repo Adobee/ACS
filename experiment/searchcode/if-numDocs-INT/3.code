@@ -1,0 +1,10 @@
+System.out.println(&quot;usage: wikifile numdocs url {numthreads}&quot;);
+
+return;
+}
+String wikiFile = args[0];
+int numDocs = Integer.parseInt(args[1]);
+int numThreads = Runtime.getRuntime().availableProcessors() - 1;
+if (args.length > 3) {
+numThreads = Integer.parseInt(args[3]);
+

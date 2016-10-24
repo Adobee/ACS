@@ -1,0 +1,9 @@
+* @param verticalAxis The vertical axis.
+*/
+public XYPlot(ValueAxis horizontalAxis, ValueAxis verticalAxis) {
+
+this(horizontalAxis, verticalAxis,
+// draw vertical crosshair if required...
+ValueAxis hva = (ValueAxis)this.horizontalAxis;
+hva.setCrosshairValue(crosshairInfo.getCrosshairX());
+

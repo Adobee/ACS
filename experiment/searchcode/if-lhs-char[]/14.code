@@ -1,0 +1,7 @@
+public EqualsBuilder append(Object lhs, Object rhs) {
+if (lhs == null) eq = eq &amp;&amp; (rhs == null);
+else eq = eq &amp;&amp; lhs.equals(rhs);
+public EqualsBuilder append(char lhs, char rhs) {
+eq = eq &amp;&amp; (lhs == rhs);
+return this;
+

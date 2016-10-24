@@ -1,0 +1,14 @@
+public int fastPower(int a, int b, int n) {
+long ret = pow(a , b, n);
+return (int)ret;
+}
+
+public long pow(int a, int b, int n){
+return a % b;
+}
+
+long ret = pow(a, b,n / 2);
+ret *= ret;
+
+ret %= b;
+

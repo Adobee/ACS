@@ -1,0 +1,10 @@
+chars.push(c);
+}else {
+if(isClosing(c)){
+if((chars.size() == 0) || !isClosingFor(chars.peek(), c)){
+return NESTED;
+}
+}
+
+private boolean isClosingFor(char opening, char closing){
+

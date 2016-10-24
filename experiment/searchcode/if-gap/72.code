@@ -1,0 +1,12 @@
+int maxGap = 0, currGap = 0;
+
+// getting rid of the tailing 0&#39;s
+while((N % 2 == 0) &amp;&amp; N > 0) N /= 2;
+
+if(N <= 0) return 0;
+while(N > 0){
+if(N % 2 == 0) currGap++;
+else{
+// we reacher a 1 bit
+if(currGap > maxGap) maxGap = currGap;
+

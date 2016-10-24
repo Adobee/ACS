@@ -1,0 +1,15 @@
+
+public class Newton {
+public static void main(String[] args) {
+double x = 25,y,y1;
+if (x>0){
+y = x;
+do {
+y1=y;
+y=(y1+(x/y1))/2;}
+while (0.000000001<y1-y);
+System.out.println(y);
+}
+}
+}
+

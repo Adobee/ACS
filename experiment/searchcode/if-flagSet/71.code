@@ -1,0 +1,10 @@
+* @param enumClass 位集所代表的内部枚举类
+*/
+public FlagSet(Class enumClass) {
+this.enumClass = enumClass;
+
+if (!Enum.class.isAssignableFrom(enumClass)) {
+protected FlagSet getFlagSetForModification() {
+if (immutable) {
+return (FlagSet) this.clone();
+

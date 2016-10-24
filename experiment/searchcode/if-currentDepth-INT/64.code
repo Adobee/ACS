@@ -1,0 +1,7 @@
+private int siblingsDepth(Type type, int currentDepth, HashSet<String> seenSiblings){
+int subDepth = currentDepth;
+if(seenSiblings.contains(type.uri())) return subDepth;
+private int ancestorsDepth(Type t, int currentDepth, HashSet<String> seenAncestors){
+int subDepth = currentDepth;
+if(seenAncestors.contains(t.uri())) return subDepth;
+

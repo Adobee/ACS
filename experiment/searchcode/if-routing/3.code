@@ -1,0 +1,13 @@
+public RoutingAlgorithm getRoutingAlgorithm(String algoNumber) {
+RoutingAlgorithm routingAlgorithm = null;
+if (&quot;1&quot;.equals(algoNumber)) {
+routingAlgorithm = new DijkstraRoutingAlgorithm();
+} else if (&quot;2&quot;.equals(algoNumber)) {
+routingAlgorithm = new APSPRoutingAlgorithm();
+}
+
+return routingAlgorithm;
+}
+
+}
+

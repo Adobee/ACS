@@ -1,0 +1,9 @@
+private static final int BLOCKS = 10; //默认添加的路障个数
+public int width;
+
+private Dot matrix[][] = new Dot[COL][ROW];
+private Dot cat;
+for (int i = 1; i <= 6; i++) {
+Dot mDot = getNeighbor(cat, i);
+if (mDot.getState() == Dot.STASUS_OFF) {
+

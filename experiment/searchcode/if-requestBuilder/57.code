@@ -1,0 +1,10 @@
+if (expectedAcceptHeader != null &amp;&amp; !requestBuilder.getHeaderMap().hasKey(accept)) {
+requestBuilder.getHeaderMap().addHeader(accept, expectedAcceptHeader);
+}
+
+if (expectedContentTypeHeader != null &amp;&amp; !requestBuilder.getHeaderMap().hasKey(contentType)) {
+// set request charset if necessary
+setRequestCharset(requestBuilder, contentType);
+
+this.requestBuilder = requestBuilder;
+

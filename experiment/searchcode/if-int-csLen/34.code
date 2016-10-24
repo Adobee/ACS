@@ -1,0 +1,7 @@
+* @param startPos position to start looking (inclusive)
+* @return first non-&quot;whitespace&quot; location, or >= length if none found
+*/
+private static final int skipWhitespace (final CharSequence cs, final int startPos)
+final int    csLen=(null == cs) ? 0 : cs.length();
+for (int    curPos=startPos; curPos < csLen; curPos++)
+

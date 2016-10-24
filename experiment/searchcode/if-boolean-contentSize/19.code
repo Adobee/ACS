@@ -1,0 +1,13 @@
+private URI uri;
+
+private byte[] contentBytes;
+private long contentSize = -1;
+private boolean complete;
+public void setComplete(boolean complete) {
+this.complete = complete;
+if (complete) {
+this.contentSize = contentBytes.length;
+}
+}
+}
+

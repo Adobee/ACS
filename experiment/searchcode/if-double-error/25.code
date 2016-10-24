@@ -1,0 +1,11 @@
+protected double Kp, Ki, Kd;
+protected double target;
+protected double errorSum, lastError;
+
+public TSPID(double kp, double ki, double kd){
+public double getCorrection(double current){
+double error = target-current;
+if (errorSum * error < 0) {
+errorSum = 0.0;
+} else errorSum += error;
+

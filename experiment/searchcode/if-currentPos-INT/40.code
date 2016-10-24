@@ -1,0 +1,12 @@
+private Rect currentFrame = null;
+private RectF currentPos = null;
+
+public Sprite(Bitmap frames, int num_frames) {
+this.frames = frames;
+public float getY() {
+return currentPos.centerY();
+}
+
+public void snap(int left, int top, int right, int bottom) {
+if (currentPos.left < left) {
+

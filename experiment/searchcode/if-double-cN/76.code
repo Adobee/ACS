@@ -1,0 +1,9 @@
+org.drip.quant.fourier.ComplexNumber cnSmallD = org.drip.quant.fourier.ComplexNumber.Square
+(cnSmallDLHS);
+
+if (null == cnSmallD) return null;
+
+double dblSigmaScaler = _fphp.sigma() * _fphp.sigma();
+
+double dblSigmaScaler = _fphp.sigma() * _fphp.sigma();
+

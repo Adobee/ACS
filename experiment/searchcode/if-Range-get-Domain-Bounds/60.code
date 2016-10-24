@@ -1,0 +1,5 @@
+// clip input value to domain
+x = clipToRange(x, domain.getMin(), domain.getMax());
+PDRange encRange = getEncodeForParameter(0);
+x = interpolate(x, domain.getMin(), domain.getMax(), encRange.getMin(), encRange.getMax());
+

@@ -1,0 +1,5 @@
+* Returns the node stats indices stats. The <tt>includePrevious</tt> flag controls
+* if old shards stats will be aggregated as well (only for relevant stats, such as
+public NodeIndicesStats stats(boolean includePrevious) {
+return stats(includePrevious, new CommonStatsFlags().all());
+

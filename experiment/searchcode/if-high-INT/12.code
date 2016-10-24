@@ -1,0 +1,10 @@
+package arrays;
+
+public class QuickSort {
+
+public int[] sort(int[] a, int low, int high) {
+if(high<=low)
+return a;
+int j = partition(a, low, high);
+sort(a, low, j - 1);
+

@@ -1,0 +1,11 @@
+return magicSlowSearch(array, 0, array.length -1);
+}
+
+public int magicSlowSearch(int[] array, int firstIndex, int lastIndex){
+if (array == null || firstIndex > lastIndex) return -1;
+if (firstIndex == lastIndex)
+if(array[firstIndex] == firstIndex) return firstIndex;
+else return -1;
+
+int median = (firstIndex + lastIndex) / 2;
+

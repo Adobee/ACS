@@ -1,0 +1,9 @@
+// 2. for i=left to right
+// 	1. if i.distance < pivotVal: swap(i, storeIndex++)
+// 3. swap(right, storeInde)
+return quickSelect(arr, k);
+}
+
+public static int partition(Point[] arr, int left, int right, int pivot){
+double pivotVal = arr[pivot].distance;
+

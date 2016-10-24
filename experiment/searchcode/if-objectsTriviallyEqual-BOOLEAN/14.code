@@ -1,0 +1,7 @@
+public class DiffBuilder implements Builder<DiffResult> {
+
+private final List<Diff<?>> diffs;
+private final boolean objectsTriviallyEqual;
+// Don&#39;t compare any fields if objects equal
+this.objectsTriviallyEqual = (lhs == rhs || lhs.equals(rhs));
+

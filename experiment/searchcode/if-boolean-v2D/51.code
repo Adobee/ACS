@@ -1,0 +1,10 @@
+public Vector3f toFloat() {
+return new Vector3f(x, y, z);
+}
+
+public boolean equals(Vector3d c) {
+if(c.getX() == x &amp;&amp; c.getY() == y &amp;&amp; c.getZ() == z) return true;
+// Check if another x,z coordinate is within a certain distance in any direction
+public boolean isWithinDistance(Vector2d v2d, int distance) {
+int xDist = Math.abs(v2d.getX() - this.x);
+

@@ -1,0 +1,13 @@
+//*  Purpose
+//*  =======
+//*
+//*  DLASQ3 checks for deflation, computes a shift (TAU) and calls dqds.
+//*  In case of failure it changes shifts, and tries again until output
+TOL2 = TOL*TOL; //TOL2 = TOL**2
+//*
+//*     Check for deflation.
+//*
+for (;;) { //10 CONTINUE
+//*
+if ( N0 < I0 )   {
+

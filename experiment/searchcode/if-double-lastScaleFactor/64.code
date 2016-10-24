@@ -1,0 +1,7 @@
+public void switchToBuilder() {
+if (this.isFullScreen) {
+this.switchToWindowed(this.lastScaleFactor);
+private void setLastScaleFactor() {
+if (this.getWidth() < this.getHeight()) {
+this.lastScaleFactor = (int)Math.round(this.getWidth() / Game.renderWidth);
+

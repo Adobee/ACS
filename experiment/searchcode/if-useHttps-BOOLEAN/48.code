@@ -1,0 +1,6 @@
+for (AmazonProductAdvertisingLocale l : AmazonProductAdvertisingLocale.values()) {
+for (boolean useHttps : new boolean[] { true, false }) {
+
+if (l.getEndpoint(useHttps) == null) {
+// skip unsupported
+

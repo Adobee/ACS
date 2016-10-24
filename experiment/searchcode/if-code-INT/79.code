@@ -1,0 +1,13 @@
+@Column(name = &quot;tamperCode&quot;)
+int tamperCode;
+
+public int getTamperCode() {
+if (tamperCode == 0) {
+tamperCode = hashCode();
+}
+return tamperCode;
+}
+
+public void setTamperCode(int tamperCode) {
+this.tamperCode = tamperCode;
+

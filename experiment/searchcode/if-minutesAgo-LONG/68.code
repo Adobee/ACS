@@ -1,0 +1,9 @@
+dateString = String.format((minutes <= 1) ? minuteAgo : minutesAgo, minutes) + &quot;, &quot;;
+}
+else if (duration < ONE_DAY) {
+sdf = new SimpleDateFormat(timeFormat);
+dateString = String.format((hours <= 1) ? hourAgo : hoursAgo, hours) + &quot;, &quot;;
+}
+else if (duration < ONE_MONTH) {
+long days = duration / ONE_DAY;
+

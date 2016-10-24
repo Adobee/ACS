@@ -1,0 +1,6 @@
+CharsRefBuilder spare) throws IOException {
+double realWordErrorLikelihood = suggestion.realworldErrorLikelyhood();
+Terms terms = MultiFields.getTerms(indexReader, generator.field());
+if (terms !=  null) {
+gens.add(new DirectCandidateGenerator(directSpellChecker, generator.field(), generator.suggestMode(),
+

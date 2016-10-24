@@ -1,0 +1,9 @@
+private final boolean onlyIfCached;
+
+private CacheControl(boolean noCache, boolean noStore, int maxAgeSeconds, int sMaxAgeSeconds,
+boolean isPublic, boolean mustRevalidate, int maxStaleSeconds, int minFreshSeconds,
+boolean onlyIfCached) {
+this.noCache = noCache;
+this.noStore = noStore;
+this.maxAgeSeconds = maxAgeSeconds;
+

@@ -1,0 +1,9 @@
+List<List<Integer>> hashset )
+{
+Double tmp = null , tmp1 = null  ;
+for(int i =0;i < Math.pow(2, vec.size() ) ; i ++)
+tmp = new Double(0) ; tmp1 = new Double(0) ;
+for(int j = 0 ; j < set.get(i).size() ; j ++ )
+{
+tmp += set.get(i).get(j) * set.get(i).get(j) ;
+

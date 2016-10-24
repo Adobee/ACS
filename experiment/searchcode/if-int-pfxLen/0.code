@@ -1,0 +1,8 @@
+public static int[] computePi(String pattern) {
+int[] pi = new int[pattern.length()+1];
+int nextChr, pfxLen;
+while (pattern.charAt(pfxLen) != pattern.charAt(nextChr) &amp;&amp; pfxLen > 0)
+pfxLen = pi[pfxLen];
+
+if (nucleotideEquals(pattern.charAt(pfxLen), pattern.charAt(nextChr)))
+

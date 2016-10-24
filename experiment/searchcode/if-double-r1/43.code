@@ -1,0 +1,10 @@
+Scanner cin = new Scanner(System.in);
+double x1 = cin.nextDouble();
+double y1 = cin.nextDouble();
+double r1 = cin.nextDouble();
+double d = Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+double area;
+if (d >= r1 + r2) {
+area = 0;
+} else if (r1 >= d + r2) {
+

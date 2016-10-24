@@ -1,0 +1,12 @@
+import wd.android.util.util.MyLog;
+
+import com.jakewharton.disklrucache.DiskLruCache;
+
+public abstract class DiskCacheLoder<V> implements ILocalCache<String, V> {
+public V get(String key) {
+DiskLruCache.Snapshot snapshot;
+try {
+snapshot = cache.get(key);
+
+if (snapshot == null) {
+

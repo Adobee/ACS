@@ -1,0 +1,10 @@
+SortedMap<Integer, RuntimeDetailedEntry> medians = AggregateUtil.computeAverageDetailed(runTimes);
+StringBuilder cBuf = new StringBuilder();
+if (!appendOutput) {
+cBuf.append(&quot;#dMax&quot;).append(&quot;\t&quot;).append(&quot;t&quot;).append(&quot;\t&quot;).append(&quot;t_db&quot;).append(&quot;\t&quot;);
+RuntimeDetailedEntry entry = medians.get(duration);
+double runtime;
+int lookups;
+
+cBuf.append(formatter.format(entry.getRuntime(Detail.TOTAL))).append(&quot;\t&quot;);
+

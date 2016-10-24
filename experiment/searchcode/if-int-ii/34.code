@@ -1,0 +1,13 @@
+int m = b.size();
+int S[][] = new int[n + 1][m + 1];
+int R[][] = new int[n + 1][m + 1];
+int ii, jj;
+
+// It is important to use <=, not <. The next two for-loops are initialization
+// This is the main dynamic programming loop that computes the score and
+// backtracking arrays.
+for (ii = 1; ii <= n; ++ii) {
+for (jj = 1; jj <= m; ++jj) {
+
+if (a.get(ii - 1).equals(b.get(jj - 1))) {
+

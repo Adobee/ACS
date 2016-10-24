@@ -1,0 +1,13 @@
+abstract class LimitedInputStream
+extends InputStream
+{
+protected final InputStream _in;
+
+LimitedInputStream(
+InputStream in)
+{
+this._in = in;
+}
+
+InputStream getUnderlyingStream()
+

@@ -1,0 +1,9 @@
+final FactorizedTimeseriesBean factorizedTimeseries = new FactorizedTimeseriesBean( oneTimeseries );
+final ZmlLink dataLink = oneTimeseries.getDataLink();
+if( dataLink != null &amp;&amp; dataLink.isLinkSet() )
+final ZmlLink timeseriesLink = oneFactorizedTimeseries.getTimeseriesLink();
+if( timeseriesLink == null )
+continue;
+
+final FactorizedTimeseriesBean bean = m_cache.get( timeseriesLink.getHref() );
+

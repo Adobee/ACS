@@ -1,0 +1,13 @@
+public class TempPixel extends AbstractPixel {
+private double targetX;
+private double targetY;
+
+public TempPixel(double startX, double startY, double endX, double endY, PixelColor color) {
+if (x < targetX) {
+x = targetX;
+}
+}
+if (this.y > targetY) {
+this.y-=STEP;
+if (y < targetY) {
+

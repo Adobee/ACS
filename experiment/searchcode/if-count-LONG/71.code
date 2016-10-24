@@ -1,0 +1,9 @@
+public void solve(int testNumber, InputReader in, OutputWriter out) {
+long count = in.readLong();
+long first = (count * (count + 1)) >> 1;
+long second;
+if ((count &amp; 1) == 0)
+second = count - Long.highestOneBit(count) + 1;
+else if ((count &amp; 3) == 3)
+second = 0;
+

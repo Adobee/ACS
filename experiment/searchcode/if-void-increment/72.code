@@ -1,0 +1,7 @@
+private final AtomicReference<EventIncrementCache> Rp = new AtomicReference();
+
+public void flush()
+{
+EventIncrementCache localEventIncrementCache = (EventIncrementCache)this.Rp.get();
+if (localEventIncrementCache != null) {
+

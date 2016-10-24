@@ -1,0 +1,6 @@
+private void writeObject(Object object) throws IOException {
+if (object instanceof StreamObject) {
+writeStream((StreamObject) object);
+} else if (object instanceof DictionaryObject) {
+writeDictionary((DictionaryObject) object);
+

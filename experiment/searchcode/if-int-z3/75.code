@@ -1,0 +1,20 @@
+public static double[] Z2 = new double[26];
+
+/**
+* Z3 descriptor values. Polarity / charge.
+*/
+public static double[] Z3 = new double[26];
+* Static helper method to get Z2 descriptor value from character.
+*
+* @param x the character
+*
+* @return
+*/
+public static double getZ3(char x)
+{
+if(x==&#39;-&#39;||x==&#39;X&#39;)
+return 0.0;
+return Z3[ ((char) x)-65 ];
+}
+}
+

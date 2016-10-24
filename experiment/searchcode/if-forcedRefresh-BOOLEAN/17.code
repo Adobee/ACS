@@ -1,0 +1,5 @@
+assertFalse(&quot;request shouldn&#39;t have forced a refresh&quot;, index.forcedRefresh());
+assertSearchHits(client().prepareSearch(&quot;test&quot;).setQuery(matchQuery(&quot;foo&quot;, &quot;bar&quot;)).get(), &quot;1&quot;);
+assertFalse(&quot;request shouldn&#39;t have forced a refresh&quot;, delete.forcedRefresh());
+assertNoSearchHits(client().prepareSearch(&quot;test&quot;).setQuery(matchQuery(&quot;foo&quot;, &quot;bar&quot;)).get());
+

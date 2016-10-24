@@ -1,0 +1,15 @@
+public class TanimotoSimilartiy implements BooleanSimilarityMeasure
+{
+@Override
+public Double similarity(Boolean[] b1, Boolean[] b2)
+{
+if (b1.length == 0 || b1.length != b2.length)
+if (b1[i] &amp;&amp; b2[i])
+and++;
+if (b1[i] || b2[i])
+or++;
+}
+if (or == 0)
+return null;
+double d = and / (double) or;
+

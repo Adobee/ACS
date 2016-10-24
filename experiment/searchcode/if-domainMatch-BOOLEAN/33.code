@@ -1,0 +1,6 @@
+public class BasicDomainHandler implements CommonCookieAttributeHandler {
+static boolean domainMatch(String str, String str2) {
+if (InetAddressUtils.isIPv4Address(str2) || InetAddressUtils.isIPv6Address(str2)) {
+throw new CookieRestrictionViolationException(&quot;Cookie &#39;domain&#39; may not be null&quot;);
+} else if (!host.equals(domain) &amp;&amp; !domainMatch(domain, host)) {
+

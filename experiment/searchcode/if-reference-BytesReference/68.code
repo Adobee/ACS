@@ -1,0 +1,8 @@
+import java.io.IOException;
+import org.elasticsearch.common.bytes.BytesReference;
+import org.elasticsearch.common.xcontent.XContentHelper;
+return Observable.just(doParse(new ByteBufBytesReference(content), status));
+}
+
+private static FlushResponse doParse(BytesReference bytesReference, int status) {
+

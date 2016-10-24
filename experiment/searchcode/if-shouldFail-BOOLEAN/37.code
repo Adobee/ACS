@@ -1,0 +1,11 @@
+public class FormInstanceWithFailures extends FormInstance {
+private static boolean failOnIdSet = false;
+
+public FormInstanceWithFailures(TreeElement root) {
+public static void setFailOnIdSet(boolean shouldFail) {
+failOnIdSet = shouldFail;
+}
+
+@Override
+public void setID(int id) {
+

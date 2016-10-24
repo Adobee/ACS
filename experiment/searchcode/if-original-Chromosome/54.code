@@ -1,0 +1,6 @@
+_pop.initNewPop();
+
+_pop.setChromosome(0, pop.getSingleChromosome(selectedIndex));//Set the original solution to the 1st chromosome.
+boolean compareResult = getObjcomparison(_pop.getObjectiveValues(1), pop.getObjectiveValues(selectedIndex));
+if(compareResult == true){//If the new solution is better, we replace the original solution.
+

@@ -1,0 +1,10 @@
+rd.graphvizData += graphvizName + &quot; [label=\&quot;&quot; + this.toString() + &quot;\&quot;,shape=folder];\n&quot;;
+rd.name = stringName;
+}
+
+@Override
+public boolean nodeEquals(GPNode node) {
+// to change this to isAssignableTo(...)
+if (this.getClass() != node.getClass()) { return false; }
+return (((StringNode)node).toString() == stringName);
+

@@ -1,0 +1,8 @@
+// One year may need to be added to fix estimate.
+long oneYear;
+if (isLeapYear(year)) {
+oneYear = DateTimeConstants.MILLIS_PER_DAY * 366L;
+int getWeekOfWeekyear(long instant, int year) {
+long firstWeekMillis1 = getFirstWeekOfYearMillis(year);
+if (instant < firstWeekMillis1) {
+

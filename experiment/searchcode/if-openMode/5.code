@@ -1,0 +1,8 @@
+return subForm==null || !subForm.equals(parameters[0]);
+}
+else if(formulaName.equals(&quot;isNew&quot;)) { //是否新记录
+return openMode==null || openMode.isEmpty() || FormAction.OPEN_MODE_CREATE.equals(openMode) || FormAction.OPEN_MODE_CREATE_COMPONENT.equals(openMode);
+}
+else if(formulaName.equals(&quot;isOld&quot;)) { //是否旧记录
+return openMode!=null &amp;&amp; !openMode.isEmpty() &amp;&amp; !FormAction.OPEN_MODE_CREATE.equals(openMode) &amp;&amp; !FormAction.OPEN_MODE_CREATE_COMPONENT.equals(openMode);
+

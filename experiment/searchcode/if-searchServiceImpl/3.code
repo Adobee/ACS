@@ -1,0 +1,9 @@
+import org.se.lab.data.UserDAO;
+
+public class SearchServiceImpl implements SearchService
+{
+public SearchServiceImpl(UserDAO dao)
+{
+if(dao == null)
+throw new IllegalArgumentException(&quot;Invalid reference of type UserDAO!&quot;);
+

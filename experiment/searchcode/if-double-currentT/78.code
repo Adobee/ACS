@@ -1,0 +1,8 @@
+* @return
+* 		      true if finished moving, false otherwise
+*/
+public static boolean move(double speed, double stop)
+double error = 1 * (Robot.encoderElevator.get() - stop);
+double speed = -1.0 * p * error;
+if (Math.abs(speed) > 1.0) {
+

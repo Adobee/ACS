@@ -1,0 +1,8 @@
+public class CartAmountDiscount extends Discount {
+private double threshold;
+
+public CartAmountDiscount(String code, Double amount, double threshold) {
+super(DiscountType.CART_AMOUNT, code, amount);
+
+setThreshold(threshold);
+

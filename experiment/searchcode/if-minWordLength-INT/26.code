@@ -1,0 +1,9 @@
+private final int minWordLength;
+
+private OutputCollector collector;
+
+public WordSplitterBolt(int minWordLength) {
+String[] words = text.split(&quot; &quot;);
+for (String word : words) {
+if (word.length() >= minWordLength) {
+

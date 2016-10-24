@@ -1,0 +1,7 @@
+} else {
+appInfo.firstChar = appInfo.label.charAt(0);
+if (me.yugy.app.common.utils.TextUtils.isCharCJK(appInfo.firstChar)) {
+appInfo.firstChar = Character.toUpperCase(appInfo.firstChar);
+if (!Character.isLetter(appInfo.firstChar)) {
+appInfo.firstChar = &#39;#&#39;;
+

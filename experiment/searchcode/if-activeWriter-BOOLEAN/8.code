@@ -1,0 +1,9 @@
+//if the current thread is the active writer
+if (currentThread == activeWriter) {
+return true;
+* Non-blocking method that attempts to acquire the read lock.
+* Returns true if successful.
+* @return
+*/
+public synchronized boolean tryLockRead() {
+

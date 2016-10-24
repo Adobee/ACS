@@ -1,0 +1,6 @@
+for (int i = beg; i < str.length(); i++) {
+if (Character.isDigit(str.charAt(i))) {
+if (ret > Integer.MAX_VALUE / 10
+|| (ret == Integer.MAX_VALUE / 10
+&amp;&amp; Character.getNumericValue(str.charAt(i)) > Integer.MAX_VALUE % 10)) {
+

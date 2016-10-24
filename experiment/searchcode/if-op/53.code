@@ -1,0 +1,7 @@
+// pool can be null if definitely not needed.
+//print(csOp.toSource()+&quot; &quot;+attOp.toSource()+&quot; &quot;+opOut.toSource());
+if (attOp.opcode == &#39;-&#39;) {
+Operation.copyOp(attOp, opOut);
+attOp.opcode = 0;
+} else if (attOp.opcode==0) {
+

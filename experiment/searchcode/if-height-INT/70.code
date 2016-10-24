@@ -1,0 +1,14 @@
+public class WeightHeight  implements Comparator<WeightHeight>{
+int height;
+int weight;
+
+public WeightHeight(){}
+
+public WeightHeight(int weight, int height)
+{
+this.weight=weight;
+this.height=height;
+}
+
+public int compare(WeightHeight arg0, WeightHeight arg1) {
+

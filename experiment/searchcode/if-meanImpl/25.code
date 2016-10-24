@@ -1,0 +1,10 @@
+private org.apache.commons.math.stat.descriptive.StorelessUnivariateStatistic[] meanImpl;
+
+private org.apache.commons.math.stat.descriptive.moment.VectorialCovariance covarianceImpl;
+setImpl(meanImpl, this.meanImpl);
+}
+
+private void checkEmpty() {
+if ((n) > 0) {
+throw org.apache.commons.math.MathRuntimeException.createIllegalStateException(&quot;{0} values have been added before statistic is configured&quot;, n);
+

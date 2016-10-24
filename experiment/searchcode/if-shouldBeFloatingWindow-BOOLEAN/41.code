@@ -1,0 +1,8 @@
+mShouldBeFloatingWindow = shouldBeFloatingWindow();
+if (mShouldBeFloatingWindow) {
+setupFloatingWindow(R.dimen.floating_window_width, R.dimen.floating_window_height);
+setupToolbar();
+
+// HACK: cannot get FitsSystemWindow to work on LinearLayout
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+

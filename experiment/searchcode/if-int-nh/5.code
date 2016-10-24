@@ -1,0 +1,10 @@
+* Methods for converting netCDf 3 with netCDF 4 data types
+*/
+public class N4DataType {
+
+static DataType convert(int nhType) {
+if (nhType == NhVariable.TP_SBYTE) {
+} else if (nhType == NhVariable.TP_SHORT) {
+return DataType.SHORT;
+} else if (nhType == NhVariable.TP_INT) {
+

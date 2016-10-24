@@ -1,0 +1,13 @@
+public static String compress(String s){
+
+if(s == null) return &quot;&quot;;
+
+String result = &quot;&quot;;
+char last = s.charAt(0);
+int count = 1;
+
+for(int i = 1; i < s.length(); i++){
+if(last == s.charAt(i)){
+count++;
+}else{
+

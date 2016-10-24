@@ -1,0 +1,15 @@
+
+public class Fibonacci {
+public long fibWhile(long n)
+{
+long prev = 0;
+long next = 1;
+boolean doneOnce =false;
+long prev = 0;
+long next = 1;
+long sum = 0;
+long i = 0;
+do
+{
+if (doneOnce)
+

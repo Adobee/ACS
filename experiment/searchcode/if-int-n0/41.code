@@ -1,0 +1,10 @@
+while (!queue.isEmpty()) {
+int cur = queue.poll();
+int n0 = z0[cur];
+int n1 = z1[cur];
+if (!connect[n0][n1] &amp;&amp; !connect[n1][n0]) {
+return &quot;Does not exist&quot;;
+}
+boolean all_connect = false;
+if (connect[n0][cur] || connect[n1][cur]) {
+

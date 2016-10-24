@@ -1,0 +1,12 @@
+public String id;
+public String nameKey;
+public boolean show = true;
+public boolean ifSelect = false;
+
+public void initRole(Role role) {
+id = role.id.toString();
+nameKey = role.nameKey;
+}
+
+}
+

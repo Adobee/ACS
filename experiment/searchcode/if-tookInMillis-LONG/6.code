@@ -1,0 +1,12 @@
+public class BulkResponse implements ActionResponse, Iterable<BulkItemResponse> {
+
+private BulkItemResponse[] responses;
+
+private long tookInMillis;
+
+BulkResponse() {
+}
+
+public BulkResponse(BulkItemResponse[] responses, long tookInMillis) {
+this.responses = responses;
+

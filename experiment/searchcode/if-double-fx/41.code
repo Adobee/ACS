@@ -1,0 +1,13 @@
+public static int getDist(int fx, int fy, int tx, int ty){
+return (tx-fx)*(tx-fx) + (ty-fy)*(ty-fy);
+}
+
+//좌표간 기울기 리턴
+public static double getTangent(int fx, int fy, int tx, int ty){
+if(tx-fx == 0){
+tx = fx+1;
+}
+return ((double)(ty-fy))/((double)(tx-fx));
+}
+}
+

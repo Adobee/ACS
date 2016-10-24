@@ -1,0 +1,5 @@
+public ProduceRNAiReport(Collection<Alignments> lincs, Collection<RefSeqGene> transcripts, String save, String genomeDirectory, File okRepeatFile, boolean repeatMask, Map<String, RNAiGeneAnnotation> rnaiReport, String format, boolean includePrevious)throws Exception{
+this.incrementNumber=getLastUsedNumber(rnaiReport);
+Collection<RNAiGeneAnnotation> lincRNAAnnotations=makeLincRNAAnnotations(overlaps, rnaiReport);
+if(includePrevious){
+

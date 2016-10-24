@@ -1,0 +1,10 @@
+static String splitByComma(String str) {
+
+int firstCommaPos = str.length() % 3;
+if (firstCommaPos == 0) {
+firstCommaPos = 3;
+}
+
+StringBuilder builder = new StringBuilder(str);
+for (int i = firstCommaPos; i < builder.length(); i += 4) {
+

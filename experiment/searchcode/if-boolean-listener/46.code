@@ -1,0 +1,9 @@
+this.listeners = new HashSet<CollectionListener<T>>();
+}
+
+public boolean add(T t) {
+if (base.add(t)) {
+public boolean remove(T item) {
+if (base.remove(item)) {
+for (CollectionListener<T> listener : listeners)
+

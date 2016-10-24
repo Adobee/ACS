@@ -1,0 +1,13 @@
+* This class returns full paths of .css and .js files.
+* @param initData
+* @return
+*/
+public String toReplacedHTML(String initData){
+
+int initialIndex = 0;
+int inIndex;
+int finalIndex;
+StringBuffer sb = null;
+
+sb = new StringBuffer(initData);
+

@@ -1,0 +1,9 @@
+public double maxY;
+public double maxZ;
+
+public static AABB getBoundingBox(double mix, double max, double miy, double may, double miz, double maz) {
+return new AABB(mix, miy, miz, max, may, maz);
+}
+
+public static List<AABB> addAABBsToList(List<AABB> list, AABB... aabbs) {
+

@@ -1,0 +1,7 @@
+/** Parent class for {@link ExpectedCondition} implementations that validates a text related to a {@link WebElement} and uses a
+* {@link Validator}. It returns true if and only if the element is found and the validator accepts the value. If one of the
+public abstract class ValidatingCondition extends BooleanCondition {
+
+protected final Validator<String> validator;
+protected final String checkedType;
+

@@ -1,0 +1,7 @@
+public ArModel(int C, RealMatrix[] A, RealMatrix V, double freqSampling) {
+for (RealMatrix M : A) {
+if (M.getRowDimension() != C || M.getColumnDimension() != C) {
+RealMatrix bigMatrixInverse = new LUDecompositionImpl(bigMatrix).getSolver().getInverse();
+// TODO what if not invertible?
+RealMatrix bigSolution = bigMatrixInverse.multiply(bigColumn);
+

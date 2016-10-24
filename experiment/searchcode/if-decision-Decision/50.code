@@ -1,0 +1,6 @@
+Map<DecisionTablesMapKey,DecisionTable> decisionTablesMap){
+if(decisionSettings.containsKey(agentClass)){
+Map<DecisionTablesMapKey,DecisionTable> decisionTablesMap = agent.getDefaultDecisionTablesMap();
+if(decisionTablesMap != null){
+addDecisionTablesMap(agent.getClass(), decisionTablesMap);
+

@@ -1,0 +1,11 @@
+protected double constant = 1.;
+protected double ki;
+protected double integral = 0.;
+protected double lastError = 0;
+this.ki = ki;
+}
+
+public double calcOutputDefault(double error) {
+integral = constant * integral + error;
+return integral * ki;
+

@@ -1,0 +1,11 @@
+public static double regularizedIncompleteBetaFunction(double alpha, double beta, double x) {
+if (x < 0.0 || x > 1.0) {
+throw new IllegalArgumentException(&quot;Invalid x: &quot; + x);
+}
+
+double ibeta = 0.0;
+if (x == 0.0) {
+ibeta = 0.0;
+} else {
+if (x == 1.0) {
+

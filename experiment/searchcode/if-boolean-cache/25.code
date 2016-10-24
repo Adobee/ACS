@@ -1,0 +1,11 @@
+return getCache(CACHE_DEFAULT_NAME);
+}
+
+public static boolean clearCache(String key){
+return clearCache(CACHE_DEFAULT_NAME, key);
+}
+
+public static boolean clearCache(String name, String key){
+
+if(cacheManager.cacheExists(name)){
+

@@ -1,0 +1,7 @@
+public void solve(int testNumber, InputReader in, OutputWriter out) {
+Point2D.Double[] l1 = new Point2D.Double[8];
+for (int i = 0;i < 8; i++){
+double x = in.nextInt();
+double y = in.nextInt();
+l1[i] = new Point2D.Double(x,y);
+

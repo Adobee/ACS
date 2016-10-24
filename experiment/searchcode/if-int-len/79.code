@@ -1,0 +1,10 @@
+solution.merge(A, 0, B, 1);
+}
+public void merge(int A[], int m, int B[], int n) {
+int len = m + n - 1;
+int aLen = m;
+int bLen = n;
+int i = 0, j = 0;
+while (i < aLen &amp;&amp; j < bLen) {
+if (A[aLen - 1 - i] < B[bLen - 1 - j]) {
+

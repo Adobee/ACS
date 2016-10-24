@@ -1,0 +1,12 @@
+package edu.dip.aol.query.clicks.models.objects;
+
+public class Pair {
+
+private double v1;
+if (o == null || getClass() != o.getClass()) return false;
+
+Pair pair = (Pair) o;
+
+if (Double.compare(pair.v1, v1) != 0) return false;
+if (Double.compare(pair.v2, v2) != 0) return false;
+

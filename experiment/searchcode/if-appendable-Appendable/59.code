@@ -1,0 +1,11 @@
+public class LazyCreateFileAppendable implements Appendable {
+
+private final String name;
+private boolean append = false;
+this.fallback = fallback;
+}
+
+private synchronized void initializeFileAppendable()
+throws FileNotFoundException {
+if (appendable == null) {
+

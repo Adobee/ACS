@@ -1,0 +1,11 @@
+public class HalfOpenInterval<T extends Comparable<? super T>> implements Interval<T> {
+
+private final Bound<T> bound;
+private final boolean upperBound;
+public static <S extends Comparable<? super S>> HalfOpenInterval<S> below(Bound<S> bound) {
+return new HalfOpenInterval<S>(bound, true);
+}
+
+public boolean contains(T element) {
+if (element == null) {
+

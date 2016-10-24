@@ -1,0 +1,10 @@
+public void aggregate(List<Instance> source, int srcIndex, Instance target, int targetIndex) {
+int count = 0;
+double sum = 0.0;
+double sumsq = 0.0;
+if (inst.isMissing(srcIndex)) continue;
+
+double value = inst.value(srcIndex);
+sum += value;
+sumsq += value * value;
+

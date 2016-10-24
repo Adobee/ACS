@@ -1,0 +1,10 @@
+/** Maximal allowed number of cost evaluations. */
+private int maxCostEval;
+
+/** Number of cost evaluations. */
+private int costEvaluations;
+throws EstimationException {
+
+if (++costEvaluations > maxCostEval) {
+throw new EstimationException(LocalizedFormats.MAX_EVALUATIONS_EXCEEDED,
+

@@ -1,0 +1,7 @@
+public long add(long millis, long value) {
+int weekyear = get(millis);
+int newWeekyear = weekyear + FieldUtils.safeToInt(value);
+if (weekyear < 0) {
+if (newWeekyear >= 0) {
+newWeekyear++;
+

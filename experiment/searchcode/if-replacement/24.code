@@ -1,0 +1,11 @@
+public class ReplacementFilter extends SchematicFilter {
+
+private Block targetBlock;
+private byte targetMetadata;
+if ((matchMetadata &amp;&amp; metadata[index] == targetMetadata) || !matchMetadata)
+{
+blocks[index] = replacementBlock;
+if (changeMetadata)
+{
+metadata[index] = replacementMetadata;
+

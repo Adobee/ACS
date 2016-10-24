@@ -1,0 +1,7 @@
+private ExpressionComparator expressionComparator;
+
+@Override
+protected boolean internalCompare(List<ICodePiece> javaPieces, List<ICodePiece> jsPieces) {
+if (javaPiecesComp.get(j).getPieceType() == PieceType.EXPRESSION) {
+if (!expressionComparator.compare(javaPiecesComp.get(j), jsPiecesComp.get(j))) {
+

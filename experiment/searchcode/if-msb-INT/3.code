@@ -1,0 +1,9 @@
+int remainder = ((day + month) % 8);
+
+int[] msbLsb = new int[2];  // MSB in 0, LSB in 1
+msbLsb[0] = (crc &amp; 0xFF00) >> 8;
+msbLsb[1] = crc &amp; 0xFF;
+
+int result = 0;
+for (int i = 0; i < 2; i++) {
+

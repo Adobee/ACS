@@ -1,0 +1,9 @@
+public class LowMemValCompare implements ValCompare<Species> {
+
+@Override
+public int compareByVal(Species Spec1, Species Spec2) {
+if(null == Spec1 || null == Spec2) {
+String rowSeq = Spec1.getSequence();
+String collumnSeq = Spec2.getSequence();
+int[][] compareArr = new int[collumnSeq.length()+1][2];
+

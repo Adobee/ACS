@@ -1,0 +1,11 @@
+* @return <code>true</code> if the given text is a binding declaration.
+*/
+protected boolean isObjectDataBinding(String text)
+{
+if (text!= null &amp;&amp;  RegexpPatterns.REGEXP_CRUX_OBJECT_DATA_BINDING.matcher(text).matches())
+else if (primitiveType.equals(JPrimitiveType.BOOLEAN))
+{
+getExpression = &quot;false&quot;;
+}
+else if (!primitiveType.equals(JPrimitiveType.VOID))
+

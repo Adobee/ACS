@@ -1,0 +1,11 @@
+public void success(String response, UserActionEnum action) {
+Log.e(&quot;YQY&quot;,&quot;response = &quot; + response);
+if(action == LoginUserActionEnum.GETCODE){
+mUpdatableView.loginResult(true,response);
+}
+}
+
+@Override
+public void fail(VolleyError error, UserActionEnum action) {
+if(action == LoginUserActionEnum.GETCODE){
+

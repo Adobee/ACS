@@ -1,0 +1,10 @@
+// function to calculate relative insulin
+double result = 0;
+
+//if (start < getDuration()){
+start -= startingtime;
+public double calcIntegral(double time){
+double tmp_alpha = 1 / alpha;
+double tmp_beta = 1 / beta;
+double numerator = (Math.exp(tmp_alpha * time * (-1))/tmp_alpha)-(Math.exp(tmp_beta * time * (-1))/tmp_beta);
+

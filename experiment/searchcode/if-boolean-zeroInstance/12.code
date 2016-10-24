@@ -1,0 +1,7 @@
+public DelayBlockTileEntity() {
+triggerInvoke = BlockTriggerInvoke.ZEROINSTANCE;
+delay = 20;
+public void trigger(EnumTriggerState triggerState) {
+if(triggerState.getBooleanValue()) {
+worldObj.scheduleUpdate(getPos(), getBlockType(), delay);
+

@@ -1,0 +1,11 @@
+List<EventCategory> parentCategories = Lists.newLinkedList();
+
+for (EventCategory c : allCategories) {
+
+if (c.getDatabaseParentId() == -1) {
+List<EventCategory> subCategories = Lists.newLinkedList();
+
+for (EventCategory child : childCategories) {
+
+if (parent.getDatabaseId() == child.getDatabaseParentId()) {
+

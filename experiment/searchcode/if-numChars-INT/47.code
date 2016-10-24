@@ -1,0 +1,10 @@
+int numchars = in.read(buf, from, len);
+
+if (numchars == -1) {return -1;}
+
+for (int i=from; i<from + len; i++) {
+if (buf[i] == 13 || buf[i] == 10)
+buf[i] = &#39; &#39;;
+}
+return numchars;
+

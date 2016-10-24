@@ -1,0 +1,8 @@
+int len = s.length();
+boolean chars[] = new boolean[256];
+int startPos = 0;
+int maxLen = 0;
+for(int i = 0; i < len; ++i){
+if(chars[s.charAt(i)]){
+maxLen = maxLen > i - startPos ? maxLen : i - startPos;
+

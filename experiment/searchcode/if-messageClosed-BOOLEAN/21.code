@@ -1,0 +1,9 @@
+private boolean closed;
+private boolean messageClosed;
+
+// Stateful data about the current frame.
+private int opcode;
+messageClosed = false;
+frameCallback.onMessage(Okio.buffer(framedMessageSource), type);
+if (!messageClosed) {
+

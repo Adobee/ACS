@@ -1,0 +1,10 @@
+public OutlineSequenceSet() {
+super();
+}
+
+public boolean isSurroundedByAnExistingOutline(Vertex pixelVertex) {
+return this.isSurroundedByAnExistingOutline(pixelVertex, false);
+public boolean isSurroundedByAnExistingOutline(Vertex pixelVertex, boolean checkForOnlyBlackPixelsRightTillOutline) {
+for (Outline outline : this) {
+if (outline.isSurroundedByAnExistingOutline(pixelVertex, checkForOnlyBlackPixelsRightTillOutline)) {
+

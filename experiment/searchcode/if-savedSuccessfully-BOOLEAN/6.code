@@ -1,0 +1,12 @@
+File tmpFile = new File(entryFile.getAbsolutePath() + TEMP_IMAGE_POSTFIX);
+boolean savedSuccessfully = false;
+try {
+OutputStream os = new BufferedOutputStream(new FileOutputStream(tmpFile), bufferSize);
+savedSuccessfully = false;
+}
+} finally {
+Util_IO.closeSilently(os);
+}
+} finally {
+if (savedSuccessfully &amp;&amp; !tmpFile.renameTo(entryFile)) {
+

@@ -1,0 +1,11 @@
+@SuppressWarnings(&quot;WeakerAccess&quot;)
+public static long solve(int N) {
+long result = 0;
+double minRatio = Double.MAX_VALUE;
+continue;
+}
+
+double ratio = (double) n / (double) t;
+
+if (ratio < minRatio) {
+

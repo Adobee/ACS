@@ -1,0 +1,7 @@
+final int heightExcess = iHeight + rowsShift - BLOCK_SIZE;
+final int widthExcess = jWidth + columnsShift - BLOCK_SIZE;
+if (heightExcess > 0) {
+final double[] block = blocks[iBlock * blockColumns + jBlock];
+final int available = outBlock.length - outIndex;
+if (jWidth > available) {
+

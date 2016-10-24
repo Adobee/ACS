@@ -1,0 +1,9 @@
+package au.id.cronin.rea.robot;
+
+public class Table {
+private final int upperBound;
+private final int lowerBound;
+
+public Table(final int lowerBound, final int upperBound) {
+if(upperBound <= lowerBound)
+

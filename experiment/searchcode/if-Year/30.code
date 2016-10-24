@@ -1,0 +1,12 @@
+package ifElse;
+
+public class LeapYear {
+int year;
+String yearStr = &quot;&quot;;
+
+public int getYear() {
+return year;
+}
+public void setYear(int year) {
+if (year % 4 == 0 || year==2000 ) {
+

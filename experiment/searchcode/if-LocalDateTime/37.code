@@ -1,0 +1,9 @@
+package com.github.mkopylec.webdevcalendar.domain;
+
+import java.time.LocalDateTime;
+import java.util.List;
+
+class TimeFrameFilter implements MeetingSlotsTransformer {
+
+private final LocalDateTime start;
+

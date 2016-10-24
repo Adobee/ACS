@@ -1,0 +1,10 @@
+private final Object sincronizzaUpdate = new Object();
+
+float sampleFreq = 100;
+float twoKpDef = (2.0f * 5f);
+public float q0 = 1, q1 = 0, q2 = 0, q3 = 0;
+qDot3 = 0.5f * (q0 * gy - q1 * gz + q3 * gx);
+qDot4 = 0.5f * (q0 * gz + q1 * gy - q2 * gx);
+
+// Compute feedback only if accelerometer measurement valid (avoids
+

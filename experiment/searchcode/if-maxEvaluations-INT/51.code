@@ -1,0 +1,11 @@
+protected IMOEAProblem<S> problem;
+protected int maxEvaluations;
+
+protected Instrumenter instrumenter;
+private File referenceSetFile;
+this.problem = problem;
+}
+
+public AbstractExecutorFactory(IMOEAProblem<S> problem, int maxEvaluations) {
+this.problem = problem;
+

@@ -1,0 +1,17 @@
+public class Solution{
+public int jump(int[] nums){
+int step=0;
+int last=nums.length-1;
+int i=0;
+while(i<last){
+if(i+nums[i]>=last){
+step++;
+if(i==0) break;
+last=i;
+i=0;
+}else i++;
+}
+return step;
+}
+}
+

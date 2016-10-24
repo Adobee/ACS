@@ -1,0 +1,8 @@
+int hL=0,vL=0;
+int ih = h.length-1;
+int iv = v.length-1;
+int cost = 0;
+while ( ih >= 0 &amp;&amp; iv >= 0 ){
+if ( h[ih] > v[iv]){
+cost = (h[ih] *(vL+1)+ cost) % module;
+

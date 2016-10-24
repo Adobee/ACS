@@ -1,0 +1,9 @@
+public double[] calc_undistorted_coord(int x, int y, double un_x, double un_y) {
+double hw = clone.getWidth() / 2.0;
+double hh = clone.getHeight() / 2.0;
+double maxrad = (hw < hh ? hw : hh);
+hw += _offsetX * hw;
+hh += _offsetY * hh;
+
+double u = x - hw;
+

@@ -1,0 +1,13 @@
+public void setBoolean(Boolean _boolean) {
+this._boolean = _boolean;
+
+unsetNull();
+}
+
+public void setNull(Null _null) {
+if (_null != null)
+BooleanOrNull copy = (target == null) ? new BooleanOrNull() : (BooleanOrNull)target;
+
+if (isSetBoolean())
+copy.setBoolean((Boolean)copyBuilder.copy(_boolean));
+

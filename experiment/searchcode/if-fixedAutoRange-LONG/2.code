@@ -1,0 +1,9 @@
+String metricName = newValues.getName();
+Iterator<Long> iter = newValues.getValues().keySet().iterator();
+while(iter.hasNext()){
+long date = iter.next();
+* @param e  the action event.
+*/
+public void addOrUpdateData(String metric, long date, double value) {
+if(metric.equalsIgnoreCase(MetricNames.LOAD_ONE)) seriesOne.addOrUpdate(new Millisecond(new Date(date)), value);
+

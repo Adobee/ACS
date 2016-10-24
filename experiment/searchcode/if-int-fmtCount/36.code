@@ -1,0 +1,8 @@
+Validate.isTrue(foundFormats.size() == fmtCount);
+Validate.isTrue(foundDescriptions.size() == fmtCount);
+if (c[pos.getIndex()] != END_FE) {
+String args = null;
+int i = desc.indexOf(START_FMT);
+if (i > 0) {
+name = desc.substring(0, i).trim();
+

@@ -1,0 +1,6 @@
+// checks that the new model type is the same of the super model rel type or is overriding it
+if (!MIDTypeHierarchy.isRootType(modelRelTypeSuper)) {
+String srcUri = modelRelTypeSuper.getModelEndpoints().get(0).getTargetUri();
+String newSrcUri = newSrcModelType.getUri();
+if (!newSrcUri.equals(srcUri) &amp;&amp; !MIDTypeHierarchy.isSubtypeOf(newSrcUri, srcUri, typeMID)) {
+

@@ -1,0 +1,9 @@
+public volatile double maxErrordt, maxError, maxI, setPoint;
+public volatile double kP, kI, kD;
+public volatile boolean onTarget = false, enabled = false;
+double d = errorDt;
+
+double result = kP * p + kI * i + kD * d;
+
+if ((Math.abs(errorDt) < maxErrordt) &amp;&amp; (Math.abs(error) < maxError)) {
+

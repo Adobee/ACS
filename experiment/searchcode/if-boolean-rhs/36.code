@@ -1,0 +1,10 @@
+public List<Symbol> getRHS() {
+return RHS;
+}
+
+public boolean equals( Object o ) {
+if (! ( o instanceof Production ) ) return false;
+
+Production p = (Production)o;
+if ( getRHS().size() != p.getRHS().size() ) return false;
+

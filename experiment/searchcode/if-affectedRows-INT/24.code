@@ -1,0 +1,7 @@
+Cursor c = db.query(table, new String[] {BaseColumns._ID},
+whereClause, whereArgs, null, null, null);
+long[] affectedRows = null;
+if (c != null) {
+affectedRows = new long[c.getCount()];
+for (int i = 0; c.moveToNext(); i++) {
+

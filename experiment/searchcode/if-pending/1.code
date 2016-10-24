@@ -1,0 +1,9 @@
+static PendingPost obtainPendingPost(Subscription subscription, Object event) {
+synchronized (pendingPostPool) {
+int size = pendingPostPool.size();
+if (size > 0) {
+pendingPost.subscription = null;
+pendingPost.next = null;
+synchronized (pendingPostPool) {
+if (pendingPostPool.size() < AbstractSpiCall.DEFAULT_TIMEOUT) {
+

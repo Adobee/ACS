@@ -1,0 +1,11 @@
+this.allowFileId = allowFileId;
+}
+
+/** Auto-create the metadata index if required. */
+public boolean getAutoCreateIndex() {
+* @param considerAsAlias consider creating an aliased index
+*/
+public void ensureIndex(String name, boolean considerAsAlias) {
+try {
+if (name == null || name.trim().length() == 0) return;
+

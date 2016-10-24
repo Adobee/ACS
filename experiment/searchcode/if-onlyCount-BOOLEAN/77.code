@@ -1,0 +1,7 @@
+private String buildQuery(String elementType, Hashtable attributes, boolean caseSensitiv, String fieldsToSelect,
+boolean onlyCount) {
+String select = onlyCount ? &quot;COUNT(&quot; + fieldsToSelect + &quot;) AS Count&quot; : fieldsToSelect;
+private String buildQuery(String elementType, String id, String relatedElementType, String helperElementType,
+boolean onlyCount) {
+String select = onlyCount ? &quot;COUNT(*) AS Count&quot; : relatedElementType + &quot;.*&quot;;
+

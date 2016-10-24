@@ -1,0 +1,13 @@
+double alpha;
+double beta;
+cern.jet.random.Beta betaDistr;
+
+public BetaDistribution(double a, double b) {
+beta = b;
+}
+
+
+public static double sample(double a, double b) {
+if (a == 0 &amp;&amp; b == 0) {
+throw new IllegalArgumentException();
+

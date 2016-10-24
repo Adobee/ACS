@@ -1,0 +1,8 @@
+public class UniformDistribution implements Distribution {
+
+private double lowerBound;
+private double upperBound;
+public UniformDistribution(double lowerBound, double upperBound) {
+if(lowerBound >= upperBound)
+throw new IllegalArgumentException(&quot;Upper bound must be greater than lower bound&quot;);
+

@@ -1,0 +1,9 @@
+public Locale resolve(Locale defaultLocale) {
+Locale locale = getLocale(defaultLocale);
+
+if (locale != null) {
+Locale clientLocale = LocaleContextHolder.getLocale();
+
+if (clientLocale != null) {
+if (!clientLocale.equals(Locale.getDefault())) {
+

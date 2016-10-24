@@ -1,0 +1,14 @@
+x = inX;
+y = inY;
+}
+
+@Override
+void setSpeed(double inVX, double inVY) {
+vx = inVX;
+vy = inVY;
+void draw(Graphics2D g, int xOffset, int yOffset, double step) {
+
+switch (type) {
+case ENEMY_FIGURE_RUN:
+if (!dying) {
+

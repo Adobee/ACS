@@ -1,0 +1,6 @@
+public String convert(String s, int nRows) {
+if(nRows >= s.length() || nRows == 1 || s.length() <= 1)
+return s;
+String result = new String(&quot;&quot;);
+for(int i = 0; (2 * nRows - 2) * i < s.length(); ++i)
+

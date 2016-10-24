@@ -1,0 +1,10 @@
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
+
+public class Config {
+
+static HashMap<String, Double> defaultValues = new HashMap<String, Double>();
+public static double getDouble(String name) {
+double defaultValue = 0.0;
+if(defaultValues.containsKey(name)) {
+defaultValue = defaultValues.get(name);
+

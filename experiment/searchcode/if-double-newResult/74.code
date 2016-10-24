@@ -1,0 +1,7 @@
+double result = Double.MAX_VALUE;
+while (true) {
+double newResult = playTournament();
+result = newResult < result ? newResult : result;
+if (evaluationsDone >= EVALUATIONS_NUMBER) {
+break;
+

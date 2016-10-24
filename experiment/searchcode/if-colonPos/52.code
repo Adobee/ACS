@@ -1,0 +1,6 @@
+int colonPos = s.indexOf (&quot;:&quot;);
+if(((s.substring (0, colonPos)).contains(&quot; &quot;)) || (s.substring (colonPos+1)).contains(&quot; &quot;)){
+throw new IllegalArgumentException(&quot;There can&#39;t be any spaces in time representation.&quot;);
+}
+else if(!Pattern.matches(&quot;[0-9]+&quot;, (s.substring (0, colonPos))) || !Pattern.matches(&quot;[0-9]+&quot;, s.substring(colonPos+1))){
+

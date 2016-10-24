@@ -1,0 +1,11 @@
+return Math.sqrt(sum/lst.size());
+}
+
+// Compares two doubles to see if they&#39;re equal
+public boolean doubleEquals (double A, double B){
+double maxRelativeError = 0.0001;
+double relativeError;
+if (B > A)
+relativeError = (B - A) / B;
+else
+

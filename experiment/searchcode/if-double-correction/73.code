@@ -1,0 +1,7 @@
+public static double coerce(double num, double bottom, double top) {
+if(inRange(num, bottom, top)) {
+double bs = 0;
+if(d != -1.0) {
+double correction = 0;
+if(d > 16.5) {
+

@@ -1,0 +1,9 @@
+private boolean useExactMatch = false;
+private boolean useReverse = false;
+
+@Override
+public boolean matches( AccessPoint accessPoint ) {
+boolean returnValue;
+
+if ( ( useExactMatch &amp;&amp; accessPoint.getIdentifier().equals( filterString ) ) || ( !useExactMatch &amp;&amp; accessPoint.getIdentifier().contains( filterString ) ) ) {
+

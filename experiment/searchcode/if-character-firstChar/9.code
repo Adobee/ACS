@@ -1,0 +1,11 @@
+public Hashtable<String, List<Account>> table = new Hashtable<>();
+
+public boolean contains(String username) {
+String firstChar = Character.toString(username.charAt(0));
+List<Account> list = table.get(firstChar);
+
+if (list == null)
+return false;
+
+for (Account a : list)
+

@@ -1,0 +1,8 @@
+import org.jfree.data.time.TimeSeries;
+import org.jfree.data.time.TimeSeriesCollection;
+
+public class PointsPerMinuteDatasetUpdater implements PointsPerMinuteListener {
+private TimeSeries getSeries(String player) {
+TimeSeries series = dataset.getSeries(player);
+if (series == null) {
+

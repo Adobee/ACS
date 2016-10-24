@@ -1,0 +1,10 @@
+protected boolean test(final double[] values, final int begin,
+final int length, final boolean allowEmpty) throws MathIllegalArgumentException {
+
+if (values == null) {
+throw new DimensionMismatchException(weights.length, values.length);
+}
+
+boolean containsPositiveWeight = false;
+for (int i = begin; i < begin + length; i++) {
+

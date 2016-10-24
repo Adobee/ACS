@@ -1,0 +1,9 @@
+public void move ( int deltaX, int deltaY )
+{
+super.move(deltaX, deltaY);
+if ( x < -width / 2 )
+x = panel.getSize().width - width / 2;
+else if ( (x + width / 2) > panel.getSize().width )
+x = -width / 2;
+if ( y < -height / 2 )
+

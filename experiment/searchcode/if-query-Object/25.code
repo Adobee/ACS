@@ -1,0 +1,9 @@
+public ArrayList<QueryObject> getFilterQuery() {
+ArrayList<QueryObject> queryList = new ArrayList<QueryObject>();
+
+if(createdByList.getQueryObject() != null){
+queryList.add(new QueryObject(QueryEnum.A_NAME, null, true, null));
+}
+
+if(groupList.getQueryObject() != null){
+

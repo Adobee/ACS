@@ -1,0 +1,11 @@
+return connections[getShardIndex(key)];
+}
+
+public Connection getForIndex(int index) {
+if (index < numShards) {
+return connections[index];
+public PreparedStatement getForIndex(int index) {
+if (index < numShards) {
+return statements[index];
+} else {
+

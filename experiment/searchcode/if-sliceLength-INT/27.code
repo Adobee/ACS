@@ -1,0 +1,7 @@
+public class FindMinTask implements Callable<Integer> {
+private int[] numbers;
+private int startIndex;
+int sliceLength = (endIndex - startIndex) + 1;
+if (sliceLength > 2) {
+FindMinTask lowerFindMin = new FindMinTask(executorService, numbers, startIndex, startIndex + (sliceLength / 2) - 1);
+

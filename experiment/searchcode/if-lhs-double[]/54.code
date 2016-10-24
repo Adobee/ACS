@@ -1,0 +1,12 @@
+return lhs.compareTo(rhs);
+}
+}
+
+public static int compare(Object lhs, Object rhs)
+{
+if(lhs instanceof Double)
+{
+return ((DoubleComparator) comparators.get(Double.class)).compare((Double)lhs, (Double)rhs);
+}
+if(lhs instanceof DateTime)
+

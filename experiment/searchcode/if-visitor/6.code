@@ -1,0 +1,11 @@
+CafeVisitor = cafeVisitor;
+}
+
+public void HandleFood(Food food) {
+// If I cannot handle other food, passing it to my successor
+if (CafeVisitor != null) {
+CafeVisitor.HandleFood(food);
+}
+}
+}
+

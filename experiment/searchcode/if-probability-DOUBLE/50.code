@@ -1,0 +1,7 @@
+@Override
+public DoubleMatrix decode(DoubleMatrix y) {
+double maxProbability = 0;
+for (DoubleMatrix codeWord : codeWords.keySet()) {
+double probability = countProbability(p, y, codeWord);
+if (probability > maxProbability) {
+

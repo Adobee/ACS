@@ -1,0 +1,9 @@
+public double evaluate(double position[]) {
+double x1 = position[0];
+double x2 = position[1];
+
+// Penalize if (x1+x2) > 500
+double penalty = 0;
+double sumX = (x1 + x2) - 500;
+if( sumX > 0 ) penalty = penaltyFactor * sumX;
+

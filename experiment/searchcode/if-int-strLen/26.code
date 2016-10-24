@@ -1,0 +1,7 @@
+public String longestPalindromeSubstring(String str){
+int strLen = str.length();
+if(strLen <= 1) return str;
+for(int i = strLen; i >= 0; i--){
+for(int j = i; j < strLen; j++){
+if(str.charAt(i) == str.charAt(j) &amp;&amp; (j - i <= 2 || palin[i+1][j-1] == true)){
+

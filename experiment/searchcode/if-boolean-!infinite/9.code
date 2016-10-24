@@ -1,0 +1,9 @@
+public class NanInfFilter implements IndividualFilter {
+
+private boolean rejectInfinite = true;
+private boolean rejectNan = true;
+double input = individual.input;
+if (Double.isInfinite(input)) {
+if (rejectInfinite) {
+return false;
+

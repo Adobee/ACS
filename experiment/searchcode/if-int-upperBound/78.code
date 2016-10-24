@@ -1,0 +1,9 @@
+private PriorityQueue<Integer> lowerbound = new PriorityQueue<>(INITIALSIZE);
+
+// Adds a number into the data structure.
+public void addNum(int num) {
+if (upperbound.size() == 0)
+upperbound.add(num);
+else {
+if (num < upperbound.peek())
+

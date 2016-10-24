@@ -1,0 +1,10 @@
+public boolean ValidMove(int X, int Y, boolean Taking, Chesspiece Board[][])
+{
+boolean ClearMove = true;
+boolean MoveOkay = false;
+boolean AllClear = false;
+if(super.Row > Y)
+{
+for(int i = 0; Y + i < super.Row; i++)
+if(!super.ThisGame.Clear(X, Y + i, ClearMove))
+

@@ -1,0 +1,12 @@
+throws IntegratorException {
+
+double filteredH = h;
+if (FastMath.abs(h) < minStep) {
+if (acceptSmall) {
+LocalizedFormats.MINIMAL_STEPSIZE_REACHED_DURING_INTEGRATION,
+minStep, FastMath.abs(h));
+}
+}
+
+if (filteredH > maxStep) {
+

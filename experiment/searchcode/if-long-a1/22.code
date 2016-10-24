@@ -1,0 +1,8 @@
+talonA1.changeControlMode(TalonControlMode.Position);
+if(Math.abs((val) - talonA1.get()) > 0.05){
+talonA1.set(val);
+talonA1.changeControlMode(TalonControlMode.PercentVbus);
+talonA1.set(val);
+}
+public void setPower(double val, long time){
+

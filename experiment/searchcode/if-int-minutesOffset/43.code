@@ -1,0 +1,7 @@
+curDateTime = new Date();
+long time = curDateTime.getTime();
+int minutesoffset = curDateTime.getTimezoneOffset();
+.format(-minutesoffset / 60);
+int absOffset = (minutesoffset > 0 ? minutesoffset : -minutesoffset);
+TimeZone += (absOffset % 60) > 0 ? &quot;:&quot; + timeZoneFormatter.format(absOffset % 60) : &quot;&quot;;
+

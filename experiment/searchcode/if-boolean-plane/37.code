@@ -1,0 +1,12 @@
+public Plane getPlane() {
+return plane;
+}
+
+public boolean isIntersection() {
+if (!isCorrectParams()) {
+return isLineBelongPlane() || isNotNullScalarMultiplication();
+}
+
+private boolean isCorrectParams() {
+return line.isCorrect() &amp;&amp; plane.isCorrect();
+

@@ -1,0 +1,10 @@
+double[] predictLayer1Probs = layer1Classifier.distributionForInstance(layer1Inst);
+
+int predictLayer1 = Utils.maxIndex(predictLayer1Probs);
+
+int normalIndex = classTypeIndexMap.get(&quot;normal&quot;);
+double[] predictLayer2Probs = layer2Classifier.distributionForInstance(layer2Inst);//第二层分类时的结果.
+for(int i = 0; i < layer2Insts.numClasses(); i++){
+
+String predictLayer2ClassType = layer2Insts.classAttribute().value(i);
+

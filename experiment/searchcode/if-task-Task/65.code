@@ -1,0 +1,18 @@
+config = _config;
+taskListener  = _taskListener;
+}
+
+@Override
+public void run(){
+if (task != null){
+if (taskListener != null){
+task.start(context,config,taskListener);
+}finally{
+if (taskListener != null){
+taskListener.taskEnd(task);
+}
+}
+}
+}
+}
+

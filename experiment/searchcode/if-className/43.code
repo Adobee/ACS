@@ -1,0 +1,8 @@
+public static Class loadClass(String className, ClassLoader classLoader) throws ClassNotFoundException {
+try {
+char start = className.charAt(0);
+if (start == &#39;[&#39;) {
+return Class.forName(className);
+}
+if (className.equals(&quot;boolean&quot;)) {
+

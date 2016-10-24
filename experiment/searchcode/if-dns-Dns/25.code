@@ -1,0 +1,8 @@
+final DnsDirectMain dnsMain = new DnsDirectMain();
+if (dnsMain.init(args)) {
+dnsMain.run();
+} else {
+final DnsConfiguration config;
+if (options.hasConfigNode()) {
+config = fromJson(configFile, options.getConfigNode(), DnsConfiguration.class);
+

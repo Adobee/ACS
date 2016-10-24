@@ -1,0 +1,6 @@
+ResultSet updateCachedResultSet(ResultSet resultSet) {
+if (resultSet == null) {
+this.currentResultSet = null;
+} else if (!currentResultIsTargetProxyOf(resultSet)) {
+this.currentResultSet = this.proxyResultSet(resultSet);
+

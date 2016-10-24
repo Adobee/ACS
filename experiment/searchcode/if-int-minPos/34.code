@@ -1,0 +1,12 @@
+for(int i=0; i<n; i++){
+
+int minPos = i;
+for(int j = i; j<n; j++){
+if(inputArray[j]< inputArray[minPos])
+minPos = j;
+}
+
+if(i!=minPos){
+int t = inputArray[i];
+inputArray[i] = inputArray[minPos];
+

@@ -1,0 +1,15 @@
+public ShapeIf init( final BoundBox bbox, final Color color ) {
+
+this.bbox = bbox;
+this.color = color;
+compositeShape = false;
+if ( needsNormalization() ) {
+protected boolean needsNormalization() {
+
+return true;
+}
+
+public boolean select( final Point pt ) {
+
+setSelected( bbox.normalized().contains( pt ) );
+

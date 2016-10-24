@@ -1,0 +1,10 @@
+public class BufferedLineReader {
+BufferedReader input;
+String currentLine = null;
+boolean allDone = false;
+boolean started = false;
+public String nextLine() throws IOException {
+started = true;
+if (!allDone)
+currentLine = input.readLine();
+

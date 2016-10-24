@@ -1,0 +1,9 @@
+private static final Logger logger = LoggerFactory.getLogger(Utils.class);
+
+private Utils(){
+}
+
+public static Image resizeImage(Image image, double maxWidth, double maxHeight){
+double limitRatio = maxWidth / maxHeight;
+double width = image.getWidth(null);
+

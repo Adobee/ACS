@@ -1,0 +1,9 @@
+private JTextField field;
+private Double initValue;
+
+public DoubleFieldInputComponent(Double initValue) {
+field = GuiUtils.createTextField(true);
+field.setDocument(new DoubleDocument());
+if (initValue != null) {
+field.setText(initValue.toString());
+

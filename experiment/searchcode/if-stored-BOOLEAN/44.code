@@ -1,0 +1,11 @@
+import org.sakaiproject.entitybus.entityprovider.extension.RequestStorage;
+
+public class StatusParameters {
+
+private final boolean withdrawn;
+
+public StatusParameters(final RequestStorage requestStore) {
+final Object storedValue = requestStore.getStoredValue(&quot;withdrawn&quot;);
+if (storedValue == null) {
+withdrawn = false;
+

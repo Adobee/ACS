@@ -1,0 +1,10 @@
+default Optional<MyLocale> getById(long id) {
+if (id < 1) return Optional.empty();
+
+return findAll().stream()
+.findAny();
+}
+
+default boolean isExist(long localeId) {
+return findAll().stream()
+

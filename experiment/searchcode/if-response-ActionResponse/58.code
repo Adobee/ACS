@@ -1,0 +1,8 @@
+public class ViewBooklistAction implements Action{
+
+@Override
+public ActionResponse execute(HttpServletRequest request, HttpServletResponse response) throws Exception {
+if(request.getParameter(&quot;id&quot;)!=null){
+
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.FORWARD, &quot;viewBooklist&quot;);
+

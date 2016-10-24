@@ -1,0 +1,8 @@
+r2 = 1114636288; // 0x42700000 float:60.0 double:5.507034975E-315;
+r2 = r0 / r2;
+r2 = r2 % r10;
+r0 = java.lang.Math.round(r0);
+if (r4 == 0) goto L_0x0039;
+L_0x006c:
+r0 = com.whatsapp.WAAppCompatActivity.c;
+

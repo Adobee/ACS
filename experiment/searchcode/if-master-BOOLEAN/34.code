@@ -1,0 +1,9 @@
+private static Logger logger = LoggerFactory.getLogger(AbstractRedisQueue.class);
+protected RedisTemplate redisTemplate;
+//是否是 master
+private boolean isMaster = false;
+private String group;
+public void doCheckMaster() {
+boolean prevMaster = isMaster;
+BoundValueOperations<String, Master> masterOperations = redisTemplate.boundValueOps(group);
+

@@ -1,0 +1,11 @@
+public class NotEqualIntegerValidator extends AbstractValidator<Integer> {
+boolean compareToField;
+Field otherField;
+Integer constantValue;
+
+public NotEqualIntegerValidator(String message, Field<?> otherIntegerFieldWeMustBeNotEqualTo) {
+protected boolean isValidValue(Integer value) {
+boolean b;
+if (compareToField) {
+b = !value.equals(otherField.getValue());
+

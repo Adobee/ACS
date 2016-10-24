@@ -1,0 +1,12 @@
+for (int j=0; j<agency.length; j++) {
+int i = text.indexOf(agency[j]);
+if (i > 0 &amp;&amp; i < 80) {
+datelineEnd = text.indexOf(agency[j]) + agency[j].length();
+datelineEnd = Tokenizer.skipWS(text, datelineEnd, text.length());
+break;
+}
+}
+// if found, mark as dateline
+if (datelineEnd > 0) {
+doc.annotate (&quot;dateline&quot;, new Span(textOffset, textOffset + datelineEnd),
+

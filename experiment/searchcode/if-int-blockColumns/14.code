@@ -1,0 +1,8 @@
+//     private static final byte _signature = (byte)0xaa;
+//     private int _ncolumns, _nrows;
+//     private int _blockcolumns, _blockrows,_blockarea;
+// 	_idx.writeByte(_signature);
+// 	_idx.writeInt(_ncolumns);
+// 	_idx.writeInt(_nrows);
+// 	_idx.writeInt(_blockcolumns);
+

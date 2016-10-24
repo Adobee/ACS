@@ -1,0 +1,7 @@
+for (Chromosome chromosome : pop.getPopulation()) {
+cumulativeProbability += chromosome.getRouletteWeight();
+if (rand <= cumulativeProbability) {
+for(Chromosome chromosome : pop.getPopulation()){
+if(chromosome.getIsSolution()){
+pop.setSolutionFound(true);
+

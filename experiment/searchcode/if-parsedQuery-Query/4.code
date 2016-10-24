@@ -1,0 +1,6 @@
+try {
+String parsedQuery = QueryDefinationFactory.getVariables(sql, null, null);
+if( parsedQuery.indexOf(&quot;__where&quot;) > 0 )
+parsedQuery = parsedQuery.replace(&quot;__where&quot;, &quot;1=1&quot;);
+if( parsedQuery.indexOf(&quot;__sort&quot;) > 0 ){
+

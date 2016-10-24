@@ -1,0 +1,11 @@
+public GAM build(Instances instances) {
+GAM gam = null;
+if (maxNumIters < 0) {
+maxNumIters = 20;
+}
+if (numKnots < 0) {
+for (int j = 0; j < attrs.length; j++) {
+w[j] = new double[x[j].length];
+if (w[j].length > m) {
+m = w[j].length;
+

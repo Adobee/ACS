@@ -1,0 +1,10 @@
+public void setEndHour(int endHour) {
+this.endHour = endHour;
+}
+
+public boolean inCrawlTime() {
+if (this.startHour < 0 || this.endHour < 0) {
+int currentHour = DateUtils.currentHour();
+if (this.startHour < this.endHour) {
+return currentHour >= this.startHour &amp;&amp; currentHour < this.endHour;
+

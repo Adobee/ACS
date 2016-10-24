@@ -1,0 +1,13 @@
+@Override
+public boolean equals(Object obj) {
+if (this == obj) {
+return true;
+}
+if (obj == null) {
+Project other = (Project) obj;
+if (faultyClass == null) {
+if (other.faultyClass != null) {
+return false;
+}
+} else if (!faultyClass.equals(other.faultyClass)) {
+

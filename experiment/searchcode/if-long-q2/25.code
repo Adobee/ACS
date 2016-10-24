@@ -1,0 +1,10 @@
+* @ClassName LongUtil.java
+* @author xiangsl
+* @date 2016年2月2日 上午10:40:49
+* @Description: long工具……
+private static final byte[] minValue = &quot;-9223372036854775808&quot;.getBytes();
+
+public static byte[] toBytes(long i) {
+if (i == Long.MIN_VALUE)
+return minValue;
+

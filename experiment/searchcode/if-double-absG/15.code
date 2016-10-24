@@ -1,0 +1,9 @@
+/** Squared secondary diagonal of the tridiagonal matrix. */
+private double[] squaredSecondary;
+
+/** Transformer to tridiagonal (may be null if matrix is already tridiagonal). */
+* @exception InvalidMatrixException (wrapping a {@link ConvergenceException}
+* if algorithm fails to converge
+*/
+public EigenDecompositionImpl_bug(final double[] main, double[] secondary,
+

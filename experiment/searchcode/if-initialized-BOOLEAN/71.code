@@ -1,0 +1,9 @@
+package general;
+
+public class Lazy<T> {
+private boolean isInitialized = false;
+private final Initializer<T> initializer;
+public T getValue() {
+if (!isInitialized) {
+value = initializer.initialize();
+

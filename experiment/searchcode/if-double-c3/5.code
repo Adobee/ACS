@@ -1,0 +1,8 @@
+public double toSeconds(double d) { return d/(C3/C2); }
+public double toMinutes(double d) { return d/(C4/C2); }
+public double toHours(double d)   { return d/(C5/C2); }
+public double convert(double d, TimeUnit u) { return u.toMillis(d); }
+},
+SECONDS(&quot;s&quot;) {
+public double toMillis(double d)  { return x(d, C3/C2, MAX/(C3/C2)); }
+

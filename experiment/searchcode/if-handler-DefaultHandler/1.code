@@ -1,0 +1,11 @@
+private Map<Class<?>, Handler> handlerMap;
+
+/**
+* 默认handler
+*/
+private Handler defaultHandler;
+public Handler getHandler(Class<?> clazz){
+Handler handler = handlerMap.get(clazz);
+if(handler == null){
+handler =  defaultHandler;
+

@@ -1,0 +1,12 @@
+import javax.swing.JLabel;
+
+
+public class Timer_RL extends Thread
+{
+JLabel Ch=Frame.Character;
+if(Move.Right==true)
+{
+if(Ch.getX()<Frame.Size-(Frame.Character.getWidth()) )
+{
+Ch.setLocation(Ch.getX()+2,Ch.getY());
+

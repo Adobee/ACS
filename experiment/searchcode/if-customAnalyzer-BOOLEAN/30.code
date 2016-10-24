@@ -1,0 +1,7 @@
+public void readFrom(StreamInput in) throws IOException {
+this.customAnalyzer = in.readBoolean();
+if (customAnalyzer) {
+public void writeTo(StreamOutput out) throws IOException {
+out.writeBoolean(customAnalyzer);
+if (customAnalyzer) {
+

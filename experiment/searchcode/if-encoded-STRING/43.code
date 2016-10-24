@@ -1,0 +1,9 @@
+public static String markupToStringLiteral(String text,boolean addQuotation)
+{
+String encoded = toStringLiteral(text);
+
+encoded = markupToStringLiteralProcessScriptTag(encoded);
+
+if (addQuotation)
+return &quot;\&quot;&quot; + encoded + &quot;\&quot;&quot;;
+

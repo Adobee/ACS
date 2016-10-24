@@ -1,0 +1,9 @@
+private static final Logger LOG = LoggerFactory
+.getLogger(RestletBuilder.class);
+private boolean initialized = false;
+
+public RestletBuilder() {
+if (!initialized) {
+if (LOG.isDebugEnabled()) {
+LOG.debug(&quot;No factory was registered, register all defaults&quot;);
+

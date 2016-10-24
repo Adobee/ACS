@@ -1,0 +1,9 @@
+public KHome(String directory) {
+dirName=directory;
+dir=new File(directory);
+if (!dir.exists())
+try {
+dir.mkdir();
+if (!dir.exists())
+throw new RuntimeException(&quot;Could not make directory &quot;+directory);
+

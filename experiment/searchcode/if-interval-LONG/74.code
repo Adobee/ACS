@@ -1,0 +1,11 @@
+long lastTick;
+long interval;
+long sleepInterval;
+long lastPlusInterval;
+boolean running;
+public Ticker(long interval){
+lastPlusInterval = lastTick + interval;
+if(currentTime > (lastPlusInterval)){
+doAction();
+lastTick = System.currentTimeMillis();
+

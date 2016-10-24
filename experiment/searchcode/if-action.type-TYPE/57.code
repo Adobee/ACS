@@ -1,0 +1,12 @@
+synchronized RowAction addDeleteAction(Session session, int[] colMap) {
+
+if (type == ACTION_NONE) {
+setAsAction(session, ACTION_DELETE);
+continue;
+}
+
+switch (action.type) {
+
+case ACTION_INSERT : {
+if (action.commitTimestamp == 0
+

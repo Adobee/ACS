@@ -1,0 +1,7 @@
+* Time constants
+*/
+public static final int MILLIS_PER_DAY = 86400000;
+public static final int MILLIS_PER_HOUR = 3600000;
+public static final int MILLIS_PER_MINUTE = 60000;
+public static final int MILLIS_PER_SECOND = 1000;
+

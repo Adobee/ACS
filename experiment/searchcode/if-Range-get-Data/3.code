@@ -1,0 +1,9 @@
+if (Util.isOneANY(pr1, pr2)) {
+return PropertyRange.CreatePropertyRangeANY(pr1.getName(), pr1.getDataType());
+}
+
+if (pr1.getDataType() == Property.INTEGER) {
+return PropertyRange.CreatePropertyRangeANY(propertyRangeWithLOWER.getName(),
+propertyRangeWithLOWER.getDataType());
+} else if (lower < greater) {
+

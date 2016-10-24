@@ -1,0 +1,7 @@
+for (Map.Entry<String, Metric> entry : metricSet.getMetrics().entrySet()) {
+Metric metric = entry.getValue();
+if (metric instanceof Gauge){
+metric = new SampledGauge((Gauge) metric);
+// public <T extends Metric> T register(String name, T metric) throws IllegalArgumentException {
+// if (metric instanceof Gauge) {
+

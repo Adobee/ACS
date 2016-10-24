@@ -1,0 +1,12 @@
+public boolean equals(Object o) {
+if (this == o) {
+return true;
+}
+if (!(o instanceof ColorPalette)) {
+ColorPalette colorPalette = (ColorPalette) o;
+
+if (this.inverse != colorPalette.inverse) {
+return false;
+}
+if (this.logscale != colorPalette.logscale) {
+

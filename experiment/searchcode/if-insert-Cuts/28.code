@@ -1,0 +1,9 @@
+for (int j = idx-1; j >= 0; j--) {
+if (dp[j] == last - 1) {
+sb.insert(0, s.substring(j, idx));
+sb.insert(0, &quot; &quot;);
+minString(strList, dp, j, dp[j], sb, s);
+sb.delete(0, idx-j+1);
+}
+if (dp[j] < last - 1)
+

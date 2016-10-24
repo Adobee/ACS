@@ -1,0 +1,15 @@
+public class Neuron
+{
+private double weightx;
+private double weighty;
+private double mu;
+
+public Neuron()
+{
+weightx = 1;
+weighty = 1;
+mu = .05;
+}
+
+public void train(double x, double y, int result)
+

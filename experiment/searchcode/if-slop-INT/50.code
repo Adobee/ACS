@@ -1,0 +1,9 @@
+ArrayList<Rect> mSlopBounds;
+ArrayList<View> mTouchDelegateViews;
+int mSlop;
+boolean mDelegateTargeted;
+private Rect mUseTouchDelegateBounds;
+Field mSlopField = TouchDelegate.class.getDeclaredField(&quot;mSlop&quot;);
+mSlopField.setAccessible(true);
+mSlop = (int) mSlopField.get(this);
+

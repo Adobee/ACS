@@ -1,0 +1,11 @@
+public class CommonFunctions{
+
+//Filter out phrases that contains these characters
+//Used to prevent SQLite Database from crashing due to unusual characters
+public static boolean checkChar(String input1){
+boolean isClear = true;
+
+if(input1.contains(&quot;(&quot;) ||
+input1.contains(&quot;)&quot;) ||
+input1.contains(&quot;/&quot;) ||
+

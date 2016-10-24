@@ -1,0 +1,6 @@
+public static void registerChronology(Class<?> c){
+try{
+for(Field f : c.getFields()){
+if(f.isAnnotationPresent(HvlChronologyInitialize.class) &amp;&amp; f.getType() == HvlAction0.class) new Initialize((HvlAction0)f.get(null), f);
+else if(f.isAnnotationPresent(HvlChronologyUpdate.class) &amp;&amp; f.getType() == HvlAction1.class) new Update((HvlAction1<Float>)f.get(null), f);
+

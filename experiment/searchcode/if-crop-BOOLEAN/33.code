@@ -1,0 +1,7 @@
+public static void babysitCrop(TileEntity tileEntity) {
+if (CropBasicIC2Crop.isIC2Crop(tileEntity)) {
+ICropTile crop = (ICropTile) tileEntity;
+This part might be unbalanced until a custom farm logic is added and makes use of weed-ex.
+if (crop.getCrop() != null) {
+if (crop.getCrop().isWeed(crop)) {
+

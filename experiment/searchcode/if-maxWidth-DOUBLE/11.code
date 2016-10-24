@@ -1,0 +1,11 @@
+* Transformate the loaded image to avoid OutOfMemoryException
+*/
+public class BitmapTransform implements Transformation {
+
+int maxWidth;
+public Bitmap transform(Bitmap source) {
+int targetWidth, targetHeight;
+double aspectRatio;
+
+if (source.getWidth() > source.getHeight()) {
+

@@ -1,0 +1,9 @@
+import static br.com.develcraft.xtratime.domain.TimePeriodBuilder.timePeriod;
+import static org.junit.Assert.assertFalse;
+assertEquals(3.0, timePeriod.time(), 0.001);
+}
+
+@Test
+public void shouldCompareIfStartsBeforeAnotherPeriod() {
+TimePeriod periodBefore = timePeriod().from(&quot;08:00&quot;).to(&quot;12:20&quot;).build();
+

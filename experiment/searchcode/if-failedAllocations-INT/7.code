@@ -1,0 +1,8 @@
+LinkedVirtualMemoryTable table = new LinkedVirtualMemoryTable(200);
+
+int max = 20;
+int avgBlockSize = 200 / max;
+Block[] blocks = new Block[max];
+for (int i = 0; i < max; i++) {
+blocks[i] = table.allocate(avgBlockSize - i / 2);
+

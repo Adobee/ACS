@@ -1,0 +1,7 @@
+DecisionResult result = decisionFunction.apply(tradingDecision);
+if (primaryDecisionResult.equals(result)) return primaryDecisionResult;
+
+decisionResults.add(result);
+}
+if (decisionResults.contains(secondaryDecisionResult)) return secondaryDecisionResult;
+

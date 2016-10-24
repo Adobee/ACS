@@ -1,0 +1,9 @@
+public Worker (Sender sender, Handler handler){
+toDo = new LinkedList<Job>();
+currentIterationNumber = Integer.MIN_VALUE;
+this.sender = sender;
+synchronized (toDo){
+for (Job j : toDo) {
+if (j.getIteration() < currentIterationNumber){
+toBeRemoved.add(j);
+

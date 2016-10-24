@@ -1,0 +1,12 @@
+* Base class for all events.
+*/
+public class Event {
+private boolean cancelled;
+
+/**
+* @return if this event is cancellable via {@link Event#setCancelled(boolean)}.
+* @param cancelled the new cancelled value for this event.
+*/
+public void setCancelled(boolean cancelled) {
+if (!this.isCancellable()) {
+

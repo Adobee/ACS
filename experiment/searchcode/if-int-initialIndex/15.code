@@ -1,0 +1,11 @@
+int beginIndex = block.indexOf(&quot;<code>&quot;);
+int endIndex = 0;
+StringBuilder stringBuilder = new StringBuilder();
+int initialIndex = 0;
+public void mimeExtension() {
+String mime = &quot;image/jpeg&quot;;
+
+int index = mime.indexOf(&quot;/&quot;);
+
+if(mime.length() > index) {
+

@@ -1,0 +1,10 @@
+package com.netcraft.hibernate.service;
+
+import com.netcraft.hibernate.DAO.ObjectTypeDAO;
+import com.netcraft.model.ObjectType;
+public List<ObjectType> getParentTypes(long object_type_id) throws SQLException{
+if(object_type_id == 0)
+return null;
+
+ObjectType objectType = getObjectType(object_type_id);
+

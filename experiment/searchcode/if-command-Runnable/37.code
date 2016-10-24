@@ -1,0 +1,11 @@
+public abstract class SHARPTweetCommandGroupRunnable extends SHARPTweetCommandGroup implements Runnable {
+
+SHARPTweetCommandGroupRunnable()
+listener.read();
+
+if (listener.commandSetAvailable()) {
+this.incomingCommands = listener.getCommandSet();
+}
+}
+}
+

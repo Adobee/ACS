@@ -1,0 +1,9 @@
+double tstart = t_start;
+double tstop = t_stop;
+
+// Fix tstart and tstop
+if (tstart < this.set.getStartTime()) tstart = this.set.getStartTime();
+for (Double timeObject : this.onTime.keySet()) {
+final double time = timeObject.doubleValue();
+if (time < tstart || time > tstop) continue;
+

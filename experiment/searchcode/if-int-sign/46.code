@@ -1,0 +1,15 @@
+AtomSign sign1 = (AtomSign) o;
+
+if (sign != null ? !sign.equals(sign1.sign) : sign1.sign != null) {
+return false;
+}
+
+return true;
+}
+
+@Override
+public int hashCode() {
+return sign != null ? sign.hashCode() : 0;
+}
+}
+

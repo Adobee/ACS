@@ -1,0 +1,7 @@
+verifySequence(min, initial, max);
+
+// Return the initial guess if it is good enough.
+double yInitial = computeObjectiveValue(initial);
+if (FastMath.abs(yInitial) <= functionValueAccuracy) {
+return initial;
+

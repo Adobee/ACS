@@ -1,0 +1,10 @@
+public class Fraction {
+public enum RoundingDirection {
+Down, Up
+}
+
+private static final int DEFAULT_MAX_DENOMINATOR = 128;
+public void setMaximumDenominator(int maxDenominator) {
+this.maxDenominator = maxDenominator;
+invalidate();
+

@@ -1,0 +1,15 @@
+package com.math;
+
+public class Racional {
+
+private int num;
+private int den;
+
+public Racional(int num, int den){
+this.num = num;
+this.den = den;
+}
+
+public void add(Racional elOtro){
+int auxDen = this.obtenerMCM(this.den, elOtro.getDen());
+

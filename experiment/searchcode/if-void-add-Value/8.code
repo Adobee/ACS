@@ -1,0 +1,12 @@
+public class ParameterizedList extends ArrayList<String> implements Parameterized {
+
+@Override
+public void setParameter( int index, String value ) {
+add( index, value );
+add( index, Short.valueOf( value ).toString() );
+}
+
+@Override
+public void add( int index, String element ) {
+if( index >= size() ) {
+

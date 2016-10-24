@@ -1,0 +1,13 @@
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import ma.openpaper.svr1801.domain.Scope;
+final Scope scope = em.find(Scope.class, id);
+if (scope != null) {
+em.remove(scope);
+}
+
+}
+
+public Scope findById(Integer id) {
+

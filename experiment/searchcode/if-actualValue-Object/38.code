@@ -1,0 +1,7 @@
+public AttrExpr(String name, Object value, AttrOperator op) {
+super();
+if (name.length()==0) Log.die(&quot;name is empty&quot;);
+public QueryResult matches(DocumentScriptable d, QueryMatcher ctx) {
+Object actualValue=ScriptableObject.getProperty(d,name);
+return new QueryResult(matches(actualValue));
+

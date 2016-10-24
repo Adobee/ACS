@@ -1,0 +1,9 @@
+// System.out.println(&quot;Inside TypeInv innerType = &quot; + innerType + &quot; and its class is &quot; + innerType.getClass());
+
+if (this.innerType instanceof UnresolvedType) {
+// System.out.println(&quot;GOT: &quot; + t);
+}
+TypeBinding fetched = ((RecordType) innerType).getInnerType(invName);
+
+if (fetched.getMetadata().isPresent() &amp;&amp; fetched.getMetadata().get().get() != null)
+

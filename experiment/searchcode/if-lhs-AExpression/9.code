@@ -1,0 +1,5 @@
+public MemoryLocation getMemoryLocation(AExpression pLhs) throws UnrecognizedCodeException {
+if (pLhs instanceof AIdExpression) {
+return getMemoryLocation((AIdExpression) pLhs);
+} else if (pLhs instanceof CFieldReference) {
+

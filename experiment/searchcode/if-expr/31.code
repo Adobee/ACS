@@ -1,0 +1,11 @@
+* Any expression with parentheses
+*
+* @author Duc
+*
+*/
+public class PAny_expr extends IAny_expr {
+private Any_expr expr;
+public String toCode() throws RuleViolationException {
+if (expr == null)
+throw new RuleViolationException(&quot;expression must not be empty&quot;);
+

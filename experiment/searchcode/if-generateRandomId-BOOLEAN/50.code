@@ -1,0 +1,10 @@
+private static String getDeviceIdBestFit(Context appContext) throws RuntimeException {
+String deviceId = null;
+if (deviceId == null &amp;&amp; checkPermission(appContext, Manifest.permission.ACCESS_WIFI_STATE)) {
+deviceId = getWiFiMacAddress(appContext);
+if (deviceId != null) {
+return deviceId;
+}
+} else {
+Logger.i(&quot;Please set android.permission.ACCESS_WIFI_STATE permission to get better user id&quot;);
+

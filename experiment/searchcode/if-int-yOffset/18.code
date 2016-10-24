@@ -1,0 +1,12 @@
+private int direction;
+
+
+Bullet(String ref, int xOffset, int yOffset, int speed, int direction) {
+super(ref, xOffset, yOffset);
+//move depending on the direction
+public void move() {
+if (direction == 0) {
+this.setYOffset(getYOffset() - getSpeed());
+}
+if (direction == 1) {
+

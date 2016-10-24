@@ -1,0 +1,11 @@
+private Double minY = null;
+private Double minZ = null;
+
+@Override
+public void accept(Point p) {
+if (maxZ == null || p.z > maxZ) maxZ = p.z;
+if (minZ == null || p.z < minZ) minZ = p.z;
+}
+
+public void combine(CentreFinder other){
+

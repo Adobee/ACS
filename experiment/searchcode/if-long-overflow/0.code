@@ -1,0 +1,14 @@
+private static long overflow = 0;
+
+public static void iterate() {
+if (tick == Long.MAX_VALUE)
+overflow++;
+tick++;
+}
+
+public static long time() {
+return tick;
+}
+
+public static long overflow() {
+

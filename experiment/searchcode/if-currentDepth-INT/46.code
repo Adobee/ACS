@@ -1,0 +1,12 @@
+private int currentDepth = 0;
+
+public Object visit(CompoundStmt node, Object data) {
+currentDepth++;
+if(currentDepth > maxDepth) maxDepth = currentDepth;
+super.visit(node, data);
+currentDepth--;
+return data;
+}
+
+}
+

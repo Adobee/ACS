@@ -1,0 +1,16 @@
+public class Missile extends GameObject {
+
+int ttl;
+
+public Missile(Vector2d s, Vector2d v, int missileTTL) {
+super(s, v);
+public void update() {
+if (!dead()) {
+s.add(v);
+ttl--;
+}
+}
+
+@Override
+public void draw(Graphics2D g) {
+

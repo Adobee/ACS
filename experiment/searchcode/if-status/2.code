@@ -1,0 +1,11 @@
+package com.demo.performance;
+
+
+public class BaseResult implements Result{
+
+private Status status = Status.INIT;
+
+public void setStatus(Status status){
+if(status == null){
+throw new RuntimeException(&quot;setStatus(status) can not be null&quot;);
+

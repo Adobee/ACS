@@ -1,0 +1,9 @@
+private final String[] cipherSuites;
+private ConnectionSpec supportedSpec;
+final boolean supportsTlsExtensions;
+final boolean tls;
+public Builder supportsTlsExtensions(boolean paramBoolean)
+{
+if (!tls) {
+throw new IllegalStateException(&quot;no TLS extensions for cleartext connections&quot;);
+

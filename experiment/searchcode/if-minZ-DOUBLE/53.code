@@ -1,0 +1,11 @@
+Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY, Double.POSITIVE_INFINITY
+);
+
+public final double minX, minY, minZ, maxX, maxY, maxZ;
+
+public AABB( double x0, double y0, double z0, double x1, double y1, double z1 ) {
+protected final boolean contains( double ox0, double oy0, double oz0, double ox1, double oy1, double oz1 ) {
+if( ox0 < minX ) return false;
+if( oy0 < minY ) return false;
+if( oz0 < minZ ) return false;
+

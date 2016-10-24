@@ -1,0 +1,10 @@
+protected E container;
+
+boolean recycled = false;
+int counter = 0;
+private long lastUpdateTime = 0;
+public synchronized void addReference() throws IllegalAccessException {
+if(recycled)
+{
+throw new IllegalAccessException(&quot;Container already recycled&quot;);
+

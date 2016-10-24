@@ -1,0 +1,12 @@
+for (MyMenuItem m : menu){
+if (m.name == food){
+m.s = itemState.needsReOrder;
+if (m.s == itemState.needsReOrder){
+OrderMore(m, m.capacity - m.stock);
+return true;
+}
+}
+}
+
+if (orders.size() > 0){
+

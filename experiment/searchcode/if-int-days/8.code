@@ -1,0 +1,17 @@
+private static final int MINUTES_PER_HOUR = 60;
+
+private int days;
+
+public TimeSpan(){
+this.days = 0;
+}
+
+public TimeSpan(int days){
+public void setDays(int days) {
+if(days >= 0){
+this.days = days;
+}
+}
+
+public int calculateHours(){
+

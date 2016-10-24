@@ -1,0 +1,10 @@
+namespace = new Namespace();
+final int leftType = left.getType();
+final int midType = mid.getType();
+
+if (leftType == Token.NAME || leftType == Token.GETVAR) {
+throw new WinkUnmanagedSyntaxException(&quot;Unknow SetProp Syntax, unexpected left token : &quot; + Ast.tokenName(leftType) + &quot; &quot; + Ast.getPositionInfo(n));
+}
+
+if (midType == Token.STRING || midType == Token.NAME || midType == Token.GETVAR || midType == Token.NUMBER) {
+

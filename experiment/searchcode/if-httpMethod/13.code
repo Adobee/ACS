@@ -1,0 +1,11 @@
+public String getName() {
+return name;
+}
+
+public static final HttpMethod getHttpMethod(String name) {
+
+if (name == null) {
+for (HttpMethod httpMethod : HttpMethod.values()) {
+if (httpMethod.name.equalsIgnoreCase(name)) {
+return httpMethod;
+

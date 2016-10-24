@@ -1,0 +1,9 @@
+final int limit = 100 * n;
+
+final boolean[] candidatePrimes = new boolean[limit + 1];
+for (int candidatePrime = 2; candidatePrime <= limit; candidatePrime++) {
+candidatePrimes[candidatePrime] = Boolean.TRUE;
+}
+
+for (int candidatePrime = 2; candidatePrime * candidatePrime <= limit; candidatePrime++) {
+

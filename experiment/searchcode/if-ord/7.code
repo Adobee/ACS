@@ -1,0 +1,9 @@
+public MsgPos (int segOrd, int fieldOrd, int fieldRep, int compOrd, int subCompOrd) {
+if (!(segOrd >= 1 || fieldOrd >= 0 || fieldRep >= 0 || compOrd >= 1 || subCompOrd >= 1)) {
+public int compareTo (MsgPos p) {
+int cmp = segOrd - p.segOrd;
+if (cmp == 0) {
+cmp = fieldOrd - p.fieldOrd;
+}
+if (cmp == 0) {
+

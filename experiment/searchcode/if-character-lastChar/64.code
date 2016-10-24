@@ -1,0 +1,8 @@
+lastChar = text.charAt(charIndex2);
+if (lastChar == &#39;&amp;&#39;) {
+return 12;
+lastChar = text.charAt(charIndex);
+byte b;
+if (Character.isHighSurrogate(lastChar)) {
+final int codePoint = Character.codePointAt(text, charIndex);
+

@@ -1,0 +1,8 @@
+public Map<Double, Double> getTraceMap() {
+// need to scale the data if necessary
+Map<Double, Double> traceMap = new TreeMap<>();
+public String toStringFull() {
+//    return ByteUtility.toString(datagramData, true);
+if (valid) {
+//      double[] wave = this.getWaveformDBm();
+

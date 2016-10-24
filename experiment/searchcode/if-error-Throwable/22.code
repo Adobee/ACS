@@ -1,0 +1,5 @@
+Logger.info(&quot;JCertif ExceptionHandler&quot;);
+Logger.error(&quot;Error : &quot; + throwable.getMessage(), throwable);
+
+Result result = Results.status(Http.Status.INTERNAL_SERVER_ERROR, null == throwable.getMessage()? &quot;&quot; : throwable.getMessage());
+

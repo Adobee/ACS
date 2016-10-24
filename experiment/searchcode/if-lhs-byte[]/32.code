@@ -1,0 +1,9 @@
+private static final long serialVersionUID = -6028069683619183346L;
+protected Variable lhs;
+protected Variable rhs;
+private byte[] value;
+@Override
+public void run(Program program) {
+if(lhs instanceof Statement) {
+((Statement) lhs).run(program);
+

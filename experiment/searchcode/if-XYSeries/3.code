@@ -1,0 +1,13 @@
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+
+public class Data {
+
+private static Data instance;
+dataset = new XYSeriesCollection();
+}
+
+public static XYSeriesCollection getDataset(){
+if(Data.instance==null){
+Data.instance=new Data();
+

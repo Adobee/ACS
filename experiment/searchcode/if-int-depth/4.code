@@ -1,0 +1,7 @@
+public class Solution {
+public int minimumTotal(List<List<Integer>> triangle) {
+if (triangle.size() == 0){
+return 0;
+}
+int fullDepth = triangle.size();
+

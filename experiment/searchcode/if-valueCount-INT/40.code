@@ -1,0 +1,9 @@
+private SharedPreferences appSharedPrefs;
+private Editor prefsEditor;
+private static int valueCount;
+private static int savedCount = 0;
+public void savePath(String path) {
+if(valueCount >= MAX_COUNT)
+{
+valueCount = valueCount % MAX_COUNT;
+

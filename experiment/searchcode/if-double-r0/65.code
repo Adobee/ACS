@@ -1,0 +1,6 @@
+//        double m = 5.9726 * Math.pow(10, 24);
+//        double r0 = 6378137;
+//        double r = Math.sqrt(x * x + y * y + z * z);
+//        double U = U0 * (1 + U1);
+//        double dunkdx = derivR(n, f, m, r, r0) * (-x / Math.pow(r, 3)) * Z(n, k, dZold, dZoldest, z) * Q(n, k, x, y, r) +
+

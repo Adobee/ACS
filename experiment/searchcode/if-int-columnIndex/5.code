@@ -1,0 +1,14 @@
+values.set(columnIndex, value);
+}
+*/
+
+public void setValue(int columnIndex, Object value) {
+if (columns != null) {
+public Column[] getColumns() {
+return columns;
+}
+
+public Type getType(int columnIndex) {
+if (columns == null) {
+return StringType.VARCHAR;
+

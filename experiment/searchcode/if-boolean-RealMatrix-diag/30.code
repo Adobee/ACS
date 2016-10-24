@@ -1,0 +1,7 @@
+import static jml.matlab.Matlab.diag;
+import static jml.matlab.Matlab.display;
+import static jml.matlab.Matlab.dotDivide;
+RealMatrix D = sum(W, 2);
+RealMatrix Dsqrt = diag(dotDivide(1, sqrt(D)));
+RealMatrix L_sym = eye(size(W, 1)).subtract(Dsqrt.multiply(W).multiply(Dsqrt));
+

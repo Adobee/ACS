@@ -1,0 +1,6 @@
+@Override
+public SqlType visit(RawType rawType) {
+if (rawType.getRawType().equals(JreTypes.javaLangBoolean)) {
+return BooleanType.create();
+} else if (rawType.getRawType().equals(JreTypes.javaLangByte)) {
+

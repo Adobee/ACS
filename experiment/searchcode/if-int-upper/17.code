@@ -1,0 +1,14 @@
+private static void quickSort(int end, int top, int[] data) {
+int lower, upper;
+
+if (end >= top) {
+return;
+}
+int devide = data[end];
+upper--;
+}
+if (lower < upper) {
+int temp = data[lower];
+data[lower] = data[upper];
+data[upper] = temp;
+

@@ -1,0 +1,16 @@
+.execute();
+}
+});
+}
+
+@Override
+public void add(Optimization<OwnerType> optimization) {
+if (getOwner() == null) {
+optimizations.add(optimization);
+}
+}
+
+@Override
+public void remove(Optimization<OwnerType> optimization) {
+if (optimizations.remove(optimization)) {
+

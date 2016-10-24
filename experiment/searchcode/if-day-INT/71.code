@@ -1,0 +1,13 @@
+public class WeekDay implements IWeekDay {
+
+private String day;
+private int offset;
+
+public WeekDay(String day) {
+this(day, 0);
+}
+
+public WeekDay(String day, int offset) {
+if (day == null)
+throw new IllegalArgumentException(&quot;day == null&quot;);
+

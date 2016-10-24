@@ -1,0 +1,5 @@
+//cat android_models.properties | awk -F&#39;=&#39; &#39;{sub(/ *$/, &quot;&quot;, $1)} sub(/^ */, &quot;&quot;, $2) { if ($2 != &quot;&quot;) print &quot;humanReadableNames.put(\&quot;&quot;$1&quot;\&quot;,\&quot;&quot; $2 &quot;\&quot;);&quot;}&#39; | sed -e &#39;s/\\ /_/g&#39;
+try {
+String dictName = humanReadableNames.get(Build.MODEL.replace(&#39; &#39;, &#39;_&#39;));
+if (dictName != null) {
+

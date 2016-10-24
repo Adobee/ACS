@@ -1,0 +1,10 @@
+return new Complex(r.nextDouble()*max-min,r.nextDouble()*max-min);
+}
+
+public static Complex parse(String s){
+Pattern p=Pattern.compile(&quot;^((?<r>([-+]?(\\d+\\.?\\d*|\\d*\\.?\\d+)([Ee][-+]?[0-2]?\\d{1,2})?[r]?))|(?<i>([-+]?((\\d+\\.?\\d*|\\d*\\.?\\d+)([Ee][-+]?[0-2]?\\d{1,2})?)?[i]))|(?<r>([-+]?(\\d+\\.?\\d*|\\d*\\.?\\d+)([Ee][-+]?[0-2]?\\d{1,2})?[r]?))(?<i>([-+]((\\d+\\.?\\d*|\\d*\\.?\\d+)([Ee][-+]?[0-2]?\\d{1,2})?)?[i])))$&quot;);
+String imag=m.group(&quot;i&quot;);
+return new Complex(java.lang.Double.parseDouble(real),java.lang.Double.parseDouble(imag));
+}
+}
+

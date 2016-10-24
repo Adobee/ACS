@@ -1,0 +1,9 @@
+public static void inverseTransform(AffineTransform t, Rectangle.Double r)
+{
+Point.Double p0 = new Point.Double(r.x, r.y);
+Point.Double p1 = new Point.Double(r.x + r.width, r.y + r.height);
+
+try
+{
+t.inverseTransform(p0, p0);
+

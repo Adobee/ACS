@@ -1,0 +1,11 @@
+// Represents a failed index search.
+private static final int INDEX_NOT_FOUND = -1;
+
+/**
+* Checks if the CharSequence equals any character in the given set of characters.
+public static boolean containsAny(CharSequence cs, char[] searchChars) {
+if (isEmpty(cs) || isEmpty(searchChars)) {
+return false;
+}
+int csLength = cs.length();
+

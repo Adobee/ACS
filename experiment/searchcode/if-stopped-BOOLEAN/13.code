@@ -1,0 +1,15 @@
+public abstract class AbstractLifeCycle implements LifeCycle {
+
+private volatile boolean stopped = true;
+
+@Override
+public void start() {
+if (!isStopped()) {
+stopped = false;
+}
+
+@Override
+public void stop() {
+if (isStopped()) {
+return;
+

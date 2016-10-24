@@ -1,0 +1,9 @@
+ObjectOutputStream out=new ObjectOutputStream(skt.getOutputStream());
+Msg msg=(Msg)in.readObject();
+Msg ansMsg=dispatchMsg(msg);
+out.writeObject(ansMsg);
+out.flush();
+skt.close();
+}
+catch(Exception e)
+

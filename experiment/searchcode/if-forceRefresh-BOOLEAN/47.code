@@ -1,0 +1,16 @@
+value = rt.getLocalCache();
+if (value != null) return value;
+
+return forceRefresh();
+} finally {
+rt.unlockLocalCache();
+}
+}
+});
+}
+
+private Object forceRefresh() {
+long ttlSeconds = rt.redisTtlSeconds();
+
+if (ttlSeconds > getAheadSeconds()) {
+

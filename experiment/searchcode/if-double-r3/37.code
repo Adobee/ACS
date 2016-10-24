@@ -1,0 +1,11 @@
+private double r1;
+private double r2;
+private double r3;
+private double r4;
+private double r5;
+private int spokeCount;
+private double toothHeight;
+private double toothRatio;
+
+public Gear(double r1, double r2, double r3, double width, double depth)
+

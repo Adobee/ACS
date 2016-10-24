@@ -1,0 +1,11 @@
+private VoidValue caseBinary (final BinaryPattern p)
+{
+if (!haveProcessed (p))
+return caseBinary (p);
+}
+
+@Override
+public VoidValue caseOneOrMore (final OneOrMorePattern p)
+{
+if (!haveProcessed (p))
+

@@ -1,0 +1,10 @@
+return originalFile.getPath();
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj) return true;
+StringBuilder shortFormat = new StringBuilder(originalFile.getPath());
+shortFormat.append(&#39;[&#39;).append(referencedBy.size()).append(&#39;]&#39;);
+if (isBinary) {
+

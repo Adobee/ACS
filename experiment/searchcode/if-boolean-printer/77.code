@@ -1,0 +1,8 @@
+package nimaprinting;
+
+import java.awt.print.PrinterException;
+import java.awt.print.PrinterJob;
+PrinterJob job = PrinterJob.getPrinterJob();
+job.setPrintable(new Printer(printData));
+boolean doPrint = job.printDialog();
+

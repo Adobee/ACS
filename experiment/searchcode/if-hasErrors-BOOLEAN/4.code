@@ -1,0 +1,10 @@
+public class KValidatorMessagesList {
+private List<KValidationMessage> messages;
+private boolean hasErrors;
+
+public KValidatorMessagesList() {
+public void addMessage(KValidationMessage message) {
+if (message.isError())
+hasErrors = true;
+messages.add(message);
+

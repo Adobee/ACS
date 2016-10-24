@@ -1,0 +1,10 @@
+package algorithms;
+
+public class FastExponentiation {
+
+public long fastExponent(long x, int exp){
+if(exp==0)return 1;
+if(exp%2==1){
+long newx = fastExponent(x, (exp-1)/2);
+return x*newx*newx;
+

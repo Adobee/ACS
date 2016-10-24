@@ -1,0 +1,6 @@
+*  @return a fraction which the quotient of the invoking fraction and the aFraction
+*  @throws FractionException if aFraction is 0 */
+public FractionInterface divide(FractionInterface aFraction);
+*  @return the reciprocal of the invoking fraction
+*  @throws FractionException if the new number with denominator is 0*/
+

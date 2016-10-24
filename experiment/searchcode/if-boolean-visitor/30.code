@@ -1,0 +1,8 @@
+protected List<EtlElementVisitor<T, R>> etlElementVisitors = new ArrayList<EtlElementVisitor<T, R>>();
+
+public R visit(EObject o, T context) {
+if (o instanceof PreBlock &amp;&amp; !preBlockVisitors.isEmpty()) {
+for (PreBlockVisitor<T, R> visitor : preBlockVisitors) {
+if (visitor.appliesTo((PreBlock) o, context)) {
+return visitor.visit((PreBlock) o, context, this);
+

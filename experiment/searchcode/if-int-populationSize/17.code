@@ -1,0 +1,8 @@
+// Construct a population
+public Population(int populationSize, boolean initialise) {
+sacs=new knapsack[populationSize];
+public knapsack getFittest() {
+knapsack fittest = sacs[0];
+for (int i = 1; i < populationSize(); i++) {
+if (fittest.getFitness() <= getSac(i).getFitness()) {
+

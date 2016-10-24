@@ -1,0 +1,6 @@
+List<Integer> result = new ArrayList<>();
+if (matrix.length == 0) return result;
+int rowL = 0, colL = 0, rowR = matrix.length - 1, colR = matrix[0].length - 1;
+while (rowL <= rowR &amp;&amp; colL <= colR) {
+for (int i = colL; i <= colR; i++) result.add(matrix[rowL][i]);
+

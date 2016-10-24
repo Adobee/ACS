@@ -1,0 +1,7 @@
+CanopyGenericJob.setAnnIndex(conf, AnnCanopyCosine2.class);
+TestGenericJob.setSimilarityFunction(conf, CosineSimilarityTFIDF.class);
+if (conf.containsKey(&quot;t1&quot;)) {
+setTermsSize(conf, conf.getInt(&quot;termssize&quot;, getTermsSize(conf)));
+
+CanopyJob2 job = new CanopyJob2(conf,
+

@@ -1,0 +1,14 @@
+protected double end;
+protected double step;
+protected int nSteps;
+protected double[] x;
+protected double[] y;
+
+public ODEsolver(double start, double end, double step) {
+this.nSteps = (int) (Math.abs(end - start)/step) +1;
+initX();
+}
+
+public ODEsolver(double start, double end, int nSteps) {
+if(nSteps <= 0) {
+

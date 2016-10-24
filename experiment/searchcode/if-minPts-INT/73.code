@@ -1,0 +1,11 @@
+public class Clusterizing_RDBSCANClusterer<T extends Clusterable> extends Clusterer<T> {
+
+private final double eps;
+
+private final int minPts;
+
+private enum PointStatus {NOISE, PART_OF_CLUSTER}
+private Iterable<T> points;
+
+public Clusterizing_RDBSCANClusterer(final double eps, final int minPts)
+

@@ -1,0 +1,10 @@
+Map<C, V> row = map.get(rowKey);
+if (row.containsKey(columnKey)) {
+result.put(rowKey, row.get(columnKey));
+}
+}
+return Collections.unmodifiableMap(result);
+}
+
+public boolean contains(Object rowKey, Object columnKey) {
+

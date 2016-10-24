@@ -1,0 +1,7 @@
+queryBuilder = in.readOptionalNamedWriteable(QueryBuilder.class);
+if (in.readBoolean()) {
+int size = in.readVInt();
+boolean hasRescoreBuilders = rescoreBuilders != null;
+out.writeBoolean(hasRescoreBuilders);
+if (hasRescoreBuilders) {
+

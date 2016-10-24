@@ -1,0 +1,10 @@
+public static final double PI = 3.14159265358979323846;
+
+@JTranscInline
+@HaxeMethodBody(&quot;return Math.sin(p0);&quot;)
+native public static double sin(double a);
+//@HaxeMethodBody(&quot;return Math.rint(p0);&quot;)
+public static double rint(double a) {
+double r = (double)(int)a;
+if (a < 0 &amp;&amp; r == 0.0) return -0.0;
+

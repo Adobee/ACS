@@ -1,0 +1,13 @@
+* WARNING: This cache will grow forever
+*/
+double sumLog[] = { 0.0 };
+
+public static Hypergeometric get() {
+if (hypergeometric == null) hypergeometric = new Hypergeometric();
+* @param n
+*/
+synchronized void newSumLog(int n) {
+if (n >= sumLog.length) {
+// Copy and resize
+double sumLogNew[] = Arrays.copyOf(sumLog, n + 1);
+

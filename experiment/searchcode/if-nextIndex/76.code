@@ -1,0 +1,12 @@
+private Person[] persons;
+private int nextIndex;
+
+public PersonDynamicArrayList() {
+persons = new Person[10];
+nextIndex = 0;
+}
+
+@Override
+public void add(Person person) {
+if (nextIndex <= persons.length) {
+

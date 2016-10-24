@@ -1,0 +1,12 @@
+private int[] sum=null;
+public RangeSumQuery(int[] nums) {
+if(nums==null||nums.length==0){
+sum=new int[0];
+sum[i]=sum[i-1]+nums[i];
+}
+}
+}
+
+public int sumRange(int i, int j) {
+if(sum.length==0||i>j||i>sum.length||j>sum.length) return 0;
+

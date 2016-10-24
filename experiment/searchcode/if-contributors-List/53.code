@@ -1,0 +1,13 @@
+dataRepository = ((RxApplication) getApplication()).component().repo();
+}
+
+@Override
+protected void onStart() {
+super.onStart();
+listContributors();
+subscriptions.clear();
+}
+
+protected void listContributors() {
+Subscription subscription = dataRepository.listContributors(&quot;square&quot;, &quot;retrofit&quot;)
+

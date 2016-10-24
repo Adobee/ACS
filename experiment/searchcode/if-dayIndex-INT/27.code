@@ -1,0 +1,14 @@
+public class WeatherDataParser {
+/*
+*
+*       Experimental
+* */
+
+
+public static double getMaxTemperatureForDay(String weatherJsonStr, int dayIndex)
+JSONObject jo = new JSONObject(weatherJsonStr);
+
+JSONArray list  = jo.getJSONArray(&quot;list&quot;);
+
+if(dayIndex <= list.length()-1 &amp;&amp; dayIndex>=0){
+

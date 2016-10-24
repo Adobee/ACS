@@ -1,0 +1,10 @@
+Iterator<AccountItem> oldIterator = oldItems.iterator();
+boolean shouldPut = true;
+while (oldIterator.hasNext()){
+AccountItem oldEntry = oldIterator.next();
+if(oldEntry.getChannel().equals(templateEntry.getChannel())){
+shouldPut = false;
+}
+}
+if(shouldPut){
+

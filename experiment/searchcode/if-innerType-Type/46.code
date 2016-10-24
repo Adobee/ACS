@@ -1,0 +1,6 @@
+public StringResourceModelProvider(String property, IPrototypeData innerType) {
+if (innerType == null) {
+throw new IllegalArgumentException(&quot;InnerType may not be null&quot;);
+IModel<?> realResourceModel = new PropertyModel<Object>(model, property);
+if (innerType.getResourceKeyProperty() != null) {
+

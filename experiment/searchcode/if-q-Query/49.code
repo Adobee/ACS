@@ -1,0 +1,10 @@
+super(indexReader, analyzer, defaultPrefix);
+}
+
+@Override
+public Query parse(String queryText) {
+Query query = super.parse(queryText);
+if (query instanceof SpanQuery) {
+if (query instanceof SpanNearQuery) {
+SpanQuery[] spanQueries = ((SpanNearQuery) query).getClauses();
+

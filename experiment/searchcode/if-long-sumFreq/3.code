@@ -1,0 +1,9 @@
+* sort the array with decimal-key using the sorting API
+*/
+public class Sorting {
+
+public static long hex2decimal(String s) {
+String digits = &quot;0123456789ABCDEF&quot;;
+s = s.toUpperCase();
+long val = 0;
+

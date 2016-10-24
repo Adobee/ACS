@@ -1,0 +1,9 @@
+return this.boxWidth;
+}
+
+public void setBoxWidth(double width) {
+if (width != this.boxWidth) {
+this.boxWidth = width;
+exactBoxWidth = ((dataAreaX / ((double) boxAndWhiskerData.getItemCount(series))) * 4.5d) / 7.0d;
+if (exactBoxWidth < BarRenderer.BAR_OUTLINE_WIDTH_THRESHOLD) {
+

@@ -1,0 +1,7 @@
+private static String getTagName(Object tag) {
+if (tag instanceof Class) {
+return ((Class<?>) tag).getSimpleName();
+public static void d(Object tag, String msg) {
+if (BuildConfig.DEBUG) {
+Log.d(getTagName(tag), msg);
+

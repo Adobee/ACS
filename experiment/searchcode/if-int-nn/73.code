@@ -1,0 +1,11 @@
+public static int backtrack(int nn, int tt) {
+if(nn == n+1) {
+if(tt == t)
+return 1;
+else
+return 0;
+}
+if(table[nn][tt] != -1)
+return table[nn][tt];
+int curt = t-tt;
+

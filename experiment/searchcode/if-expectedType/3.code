@@ -1,0 +1,13 @@
+public class InvalidObjectTypeException extends RuntimeException{
+
+private Class expectedType = null;
+private Class actualType = null;
+
+public InvalidObjectTypeException(){
+this.expectedType = expectedType;
+this.actualType = actualType;
+}
+
+public String toString(){
+if(expectedType == null){
+

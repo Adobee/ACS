@@ -1,0 +1,11 @@
+//only works if length is odd
+public static int spiralDiagonalSum(int length)
+{
+if(length==1)
+{
+return 1;
+}
+if(length==2)
+return 10;
+return spiralDiagonalSum(length-2) + (length*length) + (length*length-(length-1)) + (length*length-(2*(length-1))) + (length*length-(3*(length-1)));
+

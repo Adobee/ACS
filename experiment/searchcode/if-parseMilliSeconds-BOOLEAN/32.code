@@ -1,0 +1,7 @@
+boolean parseMilliSeconds = randomBoolean();
+
+// epoch: 1433144433655 => date: Mon Jun  1 09:40:33.655 CEST 2015
+// problem: negative epochs can be arbitrary in size...
+boolean parseMilliSeconds = randomBoolean();
+FormatDateTimeFormatter formatter = Joda.forPattern(parseMilliSeconds ? &quot;epoch_millis&quot; : &quot;epoch_second&quot;);
+

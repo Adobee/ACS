@@ -1,0 +1,12 @@
+public float[] model_erf;
+
+public erffunc(){
+model_erf=new float[1000];
+for(int i=0;i<1000;i++){
+double r=0.01*(double)i;
+int rp=(int)(rrel*100.0);
+double rem=rrel*100.0-(double)rp;
+double interp=1.0;
+if(rp<999){
+interp=rem*(model_erf[rp+1]-model_erf[rp])+model_erf[rp];
+

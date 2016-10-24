@@ -1,0 +1,7 @@
+public Comparable getGroup(Comparable key) {
+if (key == null) {
+throw new IllegalArgumentException(&quot;Null &#39;key&#39; argument.&quot;);
+Comparable result = this.defaultGroup;
+Comparable group = (Comparable) this.keyToGroupMap.get(key);
+if (group != null) {
+

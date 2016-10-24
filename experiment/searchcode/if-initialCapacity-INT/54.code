@@ -1,0 +1,9 @@
+// Tests &quot;<=&quot; because arrays aren&#39;t kept full.
+if (numElements >= initialCapacity) {
+initialCapacity = numElements;
+initialCapacity |= (initialCapacity >>> 8);
+initialCapacity |= (initialCapacity >>> 16);
+initialCapacity++;
+
+if (initialCapacity < 0) // Too many elements, must back off
+

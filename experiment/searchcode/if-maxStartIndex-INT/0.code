@@ -1,0 +1,16 @@
+public static int maxLongestContiguousSubsequence(int[] A, int j)
+{
+if(j < 0)
+return 0;
+
+return Math.max(maxLongestContiguousSubsequence(A, j-1) + A[j], A[j]);
+public static int MCS(int[] A, int i, int j) {
+
+if(i == j)
+return A[i];
+else if(i>j)
+return 0;
+
+
+int max = Integer.MIN_VALUE;
+

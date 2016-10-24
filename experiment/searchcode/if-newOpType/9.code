@@ -1,0 +1,10 @@
+scriptChangedTTL(request, newValue);
+}
+
+OpType newOpType = OpType.fromString(newOp);
+if (newOpType != oldOpType) {
+return scriptChangedOpType(request, oldOpType, newOpType);
+}
+
+if (false == resultCtx.isEmpty()) {
+

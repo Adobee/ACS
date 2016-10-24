@@ -1,0 +1,14 @@
+package com.happydroids.droidtowers.types;
+
+public enum ProviderType {
+NONE,
+LOBBY,
+SKY_LOBBY,
+FOOD,
+ENTERTAINMENT,
+SERVICE(MAIDS, JANITORS, SECURITY, RESTROOM, PARKING);
+
+private final ProviderType[] subTypes;
+
+ProviderType(ProviderType... subTypes) {
+

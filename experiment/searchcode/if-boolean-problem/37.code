@@ -1,0 +1,9 @@
+internalLinks.add(new InternalLink(Messages.get(&quot;problem.statement&quot;), routes.ProblemController.jumpToStatement(problem.getId())));
+
+if (isAllowedToManageGrading(problemService, problem)) {
+internalLinks.add(new InternalLink(Messages.get(&quot;problem.programming.grading&quot;), routes.ProgrammingProblemController.jumpToGrading(problem.getId())));
+}
+
+if (isAllowedToSubmit(problemService, problem)) {
+internalLinks.add(new InternalLink(Messages.get(&quot;problem.programming.submission&quot;), routes.ProgrammingProblemController.jumpToSubmissions(problem.getId())));
+

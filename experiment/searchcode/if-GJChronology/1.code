@@ -1,0 +1,9 @@
+import org.gwttime.time.LocalDate;
+import org.gwttime.time.chrono.GJChronology;
+import org.gwttime.time.gwt.JodaGwtTestCase;
+* This class is a Junit unit test for GJChronology.
+*
+* @author Stephen Colebourne
+*/
+public class TestGJChronology extends JodaGwtTestCase {
+

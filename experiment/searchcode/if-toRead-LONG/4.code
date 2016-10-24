@@ -1,0 +1,11 @@
+try {
+int got;
+do {
+int toRead;
+if (rangen.nextInt() % 5 == 0) {
+toRead = 1;
+got = is.read(buffer, 0, toRead);
+if (got < 0)
+break;
+os.write(buffer, 0, got);
+

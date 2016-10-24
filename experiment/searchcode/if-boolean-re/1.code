@@ -1,0 +1,8 @@
+public static boolean testRegExp(RegExp re, Transform<Boolean, RegExp> reProperty) {
+if (reProperty.transform(re)) {
+return true;
+public static final Transform<Boolean, RegExp> IS_STAR_LIKE = new Transform<Boolean, RegExp>() {
+@Override
+public Boolean transform(RegExp re) {
+if (re instanceof Counter) {
+

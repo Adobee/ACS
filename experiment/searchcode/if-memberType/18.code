@@ -1,0 +1,5 @@
+* @return the ResponseEntity with status 201 (Created) and with body the new membertype, or with status 400 (Bad Request) if the membertype has already an ID
+public ResponseEntity<Membertype> createMembertype(@RequestBody Membertype membertype) throws URISyntaxException {
+log.debug(&quot;REST request to save Membertype : {}&quot;, membertype);
+if (membertype.getId() != null) {
+

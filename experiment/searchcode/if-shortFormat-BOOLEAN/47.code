@@ -1,0 +1,12 @@
+public class TypeDefinitionDateTime extends TypeDefinition {
+protected DateFormat shortFormat;
+
+protected TypeDefinitionDateTime() {
+super();
+defaultValue = null;
+public boolean validate(String s) {
+try {
+shortFormat.parse(s);
+return true;
+} catch (ParseException e) {
+

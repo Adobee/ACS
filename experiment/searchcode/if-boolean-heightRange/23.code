@@ -1,0 +1,12 @@
+this.heightRange = heightRange;
+}
+
+public boolean spawn()
+{
+// Don&#39;t let the limiter or abilities component mess with us
+// Add the height offset to the mobs spawn location
+if (!mob.addHeightOffset(location, playerY, heightRange))
+return false;
+
+// Add mob to limits
+

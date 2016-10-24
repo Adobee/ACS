@@ -1,0 +1,9 @@
+catch (Exception ignored) {
+}
+}
+if (image == null) return;
+executePaint(g, component, image, fillType, alpha, insets);
+// performance: pre-compute scaled image or tiles
+if (fillType == FillType.SCALE || fillType == FillType.TILE) {
+int sw0 = scaled == null ? -1 : scaled.getWidth(null);
+

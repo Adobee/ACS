@@ -1,0 +1,10 @@
+if (i != 0)
+{
+double potentialIGain = (m_totalError + m_error) * i;
+if (potentialIGain < m_maximumOutput)
+* @param absoluteTolerance How close the value can be before it is considered &quot;on-target.&quot;
+* @return
+*/
+public boolean isOnTarget(double absoluteTolerance) {
+return Math.abs(m_targetInputValue - m_currentInputValue) < absoluteTolerance;
+

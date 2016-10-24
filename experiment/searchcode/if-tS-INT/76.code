@@ -1,0 +1,11 @@
+public <T>  Underscore<T> sample(List<T> ts, int num) {
+return _(ts).sample(num);
+}
+
+public <T> Optional<T> first(List<T> ts) {
+public <T> Underscore<T> initial(List<T> ts, int n) {
+return _(ts).initial(n);
+}
+
+public <T> Optional<T> last(List<T> ts) {
+

@@ -1,0 +1,10 @@
+public class ShellSort {
+private int temp;
+
+public void shell(int[] a) {
+int step = a.length;
+int i = 0;
+int j = 0;
+while (step > 0) {
+step = step/2;
+

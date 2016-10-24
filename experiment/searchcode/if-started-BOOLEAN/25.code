@@ -1,0 +1,14 @@
+private final Tailer tailer;
+private boolean started;
+
+public TailTaskReference(final Tailer tailer) {
+this.tailer = tailer;
+public void setStarted(final boolean started) {
+this.started = started;
+}
+
+@Override
+public boolean stop() {
+if (tailer != null) {
+tailer.stop();
+

@@ -1,0 +1,7 @@
+static public native int f19(int p0);
+static public native int f20(int p0);
+static public native long f21(long p0);
+static public native long f22(long p0);
+static public native float f23(float p0);
+static public native double f24(double p0);
+

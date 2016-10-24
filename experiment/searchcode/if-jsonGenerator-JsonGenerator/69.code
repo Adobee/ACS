@@ -1,0 +1,10 @@
+import org.codehaus.jackson.JsonGenerator;
+import org.codehaus.jackson.map.MappingJsonFactory;
+
+import com.demo.model.Content;
+JsonFactory jsonFactory = new MappingJsonFactory();
+StringWriter out = new StringWriter();
+
+try{
+JsonGenerator jsongenerator = jsonFactory.createJsonGenerator(out);
+

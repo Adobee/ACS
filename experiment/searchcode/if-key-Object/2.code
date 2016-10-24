@@ -1,0 +1,18 @@
+put(key, new Long(Long(key) + n));
+}
+
+public String str(Object key) {
+key = get(key);
+if(key == null)
+return &quot;&quot;;
+return key.toString();
+}
+
+public Object get(Object key, Object def) {
+key = get(key);
+if(key != null)
+return key;
+return def;
+}
+}
+

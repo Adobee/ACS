@@ -1,0 +1,8 @@
+out.writeBoolean(cookies.httpOnly());
+out.writeBoolean(cookies.hostOnly());
+out.writeBoolean(cookies.persistent());
+boolean secure = in.readBoolean();
+boolean httpOnly = in.readBoolean();
+boolean hostOnly = in.readBoolean();
+boolean persistent = in.readBoolean();
+

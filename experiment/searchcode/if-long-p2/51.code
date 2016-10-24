@@ -1,0 +1,7 @@
+public class BearPlays {
+public int pileSize(int A, int B, int K) {
+long sum = A+B;
+long p2 = pow(2, K, sum);
+long la = A * p2 % sum;
+return (int)Math.min(la, sum-la);
+

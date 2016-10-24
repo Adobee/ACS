@@ -1,0 +1,8 @@
+public class C4JFileWriter {
+
+private static PrintWriter writer;
+
+public static void assertStatic( boolean condition, String message ) {
+if( !condition &amp;&amp; writer != null ) {
+writer.println( message );
+

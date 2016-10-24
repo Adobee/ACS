@@ -1,0 +1,12 @@
+public void dispatch(int desfloor){		//¿É±£Ö¤ÇëÇóºÏÀí
+if(desfloor<floor){
+direct=Direction.Down;
+state=RunningState.Pass;
+do{
+floor--;
+if(floor==desfloor){
+state=RunningState.Stop;
+}
+if(floor==1)
+direct=Direction.Up;
+

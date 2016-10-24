@@ -1,0 +1,12 @@
+package com.tree;
+
+
+public class StringNode {
+public final String id;
+public StringNode left, right;
+
+public StringNode(String id) {
+this.id = id;
+}
+public StringNode setLeft(StringNode n) {
+

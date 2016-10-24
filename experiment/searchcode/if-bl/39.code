@@ -1,0 +1,9 @@
+public int getLngSpan() {
+if (bL.getLng() > tR.getLng()) {
+return 360000000 + tR.getLng() - bL.getLng();
+return contains(new GeoPointInternal(lng, lat));
+}
+
+public boolean contains(IGeoPoint p) {
+if (p.getLat() < bL.getLat() || p.getLat() > tR.getLat()) {
+

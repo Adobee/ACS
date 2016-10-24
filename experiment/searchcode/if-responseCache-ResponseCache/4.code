@@ -1,0 +1,7 @@
+public static Result getWithCache(String url, final Route route, final String cacheKey) {
+ResponseCache responseCache = (ResponseCache)Cache.get(cacheKey);
+if (responseCache == null) {
+for (Entry<String, List<String>> header : responseCache.headers) {
+response().setHeader(header.getKey(), header.getValue().get(0));
+if (Logger.isTraceEnabled()) Logger.trace(&quot;response cache headers: &quot; + header.getKey() + &quot;=&quot; + header.getValue().get(0));
+

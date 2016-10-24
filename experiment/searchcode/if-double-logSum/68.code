@@ -1,0 +1,9 @@
+else
+return x + StrictMath.log1p(StrictMath.exp(temp));
+}
+
+public static double logSum(double[] x) {
+public static double logSum(double x, double y) {
+final double temp = y - x;
+if (temp > NATS || x < logLimit)
+

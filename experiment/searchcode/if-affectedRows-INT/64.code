@@ -1,0 +1,10 @@
+private int affectedRows = 0;
+
+/**
+* @param bindingDao the bindingDao to set
+*/
+public void setBindingDao(BindingDaoImpl bindingDao) {
+this.affectedRows = this.bindingDao.insertBindTel(binding);
+if(this.affectedRows > 0){
+return true;
+

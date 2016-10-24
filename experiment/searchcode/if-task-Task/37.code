@@ -1,0 +1,7 @@
+while(task.getTaskState().equals(TaskState.CREATED)||task.getTaskState().equals(TaskState.RETRY)){
+task.execute();
+}
+
+if(task.getTaskState().equals(TaskState.ABORTED_LOCAL)||task.getTaskState().equals(TaskState.ABORTED_REMOTE)){
+if(task.getTaskPriority().equals(TaskPriority.CRITICAL)) throw new IllegalStateException();
+

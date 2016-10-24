@@ -1,0 +1,11 @@
+effectiveLevel = parent.getLevel();
+}
+// Handle root logger level
+if (effectiveLevel == null &amp;&amp; (name == null || name.isEmpty())){
+return level;
+}
+
+public void setLevel(Level level) {
+if (level != this.level &amp;&amp; name != null) {
+ctrl.changeLoggerLevel(name, level);
+

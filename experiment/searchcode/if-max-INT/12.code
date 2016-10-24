@@ -1,0 +1,13 @@
+
+
+public class FinMax {
+
+/**
+* Method to find max
+*/
+public void finMax(int a, int b, int c) {
+int max = 0;
+//	System.out.println(a + &quot; &quot; + b + &quot; &quot; + c);
+
+if ((a > 0) &amp; (b > 0) &amp; (c > 0)) {
+

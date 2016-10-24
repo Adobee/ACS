@@ -1,0 +1,8 @@
+public Collection<DeviceConfiguration> deviceConfigurations = new ArrayList<DeviceConfiguration>();
+
+/** The purge on start. */
+@Attribute(required = false, name = &quot;purge-on-start&quot;)
+public DeviceConfiguration getDeviceConfiguration(final State state) {
+for (final DeviceConfiguration configuration : deviceConfigurations) {
+if (configuration.hasState(state)) {
+

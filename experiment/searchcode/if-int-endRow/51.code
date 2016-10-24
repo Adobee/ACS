@@ -1,0 +1,13 @@
+private int StartRow, EndRow, StartPoint, EndPoint;
+
+public SelectionData(int sR, int sP, int eR, int eP) {
+return StartRow;
+}
+
+public int getEndRow() {
+return EndRow;
+}
+
+public int getStartPoint() {
+return StartPoint;
+

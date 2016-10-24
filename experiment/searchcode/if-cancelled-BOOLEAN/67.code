@@ -1,0 +1,10 @@
+public abstract class CancellableNetworkEvent extends NetworkEvent {
+
+private boolean cancelled;
+private boolean cancellable;
+return this.cancelled;
+}
+
+public void setCancelled(boolean cancelled) {
+if(!isCancellable()) throw new RuntimeException(&quot;Not allowed to change Cancel of NetworkEvent!&quot;);
+

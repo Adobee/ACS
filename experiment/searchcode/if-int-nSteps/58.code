@@ -1,0 +1,10 @@
+import java.io.*;
+import java.util.*;
+
+interface IPlayer
+{
+public Step doStep(Step step, int n) throws IOException;
+Data d = new Data(numberOfTheWinner);
+DataForGraph DG = new DataForGraph();
+int NSteps[] = l.getNSteps();
+

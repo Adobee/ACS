@@ -1,0 +1,14 @@
+super(&quot;Pause&quot;);
+}
+
+
+public static PauseCommand getInstance(){
+if(pauseCommand == null)
+game.resumeGame();
+}
+else if(!game.isPaused()){
+game.pauseGame();
+}
+}
+}
+

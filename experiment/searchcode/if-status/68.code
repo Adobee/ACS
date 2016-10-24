@@ -1,0 +1,15 @@
+* @author Antonio Fabregat <fabregat@ebi.ac.uk>
+*/
+public enum EventStatus {
+REGULAR(&quot;&quot;),
+NEW(&quot;NEW&quot;),
+UPDATED(&quot;UPDATED&quot;);
+
+private String status;
+for (EventStatus eventStatus : EventStatus.values()) {
+if (eventStatus.status.equals(status)) return eventStatus;
+}
+return REGULAR;
+}
+}
+

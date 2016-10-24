@@ -1,0 +1,8 @@
+double x0 = (lowerBound + higherBound) / 2;
+
+double f0 = f.apply(x0);
+
+DoubleFunction<Double> g0 = (x) -> f0 - L * Math.abs(x - x0);
+
+double x1 = minimizer.argmin(g0, lowerBound, higherBound, precision);
+

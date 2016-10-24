@@ -1,0 +1,12 @@
+public class PowerOfN {
+
+public static int findPower(int n, int exponent) {
+// need n * n(exponent times)
+if(exponent == 0) { return 1;}
+//2 - 2 power 1 * 2 power 1
+//1 - 2 power 1
+if(exponent == 0) {
+return 1;
+}
+int temp = findPowerLogNTime(n, exponent/2);
+

@@ -1,0 +1,6 @@
+String nextPage = &quot;lista_irmas_para_editar.jsp&quot;;//&quot;listacadasdemissaoparaeditar.jsp&quot;;
+Integer initialIndex = new Integer(request.getParameter(&quot;initial_index_freira&quot;));
+if(initialIndex != 0){
+for (int i = initialIndex; i < initialIndex + 10; i++) {
+if(i<freiras.size()) freirasapaginada.add(freiras.get(i));
+

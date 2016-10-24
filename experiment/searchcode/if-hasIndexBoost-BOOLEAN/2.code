@@ -1,0 +1,7 @@
+public SearchSourceBuilder(StreamInput in) throws IOException {
+if (in.readBoolean()) {
+aggregations = new AggregatorFactories.Builder(in);
+boolean hasIndexBoost = in.readBoolean();
+if (hasIndexBoost) {
+int size = in.readVInt();
+

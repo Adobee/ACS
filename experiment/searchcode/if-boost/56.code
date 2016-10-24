@@ -1,0 +1,7 @@
+boolean validate(SearchBoostVO searchBoostVO, String value) {
+if (searchBoostVO == null) {
+showErrorMessageView($(&quot;SearchBoostByQueryView.invalidLabelQuery&quot;));
+return false;
+} else {
+if (StringUtils.isBlank(searchBoostVO.getLabel())) {
+

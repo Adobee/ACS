@@ -1,0 +1,14 @@
+package com.penglecode.common.util;
+
+public class TimeoutThread extends Thread {
+
+private long timeout;
+private volatile boolean isTimeout = false;
+
+public TimeoutThread(long timeout) {
+super();
+this.timeout = timeout;
+}
+
+public TimeoutThread(long timeout, boolean raiseException) {
+

@@ -1,0 +1,13 @@
+int rectStartX = 270; int rectStartY = 30;
+float[] gridDetails;
+
+public void setup() {
+
+size(500, 270);
+if (frame != null) frame.setResizable(true);		// allow reseizing of screen
+pltSs[curIndexSs][1] = (float) n.u;	// store v in pltSs
+
+// compute shifted data for xt plot
+if (curShift >= 0) {
+reDraw = true;			// animation needs to be redrawn
+

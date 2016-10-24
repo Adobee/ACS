@@ -1,0 +1,8 @@
+byteArray = JcryptManager.addEmptyParamToByteArrayStart(byteArray);
+}
+
+if (params.getEncryptorId() != params.getDecryptorId()) {
+long decryptorId = encryptorId;
+if (!JcryptManager.isEmptyParam(byteArray[0])) {
+decryptorId = JcryptManager.getLongParamFromReversedAndCompressedWithLengthByteArrayStart(byteArray);
+

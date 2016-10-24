@@ -1,0 +1,7 @@
+public class PowerWithUnsignedExponent {
+public static double powerWithUnsignedExponent(double base, int exponent) {
+if (exponent == 0) return 1;
+if (exponent == 1) return base;
+
+double result = powerWithUnsignedExponent(base, exponent >> 1);
+

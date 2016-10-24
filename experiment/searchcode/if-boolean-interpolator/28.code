@@ -1,0 +1,10 @@
+private TimeInterpolator mDefaultInterpolator;
+
+public void clearInterpolator(View view) {
+boolean z = NotificationCompatBase.a;
+if (this.mDefaultInterpolator == null) {
+this.mDefaultInterpolator = new ValueAnimator().getInterpolator();
+}
+view.animate().setInterpolator(this.mDefaultInterpolator);
+if (z) {
+

@@ -1,0 +1,6 @@
+public void registerModelChangedObserver(ISubModelChangedObserver observer) {
+if (!mSubModelChangedObservers.contains(observer)) {
+mSubModelChangedObservers.add(observer);
+protected void notifyModelChanged(boolean dataChanged) {
+for (ISubModelChangedObserver observer : mSubModelChangedObservers) {
+

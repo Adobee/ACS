@@ -1,0 +1,11 @@
+if(col!=j&amp;&amp;board[i][j]!=&#39;.&#39;&amp;&amp;board[i][j]==board[i][col]){
+return false;
+}
+}
+for(int row=0; row<board.length; row++){
+if(row!=i&amp;&amp;board[i][j]!=&#39;.&#39;&amp;&amp;board[i][j]==board[row][j]){
+int rowSection = i/3;
+int colSection = j/3;
+
+if(i!=0+rowSection*3&amp;&amp;j!=0+colSection*3&amp;&amp;board[i][j]!=&#39;.&#39;&amp;&amp;board[0+rowSection*3][0+colSection*3] == board[i][j]){
+

@@ -1,0 +1,11 @@
+return this.list;
+}
+
+private int getType(char ch) {
+if (ch == &#39;<&#39; || ch == &#39;>&#39; || ch == &#39;/&#39; || Character.isWhitespace(ch) || ch == &#39;=&#39;)
+for (int i = 1; i < data.length(); ++i) {
+char ch = data.charAt(i);
+int type = this.getType(ch);
+
+if (type == lastType || openQuote &amp;&amp; ch != &#39;<&#39; &amp;&amp; ch != &#39;>&#39;) {
+

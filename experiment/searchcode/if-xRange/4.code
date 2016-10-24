@@ -1,0 +1,11 @@
+package bb.server.entities;
+
+public class MovingPlatform extends Platform {
+private float xRange;
+if (x < (xAnchor - xRange)) {
+xSpeed = Math.abs(xSpeed);
+}
+
+if (x > (xAnchor + xRange)) {
+xSpeed = Math.abs(xSpeed) * -1;
+

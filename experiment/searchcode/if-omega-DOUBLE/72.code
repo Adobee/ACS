@@ -1,0 +1,9 @@
+Map<Alignments, List<OmegaFit>> omega=parseScores(BEDScores);
+Map<Alignments, Double> percentageMap=getAverageBranchLength(omega);
+write(save, percentageMap);
+List<OmegaFit> rtrn=new ArrayList();
+
+for(OmegaFit fit: list){
+double score=fit.getLogOddsScore();
+if(score>crit){rtrn.add(fit);}
+

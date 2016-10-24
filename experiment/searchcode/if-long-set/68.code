@@ -1,0 +1,10 @@
+import com.google.common.collect.Sets;
+
+public class RedisHelper {
+
+public static Set<Long> convertToLongSet(Set<String> sets) {
+Set<Long> longSet = Sets.newLinkedHashSet();
+try {
+for (String value : sets) {
+longSet.add(Long.parseLong(value));
+

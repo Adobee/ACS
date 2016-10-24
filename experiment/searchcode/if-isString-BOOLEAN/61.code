@@ -1,0 +1,8 @@
+private ObjectSerializer<T> delegate = new ObjectSerializer<>();
+private final boolean isString;
+private Encoder encoder = Base64.getEncoder();
+@SuppressWarnings(&quot;unchecked&quot;)
+public T deserialize(String serial) throws IOException
+{
+if (isString)
+

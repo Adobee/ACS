@@ -1,0 +1,7 @@
+private IndexMetaData checkSupportedVersion(IndexMetaData indexMetaData) throws Exception {
+if (indexMetaData.getState() == IndexMetaData.State.OPEN &amp;&amp; isSupportedVersion(indexMetaData) == false) {
+* Returns true if this index can be supported by the current version of elasticsearch
+*/
+private static boolean isSupportedVersion(IndexMetaData indexMetaData) {
+if (indexMetaData.creationVersion().onOrAfter(Version.V_0_90_0_Beta1)) {
+

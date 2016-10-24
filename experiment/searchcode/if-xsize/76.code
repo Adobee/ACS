@@ -1,0 +1,13 @@
+public class Pelota {
+private static final int XSIZE = 15,YSIZE = 15;
+private double x=0,y=0,dx=1,dy=1;
+
+
+public void move(Rectangle2D bounds){
+x = bounds.getMinX();
+dx = -dx;
+}
+if(x+XSIZE >= bounds.getMaxX()){
+x = bounds.getMaxX()-XSIZE;
+dx = -dx;
+

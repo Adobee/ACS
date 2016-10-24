@@ -1,0 +1,10 @@
+package utilities;
+
+import java.text.NumberFormat;
+import java.text.ParsePosition;
+import java.util.regex.Matcher;
+NumberFormat formatter = NumberFormat.getInstance();
+ParsePosition pos = new ParsePosition(0);
+formatter.parse(str, pos);
+boolean IsANumber = str.length() == pos.getIndex();
+

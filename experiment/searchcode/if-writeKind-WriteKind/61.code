@@ -1,0 +1,7 @@
+// Check that if we don&#39;t read to the end of a response, the next request on the
+// recycled connection doesn&#39;t get the unread tail of the first request&#39;s response.
+conn.setFixedLengthStreamingMode(n);
+}
+OutputStream out = conn.getOutputStream();
+if (writeKind == WriteKind.BYTE_BY_BYTE) {
+

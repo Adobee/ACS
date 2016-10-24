@@ -1,0 +1,13 @@
+if (org.apache.commons.math.util.MathUtils.equals(ratio, minRatio, epsilon)) {
+minRatioPositions.add(i);
+} else {
+if (ratio < minRatio) {
+minRatioPositions = new java.util.ArrayList<java.lang.Integer>();
+minRatioPositions.add(i);
+}
+}
+}
+}
+if ((minRatioPositions.size()) == 0) {
+return null;
+

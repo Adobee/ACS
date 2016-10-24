@@ -1,0 +1,10 @@
+return getAverage(p, p.length);
+}
+
+public static double getStdDev(double p[], double ave)
+{
+return getStdDev(p, ave, p.length);
+}
+
+public static double getStdDev(double p[])
+

@@ -1,0 +1,11 @@
+public void addConstraint(Constraint constraint) {
+if (this.constraints.isEmpty()) {
+this.constraints.add(constraint);
+}
+if (constraint instanceof PrimaryKeyConstraint) {
+this.addConstraint((Constraint) constraint);
+this.constraints.add(new NotNullConstraint());
+}
+
+private boolean containsConstraint(Constraint constraint) {
+

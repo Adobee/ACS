@@ -1,0 +1,8 @@
+DEBUG.P(&quot;cond.type.isTrue()=&quot;+cond.type.isTrue());
+DEBUG.P(&quot;cond.type.isFalse()=&quot;+cond.type.isFalse());
+if (cond.type.isTrue()) {
+result = translate(tree.thenpart);
+} else if (cond.type.isFalse()) {
+if (tree.elsepart != null) {
+result = translate(tree.elsepart);
+

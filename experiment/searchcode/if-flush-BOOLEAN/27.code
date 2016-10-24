@@ -1,0 +1,7 @@
+public void setFlushMode(String aFlushMode) {
+flushMode = FlushMode.valueOf(aFlushMode);
+if (aFlushMode != null &amp;&amp; flushMode == null) {
+FlushMode currentFlushMode = session.getFlushMode();
+FlushMode previousFlushMode = null;
+if (getFlushMode() != null) {
+

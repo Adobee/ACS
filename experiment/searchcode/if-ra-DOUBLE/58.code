@@ -1,0 +1,6 @@
+// in the union of A[la..ra] and B[lb..rb]
+private double findKth(int A[], int m, int la, int ra, int B[], int n, int lb, int rb, int k) {
+if (la > ra) {
+if ((m+n)%2 == 1) return (double)B[lb+k-1];
+else return (double)(B[lb+k-1]+B[lb+k]) / 2.0;
+

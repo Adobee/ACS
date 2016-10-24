@@ -1,0 +1,8 @@
+public void polylineFinished(MeasureEvent event) throws BehaviorException {
+GeneralPathX gp = event.getGP();
+IGeometry geometry = null;
+if (tablePanel.getMapControl().getCurrentTool()
+if (tablePanel.getPolygonToolButton().isSelected()) {
+numGeometries = ((Integer) tablePanel.getTable().getModel()
+.getValueAt(selectedRow, 1)).intValue();
+

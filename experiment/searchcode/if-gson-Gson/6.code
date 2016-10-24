@@ -1,0 +1,14 @@
+package controllers.provider;
+
+import com.google.gson.Gson;
+
+/**
+* @author siva
+*
+*/
+public class GsonProvider {
+public static Gson get() {
+if(gson == null) {
+synchronized (GsonProvider.class) {
+if(gson == null) {
+

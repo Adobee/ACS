@@ -1,0 +1,14 @@
+* Created by alexander on 13.12.14.
+*/
+enum OpFiller {
+
+SINGLE {
+@Override
+int hash(Object params) {
+return params.hashCode();
+}
+
+@Override
+boolean isEqual(Object myParams, Object thatParams) {
+if (myParams == null ^ thatParams == null) return false;
+

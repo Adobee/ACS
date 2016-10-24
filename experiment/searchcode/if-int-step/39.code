@@ -1,0 +1,8 @@
+public class Climb{
+public static int climb(int n){
+if(n<=1) return 1;
+if(n==2) return 2;
+public static int climb_dp(int n, int[] numStep){
+if(numStep[n]==0)
+numStep[n] = climb_dp(n-1,numStep)+climb_dp(n-2,numStep)+climb_dp(n-3,numStep);
+

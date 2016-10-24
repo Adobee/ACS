@@ -1,0 +1,16 @@
+package general;
+
+import java.util.HashMap;
+
+public class MostFreqInt {
+
+
+static int[] arr={1,2,3,1,4,21,2,3,9,10,2};
+HashMap<Integer, Integer> freq= new HashMap<>();
+for(int a:arr)
+{
+if(freq.get(a)==null)
+freq.put(a, 1);
+else
+freq.put(a, freq.get(a)+1);
+

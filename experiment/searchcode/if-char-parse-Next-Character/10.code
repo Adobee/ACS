@@ -1,0 +1,8 @@
+public void parse(CharIterator charIterator, Stack<LispObject> stack) throws ParseException {
+charIterator.expect(&#39;t&#39;);
+charIterator.checkNext(new CharPredicate() {
+
+@Override
+public boolean assertCharacter(char c) throws ParseException {
+if (Character.isWhitespace(c) || c == &#39;)&#39;) {
+

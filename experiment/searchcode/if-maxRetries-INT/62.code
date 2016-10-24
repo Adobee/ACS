@@ -1,0 +1,10 @@
+private Sender httpSender;
+private int maxRetries;
+private int maxTimeout;
+private String urlPrefix;
+this(new StaticCredentials(authId, authToken));
+}
+
+public ClientBuilder retryAtMost(int maxRetries) {
+this.maxRetries = maxRetries;
+

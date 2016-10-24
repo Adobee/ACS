@@ -1,0 +1,10 @@
+int j = (i << 1) + 1;
+while (j <= n - 1) {
+if (j < n - 1 &amp;&amp; query[j].w > query[j + 1].w)
+j++;
+else if (j < n - 1 &amp;&amp; query[j].w == query[j + 1].w
+&amp;&amp; query[j].d > query[j + 1].d) {
+j++;
+}
+if (query[j].w < q.w) {
+

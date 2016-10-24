@@ -1,0 +1,9 @@
+int configNumSplits = conf.getInt(TEZ_GROUPING_SPLIT_COUNT, 0);
+if (configNumSplits > 0) {
+// always use config override if specified
+LOG.info(&quot;Desired numSplits overridden by config to: &quot; + desiredNumSplits);
+}
+
+if (estimator == null) {
+estimator = DEFAULT_SPLIT_ESTIMATOR;
+

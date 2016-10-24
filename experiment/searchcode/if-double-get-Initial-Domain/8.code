@@ -1,0 +1,11 @@
+public InfiniteImpulseFilterNPole() {}
+
+/**
+* Approximate initial values with exponential moving average
+*/
+@Override
+public double calculateFirst(Doubles domain, Doubles range, int index, int length) {
+if (index < 1) return domain.get(0);
+double priorXma = range.get(index-1);
+return (_alpha * (domain.get(index) - priorXma)) + priorXma;
+

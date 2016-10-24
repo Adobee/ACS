@@ -1,0 +1,10 @@
+@Override
+public String toString() {
+if(this.intType) {
+return Integer.toString(intNumber);
+}
+return Double.toString(realNumber);
+if(operator.equals(&quot;*&quot;)) {
+if(this.intType &amp;&amp; parseFactor.intType) {
+return new Number(this.intNumber * parseFactor.intNumber);
+

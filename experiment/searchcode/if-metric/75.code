@@ -1,0 +1,10 @@
+static void populateMetricInfo(MetricInfoCollection metricInfoCollection, String prefix, MetricConfig metrics) {
+if (metrics.metric != null) {
+for (Metric metric : metrics.metric) {
+metricInfo.key = (prefix + metric.key);
+metricInfoCollection.metricInfoList.add(metricInfo);
+}
+}
+
+if (metrics.metrics != null) {
+

@@ -1,0 +1,15 @@
+public Saturation(double uMin, double uMax) {
+this();
+this.uMin = uMin;
+this.uMax = uMax;
+}
+
+@Override
+public double getOutput(int i) {
+if(i != 0) return 0;
+/* Update the discrete state */
+public void update(double value) {
+y[0] = value;
+if(y[0] < uMin) y[0] = uMin;
+if(y[0] > uMax) y[0] = uMax;
+

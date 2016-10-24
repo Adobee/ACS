@@ -1,0 +1,14 @@
+int l3 = s3.length();
+
+if (l1 + l2 != l3)
+return false;
+if (l3 == 0)
+return true;
+
+boolean[][] isInter = new boolean[l1 + 1][l2 + 1];
+for (int j = 0; j <= l2; j++) {
+int k = i + j;
+if (k == 0) {
+isInter[i][j] = true;
+continue;
+

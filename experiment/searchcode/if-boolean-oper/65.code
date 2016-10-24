@@ -1,0 +1,11 @@
+public class BlockJoin implements Operator {
+private Operator oper;
+private Operator operJoin;
+private int operCount;
+private boolean operFlag;
+public boolean fetchData(){
+ArrayList<LeafValue> tuple = null;
+try{
+if(operFlag == false){
+operJoin.reset();
+

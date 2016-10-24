@@ -1,0 +1,9 @@
+if ( next == 0 ) {
+completelyFilled = true;
+}
+}
+
+public double[] getPercentiles( double...percentile ) {
+double[] ret = new double[percentile.length];
+double[] myvalues = completelyFilled ? values.clone() : Arrays.copyOf( values, next );
+

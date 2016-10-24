@@ -1,0 +1,6 @@
+ShardRouting primaryShard = state.getRoutingTable().shardRoutingTable(shardId).primaryShard();
+boolean executeOnPrimary = true;
+// whether shard has been marked as relocated already (i.e. relocation completed)
+if (primaryShard.relocating() &amp;&amp; randomBoolean()) {
+isRelocated.set(true);
+

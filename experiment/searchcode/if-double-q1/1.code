@@ -1,0 +1,10 @@
+package com.dimarobotics.simulator.math;
+
+public class Quaternion {
+
+private double q0,q1,q2,q3;
+public void normalizeIfNecessary(){
+double sum = q0*q0+q1*q1+q2*q2+q3*q3;
+if(sum!=1.0){
+double norm = Math.sqrt(sum);
+

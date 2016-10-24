@@ -1,0 +1,9 @@
+private String description;
+
+@ManyToOne(fetch = FetchType.LAZY)
+private ProviderType providerType;
+public Provider() {
+}
+
+public Provider(Integer id, String providerName, String description, ProviderType providerType, Employer employer) {
+

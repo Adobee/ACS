@@ -1,0 +1,9 @@
+public Block(double x, double y, double width, double height) {
+super(x, y, height, width);
+}
+
+public void draw(Graphics g){
+g.setColor(new Color(Math.min((int)(128/mass), 255), Math.min((int)(200/mass), 255), Math.min((int)(128/mass), 255)));
+g.fillRect(drawX(), drawY(), drawWidth(), drawHeight());
+g.setColor(Color.BLACK);
+

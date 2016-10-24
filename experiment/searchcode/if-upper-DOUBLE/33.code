@@ -1,0 +1,8 @@
+private Integratable function;
+private double lowerBound;
+private double upperBound;
+private double estimate;
+private double rectangleWidth;
+public double riemannIntegrate(double lowerBound, double upperBound, long rectangles) {
+if (lowerBound > upperBound) {
+

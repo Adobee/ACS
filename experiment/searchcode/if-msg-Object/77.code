@@ -1,0 +1,24 @@
+Log.d(tag, msg);
+}
+}
+/**
+* 打印d级别的log
+* @param msg
+*/
+public static void d(Object object,String msg){
+if(isDebug){
+Log.e(tag, msg);
+}
+}
+
+/**
+* 打印e级别的log
+* @param msg
+*/
+public static void e(Object object,String msg){
+if(isDebug){
+Log.e(object.getClass().getSimpleName(), msg);
+}
+}
+}
+

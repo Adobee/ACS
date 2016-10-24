@@ -1,0 +1,8 @@
+public class ComparatorAdaptor<T extends Comparable<T>> implements Comparator<T> {
+
+
+private Closure<Tuple2<T, T>, Boolean> comparator;
+
+public ComparatorAdaptor(Closure<Tuple2<T, T>, Boolean> comparator){
+this.comparator = comparator;
+

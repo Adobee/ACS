@@ -1,0 +1,9 @@
+protected abstract int getLayoutId();
+
+public abstract void onRefresh();
+
+public void onViewCreated(View view, Bundle savedInstanceState) {
+super.onViewCreated(view, savedInstanceState);
+this.refreshProvider = createRefreshProvider(view);
+if (this.refreshProvider != null) {
+

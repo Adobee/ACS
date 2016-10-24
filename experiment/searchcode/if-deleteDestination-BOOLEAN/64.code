@@ -1,0 +1,10 @@
+public boolean removeDestination(final SimpleString address, final boolean durable) throws Exception
+{
+boolean removed = addressManager.removeDestination(address);
+
+if (removed)
+private void addBindingInMemory(final Binding binding) throws Exception
+{
+boolean exists = addressManager.addMapping(binding.getAddress(), binding);
+if (!exists)
+

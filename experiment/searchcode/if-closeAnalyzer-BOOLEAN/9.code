@@ -1,0 +1,8 @@
+indexService = indicesService.indexServiceSafe(request.index());
+}
+Analyzer analyzer = null;
+boolean closeAnalyzer = false;
+analyzer = new CustomAnalyzer(tokenizerFactory, charFilterFactories, tokenFilterFactories);
+closeAnalyzer = true;
+} else if (analyzer == null) {
+

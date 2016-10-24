@@ -1,0 +1,11 @@
+// Converts the degrees to a normalised radian for use with Math.sin()
+public static double normalise(long x) {
+
+long conv = x % 360;
+if(conv >= 1)
+x = x % 360;
+return Math.toRadians(x);
+}
+
+/*private static double sinOctave(int x, int z, int octave) {
+

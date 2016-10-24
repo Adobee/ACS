@@ -1,0 +1,11 @@
+public class IfNotExistsAndTtl implements Consumer<Insert> {
+private final int ttl;
+
+public IfNotExistsAndTtl(int ttl) {
+public void accept(Insert insert) {
+insert.ifNotExists().using(QueryBuilder.ttl(ttl));
+}
+
+@Override
+public String toString() {
+

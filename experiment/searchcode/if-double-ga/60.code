@@ -1,0 +1,10 @@
+speedX += x;
+speedY += y;
+double goodSpd = 0.01;
+if (speedX * speedX + speedY * speedY > goodSpd * goodSpd) {
+public Force elasticForce(GraphAgent GA) {
+double dx = this.x - GA.x;
+double dy = this.y - GA.y;
+double d2 = dx * dx + dy * dy;
+double d = Math.sqrt(d2);
+

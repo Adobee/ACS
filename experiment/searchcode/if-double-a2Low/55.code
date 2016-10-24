@@ -1,0 +1,9 @@
+* @throws DimensionMismatchException if the array lengths differ.
+* @since 3.1
+*/
+public static double[] ebeAdd(double[] a, double[] b)
+* @return the L<sub>1</sub> distance between the two points
+* @throws DimensionMismatchException if the array lengths differ.
+*/
+public static double distance1(double[] p1, double[] p2)
+

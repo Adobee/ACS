@@ -1,0 +1,10 @@
+int blockZ = chunkZ*16 + random.nextInt(ch.islandspawnrate);
+int var8 = 2;
+
+//        if(world.getBlock(blockX + 2, blockY + 3, blockZ + 2) == Blocks.air) {
+TileEntityChest var17 = (TileEntityChest)world.getTileEntity(blockX + 2, blockY + 1, blockZ + 2);
+
+if (var17 != null)
+{
+WeightedRandomChestContent.generateChestContents(random, var16, var17, 8);
+

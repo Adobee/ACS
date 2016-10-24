@@ -1,0 +1,8 @@
+public void addEstimate(int estimateInstanceId, Estimate estimate) throws InsertException {
+if(!(estimate instanceof IntegerEstimate)) throw new InsertException(ERR_MSG);
+IntegerEstimate integerEstimate = (IntegerEstimate)estimate;
+* @throws UpdateException
+*/
+public boolean removeEstimate(int estimateInstanceId) throws UpdateException {
+return xyEstimateDB_DAO.removeEstimate(estimateInstanceId);
+

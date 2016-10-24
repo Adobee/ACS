@@ -1,0 +1,9 @@
+public class HeaderSkippingOutputStream extends FilterOutputStream {
+
+boolean inHeaders = true;
+byte[] skipTo = &quot;\r\n\r\n&quot;.getBytes();
+public void write(byte[] b, int off, int len) throws IOException {
+if (inHeaders) {
+for (int i = off; i < off + len; i++) {
+if (b[i] == skipTo[pos]) {
+

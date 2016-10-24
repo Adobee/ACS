@@ -1,0 +1,10 @@
+return queue !=null &amp;&amp; queue[firstInQueue] == null;
+}
+
+@Override
+public void enqueue(T newItem) {
+if (isEmpty()) {
+queue[lastInQueue] = newItem;
+}
+else if ((firstInQueue <= lastInQueue &amp;&amp; lastInQueue + 1 < length)) {
+

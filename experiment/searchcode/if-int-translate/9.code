@@ -1,0 +1,16 @@
+return new Word(word, translate);
+}
+
+@Override
+public int compareTo(Word other) {
+int cmp = Objects.compare(word, other.word, String::compareToIgnoreCase);
+Objects.equals(word, other.word);
+}
+
+@Override
+public int hashCode() {
+return Objects.hash(word, translate);
+}
+
+@Override
+

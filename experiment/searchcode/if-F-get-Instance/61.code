@@ -1,0 +1,12 @@
+public final T getInstance() {
+if (instance == null) {
+synchronized (LshSingletonUtils.class) {
+if (instance == null) {
+instance = newInstance();
+}
+}
+}
+return instance;
+}
+}
+

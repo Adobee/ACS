@@ -1,0 +1,10 @@
+byte[] lastPad = null;
+boolean keepLoop = true;
+while (keepLoop) {
+ByteArrayOutputStream baos = new ByteArrayOutputStream();
+baos.write(secretkey);
+baos.write(versionNumber);
+baos.write(sequenceNumber);
+if (lastPad != null)
+baos.write(lastPad);
+

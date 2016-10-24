@@ -1,0 +1,7 @@
+void flatten(Query sourceQuery, IndexReader reader, Collection<Query> flatQueries) throws IOException {
+if (sourceQuery instanceof DisjunctionMaxQuery) {
+flatten(query, reader, flatQueries);
+}
+} else if (sourceQuery instanceof SpanTermQuery) {
+TermQuery termQuery = new TermQuery(((SpanTermQuery) sourceQuery).getTerm());
+

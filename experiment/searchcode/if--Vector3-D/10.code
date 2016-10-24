@@ -1,0 +1,9 @@
+package org.bulletSamples.geometry;
+
+public class Vector3 implements Cloneable {
+public float x;
+public Vector3 rotate(Quaternion q)
+{
+if(q.axis.x == 0 &amp;&amp; q.axis.y == 0 &amp;&amp; q.axis.z == 0) return new Vector3(1,0,0);
+Vector3 axis = q.axis.normalize();
+

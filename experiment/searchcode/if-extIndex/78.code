@@ -1,0 +1,15 @@
+* below assume that the extension is the last part of the file name after the
+* last dot symbol. For instance if you have a file named data.txt the extension
+int extIndex = name.lastIndexOf(FileExtension.EXT_SEPARATOR);
+
+if (extIndex == -1)
+{
+return &quot;&quot;;
+}
+else
+{
+return name.substring(extIndex + 1);
+}
+}
+}
+

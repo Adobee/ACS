@@ -1,0 +1,8 @@
+private String rewriteDomainValues(String fieldId)
+{
+String rewrittenFieldId = fieldId;
+if (rewrittenFieldId.endsWith(VALIDATION_VALUE_SUFFIX))
+rewrittenFieldId = rewrittenFieldId.substring(0, rewrittenFieldId.lastIndexOf(VALIDATION_VALUE_SUFFIX));
+}
+else if (rewrittenFieldId.endsWith(VALUE_SUFFIX))
+

@@ -1,0 +1,10 @@
+return new IdResult(descr);
+} else if (&quot;date&quot;.equals(type)) {
+return new DateResult(descr);
+} else if (&quot;object&quot;.equals(type)) {// only for OUT parameters of a function call
+checks = new Check[0];
+return;
+}
+Object checksO = descr.get(&quot;check&quot;);
+if (checksO == null) {
+

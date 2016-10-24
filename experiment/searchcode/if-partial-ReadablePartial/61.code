@@ -1,0 +1,11 @@
+import javax.validation.constraints.Past;
+
+import org.joda.time.ReadablePartial;
+
+/**
+* Check if Joda Time type who implements
+* {@code org.joda.time.ReadablePartial}
+public boolean isValid(ReadablePartial value, ConstraintValidatorContext context) {
+//null values are valid
+if ( value == null ) {
+

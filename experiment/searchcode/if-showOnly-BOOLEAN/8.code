@@ -1,0 +1,20 @@
+addListener(this);
+}
+
+public boolean evaluate()
+{
+return ! isClosed();
+}
+
+public void showOnly()
+{
+super.show();
+}
+
+public void execute()
+{
+if ( ! isVisible() )
+showOnly();
+
+if ( WindowManager.isInputThread() )
+

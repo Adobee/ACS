@@ -1,0 +1,9 @@
+throw new IllegalArgumentException(&quot;Namespace cannot be null or empty&quot;);
+}
+if (paramString.length() > 128) {
+throw new IllegalArgumentException(&quot;Invalid namespace length&quot;);
+StringBuilder localStringBuilder = new StringBuilder(20);
+localStringBuilder.append(paramLocale.getLanguage());
+String str = paramLocale.getCountry();
+if (!TextUtils.isEmpty(str)) {
+

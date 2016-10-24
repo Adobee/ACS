@@ -1,0 +1,8 @@
+if (__interpolatedTime != lastInterpolatedValue) {
+boolean updatedAny = false;
+int val;
+
+if (targetMarginLeft != UNDEFINED) {
+val = Math.round(startMarginLeft + (targetMarginLeft - startMarginLeft) * __interpolatedTime);
+if (layoutParams.leftMargin != val) {
+

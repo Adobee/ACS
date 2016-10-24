@@ -1,0 +1,13 @@
+public FormatDescription read() throws IOException
+{
+String line;
+do
+{
+line = in.readLine();
+if (line == null)
+while (line.length() < 1 || line.charAt(0) == &#39;#&#39;);
+String[] items = line.split(&quot;;&quot;);
+if (items == null || items.length < 8)
+{
+throw new IOException(&quot;Could not interpret line: &quot; +
+

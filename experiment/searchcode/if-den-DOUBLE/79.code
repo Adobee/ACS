@@ -1,0 +1,21 @@
+int den = gen.random(1, num);
+
+System.out.println(String.format(&quot;%1$s / %2$s = %3$s&quot;, num, den, (double) num / den));
+mask <<= 1; // * 2
+}
+
+while (mask > 1) {
+den >>= 1; // / 2
+mask >>= 1; // / 2
+
+if (num >= den) {
+num -= den;
+result |= mask;
+}
+}
+
+return result;
+}
+
+}
+

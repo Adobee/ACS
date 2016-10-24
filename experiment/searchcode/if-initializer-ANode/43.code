@@ -1,0 +1,7 @@
+addPropertyLink(modelNode, property, schemaStore, nodeInitializerRegistry);
+}
+if (isNamedType()) {
+// Only initialize &quot;name&quot; child node if the schema has such a managed property.
+if (shouldHaveANodeInitializer(property, propertySchema)) {
+registrationBuilder = managedRegistrationBuilder(childPath, property, nodeInitializerRegistry, publicType);
+

@@ -1,0 +1,8 @@
+locations.add(new Location(this.world, (double)this.nextX, (double)this.nextY, (double)this.nextZ));
+this.forwardOne();
+return this.nextX != Integer.MIN_VALUE;
+}
+
+private void forwardOne() {
+if (++this.nextX <= this.max.getBlockX()) {
+

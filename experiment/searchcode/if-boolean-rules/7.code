@@ -1,0 +1,10 @@
+@SafeVarargs
+protected RuleChain(final Rule<Boolean>... rules) {
+this();
+for (Rule<Boolean> rule : rules) {
+this.rules.add(rule);
+}
+}
+
+protected List<Rule<Boolean>> getRules() {
+

@@ -1,0 +1,6 @@
+public static void setParameter(SQLQuery query, Object... parameters) {
+if (parameters != null &amp;&amp; parameters.length > 0) {
+int i = 0;
+for (Object p : parameters) {
+query.setParameter(i, p);
+

@@ -1,0 +1,7 @@
+private static Object psDeleteInputFormatsForProcessingDirectiveLock = new Object();
+
+@Override
+public boolean insert(int processingDirectiveId, int inputFormatId) {
+synchronized (psInsertLock) {
+if (log.isDebugEnabled())
+

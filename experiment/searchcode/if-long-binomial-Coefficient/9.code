@@ -1,0 +1,10 @@
+public static long binomialCoefficient( int n, int k )
+{
+if( n <= N &amp;&amp; k <= K ) // return cached value
+return binomialCoefficient( n - 1, k - 1 ) + binomialCoefficient( n - 1, k );
+}
+
+public static long multinomialCoefficient( int ... k )
+{
+if( k.length == 0 )
+

@@ -1,0 +1,12 @@
+public static RangeParam merge(RangeParam a, RangeParam b) {
+if (a == null) {
+return b;
+}
+
+if (b == null) {
+(Range) Param.mergeObjects(a.mRangeY, b.mRangeY));
+}
+
+private static Range parseRangeAt(String key, JSONObject obj) {
+Object x = Json.getJson(key, obj);
+

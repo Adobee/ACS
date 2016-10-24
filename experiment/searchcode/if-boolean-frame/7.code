@@ -1,0 +1,12 @@
+public int getNextFrame() {
+int frameToReturn = currentFrame;
+
+if (!onLastFrame()) currentFrame++;
+else reset();
+
+return frameToReturn;
+}
+
+public boolean onLastFrame() {
+if (currentFrame >= lastFrame) return true;
+

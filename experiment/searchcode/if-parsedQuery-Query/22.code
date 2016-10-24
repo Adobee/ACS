@@ -1,0 +1,7 @@
+ParsedQuery parsedQuery = QueryParserUtil.parseQuery(ql, queryString, baseURI);
+
+if( parsedQuery instanceof ParsedTupleQuery ) {
+return new SemagrowSailTupleQuery((ParsedTupleQuery)parsedQuery, queryString, this.getDelegate());
+}
+else if( parsedQuery instanceof ParsedBooleanQuery ) {
+

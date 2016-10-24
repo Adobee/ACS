@@ -1,0 +1,12 @@
+public List<Reader> fetchReaders() throws ReaderServiceException {
+if (readers!=null) {
+return readers;
+} else {
+throw new ReaderServiceException(&quot;No reader found at competition: &quot;);
+}
+}
+
+@Override
+public List<ReaderMock> fetchReaderMocks() throws ReaderServiceException {
+if (readerMocks!=null) {
+

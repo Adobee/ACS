@@ -1,0 +1,8 @@
+TimeSeriesPoint timeSeriesPoint = iterator.next();
+LocalDate date = timeSeriesPoint.getDate();
+if(date.isAfter(barrierDate) || date.isEqual(barrierDate)) {
+List<TimeSeriesPoint> timeSeriesPoints = timeSeries.getTimeSeriesPoints();
+
+/* It shouldn&#39;t happen if the data is good. */
+if(timeSeriesPoints.isEmpty()) {
+

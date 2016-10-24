@@ -1,0 +1,14 @@
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+
+public class CellWrapText extends CellStyle {
+
+private final boolean wrap;
+
+public CellWrapText(boolean wrap) {
+style.setWrapText(wrap);
+}
+
+@Override
+public boolean equals(Object obj) {
+if (obj instanceof CellWrapText) {
+

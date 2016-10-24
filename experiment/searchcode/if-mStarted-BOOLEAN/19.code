@@ -1,0 +1,13 @@
+private boolean mStarted = false;
+private Callable<?> mCallable;
+
+BingoThread(){}
+
+public void start(Runnable runnable) {
+ThreadRunner.getInstance().start(mCallable, callback);
+mStarted = true;
+}
+}
+
+public void cancel(boolean mayInterruptIfRunning) {
+

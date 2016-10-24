@@ -1,0 +1,12 @@
+public void HandleRequest(int request)
+{
+if (request >= 0 &amp;&amp; request < 10)
+System.out.println(&quot;{0} handled request {1} &quot;+ this.getClass().getName() + request);
+}
+else if (successor != null)
+{
+successor.HandleRequest(request);
+}
+}
+}
+

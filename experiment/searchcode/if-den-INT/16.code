@@ -1,0 +1,18 @@
+private void simplify()
+{
+if (den == 0)
+divby0();
+long gcd = GCD(num, den);
+num /= gcd;
+den /= gcd;
+if (den < 0)
+{
+den = -den;
+num = -num;
+}
+}
+
+private void divby0()
+{
+throw new ArithmeticException(&quot;Cannot divide by 0!&quot;);
+

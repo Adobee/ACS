@@ -1,0 +1,7 @@
+public static final Logger debug = Logger.getLogger (&quot;daikon.diff.DetailedStatisticsVisitor&quot;);
+
+private boolean printUninteresting;
+protected boolean shouldPrint(/*@Nullable*/ Invariant inv1, /*@Nullable*/ Invariant inv2) {
+int type = DetailedStatisticsVisitor.determineType(inv1, inv2);
+if (type == DetailedStatisticsVisitor.TYPE_NULLARY_UNINTERESTING ||
+

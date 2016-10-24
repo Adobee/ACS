@@ -1,0 +1,15 @@
+tx_min = (p1.x - ox) * a;
+tx_max = (p0.x - ox) * a;
+}
+
+double b = 1.0 / dy;
+if (b < 0) {
+ty_min = (p0.y - oy) * b;
+ty_max = (p0.y - oy) * b;
+}
+
+double c = 1.0 / dz;
+if (c >= 0) {
+tz_min = (p0.z - oz) * c;
+tz_max = (p1.z - oz) * c;
+

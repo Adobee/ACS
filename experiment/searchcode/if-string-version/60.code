@@ -1,0 +1,11 @@
+Unknown(&quot;FIX.X.X&quot;);
+
+private String text;
+
+private FixVersion(String version) {
+text = version;
+public static FixVersion fromString(String beginString) {
+
+for (FixVersion version : values()) {
+if (version.text.equals(beginString)) {
+

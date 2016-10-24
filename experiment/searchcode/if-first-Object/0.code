@@ -1,0 +1,15 @@
+public class Queue {
+ObjectNode first,last;
+
+void enqueue(Object item){
+if(last == null){
+last = new ObjectNode(item);
+last = last.next;
+}
+}
+
+Object dequeue(){
+if (first != null){
+Object item = first.data;
+first = first.next;
+

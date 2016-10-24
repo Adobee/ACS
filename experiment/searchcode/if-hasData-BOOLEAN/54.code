@@ -1,0 +1,10 @@
+protected boolean hasActivityData(ActivityInfo activity){
+boolean hasData = false;
+
+AmountInfo contactHours = activity.getContactHours();
+if (contactHours != null){
+hasData = hasData || enrollmentEstimate >= 0;
+
+TimeAmountInfo duration = activity.getDuration();
+if (duration != null){
+

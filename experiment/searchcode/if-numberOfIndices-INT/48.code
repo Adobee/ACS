@@ -1,0 +1,10 @@
+public static void main(String[] args) throws Exception {
+System.setProperty(&quot;es.logger.prefix&quot;, &quot;&quot;);
+
+int numberOfIndices = 100;
+int numberOfDocs = 100;
+Node node = NodeBuilder.nodeBuilder().settings(settings).node();
+
+for (int i = 0; i < numberOfIndices; i++) {
+logger.info(&quot;START index [{}] ...&quot;, i);
+

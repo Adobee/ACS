@@ -1,0 +1,11 @@
+private final int mValue;
+
+private DaysBits(int value) {
+mValue = value;
+}
+
+public int getValue() {
+public static String intToString(Context context, int days) {
+if(days == M_F.mValue)
+return context.getString(R.string.days_mf);
+

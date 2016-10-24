@@ -1,0 +1,6 @@
+Object param = parameterHandler.getParameterObject();
+if (!(param instanceof Paging)) {
+return invocation.proceed();
+private int getTotalCount(Connection connection, String sql, ParameterHandler parameterHandler) throws SQLException {
+int result = 0;
+

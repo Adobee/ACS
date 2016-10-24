@@ -1,0 +1,9 @@
+public class TaskScheduler {
+private static Map<Task, ScheduledFuture> taskFutureMap;
+private static TaskScheduler taskScheduler;
+taskFutureMap.put(task,future);
+}
+public void cancelTask(Task task) {
+ScheduledFuture sf = taskFutureMap.get(task);
+if(sf!=null) sf.cancel(false);
+

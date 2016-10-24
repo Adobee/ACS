@@ -1,0 +1,10 @@
+ServiceLocator.getService(ProductTimestampService.class).delete(productTimestampId);
+productTimestamps.removeIf(new Predicate<ProductTimestamp>() {
+return productTimestamp.getDateTime().equals(productTimestampId);
+}
+});
+
+timestampData.removeIf(new Predicate<ProductTimestampData>() {
+@Override
+public boolean test(ProductTimestampData productTimestampData) {
+

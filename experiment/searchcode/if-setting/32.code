@@ -1,0 +1,11 @@
+package com.sasd13.goinfromania.controller.setting;
+
+import com.sasd13.goinfromania.bean.setting.Setting;
+public void execute(IFrameView frameView) {
+if (settingDialog.askReset()) {
+setting.reset();
+SettingPreferencesFactory.make(setting.getCode()).push(setting);
+}
+}
+}
+

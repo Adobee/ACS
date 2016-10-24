@@ -1,0 +1,13 @@
+public class ShuffleMessage implements Parcelable, Serializable, HudMessage {
+private int shuffle;
+
+public ShuffleMessage(boolean shuffle) {
+readFromParcel(in);
+}
+
+private void readFromParcel(Parcel in) {
+shuffle = in.readInt();
+}
+
+public boolean isShuffled() {
+

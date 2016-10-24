@@ -1,0 +1,16 @@
+ties.clear();
+}
+
+@Override
+public E peek() {
+if (ties.isEmpty()) {
+return super.peek();
+} else {
+return ties.get(ties.size() - 1);
+}
+}
+
+@Override
+public E poll() {
+if (ties.isEmpty()) {
+

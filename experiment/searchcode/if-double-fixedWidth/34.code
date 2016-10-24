@@ -1,0 +1,8 @@
+public Line(Color color, double strokeWidth, Vec2d start, Vec2d end, boolean fixedWidth, String name) {
+_line = new Line2D.Double(start.x, start.y, end.x, end.y);
+java.awt.Color savedColor = aBrush.getColor(); //saves the old color of the brush
+java.awt.Stroke savedStroke = aBrush.getStroke();
+
+double strokeWidth;
+if (_fixedWidth) {
+

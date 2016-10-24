@@ -1,0 +1,10 @@
+import org.elasticsearch.index.fielddata.IndexFieldData;
+import org.elasticsearch.index.settings.IndexSettings;
+import org.elasticsearch.indices.fielddata.breaker.CircuitBreakerService;
+public InternalGlobalOrdinalsBuilder(Index index, @IndexSettings Settings indexSettings) {
+super(index, indexSettings);
+}
+
+@Override
+public IndexFieldData.WithOrdinals build(final IndexReader indexReader, IndexFieldData.WithOrdinals indexFieldData, Settings settings, CircuitBreakerService breakerService) throws IOException {
+

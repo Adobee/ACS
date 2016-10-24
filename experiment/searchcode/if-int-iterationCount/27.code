@@ -1,0 +1,12 @@
+this.iterationCount = new ASN1Integer(iterationCount);
+}
+
+public PBKDF2Params(
+byte[]  salt,
+int     iterationCount,
+int     keyLength)
+{
+this(salt, iterationCount);
+
+this.keyLength = new ASN1Integer(keyLength);
+

@@ -1,0 +1,7 @@
+if(userId!=null &amp;&amp; !&quot;&quot;.equals(userId)){
+messageData.setUserId(userId);
+}
+if(messageData.getUserName()==null &amp;&amp; !&quot;&quot;.equals(messageData.getUserName())){
+messageData=messageFacade.getMessageData(messageData); //获取之前填写的标记内容
+if(messageData.getSigneContenu()==null){   //如果之前的标记内容是  null。就不拼接，不是就拼接上
+

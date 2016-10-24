@@ -1,0 +1,6 @@
+Config<?> config = system ? Act.conf() : appConfig;
+boolean hasQuery = S.notBlank(q);
+for (ConfigKey key: keys) {
+String keyString = key.toString();
+if (hasQuery &amp;&amp; !keyString.contains(q)) {
+

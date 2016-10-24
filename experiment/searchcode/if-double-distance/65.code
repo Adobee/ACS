@@ -1,0 +1,9 @@
+public Double getPrice(double distance, double waitTime) {
+if (distance <= 0)
+return 0.0;
+return basicPrice + extraPrice(distance) + moreExtraPrice(distance) + unitTimePrice * waitTime;
+public Double getPrice(double distance) {
+if (distance <= 0)
+return 0.0;
+return basicPrice + extraPrice(distance) + moreExtraPrice(distance);
+

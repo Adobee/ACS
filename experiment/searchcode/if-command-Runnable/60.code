@@ -1,0 +1,10 @@
+isActive = this.down ? isPressed : !isPressed;
+
+if (isActive) {
+if (this.command != null &amp;&amp; this.command.length() > 0) {
+CommandManager.Instance.execute(this.command);
+}
+
+if (this.runnable != null) {
+this.runnable.run();
+

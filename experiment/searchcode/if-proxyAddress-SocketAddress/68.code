@@ -1,0 +1,14 @@
+import java.net.Proxy;
+import java.net.Socket;
+import java.net.SocketAddress;
+
+/**
+* Created by wshepherd on 10/8/15.
+public SocketClient connect() throws IOException
+{
+try
+{
+if(this.proxyEnabled)
+{
+SocketAddress address = new InetSocketAddress(this.proxyAddress, this.proxyPort);
+

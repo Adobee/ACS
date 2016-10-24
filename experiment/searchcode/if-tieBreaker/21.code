@@ -1,0 +1,13 @@
+protected static final char DATA_LENGTH = 8;
+
+protected long tieBreaker;
+protected boolean controlling;
+
+protected ControlAttribute(boolean isControlling) {
+: StunAttribute.ICE_CONTROLLED);
+this.tieBreaker = -1;
+this.controlling = isControlling;
+}
+
+public long getTieBreaker() {
+

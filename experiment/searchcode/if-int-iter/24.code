@@ -1,0 +1,11 @@
+intervals.add(newInterval);
+return intervals;
+} else {
+Interval iter = intervals.get(i);
+if(iter.start > newInterval.end) {
+iter.end = iter.end > newInterval.end ? iter.end : newInterval.end;
+
+Interval pIter = null, nIter = null;
+int k = i - 1;
+while(k >= 0 &amp;&amp; intervals.get(k).end >= iter.start) {
+

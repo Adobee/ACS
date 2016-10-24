@@ -1,0 +1,10 @@
+public BasicTextJdkLogFormatter(boolean withTime) {
+this.withTime = withTime;
+}
+
+public BasicTextJdkLogFormatter() {
+public String format(LogRecord record) {
+StringBuilder sb = new StringBuilder();
+if (withTime) {
+sb.append(sdf.format(new Date(record.getMillis())) + &quot;  &quot;);
+

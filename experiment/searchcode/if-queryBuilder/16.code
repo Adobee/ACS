@@ -1,0 +1,7 @@
+queryBuilder.append(&quot;  and g.`description` in :descriptions &quot;); //Can be removed if all the unit types are needed
+queryBuilder.append(&quot;order by g.`prior`&quot;);
+SQLQuery query = getCurrentSession().createSQLQuery(queryBuilder.toString());
+queryBuilder.append(&quot;  r.`carrier_number` as carrierNumber,&quot;);
+queryBuilder.append(&quot;  if(&quot;);
+queryBuilder.append(&quot;    r.`transit` = &#39;N/A&#39;,&quot;);
+

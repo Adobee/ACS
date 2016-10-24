@@ -1,0 +1,11 @@
+public class UrlDecodes {
+public String decodeQuietly(String s) {
+boolean needToChange = false;
+int numChars = s.length();
+val sb = new StringBuffer(numChars > 500 ? numChars / 2 : numChars);
+int i = 0;
+
+char c;
+byte[] bytes = null;
+while (i < numChars) {
+

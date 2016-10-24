@@ -1,0 +1,9 @@
+return absoluteRating - mean;
+}
+else if (normalizationType==RecommendationTuner.GAUSSIAN_NORMALIZATION)
+NormalDistribution normal = new NormalDistributionImpl(mean, stdDev);
+
+return normal.density(absoluteRating);
+}
+else if (normalizationType==RecommendationTuner.DECOUPLING_NORMALIZATION)
+

@@ -1,0 +1,7 @@
+FIR.init(this);
+FIR.addCustomizeValue(&quot;sdk&quot;, android.os.Build.VERSION.SDK_INT + &quot;&quot;);
+FIR.addCustomizeValue(&quot;cpu&quot;, android.os.Build.CPU_ABI);
+int memoryCacheSize;
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR) {
+int memClass = ((ActivityManager) context
+

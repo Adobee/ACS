@@ -1,0 +1,8 @@
+public abstract class BaseRecyclerAdapter<T> extends RecyclerView.Adapter<RecyclerHolder> {
+private final int itemLayoutId;
+private boolean isScrolling;
+protected final Context context;
+public BaseRecyclerAdapter(RecyclerView v, Collection<T> datas, int itemLayoutId) {
+if (datas == null) {
+this.datas = new ArrayList<>();
+

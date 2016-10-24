@@ -1,0 +1,8 @@
+inputs = ((Demultiplexer)instance).getSupportedInputContentDescriptors();
+outputs = emptyFormat;
+} else if (instance instanceof Codec) {
+inputs = ((Renderer)instance).getSupportedInputFormats();
+outputs = emptyFormat;
+} else if (instance instanceof Multiplexer) {
+type = PlugInManager.MULTIPLEXER;
+

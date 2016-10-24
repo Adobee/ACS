@@ -1,0 +1,11 @@
+if (type == DiffType.MODIFIED || type == DiffType.ADDED) {
+boolean restoreFileSuccessful = repository.discardFileChange(filename);
+
+if (!restoreFileSuccessful) {
+FileUtils.forceDelete(file);
+}
+
+@Override
+public boolean equals(Object other) {
+if (other == null || !other.getClass().equals(this.getClass())) {
+

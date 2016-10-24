@@ -1,0 +1,11 @@
+if (min == null) {
+return DoubleValue.NaN;
+}
+prim = min;
+if (min instanceof UntypedAtomicValue) {
+if (foundNaN) {
+return FloatValue.NaN;
+}
+if (foundDouble) {
+if (!(min instanceof DoubleValue)) {
+

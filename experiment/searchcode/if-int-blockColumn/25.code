@@ -1,0 +1,6 @@
+int column = key.getColumn().get();
+if (key.isRatingsItem()) {
+int blockRow = DSGDMain.getBlockColumn(row, numUsers, numReducers);
+int blockColumn = DSGDMain.getBlockColumn(column, numItems,
+numReducers);
+

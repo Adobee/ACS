@@ -1,0 +1,9 @@
+String dicPath = args.get(&quot;dicPath&quot;);
+String forwardbool=args.get(&quot;isForward&quot;);
+boolean isForward=false;
+if (dicPath == null || dicPath.isEmpty()) {
+if(forwardbool != null &amp;&amp; !forwardbool.isEmpty()){
+isForward=Boolean.parseBoolean(forwardbool);
+}
+AllSplitSegmenter.init(dicPath,isForward);
+

@@ -1,0 +1,11 @@
+private static final int LAMBDA_PANEL_HEIGHT = 20;
+// private static final int BAND_PANEL_HEIGHT = 20;
+
+private final Props props;
+int x = (lambda - minLambda) * getWidth() / (maxLambda - minLambda);
+
+int y = value * h / maxValue;
+
+if (prev != null) {
+g.setColor(wvColor((lambda + prevLambda) / 2, 1f));
+

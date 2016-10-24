@@ -1,0 +1,7 @@
+String path = &quot;/asdf/3err&quot;;
+String encodedPath = JcrStringHelper.pathEncode( path );
+assertFalse( path.equals( encodedPath ) );
+JcrStringHelper.setMultiByteEncodingEnabled( false );
+String path = &quot;/asdf/3err&quot;;
+String encodedPath = JcrStringHelper.pathEncode( path );
+

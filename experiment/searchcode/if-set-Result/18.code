@@ -1,0 +1,7 @@
+public Result toResult(Object obj) {
+Result result = new Result();
+if (obj instanceof BaseEntity) {
+result.setEntity((BaseEntity) obj);
+} else if (obj instanceof Collection) {
+result.setEntitys((List<BaseEntity>) obj);
+

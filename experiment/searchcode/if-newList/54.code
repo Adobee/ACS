@@ -1,0 +1,11 @@
+str = val.toString();
+if(newList.contains(str)){
+if(csv.length()>0) csv += &quot;,&quot;;
+newList.add(str);
+}
+
+}
+newList.clear();
+if(!csv.equals(&quot;&quot;)) context.write(key, new Text(csv));
+}
+

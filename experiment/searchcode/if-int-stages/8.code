@@ -1,0 +1,13 @@
+//        Integer size = null;
+//        for (Stage s : stages) {
+//            if (size == null) {
+sb.append(&quot;\n&quot;);
+}
+
+return sb.toString();
+}
+
+
+public int getStageSize() {
+if(stages.size() > 0) {
+

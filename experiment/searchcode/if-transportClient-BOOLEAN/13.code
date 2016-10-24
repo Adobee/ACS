@@ -1,0 +1,10 @@
+import org.elasticsearch.action.index.IndexResponse;
+import org.elasticsearch.client.transport.TransportClient;
+} catch(ElasticsearchException e) {
+exceptions.add(e);
+}
+}
+
+if (error) {
+transportClient.prepareUpdate(index, type, tracking.getId())
+

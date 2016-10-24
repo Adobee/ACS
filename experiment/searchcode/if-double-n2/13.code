@@ -1,0 +1,9 @@
+private static double[][] strassenMultiplication(double[][] a, double[][] b, int n) {
+// limit case
+if (n == 1) {
+return new double[][]{{a[0][0] * b[0][0]}};
+int n2 = n / 2;
+double[][] a11 = new double[n2][n2];
+double[][] a22 = new double[n2][n2];
+double[][] b11 = new double[n2][n2];
+

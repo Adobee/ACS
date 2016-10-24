@@ -1,0 +1,10 @@
+public MDDANested(int... dimensionSize) {
+this.size = dimensionSize;
+array = init(0);
+}
+
+private Object init(int dim) {
+Object[] tmp = new Object[size[dim]];
+for (int j=0; j<tmp.length; j++) {
+if (dim == size.length-1) {
+

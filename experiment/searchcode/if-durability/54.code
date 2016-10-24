@@ -1,0 +1,11 @@
+public ToSmash(int damage, int durability) {
+super(damage, durability, &quot;TO_SMASH&quot;);
+}
+
+public int hit() {
+int temp = damage;
+if (currentDurability <= durability / 2 &amp;&amp; damage > 1) {
+damage--;
+}
+if (currentDurability > 0) {
+

@@ -1,0 +1,13 @@
+public static synchronized CacheManager getInstance() {
+if (instance == null) {
+instance = new CacheManager();
+}
+return instance;
+}
+
+public void setCache(ICache value) {
+cache = value;
+}
+
+public boolean keyExists(String key) {
+

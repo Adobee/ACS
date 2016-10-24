@@ -1,0 +1,16 @@
+package wacc.util;
+
+public enum UnaryOp {
+
+ORD(&quot;ord&quot;), CHR(&quot;chr&quot;), NOT(&quot;!&quot;), LEN(&quot;len&quot;), SUB(&quot;-&quot;), INVALID_OP(&quot;&quot;);
+public static UnaryOp parse(String op) {
+for (UnaryOp oper : UnaryOp.values()) {
+if (oper.op.equals(op)) {
+return oper;
+}
+}
+return INVALID_OP;
+}
+
+}
+

@@ -1,0 +1,14 @@
+private String name;
+
+private String value;
+
+private boolean firstIteration;
+
+public void setName(String propertyName) {
+throw new TagStructureException(getClass(), &quot;setProperty&quot;, &quot;table&quot;); //$NON-NLS-1$ //$NON-NLS-2$
+}
+
+// read body only once
+if (tableTag.isFirstIteration()) {
+this.firstIteration = true;
+

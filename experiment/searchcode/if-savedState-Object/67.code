@@ -1,0 +1,9 @@
+String answer = null;
+// savedState could be null
+if (null != savedState) {
+answer = savedState.getString(&quot;answer&quot;);
+// This is a gratuitious test, remove it
+Object oldTaskObject = getLastNonConfigurationInstance();
+if (null != oldTaskObject) {
+int oldtask = ((Integer) oldTaskObject).intValue();
+

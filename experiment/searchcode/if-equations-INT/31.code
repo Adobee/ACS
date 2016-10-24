@@ -1,0 +1,11 @@
+return numerators;
+
+}
+
+//makes equations
+public List<Object> MakeEquations(int denomonator) {
+//Add boxes to list
+for (int i = 0; i < 15; i++) {
+int boxColor = rand.nextInt(8);
+equations.add(new Decimals(numerators.get(i), denomonator, i, data.getBoxes().get(boxColor), data.getSelectedBoxes().get(boxColor)));
+

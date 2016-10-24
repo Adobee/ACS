@@ -1,0 +1,11 @@
+public class ComparatorOnFitness implements Comparator<Integer> {
+
+double[] popFit;
+
+public ComparatorOnFitness(double[] ft) {
+popFit = ft;
+}
+
+public int compare(Integer a, Integer b) {
+if (popFit[b] == popFit[a]) return 0;
+

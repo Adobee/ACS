@@ -1,0 +1,15 @@
+private long	mStartTime	= Long.MIN_VALUE;
+private boolean	mStarted	= false;
+
+public void start() {
+if (!mStarted)
+{
+mStartTime = getTime();
+mStarted = true;
+}
+}
+
+public long getElapsedTime() {
+if (!mStarted)
+return -1;
+

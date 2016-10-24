@@ -1,0 +1,11 @@
+private final ResponseHandler<InputStream> fetchImageDataHandler = FetchImageDataResponseHandler.INSTANCE;
+
+private boolean useHttps;
+
+/**
+* Creates a client that communicates using (unsecured) HTTP.
+* @param client custom client. <code>null</code> results in using the default client
+*/
+public DefaultCoverArtArchiveClient(boolean useHttps, HttpClient client) {
+if (client == null) {
+

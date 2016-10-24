@@ -1,0 +1,10 @@
+public void setTrials(int trials)
+{
+if(trials < 1)
+throw new IllegalArgumentException(&quot;number of trials must be positive, not &quot; + trials);
+@Override
+public double logPmf(int x)
+{
+if(x > trials || x < 0)
+return -Double.MAX_VALUE;
+

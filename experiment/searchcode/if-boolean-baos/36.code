@@ -1,0 +1,7 @@
+* @param flags An array of boolean to serialize
+* @return the {@link Baos} instance for further serialization
+*/
+public Baos putFlags(boolean[] flags) {
+short data = 0;
+for (int i = 0, bytepos=0; i < flags.length; i++,bytepos++) {
+

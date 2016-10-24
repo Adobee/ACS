@@ -1,0 +1,8 @@
+RowItem rowItem = new RowItem(pageIDList, numPages, spreadSheet.getSourceDirectory().getRelativePath(), rowIndex);
+if(1 == numPages){
+String name = &quot;[&quot;+(rowIndex+1)+&quot;] &quot;+FileUtil.getBasename(pageIDList.get(rowIndex).getFileResourceID().getRelativePath());
+ListItem.State.COLLAPSED_BRANCH,
+rowItem);
+}if(1 < numPages ){
+String start = FileUtil.getBasename(pageIDList.get(rowIndex*numPages).getFileResourceID().getRelativePath());
+

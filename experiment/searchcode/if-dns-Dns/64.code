@@ -1,0 +1,12 @@
+public static List<ConstraintViolationBean> validate (DnsRecord dnsRecord) {
+
+final List<ConstraintViolationBean> errors = new ArrayList<>();
+
+if (!ValidationRegexes.HOST_PATTERN.matcher(dnsRecord.getFqdn()).matches()) {
+errors.add(new ConstraintViolationBean(&quot;err.dnsRecord.ip.invalid&quot;));
+}
+*/
+
+if (dnsRecord.getTtl() <= 0) {
+errors.add(new ConstraintViolationBean(&quot;err.dnsRecord.ttl.invalid&quot;));
+

@@ -1,0 +1,13 @@
+public SocketIO socket = null;
+
+public void sendMsg(Message msg) {
+
+JSONObject msgObject = new JSONObject();
+try {
+if (this.fromID == null) {
+msgObject.put(&quot;from&quot;, this.fromID);
+}
+if (this.toID == null) {
+msgObject.put(&quot;to&quot;, msg.getTo());
+} else {
+

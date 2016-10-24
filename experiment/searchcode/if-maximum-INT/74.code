@@ -1,0 +1,8 @@
+private CountingSemaphore t;
+private int value;
+private int maximum;
+
+public LimitedSemaphore(int value, int maximum) {
+this.s = new CountingSemaphore(true, false, value);
+this.t = new CountingSemaphore(true, false, maximum - value);
+

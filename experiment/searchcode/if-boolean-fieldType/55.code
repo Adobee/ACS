@@ -1,0 +1,5 @@
+defaultValue = defaultValue.replaceAll(&quot;\\((.*)\\)&quot;, &quot;$1&quot;);
+if ((fieldType.isInteger() || fieldType.isLong()) &amp;&amp; defaultValue.matches(&quot;\\(\\d+\\)&quot;)) {
+defaultValue = defaultValue.replaceAll(&quot;[\\(\\)]&quot;, &quot;&quot;);
+} else if (fieldType.isBoolean() &amp;&amp; defaultValue.matches(&quot;\\(\\d\\)&quot;)) {
+

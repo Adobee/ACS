@@ -1,0 +1,9 @@
+public LongArrayStream(FSDataInputStream stream, long startPos, int sizeInBytes) {
+this.stream = stream;
+this.startPos = startPos;
+this.size = sizeInBytes / 8;
+}
+
+public long get(int i) throws IOException {
+if (i < 0 || i >= size) {
+

@@ -1,0 +1,8 @@
+public class NettyTransportMultiPortIntegrationIT extends ESIntegTestCase {
+
+private static int randomPort = -1;
+private static String randomPortRange;
+protected Settings nodeSettings(int nodeOrdinal) {
+if (randomPort == -1) {
+randomPort = randomIntBetween(49152, 65525);
+

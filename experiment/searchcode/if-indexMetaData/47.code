@@ -1,0 +1,7 @@
+// Throws an exception if there are too-old segments:
+if (isUpgraded(indexMetaData)) {
+* be open by this version of elasticsearch.
+*/
+private void checkSupportedVersion(IndexMetaData indexMetaData) {
+if (indexMetaData.getState() == IndexMetaData.State.OPEN &amp;&amp; isSupportedVersion(indexMetaData) == false) {
+

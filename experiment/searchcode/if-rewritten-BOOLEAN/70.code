@@ -1,0 +1,8 @@
+private Operation<ExecutionContext> toMatch, rewritten;
+private String variableName;
+private boolean isIf;
+
+public SwitchExecutor(ExecutorGroup parent, ExecutorContext context, Operation<ExecutionContext> condition, String variableName, Operation<ExecutionContext> toMatch, Executor...children) {
+private Operation<ExecutionContext> getRewrittenToMatch() throws ExecutionException {
+// can only rewrite operations if we have a glue operation provider that can give us static method descriptions
+

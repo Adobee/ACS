@@ -1,0 +1,10 @@
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.atomic.AtomicBoolean;
+
+public class MockBigArrays extends BigArrays {
+* since it creates a new Exception every time a new array is created.
+*/
+private static final boolean TRACK_ALLOCATIONS = false;
+
+private static final Set<BigArrays> INSTANCES = Collections.synchronizedSet(Collections.newSetFromMap(new WeakHashMap<BigArrays, Boolean>()));
+

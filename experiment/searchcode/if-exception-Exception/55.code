@@ -1,0 +1,10 @@
+try
+{
+if ( EJB.EJB_EXCEPTION.isInstance(exception) )
+{
+cause = (Throwable) Reflections.getGetterMethod(EJB.EJB_EXCEPTION, &quot;causedByException&quot;).invoke(exception);
+}
+else if (exception instanceof ServletException)
+{
+cause = ( (ServletException) exception ).getRootCause();
+

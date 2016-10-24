@@ -1,0 +1,7 @@
+* call a rest url with a GET method and maps the response to T
+*/
+public <T> T getForObject(String relativeUrl, Class<T> responseClass) {
+
+return restTemplate
+.getForObject(getFullUrl(relativeUrl), responseClass);
+

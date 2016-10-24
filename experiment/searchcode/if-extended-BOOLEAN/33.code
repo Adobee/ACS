@@ -1,0 +1,9 @@
+public class Rake {
+
+public boolean isExtended = false;
+
+public void teleopPeriodic() {
+
+if (Controller.Primary.Button.RIGHT_STICK.isDownOnce())  isExtended = !isExtended;
+Output.PneumaticSolenoid.RAKE.set(isExtended);
+

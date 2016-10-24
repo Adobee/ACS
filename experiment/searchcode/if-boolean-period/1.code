@@ -1,0 +1,14 @@
+public boolean enabled;
+public int period;
+public int shifts;
+public boolean invert;
+
+public boolean reload;
+public int rawPeriod;
+
+public boolean fcClock()
+{
+if (enabled) {
+if (--timer<0) {
+int delta = rawPeriod>>shifts;
+

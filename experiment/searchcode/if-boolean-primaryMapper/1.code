@@ -1,0 +1,8 @@
+interpolatedPrimaryDerivatives = new double[primaryMapper.getDimension()];
+if(secondaryMappers == null) {
+interpolatedSecondaryState = null;
+h = in.readDouble();
+forward = in.readBoolean();
+primaryMapper = (EquationsMapper)in.readObject();
+secondaryMappers = new EquationsMapper[in.read()];
+

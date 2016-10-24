@@ -1,0 +1,12 @@
+import java.util.List;
+import java.util.Map;
+
+/**
+* Created by hmf on 18.07.2014.
+*/
+public class MultiMapBoolean<K,V> extends HashMap<K, MultiMapBoolean.ListBoolPair<V>> implements Map<K, MultiMapBoolean.ListBoolPair<V>>
+ListBoolPair<V> existing = super.get(value);
+if (existing == null){
+existing = new ListBoolPair();
+super.put(key, existing);
+

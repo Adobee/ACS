@@ -1,0 +1,9 @@
+public abstract float evaluate(double x, double y);
+public void evaluate(double[] x, double[] y, float[] f){
+if(x.length != y.length || x.length != f.length) throw new RuntimeException(&quot;Inconsistent sizes&quot;);
+for(int i=0;i<x.length;++i){
+f[i]=evaluate(x[i],y[i]);
+}
+}
+}
+

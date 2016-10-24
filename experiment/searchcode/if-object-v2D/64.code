@@ -1,0 +1,12 @@
+int[] xco={0}, yco={0}, open={0};
+
+if(contextnr >= 0)
+newcontext= View2dUtil.UI_view2d_tab_set(v2d, contextnr);
+
+if(vertical) {
+// don&#39;t jump back when panels close or hide
+if(newcontext==0)
+y= (int)UtilDefines.MAX2(-y, -v2d.cur.ymin);
+else
+y= -y;
+

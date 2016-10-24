@@ -1,0 +1,9 @@
+public DateTickUnit(DateTickUnitType unitType, int multiple,
+DateTickUnitType rollUnitType, int rollMultiple,
+DateFormat formatter) {
+super(DateTickUnit.getMillisecondCount(unitType, multiple));
+private static long getMillisecondCount(DateTickUnitType unit, int count) {
+
+if (unit.equals(DateTickUnitType.YEAR)) {
+return (365L * 24L * 60L * 60L * 1000L) * count;
+

@@ -1,0 +1,7 @@
+protected void paintSubLines(final GraphicsContext graph, final Bounds clip) {
+double pixPerCm10 = canvas.getPPCDrawing()*canvas.getZoom()/10.;
+if(ScaleRuler.getUnit()==Unit.INCH)
+pixPerCm10*=PSTricksConstants.INCH_VAL_CM;
+
+if(Double.compare(pixPerCm10, 4.)>0) {
+

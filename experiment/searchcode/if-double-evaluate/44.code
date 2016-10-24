@@ -1,0 +1,6 @@
+public static Function transform(final Function f, final double a, final double b)
+{
+if(a == -1 &amp;&amp; b == 1) return new Function(){ public double evaluate(double x){ x = f.evaluate(x); return Double.isNaN(x) || Double.isInfinite(x) ? 0 : x;}};
+return transform(new Function(){ public double evaluate(double x){ return (f.evaluate(-1d / x + 1) + f.evaluate(1 / x - 1)) / (x * x);}}, 0, 1);
+if(a == Double.NEGATIVE_INFINITY)
+

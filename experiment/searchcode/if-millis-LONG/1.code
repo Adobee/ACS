@@ -1,0 +1,8 @@
+* @return the time period formatted string
+*/
+public static String formatTimePeriod(long millis){
+String time = &quot;&quot;;
+if(millis > HOUR) {
+time +=(millis/HOUR)+&quot; h, &quot;;
+millis = millis % HOUR;
+

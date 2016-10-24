@@ -1,0 +1,11 @@
+import javax.ws.rs.core.Response;
+import javax.ws.rs.core.StreamingOutput;
+
+public class HttpResponseBuilder {
+
+public static Response buildErrorResponse(int status, String errMessage){
+/*public static Response buildResponse(ResponseHelper responseHelper){
+Response response = null;
+if(!responseHelper.isError()){
+response = HttpResponseBuilder.buildSuccessResponse(responseHelper.getOutput());
+

@@ -1,0 +1,10 @@
+for (int x = x0; x < x0 + 3; x++) {
+chunk.Blocks[y][z0][x] = Blocka.Stone_Brick;
+}
+}
+if (lastArch)
+int z0 = 2;
+int h0 = chunk.getHeights(x0, z0);
+int hd = chunk.getHeights(x0+1, z0);
+if (hd < h0) h0 = hd;
+

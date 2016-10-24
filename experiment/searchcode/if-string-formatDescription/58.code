@@ -1,0 +1,10 @@
+public static Double formatDouble(Double number) {
+DecimalFormat df;
+if ( number == Math.floor(number) &amp;&amp; !Double.isInfinite(number) ) {
+df = new DecimalFormat(&quot;#.###&quot;);
+}
+return Double.parseDouble(df.format(number));
+}
+
+public static String formatDescription(String description) {
+

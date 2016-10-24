@@ -1,0 +1,11 @@
+static final private Pattern CONTENT_TYPE_PATTERN = Pattern.compile( &quot;^[ \\t]*(\\S*)[ \\t]*(?:;[ \\t]*charset[ \\t]*=[ \\t]*(\\S*)[ \\t]*)?$&quot; ); // TODO case sensitive &amp; http://www.iana.org/assignments/media-types/index.html
+
+static boolean keepSource = false;
+
+private TemplateLoader loader;
+private static void consolidate( List<ParseEvent> source, int start, int end, List<ParseEvent> result, boolean hasText, boolean hasScript )
+{
+if( hasText || !hasScript )
+{
+for( int i = start; i <= end; i++ )
+

@@ -1,0 +1,10 @@
+this.index = index;
+}
+
+public List<Integer> searchIt(List<String> terms, int maxCount){
+List<Integer>  result ;
+List<Map<Integer,Integer>> pairs= index.getPostingListComplete(terms);
+for(Entry<Integer, Integer> tentry: temporal.entrySet()){
+Integer docFreq = unionMap.get(tentry.getKey());
+if( docFreq == null)
+

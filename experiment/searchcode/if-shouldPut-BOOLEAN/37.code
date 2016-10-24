@@ -1,0 +1,7 @@
+* @param session to update from
+* @return true if session was updated
+*/
+private boolean setSession(JSONObject session) {
+long delta = now.getTime() - mShopGun.getSettings().getLastUsedTime();
+boolean shouldPut = delta > TimeUnit.HOURS.toMillis(2);
+

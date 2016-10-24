@@ -1,0 +1,12 @@
+* @return
+*/
+public static int parseChineseNumber(String str) {
+if (str == null || str.length() <= 0) {
+return -1;
+}
+int result = 0;
+int index = -1;
+index = str.indexOf(&#39;千&#39;);
+if (index > 0) {
+result += getIntFromMap(str.charAt(index - 1)) * 1000;
+

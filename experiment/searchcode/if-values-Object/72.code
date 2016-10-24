@@ -1,0 +1,9 @@
+public JsonObject toJson() {
+JsonObject json = new JsonObject();
+if (booleanValues != null) {
+json.put(&quot;booleanValues&quot;, toArray(booleanValues));
+json.put(&quot;jsonArrayValues&quot;, toArray(jsonArrayValues));
+}
+if (dataObjectValues != null) {
+json.put(&quot;dataObjectValues&quot;, toArray(dataObjectValues.stream().map(o -> o.toJson().getMap()).collect(Collectors.toList())));
+

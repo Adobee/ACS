@@ -1,0 +1,7 @@
+protected void onDialogClosed(boolean positiveResult) {
+super.onDialogClosed(positiveResult);
+
+if(positiveResult) {
+//Write here all the values to be resetted
+editor.putBoolean(context.getString(R.string.pref_key_showenablegpssettings), Boolean.parseBoolean(context.getString(R.string.pref_key_showenablegpssettings_default)));
+

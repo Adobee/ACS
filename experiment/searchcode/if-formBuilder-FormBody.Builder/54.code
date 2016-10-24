@@ -1,0 +1,9 @@
+private void asyncPost(String url, Map<String, String> param, Callback responseCallback) {
+FormBody.Builder formBuilder = new FormBody.Builder();
+formBuilder.add(item.getKey(), item.getValue());
+}
+}
+
+FormBody formBody = formBuilder.build();
+Request request = new Request.Builder().url(url).post(formBody).build();
+

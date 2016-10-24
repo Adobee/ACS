@@ -1,0 +1,8 @@
+import ipfilterdsl.token.TokenBuffer;
+import ipfilterdsl.token.TokenType;
+
+public class TerminalParser<R> extends Parser<String, R> {
+public ParseResult<R> parse(TokenBuffer tokenBuffer) {
+Token token = tokenBuffer.currentToken();
+if (token.getType() == type) {
+

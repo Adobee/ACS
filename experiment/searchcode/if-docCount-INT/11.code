@@ -1,0 +1,11 @@
+public class IDFContent {
+private int docCount;
+private Map<String, Word> idfMorphemes = new HashMap<String, Word>();
+
+public IDFContent() {
+docCount = 1;
+}
+
+public void addWord(Word key) {
+if(idfMorphemes.containsKey(key.getMorpheme())) {
+

@@ -1,0 +1,6 @@
+*   <li>To make it easier to use exceptions, allocations are always allowed within a throw
+*       statement. (But not in the methods of nested classes if they are annotated with
+@Override
+public boolean matches(MethodInvocationTree tree, VisitorState state) {
+if (!enclosingMethod(noAllocationMethodMatcher).matches(tree, state)) {
+

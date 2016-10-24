@@ -1,0 +1,9 @@
+byte[] encodedPassword = md.digest();
+StringBuffer buf = new StringBuffer();
+
+for (int i = 0; i < encodedPassword.length; i++) {
+if (((int) encodedPassword[i] &amp; 0xff) < 0x10) {
+buf.append(&quot;0&quot;);
+}
+buf.append(Long.toString((int) encodedPassword[i] &amp; 0xff, 16));
+

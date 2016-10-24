@@ -1,0 +1,6 @@
+public static void forceSkip(InputStream in, long toSkip) throws IOException {
+long skipped = 0;
+while (skipped < toSkip) {
+long s = in.skip(toSkip - skipped);
+if (s <= 0) {
+

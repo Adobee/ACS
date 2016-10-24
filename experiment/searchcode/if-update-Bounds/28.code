@@ -1,0 +1,11 @@
+return GameBoard.getInstance().isRectangleOnScreen( rect );
+}
+
+public void update( float delta ) {
+if( _updatePosition ) {
+Vector2 unitVelocity = ( new Vector2( _velocity ) );
+if( _clipping )
+adjustPositionForBounds();
+} // if( _updatePosition )
+} // public void update( float delta )
+

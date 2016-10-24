@@ -1,0 +1,11 @@
+final ByteSizeValue maxChunkSize;
+
+private final int workerCount;
+
+private final boolean blockingServer;
+public NettyHttpServerTransport(Settings settings, NetworkService networkService) {
+super(settings);
+this.networkService = networkService;
+
+if (settings.getAsBoolean(&quot;netty.epollBugWorkaround&quot;, false)) {
+

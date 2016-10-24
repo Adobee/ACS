@@ -1,0 +1,9 @@
+import java.util.Collections;
+
+public class FolderNode extends PropNode {
+
+public FolderNode(Context context, File root) {
+for (File f : file.listFiles()) {
+PropNode create = context.getBuilder().create(this, f);
+if (create != null) {
+

@@ -1,0 +1,17 @@
+public void releaseLock(long threadId)
+{
+if (threadId == lockedBy)
+lockedBy = 0;
+}
+
+public void setLock(long threadId)
+{
+if (lockedBy == 0)
+{
+lockedBy = threadId;
+}
+
+}
+
+}
+

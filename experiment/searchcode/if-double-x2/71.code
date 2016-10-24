@@ -1,0 +1,17 @@
+public double omegaCalculate(Function funcion, double x0, double x1,
+double x2, int i){
+if(i==0){
+return (funcion.calculate(x1) - funcion.calculate(x0))/(x1-x0);
+return (funcion.calculate(x2) - funcion.calculate(x1))/(x2-x1);
+}
+
+public double hCalculate(double x0, double x1,
+double x2, int i){
+if(i==2){
+return x2-x1;
+}
+return x1-x0;
+}
+
+}
+

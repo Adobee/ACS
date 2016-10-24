@@ -1,0 +1,9 @@
+public void insertAfter(int e) {
+ListNode aux = new ListNode(e, pred, succ);
+if (isFirst() &amp;&amp; !isLast()) {
+list.first = aux;
+succ.prev = aux;
+} else if (isFirst() &amp;&amp; isLast()) {
+list.first = aux;
+list.last = aux;
+

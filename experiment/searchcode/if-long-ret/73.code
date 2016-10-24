@@ -1,0 +1,13 @@
+import java.util.*;
+import java.io.*;
+
+/* Mighty Cohadar */
+public class A {
+
+static long liters(long n, long a, long b, long c) {
+if (a <= b - c) {
+return n / a;
+}
+long ret = 0L;
+ret += Math.max(0L, n - b) / (b - c);
+

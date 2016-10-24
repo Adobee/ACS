@@ -1,0 +1,7 @@
+* Fits a quadratic curve through
+* two known gradients, g0 and g1, at unknown
+* points x0 and x1, respectively,
+double s = -g0d / (g1d - g0d) - 1; // Allow for displacement to x1=x0+d.
+double g1n = g1.norm();
+if (Math.abs(g1d) > c * d.norm() * g1n) {
+

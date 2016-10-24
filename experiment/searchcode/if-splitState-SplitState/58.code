@@ -1,0 +1,11 @@
+* @throws IllegalStateException if the StopWatch has not been split.
+*/
+public StopWatch unsplit() {
+if (this.splitState != SplitState.SPLIT) {
+throw new IllegalStateException(&quot;Stopwatch has not been split. &quot;);
+* @throws IllegalStateException if the StopWatch has not yet been split.
+*/
+public long getSplitTime() {
+if (this.splitState != SplitState.SPLIT) {
+throw new IllegalStateException(&quot;Stopwatch must be split to get the split time. &quot;);
+

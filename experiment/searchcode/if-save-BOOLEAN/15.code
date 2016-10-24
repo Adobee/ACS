@@ -1,0 +1,13 @@
+public static DataLoader getDataLoader() {
+if (d==null)
+d = new DataLoader();
+return d;
+}
+
+public boolean save1HasSaveFile(Context context) {
+SharedPreferences settings = context.getSharedPreferences(&quot;save1&quot;, MODE_PRIVATE);
+return settings.getBoolean(&quot;save1File&quot;, false);
+}
+
+public boolean save2HasSaveFile(Context context) {
+

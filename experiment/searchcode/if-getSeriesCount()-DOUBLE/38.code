@@ -1,0 +1,12 @@
+return hash;
+}
+
+
+public double getDomainLowerBound(boolean includeInterval) {
+if (includeInterval) {
+return this.intervalDelegate.getDomainLowerBound(includeInterval);
+}
+else {
+double result = Double.NaN;
+int seriesCount = getSeriesCount();
+

@@ -1,0 +1,7 @@
+List<Setting> settingList = settingMapper.selectByExample(settingExample);
+if (settingList == null || settingList.size() == 0) {
+return settingMapper.insert(setting);
+settingExample.createCriteria().andVEqualTo(version);
+List<Setting> settingList = settingMapper.selectByExample(settingExample);
+if (settingList == null || settingList.size() == 0) {
+

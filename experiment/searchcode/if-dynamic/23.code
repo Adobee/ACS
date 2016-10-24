@@ -1,0 +1,12 @@
+public static Dynamic getDynamic(int dynamicCode) throws IllegalArgumentException {
+if (Math.abs(dynamicCode) > 5 || dynamicCode == 0) {
+throw new IllegalArgumentException(&quot;The code should be between -5 and 5, but not 0&quot;);
+private void registerDynamic() {
+if (dynamicLookup == null) {
+dynamicLookup = new HashMap<Integer, Dynamic>();
+}
+
+dynamicLookup.put(this.dynamicCode, this);
+}
+}
+

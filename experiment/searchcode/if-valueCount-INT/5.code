@@ -1,0 +1,11 @@
+private static final String TAG = &quot;ValueCount&quot;;
+
+private int value;
+private static ValueCount instance;
+
+private ValueCount() {}
+
+public synchronized static ValueCount getInstance() {
+if(instance == null) {
+instance = new ValueCount();
+

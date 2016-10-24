@@ -1,0 +1,15 @@
+this.comparator = comparator;
+}
+
+@Override
+protected boolean leftOf(Bound<T> bound, T value) {
+if (comparator.compare(value, bound.bound()) > 0) {
+return false;
+}
+return true;
+}
+
+@Override
+protected boolean rightOf(Bound<T> bound, T value) {
+if (comparator.compare(value, bound.bound()) < 0) {
+

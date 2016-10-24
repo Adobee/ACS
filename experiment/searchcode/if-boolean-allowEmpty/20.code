@@ -1,0 +1,11 @@
+private boolean allowEmpty;
+
+public MyCustomDateEditorBinder(List<DateFormat> parseFormatters,
+boolean allowEmpty) {
+this.allowEmpty = allowEmpty;
+}
+
+@Override
+public void setAsText(String text) throws IllegalArgumentException {
+if (this.allowEmpty &amp;&amp; StringUtils.isEmpty(text)) {
+

@@ -1,0 +1,15 @@
+package me.panavtec.cleancontacts.ui.transitions;
+
+public class NoWindowTransitionListener implements WindowTransitionListener {
+this.endListener = endListener;
+}
+
+@Override public boolean start() {
+if (endListener != null) {
+endListener.onEndTransition();
+}
+return false;
+}
+
+}
+

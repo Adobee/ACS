@@ -1,0 +1,7 @@
+public int lengthOfLongestSubstring(String s) {
+int startIndex = 0;
+boolean[] visited = new boolean[256];
+int maxLen = 0;
+
+for(int i = 0; startIndex <= i &amp;&amp; i < s.length(); i++){
+

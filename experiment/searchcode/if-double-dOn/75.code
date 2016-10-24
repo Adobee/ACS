@@ -1,0 +1,10 @@
+public static boolean normalize(double[] data) {
+double sum = 0;
+for(double x : data) sum += x;
+if(sum == 0) return false;
+for(double[] v : data)
+for(double x : v) sum += x;
+if(sum == 0) return false;
+for(double[] v : data)
+for(int i = 0; i < v.length; i++) v[i] /= sum;
+

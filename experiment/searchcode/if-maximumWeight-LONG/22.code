@@ -1,0 +1,8 @@
+public LocalCache(long expireAfterAccess) {
+this(10000, expireAfterAccess);
+}
+
+public LocalCache(long maximumWeight, long expireAfterAccess) {
+cache = CacheBuilder.newBuilder()
+.maximumWeight(maximumWeight)
+

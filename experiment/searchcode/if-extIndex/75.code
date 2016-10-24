@@ -1,0 +1,12 @@
+if (name == null || name.length() == 0) {
+continue;
+}
+
+int extIndex = name.lastIndexOf(&quot;.&quot;);
+if (extIndex < 0) {
+continue;
+}
+
+String ext = name.substring(extIndex);
+if (!ext.equalsIgnoreCase(&quot;.jar&quot;)) {
+

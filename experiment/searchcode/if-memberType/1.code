@@ -1,0 +1,10 @@
+for (MemberType item : MemberType.values()) {
+if (item.value == value) {
+return item;
+}
+}
+throw new UnsupportedValueException(&quot;枚举类型 MemberType 不支持整型值 &quot; + value);
+public static MemberType nameOf(String name) {
+for (MemberType item : MemberType.values()) {
+if (item.toString().equals(name)) {
+

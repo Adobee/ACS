@@ -1,0 +1,13 @@
+//获取响应代码
+code = httpurlconnection.getResponseCode();
+if (code != 200) {
+e.printStackTrace();
+} finally {
+if (httpurlconnection != null)
+httpurlconnection.disconnect();
+}
+
+return code;
+}
+}
+

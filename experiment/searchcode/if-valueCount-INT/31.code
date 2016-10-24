@@ -1,0 +1,14 @@
+public final ValueCount min;
+public final ValueCount max;
+
+public IntervalCount(int min, int max){
+this(new NumCount(min), new NumCount(max));
+public IntervalCount(ValueCount min, ValueCount max){
+this.min = min;
+this.max = max;
+}
+
+public IntervalCount mul(int m) {
+if(m>=0)
+return new IntervalCount(min.mul(m), max.mul(m));
+

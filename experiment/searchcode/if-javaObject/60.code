@@ -1,0 +1,7 @@
+public Object[] getIds() {
+Collection<?> mapEntries = null;
+if (javaObject instanceof Map) {
+mapEntries = ((Map<?, ?>)javaObject).keySet();
+} else if (javaObject instanceof EMap) {
+mapEntries = ((EMap<?, ?>)javaObject).keySet();
+

@@ -1,0 +1,8 @@
+@XmlRootElement(name=&quot;dayOfWeek&quot;)
+@Accessors(prefix=&quot;_&quot;)
+public class DayOfWeek
+implements Serializable,
+public boolean equals(final Object obj) {
+if (obj == null) return false;
+if (obj instanceof DayOfWeek) return ((DayOfWeek)obj).getDayOfWeek() == _dayOfWeek;
+

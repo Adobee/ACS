@@ -1,0 +1,8 @@
+public static final ConnectionSpec MODERN_TLS;
+private final String[] cipherSuites;
+final boolean supportsTlsExtensions;
+final boolean tls;
+public Builder supportsTlsExtensions(boolean supportsTlsExtensions) {
+if (this.tls) {
+this.supportsTlsExtensions = supportsTlsExtensions;
+

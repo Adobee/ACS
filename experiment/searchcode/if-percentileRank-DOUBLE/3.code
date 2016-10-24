@@ -1,0 +1,12 @@
+return new Iter(keys, state);
+}
+
+@Override
+public double percent(double value) {
+return percentileRank(state, value);
+return TYPE;
+}
+
+static double percentileRank(TDigestState state, double value) {
+double percentileRank = state.cdf(value);
+

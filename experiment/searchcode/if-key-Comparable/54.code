@@ -1,0 +1,12 @@
+public class QuickSort {
+
+public static Comparable [] sort(Comparable [] A) {
+if (null == A) {
+return A;
+qsort(A, 0, A.length-1);
+return A;
+}
+
+private static void qsort(Comparable [] A, int low, int high) {
+if (high <= low) { return ; }
+

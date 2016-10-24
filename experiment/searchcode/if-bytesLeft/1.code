@@ -1,0 +1,12 @@
+public int available() throws IOException {
+if (bytesLeft > Integer.MAX_VALUE) {
+return Integer.MAX_VALUE;
+}
+
+return (int) bytesLeft;
+}
+
+@Override
+public int read() throws IOException {
+if (bytesLeft == 0) {
+

@@ -1,0 +1,9 @@
+Annotation annotation = AnnotationUtils.findAnnotation(method, annotationType);
+if (annotation != null) {
+annotation = AnnotationUtils.findAnnotation(specificMethod, annotationType);
+if (annotation != null) {
+return true;
+}
+
+annotation = AnnotationUtils.findAnnotation(targetClass, annotationType);
+

@@ -1,0 +1,10 @@
+for (int i = 1; i < N; i++) {
+Comparable key = a[i];
+int j = i;
+for (; j > 0 &amp;&amp; less(key, a[j-1]); j--)
+a[j] = a[j-1];
+a[j] = key;
+}
+}
+private static boolean less(Comparable v, Comparable w)
+

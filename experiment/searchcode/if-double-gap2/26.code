@@ -1,0 +1,12 @@
+public class MaximumGap {
+public static int maximumGap(int[] num){
+int len = num.length;
+if(len<2) return 0;
+ans = Math.max(ans, num[i]-num[i-1]);
+}
+return ans;
+}
+
+public static int maximumGap2(int []num){
+int len = num.length;
+

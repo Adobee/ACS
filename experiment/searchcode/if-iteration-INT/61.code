@@ -1,0 +1,12 @@
+private long _iterationId;
+private int _year;
+
+public ImpactIterationSoap() {
+}
+
+public static ImpactIterationSoap toSoapModel(ImpactIteration model) {
+ImpactIterationSoap[] soapModels = new ImpactIterationSoap[models.length];
+
+for (int i = 0; i < models.length; i++) {
+soapModels[i] = toSoapModel(models[i]);
+

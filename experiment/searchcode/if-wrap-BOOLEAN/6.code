@@ -1,0 +1,8 @@
+private boolean wrapHorizontal = true;
+private boolean wrapVertical = true;
+
+@Override
+public void collided(Sprite target, Sprite wrapInsideOf) {
+if (wrapHorizontal) {
+if (getLeftCoordinate(target) < getLeftCoordinate(wrapInsideOf)) {
+

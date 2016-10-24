@@ -1,0 +1,9 @@
+private final ContainerConfig config;
+private final Versioner versioner;
+private boolean strictParsing = false;
+
+@Inject
+public List<Uri> make(List<ProxyUri> resources, Integer forcedRefresh) {
+if (resources.isEmpty()) {
+return Collections.emptyList();
+

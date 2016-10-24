@@ -1,0 +1,11 @@
+package com.lhl.blog.util;
+
+public class Pagination {
+private static int pageSize;
+
+public static int getPageSize() {
+public static int getPageTotal(int recordsCount) {
+int pageTotal = 0;
+if (recordsCount % pageSize == 0) {
+pageTotal = recordsCount / pageSize;
+

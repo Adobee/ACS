@@ -1,0 +1,12 @@
+try {
+PhoneNumber phoneNumber = mPhoneUtil.parse(phoneNumberString,
+countryCode);
+if (mPhoneUtil.isValidNumber(phoneNumber)) {
+} catch (NumberParseException e) {
+// return false;
+}
+return false;
+}
+
+public String getPhoneNumberIfValid(String phoneNumberString,
+

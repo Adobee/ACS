@@ -1,0 +1,9 @@
+public class TreeLayoutAlgorithm extends AbstractLayoutAlgorithm {
+
+private final static double DEFAULT_WEIGHT = 0;
+private final static boolean DEFAULT_MARKED = false;
+int tmpEntityIndex = indexOfInternalNode(entities, tmpEntity);
+boolean isMarked = markedArr[tmpEntityIndex];
+if (isMarked) {
+unplacedEntities.remove(tmpEntity);
+

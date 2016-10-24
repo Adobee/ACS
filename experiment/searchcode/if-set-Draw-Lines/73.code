@@ -1,0 +1,8 @@
+/* ensure that default is in data base */
+Boolean lf = Main.pref.getBoolean(&quot;draw.rawgps.lines.localfiles&quot;, false);
+if(Main.pref.getBoolean(&quot;draw.rawgps.lines&quot;, true)) {
+drawRawGpsLinesAll.setSelected(true);
+} else if (lf) {
+drawRawGpsLinesLocal.setSelected(true);
+} else {
+

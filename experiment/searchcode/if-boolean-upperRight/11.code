@@ -1,0 +1,10 @@
+public int nodeNum; // stores the number of node in its subtree.
+
+public Point lowerLeft, upperRight;
+
+// Store the SW, NW, NE, and SE rectangles if color is mixed.
+public static boolean isMonochromatic(int[][] imageSum, Point lowerLeft,
+Point upperRight) {
+int pixelSum = imageSum[upperRight.i][upperRight.j];
+if (lowerLeft.i >= 1) {
+

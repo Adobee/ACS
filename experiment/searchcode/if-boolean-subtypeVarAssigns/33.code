@@ -1,0 +1,8 @@
+private static Map<TypeVariable<?>, Type> getTypeArguments(Type type, Class<?> toClass,
+Map<TypeVariable<?>, Type> subtypeVarAssigns) {
+if (type instanceof Class<?>) {
+return getTypeArguments((ParameterizedType) type, toClass, subtypeVarAssigns);
+}
+
+if (type instanceof GenericArrayType) {
+

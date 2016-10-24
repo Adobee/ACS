@@ -1,0 +1,15 @@
+import org.springframework.data.annotation.Transient;
+
+import at.uibk.los.model.interfaces.IDay;
+
+class Day implements IDay {
+
+int dayOfYear;
+int year;
+
+@Transient
+Date date;
+
+@PersistenceConstructor
+public Day(int dayOfYear, int year) {
+

@@ -1,0 +1,8 @@
+UI.addButton(&quot;Edit Shape&quot;, this::editShapeTool);
+UI.addButton(&quot;Line Tool&quot;, this::lineTool);
+} else if (type.equals(&quot;shapeEdit&quot;)) {
+UI.addButton(&quot;Back&quot;, this::goBack);
+} else if (type.equals(&quot;addShape&quot;)) {
+clearButtons();
+UI.addButton(&quot;Circle&quot;, this::setToolToCircle);
+

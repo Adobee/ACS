@@ -1,0 +1,12 @@
+public class PositiveDoubleFieldInputComponent implements TableInputComponent<Double> {
+private JTextField field;
+private Double initValue;
+
+public PositiveDoubleFieldInputComponent() {
+field.setDocument(new PositiveDoubleDocument());
+initValue = null;
+field.setText(&quot;&quot;);
+}
+
+public PositiveDoubleFieldInputComponent(Double v) {
+

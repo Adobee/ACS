@@ -1,0 +1,11 @@
+return rec(0, N - 1, 0, M - 1);
+}
+
+int rec(int n0, int n1, int m0, int m1) {
+// debug(n0, n1, m0, m1);
+if (visited[n0][n1][m0][m1]) return 0;
+int h0 = n - n0 + 1;
+int h1 = n1 - n;
+int dist = Math.min(h0, h1);
+if (!check(true, n, dist, m0, m1)) continue;
+

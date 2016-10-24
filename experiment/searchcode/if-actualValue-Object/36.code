@@ -1,0 +1,10 @@
+this.expectedValue = equalArg;
+}
+
+@Override
+public boolean matches(Object actualValue) {
+boolean matched = super.matches(actualValue);
+
+if (!matched &amp;&amp; actualValue != null){
+//we do more for numbers as sometime user don&#39;t care the data type, for example 4 != 4L
+

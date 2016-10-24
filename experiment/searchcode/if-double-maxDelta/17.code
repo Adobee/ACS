@@ -1,0 +1,11 @@
+public double perturb(int dimension, double value) {
+double maxDelta = maxPercentageChange;
+double delta = rg.nextDouble() * maxDelta;
+if (rg.nextBoolean()) {
+delta = -1 * delta;
+}
+
+return value + delta;
+}
+}
+

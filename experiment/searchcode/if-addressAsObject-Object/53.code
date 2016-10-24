@@ -1,0 +1,8 @@
+if (VM_Compiler.isRegister(location)) {
+lock = VM_Magic.addressAsObject(registers.gprs.get(location).toAddress());
+BYTES_IN_ADDRESS); //location offsets are positioned on top of their stackslot
+lock = VM_Magic.addressAsObject(addr.loadAddress());
+}
+}
+if (VM_ObjectModel.holdsLock(lock, VM_Scheduler.getCurrentThread())) {
+

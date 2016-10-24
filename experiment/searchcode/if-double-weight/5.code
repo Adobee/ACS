@@ -1,0 +1,11 @@
+package exercise03;
+
+public class Star implements Mobile {
+
+private double weight;
+
+public Star(double weight) throws IllegalArgumentException {
+
+if (weight <= 0) {
+throw new IllegalArgumentException(&quot;Weight must be > 0&quot;);
+

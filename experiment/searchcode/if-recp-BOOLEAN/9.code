@@ -1,0 +1,15 @@
+Recipe recp = (Recipe) ite.next();
+if (canICookRecipe(recp)) {
+canBeCookedRecipes.add(recp);
+}
+}
+}
+
+
+public ArrayList<Recipe> getCanBeCookedRecipes() {
+System.out.print(ingName.replaceAll(&quot; &quot;,&quot;&quot;) + &quot;\t&quot;);
+
+for (int j = 0; j < recipes.size(); j++) {
+Recipe recp = recipes.get(j);
+if (recp.getIngredientsNeeded().containsKey(basket.getIngredientByName(ingName.toLowerCase()))) {
+

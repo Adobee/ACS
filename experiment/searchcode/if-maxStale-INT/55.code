@@ -1,0 +1,8 @@
+class LocalCacheInterceptor implements Interceptor {
+
+private final int maxCacheSeconds;
+private final Headers commonHeaders;
+
+public LocalCacheInterceptor(int maxCacheSeconds, Headers commonHeaders) {
+this.maxCacheSeconds = maxCacheSeconds;
+

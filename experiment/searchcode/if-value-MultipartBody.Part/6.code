@@ -1,0 +1,5 @@
+for (Map.Entry<String, String> item : inRequest.getParas().entrySet()) {
+builder.addFormDataPart(item.getKey(), item.getValue() + &quot;&quot;);
+for (Map.Entry<String, File> item : inRequest.getFileParas().entrySet()) {
+builder.addFormDataPart(item.getKey(), item.getValue().getName(),
+

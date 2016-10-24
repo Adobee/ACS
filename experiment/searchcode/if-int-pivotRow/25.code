@@ -1,0 +1,8 @@
+* @throws NullPointerException if {@code f} is {@code null}
+*/
+public Matrix(int rows, int cols, Field<T> f) {
+if (rows <= 0 || cols <= 0)
+throw new IllegalArgumentException(&quot;Invalid number of rows or columns&quot;);
+public T get(int row, int col) {
+if (row < 0 || row >= values.length || col < 0 || col >= values[row].length)
+

@@ -1,0 +1,14 @@
+return DatabaseDefaults.getShapes();
+}
+
+/**
+* {@inheritDoc}
+*/
+@Override
+public String getItem(int itemIndex) {
+return DatabaseDefaults.getShapes()[itemIndex];
+public String getItemPhoneticSound(int itemIndex) {
+Shape shape = Database.getInstance().getShapes().get(itemIndex);
+
+if (shape != null) {
+

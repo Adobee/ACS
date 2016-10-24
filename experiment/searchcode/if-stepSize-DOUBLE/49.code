@@ -1,0 +1,10 @@
+int[] pixels = ((DataBufferInt) image.getRaster().getDataBuffer()).getData();
+
+double[][] map = new double[wide][high];
+
+
+int iterator = 1;
+int stepsize = wide / 16;
+do {
+for (int y = stepsize; y <= high - stepsize * 2; y += stepsize) {
+

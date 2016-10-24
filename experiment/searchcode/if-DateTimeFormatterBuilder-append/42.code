@@ -1,0 +1,7 @@
+import org.joda.time.format.DateTimeFormatter;
+import org.joda.time.format.DateTimeFormatterBuilder;
+import jetbrains.mps.baseLanguage.dates.runtime.OffsetDateTimePrinter;
+if (&quot;hoursBeforeFixed&quot;.equals(formatterName)) {
+DateTimeFormatterBuilder builder = new DateTimeFormatterBuilder();
+builder.append(new OffsetDateTimePrinter(new DateTime(2000, 4, 12, 19, 0, 0, 0, DateTimeZone.forID(&quot;GMT+0&quot;)), DurationFieldType.hours(), DurationFieldType.minutes()));
+

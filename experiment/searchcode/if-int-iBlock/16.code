@@ -1,0 +1,16 @@
+public IBlockHandler()
+{
+blocks = new ArrayList<IBlock>();
+}
+
+public void registerBlock(IBlock block)
+{
+if (!blocks.contains(block)) blocks.add(block);
+b.getBlock().removeMetadata(IBlock.blockmeta, InterfacesPlugin.INSTANCE);
+}
+
+public void unregisterBlock(Location location)
+{
+IBlock b = getBlock(location);
+if (b != null)
+

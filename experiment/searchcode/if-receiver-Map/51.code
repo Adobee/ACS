@@ -1,0 +1,5 @@
+public DefaultMessageReceiverRegistry() {
+// TODO: Check maps implementation + concurrency.
+receivers = new HashMap<Class<?>, MessageReceiverCollection>();
+selectionCache = new HashMap<Class<?>, DefaultMessageReceiverCache>();
+

@@ -1,0 +1,8 @@
+DegreeEnum currentDegree = DegreeMapper.PercentToDegree(perc);
+degrees.put(CSUtils.DateParse(values[0]), currentDegree);
+
+if(currentDegree != lastDegree)
+{
+if(count != 0)
+phases.put(CSUtils.DateParse(values[0]), new Phase(lastDegree, count));
+

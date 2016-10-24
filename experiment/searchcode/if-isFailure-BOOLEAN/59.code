@@ -1,0 +1,17 @@
+public boolean isFailure()
+{
+return (done) &amp;&amp; (!sucess);
+}
+
+public void setReasonForFailure(String reasonForFailure)
+public final Step call() throws Exception
+{
+if (isFailure())
+return this;
+
+return run();
+}
+
+public abstract Step run() throws Exception;
+}
+

@@ -1,0 +1,11 @@
+public Double calculateAvailableAmount(String expenses, String income, String budget )
+{
+
+// remove  $ sign to convert in double
+expenses = expenses.substring(1);
+income = income.substring(1);
+Double availableAmount;
+if(Double.parseDouble(budget) != 0 )
+{
+availableAmount =  Double.parseDouble(budget) - Double.parseDouble(expenses);
+

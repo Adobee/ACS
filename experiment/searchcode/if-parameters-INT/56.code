@@ -1,0 +1,13 @@
+private void applyParameter(Camera.Parameters parameters) {
+mCamera.setParameters(parameters);
+}
+
+@Override
+public int getNumberOfCameras() {
+return getParameters().isZoomSupported();
+}
+
+@Override
+public boolean isFocusSupported() {
+if (getParameters().getSupportedFocusModes().contains(Camera.Parameters.FOCUS_MODE_AUTO)) {
+

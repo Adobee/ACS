@@ -1,0 +1,20 @@
+public class Terminal implements Expression {
+private String name;
+private boolean isUpdate;
+
+public Terminal(String s) {
+name = s;
+public boolean getUpdate() {
+return isUpdate;
+}
+
+@Override
+public String toString() {
+if (isUpdate) {
+return name + &quot;\&#39;&quot;;
+}
+
+return name;
+}
+}
+

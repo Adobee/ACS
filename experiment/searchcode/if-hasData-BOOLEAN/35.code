@@ -1,0 +1,9 @@
+public static String getTeachers(Substitution substitution) {
+if (hasData(substitution.getTeacher()) &amp;&amp; hasData(substitution.getPreviousTeacher()) &amp;&amp; !substitution
+return String.format(&quot;%s statt %s&quot;, teacher, previousTeacher);
+}
+
+@Contract(pure = true)
+static boolean hasData(String string) {
+if (string != null) {
+

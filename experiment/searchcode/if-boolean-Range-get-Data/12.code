@@ -1,0 +1,12 @@
+this.range = range;
+if(this.range == null)
+{
+this.range = new RangeData(null, null, null);
+delta_edit.setData(range.getDelta());
+reset();
+}
+
+public void setEditable(boolean editable)
+{
+if(begin_edit != null) begin_edit.setEditable(editable);
+

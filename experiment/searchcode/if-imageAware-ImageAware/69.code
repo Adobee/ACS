@@ -1,0 +1,10 @@
+this.engine = engine;
+this.loadedFrom = loadedFrom;
+}
+
+@Override
+public void run() {
+if (imageAware.isCollected()) {
+listener.onLoadingCancelled(imageUri, imageAware.getWrappedView());
+} else if (isViewWasReused()) {
+

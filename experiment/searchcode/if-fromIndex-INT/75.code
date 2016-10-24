@@ -1,0 +1,9 @@
+public static <T extends Comparable<T>> T get(T[] a, int fromIndex, int toIndex, int id) {
+// 小于等于5个数，直接排序得到结果
+if (toIndex - fromIndex <= 5) {
+Arrays.sort(a, fromIndex, toIndex);
+return a[fromIndex + id - 1];
+}
+
+int t = fromIndex - 1; // 当前替换到前面的中位数的下标
+

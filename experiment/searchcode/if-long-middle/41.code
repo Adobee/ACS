@@ -1,0 +1,10 @@
+row = n;
+long bottom = 1;
+long top = 10000000000L;
+while (bottom < top) {
+long middle = (bottom + top) / 2;
+if (count(middle) < k) {
+bottom = middle + 1;
+} else {
+top = middle;
+

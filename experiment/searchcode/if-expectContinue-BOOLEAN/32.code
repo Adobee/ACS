@@ -1,0 +1,13 @@
+implements HttpEntityEnclosingRequest
+{
+
+private boolean consumed;
+private HttpEntity entity;
+
+public EntityEnclosingRequestWrapper(HttpEntityEnclosingRequest httpentityenclosingrequest)
+super(httpentityenclosingrequest);
+setEntity(httpentityenclosingrequest.getEntity());
+}
+
+public boolean expectContinue()
+

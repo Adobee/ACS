@@ -1,0 +1,7 @@
+public RealMatrix getS() throws InvalidMatrixException {
+
+if (cachedS == null) {
+
+// cache the matrix for subsequent calls
+cachedS = MatrixUtils.createRealDiagonalMatrix(singularValues);
+

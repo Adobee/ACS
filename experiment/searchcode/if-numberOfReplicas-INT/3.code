@@ -1,0 +1,8 @@
+private final SortedMap<Integer, T> circle = new TreeMap<Integer, T>();
+
+public ConsistentHash(HashFunction hashFunction, int numberOfReplicas,
+Collection<T> nodes) {
+public void remove(T node) {
+for (int i = 0; i < numberOfReplicas; i++) {
+circle.remove(hashFunction.hash(node.toString() + i));
+

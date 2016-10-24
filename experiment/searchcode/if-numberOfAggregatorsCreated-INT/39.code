@@ -1,0 +1,11 @@
+return asMultiBucketAggregator(this, aggregationContext, parent);
+}
+
+numberOfAggregatorsCreated++;
+
+if (valuesSource instanceof ValuesSource.Bytes) {
+IndexReader reader = searchContext.searcher().getIndexReader();
+try {
+if (numberOfAggregatorsCreated == 1) {
+// Setup a termsEnum for sole use by one aggregator
+

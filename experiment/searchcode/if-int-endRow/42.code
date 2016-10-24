@@ -1,0 +1,7 @@
+public boolean checkMove(Piece[] p, int startingRow, int startingCol, int endRow, int endCol) {
+
+if(color == ColorType.white &amp;&amp; endRow == startingRow - 1 &amp;&amp; (endCol == startingCol+1 ||endCol == startingCol-1)){
+System.err.println(&quot;here&quot;);
+for (int i = 0; i < p.length; i++)
+if(p[i].row == endRow &amp;&amp; p[i].col == endCol &amp;&amp; p[i].color != this.color)
+

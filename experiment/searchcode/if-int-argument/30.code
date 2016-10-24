@@ -1,0 +1,6 @@
+static final void method3453(int argument, int argument_0_, GraphicsToolkit argument_1_, int argument_2_, int argument_3_, int argument_4_, int argument_5_, int argument_6_, int argument_7_) {
+if (argument_6_ != -4)
+else {
+int anLocalInt_9_ = argument_5_;
+if (class266.anInt2123 > 0)
+

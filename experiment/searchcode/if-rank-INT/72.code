@@ -1,0 +1,13 @@
+public class PlayerRank {
+
+static int rankCost( int r )
+{
+if( r <= 0 )
+return 500;
+}
+return ( r * rankCost( 1 ) ) + rankCost( r - 1 );
+}
+
+private int rank = 0;
+private final Rilncraft plugin;
+

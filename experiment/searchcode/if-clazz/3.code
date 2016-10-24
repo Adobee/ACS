@@ -1,0 +1,9 @@
+package net.aegistudio.reflect.clazz;
+
+public class Instance<Clazz extends Class> {
+public final Clazz clazz;
+public Instance(Clazz clazz, Object instance) throws ClassCastException {
+this.clazz = clazz;
+if(clazz != null)
+if(!clazz.isInstance(instance))
+

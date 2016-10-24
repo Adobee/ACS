@@ -1,0 +1,8 @@
+Package[] list = outBuffer.newBuffer();
+double outVal = 0;
+if(average){
+if(!randomSample){
+double valDiff = Math.abs(lastVal - val);
+double timeDiff = lastTime - Timer.getFPGATimestamp();
+if(valDiff/timeDiff > maxRate){
+

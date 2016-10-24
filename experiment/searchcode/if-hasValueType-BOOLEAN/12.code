@@ -1,0 +1,7 @@
+int resultIndex = this.getParametersResult().indexOf(matchParameterResult);
+Class<?> value = types[resultIndex];
+boolean hasValueType = matchParameterResult.hasValueType(value);
+LOGGER.debug(&quot;Parameter result [&quot; + matchParameterResult + &quot;] has value type [&quot; + value + &quot;] ? [&quot; + hasValueType + &quot;].&quot;);
+if(!hasValueType) {
+return false;
+

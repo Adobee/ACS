@@ -1,0 +1,12 @@
+package tr.edu.metu.ceng.q1;
+
+public class Answer1 {
+
+public static void main(String[] args) {
+double n = Double.parseDouble(args[0]);
+
+double x;
+int intY;
+double y;
+int found = 0;
+

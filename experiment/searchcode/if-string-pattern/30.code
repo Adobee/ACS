@@ -1,0 +1,9 @@
+import com.google.common.annotations.VisibleForTesting;
+
+import java.util.regex.Pattern;
+
+/**
+* Determines if a Sample is valid according to the provided patterns.
+public SamplePatternChecker(String sensorPatternString, String platformPatternString) {
+compilePattern(sensorPatternString, platformPatternString);
+

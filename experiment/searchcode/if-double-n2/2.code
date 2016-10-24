@@ -1,0 +1,11 @@
+return C;
+}
+public static double[][] strassen(double[][] A, double[][] B, int n) {
+if(n == 1) {
+double[][] a = new double[1][1];
+a[0][0] = A[0][0]*B[0][0];
+return a;
+}
+int n2 = n/2;
+double[][] A11 = new double[n2][n2];
+

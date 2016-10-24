@@ -1,0 +1,12 @@
+public class RegularExpression {
+
+private Pattern p;
+
+public RegularExpression(String pattern){
+if(pattern.charAt(0) != &#39;^&#39;)	pattern = &quot;^&quot; + pattern;
+return p.pattern();
+}
+
+public void setPattern(String newPattern){
+if(newPattern.charAt(0) != &#39;^&#39;)	newPattern = &quot;^&quot; + newPattern;
+

@@ -1,0 +1,7 @@
+return startCluster(numberOfNodes, minimumMasterNode, null);
+}
+
+private List<String> startCluster(int numberOfNodes, int minimumMasterNode, @Nullable int[] unicastHostsOrdinals) throws ExecutionException, InterruptedException {
+private void configureUnicastCluster(int numberOfNodes, @Nullable int[] unicastHostsOrdinals, int minimumMasterNode) throws ExecutionException, InterruptedException {
+if (minimumMasterNode < 0) {
+

@@ -1,0 +1,9 @@
+public class Solution {
+public boolean canJump(int[] A) {
+if(A.length == 1) return true;
+
+int maxStep = 0;
+int currentStep = 0;
+int temp;
+while(currentStep<=maxStep){
+

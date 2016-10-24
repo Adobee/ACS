@@ -1,0 +1,12 @@
+protected int readHead(byte[] buf, int off, int len) {
+int i = headHead();
+if (i == -1) return i;
+int toRead = head.length - hp;
+hp += toRead;
+return toRead;
+}
+
+protected int skipHead(long n) {
+int i = headHead();
+if (i == -1) return i;
+

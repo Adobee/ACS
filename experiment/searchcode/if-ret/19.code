@@ -1,0 +1,9 @@
+public int nthUglyNumber(int n) {
+if(n<=0)
+return 0;
+
+int[] ret = new int[n+1];
+ret[0] = 1;
+ret[i] = Math.min(Math.min(ret[pos2]*2,ret[pos3]*3), ret[pos5]*5);
+if(ret[pos2]*2 == ret[i]) pos2++;
+

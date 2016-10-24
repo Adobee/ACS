@@ -1,0 +1,10 @@
+public String SyncState = SyncStates.NOT_STARTED;
+
+
+
+public boolean initialSyncAllowed() {
+return this.InitialSyncState == SyncStates.NOT_STARTED || this.InitialSyncState == SyncStates.FAILED;
+}
+
+public boolean initialSyncDisabled() {
+

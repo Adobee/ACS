@@ -1,0 +1,7 @@
+public void create(SP_Class SP_Class) throws PreexistingEntityException, Exception {
+if (SP_Class.getPeriods() == null) {
+SP_Class.setPeriods(new ArrayList<SemesterPeriod>());
+periodsSemesterPeriod.setInClass(SP_Class);
+periodsSemesterPeriod = em.merge(periodsSemesterPeriod);
+if (oldInClassOfPeriodsSemesterPeriod != null) {
+

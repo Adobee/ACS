@@ -1,0 +1,9 @@
+OutputStream os = new BufferedOutputStream(editor.newOutputStream(0), bufferSize);
+boolean savedSuccessfully = false;
+try {
+} finally {
+IoUtils.closeSilently(os);
+}
+if (savedSuccessfully) {
+editor.commit();
+

@@ -1,0 +1,11 @@
+Core.mixChannels(src, dst, ch);
+int N = 4;
+double threshLow = 1;
+double threshHigh = 1;
+
+// try several threshold levels
+if (approx.total() == 4 &amp;&amp; Math.abs(Imgproc.contourArea(approx)) > 50 &amp;&amp; Imgproc.isContourConvex(approxMat))
+{
+double maxCosine = 0;
+Point[] pArray = approx.toArray();
+

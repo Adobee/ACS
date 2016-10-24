@@ -1,0 +1,11 @@
+public static final int SEEN_GOTO = 4;
+
+public static final int SEEN_IF = 5;
+
+private BugReporter bugReporter;
+
+private int state;
+@Override
+public void sawOpcode(int seen) {
+if (seen == GOTO &amp;&amp; getBranchOffset() == 4) {
+

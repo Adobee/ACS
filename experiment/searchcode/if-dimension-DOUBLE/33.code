@@ -1,0 +1,12 @@
+dataset.elementAt(i).addDimension(data.datastream.OHLC(i));
+}
+}
+
+public void addDimension(Vector<Double> data){
+if(incomplete){
+dimension -= 1;
+dimensionValidate(false,dimension);
+double mean = 0;
+for(TimePoint point : dataset){
+if(dimension == 0){
+

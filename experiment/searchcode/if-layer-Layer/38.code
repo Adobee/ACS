@@ -1,0 +1,7 @@
+public ConvolutionalNeuralNetwork(int[][] layerParameters, boolean addBias, boolean padding, boolean useOpenCL) {
+if (layerParameters.length < 2) {
+throw new IllegalArgumentException(&quot;At least 2 layers&quot;);
+int numOfLayers = layerParameters.length;
+if (layerParameters[0].length != 4) {
+throw new IllegalArgumentException(&quot;The fisrt layer must be convolutional layer&quot;);
+

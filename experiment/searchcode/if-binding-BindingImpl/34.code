@@ -1,0 +1,6 @@
+private final Exchange _defaultExchange;
+
+private final ConcurrentHashMap<BindingImpl, BindingImpl> _bindings = new ConcurrentHashMap<BindingImpl, BindingImpl>();
+BindingImpl b = new BindingImpl(bindingKey,queue,exchange,arguments);
+BindingImpl existingMapping = _bindings.putIfAbsent(b,b);
+

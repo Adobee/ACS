@@ -1,0 +1,7 @@
+public final void testH5LTmake_dataset() {
+int nBytes = 16, bSize = 2;
+ShortBuffer dsValue = ByteBuffer.allocateDirect(nBytes).order(ByteOrder.nativeOrder()).asShortBuffer();
+LiteLib.H5LTread_dataset(this.fid, dsName, DatatypeLib.getH5T_NATIVE_INT16(), readValue);
+for (int n=0; n<nBytes/bSize; n++) {
+assertEquals(dsValue.get(n), readValue.get(n));
+

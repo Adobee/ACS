@@ -1,0 +1,14 @@
+public void initialize(Phone phone) {
+this.phoneLength = phone.value();
+}
+
+@Override
+public boolean isValid(String phone, ConstraintValidatorContext cxt) {
+if (phone == null) {
+return true;
+}
+return phone.length() > phoneLength;
+}
+
+}
+

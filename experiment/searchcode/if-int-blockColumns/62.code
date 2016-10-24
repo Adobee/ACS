@@ -1,0 +1,7 @@
+final int iHeight = blockHeight(iBlock);
+for (int jBlock = 0; jBlock < blockColumns; ++jBlock, ++index) {
+if (blockData[index].length != iHeight * blockWidth(jBlock)) {
+final double[] block = blocks[iBlock * blockColumns + jBlock];
+final int available = outBlock.length - outIndex;
+if (jWidth > available) {
+

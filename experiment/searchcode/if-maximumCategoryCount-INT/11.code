@@ -1,0 +1,12 @@
+return this.firstCategoryIndex;
+}
+
+public void setFirstCategoryIndex(int first) {
+if (first < 0 || first >= this.underlying.getColumnCount()) {
+fireDatasetChanged();
+}
+
+private int lastCategoryIndex() {
+if (this.maximumCategoryCount == 0) {
+return -1;
+

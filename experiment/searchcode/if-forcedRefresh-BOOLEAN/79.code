@@ -1,0 +1,15 @@
+name|Override
+DECL|method|retryOnFailure
+specifier|protected
+name|boolean
+name|retryOnFailure
+parameter_list|(
+name|Throwable
+comment|// Fail fast on the node that received the request, rather than failing when translating on the index or delete request.
+if|if
+condition|(
+name|request
+operator|.
+name|routing
+argument_list|()
+

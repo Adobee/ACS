@@ -1,0 +1,10 @@
+final Throwable throwable) {
+if (throwable == null) {
+try {
+return exClazz.getConstructor(String.class, Throwable.class).newInstance(msg, null);
+try {
+if (throwable.getClass().equals(exClazz)) {
+return (T) throwable;
+}
+return exClazz.getConstructor(String.class, Throwable.class).newInstance(msg,
+

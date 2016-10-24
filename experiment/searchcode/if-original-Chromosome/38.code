@@ -1,0 +1,10 @@
+super(generator);
+}
+
+@Override
+public Chromosome apply(Chromosome... chromosomes) {
+final Chromosome original = chromosomes[0];
+final Chromosome mutated = new Chromosome(original);
+
+int index = rGen.nextInt(mutated.size());
+

@@ -1,0 +1,8 @@
+//*  CNST1 = 9/16
+//*
+//*  =====================================================================
+//*
+//*     .. Parameters ..
+double CNST1, CNST2, CNST3; //DOUBLE PRECISION   CNST1, CNST2, CNST3
+{  CNST1 = 0.5630D; CNST2 = 1.010D; CNST3 = 1.050D; } //PARAMETER          ( CNST1 = 0.5630D0, CNST2 = 1.010D0,CNST3 = 1.050D0 )
+

@@ -1,0 +1,8 @@
+return null;
+}
+Comparable columnKey = (Comparable) this.columnKeys.get(column);
+if (columnKey == null || rowData.getIndex(columnKey) < 0) {
+ParamChecks.nullNotPermitted(columnKey, &quot;columnKey&quot;);
+int row = this.rowKeys.indexOf(rowKey);
+if (row < 0) {
+

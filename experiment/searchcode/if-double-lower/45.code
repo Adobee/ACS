@@ -1,0 +1,11 @@
+public class UniformDistribution extends AbstractDistributionProposal implements DistributionPrior{
+
+private double lower;
+private double upper;
+public double getLogPrior(double x) {
+if (x>lower &amp;&amp; x<upper){
+return logPrior;
+}
+else{
+return Double.NEGATIVE_INFINITY;
+

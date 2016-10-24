@@ -1,0 +1,10 @@
+private static Map values = new HashMap();
+
+public static StringValue valueOf(String value) {
+if(value == null) value = &quot;<null>&quot;;
+value = value.intern();
+StringValue ret = (StringValue)values.get(value);
+
+if(ret == null) {
+ret = new StringValue(value);
+

@@ -1,0 +1,8 @@
+if (original instanceof Class) {
+Class clazz = (Class) original;
+boolean isAssignable = true;
+for (Class val : anno.value()) {
+isAssignable = isAssignable &amp;&amp; val.isAssignableFrom(clazz);
+}
+return isAssignable ? InvocationAdapters.OK
+

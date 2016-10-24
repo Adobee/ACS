@@ -1,0 +1,14 @@
+private String name;
+private double weight;
+
+
+public Street(double weight)
+{
+this.weight = weight;
+name = &quot;&quot;;
+}
+
+public Street(String name, double weight)
+{
+this.name = name;
+

@@ -1,0 +1,9 @@
+public class EntityDataOutput implements EntityOutput {
+private final DataOutput out;
+
+public EntityDataOutput(DataOutput out) {
+public void writePerson(Person person) throws IOException {
+out.writeBoolean(person.getName() != null);
+if (person.getName() != null) {
+out.writeUTF(person.getName());
+

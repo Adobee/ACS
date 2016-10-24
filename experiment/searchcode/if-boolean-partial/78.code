@@ -1,0 +1,8 @@
+return partialResults;
+}
+
+public boolean isHealthy() {
+for ( HealthCheck.Result partialResult: getPartialResults() ) {
+if ( !partialResult.isHealthy() ) {
+return false;
+

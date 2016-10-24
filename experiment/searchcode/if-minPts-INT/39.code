@@ -1,0 +1,7 @@
+public void buildClusters(SetOfPoints setOfPoints, int minPts) {
+int clusterId = nextId(Point.NOISE);
+
+for (Point point : setOfPoints) {
+if (point.getClusterId() == Point.UNCLASSIFIED) {
+if (expandCluster(setOfPoints, point, clusterId, minPts))
+

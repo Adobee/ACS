@@ -1,0 +1,8 @@
+* redundant buckets, satisfy redundancy, move buckets, and move primaries.
+*
+* This is the most commonly used director.
+if(!attemptedOperation &amp;&amp; this.movePrimaries) {
+attemptedOperation = movePrimariesDirector.nextStep();
+}
+if(!attemptedOperation) {
+

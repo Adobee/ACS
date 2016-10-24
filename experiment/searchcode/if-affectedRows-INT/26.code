@@ -1,0 +1,7 @@
+String sql = &quot;insert into user (audit_status, user_name, msg_email, user_id, type_id, user_level, company_id, user_encode, create_time)&quot;
++ &quot; values (?, ?, ?, ?, ?, ?, ?, ?, ?)&quot;;
+int affectedRows = jdbcTemplate.update(sql,
+public boolean deleteUser(User user) {
+String sql = &quot;delete from user where user_id = ?&quot;;
+int affectedRows = jdbcTemplate.update(sql, user.getUserId());
+

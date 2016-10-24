@@ -1,0 +1,10 @@
+public Boolean apply(WebDriver d) {
+String title = d.getTitle();
+if (title == null) {
+return false;
+}
+if (expectedTitle == null) {
+return false;
+}
+return title.trim().equalsIgnoreCase(expectedTitle.trim());
+

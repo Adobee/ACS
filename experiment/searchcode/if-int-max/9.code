@@ -1,0 +1,12 @@
+class LCS {
+public int lcs (int[] A) {
+if (A == null) {
+return 0;
+}
+int len = A.length;
+for (int i = 1; i < len; i++) {
+f[i] = 1;
+for (int j = 0; j < i; j++) {
+if (A[j] <= A[i]) {
+f[i] = Math.max(f[i], f[j] + 1);
+

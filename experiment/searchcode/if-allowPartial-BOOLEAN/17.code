@@ -1,0 +1,6 @@
+public EntityIdentifier[] searchForEntities(String query, int method) throws GroupsException {
+boolean allowPartial = true;
+final List<IPortletDefinition> definitions = this.portletDefinitionRegistry.searchForPortlets(query,
+allowPartial);
+if (log.isDebugEnabled()) {
+

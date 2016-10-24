@@ -1,0 +1,9 @@
+return top;
+}
+
+@Override
+public BooleanLatticeElement equalOperation(StringLatticeElement other) {
+if(other.equals(bottom)) return BooleanLatticeElement.bottom;
+
+if(other.containedIn(notUIntStringTop)) return BooleanLatticeElement.boolFalse;
+

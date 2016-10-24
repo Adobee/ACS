@@ -1,0 +1,11 @@
+* @param fail Whether to throw if not equal
+* @return boolean true if all nodes in the subtree are equal
+*/
+@Override public boolean equalsDeep(SqlNode node, boolean fail) {
+return allowPartial == null
+|| allowPartial.booleanValue();
+}
+
+@Override
+public void validate(SqlValidator validator, SqlValidatorScope scope) {
+

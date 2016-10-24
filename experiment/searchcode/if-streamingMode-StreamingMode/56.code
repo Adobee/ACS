@@ -1,0 +1,8 @@
+import org.apache.flink.configuration.ConfigConstants;
+import org.apache.flink.configuration.Configuration;
+import org.apache.flink.runtime.StreamingMode;
+// check that we run this test only if the java command
+// is available on this machine
+if (javaCommand == null) {
+System.out.println(&quot;---- Skipping TaskManagerProcessReapingTest : Could not find java executable ----&quot;);
+

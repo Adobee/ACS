@@ -1,0 +1,8 @@
+import org.jfree.chart.plot.PlotOrientation;
+import org.jfree.chart.plot.XYPlot;
+import org.jfree.data.xy.XYSeries;
+import org.jfree.data.xy.XYSeriesCollection;
+public void setXRange(double lower, double upper) {
+XYPlot xyPlot = (XYPlot) chart.getPlot();
+NumberAxis xAxis = (NumberAxis) xyPlot.getDomainAxis();
+

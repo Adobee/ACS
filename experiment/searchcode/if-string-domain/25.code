@@ -1,0 +1,9 @@
+return false;
+}
+DomainInventoryPatternCandidateByGeographicalBasedDomain other = (DomainInventoryPatternCandidateByGeographicalBasedDomain) obj;
+if (domain == null) {
+if (other.domain != null) {
+return false;
+}
+} else if (!domain.equals(other.domain)) {
+

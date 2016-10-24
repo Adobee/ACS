@@ -1,0 +1,16 @@
+this(&quot;1/1&quot;);
+}
+
+Fraction(String s)
+{
+String[] output = s.split(&quot;/&quot;);
+if (Integer.parseInt(output[1]) == 0)
+b = Integer.parseInt(output[1]);
+reduce(this);
+}
+}
+
+private Fraction reduce(Fraction f)
+{
+int greatest = (f.a >= f.b? f.a : f.b);
+

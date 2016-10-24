@@ -1,0 +1,9 @@
+String Query1 = &quot;Select AmountDeposited from userprofile where UserID=&#39;&quot;+UserID+&quot;&#39; and RegID=&#39;&quot;+RegID+&quot;&#39; and MemberType=&#39;Blocked&#39;&quot;;
+System.out.println(Query1);
+rs = stmt.executeQuery(Query1);
+if(rs.next()){
+if(AmountDeposited==5000){
+MemberType=&quot;Silver&quot;;
+}else if(AmountDeposited==10000){
+MemberType=&quot;Gold&quot;;
+

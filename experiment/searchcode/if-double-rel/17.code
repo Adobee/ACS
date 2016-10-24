@@ -1,0 +1,14 @@
+public DoubleSpace() {}
+
+public DoubleSpace(A rel){
+if(rel!=null){
+this.rel = rel;
+if((basePoint = rel.basePoint())==null) isEmpty = true;
+public boolean isOpen() {
+if(isEmpty) return true;
+return rel.isClosed()?false:true;
+}
+
+
+public DoubleSpace<A> union(DoubleSpace<A> another) {return new DoubleSpace<A>(rel.union(another.rel));}
+

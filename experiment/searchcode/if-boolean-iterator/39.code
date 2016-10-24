@@ -1,0 +1,16 @@
+iterator.add(e);
+}
+
+@Override
+public boolean hasNext() {
+if (reverse) {
+return iterator.hasPrevious();
+}
+return iterator.hasNext();
+}
+
+@Override
+public boolean hasPrevious() {
+if (reverse) {
+return iterator.hasNext();
+

@@ -1,0 +1,10 @@
+private DispatchQueue getDispatchQueue(PriorityBlockingQueue<DispatchQueue> blockerQueue){
+DispatchQueue queue = blockerQueue.peek();
+if (queue == null ||blockerQueue.size() <= MAX_QUEUE_SIZE || queue.size() >= MAX_QUEUE_TOLERANCE){
+private int priorityForQueue(PriorityBlockingQueue<DispatchQueue>queue){
+if(queue == defaultQueues){
+return Thread.NORM_PRIORITY;
+}
+
+if(queue == highQueues){
+

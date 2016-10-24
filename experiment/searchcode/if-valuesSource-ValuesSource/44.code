@@ -1,0 +1,7 @@
+long estimatedBucketCount = estimatedBucketCount(valuesSource, parent);
+
+if (valuesSource instanceof ValuesSource.Bytes) {
+ExecutionMode execution = null;
+// In some cases, using ordinals is just not supported: override it
+if (!(valuesSource instanceof ValuesSource.Bytes.WithOrdinals)) {
+

@@ -1,0 +1,13 @@
+throw new NullPointerException(&quot;String is null&quot;);
+}
+int colonPos = s.indexOf (&quot;:&quot;);
+
+for (char letter : s.toCharArray()) {
+if (letter == &#39; &#39;) {
+throw new IllegalArgumentException(&quot;Space in time format&quot;);
+}
+}
+
+if (colonPos == 0) {
+throw new IllegalArgumentException(&quot;Bad time formatting!&quot;);
+

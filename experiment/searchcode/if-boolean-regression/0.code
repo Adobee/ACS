@@ -1,0 +1,9 @@
+public T updateRegression(Matrix addedTrainX, Matrix addedTrainY,
+boolean downDate) {
+T result = regression.updateRegression(addedTrainX, addedTrainY);
+log.debug(&quot;Current training sample count &quot;
++ regression.getTrainingSampleCount() + &quot; Window size &quot;
++ windowSize);
+
+if (downDate &amp;&amp; regression.getTrainingSampleCount() > windowSize) {
+

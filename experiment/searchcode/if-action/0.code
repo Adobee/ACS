@@ -1,0 +1,11 @@
+@Override
+public Action getAction(String actionName) {
+if(actionName == null) {
+actionName = &quot;/&quot;;
+}
+Action action = null;
+
+if(actionName.equals(&quot;view&quot;)) {
+action = new ViewAction();
+} else if(actionName.equals(&quot;modify&quot;)) {
+

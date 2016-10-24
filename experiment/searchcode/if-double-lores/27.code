@@ -1,0 +1,11 @@
+if (config.contains(&quot;name&quot;)) {
+setName(config.getString(&quot;name&quot;));
+}
+
+if (config.contains(&quot;lores&quot;)) {
+for (String lore : config.getStringList(&quot;lores&quot;)) {
+String operation = config.getString(prefix + &quot;operation&quot;);
+double amount = config.getDouble(prefix + &quot;amount&quot;);
+
+if (!EnumUtil.isValidEnum(Attribute.class, type) || !EnumUtil.isValidEnum(Operation.class, operation)) {
+

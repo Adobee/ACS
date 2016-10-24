@@ -1,0 +1,9 @@
+this.criterion = criterion;
+}
+
+public Project getProject() {
+if(project == null){
+Vote thisVote = findByCriterionAndUser(criterion, user);
+if(thisVote == null) {
+Vote vote = new Vote();
+

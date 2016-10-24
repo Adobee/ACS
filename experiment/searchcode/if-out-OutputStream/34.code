@@ -1,0 +1,11 @@
+throws IOException {
+OutputStream out = socket.getOutputStream();
+if (value != null) {
+out.write(value.getBytes());
+out.flush();
+}
+if (close) {
+out.close();
+socket.close();
+System.out.println(&quot;SocketIOUtil socket Close.&quot;);
+

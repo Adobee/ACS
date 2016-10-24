@@ -1,0 +1,10 @@
+public Object readMap(AbstractInput in) throws IOException {
+String value = null;
+
+while (!in.isEnd()) {
+String key = in.readString();
+
+if (key.equals(&quot;value&quot;))
+value = in.readString();
+else
+

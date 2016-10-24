@@ -1,0 +1,19 @@
+System.out.println(new A().run(3, false));
+}
+}
+
+class A {
+public boolean run(int val, boolean a) {
+boolean ret;
+if (0 < val)
+ret = this.negate(a);
+else
+ret = a;
+return ret;
+}
+
+public boolean negate(boolean val) {
+return !val;
+}
+}
+

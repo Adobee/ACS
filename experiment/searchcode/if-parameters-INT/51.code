@@ -1,0 +1,7 @@
+public class Matern extends CovarianceFunction{
+public DoubleMatrix parameters;
+public int numParams;
+public DoubleMatrix computeSingleValue(DoubleMatrix parameters, DoubleMatrix X){
+if(parameters.columns!=1 || parameters.rows!=numParams)
+throw new IllegalArgumentException(&quot;Wrong number of hyperparameters, &quot;+parameters.rows+&quot; instead of &quot;+numParams);
+

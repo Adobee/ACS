@@ -1,0 +1,8 @@
+private final boolean ignoreCase;
+
+private final boolean removeTrailing;
+
+public StopTokenFilterFactory(IndexSettings indexSettings, Environment env, String name, Settings settings) {
+this.removeTrailing = settings.getAsBoolean(&quot;remove_trailing&quot;, true);
+this.stopWords = Analysis.parseStopWords(env, settings, StopAnalyzer.ENGLISH_STOP_WORDS_SET, ignoreCase);
+

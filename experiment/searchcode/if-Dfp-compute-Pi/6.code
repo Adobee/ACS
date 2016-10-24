@@ -1,0 +1,13 @@
+/* First reduce the argument to the range of +/- PI */
+Dfp x = a.remainder(pi.multiply(2));
+
+/* if x < 0 then apply identity sin(-x) = -sin(x) */
+* 0 < x < pi/2
+*/
+
+if (x.greaterThan(pi.divide(2))) {
+x = pi.subtract(x);
+}
+
+Dfp y;
+

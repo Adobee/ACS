@@ -1,0 +1,18 @@
+import org.bukkit.entity.Player;
+
+public class Zone {
+int lowerX;
+int upperX;
+int lowerY;
+int upperY;
+int lowerZ;
+int upperZ;
+
+Zone(
+int lowerX,
+int upperX,
+int lowerY,
+int upperY,
+int lowerZ,
+int upperZ
+

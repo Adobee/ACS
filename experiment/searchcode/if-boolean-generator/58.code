@@ -1,0 +1,6 @@
+cachedGenerator.add(new BooleanFieldValueGenerator());
+cachedGenerator.add(new ByteFieldValueGenerator());
+public FieldValueGenerator getCachedGenerator(Class<?> dataType) {
+for (FieldValueGenerator generator: cachedGenerator) {
+if (generator.isMatchType(dataType)) {
+

@@ -1,0 +1,11 @@
+public void setDomainAxis(int index, ValueAxis axis, boolean notify) {
+ValueAxis existing = getDomainAxis(index);
+if (existing != null) {
+// existing.removeChangeListener(this);
+// --+--
+// 2 | 3
+boolean somethingToDraw = false;
+
+ValueAxis xAxis = getDomainAxis();
+if (xAxis == null) { // we can&#39;t draw quadrants without a valid x-axis
+

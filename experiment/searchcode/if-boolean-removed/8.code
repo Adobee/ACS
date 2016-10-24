@@ -1,0 +1,14 @@
+private Boolean removed = false;
+
+
+public Entity(Level level) {
+this.level = level;
+level.addEntity(this);
+}
+
+public void update() {
+if (isRemoved()) level.removeEntity(this);
+}
+
+public void remove(){
+

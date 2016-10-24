@@ -1,0 +1,7 @@
+public AbstractDistanceScoreFunction(double userSuppiedScale, double decay, double offset, DecayFunction func) {
+super(CombineFunction.MULT);
+if (userSuppiedScale <= 0.0) {
+this.scale = func.processScale(userSuppiedScale, decay);
+this.func = func;
+if (offset < 0.0d) {
+

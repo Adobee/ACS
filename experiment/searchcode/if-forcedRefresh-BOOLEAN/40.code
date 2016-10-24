@@ -1,0 +1,9 @@
+@Override
+protected List<String> doInBackground(String... params) {
+boolean forcedRefresh = false;
+for (String s : params)
+if (s.equals(&quot;forcerefresh&quot;))
+forcedRefresh = true;
+try {
+if (forcedRefresh) {
+

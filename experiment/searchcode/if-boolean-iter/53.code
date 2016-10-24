@@ -1,0 +1,18 @@
+this.factor = factor;
+}
+
+public void reset() {
+iter.reset();
+counter = 0;
+}
+
+public boolean isDone() {
+return iter.isDone();
+}
+
+public void advance() {
+++counter;
+if(counter == factor) {
+counter = 0;
+iter.advance();
+

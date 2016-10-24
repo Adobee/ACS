@@ -1,0 +1,8 @@
+private double mixMutationRate = 0.3;
+private double mixMutationAmount = 0.1;
+private double motherInheritRate = 0.5;
+else return random.nextDouble();
+}
+else if (random.nextFloat() < mixMutationRate) {
+double mutationMix = random.nextDouble() + random.nextGaussian() * mixMutationAmount;
+

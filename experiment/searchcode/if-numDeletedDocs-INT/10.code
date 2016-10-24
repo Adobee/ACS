@@ -1,0 +1,8 @@
+final int maxDoc = reader.maxDoc();
+final int numDeletes = reader.numDeletedDocs();
+final int numDocs = maxDoc - numDeletes;
+int del = 0;
+for (int i = 0; i < maxDoc; ++i) {
+if (!liveDocs.get(i)) {
+++del;
+

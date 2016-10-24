@@ -1,0 +1,11 @@
+import java.awt.geom.Point2D;
+
+public class Polygon extends AbstractFigure {
+
+protected int nbPoints;
+protected int[] lx;
+public void setLastPoint(Point2D p) {
+int x = (int) p.getX();
+int y = (int) p.getY();
+if(nbPoints<2 || ((x!=lx[nbPoints])||(y!=ly[nbPoints-1]))){
+

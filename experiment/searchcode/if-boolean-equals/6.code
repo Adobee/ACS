@@ -1,0 +1,11 @@
+public void setMark(String mark, int x, int y) throws InvalidPositionException {
+if (!(mark.equals(&quot;X&quot;) || mark.equals(&quot;O&quot;))) {
+board[x][y] = mark;
+}
+
+public boolean hasWinner() {
+boolean hasWinner = false;
+
+if (
+(board[0][0].equals(board[0][1]) &amp;&amp; board[0][1].equals(board[0][2]) &amp;&amp; !board[0][0].equals(&quot;&quot;) &amp;&amp; !board[0][1].equals(&quot;&quot;) &amp;&amp; !board[0][2].equals(&quot;&quot;)) ||
+

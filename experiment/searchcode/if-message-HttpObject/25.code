@@ -1,0 +1,12 @@
+public HttpResponse clientToProxyRequest(HttpObject httpObject) {
+
+if ( httpObject instanceof HttpRequest ) {
+return super.clientToProxyRequest( httpObject );
+
+}
+
+@Override
+public HttpObject proxyToClientResponse(HttpObject httpObject) {
+
+if ( httpObject instanceof HttpResponse ) {
+

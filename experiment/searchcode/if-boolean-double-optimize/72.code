@@ -1,0 +1,8 @@
+public void testIfStatementToBoolean_NotOptimization() throws Exception {
+optimize(&quot;void&quot;, &quot;if (!b) i = 1;&quot;).intoString(
+&quot;return b ? 2 : 1;&quot;);
+}
+
+public void testIfStatementToBoolean_ReturnLifting() throws Exception {
+optimize(&quot;int&quot;, &quot;if (b) return 1; return 2;&quot;).into(
+

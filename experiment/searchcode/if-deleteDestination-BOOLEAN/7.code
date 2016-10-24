@@ -1,0 +1,7 @@
+public @ResponseBody ResponseEntity<List<Destination>> getDestinations() {
+logger.info(&quot;Start getDestinations&quot;);
+if(destinationDAO.isDestinationDataEmpty()){
+public @ResponseBody ResponseEntity<Destination> deleteDestination(@PathVariable(&quot;id&quot;) String destinationId) {
+logger.info(&quot;Start deleteDestination&quot;);
+if(!destinationDAO.isDestinationExists(destinationId)) {
+

@@ -1,0 +1,15 @@
+package dozer.service;
+
+import org.dozer.Mapper;
+
+public class MyDozerMapperImpl implements MyDozerMapper {
+public Object mapper(Object src, Object dest) {
+if (src != null) {
+return mapper.map(src, (Class) dest);
+} else {
+return null;
+}
+
+}
+}
+

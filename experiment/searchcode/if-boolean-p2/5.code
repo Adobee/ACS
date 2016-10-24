@@ -1,0 +1,5 @@
+double disSP(P p1, P p2, P q) {
+if (p2.sub(p1).dot(q.sub(p1)) < EPS) return q.sub(p1).abs();
+if (p1.sub(p2).dot(q.sub(p2)) < EPS) return q.sub(p2).abs();
+return disLP(p1, p2, q);
+

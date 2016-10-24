@@ -1,0 +1,11 @@
+package org.ninit.models.bool;
+
+import java.io.IOException;
+
+import org.apache.lucene.search.Scorer;
+protected AbstractBooleanScorer(Similarity similarity, Scorer scorer[])
+throws IOException {
+super(similarity);
+this.subScorer = scorer;
+if (scorer != null &amp;&amp; scorer.length > 0)
+

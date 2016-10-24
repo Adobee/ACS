@@ -1,0 +1,9 @@
+private Consumer<String> apply =  (value) -> {
+if (! isLastPulledValue(value)) {
+this.externalValue 	= value;
+this.accessCount 	= 0;
+String pushedValue = getValue(externalEvent);
+if (! isLastPulledValue(pushedValue)) {
+this.externalValue 	= pushedValue;
+this.accessCount 	= 0;
+

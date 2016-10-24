@@ -1,0 +1,8 @@
+double d = (a + c) / 2.0;
+double e = (b + c) / 2.0;
+
+double Q1 = h/6  * (f.function(a) + 4*f.function(c) + f.function(b));
+double Q2 = h/12 * (f.function(a) + 4*f.function(d) + 2*f.function(c) + 4*f.function(e) + f.function(b));
+
+if (Math.abs(Q2 - Q1) <= EPSILON)
+

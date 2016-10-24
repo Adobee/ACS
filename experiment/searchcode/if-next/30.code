@@ -1,0 +1,13 @@
+public class nToLast {
+
+/**
+* @param args
+*/
+public static int nthTolast(Node head, int k){
+if(head == null)
+return 0;
+
+int i = nthTolast(head.next,k)+1;
+if(i == k){
+System.out.println(head.data);
+

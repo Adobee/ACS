@@ -1,0 +1,12 @@
+int actualLengthFieldOffset = buffer.readerIndex() + lengthFieldOffset;
+long frameLength;
+switch (lengthFieldLength) //字符串长度占用的字节数
+{
+case 1:
+frame.writeBytes(buffer, index, length);
+return frame;
+}
+
+private void fail(ChannelHandlerContext ctx, long frameLength) {
+if (frameLength > 0) {
+

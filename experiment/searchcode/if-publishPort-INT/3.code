@@ -1,0 +1,7 @@
+int otherBoundPort = randomIntBetween(9200, 9300);
+
+int publishPort = resolvePublishPort(Settings.builder().put(&quot;http.publish_port&quot;, 9080).build(),
+assertThat(&quot;Publish port should be derived from matching wildcard address&quot;, publishPort, equalTo(boundPort));
+
+if (NetworkUtils.SUPPORTS_V6) {
+

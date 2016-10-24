@@ -1,0 +1,9 @@
+package com.hackzurich.homecraft;
+
+public final class Normalizer {
+
+private double fromMin;
+private double fromMax;
+private double toMin;
+private double toMax;
+

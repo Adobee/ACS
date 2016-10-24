@@ -1,0 +1,10 @@
+private <D> OrderFinder(final D orderService, DfpVersion dfpVersion) {
+
+this.dfpVersion = dfpVersion;
+
+checkNotNull(orderService);
+if (DfpServiceValidator.isValidOrderService(orderService, this.dfpVersion)) {
+StatementBuilder<S> statementBuilder;
+
+if (DfpDomainValidator.isValidStatementBuilder(dfpStatementBuilder, this.dfpVersion)) {
+

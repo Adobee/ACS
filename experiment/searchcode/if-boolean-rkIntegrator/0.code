@@ -1,0 +1,10 @@
+import Level.EntityContainer;
+import Level.Level;
+import Util.GameTimer;
+import Util.RKIntegrator;
+import Util.Vector2D;
+private EntityComponents mOtherEntity;
+
+private boolean isMovable(int eID) {
+return (mContainer.getEntityMask(eID) &amp; EntityContainer.ENTITY_MOVABLE) != 0;
+

@@ -1,0 +1,11 @@
+import java.util.*;
+
+public class BridgeCrossing {
+public int minTime(int[] times) {
+Arrays.sort(times);
+int count = 0, n = times.length;
+
+while(true) {
+if(n > 3) {
+int a = 2 * times[1] + times[0] + times[n - 1];
+

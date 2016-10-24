@@ -1,0 +1,10 @@
+package framework;
+
+import java.util.Random;
+
+public class RandomGenerator {
+static private RandomGenerator instance = null;
+public static RandomGenerator getInstance() {
+if (RandomGenerator.instance == null) {
+RandomGenerator.instance = new RandomGenerator(System.currentTimeMillis());
+

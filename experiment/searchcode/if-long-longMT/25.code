@@ -1,0 +1,11 @@
+// we use a long masked by 0xffffffffL as a poor man unsigned int
+long longMT = seed;
+mt[0]= (int) longMT;
+for (mti = 1; mti < N; ++mti) {
+// See Knuth TAOCP Vol2. 3rd Ed. P.106 for multiplier.
+mt[mti]= (int) longMT;
+}
+}
+
+/** Reinitialize the generator as if just built with the given int array seed.
+

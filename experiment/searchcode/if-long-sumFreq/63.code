@@ -1,0 +1,9 @@
+public void addValue(Comparable<?> v){
+Comparable<?> obj = v;
+if (v instanceof Integer) {
+obj = Long.valueOf(((Integer) v).longValue());
+public double getPct(Comparable<?> v) {
+final long sumFreq = getSumFreq();
+if (sumFreq == 0) {
+return Double.NaN;
+

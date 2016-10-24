@@ -1,0 +1,6 @@
+for (TrustManager trustManager : trustManagerFactory.getTrustManagers()) {
+
+if (trustManager instanceof X509TrustManager) {
+X509TrustManager x509TrustManager = (X509TrustManager) trustManager;
+return x509TrustManager;
+

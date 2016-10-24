@@ -1,0 +1,7 @@
+public void editorActivated(Editor editor) {
+if (editor == null) {
+setSelectedIndex(-1);
+Editor editor = editorManager.getEditor(index);
+JEditor jEditor = jEditorMap.get(editor);
+if (jEditor.canClose()) {
+

@@ -1,0 +1,9 @@
+private static final ESLogger logger = Loggers.getLogger(JNANatives.class);
+
+// Set to true, in case native mlockall call was successful
+static boolean LOCAL_MLOCKALL = false;
+static boolean LOCAL_SECCOMP = false;
+
+static void tryMlockall() {
+int errno = Integer.MIN_VALUE;
+

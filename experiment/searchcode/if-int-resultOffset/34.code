@@ -1,0 +1,12 @@
+final int len = value.length;
+
+/* Now check if there are any characters that need to be changed. */
+firstUpper++;
+}
+}
+return this;
+}
+
+char[] result = new char[len];
+int resultOffset = 0;  /* result may grow, so i+resultOffset
+

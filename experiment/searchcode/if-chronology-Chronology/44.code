@@ -1,0 +1,8 @@
+public Chronology getChronology(Object paramObject, Chronology paramChronology)
+{
+if (paramChronology == null)
+paramChronology = DateTimeUtils.getChronology(((ReadableInstant)paramObject).getChronology());
+Object localObject = ((ReadableInstant)paramObject).getChronology();
+if (localObject == null)
+localObject = ISOChronology.getInstance(paramDateTimeZone);
+

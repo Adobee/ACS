@@ -1,0 +1,11 @@
+for(int frame = 0; frame < 10; frame++) {
+int frameScore = 0;
+if ( isStrike(frameStart) ) {
+frameScore = 10 + rolls[frameStart+1] + rolls[frameStart+2];
+return sum;
+}
+
+private boolean isSpare(int frameStart) {
+if ( isStrike(frameStart) ) return false;
+return rolls[frameStart] + rolls[frameStart+1] == 10;
+

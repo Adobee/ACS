@@ -1,0 +1,7 @@
+*      getIntersect method returns a double[] array with the coordinates of the intersected point.
+*      If the value of array[2] is 1, then the intersected point is between the line segments of
+public double[] getIntersect(final double x1,final double y1,final double x2,final double y2,final double x3, final double y3, final double x4, final double y4){
+
+
+// Check if lines are parallel
+

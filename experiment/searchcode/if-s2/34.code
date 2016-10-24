@@ -1,0 +1,17 @@
+public StackWithMin(){
+this.s2 = new Stack();
+}
+
+public void push(int d){
+if(s2.peek() == -1){
+s2.push(d);
+}
+else if(d < s2.peek()){
+s2.push(d);
+}
+super.push(d);
+}
+
+public int pop(){
+int d= super.pop();
+

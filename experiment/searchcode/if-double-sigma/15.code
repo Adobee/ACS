@@ -1,0 +1,14 @@
+public SigmoidMembershipFunction(double m,double sigma){
+super(m,sigma);
+}
+
+@Override
+public double f(double x,double sigma) {
+if (sigma == 0)
+sb.append(&quot;]&quot;);
+return sb.toString();
+}
+
+private double dfm(double x, double sigma) {
+if (sigma != 0) {
+

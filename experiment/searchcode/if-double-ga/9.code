@@ -1,0 +1,10 @@
+package org.perez.ga.examples;
+
+import org.perez.ga.core.Genotipo;
+import org.perez.ga.core.IFitness;
+Punto2D v = new Punto2D(g);
+double x = v.x;
+double y = v.y;
+int r = 0;
+if(2*x + 3*y <= 12.0)
+

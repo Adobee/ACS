@@ -1,0 +1,11 @@
+import luv.values.generators.ValueGenerator;
+
+public class PojoNovaFractal extends ValueGenerator {
+
+int maxIterations = 50;
+if (name.equals(&quot;maxIterations&quot;)) {
+maxIterations = (int) value;
+}
+}
+}
+

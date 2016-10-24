@@ -1,0 +1,7 @@
+public Map<String, String> mapper = new HashMap<String, String>();
+
+public void updatePath(String fieldName, String xPath){
+mapper.put(fieldName, xPath);
+public String getXPath(String fieldName) throws Exception{
+if(fieldName == null|| fieldName.equals(&quot;&quot;)){
+

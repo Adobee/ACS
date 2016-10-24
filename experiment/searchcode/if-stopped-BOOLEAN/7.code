@@ -1,0 +1,12 @@
+private int cooldown;
+private long start = 0;
+private boolean stopped = false;
+public Cooldown(int cooldown) {
+this.cooldown = cooldown;
+start = System.currentTimeMillis();
+}
+public boolean isOver() {
+if (!stopped) {
+long end = System.currentTimeMillis();
+return (end - start) > cooldown;
+

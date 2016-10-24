@@ -1,0 +1,7 @@
+public class UniformCrossover extends AbstractGeneticCrossover {
+
+private final double crossoverRatio;
+final Double[] pair = new Double[2];
+if (this.random.nextDouble() > this.crossoverRatio) {
+pair[0] = d2;
+

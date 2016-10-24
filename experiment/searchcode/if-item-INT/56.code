@@ -1,0 +1,14 @@
+public class SearchItem implements Comparable
+{
+private Item item;
+private int frequencyOfItem;
+
+public SearchItem(Item initItem, int initFrequency)
+this.item = item;
+}
+
+/**
+* @return the frequencyOfItem
+*/
+public int getFrequencyOfItem() {
+

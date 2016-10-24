@@ -1,0 +1,12 @@
+import java.util.List;
+
+public class ObjectPool<T> {
+
+private ObjectFactory<T> factory;
+private int poolSize = 10;
+
+private List<T> pool;
+
+public ObjectPool(ObjectFactory<T> factory, int poolSize) {
+this.factory = factory;
+

@@ -1,0 +1,5 @@
+//ttp://maps.googleapis.com/maps/api/geocode/json?latlng=&quot;+Double.toString(lat)+&quot;,&quot;+Double.toString(lng)+&quot;&amp;sensor=true&amp;language=&quot;+Locale.getDefault().getCountry(), lat, lng);
+JSONObject jsonObj = parser_JsonClass.getJSONfromURL(&quot;http://maps.googleapis.com/maps/api/geocode/json?latlng=&quot; + Double.toString(lat) + &quot;,&quot;
++ Double.toString(lon) + &quot;&amp;sensor=true&amp;language=&quot;+Locale.getDefault().getCountry());
+String Status = jsonObj.getString(&quot;status&quot;);
+

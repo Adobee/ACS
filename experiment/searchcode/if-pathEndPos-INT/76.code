@@ -1,0 +1,7 @@
+public QueryStringDecoder(String uri, Charset charset, boolean hasPath, int maxParams) {
+if (uri == null) {
+throw new NullPointerException(&quot;getUri&quot;);
+if (hasPath) {
+int pathEndPos = uri.indexOf(&#39;?&#39;);
+if (pathEndPos >= 0 &amp;&amp; pathEndPos < uri.length() - 1) {
+

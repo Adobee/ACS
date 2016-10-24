@@ -1,0 +1,7 @@
+public static boolean checkAlignment(List<TimeSeries> timeSeries) {
+if (timeSeries.size() == 0) return true;
+int length = timeSeries.get(0).getValues().length;
+
+for(TimeSeries ts : timeSeries) {
+if (ts.getFrom() != from || ts.getTo() != to || ts.getStep() != step || ts.getValues().length != length) return false;
+

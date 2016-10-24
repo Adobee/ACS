@@ -1,0 +1,11 @@
+this.splitState = StopWatch.SplitState.UNSPLIT;
+}
+
+public void start() {
+if (this.runningState == StopWatch.State.STOPPED) {
+this.splitState = StopWatch.SplitState.UNSPLIT;
+}
+
+public void split() {
+if (this.runningState != StopWatch.State.RUNNING) {
+

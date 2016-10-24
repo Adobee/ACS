@@ -1,0 +1,8 @@
+Rectangle rectangle = (Rectangle) constraint;
+snapToGrid(rectangle);
+FlexRectangle fr = new FlexRectangle();
+fr.setRectangle(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
+protected Object translateToModelConstraint(Object figureConstraint) {
+if (figureConstraint instanceof FlexRectangle) {
+FlexRectangle fr = (FlexRectangle) figureConstraint;
+

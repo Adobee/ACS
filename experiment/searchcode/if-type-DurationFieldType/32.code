@@ -1,0 +1,6 @@
+public static synchronized PeriodType forFields(DurationFieldType[] types) {
+if (types == null || types.length == 0) {
+PeriodType type = standard();
+List list = new ArrayList(Arrays.asList(types));
+if (list.remove(DurationFieldType.years()) == false) {
+

@@ -1,0 +1,9 @@
+Listing listing = new Listing();
+
+// deserializacja
+boolean loaded = false;
+ObjectInputStream ois = new ObjectInputStream(new FileInputStream(sciezka_do_pliku));
+if (args[0].compareToIgnoreCase(&quot;-ls&quot;) == 0){
+boolean showOnly = args.length > 2 &amp;&amp; args[2].compareToIgnoreCase(&quot;-so&quot;) == 0;
+listing.setPath(args[1]);
+

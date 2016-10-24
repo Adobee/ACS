@@ -1,0 +1,12 @@
+public SimpleCacheWrapper(Cache cache) {
+super();
+this.cache = cache;
+}
+
+public boolean canCache(){
+public <T> T get(String key){
+if(!canCache())
+return null;
+ValueWrapper value = cache.get(key);
+if(value==null)
+

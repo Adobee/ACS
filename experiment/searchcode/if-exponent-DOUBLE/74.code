@@ -1,0 +1,15 @@
+public static double power(double base, int exponent) throws Exception {
+if(exponent < 0) {
+throw new Exception(&quot;指数只能为非负&quot;);
+}
+
+if (exponent == 0) {
+return 1d;
+}
+
+if (exponent == 1) {
+return base;
+}
+
+double result = power(base, exponent >> 1);
+

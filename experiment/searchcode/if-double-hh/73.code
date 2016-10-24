@@ -1,0 +1,9 @@
+public static double toDegreesD (boolean negative, int DD, int MM, double SS) throws RTException{
+
+if (MM < 0 || SS < 0) throw new RTException(&quot;Invalid negative number.&quot;);
+if (negative) DD = Math.abs(DD);
+
+double result = ((SS/60 + MM)/60 + DD);
+
+if (negative) result = result * -1;
+

@@ -1,0 +1,11 @@
+private final double startPrice;
+private double change;
+
+public Price(final double initial, final Promotion promotion) {
+this.promotion = promotion;
+}
+
+private void validateInitial(final double initial_price) {
+if (initial_price <= 0)
+throw new IllegalArgumentException(&quot;Price must be greater than 0&quot;);
+

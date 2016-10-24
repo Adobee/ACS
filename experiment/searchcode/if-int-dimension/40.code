@@ -1,0 +1,10 @@
+package grid;
+import exceptions.DimensionException;
+
+public class Dimension {
+private int x;
+* @throws DimensionException: the x or y value was smaller than 0
+*/
+private void setDimension(int x, int y) throws DimensionException{
+if (Math.min(x, y)<0){
+

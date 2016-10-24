@@ -1,0 +1,7 @@
+logger.debug(&quot;LOWER: &quot;, throwable);
+if( throwable instanceof RuntimeException ) {
+return (RuntimeException)throwable;
+} else {
+RuntimeException ex = new RuntimeException( throwable );
+ex.fillInStackTrace();
+

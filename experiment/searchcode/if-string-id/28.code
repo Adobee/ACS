@@ -1,0 +1,13 @@
+public String getId() {
+return id;
+}
+
+@Override
+public boolean equals(Object obj) {
+String o = null;
+
+if (obj instanceof String) {
+o = (String) obj;
+} else if (obj instanceof LabelID) {
+o = ((LabelID) obj).getId();
+

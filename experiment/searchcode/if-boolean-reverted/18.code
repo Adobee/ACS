@@ -1,0 +1,8 @@
+private final boolean revertedOnly;
+private final Folder folder;
+
+public FolderReadOnlyProblem(Folder folder, Path path) {
+public FolderReadOnlyProblem(Folder folder, Path path, boolean revertedOnly) {
+Reject.ifNull(path, &quot;Path&quot;);
+this.path = path;
+

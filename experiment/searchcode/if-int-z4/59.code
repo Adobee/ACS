@@ -1,0 +1,10 @@
+import java.util.Scanner;
+
+public class Z4 {
+
+public static void main(String[] args) {
+int r = 1;
+
+if(1 < K &amp;&amp; K < N){
+for(int i = 1; i <= K; i++){
+

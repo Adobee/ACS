@@ -1,0 +1,11 @@
+this.outputStream = outputStream == null ? System.out : outputStream;
+}
+
+@Override
+public Void call() throws Exception {
+byte[] buffer = new byte[4096];
+while((l = inputStream.read(buffer)) >= 0){
+outputStream.write(buffer, 0, l);
+}
+if(outputStream != System.out &amp;&amp; outputStream != System.err){
+

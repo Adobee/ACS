@@ -1,0 +1,11 @@
+public class IdentityCloneComparator implements ICloneComparator{
+
+@Override
+public boolean sameInstance(CloneImpl c, CloneImpl cloneInstance) {
+return c.equals(cloneInstance);
+}
+
+@Override
+public boolean sameClass(CloneClassImpl cc1, CloneClassImpl cc2) {
+List<CloneImpl> clones1 = cc1.getClones();
+

@@ -1,0 +1,7 @@
+public Point displayLocation;
+public double[] pixelSize, DisplayOffset;//x and y
+public abstract String getAnnotationAsString(int x, int y);
+public abstract boolean annotated(int x, int y);
+public boolean annotated(int x, int y, String type){
+if(!this.type.equalsIgnoreCase(type)&amp;&amp;!type.contentEquals(&quot;*&quot;)) return false;
+

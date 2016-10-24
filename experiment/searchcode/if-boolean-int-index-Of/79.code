@@ -1,0 +1,13 @@
+throw new java.lang.IndexOutOfBoundsException();
+}
+
+public void open(int i, int j)
+{
+indexChecker(i,j);
+openSites[osIndex] = true;
+
+int ufIndex = indexI * gridN + indexJ + 1;
+if (indexI == 0)
+{
+UF.union(0,  ufIndex);
+

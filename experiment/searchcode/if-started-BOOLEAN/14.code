@@ -1,0 +1,10 @@
+public abstract class State {
+protected boolean mIsStarted = false;
+public synchronized final void start() {
+if(!mIsStarted) {
+mIsStarted = true;
+onStarted();
+}
+}
+public synchronized final void stop() {
+

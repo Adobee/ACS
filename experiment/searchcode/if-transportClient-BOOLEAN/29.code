@@ -1,0 +1,6 @@
+import org.elasticsearch.action.search.SearchResponse;
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.transport.InetSocketTransportAddress;
+GetResponse response = transportClient.prepareGet(&quot;test&quot;, &quot;job&quot;, jobId).execute().actionGet();
+if(response.isExists()){
+

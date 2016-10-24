@@ -1,0 +1,6 @@
+long expireAfterAccess = getExpireAfterAccess();
+if (expireAfterAccess > 0 || expireAfterWrite > 0) {
+IHazelcastClient hazelcastClient = getHazelcastClient();
+if (hazelcastClient != null) {
+long ttl = expireAfterAccess > 0 ? expireAfterAccess
+

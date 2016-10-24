@@ -1,0 +1,7 @@
+registry.addListener(new CollectionSettingsUpdateListener() {
+public void incrementalUpdate(CollectionSettingName name, Serializable value) {
+* @return <code>true</code> if address has been marked as obscured value
+*/
+boolean updateObscuredAddressValue (String addr) {
+if ((addr != null) &amp;&amp; (addr.length() > 0) &amp;&amp; (OBSCURED_ADDRESSES_PATTERN != null)) {
+

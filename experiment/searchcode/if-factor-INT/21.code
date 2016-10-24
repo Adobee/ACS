@@ -1,0 +1,13 @@
+public ZoomFactor(float factor){
+if(factor < 1){
+throw new IllegalArgumentException(&quot;El factor de zoom no puede ser igual o menor que 1&quot;);
+public float getFactor() {
+return factor;
+}
+
+public int applyZoom(int value){
+return (int)(value / getFactor());
+}
+
+}
+

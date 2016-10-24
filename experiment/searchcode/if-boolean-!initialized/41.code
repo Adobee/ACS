@@ -1,0 +1,10 @@
+private volatile boolean initialized;
+
+public T get() {
+T result = object;
+
+if (!initialized) {
+synchronized (this) {
+result = object;
+if (!initialized) {
+

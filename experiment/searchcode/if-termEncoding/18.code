@@ -1,0 +1,6 @@
+static GeoPointTermsEnum newInstance(final TermsEnum terms, final GeoPointMultiTermQuery query) {
+if (query.termEncoding == TermEncoding.PREFIX) {
+return new GeoPointPrefixTermsEnum(terms, query);
+} else if (query.termEncoding == TermEncoding.NUMERIC) {
+return new GeoPointNumericTermsEnum(terms, query);
+

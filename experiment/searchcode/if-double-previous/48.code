@@ -1,0 +1,8 @@
+
+public class Problem2 {
+public static double next = 1;
+public static double previous = 0;
+for(int i = 1; i<4000000; i++) {
+double current = fibonacci();
+if (current % 2 == 0 &amp;&amp; current < 4000000) {
+

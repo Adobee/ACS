@@ -1,0 +1,8 @@
+public boolean equals(Object obj) {
+boolean isEquals = false;
+LightLicense oLicence = (LightLicense) obj;
+if (oLicence != null &amp;&amp; oLicence instanceof LightLicense) {
+if (Util.isArtifactUrlValid(getUrl()) &amp;&amp; Util.isArtifactUrlValid(oLicence.getUrl())) {
+isEquals = getUrl().equals(oLicence.getUrl());
+if (isEquals) {
+

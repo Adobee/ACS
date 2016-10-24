@@ -1,0 +1,19 @@
+public void setDivisor(int divisor) throws IllegalArgumentException {
+if (divisor == 0) {
+throw new IllegalArgumentException();
+} else {
+this.divisor = divisor;
+@Override
+public double value() {
+return dividend/(double)divisor;
+}
+
+@Override
+public String toString() {
+return dividend + &quot;/&quot; + divisor;
+}
+
+
+
+}
+

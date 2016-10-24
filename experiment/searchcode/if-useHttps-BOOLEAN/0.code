@@ -1,0 +1,12 @@
+public enum ShardStrategy {
+CRC,
+CYCLE
+}
+
+private String[] domains;
+private boolean useHttps;
+private String signKey;
+private int shardCycleNextIndex = 0;
+
+public URLBuilder(String[] domains, boolean useHttps, String signKey, ShardStrategy shardStrategy, boolean signWithLibraryParameter) {
+

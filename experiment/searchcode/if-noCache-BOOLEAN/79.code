@@ -1,0 +1,5 @@
+String key = &quot;ljsession_&quot; + login + &quot;_&quot; + hash;
+boolean nocache = request.getParameter(&quot;nocache&quot;) != null;
+Object r = cache.get(key);
+if ((r == null) || nocache) {
+

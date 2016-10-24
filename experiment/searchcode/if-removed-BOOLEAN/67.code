@@ -1,0 +1,7 @@
+public static RemovedNodeList getInstance() {
+if(removedNodeList == null) {
+removedNodeList = new RemovedNodeList(20);
+public void addRemovedNode(Node node) {
+if(removedNodes.size() >= maxCapacity) {
+removedNodes.remove(0);
+

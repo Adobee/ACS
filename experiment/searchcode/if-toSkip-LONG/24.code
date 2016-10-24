@@ -1,0 +1,11 @@
+int data = m_inputStream.read();
+if(data >= 0) currentPosition++;
+return data;
+}
+
+public long pos()
+public boolean fseek(long position) throws IOException
+{
+long toSkip = position - currentPosition;
+if(toSkip < 0L) return false;
+

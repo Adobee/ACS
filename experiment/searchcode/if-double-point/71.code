@@ -1,0 +1,9 @@
+public static void main(String[] args) {
+Scanner	input = new Scanner(System.in);
+
+double pointX = input.nextDouble();
+double pointY = input.nextDouble();
+input.nextLine();
+
+boolean figure=false;
+

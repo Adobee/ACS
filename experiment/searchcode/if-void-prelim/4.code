@@ -1,0 +1,9 @@
+public static PrelimTeam getPrelimTeam(Player player){
+for(PrelimTeam pre : prelims){
+if(pre.isInTeam(player)){ return pre; }
+}
+return new PrelimTeam(player);
+public static PrelimTeam getPrelimTeam(int ident) {
+for(PrelimTeam pre : prelims){
+if(pre.getIndex() == ident){
+

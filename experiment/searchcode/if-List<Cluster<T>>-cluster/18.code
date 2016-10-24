@@ -1,0 +1,8 @@
+import org.rage.ignite.server.dto.Cluster;
+
+@Stateless
+public class ClusterInformationHandlerEJB {
+
+public List<String> retrieveServerNodeNames(ClusterGroup serverCluster){
+final List<String> clusterGroupNames = new ArrayList<String>(serverCluster.nodes().size());
+

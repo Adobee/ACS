@@ -1,0 +1,13 @@
+import java.awt.geom.Rectangle2D;
+
+public class UberShape{
+
+private Color c;
+private ShapeMode shapeMode;
+
+private double x, y, width, height;
+public void paint(Graphics g)  {
+Shape shape = null;
+if(this.shapeMode == ShapeMode.CIRCLE) {
+shape = new Ellipse2D.Double(this.x, this.y, this.width, this.height);
+

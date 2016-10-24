@@ -1,0 +1,9 @@
+setContentView(R.layout.activity_alarm);
+
+Intent intent = getIntent();
+if(intent != null){
+id = Integer.parseInt(intent.getAction());
+calendar.setTimeInMillis(System.currentTimeMillis());
+int dayOfYear = calendar.get(Calendar.DAY_OF_YEAR);
+int day = calendar.get(Calendar.DAY_OF_WEEK);
+

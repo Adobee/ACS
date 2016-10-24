@@ -1,0 +1,11 @@
+import com.androidplot.xy.SimpleXYSeries;
+import com.androidplot.xy.XLayoutStyle;
+import com.androidplot.xy.XYPlot;
+import com.androidplot.xy.XYSeries;
+private XYPlot xyPlot;
+private XYSeries eje;
+private Context c;
+
+/**
+* Constructor for Graph class
+

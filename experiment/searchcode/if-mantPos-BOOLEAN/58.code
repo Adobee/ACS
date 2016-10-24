@@ -1,0 +1,14 @@
+protected float parseFloat() throws ParseException, IOException
+{
+int mant = 0;
+int mantDig = 0;
+boolean mantPos = true;
+boolean mantRead = false;
+exp += expAdj;
+if (!mantPos)
+{
+mant = -mant;
+}
+
+return buildFloat(mant, exp);
+

@@ -1,0 +1,8 @@
+@Mock private CoverageSource coverageSource;
+@Mock private Mutation mutation;
+
+@Test
+public void mutationIsntWeightedIfLineIsCovered() throws Exception {
+public void mutationIsWeightedIfLineIsntCovered() throws Exception {
+when(coverageSource.mutationIsCovered(mutation)).thenReturn(false);
+

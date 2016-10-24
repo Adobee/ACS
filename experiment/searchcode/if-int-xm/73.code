@@ -1,0 +1,17 @@
+private void move(int x){
+int xm = 1;
+int ym = -1;
+if(x >= 5 &amp;&amp; x <= 8){
+xm = -xm;
+}
+if(x >= 3 &amp;&amp; x <= 6){
+return false;
+}
+int xm = 1;
+int ym = -1;
+if(x >= 5 &amp;&amp; x <= 8){
+xm = -xm;
+}
+if(x >= 3 &amp;&amp; x <= 6){
+ym = -ym;
+

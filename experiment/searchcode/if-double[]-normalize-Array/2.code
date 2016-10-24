@@ -1,0 +1,5 @@
+public void ignoresPunctuationMixedWithSpaces () {
+assertArrayEquals (nacoNormalizer.normalize (&quot;wharton, edith&quot;), nacoNormalizer.normalize (&quot;wharton edith&quot;));
+// RIGHT DOUBLE QUOTATION MARK     Blank
+assertArrayEquals (nacoNormalizer.normalize (&quot;right”quote&quot;), nacoNormalizer.normalize (&quot;right”quote&quot;));
+

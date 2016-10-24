@@ -1,0 +1,6 @@
+* sub = sourceText.substring(i); int c = count(sub, sourceText); if
+* (c>count) { if (sub.length()>substring.length()) { count = c;
+for (int i = 0; i < sourceText.length(); i++) {
+int pos = sourceText.indexOf(substring, i);
+if (pos >= 0) {
+

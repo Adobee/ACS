@@ -1,0 +1,15 @@
+super();
+if (!hasBeenLoaded) {
+this.getAll(this);
+hasBeenLoaded = true;
+}
+}
+
+public void addMemberType(MemberType memberType) {
+memberTypes.put(memberType.getType(), memberType);
+}
+
+public MemberType getMemberType(String type) {
+if (memberTypes.containsKey(type)) {
+return (MemberType) memberTypes.get(type);
+

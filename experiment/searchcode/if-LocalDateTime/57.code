@@ -1,0 +1,9 @@
+* Please contact with Zaerko Denis or send letter on zaerko1991@gmail.com if you need
+* to use information or have any questions.
+*/
+package com.dancosoft.socialcommunity.dao.support;
+
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+

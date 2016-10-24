@@ -1,0 +1,7 @@
+public static IJavaClassType createType(Type rawType, IModule module) {
+IJavaClassType type = null;
+if (rawType instanceof TypeVariable) {
+type = new TypeVariableJavaClassTypeVariable((TypeVariable) rawType, module);
+}
+if (rawType instanceof GenericArrayType) {
+

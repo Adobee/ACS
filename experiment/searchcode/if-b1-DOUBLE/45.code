@@ -1,0 +1,13 @@
+package calc;
+
+
+public class Operations extends Calc {
+
+/*public int Transf(double a, double b)
+{
+if (a%2 == 0 || b%2 == 0)
+{
+
+int a1 = (int) a;
+int b1 = (int) b;
+

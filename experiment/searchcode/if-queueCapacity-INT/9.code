@@ -1,0 +1,10 @@
+private int maximumPoolSize = 16;
+private long keepAliveMillisTime = 60 * 1000;
+private int queueCapacity = 500;
+private boolean clearWhenFull = false ;
+return ;
+}
+synchronized (clearLock) {
+int size = messageQueue.size() ;
+if( size < queueCapacity){
+

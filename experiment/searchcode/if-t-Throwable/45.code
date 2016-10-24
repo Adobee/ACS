@@ -1,0 +1,12 @@
+public class ErrorViewCommand implements SingleTopViewCommand {
+
+private final Throwable throwable;
+
+public ErrorViewCommand(Throwable throwable) {
+return throwable;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+

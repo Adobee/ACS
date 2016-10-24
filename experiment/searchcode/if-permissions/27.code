@@ -1,0 +1,10 @@
+public static boolean checkPermission(Object userType, Permissions p){
+if(!(userType instanceof UserType)) return false;
+public static boolean checkPermission(Object userType, String methodName){
+for(Permissions p : Permissions.get(methodName)){
+if(checkPermission(userType, p)) return true;
+}
+return false;
+}
+}
+

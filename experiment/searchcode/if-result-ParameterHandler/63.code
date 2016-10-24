@@ -1,0 +1,7 @@
+ParameterHandler parameterHandler = (ParameterHandler)metaObject.getValue(&quot;delegate.parameterHandler&quot;);
+parameterHandler.setParameters(prepareStatement);
+ResultSet resultSet = prepareStatement.executeQuery();
+Page page = (Page)map.get(&quot;page&quot;);
+if (resultSet.next()) {
+page.setTotalNumber(resultSet.getInt(1));
+

@@ -1,0 +1,8 @@
+public class CursorPositionAction implements ViewAction {
+private final int startPosition;
+private final int endPosition;
+
+public CursorPositionAction(int startPosition, int endPosition) {
+if (startPosition > endPosition) {
+throw new IllegalArgumentException(&quot;startPosition can&#39;t be greater than endPosition&quot;);
+

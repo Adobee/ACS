@@ -1,0 +1,13 @@
+for (int j = 0; j < m; j++) {
+if (im[i][j] == 0 &amp;&amp; !visited[i][j]) {
+dfs(im, visited, i, j);
+count++;
+}
+}
+}
+
+return count;
+}
+
+private static void dfs(int[][] im, boolean[][] visited, int i, int j) {
+

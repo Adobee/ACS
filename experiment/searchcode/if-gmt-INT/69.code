@@ -1,0 +1,12 @@
+final TimeZone actual) {
+
+if (null == expected &amp;&amp; null == actual) return;
+
+assertNotNull(label + &quot;: expected is null&quot;, expected);
+TimeZoneUtils.KNOWN_TIMEZONE_IDS.size(), idsTested.size());
+}
+
+public void testCustom() throws Exception {
+
+for (String input : new String[] {&quot;GMT-00&quot;, &quot;GMT+00&quot;, &quot;GMT-0&quot;, &quot;GMT+0&quot;,
+

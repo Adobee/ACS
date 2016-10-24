@@ -1,0 +1,13 @@
+public static void main(String[] args){
+
+
+
+double umin=0;
+double umax=Math.PI*2;
+int upoints=20;
+double vmin=0;
+double vmax=Math.PI*2;
+int vpoints=40;
+
+double u=umin;
+

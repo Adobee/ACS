@@ -1,0 +1,7 @@
+List<FieldMapper> mappersToAddToDocMapper = new ArrayList<FieldMapper>();
+synchronized (mutex) {
+if (mergeWith instanceof AbstractFieldMapper) {
+MultiFieldMapper mergeWithMultiField = (MultiFieldMapper) mergeWith;
+// merge the default mapper
+if (defaultMapper == null) {
+

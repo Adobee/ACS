@@ -1,0 +1,12 @@
+final float d = Math.abs(face.plane.distance(point));
+if (d < md) { // TODO remove abs
+md = d;
+closestFace = face;
+if (ds < mds) {
+mds = ds;
+closestVertex = vertex;
+}
+}
+
+if (closestVertex != null) return closestVertex.plane.distance(point) > 0 ? null : closestVertex.a;
+

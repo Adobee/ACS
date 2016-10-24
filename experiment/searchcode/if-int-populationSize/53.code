@@ -1,0 +1,15 @@
+public class ExtendedRandomInitialization extends RandomInitialization {
+
+private int populationSize;
+
+public ExtendedRandomInitialization(Problem problem, int populationSize) {
+this.populationSize = populationSize;
+}
+
+public int getPopulationSize() {
+return populationSize;
+}
+
+@Override
+protected void initialize(Variable variable) {
+

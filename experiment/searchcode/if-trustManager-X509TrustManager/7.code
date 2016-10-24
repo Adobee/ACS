@@ -1,0 +1,10 @@
+private X509TrustManager chooseTrustManager(TrustManager[] trustManagers) {
+for (TrustManager trustManager : trustManagers) {
+if (trustManager instanceof X509TrustManager) {
+return (X509TrustManager) trustManager;
+}
+}
+return null;
+}
+}
+

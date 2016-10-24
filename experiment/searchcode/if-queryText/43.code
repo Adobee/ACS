@@ -1,0 +1,11 @@
+* Gets the column project from the given query text.
+*
+* @param queryText
+* @return
+*/
+public static String getColumns(String queryText) {
+if ( inQuote )
+throw new BirtReportException( &quot;Invalid query text: &quot; + queryText );
+
+if ( delimiterIndex != -1
+

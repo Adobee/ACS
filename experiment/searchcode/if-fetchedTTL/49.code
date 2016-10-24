@@ -1,0 +1,7 @@
+private Long getTTLFromScriptContext(Map<String, Object> ctx) {
+Long ttl = null;
+Object fetchedTTL = ctx.get(&quot;_ttl&quot;);
+if (fetchedTTL != null) {
+if (fetchedTTL instanceof Number) {
+ttl = ((Number) fetchedTTL).longValue();
+

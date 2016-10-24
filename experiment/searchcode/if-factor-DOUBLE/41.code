@@ -1,0 +1,9 @@
+public static boolean isDivisible(double d, double n) {
+return (d%n == 0);
+}
+
+public static double nthFactor(double d, double start) {
+for (double c=0; c<d; c++) {
+if (isPrime(largestFactor(d, start))) {
+return largestFactor(d, start);
+

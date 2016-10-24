@@ -1,0 +1,7 @@
+* bound is set to the product of initialStepBoundFactor and the euclidean
+* norm of {@code diag * x} if non-zero. Otherwise to the
+double initialStepBoundFactor;
+
+/** Desired relative error in the sum of squares. */
+double costRelativeTolerance;
+

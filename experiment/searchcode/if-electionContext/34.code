@@ -1,0 +1,10 @@
+ElectionContext newContext = new GossipElectionContext(electTimeout, minimumMasterVotes - 1);
+if (!electionContext.compareAndSet(null, newContext)) {
+failContext(newContext, new IllegalStateException(&quot;double waiting for election!&quot;));
+processJoins();
+}
+}
+
+private void checkPendingJoinsAndAsMasterIfNeeded() {
+final ElectionContext context = this.electionContext.get();
+

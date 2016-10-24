@@ -1,0 +1,7 @@
+for (TrustManager trustManager : trustManagers) {
+if (trustManager instanceof X509TrustManager) {
+TrustManager[] results = new BlacklistingTrustManager[1];
+private final X509TrustManager trustManager;
+
+public BlacklistingTrustManager(X509TrustManager trustManager) {
+

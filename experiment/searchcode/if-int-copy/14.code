@@ -1,0 +1,10 @@
+int go(int step, int a) {
+if (doneForOne[step][a])
+return forOne[step][a];
+doneForOne[step][a] = true;
+if (step == p.length)
+return forOne[step][a] = 1;
+int pp = p[step];
+if (a < pp)
+return forOne[step][a] = 1;
+

@@ -1,0 +1,9 @@
+public static void main(String[] args) throws IOException, ReplicationException {
+if (args.length != 1) {
+showUsage();
+client.connect();
+
+RandomRequestGenerator requestGenerator = new RandomRequestGenerator();
+
+int maxRequests = Integer.parseInt(args[0]);
+

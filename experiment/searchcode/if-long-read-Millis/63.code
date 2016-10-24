@@ -1,0 +1,11 @@
+public DateTime read(JsonReader reader) throws IOException {
+if (reader.peek() == JsonToken.NULL) {
+reader.nextNull();
+return null;
+}
+long millis = reader.nextLong();
+return new DateTime(millis);
+}
+
+public void write(JsonWriter writer, DateTime value) throws IOException {
+

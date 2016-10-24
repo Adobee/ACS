@@ -1,0 +1,10 @@
+import com.googlecode.l10nmavenplugin.CustomPattern;
+import com.googlecode.l10nmavenplugin.log.L10nValidatorLogger;
+import com.googlecode.l10nmavenplugin.model.L10nReportItem;
+public class PatternValidator extends PropertiesKeyConventionValidator implements L10nValidator<Property> {
+
+private final String name;
+private final Pattern pattern;
+
+public PatternValidator(L10nValidatorLogger logger, CustomPattern customPattern) {
+

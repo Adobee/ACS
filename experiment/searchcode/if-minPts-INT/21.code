@@ -1,0 +1,8 @@
+private final double eps;
+private final int minPts;
+private final Set<O> noise;
+
+private DBSCANResult(final Collection<? extends DBSCANCluster<O>> clusters,
+final Collection<? extends O> noise, final double eps, final int minPts) {
+this.noise = ImmutableSet.copyOf(noise);
+

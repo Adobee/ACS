@@ -1,0 +1,12 @@
+return currentItem.value;
+}
+
+@Override
+public void remove() {
+if (lastItem != null) {
+lastItem.setNextItem(currentItem.getNextItem());
+T result = null;
+if (firstItem != null) {
+result = (T) firstItem.value;
+if (firstItem.getNextItem() != null) {
+

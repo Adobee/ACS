@@ -1,0 +1,9 @@
+package akka.lp;
+
+import java.lang.reflect.ParameterizedType;
+import java.util.Collection;
+import java.util.concurrent.TimeUnit;
+// TODO: write tests for this code
+public static boolean isCollectionOf(Object msg, Class<?> clazz) {
+if (!(msg instanceof Collection || msg instanceof ParameterizedType)) {
+

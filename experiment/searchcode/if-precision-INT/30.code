@@ -1,0 +1,11 @@
+public NumericGenerator(Integer rows, Integer precision, Integer scale) {
+super(queueDepth, rows);
+if (precision != null) {
+if (precision < 0) {
+precision = 0;
+}
+if (precision > 1024) {
+precision = 1024;
+}
+this.precision = precision;
+

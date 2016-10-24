@@ -1,0 +1,10 @@
+public double compute( ArrayList<double[]> points, double minPenalty, double minRobustness, double maxPenalty, double maxRobustness) {
+// normalized euclidean distance is being computed:
+if (points.size() == 0)
+return 0;
+private double getMaxP(ArrayList<double[]> points) {
+double maxP= points.get(0)[0];
+for (double[] d: points)
+if (d[0] > maxP)
+maxP= d[0];
+

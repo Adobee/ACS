@@ -1,0 +1,8 @@
+
+public class LeastSquares {
+
+public static double[] solve(double[][] equations, double[] vector){
+double[][] aT=Matrix.transpose(equations);
+double[][] eT=Matrix.prod(aT, equations);
+if(eT==null) return null;
+

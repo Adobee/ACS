@@ -1,0 +1,10 @@
+super(p0);
+// Assure the polygon lies flat
+p2.y = p0.y;
+if (isSquare) {
+p2 = squareOf(p0, p2);
+double dx = Math.abs(p2.x - p0.x);
+double dz = Math.abs(p2.z - p0.z);
+double d = Math.abs(dz - dx);
+if (dx > dz) {
+

@@ -1,0 +1,15 @@
+protected abstract T storeValue();
+
+public Cache() {
+refreshRate = 10;
+}
+
+public Cache(int refreshRate) {
+this.refreshRate = refreshRate;
+}
+
+public T getValue() {
+if (value != null) {
+value = storeValue();
+postponeRefresh();
+

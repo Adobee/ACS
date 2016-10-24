@@ -1,0 +1,8 @@
+public static boolean isBaseDataType(Class<?> clazz) {
+if (null == clazz)
+return false;
+return clazz.isPrimitive() || clazz.equals(String.class)
+private static Object getDefaultPrimiticeValue(Class clazz) {
+if (clazz.isPrimitive()) {
+return clazz == boolean.class ? false : 0;
+

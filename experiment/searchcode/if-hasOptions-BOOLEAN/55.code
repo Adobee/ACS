@@ -1,0 +1,6 @@
+import br.com.wolkenapps.jmigrations.api.DatabaseCommand;
+import br.com.wolkenapps.jmigrations.model.commons.options.IfNotExists;
+import br.com.wolkenapps.jmigrations.model.commons.stereotype.HasOptions;
+public <T extends Option> Boolean contains(Class<T> option) {
+return HasOptions.Trait.contains(this, option);
+

@@ -1,0 +1,7 @@
+import com.github.tlrx.elasticsearch.test.support.junit.handlers.FieldLevelElasticsearchAnnotationHandler;
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.ImmutableSettings;
+// Closing all TransportClient
+for (Object obj : context.values()) {
+if (obj instanceof TransportClient) {
+

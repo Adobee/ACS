@@ -1,0 +1,8 @@
+CustomerCertificateDao customerCertificateDao;
+
+public void saveOrUpCustomerCertificate(CustomerCertificate customerCertificate){
+if(customerCertificate!=null&amp;&amp;customerCertificate.getCustomerCertificateID()!=null){
+List<CustomerCertificate> ccList = customerCertificateDao.selectByCustomerID(customer.getCustomerID());
+CustomerCertificate customerCertificate=null;
+if(StringUtils.isNoneBlank(request.getParameter(&quot;idCard&quot;))){
+

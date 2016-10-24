@@ -1,0 +1,8 @@
+public BoostAndBlock wrapperConverter(BoostAndBlockWrapper boostAndBlockWrapper, BoostAndBlock boostAndBlock) throws ServiceException,ParseException{
+
+if(boostAndBlockWrapper != null){
+if(boostAndBlockWrapper.getSearchTerm() != null &amp;&amp; !boostAndBlockWrapper.getSearchTerm().isEmpty()){
+boostAndBlock.setTerm(boostAndBlockWrapper.getSearchTerm());
+}
+if(boostAndBlockWrapper.getCategoryId() != null &amp;&amp; !boostAndBlockWrapper.getCategoryId().isEmpty()){
+

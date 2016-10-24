@@ -1,0 +1,7 @@
+ListeningSemaphore semaphore = new ListeningSemaphore(1);
+assertThat(semaphore.availablePermits(), Matchers.equalTo(1));
+assertThat(semaphore.getQueueLength(), Matchers.equalTo(0));
+AtomicBoolean first = acquire(semaphore, 1);
+assertThat(semaphore.availablePermits(), Matchers.equalTo(0));
+assertThat(semaphore.getQueueLength(), Matchers.equalTo(0));
+

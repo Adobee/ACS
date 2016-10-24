@@ -1,0 +1,15 @@
+formNamePartLevel=formNamePartNode!=null? ((NamePartView) formNamePartNode.getData()).getLevel():-1;
+updateNamePartForm();
+
+}
+
+public boolean isTabRendered(int tab){
+if(tab<0 || tab>tabs.size()-1){
+return false;
+return tabs.get(nextRendered);
+}
+
+private int nextRendered(int prev, int next){
+boolean forward=next>=prev;
+if(isTabRendered(next)){
+

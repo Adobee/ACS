@@ -1,0 +1,11 @@
+public RemoveDuplicates(String s) {
+chars = s.toCharArray();
+}
+
+public String removeDuplicates() {
+if (chars.length < 2) {
+for (int i = 0; i < chars.length; i++) {
+if (chars[i] == &#39; &#39;) {
+int j = findNextNonNullChar(i);
+if (j == -1) {
+

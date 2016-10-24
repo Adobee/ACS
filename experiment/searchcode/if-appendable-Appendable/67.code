@@ -1,0 +1,9 @@
+public void generate(@NotNull Appendable appendable, @NotNull CGenetratorConfig config) throws IOException
+{
+appendable.append(&quot;if (&quot;);
+config.appendEol(appendable);
+config.incCurrentIndent();
+for (CStatement statement : ifStatements)
+{
+config.makeIndent(appendable);
+

@@ -1,0 +1,10 @@
+Axis axis = null;//new AxisPositive(labels, Orientation.HORIZONTAL,
+//AxisLabelHelper.getXAxisLength());
+if(chart.is_3d()){
+axis = new Axis3D();
+axis.setShowGridLine(chart.isShowGridLine());
+axis.init();
+axis.makeAxis();
+if(!chart.is_3d()){
+if(!axisConfiguration.isDoubleXAxis()){
+

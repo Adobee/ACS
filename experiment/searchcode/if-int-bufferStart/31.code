@@ -1,0 +1,9 @@
+private final int windowSize;
+private int bufferStart;
+private int bufferEnd;
+private long latestTime;
+
+public CircularBufferRecorder(int windowSize) {
+if (windowSize <= 0) {
+throw new IllegalArgumentException(&quot;Window size must be positive!&quot;);
+

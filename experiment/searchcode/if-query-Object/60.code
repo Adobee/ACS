@@ -1,0 +1,7 @@
+import org.oasis.ebxml.registry.bindings.query.RegistryObjectQueryType;
+import org.oasis.ebxml.registry.bindings.query.ServiceBindingQueryType;
+RegistryObjectQueryType roQuery = ((ServiceBindingQueryType)filterQuery).getServiceQuery();
+
+if (roQuery != null) {
+RegistryObjectQueryProcessor roQueryProcessor = (RegistryObjectQueryProcessor)FilterQueryProcessor.newInstance(this, roQuery);
+

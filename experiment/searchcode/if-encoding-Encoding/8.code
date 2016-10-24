@@ -1,0 +1,8 @@
+public static String parseCharacterEncoding(String contentType) {
+if (contentType == null)
+return &quot;UTF-8&quot;;
+int start = contentType.indexOf(&quot;charset=&quot;);
+if (start < 0)
+return &quot;UTF-8&quot;;
+String encoding = contentType.substring(start + 8);
+

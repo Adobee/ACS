@@ -1,0 +1,14 @@
+static long[] memo ;
+
+private static long fillCount(int m, int n) {
+
+long solutions = 1;
+
+if (n > m)
+return solutions;
+
+if (memo[m] != 0)
+return memo[m];
+
+for (int startpos = 0; startpos <= m - n; startpos++) {
+

@@ -1,0 +1,14 @@
+public abstract List<String> getOutputs();
+
+@Override
+public int hashCode() {
+if(configuration != null)
+return configuration.getId();
+AbstractTaskConfiguration abstractTaskConfiguration = (AbstractTaskConfiguration)object;
+if(abstractTaskConfiguration.getConfiguration().getId()==this.getConfiguration().getId())
+return true;
+return false;
+}
+
+}
+

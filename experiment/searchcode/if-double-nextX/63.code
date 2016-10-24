@@ -1,0 +1,9 @@
+public void nextStep(double deltT) {
+if (requestsToSensor.hasMessage()) {
+// action is one of: range, targetclose, targetvisible.
+while (true) {
+if ((nextx < 0) || (nextx >= GridWorldPanel.M)) {
+return nextx;
+}
+else if (gwPanel.grid[nextx][gridy] == null) {
+

@@ -1,0 +1,9 @@
+package com.thoughtworks.videorental.domain;
+
+import org.joda.time.LocalDateTime;
+
+/**
+* Created by Bajrang on 2/4/2015.
+public static MovieRentalPlan getPlan(LocalDateTime releaseDate) {
+LocalDateTime oneMonthBeforeDate = new LocalDateTime().minusMonths(ONE_MONTH);
+

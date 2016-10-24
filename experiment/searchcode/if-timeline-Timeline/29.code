@@ -1,0 +1,8 @@
+package Grupo3.BlueBird.igu.timeline;
+
+import java.awt.BorderLayout;
+import java.awt.Color;
+public void updateTimeline() throws UnknownUserTwitterException, TwitterException {
+if (_userTimeline) {
+_listModel = new TimelineListModel(_timeline.refreshUserTimeline());
+

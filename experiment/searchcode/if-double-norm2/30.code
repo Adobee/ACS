@@ -1,0 +1,8 @@
+protected int getNormMaxIndex(){
+double max_norm2 = 0.0;
+int ans = 0;
+int size = _training_set.size();
+for(int i=0;i<size;i++){
+double norm2 =  _training_set.elementAt(i).norm2();
+if(max_norm2 < norm2){
+

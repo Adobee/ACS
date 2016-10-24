@@ -1,0 +1,18 @@
+public static Set<Point> get(ShipType type, ShipOrientation orientation, int topLeftX, int topLeftY) {
+boolean[][] grid = null;
+
+switch (type) {
+case Destroyer:
+if (orientation.equals(Up) || orientation.equals(Down)) {
+for (int x = 0; x < grid[y].length; ++x) {
+if (grid[y][x]) {
+locations.add(new Point(topLeftX + x, topLeftY + y));
+}
+}
+}
+
+return locations;
+}
+
+}
+

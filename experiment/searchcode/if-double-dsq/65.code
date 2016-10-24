@@ -1,0 +1,11 @@
+ALocalFeaturesGroup<SIFT> sg2) {
+if (sg2.size() < 2)
+return 0;
+double sum = 0;
+SIFT[] arr = sg1.lfArr;
+for (int i = 0; i < arr.length; i++) {
+static final public double getLoweFactor(SIFT s1, ALocalFeaturesGroup<SIFT> sg) {
+double distsq1 = Integer.MAX_VALUE;
+double distsq2 = Integer.MAX_VALUE;
+double dsq = 0;
+

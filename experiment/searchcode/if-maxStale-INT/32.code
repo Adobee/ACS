@@ -1,0 +1,9 @@
+//        String url = request.url().toString();
+
+if(NetUtils.isNetworkAvailable(context)) {
+//有网络时，不使用缓存
+builder.addHeader(&quot;Cache-Control&quot;, &quot;no-cache&quot;);
+builder.addHeader(&quot;Cache-Control&quot;,
+&quot;public, only-if-cached, max-stale=&quot; + maxStale);
+//            String cacheUrl = sp.getString(tag,url);
+

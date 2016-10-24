@@ -1,0 +1,11 @@
+* @return 是否合法
+*/
+public static boolean emailFormat(String email) {
+int space = email.indexOf(&quot; &quot;);
+if(space > -1) {//
+return false;
+}
+
+int index = email.indexOf(&quot;@&quot;);
+if(index > 0) {
+

@@ -1,0 +1,13 @@
+return upper;
+}
+
+public void setLower(int value) {
+if (value > upper) {
+throw new IllegalArgumentException(&quot;&quot;);
+}
+lower = value;
+}
+
+public void setUpper(int value) {
+if (value < lower) {
+

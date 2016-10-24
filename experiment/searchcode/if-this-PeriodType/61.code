@@ -1,0 +1,13 @@
+import org.gcube.data.analysis.tabulardata.model.ValueFormat;
+
+public enum PeriodType {
+
+
+//columns: id, nomralized day, string representation of date
+DAY(&quot;Day&quot;, &quot;DD Mon YYYY&quot;, &quot;1 day&quot;),
+for (PeriodType periodType : PeriodType.values()) {
+if (name.equals(periodType.getName()))
+return periodType;
+}
+return null;
+

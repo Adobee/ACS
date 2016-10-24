@@ -1,0 +1,12 @@
+while (A[i] > 0 &amp;&amp; A[i] != i + 1 &amp;&amp; A[i] <= len) {
+if (A[i] == A[A[i] - 1])
+break;
+int tmp = A[i];
+A[tmp - 1] = tmp;
+}
+
+}
+int idx = 0;
+for (; idx < len; idx++) {
+if (A[idx] < 0 || A[idx] != idx + 1) {
+

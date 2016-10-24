@@ -1,0 +1,12 @@
+final int rp = routePosition(x);
+deadMove = deadMove &amp;&amp; rp == 0;
+cuts[ri][ccs[ri]++] = rp;
+}
+
+if (deadMove) return;
+routeChunks[ix][0] = routeix;
+routeChunks[ix][1] = cuts[routeix][1];
+routeChunks[ix][3] = cuts[routeix][2];
+
+if (routeChunks[ix][1] != routeChunks[ix][3]) ix++;
+

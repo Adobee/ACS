@@ -1,0 +1,11 @@
+byte[]  salt,
+int     iterationCount)
+{
+this.octStr = new DEROctetString(salt);
+this.iterationCount = new ASN1Integer(iterationCount);
+byte[]  salt,
+int     iterationCount,
+int     keyLength)
+{
+this(salt, iterationCount);
+

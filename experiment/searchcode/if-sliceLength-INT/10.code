@@ -1,0 +1,7 @@
+public FixedByteSliceOpenHashSet(int sliceLength, int expected, float f) {
+if (f <= 0 || f > 1) {
+throw new IllegalArgumentException(&quot;Load factor must be greater than 0 and smaller than or equal to 1&quot;);
+private boolean isEqualToKey(byte[] bs, int pos) {
+for (int i = pos * sliceLength, j = 0; j < sliceLength; i++, j++) {
+if (key[i] != bs[j]) return false;
+

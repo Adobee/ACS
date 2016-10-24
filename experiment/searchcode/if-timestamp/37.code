@@ -1,0 +1,7 @@
+return (timestamp > now || timestamp < now - validityWindowSeconds);
+}
+
+public void rejectIfStale(long timestamp) throws StaleTimestampException {
+long then = now - validityWindowSeconds;
+if (timestamp > now || timestamp < then) throw new StaleTimestampException(timestamp, now, then);
+

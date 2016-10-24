@@ -1,0 +1,8 @@
+public static void shift(DoubleMatrix m, int shift) {
+if (m == null || m.length == 0) {
+return;
+}
+
+DoubleMatrix n = new DoubleMatrix(m.rows, m.columns);
+boolean isNegativeShift = (shift < 0);
+

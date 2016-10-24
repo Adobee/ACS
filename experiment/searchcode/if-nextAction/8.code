@@ -1,0 +1,10 @@
+public class SelectCardOnTablePostAction implements IGamePostAction
+{
+private TakeActionGroup nextAction;
+
+public SelectCardOnTablePostAction()
+public void onActionComplete(GameAction ga)
+{
+if (nextAction != null)
+nextAction.setSelectedFlip(Boolean.TRUE.equals(ga.getResult()) ? 0 : 1);
+

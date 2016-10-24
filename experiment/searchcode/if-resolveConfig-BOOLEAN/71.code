@@ -1,0 +1,16 @@
+public static TVDVBConfig getInstance(AssetManager assetManager){
+if(mTVDVBConfig==null){
+synchronized (TVDVBConfig.class) {
+return configInfo;
+}else{
+return null;
+}
+}
+
+/**
+* 是否打开DEBUG开关
+* @return
+*/
+public boolean isDebug(){
+if(this.configInfo.get(&quot;DEBUG&quot;)==null||configInfo.get(&quot;DEBUG&quot;).equals(&quot;&quot;)){
+

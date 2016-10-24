@@ -1,0 +1,6 @@
+public static void drawOutlinedCrossedBoundingBox(final AxisAlignedBB aa) {
+final WorldRenderer t = Tessellator.instance.getWorldRenderer();
+t.startDrawing(3);
+t.addVertex(aa.minX, aa.minY, aa.minZ);
+t.addVertex(aa.maxX, aa.minY, aa.minZ);
+

@@ -1,0 +1,7 @@
+public static double getDistance(double[] n1, double[] n2) {
+return getDistance(n1, n2, EuclideanDistance);
+}
+
+public static double getDistance(double[] n1, double[] n2, int config) {
+if (config == InnerProduct)
+

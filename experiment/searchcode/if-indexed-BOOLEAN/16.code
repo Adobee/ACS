@@ -1,0 +1,8 @@
+PRODUCER_NAME(&quot;producer.name&quot;, Boolean.TRUE);
+
+private ProductIndexField(String path, Boolean indexed){
+this.path = path;
+this.indexed = indexed;
+for(ProductIndexField field : ProductIndexField.values()){
+if(field.indexed != null &amp;&amp; field.indexed.booleanValue()){
+

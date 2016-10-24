@@ -1,0 +1,7 @@
+public static boolean isAnagram(String A, String B) {
+HashMap<Character, Integer> map = new HashMap<Character, Integer>();
+if (A.length() != B.length())
+return false;
+for (char character : A.toCharArray()) {
+if (!map.containsKey(character))
+

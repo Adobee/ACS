@@ -1,0 +1,12 @@
+private int count;
+
+@Test
+public void testTaskFactory() {
+final boolean[] checks = new boolean[]{false, false};
+factory.create().execute();
+if (!(checks[0] &amp;&amp; checks[1])) {
+fail(&quot;Task Factory failed to recreate the task.&quot;);
+}
+}
+}
+

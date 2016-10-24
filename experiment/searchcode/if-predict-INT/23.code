@@ -1,0 +1,7 @@
+public static PredictProbabilityDao getInstance() {
+if (predictProbabilityDao == null) {
+predictProbabilityDao = new PredictProbabilityDao();
+pstmt.setString(3, predictProbability.getDimvalue());
+int i = pstmt.executeUpdate();
+if (i == 1) {
+

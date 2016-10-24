@@ -1,0 +1,8 @@
+public static SecureImageUtil get() {
+if (mSecureImageUtil == null) {
+mSecureImageUtil = new SecureImageUtil();
+return cameraMode == 0 ? this.mSecureLockImageUriList : this.mSecureLockVideoUriList;
+}
+
+public boolean isSecureLockUriListEmpty(int cameraMode) {
+

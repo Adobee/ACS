@@ -1,0 +1,9 @@
+public abstract class AbstractHttp2StreamFrame implements Http2StreamFrame {
+
+private int streamId = -1;
+
+@Override
+public AbstractHttp2StreamFrame setStreamId(int streamId) {
+if (this.streamId != -1) {
+throw new IllegalStateException(&quot;Stream identifier may only be set once.&quot;);
+

@@ -1,0 +1,12 @@
+package sdt.java3d;
+
+import sdt.stepb.*;
+import java.util.Vector;
+import java.awt.*;
+import sdt.geometry.*;
+protected Vector vector;
+
+public SDT_Array3DEdge(stepb_manifold_solid_brep smodel)
+{
+vector = new Vector();
+

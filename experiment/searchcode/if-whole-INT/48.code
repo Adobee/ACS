@@ -1,0 +1,9 @@
+wholeNetworkTies = new HashMap<Pair<WholeNetworkAlter,WholeNetworkAlter>,WholeNetworkTie>();
+
+// add all alters
+for(NameMapping mapping : nameMap) {
+int group = mapping.getGroup();
+if(!wholeNetworkAlters.containsKey(group)) {
+for(Entry<Integer,WholeNetworkAlter> entry : wholeNetworkAlters.entrySet()) {
+if(entry.getValue().getOccurences().size() < settings.inclusionThreshold) {
+

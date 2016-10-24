@@ -1,0 +1,4 @@
+for (CharacterIndex.CharacterLocation characterLocation : toRet.data_) {
+Minion character = toRet.data_.getCharacter(characterLocation);
+if (!character.isSilenced() &amp;&amp; character instanceof MinionDamagedInterface) {
+

@@ -1,0 +1,14 @@
+this.randomValue = value;
+}
+
+/**
+* @see java.lang.Number#doubleValue()
+*/
+@Override
+public double doubleValue() {
+return randomValue.doubleValue();
+}
+
+/**
+* @see java.lang.Number#floatValue()
+

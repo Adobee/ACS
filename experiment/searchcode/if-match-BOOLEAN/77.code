@@ -1,0 +1,13 @@
+public class WildcardMatching {
+
+public boolean isMatch(String s, String p) {
+// corner case
+if(s == null || p == null) return false;
+if(letterCount > s.length()) return false;
+
+//
+boolean[] match = new boolean[s.length() + 1];
+match[0] = true;
+
+int index = 0, firstMatch = 0;
+

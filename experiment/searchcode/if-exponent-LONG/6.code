@@ -1,0 +1,12 @@
+private long mantissa;
+private byte exponent;
+
+public AccurateNumber(long mantissa, byte exponent){
+if(mantissa>100000000000000L)throw new IllegalArgumentException(&quot;Mantissa overflow&quot;);
+public String toString(){
+normalise();
+long m=mantissa;
+short e=exponent;
+boolean n=m<0,d=e<0;
+if(n)m*=-1;
+

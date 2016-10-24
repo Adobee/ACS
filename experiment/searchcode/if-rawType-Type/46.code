@@ -1,0 +1,13 @@
+public static final Type[] NONE = new Type[0];
+
+public final String rawType;
+public final Type[] genericArgs;
+
+public Type(String rawType, Type[] genericArgs) {
+public String toString() {
+if (genericArgs.length == 0)
+return rawType;
+return rawType + Arrays.toString(genericArgs);
+}
+}
+

@@ -1,0 +1,9 @@
+throw new KCCookieError(&quot;Cookie &#39;domain&#39; may not be null&quot;);
+}
+if (!host.equals(domain) &amp;&amp; !domainMatch(domain, host))
+{
+throw new KCCookieError(&quot;Illegal &#39;domain&#39; attribute \&quot;&quot; + domain + &quot;\&quot;. Domain of origin: \&quot;&quot; + host + &quot;\&quot;&quot;);
+static boolean domainMatch(final String domain, final String host)
+{
+if (KCUtilNetAddress.isIPv4Address(host) || KCUtilNetAddress.isIPv6Address(host))
+

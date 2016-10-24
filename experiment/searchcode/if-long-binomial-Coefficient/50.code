@@ -1,0 +1,16 @@
+long value = binomialCoefficient(40, 20);
+System.out.println(value);
+}
+
+//Binomial Coefficient calculation
+public static long binomialCoefficient (long n, long k){
+long value = 1;
+for (int i = 1; i<= k; i++){
+value *= (n - k + i);
+value /= i;
+}
+return value;
+}
+
+}
+

@@ -1,0 +1,9 @@
+this.chromosome = MathUtils.randomIntArray(7, -200, 200);
+}
+
+public int getFitness() {
+if (fitness == -1)
+for (int i = 0; i < chromosome.length; i++)
+if (Math.random() <= rate)
+chromosome[i] = MathUtils.randomBetween(-200, 200);
+

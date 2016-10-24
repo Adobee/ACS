@@ -1,0 +1,7 @@
+private long capacity;
+private long expireAfterWrite;
+private long expireAfterAccess;
+private AtomicLong hits = new AtomicLong(), misses = new AtomicLong();
+public AbstractCache(String name, long capacity, long expireAfterWrite, long expireAfterAccess) {
+this.name = name;
+

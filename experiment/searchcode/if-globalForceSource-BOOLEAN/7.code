@@ -1,0 +1,12 @@
+public class SearchContextHighlight {
+
+private final Map<String, Field> fields;
+
+private boolean globalForceSource = false;
+boolean globalForceSource() {
+return this.globalForceSource;
+}
+
+public boolean forceSource(Field field) {
+if (globalForceSource) {
+

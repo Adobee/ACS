@@ -1,0 +1,8 @@
+public void getCertificateTypes(Page<CertificateType> page,String certificateTypeName) throws Exception{
+if (null!=certificateTypeName){
+String hqlString=&quot;from &quot;+CertificateType.class.getName()+&quot; where certificateTypeName like &#39;%&quot;+certificateTypeName+&quot;%&#39;&quot;;
+List<CertificateType> certificateTypes = this.query(&quot;from CertificateType where id=&quot;+&quot;&#39;&quot;+id+&quot;&#39;&quot;);
+CertificateType certificateType=null;
+if (certificateTypes.size()>0) {
+certificateType=certificateTypes.get(0);
+

@@ -1,0 +1,14 @@
+public void addPath(Path path) {
+if (paths.add(path)) {
+reEvaluate(path);
+}
+
+}
+
+public List<Path> getPaths() {
+return paths;
+public Path getShortestPath() {
+Path path = null;
+if (shortestRestrictedPath == null) {
+path = shortestUnrestrictedPath;
+

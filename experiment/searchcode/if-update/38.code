@@ -1,0 +1,10 @@
+public void append(Update update) {
+if (update.isEmpty()) {
+return;
+}
+if (updates.isEmpty()) {
+return;
+}
+Update previousUpdate=updates.getLast();
+if (previousUpdate.isChange() == update.isChange()) {
+

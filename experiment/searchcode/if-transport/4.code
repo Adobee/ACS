@@ -1,0 +1,16 @@
+* See: http://www.opendds.org/license.html
+*/
+
+package org.opendds.jms.transport;
+
+import javax.jms.JMSException;
+
+import OpenDDS.DCPS.transport.TransportConfig;
+public synchronized TransportConfig getTransport() throws JMSException {
+if (transport == null) {
+createTransport();
+}
+return transport;
+}
+}
+

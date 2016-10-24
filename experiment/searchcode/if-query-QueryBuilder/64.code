@@ -1,0 +1,9 @@
+import de.greenrobot.dao.query.QueryBuilder;
+
+public class ExtendedMoodRatingDao {
+private static final long MOOD_RATING_AVERAGE_SCOPE_ID = 0;
+queryBuilder.orderDesc(MoodRatingDao.Properties.Day);
+List<MoodRating> ratings = queryBuilder.list();
+
+if (ratings == null || ratings.isEmpty()) {
+

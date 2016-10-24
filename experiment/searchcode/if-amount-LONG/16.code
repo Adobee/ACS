@@ -1,0 +1,12 @@
+if (o == null || getClass() != o.getClass()) return false;
+
+DollarAmount that = (DollarAmount) o;
+
+if (Double.compare(that.amount, amount) != 0) return false;
+@Override
+public int hashCode() {
+long temp = amount != +0.0d ? Double.doubleToLongBits(amount) : 0L;
+return (int) (temp ^ (temp >>> 32));
+}
+}
+

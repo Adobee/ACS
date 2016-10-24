@@ -1,0 +1,8 @@
+public Call executePost(String url, Map<String,String> map, Callback callback){
+FormBody.Builder formBuilder = new FormBody.Builder();
+Set<Map.Entry<String, String>> entrySet = map.entrySet();
+for (Map.Entry<String,String> entry : entrySet){
+formBuilder.addEncoded(entry.getKey(),entry.getValue());
+}
+Request request = new Request.Builder()
+

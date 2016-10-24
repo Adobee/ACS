@@ -1,0 +1,9 @@
+public String update() {
+List<InstantMessaging> allInstantMessagingList = instantMessagingService.getAllList();
+if (allInstantMessagingList != null) {
+for (InstantMessaging instantMessaging : allInstantMessagingList) {
+instantMessagingService.delete(instantMessaging);
+}
+}
+if (instantMessagingList != null) {
+

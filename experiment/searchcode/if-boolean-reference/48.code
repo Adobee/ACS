@@ -1,0 +1,11 @@
+import java.lang.ref.Reference;
+import java.lang.ref.WeakReference;
+
+public class EqualableReference<T> extends WeakReference<T> {
+super(referent);
+}
+
+@Override
+public boolean equals(Object o) {
+if (o instanceof Reference) {
+

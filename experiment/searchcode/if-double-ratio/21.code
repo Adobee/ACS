@@ -1,0 +1,13 @@
+* K ratio = L/init_ratio
+* @return
+*/
+public double getKRatio() {
+double k;
+if(this.getRatio() == 0 ){
+public double getKRatioWithCurrentTask(double request_lenght,double satify_lenght) {
+double k;
+if(this.getRatio() == 0 ){
+k = 1;
+} else {
+//			k = Math.abs((calcLenghtRatio(request_lenght, satify_lenght))/getRatio()-1);
+

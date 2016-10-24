@@ -1,0 +1,11 @@
+if ((ball.getY() < 1 &amp;&amp; ball.up()) || (ball.getY() > 13 &amp;&amp; ball.down())) { ball.invY(); return; }
+
+if (judge(ball, paddle)) return;
+if ( (x1 >= (x2 - 1)) &amp;&amp; (x1 <= (x2 + 4)) &amp;&amp; ((y1 == (y2 - 1) &amp;&amp; container.down()) || (y1 == (y2 + 1) &amp;&amp; container.up()))) {
+
+container.invY();
+
+if (x1 < (x2 + 1)) container.xL();
+
+else if (x1 < (x2 + 3)) container.xM();
+

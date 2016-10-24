@@ -1,0 +1,8 @@
+chromosomeRepository.setFitnessToChromosome(offspring,
+radiographyRepository.getTrainRadiographies());
+addChromosomeIfWorthy(offspring);
+Chromosome father = chromosomeRepository.selectParent();
+offspring = chromosomeOperator.xo(mother, father, r);
+if (r.nextDouble() > 0.9) {
+offspring = chromosomeOperator.mutation(offspring, r);
+

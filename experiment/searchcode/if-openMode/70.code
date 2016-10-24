@@ -1,0 +1,11 @@
+public void open(OpenMode mode) throws IOException
+{
+if(isOpen()) return;
+
+this.openMode=mode;
+BerkeleyDbUtils.createDbHomeIfNotExist(this.dbHome);
+cfg.setCachePercent(80);
+cfg.setConfigParam(EnvironmentConfig.LOG_FILE_MAX,&quot;250000000&quot;);
+
+if(mode!=OpenMode.WEB)
+

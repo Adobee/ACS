@@ -1,0 +1,10 @@
+public static <T> Constraint<T> anything(){
+return new Constraint<T>(){
+@Override
+public boolean satisfies(T target) {
+return true;
+public boolean satisfies(T target) {
+boolean exactlyOne = false;
+for(Constraint<T> constraint: constraints){
+if(constraint.satisfies(target)){
+

@@ -1,0 +1,10 @@
+public static double findReflectedPressureWith(final double angle,
+final double pso) {
+if (pso < 25) {
+graph.put((double) 0, (double) 2.85);
+graph.put((double) 75, (double) 1.25);
+graph.put((double) 80, (double) 1.2);
+
+if (angle >= 0) {
+double cr = (graph.get(angle));
+

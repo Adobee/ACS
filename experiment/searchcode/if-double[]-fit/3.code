@@ -1,0 +1,13 @@
+Individual iv[] = (Individual[])o;
+double sumFit, acFit, randValue;
+int i;
+
+sumFit = 0.0;
+for (i=0; i<iv.length; i++)
+sumFit += ((Double)iv[i].getFitness()).doubleValue(); //Fitness total
+
+i = 0;
+if (Target.maximize)
+{
+acFit = ((Double)iv[i].getFitness()).doubleValue() / sumFit;
+

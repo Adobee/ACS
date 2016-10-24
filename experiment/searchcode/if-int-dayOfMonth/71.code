@@ -1,0 +1,7 @@
+public class OCUDate {
+protected int dayOfMonth;
+protected int monthOfYear;
+protected int yearOf;
+gc.set(GregorianCalendar.DAY_OF_MONTH, dayOfMonth);
+int i = gc.get(GregorianCalendar.DAY_OF_WEEK);
+

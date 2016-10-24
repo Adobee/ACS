@@ -1,0 +1,11 @@
+private static PowerDateUtils powerDateUtils;
+private static Object lock = new Object();
+
+private PowerDateUtils() {
+
+}
+
+public static PowerDateUtils instance() {
+if (powerDateUtils==null) {
+synchronized (lock) {
+

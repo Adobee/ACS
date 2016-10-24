@@ -1,0 +1,6 @@
+public class Solution {
+public String convert(String s, int numRows) {
+if(numRows < 2 || s.length() < numRows) return s;
+char[] converted = new char[s.length()];
+int index = 0, step = (numRows - 1) << 1;
+

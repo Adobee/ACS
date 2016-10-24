@@ -1,0 +1,11 @@
+public class ResponseDispatcher {
+
+public static void dispatch(Response response, IResponseHandler handler) {
+if (response instanceof AbortResponse) {
+handler.handle(instance);
+return;
+}
+
+if (response instanceof AcceptResponse) {
+AcceptResponse instance = (AcceptResponse)response;
+

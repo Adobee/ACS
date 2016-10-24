@@ -1,0 +1,9 @@
+boolean secure;
+boolean useHTTPS;
+Handler handler;
+
+private static ArrayList<XAPIRequest> _queue;
+private static XAPIRequest currentRequest;
+public XAPIRequest(String[] pathItems,Properties params, String method,boolean secure,boolean useHTTPS,final Handler handler) {
+this.pathItems = pathItems;
+

@@ -1,0 +1,11 @@
+package za.ac.cput.SRP;
+
+/**
+* Created by ADRIAN on 26/2/2015.
+*/
+public class SRP_Correction {
+
+public static double calc(double a, double b , char c)
+{
+double answer = 0;
+

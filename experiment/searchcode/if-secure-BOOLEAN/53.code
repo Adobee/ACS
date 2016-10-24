@@ -1,0 +1,11 @@
+package controllers;
+
+import play.Play;
+
+public class Security extends Secure.Security {
+&amp;&amp; password.equals(Play.configuration.getProperty(&quot;secure.admin.password&quot;));
+}
+
+static boolean check(String profile) {
+if (profile.equals(&quot;Admin&quot;)) {
+

@@ -1,0 +1,11 @@
+double realPart = real.get(position);
+double imaginaryPart = imaginary.get(position);
+double closeToZero = Math.pow(10, -10);
+
+if(getMagnitude(position) < closeToZero)
+return 0;
+
+return Math.atan(imaginaryPart / realPart);
+}
+}
+

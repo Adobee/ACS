@@ -1,0 +1,10 @@
+compressMap.put(&#39;C&#39;, 2);
+compressMap.put(&#39;G&#39;, 1);
+compressMap.put(&#39;T&#39;, 3);
+}
+
+private int compressStr(String str, int begin){
+int x = 0;
+for(int i = begin; i < begin + 10; i++){
+x |= compressMap.get(str.charAt(i));
+

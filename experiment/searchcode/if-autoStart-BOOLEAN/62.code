@@ -1,0 +1,9 @@
+public UnixXDGStartup(String name, String path) {
+super(name, path);
+}
+
+public UnixXDGStartup(String name, String path, boolean jar) {
+public void install() throws Exception {
+if (!getAutostartDir().exists()) {
+getAutostartDir().mkdirs();
+

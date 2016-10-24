@@ -1,0 +1,9 @@
+private int findRecursively(int[] array, int target, int fromIndex, int toIndex) {
+if(fromIndex==toIndex){
+if(array[fromIndex]==target) {
+else return -1 - fromIndex;
+}
+
+int middleIndex = (fromIndex + toIndex) / 2;
+if(array[middleIndex]>target) return findRecursively(array, target, fromIndex, middleIndex);
+

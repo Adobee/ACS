@@ -1,0 +1,10 @@
+private void dfs(int n, int row, int[] columnForRow) {
+if (n == row) {
+count++;
+return;
+}
+for (int i = 0; i < n; i++) {
+columnForRow[row] = i;
+if (check(row, columnForRow)) {
+dfs(n, row + 1, columnForRow);
+

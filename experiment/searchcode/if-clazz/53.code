@@ -1,0 +1,12 @@
+public Clazz findById(String id) {
+if (!StringUtils.hasLength(id))
+return null;
+for (Clazz clazz : clazzPool) {
+if (id.equals(clazz.getId()))
+return clazz;
+}
+return null;
+}
+
+public List<Clazz> load() {
+

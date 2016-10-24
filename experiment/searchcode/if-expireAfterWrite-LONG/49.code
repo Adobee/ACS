@@ -1,0 +1,6 @@
+private final Cache<Long, Context> contexts;
+
+public TimerManager(long maxSize, int minutesUntilExpire) {
+.maximumSize(maxSize)
+.expireAfterWrite(minutesUntilExpire, TimeUnit.MINUTES)
+

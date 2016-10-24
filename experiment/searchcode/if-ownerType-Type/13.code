@@ -1,0 +1,14 @@
+public Type getOwnerType()
+{
+return ownerType;
+}
+
+@Override
+public boolean equals(Object obj)
+{
+if (!(obj instanceof ParameterizedType))
+int result = rawType.hashCode() ^ Arrays.hashCode(actualTypeArguments);
+if (ownerType != null)
+result ^= ownerType.hashCode();
+return result;
+

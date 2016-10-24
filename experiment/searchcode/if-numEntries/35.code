@@ -1,0 +1,11 @@
+public class ArrayBag<T> implements BagInterface<T> {
+
+private T[] bag;
+private int numEntries = 0; // points to the index of the next entry to add
+private static final int DEFAULT_CAPACITY = 10;
+public boolean add(T newEntry) {
+
+if (!isArrayFull()) {
+bag[numEntries] = newEntry;
+numEntries++;
+

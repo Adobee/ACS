@@ -1,0 +1,10 @@
+return;
+}
+
+int iterations = (int) Math.round(n.getDouble());
+if (iterations < 0) {
+// perform iteration f(f(f(...(startValue))))
+double val = startValue.getDouble();
+for (int i=0; i < iterations; i++) {
+val = f.evaluate(val);
+

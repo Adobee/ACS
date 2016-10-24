@@ -1,0 +1,8 @@
+public Category getSequential() {
+if (categories == null) {
+categories = dataAccess.getCategories(null);
+currentCategory = 0;
+}
+if (currentCategory < categories.size()) {
+category = categories.get(currentCategory);
+

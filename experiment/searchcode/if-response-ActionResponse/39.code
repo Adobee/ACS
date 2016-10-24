@@ -1,0 +1,12 @@
+String isbn = request.getParameter(&quot;isbn&quot;);
+System.out.println(isbn);
+
+if (customer == null) {
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;loginCustomer&quot;);
+return actionResponse;
+
+}
+else if(liked.equals(&quot;no&quot;)){
+reviewDAO.updateDislikes(reviewid);
+reviewDAO.addLikedToUser(customer.getId(), reviewid);
+

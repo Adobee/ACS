@@ -1,0 +1,7 @@
+* @param constraint reference constraint
+* @return new equation
+*/
+private LinearConstraint normalize(final LinearConstraint constraint) {
+if (constraint.getValue() < 0) {
+return new LinearConstraint(constraint.getCoefficients().mapMultiply(-1),
+

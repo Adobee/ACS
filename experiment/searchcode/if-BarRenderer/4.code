@@ -1,0 +1,6 @@
+// Inflate the menu; this adds items to the action bar if it is present.
+getMenuInflater().inflate(R.menu.main, menu);
+LinearLayout chartLayout = (LinearLayout)findViewById(R.id.achartengine);
+if(mChartView == null) {
+mChartView = ChartFactory.getBarChartView(this, mDataSet, mRenderer, Type.DEFAULT);
+

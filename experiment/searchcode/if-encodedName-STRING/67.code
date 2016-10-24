@@ -1,0 +1,10 @@
+public class QueryParamInjector extends StringParameterInjector implements ValueInjector
+{
+private boolean encode;
+private String encodedName;
+public Object inject(HttpRequest request, HttpResponse response)
+{
+if (encode)
+{
+List<String> list = request.getUri().getQueryParameters(false).get(encodedName);
+

@@ -1,0 +1,9 @@
+this(&quot;from &quot; + clazz.getName() + &quot; &quot; + alias);
+}
+
+public QueryBuilder(Class<?> clazz, String alias, List<String> fetchFields) {
+this(getInitQuery(clazz, alias, fetchFields));
+StringBuilder query = new StringBuilder(&quot;from &quot; + clazz.getName() + &quot; &quot; + alias);
+if (fetchFields != null &amp;&amp; !fetchFields.isEmpty()) {
+for (String fetchField : fetchFields) {
+

@@ -1,0 +1,9 @@
+return new FormattingTuple(sb.toString(), argArray, null);
+}
+
+private static boolean isEscapedDelimiter(String messagePattern, int delimiterStartIndex) {
+if (delimiterStartIndex == 0) {
+return false;
+}
+char potentialEscape = messagePattern.charAt(delimiterStartIndex - 1);
+

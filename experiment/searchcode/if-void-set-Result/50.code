@@ -1,0 +1,16 @@
+Thread _thread;
+
+boolean IsRunning(){
+return _running;
+}
+
+void Start(){
+if( _running ) return;
+_result=null;
+_running=true;
+_thread=new Thread( this );
+_thread.start();
+}
+
+void SetResult( Object result ){
+

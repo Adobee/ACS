@@ -1,0 +1,8 @@
+private int calculateTheta(int gX, int gY)
+{
+double temp = 0.0f;
+int theta;
+double angleTheta =Math.abs(Math.atan2(gX,gY));
+//Group Theta into a &#39;block&#39; either 0,45,90 or 135 - to be used for Non-Maximum Supression
+if ( angleTheta <= 22.5 || angleTheta >= 157.5)
+

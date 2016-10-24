@@ -1,0 +1,7 @@
+public static String capitalize(final String str) {
+int strLen;
+if (str == null || (strLen = str.length()) == 0) {
+char firstChar = str.charAt(0);
+if (Character.isTitleCase(firstChar)) {
+// already capitalized
+

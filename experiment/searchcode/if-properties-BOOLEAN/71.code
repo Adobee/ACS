@@ -1,0 +1,10 @@
+public static FilePropertiesManager init()
+{
+if ( FilePropertiesManager.instance == null )
+new_properties_location = new File( new_properties_path );
+}
+
+public Boolean checkFileSystemPropertiesExistence()
+{
+Boolean propertiesexists = new_properties_location.exists();
+

@@ -1,0 +1,10 @@
+import com.aliyun.odps.usertrajectory.BoundingBox;
+import com.aliyun.odps.usertrajectory.GeoDistance;
+import com.aliyun.odps.usertrajectory.Geohash;
+BoundingBox bb = Geohash.fromGeohashString(gh).getBoundingBox();
+if(min_x>bb.getMinLon()){
+min_x = bb.getMinLon();
+}
+if(max_x<bb.getMaxLon()){
+max_x=bb.getMaxLon();
+

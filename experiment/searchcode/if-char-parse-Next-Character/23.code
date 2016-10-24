@@ -1,0 +1,11 @@
+public class UpperAlphaParser implements Parser {
+public String parse(StringCharacterIterator input) {
+char ch = input.current();
+if (Character.isUpperCase(ch)) {
+input.next();
+return &quot;&quot; + ch;
+}
+return null;
+}
+}
+

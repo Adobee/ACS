@@ -1,0 +1,8 @@
+testRequestMethod(&quot;TRACE&quot;, false);
+}
+
+private void testRequestMethod(String requestMethod, boolean expectCached) throws Exception {
+URLConnection request2 = openConnection(url);
+if (expectCached) {
+assertEquals(&quot;1&quot;, request1.getHeaderField(&quot;X-Response-ID&quot;));
+

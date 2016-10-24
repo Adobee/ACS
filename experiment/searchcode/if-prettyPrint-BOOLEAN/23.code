@@ -1,0 +1,12 @@
+public void addPatient(Patient newPatient) {
+newPatient.setNext(head);
+head = newPatient;
+}
+
+public boolean delPatient(Patient patient) {
+if (head == null) {
+return false;
+}
+if (head == patient) {
+head = head.getNext();
+

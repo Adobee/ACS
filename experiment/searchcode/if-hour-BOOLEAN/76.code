@@ -1,0 +1,13 @@
+amPm = &quot;AM&quot;;
+hour = totalMinute / 60;
+if (hour > 24) {
+hour = hour % 24;
+if (hour > 12) {
+hour = hour % 12;
+minute = totalMinute % 60;
+}
+
+public boolean isWorkTime() {
+boolean check = false;
+if (amPm == &quot;AM&quot;) {
+

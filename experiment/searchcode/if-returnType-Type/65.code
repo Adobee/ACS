@@ -1,0 +1,10 @@
+public Type returnType() {
+Type retType = null;
+if (returnType == null) {
+retType = def().returnType().get();
+} else {
+retType = Types.get(returnType);
+}
+
+if (!isGeneric() || typeArguments == null) {
+

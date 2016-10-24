@@ -1,0 +1,12 @@
+public String timeConvertion(long TimePassed){
+// return string with the time elapsed
+long TimeP = TimePassed;
+long secondM = 1000;
+long minuteM = secondM * 60;
+long weekM = dayM *7;
+long yearM = weekM * 52;
+
+Long elapsedYears = TimeP / yearM;
+TimeP = TimeP % yearM;
+Long elapsedWeeks = TimeP / weekM;
+

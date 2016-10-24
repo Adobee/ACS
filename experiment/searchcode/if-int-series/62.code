@@ -1,0 +1,6 @@
+public class FibonacciSeries {
+public static int[] getSeries(int numberCount) {
+int[] fibonacciSeries= new int[numberCount];
+if (numberCount>1){
+fibonacciSeries[0]= 1;
+

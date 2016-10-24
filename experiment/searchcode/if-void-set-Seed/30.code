@@ -1,0 +1,13 @@
+private static Random singleton = null;
+private long seed;
+
+public static Random getInstance() {
+if (singleton == null){
+singleton = new Random();
+@Override
+public void setSeed(long seed) {
+this.seed = seed;
+RandomGenerator.singleton.setSeed(seed);
+}
+}
+

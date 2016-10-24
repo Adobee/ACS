@@ -1,0 +1,6 @@
+int N = 9;
+if (board == null || board.length != N || board[0].length != N) return false;
+boolean[][] rows = new boolean[N][N], cols = new boolean[N][N], blks = new boolean[N][N];
+int number = board[i][j] - &#39;1&#39;;
+if (rows[i][number] || cols[j][number] || blks[blkIndex][number]) return false;
+

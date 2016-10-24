@@ -1,0 +1,13 @@
+private LongInterval(long lo, long hi){
+if(lo>hi){
+long tmp = lo;
+lo = hi;
+hi = tmp;
+}
+this.lo = lo;
+this.hi = hi;
+}
+public LongInterval(CohoNumber v){
+if(v instanceof IntervalNumber){
+lo = ((IntervalNumber)v).lo().longValue();
+

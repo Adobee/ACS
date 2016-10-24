@@ -1,0 +1,14 @@
+public TimeAfterCondition(long repeat) {
+super(repeat);
+}
+
+@Override
+public boolean isRunning() {
+if (check())
+reset();
+return super.isRunning();
+}
+
+@Override
+public boolean waitFor(long maxTime) {
+

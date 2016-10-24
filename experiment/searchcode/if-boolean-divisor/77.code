@@ -1,0 +1,9 @@
+if(divisor==0) return dividend<0?Integer.MIN_VALUE:Integer.MAX_VALUE;
+boolean isNeg=false;
+if(dividend<0&amp;&amp;divisor>0) isNeg=true;
+public int divide(int dividend, int divisor) {
+if(divisor==0){
+return Integer.MAX_VALUE;
+}
+boolean isNeg=(dividend^divisor)>>>31==1;
+

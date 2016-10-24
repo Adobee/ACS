@@ -1,0 +1,12 @@
+private int keyMin;
+private int nextKey;
+private int poolSize;
+private String keyName;
+
+public KeyInfo(int poolSize, String keyName) {
+public synchronized int getNextKey() {
+if (nextKey > keyMax) {
+retrieveFromDB();
+}
+return nextKey++;
+

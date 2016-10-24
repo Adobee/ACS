@@ -1,0 +1,5 @@
+FieldRotation<Dfp> r = new FieldRotation<Dfp>(createAxis(10, 10, 10), createAngle(2 * FastMath.PI / 3));
+checkVector(r.applyTo(createVector(1, 0, 0)), createVector(0, 1, 0));
+new FieldRotation<Dfp>(createAxis(0, 0, 0), createAngle(2 * FastMath.PI / 3));
+Assert.fail(&quot;an exception should have been thrown&quot;);
+

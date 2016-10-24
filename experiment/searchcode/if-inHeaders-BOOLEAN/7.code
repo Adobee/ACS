@@ -1,0 +1,6 @@
+final BufferedReader buffered = new BufferedReader(new InputStreamReader(data));
+String line;
+boolean inHeaders = true;
+while ((line = buffered.readLine()) != null) {
+if (!inHeaders &amp;&amp; line.startsWith(&quot;From &quot;)) {
+

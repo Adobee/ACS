@@ -1,0 +1,7 @@
+boolean isCompletable = rawType == Completable.class;
+boolean isObservable = rawType == Observable.class;
+if (!isObservable &amp;&amp; !isSingle &amp;&amp; !isCompletable) {
+Type observableType = getParameterUpperBound(0, (ParameterizedType) returnType);
+Class<?> rawObservableType = getRawType(observableType);
+if (rawObservableType == Response.class) {
+

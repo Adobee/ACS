@@ -1,0 +1,10 @@
+public double isSmallerOrEqual(int i, double x) {
+double degree=0, mu;
+for(double y=max; y>=x ; y-=step) if((mu = isEqual(i,y))>degree) degree=mu;
+public double isGreaterOrEqual(int i, double x) {
+double degree=0, mu;
+for(double y=min; y<=x ; y+=step) if((mu = isEqual(i,y))>degree) degree=mu;
+return degree;
+}
+}
+

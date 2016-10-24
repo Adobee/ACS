@@ -1,0 +1,9 @@
+public class Uppg2 {
+public static double binarySqrt(double sqr, double eps) {
+if(sqr < 1) {
+throw new IllegalArgumentException(&quot;sqr has to be larger then on equals to 1.&quot;);
+private static double help(double sqr, double eps, double low, double high) {
+double middle = (high + low) / 2.0d;
+
+if(Math.abs((middle * middle) - sqr) < eps) {
+

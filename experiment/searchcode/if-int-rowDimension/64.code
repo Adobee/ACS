@@ -1,0 +1,10 @@
+private static final long serialVersionUID = -5962461716457143437L;
+
+/** Number of rows of the matrix. */
+private final int rowDimension;
+
+/** Number of columns of the matrix. */
+public SparseRealMatrix(int rowDimension, int columnDimension) {
+super(rowDimension, columnDimension);
+this.rowDimension = rowDimension;
+

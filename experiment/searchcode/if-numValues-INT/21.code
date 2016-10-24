@@ -1,0 +1,13 @@
+private int currentPos = 0;
+private int numValues = 0;
+private int sum = 0;
+
+public RunningAverage(int valueCount) {
+values = new int[valueCount];
+sum += values[currentPos];
+++currentPos;
+if (currentPos == values.length)
+currentPos = 0;
+
+if(numValues<values.length)
+

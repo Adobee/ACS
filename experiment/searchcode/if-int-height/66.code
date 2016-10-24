@@ -1,0 +1,7 @@
+int water = 0,len = height.length;
+if(len<=2) return 0;
+int high[] = new int[len]; //记录i~height-1最大的数的索引
+high[len-1] = len-1;
+for(int i=len-2;i>=0;--i)
+if(height[high[i+1]]>=height[i]) high[i] = high[i+1];
+

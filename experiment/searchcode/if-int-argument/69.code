@@ -1,0 +1,6 @@
+static final void method698(int argument, int argument_0_) {
+if (Class353_Sub6.anInt5507 == 1)
+Class264.anInt2046 = argument;
+else if (Class353_Sub6.anInt5507 == 2)
+Node_Sub47.anInt4283 = argument;
+

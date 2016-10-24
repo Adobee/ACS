@@ -1,0 +1,12 @@
+if (n <= 0) {
+return Double.NaN;
+}
+
+if (x == R_DT_0(lower_tail, log_p)) {
+return (0);
+public static double psignrank(double x, double n, boolean lower_tail, boolean log_p) {
+int i;
+double f, p;
+
+if (Double.isNaN(x) || Double.isNaN(n)) {
+

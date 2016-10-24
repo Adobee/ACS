@@ -1,0 +1,10 @@
+super(logger, jsonObject);
+}
+
+
+public void setHasDependentAttributes(Boolean hasDependentAttributes) {
+this.LOGGER.debug(Criteria.class, &quot;setHasDependentProperties&quot;, &quot;hasDependentAttributes=&quot; + hasDependentAttributes + &quot; on criteria=&quot; + getSymbolicName());
+getJsonObject().put(&quot;readOnly&quot;, readOnly);
+getJsonObject().put(&quot;updatedReadOnly&quot;, Boolean.TRUE);
+getJsonObject().put(&quot;updated&quot;, Boolean.TRUE);
+

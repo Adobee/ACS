@@ -1,0 +1,9 @@
+for (int i = 0; i < encodedPassword.length; i++)
+{
+if ((encodedPassword[i] &amp; 0xFF) < 16) {
+buf.append(&quot;0&quot;);
+}
+buf.append(Long.toString(encodedPassword[i] &amp; 0xFF, 16));
+}
+return buf.toString();
+

@@ -1,0 +1,12 @@
+protected static String htmlifyHelper(String text, boolean isHex, boolean isSurrogate) {
+
+StringBuffer sb = new StringBuffer();
+
+for (int i = 0; i < text.length(); i++) {
+// http://en.wikipedia.org/wiki/Character_encodings_in_HTML
+// Illegal characters section
+continue;
+} else {
+if (isHex) {
+sb.append(&quot;&amp;#x&quot; + Integer.toHexString(ch) + &quot;;&quot;);
+

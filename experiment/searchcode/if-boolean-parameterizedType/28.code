@@ -1,0 +1,9 @@
+import java.lang.reflect.Field;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+
+public class Reflects {
+
+public static boolean isComplexType(Class<?> clazz) {
+return (Object.class.isAssignableFrom(clazz) &amp;&amp; !Serializable.class.isAssignableFrom(clazz))
+

@@ -1,0 +1,13 @@
+package PowXN;
+
+public class Solution {
+public double pow(double x, int n){
+if(x==0) return 0;
+if(n==0) return 1;
+
+if(n==1) return x;
+
+if(n<0) return 1/pow(x,-n);
+
+double v = pow(x,n/2);
+

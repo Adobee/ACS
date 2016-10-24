@@ -1,0 +1,7 @@
+int minutesAgo = (int) (deltaTime / 60 / 1000);
+String newText = &quot;unknown&quot;;
+if (minutesAgo <= 0) {
+newText = &quot;Last report was 1 minute ago&quot;;
+} else if (minutesAgo < 60 &amp;&amp; minutesAgo > 0) {
+newText = &quot;Last report was &quot; + (minutesAgo + 1)
+

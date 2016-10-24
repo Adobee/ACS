@@ -1,0 +1,9 @@
+if (approx.total() == 4 &amp;&amp; area > minArea &amp;&amp; area < maxArea &amp;&amp; isConv) {
+double maxCosine = 0;
+final Point[] approxArr = approx.toArray();
+double cosine = Math.abs(angle(approxArr[j % 4], approxArr[j - 2], approxArr[j - 1]));
+maxCosine = Math.max(maxCosine, cosine);
+}
+
+if (maxCosine < tolerance) {
+

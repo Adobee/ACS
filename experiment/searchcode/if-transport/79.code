@@ -1,0 +1,14 @@
+import javax.xml.bind.annotation.XmlTransient;
+
+/**
+*
+* @author SANTOS
+*/
+@Entity
+@Table(name = &quot;transport_types&quot;, catalog = &quot;od&quot;, schema = &quot;public&quot;, uniqueConstraints = {
+if (!(object instanceof TransportTypes)) {
+return false;
+}
+TransportTypes other = (TransportTypes) object;
+if ((this.transportTypeId == null &amp;&amp; other.transportTypeId != null) || (this.transportTypeId != null &amp;&amp; !this.transportTypeId.equals(other.transportTypeId))) {
+

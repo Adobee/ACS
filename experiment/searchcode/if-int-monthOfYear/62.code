@@ -1,0 +1,8 @@
+int year = bundle.getInt(RefiCalcActivity.CURRENT_MORTGAGE_YEAR, -1);
+int monthOfYear;
+if (year == -1) {
+public void onDateSet(DatePicker view, int year, int monthOfYear,
+int dayOfMonth) {
+if (!isRefi) {
+listener.setMortgageDate(monthOfYear, year);
+

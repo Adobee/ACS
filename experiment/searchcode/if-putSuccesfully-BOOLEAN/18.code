@@ -1,0 +1,9 @@
+this.cache = cache;
+this.maxAge = 1000 * maxAge;
+}
+
+public boolean put(String key, Bitmap value) {
+boolean putSuccesfully = this.cache.put(key, value);
+if (putSuccesfully) {
+this.loadingDates.put(key, Long.valueOf(System.currentTimeMillis()));
+

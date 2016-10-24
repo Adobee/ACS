@@ -1,0 +1,11 @@
+package LinkedIn;
+
+public class bitCompare
+{
+public int[] array ;
+public bitCompare(int[] array)
+int compare = 0 ;
+for(int a : array)
+{
+compare = compare^a ;  // ^ if even, the value would be 0, else the value would be the odd number
+

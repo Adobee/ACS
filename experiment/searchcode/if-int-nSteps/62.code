@@ -1,0 +1,13 @@
+import java.util.ArrayList;
+
+public class Walker {
+
+public int nSteps = 0;
+public int x_new, y_new;
+this.nSteps++;
+}
+
+public void walk(int nSteps, boolean verbose) {
+if (verbose)
+this.printCurrentState();
+

@@ -1,0 +1,10 @@
+public class MockTimeSource implements TimeSource {
+private final AtomicLong time = new AtomicLong();
+
+/**
+* If >= 1, <code>time</code> will be incremented automatically with that value at each call to {@link #getTime()}.
+* Add <code>increment</code> to this time source.
+*/
+public void inc(long increment) {
+if (increment < 0) {
+

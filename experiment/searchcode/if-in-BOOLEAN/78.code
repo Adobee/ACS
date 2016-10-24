@@ -1,0 +1,13 @@
+private boolean bottomIn = false;
+private boolean bottomOut = false;
+
+Light() {
+}
+
+public boolean onOff(boolean light, boolean in, boolean out) {
+
+this.bottomIn = in;
+this.bottomOut = out;
+
+if ((bottomIn || bottomOut) &amp;&amp; !light) {
+

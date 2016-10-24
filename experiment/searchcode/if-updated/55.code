@@ -1,0 +1,8 @@
+import com.awesome.turtlenecksandgotos.model.lastupdated.HasLastUpdated;
+
+public class LastUpdatedHandler<T> extends AbstractDateHandler<T> {
+
+@Override
+protected void handle(Date date, T entity) {
+if (entity instanceof HasLastUpdated) {
+

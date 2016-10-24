@@ -1,0 +1,10 @@
+public void setTsType(Integer tsType) {
+this.tsType = tsType;
+}
+
+@Override
+public int hashCode() {
+int hash = 0;
+hash += (tsId != null ? tsId.hashCode() : 0);
+return hash;
+

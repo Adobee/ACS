@@ -1,0 +1,6 @@
+public LineSearchBacktracking(Optimizable func, double initStp, double ftol, double gtol, int maxStep) {
+public double linesearch(double fx, double[] x, double[] xp, double[] g, double[] sd) {
+
+double dg_init = Utils.dotProduct(sd, g), t = m_ftol * dg_init, value = 0, dg;
+double width = 1.0, stp = m_istp;
+

@@ -1,0 +1,11 @@
+else low = m;
+}
+System.out.printf(&quot;%.2f\n&quot;, low);
+}
+
+double calc(double[] c, double a0, double a1){
+int n = c.length;
+double next = 0;
+for(int i = 0; i < n; i++){
+next = 2 * (a1 + c[i]) - a0;
+

@@ -1,0 +1,12 @@
+public class DatagramIOConfigurationImpl implements DatagramIOConfiguration {
+
+private int timeToLive = 4;
+private int maxDatagramBytes = 640;
+
+/**
+* Defaults to TTL of &#39;4&#39; and maximum datagram size of 640 bytes (512 per UDA 1.0, 128 byte header).
+public DatagramIOConfigurationImpl() {
+}
+
+public DatagramIOConfigurationImpl(int timeToLive, int maxDatagramBytes) {
+

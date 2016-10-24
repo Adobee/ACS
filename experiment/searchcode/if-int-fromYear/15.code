@@ -1,0 +1,11 @@
+final YearMonth maxFrom = this.maximumFrom(series);
+final YearMonth minTo = series.getTo();
+
+final int fromYear = maxFrom.getYear();
+answer.putAmount(y, m, this.adjust(series.getAmount(y, m), y, m, referenceYear, referenceMonth));
+}
+}
+
+if (fromYear < toYear) {
+for (int m = 1; m <= toMonth; m++) {
+

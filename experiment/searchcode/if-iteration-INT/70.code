@@ -1,0 +1,11 @@
+public class Waiter extends LoopHandler {
+
+private int targetIteration;
+
+public Waiter() {
+targetIteration = -1;
+}
+
+public void waitXLoops(int waitTime) {
+this.targetIteration = getCurrentIteration() + waitTime;
+

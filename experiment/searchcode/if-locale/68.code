@@ -1,0 +1,15 @@
+public class LocaleHelper {
+
+public static Locale getLocaleObject(User u) {
+String locale = u.getLocale();
+if(locale != null) {
+for (Locale l : locales) {
+if (locale.startsWith(l.getLanguage())) {
+return l;
+}
+}
+}
+return Locale.getDefault();
+}
+}
+

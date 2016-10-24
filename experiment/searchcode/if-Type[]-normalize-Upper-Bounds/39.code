@@ -1,0 +1,9 @@
+* {@link #normalizeUpperBounds}.
+* </p>
+*
+* @param typeVariable
+*            the subject type variable
+Type[] bounds = typeVariable.getBounds();
+
+return bounds.length == 0 ? new Type[] { Object.class } : normalizeUpperBounds(bounds);
+

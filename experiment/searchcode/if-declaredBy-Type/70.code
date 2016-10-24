@@ -1,0 +1,8 @@
+result.add(candidate);
+}
+private boolean declaredBy(final SimpleName ¢) {
+if (¢ == focus) {
+@Override boolean go(final EnhancedForStatement ¢) {
+final SimpleName name = ¢.getParameter().getName();
+if (name == focus || !declaredBy(name))
+

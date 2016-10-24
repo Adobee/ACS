@@ -1,0 +1,19 @@
+int xor = 0;
+for(int tmp : nums){
+xor ^= tmp;
+}
+int mask = xor &amp; (~(xor-1));
+int i=0, j=0;
+for(int tmp : nums){
+if((tmp &amp; mask) == 0){
+i ^= tmp;
+}
+else{
+j ^= tmp;
+}
+}
+rst[0] = i; rst[1] = j;
+return rst;
+}
+}
+

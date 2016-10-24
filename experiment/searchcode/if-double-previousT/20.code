@@ -1,0 +1,8 @@
+start(previousF.length, stepSize, manager, equations, stepStart, y);
+if (Double.isNaN(previousT[0])) {
+return stopTime;
+}
+stepStart = previousT[0];
+start(previousF.length, stepSize, manager, equations, stepStart, y);
+if (Double.isNaN(previousT[0])) {
+

@@ -1,0 +1,8 @@
+this(null);
+}
+
+public MappingJsonFactory(ObjectMapper objectMapper) {
+super(objectMapper);
+if (objectMapper == null) {
+setCodec(new ObjectMapper(this));
+

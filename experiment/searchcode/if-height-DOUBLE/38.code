@@ -1,0 +1,5 @@
+public double calculate(double originalWidth, double originalHeight, double targetWidth, double targetHeight) {
+double heightScale = targetHeight / originalHeight;
+double widthScale = targetWidth / originalWidth;
+if(heightScale < 1.0 || widthScale < 1.0){
+

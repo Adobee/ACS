@@ -1,0 +1,9 @@
+logger.info(&quot;-->  creating repository&quot;);
+File repositoryLocation = newTempDir(LifecycleScope.SUITE);
+boolean throttleSnapshot = randomBoolean();
+restorePause += repositoriesService.repository(&quot;test-repo&quot;).restoreThrottleTimeInNanos();
+}
+
+if (throttleSnapshot) {
+assertThat(snapshotPause, greaterThan(0L));
+

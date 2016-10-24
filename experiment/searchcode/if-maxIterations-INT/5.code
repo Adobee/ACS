@@ -1,0 +1,14 @@
+public class ListCyclicInfiniteIterator<K> implements Iterator<K> {
+
+List<K> list;
+
+Random rand;
+
+int nbIterations = 0;
+int maxIterations;
+maxIterations = -1;
+this.rand = rand;
+}
+
+public ListCyclicInfiniteIterator(List<K> l, int maxIterations) {
+

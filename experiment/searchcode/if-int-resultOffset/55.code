@@ -1,0 +1,16 @@
+} else if (SpecificationParser.SERVICE_NAME_PATTERN.equals(pattern)) {
+
+formatString = badServiceName;
+
+}
+
+try {
+int resultOffset = -1;
+resultOffset = document.search(0, searchString, true, true, false);
+
+}
+
+if (resultOffset == -1) {
+
+resultOffset = 0;
+

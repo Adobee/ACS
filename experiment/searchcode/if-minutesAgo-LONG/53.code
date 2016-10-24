@@ -1,0 +1,9 @@
+int minutesAgo = 1;
+Matcher minuteMatch = TIMESTAMP_MINUTES.matcher(s);
+if (minuteMatch.matches()) {
+minutesAgo = Integer.parseInt(minuteMatch.group(1));
+private static long getCommentIdFromString(String s) {
+Matcher idMatcher = COMMENT_ID.matcher(s);
+if (idMatcher.matches()) {
+return Long.parseLong(idMatcher.group(1));
+

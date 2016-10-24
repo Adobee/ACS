@@ -1,0 +1,13 @@
+index = 1;
+}
+long i = n / 2;
+while (n % (2 * i - 1) != 0) {
+i--;
+}
+if (i == 1 &amp;&amp; (n % 2 != 0)) {
+long p1 = primefactor(p);
+long p2 = primefactor(n / p);
+if (p1 >= p2) {
+if (index == 1) {
+return (p1 > 2) ? p1 : 2;
+

@@ -1,0 +1,11 @@
+Flow f = flows.get(i);
+Node from = f.getFrom();
+Node to   = f.getTo();
+NodeVertex vFrom = nodeMap.get(from);
+graph.addEdge(myEdge, vFrom, vTo);
+}
+}
+
+public NodeVertex addVertex(Place place){
+if(nodeMap.containsKey(place)){
+

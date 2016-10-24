@@ -1,0 +1,9 @@
+double sizeY = shape.getLayoutBounds().getHeight();
+
+if(shape.getCursor().equals(Cursor.NW_RESIZE)){
+double t = (sizeX/2+event.getX())/10;
+shape.setTranslateX(shape.getTranslateX()+t);
+if(event.getY() < 0){
+double t2 = (sizeY/2+event.getY())/10;
+shape.setRadiusY(shape.getRadiusY()-t2);
+

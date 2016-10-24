@@ -1,0 +1,9 @@
+public class ValueObjectDate extends ValueObjectComparable<Date> {
+
+private static final long serialVersionUID = 1L;
+return (Date) super.getValue().clone(); // Date is mutable
+}
+
+public static ValueObjectDate newOrNull(Date value) {
+if (value != null) {
+

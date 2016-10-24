@@ -1,0 +1,13 @@
+public class InstantExample {
+
+public long testMe() {
+Instant instant = Instant.now();
+return instant.getEpochSecond();
+Instant instant = Instant.now(Clock.systemDefaultZone());
+if(instant.isBefore(otherInstant))
+return true;
+else
+return false;
+}
+}
+

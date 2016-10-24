@@ -1,0 +1,8 @@
+/* program was called with message size and output filename	*/
+msgSize[0] = Integer.parseInt(args[0]);
+if (msgSize[0] <= 0)
+MPI.COMM_WORLD.bcast (msgSize, 1, MPI.INT, 0);
+if (msgSize[0] <= 0)
+{
+/* wrong value							*/
+

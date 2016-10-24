@@ -1,0 +1,12 @@
+
+public class Karatsuba
+{
+public long karMult(long x, long y){
+int size1 = getSize(x);
+int size2 = getSize(y);
+
+int N = Math.max(size1, size2);
+
+if (N < 10) {
+return x * y;
+

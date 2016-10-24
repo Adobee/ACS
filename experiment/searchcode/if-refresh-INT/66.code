@@ -1,0 +1,12 @@
+import java.util.Date;
+import java.util.List;
+
+public class RefreshCheckerThread extends Thread {
+private int refreshInterval = 60;
+public void addListener(RefreshListener listener) {
+listeners.add(listener);
+
+}
+
+public void setRefreshInterval(int refreshInterval) {
+

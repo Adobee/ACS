@@ -1,0 +1,14 @@
+public int id;
+private double[] accuracy;
+public int x;
+public int y;
+private int counter;
+private double prevmed;
+this.accuracy = accuracy;
+
+}
+public void addDistance(double accuracy) {
+
+if (this.counter == 0)
+this.prevmed = this.getStableDistance();
+

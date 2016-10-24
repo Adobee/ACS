@@ -1,0 +1,15 @@
+return ei;
+}
+}
+return null;
+}
+
+public boolean isImplicitCastValidImpl(Type toType){
+if (isAutoUnboxingValid(toType)) return true;
+return ts.isImplicitCastValid(this, ((TypeNode)it.bounds().get(0)).type());
+}
+
+private boolean isAutoUnboxingValid(Type toType){
+
+if (!toType.isPrimitive()) return false;
+

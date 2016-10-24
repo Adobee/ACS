@@ -1,0 +1,6 @@
+// TODO: still not right
+public final static double trilerp(double a, double b, double c, double alpha) {
+double alphaN = 0.5f * alpha + 0.5f;
+double lerpAB = (1 - alphaN) * a + alphaN * b;
+double lerpBC = (1 - alphaN) * b + alphaN * c;
+

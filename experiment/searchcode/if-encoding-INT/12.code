@@ -1,0 +1,9 @@
+public class TextEncodingSection extends AbstractSection {
+public static final int ENCODING_SIZE = 1;
+
+/**
+* Encoding to use when converting from Unicode (String) to bytes.
+protected int getEncodingIndex(String encoding) {
+for (int i = 0; i < ENCODINGS.length; i++) {
+if (ENCODINGS[i].equals(encoding))
+

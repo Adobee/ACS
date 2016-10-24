@@ -1,0 +1,13 @@
+private double threshold;
+
+public TruncationFactor(){
+threshold=Double.MAX_VALUE;
+}
+
+public TruncationFactor(double t){
+this.threshold=t;
+}
+
+public double logFactor(double energy) {
+if(energy<=threshold) return 0;
+

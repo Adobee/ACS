@@ -1,0 +1,10 @@
+public class CauchyDecider extends FailureDecider {
+private double mymu;
+
+private double mysd;
+
+public CauchyDecider(double mu, double sd) {
+@Override
+protected double getReliability(double timeElapsed) {
+return CauchyReliability(mymu, mysd, timeElapsed);
+

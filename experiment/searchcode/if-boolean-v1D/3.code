@@ -1,0 +1,10 @@
+super(p);
+}
+
+@Override
+public boolean click(MouseEvent e) {
+Point p = e.getPoint();
+if(isBeingBuilt) {
+if(points.size() == 0){
+points.add(lastMove = new Point2D.Double(p.getX(), p.getY()));
+

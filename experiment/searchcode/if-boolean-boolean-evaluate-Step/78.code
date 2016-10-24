@@ -1,0 +1,12 @@
+import org.cyclops.cyclopscore.modcompat.IModCompat;
+import org.cyclops.integrateddynamics.Reference;
+import org.cyclops.integrateddynamics.api.evaluate.EvaluationException;
+return Reference.MOD_IC2;
+}
+
+@Override
+public void onInit(Step step) {
+if(step == Step.PREINIT) {
+// Aspects
+Aspects.REGISTRY.register(PartTypes.MACHINE_READER, Sets.<IAspect>newHashSet(
+

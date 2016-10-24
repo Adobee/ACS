@@ -1,0 +1,10 @@
+import okhttp3.RequestBody;
+import okio.BufferedSink;
+import okio.Timeout;
+
+/**
+* A request body that&#39;s populated by blocking writes to an output stream. The output data is either
+public abstract class OutputStreamRequestBody extends RequestBody {
+private Timeout timeout;
+private long expectedContentLength;
+

@@ -1,0 +1,11 @@
+terrainRanges.add(new HeightRange(0.9, Double.MAX_VALUE, new Color(10,110,10)));
+
+
+boolean goodTerrain = false;
+for(int j = 0; j < terrain[i].length; j++){
+
+g.setColor(Color.RED);
+
+for(HeightRange range : terrainRanges){
+if(range.contains(terrain[i][j])){
+

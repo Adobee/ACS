@@ -1,0 +1,12 @@
+totalMem = runtime.totalMemory();
+long freeMem = runtime.freeMemory();
+usedMem = totalMem - freeMem;
+if (convertToMeg(prevUsedMem) != convertToMeg(usedMem)) {
+this.hasChanged = true;
+}
+if (prevTotalMem != totalMem) {
+prevTotalMem = totalMem;
+this.hasChanged = true;
+}
+}
+

@@ -1,0 +1,12 @@
+fieldslist.add(field);
+}
+
+public String get(String fieldName) {
+if (fieldName == null || fieldName.trim().length() <= 0)
+public Hashtable getFields() {
+return fields;
+}
+
+public Field getField(String fieldName) {
+if (fieldName == null)
+

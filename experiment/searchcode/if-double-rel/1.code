@@ -1,0 +1,14 @@
+//          2 : rel = 2 * 4 = 8 ,a = 4*4=16, n=0;
+// output: rel = 8=2^3
+double pow(double a, int b) {
+long n=b;
+if (n<0) {n=Math.abs(n);a=1/a;}
+double rel=1;
+while (n!=0) {
+if ((n&amp;1)==1) rel*=a;
+a*=a;n>>=1;
+}
+return rel;
+}
+}
+

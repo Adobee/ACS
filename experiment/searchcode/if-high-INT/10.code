@@ -1,0 +1,8 @@
+public int minBoxes(int C, int X, int[] high) {
+Arrays.sort(high);
+int sum_of_high = 0;
+for(int i = 0; i < high.length; i++){
+sum_of_high += high[i];
+}
+int num_of_empty = sum_of_high - C;
+

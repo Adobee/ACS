@@ -1,0 +1,9 @@
+* Created by Staryet on 15/8/14.
+*/
+@Service
+public class MasterService {
+
+public boolean isMaster(HttpServletRequest request) {
+String masterSign = request.getHeader(&quot;JB-MasterSign&quot;);
+if (!StringUtils.isEmpty(masterSign)) {
+

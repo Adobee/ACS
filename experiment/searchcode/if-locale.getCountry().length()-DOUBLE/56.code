@@ -1,0 +1,7 @@
+Control control = super.createContents(parent);
+// set initial value
+if (m_selectedLocale != null) {
+Locale locale = m_selectedLocale.getLocale();
+if (locale != null) {
+updateLocalePartCombo(m_languageCombo, LocalePartInfos.getLanguages(), locale.getLanguage());
+

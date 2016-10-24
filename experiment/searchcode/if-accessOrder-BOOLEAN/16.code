@@ -1,0 +1,11 @@
+private static final long serialVersionUID = 1L;
+
+private transient Entry<K,V> header;
+
+private final boolean accessOrder;
+
+public LinkedHashMap(int initialCapacity, float loadFactor) {
+public LinkedHashMap(int initialCapacity, float loadFactor, boolean accessOrder) {
+super(initialCapacity, loadFactor);
+this.accessOrder = accessOrder;
+

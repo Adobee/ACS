@@ -1,0 +1,8 @@
+public class Quicksort<T extends Comparable<T>> {
+
+private static <T extends Comparable<T>> int split(T[] array, int lowIndex, int highIndex) {
+private static <T extends Comparable<T>> void sort(T[] array, int lowIndex, int highIndex) {
+if (lowIndex < highIndex) {
+int splitPoint = split(array, lowIndex, highIndex);
+sort(array, lowIndex, splitPoint - 1);
+

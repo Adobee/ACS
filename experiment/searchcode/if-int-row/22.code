@@ -1,0 +1,7 @@
+for (int i = 0; i < n; i++) {
+row[curRow] = i;
+if (isValid(row, curRow)) {
+public boolean isValid(int[] row, int curRow) {
+for (int i = 0; i < curRow; i++) {
+if (row[i] == row[curRow] || curRow - i == Math.abs(row[i] - row[curRow])) {
+

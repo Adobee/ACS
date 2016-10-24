@@ -1,0 +1,11 @@
+this.points=p;
+}
+
+@Override
+public double fun(double val) {
+if (val <= points.get(0).x)
+return points.get(0).y;
+if (val >= points.get(points.size()-1).x)
+return points.get(points.size()-1).y;
+for (int i = 0; i < points.size() - 1; i++) {
+

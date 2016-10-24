@@ -1,0 +1,14 @@
+public class _IndexIntResource1 extends CgpResIntIndex
+{
+public _IndexIntResource1()
+{
+valueArray = new int[11];
+valueArray[0] = 0;
+valueArray[9] = 9;
+valueArray[10] = 10;
+}
+
+public int getIndexFromValue(int value)
+{
+int index=-1;
+

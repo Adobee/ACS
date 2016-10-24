@@ -1,0 +1,7 @@
+private final List<Individual> population;
+private double populationFitness = -1;
+private final int populationSize;
+
+public Population(int populationSize) {
+this.populationSize = populationSize;
+

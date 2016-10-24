@@ -1,0 +1,6 @@
+public double findMedianSortedArrays(int[] nums1, int[] nums2) {
+int m = nums1.length, n = nums2.length, len = m + n;
+if ((len &amp; 1) == 1) {
+int getKth(int[] nums1, int offset1, int m, int[] nums2, int offset2, int n, int k) {
+if (m > n) return getKth(nums2, offset2, n, nums1, offset1, m, k);
+

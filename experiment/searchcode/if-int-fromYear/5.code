@@ -1,0 +1,11 @@
+public String savePassingYearInfo()
+{
+HttpServletResponse response = ServletActionContext.getResponse();
+int fromYear=0;
+int toYear=0;
+boolean resp=false;
+String msg=&quot;&quot;;
+try{
+fromYear=Integer.parseInt(this.fromYear);
+toYear=Integer.parseInt(this.toYear);
+

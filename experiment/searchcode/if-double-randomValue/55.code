@@ -1,0 +1,17 @@
+package arrays;
+
+import static utility.MiscUtil.*;
+
+public class DoubleFinder {
+
+public static int doubleFinder(int[] input){
+input[randomIndex]=randomValue;
+
+shuffle(input);
+//		printArr(input);
+
+System.out.println();
+System.out.println(doubleFinder(input));
+}
+}
+

@@ -1,0 +1,10 @@
+private static final double EPS5 = 0.001; // 機械エプシロンの1/5乗程度
+
+public static double sinh(double x) { // sinh x
+if (Math.abs(x) > EPS5) {
+return x * (1 + x * x / 6);
+}
+
+public static double cosh(double x) { // cosh x
+double t = Math.exp(x);
+

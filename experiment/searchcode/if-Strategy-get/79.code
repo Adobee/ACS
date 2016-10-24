@@ -1,0 +1,10 @@
+protected GameMapAnalyzer getAnalyzer() {
+return analyzer;
+}
+
+protected PlayerAction performNextStrategy() {
+if (nextStrategy == null) {
+return new PlayerAction();
+}
+return nextStrategy.performStrategy();
+

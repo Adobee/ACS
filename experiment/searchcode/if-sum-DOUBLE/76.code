@@ -1,0 +1,14 @@
+public void add(long t, double val)
+{
+this.sumXY += t * val;
+this.sumX += t;
+this.sumY += val;
+this.sumXSquared += t*t;
+
+++this.len;
+}
+
+public void finalize()
+{
+if(this.len*this.sumXSquared - this.sumX*this.sumX != 0)
+

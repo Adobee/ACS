@@ -1,0 +1,9 @@
+IWorkbenchWindow win = wwr.wbwin;
+
+IWorkbenchPage page = win.getActivePage();
+if (page == null) return null;
+try {
+// create folders if needed
+boolean folderWasCreated = false;
+IPath path = newfile.getLocation().removeLastSegments(1);
+

@@ -1,0 +1,12 @@
+public void setSampleSize(long sampleSize) {
+this.sampleSize = sampleSize;
+}
+
+
+public long getSampleSizeAtIndex(int index) {
+if (sampleSize > 0) {
+sampleCount = l2i(IsoTypeReader.readUInt32(content));
+
+if (sampleSize == 0) {
+sampleSizes = new long[(int) sampleCount];
+

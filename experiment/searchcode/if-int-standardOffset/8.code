@@ -1,0 +1,7 @@
+private final int iWallOffset;
+private final int iStandardOffset;
+
+public FixedDateTimeZone(String id, String nameKey, int wallOffset, int standardOffset) {
+super(id);
+iNameKey = nameKey;
+

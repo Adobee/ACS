@@ -1,0 +1,8 @@
+int startrow = layer;
+int endrow = n - layer - 1;
+int startcolumn = layer;
+int endcolumn = n - layer - 1;
+
+if(startrow == endrow &amp;&amp; startcolumn == endcolumn){
+matrix[startrow][endrow] = startvalue + 1;
+

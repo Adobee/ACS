@@ -1,0 +1,12 @@
+this.constraints = constraints;
+this.equations = equations;
+this.rhs = rhs;
+}
+
+protected void pivot(int pivotRow, int pivotColumn) {
+for(int i=0;i<m[pivotRow].length;++i) {
+m[pivotRow][i] = m[pivotRow][i] / quotient;
+}
+for(int i=0;i<m.length;++i) {
+if(m[i][pivotColumn] != 0 &amp;&amp; i != pivotRow) {
+

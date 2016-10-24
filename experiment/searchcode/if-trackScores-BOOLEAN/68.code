@@ -1,0 +1,8 @@
+final IndexReader reader = w.getReader();
+final IndexSearcher searcher = newSearcher(reader);
+
+final boolean trackScores = randomBoolean();
+Query query = new TermQuery(new Term(&quot;foo&quot;, &quot;bar&quot;));
+if (trackScores == false) {
+query.setBoost(0f);
+

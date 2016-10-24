@@ -1,0 +1,9 @@
+private long maxXid;
+/**
+* Difference result
+*/
+private Difference<StateNode> difference;
+public void serialize(DataOutput out) throws IOException {
+if (difference == null) {
+throw new IllegalArgumentException(&quot;Please set difference first.&quot;);
+

@@ -1,0 +1,11 @@
+for (long rad = 1; rad <= n; rad *= 10) {
+long k = (n - rad) / rad - d;
+long m = k < 0 ? 0 : rad * (k / 10 + 1);
+if ((n / rad) % 10 == d) {
+long min = I[i++], max = I[i++], diff = max - min;
+if (diff < 0) {
+continue;
+}
+if (diff < 100) {
+for (long n = min; n <= max; n++) {
+

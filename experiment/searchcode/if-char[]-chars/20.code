@@ -1,0 +1,12 @@
+for (int i = 1; i < chars.length; i++) {
+if (chars[i] == currentChar) {
+count++;
+continue;
+}
+if (count > 1) {
+currentChar = chars[i];
+count = 1;
+}
+if (count > 1) {
+chars[tail++] = (char) (count + &#39;0&#39;);
+

@@ -1,0 +1,8 @@
+private Communicator nsi;
+
+public ObjectBroker(String host, int port) {
+super();
+int randomPort = new Random().nextInt(MAX_PORT - 1025) + 1025;
+nsi = new Communicator(randomPort, host, port);
+Thread thread = new Thread(nsi);
+

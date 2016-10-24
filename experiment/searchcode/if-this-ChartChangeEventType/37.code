@@ -1,0 +1,6 @@
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(ChartChangeEventType.GENERAL)) {
+return ChartChangeEventType.GENERAL;
+}
+else if (this.equals(ChartChangeEventType.NEW_DATASET)) {
+

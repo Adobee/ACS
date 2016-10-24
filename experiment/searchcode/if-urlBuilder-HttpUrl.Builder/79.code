@@ -1,0 +1,8 @@
+String CLIENT_ID_PARAM = Constants.CLIENT_ID_PARAM;
+
+OkHttpClient client = new OkHttpClient.Builder().build();
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(PHOTO_URL_BASE).newBuilder();
+
+urlBuilder.addQueryParameter(CLIENT_ID_PARAM, UNSPLASH_API_KEY);
+

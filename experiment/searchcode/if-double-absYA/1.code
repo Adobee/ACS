@@ -1,0 +1,8 @@
+/*  21:    */   {
+/*  22: 77 */     if (maximalOrder < 2) {
+/*  23: 78 */       throw new NumberIsTooSmallException(Integer.valueOf(maximalOrder), Integer.valueOf(2), true);
+/*  84:201 */     this.evaluations.incrementCount();
+/*  85:202 */     y[1] = f.value(x[1]);
+/*  86:203 */     if (y[1].isZero()) {
+/*  87:205 */       return x[1];
+

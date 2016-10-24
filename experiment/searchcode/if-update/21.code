@@ -1,0 +1,17 @@
+public static interface CounterUpdate {
+public void update(Counter counter);
+}
+
+private CounterUpdate update;
+return super.getValue();
+}
+
+protected void notifyUpdate() {
+if (update != null) {
+synchronized (this) {
+update.update(this);
+}
+}
+}
+}
+

@@ -1,0 +1,11 @@
+Scanner scanner = new Scanner(System.in);
+double a, b, c;
+double realPart, imaginaryPart;
+System.out.print(&quot;5번 <실계수 이차방정식의 해>\n&quot;
+scanner.close();
+
+realPart = - (b / 2*a);
+imaginaryPart = Math.sqrt(Math.abs(b*b - 4*a*c))/2*a;
+
+if(a!=0)
+

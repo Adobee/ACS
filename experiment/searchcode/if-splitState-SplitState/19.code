@@ -1,0 +1,13 @@
+public long getSplitNanoTime()
+{
+if (this.splitState != 11)
+throw new IllegalStateException(&quot;Stopwatch must be split to get the split time. &quot;);
+this.stopTime = System.nanoTime();
+this.splitState = 11;
+}
+
+public void start()
+{
+if (this.runningState == 2)
+throw new IllegalStateException(&quot;Stopwatch must be reset before being restarted. &quot;);
+

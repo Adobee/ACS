@@ -1,0 +1,7 @@
+* VARIANT 4:  A partition is acceptable if the parent represents
+* an increace in the ratio of the c/s among the branches...
+* (So a good partition will represent a local c/s minima)
+public boolean isAcceptable(Cluster ci, Cluster cj, int c) {
+double ovRatio = (double) c / (ci.size() + cj.size());
+double lRatio = (double) ci.connections() / ci.size();
+

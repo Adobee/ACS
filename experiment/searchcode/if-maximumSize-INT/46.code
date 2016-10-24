@@ -1,0 +1,10 @@
+private int maximumSize;
+private Comparator<K> lookupComparator;
+
+public AbstractCache(int maximumSize) {
+public AbstractCache(LookupMode lookupMode, int maximumSize) {
+this(lookupMode.lookupComparator(), maximumSize);
+}
+
+public AbstractCache(Comparator<K> comparator, int maximumSize) {
+

@@ -1,0 +1,9 @@
+return this.engine != null;
+}
+
+public final boolean hasScript() {
+return this.script != null &amp;&amp; this.script.length() > 0;
+final boolean tryRender(SXElement element, String tagName) {
+if (this.hasScript()) {
+element = element.append(tagName);
+

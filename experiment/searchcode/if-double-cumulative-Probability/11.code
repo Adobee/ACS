@@ -1,0 +1,10 @@
+private EmpiricRandom<T> random;
+private double cumulativeProbability;
+
+public Builder() {
+random = new EmpiricRandom<T>();
+public EmpiricRandom<T> get() {
+
+if (Double.compare(cumulativeProbability, 1.0) != 0) {
+throw new IllegalStateException(&quot;The total cumulative probability within an empiric random generator did not equal 1: &quot; + cumulativeProbability);
+

@@ -1,0 +1,12 @@
+super();
+}
+public int compareTo(ComparableHashMap m2) {
+for (K key : this.keySet()) {
+if (((Comparable) this.get(key)).compareTo(m2.get(key)) != 0) {
+return -1;
+}
+}
+return 0;
+}
+}
+

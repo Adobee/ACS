@@ -1,0 +1,10 @@
+static double bisect(MFunction fun, double eps, double a0, double b0){
+
+double a = a0;
+double b = b0;
+double e=Math.abs((b-a)/2);
+double x=(b+a)/2;
+
+while(Math.abs(e)>eps){
+e=Math.abs((b-a)/2);
+

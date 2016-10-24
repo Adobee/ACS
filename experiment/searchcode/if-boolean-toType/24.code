@@ -1,0 +1,8 @@
+public Object transmute(String value, Type toType) {
+if (isEmpty(value) &amp;&amp; isPrimitive(toType)) {
+value = null; // this allows Ognl to use that primitives default value
+return valueConverterFinder.findConverter(toType).convertValue(null, value, toType);
+}
+
+private boolean isPrimitive(Type toType) {
+

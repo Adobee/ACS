@@ -1,0 +1,11 @@
+if (itp == null) throw new NullPointerException();
+this.itp = itp;
+}
+
+public double getValue(double x)
+{
+int absx = (int) SimpleMath.floord(x);
+double fractx = x - absx;
+double valx = rng.randomDouble(absx);
+double valX = rng.randomDouble(absx + 1);
+

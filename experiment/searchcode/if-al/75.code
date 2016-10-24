@@ -1,0 +1,12 @@
+int[] loop = new int[1];
+
+// load wav data into buffers
+al.alGenBuffers(NUM_BUFFERS, buffers, 0);
+if (al.alGetError() != AL.AL_NO_ERROR) {
+// do another error check and return
+if (al.alGetError() != AL.AL_NO_ERROR) {
+return AL.AL_FALSE;
+}
+
+return AL.AL_TRUE;
+

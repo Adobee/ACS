@@ -1,0 +1,8 @@
+HashSet<Character> set = new HashSet<Character>(26, 1);
+
+for (int i = 0; i < checkme_lowercase.length(); i++) {
+if (set.contains(checkme_lowercase.charAt(i))) {
+for (int i = 0; i < checkme_lowercase.length(); i++){
+for (int j = i+1; j < checkme_lowercase.length(); j++){
+if (checkme_lowercase.charAt(i) == checkme_lowercase.charAt(j)) return false;
+

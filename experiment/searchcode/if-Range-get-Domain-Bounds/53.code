@@ -1,0 +1,8 @@
+/*  67 */     PDRange domain = getDomainForInput(0);
+/*     */
+/*  69 */     x = clipToRange(x, domain.getMin(), domain.getMax());
+/*     */
+/*  71 */     COSArray functionsArray = getFunctions();
+/*  77 */       PDRange encRange = getEncodeForParameter(0);
+/*  78 */       x = interpolate(x, domain.getMin(), domain.getMax(), encRange.getMin(), encRange.getMax());
+

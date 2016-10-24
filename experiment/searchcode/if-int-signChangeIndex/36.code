@@ -1,0 +1,9 @@
+// return the first endpoint if it is a perfect root.
+return x[0];
+}
+
+int nbPoints;
+int signChangeIndex;
+// we try again with a lower interpolation order
+if (signChangeIndex - start >= end - signChangeIndex) {
+

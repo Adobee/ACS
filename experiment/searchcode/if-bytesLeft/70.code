@@ -1,0 +1,14 @@
+public MeteredInputStream(InputStream in, int size)
+{
+super(in);
+bytesLeft = size;
+}
+
+/**
+* Reads a byte. Will block if no input is available.
+public final int read() throws IOException
+{
+if (bytesLeft > 0) {
+int val = in.read();
+if (val != -1)
+

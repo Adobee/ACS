@@ -1,0 +1,7 @@
+String idFromValue = idFromValue(obj);
+if (jsonGenerator.canWriteTypeId()) {
+jsonGenerator.writeTypeId(idFromValue);
+public void writeCustomTypePrefixForObject(Object obj, JsonGenerator jsonGenerator, String str) {
+if (jsonGenerator.canWriteTypeId()) {
+jsonGenerator.writeTypeId(str);
+

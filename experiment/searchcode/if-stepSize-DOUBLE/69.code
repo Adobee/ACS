@@ -1,0 +1,17 @@
+Physics.getCollisions(this);
+microStep(xStep, 0);
+if (colRight) {
+x -= stepSize;
+xStep = 0;
+return;
+}
+
+}
+while (xStep <= -stepSize) {
+Physics.getCollisions(this);
+microStep(xStep, 0);
+if (colLeft) {
+x += stepSize;
+xStep = 0;
+return;
+

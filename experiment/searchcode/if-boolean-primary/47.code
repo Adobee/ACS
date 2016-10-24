@@ -1,0 +1,8 @@
+public <M> ColumnReference(Column<M,L> primaryColumn,Column<M,R> foreignColumn,Boolean isDirect) {
+this.primaryColumn = primaryColumn;
+foreignColumn.parentColumn = primaryColumn;
+
+if (isDirect) primaryColumn.directChildColumns.add(foreignColumn);
+}
+}
+

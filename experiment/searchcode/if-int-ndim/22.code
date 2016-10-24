@@ -1,0 +1,11 @@
+int nfunc;
+int mpts;
+int ndim;
+double fmin;
+double[] y;
+double[][] p;
+for (int i = 0; i < mpts; i++) {
+if (i != ilo) {
+for (int j = 0; j < ndim; j++)
+p[i][j] = psum[j] = 0.5 * (p[i][j] + p[ilo][j]);
+

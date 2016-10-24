@@ -1,0 +1,8 @@
+public static ISerializer GetSerializer(Class<?> type) throws ClassNotFoundException {
+if (type == null) {
+return nullSerializer;
+} else if (type.isEnum()) {
+return enumSerializer;
+}
+int typeId = TypeHelper.getTypeId(type);
+

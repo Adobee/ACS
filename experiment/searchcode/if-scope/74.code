@@ -1,0 +1,8 @@
+Preconditions.checkState(protocolScope == null, &quot;Must rescope before descoping again&quot;);
+
+if (ProtobeeScopes.IDENTITY.isInScope()) {
+identityScope.exitScope();
+}
+if (ProtobeeScopes.SESSION.isInScope()) {
+sessionScope = sessionScopeProvider.get();
+

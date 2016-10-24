@@ -1,0 +1,5 @@
+public RealMatrix calculateMCProbabilities(double[] initialProbabilities, RealMatrix generatorMatrix, double samplingInterval, double missionTime) {
+if (missionTime == 0) {
+RealMatrix identityMatrix = MatrixUtils.createRealIdentityMatrix(matrixColumnCount);
+RealMatrix transitionMatrix = identityMatrix.add(generatorMatrix.scalarMultiply(1 / lambda));
+

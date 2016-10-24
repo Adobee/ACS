@@ -1,0 +1,13 @@
+package sudoku.arz.solver;
+
+import sudoku.arz.domaine.Grille;
+
+
+public class SoleCandidateResolver extends ResolverByCase {
+public boolean resolveAt(Grille grille,int i, int j) {
+
+boolean res = false;
+if (!grille.isCaseResolved(i, j)) {
+
+if (grille.getPossibleValuesAt(i, j).size() == 1) {
+

@@ -1,0 +1,10 @@
+this.timestampString = timestampString;
+
+if (timestampString == null) {
+throw new OsmosisRuntimeException(&quot;The entity timestamp attribute is missing.&quot;);
+* {@inheritDoc}
+*/
+@Override
+public String getFormattedTimestamp(TimestampFormat timestampFormat) {
+if (timestampString != null &amp;&amp; managedTimestampFormat.isEquivalent(timestampFormat)) {
+

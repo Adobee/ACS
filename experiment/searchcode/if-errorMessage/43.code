@@ -1,0 +1,10 @@
+package ma.profique.api.jersey;
+
+public class ErrorResponse {
+
+private String errorMessage = null;
+
+public ErrorResponse(Throwable throwable) {
+if (throwable != null) {
+errorMessage = throwable.toString();
+

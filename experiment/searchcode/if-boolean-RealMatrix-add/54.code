@@ -1,0 +1,11 @@
+import org.apache.commons.math3.linear.MatrixUtils;
+import org.apache.commons.math3.linear.RealMatrix;
+import org.apache.commons.math3.stat.correlation.Covariance;
+public class Mahalanobis implements Distance {
+
+// controls printing
+private static final boolean DEBUG = true;
+
+private enum CentroidPoint {
+Mean, Median, Minimum, Origin
+

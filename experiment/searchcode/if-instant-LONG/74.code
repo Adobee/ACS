@@ -1,0 +1,12 @@
+* @param millis raw millisecond number.
+*/
+
+public static Calendar MakeInstantFromMillis(long millis) {
+* Calendar property getter method: gets the raw millisecond representation of
+*  a Calendar.
+* @param instant Calendar
+* @return milliseconds since 1/1/1970.
+*/
+
+public static long GetMillis(Calendar instant) {
+

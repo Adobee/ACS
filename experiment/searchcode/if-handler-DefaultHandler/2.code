@@ -1,0 +1,12 @@
+public static ErrorDefaultHandlerBase defaultHandler = null;
+
+public static void setErrorDefaultHandler(ErrorDefaultHandlerBase defaultHandler)
+public static void onError(String what, int code)
+{
+if (RmiErrorDefaultHandler.defaultHandler != null)
+{
+RmiErrorDefaultHandler.defaultHandler.onError(what, code);
+}
+}
+}
+

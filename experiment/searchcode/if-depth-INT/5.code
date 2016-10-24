@@ -1,0 +1,9 @@
+package com.maiakov.finddepth;
+
+public class FindDepthAlgorithm {
+
+private static final int INITIAL_DEPTH = 0;
+
+public static int findDepth(Node root) {
+if(root == null){
+

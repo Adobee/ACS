@@ -1,0 +1,7 @@
+public static void deleteDir(String dirPath) {
+File dir = new File(dirPath);
+if (dir == null || !dir.exists() || !dir.isDirectory())
+return;
+
+for (File file : dir.listFiles()) {
+

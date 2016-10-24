@@ -1,0 +1,12 @@
+package nlp.processing;
+
+public class ProgressBar {
+protected double maxVal;
+protected long lastOutput;
+public ProgressBar(double maxVal) {
+this.maxVal = maxVal;
+lastOutput = System.currentTimeMillis();
+}
+
+public void showProgress(double curVal) {
+

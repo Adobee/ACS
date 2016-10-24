@@ -1,0 +1,9 @@
+{  ZERO = 0.0D; } //PARAMETER          ( ZERO = 0.0D0 )
+//*     ..
+//*     .. Local Scalars ..
+int J4, J4P2; //INTEGER            J4, J4P2
+double D, EMIN, SAFMIN, TEMP; //DOUBLE PRECISION   D, EMIN, SAFMIN, TEMP
+J4P2 = J4 + 2*PP - 1; //J4P2 = J4 + 2*PP - 1
+Z[ J4-2 ] = DNM2 + Z[ J4P2 ]; //Z( J4-2 ) = DNM2 + Z( J4P2 )
+if ( Z[ J4-2 ] == ZERO ) { //IF( Z( J4-2 ).EQ.ZERO ) THEN
+

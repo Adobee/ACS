@@ -1,0 +1,11 @@
+public class ConcreteHandler implements Handler {
+
+private Handler next;
+private String requestType;
+
+public ConcreteHandler(String requestType) {
+public void handleRequest(Request request) {
+if (requestType.equals(request.getRequestType())) {
+request.excute();
+} else if (next != null) {
+

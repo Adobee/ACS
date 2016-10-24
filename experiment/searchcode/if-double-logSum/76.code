@@ -1,0 +1,11 @@
+* Utility methods for multinomials represented as double arrays.
+*
+* @author mgormley
+*/
+public class Multinomials {
+
+private Multinomials() {
+public static void normalizeLogProps(double[] logProps) {
+double logPropSum = Vectors.logSum(logProps);
+if (logPropSum != Double.NEGATIVE_INFINITY) {
+

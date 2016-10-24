@@ -1,0 +1,13 @@
+mStyle = style;
+mColumns = columns;
+}
+
+public void set(int column, int style) {
+if (style == mStyle &amp;&amp; mData == null) {
+ensureData();
+setStyle(column, style);
+}
+
+public int get(int column) {
+if (mData == null) {
+

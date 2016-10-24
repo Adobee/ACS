@@ -1,0 +1,9 @@
+nablaB[l] = delta;
+RealMatrix a = inputActivation;
+if(l > 0) a = activations[l - 1];
+nablaW[l] = delta.multiply(a.transpose());
+public RealMatrix feedForward(RealMatrix activations, RealMatrix[] ffWeights, RealMatrix[] ffBiases) {
+
+if(ffWeights == null) ffWeights = weights;
+if(ffBiases == null) ffBiases = biases;
+

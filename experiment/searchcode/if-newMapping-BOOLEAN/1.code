@@ -1,0 +1,11 @@
+public boolean isSubMask(int mask) {
+return (mask | varMask) == varMask;
+}
+
+public boolean isConstant() {
+return varMask == 0;
+}
+
+public Factor marginal(int mask) {
+if (!isSubMask(mask))
+

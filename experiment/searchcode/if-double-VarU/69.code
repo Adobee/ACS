@@ -1,0 +1,7 @@
+* @throws IllegalArgumentException if preconditions are not met
+*/
+public double mannWhitneyU(final double[] x, final double[] y)
+* @throws MathException if an error occurs computing the p-value
+*/
+private double calculateAsymptoticPValue(final double Umin, final int n1,
+

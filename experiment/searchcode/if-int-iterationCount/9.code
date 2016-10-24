@@ -1,0 +1,8 @@
+int iterationCount = Integer.parseInt(args[0]);
+long delay = Long.parseLong(args[1]);
+
+new MongoDbAppenderExample(iterationCount, delay).run();
+private void run() {
+for (int i = 0; i < iterationCount; i++) {
+if (logger.isDebugEnabled()) {
+

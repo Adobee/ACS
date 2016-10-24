@@ -1,0 +1,7 @@
+public Pair<String,Integer> parseCellDelimiter( String line, int beginIndex, CSVDesc desc ){
+if( line==null )return null;
+String quote = desc.getCellQuote();
+if( quote==null )return null;
+if( quote.length()<1 )return null;
+int quoteLen = quote.length();
+

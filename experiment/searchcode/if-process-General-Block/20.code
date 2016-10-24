@@ -1,0 +1,17 @@
+this.args.add(new ArgumentIntData(&quot;stackSize&quot;, -1, 64, -1));
+}
+
+@Override
+public ProcessReturn onMethodCalled()
+{
+if (super.onMethodCalled() == ProcessReturn.CONTINUE)
+return ProcessReturn.CONTINUE;
+}
+return ProcessReturn.GENERAL_ERROR;
+}
+
+@Override
+public ProcessReturn onUpdate()
+{
+if (super.onUpdate() == ProcessReturn.CONTINUE)
+

@@ -1,0 +1,9 @@
+MMSender sender = new MMSender(ctrlHandler, serverInfo, NTPTimesyncCmd);
+sender.start();
+}
+else if(cmdName.equals(&quot;NTPTimesyncAns&quot;))
+else if(cmdName.equals(&quot;requestLocalizationAns&quot;))
+{
+if(cmd.jsonCmd.getBoolean(&quot;result&quot;))
+MMUtils.sendMsg(topHandler, 3, &quot;Start the localization&quot;);
+

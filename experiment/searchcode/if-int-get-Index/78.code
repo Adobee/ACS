@@ -1,0 +1,17 @@
+this.index = index;
+}
+
+public int getIndex(){
+return index;
+}
+
+@Override
+public int hashCode(){
+return key.hashCode();
+@Override
+public int compareTo(ItemKey o) {
+if(index == o.getIndex()){
+return 0;
+}
+else if(index > o.getIndex()){
+

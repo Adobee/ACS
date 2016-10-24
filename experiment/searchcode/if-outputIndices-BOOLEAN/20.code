@@ -1,0 +1,8 @@
+public void fire(Tuple env, boolean isAdd, long timestamp) {
+super.fire(env, isAdd, timestamp);
+// Now check the static data source
+for (int i = 0; i < this.outputIndices.length; i++) {
+int ind = this.outputIndices[i];
+if(ind < 0){
+int sibInd = staticDataSiblling.outputIndices[i];
+

@@ -1,0 +1,7 @@
+for (double[] v1: v) {
+if (getDouble() <= v1[1]) {
+return (int) v1[0];
+for (double[] v1: v) {
+if (getDouble() <= v1[1]) {
+return v1[0];
+

@@ -1,0 +1,10 @@
+public int asInt(SWIGTYPE_p__Z3_ast value) {
+int ret = z3.get_numeral_int(value);
+if(ret == 0) {
+String valueString = z3.get_numeral_string(value);
+final String varName = z3.get_symbol_string(z3.get_decl_name(decl));
+SWIGTYPE_p__Z3_sort ty = z3.get_sort(value);
+
+//	    final int valueInt = asInt(value);
+//	    loglnIf(LOG_MODEL, varName+&quot;: &quot;+valueInt);
+

@@ -1,0 +1,6 @@
+public static final int GRAY_STYLE = 1; // gray scale
+public static final int RELIEF_STYLE = 2; // relief
+public static Bitmap changeStyle(Bitmap bitmap, int styleNo) {
+if (styleNo == GRAY_STYLE) {
+//return changeToGray(bitmap);
+

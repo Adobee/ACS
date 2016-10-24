@@ -1,0 +1,13 @@
+public String getType() { return BOOLEAN; }
+
+protected String createValue(String s) {
+if(Boolean.valueOf(s).booleanValue()) return TRUE;
+else return FALSE;
+boolean b = Boolean.valueOf(s).booleanValue();
+boolean comp = Boolean.valueOf(b).booleanValue();
+if (b==comp) return 0;
+if (b==true) return 1;
+return -1;
+}
+}
+

@@ -1,0 +1,9 @@
+int gcd(int a, int b)
+{
+if (a < b) return gcd(b,a);
+if (a % b == 0) return b;
+return gcd(b,a %b);
+}
+public ArrayList<Integer> getRow(int rowIndex) {
+ArrayList<Integer> rst =  new ArrayList<Integer>();
+

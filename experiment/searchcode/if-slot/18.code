@@ -1,0 +1,9 @@
+package jaskowski.vendingMachine.slot;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+private Map<SlotId, Slot> map = new HashMap<SlotId, Slot>();
+
+public Slot find(SlotId slotId) throws SlotDoesNotExistException {
+if (!map.containsKey(slotId)) {
+

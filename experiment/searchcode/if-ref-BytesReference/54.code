@@ -1,0 +1,7 @@
+int sliceLength = randomIntBetween(pbr.length() - sliceOffset, pbr.length() - sliceOffset);
+BytesReference slice = pbr.slice(sliceOffset, sliceLength);
+if (slice.hasArray()) {
+int length = randomIntBetween(0, PAGE_SIZE);
+BytesReference pbr = getRandomizedPagedBytesReference(length);
+BytesRef ref = pbr.toBytesRef();
+

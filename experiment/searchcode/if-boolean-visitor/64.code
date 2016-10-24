@@ -1,0 +1,12 @@
+@FunctionalInterface
+static interface Visitor {
+void visit(TreeNode node);
+}
+
+public static void walk(TreeNode node) {
+walk(node, visitor, false);
+}
+
+public static void walk(TreeNode node, Visitor visitor, boolean postfix) {
+if (postfix) {
+

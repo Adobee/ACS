@@ -1,0 +1,11 @@
+public boolean evaluateCondition(Object externalValue, Object internalValue) throws DynamicExtensionsSystemException
+{
+boolean result;
+if (this == EQUALS)
+{
+int value = compareEquals(externalValue, internalValue);
+int comparisionValue = -1;
+if (externalValue instanceof Integer)
+{
+Integer intValue = (Integer) internalValue;
+

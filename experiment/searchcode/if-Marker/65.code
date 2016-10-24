@@ -1,0 +1,11 @@
+for(int j = 0; j < marker.size() &amp;&amp; !found; j++)
+if(i != j)
+found = Marker.isInside(marker.get(j), marker.get(i));
+if(!found)
+result.add(marker.get(i));
+}
+return result;
+}
+
+}
+

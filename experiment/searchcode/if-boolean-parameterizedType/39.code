@@ -1,0 +1,9 @@
+import java.io.IOException;
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+
+import okhttp3.Request;
+public T parseNetworkResponse(Response response) throws IOException {
+Type type = this.getClass().getGenericSuperclass();
+if (type instanceof ParameterizedType) {
+

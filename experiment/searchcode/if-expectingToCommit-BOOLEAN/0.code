@@ -1,0 +1,7 @@
+final int numberOfMasterNodes = goodNodes + errorNodes + timeOutNodes + 1; // master
+final boolean expectingToCommit = randomBoolean();
+final MockNode mockNode = createMockNode(&quot;data_&quot; + i, Settings.builder().put(&quot;node.master&quot;, false).build());
+discoveryNodesBuilder.put(mockNode.discoveryNode);
+if (randomBoolean()) {
+// we really don&#39;t care - just chaos monkey
+

@@ -1,0 +1,5 @@
+final Scheduler computationScheduler = RxJavaPlugins.getInstance().getSchedulersHook().getComputationScheduler();
+if (computationScheduler != null) {
+final Scheduler ioScheduler = RxJavaPlugins.getInstance().getSchedulersHook().getIOScheduler();
+if (ioScheduler != null) {
+

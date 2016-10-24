@@ -1,0 +1,9 @@
+public class Keyboard implements KeyListener {
+
+public boolean[] key = new boolean[120];
+public boolean up, down, left, right;
+public void keyPressed(KeyEvent e) {
+int keyCode = e.getKeyCode();
+if (keyCode > 0 &amp;&amp; keyCode < key.length) {
+key[keyCode] = true;
+

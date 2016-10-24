@@ -1,0 +1,8 @@
+Port of Seb Madqwick&#39;s open source IMU AHRS C implementation http://www.x-io.co.uk/open-source-imu-and-ahrs-algorithms/
+Decided to changed to double precision instead of float. Don&#39;t know whether it matters.
+public void  AHRSUpdate(double[] AHRSdata){
+double recipNorm;
+double[] s		= new double[4];
+double[] qDot	= new double[4];
+double[] h		= new double[2];
+

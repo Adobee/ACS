@@ -1,0 +1,9 @@
+public TupleIndex(TupleIndex parent, int childIndex) {
+if (parent == null) {
+this.index = new int[1];
+public TupleIndex parent() {
+if (index.length <= 1)
+return null;
+
+int[] newIndex = new int[index.length - 1];
+

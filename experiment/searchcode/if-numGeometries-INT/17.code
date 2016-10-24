@@ -1,0 +1,13 @@
+* @see com.iver.cit.gvsig.fmap.core.FGeometryCollection#getBounds()
+*/
+public Rectangle getBounds() {
+Rectangle r = null;
+if (getNumgeometries() > 0) {
+Rectangle2D r2d = new Rectangle2D.Double(
+r.x,
+r.y,
+r.width,
+r.height);
+
+for (int i = 1; i < getNumgeometries(); i++) {
+

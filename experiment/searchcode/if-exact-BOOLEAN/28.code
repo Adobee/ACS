@@ -1,0 +1,10 @@
+package fr.jayasoft.ivy.matcher;
+
+
+public final class ExactOrRegexpPatternMatcher implements PatternMatcher {
+public boolean matches(String str) {
+return _exact.matches(str) || _regexp.matches(str);
+}
+
+public boolean isExact() {
+

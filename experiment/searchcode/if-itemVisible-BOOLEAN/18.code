@@ -1,0 +1,10 @@
+// PROCESSING 				/////////////////////////////////////
+/////////////////////////////////////////////////////////////////
+@Override
+protected boolean hasEnoughItems() throws StopRequestException
+for ( AiItem itemVisible : ai.getZone().getItems() )
+{
+ai.checkInterruption();
+if ( ai.itemOperation.isGoodItem( itemVisible ) )
+return true;
+

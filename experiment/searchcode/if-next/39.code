@@ -1,0 +1,11 @@
+Node cur = head.next;
+set.add(head.value);
+while (cur != null) {
+if (set.contains(cur.value)) {
+pre.next = cur.next;
+while (cur != null) {
+pre = cur;
+next = cur.next;
+while (next != null) {
+if (cur.value == next.value) {
+

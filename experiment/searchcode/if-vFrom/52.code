@@ -1,0 +1,11 @@
+public void addEdge(Character vFrom, Character vTo) {
+int fromIndex = getVertexIndex(vFrom);
+int toIndex = getVertexIndex(vTo);
+
+if (fromIndex == -1 || toIndex == -1) {
+matrix[toIndex][fromIndex] = 1;
+}
+/**
+* Checks whether there is a direct edge from vertex vFrom to vertex vTo.
+* If so, the two vertices are neighbours and the function returns true.
+

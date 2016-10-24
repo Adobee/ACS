@@ -1,0 +1,8 @@
+Vector3 r = new Vector3();
+if (A.z == 0.0 &amp;&amp; B.z == 0.0 &amp;&amp; C.z == 0.0) {
+double u = ((A.x - B.x) * (A.x + B.x) + (A.y - B.y) * (A.y + B.y)) / 2.0;
+double BC = BmA.dot(CmA);
+double B2 = BmA.magSquared(), C2 = CmA.magSquared();
+double den = 2.0 * (B2 * C2 - BC * BC);
+double s = C2 * (B2 - BC) / den;
+

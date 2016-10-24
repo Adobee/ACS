@@ -1,0 +1,10 @@
+NotifyParser notifyParser = parserCache.get();
+if (notifyParser != null &amp;&amp; parserCache.compareAndSet(notifyParser, null)) {
+done = notify.getType().getName().equals(parser.getName());
+}
+}
+this.result = notify;
+}
+
+private boolean is(Notify.Type type) {
+

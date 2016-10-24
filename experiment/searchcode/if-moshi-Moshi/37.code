@@ -1,0 +1,6 @@
+Set<JsonAdapter.Factory> provideJsonAdapterFactories() {
+return ImmutableSet.of((type, annotations, moshi) -> {
+if (type.equals(Recipe.class)) {
+return Recipe.jsonAdapter(moshi);
+} else if (type.equals(Bar.class)) {
+

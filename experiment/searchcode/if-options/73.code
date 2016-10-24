@@ -1,0 +1,12 @@
+* @return
+*/
+protected boolean hasValidOptions() {
+//至少应当有两个选项才能称之为选择题
+if(options == null || options.length<2) {
+* @param options the options to set
+*/
+public void setOptions(String[] options) {
+
+//如果选项超过最大数量限制，截断之
+if(options.length > MAX_OPTION_NUM) {
+

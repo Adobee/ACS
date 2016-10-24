@@ -1,0 +1,14 @@
+private ByteArrayOutputStream bos = new ByteArrayOutputStream();
+
+private boolean messageClosed = false;
+
+public String getBoundary() {
+messageClosed = false;
+}
+
+public boolean isMessageClosed() {
+return messageClosed;
+}
+
+public String getMessageContent() {
+

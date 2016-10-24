@@ -1,0 +1,13 @@
+public PollingCheck(long timeout) {
+mTimeout = timeout;
+}
+
+protected abstract boolean check();
+
+public void run() {
+if (check()) {
+return;
+}
+
+long timeout = mTimeout;
+

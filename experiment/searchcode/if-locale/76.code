@@ -1,0 +1,8 @@
+public void setLocaleContext(HttpServletRequest request, HttpServletResponse response, LocaleContext localeContext) {
+Locale locale = null;
+if(localeContext != null) {
+locale = localeContext.getLocale();
+Locale locale = (Locale)WebUtils.getSessionAttribute(request, LOCALE_SESSION_ATTRIBUTE_NAME);
+if(locale != null) {
+return locale;
+

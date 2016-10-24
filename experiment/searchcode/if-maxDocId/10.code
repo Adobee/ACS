@@ -1,0 +1,10 @@
+List<Integer> temporalList = index.getPostingListNoFreq(term);
+if(temporalList == null){
+continue;
+int maxDocID = maxResult(input);
+if( maxDocID == -1){
+break;
+}
+results.add(maxDocID);
+input.remove(maxDocID);
+

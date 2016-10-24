@@ -1,0 +1,12 @@
+List<String> result = new ArrayList<String>();
+for (Object o : desc) {
+if (o instanceof Tag) {
+result.add(((Tag) o).getTagName());
+public boolean isTemplate() {
+for (Object o : desc) {
+if (o instanceof Tag) {
+return true;
+}
+}
+return false;
+

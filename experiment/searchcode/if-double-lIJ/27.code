@@ -1,0 +1,9 @@
+for(Cluster y : count.keySet()) {
+if(!x.equals(y)) {
+Cluster p = new Cluster(x, y, v);
+double l = Math.abs(L.get(p));
+for(Cluster c : count.keySet()) {
+if(c.equals(minP))
+continue; // sk(i+j)
+double d = S.get(c)
+

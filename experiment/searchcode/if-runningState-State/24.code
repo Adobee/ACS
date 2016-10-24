@@ -1,0 +1,8 @@
+this.splitState = StopWatch.SplitState.UNSPLIT;
+}
+
+public void start() {
+if (this.runningState == StopWatch.State.STOPPED) {
+throw new IllegalStateException(&quot;Stopwatch must be reset before being restarted. &quot;);
+} else if (this.runningState != StopWatch.State.UNSTARTED) {
+

@@ -1,0 +1,10 @@
+public void DBSCAN(ArrayList<Node> SetOfPoints, int eps, int MinPts){
+ArrayList<Node> C = new ArrayList();
+for(int i = 0; i < SetOfPoints.size(); i++){
+NeighborPts = RegionQuery(P, SetOfPoints, eps);
+if (NeighborPts.size() < MinPts){
+P.markNoise();
+}
+else{
+//C.add(e); // C = next cluster
+

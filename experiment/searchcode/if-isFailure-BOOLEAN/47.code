@@ -1,0 +1,17 @@
+public T get() throws E {
+if(exception == null) {
+return value;
+}
+throw exception;
+}
+
+public boolean isSuccess() {
+return exception == null;
+}
+
+public boolean isFailure() {
+return !isSuccess();
+}
+
+}
+

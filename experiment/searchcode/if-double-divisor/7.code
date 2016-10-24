@@ -1,0 +1,15 @@
+public int divisor_range(int A, int B, int K){
+int divisor = 0;
+if(A > B || K == 0)
+return divisor;
+if(A == B &amp;&amp; A % K == 0)
+divisor++;
+//		if (A % K == 0 )
+double remainder = (double)(B - A) / K;
+return divisor + (int) Math.round(remainder);
+}
+
+
+
+}
+

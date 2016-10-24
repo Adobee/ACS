@@ -1,0 +1,10 @@
+public class RetryInterceptor implements Interceptor {
+
+private final int maxRetries;
+private final long delayInMillis;
+
+private int retryCounter;
+
+public RetryInterceptor(int maxRetries, long delayInMillis) {
+this.maxRetries = maxRetries;
+

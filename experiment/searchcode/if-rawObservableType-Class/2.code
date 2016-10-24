@@ -1,0 +1,8 @@
+Class<?> rawObservableType = Utils.getRawType(observableType);
+if (rawObservableType == Response.class) {
+Type responseType = Utils.getParameterUpperBound(0, (ParameterizedType) observableType);
+return new ResponseCallAdapter(responseType);
+}
+
+if (rawObservableType == Result.class) {
+

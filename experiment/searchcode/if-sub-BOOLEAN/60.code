@@ -1,0 +1,14 @@
+private SubUiVisibilityListener mSubUiVisibilityListener;
+
+public ActionProvider(Context paramContext)
+{
+}
+
+public boolean hasSubMenu()
+{
+return false;
+public void subUiVisibilityChanged(boolean paramBoolean)
+{
+if (this.mSubUiVisibilityListener != null)
+this.mSubUiVisibilityListener.onSubUiVisibilityChanged(paramBoolean);
+

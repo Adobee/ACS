@@ -1,0 +1,8 @@
+private Retrofit.Builder setCallFactory(Builder cmaBuilder, Retrofit.Builder retrofitBuilder) {
+if (cmaBuilder.callFactory == null) {
+OkHttpClient.Builder okBuilder = new OkHttpClient.Builder()
+* Sets a custom HTTP call factory.
+*
+* @param callFactory {@link okhttp3.Call.Factory} instance
+* @return this {@code Builder} instance
+

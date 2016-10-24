@@ -1,0 +1,10 @@
+public static ProductUpdate toProductUpdateDomain(ProductUpdateHistoryDTO updateDTO, UpdateFile updateFile) {
+ProductUpdate update = null;
+if(updateDTO == null) return null;
+
+String updateWay = updateDTO.getUpdateWay();
+Product product = (Product) EntityLoadHolder.getUserDao().findById(updateDTO.getProductId(), Product.class);
+
+if(&quot;1&quot;.equals(updateWay) || &quot;2&quot;.equals(updateWay)) {
+if (updateDTO.getId() > 0) {
+

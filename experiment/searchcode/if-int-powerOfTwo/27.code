@@ -1,0 +1,14 @@
+public class PowerofTwo {
+
+public static void main(String[] args) {
+// TODO Auto-generated method stub
+PowerofTwo pt = new PowerofTwo();
+public boolean isPowerOfTwo(int n) {
+if (n == 0)
+return false;
+else if (n == 1)
+return true;
+
+else {
+boolean judge = false;
+

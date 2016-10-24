@@ -1,0 +1,10 @@
+public class ExpandableItemStates {
+
+@NonNull
+private final SparseBooleanArray expandedStates = new SparseBooleanArray();
+
+@NonNull
+public void collapse(int position) {
+boolean isExpanded = expandedStates.get(position, false);
+if (isExpanded) {
+

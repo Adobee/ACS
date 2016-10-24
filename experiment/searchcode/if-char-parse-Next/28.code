@@ -1,0 +1,10 @@
+public LexicalAnalyzer(InputStream is) throws ParseException {
+this.is = is;
+curPos = 0;
+nextChar();
+public void nextToken() throws ParseException {
+while (isBlank(curChar)) {
+nextChar();
+}
+if (curChar == &#39;+&#39;) {
+

@@ -1,0 +1,12 @@
+private int startX, startY, endX, endY, ticks;
+private double currX, currY;
+private long startTick, endTick;
+private boolean moving = false, completed = false;
+public double getCurrentY(){
+return currY;
+}
+
+public void move(){
+long tick = Ticker.getTickCounter();
+if(moving){
+

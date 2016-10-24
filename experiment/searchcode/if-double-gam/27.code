@@ -1,0 +1,10 @@
+static GAM getGAM(GLM glm, List<Attribute> attList) {
+double[] w = glm.coefficients(0);
+
+GAM gam = new GAM();
+int k = 0;
+for (Attribute attribute : attList) {
+LinearFunction func = new LinearFunction(attIndex, -w[k++]);
+gam.add(term, func);
+} else if (attribute instanceof BinnedAttribute) {
+

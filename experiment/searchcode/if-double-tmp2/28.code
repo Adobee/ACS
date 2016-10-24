@@ -1,0 +1,9 @@
+tmp2=tmp2.replace(&quot;%&quot;, &quot;&quot;);
+if(j==0){
+stockdatavo.setDate(tmp2);
+}if(j==1){
+stockdatavo.setOpen(Double.parseDouble(tmp2));
+}if(j==2){
+stockdatavo.setClose(Double.parseDouble(tmp2));
+}if(j==3){
+

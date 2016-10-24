@@ -1,0 +1,11 @@
+* String Utilities
+*/
+public class StringUtil {
+
+/**
+* Count characters from source string. If source is null, returns 0.
+* @return count
+*/
+public int countChar(String source, char ch) {
+if (source == null)
+

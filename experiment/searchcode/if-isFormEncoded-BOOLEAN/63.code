@@ -1,0 +1,8 @@
+* @param tokenEndpoint true if this is a request token or access token request.  We don&#39;t check
+* oauth_body_hash on those.
+public static SignatureType getSignatureType(boolean tokenEndpoint, String contentType) {
+if (OAuth.isFormEncoded(contentType)) {
+return SignatureType.URL_AND_FORM_PARAMS;
+}
+if (tokenEndpoint) {
+

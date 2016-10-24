@@ -1,0 +1,8 @@
+return dayOfWeek;
+}
+public void setDayOfWeek(int dayOfWeek) {
+if (dayOfWeek == DayOfWeek.MONDAY || dayOfWeek == DayOfWeek.TUESDAY ||
+private static int getDayOfWeekInt(String dayOfWeek){
+if (dayOfWeek == &quot;Lunes&quot;) {return DayOfWeek.MONDAY;}
+else if (dayOfWeek == &quot;Martes&quot; ) {return DayOfWeek.TUESDAY ;}
+

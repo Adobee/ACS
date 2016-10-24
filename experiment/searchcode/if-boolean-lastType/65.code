@@ -1,0 +1,10 @@
+protected AbstractCaller(Class<?>[] parameters) {
+boolean needsMultipleReturnValues = false;
+Class<?> varargType = null;
+if (parameters.length > 0) {
+needsMultipleReturnValues = true;
+}
+
+Class<?> lastType = parameters[parameters.length - 1];
+if (lastType.isArray()) {
+

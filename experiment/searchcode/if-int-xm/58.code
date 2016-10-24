@@ -1,0 +1,8 @@
+PageResponse p = xmRoomInfoDetailDao.findPage(getPageRequest(),fillDetachedCriteria(XmRoomInfoDetail.class,sVO));
+
+List list = p.getList();
+for (int i = 0; i < list.size(); i++) {
+XmRoomInfoDetail xmRoomInfoDetail = (XmRoomInfoDetail) list.get(i);
+String xmpdGuid=xmRoomInfoDetail.getXmpdGuid();
+if(null!=xmpdGuid&amp;&amp;!&quot;&quot;.equals(xmpdGuid)){
+

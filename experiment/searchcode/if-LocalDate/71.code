@@ -1,0 +1,12 @@
+package ch5.ex06;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.util.ArrayDeque;
+public static LocalDate[] cal(int century) {
+if (century < 0) {
+return new LocalDate[] {};
+}
+
+Deque<LocalDate> days = new ArrayDeque<LocalDate>();
+

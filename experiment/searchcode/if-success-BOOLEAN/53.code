@@ -1,0 +1,10 @@
+private static final long serialVersionUID = 1L;
+private boolean success;
+
+public EndReconfigurationEvent(boolean success) {
+id = new Random().nextLong() ^ System.currentTimeMillis();
+this.setSuccess(success);
+}
+
+public boolean equals(Object o) {
+

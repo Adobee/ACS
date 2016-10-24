@@ -1,0 +1,11 @@
+public class ScopeFactor implements RateFactor{
+
+private String name;
+private String maxFactor;
+private String minFactor;
+
+public Boolean match(String input){
+int c1 = input.compareTo(minFactor);
+int c2 = input.compareTo(maxFactor);
+if(c1 >= 0 &amp;&amp; c2 < 0){
+

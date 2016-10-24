@@ -1,0 +1,10 @@
+CacheNode node = (CacheNode) map.get(key);
+if (node != null) {
+node.setValue(value);
+resetNode(node);
+public Object get(Object key) {
+removeExpiredElements();
+CacheNode node = (CacheNode) map.get(key);
+
+if (node != null) {
+

@@ -1,0 +1,7 @@
+// A cheap variant of request tracing used to dump slow requests.
+private long mRequestBirthTime = 0;
+
+/** Threshold at which we should log the request (even when debug logging is not enabled). */
+long requestTime = SystemClock.elapsedRealtime() - mRequestBirthTime;
+if (requestTime >= SLOW_REQUEST_THRESHOLD_MS) {
+

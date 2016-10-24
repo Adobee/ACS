@@ -1,0 +1,9 @@
+public ImageCache() {
+initCahce();
+}
+
+private void initCahce() {
+if (imageMemoryCache == null) {
+int memoryCacheSize = (int) (Runtime.getRuntime().maxMemory() / 1024) / 8;
+imageMemoryCache = new LruCache<String, Bitmap>(memoryCacheSize) {
+

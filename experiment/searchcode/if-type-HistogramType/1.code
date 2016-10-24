@@ -1,0 +1,11 @@
+if (object == this) {
+return true;
+}
+if (!(object instanceof HistogramType)) {
+HistogramType histogramType = (HistogramType)object;
+if (this.name.equals(histogramType.name)) return true;
+return false;
+}
+
+public int hashCode() {
+

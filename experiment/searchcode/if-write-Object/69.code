@@ -1,0 +1,18 @@
+private int _x, _y, _z;
+private int _stackable, _count;
+
+public SpawnItemPoly(L2Object object)
+{
+if (object instanceof ItemInstance)
+writeC(0x0b);
+writeD(_objectId);
+writeD(_itemId);
+writeD(_x);
+writeD(_y);
+writeD(_z);
+writeD(_stackable);
+writeD(_count);
+writeD(0x00); // c2
+}
+}
+

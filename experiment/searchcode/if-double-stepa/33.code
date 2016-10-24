@@ -1,0 +1,13 @@
+Substance Erleneimer;
+Double vErleneimer;
+
+protected Double stepA, stepAL, stepV;
+
+Double AnionBue;
+return;
+}
+activeBue -= stepA;
+activeErl -= stepA;
+if (activeErl >= 0) {
+Water += 2 * stepA;
+

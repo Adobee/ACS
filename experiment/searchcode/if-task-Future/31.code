@@ -1,0 +1,11 @@
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
+
+import shell.task.AbstractTask;
+import shell.task.TaskFuture;
+import shell.task.TaskFuture.State;
+
+public class TaskManager {
+
+private ExecutorService worker = Executors.newCachedThreadPool();
+

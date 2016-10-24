@@ -1,0 +1,12 @@
+private boolean isForward;
+private Node node;
+
+public DomIterable(Node node, boolean isForward)
+{
+this.node = node;
+private Node getNext(Node node, boolean isIncludeChildren)
+{
+if (isIncludeChildren)
+{
+Node child = isForward ? node.getFirstChild() : node.getLastChild();
+

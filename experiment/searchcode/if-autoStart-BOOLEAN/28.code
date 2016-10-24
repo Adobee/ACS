@@ -1,0 +1,7 @@
+private boolean isAutostart = H2HConstants.DEFAULT_AUTOSTART_PROCESSES;
+
+protected H2HManager(NetworkManager networkManager) {
+protected void submitProcess(IProcessComponent processComponent) {
+if (isAutostart) {
+executeProcess(processComponent);
+

@@ -1,0 +1,8 @@
+private final String externalName;
+private final Class<? extends Optimizer> optimizerClass;
+private final boolean isPooled;
+
+private StandardOptimizerDescriptor(String externalName, Class<? extends Optimizer> optimizerClass) {
+private StandardOptimizerDescriptor(String externalName, Class<? extends Optimizer> optimizerClass, boolean pooled) {
+this.externalName = externalName;
+

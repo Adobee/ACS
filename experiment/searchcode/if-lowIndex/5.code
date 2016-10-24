@@ -1,0 +1,6 @@
+public static void quickSort(int[] array, int lowIndex, int highIndex) {
+if (lowIndex < highIndex) {
+int partitionIndex = partition(array, lowIndex, highIndex);
+if (partitionIndex > 1) {
+quickSort(array, lowIndex, partitionIndex - 1);
+

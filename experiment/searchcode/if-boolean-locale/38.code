@@ -1,0 +1,9 @@
+private static final String TAG =  LocaleUtil.class.getSimpleName();
+
+public static void changeDeviceLocaleTo(Locale locale) {
+if (locale == null) {
+config.getClass().getField(&quot;userSetLocale&quot;).setBoolean(config, true);
+config.locale = locale;
+
+Method updateConfigurationMethod = amnClass.getMethod(&quot;updateConfiguration&quot;, Configuration.class);
+

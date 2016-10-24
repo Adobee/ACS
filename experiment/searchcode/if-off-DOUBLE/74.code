@@ -1,0 +1,11 @@
+void setToRotation(double angle) {
+
+rotation = angle;
+double sin = Math.sin(angle);
+double cos = Math.cos(angle);
+if (Math.abs(cos) < BaseTransformer.ZERO) {
+double y = srcPoint.getY();
+Point2D dstPoint = dst[dstOff];
+if (dstPoint == null) {
+if (srcPoint instanceof Point2D.Double) {
+

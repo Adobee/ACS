@@ -1,0 +1,12 @@
+static int[] prepare(int len, Integer rStart, Integer rStop, Integer rStep) {
+int start;
+int stop;
+int step;
+int slicelength;
+
+if (rStep == null) {
+if ((step < 0 &amp;&amp; stop >= start) || (step > 0 &amp;&amp; start >= stop)) {
+slicelength = 0;
+} else if (step < 0) {
+slicelength = (stop - start + 1) / (step) + 1;
+

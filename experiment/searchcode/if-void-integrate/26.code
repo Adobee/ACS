@@ -1,0 +1,7 @@
+@EventHandler(priority = EventPriority.MONITOR, ignoreCancelled = true)
+public void join(PlayerJoinEvent event) {
+Player player = event.getPlayer();
+
+if (cwc.getPlayerManager().getPlayer(player) == null) {
+player.sendMessage(Utils.integrateColor(&quot;&amp;8&amp;l=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=&quot;));
+

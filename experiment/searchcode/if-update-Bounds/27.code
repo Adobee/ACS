@@ -1,0 +1,5 @@
+upperBounds = TypeWrapper.getWrappedType(wildcardType.getUpperBounds()[0]);
+}
+if (wildcardType.getLowerBounds().length != 0) {
+return new WildcardTypeWrapper(upperBounds == null ? null : upperBounds.updateTypeVariables(typeVariables), lowerBounds == null ? null : lowerBounds.updateTypeVariables(typeVariables));
+

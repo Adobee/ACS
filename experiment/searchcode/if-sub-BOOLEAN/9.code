@@ -1,0 +1,16 @@
+super(game);
+}
+
+public SubState getSubState()
+{
+return subState;
+}
+
+public boolean hasPauseState()
+{
+if (hasSubState()) return getSubState().isPauseState();
+return false;
+}
+
+public boolean hasSubState()
+

@@ -1,0 +1,9 @@
+for(int idx=begin; idx < begin+length; idx++) {
+int intVal = bytes[idx] &amp; 0xff;
+if (intVal < 0x10) sbuf.append(&quot;0&quot;);
+sbuf.append(Integer.toHexString(intVal).toUpperCase());
+}
+return sbuf.toString();
+}
+}
+

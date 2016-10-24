@@ -1,0 +1,9 @@
+public ParallelLeafReader(boolean closeSubReaders, LeafReader[] readers, LeafReader[] storedFieldsReaders) throws IOException {
+this.closeSubReaders = closeSubReaders;
+if (readers.length == 0 &amp;&amp; storedFieldsReaders.length > 0)
+Collections.addAll(completeReaderSet, this.storedFieldsReaders);
+
+// check compatibility:
+for(LeafReader reader : completeReaderSet) {
+if (reader.maxDoc() != maxDoc) {
+

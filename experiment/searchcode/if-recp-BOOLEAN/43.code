@@ -1,0 +1,9 @@
+EditText recpEmail = (EditText) findViewById(R.id.EditText_targetEmail);
+
+if(LOG)
+Log.d(&quot;TrackMyStuffSettingsActivity&quot;, &quot;yourName : &quot; + yourName + &quot;recpEmail : &quot; + recpEmail);
+prefEditor.putString(SHIFT_PREFERENCE_EMAIL, recpEmail.getText()
+.toString());
+
+boolean result = prefEditor.commit();
+

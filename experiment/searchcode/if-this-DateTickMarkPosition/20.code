@@ -1,0 +1,12 @@
+return false;
+}
+DateTickMarkPosition position = (DateTickMarkPosition) obj;
+if (!this.name.equals(position.toString())) {
+return true;
+
+}
+
+
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(DateTickMarkPosition.START)) {
+

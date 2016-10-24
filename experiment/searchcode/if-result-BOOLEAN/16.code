@@ -1,0 +1,15 @@
+booleanTerms.add(booleanTerm);
+}
+
+public boolean compute(Tuple tuple) {
+for (BooleanTerm booleanTerm : booleanTerms) {
+boolean result = booleanTerm.compute(tuple);
+
+if (result)
+return result;
+}
+
+return false;
+}
+}
+

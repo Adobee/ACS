@@ -1,0 +1,8 @@
+int n = (int)cellSlider.getNCellNum();
+
+if (oldn != n ) {
+int [] nCells = new int[]{n,n,n};
+sim.nm.setNCellNum(n);
+for (int nEval1=0; nEval1<numEval; nEval1++){
+omega2[wvNum][nEval1] = sim.nm.getOmegaSquared()[wvNum][nEval1];
+

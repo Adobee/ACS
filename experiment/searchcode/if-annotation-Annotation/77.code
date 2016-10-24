@@ -1,0 +1,10 @@
+* Also builds the meta-annotation map. Throws a NullPointerException if
+* trying to register a null map
+*
+* @param annotationMap A map of annotation to register
+protected AnnotationStore(Map<Class<? extends Annotation>, Annotation> annotationMap, Map<Class<? extends Annotation>, Annotation> declaredAnnotationMap)
+{
+if (annotationMap == null)
+{
+throw new NullPointerException(&quot;annotationMap cannot be null&quot;);
+

@@ -1,0 +1,10 @@
+* The player&#39;s username encoded as a long.
+*/
+private final long encodedUsername;
+
+/**
+* The player&#39;s password.
+public PlayerCredentials(String username, String password, int usernameHash, int uid, String hostAddress) {
+this.username = username;
+encodedUsername = NameUtil.encodeBase37(username);
+

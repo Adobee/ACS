@@ -1,0 +1,8 @@
+import org.apache.commons.math3.linear.RealVector;
+import org.lwjgl.util.vector.Vector2f;
+import org.lwjgl.util.vector.Vector3f;
+public Set<RealVector> getPenetrationPoints(State state, RigidBody rigidBody) {
+HashSet<RealVector> penetrationPoints = new HashSet<RealVector>();
+
+if (rigidBody instanceof Sphere) {
+

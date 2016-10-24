@@ -1,0 +1,8 @@
+import java.util.function.Function;
+
+public class CachedLogFactorial implements Function<Integer, Double> {
+private final CapacatorStore<Integer, Double> logFactorialCache;
+public Double apply(Integer value) {
+Double result = logFactorialCache.get(value);
+if(result == null){
+

@@ -1,0 +1,8 @@
+public Result eval(LogicContext context, Integer patientId, Map<String, Object> parameters) throws LogicException {
+if (parameters == null) {
+LogicCriteria fullCriteria = null;
+if(encounterId != null)
+{
+LogicCriteria encounterCriteria =
+new LogicCriteriaImpl(&quot;encounterId&quot;).equalTo(encounterId.intValue());
+

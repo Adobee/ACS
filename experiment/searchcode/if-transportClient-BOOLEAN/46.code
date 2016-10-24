@@ -1,0 +1,9 @@
+import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.common.settings.ImmutableSettings;
+import org.elasticsearch.common.settings.Settings;
+public ESBulkRequsetHandler(String address, int port, String clusterName) {
+open(address, port, clusterName);
+}
+
+public boolean insert(String indexName, String typeName, String data) {
+

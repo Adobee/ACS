@@ -1,0 +1,6 @@
+@Override
+public long update(int price,int Camp5YearEstimateId,int priceType){
+boolean res=camp5YearEstimateAmmunitionRepository.update(price, Camp5YearEstimateId);
+if (res){
+Camp5YearEstimateAmmunition camp5YearEstimateAmmunitionList=camp5YearEstimateAmmunitionRepository.loadByEntityId(Camp5YearEstimateId);
+

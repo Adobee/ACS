@@ -1,0 +1,9 @@
+package com.qiniu.qiniulab.utils;
+
+import com.qiniu.android.dns.DnsManager;
+import com.qiniu.android.dns.IResolver;
+public static String getIpByDomain(String domain) throws IOException {
+String[] ips = dnsManager.query(domain);
+String ip = null;
+if (ips.length > 0) {
+

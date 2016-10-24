@@ -1,0 +1,10 @@
+public class NewVmInstanceTypeManager extends VmInstanceTypeManager {
+
+private final ProfileBehavior networkBehavior = new EditProfileBehavior();
+return networkBehavior;
+}
+
+@Override
+protected void maybeSetSingleQxlPci(VmBase vmBase) {
+// We are setting the default Qxl support for true on new Linux VM with Spice display protocol
+

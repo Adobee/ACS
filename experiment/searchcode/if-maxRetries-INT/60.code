@@ -1,0 +1,9 @@
+* @param maxRetries max number of times to retry
+*/
+public ExponentialBackoffRetry(int baseSleepTimeMs, int maxRetries) {
+this.maxSleepMs = maxSleepMs;
+}
+
+private static int validateMaxRetries(int maxRetries) {
+if (maxRetries > MAX_RETRIES_LIMIT) {
+

@@ -1,0 +1,14 @@
+this.xAlphabet = xAlphabet;
+this.yAlphabet = yAlphabet;
+this.fxy = fxy;
+this.loss = loss;
+}
+
+private double calculateDenom(SparseVector a, SparseVector b){
+int ind = a.getIndexAt(i);
+double val = a.getValueAt(i);
+if (!diff.containsKey(ind)){
+diff.put(ind, 0);
+}
+diff.put(ind, diff.get(ind)+val);
+

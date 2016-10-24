@@ -1,0 +1,12 @@
+public boolean processToken(int offset, boolean topLevel) {
+if (lookFor.matching(topLevel)) {
+lastOccurrence = offset;
+return true;
+}
+if (stopAt.matching(topLevel)) {
+return true;
+}
+return false;
+}
+}
+

@@ -1,0 +1,10 @@
+double c3 = 20e-9;
+double r1 = 250e+03;
+double r2 = 1e+06;
+double r3 = 25e+03;
+double r4 = 56e+03;
+// http://www.docstoc.com/docs/53837224/Discretization-of-the-59-Fender-Bassman-Tone-Stack
+
+double b0 = 1.0;
+double b1 = t * c1 * r1 + m * c3 * r3 + l * (c1 * r2 + c2 * r2) + (c1 * r3 + c2 * r3);
+

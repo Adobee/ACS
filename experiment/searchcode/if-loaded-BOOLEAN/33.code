@@ -1,0 +1,10 @@
+public class SuccessEvent<T> {
+protected T result;
+private boolean resultLoaded = false;
+private boolean hasFinished;
+
+public SuccessEvent<T> setResult(T result) {
+this.result = result;
+
+if (!resultLoaded) {
+

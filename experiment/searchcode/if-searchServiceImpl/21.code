@@ -1,0 +1,10 @@
+public class DataServiceImpl extends APIService implements DataService {
+
+@Autowired
+private SearchService searchServiceImpl;
+
+@Override
+public PagerModel getPagerList(String name, String group, PagerModel pager) {
+if (!searchServiceImpl.isExists(name, group)) {
+return pager;
+

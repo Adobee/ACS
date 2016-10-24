@@ -1,0 +1,9 @@
+* A purger that looks through to a throwable chain and can select one to unwrap.
+*
+* @author Geoffrey De Smet
+* @since 0.3.0
+*/
+public class DefaultExceptionPurger<SELF extends DefaultExceptionPurger<SELF>> implements ExceptionPurger {
+public DefaultExceptionPurger(Class<? extends Throwable> includeThrowableClass, Class<? extends Throwable> excludeThrowableClass) {
+if (includeThrowableClass != null) {
+

@@ -1,0 +1,13 @@
+public final class ComplexCartesianNear<T extends ComplexType<T>,U extends ComplexType<U>>
+implements BinaryRelation<T,U>
+{
+// -- instance variables --
+
+private final double rTol;
+private final double iTol;
+
+// -- constructors --
+
+public ComplexCartesianNear() {
+rTol = 0.000001;
+

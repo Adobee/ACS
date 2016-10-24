@@ -1,0 +1,11 @@
+public class AppendableBodyConsumer implements BodyConsumer {
+
+private final Appendable appendable;
+private final String encoding;
+public void close() throws IOException {
+if (Closeable.class.isAssignableFrom(appendable.getClass())) {
+Closeable.class.cast(appendable).close();
+}
+}
+}
+

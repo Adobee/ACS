@@ -1,0 +1,12 @@
+import java.util.Map;
+
+public class BomRoutingDeleteById extends Task
+{
+public Object  executeTask (Object object) throws Exception
+BomRouting bomRouting = (BomRouting)incomingRequest.get(&quot;bomRouting&quot;);
+if(bomRouting == null)
+{
+bomRouting = new BomRouting();
+}
+BomRoutingSetValuesPK setValues = new BomRoutingSetValuesPK();
+

@@ -1,0 +1,11 @@
+return bounds.size();
+}
+
+public boolean isInBounds( double [] x ) {
+if( x.length != getDimension() )
+return false;
+
+for( int i=0; i<x.length; ++i )
+if( !bounds.get( i ).contains( x[ i ] ) )
+return false;
+

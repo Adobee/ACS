@@ -1,0 +1,14 @@
+private EMessage readSingleMessage() throws IOException {
+if (isUseV100Plus()) {
+int msgSize = m_clientSocket.readInt();
+
+if (msgSize > MAX_MSG_LENGTH) {
+return new EMessage(buf, buf.length);
+}
+
+if (m_iBufLen == 0) {
+m_iBufLen = appendIBuf();
+}
+
+int msgSize = 0;
+

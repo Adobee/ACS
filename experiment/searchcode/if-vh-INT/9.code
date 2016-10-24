@@ -1,0 +1,7 @@
+public abstract int getViewType();
+
+@Override
+public abstract VH createViewHolder(ViewGroup parent);
+public final <RI extends Item> Boiler<RI, VH> boiler(@ViewType @AnyRes int viewType) {
+return make(viewType, this);
+

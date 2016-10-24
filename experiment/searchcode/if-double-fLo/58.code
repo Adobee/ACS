@@ -1,0 +1,10 @@
+Stream stream = new Stream(streamLoader.getDataForName(&quot;flo.dat&quot;));
+int cacheSize = stream.readUShort();
+
+if (cache == null) {
+for (int j = 0; j < cacheSize; j++) {
+if (cache[j] == null) {
+cache[j] = new Flo();
+}
+cache[j].readValues(stream);
+

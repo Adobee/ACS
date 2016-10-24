@@ -1,0 +1,10 @@
+int cum = (int) (((value - low + 1) * sum(cumFreq, END) - 1) / (high - low + 1));
+int c = upper_bound(cumFreq, cum);
+
+long range = high - low + 1;
+high = low + range * sum(cumFreq, c) / sum(cumFreq, END) - 1;
+int b = bitsPos < bits.length ? bits[bitsPos++] : 0;
+value = ((value << 1) + b) &amp; MASK;
+} else if (high - low < sum(cumFreq, END)) {
+low = (low - (1 << (BITS - 2))) << 1;
+

@@ -1,0 +1,8 @@
+public Long call() throws Exception {
+long number = 0;
+double minRatio = 1d / 3;
+double maxRatio = 1d / 2;
+for (int i = 1; i <= 12000; i++) {
+int num2 = (int) (minRatio * i + 1);
+double ratio2 = new Double(num2) / i;
+

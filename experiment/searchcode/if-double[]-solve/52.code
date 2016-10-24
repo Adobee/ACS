@@ -1,0 +1,12 @@
+store = new Hashtable<>();
+
+return solve(n, m, k);
+}
+
+private double solve(long n, int m, int k) {
+if(k == 0) {
+long rem = n - div * m;
+
+double result = (1.0 * rem/m) * solve(n - (div + 1), m, k - 1);
+result += (1.0 * (m - rem)/m) * solve(n - div, m, k - 1);
+

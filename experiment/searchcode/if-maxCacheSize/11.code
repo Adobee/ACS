@@ -1,0 +1,10 @@
+public class ApplicationCache implements ApplicationCacheMBean{
+
+private int maxCacheSize = 100;
+private List cache = new ArrayList();
+public synchronized int getMaxCacheSize() {
+return maxCacheSize;
+}
+public synchronized void setMaxCacheSize(int value) {
+if(value < 1) {
+

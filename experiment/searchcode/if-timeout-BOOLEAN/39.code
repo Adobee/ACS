@@ -1,0 +1,11 @@
+* @return 如果时间间隔足够，返回true，并更新记录时间
+*/
+public boolean checkTimeout() {
+long now = System.currentTimeMillis();
+
+boolean isTimeout = (now - last) > timeout;
+if (isTimeout) last = now;
+return isTimeout;
+}
+}
+

@@ -1,0 +1,9 @@
+if( profileObj.has( CFG_LOAD_PROFILE_SCAN_PCT_KEY) )
+this._scanPct = profileObj.getDouble( CFG_LOAD_PROFILE_SCAN_PCT_KEY );
+
+double sum = this._readPct + this._writePct + this._updatePct + this._deletePct + this._scanPct;
+super(interval, numberOfUsers, mixName, transitionTime, name);
+}
+
+public double getScanPct() { return this._scanPct; }
+

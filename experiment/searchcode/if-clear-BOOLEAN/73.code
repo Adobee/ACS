@@ -1,0 +1,12 @@
+public boolean add(T t) {
+boolean added = collection.add(t);
+if (added) {
+change.added(t);
+collection.clear();
+}
+
+public boolean retainAll(Collection<?> c) {
+throw new UnsupportedOperationException();
+}
+}
+

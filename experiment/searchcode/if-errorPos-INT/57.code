@@ -1,0 +1,8 @@
+PointInTimeParserBucket bucket = new PointInTimeParserBucket(0, chrono, getLocale());
+int newPos = getParser().parseInto(bucket, text, 0);
+if (newPos >= 0) {
+private String createErrorMessage(String text, int errorPos) {
+int sampleLen = errorPos + 32;
+String sampleText;
+if (text.length() <= sampleLen + 3) {
+

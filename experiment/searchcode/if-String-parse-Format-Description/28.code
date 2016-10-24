@@ -1,0 +1,10 @@
+static final DateFormat servletDateFormat = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);
+
+public static Date parseClientDate(String date) throws ParseException {
+return clientDateFormat.parse(date);
+public static String parseHtml(String description) {
+
+String shortDescription = Jsoup.parse(description).text();
+
+if(shortDescription.length() > 100) {
+

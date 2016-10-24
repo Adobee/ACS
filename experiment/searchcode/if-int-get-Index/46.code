@@ -1,0 +1,13 @@
+* Get the kth largest number from two sorted arrays
+* @author jinguangzhou
+*
+*/
+
+public class KthLargest {
+public void getKthLargest(int[] a,int[] b,int k){
+int newLength=indexA+indexB+1;
+int[] result=new int[a.length+b.length];
+int count=0;
+while(indexA>=0 &amp;&amp; indexB>=0){
+if(a[indexA]>=b[indexB]){
+

@@ -1,0 +1,10 @@
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
+
+public class Network {
+public static boolean hasConnection(Context context) {
+.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+if (wifiNetwork != null &amp;&amp; wifiNetwork.isConnected()) {
+
+return true;
+

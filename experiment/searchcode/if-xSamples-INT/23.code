@@ -1,0 +1,11 @@
+this.hiddenSample = new int[this.num_samples + 1][numHiddenNodes + 1];
+
+// Initialize X samples
+int[] xSamples = new int[numVisibleNodes + 1];
+for (int i = 1; i <= numVisibleNodes; i++) {
+xSamples[i] = i % 2 == 0 ? 1 : 0;
+}
+
+// Generate samples
+for (int i = 1; i <= this.num_samples; i++) {
+

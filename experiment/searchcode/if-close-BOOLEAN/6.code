@@ -1,0 +1,15 @@
+import java.util.concurrent.atomic.AtomicBoolean;
+
+/**
+*/
+public class CloseSimCommand extends SimCommand
+{
+private static AtomicBoolean forceClose = new AtomicBoolean(false);
+public void run(String[] commands) throws Exception
+{
+socketStreamProviderIF.disconnect();
+forceClose.set(true);
+}
+
+public static boolean isClosed()
+

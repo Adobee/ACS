@@ -1,0 +1,15 @@
+public RandomIngress(int numProcs) {
+this.numProcs = numProcs;
+}
+
+@Override
+public short computePid(VidType source, VidType target) {
+short pid = (short) (HashUtil.hashpair(source, target) % numProcs);
+if (pid < 0)
+pid = (short) (pid + numProcs);
+return pid;
+}
+
+@Override
+public int numProcs() {
+

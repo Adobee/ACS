@@ -1,0 +1,8 @@
+* @return OpType
+*/
+protected OpType getOptype(ColumnConfig columnConfig) {
+if(columnConfig.isMeta()) {
+return OpType.ORDINAL;
+} else if(columnConfig.isTarget()) {
+return OpType.CATEGORICAL;
+

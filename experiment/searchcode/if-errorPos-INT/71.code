@@ -1,0 +1,11 @@
+throw new XMLParseException(&quot;Expected single or double quotes&quot;, source, pos);
+
+char endChar = c;
+boolean insideEntity = false;
+int errorPos = pos;
+
+while (true) {
+pos++;
+if (pos >= source.length()) {
+int i = Math.min(20, source.length() - token.getStartOffset());
+

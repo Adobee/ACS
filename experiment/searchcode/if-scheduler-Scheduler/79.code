@@ -1,0 +1,8 @@
+public class ResponseTimeScheduler implements ElevatorScheduler {
+
+private static ElevatorScheduler scheduler;
+public static ElevatorScheduler getInstance(){
+if(scheduler == null)
+scheduler=new ResponseTimeScheduler();
+return scheduler;
+

@@ -1,0 +1,8 @@
+new ChannelBufferBytesReference(request.getContent()) :
+BytesArray.EMPTY;
+this.uri = request.getUri();
+int pathEndPos = uri.indexOf(&#39;?&#39;);
+if (pathEndPos < 0) {
+this.rawPath = uri;
+} else {
+

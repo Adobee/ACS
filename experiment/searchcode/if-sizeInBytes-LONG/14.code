@@ -1,0 +1,8 @@
+return nf.format(sizeInBytes) + &quot; Bytes&quot;;
+}
+
+double totalSizeInKB = Long.valueOf (sizeInBytes).doubleValue()/1024.0;
+if(totalSizeInKB < 1000){
+double totalSizeInMB = Long.valueOf (sizeInBytes).doubleValue()/1048576;
+if (totalSizeInMB < 1000) {
+

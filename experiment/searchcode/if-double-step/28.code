@@ -1,0 +1,11 @@
+for (double x = xMin; x <= xMax; x += step) {
+if (inDomain(x) &amp;&amp; invoke(x) > highestY) {
+xOfHighestY = x;
+for (double x = xMin; x <= xMax; x += step) {
+if (inDomain(x)) return x;
+}
+return Double.NaN;
+}
+
+public double highestX(double xMin, double xMax, double step) {
+

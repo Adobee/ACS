@@ -1,0 +1,9 @@
+double x0 = x - r;
+double y0 = y - r;
+double x1 = x + w + r;
+double y1 = y + h + r;
+if(bx >= x0 &amp;&amp; by >= y0 &amp;&amp; bx <= x1 &amp;&amp; by <= y1) {
+double tmp2 = (by - y0);
+tmp2 = Math.pow(tmp2, 2);
+double tmp3 = tmp1 + tmp2;
+

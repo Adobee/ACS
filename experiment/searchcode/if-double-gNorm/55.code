@@ -1,0 +1,10 @@
+//maximum iteration of gradient descent
+int m_maxIter;
+
+//convergence criterion
+double m_fdelta, m_gdelta;
+
+//cache for the gradient
+int k = 1; // the first step has been explore in init()
+double gNorm, xNorm, fx_old, converge;//get the initial function value and gradient
+

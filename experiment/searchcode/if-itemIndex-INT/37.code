@@ -1,0 +1,15 @@
+for (int i = 0; i < getNumItems(); i++) {
+int itemIndex = (int)itemTuples[i][0];
+if (weight + getWeight(itemIndex) <= getCapacity()) {
+setTaken( itemIndex, false );
+}
+}
+
+}
+
+protected final int getNumItems(){
+return this.numItems;
+}
+
+protected final int getValue( int itemIndex ){
+

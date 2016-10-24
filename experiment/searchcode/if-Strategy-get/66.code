@@ -1,0 +1,9 @@
+public double getDiscountPrice(double price){
+if(discountStrategy == null){
+discountStrategy = new OldDiscount();
+}
+return this.discountStrategy.getDiscont(price);
+}
+
+public void changeDiscount(DiscountStrategy discountStrategy){
+

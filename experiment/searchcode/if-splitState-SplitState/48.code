@@ -1,0 +1,9 @@
+cell.setValue(splitState);
+} else {
+splitState = cell.getValue().toString();
+}
+
+if (splitState.equals(CostSplitStateEnum.ALLSPLIT.toString())) {
+row.getStyleAttributes().setBackground(FDCSplitClientHelper.COLOR_ALLSPLIT);
+} else if (splitState.equals(CostSplitStateEnum.PARTSPLIT.toString())) {
+

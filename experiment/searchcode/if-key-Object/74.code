@@ -1,0 +1,13 @@
+if (object == null) {
+return;
+}
+
+K key = object.getSingletonKey();
+if (key == null) {
+return;
+oldObject = mObjectMaps.get(key);
+}
+
+if (oldObject != null) {
+super.removeObject(oldObject);
+

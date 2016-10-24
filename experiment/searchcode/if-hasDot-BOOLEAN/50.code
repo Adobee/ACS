@@ -1,0 +1,16 @@
+// B必须是整数，可以带正负号
+// 有e的话，A,B就必须同时存在
+public boolean isNumber(String s) {
+
+s = s.trim();
+if (s.length() > 0 &amp;&amp; s.charAt(s.length() - 1) == &#39;e&#39;) {
+res = res &amp;&amp; valid(t[1], true);
+}
+return res;
+}
+
+
+private boolean valid(String s, boolean hasDot) {
+
+if (s.length() > 0 &amp;&amp; (s.charAt(0) == &#39;+&#39; || s.charAt(0) == &#39;-&#39;)) {
+

@@ -1,0 +1,15 @@
+public class interPolar {
+
+public static double  interPolarLin(double x,double X[],double Y[]){
+int i=0;
+double Xa;
+double Xb;
+
+Xa=0;
+Xb=1;
+
+for(i=0;i<X.length;i++){
+if(x==X[i])
+return Y[i];
+if(x>X[i])
+

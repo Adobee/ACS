@@ -1,0 +1,12 @@
+public double getFirstLargestAngle()
+{
+if ((lenA>lenB)&amp;&amp;(lenA>lenC))
+{
+double largestA = (double)(((Math.pow(lenB,2))+(Math.pow(lenC,2))-(Math.pow(lenA,2)))/(2*lenB*lenC));
+this.radA = this.radA + this.rad;
+return this.radA;
+}
+else if ((lenB>lenA)&amp;&amp;(lenB>lenC))
+{
+double largestB = (double)(((Math.pow(lenA,2))+(Math.pow(lenC,2))-(Math.pow(lenB,2)))/(2*lenA*lenC));
+

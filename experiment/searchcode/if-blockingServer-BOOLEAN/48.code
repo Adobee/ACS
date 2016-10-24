@@ -1,0 +1,12 @@
+private final boolean blockingServer;
+
+final boolean pipelining;
+
+private final int pipeliningMaxEvents;
+
+final boolean compression;
+this.bigArrays = bigArrays;
+
+if (settings.getAsBoolean(&quot;netty.epollBugWorkaround&quot;, false)) {
+System.setProperty(&quot;org.jboss.netty.epollBugWorkaround&quot;, &quot;true&quot;);
+

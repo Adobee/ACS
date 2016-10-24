@@ -1,0 +1,9 @@
+Start the video hardware emulation.
+
+***************************************************************************/
+
+public static VhStartPtr chqflag_vh_start = new VhStartPtr() { public int handler()
+zoom_colorbase[1] = 0x04;	/* not sure yet, because of bad dumps */
+
+if (K051960_vh_start(SPRITEROM_MEM_REGION,NORMAL_PLANE_ORDER,sprite_callback))
+

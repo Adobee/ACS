@@ -1,0 +1,10 @@
+for (int i = 0; i < samples.length; i++) {
+if (samples[i] == 1) {
+int period = i - (bothEdges ? last2 : last1);
+last2 = last1;
+int sum = 0;
+for (int i = 0; i < samples.length; i++) {
+if (i < window) {
+sum += samples[i];
+} else {
+

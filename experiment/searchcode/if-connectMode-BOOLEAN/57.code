@@ -1,0 +1,10 @@
+private int mBackPort;
+private String mBackPath;
+private String mBackMode;
+private boolean mSilentMode;
+public static synchronized ServerConfig getInstance(String filename) {
+if (instance == null) {
+instance = new ServerConfig(filename);
+}
+return instance;
+

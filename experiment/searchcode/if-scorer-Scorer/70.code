@@ -1,0 +1,9 @@
+import java.util.List;
+
+public class CompositeKeytermWindowScorer implements KeytermWindowScorer {
+
+private List<KeytermWindowScorer> scorers;
+double score = scorer.scoreWindow( begin , end , matchesFound , totalMatches , keytermsFound , totalKeyterms , textSize );
+if ( score > 1.0d || score < 0.0d )
+System.out.println( scorer.getClass().getSimpleName() + &quot; OUT OF BOUNDS: &quot; + score );
+

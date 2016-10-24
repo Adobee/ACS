@@ -1,0 +1,7 @@
+public void process(JSONObject content, JSONObject rawRequest, Server server) {
+if (content.getBoolean(&quot;is_private&quot;)) {
+String cid = content.getString(&quot;id&quot;);
+
+JSONObject recp = content.getJSONObject(&quot;recipient&quot;);
+String id = recp.getString(&quot;id&quot;);
+

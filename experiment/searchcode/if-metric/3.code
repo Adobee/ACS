@@ -1,0 +1,11 @@
+this.deltaMetricCalculator = deltaMetricCalculator;
+}
+
+@Override
+public Metric call(Metric metric) {
+if (metricSpecialValue.hasSpecialValue(metric)) {
+lastMetrics.set(metric);
+
+if (lastMetric == null) {
+return deltaMetricCalculator.getFirstMetric(metric);
+

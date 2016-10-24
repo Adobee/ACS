@@ -1,0 +1,9 @@
+public int[] genAll(final int From)
+{
+final int type = Math.abs(square[From]);
+int next = 0;
+
+if (type == Piece.PAWN) {
+if (square[From] == Piece.WHITE_PAWN) { // WHITE
+if (COL(From) != 0 &amp;&amp; CAPTURE_MOVE(square[From], square[From + 15]))
+

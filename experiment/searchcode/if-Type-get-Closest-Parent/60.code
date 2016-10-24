@@ -1,0 +1,10 @@
+View view = getLastView();
+Activity activity = getLastActivity();
+if (view.findViewById(R.id.closest_stops) == null) { // IF NOT present/inflated DO
+this.adapter.setListView(closestStopsListView);
+if (this.adapter.getPois() == null) {
+showClosestStops(view, activity);
+return;
+}
+if (view.findViewById(R.id.closest_stops) != null) { // IF present/inflated DO
+

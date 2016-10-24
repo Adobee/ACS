@@ -1,0 +1,8 @@
+this.caseInsensitive = true; // default case insensitive matching.
+if (caseInsensitive) {
+query = query.toLowerCase();
+parser.execute(query);
+this.terms = parser.getQueryTerms();
+if (caseInsensitive) {
+literals = new HashSet<String>();
+

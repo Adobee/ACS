@@ -1,0 +1,12 @@
+public RealVector add(RealVector v) throws DimensionMismatchException {
+
+checkVectorDimensions(v.getDimension());
+if(v instanceof OpenMapRealVector) {
+return add((OpenMapRealVector)v);
+return res;
+}
+
+/** {@inheritDoc} */
+@Override
+public OpenMapRealVector ebeMultiply(RealVector v) throws DimensionMismatchException {
+

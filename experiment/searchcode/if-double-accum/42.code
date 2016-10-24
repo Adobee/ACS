@@ -1,0 +1,9 @@
+for (long i = 0; i < 10000000000L; i++) {
+long test = (long)(random.nextDouble()*range);
+if (nineD4(test) > sixD6(test)) {
+accum++;
+static int sixD6(long x) {
+x = x >> 18; // magic number because 9d4 = 18 bits
+int accum = 0;
+// what if we declare 7,8 either 1,2 3,4 5,6 depending on which iteration we&#39;re on?
+

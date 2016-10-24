@@ -1,0 +1,10 @@
+int age = getAgeForYear(rightNow, birthDate);
+int diffDOY = getDiffDays(rightNow, birthDate);
+
+if (diffDOY < 0){
+return age;
+}
+
+int getDiffDays(Calendar rightNow, Calendar birthDate) {
+int thisDOY = rightNow.get(Calendar.DAY_OF_YEAR);
+

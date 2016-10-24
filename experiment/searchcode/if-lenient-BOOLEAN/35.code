@@ -1,0 +1,11 @@
+private boolean timeLenient;
+private boolean strictMode;
+
+@Override
+protected boolean validateAceBean(UniversalAceBean bean, I_TermFactory tf) throws IOException, TerminologyException {
+
+failureReport = &quot;&quot;;
+
+conceptAttributeValidator.setTimeLenient(timeLenient);
+boolean validConceptAttributes = conceptAttributeValidator.validateAceBean(bean, tf);
+

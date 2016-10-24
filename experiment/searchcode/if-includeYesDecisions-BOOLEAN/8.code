@@ -1,0 +1,6 @@
+public static Decision tryShardOnNode(ShardRouting shard, RoutingNode node, RoutingAllocation allocation, boolean includeYesDecisions) {
+Decision d = allocation.deciders().canAllocate(shard, node, allocation);
+if (includeYesDecisions) {
+return d;
+} else {
+

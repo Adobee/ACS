@@ -1,0 +1,11 @@
+private Map<Character, Character> toBeReplaced = new HashMap<Character, Character>();
+
+public DefaultJasperFieldStringPostProcessor() {
+toBeReplaced.put(&#39;8&#39;, &#39;۸&#39;);
+toBeReplaced.put(&#39;9&#39;, &#39;۹&#39;);
+}
+
+@Override
+public boolean accept(JRField field) {
+return field.getValueClass().equals(String.class);
+

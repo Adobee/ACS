@@ -1,0 +1,11 @@
+private SimpleSearchQuery query;
+
+public SimpleSearchCommand(String query) {
+super();
+this.query = new SimpleSearchQuery(query);
+StringBuffer command = new StringBuffer(
+&quot;{\&quot;query\&quot; : {\&quot;query_string\&quot; : {\&quot;query\&quot; : \&quot;&quot; + query
++ &quot;\&quot;&quot;);
+
+if (fields != null) {
+

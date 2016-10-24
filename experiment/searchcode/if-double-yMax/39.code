@@ -1,0 +1,17 @@
+public final class Box {
+
+
+double xmin;
+double xmax;
+double ymin;
+double ymax;
+
+double subdivDx;
+double subdivDy;
+public Box(double x0, double y0, double x1, double y1) {
+xmin = x0;
+ymin = y0;
+xmax = x1;
+ymax = y1;
+noXdata = false;
+

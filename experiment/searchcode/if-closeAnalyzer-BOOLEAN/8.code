@@ -1,0 +1,9 @@
+boolean closeAnalyzer = false;
+String field = null;
+if (request.field() != null) {
+if (indexService == null) {
+analyzer = new CustomAnalyzer(tokenizerFactory, charFilterFactories, tokenFilterFactories);
+closeAnalyzer = true;
+} else if (analyzer == null) {
+if (indexService == null) {
+

@@ -1,0 +1,9 @@
+private PGap gap() throws ParseException {
+int start = index, end = index + 1;
+char nextChar = getChar();
+if (Character.isDigit(nextChar)) {
+char nextChar = getChar();
+if (nextChar == &#39;-&#39;) {
+if (getChar() != &#39;>&#39;)
+throw new ParseException(&quot;canPNot parse: &quot; + expression);
+

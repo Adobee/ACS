@@ -1,0 +1,9 @@
+public void testMath272() throws OptimizationException {
+LinearObjectiveFunction f = new LinearObjectiveFunction(new double[] { 2, 2, 1 }, 0);
+Assert.assertEquals(3.0, solution.getValue(), .0000001);
+}
+
+@Test
+public void testMath286() throws OptimizationException {
+LinearObjectiveFunction f = new LinearObjectiveFunction(new double[] { 0.8, 0.2, 0.7, 0.3, 0.6, 0.4 }, 0 );
+

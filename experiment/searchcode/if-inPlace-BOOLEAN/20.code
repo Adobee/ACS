@@ -1,0 +1,10 @@
+* If <code>true</code> then we do not have to react on own events
+*/
+private boolean myInsideChange;
+
+public InplaceEditingLayer(@NotNull final GuiEditor editor) {
+* This is optimization. We do not need to invalidate Swing hierarchy
+* upper than InplaceEditingLayer.
+*/
+public boolean isValidateRoot() {
+

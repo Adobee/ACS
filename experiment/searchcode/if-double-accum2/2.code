@@ -1,0 +1,12 @@
+var = 0.0;
+} else if (length > 1) {
+double accum = 0.0;
+double dev = 0.0;
+double accum2 = 0.0;
+accum += dev * dev;
+accum2 += dev;
+}
+double len = length;
+if (isBiasCorrected) {
+var = (accum - ((accum2 * accum2) / len)) / (len - 1.0);
+

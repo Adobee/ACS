@@ -1,0 +1,10 @@
+public void generateMap(int xOffset) {
+for (int y = 0; y < height; y++) {
+for (int x = xOffset; x < width + xOffset; x++) {
+tiles[x + y * width] = id;
+}
+
+private Tile getTile(int x, int y) {
+int id = getTileId(x, y);
+if (id == Tile.grass.id) {
+

@@ -1,0 +1,7 @@
+public static double dist(double[] a, double[] b) {
+double sumSq = 0.0;
+for (int i = 0; i < a.length; i++)
+public static double dist(double[] a, double[] b, int n) {
+double sumSq = 0.0;
+for (int i = 0; i < n; i++)
+

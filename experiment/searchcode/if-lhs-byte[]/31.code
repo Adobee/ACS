@@ -1,0 +1,9 @@
+public CompareToBuilder append(Object lhs, Object rhs, Comparator comparator) {
+if (comparison != Order.EQ) {
+return this;
+}
+if (lhs == rhs) {
+} else if (lhs instanceof byte[]) {
+append((byte[]) lhs, (byte[]) rhs);
+} else if (lhs instanceof double[]) {
+

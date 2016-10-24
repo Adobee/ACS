@@ -1,0 +1,14 @@
+public class MutationMid extends MutationRand
+{
+protected Solution midpoint;
+
+public MutationMid(int k)
+{
+super(k);
+}
+
+@Override
+public double computeScalingFactor()
+{
+return Math.sqrt((1 + 2 * DE.F * DE.F) / (2 * K));
+

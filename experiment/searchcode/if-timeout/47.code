@@ -1,0 +1,9 @@
+package concurrency;
+
+public final class SyncUtils {
+
+public static int AdjustTimeout(long lastTime, int timeout) {
+
+if (timeout == Integer.MAX_VALUE) return timeout;
+long now = System.currentTimeMillis();
+

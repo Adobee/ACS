@@ -1,0 +1,12 @@
+public abstract class LimitedPool<Component> extends Pool<Component> {
+
+private int limit;
+
+public LimitedPool(int limit) {
+public void push(Component component) {
+if(size() < getLimit())
+super.push(component);
+}
+
+public int getLimit() {
+

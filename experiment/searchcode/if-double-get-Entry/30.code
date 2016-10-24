@@ -1,0 +1,7 @@
+return factor == null ? 1 : factor;
+}
+
+public Double getFactorFloor(DateTime date) {
+Map.Entry<DateTime, Double> dateTimeDoubleEntry = getFactorsPerDate().floorEntry(date);
+return dateTimeDoubleEntry == null ? getFactorsPerDate().firstEntry().getValue() : dateTimeDoubleEntry.getValue();
+

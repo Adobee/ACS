@@ -1,0 +1,10 @@
+public abstract class BinaryExpr extends ExprDesc {
+
+private static final long serialVersionUID = 1L;
+
+protected ExprDesc lhs;
+public List<ExprDesc> getChildren() {
+if (child == null) {
+child = new ArrayList<ExprDesc>();
+child.add(lhs);
+

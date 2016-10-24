@@ -1,0 +1,10 @@
+public ArrayList insertionSort(ArrayList <Double>list){
+double temp;
+int  previousIndex;
+
+for(int index = 1; index < list.size(); index++){
+list.set((previousIndex+1), list.get(previousIndex));
+previousIndex-=1;
+}
+if(list.get(previousIndex) > temp){
+

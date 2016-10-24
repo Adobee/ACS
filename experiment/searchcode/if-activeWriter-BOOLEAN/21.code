@@ -1,0 +1,9 @@
+protected synchronized boolean startWrite() {
+Object currentId = getCurrentThreadId();
+if (activeWriter != null &amp;&amp; isSameThreadId(activeWriter, currentId)) { // already held; re-acquire
+if (writeHolds_ > 0) {  // still being held
+return null;
+} else {
+activeWriter = null;
+if (waitingReaders_ > 0 &amp;&amp; allowReader()) {
+

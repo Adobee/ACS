@@ -1,0 +1,10 @@
+return parseResponse(builder.build());
+}
+
+Response<T> parseResponse(okhttp3.Response rawResponse) throws IOException {
+.body(new NoContentResponseBody(rawBody.contentType(), rawBody.contentLength()))
+.build();
+
+int code = rawResponse.code();
+if (code < 200 || code >= 300) {
+

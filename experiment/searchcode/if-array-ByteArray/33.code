@@ -1,0 +1,8 @@
+public static ByteArray encrypt(ByteArray byteArray) throws UnsupportedEncodingException {
+boolean isHasEncode = false;
+if (byteArray.getLength() >= 10) {
+byteArray.setPosition(0);
+byte _byte = byteArray.readByte();
+String headTemp = byteArray.readString(7);
+if (headTemp.equals(head) &amp;&amp; _byte == 0) {
+

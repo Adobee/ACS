@@ -1,0 +1,12 @@
+Hashtable<String, Hashtable<String, Book>> Source = null;
+
+public Books() {
+super();
+Source = new Hashtable<String, Hashtable<String, Book>>(10);
+public void addBook(String source, Book book) {
+Hashtable<String, Book> tmp = null;
+tmp = this.Source.get(source);
+
+if (tmp == null) {
+tmp = new Hashtable<String, Book>(10);
+

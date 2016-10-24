@@ -1,0 +1,9 @@
+public static int test(){
+int i = 0;
+long l1 =  2147483648L;
+long l2 = 1073741824L;
+if(l1 / l2 != 2) i = i + 1;
+l1 = -l1;
+if(l1 / l2 != -2) i = i + 2;
+l1 = -l1 + 1;
+

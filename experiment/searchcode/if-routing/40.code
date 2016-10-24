@@ -1,0 +1,9 @@
+package defyndian.messaging;
+
+public enum DefyndianRoutingType {
+
+DEFAULT(&quot;DEFAULT&quot;), DIRECT(&quot;DIRECT&quot;), SYSTEM(&quot;SYSTEM&quot;), NOTIFICATION(&quot;NOTIFICATION&quot;), PRESENCE(&quot;PRESENCE&quot;), ALL(&quot;*&quot;);
+public static DefyndianRoutingType getType(String routingType){
+for( DefyndianRoutingType t : DefyndianRoutingType.values() ){
+if( routingType.equalsIgnoreCase(t.getValue()) )
+

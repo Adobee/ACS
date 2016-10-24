@@ -1,0 +1,11 @@
+private static double estimateWeightDerivative(int xw, int yw, int zw, int f, Network network, NetworkState[] states) {
+Debug.noUpdate = true;
+
+
+double objBefore = getObjectiveValueBefore(network, states, f);
+((ChaObjective) network.originalObjective).meansUsed = meansBefore;
+
+double ret = network.objective.getValue(states);
+
+if (network.originalObjective instanceof ChaObjective)
+

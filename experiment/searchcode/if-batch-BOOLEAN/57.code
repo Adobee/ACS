@@ -1,0 +1,9 @@
+import com.alu.lvzi.pojo.Admin;
+import com.alu.lvzi.service.RfidBatchService;
+import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ActionSupport;
+Object object = ActionContext.getContext().getSession().get(&quot;user&quot;);
+if (object instanceof Admin)
+{
+boolean batchUploadResult = rfidBatchService.saveRfidBatches(batch, batchFileName, (Admin) object);
+

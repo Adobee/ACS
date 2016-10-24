@@ -1,0 +1,9 @@
+boolean rebuild;
+
+// Get abstract state to split
+lzSplit = graph.states.get(splitState);
+if (verbosity >= 1)
+action = ((STPGAbstrSimple) abstraction).getChoice(splitState, in).action;
+if (!storeValidZones) {
+actionBitSet = (BitSet) action;
+

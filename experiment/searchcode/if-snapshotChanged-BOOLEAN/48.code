@@ -1,0 +1,6 @@
+SnapshotMetaData.Entry updatedSnapshot = snapshot;
+boolean snapshotChanged = false;
+private ImmutableMap<ShardId, ShardSnapshotStatus> processWaitingShards(ImmutableMap<ShardId, ShardSnapshotStatus> snapshotShards, RoutingTable routingTable) {
+boolean snapshotChanged = false;
+ImmutableMap.Builder<ShardId, ShardSnapshotStatus> shards = ImmutableMap.builder();
+

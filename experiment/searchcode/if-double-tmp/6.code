@@ -1,0 +1,13 @@
+public static double or(double... args) {
+double tmp = -Double.MAX_VALUE;
+for (double d : args) {
+if (d > tmp) {
+tmp = d;
+double tmp = Double.MAX_VALUE;
+for (double d : args) {
+if (d < tmp) {
+tmp = d;
+}
+}
+return tmp;
+

@@ -1,0 +1,13 @@
+private double search1(int S, int a, int b, int c, boolean put) {
+double l1 = 0, r1 = S;
+
+for (int i = 0; i < 500; ++i) {
+else r1 = m2;
+}
+
+if (put) xf = r1;
+return search2(S, a, b, c, r1, true);
+}
+
+private double search2(int S, int a, int b, int c, double d1, boolean put) {
+

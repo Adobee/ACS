@@ -1,0 +1,8 @@
+int i = randomInt(formats.length);
+if (i < formats.length) {
+builder.put(IndexFieldData.CommonSettings.SETTING_MEMORY_STORAGE_HINT, formats[i].name().toLowerCase(Locale.ROOT));
+IndexSearcher searcher = new IndexSearcher(readerContext.reader());
+TopFieldDocs topDocs;
+
+topDocs = searcher.search(new MatchAllDocsQuery(), 10,
+

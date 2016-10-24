@@ -1,0 +1,7 @@
+MediaType compatible = null;
+for (MediaType mine : mediaTypes()) {
+if (MediaType.ANY.equals(mine)) {
+// If we&#39;re looking for */*, then return application/json if it&#39;s an option
+if (types.contains(MediaType.JSON)) {
+return MediaType.JSON;
+

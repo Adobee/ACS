@@ -1,0 +1,6 @@
+this.pendingMasterNodes = totalMasterNodes - 1;
+if (this.neededMastersToCommit > this.pendingMasterNodes) {
+masterNode, clusterState.version(), pendingMasterNodes, neededMastersToCommit);
+neededMastersToCommit--;
+if (neededMastersToCommit == 0) {
+

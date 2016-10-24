@@ -1,0 +1,6 @@
+@Override
+public boolean equals(Object obj) {
+if(obj instanceof Relationship) {
+Relationship that = (Relationship) obj;
+return ObjectUtils.nullSafeEquals(this.relationship, that.relationship);
+

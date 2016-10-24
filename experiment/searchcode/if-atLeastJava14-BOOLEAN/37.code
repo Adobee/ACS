@@ -1,0 +1,10 @@
+assertTrue(SystemUtils.isOSVersionMatch(osVersion, &quot;10.10.1&quot;));
+}
+
+@Test
+public void testJavaAwtHeadless() {
+final boolean atLeastJava14 = SystemUtils.isJavaVersionAtLeast(JAVA_1_4);
+final String expectedStringValueWithDefault = System.getProperty(&quot;java.awt.headless&quot;, &quot;false&quot;);
+assertNotNull(expectedStringValueWithDefault);
+if (atLeastJava14) {
+

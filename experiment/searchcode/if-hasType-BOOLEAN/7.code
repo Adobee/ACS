@@ -1,0 +1,10 @@
+public class HasType implements BeanPropertyPredicate {
+
+private final Class<?>[] types;
+
+public HasType(Class<?>[] types) {
+this.types = types;
+}
+
+public boolean matches(final BeanProperty property) {
+

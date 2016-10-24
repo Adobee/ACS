@@ -1,0 +1,14 @@
+@Property.Visible(&quot;${properties.editing || !object.isPrivate}&quot;)
+public String comment;
+
+public int rating = 3;
+
+public boolean isPrivate;
+@Action(message=&quot;isPrivate set to %s&quot;)
+public boolean toggleIsPrivate () {
+isPrivate = !isPrivate;
+return isPrivate;
+}
+
+}
+

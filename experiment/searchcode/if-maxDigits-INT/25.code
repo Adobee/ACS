@@ -1,0 +1,10 @@
+this.N = N;
+}
+
+private static long powerSumOfDigits(int n, int exponent) {
+if (n == 0) return 0;
+else return EulerUtil.longPow(n % 10, exponent) + powerSumOfDigits(n / 10, exponent);
+// find the maximal number of digits
+int maxDigits = 1;
+while (EulerUtil.getNumberOfDigits(maxDigits * EulerUtil.longPow(9, N)) > maxDigits) {
+

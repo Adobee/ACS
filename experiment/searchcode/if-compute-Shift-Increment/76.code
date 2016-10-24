@@ -1,0 +1,11 @@
+f2d.inverseComplex(sc, sxy);
+f2d.inverseComplex(rc, rxy);
+}
+}
+
+/**
+* Compute the sample shift for a given frequency, velocity and depth step
+* @param s - output depth shift in samples
+*/
+public void computeDepthShift(int ifreq, float v, float depthStep, float[][] s) {
+

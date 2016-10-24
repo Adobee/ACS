@@ -1,0 +1,13 @@
+package csc426.ast;
+
+public class IfStmt implements Stmt {
+private String test;
+private Stmt body;
+
+public IfStmt(String test, Stmt body) {
+this.test = test;
+this.body = body;
+}
+
+public void accept(Visitor v) {
+

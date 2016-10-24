@@ -1,0 +1,13 @@
+public boolean showOnly() {
+return false;
+}
+
+@Override
+public List<Object> getParameters(int item, String input) throws NoSuchDataException, SQLException {
+List<Object> result = new ArrayList<>();
+
+if (item != 0) {
+int id = item;
+Category category = dao.getCategory(id);
+result.add(category);
+

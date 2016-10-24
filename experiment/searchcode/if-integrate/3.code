@@ -1,0 +1,16 @@
+public class IntegrateTest extends Test {
+
+private String in,out;
+
+public IntegrateTest(){
+
+in = &quot;-6x^2+x+7&quot;;
+out = &quot;-2x^3+0.5x^2+7x+C&quot;;
+
+if (!out.equals(Operation.integrate(new Polynomial(in)).toString()))
+pass = false;
+
+}
+
+}
+

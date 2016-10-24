@@ -1,0 +1,12 @@
+public static Matrix4f invert(Matrix4f src, Matrix4f dest) {
+float determinant = src.determinant();
+
+if (determinant != 0) {
+/*
+* elements[0] elements[1] elements[2] elements[3]
+* elements[0+3*4] elements[1+3*4] elements[2+3*4] elements[3+3*4]
+*/
+if (dest == null)
+dest = new Matrix4f();
+float determinant_inv = 1f / determinant;
+

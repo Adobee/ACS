@@ -1,0 +1,13 @@
+public static int searchLength(int[][] arr, int x, int y){
+int cntL = 0;
+if((y+cntL)<size){
+while(arr[x][y+cntL]==1) {
+while(searchLength(arr,x+cnt,y)>=length){
+cnt++;
+if(x+cnt>=size) break;
+}
+}
+return cnt*length;
+}
+}
+

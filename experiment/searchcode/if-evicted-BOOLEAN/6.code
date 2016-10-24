@@ -1,0 +1,12 @@
+public void run() {
+//go through all the numbers in pageReferences
+for(int referenced: pageReferences){
+boolean pageFault = true;
+if (referenced == frame) {
+pageFault = false;
+}
+}
+
+if (pageFault) {
+int evicted = pageReplace(referenced);
+

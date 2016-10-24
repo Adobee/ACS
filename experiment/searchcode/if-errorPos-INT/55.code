@@ -1,0 +1,6 @@
+public MalformedCommandException(String command, String reason, int errorPos) {
+super(command, messageFor(command, reason, errorPos));
+}
+
+private static String messageFor(String command, String reason, int errorPos) {
+

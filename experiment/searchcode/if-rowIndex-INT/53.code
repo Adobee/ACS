@@ -1,0 +1,11 @@
+List<Integer> l=new Pascal2().getRow(0);
+System.out.println(l);
+}
+public List<Integer> getRow(int rowIndex) {
+rowIndex++;
+if(rowIndex>0)l.add(1);
+if(rowIndex>1)l.add(1);
+if(rowIndex>2){
+while(rowIndex-->2){
+int size=l.size();
+

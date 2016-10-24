@@ -1,0 +1,8 @@
+printPrimes.printPrimes(100)
+}
+public static void printPrimes(int n) {
+boolean[] prime = new boolean[n + 1];                  // Numbered 0...n.
+for (int divisor = 2; divisor * divisor <= n; divisor++) {
+if (prime[divisor]) {
+for (i = 2 * divisor; i <= n; i = i + divisor) {
+

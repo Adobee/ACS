@@ -1,0 +1,11 @@
+package com.nespresso.heatingsystem;
+
+class Thermostat {
+
+private Double threshold;
+
+public Thermostat(final String threshold) {
+public HeatingSystemState toggleState(final Double temperature) {
+if (temperature < threshold) {
+return HeatingSystemState.ON;
+

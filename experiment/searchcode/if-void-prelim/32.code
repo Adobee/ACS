@@ -1,0 +1,14 @@
+_effectList.addAll(_buffList);
+
+if (_effectList.isEmpty())
+{
+return;
+}
+
+double prelimChance, eml, dml, cancel_res_multiplier = _effected.calcStat(Stats.CANCEL_RESIST, 0, null, null);
+prelimChance = ((2. * dml) + _cancelRate + (buffTime / 120)) * cancel_res_multiplier;
+
+if (Rnd.chance(calcSkillChanceLimits(prelimChance, _effector.isPlayable())))
+{
+negated++;
+

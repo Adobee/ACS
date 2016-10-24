@@ -1,0 +1,9 @@
+private static Comparable[] mergeSort(Comparable[] n1, Comparable[] n2) {
+if (n1.length > 1) {
+Object obj[] = divideArray(n1);
+n1 = mergeSort( (Comparable[])obj[0], (Comparable[]) obj[1]);
+}
+if (n2.length > 1) {
+Object obj[] = divideArray(n2);
+n2 = mergeSort( (Comparable[])obj[0], (Comparable[]) obj[1]);
+

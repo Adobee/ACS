@@ -1,0 +1,9 @@
+public static boolean HasOnlyUniqueCharsIterative(String s) {
+char[] chars = s.toCharArray();
+Arrays.sort(chars);
+private static boolean recurse(char[] chars, int i) {
+if(i > chars.length - 1) {
+return true;
+}
+return chars[i] != chars[i + 1] &amp;&amp; recurse(chars, i++);
+

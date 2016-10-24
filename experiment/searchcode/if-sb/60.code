@@ -1,0 +1,12 @@
+return res;
+}
+
+public static void helper(String s, int i, StringBuilder sb){
+if(i==s.length()){
+res.add(sb.toString()); return;
+sb.insert(sb.length()-1, &#39;-&#39;);
+helper(s, i+1, sb);
+sb.deleteCharAt(sb.length()-2);
+if(sb.length()>1) {
+sb.insert(sb.length()-1, &#39;+&#39;);
+

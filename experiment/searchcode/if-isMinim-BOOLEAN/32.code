@@ -1,0 +1,7 @@
+protected UnivariatePointValuePair doOptimize() {
+final boolean isMinim = getGoalType() == GoalType.MINIMIZE;
+final double lo = getMin();
+double fu = computeObjectiveValue(u);
+if (!isMinim) {
+fu = -fu;
+

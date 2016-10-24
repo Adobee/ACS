@@ -1,0 +1,10 @@
+final class ExecutorCallAdapterFactory extends CallAdapter.Factory {
+final Executor callbackExecutor;
+
+ExecutorCallAdapterFactory(Executor callbackExecutor) {
+this.callbackExecutor = callbackExecutor;
+}
+
+@Override
+public CallAdapter<Call<?>> get(Type returnType) {
+

@@ -1,0 +1,14 @@
+o[i] = &quot;&quot;; // in this case, empty cells are handled as blank, not zero
+}
+}
+}
+if( (o[0] instanceof Double) &amp;&amp; (o[1] instanceof Double) )
+{
+res = (Math.abs( ((Double) o[0]) - (Double) o[1] )) > doublePrecision;    // compare equality to certain precision
+secondOp = Array.get( o[i + 1], j );    // second array index j
+}
+
+if( (firstOp instanceof Double) &amp;&amp; (secondOp instanceof Double) )
+{
+res = (Math.abs( ((Double) firstOp) - (Double) secondOp )) > doublePrecision;    // compare to certain precision instead of equality
+

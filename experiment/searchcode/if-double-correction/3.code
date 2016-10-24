@@ -1,0 +1,7 @@
+public IClassificationCorrectionRuleSelectionResult selectBestRule(IClassifiedInstanceDetailRecord classifiedInstance) {
+if(_correctionRules.size() == 0) return new BestClassificationCorrectionRule(null, 0.0);;
+
+double denominator = 0.0;
+double bestApplicability = 0.0;
+IClassificationCorrectionRule bestRule = null;
+

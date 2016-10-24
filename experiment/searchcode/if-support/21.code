@@ -1,0 +1,6 @@
+protected Object wrap(Object value) {
+JavascriptSupport javascriptSupport = this.javascriptSupport;
+if (javascriptSupport == null) {
+if (value instanceof EObject) {
+javascriptSupport = JavascriptSupportFactory.getInstance().getJavascriptSupport((EObject) value);
+

@@ -1,0 +1,9 @@
+/*  92:213 */       return x[0];
+/*  93:    */     }
+/*  94:    */     int signChangeIndex;
+/*  95:218 */     if (y[0].multiply(y[1]).negativeOrNull())
+/* 125:251 */     Dfp absXA = xA.abs();
+/* 126:252 */     Dfp absYA = yA.abs();
+/* 127:253 */     int agingA = 0;
+/* 128:254 */     Dfp xB = x[signChangeIndex];
+

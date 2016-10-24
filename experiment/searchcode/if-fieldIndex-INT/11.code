@@ -1,0 +1,10 @@
+return result;
+}
+
+@Override
+public Group addGroup(int fieldIndex) {
+SimpleGroup g = new SimpleGroup(schema.getType(fieldIndex).asGroupType());
+@Override
+public Group getGroup(int fieldIndex, int index) {
+return (Group)getValue(fieldIndex, index);
+

@@ -1,0 +1,11 @@
+private org.apache.commons.math.analysis.solvers.UnivariateRealSolver solver;
+
+private double initialStep;
+
+public NonLinearConjugateGradientOptimizer(final org.apache.commons.math.optimization.general.ConjugateGradientFormula updateFormula) {
+public void setLineSearchSolver(final org.apache.commons.math.analysis.solvers.UnivariateRealSolver lineSearchSolver) {
+this.solver = lineSearchSolver;
+}
+
+public void setInitialStep(final double initialStep) {
+

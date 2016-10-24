@@ -1,0 +1,8 @@
+String timestampFormat) {
+String clientBrowser = request.getHeader(&quot;User-Agent&quot;);
+boolean isMSEncoding = false;
+if (clientBrowser != null &amp;&amp; clientBrowser.indexOf(&quot;MSIE&quot;) != -1) {
+int extIndex = fileName.lastIndexOf(&quot;.&quot;);
+if (extIndex != -1) {
+String nameBody = fileName.substring(0, extIndex);
+

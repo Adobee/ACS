@@ -1,0 +1,16 @@
+this.fillPaint = fillPaint;
+}
+
+public void paint(Graphics2D g2) {
+if (fillPaint != null) {
+g2.setPaint(fillPaint);
+g2.fill(shape);
+}
+
+if (borderPaint != null) {
+g2.setPaint(borderPaint);
+g2.draw(shape);
+}
+}
+}
+

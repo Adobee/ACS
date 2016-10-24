@@ -1,0 +1,10 @@
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class ClusterState {
+private static final Logger log = LoggerFactory.getLogger(ClusterState.class);
+public synchronized StorageCluster getCluster() {
+if (this.cluster == null) {
+try {
+this.cluster = builder.build();
+

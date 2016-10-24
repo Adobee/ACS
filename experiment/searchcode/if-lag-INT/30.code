@@ -1,0 +1,10 @@
+public void update(GameContainer gc, int j){
+checkForLag(j);
+Input input = gc.getInput();
+if(input.isKeyDown(Input.KEY_ESCAPE))
+gc.exit();
+}
+private void checkForLag(int delta){
+if(delta > 18)
+overMax++;
+

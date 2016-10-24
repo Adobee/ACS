@@ -1,0 +1,13 @@
+public class CardException extends Exception {
+
+private short reason;
+
+public CardException(short reason) {
+public static void throwIt(short reason) throws CardException {
+if (VRE.debugMode)
+throw new CardException(reason);
+VRE.vCardException.setReason(reason);
+throw VRE.vCardException;
+}
+}
+

@@ -1,0 +1,5 @@
+public interface GeometryReader extends Reader<Geometry> {
+static boolean isReadable(final Object source) {
+final GeometryReaderFactory factory = IoFactory.factory(GeometryReaderFactory.class, source);
+if (factory == null || !factory.isGeometrySupported()) {
+

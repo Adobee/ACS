@@ -1,0 +1,15 @@
+* @author Dan Mercer
+*
+*/
+public class RMRDigitalInput extends DigitalInput {
+public final boolean inverted;
+final boolean b = super.get();
+if (inverted) {
+return !b;
+} else {
+return b;
+}
+}
+
+}
+

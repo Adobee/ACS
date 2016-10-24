@@ -1,0 +1,8 @@
+class Cell {
+private char life = &#39;-&#39;;
+private int rowIndex;
+private int colIndex;
+public char getNextState() {
+int count = Cells.getNeighborCount(this, rowIndex, colIndex);
+if ((count ==2 || count == 3) &amp;&amp; this.life == &#39;*&#39;)
+

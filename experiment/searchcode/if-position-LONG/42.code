@@ -1,0 +1,8 @@
+//TODO fix Stone. It appears to be able to move diagonally as long as either space is free.
+Set<Position> result = new HashSet<Position>();
+if (isDead()) {
+return result;
+Position left = new Position(position.row,position.col-1);
+Position right = new Position(position.row-1,position.col+1);
+if (board.isPositionEmpty(above) ||
+

@@ -1,0 +1,14 @@
+public void add(long value) {
+_query.setLong(_pos++, value);
+}
+
+public void add(Long value) {
+if (value != null) {
+_query.setLong(_pos++, value.longValue());
+_query.setShort(_pos++, value);
+}
+
+public void add(Short value) {
+if (value != null) {
+_query.setShort(_pos++, value.shortValue());
+

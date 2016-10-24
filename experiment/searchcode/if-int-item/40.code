@@ -1,0 +1,12 @@
+private Item item;
+private int stackSize;
+
+public ItemStack(Item item, int stackSize) {
+super();
+this.item = item;
+public void setItem(Item item) {
+this.item = item;
+}
+public int getStackSize() {
+return stackSize;
+

@@ -1,0 +1,9 @@
+private static final Object __synchronizedObject = new Object();
+
+private Context context;
+
+public static RequestManager getInstance(Context context){
+if(SINGLETON == null){
+synchronized (__synchronizedObject){
+if(SINGLETON == null){
+

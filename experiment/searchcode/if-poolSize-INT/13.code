@@ -1,0 +1,11 @@
+import java.util.concurrent.Semaphore;
+
+public class ConnectionPoolManagedBySemaphore {
+
+private final int poolSize;
+
+private final Semaphore semaphore;
+public ConnectionPoolManagedBySemaphore(int poolSize) {
+this.poolSize = poolSize;
+semaphore = new Semaphore(poolSize);
+

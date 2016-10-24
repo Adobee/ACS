@@ -1,0 +1,8 @@
+* @param cacheMaxFileCount Max file count in cache. <b>0</b> means file count is unlimited.
+*/
+public LruDiscCache(File cacheDir, FileNameGenerator fileNameGenerator, long cacheMaxSize, int cacheMaxFileCount) {
+throw new IllegalArgumentException(&quot;cacheDir&quot; + ERROR_ARG_NULL);
+}
+if (cacheMaxSize < 0) {
+throw new IllegalArgumentException(&quot;cacheMaxSize&quot; + ERROR_ARG_NEGATIVE);
+

@@ -1,0 +1,10 @@
+public void addRule(Rule rule) {
+rules.add(rule);
+}
+
+public boolean satisfiesRules(BallCollection balls, Ball aBall) {
+Iterator<Rule> ruleIterator = this.rules.iterator();
+while (ruleIterator.hasNext()) {
+Rule r = ruleIterator.next();
+if (!r.apply(balls, aBall)) {
+

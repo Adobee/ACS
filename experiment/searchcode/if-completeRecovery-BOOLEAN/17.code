@@ -1,0 +1,10 @@
+AtomicBoolean stop = new AtomicBoolean();
+if (randomBoolean()) {
+timer = new Timer();
+streamer = new Streamer<Timer>(stop, timer) {
+Timer createObj() {
+return new Timer();
+}
+};
+} else if (randomBoolean()) {
+

@@ -1,0 +1,12 @@
+while (it.hasNext()) {
+CharSequence cs1 = it.next();
+if (it.hasNext()) {
+CharSequence cs2 = it.next();
+tokens = newTokens;
+}
+
+if (tokens.isEmpty()) return new NonTerminal();
+
+CharSequence cs = tokens.get(0);
+return cs instanceof NonTerminal ? ((NonTerminal)cs) : new NonTerminal(cs);
+

@@ -1,0 +1,9 @@
+assertTrue(inliner.inlineAll().isEmpty());
+assertEquals(p.getPrettyPrinted(), &quot;function [] = x()\n  TT();\nend\n&quot;);
+}
+
+public void testInlineSimple() {
+assertEquals(p.getPrettyPrinted(), &quot;function [] = x(y)\n  j = y;\n  if 1\n    disp(j);\n  else \n    j = 1;\n  end\n  out = j;\nend\n&quot;);
+}
+}
+

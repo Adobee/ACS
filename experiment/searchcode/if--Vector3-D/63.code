@@ -1,0 +1,14 @@
+u.sub(tA);
+v = new Vector3(tC);
+v.sub(tA);
+n = new Vector3(); // cross product
+n.cross(u, v);
+
+if (n.length() == 0) {
+w0 = new Vector3(ray.getStart());
+w0.sub(tA);
+a = -(new Vector3(n).dot(w0));
+b = new Vector3(n).dot(dir);
+
+if ((float) Math.abs(b) < SMALL_NUM) {
+

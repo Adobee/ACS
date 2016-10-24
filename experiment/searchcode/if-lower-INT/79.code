@@ -1,0 +1,12 @@
+int[] range=new int[]{-1,-1};
+int lower = 0,n=A.length-1;
+int upper = n;
+int mid;
+
+// Search for lower bound
+mid = (lower + upper) / 2;
+if (A[mid] < target)
+lower = mid + 1;
+else
+upper = mid-1;
+

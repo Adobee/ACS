@@ -1,0 +1,13 @@
+package poj;
+
+class Core {
+private static boolean loaded = false;
+
+public static synchronized void ensureLoaded() {
+if (!loaded) {
+load();
+}
+}
+
+private static void load() {
+

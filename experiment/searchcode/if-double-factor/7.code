@@ -1,0 +1,8 @@
+public class CompFactorOne implements ICompFactor {
+
+private double startingFactor;
+private double step;
+
+public CompFactorOne(double startingFactor, double initStep, double step) {
+this.startingFactor = (startingFactor == 0) ? initStep : startingFactor;
+

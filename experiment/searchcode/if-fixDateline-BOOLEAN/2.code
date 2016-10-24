@@ -1,0 +1,8 @@
+public Geometry buildGeometry(GeometryFactory factory, boolean fixDateline) {
+if(fixDateline) {
+Coordinate[][][] polygons = coordinates();
+LinearRing shell = factory.createLinearRing(polygon[0]);
+LinearRing[] holes;
+
+if(polygon.length > 1) {
+

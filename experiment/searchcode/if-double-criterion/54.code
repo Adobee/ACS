@@ -1,0 +1,8 @@
+List<T> parentCriteria = new ArrayList<T>();
+for (Object keyObject : criterionMap.keySet()) {
+if (!(keyObject instanceof String)) {
+String key = (String) keyObject;
+Object value = criterionMap.get(key);
+Operator operator = null;
+if (key.equals(Operator.$and) || key.equals(Operator.$and.name())) {
+

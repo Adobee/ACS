@@ -1,0 +1,7 @@
+J4P2 = J4 + 2*PP - 1; //J4P2 = J4 + 2*PP - 1
+Z[ J4-2 ] = DNM2 + Z[ J4P2 ]; //Z( J4-2 ) = DNM2 + Z( J4P2 )
+if ( DNM2 < ZERO ) { //IF( DNM2.LT.ZERO ) THEN
+J4P2 = J4 + 2*PP - 1; //J4P2 = J4 + 2*PP - 1
+Z[ J4-2 ] = DNM1 + Z[ J4P2 ]; //Z( J4-2 ) = DNM1 + Z( J4P2 )
+if ( DNM1 < ZERO ) { //IF( DNM1.LT.ZERO ) THEN
+

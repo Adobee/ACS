@@ -1,0 +1,12 @@
+public class BlockTexturedOre extends Block {
+public int		currentPass;
+public Block	base;
+public IIcon	icon;
+public int getRenderBlockPass() {
+return 1;
+}
+
+@Override
+public boolean canRenderInPass(int pass) {
+currentPass = pass;
+

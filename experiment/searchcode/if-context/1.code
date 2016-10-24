@@ -1,0 +1,8 @@
+package com.web.common;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+public static ApplicationContext getContext() {
+if (AppContext.context == null) {
+AppContext.context = new ClassPathXmlApplicationContext(&quot;applicationContext.xml&quot;);
+

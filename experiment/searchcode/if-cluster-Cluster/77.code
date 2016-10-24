@@ -1,0 +1,12 @@
+package com.dianping.pigeon.remoting.invoker.cluster;
+
+import java.util.concurrent.ConcurrentHashMap;
+public static Cluster selectCluster(String clusterType) {
+Cluster cluster = clusters.get(clusterType);
+if (cluster == null) {
+return clusters.get(Constants.CLUSTER_FAILFAST);
+}
+return cluster;
+}
+}
+

@@ -1,0 +1,18 @@
+activityStack = new Stack<Activity>();
+}
+
+public synchronized static ActivityPool getInstance() {
+
+if (mInstance == null) {
+return mInstance;
+
+}
+
+/**
+* 退出栈顶Activity
+*
+* @param activity
+*/
+public void removeActivity(Activity activity) {
+if (!activityStack.empty() &amp;&amp; activity != null) {
+

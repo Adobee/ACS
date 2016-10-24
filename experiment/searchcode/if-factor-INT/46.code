@@ -1,0 +1,11 @@
+public static long largestPrimeFactor(long n) {
+long num = n, limit = n, factor = 2;
+while (factor <= limit) {
+if (isPrime(factor) &amp;&amp; (num % factor == 0)) {
+return factor-1;
+}
+
+public static boolean isPrime(long n) {
+if (n <= 1) return false;
+for (int i = 2; i * i < n; i++) {
+

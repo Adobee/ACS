@@ -1,0 +1,7 @@
+final RealMatrix bestArz = selectColumns(arz, MathArrays.copyOf(arindex, mu));
+final RealMatrix zmean = bestArz.multiply(weights);
+final boolean hsig = updateEvolutionPaths(zmean, xold);
+private void updateCovarianceDiagonalOnly(boolean hsig,
+final RealMatrix bestArz) {
+// minor correction if hsig==false
+

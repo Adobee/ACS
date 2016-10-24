@@ -1,0 +1,10 @@
+return null;
+}
+}
+
+final boolean hasShape=currentShape!=null || fxPath!=null;
+
+
+//only curently implemented in Swing (fixes /PDFdata/test_data/baseline_screens/debug3/535B-X-test.pdf)
+if(!useJavaFX &amp;&amp; !isLowerCase &amp;&amp; formLevel > 2 &amp;&amp;  hasShape &amp;&amp; currentDrawShape.isClosed() &amp;&amp; gs.getClippingShape()!=null &amp;&amp; gs.nonstrokeColorSpace.getID()== ColorSpaces.DeviceCMYK &amp;&amp; gs.nonstrokeColorSpace.getColor().getRGB()==-1 &amp;&amp; gs.getAlpha(GraphicsState.STROKE)==0){
+

@@ -1,0 +1,7 @@
+for (String k : keys) {
+Object value = data.get(k);
+if (value instanceof String) {
+private void saveAccountItem(SharedPreferences.Editor editor, NameKey key, Object v) {
+if (v instanceof String) {
+if (needCache(key, (String) v))
+

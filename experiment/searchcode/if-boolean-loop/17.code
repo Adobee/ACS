@@ -1,0 +1,11 @@
+public Loop getLoop(String loopId) {
+if(log.isDebugEnabled()) {
+log.debug(&quot;getLoop(loopId = &quot; + loopId + &quot;)&quot;);
+log.debug(&quot;findLoopsByQuery(query = &quot; + query + &quot;)&quot;);
+}
+
+List<Loop> loops = loopRepo.findLoopsByQuery(query, 1L);
+
+if(log.isDebugEnabled()) {
+log.debug(&quot;innerLoops=&quot; + loops);
+

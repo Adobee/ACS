@@ -1,0 +1,9 @@
+* @param callbackType Expected callback type
+* @return Callback or null if not any
+*/
+public static <T extends Callback> T getCallbackByType(Manager manager,Class<T> callbackType) {
+while((callback instanceof Delegating)&amp;&amp;(!callbackType.isInstance(callback))) {
+callback=((Delegating<Callback>) callback).getDelegate();
+}
+if (callbackType.isInstance(callback)) {
+

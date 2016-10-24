@@ -1,0 +1,12 @@
+private List<TAuOperInfo> operInfoList;
+
+private TAuOperInfo operInfo;
+
+private boolean state;
+
+private boolean success;
+operInfoList=operInfoDAO.myfindByHql(&quot;from TAuOperInfo where operId=? and operName=?&quot;,operInfo.getOperId(),operInfo.getOperName());
+if(operInfoList.size()>0){
+state=false;
+success=true;
+

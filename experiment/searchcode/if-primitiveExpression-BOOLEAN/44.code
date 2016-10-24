@@ -1,0 +1,14 @@
+import dina.compiler.builder.objects.constants.*;
+
+public class And extends PrimitiveExpression {
+
+private int size = -1;
+
+public And(Node leftOperand, Node rightOperand) {
+this.rightOperand = rightOperand.optimize();
+}
+
+@Override
+public NodeType getNodeType() {
+return NodeType.TYPE_BOOLEAN;
+

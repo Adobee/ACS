@@ -1,0 +1,11 @@
+private int maxEvaluations;
+private boolean randomRestart;
+private int restarts;
+
+/**
+* Inicializa o hill climbing sem random restart
+public MonoHillClimbing(Problem problem, NeighborVisitor visitor, int maxEvaluations, boolean randomRestart)
+{
+this.problem = problem;
+this.visitor = visitor;
+

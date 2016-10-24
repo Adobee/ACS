@@ -1,0 +1,8 @@
+public static boolean classesEquals(Class fromClass, final Class toClass) {
+
+// autoboxing
+if (fromClass.isPrimitive() &amp;&amp; !toClass.isPrimitive()) {
+fromClass = PRIMITIVE_TO_OBJECT.get(fromClass);
+} else if (toClass.isPrimitive() &amp;&amp; !fromClass.isPrimitive()) {
+fromClass = OBJECT_TO_PRIMITIVE.get(fromClass);
+

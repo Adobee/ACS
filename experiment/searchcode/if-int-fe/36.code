@@ -1,0 +1,10 @@
+public void deleteById(int id) {
+fePageRepository.delete(id);
+}
+
+@Override
+public void updateById(FePageDomain fePageDomain) {
+FePage tmp = fePageRepository.findOne(fePageDomain.getId());
+if (null != tmp) {
+tmp.setDownloadCode(fePageDomain.getDownloadCode());
+

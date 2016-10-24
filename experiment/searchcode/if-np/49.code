@@ -1,0 +1,11 @@
+private static Vector nps;
+
+static void init() {
+nps = new Vector();
+NamePair np;
+np = new NamePair(&quot;cromolynsodium&quot;, &quot;cromolyn&quot;);
+for (index = 0; index < nps.size(); index++) {
+np = (NamePair) nps.get(index);
+if (in.contains(np.strLong)) {
+return Str.replace(in, np.strLong, np.strShort);
+

@@ -1,0 +1,19 @@
+hashInt(c);
+}
+
+public void hashShort(short s)
+{
+hashInt(s);
+}
+
+public void hashObject(Object o)
+{
+if(o == null)
+public void hashFloat(float f)
+{
+hashInt((int)f);
+if(f != 0)
+hashInt((int)(1/f));
+if(f > 0 &amp;&amp; f != 1)
+hashInt((int)(1/(1-f)));
+

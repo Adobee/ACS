@@ -1,0 +1,10 @@
+// initialize the objective function rows
+if(getNumObjectiveFunctions() == 2) {
+matrix.setEntry(0, 0, -1);
+}
+int zIndex = (getNumObjectiveFunctions() == 1) ? 0 : 1;
+for(int i = 0; i < getNumArtificialVariables(); i++) {
+int col = i + getArtificialVariableOffset();
+if(getBasicRow(col) == null) {
+columnsToDrop.add(col);
+

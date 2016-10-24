@@ -1,0 +1,9 @@
+public static void run() throws Exception {
+if (SERVER == null) {
+try {
+// Step 1. Create the Configuration, and set the properties
+Configuration configuration = new ConfigurationImpl();
+configuration.setPersistenceEnabled(false);
+configuration.setSecurityEnabled(false);
+configuration.getAcceptorConfigurations().add(
+

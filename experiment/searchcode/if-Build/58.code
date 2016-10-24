@@ -1,0 +1,6 @@
+Optional<RepositoryBuild> current = repositoryBuildService.get(build.getId().get());
+if (!current.isPresent()) {
+LOG.warn(&quot;No repository build {}, ignoring event&quot;, build.getId().get());
+return;
+} else if (current.get().getState() != build.getState()) {
+

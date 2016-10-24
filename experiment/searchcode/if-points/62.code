@@ -1,0 +1,11 @@
+for (int j = i + 1; j < points.length; j++) {
+if (points[max_index] < points[j]) {
+max_index = j;
+}
+}
+if (i != max_index) {
+percents[i] = (points[i] * 100) / totalPoints;
+totalPercents += percents[i];
+}
+if (totalPercents < 100) {
+

@@ -1,0 +1,10 @@
+* Created by hzqiuxm on 2015/12/1 0001.
+*/
+public class OrderService {
+
+public void valid(int... listOrder) {
+
+//2.2:把订单状态修改为待分单
+for(int orderId : listOrder){
+Order o = ((Order) MapDB.getMapDB().get(&quot;order&quot;+orderId));
+

@@ -1,0 +1,12 @@
+* A 2D axis-aligned rectangle based on Princeton&#39;s RectHV class.
+*
+* @author Matt Boutell
+*/
+public class RectHV {
+private final double xmin, ymin; // minimum x- and y-coordinates
+* @param xmax
+* @param ymax
+*/
+public RectHV(double xmin, double ymin, double xmax, double ymax) {
+if (xmax < xmin || ymax < ymin) {
+

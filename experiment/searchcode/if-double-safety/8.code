@@ -1,0 +1,10 @@
+public void manual(double outputValue){
+if(isSafetyEnabled()){
+actuator.set(safeOutput(-outputValue));
+}else{
+public double safeOutput(double output){
+double safeOutput = output;
+
+if(timerFirstCall){
+safetyTimer.start();
+

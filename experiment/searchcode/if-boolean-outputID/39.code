@@ -1,0 +1,6 @@
+Pattern.compile(&quot;(?<outputId>[1234]|(ALL))(?<ramp>\\.\\d+(,\\d+)?(?<timeUnit>.+))?&quot;,
+Pattern.CASE_INSENSITIVE | Pattern.UNICODE_CASE);
+Integer.parseInt(matcher.group(&quot;outputId&quot;)) - 1;
+double ramp = 0;
+if (matcher.group(&quot;ramp&quot;) != null) {  // Optional
+

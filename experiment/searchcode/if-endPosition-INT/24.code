@@ -1,0 +1,9 @@
+@Override
+public void del(int pos) {
+if (pos <= startPosition || pos >= endPosition) {
+throw new IndexOutOfBoundsException();
+for (int j = i + 1; j < endPosition; j++) {
+if (data[i] > data[j]) {
+int a = data[j];
+data[j] = data[i];
+

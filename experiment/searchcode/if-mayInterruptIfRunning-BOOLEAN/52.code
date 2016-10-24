@@ -1,0 +1,14 @@
+this.cmd = cmd;
+}
+
+@Override
+public boolean cancel(boolean mayInterruptIfRunning) {
+boolean v = super.cancel(mayInterruptIfRunning);
+if (v) {
+cmd.exit();
+}
+return v;
+}
+
+@Override
+

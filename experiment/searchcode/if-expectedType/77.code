@@ -1,0 +1,11 @@
+public class Lookups
+{
+public static <T> T doLookup(String location, Class<T> expectedType)
+{
+try
+throw notFound(location, expectedType);
+}
+if (!expectedType.isInstance(found))
+{
+throw new IllegalStateException(String.format(
+

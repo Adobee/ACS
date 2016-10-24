@@ -1,0 +1,8 @@
+throwable.printStackTrace();
+if(throwable instanceof Error) throw (Error) throwable;
+return (throwable instanceof RuntimeException)? (RuntimeException) throwable : new RuntimeException(throwable);
+}
+
+public static RuntimeException rethrow(final Throwable throwable, final Log log)  {
+if(throwable instanceof Error) {
+

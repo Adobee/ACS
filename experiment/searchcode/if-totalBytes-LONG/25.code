@@ -1,0 +1,13 @@
+private final Logger logger = LoggerFactory.getLogger(TransferProgressMonitor.class);
+
+private Long totalBytes = 0L;
+
+private Long startTime;
+
+private Long endTime;
+
+public TransferProgressMonitor() {
+this.endTime = System.currentTimeMillis();
+Long duration = (endTime - startTime);
+if (totalBytes > 0 &amp;&amp; duration > 0) {
+

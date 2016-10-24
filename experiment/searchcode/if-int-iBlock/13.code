@@ -1,0 +1,10 @@
+public ChunkSnapshot() {}
+
+public IBlockData a(int i, int j, int k) {
+IBlockData iblockdata = (IBlockData) Block.REGISTRY_ID.fromId(this.b[b(i, j, k)]);
+return iblockdata == null ? ChunkSnapshot.a : iblockdata;
+}
+
+public void a(int i, int j, int k, IBlockData iblockdata) {
+this.b[b(i, j, k)] = (char) Block.REGISTRY_ID.getId(iblockdata);
+

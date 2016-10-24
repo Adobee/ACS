@@ -1,0 +1,12 @@
+.thenComparing(a -> a.getVariant().getVariant());
+}
+
+@Override
+public int compare(Annotation a1, Annotation a2) {
+
+if (a1.getVariant() == null)
+throw new NextProtException(&quot;undefined AnnotationVariant for annotation:\n&quot;+ AnnotationUtils.toString(a1));
+
+if (a2.getVariant() == null)
+throw new NextProtException(&quot;undefined AnnotationVariant for annotation:\n&quot;+ AnnotationUtils.toString(a2));
+

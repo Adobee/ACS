@@ -1,0 +1,6 @@
+BuddhistChronology buddhistChronology = (BuddhistChronology) cCache.get(dateTimeZone);
+if (buddhistChronology != null) {
+return buddhistChronology;
+BuddhistChronology buddhistChronology3 = new BuddhistChronology(LimitChronology.getInstance(buddhistChronology2, new DateTime((int) BE, BE, BE, 0, 0, 0, 0, buddhistChronology2), null), BuildConfig.FLAVOR);
+buddhistChronology = (BuddhistChronology) cCache.putIfAbsent(dateTimeZone, buddhistChronology3);
+

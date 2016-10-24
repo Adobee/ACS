@@ -1,0 +1,11 @@
+// sd
+double sd = 0;
+for (int j = 0; j < 14; j++) {
+sd += Math.pow((mean - a[j]), 2);
+}
+sd /= 14;
+sd = Math.sqrt(sd);
+//			System.out.println(&quot;sd: &quot; + sd);
+
+double commission = mean * 0.01;
+

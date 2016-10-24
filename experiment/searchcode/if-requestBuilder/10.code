@@ -1,0 +1,7 @@
+* {@link LASRequestEvent.Handler} interface.
+*
+* If the method is not explicitly set, the requests are {@link RequestBuilder.GET} by default.
+String httpMethod = this.requestBuilder.getHTTPMethod();
+if (RequestBuilder.GET.toString().equalsIgnoreCase(httpMethod)) {
+this.method = RequestBuilder.GET;
+

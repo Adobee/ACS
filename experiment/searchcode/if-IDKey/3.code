@@ -1,0 +1,16 @@
+return this.id;
+}
+
+public boolean equals(Object other)
+{
+if (!(other instanceof IDKey)) {
+return false;
+}
+IDKey idKey = (IDKey)other;
+if (this.id != idKey.id) {
+return false;
+}
+return this.value == idKey.value;
+}
+}
+

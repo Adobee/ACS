@@ -1,0 +1,7 @@
+public OpenMapRealVector add(RealVector v) throws IllegalArgumentException {
+checkVectorDimensions(v.getDimension());
+if (v instanceof OpenMapRealVector) {
+* @throws IllegalArgumentException If the dimensions don&#39;t match
+*/
+public OpenMapRealVector add(OpenMapRealVector v) throws IllegalArgumentException{
+

@@ -1,0 +1,12 @@
+if (other == null || getClass() != other.getClass()) return false;
+
+Measurement otherMeasurement = (Measurement) other;
+
+if (! this.unit.isComparable(otherMeasurement.unit)) return false;
+return result;
+}
+
+public Measurement add(Measurement otherMeasurement) {
+
+if( ! this.unit.isComparable(otherMeasurement.unit)) {
+

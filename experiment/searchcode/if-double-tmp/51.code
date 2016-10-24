@@ -1,0 +1,10 @@
+private Quat() {}
+
+public static double[] add(double[] dst, double[] a, double[] b) {
+if (dst == null) dst = new double[4];
+return dst;
+}
+
+public static double[] subtract(double[] dst, double[] a, double[] b) {
+if (dst == null) dst = new double[4];
+

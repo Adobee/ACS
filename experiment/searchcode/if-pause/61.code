@@ -1,0 +1,12 @@
+package Logik;
+import java.io.Serializable;
+import java.util.Calendar;
+
+public class Pause implements Serializable{
+public long berechnePauseInMillis(){
+if(pauseStart == null)
+return -1;
+
+if(pauseEnde == null) {
+return Controller.getActualTime().getTimeInMillis() - pauseStart.getTimeInMillis();
+

@@ -1,0 +1,8 @@
+package com.yunyi.sandbox.util.json.init;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+public static ObjectMapper getInstance() {
+if (mapper == null) {
+synchronized (JacksonMapperDoubleCheck.class) {
+if (mapper == null) {
+

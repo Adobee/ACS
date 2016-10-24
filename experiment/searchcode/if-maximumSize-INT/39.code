@@ -1,0 +1,10 @@
+/*     */   implements Externalizable
+/*     */ {
+/*  52 */   private int maximumSize = 0;
+/*     */   private static final long serialVersionUID = 2197433140769957051L;
+/* 113 */     if (mapSize >= this.maximumSize)
+/*     */     {
+/* 117 */       if (!containsKey(key))
+/*     */       {
+/* 119 */         removeLRU();
+

@@ -1,0 +1,8 @@
+private int capacity;
+
+public Airplane(String name, int capacity) {
+super(name);
+private void setCapacity(int capacity) {
+if (capacity < 1) {
+throw new IllegalArgumentException(&quot;Capacity can&#39;t be negative&quot;);
+

@@ -1,0 +1,9 @@
+public class GameScenario implements Serializable {
+
+private List<DefRound> defRounds = new ArrayList<>();
+private int finalRound;
+
+public GameScenario(List<DefRound> defRounds, int finalRound) {
+this.defRounds.addAll(defRounds);
+if (finalRound == -1) {
+

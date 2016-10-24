@@ -1,0 +1,12 @@
+* @since   3.15/4.12
+*/
+public static JulianCalendar of(
+HistoricEra era,
+int yearOfEra,
+int yearOfEra
+) {
+
+int pYear;
+
+if (era == HistoricEra.AD) {
+

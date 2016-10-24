@@ -1,0 +1,9 @@
+public String getString(String name, String dvalue) {
+Object val = get(name) ;
+if(val != null) return (String) val ;
+public String[] getStringArray(String name, String[] dvalue) {
+Object val = get(name) ;
+if(val != null) {
+String string = (String) val ;
+return StringUtil.toStringArray(string) ;
+

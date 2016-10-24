@@ -1,0 +1,12 @@
+gammaCache = new GammaCache();
+this.alpha = alpha;
+this.beta = beta;
+}
+
+public double logProb(double[] counts, double[] priors){
+public double logProb(int x1, int x2){
+double v = 0;
+
+v = gammaCache.logGamma(x1 + x2);
+if (x1 > 0)
+

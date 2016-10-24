@@ -1,0 +1,10 @@
+public class RestPutRequestValidator extends RestRequestValidator {
+
+private final boolean isVectorClockOptional;
+* @return true if has content type.
+*/
+protected boolean hasContentType() {
+
+boolean result = false;
+if(this.request.getHeader(RestMessageHeaders.CONTENT_TYPE) != null) {
+

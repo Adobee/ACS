@@ -1,0 +1,8 @@
+public class Rectangle {
+private final double height;
+private final double width;
+
+protected Rectangle(double height, double width) {
+public static Rectangle create(double height , double width) throws IllegalArgumentException{
+if(!(height > 0) || !(width >0))
+

@@ -1,0 +1,15 @@
+private static final double TWO_PI = 2 * Math.PI;
+
+// -- instance variables --
+
+private final double rTol;
+private final double thetaTol;
+
+// -- constructors --
+thetaTol = 0.000001;
+}
+
+public ComplexPolarNear(double rTol, double tTol) {
+this.rTol = rTol;
+this.thetaTol = tTol;
+

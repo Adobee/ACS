@@ -1,0 +1,8 @@
+final Group[] groups = new Group[4];
+for (int i = 1; i <= 3; i++) {
+groups[i] = Factories.GROUP.find(i);
+}
+
+for (int i = 1; i <= 5; i++) {
+final List<Group> theGroups = Factories.GROUP.findAllByMember(objects[i]);
+

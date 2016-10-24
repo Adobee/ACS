@@ -1,0 +1,6 @@
+@Nullable String get(@NonNull String key) throws IOException {
+DiskLruCache.Snapshot snapshot = diskLruCache.get(toInternalKey(key));
+if (snapshot == null) {
+void put(@NonNull String key, @NonNull String value) throws IOException {
+if (value.getBytes(ENCODING).length > diskLruCache.getMaxSize()) {
+

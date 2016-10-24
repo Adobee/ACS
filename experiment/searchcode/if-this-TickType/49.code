@@ -1,0 +1,10 @@
+public void tickStart(EnumSet<TickType> type, Object... tickData) {
+}
+
+@Override
+public void tickEnd(EnumSet<TickType> type, Object... tickData) {
+if (ConfigHandler.SHOW_VERSION_UPDATE) {
+if (!initialized) {
+for (TickType tickType : type) {
+if (tickType == TickType.CLIENT) {
+

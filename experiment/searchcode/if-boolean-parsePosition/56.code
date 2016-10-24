@@ -1,0 +1,9 @@
+public static final String DEFAULT_DATE_FORMAT = &quot;dd/MM/yyyy&quot;;
+
+@Override
+public boolean validateDataType(String value) {
+if (value == null || &quot;&quot;.equals(value)) {
+final Date date = dateParser.parse(text, parsePosition);
+// accept only, if the *entire format string length* was used during parsing
+if (parsePosition.getIndex() < DateValidator.DEFAULT_DATE_FORMAT.length()) {
+

@@ -1,0 +1,9 @@
+import javax.ws.rs.core.Context;
+import javax.ws.rs.core.MediaType;
+import javax.ws.rs.core.MultivaluedMap;
+import javax.ws.rs.core.UriInfo;
+private MultivaluedMap<String, String> sanitizeGetParameters(
+MultivaluedMap<String, String> pathParameters, boolean mutate) {
+if (mutate) {
+return sanitizeParamsInPlace(pathParameters);
+

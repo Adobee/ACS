@@ -1,0 +1,9 @@
+public int makeProgram(int[] A, int[] B, int[] wanted) {
+for (int i = 0; i < A.length; i++) {
+int x = A[i];
+if (x != wanted[i]) break;
+else if (i == A.length - 1) return 1;
+}
+for (int i = 0; i < B.length; i++) {
+int x = B[i];
+

@@ -1,0 +1,14 @@
+import com.phoenix.common.convert.Converter;
+
+/**
+* 将对象转换成<code>FlagSet</code>.
+*
+* <ul>
+* <li>
+* 如果对象已经是<code>targetType</code>了, 直接返回.
+if (targetType.isInstance(value)) {
+return value;
+}
+
+if (!FlagSet.class.isAssignableFrom(targetType)) {
+

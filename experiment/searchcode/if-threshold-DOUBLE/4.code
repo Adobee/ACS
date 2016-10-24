@@ -1,0 +1,11 @@
+public class Threshold implements ITransferFunction {
+
+@XStreamAsAttribute
+private double threshold;
+public Threshold(double threshold) {
+this.threshold = threshold;
+}
+
+public double transfer(double sum) {
+if(sum > threshold) {
+

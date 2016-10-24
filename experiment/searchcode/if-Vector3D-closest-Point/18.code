@@ -1,0 +1,11 @@
+return this.x * this.x + this.y * this.y + this.z * this.z;
+}
+
+public Vector3D normalize() {
+double d = getMagnitude();
+if (d != 0.0D) {
+return worldObj.getEntitiesWithinAABB(par1Class, AxisAlignedBB.getBoundingBox(intX(), intY(), intZ(), intX() + 1, intY() + 1, intZ() + 1));
+}
+
+public Vector3D midPoint(Vector3D pos) {
+

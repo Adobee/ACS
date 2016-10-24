@@ -1,0 +1,7 @@
+public ArrayCartesianPtSetsBrick getSolidPts(int index, double scale)
+{
+if (this._arrayPtSets == null)
+double x = ptSets[j][i][t].X();
+double y = ptSets[j][i][t].Y();
+//if(t ==0)
+

@@ -1,0 +1,10 @@
+class TieException extends Exception {
+private boolean[] ties;
+private int numTied;
+
+public TieException (boolean[] ties) {
+this.ties = ties;
+numTied = 0;
+for (int i = 0; i < ties.length; i++)
+if (ties[i])
+

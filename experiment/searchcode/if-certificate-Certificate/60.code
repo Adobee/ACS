@@ -1,0 +1,16 @@
+import org.orinocoX509.entity.CertificateStatus;
+import org.orinocoX509.entity.CertificateStatus.CertificateStatusValues;
+assertEquals(CertificateStatusValues.E, certificateStatus.getCertificateStatus());
+}
+
+@After
+public void tearDown()
+{
+if (certificateStatus != null)
+{
+certificateStatusService.deleteStatus(certificateStatus);
+}
+}
+
+}
+

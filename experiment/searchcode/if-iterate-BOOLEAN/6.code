@@ -1,0 +1,11 @@
+private final TElement[] arrayToIterateOver;
+private int currentIndex;
+
+public ArrayIterator(TElement[] arrayToIterateOver){
+currentIndex = 0;
+}
+
+@Override
+public boolean hasNext() {
+return currentIndex < arrayToIterateOver.length;
+

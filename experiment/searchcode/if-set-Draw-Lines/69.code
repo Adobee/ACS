@@ -1,0 +1,21 @@
+int page=(numLines/linesPerPage);
+
+
+if(numLines%linesPerPage>0)
+page++;
+
+
+
+int head=page*3;
+
+numLines=(x+head)*2;
+
+y=numLines%linesPerPage;
+
+if(y<4)
+head+=3;
+
+
+
+x+=head;
+

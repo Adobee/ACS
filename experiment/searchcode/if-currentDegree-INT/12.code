@@ -1,0 +1,10 @@
+degree[i] = adjList[i].size();
+verticesByDegree[degree[i]].addFirst(i);
+}
+
+int currentDegree = 0;
+int numVerticesRemoved = 0;
+while (numVerticesRemoved < size) {
+if (!verticesByDegree[currentDegree].isEmpty()) {
+degeneracy = max(degeneracy, currentDegree);
+

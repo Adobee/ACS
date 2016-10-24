@@ -1,0 +1,9 @@
+this._serializer2 = jsonSerializer2;
+}
+
+public JsonSerializer<Object> serializerFor(Class<?> cls) {
+if (cls == this._type1) {
+for (TypeAndSerializer typeAndSerializer : this._entries) {
+if (typeAndSerializer.type == cls) {
+return typeAndSerializer.serializer;
+

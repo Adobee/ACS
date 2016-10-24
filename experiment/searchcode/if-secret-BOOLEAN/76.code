@@ -1,0 +1,11 @@
+result = prime * result + ((secretKey == null) ? 0 : secretKey.hashCode());
+return result;
+}
+
+@Override
+public boolean equals(Object obj) {
+if (getClass() != obj.getClass())
+return false;
+ApiSecretKey other = (ApiSecretKey) obj;
+if (secretKey == null) {
+

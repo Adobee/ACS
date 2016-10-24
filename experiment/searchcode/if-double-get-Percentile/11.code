@@ -1,0 +1,11 @@
+super(properties);
+}
+
+public double getPercentile() {
+return super.getStringProperties().getDouble(PERCENTILE_KEY,PERCENTILE_DEFAULT);
+super.getStringProperties().putDouble(PERCENTILE_KEY, percentile);
+}
+
+@Override
+public void validate() throws IllegalStateException {
+

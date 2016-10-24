@@ -1,0 +1,7 @@
+public synchronized void removeMessageListener(MessageListener l) {
+if (messageListeners != null &amp;&amp; messageListeners.contains(l)) {
+public synchronized void addMessageListener(MessageListener l) {
+Vector v = messageListeners == null ? new Vector(2)
+: (Vector) messageListeners.clone();
+if (!v.contains(l)) {
+

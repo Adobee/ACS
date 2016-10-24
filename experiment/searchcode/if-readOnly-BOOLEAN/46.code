@@ -1,0 +1,13 @@
+private final boolean readOnly;
+
+ReverseIterator(ListIterator<T> it, boolean readOnly) {
+this.it = it;
+this.readOnly = readOnly;
+}
+
+public boolean hasNext() {
+return it.hasPrevious();
+}
+
+public T next() {
+

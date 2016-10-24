@@ -1,0 +1,7 @@
+// Note! Truncation of fractional part is here.
+long idMillis = ID / COUNTER_DIGITS;
+if (idMillis == System.currentTimeMillis()) {
+long oldCounter = ID - idMillis * COUNTER_DIGITS;
+long newCounter = oldCounter + 1;
+if (newCounter == COUNTER_DIGITS) {
+

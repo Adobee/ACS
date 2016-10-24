@@ -1,0 +1,8 @@
+AnnotatedNode parent = (AnnotatedNode) nodes[1];
+AnnotationNode node = (AnnotationNode) nodes[0];
+
+if (parent instanceof FieldNode) {
+final FieldNode fieldNode = (FieldNode) parent;
+// @Lazy not meaningful with primitive so convert to wrapper if needed
+if (ClassHelper.isPrimitiveType(fieldNode.getType())) {
+

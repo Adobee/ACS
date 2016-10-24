@@ -1,0 +1,8 @@
+testInveseCumulativeProbabilitySuccess(d, 2.0, 10, 0.5, Integer.MIN_VALUE);
+}
+
+private void testInveseCumulativeProbabilitySuccess(NegativeBinomialDistribution d, double q, int n, double p, int expected) throws NumericException {
+d.setNumberOfSuccesses(n);
+d.setProbabilityOfSuccess(p);
+int actual = d.inverseCumulativeProbability(q);
+

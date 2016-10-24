@@ -1,0 +1,13 @@
+return &quot;CallbackThresholdReached{&quot; + &quot;thresholdReached=&quot; + thresholdReached + &quot;, threshold=&quot; + threshold + &#39;}&#39;;
+}
+
+@Override
+public int hashCode() {
+int hash = 7;
+hash = 59 * hash + (this.thresholdReached ? 1 : 0);
+final CallbackThresholdReached other = (CallbackThresholdReached) obj;
+if (this.thresholdReached != other.thresholdReached) {
+return false;
+}
+if (!Objects.equals(this.threshold, other.threshold)) {
+

@@ -1,0 +1,11 @@
+public class Solution {
+public int jump(int[] A) {
+if(A == null || A.length < 2) {
+return Integer.MAX_VALUE;
+}
+
+if((i + A[i] - range) <= 0) {
+continue;
+} else {
+int step = (range + 1 - i);
+

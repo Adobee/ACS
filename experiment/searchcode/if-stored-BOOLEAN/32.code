@@ -1,0 +1,5 @@
+public static IntegerSchemaItem intValue(String name, int minOccurs, int maxOccurs, boolean stored, boolean indexed) {
+return new DefaultIntegerSchemaItem(name, minOccurs, maxOccurs, stored, indexed);
+public static IntegerSchemaItem intValue(String name, int minOccurs, boolean stored, boolean indexed) {
+return intValue(name, minOccurs, Integer.MAX_VALUE, stored, indexed);
+

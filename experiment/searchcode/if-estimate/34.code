@@ -1,0 +1,9 @@
+public Estimate getEstimateById(long orderId) {
+Estimate estimate = estimateMapper.getEstimateById(orderId);
+if (estimate != null) {
+//			Gson gson = new Gson();
+return estimate;
+} else {
+if (logger.isInfoEnabled()) {
+logger.info(&quot;getEstimateById(long) - Estimate estimate={}&quot;, &quot;评价查询为空&quot;); //$NON-NLS-1$
+

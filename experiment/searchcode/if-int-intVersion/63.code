@@ -1,0 +1,9 @@
+@VisibleForTesting
+TEST_FUTURE_VERSION(65535);
+
+private final short value;
+
+PayloadVersion(final int intVersion) {
+Preconditions.checkArgument(intVersion >= 0 &amp;&amp; intVersion <= 65535);
+value = (short) intVersion;
+

@@ -1,0 +1,7 @@
+public class RobotMath {
+
+public static double ease(double target, double previous, double easeIncrement) {
+double newVal;
+if (target < previous - easeIncrement) {
+newVal = previous - easeIncrement;
+

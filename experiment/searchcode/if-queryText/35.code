@@ -1,0 +1,9 @@
+originalQueryText = queryText;
+setQueryTextWithValidation(queryText);
+} catch (final RuntimeException e) {
+if ((parent != null) &amp;&amp; parent.contains(this)) {
+throw new WorkItemException(Messages.getString(&quot;QueryDefinition.CannotModifyDeletedItem&quot;)); //$NON-NLS-1$
+}
+
+if (queryText.trim().length() == 0) {
+

@@ -1,0 +1,13 @@
+public void paint(Graphics2D g)
+{
+g.drawImage(image, 0,-625+(int) yoffset,null);
+if(yoffset<625)
+yoffset = yoffset+(1.0/3.0);
+}
+
+public int getY()
+{
+return -625+(int) yoffset;
+}
+}
+

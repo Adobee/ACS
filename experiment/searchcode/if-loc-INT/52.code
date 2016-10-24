@@ -1,0 +1,9 @@
+helper(res,loc,0,n);
+return res;
+}
+public void helper(List<String[]> res,int[] loc,int cur,int n) {
+if(cur==n) {
+for(int i=0;i<cur;i++) {
+if(loc[i]==pos) return false;
+if(Math.abs(pos-loc[i])==cur-i) return false;
+

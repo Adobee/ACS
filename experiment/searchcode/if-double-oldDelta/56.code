@@ -1,0 +1,8 @@
+* Throws <code>ConvergenceException</code> if the values of the function
+* at the endpoints of the interval have the same sign.
+double oldDelta = delta;
+
+int i = 0;
+while (i < maximalIterationCount) {
+if (Math.abs(y2) < Math.abs(y1)) {
+

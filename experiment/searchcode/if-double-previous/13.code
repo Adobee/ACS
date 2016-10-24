@@ -1,0 +1,11 @@
+double lower = 1;
+double upper = Math.max((double) time / c, 2);
+double previous = -1;
+while (true) {
+double current = (lower + upper) / 2;
+} else {
+upper = current;
+}
+if (Math.abs(current - previous) < 1E-12) {
+return current;
+

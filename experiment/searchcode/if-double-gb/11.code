@@ -1,0 +1,9 @@
+public class BasicEvaluator implements Evaluator {
+
+public double Evaluate(GameBoard gb, List<InternalMove> m, int playerId) {
+int[] numbers = gb.getNumbers();
+double fracMine = (numbers[0] - numbers[1]) / (gb.n * gb.n);
+
+
+if (gb.isOver()) {
+

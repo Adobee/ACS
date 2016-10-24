@@ -1,0 +1,8 @@
+public final class Vector3d {
+
+public static final Vector3d ZERO = new Vector3d(0, 0, 0);
+@ToString
+public final double x;
+} else if (obj != null &amp;&amp; getClass() == obj.getClass()) {
+Vector3d vector3d = (Vector3d) obj;
+

@@ -1,0 +1,12 @@
+
+public class Rectangle {
+
+private double lenght;
+private double width;
+
+
+public Rectangle(double lenght, double width) {
+
+if(lenght > width){
+this.lenght = lenght;
+

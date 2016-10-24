@@ -1,0 +1,10 @@
+// ## Arrange ##
+final String relativeUrl = getFileAsRelativeUrl(&quot;hello.html&quot;);
+
+// ## Act ##
+tester.beginAt(relativeUrl);
+final String fullUrl = url.toString();
+String relativeUrl = null;
+if (fullUrl.startsWith(baseUrl)) {
+relativeUrl = fullUrl.substring(baseUrl.length());
+

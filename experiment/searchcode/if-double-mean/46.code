@@ -1,0 +1,12 @@
+public static void main (String[] args)
+{
+Random gen = new Random();
+double mean=0;
+double rand;
+double x;
+
+for (int i=0; i<1000; i++)
+{
+rand = gen.nextDouble();
+if (rand<.25)
+

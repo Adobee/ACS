@@ -1,0 +1,15 @@
+private boolean m_checked = false;
+
+@Override
+public void render(AnsiPrinter printer)
+{
+if (printer.colorsEnabled())
+{
+if (m_checked)
+{
+printer.print(&quot;\u2611\u0020&quot;);
+}
+else
+{
+printer.setForegroundColor(AnsiPrinter.Color.DARK_GRAY);
+

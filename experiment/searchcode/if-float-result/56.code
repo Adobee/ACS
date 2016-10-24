@@ -1,0 +1,11 @@
+return a+b;
+}
+public float del(float a, float b){
+if(b==0){throw new Error(&quot;На ноль делить нельзя&quot;);}
+return a*b;
+}
+public float diff(float a, float b){
+return a-b;
+}
+public float result(float a, float b, char op){
+

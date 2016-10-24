@@ -1,0 +1,8 @@
+public void setSeriesRenderingOrder(SeriesRenderingOrder order) {
+if (order == null) {
+throw new IllegalArgumentException(&quot;Null &#39;order&#39; argument.&quot;);
+int passCount = renderer.getPassCount();
+
+SeriesRenderingOrder seriesOrder = getSeriesRenderingOrder();
+if (seriesOrder == SeriesRenderingOrder.REVERSE) {
+

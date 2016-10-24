@@ -1,0 +1,4 @@
+queryBuilder.append(&quot;containerNumbers,unitId AS unitId,origin as origin,destination as destination,IF(chg.ar_bill_to_party = &#39;A&#39;,agentNo,&quot;);
+queryBuilder.append(&quot;IF(chg.ar_bill_to_party = &#39;C&#39;,consigneeNo,IF(chg.ar_bill_to_party = &#39;F&#39;,forwarderNo,&quot;);
+queryBuilder.append(&quot;if(chg.ar_bill_to_party = &#39;S&#39;,shipperNo,thirdPartyNo)))) AS customerNumber,&quot;);
+

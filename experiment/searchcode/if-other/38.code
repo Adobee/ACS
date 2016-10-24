@@ -1,0 +1,11 @@
+super(&quot;Ressources/Block.gif&quot;,x,y);
+}
+
+public void collidedWith(Player other) {
+
+if (other.dx<0){
+other.x = this.getX() + this.sprite.getWidth();
+}
+if (other.getHorizontalMovement()>0){
+other.x = this.getX() - other.sprite.getWidth();
+

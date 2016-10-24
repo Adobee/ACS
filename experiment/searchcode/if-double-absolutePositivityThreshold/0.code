@@ -1,0 +1,8 @@
+final double absolutePositivityThreshold) {
+if (!matrix.isSquare()) {
+throw new NonSquareMatrixException(matrix.getRowDimension(),
+final double[] ltI = lTData[i];
+
+// check diagonal element
+if (ltI[i] <= absolutePositivityThreshold) {
+

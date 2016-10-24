@@ -1,0 +1,9 @@
+CalcUtils.prepareCoreStyle(doc);
+Row row;
+Table table = doc.getSheetByIndex(0);
+int rowIndex = -1;
+boolean first=true;
+for(int i=0;i<header.length;i++){
+CalcUtils.createBasicCell(table, i, rowIndex, values[i]);
+if(values[i]!=null){
+

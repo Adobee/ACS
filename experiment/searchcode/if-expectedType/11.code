@@ -1,0 +1,9 @@
+public class OperatorTypeMatcher implements INodeMatcher {
+
+private final OperatorType expectedType;
+
+private OperatorTypeMatcher(OperatorType expectedType)
+{
+if (expectedType == null) {
+throw new IllegalArgumentException(&quot;expectedType must not be NULL.&quot;);
+

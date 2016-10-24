@@ -1,0 +1,7 @@
+@Inject public ConcurrentRebalanceNodeAllocation(Settings settings) {
+super(settings);
+this.clusterConcurrentRebalance = componentSettings.getAsInt(&quot;cluster_concurrent_rebalance&quot;, 2);
+@Override public boolean canRebalance(ShardRouting shardRouting, RoutingAllocation allocation) {
+if (clusterConcurrentRebalance == -1) {
+return true;
+

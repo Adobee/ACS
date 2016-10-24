@@ -1,0 +1,9 @@
+public static boolean regionMatches (CharSequence cs1, int off1,
+CharSequence cs2, int off2, int len) {
+if (off1 < 0 || off2 < 0 || off1 + len > cs1.length()
+|| off2 + len > cs2.length()) {
+return false;
+} else {
+for (int i = 0; i < len; i++)
+if (cs1.charAt(i+off1) != cs2.charAt(i+off2))
+

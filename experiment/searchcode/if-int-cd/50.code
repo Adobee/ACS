@@ -1,0 +1,12 @@
+package cd;
+
+public class ChildrensCd extends CdDecorator{
+
+public ChildrensCd(Cd cd) {
+super(cd);
+addCategory(Cd.Category.CHILDRENS);
+}
+
+@Override
+public int getRentalPoints(int daysRented) {
+

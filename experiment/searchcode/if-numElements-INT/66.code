@@ -1,0 +1,8 @@
+public static <T> T[] append(T[]... arrays) {
+int numElements = 0;
+for(T[] array : arrays) {
+if(array == null) continue;
+T[] all = (T[]) Array.newInstance(arrays.getClass().getComponentType().getComponentType(), numElements);
+int i = 0;
+for(T[] array : arrays) {
+

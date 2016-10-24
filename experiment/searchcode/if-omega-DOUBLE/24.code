@@ -1,0 +1,11 @@
+public class LegSwings2 implements Motion {
+double omega;
+double ang;
+boolean started = false;
+
+public LegSwings2( double omega ) {
+public void update( double dt, Man m ) {
+double dTheta = omega * dt;
+ang += dTheta;
+if ( Math.abs( ang ) > Math.PI / 2 * .4 ) {
+

@@ -1,0 +1,12 @@
+private final static String ZERO = &quot;000&quot;;
+/**
+* 分转成元为单位
+*
+* @param amount
+* @return
+*/
+public static String fen2yuan(Long amount) {
+String _amount = String.valueOf(amount);
+if (_amount.length() < 3) {
+_amount = ZERO.substring(0, 3 - _amount.length()) + amount;
+

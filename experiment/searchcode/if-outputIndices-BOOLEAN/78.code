@@ -1,0 +1,9 @@
+this.shards = shards;
+}
+
+public Map<String, IndexUpgradeStatus> getIndices() {
+if (indicesUpgradeStatus != null) {
+boolean outputIndices = &quot;indices&quot;.equals(level) || outputShards;
+if (outputIndices) {
+builder.startObject(Fields.INDICES);
+

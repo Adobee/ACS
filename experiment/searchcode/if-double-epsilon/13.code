@@ -1,0 +1,13 @@
+public class DecayingEpsilonGreedyStrategy implements ExplorationStrategy {
+/**
+* The epsilon value
+*/
+private double epsilon;
+/**
+* The decay value
+*/
+private double decay;
+
+/**
+* Make a epsilon greedy strategy
+

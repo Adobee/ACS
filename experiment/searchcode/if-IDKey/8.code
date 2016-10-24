@@ -1,0 +1,14 @@
+package org.apache.commons.lang3.builder;
+
+final class IDKey
+{
+private final int id;
+private final Object value;
+public final boolean equals(Object paramObject)
+{
+if (!(paramObject instanceof IDKey));
+IDKey localIDKey;
+do
+{
+return false;
+

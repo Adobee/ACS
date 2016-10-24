@@ -1,0 +1,13 @@
+import java.util.Map;
+
+/**
+* Relation holds a map from relation to relation mentions. Assumes a single
+* dataset.
+*
+*/
+public class Relation {
+public void addRelation(String relation, RelationMention rm) {
+List<RelationMention> mentions = this.relationToRelationMentions
+.get(relation);
+if (mentions == null) {
+

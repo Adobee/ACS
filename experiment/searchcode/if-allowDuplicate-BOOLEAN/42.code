@@ -1,0 +1,8 @@
+String propertyNS, String dataProperty,
+Literal obj, String context, boolean allowDuplicate) {
+URI subj = factory.createURI(resourceURI);
+try {
+if (allowDuplicate)
+con.add(subj, pred, obj, ctxt);
+else if (!propertyExists(subj, pred))
+

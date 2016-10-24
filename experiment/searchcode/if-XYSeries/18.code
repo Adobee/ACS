@@ -1,0 +1,11 @@
+for (double i = this.poczatek; i < this.koniec; i = i + 0.001) {
+if (valB != 0) {
+xYSeries.add(i, zwrocY(i));
+xYSeries.add(i, zwrocY(i) - 10);
+}
+
+}
+} else {
+xYSeries.add(zwrocX(), i);
+if (k == 100 + numer) {
+

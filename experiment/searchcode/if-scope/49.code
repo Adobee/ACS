@@ -1,0 +1,9 @@
+this.scopePromise = scopePromise;
+}
+@Override
+protected Scope getScope() {
+if (!(isCalculated)) {
+scope = scopePromise.invoke();
+// todo: think about this case...
+if (scope == null) {
+

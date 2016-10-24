@@ -1,0 +1,10 @@
+rr = Math.sqrt(nfx * nfx + nfy * nfy + nfz * nfz);
+if (Math.abs(rr) <= PZERO) {
+nfx = nfy = 0.0;
+nfz = -1.0;
+nfz = 0.0 - nfz / rr;
+}
+if (faces == Faces.MIRRORED) {
+nfx = 0.0 - nfx;
+nfy = 0.0 - nfy;
+

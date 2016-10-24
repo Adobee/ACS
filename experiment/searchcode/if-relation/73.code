@@ -1,0 +1,8 @@
+public int createSelective(RelationModel relationModel) {
+
+//检查fromUser是否等于toUser
+if (relationModel.getFromUser() == relationModel.getToUser()) {
+Integer count = relationRepo.selectCount(beanMapper.map(param, Relation.class));
+if (count > 0) {
+ErrorCode.throwBusinessException(ErrorCode.RELATION_EXISTED);
+

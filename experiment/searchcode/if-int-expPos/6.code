@@ -1,0 +1,9 @@
+public void getExpBytes( byte[] bytes, int offset, int length ){
+expPos += length;
+exp.nextBytes(bytes, offset, length );
+}
+
+public String getExpBytesString( int numBytes ){
+expPos += numBytes;
+return getBytesString( exp, numBytes );
+

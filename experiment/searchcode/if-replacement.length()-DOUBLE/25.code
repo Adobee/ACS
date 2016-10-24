@@ -1,0 +1,6 @@
+// TODO(lwhite): This hack needed because Smile doesn&#39;t name the vars in it&#39;s output; we do, by string replacement.
+int maxNameLength = &quot;(intercept)&quot;.length() - 1;
+for (int i = 0; i < explanatoryVars.length; i++) {
+String replacement = explanatoryVars[i].name();
+if (replacement.length() >= maxNameLength) {
+

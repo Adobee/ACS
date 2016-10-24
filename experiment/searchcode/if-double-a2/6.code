@@ -1,0 +1,11 @@
+* @param b2
+* @return result array
+*/
+public static double[] sum(double[] a2, double[] b2) {
+int bigger;
+if(a2.length<=b2.length){
+double[] result = new double[bigger];
+for (int i=0;i<bigger;i++){
+double current=0;
+if(a2.length<=bigger){
+

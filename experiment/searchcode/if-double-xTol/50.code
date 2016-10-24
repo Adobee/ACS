@@ -1,0 +1,6 @@
+private double gtol;    // tolerance for curvature condition. gtol >= 0
+private double xtol;    // relative tolerance for an acceptable step. xtol >= 0
+public LineSearchMore94 setConvergence(double ftol, double gtol, double xtol) {
+if( ftol < 0 )
+throw new IllegalArgumentException(&quot;ftol must be >= 0 &quot;);
+

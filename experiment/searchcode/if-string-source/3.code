@@ -1,0 +1,6 @@
+public class MyStringUtils extends StringUtils {
+public static String replaceFirstLetter2LowerCase(String source) {
+if(source == null)return source;
+source = MyStringUtils.trim(source);
+String firstSource = source.substring(0, 1);
+

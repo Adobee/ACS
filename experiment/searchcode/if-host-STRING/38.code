@@ -1,0 +1,11 @@
+package com.didi.thrift.pool;
+
+public class HostAndPort {
+public static final String LOCALHOST_STR = &quot;localhost&quot;;
+public String toString() {
+return host + &quot;:&quot; + port;
+}
+
+private String convertHost(String host) {
+if (host.equals(&quot;127.0.0.1&quot;))
+

@@ -1,0 +1,7 @@
+/*  27:    */   private final List<LinearConstraint> constraints;
+/*  28:    */   private final boolean restrictToNonNegative;
+/*  29: 84 */   private final List<String> columnLabels = new ArrayList();
+/*  37:    */   SimplexTableau(LinearObjectiveFunction f, Collection<LinearConstraint> constraints, GoalType goalType, boolean restrictToNonNegative, double epsilon)
+/*  38:    */   {
+/*  39:117 */     this(f, constraints, goalType, restrictToNonNegative, epsilon, 10);
+

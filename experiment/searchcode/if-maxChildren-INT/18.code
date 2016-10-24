@@ -1,0 +1,7 @@
+public TreeModel newModel(int depth, int minChildren, int maxChildren, Random random) {
+TreeNode root = createNode(depth, minChildren, maxChildren, random, TOTAL_SIZE);
+return new ChildPropertyTreeModel(root, &quot;children&quot;);
+}
+
+public TreeModel newMultiRootedModel(int depth, int minChildren, int maxChildren, Random random) {
+

@@ -1,0 +1,11 @@
+Range range = cf.getSplitPanel().getChartPanel().getRange();
+
+if (!cd.isVisibleNull())
+{
+Dataset dataset = cd.getVisible();
+double yLow = cd.getY(low, rect, range, isLog);
+
+double candleWidth = cp.getBarWidth();
+
+g.setPaint(open > close ? cp.getBarDownColor() : cp.getBarUpColor());
+

@@ -1,0 +1,9 @@
+public EditInfo(String n, double val, double mn, double mx) {
+name = n;
+value = val;
+if (mn == 0 &amp;&amp; mx == 0 &amp;&amp; val > 0) {
+public String name, text;
+public double value, minval, maxval;
+public TextField textf;
+public Scrollbar bar;
+

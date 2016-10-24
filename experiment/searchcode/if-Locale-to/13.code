@@ -1,0 +1,11 @@
+public SerializableLocale(Locale locale) {
+id = locale.toString();
+}
+
+public Locale getLocale() {
+if (locale == null &amp;&amp; id != null) {
+for (Locale it : Locale.getAvailableLocales()) {
+if (it.toString().equals(id)) {
+locale = it;
+break;
+

@@ -1,0 +1,14 @@
+this.weights = weights;
+}
+public double[] initial()
+{
+double[] a = new double[2];
+a[D] = 1.;
+a[C] = 0.;
+return a;
+} //initial
+
+public double val(double[] x, double[] a)
+{
+return 4*a[D]*x[0]+a[C];
+

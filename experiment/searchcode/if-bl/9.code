@@ -1,0 +1,14 @@
+package cc;
+
+public class SumCents {
+public int sumNCents(int n, int bl){
+int ways = 0;
+if(n < bl)
+return 0;
+else {
+if (n == bl)
+return 1;
+else {
+if(n - bl >= 25){
+ways = sumNCents(n, bl + 25) + sumNCents(n, bl + 15) +sumNCents(n, bl + 10) +sumNCents(n, bl + 5) + sumNCents(n, bl + 1);
+

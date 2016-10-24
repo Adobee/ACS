@@ -1,0 +1,7 @@
+public static ISerializer newSerializer(int serializerType) {
+ISerializer serializer = null;
+if (serializerType == GlobalConfig.PROTOBUF) {
+serializer = new ProtobufSerializer();
+} else if (serializerType == GlobalConfig.THRIFT) {
+serializer = new ThriftSerializer();
+

@@ -1,0 +1,6 @@
+public void onRecoveryFailure(RecoveryState state, RecoveryFailedException e, boolean sendShardFailure) {
+Set<String> strings = Sets.newHashSet(status.store().directory().listAll());
+String expectedFile = null;
+for (String file : strings) {
+if (Pattern.compile(&quot;recovery[.]\\d+[.]foo[.]bar&quot;).matcher(file).matches()) {
+

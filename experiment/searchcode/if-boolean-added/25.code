@@ -1,0 +1,13 @@
+addedX = 0;
+addedY = 0;
+addedPos = 0;
+}
+
+public void update(float delta) {
+if (activate) {
+addedPos = Gdx.graphics.getHeight() / 100 * (delta * 40 / 0.5f);
+addedY = addedY - Gdx.graphics.getHeight() / 100 * y;
+
+if (position.y > Gdx.graphics.getHeight() * 0.8f || addedX <= 0
+|| addedY <= 0)
+

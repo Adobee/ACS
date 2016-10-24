@@ -1,0 +1,12 @@
+import com.nickan.epiphany3D.model.messagingsystem.Telegram;
+
+
+public class StateMachine<OwnerType> {
+OwnerType owner;
+
+BaseState<OwnerType> currentState;
+public void changeState(BaseState<OwnerType> state) {
+previousState = currentState;
+
+if (currentState != null)
+

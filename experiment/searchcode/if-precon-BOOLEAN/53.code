@@ -1,0 +1,7 @@
+public static String getImageKey(InventoryItem ii, boolean altState) {
+if (ii instanceof PaperCard) {
+return ImageKeys.BOOSTERBOX_PREFIX + ((BoosterBox)ii).getEdition();
+}
+if (ii instanceof PreconDeck) {
+return ImageKeys.PRECON_PREFIX + ((PreconDeck)ii).getImageFilename();
+

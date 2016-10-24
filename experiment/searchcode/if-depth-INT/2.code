@@ -1,0 +1,7 @@
+public int[][] generateMatrix(int n) {
+int[][] res = new int[n][n];
+int count = 1;
+for (int depth = 0; depth <= n - 1 - depth; depth++) {
+if (depth == n - 1 - depth) {
+res[depth][depth] = count++;
+

@@ -1,0 +1,11 @@
+return responses;
+}
+
+@Override
+public void setForcedRefresh(boolean forcedRefresh) {
+/*
+* Each DocWriteResponse already has a location for whether or not it forced a refresh so we just set that information on the
+for (BulkItemResponse response : responses) {
+DocWriteResponse r = response.getResponse();
+if (r != null) {
+

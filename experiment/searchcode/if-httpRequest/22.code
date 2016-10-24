@@ -1,0 +1,11 @@
+import org.jboss.netty.handler.codec.http.Cookie;
+
+public interface HttpRequest
+{
+String getUri();
+
+HttpRequest context(HttpContext ctx);
+HttpRequest expects(int code);
+HttpRequest expects(int code, String messageIfError);
+HttpRequest expects(ResponseInspector inspector);
+

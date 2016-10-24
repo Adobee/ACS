@@ -1,0 +1,8 @@
+/** Squared secondary diagonal of the tridiagonal matrix. */
+private double[] squaredSecondary;
+
+/** Transformer to tridiagonal (may be null if matrix is already tridiagonal). */
+final double mij = matrix.getEntry(i, j);
+final double mji = matrix.getEntry(j, i);
+if (Math.abs(mij - mji) > (Math.max(Math.abs(mij), Math.abs(mji)) * eps)) {
+

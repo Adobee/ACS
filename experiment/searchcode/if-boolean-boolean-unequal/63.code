@@ -1,0 +1,10 @@
+static ItemStack cleanStack(Material material, boolean craft) {
+final ItemStack stack = new ItemStack(material);
+return craft ? CraftItemStack.asCraftCopy(stack) : stack;
+oos.writeObject(unequalStack);
+} finally {
+if (oos != null) {
+try {
+oos.close();
+} catch (IOException ex) {
+

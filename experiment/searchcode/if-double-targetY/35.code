@@ -1,0 +1,7 @@
+private final int targetx;
+private final int targety;
+private double currentsourcedistance = Integer.MAX_VALUE;
+private double currenttargetdistance = Integer.MAX_VALUE;
+
+public NextMove(int targetx, int targety) {
+

@@ -1,0 +1,11 @@
+public class GlobalHooks {
+private static boolean dunit = false;
+private static final Thread CLOSE_THREAD = new Thread() {
+Thread.currentThread().interrupt();
+}
+};
+
+@Before
+public void beforeAll() {
+if(!dunit) {
+

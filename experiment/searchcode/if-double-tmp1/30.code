@@ -1,0 +1,7 @@
+tmp2.x[i]=(int)(b.x[i]+(x[i]-b.x[i])*r.Rand()*alfa);
+if (tmp1.x[i]>nlabels) tmp1.x[i]=nlabels;
+if (tmp1.x[i]<0) tmp1.x[i]=0;
+int p2=(int)(r.Rand()*tmp1.x.length);
+if (p2<p1) { int tmp=p1; p1=p2; p2=tmp; }
+for (int i=p1;i<=p2;i++) {
+

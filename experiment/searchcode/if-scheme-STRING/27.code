@@ -1,0 +1,14 @@
+public class SchemeEqualsProcedure extends SchemeProcedure {
+public String toString() {
+return &quot;equal?&quot;;
+}
+
+private SchemeSymbol aParam = SchemeSymbol.getSymbol(&quot;a&quot;);
+SchemeObject b = env.get(bParam);
+
+if (a.equals(b)) {
+return SchemeBoolean.getTrue();
+
+} else {
+return SchemeBoolean.getFalse();
+

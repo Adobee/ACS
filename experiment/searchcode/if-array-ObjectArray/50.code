@@ -1,0 +1,9 @@
+* @param array Data for the list.
+*/
+public void setArray(Object array[]) {
+if (objectArray != null)
+fireIntervalRemoved(this, 0, objectArray.length - 1);
+public void setCollection(Collection<?> collection) {
+if (objectArray != null) {
+fireIntervalRemoved(this, 0, objectArray.length - 1);
+

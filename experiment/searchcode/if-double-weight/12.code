@@ -1,0 +1,14 @@
+package fruit;
+
+public class fruit {
+String color;
+double weight;
+String taste;
+public void setWeight(double weight) {
+if (weight<0){
+this.weight=weight*(-1);
+
+}else {this.weight=weight;}
+}
+}
+

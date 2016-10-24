@@ -1,0 +1,16 @@
+private int currentInterval;
+
+private long unitsPerInterval;
+
+public int getCurrentInterval() {
+return currentInterval;
+public boolean isIntervalElapsed(long currentTime) {
+if (currentTime > (currentInterval * unitsPerInterval)) {
+currentInterval++;
+return true;
+}
+return false;
+}
+
+}
+

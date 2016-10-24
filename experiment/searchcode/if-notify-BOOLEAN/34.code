@@ -1,0 +1,13 @@
+public class NotifyTestDummyBool extends NotifyBase implements ISubscribe {
+private boolean _isOn = false;
+private boolean _isPub = false;
+
+public NotifyTestDummyBool(boolean isPub)
+public <T> void StateChange(T state) {
+_isOn = (Boolean) state;
+if(IsPub()){
+NotifySubscribers(state);
+}
+}
+}
+

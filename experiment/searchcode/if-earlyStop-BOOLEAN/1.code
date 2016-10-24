@@ -1,0 +1,13 @@
+// without this part will get TLE in &quot;aaaaaa.......aab&quot; case.
+boolean earlyStop = true;
+for(int i=n-1; i>0; i--){
+if(dict.contains(s.substring(i))){
+break;
+}
+}
+if(earlyStop)
+return false;
+
+// 搜索串的前缀，从长到短能节省时间（长串存在dict中的可能性小于短串）
+for (int i=n-1; i>0; i--) {
+

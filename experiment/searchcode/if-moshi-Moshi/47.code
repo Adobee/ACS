@@ -1,0 +1,9 @@
+package com.beiing.baseframe.network;
+
+import com.squareup.moshi.Moshi;
+
+import java.io.IOException;
+public static <T> T convertMap(Class<T> type, Map map) {
+Moshi moshi = new Moshi.Builder().build();
+String json = moshi.adapter(Map.class).toJson(map);
+

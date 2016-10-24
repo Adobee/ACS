@@ -1,0 +1,8 @@
+public void addUpdated( Date modDate, String contentPath, String thumbPath ) {
+this.lastUpdated = modDate;
+if( updatedFiles.size() > maxSize() ) {
+updatedFiles.remove( 0 );
+}
+// If one exists just update it
+for( UpdatedFile uf : updatedFiles ) {
+

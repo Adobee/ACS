@@ -1,0 +1,10 @@
+&quot;org.jfree.chart.editor.LocalizationBundle&quot;);
+
+
+public SWTPlotEditor(Composite parent, int style, Plot plot) {
+super(parent, style);
+domainAxis = ((CategoryPlot) plot).getDomainAxis();
+}
+else if (plot instanceof XYPlot) {
+domainAxis = ((XYPlot) plot).getDomainAxis();
+

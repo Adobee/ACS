@@ -1,0 +1,6 @@
+public Object evaluate(Options options, Object... params) {
+if(params == null || params.length != 2)
+throw new IllegalArgumentException(&quot;The addition must have exactly 2 params &quot;);
+Date dt = (Date.class.isInstance(val2))?(Date)val2:(Date)val1;
+int daysToAdd = (Date.class.isInstance(val2))?((Number)val1).intValue():((Number)val2).intValue();
+

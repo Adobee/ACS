@@ -1,0 +1,8 @@
+&quot;I7 = (a-> I7 | a -> STOP).&quot;,
+&quot;I8 = (c -> Q1), Q1 = (b? -> Q2 | c? -> Q3), Q2 = (c-> I8), Q3 = (b -> I8).&quot;,
+&quot;I9 = (c -> Q1), Q1 = (b? -> Q2 | b? -> Q3), Q2 = (c-> I9), Q3 = (b -> I9).&quot;,
+&quot;I15 = (a -> Q1 | c? -> Q2), Q1 = ( c -> Q3), Q2 = (a? -> Q3), Q3 = (b -> STOP).&quot;
+};
+
+private MTS<Long, String>[] parsedModels;
+

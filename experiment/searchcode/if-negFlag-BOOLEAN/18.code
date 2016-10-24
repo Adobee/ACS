@@ -1,0 +1,9 @@
+private LinkedList<TreeNode> deque = new LinkedList<TreeNode>();
+private boolean negFlag = true;
+
+public LTLTree() {
+String connective = new String();
+currentNode = (LTLTreeNode) deque.removeLast();
+if (ctx.getChild(0).getText().equals(&quot;!&quot;)) {
+negFlag = !negFlag;
+

@@ -1,0 +1,15 @@
+public void trace(Object... obj) {
+if (logger.isTraceEnabled()) {
+if (obj != null &amp;&amp; obj.length > 0) {
+if (obj.length > 1) {
+logger.trace(obj[0], t);
+}
+} else {
+logger.trace(t);
+}
+}
+}
+
+public void debug(Object... obj) {
+if (logger.isDebugEnabled()) {
+

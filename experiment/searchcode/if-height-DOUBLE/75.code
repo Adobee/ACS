@@ -1,0 +1,7 @@
+public class Triangle {
+private final double width;
+private final double height;
+
+public Triangle(double width, double height) {
+if(width <= 0 || height <= 0) throw new RuntimeException();
+

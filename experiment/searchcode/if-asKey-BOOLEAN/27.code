@@ -1,0 +1,6 @@
+public boolean equals(final Object obj) {
+if (obj instanceof ModelKey) {
+final ModelKey asKey = (ModelKey) obj;
+if (!Objects.equals(getNamespace(), asKey.getNamespace())) {
+return false;
+

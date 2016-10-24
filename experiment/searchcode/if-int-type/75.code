@@ -1,0 +1,10 @@
+public Type add(Type that)
+{
+if (!(that instanceof IntType))
+return super.add(that);
+@Override
+public Type mul(Type that)
+{
+if (!(that instanceof IntType))
+return super.mul(that);
+

@@ -1,0 +1,21 @@
+sum += matrix.get(i).get(j);
+valid += 1.0;
+}
+}
+}
+double mu = 0;
+if (valid != 0) {
+mu = sum / valid;
+sum += Math.pow((mu - originalMatrix.get(i).get(j)), 2.0);
+valid += 1.0;
+}
+}
+}
+double muRmse = 0;
+if (valid != 0) {
+muRmse = (double) Math.sqrt(sum / valid);
+}
+return muRmse;
+}
+}
+

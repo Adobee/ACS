@@ -1,0 +1,12 @@
+public int height, width;
+
+public double ya;
+public boolean topped = false;
+
+public Screen(int width, int height) {
+for (int y = 0; y < height; y++) {
+ya = y;
+for (int x = 0; x < width; x++) {
+if (topped) ya -= 0.3;
+if (!topped) ya += 0.3;
+

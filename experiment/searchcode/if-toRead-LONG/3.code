@@ -1,0 +1,13 @@
+public long skip(long n) {
+int remaining = count - pos;
+int toRead = remaining > n ? (int)n : remaining;
+
+pos += n;
+return toRead;
+}
+
+@Override
+public int peek() {
+if(pos < count)
+return buf[pos] &amp; 0xFF;
+

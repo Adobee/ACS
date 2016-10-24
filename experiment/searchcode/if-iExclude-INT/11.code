@@ -1,0 +1,5 @@
+* Returns the server list for the requested cluster cluster excluding any tags like <NEW_NODES> and iExclude if any.
+List<String> filteredServerList = new ArrayList<String>(serverList.size());
+for (String s : serverList) {
+if (!s.equals(NEW_NODE_TAG) &amp;&amp; (iExclude == null || !iExclude.equals(s)))
+

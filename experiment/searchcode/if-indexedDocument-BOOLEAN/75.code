@@ -1,0 +1,7 @@
+import com.sangupta.esclient.domain.IndexSettings;
+import com.sangupta.esclient.domain.IndexedDocument;
+import com.sangupta.esclient.domain.SearchQuery;
+for(DocumentIndexInterceptor interceptor : this.indexInterceptors) {
+boolean doNotIndex = interceptor.afterSerialization(jsonElement);
+if(doNotIndex) {
+

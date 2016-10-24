@@ -1,0 +1,7 @@
+public class BlockPageCacheImpl extends BlockPageCache {
+
+private boolean canCache = false;
+private DotCacheAdministrator cache = null;
+public String get(HTMLPage page, PageCacheParameters pageChacheParams) {
+if (!canCache || page == null || pageChacheParams == null
+

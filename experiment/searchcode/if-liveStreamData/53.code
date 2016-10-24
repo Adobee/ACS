@@ -1,0 +1,7 @@
+import com.jjcamera.apps.iosched.explore.data.ItemGroup;
+import com.jjcamera.apps.iosched.explore.data.LiveStreamData;
+import com.jjcamera.apps.iosched.explore.data.SessionData;
+Intent intent = new Intent(getApplicationContext(), ExploreSessionsActivity.class);
+if (tag instanceof LiveStreamData) {
+intent.setData(ScheduleContract.Sessions.buildSessionsAfterUri(UIUtils.getCurrentTime(this)));
+

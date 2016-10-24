@@ -1,0 +1,13 @@
+days: 1
+[0, 1, 0, 0, 1, 0, 1, 0]
+days: 2
+[1, 0, 1, 0, 0, 0, 0, 1]
+*/
+
+public class DaysChange {
+public int[] Solution(int[] days, int n) {
+if (days == null || n <= 0)
+return days;
+int length = days.length;
+int res[] = new int[length];
+

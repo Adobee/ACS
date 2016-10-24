@@ -1,0 +1,8 @@
+CharacterLiteral charRHS = (CharacterLiteral) rhs;
+return new StringLiteral(strLHS.value + charRHS.value);
+}
+if (rhs instanceof IntegerLiteral) {
+return new StringLiteral(charLHS.value + strRHS.value);
+}
+if (lhs instanceof IntegerLiteral) {
+

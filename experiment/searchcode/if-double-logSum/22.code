@@ -1,0 +1,12 @@
+//double logdenom = 0.0;
+double logdenom = hypgeom.log_choose(N, pos);
+
+Double logsum = null;
+//System.out.println(&quot;PValue(&quot; + N + &quot;,&quot; + pos + &quot;: &quot; + bestE + &quot;) --> &quot; + Math.exp(logsum));
+
+pValueCache.put(a, logsum);
+return logsum;
+}
+
+private double getLogPValueError(int N, int pos, int error, double denom) {
+

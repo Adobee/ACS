@@ -1,0 +1,12 @@
+if ((java.lang.Math.abs(yInitial)) <= (functionValueAccuracy)) {
+setResult(initial, 0);
+return result;
+}
+double yMin = f.value(min);
+if ((java.lang.Math.abs(yMin)) <= (functionValueAccuracy)) {
+double yMin = f.value(min);
+double yMax = f.value(max);
+double sign = yMin * yMax;
+if (sign > 0) {
+if ((java.lang.Math.abs(yMin)) <= (functionValueAccuracy)) {
+

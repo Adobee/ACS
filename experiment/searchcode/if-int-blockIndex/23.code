@@ -1,0 +1,15 @@
+changedBlocks[blockIndex] = b;
+blockIndex++;
+}
+}
+blockLoc.subtract(1,0,0);
+b = (Block) blockLoc.getBlock();
+if (b.getType() == Material.AIR) {
+changedBlocks[blockIndex] = b;
+blockIndex++;
+}
+}
+blockLoc.subtract(0,0,1);
+b = (Block) blockLoc.getBlock();
+if (b.getType() == Material.AIR) {
+

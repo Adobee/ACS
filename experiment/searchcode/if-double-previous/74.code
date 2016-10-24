@@ -1,0 +1,12 @@
+private int volume;
+private double bid;
+private double lastPrice;
+private double previousClose;
+
+public String getSymbol() {
+public double getPreviousClose() {
+return previousClose;
+}
+
+public void setPreviousClose(double previousClose) {
+

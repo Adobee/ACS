@@ -1,0 +1,14 @@
+int isocode;
+int numdecimals;
+
+public Currency(String alphacode, int isocode, int numdecimals)
+this.numdecimals = numdecimals;
+}
+
+public int getDecimals()
+{
+return numdecimals;
+}
+
+public int getIsoCode()
+

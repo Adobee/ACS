@@ -1,0 +1,16 @@
+* @date 2015-1-21 下午5:50:02
+*
+*/
+public class MyScroller {
+
+
+private double startX;
+private double startY;
+private double distanceX;
+private double distanceY;
+
+/**
+* 开始执行绘制的时间
+*/
+private long startTime;
+

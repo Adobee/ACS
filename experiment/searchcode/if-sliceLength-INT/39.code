@@ -1,0 +1,7 @@
+public abstract class LoadPredictorBolt extends BaseBasicBolt {
+protected long currentSliceStart;
+protected long sliceLength = 60l;
+protected int tickCounter = 0;
+
+protected Map<String, AverageTracker> trackers = new HashMap<String, AverageTracker>();
+

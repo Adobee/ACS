@@ -1,0 +1,6 @@
+public static void setModule(MissionModule pModule) {
+if (pModule == null) {
+throw new NullPointerException(MissionModuleFactory.class.getSimpleName() + &quot;#setModule方法，传入的pModule实例为空！&quot;);
+} else if (_module != null) {
+throw new RuntimeException(MissionModuleFactory.class.getSimpleName() + &quot;#setModule方法，重复设置Module实例！&quot;);
+

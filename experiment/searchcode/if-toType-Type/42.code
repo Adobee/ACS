@@ -1,0 +1,7 @@
+public Number convert(Object source, Class<? extends Number> toType, Number vDefault) {
+try {
+if (toType.isPrimitive() &amp;&amp; vDefault == null) {
+if (Double.TYPE.equals(toType)) {
+vDefault = 0.0D;
+} else if (Float.TYPE.equals(toType)) {
+

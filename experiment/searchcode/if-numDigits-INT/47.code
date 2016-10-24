@@ -1,0 +1,12 @@
+System.out.println(&quot;Found &quot; + i + &quot;. Sum so far: &quot; + sum);
+}
+}
+}
+
+public static boolean check(int num) {
+int numDigits = 1 + (int) Math.log10(num);
+int[] digits = new int[numDigits];
+digits[0] = num % 10;
+for (int i = 1; i < numDigits; i++) {
+int a = num % (int) (Math.pow(10, i + 1));
+

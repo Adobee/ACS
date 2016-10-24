@@ -1,0 +1,7 @@
+* @throws org.apache.commons.math.exception.DimensionMismatchException
+* if the dimensions do not match.
+*/
+public OpenMapRealVector add(OpenMapRealVector v) {
+checkVectorDimensions(v.getDimension());
+boolean copyThis = entries.size() > v.entries.size();
+

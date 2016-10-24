@@ -1,0 +1,11 @@
+//  You should have received a copy of the agreement
+//  along with this program; if not, write to Talend SA
+//  9 rue Pages 92150 Suresnes, France
+import static org.talend.dataprep.date.DateManipulator.Pace.*;
+
+import java.time.LocalDateTime;
+
+import org.junit.Test;
+
+public class DateManipulatorTest {
+

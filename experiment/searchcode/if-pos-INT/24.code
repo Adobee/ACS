@@ -1,0 +1,15 @@
+package algorithms;
+
+public class Position {
+int posX;
+int posY;
+
+public Position(int posX, int posY) {
+super();
+this.posX = posX;
+this.posY = posY;
+}
+
+public int getPosX() {
+return posX;
+

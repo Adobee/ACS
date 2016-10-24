@@ -1,0 +1,12 @@
+if (!(obj instanceof DialShape)) {
+return false;
+}
+DialShape shape = (DialShape) obj;
+if (!this.name.equals(shape.toString())) {
+return this.name.hashCode();
+}
+
+
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(DialShape.CIRCLE)) {
+

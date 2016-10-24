@@ -1,0 +1,8 @@
+import org.apache.flink.configuration.Configuration;
+import org.apache.flink.runtime.StreamingMode;
+import org.apache.flink.runtime.jobgraph.JobGraph;
+* @param config The configuration used to configure the local executor.
+*/
+public LocalStreamEnvironment(Configuration config) {
+if (!ExecutionEnvironment.areExplicitEnvironmentsAllowed()) {
+

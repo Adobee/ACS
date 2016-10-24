@@ -1,0 +1,6 @@
+* @return 	boolean	false is string doesn&#39;t has any primary sorter
+*/
+private boolean isHasAPrimaryKey(String str){
+Character firstchar = str.charAt(0);
+if(isStartedWithZero(str) || firstchar.equals(&#39;1&#39;) || firstchar.equals(&#39;2&#39;) || firstchar.equals(&#39;3&#39;) || firstchar.equals(&#39;4&#39;) || firstchar.equals(&#39;5&#39;) || firstchar.equals(&#39;6&#39;) || firstchar.equals(&#39;7&#39;) || firstchar.equals(&#39;8&#39;) || firstchar.equals(&#39;9&#39;)){
+

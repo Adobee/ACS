@@ -1,0 +1,8 @@
+public static final MultiplicativeFunction DIVISOR_COUNT = new MultiplicativeFunction() {
+@Override
+protected long value(long p, int exponent, long power) {
+for (long i = 2; i * i <= argument; i++) {
+if (argument % i == 0) {
+int exponent = 0;
+long power = 1;
+

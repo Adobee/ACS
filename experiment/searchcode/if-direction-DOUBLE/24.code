@@ -1,0 +1,10 @@
+public class Wind implements Serializable {
+
+private final Double mSpeed;
+private final String mDirection;
+mDirection = setDirection(direction);
+}
+
+private String setDirection(Double direction) {
+if (direction > 336.5 &amp;&amp; direction <= 22.5)
+

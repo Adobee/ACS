@@ -1,0 +1,15 @@
+public void Set(Iterator iter) {
+// delete iter_;
+iter_ = iter;
+if (iter_ == null) {
+valid_ = iter_.valid();
+if (valid_) {
+key_ = iter_.key();
+}
+}
+
+private Iterator iter_;
+private boolean valid_;
+private Slice key_;
+}
+

@@ -1,0 +1,10 @@
+private boolean findGMT(String res) {
+
+String gmt = &quot;GMT&quot;;
+int resIndex = 0;
+String sub = &quot;&quot;;
+while ( resIndex < res.length() ) {
+
+if ( res.charAt( resIndex ) == gmt.charAt( 0 ) ) {
+sub = res.substring( resIndex, resIndex + gmt.length() );
+

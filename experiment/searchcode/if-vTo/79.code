@@ -1,0 +1,11 @@
+Object vfrom = exchange.get(from);
+Object vto = exchange.get(to);
+
+if ((vfrom instanceof Map<?, ?>) &amp;&amp; (vto instanceof Map<?, ?>)) {
+((Map) vto).putAll((Map<?, ?>) vfrom);
+
+vfrom = vto;
+
+exchange.set(to, vfrom);
+} else if (vfrom != null) {
+

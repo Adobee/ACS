@@ -1,0 +1,12 @@
+/** {@inheritDoc} */
+public RealMatrix getS() throws InvalidMatrixException {
+
+if (cachedS == null) {
+cachedS = MatrixUtils.createRealDiagonalMatrix(singularValues);
+
+}
+return cachedS;
+}
+
+/** {@inheritDoc} */
+

@@ -1,0 +1,12 @@
+public static double mean(double[] a) {
+if (a.length == 0)
+return Double.NaN;
+double sum = sum(a);
+return (double) sum / a.length;
+public static double stddev(double[] a) {
+return Math.sqrt(var(a));
+}
+
+public static double var(double[] a) {
+if (a.length == 0)
+

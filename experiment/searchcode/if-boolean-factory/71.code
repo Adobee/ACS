@@ -1,0 +1,15 @@
+public void setFactory(ISingletonProvider.ISingletonFactory<C> factory) {
+if (this.factory == null)
+this.factory = factory;
+else
+throw new IllegalStateException();
+}
+
+/**
+* {@inheritDoc}
+*/
+public boolean isFactorySet() {
+return factory != null;
+}
+}
+

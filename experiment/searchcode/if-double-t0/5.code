@@ -1,0 +1,7 @@
+while(true){
+double t0 = Double.MAX_VALUE;
+int o0 = -1;
+for(int i=0;i<n;i++){
+if(nowv<v[i]){
+double tmp = (v[i]*t[i]-nowv*nowt) / (v[i]-nowv);
+

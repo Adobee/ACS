@@ -1,0 +1,10 @@
+import org.tfa.model.Region;
+import org.tfa.model.TimePeriod;
+
+import com.google.gson.Gson;
+
+public class TimePeriodService{
+TimePeriodSearch timePeriodInput = new Gson().fromJson(body, TimePeriodSearch.class);
+if(timePeriodInput == null){
+timePeriodInput = new TimePeriodSearch();
+

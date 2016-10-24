@@ -1,0 +1,9 @@
+setPreviousVersion(getCurrentVersion());
+}
+
+public void removeVersion(String version) {
+if (getInstalledVersions().contains(version)) {
+getInstalledVersions().remove(version);
+}
+if (getPreviousVersion().equals(version)) {
+

@@ -1,0 +1,10 @@
+* true if this {@link FlexNum} used the minValue and maxValue values
+*/
+private boolean hasMinMax = false;
+
+/**
+* creates a new, empty {@link FlexNum}
+public void read(ByteBuf byteBuf) throws ParseException, BufException {
+long num = byteBuf.readFlexNum();
+if(hasMinMax &amp;&amp; (num < minValue || num > maxValue)) {
+

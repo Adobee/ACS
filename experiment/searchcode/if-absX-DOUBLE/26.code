@@ -1,0 +1,10 @@
+for (int j = i + 1; j < nodeAmount; j++) {
+if (i != j) {
+
+distance = calculateDistanceBetweenNodes(nodes[i], nodes[j]);
+private int calculateDistanceBetweenNodes(Node first, Node second) {
+double absX = first.x - second.x;
+double absY = first.y - second.y;
+
+return (int) Math.round(Math.sqrt(absX * absX + absY * absY));
+

@@ -1,0 +1,10 @@
+site = ste; site2 = ste2; chrom = chr; strand = str;
+}
+
+public boolean isSmaller(MapResultPE rhs){
+return (chrom < rhs.chrom ||
+(chrom == rhs.chrom &amp;&amp; site == rhs.site &amp;&amp; site2 < rhs.site2));
+}
+public boolean isEqual(MapResultPE rhs) {
+return (site == rhs.site &amp;&amp; site2 == rhs.site2 &amp;&amp; chrom == rhs.chrom);
+

@@ -1,0 +1,14 @@
+public final class LazyIterator implements Iterator {
+
+private final Map map;
+private Iterator iterator;
+
+private Iterator getIterator() {
+if (iterator==null) {
+public LazyIterator(Map map) {
+this.map = map;
+}
+
+public boolean hasNext() {
+return getIterator().hasNext();
+

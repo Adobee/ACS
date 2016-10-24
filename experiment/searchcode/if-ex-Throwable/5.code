@@ -1,0 +1,12 @@
+/* 得到异常 */
+public Throwable getEx() {
+return this.throwable;
+}
+
+/* 重写父类方法 */
+@Override
+public void printStackTrace() {
+/* 调用父类的方法 */
+super.printStackTrace();
+if (throwable != null) {
+

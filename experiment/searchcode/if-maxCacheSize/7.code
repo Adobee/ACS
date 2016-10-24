@@ -1,0 +1,11 @@
+private final Storage storage;
+private final int maxCacheSize;
+
+public StaleRemovedCache(Storage storage) {
+this.cache = synchronizedMap(new LinkedHashMap<>(DEFAULT_CAPACITY, 0.75f, true));
+this.storage = storage;
+this.maxCacheSize = DEFAULT_MAX_SIZE;
+}
+
+public StaleRemovedCache(Storage storage, int maxCacheSize) {
+

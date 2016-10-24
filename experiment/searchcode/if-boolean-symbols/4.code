@@ -1,0 +1,13 @@
+public class Scope<T> {
+private boolean typedecl;
+
+private List<T> symbols = new LinkedList<T>();
+
+public Scope(){}
+public void add(T symbol){
+symbols.add(symbol);
+}
+
+public boolean contains(T symbol){
+return symbols.contains(symbol);
+

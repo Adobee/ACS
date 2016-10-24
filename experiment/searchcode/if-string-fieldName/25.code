@@ -1,0 +1,7 @@
+public static String toGetter(String fieldname) {
+
+if (fieldname == null || fieldname.length() == 0) {
+/* If the second char is upper, make &#39;get&#39; + field name as getter name. For example, eBlog -> geteBlog */
+if (fieldname.length() > 2) {
+String second = fieldname.substring(1, 2);
+

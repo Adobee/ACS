@@ -1,0 +1,8 @@
+private List<IOperation> reverted = new ArrayList<IOperation>();
+
+private boolean isMultipleOperation = false;
+public boolean RepeatOperation(int stepsCount) {
+while (stepsCount >0) {
+stepsCount--;
+if (reverted.size() == 0) {
+

@@ -1,0 +1,9 @@
+final IStatusCollector log = new StatusCollector( KalypsoUIRRMPlugin.getID() );
+
+/* Always create a new mapping, even if it is empty */
+final IFeatureBindingCollection<ITimeseriesMapping> mappings = m_mappings.getTimeseriesMappings();
+for( final Feature modelElement : modelElements )
+{
+final ZmlLink link = new ZmlLink( modelElement, linkProperty, timeseriesContext );
+if( link.isLinkSet() )
+

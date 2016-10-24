@@ -1,0 +1,11 @@
+fail();
+}
+if (newCovariance == null) {
+fail();
+} else {
+covariance = null;
+fail();
+}
+if (covariance == null) {
+System.err.println(&quot;No matching Covariance found&quot;);
+

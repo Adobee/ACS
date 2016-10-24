@@ -1,0 +1,9 @@
+// Step 1: if there is no base file Type Declaration, stop
+
+if ( base.lastType == null )
+AstNode.fatalError( &quot;base file missing TypeDeclaration -- nothing to extend&quot; );
+//         and (2) the names of the artifacts are the same.
+
+if ( base.lastType.getClass() != ext.firstType.getClass() )
+AstNode.fatalError( &quot;attempting to compose files of different types &quot; +
+

@@ -1,0 +1,9 @@
+* Fase de creacion de personajes predeterminados
+*/
+Character ch1 = new Fairy(&quot;Fairy&quot;);
+Character ch2 = new SwordsMan(&quot;SwordsMan&quot;);
+Character ch3 = new Summoner(&quot;Summoner&quot;);
+
+/**
+* Crea un vector para que el jugador pueda agregar
+

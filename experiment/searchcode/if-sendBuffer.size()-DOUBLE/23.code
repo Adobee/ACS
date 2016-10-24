@@ -1,0 +1,9 @@
+public synchronized void setBufferSize(short packetBufferSize) {
+if(sendBuffer != null) {
+flush();
+public synchronized boolean flush() {
+try {
+final int sizeOfBuffer = sendBuffer.position();
+
+if(sizeOfBuffer <= 0) { return false; } // empty buffer
+

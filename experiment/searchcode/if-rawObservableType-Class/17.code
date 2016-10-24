@@ -1,0 +1,7 @@
+Type observableType = getParameterUpperBound(0, (ParameterizedType) returnType);
+Class<?> rawObservableType = getRawType(observableType);
+if (rawObservableType == Response.class) {
+if (rawObservableType == Result.class) {
+if (!(observableType instanceof ParameterizedType)) {
+throw new IllegalStateException(&quot;Result must be parameterized&quot;
+

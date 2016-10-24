@@ -1,0 +1,8 @@
+int legacyIndex = 1;
+boolean descend = true;
+boolean shouldRedoQuery = true;
+HashMap<DisplayTableColumn, String[]> keywords = new HashMap<DisplayTableColumn, String[]>();
+String[] newHeader = keywords.get(table.columnModel.getColumn(column));
+if(newHeader == null) return;
+if(legacyIndex == column) descend = !descend;
+

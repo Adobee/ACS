@@ -1,0 +1,13 @@
+//System.out.println(&quot;tagger&quot;);
+
+// extract id and sentence text
+int firstSpace = text.indexOf(&#39; &#39;);
+
+String ID = text.substring(0, firstSpace);
+int Begin = (Integer) iter.next();
+int End = GenPos.get(Begin);
+
+int PreNum = 0;
+if (Begin > 0) {
+String Pre = sentence.substring(0, Begin - 1);
+

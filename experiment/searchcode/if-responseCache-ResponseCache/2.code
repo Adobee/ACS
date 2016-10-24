@@ -1,0 +1,7 @@
+protected Response getVipResponse(String version, String entityName, String acceptHeader,
+EurekaAccept eurekaAccept, ResponseCache.Key.EntityType entityType) {
+if (!PeerAwareInstanceRegistryImpl.getInstance().shouldAllowAccess(false)) {
+CurrentRequestVersion.set(Version.toEnum(version));
+ResponseCache.KeyType keyType = ResponseCache.KeyType.JSON;
+if (acceptHeader == null || !acceptHeader.contains(&quot;json&quot;)) {
+

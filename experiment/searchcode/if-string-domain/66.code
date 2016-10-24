@@ -1,0 +1,5 @@
+// create a random string for a new domain
+String domainName = &quot;D&quot; + generateRandString();
+String domainPath = parentDomain.getPath() + domainName + &quot;/&quot;;
+String networkDomain = &quot;ND&quot; + generateRandString();
+

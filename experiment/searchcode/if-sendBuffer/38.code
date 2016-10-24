@@ -1,0 +1,8 @@
+private static int flag = 1;
+private static int blockSize = 4096;
+private static ByteBuffer sendBuffer = ByteBuffer.allocate(blockSize);
+client.register(selector, SelectionKey.OP_WRITE);
+}
+}else if (selectionKey.isWritable()) {
+sendBuffer.clear();
+

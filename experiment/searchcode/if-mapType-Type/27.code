@@ -1,0 +1,9 @@
+this.fog = fog;
+
+if(map != null){
+map.fogEnabled = fog;
+}
+
+if(map == null &amp;&amp; mapType == MapType.SPECIFIC){
+throw new IllegalArgumentException(&quot;Have to specify map if MapType is set to SPECIFIC!&quot;);
+

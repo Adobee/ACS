@@ -1,0 +1,11 @@
+package com.google.android.glass.sample.timeline;
+
+import android.content.Context;
+
+import com.google.android.glass.timeline.TimelineManager;
+public static synchronized TimelineManagerFactory getFactory() {
+if (instance == null) {
+instance = new TimelineManagerFactory();
+}
+return instance;
+

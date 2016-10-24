@@ -1,0 +1,8 @@
+public final class SecureTrustManager implements X509TrustManager {
+private final X509TrustManager trustManager;
+
+public SecureTrustManager(Certificate[] certificateAuthorities) throws KeyStoreException, NoSuchAlgorithmException, IOException, CertificateException {
+for (TrustManager tm : factory.getTrustManagers()) {
+if (tm instanceof X509TrustManager) {
+trustManager = (X509TrustManager) tm;
+

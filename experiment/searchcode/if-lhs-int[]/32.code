@@ -1,0 +1,11 @@
+System.out.println(calculateExpression(exp, exp.length));
+}
+
+private static int lhs;
+
+private static int calculateExpression(String[] exp, int length) {
+lhs = length - 1;
+while (isOp(exp[lhs])) --lhs;
+int op = lhs + 1;
+int rhs = intFromString(exp[lhs]);
+

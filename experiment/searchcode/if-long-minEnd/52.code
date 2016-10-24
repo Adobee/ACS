@@ -1,0 +1,11 @@
+this.serviceTime = serviceTime;
+}
+
+public void process(long deltaTime, Building build)
+{
+service(build);
+World world = build.getWorld();
+
+//If waiting (meaning there are no classes yet)
+//Phase computations continue even when closed
+

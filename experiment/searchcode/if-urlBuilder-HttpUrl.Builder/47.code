@@ -1,0 +1,9 @@
+* @param url    An {@link HttpUrl} target.
+* @return An {@link Operation} builder.
+*/
+protected Operation httpOp(String method, HttpUrl url) {
+HttpUrl.Builder urlBuilder = httpUrl.newBuilder();
+
+if (params != null) {
+ImmutableMap<String, String> queries = params.query();
+

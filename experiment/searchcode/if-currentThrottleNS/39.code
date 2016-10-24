@@ -1,0 +1,19 @@
+name|currentThrottleNS
+init|=
+literal|0
+decl_stmt|;
+if|if
+condition|(
+name|isThrottled
+argument_list|()
+name|startOfThrottleNS
+expr_stmt|;
+if|if
+condition|(
+name|currentThrottleNS
+operator|<
+literal|0
+condition|)
+block|{
+comment|// Paranoia (System.nanoTime() is supposed to be monotonic): time slip must have happened, have to ignore this value
+

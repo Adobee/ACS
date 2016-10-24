@@ -1,0 +1,12 @@
+package org.authorization;
+
+import org.apache.shiro.authz.Permission;
+import org.apache.shiro.authz.permission.PermissionResolver;
+public class BitAndWildPermissionResolver implements PermissionResolver{
+
+/**
+* 字符串转换
+*/
+public Permission resolvePermission(String permissionString) {
+if(permissionString.startsWith(&quot;+&quot;)){
+

@@ -1,0 +1,8 @@
+* @throws ArithmeticException if the duration exceeds the capacity of a long
+*/
+public Duration toDuration() {
+long durMillis = toDurationMillis();
+if (durMillis == 0) {
+return Duration.ZERO;
+} else {
+

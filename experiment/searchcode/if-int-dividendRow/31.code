@@ -1,0 +1,9 @@
+// initialize the objective function rows
+if (getNumObjectiveFunctions() == 2) {
+matrix[0][0] = -1;
+}
+int zIndex = (getNumObjectiveFunctions() == 1) ? 0 : 1;
+protected void divideRow(final int dividendRow, final double divisor) {
+for (int j = 0; j < getWidth(); j++) {
+tableau.setEntry(dividendRow, j, tableau.getEntry(dividendRow, j) / divisor);
+

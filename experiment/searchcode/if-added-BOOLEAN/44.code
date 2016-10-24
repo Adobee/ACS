@@ -1,0 +1,16 @@
+* Evaluates to true if documents added exceed the given threshold.
+*
+* @author daniel
+*/
+public class DocumentsSplitCondition implements SplitCondition {
+this.thresholdDocumentsAdded = thresholdDocumentsAdded;
+}
+
+
+@Override
+public boolean evaluate(File file, int documentsAdded) {
+return documentsAdded >= thresholdDocumentsAdded;
+}
+
+}
+

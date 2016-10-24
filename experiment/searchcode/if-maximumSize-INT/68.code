@@ -1,0 +1,10 @@
+public int getMaximumSize() {
+return maximumSize;
+}
+
+/**
+* Updates document structure as a result of text insertion. If the maximum
+public void insertString(int offs, String str, AttributeSet a) throws BadLocationException {
+if (getLength() < maximumSize) {
+super.insertString(offs, str, a);
+

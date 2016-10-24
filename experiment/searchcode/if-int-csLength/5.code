@@ -1,0 +1,8 @@
+c2 = Character.toLowerCase(c2);
+}
+
+int diff=c1 - c2;
+if (diff != 0) {
+public static final String capitalize(CharSequence cs) {
+int csLength=ExtendedCharSequenceUtils.getSafeLength(cs);
+

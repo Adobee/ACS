@@ -1,0 +1,8 @@
+public Size2D arrange(BlockContainer container, Graphics2D g2,
+RectangleConstraint constraint) {
+protected Size2D arrangeFR(BlockContainer container, Graphics2D g2,
+RectangleConstraint constraint) {
+
+Size2D s = arrangeFN(container, g2, constraint);
+if (constraint.getHeightRange().contains(s.height)) {
+

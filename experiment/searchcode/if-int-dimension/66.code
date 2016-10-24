@@ -1,0 +1,7 @@
+private final int dimensionCount;
+
+public World(int dimensionCount) {
+this.dimensionCount = dimensionCount < 1 ? 1 : dimensionCount;
+List<Integer> setDimension(List<Integer> list, int dimension, Integer value) {
+if (0 <= dimension &amp;&amp; dimension < dimensionCount) {
+

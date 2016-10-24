@@ -1,0 +1,9 @@
+return getSession().createQuery(hql).list();
+}
+
+@SuppressWarnings(&quot;unchecked&quot;)
+@Override
+public List<Commodity> findAllWithFsortId(int fsid) {
+String hql = &quot;from Commodity com where com.fsort=:fsid order by com.id desc &quot;;
+return getSession().createQuery(hql).setInteger(&quot;fsid&quot;, fsid).list();
+

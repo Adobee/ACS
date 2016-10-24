@@ -1,0 +1,7 @@
+// Start typing your Java solution below
+// DO NOT write main() function
+if (S == null || S.length() == 0) {
+return &quot;&quot;;
+} else if (T == null || T.length() == 0) {
+return &quot;&quot;;
+

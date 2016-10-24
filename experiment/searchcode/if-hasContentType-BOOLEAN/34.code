@@ -1,0 +1,10 @@
+private void checkHeader(CloseableHttpResponse response,HttpServerResponse apiResponse){
+Header[] headers = response.getAllHeaders();
+boolean hasContentType = false;
+if (apiResponse != null &amp;&amp; headers != null &amp;&amp; headers.length > 0) {
+if (&quot;Content-Type&quot;.equals(header.getName())) hasContentType = true;
+}
+}
+
+if (apiResponse != null &amp;&amp; (headers == null || !hasContentType)) {
+

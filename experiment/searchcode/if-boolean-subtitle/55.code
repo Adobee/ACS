@@ -1,0 +1,10 @@
+if (releaseName != null &amp;&amp; !releaseName.isEmpty()) {
+boolean isValid = true;
+
+if (subtitle.getSeason() != null) {
+isValid &amp;= releaseName.contains(subtitle.getSeason().toString());
+}
+
+if (subtitle.getEpisode() != null) {
+isValid &amp;= releaseName.contains(subtitle.getEpisode().toString());
+

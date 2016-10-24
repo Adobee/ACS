@@ -1,0 +1,8 @@
+private int batchSize = 10;
+private int queueCapacity;
+private long logSequence = 0; //log sequence always starts from 0
+synchronized(queue)
+{
+int size = queue.size();
+if(size >= queueCapacity)
+

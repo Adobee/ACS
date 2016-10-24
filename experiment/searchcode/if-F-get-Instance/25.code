@@ -1,0 +1,8 @@
+package chapter03;
+
+public class UnsafeLazyInitialization {
+private static Instance instance;
+
+public static Instance getInstance() {
+if (instance == null) //1：A线程执行
+

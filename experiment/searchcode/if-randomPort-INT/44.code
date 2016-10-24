@@ -1,0 +1,12 @@
+logger.info(&quot;The bootstrapping peer has the address {} and port {}!&quot;, peers[0].getPeerAddress().getInetAddress().getHostAddress(), peers[0].getPeerAddress().portUDP());
+}
+}
+
+/**
+* Start a peer and bootstrap to the given address. (non-API)
+* If randomPort is true, a random port is chosen to avoid conflicts if many peers are executed on the same machine.
+* @param num
+*/
+public static void createLocalPeers(int num, boolean randomPort) {
+if (randomPort) {
+

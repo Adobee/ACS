@@ -1,0 +1,10 @@
+public class AsyncParseTask extends AsyncTask<BaseParser, Boolean, Void> {
+
+private BaseParser mParser;
+private IParseEventListener mParseEventListener;
+protected void onProgressUpdate(Boolean... values) {
+boolean isFailure = values[0];
+
+if(isFailure) {
+mParseEventListener.onFailure(); // 解析失败
+

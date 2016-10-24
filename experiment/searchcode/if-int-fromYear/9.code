@@ -1,0 +1,11 @@
+return getCopyrightNotice ( rrStdCopyrightInfo.kHolder, rrStdCopyrightInfo.kStartYear );
+}
+
+public static String getCopyrightNotice ( String holder, int fromYear )
+{
+return getCopyrightNotice ( holder, fromYear, thisYear () );
+public static String getCopyrightNotice ( String holder, int fromYear, int toYear )
+{
+final StringBuffer sb = new StringBuffer ();
+sb.append ( &quot;(c) &quot; );
+

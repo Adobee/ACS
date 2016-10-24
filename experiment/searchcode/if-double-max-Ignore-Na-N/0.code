@@ -1,0 +1,11 @@
+public class MaxValueAggregator implements ValueAggregator {
+
+private double max = Double.NaN;
+
+private final boolean ignoreWeights;
+if (!ignoreWeights) {
+value *= countWeight;
+}
+if (Double.isNaN(max)) {
+max = value;
+

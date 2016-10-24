@@ -1,0 +1,6 @@
+final double currentT = interpolator.getGlobalCurrentTime();
+
+// initialize the events states if needed
+// restrict the interpolator to the first part of the step, up to the event
+final double eventT = currentEvent.getEventTime();
+

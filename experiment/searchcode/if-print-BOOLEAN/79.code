@@ -1,0 +1,9 @@
+PrinterJob job = PrinterJob.getPrinterJob();
+job.setPrintable(new Printer(printData));
+boolean doPrint = job.printDialog();
+if (doPrint)
+{
+try
+{
+job.print();
+

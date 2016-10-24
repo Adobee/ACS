@@ -1,0 +1,10 @@
+boolean res=ammunitionBasijAnnualEstimateRepository.update(Id,price);
+if (res){
+AmmunitionBasijAnnualEstimate ammunitionBasijAnnualEstimateList=ammunitionBasijAnnualEstimateRepository.loadByEntityId(Id);
+else
+return -1;
+}
+@Override
+public boolean tadilUpdate(int estimateId, int tadilPercent) {
+return ammunitionBasijAnnualEstimateRepository.tadilUpdate(estimateId, tadilPercent);
+

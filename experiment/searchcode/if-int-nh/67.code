@@ -1,0 +1,10 @@
+static Scanner scan = new Scanner(System.in);
+
+static int n, m;
+static int[] nh, nr, mh, mr;
+
+public static void main(String... args) {
+for (;;) {
+n = scan.nextInt();
+if (n == 0) break;
+

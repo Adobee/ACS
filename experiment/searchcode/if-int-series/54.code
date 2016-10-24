@@ -1,0 +1,11 @@
+private final int id;
+private final Map<String, DataSeries> seriesPoints;
+private int seriesCounter = 0;
+
+public Chart(int id) {
+this.id = id;
+seriesPoints = new HashMap<String, DataSeries>();
+}
+
+public void addDataPoint(DataPoint dataPoint) {
+

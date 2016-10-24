@@ -1,0 +1,7 @@
+// 如果父加载器为null则认为父加载器为平台根类加载器
+if (parent == null) {
+parent = ESBClassLoaderManager.getRootClassLoader();
+}
+
+if (parent instanceof ESBClassLoader &amp;&amp; (((ESBClassLoader) parent).getName().equals(name))) {
+

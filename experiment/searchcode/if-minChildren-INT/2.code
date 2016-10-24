@@ -1,0 +1,5 @@
+public TreeModel newModel(int depth, int minChildren, int maxChildren, Random random) {
+TreeNodeCreator creator = new TreeNodeCreator();
+int numChildren = (maxChildren > minChildren) ? random.nextInt(maxChildren-minChildren) + minChildren : minChildren;
+if(numChildren > 0) {
+

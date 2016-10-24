@@ -1,0 +1,16 @@
+return &#39;_&#39;;
+}
+}
+
+public static String generateID(Random rng) {
+String id = &quot;&quot;;
+
+if(rng.nextBoolean()) {
+id += &quot;_&quot;;
+
+while(rng.nextBoolean())
+id += &quot;_&quot;;
+
+char c;
+while((c = generateIDChar(rng)) == &#39;_&#39;) ;
+

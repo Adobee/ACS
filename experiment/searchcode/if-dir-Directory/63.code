@@ -1,0 +1,9 @@
+if (dir == null) {
+return false;
+}
+
+if (dir.isDirectory()) {
+for (String directory : dir.list()) {
+boolean success = deleteDir(new File(dir, directory));
+if (!success) {
+

@@ -1,0 +1,8 @@
+public abstract class ComparableFactory<T extends Comparable<T>> extends CFactory<T> {
+
+public ComparableFactory(Group group_, String name_, Parser<T> parser_) {
+super(group_, name_, parser_);
+}
+
+public ComparableFactory<T> check(final Range<T> r) {
+

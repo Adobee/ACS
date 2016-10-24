@@ -1,0 +1,10 @@
+return;
+}
+
+protected int value;
+public int getValue () { return this.value; }
+public void setValue (final int value) { this.value = value; return; }
+String hex = HexUtil.encodeInt (getValue ());
+if (getMinDigits () != null) {
+final int missing = getMinDigits () - hex.length ();
+

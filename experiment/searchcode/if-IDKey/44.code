@@ -1,0 +1,12 @@
+setUpdatedBy(result.getUpdatedBy());
+
+String pidkey=&quot;&quot;;
+Object object=result.get(Kullanici_grubu.PROP_IDKEY);
+if (object!=null){
+object=result.get(Kullanici_grubu.PROP_GRUP);
+if (object!=null){
+pGrup=object.toString();
+}
+
+put(Kullanici_grubu.PROP_IDKEY, pidkey);
+

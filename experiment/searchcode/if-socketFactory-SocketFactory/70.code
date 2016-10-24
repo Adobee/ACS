@@ -1,0 +1,9 @@
+import org.apache.http.conn.scheme.PlainSocketFactory;
+import org.apache.http.conn.scheme.SocketFactory;
+import org.tiny.box.restandroidclient.socket.ssl.SelfSignedSSLSocketFactory;
+public static final String DEFAULT_SECURE_SOCKET_SCHEME = &quot;https&quot;;
+
+public static SocketFactory get(String type) {
+SocketFactory selectedFactory = null;
+if (type.equals(SocketFactorySelector.DEFAULT_PLAIN_SOCKET_SCHEME))
+

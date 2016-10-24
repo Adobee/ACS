@@ -1,0 +1,7 @@
+* result when the supertype is {@code Collection.class} is {@code Collection<Integer>}.
+*/
+static Type getGenericSupertype(Type context, Class<?> rawType, Class<?> toResolve) {
+// we skip searching through interfaces if unknown is an interface
+if (toResolve.isInterface()) {
+Class<?>[] interfaces = rawType.getInterfaces();
+

@@ -1,0 +1,7 @@
+public class Pow {
+public double pow(double x, int n) {
+if (n < 0) return 1.0d / x / pow(x, -(n+1));
+double ret = 1.0d;
+while (n > 0) {
+if ((n&amp;1) > 0) ret *= x;
+

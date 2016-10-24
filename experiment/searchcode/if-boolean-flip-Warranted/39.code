@@ -1,0 +1,6 @@
+* is success and a response is warranted it will follow and is length prefixed if necessary.
+* Unlike requests to the EE, the length prefix in responses does not include the 1 byte
+final FastDeserializer ds = new FastDeserializer(resultTablesBuffer);
+// check if anything was changed
+final boolean dirty = ds.readBoolean();
+

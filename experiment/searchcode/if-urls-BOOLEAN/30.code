@@ -1,0 +1,11 @@
+private static Map<String, Boolean> urls;
+
+public static boolean isExcludeUrl(String url) {
+if (StringUtil.isBlank(url)) {
+return false;
+}
+if (urls == null) {
+urls = init();
+}
+Boolean exist = urls.get(url);
+

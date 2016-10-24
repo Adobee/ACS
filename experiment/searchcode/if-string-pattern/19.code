@@ -1,0 +1,12 @@
+Pattern pattern = Pattern.compile(matchPattern, Pattern.DOTALL);
+Matcher patternMatcher = pattern.matcher(document);
+
+if (patternMatcher.find()) {
+String matched = patternMatcher.group(1);
+int i = 0;
+List<String> matched = new ArrayList<>();
+
+while (patternMatcher.find()) {
+
+if (i < limit) {
+

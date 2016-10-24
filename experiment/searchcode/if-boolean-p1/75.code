@@ -1,0 +1,11 @@
+public static boolean isCycle(MyLinkNode head) {
+if (head == null || head.next == null) {
+return false;
+}
+MyLinkNode p1 = head;
+MyLinkNode p2 = head;
+while (p1 != null &amp;&amp; p1.next != null) {
+p1 = p1.next.next;
+p2 = p2.next;
+if (p1 == p2) {
+

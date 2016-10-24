@@ -1,0 +1,10 @@
+public abstract class ExportableGeometry implements Geometry {
+
+@JsonIgnore
+@Transient
+private double detail = 0; // #points&#39; = #points/2^detail
+int size = (int) Math.ceil(coords.length / (double) step);
+if(size<MIN_SIZE) {
+size = MIN_SIZE;
+step = (int) Math.floor(coords.length / size);
+

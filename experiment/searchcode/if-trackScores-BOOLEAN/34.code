@@ -1,0 +1,5 @@
+* The scan context allows to optimize readers we already processed during scanning. We do that by keeping track
+* of the count per reader, and if we are done with it, we no longer process it by using a filter that returns
+ScanCollector collector = new ScanCollector(readerStates, context.from(), context.size(), context.trackScores());
+Query query = new XFilteredQuery(context.query(), new ScanFilter(readerStates, collector));
+

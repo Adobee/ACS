@@ -1,0 +1,12 @@
+import vrml.*;
+import vrml.field.*;
+
+public class AnchorNode extends GroupingNode {
+
+//// ExposedField ////////////////
+//	abstract functions
+////////////////////////////////////////////////
+
+public boolean isChildNodeType(Node node){
+if (node.isCommonNode() || node.isBindableNode() ||node.isInterpolatorNode() || node.isSensorNode() || node.isGroupingNode() || node.isSpecialGroupNode())
+

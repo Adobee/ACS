@@ -1,0 +1,9 @@
+private class PolarOrder implements Comparator<Point2D> {
+
+public int compare(Point2D q1, Point2D q2) {
+double dy1 = q1.y - y;
+double dy2 = q2.y - y;
+if (dy1 >= 0 &amp;&amp; dy2 < 0)
+return -1;
+if (dy2 >= 0 &amp;&amp; dy1 < 0)
+

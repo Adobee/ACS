@@ -1,0 +1,8 @@
+if (colIndex > 0 &amp;&amp; board[rowIndex][colIndex - 1] == &#39;O&#39;)
+queue.add(new int[]{rowIndex, colIndex - 1});
+//右
+if (colIndex < board[0].length - 1 &amp;&amp; board[rowIndex][colIndex + 1] == &#39;O&#39;)
+queue.add(new int[]{rowIndex, colIndex + 1});
+//上
+if (rowIndex > 0 &amp;&amp; board[rowIndex - 1][colIndex] == &#39;O&#39;)
+

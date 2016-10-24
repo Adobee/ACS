@@ -1,0 +1,10 @@
+package br.edu.ufcg.easyLabCorrection.managers.stage;
+
+import java.util.List;
+
+
+import br.edu.ufcg.easyLabCorrection.DAO.hibernate.DAOFactory;
+SystemStage stage = DAOFactory.DEFAULT.buildSystemStage().getById(id);
+if (stage == null) {
+throw new ObjectNotFoundException(ErrorMsgs.OBJ_NOT_FOUND
+

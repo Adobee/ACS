@@ -1,0 +1,8 @@
+public Object resolveArgument(MethodParameter methodParameter, NativeWebRequest webRequest) throws Exception {
+// 参数对象为com.sendinfo.base.model.Page
+if (methodParameter.getParameterType() == Page.class) {
+String order = Page.ORDER_ASC;
+if (sort.charAt(0) == &#39;-&#39;) {
+fsort = sort.substring(1);
+order = Page.ORDER_DESC;
+

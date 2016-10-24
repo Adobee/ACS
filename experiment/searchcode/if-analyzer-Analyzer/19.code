@@ -1,0 +1,8 @@
+package org.saarus.nlp.token;
+
+import org.saarus.nlp.token.analyzer.TokenAnalyzer;
+IToken[] token = new WordTokenizer(text).allTokens() ;
+if(analyzer != null) {
+for(TokenAnalyzer sel : analyzer) {
+token = sel.analyze(token) ;
+

@@ -1,0 +1,10 @@
+public static LatLng parseLocation(String locationString) {
+String[] latLng = locationString.split(&quot;,&quot;);
+
+if (latLng.length != 2) {
+return null;
+}
+
+double lat = Location.convert(latLng[0]);
+double lng = Location.convert(latLng[1]);
+

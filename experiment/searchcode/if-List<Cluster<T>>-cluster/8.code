@@ -1,0 +1,9 @@
+protected Cluster[] getNewClusters(final Cluster[] clusters) {
+for (int i = 0; i < clusters.length; i++) {
+if (clusters[i].getClusterableList().size() > 0)
+clusters[i] = new Cluster(clusters[i].getClusterMean());
+}
+return clusters;
+}
+}
+

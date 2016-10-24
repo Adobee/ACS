@@ -1,0 +1,9 @@
+for (int i = 0; i < H; ++i) {
+for (int j = i + 2; j < H; ++j) {
+int connectColumns = 0;
+int nearConnectColumns = 0;
+for (int k = 0; k < W; ++k) {
+if (map[i][k] == &#39;.&#39; || map[j][k] == &#39;.&#39;) {
+if (startColumn != -1) {
+int add = (connectColumns * (connectColumns - 1) / 2) - nearConnectColumns;
+

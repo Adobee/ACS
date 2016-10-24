@@ -1,0 +1,14 @@
+
+public class PointerBasedStack {
+
+public Node head;
+public int listSize;
+
+public PointerBasedStack(){
+head = new Node();
+listSize = 0;
+}
+
+public void push(int x){
+System.out.println(&quot;push&quot;);
+

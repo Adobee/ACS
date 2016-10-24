@@ -1,0 +1,15 @@
+public class EqualBinStrategy implements BinStrategy {
+
+private List<Double> values;
+private int binCount;
+
+public EqualBinStrategy(int binCount, List<Double> values) {
+@Override
+public int compare(Double d1, Double d2) {
+
+int retVal = 0;
+
+if (d2 != d1) {
+
+if (d2 > d1) {
+

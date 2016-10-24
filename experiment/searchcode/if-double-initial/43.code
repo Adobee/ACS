@@ -1,0 +1,10 @@
+private double balance;
+
+public Operations(double initialBalance){
+if(initialBalance>=0.0)
+balance=initialBalance;
+}
+
+public double income  (double amount){balance = balance + amount;
+return amount;}
+

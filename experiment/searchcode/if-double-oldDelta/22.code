@@ -1,0 +1,11 @@
+public static double transferDer (double x) {
+if (!acc)
+return 1 - x*x;
+else
+return 1 - Math.tanh(x)*Math.tanh(x);
+double oldDelta = neuron.out_weights[myIndex].deltaWeight;
+
+double newDelta =
+ETA
+* neuron.getOutputVal()
+

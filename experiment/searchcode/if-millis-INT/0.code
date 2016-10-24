@@ -1,0 +1,16 @@
+public abstract class BFixedDurationAnimation extends BAnimation{
+
+protected int _totalMillis;
+protected int _currentMillis;
+
+protected int currentMillis() {
+return _currentMillis;
+}
+
+protected int totalMillis() {
+return _totalMillis;
+}
+
+@Override
+public boolean endReached() {
+

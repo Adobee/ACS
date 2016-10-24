@@ -1,0 +1,9 @@
+public final Boolean getAnswer() { return (Boolean)getResult(); }
+public final void setAnswer(boolean b){
+if (invert) setResult(new Boolean (!b));
+else setResult(new Boolean (b));
+}
+
+public final void invert() { invert=true; }
+public final void setInvert(boolean b) { invert=true; }
+

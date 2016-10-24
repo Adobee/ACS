@@ -1,0 +1,20 @@
+* Jump to a new time.
+*
+* @param elapsedMillis
+*/
+public void setElapsedMillis(long elapsedMillis) {
+if (this.elapsedMillis < elapsedMillis) {
+this.elapsedMillis++;
+update();
+}
+} else {
+this.elapsedMillis = elapsedMillis;
+}
+}
+
+@Override
+public long getElapsedMillis() {
+return elapsedMillis;
+}
+}
+

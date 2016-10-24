@@ -1,0 +1,7 @@
+protected void doExecute(SearchRequest request, ActionListener<SearchResponse> listener) {
+int currentConcurrentSearches = counter.incrementAndGet();
+if (currentConcurrentSearches > maxAllowedConcurrentSearches) {
+// Execute the multi search api and fail if we find an error after executing:
+try {
+int numSearchRequests = randomIntBetween(16, 128);
+

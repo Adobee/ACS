@@ -1,0 +1,15 @@
+trollsums[A] = sum-0.6;
+if (diffX == 0)
+{
+if (diffY < 0 &amp;&amp; a[0] % 2 == 1)
+{
+if (diffY % 2 == 0)
+sum += 4;
+else
+sum += 2;
+}
+
+else if (diffY > 0 &amp;&amp; a[0] % 2 == 0)
+{
+if (diffY % 2 == 0)
+

@@ -1,0 +1,6 @@
+fileList = new ArrayList<String>();
+List arrayList = FileUtil.getListFiles(dir, fileTypes.get(index), true);
+if(arrayList.isEmpty()){
+for(int replaceIndex = 0; replaceIndex<filePathList.size();replaceIndex++){
+filePathList.set(replaceIndex, filePathList.get(replaceIndex).replace(&quot;\\&quot;, &quot;/&quot;));
+

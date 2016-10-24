@@ -1,0 +1,7 @@
+if (B.length < 1) return;
+int endA = m - 1;
+int endB = n - 1;
+for (int end = m + n - 1; end >= 0; end --){
+if (endB < 0) return;
+if (get(A, endA) > get(B, endB)){
+

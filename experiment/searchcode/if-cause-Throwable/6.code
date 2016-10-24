@@ -1,0 +1,8 @@
+public static Throwable getSQLException_Cause(Throwable throwable){
+Throwable return_throw = null;
+if(throwable!=null){
+while (! (throwable instanceof SQLException)){
+throwable = throwable.getCause();
+}
+if(throwable instanceof SQLException){
+

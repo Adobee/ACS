@@ -1,0 +1,10 @@
+public static String toString(long i, int radix, int minDigits) {
+char[] buf = new char[65];
+minDigits = Math.min(buf.length - 1, Math.abs(minDigits));
+
+
+int charPos = buf.length - 1;
+
+boolean negative = (i < 0);
+if (negative) {
+

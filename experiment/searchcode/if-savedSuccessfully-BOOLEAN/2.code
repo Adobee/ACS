@@ -1,0 +1,9 @@
+LOG.debug(&quot;Inside save method; scoreValue = &quot; + scoreValue);
+boolean savedSuccessfully = false;
+final String INSERT_QUERY = &quot;insert into scores(score_value) values (?)&quot;;
+stmt.setFloat(1, scoreValue);
+
+int rows = stmt.executeUpdate();
+if(rows == 1) {
+savedSuccessfully = true;
+

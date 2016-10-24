@@ -1,0 +1,9 @@
+Builder formBuilder = new FormBody.Builder();
+Iterator<String> iterator = keyset.iterator();
+String key;
+if(keyset.size()>1){
+do {
+key = iterator.next();
+if(key!=null){
+formBuilder.addEncoded(key, values.get(key)==null?&quot;&quot;:values.get(key));
+

@@ -1,0 +1,12 @@
+return currentStage;
+}
+
+public void advanceQuest(Action action) {
+if (currentStage.checkActionAdvancers(action) != -1) {
+setCurrentStage(currentStage.checkActionAdvancers(action));
+}
+}
+
+public void advanceQuest(String convo, String pointer) {
+if (currentStage.checkDialogueAdvancers(convo, pointer) != -1){
+

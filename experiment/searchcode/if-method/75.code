@@ -1,0 +1,9 @@
+Method method = null;
+String pName = getPname(field);
+method = getMethod(clazz, field);
+if (method != null) {
+return method;
+}
+method = getMethod(clazz, &quot;get&quot; + pName);
+if (method != null) {
+

@@ -1,0 +1,18 @@
+package com.cj.flipingballs;
+
+public class Tool {
+public double getDistacne(double startX,double startY,double endX,double endY)
+{
+double dis=0;
+if(true)
+{
+dis=Math.sqrt(startX*startX+startY*startY);
+
+}
+
+return dis;
+}
+
+
+}
+

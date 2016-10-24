@@ -1,0 +1,8 @@
+public static int getTotalNumberOfPages(int count, int pageSize) {
+Assert.isTrue(count >= 0 &amp;&amp; pageSize > 0);
+if(count == 0) {
+return 0;
+}
+int totalNumOfPages = count / pageSize;
+if((count % pageSize) > 0) {
+

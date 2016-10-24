@@ -1,0 +1,9 @@
+* @return Whether specified concrete indices should be ignored when unavailable (missing or closed)
+*/
+public boolean ignoreUnavailable() {
+return (id &amp; IGNORE_UNAVAILABLE) != 0;
+*         Also when an alias points to a closed index this option decides if no concrete indices
+*         are allowed.
+*/
+public boolean allowNoIndices() {
+

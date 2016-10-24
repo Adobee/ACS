@@ -1,0 +1,12 @@
+private Camera camera;
+private AutoResetEvent active;
+private boolean keepTakingPictures;
+
+public AndroidCamera() {
+this.camera.takePicture(null, null, new PhotoHandler());
+
+try {
+boolean success = this.active.waitOne(5000);
+
+if (!success) {
+

@@ -1,0 +1,11 @@
+oneTStep(ctxt, t0, tfinal, xgrid, u0, uf);
+}
+
+// one time-step
+public void oneTStep(RTContext ctxt,
+double t, double tend, double[] xgrid,
+int idid = jtoms731(ctxt.threadInx, ctxt, neqn, t, tend,
+ngrid, xgrid[0], xgrid[ngrid-1], u0, y, callbacks());
+
+if (idid < 0) if (idid < 0) throw new Xcept (
+

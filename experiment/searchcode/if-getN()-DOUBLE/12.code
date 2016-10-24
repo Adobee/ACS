@@ -1,0 +1,9 @@
+public Number eval(Expression expr) {
+
+Operand op = expr.getOp();
+if (op == null) return expr.getN().doubleValue();
+
+switch (op) {
+case PLUS:
+return expr.getN().doubleValue() + eval(expr.getExpr()).doubleValue();
+

@@ -1,0 +1,14 @@
+package cryptotools;
+
+public class GcdFinder {
+
+public static int computeGcd(int a, int b) {
+if (a < b) {
+// if a < b, swap a &amp; b
+a ^= b;
+b ^= a;
+a ^= b;
+}
+
+return computeGcdHelper(a, b);
+

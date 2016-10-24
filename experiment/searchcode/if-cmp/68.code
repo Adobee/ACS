@@ -1,0 +1,12 @@
+cmpAd.setPath(dbPath);
+cmpAd.setAdflg(CmpAd.ADFLG_IMG);
+}
+else {
+if (DataUtil.isEmpty(cmpAd.getUrl())) {
+cmpAd.setAdflg(CmpAd.ADFLG_TEXT);
+}
+}
+this.cmpAdService.createCmpAd(cmpAd);
+if (blockId > 0) {
+CmpAdBlock cmpAdBlock = new CmpAdBlock();
+

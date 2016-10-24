@@ -1,0 +1,12 @@
+public MetersPerSec(double entry) {
+
+super(entry);
+}
+
+public MetersPerSec(double entry, double deg) {
+super(entry, deg);
+}
+
+public MetersPerSec(double entry, Direction direction) {
+super(entry, direction);
+

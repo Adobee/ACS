@@ -1,0 +1,13 @@
+package J00;
+
+import java.util.Scanner;
+
+public class J07 {
+int poweroftwo(int n){
+if(n==0)return 1;
+int n;
+while(true){
+System.out.print(&quot;숫자를 입력하시오. (0.종료) : &quot;);
+n=sup.nextInt();
+if(n==0)break;
+

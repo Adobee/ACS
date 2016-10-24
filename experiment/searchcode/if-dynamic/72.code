@@ -1,0 +1,7 @@
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class DynamicVariableSource implements InicializableVariableSource {
+public String getRawValue(String variableName) throws NullPointerException {
+DynamicVariableResolver dynamic = dynamicProperties.get(variableName);
+if (dynamic == null) return null;
+

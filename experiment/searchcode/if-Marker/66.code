@@ -1,0 +1,10 @@
+import com.telenav.more.tool.map.ImgMarker;
+import com.telenav.mtk.views.Activator;
+
+public class MarkerFactory {
+
+public static enum MarkType
+{
+Stop,		// stop marker
+Signal,		// signal marker
+

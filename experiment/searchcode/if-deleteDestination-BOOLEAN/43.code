@@ -1,0 +1,8 @@
+private Map<MessageListener, AbstractMessageListenerContainer> listenerContainerMap = new HashMap<MessageListener, AbstractMessageListenerContainer>();
+
+// configurable parameters
+private boolean servingJms = true;
+private String jmsBrokerUrl = &quot;tcp://localhost:61616&quot;;
+@ConfigurableValue(valueType = &quot;Boolean&quot;, description = &quot;Flag to indicate if this sim server is also the JMS provider&quot;)
+public void setServingJms (boolean servingJms)
+

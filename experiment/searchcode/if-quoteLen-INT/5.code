@@ -1,0 +1,11 @@
+boolean quoting = quoteLen > 0;
+int trimStart = 0;
+while (pos < len) {
+if (quoting)
+{
+if (isQuote(chars, pos, len, quoteStart, quoteLen))
+private boolean isQuote(char[] chars, int pos, int len, int quoteStart, int quoteLen)
+{
+for (int i = 0; i < quoteLen; i++) {
+if ((pos + i >= len) || (chars[(pos + i)] != chars[(quoteStart + i)])) {
+

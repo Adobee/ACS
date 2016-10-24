@@ -1,0 +1,8 @@
+* @see org.kuali.rice.krad.keyvalues.KeyValuesFinder#getKeyValues()
+*/
+@Override
+public List<KeyValue> getKeyValues(ViewModel model,InputField field) {
+ProposalDevelopmentDocument document = ((ProposalDevelopmentDocumentForm)model).getProposalDevelopmentDocument();
+List<KeyValue> keyValues = new ArrayList<KeyValue>();
+if (document.getDocumentHeader().getWorkflowDocument().isEnroute()) {
+

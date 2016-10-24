@@ -1,0 +1,8 @@
+boolean unexpectedStateChange = true;
+
+// This is the regular life cycle of a task
+if (oldState == ExecutionState.CREATED &amp;&amp; newState == ExecutionState.SCHEDULED) {
+unexpectedStateChange = false;
+}
+if (oldState == ExecutionState.SCHEDULED &amp;&amp; newState == ExecutionState.ASSIGNED) {
+

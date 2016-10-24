@@ -1,0 +1,11 @@
+class Population
+{
+Chromosome [] chromosomes;
+
+public Population(int populationSize)
+{
+chromosomes = new Chromosome[populationSize];
+}
+
+public Population(int populationSize, City [] cities)
+

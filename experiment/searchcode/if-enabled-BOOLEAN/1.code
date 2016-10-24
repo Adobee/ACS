@@ -1,0 +1,11 @@
+package actions;
+
+
+public abstract class BaseAction {
+private boolean enabled = false;
+private boolean active = false;
+public void setEnabled(boolean enabled, boolean modifyActive) {
+if (!enabled &amp;&amp; modifyActive)
+active = false;
+this.enabled = enabled;
+

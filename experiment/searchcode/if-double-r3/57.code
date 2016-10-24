@@ -1,0 +1,8 @@
+// The distance between the to-be-test sensor and each other location-fixed sensors
+private double r1, r2, r3;
+
+// Generic situation (based on location)
+public Location getLocationFromDistance(double r1, double r2, double r3){
+double x, y;
+//        x = (r1 * r1 - r2 * r2 + x2 * x2) / (2*x2);
+

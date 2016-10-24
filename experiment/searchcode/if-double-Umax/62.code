@@ -1,0 +1,10 @@
+private static boolean  rotationOverride = false;
+protected static int    rotation;
+private static double   uMin;
+private static double   uMax;
+protected static void prepareRender(RenderBlocks renderBlocks, ForgeDirection side, double x, double y, double z, IIcon icon)
+{
+/* Enforce default floating icons */
+
+if (icon == BlockGrass.getIconSideOverlay() || icon.getIconName().contains(&quot;overlay/overlay_&quot;) &amp;&amp; icon.getIconName().endsWith(&quot;_side&quot;)) {
+

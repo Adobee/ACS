@@ -1,0 +1,9 @@
+import zephyr.plugin.core.internal.dialog.NbStepsDialog;
+
+
+public class NStepsAll extends ControlCommand {
+NbStepsDialog dialog = new NbStepsDialog(Display.getDefault().getActiveShell());
+int nbTimeSteps = dialog.getNumberOfTimeSteps();
+if (nbTimeSteps > 0)
+control.step(nbTimeSteps);
+

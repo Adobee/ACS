@@ -1,0 +1,6 @@
+* @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+*/
+protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+iteration_start = new Integer(CookieManager.matchCookie(cookies, &quot;iteration_start&quot;).getValue()).intValue();
+if(project.getCurrentIteration() - iteration_start > 9){
+

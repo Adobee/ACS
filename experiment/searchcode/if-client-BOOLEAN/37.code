@@ -1,0 +1,13 @@
+return client;
+}
+public void setClient(Client client)
+{
+// Don&#39;t allow someone to replace a client.
+if(this.client != null)
+return;
+this.client = client;
+}
+public boolean Step(int direction)
+{
+boolean result = super.Step(direction); // call Moveables Step
+

@@ -1,0 +1,13 @@
+protected double maxNumbersDifferenceAllowingToLinkThem;
+
+public NumbersSimilarityCriteria() {
+this(1);
+double diff = Math.abs(data1.doubleValue() - data2.doubleValue());
+if(diff <= maxNumbersDifferenceAllowingToLinkThem) {
+return 1 - diff/maxNumbersDifferenceAllowingToLinkThem;
+}
+return 0;
+}
+
+}
+

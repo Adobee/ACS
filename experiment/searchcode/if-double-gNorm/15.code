@@ -1,0 +1,5 @@
+import edu.jhu.hlt.optimize.function.ValueGradient;
+import edu.jhu.prim.Primitives.MutableDouble;
+import edu.jhu.prim.vector.IntDoubleDenseVector;
+public StatusCode proc_progress(double[] x, double[] g, double fx, double xnorm, double gnorm, double step,
+

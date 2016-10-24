@@ -1,0 +1,8 @@
+// retry 5 times, with constant wait
+public class DefaultRetryStrategy implements RetryStrategy {
+
+private int maxRetries = 0;
+private int retries;
+public DefaultRetryStrategy(int maxRetries, int waitDuration,
+Class<? extends Exception> retryableException) {
+

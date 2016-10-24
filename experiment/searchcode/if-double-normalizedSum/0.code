@@ -1,0 +1,10 @@
+You should have received a copy of the GNU Lesser General Public License
+along with jfuzzylite.  If not, see <http://www.gnu.org/licenses/>.
+
+fuzzylite™ is a trademark of FuzzyLite Limited.
+package com.fuzzylite.norm.s;
+
+import com.fuzzylite.norm.SNorm;
+
+public class NormalizedSum extends SNorm {
+

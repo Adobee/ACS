@@ -1,0 +1,9 @@
+public String addReader(@ModelAttribute(&quot;reader&quot;) Reader reader) {
+if(reader.getReaderId() == null){
+readerService.add(reader);
+}else{
+List<Storage> list = reader.getStorage();
+if(list.size()==0){
+readerService.delete(readerId);
+return &quot;redirect:/reader&quot;;
+

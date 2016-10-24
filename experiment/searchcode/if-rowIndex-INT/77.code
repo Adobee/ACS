@@ -1,0 +1,11 @@
+String[][] matrix = new String[HEIGHT][WIDTH];
+
+int index;
+if (HEIGHT <= WIDTH)
+index = HEIGHT-1;
+else
+index = WIDTH-1;
+
+for (int rowIndex = 0; rowIndex < HEIGHT; rowIndex++) {
+for (int colIndex = 0; colIndex < WIDTH; colIndex++) {
+

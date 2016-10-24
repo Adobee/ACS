@@ -1,0 +1,6 @@
+while (true) {  // Keep running the program until -1, which is specified by user input to exit
+if (readInput(scanner) == -1) {
+final List<MRTStation> test1 = GuideFactory.getListOfMRTStationsByLine(t);
+if (test1 != null) {
+showMRTPath(scanner, test1, t);
+

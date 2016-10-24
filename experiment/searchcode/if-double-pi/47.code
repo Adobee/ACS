@@ -1,0 +1,10 @@
+// Normalises an angle to between -pi and pi
+public static double normaliseAngle(double angle)
+{
+
+angle = angle % (2*Math.PI);
+
+if (angle > Math.PI)
+{angle = -Math.PI + (angle%Math.PI);}
+if (angle < -Math.PI)
+

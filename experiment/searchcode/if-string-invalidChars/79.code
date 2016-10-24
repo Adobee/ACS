@@ -1,0 +1,5 @@
+final String appName = validationContext.getApplication().getName();
+final char [] invalidChars = new char[] {&#39;{&#39;, &#39;}&#39;, &#39;[&#39;, &#39;]&#39;, &#39;(&#39;, &#39;)&#39;};
+if (StringUtils.containsAny(appName, invalidChars)) {
+throw new RestErrorException(CloudifyMessageKeys.APPLICATION_NAME_CONTAINS_INVALID_CHARS.getName(),
+

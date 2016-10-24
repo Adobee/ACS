@@ -1,0 +1,9 @@
+View upgradeSlotView;
+
+// Recycle the view if possible
+if (convertView != null) {
+upgradeSlotView = convertView;
+TextView upgradeCost = (TextView) upgradeSlotView.findViewById(R.id.txt_upgrade_points);
+
+if (!upgradeSlot.isEquipped()){
+

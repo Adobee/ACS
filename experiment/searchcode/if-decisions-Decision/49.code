@@ -1,0 +1,8 @@
+* POST  /decisions -> Create a new decision.
+*/
+@RequestMapping(value = &quot;/decisions&quot;,
+method = RequestMethod.POST,
+public ResponseEntity<Decision> createDecision(@Valid @RequestBody Decision decision) throws URISyntaxException {
+log.debug(&quot;REST request to save Decision : {}&quot;, decision);
+if (decision.getId() != null) {
+

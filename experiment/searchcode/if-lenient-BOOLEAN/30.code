@@ -1,0 +1,7 @@
+JsonReader jsonReader = new JsonReader(json);
+JsonElement element = parse(jsonReader);
+if (element.isJsonNull() || jsonReader.peek() == JsonToken.END_DOCUMENT) {
+public JsonElement parse(JsonReader json) throws JsonIOException, JsonSyntaxException {
+JsonElement parse;
+boolean lenient = json.isLenient();
+

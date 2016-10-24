@@ -1,0 +1,8 @@
+this(DEFAULT_IMAGINARY_CHARACTER, realFormat, imaginaryFormat);
+}
+
+public ComplexFormat(java.lang.String imaginaryCharacter) {
+this(imaginaryCharacter, org.apache.commons.math.util.CompositeFormat.getDefaultNumberFormat());
+public void setImaginaryCharacter(java.lang.String imaginaryCharacter) {
+if ((imaginaryCharacter == null) || ((imaginaryCharacter.length()) == 0)) {
+

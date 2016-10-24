@@ -1,0 +1,8 @@
+if (beginDate == null)
+beginDate = &quot;&quot;;
+if (endDate == null)
+endDate = &quot;&quot;;
+String queryText = &quot;select * from COMMON_LOGGER where 1=1&quot;;
+if (!&quot;&quot;.equals(logLevel))
+queryText = queryText + &quot; and LOG_LEVEL=&#39;&quot; + logLevel + &quot;&#39;&quot;;
+

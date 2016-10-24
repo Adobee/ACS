@@ -1,0 +1,5 @@
+private final com.google.common.cache.Cache<String, T> cache;
+
+public MemCache(long expireTime, TimeUnit timeUnit) {
+cache = CacheBuilder.newBuilder().expireAfterWrite(expireTime, timeUnit).build();
+

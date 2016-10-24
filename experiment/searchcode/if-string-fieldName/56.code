@@ -1,0 +1,8 @@
+* Gets the &quot;fieldname&quot; attribute
+*/
+public java.lang.String getFieldname()
+{
+synchronized (monitor())
+target = (org.apache.xmlbeans.SimpleValue)get_store().find_attribute_user(FIELDNAME$0);
+if (target == null)
+

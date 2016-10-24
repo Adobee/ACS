@@ -1,0 +1,13 @@
+public void pollNextTrack() {
+buffer.setEOF(false);
+
+if (!when.isEmpty()) {
+bytesLeft = when.poll();
+} else {
+buffer.put(b, off, len);
+}
+
+public int read(byte[] b, int off, int len) {
+if (bytesLeft > 0) {
+if (bytesLeft < len) {
+

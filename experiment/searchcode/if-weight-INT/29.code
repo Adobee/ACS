@@ -1,0 +1,19 @@
+private double weight;
+
+public Edge(int v, int w, double weight) {
+this.v = v;
+this.w = w;
+this.weight = weight;
+}
+
+int either() {
+
+return v;
+}
+
+int other(int k) {
+return (k == v ? w : v);
+}
+
+double weight() {
+

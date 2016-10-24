@@ -1,0 +1,12 @@
+private CharSequence mTitleAlt = null;
+
+public final void setArguments(@Nullable Bundle bundle, @NonNull CharSequence title) {
+if (bundle == null) {
+bundle.putCharSequence(ARG_TITLE, title);
+super.setArguments(bundle);
+}
+
+@Deprecated
+@Override
+public final void setArguments(Bundle args) {
+

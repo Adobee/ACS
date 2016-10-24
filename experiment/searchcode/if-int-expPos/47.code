@@ -1,0 +1,9 @@
+/* 163 */     int expPos = val.indexOf(&#39;e&#39;) + val.indexOf(&#39;E&#39;) + 1;
+/*     */     String mant;
+/* 165 */     if (decPos > -1)
+/*     */     {
+/*     */       String dec;
+/*     */       String dec;
+/* 167 */       if (expPos > -1) {
+/* 168 */         if (expPos < decPos) {
+

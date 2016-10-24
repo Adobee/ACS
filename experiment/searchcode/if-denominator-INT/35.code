@@ -1,0 +1,10 @@
+private long denominator;
+
+public Number (long numerator, long denominator) {
+this.numerator = numerator;
+return (numerator % primeNumber == 0) &amp;&amp; (denominator % primeNumber == 0);
+}
+
+public Number add(Number number){
+if (denominator == number.denominator)
+

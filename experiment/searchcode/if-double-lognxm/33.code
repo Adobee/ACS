@@ -1,0 +1,12 @@
+* <a href=&quot;http://mathworld.wolfram.com/F-Distribution.html&quot;> F-Distribution</a>, equation (4).</li>
+* </ul>
+*/
+public double cumulativeProbability(double x) {
+
+double ret;
+if(x <= 0) {
+final double denominatorDF = getDenominatorDegreesOfFreedom();
+if(denominatorDF > 4) {
+final double numeratorDF = getNumeratorDegreesOfFreedom();
+final double denomDFMinusTwo = denominatorDF - 2;
+

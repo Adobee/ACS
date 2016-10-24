@@ -1,0 +1,13 @@
+in = new BufferedReader(reader);
+}
+
+public FormatDescription read() throws IOException
+{
+String line;
+do
+{
+line = in.readLine();
+while (line.length() < 1 || line.charAt(0) == &#39;#&#39;);
+String[] items = line.split(&quot;;&quot;);
+FormatDescription desc = new FormatDescription();
+

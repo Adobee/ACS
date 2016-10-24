@@ -1,0 +1,14 @@
+double h = 2*iqr/Math.cbrt(n);
+int numBins = (int) ((max-min)/h);
+
+if(numBins<=0){
+numBins = 1;
+}
+
+return numBins;
+return histogramdataset;
+}
+
+private JFreeChart createChart(IntervalXYDataset intervalxydataset) {
+JFreeChart jfreechart = ChartFactory.createHistogram(title,
+

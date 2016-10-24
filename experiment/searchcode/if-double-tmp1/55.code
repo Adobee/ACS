@@ -1,0 +1,8 @@
+else
+{
+try
+{
+DecimalFormat formatter = new DecimalFormat(&quot;0.00&quot;);
+Double tmp1 = Double.parseDouble(((JTextField)input).getText().trim().replaceAll(&quot;,&quot;,&quot;&quot;));
+if(tmp1 < 0 || tmp1 > 500  )
+

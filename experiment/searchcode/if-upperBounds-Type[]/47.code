@@ -1,0 +1,6 @@
+private List<Type> upperBounds(List<Type> ss) {
+if (ss.isEmpty()) return ss;
+Type head = upperBound(ss.head);
+List<Type> tail = upperBounds(ss.tail);
+if (head != ss.head || tail != ss.tail)
+

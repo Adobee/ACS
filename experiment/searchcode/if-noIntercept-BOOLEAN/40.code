@@ -1,0 +1,7 @@
+public class CheckAuthorityController implements HandlerInterceptor {
+
+@Override
+public boolean preHandle(HttpServletRequest request,
+Integer userId=request.getSession().getAttribute(SysConstants.USER_ID)==null?null:Integer.valueOf(request.getSession().getAttribute(SysConstants.USER_ID).toString());
+if (null == userId) {
+

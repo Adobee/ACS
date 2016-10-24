@@ -1,0 +1,9 @@
+public AbstractRange<?> expand(final Object value) {
+final Long longValue = Numbers.toLong(value);
+if (longValue == null) {
+public Long next(final Object value) {
+if (value == null) {
+return null;
+} else {
+final Long longValue = Numbers.toLong(value);
+

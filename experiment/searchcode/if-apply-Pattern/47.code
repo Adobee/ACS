@@ -1,0 +1,6 @@
+final Pattern p2 = p.getOperand2();
+Pattern tem = memoApply(p1).applyForPattern(
+new ApplyAfterFunction(builder) {
+Pattern apply(Pattern x) {
+return builder.makeGroup(x, p2);
+

@@ -1,0 +1,7 @@
+public List<LocalDate> calcBusinessDaysOfEndOfQuarter(Set<LocalDate> holidays, Month beginningOfPeriod) {
+if (holidays.isEmpty()) return new LinkedList<>();
+LocalDate minDay = ImplUtil.minDay(holidays);
+@Override
+public List<LocalDate> calcBusinessDaysOfEndOfMonth(Set<LocalDate> holidays) {
+if (holidays.isEmpty()) return new LinkedList<>();
+

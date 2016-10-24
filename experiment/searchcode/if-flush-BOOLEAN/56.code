@@ -1,0 +1,13 @@
+return this.folder;
+}
+
+public long getLastModified() {
+if (isCurrent() &amp;&amp; isNeedsFlush()) {
+return this.current;
+}
+
+/**
+* @return the needsFlush
+*/
+public boolean isNeedsFlush() {
+

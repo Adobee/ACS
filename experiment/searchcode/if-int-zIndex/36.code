@@ -1,0 +1,10 @@
+import java.util.ArrayList;
+
+/**
+* Created by Xiaozm on 2016/1/26.
+*/
+public class ZIndexOfOneMonth {
+public int heatTotal = 0;
+public int allTimes = 0;
+public ArrayList<ZIndex> zIndexes = new ArrayList<>();
+

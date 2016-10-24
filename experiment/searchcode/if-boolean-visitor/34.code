@@ -1,0 +1,9 @@
+return visitor.visit((OrderedSetType) o, context, this);
+}
+}
+}
+if (o instanceof BooleanExpression &amp;&amp; !booleanExpressionVisitors.isEmpty()) {
+for (BooleanExpressionVisitor<T, R> visitor : booleanExpressionVisitors) {
+if (visitor.appliesTo((BooleanExpression) o, context)) {
+return visitor.visit((BooleanExpression) o, context, this);
+

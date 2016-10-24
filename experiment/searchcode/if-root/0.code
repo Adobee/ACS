@@ -1,0 +1,4 @@
+if root == null {
+return
+}
+

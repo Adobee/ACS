@@ -1,0 +1,8 @@
+public PayError(Map<String, String> map, String prefix) {
+int i = 0;
+if(map.containsKey(prefix + &quot;receiver&quot; + &quot;.amount&quot;)){
+String newPrefix = prefix + &quot;receiver&quot; + &quot;.&quot;;
+this.receiver =  new Receiver(map, newPrefix);
+}
+if(map.containsKey(prefix + &quot;error&quot; + &quot;.errorId&quot;)){
+

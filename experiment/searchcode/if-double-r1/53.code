@@ -1,0 +1,16 @@
+private static int fibo(double n) throws ControlFlowException {
+if (n < 2) {
+return 1;
+}
+int r1;
+BigInt _r1;
+try {
+r1 = fibo(n -1);
+} catch(ControlFlowException e) {
+r2 = 0;
+_r2 = e.value;
+}
+int r3;
+BigInt _r3;
+if (_r1 == null &amp;&amp; _r2 == null) {
+

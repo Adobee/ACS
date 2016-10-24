@@ -1,0 +1,7 @@
+private void startServers(int... nodeIds) throws IOException {
+for(int nodeId: nodeIds) {
+if(nodeId < NUM_SERVERS) {
+StorageEngine<ByteArray, byte[], byte[]> store = getVoldemortServer(2).getStoreRepository()
+.getStorageEngine(nextSlop.getStoreName());
+if(nextSlop.getOperation().equals(Slop.Operation.PUT)) {
+

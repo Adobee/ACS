@@ -1,0 +1,11 @@
+import java.util.List;
+
+public class CompositeValidationCallback implements ValidationCallback {
+
+private final List<ValidationCallback> callbackList = new ArrayList<ValidationCallback>();
+public CompositeValidationCallback addCallback(final ValidationCallback callback) {
+if (callback != null) {
+callbackList.add(callback);
+}
+return this;
+

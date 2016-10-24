@@ -1,0 +1,11 @@
+IEvent<DataChangedEventArgs> dataChanged = null;
+int batchLevel = 0;
+boolean isDataDirty = false;
+
+@Override
+public void fireDataChangedEvent() {
+IEventHandler<DataChangedEventArgs> handler) {
+if (dataChanged == null)
+return;
+dataChanged.removeEventHandler(handler);
+

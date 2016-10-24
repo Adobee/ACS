@@ -1,0 +1,13 @@
+package it.camera.hackathon.textmining;
+
+public class SimpleStopWordsFilter implements IWordFilter {
+public boolean accept(String value) {
+for(String stopWord : _stopWords)
+if(stopWord.equals(value))
+return false;
+
+return true;
+}
+
+}
+

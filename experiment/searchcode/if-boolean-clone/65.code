@@ -1,0 +1,9 @@
+public abstract T clone(T toClone);
+
+public static Clone<?> get(Object owner){
+if( ServiceCore.get(Object.class, Clone.class) == null )
+return (Clone<?>)ServiceCore.get(owner, Clone.class);
+}
+
+public static boolean set( Object owner, Clone<?> service ){
+

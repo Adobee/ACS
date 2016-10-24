@@ -1,0 +1,12 @@
+double var_Y = Y / REF_Y; // REF_Y = 100.000
+double var_Z = Z / REF_Z; // REF_Z = 108.883
+
+if (var_X > 0.008856) {
+double C = cmy.C;
+double M = cmy.M;
+double Y = cmy.Y;
+
+double var_K = 1.0;
+
+if (C < var_K) {
+

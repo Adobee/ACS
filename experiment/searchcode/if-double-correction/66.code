@@ -1,0 +1,8 @@
+* <br> The values are determined by testing.
+*/
+double correctionFactor;
+private final double smallCorrection = 0.7 ;
+private final double smallerCorrection = 0.4;
+private final double bigCorrection =1.7 ;
+private final double hugeCorrection = 30;
+

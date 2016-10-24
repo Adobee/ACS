@@ -1,0 +1,10 @@
+* Digit 判断下一个项是否是一个表示数字的字符.它仅接受 Character/char.
+*/
+public class Digit extends Parsec<Character, Character> {
+public Character parse(State<Character> s) throws EOFException, ParsecException {
+Character c = s.next();
+if(Character.isDigit(c)){
+return c;
+}else{
+String message = String.format(&quot;Expect %s is digit&quot;, c);
+

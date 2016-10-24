@@ -1,0 +1,10 @@
+* @author nilcy
+*/
+@SuppressWarnings(&quot;all&quot;)
+public class BooleanUtilsTest {
+@Test
+public void test() {
+assertThat(BooleanUtils.and(new boolean[] { true }), is(true));
+assertThat(BooleanUtils.toBooleanDefaultIfNull(null, false), is(false));
+assertThat(BooleanUtils.toBooleanObject(0), is(Boolean.FALSE));
+

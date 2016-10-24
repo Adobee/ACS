@@ -1,0 +1,11 @@
+if (bsfList.size() == 0) {
+return;
+}
+else {
+int size = bsfList.size();
+boolean allNull = true;
+Node n = bsfList.remove();
+if (n != null) {
+allNull = false;
+bsfList.add(n.left);
+

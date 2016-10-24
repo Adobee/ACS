@@ -1,0 +1,12 @@
+public abstract class AbstractWrapperQuery extends Query {
+protected Query _query;
+protected boolean _rewritten;
+
+public AbstractWrapperQuery(Query query) {
+public AbstractWrapperQuery(Query query, boolean rewritten) {
+this._query = query;
+this._rewritten = rewritten;
+}
+
+public Query getQuery() {
+

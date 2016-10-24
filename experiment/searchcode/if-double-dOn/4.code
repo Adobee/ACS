@@ -1,0 +1,13 @@
+package kops.gui;
+
+public class QuadraticEquation {
+
+private double a;
+private double b;
+private double c;
+
+public QuadraticEquation(double a, double b, double c) {
+
+// don&#39;t put this in
+/*if(a <= 0 || b <= 0){	// not possible to calculate roots
+

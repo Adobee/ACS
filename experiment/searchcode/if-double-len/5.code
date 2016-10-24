@@ -1,0 +1,8 @@
+double[] len;
+
+public double gravitationalAcceleration(int[] x, int[] y, int T) {
+n = x.length - 1;
+sinA = new double[n];
+len = new double[n];
+for (int i = 0; i < n; ++i) {
+

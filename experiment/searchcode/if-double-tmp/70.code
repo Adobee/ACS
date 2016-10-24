@@ -1,0 +1,14 @@
+package main;
+
+public class No50 {
+
+public double myPow(double x, int n) {
+if (n == 0)
+return 1;
+if (n == 1)
+return x;
+if (x == Double.NaN)
+return Double.NaN;
+if (x == 1)
+return 1;
+

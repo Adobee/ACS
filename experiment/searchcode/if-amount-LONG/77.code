@@ -1,0 +1,7 @@
+public void setAmount(double amount) throws Exception {
+long temp = (long) (amount * FACTOR);
+if (temp > MAX_AMOUNT) throw new SecurityException();
+public void add(Coin co) throws Exception {
+if (co == null) return;
+long temp = this.amount + co.getFixedPointAmount();
+

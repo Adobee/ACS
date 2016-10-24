@@ -1,0 +1,7 @@
+Movement best = null;
+double minDiff = Double.MAX_VALUE;
+for (Movement m : movements) {
+double diff = Movement.getDifference(m.last, last);
+if (minDiff > diff) {
+best = m;
+

@@ -1,0 +1,8 @@
+public Problem14() {
+long max = 0;
+long result = 0;
+for (long i = 1; i < 1000000; i++) {
+long count = collatz(i);
+long oldMax = max;
+max = Math.max(count, max);
+

@@ -1,0 +1,8 @@
+public static Column create(int columnType){
+Column column = null;
+
+try{
+if(columnType==1){
+column = (Column)CommonColumn.class.newInstance();
+}else if(columnType==2){
+

@@ -1,0 +1,13 @@
+ast = FixSimplify(fraction(5, 3));
+check(ast, &quot;5/3&quot;);
+}
+
+public void testRubi010() {
+IAST ast;
+ast = AbortRubi(Integrate);
+check(ast, &quot;§sin[a+b*x]^3&quot;);
+}
+
+public void testSqrtSin() {
+check(&quot;Integrate(Sqrt(a*Sin(x)^2),x)&quot;, &quot;-Sqrt(a*Sin(x)^2)*Cot(x)&quot;);
+

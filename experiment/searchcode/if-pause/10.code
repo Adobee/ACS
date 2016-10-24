@@ -1,0 +1,8 @@
+int x=(int)event.getX();
+int y=(int)event.getY();
+if(event.getAction()==MotionEvent.ACTION_DOWN){
+if(x>=pauseX&amp;&amp;x<=pauseX+pauseW&amp;&amp;y>=pauseY&amp;&amp;y<=pauseY+pauseH){
+pauseIndex=1;
+return true;
+}else if(x>=bulletX&amp;&amp;x<=bulletX+bulletW&amp;&amp;y>=bulletY&amp;&amp;y<=bulletY+bulletH){
+

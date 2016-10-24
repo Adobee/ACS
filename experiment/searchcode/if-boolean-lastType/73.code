@@ -1,0 +1,10 @@
+lastToken = new TokenKeyword(tk.substring(0, 1), tk, currentLineNumber);			// Get the first character as a type
+lastType = RESERVED_TYPE;
+}
+else if (Pattern.matches(VARIABLE, tk)) {
+lastToken = new TokenVariable(&quot;v&quot;, tk, currentLineNumber);							// Variable type is &#39;v&#39; and char value is token itself
+lastType = VARIABLE_TYPE;
+}
+else if (Pattern.matches(INTEGER, tk)) {
+lastToken = new TokenInteger(&quot;i&quot;, tk, Integer.parseInt(tk), currentLineNumber);		// Integer type is &#39;i&#39;, char value is token itself and int value is token&#39;s integer
+

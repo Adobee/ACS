@@ -1,0 +1,9 @@
+.addCallAdapterFactory(RxJavaCallAdapterFactory.create())
+.build();
+}
+
+public static RetrofitManager getInstance() {
+if (retrofitManager == null) {
+synchronized (RetrofitManager.class) {
+if (retrofitManager == null) {
+

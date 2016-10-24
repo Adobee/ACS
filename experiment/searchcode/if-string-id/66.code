@@ -1,0 +1,10 @@
+class IDTitle
+{
+private String ID;
+private String Title;
+
+public String getID() { return ID; }
+public String toString() { return Title; }
+
+IDTitle(String NewID, String NewTitle)
+

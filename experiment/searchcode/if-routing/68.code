@@ -1,0 +1,8 @@
+public RoutingTable validateRaiseException(MetaData metaData) throws RoutingValidationException {
+RoutingTableValidation validation = validate(metaData);
+if (!validation.valid()) {
+throw new RoutingValidationException(validation);
+* @throws IndexNotFoundException If the index passed does not exists
+*/
+public List<ShardRouting> allShards(String index)  {
+

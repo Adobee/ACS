@@ -1,0 +1,10 @@
+private boolean success;
+
+private String message;
+
+private TAuOperInfo oper;
+
+private List<TAuOperInfo> operInfoList;
+operInfoList = baseDao.myfindByHql(&quot;from TAuOperInfo where operName=?&quot;,oper.getOperName());
+if(operInfoList.size()>0){
+

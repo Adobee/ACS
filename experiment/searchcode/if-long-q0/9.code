@@ -1,0 +1,14 @@
+m1 = 10000;
+b = 31415821;
+a = longToInt(System.currentTimeMillis());
+
+}
+
+public int mult(int p, int q){
+int p1,p0,q1,q0;
+
+p1=p / m1;
+p0=p % m1;
+
+q1=q / m1;
+

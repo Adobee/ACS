@@ -1,0 +1,11 @@
+for (int j = 0; j < 18; j++) {
+size *= 2;
+for (int p = 0; p < size; p++) {
+x[p] = rnd.nextInt(200);
+}
+double tstart = System.nanoTime();
+sort(x, 0, size - 1);
+double tend = System.nanoTime();
+
+System.out.println((tend - tstart) / 1000000000f);
+

@@ -1,0 +1,12 @@
+private String _tableName;
+private String _columnName;
+private boolean _didCreate;
+private LinkedList<Tuple> _results;
+return Tuple.createTupleAndSchema(resultString, &quot;Result&quot;);
+}
+
+@Override
+public List<Tuple> getData() {
+if (!_didCreate) {
+_results.add(createIndex());
+

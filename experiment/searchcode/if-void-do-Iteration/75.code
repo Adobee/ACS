@@ -1,0 +1,13 @@
+this.linkStatsConfigGroup = config.linkStats();
+}
+
+@Override
+public void notifyIterationEnds(IterationEndsEvent event) {
+this.doReset = true;
+}
+}
+
+@Override
+public void notifyIterationStarts(IterationStartsEvent event) {
+if (this.doReset) {
+

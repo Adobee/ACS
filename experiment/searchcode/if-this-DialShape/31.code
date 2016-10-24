@@ -1,0 +1,10 @@
+return this.name.hashCode();
+}
+
+
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(DialShape.CIRCLE)) {
+return DialShape.CIRCLE;
+}
+else if (this.equals(DialShape.CHORD)) {
+

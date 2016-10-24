@@ -1,0 +1,13 @@
+public class RomanNumbers {
+
+public String getRomanNumFromInt(int intVal){
+
+String result = &quot;&quot;;
+
+if (intVal < 1 || intVal >= 4000) {
+intVal -= 1000;
+}
+if (intVal >= 900) {
+result += &quot;CM&quot;;
+intVal -= 900;
+

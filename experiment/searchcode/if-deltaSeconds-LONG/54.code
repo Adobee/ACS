@@ -1,0 +1,5 @@
+long perSecondRxValue = getPerSecondValue(last.getRxValue(), current.getRxValue(), deltaSeconds);
+long perSecondTxValue = getPerSecondValue(last.getTxValue(), current.getTxValue(), deltaSeconds);
+private long getPerSecondValue(long lastValue, long currentValue, float deltaSeconds) {
+return (long) ((currentValue - lastValue) / deltaSeconds);
+

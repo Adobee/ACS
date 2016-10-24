@@ -1,0 +1,9 @@
+public String toString(){ return &quot;==&quot; ; }
+
+@Override
+public boolean eval(Val v1, Val v2) {
+if(!(v1.getType() == v2.getType())) {
+return false;
+}
+if(v1.getType() == Val.UNKNOW || v2.getType() == Val.UNKNOW) {
+

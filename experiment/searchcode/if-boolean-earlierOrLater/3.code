@@ -1,0 +1,7 @@
+public long adjustOffset(long instant, boolean earlierOrLater) {
+// a bit messy, but will work in all non-pathological cases
+long afterStart = instant - overlapStart;
+if (afterStart >= diff) {
+// currently in later offset
+return earlierOrLater ? instant : instant - diff;
+

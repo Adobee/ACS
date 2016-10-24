@@ -1,0 +1,7 @@
+public boolean isPersisted(Rule rule) {
+Iterable<Rule> entryIterable = ruleRepository.findAll();
+
+boolean exists = false;
+for (Rule rule1 : entryIterable) {
+if (rule1.equals(rule)) {
+

@@ -1,0 +1,7 @@
+import com.zai360.portal.test.util.DynamicQuery;
+import com.zai360.portal.test.util.QueryEnum;
+import com.zai360.portal.test.util.Sql4RealLength;
+HttpServletRequest request = ServletActionContext.getRequest();
+for(QueryEnum query:QueryEnum.values()){
+if(request.getParameter(&quot;serialVersionUID&quot;).equals(query.getId())){
+

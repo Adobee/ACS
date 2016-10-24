@@ -1,0 +1,11 @@
+public static boolean isStereotypeProperty(EObject eObject) {
+boolean isStereotypeProperty = false;
+if(eObject instanceof Property) {
+Property property = (Property)eObject;
+public static boolean hasType(Property property) {
+boolean hasType = false;
+if(property.getType() != null) {
+hasType = true;
+}
+return hasType;
+

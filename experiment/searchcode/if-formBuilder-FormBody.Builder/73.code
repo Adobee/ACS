@@ -1,0 +1,8 @@
+KeyValuePair... args) throws IOException
+{
+FormBody.Builder formBuilder = new FormBody.Builder()
+.add(&quot;wm_command&quot;, Integer.toString(command.getValue()));
+for (KeyValuePair arg : args)
+{
+formBuilder.add(arg.getKey(), arg.getValue());
+

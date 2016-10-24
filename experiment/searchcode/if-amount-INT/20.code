@@ -1,0 +1,8 @@
+private String amountAsString = null;
+private int amountInCents = 0;
+
+public Amount(){
+public Amount(String amountAsString) {
+this.amountAsString = amountAsString;
+if (amountAsString == null || amountAsString.trim().isEmpty()){
+

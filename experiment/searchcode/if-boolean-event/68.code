@@ -1,0 +1,14 @@
+public class AndEventFilter<E> implements EventHandler<E, Boolean> {
+
+private List<EventHandler<E, Boolean>> handlers = new ArrayList<EventHandler<E, Boolean>>();
+for (EventHandler<E, Boolean> handler : handlers) {
+Boolean response = handler.handle(event);
+if (response != null &amp;&amp; response) {
+return true;
+}
+}
+return false;
+}
+
+}
+

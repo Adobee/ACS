@@ -1,0 +1,6 @@
+public String getDisplayName(final String ID, final boolean daylight, final int style, final Locale locale) {
+if (ID == null) {
+String name = daylight ? zoneString[4] : zoneString[2];
+if (ID.equalsIgnoreCase(name)) {
+return getDisplayName(zoneString, daylight, style);
+

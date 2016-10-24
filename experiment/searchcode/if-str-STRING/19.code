@@ -1,0 +1,13 @@
+import org.jetbrains.annotations.*;
+
+class Test {
+void bar(String str) {
+if (str == null) {
+String foo1(String str) {
+if (str == null);
+return (str);
+}
+
+String foo2(String str) {
+if (str == null);
+

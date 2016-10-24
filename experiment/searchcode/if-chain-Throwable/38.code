@@ -1,0 +1,5 @@
+public static Matcher<? extends Throwable> causalChainContains(final Class<?> cls) {
+return new TypeSafeMatcher<Throwable>() {
+for (Throwable throwable : causalChain) {
+if(cls.isAssignableFrom(throwable.getClass())){
+

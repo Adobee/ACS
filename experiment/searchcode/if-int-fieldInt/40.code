@@ -1,0 +1,8 @@
+import newtonERP.orm.field.type.FieldInt;
+
+/**
+* Entité PayablePeriod du module finances: représente les périodes de paie pour
+Vector<Field<?>> fieldsInit = new Vector<Field<?>>();
+FieldInt primaryKey = new FieldInt(&quot;Numéro&quot;, getPrimaryKeyName());
+primaryKey.setNaturalKey(true);
+

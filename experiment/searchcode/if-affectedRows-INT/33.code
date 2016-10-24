@@ -1,0 +1,7 @@
+int expectRows = rows.length==1 ? rows[0] : 1;
+int affectedRows = getSqlSession().update(statement, t);
+if(expectRows != affectedRows){
+int expectRows = rows.length==1 ? rows[0] : 1;
+int affectedRows = getSqlSession().delete(statement, t);
+if(expectRows != affectedRows){
+

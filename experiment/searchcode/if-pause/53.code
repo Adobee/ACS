@@ -1,0 +1,14 @@
+//ONLY ONE INSTANCE
+public static PauseCommand getInstance(){
+if(pauseCommand == null)
+pauseCommand = new PauseCommand();
+public void actionPerformed(ActionEvent e){
+if(game.isPaused()){
+game.resumeGame();
+}
+else if(!game.isPaused()){
+game.pauseGame();
+}
+}
+}
+

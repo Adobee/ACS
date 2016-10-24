@@ -1,0 +1,10 @@
+public abstract class AbstractChainDbAction<T> implements IDbAction<T>{
+
+private AbstractChainDbAction<?> nextAction = null;
+
+public AbstractChainDbAction<?> addAction(AbstractChainDbAction<?> nextAction){
+System.out.println(&quot;===========>&quot; + session);
+this.action(session);
+if(this.nextAction != null){
+if(!this.nextAction.excuteNodeAction(session))
+

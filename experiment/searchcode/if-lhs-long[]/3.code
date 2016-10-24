@@ -1,0 +1,9 @@
+if (lhs.getClass().isArray()) {
+if ((lhs instanceof long[])) {
+append((long[]) lhs, (long[]) rhs);
+public CompareToBuilder append(long lhs, long rhs) {
+if (result != 0) {
+return this;
+}
+result = (lhs > rhs ? 1 : lhs < rhs ? -1 : 0);
+

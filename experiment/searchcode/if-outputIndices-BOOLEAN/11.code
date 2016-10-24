@@ -1,0 +1,10 @@
+@Property(name=&quot;Non-periodic&quot;)
+protected boolean nonPeriodic = true;
+@Property(name=&quot;Data alpha&quot;)
+protected int dataAlpha = 255;
+public Color getColor(double[] inputs, double[] outputs, boolean data, int index, int[] inputIndices, int[] outputIndices) {
+if (outputs.length != 1) {
+return null;
+}
+if (outputIndices.length != 1) {
+

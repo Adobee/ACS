@@ -1,0 +1,8 @@
+public boolean saveByCacheKey(final String cacheKey, final Bitmap bitmap) throws IOException {
+boolean savedSuccessfully = false;
+try {
+File imageFile = getFileByCacheKey(cacheKey);
+if (!savedSuccessfully) {
+if (imageFile.exists()) {
+imageFile.delete();
+

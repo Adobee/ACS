@@ -1,0 +1,7 @@
+int dayToUse = iChronology.getDayOfMonth(instant, thisYear, thisMonth);
+int maxDay = iChronology.getDaysInYearMonth(yearToUse, monthToUse);
+if (dayToUse > maxDay) {
+monthToUse = Math.abs(monthToUse);
+int remMonthToUse = (int)(monthToUse % iMax);
+if (remMonthToUse == 0) {
+

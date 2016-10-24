@@ -1,0 +1,9 @@
+public static int rotateDigits(int x, int numDigits)
+{
+if (numDigits == 1)
+return x;
+int testNumDigits = (int)Math.floor(Math.log10(x)) + 1;
+if (numDigits > testNumDigits)
+return x * 10;
+int first = x / (int)Math.pow(10, numDigits - 1);
+

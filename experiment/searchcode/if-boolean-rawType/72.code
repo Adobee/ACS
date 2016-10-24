@@ -1,0 +1,9 @@
+@SuppressWarnings(&quot;unchecked&quot;) // types must agree
+public static <T> T createMockObject(Type type) {
+Class<T> rawType;
+
+if (type instanceof ParameterizedType) {
+} else if (long.class.isAssignableFrom(rawType) || Long.class.isAssignableFrom(rawType)) {
+return 10L;
+} else if (boolean.class.isAssignableFrom(rawType) || Boolean.class.isAssignableFrom(rawType)) {
+

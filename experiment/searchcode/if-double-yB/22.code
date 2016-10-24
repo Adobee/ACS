@@ -1,0 +1,9 @@
+double ys = in.readDouble();
+double xb = in.readDouble();
+double yb = in.readDouble();
+double x1 = xo - xb;
+double y1 = yo - yb;
+double x2 = xs - xb;
+double y2 = ys - yb;
+double a = Math.hypot(x1, y1);
+

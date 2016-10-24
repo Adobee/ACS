@@ -1,0 +1,8 @@
+public static void configure(Settings settings, boolean resolveConfig) {
+if (loaded) {
+return;
+Environment environment = new Environment(settings);
+
+Settings.Builder settingsBuilder = settingsBuilder();
+if (resolveConfig) {
+

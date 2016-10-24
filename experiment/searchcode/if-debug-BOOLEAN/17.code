@@ -1,0 +1,10 @@
+private final static String DEBUG = &quot;debug&quot;;
+
+public static boolean debug = false;
+
+public static void init() {
+debug = Boolean.parseBoolean(Settings.crtInstance.getValue(DEBUG));
+
+if (debug)
+System.out.println(&quot;Debug mode enabled.&quot;);
+

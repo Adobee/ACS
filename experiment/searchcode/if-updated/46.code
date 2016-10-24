@@ -1,0 +1,9 @@
+public class UpdatedComparator implements Comparator<Product> {
+
+@Override
+public int compare(Product o1, Product o2) {
+if (o1.getUpdated() == null || o2.getUpdated() == null) {
+return 0;
+}
+if (o1.getUpdated().after(o2.getUpdated())) {
+

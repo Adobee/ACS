@@ -1,0 +1,13 @@
+public class FunctionDeclaration extends ProceduralDeclaration {
+
+private Type returnType;
+
+public Type getReturnType() {
+this.returnType = returnType;
+}
+
+@Override
+public void remove(final Node node) {
+super.remove(node);
+if (this.returnType == node) {
+

@@ -1,0 +1,9 @@
+private final Collection<OutputStream> out = new LinkedList<>();
+
+public AggregateOutputStream() {
+}
+
+public void register(OutputStream outputStream) {
+synchronized (out) {
+out.add(outputStream);
+

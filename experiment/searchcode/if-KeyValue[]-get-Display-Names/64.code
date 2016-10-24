@@ -1,0 +1,8 @@
+List<KeyValue> keyValues = new ArrayList<KeyValue>();
+if (document.getDocumentHeader().getWorkflowDocument().isEnroute()) {
+List<Role> proposalRoles = proposalRoleService.getRolesForDisplay();
+
+
+for (Role role : proposalRoles) {
+KeyValue pair = new ConcreteKeyValue(role.getName(), role.getName());
+

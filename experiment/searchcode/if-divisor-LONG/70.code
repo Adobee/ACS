@@ -1,0 +1,7 @@
+return (int) divide2(dividend, divisor)[0];
+}
+
+private long[] divide2(long dividend, long divisor) {
+if (dividend < divisor) return new long[] {0, dividend};
+if (dividend < divisor + divisor) return new long[] {1, dividend-divisor};
+

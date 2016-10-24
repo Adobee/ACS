@@ -1,0 +1,8 @@
+negativeBoost = parser.floatValue();
+} else if (&quot;boost&quot;.equals(currentFieldName)) {
+boost = parser.floatValue();
+throw new QueryParsingException(parseContext.index(), &quot;[boosting] query requires &#39;negative&#39; query to be set&#39;&quot;);
+}
+if (negativeBoost == -1) {
+throw new QueryParsingException(parseContext.index(), &quot;[boosting] query requires &#39;negative_boost&#39; to be set&#39;&quot;);
+

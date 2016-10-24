@@ -1,0 +1,11 @@
+public int reverse(int x) {
+long y = x;
+boolean neg = y < 0;
+if (neg) y = -y;
+long z = 0;
+while (y > 0) {
+z = z * 10 + y % 10;
+y /= 10;
+}
+if (neg) z = -z;
+

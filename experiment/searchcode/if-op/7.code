@@ -1,0 +1,7 @@
+BasicPattern bgp = new BasicPattern();
+if (OpBGP.isBGP(left)) {
+bgp.addAll(((OpBGP) left).getPattern());
+} else {
+if (!(left instanceof OpTable))
+Log.warn(this, &quot;mergeToBGP left not valid BGP &quot; + left.toString());
+

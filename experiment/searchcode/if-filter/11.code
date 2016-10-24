@@ -1,0 +1,14 @@
+public CompositeFilter<T> add(Filter<T> filter) {
+if (filter != null) {
+this.filterList.add(filter);
+}
+return this;
+for (Filter filter : filterList) {
+if (!filter.apply(obj)) {
+return false;
+}
+}
+return true;
+}
+}
+

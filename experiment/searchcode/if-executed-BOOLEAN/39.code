@@ -1,0 +1,13 @@
+public class Skip extends ActionStatement {
+
+public boolean executed=false;
+
+@Override
+public String toString() {
+SelfWormExpression.getWorm().getProgram().stop();
+this.executed=true;}
+}
+
+@Override
+public boolean isexecuted() {
+

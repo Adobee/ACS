@@ -1,0 +1,14 @@
+protected boolean modified;
+protected boolean exists=false;
+
+public boolean save() {
+boolean success = true;
+if(!exists()){
+return success;
+}
+
+protected abstract boolean update();
+protected abstract boolean insert();
+protected abstract boolean exists();
+}
+

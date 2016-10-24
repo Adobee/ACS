@@ -1,0 +1,10 @@
+public String analysisURL() {
+int beginPosition = 0;
+int endPosition = 0;
+String oneUrl = &quot;&quot;;
+while (true) {
+endPosition = webBody.indexOf(&quot;&#39;>&quot;, beginPosition);
+if (beginPosition == -1 || endPosition == -1)
+break;
+oneUrl = tieba + &quot;/&quot; + webBody.substring(beginPosition+6, endPosition);
+

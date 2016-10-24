@@ -1,0 +1,11 @@
+public UpdateInfo(UpdateMsg msg) {
+updateHtml = msg.getUpdateHtml();
+if (msg.hasUpdateTitle())
+bldr.setUpdateHtml(updateHtml);
+if (updateTitle != null)
+bldr.setUpdateTitle(updateTitle);
+return bldr.build();
+}
+
+public String getUpdateTitle() {
+

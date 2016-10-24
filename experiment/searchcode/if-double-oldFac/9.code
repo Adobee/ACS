@@ -1,0 +1,7 @@
+/** Limit for fitness value. */
+private double stopFitness;
+/** Stop if x-changes larger stopTolUpX. */
+final RealMatrix xold) {
+// minor correction if hsig==false
+double oldFac = hsig ? 0 : ccov1Sep * cc * (2. - cc);
+

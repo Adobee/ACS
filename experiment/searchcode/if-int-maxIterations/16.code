@@ -1,0 +1,8 @@
+public static Color getColorForN (int n, int maxIterations, double zoom) {
+int r = 0, g = 0, b = 255;
+
+double part = ((double) n / maxIterations) * (double) (maxIterations / 4);
+part = part * f(part);
+
+if (part > 1) {
+

@@ -1,0 +1,6 @@
+while (counter < ts.train.length) {
+if (!ts.stack.isEmpty() &amp;&amp; (int)ts.stack.getFirst() - 1 == ts.sorted.get(ts.sorted.size() - 1)) {
+ts.sorted.add((int)ts.stack.pop());
+} else if (counter < ts.train.length) {
+System.out.println(&quot;Push : &quot; + ts.train[counter]);
+

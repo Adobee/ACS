@@ -1,0 +1,8 @@
+det2(p1.z-p0.z,p1.x-p0.x,p2.z-p0.z,p2.x-p0.x),
+det2(p1.x-p0.x,p1.y-p0.y,p2.x-p0.x,p2.y-p0.y));
+double outNorm = Math.sqrt(outNormal.x*outNormal.x+outNormal.y*outNormal.y+outNormal.z*outNormal.z);
+return a * det2(e, f, h, i) - b * det2(d, f, g, i) + c * det2(d, e, g, h);
+}
+
+public static double ccw(Point p0, Point p1, Point p2, Point pw) {
+

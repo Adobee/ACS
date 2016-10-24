@@ -1,0 +1,15 @@
+SupportRecord sr = currentSupport.get(typeSupport.getInteractionType());
+if(sr != null)
+sr.setSupport(typeSupport);
+else
+currentSupport.put(typeSupport.getInteractionType(), sr = new SupportRecord(typeSupport.getInteractionType(), typeSupport.getInteractionTypeName(), false, typeSupport));
+for(SupportRecord sr : currentSupport.values())
+{
+if(sr.isSupported())
+ret.add(sr.support);
+}
+return ret;
+}
+
+public void addListener(InteractionSupportListener listener)
+

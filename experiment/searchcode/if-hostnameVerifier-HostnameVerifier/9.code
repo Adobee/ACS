@@ -1,0 +1,9 @@
+import java.security.UnrecoverableKeyException;
+
+import javax.net.ssl.HostnameVerifier;
+import javax.net.ssl.KeyManager;
+import javax.net.ssl.SSLSocketFactory;
+final HostnameVerifier hostnameVerifier;
+
+public SslConfiguration(KeyManager keyManager, TrustManager trustManager, HostnameVerifier hostnameVerifier) {
+

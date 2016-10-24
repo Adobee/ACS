@@ -1,0 +1,10 @@
+final LinkedMap<String, Rule> rules;
+if (newRule.isLazyRule())
+rules = lazyRules;
+else
+rules = triggeredRules;
+return rules;
+final String key = rule.getRuleKey();
+Rule existingRule = rules.get(key);
+if (existingRule != null)
+

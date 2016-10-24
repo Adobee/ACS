@@ -1,0 +1,14 @@
+private static volatile FlashControl instance;
+
+private Camera camera;
+private Parameters params;
+
+private boolean flashOn;
+public boolean isFlashOn() {
+return flashOn;
+}
+
+public void resetCamera() {
+if (camera == null) {
+try {
+

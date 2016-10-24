@@ -1,0 +1,8 @@
+this.mAccountName = accountName;
+}
+
+protected abstract boolean syncImpl(List<UserAction> actions, boolean hasPendingLocalData);
+// to decide if the local content was changed or not. If it was, we replace the remote
+// content.
+boolean hasPendingLocalData = false;
+

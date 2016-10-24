@@ -1,0 +1,18 @@
+public int compare(List<String> l1, List<String> l2) {
+int compare = CompareUtils.compareSize(l1, l2);
+if (compare!=0) {
+return compare;
+compare = l1.get(i).compareTo(l2.get(i));
+if (compare!=0) {
+return compare;
+}
+}
+return 0;
+}
+
+@Deprecated
+public int compareTo(List<String> arg0) {
+return 0;//TODO
+}
+}
+

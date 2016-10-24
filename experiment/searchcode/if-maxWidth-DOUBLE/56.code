@@ -1,0 +1,8 @@
+public Double visit(Layered l) {
+Double width;
+Double maxWidth = 0.0;
+Shape[] shapes = l.getShapes();
+for (Shape shape: shapes) {
+width = shape.accept(new WidthVisitor());
+if (width > maxWidth) {
+

@@ -1,0 +1,13 @@
+package org.fuzzybot.player.FuzzySet;
+
+public class Gamma {
+private float alpha, beta;
+public float getValue(float x) {
+float mi;
+
+if(x < alpha) {
+return 0;
+}
+else if(x >= alpha &amp;&amp; x <= beta) {
+mi = (x - alpha) / (beta - alpha);
+

@@ -1,0 +1,16 @@
+package syntechtics.jxpression.functions;
+
+public class Add extends AbstractFunction<Double> {
+public Double evaluate() {
+if(t==null) {
+double sum = 0.0;
+for(Function<?> f : arguments) {
+sum+=(double)f.evaluate();
+}
+t = sum;
+}
+return t;
+}
+
+}
+

@@ -1,0 +1,11 @@
+public AccountState(boolean isCopy, int depth) {
+super(isCopy, depth);
+}
+
+@Override
+protected ShaMapInner makeInnerOfSameClass(int depth) {
+LedgerHashes skip = createOrUpdateSkipList(skipIndex);
+Vector256 hashes = skip.hashes();
+
+if (hashes.size() > 256) throw new AssertionError();
+

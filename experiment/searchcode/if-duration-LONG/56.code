@@ -1,0 +1,14 @@
+public class Duration {
+
+public long value;
+private long mInitialDuration;
+private float factor = 1.0f;
+public void setFactor(float f) {
+if (factor != f) {
+factor = f;
+value = (long) (mInitialDuration * f);
+}
+}
+
+}
+

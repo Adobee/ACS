@@ -1,0 +1,14 @@
+byte[] read_buf = new byte[12];
+
+try
+{
+bais.read(read_buf);
+bais.mark(0);
+
+boolean passed = true;
+
+if (bais.mark != read_buf.length)
+{
+passed = false;
+System.out.println(&quot;The mark variable is wrong.  Expected &quot; +
+

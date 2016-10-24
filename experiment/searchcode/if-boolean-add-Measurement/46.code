@@ -1,0 +1,8 @@
+SIUnit sum  = this.measurement.add(other.measurement);
+return new Volume(sum, Unit.LITRE);
+}
+
+public int compare(Volume other){
+if(measurement.equals(other.measurement)) return 0;
+return measurement.isGreater(other.measurement) ? 1 : -1;
+

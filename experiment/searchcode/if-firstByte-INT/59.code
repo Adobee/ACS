@@ -1,0 +1,8 @@
+throw new IllegalArgumentException(&quot;Do not understand IPv6 addresses!&quot;);
+}
+int firstByte = address[0];
+if ((firstByte &amp; 0x80) == 0) {
+return &#39;A&#39;;
+}
+else if ((firstByte &amp; 0xC0) == 0x80) {
+

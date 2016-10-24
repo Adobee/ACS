@@ -1,0 +1,10 @@
+queueThis();
+}
+
+@Override
+protected void execute() throws Throwable {
+if (env.isOpen()) {
+final int transactionTimeout = env.transactionTimeout();
+if (transactionTimeout != 0) {
+final long creationTimeBound = System.currentTimeMillis() - transactionTimeout;
+

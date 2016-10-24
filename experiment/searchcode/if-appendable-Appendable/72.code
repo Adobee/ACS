@@ -1,0 +1,10 @@
+for (int byteIndex = offset, i = 0; byteIndex < length; byteIndex++, i++) {
+if (i % this.columnCount == 0) {
+if (this.includeHeader) {
+newLine(appendable);
+appendable.append(&quot; | &quot;);
+} else if (byteIndex != offset) {
+newLine(appendable);
+}
+} else {
+

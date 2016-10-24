@@ -1,0 +1,9 @@
+@Override
+public void applyTo( Shape shape ) {
+double newDistance = parentPivot.distanceTo( shape );
+if( newDistance == 0 ) {
+VectorSprite vectorSprite = (VectorSprite) shape;
+if( vectorSprite != null ) {
+double dDistance = newDistance - distance;
+vectorSprite.dX += ( parentPivot.getX() - shape.getX() ) * dDistance;
+

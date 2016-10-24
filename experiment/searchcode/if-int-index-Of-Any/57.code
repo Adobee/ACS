@@ -1,0 +1,13 @@
+public void add(Comparable newEntry)
+{
+lastIndex++;
+
+if (lastIndex >= heap.length)
+doubleArray(); // expand array
+
+int newIndex = lastIndex;
+Comparable orphan = heap[rootIndex];
+int largerChildIndex = 2*rootIndex; // index of left child, if any
+
+while (!done &amp;&amp; (largerChildIndex <= lastIndex) )
+

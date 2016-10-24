@@ -1,0 +1,10 @@
+int type = imp.getType();
+RGBImage = type==ImagePlus.COLOR_RGB;
+boolean snapshotChanged = RGBImage &amp;&amp; previousSnapshot!=null &amp;&amp; ((ColorProcessor)ip).getSnapshotPixels()!=previousSnapshot;
+maxLabel.setText(IJ.d2s(max, digits));
+}
+}
+
+void updateScrollBars(Scrollbar sb, boolean newRange) {
+if (sb==null || sb!=contrastSlider) {
+

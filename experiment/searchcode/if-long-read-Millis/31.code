@@ -1,0 +1,10 @@
+* @param waitTimeMillis the number of milliseconds
+*/
+protected static void delay(long waitTimeMillis) {
+Display display = Display.getCurrent();
+// If this is the UI thread,
+// then process input.
+
+if (display != null) {
+long endTimeMillis = System.currentTimeMillis() + waitTimeMillis;
+

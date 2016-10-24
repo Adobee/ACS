@@ -1,0 +1,11 @@
+* 获取当前jvm的版本号
+* @return
+*/
+private static float getJavaVersionAsFloat() {
+if (JAVA_VERSION_TRIMMED == null) {
+* 检测最低要求的jvm版本号
+* @param requiredVersion
+* @return
+*/
+public static boolean isJavaVersionAtLeast(float requiredVersion) {
+

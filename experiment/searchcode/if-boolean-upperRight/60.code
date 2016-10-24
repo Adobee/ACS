@@ -1,0 +1,8 @@
+private Set<Integer> upperright = new HashSet<>();
+
+public int totalNQueens(int n) {
+if (n == 0)     return 0;
+for(int j=0; j<n; j++) {
+if (columns.contains(j)
+|| upperleft.contains(row-j) || upperright.contains(row+j))
+

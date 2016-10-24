@@ -1,0 +1,13 @@
+public class OperationResponse implements Exchange {
+
+public final boolean isSuccessful;
+
+/**
+* Create a new OperationResponse.
+* @param isSuccessful whether the client has successfully joined the room.
+private OperationResponse(boolean isSuccessful) {
+this.isSuccessful = isSuccessful;
+}
+
+static final public OperationResponse SUCCESS = new OperationResponse(true);
+

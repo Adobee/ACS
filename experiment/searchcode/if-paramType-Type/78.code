@@ -1,0 +1,11 @@
+return new .Gson.Types.GenericArrayTypeImpl(paramType);
+}
+
+public static Type canonicalize(Type paramType)
+{
+if ((paramType instanceof Class))
+{
+paramType = (Class)paramType;
+if (paramType.isArray()) {
+paramType = new .Gson.Types.GenericArrayTypeImpl(canonicalize(paramType.getComponentType()));
+

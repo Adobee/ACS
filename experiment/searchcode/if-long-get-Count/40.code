@@ -1,0 +1,11 @@
+static HashMap<Long, Long> map = new HashMap<Long, Long>();
+
+public static long collatz(long n) {
+long origN = n;
+int count = 0;
+while (!map.containsKey(n)) {
+count++;
+if (n % 2 == 0) {
+n = n / 2;
+} else {
+

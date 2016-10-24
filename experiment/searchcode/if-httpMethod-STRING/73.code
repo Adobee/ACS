@@ -1,0 +1,10 @@
+public static final HttpMethod CONNECT = new HttpMethod(&quot;CONNECT&quot;, true);
+private static final Map<String, HttpMethod> methodMap = new HashMap();
+methodMap.put(CONNECT.toString(), CONNECT);
+}
+
+public static HttpMethod valueOf(String name)
+{
+if (name == null) {
+throw new NullPointerException(&quot;name&quot;);
+

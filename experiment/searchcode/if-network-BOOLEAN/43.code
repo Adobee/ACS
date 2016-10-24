@@ -1,0 +1,10 @@
+public NetworkConnection(ConnectivityManager connMgr, NetworkInfo networkInfo) {
+this.connMgr = connMgr;
+this.networkInfo = networkInfo;
+
+}
+
+public boolean isConnected(){
+networkInfo = connMgr.getActiveNetworkInfo();
+if (networkInfo != null &amp;&amp; networkInfo.isConnected())
+

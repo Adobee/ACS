@@ -1,0 +1,18 @@
+meta = m;
+
+if (m > 16 || m < 0)
+meta = 0;
+
+}
+
+public boolean equals(Object o) {
+if (!(o instanceof BlockData))
+return false;
+
+if (((BlockData) o).block != block || ((BlockData) o).meta != meta)
+return false;
+
+return true;
+}
+}
+

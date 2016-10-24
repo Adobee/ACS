@@ -1,0 +1,5 @@
+if (!isLongTimeEvenySend &amp;&amp; (System.currentTimeMillis() - lastAcceptedTime > STEP)) {
+listener.noAcceptLongTime();
+if ((System.currentTimeMillis() - lastAcceptedTime <= STEP)) {
+isLongTimeEvenySend = false;
+

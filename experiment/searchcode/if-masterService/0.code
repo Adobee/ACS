@@ -1,0 +1,12 @@
+package BBDD2.trabajo.singleton;
+
+import BBDD2.trabajo.service.MasterService;
+
+public class ServiceFactory {
+public static MasterService getMasterService() {
+if (masterService == null)
+masterService = new MasterService();
+return masterService;
+}
+}
+

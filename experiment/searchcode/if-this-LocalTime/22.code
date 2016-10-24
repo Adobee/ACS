@@ -1,0 +1,9 @@
+public MethodSyncCounter() {
+this.time = () -> LocalTime.now().withSecond(0).withNano(0);
+curTime = time.get();
+}
+
+public synchronized long increment() {
+LocalTime time = this.time.get();
+if (!time.equals(curTime)) {
+

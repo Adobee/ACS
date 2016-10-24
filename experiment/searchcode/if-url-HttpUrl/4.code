@@ -1,0 +1,10 @@
+public HtmlDocument fetchDocument(AbstractUrl url) throws IOException {
+if (!(url instanceof HttpUrl)) {
+throw new IllegalArgumentException(&quot;url must be an instance of HttpUrl&quot;);
+}
+
+HttpUrl httpUrl = (HttpUrl) url;
+
+URL urlObject;
+try {
+

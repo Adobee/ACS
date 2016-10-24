@@ -1,0 +1,8 @@
+public class ToDoDetailActivity extends Activity implements OnItemSelectedListener{
+private boolean editTodo;
+private boolean dataChanged;
+private long originalId;
+private void checkDataChanged(){
+if(!this.dataChanged){
+this.dataChanged = !(this.originalName.equals(this.name.getText().toString()));
+

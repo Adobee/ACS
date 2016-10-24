@@ -1,0 +1,8 @@
+jsonGenerator.writeNumberField(&quot;id&quot;, cashFlow.getId());
+jsonGenerator.writeNumberField(&quot;amount&quot;, cashFlow.getAmount());
+if(cashFlow.getEffectiveDate() != null) {
+jsonGenerator.writeObjectField(&quot;effectiveDate&quot;, cashFlow.getEffectiveDate());
+}
+if(cashFlow.getDescription() != null) {
+jsonGenerator.writeObjectField(&quot;description&quot;, cashFlow.getDescription());
+

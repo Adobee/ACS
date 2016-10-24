@@ -1,0 +1,7 @@
+public class SimpleEstimator implements ErrorEstimator {
+private double lastResult = Double.NaN;
+private double estimate = Double.NaN;
+public void log(long pointsEvaluated, double currentResult) {
+if (pointsEvaluated >= nextStop) {
+estimate = Math.abs(lastResult - currentResult);
+

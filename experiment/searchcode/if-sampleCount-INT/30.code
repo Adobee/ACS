@@ -1,0 +1,11 @@
+private final byte[][][] ring;
+private final int capacity;
+private int sampleCount = 0;
+private int newPos = 0;
+* @return
+*/
+public synchronized int indexOfOldest() {
+if (sampleCount <= capacity) {
+return 0;
+} else {
+

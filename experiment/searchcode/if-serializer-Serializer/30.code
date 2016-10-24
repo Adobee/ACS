@@ -1,0 +1,19 @@
+* All rights reserved.
+*/
+/*
+* Copyright (c) 2010, Remko Tronçon.
+* All rights reserved.
+*/
+package com.isode.stroke.serializer;
+
+import com.isode.stroke.elements.Payload;
+for (PayloadSerializer serializer : serializers_) {
+if (serializer.canSerialize(payload)) {
+return serializer;
+}
+}
+}
+return null;
+}
+}
+

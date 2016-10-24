@@ -1,0 +1,7 @@
+* <li>{@link org.unicase.emfstore.esmodel.versioning.events.impl.RevertEventImpl#getRevertedChangesCount <em>Reverted
+* Changes Count</em>}</li>
+int oldRevertedChangesCount = revertedChangesCount;
+revertedChangesCount = newRevertedChangesCount;
+if (eNotificationRequired())
+eNotify(new ENotificationImpl(this, Notification.SET, EventsPackage.REVERT_EVENT__REVERTED_CHANGES_COUNT,
+

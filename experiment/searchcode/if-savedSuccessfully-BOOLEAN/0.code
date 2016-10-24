@@ -1,0 +1,7 @@
+public static boolean saveCredsToPreferences(Context mContext, String userId, String accessToken) {
+boolean savedSuccessfully = false;
+editor.putString(Contants.ACCESS_TOKEN, accessToken);
+savedSuccessfully = editor.commit();
+
+if (savedSuccessfully) {
+

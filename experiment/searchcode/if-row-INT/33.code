@@ -1,0 +1,17 @@
+public PascalRow(int N)
+{
+assert(N >= 0);
+
+n = N;
+if (n == 0)
+System.out.println(&quot;1&quot;);
+else
+printRow(1, 1);
+}
+
+private void printRow(int... row)
+{
+if (row[1] == n)
+{
+for (int i : row)
+

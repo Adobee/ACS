@@ -1,0 +1,8 @@
+public final boolean equals(Object objectToTest) {
+if (objectToTest == this) {
+return true;
+}
+if (objectToTest == null || !(objectToTest instanceof QName)) {
+QName qName = (QName) objectToTest;
+if (this.localPart.equals(qName.localPart) &amp;&amp; this.namespaceURI.equals(qName.namespaceURI)) {
+

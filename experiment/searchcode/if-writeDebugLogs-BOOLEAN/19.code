@@ -1,0 +1,8 @@
+private static volatile boolean writeDebugLogs = false;
+private static volatile boolean writeLogs = true;
+
+public static void d(String paramString, Object... paramVarArgs)
+{
+if (writeDebugLogs) {
+log(3, null, paramString, paramVarArgs);
+

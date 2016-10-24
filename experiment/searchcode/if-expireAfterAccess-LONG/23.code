@@ -1,0 +1,7 @@
+public RedisCache(String name, AbstractCacheFactory cacheFactory, long capacity,
+long expireAfterWrite, long expireAfterAccess,
+ICacheEntrySerializer cacheEntrySerializer) {
+long expireAfterWrite = getExpireAfterWrite();
+long expireAfterAccess = getExpireAfterAccess();
+if (expireAfterAccess > 0 || expireAfterWrite > 0) {
+

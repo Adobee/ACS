@@ -1,0 +1,8 @@
+_summaryCalculatorFactory = summaryCalculatorFactory;
+}
+
+public int getStatisticsType(Values rowValues, Values columnValues, PivotField dataField) {
+if (columnValues instanceof RunningSummaryValues) {
+if (columnValues instanceof SummaryValues) {
+if (((SummaryValues) columnValues).getSummaryType() == PivotConstants.SUMMARY_MEAN) {
+

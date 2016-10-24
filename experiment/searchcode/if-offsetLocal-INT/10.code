@@ -1,0 +1,5 @@
+// get the offset at instantLocal (first estimate)
+int offsetLocal = timeZone.getOffset(instantLocal);
+int offset = timeZone.getOffset(instantLocal - offsetLocal);
+// if the offsets differ, we must be near a DST boundary
+

@@ -1,0 +1,8 @@
+public class DirHandler {
+
+public static boolean createUserDir(final String dirName) throws IOException {
+final File homeDir = new File(System.getProperty(&quot;user.home&quot;));
+final File dir = new File(homeDir, dirName);
+if (!dir.exists() &amp;&amp; !dir.mkdirs()) {
+throw new IOException(&quot;Unable to create &quot; + dir.getAbsolutePath());
+

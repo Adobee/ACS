@@ -1,0 +1,10 @@
+TimeUnit anotherTimeUnit = times.unit;
+
+TimeUnit lowTu = lowTimeUnit(timeUnit, anotherTimeUnit);
+
+if (lowTu == TimeUnit.NANOSECONDS) {
+return MICROSECONDS(this.toMicros() + times.toMicros());
+}
+if (lowTu == TimeUnit.MILLISECONDS) {
+return MILLISECONDS(this.toMillis() + times.toMillis());
+

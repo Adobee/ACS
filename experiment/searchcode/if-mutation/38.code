@@ -1,0 +1,9 @@
+return consensusName + &quot; &quot; + this.getMutation().toString();
+}
+
+@Override
+public int compareTo(AlignmentMutation alignmentMutation) {
+if (this.getMutation().getMutationType().compareTo(alignmentMutation.getMutation().getMutationType()) < 0) {
+return -1;
+} else if (this.getMutation().getMutationType().compareTo(alignmentMutation.getMutation().getMutationType()) > 0) {
+

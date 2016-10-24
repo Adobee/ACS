@@ -1,0 +1,8 @@
+if(fileLength == null) {
+return null;
+}
+if(fileLength < SizeUnit.KB) {
+return fileLength + &quot;B&quot;;
+} else if(fileLength < SizeUnit.MB) {
+return String.format(&quot;%.1fKB&quot;, fileLength / SizeUnit.K);
+

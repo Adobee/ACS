@@ -1,0 +1,10 @@
+package com.test.retry;
+
+public class StepRetryPolicy {
+
+private int maxRetries;
+private int intervalMS;
+public StepRetryPolicy(int maxRetries, int intervalMS, int multiplier) {
+if(maxRetries < 0) {
+throw new IllegalArgumentException(&quot;maxRetries must be 0 or greater&quot;);
+

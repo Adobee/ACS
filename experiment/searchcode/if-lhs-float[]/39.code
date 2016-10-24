@@ -1,0 +1,8 @@
+private SessionContext context;
+
+public float add(float lhs, float rhs) {
+Principal principal = context.getCallerPrincipal();
+System.out.println(principal.getName());
+
+float result = lhs + rhs;
+

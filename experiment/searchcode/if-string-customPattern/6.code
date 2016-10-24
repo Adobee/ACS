@@ -1,0 +1,8 @@
+this(c, errorMessageRes, null);
+}
+
+public PhoneValidator(Context c, int errorMessageRes, String customPattern) {
+super(c, errorMessageRes);
+if (!TextUtils.isEmpty(customPattern)) {
+PHONE_PATTERN = Pattern.compile(customPattern);
+

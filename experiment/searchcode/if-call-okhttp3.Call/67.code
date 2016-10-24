@@ -1,0 +1,9 @@
+package net.alorse.applistgrability.provider;
+
+
+import java.io.IOException;
+
+import okhttp3.Headers;
+Response response = client.newCall(request).execute();
+if (!response.isSuccessful()) throw new IOException(&quot;Unexpected code &quot; + response);
+

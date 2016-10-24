@@ -1,0 +1,11 @@
+public class MandelbrotFunction implements Function<Complex, Double>  {
+final private int maxIterations;
+
+public MandelbrotFunction(final int maxIterations) {
+this.maxIterations = maxIterations;
+}
+
+@Override
+public Double apply(Complex z) {
+int i = 0;
+

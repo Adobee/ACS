@@ -1,0 +1,10 @@
+private final String expectedType;
+
+protected HistoryEventTypeMatcher(String expectedType) {
+super();
+this.expectedType = expectedType;
+protected boolean matchesSafely(HistoryEvent item,
+Description mismatchDescription) {
+boolean match = expectedType.equals(item.getEventType());
+if(!match){
+

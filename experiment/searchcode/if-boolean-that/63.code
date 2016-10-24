@@ -1,0 +1,12 @@
+return true;
+}
+};
+}
+
+/** Return a predicate function that always returns false. */
+public static <A> Function<A, Boolean> nothing() {
+public Boolean apply(A a) {
+for (Function<A, Boolean> f : fs) {
+if (!f.apply(a))
+return false;
+

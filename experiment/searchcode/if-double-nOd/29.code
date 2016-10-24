@@ -1,0 +1,14 @@
+public LinkedVector() {
+}
+
+@Override
+public double getElement(int index) {
+if (index >= size)
+throw new VectorIndexOutOfBoundsException(&quot;index > size&quot;);
+return goToElement(index).element;
+}
+
+@Override
+public void setElement(int index, double value) {
+if (index >= size)
+

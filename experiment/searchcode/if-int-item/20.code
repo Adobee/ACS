@@ -1,0 +1,10 @@
+public ItemStack getItem(int index) {
+if (index > items.length || index < 0)
+{
+return null;
+}
+return items[index];
+}
+public void setItem(int index, int item){
+if (index > items.length || index < 0)
+

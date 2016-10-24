@@ -1,0 +1,11 @@
+import com.jwonders.ops.ecs.domain.Constants;
+
+public class DomainFactory {
+
+public DomainFactory() {
+}
+
+public ActivityDomain getDomain(String domainName) {
+ActivityDomain activityDomain = null;
+if (!StringUtils.isBlank(domainName)) {
+

@@ -1,0 +1,6 @@
+OkHttpClient  client = new OkHttpClient.Builder()
+.build();
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(Constants.FOOD_BASE_URL).newBuilder();
+urlBuilder.addQueryParameter(&quot;key&quot;, API_KEY);
+

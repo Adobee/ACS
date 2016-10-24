@@ -1,0 +1,11 @@
+import com.jhlabs.map.proj.ProjectionException;
+import java.awt.geom.Point2D;
+
+/**
+* First derivatives for a projection. Based on proj4.
+* @param h
+*/
+public final void compute(Projection projection, double lam, double phi, double h) {
+
+if (lam + h > Math.PI) {
+

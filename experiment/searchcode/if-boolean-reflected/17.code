@@ -1,0 +1,9 @@
+protected int getModifiers(ReflectedConstructor<T> obj) {
+return obj.getModifiers();
+}
+
+@Override
+protected boolean isAnnotationPresent(ReflectedConstructor<T> obj,
+protected boolean hasParameterTypes(ReflectedConstructor<T> obj, Class<?>[] parameterTypes) {
+final Enumerable<ReflectedParameter> parameters = obj.getParameters();
+

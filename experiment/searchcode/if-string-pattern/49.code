@@ -1,0 +1,19 @@
+class FindPattern implements Strategy {
+
+String pattern;
+
+FindPattern(String aPattern) {
+pattern = aPattern;
+}
+
+public boolean execute(TrieNode node) {
+String trieWord = node.getWord();
+
+if(trieWord.contains(pattern)) {
+return true;
+}
+return false;
+}
+
+}
+

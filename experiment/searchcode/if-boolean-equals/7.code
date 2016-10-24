@@ -1,0 +1,13 @@
+public static Object eval(Object o ){
+
+if( 	&quot;this&quot;.equals((String)o) &amp;&amp;
+&quot;(&quot;.equals((String)o) &amp;&amp;
+&quot;)&quot;.equals((String)o) ){
+return true;
+}
+
+
+if( 	&quot;this&quot;.equals((String)o) &amp;&amp;
+&quot;(&quot;.equals((String)o) &amp;&amp;
+((Boolean)ArgumentList.eval(o)) &amp;&amp;
+

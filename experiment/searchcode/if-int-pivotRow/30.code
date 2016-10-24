@@ -1,0 +1,10 @@
+protected void convertPivotToOne(int pivotRow, int pivotColumn){
+double pivot = transformed[pivotRow][pivotColumn];
+if(pivot!=1)
+for(int c=0; c<transformed[0].length; c++)
+{
+int pivotRow = findPivot(c, lastPivotRow);
+if(pivotRow>=0)
+{
+if(pivotRow>lastPivotRow+1)
+

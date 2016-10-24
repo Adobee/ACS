@@ -1,0 +1,6 @@
+ManagerRhStatus existingManagerRhStatus = managerRhStatusDAO.findManagerRhStatusByPrimaryKey(managerrhstatus.getId());
+
+if (existingManagerRhStatus != null) {
+if (existingManagerRhStatus != managerrhstatus) {
+existingManagerRhStatus.setId(managerrhstatus.getId());
+

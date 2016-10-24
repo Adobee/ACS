@@ -1,0 +1,11 @@
+root = insert(root, value);
+}
+void remove(int value) {
+remove(root, value);
+}
+Node remove(Node root, int value) {
+if (root == null) return null;
+if (value < root.value) {
+root.left = remove(root.left, value);
+return root;
+

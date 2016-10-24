@@ -1,0 +1,13 @@
+private MemberInfo memberInfo;
+public JoinController()
+{
+this(new MemberInfo());
+}
+
+public JoinController(MemberInfo memberInfo)
+public boolean addMember()		//회원목록에 회원을 추가하는 메소드
+{
+if(MemberInfoList.addMemberInfoList(memberInfo)!=null)
+{
+MemberFileSaveController saveCtrl = new MemberFileSaveController(&quot;MemberInfoData.txt&quot;,memberInfo);
+

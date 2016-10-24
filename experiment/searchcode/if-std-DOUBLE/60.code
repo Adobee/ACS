@@ -1,0 +1,11 @@
+import StdLib.StdRandom;
+import StdLib.StdStats;
+
+public class Ex_1_1_32 {
+
+private static int getInterval(double v, int n, double l, double r) {
+if (v < l || v >= r)
+return -1;
+else
+return (int) (n * (v - l) / (r - l));
+

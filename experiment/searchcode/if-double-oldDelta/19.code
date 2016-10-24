@@ -1,0 +1,9 @@
+boolean stop = false;
+double oldDelta = Double.MAX_VALUE;
+double[] sum = new double[breakpoints.length + 1];
+found = true;
+}
+}
+if (!found) {
+double aux = trainingSet[i][j] - r[breakpoints.length];
+

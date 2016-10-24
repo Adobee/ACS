@@ -1,0 +1,8 @@
+int aextradigit = 0;
+int bextradigit = 0;
+if (a.exp < b.exp) {
+aextradigit = a.align(b.exp);
+/* Call round to test for over/under flows */
+final int excp = result.round(aextradigit + bextradigit);
+if (excp != 0) {
+

@@ -1,0 +1,6 @@
+//    private static int populationSize = StaticConfig.getPopulationSize();
+//    private IChromosome[] population;
+//    private void initRandom() {
+//        population = new IChromosome[populationSize];
+//        for (int i = 0; i < populationSize; i++) {
+

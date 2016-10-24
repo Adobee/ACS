@@ -1,0 +1,9 @@
+org.apache.lucene.search.Query categoryQuery = null;
+if (category != null) {
+if (!category.isEmpty()) {
+categoryQuery = queryBuilder.keyword().onField(&quot;category&quot;).matching(category).createQuery();
+break;
+case &quot;BETWEEN&quot;:
+if (stockTo != null) {
+stockQuery = queryBuilder.range().onField(&quot;quantity&quot;).from(stock).to(stockTo).createQuery();
+

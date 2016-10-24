@@ -1,0 +1,10 @@
+double v = TypeInference.toDouble(value);
+
+//Summing the columns
+if(XdotJ.containsKey(j)==false) {
+int k=XdotJ.size();
+int n=XIdot.size();
+
+//Calculating Chisquare score
+double ChisquareScore=0.0;
+

@@ -1,0 +1,7 @@
+final double mu = getNumericalMean();
+final double sig = Math.sqrt(getNumericalVariance());
+final boolean chebyshevApplies;
+if (lowerBound == Double.NEGATIVE_INFINITY) {
+if (chebyshevApplies) {
+lowerBound = mu - sig * Math.sqrt((1. - p) / p);
+

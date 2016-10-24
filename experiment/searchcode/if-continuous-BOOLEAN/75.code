@@ -1,0 +1,11 @@
+private final Comparator<T> comparator;
+
+private ContinuousValueRange(T min, T max, Comparator<T> comparator) {
+
+if(comparator==null)
+return upperBoundary.map(boundary -> new Boolean(comparator.compare(t, boundary)<=0))
+.orElseGet(() -> Boolean.TRUE);
+}
+
+public static <T> ContinuousValueRangeBuilder<T> builder(){
+

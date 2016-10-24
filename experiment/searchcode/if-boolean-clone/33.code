@@ -1,0 +1,13 @@
+public void setClones(List<CloneImpl> clones) {
+this.clones = clones;
+}
+
+public void addClone(CloneImpl clone) {
+if (!exist(clone)) {
+clone.setClassId(id);
+clones.add(clone);
+}
+}
+
+private boolean exist(CloneImpl clone) {
+

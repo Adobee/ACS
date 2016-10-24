@@ -1,0 +1,14 @@
+public class DelayedThunk<R> implements Box<R>, ResolvingThunk<R>, Serializable {
+
+private R _val;
+private boolean _initialized;
+
+public DelayedThunk() {
+_initialized = false;
+
+}
+
+
+public R value() {
+if (!_initialized) { throw new IllegalStateException(&quot;DelayedThunk is not initialized&quot;); }
+

@@ -1,0 +1,6 @@
+* utility method to fail the given election context under the cluster state thread
+*/
+private synchronized void failContextIfNeeded(final ElectionContext context, final String reason) {
+if (electionContext == context) {
+stopElectionContext(reason);
+

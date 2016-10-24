@@ -1,0 +1,10 @@
+return new BooleanPredicate() {
+@Override
+public boolean evaluate(final boolean current) {
+return current == value;
+}
+};
+}
+
+public static BooleanPredicate newNotEqualsPredicate(final boolean value) {
+

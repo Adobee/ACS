@@ -1,0 +1,13 @@
+throw new Exception(&quot;No argument supplied.&quot;);
+}
+
+boolean setAdditive = input > 100;
+
+Secret secret = new NonAdditiveSecret();
+
+if(setAdditive){
+secret = new AdditiveSecret();
+}
+
+boolean isAdditive = checkForAdditive(secret, input);
+

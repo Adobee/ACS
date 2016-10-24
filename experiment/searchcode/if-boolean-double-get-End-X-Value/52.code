@@ -1,0 +1,11 @@
+int controlPointsNumber = 0;
+int fitPointsNumber = 0;
+boolean weight = false;
+if (sc==2) {
+v = DwgUtil.getBitDouble(data, bitPos);
+boolean per = ((Boolean)v.get(1)).booleanValue();
+spline.setPeriodic(per);
+
+v = DwgUtil.getBitDouble(data, bitPos);
+bitPos = ((Integer)v.get(0)).intValue();
+

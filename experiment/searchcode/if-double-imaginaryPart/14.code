@@ -1,0 +1,10 @@
+private double imaginaryPart;
+private double realPart;
+
+public ComplexNumber(double imaginaryPart, double realPart) {
+public double getImaginaryPart() {
+return imaginaryPart;
+}
+
+public double getRealPart() {
+

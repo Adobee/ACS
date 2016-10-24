@@ -1,0 +1,9 @@
+package FactoryTest01;
+
+//¿ÀÀü¿¡ ÀÌ¿ëÇÏ´Â Àü·«
+public class ResponseTimeScheduler implements ElevatorScheduler {
+private ResponseTimeScheduler() {}
+public static ElevatorScheduler getInstance() {
+if(scheduler == null)
+scheduler = new ResponseTimeScheduler();
+

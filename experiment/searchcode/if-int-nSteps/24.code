@@ -1,0 +1,13 @@
+res.add(matrix[si][sj]);
+return;
+}
+if(msteps == 0){
+for(int j  = 0; j <= nsteps; j++){
+res.add(matrix[si][sj+j]);
+}
+return;
+}
+if(nsteps == 0){
+for(int i  = 0; i <= msteps; i++){
+res.add(matrix[si+i][sj]);
+

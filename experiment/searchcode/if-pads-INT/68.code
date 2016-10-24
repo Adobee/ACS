@@ -1,0 +1,8 @@
+super.serialize(protocol, buffer);
+
+buffer.putLong(this.actionsBitfield);
+
+buffer.putInt(this.analogPads.size);
+AnalogPad[] pads = this.analogPads.items;
+for (int i = 0, length = this.analogPads.size; i < length; i++) {
+

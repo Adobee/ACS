@@ -1,0 +1,10 @@
+class SequenceDouble extends Sequence<Double> {
+
+public SequenceDouble(Double initialValue, Double step, Double threshold) {
+super(initialValue, step, threshold);
+}
+
+@Override
+protected Object getResultImpl() {
+Double result = initialValue + step * counter++;
+

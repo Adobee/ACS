@@ -1,0 +1,10 @@
+public final int depth;
+public final Vector3 offset = new Vector3();
+private final int widthTimesHeight;
+if (y < 0 || y >= height) return 0;
+if (z < 0 || z >= depth) return 0;
+return getFast(x, y, z);
+}
+
+public byte getFast (int x, int y, int z) {
+

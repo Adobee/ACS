@@ -1,0 +1,12 @@
+/** {@link Object}クラスも反復する場合は {@literal true} */
+protected final boolean includeObject;
+
+/**
+* for each構文で使用するために{@link ClassIterator}をラップした{@link Iterable}を返します。
+this.includeObject = includeObject;
+}
+
+@Override
+public boolean hasNext() {
+if (!includeObject &amp;&amp; clazz == Object.class) {
+

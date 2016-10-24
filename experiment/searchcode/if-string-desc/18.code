@@ -1,0 +1,11 @@
+ABERTURA(&quot;Abertura&quot;), //
+FECHAMENTO(&quot;Fechamento&quot;);
+
+private String desc;
+
+TipoCota(String desc) {
+this.desc = desc;
+public static TipoCota fromDesc(String desc) {
+for (TipoCota servico : TipoCota.values()) {
+if (servico.getDesc().equalsIgnoreCase(desc)) {
+

@@ -1,0 +1,14 @@
+return &quot;redirect:/connect/twitter&quot;;
+}
+int resultLimit = 0;
+int resultOffset = 0;
+int listSize = 0;
+
+int int_offset = 0;
+if (offset != null) {
+resultLimit = int_offset + PSMetadata.TWITTER_LIMIT_RESULT;
+}
+if (listSize <= int_offset) {
+resultOffset = listSize;
+} else {
+

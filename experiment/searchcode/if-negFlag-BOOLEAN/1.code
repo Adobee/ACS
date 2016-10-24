@@ -1,0 +1,11 @@
+
+public class Solution {
+static boolean negflag = false;
+public double myPow(double x, int n) {
+if (n < 0){
+negflag = true;
+return 1 / dp(x, -n);
+}
+else
+return dp(x, n);
+

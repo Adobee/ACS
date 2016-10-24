@@ -1,0 +1,10 @@
+* @version 1.0 vom 26.11.2011
+* @author
+*/
+
+public class WordlistBenchmark extends Thread {
+long lastCall = 0;
+int lastCount = 0;
+while (!WordlistPasswd.found &amp;&amp; WordlistPasswd.currentPass != null) {
+if ((System.nanoTime() - lastCall) > 1000000000) {
+

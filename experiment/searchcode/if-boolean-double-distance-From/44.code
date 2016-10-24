@@ -1,0 +1,10 @@
+return bfRect.contains(point);
+}
+
+public double distanceFromTop(EPGYPoint point) {
+return Math.abs(bfRect.height - point.y);
+* @return the category corresponding to a distance from a wall
+*/
+public int distanceFromWallCategory(double distance) {
+if(distance < AGAINST_WALL_TOLERANCE)
+

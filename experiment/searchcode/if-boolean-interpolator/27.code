@@ -1,0 +1,13 @@
+private float delta;
+private boolean active = false;
+private Interpolator interpolator;
+
+public Blinker(float duration, int times){
+this.delta = 1 / (2f * times);
+}
+
+public void update(float delta){
+if(active){
+interpolator.update(delta);
+if(interpolator.getValue() >= 1.0f)
+

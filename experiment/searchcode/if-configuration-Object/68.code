@@ -1,0 +1,11 @@
+public FileConfiguration getConfig() {
+
+return configuration;
+}
+
+public Object get(String path) {
+
+if (configuration.isBoolean(path)) {
+return configuration.getBoolean(path);
+} else if (configuration.isDouble(path)) {
+

@@ -1,0 +1,14 @@
+ORDINARY(0),
+REPEATING(1);
+
+private int intVal;
+
+private PlannedBehaviourType(int intVal) {
+this.intVal = intVal;
+for(PlannedBehaviourType bt : PlannedBehaviourType.values())
+if(bt.toInt() == intVal)
+return bt;
+return UNKNOWN;
+}
+}
+

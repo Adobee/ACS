@@ -1,0 +1,9 @@
+public static Vector3 add(Vector3 lhs, Vector3 rhs) {
+return arithmetic(lhs, rhs, T_ADD);
+}
+
+public static double dotProduct(Vector3 lhs, Vector3 rhs) {
+private void arithmetic(Vector3 rhs, int arithType) {
+if (arithType >= T_ADD &amp;&amp; arithType <= T_MUL) {
+double rhsX = rhs.getX();
+

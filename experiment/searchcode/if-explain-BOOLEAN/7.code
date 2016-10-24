@@ -1,0 +1,4 @@
+stmt.executeUpdate(&quot;drop table IF EXISTS ExplainTest&quot;);
+stmt.executeUpdate(&quot;create table IF NOT EXISTS ExplainTest(id int, name varchar(500), b boolean)&quot;);
+stmt.executeUpdate(&quot;CREATE INDEX IF NOT EXISTS ExplainTestIndex ON ExplainTest(name)&quot;);
+

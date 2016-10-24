@@ -1,0 +1,7 @@
+public CustomTimePickerDialog(Context context, OnTimeSetListener callBack, int hourOfDay, int minute, boolean is24HourView) {
+super(context, callBack, hourOfDay, minute, is24HourView);
+super.onTimeChanged(timePicker, hourOfDay, minute);
+if (!mIgnoreEvent) {
+if (minute != oldMinute)
+minute = getRoundedMinute(minute - TIME_PICKER_INTERVAL);
+

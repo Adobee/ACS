@@ -1,0 +1,9 @@
+private String[] options;
+private String[] optionKeys;
+
+private PlanEntry.Type type;
+private String nameKey;
+public PlanEntry(String name, String nameKey, PlanEntry.Type type)
+{
+if (type != PlanEntry.Type.CHECKBOX)
+

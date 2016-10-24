@@ -1,0 +1,8 @@
+private final boolean noTransform;
+
+String headerValue; // Lazily computed, if absent.
+
+private HQ_CacheControl(boolean noCache, boolean noStore, int maxAgeSeconds, int sMaxAgeSeconds,
+boolean isPrivate, boolean isPublic, boolean mustRevalidate, int maxStaleSeconds,
+int minFreshSeconds, boolean onlyIfCached, boolean noTransform, String headerValue) {
+

@@ -1,0 +1,5 @@
+Object abstractBlock = rubyBlocks.get(i);
+if (!(abstractBlock instanceof RubyArray) &amp;&amp; !(abstractBlock instanceof AbstractNode)) {
+Object abstractBlock = findBy.get(i);
+if (!(abstractBlock instanceof RubyArray) &amp;&amp; !(abstractBlock instanceof AbstractBlock)) {
+

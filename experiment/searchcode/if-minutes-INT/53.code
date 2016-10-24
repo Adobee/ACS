@@ -1,0 +1,10 @@
+public String format(int seconds)
+{
+int hours = seconds/3600;
+int secondsRemaining = seconds - 3600*hours;
+int minutes = secondsRemaining/60;
+String secondsPrint = &quot;&quot;+secondsRemaining;
+String minutesPrint = &quot;&quot;+minutes;
+if (secondsRemaining<10)
+secondsPrint = &quot;0&quot;+secondsRemaining;
+

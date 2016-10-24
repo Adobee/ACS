@@ -1,0 +1,17 @@
+public void setQuadrant(Quadrant quadrant)
+{
+_quadrant = quadrant;
+}
+
+@Override
+public int hashCode()
+{
+final int prime = 31;
+else if (!_plateNumber.equals(other._plateNumber)) return false;
+if (_quadrant != other._quadrant) return false;
+return true;
+}
+
+@Override
+public String toString()
+

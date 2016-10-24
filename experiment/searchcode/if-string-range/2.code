@@ -1,0 +1,7 @@
+List<String> solution = new LinkedList<String>();
+if (nums == null || nums.length == 0) {
+int endRange = nums[0];
+
+for (int i = 0; i < nums.length; i++) {
+if (nums[i] > endRange + 1) {
+

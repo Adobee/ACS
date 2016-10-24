@@ -1,0 +1,14 @@
+* An ordered pair of objects of the same type
+*
+* @param <E>
+*/
+public class P2<E> extends T2<E, E> {
+
+private static final long serialVersionUID = 1L;
+super(first, second);
+}
+
+public P2(E[] entries) {
+super(entries[0], entries[1]);
+if (entries.length != 2) { throw new IllegalArgumentException(&quot;This only takes arrays of 2 arguments&quot;); }
+

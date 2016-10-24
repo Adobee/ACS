@@ -1,0 +1,7 @@
+List<Member> memberList = memberMemberDao.isPresent(memberMemberDto.getMemberId1().getId(), memberMemberDto.getMemberId2().getId());
+if(memberList.size() > 0) {
+status = true;
+memberList = memberMemberDao.isPresent(memberMemberDto.getMemberId2().getId(), memberMemberDto.getMemberId1().getId());
+if(memberList.size() > 0) {
+status = true;
+

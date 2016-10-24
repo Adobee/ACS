@@ -1,0 +1,11 @@
+
+public class WeightAvg{
+
+public double weight(int N, double next, double[] a){
+double [] w=new double[N];
+double[] ary=new double[N];
+double movingWeight=0.0;
+
+if( a.length>N){
+int cnt=0;
+

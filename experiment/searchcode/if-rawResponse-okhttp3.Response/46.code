@@ -1,0 +1,6 @@
+public static <T> Response<T> success(T body, Response rawResponse) {
+if (rawResponse == null) throw new NullPointerException(&quot;rawResponse == null&quot;);
+if (!rawResponse.isSuccessful()) {
+public static <T> Response<T> error(ResponseBody body, Response rawResponse) {
+if (body == null) throw new NullPointerException(&quot;originalBody == null&quot;);
+

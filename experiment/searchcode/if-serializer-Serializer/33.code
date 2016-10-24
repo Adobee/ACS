@@ -1,0 +1,8 @@
+uidMap.put(serializer.uid, serializer);
+if (serializer.uid < 0) {
+bootstrapSerializers[128 + (int) serializer.uid] = serializer;
+public static Serializer requestSerializer(long uid) throws SerializerNotFoundException {
+Serializer result = uidMap.get(uid);
+if (result != null) {
+return result;
+

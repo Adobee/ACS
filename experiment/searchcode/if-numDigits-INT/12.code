@@ -1,0 +1,14 @@
+public boolean isPalindrome(int x) {
+if (x < 0) {
+return false;
+}
+
+if (x < 10) {
+return true;
+}
+
+int len = numDigits(x);
+
+int highHalf = x / (int) Math.pow(10, (len + 1) / 2);
+int lowHalf = reverse(x, len / 2);
+

@@ -1,0 +1,15 @@
+import java.util.Set;
+import java.util.TreeMap;
+
+public class Vocabulary {
+
+private long numOfDocs = 0;
+
+private Map<String, Long> voc = new TreeMap<String, Long>();
+Long df = voc.get(word);
+if(df == null) {
+return 0;
+}
+
+return Math.log10((double)numOfDocs / (double)df);
+

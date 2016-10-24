@@ -1,0 +1,9 @@
+import com.jcwhatever.nucleus.collections.observer.subscriber.SubscriberLinkedList;
+import com.jcwhatever.nucleus.mixins.IDisposable;
+import com.jcwhatever.nucleus.utils.PreCon;
+private final Deque<ISubscriber> _subscribers = new SubscriberLinkedList<>();
+private boolean _isDisposed;
+
+@Override
+public boolean isDisposed() {
+

@@ -1,0 +1,9 @@
+public static void main(String... args) {
+// Negative test
+boolean finalized = false;
+for (int c = 0; !finalized &amp;&amp; c < MAIN_ITERS; c++) {
+finalized |= nonFenced();
+}
+
+if (PREMATURE_FINALIZATION &amp;&amp; !finalized) {
+

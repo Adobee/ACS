@@ -1,0 +1,13 @@
+private DNF dnf;
+private boolean cached;
+private boolean cachedValue;
+private CPOGModel cpog;
+public void refresh()
+{
+cached = false;
+}
+
+boolean evaluate()
+{
+if (cached) return cachedValue;
+

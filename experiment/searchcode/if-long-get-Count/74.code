@@ -1,0 +1,11 @@
+Integer countInteger = sessionMap.get(Long.valueOf(sessionID));
+if (countInteger != null) {
+countInteger = countInteger + 1;
+sessionMap.put(Long.valueOf(sessionID), countInteger);
+}
+}
+
+public static int count(long sessionID)
+{
+Integer countInteger = sessionMap.get(Long.valueOf(sessionID));
+

@@ -1,0 +1,11 @@
+public SubBracket(BracketManager manager, String name, double value)
+{
+super(manager, name, value);
+
+((BracketAddMemberSetting)getSetting(&quot;add-member&quot;))
+List<Bracket.BracketMember> memberList = getMemberList();
+Bracket.BracketMember m;
+if (isPayday)
+{
+int timeIntervalSeconds = (int)((currentTime - this.lastTime) / 1000L);
+

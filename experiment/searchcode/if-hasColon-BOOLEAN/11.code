@@ -1,0 +1,9 @@
+char c;
+StringBuilder column = new StringBuilder();
+boolean hasColon = false;
+while (i < path.length() &amp;&amp; (c = path.charAt(i)) != &#39;/&#39;) {
+if (column.length() < 1) {
+throw new IllegalArgumentException(&quot;invalid path&quot;);
+}
+if (!hasColon) {
+

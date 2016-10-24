@@ -1,0 +1,8 @@
+&quot;INDENT&quot;,
+TokenPattern.STRING_TYPE,
+&quot;{&quot;);
+addPattern(pattern);
+pattern = new TokenPattern(TernConstants.IF,
+&quot;IF&quot;,
+TokenPattern.STRING_TYPE,
+

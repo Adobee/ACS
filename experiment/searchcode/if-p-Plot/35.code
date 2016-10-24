@@ -1,0 +1,15 @@
+plugin.getLogger().info(&quot;loaded Plots : &quot; + plots.size());
+
+}
+
+public void saveAll() {
+
+if ( plots.size() > 0 ) {
+
+for ( Plot plot : plots ) {
+ArrayList<Plot> plots = new ArrayList<Plot>();
+
+if ( plots.size() > 0 ) {
+
+for ( Plot plot : this.plots ) {
+

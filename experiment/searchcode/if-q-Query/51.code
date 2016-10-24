@@ -1,0 +1,8 @@
+this.limit = limit;
+}
+
+public QueryExecution createQueryExecution(Query query) {
+if(limit != null) {
+if(query.getLimit() == Query.NOLIMIT) {
+if(doCloneQuery) {
+

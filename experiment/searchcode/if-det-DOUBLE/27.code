@@ -1,0 +1,9 @@
+final double c = matrix[ 2 ];
+final double d = matrix[ 3 ];
+
+final double det = 1.0 / ( a*d - b*c );
+final double det = det( m );
+if ( det == 0 ) throw new NoninvertibleModelException( &quot;Matrix not invertible.&quot; );
+
+final double i00 = ( m[ 4 ] * m[ 8 ] - m[ 5 ] * m[ 7 ] ) / det;
+

@@ -1,0 +1,6 @@
+Object actualObject,
+MemberAccessStrategy accessStrategy) {
+Object expectedValue = accessStrategy.getValidMemberValue(expectedObject, memberName);
+Object actualValue = accessStrategy.getValidMemberValue(actualObject, memberName);
+if (expectedValue == null || actualValue == null) {
+

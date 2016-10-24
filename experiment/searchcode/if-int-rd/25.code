@@ -1,0 +1,9 @@
+int rsValue = cpu.getRegister(rsIndex);
+int rdIndex, rdValue;
+
+switch (opcode &amp; 0x0300) {
+case 0x0000: // ADD Rd, Rs
+cpu.setRegister(rdIndex, rdValue + rsValue);
+if (rdIndex == cpu.PC) cpu.flushTHUMBPipeline();
+break;
+

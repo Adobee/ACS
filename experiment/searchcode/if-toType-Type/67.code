@@ -1,0 +1,11 @@
+Asserts.notNull(toType, &quot;The to type is null&quot;);
+
+// same type
+if (fromType.equals(toType)) {
+return DirectCastor.i();
+}
+
+// type -> type castor
+Castor<S, T> castor = castors.get(new MultiKey(fromType, toType));
+if (castor != null) {
+

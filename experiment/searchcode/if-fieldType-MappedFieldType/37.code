@@ -1,0 +1,8 @@
+CopyOnWriteHashMap<String, Set<String>> fullNameToTypes = this.fullNameToTypes;
+
+for (FieldMapper fieldMapper : fieldMappers) {
+MappedFieldType fieldType = fieldMapper.fieldType();
+Set<String> fields = new HashSet<>();
+for (MappedFieldType fieldType : this) {
+if (Regex.simpleMatch(pattern, fieldType.name())) {
+

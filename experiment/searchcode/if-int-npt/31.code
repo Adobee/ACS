@@ -1,0 +1,10 @@
+package cn.npt.db.event;
+
+import java.util.List;
+
+import cn.npt.db.util.BS2SqlBufferKit;
+int blockSize=bsp.getCbCfg().getPersistenceSize();
+int toIndex=index+1;
+if(toIndex%blockSize==0){
+StringBuilder sb=new StringBuilder();
+

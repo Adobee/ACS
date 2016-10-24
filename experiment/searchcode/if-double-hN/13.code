@@ -1,0 +1,11 @@
+public static double[] normalizeHistogram (double[] h) {
+// find max histogram entry
+double max = h[0];
+for (int i=0; i<h.length; i++) {
+if (h[i] > max)
+max = h[i];
+}
+if (max == 0) return null;
+// normalize
+double[] hn = new double[h.length];
+

@@ -1,0 +1,15 @@
+for( int i = 0;i < n-k;i++ ) {
+int nn = i + k;
+b[i][nn] = Integer.MAX_VALUE;
+for( int j = i+1 ; j < nn;j++) {
+int tmp = b[i][j] + b[j][nn] + a[i]*a[j]*a[nn];
+if (tmp < b[i][nn]) b[i][nn] = tmp;
+}
+}
+}
+
+System.out.println(b[0][n-1]);
+}
+}
+}
+

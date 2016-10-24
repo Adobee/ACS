@@ -1,0 +1,10 @@
+package org.ejml.alg.dense.decompose.lu;
+
+import org.ejml.UtilEjml;
+import org.ejml.alg.dense.decompose.CTriangularSolver;
+return CSpecializedOps.pivotMatrix(pivot, this.pivot, LU.numRows, false);
+}
+
+protected void decomposeCommonInit(CDenseMatrix64F a) {
+if( a.numRows > maxWidth || a.numCols > maxWidth ) {
+

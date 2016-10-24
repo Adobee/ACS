@@ -1,0 +1,9 @@
+public class Solution {
+int startPosition;
+int endPosition = -1;
+
+public int[] searchRange(int[] A, int target)
+search(A, 0, A.length-1, target);
+int[] result = new int[2];
+if(startPosition == A.length) startPosition = -1;
+

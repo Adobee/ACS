@@ -1,0 +1,5 @@
+if (Debug) System.out.println(argument);
+if((((HasConstant)argument).getConstant()==null)&amp;&amp;((((HasShape)argument).getShape())==null)){
+//first, test whether or not it&#39;s not a scalar, which means, constant value is empty but shape is not [1,1]
+if(((HasShape)argument).getShape().equals((new ShapeFactory()).newShapeFromIntegers((new DoubleConstant(1).getShape())))!=true){
+

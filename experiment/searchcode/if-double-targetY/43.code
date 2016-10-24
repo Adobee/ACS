@@ -1,0 +1,11 @@
+public class Vector {
+private float x, y;
+private float startX, startY;
+private float targetX, targetY;
+x = v.getX();
+y = v.getY();
+}
+
+double deg = StrictMath.toDegrees(StrictMath.atan2((double) y, (double) x));
+if (deg < -360.0D || deg > 360.0D) {
+

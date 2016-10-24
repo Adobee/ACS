@@ -1,0 +1,14 @@
+import static android.accounts.AccountManager.ACTION_AUTHENTICATOR_INTENT;
+
+/**
+* Created by liuyedong on 15-1-19.
+*/
+public class GitHubAccountAuthenticatorService extends Service {
+private AccountAuthenticator getAuthenticator() {
+if (AUTHENTICATOR == null)
+AUTHENTICATOR = new AccountAuthenticator(this);
+return AUTHENTICATOR;
+}
+
+}
+

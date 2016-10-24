@@ -1,0 +1,13 @@
+import java.util.Random;
+
+/**
+*
+* @author Zlati
+*/
+public class minInclusive extends restriction {
+
+private double minval = 0;
+public minInclusive(String field, String restrictionType, double minval){
+super(field, restrictionType);
+this.minval = minval;
+

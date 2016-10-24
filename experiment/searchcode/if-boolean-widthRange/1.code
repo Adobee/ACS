@@ -1,0 +1,16 @@
+super.setAdjustmentListener(adjustmentListener);
+widthRange.setAdjustmentListener(adjustmentListener);
+}
+
+@Override
+public boolean isSetToDefault() {
+&amp;&amp; widthRange.isSetToDefault();
+}
+
+@Override
+public void reset(boolean triggerAction) {
+super.reset(false);
+widthRange.reset(triggerAction);
+}
+}
+

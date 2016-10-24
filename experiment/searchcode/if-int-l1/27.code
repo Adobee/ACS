@@ -1,0 +1,12 @@
+public static void a(l l1)
+{
+int i;
+if (l1.r())
+{
+i = o.b;
+} else
+public static void a(l l1, int i)
+{
+com.instagram.user.c.a a1 = com.instagram.service.a.a.a().b();
+if (l1.i != i)
+

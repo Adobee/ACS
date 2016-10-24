@@ -1,0 +1,13 @@
+package org.stagemonitor.core.metrics;
+
+import com.codahale.metrics.Metric;
+import com.codahale.metrics.MetricFilter;
+for (MetricFilter metricFilter : metricFilters) {
+if (metricFilter != null &amp;&amp; metricFilter.matches(name, metric)) {
+return true;
+}
+}
+return false;
+}
+}
+

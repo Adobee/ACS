@@ -1,0 +1,10 @@
+private boolean isDirectory;
+private Map<String,Query> query;
+private Query extra;
+private boolean hasQuery;
+private Fragment fragment;
+private void buildQuery( StringBuilder b , boolean encode ) {
+if( hasQuery ) {
+int count = 0;
+for( Query segment: query.values() ) {
+

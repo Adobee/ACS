@@ -1,0 +1,10 @@
+public final T rk4(T y, double t, double dt, int dir, RkRoutine<T> rkRoutine) {
+
+double th, hh, h6, h;
+T dydx, dym, dyt, yt;
+dydx = rkRoutine.rkRoutine(y, t, dt);
+
+// yt = y + hh * dydx;
+if(y instanceof double[]) {
+yt = (T) new double[((double[])y).length];
+

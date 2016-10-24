@@ -1,0 +1,9 @@
+public CSVReader reader;
+
+public ItemCSVReader(String path, boolean hasfieldnames) {
+InputStream is;
+Reader r = new InputStreamReader(is, &quot;UTF-8&quot;);
+reader = new CSVReader(r);
+if (hasfieldnames) {
+fieldnames = reader.readNext();
+

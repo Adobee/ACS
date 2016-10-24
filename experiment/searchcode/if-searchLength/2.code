@@ -1,0 +1,10 @@
+int compareInSearchPointer = middlePointer - 1;
+boolean lcsFind = false;
+int searchOffset = -1;
+int searchLength = 0;
+for(; compareInSearchPointer > SearchEndPoint; compareInSearchPointer--){
+searchOffset = oneSearchOffset;
+searchLength = oneSearchLength;
+}
+else if(searchLength < oneSearchLength){
+

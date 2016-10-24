@@ -1,0 +1,12 @@
+for(CardValue value : CardValue.values()) {
+if (str.endsWith(&quot;_&quot; + value.toString()))
+return value;
+public static CardValue getValueFromInt(int rnd) {
+for(CardValue value : CardValue.values()) {
+if (rnd == value.getValue())
+return value;
+}
+return CardValue.VALUE_INVALID;
+}
+}
+

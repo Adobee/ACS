@@ -1,0 +1,8 @@
+public static final int kNumBits = 4;
+
+private OpCode(int code) {
+code_as_int_ = code;
+public static OpCode Lookup(int code) {
+for (OpCode op_code : OpCode.values()) {
+if (code == op_code.as_int()) {
+

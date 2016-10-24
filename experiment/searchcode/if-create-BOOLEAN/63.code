@@ -1,0 +1,11 @@
+public static TSBoolean create( final boolean value ) {
+if( value == true )
+return trueValue;
+if( value == false )
+System.err.println( &quot;TSBoolean.create shouldn&#39;t get here&quot; );
+return TSBoolean.create( value );
+}
+
+public boolean getInternal() {
+return value;
+

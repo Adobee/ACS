@@ -1,0 +1,12 @@
+/*@ non_null */ Object nn;
+
+NonNullInit(int x) {
+nn = this;  // this initializes &quot;nn&quot;
+}
+
+NonNullInit(double x) {
+if (x < 0.0) {
+nn = new Object();
+}
+}  // &quot;nn&quot; not initialized if &quot;if&quot; not taken
+

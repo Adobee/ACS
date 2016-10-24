@@ -1,0 +1,5 @@
+String encodedPath = uri.getEncodedPath();
+int indexOf = encodedPath.indexOf(47, 1);
+String decode = Uri.decode(encodedPath.substring(1, indexOf));
+String decode2 = Uri.decode(encodedPath.substring(indexOf + 1));
+

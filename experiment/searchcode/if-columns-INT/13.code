@@ -1,0 +1,8 @@
+private void totalHelper(int[] columns, int row, int[] count) {
+if (row == columns.length) {
+count[0]++;
+return;
+}
+for (int i = 0; i < columns.length; i++) {
+if (isSafe(columns, row, i)) {
+

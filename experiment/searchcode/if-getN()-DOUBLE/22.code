@@ -1,0 +1,7 @@
+public static Line3D intersect(Plane3D p1, Plane3D p2)
+{
+double h1 = p1.getR().dot(p1.getN());
+double h2 = p2.getR().dot(p2.getN());
+double n1dotn2 = p1.getN().dot(p2.getN());
+if (Math.abs(Math.abs(n1dotn2) - 1) < Point3DLogic.EPSILON)
+

@@ -1,0 +1,14 @@
+double xb=Math.random()*size;
+double ya=Math.random()*size;
+double yb=Math.random()*size;
+
+x[0] = Math.min(xa, xb);
+double[] x = {xa,xb};
+double[] y = {ya,yb};
+
+if(xa>xb){
+x[0] = xb;
+x[1] = xa;
+}
+if(ya>yb){
+

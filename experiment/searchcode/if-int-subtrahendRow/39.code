@@ -1,0 +1,7 @@
+Integer row = null;
+for (int i = 0; i < getHeight(); i++) {
+if (MathUtils.equals(getEntry(i, col), 1.0, epsilon) &amp;&amp; (row == null)) {
+int col = 0;
+for (int j = 0; j < getWidth(); j++) {
+if (!columnsToDrop.contains(j)) {
+

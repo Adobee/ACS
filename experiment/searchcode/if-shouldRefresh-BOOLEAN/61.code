@@ -1,0 +1,9 @@
+public void onLoadFinished(Loader<ThrowableEither<D>> loader, ThrowableEither<D> data) {
+if (data.hasError()) {
+receiveError(data.getError());
+} else {
+protected Loader<ThrowableEither<D>> onCreateLoader(Context context, boolean shouldRefresh) {
+return new CachedAsyncTaskLoader<>(getRequest(), context, shouldRefresh);
+}
+}
+

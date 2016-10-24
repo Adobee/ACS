@@ -1,0 +1,13 @@
+private boolean valid = true;
+
+public RangesIterator(ArrayList<Range> ranges) {
+this.ranges = ranges;
+int sz = ranges.size();
+
+if(currRange >= sz) {
+valid = false;
+return false;
+}
+
+Range curr = ranges.get(currRange);
+

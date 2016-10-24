@@ -1,0 +1,10 @@
+FULLDAY(LocalTime.parse(&quot;8:00 AM&quot;, Constants.LOCALTIMEFORMATTER), LocalTime.parse(&quot;8:00 AM&quot;, Constants.LOCALTIMEFORMATTER)) {
+@Override
+public boolean contains(LocalTime time) {
+if(getInterval() == null)
+setInterval(new Interval(getStartTime().toDateTimeToday(), getEndTime().toDateTimeToday().plusDays(1)));
+DAY(LocalTime.parse(&quot;8:00 AM&quot;, Constants.LOCALTIMEFORMATTER), LocalTime.parse(&quot;8:00 PM&quot;, Constants.LOCALTIMEFORMATTER)) {
+@Override
+public boolean contains(LocalTime time) {
+if(getInterval() == null)
+

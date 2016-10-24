@@ -1,0 +1,12 @@
+public class HighestScoreFinalistPodium extends AbstractFinalistPodium {
+
+protected Score finalistScore;
+
+@Override
+public void stepStarted(LocalSearchStepScope stepScope) {
+super.stepStarted(stepScope);
+finalistScore = null;
+}
+
+public void addMove(LocalSearchMoveScope moveScope) {
+

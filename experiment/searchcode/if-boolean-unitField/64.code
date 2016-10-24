@@ -1,0 +1,8 @@
+return &quot;cad@co.cumberland.nc.us,messaging@iamresponding.com&quot;;
+}
+
+@Override
+public boolean parseMsg(String subject, String body, Data data) {
+if (subject.endsWith(&quot;|N&quot;)) {
+subject = subject.substring(0,subject.length()-2);
+

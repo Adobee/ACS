@@ -1,0 +1,9 @@
+System.out.println(ZoneId.systemDefault());
+
+testDaylight(9, 8, 17, true);
+testDaylight(11, 8, 17, true);
+testDaylight(16, 8, 17, true);
+private static void testDaylight(int actualHour, int sunriseHour, int sunsetHour, boolean asserted) {
+
+LocalTime now = LocalTime.of(actualHour, 0);
+

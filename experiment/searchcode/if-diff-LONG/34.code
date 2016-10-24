@@ -1,0 +1,10 @@
+// Calculate difference in milliseconds
+long diff = nowMs - thenMs;
+
+// Calculate difference in seconds
+long diffHours = diff / (60 * 60 * 1000);
+long diffDays = diff / (24 * 60 * 60 * 1000);
+
+if (diffMinutes < 60) {
+if (diffMinutes == 1)
+

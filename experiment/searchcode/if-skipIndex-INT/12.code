@@ -1,0 +1,11 @@
+public accountstate(boolean iscopy, int depth) {
+super(iscopy, depth);
+}
+
+@override
+protected shamapinner makeinnerofsameclass(int depth) {
+ledgerhashes skip = createorupdateskiplist(skipindex);
+vector256 hashes = skip.hashes();
+
+if (hashes.size() > 256) throw new assertionerror();
+

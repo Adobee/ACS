@@ -1,0 +1,10 @@
+this.fileName = fileName;
+}
+
+public String getSuffix() {
+int suffixPos = fileName.lastIndexOf(&#39;.&#39;);
+if (suffixPos < 0) {
+suffixPos = fileName.length() - 1;
+}
+return fileName.substring(suffixPos + 1);
+

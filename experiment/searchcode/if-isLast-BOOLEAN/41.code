@@ -1,0 +1,19 @@
+protected void insert(Type data)
+{
+if (isLast())
+{
+next = new Node<Type>(data);
+next.prev = this;
+return;
+prev.next = next;
+}
+if (!isLast())
+{
+next.prev = prev;
+}
+prev = null;
+next = null;
+}
+
+protected Node find(Type data)
+

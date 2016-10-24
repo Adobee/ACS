@@ -1,0 +1,10 @@
+try {
+Class c = loadedClasses.get(columnType);
+if (c == null) {
+c = Class.forName(columnType);
+protected static Class translateType(Class classType) {
+return convertIfPrimitive(classType);
+}
+
+public static Class convertIfPrimitive(Class fieldType) {
+

@@ -1,0 +1,9 @@
+public Stage transformToModel(StageView stageView) {
+if (stageView == null) {
+return null;
+}
+
+Stage stage;
+if (stageView.getId() != 0) {
+stage = stageDAO.findById(stageView.getId());
+

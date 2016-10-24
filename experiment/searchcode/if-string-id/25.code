@@ -1,0 +1,8 @@
+public byte getByte(String id)
+{
+String string = (String) properties.get(id);
+
+if (string == null)
+
+if (string == null)
+

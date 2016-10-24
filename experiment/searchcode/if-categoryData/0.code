@@ -1,0 +1,9 @@
+package services.impl;
+
+import com.avaje.ebean.Ebean;
+import models.CategoryData;
+import org.springframework.stereotype.Service;
+public boolean updateCategory(Long id, String category) {
+CategoryData categoryData = CategoryData.find.byId(id);
+if(categoryData == null) {
+

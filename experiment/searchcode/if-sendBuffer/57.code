@@ -1,0 +1,7 @@
+private static ByteBuffer sendBuffer = ByteBuffer.allocate(BLOCK);
+private static ByteBuffer receiveBuffer = ByteBuffer.allocate(BLOCK);
+client.register(selector,SelectionKey.OP_WRITE);
+}
+}else if(selectionKey.isWritable()){
+sendBuffer.clear();
+

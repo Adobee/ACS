@@ -1,0 +1,12 @@
+public class CancelClosingFilter implements IFilter {
+
+public boolean accept(Object o) {
+if(o == null)
+EndClosingBVO body = (EndClosingBVO)o;
+if(!PuPubVO.getUFBoolean_NullAs(body.getFlag(), UFBoolean.FALSE).booleanValue()){
+return false;
+}
+return true;
+}
+}
+

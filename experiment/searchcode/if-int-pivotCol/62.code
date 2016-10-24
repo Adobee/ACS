@@ -1,0 +1,8 @@
+Integer pivotCol = getPivotColumn(tableau);
+Integer pivotRow = getPivotRow(pivotCol, tableau);
+if (pivotRow == null) {
+throw new UnboundedSolutionException();
+for (int i = 0; i < tableau.getHeight(); i++) {
+if (i != pivotRow) {
+double multiplier = tableau.getEntry(i, pivotCol);
+

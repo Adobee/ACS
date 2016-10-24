@@ -1,0 +1,12 @@
+public class MyTest extends AbstractIntradayTest {
+
+static boolean transactedToday = false;
+
+@Override
+public void run() {
+for (IntradayCandle candle : dayCandles) {
+
+// if we buy a stock, hold overnight
+if (transactedToday){
+break;
+

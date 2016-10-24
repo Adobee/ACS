@@ -1,0 +1,14 @@
+* @param newState The new runningState.
+*/
+public void setState(State newState){
+if(runningState != null) previousStates.add(runningState); //Stores current state
+for(int i = 0; i < previousStates.size(); i++){
+State s = previousStates.get(i);
+if(s != null) s.dispose();
+}
+runningState.dispose();
+
+assets.dispose();
+}
+}
+

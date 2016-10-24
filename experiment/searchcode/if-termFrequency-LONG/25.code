@@ -1,0 +1,10 @@
+private long startCurrentSelection;
+
+private Map<String, Long> termFrequency;
+
+public BackSearchResultList(SearchList searchList) {
+for (int i = 0, termsLength = terms.length; i < termsLength; i++) {
+Long currentFrequency = termFrequency.get(terms[i]);
+
+if (currentFrequency == null)
+

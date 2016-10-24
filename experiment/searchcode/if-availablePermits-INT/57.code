@@ -1,0 +1,7 @@
+* Semaphores allow you to control how many threads can access a resource
+* simultaneously. You can also use them as locks if the mood takes you
+ExecutorService executors = Executors.newCachedThreadPool();
+
+for(int i = 0; i < 200; i++) {
+executors.submit(new Runnable() {
+

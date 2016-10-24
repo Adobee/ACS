@@ -1,0 +1,11 @@
+return addD(a1.doubleValue(), a2.doubleValue());
+}
+if (a1 instanceof Long || a2 instanceof Long) {
+return addL(a1.longValue(), a2.longValue());
+private static Long mulL(Long a1, Long a2) {
+return a1 * a2;
+}
+
+private static Number mulN(Number a1, Number a2) {
+if (a1 instanceof Double || a2 instanceof Double) {
+

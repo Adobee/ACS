@@ -1,0 +1,12 @@
+sendBuffer.put(tor.getPeerId());
+sendBuffer.flip();
+try {
+if(channel.write(sendBuffer) != HANDSHAKE_LEN)
+throw new IOException(&quot;non-full write&quot;);
+channel.write(sendBuffer);
+if(sendBuffer.hasRemaining())
+return;
+
+if(!amInterested) {
+if(!sendInterested())
+

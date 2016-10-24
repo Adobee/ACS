@@ -1,0 +1,8 @@
+int min = ((XInt)attrValues[ATTIDX_MINOCCURS]).intValue();
+int max = ((XInt)attrValues[ATTIDX_MAXOCCURS]).intValue();
+if (max != SchemaSymbols.OCCURRENCE_UNBOUNDED) {
+throw new InvalidDatatypeValueException(&quot;cvc-datatype-valid.1.2.1&quot;, new Object[]{value, &quot;nonNegativeInteger&quot;});
+}
+if (((XInt)retValue).intValue() < 0)
+throw new InvalidDatatypeValueException(&quot;cvc-datatype-valid.1.2.1&quot;, new Object[]{value, &quot;nonNegativeInteger&quot;});
+

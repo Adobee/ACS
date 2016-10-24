@@ -1,0 +1,13 @@
+import static android.accounts.AccountManager.ACTION_AUTHENTICATOR_INTENT;
+
+/**
+* Created by Michał on 2016-02-13.
+*/
+public class AuthenticatorService extends Service {
+return intent.getAction().equals(ACTION_AUTHENTICATOR_INTENT) ? getAuthenticator()
+.getIBinder() : null;
+}
+
+private Authenticator getAuthenticator() {
+if (AUTHENTICATOR == null)
+

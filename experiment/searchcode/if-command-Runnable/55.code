@@ -1,0 +1,11 @@
+public void execute(Runnable command, final ScheduledExecutorService timer, final TimeValue timeout, final Runnable timeoutCallback) {
+if (command instanceof PrioritizedRunnable) {
+command = new TieBreakingPrioritizedRunnable((PrioritizedRunnable) command, insertionOrder.incrementAndGet());
+}, timeout.nanos(), TimeUnit.NANOSECONDS);
+}
+}
+
+@Override
+public void execute(Runnable command) {
+if (command instanceof PrioritizedRunnable) {
+

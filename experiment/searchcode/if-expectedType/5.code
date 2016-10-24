@@ -1,0 +1,10 @@
+this.rawExpectedType = rawExpectedTypeOf(expectedType, disposableClassType);
+}
+
+private Type rawExpectedTypeOf(Type expectedType, Class<?> disposableClassType) {
+if (expectedType instanceof ParameterizedType) {
+ParameterizedType parameterizedType = (ParameterizedType) expectedType;
+Type parameterizedRawType = parameterizedType.getRawType();
+
+if (isTypeOf(parameterizedRawType, disposableClassType)) {
+

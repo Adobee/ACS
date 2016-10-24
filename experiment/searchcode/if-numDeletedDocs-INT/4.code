@@ -1,0 +1,8 @@
+@XmlAttribute(name=AdminConstants.A_DELETED_DOCS /* totalSize */, required=true)
+private final int numDeletedDocs;
+private IndexStats() {
+this(0, 0);
+}
+
+public IndexStats(int maxDocs, int numDeletedDocs) {
+

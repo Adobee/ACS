@@ -1,0 +1,10 @@
+package ejercicios.bloque3;
+
+public class Complejo {
+
+private double real;
+private double imaginaria;
+public Complejo(double real, double imaginaria) {
+this.real = real;
+this.imaginaria = imaginaria;
+

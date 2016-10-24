@@ -1,0 +1,9 @@
+private transient int maxWordsInToken;
+private transient int gramSize;
+private transient int inLen;
+private transient List<Token> chunks;
+public NgramWordTokenizer(final Reader input, final int minWords, final int maxWords)
+{
+this.input = input;
+if (minWords < 1)
+

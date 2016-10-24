@@ -1,0 +1,6 @@
+for(int c = 0; c < cases; c++) {
+System.out.println(&quot;Case #&quot; + (c+1) + &quot;: &quot; + solve(kb.nextDouble(), kb.nextDouble(), kb.nextDouble(), 2.0));
+private static double solve(double cost, double farm, double x, double rate) {
+if(fasterToBuy(cost, farm, x, rate)) {
+return solve(cost, farm, x, rate + farm) + (cost / rate);
+

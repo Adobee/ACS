@@ -1,0 +1,13 @@
+private ZooKeeper zk = null;
+private ZKService zkService;
+
+private String hosts;
+
+private static int timeout = 5000;
+
+public ZKServerManager() {
+/* 随机使用20100~20199之间的端口 */
+int randomPort = new Random().nextInt(100) + 20100;
+//int randomPort =12325;
+url = String.format(&quot;rmi://%s:%d/%s&quot;,
+

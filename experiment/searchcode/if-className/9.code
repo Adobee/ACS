@@ -1,0 +1,9 @@
+package code;
+
+public class CodeUtils {
+
+public static boolean isClassR(String className) {
+String[] classes = className.split(&quot;\\$&quot;);
+for (int i = 0; i < classes.length; i++) {
+if (StringUtils.isNumber(classes[i])) {
+

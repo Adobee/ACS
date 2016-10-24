@@ -1,0 +1,9 @@
+public boolean canJump(int[] A) {
+int range=0;
+for (int i=0;;) {
+if (range>=A.length-1) return true;
+int nextRange=range;
+for (;i<=range;++i)
+nextRange=Math.max(nextRange, i+A[i]);
+if (range==nextRange) return false;
+

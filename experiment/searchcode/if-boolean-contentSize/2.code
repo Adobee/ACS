@@ -1,0 +1,6 @@
+boolean isSignificantChange = (currentValue - lastTriggeredValue) / contentSize > progressMinChange;
+if (progressMinChange == 0 || currentValue == contentSize || isSignificantChange) {
+lastTriggeredValue = currentValue;
+
+if (this.listener != null) {
+

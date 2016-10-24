@@ -1,0 +1,8 @@
+final double prodLow = aLow * bLow - (((prodHigh[i] - aHigh * bHigh) - aLow * bHigh) - aHigh * bLow);
+prodLowSum += prodLow;
+}
+
+final double prodHighCur = prodHigh[0];
+double prodHighNext = prodHigh[1];
+double sHighPrev = prodHighCur + prodHighNext;
+

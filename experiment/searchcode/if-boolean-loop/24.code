@@ -1,0 +1,23 @@
+runLoop.interrupt();
+
+runLoop = null;
+
+}
+
+//
+
+private void handleReset() {
+
+if (runLoop != null &amp;&amp; runLoop.isRunning()) {
+System.out.println(&quot;step()&quot;);
+
+}
+
+//
+
+class RunLoop extends Thread {
+
+//
+
+private boolean isRunning = false;
+

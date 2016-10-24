@@ -1,0 +1,12 @@
+* 	rule(&quot;//classBodyDeclaration&quot;, &quot;static <block>&quot;, JavaParser.RULE_classBodyDeclaration);
+*
+* @param xpath
+* @param pattern
+* @param rule
+* @return
+*/
+public List<ParseTreeMatch> matches(String xpath, String pattern, int rule) {
+ParseTreePattern p = parser.compileParseTreePattern(pattern, rule);
+List<ParseTreeMatch> matches = p.findAll(tree, xpath);
+return matches;
+

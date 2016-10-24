@@ -1,0 +1,12 @@
+public void deletePlaneById(String planeId) throws PlaneValidationException {
+Plane plane = loadPlaneById(planeId);
+if (plane == null) {
+throw new PlaneValidationException(&quot;Error deleting plane &#39;&quot; + planeId + &quot;&#39;.&quot;,
+PlaneErrorCode.PLANE_CANNOT_BE_DELETED);
+}
+
+}
+
+@Override
+public boolean isPlaneNameAndNumberPlateUnique(Plane plane) {
+

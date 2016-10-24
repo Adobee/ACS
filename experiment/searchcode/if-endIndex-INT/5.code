@@ -1,0 +1,9 @@
+if (!line.contains(tag)) return &quot;&quot;;
+
+int beginIndex = -1;
+int endIndex = 0;
+while (endIndex < line.length())
+{
+if (line.charAt(endIndex) == &#39;>&#39;)
+beginIndex = endIndex+1;
+

@@ -1,0 +1,11 @@
+return new CircularRange<K>(from, fromInclusive, to, toInclusive);
+}
+
+@SuppressWarnings(&quot;unchecked&quot;)
+public CircularRange<K>[] split(K k) {
+if (keyComp.compare(from, k) < 0 &amp;&amp; keyComp.compare(k, to) < 0) {
+return Collections.singletonList(new CircularRange<K>(r.to,
+!r.toInclusive, r.from, !r.fromInclusive));
+}
+if (this.contains(r.from) &amp;&amp; !this.contains(r.to)) {
+

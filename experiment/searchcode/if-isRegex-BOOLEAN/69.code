@@ -1,0 +1,7 @@
+Regex regex = field.getAnnotation(Regex.class);
+Pattern pattern;
+if (regex != null) {
+pattern = Pattern.compile(regex.regex());
+boolean isRegex = pattern.matcher(text).matches();
+if (isRegex) {
+

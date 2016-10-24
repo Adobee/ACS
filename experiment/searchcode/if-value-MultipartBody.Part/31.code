@@ -1,0 +1,8 @@
+private List<MultipartBody.Part> toMedia(Media media) {
+MultipartBody.Builder builder = new MultipartBody.Builder();
+public MaterialStatus addMaterial(Media media) {
+
+MultipartBody.Builder builder = new MultipartBody.Builder();
+
+builder.addFormDataPart(&quot;media&quot;, media.getFileName(), RequestBody.create(MediaType.parse(&quot;application/octet-stream&quot;), media.getData()))
+

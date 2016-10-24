@@ -1,0 +1,10 @@
+public abstract class GetDocSet extends DocSet {
+
+private final int maxDoc;
+
+protected GetDocSet(int maxDoc) {
+this.maxDoc = maxDoc;
+doc++;
+if (doc >= maxDoc) {
+return doc = NO_MORE_DOCS;
+

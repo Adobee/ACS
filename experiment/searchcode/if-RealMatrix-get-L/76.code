@@ -1,0 +1,13 @@
+public void update(int layerIndex, RealMatrix delta) {
+RealMatrix d = deltas.get(layerIndex);
+for (int counter = 0; counter < d.getColumnDimension(); counter ++) {
+d.setEntry(0, counter, d.getEntry(0, counter) + delta.getEntry(0, counter));
+}
+}
+
+public RealMatrix getDelta(int index) {
+return deltas.get(index);
+}
+
+public void adjustDeltas(int numInstances) {
+

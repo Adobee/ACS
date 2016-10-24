@@ -1,0 +1,11 @@
+private static final long serialVersionUID = 2246507463386390765L;
+long seed;
+
+@Override
+public void initSeed(long seed) {
+this.seed = seed;
+seed ^= (seed << 4);
+long res = (seed >> 24) % max;
+if (res < 0) res += max;
+return res;
+

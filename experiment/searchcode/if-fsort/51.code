@@ -1,0 +1,11 @@
+pCollinear[cIndex++] = p[index1];
+index1++;
+}
+index1--;
+Arrays.sort(pCollinear);
+if (pCollinear[0].compareTo(tempPoint) == 0) {
+Point min, max;
+
+while (index2 != p.length) {
+if (tempPoint.slopeTo(p[index1]) == tempPoint.slopeTo(p[index2])) {
+

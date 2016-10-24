@@ -1,0 +1,9 @@
+pos = newPos;
+}
+} else if (dir == Direction.RIGHT) {
+if (!collisionMap[(int) newPos.getX() + 1][(int) newPos.getY()]
+&amp;&amp; !collisionMap[(int) newPos.getX() + 1][(int) newPos.getY() + 3]) {
+pos = newPos;
+}
+} else if (dir == Direction.DOWN) {
+

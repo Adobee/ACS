@@ -1,0 +1,11 @@
+public XPathCommaExpr(int id) {
+super(id);
+}
+
+public XPathCommaExpr(XPathParser p, int id) {
+super(p, id);
+boolean needsComma = false;
+for (int i = 0; i < jjtGetNumChildren(); i++) {
+if (needsComma) {
+res.append(&#39;,&#39;);
+

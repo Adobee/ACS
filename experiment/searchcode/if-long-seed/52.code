@@ -1,0 +1,9 @@
+private static final long serialVersionUID = 1L;
+private int doubleCounter = 0;
+private double[] doubleSeed = new double[]{0};
+@Override
+public double nextDouble ()
+{
+// Keep repeating the last value
+if (doubleCounter >= doubleSeed.length - 1) {
+

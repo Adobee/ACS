@@ -1,0 +1,10 @@
+final double relativeSymmetryThreshold,
+final double absolutePositivityThreshold) {
+if (!matrix.isSquare()) {
+for (int i = 0; i < order; ++i) {
+
+final double[] ltI = lTData[i];
+
+// check diagonal element
+if (ltI[i] <= absolutePositivityThreshold) {
+

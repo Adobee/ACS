@@ -1,0 +1,12 @@
+class A{
+void method(){
+if(str == null &amp;&amp; str.length() == 0){ //Non compliant
+}else if(str != null || str.length() > 0){ //Non compliant
+if(str == null &amp;&amp; str != str){} //Compliant
+if(str == null &amp;&amp; str.a.b > 0){} //Compliant
+}
+String str;
+String a;
+String b;
+}
+

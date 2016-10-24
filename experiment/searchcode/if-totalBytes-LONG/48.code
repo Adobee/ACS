@@ -1,0 +1,11 @@
+private final Long totalBytes;
+private final String fileName;
+
+public TransferProgressEvent(long bytesRead, Long totalBytes, String fileName) {
+public long getTotalBytes() {
+return totalBytes;
+}
+
+public int getPercent() {
+if (totalBytes > 0) {
+

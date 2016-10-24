@@ -1,0 +1,13 @@
+private boolean isInsert;
+
+@Override
+public boolean hasAccess() {
+return true;
+}
+
+@Override
+StringBuilder sql = new StringBuilder();
+if (isInsert) {
+sql.append(&quot;INSERT INTO &quot;);
+sql.append(super.getManagementSchema()).append(&quot;.user_commission_caps &quot;);
+

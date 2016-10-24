@@ -1,0 +1,7 @@
+fragmenter(in.readOptionalString());
+if (in.readBoolean()) {
+highlightQuery(in.readNamedWriteable(QueryBuilder.class));
+boolean hasBounaryChars = boundaryChars != null;
+out.writeBoolean(hasBounaryChars);
+if (hasBounaryChars) {
+

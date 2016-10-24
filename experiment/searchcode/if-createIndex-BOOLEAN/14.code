@@ -1,0 +1,7 @@
+private static final String CREATEINDEX = &quot;createIndex&quot;;
+private static final AtomicBoolean starting = new AtomicBoolean(false);
+out.print(&quot;创建索引：&quot; + basePath + &quot;?action=&quot; + CREATEINDEX);
+} else if (action.equals(CREATEINDEX)) {// 创建索引
+if (!starting.get()) {
+try {
+

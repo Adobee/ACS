@@ -1,0 +1,7 @@
+import org.lucene.alalysis.CustomAnalyzer;
+import org.lucene.exception.DocumentNotIndexedException;
+import org.lucene.exception.SearcherException;
+Searcher searcher = SearcherManager.getSearcher(DIR, new CustomAnalyzer(),
+new String[] { &quot;title&quot;, &quot;content&quot; });
+if(query.startsWith(&quot;-&quot;)){
+

@@ -1,0 +1,9 @@
+super.update();
+double nextX, nextY;
+nextY=this.getYExact()+this.getDy();
+nextX=this.getXExact()+this.getDx();
+if (parent!=null)
+nextX+=parent.getDx();
+//Handle case when x position goes out of bounds
+if (nextX+this.getWidth()>=right)
+

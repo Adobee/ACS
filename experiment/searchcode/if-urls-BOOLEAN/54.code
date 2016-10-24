@@ -1,0 +1,10 @@
+public static boolean isPass(String url, String... parentUrls) {
+boolean result = false;
+
+result = checkAuth(url, parentUrls);
+
+return result;
+private static boolean checkAuth(String url, String... parentUrls) {
+boolean result = false;
+EmployeeSession eSession = EmployeeSession.getUserSession();
+

@@ -1,0 +1,14 @@
+private transient volatile LocalTime time; // for lazy initialization
+
+/** milliseconds from midnight */
+private final int millisOfDay;
+
+/**
+* Parses and return an instance of {@code OTime} from the specified string.
+public static OTime fromMillisOfDay(int millisOfDay) {
+return new OTime(millisOfDay);
+}
+
+/**
+* Constructs an {@code OTime} instance from the milliseconds value since the
+

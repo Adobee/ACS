@@ -1,0 +1,9 @@
+/** @return true - if task should be interrupted; false - otherwise */
+private boolean waitIfPaused() {
+AtomicBoolean pause = engine.getPause();
+return checkTaskIsNotActual();
+}
+
+/** @return true - if task should be interrupted; false - otherwise */
+private boolean delayIfNeed() {
+

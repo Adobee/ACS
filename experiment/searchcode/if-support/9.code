@@ -1,0 +1,9 @@
+package ch.fork.AdHocRailway.model;
+
+import java.beans.PropertyChangeSupport;
+
+public abstract class AbstractItem {
+public void init() {
+if (changeSupport == null) {
+changeSupport = new PropertyChangeSupport(this);
+

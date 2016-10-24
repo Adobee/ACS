@@ -1,0 +1,6 @@
+public static DMRNodeLocation of(ModelNode addressNode, boolean resolveExpressions, boolean includeDefaults) {
+return new DMRNodeLocation(PathAddress.pathAddress(addressNode), resolveExpressions, includeDefaults);
+public DMRNodeLocation(PathAddress pathAddress, boolean resolveExpressions, boolean includeDefaults) {
+super();
+if (pathAddress == null) {
+

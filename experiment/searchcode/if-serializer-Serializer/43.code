@@ -1,0 +1,5 @@
+Object findContentSerializer = serializerProvider.getAnnotationIntrospector().findContentSerializer(member);
+if (findContentSerializer != null) {
+serializerInstance = serializerProvider.serializerInstance(member, findContentSerializer);
+if (serializerInstance == null) {
+

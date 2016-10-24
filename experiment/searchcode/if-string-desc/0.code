@@ -1,0 +1,10 @@
+public static String[] getDesc(String desc){
+String[] result = new String[2];
+if(desc.contains(&quot;转&quot;)){
+String[] _desc = desc.split(&quot;转&quot;);
+result[0] = _desc[0];
+result[1] = _desc[1];
+
+}else if(desc.contains(&quot;到&quot;)){
+String[] _desc = desc.split(&quot;到&quot;);
+

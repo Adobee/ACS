@@ -1,0 +1,10 @@
+package com.danyalvarez.jparejas;
+
+public class Tablero {
+private int dim;
+private int[][] M;
+private boolean[][] X;
+for (int i = 0; i < dim; i++) {
+for (int j = 0; j < dim; j++) {
+if (X[i][j])
+

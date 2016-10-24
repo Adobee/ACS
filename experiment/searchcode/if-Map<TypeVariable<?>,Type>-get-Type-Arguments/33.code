@@ -1,0 +1,9 @@
+private Map<TypeVariable, Type> substitutions = new HashMap<TypeVariable, Type>();
+
+Type getSubstitution(Type type) {
+if (type instanceof  TypeVariable){
+Class superclass = clazz.getSuperclass();
+
+TypeVariable[] typeParameters = superclass.getTypeParameters();
+Type[] actualTypeArguments = genericSuperclass.getActualTypeArguments();
+

@@ -1,0 +1,13 @@
+super(entry, deg);
+}
+
+public Newton(double entry, double deg, Direction direction) {
+super(entry, deg, direction);
+}
+
+public Newton(double entry, Direction direction) {
+super(entry, direction);
+}
+
+@Override
+

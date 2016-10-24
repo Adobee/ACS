@@ -1,0 +1,9 @@
+protected Stroke lookupSectionOutlineStroke(Comparable key,boolean autoPopulate){
+Stroke result=getSectionOutlineStroke();
+result=this.sectionOutlineStrokeMap.getStroke(key);
+if (result != null) {
+return result;
+}
+if (autoPopulate) {
+DrawingSupplier ds=getDrawingSupplier();
+

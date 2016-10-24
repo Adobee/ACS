@@ -1,0 +1,10 @@
+public static String format(double val, int pre, int post) {
+String ret;
+if (val >= Math.pow(10, pre))
+ret = &quot; ++&quot;;
+else {
+if (val <= -Math.pow(10, pre - 1))
+ret = &quot; --&quot;;
+else {
+if (val !=0 &amp;&amp; Math.abs(val) < Math.pow(10, -(post+1)))
+

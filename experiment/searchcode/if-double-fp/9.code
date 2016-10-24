@@ -1,0 +1,10 @@
+
+import gov.nasa.jpf.symbc.Debug;
+
+public class MyClassFP {
+public double myMethodFP(double x, double y) {
+double z = x + y;
+if (z > 0.0) {
+z = 1.0;
+} else {
+

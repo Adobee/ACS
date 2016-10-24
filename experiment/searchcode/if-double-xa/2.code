@@ -1,0 +1,7 @@
+//public Collision(double xA, double xB, double yA, double yB){
+//	collision(xA, xB, yA, yB);
+//}
+
+public boolean collision(double xA, double xB, double yA, double yB){
+if(xA > xB -right &amp;&amp; xA < xB+left  &amp;&amp; yA < yB + 16 &amp;&amp; yA > yB-20){ //		if(xA > xB -32 &amp;&amp; xA < xB +20 &amp;&amp; yA < yB +16 &amp;&amp; yA > yB-20){
+

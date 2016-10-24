@@ -1,0 +1,6 @@
+/** The row dimension of the matrix whose decomposition is being computed. */
+private final int rowDimension;
+double columnL2Norm = 0;
+for (int i = k; i < rowDimension; i++) {
+columnL2Norm = MathUtilities.computeHypotenuse(columnL2Norm, QR[i][k]);
+

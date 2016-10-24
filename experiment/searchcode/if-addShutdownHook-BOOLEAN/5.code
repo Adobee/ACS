@@ -1,0 +1,10 @@
+public void run() {
+if (this.socketServer != null) {
+this.socketServer.stop();
+}
+}
+
+public void addShutDownHook() {
+try {
+this.runtime.addShutdownHook(this);
+

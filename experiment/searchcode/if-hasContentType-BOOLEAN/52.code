@@ -1,0 +1,7 @@
+* @return true if the specified file has the specified content type, else false.
+*/
+protected boolean hasContentType(String filename, String contentTypeId) {
+boolean hasContentType = false;
+final IContentType[] contentTypes =
+Platform.getContentTypeManager().findContentTypesFor(filename);
+

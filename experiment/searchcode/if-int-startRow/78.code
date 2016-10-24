@@ -1,0 +1,11 @@
+private void helper(int[][] matrix, int startRow, int endRow, int startCol,
+int endCol, int startNum) {
+if (startRow > endRow || startCol > endCol) {
+return;
+}
+// top row
+for (int j = startCol; j <= endCol; j++) {
+matrix[startRow][j] = startNum++;
+}
+if (startRow == endRow) {
+

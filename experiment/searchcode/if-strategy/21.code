@@ -1,0 +1,10 @@
+package pl.adam.wzorce.strategy;
+
+public class Context {
+private Strategy strategy;
+public Context(int i) {
+if (i != 0) {
+strategy = new StaticStrategy();
+} else {
+strategy = new ConsoleStrategy();
+

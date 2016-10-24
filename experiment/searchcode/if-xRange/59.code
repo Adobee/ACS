@@ -1,0 +1,7 @@
+Used to implement the builtin xrange function.
+
+Significant patches contributed by Jason Orendorff - jorendor@cbu.edu
+public PyXRange(int start, int stop, int step) {
+if (step == 0)
+throw Py.ValueError(&quot;zero step for xrange()&quot;);
+

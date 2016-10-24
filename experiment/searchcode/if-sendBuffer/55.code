@@ -1,0 +1,8 @@
+private static ByteBuffer sendBuffer = ByteBuffer.allocate(BLOCK);
+
+public static void main(String[] args) throws IOException {
+client.register(selector, SelectionKey.OP_WRITE);
+}
+}else if(key.isWritable()){
+sendBuffer.clear();
+

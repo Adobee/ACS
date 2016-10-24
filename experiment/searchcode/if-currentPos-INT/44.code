@@ -1,0 +1,9 @@
+* @return Double representing minimum path to cross the map/desert
+*/
+public double solveRecursively(double carrying, int currentPos) {
+if(currentPos<problem.length){
+return Math.min(3 + solveRecursively(carrying, currentPos), Math.min(3 + solveRecursively(CANNOE_INT, currentPos), 2 + solveRecursively(NOTHING, currentPos)));
+}
+}
+if(problem[currentPos]==PLANK){
+

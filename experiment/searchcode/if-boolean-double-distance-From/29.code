@@ -1,0 +1,11 @@
+protected double distanceMultiplier = 3.0;
+protected boolean adjustConfidence = true;
+protected double fullDistanceMultiplier = 1.0;
+return getAverageTrainingDistance() * fullDistanceMultiplier;
+}
+
+@Override
+public boolean isInside(Instance i)
+{
+Double dist = getDistance(i);
+

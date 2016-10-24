@@ -1,0 +1,16 @@
+this.deadzone = deadzone;
+this.alpha = alpha;
+}
+
+public void setAlpha( double newAlpha) {
+if (newAlpha >= 1.0)
+alpha = newAlpha;
+}
+
+public double getAlpha() {
+return alpha;
+}
+
+public double getValue() {
+if ( Math.abs( value - setpoint ) < deadzone )
+

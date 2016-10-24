@@ -1,0 +1,9 @@
+public final class Exceptions {
+public static RuntimeException throwUncheckedIO(Throwable ex) throws IOException {
+if (ex instanceof IOException) {
+throw throwUnchecked(ex);
+}
+
+public static RuntimeException throwUnchecked(Throwable ex) {
+if (ex instanceof RuntimeException) {
+

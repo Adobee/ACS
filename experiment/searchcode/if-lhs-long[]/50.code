@@ -1,0 +1,10 @@
+@Override
+public void run(Program program) {
+if(lhs instanceof Statement) {
+((Statement) lhs).run(program);
+}
+if(rhs instanceof Statement) {
+((Statement) rhs).run(program);
+}
+if(lhs.getValue().length <= 8 &amp;&amp; rhs.getValue().length <= 8) {
+

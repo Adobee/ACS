@@ -1,0 +1,7 @@
+List<Problem> problems = problemDao.getProblemList(length, beginIndex);
+if (problems != null &amp;&amp; problems.size() > 0) {
+List<ProblemListItem> problemListItems = new ArrayList<ProblemListItem>();
+if (session.get(&quot;stuid&quot;) != null) {
+// 如果是在登录状态
+for (Problem problem : problems) {
+

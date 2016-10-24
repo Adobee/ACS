@@ -1,0 +1,10 @@
+import java.util.*;
+
+public class Solution {
+public boolean isSymmetric(TreeNode root) {
+return isSymmetric(root.left, root.right);
+}
+
+public boolean isSymmetric(TreeNode a, TreeNode b) {
+if (a == null &amp;&amp; b == null) return true;
+

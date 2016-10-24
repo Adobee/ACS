@@ -1,0 +1,16 @@
+public void update()
+{
+ticks++;
+if(ticks > deltaTicks)
+{
+ticks = 0;
+updateNeeded = true;
+}
+}
+
+public boolean isUpdateNeeded()
+{
+if(updateNeeded)
+{
+updateNeeded = false;
+

@@ -1,0 +1,10 @@
+mgr = getEntityManager();
+Query query =
+mgr.createQuery(&quot;select from MessageData as MessageData&quot;);
+if (cursorString != null &amp;&amp; cursorString != &quot;&quot;)
+try
+{
+if (containsMessageData(messagedata))
+{
+throw new EntityExistsException(&quot;Object already exists&quot;);
+

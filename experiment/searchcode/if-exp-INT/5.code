@@ -1,0 +1,10 @@
+class FastExp{
+public static void main(String[]args){
+System.out.println(fastExp(123,4));
+}
+
+public static int fastExp(int base, int exp){
+int ret = 1;
+while(exp > 0){
+if ((exp &amp; 1)==1) ret *= base;
+

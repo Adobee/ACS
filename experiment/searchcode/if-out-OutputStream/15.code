@@ -1,0 +1,11 @@
+public class DecodeDeltaOutputStream extends OutputStream {
+private OutputStream out;
+private byte last;
+
+public DecodeDeltaOutputStream(OutputStream out) {
+this.out = out;
+last = 0;
+}
+
+public void write(final int r) {
+

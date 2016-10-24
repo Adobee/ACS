@@ -1,0 +1,12 @@
+public void endBatch() {
+
+vertices.setVertices(verticesBuffer, 0, bufferIndex);
+
+if (numSprites > 0) {
+vertices.bind();
+verticesBuffer[bufferIndex++] = x1;
+verticesBuffer[bufferIndex++] = y1;
+
+if (opacity) {
+verticesBuffer[bufferIndex++] = 1.0f;
+

@@ -1,0 +1,8 @@
+private final int maxIterations;
+/** Limit for fitness value. */
+private final double stopFitness;
+/** Stop if x-changes larger stopTolUpX. */
+final RealMatrix bestArz) {
+// minor correction if hsig==false
+double oldFac = hsig ? 0 : ccov1Sep * cc * (2 - cc);
+

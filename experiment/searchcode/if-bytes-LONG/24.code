@@ -1,0 +1,6 @@
+public static byte[] unsignedLongToBytes8(String value) {
+byte[] bytes = new BigInteger(value).toByteArray();
+if (bytes.length == 8) {
+return bytes;
+} else if (bytes.length < 8) {
+

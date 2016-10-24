@@ -1,0 +1,6 @@
+String defaultValue = column.getDefaultValue();
+FieldType fieldType = FieldType.OBJECT;
+if (dataType.matches(&quot;(?i)(TINYINT|SMALLINT|MEDIUMINT|INT(EGER)?)(\\sUNSIGNED)?&quot;)) {
+fieldType = FieldType.INTEGER_NUMBER;
+} else if (dataType.matches(&quot;(?i)BIGINT(\\sUNSIGNED)?&quot;)) {
+

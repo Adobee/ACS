@@ -1,0 +1,13 @@
+public class RWLock extends ReentrantReadWriteLock
+{
+private static final long serialVersionUID = 1L;
+
+private long timeoutMillis;
+
+public RWLock(long timeoutMillis)
+{
+this.timeoutMillis = timeoutMillis;
+}
+
+public RWLock(long timeoutMillis, boolean fair)
+

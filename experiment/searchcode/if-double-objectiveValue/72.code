@@ -1,0 +1,10 @@
+import dk.diku.robust.core.model.SolutionData;
+
+public class AverageObjectiveValuePlot extends AbsMultiDoublePlot {
+
+public AverageObjectiveValuePlot() {
+for(SolutionData sol : solutions) {
+objectiveValueSum += sol.objectiveValue;
+}
+double val = objectiveValueSum / Math.max(1, solutions.size());
+

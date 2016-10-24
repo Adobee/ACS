@@ -1,0 +1,9 @@
+public final class JmsBrokerService extends BrokerService {
+
+private boolean autoStart;
+
+@Override
+public void start(boolean force) throws Exception {
+if(autoStart) {
+super.start(force);
+

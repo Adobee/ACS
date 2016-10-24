@@ -1,0 +1,12 @@
+IListWriter w = vf.listWriter();
+
+if (type.hasFieldNames()) {
+for (int i = 0; i < type.getArity(); i++) {
+w.append(vf.constructor(Factory.Symbol_Label, vf.string(type.getFieldName(i)), type.getFieldType(i).accept(this)));
+return vf.constructor(Factory.Symbol_List, type.getElementType().accept(this));
+}
+
+@Override
+public IValue visitMap(Type type) {
+if (type.hasFieldNames()) {
+

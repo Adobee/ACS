@@ -1,0 +1,5 @@
+private boolean isPhase1Solved(final SimplexTableau tableau) {
+if (tableau.getNumArtificialVariables() == 0) {
+public boolean isOptimal(final SimplexTableau tableau) {
+if (tableau.getNumArtificialVariables() > 0) {
+

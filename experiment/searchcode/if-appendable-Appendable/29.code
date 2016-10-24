@@ -1,0 +1,9 @@
+@Test(expectedExceptions=RuntimeException.class)
+public void shouldThrowRuntimeExceptionIfIOExceptionWhileAppending() throws IOException {
+Appendable mockAppendable = Mockito.mock(Appendable.class);
+testInstance.appendFirstIfPresent(mockAppendable, PROVIDED_APPENDABLE);
+}
+
+@Test
+public void shouldAppendFirstStringIfProvided() throws IOException {
+

@@ -1,0 +1,14 @@
+private String name;
+private double size;
+private int depth;
+
+public PentaPlexityLSystem(String name, Turtle t, double size, int depth){
+t.penDown();
+}
+
+
+public void f(Turtle t, int depth){
+if(depth == 0)
+t.move(getSize());
+else{
+

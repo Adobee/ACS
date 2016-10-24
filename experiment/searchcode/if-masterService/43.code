@@ -1,0 +1,9 @@
+@Config(manifest = Config.NONE, sdk = 21)
+public class SqliteRpcTest {
+
+private MasterService masterService;
+
+private SQLiteDatabase sqlite;
+final RpcServiceFactory factory = new RpcServiceFactory(context);
+this.masterService = factory.newRpcService(MasterService.class, &quot;sqlite://test.sqlite&quot;);
+

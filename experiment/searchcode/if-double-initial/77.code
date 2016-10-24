@@ -1,0 +1,7 @@
+public class RandomDoubleValue extends AbstractRandomNumberValue<Double> {
+
+private Double initialValue = null;
+public Double nextValue() {
+Double toReturn = PRNG.nextDouble(getLowerBound(), getUpperBound());
+if(initialValue == null)
+

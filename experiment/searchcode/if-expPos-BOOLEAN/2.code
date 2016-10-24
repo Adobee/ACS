@@ -1,0 +1,11 @@
+matcher = matchRegex(Regex.whitespace, expression, expPos, expLen);
+if (isMatched)
+{
+expPos = matcher.end();
+continue;
+matcher = matchRegex(Regex.number, expression, expPos, expLen);
+if (isMatched)
+{
+expPos = matcher.end();
+list.add(matcher.group());
+

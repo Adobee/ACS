@@ -1,0 +1,11 @@
+import org.springframework.util.Assert;
+
+import java.time.LocalDateTime;
+import java.util.*;
+import java.util.stream.Collectors;
+public List<TimetableEntry> findByTime(LocalDateTime localDateTime, Time time) {
+Assert.notNull(localDateTime);
+List<TimetableEntry> byTime;
+
+if (Time.NOW.equals(time)) {
+

@@ -1,0 +1,7 @@
+if (Double.compare(rect.minX, minX) != 0) return false;
+if (Double.compare(rect.minY, minY) != 0) return false;
+if (Double.compare(rect.width, width) != 0) return false;
+double height = Math.max(0, this.height - topInset - bottomInset);
+double minY = this.minY + topInset;
+if (height == 0) {
+

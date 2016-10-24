@@ -1,0 +1,8 @@
+public boolean equals(final Matrix4x4 matrix, final double precision) {
+for (int i = 0; i < 16; i++) {
+if (Math.abs(this.values[i] - matrix.values[i]) > precision) {
+double det = values[0] * inv[0] + values[1] * inv[4] + values[2] * inv[8] + values[3] * inv[12];
+
+if (det == 0) {
+return null;
+

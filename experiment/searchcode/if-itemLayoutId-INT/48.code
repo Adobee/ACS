@@ -1,0 +1,10 @@
+private MYSimpleListViewAdapter adapter;
+private int itemLayoutID = 0;
+
+public MYSimpleListView(Context context) {
+this(context, null, 0);
+for (int n = 0; n < types.getIndexCount(); n++) {
+int attr = types.getIndex(n);
+
+if (attr == R.styleable.MYSimpleListView_itemView) {
+

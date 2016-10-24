@@ -1,0 +1,9 @@
+public ExponentialDecayFunction(double initValue,
+double valueAtNumCall,
+long numCall) {
+if (initValue <= 0) {
+throw new NumberIsTooLargeException(valueAtNumCall, initValue, false);
+}
+if (numCall <= 0) {
+throw new NotStrictlyPositiveException(numCall);
+

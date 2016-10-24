@@ -1,0 +1,9 @@
+Pattern p = rp.getPattern(patternName);
+String prob = &quot;&quot;;
+
+if (p.getProblems() != null){
+for (Problem pr : p.getProblems()) {
+public String showPatternImage(String patternName) {
+Pattern p = rp.getPattern(patternName);
+if(p.getDiagram() != null){
+

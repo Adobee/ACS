@@ -1,0 +1,15 @@
+for(int i=2;i<height;i++){
+for(int j=1;j<width;j++){
+
+
+//border
+if(i==2)
+L1[i][j]= 1;
+if(i==height-1)
+int right=L1[i][j+1];
+
+if(top+bottom+left+right>2){
+
+if(r.nextInt(10)>5)
+L1[i][j+1]=0;
+

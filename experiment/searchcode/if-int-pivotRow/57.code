@@ -1,0 +1,7 @@
+public void reduce( DenseMatrix64F A , int coefficientColumns) {
+if( A.numCols < coefficientColumns)
+throw new IllegalArgumentException(&quot;The system must be at least as wide as A&quot;);
+// select the row to pivot by finding the row with the largest column in &#39;i&#39;
+int pivotRow = -1;
+double maxValue = tol;
+

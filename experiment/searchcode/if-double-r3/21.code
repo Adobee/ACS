@@ -1,0 +1,10 @@
+r3 = r3.getWidth();
+r4 = (double) r3;
+r6 = 4614256656552045848; // 0x400921fb54442d18 float:3.37028055E12 double:3.141592653589793;
+r2.translate(r10, r10, r3);
+if (r0 >= r11) goto L_0x0040;
+L_0x0036:
+r2 = r12.d;
+r3 = (float) r0;
+r2.rotateY(r3);
+

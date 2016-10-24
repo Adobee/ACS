@@ -1,0 +1,13 @@
+public static void findMaxSubArray(int[] inputArray){
+
+int maxStartIndex=0;
+int maxEndIndex=0;
+int maxSum = Integer.MIN_VALUE;
+
+int cumulativeSum= 0;
+for (int currentIndex = 0; currentIndex < inputArray.length; currentIndex++) {
+
+int eachArrayItem = inputArray[currentIndex];
+
+/*if (cumulativeSum<0){
+

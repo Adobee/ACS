@@ -1,0 +1,10 @@
+public void setQuery() throws Exception {
+BoolQueryBuilder qb = QueryBuilders.boolQuery();
+int papernums = 0;
+
+if (lsParam.getKeyObj().checkedType == 3) {
+String[] orderByStr = orderBy.split(&quot; &quot;);
+
+if(&quot;desc&quot;.equals(orderByStr[1])){
+fsort= SortBuilders.fieldSort(orderByStr[0]).order(SortOrder.DESC);
+

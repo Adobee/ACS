@@ -1,0 +1,10 @@
+public void addDataToSeries(SeriesSets value){
+seriesValues.add(value);
+}
+
+@Override
+public boolean equals(Object obj) {
+if(obj instanceof Series){
+Series series = (Series)obj;
+return seriesName.equals(series.getSeriesName());
+

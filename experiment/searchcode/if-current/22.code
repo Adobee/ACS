@@ -1,0 +1,15 @@
+public void menu(){
+currentState = GameState.MENU;
+}
+
+public void update(float delta){
+
+if (currentState == GameState.PLAYING){
+boolean rotated = false;
+
+
+switch(currentTetromino.type){
+
+case 1:
+if (currentTetromino.rotation == 0){
+

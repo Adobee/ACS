@@ -1,0 +1,9 @@
+public static String doResolve(final String toResolve) throws IllegalStateException {
+if(build == null)
+throw new IllegalStateException(&quot;Variable resolver was not initialized!&quot;);
+public static String buildVar(final AbstractBuild<?, ?> build,final String toResolve) {
+if(toResolve == null)
+return null;
+
+VariableResolver<String> vr = build.getBuildVariableResolver();
+

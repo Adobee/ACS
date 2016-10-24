@@ -1,0 +1,11 @@
+private String              httpMethod;
+private String              httpUrl;
+
+
+public OAuthRequest(String httpUrl, String httpMethod) {
+this.httpUrl = httpUrl;
+}
+
+public String getSignatureBaseString(){
+StringBuffer signature = new StringBuffer();
+

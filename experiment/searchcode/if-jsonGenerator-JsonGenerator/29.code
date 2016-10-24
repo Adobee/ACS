@@ -1,0 +1,7 @@
+jsonGenerator.writeObjectFieldStart(&quot;brewery&quot;);
+if (beer.getBrewery().isUnknown()) {
+jsonGenerator.writeBooleanField(&quot;unknown&quot;, true);
+jsonGenerator.writeObjectFieldStart(&quot;beertype&quot;);
+if (beer.getBeertype().isUnknown()) {
+jsonGenerator.writeBooleanField(&quot;unknown&quot;, true);
+

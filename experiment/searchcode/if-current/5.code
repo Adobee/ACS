@@ -1,0 +1,11 @@
+public void merge(int A[], int m, int B[], int n) {
+
+int currentA = m-1;
+int currentB = n-1;
+int current = m+n-1;
+
+while (currentA>=0 &amp;&amp; currentB>=0) {
+if (A[currentA]>B[currentB]) {
+A[current] = A[currentA];
+currentA--;
+

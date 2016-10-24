@@ -1,0 +1,11 @@
+if(ttl > 0) {
+ttl -= deltatime;
+}
+
+if(dying == false) {
+if ((ttl == 0) || (ttl < -1)) {
+killMe(300);
+} else if (ttl == -1) {
+//nothing
+} else if (ttl <= (0.75 * originalTTL)) {
+

@@ -1,0 +1,9 @@
+public Hashtable<String, Serializable> getSetting() {
+if(settingDetails == null || settingDetails.equals(&quot;&quot;))
+return null;
+public <T extends Serializable> T getSetting(Class<T> T) {
+if(settingDetails == null || settingDetails.equals(&quot;&quot;))
+return null;
+
+T obj = ObjectStringConverter.stringToObject(settingDetails, T);
+

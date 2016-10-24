@@ -1,0 +1,13 @@
+public static void forceMkdir(File directory) throws IOException {
+if(directory.exists()) {
+if(!directory.isDirectory()) {
+throw new IOException(&quot;A file with given directory name (&quot; + directory + &quot;) exists&quot;);
+}
+} else {
+if(!directory.mkdirs()) {
+throw new IOException(&quot;Couldn&#39;t create directory &quot; + directory);
+}
+}
+}
+}
+

@@ -1,0 +1,10 @@
+public class CSVTagCollector implements CSVCallback {
+private float minDocFreq;
+
+private HashMap<String,Integer> tagMap = new HashMap<String,Integer>();
+private int max = 0;
+
+private Logger log = Logger.getLogger(this.getClass());
+
+public CSVTagCollector(float minDocFreq) {
+

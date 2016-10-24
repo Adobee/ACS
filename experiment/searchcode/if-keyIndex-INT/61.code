@@ -1,0 +1,17 @@
+int keyIndex = start;
+
+boolean stepForward = true;
+
+while (start <= end) {
+
+if (stepForward) {
+int tmp = array[end];
+array[keyIndex] = tmp;
+keyIndex = end;
+stepForward = false;
+}
+end--;
+} else {
+int tmp = array[start];
+if (tmp > key) {
+

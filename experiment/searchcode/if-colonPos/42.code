@@ -1,0 +1,6 @@
+int colonPos = s.indexOf (&quot;:&quot;);
+if(colonPos!=1&amp;&amp;colonPos!=2){
+throw new IllegalArgumentException(&quot;invalid time&quot;);
+}
+if(s.substring(colonPos+1).length()!=2||s.substring(0,colonPos-1).length() >2){
+

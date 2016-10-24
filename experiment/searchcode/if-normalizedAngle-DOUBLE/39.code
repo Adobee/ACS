@@ -1,0 +1,7 @@
+import robot.WaveHitEvent;
+
+public class BlueGun implements Gun{
+private static final double BULLET_POWER = 1.9;
+double correctBearing = RobotUtils.absoluteBearing(e.source, e.targetLocation) - e.bearing;
+double normalizedAngle = Utils.normalRelativeAngle(correctBearing);
+

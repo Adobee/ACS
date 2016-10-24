@@ -1,0 +1,9 @@
+import nl.casperkoning.dna.model.Protein;
+
+import javax.json.Json;
+import javax.json.stream.JsonGenerator;
+import java.io.Writer;
+public void stopWriting() {
+if (this.jsonGenerator != null) {
+this.jsonGenerator.writeEnd().writeEnd().flush();
+

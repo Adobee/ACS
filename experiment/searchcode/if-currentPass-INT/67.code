@@ -1,0 +1,8 @@
+synchronized (passMonitor) {
+if(!currentPass.isCompleted()) {
+try {
+passMonitor.wait();
+public static void signalRun(String runId) {
+final PerfTestRun run = currentPass.getRun(runId);
+if (run.isWaitingForSignal()) {
+

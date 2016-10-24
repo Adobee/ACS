@@ -1,0 +1,9 @@
+public boolean renderWorldBlock (IBlockAccess world, int x, int y, int z, Block block, int modelId, RenderBlocks renderer) {
+if (block instanceof BlockSmallFire)
+return renderWorldBlock(world, x, y, z, (BlockSmallFire) block, modelId, renderer);
+double vMin = icon2.getMinV();
+double uMax = icon2.getMaxU();
+double vMax = icon2.getMaxV();
+
+double y0 = y - .0625;
+

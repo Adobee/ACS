@@ -1,0 +1,13 @@
+cn1.d(j, k, l, ly.aP.bc);
+}
+
+public void a(cn cn1, int j, int k, int l, Random random)
+{
+if(bc == ly.aP.bc)
+return 4 + random.nextInt(2);
+}
+
+public void b(cn cn1, int j, int k, int l, Random random)
+{
+if(a)
+

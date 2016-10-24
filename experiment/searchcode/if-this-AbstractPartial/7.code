@@ -1,0 +1,14 @@
+protected void setModels() throws Exception {
+super.setModels();
+
+// fragment
+setFragment();
+if (this.fragment == null) return;
+
+// tag
+Tag tag = getTag();
+if (tag == null) return;
+
+// tagging
+this.fragment.addTagByUser(tag, getUser());
+

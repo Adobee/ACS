@@ -1,0 +1,6 @@
+public static ChainedVersion fromStringForm(String stringForm) {
+if (stringForm.length() == 1 &amp;&amp; stringForm.equals(VERSION_SEPERATOR)) {
+String[] priorVersion_version = stringForm.split(VERSION_SEPERATOR);
+if (priorVersion_version.length != 2) {
+throw new IllegalArgumentException(&quot;version=&quot; + stringForm + &quot; is not of the form &#39;priorVersion:currentVersion&#39;&quot;);
+

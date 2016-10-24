@@ -1,0 +1,8 @@
+public abstract class BaseSwipeRefreshAFragment<P extends BasePresenter> extends BaseFragment<P> implements ISwipeRefreshView{
+
+//    @Bind(R.id.swipe_refresh_layout)
+protected SwipeRefreshLayout mSwipeRefreshLayout;
+mSwipeRefreshLayout.setColorSchemeResources(R.color.colorPrimary, R.color.colorPrimaryDark, R.color.colorAccent);
+mSwipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+@Override
+

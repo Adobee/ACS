@@ -1,0 +1,10 @@
+public class ThresholdFilter implements EventHandler<SinkEvent, Boolean> {
+
+private boolean above;
+private long threshold;
+
+public ThresholdFilter(long threshold, boolean above) {
+public Boolean handle(SinkEvent event) {
+if (above &amp;&amp; event.getValue() > threshold) {
+return false;
+

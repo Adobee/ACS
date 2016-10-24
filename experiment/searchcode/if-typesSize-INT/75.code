@@ -1,0 +1,7 @@
+in.readFully(querySource);
+shardId = in.readVInt();
+int typesSize = in.readVInt();
+if (typesSize > 0) {
+types = new String[typesSize];
+for (int i = 0; i < typesSize; i++) {
+

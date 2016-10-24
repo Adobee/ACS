@@ -1,0 +1,14 @@
+int y = y0;
+
+for (int i = 0; i <= y1 - y0; ++i) {
+if ((y + i) % (dash_length + 1) == 0 )
+setPoint(x, y + i, g);
+y0 = y0 ^ y1;
+}
+
+int x = x0;
+int y = y0;
+
+for (int i = 0; i <= x1 - x0; ++i) {
+if ((x + i) % (dash_length + 1) == 0)
+

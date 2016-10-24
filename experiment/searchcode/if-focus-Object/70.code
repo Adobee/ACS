@@ -1,0 +1,15 @@
++ &quot;&#39;; use auto focus? &quot; + useAutoFocus);
+start();
+}
+
+
+public synchronized void onAutoFocus(boolean success, Camera theCamera) {
+if (active) {
+outstandingTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+}
+}
+
+synchronized void start() {
+if (useAutoFocus) {
+active = true;
+

@@ -1,0 +1,9 @@
+void setDownloadButtonEnabled(boolean enabled);
+
+void markSubtitleDownloaded(Subtitle subtitle);
+
+void showEmptyText(@StringRes int emptyTextId);
+private void loadSubtitle() {
+if (!loadCachedSubtitle()) {
+view.setShowProgressView(true);
+

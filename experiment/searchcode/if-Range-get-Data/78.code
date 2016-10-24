@@ -1,0 +1,10 @@
+import org.apache.accumulo.core.data.Range;
+
+import java.util.*;
+
+/**
+* Pass in a target set of ranges, such as { [b,g], (j,m], [q,+inf) }. Infinite range by default.
+Key seekRangeStart = seekRange.getStartKey();
+if (seekRangeStart != null)
+while (iter.hasNext() &amp;&amp; !iter.peek().isInfiniteStopKey()
+

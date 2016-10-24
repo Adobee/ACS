@@ -1,0 +1,10 @@
+public Interval(Date startTime, Date endTime) {
+if (startTime.after(endTime)) {
+throw new IllegalArgumentException(&quot;endTime must be after startTime&quot;);
+this.startTime = startTime;
+this.endTime = endTime;
+}
+
+public long getDuration() {
+return endTime.getTime() - startTime.getTime();
+

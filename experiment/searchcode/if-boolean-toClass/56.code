@@ -1,0 +1,12 @@
+// Can only create an ansi data type from primitive classes
+if (!Java.isPrimitive(toClass))
+{
+throw new InvalidParameterException(&quot;The class &quot; + toClass + &quot; is not a primitive type&quot;, &quot;tcClass&quot;);
+throw new ObjectNotCreatedException(&quot;Could not create the ANSIDataType using the class &quot; + toClass.getName());
+}
+
+@Override
+public boolean hasGUID()
+{
+return true;
+

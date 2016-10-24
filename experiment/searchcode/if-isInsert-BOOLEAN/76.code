@@ -1,0 +1,10 @@
+private boolean isInsert;
+
+@Override
+public boolean hasAccess() {
+return true;
+public String getPreparedStatementString() {
+StringBuilder sql = new StringBuilder();
+if (isInsert) {
+sql.append(&quot;INSERT INTO client_rate_templates &quot;);
+

@@ -1,0 +1,11 @@
+Scanner scan = new Scanner(System.in);
+
+String[] input = scan.nextLine().split(&quot; &quot;);
+String temp = &quot;&quot;;
+
+for (int index = 0; index < input[input.length - 1].length() - 1; index++) {
+String regex = &quot;([a-zA-Z0-9]+[.,-]?[a-zA-Z0-9]+)+[@]{1}([a-zA-Z0-9]+[.-]?[a-zA-Z0-9]+[.]{1}[a-zA-Z0-9]+)+&quot;;
+
+for (String word : input) {
+if (word.matches(regex)) {
+

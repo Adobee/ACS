@@ -1,0 +1,10 @@
+small epsilon to the last two */
+double myEps;
+if (path[left] >= 0)
+myEps = EPS;
+else
+small epsilon to the last two; return s. */
+double myEps;
+if (path[left] >= 0)
+myEps = EPS;
+

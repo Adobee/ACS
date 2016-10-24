@@ -1,0 +1,6 @@
+*     When expungeDeletes is called, we only merge away a segment if its delete
+*     percentage is over this threshold. Default is <code>10</code>.
+// max merge at once should be at least 2
+if (newMaxMergeAtOnce <= 1) {
+newMaxMergeAtOnce = 2;
+

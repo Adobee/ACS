@@ -1,0 +1,11 @@
+// sign bit is in the same place for long and double:
+boolean aIsNegative = rawBitsA < 0;
+boolean bIsNegative = rawBitsB < 0;
+
+// compare signs
+if (aIsNegative != bIsNegative) {
+private static int compareAcrossSubnormalThreshold(long normalRawBitsA, long subnormalRawBitsB, boolean isNegative) {
+long fracB = subnormalRawBitsB &amp; FRAC_MASK;
+if (fracB == 0) {
+// B is zero, so A is definitely greater than B
+

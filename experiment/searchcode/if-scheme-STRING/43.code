@@ -1,0 +1,9 @@
+SchemeObject script = SchemeUtils.car(SchemeUtils.car(schemeObject));
+if(script instanceof SchemeString){
+SchemeString name = ((SchemeString) script);
+try(InputStream in = this.fs.openRead(this.fs.exists(&quot;/usr/bin/&quot; + name.value + &quot;.scm&quot;) ? &quot;/usr/bin/&quot; + name.value + &quot;.scm&quot; : &quot;/bin/&quot; + name.value + &quot;.scm&quot;)){
+e.printStackTrace(System.err);
+return new SchemeString(e.getMessage());
+}
+} else if(script instanceof SchemeInputPort){
+

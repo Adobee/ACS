@@ -1,0 +1,9 @@
+* @author nick
+*/
+public class TeeOutputStream
+extends OutputStream {
+
+private final OutputStream out;
+public TeeOutputStream(OutputStream out, OutputStream tee, boolean autoFlush) {
+if (out == null || tee == null) {
+

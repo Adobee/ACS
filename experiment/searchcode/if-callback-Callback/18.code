@@ -1,0 +1,9 @@
+public void handle(Callback[] arg0) throws IOException,
+UnsupportedCallbackException {
+// TODO Auto-generated method stub
+for(Callback callback : arg0){
+if(callback instanceof NameCallback){
+((NameCallback)callback).setName(username);
+}
+else if(callback instanceof PasswordCallback){
+

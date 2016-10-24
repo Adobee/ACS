@@ -1,0 +1,13 @@
+xyz[0] = x;
+xyz[1] = y;
+xyz[2] = z;
+}
+
+public Vector3(double[] array) {
+if (array.length != 3) {
+public Vector3 div(double c) {
+return new Vector3(xyz[0] / c, xyz[1] / c, xyz[2] / c);
+}
+
+public double dot(Vector3 rhs) {
+

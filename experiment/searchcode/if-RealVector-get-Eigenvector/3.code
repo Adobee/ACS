@@ -1,0 +1,8 @@
+final double[][] dataPoints = node.getDataPoints().toArray(new double[][]{});
+if(dataPoints.length < 10) return list;
+final RealVector centroid;
+final double[] eigenvalues = eigenDecomposition.getRealEigenvalues();
+for(int i=0;i<eigenvalues.length;i++)
+{
+final RealVector eigenvector = eigenDecomposition.getEigenvector(i);
+

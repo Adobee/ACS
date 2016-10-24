@@ -1,0 +1,7 @@
+public static SmsResponse forCode(String responseCode){
+int responseCodeInt = Integer.parseInt(responseCode);
+if (responseCodeInt >=1){
+for (SmsResponse response: SmsResponse.values()){
+if (response.responseCode.equals(responseCode)){
+return response;
+

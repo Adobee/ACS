@@ -1,0 +1,10 @@
+public static void main(String[] args) {
+while (scan.hasNext()) {
+double xA1 = scan.nextDouble();
+double yA1 = scan.nextDouble();
+double xB2 = scan.nextDouble();
+double yB2 = scan.nextDouble();
+
+if (xA1 <= xB2 &amp;&amp; xB1 <= xA2 &amp;&amp;
+yA1 <= yB2 &amp;&amp; yB1 <= yA2) {
+

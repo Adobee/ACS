@@ -1,0 +1,7 @@
+public static byte getNextState(byte oldState, boolean taken) {
+byte newState = 0;
+if ((oldState == 0 &amp;&amp; !taken) || (oldState == 1 &amp;&amp; !taken)) {
+newState = 0;
+}
+else if ((oldState == 0 &amp;&amp; taken) || (oldState == 2 &amp;&amp; !taken)) {
+

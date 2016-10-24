@@ -1,0 +1,10 @@
+objectMapper.includeInAllIfNotSet(includeInAll);
+
+return (Y) objectMapper;
+}
+
+protected ObjectMapper createMapper(String name, String fullPath, boolean enabled, Nested nested, Dynamic dynamic, ContentPath.Type pathType, Map<String, Mapper> mappers, @Nullable @IndexSettings Settings settings) {
+String fieldName = Strings.toUnderscoreCase(entry.getKey());
+Object fieldNode = entry.getValue();
+if (parseObjectOrDocumentTypeProperties(fieldName, fieldNode, parserContext, builder) || parseObjectProperties(name, fieldName,  fieldNode, parserContext, builder)) {
+

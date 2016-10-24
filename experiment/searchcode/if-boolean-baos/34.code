@@ -1,0 +1,14 @@
+private OutputStream writer;
+private java.io.ByteArrayOutputStream baos;
+private Stack tags;
+boolean inside_tag;
+
+public XmlWriter( final OutputStream out ) throws UnsupportedEncodingException {
+public void startTag( final String tag ) throws IOException {
+if ( this.inside_tag ) {
+baos.write( &#39;>&#39; );
+}
+
+baos.write( &#39;<&#39; );
+baos.write( tag.getBytes() );
+

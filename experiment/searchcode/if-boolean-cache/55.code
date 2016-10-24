@@ -1,0 +1,11 @@
+return cacheManager.getCache(cacheName);
+}
+
+@Override
+public boolean contains(String cacheName, String cacheKey) {
+Cache cache = getCache(cacheName);
+Element element = cache.get(cacheKey);
+if (element == null) {
+return false;
+} else {
+

@@ -1,0 +1,9 @@
+* Comparator for descriptions to sort according to inclusion in a failure list.
+* A description is considered to have failures if its name or one of its
+* transitive children&#39;s names are in the failures list. If neither or both have
+* @return -1 if only d1 has failures, 1 if only d2 has failures, 0
+*         otherwise
+*/
+@Override
+public int compare(final Description d1, final Description d2) {
+

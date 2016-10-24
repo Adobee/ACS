@@ -1,0 +1,13 @@
+denom = 1;
+}
+
+// constructor
+public Rational(int num_, int denom_) {
+if (denom_ == 0)
+throw new IllegalArgumentException(&quot;Denom should not be zero&quot;);
+this.num /= nod;
+this.denom /= nod;
+if (this.denom < 0)
+{
+this.num *= -1;
+

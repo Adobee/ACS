@@ -1,0 +1,12 @@
+public synchronized LocationX addCompacted(LocationX compactedInPrevZoom,
+LocationX pm) {
+if (size() == 0) {
+add(pm);
+return null;
+}
+
+if (size() > 1)
+removeLast();
+
+if (compactedInPrevZoom != null) {
+

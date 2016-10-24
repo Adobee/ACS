@@ -1,0 +1,5 @@
+*  You should have received a copy of the GNU Affero General Public License in
+*  the LICENSE file along with Oracle Berkeley DB Java Edition.  If not, see
+* Checks the DbCacheSize returns consistent results by comparing the
+* calculated and measured values.  If this test fails, it probably means the
+

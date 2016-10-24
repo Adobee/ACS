@@ -1,0 +1,7 @@
+public static DayOfWeek parseInt(int intValue) {
+if (!IntegerValidator.getInstance().isInRange(intValue, DayOfWeek.SUNDAY.toInt(), DayOfWeek.SATURDAY.toInt())) {
+return null;
+}
+
+if (intValue == DayOfWeek.SUNDAY.toInt()) {
+

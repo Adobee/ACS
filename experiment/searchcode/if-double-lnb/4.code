@@ -1,0 +1,11 @@
+public lsu d;
+public Bitmap e;
+public String f;
+public double g;
+public double h;
+public boolean i;
+public boolean j;
+c.b = Arrays.asList(new lnb[] { new lnb(paramrhi) });
+h = Double.POSITIVE_INFINITY;
+b = paramLong;
+

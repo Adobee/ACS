@@ -1,0 +1,10 @@
+public class SMA implements MaBase{
+
+@Override
+public double[] calculate(double[] data, int interval) {
+double[] result = new double[data.length];
+if(ArrayHelper.isNull(oldResult) || oldResult.length < interval + 2){
+return calculate(data, interval);
+}
+double[] newResult = ArrayHelper.copyToNewLenArray(oldResult, data.length);
+

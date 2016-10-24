@@ -1,0 +1,6 @@
+private static TopDocs execute(IndexSearcher searcher, ScanContext ctx, Query query, int pageSize, boolean trackScores) throws IOException {
+final IndexSearcher searcher = newSearcher(reader);
+
+final boolean trackScores = randomBoolean();
+final int pageSize = randomIntBetween(1, numDocs / 2);
+

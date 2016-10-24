@@ -1,0 +1,10 @@
+public int lengthOfLastWord(String s) {
+
+if (s.length() == 0 || s == null)
+return 0;
+
+int length= 0;
+int strLen = s.length()-1;
+
+// Eliminate white spaces from end.
+

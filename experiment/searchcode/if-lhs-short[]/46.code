@@ -1,0 +1,9 @@
+class RecordKeyGroupingComparator implements RawComparator <RecordKey> {
+
+// this checks to see if the two point names are identical
+public int compare (byte [] keyLHS, int startLHS, int lenLHS, byte [] keyRHS, int startRHS, int lenRHS) {
+// get the length of the strings
+lenLHS = 0;
+for (int i = 0; i < 2; i++) {
+lenLHS += ((short) (keyLHS[i + startLHS] &amp; 0xFF)) << ((1 - i) * 8);
+

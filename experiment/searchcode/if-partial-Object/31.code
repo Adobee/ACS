@@ -1,0 +1,5 @@
+public ObjectSerializableCollection innerReduce(Collection<Object> values) {
+Collection partialResultList = new ArrayList(aggregators.length);
+for (Aggregator aggregator : aggregators) {
+final Object partialResult = aggregator.reduce(values);
+

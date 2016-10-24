@@ -1,0 +1,12 @@
+return rawMessage.startsWith(&quot;@&quot;);
+}
+
+private String getRecipientNamePrivate(String rawMessage) {
+int firstSpace = rawMessage.indexOf(&quot; &quot;);
+private String getMessageContentPrivate(String rawMessage) {
+int firstSpace = rawMessage.indexOf(&quot; &quot;);
+if(firstSpace == -1)
+return &quot;&quot;;
+else
+return rawMessage.substring(firstSpace + 1);
+

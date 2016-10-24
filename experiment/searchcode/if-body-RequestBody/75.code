@@ -1,0 +1,13 @@
+this.content = content;
+
+}
+
+@Override
+protected RequestBody buildRequestBody()
+{
+if (requestBody == null &amp;&amp; TextUtils.isEmpty(content) &amp;&amp; HttpMethod.requiresRequestBody(method))
+Exceptions.illegalArgument(&quot;requestBody and content can not be null in method:&quot; + method);
+}
+
+if (requestBody == null &amp;&amp; !TextUtils.isEmpty(content))
+

@@ -1,0 +1,9 @@
+public class kmp {
+static int[] createTable(char[] w)	{
+int[] t = new int[w.length];
+int i = 2;
+int j = 0;
+t[0] = -1;
+while (i < w.length) {
+if (w[i - 1] == w[j]) t[i++] = j++ + 1;
+

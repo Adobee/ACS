@@ -1,0 +1,9 @@
+break;
+case PROCESS_BLOCK_REQ:
+bp = (BlockPair)tuple.getValue(1);
+workingBlock = getWorkingBlock(bp);	 //样本存储在workingblock中的
+workingBlock = getWorkingBlock(bp);
+
+if (workingBlock.waitingForBlocks) {
+workingBlock.userBlock = userBlock;
+

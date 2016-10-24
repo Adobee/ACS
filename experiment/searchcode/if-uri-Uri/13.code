@@ -1,0 +1,15 @@
+import java.util.concurrent.ConcurrentLinkedQueue;
+
+/**
+* 产生Uri的工厂
+*@author:gudaihui
+*@date:2013-11-20
+*/
+public class UriFactory {
+
+static ConcurrentLinkedQueue<UriInfo> uris = new ConcurrentLinkedQueue<UriInfo>();
+UriInfo uriInfo = uris.poll();
+if(uriInfo == null){
+uriInfo = new UriInfo(uri);
+}else{
+

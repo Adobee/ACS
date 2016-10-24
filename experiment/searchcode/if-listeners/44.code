@@ -1,0 +1,9 @@
+public class AbstractEventListenerDispatcher<L> {
+private LinkedList<L> listeners;
+
+public void addListener(L listener){
+if(this.listeners == null){
+this.listeners = new LinkedList<L>();
+}
+if(!this.listeners.contains(listener)){
+

@@ -1,0 +1,9 @@
+public Long receiveOrdFaxRecv(OrdFaxRecv ordFaxRecv) {
+//新增回传记录
+Long ordFaxRecvId = ordFaxRecvDAO.insertOrdFaxRecv(ordFaxRecv);
+if (StringUtils.isNotEmpty(ordFaxRecv.getBarcode())) {
+sendId = Long.parseLong(ordFaxRecv.getBarcode());
+}catch(Exception e){}
+if (sendId!=null&amp;&amp;sendId!=0) {
+ordFaxRecv.setOrdFaxRecvId(ordFaxRecvId);
+

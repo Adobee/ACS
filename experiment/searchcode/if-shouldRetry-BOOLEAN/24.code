@@ -1,0 +1,13 @@
+public TransactionalRetryHandlerInfo(final Class<? extends TransactionalRetryHandler> clazz)
+{
+this.clazz = clazz ;
+}
+
+public boolean shouldRetry(final Throwable th)
+{
+if (handler == null)
+{
+try
+{
+handler = clazz.newInstance() ;
+

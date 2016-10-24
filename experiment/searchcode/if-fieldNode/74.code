@@ -1,0 +1,8 @@
+Object fieldValue = fieldNode.getValue();
+
+if (fieldValue instanceof FieldNode) {
+convertFieldNode(root, (FieldNode) fieldValue);
+DefaultMutableTreeNode treeNode = new DefaultMutableTreeNode(fieldNode);
+
+if (fieldValue instanceof List) {
+

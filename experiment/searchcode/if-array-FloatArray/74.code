@@ -1,0 +1,10 @@
+final Float[] floatArray = new Float[1];
+
+final float f = 100.0F;
+
+final
+FloatConsumer floatConsumer = value -> floatArray[0] = Float.valueOf(value);
+floatConsumer.accept(f);
+
+Assert.assertEquals(Float.valueOf(f), floatArray[0]);
+

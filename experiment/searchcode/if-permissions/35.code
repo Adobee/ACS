@@ -1,0 +1,7 @@
+public double evaluateApplicationRisk(String[] applicationPermissions) {
+if(applicationPermissions == null){
+applicationPermissions = new String[]{};
+ArrayList<String> safePermissions = new ArrayList<>();
+for(String permissionName : applicationPermissions){
+if(dangerousPermissions.contains(permissionName)){
+

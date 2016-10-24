@@ -1,0 +1,7 @@
+GetResponse response = ESUtils.get(ESUtils.ES_CLUSTER_CLIENT, ESUtils.ES_INDEX, User.TABLE, rowkey);
+System.out.println(&quot;Find User By RowKey ->&quot; + rowkey);
+if(response.isExists()){
+public boolean insert(User user) throws BBSException {
+if(user.getRowkey()==null)
+return false;
+

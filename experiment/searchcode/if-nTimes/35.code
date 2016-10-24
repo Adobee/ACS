@@ -1,0 +1,11 @@
+return uGroup(regEx, regExN).t(&quot;\\+&quot;);
+}
+
+@Override
+protected RegExBuilder repeat(int nTimes) {
+if (nTimes < 0) {
+protected RegExBuilder repeat(int nTimes, int toMTimes) {
+if (nTimes < 0) {
+throw illegalOutsideSetArg( //
+int.class, &quot;nTimes&quot;, new Integer(nTimes), &quot;[0,\u221E)&quot;);
+

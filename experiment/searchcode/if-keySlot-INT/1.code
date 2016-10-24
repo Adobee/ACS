@@ -1,0 +1,10 @@
+game().plat.input().keyboardEvents.connect(keySlot);
+game().update.connect(update);
+}
+
+int[] frameTimes = new int[60];
+frameTimes[frameTimeCounter] = event.dt;
+frameTimeCounter = (frameTimeCounter + 1) % frameTimes.length;
+if (frameTimeCounter == 0) {
+int avg = 0;
+

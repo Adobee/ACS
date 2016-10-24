@@ -1,0 +1,10 @@
+l.add(data);
+}
+double ratio = (double)Math.min(negaNum, posiNum) / l.size();
+if(ratio < 0.05) ratio = 0.05;
+double eps = 0.01 * ratio;
+
+double beta = 0.;
+double gnorm_init = 0.;
+for (int i = 0; i < 20; i++) {
+

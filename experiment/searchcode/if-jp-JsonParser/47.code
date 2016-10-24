@@ -1,0 +1,9 @@
+public class JsonArrayIterator implements Iterator<String>{
+
+JsonParser jp;
+JsonToken currentToken;
+
+JsonArrayIterator(JsonParser jp) throws JsonParseException, IOException{
+this.jp = jp;
+this.currentToken = jp.nextToken();
+

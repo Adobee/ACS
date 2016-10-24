@@ -1,0 +1,10 @@
+* @return A list with the new chromosomes
+*/
+@Override
+public ArrayList<Chromosome<T>> update()
+{
+if(chromoPool.size() % 2 != 0)
+Chromosome<T> c2 = pickChromosome(chromoPool);
+
+if(Math.random() <= crossOverRate)
+

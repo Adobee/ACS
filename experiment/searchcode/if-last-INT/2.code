@@ -1,0 +1,11 @@
+public static void merge(int A[], int m, int B[], int n) {
+if(A==null||B==null) return;
+
+int indexLast = m + n - 1;
+int lastA = m-1;
+int lastB = n-1;
+
+while(lastA>=0 &amp;&amp; lastB>=0){
+if(A[lastA]>=B[lastB]) {
+A[indexLast]=A[lastA];
+

@@ -1,0 +1,8 @@
+public abstract class BaseRecyclerViewAdapter<T> extends RecyclerView.Adapter<RecyclerViewHolder> {
+
+protected Context context;
+protected List<T> list;
+protected int itemLayoutId;
+public RecyclerViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+View view = LayoutInflater.from(context).inflate(itemLayoutId,parent,false);
+

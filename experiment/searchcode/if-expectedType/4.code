@@ -1,0 +1,10 @@
+private final String expectedType;
+
+public CauseTypeMatcher(String expectedType) {
+this.expectedType = expectedType;
+while (cause != null) {
+if (cause.getType().equals(expectedType)) {
+return true;
+}
+cause = cause.getCause();
+

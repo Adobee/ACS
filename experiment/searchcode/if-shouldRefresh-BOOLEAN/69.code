@@ -1,0 +1,5 @@
+// (example: if a test during less than the interval of an automatic refresh)
+private static boolean shouldRefresh = false;
+// If there is more than one test currently running or if we need to refresh
+if(shouldRefresh || TestRunnerCounter.instance().runningTestsCount() > 0)
+

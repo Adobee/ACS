@@ -1,0 +1,13 @@
+private static Authenticator authenticator;
+
+@Override
+public IBinder onBind(Intent intent) {
+if (intent.getAction().equals(android.accounts.AccountManager.ACTION_AUTHENTICATOR_INTENT)) {
+return getAuthenticator().getIBinder();
+}
+return null;
+}
+
+private Authenticator getAuthenticator() {
+if (authenticator == null) {
+

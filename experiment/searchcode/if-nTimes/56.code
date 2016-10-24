@@ -1,0 +1,18 @@
+public class RepeatedBestPerformersConvergenceStrategy extends
+AbstractConvergenceDetectionStrategy {
+
+private int topNPerformers;
+private int nTimes;
+
+private Map<Identity, AtomicInteger> appearanceCounts = new HashMap<Identity, AtomicInteger>();
+appearanceCounts.put(id, new AtomicInteger(1));
+} else {
+if(count.incrementAndGet() >= nTimes) {
+return true;
+}
+}
+}
+return false;
+}
+}
+

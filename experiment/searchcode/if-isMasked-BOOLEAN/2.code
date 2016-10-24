@@ -1,0 +1,10 @@
+private boolean isMasked;
+Tile(boolean[] bitmap, int newWidth, int newHeight, int id) {
+//constructor
+tileData=bitmap;
+if (tileWidth%8!=0) {
+tileWidth = (tileWidth/8+1)*8;
+}
+mask = new boolean[tileData.length/2];
+isMasked = false;
+

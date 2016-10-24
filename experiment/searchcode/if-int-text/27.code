@@ -1,0 +1,23 @@
+boolean b = true;
+String[] s = text.split(&quot;(?!^)&quot;);
+
+for(int i = 0; i < s.length; i++)
+{
+if(s[i].equals(&quot;_&quot;))
+else
+{
+s[i] = &quot;</b>&quot;;
+b = true;
+}
+}
+}
+
+text = &quot;&quot;;
+
+for(int i = 0; i < s.length; i++)
+text += s[i];
+
+return text;
+}
+}
+

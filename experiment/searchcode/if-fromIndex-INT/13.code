@@ -1,0 +1,7 @@
+public class WayPointor<T extends Comparable<T>> implements Comparable<WayPointor<T>>{
+public WayPointor(T[] arr,int fromIndex,int toIndex){
+this.arr=arr;
+this.fromIndex=fromIndex;
+this.toIndex=toIndex>arr.length?arr.length:toIndex;
+if(this.fromIndex>=this.toIndex){
+

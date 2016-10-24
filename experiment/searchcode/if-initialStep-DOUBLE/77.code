@@ -1,0 +1,10 @@
+- Math.pow(getFlow(x), 2.0));
+}
+
+@Override
+public double[][] calculateProfile(double initialStep, double relAccuracy) {
+//calculate in the right direction
+if (this.length*initialStep < 0) {
+Main.write(&quot;error in setup&quot;);
+return new double[2][1];
+

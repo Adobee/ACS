@@ -1,0 +1,6 @@
+Assertions.checkArgument(allocation.data.length == individualAllocationSize);
+allocatedCount--;
+if (recycledCount == recycledAllocations.length) {
+int targetRecycledAllocationCount = Math.max(0, targetAllocationCount - allocatedCount);
+if (targetRecycledAllocationCount < recycledCount) {
+

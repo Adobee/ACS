@@ -1,0 +1,12 @@
+private boolean newLineStart = true;
+private OutputStream out;
+
+public UcciOutputStream(OutputStream out) {
+this.out = out;
+}
+
+@Override
+public void write(int ch) throws IOException {
+if (newLineStart) {
+out.write(&#39;i&#39;);
+

@@ -1,0 +1,8 @@
+public EigenDecompositionImpl(final RealMatrix matrix,
+final double splitTolerance)
+throws InvalidMatrixException {
+if (isSymmetric(matrix)) {
+final double mij = matrix.getEntry(i, j);
+final double mji = matrix.getEntry(j, i);
+if (Math.abs(mij - mji) > (Math.max(Math.abs(mij), Math.abs(mji)) * eps)) {
+

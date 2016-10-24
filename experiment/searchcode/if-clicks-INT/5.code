@@ -1,0 +1,14 @@
+import javax.inject.Inject;
+
+@NonConfigurationScope
+class ClicksPresenter {
+
+private int clicksCount = 0;
+private ClicksView view;
+this.view = view;
+notifyViewWithClicksCount();
+}
+
+private void notifyViewWithClicksCount() {
+if (view != null) {
+

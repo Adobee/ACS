@@ -1,0 +1,18 @@
+index = j;
+}
+}
+}
+return data;
+}
+
+static double nana(double a[][]){
+double sumA = 0;
+double sumT = 0;
+for (int z = 0; z < a.length; z++) {
+double sumA = 0;
+double sumT = 0;
+
+sumA = sumA + a[0];
+if (sumA > sumT) {
+sumT = sumA;
+

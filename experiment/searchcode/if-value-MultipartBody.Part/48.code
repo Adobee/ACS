@@ -1,0 +1,6 @@
+for (Map.Entry<String, Object> entry : params.fileParams.entrySet()) {
+if (entry.getValue() instanceof File) {
+} else if (entry.getValue() instanceof String) {
+
+requestBody.addPart(Headers.of(&quot;Content-Disposition&quot;, &quot;form-data; name=\&quot;&quot; + entry.getKey() + &quot;\&quot;&quot;),
+

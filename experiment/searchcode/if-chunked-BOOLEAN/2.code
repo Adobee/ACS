@@ -1,0 +1,11 @@
+package controllers;
+
+public class ChunkedJSONUploader extends ChunkedUploader {
+@Override
+public boolean shouldNotify(String uri) {
+if (uri != null &amp;&amp; uri.contains(&quot;api/postjson&quot;))
+return true;
+return false;
+}
+}
+

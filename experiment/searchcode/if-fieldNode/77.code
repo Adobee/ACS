@@ -1,0 +1,13 @@
+* Represents a Class Field in a UsageGraph.
+*/
+@SuppressWarnings(&quot;PMD.OverrideBothEqualsAndHashcode&quot;)
+public class FieldNode extends MemberNode<FieldNode, Field> {
+public boolean equals(Object obj) {
+if (obj instanceof FieldNode) {
+FieldNode that = (FieldNode)obj;
+return super.equals(that);
+}
+return false;
+}
+}
+

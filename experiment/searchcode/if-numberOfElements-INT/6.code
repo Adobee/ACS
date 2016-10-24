@@ -1,0 +1,14 @@
+package simulation;
+
+public class ReactionCache {
+
+private final int numberOfElements;
+private final Reaction[] reactions;
+reactions[r.element0*numberOfElements + r.element1] = r;
+reactions[r.element1*numberOfElements + r.element0] = r.swapped();
+
+}
+
+/**
+* Returns a reaction if one exists, or null
+

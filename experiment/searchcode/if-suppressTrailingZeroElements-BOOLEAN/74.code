@@ -1,0 +1,10 @@
+public static String formatDurationWords(long durationMillis, boolean suppressLeadingZeroElements, boolean suppressTrailingZeroElements) {
+
+// This method is generally replacable by the format method, but
+// strip the space off again
+duration = duration.substring(1);
+}
+}
+if (suppressTrailingZeroElements) {
+String tmp = StringUtils.replaceOnce(duration, &quot; 0 seconds&quot;, &quot;&quot;);
+

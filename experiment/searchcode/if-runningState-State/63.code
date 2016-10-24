@@ -1,0 +1,8 @@
+import static java.lang.System.currentTimeMillis;
+
+public class RunningState extends ClockState {
+private static RunningState instance = null;
+
+public static RunningState instance() {
+if (instance == null) instance = new RunningState();
+

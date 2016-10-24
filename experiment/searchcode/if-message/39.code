@@ -1,0 +1,10 @@
+private Message defaultBuildMessageBody(DatagramPacket packet, int messageType, MessageBody body) {
+// If larger, then it&#39;s a user defined message type
+if (messageType > Constants.MAX_RESERVED_MESSAGE_TYPE) {
+return null;
+}
+
+Message message = null;
+
+if (messageType == RegistrationRequest.MESSAGE_TYPE) {
+

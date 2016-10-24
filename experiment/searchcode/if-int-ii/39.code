@@ -1,0 +1,12 @@
+List list = new ArrayList<String>(length/LIMIT + 10);
+
+for ( int ii = 0; ii < length; ii += LIMIT) {
+if (ii+LIMIT < length) {
+list.add(source.substring(ii, ii+LIMIT));
+} else {
+list.add(source.substring(ii));
+}
+}
+
+for (int ii = 0; ii < list.size(); ii++) {
+

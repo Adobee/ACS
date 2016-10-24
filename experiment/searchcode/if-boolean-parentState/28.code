@@ -1,0 +1,8 @@
+if (getConstraints() != null) {
+boolean skip = false;
+for (ParserConstraint c : getConstraints()) {
+if ((start > c.start &amp;&amp; start < c.end &amp;&amp; end > c.end) || (end > c.start &amp;&amp; end < c.end &amp;&amp; start < c.start)) {
+float cur = iScore[start][end][parentState];
+boolean foundBetter;  // always set below
+if (op.testOptions.lengthNormalization) {
+

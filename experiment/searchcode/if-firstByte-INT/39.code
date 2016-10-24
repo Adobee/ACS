@@ -1,0 +1,7 @@
+firstByte = setBit(firstByte, OB_INT_SIGN_BIT_POS);
+if (isAdd)
+firstByte = setBit(firstByte, OB_INT_OPERATION_BIT_POS);
+byte lenOrValue = (byte) (firstByte &amp; OB_INT_VALUE_MASK);
+if (lenOrValue <= OB_MAX_INT_1B) {
+return isNeg ? -lenOrValue : lenOrValue;
+

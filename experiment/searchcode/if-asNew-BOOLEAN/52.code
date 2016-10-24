@@ -1,0 +1,9 @@
+public static Loop decodeStatement(Node parent, String statement, Location location, boolean require)
+{
+if (StringUtils.findNextWord(statement).equals(IDENTIFIER))
+Identifier node = SyntaxTree.decodeIdentifier(getIterator(), &quot;hasNext&quot;, getIterator().getLocationIn().asNew(), false);
+
+if (node == null)
+{
+return SyntaxMessage.queryError(&quot;Could not decode hasNext portion of Iterator for foreach loop&quot;, this, require);
+

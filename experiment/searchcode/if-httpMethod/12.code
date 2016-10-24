@@ -1,0 +1,18 @@
+package com.cnrvoice.base.authz;
+
+public enum HttpMethod
+{
+
+DELETE(&quot;delete&quot;), GET(&quot;read&quot;), HEAD(&quot;read&quot;), MKCOL(&quot;create&quot;), OPTIONS(
+for (HttpMethod m : HttpMethod.values())
+{
+if (m.name().equals(method))
+{
+httpMethod = m;
+}
+}
+return httpMethod.getMethod();
+}
+
+}
+

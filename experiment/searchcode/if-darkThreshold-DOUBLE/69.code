@@ -1,0 +1,10 @@
+private boolean useLightText = false;
+/** Brightness value used to determine whether to use lighter text color */
+private double darkThreshold = 150.0;
+* setText to a NumberFormatted double
+* @param value
+*/
+public void setText(double value) {
+//check for +/- Infinity
+if (Math.abs(value - Double.MAX_VALUE) < 1) {
+

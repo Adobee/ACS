@@ -1,0 +1,7 @@
+public static Class<?> getRawClass(Type type) {
+if (Class.class.isAssignableFrom(type.getClass())) {
+return (Class<?>) type;
+}
+if (ParameterizedType.class.isAssignableFrom(type.getClass())) {
+return getRawClass(((ParameterizedType) type).getRawType());
+

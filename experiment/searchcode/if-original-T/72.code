@@ -1,0 +1,8 @@
+public RandomListNode copyRandomList(RandomListNode head) {
+if(head==null) return head;
+RandomListNode original=head;
+RandomListNode newhead=new RandomListNode(0);
+while(original!=null){
+if(original.random==null){
+original=original.next.next;
+

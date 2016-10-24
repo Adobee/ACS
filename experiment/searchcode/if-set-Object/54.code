@@ -1,0 +1,16 @@
+protected transient Configuration configObject = null;
+
+public ConfigurationComponent() {
+super();
+}
+
+public void setConfigObject(Configuration configObject) {
+public Configuration getConfigObject() {
+return configObject;
+}
+
+public void setDirty(){
+if (configObject != null) configObject.setDirty(true);
+}
+}
+

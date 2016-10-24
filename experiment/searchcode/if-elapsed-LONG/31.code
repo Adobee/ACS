@@ -1,0 +1,11 @@
+package sps.util;
+
+public class SimpleTimer {
+private long _elapsedTime;
+private long _lastTime;
+public void start(boolean reset) {
+if (reset) {
+_elapsedTime = 0;
+}
+_lastTime = System.currentTimeMillis();
+

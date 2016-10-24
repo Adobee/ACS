@@ -1,0 +1,7 @@
+private final RegistrarScopeIdValue previousValue;
+
+public RegistrarScopeIdentifierBuilderJson(RegistrarScopeIdentifier id) {
+root.put(&quot;value&quot;, id.getValue().toString());
+if (previousValue != null) {
+root.put(&quot;previousValue&quot;, previousValue.toString());
+

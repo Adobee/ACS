@@ -1,0 +1,13 @@
+public static final CategoryAxisType fromClass (final Class<?> c)
+{
+if ((null == c) || (!CategoryAxis.class.isAssignableFrom(c)))
+return null;
+public static final CategoryAxisType fromObject (Object o)
+{
+if (o instanceof CategoryAxis)
+return fromClass(o.getClass());
+else    // debug breakpoint
+return null;
+}
+}
+

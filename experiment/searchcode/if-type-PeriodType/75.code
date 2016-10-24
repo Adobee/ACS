@@ -1,0 +1,14 @@
+private static final long serialVersionUID = 1L;
+
+public enum DbField {
+ID, NAME, TYPE_PERIOD, FK_CATEGORY, AMOUNT
+}
+
+public enum PeriodType {
+MONTH(0), WEEK(1), YEAR(2);
+
+private int dbValue;
+
+private PeriodType(int dbValue) {
+this.dbValue = dbValue;
+

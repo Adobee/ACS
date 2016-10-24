@@ -1,0 +1,10 @@
+return Math.sqrt (getX() * getX() + getY() * getY());
+}
+
+public Vector2D setAngle(double angle) {
+double length = getLength();
+if (length == 0.0D) {
+double normProduct = v1.getNorm() * v2.getNorm();
+if (normProduct == 0) {
+throw new IllegalArgumentException(&quot;Norm is zero&quot;);
+

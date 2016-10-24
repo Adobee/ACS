@@ -1,0 +1,14 @@
+return dayOfYear.equals(other.dayOfYear()) &amp;&amp; timeOfDay.equals(other.timeOfDay());
+}
+
+public boolean isBefore(MomentOfYear other) {
+if (dayOfYear.isBefore(other.dayOfYear)) {
+return true;
+}
+
+if (dayOfYear.isAfter(other.dayOfYear)) {
+return false;
+}
+
+if (timeOfDay.isBefore(other.timeOfDay())) {
+

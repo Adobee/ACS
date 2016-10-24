@@ -1,0 +1,6 @@
+public static String createSmartTimeStamp(Long milis) {
+Integer minutesago = (int) (System.currentTimeMillis() /1000 /60 - milis / 1000 / 60);
+if (minutesago < 1) {
+return &quot;just now&quot;;
+}if (minutesago < 59) {
+

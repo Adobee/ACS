@@ -1,0 +1,16 @@
+Map map = mapManager.getMap();
+
+if (map == null) {
+return;
+}
+
+MapTile[][] mapTiles = map.getMapTiles();
+MapTile tile = mapTiles[x][y];
+if (tile != MapTile.NONE) {
+mapTiles[x][y].getTileImage().draw(x*32, y*32);
+}
+}
+}
+}
+}
+

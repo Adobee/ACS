@@ -1,0 +1,6 @@
+import net.sourceforge.stripes.action.DefaultHandler;
+import net.sourceforge.stripes.action.ForwardResolution;
+import net.sourceforge.stripes.action.Resolution;
+@RolesAllowed({&quot;Administrator&quot;, &quot;User if ${currentUser.id eq message.user.id}&quot;})
+public class MessageViewActionBean extends MessageBaseActionBean {
+

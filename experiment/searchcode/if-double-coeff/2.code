@@ -1,0 +1,14 @@
+protected double b;
+
+protected double coeffA;
+protected double coeffB;
+protected double coeffC;
+protected double coeffD;
+protected double coeffE;
+
+public Configuration(){
+this.a = -5;
+this.b = 5;
+
+this.coeffA = 0;
+

@@ -1,0 +1,12 @@
+import java.util.LinkedHashMap;
+
+public class MaxSizeHashMap<V, T> extends LinkedHashMap<V, T> {
+
+private static final long serialVersionUID = 1L;
+this.maxSize = maxSize;
+}
+
+@Override
+public T put(V key, T value) {
+if (size() >= maxSize) {
+

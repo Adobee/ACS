@@ -1,0 +1,6 @@
+public static <T extends ImageSingleBand> InterpolatePixel<T>
+createPixel(double min, double max, TypeInterpolate type, Class<T> imageType)
+public static <T extends ImageSingleBand> InterpolatePixel<T> bilinearPixel(Class<T> type ) {
+if( type == ImageFloat32.class )
+return (InterpolatePixel<T>)new ImplBilinearPixel_F32();
+

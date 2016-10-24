@@ -1,0 +1,12 @@
+* LinkFormat varchar(200),
+* Selected integer,
+* CanCache integer,
+* Weight integer
+*/
+
+public static List<NewsChannel> getNewsChannels() {
+boolean selected = cursor.getInt(5) == 1;
+int canCache = cursor.getInt(6);
+int weight = cursor.getInt(7);
+boolean needCache = cursor.getInt(8) == 1;
+

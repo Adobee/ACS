@@ -1,0 +1,12 @@
+public class Vector3
+{
+public float x, y, z;
+
+public Vector3()
+public Vector3 normalize()
+{
+float length = length();
+if (length > 0)
+length = 1.0f / length;
+return new Vector3(x * length, y * length, z * length);
+

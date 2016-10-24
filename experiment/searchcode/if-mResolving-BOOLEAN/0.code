@@ -1,0 +1,8 @@
+private final Runnable runOnSuccess;
+private boolean mResolving;
+
+public NearbyComunicationCallback(String method){
+public void onResult(Status status) {
+if(status.isSuccess()){
+if(runOnSuccess != null){
+

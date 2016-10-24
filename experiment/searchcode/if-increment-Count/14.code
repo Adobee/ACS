@@ -1,0 +1,7 @@
+@Override public Set<SendTo> coordinate(Object message) {
+if (message instanceof Increment) {
+Increment increment = (Increment) message;
+public void atomically(Object message) {
+if (message instanceof Increment) {
+count.set(count.get() + 1);
+

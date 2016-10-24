@@ -1,0 +1,15 @@
+private Transact storedTransact;
+
+public boolean pushTransact(Transact transact) {
+if (storedTransact != null)
+return false;
+Transact transact = storedTransact;
+storedTransact = null;
+return transact;
+}
+
+public boolean hasTransact() {
+return storedTransact != null;
+}
+}
+

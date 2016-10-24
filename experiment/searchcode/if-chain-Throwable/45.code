@@ -1,0 +1,10 @@
+public final class Throwables
+{
+@Beta
+public static List<Throwable> getCausalChain(Throwable paramThrowable)
+{
+Preconditions.checkNotNull(paramThrowable);
+Throwable localThrowable = paramThrowable.getCause();
+if (localThrowable == null) {
+break;
+

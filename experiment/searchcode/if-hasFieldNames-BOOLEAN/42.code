@@ -1,0 +1,9 @@
+public IValue visitList(Type type) {
+if(type.isListRelation()) {
+IListWriter w = vf.listWriter();
+
+if (type.hasFieldNames()) {
+public IValue visitMap(Type type) {
+if (type.hasFieldNames()) {
+return vf.constructor(RascalValueFactory.Symbol_Map, vf.constructor(RascalValueFactory.Symbol_Label, vf.string(type.getKeyLabel()), type.getKeyType().accept(this)), vf.constructor(RascalValueFactory.Symbol_Label, vf.string(type.getValueLabel()), type.getValueType().accept(this)));
+

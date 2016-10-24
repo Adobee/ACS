@@ -1,0 +1,10 @@
+public boolean isDeleted() {
+return this.sync != null &amp;&amp; this.sync.isDeleted();
+}
+
+public boolean contentHasChanged(IContent content) {
+this.syncId = sync.getId();
+}
+
+public boolean updateSyncIfChanged(IContent content, IIdentityProvider identityProvider){
+

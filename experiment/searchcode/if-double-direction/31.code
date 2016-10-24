@@ -1,0 +1,10 @@
+private double xDirection;
+private double yDirection;
+private boolean dead;
+
+public Enemy(){
+public void update(double mod){
+//animations
+if (yDirection < 0) sprite.animate(12,16);
+else if (yDirection >= 0) sprite.animate(8,12);
+

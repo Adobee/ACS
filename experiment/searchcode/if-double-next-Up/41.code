@@ -1,0 +1,7 @@
+while(order-- != 0){
+for(int position = jigsaw.size()-1; position >= 0; position --){
+int next = position;
+if(jigsaw.get(position) == &#39;r&#39;){
+jigsaw.add(++next, &#39;u&#39;); // {right, down, right, up}
+jigsaw.add(++next, &#39;r&#39;); // {right, down, right, up, right}
+

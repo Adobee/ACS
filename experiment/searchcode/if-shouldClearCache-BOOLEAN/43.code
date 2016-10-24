@@ -1,0 +1,8 @@
+private void processMapOverlayFiles(Collection<Tile> collection, boolean downloadAllowed) throws IOException, SVGParseException {
+// clear the tile cache on disk if any tiles have been updated
+boolean shouldClearCache = false;
+usedTiles.add(filename);
+
+if (!MapUtils.hasTile(mContext, filename)) {
+shouldClearCache = true;
+

@@ -1,0 +1,9 @@
+public void onKeyDown(KeyDownEvent event) {
+if (!acceptedKeyCodes.contains(event.getNativeKeyCode())) {
+add(stepDown);
+}
+
+@Override
+public void onClick(ClickEvent event) {
+if (event.getSource().equals(stepUp)) {
+

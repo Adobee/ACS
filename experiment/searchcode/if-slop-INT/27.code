@@ -1,0 +1,9 @@
+private int downY;
+private int mTouchSlop;
+
+public MyScrollview(Context context) {
+super(context);
+case MotionEvent.ACTION_MOVE:
+int moveY = (int) e.getRawY();
+if (Math.abs(moveY - downY) > mTouchSlop) {
+

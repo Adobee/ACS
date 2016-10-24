@@ -1,0 +1,7 @@
+private static void setupUtilityMethods(@NotNull JavaArrangementParseInfo info, @NotNull ArrangementSettingsToken orderType) {
+if (DEPTH_FIRST.equals(orderType)) {
+for (ArrangementEntryDependencyInfo rootInfo : info.getMethodDependencyRoots()) {
+setupDepthFirstDependency(dependencyInfo);
+JavaElementArrangementEntry dependentEntry = dependencyInfo.getAnchorEntry();
+if (dependentEntry.getDependencies() == null) {
+

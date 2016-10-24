@@ -1,0 +1,7 @@
+long periodTypeId = rs.getLong(&quot;periodTypeId&quot;);
+PeriodType periodType = periodTypes.get(periodTypeId);
+if (periodType == null) {
+Period period = buildPeriod(rs);
+period.setPeriodType(periodType);
+if (period != null) {
+

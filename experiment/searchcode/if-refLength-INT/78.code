@@ -1,0 +1,11 @@
+return;
+}
+int remotePosition = 0;
+if (StringUtils.isNotEmpty(remoteContig)) {
+// flanking square brackets have already been removed
+if (components.length > 1) {
+remotePosition = Integer.parseInt(components[1]);
+}
+}
+int refLength = variant.getReference().length();
+

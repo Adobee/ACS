@@ -1,0 +1,14 @@
+package JumpGameII;
+
+public class Solution {
+public int jump(int[] A) {
+
+if (A.length <= 1)
+return 0;
+int[] f = new int[A.length];
+
+f[0] = 0;
+f[1] = A[0];
+int t = 1;
+int j = 0;
+

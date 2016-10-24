@@ -1,0 +1,11 @@
+import okhttp3.CookieJar;
+import okhttp3.HttpUrl;
+import okhttp3.Interceptor;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+//Cookie
+CookieJar cookieJar = getCookieJar();
+
+//创建请求client
+client = new OkHttpClient.Builder().addInterceptor(interceptor).cookieJar(cookieJar).build();
+

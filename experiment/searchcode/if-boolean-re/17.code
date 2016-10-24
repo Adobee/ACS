@@ -1,0 +1,10 @@
+public int reverse(int x) {
+boolean neg = x < 0;
+long re = x;
+re = Math.abs(re);
+while(x > 0){
+re = re * 10 + x % 10;
+x /= 10;
+}
+if(neg) re = -re;
+

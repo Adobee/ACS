@@ -1,0 +1,17 @@
+package com.github.rd.blackbox.topcoder.srm635;
+
+public class QuadraticLaw {
+
+public long getTime(long d) {
+for (long i = left; i >= 0; i--) {
+long localRes = i + i * i;
+
+if (localRes <= d) {
+res = i;
+break;
+}
+}
+return res;
+}
+}
+

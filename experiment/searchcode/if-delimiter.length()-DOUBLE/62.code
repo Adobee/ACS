@@ -1,0 +1,10 @@
+public static final String identifier = &quot;NextTurnDue&quot;;
+
+public final Double lengthMs;
+
+public NextTurnDue(Double lengthMs) {
+public static Optional<NextTurnDue> parse(String raw) {
+String[] parts = raw.split(delimiter);
+
+if(parts[0].equals(identifier) &amp;&amp; parts.length == 2 ) {
+

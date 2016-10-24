@@ -1,0 +1,10 @@
+public abstract class Bust extends GlobalMinimum{
+protected Bust(Function function) {
+super(function);
+}
+
+protected abstract double nextPoint(double h, double x0, double f0, double f, double L);
+
+@Override
+public double findMin(double leftBound, double rightBound, double L, double  eps) {
+

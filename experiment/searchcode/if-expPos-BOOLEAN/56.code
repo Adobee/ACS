@@ -1,0 +1,8 @@
+public static void main(String[] args) {
+// Check For A Minimal Amount Of Arguments
+if(args == null || args.length < MINIMUM_ARG_COUNT) {
+OBJMesh mesh = OBJParser.parseWithMerging(fileIn, fullMeshOptimization, true);
+
+ArrayList<Vector3> expPos = mesh.positions;
+if(!fullMeshOptimization) {
+

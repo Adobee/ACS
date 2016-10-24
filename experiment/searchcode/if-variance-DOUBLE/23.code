@@ -1,0 +1,10 @@
+private final int numSamples;
+private final double mean;
+private final double variance;
+private final double twoVariance;
+DistributionParameters other = (DistributionParameters)obj;
+
+if (numSamples == other.numSamples){
+if (mean == other.mean){
+if ((Double.isNaN(variance) &amp;&amp; Double.isNaN(other.variance)) ||variance == other.variance){
+

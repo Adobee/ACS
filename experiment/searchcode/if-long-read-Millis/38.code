@@ -1,0 +1,9 @@
+try(BufferedReader br = new BufferedReader(isr))
+{
+long prevMillis = -1;
+while ((line = br.readLine()) != null)
+{
+long millis = tsCalc.calculateLineTimestamp(line);
+
+if (millis == -1)
+

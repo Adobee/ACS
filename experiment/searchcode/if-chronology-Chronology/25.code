@@ -1,0 +1,7 @@
+protected void removeChronItem(ChronologyItems chronItem) {
+if (chronItem == null)
+throw new IllegalArgumentException(&quot;Can&#39;t remove a null index item.&quot;);
+public void removeRelatedObject(DomainObject domainObject) {
+if (domainObject instanceof ChronologyItems) {
+removeChronItem((ChronologyItems) domainObject);
+

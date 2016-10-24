@@ -1,0 +1,10 @@
+iW = (width*3/4)/ (Const.NW[Const.HEX])/3; //height
+//   iW= (iW%2==0)?iW:iW-1;
+
+iH =  (int)Math.round (iW*Math.sqrt(3));
+if ((Const.NH[Const.HEX]*2-1)*iH>height) {
+iH= (height-shifty)/(Const.NH[Const.HEX]*2-1);
+iW = (int)Math.round (iH/Math.sqrt(3));
+}
+else {
+

@@ -1,0 +1,8 @@
+/* If there are no products for this providers, it is added to the map */
+if (!offeredProducts.containsKey(provider)) {
+offeredProducts.put(provider, new ArrayList<OfferedProduct>());
+List<OfferedProduct> providerProducts = offeredProducts.get(provider);
+boolean removed = providerProducts.remove(offeredProduct);
+
+if (removed) {
+

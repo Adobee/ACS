@@ -1,0 +1,9 @@
+public GeneralPath modifyPath(GeneralPath p, int edgewidth, double zoomfactor)
+{
+if (type==SOLID)
+return p;
+//Sonst entlanggehen und zerstückeln
+//gap2 : Eine Lücke vor einem neuen strich
+boolean dash = false, dot = false, gap = false, gap2=false;
+double zoomlength = (new Double(length)).doubleValue()*zoomfactor;
+

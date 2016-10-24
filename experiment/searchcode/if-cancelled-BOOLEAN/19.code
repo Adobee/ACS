@@ -1,0 +1,15 @@
+public class CancellablePhantomEvent extends PhantomEvent implements Cancellable
+{
+private boolean cancelled;
+
+public CancellablePhantomEvent()
+{
+cancelled = false;
+}
+
+/**
+* Checks if the event has been cancelled
+*/
+@Override
+public boolean isCancelled()
+

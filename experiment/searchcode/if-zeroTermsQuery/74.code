@@ -1,0 +1,11 @@
+int ord = in.readVInt();
+for (ZeroTermsQuery zeroTermsQuery : ZeroTermsQuery.values()) {
+if (zeroTermsQuery.ordinal == ord) {
+throw new IllegalStateException(&quot;No type found for [&quot; + type + &quot;]&quot;);
+}
+
+if (query == null) {
+return zeroTermsQuery();
+} else {
+return query;
+

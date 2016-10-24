@@ -1,0 +1,9 @@
+public class NormalVector3D extends Vector3D {
+public NormalVector3D(Vector3D vector3D){
+super(vector3D);
+if(length() != 0) {
+normalize();
+}
+}
+}
+

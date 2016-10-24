@@ -1,0 +1,14 @@
+public abstract class AbstractCommand implements Command {
+protected boolean executed = false;
+
+public boolean canExecute() {
+return !executed;
+}
+
+public boolean canUndo() {
+return executed;
+}
+
+public void execute() {
+if (canExecute()) {
+

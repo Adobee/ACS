@@ -1,0 +1,6 @@
+public static <T> List<T> unserializeList(List<String> serializeStringList) {
+if (null == serializeStringList || serializeStringList.isEmpty()) {
+for (String string : serializeStringList) {
+if (null != string) {
+T result = SerializeUtil.unserialize(string);
+

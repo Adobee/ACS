@@ -1,0 +1,15 @@
+
+public class BoundingBox {
+double[] p1 = new double[2];
+double[] p2 = new double[2];
+double[] p3 = new double[2];
+public static boolean pointIn(BoundingBox a, double[] b)
+{
+if(a.p1[0]-10 <= b[0] &amp;&amp; a.p3[0] >= b[0] &amp;&amp; a.p1[1] <= b[1] &amp;&amp; a.p3[1] >= b[1])
+{
+return true;
+}
+return false;
+}
+}
+

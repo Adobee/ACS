@@ -1,0 +1,6 @@
+* style variables but there isn&#39;t an AtomicFloat so we just use a volatile.
+*/
+private volatile float requestsPerSecond;
+public BulkByScrollTask(long id, String type, String action, String description, TaskId parentTask, float requestsPerSecond) {
+super(id, type, action, description, parentTask);
+

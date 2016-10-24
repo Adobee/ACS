@@ -1,0 +1,11 @@
+public Permission updatePermission(Permission permission){
+
+Permission permissionToUpdate = getPermission(permission.getId());
+
+if(permissionToUpdate != null){
+Permission permissionToDelete = getPermission(permissionId);
+
+if(permissionToDelete != null){
+
+permissionRepository.delete(permissionToDelete);
+

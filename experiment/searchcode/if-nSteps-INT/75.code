@@ -1,0 +1,9 @@
+public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+if(headA==null || headB==null) return null;
+
+int lenA= getLength(headA);
+int lenB= getLength(headB);
+
+if(lenA>=lenB)
+headA = moveNsteps(headA,lenA-lenB);
+

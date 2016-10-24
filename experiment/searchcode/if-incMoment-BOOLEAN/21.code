@@ -1,0 +1,15 @@
+* be incremented or cleared.</p>
+*/
+protected boolean incMoment;
+
+/**
+* Construct a Kurtosis
+*/
+public Kurtosis() {
+* {@inheritDoc}
+*/
+@Override
+public void increment(final double d) {
+if (incMoment) {
+moment.increment(d);
+

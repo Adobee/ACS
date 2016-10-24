@@ -1,0 +1,10 @@
+private FacadeTournoi facadeTournoi;
+
+
+@PostConstruct
+public void init(){
+if(facadeTableau.countAll() == 0){
+Tableau ts = facadeTableau.create(&quot;Veteran Homme Simple NC&quot;, TypeMatch.SIMPLE);
+//Tableau td = facadeTableau.create(&quot;Senior Double Mixte NC&quot;, TypeMatch.DOUBLE);
+associerTableauSimple(ts);
+

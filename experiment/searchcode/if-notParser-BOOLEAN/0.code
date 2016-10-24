@@ -1,0 +1,11 @@
+* The not-predicate, a parser that succeeds whenever its delegate does not, but consumes no input
+* [Parr 1994, 1995].
+*/
+public class NotParser extends DelegateParser {
+
+protected final String message;
+
+public NotParser(Parser delegate, String message) {
+super(delegate);
+this.message = Objects.requireNonNull(message, &quot;Undefined message&quot;);
+

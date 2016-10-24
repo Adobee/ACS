@@ -1,0 +1,11 @@
+this.a = a;
+this.b = b;
+this.c = c;
+}
+
+private double distanceFrom(String city, Tour.Builder tb){
+for(String city : this.rm.getCitySet()){
+if(!tb.covers(city)){
+double currentDist = this.distanceFrom(city, tb);
+if(currentDist > maxDist){
+

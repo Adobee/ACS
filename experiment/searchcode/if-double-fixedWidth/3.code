@@ -1,0 +1,9 @@
+public ArrayContentAxis( final String id, final IAxisContentProvider contentProvider, final int fixedWidth )
+{
+this( id, POSITION.BOTTOM, contentProvider, fixedWidth );
+this( id, position, new OrdinalAxisRenderer( id + &quot;_axisRenderer&quot;, new AxisRendererConfig(), contentProvider ), contentProvider, fixedWidth ); //$NON-NLS-1$
+}
+
+@Override
+public int numericToScreen( final Double value )
+

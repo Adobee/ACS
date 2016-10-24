@@ -1,0 +1,14 @@
+public class HighlightPattern {
+public enum MatchType {
+WHOLE_WORD,
+PART_WORD
+}
+
+private final String text;
+return matchType == MatchType.WHOLE_WORD;
+}
+
+@Override
+public boolean equals(Object other) {
+if (!(other instanceof HighlightPattern)) {
+

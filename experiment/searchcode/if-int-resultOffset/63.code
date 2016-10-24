@@ -1,0 +1,6 @@
+public int decode(byte[] resultBuffer, int resultOffset, int maxLength)
+throws IllegalArgumentException
+{
+final int origResultOffset = resultOffset;
+final int resultBufferEnd = resultOffset + maxLength;
+

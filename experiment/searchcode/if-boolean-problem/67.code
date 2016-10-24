@@ -1,0 +1,7 @@
+// support 메소드의 final은 override를 못하게 한다. Expert의 계층 구조에서 support는 override가 금지된다.
+public final void support(Problem problem) {
+if (solve(problem)) {
+System.out.println(expertName + &quot;이(가) &quot; + problem.getProblemName() + &quot;을(를) 해결해 버렸네.&quot;);
+} else {
+if (next != null) {
+

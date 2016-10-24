@@ -1,0 +1,8 @@
+y        = equations.getMapper().mapState(getStepStart());
+yDotK[0] = equations.getMapper().mapDerivative(getStepStart());
+
+if (firstTime) {
+setStepSize(hNew);
+if (forward) {
+if (getStepStart().getTime().add(getStepSize()).subtract(finalTime).getReal() >= 0) {
+

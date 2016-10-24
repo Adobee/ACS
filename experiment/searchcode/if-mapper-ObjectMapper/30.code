@@ -1,0 +1,13 @@
+import org.codehaus.jackson.map.ObjectMapper;
+
+
+
+/**
+* Jackson 单例模式获取全局唯一 ObjectMapper 对象
+*
+* 懒汉式单例模式
+public static ObjectMapper getInstance(){
+if(objectMapper == null){
+synchronized(ObjectMapperInstance.class){
+if(objectMapper == null){
+

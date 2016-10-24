@@ -1,0 +1,8 @@
+String past = &quot;&quot;;
+String presentContinuous = &quot;&quot;;
+String lastChar = Character.toString(word.charAt(word.length() - 1));
+String secondlastChar = Character
+.toString(word.charAt(word.length() - 1));
+
+if ((lastChar.equalsIgnoreCase(&quot;e&quot;)||lastChar.equalsIgnoreCase(&quot;y&quot;)||lastChar.equalsIgnoreCase(&quot;o&quot;))
+

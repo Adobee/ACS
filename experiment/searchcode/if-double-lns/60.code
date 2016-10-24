@@ -1,0 +1,6 @@
+inverseCovarianceMatrix[i][j] = Double.parseDouble(lns[j]);
+} catch (Exception e) {
+if (lns[j].toLowerCase().startsWith(&quot;inf&quot;)) {
+inverseCovarianceMatrix[i][j] = Double.POSITIVE_INFINITY;
+} else if (lns[j].toLowerCase().startsWith(&quot;-inf&quot;)) {
+

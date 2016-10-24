@@ -1,0 +1,7 @@
+IClockworkNetworkTile targetInvy = child.machine.getTargetInventory();
+if (targetInvy != null)
+for (ChildGuiData cld : guiDataList)
+if (cld != null &amp;&amp; cld.machine != null &amp;&amp; cld.machine.equals(targetInvy)) {
+float[] colors;
+if(child.gui instanceof ClockworkNetworkGuiClient)
+

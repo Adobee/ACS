@@ -1,0 +1,10 @@
+protected List<E> delegate() {
+return list;
+}
+
+private int indexIfNotEmpty(int index) {
+return index < 0 ? indexIfNotEmpty(size() + index) : index % size();
+}
+
+private int readIndex(int index) {
+

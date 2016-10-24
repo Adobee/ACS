@@ -1,0 +1,8 @@
+public class ORSelector extends CompositeSelector {
+
+@Override
+protected Boolean getStopResult() {
+protected Boolean process(Boolean a, Boolean b) {
+if (Boolean.TRUE.equals(a) || Boolean.TRUE.equals(b)) {
+return Boolean.TRUE;
+

@@ -1,0 +1,12 @@
+public class WeightedQuickUnionUF extends QuickUnionUF {
+
+private final int[] sz;
+
+public WeightedQuickUnionUF(int N) {
+super(N);
+sz = new int[N];
+}
+
+@Override
+public void union(int p, int q) {
+

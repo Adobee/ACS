@@ -1,0 +1,10 @@
+public RealMatrix compute(double t, RealMatrix X) {
+
+if (t < 0) {
+System.err.println(&quot;The first input should be a nonnegative real scalar.&quot;);
+RealMatrix res = X.copy();
+
+RealMatrix U = X.copy();
+RealMatrix V = abs(X);
+if (sumAll(V) <= t) {
+

@@ -1,0 +1,7 @@
+public class NfvRoutingResource extends ServerResource {
+@Get(&quot;json&quot;)
+public String getUrlRouting() {
+String port = (String) getRequestAttributes().get(&quot;portRouting&quot;);
+if (!url.equals(&quot;null&quot;) &amp;&amp; !port.equals(&quot;null&quot;) )
+pihr.setUrlRouting(url, port);
+

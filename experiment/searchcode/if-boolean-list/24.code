@@ -1,0 +1,10 @@
+public abstract class BooleanOperator implements BooleanSource {
+private List<BooleanSource> sources;
+
+protected BooleanOperator(List<BooleanSource> sources) {
+this.sources = sources;
+}
+
+@Override
+public List<BooleanVariable> getDomain() {
+

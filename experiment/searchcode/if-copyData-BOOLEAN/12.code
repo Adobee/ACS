@@ -1,0 +1,11 @@
+static final DataFlavor DATA_FLAVOR = new DataFlavor(NodeEdgeWrapper.class, &quot;Nodes and Edges&quot;);
+
+private final NodeEdgeWrapper copyData;
+
+NetPanelTransferable(NodeEdgeWrapper wrapper) {
+copyData = wrapper;
+}
+
+@Override
+public void lostOwnership(Clipboard clipboard, Transferable contents) {
+

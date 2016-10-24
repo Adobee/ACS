@@ -1,0 +1,11 @@
+boolean value = atomicBoolean.get();
+
+atomicBoolean.set(false);
+
+//get old and set new
+boolean oldValue = atomicBoolean.getAndSet(false);
+
+
+boolean expectedValue = true;
+boolean newValue      = false;
+

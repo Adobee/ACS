@@ -1,0 +1,18 @@
+this.errorMessage=errorMessage.NO_ERROR;
+}
+
+@Override
+public boolean hasError() {
+if (errorMessage.equals(ErrorMessage.NO_ERROR)) {
+return object;
+}
+
+@Override
+public String toString() {
+if(errorMessage==ErrorMessage.NO_ERROR){
+return object+&quot;&quot;;
+}else return &quot;&quot;+errorMessage;
+}
+
+}
+

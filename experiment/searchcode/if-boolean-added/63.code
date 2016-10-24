@@ -1,0 +1,15 @@
+return observers.remove(observer);
+}
+}
+
+@Override
+public boolean add(E element) {
+boolean added = super.add(element);
+if (added)
+notifyElementAdded(element);
+return added;
+}
+
+@Override
+public boolean addAll(Collection<? extends E> c) {
+

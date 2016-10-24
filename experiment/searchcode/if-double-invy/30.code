@@ -1,0 +1,11 @@
+protected final boolean invX;
+protected final boolean invY;
+
+Side(int degree, boolean swit, boolean invX, boolean invY) {
+return invX ? invVal - x : x;
+}
+}
+public int unpackY(int x, int y, int invVal) {
+if (swit) {
+return invY ? invVal - x : x;
+

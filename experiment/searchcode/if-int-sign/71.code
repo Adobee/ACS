@@ -1,0 +1,7 @@
+// the idea is to check the sign of  a - b, but it will overflow if a is very large and b is negative
+public static int findMax(int a, int b) {
+int sign = sign(a - b);
+int nSign = flip(sign);
+
+return a * sign + b * nSign;
+

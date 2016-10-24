@@ -1,0 +1,12 @@
+private String _name;
+
+@Override
+public void disconnect() {
+if(_element != null) {
+_element.removeMetadata(name());
+}
+}
+
+@Override
+public void setElement(Element element, String name) {
+

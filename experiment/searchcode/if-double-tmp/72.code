@@ -1,0 +1,11 @@
+int power = 1, index = 0;
+double tmp = x;
+ArrayList<Double> vals = new ArrayList<Double>();
+vals.add(tmp);
+}
+
+tmp = 1;
+int tmpN = n;
+while (tmpN > 0 &amp;&amp; index >= 0) {
+if (tmpN >= power) {
+

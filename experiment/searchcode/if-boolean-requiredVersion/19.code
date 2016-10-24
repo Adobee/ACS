@@ -1,0 +1,8 @@
+public final class RuntimeCheck {
+private RuntimeCheck() {
+}
+
+public static boolean requiresAtLeast(String minVersion, String apiName, ClassLoader caller) {
+if (caller instanceof AwareLoader) {
+String realVersion = ((AwareLoader)caller).requestedVersion(apiName);
+

@@ -1,0 +1,11 @@
+private final Object sincronizzaUpdate = new Object();
+
+float sampleFreq = 100;
+float twoKpDef = (2.0f * 5f);
+public float q0 = 1, q1 = 0, q2 = 0, q3 = 0;
+Vector3f gyro=new Vector3f(), acc=new Vector3f(), magn=new Vector3f();
+
+
+//long lastUp = System.nanoTime();
+long count=-1, lastFreqUp=System.currentTimeMillis();
+

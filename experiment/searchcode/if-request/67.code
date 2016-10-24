@@ -1,0 +1,6 @@
+public abstract class AbstractRequestHandler implements RequestHandler {
+protected RequestHandler nextRequestHandler;
+
+public void handleRequest(Request request) {
+if (canHandle(request)) {
+

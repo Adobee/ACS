@@ -1,0 +1,8 @@
+headers.add(&quot;Cache-Control&quot;, &quot;MIN-FRESH=80&quot;);
+headers.add(&quot;Cache-Control&quot;, &quot;ONLY-IF-CACHED&quot;);
+assertEquals(80, parsedHeaders.getMinFreshSeconds());
+assertTrue(parsedHeaders.isOnlyIfCached());
+}
+
+public void testCacheControlResponseDirectivesAreCaseInsensitive() {
+

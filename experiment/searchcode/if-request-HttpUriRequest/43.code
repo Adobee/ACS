@@ -1,0 +1,9 @@
+import org.apache.http.client.methods.HttpPut;
+import org.apache.http.client.methods.HttpUriRequest;
+import org.apache.http.client.params.HttpClientParams;
+public Response performRequest(Request<?> request) {
+
+try {
+HttpUriRequest httpRequest = createHttpRequest(request);
+// 添加连接参数
+

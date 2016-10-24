@@ -1,0 +1,11 @@
+this.toClass = toClass;
+}
+
+public boolean canFrom(Class<?> clazz){
+if(clazz == null) throw new IllegalStateException(&quot;Every drag event needs a source&quot;);
+if(clazz == null) throw new IllegalStateException(&quot;Can&#39;t check null target&quot;);
+return clazz.isAssignableFrom(toClass);
+}
+
+public boolean canFromTo(Class<?> from, Class<?> to){
+

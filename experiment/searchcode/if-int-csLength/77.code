@@ -1,0 +1,10 @@
+this.dstPort = skbuf.get16(2);
+this.udpLength = skbuf.get16(4);
+final int checksum = skbuf.get16(6);
+if (checksum == 0) {
+phdr.append(offset, skbuf);
+final int csLength = udpLength + 12;
+return IPv4Utils.calcChecksum(phdr, 0, csLength);
+}
+}
+

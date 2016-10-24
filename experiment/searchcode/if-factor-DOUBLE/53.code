@@ -1,0 +1,8 @@
+package local.rac.custom;
+
+public class Axon {
+private double membraneTransmissionFactor ;
+public Axon( Neuron neuron, double membraneTransmissionFactor ) {
+this.neuron = neuron ;
+this.membraneTransmissionFactor  = membraneTransmissionFactor ;
+

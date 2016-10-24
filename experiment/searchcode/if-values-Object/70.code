@@ -1,0 +1,8 @@
+private Map<Key, Object> cacheMap = new HashMap<Key, Object>();
+
+public Object get(Object... keyValues) {
+return cacheMap.get(new Key(keyValues));
+if (keyValues != null) {
+for (Object object : keyValues) {
+if (!first) {
+

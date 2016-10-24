@@ -1,0 +1,15 @@
+decisionHistory.add(decisionSet);
+}
+
+
+public DecisionSet getLastDecision(){
+int size = decisionHistory.size();
+
+if(size == 0)
+for (DecisionSet singleHistory : decisionHistory) {
+if(singleHistory.theirDecision == Decision.Defect)
+defectCount++;
+}
+
+return defectCount;
+

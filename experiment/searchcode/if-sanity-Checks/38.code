@@ -1,0 +1,12 @@
+import org.vmmagic.unboxed.*;
+
+/**
+* This class performs sanity checks for RefCount collectors.
+*/
+@Uninterruptible public class GenSanityCheckerLocal extends SanityCheckerLocal {
+return space.isReachable(object) ? SanityChecker.ALIVE : SanityChecker.DEAD;
+}
+
+// Mature space (nursery collection)
+if (VM.activePlan.global().isCurrentGCNursery()) {
+

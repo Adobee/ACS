@@ -1,0 +1,17 @@
+protected enum Direction
+{
+UP, DOWN, LEFT, RIGHT
+}
+
+protected Direction dir;
+
+public void move(double xa, double ya) // xa = how the x position changes on the x-axis, ya = how the y position changes on the y-axis
+if(xa != 0 &amp;&amp; ya != 0)
+{
+move(xa, 0);
+move(0, ya);
+return;
+}
+
+if(xa > 0) dir = Direction.RIGHT;
+

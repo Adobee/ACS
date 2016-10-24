@@ -1,0 +1,6 @@
+public static boolean isColliding(GameObject g1, GameObject g2){
+
+if (g1.dstX >= g2.x       &amp;&amp; g1.dstY >= g2.y) return true;
+else if(g1.x <= g2.x+g2.WIDTH &amp;&amp; g1.y+g1.HEIGHT >= g2.y) return true;
+else if(g1.x <= g2.dstX       &amp;&amp; g1.y <= g2.dstY  ) return true;
+

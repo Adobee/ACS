@@ -1,0 +1,10 @@
+public class TaskRepository {
+private final List<Task> tasks = new ArrayList<Task>();
+private int lastTaskId;
+return tasks;
+}
+
+public Task findOne(int taskId) {
+for(Task task : tasks) {
+if(task.id != taskId) {
+

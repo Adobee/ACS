@@ -1,0 +1,12 @@
+package watchdog.posting;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+public class JsonMapperFeeder {
+private JsonMapperFeeder(){
+}
+
+public static ObjectMapper getInstance(){
+if(objectMapper == null){
+objectMapper = new ObjectMapper();
+

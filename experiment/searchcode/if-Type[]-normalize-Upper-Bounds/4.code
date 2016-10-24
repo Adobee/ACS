@@ -1,0 +1,8 @@
+for (Type bound : getImplicitUpperBounds((WildcardType) type)) {
+if (isAssignable(bound, (Type) toGenericArrayType)) {
+return true;
+}
+
+public static Type[] normalizeUpperBounds(Type[] bounds) {
+if (bounds.length < 2) {
+

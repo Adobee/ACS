@@ -1,0 +1,7 @@
+private String parseNumber(int number) {
+String parsedNumber = parseIfDivisibleByTwo(number) + parseIfDivisibleByThree(number);
+return parsedNumber + defaultParseIfEmpty(parsedNumber, number);
+}
+
+private String defaultParseIfEmpty(String parsedNumber, int number){
+

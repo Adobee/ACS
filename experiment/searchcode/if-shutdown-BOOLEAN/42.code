@@ -1,0 +1,8 @@
+public static final String FINISH_AND_SHUTDOWN = &quot;finish_and_close&quot;;
+
+public static boolean isShutdownMessage(String msg) {
+return (SHUTDOWN_NOW.equals(msg) || FINISH_AND_SHUTDOWN.equals(msg));
+public static void messageToException(String msg)
+throws ShutdownException, FinishAndShutdownException {
+if (msg.equals(Messages.SHUTDOWN_NOW)) throw new ShutdownException();
+

@@ -1,0 +1,18 @@
+if (n == 0) return 1.0;
+boolean negative = false;
+if (n < 0) {
+negative = true;
+n = -n;
+}
+double res = 1.0;
+while (n > 0) {
+if (n % 2 != 0) {
+res *= x;
+}
+x *= x;
+n /= 2;
+}
+return negative?1.0/res: res;
+}
+}
+

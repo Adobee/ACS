@@ -1,0 +1,13 @@
+public class HelpCommand implements Command{
+/**静态工厂对象，返回实现工厂接口的匿名内部类实例*/
+private Boolean isLogin = false;
+
+public static CmdFactory factory=new CmdFactory(){
+super();
+}
+
+/**判断是否是登录用户
+* */
+public void parse(List param) {
+if(param!=null &amp;&amp; param.size() > 0){
+

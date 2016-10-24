@@ -1,0 +1,8 @@
+int index;
+// 获取身上宝石等级
+if ((index = str.indexOf(Spar.armour_name)) != -1) {
+level = Integer.parseInt(str.substring(
+map.put(Spar.armour_name, level);
+} else if ((index = str.indexOf(Spar.critChance_name)) != -1) {
+level = Integer.parseInt(str.substring(index
+

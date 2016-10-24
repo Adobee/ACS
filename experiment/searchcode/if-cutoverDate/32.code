@@ -1,0 +1,10 @@
+zone = DateTimeUtils.getZone(zone);
+Instant cutoverInstant;
+
+if (gregorianCutover == null)
+{
+cutoverInstant = DEFAULT_CUTOVER;
+LocalDate cutoverDate = new LocalDate(cutoverInstant.getMillis(), GregorianChronology.getInstance(zone));
+
+if (cutoverDate.getYear() <= 0)
+

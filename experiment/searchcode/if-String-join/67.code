@@ -1,0 +1,8 @@
+List<JoinPoint> commonJoinPointList = new ArrayList<JoinPoint>();
+ensureJoinPoints();
+if (this.equals(otherJoiner)) {
+throw new RuntimeException(&quot;Cannot join to self&quot;);
+LOG.trace(&quot;join distance &quot;+distanceToOther);
+if (joinPoint.getRadius() + otherJoinPoint.getRadius() > distanceToOther) {
+JoinPoint commonJoinPoint = null;
+

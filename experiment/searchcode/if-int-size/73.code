@@ -1,0 +1,8 @@
+public int candy(int[] ratings) {
+int size = ratings.length;
+if (size == 0) return 0;
+
+int[] candies = new int[size];
+for (int i = 1; i < size; i++) {
+if (ratings[i] > ratings[i - 1]) {
+

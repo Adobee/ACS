@@ -1,0 +1,9 @@
+private int length = 1000;
+private double[] array = new double[this.length];
+
+private final transient PropertyChangeSupport propertyChangeListeners = new PropertyChangeSupport(this);
+public void setValue(final double value)
+{
+final double oldValue = getValue();
+final double oldDelta = getDelta();
+

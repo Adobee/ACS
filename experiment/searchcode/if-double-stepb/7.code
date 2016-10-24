@@ -1,0 +1,10 @@
+import sdt.geometry.*;
+import javax.vecmath.*;
+import sdt.java3d.*;
+import sdt.stepb.stepb_cartesian_point_array;
+import sdt.stepb.stepb_cartesian_point;
+import sdt.stepb.math_vector3d;
+
+
+public class SDT_Object extends SDT_TransformGroup
+

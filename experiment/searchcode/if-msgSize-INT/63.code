@@ -1,0 +1,7 @@
+System.out.println (&quot;MsgRecv: ServerMocket accepted a connection&quot;);
+
+while (true) {
+int msgSize = mocket.receive (msg);
+System.out.println (&quot;MsgRecv: Receive returned &quot; + msgSize);
+if (msgSize <= 0) {
+

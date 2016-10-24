@@ -1,0 +1,8 @@
+return idf * ((freq * (k1 + 1)) / (freq + k1 * (1 - b + ( b * doclen/avlen ))));
+}
+
+public static float idf(long docFreq, long numDocs)
+{
+//TFIDF// return  (float) Math.log( ( numDocs + 1 ) / ( docFreq + 0.5 ) );
+return (float) Math.log(1+(numDocs - docFreq + 0.5)/(docFreq + 0.5));
+

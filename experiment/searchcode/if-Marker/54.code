@@ -1,0 +1,10 @@
+public static synchronized MarkerManager getInstance(){
+if(sMarkerManager == null){
+sMarkerManager = new MarkerManager();
+Log.i(&quot;MarkerManager&quot;, &quot; &quot;);
+
+}
+
+public Hashtable<String, Marker> getMarkerHashTable(){
+if(markerHashTable == null){
+

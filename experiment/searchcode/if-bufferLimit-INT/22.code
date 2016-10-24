@@ -1,0 +1,10 @@
+private final int patternLen;
+
+
+public ShiftOrByteBufferMatcher(final IoBuffer pat) {
+if (pat == null || pat.remaining() == 0) {
+final List<Integer> matches = new ArrayList<Integer>();
+final int bufferLimit = buffer.limit();
+int state = ~0;
+for (int pos = buffer.position(); pos < bufferLimit; pos++) {
+

@@ -1,0 +1,11 @@
+public static void main(String[] args) {
+System.out.println(isMatch(&quot;dcccaaaa&quot;,&quot;c*a*&quot;));
+
+}
+
+public static boolean isMatch(String s, String p) {
+int n = p.length();
+boolean[][] match = new boolean[m + 1][n + 1];
+match[0][0] = true;
+for (int j = 1; j <= n; j++) {  // initialize 1st row, match p with empty s
+

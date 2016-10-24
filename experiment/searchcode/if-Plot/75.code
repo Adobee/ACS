@@ -1,0 +1,6 @@
+import com.panayotis.gnuplot.JavaPlot;
+import com.panayotis.gnuplot.plot.DataSetPlot;
+import com.panayotis.gnuplot.plot.FunctionPlot;
+import com.panayotis.gnuplot.style.NamedPlotColor;
+import com.panayotis.gnuplot.style.PlotStyle;
+

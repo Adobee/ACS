@@ -1,0 +1,6 @@
+/** keep track of the expanded state of each element, by its identity */
+private HashMap<E,Boolean> elementsExpandedStates = new HashMap<E,Boolean>();
+Boolean expanded = elementsExpandedStates.get(element);
+if(expanded == null) {
+expanded = Boolean.valueOf(defaultsModel.isExpanded(element, path));
+

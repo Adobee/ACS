@@ -1,0 +1,15 @@
+out += String.valueOf(z) + &quot;>&quot;;
+return out;
+}
+
+public double getEntry(int j) {
+if (j == 0) {
+return x;
+return z;
+}
+return 0.0;
+}
+
+public void setEntry(int i, double v) {
+if (i == 0) {
+

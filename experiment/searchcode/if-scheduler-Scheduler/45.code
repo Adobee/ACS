@@ -1,0 +1,14 @@
+import com.kioli.rx.core.data.manager.SchedulerManager;
+
+import rx.Scheduler;
+import rx.schedulers.Schedulers;
+
+public class SchedulerManagerImpl implements SchedulerManager {
+public Scheduler getSubscribeScheduler() {
+if (_subscribeScheduler == null) {
+_subscribeScheduler = Schedulers.io();
+}
+return _subscribeScheduler;
+}
+}
+

@@ -1,0 +1,8 @@
+if (a instanceof Integer) return (V)Integer.valueOf(a.intValue() + b.intValue());
+if (a instanceof Double) return (V)Double.valueOf(a.doubleValue() + b.doubleValue());
+(accum, val) -> genericSum(accum, aggregate.aggregate(val)),
+(accum1, accum2) -> genericSum(accum1, accum2));
+}
+@Override
+public Double sumDouble(CollectDouble<T> aggregate)
+

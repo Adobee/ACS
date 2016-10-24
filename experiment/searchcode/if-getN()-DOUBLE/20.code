@@ -1,0 +1,11 @@
+public void printPmf(double[] d)
+{
+if (d.length != getN()) {
+throw new MalformedTupleException(d.length, this);
+}
+
+// mean = E(X)
+for (int j = 0; j < getN(); j++) {
+System.out.print(fmt.format(d[j]));
+if (j != getN() - 1) {
+

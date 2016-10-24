@@ -1,0 +1,18 @@
+} else {
+return super.type();
+}
+}
+
+@Override
+public boolean hasScript() {
+initPython();
+if (pexec.isImplemented(1)) {
+return super.hasScript();
+}
+}
+
+@Override
+public boolean hasStylesheet() {
+initPython();
+if (pexec.isImplemented(2)) {
+

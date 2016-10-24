@@ -1,0 +1,8 @@
+nextindexOfClosed = 0;
+nextindexOfSemi = 0;
+Stack Tokens = new Stack();
+if(src.indexOf(exceptionContainerOpen, nextindexOfOpen) == -1)
+nextindexOfClosed = src.indexOf(exceptionContainerCloser, nextindexOfClosed + 1);
+nextindexOfSemi = src.indexOf(delimiter, nextindexOfSemi + 1);
+if(nextindexOfSemi == -1)
+

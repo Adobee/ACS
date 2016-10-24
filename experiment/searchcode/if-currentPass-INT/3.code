@@ -1,0 +1,12 @@
+List<String> paths = new ArrayList<String>();
+int currentPass = 2 * iteration + step;
+
+if (currentPass > 0) {
+if (step == 0)
+paths.add(conf.getOutputPath() + &quot;/i&quot; + (currentPass - 1));
+if (step == 1) {
+/**
+* for the duplicate elimination step
+*/
+for (int i = 1; i < currentPass; i += 2)
+

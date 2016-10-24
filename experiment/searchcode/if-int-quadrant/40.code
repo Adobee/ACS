@@ -1,0 +1,12 @@
+public static void main(String[] args) {
+// INPUT
+int x = 5;
+int y = 2;
+
+// PROCESSING
+String quadrant = &quot;on an axis&quot;;  // reasonable default value.
+if ((x > 0) &amp;&amp; (y > 0)) {
+quadrant = &quot;in quadrant I&quot;;
+} else if ((x > 0) &amp;&amp; (y < 0)) {
+quadrant = &quot;in quadrant IV&quot;;
+

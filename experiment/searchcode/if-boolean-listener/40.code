@@ -1,0 +1,7 @@
+private final List<ConfigurationChangedListener> listener = new ArrayList<>();
+
+@Override
+public void addListener(ConfigurationChangedListener... configurationChangedListeners) {
+for (ConfigurationChangedListener configurationChangedListener : listener) {
+if (configurationChangedListener.changePerformed(tour)) {
+

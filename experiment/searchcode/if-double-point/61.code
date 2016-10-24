@@ -1,0 +1,14 @@
+double i = 0;
+double[] point = new double[2];
+while ( i < x) {
+i++;
+point[0] = Math.random();
+point[1] = Math.random();
+if( Math.sqrt((point[0]*point[0])+(point[1]*point[1])) <= 1) {
+p++;
+}
+}
+return 4*(p/i);
+}
+}
+

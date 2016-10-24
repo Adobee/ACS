@@ -1,0 +1,8 @@
+public static InputStream getStream() {
+String all = &quot;&quot;;
+int lastChar       = 0;
+int secondLastChar = 0;
+try {
+all += Character.toString((char) secondLastChar);
+if (lastChar == &#39;\n&#39; &amp;&amp; secondLastChar == &#39;\n&#39;) {
+

@@ -1,0 +1,7 @@
+*  An EofX exception is thrown if a newline is encountered.
+*  A  NFX  exception is thrown if there is an input format error,
+public	char	readChar()	throws EofX;
+public	double	readDouble()	throws EofX, NFX;
+public	int	readInt()	throws EofX, NFX;
+public	String	readLine()	throws EofX;
+

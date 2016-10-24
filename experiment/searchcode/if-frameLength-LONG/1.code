@@ -1,0 +1,11 @@
+public static class Animation implements CustomAnimation {
+long frameLength;
+long thisFrame;
+
+public Animation(long f){
+frameLength = f;
+}
+
+public void animate(Entity e, long deltaMs){
+thisFrame += deltaMs;
+

@@ -1,0 +1,10 @@
+private List<Integer> Stack;
+private List<Integer> minPos;
+
+public void push(int input){
+Stack.add(input);
+if(isEmpty()){
+minPos.add(Stack.size()-1);
+}else{
+if(input < Stack.get(minPos.get(minPos.size()-1))){
+

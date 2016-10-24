@@ -1,0 +1,9 @@
+protected  volatile long complete = 0;
+protected volatile long total = 0;
+protected JpgGenerationProcess parent = null;
+parent.pukeIfCanceled();
+return ++complete;
+}
+public void setTotal(long total) {
+parent.pukeIfCanceled();
+

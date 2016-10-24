@@ -1,0 +1,11 @@
+public void removeInputModule(IInputModule module) {
+if(inputModule == module) {
+inputModule = null;
+}
+}
+
+@Override
+public void onTimerEvent() {
+if(inputModule != null) {
+inputModule.onTimerEvent();
+

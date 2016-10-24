@@ -1,0 +1,7 @@
+public class AbstractJsonContent implements JsonContent {
+
+@Override
+public String toJson(boolean prettyPrint) {
+if (prettyPrint) {
+return Json.toPrettyJson(this);
+

@@ -1,0 +1,8 @@
+public synchronized static ArrayType make(Type innerType, int size)
+{
+// We can&#39;t create void[] arrays, or negative or zero-sized arrays
+Map<Integer, ArrayType> arrayTypesOfThatInnerType = instances.get(innerType);
+
+if (arrayTypesOfThatInnerType == null) {
+// We haven&#39;t seen ANY arrays with the given inner type
+

@@ -1,0 +1,9 @@
+public int nthUglyNumber(int n) {
+Queue<Long> q2 = new LinkedList<Long>();
+q2.offer(2l);
+Queue<Long> q3 = new LinkedList<Long>();
+q5.offer(5l);
+long uglyNum = 1;
+for(int i=1; i<n; i++) {
+uglyNum = getMin(q2.peek(), q3.peek(), q5.peek());
+

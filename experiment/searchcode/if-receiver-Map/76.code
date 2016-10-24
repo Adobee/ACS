@@ -1,0 +1,11 @@
+public class EventDispatcher {
+
+private Map<EventType,Array<EventReceiver>> receiverMap;
+private static EventDispatcher instance;
+public EventDispatcher(){
+receiverMap = new HashMap<>();
+
+}
+
+public void addReceiver(EventType eventType, EventReceiver receiver){
+

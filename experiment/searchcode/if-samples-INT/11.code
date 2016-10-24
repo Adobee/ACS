@@ -1,0 +1,16 @@
+public int limitAmplitude(int limit) {
+int result = 0;
+
+for (int i = 0; i < samples.length; i++) {
+if (samples[i] > limit) {
+int silence = true;
+while (silence) {
+if (samples[i] == 0) {
+silence = false;
+}
+
+numSilence++;
+}
+
+int[] result = new int[samples.length - numSilence];
+

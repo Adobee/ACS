@@ -1,0 +1,15 @@
+System.out.println(convert(s, nRows));
+
+}
+
+public static String convert(String s, int nRows) {
+if (s == null || s.length() == 0 || s.length() == 1 || nRows <= 1) {
+int j = 0;
+while (j < len) {
+r += s.charAt(j);
+j += 2 * (nRows - 1);
+}
+
+if (nRows > 2) {
+for (int i = 1; i < nRows - 1; i++) {
+

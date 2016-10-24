@@ -1,0 +1,10 @@
+MethodDescPattern(Pattern owner,Pattern name,Pattern desc){
+if (owner==null || name==null || desc==null){
+Agent.logger.error(&quot;init MethodPattern error!owner==null || name==null || desc==null&quot;);
+setExclude(exclude);
+}
+
+//默认包含所有
+public boolean matchInclude(String owner,String name,String desc){
+if (includepattern == null || includepattern.isEmpty()) return true;
+

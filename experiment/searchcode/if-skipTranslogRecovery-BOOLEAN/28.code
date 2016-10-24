@@ -1,0 +1,10 @@
+* has been ignored due to a concurrent modification of if the clusters state has changed due to async updates.
+*/
+boolean recoverFromRepository(final IndexShard indexShard, Repository repository) {
+return false;
+
+}
+
+private boolean canRecover(IndexShard indexShard) {
+if (indexShard.state() == IndexShardState.CLOSED) {
+

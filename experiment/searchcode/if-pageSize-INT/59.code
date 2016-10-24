@@ -1,0 +1,13 @@
+public int pageSize;
+public Object data;
+
+public PageInfo(){
+pageNo = 1;
+total = 0;
+pageSize = 10;
+}
+
+public int getTotalPageCount(){
+if(total % pageSize == 0)
+return total / pageSize;
+

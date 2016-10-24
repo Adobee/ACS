@@ -1,0 +1,13 @@
+public int getParameterType(int param) throws SQLException
+{
+if (out_ != null)
+out_.println(getTraceId() + &quot;getParameterType(&quot; + param + &quot;)&quot;);
+int retValue;
+retValue = pmd_.getParameterTypeName(param);
+return retValue;
+}
+
+public int getPrecision(int param) throws SQLException
+{
+if (out_ != null)
+

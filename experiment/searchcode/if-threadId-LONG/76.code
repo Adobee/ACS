@@ -1,0 +1,8 @@
+public synchronized final TpccTools getTpccTools(int threadId) {
+if (threadId >= threadRandom.length) {
+TpccTools[] old = threadRandom;
+System.arraycopy(old, 0, threadRandom, 0, old.length);
+}
+if (threadRandom[threadId] == null) {
+long seed = initialSeed;
+

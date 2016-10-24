@@ -1,0 +1,6 @@
+if ((offsetLocal - offsetAdjusted) < 0) {
+// if we just return offsetAdjusted then the time is pushed
+long nextLocal = nextTransition(instantAdjusted);
+if (nextLocal == (instantLocal - offsetLocal)) {
+nextLocal = Long.MAX_VALUE;
+

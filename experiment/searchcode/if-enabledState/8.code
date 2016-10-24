@@ -1,0 +1,8 @@
+protected final JCheckBox checkBox;
+protected final boolean enabledState;
+protected boolean globalEnable = true;
+protected ComponentEnabler[] childs = null;
+boolean enable = globalEnable &amp;&amp; (checkBox.isSelected() == enabledState);
+for (JComponent comp : toEnable) {
+comp.setEnabled(enable);
+

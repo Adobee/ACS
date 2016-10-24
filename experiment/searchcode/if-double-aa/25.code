@@ -1,0 +1,12 @@
+import org.apache.log4j.Logger;
+
+
+public class AminoAcidStats {
+protected HashMap<String, Double> aaFrequency;
+public AminoAcidStats () {
+aaFrequency = null;
+}
+
+public double getAAFrequency(char aa) {
+String aa_str = String.valueOf(aa);
+

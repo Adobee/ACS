@@ -1,0 +1,14 @@
+public void open(int i, int j) {
+
+if (isOpen(i, j)) {
+return;
+}
+
+int realIndex = toOneDim(i, j);
+connectOpened(i + 1, j, realIndex);
+connectOpened(i, j + 1, realIndex);
+
+}
+
+public boolean isOpen(int i, int j) {
+

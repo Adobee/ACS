@@ -1,0 +1,19 @@
+* @author kempa
+*
+*/
+public class Solution
+{
+
+public static int wallRecursive(int nCols)
+{
+if (nCols < 1)
+return wall(nCols - 1) + wall(nCols - 4);
+}
+
+public static int wall(int nCols)
+{
+
+if (nCols <= 0)
+return 0;
+if (nCols < 4)
+

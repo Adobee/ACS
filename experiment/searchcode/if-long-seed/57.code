@@ -1,0 +1,10 @@
+private static final double EPS = 1.2e-7;
+private static final double RNMX = (1.0-EPS);
+
+
+private long seed;
+long[] iv = new long[NTAB];
+double temp;
+seed = -1*Math.abs(seed);
+if (seed<= 0 || iy!=0){
+

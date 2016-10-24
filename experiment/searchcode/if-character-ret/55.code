@@ -1,0 +1,11 @@
+if (digits == null) return null;
+ArrayList<String> ret = new ArrayList<String>();
+if (digits.isEmpty()) {
+ret.add(letter + lastStr);
+}
+}
+return ret;
+}
+
+private static Set<Character> numToLetters(int n) {
+

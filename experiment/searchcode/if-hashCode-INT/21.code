@@ -1,0 +1,10 @@
+import com.lightning.crawler.framework.hash.IBloomHash;
+
+
+public class APBloomHash implements IBloomHash {
+@Override
+public int hash(String url) {
+int hashCode = 0;
+for ( int i = 0; i < url.length(); i++ ) {
+if ( (i &amp; 1) == 0 ) {
+

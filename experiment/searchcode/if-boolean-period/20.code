@@ -1,0 +1,15 @@
+private final int periodCR;
+private final String value;
+private boolean foo;
+
+public Delimiter(String value, int period, int linebreakPeriod) {
+this(value, period, 0);
+}
+
+public boolean tally() {
+foo = true;
+return ++tally == period;
+}
+
+@Override
+

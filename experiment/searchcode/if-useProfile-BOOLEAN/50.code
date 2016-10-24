@@ -1,0 +1,9 @@
+private static Context sAppContext = null;
+private static Tracker mTracker;
+
+private static boolean canSend() {
+if (mTracker == null) {
+int useProfile;
+if (BuildConfig.DEBUG) {
+LOGD(TAG, &quot;Analytics manager using DEBUG ANALYTICS PROFILE.&quot;);
+

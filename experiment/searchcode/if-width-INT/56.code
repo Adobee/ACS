@@ -1,0 +1,18 @@
+public Rectangle(int x, int y){
+if(x<=0 || y<=0){
+length = 1;
+width = 1;
+}
+if(x>0 &amp;&amp; y>0){
+length = x;
+width = y;
+}
+}
+
+public void setLength(int x){
+if(x>0)
+length = x;
+}
+
+public void setWidth(int y){
+

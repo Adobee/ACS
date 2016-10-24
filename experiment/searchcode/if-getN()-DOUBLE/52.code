@@ -1,0 +1,12 @@
+a.setElement(i, j, d*aoriginal.getElement(i, j));
+}
+}
+int iter = 0;
+double err;
+Matriz error;
+Matriz xnuevo = new Matriz(b.getN(), 1);
+x.setElement(i, 0, b.getElement(i, 0));
+for (int j = 0; j < a.getN(); j++) {
+if (i!=j) {
+double value = x.getElement(i, 0)-a.getElement(i, j)*x.getElement(i, 0);
+

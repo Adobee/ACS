@@ -1,0 +1,7 @@
+private static Log logger = LogFactory.getLog(MqReceiverContainer.class);
+private Map<String, IMqReceiver> receiverMap = new HashMap<>(10);
+
+public void handleMessage(String foo) {
+try {
+Map<String, Object> map = GsonUtil.fromJson(foo, new TypeToken<Map<String, Object>>() {});
+

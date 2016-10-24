@@ -1,0 +1,10 @@
+datasetCount = 0;
+}
+
+boolean parse(byte[] paket, DatasetStructure datasetStructure){
+int dsCount = 0;
+for (int i = 0; i < datasetStructure.getCount(); i++) {
+DatasetItem dsItem = datasetStructure.getItem(i);
+
+if (dsItem instanceof DatasetItemId) {
+

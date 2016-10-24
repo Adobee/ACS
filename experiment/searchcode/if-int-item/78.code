@@ -1,0 +1,5 @@
+public static ItemModel getItemAtPosition(List<ItemModel> itemModels, int x, int y) {
+for (ItemModel item : itemModels) {
+if (item.getPosition().x == x &amp;&amp; item.getPosition().y == y) {
+return item;
+

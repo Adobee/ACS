@@ -1,0 +1,8 @@
+setContentView(R.layout.activity_fullscreen);
+//Autostart checkbox:
+boolean autostart;
+SharedPref sharedPref = new SharedPref(getApplicationContext());
+try {
+String a = sharedPref.getStr(&quot;autostart&quot;);
+if (a.length() > 0) autostart = Boolean.parseBoolean(a);
+

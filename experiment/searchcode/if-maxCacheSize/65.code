@@ -1,0 +1,12 @@
+private static final int maxCacheSize = 256;
+
+private LinkedList<T> cache = new LinkedList<T>();
+
+public ThreadScopeCache(DataProvider<T> provider){
+super(provider);
+}
+
+public T getLocal(){
+T res = cache.pollFirst();
+if(res == null){
+

@@ -1,0 +1,10 @@
+MasterSecret masterSecret = getMasterSecret();
+onRun(masterSecret);
+}
+
+@Override
+public boolean onShouldRetry(Exception exception) {
+MasterSecret masterSecret = KeyCachingService.getMasterSecret(context);
+
+if (masterSecret == null) throw new RequirementNotMetException();
+

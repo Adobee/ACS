@@ -1,0 +1,10 @@
+import com.springmvcmaventutorial.bean.Member;
+import com.springmvcmaventutorial.dao.MemberMapper;
+import com.springmvcmaventutorial.service.api.MemberService;
+this.memberMapper = memberMapper;
+}
+
+public Member saveMember(Member member) {
+if (member.getId() != null){
+memberMapper.updateMember(member);
+

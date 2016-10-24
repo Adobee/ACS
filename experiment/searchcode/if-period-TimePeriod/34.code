@@ -1,0 +1,14 @@
+private final static DateMidnight UNLIMITED_PERIOD_END = new DateMidnight(2099, 1, 1);
+
+private final Interval timePeriod;
+
+public LivingPeriod(DateMidnight start) {
+public DateMidnight getEndDate() {
+if (!isLimited())
+throw new RuntimeException(&quot;this period is unlimited&quot;);
+else
+return new DateMidnight(timePeriod.getEnd());
+}
+
+}
+

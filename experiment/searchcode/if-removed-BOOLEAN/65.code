@@ -1,0 +1,16 @@
+private Node<E> t, t2, first;
+boolean removed;
+
+public LLit(Node<E> n){
+first = n;
+t = n;
+t2 = n.getNext();
+removed = false;
+}
+
+public boolean hasNext(){
+return t2 != null;
+}
+
+public E next(){
+

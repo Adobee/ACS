@@ -1,0 +1,16 @@
+return exp((df/2-1)*log(x)-x/2- (df/2*log(2)+lnGamma(df/2))  );
+}
+
+
+@Override
+public double cdf(double x)
+{
+if(x <= 0)
+return gammaP(df/2, x/2);
+}
+
+@Override
+public double invCdf(double p)
+{
+if(df == 2)//special case with a closed form that is more accurate to compute, we include it b/c df = 2 is not uncomon
+

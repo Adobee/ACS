@@ -1,0 +1,12 @@
+package Statistics;
+
+public class BenfordsLaw {
+public static double getProbability(int firstDigit) {
+int d = firstDigit;
+
+if (d < 1 || d > 9) {
+return 0;
+}
+
+return Math.log10(d + 1) - Math.log10(d);
+

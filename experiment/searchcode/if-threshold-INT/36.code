@@ -1,0 +1,10 @@
+private static final Logger LOGGER = LoggerFactory.getLogger(ConsensusThreshold.class);
+
+long lastThresholdIncrementTS;
+int nbMSPerIncrement;
+protected int currentThreshold;
+protected int thresholdStart;
+protected int thresholdEnd;
+protected int thresholdStep;
+public Object thresholdReachedMonitor=new Object();
+

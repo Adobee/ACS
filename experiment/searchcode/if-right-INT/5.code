@@ -1,0 +1,9 @@
+public class Solution {
+public int trap(int[] A) {
+if (A == null) return 0;
+int ans = 0;
+while (right < A.length &amp;&amp; A[right] < A[left])
+right++;
+if (right == A.length) break;
+for (int i = left + 1; i < right; i++)
+

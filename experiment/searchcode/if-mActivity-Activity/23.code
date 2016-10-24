@@ -1,0 +1,10 @@
+private static DisplayUtils instance;
+private Activity mActivity;
+private DisplayUtils(Activity mActivity){
+this.mActivity=mActivity;
+public static DisplayUtils getInstance(Activity mActivity){
+if(instance==null){
+instance=new DisplayUtils(mActivity);
+}
+return instance;
+

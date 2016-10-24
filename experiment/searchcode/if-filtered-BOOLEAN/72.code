@@ -1,0 +1,10 @@
+private INKtupFilter<T> nextFilter;
+
+@Override
+public boolean filter(T ktup) {
+boolean filtered = filterInternal(ktup);
+@Override
+public boolean filter(byte b) {
+boolean filtered = filterInternal(b);
+if (!filtered &amp;&amp; nextFilter != null) {
+

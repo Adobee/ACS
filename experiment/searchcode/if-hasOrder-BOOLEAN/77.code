@@ -1,0 +1,8 @@
+Deque<Integer> order = new ArrayDeque<>();
+for (int i = adjs.size() - 1; i >= 0; i--) {
+if (visited.get(i) == false &amp;&amp; hasOrder(i, adjs, visited, onStack, order) == false) return new int[0];
+return orderArray;
+}
+
+private boolean hasOrder(int from, List<List<Integer>> adjs, BitSet visited, BitSet onStack, Deque<Integer> order) {
+

@@ -1,0 +1,9 @@
+// Take the length of the longer version
+int length = v2.length;
+if (v1.length > v2.length) {
+length = v1.length;
+String[] split = version.split(&quot;\\.&quot;);
+int[] intVersion = new int[split.length];
+
+for (int i=0;i<split.length;i++) {
+

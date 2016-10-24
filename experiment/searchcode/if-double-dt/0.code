@@ -1,0 +1,13 @@
+public static double triangle(long dt, long s) {
+if(dt > s) {
+return 0.;
+}
+return 1.0 - ((double)dt / (double)s);
+}
+
+public static double circle(long dt, long s) {
+if(dt > s) {
+return 0.;
+}
+return Math.sqrt(1.0 - Math.pow(((double)dt / (double)s), 2));
+

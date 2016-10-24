@@ -1,0 +1,9 @@
+public class UDPPublisher implements Runnable {
+private UDPSensorController ctrl;
+private int port;
+private DatagramSocket socket;
+public UDPPublisher(UDPSensorController ctrl, int publishPort) {
+super();
+this.port=publishPort;
+this.ctrl = ctrl;
+

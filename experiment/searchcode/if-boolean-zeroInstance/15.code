@@ -1,0 +1,14 @@
+public DelayBlockTileEntity() {
+triggerInvoke = BlockTriggerInvoke.ZEROINSTANCE;
+delay = 20;
+}
+
+@Override
+public void getInvokes(List<IInvoke> invokes) {
+comp.setInteger(&quot;delay&quot;, delay);
+return comp;
+}
+
+public void trigger(EnumTriggerState triggerState) {
+if(triggerState.getBooleanValue()) {
+

@@ -1,0 +1,11 @@
+if (json == null){
+json = new JSONObject();
+}
+
+if (getConnectTimeoutMilli() != DEFAULT_CONNECT_TIMEOUT_MILLI){
+json.put(FIELD_CONNECT_TIMEOUT, getConnectTimeoutMilli());
+}
+
+if (getReadTimeoutMilli() != DEFAULT_READ_TIMEOUT_MILLI){
+json.put(FIELD_READ_TIMEOUT, getReadTimeoutMilli());
+

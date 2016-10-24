@@ -1,0 +1,11 @@
+class ComplexElementDeclaration extends ElementDeclaration {
+// fields
+private boolean finalized;
+private ComplexTypeDefinition type;
+boolean finalize(ComplexTypeDefinition type) {
+if (finalized)
+return false;
+
+this.type = type;
+return finalized = true;
+

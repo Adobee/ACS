@@ -1,0 +1,9 @@
+List<DiscoveredTerm> results = new ArrayList<OntologyTermDiscoverer.DiscoveredTerm> ();
+
+boolean allNull = true;
+for ( OntologyTermDiscoverer discoverer: this.discoverers )
+List<DiscoveredTerm> thisResults = discoverer.getOntologyTerms ( valueLabel, typeLabel );
+if ( thisResults == null ) continue;
+
+allNull = false;
+

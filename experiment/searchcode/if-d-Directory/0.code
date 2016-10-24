@@ -1,0 +1,9 @@
+public static synchronized DirectoryCommand getInstance() {
+if (directoryCommand == null) {
+directoryCommand = new DirectoryCommandImpl();
+Directory subDirectory = changeDirectory(currentDirectory, subDirectoryName);
+if (subDirectory != null) {
+return subDirectory;
+}
+subDirectory = new Directory(subDirectoryName);
+

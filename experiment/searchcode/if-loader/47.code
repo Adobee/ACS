@@ -1,0 +1,12 @@
+super.onResume();
+if (mLoaderManager != null) {
+AsyncLoader<D> asyncLoader = (AsyncLoader<D>) mLoaderManager.getLoader(LOADER_ID);
+asyncLoader.setIgnoreOnce(false);
+}
+}
+
+@Override
+public void onPause() {
+super.onPause();
+if (mLoaderManager != null) {
+

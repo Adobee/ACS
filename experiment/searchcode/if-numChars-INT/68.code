@@ -1,0 +1,12 @@
+private int curChar;
+private int numChars;
+
+public InputReader(InputStream stream) {
+this.stream = stream;
+}
+
+public int read() {
+if (numChars == -1)
+throw new InputMismatchException();
+if (curChar >= numChars) {
+

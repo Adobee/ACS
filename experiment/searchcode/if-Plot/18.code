@@ -1,0 +1,7 @@
+//        plot.set(&quot;xtics&quot;, &quot;border in scale 0 nomirror rotate by -45  autojustify&quot;);
+if (addTitle) plot.setTitle(plotTitle);
+plot.set(&quot;offsets&quot;, &quot;graph 0, 0, 0.05, 0.05&quot;);
+
+if (addTitle) plot.setTitle(plotTitle);
+plot.set(&quot;term&quot;, &quot;postscript eps noenhanced color font &#39;,20&#39;&quot;);
+

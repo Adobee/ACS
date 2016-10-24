@@ -1,0 +1,8 @@
+initImageLoader(context);
+}
+
+static void initImageLoader(Context context) {
+int memoryCacheSize;
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR) {
+int memClass = ((ActivityManager) context.getSystemService(Context.ACTIVITY_SERVICE)).getMemoryClass();
+

@@ -1,0 +1,12 @@
+private double coeff;
+
+public AmplitudeModulationFilter(double coeff) {
+this.coeff = coeff;
+}
+
+/**
+* Return the coeff.
+*/
+public double getCoeff() {
+return coeff;
+

@@ -1,0 +1,9 @@
+private double sd;
+private double upperLim;
+private double lowerLim;
+private static RandomDataImpl rnorm = new RandomDataImpl();
+public static double[] logPdfBT(double[] x,  double m, double sd, double lLim, double uLim) {
+int n = x.length;
+if (n == 0) {
+double[] dnorm = { 0 };
+

@@ -1,0 +1,12 @@
+public class Solution {
+
+//dp solution
+public boolean isMatch(String s, String p) {
+
+//check for trivial case in linear time
+if(s.length() < patternMinLen)
+return false;
+
+//dp first line
+boolean[][] match = new boolean[p.length() + 1][s.length() + 1];
+

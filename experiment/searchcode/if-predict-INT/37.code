@@ -1,0 +1,9 @@
+List<Predict> addPredict(ModelMap model,
+@RequestParam(&quot;userId&quot;) int userId,
+@RequestParam(&quot;qmatchId1&quot;) int qmatchId1,
+predict = predictService.findByUserId(userId);
+if (predict == null) {
+
+Team one = teamService.findTeamById(qmatchId1);
+Team two = teamService.findTeamById(qmatchId2);
+

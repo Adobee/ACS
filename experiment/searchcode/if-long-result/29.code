@@ -1,0 +1,13 @@
+String result = &quot;&quot;;
+
+String longStr = &quot;&quot;, shortStr = &quot;&quot;;
+
+if (a.length() >= b.length()) {
+longStr = a;
+} else {
+result = &quot;0&quot; + result;
+}
+carry = true;
+
+} else if (longStr.charAt(longStr.length()-1-i) == &#39;0&#39;
+

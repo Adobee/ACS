@@ -1,0 +1,10 @@
+public class ArmoryMultiBlock extends TileEntity {
+private boolean hasMaster, isMaster;
+private int masterX, masterY, masterZ;
+
+@Override
+public void updateEntity() {
+// Check if block is bottom center block
+boolean master = (x == xCoord &amp;&amp; y == yCoord &amp;&amp; z == zCoord);
+if (tile != null &amp;&amp; (tile instanceof ArmoryMultiBlock)) {
+

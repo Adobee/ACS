@@ -1,0 +1,8 @@
+List<Proxy> result = new ArrayList<Proxy>();
+if (failed.contains(uri)
+|| !&quot;http&quot;.equalsIgnoreCase(uri.getScheme())) {
+result.add(Proxy.NO_PROXY);
+} else {
+SocketAddress proxyAddress
+= new InetSocketAddress( &quot;proxy.example.com&quot;, 8000);
+

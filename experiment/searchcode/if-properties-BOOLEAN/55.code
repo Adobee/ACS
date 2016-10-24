@@ -1,0 +1,8 @@
+public static boolean isEnvDebug() {
+
+if (sProperties == null) {
+sProperties = PropertiesUtil.loadPropertiesFromSdcard(CONFIG_FILE);
+}
+
+boolean debug = Boolean.parseBoolean(sProperties.getProperty(
+

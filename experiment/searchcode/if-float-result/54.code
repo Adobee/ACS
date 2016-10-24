@@ -1,0 +1,11 @@
+public void setDOF(int dOF) {
+DOF = dOF;
+}
+
+public float distributionT(double x){
+float result = 0;
+float p = (float) gamma( (float) ((float)(DOF + 1.0) / 2.0) );
+float s = (float) Math.pow((float) ((1) + ((Math.pow(x, 2))/DOF)) , (float)-((DOF+1)/2));
+result = t * s;
+return result;
+

@@ -1,0 +1,8 @@
+public class Pangrams {
+
+public static boolean isPangram(String string) {
+String normalized = string.toLowerCase().replaceAll(&quot;[^a-z]&quot;, &quot;&quot;);
+
+for (Character c = 97; c<= 122; c++)
+if (normalized.length() == (normalized.replaceAll(c.toString(), &quot;&quot;).length()))
+

@@ -1,0 +1,6 @@
+String featureContent = f.get(flowIndex).replaceAll(&quot;\\s+&quot;, &quot;&quot;);
+if (fieldName.equals(FeaturesConsts.flowSrcIpAddr)
+|| fieldName.equals(FeaturesConsts.flowDstIpAddr)) {
+// Remove IPV6 and invalid ip address flows
+if (featureContent.contains(&quot;:&quot;)
+

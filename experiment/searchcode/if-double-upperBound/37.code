@@ -1,0 +1,10 @@
+public static double limit(double val, double lowerBound, double upperBound) {
+if (lowerBound == upperBound) {
+return lowerBound;
+double xn;
+
+double range = upperBound - lowerBound;
+
+if (range == 0.0)
+val = lowerBound;
+

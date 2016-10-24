@@ -1,0 +1,13 @@
+import com.google.gwt.i18n.client.DateTimeFormat;
+
+/**
+* @author stefan.sivak
+*
+*/
+public abstract class AbstractDateTimeCellRenderer<RowType> implements CellRenderer<RowType, Date> {
+dateTimeFormat = DateTimeFormat.getFormat(format);
+}
+
+public AbstractDateTimeCellRenderer(DateTimeFormat dateTimeFormat) {
+this.dateTimeFormat = dateTimeFormat;
+

@@ -1,0 +1,16 @@
+public static Configuration config;
+
+public static void init(File configFile)
+{
+if(config == null)
+{
+config = new Configuration(new File(configFile, ModInfo.ModName + &quot;.cfg&quot;));
+loadConfig();
+}
+}
+
+@SubscribeEvent
+public void onConfigChangedEvent(ConfigChangedEvent.OnConfigChangedEvent event)
+{
+if(event.modID.equalsIgnoreCase(ModInfo.ModID))
+

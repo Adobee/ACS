@@ -1,0 +1,14 @@
+private static String directory;
+
+public static String get()
+{
+if (directory == null)
+{
+String userDir = System.getProperty(&quot;user.dir&quot;);
+File dir = new File(userDir + File.separator + DEFAULT_RESOURCE_DIR_NAME);
+if (dir.exists() || dir.mkdirs())
+{
+directory = dir.getPath();
+}
+else
+

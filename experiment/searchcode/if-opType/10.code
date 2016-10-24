@@ -1,0 +1,10 @@
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonValue;
+
+public enum OpType {
+
+ADDED_AS_FRIEND(4),
+public static OpType by(int code) {
+for (OpType opType : values()) {
+if (opType.code == code) {
+

@@ -1,0 +1,14 @@
+public static double calcular(double a, double b, double e)
+{
+double fa = f(a);
+double fb = f(b);
+double xm = Double.NaN;
+if (verificarSeTemMesmoSinal(fa, fb))
+xm = (a+b)/DOIS;
+double fxm = f(xm);
+if (fxm == ZERO)
+{
+return xm;
+}
+System.out.printf(&quot;%.10f %.10f %.10f %.10f %.10f %.10f %.11f\n&quot;, a, xm, b, fa, fxm, fb, erro);
+

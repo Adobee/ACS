@@ -1,0 +1,11 @@
+public void setGmtOpenEnd(String gmtOpenEnd) {
+this.openEnd = StringToDate(gmtOpenEnd);
+this.gmtOpenEnd = gmtOpenEnd;
+}
+public int getPage() {
+FlashGoQueryCondition queryCondition = new FlashGoQueryCondition();
+if(openStart!=null){
+queryCondition.gmtOpenStart(openStart);
+}
+if(openEnd!=null){
+

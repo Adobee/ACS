@@ -1,0 +1,13 @@
+package org.smolny.utils;
+
+/**
+* Created by Asus on 14.04.2016.
+*/
+public class DoublePoint {
+if (o == null || getClass() != o.getClass()) return false;
+
+DoublePoint point = (DoublePoint) o;
+
+
+if (x != point.x) return false;
+

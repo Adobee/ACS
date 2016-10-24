@@ -1,0 +1,18 @@
+Object instantRateInBytesLock = new Object();
+
+
+
+public Long getRateInKiloBytes() {
+return rateInKiloBytes;
+}
+
+
+void setInstantRateInBytes(long instantRateInBytes) {
+this.instantRateInBytesCounter++;
+this.instantRateInBytes += instantRateInBytes;
+}
+}
+
+
+long getInstantRateInBytes() {
+

@@ -1,0 +1,6 @@
+List<Protein> proteins = new LinkedList<Protein>();
+for (Object o : cluster.getClusterObjects()) {
+if (o.getClass() == Protein.class) {
+proteins.add((Protein) o);
+} else if (o.getClass() == Cluster.class) {
+

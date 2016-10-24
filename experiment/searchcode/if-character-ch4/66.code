@@ -1,0 +1,8 @@
+package edu.msergey.jalg.exercises.ch4.ex08;
+
+import java.util.*;
+
+public class Postfix {
+public static int calculate(String postfixExpression) {
+if (postfixExpression == null) throw new IllegalArgumentException(&quot;postfixExpression can&#39;t be null&quot;);
+

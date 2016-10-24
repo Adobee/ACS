@@ -1,0 +1,9 @@
+char first = word.charAt( 0 );
+int index = Alphabet.LOWERCASE.getIndex( first );
+if( index < 0 ) {
+System.out.println( &quot;unacceptalbe word!&quot; );
+LowercaseTrieVocabulary child = children[index];
+if( child == null ) {
+// insert
+child = new LowercaseTrieVocabulary();
+

@@ -1,0 +1,8 @@
+this.zzahT = new AtomicReference();
+}
+
+public void flush() {
+EventIncrementCache eventIncrementCache = (EventIncrementCache) this.zzahT.get();
+if (eventIncrementCache != null) {
+eventIncrementCache.flush();
+

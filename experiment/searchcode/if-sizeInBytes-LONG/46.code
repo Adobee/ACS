@@ -1,0 +1,13 @@
+public TextPart getPart(RandomAccessFile rad, long byteOffset, int sizeInBytes, long fileLengthInBytes) throws IOException {
+TextPart part = null;
+
+if (byteOffset < fileLengthInBytes &amp;&amp; byteOffset >= 0) {
+buffer = new byte[(int) sizeInBytes];
+}
+
+rad.seek(byteOffset);
+
+int actualSize = rad.read(buffer, 0, sizeInBytes);
+
+if (actualSize > 0) {
+

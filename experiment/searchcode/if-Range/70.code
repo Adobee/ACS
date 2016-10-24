@@ -1,0 +1,10 @@
+HashMap<Integer, Range> dict = new HashMap<Integer, Range>();
+for (int i = 0; i < num.length; ++i) {
+int v = num[i];
+if (dict.containsKey(v)) {
+dict.put(v, itemRange);
+Range lowerRange = itemRange;
+Range higherRange = itemRange;
+
+if (dict.containsKey(v - 1)) {
+

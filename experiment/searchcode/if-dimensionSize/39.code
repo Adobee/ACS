@@ -1,0 +1,9 @@
+dimensionSize = state.parameters.getInt(dimensionSizeParam, null, 1);
+if (dimensionSize <= 0) {
+state.output.fatal(
+&quot;Multi Dimensional Numbers Game dimension size must be specified and >= 0\n&quot;,
+for (int i = 0; i < dimensionSize; i++) {
+dimValue = dimValue.multiply(bigTwo);
+if (genome[(dim * dimensionSize) + i]) {
+dimValue = dimValue.add(BigInteger.ONE);
+

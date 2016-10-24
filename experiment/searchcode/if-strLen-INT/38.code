@@ -1,0 +1,13 @@
+public static void main(String[] args) {
+String str = &quot;aabcbdc&quot;;
+String t = &quot;abc&quot;;
+int n = str.length();
+int strLen = t.length();
+int counter=0;
+
+for (int i = 0; i < n; )
+{
+if(i+strLen <= n)
+{
+if(t.equalsIgnoreCase(sb.substring(i, strLen+i)))
+

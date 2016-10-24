@@ -1,0 +1,14 @@
+static double getL(Function f, double minX, double maxX)
+{
+final double DELTA = 0.0001;
+
+double prevY = f.calculate(minX);
+summ += distance(x - DELTA, prevY, x, y);
+prevY = y;
+}
+
+return summ;
+}
+
+private static double solve(Function f, double y, double minX, double maxX)
+

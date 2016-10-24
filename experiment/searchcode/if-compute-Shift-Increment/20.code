@@ -1,0 +1,11 @@
+this.pageIncrement = pageIncrement;
+
+if (!minBounded &amp;&amp; !maxBounded)
+{
+this.tooltip = &quot;Valid range: unbounded&quot;;
+spinner.setToolTipText(tooltip);
+
+if (minBounded &amp;&amp; maxBounded)
+{
+spinner.setIncrement(increment);
+

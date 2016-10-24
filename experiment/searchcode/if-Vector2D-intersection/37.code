@@ -1,0 +1,8 @@
+public static boolean lineCircle(Vector2D start, Vector2D end, Vector2D center, float radius) {
+Vector2D d = Vector2D.sub(end, start);
+Vector2D intersection;
+
+if(d.isVerticle()) {
+intersection = new Vector2D(d.x, center.y);
+}else if(d.isHorizontal()) {
+

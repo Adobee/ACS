@@ -1,0 +1,12 @@
+AccessTokenBean bean = this.accessTokenBean;
+if (bean == null || System.currentTimeMillis() > bean.expiresAt) {
+throw new WeixinAccessTokenException(&quot;Missing access token or already expired.&quot;);
+final long expiresAt;
+
+public AccessTokenBean(String accessToken, long expiresAt) {
+this.accessToken = accessToken;
+this.expiresAt = expiresAt;
+}
+}
+}
+

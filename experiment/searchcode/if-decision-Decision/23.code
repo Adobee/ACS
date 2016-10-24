@@ -1,0 +1,8 @@
+public Decision play(int round, Decision lastOpponentDecision, int myScore, int opponentScore) {
+if(lastOpponentDecision == Decision.DEFECT)
+{
+_decision = Decision.DEFECT;
+_stillAngry = 2;
+}
+else if(lastOpponentDecision == Decision.COOPERATE &amp;&amp; _stillAngry > 0)
+

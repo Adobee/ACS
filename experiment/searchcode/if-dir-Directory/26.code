@@ -1,0 +1,15 @@
+import android.content.Context;
+
+public class DirectoryUtil {
+
+public static File getImageDirectory(Context context){
+File dir = new File(context.getFilesDir(),&quot;image&quot;);
+public static File getSoundDirectory(Context context){
+File dir = new File(context.getFilesDir(),&quot;sound&quot;);
+if(!dir.exists()){
+dir.mkdir();
+}
+return dir;
+}
+}
+

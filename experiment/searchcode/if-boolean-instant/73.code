@@ -1,0 +1,20 @@
+public class Stopwatch {
+
+private Instant i;
+private boolean running = false;
+
+public void start()
+{
+i = Instant.now();
+throw new RuntimeException(&quot;Stopwatch not running&quot;);
+}
+
+public double elapsed()
+{
+if(running == true)
+return Duration.between(i, Instant.now()).toMillis() * 1.0 / 1000;
+else
+return 0;
+}
+}
+

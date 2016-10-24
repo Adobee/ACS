@@ -1,0 +1,13 @@
+public abstract class Application {
+private static boolean isDone = false;
+private boolean dummy = false;
+protected abstract void init();
+protected static void setDone(){
+isDone = true;
+}
+private boolean done(){
+return isDone;
+}
+public void run(){
+init();
+

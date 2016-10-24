@@ -1,0 +1,11 @@
+System.out.print(&quot;Enter the seconds for conversion: &quot;);
+int seconds = input.nextInt();
+
+if(seconds < 3600) {
+System.out.println(seconds + &quot; seconds is &quot; + minutes + &quot; minutes and &quot; + remainingSeconds + &quot; seconds !&quot;);
+
+} else if(seconds >= 3600 &amp;&amp; seconds < 7200) {
+
+int minutes = seconds / 60;
+int remainingSeconds = seconds % 60;
+

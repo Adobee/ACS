@@ -1,0 +1,12 @@
+final double p  =  0.3275911;
+
+// Save the sign of x
+double sign = 1;
+if (x < 0) {
+sign = -1;
+}
+x = Math.abs(x);
+
+// A&amp;S formula 7.1.26
+double t = 1.0/(1.0 + p*x);
+

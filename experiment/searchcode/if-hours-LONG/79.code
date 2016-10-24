@@ -1,0 +1,6 @@
+Matcher matcher = Pattern.compile( &quot;^(\\-?)(\\d{1,2})(\\:\\d{1,2})?(\\:\\d{1,2})?$&quot; ).matcher( hours );
+if ( !matcher.find() ) throw new IllegalStateException( &quot;The provided &#39;hours&#39; doesn&#39;t match the minimum requirement to get a Durable instance.&quot; );
+Matcher hMatcher = Pattern.compile( &quot;(^HH.?)|(^H.?)&quot; ).matcher( pattern );
+boolean hLong = hMatcher.find() &amp;&amp; hMatcher.group( 1 ) != null;
+_return.append( ( hours = matcher.group( 1 ) ) != null ? ( ( hours = hours.replace( &quot;H&quot;, &quot;&quot; ) ).length() == 1 &amp;&amp; hLong ? &quot;0&quot; + hours : hours ) : hLong ? &quot;00&quot; : &quot;0&quot; );
+

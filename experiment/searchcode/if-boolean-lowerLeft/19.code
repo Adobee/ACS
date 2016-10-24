@@ -1,0 +1,10 @@
+public final Vector2 lowerLeft;
+public float width, height;
+
+public Rectangle(float x, float y, float width, float height) {
+this.height = height;
+}
+
+public boolean overlapRectangles(Rectangle r1, Rectangle r2) {
+if (r1.lowerLeft.x < r2.lowerLeft.x + r2.width &amp;&amp;
+

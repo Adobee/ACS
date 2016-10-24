@@ -1,0 +1,11 @@
+
+public class GetLastUpdatedUserVisitor implements UserGroupVisitor {
+private User lastUpdatedUser;
+public User getLastUpdatedUser() {
+return lastUpdatedUser;
+}
+
+@Override
+public void visitUser(User user) {
+if(lastUpdatedUser == null || lastUpdatedUser.getLastUpdateTime()<user.getLastUpdateTime()) {
+

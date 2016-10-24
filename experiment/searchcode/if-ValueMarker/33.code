@@ -1,0 +1,8 @@
+if ( enableReferenceTimePoint || referenceTimePoint != -1 ) // at least show it if it is not -1
+{
+valueMarker = makeMarker( referenceTimePoint );
+valueMarker.setValue( referenceTimePoint );
+valueMarker.setLabel( &quot; Reference\n Timepoint &quot; + referenceTimePoint );
+
+if ( !markerShown )
+

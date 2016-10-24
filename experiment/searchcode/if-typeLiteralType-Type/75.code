@@ -1,0 +1,5 @@
+// If Key is a Provider, we have to see if the type it is providing exists,
+// and, if so, we have to create the binding for the provider.
+Type typeLiteralType = key.getTypeLiteral().getType();
+if (!(typeLiteralType instanceof ParameterizedType)) {
+

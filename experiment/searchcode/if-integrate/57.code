@@ -1,0 +1,9 @@
+double firstSumFactor = 0.0;
+
+double[] lowerLimitAsArray = {lowerLimit};
+
+if (whereToIntegrate == Variable.X){
+firstSumFactor = function.evaluate(Utils.middleIt(constantValues, lowerLimit));
+} else if (whereToIntegrate == Variable.Z){
+firstSumFactor = function.evaluate(Utils.concat(constantValues, lowerLimitAsArray));
+

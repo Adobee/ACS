@@ -1,0 +1,8 @@
+HashMap<String, String> contactHashCodes = loadContactHashCodes();
+//hashcode.size > 0时，增量更新contact，否则全量更新contact
+boolean incrementalUpdate = (contactHashCodes != null) &amp;&amp; (contactHashCodes.size() > 0);
+HashSet<String> contactsToKeep = new HashSet<String>();
+
+if (incrementalUpdate) {
+Log.d(TAG, &quot;Doing incremental update for contacts.&quot;);
+

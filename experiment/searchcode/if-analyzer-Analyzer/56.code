@@ -1,0 +1,6 @@
+PerFieldAnalyzerWrapper analyzer = analyzerMap.get(key);
+if (analyzer == null) {
+analyzer = new PerFieldAnalyzerWrapper(defaultAnalyzer);
+public synchronized static PerFieldAnalyzerWrapper  getAnalyzer(LUCENE_INDEX_TYPE type){
+if(LUCENE_INDEX_TYPE.PLACE.toString().equals(type.toString()) || LUCENE_INDEX_TYPE.PLACE_HOTEL.toString().equals(type.toString())){
+

@@ -1,0 +1,6 @@
+public static void initializeNatives(Path tmpFile, boolean mlockAll, boolean seccomp, boolean ctrlHandler) {
+final ESLogger logger = Loggers.getLogger(Bootstrap.class);
+// check if the user is running as root, and bail
+if (Natives.definitelyRunningAsRoot()) {
+if (Boolean.parseBoolean(System.getProperty(&quot;es.insecure.allow.root&quot;))) {
+

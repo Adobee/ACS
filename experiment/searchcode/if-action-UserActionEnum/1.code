@@ -1,0 +1,12 @@
+public interface Model<A extends UserActionEnum> extends ResEntity {
+
+
+/**
+* Updates this Model according to a user {@code action} and {@code args}.
+public boolean requestModelUpdate(A action, @Nullable Bundle args);
+
+void setInitExtras(Bundle initExtras);
+
+/**
+* @return an array of {@link UserActionEnum} that can be processed by the model
+

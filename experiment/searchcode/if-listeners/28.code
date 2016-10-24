@@ -1,0 +1,9 @@
+ViewListenersProvider viewListenersProvider = new ViewListenersProvider(null);
+viewListenersProvider.injectIfRequired(new NonViewListenersAwareAttribute(), view);
+}
+
+@SuppressWarnings({ &quot;unchecked&quot;, &quot;rawtypes&quot; })
+ViewListenersAwareAttribute viewAttribute = new ViewListenersAwareAttribute();
+viewListenersProvider.injectIfRequired(viewAttribute, view);
+ViewListeners viewListeners1 = viewAttribute.viewListeners;
+

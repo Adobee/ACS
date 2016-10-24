@@ -1,0 +1,9 @@
+for(int i = 0; i < handler.object.size(); i ++){
+
+GameObject tempObject = handler.object.get(i);
+
+if(tempObject.getID() == ID.Player){
+//Key events
+if(key == KeyEvent.VK_W) { tempObject.setVelY(-4); keyDown[0] = true; }
+if(key == KeyEvent.VK_S) { tempObject.setVelY(4); keyDown[1] = true; }
+

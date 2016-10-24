@@ -1,0 +1,14 @@
+for (int b = 1; b <= 30; b++) {
+BigInteger a = BigInteger.ONE;
+int d = numDigits(a.pow(b));
+while (d <= b) {
+d = numDigits(a.pow(b));
+}
+}
+
+System.out.println(count);
+}
+
+public static int numDigits(BigInteger num) {
+int digits = 0;
+

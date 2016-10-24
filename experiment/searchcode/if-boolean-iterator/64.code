@@ -1,0 +1,7 @@
+return new Iterator<T>() {
+public boolean hasNext() {
+if (iteratorQ.isEmpty()) {
+while (!iteratorQ.peek().hasNext()) {
+iteratorQ.remove();
+if (iteratorQ.isEmpty())
+

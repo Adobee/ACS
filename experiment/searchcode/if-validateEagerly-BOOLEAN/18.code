@@ -1,0 +1,9 @@
+private final List<CallAdapter.Factory> adapterFactories;
+private final Executor callbackExecutor;
+private final boolean validateEagerly;
+Utils.validateServiceInterface(service);
+if (validateEagerly) {
+eagerlyValidateMethods(service);
+}
+return (T) Proxy.newProxyInstance(service.getClassLoader(), new Class<?>[] { service },
+

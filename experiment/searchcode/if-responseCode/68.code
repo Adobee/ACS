@@ -1,0 +1,14 @@
+public String errorinfo;
+
+/**
+* 接口请求的返回代码，从这个代码中可以识别接口调用是否成功，以及调用失败时的错误类型。具体的code定义参见用户中心接口文档
+*/
+String responsecode;
+
+/**
+* 操作成功
+result.errorinfo = resultJson.has(&quot;errorinfo&quot;) ? resultJson.get(&quot;responsecode&quot;).asText() : null;
+
+// 解析data属性
+if (!Void.class.equals(dataClz) &amp;&amp; isParseData &amp;&amp; resultJson.has(&quot;data&quot;)) {
+

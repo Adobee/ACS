@@ -1,0 +1,7 @@
+private transient Instant fromKey;
+private transient boolean fromInclusive;
+private transient Instant toKey;
+Entry<V> fromEntry = new Entry<>(fromKey, null);
+if (fromInclusive) {
+fromIndex = CollectionUtils.lowerBound(instance.data, fromEntry, COMPARATOR);
+

@@ -1,0 +1,6 @@
+double t = euclideanDistance(xmin, ymax, p.x(), p.y());
+double fo = euclideanDistance(xmin, ymin, p.x(), p.y());
+if (ret > f) ret = f;
+if (Double.compare(rectHV.ymax, ymax) != 0) return false;
+if (Double.compare(rectHV.ymin, ymin) != 0) return false;
+

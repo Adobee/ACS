@@ -1,0 +1,6 @@
+public Throwable extractCause(Throwable e) {
+boolean continuar = true;
+Throwable rootCause = e.getCause();
+while (continuar) {
+if (rootCause.getCause() == null)
+

@@ -1,0 +1,7 @@
+Serialize serialize = it.next();
+if (map.containsKey(serialize.type())) {
+throw new RuntimeException(&quot;duplicate serialize type &quot; + serialize.type());
+public static byte[] serialize(int type, Object object) throws SerializeException {
+Serialize serialize = get(type);
+if (serialize == null) {
+

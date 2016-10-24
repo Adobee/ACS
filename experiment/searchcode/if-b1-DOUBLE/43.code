@@ -1,0 +1,9 @@
+double b2=Double.parseDouble(st1.pop());
+st1.push(Double.toString(b1*b2));
+}
+else if (st2.peek().equals(&quot;/&quot;))
+double b2=Double.parseDouble(st1.pop());
+st1.push(Double.toString(b2/b1));
+}
+else if (st2.peek().equals(&quot;+&quot;))
+

@@ -1,0 +1,13 @@
+this.args.add(new ArgumentIntData(&quot;stackSize&quot;, -1, 64, -1));
+}
+
+@Override
+public ProcessReturn onMethodCalled()
+{
+if (super.onMethodCalled() == ProcessReturn.CONTINUE)
+int blockMeta = UnitHelper.tryToParseInt(this.getArg(&quot;blockMeta&quot;), 32767);
+
+if (blockID > 0)
+{
+stack = new ItemStack(blockID, ammount <= 0 ? 1 : ammount, blockMeta == -1 ? 32767 : blockMeta);
+

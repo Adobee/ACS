@@ -1,0 +1,7 @@
+static class LocalStoreTrustManager implements X509TrustManager {
+private X509TrustManager trustManager;
+public LocalStoreTrustManager( KeyStore localStore ) {
+trustManager = findX509TrustManager(tmf);
+if( trustManager == null ){
+throw new IllegalStateException(&quot;Couldn&#39;t find X509TrustManager&quot;);
+

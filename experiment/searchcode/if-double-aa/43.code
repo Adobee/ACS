@@ -1,0 +1,10 @@
+public static void main(String[] args) {
+double bonus, aa;
+Scanner sc = new Scanner(System.in);
+System.out.println(&quot;请输入利润：&quot;);
+aa = sc.nextInt();
+if (aa <= 100000)
+bonus = aa * 0.1;
+else if (aa <= 20000)
+bonus = 100000 * 0.1 + (aa - 100000) * 0.075;
+

@@ -1,0 +1,14 @@
+* @author tim
+*/
+public enum MatchType {
+
+QUALIFICATION(&quot;Qualifications&quot;, &quot;&quot;, 0),
+QUARTERFINAL(&quot;Quarterfinals&quot;, &quot;Q&quot;, 1),
+for (MatchType t : values()) {
+if (t.getPrefix().equals(prefix)) {
+return t;
+}
+}
+
+return null;
+

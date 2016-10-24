@@ -1,0 +1,18 @@
+
+public class Queue{
+Node first, last;
+
+public Queue(){
+
+}
+
+public void enqueue(Object item){
+last.next = new Node(item);
+last = last.next;
+}
+}
+
+public Object dequeue(){
+if(first != null){
+Object item = first.data;
+

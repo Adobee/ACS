@@ -1,0 +1,18 @@
+alpha = a;
+beta = b;
+}
+
+public void run() {
+double previousValue;
+double newValue = 0.0;
+for (int r = 0; r < testTable.length; r += 2) {
+// previousValue)+&quot;:&quot;+socialComparison[c]+&quot;:&quot;+testTable[r][c]+&quot;\t&quot;);
+}
+// System.out.println();
+
+}
+}
+
+public String check(double change, double previousValue) {
+if (change == 1 &amp;&amp; previousValue > 0)
+

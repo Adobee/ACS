@@ -1,0 +1,13 @@
+private Frame[] frames;
+private int frameNumber;
+
+private class Frame {
+int first;
+int second;
+boolean isFirstFrame = true;
+* @return returns false if there are no more frames to throw, otherwise true
+*/
+public boolean throwBall(int x){
+if(frameNumber < 10) {
+if(frames[frameNumber] == null) frames[frameNumber] = new Frame();
+

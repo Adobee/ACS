@@ -1,0 +1,11 @@
+* @param delimiter
+* @return
+*/
+public static Delimiter findDelimiter(String delimiter){
+if(delimiter == null){
+// default to CSV
+return CSV;
+}
+for(Delimiter del: values()){
+if(delimiter.equals(del.delimiter)){
+

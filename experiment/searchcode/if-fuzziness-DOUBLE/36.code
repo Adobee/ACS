@@ -1,0 +1,9 @@
+public static Fuzziness build(Object fuzziness) {
+if (fuzziness instanceof Fuzziness) {
+return (byte) Float.parseFloat(fuzziness.toString());
+}
+}
+
+public double asDouble() {
+if (this == AUTO) {
+

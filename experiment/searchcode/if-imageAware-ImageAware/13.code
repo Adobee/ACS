@@ -1,0 +1,10 @@
+memoryCacheKey = imageLoadingInfo.memoryCacheKey;
+this.engine = engine;
+}
+
+@Override
+public void run() {
+if(imageAware.isCollected()){
+L.d(LOG_TASK_CANCELLED_IMAGEAWARE_COLLECTED, memoryCacheKey);
+}else if(isViewWasReuseed()){
+

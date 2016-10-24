@@ -1,0 +1,8 @@
+isInsertDB = SharedPreferenceManager.getInstance().getBoolean(MessageConstantDefine.isInsertDB.toString(),
+false);
+if (!isInsertDB)
+{
+MessageShortCut mailShortCut = new MessageShortCut();
+mailShortCuts = DataManager.getInstance().selectMessageShortCutTable(null, null);
+if (mailShortCuts != null &amp;&amp; mailShortCuts.size() != 0)
+

@@ -1,0 +1,7 @@
+* @see org.springframework.web.multipart.commons.CommonsMultipartResolver#isMultipart(javax.servlet.http.HttpServletRequest)
+*/
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+if(null != excludeUrlArray){
+for (String url: excludeUrlArray) {
+

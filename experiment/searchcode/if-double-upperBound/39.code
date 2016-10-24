@@ -1,0 +1,7 @@
+public static int CountSquares(int n1,int n2)
+{
+double lowerbound = Math.ceil(Math.sqrt(n1));
+double upperbound = Math.floor(Math.sqrt(n2));
+if(lowerbound < upperbound) {
+int value = (int)upperbound - (int)lowerbound + 1;
+

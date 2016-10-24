@@ -1,0 +1,8 @@
+public boolean isPowerOfThree(int n) {
+
+if (n<=0||n>Integer.MAX_VALUE)
+return false;
+int[] powerOfTwo=new int[20];
+for(int i=0;i<20;i++){
+powerOfTwo[i]=(int)Math.pow(3,i);
+

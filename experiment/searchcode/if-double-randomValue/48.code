@@ -1,0 +1,8 @@
+float totalWeight = staticWeight + patrollerWeight * 4 + sawWeight;
+float randomValue = MathUtils.random(totalWeight);
+
+if (randomValue < staticWeight) {
+} else if (randomValue < doubleCumulativeWeight) {
+rgeSaw.generateDouble(rgd, false);
+} else if (randomValue < waterfallCumulativeWeight) {
+

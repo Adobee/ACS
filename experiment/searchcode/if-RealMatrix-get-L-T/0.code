@@ -1,0 +1,11 @@
+public RealMatrixTupleList(RealMatrix realMatrix) {
+super(realMatrix.getColumnDimension(), realMatrix.getRowDimension());
+this.realMatrix = realMatrix;
+for (int i=0; i<tupleLength; i++) {
+realMatrix.setEntry(n, i, values[i]);
+}
+}
+
+@Override
+public double[] getTuple(int n, double[] reuseBuffer) {
+

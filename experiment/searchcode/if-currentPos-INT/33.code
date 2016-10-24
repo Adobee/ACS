@@ -1,0 +1,11 @@
+public void compress(int[] in, IntWrapper inpos, int inlength, int out[],
+IntWrapper outpos) {
+int tmpoutpos = outpos.get();
+int currentPos = inpos.get();
+out[tmpoutpos++] = inlength;
+continue outer;
+}
+final int selector = 8;
+if (in[currentPos] >= 1 << bitLength[selector])
+throw new RuntimeException(&quot;Too big a number&quot;);
+

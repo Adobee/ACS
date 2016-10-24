@@ -1,0 +1,9 @@
+SMP		(1)
+{ 	public double getIntFactor(double rate, double timeFactor){
+return (1+ rate* timeFactor);
+public double getIntRateFrom(double intFactor, double timeFactor){
+if(timeFactor ==0) {
+return 0.0;
+}
+return frequency * ( Math.pow(intFactor, 1/(frequency*timeFactor))-1);
+

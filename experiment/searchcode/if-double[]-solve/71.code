@@ -1,0 +1,7 @@
+@Override
+public Number execute(Number expected) {
+try {
+double solution = solve();
+if (Math.abs(expected.doubleValue() - solution) < 1e-20 * solution) {
+return expected;
+

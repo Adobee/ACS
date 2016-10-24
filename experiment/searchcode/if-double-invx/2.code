@@ -1,0 +1,19 @@
+updateMovement();
+updateShooting();
+removeProjectiles();
+}
+}
+
+public void updateInv(){
+if(input.num1){
+invX=0;
+invY=2;
+}
+if(input.num2){
+invX=1;
+invY=2;
+}
+if(input.num3){
+invX=2;
+invY=2;
+

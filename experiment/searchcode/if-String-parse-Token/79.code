@@ -1,0 +1,12 @@
+void parse() {
+while (true) {
+try {
+_token = _scanner.nextToken();
+if (_token == null) {
+if (_token.type != Token.TOK_SEMI) {
+throw new ParseError(&quot;Expected &#39;;&#39;&quot;);
+}
+
+_parser.usage();
+} else if (_token.type == Token.TOK_EXIT) {
+

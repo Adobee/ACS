@@ -1,0 +1,16 @@
+import com.poixson.commonjava.Utils.exceptions.RequiredArgumentException;
+
+
+public class LongRef {
+
+public volatile long value = 0;
+
+
+
+public LongRef(final long value) {
+public void value(final long value) {
+this.value = value;
+}
+public void value(final Long value) {
+if(value == null) throw new RequiredArgumentException(&quot;value&quot;);
+

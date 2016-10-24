@@ -1,0 +1,14 @@
+private String name;
+private boolean isCanceled;
+
+public String getName() {
+return this.name == null ? this.getClass().getSimpleName() : this.name;
+public void setCanceled(boolean canceled) {
+if (this.isCancelable()) this.isCanceled = canceled;
+}
+
+public boolean isCancelable() {
+return false;
+}
+}
+

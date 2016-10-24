@@ -1,0 +1,9 @@
+private static final long serialVersionUID = 1L;
+
+// keyword -> sql char type
+private Map<String, SQLCharType> mapType = new HashMap<String, SQLCharType>();
+public SQLCharType findClass(String clsname) {
+for(SQLCharType mode : mapType.values()) {
+String name = mode.getClassName();
+if(clsname.equals(name)) {
+

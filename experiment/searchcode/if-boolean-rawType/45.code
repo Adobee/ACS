@@ -1,0 +1,12 @@
+public class PumpAlarmPumpEvent extends TimeStampedRecord {
+private int rawtype = 0;
+public PumpAlarmPumpEvent() {
+return false;
+}
+rawtype = asUINT8(data[1]);
+return true;
+}
+
+@Override
+public boolean readFromBundle(Bundle in) {
+

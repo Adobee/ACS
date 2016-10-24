@@ -1,0 +1,7 @@
+public final long scanPeriodMillis;
+public final long waitTimeMillis;
+public static final Parcelable.Creator<ScanPeriodData> CREATOR = new Parcelable.Creator() {
+public ScanPeriodData createFromParcel(Parcel source) {
+long scanPeriodMillis = source.readLong();
+long waitTimeMillis = source.readLong();
+

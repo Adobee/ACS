@@ -1,0 +1,10 @@
+return m.mul(this);
+}
+
+public Vector3 normalize() {
+double length=getLength();
+
+if(length==1) return this;
+if(length==0) return X_AXIS;
+return new Vector3(x/length, y/length, z/length);
+

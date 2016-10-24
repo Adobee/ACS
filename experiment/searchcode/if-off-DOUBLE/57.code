@@ -1,0 +1,10 @@
+private static double variance(final double[] b, final int off,
+final int length) {
+double mean = 0;
+for (int i = off; i < (off + length); i++) {
+mean = mean / length;
+
+double variance = 0;
+for (int i = off; i < (off + length); i++) {
+variance = variance + ((b[i] - mean) * (b[i] - mean));
+

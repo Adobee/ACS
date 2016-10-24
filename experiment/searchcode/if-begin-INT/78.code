@@ -1,0 +1,10 @@
+package MergeSort;
+
+public class MergeSortClass {
+public void merge(int[] a, int begin, int end) {
+if (end>begin) {
+int m = (end +begin ) / 2;
+
+merge(a, 0, m);
+merge(a, m + 1, end);
+

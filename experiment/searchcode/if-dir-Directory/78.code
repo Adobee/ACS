@@ -1,0 +1,8 @@
+// older versions of intellij run the tests in the project directory, where there will be no &#39;test&#39; directory
+File dir = new File(directory);
+if( !dir.exists() ) {
+log.info(&quot;creating dir [{}], current dir is [{}]&quot;, directory, System.getProperty(&quot;user.dir&quot;));
+dir.mkdir();
+}
+else if( !dir.isDirectory()) {
+

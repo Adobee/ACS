@@ -1,0 +1,12 @@
+public static double coxDeBoor(final double[] knots, final double t,
+final int k, final int deg) {
+double b1;
+double b2;
+return 1.0f;
+}
+return 0.0f;
+}
+
+if (knots[k + deg] != knots[k])
+b1 = ((t - knots[k]) / (knots[k + deg] - knots[k]))
+

@@ -1,0 +1,12 @@
+public abstract class SingleFileMetadata extends FileMetadata {
+
+public abstract long sizeInBytes();
+
+protected SingleFileMetadata(String name, DirectoryMetadata parent) {
+visitor.visitSingleFile(this);
+}
+
+@Override
+public String printableName() {
+return format(&quot;%s (%d)&quot;, name(), sizeInBytes());
+

@@ -1,0 +1,10 @@
+final Random rng = new Random();
+rng.setSeed(rand.nextLong());
+
+final int height = rng.nextInt(9) + 9;
+
+if (isPoorGrowthConditions(world, x, y, z, height, getSaplingBlock())) return false;
+final int branchRarity = height / level + 1;
+
+if (rng.nextInt(branchRarity) == 0) branch(world, rng, x, y, z, height, level, -1, 0);
+

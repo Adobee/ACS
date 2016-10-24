@@ -1,0 +1,8 @@
+private Properties resources = null;
+private boolean singleShard = false;
+private Random random = new Random();
+private AtomicLong hit = new AtomicLong();
+boolean useMaster = singleShard || random.nextBoolean();    //单分片模式下，只用master
+try {
+if (useMaster) {
+

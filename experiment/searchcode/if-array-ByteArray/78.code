@@ -1,0 +1,13 @@
+static public int unsignedByteToSignedInt(byte[] byteArray,boolean fromLittleEndian){
+
+int value = 0;
+
+if(fromLittleEndian){
+static public short unsignedByteToSignedShort(byte[] byteArray,boolean fromLittleEndian){
+
+short value = 0;
+
+if(fromLittleEndian){
+
+value = (short)(((byteArray[1] &amp;0xFF) <<8) | ((byteArray[0] &amp;0xFF) <<0));
+

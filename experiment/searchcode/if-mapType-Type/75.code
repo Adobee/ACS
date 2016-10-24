@@ -1,0 +1,8 @@
+public enum MapType {
+ROADMAP(0, R.string.roadmap),
+SATELLITE(1, R.string.satellite),
+HYBRID(2, R.string.hybrid),
+public static MapType getMapType(int value) {
+for (MapType l : MapType.values()) {
+if (l.value == value) return l;
+

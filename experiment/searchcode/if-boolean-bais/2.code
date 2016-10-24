@@ -1,0 +1,10 @@
+String key = readString(bais);
+
+
+// Only the FIRST entry must deal with type information for Boolean.
+if (i == 0) {
+bc = bais.read(); assert (bc == 0x73);  // OBJECT
+bc = bais.read(); assert (bc == 0x72);  // class description
+s = readString(bais); assert (s.equals (&quot;java.lang.Boolean&quot;));
+sid = readLong(bais);                   // long value representing serializable Id for this class.
+

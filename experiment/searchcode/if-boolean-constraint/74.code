@@ -1,0 +1,8 @@
+public ConstraintArrayList(Collection<? extends T> c, Constraint<T> constraint) {
+this(constraint);
+if (c != null &amp;&amp; !c.isEmpty() &amp;&amp; !this.doAddAll(c)) {
+throw new IllegalArgumentException(&quot;Invalid List Elements&quot;);
+@Override
+public synchronized boolean addAll(Collection<? extends T> c) {
+if (constraint != null) {
+

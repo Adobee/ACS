@@ -1,0 +1,7 @@
+private boolean statusSent = false;
+private int status = 200;
+private String statusMessage = &quot;OK&quot;;
+public void flushHeaders() throws IOException {
+if (! statusSent) sendStatus();
+if (! headersSent) sendHeaders();
+

@@ -1,0 +1,9 @@
+private int timeout = -1;
+private boolean expectContinue;
+private HttpResponse submitContinue;
+private boolean ready;
+public synchronized void submitContinue(HttpResponse response) {
+setSubmitContinue(response);
+if (expectContinue &amp;&amp; exchange != null) {
+exchange.submitResponse(new Producer());
+

@@ -1,0 +1,11 @@
+return fValueType;
+}
+
+
+@Override
+public boolean hasFieldNames() {
+return fKeyLabel != null &amp;&amp; fValueLabel != null;
+public Type getFieldTypes() {
+if (hasFieldNames()) {
+return TypeFactory.getInstance().tupleType(fKeyType, fKeyLabel, fValueType, fValueLabel);
+

@@ -1,0 +1,15 @@
+package foo.window;
+
+public enum Rating {
+NEGATIVE, NEUTRAL, POSITIVE;
+
+public static Rating fromRating(Double d) {
+return NEUTRAL;
+return POSITIVE;
+}
+
+public static Rating fromRating(boolean isPositive) {
+return isPositive ? POSITIVE : NEGATIVE;
+}
+}
+

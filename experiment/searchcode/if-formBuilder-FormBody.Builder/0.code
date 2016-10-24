@@ -1,0 +1,9 @@
+* @see ScopedList.Options
+* @see Charge.Create
+*/
+public abstract class Params {
+private FormBody.Builder formBuilder = null;
+protected void add(String name, String value) {
+if (formBuilder == null) {
+formBuilder = new FormBody.Builder();
+

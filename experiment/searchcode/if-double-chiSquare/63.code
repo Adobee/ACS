@@ -1,0 +1,6 @@
+FileWriter fw=new FileWriter(resultFilePath);
+final HashMap<String, Double> chisquareInfo=new HashMap<String, Double>();
+
+for(String wordID:mp.keySet()){//对所有词计算平均卡方值
+chisquareInfo.put(wordID, ChiSquare_TermAvg(wordID, TDM));
+

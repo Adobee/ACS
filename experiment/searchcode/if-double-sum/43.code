@@ -1,0 +1,10 @@
+throw new IllegalArgumentException(&quot;Not enough data.&quot;);
+}
+
+double sumX = 0;
+double sumY = 0;
+double sumXX = 0;
+double sumXY = 0;
+for (int i = 0; i < n; i++) {
+double x = data[i][0];
+

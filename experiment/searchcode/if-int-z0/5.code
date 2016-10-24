@@ -1,0 +1,12 @@
+generateBlocks(x0, z0, x, z, callback);
+if (x != z)
+{
+generateBlocks(x0, z0, z, x, callback);
+}
+
+int lastZ = z;
+private static void generateBlocks(int x0, int z0, int x, int z, CircleCallback callback)
+{
+callback.call(x0 + x, z0 + z);
+if (x != 0)
+

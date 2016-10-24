@@ -1,0 +1,14 @@
+String ret = this.isTerminal() ?  &quot;Terminal&quot; :  &quot;Variable&quot;;
+return ret;
+}
+
+public boolean isTerminal() {
+return this.rhs.variables == null;
+}
+
+public boolean isVariable() {
+return this.rhs.terminal == null;
+}
+
+public String getVariable(){
+

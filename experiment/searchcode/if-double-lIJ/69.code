@@ -1,0 +1,5 @@
+upperLimit_[var - 1] = Groups_[gr][VAR_eZ_UPPER_LIMIT]; // tickness max in Z principal local axis
+} else if (Groups_[gr][SHAPE] == I_DOUBLE &amp;&amp; Groups_[gr][VARIABLES] == 4) {
+upperLimit_[var - 1] = Groups_[gr][VAR_eZ_UPPER_LIMIT]; // tickness max in Z principal local axis
+} else if (Groups_[gr][SHAPE] == H_DOUBLE &amp;&amp; Groups_[gr][VARIABLES] == 4) {
+

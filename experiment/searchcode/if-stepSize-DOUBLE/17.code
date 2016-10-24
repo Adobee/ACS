@@ -1,0 +1,9 @@
+public void forwardStep(double stepSize) {
+// only in x-z plane
+double angle = Math.toRadians(rotation);
+position[2] += Math.sin(angle)*stepSize;
+}
+
+public void backStep(double stepSize) {
+double angle = Math.toRadians(rotation);
+

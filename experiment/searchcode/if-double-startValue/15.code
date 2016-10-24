@@ -1,0 +1,15 @@
+public boolean isDiscrete()
+{
+return false;
+}
+
+public double density(double startValue, double endValue)
+{
+if (endValue <= startValue)
+return cumulativeDensity(endValue)-cumulativeDensity(startValue);
+}
+
+public double cumulativeDensity(double value)
+{
+if (value < startValue)
+

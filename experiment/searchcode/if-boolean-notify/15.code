@@ -1,0 +1,8 @@
+public Boolean addNotify(LeavesNotifyJson leavesNotifyJson) {
+LeavesNotify leavesNotify = null;
+try {
+if (leavesNotifyJson.getLeavesNotifyId() != null) {
+TransformJsonToDomain.getLeavesNotify(leavesNotify, leavesNotifyJson);
+if (leavesNotifyJson.getLeavesNotifyId() != null) {
+commonRepository.update(leavesNotify);
+

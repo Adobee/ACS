@@ -1,0 +1,10 @@
+import org.apache.commons.pool2.impl.GenericKeyedObjectPoolConfig;
+
+public class KeyPoolConfig extends GenericKeyedObjectPoolConfig{
+private int timeout = 0;
+
+private boolean failover = false;
+
+/**
+* get default connection socket timeout (default 0, means not timeout)
+

@@ -1,0 +1,10 @@
+public class Rectangle extends Square {
+private double height;
+
+public Rectangle() {
+height = -1;
+}
+
+public Rectangle(double x, double y, double width, double height) {
+super(x, y, width);
+

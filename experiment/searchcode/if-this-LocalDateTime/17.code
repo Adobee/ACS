@@ -1,0 +1,6 @@
+public TimeInterval(LocalDateTime start, LocalDateTime end) {
+if(start.isAfter(end))
+throw new IllegalArgumentException(&quot;interval time is inverse &quot;);
+public boolean duplicateChaek(TimeInterval other) {
+if(this.start.isAfter(other.end) || other.start.isAfter(this.end))
+

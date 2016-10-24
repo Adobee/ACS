@@ -1,0 +1,9 @@
+RealMatrix Q = minus(x.multiply(x.transpose()), times(rand(1).getEntry(0, 0), eye(n)));
+RealMatrix c = plus(-2, times(2, rand(n, 1)));
+public static QPSolution solve(RealMatrix Q, RealMatrix c, double l, double u, double epsilon, RealMatrix x0) {
+
+int d = Q.getColumnDimension();
+double fval = 0;
+RealMatrix x = null;
+if (x0 != null) {
+

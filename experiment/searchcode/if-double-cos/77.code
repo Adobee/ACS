@@ -1,0 +1,12 @@
+private double alt0;
+private double cos_lat0;
+private double sin_lat0;
+
+public void reset() {
+sin_lat0 = sin(lat0);
+}
+
+public double[] project(LatLonAlt p) {
+if (!inited) {
+throw new RuntimeException(&quot;Not initialized&quot;);
+

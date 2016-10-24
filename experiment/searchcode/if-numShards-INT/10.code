@@ -1,0 +1,9 @@
+protected Map stormConf;
+protected int numShards;
+protected UniformIntegerDistribution random;
+protected int tasksPerShard;
+public void prepare(WorkerTopologyContext context, GlobalStreamId stream, List<Integer> targetTasks) {
+this.targetTasks = targetTasks;
+int numTasks = targetTasks.size();
+if (numTasks % numShards != 0)
+

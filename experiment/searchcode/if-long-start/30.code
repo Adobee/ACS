@@ -1,0 +1,12 @@
+package com.timer;
+
+public class Timer {
+private static long start = 0;
+private static long stop = 0;
+public static void stop() {
+stop = System.currentTimeMillis();
+}
+
+public static long result() {
+if(start != 0 || stop != 0 || start > stop || start == Long.MAX_VALUE || stop == Long.MAX_VALUE) {
+

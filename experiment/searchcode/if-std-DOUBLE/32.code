@@ -1,0 +1,14 @@
+public class NormalDistributionFunction2D implements Function2D {
+
+
+private double mean;
+
+
+private double std;
+
+
+private double factor;
+public NormalDistributionFunction2D(double mean, double std) {
+if (std <= 0) {
+throw new IllegalArgumentException(&quot;Requires &#39;std&#39; > 0.&quot;);
+

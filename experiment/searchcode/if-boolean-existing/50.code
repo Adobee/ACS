@@ -1,0 +1,9 @@
+public static BooleanOperator get(String name) {
+if (!initialized) init();
+BooleanOperator existing = namesToOp.get(name);
+return existing;
+}
+
+public static BooleanOperator get(int id) {
+if (!initialized) init();
+

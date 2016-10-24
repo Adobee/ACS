@@ -1,0 +1,8 @@
+public Document calc(final Document document) {
+final List<String> words = document.words();
+Queue<Term> termFrequency = new PriorityQueue<>((Comparator<Term>) (o1, o2) -> {
+private double termFrequency(final Document document, final String term) {
+long termFrequency = 0;
+for (String word : document.words()) {
+if (word.equals(term)) {
+

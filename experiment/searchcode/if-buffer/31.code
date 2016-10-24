@@ -1,0 +1,13 @@
+payloadBuffer = ByteBuffer.allocate(payload.length);
+payloadBuffer.put(payload);
+payloadBuffer.flip();
+}
+
+public ByteBuffer getBufferToSend(){
+if(sizeBuffer.remaining() > 0){
+sizeBuffer = ByteBuffer.allocate(4);
+}
+
+public ByteBuffer getBufferToReceiveData(){
+if(payloadBuffer == null){
+

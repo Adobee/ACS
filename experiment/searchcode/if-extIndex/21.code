@@ -1,0 +1,11 @@
+if (fileName.endsWith(&quot;.java&quot;)) {
+int extIndex = fileName.lastIndexOf(&quot;.java&quot;);
+if (extIndex > 0) {
+fileName = fileName.substring(0, extIndex);
+}
+}
+
+
+if (doc.isModifiedSinceSave()) {
+fileName = fileName + &quot; *&quot;;
+

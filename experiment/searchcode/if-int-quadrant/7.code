@@ -1,0 +1,8 @@
+DisplayMetrics displayMetrics = determineBoundsAndDimensions();
+
+if (!isQuadrantViewInitialized())
+return getQuadrantForPoint((int) x, (int) y).getQuadrantType();
+}
+
+public Blip getBlipClicked(float clickX, float clickY) {
+

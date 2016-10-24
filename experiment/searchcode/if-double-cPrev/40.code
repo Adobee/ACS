@@ -1,0 +1,7 @@
+public static  void search2(int size,int row,int column,Count count,int rPrev,int cPrev,ArrayGraph g,List<List<Node>> pathlist,List<Node> path){
+if(row==size-1&amp;&amp;column==size-1){
+g.getNode(row, column).visited=true;
+
+
+if(row>=0 &amp;&amp; row<= size-1&amp;&amp;(column+1<=size-1&amp;&amp;column+1>=0&amp;&amp;(row!=rPrev||column+1!=cPrev))){
+

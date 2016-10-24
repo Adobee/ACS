@@ -1,0 +1,8 @@
+public boolean equals(Object other) {
+if (!(other instanceof IQueueComparable)) {
+return false;
+}
+
+IQueueComparable comp = (IQueueComparable) other;
+return group.equals(comp.getGroup()) &amp;&amp; name.equals(comp.getName());
+

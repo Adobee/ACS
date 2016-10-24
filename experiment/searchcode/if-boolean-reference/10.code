@@ -1,0 +1,12 @@
+public class ReferenceValue extends AbstractValue {
+protected StoredSymbol reference;
+
+@Override
+public ReturnValueTypes getType() {
+return (newRValue instanceof ReferenceValue);
+}
+
+@Override
+public boolean assign(IReturnValue newRValue) {
+if(newRValue instanceof ReferenceValue) {
+

@@ -1,0 +1,6 @@
+Routetime routetime = (Routetime) o;
+
+if (Float.compare(routetime.waittime, waittime) != 0) return false;
+result = 31 * result + (walktime != +0.0f ? Float.floatToIntBits(walktime) : 0);
+result = 31 * result + (waittime != +0.0f ? Float.floatToIntBits(waittime) : 0);
+

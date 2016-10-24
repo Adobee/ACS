@@ -1,0 +1,10 @@
+rs = pstmt.executeQuery();
+if (rs != null) {
+while (rs.next()) {
+rh.add(new RhDTO(rs.getInt(&quot;idRh&quot;), rs.getString(&quot;Descripcion&quot;)));
+pstmt.setString(1, odto.getDescripcion());
+pstmt.setInt(2, odto.getIdRh());
+
+rtdo = pstmt.executeUpdate();
+if (rtdo != 0) {
+

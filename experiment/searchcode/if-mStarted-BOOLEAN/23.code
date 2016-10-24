@@ -1,0 +1,14 @@
+* {@link AtomicBoolean} to identify whether this {@link TimeoutTimer} is
+* started.
+*/
+private AtomicBoolean mStarted;
+/**
+* {@link Timer} to count down configured timeout time of {@link #mGadget}.
+public TimeoutTimer(Gadget gadget) {
+mGadget = gadget;
+mStarted = new AtomicBoolean(false);
+}
+
+/**
+* Starts the {@link #mTimer} {@link Timer} and sets {@link #mStarted} to
+

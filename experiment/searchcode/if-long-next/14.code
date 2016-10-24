@@ -1,0 +1,8 @@
+public abstract class AbstractRandomizer implements Randomizer {
+public final long nextLongBetween(long from, long to) {
+return from +  (long) (((double)(to - from)) * nextDouble());
+}
+
+@Override
+public final long nextLongBetween(LongInterval d) {
+

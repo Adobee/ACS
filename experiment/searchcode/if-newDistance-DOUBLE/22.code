@@ -1,0 +1,13 @@
+public class PathController extends RobotController {
+
+private Stack<Point> path;
+private double distance;
+
+public PathController(Configuration configuration) {
+robot.setSpeeds(FORWARD_SPEED, difference * 4);
+}
+}
+
+private boolean arrived() {
+double newDistance = position.distanceTo(path.peek());
+

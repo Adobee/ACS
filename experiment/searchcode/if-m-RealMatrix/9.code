@@ -1,0 +1,10 @@
+import org.apache.commons.math3.linear.RealMatrix;
+
+import com.mayla.core.Component;
+
+public abstract class Stamp {
+public abstract void fillStamp(Component comp);
+
+protected void setValue(RealMatrix mat, int row, int col, double value) {
+if(row<0 || col<0)
+

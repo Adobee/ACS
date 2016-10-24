@@ -1,0 +1,8 @@
+/*   7:    */   implements InstructionTargeter, Cloneable
+/*   8:    */ {
+/*   9:    */   private InstructionHandle ih;
+/*  10:    */   private int src_line;
+/*  11:    */
+/*  12:    */   public LineNumberGen(InstructionHandle ih, int src_line)
+/*  13:    */   {
+

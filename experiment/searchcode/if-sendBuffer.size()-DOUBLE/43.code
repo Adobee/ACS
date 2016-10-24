@@ -1,0 +1,11 @@
+this.flushRateIntervalMS = flushRateIntervalMS;
+sendBuffer = ByteBuffer.allocate(bufferSize + 100);
+
+}
+
+private void openChannel() {
+final int sizeOfBuffer = sendBuffer.position();
+
+if (sizeOfBuffer <= 0) {
+return false;
+

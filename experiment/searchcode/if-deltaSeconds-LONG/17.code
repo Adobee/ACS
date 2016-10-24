@@ -1,0 +1,9 @@
+public static void updateDeltaWithServerTime(Context context, long serverSeconds) {
+if (serverSeconds <= 1000) {
+deltaSeconds = 0L;
+return;
+}
+
+// Static cache
+long currentSeconds = TimeUnit.MILLISECONDS.toSeconds(System.currentTimeMillis());
+

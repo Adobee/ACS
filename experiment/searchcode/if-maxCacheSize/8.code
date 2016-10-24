@@ -1,0 +1,11 @@
+long maxMemory = (int) Runtime.getRuntime().maxMemory();
+int maxCacheSize = (int) (maxMemory / 8);
+init(maxCacheSize);
+}
+
+public BitmapCache(int maxCacheSize) {
+init(maxCacheSize);
+}
+
+private void init(int maxCacheSize) {
+

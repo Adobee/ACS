@@ -1,0 +1,16 @@
+private static final double DECIMAL_MAX = Math.pow(10, 7);
+
+public CoordinateWriter() {
+this(4);
+}
+
+public CoordinateWriter(int numDecimals, boolean isDummyZEnabled) {
+this(numDecimals,&quot; &quot;,&quot;,&quot;, isDummyZEnabled);
+}
+
+public CoordinateWriter(int numDecimals) {
+this(numDecimals,false);
+}
+
+//TODO: check gml spec - can it be strings?  Or just chars?
+

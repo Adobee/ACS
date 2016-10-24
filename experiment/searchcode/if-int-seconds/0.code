@@ -1,0 +1,15 @@
+class Time
+{
+int minutes;
+int seconds;
+
+
+public Time(int milliSeconds)
+{
+minutes = (int)(milliSeconds/6000);
+seconds = (int)(useForSeconds/100);
+}
+public void reset(int tSeconds, int tMinutes)
+{
+if(tSeconds >= 60)
+

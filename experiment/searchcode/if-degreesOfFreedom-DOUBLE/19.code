@@ -1,0 +1,11 @@
+private double degreesOfFreedom;
+
+private final double solverAbsoluteAccuracy;
+
+public TDistributionImpl(double degreesOfFreedom ,double inverseCumAccuracy) {
+setDegreesOfFreedomInternal(degreesOfFreedom);
+}
+
+private void setDegreesOfFreedomInternal(double newDegreesOfFreedom) {
+if (newDegreesOfFreedom <= 0.0) {
+

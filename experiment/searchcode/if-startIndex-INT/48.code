@@ -1,0 +1,8 @@
+public class PageInfo {
+public int pageSize = 10;
+public int startIndex = 0;
+public boolean isRefresh = true;
+public PageInfo(int pageSize, int startIndex) {
+this.pageSize = pageSize;
+this.startIndex = startIndex;
+

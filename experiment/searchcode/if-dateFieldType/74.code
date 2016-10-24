@@ -1,0 +1,7 @@
+public boolean equals(Object o) {
+if (!super.equals(o)) return false;
+DateFieldType that = (DateFieldType) o;
+if (strict) {
+DateFieldType other = (DateFieldType)fieldType;
+if (Objects.equals(dateTimeFormatter().format(), other.dateTimeFormatter().format()) == false) {
+

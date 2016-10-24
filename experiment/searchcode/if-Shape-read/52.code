@@ -1,0 +1,7 @@
+*          the InputStream to be read.
+* @throws InvalidShapeFileException
+*           if the data is malformed, according to the ESRI ShapeFile
+int typeId = ISUtil.readLeInt(this.is);
+if (this.rules.getForceShapeType() != null) {
+shapeType = this.rules.getForceShapeType();
+

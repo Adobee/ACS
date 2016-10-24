@@ -1,0 +1,9 @@
+public int size(){
+return listsize;
+}
+//insert an element before the ith element or at the end if DNE
+//running time: O(n)
+public void remove(int i){
+if(listsize >= i+1){
+//shift everything after i one space to the left
+

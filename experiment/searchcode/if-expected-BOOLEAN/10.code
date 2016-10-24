@@ -1,0 +1,9 @@
+int n = cells.length;
+double[] expected = new double[n];
+while (true) {
+boolean updated = false;
+e += cells[(i + j) % n] + expected[(i + j) % n];
+e /= 6.0;
+if (e > expected[i]) {
+expected[i] = e;
+

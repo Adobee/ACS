@@ -1,0 +1,11 @@
+protected Random mRand = new Random();
+protected int mCanvasWidth  = 0;
+protected int mCanvasHeight = 0;
+protected boolean mBound = false;
+return (System.currentTimeMillis() - mBegTime) > (mBound ? mBoundTimeout : mUnboundTimeout);
+}
+
+@Override
+public void onDraw(Canvas c) {
+if (mBound) {
+

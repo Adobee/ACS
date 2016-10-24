@@ -1,0 +1,16 @@
+package a1;
+
+public class Matrix {
+
+public static double dot(double[] x, double[] y) {
+if (x.length != y.length) return -1; //lazy coding, should be an exception
+// rows into columns, bro
+double z = 0;
+for (int i = 0; i < x.length; i++) {
+z += x[i]*y[i];
+}
+return z;
+}
+
+public static double[][] mult(double[][] a, double[][] b) {
+

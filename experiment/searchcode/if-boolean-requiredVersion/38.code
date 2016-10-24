@@ -1,0 +1,10 @@
+conditions = Collections.<InstructionCondition>singletonList(new UnitVersionCondition(name, requiredVersion));
+}
+
+public Builder setRequired(boolean required) {
+return resultingVersion;
+}
+
+public boolean isVersionUpdate() {
+return resultingVersion != null &amp;&amp; requiredVersion != null &amp;&amp; !resultingVersion.equals(requiredVersion);
+

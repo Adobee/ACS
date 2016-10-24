@@ -1,0 +1,17 @@
+public boolean addGoal(Goal goal, String parentVariableName)
+{
+if (goal == null)
+return false;
+
+if (hasGoal(goal.getVariableName()))
+for (Goal g : variableGoalMapping.values())
+{
+if (g.isFailed())
+result.add(g);
+}
+
+return result;
+}
+
+public KQMLList modify(Goal newGoal, String oldGoalName)
+

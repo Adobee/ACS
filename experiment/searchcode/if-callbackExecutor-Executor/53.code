@@ -1,0 +1,16 @@
+return mCancelled.get();
+}
+
+@Override
+public final void run() {
+try {
+if (isCancel()) {
+return;
+}
+callbackExecutor.execute(new Runnable() {
+final T wrapper = creatPresenterLoader().loadInBackground();
+if (!isCancel()) {
+return;
+}
+callbackExecutor.execute(new Runnable() {
+

@@ -1,0 +1,12 @@
+public class HttpsDaoImpl extends MyDaoSupport implements HttpsDao {
+
+@Override
+public boolean add(Https site) throws Exception {
+super.getHibernateTemplate().save(site);
+flag = true;
+return flag;
+}
+
+@Override
+public boolean modify(Https site) throws Exception {
+

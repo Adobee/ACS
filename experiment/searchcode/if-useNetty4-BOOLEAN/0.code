@@ -1,0 +1,9 @@
+private boolean useNetty4;
+
+@Before
+public void setUp() throws Exception {
+super.setUp();
+useNetty4 = randomBoolean();
+createIndex(&quot;source&quot;);
+// Build the test data. Don&#39;t use indexRandom because that won&#39;t work consistently with such small thread pools.
+

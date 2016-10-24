@@ -1,0 +1,14 @@
+return className.substring(0, className.lastIndexOf(&quot;.&quot;));
+}
+
+public static boolean needsImport(String className) {
+
+/* Prims */
+if (Arrays.asList(&quot;byte&quot;, &quot;char&quot;, &quot;double&quot;, &quot;float&quot;,
+&quot;java.lang.CharSequence&quot;).contains(className)) {
+return false;
+}
+
+/* Maps and Lists */
+else if (className.startsWith(&quot;java.util.Map&quot;) ||
+

@@ -1,0 +1,14 @@
+return (lon == null) &amp;&amp; (lat == null);
+}
+
+public long getX() {
+return lon.totalSeconds();
+}
+
+public long getY() {
+return lat.totalSeconds();
+}
+
+public Direction directionFrom(long X, long Y) {
+if (lat.totalSeconds() >= Y &amp;&amp; lon.totalSeconds() > X) {
+

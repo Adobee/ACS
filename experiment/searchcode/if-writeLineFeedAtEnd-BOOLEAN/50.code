@@ -1,0 +1,11 @@
+private final FilteringGeneratorDelegate filter;
+
+private boolean writeLineFeedAtEnd;
+private static final SerializedString LF = new SerializedString(&quot;\n&quot;);
+protected boolean isFiltered() {
+return filter != null;
+}
+
+protected boolean inRoot() {
+if (isFiltered()) {
+

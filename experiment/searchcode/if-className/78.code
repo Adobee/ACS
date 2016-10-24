@@ -1,0 +1,8 @@
+<#include &quot;/java_copyright.include&quot;>
+<#assign className = table.className>
+<#assign classNameLower = className?uncap_first>
+public PageList<${className}DTO> findPage(${className}QueryDTO query);
+
+<#list table.columns as column>
+<#if column.unique &amp;&amp; !column.pk>
+

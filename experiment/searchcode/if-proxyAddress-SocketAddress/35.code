@@ -1,0 +1,8 @@
+import java.net.InetSocketAddress;
+import java.net.Proxy;
+import java.net.SocketAddress;
+
+public class TorManagerOrbot extends TorManager {
+public OkHttpClient setupClient(OkHttpClient client) {
+SocketAddress proxyAddress = new InetSocketAddress(&quot;127.0.0.1&quot;, 8118);
+

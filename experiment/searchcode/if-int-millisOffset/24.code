@@ -1,0 +1,21 @@
+long millisOffset;
+
+int ms, s, m, h, d;
+
+float _mySpeed = 1;
+
+int current, previous;
+
+/**
+* create a new control timer, a timer that counts up in time.
+// ((ms<100) ? &quot;0&quot; + ms: &quot;&quot; +ms)
+);
+}
+
+/**
+*
+*/
+public void update() {
+current = (int) time();
+if (current > previous + 10) {
+

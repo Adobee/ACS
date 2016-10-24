@@ -1,0 +1,9 @@
+private void sendCustomRedirect(ActionRequest actionRequest,
+ActionResponse actionResponse) throws IOException {
+
+if (!SessionErrors.isEmpty(actionRequest)) {
+PortalUtil.getPortletId(actionRequest)
++ SessionMessages.KEY_SUFFIX_HIDE_DEFAULT_SUCCESS_MESSAGE);
+
+if (Validator.isNotNull(successURL)) {
+

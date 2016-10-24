@@ -1,0 +1,6 @@
+public void setScalefactor(int scalefactor) {
+
+if (scalefactor < this.scalefactor) {
+StaticPanel.resetDim();
+Line2D line = new Line2D.Double(xPosFrom * scalefactor, yPosFrom * scalefactor, xPosTo * scalefactor, yPosTo * scalefactor);
+

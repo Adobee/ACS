@@ -1,0 +1,20 @@
+super();
+maxsize = size;
+}
+
+@Override
+public void addFirst(E ls) {
+if (maxsize == 0) {
+return;
+}
+
+if (size() >= maxsize) {
+removeLast();
+}
+
+super.addFirst(ls);
+}
+
+
+}
+

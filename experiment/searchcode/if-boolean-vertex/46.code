@@ -1,0 +1,11 @@
+public abstract class Graph<T> {
+List<Vertex<T>> vertices;
+
+public Graph () {
+vertices = new ArrayList<Vertex<T>>();
+}
+
+public boolean addVertex(Vertex<T> vertex){
+boolean added = false;
+if (vertices.contains(vertex) == false) {
+

@@ -1,0 +1,8 @@
+IndexFieldData.CommonSettings.MemoryStorageFormat[] formats = IndexFieldData.CommonSettings.MemoryStorageFormat.values();
+int i = randomInt(formats.length);
+if (i < formats.length) {
+IndexSearcher searcher = new IndexSearcher(readerContext.reader());
+TopFieldDocs topDocs;
+
+topDocs = searcher.search(new MatchAllDocsQuery(), 10,
+

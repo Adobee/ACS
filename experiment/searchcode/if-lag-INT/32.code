@@ -1,0 +1,10 @@
+private String navn;
+private int sum;
+private int absSum;
+
+public Tabell(final String serialisert) {
+if (!serialisert.startsWith(&quot;[&quot;) || !serialisert.endsWith(&quot;]&quot;)) {
+throw new TippeException(&quot;Ukjent serialisering av tabell: &#39;&quot; + serialisert + &quot;&#39;&quot;, null);
+}
+final int lagStart = serialisert.indexOf(&#39;[&#39;, 1);
+

@@ -1,0 +1,7 @@
+private Type getGenericSupertype(Class<?> raw, Class<?> toResolve) {
+if (toResolve.isInterface()) {
+Class[] interfaces = raw.getInterfaces();
+int i = 0;
+for (int length = interfaces.length; i < length; ++i) {
+if (interfaces[i] == toResolve)
+

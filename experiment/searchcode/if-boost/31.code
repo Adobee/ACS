@@ -1,0 +1,11 @@
+boostMaxDistance = 1000;
+boostSpeedMultiplier = 2;
+}
+
+public void tick()
+{
+if(boosting)
+entity.checkCollision();
+currentDistance -= entity.getMaxSpeed() * boostSpeedMultiplier;
+if(currentDistance <= 0)
+

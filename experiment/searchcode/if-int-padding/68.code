@@ -1,0 +1,9 @@
+int fullBlocks = raw.length / blockLength;
+
+int paddedLenth = (fullBlocks + 1) * blockLength;
+int padding = paddedLenth - raw.length;
+public byte[] removePadding(byte[] raw) {
+byte paddingLength = raw[raw.length - 1];
+if (raw.length - paddingLength<0)
+return raw;
+

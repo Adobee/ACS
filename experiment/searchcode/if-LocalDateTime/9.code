@@ -1,0 +1,7 @@
+public class TriggerPlantOut {
+
+public static boolean checkTrigger( LocalDateTime time ){
+
+if (GlobalTime.period.getSeconds()/60 >= 60 ){
+if (time.isAfter(LocalDateTime.of(2013,1,15,0,0)) &amp;&amp; time.isBefore(LocalDateTime.of(2013,1,15,19,0))) {
+

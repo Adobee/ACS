@@ -1,0 +1,14 @@
+lastError = 0;
+
+}
+
+public void setTarget(double t){
+target = t;
+}
+
+public double getCorrection(double current){
+double error = target-current;
+if (errorSum * error < 0) {
+errorSum = 0.0;
+} else errorSum += error;
+

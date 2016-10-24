@@ -1,0 +1,10 @@
+import java.security.NoSuchAlgorithmException;
+
+public class Cryptography {
+
+private static final String hexDigits = &quot;0123456789abcdef&quot;;
+byte[] b = new byte[hexa.length() / 2];
+
+for (int i = 0; i < hexa.length(); i+=2) {
+b[i / 2] = (byte) ((hexDigits.indexOf(hexa.charAt(i)) << 4) |
+

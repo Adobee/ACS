@@ -1,0 +1,11 @@
+return (x >= from &amp;&amp; x <= to);
+}
+
+
+private boolean isNonCrossing(Range range) {
+return (range.to < from || to < range.from);
+}
+
+public Range crossRange(Range range) {
+if (this.isNonCrossing(range)) {
+

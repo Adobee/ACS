@@ -1,0 +1,10 @@
+long[] ret = new long[n + 1];
+for (int i = 0; i < n; i++) {
+long t = a[i] + b[i];
+if (t >= BASE) {
+ret[i + 1]++;
+static void add(long[] ret, long[] a, long[] b) {
+int n = Math.max(a.length, b.length);
+if (ret.length < n + 1) {
+throw new RuntimeException();
+

@@ -1,0 +1,7 @@
+private volatile boolean includeRelocations;
+private volatile boolean enabled;
+private volatile TimeValue rerouteInterval;
+ImmutableOpenMap<String, DiskUsage> usages = info.getNodeLeastAvailableDiskUsages();
+if (usages != null) {
+boolean reroute = false;
+

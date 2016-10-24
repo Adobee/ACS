@@ -1,0 +1,12 @@
+public boolean hasResource(String[] pathSegments) {
+if(pathSegments.length == 0) {
+return true;
+}
+FileDescriptor child = descriptor.getFile(pathSegments[1]);
+return new FileResource(child);
+}
+}
+
+public Resource findOrCreateResource(String[] pathSegments) {
+if (hasResource(pathSegments)) {
+

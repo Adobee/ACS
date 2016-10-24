@@ -1,0 +1,15 @@
+public class SimpleRGBMandelbrotPainter implements MandelbrotPainter {
+
+private int factor;
+
+public SimpleRGBMandelbrotPainter(int factor) {
+public Color paintPoint(int iterationCount) {
+if (iterationCount >= 0) {
+return new Color(iterationCount * factor);
+} else {
+return Color.BLACK;
+}
+}
+
+}
+

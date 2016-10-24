@@ -1,0 +1,10 @@
+String str ;
+if(responseCode == ResponseCode.CODE_230_User_logged_in){
+str = &quot;230 Login successful&quot;;
+Pattern ptr = Pattern.compile(&quot;([^:]+):([^:]+):([^:]+)&quot;);
+
+if(str != null){
+Matcher m = ptr.matcher(str);
+
+if(m.find()){
+

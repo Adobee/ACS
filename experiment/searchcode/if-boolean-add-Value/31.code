@@ -1,0 +1,9 @@
+public abstract int accion( boolean PF, boolean PD, boolean PA, boolean PI, boolean MT , boolean AF, boolean AD, boolean AA, boolean AI);
+
+@Override
+public Action compute(Percept p) {
+if( cmd.size() == 0 ){
+boolean PF = ( (Boolean) p.getAttribute(language.getPercept(0))).
+booleanValue();
+boolean PD = ( (Boolean) p.getAttribute(language.getPercept(1))).
+

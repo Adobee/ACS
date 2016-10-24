@@ -1,0 +1,10 @@
+switch(evaluatingPart) {
+
+case &quot;int&quot;:
+System.out.println(&quot;	Found Symbol \&quot;int\&quot;.&quot;);
+int firstSpace;
+int secondSpace;
+if((firstSpace = line.indexOf(&quot; &quot;)) > 0) {
+if((secondSpace = line.indexOf(&quot; &quot;, firstSpace + 1)) > 0) {
+varName = line.substring(firstSpace + 1, secondSpace);
+

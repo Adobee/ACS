@@ -1,0 +1,8 @@
+public static Object defaultValue(Class<?> type) {
+if (type.equals(Void.TYPE) || !type.isPrimitive())
+return null;
+if (type == Boolean.TYPE)
+return false;
+else if (type == Character.TYPE)
+return &#39;\u0000&#39;;
+

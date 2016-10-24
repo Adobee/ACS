@@ -1,0 +1,13 @@
+for (i = 0; i <= n - 1; i++) {
+s = a[1] * x[i] + a[0];
+q = q + (y[i] - s) * (y[i] - s);
+p = p + (s - yy) * (s - yy);
+e = Math.abs(y[i] - s);
+if (e > umax)
+umax = e;
+if (e < umin)
+umin = e;
+u = u + e / n;
+}
+dt[1] = Math.sqrt(q / n);
+

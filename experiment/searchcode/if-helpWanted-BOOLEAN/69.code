@@ -1,0 +1,9 @@
+// wywolac ponownie w kolejnej rundzie.
+private boolean spawnSoldier() throws GameActionException {
+if (!canSpawnRobot(RobotLevel.ON_GROUND, 15 + RobotType.SOLDIER.spawnCost()))
+return true;
+}
+
+private boolean spawnScout() throws GameActionException {
+if (!canSpawnRobot(RobotLevel.IN_AIR, 5 + RobotType.SCOUT.spawnCost()))
+

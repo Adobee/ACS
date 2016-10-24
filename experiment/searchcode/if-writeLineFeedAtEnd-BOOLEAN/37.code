@@ -1,0 +1,11 @@
+protected final CsvGenerator generator;
+private boolean writeLineFeedAtEnd;
+private final GeneratorBase base;
+
+public CsvXContentGenerator(CsvGenerator generator) {
+public void close() throws IOException {
+if (generator.isClosed()) {
+return;
+}
+if (writeLineFeedAtEnd) {
+

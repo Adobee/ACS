@@ -1,0 +1,8 @@
+protected final DiscoveryNodes nodes;
+
+protected final int expectedSuccessfulOps;
+private final int expectedTotalOps;
+public void start() {
+if (expectedSuccessfulOps == 0) {
+// no search shards to search on, bail with empty response (it happens with search across _all with no indices around and consistent with broadcast operations)
+

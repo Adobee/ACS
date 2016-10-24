@@ -1,0 +1,9 @@
+*     Red Hat, Inc. - initial API and implementation
+******************************************************************************/
+
+package org.jboss.tools.hibernate.jpt.core.internal.context.orm;
+
+import org.eclipse.jpt.core.context.BaseJoinColumn;
+import org.eclipse.jpt.core.context.Entity;
+import org.eclipse.jpt.core.context.TypeMapping;
+

@@ -1,0 +1,16 @@
+Integer i2 = i;
+if (i1 == i2) {
+
+}
+}
+}
+
+}
+class UsesDoubleAndFloat {
+void f() {
+System.out.println(&quot;(r==r1) is &quot;+(r==r1));
+
+Double r2 = 10.0;
+Double r3 = 10.0;
+System.out.println(&quot;(r2==r3) is &quot;+(r2==r3));
+

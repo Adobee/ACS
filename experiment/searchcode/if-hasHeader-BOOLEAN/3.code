@@ -1,0 +1,10 @@
+public Tcp getTcp() {
+if (pkt != null &amp;&amp; pkt.hasHeader(tcp) ) {
+return tcp;
+} else {
+return null;
+* @return プロトコルヘッダ。パケットにそのプロトコルが存在しない場合、パケットそのものがnullの場合はnull
+*/
+public Ip6 getIp6() {
+if (pkt != null &amp;&amp; pkt.hasHeader(ip6) ) {
+

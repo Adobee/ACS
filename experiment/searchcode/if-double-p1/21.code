@@ -1,0 +1,14 @@
+import refactored_game.support.Point;
+
+/**
+*
+* @author Sparky
+*/
+public class Line {
+public Point p1;
+public Point p2;
+public Line(Point p1, Point p2){
+public boolean intersect(Line l){
+if(between(p1.x,p2.x,l.p1.x)||between(p1.x,p2.x,l.p2.x)){
+if(between(p1.y,p2.y,l.p1.y)||between(p1.y,p2.y,l.p2.y)){
+

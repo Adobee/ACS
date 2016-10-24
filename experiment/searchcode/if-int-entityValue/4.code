@@ -1,0 +1,9 @@
+EntityValue entityValue;
+if(isXml) {
+entityValue = createXmlEntityValue(entityName);
+} else {
+entityValue = createPojoEntityValue(entityName);
+public EntityValue createEntityValue(String entityName,Serializable id) {
+//PojoEntityValue entityValue = createEntityValue(entityName);
+if(id != null) {
+

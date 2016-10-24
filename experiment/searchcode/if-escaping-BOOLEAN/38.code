@@ -1,0 +1,12 @@
+// XXX OK if field is in another non-escaping local
+if (lhs instanceof FieldRef) {
+setResult(Boolean.TRUE);
+return;
+}
+
+// Check for assignment of local to an array element
+stmt.getInvokeExpr().apply(escapingValueSwitch);
+Boolean result = (Boolean)escapingValueSwitch.getResult();
+if (result == null)
+result = Boolean.FALSE;	// return value is ignored
+

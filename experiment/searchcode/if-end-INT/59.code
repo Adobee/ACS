@@ -1,0 +1,9 @@
+for (int i = 1; i < A.length; i++) {
+if (A[i] < mins[i - 1]) {
+mins[i] = A[i];
+mins[i] = mins[i - 1];
+minIndex[i] = minIndex[i - 1];
+}
+}
+int end = A.length - 1;
+

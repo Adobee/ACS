@@ -1,0 +1,17 @@
+import java.util.Random;
+
+public class xb
+extends wy
+{
+public xb(adm ☃)
+{
+super(☃);
+}
+
+public xb(adm ☃, pr ☃)
+{
+super(☃, ☃);
+}
+
+public xb(adm ☃, double ☃, double ☃, double ☃)
+

@@ -1,0 +1,8 @@
+public class SemaphoreImpl implements Semaphore {
+
+private volatile int availablePermits;
+private final Object lock = new Object();
+
+public SemaphoreImpl(int availablePermits) {
+if (availablePermits <= 0) throw new IllegalArgumentException();
+

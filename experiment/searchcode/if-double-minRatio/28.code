@@ -1,0 +1,6 @@
+public static boolean checkRatio(float minRatio, float maxRatio, String path){
+String[] array = path.split(&quot;_&quot;);
+float fragmentsRatio = Float.valueOf(array[array.length -2]); //is the substring of the path that contains the ratio information
+if(fragmentsRatio > minRatio &amp;&amp; fragmentsRatio <= maxRatio)
+return true;
+

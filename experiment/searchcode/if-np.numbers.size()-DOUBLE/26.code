@@ -1,0 +1,15 @@
+for ( int i = 0;  i < n;  i++ ) {
+
+double Omega = base + dB*i;
+gridArray.add( Omega );
+
+if ( i % DesignGrid.GRIDDENSITY  ==  0 ) {
+bandEdgeCount++;
+}
+
+gridpt++;
+}
+}
+G.gridSize = gridArray.size();
+G.grid     = new double[ G.gridSize ];
+

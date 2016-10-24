@@ -1,0 +1,15 @@
+package com.talk.message;
+
+public class MsgEntity {
+
+private String msg = null;
+
+//message is recieved if the value it&#39;s true,
+private int msgType = 0;
+
+public MsgEntity() {
+
+}
+
+public MsgEntity(final String msg,final int msgType) {
+

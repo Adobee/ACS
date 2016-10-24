@@ -1,0 +1,18 @@
+String s1 = &quot;AAA&quot;;
+String s2 = new String(&quot;AAA&quot;);
+
+if(s1==s2){
+System.out.println(&quot;s1과 s2 같다&quot;);
+}else{
+s2 = s2.intern();//문자열을 constant pool에 등록
+
+if(s1==s2){
+System.out.println(&quot;s1과 s2 같다&quot;);
+}else{
+System.out.println(&quot;s1과 s2 다르다.&quot;);
+
+}
+}
+
+}
+

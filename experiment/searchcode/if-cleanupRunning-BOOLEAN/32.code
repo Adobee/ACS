@@ -1,0 +1,7 @@
+private final Deque<RealConnection> connections = new ArrayDeque<>();
+final RouteDatabase routeDatabase = new RouteDatabase();
+boolean cleanupRunning;
+void put(RealConnection connection) {
+assert (Thread.holdsLock(this));
+if (!cleanupRunning) {
+

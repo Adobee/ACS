@@ -1,0 +1,12 @@
+public static int maxDifference(int[] diff){
+if(diff.length==1){
+return diff[0];
+}
+boolean descOrder=true;
+for(int k=1;k<diff.length;k++){
+if(diff[k-1]<diff[k]){
+descOrder=false;
+}
+}
+if(descOrder){
+

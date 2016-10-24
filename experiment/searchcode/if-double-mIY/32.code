@@ -1,0 +1,9 @@
+private static final long serialVersionUID = 1;
+
+/** the clip polygone */
+private static final double[] CLIP = new double[] {//
+0d, 0d, 1d, 0d, 1d, 1d, 0d, 1d };
+
+/** the internal pixel window */
+private static final PixelWindow W = new PixelWindow();
+

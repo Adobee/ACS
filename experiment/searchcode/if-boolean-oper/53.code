@@ -1,0 +1,10 @@
+public class OperInfoUpdataeAction extends ActionSupport {
+@Resource
+private BaseDao<TAuOperInfo> baseDao;
+
+private boolean success;
+try{
+Object uu = baseDao.update(oper);
+if(uu!=null){
+setSuccess(true);
+

@@ -1,0 +1,7 @@
+/** Desired max cosine on the orthogonality between the function vector
+* and the columns of the jacobian. */
+private final double orthoTolerance;
+double costRelativeTolerance,
+double parRelativeTolerance,
+double orthoTolerance,
+

@@ -1,0 +1,10 @@
+package org.chromium.chrome.browser.ntp.snippets;
+
+import org.chromium.base.annotations.CalledByNative;
+import org.chromium.chrome.browser.profiles.Profile;
+// Don&#39;t notify observer if we&#39;ve already been destroyed.
+if (mNativeSnippetsBridge == 0) return;
+assert mObserver != null;
+
+List<SnippetArticle> newSnippets = new ArrayList<>(titles.length);
+

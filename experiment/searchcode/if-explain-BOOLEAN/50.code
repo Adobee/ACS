@@ -1,0 +1,8 @@
+ExplainJson json = new Gson().fromJson(jsonString,
+ExplainJson.class);
+if (&quot;1&quot;.equals(json.code)) {
+adapter1 = new ListViewAdapter(json.data.rule);
+mlv_explain_show1.setAdapter(adapter1);
+
+if (json.data.time != null &amp;&amp; json.data.time.length != 0) {
+

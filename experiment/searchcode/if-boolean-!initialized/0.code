@@ -1,0 +1,13 @@
+public class ConcreteDatabase implements Database {
+
+private boolean initialized;
+
+@Override
+public void close() throws IOException {
+if (!initialized) {
+throw new IllegalStateException(&quot;Not initialized&quot;);
+}
+}
+
+@Override
+

@@ -1,0 +1,10 @@
+private double initialStepBoundFactor;
+
+private double costRelativeTolerance;
+
+private double parRelativeTolerance;
+for (int k = 0 ; k < (cols) ; ++k) {
+double dk = jacNorm[k];
+if (dk == 0) {
+dk = 1.0;
+

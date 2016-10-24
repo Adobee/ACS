@@ -1,0 +1,10 @@
+public class ZipfDistribution implements Distribution {
+private final double power;
+private final double minVal;
+private final double maxVal;
+public ZipfDistribution(
+final double power,
+final double minVal,
+final double maxVal,
+final double multiplicationFactor)
+

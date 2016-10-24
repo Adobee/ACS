@@ -1,0 +1,12 @@
+System.out.println(&quot;Max no:&quot; + FindMax(A, 0));
+}
+
+private static int FindMax(int[] a, int startIndex) {
+// TODO Auto-generated method stub
+if(startIndex == a.length-1){
+return a[startIndex];
+}
+else
+{
+return Math.max(a[startIndex], FindMax(a, startIndex+1));
+

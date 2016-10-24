@@ -1,0 +1,11 @@
+private double width;
+private double height;
+
+private boolean horizProject;
+
+public Rectangle(double width, double height) {
+@Override
+public Vector2D project(Vector2D vector) {
+if(horizProject)
+return V.project(vector, horiz);
+

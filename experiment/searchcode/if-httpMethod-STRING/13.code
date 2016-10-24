@@ -1,0 +1,11 @@
+public static boolean isAccept(String method) {
+for (HttpMethod m : HttpMethod.values()) {
+if (m.name().equals(method)) {
+return true;
+}
+}
+return false;
+}
+
+public static HttpMethod getMethod(String method) {
+

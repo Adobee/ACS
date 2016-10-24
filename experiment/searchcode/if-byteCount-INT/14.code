@@ -1,0 +1,6 @@
+assert inbuffer.remaining() <= 0xFF : &quot;Buffer is too large ( > 0xFF ) and should never have reached this&quot;;
+
+int byteCount = inbuffer.remaining();
+if(byteCount > 0xFF) {
+byte sizeCount = (byte)((byteCount / 0xFF) - (byteCount % 0xFF == 0 ? 1 : 0));
+

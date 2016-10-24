@@ -1,0 +1,14 @@
+public double XMin = 0;
+public double YMin = 0;
+public double XMax = 0;
+public double YMax = 0;
+
+public Object clone() throws CloneNotSupportedException {
+public void extend(double dX, double dY) {
+XMax += dX;
+XMin -= dX;
+YMax += dY;
+YMin -= dY;
+
+XMin = Math.max(0, XMin);
+

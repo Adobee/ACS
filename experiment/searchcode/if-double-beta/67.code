@@ -1,0 +1,12 @@
+private Recall recall=new Recall();
+private double beta;
+
+public FScore(double beta){
+this.beta=beta;
+double p=precision.measure(cm);
+double r=recall.measure(cm);
+if(p+r==0){
+return 0.0;
+}
+else{
+

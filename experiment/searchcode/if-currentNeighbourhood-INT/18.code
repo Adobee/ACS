@@ -1,0 +1,6 @@
+final double currentLearning = learningFactor.value(numCalls);
+final Neuron best = findAndUpdateBestNeuron(net, features, currentLearning);
+final int currentNeighbourhood = neighbourhoodSize.value(numCalls);
+final Gaussian neighbourhoodDecay = new Gaussian(currentLearning, 0, 1d / currentNeighbourhood);
+if(currentNeighbourhood > 0) {
+

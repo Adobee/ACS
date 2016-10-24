@@ -1,0 +1,6 @@
+// Compute parameters for fast AAB intersection
+double invX = 1d / ray.line.direction.x;
+double invY = 1d / ray.line.direction.y;
+tymax = (b.bounds[1 - sign[1]].y - ray.line.position.y) * invY;
+if ((tmin > tymax) || (tymin > tmax)) continue;
+

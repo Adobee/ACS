@@ -1,0 +1,10 @@
+public class UMLetFileFilter extends FileFilter{
+
+@Override
+public boolean accept(File file) {
+if(file.isDirectory())
+int extIndex = path.lastIndexOf(&#39;.&#39;);
+if(extIndex==-1)
+return false;
+return path.substring(extIndex+1).equalsIgnoreCase(&quot;uxf&quot;);
+

@@ -1,0 +1,10 @@
+public double minX;
+public double maxX;
+public double minY;
+public double maxY;
+
+public void expand(Rectangle other) {
+if (other.maxX > maxX) maxX = other.maxX;
+if (other.minY < minY) minY = other.minY;
+if (other.maxY > maxY) maxY = other.maxY;
+

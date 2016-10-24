@@ -1,0 +1,10 @@
+private Word original;
+
+public CopyWord(Word original) {
+super(original);
+this.original = original;
+public void copyTo(Word to) {
+super.copyTo(to);
+if (to instanceof CopyWord) {
+((CopyWord) to).original = this.original;
+

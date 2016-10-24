@@ -1,0 +1,9 @@
+public class NumberFloodGame {
+private final GravitationGrid grid;
+private final GameRules rules;
+private boolean paused;
+public void tick() {
+if (!paused) {
+grid.tick();
+rules.apply(grid);
+

@@ -1,0 +1,10 @@
+return x * amplificationFactor;
+}
+
+private void updateAmplificationFactor(double x) {
+double absX = abs(x);
+
+double past = buffer[idx];
+buffer[idx] = absX;
+idx = (idx + 1) % BUFFER_SIZE;
+

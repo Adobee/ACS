@@ -1,0 +1,9 @@
+public void addModule(Module module, int parentId) {
+if(parentId != 0){
+module.setParent(
+moduleDao.findModule(parentId)
+Module module = moduleDao.findModule(moduleId);
+
+if(module.getChildren().size() > 0){
+throw new SystemException(&quot;存在子模块，不允许删除！&quot;);
+

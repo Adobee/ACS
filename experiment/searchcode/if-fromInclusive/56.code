@@ -1,0 +1,8 @@
+public static int binarySearchFirstTrueSimple(IntPredicate predicate, int fromInclusive, int toInclusive) {
+int lo = fromInclusive - 1;
+int hi = toInclusive + 1;
+while (hi - lo > 1) {
+int mid = (lo + hi) >>> 1;
+if (!predicate.test(mid)) {
+lo = mid;
+

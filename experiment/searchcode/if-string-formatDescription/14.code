@@ -1,0 +1,11 @@
+protected int lastPercentDone = -1;
+
+protected ImageLoaderImpl(ImageFormatDescription formatDescription) {
+if (formatDescription == null) {
+listeners.remove(listener);
+}
+}
+
+protected void emitWarning(String warning) {
+if(listeners != null &amp;&amp; !listeners.isEmpty()) {
+

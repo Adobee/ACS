@@ -1,0 +1,4 @@
+//int currentSemIndex = getSemaphore().availablePermits()%getCount() + 1;
+int currentSemIndex = (((getSeries()-getSemaphore().availablePermits()))%getCount())+1;
+if (currentThreadno == currentSemIndex) {
+

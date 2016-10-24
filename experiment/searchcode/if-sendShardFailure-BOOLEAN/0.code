@@ -1,0 +1,6 @@
+import java.util.Map;
+import java.util.concurrent.ConcurrentMap;
+import java.util.concurrent.atomic.AtomicBoolean;
+public void failRecovery(long id, RecoveryFailedException e, boolean sendShardFailure) {
+RecoveryStatus removed = onGoingRecoveries.remove(id);
+

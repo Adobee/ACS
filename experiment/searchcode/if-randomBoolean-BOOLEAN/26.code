@@ -1,0 +1,8 @@
+RestoreSnapshotRequest request = new RestoreSnapshotRequest(&quot;test-repo&quot;, &quot;test-snap&quot;);
+
+XContentBuilder builder = jsonBuilder().startObject();
+
+if(randomBoolean()) {
+IndicesOptions indicesOptions = IndicesOptions.fromOptions(randomBoolean(), randomBoolean(), randomBoolean(), randomBoolean());
+if (indicesOptions.expandWildcardsClosed()) {
+

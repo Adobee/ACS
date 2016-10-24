@@ -1,0 +1,12 @@
+public class ContactPreparedStatementSetter implements PreparedStatementSetter {
+private Contact contact;
+private boolean isInsert;
+
+// INSERT INTO contact (client_id,poc,email,phone,designation,created_date)
+public ContactPreparedStatementSetter(Contact a, boolean isInsert) {
+this.contact = a;
+}
+
+@Override
+public void setValues(PreparedStatement arg0) throws SQLException {
+

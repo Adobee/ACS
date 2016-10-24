@@ -1,0 +1,12 @@
+return new AppealsUri(receiptUri.getBaseUri() + &quot;/order/&quot; + receiptUri.getId().toString());
+}
+
+private static void checkForValidOrderUri(AppealsUri orderUri) {
+if(!orderUri.toString().contains(&quot;/order/&quot;)) {
+private static void checkForValidReceiptUri(AppealsUri receipt) {
+if(!receipt.toString().contains(&quot;/receipt/&quot;)) {
+throw new RuntimeException(&quot;Invalid Receipt URI&quot;);
+}
+}
+}
+

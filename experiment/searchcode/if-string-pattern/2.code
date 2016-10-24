@@ -1,0 +1,9 @@
+package me.hatter.tools.commons.regex;
+
+import java.util.regex.Pattern;
+
+public class RegexUtil {
+
+public static Pattern createPattern(String pattern, boolean ignoreCase) {
+if (pattern == null) {
+

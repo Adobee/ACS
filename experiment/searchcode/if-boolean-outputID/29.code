@@ -1,0 +1,9 @@
+public Register(int num_bits, InputId data_id, InputId enable_id,
+OutputId output_id) {
+num_bits_ = num_bits;
+data_id_ = data_id;
+out_id_ = output_id;
+public void Notify(BitWord bit_word, OutputId sender,
+InputId receiver, Object arg) {
+if (sender == OutputId.External) {
+

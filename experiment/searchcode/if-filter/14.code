@@ -1,0 +1,10 @@
+// Copyright Raytheon BBN Technologies 2011
+package com.bbn.marti.filter;
+
+import com.bbn.cot.filter.Filter;
+Filter<T> filter;
+
+public T filter(T in) {
+if (predicate.apply(in)) {
+in = filter.filter(in);
+

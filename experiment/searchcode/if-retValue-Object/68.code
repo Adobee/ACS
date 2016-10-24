@@ -1,0 +1,9 @@
+List<T> retValue = new ArrayList<T>();
+if (listToClone == null) return retValue;
+for (T item : listToClone) {
+retValue.add(item);
+boolean firstItemProcessed = false;
+for (Object o : inputList) {
+if (firstItemProcessed) {
+retValue.append(delimiter);
+

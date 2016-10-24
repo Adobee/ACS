@@ -1,0 +1,9 @@
+protected void addModules(ProtocolBase protocol, ProtocolAmendmentBean amendmentBean) {
+ProtocolAmendRenewalBase amendmentEntry = protocol.getProtocolAmendRenewal();
+if (amendmentBean.getGeneralInfo()) {
+protocol.merge(protocolFinderDao.findCurrentProtocolByNumber(protocol.getAmendedProtocolNumber()), IacucProtocolModule.AREAS_OF_RESEARCH);
+amendmentEntry.removeModule(IacucProtocolModule.AREAS_OF_RESEARCH);
+}
+
+if (amendmentBean.getFundingSource()) {
+

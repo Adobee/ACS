@@ -1,0 +1,10 @@
+import de.tlc4b.ltl.LTLFormulaVisitor;
+
+/**
+* TODO we need a second run over ast to check if all local variables have a
+* type. This run should be performed after the normal model checking task.
+private void checkConstantsSetup() {
+PPredicate p = machineContext.getConstantsSetup();
+if (p != null) {
+setType(p, BoolType.getInstance());
+

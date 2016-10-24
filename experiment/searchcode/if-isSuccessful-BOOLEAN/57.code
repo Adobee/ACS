@@ -1,0 +1,8 @@
+HttpRequest request = new HttpRequest(HttpRequestMethod.DELETE, HttpURLConnection.HTTP_NO_CONTENT, params[0]);
+Boolean isSuccessful = false;
+try {
+isSuccessful = request.isSuccessful();
+if (!isSuccessful) {
+Log.e(LOG_TAG,
+String.format(&quot;Delete request to endpoint %s failed with response code %d.&quot;,
+

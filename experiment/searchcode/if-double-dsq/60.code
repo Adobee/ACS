@@ -1,0 +1,7 @@
+public Vector simplyfy2D(PVector nodes[], float maxD)
+{
+float maxDsq = maxD * maxD;
+cD = Line2D.ptSegDistSq(pA.x, pA.y, pB.x, pB.y, cP.x, cP.y);
+if(cD <= (double)maxDsq)
+continue;
+

@@ -1,0 +1,9 @@
+return parameter - new Random().nextInt(parameter-lowerBound);
+}
+
+public static double getRandomlyIncreasedDouble(double parameter, double upperBound) {
+return parameter + (upperBound - parameter) * random.nextDouble();
+public static double getSlightlyIncreasedDouble(double parameter, double step, double upperBound) {
+if(parameter + step <= upperBound){
+return parameter + step;
+

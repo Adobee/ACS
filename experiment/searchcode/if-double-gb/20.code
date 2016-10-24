@@ -1,0 +1,13 @@
+private int ramGB = 4; // Gigabytes
+
+
+public void setRam(int ram){
+if(ram > 0){
+ramGB = ram;
+}else{
+System.out.println(&quot;RAM must be greater than 0 GB&quot;);
+public void doubleRam(){
+
+System.out.println(&quot;RAM in GB:&quot; + ramGB);
+int doubleRam = ramGB * 2;	//local variable (will not be initialised)
+

@@ -1,0 +1,10 @@
+public class REXPGenericVector
+extends REXPVector
+{
+private RList payload;
+
+public REXPGenericVector(RList paramRList)
+{
+this.payload = (paramRList == null ? new RList() : paramRList);
+if (this.payload.isNamed()) {
+

@@ -1,0 +1,11 @@
+barRenderer.setLegendItemToolTipGenerator(new StandardCategorySeriesLabelGenerator(legendToolTipText + &quot; - {0}&quot;));
+
+// if (orientation == PlotOrientation.HORIZONTAL)
+// {
+categoryPlot.setRowRenderingOrder(SortOrder.DESCENDING);
+// numberAxis.setNumberFormatOverride(NumberFormat.getPercentInstance());
+
+if (isCategoryLabelRotated)
+{
+categoryPlot.getDomainAxis().setCategoryLabelPositions(CategoryLabelPositions.createUpRotationLabelPositions(Math.toRadians(30D)));
+

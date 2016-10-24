@@ -1,0 +1,12 @@
+public class Matrix {
+
+private int nrows;
+private int ncols;
+private double[][] data;
+
+public Matrix(double[][] dat) {
+public Matrix(int nrow, int ncol) {
+this.nrows = nrow;
+this.ncols = ncol;
+data = new double[nrow][ncol];
+

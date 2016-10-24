@@ -1,0 +1,10 @@
+private static final int MAX_ROUNDS = 10;
+private List<Round> rounds = new ArrayList<Round>();
+
+private int getCurrentRoundId() {
+return id >= 0 &amp;&amp; rounds.size() >= id;
+}
+
+private Round getRoundById(int roundId) {
+if (!emptyListOfRounds() &amp;&amp; idExists(roundId)) {
+

@@ -1,0 +1,8 @@
+boolean wasAdded = false;
+if (decisionMakingBodies.contains(aDecisionMakingBody)) { return false; }
+ApprovalLevel existingApprovalLevel = aDecisionMakingBody.getApprovalLevel();
+//Unable to remove aDecisionMakingBody, as it must always have a approvalLevel
+if (!this.equals(aDecisionMakingBody.getApprovalLevel()))
+{
+decisionMakingBodies.remove(aDecisionMakingBody);
+

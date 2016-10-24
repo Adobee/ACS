@@ -1,0 +1,9 @@
+private ByteRange buildByteRange(String fromRange, String toRange) {
+ByteRangeBuilder byteRangeBuilder = new ByteRangeBuilder();
+if (StringUtils.isNotEmpty(fromRange)) {
+byteRangeBuilder.withFromRange(Integer.valueOf(fromRange));
+}
+
+if (StringUtils.isNotEmpty(toRange)) {
+byteRangeBuilder.withToRange(Integer.valueOf(toRange));
+

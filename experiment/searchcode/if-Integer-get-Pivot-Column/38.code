@@ -1,0 +1,11 @@
+public void setItems(List<Object> items)
+{
+CTItems ctItems = this._pivotField.getItems();
+if (ctItems != null)
+CTItems items = this._pivotField.getItems();
+if (items == null) {
+return Collections.emptyList();
+}
+
+List values = this._cacheField.getSharedItems();
+

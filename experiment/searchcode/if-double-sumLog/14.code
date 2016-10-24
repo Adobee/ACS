@@ -1,0 +1,10 @@
+public double computeLoss(double[] confidences, boolean[] groundTruth) {
+
+double sumOfProductsL = 0.0;
+double sumlogLoss;
+if (prediction < epsilon) {
+prediction = epsilon;
+}
+double y = 0.0;
+if (groundTruth[labelIndex]) {
+

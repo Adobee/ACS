@@ -1,0 +1,12 @@
+public Set<Double> getKeys() {
+return percentiles.keySet();
+}
+
+public Double getPercentile(Double key) {
+if (!percentiles.containsKey(key)) {
+return Double.NaN;
+}
+return percentiles.get(key);
+}
+}
+

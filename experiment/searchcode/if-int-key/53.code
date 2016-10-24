@@ -1,0 +1,8 @@
+public static int rank(int key, int[] a) {
+return rank(key, a, 0, a.length - 1);
+}
+
+public static int rank(int key, int[] a, int low, int high) {
+if (low > high) return -1;
+int mid = low + (high - low) / 2;
+

@@ -1,0 +1,5 @@
+public static String convertDateToString(FORMAT format, Date toFormat) {
+if(format == null) throw new IllegalArgumentException(&quot;FORMAT cannot be null&quot;);
+if(toFormat == null) throw new IllegalArgumentException(&quot;Date cannot be null&quot;);
+if(!format.isDateFormat()) throw new IllegalArgumentException(&quot;Not a date format: &quot;+format.name());
+

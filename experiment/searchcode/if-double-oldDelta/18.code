@@ -1,0 +1,6 @@
+final Point2D oldCpDelta = Point2DExtensions.operator_minus(cpPoint, oldFixed);
+double _x = oldDelta.getX();
+double _x_1 = oldDelta.getX();
+double _multiply = (_x * _x_1);
+double _y = oldDelta.getY();
+

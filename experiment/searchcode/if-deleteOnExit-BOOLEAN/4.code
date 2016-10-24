@@ -1,0 +1,7 @@
+public class TempFileHelper {
+public static File getTempFile(String filePrefix, boolean deleteOnExit) {
+String tempFileName = filePrefix + &quot;-&quot; + System.nanoTime();
+tempFile = File.createTempFile(tempFileName, &quot;.txt&quot;);
+if (deleteOnExit) {
+tempFile.deleteOnExit();
+

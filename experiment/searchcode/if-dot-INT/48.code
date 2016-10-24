@@ -1,0 +1,13 @@
+private boolean isEdge(Dot dot) {
+if (dot.getX() * dot.getY() == 0)
+return true;
+if (dot.getX() + 1 == Config.COL || dot.getY() + 1 == Config.ROW)
+cat.setXAndY(matrixDotToMove.getX(), matrixDotToMove.getY()); // 更新猫的坐标
+}
+
+// 如何移动猫的逻辑
+public void howToMove(Dot cat, int step) {
+if (isEdge(cat)) {
+lose();
+return;
+

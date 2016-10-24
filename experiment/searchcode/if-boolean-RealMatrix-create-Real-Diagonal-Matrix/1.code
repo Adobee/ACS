@@ -1,0 +1,11 @@
+public static boolean equals(RealMatrix m1, RealMatrix m2, double margin)
+{
+if(m1.getColumnDimension() != m2.getColumnDimension() || m1.getRowDimension() != m2.getRowDimension())
+if( abs(m1.getEntry(i, j) - m2.getEntry(i, j)) >= margin)
+return false;
+
+return true;
+}
+
+public static boolean isInvertible(RealMatrix in)
+

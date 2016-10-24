@@ -1,0 +1,6 @@
+double sig, double T, double N, double nudt, double dt) {
+double optionValue = 0.0;
+double ga_v = r - div - 0.5 * Math.pow(sig, 2);
+double ga_a = Math.log(S) + nudt + 0.5 * ga_v * (T - dt);
+double ga_b = Math.pow(sig, 2) * dt + Math.pow(sig, 2) * (T - dt) * N * (2 * N - 1) / (6 * Math.pow(N, 2));
+

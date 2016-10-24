@@ -1,0 +1,7 @@
+private ViewGroup mHeaderDock;
+private Drawable mForeground;
+private boolean mForegroundBoundsChanged = true;
+public void setForegroundColor(@ColorInt int color) {
+if (mForeground instanceof ColorDrawable) {
+((ColorDrawable) mForeground.mutate()).setColor(color);
+

@@ -1,0 +1,10 @@
+if (1 == compareTo(notComparable)) {} // Noncompliant
+if (0 == compareTo(other)) {}
+
+int c1 = compareTo(other);
+if (c1 == 1) {} // Noncompliant
+
+int c2 = compareTo(other);
+c2 = compareTo(other, other);
+if (c2 == 1) {}
+

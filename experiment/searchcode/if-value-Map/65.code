@@ -1,0 +1,7 @@
+public Map coerce(Type type, Object value) throws FastCannotCoerceException {
+if (value instanceof Map) {
+return (Map) value;
+}
+if (value instanceof CanToMap) {
+return ((CanToMap) value).toMap();
+

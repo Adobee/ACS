@@ -1,0 +1,18 @@
+this.setDefaultNw(_defaultNw);
+this.setDefaultNh(_defaultNh);
+}
+
+protected void setNw (int _nw) {
+
+if (_nw == -1) {
+this.nw = _nw;
+}
+}
+
+protected void setNh (int _nh) {
+
+if (_nh == -1) {
+
+this.nh = this.defaultNh;
+} else {
+

@@ -1,0 +1,11 @@
+public class FileFilterMaxSize extends FileFilter {
+
+private Long maxSize;
+
+public FileFilterMaxSize(Long maxSize) {
+this(null, maxSize);
+}
+
+public FileFilterMaxSize(FileFilter next, Long maxSize) {
+super(next);
+

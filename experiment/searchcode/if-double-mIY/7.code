@@ -1,0 +1,9 @@
+double bx=posbalon.x*myRobotAPI.getFieldSide();
+double miy=pos.y;
+double mix=pos.x*myRobotAPI.getFieldSide();
+double ang=pos.t;
+if(mensajes.isEmpty()){
+if(bx>0.5){//esta en mi campo
+if(posbalon.y > miy){
+if(miy<0.25){//subo si no estoy muy arriba
+

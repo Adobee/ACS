@@ -1,0 +1,7 @@
+comparatorMap.put(&quot;org.jboss.errai.ui.client.widget.Table&quot;, new AnnotationComparator<Table>() {
+@Override public boolean isEqual(Table a1, Table a2) {
+if (!a1.root().equals(a2.root())) {
+public boolean isEqual(Annotation a1, Annotation a2) {
+if (QualifierUtil.isSameType(a1, a2)) {
+if (comparatorMap.containsKey(a1.annotationType().getName())) {
+

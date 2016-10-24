@@ -1,0 +1,8 @@
+avg = (double) sum / arr.length;
+double minDiff = Math.abs(arr[0] - avg);
+double tempDiff = 0;
+for (int i = 1; i < arr.length; i++) {
+tempDiff = (double) Math.abs(arr[i] - avg);
+if (tempDiff < minDiff) {
+index = i;
+

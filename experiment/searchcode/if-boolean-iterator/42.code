@@ -1,0 +1,9 @@
+this.baseIterator = baseIterator;
+}
+
+protected abstract Iterator<U> buildNewFibreIterator(S s);
+
+public boolean hasNext() {
+while(fibreIterator == null || !fibreIterator.hasNext()) {
+if(baseIterator.hasNext()) {
+

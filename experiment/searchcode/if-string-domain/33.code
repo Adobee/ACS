@@ -1,0 +1,9 @@
+public class DummyDomainManagerImpl implements DomainManager {
+
+private List<Domain> domains_;
+private List<String> initialDomains;
+@Override
+public void addDomain(Domain domain) {
+if (!domains_.contains(domain)) {
+domains_.add(domain);
+

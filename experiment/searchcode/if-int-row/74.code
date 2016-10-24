@@ -1,0 +1,12 @@
+return totalCount;
+}
+
+private void solve(int n, int row, int[] columnForRow) {
+if (n == row) {
+totalCount++;
+return;
+}
+for (int i = 0; i < n; i++) {
+columnForRow[row] = i;
+if (isValid(columnForRow, row)) {
+

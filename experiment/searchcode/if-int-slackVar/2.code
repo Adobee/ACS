@@ -1,0 +1,8 @@
+if (eqNum == phase1Row || eqNum == objectiveFunctionRow)
+continue;
+
+if (eq.slackVar != null) {
+eq.basicVarColumn = (variableCount + slackVariableCount + eq.artificialVar.getKey());
+} else if (eq.slackVar != null) {
+eq.basicVarColumn =(variableCount + eq.slackVar.getKey());
+

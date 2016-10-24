@@ -1,0 +1,8 @@
+package com.crazykid.junior;
+
+public class Kata11 {
+public Double calculate(int factor) {
+private void handleException(int factor) {
+if (factor < 1) {
+throw  new IllegalArgumentException(&quot;The factor be must greeter than zero&quot;);
+

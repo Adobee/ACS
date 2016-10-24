@@ -1,0 +1,10 @@
+public boolean contains(SearchTreeNode tmp) {
+
+SearchTreeNode tmp1 = first;
+while (tmp1 != null) {
+if (tmp1.equals(tmp)) {
+public SearchTreeNode getNode(SearchTreeNode tmp) {
+SearchTreeNode tmp1 = first;
+while (tmp1 != null) {
+if (tmp1.equals(tmp)) {
+

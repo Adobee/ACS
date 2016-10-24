@@ -1,0 +1,13 @@
+public class OutputReference implements Iterable<OwsCode> {
+
+private final JobId jobId;
+private final Chain<OwsCode> outputId;
+
+public OutputReference(JobId jobId, Chain<OwsCode> outputId) {
+return Objects.hash(this.jobId, this.outputId);
+}
+
+@Override
+public boolean equals(Object obj) {
+if (this == obj) {
+

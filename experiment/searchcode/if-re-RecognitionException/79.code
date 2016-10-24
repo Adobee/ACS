@@ -1,0 +1,11 @@
+public class RubricCompilationException extends RubricException
+{
+private static final long serialVersionUID = 1L;
+
+protected RecognitionException re;
+
+public RubricCompilationException (RecognitionException re, String message)
+{
+super( message );
+this.re = re;
+

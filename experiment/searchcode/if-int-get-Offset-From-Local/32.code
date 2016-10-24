@@ -1,0 +1,11 @@
+public int getHeight() {
+return blocks.length;
+}
+
+public int getLocalX(int blockX) {
+return blockX - topLeftX;
+if (localY < 0) {
+growY = 1;
+offsetY = 1;
+} else if (localY >= getHeight()) {
+

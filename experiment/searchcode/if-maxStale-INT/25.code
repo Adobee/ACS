@@ -1,0 +1,8 @@
+public Response intercept(Chain chain) throws IOException {
+
+Request request = chain.request();
+if (!CommonUtils.isNetWorkConnected(context)) {
+Response originalResponse = chain.proceed(request);
+if (CommonUtils.isNetWorkConnected(context)) {
+int maxAge = 60; // 在线缓存在1分钟内可读取
+

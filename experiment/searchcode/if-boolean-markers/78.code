@@ -1,0 +1,14 @@
+this.markers = markers;
+}
+
+public boolean addMarker(E marker) {
+if (markers == null) {
+this.markers = new ArrayList<E>();
+}
+
+if (markers.contains(marker))
+return false;
+
+markers.add(marker);
+return true;
+

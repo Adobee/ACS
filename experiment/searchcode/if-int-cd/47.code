@@ -1,0 +1,10 @@
+return depSearch(root,0);
+}
+
+private int depSearch(TreeNode t, int cd){
+if(t == null)
+return cd;
+else{
+int l = depSearch(t.left, cd+1);
+int r = depSearch(t.right, cd+1);
+

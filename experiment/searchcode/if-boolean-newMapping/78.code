@@ -1,0 +1,7 @@
+public NotificationChain basicSetMapping(Mapping newMapping, NotificationChain msgs) {
+Mapping oldMapping = mapping;
+mapping = newMapping;
+if (eNotificationRequired()) {
+ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, PccsPackage.PRECEDENCE_OPERATOR__MAPPING, oldMapping, newMapping);
+if (msgs == null) msgs = notification; else msgs.add(notification);
+

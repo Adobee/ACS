@@ -1,0 +1,9 @@
+StateEnum currentState = stateControllerManager.getCurrentState();
+UserActionEnum action = keyboardActionMapping.get(key.getKeyCode());
+if(action != null) {
+keyboardActionMapping.put(KeyEvent.VK_OPEN_BRACKET, UserActionEnum.None);
+}
+
+public void removeKeyAction(KeyEvent key) {
+if (keyboardActionMapping.get(key) != null) {
+

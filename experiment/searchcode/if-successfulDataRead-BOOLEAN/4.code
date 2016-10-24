@@ -1,0 +1,5 @@
+QueryEnum query = QueryEnumHelper.getQueryForId(loader.getId(), mModel.getQueries());
+boolean successfulDataRead = mModel.readDataFromCursor(data, query);
+if (successfulDataRead) {
+mUpdatableView.displayData(mModel, query);
+

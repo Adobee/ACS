@@ -1,0 +1,9 @@
+int[] B = new int[2];
+int aBegin = 0;
+int bBegin = 0;
+int[] temp = new int[A.length];
+int tBegin = 0;
+while(aBegin < A.length &amp;&amp; bBegin < B.length){
+if(A[aBegin] <= B[bBegin])
+temp[tBegin++] = A[aBegin++];
+

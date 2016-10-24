@@ -1,0 +1,7 @@
+protected boolean doCommand(Player player, PlayerController state, Command cmd, String[] args) {
+
+if (args.length == 1) {
+NamedDestination dest = plugin.dataStore.findWarpForPlayerByName(player, name);
+if (dest != null) {
+if (dest.name.equalsIgnoreCase(name)) {
+

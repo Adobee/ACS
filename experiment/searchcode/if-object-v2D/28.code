@@ -1,0 +1,16 @@
+@Override
+public void move(V2d v) {
+v1 = v1.sum(v);
+v2 = v2.sum(v);
+}
+
+@Override
+public double getPerim() {
+return new V2d(v1,v2).module();
+}
+
+@Override
+public boolean contains(P2d p){
+/*
+V2d v = new V2d(v2.getX()-v1.getX(),v2.getY()-v1.getY());
+

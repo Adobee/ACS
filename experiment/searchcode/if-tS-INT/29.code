@@ -1,0 +1,12 @@
+for ( int l=1; l<=n; l++ ) {
+if ( ts[l][1] == 0 ) {
+dfs(l,M);
+}
+}
+for ( int i=1; i<=n; i++ ) {
+static void dfs(int v, int[][] m) {
+if ( ts[v][0] == 0 ) {
+ts[v][0] = ++time;
+}
+for ( int i=1; i<m.length; i++) {
+

@@ -1,0 +1,7 @@
+public class ConjunctionUpdateDecision implements UpdateDecision{
+
+private UpdateDecision[] updateDecisions;
+for(UpdateDecision particular : updateDecisions){
+if(!particular.doUpdate(docs, relevantDocs)){
+return false;
+

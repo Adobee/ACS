@@ -1,0 +1,12 @@
+package com.sun.enterprise.universal.process;
+
+import java.io.*;
+import java.util.*;
+
+/**
+* If you don&#39;t drain a process&#39; stdout and stderr it will cause a deadlock after a few hundred bytes of output.
+private ProcessStreamDrainer(String processName, Process process, boolean redirect, boolean save)
+{
+if(process == null)
+throw new NullPointerException(&quot;Internal Error: null Process object&quot;);
+

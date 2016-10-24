@@ -1,0 +1,10 @@
+private double getDisplacement(Kinematic kinemat, double vI, double vF, double acc, double disp, double time) {
+double solve = 0;
+if (kinemat == Kinematic.VFIAX) {
+if (vI != 0 &amp;&amp; acc == 0 &amp;&amp; time != 0) {
+solve = vI * time + 0.5 * acc * Math.pow(time, 2);
+}
+}
+if (Double.isNaN(solve)) {
+JOptionPane.showMessageDialog(null, &quot;Your givens produced a non real answer. Are you missing a negative?&quot;, &quot;Non-Real Answer&quot;, JOptionPane.ERROR_MESSAGE);
+

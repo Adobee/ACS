@@ -1,0 +1,12 @@
+public static String ATTR_SELECTED_RELATIONSHIP = &quot;selectedRelationship&quot;;
+
+private boolean highlightRelationship;
+
+
+public RelationshipController(PersistenceContext context) {
+super(context, PersistenceUtil.getAllQuery(context.getEntityManager(), Relationship.class));
+}
+
+public boolean isHighlightRelationship() {
+return highlightRelationship;
+

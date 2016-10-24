@@ -1,0 +1,21 @@
+public class Mean extends Statistic {
+
+public Mean(StatisticRange range) {
+super(range, &quot;mean&quot;);
+}
+
+public double transform(List<Double> values) {
+double numElements = values.size();
+
+for (Double value: values)
+{
+sum += value;
+}
+
+if (numElements > 0)
+mean = sum/numElements;
+
+return mean;
+}
+}
+

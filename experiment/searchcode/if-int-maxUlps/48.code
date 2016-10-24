@@ -1,0 +1,8 @@
+public boolean equals3(Mat4 other) {
+return equals3(other, 2);
+}
+
+public boolean equals3(Mat4 other, int maxUlps) {
+public boolean equals(Mat4 other, int maxUlps) {
+if (!glm.compareFloatEquals(m00, other.m00, maxUlps)) {
+

@@ -1,0 +1,10 @@
+/*     */   protected boolean isObsolete(SnmpCachedData paramSnmpCachedData)
+/*     */   {
+/*  65 */     if (paramSnmpCachedData == null) return true;
+/*  67 */     return System.currentTimeMillis() - paramSnmpCachedData.lastUpdated > this.validity;
+/*     */   }
+/*     */
+/*     */   protected SnmpCachedData getCachedDatas()
+/*     */   {
+/*  77 */     if (this.datas == null) return null;
+

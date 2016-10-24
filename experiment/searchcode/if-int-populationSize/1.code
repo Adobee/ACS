@@ -1,0 +1,7 @@
+public double[][] initialize(int populationSize, int numberOfObjectives) {
+if (numberOfObjectives <= 1) {
+throw new IllegalArgumentException(&quot;This number of objectives is invalid. Need to be > 1&quot;);
+for (int i = 0; i < populationSize; i++) {
+if (numberOfObjectives == 2) {
+double[] weight = new double[2];
+

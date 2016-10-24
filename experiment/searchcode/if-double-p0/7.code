@@ -1,0 +1,14 @@
+double[][] u3;
+double[][] u4;
+
+public Ray(Coord p0, Coord u){
+p0C = p0;
+uC = u;
+p03 = p0.toArray3D();
+p04 = p0.toArray();
+u3 = u.toArray3D();
+u4 = u.toArray();
+}
+
+public Ray(double[][] p0, double[][] u){
+

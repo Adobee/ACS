@@ -1,0 +1,9 @@
+public static long countTriplets(int minx, int maxx, int miny, int maxy, int minz, int maxz)
+{
+long res = 0;
+int limit = (int)Math.sqrt(maxz);
+int limit2 = (int)Math.sqrt(minz);
+for(int i = limit2; i<=limit; i++){
+if(i<=maxx &amp;&amp; i>=minx){
+res+=Math.min(maxz/i, maxy)-Math.max(minz/i, miny)+1;
+

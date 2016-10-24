@@ -1,0 +1,11 @@
+for (int k = 0; k < Math.max(nct, nrt); k++) {
+if (k < nct) {
+
+// Compute the transformation for the k-th column and
+U[i][k] = A.get(i, k);
+}
+}
+if (k < nrt) {
+
+// Compute the k-th row transformation and place the
+

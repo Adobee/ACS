@@ -1,0 +1,10 @@
+int fromMonth = Integer.parseInt(fromPart[1]);
+int tillMonth = Integer.parseInt(tillPart[1]);
+int fromYear = Integer.parseInt(fromPart[2]);
+tillYear--;
+}
+
+fromMonth = Integer.parseInt(fromPart[1]);
+
+if ((((fromYear % 4 == 0) &amp;&amp; (fromYear % 100 != 0)) || (fromYear % 400 == 0)) &amp;&amp; (fromMonth < 3 &amp;&amp; fromDay < 30))
+

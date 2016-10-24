@@ -1,0 +1,12 @@
+System.out.println(myPow(0.01, -2147483647));
+}
+
+public static double myPow(double x, int n) {
+if (x == 1) return 1.0;
+else if (x == -1) return n % 2 == 1 ? -1.0 : 1.0;
+double res = 1.0;
+long nn = n;
+if (nn < 0)
+nn = -nn;
+while (nn != 0) {
+

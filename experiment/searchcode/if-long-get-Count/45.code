@@ -1,0 +1,16 @@
+public V acquire(K key) {
+V count = get(key);
+if (count == null) {
+V newCount = newCount();
+count = putIfAbsent(key, newCount);
+count.incrementAndGet();
+return count;
+}
+
+public void release(K key, V count) {
+if (count.decrementAndGet() == 0) {
+remove(key, Count.ZERO);
+}
+}
+}
+

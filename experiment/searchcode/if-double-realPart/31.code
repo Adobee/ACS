@@ -1,0 +1,7 @@
+if (!imagpart.realp())
+return type_error(imagpart, Symbol.REAL);
+if (realpart instanceof DoubleFloat)
+else if (imagpart instanceof DoubleFloat)
+realpart = DoubleFloat.coerceToFloat(realpart);
+else if (realpart instanceof SingleFloat)
+

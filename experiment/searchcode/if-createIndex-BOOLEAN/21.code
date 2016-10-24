@@ -1,0 +1,5 @@
+private static void createIndex(Connection conn, String indexName, String table, String column, boolean unique) throws SQLException
+{
+createIndex(conn, indexName, table, new String[] { column }, unique, null);
+private static void createIndex(Connection conn, String indexName, String table, String[] columns, boolean unique, String method) throws SQLException
+

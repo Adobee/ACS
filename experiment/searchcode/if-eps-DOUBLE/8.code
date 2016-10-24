@@ -1,0 +1,12 @@
+return x*x-1.501*x+0.5005;
+}
+public static double bisection(double a,double b,double eps){
+double fa=f(a);
+double fb=f(b);
+double c=(a+b)/2;
+double fc=f(c);
+if(Math.abs(c-a)<eps)
+{return c;}
+if(fa*fc<0){
+return bisection(a,c,eps);
+

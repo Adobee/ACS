@@ -1,0 +1,14 @@
+package glaze.client.handlers;
+
+import glaze.client.Response;
+
+import java.io.IOException;
+
+
+import org.apache.http.HttpResponse;
+public Response handleResponse(HttpResponse httpResponse) throws ClientProtocolException, IOException
+{
+Response response = new Response(httpResponse);
+if (response.isError()) {
+try {
+

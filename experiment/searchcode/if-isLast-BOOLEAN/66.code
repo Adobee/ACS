@@ -1,0 +1,8 @@
+void collectAndJoinAsyncTasks(boolean isLast) {
+if (isLast &amp;&amp; !isCompleting.compareAndSet(false, true)) {
+log.warnf(&quot;Already completing the cache %s&quot;, getName());
+futures.add(future);
+
+boolean isLast = completionCondition.map(f -> f.test(arg0, arg1)).orElse(false);
+if (isLast)
+

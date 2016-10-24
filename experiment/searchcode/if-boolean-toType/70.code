@@ -1,0 +1,9 @@
+public class Util {
+public static boolean assignable(IType fromType, IType toType) {
+if( fromType.equals(toType) ) {
+return true;
+}
+
+try {
+return fromType.newSupertypeHierarchy(new NullProgressMonitor()).contains(toType);
+

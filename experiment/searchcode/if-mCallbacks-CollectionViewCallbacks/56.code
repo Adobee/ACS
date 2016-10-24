@@ -1,0 +1,10 @@
+private static final int BUILTIN_VIEWTYPE_COUNT = 1;
+
+private Inventory mInventory = new Inventory();
+private CollectionViewCallbacks mCallbacks = null;
+public void setCollectionAdapter(CollectionViewCallbacks adapter) {
+mCallbacks = adapter;
+}
+
+private void notifyAdapterDataSetChanged() {
+

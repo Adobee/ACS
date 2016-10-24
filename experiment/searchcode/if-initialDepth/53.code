@@ -1,0 +1,11 @@
+writer.close();
+} catch (IOException e) {
+if (writer != null) {
+try {
+} catch (IOException ignored) {}
+}
+}
+}
+
+private void writeBranch(Writer out, InstructionBranch branch, int initialDepth, int currDepth) throws IOException {
+

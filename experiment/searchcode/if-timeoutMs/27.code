@@ -1,0 +1,8 @@
+protected String paytitle = &quot;&quot;; //订单标题
+
+protected String paybody = &quot;&quot;; //订单内容描述
+
+protected int timeoutms = 10; //支付超时的分钟数
+if (this.timeoutms < 5) throw new RuntimeException(&quot;timeoutms cannot less 5 minutes&quot;);
+if (this.timeoutms > 24 * 60 ) throw new RuntimeException(&quot;timeoutms cannot greater 1 day&quot;);
+

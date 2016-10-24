@@ -1,0 +1,8 @@
+static double Hue2RGB(double v1, double v2, double vH)
+{
+if (vH < 0) vH += 1;
+if (vH > 1) vH -= 1;
+if (6.0 * vH < 1) return v1 + (v2 - v1) * 6.0 * vH;
+if (2.0 * vH < 1) return v2;
+if (3.0 * vH < 2) return v1 + (v2 - v1) * ((2.0 / 3.0) - vH) * 6.0;
+

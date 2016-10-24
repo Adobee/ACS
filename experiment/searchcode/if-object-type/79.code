@@ -1,0 +1,10 @@
+@SuppressWarnings(&quot;unchecked&quot;)
+public static <T> T adaptTo(Object object, Class<T> type) {
+if(object==null)
+return null;
+else
+if(object instanceof Adaptable)
+return adaptTo((Adaptable)object, type);
+else
+if(type.isInstance(object))
+

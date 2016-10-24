@@ -1,0 +1,11 @@
+public int convertRatingFromFiveStarScale(int value)
+{
+if(value < 0 || value > 5)
+return newValue;
+}
+
+public int convertRatingToFiveStarScale(int value)
+{
+int newValue=0;
+if (value<=0)
+

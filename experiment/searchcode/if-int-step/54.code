@@ -1,0 +1,9 @@
+int step = 1;
+for(int i=0; i<n; i++) {
+String str = s.substring(i,i+step);
+if(dict.contains(str)) {
+for(int i=0; i<=n-step; i++) {
+String tmp = s.substring(i, i+step);
+for(int j=i; j<i+step-1; j++) {
+if((f[i][j] == true &amp;&amp; f[j+1][i+step-1] == true) || dict.contains(tmp)) {
+

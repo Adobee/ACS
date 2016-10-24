@@ -1,0 +1,7 @@
+GitHubRepository gitHubRepository = push.getRepository();
+if (gitHubRepository == null) {
+logger.warn(&quot;Push with no repository section&quot;);
+Set<String> recipients = mailConfiguration.getRecipients(url);
+if (recipients == null || recipients.isEmpty()) {
+logger.info(&quot;No recipients for repository &quot; + url);
+

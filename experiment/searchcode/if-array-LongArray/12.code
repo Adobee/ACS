@@ -1,0 +1,9 @@
+import java.util.Objects;
+
+
+public class Util {
+public static <T> boolean startsWith(@Nonnull T[] longArray, @Nonnull T[] shortArray) {
+Objects.requireNonNull(longArray, &quot;longArray == null&quot;);
+Objects.requireNonNull(shortArray, &quot;shortArray == null&quot;);
+if (longArray.length < shortArray.length) return false;
+

@@ -1,0 +1,9 @@
+public static Object convert(Class<?> target, String s) {
+if (target.isAssignableFrom(String.class)) {
+return s;
+}
+else if (target.isAssignableFrom(Boolean.class)) {
+return Boolean.parseBoolean(s);
+}
+else if (target.isAssignableFrom(Byte.class)) {
+

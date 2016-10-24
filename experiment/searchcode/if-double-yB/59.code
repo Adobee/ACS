@@ -1,0 +1,12 @@
+import java.util.Scanner;
+
+class wiper_swipe {
+
+private static double xl, yb, xr, yt;
+private static double corner;
+else // bumps bottom (yb)
+return Math.asin(yb / length);
+}
+
+private static double left(double x, double y) {
+

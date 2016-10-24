@@ -1,0 +1,20 @@
+public class Drawable implements Comparable<Drawable> {
+
+public int layer = 0;
+
+public int getLayer() {
+return layer;
+}
+
+public void setLayer(int layer) {
+public int compareTo(Drawable o) {
+if (o.getLayer() > layer)
+return -1;
+else if (o.getLayer() < layer)
+return 1;
+else
+return 0;
+}
+
+}
+

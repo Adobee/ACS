@@ -1,0 +1,20 @@
+private int b;
+//private double result;
+
+public Rational(int a, int b) {
+this.a = a;
+this.b = b;
+reduce();
+}
+
+public int gcd(int a,int b) {
+if (b==0)
+return a;
+else {
+return gcd(b,a%b);
+}
+}
+
+
+public void reduce() {
+

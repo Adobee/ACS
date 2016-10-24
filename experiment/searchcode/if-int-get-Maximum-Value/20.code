@@ -1,0 +1,14 @@
+return (Integer) super.getMaximum();
+}
+
+
+public void spin(int steps) {
+int next = getSeason() + steps;
+
+if (next < getMinimum())
+next = getMinimum();
+else if (next > getMaximum())
+next = getMaximum();
+
+setValue(next);
+

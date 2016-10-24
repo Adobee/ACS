@@ -1,0 +1,9 @@
+import main.core.filter.Model;
+
+public class C5_Filter extends AbstractFilter {
+
+private static final Pattern C5_ORofLITERALS_OR_DEFAULTS_OR_RANGES = Pattern.compile(
+@Override
+public boolean accepts(String rawPattern, FeatureCount featureCount) {
+if (featureCount.featureSetSubsumes(requiredFeatures())) {
+

@@ -1,0 +1,11 @@
+private final int numberOfParts;
+//线程构造方法，根据起始点和计算数量
+public ConcurrentPrimeFinder(final int thePoolSize,final int theNumberOfParts) {
+int lower = (i * chunksPerPartition) + 1;
+int upper;
+if(i == numberOfParts - 1){
+upper=number;
+}
+else{
+upper=lower+ chunksPerPartition - 1;
+

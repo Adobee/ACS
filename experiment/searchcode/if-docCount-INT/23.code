@@ -1,0 +1,8 @@
+this.maxDocCount = index.getDataMap().size();
+}
+
+public void ensurePolicy() {
+int docCount = index.getDataMap().size();
+int newSegmentVesrion = docCount / mergeFactor;
+if(docCount % mergeFactor == 0) {
+

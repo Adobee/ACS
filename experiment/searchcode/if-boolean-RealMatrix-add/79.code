@@ -1,0 +1,11 @@
+double[] P;
+double[][] X;
+double[] B;
+boolean intercept;
+double tolerance = 0.0000001;
+int max_iteration = 50;
+RealMatrix Matrix_XT_W = Matrix_XT.multiply(Matrix_W);
+RealMatrix Matrix_XT_W_X = Matrix_XT_W.multiply(Matrix_X);
+if(Matrix_XT_W_X.isSingular()) {
+System.err.println(&quot;covariate matrix is singular.&quot;);
+

@@ -1,0 +1,9 @@
+public static Criteria getCriteria(Criteria crit, SearchParameters params, boolean onlyCount, String sortProperty,
+SortOrderEnum sortDir) {
+
+if (onlyCount) {
+crit.setProjection(Projections.rowCount());
+}
+
+if (!onlyCount &amp;&amp; sortDir != null &amp;&amp; StringUtils.isNotBlank(sortProperty)) {
+

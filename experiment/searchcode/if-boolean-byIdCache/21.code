@@ -1,0 +1,12 @@
+this.realm = accountMapper;
+}
+
+/**
+* True if user identified by this external identity string has an account.
+*/
+public boolean exists(final String externalId) throws AccountException {
+final Account account = db.accounts().get(extId.getAccountId());
+boolean updateAccount = false;
+if (account == null) {
+throw new AccountException(&quot;Account has been deleted&quot;);
+

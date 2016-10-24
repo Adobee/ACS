@@ -1,0 +1,10 @@
+public void CLRV() writes R {
+for (int i = 0; i < Constants.NDIM; ++i)
+elts[i] = 0.0;
+}
+
+public void UNITV(int coord) writes R {
+public <region Rv>boolean EQUAL(Vector<Rv> v) reads Rv, R {
+for (int i = 0; i < Constants.NDIM; ++i)
+if (elts[i] != v.elts[i]) return false;
+

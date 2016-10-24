@@ -1,0 +1,7 @@
+*	Limitations: no range can span more than 24 hours, but it can span across a day
+*	(this is indicated when the end time is before the start time)
+*	if the end time is equal to the start time, it is a range of 24 hours
+Range current = getCurrentRange();
+if (current != null) {
+int minutes = current.minutesUntilStart(now);
+

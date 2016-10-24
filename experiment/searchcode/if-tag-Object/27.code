@@ -1,0 +1,7 @@
+public class PostTagParser extends MatjiDataParser {
+public PostTag getMatjiData(JsonObject object) throws MatjiException {
+if (object == null) return null;
+
+PostTag postTag = new PostTag();
+postTag.setId(getInt(object, &quot;id&quot;));
+

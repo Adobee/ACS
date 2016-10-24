@@ -1,0 +1,10 @@
+public final MiruStreamId streamId;
+public final MiruFilter filter;
+
+@JsonCreator
+public MiruReadEvent(
+if (filter != null ? !filter.equals(that.filter) : that.filter != null) {
+return false;
+}
+if (streamId != null ? !streamId.equals(that.streamId) : that.streamId != null) {
+

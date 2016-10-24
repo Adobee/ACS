@@ -1,0 +1,9 @@
+public final static void is_false( boolean expression )
+{	if( expression )
+throw( new Assert.Failed() );
+}
+
+public final static void is_true( boolean expression, String message)
+{	if( !expression )
+throw( new Assert.Failed(message) );
+

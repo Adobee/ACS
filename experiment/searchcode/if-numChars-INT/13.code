@@ -1,0 +1,12 @@
+int result = read(buf,0,1);
+if (result == -1) return -1;
+else return (int)buf[0];
+
+}
+
+public int read (char[] buf, int from, int len) throws IOException{
+numchars=in.read(buf , from, len);
+if ( numchars==-1) return -1;
+int last = from;
+for(int i = from; i<from+numchars; i++){
+

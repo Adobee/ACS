@@ -1,0 +1,6 @@
+for (int i = tableau.getNumObjectiveFunctions(); i < tableau.getWidth() - 1; i++) {
+if (MathUtils.compareTo(tableau.getEntry(0, i), minValue, epsilon) < 0) {
+// set the rest of the pivot column to 0
+for (int i = 0; i < tableau.getHeight(); i++) {
+if (i != pivotRow) {
+

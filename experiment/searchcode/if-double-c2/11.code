@@ -1,0 +1,13 @@
+private Double R1_IE_C3;
+
+private Double R1_IF_C1;
+private Double R1_IF_C2;
+private Double R1_IF_C3;
+private Double R3_ID_C2;
+
+private Double R3_IE_C1;
+private Double R3_IE_C2;
+
+private Double R3_IF_C1;
+private Double R3_IF_C2;
+

@@ -1,0 +1,10 @@
+final static Form<Goal> goalForm = Form.form(Goal.class);
+
+public static Result list() {
+try {
+if (goal == null) {
+public static Result save() {
+Form<Goal> form = goalForm.bindFromRequest();
+if (form.hasErrors()) {
+return badRequest(views.html.goals.create.render(form));
+

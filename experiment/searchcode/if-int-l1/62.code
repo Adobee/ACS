@@ -1,0 +1,7 @@
+public  void CommmonElem(List l1, List l2){
+if(l1.size() >= l2.size()){
+for(int i = 0; i < l1.size(); i++){
+for(int j = 0; j < l2.size(); j++){
+if(l1.get(i) == l2.get(j)){
+System.out.print(l1.get(i));
+

@@ -1,0 +1,8 @@
+// Coefficients : lorsque Conso est utilisé, l&#39;attaque globale de l&#39;utilisateur est multipliée par Conso._coeffAttaque (idem pour les 2 autres)
+private double _coeffAttaque;
+private double _coeffDefense;
+private double _coeffVitesse;
+
+// Constructeur
+public Consommable(String nom, int prix, int masse, String url, int modifHp, int modifM, double coeffA, double coeffD, double coeffV) {
+

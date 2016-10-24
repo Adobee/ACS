@@ -1,0 +1,7 @@
+return toStream(buildPath()).collect(joining(&quot;.&quot;));
+}
+
+default List<String> buildPath() {
+final List<String> pathSegments = new ArrayList<>();
+Optional.ofNullable(getParent()).ifPresent(p -> pathSegments.addAll(p.buildPath()));
+

@@ -1,0 +1,6 @@
+class NumericEntityEscaper extends CodePointTranslator {
+
+private final int below;
+private final int above;
+public static NumericEntityEscaper outsideOf(final int codepointLow, final int codepointHigh) {
+

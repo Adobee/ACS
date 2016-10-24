@@ -1,0 +1,7 @@
+import ch.ubx.startlist.server.FlightEntryDAOobjectify2;
+import ch.ubx.startlist.shared.FeFlightEntry;
+public static void migrate() {
+int cnt = 0;
+List<FlightEntry> flightEntries = dao.listflightEntry();
+log.log(Level.INFO, &quot;FlightEntry read: &quot; + flightEntries.size());
+

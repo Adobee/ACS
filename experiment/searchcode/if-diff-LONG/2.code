@@ -1,0 +1,9 @@
+public static String dateDiff(Date start, Date end){
+
+
+
+long diffInSeconds = (end.getTime() - start.getTime()) / 1000;
+
+long diff[] = new long[] { 0, 0, 0, 0 };
+/* sec */diff[3] = (diffInSeconds >= 60 ? diffInSeconds % 60 : diffInSeconds);
+

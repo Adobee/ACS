@@ -1,0 +1,10 @@
+public RealVector getEigenvector(final int i)
+throws InvalidMatrixException, ArrayIndexOutOfBoundsException {
+if (eigenvectors == null) {
+throw new SingularMatrixException();
+}
+
+final int m = realEigenvalues.length;
+if (b.length != m) {
+throw MathRuntimeException.createIllegalArgumentException(
+

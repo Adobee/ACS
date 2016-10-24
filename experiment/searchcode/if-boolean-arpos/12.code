@@ -1,0 +1,9 @@
+* Does NOT consider backoff parameters.
+*/
+@Override
+public boolean equals(Object o) {
+if (!(o instanceof Parameters)) {
+} else if(isBoolean(key)) {
+copy.set(key, getBoolean(key));
+} else if(isString(key)) {
+

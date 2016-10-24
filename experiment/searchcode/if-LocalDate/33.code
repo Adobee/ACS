@@ -1,0 +1,13 @@
+public class LocalDateAdapter extends XmlAdapter<String, LocalDate>{
+
+@Override
+public LocalDate unmarshal(String v) throws Exception {
+if (v != null)
+public String marshal(LocalDate v) throws Exception {
+if (v != null)
+return v.toString();
+
+return null;
+}
+}
+

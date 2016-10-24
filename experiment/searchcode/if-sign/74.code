@@ -1,0 +1,12 @@
+SignType lookFor = SignType.valueOf(type);
+//If the sign is not of a type we care about, reject the process.
+if (lookFor == null) return false;
+break;
+}
+return false;
+}
+
+@Override
+public void removeSign(String signName) {
+if (this.signs.containsKey(signName)) {
+

@@ -1,0 +1,12 @@
+private String name;
+private long timeSpent = 0;
+private long startTime = 0;
+
+public SumTimer(String name) {
+this.name = name;
+}
+
+public void start() {
+if (startTime != 0) {
+throw new IllegalStateException();
+

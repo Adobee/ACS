@@ -1,0 +1,9 @@
+private int max = 0xfffff;//默认最大1m
+
+public MessageDecode(int maxInputLength) {
+max = maxInputLength;
+public void channelRead(ChannelHandlerContext ctx, Object msg) throws Exception {
+ByteBuf in = (ByteBuf) msg;
+if(in.readableBytes() < 4) {
+return;
+

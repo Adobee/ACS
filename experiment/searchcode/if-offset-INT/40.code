@@ -1,0 +1,10 @@
+static void selectionSort(int[] a) {
+
+int tmp_max, tmp_min;
+for (int i = 0; i < a.length / 2; i++) {
+int offset_min = i;
+int offset_max = a.length - i - 1;
+
+for (int j = i; j < a.length - i - 1; j++) {
+if (a[offset_min] > a[j]) {
+

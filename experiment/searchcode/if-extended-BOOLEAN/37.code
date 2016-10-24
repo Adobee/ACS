@@ -1,0 +1,10 @@
+package org.zend.webapi.core.connection.data;
+
+public class VhostExtendedInfo  extends AbstractResponseData {
+super(ResponseType.VHOST_EXTENDED_INFO, prefix, VHOST_EXTENDED_INFO);
+}
+
+@Override
+public boolean accept(IResponseDataVisitor visitor) {
+if (visitor.preVisit(this)) {
+

@@ -1,0 +1,6 @@
+public void shouldReturnHttpMethod() {
+Assert.assertEquals(HttpMethod._GET, HttpMethod.getMethod(&quot;get&quot;));
+public void shouldReturNullIfItsAnInvalidMethod() {
+Assert.assertNull(HttpMethod.getMethod(&quot;some&quot;));
+Assert.assertNull(HttpMethod.getMethod(&quot;invalid&quot;));
+

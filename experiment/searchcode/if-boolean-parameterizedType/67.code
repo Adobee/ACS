@@ -1,0 +1,18 @@
+private Class getTargetClass()
+{
+if (isList())
+{
+return (Class)((ParameterizedType)type).getActualTypeArguments()[0];
+return (Class)type;
+}
+}
+
+private boolean isList()
+{
+return type instanceof ParameterizedType;
+}
+
+
+
+}
+

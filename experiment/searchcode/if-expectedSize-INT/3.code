@@ -1,0 +1,11 @@
+public class HasLengthOfArray<T> implements PropertyExpectation<T[]> {
+
+private final int expectedSize;
+
+public HasLengthOfArray(final int expectedSize) {
+this.expectedSize = expectedSize;
+}
+
+@Override
+public boolean matches(final T[] actual) {
+

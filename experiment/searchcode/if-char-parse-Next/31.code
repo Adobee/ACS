@@ -1,0 +1,10 @@
+/* Marked section close.*/
+nextCharNoEof();
+if( currentChar != &#39;>&#39; ) {
+throw new ParseException( ParseException.Error.EXPECTED_GT_HERE );
+throw new ParseException( ParseException.Error.EXPECTED_OB_HERE );
+}
+while( true ) {
+nextCharNoEof();
+if( currentChar == &#39;]&#39; ) {
+

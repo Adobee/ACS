@@ -1,0 +1,16 @@
+probFirst(1, 3, 3, 7);
+}
+
+public static double probFirst(int len1, int len2, int p1, int p2) {
+
+double a1 = 0;
+double a2 = 0;
+//a1 /= 1000;
+//a2 /= 1000;
+
+boolean swap = a2 > a1;
+double prob  = 0.0;
+
+if (swap) {
+double tmp = a1;
+

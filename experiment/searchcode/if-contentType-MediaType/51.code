@@ -1,0 +1,6 @@
+public static RequestData create(MediaType contentType, String content) {
+Charset charset = Utils.UTF_8;
+if (contentType != null) {
+charset = contentType.charset();
+if (charset == null) {
+

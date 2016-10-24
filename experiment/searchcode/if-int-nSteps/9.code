@@ -1,0 +1,11 @@
+public class MoveStepsCard extends Card {
+private int nSteps;
+
+/**
+* Constructor for creating a new card.
+* @param description Description of the card
+* @param nSteps number of steps which the player has to move
+*/
+public MoveStepsCard (String description, CardDeck deck, int nSteps){
+this.description = description;
+

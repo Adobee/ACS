@@ -1,0 +1,10 @@
+package org.tinyas.protocol.simple;
+
+import org.tinyas.protocol.CallMethodProtocol;
+import org.tinyas.protocol.GetBeanProtocol;
+private static SimpleProtocolFactory instance;
+
+public static SimpleProtocolFactory instance() {
+if(instance == null) {
+instance = new SimpleProtocolFactory();
+

@@ -1,0 +1,9 @@
+public boolean consume(int id) {
+if (_consumed.get()) return NO;
+_consumed.set(_item.getItemId() == id);
+return _consumed.get();
+}
+
+public boolean consume(MenuItem item) {
+if (no(item)) return NO;
+

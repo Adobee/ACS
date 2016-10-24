@@ -1,0 +1,7 @@
+private OptionalInt maximumSize;
+
+public Hand(Comparator<Card> comparator, OptionalInt maximumSize) {
+public Hand addCard(Card card) {
+if (maximumSize.isPresent()) {
+if (maximumSize.getAsInt() <= cards.size()) {
+

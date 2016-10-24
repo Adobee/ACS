@@ -1,0 +1,12 @@
+private static Map<String, HypervisorType> types = Collections.synchronizedMap(new HashMap<String, HypervisorType>());
+private final String typeName;
+private boolean exposed = true;
+
+public HypervisorType(String typeName) {
+types.put(typeName, this);
+}
+
+public HypervisorType(String typeName, boolean exposed) {
+this(typeName);
+this.exposed = exposed;
+

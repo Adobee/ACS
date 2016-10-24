@@ -1,0 +1,9 @@
+public abstract class SeekableInputStream extends InputStream {
+public abstract void seek(long pos) throws IOException;
+public abstract int peek() throws IOException;
+int toRead = bb.remaining();
+byte[] buffer = new byte[toRead];
+int readCount = read(buffer);
+if(readCount > 0)
+bb.put(buffer, 0, readCount);
+

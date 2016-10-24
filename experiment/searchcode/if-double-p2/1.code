@@ -1,0 +1,16 @@
+p2[0] = x2;
+p2[1] = y2;
+}
+
+public void adjust()
+{
+if(p1[0] > p2[0])
+{
+double swap = p1[0];
+p1[0] = p2[0];
+p2[0] = swap;
+}
+if(p1[1] > p2[1])
+{
+double swap = p1[1];
+

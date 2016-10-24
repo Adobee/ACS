@@ -1,0 +1,8 @@
+public boolean EvenHillCheck(int x, int y) {
+boolean free = true;
+for (int i = 0; i < 7; i++) {
+if (map[x + i][y] != &#39;.&#39;) {
+for (int i = 0; i < 8; i++) {
+if (map[x - 1 + i][y + 1] != &#39;.&#39;) {
+free = false;
+

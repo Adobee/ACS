@@ -1,0 +1,11 @@
+// Desnormalizamos el valor de r
+if (rNormalized)
+r = r * GenericMath.std(u);
+
+for (int m=dim; m < dim+2; m++){
+phi[m-dim] =  getPhi(u, m, r);
+for (int row = 0; row < nRows; row++) {
+float aDiff = Math.abs(x[row][iColumn] - x[row][j]);
+if (aDiff > d) {
+d = aDiff;
+

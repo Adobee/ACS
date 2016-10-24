@@ -1,0 +1,16 @@
+int intVersion;
+String version;
+String path;
+Date date;
+boolean bugged = false;
+int stream;
+
+public String getVersion() {
+return version + &quot; (&quot; + dateFormat.format(date) + &quot;)&quot;;
+}
+
+@Override
+public int compareTo(Version o) {
+if (o.intVersion > intVersion) return -1;
+if (intVersion > o.intVersion) return 1;
+

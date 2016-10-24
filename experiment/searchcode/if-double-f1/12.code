@@ -1,0 +1,13 @@
+public class NumberUtil {
+
+
+/**
+* 精确到小数点后两位
+* @param f1
+* @return
+*/
+public static Object setScale(Double f1){
+public static Object setScale(Double f1,int seed){
+if(f1 != null){
+BigDecimal b = new BigDecimal(f1);
+

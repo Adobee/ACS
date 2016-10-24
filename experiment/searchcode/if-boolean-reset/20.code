@@ -1,0 +1,17 @@
+* Adds value to DebouncedBoolean
+* @param in New value
+*/
+public void feed(boolean in) {
+if(state) {
+state = in;
+}else if(in) {
+if(count > length) {
+state = true;
+}else {
+count++;
+}
+}
+
+if(!in) {
+reset();
+

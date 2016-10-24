@@ -1,0 +1,8 @@
+public class ZeroCouponBond extends Product {
+private double principal;
+
+public ZeroCouponBond(double principal, double maturity) {
+@Override
+public double cashflow(double shortRate, double lowerLimit, double upperLimit) {
+if (lowerLimit<maturity &amp;&amp; maturity<=upperLimit) return principal;
+

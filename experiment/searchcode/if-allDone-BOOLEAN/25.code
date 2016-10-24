@@ -1,0 +1,10 @@
+public boolean startScanFeaturesAt(DataSequence data, int prevPos, int pos) {
+ctr.clear();
+allDone = false;
+if (pos < histsize)
+allDone = true;
+return allDone;
+}
+public boolean hasNext() {
+return (histsize > 1) &amp;&amp; !allDone;
+

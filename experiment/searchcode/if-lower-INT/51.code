@@ -1,0 +1,10 @@
+return rbhelper(n,0,L.length-1,L);
+}
+
+public int rbhelper(int n, int Li,int Hi,int[] L){//Lower index, Higher index
+int upper = L.length - 1;
+int avg = (lower+upper/2);
+while (avg != lower &amp;&amp; lower != upper){
+if (n == L[avg]){
+return avg;
+

@@ -1,0 +1,8 @@
+public class SignalPropagator3 implements Propagator1d, SwitchListener {
+boolean switchClosed;
+Propagator1d open;
+Propagator1d closed;
+
+public SignalPropagator3( Propagator1d open, Propagator1d closed, boolean switchClosed ) {
+this.switchClosed = switchClosed;
+

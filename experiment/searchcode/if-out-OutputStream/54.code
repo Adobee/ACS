@@ -1,0 +1,13 @@
+private OutputStream out;
+
+public BitOutputStream(OutputStream outputstream)
+{
+bit_count = 0;
+out = outputstream;
+}
+
+public void close()
+throws IOException
+{
+if(bit_count > 0)
+

@@ -1,0 +1,10 @@
+import java.util.function.Function;
+
+public class Try<T> {
+private final T success;
+private final Throwable failure;
+
+private Try(T success, Throwable failure) {
+this.success = success;
+this.failure = failure;
+

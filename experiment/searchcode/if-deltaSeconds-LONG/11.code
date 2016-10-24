@@ -1,0 +1,10 @@
+Date now = new Date();
+
+long deltaSeconds = (now.getTime() - timestamp.getTime()) / 1000;
+
+if (deltaSeconds < 0)
+if (deltaSeconds < 60*60) {
+long deltaMinutes = deltaSeconds / 60;
+if (deltaMinutes < 5) {
+return Math.round(deltaMinutes) + &quot; min. ago&quot;;
+

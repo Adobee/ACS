@@ -1,0 +1,8 @@
+public static double calculateSmoothAccelerationThreshold(double grade_mean, double current_grade)	{
+
+double dG = current_grade - grade_mean;
+double threshold;
+
+if (current_grade >= 0)
+threshold = 0.045 * (current_grade - grade_mean) + 0.0005 * current_grade + VehicleState.SMOOTH_ACC_THRESHOLD;
+

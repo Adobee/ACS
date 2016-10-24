@@ -1,0 +1,7 @@
+public void testCreatePopulation() {
+Random.seed();
+for (int i = 0; i < 500; i++) {
+int populationSize = 0;
+while (populationSize < 2 || populationSize % 2 != 0) {
+populationSize = Random.nextInt(51);
+

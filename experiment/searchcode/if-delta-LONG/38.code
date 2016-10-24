@@ -1,0 +1,10 @@
+import com.koutra.koutralib.domain.IKDelta;
+
+public class MemoryDeltaSys extends DeltaSys {
+
+private Map<Long, IKDelta> deltaMap = new HashMap<Long, IKDelta>();
+
+@Override
+public void addDelta(IKDelta kDelta) {
+if (deltaMap.containsKey(kDelta.getId())) {
+

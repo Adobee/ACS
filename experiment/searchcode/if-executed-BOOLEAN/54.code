@@ -1,0 +1,7 @@
+public class WaitForExecutionSplitStage implements SplitProcStage {
+
+private AtomicBoolean hasExecuted = new AtomicBoolean(false);
+public void waitForExecution(long timeout) throws InterruptedException {
+synchronized (hasExecuted) {
+if (hasExecuted.get()) return;
+

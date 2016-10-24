@@ -1,0 +1,9 @@
+//Generate consecutive primes
+long p1 = primes.get(i);
+long q1 = primes.get(i + 1);
+//Here we know that sqrt(n) lies between p1 < sqrt(n) < q1
+//So we use this fact to say that p1*p1 +1 <= n <= q1*q1 -1
+long p = p1 * p1 + 1;
+long q = q1 * q1 - 1;
+//Obviously the upper bound cannot be higher than our preset N
+

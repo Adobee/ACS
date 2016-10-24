@@ -1,0 +1,7 @@
+private byte[] buffer = new byte[BUFFER_SIZE];
+private byte[] deflatedBytes = new byte[BUFFER_SIZE];
+private CRC32 crc = new CRC32();
+int bufferOffset = 0;
+public int read(byte[] b, int off, int len) throws IOException {
+if (getDeflatedBufferAvail() == 0) {
+

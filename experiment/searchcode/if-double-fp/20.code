@@ -1,0 +1,20 @@
+* @author akishore
+*
+*/
+public class EvalMetrics {
+
+double fp;
+double fn;
+double tp;
+double tn;
+double f1;
+return 0;
+}
+
+return 1.0*tp/(1.0*tp + 1.0*fp);
+}
+
+private double calculateRecall() {
+try {
+if((tp + fn) == 0) {
+

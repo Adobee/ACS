@@ -1,0 +1,10 @@
+@DbField(&quot;weightingfactor&quot;)
+private Double weightingfactor;
+
+@DbField(&quot;normalizationfactor&quot;)
+private Double normalizationfactor;
+stmt.setDouble(2, factor.weightingfactor);
+// normalisation_factor
+if (factor.normalizationfactor == null)
+stmt.setNull(3, java.sql.Types.DOUBLE);
+

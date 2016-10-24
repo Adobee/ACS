@@ -1,0 +1,9 @@
+protected int getDirectionToTarget()
+{
+double differenceInX = targetPoint.x - screenPoint.x;
+double differenceInY = targetPoint.y - screenPoint.y;
+int angle = (int) Math.toDegrees(Math.atan2(differenceInY, differenceInX));
+if (!straightAngle)
+{
+return (int) (angle);
+

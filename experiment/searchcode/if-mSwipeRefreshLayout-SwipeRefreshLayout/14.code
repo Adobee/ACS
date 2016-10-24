@@ -1,0 +1,9 @@
+public class SwipeRefreshListFragment extends ListFragment {
+
+protected SwipeRefreshLayout mSwipeRefreshLayout;
+@Override
+protected View onCreateViewImpl(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+mSwipeRefreshLayout = new SwipeRefreshLayout(getActivity());
+
+configSwipeRefreshLayout(mSwipeRefreshLayout);
+

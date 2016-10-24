@@ -1,0 +1,11 @@
+public class ProbabilisticGuardedRuleFactory implements AbstractRuleFactory {
+
+@Override
+public IRule createBasicRule(boolean dissolves, LeftHandRule leftHandRule,
+return new ProbabilisticGuardedRule(dissolves, leftHandRule, rightHandRule, 1.0f);
+}
+
+@Override
+public IPriorityRule createPriorityRule(boolean dissolves,
+LeftHandRule leftHandRule, RightHandRule rightHandRule, int priority) {
+

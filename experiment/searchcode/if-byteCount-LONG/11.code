@@ -1,0 +1,7 @@
+public static void readFully(InputStream in, byte[] dst, int offset, int byteCount) throws IOException {
+if (byteCount != 0) {
+if (in == null) {
+throw new NullPointerException(&quot;in == null&quot;);
+int bytesRead = in.read(dst, offset, byteCount);
+if (bytesRead < 0) {
+

@@ -1,0 +1,13 @@
+void insert(int object){
+if (root == null)
+root = new Node(object);
+else
+insert(root, object);
+void insert(Node node, int object){
+
+// 以下はダミーのコード　ひたすら左の子をたどって空いてたら付け加える。
+if (node.left != null)
+insert(node.left, object);
+else
+node.left = new Node(object);
+

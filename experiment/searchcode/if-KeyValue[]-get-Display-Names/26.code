@@ -1,0 +1,11 @@
+valid = Opts.containsKey(keyValue);
+if(valid)
+{
+OptionSpec oSpec = (OptionSpec)Opts.get(keyValue);
+String dataType = oSpec.getOptionType();
+throw new IllegalArgumentException(&quot;---help&quot;);
+}
+if(optsEntered.get(&quot;help&quot;)!=null){
+displayUsage();
+System.exit(1);
+

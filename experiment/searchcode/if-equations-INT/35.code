@@ -1,0 +1,6 @@
+public SimpleArithmeticEquationSheet generateSheet(EquationSheetGenerateRequest sheetGenerateRequest) {
+int equationsOnSheet = sheetGenerateRequest.getEquationsOnSheet();
+
+List<SimpleArithmeticEquation> equations = new ArrayList<>(equationsOnSheet);
+int equationsOfSameTypeMaxQuantity = calculateEquationsOfSameTypeMaxQuantity(equationsOnSheet);
+

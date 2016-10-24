@@ -1,0 +1,9 @@
+private volatile long storeFileSize = 0;
+private volatile double requestsPerSecond = 0.0;
+private volatile long readRequestsCount = 0;
+this.executor.scheduleWithFixedDelay(this.runnable, this.period, this.period,
+TimeUnit.MILLISECONDS);
+
+if (LOG.isInfoEnabled()) {
+LOG.info(&quot;Computing regionserver metrics every &quot; + this.period + &quot; milliseconds&quot;);
+

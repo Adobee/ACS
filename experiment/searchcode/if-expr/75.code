@@ -1,0 +1,8 @@
+public Expr evaluate(Expr[] args) throws ExprException {
+assertArgCount(args, 1);
+Expr a = evalArg(args[0]);
+if (a instanceof ExprArray)
+return ExprError.VALUE;
+String str = null;
+if (a instanceof ExprString)
+

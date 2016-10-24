@@ -1,0 +1,16 @@
+package Basics;
+
+public class SumLogic {
+
+public int n;
+public int c;
+
+public SumLogic(int n, int c){
+public double getSum(int i){
+double sum=1;
+
+if(i==1){
+return 0;
+}else if(i-1>this.c){
+for(int j=i-1;j>=i-c;j--){
+

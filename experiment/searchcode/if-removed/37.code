@@ -1,0 +1,7 @@
+MxlTextRemovedEvent removedEvent = (MxlTextRemovedEvent)event;
+if (removedEvent.start >= location)
+return;
+int end = removedEvent.start + removedEvent.length;
+if (end <= location) {
+location -= removedEvent.length;
+

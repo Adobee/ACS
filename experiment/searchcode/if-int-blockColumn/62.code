@@ -1,0 +1,10 @@
+boolean[] available = GameEngine.getInstance().getAvailableNumbers(x, y);
+for (int i = 0; i < 9; i++) {
+if (available[i])
+setTextColor(ContextCompat.getColor(context, R.color.font_color_mutable));
+}
+}
+
+private void setBackground() {
+int blockColumn = x / 3;
+

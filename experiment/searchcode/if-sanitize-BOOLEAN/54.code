@@ -1,0 +1,13 @@
+MultivaluedMap<String, String> params = sanitizeGetParameters();
+
+return user;
+}
+
+@GET
+@Path(&quot;/action1&quot;)
+@Produces(MediaType.TEXT_PLAIN)
+private MultivaluedMap<String, String> sanitizeGetParameters(
+MultivaluedMap<String, String> pathParameters, boolean mutate) {
+if (mutate) {
+return sanitizeParamsInPlace(pathParameters);
+

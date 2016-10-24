@@ -1,0 +1,9 @@
+public int compare(FileInfo lhs, FileInfo rhs) {
+DotFile dot = new DotFile();
+DotDotFile dotDot = new DotDotFile();
+if (lhs.equals(dot)) {
+return rhs.equals(dot) ? 0 : -1;
+} else if (rhs.equals(dot)) {
+return 1;
+} else if (lhs.equals(dotDot)) {
+

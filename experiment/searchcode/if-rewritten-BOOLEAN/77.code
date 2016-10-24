@@ -1,0 +1,9 @@
+* to be handed to the backend.
+*/
+public class BetweenPredicate extends Predicate {
+
+private final boolean isNotBetween_;
+originalChildren_ = Expr.cloneList(other.originalChildren_);
+if (other.rewrittenPredicate_ != null) {
+rewrittenPredicate_ = (CompoundPredicate) other.rewrittenPredicate_.clone();
+

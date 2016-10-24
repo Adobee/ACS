@@ -1,0 +1,10 @@
+public void setAxisElements(ArrayList<AxisElement> axisElements) {
+this.axisElements = axisElements;
+}
+
+public String toMDX(Metadata meta, boolean keys) {
+while (iter.hasNext()) {
+builder.append(((AxisElement)iter.next()).toMDX(meta, keys));
+
+if (iter.hasNext()) {
+

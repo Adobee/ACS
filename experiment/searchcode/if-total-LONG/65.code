@@ -1,0 +1,14 @@
+return BigDecimal.valueOf(payedQuantityTotal).divide(BigDecimal.valueOf(orderQuantityTotal), new MathContext(2));
+}
+}
+
+public Long getPayedAmountTotalYuan() {
+if(payedAmountTotal != null){
+return payedAmountTotal/100;
+}
+return 0l;
+}
+
+public Long getUnpayedAmountTotalYuan() {
+if(unpayedAmountTotal != null){
+

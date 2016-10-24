@@ -1,0 +1,6 @@
+* @return Seconds since millenium (01/01/2000)
+*/
+public static long getSeconds(Date d){
+if (d.getTime() < millisUntilMillenium) throw new IllegalArgumentException(&quot;Date is before millenium&quot;);
+long millis = d.getTime() - millisUntilMillenium;
+

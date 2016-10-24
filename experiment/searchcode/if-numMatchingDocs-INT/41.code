@@ -1,0 +1,13 @@
+ScoreDoc scoredoc = docs.scoreDocs[0];
+int docId = scoredoc.doc;
+Document doc = searcher.doc(docId);
+if (doc == null) {
+foundSentences.add(aa.get(CoreAnnotations.SentencesAnnotation.class).get(0));
+}
+}
+}
+}
+// numMatchingDocs++;
+// for (Fieldable field : doc.getFields()) {
+// if (field.name().equals(&quot;title&quot;))
+

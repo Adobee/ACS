@@ -1,0 +1,10 @@
+FFT2 fft2;
+
+//对图像进行模糊处理
+public int[] imBlur(int[] pixels, int iw, int ih)
+{
+double[] newPixels = new double [iw*ih];
+double[] newKernel = new double [iw*ih];
+
+for(int j = 0;j < ih; j++)
+

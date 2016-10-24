@@ -1,0 +1,10 @@
+public int height(TreeNode root){
+if (root==null) return 0;
+int lh = height(root.left); int rh = height(root.right);
+int diff = lh-rh;
+if (diff >1 || diff<-1) return -1;
+if (lh==-1 || rh==-1) return -1;
+return Math.max(lh, rh)+1;
+}
+}
+

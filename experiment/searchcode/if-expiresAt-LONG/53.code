@@ -1,0 +1,17 @@
+private String code;
+
+private String accessToken;
+
+private String refreshToken;
+
+private long expiresAt;
+
+
+@OneToOne(cascade={CascadeType.PERSIST}, mappedBy = &quot;oAuth&quot;)
+public long getExpiresAt() {
+return expiresAt;
+}
+
+public void setExpiresAt(long expiresAt) {
+this.expiresAt = expiresAt;
+

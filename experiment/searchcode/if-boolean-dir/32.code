@@ -1,0 +1,8 @@
+private FileUtil() {}
+
+public static boolean deleteDir(File dir) {
+if (dir == null) {
+for (String directory : dir.list()) {
+boolean success = deleteDir(new File(dir, directory));
+if (!success) {
+

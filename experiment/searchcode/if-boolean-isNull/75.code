@@ -1,0 +1,10 @@
+public static String mangle(String original) {
+if (isNull(original)) return &quot;&quot;;
+return original.replaceAll(&quot;[ &#39;\&quot;]&quot;, &quot;&quot;);
+}
+
+public static boolean isNull(String s) {
+return s == null || &quot;&quot;.equals(s.trim());
+}
+}
+

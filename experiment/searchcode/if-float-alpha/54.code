@@ -1,0 +1,10 @@
+public final class ViewHelper {
+private ViewHelper() {}
+
+public static float getAlpha(View view) {
+return NEEDS_PROXY ? wrap(view).getAlpha() : Honeycomb.getAlpha(view);
+public static void setAlpha(View view, float alpha) {
+if (NEEDS_PROXY) {
+wrap(view).setAlpha(alpha);
+} else {
+

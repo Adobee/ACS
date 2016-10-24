@@ -1,0 +1,9 @@
+private void allocateElements(int numElements) {
+int initialCapacity = MIN_INITIAL_CAPACITY;
+// Find the best power of two to hold elements.
+initialCapacity |= (initialCapacity >>> 16);
+initialCapacity++;
+
+if (initialCapacity < 0) // Too many elements, must back off
+initialCapacity >>>= 1;// Good luck allocating 2 ^ 30 elements
+

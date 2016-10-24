@@ -1,0 +1,14 @@
+import net.sf.jclec.exprtree.fun.ExprTreeFunction;
+
+public class If extends AbstractPrimitive
+{
+public If()
+{
+super(new Class[] { Boolean.class, Boolean.class, Boolean.class }, Boolean.class);
+Boolean arg2 = (Boolean) pop(context);
+Boolean arg3 = (Boolean) pop(context);
+
+if (arg1) {
+push(context, arg2);
+} else {
+

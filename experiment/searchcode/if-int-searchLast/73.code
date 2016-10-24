@@ -1,0 +1,11 @@
+parts[i].optional=true;
+e=e.substring(1);
+}
+if (e.endsWith(&quot;$&quot;)) {
+parts[i].searchLast=true;
+e=e.substring(0,e.length()-1);
+// skip for an attribute: should only happen for final node
+}
+else if (part.searchLast) {
+int nodefound=NomUtil.getLastElementByLocalName(node, name);
+

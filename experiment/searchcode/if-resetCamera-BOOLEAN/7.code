@@ -1,0 +1,14 @@
+public void resetCamera() {
+camera = createCamera();
+}
+
+public Camera createCamera() {
+if (perspective) {
+this.zoom = zoom;
+resetCamera();
+}
+
+@Override
+public boolean keyDown(int keycode) {
+return false;
+

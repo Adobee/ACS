@@ -1,0 +1,9 @@
+public void keyPresseds(KeyEvent e) {
+int key = e.getKeyCode();
+if (key == KeyEvent.VK_UP) {
+public void keyReleaseds(KeyEvent e) {
+int key = e.getKeyCode();
+
+if (key == KeyEvent.VK_UP) {
+Board.uprel();
+

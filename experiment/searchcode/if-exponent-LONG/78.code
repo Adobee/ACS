@@ -1,0 +1,8 @@
+int binaryExponent = (int) ((bits >> 52) &amp; 0x7ffL);
+long binaryMantissa = (bits &amp; 0xfffffffffffffL);
+
+int exponent = 0;
+int binaryExponent80 = 0;
+if (binaryExponent != 0x7ff) {
+exponent = binaryExponent - 0x3ff;
+

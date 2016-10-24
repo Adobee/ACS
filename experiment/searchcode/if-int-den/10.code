@@ -1,0 +1,14 @@
+package eBay;
+
+public class Fraction {
+
+int num;
+int den;
+
+public Fraction(int num, int den){
+public static Fraction addFractions(Fraction a, Fraction b){
+
+Fraction ans = new Fraction(0, 1);
+
+if(a.den == b.den){
+

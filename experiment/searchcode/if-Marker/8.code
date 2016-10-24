@@ -1,0 +1,10 @@
+package us.trycatch.chess_allocator_solver.chess.marker;
+
+import java.util.Hashtable;
+import us.trycatch.chess_allocator_solver.chess.Piece;
+* @return this only instance.
+*/
+public static CellMarkerFactory getInstance(){
+
+if (singlenton == null){
+

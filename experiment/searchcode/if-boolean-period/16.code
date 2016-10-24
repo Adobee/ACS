@@ -1,0 +1,12 @@
+private float period;
+
+public Accumulator(float period) {
+this.count = 0;
+this.period = period;
+public boolean hasNext() {
+return count >= period;
+}
+
+public boolean next() {
+if (count >= period) {
+

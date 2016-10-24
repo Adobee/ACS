@@ -1,0 +1,6 @@
+void ExecMouseUp(IptEventData iptData) {
+GfuiElem elem = GfuiElem_.cast(iptData.Sender());
+int x = iptData.MousePos().X(), y = iptData.MousePos().Y();
+SizeAdp buttonSize = elem.Size();
+if (	x >= 0 &amp;&amp; x <= buttonSize.Width()
+

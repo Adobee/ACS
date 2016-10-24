@@ -1,0 +1,12 @@
+int nextPos = 0;
+if (set1 != EMPTY_SET) {
+result[nextPos++] = set1;
+}
+if (set2 != EMPTY_SET) {
+if (set2 != result[0]) {
+result[nextPos++] = set2;
+}
+}
+
+return makeUnionSet(result, nextPos);
+

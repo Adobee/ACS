@@ -1,0 +1,10 @@
+public class NormalizeInputImpl extends AbstarctNormalizeInput {
+
+private final NormalizationType type;
+protected double normalizationFactor;
+protected double syntheticInput;
+final int numInputs = input.length;
+
+if (this.type == NormalizationType.MULTIPLICATIVE) {
+this.normalizationFactor = 1.0 / len;
+

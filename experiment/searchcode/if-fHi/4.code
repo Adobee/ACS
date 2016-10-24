@@ -1,0 +1,7 @@
+public static boolean isSubtitleForHearingImpaired(Path file) throws IOException {
+System.out.println(&quot;Analysing &quot; + file.getFileName() + &quot; for FHI entries...&quot;);
+checkIfValid(file);
+if (isEntryForHearingImpaired(line)) {
+fhiEntryCount++;
+if (FAST_FHI_IDENTIFICATION &amp;&amp; fhiEntryCount > FHI_ENTRY_THRESHOLD) {
+

@@ -1,0 +1,8 @@
+Arrays.sort(points,i + 1, N, points[i].SLOPE_ORDER);
+
+for (int j = i + 1  ; j < N - 2; j ++){
+if (points[i].slopeTo(points[j]) == points[i].slopeTo(points[j+1]) &amp;&amp; points[i].slopeTo(points[j+1]) == points[i].slopeTo(points[j+2])) {
+points[j+1].drawTo(points[j+2]);
+for (int y = j + 3; y < N ; y++) {
+if (points[i].slopeTo(points[j]) == points[i].slopeTo(points[y])) {
+

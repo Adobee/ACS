@@ -1,0 +1,7 @@
+.searchConnectorSmbDocuments(es.fromAllDocumentsOf(connectorInstance.getId()));
+
+if (!indexedDocuments.isEmpty()) {
+for (ConnectorSmbDocument indexedDocument : indexedDocuments) {
+if (indexedDocument.getUrl().endsWith(&quot;smbFile2.txt&quot;)) {
+System.out.println(indexedDocument.getParent());
+

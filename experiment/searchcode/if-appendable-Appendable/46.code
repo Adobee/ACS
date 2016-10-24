@@ -1,0 +1,12 @@
+package me.kenzierocks.hnbt.util;
+
+import java.io.IOException;
+
+public class IndentAddingAppendable implements Appendable {
+return this;
+}
+
+@Override
+public Appendable append(char c) throws IOException {
+if (this.lastWasNewline &amp;&amp; c != &#39;\n&#39;) {
+

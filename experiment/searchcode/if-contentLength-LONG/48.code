@@ -1,0 +1,9 @@
+public class ContentLengthFilter extends FilteredDataEmitter {
+public ContentLengthFilter(long contentLength) {
+this.contentLength = contentLength;
+}
+
+@Override
+protected void report(Exception e) {
+if (e == null &amp;&amp; totalRead != contentLength)
+

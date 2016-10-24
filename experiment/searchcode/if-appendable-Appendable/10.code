@@ -1,0 +1,9 @@
+import java.util.List;
+
+public class DuplicatorAppendable implements Appendable {
+
+private List<Appendable> appendables = new ArrayList<Appendable>();
+private DuplicatorAppendable (Appendable... appendables) {
+for (Appendable appendable: appendables) {
+if (appendable != null) {
+

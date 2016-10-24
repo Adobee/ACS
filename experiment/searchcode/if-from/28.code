@@ -1,0 +1,8 @@
+int from = len - 2;
+while (from >= 0 &amp;&amp; num[from] >= num[from+1])
+from--;
+if (from < 0) {
+for (int i = len - 1; i > from; i--) {
+if (num[i] > num[from]) {
+swap(num, i, from);
+

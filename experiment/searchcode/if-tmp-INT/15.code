@@ -1,0 +1,7 @@
+public int firstMissingPositive(int[] A) {
+for(int i=0;i<A.length;i++){
+int tmp=A[i];
+while(tmp-1>=0&amp;&amp;tmp-1<A.length&amp;&amp;A[tmp-1]!=tmp){
+int tmp1=A[i];
+A[i]=A[tmp-1];
+

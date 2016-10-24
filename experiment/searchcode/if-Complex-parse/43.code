@@ -1,0 +1,9 @@
+* (real_double,imaginary_double)
+*/
+public static Complex parseComplex(String s) {
+int from = s.indexOf(&#39;(&#39;);
+if (from == -1) {
+to = s.indexOf(&#39;)&#39;, from);
+double y = Double.parseDouble(s.substring(from + 1, to));
+return new Complex(x, y);
+

@@ -1,0 +1,9 @@
+CircleShape circle = json.readValue(&quot;circle&quot;, CircleShape.class, jsonData);
+
+if(circle != null)
+{
+def.shape = circle;
+chainShapeSerializer.setReadLoop(false);
+ChainShape chain = json.readValue(&quot;chain&quot;, ChainShape.class, jsonData);
+if(chain != null)
+

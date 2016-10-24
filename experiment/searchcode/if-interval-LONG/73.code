@@ -1,0 +1,17 @@
+* <timer matcher=&quot;com.logicbus.backend.timer.matcher.Interval&quot; interval=&quot;3000000&quot;/>
+* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* @author duanyy
+*
+*/
+public class Interval implements Matcher {
+protected long interval = 1000;
+public Interval(){
+
+}
+
+public Interval(long _interval){
+interval = _interval;
+}
+
+public boolean match(Date _last,Date _now, Properties _config) {
+

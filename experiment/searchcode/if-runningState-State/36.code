@@ -1,0 +1,13 @@
+public void setState(State newState){
+if(runningState != null) previousStates.add(runningState); //Stores current state
+
+runningState = newState;
+public void dispose(){
+for(int i = 0; i < previousStates.size(); i++){
+State s = previousStates.get(i);
+if(s != null) s.dispose();
+}
+runningState.dispose();
+}
+}
+

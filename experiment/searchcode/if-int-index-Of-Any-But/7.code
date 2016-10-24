@@ -1,0 +1,9 @@
+public int getShortIndex(int longIndex) {
+checkLongIndex(longIndex);
+
+if (shortSize() == 0 || getLongIndex(0) > longIndex) return 0;
+while (b > a + 1) {
+int middle = (a + b) / 2;
+if (getLongIndex(middle) <= longIndex) {
+a = middle;
+

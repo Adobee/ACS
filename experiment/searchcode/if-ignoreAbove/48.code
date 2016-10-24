@@ -1,0 +1,12 @@
+public int getIgnoreAbove() {
+return ignoreAbove;
+}
+
+@Override
+public Query nullValueFilter() {
+if (nullValue == null) {
+return;
+}
+if (ignoreAbove > 0 &amp;&amp; valueAndBoost.value().length() > ignoreAbove) {
+return;
+

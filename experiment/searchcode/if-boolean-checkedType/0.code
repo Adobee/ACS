@@ -1,0 +1,11 @@
+program.visit(this, null);
+}
+
+private boolean equality(Type t1, Type t2){
+//if(t2 == null) return false;
+if(t1.typeKind == TypeKind.ERROR || t2.typeKind == TypeKind.ERROR) return true;
+public Object visitIfStmt(IfStmt stmt, Object arg) {
+stmt.cond.visit(this, null);
+if(equality(stmt.cond.checkedType, BOOLEAN)){
+stmt.checkedType = VOID;
+

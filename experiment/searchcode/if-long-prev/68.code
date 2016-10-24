@@ -1,0 +1,9 @@
+// TODO Auto-generated method stub
+long time = System.currentTimeMillis();
+long prev = 1;
+for (long i = 1; i <= max; ++i) {
+if (i % 10 == 0) {
+while (i % 10 != 0)
+i /= 10;
+prev = getFac(prev, i);
+

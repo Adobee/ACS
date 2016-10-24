@@ -1,0 +1,13 @@
+if ((currentSystemTimeInMillis - ticket.getCreationTime().getTime() >= maxTimeToLiveInMilliSeconds)) {
+return Boolean.TRUE;
+}
+
+if ((currentSystemTimeInMillis - ticket.getLastTimeUsed().getTime() >= timeToKillInMilliSeconds)) {
+return Boolean.TRUE;
+}
+
+return Boolean.FALSE;
+}
+
+}
+

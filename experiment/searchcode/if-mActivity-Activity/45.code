@@ -1,0 +1,13 @@
+private void onBusStopClick()
+{
+if (mActivity.getMapsMenusButtons().getShowBusStop())
+{
+mActivity.getMapsMenusButtons().setShowBusStop(false);
+mActivity.getMapsMenusButtons().getMapSettingsDao().setBusStopEnable(mActivity.getMapsMenusButtons().getShowBusStop());
+
+}
+
+private void onMyLocationClick()
+{
+if (mActivity.getMyLocation().getLatitude() != 0 &amp;&amp; mActivity.getMyLocation().getLongitude() != 0)
+

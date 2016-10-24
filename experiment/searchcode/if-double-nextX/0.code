@@ -1,0 +1,10 @@
+return 2*x;
+}
+
+double bisect(double a, double b, double delta){
+if(b-a <= delta)
+return b;
+double newton(double x, double delta){
+double nextX = x - function(x)/derivativeOfFunction(x);
+if(Math.abs(nextX - x) <= delta)
+

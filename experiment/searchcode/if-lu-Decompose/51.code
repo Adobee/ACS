@@ -1,0 +1,12 @@
+* @return { L, U, P }
+*/
+@Override
+public Matrix[] decompose() {
+
+Matrix[] lup = super.decompose();
+Matrix lu = lup[0];
+for (int j = 0; j <= i; j++) {
+if (i > j) {
+l.set(i, j, lu.get(i, j));
+} else {
+

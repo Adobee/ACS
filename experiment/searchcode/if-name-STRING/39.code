@@ -1,0 +1,13 @@
+package vcalc;
+
+public class Symbol {
+String name;
+Type type;
+Scope scope;
+
+public Symbol(String name) { this.name = name; }
+public String toString() {
+String s = &quot;&quot;;
+if ( scope!=null ) s = scope.getScopeName()+&quot;.&quot;;
+if ( type!=null ) return &#39;<&#39;+s+getName()+&quot;:&quot;+type+&#39;>&#39;;
+

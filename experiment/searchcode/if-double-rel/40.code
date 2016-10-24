@@ -1,0 +1,10 @@
+checkParse(str, new DoubleDouble(expectedVal), errBound);
+}
+
+private void checkParse(String str, DoubleDouble expectedVal,
+double relErrBound) {
+double err = xdd.subtract(expectedVal).doubleValue();
+double relErr = err / xdd.doubleValue();
+
+System.out.println(&quot;Parsed= &quot; + xdd + &quot; rel err= &quot; + relErr);
+

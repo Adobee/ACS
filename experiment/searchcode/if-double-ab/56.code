@@ -1,0 +1,7 @@
+public static boolean solveSegSeg(final Vector2d a, final Vector2d ab, final Vector2d c, final Vector2d cd, double[] param){
+if(ab.isParallel(cd))
+return false;
+double s = (c.outer(cd) - a.outer(cd)) / ab.outer(cd);
+double t;
+if(Math.abs(cd.x) > Math.abs(cd.y)){
+

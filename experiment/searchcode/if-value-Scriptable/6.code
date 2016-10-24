@@ -1,0 +1,7 @@
+public static void addToScriptable(Scriptable scriptable, String name, Object value) {
+Object wrapped = Context.javaToJS(value, scriptable);
+ScriptableObject.putProperty(scriptable, name, wrapped);
+}
+
+public static void addToScriptable(Scriptable scriptable, String name, Properties props) {
+

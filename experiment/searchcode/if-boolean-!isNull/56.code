@@ -1,0 +1,9 @@
+import edu.ccut.saturn.component.DefaultComponent;
+import edu.ccut.saturn.component.IParameterContext;
+
+public class IsNull extends DefaultComponent {
+public void execute(IParameterContext parameterContext) throws Exception {
+Object obj = parameterContext.getParameterValue(0);
+boolean isNull = false;
+if(obj == null){
+

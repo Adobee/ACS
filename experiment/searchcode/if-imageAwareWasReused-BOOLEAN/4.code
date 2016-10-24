@@ -1,0 +1,12 @@
+runTask(r, mHandler);
+}
+
+private boolean isTaskInterrupted() {
+if (Thread.interrupted()) {
+throw new TaskCancelledException();
+}
+}
+
+private boolean isViewCollected() {
+if (mImageWrappedView.isCollected()) {
+

@@ -1,0 +1,7 @@
+String cachedObjectKeyListKey = getCachedObjectKeyListKey();
+CallbackLockConfig config = getCallbackLockConfig();
+if (config == null) {
+List<String> cachedObjectKeyList = xMemcachedClient.get(cachedObjectKeyListKey);
+if (cachedObjectKeyList == null) {
+if (memcachedLock == null) {
+

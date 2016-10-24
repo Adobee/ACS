@@ -1,0 +1,5 @@
+public Chronology getChronology(Object object, Chronology chrono) {
+if (chrono == null) {
+chrono = ((ReadablePartial) object).getChronology();
+chrono = DateTimeUtils.getChronology(chrono);
+

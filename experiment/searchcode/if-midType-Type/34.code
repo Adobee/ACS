@@ -1,0 +1,7 @@
+Type midType = getClosestParentType(cls, superClass);
+if (midType instanceof Class) {
+return determineTypeArguments((Class) midType, superType);
+Type midClass;
+if (midType instanceof ParameterizedType) {
+midClass = getRawType((ParameterizedType) midType);
+

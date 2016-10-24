@@ -1,0 +1,13 @@
+public void run() {
+while (true) {
+Frame frame = readNextFilterInputPort();
+if (frame != null) {
+writeNextFilterOutputPort(frame);
+}
+}
+} // while
+} // run
+
+private boolean skipEndFrame(Frame frame) {
+if (frame.isEndFrame()) {
+

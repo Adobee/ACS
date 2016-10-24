@@ -1,0 +1,13 @@
+import net.sourceforge.squirrel_sql.client.Version;
+
+
+public class UpdateSettings implements Cloneable, IUpdateSettings
+{
+
+
+private String updateServer = &quot;www.squirrel-sql.net&quot;;
+private String fileSystemUpdatePath = &quot;&quot;;
+
+public UpdateSettings() {
+if (Version.isSnapshotVersion()) {
+

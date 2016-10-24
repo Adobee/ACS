@@ -1,0 +1,8 @@
+public static IQuery createQuery(String queryLine){
+IQuery queryObj = null;
+
+if(new ShortestPathQuery().checkCorrectQuery(queryLine))
+queryObj = new ShortestPathQuery();
+
+else if(new CostQuery().checkCorrectQuery(queryLine))
+

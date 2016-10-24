@@ -1,0 +1,10 @@
+public static SharedPreferencesUtil getinstance(Context context) {
+myContext = context;
+if (saveInfo == null &amp;&amp; myContext != null) {
+saveInfo = myContext.getSharedPreferences(sharedPreferencesInfo, Context.MODE_PRIVATE);
+return sharedPreferencesUtil;
+}
+
+public static SharedPreferencesUtil getInstance() {
+if (saveInfo == null &amp;&amp; myContext != null) {
+

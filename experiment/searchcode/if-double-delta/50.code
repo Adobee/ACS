@@ -1,0 +1,9 @@
+public double calulateInValue(List<Double> delta){
+
+if(!wasThereLoss(delta)){
+throw new PriceDeltaEmptyException(&quot;There was no loss&quot;);
+private boolean wasThereLoss(List<Double> delta){
+
+if( findSmallesValue(delta) < 0.0 ){
+return true;
+

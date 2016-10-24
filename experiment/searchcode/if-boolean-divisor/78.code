@@ -1,0 +1,11 @@
+return result>Integer.MAX_VALUE?Integer.MAX_VALUE:(int)result;
+}
+
+public long divideLong(long dividend, long divisor)
+{
+boolean isNegative = dividend<0!=divisor<0;
+if(dividend<0) dividend= -dividend;
+if(divisor<0) divisor= - divisor;
+
+if(dividend<divisor)  return 0;
+

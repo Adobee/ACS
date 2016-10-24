@@ -1,0 +1,10 @@
+public final class RemoveLineTransformation implements Transformation {
+private final String valueToRemove;
+
+public RemoveLineTransformation(String value) {
+this.valueToRemove = value;
+for (Line line : in) {
+if(line.toString().contains(valueToRemove)){
+in.remove(line);
+//				System.out.println(&quot;RemoveLineTransformation remove &quot;+valueToRemove);
+

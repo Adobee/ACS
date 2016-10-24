@@ -1,0 +1,16 @@
+maxSize = size;
+qArray = new long[maxSize];
+front = 0;
+rear = -1;
+}
+
+public void enQueue(int item) {
+if (rear == maxSize - 1) {
+public long deQueue() {
+long temp = qArray[front++];
+if (front == maxSize) {
+front = 0;
+}
+nItems--;
+return temp;
+

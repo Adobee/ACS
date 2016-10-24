@@ -1,0 +1,8 @@
+for(int num = 11; num < 99; ++num) {
+if(num%10 == 0) {continue;}
+for(int den = num+1; den < 100; ++den) {
+if(den%10 == 0 || (num%10 == num/10 &amp;&amp; den%10 == den/10)) {
+continue;
+}
+if(den%10 != num/10 &amp;&amp; den/10 != num%10) {
+

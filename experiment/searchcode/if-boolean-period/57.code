@@ -1,0 +1,7 @@
+public SystematicSampler(long period) {
+if(period < 2)
+throw new IllegalArgumentException(&quot;period must be greater than 1&quot;);
+public boolean next() {
+boolean res = counter % period == 0;
+counter ++; if(counter < 0) counter = 0;
+

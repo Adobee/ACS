@@ -1,0 +1,5 @@
+List<Permission> permissionList = permissionQueryDslRepository.findAll();
+if (permissionList == null || permissionList.isEmpty()) {
+List<Permission> permissionList = rolePermissionSQLRepository.findPermissionByRole(role);
+if (permissionList == null || permissionList.isEmpty()) {
+

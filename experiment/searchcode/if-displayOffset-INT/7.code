@@ -1,0 +1,7 @@
+public void printTo(Appendable appendable, long instant, Chronology chrono, int displayOffset, DateTimeZone displayZone, Locale locale) throws IOException {
+if (appendable instanceof StringBuffer) {
+StringBuffer buf = (StringBuffer) appendable;
+underlying.printTo(buf, instant, chrono, displayOffset, displayZone, locale);
+}
+if (appendable instanceof Writer) {
+

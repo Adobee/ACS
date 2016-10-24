@@ -1,0 +1,12 @@
+package smx.tdd;
+
+import java.util.Objects;
+
+public class Position {
+
+private final int rowIndex;
+private final int columnIndex;
+
+public Position(int rowIndex, int columnIndex) {
+this.columnIndex = columnIndex;
+

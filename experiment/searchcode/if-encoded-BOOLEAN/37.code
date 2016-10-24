@@ -1,0 +1,11 @@
+return latexEncoding(string_p, true);
+}
+
+/**
+*
+*/
+public static String latexEncoding(String string_p, boolean doubleCote_p) {
+if (null != string_p) {
+String encodedString = string_p;
+encodedString = encodedString.replaceAll(&quot;à&quot;, (doubleCote_p ? DBCOTE : COTE) + &quot;`{a}&quot;); //$NON-NLS-1$ //$NON-NLS-2$
+

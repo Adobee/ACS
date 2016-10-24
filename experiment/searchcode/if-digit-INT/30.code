@@ -1,0 +1,9 @@
+long value = n;
+int maxDigit = -1;
+long maxDigitLevel = 0;
+long level = 1;
+long result = value;
+for (; level <= value; level *= 10) {
+int digit = (int)(value / level % 10);
+if (digit < maxDigit) {
+

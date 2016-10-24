@@ -1,0 +1,17 @@
+public class VoidConverter extends ObjectiveCConverter {
+
+@Override
+protected boolean supports(Class<?> clazz) {
+return clazz == Void.TYPE;
+}
+
+@Override
+protected String convert(Class<?> clazz) {
+if (supports(clazz)) {
+return &quot;void&quot;;
+}
+return super.convert(clazz);
+}
+
+}
+

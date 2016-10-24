@@ -1,0 +1,15 @@
+int N = c.getNeighbours();
+boolean retValue = false;
+
+if(c.state()==0){
+if(betweenLight(N)){
+retValue = true;
+}
+}else{
+if(betweenKeep(N)){
+retValue = true;
+}
+}
+
+return retValue;
+

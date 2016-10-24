@@ -1,0 +1,8 @@
+public class Solution {
+public int numTrees(int n) {
+if (n < 3 &amp;&amp; n > 0)
+return n;
+else {
+int result = 2;
+for (int i = 3; i <= n; ++i) {
+

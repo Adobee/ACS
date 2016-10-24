@@ -1,0 +1,13 @@
+private boolean isInsert;
+
+public CoursePreparedStatementSetter(Course a, boolean isInsert) {
+this.course = a;
+arg0.setString(5, course.getDescription());
+
+if (!isInsert) {
+arg0.setInt(6, course.getId());
+}
+
+}
+}
+

@@ -1,0 +1,9 @@
+if (fromExists) {
+if (isEmpty()) {
+throw new NoSuchElementException();
+}
+return fromInclusive ? orig.ceiling(fromElement) : orig.higher(fromElement);
+int cmp = orig.comparator().compare(e, fromElement);
+if (cmp < 0 || (cmp == 0 &amp;&amp; !fromInclusive)) {
+return false;
+

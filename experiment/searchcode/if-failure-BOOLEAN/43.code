@@ -1,0 +1,18 @@
+&quot;SELECT * FROM failure WHERE idFailure=?&quot;);
+_stmt.setInt(1, idFailure);
+_rs = _stmt.executeQuery();
+
+if (_rs.next()) {
+_failure = this.getFailure(_rs);
+_rs.close();
+}
+if (null != _stmt) {
+_stmt.close();
+}
+}
+
+return _failure;
+}
+
+@Override
+

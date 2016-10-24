@@ -1,0 +1,10 @@
+//CEC 2006
+public class G14 extends AbstractProblem {
+private static int dimension = 10;
+private static double[] domainsMin = new double[]{0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+public Double fitness(Vector<Double> x) {
+double f;
+
+double sumlog = 0.0, sum = 0.0;
+double[] C = { -6.089, -17.164, -34.054, -5.914, -24.721, -14.986, -24.100, -10.708, -26.662, -22.179 };
+

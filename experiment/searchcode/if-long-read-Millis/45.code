@@ -1,0 +1,9 @@
+protected CounterPauseModel(Parcel in) {
+timerId = in.readInt();
+startedMillis = in.readLong();
+finishedMillis = in.readLong();
+pauseTimeElapsed = in.readInt();
+}
+
+public static final Creator<CounterPauseModel> CREATOR = new Creator<CounterPauseModel>() {
+

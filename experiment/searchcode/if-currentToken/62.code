@@ -1,0 +1,9 @@
+// either token to process is null or sentence end was reached
+while ((currentToken != null) &amp;&amp; (!sentence.isConsumed())) {
+
+if (currentToken.isOptionLeft()) {
+
+// match operation for current token
+if (currentToken.match(sentence)) {
+pattern.consumeToken(currentToken);
+

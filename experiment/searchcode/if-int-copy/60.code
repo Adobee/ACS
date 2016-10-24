@@ -1,0 +1,10 @@
+public int rBinary(int n, int[] L, int x){
+if (L.length == 1 &amp;&amp; L[0] != n)
+return -1;
+int mid = L.length / 2;
+int a;
+if(L[mid] == n)
+return x + mid;
+else if(L[mid] > n){
+a = rBinary(n, Arrays.copyOfRange(L, 0, mid), x);
+

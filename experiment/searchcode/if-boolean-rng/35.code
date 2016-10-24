@@ -1,0 +1,7 @@
+RingiDataModel model = ringiDao.getRingiData(rngSid, userSid);
+
+//タイトル、内容がnullであれば存在しない
+if (model.getRngTitle() == null || model.getRngContent() == null) {
+RngChannelModel channelData = channelDao.select(rngSid, model.getRngApplicate());
+if (channelData.getRncStatus() != RngConst.RNG_RNCSTATUS_CONFIRM
+

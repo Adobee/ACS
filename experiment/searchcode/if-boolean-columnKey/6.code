@@ -1,0 +1,11 @@
+nullTested.add(ick.getTableKey());
+}
+continue;
+}
+ListSet<ColumnKey> cks = ColumnInstanceCollector.getColumnKeys(en);
+if (cks.size() != 1) continue;
+// now we have to go to those and all of theirs, unless they already exist or are in partition.
+boolean done = false;
+while(!done) {
+HashSet<ColumnKey> more = new HashSet<ColumnKey>();
+

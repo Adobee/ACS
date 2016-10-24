@@ -1,0 +1,10 @@
+g.setStroke(new BasicStroke(2));
+g.setColor(Color.BLUE);
+
+for(Bliff b: a){
+Point newBliffPoint = b.getOrigin();
+double newDistance = b.getDistance(fruit.getOrigin(),new Point(b.getX()+fruit.getXChange(),b.getY()+fruit.getYChange()));
+if(newDistance<oldDistance||oldDistance==0){
+oldDistance=newDistance;
+closestBliff=b;
+

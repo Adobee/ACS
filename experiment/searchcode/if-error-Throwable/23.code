@@ -1,0 +1,16 @@
+public class ServletExceptionMapper implements ExceptionMapper<ServletException> {
+
+@Override
+public void throwMapped(Throwable throwable) throws ServletException {
+if (throwable instanceof ServletException) {
+throw (RuntimeException) throwable;
+}
+
+if (throwable instanceof Error) {
+throw (Error) throwable;
+}
+
+throw new ServletException(throwable);
+}
+}
+

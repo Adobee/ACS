@@ -1,0 +1,10 @@
+protected final BaseJsonGenerator generator;
+private boolean writeLineFeedAtEnd;
+
+public JsonXContentGenerator(BaseJsonGenerator generator) {
+public void close() throws IOException {
+if (generator.isClosed()) {
+return;
+}
+if (writeLineFeedAtEnd) {
+

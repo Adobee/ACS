@@ -1,0 +1,8 @@
+int size = 0;
+int initialSize = arr.length;
+int[] tempArr = GetTempArr(initialSize);
+for(int i =0;i< initialSize; i++){
+for(int j =0; j<i; j++){
+if(arr[j] < arr[i]){
+tempArr[i] = Math.max(tempArr[i], tempArr[j]+1);
+

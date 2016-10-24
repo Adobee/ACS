@@ -1,0 +1,8 @@
+// number of terms to use to represent a document (top-k)
+protected int k;
+// inverted list per term, each entry being a Document and the n-tfidf
+Comparator<SimilarityWritable> comparator,
+int termssize) throws ClassNotFoundException {
+super(comparator);
+initialize(termssize);
+

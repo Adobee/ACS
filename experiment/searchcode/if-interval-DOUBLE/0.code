@@ -1,0 +1,7 @@
+public boolean intersects(Interval2DD b) {
+if (intervalX.intersects(b.intervalX)) return true;
+if (intervalY.intersects(b.intervalY)) return true;
+// does this 2D interval contain (x, y)?
+public boolean contains(double x, double y) {
+return intervalX.contains(x) &amp;&amp; intervalY.contains(y);
+

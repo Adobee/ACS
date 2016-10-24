@@ -1,0 +1,17 @@
+this.iterator = iterator;
+}
+
+@Override
+public boolean hasMoreElements() {
+return iterator != null &amp;&amp; iterator.hasNext();
+}
+
+@Override
+public E nextElement() {
+if (iterator == null) {
+return null;
+}
+return iterator.next();
+}
+}
+

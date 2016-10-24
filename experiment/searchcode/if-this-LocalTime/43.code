@@ -1,0 +1,10 @@
+private boolean hasOvertime = false;
+
+
+public HappyHour(LocalTime happyStart, LocalTime happyEnd){
+this.happyStart = happyStart;
+this.happyEnd = happyEnd;
+
+if(happyStart.getHour() > happyEnd.getHour())
+hasOvertime = true;
+

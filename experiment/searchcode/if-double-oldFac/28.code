@@ -1,0 +1,9 @@
+private final double stopFitness;
+/** Stop if x-changes larger stopTolUpX. */
+private double stopTolUpX;
+/** Stop if x-change smaller stopTolX. */
+.scalarMultiply(ccov1); // rank one update
+// minor correction if hsig==false
+double oldFac = hsig ? 0 : ccov1 * cc * (2 - cc);
+oldFac += 1 - ccov1 - ccovmu;
+

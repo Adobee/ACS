@@ -1,0 +1,13 @@
+public Rect(double xmin,double ymin,double xmax,double ymax){
+if(xmin < xmax){
+this.xmin=xmin;
+this.xmax=xmax;
+}else{
+this.xmin=xmax;
+double x=p.getX();
+if(x>xmax)xmax=x;
+if(x<xmin)xmin=x;
+double y=p.getY();
+if(y>ymax)ymax=y;
+if(y<ymin)ymin=y;
+

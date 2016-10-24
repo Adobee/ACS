@@ -1,0 +1,11 @@
+public static ZNumber ZERO = new ZInteger(0);
+public static ZNumber ONE = new ZInteger(1);
+
+private boolean m_exact;
+public ZNumber(boolean exact){
+if(exact) this.setExact();
+else this.clearExact();
+}
+
+public void setExact(){
+

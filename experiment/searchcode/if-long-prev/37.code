@@ -1,0 +1,16 @@
+package com.port.euler;
+
+import java.math.BigInteger;
+
+public class Problem25 {
+
+public long solve(){
+BigInteger current = prev.add(prevPrev);
+
+
+if (current.toString().length() == 1000){
+return index;
+}
+
+prevPrev = prev;
+

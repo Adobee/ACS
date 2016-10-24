@@ -1,0 +1,6 @@
+for (int i = 0; i <= N; i++) {
+long q1 = i - 1 , q2 = N + 1;
+do{
+long j = (q1 + q2) / 2;
+long cost = 0;
+

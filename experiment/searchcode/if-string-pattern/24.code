@@ -1,0 +1,10 @@
+public String getDatePattern()
+{
+String pattern = getLocalizedPattern();
+pattern = pattern.replaceAll( &quot;aaaa&quot;, &quot;yyyy&quot; );
+protected String applyCustomPattern( String pattern, String[] params )
+{
+if ( params.length == 4 )
+{
+if ( pattern.indexOf( params[3] ) < 0 &amp;&amp; pattern.indexOf( params[2] ) < 0 )
+

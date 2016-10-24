@@ -1,0 +1,6 @@
+public class Comparator<T> {
+public T getMax(T number1,T number2){
+double n1 = Double.parseDouble(number1.toString());
+double n2 = Double.parseDouble(number2.toString());
+if(n1 > n2){
+

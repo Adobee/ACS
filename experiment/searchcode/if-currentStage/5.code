@@ -1,0 +1,15 @@
+public void loadStage(StageBase stage)
+{
+if(currentStage != null)
+{
+if(currentStage.equals(stage))
+return;
+assetHandler.loadAssetsBlocking(currentStage.getElementsAssets(new AssetPack()));
+currentStage.init();
+}
+
+
+public void loadStageWithoutLoadingScreen(StageBase stage)
+{
+if(currentStage != null)
+

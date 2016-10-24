@@ -1,0 +1,10 @@
+public class Control
+{
+private double _s;
+private double _omega;
+
+public Control (double s, double omega){
+if (s < 5 || s > 10) //Check to make sure s is in range.
+throw new IllegalArgumentException(&quot;S out of range&quot;);
+if (omega < -Math.PI || omega >= Math.PI) //Check to make sure theta is in range.
+

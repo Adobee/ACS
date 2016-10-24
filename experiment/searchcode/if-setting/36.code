@@ -1,0 +1,15 @@
+import com.oreon.cerebrum.settings.Setting;
+
+/**
+*
+* @author WitchcraftMDA Seam Cartridge -
+*
+*/
+public abstract class SettingListQueryBase extends BaseQuery<Setting, Long> {
+public void onArchive() {
+refresh();
+}
+
+public void setSettingNameId(Long id) {
+if (setting.getSettingName() == null) {
+

@@ -1,0 +1,14 @@
+private DoubleLinkNode<T> backwordUpTo;
+
+public RevereseIterator(DoubleLinkNode<T> tail) {
+this.tail = this.backwordUpTo = tail;
+// while there is still a node with data there is more to iterate
+// through
+return backwordUpTo != null;
+
+}
+
+public T next() {
+T data = null;
+if (hasNext()){
+

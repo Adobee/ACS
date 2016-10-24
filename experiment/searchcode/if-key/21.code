@@ -1,0 +1,10 @@
+public int getKeyCode() {
+return keyCode;
+}
+
+public static Keyboard getKey(int key) {
+if (lookupKeyCode.containsKey(key)) {
+//Some computers report signed/unsigned values incorrectly
+if (lookupKeyCode.containsKey(256+key)) {
+return lookupKeyCode.get(256+key);
+

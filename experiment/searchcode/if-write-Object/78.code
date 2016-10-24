@@ -1,0 +1,12 @@
+writeInternal( object );
+}
+
+private void writeInternal( Object object )
+{
+try
+{
+if( object == null )
+writeNotString( &quot;null&quot; );
+else if( object instanceof String )
+writeString( (String)object );
+

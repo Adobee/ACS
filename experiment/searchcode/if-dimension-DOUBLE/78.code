@@ -1,0 +1,9 @@
+import java.util.Set;
+
+public class PointUtils {
+public static Double pointDistance(HyperDimensionPoint pointA, HyperDimensionPoint pointB) {
+Map<Dimension, Long> mapA = pointA.getDimensionValueMap();
+Map<Dimension, Long> mapB = pointB.getDimensionValueMap();
+
+if (!mapA.keySet().equals(mapB.keySet())) {
+

@@ -1,0 +1,12 @@
+import org.valdaynet.java.economy.AbsentEconomy;
+
+import com.massivecraft.massivecore.store.Coll;
+import com.massivecraft.massivecore.store.MStore;
+public void setActive(boolean b)
+{
+super.setActive(b);
+
+if (!b) return;
+
+if (get().containsId(&quot;config&quot;)) { AConf.i = get().get(&quot;config&quot;); return; }
+

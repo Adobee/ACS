@@ -1,0 +1,8 @@
+public class Solution {
+public int firstMissingPositive(int[] A) {
+for (int i=0; i < A.length;) {
+if (A[i] >= 1 &amp;&amp; A[i] != (i+1) &amp;&amp; A[i] - 1 < A.length &amp;&amp; A[i] != A[A[i]-1]) {
+int tmp = A[i];
+A[i] = A[tmp - 1];
+A[tmp - 1] = tmp;
+

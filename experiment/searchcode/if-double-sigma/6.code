@@ -1,0 +1,7 @@
+/**Sigma samples*/
+private Queue<Double> mSigmaSamples = new LinkedList<Double>();
+/**The number of samples taken*/
+public void recordSigma(Double sigma) {
+if(mSigmaSamples.size() < MAX_SAMPLES) {
+mSigmaSamples.add(sigma);
+

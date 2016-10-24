@@ -1,0 +1,11 @@
+private int rotate_skew_1;
+private int translate_x;
+private int translate_y;
+
+public Matrix(BitBuffer bits) {
+bits.startBitMode();
+
+boolean has_scale = bits.readBitBool();
+if (has_scale) {
+int scale_bits = bits.readBits(5);
+

@@ -1,0 +1,6 @@
+private Request(String method, String relativeUrl, Map<String, Object> params, List<Header> headers, RequestBody body) {
+this.method = Preconditions.checkNotNull(method, &quot;Method must not be null.&quot;);
+this.relativeUrl = Preconditions.checkNotNull(relativeUrl, &quot;URL must not be null.&quot;);
+
+if (headers == null) {
+

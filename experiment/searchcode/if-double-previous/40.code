@@ -1,0 +1,11 @@
+private Map<String, BinaryOperation> binaryOperators = new HashMap<>();
+private double previousResult;
+private Double numberStorage;
+int number = (int) Double.parseDouble(expression);
+setPreviousResult(factorial(number));
+return getPreviousResult();
+}
+
+private double factorial(int n) {
+if (n <= 1)
+

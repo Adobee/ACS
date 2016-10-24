@@ -1,0 +1,8 @@
+protected void doAssertLuceneQuery(HasChildQueryBuilder queryBuilder, Query query, QueryShardContext context) throws IOException {
+QueryBuilder innerQueryBuilder = queryBuilder.query();
+if (innerQueryBuilder instanceof EmptyQueryBuilder) {
+assertEquals(queryBuilder.scoreMode(), lpq.getScoreMode()); // WTF is this why do we have two?
+}
+if (queryBuilder.innerHit() != null) {
+assertNotNull(SearchContext.current());
+

@@ -1,0 +1,8 @@
+public static double qt(double p, int df) {
+
+double c1 = 92160 * df * df * df * df + 23040 * df * df * df + 2880 * df * df - 3600 * df - 945;
+public static double dchisq(double q, int df) {
+
+if (q > 0) {
+return 1 / (Math.pow(2, (double) df / 2) * Gamma((double) df / 2)) * Math.pow(q, (double) df / 2 - 1) * Math.pow(Math.E, -q / 2);
+

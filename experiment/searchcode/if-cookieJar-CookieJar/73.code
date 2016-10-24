@@ -1,0 +1,8 @@
+for (Cookie existingCookie : cookieJar) {
+if ((cookie.matches(existingCookie.getURI()))
+&amp;&amp; (cookie.getName().equals(existingCookie.getName()))) {
+StringBuilder cookies = new StringBuilder();
+for (Cookie cookie : cookieJar) {
+// Remove cookies that have expired
+if (cookie.hasExpired()) {
+

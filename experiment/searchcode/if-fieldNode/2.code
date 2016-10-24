@@ -1,0 +1,12 @@
+List<FieldNode>dependentFields = new ArrayList<FieldNode>();
+for (String line : code) {
+if(line.contains(GET_FIELD))
+{
+FieldNode node = findFieldNode(line, fieldNodes);
+if(line.contains(PUT_FIELD))
+{
+FieldNode node = findFieldNode(line, fieldNodes);
+if(node !=null)
+{
+node.dependentFields.addAll(dependentFields);
+

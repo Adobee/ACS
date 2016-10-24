@@ -1,0 +1,10 @@
+*                ベクトルクラス
+* @return 評価値
+*/
+@Override
+public double evaluate(TVector x) {
+if (fDimension != x.getDimension())
+return Double.MAX_VALUE;
+
+int k = (int)((double)x.getDimension() /4.0); //k=n/4
+

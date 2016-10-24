@@ -1,0 +1,11 @@
+long msDelta = nanos < 0 ? nanos / NANOS_PER_MILLI - 1 : nanos / NANOS_PER_MILLI;
+long newMillis = millis + msDelta;
+
+if ((millis > 0 &amp;&amp; msDelta > 0 &amp;&amp; newMillis < 0)
+millis = newMillis;
+nanos -= msDelta * NANOS_PER_MILLI;
+}
+
+/**
+* If overflow, return Long.MAX_VALUE
+

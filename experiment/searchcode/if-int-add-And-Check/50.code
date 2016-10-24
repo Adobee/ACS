@@ -1,0 +1,9 @@
+return returnWide();
+}
+
+// CHECK-START: int Main.InlineAdd() inliner (before)
+// CHECK-DAG:     [[Const3:i\d+]] IntConstant 3
+// CHECK-START: int Main.InlineAdd() inliner (after)
+// CHECK-DAG:     [[Const3:i\d+]] IntConstant 3
+// CHECK-DAG:     [[Const5:i\d+]] IntConstant 5
+

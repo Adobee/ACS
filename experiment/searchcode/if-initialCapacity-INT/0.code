@@ -1,0 +1,13 @@
+public static void main(String[] arg){
+int initialCapacity = -7;
+int temp = initialCapacity >>>  1;;
+initialCapacity |= temp;
+initialCapacity |= temp;
+initialCapacity ++;
+
+if (initialCapacity < 0) {
+initialCapacity >>>= 1;
+}
+}
+}
+

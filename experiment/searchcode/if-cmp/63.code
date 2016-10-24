@@ -1,0 +1,7 @@
+CmpInfo cmpInfo = this.cmpInfoService.getCmpInfoByDomain(domain);
+VelocityContext context = new VelocityContext();
+if (cmpInfo == null) {
+CmpUnion cmpUnoin = this.cmpUnionService
+.getCmpUnionByDomain(domain);
+if (cmpUnoin != null) {
+

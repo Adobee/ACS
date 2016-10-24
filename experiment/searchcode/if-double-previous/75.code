@@ -1,0 +1,17 @@
+public class MeanDiffAggregator extends Aggregator {
+
+private double[] previousItems;
+
+private double[] sum;
+
+private int[] count;
+
+public MeanDiffAggregator(int numberOfItems) {
+double[] result = null;
+
+if (!first) {
+result = new double[numberOfItems];
+}
+
+for (int i = 0; i < numberOfItems; i++) {
+

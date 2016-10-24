@@ -1,0 +1,10 @@
+public static void findMinCoins(int []den,int S) {
+int coins = den.length;
+int [] Min = new int[S+1];
+Min[i] = Integer.MAX_VALUE;
+
+Min[0]=0;
+for(int i = 1;i <=S;i++) {
+for(int j = 0;j<coins;j++) {
+if(den[j]<= i &amp;&amp; Min[i-den[j]]+1 < Min[i]) {
+

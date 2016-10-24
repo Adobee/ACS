@@ -1,0 +1,11 @@
+private final int rowIndex;
+private final int columnIndex;
+
+public Position(int rowIndex, int columnIndex) {
+this.columnIndex = columnIndex;
+this.rowIndex = rowIndex;
+}
+
+public int getColumnIndex() {
+return columnIndex;
+

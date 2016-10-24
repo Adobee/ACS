@@ -1,0 +1,10 @@
+private int internalGetCountForSection(int section) {
+Integer cachedSectionCount = sectionCountCache.get(section);
+if (cachedSectionCount != null) {
+sectionCountCache.put(section, sectionCount);
+return sectionCount;
+}
+
+private int internalGetSectionCount() {
+if (sectionCount >= 0) {
+

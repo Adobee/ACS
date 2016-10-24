@@ -1,0 +1,11 @@
+public void normGradient(LSTMConfigurator cfg, double threshold) {
+this.threshold = threshold;
+checkGradient(cfg);
+if (norm < threshold ) {
+normWws(rnnVo.getDeltaRwWs());
+}
+
+public void normWws(double [] wWs) {
+if (wWs != null) {
+for (int i = 0; i < wWs.length; i++) {
+

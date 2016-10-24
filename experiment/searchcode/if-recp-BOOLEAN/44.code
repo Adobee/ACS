@@ -1,0 +1,6 @@
+public static final String PREFS_NAME = &quot;MyPrefsFile&quot;;
+Recipes recp = new Recipes();
+String[] title = recp.recipes;
+SharedPreferences settings = getSharedPreferences(PREFS_NAME, 0);
+if(settings.getBoolean(&quot;FIRSTLOAD&quot;, true)){
+

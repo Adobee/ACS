@@ -1,0 +1,7 @@
+* is(A).and( not( is(B).or(C) ).xor( is(A).nand(c) ) ).contains( evt );
+* anyOf( A, B, is(C).and(not(d)) );
+* etc etc.
+public static BooleanComposableEventSet theEventSet( final EventSetInterface ifce ) {
+if ( ifce instanceof BooleanComposableEventSet ) {
+return (BooleanComposableEventSet) ifce;
+

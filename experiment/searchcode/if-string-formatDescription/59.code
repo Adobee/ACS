@@ -1,0 +1,7 @@
+* FormatIdentification identifier = new FormatIdentification(String config);
+* FormatDescription desc = identifier.identify(&amp;quot;file&amp;quot;);
+* if (desc != null) {
+public FormatDescription identify(byte[] data) {
+if (data == null || data.length < 1) {
+return null;
+

@@ -1,0 +1,14 @@
+* @author dhorlick
+*/
+public class SilenceableModelListener implements ChangeListener
+{
+private boolean silent;
+private ChangeListener changeListener;
+setChangeListener(designatedChangeListener);
+}
+
+public void stateChanged(ChangeEvent e)
+{
+if (!isSilent())
+getChangeListener().stateChanged(e);
+

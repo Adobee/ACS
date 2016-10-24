@@ -1,0 +1,12 @@
+public class AdamsSolver extends DESolver {
+double[] nextY;
+private double[] lastX = new double[4];
+private double[][] lastY;
+system.evaluate(lastX[i], lastY[i], f[i]);
+}
+nextY = new double[n];
+}
+
+@Override
+public void next(double[] result) {
+

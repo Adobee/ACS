@@ -1,0 +1,8 @@
+System.out.print(&quot;\t&quot; + threadID + &quot;. Initializing thread... &quot;);
+
+// Send an empty request
+if(postQuery(threadID, &quot;&quot;)) {
+while ((serverOutput = getLine(threadID)) != null) {
+// INFO hasn&#39;t been retrieved yet
+if(queryString[threadID] == null) {
+

@@ -1,0 +1,13 @@
+return 0.5 + Math.atan2(x-mu,sigma)/Math.PI;
+}
+
+@Override
+public double idf (double p)
+{
+if (p==0)
+return Double.NEGATIVE_INFINITY;
+else if (p==1)
+return Double.POSITIVE_INFINITY;
+else
+return mu + sigma*Math.tan(Math.PI*(p-0.5));
+

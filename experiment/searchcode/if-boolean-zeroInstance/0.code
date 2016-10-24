@@ -1,0 +1,7 @@
+public AggregateTransitionVector(Machine<T> machine, T zeroInstance, TransitionVector<T> vector) {
+this.prob = new TreeMap<Integer,T>();
+this.zero = zeroInstance;
+this.size = machine.size();
+
+T sum = zeroInstance;
+

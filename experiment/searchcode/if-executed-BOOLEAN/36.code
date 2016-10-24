@@ -1,0 +1,14 @@
+public boolean execute() {
+boolean executed = actions.executeAll();
+if (executed) {
+setStatus(&quot;executed&quot;);
+} else {
+actions.undoAll();
+}
+return executed;
+}
+
+public boolean undo() {
+if (!isExecuted()) {
+String error = &quot;A transaction must be executed first.&quot;;
+

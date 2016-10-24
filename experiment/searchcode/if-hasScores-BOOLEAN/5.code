@@ -1,0 +1,8 @@
+protected String generateXmlString(int indentLevel)
+{
+boolean hasScores = (this.scores != null) &amp;&amp; this.scores.hasMembers();
+boolean hasChildren = (this.children != null) &amp;&amp; this.children.hasMembers();
+boolean isEmpty = hasScores &amp;&amp; hasChildren;
+
+String xml = getOpenNodeXml(getTagName(), indentLevel, isEmpty,
+

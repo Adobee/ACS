@@ -1,0 +1,8 @@
+public boolean add(T item, int weight) {
+PreCon.notNull(item);
+PreCon.greaterThanZero(weight);
+public boolean add(T item) {
+PreCon.notNull(item);
+
+if (_weightedItems.add(new Weighted<T>(item, 1))) {
+

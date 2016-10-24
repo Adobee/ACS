@@ -1,0 +1,12 @@
+public static final HashMap<Byte, Texture> NUMBERS = new HashMap<Byte, Texture>();
+
+private FxPlayer player;
+private Texture name;
+private int dim;
+
+public HUD(FxPlayer player, int height) {
+.draw(dim * offset, dim + 7, -1, dim / 2, g);
+offset++;
+if (player.hasQuadDamage()) {
+QUADDAMAGE.draw(dim * offset, dim, dim, dim, g);
+

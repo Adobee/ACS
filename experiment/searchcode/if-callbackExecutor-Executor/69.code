@@ -1,0 +1,10 @@
+@SuppressWarnings(&quot;WeakerAccess&quot;) // This is a public API class
+public class CallbackExecutor {
+/**
+* The ExecutorService which actually runs the tasks.
+* @throws IllegalArgumentException
+* 		if {@code executor} is null
+*/
+private CallbackExecutor(ExecutorService executor) {
+if (executor == null) {
+

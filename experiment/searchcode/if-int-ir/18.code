@@ -1,0 +1,8 @@
+if(obstacleGrid.length == 0 || obstacleGrid[0].length == 0) return 0;
+int[][] ir = new int[obstacleGrid.length][obstacleGrid[0].length];
+
+if(obstacleGrid[0][0] == 1) return 0;
+boolean noObstacleBefore = true;
+for(int i = 1; i < obstacleGrid.length; i++) {
+if(obstacleGrid[i][0] == 0 &amp;&amp; noObstacleBefore) {
+

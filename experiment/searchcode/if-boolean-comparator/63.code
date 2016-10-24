@@ -1,0 +1,12 @@
+import java.util.Collections;
+import java.util.Comparator;
+
+public class SortedList<T> extends ArrayList<T> {
+private Comparator<T> comparator;
+int index = Collections.binarySearch(this, t, comparator);
+if (index < 0) {
+index = -index - 1;
+}
+if (index >= size()) {
+super.add(t);
+

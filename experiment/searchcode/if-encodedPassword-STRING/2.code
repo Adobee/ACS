@@ -1,0 +1,7 @@
+public static boolean verify(String password, String encodedPassword) {
+if (encodedPassword == null || encodedPassword.isEmpty())
+return false;
+
+if (encodedPassword.charAt(0) == &#39;$&#39;) {
+return encodedPassword.equals(crypt(password, encodedPassword));
+

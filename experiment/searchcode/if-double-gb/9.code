@@ -1,0 +1,4 @@
+double rg = pixel[1] != 0 ? (double) pixel[0] / (double) pixel[1] : pixel[0];
+double gb = pixel[2] != 0 ? (double) pixel[1] / (double) pixel[2] : pixel[1];
+if(rg >= ft.rgMin &amp;&amp; rg <= ft.rgMax &amp;&amp; gb >= ft.gbMin &amp;&amp; gb <= ft.gbMax)
+

@@ -1,0 +1,10 @@
+import com.massivecraft.mcore.store.SenderColl;
+
+public class RPlayerColl extends SenderColl<RPlayer>
+// CONSTRUCT
+// -------------------------------------------- //
+
+public RPlayerColl(String name)
+{
+super(name, RPlayer.class, MStore.getDb(ConfServer.dburi), Races.r);
+

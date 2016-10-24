@@ -1,0 +1,13 @@
+public class AggregatorStddev implements AggregationMethod
+{
+protected double sum;
+protected double sumSq;
+protected long numDataPoints;
+sum -= value;
+sumSq -= value * value;
+}
+
+public Object getValue()
+{
+if (numDataPoints < 2)
+

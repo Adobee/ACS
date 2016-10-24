@@ -1,0 +1,13 @@
+StackNode<T> newNode = new StackNode<T>(value);
+
+if(top == null) {
+top = newNode;
+} else {
+StackNode<T> prevTop = top;
+StackNode<T> topNode = null;
+
+if(top != null) {
+topNode = top;
+
+top = topNode.previous;
+

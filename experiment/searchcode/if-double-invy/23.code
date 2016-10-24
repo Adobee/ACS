@@ -1,0 +1,10 @@
+graphics.drawRect(invX + 270, invY - 130, 90, 120);
+return;
+}
+else if(board.get(row,col) instanceof Actor)
+graphics.drawString(&quot;Defense: &quot;+monster.getDefense(), invX + 273, invY - 130 + 90+14+14);
+graphics.drawRect(invX + 270, invY - 130, 90, 120);
+}
+
+if(thing != null)
+

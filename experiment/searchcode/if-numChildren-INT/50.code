@@ -1,0 +1,9 @@
+public void layout(IFigure parent)
+{
+List children = parent.getChildren();
+int numChildren = children.size();
+org.eclipse.draw2d.geometry.Rectangle clientArea = transposer.t(parent.getClientArea());
+int y = clientArea.y;
+for (int i = 0; i < numChildren; i++) {
+IFigure child = (IFigure) children.get(i);
+

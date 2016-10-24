@@ -1,0 +1,7 @@
+public class MzGraphDatasetUtils {
+
+public static XYSeriesCollection createXYDataset(Comparable seriesKey, double[] x, double[] y) {
+public static XYSeries getXYSeries(XYSeriesCollection dataset, Comparable seriesKey) {
+if (hasXYSeries(dataset, seriesKey)) {
+return dataset.getSeries(seriesKey);
+

@@ -1,0 +1,10 @@
+import org.apache.commons.lang.ArrayUtils;
+
+public class EqualsBuilder {
+private boolean isEquals;
+
+public EqualsBuilder() {
+public EqualsBuilder append(boolean lhs, boolean rhs) {
+if (this.isEquals) {
+this.isEquals = lhs == rhs;
+

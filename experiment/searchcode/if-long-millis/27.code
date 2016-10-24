@@ -1,0 +1,12 @@
+package smartsoft.stopwatch;
+
+public class ElapsedTime {
+
+private final long millis;
+public static final long MILLIS_PER_HOUR = MILLIS_PER_MINUTE * 60;
+
+@Override public String toString() {
+
+if (millis < 5900) {
+long countDown = (5900 - millis) / 1000;
+

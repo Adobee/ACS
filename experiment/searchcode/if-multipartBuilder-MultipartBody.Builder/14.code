@@ -1,0 +1,9 @@
+Headers headers = SKYUploadRequest.getSKYUploadBody().getHeader();
+
+
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder().setType(MultipartBody.FORM);
+if(file != null){
+multipartBuilder.addPart(headers, this);
+}
+List<SKYFromData> SKYHeadersBeans = SKYUploadRequest.getSKYUploadBody().SKYFromData;
+

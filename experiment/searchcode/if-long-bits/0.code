@@ -1,0 +1,15 @@
+package com.nicodangelo.bits;
+
+public class Bit
+{
+private long bits;
+private String bitType;
+
+public Bit()
+{
+bits = 0;
+bitType = &quot;bit&quot;;
+}
+
+public Bit(long bits)
+

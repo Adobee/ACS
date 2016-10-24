@@ -1,0 +1,10 @@
+public ReplacementContainer()
+{
+}
+
+public void addReplacement(final Replacement replacement)
+{
+if (replacement == null) throw new IllegalArgumentException(&quot;Argument &#39;replacement&#39; is null.&quot;);
+// TODO(toan@itu.dk): Add syntax check, name attribute is required.
+if (elemReplacement.hasAttribute(&quot;name&quot;)) name = elemReplacement.getAttribute(&quot;name&quot;);
+

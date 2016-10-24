@@ -1,0 +1,9 @@
+List<Long> ls = new ArrayList<Long>();
+for (long l : primes) {
+ls.add(l);
+N /= l;
+}
+for (long i = 2; i * i <= N &amp;&amp; i < 1e6; i++) {
+while (N % i == 0) {
+ls.add(i);
+

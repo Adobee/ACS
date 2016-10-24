@@ -1,0 +1,12 @@
+public double xcoord;
+public double ycoord;
+public int dist;
+public double prevY;
+public double prevX;
+public int xgrid;
+* is changed but the turtle heading stays the same.
+*/
+public void fd (double dist) {
+prevX = xcoord;
+prevY = ycoord;
+

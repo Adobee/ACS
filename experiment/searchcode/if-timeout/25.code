@@ -1,0 +1,7 @@
+public volatile Timeout readTimeout;
+
+public void cancel() {
+if (cancelled.compareAndSet(false, true)) {
+if (requestTimeout != null) {
+requestTimeout.cancel();
+

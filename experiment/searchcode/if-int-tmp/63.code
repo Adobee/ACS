@@ -1,0 +1,10 @@
+public static void main(String[] args){
+int n,tmp;
+String str[];
+Scanner scan = new Scanner(System.in);
+n=Integer.parseInt(scan.next());
+str=scan.next().split(&quot;-&quot;,0);
+tmp = Integer.parseInt(str[0]);
+if((tmp%10) < 5){
+tmp -= (tmp%10);
+

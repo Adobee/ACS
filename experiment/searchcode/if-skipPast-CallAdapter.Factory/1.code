@@ -1,0 +1,7 @@
+private final List<Converter.Factory> converterFactories;
+private final List<CallAdapter.Factory> adapterFactories;
+private final Executor callbackExecutor;
+* @throws IllegalArgumentException if no call adapter available for {@code type}.
+*/
+public CallAdapter<?> nextCallAdapter(CallAdapter.Factory skipPast, Type returnType) {
+

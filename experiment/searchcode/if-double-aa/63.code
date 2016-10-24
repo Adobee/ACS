@@ -1,0 +1,10 @@
+double C = LinAlg.distance(p[2], p[0]);
+
+// sort sides so that AA >= BB >= CC
+double AA, BB, CC;
+if (A >= B &amp;&amp; A >= C) {
+AA = A;
+BB = Math.max(B, C);
+CC = Math.min(B, C);
+} else if (B >= A &amp;&amp; B >=C) {
+

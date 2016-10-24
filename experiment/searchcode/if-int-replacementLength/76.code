@@ -1,0 +1,4 @@
+public JavaScriptCompletionProposal(String replacementString,
+int replacementOffset, int replacementLength, Image image,
+int replacementOffset, int replacementLength, Image image,
+

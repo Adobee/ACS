@@ -1,0 +1,14 @@
+public static int[] totientSieve(int limit)
+{
+int phi[] = new int[limit + 1];
+for (int i = 0 ; i <= limit; i++)
+{
+phi[i] = i;
+}
+
+for (int i = 2 ; i <= limit ; i++ )
+{
+if (phi[i] == i)
+{
+for (int j = i ; j <= limit ; j += i)
+

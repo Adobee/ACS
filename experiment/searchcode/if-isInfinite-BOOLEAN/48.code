@@ -1,0 +1,11 @@
+super(domain, LambdaUtil.negate(excluded));
+_excluded = excluded;
+}
+
+public boolean isInfinite() {
+return IterUtil.isInfinite(_set) &amp;&amp; !_excluded.isInfinite();
+}
+
+public boolean hasFixedSize() {
+return IterUtil.hasFixedSize(_set) &amp;&amp; _excluded.hasFixedSize();
+

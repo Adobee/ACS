@@ -1,0 +1,7 @@
+helper.setSessionStarred(mSessionUri, starred, mTitleString);
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
+mTitleString = cursor.getString(SessionsQuery.TITLE);
+mSessionColor = cursor.getInt(SessionsQuery.COLOR);
+
+if (mSessionColor == 0) {
+

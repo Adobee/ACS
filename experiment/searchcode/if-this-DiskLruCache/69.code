@@ -1,0 +1,11 @@
+private JsonDiskCachingLayer(DiskLruCache diskLruCache, JsonAdapter<T> jsonAdapter) {
+this.diskLruCache = diskLruCache;
+this.jsonAdapter = jsonAdapter;
+}
+
+@Override
+snapshot = diskLruCache.get(key);
+
+if (snapshot == null) {
+Timber.d(&quot;Request for key &#39;%s&#39; from disk => no such cached value&quot;, key);
+

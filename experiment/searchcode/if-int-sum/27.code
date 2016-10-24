@@ -1,0 +1,10 @@
+package com.stanley.code;
+
+public class MaxSubArray {
+public int findMaxSubArray(int A[]){
+int maxSum=A[0];
+int sum=A[0];
+for(int i=1;i<A.length;i++)
+{
+if(sum<0) sum=0;
+

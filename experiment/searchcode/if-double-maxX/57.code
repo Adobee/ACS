@@ -1,0 +1,10 @@
+import com.graphics.lib.Point;
+
+public class CentreFinder implements Consumer<Point>{
+
+private Double maxX = null;
+public void accept(Point p) {
+if (maxX == null || p.x > maxX) maxX = p.x;
+if (minX == null || p.x < minX) minX = p.x;
+if (maxY == null || p.y > maxY) maxY = p.y;
+

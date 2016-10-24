@@ -1,0 +1,5 @@
+protected TeraSparseArrayByte(int sizeX, int sizeY, int sizeZ, byte[][] inflated, byte[] deflated) {
+public final int getEstimatedMemoryConsumptionInBytes() {
+if (inflated == null) {
+return 9;
+

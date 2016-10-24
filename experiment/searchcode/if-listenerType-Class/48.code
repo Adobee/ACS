@@ -1,0 +1,8 @@
+static int getPriority(Class<?> eventType, Class<?> listenerType) {
+ObjectIntMap<Class<?>> prioritiesByEvent = priorities.get(eventType);
+if (prioritiesByEvent == null) {
+prioritiesByEvent = new ObjectIntMap<Class<?>>();
+}
+
+if (prioritiesByEvent.containsKey(listenerType)) {
+

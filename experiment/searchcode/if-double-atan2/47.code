@@ -1,0 +1,8 @@
+double unit = sqx + sqy + sqz + sqw;
+double test = x*y + z*w;
+if (test > 0.499*unit)
+return 2 * Math.atan2(x, w);
+if (test < -0.499*unit)
+return -2 * Math.atan2(x, w);
+return Math.atan2(2 * y * w - 2 * x * z, sqx - sqy - sqz + sqw);
+

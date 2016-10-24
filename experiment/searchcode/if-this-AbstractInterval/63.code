@@ -1,0 +1,6 @@
+long thisStart = getStartMillis();
+long thisEnd = getEndMillis();
+if (thisStart > otherEnd) {
+return new LocalInterval(new LocalTime(otherEnd), new LocalTime(thisStart));
+} else if (otherStart > thisEnd) {
+

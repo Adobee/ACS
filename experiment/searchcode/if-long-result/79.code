@@ -1,0 +1,12 @@
+package srm449;
+public class OddDivisors {
+public long findSum(int N) {
+long result = 0;
+for (int i = 1; i <= N; i++) {
+result += f(i);
+}
+return result;
+}
+
+private long f(int N) {
+

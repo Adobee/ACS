@@ -1,0 +1,8 @@
+private long _optimizeDuration;
+
+private volatile boolean _optimizeScheduled;
+private final OptimizeType _optimizeType;
+public synchronized void setOptimizeDuration(long optimizeDuration) {
+if (_optimizeDuration != optimizeDuration) {
+_currentOptimizationTimerTask.cancel();
+

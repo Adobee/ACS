@@ -1,0 +1,12 @@
+public static void main(String... args) throws JMException, SecurityException, IOException, ClassNotFoundException {
+int execucoes = 30;
+int populationSize = 0;
+int maxEvaluations = 0;
+double crossoverProbability = 0;
+nsgaII.execute();
+
+} //main
+private final int populationSize;
+private final int maxEvaluations;
+private final double crossoverProbability;
+

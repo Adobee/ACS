@@ -1,0 +1,11 @@
+int bh = unScaledBG.getHeight();
+int bw = unScaledBG.getWidth();
+float bwtoh = (float) bw / bh;
+
+int nbw, nbh;
+if (h * bwtoh >= w) {
+nbw = (int) (nbh * bwtoh);
+
+Bitmap result = Bitmap.createScaledBitmap(unScaledBG, nbw, nbh, false);
+if (result != unScaledBG)
+

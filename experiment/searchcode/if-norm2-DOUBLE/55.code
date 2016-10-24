@@ -1,0 +1,11 @@
+//Y = | sum(x[i]^2 * y[i])   |
+//  | ...                  |
+//  | sum(x[i]^r-1 * y[i]) |
+
+public strictfp class LeastSquareFit {
+double c[]; // the coefficients of the fit
+int n = x.length;
+c = new double[n + 1];
+if (y.length != n) {
+System.out.println(&quot;Error in L.S.Fit inconsistent lengths.&quot;);
+

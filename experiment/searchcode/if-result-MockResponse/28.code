@@ -1,0 +1,8 @@
+public GCSMockClientBuilder
+(final String mockResponse, final int mockStatusCode) {
+transport = new MockHttpTransport() {
+result.setContentType(Json.MEDIA_TYPE);
+result.setContent(mockResponse);
+if (mockStatusCode > 299) {
+String jsonErrorMessage = &quot;Mocked server side error&quot;;
+

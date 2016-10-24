@@ -1,0 +1,14 @@
+public class PreferredStock extends Stock {
+
+private double fixedDividend;
+
+public PreferredStock(String symbol, double lastDividend, double parValue, double fixedDividend){
+public double calculateDividendYield(double marketPrice) {
+if (marketPrice <= 0){
+return 0;
+}
+return (this.fixedDividend * this.getParValue())/marketPrice;
+}
+
+}
+

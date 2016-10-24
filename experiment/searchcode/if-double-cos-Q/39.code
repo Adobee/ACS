@@ -1,0 +1,10 @@
+package com.bill.test;
+
+public class CosTest {
+
+public static final double PI=3.14159265358979323846;
+
+public double cos(double x,int n) {
+if (n==0) return 1d;
+return cos(x,n-1) + pow(-1, n) * (pow(x,2*n) / factorial(2*n));
+

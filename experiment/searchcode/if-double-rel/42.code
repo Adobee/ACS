@@ -1,0 +1,8 @@
+int i = (int)data[rel][row][1];
+
+double xui = predict(u, i, rel) ;
+double e = 1 + Math.exp(xui);
+
+for(int f = 0; f < getNumFeatures(); f++){
+double grad1 = wAlpha[rel]*(entityTypes[relations[rel][2]][i][f]/ e - reg*entityTypes[relations[rel][1]][u][f]);
+

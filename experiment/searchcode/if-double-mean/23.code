@@ -1,0 +1,19 @@
+sum = old_mean = new_mean=old_variance=new_variance = 0;
+}
+
+void add(double ecpm){
+events++;
+sum += ecpm;
+if(events == 1){
+return events;
+}
+
+double ecpmMean(){
+if(events > 0)
+return new_mean;
+else
+return 0;
+}
+
+double ecpmVariance(){
+

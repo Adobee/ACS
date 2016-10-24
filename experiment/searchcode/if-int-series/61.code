@@ -1,0 +1,6 @@
+List<SeriesBean> seriesBeans = new ArrayList<SeriesBean>();
+if(rootObject.has(&quot;series_list&quot;)){
+JSONArray seriesArray = rootObject.getJSONArray(&quot;series_list&quot;);
+for (int i = 0; i < seriesArray.length(); i++) {
+JSONObject seriesObject = seriesArray.getJSONObject(i);
+

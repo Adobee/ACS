@@ -1,0 +1,10 @@
+private long cacheCapcity = 0, expireAfterWrite = -1,
+expireAfterAccess = -1;
+private boolean cacheNull = false;
+private long cacheNullExpiry = DEFAULT_CACHE_NULL_EXPIRY;
+
+public void init() {
+super.init();
+if (cacheManager != null) {
+if (cacheCapcity <= 0) {
+

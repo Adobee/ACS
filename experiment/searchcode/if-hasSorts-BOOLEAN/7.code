@@ -1,0 +1,15 @@
+public Sorts getSorts(String sortsName) throws Exception {
+if(!this.hasSorts(sortsName)){
+Project project = this.getProject();
+
+final String projectBasePath = project.getStringProperty(&quot;projectBasePath&quot;);
+//-------------------------------------------------------------------------
+
+/**
+*
+* @param sortsName
+* @return
+*/
+public boolean hasSorts(String sortsName){
+return this.sorts.containsKey(sortsName);
+

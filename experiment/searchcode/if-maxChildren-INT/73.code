@@ -1,0 +1,11 @@
+private String           jobName;
+
+private String           jobFilename;
+
+private int              maxChildren;
+
+/**
+* @param jobMeta the job metadata to keep track of (with maximum 5000 children)
+jobTrackers = new LinkedList<JobTracker>();
+maxChildren = Const.toInt(EnvUtil.getSystemProperty(Const.KETTLE_MAX_JOB_TRACKER_SIZE), 5000);
+

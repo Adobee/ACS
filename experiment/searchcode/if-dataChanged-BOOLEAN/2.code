@@ -1,0 +1,11 @@
+return available;
+}
+
+public static void dataChanged(android.content.Context context) {
+if (available()) {
+if (LOCAL_LOGV) Log.v(TAG, &quot;dataChanged()&quot;);
+new BackupManager(context).dataChanged();
+}
+}
+}
+

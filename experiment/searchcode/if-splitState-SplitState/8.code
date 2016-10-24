@@ -1,0 +1,13 @@
+int bestSegment;
+for (RunSplit r : getRunSplits()) {
+if (r.getState() == SplitState.PAST) {
+time = r.getTime();
+for(RunSplit r : getRunSplits()){
+if(r.getUrnSplit().isBlankSplit() &amp;&amp; r.getState() == SplitState.PAST){
+list.add(r);
+}
+}
+return list;
+}
+}
+

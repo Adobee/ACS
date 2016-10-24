@@ -1,0 +1,16 @@
+int p;
+char[] cs;
+
+boolean expr() {
+boolean res = term();
+if (cs[p] == &#39;|&#39;) {
+p++;
+res |= expr();
+}
+return res;
+}
+
+boolean term() {
+boolean res = fact();
+if (cs[p] == &#39;&amp;&#39;) {
+

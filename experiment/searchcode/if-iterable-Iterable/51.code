@@ -1,0 +1,10 @@
+import jedi.functional.Filter;
+
+public class Complement<T> implements Filter<T> {
+
+private final Iterable<T> iterable;
+private Boolean contains(T a) {
+for (T b : iterable) {
+if (a.equals(b)) {
+return true;
+

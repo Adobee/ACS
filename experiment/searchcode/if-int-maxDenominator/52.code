@@ -1,0 +1,9 @@
+textView.append(msg + &quot;\n&quot;);
+}
+
+protected Point approxFraction(float n, int maxDenominator) {
+float bestError = 0;
+int bestDenominator = 0;
+for (int i=1; i<=maxDenominator; i++) {
+float error = Math.abs(n - 1f * Math.round(n * i) / i);
+

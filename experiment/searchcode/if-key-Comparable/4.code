@@ -1,0 +1,10 @@
+package cache;
+
+public interface Cache<K extends Comparable, V> {
+V get(K key);
+void put(K key, V value);
+class Pair<K extends Comparable, V> implements Comparable<Pair> {
+public K key;
+public V value;
+@Override
+

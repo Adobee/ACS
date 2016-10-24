@@ -1,0 +1,8 @@
+for (int i = 0; i < poolSize; i++) {
+if (pool[i].isAvailable()) {
+pool[i].assign(task);
+int occupied = 0;
+for (int i = 0; i < poolSize; i++) {
+WorkerThread thread = pool[i];
+if (thread.isOccupied()) {
+

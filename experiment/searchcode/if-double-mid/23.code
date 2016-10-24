@@ -1,0 +1,13 @@
+while (low <= high) {
+int mid = low + (high - low) / 2;
+
+if (mid == x / mid) {
+high = x;
+}
+
+
+while (low <= high) {
+double mid = low + (high - low) / 2;
+
+if (Math.abs(x - mid * mid) <= precision) {
+

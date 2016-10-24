@@ -1,0 +1,14 @@
+private String _sort;
+private boolean _ascending;
+
+protected SortableList(String defaultSortColumn)
+{
+_sort = defaultSortColumn;
+_ascending = isDefaultAscending(defaultSortColumn);
+}
+
+/**
+* Sort the list.
+*/
+protected abstract void sort(String column, boolean ascending);
+

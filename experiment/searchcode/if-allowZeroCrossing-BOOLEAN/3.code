@@ -1,0 +1,10 @@
+return shift(base, delta, false);
+}
+
+public static Range shift(Range base, double delta, boolean allowZeroCrossing) {
+if (base == null) {
+throw new IllegalArgumentException(&quot;Null &#39;base&#39; argument.&quot;);
+}
+if (allowZeroCrossing) {
+return new Range(base.getLowerBound() + delta, base.getUpperBound() + delta);
+

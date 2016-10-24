@@ -1,0 +1,14 @@
+TermInfo(int df, long fp, long pp) {
+docFreq = df;
+freqPointer = fp;
+proxPointer = pp;
+}
+
+TermInfo(TermInfo ti) {
+proxPointer = ti.proxPointer;
+}
+
+final void set(int df, long fp, long pp) {
+docFreq = df;
+freqPointer = fp;
+

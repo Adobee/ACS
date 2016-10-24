@@ -1,0 +1,9 @@
+private int withdrawLimit;
+private int remainingWithdrawals;
+
+public ForeldreSpar(double interestRate, int withdrawLimit) {
+@Override
+public void withdraw(double amount) {
+if (remainingWithdrawals <= 0)
+throw new IllegalStateException(&quot;All withdrawals for the year have been used up.&quot;);
+

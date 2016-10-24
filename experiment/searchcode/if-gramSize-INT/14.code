@@ -1,0 +1,9 @@
+public static final int DEFAULT_MAX_NGRAM_SIZE = 2;
+
+private int minGram, maxGram;
+private int gramSize;
+public NGramTokenizer(Reader input, int minGram, int maxGram) {
+super(input);
+if (minGram < 1) {
+throw new IllegalArgumentException(&quot;minGram must be greater than zero&quot;);
+

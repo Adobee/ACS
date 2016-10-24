@@ -1,0 +1,8 @@
+Stack<Integer[]> s2 = new Stack<Integer[]>();
+
+public void push(int x) {
+s1.push(x);
+if (s2.isEmpty() || s2.peek()[0] > x) {
+s2.push(new Integer[]{x, 1});
+} else if (s2.peek()[0] == x){
+

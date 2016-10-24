@@ -1,0 +1,17 @@
+public abstract class TwoSATSolver {
+
+protected TwoSATProblem problem;
+
+public TwoSATSolver(TwoSATProblem problem) {
+if (problem == null) {
+this.problem = problem;
+}
+
+public abstract void solve();
+
+public abstract boolean isSatisfiable();
+
+public abstract Map<Integer, Boolean> getSolution();
+
+}
+

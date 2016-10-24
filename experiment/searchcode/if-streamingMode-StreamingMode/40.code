@@ -1,0 +1,11 @@
+private final boolean	streamingMode;
+private long			positionBufferByteWriteOffset;
+private IntBuffer		indirectBuffer;
+
+
+public VertexArrayObject(float[] initialPositions, float[] initialColors, int primitiveMode, int verticesTargetCount) {
+cVboId = glGenBuffers();
+glBindBuffer(GL_ARRAY_BUFFER, cVboId);
+if (streamingMode) {
+//System.out.println(&quot;color data in streaming mode: &quot; + initialColors.length);
+

@@ -1,0 +1,8 @@
+public synchronized Query newQuery(final String queryType, final String queryStartObject)
+{
+if (queryType.equals(Query.SIMPLE_QUERY))
+{
+return new SimpleQuery(queryStartObject);
+}
+/*else if (queryType.equals(Query.ADVANCED_QUERY))
+

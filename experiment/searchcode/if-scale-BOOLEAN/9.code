@@ -1,0 +1,11 @@
+this.scaleInterval = scaleMinimunIntervalDifference;
+}
+
+@Override
+public boolean onScale(ScaleGestureDetector detector) {
+scaleFactor *= detector.getScaleFactor();
+float scaleDifference = lastScaleFactor - scaleFactor;
+
+//Trigger event only if there was a difference on the scale
+if(Math.abs(scaleDifference) >= scaleInterval)
+

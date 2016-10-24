@@ -1,0 +1,11 @@
+public GoalContainer getContainer() {
+final GoalType goal = getGoal();
+if (goal == null)
+return null;
+
+return goal.getContainer();
+}
+
+public final GoalType getGoal() {
+return getUserObject();
+

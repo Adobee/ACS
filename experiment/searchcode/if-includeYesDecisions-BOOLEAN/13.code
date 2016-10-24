@@ -1,0 +1,10 @@
+public void handleRequest(final RestRequest request, final RestChannel channel, final Client client) {
+ClusterAllocationExplainRequest req;
+if (RestActions.hasBodyContent(request) == false) {
+return;
+}
+}
+
+try {
+req.includeYesDecisions(request.paramAsBoolean(&quot;include_yes_decisions&quot;, false));
+

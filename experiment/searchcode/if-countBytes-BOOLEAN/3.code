@@ -1,0 +1,11 @@
+private static final Logger LOG = Logger.getLogger(Receiver.class);
+
+
+private volatile boolean receiveComplete;
+
+private static final int DEFAULT_CUTOFF_BUFFER = 64000;
+while (countBytes >= 0) {
+//System.out.println(&quot;Read bytes &quot; + countBytes);
+if(countBytes > 0){
+byte[]data = new byte[countBytes];
+

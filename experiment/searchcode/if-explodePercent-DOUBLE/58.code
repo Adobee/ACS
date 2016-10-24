@@ -1,0 +1,9 @@
+* @return The amount that a section should be &#39;exploded&#39;.
+*/
+public double getExplodePercent(int section) {
+double result = 0.0;
+if (this.explodePercentages != null) {
+Number percent = (Number) this.explodePercentages.get(section);
+if (percent != null) {
+result = percent.doubleValue();
+

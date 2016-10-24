@@ -1,0 +1,12 @@
+public int compareTo(Star o) {
+double diff = Math.signum(o.distance() - this.distance());
+if (diff > 0) {
+return 1;
+} else if (diff < 0) {
+return -1;
+} else {
+return 0;
+}
+}
+}
+

@@ -1,0 +1,11 @@
+public class InteliCwDB extends CwDB {
+private int minWordLength, maxWordLength;
+
+public InteliCwDB(String filename) throws FileNotFoundException, IOException {
+Entry entry;
+
+for(int i = 0; i < dict.size(); i++) {
+entry = dict.get(i);
+
+if (entry.getWord().matches(pattern)) {
+

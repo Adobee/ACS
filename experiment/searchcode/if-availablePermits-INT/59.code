@@ -1,0 +1,11 @@
+private int putPosition = 0, takePosition = 0;
+
+@SuppressWarnings(&quot;unchecked&quot;)
+public SemaphoreCollection(int capacity) {
+if (capacity <= 0)
+return availableSpaces.availablePermits() == 0;
+}
+
+public void put(E x) throws InterruptedException {
+if (availableSpaces.tryAcquire(2, TimeUnit.SECONDS)) {
+

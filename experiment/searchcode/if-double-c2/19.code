@@ -1,0 +1,12 @@
+private static final long serialVersionUID = 7093033866379803297L;
+private double r;	// real
+private double i;	// imaginary
+
+public ComplexNumber(double rr, double ii) {
+r = rr;
+i = ii;
+}
+
+public ComplexNumber(Double rr, Double ii) {
+r = rr;
+

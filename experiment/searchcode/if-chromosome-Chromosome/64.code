@@ -1,0 +1,9 @@
+boolean valid = true;
+for (int j = 0; j < chromosome.getLength() - 1; j++) {
+if (adjacencyMatrix.get(chromosome.getNodeValueByIndex(j)).get(chromosome.getNodeValueByIndex(j + 1)) == 0) {
+break;
+}
+}
+if (!valid) {
+System.out.println(&quot;INVALID CHROMOSOME &quot; + chromosome);
+

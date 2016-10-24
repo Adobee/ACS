@@ -1,0 +1,12 @@
+private int currentRoll = 0;
+
+public void roll(int pins){
+rolls[currentRoll++] = pins;
+}
+
+public boolean isSpare(int indexFrame){
+if(rolls[indexFrame] + rolls[indexFrame+1] == 10)
+return true;
+else
+return false;
+

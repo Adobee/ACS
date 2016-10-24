@@ -1,0 +1,8 @@
+boolean annotationsVisible = VersioningSupport.getPreferences().getBoolean(VersioningSupport.PREF_BOOLEAN_TEXT_ANNOTATIONS_VISIBLE, false);
+FileSystem fileSystem = null;
+if (annotationsVisible &amp;&amp; file != null &amp;&amp; (status &amp; STATUS_TEXT_ANNOTABLE) != 0) {
+String annotation = af.format.format(arguments, new StringBuffer(), null).toString().trim();
+if(annotation.equals(af.emptyFormat)) {
+return &quot;&quot;; //NOI18N
+} else {
+

@@ -1,0 +1,9 @@
+public byte[] read() {
+try {
+byte[] in = new byte[4];
+readAll(in.length, in);
+int msgSize = Util.byte2Int(in);
+readAll(msgSize,msg);
+List<byte[]> tmp = Util.secureUnpack(msg);
+int msgNumber = Integer.parseInt(new String(tmp.get(0)));
+

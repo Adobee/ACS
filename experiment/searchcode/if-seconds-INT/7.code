@@ -1,0 +1,11 @@
+seconds = new HashMap<Integer, Seconds>();
+}
+
+Seconds retrieveSeconds(int numeral) {
+
+Seconds result = getSeconds(numeral);
+
+if (result == null) {
+result = new Seconds(numeral);
+addSeconds(numeral, result);
+

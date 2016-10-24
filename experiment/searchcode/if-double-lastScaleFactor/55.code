@@ -1,0 +1,7 @@
+public class ScrollAndZoomDetector implements GestureDetector.OnGestureListener, ScaleGestureDetector.OnScaleGestureListener, GestureDetector.OnDoubleTapListener {
+
+private final ScrollAndZoomListener scrollAndZoomListener;
+@Override
+public boolean onDoubleTapEvent(MotionEvent e) {
+if (e.getActionMasked() == MotionEvent.ACTION_UP) {
+

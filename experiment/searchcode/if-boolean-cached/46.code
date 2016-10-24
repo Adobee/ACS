@@ -1,0 +1,10 @@
+public class CachedNegationStrategy extends DefaultNegationStrategy {
+private BooleanCache _cache;
+
+public CachedNegationStrategy() {
+this(new DefaultBooleanCache());
+}
+
+public CachedNegationStrategy(BooleanCache cache) {
+_cache = cache;
+

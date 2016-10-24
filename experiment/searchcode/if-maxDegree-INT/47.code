@@ -1,0 +1,10 @@
+public static int degree(Graph graph, int v) {
+if (graph == null || v < 0 || v >= graph.vertices()) {
+return -1;
+}
+int degree = 0;
+for (int s = 0; s < graph.vertices(); s++) {
+int degree = degree(graph, s);
+if (degree > maxDegree) {
+maxDegree = degree;
+

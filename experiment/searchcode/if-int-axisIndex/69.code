@@ -1,0 +1,9 @@
+final StringBuilder wkt = new StringBuilder();
+final int srid = boundingBox.getCoordinateSystemId();
+if (geometryFactory == null) {
+wkt.append(axisCount);
+}
+wkt.append(&quot;(&quot;);
+for (int axisIndex = 0; axisIndex < axisCount; axisIndex++) {
+if (axisIndex > 0) {
+

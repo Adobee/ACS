@@ -1,0 +1,11 @@
+double tmp = sqrt;
+sqrt = sqrt(sqrt, x);
+if (Double.isNaN(sqrt) || tmp - sqrt < 1) {
+break;
+}
+}
+return (int) sqrt;
+}
+
+private double fx(double x, double y) {
+

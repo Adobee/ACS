@@ -1,0 +1,10 @@
+int count = 0;
+
+while (true) {
+DatagramPacket rec = server.read();
+if (rec != null) {
+byte[] sendBuffer = (&quot;CLIENT2 - &quot; + format.format(Date.from(Instant.now()))).getBytes();
+client2.write(sendBuffer);
+byte[] rec = client2.read();
+if (rec != null) System.out.println(&quot;[CLIENT2] Received &quot; + new String(rec));
+

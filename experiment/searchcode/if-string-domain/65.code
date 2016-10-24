@@ -1,0 +1,11 @@
+import com.suiding.util.LeSouException;
+
+public class DomainFactory {
+
+static List<String> AdressDB = null;
+
+public static List<String> getAdressDB() {
+if (AdressDB == null) {
+try {
+AdressDB = DomainFactory.AddressDomain.GetAddressDB();
+

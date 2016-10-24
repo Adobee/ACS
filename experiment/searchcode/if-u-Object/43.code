@@ -1,0 +1,8 @@
+public static Object convertToStandardType(Object object){
+Object convertedObject=null;
+if(object instanceof String){
+convertedObject=object;
+}else if(object instanceof Float){
+convertedObject=new BigDecimal((Float)object);
+}else if(object instanceof Double){
+

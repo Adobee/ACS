@@ -1,0 +1,10 @@
+for(int j = 0; j < game.entities.size(); j++) {
+Entity b = game.entities.get(j);
+
+if(a != b) {
+boundsB.x = b.x - (b.w / 2);
+boundsB.width = b.w;
+boundsB.height = b.h;
+
+if(nextBoundsA.intersects(boundsB)) {
+

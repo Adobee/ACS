@@ -1,0 +1,9 @@
+public int closestValue(TreeNode root, double target) {
+if(root == null) {
+return -1;
+}
+double minDiff = Double.POSITIVE_INFINITY;
+int res = 0;
+while(root != null) {
+if(minDiff > Math.abs((double)root.val - target)) {
+

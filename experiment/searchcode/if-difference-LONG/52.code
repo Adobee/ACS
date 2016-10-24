@@ -1,0 +1,11 @@
+public String getTimeSinceReport()
+{
+Date dateNow = new Date();
+String TimeSince = &quot;Seconds&quot;;
+
+long Difference = (dateNow.getTime() - ReportedTime.getTime()) / 1000;  //answer in seconds
+TimeSince = Difference + &quot; Seconds ago&quot;;
+if (Difference >= 60)
+{
+Difference = Difference / 60;
+

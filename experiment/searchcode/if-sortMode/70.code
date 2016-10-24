@@ -1,0 +1,9 @@
+HashMap<String, String> dataMapR = (HashMap<String, String>)rhs;
+
+if(sortMode == BookListSort.TITLE_ASC) {
+// タイトル昇順
+String argL = dataMapL.get(&quot;main&quot;);
+String argR = dataMapR.get(&quot;main&quot;);
+return argL.compareTo(argR) * -1;
+} else if(sortMode == BookListSort.AUTHOR_ASC) {
+

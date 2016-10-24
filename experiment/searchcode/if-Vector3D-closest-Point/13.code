@@ -1,0 +1,7 @@
+/* 105:    */   public Vector3D closestPoint(Line line)
+/* 106:    */   {
+/* 107:193 */     double cos = this.direction.dotProduct(line.direction);
+/* 120:    */   {
+/* 121:214 */     Vector3D closest = closestPoint(line);
+/* 122:215 */     return line.contains(closest) ? closest : null;
+

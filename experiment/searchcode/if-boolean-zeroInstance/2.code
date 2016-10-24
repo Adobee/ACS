@@ -1,0 +1,6 @@
+public AggregateState(Dictionary dict, T zeroInstance, Machine<T> machine, int idx) {
+this.index = idx;
+this.size = machine.size();
+this.transitionFunction = state.getTransitionFunction().toRomdd(dict).remap(new VectorTransformer<T>(machine, zeroInstance));
+labelVector = new TreeMap<Integer,String>();
+

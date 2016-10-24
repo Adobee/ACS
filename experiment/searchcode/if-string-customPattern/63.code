@@ -1,0 +1,9 @@
+return format((Object) date);
+}
+
+public String format(final Object date) {
+if (date == null) {
+final Collection<String> fieldNames = CharSequenceUtils.listParams(builder, FIELD_DELIMITER_START, FIELD_DELIMITER_END);
+final String ret;
+if (CollectionUtils.isEmptyOrNull(fieldNames)) {
+

@@ -1,0 +1,12 @@
+import org.apache.http.client.methods.RequestBuilder;
+import org.apache.http.entity.ByteArrayEntity;
+import org.apache.http.entity.InputStreamEntity;
+InputStreamEntity entity = new InputStreamEntity(request.getInputStream());
+
+byte[] bytes = EntityUtils.toByteArray(entity);
+if (bytes.length > 0) {
+requestBuilder.setEntity(new ByteArrayEntity(bytes));
+}
+}
+}
+

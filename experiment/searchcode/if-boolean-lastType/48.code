@@ -1,0 +1,7 @@
+public class DeploymentExceptionProvider implements ResourceProvider {
+private Class<?> lastType;
+
+@Override
+public boolean canProvide(final Class<?> type) {
+if (DeploymentExceptionObserver.availableExceptionTypes().contains(type)) {
+

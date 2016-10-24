@@ -1,0 +1,7 @@
+private boolean shouldRefresh(){
+long now = System.currentTimeMillis();
+if(lastAccess < System.currentTimeMillis() - timeout
+public boolean getBooleanValue(boolean defaultValue){
+if(!booleanIsInit || shouldRefresh()){
+booleanIsInit = true;
+

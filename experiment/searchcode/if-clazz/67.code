@@ -1,0 +1,14 @@
+ActionContext.getContext().put(&quot;clazzMenuDtoList&quot;, clazzMenuDtoList);
+return &quot;clazzMenuList&quot;;
+}
+
+public String addClazzMenu() {
+if (clazzMenuName != null &amp;&amp; !&quot;&quot;.equals(clazzMenuName)) {
+clazzService.editClazzMenu(clazzMenuId, clazzMenuName);
+flag = &quot;1&quot;;
+return &quot;json&quot;;
+}
+
+public String delClazzMenu() {
+if (clazzMenuId != null) {
+

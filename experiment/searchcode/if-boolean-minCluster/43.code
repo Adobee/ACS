@@ -1,0 +1,11 @@
+err += Math.pow(trainData.get(i)[j] - clusters[k].prototype[j], 2);
+err = Math.sqrt(err);
+if (err < minerr) {
+mincluster = k;
+minerr = err;
+}
+}
+clusters[mincluster].currentMembers.add(i);
+}
+/// Check if we converged
+

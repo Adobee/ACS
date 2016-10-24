@@ -1,0 +1,15 @@
+public ChainAction()
+{
+this(null);
+}
+
+public ChainAction(ChainAction nextAction)
+{
+this.nextAction = nextAction;
+this.doExecuteAction();
+
+if (this.nextAction != null) nextAction.executeAction();
+}
+
+protected abstract void doExecuteAction();
+

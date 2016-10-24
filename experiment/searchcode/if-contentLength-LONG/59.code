@@ -1,0 +1,6 @@
+public class ContentLengthFilter extends FilteredDataEmitter {
+public ContentLengthFilter(long contentLength) {
+protected void report(Exception e) {
+if (e == null &amp;&amp; totalRead != contentLength)
+e = new PrematureDataEndException(&quot;End of data reached before content length was read&quot;);
+

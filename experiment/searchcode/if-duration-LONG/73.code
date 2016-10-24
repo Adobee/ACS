@@ -1,0 +1,7 @@
+/*     */   public static Duration standardDays(long paramLong)
+/*     */   {
+/*  66 */     if (paramLong == 0L) {
+/*  67 */       return ZERO;
+/*     */     }
+/*  69 */     return new Duration(FieldUtils.safeMultiply(paramLong, 86400000));
+

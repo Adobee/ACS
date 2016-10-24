@@ -1,0 +1,10 @@
+public class MyMultipartResolver extends CommonsMultipartResolver {
+
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+
+/*	http://kindeditor.net/docs/upload.html  图片上传的时候提交2个参数
+dir: 上传类型，分别为image、flash、media、file*/
+String dir = request.getParameter(&quot;dir&quot;);
+if(dir!=null){  // kindeditor 上传图片的时候 不进行request 的转换
+

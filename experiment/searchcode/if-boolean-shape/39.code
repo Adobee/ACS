@@ -1,0 +1,10 @@
+import java.util.Set;
+
+public class ShapeGroup implements Shape {
+
+private boolean readOnly;
+
+private Set<Shape> shapes;
+public ShapeGroup(Shape[] shapes, boolean readOnly) {
+this.shapes = new HashSet<>(Arrays.asList(shapes));
+

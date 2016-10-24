@@ -1,0 +1,8 @@
+public void testConnectMissingData()
+{
+Configuration.setInstance(new Configuration());
+assertFalse(new SSHProtocol().connect());
+Configuration configuration = Configuration.getInstance();
+configuration.setUsername(&quot;test&quot;);
+configuration.setRemoteip(&quot;127.0.0.1&quot;);
+

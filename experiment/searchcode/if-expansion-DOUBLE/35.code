@@ -1,0 +1,9 @@
+public static double epsilon(double x) {
+if (Math.abs(x) > 1e-10) {
+return Math.expm1(x) / x;
+* @return the result
+*/
+public static double epsilonP(double x) {
+if (Math.abs(x) > 1e-7) {
+return ((x - 1) * Math.expm1(x) + x) / x / x;
+

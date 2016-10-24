@@ -1,0 +1,9 @@
+* @return {@code true} if the actual version is equal or greater than the required version
+*/
+public static boolean isVersionAtLeast(Version requiredVersion) {
+return version().atLeast(requiredVersion);
+* @return true if this version is equal to or greater than the specified version
+*/
+public boolean atLeast(Version requiredVersion) {
+return this.value >= requiredVersion.value;
+

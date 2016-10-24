@@ -1,0 +1,11 @@
+//		position.y = camera.position.y + (target.y - camera.position.y) * .1f;
+camera.position.set(position);
+camera.update();
+}
+
+public static void boundary(Camera camera, float startX, float startY, float width, float height){
+
+Vector3 position = camera.position;
+
+if(position.x < startX){
+

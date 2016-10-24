@@ -1,0 +1,13 @@
+int i = allUpgrades.indexOf(currentUpgrade);
+
+if (i == allUpgrades.size() - 1) {
+return false;
+} else {
+return gold - nextUpgrade.getCost() >= 0;
+}
+}
+
+public T getNextUpgrade() {
+int i = allUpgrades.indexOf(currentUpgrade);
+if (i != allUpgrades.size() - 1) {
+

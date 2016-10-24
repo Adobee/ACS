@@ -1,0 +1,17 @@
+public class SizeLimitedMap<K, V> extends TreeMap<K, V> {
+
+private int maximumSize;
+
+public SizeLimitedMap(int maximumSize) {
+V put = super.put(key, value);
+checkSize();
+return put;
+}
+
+private void checkSize() {
+if (size() > maximumSize) {
+pollFirstEntry();
+}
+}
+}
+

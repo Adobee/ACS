@@ -1,0 +1,9 @@
+public String addBinary(String a, String b) {
+int lenA = a.length();
+int lenB = b.length();
+char[] longStr = lenA >= lenB ? a.toCharArray() : b.toCharArray();
+char[] shortStr = lenA >= lenB ? b.toCharArray() : a.toCharArray();
+int longLen = Math.max(lenA, lenB);
+int shortLen = Math.min(lenA, lenB);
+char[] sum = new char[longLen];
+

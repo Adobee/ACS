@@ -1,0 +1,11 @@
+public static double LeftGaussian(double c,double sigma,double x){
+if(x<=c)return 1;
+
+double value=-0.5*(((x-c)*(x-c))/(sigma*sigma));
+value=Math.pow(Math.E, value);
+
+return value;
+}
+
+public static double Linear(double min, double max,double value){
+

@@ -1,0 +1,11 @@
+private static final long serialVersionUID = 5610038803601000225L;
+
+private Word original;
+
+public CopyWord(Word original) {
+super(original);
+this.original = original;
+super.copyTo(to);
+if (to instanceof CopyWord) {
+((CopyWord) to).original = this.original;
+

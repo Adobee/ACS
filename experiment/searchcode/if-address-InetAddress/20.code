@@ -1,0 +1,6 @@
+inetAddress = InetAddress.getByAddress(ip);
+if (inetAddress.isReachable(1000)) {
+System.out.println(inetAddress + &quot; machine is turned on and can be pinged&quot;);
+model.addElement(inetAddress + &quot; &quot; + inetAddress.getCanonicalHostName());
+} else if (!inetAddress.getHostAddress().equals(inetAddress.getHostName())) {
+

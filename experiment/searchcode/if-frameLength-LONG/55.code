@@ -1,0 +1,12 @@
+public AACADTSPacketizer() throws IOException {
+super();
+}
+
+public void start() {
+if (!running) {
+running = true;
+//Log.d(TAG,&quot;frameLength: &quot;+frameLength+&quot; protection: &quot;+protection);
+
+// Read CRS if any
+if (!protection) is.read(buffer,rtphl,2);
+

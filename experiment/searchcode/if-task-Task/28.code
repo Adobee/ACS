@@ -1,0 +1,8 @@
+public class Backlog {
+private HashMap<String,Task> taskMap;
+public Backlog(){
+taskMap = new HashMap<String,Task>();
+for(java.util.Map.Entry<String, Task> entry : taskMap.entrySet()){
+Task task = entry.getValue();
+if(!task.getStatus().equals(Task.STATUS_DONE)) {
+

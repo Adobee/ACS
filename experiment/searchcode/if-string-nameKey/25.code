@@ -1,0 +1,10 @@
+public class ProfileFieldProperty {
+private String namePath;
+private String nameKey;
+private List<String> pathToProperty;
+
+public ProfileFieldProperty() {
+this.nameKey = nameKey;
+if ( pathToProperty == null ) {
+pathToProperty = new ArrayList<String>();
+

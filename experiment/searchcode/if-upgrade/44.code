@@ -1,0 +1,10 @@
+* @param upgrade
+*/
+public static void registerUpgrade(TurretUpgrade upgrade) {
+if (upgradeList.contains(upgrade)) {
+ElementalCraft.logger.warning(&quot;Attempt to register upgrade &quot; + upgrade.getClass().getName() + &quot; twice!&quot;);
+return;
+}
+for (TurretUpgrade upgradeCheck : upgradeList) {
+if (upgradeCheck.getNBTString().equalsIgnoreCase(upgrade.getNBTString())) {
+

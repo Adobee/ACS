@@ -1,0 +1,6 @@
+public static OriginalIndices readOptionalOriginalIndices(StreamInput in) throws IOException {
+if (in.getVersion().onOrAfter(Version.V_1_4_0_Beta1)) {
+boolean empty = originalIndices == EMPTY;
+out.writeBoolean(empty);
+if (!empty) {
+

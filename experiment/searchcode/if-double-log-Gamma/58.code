@@ -1,0 +1,8 @@
+public static double logLikelihood(double[] parameters, double[] data) {
+if (data.length != parameters.length)
+double l = 0;
+double sum = 0;
+for (double p : params) {
+if (p > MIN_NZ_PARAM) {
+l += Gamma.logGamma(p);
+

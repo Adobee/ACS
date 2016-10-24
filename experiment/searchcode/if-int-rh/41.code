@@ -1,0 +1,9 @@
+return height(root)!=-1;
+}
+
+public int height(TreeNode node){
+if(node==null) return 0;
+int lh = height(node.left);
+int rh = height(node.right);
+if(lh==-1||rh==-1)return -1;
+

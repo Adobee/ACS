@@ -1,0 +1,9 @@
+Layer oldLayer = this.layer;
+Layer newLayer = layer == null ? Layer.DEFAULT : layer;
+
+if (oldLayer != newLayer) {
+this.layer = newLayer;
+Scene scene = getScene();
+if (scene != null &amp;&amp; isActive()) {
+scene.layerManager.layerChanged(this, oldLayer, newLayer);
+

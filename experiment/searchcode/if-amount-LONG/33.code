@@ -1,0 +1,16 @@
+/** getter for amount.*/
+public double getAmount() {
+return amount;
+}
+public boolean equals(Object o){
+if (!(o instanceof NegativeAmountException)){
+NegativeAmountException e = (NegativeAmountException) o;
+if (this.amount==e.amount){
+return true;
+}
+else{
+return false;
+}
+}
+}
+

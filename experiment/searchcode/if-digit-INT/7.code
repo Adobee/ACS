@@ -1,0 +1,11 @@
+Arrays.fill(a[0][1][1], 0);
+a[0][0][0][0] = 0;
+a[0][0][0][9] = 0;
+a[0][0][1][9] = 1;
+
+for (int n = 1; n < limit; n++) {
+for (int digit = 0; digit < 10; digit++) {
+if (digit == 0) {
+a[n][1][0][digit + 1] += a[n - 1][1][0][digit];
+a[n][1][1][digit + 1] += a[n - 1][1][1][digit];
+

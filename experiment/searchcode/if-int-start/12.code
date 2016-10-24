@@ -1,0 +1,11 @@
+int m = matrix.length;
+if(m == 0) return 0;
+
+int n = matrix[0].length;
+if(n==0) return 0;
+
+int[][] dp = new int[m][n];
+int max = 0;
+for(int startX=0;startX<m;startX++){
+for(int startY=0;startY<n;startY++){
+

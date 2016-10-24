@@ -1,0 +1,12 @@
+public static ArrayList<Integer> maxSubArraySum(int[] a)
+{
+int curSum = 0, startIndex = 0;
+int maxSum = 0, maxEndIndex = 0, maxStartIndex = 0;
+
+for (int i = 0; i < a.length; i++)
+{
+curSum += a[i];
+if (curSum > maxSum)
+{
+maxSum = curSum;
+

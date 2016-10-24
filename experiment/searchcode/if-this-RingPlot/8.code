@@ -1,0 +1,6 @@
+List<RelatorioProjetosPorGerenteVO> lstDadosRelatorio = relatorioService.recuperarDadosProjetosPorGerente(login);
+if (!lstDadosRelatorio.isEmpty()){
+final HashMap<String, Object> reportParametersMap = new HashMap<String, Object>();
+reportParametersMap.put(RPT_NOME, RPT_NOME_RELATORIO_PROJETOS_POR_GERENTE);
+if (tipoArquivo.equals(TipoArquivoConstantes.XLS.name())){
+

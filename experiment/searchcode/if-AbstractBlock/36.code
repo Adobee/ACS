@@ -1,0 +1,7 @@
+import org.seasar.fisshplate.consts.FPConsts;
+import org.seasar.fisshplate.core.element.AbstractBlock;
+import org.seasar.fisshplate.core.element.Root;
+public void addBlockElement(AbstractBlock block){
+if (! isBlockStackBlank()) {
+AbstractBlock parentBlock = (AbstractBlock) blockStack.lastElement();
+

@@ -1,0 +1,10 @@
+* must be computed (setting this flag to false is RESERVED for the internal recursive call)
+*/
+private DfpField(final int decimalDigits, final boolean computeConstants) {
+
+this.radixDigits = (decimalDigits < 13) ? 4 : (decimalDigits + 3) / 4;
+* @param one constant with value 1 at desired precision
+* @return exp(a)
+*/
+public static Dfp computeExp(final Dfp a, final Dfp one) {
+

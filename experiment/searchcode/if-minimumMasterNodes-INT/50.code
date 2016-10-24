@@ -1,0 +1,8 @@
+private final NodeComparator nodeComparator = new NodeComparator();
+
+private final int minimumMasterNodes;
+this.minimumMasterNodes = settings.getAsInt(&quot;discovery.zen.minimum_master_nodes&quot;, -1);
+}
+
+public boolean hasEnoughMasterNodes(Iterable<DiscoveryNode> nodes) {
+

@@ -1,0 +1,10 @@
+.put(&quot;index.number_of_replicas&quot;, numberOfReplicas())
+.build();
+}
+
+static long numDocs;
+static long precisionThreshold;
+private void assertCount(Cardinality count, long value) {
+if (value <= precisionThreshold) {
+// linear counting should be picked, and should be accurate
+

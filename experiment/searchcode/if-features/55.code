@@ -1,0 +1,10 @@
+return root;
+}
+
+static boolean validateTree(Features node, HashSet<Features> nodeList) {
+if (nodeList.contains(node)) {
+return false;
+}
+for (Features child : node.getChildren()) {
+if (!validateTree(child, nodeList)) {
+

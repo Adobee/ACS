@@ -1,0 +1,9 @@
+public PeriodicBoundary(double xoffset, double yoffset) {
+super(xoffset, yoffset);
+}
+
+@Override
+public void apply(Solver solver, Force force, Particle particle, double timeStep) {
+particle.addX(-xoffset);
+particle.addPrevX(-xoffset);
+

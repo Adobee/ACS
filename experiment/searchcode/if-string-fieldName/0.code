@@ -1,0 +1,13 @@
+public class InputError {
+
+private String message;
+private String fieldname;
+
+public InputError(String message, String fieldname) {
+public void setMessage(String message) {
+this.message = message;
+}
+
+public String getFieldname() {
+return fieldname;
+

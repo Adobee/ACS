@@ -1,0 +1,10 @@
+public DImageWrapper(DWindowedImage image, Rectangle extent) {
+if (!image.getExtent().contains(extent))
+throw new IllegalArgumentException(&quot;Invalid size\nimage extent is &quot; + image.getExtent() + &quot;\nnew extent is &quot; + extent);
+return new Rectangle(extent);
+}
+
+public double getPixel(int atX, int atY) {
+if (!extent.contains(atX, atY))
+throw new IllegalArgumentException(&quot;Invalid coordinates X=&quot; +
+

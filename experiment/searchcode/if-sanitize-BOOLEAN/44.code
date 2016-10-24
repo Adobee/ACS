@@ -1,0 +1,8 @@
+public class CreateTeamValidator implements Validator {
+@Override
+public boolean supports(Class<?> aClass) {
+CreateAndUpdateTeamForm form = (CreateAndUpdateTeamForm) o;
+sanitizeAll(form);
+
+ValidationUtils.rejectIfEmpty(errors, &quot;teamName&quot;, &quot;validation.notempty.message&quot;);
+

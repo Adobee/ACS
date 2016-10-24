@@ -1,0 +1,11 @@
+public CachedState getLast() {
+return stack.getLast();
+}
+
+public boolean push(CachedState cachedState) {
+return stack.add(cachedState);
+}
+
+public boolean pop(CachedState cachedState) {
+if (stack.size()>1 &amp;&amp; stack.getLast()==cachedState) {
+

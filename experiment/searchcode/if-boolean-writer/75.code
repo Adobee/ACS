@@ -1,0 +1,11 @@
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class SFileWriter implements IFileWriter
+{
+
+public Boolean writeToFile(String filePath, String str, Boolean overWrite)
+{
+File f = new File(filePath);
+if (f.exists() &amp;&amp; overWrite == false) return false;
+

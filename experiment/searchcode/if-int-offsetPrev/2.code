@@ -1,0 +1,7 @@
+// We should have precalculated results for count=3 or 5
+if (count == 3) {
+return new int[][] { { 0, 0, 0, 0, 0 }, { 0x55555555, 0x55555555, 0x55555555, 0x55555555, 0x55555556 },
+{ 0xd5555555, 0x55555555, 0x55555555, 0x55555555, 0x55555556 } };
+} else if (count == 7) {
+return new int[][] { { 0, 0, 0, 0, 0 }, { 0x24924924, 0x92492492, 0x49249249, 0x24924924, 0x92492493 },
+

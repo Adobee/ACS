@@ -1,0 +1,7 @@
+for (int i = 1; i < 4; i++) {
+if (randomBoolean()) {
+indicesToFlush.add(&quot;test-idx-&quot; + i);
+// only block on repo init if we have partial snapshot or we run into deadlock when acquiring shard locks for index deletion/closing
+boolean initBlocking = allowPartial || randomBoolean();
+if (initBlocking) {
+

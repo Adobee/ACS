@@ -1,0 +1,10 @@
+this.serviceTime = serviceTime;
+}
+
+public void process(long deltaTime, Building build)
+{
+World world = build.getWorld();
+//If waiting shows / movies are not showing yet
+//Phase computations continue even when closed
+if(build.getFields()[WAIT]==0)
+

@@ -1,0 +1,12 @@
+double dbs=b1*b1-b2*b2;
+double h=Math.sqrt(pqs);
+double gv1=(pqs+dbs)/(2*b1*h);
+double g1=0;
+if(gv1<1.0001) {
+System.out.printf(&quot;Failed for a1,a2=%f, %f\n&quot;,a1,a2);
+continue;
+}
+
+double[] pq1=getEndPos(b1,b2,ta.a1,ta.a2);
+if(!equal(pq[0],pq[1],pq1[0],pq1[1])) {
+

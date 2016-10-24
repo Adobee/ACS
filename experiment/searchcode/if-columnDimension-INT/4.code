@@ -1,0 +1,7 @@
+elements = new ArrayList<ArrayList<Double>>();
+int rowDimension = source_array.length;
+int columnDimension = source_array[0].length;
+for (int i = 0; i < rowDimension; i++)
+{
+if (source_array[i].length != columnDimension) {
+

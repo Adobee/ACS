@@ -1,0 +1,12 @@
+ExtensionFactory extensionFactory;
+Class<?> extensionClass;
+T extension;
+
+ExtensionWrapper(ExtensionFactory extensionFactory, Class<?> extensionClass) {
+this.extensionClass = extensionClass;
+}
+
+@SuppressWarnings(&quot;unchecked&quot;)
+public T getExtension() {
+if (extension == null) {
+

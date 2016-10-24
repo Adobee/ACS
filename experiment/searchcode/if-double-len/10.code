@@ -1,0 +1,8 @@
+static public double singleStep(double[] datas, int estimatorPosStart,
+double[] coeffs) {
+int datasLen = coeffs.length;
+double estimated = 0.0;
+static public double[] singleStep(double[] datas, int estimatorPosStart,
+int estimatorLen, double[] coeffs) {
+double[] estimateds = new double[estimatorLen];
+

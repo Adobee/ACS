@@ -1,0 +1,10 @@
+int nightEnd;
+double setPointDay;
+double setPointNight;
+double setPoint;
+double time;
+
+setPointDay, setPointNight, time, nightBegin, nightEnd-> setPoint{compute};
+}@*/
+double compute(double sD, double sN, double time, double nB, double nE ) {
+

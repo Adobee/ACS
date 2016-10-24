@@ -1,0 +1,7 @@
+semaphore1.acquire(2);
+if (semaphore3.availablePermits() < 0)
+fail();
+try {
+semaphore2.acquire();
+if (semaphore1.availablePermits() < 0)
+

@@ -1,0 +1,12 @@
+public class LRUCache<K, V> extends LinkedHashMap<K, V> {
+private int initialCapacity;
+
+public LRUCache(int initialCapacity,
+protected boolean removeEldestEntry(Map.Entry eldest) {
+if (size() > initialCapacity) {
+return true;
+}
+return false;
+}
+}
+

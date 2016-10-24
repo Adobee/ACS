@@ -1,0 +1,12 @@
+private IVPDomainModel model;
+private String lastType;
+private Vector returnedVector;
+private String newType;
+private String variableID;
+model = (IVPDomainModel) m;
+}
+
+protected void executeAction() {
+if (isRedo()) {
+model.changeVariableType(scopeID, variableID, newType, _currentState);
+

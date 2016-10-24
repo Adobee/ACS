@@ -1,0 +1,13 @@
+static void doPermute ( char[ ] in, StringBuffer outputString,
+boolean[ ] used, int inputlength, int level)
+{
+
+if( level == inputlength) {
+return;
+}
+
+for( int i = 0; i < inputlength; ++i )
+{
+
+if( used[i] ) continue;
+

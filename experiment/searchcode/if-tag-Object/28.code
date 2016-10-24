@@ -1,0 +1,6 @@
+gameObject = ObjectPoolManager.getInstance().getGameObjectByTag(ObjectPoolManager.TAG_BULLET);
+if (gameObject == null) {
+gameObject = ObjectPoolManager.getInstance().getGameObjectByTag(ObjectPoolManager.TAG_PLAYER);
+if (gameObject == null) {
+gameObject = new PlayerGameObject();
+

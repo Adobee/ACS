@@ -1,0 +1,13 @@
+public Vector(double x, double y) {
+this.x=x;
+this.y=y;
+}
+
+public Vector(Point2D p1, Point2D p2){
+this.x = p2.x - p1.x;
+this.y = p2.y - p1.y;
+}
+
+public Vector(double rad){
+this.x = Math.cos(rad);
+

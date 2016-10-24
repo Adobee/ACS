@@ -1,0 +1,7 @@
+int firstChar = scanner.read();
+boolean hexNum = false;
+if (firstChar == &#39;-&#39;) {
+firstChar = scanner.read();
+if (!Character.isDigit(firstChar)) {
+scanner.unread();
+

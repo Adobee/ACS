@@ -1,0 +1,13 @@
+start();
+}
+
+@Override
+public synchronized void onAutoFocus(boolean success, Camera theCamera) {
+if (active) {
+synchronized void start() {
+if (useAutoFocus) {
+active = true;
+try {
+camera.autoFocus(this);
+} catch (RuntimeException re) {
+

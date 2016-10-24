@@ -1,0 +1,19 @@
+public R getRight()
+{
+return right;
+}
+
+public boolean bothContains(L left, R right)
+{
+return this.left == left &amp;&amp; this.right == right;
+@Override
+public boolean equals(Object o)
+{
+if (o instanceof Pair)
+{
+return ((Pair) o).right == this.right &amp;&amp; ((Pair) o).left == this.left;
+}
+return false;
+}
+}
+

@@ -1,0 +1,9 @@
+protected AbstractAttributeDecorator() {
+}
+
+public boolean containsAttr(T target, K key) {
+IAttributeSupport attrSupport = getAttrSupport(target);
+IAttributeSupport attrSupport = identityAttributeSupport.get(target);
+if (attrSupport == null) {
+attrSupport = new DefaultAttributeSupport();
+

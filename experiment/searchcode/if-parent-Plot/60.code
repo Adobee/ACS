@@ -1,0 +1,9 @@
+private Chart getChart() throws ObjectNotFound {
+
+Chart chart = null;
+
+if (this.getParent() instanceof Chart) { // Combined plot
+chart = (Chart) this.getParent();
+} else { // Child of combined plot
+if (!(this.getParent().getParent() instanceof Chart)) {
+

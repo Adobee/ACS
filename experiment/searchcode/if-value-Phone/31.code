@@ -1,0 +1,13 @@
+public Phone(String phone) {
+this.phonenumber = phone;
+}
+
+public static Phone create(String phone) {
+if (!phoneInstances.containsKey(phone)) {
+return phoneInstances.get(phone);
+}
+
+@Override
+public int hashCode() {
+return Integer.valueOf(this.phonenumber);
+

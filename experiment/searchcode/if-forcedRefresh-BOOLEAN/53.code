@@ -1,0 +1,10 @@
+public class PassthruManager implements ProxyUriManager {
+private UriStatus expectStatus = UriStatus.VALID_VERSIONED;
+
+private boolean doProxy = false;
+this.doProxy = true;
+}
+
+public List<Uri> make(List<ProxyUri> resource, Integer forcedRefresh) {
+List<Uri> ctx = Lists.newArrayListWithCapacity(resource.size());
+

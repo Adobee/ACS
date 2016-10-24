@@ -1,0 +1,12 @@
+Response response = chain.proceed(request);
+
+if (NetUtils.isConnected(App.getInstance())) {
+int maxAge = 0; // read from cache
+.header(&quot;Cache-Control&quot;, &quot;public, only-if-cached, max-stale=&quot; + maxStale)
+.build();
+}
+
+return response;
+}
+}
+

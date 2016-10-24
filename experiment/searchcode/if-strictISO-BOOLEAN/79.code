@@ -1,0 +1,6 @@
+public static DateTimeFormatter forFields(Collection<DateTimeFieldType> fields, boolean extended, boolean strictISO) {
+private static boolean dateByMonth(DateTimeFormatterBuilder bld, Collection<DateTimeFieldType> fields, boolean extended, boolean strictISO) {
+
+boolean reducedPrec = false;
+if (fields.remove(DateTimeFieldType.year())) {
+

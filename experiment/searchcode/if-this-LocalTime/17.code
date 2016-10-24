@@ -1,0 +1,9 @@
+public TrainingTimeAnalyzer(List<LocalTime> times) {
+this.times = times;
+this.accumulated = times.stream().collect(new ReduceTrainingTimesPerQuarter());
+public Map<LocalTime, Integer> accumulated() {
+return this.accumulated;
+}
+
+public int athletesAt(LocalTime time) {
+

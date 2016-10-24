@@ -1,0 +1,9 @@
+return SerializerUtils.encodeBoolean(source);
+}
+
+public void serializeBoolean(boolean source, OutputStream outputStream) throws SerializerException {
+serializeInt((Integer) source, outputStream);
+return;
+} else if (source instanceof Boolean) {
+if (exportKnownTypeToOutputStream) {
+

@@ -1,0 +1,17 @@
+this.coeff = coeff;
+}
+
+@Override
+public char getSign() {
+if (this.coeff < 0)
+return &#39;-&#39;;
+else
+return &#39;+&#39;;
+}
+
+@Override
+public boolean isZero() {
+if (this.coeff == 0)
+return true;
+return false;
+

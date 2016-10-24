@@ -1,0 +1,7 @@
+private CollectionViewCallbacks mCallbacks = null;
+private int mContentTopClearance = 0;
+private int mInternalPadding;
+private View makeRow(View view, RowComputeResult rowInfo, ViewGroup parent) {
+if (mCallbacks == null) {
+Log.e(TAG, &quot;Call to makeRow without an adapter installed&quot;);
+

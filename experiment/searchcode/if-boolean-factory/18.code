@@ -1,0 +1,8 @@
+public class AccessControlSettingOperation implements BooleanOperator<WaybackRequest> {
+
+private ExclusionFilterFactory factory = null;
+private BooleanOperator<WaybackRequest> operator = null;
+
+public boolean isTrue(WaybackRequest value) {
+if(operator.isTrue(value)) {
+

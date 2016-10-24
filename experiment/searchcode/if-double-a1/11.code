@@ -1,0 +1,15 @@
+package util.matrix;
+
+/**@author Raphaël*/
+
+
+public class VectorColumn_2
+{
+public double a1,
+public VectorColumn_2(double[] a)
+{
+if(a != null &amp;&amp; a.length == 2)
+{
+a1 = a[0];
+a2 = a[1];
+

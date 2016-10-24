@@ -1,0 +1,5 @@
+public GameObject createBall(P2d pos, double radius, V2d vel){
+return new GameObject(GameObject.Type.BALL, pos, vel, new CircleBoundingBox(new P2d(pos.x, pos.y), radius),
+public GameObject createPickUpObject(P2d pos, double edge){
+return new GameObject(GameObject.Type.PICKABLE_OBJ, pos, new V2d(0,0), new CircleBoundingBox(new P2d(pos.x, pos.y), edge/2),
+

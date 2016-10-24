@@ -1,0 +1,5 @@
+sensorManager = (SensorManager) this.context.getSystemService(Activity.SENSOR_SERVICE);
+
+boolean accelSupported = sensorManager.registerListener(this, sensor, SensorManager.SENSOR_DELAY_FASTEST);
+if(!accelSupported) {
+

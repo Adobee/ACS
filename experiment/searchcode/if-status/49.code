@@ -1,0 +1,10 @@
+package nibura.logic;
+
+public class RUNTIME_STATUS {
+public enum STATUS {
+ANDROID,
+DEBUG,
+public static STATUS getStatus() {
+if(status == null) {
+throw new AssertionError(&quot;RUNTIME_STATUS requested but not properly set prior to action.&quot;, null);
+

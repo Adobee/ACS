@@ -1,0 +1,14 @@
+} catch(ControlFlowException e) {
+r2 = 0;
+_r2 = e.value;
+}
+int r3;
+BigInt _r3;
+if (_r1 == null &amp;&amp; _r2 == null) {
+} else {
+_r3 = RT.addBig(r1, _r1, r2, _r2);
+r3 = 0;
+}
+if (_r3 == null) {
+return r3;
+

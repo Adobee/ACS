@@ -1,0 +1,7 @@
+ClassAnalyzer playerAnalyzer = analyzer.getClassAnalyzer(PlayerAnalyzer.class);
+if (playerAnalyzer.isFailed()) {
+return null;
+FieldAnalyzer definitionAnalyzer = playerAnalyzer.getFieldAnalyzer(DefinitionAnalyzer.class);
+if (definitionAnalyzer.isFailed()) {
+return null;
+

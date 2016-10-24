@@ -1,0 +1,9 @@
+protected void refreshPlot(Frame dataFrame, Plot plot) {
+if (dataFrame.hasAnnotation(&quot;labels&quot;)) {
+((PiePlot) plot).setLabelGenerator(_labelGenerator);
+public void setSourceBorderColor(Color c) {
+super.setSourceBorderColor(c);
+if (getChart() == null)
+return;
+PiePlot plot = ((PiePlot) getChart().getPlot());
+

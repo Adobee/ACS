@@ -1,0 +1,11 @@
+this.denominator = denominator;
+}
+
+public Fraction getReducedFraction() {
+int[] numeratorFactors = NumberProperties.getPrimeFactorization(numerator);
+return (new Fraction(newNumerator, newDenominator)).getReducedFraction();
+}
+
+@Override
+public boolean equals(Object obj) {
+

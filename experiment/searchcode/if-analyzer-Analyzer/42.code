@@ -1,0 +1,10 @@
+ClassAnalyzer nodeDequeAnalyzer = analyzer.getClassAnalyzer(NodeDequeAnalyzer.class);
+if (nodeDequeAnalyzer.isFailed()) {
+return null;
+FieldAnalyzer sentinelAnalyzer = nodeDequeAnalyzer.getFieldAnalyzer(SentinelAnalyzer.class);
+if (sentinelAnalyzer.isFailed()) {
+return null;
+}
+
+return new AnalyzedClass(analyzer.getClassNode(
+

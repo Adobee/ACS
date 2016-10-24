@@ -1,0 +1,11 @@
+public static IntBuffer getDirectBuffer(int size, IntBuffer buffer) {
+if (buffer == null) {
+return buffer;
+}
+
+size = round4(size);
+
+if (buffer.isDirect()) {
+buffer.limit((size >> 2) + buffer.position());
+return buffer;
+

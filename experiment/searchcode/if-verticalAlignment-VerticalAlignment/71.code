@@ -1,0 +1,9 @@
+public StyleValue compile(Object value)
+{
+VerticalAlignment alignment = parse(value);
+if(alignment != null)
+String lowerCase = value.toString().toLowerCase().trim();
+if(&quot;top&quot;.equals(lowerCase))
+return VerticalAlignment.TOP;
+else if(&quot;center&quot;.equals(lowerCase) || &quot;middle&quot;.equals(lowerCase))
+

@@ -1,0 +1,10 @@
+private static void sort(Comparable[] a, Comparable[] aux, int firstIndex, int lastIndex) {
+if (firstIndex >= lastIndex) {
+return;
+}
+int midIndex = firstIndex + (lastIndex - firstIndex) / 2;
+System.arraycopy(a, firstIndex, aux, firstIndex, lastIndex - firstIndex + 1);
+for (int k = firstIndex; k <= lastIndex; k++) {
+if (i > midIndex) {
+a[k] = aux[j++];
+

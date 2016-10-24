@@ -1,0 +1,9 @@
+package com.plan.yelinaung.popularmovies.retrofit;
+
+import com.plan.yelinaung.popularmovies.utils.Constants;
+public static Retrofit retrofit;
+
+public static Retrofit getInstance() {
+if (retrofit == null) {
+retrofit = new Retrofit.Builder().baseUrl(Constants.BASE_URL)
+

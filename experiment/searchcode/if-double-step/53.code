@@ -1,0 +1,9 @@
+private double stepperStartStep;
+private double stepperEndStep;
+private double stepperStepSize;
+
+private Distribution distribution;
+double r = rndGen.nextDouble();
+for (double s=stepperStartStep; s < stepperEndStep; s += stepperStepSize) {
+if (distribution.CDF(s) >= r) {
+

@@ -1,0 +1,10 @@
+} else return false;
+}
+
+public void storeObservations(){
+int refLength = 0;
+Observation previous = null;
+for(String timestamp : obsMap.keySet()){
+if(obsMap.get(timestamp).getIndicators().length == refLength){
+dbManager.storeObservation(obsMap.get(timestamp), previous, runId);
+

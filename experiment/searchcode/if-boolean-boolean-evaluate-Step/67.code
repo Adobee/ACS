@@ -1,0 +1,8 @@
+int score = evaluator.evaluate(target, firstStep);
+firstStep.setScore(score);
+path.add(firstStep);
+boolean exists = foundNodes.containsKey(next);
+if  ( exists ) {
+T prior = foundNodes.get(next);
+boolean scoreImproved = prior.getScore() > next.getScore();
+

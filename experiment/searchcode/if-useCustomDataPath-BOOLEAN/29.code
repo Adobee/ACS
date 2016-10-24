@@ -1,0 +1,7 @@
+mappings = XContentFactory.jsonBuilder().startObject().startObject(&quot;_default_&quot;);
+if (randomBoolean()) {
+mappings.startObject(IdFieldMapper.NAME).field(&quot;index&quot;, randomFrom(&quot;not_analyzed&quot;, &quot;no&quot;)).endObject();
+}
+if (randomBoolean()) {
+mappings.startObject(TypeFieldMapper.NAME).field(&quot;index&quot;, randomFrom(&quot;no&quot;, &quot;not_analyzed&quot;)).endObject();
+

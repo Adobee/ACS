@@ -1,0 +1,14 @@
+int [] result = {0,2,6,1};
+largestDiff(result);
+}
+
+public static int largestDiff(int [] value ){
+
+int maxDiff = 0;
+int minDiff = 0;
+int diff = 0;
+
+int [] values = {0,2,6,1};
+
+if (values.length <  2) {
+

@@ -1,0 +1,8 @@
+resultSet = preparedStatement.executeQuery();
+addressVTO.setEmpId(empId);
+if(resultSet.next()){
+offshoreAddress = resultSet.getInt(1);
+resultSet = preparedStatement.executeQuery();
+if(resultSet.next()){
+addressVTO.setOffAddressId(resultSet.getInt(&quot;Id&quot;));
+

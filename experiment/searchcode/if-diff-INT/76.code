@@ -1,0 +1,8 @@
+public class Solution {
+public int[] singleNumber(int[] nums) {
+int diff = 0;
+diff &amp;= (-diff);
+int[] result = {0, 0};
+for (int i : nums) {
+if ((diff &amp; i) == 0) {
+

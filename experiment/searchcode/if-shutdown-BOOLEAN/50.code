@@ -1,0 +1,9 @@
+private final Stack<Reclaimable> childHooks;
+private boolean shutdown;
+
+public KernelShutdownHook() {
+childHooks = new Stack<Reclaimable>();
+public synchronized void enlist(Reclaimable destroyable) {
+if (!shutdown) {
+childHooks.push(destroyable);
+

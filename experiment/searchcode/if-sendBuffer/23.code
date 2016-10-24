@@ -1,0 +1,8 @@
+/** Blocking Client */
+public class Client {
+public final static ByteBuffer sendBuffer = ByteBuffer.allocateDirect(Protocol.MaxMessageSize);
+public static void connect(final String host, final int port) {
+final SocketAddress serverAddress = new InetSocketAddress(host, port);
+
+sendBuffer.clear();
+

@@ -1,0 +1,11 @@
+public class IfScope extends Scope {
+
+private BooleanExpression booleanExpression;
+
+private Scope elseBlock;
+
+public IfScope(Scope parentScope) {
+if (booleanExpression.evaluate(getParent())) {
+if (booleanExpression.getValue()) {
+resetVars();
+

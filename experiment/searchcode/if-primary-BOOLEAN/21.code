@@ -1,0 +1,13 @@
+inv = new Inventory(e);
+}
+
+public void update() {
+inv.update();
+if(primary != null)
+primary.update();
+}
+
+public void equipPrimary(ItemStack item){
+// Add old primary to inventory
+if(!inv.storage.contains(primary) &amp;&amp; primary != null)
+

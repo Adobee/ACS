@@ -1,0 +1,9 @@
+import org.jfree.chart.renderer.xy.XYItemRenderer;
+import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
+
+import com.xpn.xwiki.plugin.charts.ChartCustomizer;
+public Plot create(DataSource dataSource, ChartParams params) throws GenerateException, DataSourceException
+{
+Class rendererClass = params.getClass(ChartParams.RENDERER);
+if (rendererClass == null || XYItemRenderer.class.isAssignableFrom(rendererClass)) {
+

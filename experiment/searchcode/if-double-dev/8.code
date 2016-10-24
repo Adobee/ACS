@@ -1,0 +1,12 @@
+public class Normal implements Distribution {
+
+private Random random;
+private final double mean;
+private final double stdDev;
+this.mean = 1;
+this.stdDev = 1;
+}
+
+public Normal(double mean, double stdDev) {
+this.mean = mean;
+

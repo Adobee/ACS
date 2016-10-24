@@ -1,0 +1,16 @@
+skipped(&quot;data.addnode not set&quot;);
+return;
+}
+boolean added = reportAdded();
+
+if (added) {
+log.info(&quot;removing...&quot;);
+rpc.addnode(addnode, &quot;remove&quot;);
+log.info(&quot;[&quot; + addnode + &quot;] connected:&quot; + connected + &quot; added:&quot; + added + &quot; peers:&quot; + rpc.getconnectioncount());
+return added;
+}
+
+boolean isPeer() {
+for (PeerInfo peer : rpc.getpeerinfo())
+if (peer.getAddr().equals(addnode))
+

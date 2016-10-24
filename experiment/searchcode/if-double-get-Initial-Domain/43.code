@@ -1,0 +1,8 @@
+public void doubleClick(DoubleClickEvent event) {
+ISelection selection = event.getSelection();
+if (selection instanceof StructuredSelection) {
+eObject = (EObject)((IAdaptable)firstElement).getAdapter(EObject.class);
+}
+if (eObject != null) {
+DomainPropertiesEditionContext propertiesEditionContext = new DomainPropertiesEditionContext(
+

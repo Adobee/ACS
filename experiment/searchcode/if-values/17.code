@@ -1,0 +1,12 @@
+int[] debugValuess() {
+return values;
+}
+
+public void push(int v) {
+if (values.length <= pos)
+int p = pos++;
+values[p] = v;
+
+while (p > 0) {
+if (values[(p - 1) / 2] <= values[p])
+

@@ -1,0 +1,9 @@
+public void insertAt(int index, E element){
+int realIndex = index - backIndex;
+if(realIndex >= 0){
+realIndex = 0 - realIndex;
+
+if(realIndex > backIndex) throw new ArrayIndexOutOfBoundsException(index+&quot; < 0&quot;);
+
+int elementsToMove = backIndex - realIndex;
+

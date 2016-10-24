@@ -1,0 +1,9 @@
+private static double aliveProbability(int x, int y, int n, int steps) {
+if (steps == 0) {
+return 1d;
+}
+
+double probability = 0;
+if (x > 0) {
+probability += 0.25d * aliveProbability(x - 1, y, n, steps - 1);
+

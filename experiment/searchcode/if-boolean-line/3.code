@@ -1,0 +1,16 @@
+this.lineSet = lineSet;
+}
+
+public List<Line> getLineSet() {
+return lineSet;
+}
+
+Line getLine(int index) {
+if (index < 0 || index > lineSet.size()) {
+return lineSet.get(index);
+}
+
+int getLineOrder(Line line){
+for(Line l:lineSet){
+if(line.getValue().equals(l.getValue())){
+

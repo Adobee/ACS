@@ -1,0 +1,29 @@
+map=m;
+
+dead=false;
+
+if(outOfRange())
+{
+dead=true;
+}
+
+}
+
+void turnRight()
+{
+dir++;
+dir%=4;
+}
+void turnLeft()
+{
+dir--;
+if(dir<0)
+{
+dir+=4;
+}
+}
+
+void turnNorth()
+{
+dir=0;
+

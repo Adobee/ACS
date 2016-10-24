@@ -1,0 +1,11 @@
+return r;
+}
+
+public static int[] histogram(final double[] data, final int binCount) {
+
+double min = Double.POSITIVE_INFINITY, max = Double.NEGATIVE_INFINITY;
+final double binSize = (max - min)/binCount;
+int[] result = new int[binCount];
+
+for(final double d: data) {
+

@@ -1,0 +1,12 @@
+public class Search {
+
+String query ;
+int numOfDocs ;
+ArrayList<String> qterms ;
+PriorityQueue<MyDocument> maxheap ;
+
+public Search(String query, int sizeDic){
+
+numOfDocs = sizeDic;
+maxheap = new PriorityQueue<MyDocument>(numOfDocs,new DocumentComparator());
+

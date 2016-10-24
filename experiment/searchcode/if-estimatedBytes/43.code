@@ -1,0 +1,7 @@
+Terms terms = reader.terms(getFieldNames().indexName());
+if (terms == null) {
+estimator.afterLoad(null, AtomicFieldData.WithOrdinals.EMPTY.ramBytesUsed());
+// If we weren&#39;t able to estimate, wrap in the RamAccountingTermsEnum
+if (estimatedBytes == 0) {
+return new RamAccountingTermsEnum(filter(terms, reader), breaker, this, this.fieldName);
+

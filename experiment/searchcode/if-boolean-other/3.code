@@ -1,0 +1,7 @@
+public int compareTo(Object o) {
+if (o == null || !(o instanceof ComparableBoolean)) {
+throw new IllegalArgumentException(&quot;The object is null or not intance of Boolean&quot;);
+boolean other = ((ComparableBoolean) o).getBooleanValue();
+boolean my = value.booleanValue();
+if ((my &amp;&amp; other) || (!my &amp;&amp; !other)) {
+

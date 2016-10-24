@@ -1,0 +1,14 @@
+return instance;
+}
+
+public ViewPanel()
+{
+setWidget( queryBuilder );
+}
+
+QueryBuilder queryBuilder = new QueryBuilder( this );
+
+public static ViewPanel reset()
+{
+getInstance().queryBuilder.reset();
+

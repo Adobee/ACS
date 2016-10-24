@@ -1,0 +1,9 @@
+TAppOrg org = (TAppOrg) listOrg.get(i);
+if (!parentid.contains(org.getFParentId())) {
+parentid.add(org.getFParentId());
+public TAppOrg saveOrUpdate(TAppOrg object) {
+
+try {
+if(object.getFId()>0){
+orgDao.Update(object);
+

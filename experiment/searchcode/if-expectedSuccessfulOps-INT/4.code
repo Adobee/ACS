@@ -1,0 +1,7 @@
+protected final ClusterState clusterState;
+protected final DiscoveryNodes nodes;
+protected final int expectedSuccessfulOps;
+final int shardCount = shardsIts.size();
+failIfOverShardCountLimit(clusterService, shardCount);
+expectedSuccessfulOps = shardCount;
+

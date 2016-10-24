@@ -1,0 +1,8 @@
+import org.jfree.chart.JFreeChart;
+
+public interface GsnChartIF {
+
+public JFreeChart createChart (Collection<Data> datas) ;
+
+}
+

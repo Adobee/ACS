@@ -1,0 +1,10 @@
+&quot;AAAAAAAAAAAAAA&quot;, &quot;   &quot;, null, Long.valueOf( -100L ), Long.valueOf( 0L ), Long.valueOf( 212L ), null,
+new Double( -100.2 ), new Double( 0.0 ), new Double( 212.23 ), null,
+list.add( new RowMetaAndData( rm, r1 ) );
+
+return list;
+}
+
+/**
+* Check the 2 lists comparing the rows in order. If they are not the same fail the test.
+

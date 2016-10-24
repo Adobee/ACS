@@ -1,0 +1,8 @@
+public int mostItems(int boxX, int boxY, int boxZ, int itemX, int itemY, int itemZ) {
+int max = -1;
+int[] box = new int[]{boxX, boxY, boxZ};
+int y = box[1] / item[(1 + i) % 3];
+int z = box[2] / item[(2 + i) % 3];
+
+if (x * y * z > max)
+

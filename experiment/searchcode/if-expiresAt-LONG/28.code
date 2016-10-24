@@ -1,0 +1,11 @@
+AccessToken(String value, String username, String emailAddress,
+long expiresAt) {
+if (value == null) {
+throw new IllegalArgumentException(&quot;token value must not be null&quot;);
+long getExpiresAt() {
+return expiresAt;
+}
+
+/**
+* Returns <code>true</code> if this token has already expired.
+

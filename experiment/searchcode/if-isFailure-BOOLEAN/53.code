@@ -1,0 +1,10 @@
+public interface FailureDetectionStrategy
+{
+/**
+* Returns <code>true</code> if the given exception is a failure execution.
+* @param advice The reference to the advice.
+* @return       Returns <code>true</code> if the given exception is a failure execution.
+*/
+boolean isFailure(Throwable t, Advice advice);
+}
+

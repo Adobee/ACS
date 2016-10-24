@@ -1,0 +1,8 @@
+public class ExceptionUtils {
+
+public static Throwable findRootCause(Throwable throwable) {
+if (throwable == null) return null;
+Throwable rootCause = findRootCause(throwable);
+if (rootCause != null) {
+return rootCause.getMessage();
+

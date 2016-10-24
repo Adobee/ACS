@@ -1,0 +1,12 @@
+package com.euler.p2;
+
+public class Problem2 {
+private static long sum = 0;
+
+public static void main(String[] args) {
+System.out.println(sum);
+}
+
+public static long fibonacciSum(int n, long p0, long p1) {
+if(p1 % 2 == 0 &amp;&amp; p1 <= 4000000)
+

@@ -1,0 +1,11 @@
+public class CharacterStream {
+
+private final String text;
+
+private int currentToken;
+
+public CharacterStream(final String text) {
+public char peek() {
+if (currentToken == text.length()) {
+throw new EndOfStreamException();
+

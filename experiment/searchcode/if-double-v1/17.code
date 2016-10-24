@@ -1,0 +1,10 @@
+public FisherSendor(double v1, double v2)
+{
+if(v1 <= 0)
+throw new ArithmeticException(&quot;v1 must be > 0 not &quot; + v1 );
+public double logPdf(double x)
+{
+if(x <= 0)
+return 0;
+double leftSide = v1/2 * log(v1) + v2/2*log(v2) - lnBeta(v1/2, v2/2);
+

@@ -1,0 +1,11 @@
+while(low < high  &amp;&amp; a[high] >= privotKey) --high;  //从high 所指位置向前搜索，至多到low+1 位置。将比基准元素小的交换到低端
+if(low < high){
+int temp = a[high];
+a[high] = a[low];
+a[low] = temp;
+while(low < high  &amp;&amp; a[low] <= privotKey ) ++low;
+if(low < high){
+int temp = a[high];
+a[high] = a[low];
+a[low] = temp;
+

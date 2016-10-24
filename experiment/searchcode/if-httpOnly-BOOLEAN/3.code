@@ -1,0 +1,15 @@
+* @since 1.0
+*/
+public class Cookie extends javax.servlet.http.Cookie {
+
+private boolean httpOnly;
+
+public Cookie(String name, String value) {
+sb.append(&quot;max-age&quot;).append(&quot;=&quot;).append(getMaxAge()).append(&quot;;&quot;);
+}
+if (getSecure()) {
+sb.append(&quot;secure&quot;).append(&quot;;&quot;);
+}
+if (httpOnly) {
+sb.append(&quot;httponly&quot;).append(&quot;;&quot;);
+

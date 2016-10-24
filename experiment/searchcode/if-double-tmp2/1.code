@@ -1,0 +1,12 @@
+public static double roundDown(double d, int digit) {
+double tmp1 = d;
+int tmp2 = 1;
+double result = 0;
+
+if(digit > 0) {
+int tmp3 = (int)(tmp1 * tmp2);
+result = (double)tmp3 / (double)tmp2;
+}
+if(digit < 0) {
+for(int i = 0; i < -digit; i++) {
+

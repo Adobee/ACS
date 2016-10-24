@@ -1,0 +1,12 @@
+import org.jfree.chart.plot.PiePlot3D;
+
+class Rotator extends Timer
+implements ActionListener
+{
+
+Rotator(PiePlot3D pieplot3d)
+{
+super(100, null);
+angle = 270;
+plot = pieplot3d;
+

@@ -1,0 +1,10 @@
+state = true;
+}
+}
+
+public final synchronized void record(boolean isTraining) {
+if (state) {
+long delt = end - start;
+if (isTraining) {
+printer.println(&quot;\tTraining: &quot;+delt+&quot; ms elapsed.&quot;);
+

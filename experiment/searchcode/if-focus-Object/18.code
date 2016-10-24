@@ -1,0 +1,13 @@
+public static TextComponentFocusListener getInstance() {
+if(instance == null) {
+instance = new TextComponentFocusListener();
+}
+return instance;
+((JComponent)source).repaint();
+}
+}
+
+public void focusLost(FocusEvent e) {
+Object source = e.getSource();
+if(source instanceof JComponent) {
+

@@ -1,0 +1,17 @@
+this.article = article;
+}
+
+public void modifyDurability(int amount) {
+durability += amount;
+
+if (durability > durabilityMax) {
+durability = durabilityMax;
+}
+
+if (durability < 0) {
+durability = 0;
+}
+}
+
+public boolean isBroken() {
+

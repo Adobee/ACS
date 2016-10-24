@@ -1,0 +1,8 @@
+/** Defines the list of characters for generating invalid items. */
+private String invalidChars = &quot;&quot;;
+/** Index when looped strategy is used. */
+public Character invalidLoop() {
+loopIndex++;
+if (loopIndex >= invalidChars.length()) {
+loopIndex = 0;
+

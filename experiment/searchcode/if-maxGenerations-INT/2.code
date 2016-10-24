@@ -1,0 +1,12 @@
+private final int        maxGenerations;
+
+public Evolution(Population population, int maxGenerations) {
+this.population     = population;
+return population.getBest();
+}
+
+public void evolve() {
+int gen;
+
+for (gen = 0;  gen < maxGenerations;  ++gen) {
+

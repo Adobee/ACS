@@ -1,0 +1,12 @@
+public class ValueHolder<T> {
+private T value;
+private boolean modified;
+
+public ValueHolder(T defaultValue) {
+public void resetModifiedFlag() {
+modified = false;
+}
+
+public boolean setValue(T value) {
+if (!Objects.equals(this.value, value)) {
+

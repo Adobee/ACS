@@ -1,0 +1,12 @@
+if (isUseV100Plus()) {
+int msgSize = m_clientSocket.readInt();
+
+if (msgSize > MAX_MSG_LENGTH) {
+throw new InvalidMessageLengthException(&quot;message is too long: &quot;
+byte[] buf = new byte[msgSize];
+
+int offset = 0;
+
+while (offset < msgSize) {
+offset += m_clientSocket.read(buf, offset, msgSize - offset);
+

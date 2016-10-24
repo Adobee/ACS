@@ -1,0 +1,9 @@
+@RequestMapping(value = &quot;/t/shouldrefresh&quot;, method = RequestMethod.GET)
+@ResponseBody
+public Boolean shouldRefresh(@Principal final User user) {
+return user.shouldRefresh();
+}
+
+/**
+* Checks if an user with the specified username exists.
+

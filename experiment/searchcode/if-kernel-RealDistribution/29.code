@@ -1,0 +1,9 @@
+final double pBminus = pBminus(binIndex);
+final double pB = pB(binIndex);
+final RealDistribution kernel = k(x);
+if (kernel instanceof ConstantRealDistribution) {
+* @return within-bin kernel parameterized by bStats
+*/
+protected RealDistribution getKernel(SummaryStatistics bStats) {
+if (bStats.getN() == 1 || bStats.getVariance() == 0) {
+

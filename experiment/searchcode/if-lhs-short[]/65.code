@@ -1,0 +1,15 @@
+Object rhs = getRightHandSide().objectValue(context);
+if (null == lhs)
+return rhs;
+if (null == rhs)
+return lhs;
+if (!(lhs instanceof Number) || !(rhs instanceof Number)) {
+else if (lhs instanceof Long || rhs instanceof Long)
+return Long.class;
+else if (lhs instanceof Short || rhs instanceof Short)
+return Short.class;
+else
+return Integer.class;
+}
+}
+

@@ -1,0 +1,8 @@
+synchronized public <T> void submitStateUpdateTask(final String source, T task, ClusterStateTaskConfig config, ClusterStateTaskExecutor<T> executor, final ClusterStateTaskListener listener) {
+logger.debug(&quot;processing [{}]&quot;, source);
+listener.onTimeout(this.timeout);
+// note, we rely on the listener to remove itself in case of timeout if needed
+}
+}
+}
+

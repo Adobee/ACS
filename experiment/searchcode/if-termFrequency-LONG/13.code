@@ -1,0 +1,8 @@
+public void reduce(Text key, Iterable<LongWritable> values, Context context) throws IOException, InterruptedException {
+int documentFrequency = 0;
+long termFrequency = 0;
+if (key.toString().equals(VocabularyMap.COLLECTIONSIZE)) {
+} else {
+for (LongWritable entry : values) {
+if (entry.get() > 0) { // suspicious documents have freq=0
+

@@ -1,0 +1,12 @@
+public double calculateAreaUnderCurve(List<Double> xCoords, List<Double> yCoords)
+{
+if(xCoords==null || yCoords==null) {
+return 0;
+prevX = itX.next().doubleValue();
+}
+else {
+return 0;
+}
+if(itY.hasNext()) {
+prevY = itY.next().doubleValue();
+

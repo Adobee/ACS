@@ -1,0 +1,7 @@
+GameStage stage = new GameStage(stageBounds, model.getSpecificPlane(this.probNum, this.rowsAndCols, this.rowsAndCols), this.rowsAndCols, this.rowsAndCols,++stageNumber,str);
+stage.setVisible(true);
+if( this.currentStage!=null )
+this.remove(this.currentStage);
+if (this.lives > 0) {
+if( !this.currentStage.isTimeUp() &amp;&amp; !this.currentStage.isSelectAreaDone() ){//tagging time
+

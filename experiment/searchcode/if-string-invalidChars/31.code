@@ -1,0 +1,13 @@
+public class LoadOperation implements Operation
+{
+private String data;
+
+public LoadOperation(String data)
+throw new OperationException();
+}
+
+return imgCopy;
+}
+
+private boolean hasInvalidChars(String data, String invalidChars)
+

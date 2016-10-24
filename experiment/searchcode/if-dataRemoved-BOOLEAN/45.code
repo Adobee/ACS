@@ -1,0 +1,14 @@
+public void setMaximumItemCount(int maximum) {
+this.maximumItemCount = maximum;
+boolean dataRemoved = false;
+while (this.data.size() > maximum) {
+dataRemoved = true;
+}
+if (dataRemoved) {
+fireSeriesChanged();
+}
+}
+
+
+public void add(XYDataItem item) {
+

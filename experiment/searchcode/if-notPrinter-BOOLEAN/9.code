@@ -1,0 +1,8 @@
+/** Set to true if the formatter is not a printer. */
+private boolean iNotPrinter;
+/** Set to true if the formatter is not a parser. */
+private boolean iNotParser;
+private static PeriodFormatter toFormatter(List elementPairs, boolean notPrinter, boolean notParser) {
+if (notPrinter &amp;&amp; notParser) {
+throw new IllegalStateException(&quot;Builder has created neither a printer nor a parser&quot;);
+

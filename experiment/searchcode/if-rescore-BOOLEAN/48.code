@@ -1,0 +1,7 @@
+private static RescoreBuilder<?> mutate(RescoreBuilder<?> original) throws IOException {
+RescoreBuilder<?> mutation = serializedCopy(original);
+if (randomBoolean()) {
+org.elasticsearch.search.rescore.QueryRescorerBuilder rescorer = new
+org.elasticsearch.search.rescore.QueryRescorerBuilder(queryBuilder);
+if (randomBoolean()) {
+

@@ -1,0 +1,7 @@
+for (int col = 0; col < originalWidth; ++col) {
+for (int blockRow = 0; blockRow < gridSize; ++blockRow) {
+for (int blockCol = 0; blockCol < gridSize; ++blockCol) {
+final int blockNum = row * originalWidth + col;
+final int subpixel = blockRow * gridSize + blockCol;
+final Ray ray = rays[blockNum][subpixel];
+

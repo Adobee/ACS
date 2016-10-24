@@ -1,0 +1,8 @@
+char[] buffer; // Character buffer. Each line of text will be stored in here while it is encrypted
+String s;
+int keyIndex = 0;
+while ((s = scan.readLine()) != null) {
+buffer = s.toCharArray(); // Read line from input file into buffer
+c = (char) (buffer[i] + key[keyIndex]);
+if (c > &#39;Z&#39;) { // If character is translated out of upper case letter range cycle it back to start of alphabet
+

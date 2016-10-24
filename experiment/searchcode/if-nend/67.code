@@ -1,0 +1,6 @@
+private void spiralHelper(int [][] matrix, int mStart, int mEnd, int nStart, int nEnd, ArrayList<Integer> result){
+if (mStart < mEnd &amp;&amp; nStart < nEnd){
+for (int i = nStart; i < nEnd; i++) result.add(matrix[mStart][i]);
+for (int i = mEnd; i > mStart; i--) result.add(matrix[i][nStart]);
+if ((mEnd - mStart == 1 ) || (nEnd - nStart == 1)) return;
+

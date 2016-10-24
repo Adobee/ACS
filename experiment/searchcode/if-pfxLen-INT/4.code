@@ -1,0 +1,9 @@
+@Getter
+private NetworkLayerReachabilityInformation address;
+
+public IPv6UnicastNLRI(int pfxlen, byte[] data){
+byte[] data = new byte[16];
+// pad out to 128-bits
+if(pfx.length != 16){
+for(int i=0; i<pfx.length; i++)
+

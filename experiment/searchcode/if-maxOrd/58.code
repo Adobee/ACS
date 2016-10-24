@@ -1,0 +1,7 @@
+final long maxOrd = ordinalValues.getValueCount();
+if (maxOrd == 0) {
+return new EmptyCollector();
+FixedBitSet bits = visitedOrds.get(bucketOrd);
+if (bits == null) {
+bits = new FixedBitSet(maxOrd);
+

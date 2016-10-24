@@ -1,0 +1,6 @@
+if (&quot;true&quot;.equals(req.getParameter(&quot;show&quot;))) {
+boolean obfuscate = Config.SHOW_UNPUBLISHED_DATA;
+// For safety reasons, the &quot;obfuscate&quot; param can only be overridden in &quot;show&quot; mode, where
+// nothing is stored in public cloud storage:
+if (&quot;false&quot;.equals(req.getParameter(&quot;obfuscate&quot;))) {
+

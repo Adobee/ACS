@@ -1,0 +1,10 @@
+try {int acquiredID = Integer.parseInt(args[0]);
+BookViewData founddata = null;
+for(BookViewData bvd:RecentBooks){
+if(bvd.getEavesDropID()==acquiredID){
+break;
+}
+}
+if(founddata==null){
+GriefPrevention.sendMessage(invoker,TextMode.Err,&quot;EavesDrop ID not found.&quot;);
+

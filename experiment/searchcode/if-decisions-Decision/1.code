@@ -1,0 +1,15 @@
+public void put(String decision, Attribute attribute) {
+decisions.put(decision, attribute);
+}
+
+public void clear() {
+public Attribute apply(String value) throws BadDecisionException {
+Attribute result = decisions.get(value);
+
+if ( result == null )
+throw new BadDecisionException();
+
+return result;
+}
+}
+

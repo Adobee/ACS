@@ -1,0 +1,8 @@
+private PluginParameter<String> myCreateIndex = new PluginParameter.Builder<String>(&quot;createIndex&quot;, null, String.class)
+.inFile()
+@Override
+public DataSet processData(DataSet input) {
+
+String genotypeFilename = createIndex();
+if ((genotypeFilename != null) &amp;&amp; (!genotypeFilename.isEmpty())) {
+

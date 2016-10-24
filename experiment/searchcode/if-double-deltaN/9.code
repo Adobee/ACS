@@ -1,0 +1,11 @@
+private final double LON_RESOLUTION=1.5;
+
+private double [][] deltaN;
+private double [][] seaN;
+
+public RefractivityMap()
+int LonNum=(int)(360.0/LON_RESOLUTION)+1; //Plus 1 because of &quot;wrap around&quot;
+
+deltaN=new double[LatNum][LonNum];
+seaN=new double[LatNum][LonNum];
+

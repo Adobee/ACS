@@ -1,0 +1,9 @@
+List<LinearEquation> constraints = model.getNormalizedConstraints();
+int slackVar = 0;
+int artificialVar = 0;
+matrix[row][getSlackVariableOffset() + slackVar++] = -1; // excess
+}
+
+// artificial variables
+if (constraint.getRelationship() == Relationship.EQ
+

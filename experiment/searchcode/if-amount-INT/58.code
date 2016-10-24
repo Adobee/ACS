@@ -1,0 +1,12 @@
+int amountToReturnCalc = amountGiven - amountDue;
+
+if(amountToReturnCalc >= 100){
+int amountToSubtract = amountToReturnCalc % 100;
+amountToReturnCalc -= amountOfOnes;
+amountOfOnes /= 100;
+
+}
+
+if(amountToReturnCalc >= 25){
+int amountToSubtract = amountToReturnCalc % 25;
+

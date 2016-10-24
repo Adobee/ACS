@@ -1,0 +1,7 @@
+public static int compareDate(Calendar cal1, Calendar cal2) {
+if (cal1 == null || cal2 == null) {
+throw new IllegalArgumentException(&quot;Dates must not be null&quot;);
+int eraDiff = cal1.get(Calendar.ERA) - cal2.get(Calendar.ERA);
+if (eraDiff == 0) {
+int yearDiff = cal1.get(Calendar.YEAR) - cal2.get(Calendar.YEAR);
+

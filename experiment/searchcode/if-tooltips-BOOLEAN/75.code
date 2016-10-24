@@ -1,0 +1,10 @@
+List tooltips = (List) this.toolTipSeries.get(list);
+if (tooltips != null) {
+result = tooltips.size();
+public String getToolTipText(int series, int item) {
+
+String result = null;
+
+if (series < getListCount()) {
+List tooltips = (List) this.toolTipSeries.get(series);
+

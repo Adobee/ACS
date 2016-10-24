@@ -1,0 +1,8 @@
+double t0 = POW(TAN(phi1), 2);
+
+double Q0 = e1sq * POW(COS(phi1), 2);
+
+double fact3 = (5 + 3 * t0 + 10 * Q0 - 4 * Q0 * Q0 - 9 * e1sq) * POW(dd0, 4)/ 24;
+
+double fact4 = (61 + 90 * t0 + 298 * Q0 + 45 * t0 * t0 - 252 * e1sq - 3 * Q0 * Q0) * POW(dd0, 6) / 720;
+

@@ -1,0 +1,17 @@
+for (int i = 2; i < bins.length ; i++) {
+if (bins[i]) {
+for (int j = 2*i ; j < bins.length ; j += i) {
+bins[j] = false;
+}
+}
+}
+
+for (int i = 0 ; i < bins.length ; i++) {
+if (bins[i]) {
+System.out.print(i + &quot; &quot;);
+}
+}
+
+}
+}
+

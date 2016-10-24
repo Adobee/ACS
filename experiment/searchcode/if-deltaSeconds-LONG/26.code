@@ -1,0 +1,8 @@
+public static final IBehaviour NOP = new IBehaviour()
+{
+@Override
+public Result tick(float deltaSeconds, IBlackboard blackboard) { return Result.SUCCESS; }
+final Result result = delegate.tick( deltaSeconds , blackboard );
+if ( LOG.isDebugEnabled() ) {
+LOG.log(&quot;PEEK #&quot;+getId()+&quot;: &quot;+delegate+&quot; => &quot;+result);
+

@@ -1,0 +1,15 @@
+public int numerator =0;
+public int denominator =1;
+
+
+
+public Fraction(int n, int d) {
+numerator = n;
+denominator = d;
+}
+private int gcd(int x, int y) {
+int z;
+z = x % y;
+if (z == 0) return y;
+else return gcd(y,z);
+

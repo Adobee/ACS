@@ -1,0 +1,16 @@
+class Queue{
+Node first,last;
+
+void enqueue(Object item){
+if (first == null){
+last = new Node(item);
+last = last.next;
+}
+}
+
+Object dequeue(){
+if (first!=null){
+Object item = first.data;
+first = first.next;
+if(first == null){
+

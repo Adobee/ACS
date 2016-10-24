@@ -1,0 +1,9 @@
+package methods;
+
+public class AccuracyChecker {
+private static double accuracy = 0.001;
+public static boolean isAccurate(double y) {
+boolean isAccurate = false;
+if (AccuracyChecker.isActive) {
+isAccurate = Math.abs(y) < accuracy;
+

@@ -1,0 +1,11 @@
+Class serializer = (Class) serializerCache.get(valueType);
+
+if (serializer != null) {
+return (XmlSerializer) serializer.newInstance();
+Iterator it = superSerializerCache.keySet().iterator();
+
+while (it.hasNext()) {
+Class superSerializer = (Class) it.next();
+
+if (superSerializer.isAssignableFrom(valueType)) {
+

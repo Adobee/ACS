@@ -1,0 +1,15 @@
+public static String parserSpace(String line) {
+char[] ch= line.toCharArray();
+int n=0;
+for (int i=1;i<ch.length;i++){
+if (ch[i]==&#39; &#39; &amp;&amp; ch[n]==&#39;\t&#39;) continue;
+n++;
+ch[n]=ch[i];
+if (ch[n]==&#39; &#39;) ch[n]=&#39;\t&#39;;
+}
+n++;
+return new String(ch, 0, n);
+}
+
+}
+

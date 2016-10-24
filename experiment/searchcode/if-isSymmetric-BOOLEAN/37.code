@@ -1,0 +1,11 @@
+package bq.algorithm.binarytree;
+
+public class SymmetricBinaryTree {
+
+public boolean isSymmetric(TreeNode root) {
+return isSymmetric(root.left, root.right);
+}
+
+private boolean isSymmetric(TreeNode node1, TreeNode node2) {
+if ( node1 == null &amp;&amp; node2 == null ) {
+

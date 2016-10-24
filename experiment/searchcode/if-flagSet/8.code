@@ -1,0 +1,9 @@
+import static com.dronecontrol.droneapi.helpers.BinaryDataHelper.flagSet;
+import static com.dronecontrol.droneapi.helpers.BinaryDataHelper.getFloatValue;
+public NavDataState getNavDataState(int stateFlags)
+{
+NavDataState state = new NavDataState();
+
+state.setFlying(flagSet(stateFlags, 0));
+state.setVideoEnabled(flagSet(stateFlags, 1));
+

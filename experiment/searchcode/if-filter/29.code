@@ -1,0 +1,10 @@
+package com.fourpart.logfileviewer.filter;
+
+import java.util.ArrayList;
+import java.util.List;
+public boolean accept(String line) {
+
+for (Filter filter : filterList) {
+
+if (filter.accept(line)) {
+

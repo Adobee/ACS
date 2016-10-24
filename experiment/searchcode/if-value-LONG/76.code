@@ -1,0 +1,7 @@
+public abstract class LongValue extends Category2Value
+{
+/**
+* Returns the specific long value, if applicable.
+* Returns an IntegerValue with value -1, 0, or 1, if this LongValue is
+* less than, equal to, or greater than the given LongValue, respectively.
+

@@ -1,0 +1,9 @@
+this.decider.setLocalSearchSolverPhase(this);
+}
+
+public void setAssertStepScoreIsUncorrupted(boolean assertStepScoreIsUncorrupted) {
+decider.decideNextStep(stepScope);
+Move nextStep = stepScope.getStep();
+if (nextStep == null) {
+if (termination.isPhaseTerminated(phaseScope)) {
+

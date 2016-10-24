@@ -1,0 +1,14 @@
+public static class RunningStats {
+int n = 0;
+double oldMean;
+double newMean;
+double oldSD;
+double newSD;
+
+public void push(double x) {
+n++;
+if (n == 1) {
+oldMean = newMean = x;
+oldSD = 0.0;
+} else {
+

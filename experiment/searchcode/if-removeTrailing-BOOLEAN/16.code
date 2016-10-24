@@ -1,0 +1,8 @@
+private boolean enablePositionIncrements;
+private final boolean removeTrailing;
+
+@Inject
+public StopRefreshTokenFilterFactory(Index index, @IndexSettings Settings indexSettings, Environment env, @Assisted String name, @Assisted Settings settings) {
+this.removeTrailing = settings.getAsBoolean(&quot;remove_trailing&quot;, true);
+this.enablePositionIncrements = settings.getAsBoolean(&quot;enable_position_increments&quot;, true);
+

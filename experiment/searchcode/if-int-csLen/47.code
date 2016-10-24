@@ -1,0 +1,11 @@
+* @see net.community.chest.mail.address.AddressPair#compareTo(net.community.chest.mail.address.AddressPair)
+*/
+@Override
+public int compareTo (AddressPair ap)
+{
+if (ap == null)
+* @param tp addressee object from which to fill in (null == do nothing)
+* @return 0 if successful
+*/
+public int fillIn (final TargetAddressPair tp)
+

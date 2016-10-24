@@ -1,0 +1,15 @@
+double part = interval+1 - (factor/division);
+
+double slice = part;
+
+if(interval%2 == 0) {
+
+slice = 1-slice;
+}
+
+double startValue = initialY-strength;
+
+double endValue = initialY+strength;
+
+double value = startValue+(endValue-startValue)*slice;
+

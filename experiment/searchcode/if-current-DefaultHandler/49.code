@@ -1,0 +1,15 @@
+public void itemNext() {
+if(current.hasNext()) {
+MediaController.view(current);
+}
+}
+public void itemPrev() {
+public static void view(ListIterator<String> pos) {
+current = pos;
+if (visor == null)
+visor = new Visor(defaultHandler);
+visor.setElement(pos.next());
+visor.show();
+}
+}
+

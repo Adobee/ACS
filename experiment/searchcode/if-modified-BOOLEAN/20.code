@@ -1,0 +1,15 @@
+private boolean ifModified = true;
+/**
+* 当为false时
+* object为null
+* false 即http 412 一般用于缓存控制
+*/
+private boolean ifPreconditionSuccess = true;
+public void setObject(Ks3Object object) {
+this.object = object;
+}
+public boolean isIfModified() {
+return ifModified;
+}
+public void setIfModified(boolean ifModified) {
+

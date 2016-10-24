@@ -1,0 +1,9 @@
+public static abstract class NloptFunc extends Callback<NloptFunc> {
+// / @param gradient NULL if not needed
+
+abstract public double apply(int n, Pointer<Double> x, Pointer<Double> gradient, Pointer<?> func_data);
+public static abstract class NloptMfunc extends Callback<NloptMfunc> {
+// / @param gradient NULL if not needed
+
+abstract public void apply(int m, Pointer<Double> result, int n, Pointer<Double> x, Pointer<Double> gradient,
+

@@ -1,0 +1,11 @@
+public void setItems(List<Object> items)
+{
+CTItems ctItems = this._pivotField.getItems();
+if (ctItems != null) {
+ctItems.addNewItem().setX(idx);
+}
+}
+
+if (this._pivotField.getDefaultSubtotal()) {
+checkLastItemIsNotData(ctItems);
+

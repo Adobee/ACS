@@ -1,0 +1,7 @@
+int dayOfMonth(Date startDate, Date now) {
+int dayOfMonth = ANNIVERSARY_DATE.dayOfMonth(startDate, now);
+public Date paymentDate(Date startDate, Date now) {
+final Calendar cal = toCalendar(now);
+int dayOfMonth = dayOfMonth(startDate, now);
+if (cal.get(Calendar.DAY_OF_MONTH) >= dayOfMonth) {
+

@@ -1,0 +1,11 @@
+return process(seq, searchSeq, false);
+}
+
+public int process(String seq, String searchSeq, boolean ignoreCase) {
+if(ignoreCase) return StringUtils.indexOfIgnoreCase(seq, searchSeq);
+else return StringUtils.indexOf(seq, searchSeq);
+}
+
+public int process(String seq, String searchSeq, int startPos, boolean ignoreCase) {
+if(ignoreCase) return StringUtils.indexOfIgnoreCase(seq, searchSeq, startPos);
+

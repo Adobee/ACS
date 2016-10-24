@@ -1,0 +1,7 @@
+return efficiencyCorrection_stop;
+}
+if (isEfficiencyFileChanged || efficiencyMap == null){
+IGroup efficiencyData = null;
+if (efficiencyCorrection_useCorrectedData)
+efficiencyData = NexusUtils.getCorrectedNexusData(efficiencyCorrection_mapURI);
+

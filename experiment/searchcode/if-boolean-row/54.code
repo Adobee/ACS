@@ -1,0 +1,9 @@
+return recNQueens(board, 0);
+}
+
+private int recNQueens(boolean[][] board, int row) {
+if (row == board.length)
+for (int col = 0; col < board[row].length; col++) {
+if (isValid(board, row, col)) {
+board[row][col] = true;
+

@@ -1,0 +1,10 @@
+protected int[] filled;
+
+public BitRectangle(int width, int[] filled) {
+this.width = width;
+this.filled = filled;
+}
+
+public boolean isOccupied(int row, int col) {
+if (row < 0 || row >= filled.length || col < 0 || col >= width) {
+

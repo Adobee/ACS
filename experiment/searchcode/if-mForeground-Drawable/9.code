@@ -1,0 +1,10 @@
+public class ForegroundRelativeLayout extends RelativeLayout {
+
+private Drawable mForeground;
+
+private boolean mForegroundBoundChange;
+
+public ForegroundRelativeLayout(Context context) {
+TypedArray array = context.obtainStyledAttributes(attrs, R.styleable.ForegroundView);
+mForeground = array.getDrawable(R.styleable.ForegroundView_android_foreground);
+

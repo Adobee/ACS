@@ -1,0 +1,12 @@
+throw new IndexOutOfBoundsException(&quot;BitSet1024 index out of range: &quot; + i);
+}
+}
+
+@Override
+public boolean get (int i){
+if ((i &amp; INDEX_MASK) == 0) {
+if (l15 != 0){
+return 1024 - Long.numberOfLeadingZeros(l15);
+} else if (l14 != 0) {
+return 960 - Long.numberOfLeadingZeros(l14);
+

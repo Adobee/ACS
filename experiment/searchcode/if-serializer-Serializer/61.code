@@ -1,0 +1,7 @@
+package voldemort.serialization.mongodb;
+
+import voldemort.serialization.DefaultSerializerFactory;
+public Serializer<?> getSerializer(SerializerDefinition serializerDef) {
+String name = serializerDef.getName();
+if(name.equals(MONGODOC_TYPE_NAME)) {
+

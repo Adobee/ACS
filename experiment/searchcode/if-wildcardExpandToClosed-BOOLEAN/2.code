@@ -1,0 +1,7 @@
+* @return Whether specified concrete indices should be ignored when unavailable (missing or closed)
+*/
+public boolean ignoreUnavailable() {
+return (id &amp; IGNORE_UNAVAILABLE) != 0;
+private static byte toByte(boolean ignoreUnavailable, boolean allowNoIndices, boolean wildcardExpandToOpen,
+boolean wildcardExpandToClosed, boolean allowAliasesToMultipleIndices, boolean forbidClosedIndices) {
+

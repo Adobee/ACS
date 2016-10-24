@@ -1,0 +1,10 @@
+Shape shape;
+
+while ((nextLine = reader.readNext()) != null) {
+shapeID = nextLine[0];
+lat = Double.valueOf(nextLine[1]);
+List<Shape> shapesList = new ArrayList<Shape>();
+for (Shape s : shapes) {
+if (shapeID.equals(s.getShapeID())) {
+shapesList.add(s);
+

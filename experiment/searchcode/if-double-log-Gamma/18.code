@@ -1,0 +1,9 @@
+if (dof == 2) {
+return Math.exp(-1.0 * v);
+}
+double incompleteGamma = log_igf(k,v);
+|| Double.isInfinite(Math.exp(incompleteGamma))) {
+return 1e-14;
+}
+double gamma = Math.log(getApproxGamma(k));
+

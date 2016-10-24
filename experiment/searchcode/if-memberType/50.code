@@ -1,0 +1,9 @@
+public ITypeMapping createMapper(@Nonnull JsonTypeRegistry registry, @Nonnull final Class< ? > typeClass, @Nullable Type type) {
+if(! typeClass.isArray())
+return null;
+final Class< ? > memberType = ClassUtil.findCollectionType(typeClass);
+if(null == memberType || Object.class == memberType)
+return null;
+
+int mod = memberType.getModifiers();
+

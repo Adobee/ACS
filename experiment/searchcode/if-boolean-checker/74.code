@@ -1,0 +1,9 @@
+public boolean isPermitAccess(String value, boolean edit) {
+if(accessChecker.isPermitAccess(value, edit)) return true;
+if(guestAccessChecker.isPermitAccess(value, edit)) return true;
+return false;
+}
+
+public boolean isPermitGroup(String value) {
+if(accessChecker.isPermitGroup(value)) return true;
+

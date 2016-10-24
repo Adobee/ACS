@@ -1,0 +1,11 @@
+public static int getGCD()
+{
+ArrayList<Integer> ts= new ArrayList<Integer>();
+//       System.out.println(&quot;TimeStamps: &quot;+GroupFormation.timeStamps);
+return 0;
+
+if(ts.size() == 1)
+return ts.get(0);
+
+int m= ts.get(0),n= ts.get(1);
+

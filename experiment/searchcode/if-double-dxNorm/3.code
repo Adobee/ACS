@@ -1,0 +1,10 @@
+dxNorm = java.lang.Math.sqrt(dxNorm);
+double fp = dxNorm - delta;
+if (fp <= (0.1 * delta)) {
+lmPar = 0;
+return ;
+dxNorm = java.lang.Math.sqrt(dxNorm);
+double previousFP = fp;
+fp = dxNorm - delta;
+if (((java.lang.Math.abs(fp)) <= (0.1 * delta)) || (((parl == 0) &amp;&amp; (fp <= previousFP)) &amp;&amp; (previousFP < 0))) {
+

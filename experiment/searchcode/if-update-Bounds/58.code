@@ -1,0 +1,10 @@
+import com.google.android.gms.maps.CameraUpdateFactory;
+import com.google.android.gms.maps.model.LatLngBounds;
+
+class GxMapViewCamera
+private void updateCamera(LatLngBounds bounds)
+{
+if (bounds != null)
+{
+CameraUpdate update = CameraUpdateFactory.newLatLngBounds(bounds, Services.Device.dipsToPixels(CAMERA_MARGIN_DIPS));
+

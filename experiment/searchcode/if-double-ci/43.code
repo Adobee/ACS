@@ -1,0 +1,8 @@
++ ci.j3.dot(ci.body2.deltavelocity) + ci.j4.dot(ci.body2.deltaomega) + (ci.b) + damper*ci.lambda;
+
+//fisher
+if ( ci.lower == Double.NEGATIVE_INFINITY &amp;&amp; ci.upper == Double.POSITIVE_INFINITY) {
+//recompute friction limits
+double limit = Math.abs(ci.coupling.lambda)*mu; ci.lower = -limit; ci.upper = limit;
+if (Math.abs(w)<truncatevelocity ) {w=0;}
+

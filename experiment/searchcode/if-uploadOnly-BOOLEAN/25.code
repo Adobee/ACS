@@ -1,0 +1,10 @@
+final ContentProviderClient provider, final SyncResult syncResult) {
+final boolean uploadOnly = extras.getBoolean(ContentResolver.SYNC_EXTRAS_UPLOAD, false);
+.matcher(account.name).replaceAll(&quot;$1...$2@&quot;);
+
+if (uploadOnly) {
+return;
+}
+
+LOGI(TAG, &quot;Beginning sync for account &quot; + logSanitizedAccountName + &quot;,&quot; +
+

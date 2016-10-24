@@ -1,0 +1,7 @@
+/* To calculate the value if x is negative, use exp(-x) = 1/exp(x)
+*/
+if (x.compareTo(BigDecimal.ZERO) < 0) {
+final BigDecimal invx = exp(x.negate());
+final double xUlpDbl = x.ulp().doubleValue();
+if (Math.pow(xDbl, TAYLOR_NTERM) < TAYLOR_NTERM * (TAYLOR_NTERM - 1.0) * (TAYLOR_NTERM - 2.0) * xUlpDbl) {
+

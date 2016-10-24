@@ -1,0 +1,15 @@
+private Op dispatch(Op op) {
+
+if(op instanceof Op0) {
+Op0 bgp = (Op0) op;
+return xform(bgp);
+}
+
+if(op instanceof Op1) {
+return xform(op1,op1.getSubOp());
+}
+
+if(op instanceof Op2) {
+Op2 opc = (Op2) op;
+return xform(opc,opc.getLeft(),opc.getRight());
+

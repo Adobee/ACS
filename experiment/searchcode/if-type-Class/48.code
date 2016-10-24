@@ -1,0 +1,5 @@
+public static SootClass getClassFromType(Type type) {
+if(type instanceof ArrayType) type = ((ArrayType)type).baseType;
+if(type instanceof BooleanType) return Scene.v().loadClassAndSupport(&quot;java.lang.Boolean&quot;);
+if(type instanceof ByteType) return Scene.v().loadClassAndSupport(&quot;java.lang.Byte&quot;);
+

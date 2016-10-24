@@ -1,0 +1,17 @@
+long next = current + 1;
+if (compareAndSet(current, next))
+return next;
+}
+}
+
+private synchronized void count() {
+count();
+long current = get();
+long next = current - 1;
+if (compareAndSet(current, next))
+return next;
+}
+}
+
+}
+

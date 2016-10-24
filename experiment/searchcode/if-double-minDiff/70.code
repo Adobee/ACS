@@ -1,0 +1,12 @@
+public static Camera.Size getOptimalPreviewSize(List<Camera.Size> sizes, int w, int h) {
+final double ASPECT_TOLERANCE = 0.1;
+double targetRatio=(double)h / w;
+
+if (sizes == null) return null;
+minDiff = Math.abs(size.height - targetHeight);
+}
+}
+
+if (optimalSize == null) {
+minDiff = Double.MAX_VALUE;
+

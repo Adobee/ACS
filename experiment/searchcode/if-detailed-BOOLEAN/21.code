@@ -1,0 +1,9 @@
+private final int maxLevelForDetailedOutput;
+private boolean lastNodeWasDetailed;
+
+public MinimalOutputCallback(final int maxLevelForDetailedOutput) {
+if (level < maxLevelForDetailedOutput) {
+if (!lastNodeWasDetailed) {
+System.out.println();
+lastNodeWasDetailed = true;
+

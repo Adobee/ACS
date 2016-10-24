@@ -1,0 +1,5 @@
+private static final String save_query = &quot;INSERT Buylisted VALUES (?, ?, ?)&quot;;
+private static final String load_query = &quot;select BUYLISTED.recp_id,r_name,quantity,amount,USES.INGR_ID, INGREDIENT.INGR_NAME, UNIT.UNIT_NAME from BUYLISTED &quot;
++ &quot;inner join RECIPE on BUYLISTED.RECP_ID = RECIPE.RECP_ID &quot;
++ &quot;inner join USES on BUYLISTED.RECP_ID = USES.RECP_ID &quot;
+

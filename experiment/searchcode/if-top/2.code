@@ -1,0 +1,8 @@
+System.out.println(&quot;Bombs top x &quot;+top.x+ &quot; y &quot;+top.y +&quot; Bombs &quot;+ top.bombs);
+if (top.x == pos[2] &amp;&amp; top.y == pos[3])
+return minCost[top.x][top.y];
+
+if (top.y > 0) {
+bombsleft = top.bombs;
+if (minCost[top.x][top.y - 1] > top.cost + w[top.x][top.y - 1]) {
+

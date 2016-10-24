@@ -1,0 +1,16 @@
+private final String fieldName;
+
+/**
+* @param fieldName
+*/
+public Facet(String fieldName) {
+super();
+* @return the fieldName.
+*/
+public String getFieldName() {
+return fieldName;
+}
+
+@Override
+public int hashCode() {
+

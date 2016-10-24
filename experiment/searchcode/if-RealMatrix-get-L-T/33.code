@@ -1,0 +1,9 @@
+featureState.data[stateIndexes.get(stepData.s_tp1)] = 1;
+return stepData;
+}
+
+public PVector currentFeatureState() {
+if (graph.currentState() == null)
+ArrayRealVector b = computeB(phi, d_pi, p, r_bar, gamma, lambda);
+RealMatrix minusAInverse = new LUDecompositionImpl(A).getSolver().getInverse().scalarMultiply(-1);
+

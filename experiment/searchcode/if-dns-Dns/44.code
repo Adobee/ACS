@@ -1,0 +1,13 @@
+_class = in.readShort();
+rec = newRecord(name, type, _class);
+
+if (section == dns.QUESTION)
+return rec;
+
+rec.rttl = in.readInt();
+out.writeShort(rtype);
+out.writeShort(rclass);
+if (section == dns.QUESTION)
+return;
+out.writeInt(rttl);
+

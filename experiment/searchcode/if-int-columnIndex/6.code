@@ -1,0 +1,13 @@
+for (int i = 0; i < types.size(); i++) {
+columns.add(null);
+}
+}
+
+private void checkIndex(int columnIndex) throws IndexOutOfBoundsException {
+throw new IndexOutOfBoundsException(&quot;column index is out of bound&quot;);
+}
+}
+
+private void checkFormat(int columnIndex, Class<?> type) throws ColumnFormatException {
+if (!types.get(columnIndex).equals(type)) {
+

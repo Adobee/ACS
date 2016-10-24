@@ -1,0 +1,10 @@
+* List<IvyNode>>
+*/();
+
+private boolean showEvicted = false;
+
+public void doExecute() throws BuildException {
+IvyNode dependency = (IvyNode) iterator.next();
+boolean evicted = dependency.isEvicted(getConf());
+if (evicted &amp;&amp; !showEvicted) {
+

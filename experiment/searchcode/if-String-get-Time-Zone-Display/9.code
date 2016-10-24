@@ -1,0 +1,12 @@
+throws ConversionException {
+final TimeZone timeZone = TimeZone.getTimeZone(string);
+if (timeZone == null) {
+throw new ConversionException(&quot;Time zone \&quot;&quot; + string + &quot;\&quot; does not exist.&quot;);
+return timeZone;
+}
+@Override
+public String toString(final TimeZone object, ConversionContext context) {
+return object.getDisplayName(context.getLocale());
+}
+}
+

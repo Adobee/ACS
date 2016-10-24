@@ -1,0 +1,9 @@
+@SuppressWarnings(&quot;unchecked&quot;)
+private void writeJson(String name, Object object) {
+try {
+if (object == null) {
+writeNull(name);
+
+} else if (object instanceof Map) {
+writeMap(name, (Map<Object, Object>) object);
+

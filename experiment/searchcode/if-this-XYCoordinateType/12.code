@@ -1,0 +1,11 @@
+return false;
+}
+XYCoordinateType order = (XYCoordinateType) obj;
+if (!this.name.equals(order.toString())) {
+return true;
+}
+
+
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(XYCoordinateType.DATA)) {
+

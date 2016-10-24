@@ -1,0 +1,11 @@
+package com.qiushui.base.util;
+
+/**
+* 异常工具类。
+*/
+public class ThrowableUtils {
+* @return 返回指定Throwable对象的根Throwable对象。
+*/
+public static Throwable getRootThrowable(Throwable throwable) {
+if (throwable.getCause() != null) {
+

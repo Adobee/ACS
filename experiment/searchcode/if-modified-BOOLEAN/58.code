@@ -1,0 +1,9 @@
+public boolean refreshDiffFlags(boolean conflict, boolean modifiedLeft, boolean modifiedRight) {
+boolean modified = false;
+if (!diffsConflict &amp;&amp; conflict) {
+diffsConflict = true;
+modified = true;
+} else if (diffsConflict &amp;&amp; !conflict) {
+boolean ok = true;
+for (Diff childDiff : getDiffs()) {
+

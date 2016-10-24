@@ -1,0 +1,6 @@
+int i = paramTypes.length;
+if ((i > 0) &amp;&amp; (paramTypes[i - 1] instanceof Class<?>)) {
+Class<?> paramType = (Class<?>) paramTypes[i - 1];
+if (paramType.equals(HttpContext.class)
+|| paramType.equals(HttpServletRequest.class)
+

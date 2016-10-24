@@ -1,0 +1,18 @@
+public EqualsHashCode(String str) {
+this.str = str;
+}
+
+@Override
+public boolean equals(Object o) {
+if (!(o instanceof EqualsHashCode))
+EqualsHashCode equalsHashCode = (EqualsHashCode) o;
+return equalsHashCode.str.equals(str);
+}
+
+@Override
+public int hashCode() {
+return str.hashCode();
+}
+
+}
+

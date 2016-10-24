@@ -1,0 +1,11 @@
+BufferedReader br = new BufferedReader(new FileReader(f));
+StringBuffer buf = new StringBuffer();
+
+boolean inHeaders = true;
+
+while (br.ready()) {
+String line = br.readLine();
+
+if (inHeaders) {
+int pos = line.indexOf(&quot;:&quot;);
+

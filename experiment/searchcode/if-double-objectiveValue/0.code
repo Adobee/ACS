@@ -1,0 +1,9 @@
+public void run() {
+Double previousAgentCount = null;
+if(this.getProperty(&quot;previousAgentCountContainer&quot;) == null) {
+Double objectiveValue = (Double) this.getBoxedProperty(&quot;objectiveValue&quot;);
+if(objectiveValue == null)
+objectiveValue = new Double(0);
+
+objectiveValue += Math.abs(previousAgentCount - currentAgentCount);
+

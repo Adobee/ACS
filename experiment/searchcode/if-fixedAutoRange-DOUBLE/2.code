@@ -1,0 +1,7 @@
+double range = upper - lower;
+
+// if fixed auto range, then derive lower bound...
+double fixedAutoRange = getFixedAutoRange();
+if (fixedAutoRange > 0.0) {
+lower = Math.max(upper - fixedAutoRange, this.getSmallestValue());
+

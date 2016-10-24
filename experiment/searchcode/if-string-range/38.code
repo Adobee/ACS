@@ -1,0 +1,9 @@
+public class RangeParserRange implements IRangeParser {
+
+@Override
+public boolean matches(String rangeString) {
+return rangeString.matches(&quot;\\d+-(\\d+)?&quot;);
+int begin = Integer.valueOf(rangeString.substring(0, rangeString.indexOf(&#39;-&#39;)));
+int end = sequence.length();
+if ( ! rangeString.endsWith(&quot;-&quot;))
+

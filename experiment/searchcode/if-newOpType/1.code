@@ -1,0 +1,8 @@
+public NotificationChain basicSetOpType(TypeUse newOpType, NotificationChain msgs)
+{
+TypeUse oldOpType = opType;
+opType = newOpType;
+if (eNotificationRequired())
+ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, LlvmPackage.COMPARE__OP_TYPE, oldOpType, newOpType);
+if (msgs == null) msgs = notification; else msgs.add(notification);
+

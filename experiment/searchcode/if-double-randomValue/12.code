@@ -1,0 +1,10 @@
+public abstract float getDensity(); //defined in g/cm^3
+
+public static Material createRandomMaterial() {
+
+double randomValue = Math.random();
+
+if (randomValue < 0.36) {
+return new WoodMaterial();
+} else if (randomValue < 0.66) {
+

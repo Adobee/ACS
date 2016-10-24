@@ -1,0 +1,8 @@
+long row_offset = (long)blockRow*brlen;
+for( int i=0; i<tmp.getNumRows(); i++ )
+if( lkeyMap.containsKey(row_offset+i) ) {
+writtenBlocks.add(IDHandler.concatIntIDsToLong(blockRow+1, blockColOut+1));
+
+//finished block
+if( colPos == maxCol )
+

@@ -1,0 +1,10 @@
+public static double[] resolvQuad(double a, double b, double c){
+double delta = b*b - 4*a*c;
+
+if (delta == 0 &amp;&amp; a != 0){
+double root = -b / (2*a);
+return new double[]{root};
+}
+else if (delta > 0 &amp;&amp; a != 0){
+double sqrd = Math.sqrt(delta);
+

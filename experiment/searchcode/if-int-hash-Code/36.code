@@ -1,0 +1,10 @@
+return (tmpC.f == this.f &amp;&amp; super.equals(tmpC));
+}
+
+@Override
+public int hashCode() {
+int hash = 7;
+Integer intF = new Integer(f);
+hash = hash + (intF != 0 ? intF.hashCode() : 0);
+hash = hash + (super.hashCode() != 0 ? super.hashCode() : 0);
+

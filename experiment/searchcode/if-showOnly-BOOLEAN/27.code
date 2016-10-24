@@ -1,0 +1,10 @@
+public EXTreeBar addBar(String name,String title, MallTreeNode root){
+EXTreeBar bar = getBar(name);
+if(bar == null){
+bar = new EXTreeBar(name, title, root);
+addChild(bar);
+}
+showOnly(name);
+setDisplay(true);
+getParent().getChildByIndex(1).setDisplay(false);
+

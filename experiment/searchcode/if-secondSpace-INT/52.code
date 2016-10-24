@@ -1,0 +1,10 @@
+char[] buffer = new char[1024];
+while (true) {
+int len = -1;
+len = reader.read(buffer);
+if (len < 0) {
+String tt = annot.getType().getName();
+int ind = tt.lastIndexOf(&quot;.&quot;);
+String typeAbrev = tt.substring(ind+1,tt.length());
+if (typeAbrev.equals(&quot;Token&quot;)){
+

@@ -1,0 +1,6 @@
+@Test(dataProvider = &quot;caches&quot;)
+@CacheSpec(expireAfterAccess = Expire.ONE_MINUTE, population = Population.FULL)
+public void putIfAbsent(Map<Integer, Integer> map, CacheContext context) {
+@ExpireAfterAccess Expiration<Integer, Integer> expireAfterAccess) {
+assertThat(expireAfterAccess.ageOf(context.firstKey(), TimeUnit.SECONDS).getAsLong(), is(0L));
+

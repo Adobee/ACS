@@ -1,0 +1,13 @@
+protected Message buildMessage(DatagramPacket packet, int intMessageType, MessageBody body) {
+Message message = null;
+
+if (intMessageType == ServerUpdateMessage.MESSAGE_TYPE) {
+message = ServerUpdateMessage.constructFromMessageBody(body);
+} else if (intMessageType == PlayerActionMessage.MESSAGE_TYPE) {
+message = PlayerActionMessage.constructFromMessageBody(body);
+}
+
+return message;
+}
+}
+

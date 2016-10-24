@@ -1,0 +1,11 @@
+int newy = (int) (sprite2.Y() - sprite1.Y());
+if (newy < 0) {
+newy = -newy;
+}
+double squaredDistance = (sprite1.getCollisionRadius()+sprite2.getCollisionRadius())+(sprite1.getCollisionRadius()+sprite2.getCollisionRadius());
+public void Bounce(int edge) {
+MoveIntoBounds();
+
+// Normalize heading to [0, 360)
+double normalizedAngle = normalizeAngle(userHeading);
+

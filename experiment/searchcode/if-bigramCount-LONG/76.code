@@ -1,0 +1,13 @@
+String bigram=seg[i]+&quot;_&quot;+seg[i+1];
+if (!bigramCount.containsKey(bigram))
+{
+bigramCount.put(bigram, 0);
+bw.write(seg[j]+&quot; &quot;);
+j++;
+}
+else
+{
+if (bigramCount.get(seg[j]+&quot;_&quot;+seg[j+1])>270)//bigram threshold
+{
+bw.write(seg[j]+&quot;_&quot;+seg[j+1]+&quot; &quot;);
+

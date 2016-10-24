@@ -1,0 +1,5 @@
+//                 -4.0d*ci*ci*(ci+1.0d)*(ci+2.0d)/(c*c*(c+1.0d)*(c+2.0d))+ci*(ci+1.0d)*(ci+2.0d)*(ci+3.0d)/(c*(c+1.0d)*(c+2.0d)*(c+3.0d));
+if (GaussianTransformation)
+{
+double adjustedMean = Math.log (mean/(1-mean))+ (2.0d*mean-1.0d)*var/(2.0d*mean*mean*(1.0d-mean)*(1.0d-mean));
+

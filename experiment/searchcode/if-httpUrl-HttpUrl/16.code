@@ -1,0 +1,8 @@
+httpurlConnection.setReadTimeout(5000);
+if(httpurlConnection.getResponseCode()==200){
+is = httpurlConnection.getInputStream();
+httpurl = (HttpURLConnection) url.openConnection();
+httpurl.setConnectTimeout(5000);
+httpurl.setReadTimeout(5000);
+if(httpurl.getResponseCode()==200){
+

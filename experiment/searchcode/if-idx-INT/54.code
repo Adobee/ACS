@@ -1,0 +1,10 @@
+* Created by stameying on 3/7/16.
+*/
+public class p280 {
+public static void wiggleSort(int[] nums) {
+int idx = 1;
+for (; idx < nums.length; idx++){
+nums[idx] = temp;
+}else if (idx%2 == 0 &amp;&amp; nums[idx] > nums[idx-1]){
+int temp = nums[idx-1];
+

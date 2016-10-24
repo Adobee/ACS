@@ -1,0 +1,14 @@
+private Vector Mittelortsvektor;
+private double ra;
+
+public Sphere(Vector Ortsvektor, double ra){
+Mittelortsvektor = Ortsvektor;
+double D = sk*sk - o.pot() + ra*ra;
+
+if (D < 0.0){
+return null;
+}
+
+
+IntersectionDesc id = new IntersectionDesc();
+

@@ -1,0 +1,12 @@
+this.isNpTreeSingularDecider = isNpTreeSingularDecider;
+}
+
+public List<NpTree> extract(Tree tree){
+List<NpTree> npTrees = new ArrayList<>();
+
+if (tree.label().value().equals(&quot;NP&quot;))
+npTrees.add(new NpTree(tree, isNpTreeSingularDecider.isSingular(tree)));
+
+if (tree.children().length == 0)
+return npTrees;
+

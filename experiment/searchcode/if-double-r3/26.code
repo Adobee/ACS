@@ -1,0 +1,16 @@
+public double r1;
+
+/** The r2. */
+public double r2;
+
+/** The r3. */
+public double r3;
+
+/**
+* Gets the max root.
+*
+* @return the max root
+*/
+public double getMaxRoot() {
+if (num == 0) {
+

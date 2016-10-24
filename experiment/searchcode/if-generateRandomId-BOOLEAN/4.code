@@ -1,0 +1,11 @@
+* Factory for GlobalTransaction/DeadlockDetectingGlobalTransaction.
+*
+* @author Mircea.Markus@jboss.com
+*/
+public class GlobalTransactionFactory {
+
+private boolean isEddEnabled = false;
+public GlobalTransaction newGlobalTransaction(Address addr, boolean remote) {
+GlobalTransaction gtx;
+if (isEddEnabled) {
+

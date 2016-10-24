@@ -1,0 +1,11 @@
+package profit.domain;
+
+public class Divisao {
+
+public Double execute(Double dividendo, Double divisor) throws Exception {
+if (divisor == 0) throw new Exception(&quot;Divis�o por zero.&quot;);
+return dividendo / divisor;
+}
+
+}
+

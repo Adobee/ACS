@@ -1,0 +1,9 @@
+import javax.swing.event.EventListenerList;
+
+public abstract class EventSource<ListenerType extends EventListener> {
+
+private EventListenerList listeners = new EventListenerList();
+public void removeListener(ListenerType listener) {
+if (listeners != null) {
+listeners.remove(getListenerClass() , listener);
+

@@ -1,0 +1,11 @@
+Class<BasicTest> object=BasicTest.class;
+
+if ( object.isAnnotationPresent( BasicAnnotation.class ) ) {
+System.out.println(basicAnnotation.id());
+}
+
+
+
+for ( Method method : object.getDeclaredMethods() ) {
+if ( method.isAnnotationPresent( BasicAnnotation.class ) ) {
+

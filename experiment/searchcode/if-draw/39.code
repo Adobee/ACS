@@ -1,0 +1,10 @@
+public static Draw createDraw(String currentDraw) {
+if (currentDraw.equals(&quot;running&quot;))
+return new DrawRunningImpl();
+else if (currentDraw.equals(&quot;end&quot;))
+return new DrawEndImpl();
+else
+return null;
+}
+}
+

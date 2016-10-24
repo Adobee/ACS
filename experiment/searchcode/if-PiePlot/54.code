@@ -1,0 +1,8 @@
+import org.jfree.chart.labels.StandardPieItemLabelGenerator;
+import org.jfree.chart.plot.PiePlot;
+import org.jfree.chart.title.TextTitle;
+pieplot.setStartAngle(90);
+
+if (m_nType == TYPE_PERCENT) {
+pieplot.setLegendLabelGenerator(new StandardPieItemLabelGenerator(&quot;{0}={1}(ռ{2})&quot;, NumberFormat.getNumberInstance(),
+

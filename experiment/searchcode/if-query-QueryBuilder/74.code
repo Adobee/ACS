@@ -1,0 +1,9 @@
+queryBuilder.append(StringUtils.SPACE);
+
+if (!CollectionUtils.isEmpty(projections)) {
+queryBuilder.appendWithSeparators(projections, ITEM_DELIM);
+queryBuilder.append(((targetClassName != null) ? targetClassName : targetClass.getSimpleName()));
+queryBuilder.append(StringUtils.SPACE);
+
+if (!MapUtils.isEmpty(params)) {
+

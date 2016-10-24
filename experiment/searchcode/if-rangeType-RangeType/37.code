@@ -1,0 +1,10 @@
+import semanticAnalyzer.RangeType;
+import semanticAnalyzer.Type;
+
+public class IsEmptyNodeRewriter extends NodeRewriterImp {
+RangeType rangeType = (RangeType) child.getType();
+Type rangeSubtype = rangeType.getChildType();
+
+if (!rangeSubtype.isComparable()) {
+return trueNode();
+

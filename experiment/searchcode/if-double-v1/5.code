@@ -1,0 +1,10 @@
+public int getHat(String hats, int numSwaps) {
+double[] v = new double[3];
+for (int i = 0; i < 3; ++i)
+if (hats.charAt(i) == &#39;.&#39;)
+else
+v[i] = 1.0;
+double[] v1 = new double[3];
+for (int it = 0; it < numSwaps; ++it) {
+v1[1] += v[0] * 0.5;
+

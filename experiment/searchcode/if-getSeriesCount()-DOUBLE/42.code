@@ -1,0 +1,10 @@
+public Object getDoubleValueAt(int row, int col) {
+if (col == 0) {
+return xValues[row];
+} else {
+return ySeries.get(col - 1).get(row);
+DefaultXYDataset ds = new DefaultXYDataset();
+
+for (int serieIndex = 0; serieIndex < getSeriesCount(); serieIndex++) {
+double[][] serieData = getSerieXYData(serieIndex);
+

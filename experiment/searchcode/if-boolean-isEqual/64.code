@@ -1,0 +1,8 @@
+public abstract class TestUtils {
+
+public static void assertEquals(byte[] expected, byte[] actual) {
+boolean isEqual = (actual.length == expected.length);
+for (int i = 0; isEqual &amp;&amp; (i < actual.length); i++) {
+if (actual[i] != expected[i]) {
+isEqual = false;
+

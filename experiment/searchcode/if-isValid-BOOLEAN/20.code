@@ -1,0 +1,10 @@
+public class VisaStrategy extends ValidationStrategy {
+
+@Override
+public boolean isValid(CreditCard creditCard) {
+
+boolean isValid = creditCard.getNumber().startsWith(&quot;4&quot;);
+
+if (isValid) {
+isValid = creditCard.getNumber().length() == 16;
+

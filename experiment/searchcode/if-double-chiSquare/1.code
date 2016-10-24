@@ -1,0 +1,9 @@
+} else {
+c[d - 1]++;
+}
+double chiSquare = 0;
+for (int i = 0; i < d; i++) {
+for (int j = 0; j < d; j++) {
+System.out.println(chiSquare);
+if (chiSquare > ChiSquare.chiTable.get(6).getKey() &amp;&amp; chiSquare < ChiSquare.chiTable.get(6).getValue()) {
+

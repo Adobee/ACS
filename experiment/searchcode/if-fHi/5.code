@@ -1,0 +1,8 @@
+FhiFile fhiFile = (FhiFile) this.dbDao.queryObjectById(
+FhiFile.class, fileID);
+if (upDownCount) {
+fhiFile.setDownloadCount(fhiFile.getDownloadCount() + 1);
+File file = new File(this.getFilePath() + &quot;\\&quot; + fhiFile.getFileId()+fhiFile.getFileExt());
+if (file.exists()) {
+if (this.dbDao.deleteObject(fhiFile)) {
+

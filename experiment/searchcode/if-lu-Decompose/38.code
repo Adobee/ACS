@@ -1,0 +1,12 @@
+int pivot = j;
+
+for (int i = j + 1; i < lu.rows(); i++) {
+if (Math.abs(lu.get(i, j)) > Math.abs(lu.get(pivot, j))) {
+pivot = i;
+}
+}
+
+if (pivot != j) {
+lu.swapRows(pivot, j);
+p.swapRows(pivot, j);
+

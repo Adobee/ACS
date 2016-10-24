@@ -1,0 +1,16 @@
+private CopyOnWriteArrayList<T> objects = new CopyOnWriteArrayList<T>();
+
+public void registerObject(T object) {
+if(!objects.contains(object)) objects.add(object);
+}
+
+public void deleteObject(T object) {
+if(objects.contains(object)) objects.remove(object);
+}
+
+public CopyOnWriteArrayList<T> getObjects() {
+return objects;
+}
+
+}
+

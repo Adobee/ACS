@@ -1,0 +1,13 @@
+public static final String __name__ = &quot;bool&quot;;
+
+public boolean value = false;
+
+public PyBool() {
+}
+
+public PyBool(boolean value) {
+public static PyObject __new__(PyObject[] args, AttrDict kwargs) throws PyException {
+
+if(kwargs.getCount() > 0){
+throw new PyTypeError(String.format(&quot;constructor de &#39;%s&#39; no debe recibir ningun argumento por nombre.&quot;, __name__));
+

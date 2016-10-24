@@ -1,0 +1,9 @@
+public class IpUtil {
+
+/*获取设备IPv4地址对应的InetAddress对象*/
+public static InetAddress getIpAddress() {
+try {
+for (Enumeration<NetworkInterface> enNetI = NetworkInterface
+InetAddress inetAddress = enumIpAddr.nextElement();
+if (inetAddress instanceof Inet4Address &amp;&amp; !inetAddress.isLoopbackAddress()) {
+

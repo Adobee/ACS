@@ -1,0 +1,7 @@
+public static boolean isModLoaded(String modname, String versionRangeString) {
+if (!isModLoaded(modname)) {
+VersionRange versionRange = VersionParser.parseRange(versionRangeString);
+DefaultArtifactVersion requiredVersion = new DefaultArtifactVersion(modname, versionRange);
+
+if (!requiredVersion.containsVersion(modVersion)) {
+

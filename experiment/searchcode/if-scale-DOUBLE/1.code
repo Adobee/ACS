@@ -1,0 +1,13 @@
+package com.gsms.business.map;
+
+public class StructOffset {
+//地图缩放比例  默认值-1
+private double scale;
+public void translate(double offsetX,double offsetY){
+x+=offsetX;
+y+=offsetY;
+}
+
+public void translate(double scale){
+if(this.scale==-1){
+

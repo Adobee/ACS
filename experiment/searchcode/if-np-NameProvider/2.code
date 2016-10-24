@@ -1,0 +1,6 @@
+import org.apidesign.aserverinfo.spi.NameProvider;
+import org.apidesign.aserverinfo.spi.ResetHandler;
+import org.apidesign.aserverinfo.spi.URLProvider;
+public final ServerConnector nameProvider(NameProvider np) {
+return new ServerConnector(np, this.url, this.reset, this.shutdown);
+

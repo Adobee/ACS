@@ -1,0 +1,15 @@
+Long numberValue = NumberUtils.toLong(value);
+
+if(numberValue == null){
+
+return false;
+
+}else if(maxValue != null &amp;&amp; minValue != null){
+return numberValue <= maxValue &amp;&amp; numberValue >= minValue;
+
+}else if(maxValue != null){
+
+return numberValue <= maxValue;
+
+}else if(minValue != null){
+

@@ -1,0 +1,9 @@
+@Override
+public Number compose(Number lhs, Number rhs) {
+Long value = getValue(lhs, rhs);
+if (value != null) {
+private Long getValue(Number lhs, Number rhs) {
+long base = lhs.getValue();
+long power = rhs.getValue();
+if (base == 0 || power <= 0) {
+

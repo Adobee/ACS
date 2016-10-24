@@ -1,0 +1,12 @@
+return (findKth(A, 0, B, 0, len / 2) + findKth(A, 0, B, 0, len / 2 + 1)) / 2;
+}
+
+double findKth(int A[], int startA, int B[], int startB, int k) {
+if (startA >= A.length)
+return A[startA + k - 1];
+
+int a = A[startA + lenA - 1];
+int b = B[startB + lenB - 1];
+
+if (a < b) {
+

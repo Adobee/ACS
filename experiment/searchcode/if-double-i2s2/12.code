@@ -1,0 +1,8 @@
+/** Inverse of twice the square of the standard deviation. */
+private final double i2s2;
+/** Normalization factor. */
+final double g = Gaussian.value(diff, norm, i2s2);
+
+if (g == 0) {
+// Avoid returning NaN in case of overflow.
+

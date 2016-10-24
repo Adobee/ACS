@@ -1,0 +1,8 @@
+data.setBoolean(&quot;hasMaster&quot;, hasMaster);
+data.setBoolean(&quot;isMaster&quot;, isMaster);
+if (hasMaster() &amp;&amp; isMaster()) {
+hasMaster = data.getBoolean(&quot;hasMaster&quot;);
+isMaster = data.getBoolean(&quot;isMaster&quot;);
+if (hasMaster() &amp;&amp; isMaster()) {
+// Any other values should ONLY BE READ BY THE MASTER
+

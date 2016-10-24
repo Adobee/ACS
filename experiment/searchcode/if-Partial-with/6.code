@@ -1,0 +1,7 @@
+private static boolean solvePartialSudoku(List<List<Integer>> partialAssignment, int i, int j) {
+if (j == partialAssignment.get(i).size()) {
+j = 0;
+if (++i == partialAssignment.size()) return true;
+for (int val = 1; val <= partialAssignment.size(); val++) {
+if (checkPositionWithVal(partialAssignment, i, j, val)) {
+

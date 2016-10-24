@@ -1,0 +1,11 @@
+final double q = 1 / Math.sqrt(dx * dx + dy * dy + dz * dz);
+return new Vector3d(dx * q, dy * q, dz * q);
+}
+
+// Dot product
+/** dot product */
+@Override public final boolean equals(final Object o) {
+if (o == this) return true;
+try {
+final Vector3d v = (Vector3d) o;
+

@@ -1,0 +1,10 @@
+RealMatrix XNX = horzcat(X, uminus(X));
+RealMatrix H_G = XNX.transpose().multiply(XNX);
+RealMatrix D = repmat(diag(H_G), 1, ny);
+RealMatrix XNXTY = XNX.transpose().multiply(Y);
+public RealMatrix train(RealMatrix X, RealMatrix Y) {
+
+/*XNX = [X, -X];
+H_G = XNX&#39; * XNX;
+D = repmat(diag(H_G), [1, n_y]);
+

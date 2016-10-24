@@ -1,0 +1,12 @@
+this.elementType = elementType;
+}
+
+@Override
+public boolean compatible(Type type) {
+if (type.equal(BaseType.ERROR)) {
+public boolean equal(Type type) {
+if (!type.isArrayType()) {
+return false;
+}
+return elementType.equal(((ArrayType) type).elementType);
+

@@ -1,0 +1,10 @@
+protected Stroke stroke = null;
+protected boolean fill = true;
+
+public Stroke getStroke() {
+return stroke;
+public void plot(CoordinateSystem p) {
+p.setColor(color);
+if (stroke != null)
+p.getGraphics().setStroke(stroke);
+

@@ -1,0 +1,14 @@
+public class Input {
+
+static boolean[]KP = new boolean[300];
+
+
+
+public static boolean isPressed(int Key){
+if(Keyboard.isKeyDown(Key)) 	{	 if(!KP[Key])	{ KP[Key] = true; return true;}				} else {KP[Key] = false;}
+public static boolean F3(){
+return isPressed(Keyboard.KEY_F3);
+}
+public static boolean Ctrl_S(){
+if( Keyboard.isKeyDown(Keyboard.KEY_LCONTROL) &amp;&amp; isPressed(Keyboard.KEY_S)) {return true;}
+

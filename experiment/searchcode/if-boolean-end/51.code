@@ -1,0 +1,19 @@
+s=s.toLowerCase();
+boolean result =true;
+int start =0;
+int end =s.length()-1;
+while (start <end)
+{
+while (!valid(s.charAt(start)))
+start++;
+end--;
+}
+
+return true;
+}
+
+
+public boolean valid(char ch)
+{
+if (ch<=&#39;9&#39;&amp;&amp; ch>=&#39;0&#39;)
+

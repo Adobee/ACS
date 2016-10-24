@@ -1,0 +1,11 @@
+public class JapaneseAttackRange extends AbstractAttackRange{
+
+private final int xrange = 2;
+private final int yrange = 2;
+
+public JapaneseAttackRange(){}
+
+@Override
+public boolean getAttackRange(AbstractPanzer panzer, int x, int y) {
+if(x<=panzer.getX()+this.xrange &amp;&amp; x>=panzer.getX()-this.xrange &amp;&amp; y==panzer.getY()){
+

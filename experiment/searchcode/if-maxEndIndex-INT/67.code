@@ -1,0 +1,9 @@
+int endIndex = inputArray.length;
+int maxSum = 0;
+int maxStartIndex = 0, maxEndIndex = 0;
+
+for(int k=startIndex;k<endIndex;k++){
+int indexSum = getMaxSum(inputArray, startIndex, k);
+if(maxSum < indexSum){
+maxSum = indexSum;
+

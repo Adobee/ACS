@@ -1,0 +1,7 @@
+public static Throwable getRootCause(Throwable throwable) {
+if (throwable == null) {
+return null;
+}
+Throwable cause = throwable.getCause();
+if (cause != null &amp;&amp; cause != throwable) {
+

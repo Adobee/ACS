@@ -1,0 +1,12 @@
+this.mQueue = new ConcurrentLinkedQueue<String>();
+}
+
+
+@Override
+public boolean save(String cacheKey) throws IOException {
+if (!mQueue.contains(cacheKey)) {
+break;
+}
+boolean savedSuccessfully = false;
+//1.从内存当中拿出缓存
+

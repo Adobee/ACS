@@ -1,0 +1,7 @@
+@Override
+public boolean addFollow(long followerId, long followId) {
+User follower = userDao.getUserByIdInitialFollowAndFollowerList(followerId);
+for(User u : follower.getFollowlist()){
+if(u.getUserId() == follow.getUserId())
+return false;
+

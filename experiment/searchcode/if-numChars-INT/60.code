@@ -1,0 +1,8 @@
+char[] charArray = str.toCharArray();
+int len = charArray.length;
+
+Map<Character, Integer> numChars = new HashMap<Character, Integer>(Math.min(len, 26));
+char charAt = str.charAt(i);
+if (!numChars.containsKey(charAt)) {
+numChars.put(charAt, 1);
+

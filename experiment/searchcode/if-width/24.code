@@ -1,0 +1,11 @@
+* @return Length of string in pixels
+*/
+public int stringWidth(String text) {
+if (fontWidth.isEmpty()) {
+return 0;
+}
+char[] chars = text.toCharArray();
+int width = 0;
+for (char current : chars) {
+if (fontWidth.containsKey(String.valueOf(current))) {
+

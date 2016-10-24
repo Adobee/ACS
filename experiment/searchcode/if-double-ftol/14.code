@@ -1,0 +1,13 @@
+* using Linemethod<T>::func; using Linemethod<T>::linmin; using
+* Linemethod<T>::p; using Linemethod<T>::xi;
+*/
+final double ftol;
+
+public Powell(final RealValueFun func) {
+public Powell(final RealValueFun func, final double ftoll) {
+super(func);
+ftol = ftoll;
+}
+
+public double[] minimize(final double[] pp) {
+

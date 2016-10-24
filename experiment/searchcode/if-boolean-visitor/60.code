@@ -1,0 +1,8 @@
+public class ExpressionVisitorAdapterTests {
+private static class VisitorMock extends ExpressionVisitorAdapter {
+private boolean visitExpressionCalled;
+public void visitValidIf_AnyExpression_VisitExpressionIsCalled() {
+VisitorMock visitor = new VisitorMock();
+visitor.visitValidIf(null);
+visitor.assertVisitExpressionCalled();
+

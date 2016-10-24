@@ -1,0 +1,9 @@
+//Initial permutation
+int[] cols = new int[n];
+for(int i = 0; i < n; i++) {
+cols[i] = i;
+List<String[]> out = new ArrayList<String[]>();
+do{//n!
+if(!isDiagonalThreat(cols)) {//O(n^2)
+out.add(buildDisposition(cols));//O(n^2)
+

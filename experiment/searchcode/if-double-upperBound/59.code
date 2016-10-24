@@ -1,0 +1,10 @@
+this.upperbound = new BasicAttr(0);
+this.recover = new BasicAttr(0);
+}
+public Status(double current) {
+this.recover = new BasicAttr(0);
+}
+public Status(double current, double upperbound) {
+super();
+this.current = new BasicAttr(current);
+

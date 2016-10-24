@@ -1,0 +1,10 @@
+public static ContextGetter getInstance(){
+if(instance == null){
+instance = new ContextGetter();
+public Context getContext() throws Exception{
+if (context != null){
+return context;
+}
+else{
+throw new Exception(&quot;Context from ContextGetter is null. Try setting context first.&quot;);
+

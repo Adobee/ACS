@@ -1,0 +1,13 @@
+public class MaterialData {
+
+private int id;
+private short durability;
+private final boolean strict;
+
+public MaterialData(ItemStack item) {
+durability = item.getDurability();
+strict = true;
+}
+
+public MaterialData(ItemStack item, boolean strict) {
+

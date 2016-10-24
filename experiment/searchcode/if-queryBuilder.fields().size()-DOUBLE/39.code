@@ -1,0 +1,5 @@
+final String[] geoFields = fessConfig.getQueryGeoFieldsAsArray();
+final Map<String, List<QueryBuilder>> geoMap = new HashMap<>();
+for (final String geoField : geoFields) {
+if (key.startsWith(&quot;geo.&quot; + geoField + &quot;.&quot;)) {
+

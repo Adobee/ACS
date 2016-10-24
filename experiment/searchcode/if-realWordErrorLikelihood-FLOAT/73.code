@@ -1,0 +1,5 @@
+PhraseSuggestionBuilder testBuilder = new PhraseSuggestionBuilder(randomAsciiOfLength(10));
+maybeSet(testBuilder::maxErrors, randomFloat());
+maybeSet(testBuilder::separator, randomAsciiOfLengthBetween(1, 10));
+maybeSet(testBuilder::realWordErrorLikelihood, randomFloat());
+

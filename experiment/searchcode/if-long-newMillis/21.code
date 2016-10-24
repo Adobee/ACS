@@ -1,0 +1,11 @@
+public RoundingMillisDecoratorFormatter(IMillisFormatter formatter, final long increment)
+{
+if (formatter == null)
+{
+throw new IllegalArgumentException(&quot;Formatter cannot be null.&quot;);
+public String formatElapsedTime(long totalMs)
+{
+long newMillis = countNewMillis(totalMs);
+
+return mFormatter.formatElapsedTime(newMillis);
+

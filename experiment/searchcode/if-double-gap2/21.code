@@ -1,0 +1,11 @@
+System.out.println(maximumGap(new int[] {0, 1, 23, 15, 3, 13, 8, 9, 8, 4, 3}));
+System.out.println(maximumGap2(new int[] {100, 3, 2, 1}));
+}
+
+/**
+* Solution.
+* @param nums
+public static int maximumGap2(int[] nums) {
+if(nums.length < 2) {
+return 0;
+

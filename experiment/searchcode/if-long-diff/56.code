@@ -1,0 +1,7 @@
+long milliseconds1 = currentDate.getTime();
+long milliseconds2 = up_date.getTime();
+long diff = milliseconds1 - milliseconds2;
+
+long diffDays = diff / (24 * 60 * 60 * 1000);
+diff = diff - (diffDays * (24 * 60 * 60 * 1000));
+

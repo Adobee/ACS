@@ -1,0 +1,12 @@
+xNorm = 0;
+for (int k = 0 ; k < (cols) ; ++k) {
+double dk = jacNorm[k];
+if (dk == 0) {
+dk = 1.0;
+delta = java.lang.Math.min(delta, lmNorm);
+}
+updateResidualsAndCost();
+double actRed = -1.0;
+if ((0.1 * (cost)) < previousCost) {
+double r = (cost) / previousCost;
+

@@ -1,0 +1,10 @@
+public class DeferredCloseEventWriterWrapper extends AbstractEventWriterWrapper {
+
+private boolean close = false;
+
+public DeferredCloseEventWriterWrapper(final XMLEventWriter wrappedEventWriter) {
+super(wrappedEventWriter);
+}
+
+public void setClose(boolean close) {
+

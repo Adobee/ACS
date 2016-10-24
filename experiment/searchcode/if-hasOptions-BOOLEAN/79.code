@@ -1,0 +1,9 @@
+addOption(new ConfigurableOption(OPT_PRUNE_SINGLE_ITEM, &quot;Promote single item groups&quot;, null, DataType.bool, true,
+ListSelection.single, &quot;true:Yes,no:No&quot;));
+if (grouper instanceof HasOptions) {
+for (ConfigurableOption co : ((HasOptions) grouper).getOptions()) {
+emptyFolderName = getOption(OPT_EMPTY_GROUPNAME).getString(null);
+pruneSingeItemFolders = getOption(OPT_PRUNE_SINGLE_ITEM).getBoolean(false);
+onUpdate();
+if (grouper instanceof HasOptions) {
+

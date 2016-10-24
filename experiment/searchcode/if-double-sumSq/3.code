@@ -1,0 +1,5 @@
+public static void DLASSQ(final int N, final double[] X, final int INCX
+, DblRef pSCALE, DblRef pSUMSQ ) { //SUBROUTINE DLASSQ( N, X, INCX, SCALE, SUMSQ )
+double SCALE = pSCALE.get(); //DOUBLE PRECISION   SCALE, SUMSQ
+double SUMSQ = pSUMSQ.get(); //DOUBLE PRECISION   SCALE, SUMSQ
+

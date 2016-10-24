@@ -1,0 +1,17 @@
+Coeff coeff = Coeff.UNI;
+double MaxLenght = 3;
+
+{
+type = Type.SIMILARITY;
+}
+public NumberOfPathes(Graph<V, E> g) {
+pq = W(p, q);
+sp3 += sp*tq*pq;
+}
+}
+}
+
+double sim=0;
+if( coeff == Coeff.UNI)
+sim = sp1+sp2+sp3;
+

@@ -1,0 +1,11 @@
+public class FileDownloader implements Runnable {
+private String httpUrl = null;
+private String path = null;
+
+public FileDownloader(String httpUrl) {
+public FileDownloader(String httpUrl, String Path) {
+this(httpUrl);
+this.path = Path;
+File f = new File(&quot;Image&quot;);
+if (!f.exists()) f.mkdir();
+

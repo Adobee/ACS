@@ -1,0 +1,12 @@
+ResultSet rs = null;
+PreparedStatement pps1 = null;
+VCFileTO vto = null;
+try {
+conn = VCDAOFactory.getConnection();
+rs = pps1.executeQuery();
+while (rs.next()) {
+vto = new VCFileTO();
+fillVCFileTO(rs, vto);
+}
+} catch (SQLException e) {
+

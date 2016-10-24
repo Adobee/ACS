@@ -1,0 +1,11 @@
+public void set(ZoneRole role, boolean setting)
+{
+if (role == ZoneRole.OWNER || role == ZoneRole.ADMIN)
+setAllPlayers(setting);
+}
+}
+
+public boolean getForRole(ZoneRole role)
+{
+if(role == null || role == ZoneRole.ALL)
+

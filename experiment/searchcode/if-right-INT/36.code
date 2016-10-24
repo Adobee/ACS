@@ -1,0 +1,10 @@
+if(left < index - 1) sort(array, left, index - 1);
+if(right > index) sort(array, index, right);
+}
+
+private static int partition(int[] array, int left, int right) {
+while(array[right] > pivot) right--;
+if(left <= right) {
+int temp = array[left];
+array[left] = array[right];
+

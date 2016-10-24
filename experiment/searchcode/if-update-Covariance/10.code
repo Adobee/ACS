@@ -1,0 +1,9 @@
+trainY = new Matrix(0, 0);
+
+for (int i = 0; i < 100; i++) {
+if (covarianceFunction.getHyperParameterCount(new Matrix(0, i)) == loghyper.length) {
+Validate.notNull(covarianceFunction);
+Validate.notNull(loghyper);
+
+if (covarianceFunction.getHyperParameterCount(x) != loghyper.length)
+

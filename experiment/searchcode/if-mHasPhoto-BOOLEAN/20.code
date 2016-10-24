@@ -1,0 +1,11 @@
+mHeaderHeightPixels = mHeaderBox.getHeight();
+
+mPhotoHeightPixels = 0;
+if (mHasPhoto) {
+mPhotoHeightPixels = (int) (mPhotoView.getWidth() / PHOTO_ASPECT_RATIO);
+mPhotoViewContainer.setBackgroundColor(Utils.scaleSessionColorToDefaultBG(mSessionColor));
+
+String photo = &quot;not null&quot;;
+if (!TextUtils.isEmpty(photo)) {
+mHasPhoto = true;
+

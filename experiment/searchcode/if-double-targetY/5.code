@@ -1,0 +1,14 @@
+public class EntityGiantWitherSkeleton extends Entity {
+
+private double startY;
+private double targetY;
+
+public EntityGiantWitherSkeleton(World world) {
+//targetY = startY + worldObj.rand.nextDouble() * 5;
+//}
+
+//if (posY < targetY) {
+//motionY = 0.05;
+//} else {
+//motionY = -0.05;
+

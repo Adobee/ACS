@@ -1,0 +1,7 @@
+public static byte[] sign(byte[] message, byte[] secretKey) {
+byte[] signedMessage = new byte[CRYPTO_SIGN_BYTES + message.length];
+if (Sodium.crypto_sign(signedMessage, null, message, message.length, secretKey) != 0) {
+public static byte[] open(byte[] signedMessage, byte[] publicKey) {
+byte[] message = new byte[signedMessage.length - CRYPTO_SIGN_BYTES];
+if (Sodium.crypto_sign_open(message, null, signedMessage,
+

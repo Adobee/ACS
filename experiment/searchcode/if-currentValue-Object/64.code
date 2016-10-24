@@ -1,0 +1,8 @@
+public synchronized void increment() {
+currentValue++;
+if (highWaterMark < currentValue) {
+public synchronized void decrement() {
+currentValue--;
+if (lowWaterMark > currentValue) {
+lowWaterMark = currentValue;
+

@@ -1,0 +1,8 @@
+private static void checkTransition(float delta)
+{
+if(nextStage != null)
+{
+transitionTime -= delta;
+currentStage.getRoot().setColor(1, 1, 1, transitionTime / RBActor.FADE_SLOW);
+if(currentStage.getRoot().getColor().a <= 0)
+

@@ -1,0 +1,10 @@
+public String getWord(boolean isPlural)
+{
+return isPlural ? plural : singular;
+}
+public String getWord(){
+return singular;
+}
+public boolean isPlural() {
+boolean canBePlural = ((SentenceGenerator.pluralArticle | SentenceGenerator.pluralNoArticle) &amp; flag) > 0;
+

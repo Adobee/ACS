@@ -1,0 +1,10 @@
+String userId = (String) httpSession.getAttribute(&quot;userId&quot;);
+GeneralResponse result;
+
+if (userId == null) {
+final FaultDetails fault = new FaultDetails(&quot;Access denied.&quot;);
+String id = (String) httpSession.getAttribute(&quot;userId&quot;);
+GeneralResponse result;
+if (id == null) {
+final FaultDetails fault = new FaultDetails(&quot;Access denied.&quot;);
+

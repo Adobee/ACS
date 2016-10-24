@@ -1,0 +1,7 @@
+private ApiResponse response() {
+boolean shouldFail = successOrFail.shouldFail();
+Timber.d(&quot;Getting response. Should fail: &quot; + shouldFail);
+SystemClock.sleep(1000);
+if (shouldFail) {
+throw new UnknownError();
+

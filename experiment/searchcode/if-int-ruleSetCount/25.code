@@ -1,0 +1,7 @@
+boolean advanceDayOfWeek, int millisOfDay) {
+if (iRuleSets.size() > 0) {
+OfYear ofYear = new OfYear(mode, monthOfYear, dayOfMonth, dayOfWeek, advanceDayOfWeek, millisOfDay);
+boolean advanceDayOfWeek,
+int millisOfDay) {
+if (fromYear <= toYear) {
+

@@ -1,0 +1,8 @@
+int index = ((LinkedList<MemberDTO>)memberList).indexOf(exMemberDTO);
+if(index != -1){
+((LinkedList<MemberDTO>)memberList).set(index,newMemberDTO);
+public MemberDTO searchMemberList(MemberDTO memberDTO) {
+for(MemberDTO dto : memberList)
+{
+if(dto.getId() == memberDTO.getId()){
+

@@ -1,0 +1,8 @@
+public static double[] ebeAdd(double[] a, double[] b)
+throws DimensionMismatchException {
+if (a.length != b.length) {
+double agiant = rgiant / floatn;
+for (int i = 0; i < v.length; i++) {
+double xabs = Math.abs(v[i]);
+if (xabs < rdwarf || xabs > agiant) {
+

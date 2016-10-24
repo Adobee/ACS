@@ -1,0 +1,10 @@
+if(type.isListRelation()) {
+IListWriter w = vf.listWriter();
+
+if (type.hasFieldNames()) {
+for (int i = 0; i < type.getArity(); i++) {
+@Override
+public IValue visitMap(Type type) {
+if (type.hasFieldNames()) {
+return vf.constructor(Factory.Symbol_Map, vf.constructor(Factory.Symbol_Label, vf.string(type.getKeyLabel()), type.getKeyType().accept(this)), vf.constructor(Factory.Symbol_Label, vf.string(type.getValueLabel()), type.getValueType().accept(this)));
+

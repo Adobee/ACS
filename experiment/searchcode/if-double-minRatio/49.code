@@ -1,0 +1,9 @@
+throw new IllegalArgumentException(&quot;Expected 3 args: <minRatio> <maxRatio> <shrinkHeapInSteps>&quot;);
+}
+if (GCTypes.OldGCType.getOldGCType() == GCTypes.OldGCType.PSOld) {
+System.out.println(&quot;Test is not applicable to parallel GC&quot;);
+return;
+}
+
+double minRatio = Integer.valueOf(args[0]) / 100.0;
+

@@ -1,0 +1,10 @@
+for (int i = 0; i<all.length; i++) for (int j = i+1; j<all.length; j++)
+if (all[i] < all[j]) { int sw = all[i]; all[i] = all[j]; all[j] = sw; }
+temp = value(all[2], all[3], all[4], all[5], all[6]); if (temp > max) max = temp;
+/* */
+return max;
+}
+
+
+static int[] div4 = {0,0,0,0, 1,1,1,1, 2,2,2,2, 3,3,3,3, 4,4,4,4, 5,5,5,5, 6,6,6,6, 7,7,7,7,
+

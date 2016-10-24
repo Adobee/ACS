@@ -1,0 +1,9 @@
+public static final DateFormat DATE_FORMAT = DateFormat.getInstance();
+
+public static boolean valueOf(Boolean b) {
+return b == null ? false : b;
+}
+
+public static String format(Date d) {
+if (d == null) return DATE_FORMAT.format(new Date());
+

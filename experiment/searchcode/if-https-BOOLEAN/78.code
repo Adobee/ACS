@@ -1,0 +1,9 @@
+private final int port;
+private final String host;
+private final boolean https;
+private final String name;
+
+public ListenerConfigEntry(boolean https, String host, int port)
+{
+this(https, host, port, (https ? &quot;https-lc-&quot; : &quot;http-lc-&quot;) + host + &quot;-&quot; + port);
+

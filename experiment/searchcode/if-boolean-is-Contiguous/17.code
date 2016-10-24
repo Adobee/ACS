@@ -1,0 +1,10 @@
+return this.range.isConnected(paramRange) ? ContiguousSet.create(this.range.intersection(paramRange), this.domain) : new EmptyContiguousSet(this.domain);
+}
+
+ContiguousSet headSetImpl(Comparable paramComparable, boolean paramBoolean)
+{
+return intersectionInCurrentDomain(Range.upTo(paramComparable, BoundType.forBoolean(paramBoolean)));
+Preconditions.checkNotNull(paramContiguousSet);
+Preconditions.checkArgument(this.domain.equals(paramContiguousSet.domain));
+if (paramContiguousSet.isEmpty()) {
+

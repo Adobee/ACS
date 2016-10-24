@@ -1,0 +1,12 @@
+return &quot;boolean&quot;;
+}
+
+@Override
+public int compare(Boolean o1, Boolean o2)
+{
+if(o1 == null &amp;&amp; o2 == null) return 0;
+if(o1 == null) return -1;
+if(o2 == null) return 1;
+
+return Boolean.compare(o1, o2);
+

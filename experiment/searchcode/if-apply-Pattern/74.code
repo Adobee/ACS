@@ -1,0 +1,9 @@
+public YSplitPattern(int limit, Pattern nearPatter, Pattern farPattern) {
+super(limit, nearPatter, farPattern);
+}
+
+@Override
+public BasicBlock applyTo(Point position, PositionModification positionModification) {
+if ( position.getY() > limit ) {
+return farPattern.applyTo( position, positionModification );
+

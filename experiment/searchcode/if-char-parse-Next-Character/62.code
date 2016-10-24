@@ -1,0 +1,10 @@
+return v;
+} else if(currChar() == &#39;[&#39;) {
+nextChar();
+xp = parse(true);
+nextWhitespace();
+nextWhitespace();
+assert currChar() == &#39;}&#39;;
+nextChar();
+} else if(Character.isDigit(currChar()) || currChar() == &#39;-&#39; &amp;&amp; Character.isDigit(peekChar())) {
+

@@ -1,0 +1,10 @@
+public static Bitmap resizePreservingRatio(Bitmap original, int newWidth, int newHeight)
+{
+if (original == null)
+return null;
+
+int originalWidth = original.getWidth();
+int originalHeight = original.getHeight();
+
+if (newWidth / (float) originalWidth < newHeight / (float) originalHeight)
+

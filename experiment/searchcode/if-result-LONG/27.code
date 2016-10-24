@@ -1,0 +1,10 @@
+public class Dubs {
+public long count(long L, long R) {
+if (L + 300 > R) {
+return countRange(L, R + 1);
+}
+long result = 0;
+long a = L / 100 * 100 + 100;
+long b = R / 100 * 100;
+result += countRange(L, a);
+

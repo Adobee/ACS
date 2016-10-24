@@ -1,0 +1,7 @@
+int iLhs = ((Integer)parameters[0]).intValue();
+if(parameters[1] instanceof Double) {
+return new Double(iLhs%((Double)parameters[1]).doubleValue());
+return new Integer(iLhs%((Integer)parameters[1]).intValue());
+} else if(parameters[0] instanceof Double) {
+double dLhs = ((Double)parameters[0]).doubleValue();
+

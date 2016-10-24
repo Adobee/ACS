@@ -1,0 +1,8 @@
+/* somewhat a hack: find/store wildcard chars
+* in order to put them back after analyzing */
+boolean isWithinToken = (!termStr.startsWith(&quot;?&quot;) &amp;&amp; !termStr.startsWith(&quot;*&quot;));
+for (int i = 0; i < termStr.length(); i++) {
+if (chars[i] == &#39;?&#39; || chars[i] == &#39;*&#39;) {
+if (isWithinToken) {
+tlist.add(tmpBuffer.toString());
+

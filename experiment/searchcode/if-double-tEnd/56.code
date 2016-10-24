@@ -1,0 +1,8 @@
+public Variable tx;
+public Variable ty;
+public double tstart,tend,dt;
+
+public ParametricEquation(String equ_x, String equ_y, double tstart, double tend, double dt){
+this.tstart = tstart;
+this.tend = tend;
+

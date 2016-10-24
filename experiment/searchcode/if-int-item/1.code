@@ -1,0 +1,8 @@
+public class PItem extends Actor {
+
+public PItem() {
+item = (int)Math.random()*10;
+if (item >= 0 &amp;&amp; item < 2) {
+// bullet
+} else if (item >= 2 &amp;&amp; item < 5) {
+

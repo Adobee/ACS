@@ -1,0 +1,12 @@
+private boolean mStarted;
+private long mLastTime;
+
+@Override
+public void start() {
+mStarted = true;
+mLastTime = 0;
+}
+
+public boolean step(long interval) {
+if (mSpringSystem == null || !mStarted) {
+

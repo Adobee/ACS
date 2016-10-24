@@ -1,0 +1,8 @@
+item = new Item(index, type, randomArtificialDoc());
+}
+// if no field is specified MLT uses all mapped fields for this item
+if (randomBoolean()) {
+queryBuilder = new MoreLikeThisQueryBuilder(likeTexts, likeItems);
+} else {
+queryBuilder = new MoreLikeThisQueryBuilder(randomFields, likeTexts, likeItems);
+

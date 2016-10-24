@@ -1,0 +1,6 @@
+public Object get(String key) {
+CategoryMark retValue = (CategoryMark)super.get(key);
+if (retValue == null) {
+retValue = new CategoryMark(key);
+super.put(key, retValue);
+

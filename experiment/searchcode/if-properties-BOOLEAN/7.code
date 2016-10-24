@@ -1,0 +1,8 @@
+TypedProperties properties = new TypedProperties(&quot;properties/&quot; + propertiesKey + &quot;.properties&quot;);
+if (properties.isLoaded()) {
+propertiesMap.put(propertiesKey, properties);
+}
+}
+
+public static boolean getBoolean(String propertiesKey, String name, boolean fallback) {
+

@@ -1,0 +1,6 @@
+for(int i = 0; i < board.length; i++){
+for(int j = 0; j < board[0].length; j++){
+if(dfs(board, word, 0, i, j, visited)) return true;
+public boolean dfs(char[][] board, String word, int index, int rowindex, int colindex, boolean[][] visited){
+if(index == word.length()) return true;		// 如果之前最后执行的index和word长度相同则返回true
+

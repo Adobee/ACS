@@ -1,0 +1,12 @@
+public double nthRoot(double input, int root) {
+double oldEstimate = 0;
+
+for(int n = 1; n <= input; n++) {
+if (n*n <= input) {
+oldEstimate = n;
+}
+}
+
+double estimate = input/oldEstimate;
+estimate = (estimate+oldEstimate)/2;
+

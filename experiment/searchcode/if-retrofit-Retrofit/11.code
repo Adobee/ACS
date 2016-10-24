@@ -1,0 +1,10 @@
+.build();
+
+retrofitSingletone = retrofit.create(RestApi.class);
+}
+
+public static RestApi getInstance(){
+if (retrofitSingletone == null) {
+synchronized(RestApi.class){
+if (retrofitSingletone == null) {
+

@@ -1,0 +1,10 @@
+public static int solution(int x) {
+
+long result = 0;
+
+// 逐步从x的个位数读取各个数，
+while (x != 0) {
+
+result = result * 10 + (x % 10);
+if (result > Integer.MAX_VALUE || result < Integer.MIN_VALUE) {
+

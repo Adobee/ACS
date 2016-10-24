@@ -1,0 +1,7 @@
+// if player has no preset, use the current system defaults:
+if (floAuction.userSavedInputArgs.get(playerName) == null) {
+resultArgs = new String[]{&quot;this&quot;, removeUselessDecimal(Double.toString(getUnsafeMoney(floAuction.defaultStartingBid))), removeUselessDecimal(Double.toString(getUnsafeMoney(floAuction.defaultBidIncrement))), Integer.toString(floAuction.defaultAuctionTime), &quot;0&quot;};
+public static String formatAmount(double unsafeMoney) {
+if (floAuction.econ == null) return &quot;-&quot;;
+if (!floAuction.econ.isEnabled()) return &quot;-&quot;;
+

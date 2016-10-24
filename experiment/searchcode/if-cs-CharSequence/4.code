@@ -1,0 +1,12 @@
+public static void writeToParcel(CharSequence cs, Parcel p,
+int parcelableFlags) {
+p.writeInt(1);
+if (cs != null) {
+p.writeString(cs.toString());
+} else {
+p.writeString(null);
+}
+}
+
+}
+

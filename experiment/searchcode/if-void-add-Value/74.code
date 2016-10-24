@@ -1,0 +1,16 @@
+return new QueryPos(query);
+}
+
+public void add(boolean value) {
+_query.setBoolean(_pos++, value);
+}
+
+public void add(Boolean value) {
+public void add(long value) {
+_query.setLong(_pos++, value);
+}
+
+public void add(Long value) {
+if (value != null) {
+_query.setLong(_pos++, value.longValue());
+

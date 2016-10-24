@@ -1,0 +1,14 @@
+this.buffer = new byte[bufferSize];
+}
+
+@Override
+public int available() throws IOException
+{
+return bufferEnd - bufferStart + delegate.available();
+int readLen;
+
+lock.lock();
+try
+{
+if (bufferStart == bufferEnd)
+

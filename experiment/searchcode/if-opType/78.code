@@ -1,0 +1,11 @@
+boolean match = matchByIP(values, node.getHostAddress(), publishAddress);
+
+if (opType == OpType.AND) {
+if (match) {
+continue;
+}
+return false;
+}
+
+if (match &amp;&amp; opType == OpType.OR) {
+

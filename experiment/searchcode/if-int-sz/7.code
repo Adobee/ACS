@@ -1,0 +1,11 @@
+private static String strStart = &quot;2014-01-01&quot;; //这天是星期三  4号周六 5号周日
+private static String strEnd = &quot;2015-01-28&quot;;
+String[] stocks = {
+&quot;000001.SZ&quot;,&quot;000002.SZ&quot;,&quot;000004.SZ&quot;,&quot;000005.SZ&quot;,&quot;000006.SZ&quot;,&quot;000007.SZ&quot;,&quot;000008.SZ&quot;,&quot;000009.SZ&quot;,&quot;000010.SZ&quot;,&quot;000011.SZ&quot;,&quot;000012.SZ&quot;,&quot;000014.SZ&quot;,&quot;000016.SZ&quot;,&quot;000017.SZ&quot;,&quot;000018.SZ&quot;,&quot;000019.SZ&quot;,&quot;000020.SZ&quot;,&quot;000021.SZ&quot;,
+//一年内的有效工作日从2014年1月1日 星期三开始 到 2015年1月13日 的所有的除了星期六和星期日之外的天数，大约是260天。
+//将使用日期的毫秒数添加
+for(int i = 0;i<dayCount;i++)
+{
+//if wuxiao day 周六和周日是无效的。
+if(i/7 ==3||i/7==4) continue;
+

@@ -1,0 +1,5 @@
+try{
+HttpUrl.Builder urlBuilder = HttpUrl.parse(mBaseUrl + QUERY_TITLES).newBuilder();
+if (skip>0) {
+urlBuilder.addQueryParameter(QUERY_TITLES_NSKIP_PARAMETER, skip.toString());
+

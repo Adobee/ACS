@@ -1,0 +1,6 @@
+final int key = (face.id &amp; 0x0000FFFF) + ((textSize &amp; 0x0000FFFF) << 16);
+CustomTextPaint paint = paints.get(key);
+if (paint == null) {
+paint = new CustomTextPaint(key, face, textSize);
+if (defPaint == null) {
+

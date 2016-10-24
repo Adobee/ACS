@@ -1,0 +1,13 @@
+assert (Math.abs(prod - mW/mD) < 1E-5);
+}
+
+public double expectedTime(double mu) {
+
+double denom = ((mW*(x1-1) + mTh*x1) * Math.pow(x1, mu-1)) - ((mW*(x2-1) + mTh*x2) * Math.pow(x2, mu-1));
+return mThInv + (mThInv * mW * diff * Math.pow(prod, mu-1)) / denom;
+}
+
+public static void main(String[] args) {
+
+if (args.length != 3 &amp;&amp; args.length != 6) {
+

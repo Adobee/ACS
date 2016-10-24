@@ -1,0 +1,14 @@
+private String name = &quot;&quot;;
+private int years;
+
+public TestUser_1(String name, int old){
+this.name = name;
+this.years = old;
+}
+
+public int getYears() {
+return years;
+}
+
+public void setYears(int years) {
+

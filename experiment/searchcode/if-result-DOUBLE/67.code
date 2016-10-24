@@ -1,0 +1,10 @@
+
+public class PowXN {
+public double pow(double x, int n) {
+double result = 1.0;
+int e = Math.abs(n);
+if(e == 0)
+return result;
+double t = x;
+while(e > 0){
+

@@ -1,0 +1,11 @@
+private boolean valid(String input) {
+if (&quot;&quot;.equals(input)) { return true; }
+
+boolean ret = true;
+it = new StringCharacterIterator(input);
+return aggregate(&#39;{&#39;, &#39;}&#39;, true);
+}
+
+private boolean aggregate(char entryCharacter, char exitCharacter, boolean prefix) {
+if (c != entryCharacter) { return false; }
+

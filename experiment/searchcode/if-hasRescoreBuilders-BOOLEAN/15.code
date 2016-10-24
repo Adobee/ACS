@@ -1,0 +1,9 @@
+* Return whether to profile query execution, or {@code null} if
+* unspecified.
+*/
+public boolean profile() {
+return profile;
+boolean hasRescoreBuilders = rescoreBuilders != null;
+out.writeBoolean(hasRescoreBuilders);
+if (hasRescoreBuilders) {
+

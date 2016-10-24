@@ -1,0 +1,8 @@
+import org.elasticsearch.cluster.ClusterStateTaskListener;
+import org.elasticsearch.cluster.ClusterStateUpdateTask;
+import org.elasticsearch.cluster.LocalNodeMasterListener;
+public void add(@Nullable final TimeValue timeout, final TimeoutClusterStateListener listener) {
+if (lifecycle.stoppedOrClosed()) {
+listener.onClose();
+return;
+

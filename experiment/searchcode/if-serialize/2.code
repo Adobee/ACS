@@ -1,0 +1,7 @@
+String kind = ConfigurateUtils.getKind();
+
+if (SERIALIE_FASTJSON.equals(kind)) {
+serialize = new FastJsonSerialize();
+} else if (SERIALIE_PROTOSTUFF.equals(kind)) {
+serialize = new ProtostuffSerialize();
+

@@ -1,0 +1,8 @@
+public class BinarySelectorUnaryObjectDescription {
+
+private final BinarySelector binarySelector;
+private final UnaryObjectDescription unaryObjectDescription;
+public void accept(NodeVisitor nodeVisitor) {
+if (unaryObjectDescription != null)
+unaryObjectDescription.accept(nodeVisitor);
+

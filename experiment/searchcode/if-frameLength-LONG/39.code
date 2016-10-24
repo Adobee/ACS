@@ -1,0 +1,10 @@
+private Integer frameCounter = 0;
+private Long tick = 0L;
+private double frameLength = 0;
+
+public void updateFPS(long now, GraphicsContext gc)
+Long tock = now / 1000000;
+if (tick != 0)
+{
+frameLength = (tock - tick) / 1000.0;
+

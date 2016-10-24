@@ -1,0 +1,7 @@
+Collection<IResource> setContractedClasses = mapContractClasses.get(contract);
+if (setContractedClasses == null) {
+setContractedClasses = new HashSet<IResource>();
+wsRoot.accept(new IResourceVisitor() {
+public boolean visit(IResource resource) throws CoreException {
+if (resource.getName().endsWith(&quot;.java&quot;)) {
+

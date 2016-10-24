@@ -1,0 +1,17 @@
+int MaxSum(int *A,int n)
+{
+int maximum=-INF;
+int sum;
+for(int i=0;i<n;i++)
+{
+sum=0;
+for(int j=i;j<n;j++)
+{
+sum+=A[j];
+if(sum>maximum)
+maximum=sum;
+}
+}
+return maximum;
+}
+

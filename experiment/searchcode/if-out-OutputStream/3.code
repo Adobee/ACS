@@ -1,0 +1,17 @@
+private OutputStream outputStream;
+
+public void setOutputStream(OutputStream out)
+{
+this.outputStream = out;
+}
+
+public void decorate(Object o)
+{
+if(o instanceof OutputStreamAware)
+{
+((OutputStreamAware)o).setOutputStream(outputStream);
+}
+}
+
+}
+

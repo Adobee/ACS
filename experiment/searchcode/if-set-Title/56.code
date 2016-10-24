@@ -1,0 +1,6 @@
+protected <U> void addToSet(String title, U content)
+{
+TreeSet set = (TreeSet)this.envMap.get(title);
+if (!this.envMap.containsKey(title))
+set = new TreeSet();
+

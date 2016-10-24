@@ -1,0 +1,6 @@
+HashMap<String, String> sessionHashCodes = loadSessionHashCodes();
+boolean incrementalUpdate = (sessionHashCodes != null) &amp;&amp; (sessionHashCodes.size() > 0);
+sessionsToKeep.add(session.id);
+
+if (!incrementalUpdate || !sessionHashCodes.containsKey(session.id) ||
+

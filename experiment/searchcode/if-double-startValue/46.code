@@ -1,0 +1,7 @@
+* @return this
+*/
+public final LXRangeModulator setRange(double startValue, double endValue,
+double periodMs) {
+public final LXRangeModulator setRange(double startValue, double endValue) {
+this.startValue = new FixedParameter(startValue);
+

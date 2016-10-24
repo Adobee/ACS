@@ -1,0 +1,5 @@
+private static long findX(long i, long j, int x) {
+long middle = (i + j) / 2;
+if(i + 1 == j || i + 2 == j) return j * j > x ? middle * middle > x ? i : middle : j;
+if(middle * middle > x) return findX(i, middle, x);
+

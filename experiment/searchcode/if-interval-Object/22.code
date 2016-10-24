@@ -1,0 +1,11 @@
+public void setGroup(int group) {
+this.group = group;
+}
+
+@Override
+public boolean equals(Object obj) {
+if(! (obj instanceof TimeInterval) )
+return false;
+TimeInterval sec = (TimeInterval) obj;
+if(sec.getInterval() == this.interval &amp;&amp; sec.getGroup() == this.group)
+

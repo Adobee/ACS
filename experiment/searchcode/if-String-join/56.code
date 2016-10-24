@@ -1,0 +1,12 @@
+public class Join {
+
+private Table table;
+private String on;
+
+public Join(Table table) {
+this(table, (String)null);
+public String toString() {
+String join = joinKeyword() + &quot; &quot; + table.fromClauseName();
+if(getOn() != null)
+join += &quot; &quot; + Sql.ON + &quot; &quot; + getOn();
+

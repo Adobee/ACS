@@ -1,0 +1,9 @@
+double x = scanner.nextDouble();
+double y = scanner.nextDouble();
+
+if (insideBigRectangle(x, y)) {
+private static boolean insideSmallRectangle(double x, double y) {
+
+if (x > 17.5 &amp;&amp; x < 20) {
+if (y > 13.5 &amp;&amp; y < 8.5) {
+

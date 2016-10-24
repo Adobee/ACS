@@ -1,0 +1,11 @@
+long d; //denominator
+
+public Fraction(long n, long d){
+this.n = n;
+this.d = d;
+long g = gcd(n, d);
+n /= g;
+d /= g;
+//Makes sure the fraction is proper when negative numbers are involved.
+if(d < 0){
+

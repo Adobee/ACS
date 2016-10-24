@@ -1,0 +1,11 @@
+Aeroporto am = new Aeroporto();
+
+ArrayList<CompanhiasTO> vto  = vm.ListaCompanhias();
+ArrayList<AeroportoTO> ato  = am.ListaAeroporto();
+String optionCompanhias = &quot;&quot;;
+String optionAeroporto = &quot;&quot;;
+
+for (CompanhiasTO companhias : vto) {
+
+optionCompanhias += &quot;<option value=\&quot;&quot;+companhias.id+&quot;\&quot;>&quot;+companhias.nome+&quot;</option>&quot;;
+

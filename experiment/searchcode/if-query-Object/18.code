@@ -1,0 +1,11 @@
+package iocontroller.queryprocessor;
+
+
+import model.QueryReturnObject;
+import model.TransportObject;
+private final ExecutorService queryProcessors;
+private final Queue<Future<QueryReturnObject>> queryOutputQueue;
+
+
+public QueryProcessor(int numQueryProcessors, Queue<Future<QueryReturnObject>> queryQueue) {
+

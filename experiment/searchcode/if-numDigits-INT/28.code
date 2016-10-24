@@ -1,0 +1,11 @@
+public Number(Color c) {
+this(0, c);
+}
+
+public void setNumber(int n) {
+if (numDigits == 8)
+this.num = n &amp; ~(0x1 << 31);
+else if (num < 0)
+this.num = n % (int) Math.pow(10, numDigits);
+else
+

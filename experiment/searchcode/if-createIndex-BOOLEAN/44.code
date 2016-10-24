@@ -1,0 +1,8 @@
+accessor = Host.getHost(0).getVM(3);
+}
+
+protected abstract void initAccessor(SerializableRunnableIF createIndex) throws Exception;
+public void returnCorrectResultsFromStringQueryWithDefaultAnalyzer() {
+SerializableRunnableIF createIndex = () -> {
+LuceneService luceneService = LuceneServiceProvider.get(getCache());
+

@@ -1,0 +1,12 @@
+Function<Double, Double> f;
+double a1;
+double a2;
+double b1;
+double b2;
+TaskClass taskClass;
+
+public Ly_f(Function<Double, Double> p, Function<Double, Double> r, Function<Double, Double> f, double a1, double a2, double b1, double b2) {
+this.p = p;
+this.r = r;
+this.f = f;
+

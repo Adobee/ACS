@@ -1,0 +1,6 @@
+int boost = 1;
+if (document.getFieldNames().contains(&quot;boost&quot;)) {
+SolrInputField field = document.getField(&quot;boost&quot;);
+if (field.getValueCount() > 0) {
+Iterator<Object> i = field.getValues().iterator();
+

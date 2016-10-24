@@ -1,0 +1,9 @@
+* Impemented by the ARM documentation: A2-62  &quot;recip_sqrt_estimate(double a)&quot;
+*/
+private long recipSqrtEstimate(long longInput) {
+int q0, q1, s;
+double r;
+
+if (doubleInput < 0.5){ /* range 0.25 <= a < 0.5 */
+q0 = (int)(doubleInput * 512.0); /* a in units of 1/512 rounded down */
+

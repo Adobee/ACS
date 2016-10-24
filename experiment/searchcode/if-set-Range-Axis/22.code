@@ -1,0 +1,13 @@
+addValue(axisZ, point.z);
+}
+
+private void addValue(TrailAxis axis, double value) {
+axis.addValue(value);
+
+if(axis.getDeltaMod() > deltaMin) {
+listener.listenTrail(axisX.getDelta(), axisY.getDelta(), axisZ.getDelta());
+}
+
+public RangeFlag evaluateDeltaX() {
+return evaluateDelta(axisX.getDelta());
+

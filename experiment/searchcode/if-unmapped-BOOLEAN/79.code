@@ -1,0 +1,11 @@
+boolean[] isSupplementary =
+{ false };
+boolean[] isUnmapped =
+{ true };
+AlignedRead actualRead = new AlignedRead(generatePairedSamRecordList(isFirst, isSupplementary, isUnmapped));
+private List<SAMRecord> generatePairedSamRecordList(boolean[] isFirst, boolean[] isSupplementary,
+boolean[] isUnmapped)
+{
+// Validates input.
+if (isFirst.length != isSupplementary.length) return null;
+

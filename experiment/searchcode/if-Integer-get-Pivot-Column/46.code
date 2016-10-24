@@ -1,0 +1,9 @@
+.rowSpan(colDepth);
+
+}
+
+List<PivotTableData.Axis> columns = data.getRootColumn().getDescendantsAtDepth(depth);
+for(PivotTableData.Axis column : columns) {
+
+html.tableCell(column.getLabel())
+

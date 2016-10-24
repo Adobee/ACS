@@ -1,0 +1,12 @@
+private final TextPaint textPaint = textPaint();
+private final Paint fillPaint = fillPaint();
+private final Paint strokePaint = strokePaint();
+
+Page(DocumentView documentView, int index) {
+public void draw(Canvas canvas) {
+if (!isVisible()) {
+return;
+}
+canvas.drawRect(bounds, fillPaint);
+// canvas.drawBitmap(logo, bounds.centerX() - logo.getWidth() / 2,
+

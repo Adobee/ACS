@@ -1,0 +1,14 @@
+return amount(new BigDecimal(value));
+}
+
+public static BigDecimal amount(String value) {
+if (isBlank(value)) {
+return null;
+}
+return amount(new BigDecimal(value.trim()));
+public static boolean isNegativeAmount(BigDecimal amount) {
+if (amount == null) {
+return false;
+}
+return isL(amount, ZERO_AMOUNT);
+

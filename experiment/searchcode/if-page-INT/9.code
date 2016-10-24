@@ -1,0 +1,12 @@
+public abstract class AbstractPaginationHelper<T> {
+
+public static final int FIRST_PAGE = 1;
+
+private int pageSize;
+private int page;
+int maxPage =(int) Math.floor(getItemsCount()/pageSize)+FIRST_PAGE;
+
+int startPage = FIRST_PAGE;
+
+if(pageArraySize > maxPage){
+

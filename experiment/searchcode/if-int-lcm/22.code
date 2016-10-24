@@ -1,0 +1,14 @@
+int[] numbers = {20, 19, 18, 17, 16, 15, 14, 13, 12, 11};
+System.out.println(lcm(numbers));
+}
+
+public static int gcd(int n1, int n2) {
+if (n2 == 0) {
+return n1;
+} else {
+return gcd(n2, n1 % n2);
+}
+}
+
+public static int lcm(int n1, int n2) {
+

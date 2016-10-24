@@ -1,0 +1,11 @@
+public static final int minPower = 1200, maxPower = 1600;
+private Link link;
+private int pin;
+private int value;
+
+public Motor(int pin){
+this.pin = pin;
+public void setValue(int value){
+if(value < minPower) value = minPower;
+if(value > maxPower) value = maxPower;
+

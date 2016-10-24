@@ -1,0 +1,11 @@
+package kmlframework.kml;
+
+public class PolyStyle extends ColorStyle {
+
+private Boolean fill;
+super.writeInner(kml);
+if (fill != null) {
+kml.println(&quot;<fill>&quot; + booleanToInt(fill) + &quot;</fill>&quot;);
+}
+if (outline != null) {
+

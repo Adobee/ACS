@@ -1,0 +1,12 @@
+* the x<sub>i</sub> are the coordinates of the current point.
+* </p>
+*
+* @since 2.0
+*/
+public class LinearObjectiveFunction
+implements MultivariateFunction,
+if (this == other) {
+return true;
+}
+if (other instanceof LinearObjectiveFunction) {
+

@@ -1,0 +1,14 @@
+* Created by tzachit on 17/11/14.
+*/
+public class Location implements ILocation {
+
+private double lat;
+private double lon;
+public double getLat() {
+return this.lat;
+}
+
+@Override
+public boolean setLat(double lat) {
+if(lat > 90 || lat < (-90)){
+

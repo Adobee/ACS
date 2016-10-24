@@ -1,0 +1,16 @@
+import org.apache.commons.digester3.Digester;
+
+import com.zaneli.rtm4j.model.RspFactory;
+
+public class TimelineFactory extends RspFactory<TimelineInfo> {
+digester.addBeanPropertySetter(&quot;rsp/timeline&quot;);
+}
+
+public static synchronized TimelineFactory getInstance() {
+if (factory == null) {
+factory = new TimelineFactory();
+}
+return factory;
+}
+}
+

@@ -1,0 +1,8 @@
+public class CalculationObservable extends Observable implements CalculationListener {
+
+private Vector<CalculationListener> listeners;
+
+public CalculationObservable() {
+public synchronized void addCalculationListener(CalculationListener listener) {
+if (!listeners.contains(listener))
+

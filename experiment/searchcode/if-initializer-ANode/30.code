@@ -1,0 +1,12 @@
+int            _arrayCount;
+
+// The initializer
+JExpr          _initializer;
+
+// The array initializer (if array)
+protected JavaDecl resolveName(JNode aNode)
+{
+if(aNode==_id)
+return getDecl();
+return super.resolveName(aNode);
+

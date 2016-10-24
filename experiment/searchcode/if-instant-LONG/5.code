@@ -1,0 +1,7 @@
+Time alreadyExisting = findByInstant( instant );
+if( alreadyExisting == null ){
+newTime.save();
+String instantEnd = ((InstantTime)end).getInstant();
+if( instantStart == instantEnd )
+return find.where().eq(&quot;instant&quot;, instantStart).findUnique();
+

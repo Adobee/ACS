@@ -1,0 +1,10 @@
+package org.codelabor.example.lifecycle.context;
+
+import junit.framework.Assert;
+
+public class UserContextHolder {
+UserContext context = contextHolder.get();
+if (context == null) {
+context = new UserContextImpl();
+setContext(context);
+

@@ -1,0 +1,7 @@
+int subplotIndex = info.getSubplotIndex(source);
+if (subplotIndex >= 0) {
+return (CategoryPlot) this.subplots.get(subplotIndex);
+public void handleClick(int x, int y, PlotRenderingInfo info) {
+if (info.getDataArea().contains((double) x, (double) y)) {
+for (int i = 0; i < this.subplots.size(); i++) {
+

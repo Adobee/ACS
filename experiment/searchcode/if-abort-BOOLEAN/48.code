@@ -1,0 +1,9 @@
+* The value of the slot&#39;s knownDeleted flag before the 1st update
+* of the associated record. It parallels abortLsn.
+*/
+private boolean abortKnownDeleted;
+
+/*
+* Size of the log entry pointed-to by abortLsn, or zero if abortLsn is
+* NULL_LSN or if the size is not known. Used for obsolete counting during
+

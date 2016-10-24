@@ -1,0 +1,6 @@
+public class Solution1 {
+public List<Integer> getRow(int rowIndex) {
+int length = rowIndex + 1;
+int[] array = new int[length + 2];
+for (int i = 0; i <= rowIndex; i++) {
+

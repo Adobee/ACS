@@ -1,0 +1,8 @@
+Setting.boolSetting(&quot;action.destructive_requires_name&quot;, false, Property.Dynamic, Property.NodeScope);
+private volatile boolean destructiveRequiresName;
+clusterSettings.addSettingsUpdateConsumer(REQUIRES_NAME_SETTING, this::setDestructiveRequiresName);
+}
+
+private void setDestructiveRequiresName(boolean destructiveRequiresName) {
+this.destructiveRequiresName = destructiveRequiresName;
+

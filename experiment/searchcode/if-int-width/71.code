@@ -1,0 +1,9 @@
+int[] pHeight = new int[]{42,51};
+System.out.println(test.maxCover(width, height, pWidth, pHeight));
+} else if (mode == 2) {
+System.out.println(test.maxCover(width, height, pWidth, pHeight));
+} else if (mode == 3) {
+int width = 100;
+int height = 93;
+int[] pWidth = new int[]{68,50,18,52,62};
+

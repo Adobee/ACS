@@ -1,0 +1,11 @@
+private double realPart;
+private double imaginaryPart;
+
+/**
+* Constructs a new <code>ComplexNumber</code> with real and imaginary variables
+return new ComplexNumber(this.realPart, this.imaginaryPart);
+}
+
+/**
+* Returns <code>true</code> if the imaginary part is zero, <code>false</code> otherwise
+

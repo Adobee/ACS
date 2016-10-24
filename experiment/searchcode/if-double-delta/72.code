@@ -1,0 +1,10 @@
+//TA: these variables should be private
+public double deltaX;
+public double deltaY;
+public double deltaZ;
+
+public Vector3(double xin, double yin, double zin) {
+this.deltaX=xin;
+this.deltaY=yin;
+this.deltaZ=zin;
+

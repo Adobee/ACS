@@ -1,0 +1,8 @@
+if (other instanceof EmptyRange) //All ranges contain the EmptyRange
+return 2;
+if (other instanceof InfiniteRange) //The InfiniteRange contains all other ranges
+return new CeilingRange<>(other.getMin(), oil ? Inclusivity.LOWER : Inclusivity.BOTH);
+return new EmptyRange<>();
+case 2:
+if (other.findOverlap(this) == 2) //If this and other have the same bounds
+

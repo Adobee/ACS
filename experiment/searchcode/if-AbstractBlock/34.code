@@ -1,0 +1,10 @@
+import logic.nodes.collision.CollidableNode;
+
+import com.jme.math.Vector3f;
+
+public class Block extends AbstractBlock {
+
+private AbstractBlock blockA, blockB;
+
+public Block(Vector3f center, float xExtend, float yExtend, float zExtend, AbsIngameState ingameState) {
+

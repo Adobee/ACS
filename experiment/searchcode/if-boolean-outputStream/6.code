@@ -1,0 +1,8 @@
+private void writeEntry(byte[] key, byte[] value, boolean isStr) throws IOException {
+outputStream.write(RETURN);
+outputStream.write(TAB);
+outputStream.write(COLON);
+outputStream.write(SPACE);
+if (isStr) {
+outputStream.write(QUOTE);
+

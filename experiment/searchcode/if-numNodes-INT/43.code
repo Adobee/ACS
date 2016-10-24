@@ -1,0 +1,8 @@
+//the amount of data nodes in the system
+int numNodes;
+
+//the amount of shards per vertex.
+int numShards;
+public VertexHashSharding(int numNodes, int numShardsPerVertex){
+if (numNodes < 1 || numNodes > (int)Byte.MAX_VALUE || numShardsPerVertex > numNodes) throw new IllegalArgumentException();
+

@@ -1,0 +1,8 @@
+public static IloIntVar[][] defModel(IloCplex cplex, Map map) throws IloException {
+
+int numNodes = map.getNumNodes();
+for (int i = 1; i < numNodes; i++){
+for (int j = 1; j < numNodes; j++){
+if(j!=i){
+cplex.addLe(
+

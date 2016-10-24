@@ -1,0 +1,9 @@
+// constructs a default Mandelbrot set for a specified screen size
+public Mandelbrot(int xSize, int ySize)
+{
+this(new ComplexNum(-2 * (double) xSize / ySize, 1.25), new ComplexNum(.5 * (double) xSize / ySize, -1.25),
+xSize, ySize);
+}
+
+public Mandelbrot(ComplexNum corner1, ComplexNum corner2, int xSize, int ySize)
+

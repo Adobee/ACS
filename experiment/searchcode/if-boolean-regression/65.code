@@ -1,0 +1,11 @@
+protected final boolean addRegressorSet (
+final org.drip.regression.core.RegressorSet rs)
+{
+if (null == rs || !rs.setupRegressors()) return false;
+* @return TRUE => Launch Successful
+*/
+
+protected final boolean launch()
+{
+if (0 == _setRS.size() || !initRegressionEnv()) return false;
+

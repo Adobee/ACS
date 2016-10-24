@@ -1,0 +1,13 @@
+return expsrm.getParameterString();
+}
+
+public double doEMstep() {
+double x0, t0;
+double x1, t1;
+double tmp1, tmp2, llf;
+en2 = 0.0;
+llf = 0.0;
+if (x0 != 0.0) {
+tmp1 = 1 - Math.exp(-rate*t0);
+tmp2 = 1.0/rate - (t0 + 1/rate) * Math.exp(-rate*t0);
+

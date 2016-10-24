@@ -1,0 +1,12 @@
+public FPSCounter(float tickTime) {
+this.TICK_TIME = tickTime;
+}
+
+public void logFrame(float deltaTime) {
+tickTimer += deltaTime;
+frames++;
+
+if (tickTimer > TICK_TIME) {
+float fps = frames / tickTimer;
+Log.d(&quot;FPSCounter&quot;, &quot;fps: &quot; + fps);
+

@@ -1,0 +1,13 @@
+throws IntegratorException {
+
+double filteredH = h;
+if (Math.abs(h) < minStep) {
+if (acceptSmall) {
+minStep, Math.abs(h));
+}
+}
+
+if (filteredH > maxStep) {
+filteredH = maxStep;
+} else if (filteredH < -maxStep) {
+

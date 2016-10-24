@@ -1,0 +1,9 @@
+ModPatcher.Version current = ModPatcher.Version.of(VERSION);
+
+if (isOutdated(current, requiredVersion)) {
+throw new RuntimeException(&quot;ModPatcher outdated. Have version: &quot; + VERSION + &quot;, requested version: &quot; + requiredVersion + autoUpdate);
+}
+}
+
+static boolean isOutdated(ModPatcher.Version current, ModPatcher.Version required) {
+

@@ -1,0 +1,8 @@
+private String clazzName;
+private Class<ProviderService> providerClazz;
+
+public EscimoProviderFactory(String clazzName) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+this.clazzName = clazzName;
+Class<?> clazz = Class.forName(clazzName);
+if(clazz.newInstance() instanceof ProviderService) {
+

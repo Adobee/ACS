@@ -1,0 +1,8 @@
+final InetAddress inetAddress = InetAddresses.forString(ipString);
+if (inetAddress instanceof Inet6Address) {
+try {
+return InetAddresses.getEmbeddedIPv4ClientAddress((Inet6Address) inetAddress);
+final String ipString, final int port) {
+InetAddress inetAddress = InetAddresses.forString(ipString);
+if (inetAddress instanceof Inet6Address) {
+

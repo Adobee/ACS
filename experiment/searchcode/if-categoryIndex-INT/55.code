@@ -1,0 +1,13 @@
+private static ChoiceHandler instance;
+
+private ChoiceHandler() {
+}
+
+public static ChoiceHandler getInstance() {
+if (instance == null) {
+JeopardyPanel.getInstance().selectCategory();
+}
+
+public void categorySelected(int categoryIndex) {
+Sector category = Sector.category(categoryIndex + 1);
+

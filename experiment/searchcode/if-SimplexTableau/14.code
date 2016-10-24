@@ -1,0 +1,7 @@
+import com.dborisenko.math.optimization.linear.lexDualSimplexClasses.tableaus.SimplexTableau;
+import com.dborisenko.math.optimization.OptimizerPrecision;
+import com.dborisenko.math.optimization.linear.lexDualSimplexClasses.ZeroColumnsAction;
+public class LexDualSimplexTableauFactory implements SimplexTableauFactory {
+
+public SimplexTableau createTableau(ZeroColumnsAction zeroColumnsAction, OptimizerPrecision precision) {
+

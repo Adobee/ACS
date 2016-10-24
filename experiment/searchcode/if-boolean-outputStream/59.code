@@ -1,0 +1,8 @@
+public OutputStream stdout;
+public OutputStream stderr;
+private boolean isAttached = false;
+
+@Override
+public void attach(OutputStream stdout, OutputStream stderr) throws IOException {
+if (isAttached()) {
+

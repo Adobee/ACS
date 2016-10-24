@@ -1,0 +1,10 @@
+double separation;
+int direction;
+
+public DecisionRule(int index, double separation, int direction){
+this.index = index;
+public boolean fits(double[] vector){
+double val = vector[index];
+if(direction < 0){
+return val < separation;
+

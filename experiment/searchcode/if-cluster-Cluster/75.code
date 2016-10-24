@@ -1,0 +1,6 @@
+public UserCluster convertBBUserClusterToUserCluster(BBUserCluster bbUserCluster) throws SQLException {
+if (bbUserCluster != null) {
+UserCluster userCluster = sUserClusterMap.get(bbUserCluster);
+if (userCluster == null) {
+int depth = bbUserCluster.getClusterDepth();
+

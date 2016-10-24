@@ -1,0 +1,7 @@
+public final void setOffset(int offset, boolean repaint) {
+if (contentSize != pageSize) {
+if (offset < 0) this.offset = 0;
+public final void setup(int offset, int contentSize, int pageSize, boolean repaint) {
+if (contentSize <= 0) contentSize = 1;
+if (pageSize > contentSize) pageSize = contentSize;
+

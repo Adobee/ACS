@@ -1,0 +1,5 @@
+Node lowestCommonAnestor (Node tree, int val1, int val2) {
+if (!containsBoth(tree, val1, val2)) { return null; }
+Node lcaRight = lowestCommonAnestor(tree.right, val1, val2);
+//If a node contains both values, but none of its children contain both values, then that&#39;s the lca.
+

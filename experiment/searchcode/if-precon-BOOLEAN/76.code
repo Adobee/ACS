@@ -1,0 +1,11 @@
+@Override
+public boolean canHandle(ItemStack itemStack) {
+PreCon.notNull(itemStack);
+
+if (itemStack.getDurability() == 0
+public boolean apply(ItemStack itemStack, ItemMetaValue meta) {
+PreCon.notNull(itemStack);
+PreCon.notNull(meta);
+
+if (!meta.getName().equals(getMetaName()))
+

@@ -1,0 +1,9 @@
+super(inputStream);
+}
+
+@Override
+public long skip(long n) throws IOException {
+long totalBytesSkipped = 0L;
+while (totalBytesSkipped < n) {
+long bytesSkipped = in.skip(n - totalBytesSkipped);
+

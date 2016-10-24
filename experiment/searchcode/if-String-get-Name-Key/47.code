@@ -1,0 +1,14 @@
+public static String getKeyCode(KeyEvent e) {
+char c = e.getKeyChar();
+
+String code = null;
+
+if(Character.isLetter(c))
+code = c + &quot;&quot;;
+
+if(c == &#39;\n&#39;)
+code = PhysicalButton.ENTER.getKeyName();
+
+if(c == &#39; &#39;)
+code = &quot; &quot;;
+

@@ -1,0 +1,8 @@
+* @param keepAliveDuration 连接存活毫秒数
+*/
+public CustomConnectionKeepAliveStrategy(long keepAliveDuration) {
+this.keepAliveDuration = keepAliveDuration;
+}
+
+public long getKeepAliveDuration(HttpResponse response, HttpContext context) {
+

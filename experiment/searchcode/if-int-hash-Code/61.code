@@ -1,0 +1,9 @@
+int numToHash = s.hashCode();
+int hash = HashUtilities.shortHash(numToHash);
+System.out.println(&quot;0 < &quot; + hash + &quot; < 1000&quot;);
+}
+
+static public int shortHash(int num){
+if(num < 0){
+num = Math.abs(num);
+

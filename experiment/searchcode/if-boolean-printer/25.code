@@ -1,0 +1,12 @@
+package template;
+
+public class Printer {
+private static Printer printer = null;
+private static boolean firstUse = false;
+
+private Printer() {
+}
+
+public static Printer getInstance() {
+if (!firstUse) {
+

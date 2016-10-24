@@ -1,0 +1,13 @@
+public Pyramid()
+{
+
+}
+
+public boolean generate(World world, Random rand, int x, int y, int z)
+{
+if(world.getBlockId(x, y, z)!= Block.sand.blockID || world.getBlockId(x, y + 1, z)!= 0)
+int shelf = Block.bookShelf.blockID;
+//Boden Anfang
+world.setBlockWithNotify(x, y, z, block);
+world.setBlockWithNotify(x, y, z + 1, block);
+

@@ -1,0 +1,9 @@
+protected long occupied;
+
+public UsageAwareSet(boolean accessOrder) {
+super(accessOrder);
+cursor = lruHeader;
+protected void removing(Entry<V> entry) {
+if (cursor == entry) {
+cursor = entry.after;
+

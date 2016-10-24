@@ -1,0 +1,13 @@
+for ( Enumeration<Node> e = n.elements(); e.hasMoreElements(); )
+(e.nextElement()).accept(this);
+}
+
+public void visit(NodeListOptional n) {
+if ( n.present() )
+public void visit(StatementList n) {
+n.f0.accept(this);
+}
+
+/**
+* f0 -> ( <IF> &quot;(&quot; Expression() &quot;)&quot; Statement() [ <ELSE> Statement() ] | <SWITCH> &quot;(&quot; Expression() &quot;)&quot; Statement() )
+

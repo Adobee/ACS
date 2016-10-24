@@ -1,0 +1,10 @@
+return wrap.balanced;
+}
+
+public int isBalanced(TreeNode root, Wrapper wrap) {
+if (root == null) {
+return 0;
+} else {
+int leftH = isBalanced(root.left, wrap);
+if (wrap.balanced) {
+

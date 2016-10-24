@@ -1,0 +1,9 @@
+return ForgeHooks.seedList.add(new SeedEntry(seed.getItem(), seed.getWeight()));
+}
+
+public static void add(int index, Seed seed) {
+ForgeHooks.seedList.add(index, new SeedEntry(seed.getItem(), seed.getWeight()));
+for (int a = 0; a < ForgeHooks.seedList.size(); a++) {
+SeedEntry e = ForgeHooks.seedList.get(a);
+if (seed.getItem().getItem() == e.seed.getItem()) {
+

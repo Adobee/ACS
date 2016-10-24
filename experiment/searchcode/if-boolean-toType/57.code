@@ -1,0 +1,10 @@
+public NullType toNull() { return this; }
+
+public boolean descendsFromImpl(Type ancestor) {
+if (ancestor.isNull()) return false;
+return false;
+}
+
+public boolean isImplicitCastValidImpl(Type toType) {
+return toType.isNull() || toType.isReference();
+

@@ -1,0 +1,7 @@
+private final Predicate<TSource> elementPredicate;
+private final BiFunction<Boolean, Boolean, Boolean> aggregator;
+private Predicate<Boolean> shortCircuitPredicate;
+public PredicateIterator(Iterable<TSource> input,
+Predicate<TSource> elementPredicate,
+BiFunction<Boolean, Boolean, Boolean> aggregator,
+

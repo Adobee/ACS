@@ -1,0 +1,9 @@
+public class Timer extends Automata {
+
+protected int time;
+protected String timerName; //chan timerName
+protected String timeUnit;
+public void updateTimeByUnit(String timeUnit, Hashtable<String, Integer> timeUnitList) {
+if(! this.timeUnit.equals(timeUnit)) {
+time = (int) (time * Math.pow(10, timeUnitList.get(this.timeUnit) - timeUnitList.get(timeUnit)));
+

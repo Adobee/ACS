@@ -1,0 +1,10 @@
+public void launch(String directory){
+this.makeDirectory(directory);
+}
+
+public void makeDirectory(String newDir){
+String currentDir = System.getProperty(&quot;user.dir&quot;);
+
+if (newDir.charAt(0) == &#39;/&#39;)
+newDir = newDir.substring(1,newDir.length());
+

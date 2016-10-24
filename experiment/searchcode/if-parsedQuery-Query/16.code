@@ -1,0 +1,7 @@
+return new NamedArrayCache(parsedQueryArrayCache.get(namedQuery), indexArrayCache.get(namedQuery));
+}
+
+public void setCache(String namedQuery, String parsedQuery, Map<String, List<Integer>> m) {
+
+if (indexCache.putIfAbsent(namedQuery, m) == null) {
+

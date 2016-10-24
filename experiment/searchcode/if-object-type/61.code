@@ -1,0 +1,14 @@
+List<ObjectType> objectTypes = new ArrayList<ObjectType>();
+
+ObjectType objectType = null;
+
+while (rs.next()) {
+
+if (objectType == null) {
+objectType.setViewName(rs.getString(&quot;view_name&quot;));
+}
+
+
+if (objectType.getObjectType() != null
+&amp;&amp; objectType.getObjectType().equals(
+

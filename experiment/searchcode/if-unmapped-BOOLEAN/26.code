@@ -1,0 +1,8 @@
+class SAMEntryIterator implements Iterator<SAMEntry> {
+
+private final SAMRecordIterator it;
+private final boolean allowUnmapped;
+private SAMRecord nextRecord;
+
+public SAMEntryIterator(SAMRecordIterator it, boolean allowUnmapped) {
+

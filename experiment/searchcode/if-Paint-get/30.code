@@ -1,0 +1,11 @@
+private Paint circlePaintPoi;
+
+private float scaleFactor;
+
+public static PaintCollection getInstance(Context context) {
+if (paintCollection == null) {
+DisplayMetrics metrics = context.getResources().getDisplayMetrics();
+scaleFactor = metrics.density;
+
+circlePaintYou = new Paint();
+

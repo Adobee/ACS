@@ -1,0 +1,8 @@
+public ClientViewerLabelProvider(int flags) {
+super(flags);
+}
+
+private Object getUndelayingElement(Object element) {
+if(element instanceof Container) {
+element=((Container)element).getUnderlayingObject();
+

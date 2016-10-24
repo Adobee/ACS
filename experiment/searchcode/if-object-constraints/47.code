@@ -1,0 +1,12 @@
+for (int i = 0; i < i_constraints.length; i++) {
+i_constraints[i].smaller();
+}
+return this;
+}
+}
+
+public Object getObject() {
+synchronized(streamLock()){
+Object[] objects = new Object[i_constraints.length];
+for (int i = 0; i < i_constraints.length; i++) {
+

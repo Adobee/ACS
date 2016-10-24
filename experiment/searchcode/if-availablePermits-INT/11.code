@@ -1,0 +1,7 @@
+private volatile int availablePermits;
+private final Object lock = new Object();
+
+public SemaphoreImpl(int permits) {
+//                System.out.println(&quot;In acquire: &quot; + Thread.currentThread().getName() + &quot;; AV permits: &quot; + availablePermits + &quot;; Requested permits: &quot; + permits);
+if (availablePermits >= permits) {
+

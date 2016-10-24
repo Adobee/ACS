@@ -1,0 +1,10 @@
+public void onMessage(Message message)
+{
+try {
+if (message instanceof TextMessage) {
+String text = ((TextMessage) message).getText();
+
+_messageStore.addMessage(text);
+}
+else if (message instanceof ObjectMessage) {
+

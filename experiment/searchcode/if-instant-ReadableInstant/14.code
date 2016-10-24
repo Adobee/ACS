@@ -1,0 +1,8 @@
+import org.hamcrest.TypeSafeDiagnosingMatcher;
+import org.joda.time.ReadableInstant;
+
+public class BeforeMatcher extends TypeSafeDiagnosingMatcher<ReadableInstant> {
+@Factory
+public static BeforeMatcher before(final ReadableInstant rhs) {
+if (rhs == null) {
+

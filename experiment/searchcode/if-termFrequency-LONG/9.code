@@ -1,0 +1,9 @@
+List<TermFrequency> termVector_0 = getDocumentTermVector(id_0);
+List<TermFrequency> termVector_1 = getDocumentTermVector(id_1);
+
+long[] frequencyVector_0 = transferTermVectorToAllDimession(termVector_0);
+private long[] transferTermVectorToAllDimession(List<TermFrequency> termVector){
+
+long[] result = new long[allWords.length];
+Iterator<TermFrequency> docIte = termVector.iterator();
+

@@ -1,0 +1,8 @@
+private final T expectedValue;
+
+protected GreaterThan(T expectedValue) {
+if (expectedValue == null) {
+public boolean matches(Object item) {
+if (expectedValue.getClass().isInstance(item)) {
+return expectedValue.compareTo((T) item) < 0;
+

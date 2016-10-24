@@ -1,0 +1,7 @@
+private String executionTask(final String taskName) throws ExecutionException, InterruptedException {
+while (true) {
+Future<String> future = taskCache.get(taskName); //1.1,2.1
+if (future == null) {
+future = taskCache.putIfAbsent(taskName, futureTask); //1.3
+if (future == null) {
+

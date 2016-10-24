@@ -1,0 +1,9 @@
+private static final long serialVersionUID = -6434454881295769569L;
+/** mapping from cues to us configuration.**/
+public TimingConfiguration() {
+this(1);
+}
+
+public void addOnset(String stimulus, float mean, float sd, long seed) {
+durations.set(stimulus, mean, sd, seed);
+

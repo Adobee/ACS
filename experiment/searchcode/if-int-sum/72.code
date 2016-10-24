@@ -1,0 +1,8 @@
+for(y=1;y<1000000;y++){
+if((x+y)%10==2){
+int sum=x+y;
+if((x+sum)%10==5){
+sum=x+sum;
+if((y+sum)%10==2){
+sum=y+sum;
+

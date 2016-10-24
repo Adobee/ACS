@@ -1,0 +1,9 @@
+public class BearPaints {
+public long maxArea(int W, int H, long M) {
+int square = (int) Math.sqrt(M);
+long ret = 0;
+long b = Math.min(other, H);
+long c = Math.min(i, H);
+long d = Math.min(i, W);
+if (a * b > ret) {
+

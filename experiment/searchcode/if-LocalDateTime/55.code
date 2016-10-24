@@ -1,0 +1,9 @@
+public void resetDateTime() throws Exception {
+LocalDateTime.resetSystemDateTime();
+}
+
+@Test
+public void shouldReturnDateTimeComponents() throws Exception {
+final Calendar cal = createCalendarForDateTime(2001, Calendar.OCTOBER, 25, 15, 12, 43);
+final LocalDateTime dateTime = LocalDateTime.onDate(cal.getTime());
+

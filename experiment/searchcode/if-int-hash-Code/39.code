@@ -1,0 +1,16 @@
+public boolean equals(Object obj) {
+if (!(obj instanceof Code)) return false;
+
+Code c = (Code) obj;
+for (int i = 0; i < c.code.length; i++) {
+if (c.code[i] != code[i]) return false;
+}
+
+return true;
+}
+
+@Override
+public int hashCode() {
+int hash = 37;
+for (int i = 0; i < code.length; i++) {
+

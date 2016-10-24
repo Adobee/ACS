@@ -1,0 +1,11 @@
+this.telePadsByName = new HashMap<String, TelePadInfo>();
+}
+
+static AllTelePads get() {
+if (singleton == null) {
+return this.telePadsByName.values();
+}
+
+TelePadInfo getByLocation(Location location) {
+if (this.telePadsByBlock == null) return null;
+

@@ -1,0 +1,7 @@
+Object proxy = widgetHierarchy.getWidgetProxy(widgetInfo.getWidgetID());
+if (proxy instanceof MenuItemProxy) {
+final MenuItemProxy menuItemProxy = (MenuItemProxy) proxy;
+return Displays.syncExec(menuItemProxy.getDisplay(), new Displays.BooleanResult() {
+public boolean result() {
+MenuProxy menuProxy = menuItemProxy.getParent();
+

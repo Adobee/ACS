@@ -1,0 +1,10 @@
+public int progress(Object instance, double[] x, double[] g, double[] fx,
+double xnorm, double gnorm, double step, int n, int k, int ls)
+System.out.print(String.format(&quot;  xnorm = %f, gnorm = %f, step = %f\n&quot;,
+xnorm, gnorm, step));
+System.out.println();
+return 0;
+}
+
+public static double classify(double[] x, double[] weights, int n)
+

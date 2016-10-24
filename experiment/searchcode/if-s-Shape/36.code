@@ -1,0 +1,16 @@
+public void paintImpl(Painter p) {
+if (shape == null) {
+return;
+}
+
+p.paint(shape);
+}
+
+@Override
+public boolean contains(double mx, double my) {
+if (shape == null) {
+return false;
+}
+
+return shape.contains(mx, my);
+

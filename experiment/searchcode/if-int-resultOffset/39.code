@@ -1,0 +1,7 @@
+private int actionType;
+private SagRequest request;
+protected int resultLimit, resultOffset;
+private boolean check(int checkVal) {
+boolean ret = ((actionType &amp; checkVal) == checkVal);
+if (!ret) {
+

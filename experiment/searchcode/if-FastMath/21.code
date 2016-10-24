@@ -1,0 +1,10 @@
+destAngle = FastMath.atan2(pos.x, pos.z);
+if (destAngle == 0)
+destAngle = FastMath.nextRandomFloat()*FastMath.PI*2;
+velocity = new Vector3f(FastMath.sin(destAngle), 0, FastMath.cos(destAngle)).mult(flySpeed);
+timer = 0;
+float rand = FastMath.nextRandomFloat();
+if (rand < .5)
+mode = &quot;charge&quot;;
+else if (rand < .7)
+

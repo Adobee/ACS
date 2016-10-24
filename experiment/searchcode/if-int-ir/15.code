@@ -1,0 +1,11 @@
+public IrUnaryOp(String tok, IrExpression e)
+{
+super(tok, null);
+_expr = e;
+_type = IrType.max(IrType.INT, _expr.GetType());
+
+if(_type == null) error(&quot;type error&quot;);
+}
+
+public IrExpression generate()
+

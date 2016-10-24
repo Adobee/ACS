@@ -1,0 +1,8 @@
+@Override
+public int compareTo(final Object o) {
+if(o instanceof DailyAnswerModel) {
+final long otherDateInMillis = ((DailyAnswerModel) o).getDateInMillis();
+final long dateInMillis = getDateInMillis();
+if(dateInMillis > otherDateInMillis) {
+return -1;
+

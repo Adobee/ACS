@@ -1,0 +1,16 @@
+package codility_test;
+
+
+public class binary_gap {
+public int solution(int N) {
+int gap = -1;
+// get right most bit &amp; shift right
+r = N &amp; 1;
+N = N >> 1;
+
+if (r == 0 &amp;&amp; gap >= 0) {
+gap++;
+}
+if (r == 1) {
+max_gap = gap > max_gap ? gap : max_gap;
+

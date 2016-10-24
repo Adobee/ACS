@@ -1,0 +1,9 @@
+public class RemoveDuplicatesFromSortedArray {
+public int removeDuplicates(int[] A) {
+if(A==null || A.length ==0)
+return 1;
+int endIndex = 1;
+int i = 0;
+outerloop:
+while(endIndex<A.length){
+

@@ -1,0 +1,9 @@
+private HashUtil() {
+};
+
+public static String Md5Hex(String s) {
+final char hexDigits[] = { &#39;0&#39;, &#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;, &#39;5&#39;, &#39;6&#39;, &#39;7&#39;, &#39;8&#39;,
+for (int i = 0, k = 0; i < len; i++) {
+byte byte0 = bytes[i];
+str[k++] = hexDigits[byte0 >>> 4 &amp; 0x0f];
+

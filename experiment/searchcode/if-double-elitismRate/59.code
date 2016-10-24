@@ -1,0 +1,11 @@
+public Brainfucker(String desiredOutput,
+int population,
+int maxIteration,
+double elitismRate,
+double mutationRate
+p = new Population(population,  elitismRate, mutationRate, desiredOutput);
+
+}
+
+public void run(){
+

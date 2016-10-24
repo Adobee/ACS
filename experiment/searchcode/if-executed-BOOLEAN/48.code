@@ -1,0 +1,12 @@
+private final Promise promise;
+
+private boolean executed;
+
+public NextPromise(Promise promise) {
+this.promise = promise;
+}
+
+void doResolve(Object result) {
+if (!executed) {
+executed = true;
+

@@ -1,0 +1,8 @@
+final List<QueryParameter> queryParameters = updateQuery.getUpdateQueryParameters();
+
+String replacedQueryString = queryString;
+if (queryParameters != null) {
+for (final QueryParameter queryParam : queryParameters) {
+final Object paramValue = queryParam.getValueToPrint();
+final String printedParam = defaultConverter.convertParameterToPrint(paramValue);
+

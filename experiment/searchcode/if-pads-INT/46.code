@@ -1,0 +1,15 @@
+*         1/21/14
+*/
+public class ModuleNode extends PcbNode {
+final List<PadNode> pads;
+public final PointNode at;
+PointNode offsetPoint = at.translate(point);
+
+for (PadNode pad : pads) {
+if (pad.isConnected(offsetPoint))
+return true;
+}
+return false;
+}
+}
+

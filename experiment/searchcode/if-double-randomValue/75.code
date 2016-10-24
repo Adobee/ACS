@@ -1,0 +1,14 @@
+/** 取范围随机数：大于等于较小的数，小于较大的数 */
+public static int randomValue(int v1,int v2)
+{
+if(v1==v2) return v1;
+if(v1>v2)
+return Math.abs(random.nextInt()%(v1-v2))+v2;
+return random.nextFloat()*(v2-v1)+v1;
+}
+
+/** 取范围随机数：大于等于较小的数，小于较大的数 */
+public static double randomValue(double v1,double v2)
+{
+if(v1==v2) return v1;
+

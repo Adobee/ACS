@@ -1,0 +1,11 @@
+package pacman;
+
+public class DirectionVector {
+
+private double x;
+private double y;
+
+private DirectionVector(final double x, final double y) {
+this.x = x;
+this.y = y;
+

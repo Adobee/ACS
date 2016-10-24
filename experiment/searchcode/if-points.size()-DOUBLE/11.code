@@ -1,0 +1,11 @@
+points.addElement(new Point2D.Double(x, y));
+sort(points);
+}
+
+public int getSize() {
+return points.size();
+public Polygon getPolygon() {
+Polygon p = new Polygon();
+for (int i = 0; i < points.size(); i++) {
+Point2D.Double pd = (Point2D.Double) points.elementAt(i);
+

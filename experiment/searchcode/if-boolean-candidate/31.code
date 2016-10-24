@@ -1,0 +1,8 @@
+public class Q277_Find_The_Celebrity {
+public int findCelebrity(int n) {
+if (n == 0) return -1;
+int candidate = 0;
+for (int i = 1; i < n; i++) {
+if (knows(candidate, i)) {
+candidate = i;
+

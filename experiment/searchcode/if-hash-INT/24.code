@@ -1,0 +1,13 @@
+* @param key The hash key.
+* @return The index for the hashtable.
+*/
+public int hash(String key) {
+int hash = key.hashCode() % 19;
+if(hash < 0)
+hash = -hash;
+return hash;
+}
+
+/* (non-Javadoc)
+* @see hashing.HashFunction#size()
+

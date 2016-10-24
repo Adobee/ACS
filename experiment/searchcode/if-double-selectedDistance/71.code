@@ -1,0 +1,9 @@
+private PreparedStatement pstmt;
+private ResultSet rs;
+private double userLatitude, userLongitude;
+private String zip;
+private List<userDetails> userList;
+public void selectedDistance(ValueChangeEvent ve)
+{
+this.distance = Double.parseDouble((String)ve.getNewValue());
+

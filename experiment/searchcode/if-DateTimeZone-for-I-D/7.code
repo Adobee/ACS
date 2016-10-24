@@ -1,0 +1,12 @@
+timeZones.add( DateTimeZone.UTC );
+for ( String id : ids )
+{
+if ( !id.equals( &quot;UTC&quot; ) )
+{
+timeZones.add( DateTimeZone.forID( id ) );
+}
+}
+}
+
+public List<DateTimeZone> getTimeZones()
+

@@ -1,0 +1,8 @@
+for (int i = 0; i < size(); i++) {
+Stok_yeri stok_yeri = (Stok_yeri) get(i);
+if (stok_yeri.getIdkey().equals(idkey)) {
+String pidkey = &quot;&quot;;
+Object object = result.get(Siparis.PROP_IDKEY);
+if (object != null) {
+pidkey = object.toString();
+

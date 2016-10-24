@@ -1,0 +1,14 @@
+* DP problem. Transition equation: step[i] = step[i-1] + step[i-2] Init:
+* step[1] = 1, step[2] = 2.
+*/
+int climbStairs(int n) {
+// No need to store all intermediate steps.
+if (n == 1)
+return 1;
+if (n == 2)
+return 2;
+int step_1 = 1;
+int step_2 = 2;
+int step = 0;
+for (int i = 3; i <= n; i++) {
+

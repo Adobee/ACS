@@ -1,0 +1,11 @@
+double pi = Math.PI;
+double mu_r = pi/4;
+double R2 = 1.0;
+double R1 = 0.5;
+
+double mu = p[0];
+
+double[] f = new double[5];
+
+double r = Math.sqrt(x[0]*x[0]+x[1]*x[1]) + 0.0001;
+

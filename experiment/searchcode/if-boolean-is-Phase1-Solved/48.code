@@ -1,0 +1,12 @@
+private boolean isMasterJavaj ()
+{
+return (javajInstance == 0);
+}
+
+public void startPhase1 ()
+{
+if (euJavaj == null)
+{
+log.err (&quot;startPhase1&quot;, &quot;euJavaj is null!&quot;);
+return;
+

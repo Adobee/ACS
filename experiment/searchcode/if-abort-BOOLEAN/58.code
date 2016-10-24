@@ -1,0 +1,13 @@
+public int getScope() {
+return scope;
+}
+
+public static boolean isSilentAbort(Throwable t){
+if(t instanceof  PageExceptionBox) {
+return false;
+}
+
+public static boolean isAbort(Throwable t, int scope) {
+if(t instanceof  PageExceptionBox) {
+return isAbort(((PageExceptionBox)t).getPageException(),scope);
+

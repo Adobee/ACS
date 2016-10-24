@@ -1,0 +1,11 @@
+public class InputNestedIfDepth
+{
+void foo() {
+// nesting == 0
+if (true) {
+}
+
+// nesting == 1
+if (true) {
+if (true) {
+

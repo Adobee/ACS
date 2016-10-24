@@ -1,0 +1,10 @@
+public Lucene40DocValuesProducer(SegmentReadState state, String segmentSuffix) throws IOException {
+if (anyDocValuesFields(state.fieldInfos)) {
+cfs = new CompoundFileDirectory(state.dir,
+IOUtils.close(closeables);
+}
+}
+
+@Override
+protected DocValues loadDocValues(int docCount, Directory dir, String id,
+

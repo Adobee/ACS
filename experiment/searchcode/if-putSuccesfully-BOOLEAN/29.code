@@ -1,0 +1,9 @@
+this.loadingDates = Collections.synchronizedMap(new HashMap());
+this.cache = cache;
+this.maxAge = 1000 * maxAge;
+}
+
+public boolean put(K key, V value) {
+boolean putSuccesfully = this.cache.put(key, value);
+if (putSuccesfully) {
+

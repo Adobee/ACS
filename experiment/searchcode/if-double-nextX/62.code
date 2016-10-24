@@ -1,0 +1,9 @@
+// Several variables used in the move method.
+double point = 0.0;
+double elapsed;
+double nextX, nextY;
+for (int i = 0; i < 4; i++) {
+switch (i) {
+case 0:
+if (level.blockHere(nextX + BALL_COLLISION_RADIUS, nextY)) {
+

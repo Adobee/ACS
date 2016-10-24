@@ -1,0 +1,8 @@
+import cn.ac.dicp.core.ms.peaklist.PeakAnnotation;
+import cn.ac.dicp.core.ms.spectrum.AbsoluteTolerance;
+import cn.ac.dicp.core.ms.spectrum.MsnSpectrum;
+MsnSpectrum spec2 = reader.next();
+
+Tolerance tolerance = new AbsoluteTolerance(0.05);
+DefaultPeakListAligner<PeakAnnotation, PeakAnnotation> aligner = new DefaultPeakListAligner<>(tolerance);
+

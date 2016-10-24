@@ -1,0 +1,14 @@
+private int month;
+private int dayOfMonth;
+private int hourOfDay;
+private int minute;
+private long timeInMillis;
+this.month = month;
+}
+
+public int getDayOfMonth() {
+return dayOfMonth;
+}
+
+public void setDayOfMonth(int dayOfMonth) {
+

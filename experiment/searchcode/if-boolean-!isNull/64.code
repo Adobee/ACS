@@ -1,0 +1,16 @@
+return value;
+}
+
+@Override
+public boolean lessThan(Type value)
+{
+if (isNULL()) return false;
+if (value.isNULL()) return false;
+return this.value == (((INT) value).getINT());
+}
+
+@Override
+public boolean noGreaterThan(Type value)
+{
+if (isNULL()) return false;
+

@@ -1,0 +1,8 @@
+public boolean intersects(
+Ray3D ray, // input
+Point3D intersection, // output
+boolean allowIntersectionEvenIfPlaneIsBackfacing
+) {
+float dot = Vector3D.dot( n, ray.direction );
+if ( !allowIntersectionEvenIfPlaneIsBackfacing &amp;&amp; dot > 0 ) {
+

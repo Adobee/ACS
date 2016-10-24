@@ -1,0 +1,11 @@
+public static void compress(final Http.Request request, final Http.Response response, byte[] content) throws IOException {
+if (isGzipSupported(request)) {
+response.out.write(content);
+}
+}
+
+/**
+* @return Whether the request browser supports GZIP encoding
+*/
+public static boolean isGzipSupported(final Http.Request request) {
+

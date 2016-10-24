@@ -1,0 +1,11 @@
+import static clojure.lang.Keyword.intern;
+
+public enum HttpMethod {
+
+GET(intern(&quot;get&quot;)), HEAD(intern(&quot;head&quot;)), POST(intern(&quot;post&quot;)), PUT(intern(&quot;put&quot;)),
+private HttpMethod(Keyword key) {
+this.KEY = key;
+}
+
+public static HttpMethod fromKeyword(Keyword k) {
+

@@ -1,0 +1,7 @@
+public ResponseEntity<ScorerTable> createScorerTable(@RequestBody ScorerTable scorerTable) throws URISyntaxException {
+log.debug(&quot;REST request to save ScorerTable : {}&quot;, scorerTable);
+if (scorerTable.getId() != null) {
+public ResponseEntity<ScorerTable> updateScorerTable(@RequestBody ScorerTable scorerTable) throws URISyntaxException {
+log.debug(&quot;REST request to update ScorerTable : {}&quot;, scorerTable);
+if (scorerTable.getId() == null) {
+

@@ -1,0 +1,16 @@
+public abstract class Tip
+{
+protected DateTime submissionDate;
+protected Draw draw;
+
+@Deprecated
+protected Tip(){}
+public int withdraw()
+{
+if(draw.getEvaluated())
+return 1;
+else
+return 0;
+}
+}
+

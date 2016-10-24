@@ -1,0 +1,7 @@
+int[] newIntCols = new int[intCols.length-1];
+int i = 0;
+for (int c: intCols) if (c != col) newIntCols[i++] = c;
+public int compareTo(MemColumnSelector cols) {
+if (intCols.length < cols.intCols.length) return -1;
+if (intCols.length > cols.intCols.length) return 1;
+

@@ -1,0 +1,9 @@
+public enum ConverterParameterFilter {
+
+NAME {
+@Override
+protected boolean equalsBy(ConverterConstructorParameter parameter1, ConverterConstructorParameter parameter2) {
+for (ConverterConstructorParameter converterParameter : parameters) {
+if (equalsBy(converterParameter, parameter) == condition) {
+result.add(converterParameter);
+

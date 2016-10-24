@@ -1,0 +1,12 @@
+private int lowerBound;
+private int upperBound;
+private Bullet[] array;
+
+public BulletArray(AuroraContext context, int capacity) {
+lowerBound = (lowerBound + 1) % array.length;
+}
+
+public int size() {
+if (upperBound >= lowerBound)
+return upperBound - lowerBound;
+

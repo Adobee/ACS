@@ -1,0 +1,11 @@
+static AppCompatActivity mActivity;
+static ProviderUtils mProvider;
+private Toolbar mActionBarToolbar;
+
+boolean mShouldBeFloatingWindow;
+* Determine based on the style, whether the window should be floating or full screen
+* @return
+*/
+boolean shouldBeFloatingWindow() {
+Resources.Theme theme = getTheme();
+

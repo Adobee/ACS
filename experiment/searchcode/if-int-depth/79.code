@@ -1,0 +1,7 @@
+public class Solution {
+public int longestValidParentheses(String s) {
+int depth = 0;
+start = s.length() - 1;
+for(int i = s.length() - 1; i >= 0; --i) {
+if(s.charAt(i) == &#39;)&#39;) ++depth;
+

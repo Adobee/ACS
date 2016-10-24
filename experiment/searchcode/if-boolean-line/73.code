@@ -1,0 +1,8 @@
+public class HealingParser implements IParser {
+
+public Boolean canHandle(ParsedLine parsedLine) {
+if (parsedLine.getType() == CombatTypeEnum.HEAL || parsedLine.getType() == CombatTypeEnum.CRITICAL_HEAL) {
+return new HealingAction(parsedLine.getActor(), parsedLine.getTarget(), parsedLine.getSkill(), parsedLine.getAmount(),parsedLine.getSecondsIntoFight(),parsedLine.getType() == CombatTypeEnum.HEAL ? Boolean.FALSE : Boolean.TRUE,parsedLine.getOverheal());
+}
+}
+

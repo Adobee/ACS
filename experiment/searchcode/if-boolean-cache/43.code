@@ -1,0 +1,6 @@
+public static Boolean cacheSave(String cacheName, String cacheKey, Object obj) {
+Cache cache = CacheFactoryImpl.getInstance().getCache(cacheName, true);
+boolean flag = false;
+try {
+if (null != cache) {
+

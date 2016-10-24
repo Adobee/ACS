@@ -1,0 +1,9 @@
+import com.rapidminer.tools.math.similarity.SimilarityMeasure;
+
+public abstract class AbstractNominalSimilarity extends SimilarityMeasure {
+
+private boolean[] binominal;
+public double calculateSimilarity(double[] value1, double[] value2) {
+int equalNonFalseValues = 0;
+int unequalValues = 0;
+

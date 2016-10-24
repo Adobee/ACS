@@ -1,0 +1,8 @@
+*            is null.
+*            (Detail: if we initialize something onHeap, lhs may not be null)
+* @param cType
+final LeftHandSide lhs, final CType cType, final ExpressionResult initializerRaw) {
+
+boolean onHeap = false;
+if (lhs != null &amp;&amp; lhs instanceof VariableLHS) {
+

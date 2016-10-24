@@ -1,0 +1,12 @@
+public class Randomizer {
+
+private double lastRandomNumber = 0;
+
+public double rand(int lowerBound, int upperBound){
+
+if (lowerBound > upperBound){
+upperBound = temp;
+}
+lastRandomNumber = Math.random();
+double sN = (upperBound - lowerBound) * lastRandomNumber;
+

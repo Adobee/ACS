@@ -1,0 +1,9 @@
+for (String chId : batchControlPredicates.keySet())
+{
+Mapping<Object, Boolean> pred = batchControlPredicates.get(chId);
+if (pred != null)
+String outputId = outputIter.next();
+OutputPort<Object> out = ports.getOutput(outputId);
+
+// If a particular port is closed for output (because nobody is reading it
+

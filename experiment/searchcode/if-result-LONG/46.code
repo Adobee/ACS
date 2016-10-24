@@ -1,0 +1,8 @@
+public long count(long L, long R) {
+if(R - L < 100) {
+return between(R, L);
+} else {
+long result = 0;
+result += moreThan(L % 100) + lessThan(R % 100);
+result += 10 * ((R / 100 - (L / 100) - 1L));
+

@@ -1,0 +1,11 @@
+package org.ip.sesion06;
+
+public class Complejo {
+
+private double real;
+private double imaginaria;
+
+public Complejo(double real, double imaginaria) {
+super();
+this.real = real;
+

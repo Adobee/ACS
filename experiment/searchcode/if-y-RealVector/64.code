@@ -1,0 +1,10 @@
+return true;
+}
+if (!(other instanceof RealVector)) {
+return false;
+}
+RealVector otherVector = (RealVector) other;
+private static void checkSameSpace(RealVector a, RealVector b) {
+if (a.space != b.space) {
+throw new IllegalArgumentException(&quot;Vectors must belong to the same space&quot;);
+

@@ -1,0 +1,8 @@
+import org.jfree.chart.JFreeChart;
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.plot.PlotOrientation;
+public class BarChart {
+private JFreeChart jFreeChart;
+
+public BarChart(String[] phrases,NGramStore nGramStore) throws NGramException {
+

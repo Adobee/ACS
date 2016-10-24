@@ -1,0 +1,10 @@
+private Query accept(Query query, QueryVisitor queryVisitor) {
+
+Query returnQuery = query;
+
+if( query instanceof TermQuery ) {
+newQuery.setBoost( query.getBoost() );
+returnQuery = newQuery;
+
+} else if( query instanceof BooleanQuery ) {
+

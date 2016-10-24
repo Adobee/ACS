@@ -1,0 +1,8 @@
+public class Sum{
+public static void main(String[]args){
+double sum = 0;
+for(int i=0; i<1000000; i++){
+double x = Math.random();
+double y = Math.random();
+if(x*x + y*y <= 1){
+

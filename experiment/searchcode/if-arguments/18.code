@@ -1,0 +1,7 @@
+public abstract class FunctionMember implements Member{
+private Argument[] arguments=new Argument[0];
+private boolean _hasNamedArgs;
+
+public void addArgument(Argument argument) {
+if(argument instanceof NamedArgument)_hasNamedArgs=true;
+

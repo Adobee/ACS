@@ -1,0 +1,8 @@
+@Override
+public void addLastItemIfNotExists(ServiceHandle<IMutableOHLCTimeSeriesHost> timeSeriesHostHandle, IOHLCPoint item) {
+((IMutableOHLCTimeSeries) retrieveSeriesInfo(timeSeriesHostHandle).series).addFirstIfNotExists(item);
+}
+
+@Override
+public void insertFromTail(ServiceHandle<IMutableOHLCTimeSeriesHost> timeSeriesHostHandle, IOHLCPoint item) {
+

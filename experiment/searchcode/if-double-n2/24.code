@@ -1,0 +1,13 @@
+public class EulerTransform implements Function<Double, Double> {
+
+double n1 = 0.0;
+double n2 = 0.0;
+double n3 = 0.0;
+
+@Override
+public Double apply(Double t) {
+n1 = n2;
+n2 = n3;
+n3 = t;
+if (n1 == 0.0) {
+

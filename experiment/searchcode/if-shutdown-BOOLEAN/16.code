@@ -1,0 +1,8 @@
+public static synchronized void addShutdownHook(ShutdownPhase _phase,Runnable _r)
+{
+if(!ShutdownManager.onShutdown.containsKey(_phase))
+ShutdownManager.onShutdown.put(_phase, new ArrayList<Runnable>());
+public static void shutdownWithoutConfirmation(boolean _synchronous)
+{
+UILatencyWatchdog.stopWatchdog();
+

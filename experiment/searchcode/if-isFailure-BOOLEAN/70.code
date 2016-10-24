@@ -1,0 +1,7 @@
+List<iPipeline> credentialList = new ArrayList<>();
+
+public Try<Boolean> execute(){
+Try<Boolean> result = new Try.Success<>(true);
+result = credential.handle();
+if(result.isFailure()) return new Try.Failure<>(result.failed().get());
+

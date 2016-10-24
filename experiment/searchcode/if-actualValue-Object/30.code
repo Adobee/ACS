@@ -1,0 +1,15 @@
+this.value = value;
+}
+
+public void check(String body) {
+String actualValue = null;
+
+try {
+
+if (XMLUtil.isXML(body)) {
+actualValue = JSONUtil.get(body, path);
+}
+} catch (Exception e) {
+if (value != actualValue) {
+throw new RuntimeException(&quot;Expected value not found, found:&quot; + actualValue + &quot; , expected:&quot; + value+&quot;\nin:&quot;+body);
+

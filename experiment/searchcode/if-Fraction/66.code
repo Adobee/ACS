@@ -1,0 +1,9 @@
+Fraction h = new Fraction(3,5);
+if (!f.equals(g.multiply(h))) System.out.println(&quot;Multiply failed&quot;);
+
+// test divide
+Fraction dh = new Fraction(3,4);
+if (!df.equals(dg.divide(dh))) System.out.println(&quot;Divide failed&quot;);
+
+// test add
+

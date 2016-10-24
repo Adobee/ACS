@@ -1,0 +1,14 @@
+public double div(double a1, double a2){
+double div;
+div = (int)a1/a2;
+return div;
+}
+
+
+public double mult(double a1, double a2){
+double mult = a1*a2;
+return mult;
+}
+
+public String srl(String a1, int qntde){
+

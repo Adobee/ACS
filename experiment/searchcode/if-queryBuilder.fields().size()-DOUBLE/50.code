@@ -1,0 +1,8 @@
+throw new BridgeError(&quot;Invalid Query: The &#39;Project&#39; structure cannot filter out results, so the query must in the form of &#39;*&#39; or &#39;field=*&#39;&quot;);
+}
+queryBuilder.append(&quot;project&quot;);
+} else if (structure.equals(&quot;Group&quot;)) {
+queryBuilder.append(URLEncoder.encode(wcFreeQuery));
+} else if (structure.equals(&quot;User&quot;)) {
+queryBuilder.append(&quot;user/search?&quot;);
+

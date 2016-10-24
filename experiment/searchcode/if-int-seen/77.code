@@ -1,0 +1,8 @@
+public boolean seen(int stimVal, double threshold, int numPresentations, int x, int y) {
+boolean s;
+if (stimVal == threshold)
+if (falseResponse == -1) return false;
+int t = (int)Math.round(threshold);
+if (t < 0)
+return GaussianSeen(stimVal, threshold, numPresentations, stDevs[0]);
+

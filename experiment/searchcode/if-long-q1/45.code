@@ -1,0 +1,10 @@
+double dot, s1, s2, om, sinom;
+
+dot = x * q1.x + y * q1.y + z * q1.z + w * q1.w;
+
+if (dot < 0) {
+
+if (dot < 0) {
+// negate quaternion
+q1.x = -q1.x;
+

@@ -1,0 +1,4 @@
+public Bullet(Character shooter, double bulletSpeed, double targetX,double targetY, double accelX, double accelY , BufferedImage image)
+public Bullet(Character shooter, double bulletSpeed, double targetX,double targetY, double bulletAccel , BufferedImage image) // use this
+// this will shoot the bullet from shooter to target position with fixed direction acceleration
+

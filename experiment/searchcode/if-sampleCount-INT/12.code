@@ -1,0 +1,8 @@
+public static double getPValue(double controlCount, double sampleCount, double controlTotal, double sampleTotal, double winSize,int chrSize)
+{
+if(sampleCount < 2)
+return 1.0;
+
+double n = sampleCount + controlCount;
+double p = sampleTotal/(sampleTotal+controlTotal);
+

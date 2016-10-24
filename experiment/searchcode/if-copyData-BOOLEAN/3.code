@@ -1,0 +1,12 @@
+public abstract class IdCheckObject<E> extends IdObject<E> implements
+IdCheckable<E> {
+private static final long serialVersionUID = 1L;
+private boolean checked;
+super(id);
+}
+
+@Override
+public void copyData(Idable<E> other) {
+super.copyData(other);
+if (!(other instanceof IdCheckObject<?>))
+

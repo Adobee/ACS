@@ -1,0 +1,9 @@
+probs[wekaClassId] = scores[classId];
+if(Double.compare(normalizationFactor, scores[classId]) > 0){
+normalizationFactor = scores[classId];
+}
+}
+
+if(Double.compare(normalizationFactor, 0.0) == 0){
+int defaultClass = window.getMostFrequentClass();
+

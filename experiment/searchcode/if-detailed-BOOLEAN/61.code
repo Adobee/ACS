@@ -1,0 +1,14 @@
+* @author Iván Castilla Rodríguez
+*/
+public abstract class WFPTestView extends View {
+boolean detailed = true;
+
+public WFPTestView(Simulation simul, String description) {
+super(simul, description);
+this.detailed = detailed;
+}
+
+public void notifyResult(boolean ok) {
+if (!ok)
+System.out.println(&quot;---------- ERRORS!! Please review your model ----------&quot;);
+

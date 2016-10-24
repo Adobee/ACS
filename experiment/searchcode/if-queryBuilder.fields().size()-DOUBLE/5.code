@@ -1,0 +1,12 @@
+for(int i = 0; i != docCount; ++i) {
+if (i % batchSize ==0) {
+putToCache(batch);
+batch.clear();
+}
+Map<String, String> doc = docGen.getDoc(i);
+buf.append(&quot;. Expected result set size &quot; + rs);
+return buf.toString();
+}
+
+public QueryBuilder single(String field) {
+

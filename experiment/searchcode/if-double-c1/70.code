@@ -1,0 +1,10 @@
+public static double getAvgSelfSimilarity(double[][] c1) {
+double disTotal = 0;
+for (int i=0; i<c1.length; i++)
+disTotal = disTotal + getEuclideanDistance(c1[i],c1[j]);
+}
+return (1/disTotal)/Math.pow(c1.length,2);
+}
+
+public static double getAvgSelfSimilarity(double[][] c1, int[] indexes) {
+

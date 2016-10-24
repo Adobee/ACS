@@ -1,0 +1,13 @@
+return list;
+}
+
+/**
+* Method use for save batch details into database.
+*/
+public boolean saveBatch(Batch batch) {
+if (batch != null) {
+hibernateTemplate.saveOrUpdate(batch);
+return true;
+} else {
+return false;
+

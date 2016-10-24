@@ -1,0 +1,9 @@
+*     Red Hat, Inc. - initial API and implementation
+******************************************************************************/
+package org.jboss.tools.hibernate.jpt.ui.internal.mapping.details;
+value = JptUiDetailsMessages.ProviderDefault;
+}
+}
+if (value.startsWith(NONE_KEY)) {
+value = JptCommonUiMessages.NoneSelected;
+

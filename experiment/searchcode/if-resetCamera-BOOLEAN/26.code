@@ -1,0 +1,11 @@
+private Texture texture2;
+private boolean touched;
+private Vector3 touch; // Not Vector2 because camera.unproject need Vector3 :\
+super.resize(width, height);
+resetCamera();
+}
+
+@Override
+public void render(float delta) {
+if (Gdx.input.isTouched()) {
+

@@ -1,0 +1,10 @@
+* Flag indication if the runner was stopped
+*/
+private volatile boolean stopped = false;
+
+/**
+* @see Runner#run(Runnable)
+*/
+public void run(Runnable task) {
+if (stopped) throw new IllegalStateException(&quot;The runner has been stopped&quot;);
+

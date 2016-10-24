@@ -1,0 +1,14 @@
+params.forEach((name, value) -> {
+formBuilder.add(name, value);
+});
+}
+
+Builder builder = new Request.Builder().url(url);
+if (headers != null &amp;&amp; headers.size() > 0) {
+builder.addHeader(name, value);
+});
+}
+
+RequestBody formBody = formBuilder.build();
+Request request = builder.url(url).post(formBody).build();
+

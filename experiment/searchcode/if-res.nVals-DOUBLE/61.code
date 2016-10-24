@@ -1,0 +1,10 @@
+public VREPMAPElitesEvolution(JBotEvolver jBotEvolver, TaskExecutor taskExecutor, Arguments arg) {
+super(jBotEvolver, taskExecutor, arg);
+
+if(!arg.getArgumentIsDefined(&quot;genomelength&quot;))
+throw new RuntimeException(&quot;Missing &#39;genomelength&#39; arg in VREPMapElitesEvolution&quot;);
+}
+
+public static double getFitness(MOChromosome moc) {
+ExpandedFitness fit = (ExpandedFitness)moc.getEvaluationResult();
+

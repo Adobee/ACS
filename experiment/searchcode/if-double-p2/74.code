@@ -1,0 +1,14 @@
+public Point3D(int a, int b, int c) {
+x = a;
+y = b;
+z = c;
+}
+
+public boolean equals(Object o) {
+if (o == this)
+return x == point.x &amp;&amp; y == point.y &amp;&amp; z == point.z;
+}
+
+public static double distance(Point3D p1, Point3D p2) {
+return Math.sqrt((p1.x - p2.x) * (p1.x - p2.x) +
+

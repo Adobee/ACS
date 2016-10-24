@@ -1,0 +1,5 @@
+System.out.println(entityQuadrantPosition.X + &quot; &quot; + entityQuadrantPosition.Z);
+int waterOrFoodInQuadrant = GridSearchFramework.isWaterOrFoodInQuadrant(entityQuadrantPosition, attachedEntity.worldObj);
+PathEntity pathOfQuadrants = QuadrantPathFind.getPath((int) entityQuadrantPosition.X, (int) entityQuadrantPosition.Z, (int) quadrantSearch.X, (int) quadrantSearch.Z, attachedEntity.worldObj);
+if(pathOfQuadrants != null){
+

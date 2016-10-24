@@ -1,0 +1,10 @@
+.emptyList() : new ArrayList<Object>();
+Class<?> type;
+Object value;
+for (Criterion criterion : criteria) {
+if (&quot;node.id&quot;.equals(criterion.getField())) {
+type = clazz.getDeclaredField(criterion.getField()).getType();
+}
+value = criterion.getValue();
+if (Integer.class.equals(type) || Node.class.equals(type)) {
+

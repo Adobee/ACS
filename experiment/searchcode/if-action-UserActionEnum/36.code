@@ -1,0 +1,8 @@
+this.movementController = new MovementController(world, mount);
+}
+
+public void handleInput(UserActionEnum action) {
+if(isMovement(action)) {
+movementController.move(action);
+} else if(action == UserActionEnum.Interact) {
+

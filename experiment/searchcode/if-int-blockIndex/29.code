@@ -1,0 +1,10 @@
+public boolean isInstructionInCache(int pc) throws Exception {
+
+int blockIndex;
+int pcounter = pc;
+int tag;
+
+pcounter = pcounter >> 2;
+blockIndex = pcounter &amp; 0b11;
+tag = pcounter >> 2;
+

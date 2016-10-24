@@ -1,0 +1,10 @@
+return super.sizeOf(key, value);
+}
+
+@Override
+protected void entryRemoved(boolean evicted, String key, StrokeDrawable oldValue, StrokeDrawable newValue){
+super.entryRemoved(evicted, key, oldValue, newValue);
+if(evicted) oldValue.recycle();
+}
+}
+

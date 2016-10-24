@@ -1,0 +1,9 @@
+private Map<String, Client> clientMap;
+private static ClientBo clientBo;
+private static boolean firstUse = false;
+
+private ClientBo() {
+public static ClientBo getInstance(){
+if (!firstUse){
+clientBo = new ClientBo();
+

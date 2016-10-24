@@ -1,0 +1,12 @@
+* This is used when an EntityTransaction is controlling the transaction.
+*/
+protected boolean shouldTerminateTransaction;
+
+/**
+* Used to determine if we should bypass any merge into the cache. This is
+* If parameter value is &#39;true&#39; then the cache(s) are cleared, too.
+*/
+public void clear(boolean shouldClearCache) {
+super.clear(shouldClearCache);
+if (this.cumulativeUOWChangeSet != null) {
+

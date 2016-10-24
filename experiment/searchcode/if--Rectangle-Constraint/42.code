@@ -1,0 +1,9 @@
+import org.eclipse.draw2d.geometry.Rectangle;
+
+public class ConstraintStackLayout extends StackLayout {
+
+private Map<IFigure, Rectangle> constraints = new HashMap<IFigure, Rectangle>();
+super.setConstraint(child, constraint);
+if (constraint == null || !(constraint instanceof Rectangle)) {
+constraints.remove(child);
+

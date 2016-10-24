@@ -1,0 +1,8 @@
+List<Integer> matches = new ArrayList<Integer>();
+int bufferLimit = buffer.limit();
+int d = 0;
+for (int pos = buffer.position(); pos < bufferLimit; pos++) {
+d <<= 1;
+d |= 1;
+d &amp;= this.b[ByteBufferUtils.uByte(buffer.get(pos))];
+

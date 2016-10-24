@@ -1,0 +1,10 @@
+public void handleLine(String line, StreamSource source) {
+
+boolean abort = false;
+
+// TODO: Adapt the abort reasons to avarice (this is the list from PCDB)
+
+if (line.contains(&quot;timeout&quot;)) {
+abort = true;
+fAbortReason = Reason.TIMEOUT;
+

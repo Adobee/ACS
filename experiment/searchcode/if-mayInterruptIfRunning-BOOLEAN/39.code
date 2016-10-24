@@ -1,0 +1,6 @@
+volatile boolean mayInterruptIfRunning;
+
+@Override
+public boolean cancel(boolean mayInterruptIfRunning) {
+if (!cancelled || mayInterruptIfRunning != this.mayInterruptIfRunning) {
+

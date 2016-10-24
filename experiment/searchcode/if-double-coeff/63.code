@@ -1,0 +1,10 @@
+* coeff[1] -> -0.8
+* coeff[2] -> -0.6
+* coeff[3] -> -0.5
+* coeff[4] ->  0.2
+*/
+private double[] coeff = {-1000, -0.8, -0.6, -0.5, 0.2};
+public double valuta(Tavolo tavolo, byte giocatore) {
+if (giocatore == 1)
+return coeff[tavolo.getNumeroPezziBuoni((byte) 1)];
+

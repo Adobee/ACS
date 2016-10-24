@@ -1,0 +1,9 @@
+* SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
+*/
+package uk.org.retep.niosax.internal.core;
+public final <T extends Appendable> T restoreParentAppendable()
+{
+if( appendable != null )
+{
+appendable = appendable.getParent();
+

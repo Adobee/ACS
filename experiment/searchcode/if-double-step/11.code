@@ -1,0 +1,8 @@
+public class Ray {
+protected Map map;
+protected double sin;
+protected double cos;
+protected List<Step> steps;
+protected Step step(double rise, double run, double x, double y, boolean inverted) {
+if (run == 0) return new Step(0, 0, 0, 0, Double.POSITIVE_INFINITY, 0, 0);
+

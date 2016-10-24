@@ -1,0 +1,9 @@
+char[] cs3 = s3.toCharArray();
+if (cs1.length + cs2.length > cs3.length) {
+return false;
+}
+
+boolean[][] dp = new boolean[cs1.length + 1][cs2.length + 1];
+dp[0][0] = true;
+for (int i = 1; i <= cs1.length &amp;&amp; cs1[i - 1] == cs3[i - 1]; ++i) {
+

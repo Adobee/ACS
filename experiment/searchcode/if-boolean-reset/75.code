@@ -1,0 +1,14 @@
+return next;
+}
+
+private boolean callNext(T request){
+if (next != null &amp;&amp; next.handle(request)){
+return true;
+}
+return false;
+}
+
+public boolean handle(T request){
+if (onHandle(request)){
+return true;
+

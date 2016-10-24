@@ -1,0 +1,11 @@
+List<UwDecision> uwDecisionList = this.uwDecisionDao.findByExamplePaging(example, null);
+
+if (uwDecisionList.size() == 0)
+{
+return null;
+}
+
+if (uwDecisionList.size() > 1)
+{
+throw new Exception(&quot;more than 1 UwDecision record found for uwDecision[&quot; + uwDecision + &quot;]&quot;);
+

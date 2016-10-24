@@ -1,0 +1,6 @@
+* @param relativeUrl Url (without host or protocol)
+* @return File instance
+*/
+public static File getDocrootFile( String relativeUrl ) {
+String strippedUrl = relativeUrl.startsWith( &quot;/&quot; ) ? relativeUrl.substring( 1 ) : relativeUrl; // strip leading slash if necessary
+

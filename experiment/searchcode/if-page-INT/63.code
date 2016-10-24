@@ -1,0 +1,13 @@
+package com.amar.db.mongodb.base;
+
+public class Page {
+
+//每页大小
+private int pageSize;
+private int totalCount;
+
+public Page(int pageSize, int pageIndex) {
+super();
+if(pageSize < 0) pageSize = 1;
+this.pageSize = pageSize;
+

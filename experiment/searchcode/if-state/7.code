@@ -1,0 +1,12 @@
+package Puzzle;
+
+public class Move {
+public static State up(State state) {
+if (state.blankIndex > 2)
+return null;
+}
+
+public static State down(State state) {
+if (state.blankIndex < 6)
+return new State(state, state.blankIndex + 3);
+

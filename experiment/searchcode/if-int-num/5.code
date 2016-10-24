@@ -1,0 +1,9 @@
+public class Solution {
+public int numTrees(int n) {
+int[] num = new int[n];
+num[i] = 0;
+int cnt = (i+1)/2;
+
+if( (i+1) % 2 == 1 )
+num[i] += num[cnt - 1] * num[cnt - 1];
+

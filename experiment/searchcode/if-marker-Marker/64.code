@@ -1,0 +1,9 @@
+import com.kingbosky.commons.marker.MarkerHolder;
+import com.kingbosky.commons.util.StringUtil;
+
+public class MarkerRoutingDatasource extends AbstractRoutingDataSource {
+protected Object determineCurrentLookupKey() {
+String marker = markerHolder.getMaker();
+if (logger.isDebugEnabled()) {
+logger.debug(&quot;determine current data source type is &quot; + marker);
+

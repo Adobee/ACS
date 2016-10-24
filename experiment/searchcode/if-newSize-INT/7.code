@@ -1,0 +1,17 @@
+int newSize = 0;
+
+for (int i = 0; i < nums.length; i++) {
+if (nums[i] != val) {
+// remove element if element that&#39;s not the value to be removed is found
+// beyond the last index of the already-updated array
+if (i > newSize) {
+nums[newSize] = nums[i];
+}
+newSize++;
+}
+}
+
+return newSize;
+}
+}
+

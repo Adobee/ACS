@@ -1,0 +1,17 @@
+ListNode node = new ListNode(x);
+node.next = null;
+if (top == null) {
+top = node;
+} else {
+top.next = node;
+}
+}
+
+public void pop() {
+if (top != null) {
+top = top.next;
+}
+}
+
+public int top() {
+

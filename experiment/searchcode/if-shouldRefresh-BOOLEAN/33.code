@@ -1,0 +1,8 @@
+final String name, final boolean forceUpdate) {
+Repository repo = null;
+boolean shouldRefresh = false;
+final File dir = new File(context.getCacheDir(), ROOT_DIR + REPOSITORY_DIR);
+final long elderCheck = d.getTime() - (KEEP_LENGTH);
+if (f.lastModified() < elderCheck) {
+shouldRefresh = true;
+

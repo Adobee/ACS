@@ -1,0 +1,13 @@
+if (x[i - 1] == y[j - 1]) {
+c[i][j] = c[i - 1][j - 1] + costCopy;
+op[i][j] = OpType.COPY;
+}
+
+if ((x[i - 1] != y[j - 1])
+&amp;&amp; (c[i - 1][j - 1] + costReplace < c[i][j])) {
+c[i][j] = c[i - 1][j - 1] + costReplace;
+op[i][j] = OpType.REPLACE;
+}
+
+if (c[i - 1][j] + costDelete < c[i][j]) {
+

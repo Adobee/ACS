@@ -1,0 +1,13 @@
+map = m;
+}
+
+public SysMap() {
+}
+
+public Object get(Object o) {
+Object retval = null;
+if( map != null )
+retval = map.get(o);
+if (retval==null)
+retval = System.getProperty(o+&quot;&quot;);
+

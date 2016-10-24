@@ -1,0 +1,8 @@
+return tresult ;
+} else {
+TaskResult tresult = futureTask.get(waitTime, TimeUnit.MILLISECONDS) ;
+if(tresult.isFinished()) {
+FutureTaskHolder holder  = runningTasks.get(id) ;
+if(holder == null) return null ;
+if(holder.futureTask.isDone() || holder.futureTask.isCancelled()) {
+

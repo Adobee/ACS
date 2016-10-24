@@ -1,0 +1,9 @@
+* @param dy the fine y increment
+*/
+public void translateFine (int dx, int dy)
+{
+int nfx = fx + dx, nfy = fy + dy;
+if (nfx < -128) {
+position(x - 1, y);
+nfx += 256;
+

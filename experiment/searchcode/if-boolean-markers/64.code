@@ -1,0 +1,8 @@
+List<List<LatLng>> holePointList = new ArrayList<List<LatLng>>();
+for (PolygonHoleMarkers hole : holes) {
+if (!hole.isDeleted()) {
+public boolean isValid() {
+boolean valid = markers.isEmpty() || markers.size() >= 3;
+if (valid) {
+for (PolygonHoleMarkers hole : holes) {
+

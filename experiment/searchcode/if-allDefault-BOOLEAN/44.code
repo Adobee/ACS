@@ -1,0 +1,13 @@
+propertyEditor.removeAllListeners();
+}
+}
+
+protected void propertyChanged() {
+boolean allDefault = true;
+for (PropertyEditor propertyEditor : getPropertyEditors()) {
+if (!(propMeta.getDefaultValueObject() == null)) {
+allDefault = false;
+break;
+}
+} else if (!value.equals(propMeta.getDefaultValueObject())) {
+

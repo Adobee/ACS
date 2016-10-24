@@ -1,0 +1,7 @@
+public static boolean test006(int i1, int i2) {
+// Check that expression is not replaced by !getBoolean() || i1 != i2
+if (!(getBoolean() &amp;&amp; i1 == i2)) {
+public static boolean test007(int i1, int i2) {
+// Check that expression is replaced by getBoolean() &amp;&amp; i1 != i2
+if (getBoolean() &amp;&amp; !(i1 == i2)) {
+

@@ -1,0 +1,8 @@
+public static VersionType fromString(String versionType) {
+if (&quot;internal&quot;.equals(versionType)) {
+return INTERNAL;
+} else if (&quot;external&quot;.equals(versionType)) {
+return EXTERNAL;
+}
+throw new ElasticSearchIllegalArgumentException(&quot;No version type match [&quot; + versionType + &quot;]&quot;);
+

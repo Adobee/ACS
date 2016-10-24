@@ -1,0 +1,10 @@
+int month = Integer.parseInt(num.readLine ());
+
+int weeks[][]=new int [5][7];
+int ctr=0;
+
+for (int t = 0; t < 5 ; t++)
+{
+System.out.print (&quot;\n&quot;);
+for (int i=0; i < weeks[t].length ; i++)
+

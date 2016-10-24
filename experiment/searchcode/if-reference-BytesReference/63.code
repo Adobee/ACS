@@ -1,0 +1,13 @@
+import org.elasticsearch.common.HasHeaders;
+import org.elasticsearch.common.bytes.BytesReference;
+import org.elasticsearch.script.Template;
+public interface ShardSearchRequest extends HasContextAndHeaders {
+
+String index();
+
+int shardId();
+
+String[] types();
+
+BytesReference source();
+

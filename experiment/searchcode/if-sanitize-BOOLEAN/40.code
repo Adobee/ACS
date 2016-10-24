@@ -1,0 +1,8 @@
+public class HandlerUtils {
+
+/** Used to sanitize a string to be {@link Uri} safe. */
+private static final Pattern sSanitizePattern = Pattern.compile(&quot;[^a-z0-9-_]&quot;);
+public static String sanitizeId(String input, boolean stripParen) {
+if (input == null) return null;
+if (stripParen) {
+

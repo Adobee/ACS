@@ -1,0 +1,11 @@
+private final SchedulingFactory schedFactory;
+
+private final int populationSize;
+
+private final List<Solution> storage;
+public Population(SchedulingFactory schedFactory, int populationSize) {
+this(schedFactory, populationSize, new Random());
+}
+
+public Population(SchedulingFactory schedFactory, int populationSize, Random random) {
+

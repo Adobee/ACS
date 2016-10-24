@@ -1,0 +1,7 @@
+public void execute(DelegateExecution execution) throws Exception {
+
+Boolean shouldFail = (Boolean) execution.getVariable(&quot;shouldFail&quot;);
+FileValue invoiceDocumentVar  = execution.getVariableTyped(&quot;invoiceDocument&quot;);
+
+if(shouldFail != null &amp;&amp; shouldFail) {
+

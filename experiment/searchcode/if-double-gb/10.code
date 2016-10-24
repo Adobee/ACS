@@ -1,0 +1,12 @@
+private String currentTime;
+private String unit;
+
+private Double mainSpaceSizeGB;
+private Double usedMainSpaceSizeGB;
+private Double otherVersionGB;
+private String fullDate;
+
+public void setGB() {
+
+String unit = this.unit;
+

@@ -1,0 +1,12 @@
+int size = pendingPostPool.size();
+if (size > 0) {
+PendingPost pendingPost = pendingPostPool.remove(size - 1);
+// Don&#39;t let the pool grow indefinitely
+if (pendingPostPool.size() < 10000) {
+pendingPostPool.add(pendingPost);
+}
+}
+}
+
+}
+

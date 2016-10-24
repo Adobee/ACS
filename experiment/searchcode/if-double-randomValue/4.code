@@ -1,0 +1,16 @@
+Random random = new Random();
+
+randomValue = LOWER_RANGE +
+(long)(random.nextDouble()*(UPPER_RANGE - LOWER_RANGE));
+
+if(oldIds.contains(randomValue)) {
+exists = true;
+}
+
+} while(!exists);
+
+return randomValue;
+}
+
+}
+

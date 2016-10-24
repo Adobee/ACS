@@ -1,0 +1,9 @@
+private XYPlot mySimpleXYPlot;
+private DBManager dbManager;
+private TextView txtAccount;
+public SaveApp saveApp;
++ saveApp.getAccountDesc());
+
+// Initialize our XYPlot reference:
+mySimpleXYPlot = (XYPlot) findViewById(R.id.mySimpleXYPlot);
+

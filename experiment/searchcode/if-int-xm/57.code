@@ -1,0 +1,7 @@
+XmlModel clientTransferXm = sysCfgXm.getChild(&quot;ClientTransfer&quot;);
+List<XmlModel> transferXmList = clientTransferXm.getChilds(&quot;Transfer&quot;);
+for(int i=0;i<transferXmList.size();i++)
+String defaultValue = idXm.getAttributeValue(&quot;default&quot;);
+int id = Integer.parseInt(idXm.getText());
+defaultValue = defaultValue==null?&quot;false&quot;:defaultValue;
+

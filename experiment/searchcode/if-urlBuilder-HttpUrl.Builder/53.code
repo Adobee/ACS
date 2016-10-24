@@ -1,0 +1,8 @@
+public void fetchArticle(String query, SortModel sortModel, int offset, final HttpCallback callback) {
+
+HttpUrl.Builder urlBuilder = HttpUrl.parse(NYTIMES_URL).newBuilder();
+urlBuilder.addQueryParameter(NYTIMES_API_KEY, NYTIMES_API_VALUE);
+// Query
+if (!query.isEmpty()) {
+urlBuilder.addQueryParameter(NYTIMES_QUERY_KEY, query);
+

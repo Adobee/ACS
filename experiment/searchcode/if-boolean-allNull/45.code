@@ -1,0 +1,10 @@
+public List<DiscoveredTerm> getOntologyTerms ( String valueLabel, String typeLabel ) throws OntologyDiscoveryException
+{
+if ( this.discoverers == null || this.discoverers.isEmpty () ) return null;
+Set<String> alreadySeenIris = new HashSet<> ();
+
+boolean allNull = true;
+for ( OntologyTermDiscoverer discoverer: this.discoverers )
+{
+List<DiscoveredTerm> thisResults = discoverer.getOntologyTerms ( valueLabel, typeLabel );
+

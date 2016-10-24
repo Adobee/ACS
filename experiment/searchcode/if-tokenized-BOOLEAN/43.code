@@ -1,0 +1,12 @@
+public Token peekToken()
+{
+if(m_ioexn != null)
+return null;
+try
+{
+tokenizedStream.nextToken();
+return null;
+}
+if(tokenizedStream.ttype == StreamTokenizer.TT_EOF)
+return null;
+

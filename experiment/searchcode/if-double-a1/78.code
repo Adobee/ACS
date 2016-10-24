@@ -1,0 +1,11 @@
+public static <T> boolean compareArray(T[] a1, T[] a2){
+if(a1 == null || a2 == null)
+return false;
+if(a1.length != a2.length)
+return false;
+for(int i = 0; i < a1.length; i++){
+public static boolean ArraysMatch(double[] a1, double[] a2) {
+if(a1 == null || a2 == null)
+return false;
+if(a1.length != a2.length)
+

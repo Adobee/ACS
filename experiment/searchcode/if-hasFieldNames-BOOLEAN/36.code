@@ -1,0 +1,15 @@
+fName = name;
+fAliased = aliased;
+fParameters = parameters;
+}
+
+@Override
+public boolean isParameterized() {
+return 49991 + 49831 * fName.hashCode() + 67349 * fAliased.hashCode() + 1433 * fParameters.hashCode();
+}
+
+@Override
+public boolean equals(Object o) {
+if (o instanceof AliasType) {
+AliasType other = (AliasType) o;
+

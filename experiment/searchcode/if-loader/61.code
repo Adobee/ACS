@@ -1,0 +1,13 @@
+public class ValueHolder<T> {
+
+private T value;
+private LazyLoader<T> loader;
+
+
+public ValueHolder(LazyLoader<T> loader) {
+this.loader = loader;
+}
+
+
+public ValueHolder(T value) {
+

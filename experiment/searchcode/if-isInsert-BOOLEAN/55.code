@@ -1,0 +1,10 @@
+public class save_daily_report_text_query extends GeneralQueryFormat {
+
+private boolean isInsert;
+
+@Override
+public boolean hasAccess() {
+public void update(OfficerDailyReportText officerDailyReport, boolean isInsert) {
+this.isInsert = isInsert;
+if (isInsert) {
+

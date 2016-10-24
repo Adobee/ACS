@@ -1,0 +1,9 @@
+c.setConnectTimeout(connectTimeout);
+c.setReadTimeout(readTimeout);
+if (cookiejar != null)
+setCookies(c, cookiejar);
+return c;
+URLConnection c = genericURLConnection(url, cookiejar);
+if (contenttype != null)
+c.setRequestProperty(&quot;Content-Type&quot;, contenttype);
+

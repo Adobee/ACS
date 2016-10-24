@@ -1,0 +1,12 @@
+public class UpdateResult {
+private int affectedRows;
+
+// If is an insert sql, then has gennerateKey
+private ResultSet generatedKey;
+
+public UpdateResult(int affectedRows) {
+this(affectedRows, null);
+}
+
+public UpdateResult(int affectedRows, ResultSet generatedKey) {
+

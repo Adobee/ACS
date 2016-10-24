@@ -1,0 +1,7 @@
+query.setParameter(1, fieldValue);
+List<Account> ret = query.getResultList();
+if (ret == null || ret.size() < 1) {
+StringBuffer sql = new StringBuffer(&quot;select u.* from sys_user AS u where u.available = 1&quot;);
+if (conditions != null) {
+Set<String> fileNames = conditions.keySet();
+

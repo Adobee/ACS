@@ -1,0 +1,15 @@
+public class FzNormalizer {
+private double scale;
+private double min;
+
+public FzNormalizer(double min, double max) {
+if (min < 0) {
+this.min = min;
+}
+
+public double normalize(double v) {
+if (min > 0) {
+if (v < min) {
+return 0;
+} else {
+

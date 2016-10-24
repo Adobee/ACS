@@ -1,0 +1,8 @@
+private final ThreadLocal threadID;
+private long              threadIDSequence;
+private final ThreadIDMap threadIDMap;
+public ThreadID getThreadID() {
+ThreadID rv = (ThreadID) threadID.get();
+if (rv == null) {
+rv = new ThreadID(nextThreadID(), Thread.currentThread().getName());
+

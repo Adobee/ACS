@@ -1,0 +1,6 @@
+public void sort(Type[] array, int count, Comparator<Type> comparator) {
+int increment = count / 3 + 1;
+while ( increment > 1 ) {
+for ( int start = 0; start < increment; start++ ) {
+insertionSort(array, count, start, increment, comparator);
+

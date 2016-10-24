@@ -1,0 +1,9 @@
+int[] c = new int[A.length+1];
+
+for(int i=0; i<A.length; i++) {
+if ((A[i] >= 1) &amp;&amp; (A[i] < A.length+1))
+c[A[i]] = 1;
+}
+int r = 0;
+for(int i=1; i<c.length; i++) {
+

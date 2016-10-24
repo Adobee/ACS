@@ -1,0 +1,8 @@
+protected void loadOSMData(OSMDataReader dataReader, boolean resetCamera) {
+
+LoadOSMThread thread = new LoadOSMThread(dataReader, resetCamera);
+private class LoadOSMThread extends Thread implements ProgressListener {
+
+private final OSMDataReader dataReader;
+private final boolean resetCamera;
+

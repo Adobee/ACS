@@ -1,0 +1,13 @@
+* @return
+*/
+public int nok(int a, int b) {
+return a * (b / nod(a, b));
+}
+
+public int nod(int a, int b) {
+b = input.nextInt();*/
+while (a != b) {
+if (a > b) {
+a = a - b;
+} else {
+

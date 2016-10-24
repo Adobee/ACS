@@ -1,0 +1,8 @@
+return new P(p.x, p.y+(s.y-p.y)*2);
+}
+else{
+double alpha = (s.y-t.y)/(s.x-t.x);
+double beta = s.y-s.x*alpha;
+double x = (2*p.y*alpha-2*alpha*beta+p.x-alpha*alpha*p.x)/(alpha*alpha+1);
+double y = (p.x-x)/alpha+p.y;
+

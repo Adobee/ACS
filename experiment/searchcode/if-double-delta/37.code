@@ -1,0 +1,11 @@
+private Excecao e = new Excecao();
+
+public double calcularDelta(double a, double b, double c){ //b, c, d ...
+
+return (Math.pow(b, 2) - 4*a*c);
+public double[] calcularRaizes(double delta, double b, double a){
+double valores[] = new double[2];
+
+if(delta < 0){
+e.deltaMenorZero(delta);
+

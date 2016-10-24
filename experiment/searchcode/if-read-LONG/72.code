@@ -1,0 +1,11 @@
+Hashtable<Long, String> memory;
+
+public Memory() {
+memory = new Hashtable<Long, String>();
+}
+
+public String read(Long address) {
+String read = memory.get(address);
+if(read == null)
+return &quot;00000000000000000000000000000000&quot;;
+

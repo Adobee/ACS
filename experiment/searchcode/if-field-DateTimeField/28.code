@@ -1,0 +1,10 @@
+public OffsetDateTimeField(DateTimeField dateTimeField, DateTimeFieldType dateTimeFieldType, int i, int i2, int i3) {
+super(dateTimeField, dateTimeFieldType);
+if (i == 0) {
+throw new IllegalArgumentException(&quot;The offset cannot be zero&quot;);
+this.iMin = dateTimeField.getMinimumValue() + i;
+} else {
+this.iMin = i2;
+}
+if (i3 > dateTimeField.getMaximumValue() + i) {
+

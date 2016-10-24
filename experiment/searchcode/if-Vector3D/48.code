@@ -1,0 +1,13 @@
+return x+&quot;,&quot;+y+&quot;,&quot;+z;
+}
+
+@Override
+public boolean equals(Object o)
+{
+if (o == null || (!(o instanceof Vector3D)) )
+return false;
+if (o == this)
+return true;
+Vector3D v = (Vector3D)o;
+return (v.x == x &amp;&amp; v.y == y &amp;&amp; v.z == z);
+

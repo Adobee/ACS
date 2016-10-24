@@ -1,0 +1,6 @@
+List<List<Long>> tokens = gson.fromJson(tokensJson, WowTokensHistoryJson.class).getHistory().getCN();
+if (tokens != null &amp;&amp; tokens.size() != 0) {
+WowToken wowToken = new WowToken();
+wowToken.setBuy(new Long(token.get(1)).intValue());
+wowToken.setUpdated(token.get(0) * 1000);
+

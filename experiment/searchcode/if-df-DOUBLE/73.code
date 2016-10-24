@@ -1,0 +1,10 @@
+public static String setFormatGroupU(double value, int name) {
+DecimalFormat df = null;
+if (name == 4) {
+if (value >= 100.0) {
+df = new DecimalFormat(&quot;0.0&quot;);
+} else if (value >= 10.0) {
+df = new DecimalFormat(&quot;0.00&quot;);
+} else {
+df = new DecimalFormat(&quot;0.000&quot;);
+

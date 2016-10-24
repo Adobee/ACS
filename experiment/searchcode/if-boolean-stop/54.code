@@ -1,0 +1,15 @@
+import lejos.robotics.subsumption.Behavior;
+
+public class Stop implements Behavior {
+
+private Otto o;
+boolean suppressed = false;
+
+public Stop(Otto o) {
+this.o = o;
+}
+
+@Override
+public boolean takeControl() {
+return o.ts.isPressed();
+

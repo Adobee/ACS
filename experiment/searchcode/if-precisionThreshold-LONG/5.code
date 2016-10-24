@@ -1,0 +1,7 @@
+super(in, InternalCardinality.TYPE, ValuesSourceType.ANY);
+if (in.readBoolean()) {
+precisionThreshold = in.readLong();
+out.writeBoolean(hasPrecisionThreshold);
+if (hasPrecisionThreshold) {
+out.writeLong(precisionThreshold);
+

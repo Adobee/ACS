@@ -1,0 +1,16 @@
+Iterator<Integer> iter;
+Integer nextItem = null;
+Boolean isLast = false;
+
+public PeekingIterator(Iterator<Integer> iterator) {
+if (iter.hasNext()) nextItem = iter.next();
+else isLast = true;
+return oldItem;
+}
+
+@Override
+public boolean hasNext() {
+return !isLast;
+}
+}
+

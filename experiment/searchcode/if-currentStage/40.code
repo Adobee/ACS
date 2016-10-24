@@ -1,0 +1,9 @@
+private STAGE_STATUS currentStage = STAGE_STATUS.FETCHED;
+
+public boolean mutex = false;
+
+private Stage() {}
+private static Stage stageInstance;
+public static Stage getInstance() {
+if (stageInstance == null) {
+

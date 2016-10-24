@@ -1,0 +1,13 @@
+private InstrumentationData() {
+
+}
+
+public static InstrumentationData getInstance(long threadID) {
+if(!data.containsKey(threadID)) {
+public static void clearInstance(long threadID) {
+if(data.containsKey(threadID)) {
+data.remove(threadID);
+}
+}
+}
+

@@ -1,0 +1,12 @@
+boolean executed = getEntities().remove(getEntity());
+if (executed) {
+setStatus(&quot;executed&quot;);
+}
+return executed;
+}
+
+public boolean undo() {
+boolean undone = false;
+if (!isExecuted()) {
+String error = &quot;An action must be executed first.&quot;;
+

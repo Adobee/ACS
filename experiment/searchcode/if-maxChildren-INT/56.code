@@ -1,0 +1,13 @@
+* 最多孩子数
+*/
+@Column( name=&quot;MAX_CHILDREN&quot;)
+private Integer maxChildren;
+
+public void preInsert( ){
+* get tree layer
+*/
+@Transient
+public int getLayer( ){
+if( root == null )
+return 0;
+

@@ -1,0 +1,17 @@
+private static final long serialVersionUID = 1L;
+
+private boolean readonly = true;
+
+public ReadonlyTextField(String id)
+{
+super(id);
+}
+
+public ReadonlyTextField(String id, Class<T> type)
+protected void onDisabled(ComponentTag tag)
+{
+if (isReadonly())
+tag.put(&quot;readonly&quot;, &quot;readonly&quot;);
+else
+super.onDisabled(tag);
+

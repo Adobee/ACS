@@ -1,0 +1,6 @@
+public void visit(Metric metric) {
+if (metric instanceof ValueMetric) {
+this.visitValueMetric((ValueMetric) metric);
+} else if (metric instanceof PercentileMetric) {
+this.visitPercentileMetric((PercentileMetric) metric);
+

@@ -1,0 +1,11 @@
+private void buildInsert(ProviderInformation t, StringBuilder clazz) {
+//		//有主键则默认去除
+//		if (!t.getKeyNameMap().isEmpty()) {
+//			String KeyFiledName = t.getKeyNameMap().get(Config.KEY_NAME);
+private void buildDelete(ProviderInformation t, StringBuilder clazz) {
+if (t.getKeyNameMap().isEmpty()) {
+return;
+}
+clazz.append(reulst(1));
+clazz.append(&quot;public String &quot;);
+

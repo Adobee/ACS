@@ -1,0 +1,9 @@
+package com.trypsonite.mareminer;
+
+public class FPSProvider {
+private static long lastMillis = 0;
+
+public static double getFPS() {
+long currentMillis = System.currentTimeMillis();
+long fps = 0;
+

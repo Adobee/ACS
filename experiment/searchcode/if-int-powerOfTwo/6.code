@@ -1,0 +1,9 @@
+/**
+*
+* @author Gong Li <gong_l@worksap.co.jp> on 21/4/2016.
+*/
+public class PowerOfTwo {
+public boolean isPowerOfTwo(int n) {
+if (n == 1) return false;
+int temp = n &amp; (n - 1);
+

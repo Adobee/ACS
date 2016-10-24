@@ -1,0 +1,15 @@
+import java.util.List;
+
+public class MonthCalendar {
+
+private List<Week> weeks = new ArrayList<Week>();
+return !(weeks != null ? !weeks.equals(that.weeks) : that.weeks != null);
+
+}
+
+@Override
+public int hashCode() {
+return weeks != null ? weeks.hashCode() : 0;
+}
+}
+

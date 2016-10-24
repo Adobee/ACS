@@ -1,0 +1,22 @@
+protected int gravity;
+
+/**
+* 规则是否执行
+*/
+protected boolean running;
+
+/**
+* 游戏区
+* 就是游戏的数据结构
+*/
+protected GameObjectController gameArea;
+* 判断是否有活动方块在游戏区
+* @return
+*/
+protected boolean hasShapeInArea() {
+return gameArea.hasShape();
+}
+
+/**
+* 方块碰撞处理
+

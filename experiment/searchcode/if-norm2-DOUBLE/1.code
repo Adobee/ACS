@@ -1,0 +1,9 @@
+private static final long serialVersionUID = 3461032337137035084L;
+
+public DoubleMandelbrotIterator(MathContext context, int maxIterationCount,
+BigDecimal maxNorm2) {
+super(context, maxIterationCount, maxNorm2);
+}
+
+public DoubleMandelbrotIterator(MathContext context, int maxIterationCount,
+

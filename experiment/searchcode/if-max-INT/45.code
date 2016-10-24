@@ -1,0 +1,9 @@
+public class Solution {
+public int maxSubArray(int[] A) {
+if (A.length == 1) {
+return A[0];
+}
+
+int max = A[0], preMax = A[0];
+for (int i = 1; i < A.length; i++) {
+

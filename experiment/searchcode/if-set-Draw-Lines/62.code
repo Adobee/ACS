@@ -1,0 +1,9 @@
+String[] textLines = text.split(&quot;\n&quot;);
+
+if(scroll > textLines.length-14) scroll = textLines.length-14;
+if(scroll < 0) scroll = 0;
+
+drawText = &quot;&quot;;
+
+for(int i = 0; i < Math.min(textLines.length-scroll, 14); i++) {
+

@@ -1,0 +1,6 @@
+public Object convert(Object sourceObject, Void context) {
+if (sourceObject == null)
+return null;
+Converter converter = (Converter) registry.getConverter(sourceObject.getClass());
+if (converter != null) {
+

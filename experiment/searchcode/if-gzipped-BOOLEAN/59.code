@@ -1,0 +1,10 @@
+ByteArrayInputStream inputStream = new ByteArrayInputStream(response.data);
+if (!isGZipped) {
+jsonReader = new InputStreamReader(inputStream);
+} catch (Exception ignored) {
+}
+return jsonReader;
+}
+
+public static boolean isResponseGZipped(NetworkResponse response) {
+

@@ -1,0 +1,9 @@
+* @param object
+* @return
+*/
+public static Date toDate(Object object) {
+if (object == null)
+return null;
+else if (object instanceof Timestamp) {
+return new Date(((Timestamp) object).getTime());
+

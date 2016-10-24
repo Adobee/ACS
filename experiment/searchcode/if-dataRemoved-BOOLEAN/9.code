@@ -1,0 +1,12 @@
+DataOrganizer.database().dataRemoved().addListener(new Listener<Data>() {
+public void fire(Data event) {
+if (result == null) return;
+boolean removed;
+updateData(event.getValue2());
+}
+});
+}
+private void updateData(Data data) {
+if (result == null) return;
+boolean match = isMatching(data);
+

@@ -1,0 +1,10 @@
+public void setResult(QueryResult<LibraryBook> result) {
+
+if (result instanceof KeyedQueryResult) {
+this.keyedResult = (KeyedQueryResult<LibraryBook>) result;
+public boolean isKeyed() {
+return this.keyedResult != null;
+}
+
+public String getKey(int position) {
+

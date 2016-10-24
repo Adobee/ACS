@@ -1,0 +1,7 @@
+public <T> ParamConverter<T> getConverter(final Class<T> rawType, final Type genericType, final Annotation[] annotations) {
+if (LongValue.class.isAssignableFrom(rawType)) {
+return new LongParameterHandler<>(rawType);
+}
+
+if (UuidValue.class.isAssignableFrom(rawType)) {
+

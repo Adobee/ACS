@@ -1,0 +1,9 @@
+/** The kinds of solutions that the algorithm may accept. */
+private AllowedSolution allowed;
+
+/** The <em>Secant</em>-based root-finding method to use. */
+protected BaseSecantSolver(final double absoluteAccuracy, final Method method) {
+super(absoluteAccuracy);
+this.allowed = AllowedSolution.ANY_SIDE;
+this.method = method;
+

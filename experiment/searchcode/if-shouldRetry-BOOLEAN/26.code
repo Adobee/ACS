@@ -1,0 +1,8 @@
+public static HttpURLConnection waitForConnection(HttpURLConnection conn) {
+boolean shouldRetry = true;
+int retries = 0;
+if (status == HttpURLConnection.HTTP_OK) {
+shouldRetry = false;
+} else {
+if (status == HttpURLConnection.HTTP_INTERNAL_ERROR
+

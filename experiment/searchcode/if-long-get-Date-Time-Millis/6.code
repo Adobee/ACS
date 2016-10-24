@@ -1,0 +1,15 @@
+long millis; // epoch milliseconds
+
+public MilliDate(long m) {
+millis = m;
+}
+@Override
+public boolean isBefore(ItemDate d) {
+return sdf.format(new Date(millis));
+}
+@Override
+public long getTimeMillis() {
+return millis;
+}
+}
+

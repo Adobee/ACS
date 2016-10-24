@@ -1,0 +1,9 @@
+private byte[] gzippedBody;
+private byte[] ungzippedBody;
+private int statusCode;
+private boolean storeGzipped;
+* @return true if gzipped, false if null, less than two bytes or not gzipped
+*/
+public static boolean isGzipped(byte[] candidate) {
+if (candidate == null || candidate.length < 2) {
+

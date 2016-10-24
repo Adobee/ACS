@@ -1,0 +1,14 @@
+@XStreamAlias(&quot;IpAddress&quot;)
+private IPv4 ip;
+
+@XStreamAlias(&quot;PrefixLength&quot;)
+private int prefixLength;
+
+
+private VLSM(IPv4 ip,int prefixLength){
+this.ip = ip;
+this.prefixLength = prefixLength;
+}
+
+public static VLSM getVLSM(IPv4 ip,int prefixLength){
+

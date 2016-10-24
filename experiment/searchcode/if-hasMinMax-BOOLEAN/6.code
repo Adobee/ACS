@@ -1,0 +1,13 @@
+if (i.equalsIgnoreCase(&quot;Active&quot;)) {
+if (isBoolean(v)) {
+boolean value = Boolean.parseBoolean(v);
+g.getProficiency(p).setActive(value);
+return;
+}
+}
+
+if (i.equalsIgnoreCase(&quot;Minimum&quot;)) {
+if (isInteger(v)) {
+if (!p.hasMinMax()) {
+new Message(MessageType.WRONG_INPUT, player, p, i, &quot;&quot;, g, GuildsBasic);
+

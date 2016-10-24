@@ -1,0 +1,9 @@
+import org.apache.commons.math3.linear.RealVector;
+
+public class PageRank {
+HashMap<Integer, Long> mappedToReal;
+HashMap<Long, Integer> realToMapped;
+RealMatrix m = modifyP(alpha);
+EigenDecomposition ed = new EigenDecomposition(m, 0);
+RealVector rv = ed.getEigenvector(0);
+

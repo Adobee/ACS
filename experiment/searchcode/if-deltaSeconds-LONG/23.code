@@ -1,0 +1,13 @@
+if (deltaSeconds < 120)
+return &quot;a minute ago&quot;;
+
+if (deltaSeconds < 60*60) {
+long deltaMinutes = deltaSeconds / 60;
+return Math.round(deltaMinutes) + &quot; min. ago&quot;;
+}
+}
+
+long deltaHours = deltaSeconds / (60 * 60);
+
+if (deltaHours < 1.55) {
+

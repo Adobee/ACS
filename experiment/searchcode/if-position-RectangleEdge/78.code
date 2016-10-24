@@ -1,0 +1,7 @@
+public AxisSpace reserveSpace(Graphics2D g2, Plot plot, Rectangle2D plotArea, RectangleEdge edge, AxisSpace space) {
+
+// create a new space object if one wasn&#39;t supplied...
+AxisState state = new AxisState();
+// we call refresh ticks just to get the maximum width or height
+if (RectangleEdge.isTopOrBottom(edge)) {
+

@@ -1,0 +1,12 @@
+* @param windowProportion
+*            window proportion for LOWESS algorithm.
+*/
+public FittingCalculator( double[] xa, double[] ya, double windowProportion )
+fittedValue = new double[xa.length];
+
+int window = (int) Math.round( xa.length * windowProportion );
+
+if ( window > 1 )
+{
+double[] windowXa = new double[window];
+

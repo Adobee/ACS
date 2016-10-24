@@ -1,0 +1,10 @@
+public double getProbability(int waitTime, int walkTime, int lateTime, int bestArrival, int worstArrival) {
+if (lateTime > walkTime) {
+return 0;
+}
+double ww = walkTime + waitTime;
+
+double t1 = bestArrival % ww;
+double p1, p2, p3;
+if (t1 < waitTime) {
+

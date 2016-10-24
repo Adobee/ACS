@@ -1,0 +1,14 @@
+protected abstract BaseIndexedVector replaceIndex(int[] newIndices);
+
+@Override
+public boolean isView() {
+return true;
+}
+
+@Override
+public void validate() {
+if (length!=indexes.length) throw new VectorzException(&quot;Wrong index length&quot;);
+super.validate();
+}
+}
+

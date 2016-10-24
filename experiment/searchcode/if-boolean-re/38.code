@@ -1,0 +1,18 @@
+package niagara.logical.path;
+
+public class Plus implements RE {
+RE re;
+
+public Plus(RE re) {
+return re.equals(plus.re);
+}
+
+public int hashCode() {
+return re.hashCode() ^ 1;
+}
+
+public boolean generatesDuplicates() {
+return true;
+}
+}
+

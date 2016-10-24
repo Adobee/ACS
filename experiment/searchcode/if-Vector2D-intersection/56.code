@@ -1,0 +1,12 @@
+return end;
+}
+
+public List<Vector2d> getRegionIntersection(Region r) {
+List<Vector2d> intersections = new ArrayList<>();
+for (int i = 0; i < r.getPolygon().length; i++) {
+Vector2d pStart = r.getPolygon()[i];
+
+Vector2d pEnd = null;
+
+if (i + 1 < r.getPolygon().length - 1) {
+

@@ -1,0 +1,8 @@
+// no-op
+}
+
+public static <T> Class<T> type(Type type) {
+if (type instanceof Class<?>) {
+return (Class<T>) type;
+} else if (type instanceof ParameterizedType &amp;&amp; ((ParameterizedType) type).getRawType() instanceof Class<?>) {
+

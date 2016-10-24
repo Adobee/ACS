@@ -1,0 +1,8 @@
+public class PowerOfTwo {
+public boolean isPowerOf2(int n) {
+if (n <= 0) {
+return false;
+}
+while (n >= 2) {
+if (n % 2 == 1) {
+

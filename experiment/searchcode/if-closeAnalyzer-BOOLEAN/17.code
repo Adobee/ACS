@@ -1,0 +1,16 @@
+Analyzer analyzer = null;
+boolean closeAnalyzer = false;
+String field = null;
+if (request.field() != null) {
+IOUtils.closeWhileHandlingException(stream);
+}
+}
+
+if (closeAnalyzer) {
+analyzer.close();
+}
+
+return new AnalyzeResponse(tokens);
+}
+}
+

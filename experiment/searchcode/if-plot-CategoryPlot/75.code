@@ -1,0 +1,7 @@
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.data.category.DefaultCategoryDataset;
+import org.quartz.JobExecutionContext;
+DemoRectangleBarChart3DPanel barChartPanel = DemoChartContext.getRectangleBarChart3DPanel();
+
+CategoryPlot verticalCategoryPlot = barChartPanel.getVerticalBarChartPanel().getCategoryPlot();
+

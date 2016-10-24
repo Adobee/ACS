@@ -1,0 +1,10 @@
+package sqlsugg.config;
+
+public class Config {
+public Domain domain;
+public static String dbUser = &quot;sqlsugg&quot;;
+public static String stopfile = &quot;etc/stopwords.txt&quot;;
+public Config (String domainName) {
+if (domainName.equals(&quot;dblp&quot;)) {
+domain = new Domain (&quot;dblp&quot;,
+

@@ -1,0 +1,6 @@
+protected void init(OutputStream outStream, ByteOrder order) {
+if (order == ByteOrder.LITTLE_ENDIAN) {
+dataOutput = new LEDataOutputStream(outStream);
+} else {
+dataOutput = new DataOutputStream(outStream);
+

@@ -1,0 +1,6 @@
+for (int weekOfYear=14; weekOfYear<=18; weekOfYear++) {
+for (int dayOfWeek=0; dayOfWeek<7; dayOfWeek++) {
+int dayOfMonth = (weekOfYear*7 + dayOfWeek) - 98;
+if (dayOfMonth >= 1 &amp;&amp; dayOfMonth <= 30)
+t.setVariable(&quot;dayOfMonth&quot;, Integer.toString(dayOfMonth));
+

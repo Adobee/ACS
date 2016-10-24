@@ -1,0 +1,7 @@
+return new FloatField(fieldName, number.floatValue(), store);
+else if (value instanceof Double)
+return new DoubleField(fieldName, number.doubleValue(), store);
+final BooleanQuery.Builder queryBuilder = new BooleanQuery.Builder();
+if (index.getFields().size() > 0) {
+for (String idx : index.getFields()) {
+

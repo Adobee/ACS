@@ -1,0 +1,9 @@
+double p0 = Math.exp(mu) / (1.0 + Math.exp(mu));
+double out = 0.0;
+if (allele) {
+out = p1 * probLong + p0 * (1.0 - probLong);
+private double firstDerivFMu (boolean allele, double mu, double beta, double probLong) {
+double out = 0.0;
+if (allele) {
+out = p1FDMu (mu, beta) * probLong + p0FDMu (mu, beta) * (1.0 - probLong);
+

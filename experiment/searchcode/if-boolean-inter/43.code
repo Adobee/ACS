@@ -1,0 +1,8 @@
+* @see <a href=&quot;https://leetcode.com/problems/interleaving-string/&quot;>Interleaving String</a>
+*/
+
+public class Solution {
+public boolean isInterleave(String s1, String s2, String s3) {
+// s3.substring(0, i + j) is iterleaving string of s1.substring(0, i), and s2.substring(0, j).
+boolean isInter[][] = new boolean[s1.length() + 1][s2.length() + 1];
+

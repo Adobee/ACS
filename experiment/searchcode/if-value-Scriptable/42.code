@@ -1,0 +1,11 @@
+*      org.mozilla.javascript.Scriptable, java.lang.Object)
+*/
+public void put(int index, Scriptable start, Object value) {
+public boolean hasInstance(Scriptable value) {
+
+Scriptable proto = value.getPrototype();
+
+while (proto != null) {
+
+if (proto.equals(this)) {
+

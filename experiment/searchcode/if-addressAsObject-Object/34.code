@@ -1,0 +1,6 @@
+oldValue = VM_Magic.prepareAddress(VM_Magic.addressAsObject(addr), Offset.zero());
+} while (!VM_Magic.attemptAddress(VM_Magic.addressAsObject(addr), Offset.zero(), oldValue, oldValue.add(increment)));
+oldValue = VM_Magic.prepareAddress(VM_Magic.addressAsObject(addr), Offset.zero());
+newValue = oldValue.sub(decrement);
+if (newValue.LT(bound)) return Address.max();
+

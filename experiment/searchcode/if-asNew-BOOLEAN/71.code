@@ -1,0 +1,8 @@
+* node type. See {@link #decodeStatement(Node, String, Location, boolean)}
+* for more details on what correct inputs look like.
+public static Loop decodeStatement(Node parent, String statement, Location location, boolean require)
+{
+Loop node = null;
+
+if ((node = Repeat.decodeStatement(parent, statement, location, require)) != null)
+

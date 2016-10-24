@@ -1,0 +1,9 @@
+* Created by nasimsalmani on 2/5/16.
+*/
+public class PaintPanel extends JPanel {
+private int pointCount = 0;
+private Point points[] = new Point[10000];
+public void mouseDragged(MouseEvent event) {
+if (pointCount < points.length) {
+points[pointCount] = event.getPoint();
+

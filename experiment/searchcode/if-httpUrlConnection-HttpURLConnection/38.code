@@ -1,0 +1,7 @@
+URL url = new URL(path);
+if (url != null) {
+HttpURLConnection httpURLConnection = (HttpURLConnection) url.openConnection();
+int response_code = httpURLConnection.getResponseCode();
+
+if (response_code == 200) {
+

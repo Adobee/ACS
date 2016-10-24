@@ -1,0 +1,10 @@
+private double mutationRate;  // from 0 to 1
+
+private ArrayList<Ship> ships;
+private int populationSize;
+
+public IslandGA(int populationSize)
+{
+ships = new ArrayList<Ship>();
+this.populationSize = populationSize;
+

@@ -1,0 +1,11 @@
+int nStart = 0;
+int nEnd = 0;
+String line = &quot;&quot;;
+
+while (line != null) {
+line = in.readLine();
+if (line != null) {
+nEnd = line.lastIndexOf(&quot;#/cryptstring#&quot;);
+if (nStart != -1 &amp; nEnd > nStart + 14) {
+EncryptedString = line.substring(nStart + 13, nEnd);
+

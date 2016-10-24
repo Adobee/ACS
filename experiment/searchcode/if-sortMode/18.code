@@ -1,0 +1,13 @@
+package com.hat.impl;
+
+
+import com.hat.bean.SortMode;
+
+import java.util.Comparator;
+
+public class PinyinCompartor implements Comparator<SortMode> {
+public int compare(SortMode lhs, SortMode rhs) {
+//这里主要是来对Listview里面的数据根据ABCDEFG...来排序
+if(rhs.getSortLetters().equals(&quot;#&quot;)){
+return -1;
+

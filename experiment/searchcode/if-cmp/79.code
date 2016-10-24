@@ -1,0 +1,16 @@
+* Defines match for a constant not equal comparison.
+*/
+
+public class IfUneq extends IfMatch
+{
+public IfUneq()
+{
+super(&quot;ifne&quot;);
+}
+
+protected boolean performCmp(float cmp)
+{
+return cmp==LT||cmp==GT;
+}
+}
+

@@ -1,0 +1,14 @@
+long number = n;
+
+
+while (factor <= n) {
+if (n % factor == 0) {
+if (checkPrime(factor) &amp;&amp; largestPrime < factor)
+factor++;
+}
+factor++;
+}
+if (largestPrime == 1)
+return number;
+return largestPrime;
+

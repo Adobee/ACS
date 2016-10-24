@@ -1,0 +1,9 @@
+Fraction nextFraction = getNextFraction(n, 1);
+Fraction res = null;
+if (nextFraction != null) {
+res = k.add(nextFraction);
+public static Fraction getNextFraction(int n, int i) {
+Fraction k = new Fraction(0, 1);
+if (i < n) {
+int an = getDenom(i+1); // proved
+

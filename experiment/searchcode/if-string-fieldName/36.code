@@ -1,0 +1,7 @@
+String fieldName = null;
+if (accessorName.startsWith(&quot;get&quot;)) {
+fieldName = accessorName.substring(3);
+static String mutatorMethodNameToFieldName(String methodName) {
+String fieldName = null;
+if (methodName.startsWith(&quot;set&quot;)) {
+

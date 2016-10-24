@@ -1,0 +1,9 @@
+public boolean encounter (Character p1, Character p2) {
+boolean playmore = true;
+while (true) {
+playmore =  p1.encounter(p2);
+if (!playmore) {
+p1.changeEP(p2.getEp());
+p1.levelup();
+return playmore;
+

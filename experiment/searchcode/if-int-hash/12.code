@@ -1,0 +1,16 @@
+import java.util.Arrays;
+
+/**
+* @author Olivier
+*
+*/
+public class HashWrapper {
+
+private byte[] 	hash;
+private int		hash_code;
+public HashWrapper(byte[] _hash, int offset,int length)
+{
+hash = new byte[length];
+
+System.arraycopy(_hash,offset,hash,0,length);
+

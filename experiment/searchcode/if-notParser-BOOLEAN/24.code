@@ -1,0 +1,7 @@
+registerQueryTypeParser(new OrParser<O>());
+registerQueryTypeParser(new NotParser<O>());
+registerQueryTypeParser(new EqualParser<O>());
+QueryTypeParser<O> queryTypeParser = queryTypeParsers.get(queryType);
+if (queryTypeParser == null) {
+throw new IllegalStateException(&quot;No parser registered for query type: &quot; + queryType);
+

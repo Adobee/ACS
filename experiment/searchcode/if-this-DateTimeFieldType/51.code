@@ -1,0 +1,11 @@
+protected static boolean hasField(ReadablePartial base, DateTimeFieldType field)
+{
+if (base == null) {
+return false;
+return base.isSupported(field);
+}
+}
+
+protected static Partial setField(Partial base, DateTimeFieldType field, int value) {
+if (base == null) {
+

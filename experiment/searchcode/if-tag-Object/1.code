@@ -1,0 +1,13 @@
+public int id;
+/** 分组的组号 */
+public String tag;
+
+public static Tag parse(JSONObject jsonObject) {
+if (null == jsonObject) {
+return null;
+}
+
+Tag tag = new Tag();
+tag.id = jsonObject.getIntValue(&quot;id&quot;, 0);
+tag.tag = jsonObject.getString(&quot;tag&quot;, &quot;&quot;);
+

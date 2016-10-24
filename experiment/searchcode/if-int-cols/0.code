@@ -1,0 +1,7 @@
+int rows[] = new int[m+1];
+int cols[] = new int[n+1];
+//base case
+if(m == 1 &amp;&amp; n == 1){return 1;}
+for(int i = 0;i <= m;i++){rows[i] = i==2?1:0;}
+for(int j = 0;j <= n;j++){cols[j] = j==2?1:0;}
+

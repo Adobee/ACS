@@ -1,0 +1,6 @@
+int maxStart = Math.max(0, minStart) + between(0, 400);
+int minEnd = maxStart + between(0, 400);
+int maxEnd = minEnd + between(0, 400);
+assertThat(bounds.endOffset(), greaterThanOrEqualTo(minEnd));
+if (segmenter.acceptable(maxStart, minEnd)) {
+

@@ -1,0 +1,9 @@
+* @author rshamsutdinov
+* @version 1.0
+*/
+public class ExceptionUtils {
+
+public static Throwable getLastCause(Throwable throwable) {
+while (throwable.getCause() != null) {
+throwable = throwable.getCause();
+

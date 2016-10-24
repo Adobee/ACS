@@ -1,0 +1,14 @@
+
+public class Matematica {
+
+public static double pi(int n){
+
+double piValue = 0.0;
+int denominador = 1;
+
+for (int i=0; i<n; i++){
+
+if(i%2 == 0){
+
+piValue += (double)1/denominador;
+

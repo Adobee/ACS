@@ -1,0 +1,10 @@
+private List<Category> categories;
+private boolean isSingle;
+private Listener listener;
+
+public static CategoriesDialog newInstance() {
+super.onCreate(savedInstanceState);
+
+if (getArguments() != null) {
+isSingle = getArguments().getBoolean(&quot;isSingle&quot;);
+

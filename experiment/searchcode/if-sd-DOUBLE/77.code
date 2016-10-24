@@ -1,0 +1,13 @@
+public Unit(double w, double dt, double K, double sd) {
+init(w, dt, K);
+this.w = naturalWave(sd);
+}
+
+protected void init(double w, double dt, double K) {
+this.phase = prm;
+}
+
+private double naturalWave(double sd) {
+Random r = new Random();
+double res = r.nextDouble();
+

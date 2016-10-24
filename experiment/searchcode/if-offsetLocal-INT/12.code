@@ -1,0 +1,7 @@
+return false;
+}
+// get the offset at instantLocal (first estimate)
+int offsetLocal = timeZone.getOffset(instantLocal);
+// adjust instantLocal using the estimate and recalc the offset
+int offset = timeZone.getOffset(instantLocal - offsetLocal);
+

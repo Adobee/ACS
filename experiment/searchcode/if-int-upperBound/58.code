@@ -1,0 +1,10 @@
+private final int upperBound;
+
+public IntInterval(int lowerBound, int upperBound) {
+this.lowerBound = lowerBound;
+this.upperBound = upperBound;
+}
+
+public int getLowerBound() {
+return this.lowerBound;
+

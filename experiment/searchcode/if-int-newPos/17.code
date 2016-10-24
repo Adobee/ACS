@@ -1,0 +1,10 @@
+public List<Position> getNextPositions(Position initPos, GameState state) {
+char col;
+int row;
+List<Position> positions = new ArrayList<Position>();
+Position newPos;
+positions.add(newPos);
+if( state.getPieceAt(newPos) != null)
+break;
+newPos = new Position(col, ++row);
+

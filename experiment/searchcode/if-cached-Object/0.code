@@ -1,0 +1,8 @@
+public SoftReferenceMapCache(Map<Object, SoftReferenceCachedObject> map) {
+this.map = map;
+if(log.isDebugEnabled()) {
+log.debug(&quot;new cache based on &quot; + map.getClass().getName());
+public Object get(Object key) {
+SoftReferenceCachedObject cachedObject = map.get(key);
+if(cachedObject != null) {
+

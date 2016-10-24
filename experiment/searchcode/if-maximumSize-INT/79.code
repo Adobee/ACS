@@ -1,0 +1,10 @@
+public synchronized void put(KeyType key, ValueType value) {
+if (key == null) {
+throw new IllegalArgumentException(&quot;Cache entry key cannot be null&quot;);
+class LRUMap extends LinkedHashMap<KeyType, CacheEntry<KeyType, ValueType>> {
+
+private int maximumSize;
+
+LRUMap(int maximumSize) {
+this.maximumSize = maximumSize;
+

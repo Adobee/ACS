@@ -1,0 +1,8 @@
+public static double max(double[] x, boolean ignoreNaN) {
+int size = x.length;
+if(size == 0)
+for(int i=1; i<size; i++) {
+double v = x[i];
+if(Double.isNaN(v)) {
+if(!ignoreNaN) return Double.NaN;
+

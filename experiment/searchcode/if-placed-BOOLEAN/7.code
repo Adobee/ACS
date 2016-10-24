@@ -1,0 +1,8 @@
+private String savePlacedStudent(@ModelAttribute(&quot;AddPlacedStudent&quot;) AddPlacedStudent addPlacedStudent,
+ModelMap model) {
+boolean status = true;
+status = placedStudentservice.savePlacedStudent(addPlacedStudent);
+if (status) {
+model.addAttribute(&quot;message&quot;, IConstant.PLACED_SUCCESS_MESSAGE);
+} else {
+

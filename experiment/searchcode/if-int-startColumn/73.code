@@ -1,0 +1,9 @@
+public void objQueen() {
+}
+
+public boolean legalMove(int startRow, int startColumn, int desRow, int desColumn, int[][] playerMatrix) {
+
+boolean axis = true;
+
+if (startRow == desRow ^ startColumn == desColumn) {
+

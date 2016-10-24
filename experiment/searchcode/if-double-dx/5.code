@@ -1,0 +1,12 @@
+* Created by alexey on 30/09/15.
+*/
+public class Silhuette {
+
+Double Dx, Dy;
+
+
+public void   silhuette(String x, String y, Double  R) throws IOException {
+
+Dx = Double.valueOf(x);
+Dy = Double.valueOf(y);
+

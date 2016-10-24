@@ -1,0 +1,9 @@
+package math;
+
+public class Sort {
+
+public void quickSort(int data[], int low, int high) {// 递归
+if (low < high) {
+int q = partition(data, low, high);
+quickSort(data, q + 1, high);
+

@@ -1,0 +1,10 @@
+package com.incesoft.tools.excel;
+
+import java.io.File;
+
+import com.incesoft.tools.excel.support.XLSReaderSupport;
+public static ReaderSupport newInstance(int type, File f) {
+ReaderSupport support = null;
+if (type == TYPE_XLSX)
+support = new XLSXReaderSupport();
+

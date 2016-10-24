@@ -1,0 +1,10 @@
+Point[] points = new Point[]{new Point(point1.getX(), point1.getY()), new Point(point2.getX(), point2.getY())};
+int shiftX = 0;
+int shiftY = 0;
+
+if (points[0].getX() < 0){
+points[1].setX(points[1].getX() + shiftX);
+}
+if (points[0].getY() < 0){
+shiftY = Math.abs(points[0].getY());
+

@@ -1,0 +1,13 @@
+private int		maxDenominator;
+private int		maxNumerator;
+
+public Fraction(double input)
+{
+this(input, 255, 255);
+}
+
+public Fraction(int numerator, int denominator, int maxNumerator,
+int maxDenominator)
+{
+this.negative = Math.signum(denominator) != Math.signum(numerator);
+

@@ -1,0 +1,9 @@
+public static void addCookie(HttpServletRequest request, HttpServletResponse response, String name) {
+String encodedName = Base64Encryption.encode(name);
+return name;
+}
+
+private static String getCookie(Cookie[] cookie) {
+String name = null;
+if (cookie != null) {
+

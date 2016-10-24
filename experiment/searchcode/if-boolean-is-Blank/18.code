@@ -1,0 +1,14 @@
+this.afterBlank = afterBlank;
+}
+
+@Override
+public boolean isCorrect() {
+return false;
+}
+
+protected void formatQuestion(String q) {
+int indexAfterBlank = blank+SEPARATOR.length();
+if (blank > 0) {
+beforeBlank = q.substring(0, blank);
+afterBlank = q.substring(indexAfterBlank);
+

@@ -1,0 +1,7 @@
+public DirectoryReader getQaIndexReader(String path) throws CorruptIndexException, IOException{
+if(qaReader==null){
+}else{
+DirectoryReader dr = DirectoryReader.openIfChanged(qaReader);
+if(dr!=null){
+qaReader.close();
+

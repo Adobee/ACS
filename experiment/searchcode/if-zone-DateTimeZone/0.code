@@ -1,0 +1,10 @@
+package org.sfm.utils.conv.joda;
+
+import org.joda.time.DateTimeZone;
+import org.joda.time.LocalDateTime;
+public Date convert(LocalDateTime in) throws Exception {
+if (in == null) return null;
+return in.toDate(dateTimeZone.toTimeZone());
+}
+}
+

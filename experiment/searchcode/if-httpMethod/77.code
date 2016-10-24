@@ -1,0 +1,7 @@
+String httpMethod = getFor(method, GET.class, HttpMethod.GET);
+if (httpMethod==null){
+httpMethod = getFor(method, POST.class, HttpMethod.POST);
+}
+if (httpMethod==null){
+httpMethod = getFor(method, PUT.class, HttpMethod.PUT);
+

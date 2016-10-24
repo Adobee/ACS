@@ -1,0 +1,16 @@
+public ParentLookupContextSelector(Element element) {
+setElement(element);
+}
+
+public void setElement(Element element) {
+Element element = element();
+Element parent = element.parent();
+if(parent != null) {
+return parent.lookupContext(element);
+} else {
+return null;
+}
+}
+
+}
+

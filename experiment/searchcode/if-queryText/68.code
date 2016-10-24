@@ -1,0 +1,11 @@
+*          - List of QueryText objects
+*/
+public PathQueryNode(List<QueryText> pathElements) {
+this.values = pathElements;
+if (pathElements.size() <= 1) {
+PathQueryNode clone = (PathQueryNode) super.cloneTree();
+
+// copy children
+if (this.values != null) {
+List<QueryText> localValues = new ArrayList<QueryText>();
+

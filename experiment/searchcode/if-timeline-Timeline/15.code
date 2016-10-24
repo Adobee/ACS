@@ -1,0 +1,7 @@
+TimelineCallback callback = createTimelineCallback(id, DisposeMode.DONE_REVERSE);
+if (callback != null) {
+timeline.addCallback(callback);
+protected void endTimeline(Comparable<T> id) {
+if (timelineMap.get(id) != null) {
+timelineMap.get(id).end();
+

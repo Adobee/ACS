@@ -1,0 +1,11 @@
+return path;
+}
+
+protected ConfigNodePath subPath(int toRemove) {
+int periodCount = 0;
+if (Tokens.isUnquotedText(tokensCopy.get(i)) &amp;&amp;
+tokensCopy.get(i).tokenText().equals(&quot;.&quot;))
+periodCount++;
+
+if (periodCount == toRemove) {
+

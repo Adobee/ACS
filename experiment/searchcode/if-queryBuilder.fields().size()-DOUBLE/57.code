@@ -1,0 +1,13 @@
+if (rows == null || rows.size() == 0) {
+return;
+}
+
+Iterator<Entry<String, JsonNode>> rowIterator = rows.fields();
+ResultSet resultSet = session.execute(select);
+
+// Single key
+if (gets.isSingleKey()) {
+
+List<Row> rows = resultSet.all();
+if (rows.size() == 0) {
+

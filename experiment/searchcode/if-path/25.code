@@ -1,0 +1,5 @@
+String path = PathUtil.class.getProtectionDomain().getCodeSource().toString();
+if (path.indexOf(&quot;WEB-INF&quot;)>=0) {
+path = path.substring(0,path.lastIndexOf(&quot;WEB-INF&quot;)+7)+File.separator+&quot;classes&quot;+File.separator;
+} else if (path.indexOf(&quot;bin&quot;)>=0) {
+

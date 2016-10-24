@@ -1,0 +1,9 @@
+private static List<FilterPredicate> unwrap(FilterPredicate filter, List<FilterPredicate> filterList) {
+if (filter == null) {
+return filterList;
+}
+if (filter instanceof Operators.And) {
+filterList = unwrap(((Operators.And) filter).getLeft(), filterList);
+filterList = unwrap(((Operators.And) filter).getRight(), filterList);
+} else if (filter instanceof Operators.Or) {
+

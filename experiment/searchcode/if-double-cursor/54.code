@@ -1,0 +1,9 @@
+private InsideDoubleQuote() { }
+
+
+ReducedModelState update(TokenList.Iterator copyCursor) {
+if (copyCursor.atEnd()) {
+return STUTTER;
+}
+copyCursor._splitCurrentIfCommentBlock(true,false);
+

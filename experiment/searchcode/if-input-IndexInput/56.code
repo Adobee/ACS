@@ -1,0 +1,12 @@
+public void sensorChanged(SensorChangeEvent sensorChangeEvent)
+{
+try
+{
+int indexInput = sensorChangeEvent.getIndex();
+if(indexInput<IFK.ifk_analog_Count)
+synchronized(this.analog_Input)
+{
+this.analog_Input[indexInput] = value;
+}
+if(indexInput==0) //pressure
+

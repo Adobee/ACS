@@ -1,0 +1,11 @@
+opResult = opResult &amp;&amp; new Boolean((String) op.getResult()).booleanValue();
+}
+if(opResult &amp;&amp; !isIgnored) decision = INCLUDE_POLICY;
+* @param bIsIgnored the isIgnored to set
+*/
+public void setIsIgnored(boolean bIsIgnored) {
+this.isIgnored = bIsIgnored;
+}
+
+/** if isIgnored is true and op resulte is true don&#39;t select the policy.   */
+

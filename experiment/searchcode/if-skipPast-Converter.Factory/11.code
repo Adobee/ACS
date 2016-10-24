@@ -1,0 +1,5 @@
+private final List<XmlAdapter.Factory> factories;
+private final List<TypeConverter.Factory> typeConverterFactories;
+private final ThreadLocal<List<DeferredAdapter<?>>> reentrantCalls = new ThreadLocal<>();
+public <T> TypeConverter<T> nextConverter(TypeConverter.Factory skipPast, Type type, Set<? extends Annotation> annotations) {
+

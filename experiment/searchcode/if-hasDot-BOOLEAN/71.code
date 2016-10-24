@@ -1,0 +1,13 @@
+public static boolean isNumber(String s){
+s = s.trim();
+if(s.length() == 0) return false;
+boolean hasDot = false;
+boolean preNum = false;
+if(i==0 &amp;&amp; (s.charAt(0) == &#39;+&#39; || s.charAt(0) == &#39;-&#39;))
+continue;
+char c = s.charAt(i);
+if(c == &#39;.&#39;){
+if(hasDot) return false;
+hasDot = true;
+if(!preNum) return false;
+

@@ -1,0 +1,12 @@
+/** The y Position. */
+private double y;
+
+/** The z Position. */
+private double z;
+
+/** The direction. */
+VirtualPoint other = (VirtualPoint) obj;
+if (direction != other.direction)
+return false;
+if (Double.doubleToLongBits(x) != Double.doubleToLongBits(other.x))
+

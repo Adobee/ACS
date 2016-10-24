@@ -1,0 +1,11 @@
+servletLoaded = checkModule(&quot;servlet&quot;);
+uploadLoaded = checkModule(&quot;upload&quot;);
+vtorLoaded = checkModule(&quot;vtor&quot;);
+}
+
+/**
+* Checks if Jodd module is loaded.
+*/
+private static boolean checkModule(String moduleName) {
+ClassLoader classLoader = Jodd.class.getClassLoader();
+

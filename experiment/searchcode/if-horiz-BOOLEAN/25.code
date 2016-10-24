@@ -1,0 +1,6 @@
+for(int i = -horiz, j = -vert, k = -diag; i<= horiz + vert + diag; i++, j++ , k++){
+if(  i<=horiz)deltas.add(Arrays.asList(i, 0));
+deltas.add(Arrays.asList(k,-k));
+}
+if( !(i<=horiz) &amp;&amp; !(j<=vert) &amp;&amp; !(k <= diag))  break;
+

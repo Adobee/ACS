@@ -1,0 +1,11 @@
+p.intersects(planetModel, rightPlane, notablePoints, planePoints, bounds, leftPlane);
+}
+
+@Override
+public Bounds getBounds(Bounds bounds) {
+if (bounds == null)
+return OVERLAPS;
+
+if (path.intersects(leftPlane, planePoints, rightPlane) ||
+path.intersects(rightPlane, planePoints, leftPlane)) {
+

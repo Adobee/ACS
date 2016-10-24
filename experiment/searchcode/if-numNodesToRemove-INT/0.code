@@ -1,0 +1,7 @@
+AbstractGraphTest.validateGraph(graph);
+
+Collections.shuffle(nodeList, gen);
+int numNodesToRemove = gen.nextInt(NUM_NODES);
+for (int i = 0; i < numNodesToRemove; ++i) {
+assertThat(graph.removeNode(nodeList.get(i))).isTrue();
+

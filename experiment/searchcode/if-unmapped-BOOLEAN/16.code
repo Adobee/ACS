@@ -1,0 +1,12 @@
+public void setUnmapped(Unmapped unmapped) {
+this.unmapped = unmapped;
+}
+
+@Override
+public boolean equals(Object obj) {
+if(null == obj || obj.getClass() != Root.class ) {
+return false;
+}
+if(!equals(unmapped, test.getUnmapped())) {
+return false;
+

@@ -1,0 +1,9 @@
+String[] nSizes=reader.readLine().split(&quot; &quot;, nTestCases);
+for(int n=0;n!=nTestCases;n++){
+long nSize=Long.valueOf(nSizes[n].trim());
+long s=nSize+1;
+if((s%4)==0){
+nSteps/=4;
+s/=4;
+}else if((s%2)==0){
+

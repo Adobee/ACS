@@ -1,0 +1,8 @@
+private CacheDirectives() {}
+
+public static CacheDirective MAX_AGE(long deltaSeconds) {
+return new akka.http.scaladsl.model.headers.CacheDirectives.max$minusage(deltaSeconds);
+return new akka.http.scaladsl.model.headers.CacheDirectives.max$minusstale(OptionConverters.toScala(Optional.empty()));
+}
+public static CacheDirective MAX_STALE(long deltaSeconds) {
+

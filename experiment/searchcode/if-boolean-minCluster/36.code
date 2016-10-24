@@ -1,0 +1,8 @@
+public ClusterSet(ArrayList clusters, int numberOfClusters, int numberOfRepInCluster, double shrinkFactor, HashMap dataPointMap, boolean clusterMerge) {
+cc = new CompareCluster();
+heap = new PriorityQueue(1000,cc);
+kdtree = new KDTree(2);
+int pointIndex = 0;
+
+if(clusterMerge) {
+

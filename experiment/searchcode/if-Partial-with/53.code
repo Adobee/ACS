@@ -1,0 +1,8 @@
+public PartialInjectionBuilder<T> with(String name, Object value) {
+params.put(name, value);
+return this;
+}
+
+public PartialInjectionBuilder<T> with(String name, int value) {
+return with(name, (Object)value);
+

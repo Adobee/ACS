@@ -1,0 +1,10 @@
+BodyRenderer chrono;
+boolean chronoIsPaused;
+long startTime;
+long pausedTime;
+Object lockHUD;
+public void updateChrono(double posX, long timeInMillis) {
+
+if(chrono != null &amp;&amp; !chronoIsPaused) {
+chrono.removeAllFixtures();
+

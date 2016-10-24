@@ -1,0 +1,8 @@
+// ChartContext.createDatasets() will still catch the visibility and avoid processing the datastreams for series that aren&#39;t visible
+SeriesKey sk = seriesKey(sd);
+if (series2ds.get(sk) == null) {
+addDataset(sk, prod.createDataset(ci, sd));
+private boolean isDefaultRenderType(String r) {
+if (r != null) {
+return r.equals(defaultRenderType);
+

@@ -1,0 +1,15 @@
+private Nod fDrept;
+private double x;
+
+public Nod getFStang() {
+return fStang;
+}
+public void setFStang(Nod stang) {
+public void setFDrept(Nod drept) {
+fDrept = drept;
+}
+public double getX() {
+return x;
+}
+public void setX(double x) {
+

@@ -1,0 +1,12 @@
+* @author Unreal
+*/
+public class WebFilter implements Filter {
+private String  encoding;
+private boolean gzip;
+private boolean noCache;
+response.setHeader(&quot;Pragma&quot;, &quot;no-cache&quot;);
+response.setDateHeader(&quot;Expires&quot;, 0);
+}
+if (gzip) {
+String acceptEncodings = request.getHeader(&quot;Accept-Encoding&quot;);
+

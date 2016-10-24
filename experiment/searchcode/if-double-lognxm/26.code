@@ -1,0 +1,8 @@
+final double logm = Math.log(denominatorDegreesOfFreedom);
+final double lognxm = Math.log(numeratorDegreesOfFreedom * x + denominatorDegreesOfFreedom);
+public double cumulativeProbability(double x) throws MathException {
+double ret;
+if (x <= 0.0) {
+ret = 0.0;
+} else {
+

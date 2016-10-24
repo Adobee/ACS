@@ -1,0 +1,10 @@
+Vector3d ray;// = new Vector3d();
+ray = camera.getTapRay(event.getX(), event.getY());
+
+int i = getTapedPadNum(ray);
+if(!pads.get(i).isFlipping())pads.get(i).Rotate(180, 1);
+return true;
+}
+
+private int getTapedPadNum(Vector3d ray) {
+

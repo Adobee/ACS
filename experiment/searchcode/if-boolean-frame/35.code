@@ -1,0 +1,8 @@
+private Frame makeFrame(int[] rolls, int frameIndex, int frameNumber) {
+Frame frame;
+
+if(isStrike(rolls, frameIndex)) {
+frame = new Strike(frameNumber, frameIndex);
+} else if (isSpare(rolls, frameIndex)) {
+frame = new Spare(frameNumber, frameIndex);
+

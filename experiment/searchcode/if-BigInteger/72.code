@@ -1,0 +1,13 @@
+import java.util.*;
+import java.math.*;
+
+class Main{
+static void mul(BigInteger[] x,BigInteger[] y){
+y[2]=BigInteger.ONE;
+y[3]=BigInteger.ZERO;
+
+int N=cin.nextInt();
+N=(N+3)/2*2;
+for(;N>0;N>>=1){
+if((N&amp;1)>0)mul(x,y);
+

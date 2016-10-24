@@ -1,0 +1,4 @@
+// due to user data saved as byte so we can not read data (they return < 0) so we reinit these values
+if (this.durability_max < 0) this.durability_max = (short)Misc.PARSE_LONG(Server.s_globalDB[DatabaseID.SHEET_MACHINE][this.floor][DatabaseID.MACHINE_DURABILITY]);
+if (this.durability_cur < 0) this.durability_cur = this.durability_max;
+

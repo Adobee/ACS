@@ -1,0 +1,9 @@
+protected void appendParams(StringBuilder str, boolean hasContentsBefore) {
+if (hasContentsBefore) {
+str.append(&quot;, &quot;);
+}
+final boolean hasData = (0L != samples);
+if (hasData) {
+str.append(&quot;min=&quot;).append(minimum);
+str.append(&quot;, max=&quot;).append(maximum);
+

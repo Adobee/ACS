@@ -1,0 +1,6 @@
+public IntervalPeriodIterator(@NotNull ReadablePeriod period, Interval baseInterval) {
+this.period = period;
+// Chronology accepts null periods, we must not do so or this iterator is non-terminating
+if (period == null) {
+throw new IllegalArgumentException(&quot;Period cannot be null&quot;);
+

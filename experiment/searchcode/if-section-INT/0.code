@@ -1,0 +1,14 @@
+section.setSectionName(sectionName);
+
+return section;
+}
+
+@Override
+public int separateFrom(NaverSection previous) {
+
+if (sectionId == null || sectionId.length() != 3) return -1;
+char firstCurrent = this.sectionId.charAt(0);
+char firstPrevious = previous.sectionId.charAt(0);
+
+if (firstPrevious > &#39;1&#39; &amp;&amp; firstCurrent == firstPrevious) return -1;
+

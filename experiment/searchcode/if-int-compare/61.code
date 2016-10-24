@@ -1,0 +1,10 @@
+public class CompareCache extends GenericCache<CompareCache.CompareKey, CompareCache.CompareValue> {
+private static final int MAX_UNACCESSED_TIME_MS = 1000 * 60 * 30; // 30 minutes
+
+public static class CompareKey extends GenericCacheKey {
+if (getClass() != obj.getClass())
+return false;
+CompareKey other = (CompareKey) obj;
+if (roid1 != other.roid1)
+return false;
+

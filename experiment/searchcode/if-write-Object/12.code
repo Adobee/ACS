@@ -1,0 +1,8 @@
+private final boolean usesWriteObjectMethod;
+
+public FastObjectOutputStream( OutputStream outputStream, boolean usesWriteObjectMethod )
+@Override protected void writeClassDescriptor( ObjectStreamClass objectStreamClass )
+throws IOException
+{
+if( usesWriteObjectMethod )
+

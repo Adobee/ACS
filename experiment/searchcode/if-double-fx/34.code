@@ -1,0 +1,16 @@
+return a / b;
+}
+
+public double Pot(double a, double b){
+if (b==0){
+return 1.0;
+}else{
+return Math.pow(a, b);
+}
+}
+
+public double Raiz(double a, double b){
+double resp = 1.0;
+double fx = 0;
+double fx1 = 0;
+

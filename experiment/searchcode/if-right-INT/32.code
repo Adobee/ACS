@@ -1,0 +1,8 @@
+int pivot = num[end];
+int right = end - 1;
+for (int i = start; i <= right; i++) {
+if (num[i] > pivot) {
+int temp = num[right];
+num[right--] = num[i];
+num[i--] = temp;
+

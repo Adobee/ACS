@@ -1,0 +1,9 @@
+value = obj;
+}
+
+public final boolean equals(Object obj)
+{
+if (obj instanceof IDKey)
+{
+if (id == ((IDKey) (obj = (IDKey)obj)).id &amp;&amp; value == ((IDKey) (obj)).value)
+

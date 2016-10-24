@@ -1,0 +1,12 @@
+private MessageObject<?> popMsgOf(boolean host){
+MessageObject<?> msg = null;
+if(host){
+msg = msgFromHost;
+msgFromHost = null;
+return true;
+}
+
+private void sendMsgFrom(boolean host, MessageObject<?> msg){
+if(host) msgFromHost = msg;
+else 	 msgFromClient = msg;
+

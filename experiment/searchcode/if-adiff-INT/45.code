@@ -1,0 +1,12 @@
+public FixedGaussianCrossoverFinder(AnalyzedMethodNode alphaMethod, AnalyzedMethodNode betaMethod,
+CompatibleCrossover xo, MersenneTwisterFast random, int maxSize) {
+super(alphaMethod, betaMethod, xo, random, maxSize);
+float aDiff = Math.abs(aList.get(0).size() - target);
+
+if (aDiff < diff) {
+list = aList;
+diff = aDiff;
+}
+else
+break;
+

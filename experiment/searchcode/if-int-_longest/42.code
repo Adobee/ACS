@@ -1,0 +1,7 @@
+/* 18:48 */     int _longest = 0;
+/* 19:49 */     if (lookup != null) {
+/* 20:50 */       for (CharSequence[] seq : lookup)
+/* 23:52 */         int sz = seq[0].length();
+/* 24:53 */         if (sz < _shortest) {
+/* 25:54 */           _shortest = sz;
+

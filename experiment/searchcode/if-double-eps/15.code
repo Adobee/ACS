@@ -1,0 +1,11 @@
+double tf = tfin;
+double tr = trin;
+double eps = 1.e-6;
+if (tr < eps) {
+tr = eps;
+}
+if (tf < tr + eps) {
+tf = tr + eps;
+}
+double tmax = Math.log (tf/tr) / (1./tr - 1./tf);
+

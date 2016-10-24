@@ -1,0 +1,9 @@
+public class RpcTypeMap extends RpcTypeBase {
+private RpcTypeBase keyType;
+private RpcTypeBase valueType;
+
+public RpcTypeMap(RpcTypeBase keyType, RpcTypeBase valueType) {
+public void visit(TypeVisitor typeVisitor) {
+if (typeVisitor.visitMap(this, keyType, valueType)) {
+keyType.visit(typeVisitor);
+

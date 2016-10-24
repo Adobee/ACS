@@ -1,0 +1,7 @@
+boundaryMaxScan(in.readOptionalVInt());
+if (in.readBoolean()) {
+boundaryChars(in.readString().toCharArray());
+out.writeBoolean(hasBounaryChars);
+if (hasBounaryChars) {
+out.writeString(String.valueOf(boundaryChars));
+

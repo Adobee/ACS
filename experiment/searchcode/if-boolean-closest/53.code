@@ -1,0 +1,7 @@
+m.handleShot(new Shot(target, this, &quot;Laser&quot;));
+} else {
+Ship closestEnemy = getClosestEnemy(m);
+if(closestEnemy != null){
+if(getDistanceEdges(closestEnemy) < range){
+m.handleShot(new Shot(closestEnemy, this, &quot;Laser&quot;));
+

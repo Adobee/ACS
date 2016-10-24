@@ -1,0 +1,7 @@
+protected List tokenize(char[] chars, int offset, int count) {
+if (chars == null || count == 0) {
+return Collections.EMPTY_LIST;
+private boolean isQuote(char[] chars, int pos, int len, int quoteStart, int quoteLen) {
+for (int i = 0; i < quoteLen; i++) {
+if ((pos + i) >= len || chars[pos + i] != chars[quoteStart + i]) {
+

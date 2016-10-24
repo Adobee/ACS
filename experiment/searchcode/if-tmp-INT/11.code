@@ -1,0 +1,12 @@
+int j = i;
+int tmp = 0;
+while(j/10 != 0){
+if(j%10 != 0){
+if(tmp == 0){
+tmp = j%10;
+}else{
+if(tmp<10){
+tmp = (j%10)*10+tmp;
+}else if(tmp<100){
+tmp = (j%10)*100+tmp;
+

@@ -1,0 +1,8 @@
+* @throws IllegalArgumentException if no converter available for {@code type}.
+*/
+public <T> Converter<T, RequestBody> nextRequestBodyConverter(Converter.Factory skipPast,
+Type type, Annotation[] parameterAnnotations, Annotation[] methodAnnotations) {
+Converter<?, RequestBody> converter =
+factory.requestBodyConverter(type, parameterAnnotations, methodAnnotations, this);
+if (converter != null) {
+

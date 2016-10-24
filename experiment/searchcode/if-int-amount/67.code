@@ -1,0 +1,14 @@
+private int amountToPay;
+private int paidAmount;
+
+public Payment(int amountToPay) {
+paidAmount = 0;
+this.amountToPay = amountToPay;
+}
+
+public int getPaidAmount() {
+return paidAmount;
+}
+
+public int getRemainedAmount() {
+

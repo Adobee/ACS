@@ -1,0 +1,17 @@
+package fr.umlv.lastproject.smart.form;
+
+
+public enum FieldType {
+
+TEXT(0), NUMERIC(1), BOOLEAN(2), LIST(3), PICTURE(4), HEIGHT(5);
+public static FieldType getFromId(int id) {
+for (FieldType fieldType : values()) {
+if (fieldType.dbId == id) {
+return fieldType;
+}
+}
+
+return null;
+}
+}
+

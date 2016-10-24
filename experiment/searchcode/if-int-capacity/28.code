@@ -1,0 +1,11 @@
+package com.vanchu.libs.kvDb;
+
+public class KvDbCfg {
+
+public static final int CAPACITY_NOT_LIMIT		= -1;
+* 设置db容量，无限制请用宏 CAPACITY_NOT_LIMIT
+* @param capacity
+*/
+public KvDbCfg setCapacity(int capacity) {
+if(CAPACITY_NOT_LIMIT != capacity &amp;&amp; capacity <= 0) {
+

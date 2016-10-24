@@ -1,0 +1,7 @@
+public static <A, B, C> void memoize(Map<A, Map<B, C>> abcMap, A a, B b, C c) {
+Map<B, C> bcMap = abcMap.get(a);
+if (bcMap == null) {
+public static <A, B, C> C get(Map<A, Map<B, C>> abcMap, A a, B b, C defaultC) {
+Map<B, C> bcMap = abcMap.get(a);
+if (bcMap != null) {
+

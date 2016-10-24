@@ -1,0 +1,11 @@
+// index of first line is 0
+private int myOffset1;
+private int myOffset2;
+private final int myUpToDateOffset1;
+private final int myUpToDateOffset2;
+public static Range createOn(@NotNull Diff.Change change, int shift, int upToDateShift) {
+byte type = getChangeTypeFrom(change);
+
+int offset1 = shift + change.line1;
+int offset2 = offset1 + change.inserted;
+

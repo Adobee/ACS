@@ -1,0 +1,10 @@
+import java.io.ObjectOutputStream;
+
+import flight.net.syn.Sync;
+import flight.net.syn.SyncParser;
+
+public class AddSyncMessage extends SyncMessage {
+public boolean equals(Object obj) {
+if (getClass() == obj.getClass() &amp;&amp; super.equals(obj)) {
+return sync.equals(((AddSyncMessage) obj).sync);
+

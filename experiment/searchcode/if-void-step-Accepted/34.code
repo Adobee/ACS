@@ -1,0 +1,9 @@
+public void beforeDeciding(StepScope stepScope) {
+acceptedList = new ArrayList<MoveScope>(); // TODO use size of moveList in decider
+return topList;
+}
+
+protected void sortAcceptedList() {
+if (!listSorted) {
+Collections.sort(acceptedList, acceptionComparator);
+

@@ -1,0 +1,10 @@
+public class Solution {
+public int maxArea(int[] height) {
+if (height == null) {
+return 0;
+}
+
+int max = 0;
+int i = 0;
+int j = height.length -1;
+

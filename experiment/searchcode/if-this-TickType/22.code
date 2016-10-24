@@ -1,0 +1,13 @@
+private SessionFactory sessionFactory;
+
+public ticktypeService() {
+try{
+this.sessionFactory = HibernateUtil.getSessionFactory();
+throw new ExceptionInInitializerError(ex);
+}
+}
+
+public void addEntity(ticktype ticktype) {
+if (ticktype != null) {
+Session session = sessionFactory.openSession();
+

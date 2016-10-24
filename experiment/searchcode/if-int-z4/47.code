@@ -1,0 +1,10 @@
+int z2;
+int z3;
+int z4;
+int z5;
+
+ShortBuffer dataptr = data.duplicate();
+int z1, z2, z3, z4, z5;
+int d0, d1, d2, d3, d4, d5, d6, d7;
+ShortBuffer dataptr = data.duplicate();
+

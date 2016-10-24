@@ -1,0 +1,10 @@
+// from Chebyshev fitting formula for erf(z) from Numerical Recipes, 6.2
+public static double erf(double z) {
+double t = 1.0 / (1.0 + 0.5 * Math.abs(z));
+
+// use Horner&#39;s method
+return 1.0-ErrorFunction.erf(z);
+}
+
+public static double erf(double p0, double p1, double p2, double p3,double x){
+

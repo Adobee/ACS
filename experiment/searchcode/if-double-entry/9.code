@@ -1,0 +1,9 @@
+private Vector cdfYAxis;
+private double width;
+
+public EmpiricalDistribution() {
+entryStorage = new Vector();
+}
+
+public boolean addEntry(double value, int frequency) {
+

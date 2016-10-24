@@ -1,0 +1,11 @@
+protected BoundingBoxTrackingLogic bbtl;
+protected Rectangle modelBounds = null;
+protected ShrinkUpdateThread updateThread = null;
+updateThread = new ShrinkUpdateThread();
+updateThread.start();
+recompute();
+}
+
+public void destroy(){
+if(updateThread != null){
+

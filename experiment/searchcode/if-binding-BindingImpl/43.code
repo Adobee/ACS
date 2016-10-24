@@ -1,0 +1,9 @@
+import com.google.inject.spi.InstanceBinding;
+
+public abstract class BindingImpl<T> implements Binding<T> {
+
+private final InjectorImpl injector;
+private volatile Provider<T> provider;
+
+public BindingImpl(InjectorImpl injector, Key<T> key, Object source,
+

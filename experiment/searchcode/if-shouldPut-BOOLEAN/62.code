@@ -1,0 +1,6 @@
+private void assertCached(boolean shouldPut, int responseCode) throws Exception {
+server = new MockWebServer();
+CacheResponse cached = cache.get(url.toURI(), &quot;GET&quot;,
+Collections.<String, List<String>>emptyMap());
+if (shouldPut) {
+

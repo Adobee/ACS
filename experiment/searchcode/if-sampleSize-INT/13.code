@@ -1,0 +1,9 @@
+public void add(T element) {
+seen++;
+if (seen <= sampleSize) {
+sample.add(element);
+} else if (r.nextInt(seen) < sampleSize) {
+sample.add(item);
+} else if (r.nextInt(seen) < sampleSize) { // element kept with p=1/seen
+// remove a random element
+

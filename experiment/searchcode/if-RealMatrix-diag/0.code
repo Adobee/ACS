@@ -1,0 +1,9 @@
+package jml.optimization;
+
+import static jml.matlab.Matlab.diag;
+import static jml.matlab.Matlab.disp;
+PhaseIResult phaseIResult = phaseI(A, b, B, d);
+if (phaseIResult.feasible) {
+fprintf(&quot;Phase II:\n\n&quot;);
+RealMatrix x0 = phaseIResult.optimizer;
+

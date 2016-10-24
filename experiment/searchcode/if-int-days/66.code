@@ -1,0 +1,7 @@
+//timeSlot determines the time slot that an exam goes into based on it&#39;s start time
+//and days that it meets.
+public int timeSlot(){
+String sTime = startTime;
+if(sTime.contains(&quot;1300&quot;) || sTime.contains(&quot;1325&quot;)){
+if(days.equals(&quot;M&quot;)||days.equals(&quot;W&quot;)||days.equals(&quot;F&quot;)||days.equals(&quot;MTWRF&quot;)||
+

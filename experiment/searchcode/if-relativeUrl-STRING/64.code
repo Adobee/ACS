@@ -1,0 +1,10 @@
+private Client client;
+
+WeatherClient() {
+client = Client.create();
+}
+
+public String getDocument(String relativeUrl) {
+ClientResponse response = webResource.path(relativeUrl).accept(&quot;application/json&quot;).get(ClientResponse.class);
+if (response.getStatus() != 200) {
+

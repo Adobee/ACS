@@ -1,0 +1,11 @@
+Map<String, Map<String, Object>> byIdCache = iByLocaleCache.get(locale);
+
+if (byIdCache == null)
+{
+iByLocaleCache.put(locale, byIdCache = createCache());
+Map<String, Object> byNameKeyCache = byIdCache.get(id);
+
+if (byNameKeyCache == null)
+{
+byIdCache.put(id, byNameKeyCache = createCache());
+

@@ -1,0 +1,8 @@
+LengthConstraintType that = (LengthConstraintType) obj;
+if (!this.name.equals(that.toString())) {
+return false;
+* @throws ObjectStreamException if there is a problem.
+*/
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(LengthConstraintType.NONE)) {
+

@@ -1,0 +1,11 @@
+package properties;
+
+import properties.visitor.DictionaryPropertiesVisitor;
+import properties.visitor.PropertiesElement;
+public Path path;
+public boolean saveDocuments;
+
+@Override
+public void accept(Visitor visitor) {
+if (visitor instanceof DictionaryPropertiesVisitor) {
+

@@ -1,0 +1,8 @@
+public class SocketWriteHandler extends SocketHandler{
+private  int BLOCK = 4096;
+private  ByteBuffer sendbuffer = ByteBuffer.allocate(BLOCK);
+// TODO Auto-generated method stub
+if (readyKeyOps == SelectionKey.OP_WRITE)
+{
+log(&quot;Server : Writable.&quot;);
+

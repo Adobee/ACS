@@ -1,0 +1,10 @@
+_right.insert( obj );
+}
+}
+}
+
+HeapObject find( long address ) {
+if (address < _heapObject.startAddr()) {
+return (_left == null ? null : _left.find( address ));
+} else if (address >= _heapObject.endAddr()) {
+

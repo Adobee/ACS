@@ -1,0 +1,8 @@
+static  int selectkth(int[] a, int start, int end, int k) {
+if(start == end)
+return a[start];
+int q = partition(a,start,end,a[end]);
+int p = q-start+1;
+if(k == p)
+return a[q];
+

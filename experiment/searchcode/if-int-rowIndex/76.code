@@ -1,0 +1,9 @@
+public class Solution {
+
+public static List<Integer> getRow(int rowIndex) {
+List<Integer> result = new ArrayList<Integer>();
+if(rowIndex < 0)
+return result;
+result.add(1);
+if(rowIndex == 0)
+

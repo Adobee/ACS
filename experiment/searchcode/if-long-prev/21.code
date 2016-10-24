@@ -1,0 +1,15 @@
+long result = 0;
+
+if ( n == 1 )
+result += f1;
+
+if ( n == 2 )
+result += f2;
+
+long prevFA = f1;
+long prevFB = f2;
+
+if ( n > 2 ) {
+
+for ( long i = 3; i <= n; ) {
+

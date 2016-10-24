@@ -1,0 +1,11 @@
+import com.squareup.okhttp.ResponseBody;
+
+import java.io.IOException;
+
+import okio.Buffer;
+import okio.BufferedSource;
+import okio.ForwardingSource;
+public class ProgressResponseBody extends ResponseBody {
+//实际的待包装响应体
+private final ResponseBody responseBody;
+

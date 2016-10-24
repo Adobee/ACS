@@ -1,0 +1,15 @@
+private Individual[] ruleSet;
+private int fitness;
+private boolean fitnessChanged;
+
+public RuleSet() {
+
+}
+
+public RuleSet(Individual[] rules) {
+this.ruleSet = new Individual[ruleCount];
+int i = 0;
+int ruleSetCount = 0;
+
+while (i != rules.length) {
+

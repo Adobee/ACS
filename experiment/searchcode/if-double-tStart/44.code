@@ -1,0 +1,9 @@
+Point subjDir = line.direction();
+double tStart = 0;
+double tEnd = 1.0;
+for (Line edge: poly.edgesClockwise())
+switch (MathUtil.sign(edge.normal().dot(subjDir)))
+{
+case -1:
+if (t > tStart){
+

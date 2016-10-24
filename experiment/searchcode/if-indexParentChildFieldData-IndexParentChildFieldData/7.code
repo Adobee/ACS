@@ -1,0 +1,6 @@
+import org.elasticsearch.index.fielddata.IndexParentChildFieldData;
+import org.elasticsearch.index.fielddata.plain.ParentChildIndexFieldData;
+// See TopChildrenQuery#rewrite
+public Query rewrite(IndexReader reader) throws IOException {
+if (rewrittenParentQuery == null) {
+

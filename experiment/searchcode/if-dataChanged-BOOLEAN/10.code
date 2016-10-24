@@ -1,0 +1,11 @@
+public void setWeatherData(WeatherData weatherData){
+if(this.weatherData != weatherData ){
+dataChanged = true;
+}
+this.weatherData = weatherData;
+}
+
+public void refreshViews(){
+if(dataChanged){
+handler.post(new Runnable() {
+

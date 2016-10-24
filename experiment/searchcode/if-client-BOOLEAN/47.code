@@ -1,0 +1,19 @@
+public boolean validateEmailAndPas(){
+
+if( client!=null){
+//邮箱
+if(ValidateUtil.validateEmail(client.getEmail())){
+//密码,6-15非空字符
+
+if(ValidateUtil.validatePassword(client.getPassword())){
+
+return true;
+}
+}
+}
+
+return false;
+}
+
+}
+

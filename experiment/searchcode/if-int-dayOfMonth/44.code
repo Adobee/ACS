@@ -1,0 +1,11 @@
+public class GameDate {
+int year;
+int dayOfYear;
+String month;
+int dayOfMonth;
+dayOfMonth = dayOfYear;
+}
+if(dayOfYear >= 32 &amp;&amp; dayOfYear <= 59) {
+month = &quot;Feb&quot;;
+dayOfMonth = dayOfYear - 31;
+

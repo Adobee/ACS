@@ -1,0 +1,9 @@
+BaseEntity entity = queryBuilder.getEntity();
+if (entity != null) {
+queryBuilder.sql.append(&quot;update &quot;);
+queryBuilder.sql.append(entity.getDatabase()
+int index = 0;
+if (size > 0) {
+queryBuilder.sql.append(&quot; set &quot;);
+for (String c : fields.keySet()) {
+

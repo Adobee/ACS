@@ -1,0 +1,11 @@
+public class WorkLoggerMock implements WorkLogger {
+
+private boolean workLogged = false;
+private boolean toFail = false;
+
+@Override
+public void logWork() {
+
+if (toFail){
+throw new RuntimeException(&quot;Any exception will do.&quot;);
+

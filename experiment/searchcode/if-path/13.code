@@ -1,0 +1,12 @@
+public static String fixPath(String path) {
+if (path == null) {
+return &quot;/&quot;;
+}
+
+if (!path.startsWith(&quot;/&quot;)) {
+path = &quot;/&quot; + path;
+}
+
+if (path.length() > 1 &amp;&amp; path.endsWith(&quot;/&quot;)) {
+path = path.substring(0, path.length() - 1);
+

@@ -1,0 +1,9 @@
+public double[] getTextureAngles(DiffrDataFile datafile, double[] tilting_angles,
+double[] sampleAngles, double twotheta) {
+double[] newtilting_angles = new double[4];
+newtilting_angles[3] = tilting_angles[3];
+
+double theta_detector = getThetaDetector(datafile, twotheta);
+
+double newTwoTheta = theta_detector; //180.0 - theta_detector;
+

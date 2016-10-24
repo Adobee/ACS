@@ -1,0 +1,14 @@
+private List<String> contributors = new ArrayList<String>();
+
+public ThirdPartyProduct() {
+super();
+}
+
+public String getDetailPageUrl() {
+return ToStringBuilder.reflectionToString(this);
+}
+
+@Transient
+public List<String> getContributors() {
+return contributors;
+

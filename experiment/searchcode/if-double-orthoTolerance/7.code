@@ -1,0 +1,5 @@
+* @see gdsc.smlm.fitting.FunctionSolver#fit(int, double[], double[], double[], double[], double[], double)
+final double parRelativeTolerance = 1e-10;
+final double orthoTolerance = 1e-10;
+final double threshold = Precision.SAFE_MIN;
+

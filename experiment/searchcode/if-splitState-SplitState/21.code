@@ -1,0 +1,14 @@
+this.runningState = 0;
+this.splitState = 10;
+}
+
+public void split() {
+if (this.runningState != 1) {
+this.stopTime = System.nanoTime();
+this.splitState = 11;
+}
+
+public void unsplit() {
+if (this.splitState != 11) {
+throw new IllegalStateException(&quot;Stopwatch has not been split. &quot;);
+

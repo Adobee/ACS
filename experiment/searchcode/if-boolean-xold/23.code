@@ -1,0 +1,13 @@
+public class ParticleSprite extends Creature
+{
+
+public float xOld, yOld, x, y, xa, ya;
+
+public int xPic, yPic;
+public int wPic = 8;
+public void render(Graphics og, float alpha)
+{
+if (!visible) return;
+
+int xPixel = (int)(xOld+(x-xOld)*alpha)-xPicO;
+

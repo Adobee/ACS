@@ -1,0 +1,12 @@
+// because we are going to do left shift
+int powerOfTwo = 2;
+int previous = 1;
+
+if(num==0) {
+result[0] = 0;
+return result;
+// because we are going to do left shift
+for(int i=2; i<=num; i++) {
+if(i==powerOfTwo) {
+result[i] = 1;
+

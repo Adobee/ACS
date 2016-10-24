@@ -1,0 +1,10 @@
+private final IManagedResource resource;
+
+
+public ResourceRegion(IManagedResource resource, int offset, int length) {
+super();
+if(offset < 0 || length < 0) {
+public boolean contains(IResourceRegion other) {
+if(resource.equals(other.getResource())) {
+return offset <= other.getOffset() &amp;&amp; offset + length >= other.getOffset() + other.getLength();
+

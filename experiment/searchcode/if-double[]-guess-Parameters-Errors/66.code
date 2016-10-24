@@ -1,0 +1,7 @@
+double score = Math.log(languageModel.getSentenceProbability(guess)) + (speechNBestList.getAcousticScore(guess) / 16.0);
+double distance = editDistance.getDistance(correctSentence, guess);
+if (score == bestScore) {
+for (List<String> guess : speechNBestList.getNBestSentences()) {
+double distance = editDistance.getDistance(correctSentence, guess);
+if (distance < bestDistance)
+

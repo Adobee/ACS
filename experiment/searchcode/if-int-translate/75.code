@@ -1,0 +1,8 @@
+public class Panneau extends JPanel implements ActionListener {
+private Timer timer;
+private int translateTileX, translateTileY;
+private World map = new World();
+//translate method relative to the first tile&#39;s position, which is 0,0 at game&#39;s start
+public void translatePositions() {
+if(map.getWorld().get(0).getPosX() <= 0) {
+

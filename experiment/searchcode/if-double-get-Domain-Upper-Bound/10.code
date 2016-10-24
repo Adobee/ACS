@@ -1,0 +1,10 @@
+RangeValue<V> rightRange = ((HasRangeValue<V>)arg.get(1)).getRangeValue();
+DomainValue newUpperBound = new DomainValue(leftConstant);
+if (rightRange != null) {
+return new RangeValue(new DomainValue(lowerBound)
+, new DomainValue(upperBound));
+}
+}
+else {
+if (((DoubleConstant)((HasConstant)lower).getConstant()) == null
+

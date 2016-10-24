@@ -1,0 +1,15 @@
+private Boolean primary, secondary;
+
+public boolean isCached(boolean version) {
+return (version ? primary : secondary) != null;
+return version ? primary : secondary;
+}
+
+public void setValue(boolean version, boolean value) {
+if (version)
+primary = value;
+else
+secondary = value;
+}
+}
+

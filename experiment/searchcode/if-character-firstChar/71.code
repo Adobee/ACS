@@ -1,0 +1,7 @@
+char firstChar = token.charAt(0);
+if (firstChar == &#39;\&#39;&#39;) {
+return new CharacterToken(lineNumber, token);
+} else if (firstChar == &#39;&quot;&#39;) {
+return new StringToken(lineNumber, token);
+} else if (firstChar < 128 &amp;&amp; !Character.isLetterOrDigit(firstChar)) {
+

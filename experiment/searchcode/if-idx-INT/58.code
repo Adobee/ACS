@@ -1,0 +1,12 @@
+if(A[idx_correct_start] == target) return idx_correct_start;
+if(A[idx_correct_end] == target) return idx_correct_end;
+return -1;
+}
+
+int idx_mid = (idx_start + idx_end)/2;
+if(idx_end - idx_start == 1) return idx_end;
+
+// other cases
+int idx_mid = (idx_start + idx_end)/2;
+if( A[idx_start] < A[idx_mid] ) {
+

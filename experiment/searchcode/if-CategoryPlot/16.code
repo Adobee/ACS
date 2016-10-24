@@ -1,0 +1,6 @@
+import org.jfree.chart.axis.NumberAxis;
+import org.jfree.chart.plot.CategoryPlot;
+import org.jfree.chart.renderer.category.ScatterRenderer;
+data = new DefaultMultiValueCategoryDataset();
+CategoryPlot categoryplot = new CategoryPlot(data, new CategoryAxis(&quot;Category&quot;), new NumberAxis(&quot;Value&quot;), new ScatterRenderer());
+

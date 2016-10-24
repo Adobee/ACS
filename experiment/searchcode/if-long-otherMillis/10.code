@@ -1,0 +1,7 @@
+public int compareTo(Object durationField) {
+DurationField otherField = (DurationField) durationField;
+long otherMillis = otherField.getUnitMillis();
+// cannot do (thisMillis - otherMillis) as can overflow
+if (thisMillis == otherMillis) {
+return 0;
+

@@ -1,0 +1,11 @@
+for (int i = 0; i < Y.length; i++) {
+X[i] = new double[x == null ? u : x[i].length + u];
+if (intercept) {
+X[i][0] = u;
+}
+if (x != null) {
+RealMatrix Matrix_XT = Matrix_X.transpose();
+RealMatrix Matrix_XT_X = Matrix_XT.multiply(Matrix_X);
+if (Matrix_XT_X.isSingular()) {
+throw new IllegalArgumentException(
+

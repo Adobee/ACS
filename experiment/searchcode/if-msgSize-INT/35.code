@@ -1,0 +1,11 @@
+msg = getMsg();
+}
+}
+
+private EMessage readSingleMessage() throws IOException {
+if (isUseV100Plus()) {
+int msgSize = m_clientSocket.readInt();
+
+if (msgSize > MAX_MSG_LENGTH) {
+throw new InvalidMessageLengthException(&quot;message is too long: &quot;
+

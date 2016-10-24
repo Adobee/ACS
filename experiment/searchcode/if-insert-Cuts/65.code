@@ -1,0 +1,9 @@
+scratchPad = display.getSelectedText();
+}
+else if (m == pasteItem)
+{
+display.insert(scratchPad, display.getCaretPosition());
+recentCuts.insertElementAt(cut,0);
+cutsMenu.removeAll();
+for (int k = 0; k < recentCuts.size(); k++)
+

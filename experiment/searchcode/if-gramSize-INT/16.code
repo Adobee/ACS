@@ -1,0 +1,10 @@
+private Map<Sequence<T>, Integer> gramTable;
+private int unigramFreq = 0;
+
+public DefaultGramTable(Map<Sequence<T>, Integer> gramTable) {
+for (Map.Entry<Sequence<T>, Integer> e : this.gramTable.entrySet()) {
+int gramSize = e.getKey().length();
+int freq = e.getValue();
+
+if (gramSize == 1) {
+

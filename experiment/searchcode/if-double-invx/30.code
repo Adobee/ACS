@@ -1,0 +1,12 @@
+public class EF_Gamma extends EF_UnivariateDistribution {
+
+public static final int LOGX = 0;
+public static final int INVX = 1;
+
+public static double PRECISION_LIMIT = 1000000;
+double beta = -this.naturalParameters.get(1);
+
+
+if ((alpha/beta)>PRECISION_LIMIT){
+double K = (alpha/beta)/PRECISION_LIMIT;
+

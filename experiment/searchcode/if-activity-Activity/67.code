@@ -1,0 +1,11 @@
+private static ActivityStackMgr instance;
+
+public static ActivityStackMgr getActivityStackMgr() {
+if (instance == null)
+Activity localActivity = activityStack.lastElement();
+if (localActivity != null)
+localActivity.finish();
+}
+
+public void popActivity(Activity paramActivity) {
+

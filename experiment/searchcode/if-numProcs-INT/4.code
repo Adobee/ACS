@@ -1,0 +1,11 @@
+private int numProcs;
+
+public static int getAvailableProcessors() {
+return Runtime.getRuntime().availableProcessors();
+public ParallelScheduler(int numProcs) {
+super();
+
+numProcs = Math.max(1, numProcs);
+
+setProcessors(numProcs);
+

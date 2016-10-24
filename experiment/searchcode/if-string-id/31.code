@@ -1,0 +1,12 @@
+public class EntityId implements Serializable {
+
+private byte[] idString;
+
+
+public EntityId() {
+EntityId entityId = (EntityId) o;
+
+if (!Arrays.equals(idString, entityId.idString)) return false;
+
+return true;
+

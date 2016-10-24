@@ -1,0 +1,11 @@
+public static boolean isValidFormat(String format){
+boolean isValid = false;
+if(PDF.toString().equalsIgnoreCase(format) || JSON.toString().equalsIgnoreCase(format) ||
+isValid = true;
+}
+return isValid;
+}
+
+public static Format fromString(String format){
+if(format == null || !isValidFormat(format))
+

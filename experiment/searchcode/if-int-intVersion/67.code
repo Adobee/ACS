@@ -1,0 +1,9 @@
+public class Client
+{
+private static void test(boolean b)
+{
+if(!b)
+test(c.lang.equals(&quot;java&quot;));
+test(c.version == Ice.Util.intVersion());
+System.out.println(&quot;ok&quot;);
+

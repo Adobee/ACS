@@ -1,0 +1,9 @@
+String s = null;
+if(piedataset != null &amp;&amp; !comparable.equals(&quot;PHP&quot;))
+s = comparable.toString();
+public PieChart3DDemo3(String s)
+{
+super(s);
+PieDataset piedataset = createDataset();
+JFreeChart jfreechart = createChart(piedataset);
+

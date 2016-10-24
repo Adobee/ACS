@@ -1,0 +1,9 @@
+package symbols;
+import lexer.*;
+public class Type extends Word {
+
+public int width = 0;          // width is used for storage allocation
+if ( ! numeric(p1) || ! numeric(p2) ) return null;
+else if ( p1 == Type.Float || p2 == Type.Float ) return Type.Float;
+else if ( p1 == Type.Int   || p2 == Type.Int   ) return Type.Int;
+

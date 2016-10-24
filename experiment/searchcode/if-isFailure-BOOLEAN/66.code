@@ -1,0 +1,10 @@
+public TryM<U> apply(Function<T, U> tuf) {
+return map(tuf);
+}
+});
+final TryM<U> result;
+if (mapped.isFailure()) { result = fail(mapped.throwable()); }
+final TryM<TryM<U>> mapped = (TryM<TryM<U>>) map(function);
+final TryM<U> result;
+if (mapped.isFailure()) { result = fail(mapped.throwable()); }
+

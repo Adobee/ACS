@@ -1,0 +1,13 @@
+import java.util.concurrent.TimeoutException;
+
+public class CompletedFuture<V> implements Future<V> {
+private final V re;
+private boolean cancelled = false;
+
+public CompletedFuture(V re) {
+this.re = re;
+}
+
+@Override
+public boolean cancel(boolean mayInterruptIfRunning) {
+

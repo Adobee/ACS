@@ -1,0 +1,9 @@
+IClassInfo theClass = getDatabase().getClass(Util.jvmToScreen(aNode.owner), false);
+if (theClass == null) return null;
+else return theClass.getBehavior(aNode.name, aNode.desc);
+}
+
+private WrapperDef getWrapperFor(MethodInsnNode aNode)
+{
+if (aNode.getOpcode() == Opcodes.INVOKESPECIAL) return null; // That would be a super call, don&#39;t reroute it.
+

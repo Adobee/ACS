@@ -1,0 +1,16 @@
+this.level = level;
+}
+
+public int getLevel() {
+return level;
+}
+
+public LearningLevel next() {
+if (this.level == EXCELLENT.getLevel()) {
+return LearningLevel.values()[newLevel];
+}
+}
+
+public LearningLevel previous() {
+if (this.level == NEW.getLevel()) {
+

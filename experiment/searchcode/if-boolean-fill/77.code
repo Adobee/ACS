@@ -1,0 +1,12 @@
+int[] p = new int[n];
+Arrays.fill(p, -1);
+for (int i = 0; i < n; i++) {
+Arrays.fill(z, false);
+if (dfs(i, a, z, p)) {
+zl[i] = true;
+}
+}
+Arrays.fill(z, false);
+for (int i = 0; i < n; i++) {
+if (!zl[i]) dfs2(i, a, z, p, zr);
+

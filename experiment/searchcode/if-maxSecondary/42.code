@@ -1,0 +1,6 @@
+private static int getResizedDimension(int maxPrimary, int maxSecondary, int actualPrimary, int actualSecondary) {
+if (maxPrimary == 0 &amp;&amp; maxSecondary == 0) {
+return actualPrimary;
+return (int) (((double) actualPrimary) * (((double) maxSecondary) / ((double) actualSecondary)));
+} else if (maxSecondary == 0) {
+

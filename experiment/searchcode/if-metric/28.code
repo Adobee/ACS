@@ -1,0 +1,7 @@
+*   <code>MetricFilter</code> and the metric is only written if the test succeeds.
+*
+* @author Guenter Grossberger - CA APM SWAT Team
+public void writeMetric(String type, String name, int metric) {
+if (testMetric(name, metric)) {
+writer.writeMetric(type, name, metric);
+

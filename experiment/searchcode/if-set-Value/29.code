@@ -1,0 +1,11 @@
+setValue(fvalue.floatValue());
+}
+catch (NumberFormatException e) {}
+}
+
+public void setValue(Field field) {
+if (field instanceof SFFloat)
+setValue((SFFloat)field);
+if (field instanceof ConstSFFloat)
+setValue((ConstSFFloat)field);
+

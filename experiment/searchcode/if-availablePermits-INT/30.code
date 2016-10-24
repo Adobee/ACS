@@ -1,0 +1,13 @@
+// ensure its values aren&#39;t cached by multiple Threads..
+
+private volatile int availablePermits;
+
+
+public SimpleSemaphore(int permits, boolean fair) {
+isNotEmpty.await();
+}
+
+availablePermits--;
+}catch(InterruptedException e){
+if(availablePermits > 0){
+

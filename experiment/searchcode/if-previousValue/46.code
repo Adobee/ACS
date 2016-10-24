@@ -1,0 +1,14 @@
+int counter = 0;
+
+double previousValue = 0.0;
+
+while (!StdIn.isEmpty())
+{
+double value = StdIn.readDouble();
+counter++;
+
+averageMagnitude += Math.abs(value);
+avaragePower += value * value;
+
+if (previousValue < 0 &amp;&amp; value > 0 || previousValue > 0 &amp;&amp; value < 0)
+

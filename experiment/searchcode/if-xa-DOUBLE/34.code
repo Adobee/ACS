@@ -1,0 +1,9 @@
+this(x, y, 0, 0, DEFAULT_COLOR, DEFAULT_LIFE);
+}
+
+public MenuParticle(double x, double y, double xa, double ya) {
+this(x, y, xa, ya, DEFAULT_COLOR, DEFAULT_LIFE);
+}
+
+public MenuParticle(double x, double y, double xa, double ya, int color) {
+

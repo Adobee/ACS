@@ -1,0 +1,6 @@
+public static <T> Serializer<T> getSerializer(Object value) {
+Serializer serializer = null;
+if (value == null) {
+serializer = ByteBufferSerializer.get();
+} else if (value instanceof Utf8) {
+

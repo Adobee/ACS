@@ -1,0 +1,6 @@
+TransportEvent te = (TransportEvent) event;
+Transport transport = te.getTransport();
+if (eventType == TransportEventType.TRANSPORT_READABLE) {
+transport.onReadable();
+} else if (eventType == TransportEventType.TRANSPORT_WRITABLE) {
+

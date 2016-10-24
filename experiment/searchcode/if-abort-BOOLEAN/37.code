@@ -1,0 +1,10 @@
+long abortLsn = DbLsn.NULL_LSN;
+
+/*
+* The original setting of the knownDeleted flag.  It parallels abortLsn.
+*/
+boolean abortKnownDeleted;
+
+/*
+* Size of the original log entry, or zero if abortLsn is NULL_LSN or if
+

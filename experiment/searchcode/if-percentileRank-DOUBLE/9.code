@@ -1,0 +1,11 @@
+return percentileRank(state, value);
+}
+
+@Override
+public String percentAsString(double value) {
+return new InternalTDigestPercentileRanks(name, keys, merged, keyed, format, pipelineAggregators, metaData);
+}
+
+static double percentileRank(TDigestState state, double value) {
+double percentileRank = state.cdf(value);
+

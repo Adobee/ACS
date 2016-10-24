@@ -1,0 +1,9 @@
+StringBuffer insertionBuf = new StringBuffer();
+int quoteLen = Math.max(opener.length(), closer.length());
+if (1 < quoteLen) {
+* ex) opener = &quot;ABC&quot;, closer = &quot;XYZ&quot; model: ABCDEF.......UVWXYZ
+* deletion: CDEF.......UVWX pre/post: AB / YZ
+*/
+int addStart = start - (quoteLen - 1);
+if (0 <= addStart) {
+

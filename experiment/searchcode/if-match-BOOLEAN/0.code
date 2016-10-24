@@ -1,0 +1,9 @@
+public class Solution {
+public boolean isMatch(String s, String p) {
+int m, n;
+boolean[][] match = new boolean[m+1][n+1];
+boolean matched;
+match[0][0] = true;
+for (int j = 1; j<=n; j++) {
+if (p.charAt(j-1) == &#39;*&#39;) match[0][j] = match[0][j-2];
+

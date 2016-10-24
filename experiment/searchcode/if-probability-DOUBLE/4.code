@@ -1,0 +1,6 @@
+public class Probability {
+private final Double probability;
+
+public Probability(double probability) {
+if (probability <= 0 &amp;&amp; probability >= 1) throw new IllegalArgumentException();
+

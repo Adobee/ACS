@@ -1,0 +1,9 @@
+package com.stfciz.aws;
+
+import com.amazonaws.AmazonClientException;
+import com.amazonaws.util.EC2MetadataUtils;
+public static boolean isCloudEnvironment() {
+if (cloudEnvironment == null) {
+try {
+cloudEnvironment = EC2MetadataUtils.getData(&quot;/latest/meta-data/instance-id&quot;, 1) != null;
+

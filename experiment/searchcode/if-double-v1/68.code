@@ -1,0 +1,14 @@
+public static Double add(Double v1, Double v2) {
+if(v1 == null){
+v1 = 0.0;
+}
+if(v2 == null){
+v2 = 0.0;
+}
+BigDecimal b1 = new BigDecimal(v1.toString());
+return b1.add(b2).doubleValue();
+}
+
+public static BigDecimal add(BigDecimal v1, BigDecimal v2) {
+if(v1 == null){
+

@@ -1,0 +1,6 @@
+public static Throwable getMeaningfulException(Throwable t) {
+Throwable meaningfulThrowable;
+if (t instanceof NSForwardException) {
+else if (t instanceof InvocationTargetException) {
+meaningfulThrowable = ((InvocationTargetException)t).getCause();
+

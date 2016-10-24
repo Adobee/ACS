@@ -1,0 +1,10 @@
+package com.voidpixel.harry.game;
+
+public class Tile {
+public int color;
+public double scale;
+public boolean animate(double delta, boolean negative) {
+if(negative) {
+scale = scale - delta;
+if(scale < 0) scale = 0;
+

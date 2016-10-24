@@ -1,0 +1,12 @@
+ConfigurationSection goalSex = config.createSection(&quot;goals&quot;);
+
+int i = 1;
+if (!goals.isEmpty())
+for (GoalConfiguration goal : goals) {
+goalSex.set(i + &quot;&quot;, goal.asConfig());
+config.set(&quot;end&quot;, end.getConfiguration());
+config.set(&quot;start&quot;, startNPC);
+
+try {
+config.save(saveFile);
+

@@ -1,0 +1,11 @@
+private static final char SEP = &#39; &#39;;
+
+private final StringBuilder sb;
+private final int tokenLimit;
+private final int[] bounds;
+public void add(char[] src, int srcOffset, int srcLength, int tokenStart, int tokenEnd) {
+if (size == tokenLimit) {
+removeHead();
+}
+sb.append(src, srcOffset, srcLength);
+

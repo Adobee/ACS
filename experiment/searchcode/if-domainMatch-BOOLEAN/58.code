@@ -1,0 +1,13 @@
+public RFC2965DomainAttributeHandler()
+{
+}
+
+public boolean domainMatch(String s, String s1)
+{
+return s.equals(s1) || s1.startsWith(&quot;.&quot;) &amp;&amp; s.endsWith(s1);
+throw new CookieRestrictionViolationException((new StringBuilder()).append(&quot;Domain attribute \&quot;&quot;).append(cookie.getDomain()).append(&quot;\&quot; violates RFC 2965: the value contains no embedded dots &quot;).append(&quot;and the value is not .local&quot;).toString());
+}
+if (!domainMatch(cookieorigin, s))
+{
+throw new CookieRestrictionViolationException((new StringBuilder()).append(&quot;Domain attribute \&quot;&quot;).append(cookie.getDomain()).append(&quot;\&quot; violates RFC 2965: effective host name does not &quot;).append(&quot;domain-match domain attribute.&quot;).toString());
+

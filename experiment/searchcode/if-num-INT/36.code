@@ -1,0 +1,8 @@
+for(int i = 0; i < num.length-1; i++){
+if(num[i] < num[i+1]) k = Math.max(k,i);
+}
+if(k == -1){
+int l = 0;
+for(int i = 0; i < num.length; i++){
+if(num[i] > num[k]) l = Math.max(l, i);
+

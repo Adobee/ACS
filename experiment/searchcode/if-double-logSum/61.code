@@ -1,0 +1,11 @@
+* Formula in TeX: Given $x_i$, where $1 \le i \le N$, logsum = $\sum^N_{i=1}=\ln(x_i)$
+*/
+public static final double logsum(final double[] values)
+{
+double logsum = 0.0;
+for (int i = 0; i < values.length; i++)
+final double logsum = logsum(sample);
+if (Double.isNaN(logsum) || Double.isInfinite(logsum))
+{
+// Probably zeros in sample, switch to moments method
+

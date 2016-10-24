@@ -1,0 +1,10 @@
+etas[i].addObserver(this);
+}
+}
+
+protected void recalculate() {
+double r1, r2, r3, r4, alpha1, alpha2, alpha3, alpha4,
+(alpha1*Math.pow(r1,2) + 2*Eta14*r1*r4 +
+alpha4*Math.pow(r4,2))))));
+} else if(locality == 1) {
+

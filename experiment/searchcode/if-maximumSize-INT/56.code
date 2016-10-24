@@ -1,0 +1,15 @@
+public History(int maximumSize)
+{
+super(Row.class, maximumSize);
+}
+
+int rowsDismissed = 0;
+int gcCounter = 0;
+
+private int pos = 0;
+
+public void push(Row row)
+{
+Row replaced = append(row);
+if (replaced == null) {
+

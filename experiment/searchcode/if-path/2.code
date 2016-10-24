@@ -1,0 +1,13 @@
+this.path = path;
+}
+
+public Path(String path, String subPath) {
+if (path.endsWith(&quot;/&quot;)) {
+this.path = path + subPath;
+public Path(Path path, String subPath) {
+if (path.getPath().endsWith(&quot;/&quot;)) {
+this.path = path.getPath() + subPath;
+}
+else {
+this.path = path.getPath() + &quot;/&quot; + subPath;
+

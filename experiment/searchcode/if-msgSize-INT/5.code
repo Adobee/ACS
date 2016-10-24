@@ -1,0 +1,13 @@
+public class RpcEncoder extends MessageToByteEncoder {
+
+private Class<?> genericClass;
+
+/**
+* 最大消息的字节数，以保护内存避免溢出。
+*/
+private int msgSize;
+
+public RpcEncoder(Class<?> genericClass, int msgSize) {
+this.genericClass = genericClass;
+this.msgSize = msgSize;
+

@@ -1,0 +1,7 @@
+public CollectionAnalyzedIndexData(String collectionId, int documentSize, List<String> fieldList, List<RowData> pkData, List<RowData> indexData, List<RowData> analyzedData, List<Boolean> isDeletedList) {
+super(collectionId, documentSize, fieldList, indexData, isDeletedList);
+int pkRowSize = input.readVInt();
+if(pkRowSize > 0) {
+int pkFieldSize = input.readVInt();
+pkData = new ArrayList<RowData>(pkRowSize);
+

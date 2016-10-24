@@ -1,0 +1,6 @@
+public static String renderHumanAgo(Date date) {
+long diff = System.currentTimeMillis() - date.getTime();
+diff = diff / 60000; // mins
+if (diff < 10) return &quot;just now&quot;;
+if (diff < 30) return ((diff/5)*5)+&quot; min ago&quot;;
+

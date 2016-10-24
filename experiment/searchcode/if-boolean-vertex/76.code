@@ -1,0 +1,18 @@
+public Vertex(String label) {
+super(label);
+}
+
+@Override
+public boolean equals(Object o) {
+boolean resp = false;
+if(o instanceof Vertex){
+Vertex vertex = (Vertex) o;
+if(this.getUUID().equals(vertex.getUUID())){
+resp = true;
+}
+}
+return resp;
+}
+
+}
+

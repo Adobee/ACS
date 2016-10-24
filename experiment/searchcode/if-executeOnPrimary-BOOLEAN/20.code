@@ -1,0 +1,7 @@
+boolean timeout = randomBoolean();
+if (timeout) {
+request.timeout(&quot;0s&quot;);
+} else {
+ShardRouting primaryShard = state.getRoutingTable().shardRoutingTable(shardId).primaryShard();
+boolean executeOnPrimary = true;
+

@@ -1,0 +1,11 @@
+package model;
+
+public class IDGenerator {
+
+private long				nextID	= 0;
+private static final long	MAX_ID	= 999999;
+
+public long generate() throws Exception {
+if (nextID == MAX_ID)
+throw new Exception(&quot;Reached maximum ID, no further generations possible.&quot;);
+

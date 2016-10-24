@@ -1,0 +1,5 @@
+@Override
+protected boolean matchesSafely(HttpServletResponse response, Description mismatchDescription) {
+String actualContentType = response.getContentType();
+if (!expectedContentType.equals(actualContentType)) {
+

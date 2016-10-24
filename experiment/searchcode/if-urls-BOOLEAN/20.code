@@ -1,0 +1,16 @@
+public class Category extends Entity<Category> {
+
+private String name;
+
+private String description;
+
+private Boolean approved = Boolean.FALSE;
+
+// Urls child neighbor (internal)
+public void setApproved(boolean approved) {
+setApproved(new Boolean(approved));
+}
+
+/**
+* Checks if it is <code>true</code> or <code>false</code>.
+

@@ -1,0 +1,11 @@
+result[0] = Math.min(result[0], Math.min(removeSkipOnes(current), removeSkipTwos(current)) + result[i]);
+}
+}
+answer = Math.min(answer, Math.min(winSkipOnes(0), winSkipTwos(0)) + result[0]);
+if (Double.isInfinite(answer) || Double.isNaN(answer)) {
+out.printLine(answer);
+}
+
+private double removeSkipTwos(int current) {
+if (current >= removeSkipTwos.length) {
+

@@ -1,0 +1,9 @@
+PatternFinder patternFinder = new PatternFinder(ruleBuilder, sequence);
+List<String> reportList = patternFinder.findPattern();
+PatternParser patternParser = new PatternParser();
+List<Rule> rulesChain = patternParser.parse(pattern);
+return new RuleBuilder(rulesChain);
+}
+
+}
+

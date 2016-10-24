@@ -1,0 +1,13 @@
+height_ = minimumMatchLength;
+return true;
+}
+
+int gramSizeMax = (int) (Math.ceil(1.0 / errorRate));
+
+if (gramSize >= gramSizeMax) {
+int tau = tau(minimumMatchLength, gramSize, errorRate);
+if (tau <= 0) {
+return false;
+}
+int e = (int) (Math.floor((2 * tau + gramSize - 3)
+

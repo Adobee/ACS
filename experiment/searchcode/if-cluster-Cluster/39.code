@@ -1,0 +1,8 @@
+import org.jdbcluster.metapersistence.cluster.ClusterInterceptor;
+import org.jdbcluster.metapersistence.cluster.ICluster;
+
+public class MyClusterInterceptor implements ClusterInterceptor {
+public boolean clusterNew(ICluster cluster) {
+if(cluster instanceof CBicycle) {
+CBicycle b = (CBicycle) cluster;
+

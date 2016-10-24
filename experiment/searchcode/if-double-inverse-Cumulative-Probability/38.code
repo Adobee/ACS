@@ -1,0 +1,14 @@
+return (X >= min &amp;&amp; X <= max ? 1.0/range : 0.0);
+}
+
+public double cumulative(double X) {
+if(X < min)
+return 0.0;
+return 1.0;
+}
+
+public double inverse(double probability) {
+return probability*range + min;
+}
+}
+

@@ -1,0 +1,7 @@
+public void setConfidence( Classification aClassification, float confidence ) {
+if ( confidences.get( aClassification ) != null )
+throw new IllegalArgumentException( &quot;confidence already set for &quot; + aClassification );
+
+confidences.put( aClassification, new Float( confidence ) );
+if ( confidence > primaryConfidence ) {
+

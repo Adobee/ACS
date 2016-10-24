@@ -1,0 +1,6 @@
+public void run(int nSteps, double startT, double endT, int reportEvery) {
+int reportNumber = 0;
+for (int step=0 ; step<nSteps ; step++) {
+if (step%reportEvery == 0) {
+domainsForReporting.report(reportNumber);
+

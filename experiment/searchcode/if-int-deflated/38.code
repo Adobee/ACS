@@ -1,0 +1,12 @@
+activated = true;
+}
+
+@Override
+public void received(Connector connector, Address address, ByteBuffer deflated) {
+if (!activated) {
+wrappee.received(connector, address, deflated);
+return;
+}
+
+int r = deflated.remaining();
+

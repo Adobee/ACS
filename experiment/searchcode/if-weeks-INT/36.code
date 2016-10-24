@@ -1,0 +1,9 @@
+private int years;
+private int month;
+private int weeks;
+
+public static int compare(Age a, Age b) {
+final int a = getWeeksSinceBirthday();
+final int b = another.getWeeksSinceBirthday();
+if (a < b) {
+

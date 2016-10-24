@@ -1,0 +1,8 @@
+private int bufferSize = S3Connection.MINIMUM_PART_SIZE;
+private boolean serverSideEncryption = true;
+
+/**
+* Constructor.
+* {@link S3Connection#readBytesWithinRange(String, String, long, byte[])}. Specifically, if an I/O exception occurs
+* while reading from the stream returned by {@link com.amazonaws.services.s3.model.S3Object#getObjectContent()},
+

@@ -1,0 +1,9 @@
+public class P3 {
+public static void main(String[] args)
+{
+Calendar time, time2;
+int min, minEnd, sec, secEnd, millisec, millisecEnd;
+if(min == minEnd &amp;&amp; sec == secEnd){
+long ExcutionTime3 = millisecEnd - start3;
+System.out.println(&quot;sum = &quot; + sum3 + &quot;Execution time = &quot; + ExcutionTime3);
+

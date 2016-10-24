@@ -1,0 +1,14 @@
+package com.hu.www.http;
+
+public class HttpConfig {
+public enum Policy {
+HTTP_ONLY, HTTPS_ONLY, HTTP_AND_HTTPS;
+return this == HTTP_ONLY || this == HTTP_AND_HTTPS;
+}
+
+public boolean isHttpsEnabled() {
+return this == HTTPS_ONLY || this == HTTP_AND_HTTPS;
+}
+}
+}
+

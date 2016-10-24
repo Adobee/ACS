@@ -1,0 +1,9 @@
+public void addBackpropagatedDerivatives(CnnDoubleLayerState state, int feature, int threadTag) {
+if (locked)
+return;
+backpropagateConvolutionDerivativesToWeights(state, feature, threadTag);
+
+}
+public void addBackpropagatedDerivatives(CnnDoubleLayerState state, int threadTag) {
+if (!(state.params.netParams.objective == Objective.CROSS_ENTROPY_CLASSIFICATION &amp;&amp; state.params.outputFunction == OutputFunctionType.SOFT_MAX_ACT))
+

@@ -1,0 +1,10 @@
+boolean hasSubType(MagicSubType subType);
+boolean hasColor(MagicColor color);
+boolean hasType(MagicType type);
+boolean isToken();
+return Collections.disjoint(list, MagicIcon.COLOR_MANA) &amp;&amp; !Collections.disjoint(list, MagicIcon.HYBRID_COLOR_MANA);
+}
+
+default boolean isPlaneswalker() {
+return hasType(MagicType.Planeswalker);
+

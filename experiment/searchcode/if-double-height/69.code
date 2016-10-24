@@ -1,0 +1,15 @@
+public class Trapezoid {
+
+/**
+* @param args
+*/
+
+private double height, base1, base2, side1, side2;
+public void setHeight(double ht) {
+if (ht > 0.0)
+height = ht;
+}
+
+public void setBase1(double b1) {
+if (b1 > 0.0)
+

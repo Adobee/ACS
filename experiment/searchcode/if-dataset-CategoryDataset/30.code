@@ -1,0 +1,8 @@
+JFreeChartCommonAttributes attrs = new JFreeChartCommonAttributes(self, actionContext);
+
+if(&quot;Area&quot;.equals(type)){
+dataset = (CategoryDataset) self.doAction(&quot;createCategoryDataset&quot;, actionContext, UtilMap.toMap(&quot;datas&quot;, datas));
+chart = ChartFactory.createBarChart(attrs.title, attrs.categoryAxisLabel, attrs.valueAxisLabel, (CategoryDataset) dataset, attrs.orientation, attrs.legend, attrs.tooltips, attrs.urls);
+}else if(&quot;Bar3D&quot;.equals(type)){
+dataset = (CategoryDataset) self.doAction(&quot;createCategoryDataset&quot;, actionContext, UtilMap.toMap(&quot;datas&quot;, datas));
+

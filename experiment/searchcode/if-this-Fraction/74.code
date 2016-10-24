@@ -1,0 +1,15 @@
+private String name;
+
+private Fraction(double value, String name) {
+this.value = value;
+this.name = name;
+for(Fraction fraction : OrderedFractions) {
+if(Math.abs(value - fraction.value) <= 0.0005) {
+return fraction;
+}
+}
+return null;
+}
+
+}
+

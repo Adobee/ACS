@@ -1,0 +1,9 @@
+public class Solution {
+public int jump(int[] A) {
+int n = A.length;
+int[] step = new int[n];
+for (int i = 0; i <= range &amp;&amp; i < n; i++) {
+if (A[i] + i > range) {
+range = i + A[i];
+for (int j = i; j <= range &amp;&amp; j < n; j++) {
+

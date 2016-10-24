@@ -1,0 +1,9 @@
+public void getData(IntIntArrayHolderIF arrayHolder)
+{
+int             bucketSize;
+int             keyIndex;
+keyIndex = CollectionHelper.binarySearch(local_keys, key, local_numberKeys);
+if (keyIndex >= 0)
+{
+int oldValue = local_values[keyIndex];
+

@@ -1,0 +1,8 @@
+* @return always return true, throws an {@link AssertionError} in case of conflict.
+*/
+public boolean check(@Nonnull JType checkedType) {
+String signature = Jack.getLookupFormatter().getName(checkedType);
+defined = jackLookup.getType(signature);
+if (!defined.isSameType(checkedType)) {
+throw getCheckError(checkedType, defined);
+

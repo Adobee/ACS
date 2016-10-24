@@ -1,0 +1,8 @@
+* @param degreesOfFreedom Degrees of freedom.
+*/
+public TStudentDistribution(double degreesOfFreedom){
+if (degreesOfFreedom < 1){
+public double Variance() {
+if (degreesOfFreedom > 2)
+return degreesOfFreedom / (degreesOfFreedom - 2);
+

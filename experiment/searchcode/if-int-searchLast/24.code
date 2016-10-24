@@ -1,0 +1,6 @@
+//second: return A[high] == target? high : high - 1;
+public int[] searchRange(int[] A, int target) {
+if(A.length == 0) return new int[]{-1,-1};
+int first = searchFirst(A, target);
+if(first == -1) return new int[]{-1,-1};
+

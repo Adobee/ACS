@@ -1,0 +1,8 @@
+public DoubleWritable terminate() {
+if (this.partial == null) {
+return null;
+double p = 0.0D;
+double umax = 0.0D;
+double umin = 1.0E+030D;
+for (i = 0; i <= n - 1; i++) {
+

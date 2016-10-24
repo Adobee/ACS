@@ -1,0 +1,14 @@
+public class OptimizeWifiActivity extends BaseActivity {
+private ImageView ivOptimizeBg;
+private ImageView ivOptimizeButton;
+
+private boolean isOptimizing = false;
+case R.id.iv_optimize_btn:
+startOptimize();
+break;
+}
+}
+
+private void startOptimize() {
+boolean wifiConnected = MyUtils.isWifiConnected(AppContext.getContext());
+

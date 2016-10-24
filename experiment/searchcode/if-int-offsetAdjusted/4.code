@@ -1,0 +1,8 @@
+//    * how many day between the two ISODates. If the start date is more recent
+//    * than the end date, then the result will  be negative, so:
+SimpleDateFormat dateFormat = new SimpleDateFormat(format);
+
+int offsetAdjusted = gmtOffset * (3600000);
+
+SimpleTimeZone tz = new SimpleTimeZone(offsetAdjusted,gmtOffset+&quot;:00&quot;);
+

@@ -1,0 +1,11 @@
+public class LCMGCD {
+
+public static int lcm(int a, int b) {
+int lcm  = 0;
+int max = (a > b) ? a : b;
+int min = (a < b) ? a : b;
+
+for(int i = 1; i <= min; ++i) {
+lcm = max * i;
+if(lcm % min == 0) {
+

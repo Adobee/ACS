@@ -1,0 +1,8 @@
+public class MailAddressValidator implements IValidator {
+
+/**
+* Determines if the value is a valid email address string
+private boolean isValidChar(String value) {
+if (inValidChars.contains(value)) {
+return false;
+

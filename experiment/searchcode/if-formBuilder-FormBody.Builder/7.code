@@ -1,0 +1,11 @@
+FormBody.Builder formBuilder = new FormBody.Builder();
+
+if (params == null || params.size() == 0) {
+formBuilder.add(key, params.get(key));
+}
+
+formBody = formBuilder.build();
+}
+
+Request request = new Request.Builder()
+

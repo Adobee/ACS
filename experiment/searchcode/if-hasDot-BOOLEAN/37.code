@@ -1,0 +1,10 @@
+int i = start;
+boolean hasDot = false;
+for (; i < in.length &amp;&amp; CharUtils.isDigit(in[i]) &amp;&amp; in[i] != &#39;{&#39; &amp;&amp; in[i] != &#39;=&#39; &amp;&amp; in[i] != &#39;:&#39; &amp;&amp; in[i] != &#39;;&#39;; ++i) { }
+if (i < in.length &amp;&amp; in[i] == &#39;.&#39; &amp;&amp; i != start) {
+++i;
+hasDot = true;
+for (; i < in.length &amp;&amp; CharUtils.isDigit(in[i]); ++i) { }
+}
+if (i > start) {
+

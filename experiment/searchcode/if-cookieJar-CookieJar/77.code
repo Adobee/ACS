@@ -1,0 +1,8 @@
+for (String item : setCookieList) {
+Cookie cookie = new Cookie(uri, item);
+for (Cookie existingCookie : cookieJar) {
+if ((cookie.getURI().equals(existingCookie.getURI()))
+for (Cookie cookie : cookieJar) {
+// Remove cookies that have expired
+if (cookie.hasExpired()) {
+

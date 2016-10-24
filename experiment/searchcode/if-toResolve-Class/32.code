@@ -1,0 +1,8 @@
+private boolean resolve(final Node node, Translator translator, final ValueCallback onValue, final Node root, final Set<Node> toResolve) {
+if(node.value != null) {
+final Object lock = new Object();
+leftResolved = resolve(node.left, translator, onValue, root, toResolve);
+}
+boolean rightResolved = true;
+if(node.right != null) {
+

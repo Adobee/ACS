@@ -1,0 +1,11 @@
+this.hasBody = hasBody;
+}
+@Override
+public boolean equals(Object o) {
+if (!(o instanceof PinTypeSetKey)) return false;
+return true;
+}
+private boolean samePinsAs(Mos t) {
+if (pins.length!=t.pins.length) return false;
+if (hasBody!=t.hasBody) return false;
+

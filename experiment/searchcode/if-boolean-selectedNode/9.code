@@ -1,0 +1,13 @@
+for (Node neighbor : node.getNeighbors()) {
+if (neighbor.getActived()) {
+count++;
+}
+}
+return count;
+}
+
+boolean checkmessagereceivedNeighbors(Node node) {
+int numofactivenodes = countActiveNeighbors(selectednode);
+
+if (numofactivenodes >= selectednode.getThreshold()) {
+

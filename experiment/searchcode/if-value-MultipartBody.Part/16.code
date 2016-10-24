@@ -1,0 +1,7 @@
+public MultipartBody field(String name, String value) {
+parameters.put(name, value);
+return this;
+for(Entry<String, Object> part : parameters.entrySet()) {
+if (part.getValue() instanceof File) {
+hasFile = true;
+

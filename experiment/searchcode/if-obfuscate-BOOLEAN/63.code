@@ -1,0 +1,10 @@
+return;
+}
+
+if (&quot;true&quot;.equals(req.getParameter(&quot;show&quot;))) {
+boolean obfuscate = Config.SHOW_UNPUBLISHED_DATA;
+resp.setContentType(&quot;application/json&quot;);
+new APIUpdater().run(true, obfuscate, resp.getOutputStream());
+} else {
+// If showing unpublished data, it is mandatory to obfuscate:
+

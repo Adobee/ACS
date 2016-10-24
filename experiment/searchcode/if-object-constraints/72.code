@@ -1,0 +1,10 @@
+* limitations under the License.
+*/
+
+import javax.security.auth.Subject;
+import net.jini.core.constraint.MethodConstraints;
+public boolean equals(Object o) {
+if (o instanceof RS) {
+RS rs = (RS) o;
+return i == rs.i &amp;&amp; safeEquals(constraints, rs.constraints);
+

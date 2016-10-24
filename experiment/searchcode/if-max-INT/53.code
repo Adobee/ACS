@@ -1,0 +1,9 @@
+for (int i=n>>1; i>0; i--)
+heapify(i);
+}
+void heapify(int i) { //max heap
+int left = i << 1;
+int right = left + 1;
+int max = i;
+if (left <= n &amp;&amp; a[left] > a[max]) max = left;
+

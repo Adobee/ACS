@@ -1,0 +1,12 @@
+public double percent(double value) {
+return percentileRank(state, value);
+}
+
+@Override
+public String percentAsString(double value) {
+return TYPE;
+}
+
+static double percentileRank(DoubleHistogram state, double value) {
+if (state.getTotalCount() == 0) {
+

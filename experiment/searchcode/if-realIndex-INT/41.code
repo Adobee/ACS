@@ -1,0 +1,7 @@
+private static int binarySearchWithVirtualStartEnds(int arr[], int start, int end, int valToSearchFor, int realIndexForVirtualZero) {
+if(start >= arr.length || start > end || start < 0) {
+return -1;
+}
+if (start == end) {
+int realIndex = virtualToRealIndex(start, realIndexForVirtualZero, arr.length);
+

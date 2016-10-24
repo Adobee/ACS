@@ -1,0 +1,9 @@
+public boolean match(String s, int i, String s1, boolean flag, org.apache.commons.httpclient.Cookie cookie) {
+LOG.trace(&quot;enter CookieSpecBase.match(String, int, String, boolean, Cookie&quot;);
+if (s == null) {
+return (cookie.getExpiryDate() == null || cookie.getExpiryDate().after(new Date())) &amp;&amp; COM.dragonflow.ApacheHttpClientUtils.ApacheCookieSpec.domainMatch(s, cookie.getDomain()) &amp;&amp; pathMatch(s1, cookie.getPath()) &amp;&amp; (!cookie.getSecure() || flag);
+}
+}
+
+private static boolean domainMatch(String s, String s1) {
+

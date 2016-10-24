@@ -1,0 +1,9 @@
+private static final double NORM_FLOAT = 1.0 / ( 1L << 24 );
+
+private final long originalSeed;
+private long seed;
+
+public XORRandom(long seed) {
+if (seed == 0) {
+throw new IllegalArgumentException(&quot;Random generator seed cannot be equal 0&quot;);
+

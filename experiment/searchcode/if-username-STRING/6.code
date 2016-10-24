@@ -1,0 +1,11 @@
+public abstract class AuthEvent {
+
+protected String username;
+
+/**
+* Describes an auth event.
+* @return true if this event matches the username
+*/
+public boolean matchesUsername(String username) {
+if (username == null || this.username == null) {
+

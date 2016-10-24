@@ -1,0 +1,13 @@
+double Ymin;
+double dX;	//the negative inverse slope, -(run/rise)
+double nextX;
+
+Vector3D dV = null; //the change in the vector across the edge
+Ymax = (int)P0.Y + 0.5;
+Ymin = (int)P1.Y + 0.5;
+nextX = P0.X;
+
+if(V0 != null &amp;&amp; V1 != null)
+{
+dV = V1.minus(V0).multiplyScaler(-1.0/(Ymin-Ymax));
+

@@ -1,0 +1,14 @@
+return ocupado;
+}
+
+
+public synchronized boolean ocupar(){
+boolean retorno=false;
+
+if (!ocupado &amp;&amp; !cerrado){
+ImpVehiculo2D v2d = new ImpVehiculo2D(va);
+boolean tipoCorrecto=false;
+
+if(v2d.getUltimoSuceso()!=null){
+switch (v2d.getUltimoSuceso()){
+

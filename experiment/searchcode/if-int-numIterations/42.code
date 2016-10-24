@@ -1,0 +1,13 @@
+currentNumIterations = SUGGESTED_ITERATIONS;
+}
+
+public int getNumIterationsToFail(double x0, double y0, int maxIterations) {
+if (x0 < MIN_X || x0 > MAX_X || y0 < MIN_Y || y0 > MAX_Y) {
+throw new IllegalArgumentException(&quot;Argument out of legal bounds of Mandelbrot set&quot;);
+}
+double x = 0.0;
+double y = 0.0;
+int numIterations = 0;
+do {
+double xtemp = x*x - y*y + x0;
+

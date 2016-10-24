@@ -1,0 +1,8 @@
+public InputStream openJavaFile(AccessibleObject methodOrConstructor) {
+
+Class<?> declaringClass = null;
+
+if (methodOrConstructor instanceof Method) {
+} else if (methodOrConstructor instanceof Constructor) {
+declaringClass = ((Constructor<?>) methodOrConstructor).getDeclaringClass();
+

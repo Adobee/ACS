@@ -1,0 +1,3 @@
+public Interval getInterval(DateTimeZone dateTimeZone) {
+return new Interval(new DateMidnight(getCurrent(), dateTimeZone), new DateMidnight(getCurrent().plusDays(1), dateTimeZone).toDateTime().minusSeconds(1));
+

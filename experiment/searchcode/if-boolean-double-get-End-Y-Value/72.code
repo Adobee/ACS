@@ -1,0 +1,8 @@
+bitPos = ((Integer)v.get(0)).intValue();
+z = ((Double)v.get(1)).doubleValue();
+coord = new double[]{x, y, z};
+spline.setEndTanVector(coord);
+boolean per = ((Boolean)v.get(1)).booleanValue();
+spline.setPeriodic(per);
+v = DwgUtil.getBitDouble(data, bitPos);
+

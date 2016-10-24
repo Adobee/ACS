@@ -1,0 +1,13 @@
+public class Polynomial {
+double[] coeff;
+int degree;
+
+public Polynomial(double a, int b) {
+coeff = new double[b + 1];
+coeff[b] = a;
+degree = getDegree();
+}
+
+public int getDegree() {
+int deg = 0;
+

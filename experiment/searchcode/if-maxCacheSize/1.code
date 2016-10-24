@@ -1,0 +1,10 @@
+void flush(List<M> objs);
+}
+
+private ArrayList<T> cache;
+private Flusher<T> flusher = null;
+private int maxCacheSize = 1024;
+public void put(T obj) {
+cache.add(obj);
+if (cache.size() >= maxCacheSize) {
+

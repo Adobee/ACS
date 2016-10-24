@@ -1,0 +1,8 @@
+private double getXAxisHeightHint(double workingSpace) {
+
+// Axis title
+double titleHeight = 0.0;
+if (chart.getXAxisTitle() != null &amp;&amp; !chart.getXAxisTitle().trim().equalsIgnoreCase(&quot;&quot;) &amp;&amp; chart.getStyler().isXAxisTitleVisible()) {
+return new AxisTickCalculatorCategory(getDirection(), workingSpace, categories, axisType, chart.getStyler());
+} else if (getAxisDataType() == AxisDataType.Instant) {
+

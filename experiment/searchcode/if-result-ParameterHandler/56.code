@@ -1,0 +1,7 @@
+Object target = invocation.getTarget();
+if (!(target instanceof DefaultResultSetHandler)) {
+return invocation.proceed();
+}
+DefaultResultSetHandler resultSetHandler = (DefaultResultSetHandler) target;
+ParameterHandler parameterHandler = (ParameterHandler) ReflectUtil.getProperty(resultSetHandler,&quot;parameterHandler&quot;);
+

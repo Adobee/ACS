@@ -1,0 +1,11 @@
+import org.elasticsearch.index.VersionType;
+
+/**
+* Base options for all elasticsearch operations
+*/
+public class AbstractOptions<T extends AbstractOptions<T>> {
+private String parent;
+private Boolean refresh;
+private Long version;
+private VersionType versionType;
+

@@ -1,0 +1,7 @@
+return isMatch(text.substring(1), pattern.substring(1));
+}
+
+int skipIndex = -1;
+while(skipIndex < text.length() &amp;&amp; (skipIndex == -1 || pattern.charAt(0) == &#39;.&#39; || text.charAt(skipIndex) == pattern.charAt(0))) {
+if (isMatch(text.substring(skipIndex+1), pattern.substring(2)))
+

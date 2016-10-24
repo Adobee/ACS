@@ -1,0 +1,13 @@
+public int getAmount() {
+return amount;
+}
+
+public void setAmount(int amount) {
+E.illegalArgumentIf(amount < 0);
+public void deposit(int amount) {
+E.illegalArgumentIf(amount < 0);
+this.amount += amount;
+}
+
+public void credit(int amount) throws AccountException {
+

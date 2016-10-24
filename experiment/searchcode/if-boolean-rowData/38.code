@@ -1,0 +1,13 @@
+// FIXME: should not happen. Log error if it does.
+
+return null;
+}
+
+public boolean isCellEditable(int row, int col) {
+Artist[] ar=new Artist[rowData.length-1];
+
+int mod=0;
+for (int i=0; i < rowData.length;i++) {
+if (i != row) {
+ar[i+mod]=rowData[i];
+

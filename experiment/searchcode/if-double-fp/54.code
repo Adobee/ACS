@@ -1,0 +1,9 @@
+double tn = trueNegatives[labelIndex];
+double fp = falsePositives[labelIndex];
+double fn = falseNegatives[labelIndex];
+return mcc(tp, tn, fp, fn);
+protected static double mcc(double tp, double tn, double fp, double fn)
+{
+double denominator = Math.sqrt((tp + fp) * (tp + fn) * (tn + fp) * (tn + fn));
+if (denominator == 0)
+

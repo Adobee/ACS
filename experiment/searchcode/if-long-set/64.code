@@ -1,0 +1,16 @@
+public long get() {
+return l;
+}
+
+public void set(long x) {
+l=x;
+}
+
+public boolean compareAndSet(long expect, long update) {
+boolean b = (l==expect);
+if(b) l=update;
+return b;
+}
+
+}
+

@@ -1,0 +1,6 @@
+BasicStroke b = new BasicStroke(1.0f);
+
+
+CubicCurve2D.Double cornerCurves = new CubicCurve2D.Double(prevX, prevY, (prevX > x) ? prevX + ctrlSup : prevX - ctrlSup, (prevY < y) ? prevY + ctrlSup : prevY - ctrlSup, (prevX > x) ? x + ctrlSup : x - ctrlSup, (prevY < y) ? y + ctrlSup : y - ctrlSup, x, y);
+CubicCurve2D.Double tickCurve = new CubicCurve2D.Double(prevX, prevY, prevX, prevY, (prevX > x) ? x + ctrlSup : x - ctrlSup, (prevY < y) ? y + ctrlSup : y - ctrlSup, x, y);
+

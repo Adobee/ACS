@@ -1,0 +1,7 @@
+public static <VH extends ViewHolder> VhFactory<VH> make(@NonNull VhFactory<? extends VH> vhFactory, @NonNull VhInitializer<? super VH> vhInitializer) {
+if (vhInitializer == VhInitializers.EMPTY) {
+return make(vhFactory);
+} else if (vhFactory instanceof CompositeVhFactory<?>) {
+return new CompositeInitVhFactory<>((CompositeVhFactory<? extends VH>) vhFactory, vhInitializer);
+} else if (vhFactory instanceof CompositeInitVhFactory<?>) {
+

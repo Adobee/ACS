@@ -1,0 +1,7 @@
+Object invoke(final ObjectCache<Invocation, Object> invocationCache, final long now, final Invocation invocation) throws Throwable {
+final Object result;
+
+final boolean canCache = invocation.getTimeout() > 0;
+final boolean cached = canCache &amp;&amp; invocationCache.contains(invocation);
+if (cached) {
+

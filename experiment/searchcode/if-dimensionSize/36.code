@@ -1,0 +1,6 @@
+public Dimension getSize(){
+Dimension dimensionSize = super.getSize();
+
+if(!this.layingOut) {
+dimensionSize.width = Math.max(dimensionSize.width * this.iRazonAnchoExtra, this.getPreferredSize().width * this.iRazonAnchoExtra);
+

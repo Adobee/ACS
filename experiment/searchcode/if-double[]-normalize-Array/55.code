@@ -1,0 +1,12 @@
+return transpose(product(A, transpose(B)))[0];
+}
+
+public static void normalizeEachRow(double[][] M) {
+for (double[] row : M) {
+DoubleArrays.probabilisticNormalize(row);
+}
+}
+
+public static void scale(double[][] M, double scale) {
+for (double[] row : M) {
+

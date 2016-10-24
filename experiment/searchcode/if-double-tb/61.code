@@ -1,0 +1,10 @@
+Tb_Item tbItem = this.tb_ItemService.getTb_Item(itemid);
+if (tbItem == null) {
+return null;
+}
+Tb_User loginTbUser = this.getLoginTb_User(req);
+List<Tb_Item_Cmt> cmtlist = this.tb_Item_CmtService
+.getTb_Item_CmtListByItemid(itemid, true, 0, 11);
+if (cmtlist.size() == 11) {
+req.setAttribute(&quot;more_cmt&quot;, true);
+

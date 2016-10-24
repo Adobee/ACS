@@ -1,0 +1,7 @@
+* Above solution has been dropped, we will use the flag {@link SpdyHttpRequest#allowInsecure}
+* to indicate if allow to connection the self-signed https host, and if true, we
+*  will ignore the security check. */
+public static boolean allowInsecure = true;
+
+OkHttpClient client = new OkHttpClient();
+

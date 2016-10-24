@@ -1,0 +1,9 @@
+Map<String, Selector> options = SelectorOptionsUtils.processOptions(indexMetadata.getOptions());
+
+if (options != null) {
+Selector boolSelector = options.get(SPARSE.getOptionName());
+IndexType indexType = indexMetadata.getType();
+
+DBObject indexDBObject = new BasicDBObject();
+if (indexType == IndexType.DEFAULT) {
+

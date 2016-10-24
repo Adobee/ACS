@@ -1,0 +1,7 @@
+double a3 = values.nextDouble();
+double b3 = values.nextDouble();
+double c3 = values.nextDouble();
+double d3 = values.nextDouble();
+// check if planes have parallel lines of intersection (determinant = 0)
+double determinant = a1*b2*c3+b1*c2*a3+c1*a2*b3-a3*b2*c1-b3*c2*a1-c3*a2*b1;
+

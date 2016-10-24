@@ -1,0 +1,10 @@
+//@ assignable low, high;
+//@ ensures low == l &amp;&amp; high == h;
+public IntervalRemove(int l, int h) {
+@         &amp;&amp; \not_modified(low);
+@*/
+public void remove(int i) {
+if (i == low) { low++;} else { high--; }
+}
+}
+

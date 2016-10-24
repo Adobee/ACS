@@ -1,0 +1,9 @@
+public double apply(double x) {
+return Math.pow(x, exponent);
+}
+
+@Override
+public Function derivative() {
+if (exponent > 0) {
+return new LinearProduct(new Exponent(exponent - 1), new Constant(exponent));
+

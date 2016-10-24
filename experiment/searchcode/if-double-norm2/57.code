@@ -1,0 +1,9 @@
+private double equildist;
+private double k;
+public Bond(Atom first, Atom second, double k) {
+if (first != null &amp;&amp; second != null) {
+public double torsAng(Bond firstb, Bond last) {
+double answer = 0;
+Atom prev = null;
+if (firstb.getFirst() != first &amp;&amp; firstb.getFirst() != second) {
+

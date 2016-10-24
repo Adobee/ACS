@@ -1,0 +1,7 @@
+private String func(String str, String sub) {
+int strlen = str.length();
+int sublen = sub.length();
+if (str.equals(&quot;&quot;)) return str;
+if (str.startsWith(sub)) {
+if (str.substring(strlen-sublen, strlen).equals(sub))
+

@@ -1,0 +1,7 @@
+switch(fields[i].getTipo())
+{
+case 0: // int
+int fieldInt = Consola.readInt();
+archivo.grabarInt(fieldInt);
+break;
+

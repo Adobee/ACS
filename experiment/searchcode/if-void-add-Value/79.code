@@ -1,0 +1,14 @@
+this.value = value;
+}
+
+public void to(final Q newValue) {
+b.add(property.addPropertyChangedHandler(e -> {
+if (condition.evaluate(property)) {
+value.setValue(newValue); // set initial
+}
+}
+}
+
+public void to(final HasValue<Q> newValue) {
+b.add(property.addPropertyChangedHandler(e -> {
+

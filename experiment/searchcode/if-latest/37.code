@@ -1,0 +1,8 @@
+private void setLatest() {
+final long now = System.currentTimeMillis();
+if (latest == null) {
+values.add(latest);
+} else {
+if (!latest.isValid(now)) {
+latest = this.latest.next(now, interval);
+

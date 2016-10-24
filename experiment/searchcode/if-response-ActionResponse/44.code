@@ -1,0 +1,9 @@
+Customer customer = (Customer) session.getAttribute(&quot;customer&quot;);
+
+if (customer == null) {
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;loginCustomer&quot;);
+ReCaptchaResponse reCaptchaResponse = reCaptcha.checkAnswer(remoteAddr, challenge, uresponse);
+
+if (!reCaptchaResponse.isValid()) {
+ActionResponse actionResponse = new ActionResponse(ActionResponseType.REDIRECT, &quot;viewBook&quot;);
+

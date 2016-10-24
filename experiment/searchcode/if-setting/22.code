@@ -1,0 +1,18 @@
+boolean tryGetSettingValueAsBOOL(String SettingName)
+{
+FCAppSetting Setting = GetSettingByName(SettingName);
+if(Setting==null)
+{
+return false;
+public String tryGetSettingValueAsString(String SettingName)
+{
+FCAppSetting Setting = GetSettingByName(SettingName);
+if(Setting!=null)
+{
+return Setting.GetSettingValue();
+}
+return null;
+}
+
+}
+

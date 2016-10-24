@@ -1,0 +1,12 @@
+* So the trade off is: In case of success it&#39;s faster, In case of failure it&#39;s slower. It makes sense since most
+* of the time we expect success.
+*/
+public class IsPresentNTimes {
+private final int nTimes;
+
+public IsPresentNTimes(int nTimes){
+this.nTimes = nTimes;
+}
+
+static class NTimesMatcher extends TypeSafeMatcher<Path> {
+

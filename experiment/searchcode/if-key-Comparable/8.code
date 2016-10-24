@@ -1,0 +1,12 @@
+public final class ComparableAdaptor<S extends Comparable<S>, T> implements Comparable<ComparableAdaptor<S,T>>{
+
+private final S key;
+private final T value;
+
+public ComparableAdaptor (S key, T value) {
+public int compareTo (ComparableAdaptor<S,T> other) {
+if (other == null) {
+return -1;
+}
+return key.compareTo(other.key);
+

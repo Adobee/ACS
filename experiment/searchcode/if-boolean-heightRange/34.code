@@ -1,0 +1,7 @@
+// Default height range
+String heightRange = config.getString(&quot;default.height&quot;, &quot;0-127&quot;);
+boolean validHeight = false;
+if (heightRange.matches(&quot;[0-9]*-[0-9]*&quot;)) {
+try {
+String[] heightValues = heightRange.split(&quot;-&quot;);
+

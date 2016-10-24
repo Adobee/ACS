@@ -1,0 +1,12 @@
+foundData.add(data);
+}
+if (usedMemory > maxMemoryOccupation) {
+return memoryOccupationHit(foundData);
+return foundData;
+}
+
+@Override
+public boolean delete(String dataId) {
+logger.info(LogMessages.DELETE + dataId);
+if (databaseMap.containsKey(dataId)) {
+

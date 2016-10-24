@@ -1,0 +1,12 @@
+import ch.zhaw.regularLanguages.helpers.PublicCloneable;
+
+public class BooleanWrapper implements PublicCloneable{
+private boolean booleanValue;
+public BooleanWrapper(boolean booleanValue){
+return new BooleanWrapper(this.booleanValue);
+}
+
+@Override
+public boolean equals(Object o){
+if (!(o  instanceof BooleanWrapper)) {
+

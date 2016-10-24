@@ -1,0 +1,9 @@
+public class ObjectPool<T> {
+
+private ObjectFactory<T> factory;
+private int poolSize = 20;
+private final List<T> pool;
+
+public ObjectPool(ObjectFactory<T> factory, int poolSize) {
+this.factory = factory;
+

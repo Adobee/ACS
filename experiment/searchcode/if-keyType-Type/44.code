@@ -1,0 +1,10 @@
+* Copyright (©) 2015. Rodionov Alexander
+*/
+
+public abstract class CacheStrategy<KeyType> {
+final Map<KeyType, Long> treeMap; // A TreeMap is sorted by keys.
+public abstract void putObject(KeyType key);
+
+public void removeObject(KeyType key) {
+if(isObjectPresent(key)) {
+

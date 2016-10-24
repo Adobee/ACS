@@ -1,0 +1,6 @@
+int initialIndex = 1;
+final int lastIndex = trimmedResponse.length() - 1;
+while (initialIndex < lastIndex) {
+int finalIndex = trimmedResponse.indexOf(&quot;,&quot;, initialIndex);
+if (finalIndex == -1) finalIndex = trimmedResponse.indexOf(&quot;]&quot;, initialIndex);
+

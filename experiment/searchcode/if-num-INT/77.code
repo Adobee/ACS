@@ -1,0 +1,12 @@
+for (int i = 0; i < n; i++)
+str += num[i];
+return str;
+}
+public void nextPermutation(int[] num) {
+if (num.length <= 1)
+return;
+for (int i = num.length - 2; i >= 0; i--) {
+if (num[i] < num[i + 1]) {
+int j;
+for (j = num.length - 1; j >= i; j--)
+

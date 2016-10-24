@@ -1,0 +1,8 @@
+import org.jfree.data.category.CategoryDataset;
+import org.jfree.data.general.Dataset;
+
+import com.ecyrd.jspwiki.plugin.PluginException;
+public class PieChartDataSetFormatter extends AbstractWikiDataSetFormatter implements WikiDataSetFormatter {
+public String format(Dataset dataSet) throws PluginException {
+if(dataSet instanceof CategoryDataset) {
+

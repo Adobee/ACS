@@ -1,0 +1,7 @@
+public boolean isLongStrategyPattern(SingleCandleBarData[] previousCandles,
+int index, double pipsValue) {
+if (previousCandles.length <= 4 || previousCandles.length <= index + 1 || index < 2) {
+return false;
+}
+if (isStopInTradeTimes(previousCandles, index)) {
+

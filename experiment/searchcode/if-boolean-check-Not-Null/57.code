@@ -1,0 +1,12 @@
+public Boolean sometimes_null_as_specified_with_nullable(int n) {
+if (n > 3) {
+return new Boolean(true);
+} else if (n < 1) {
+return null;
+}
+}
+
+@NoWarning(&quot;NP_BOOLEAN_RETURN_NULL&quot;)
+@CheckForNull
+public Boolean sometimes_null_as_specified_with_checkfornull(int n) {
+

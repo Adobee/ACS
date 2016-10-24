@@ -1,0 +1,11 @@
+CargoKey cargoKey = (CargoKey) o;
+
+if (keyIndex != cargoKey.keyIndex) return false;
+
+return true;
+}
+
+@Override
+public int hashCode() {
+return (int) (keyIndex ^ (keyIndex >>> 32));
+

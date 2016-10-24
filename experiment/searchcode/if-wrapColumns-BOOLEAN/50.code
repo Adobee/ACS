@@ -1,0 +1,5 @@
+public class CassandraGetOperation<T extends CassandraBackedDefinition> extends CassandraOperation<T, Boolean, Map<String, Entity<T>>> implements PrefetchableOperation<T> {
+List<ColumnOrSuperColumn> cols = data.get(key);
+if (cols.size() > 0) {
+Entity<T> entity = this.manager.wrapColumns(key, cols);
+

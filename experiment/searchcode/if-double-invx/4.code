@@ -1,0 +1,7 @@
+public Spaceship(double inX, double inY, double inVx, double inVy) {
+super(inX, inY, Color.MAGENTA, 1e20, &quot;Spaceship&quot;, inVx, inVy);
+double thrust = this.getThrust();
+if(thrust > 0) {
+double length = 1000 * thrust;
+int[] rx = { (int) Math.round(x - length * Math.cos(face)),
+

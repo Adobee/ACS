@@ -1,0 +1,12 @@
+public Optional<Expression> numberOfShards() {
+return numberOfShards;
+}
+
+@Override
+public int hashCode() {
+if (o == null || getClass() != o.getClass()) return false;
+
+ClusteredBy that = (ClusteredBy) o;
+
+if (!numberOfShards.equals(that.numberOfShards)) return false;
+

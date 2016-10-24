@@ -1,0 +1,14 @@
+left++;
+}
+while (arr[right] > pivot &amp;&amp; left < right) {
+right--;
+}
+if (left < right) {
+int pivot = sorting(arr, left, right);
+if (left < right) {
+sort(arr, left, pivot - 1);
+sort(arr, pivot + 1, right);
+}
+}
+}
+

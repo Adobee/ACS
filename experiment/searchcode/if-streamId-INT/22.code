@@ -1,0 +1,8 @@
+return !(streamId != null ? !streamId.equals(that.streamId) : that.streamId != null);
+}
+
+@Override
+public int hashCode() {
+public int compareTo(MiruReadTrackingWALRow o) {
+return COMPARATOR.compare(streamId.immutableBytes(), o.streamId.immutableBytes());
+

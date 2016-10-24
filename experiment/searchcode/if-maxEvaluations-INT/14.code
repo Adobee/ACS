@@ -1,0 +1,11 @@
+private Problem<S> problem ;
+private int maxEvaluations ;
+
+/* Getter */
+public int getMaxEvaluations() {
+this.problem = problem ;
+maxEvaluations = 25000 ;
+}
+
+public RandomSearchBuilder<S> setMaxEvaluations(int maxEvaluations) {
+

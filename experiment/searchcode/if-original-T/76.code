@@ -1,0 +1,4 @@
+public static String normalizePrice(String originalPrice) {
+if (originalPrice != null &amp;&amp; originalPrice.contains(&quot;.&quot;) &amp;&amp; originalPrice.endsWith(&quot;00&quot;)) {
+return originalPrice.subSequence(originalPrice.indexOf(&quot;.&quot;) + 1, originalPrice.length()).subSequence(0, 2).toString();
+

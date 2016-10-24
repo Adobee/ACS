@@ -1,0 +1,10 @@
+import com.badlogic.gdx.utils.TimeUtils;
+
+public class ScheduledTasks
+{
+private static Map<Long, Runnable> tasks = new HashMap<Long, Runnable>();
+public static void update() {
+long now = TimeUtils.millis();
+for (long endTime : tasks.keySet()) {
+if (now >= endTime) {
+

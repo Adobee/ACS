@@ -1,0 +1,12 @@
+Log.v(TAG, &quot;Passes Conditions! &quot; + approx.size().toString());
+double maxcosine = 0;
+Point[] list = approx.toArray();
+
+for (int j = 2; j < 5; j++) {
+double cosine = Math.abs(angle(list[j % 4], list[j - 2], list[j - 1]));
+maxcosine = Math.max(maxcosine, cosine);
+}
+
+if (maxcosine < 0.3) {
+MatOfPoint temp = new MatOfPoint();
+

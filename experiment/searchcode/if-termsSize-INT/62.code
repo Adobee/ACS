@@ -1,0 +1,8 @@
+public Structure(String functor, int termsSize) {
+super(functor);
+if (termsSize > 0) terms = new ArrayList<Term>(termsSize);
+if (tAsStruct.isVar()) return ((VarTerm)t).equals(this);
+
+final int ts = getArity();
+if (ts != tAsStruct.getArity()) return false;
+

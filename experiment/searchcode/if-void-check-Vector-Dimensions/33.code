@@ -1,0 +1,17 @@
+* @param column Column number to replace
+*/
+public void setColumnVector(Matrix vector, int column){
+if(vector.rows==this.rows){
+for(int i=0; i<this.rows; i++){
+this.matrix[i][column] = vector.matrix[i][0];
+}
+}
+}
+
+/**
+* Checks if a vector is a zero vector
+* @param m Vector to check
+* @return
+*/
+public static boolean isZeroVector(Matrix m){
+

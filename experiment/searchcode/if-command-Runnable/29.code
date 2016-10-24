@@ -1,0 +1,11 @@
+final Queue <Runnable> queue = new LinkedBlockingQueue <Runnable>();
+Runnable current;
+
+@Override
+public synchronized void execute(Runnable command) {
+
+queue.offer(new Runnable () {
+
+@Override
+public void run() {
+

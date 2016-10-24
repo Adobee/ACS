@@ -1,0 +1,10 @@
+return d[ d.length / 2 ];
+}
+
+public static Double stdDeviation( Double d[], Double avg ){
+Double dev = 0.0;
+for(int i=0; i<d.length; i++)
+dev += ( d[i] - avg )*( d[i] - avg );
+
+return dev / ( (double) d.length );
+

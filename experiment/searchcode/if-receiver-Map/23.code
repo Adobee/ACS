@@ -1,0 +1,9 @@
+public @ResponseBody String checkReceiver(@ModelAttribute(&quot;code&quot;) String code, ModelMap map){
+boolean result = receiverEmailService.checkReceiever(code);
+ReceiverEmail receiverEmail = receiverEmailService.getReceiver(code);
+
+if(receiverEmail == null)
+map.put(&quot;message&quot;, &quot;Receiver not found&quot;);
+else{
+map.put(&quot;receiverEmail&quot;, receiverEmail);
+

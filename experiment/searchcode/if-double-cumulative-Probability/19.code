@@ -1,0 +1,10 @@
+double value = random.nextDouble() * sumPheromone(pheromone, min);
+double cumulativeProbability = 0.0;
+for (MoveProbability moveProbability : pheromone) {
+cumulativeProbability += moveProbability.getProbability() + min;
+if (value <= cumulativeProbability) {
+return moveProbability.getMove();
+}
+}
+throw new Exception(&quot;PROBABILITY ERROR&quot;);
+

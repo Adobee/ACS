@@ -1,0 +1,14 @@
+import com.google.inject.Singleton;
+import pij.ryan.durling.serializers.IdSerializer;
+
+@Singleton
+public class IdGeneratorImpl implements IdGenerator {
+private void setUpId(IdSerializer serializer) {
+if (serializer.dataExists()) {
+id = serializer.getId();
+} else {
+id = 0;
+}
+}
+}
+

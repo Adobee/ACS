@@ -1,0 +1,11 @@
+private SocketFactory socketFactory;
+
+@Override
+public Object receive(Object arg0, String arg1)
+throws CommunicationException {
+} catch (IOException e) {
+e.printStackTrace();
+throw new CommunicationException(true, e);
+} finally {
+if (socket != null &amp;&amp; !socket.isClosed()) {
+

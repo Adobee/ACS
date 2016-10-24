@@ -1,0 +1,11 @@
+currentOrd = -ord - 1;
+if (ord >= maxOrd) {
+return SeekStatus.END;
+} else {
+throw new UnsupportedOperationException(&quot;docsAndPositions not supported&quot;);
+}
+
+@Override
+public BytesRef next() throws IOException {
+if (++currentOrd < maxOrd) {
+

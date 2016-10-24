@@ -1,0 +1,12 @@
+this.domainSetDAO = domainSetDAO;
+}
+
+
+public int deleteDomainSet(String[] domainSetIDs) throws DataAccessException {
+public int insertDomainSet(DomainSet domainSet) throws DataAccessException {
+
+int result = -1;
+
+try{
+if(selectDomain(domainSet)==0)
+

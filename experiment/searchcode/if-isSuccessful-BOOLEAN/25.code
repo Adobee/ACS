@@ -1,0 +1,8 @@
+private List<ModelResult> modelResults;
+private boolean isSuccessful;
+private Reason reason;
+private Messages messages;
+isSuccessful = isSuccessful &amp;&amp; r.getReason().equals(Result.Reason.SUCCESS);
+if(!isSuccessful){
+this.reason = Reason.MODEL_FAILURE;
+

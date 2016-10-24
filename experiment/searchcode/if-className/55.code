@@ -1,0 +1,9 @@
+private String packageName = &quot;&quot;;
+private String className = &quot;&quot;;
+public JavaClassNameParser(String className){
+if(StringUtils.isBlank(className)){
+throw new InvalidParameterException(&quot;className is empty&quot;);
+}
+if(!className.contains(&quot;.&quot;)){
+className = className;
+

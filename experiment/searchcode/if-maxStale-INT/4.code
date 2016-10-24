@@ -1,0 +1,7 @@
+public class apiInterceptor implements RequestInterceptor {
+private static final String USER_AGENT = &quot;HypebeastStoreApp/1.0 Android &quot; + Build.VERSION.SDK_INT;
+// read from cache for 1 minute
+public static int timeByMins(int m) {
+int maxStale = 60 * m;
+return maxStale;
+

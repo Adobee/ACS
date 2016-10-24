@@ -1,0 +1,11 @@
+private final byte[] _buf;
+private final int _endIndex;
+private int _readIndex;
+private boolean _littleEndian = true;
+_littleEndian = le;
+}
+
+private void checkPosition(int i) {
+if (i > _endIndex - _readIndex)
+throw new RuntimeException(&quot;Buffer overrun&quot;);
+

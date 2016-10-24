@@ -1,0 +1,17 @@
+public boolean isMultiBlockStructure(World world, Block block, int x,
+int y, int z) {
+int BlockCount = 0;
+BlockCount = BlockCount + isBlockSame(world, x, y, z, block);
++ isBlockSame(world, x - 1, y - 1, z + 1, block);
+
+if (BlockCount == 29) {
+
+return true;
+} else {
+return false;
+}
+
+}
+
+}
+

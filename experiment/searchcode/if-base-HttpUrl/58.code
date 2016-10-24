@@ -1,0 +1,15 @@
+public class ConexaoHttp {
+
+// endereço URL
+static URL baseUrl = null;
+
+// Classe Http de conexão
+static HttpURLConnection httpUrl = null;
+public static String em(String url, Map<String, String> parametros) {
+
+resultado = new StringBuilder();
+
+try {
+baseUrl = new URL(url);
+httpUrl = (HttpURLConnection) baseUrl.openConnection();
+

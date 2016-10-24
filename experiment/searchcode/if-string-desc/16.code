@@ -1,0 +1,16 @@
+ANTES(&quot;ANTES&quot;), //
+DEPOIS(&quot;DEPOIS&quot;);
+
+private String desc;
+
+Grupo(String desc) {
+this.desc = desc;
+}
+
+public String getDesc() {
+return desc;
+}
+
+public static Grupo fromDesc(String desc) {
+for (Grupo grupo : Grupo.values()) {
+

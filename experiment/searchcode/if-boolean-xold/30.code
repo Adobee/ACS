@@ -1,0 +1,9 @@
+// Initialise xOld &amp; yOld as coordinates BEFORE turtle has stepped
+int xOld = getPosition()[0]; int yOld = getPosition()[1];
+
+boolean wallTop    = !getPaper().contains(new int[]{xOld, yOld + 1});
+boolean wallLeft   = !getPaper().contains(new int[]{xOld - 1, yOld});
+boolean wallRight  = !getPaper().contains(new int[]{xOld + 1, yOld});
+
+// If edge is a corner
+

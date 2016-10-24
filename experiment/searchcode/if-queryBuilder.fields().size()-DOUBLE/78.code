@@ -1,0 +1,6 @@
+Expression lteExpression = new Expression(lvalue, Operator.LTEQ, right);
+QueryBuilder andBuilder = walkAnd(gteExpression, lteExpression);
+if (!positive) {
+propBaseKeyToFieldBase.putIfAbsent(correlatedPath, queryBuilder.getPath());
+// Store object for this key
+

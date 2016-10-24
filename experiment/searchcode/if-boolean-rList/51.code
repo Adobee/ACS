@@ -1,0 +1,10 @@
+public class REXPGenericVector extends REXPVector {
+/** payload */
+private RList payload;
+
+/** creates a new generic vector from a list. If the list is named, the <code>&quot;names&quot;</code> attribute is created automatically from it.
+payload=(list==null)?new RList():list;
+// automatically generate &#39;names&#39; attribute
+if (payload.isNamed())
+attr = new REXPList(
+

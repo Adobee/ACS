@@ -1,0 +1,15 @@
+loaded = false;
+}
+if (!loaded) {
+tmpFile.delete();
+}
+}
+return loaded;
+}
+
+@Override
+public boolean save(String imageUri, Bitmap bitmap) throws IOException {
+OutputStream os = new BufferedOutputStream(new FileOutputStream(tmpFile), bufferSize);
+boolean savedSuccessfully = false;
+try {
+

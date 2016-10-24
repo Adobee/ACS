@@ -1,0 +1,8 @@
+private final double[][] sigma;
+private double x, y;
+
+public RandomGaussian2D(double[] mu, double[][] sigma, long seed) {
+this.mu = mu;
+this.sigma = sigma;
+if(mu.length != 2 || sigma.length != 2 || sigma[0].length != 2
+

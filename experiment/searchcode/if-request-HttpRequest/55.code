@@ -1,0 +1,8 @@
+package org.apache.http.myHttp.protocol;
+
+import org.apache.http.myHttp.HttpRequest;
+import org.apache.http.myHttp.HttpRequestInterceptor;
+public void process(HttpRequest httpRequest, HttpContext httpContext) {
+Args.notNull(httpRequest, &quot;HTTP request&quot;);
+if (!httpRequest.getRequestLine().getMethod().equalsIgnoreCase(&quot;CONNECT&quot;) &amp;&amp; !httpRequest.containsHeader(HTTP.CONN_DIRECTIVE)) {
+

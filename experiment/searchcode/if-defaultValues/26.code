@@ -1,0 +1,6 @@
+class LinqDefaultIfEmptyIterator<T> extends AbstractConvertedIterator<T, T> {
+// コンストラクター
+public LinqDefaultIfEmptyIterator(Iterable<T> source, Iterable<? extends T> defaultValues) {
+super(source);
+this.defaultValues = defaultValues;
+

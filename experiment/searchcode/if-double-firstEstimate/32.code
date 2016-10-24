@@ -1,0 +1,6 @@
+for(int a=0; a<accidents; a++) {
+int firstEstimate = estimate.getObservedDevelopmentCount(a);
+double expected = 0d;
+if(firstEstimate == developments)
+expected = Double.NaN;
+

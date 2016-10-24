@@ -1,0 +1,9 @@
+* Tells whether this and other ChainClusters are in same sequence cluster for the given seqClusterLevel
+* @param other
+* @param seqClusterLevel true if in same cluster, false if not or if no UniProt reference available for either chain
+int otherSeqCluster = other.getSeqClusterId(seqClusterLevel);
+
+if (thisSeqCluster==-1 || otherSeqCluster==-1) return false;
+
+return (thisSeqCluster==otherSeqCluster);
+

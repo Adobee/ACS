@@ -1,0 +1,8 @@
+* @param blockSize
+*            int block size
+* @return byte[] 패딩이 추가 된 결과 bytes
+*/
+public byte[] addPadding(byte[] source, int blockSize) {
+int paddingCnt = source.length % blockSize;
+byte[] paddingResult = null;
+

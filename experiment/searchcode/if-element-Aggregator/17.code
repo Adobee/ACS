@@ -1,0 +1,13 @@
+&quot;aggregator&quot;
+})
+public class Aggregators {
+
+@XmlElement(name = &quot;aggregator&quot;, namespace = &quot;http://www.brockmann-consult.de/calwps/calwpsL3Parameters-schema.xsd&quot;, nillable = false, required = true)
+public List<AggregatorConfig> getAggregator() {
+if (aggregator == null) {
+aggregator = new ArrayList<>();
+}
+return aggregator;
+}
+}
+

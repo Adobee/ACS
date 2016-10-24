@@ -1,0 +1,12 @@
+public class PalindromePermutation {
+public boolean isPermutationOfPalindrome(String phrase) {
+int bitVector = createBitVector(phrase);
+int toggle(int bitVector, int index) {
+if (index < 0) {
+return bitVector;
+}
+
+int mask = 1 << index;
+
+if((bitVector &amp; mask) == 0) {
+

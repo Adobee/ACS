@@ -1,0 +1,6 @@
+public class RegexSequenceNameMapper implements MetricNameMapper {
+private final List<Replacement> replacements;
+for (Replacement replacement : replacements) {
+Matcher m = replacement.pattern.matcher(name);
+if (m.matches()) {
+

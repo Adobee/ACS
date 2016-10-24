@@ -1,0 +1,9 @@
+package sim.utils;
+
+public class Direction {
+public static double getDirection(double lat1, double long1, double lat2, double long2) {
+double direction;
+double theta;
+
+theta = (lat1 + lat2) / 2;
+

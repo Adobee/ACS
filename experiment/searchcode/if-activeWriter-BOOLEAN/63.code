@@ -1,0 +1,9 @@
+private final FrameSink frameSink = new FrameSink();
+
+private boolean closed;
+private boolean activeWriter;
+
+private final byte[] maskKey = new byte[4];
+public WebSocketWriter(boolean isClient, BufferedSink sink, Random random) {
+if (sink == null) throw new NullPointerException(&quot;sink&quot;);
+

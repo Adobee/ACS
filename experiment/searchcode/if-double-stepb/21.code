@@ -1,0 +1,15 @@
+colors=id.getColors();
+}
+
+abstract BufferedImage tuneUp(BufferedImage image, double v);
+}
+
+
+class Colorize extends Colors{
+int x,y,r,g,b,i=0;
+int nr,ng,nb;
+double stepR, stepG, stepB;
+int [][]deltacolors = new int[256][3];
+
+Color rgba;
+

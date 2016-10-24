@@ -1,0 +1,13 @@
+package sorting;
+public class quickSort{
+public int partition(int A[],int beg,int end){
+int loc=beg,i=beg,j=end,temp;
+while(A[loc]<=A[j] &amp;&amp; loc!=j)	j--;
+if(loc==j)
+flag=true;
+else{
+temp=A[loc];
+A[loc]=A[j];
+A[j]=temp;
+loc=j;
+

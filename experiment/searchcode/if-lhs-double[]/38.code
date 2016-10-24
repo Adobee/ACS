@@ -1,0 +1,12 @@
+return new Integer( result );
+}
+
+if ( lhsObj instanceof Double || rhsObj instanceof Double ) {
+double lhsDouble = Coercion.toFloat( lhs.getValue() );
+double result = 0;
+
+if ( op == MULT ) {
+result = lhsDouble * rhsDouble;
+} else {
+result = lhsDouble / rhsDouble;
+

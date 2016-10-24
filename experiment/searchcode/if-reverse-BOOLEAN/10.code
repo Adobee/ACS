@@ -1,0 +1,15 @@
+public class RelayWrapper
+{
+private boolean forwards;
+private boolean reverse;
+
+public Value get() {
+
+if(forwards &amp;&amp; !reverse)
+{
+return Value.kForward;
+}
+else if(!forwards &amp;&amp; reverse)
+{
+return Value.kReverse;
+

@@ -1,0 +1,10 @@
+int k = 0, q = 0;
+
+//sign of a, b and a-b
+int sign_a = (a >> 31) &amp; (0x1);
+int sign_b = (b >> 31) &amp; (0x1);
+int sign_c = (c >> 31) &amp; (0x1) ^ 1;
+
+// 1 if sign of a and b are different
+int isSignDiff = sign_a ^ sign_b;
+

@@ -1,0 +1,8 @@
+package net.hs.easyj.saas.service.impl;
+
+import net.hs.easyj.saas.dao.QueryDao;
+import net.hs.easyj.saas.dao.QueryInDao;
+Query query = queryDao.findOne(Query.exampleOf(tenantId, code));
+if(query!=null) {
+List<QueryIn> queryIns = queryInDao.findByExample(QueryIn.exampleOf(tenantId, query.getId()));
+

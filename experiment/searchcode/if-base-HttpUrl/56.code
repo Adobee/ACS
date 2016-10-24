@@ -1,0 +1,9 @@
+private boolean questMark = true;
+
+public HttpUrl(String baseUrl) {
+this.url = new StringBuilder().append(baseUrl);
+}
+
+public HttpUrl(String scheme, String domain, String basePath) {
+this(scheme, domain, 0, basePath);
+

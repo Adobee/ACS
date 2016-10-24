@@ -1,0 +1,12 @@
+ForwardIndex ForwardIndex = null;
+if (DBWrapper.getStore() != null) {
+PrimaryIndex<String, ForwardIndex> fIndexPrimaryIndex = DBWrapper.getStore().getPrimaryIndex(String.class,
+insertedForwardIndex = fIndexPrimaryIndex.put(ForwardIndex);
+}
+}
+return insertedForwardIndex;
+}
+
+public boolean delete(String ForwardIndexId) {
+if (DBWrapper.getStore() != null) {
+

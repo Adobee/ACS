@@ -1,0 +1,7 @@
+public static String getAreaCookieValue(HttpServletRequest request){
+String domainValue = DomainUtil.getDomainValue(request);
+
+if(domainValue.equals(DomainConst.SN_DOMAIN)){
+return DomainConst.SN_DOMAIN_CODE;
+} else if(domainValue.equals(DomainConst.HN_DOMAIN)){
+

@@ -1,0 +1,7 @@
+for (int frame = 0; frame < rolls.length / 2; frame++) {
+if (isStrike(frame)) {
+int rollOffset = isStrike(frame + 1) ? 2 : 1;
+score += rolls[(frame + 1) * 2 + rollOffset];
+} else if (isSpare(frame)) {
+score += rolls[(frame + 1) * 2];
+

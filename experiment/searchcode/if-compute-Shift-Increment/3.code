@@ -1,0 +1,8 @@
+* @param pageShift
+* @throws IllegalArgumentException
+* 		if pageShift is negative or greater than 62
+*/
+protected PagedSpace(int pageShift) {
+private ByteSpace getPage(long position) {
+return map.computeIfAbsent(position >>> pageShift, page -> this.map(page));
+

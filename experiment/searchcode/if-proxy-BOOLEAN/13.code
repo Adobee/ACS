@@ -1,0 +1,11 @@
+import java.net.SocketAddress;
+
+public class ProxyHandler {
+
+private static boolean useProxy = true;
+
+private static final int PROXY_PORT = 3128;
+public static Proxy getProxy() {
+if (useProxy) {
+SocketAddress addr = new InetSocketAddress(PROXY_HOST, PROXY_PORT);
+

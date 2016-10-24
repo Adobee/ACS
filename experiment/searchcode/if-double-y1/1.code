@@ -1,0 +1,9 @@
+package Field;
+
+public class Wall {
+
+private final double x1;
+private final double y1;
+private boolean inSection(double x, double x1, double x2, double y, double y1, double y2){
+if (Math.abs(x1 - x2) > 0.1) {
+

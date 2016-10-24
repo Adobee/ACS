@@ -1,0 +1,15 @@
+public void setSeries(ArrayList<Series> series) {
+this.series = series;
+}
+
+public void addSeries(Series series) {
+if(!this.series.contains(series)) {
+e.printStackTrace();
+}
+notifyObservers();
+}
+}
+
+public void deleteSeries(Series series) {
+if(this.series.remove(series)) {
+

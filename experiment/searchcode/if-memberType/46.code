@@ -1,0 +1,11 @@
+private Class<?> memberType = null;
+
+/**
+* Passes children on to base init and sets up member
+* type if its null and template has a class.
+public void init(Template template, List<TemplateElement> children) {
+super.init(children);
+
+// Auto set member type if we can
+if( memberType == null &amp;&amp; template.getTemplateClass() != null ) {
+

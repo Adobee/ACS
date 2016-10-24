@@ -1,0 +1,7 @@
+events.stream().filter(e -> Double.parseDouble(e.getTtStart()) < 15.0).forEachOrdered(
+e -> {
+if (canGoInSchedule(e, schedule)) {
+DateTime offsetAdjusted = e.getStart().minusHours(11);
+int hourOfDay = offsetAdjusted.getHourOfDay();
+int minuteOfHour = offsetAdjusted.getMinuteOfHour();
+

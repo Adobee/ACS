@@ -1,0 +1,7 @@
+sender.sendMessage(ChatDefault + &quot;Sends the item(s) you&#39;re holding to another players mailbox.&quot;);
+if(useEco &amp;&amp; !sender.hasPermission(&quot;MailItems.free&quot;)) {
+double price = MailItemsConfigManager.ConfigYML.getDouble(&quot;economy.price.senditem&quot;);
+if(ShowFrom) {
+List<String> lores = heldItem.getItemMeta().getLore();
+if(lores == null) {
+

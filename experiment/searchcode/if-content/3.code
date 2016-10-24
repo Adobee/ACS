@@ -1,0 +1,8 @@
+public class DBGoogleNews extends DB {
+
+public Content fillIn(Content content, int start, int limit,
+String arguments) {
+
+if (limit < 0 || limit > content.getContents().size()) {
+limit = content.getContents().size();
+

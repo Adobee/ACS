@@ -1,0 +1,12 @@
+return this.headergroup != null ? this.headergroup.getHeaders(name) : null;
+}
+
+public RequestBuilder addHeader(Header header) {
+if (this.headergroup == null) {
+this.headergroup.addHeader(header);
+return this;
+}
+
+public RequestBuilder addHeader(String name, String value) {
+if (this.headergroup == null) {
+

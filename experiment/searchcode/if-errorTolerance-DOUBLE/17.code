@@ -1,0 +1,10 @@
+private int budgetSize;
+private double errorTolerance;
+private int time;
+private KernelPoint kpoint;
+private KernelPoints kpoints;
+public void setErrorTolerance(double errorTolerance)
+{
+if(errorTolerance < 0 || errorTolerance > 1 || Double.isNaN(errorTolerance))
+throw new IllegalArgumentException(&quot;Error tolerance must be in [0, 1], not &quot; + errorTolerance);
+

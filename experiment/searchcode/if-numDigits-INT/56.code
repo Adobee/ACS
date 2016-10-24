@@ -1,0 +1,8 @@
+private static final String STRING_FORMATER_COMPLEMENT = &quot;%0&quot;;
+
+public static String getBadge(int position, int numberOfNodes) {
+
+int numDigits = (int) Math.log10(numberOfNodes) + 1;
+if(numDigits < 2) numDigits = 2;
+String format = STRING_FORMATER_COMPLEMENT + String.valueOf(numDigits) + STRING_FORMATER_TYPE;
+

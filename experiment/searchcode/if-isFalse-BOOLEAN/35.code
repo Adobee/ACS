@@ -1,0 +1,14 @@
+@Test
+public void should_pass_if_actual_is_false(){
+ObservableBooleanValue actual = new SimpleBooleanProperty(false);
+assertThat(error).hasMessageContaining(&quot;to be false but it wasn&#39;t&quot;);
+}
+}
+
+@Test(expected = AssertionError.class)
+public void should_fail_if_actual_is_null(){
+new ObservableBooleanValueAssertions(null).isFalse();
+}
+
+}
+

@@ -1,0 +1,8 @@
+for (int i = 0; i < n; i++)
+for (int j = i + 1; j < n; j++) {
+long a = S[i], b = S[j];
+if (a * b <= MAX >> 1) {
+long s = (long) Math.sqrt(T(a) * T(b));
+long x = a * (b + 1) + s + s;
+if (x <= MAX)
+

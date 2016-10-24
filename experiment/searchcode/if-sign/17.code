@@ -1,0 +1,9 @@
+private int wins = 0,losses = 0,draw = 0;
+
+@Override
+public Situation getMode(IGamePlayData data,Sign sign) {
+if((data.getSign(0) == sign) &amp;&amp; (data.getSign(1) == sign) &amp;&amp; (data.getSign(2) == sign))
+return Situation.win;
+if((data.getSign(3) == sign) &amp;&amp; (data.getSign(4) == sign) &amp;&amp; (data.getSign(5) == sign))
+return Situation.win;
+

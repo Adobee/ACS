@@ -1,0 +1,13 @@
+while (hnew >= 24) {
+hnew -= 24;
+}
+
+while (hnew < 0) {
+hnew += 24;
+}
+
+if (hnew == 0 &amp;&amp; mnew == 0) {
+System.out.println(&quot;midnight&quot;);
+} else if (hnew < 12) {
+if (hnew == 0) hnew = 12;
+

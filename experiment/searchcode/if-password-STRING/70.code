@@ -1,0 +1,9 @@
+if (TextUtils.isEmpty(mPassword) || TextUtils.isEmpty(mConfirmPassword))
+return R.string.msgPasswordPatternFail;
+
+if (mPassword.length() < 4 || mPassword.length() > 6)
+return R.string.msgPasswordPatternFail;
+
+if (mConfirmPassword.length() < 4 || mConfirmPassword.length() > 6)
+return R.string.msgPasswordPatternFail;
+

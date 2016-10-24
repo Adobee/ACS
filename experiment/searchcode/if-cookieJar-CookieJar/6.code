@@ -1,0 +1,11 @@
+import java.util.List;
+
+import javax.annotation.Nullable;
+
+import okhttp3.Cookie;
+import okhttp3.CookieJar;
+import okhttp3.HttpUrl;
+public void saveFromResponse(HttpUrl url, List<Cookie> cookies) {
+if (cookieJar != null) {
+cookieJar.saveFromResponse(url, cookies);
+

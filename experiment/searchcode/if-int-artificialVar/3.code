@@ -1,0 +1,8 @@
+int slackVar = 0;
+int artificialVar = 0;
+for (int i = 0; i < constraints.size(); i++) {
+* in the objective function via elementary row operations.
+*/
+private void initialize() {
+for (int artificialVar = 0; artificialVar < numArtificialVariables; artificialVar++) {
+

@@ -1,0 +1,10 @@
+this.screenHeight = screenHeight;
+}
+
+public void move(float value) {
+if(bounds.getY() + bounds.getHeight() + value <= screenHeight &amp;&amp; bounds.getY() + value >= 0)
+return new Rectangle(bounds.getX(), bounds.getY(), bounds.getWidth(), bounds.getHeight());
+}
+
+public boolean hit(Ball ball) {
+

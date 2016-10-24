@@ -1,0 +1,10 @@
+public static Object select(int[] A, int k, int low, int high) {
+int pivot = A[k];
+A = flip(A, k, high);
+high--;
+while (low != high) {
+if (A[low] < pivot) {
+low++;
+}
+else if (A[low] > pivot) {
+

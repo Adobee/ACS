@@ -1,0 +1,11 @@
+for(int i=0;i<N;++i){
+resultIndices[0] = i+1;
+for (int j=i+1;j<N ;++j ) {
+resultIndices[1] = j+1;
+if(numbers[j] == target - numbers[i]){
+return resultIndices;
+}
+}
+}
+// if none found, return -1
+

@@ -1,0 +1,11 @@
+package leetcode;
+
+public class Minimum_Depth_of_Binary_Tree {
+
+private int depth;
+private int minDepth;
+
+public int minDepth(TreeNode root) {
+if(root==null)
+return 0;
+

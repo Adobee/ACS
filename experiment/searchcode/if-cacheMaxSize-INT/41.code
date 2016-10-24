@@ -1,0 +1,8 @@
+public LruDiskCache(File cacheDir, File reserveCacheDir, long cacheMaxSize,
+int cacheMaxFileCount) throws IOException {
+if (cacheDir == null) {
+throw new IllegalArgumentException(&quot;cacheMaxFileCount&quot; + ERROR_ARG_NEGATIVE);
+}
+
+if (cacheMaxSize == 0) {
+

@@ -1,0 +1,9 @@
+public int[] searchRange(int[] nums, int target) {
+if ((nums == null) || (nums.length == 0)) {
+return isFirst(nums, target, start) ? start : -1;
+}
+
+int mid = start + ((end - start) / 2);
+if (isFirst(nums, target, mid)) {
+return mid;
+

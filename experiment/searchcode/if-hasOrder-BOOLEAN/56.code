@@ -1,0 +1,12 @@
+public Iterable<Integer> getOrder() {
+return order;
+}
+
+public boolean hasOrder() {
+return order != null;
+}
+
+public int rank(int v) {
+validateVertex(v);
+if (hasOrder()) return rank[v];
+

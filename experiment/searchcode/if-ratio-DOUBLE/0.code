@@ -1,0 +1,6 @@
+public static Ratio pow(Ratio base, Number exponent){
+if(exponent.doubleValue()<0){
+return pow(base.reciprocal(),exponent.doubleValue()*-1);
+}
+if(exponent instanceof Ratio &amp;&amp; ((Ratio) exponent).reduce().getDenominator()==1){
+

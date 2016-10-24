@@ -1,0 +1,13 @@
+package org.chromium.chrome.browser.ntp.snippets;
+
+import android.graphics.Bitmap;
+
+import org.chromium.base.Callback;
+import org.chromium.base.annotations.CalledByNative;
+mObserver.onSnippetsReceived(newSnippets);
+}
+
+@CalledByNative
+private void onSnippetsDisabled() {
+if (mObserver != null) mObserver.onSnippetsDisabled();
+

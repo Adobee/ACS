@@ -1,0 +1,13 @@
+public class Complexo {
+
+protected double real;
+private double img;
+
+public Complexo(double real, double img) {
+this.real = real;
+this.img = img;
+}
+
+public double modulo() {
+return Math.sqrt((this.img * this.img) + (this.real * this.real));
+

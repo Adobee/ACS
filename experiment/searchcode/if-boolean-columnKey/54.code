@@ -1,0 +1,10 @@
+DefaultKeyedValues rowData = (DefaultKeyedValues) this.rows.get(row);
+if (rowData != null) {
+Comparable columnKey = (Comparable) this.columnKeys.get(column);
+return Collections.unmodifiableList(this.columnKeys);
+}
+
+
+public Number getValue(Comparable rowKey, Comparable columnKey) {
+if (rowKey == null) {
+

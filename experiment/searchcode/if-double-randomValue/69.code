@@ -1,0 +1,8 @@
+case Double:
+generatedValue =RandomValue.generateDoubleValue(length, Constants.TRUE);
+break;
+case Number:
+case Double:
+if(!isMandatory.equals(Constants.N))
+generatedValue = RandomValue.generateDoubleValue(length, Constants.FALSE);
+

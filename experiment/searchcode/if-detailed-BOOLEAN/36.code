@@ -1,0 +1,12 @@
+public class ApiError {
+
+private int status;
+private String message;
+private String detailedMessage;
+
+public ApiError(final int status, final String message, final String detailedMessage) {
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+if (o == null || getClass() != o.getClass()) return false;
+

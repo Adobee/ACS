@@ -1,0 +1,7 @@
+int dataType = in.readInt();
+
+if (ObjectStreamSupport.NULL_OBJECT == dataType) {
+return readNullObject(in);
+} else if (ObjectStreamSupport.REUSE_OBJECT == dataType) {
+return readReuseObject(in);
+

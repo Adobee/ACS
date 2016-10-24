@@ -1,0 +1,7 @@
+package jp.mts.taskmanage.rest.aspect;
+
+import jp.mts.taskmanage.application.MemberAppService;
+public Member loadMember(MemberAppService memberAppService) {
+if (!isMemberLoaded) {
+this.member = memberAppService.findById(memberId);
+

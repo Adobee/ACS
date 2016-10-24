@@ -1,0 +1,9 @@
+private final LinkedHashMap<String, Entry> lruEntries = new LinkedHashMap<>(0, 0.75f, true);
+private int redundantOpCount;
+private boolean hasJournalErrors;
+journalWriter.writeUtf8(DIRTY).writeByte(&#39; &#39;).writeUtf8(key).writeByte(&#39;\n&#39;);
+journalWriter.flush();
+
+if (hasJournalErrors) {
+return null; // Don&#39;t edit; the journal can&#39;t be written.
+

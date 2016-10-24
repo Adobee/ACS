@@ -1,0 +1,6 @@
+IndexMetaData indexMetaData = event.state().metaData().index(index);
+if (indexMetaData != null &amp;&amp; indexMetaData.getMappings().size() > 0 &amp;&amp; event.indexMetaDataChanged(indexMetaData)) {
+unindexableKeyspace.remove(indexMetaData.keyspace());
+}
+if (logger.isTraceEnabled())
+

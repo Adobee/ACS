@@ -1,0 +1,16 @@
+
+
+public class Day {
+
+private int day;
+String [] days = {&quot;sun&quot;,&quot;mon&quot;,&quot;tue&quot;,&quot;wed&quot;,&quot;thu&quot;,&quot;fri&quot;,&quot;sat&quot;};
+System.out.println(days[day]);
+}
+
+public String calculateDay(int change)
+{
+if(change < 0)
+{
+int numDays = change/-7 + 1;
+change = change + numDays*7-1;
+

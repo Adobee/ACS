@@ -1,0 +1,8 @@
+private static <T> Ratio<? extends T> of(final OrderedRing<T> ring, final Domain<T> ringAsDomain, T num, T denom)
+{
+if (ringAsDomain != null)
+{
+final T hcf = Domains.hcf(ringAsDomain, num, denom);
+if (ring.equals(hcf, ring.zero()))
+throw new IllegalArgumentException();
+

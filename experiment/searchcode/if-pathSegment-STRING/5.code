@@ -1,0 +1,9 @@
+public class UrlUtils {
+
+public static String encodeUrlPathSegment(String pathSegment, HttpServletRequest request){
+String enc = request.getCharacterEncoding();
+if(enc == null){
+enc = &quot;UTF-8&quot;;
+}
+try{
+

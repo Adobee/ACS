@@ -1,0 +1,11 @@
+this.radius = radius;
+}
+
+public boolean isOverlapping(SceneManagerInterface sceneManager) {
+
+LinkedList<Plane> planes = calculatePlanes(sceneManager.getFrustum());
+* @param p the plane being tested for collision
+* @return true if the bounding box collides with the plane
+*/
+private boolean isInsidePlane(Plane p) {
+

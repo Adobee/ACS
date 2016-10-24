@@ -1,0 +1,10 @@
+public interface IMEEssentiaMonitorReceiver
+{
+/**
+* Verifies that the receiver is still valid.<br>
+* If returning false the receiver will be removed from the monitor
+* @param verificationToken
+* @return False if the receiver should no longer get updates.
+*/
+boolean isValid( @Nonnull Object verificationToken );
+

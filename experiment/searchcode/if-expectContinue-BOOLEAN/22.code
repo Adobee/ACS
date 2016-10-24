@@ -1,0 +1,9 @@
+HttpEntityEnclosingRequestBase httpentityenclosingrequestbase = (HttpEntityEnclosingRequestBase)super.clone();
+if(entity != null)
+return httpentityenclosingrequestbase;
+}
+
+public boolean expectContinue()
+{
+Header header = getFirstHeader(&quot;Expect&quot;);
+

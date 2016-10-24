@@ -1,0 +1,10 @@
+return new Integer(p1.getComeSeconds()).compareTo(new Integer(p2.getComeSeconds()));
+}
+});
+int num = 0;
+if (p.getComeSeconds() > end)
+break;
+++num;
+if (window.size() == K){
+int minFinishTime = Integer.MAX_VALUE;
+

@@ -1,0 +1,9 @@
+public double evaluateL(int i, int Q_l, double[] p, boolean is_real) {
+
+if( (Q_l<0) || (Q_l>get_Q_l(i)-1) ) {
+public double[] eval_func(double[] p, double[] x){
+double pi = Math.PI;
+double mu_r = pi/4;
+double R2 = 1.0;
+double R1 = 0.5;
+

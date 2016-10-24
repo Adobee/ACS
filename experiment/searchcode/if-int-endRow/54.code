@@ -1,0 +1,12 @@
+private int startColumn, endColumn, startRow, endRow;
+
+public SelectionArea(int startColumn, int startRow, int endColumn,
+private void swapPositions() {
+
+int tmp;
+
+if (endRow < startRow) {
+tmp = endRow;
+endRow = startRow;
+startRow = tmp;
+

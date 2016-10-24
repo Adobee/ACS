@@ -1,0 +1,10 @@
+round.sendEvent(rAccess, Round.RoundEvent.UserTurn);
+
+if (round.getUser(rAccess).blackjack())
+public void hit(Round round)
+{
+round.hitUser(rAccess);
+if (round.getUser(rAccess).busted())
+{
+round.sendEvent(rAccess, Round.RoundEvent.UserBusted);
+

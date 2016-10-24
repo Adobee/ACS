@@ -1,0 +1,12 @@
+final class BlockMatrixBuilder extends MatrixBuilder<BlockMatrix> {
+
+private final int blockRows;
+
+private final int blockColumns;
+
+private final int rows;
+this.blocks = new PackedMatrixBuilder[multiplyExact(blockRows,
+blockColumns)];
+
+for (int i = 0; i < this.blocks.length; i++) {
+

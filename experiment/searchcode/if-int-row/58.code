@@ -1,0 +1,7 @@
+int row = matrix.length;
+if(row == 0) return;
+this.matrix = matrix;
+for(int i = 0; i < row; i++) {
+for(int j = 0; j < row - i; j++) {
+swap(i, j, row - j - 1, row - i - 1);
+

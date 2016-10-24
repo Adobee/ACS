@@ -1,0 +1,13 @@
+public boolean isPalindrome(int x) {
+
+if(x==0)
+return true;
+
+int numDigits = 0;
+long xx = x;
+while(xx >= Math.pow(10, numDigits))
+numDigits++;
+
+if(numDigits == 1)
+return true;
+

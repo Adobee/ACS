@@ -1,0 +1,11 @@
+public class Money implements Content {
+protected int amount;
+
+/**
+* @param amount
+*            amount of the money
+* @throws IllegalArgumentException
+*             if the amount is negative
+*/
+public Money(int amount) throws IllegalArgumentException {
+

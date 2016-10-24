@@ -1,0 +1,11 @@
+return new Neg(operation.copy());
+}
+
+@Override
+public Operation simplify() {
+operation.simplify();
+if (operation instanceof Const) {
+operation = operation.toStand();
+if (operation instanceof Neg) {
+return ((Neg) operation).operation;
+

@@ -1,0 +1,8 @@
+import java.util.concurrent.atomic.AtomicReference;
+
+import org.jocean.xharbor.api.HttpMessageTransformer;
+
+import io.netty.handler.codec.http.DefaultFullHttpResponse;
+public Observable<HttpObject> call(final HttpObject msg) {
+if (msg instanceof HttpRequest) {
+

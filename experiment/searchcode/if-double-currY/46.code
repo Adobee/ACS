@@ -1,0 +1,8 @@
+public class NFDH implements SchedulingAlgorithm {
+public double schedule(ArrayList<Job> rectangleList,
+double D) {
+Collections.sort(rectangleList);
+double currX = D;
+// int currY = 0;
+double currH = 0;
+

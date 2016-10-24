@@ -1,0 +1,7 @@
+public boolean alterData(CharacterData data, MesquiteTable table,  UndoReference undoReference){
+if (data==null || table==null || !(data instanceof DNAData))
+UndoInstructions undoInstructions = data.getUndoInstructionsAllData();
+
+MesquiteBoolean dataChanged = new MesquiteBoolean();
+int[] numStops= new int[3];
+

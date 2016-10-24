@@ -1,0 +1,9 @@
+private static final String ResolvedTag = &quot;_MultipartResolved&quot;;
+
+@Override
+public boolean isMultipart(HttpServletRequest request) {
+if (request.getAttribute(ResolvedTag) != null) {
+return false;
+}
+request.setAttribute(ResolvedTag, ResolvedTag);
+

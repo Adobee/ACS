@@ -1,0 +1,7 @@
+int r = systemService.saveSysConfig(systemForm.getConf());
+if(r==1){
+request.getSession().setAttribute(FhiConfig.System_Info, &quot;系统配置保存成功！&quot;);
+}
+else if(r==0){
+request.getSession().setAttribute(FhiConfig.System_Info, &quot;未知错误！系统配置保存失败！&quot;);
+

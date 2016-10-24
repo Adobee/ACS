@@ -1,0 +1,12 @@
+public class LogConfigurator {
+
+private static boolean loaded;
+
+private static ImmutableMap<String, String> replacements = new MapBuilder<String, String>()
+public static void configure(Settings settings) {
+if (loaded) {
+return;
+}
+loaded = true;
+ClientEnvironment environment = new ClientEnvironment(settings);
+

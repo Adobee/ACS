@@ -1,0 +1,10 @@
+public static PosgresDAO getInstance() throws PrivateRecsysException {
+if(instance==null)
+instance= new PosgresDAO();
+
+return instance;
+}
+
+synchronized public boolean containsItemKey(long itemId) throws SQLException {
+boolean resp=false;
+

@@ -1,0 +1,6 @@
+import com.hubspot.blazar.base.ModuleBuild;
+import com.hubspot.blazar.base.RepositoryBuild;
+import com.hubspot.blazar.base.visitor.AbstractModuleBuildVisitor;
+for (ModuleBuild otherBuild : moduleBuildService.getByRepositoryBuild(build.getRepoBuildId())) {
+if (downstreamModules.contains(otherBuild.getModuleId()) &amp;&amp; !otherBuild.getState().isComplete()) {
+

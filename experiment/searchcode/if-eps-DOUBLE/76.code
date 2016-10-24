@@ -1,0 +1,7 @@
+public static final double EPS = 1e-9;
+
+@Override
+public int compare(double first, double second) {
+if (first + EPS < second) return -1;
+if (first > second + EPS) return 1;
+

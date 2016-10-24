@@ -1,0 +1,11 @@
+return true;
+}
+
+public int getMin(Node root){
+if(root.left==null)return root.value;
+else return getMin(root.left);
+}
+
+public Node getMinNode(Node root){
+if(root.left==null)return root;
+

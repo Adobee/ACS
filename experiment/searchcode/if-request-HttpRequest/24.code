@@ -1,0 +1,10 @@
+this.httpRequest = httpRequest;
+}
+
+@Override
+public void run() {
+if(httpRequest.isCanceled()){
+httpRequest.finish();
+new CancelRunnable(httpRequest).execute();
+if(httpRequest.getGoHttp().isDebugMode()) Log.w(GoHttp.LOG_TAG, httpRequest.getName()+&quot;; &quot;+&quot;Canceled : 刚刚开始&quot;+&quot;; &quot;+httpRequest.getUrl());
+

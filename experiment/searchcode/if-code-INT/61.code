@@ -1,0 +1,11 @@
+IQUERY(1),
+STATUS(2);
+
+private final int code;
+
+Opcode(int code) {
+this.code = code;
+public static Opcode getForIntCode(int intCode) throws InvalidRequestException {
+for (Opcode opcode : values()) {
+if (opcode.getIntCode() == intCode) {
+

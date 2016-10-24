@@ -1,0 +1,8 @@
+receiver = ((IStructuredSelection) receiver).getFirstElement();
+} else if (receiver instanceof Iterable<?>) {
+receiver = Iterables.getFirst((Iterable<?>) receiver, null);
+}
+
+receiver = EMFHelper.getEObject(receiver);
+if (receiver instanceof Package) {
+

@@ -1,0 +1,12 @@
+(rhsType == DataType.REAL_NUMBER || rhsType == DataType.WHOLE_NUMBER || rhsType == DataType.TORF))
+{
+float finalLhsValue = 0;
+float finalRhsValue = 0;
+
+if (lhsType == DataType.TORF)
+finalLhsValue = lhs.valueAsTorf() ? 1 : 0;
+else
+finalLhsValue = lhs.valueAsFloat();
+
+if (rhsType == DataType.TORF)
+

@@ -1,0 +1,12 @@
+int toY = rutenavn.charAt(1) - 48;
+
+//Tårn flytter opp.
+if ( fromX== toX &amp;&amp; fromY > toY) {
+for (int i = fromY-1; i > toY; i--) {
+System.out.println(&quot;Fungerte i nr 1   &quot; + fromX + &quot;   &quot; + fromY + &quot;   &quot; + toX + &quot;   &quot; + toY);
+if (brikkene[fromX][i] != null) {
+return false;
+}
+}
+return true;
+

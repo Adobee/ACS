@@ -1,0 +1,9 @@
+for (int gmt = -9; gmt <= 9; gmt++) {
+String produced = produceTime(hour, minute, gmt);
+if (isMatched(produced, time)) {
+String produceTime(int hour, int minute, int gmt) {
+return String.format(&quot;%02d:%02d GMT%+d&quot;, hour, minute, gmt);
+}
+
+boolean isMatched(String filled, String pattern) {
+

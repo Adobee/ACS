@@ -1,0 +1,10 @@
+private final boolean sendLeaveRequest;
+
+private final ElectMasterService electMaster;
+
+private final boolean masterElectionFilterClientNodes;
+initialStateSent.set(false);
+DiscoveryNodes nodes = nodes();
+if (sendLeaveRequest) {
+if (nodes.masterNode() == null) {
+

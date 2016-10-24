@@ -1,0 +1,9 @@
+double msq = (tx - x_[0]) * (tx - x_[0]) + (ty - y_[0])
+* (ty - y_[0]);
+for (int j = 1; j < x_.length; ++j) {
+double dsq = (tx - x_[j]) * (tx - x_[j]) + (ty - y_[j])
+* (ty - y_[j]);
+if (dsq < msq) {
+match = j;
+msq = dsq;
+

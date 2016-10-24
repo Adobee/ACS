@@ -1,0 +1,10 @@
+tag.setInteger(&quot;networkID&quot;, this.network.getID());
+}
+}
+
+public boolean linkToTile(TileEntityRadioNetwork newTile){
+network.add(this);
+boolean ret = network.add(newTile);
+if(ret){
+RadioMod.radioNetworkHandler.addNetwork(network);
+

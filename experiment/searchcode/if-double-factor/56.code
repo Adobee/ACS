@@ -1,0 +1,9 @@
+int basePrice = _quantity * _itemPrice;
+double discountFactor;
+if(basePrice > 1000){
+discountFactor = 0.95;
+public double getPrice1(){
+final int basePrice = basePrice(); //
+final double discountFactor;
+if(basePrice > 1000){
+

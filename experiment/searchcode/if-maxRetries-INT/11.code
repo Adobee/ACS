@@ -1,0 +1,8 @@
+private int maxRetries = 3;
+private int currentRetries;
+
+public String handleServiceError(Message<?> msg) {
+logger.info(&quot;Handling service failure&quot;);
+
+if (maxRetries > 0) {
+

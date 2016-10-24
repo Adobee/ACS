@@ -1,0 +1,17 @@
+package kembe.sim;
+
+import fj.F;
+
+public class AgentId {
+
+public final String id;
+
+public AgentId(String id) {
+return AgentId.idFromString( s );
+}
+};
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+

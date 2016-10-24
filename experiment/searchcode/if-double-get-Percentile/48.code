@@ -1,0 +1,12 @@
+RgrtaService RgrtaService = Context
+.getService(RgrtaService.class);
+Percentile percentileTable = null;
+
+if (type.equalsIgnoreCase(PERCENTILE_BMI))
+percentileTable = RgrtaService.getWtageinf(agemos, sex);
+}
+
+if (type.equalsIgnoreCase(PERCENTILE_LEN))
+{
+percentileTable = RgrtaService.getLenageinf(agemos, sex);
+

@@ -1,0 +1,5 @@
+public Integer getMaxDurability(ItemStack item) {
+if (item.hasItemMeta() &amp;&amp; item.getItemMeta().hasLore()) {
+for (String line : item.getItemMeta().getLore()) {
+if (line.contains(ChatColor.GOLD + &quot;Durability: &quot;)) {
+

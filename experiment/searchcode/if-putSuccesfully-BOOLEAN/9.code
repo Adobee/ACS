@@ -1,0 +1,7 @@
+public V get(K key) {
+Long loadingDate = (Long) this.loadingDates.get(key);
+if (loadingDate != null &amp;&amp; System.currentTimeMillis() - loadingDate.longValue() > this.maxAge) {
+public boolean put(K key, V value) {
+boolean putSuccesfully = this.cache.put(key, value);
+if (putSuccesfully) {
+

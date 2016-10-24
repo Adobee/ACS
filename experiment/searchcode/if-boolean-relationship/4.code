@@ -1,0 +1,9 @@
+Relationship r = i.next();
+if(r instanceof GeneralizationRelationship){
+if(((GeneralizationRelationship) r).getParent().equals(element) || ((GeneralizationRelationship) r).getChild().equals(element)){
+i.remove();
+}
+}
+if(r instanceof RealizationRelationship){
+if(((RealizationRelationship) r).getClient().equals(element) || ((RealizationRelationship) r).getSupplier().equals(element)){
+

@@ -1,0 +1,7 @@
+public static List<TimeZone> getTimeZones() {
+if (timeZones == null) {
+timeZones = new ArrayList<TimeZone>();
+final String[] timeZoneIds = TimeZone.getAvailableIDs();
+for (final String id : timeZoneIds) {
+if (id.matches(TIMEZONE_ID_PREFIXES)) {
+

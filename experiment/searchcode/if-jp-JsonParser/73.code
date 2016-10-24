@@ -1,0 +1,10 @@
+static JSONValue evaluate(String json) {
+
+JsonParser jp = null;
+try {
+JsonFactory f = new JsonFactory();
+JSONObject jsonObject = extractJSONObject(json, jp);
+return jsonObject;
+} catch (Exception e) {
+if (e instanceof GwtTestException) {
+

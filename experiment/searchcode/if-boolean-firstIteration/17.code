@@ -1,0 +1,13 @@
+public boolean accept(File f)
+{
+boolean ret = false;
+if (f.isDirectory()) ret = true;
+else
+{
+String f_extention = FileUtils.getFileExtension(f);
+StringBuffer sb = new StringBuffer();
+boolean firstIteration = true;
+for (String extension : extensions)
+{
+if (firstIteration)
+

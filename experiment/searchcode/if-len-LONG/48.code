@@ -1,0 +1,7 @@
+int n = 0;
+for (int len = 1; len <= 10; len++) {
+for (int i = 0; i < 1 << len; i++) {
+long v = 0;
+for (int j = 0; j < len; j++) {
+if ((i >> j &amp; 1) == 0) v = v * 10 + 4;
+

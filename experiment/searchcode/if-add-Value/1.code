@@ -1,0 +1,8 @@
+protected void write(AddablePreparedStatement st) throws SQLException {
+T value = get();
+if (value instanceof Integer) {
+st.addInt(value.intValue());
+}
+else if (value instanceof Long) {
+st.addLong(value.longValue());
+

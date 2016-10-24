@@ -1,0 +1,11 @@
+public static double[] discreteFT(double[]fourierdata, int N, boolean forward)
+{
+double X[] = new double[2*N];
+double omega;
+int k, ki, kr, n;
+
+if (forward){// if forward fourier transform is true
+omega = 2.0*Math.PI/N;
+}
+else {// if inverse fourier transform is true
+

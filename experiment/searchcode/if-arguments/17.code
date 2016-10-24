@@ -1,0 +1,6 @@
+@Override
+public void initialize(IProject project, Object arguments) throws CoreException {
+if ((arguments instanceof String) &amp;&amp; ((String) arguments).length() > 0)
+matcher = new StringMatcher((String) arguments, true, false);
+}
+

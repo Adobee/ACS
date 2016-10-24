@@ -1,0 +1,12 @@
+Scanner sc = new Scanner(System.in);
+System.out.println(&quot;Please enter the number:&quot;);
+double a1 = sc.nextDouble();
+
+if ((a1 > 51) || (a1 < 1)) {
+for(;a1<=52;a1++){
+
+if ((a1/4>0)&amp;&amp;(a1/4<=1)){
+System.out.print(&quot;two&quot;);
+}
+if ((a1/4>1)&amp;&amp;(a1/4<=2)){
+

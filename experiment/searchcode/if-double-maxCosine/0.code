@@ -1,0 +1,9 @@
+// largest cosine means smallest angle
+//  and cosine is (a . b ) / |a| |b|
+double maxCosine = - 1d;
+Axis closest = null;
+for (Axis axis : this .zones) {
+RealVector axisV = axis .normal() .toRealVector();
+double cosine = vector .dot( axisV ) / (vector .length() * axisV .length());
+if ( cosine > maxCosine ) {
+

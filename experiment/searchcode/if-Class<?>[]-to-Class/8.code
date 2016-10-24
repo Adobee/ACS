@@ -1,0 +1,6 @@
+Class<?> assistantClass = getMappings().get(clazz);
+if (assistantClass == null) {
+for (Map.Entry<Class<?>, Class<?>> mapping : getMappings().entrySet()) {
+Class<?> ancestorClass = mapping.getKey();
+if (ancestorClass.isAssignableFrom(clazz)) {
+

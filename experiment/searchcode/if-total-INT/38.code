@@ -1,0 +1,14 @@
+public class Packet_ServerAmmo
+{
+
+public final Packet_IntInt[] getTotalAmmo()
+{
+return this.totalAmmo;
+}
+
+public final int getTotalAmmoCount()
+public final void totalAmmoAdd(Packet_IntInt value)
+{
+if (this.totalAmmoCount >= this.totalAmmoLength) {
+Packet_IntInt[] TotalAmmo2 = new Packet_IntInt[this.totalAmmoLength * 2];
+

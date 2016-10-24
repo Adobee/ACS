@@ -1,0 +1,9 @@
+private double[] regcf(int nreq) throws ModelSpecificationException {
+int nextr;
+if (nreq < 1) {
+throw new ModelSpecificationException(LocalizedFormats.NO_REGRESSORS);
+if (rankProblem) {
+for (int i = 0; i < nreq; i++) {
+if (this.lindep[i]) {
+ret[i] = Double.NaN;
+

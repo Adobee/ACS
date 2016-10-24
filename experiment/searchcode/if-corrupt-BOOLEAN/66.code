@@ -1,0 +1,7 @@
+* A Block is considered corrupt only if all of its replicas are
+* corrupt. While reporting replicas of a Block, we hide any corrupt
+* @param node DatanodeDescriptor which holds the replica
+* @return true if replica is corrupt, false if does not exists in this map
+*/
+boolean isReplicaCorrupt(Block blk, DatanodeDescriptor node) {
+

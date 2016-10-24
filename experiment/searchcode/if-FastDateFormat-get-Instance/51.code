@@ -1,0 +1,6 @@
+import org.apache.commons.lang.time.FastDateFormat;
+import org.apache.velocity.app.event.ReferenceInsertionEventHandler;
+
+public class DateReference implements ReferenceInsertionEventHandler {
+private static final FastDateFormat dateFormat = FastDateFormat.getInstance(System.getProperty(&quot;velocity.dateformat.default&quot;));
+

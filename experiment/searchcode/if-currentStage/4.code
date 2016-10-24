@@ -1,0 +1,13 @@
+return total;
+}
+
+public Player getPlayer() {
+Stage currentStage = getCurrentStage();
+if (currentStage == null) return null;
+return stages;
+}
+
+private void resetCurrentStage() {
+if (currentStage == null) return;
+currentStage.reset();
+

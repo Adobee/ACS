@@ -1,0 +1,10 @@
+public void read(byte i) {
+int firstByte = (0x000000FF &amp; ((int) i));
+unByte = (short) firstByte;
+}
+
+public void read(ArrayByte bb, int offset) {
+int firstByte = (0x000000FF &amp; ((int) bb.get()));
+unByte = (short) firstByte;
+bb.setPosition(initial_pos);
+

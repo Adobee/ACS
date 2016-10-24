@@ -1,0 +1,7 @@
+else if( mant != 0 )                  // &amp;&amp; exp==0 -> subnormal
+{
+exp = 0x1c400;                    // make it normal
+return sign | val - 0x38000000 >>> 13; // exp - 127 + 15
+if( val < 0x33000000 )                // too small for subnormal
+return sign;                      // becomes +/-0
+

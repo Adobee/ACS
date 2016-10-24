@@ -1,0 +1,9 @@
+protected final DiscoveryNodes nodes;
+
+protected final int expectedSuccessfulOps;
+private final int expectedTotalOps;
+
+protected final AtomicInteger successfulOps = new AtomicInteger();
+void performFirstPhase(final int shardIndex, final ShardIterator shardIt, final ShardRouting shard) {
+if (shard == null) {
+

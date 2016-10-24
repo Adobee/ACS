@@ -1,0 +1,7 @@
+public final class RxJavaBehaviorAdapter implements NetworkBehavior.Adapter<Object> {
+public static RxJavaBehaviorAdapter create() {
+return new RxJavaBehaviorAdapter();
+@Override public Object applyBehavior(NetworkBehavior behavior, Object value) {
+if (value instanceof Observable) {
+return applyObservableBehavior(behavior, (Observable<?>) value);
+

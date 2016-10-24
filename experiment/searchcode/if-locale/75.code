@@ -1,0 +1,12 @@
+return activeLocaleObj;
+}
+
+public void switchActiveLocale(Class<? extends Locale> locale)
+{
+if (locale == null)
+Locale localeObj = locales.get(locale);
+
+if (localeObj == null)
+{
+if (fallbackLocaleObj == null)
+

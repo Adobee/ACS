@@ -1,0 +1,6 @@
+long step = getSuperstep();
+if (step >1){
+double maxDelta = ((DoubleWritable) getAggregatedValue(UnweightedLineRank.L1NORM_AGG)).get();
+if (maxDelta < EPSILON){
+//UnweightedLineRank.supersteps = step+1;
+

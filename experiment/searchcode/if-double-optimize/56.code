@@ -1,0 +1,13 @@
+DoubleBuffer b = new ViewDoubleBuffer(byte_array, array_offset, capacity, position, limit, order, true);
+b.mark = mark;
+return b;
+}
+
+@Override
+public double get() {
+if (position < limit) {
+public DoubleBuffer put(double b) {
+checkReadOnly();
+if (position < limit) {
+order.putLong(byte_array, array_offset + 8 * (position++), Double.doubleToLongBits(b));
+

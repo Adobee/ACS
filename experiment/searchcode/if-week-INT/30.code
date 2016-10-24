@@ -1,0 +1,6 @@
+return ((Long) weekDAO.createQuerySingleResult(&quot;select count(o) from Week o&quot;).getSingleResult()).intValue();
+public void saveWeek(Week week) {
+Week existingWeek = weekDAO.findWeekByPrimaryKey(week.getId());
+
+if (existingWeek != null) {
+

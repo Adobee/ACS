@@ -1,0 +1,9 @@
+public static boolean bytesEqual(BytesReference a, BytesReference b) {
+if (a == b) {
+return true;
+}
+if (a.length() != b.length()) {
+public static int bytesHashCode(BytesReference a) {
+if (a.hasArray()) {
+return hashCode(a.array(), a.arrayOffset(), a.length());
+

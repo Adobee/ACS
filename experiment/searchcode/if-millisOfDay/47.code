@@ -1,0 +1,6 @@
+long millisOfday = day * 24 * 3600 * 1000;
+long sumMillis = dateOperationType.getValue() ? (millis + millisOfday)
+: (millis - millisOfday);
+c.setTimeInMillis(sumMillis);
+return c.getTime();
+

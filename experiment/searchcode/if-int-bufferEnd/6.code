@@ -1,0 +1,10 @@
+if (bufferEnd < buffer.length)
+{
+int remLen = buffer.length - bufferEnd;
+if (remLen > len)
+{
+remLen = len;
+}
+int read = delegateRead(buffer, bufferEnd, remLen);
+if (read < 0)
+

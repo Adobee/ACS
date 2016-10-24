@@ -1,0 +1,9 @@
+synchronized (CassandraClusterBuilder.class) {
+if (cluster == null) {
+cluster = Cluster.builder().withClusterName(clusterName)
+return cluster;
+}
+
+public static Session getSession(Cluster cluster,String keyspace){
+if(cluster==null){
+

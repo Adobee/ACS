@@ -1,0 +1,18 @@
+public String getType() {
+return this.type ;
+}
+
+public static ParamType fromString(String type) {
+
+if(null != type) {
+for(ParamType t : ParamType.values()) {
+if(type.equalsIgnoreCase(t.type)) {
+return t ;
+}
+}
+}
+
+return null ;
+}
+}
+

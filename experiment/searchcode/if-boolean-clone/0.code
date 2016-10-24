@@ -1,0 +1,16 @@
+protected Object clone(){
+DummyClone d = new DummyClone();
+d.i = i;
+d.c = c;
+d.s = s;
+return d;
+}
+
+public boolean equals(Object o){
+if(!(o instanceof DummyClone )){
+return false;
+}
+
+if(o == this){
+return true;
+

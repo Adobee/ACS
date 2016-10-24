@@ -1,0 +1,10 @@
+if(n+m==-2)break;
+System.out.println(getCountZero(n)-getCountZero(m-1));
+}
+}
+
+long getCountZero(long n){
+if(n <= 0)return n;
+long ret = 0;
+ret += 10l* getCountZero(n/10);
+

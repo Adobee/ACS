@@ -1,0 +1,7 @@
+System.out.println(&quot;Enter r1&#39;s center x-, y-coordinates, width and height: &quot;);
+double xR1 = input.nextDouble();
+double xDistance = xR1 >= xR2 ? xR1 - xR2 : xR2 - xR1;
+double yDistance = yR1 >= yR2 ? yR1 - yR2 : yR2 - yR1;
+
+if (xDistance <= (widthR1 - widthR2) / 2 &amp;&amp; yDistance <= (heightR1 - heightR2) / 2) {
+

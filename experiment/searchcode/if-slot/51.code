@@ -1,0 +1,10 @@
+Time currentTime = Time.valueOf(LocalTime.now());
+List<Slot> timeAvailableSlots = new ArrayList<Slot>();
+for (Slot slot : slotList) {
+if (slot.getStartTime().after(currentTime)) {
+for (int i=index;i<timeAvailableSlots.size();i++) {
+Slot slot=timeAvailableSlots.get(i);
+if (slot == s)
+continue;
+if (slot.getSlotVans().isEmpty()) {
+

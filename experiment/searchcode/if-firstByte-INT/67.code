@@ -1,0 +1,7 @@
+public boolean canConsume(final BufferedInputStream bis) throws IOException {
+boolean canConsume = false;
+bis.mark(1);
+final int firstByte = bis.read();
+if (firstByte >= 0 &amp;&amp; (firstByte == &#39;\r&#39; || firstByte == &#39;\n&#39;)) {
+canConsume = true;
+

@@ -1,0 +1,6 @@
+for (DocumentVector docVector : docVectors) {
+double normProduct = docVector.norm() * queryVector.norm();
+double scalarProduct = docVector.scalarProduct(queryVector);
+if (isZero(normProduct)) {
+docInfos.add(new DocumentInfo(docVector.getDocumentPath(), 0.0));
+

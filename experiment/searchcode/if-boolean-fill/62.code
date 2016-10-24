@@ -1,0 +1,17 @@
+public class Oval implements Shape {
+// intrinsic property
+private boolean fill;
+
+public Oval(boolean fill) {
+public void draw(Graphics circle, int x, int y, int width, int height,
+Color color) {
+circle.setColor(color);
+circle.drawLine(x, y, width, height);
+
+if (fill) {
+circle.fillOval(x, y, width, height);
+}
+}
+
+}
+

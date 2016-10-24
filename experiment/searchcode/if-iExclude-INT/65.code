@@ -1,0 +1,11 @@
+Arrays.sort(variablesToInclude);
+int iExclude = 0;
+for (int i = 0; i < variablesToInclude.length; i++) {
+if (i >= this.nvars) {
+variablesToInclude[i] = -1;
+++iExclude;
+}
+}
+int[] series;
+if (iExclude > 0) {
+

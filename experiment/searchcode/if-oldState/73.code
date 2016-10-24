@@ -1,0 +1,6 @@
+public void serverStateChangeOccurred(Server server, int oldState, int newState) {
+String str = &quot;Alterando status do servidor... De: [&quot;;
+
+if ((oldState &amp; JCO.STATE_STOPPED    ) != 0) str += &quot; STOP &quot;;
+if ((oldState &amp; JCO.STATE_STARTED    ) != 0) str += &quot; START &quot;;
+

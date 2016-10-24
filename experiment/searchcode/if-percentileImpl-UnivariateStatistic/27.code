@@ -1,0 +1,11 @@
+public synchronized UnivariateStatistic getPercentileImpl() {
+return percentileImpl;
+}
+
+/**
+* Sets the implementation to be used by {@link #getPercentile(double)}.
+public synchronized void setPercentileImpl(
+UnivariateStatistic percentileImpl) {
+try {
+percentileImpl.getClass().getMethod(SET_QUANTILE_METHOD_NAME,
+

@@ -1,0 +1,7 @@
+assertThat(Fuzziness.build(randomFrom(options)).asDouble(), equalTo(1d));
+assertThat(Fuzziness.build(randomFrom(options)).asLong(), equalTo(1l));
+.field(Fuzziness.X_FIELD_NAME, randomBoolean() ? &quot;AUTO&quot; : &quot;auto&quot;)
+.endObject().string();
+if (randomBoolean()) {
+json = Fuzziness.AUTO.toXContent(jsonBuilder().startObject(), null).endObject().string();
+

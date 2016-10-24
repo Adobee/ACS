@@ -1,0 +1,10 @@
+package org.openxma.dsl.platform.valueobject;
+
+import java.sql.Timestamp;
+import java.util.Date;
+return (Timestamp) super.getValue().clone(); // Timestamp is mutable
+}
+
+public static ValueObjectTimestamp newOrNull(Timestamp value) {
+if (value != null) {
+

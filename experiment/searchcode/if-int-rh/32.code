@@ -1,0 +1,10 @@
+while(lh <= rh) {
+//avoid overflow
+int mid = lh + (rh - lh)/2;
+if(target == A[mid]) return mid;
+int lh = 0;
+int rh = A.length-1;
+while(A[lh] > A[rh]) {
+int mid = lh + (rh - lh)/2;
+if(A[mid] > A[lh])
+

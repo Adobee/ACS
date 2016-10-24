@@ -1,0 +1,12 @@
+public class Expansion {
+
+public static <V, E> double expansion(Graph<V, E> graph, Set<V> cut) {
+return expansion(graph, cut, new Transformer<E, Integer>() {
+public Integer transform(E input) {
+return Integer.valueOf(1);
+}
+});
+}
+
+public static <V, E> double expansion(Graph<V, E> graph, Set<V> cut, Transformer<E, ? extends Number> weights) {
+

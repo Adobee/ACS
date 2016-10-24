@@ -1,0 +1,7 @@
+public static String _format(Date date, TimeDisplayFormat format, boolean shortFormat, Boolean logicalTime) {
+if (date == null) return null;
+
+if (format == null) {
+format = shortFormat ? TimeUtil.shortDisplayFormat : TimeUtil.displayFormat;
+if (format == null) format = shortFormat ? TimeDisplayFormat.TOSHORTTIME : TimeDisplayFormat.TOTIME;
+

@@ -1,0 +1,6 @@
+public JSSBPeriodsInfo queryByPeriodsStatus(String status) {
+long times = System.currentTimeMillis();
+//times = times + 3000;
+List<JSSBPeriodsInfo> periodsList = jssbPeriodsInfoDao.find(hql, status, new Date(), new Date(times));
+if (periodsList != null &amp;&amp; periodsList.size() != 0) {
+

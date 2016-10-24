@@ -1,0 +1,12 @@
+items = new ArrayList<Item>();
+for(int i = 0; i < 5; i++){
+Item item = new Item();
+item.y = 1281;
+items.add(item);
+}
+rand = new Random();
+}
+
+public void resetItem(Item item){
+int newId = rand.nextInt()%5;
+

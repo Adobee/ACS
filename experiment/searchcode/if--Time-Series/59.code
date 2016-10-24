@@ -1,0 +1,11 @@
+/* To calculate drawndown, we need the maximum price in the total period. */
+if(highestTimeSeriesPoint == null || highestTimeSeriesPoint.getHigh() < timeSeriesPoint.getHigh()) {
+highestTimeSeriesPoint = timeSeriesPoint;
+}
+
+}
+
+@Override
+public void retrieveResult(AnalysisOutput analysisOutput) {
+if(finalTimeSeriesPoint != null &amp;&amp; highestTimeSeriesPoint != null) {
+

@@ -1,0 +1,13 @@
+int[][]	dg;
+int[]	vg;
+Sequence	seq1, seq2;
+int[][]		ih;
+int[][]		iv;
+long time;
+
+public ALCS(Sequence a, Sequence b)
+int na = a.getLength();
+int nb = b.getLength();
+ih = new int[na + 1][nb + 1];
+iv = new int[na + 1][nb + 1];
+

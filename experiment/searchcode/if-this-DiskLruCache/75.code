@@ -1,0 +1,7 @@
+private void putBitmapToDiskLruCache(String key, Bitmap bitmap) {
+try {
+if (diskLruCache == null)
+DiskLruCache.Snapshot snapshot = diskLruCache.get(key);
+if (snapshot != null) {
+InputStream inputStream = snapshot.getInputStream(0);
+

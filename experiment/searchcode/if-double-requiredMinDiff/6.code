@@ -1,0 +1,9 @@
+double deltaOne = delta;
+double deltaTwo = FastMath.sqrt(dsq);
+dnorm = FastMath.min(deltaOne, deltaTwo);
+if(dnorm < HALF * rho) {
+bdtest = -work1.getEntry(j);
+}
+if(bdtest < bdtol) {
+double curv = modelSecondDerivativesValues.getEntry((j + j * j) / 2);
+

@@ -1,0 +1,12 @@
+package SymmetricTree;
+
+public class SymmetricTree {
+public boolean isSymmetric(Node root) {
+if (root == null)
+return true;
+
+return isSymmetric(root.left, root.right);
+}
+
+public boolean isSymmetric(Node left, Node right) {
+

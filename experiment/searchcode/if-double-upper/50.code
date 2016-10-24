@@ -1,0 +1,9 @@
+public static double closestOctant(double angle) {
+double step = Math.PI / 4;
+
+if (angle < 0) {
+angle += Math.PI;
+double upperBound = lowerBound + step;
+
+if ((upperBound - angle) < (angle - lowerBound)) {
+

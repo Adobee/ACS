@@ -1,0 +1,10 @@
+public static MapperFactory getInstance() {
+if (factory == null) {
+return getInstance(ctx);
+} else {
+return (Mapper) ctx.getBean(&quot;MapperImpl&quot;);
+}
+
+public Mapper createMapper(int timeout, int maxRequests){
+Mapper mapper = (Mapper) ctx.getBean(&quot;protMapper&quot;);
+

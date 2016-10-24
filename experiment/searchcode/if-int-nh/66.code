@@ -1,0 +1,8 @@
+WebServer server = null;
+NetworkHandler nh = null;
+
+int[] nodeIndex = null;
+int[] indexNode = null;
+// Factory Method to return instance only
+public static NetworkDataServer getInstance( NetworkHandler nh, int port, String handlerName ) {
+

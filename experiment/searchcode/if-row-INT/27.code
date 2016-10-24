@@ -1,0 +1,9 @@
+public static Cell[][] paths;
+public static int paths(int row, int col) {
+if (row == -1) row = m - 1;
+col < 0 || col >= n)
+return -1;
+if (paths[row][col] != 0)
+return paths[row][col];
+int nw = paths(row-1, col-1);
+

@@ -1,0 +1,7 @@
+baseUrl = baseUrl.replaceAll(&quot;(?i)\\Q&quot; + replacements[i] + &quot;\\E&quot;, replacements[i + 1]);
+}
+baseUrl = removeRedundantProtocol(baseUrl);
+HttpUrl baseHttpUrl = HttpUrl.parse(baseUrl);
+request = request.newBuilder()
+.url(baseHttpUrl)
+

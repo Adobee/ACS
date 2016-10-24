@@ -1,0 +1,15 @@
+import java.awt.event.KeyEvent;
+
+import org.lwjgl.input.Keyboard;
+
+public class KeyboardInput
+{
+public static final int KEY_ESCAPE = Keyboard.KEY_ESCAPE;
+name = name.toUpperCase();
+
+for (int i = 0; i < length; i ++)
+{
+if (getKeyName(i).equals(name))
+{
+return i;
+

@@ -1,0 +1,9 @@
+int current = Integer.parseInt(currentStr);
+if( current < 0 ) {
+return false;
+}
+symbolsInNumber.add(current);
+for(int i = 0 ; i < size ; i++) {
+//&quot;I&quot;, &quot;X&quot;, &quot;C&quot;, and &quot;M&quot; can be repeated three times in succession, others not allowed
+if(getSymbols().get(i).matches(&quot;[IXCM]&quot;) &amp;&amp; i+3 < size &amp;&amp; (getSymbols().get(i).equals(getSymbols().get(i+1)) &amp;&amp; getSymbols().get(i).equals(getSymbols().get(i+2)) &amp;&amp; getSymbols().get(i).equals(getSymbols().get(i+3)) )) {
+

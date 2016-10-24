@@ -1,0 +1,9 @@
+this.endIndex = endIndex;
+}
+
+@Override
+protected Integer compute() {
+int sliceLength = (endIndex - startIndex) + 1;
+if (sliceLength > 2) {
+FindMin lowerFindMin = new FindMin(numbers, startIndex, startIndex + (sliceLength / 2) - 1);
+

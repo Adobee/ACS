@@ -1,0 +1,6 @@
+private Money accountPenaltyAmount;
+private Double penaltyAmount;
+private Integer calculativeCount = 0;
+public AccountPenaltiesEntity(final AccountBO account, final PenaltyBO penalty, final Double penaltyAmount) {
+loanAccountPenaltyId = null;
+

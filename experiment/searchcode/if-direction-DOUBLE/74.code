@@ -1,0 +1,14 @@
+//the enemy class
+
+double x;
+double y;
+int ex;
+int ey;
+int direction;
+//System.out.println(&quot;(&quot; + ex + &quot;,&quot; + ey + &quot;)&quot;);
+
+}
+
+public void setCords(double speed) {
+if (direction == 2) {
+

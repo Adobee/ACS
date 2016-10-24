@@ -1,0 +1,10 @@
+public class Numero {
+private double n1;
+private double n2;
+private double n3;
+
+public Numero(double a,double b, double c){
+n1=a;
+n2=b;
+n3=c;
+

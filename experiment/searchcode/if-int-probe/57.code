@@ -1,0 +1,12 @@
+public PiloggerImpl(PiloggerGUI gui) {
+
+probeManager = new ProbeManager(gui);
+
+if (PiloggerLauncher.simulation) {
+systemProbe = new SystemProbe();
+probeManager.addProbe(systemProbe);
+}
+private void initSPIandWirelessProbe() {
+try {
+int fd = Spi.wiringPiSPISetup(0, 10000000);
+

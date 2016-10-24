@@ -1,0 +1,10 @@
+public static boolean[][] board = new boolean[NUM_ROWS][NUM_COLUMNS];
+public static boolean[] rowOccupied = new boolean[NUM_ROWS];
+public static boolean[] columnOccupied = new boolean[NUM_COLUMNS];
+public static boolean[] LRdiagOccup = new boolean[2 * NUM_ROWS - 1];
+
+public static boolean isLegal(int row, int column)
+{
+if(rowOccupied[row])
+return false;
+

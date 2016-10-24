@@ -1,0 +1,13 @@
+package args;
+
+import java.io.PrintStream;
+
+class ArgsDemo {
+static final ArgsDemo S = new ArgsDemo();
+public static void main(String[] args) {
+S.args = args;
+args = Args.S.args;
+if (args.length == 0)
+return;
+PrintStream out = System.out;
+

@@ -1,0 +1,9 @@
+import java.util.Collections;
+import java.util.List;
+
+/**
+* A purger that looks through to a throwable chain and can select one to unwrap.
+public DefaultExceptionPurger(Class includeThrowableClass, Class excludeThrowableClass) {
+if (includeThrowableClass != null) {
+this.includeThrowableClassList = Collections.singletonList(includeThrowableClass);
+

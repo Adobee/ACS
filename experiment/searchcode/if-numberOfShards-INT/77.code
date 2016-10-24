@@ -1,0 +1,8 @@
+public class PreferLocalPrimariesToRelocatingPrimariesTests extends ESAllocationTestCase {
+@Test
+public void testPreferLocalPrimaryAllocationOverFiltered() {
+int concurrentRecoveries = randomIntBetween(1, 10);
+int primaryRecoveries = randomIntBetween(1, 10);
+int numberOfShards = randomIntBetween(5, 20);
+int totalNumberOfShards = numberOfShards * 2;
+

@@ -1,0 +1,12 @@
+* @return
+*/
+public T getOrCreateIfNecessary() {
+T currentValue = this.value;
+if (currentValue != null) {
+synchronized (this.monitor) {
+
+currentValue = this.value;
+
+if (currentValue != null) {
+return currentValue;
+

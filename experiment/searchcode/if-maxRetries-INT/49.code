@@ -1,0 +1,10 @@
+protected int maxRetries = 3;
+protected int waitMillis = 50;
+protected int waitIncreaseFactor = 5;
+long waitTime = waitMillis;
+int failedAttempts = 0;
+
+do {
+if (failedAttempts > 0) {
+log.debug(&quot;Waiting for {}ms before retrying the command&quot;, waitTime);
+

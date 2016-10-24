@@ -1,0 +1,8 @@
+public VoteService() {}
+
+/**
+* Check if the given User voted for the given Picky.
+*/
+public boolean userVoted(int userId, int pickyId) {
+final String query = &quot;SELECT id FROM UserVote WHERE userId = ? AND pickyId = ?&quot;;
+

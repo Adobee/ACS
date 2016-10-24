@@ -1,0 +1,10 @@
+public class DarbellayUniformSegmentation {
+
+private static final boolean DEBUG = true;
+
+private static final double PCRIT = 0.99;
+private static final ChiSquaredDistribution CD = new ChiSquaredDistribution(3);
+private static final double CRIT = CD.inverseCumulativeProbability(PCRIT);
+
+public static int[] darbellay(double[][] data) {
+

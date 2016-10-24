@@ -1,0 +1,11 @@
+public Vector3d getOrigin() {
+return new Vector3d(origin);
+}
+
+public void setOrigin(Vector3d point) {
+normal.affineTransformLocal(m44.extractRotation());
+}
+
+public Vector3d closestPoint(Vector3d q) {
+return origin.add(normal.mul(q.sub(origin).dotProd(normal)));
+

@@ -1,0 +1,7 @@
+public static final double spline1(Vector2D[] points, double t) {
+if (points.length > 1) {
+Utils.sort(points);
+int i;
+public static final double spline1(List<Vector2D> points, double t) {
+return spline1(points.toArray(new Vector2D[points.size()]), t);
+

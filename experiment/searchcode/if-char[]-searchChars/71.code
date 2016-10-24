@@ -1,0 +1,10 @@
+public static boolean containsAny(CharSequence cs, CharSequence searchChars) {
+if (searchChars == null) {
+return false;
+}
+return containsAny(cs, toCharArray(searchChars));
+}
+
+/**
+* Checks if the CharSequence contains any character in the given set of characters.
+

@@ -1,0 +1,10 @@
+public class MyFinalWritable implements Writable {
+
+private Long totalBytes;
+private Long averageBytes;
+
+@Override
+public void write(DataOutput d) throws IOException {
+d.writeLong(totalBytes);
+d.writeLong(averageBytes);
+

@@ -1,0 +1,7 @@
+double startDomainX = toDomainX(uiAction.getStartX(), plot);
+double boundedX = MathUtil.bound(x, overviewAxisBounds.x, overviewAxisBounds.rightX());
+double endDomainX = toDomainX(boundedX + viewOffsetX, plot);
+if (startDomainX > endDomainX) {
+double tmp = startDomainX;
+startDomainX = endDomainX;
+

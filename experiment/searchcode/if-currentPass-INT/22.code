@@ -1,0 +1,7 @@
+List<String> paths = new ArrayList<String>();
+int currentPass = 2 * iteration + step;
+paths.add(conf.getOutputPath() + &quot;/i&quot; + (currentPass - 1));
+if (currentPass == 0) {
+paths.add(conf.getOutputPath() + &quot;/count&quot;);
+paths.add(conf.getInputPath());
+

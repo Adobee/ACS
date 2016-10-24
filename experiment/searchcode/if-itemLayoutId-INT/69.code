@@ -1,0 +1,7 @@
+private ViewHolder(Context context, ViewGroup parent, int ItemLayoutID) {
+this.mViews = new SparseArray<View>();
+this.mConvertView = LayoutInflater.from(context).inflate(ItemLayoutID, parent, false);
+public static ViewHolder get(Context context, View convertView, ViewGroup parent, int ItemLayoutID) {
+if (convertView == null)
+return new ViewHolder(context, parent, ItemLayoutID);
+

@@ -1,0 +1,18 @@
+itemPK = pk;
+value = v;
+
+if(v < 0){
+return;
+}
+
+refresh();
+}
+
+public boolean getSuccess() {
+return false;
+}
+
+boolean copyData(ISTVEvent evt){
+if(evt.type == ISTVEvent.Type.ERROR) {
+isSuccess = false;
+

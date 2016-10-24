@@ -1,0 +1,9 @@
+protected void clearCache() {
+if (lastX != null) lastX[0] = Double.NaN;
+}
+
+@Override
+public double[] initial() {
+double[] initial = new double[domainDimension()];
+// Arrays.fill(initial, 0.0); // You get zero fill of array for free in Java! (Like it or not....)
+

@@ -1,0 +1,10 @@
+private SyncDirectoryService syncDirService;
+
+/**
+* 添加系列信息
+* @param series
+*/
+public boolean addSeries(Series series){
+Brand brand = brandService.queryBrandById(Integer.valueOf(series.getOfOrigin()));
+if(brand == null)
+

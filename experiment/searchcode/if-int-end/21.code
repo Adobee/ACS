@@ -1,0 +1,10 @@
+public int jump(int[] A) {
+if(A == null || A.length <2)
+return 0;
+int start = 0;
+int end = 1;
+int  nextEnd = end;
+for (int i = start; i<end; ++i){
+if(i == A.length-1)
+return jump;
+

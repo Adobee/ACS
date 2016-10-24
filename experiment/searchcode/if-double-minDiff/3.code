@@ -1,0 +1,9 @@
+int close = -1;
+double minDiff = Double.MAX_VALUE;
+
+TreeNode node = root;
+while(null != node) {
+double absDiff = Math.abs(diff);
+if(absDiff < minDiff) {
+minDiff = absDiff;
+

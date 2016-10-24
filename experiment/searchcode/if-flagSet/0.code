@@ -1,0 +1,9 @@
+import org.sf.feeling.swt.win32.extension.Win32;
+import org.sf.feeling.swt.win32.internal.extension.util.FlagSet;
+* @return true, if the key is down before the message is sent; false if the
+*         key is up.
+*/
+public boolean getPreviousState( )
+{
+FlagSet flagSet = new FlagSet( getLParam( ) );
+

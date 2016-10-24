@@ -1,0 +1,5 @@
+public PageSize convert(int offset, int limit) {
+if (limit - offset > offset) return new PageSize(1, limit, offset, 0);
+private PageSize increaseRange(int offset, int limit, int dropEnd) {
+if ((limit - offset) % offset == 0 || offset % (limit - offset) == 0) return getPage(offset, limit, dropEnd);
+

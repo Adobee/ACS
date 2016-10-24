@@ -1,0 +1,9 @@
+r2 = r2.top;
+r2 = r3 - r2;
+r0 = r0[r5];
+r3 = com.whatsapp.App.a1();
+if (r3 == 0) goto L_0x0054;
+r0 = r0 - r3;
+r3 = com.whatsapp.DialogToastActivity.f;
+if (r3 == 0) goto L_0x0059;
+

@@ -1,0 +1,10 @@
+public int doStartFragment(SqlTagContext ctx, SqlTag tag, Object parameterObject) {
+IterateContext iterate = (IterateContext) ctx.getAttribute(tag);
+if (iterate == null) {
+iterate.setProperty( null == prop ? &quot;&quot; : prop );
+
+ctx.setAttribute(tag, iterate);
+ctx.pushIterateContext(iterate);
+}
+if (iterate != null &amp;&amp; iterate.hasNext()) {
+

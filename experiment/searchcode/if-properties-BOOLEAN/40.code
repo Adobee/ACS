@@ -1,0 +1,10 @@
+public final boolean Immediate;
+public final AMQP.BasicProperties Properties;
+
+//endregion
+
+//region Constructors
+public Message(byte[] data, boolean mandatory, boolean immediate, AMQP.BasicProperties properties) {
+if (data == null) {
+throw new IllegalArgumentException(&quot;data&quot;);
+

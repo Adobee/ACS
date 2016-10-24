@@ -1,0 +1,4 @@
+Range first = rangeB, second = rangeA;
+if (rangeA.getPosition() < rangeB.getPosition()) {
+if (rangeA.getPosition() < rangeB.getPosition()) {
+

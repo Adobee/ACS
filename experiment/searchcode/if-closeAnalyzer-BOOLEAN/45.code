@@ -1,0 +1,8 @@
+private RandomIndexWriter(Random r, Directory dir, IndexWriterConfig c, boolean closeAnalyzer) throws IOException {
+// TODO: this should be solved in a different way; Random should not be shared (!).
+flushAt = TestUtil.nextInt(r, 10, 1000);
+if (closeAnalyzer) {
+analyzer = w.getAnalyzer();
+} else {
+analyzer = null;
+

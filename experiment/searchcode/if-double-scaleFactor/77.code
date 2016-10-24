@@ -1,0 +1,13 @@
+private int scaledWidth;
+private int scaledHeight;
+private int scaleFactor;
+
+private final double scaledWidthD;
+int k = minecraft.gameSettings.guiScale;
+
+if (k == 0) {
+k = 1000;
+}
+
+while (this.scaleFactor < k &amp;&amp; this.scaledWidth / (this.scaleFactor + 1) >= 320 &amp;&amp; this.scaledHeight / (this.scaleFactor + 1) >= 240) {
+

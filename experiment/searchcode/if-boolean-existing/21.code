@@ -1,0 +1,8 @@
+public class BooleanSVAdapter extends DmcTypeBooleanSV implements DmcAdapterIF {
+
+transient DmcTypeBooleanSV existingValue;
+public void setExisting(DmcAttribute<?> attr) {
+existingValue = (DmcTypeBooleanSV) attr;
+if (existingValue != null)
+value = existingValue.getSVCopy();
+

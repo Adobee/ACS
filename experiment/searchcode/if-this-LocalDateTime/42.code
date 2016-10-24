@@ -1,0 +1,12 @@
+public void initializeProxy(LocalDateTime timestamp) {
+this.timestamp = toModel(timestamp);
+}
+
+@Override
+public LocalDateTime convertProxy() {
+return fromModel(timestamp);
+}
+
+public static String toModel(LocalDateTime timestamp) {
+if (timestamp == null)
+

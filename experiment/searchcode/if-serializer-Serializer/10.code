@@ -1,0 +1,9 @@
+public static LicpSerializer get(Class<?> type)
+{
+LicpSerializer serializer = serializerMap.get(type);
+if (serializer != null)
+{
+return serializer;
+}
+if (type.isArray())
+

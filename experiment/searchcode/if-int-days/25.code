@@ -1,0 +1,13 @@
+Scanner sc=new Scanner(System.in);
+System.out.println(&quot;Enter the number of days&quot;);
+int days=sc.nextInt();
+{
+if(days<=5)
+fine=0.40*days;
+else if(days>=6&amp;&amp;days<=10)
+fine=0.65*days;
+else
+fine=0.80*days;
+}
+System.out.println(&quot;The no of days are=&quot;+days);
+

@@ -1,0 +1,8 @@
+return cs == null || cs.length() == 0;
+}
+
+public static int countMatches(final CharSequence str, final CharSequence sub) {
+if (isEmpty(str) || isEmpty(sub)) {
+// mchyzer Performance note: This creates very few new objects (one major goal)
+// let me know if there are performance requests, we can create a harness to measure
+

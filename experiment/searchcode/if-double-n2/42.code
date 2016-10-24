@@ -1,0 +1,10 @@
+double valor = Double.parseDouble(respuesta);
+return valor;
+}
+
+public void comparar(double n1, double n2, double n3) {
+numero1 = n1;
+numero2 = n2;
+numero3 = n3;
+if (n1 != n2 &amp;&amp; n1 != n3 &amp;&amp; n2 != n3) {
+

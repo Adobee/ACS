@@ -1,0 +1,8 @@
+private static String preparePath(String path) {
+if (!path.endsWith( &quot;/&quot; ) &amp;&amp; !path.endsWith( &quot;\\&quot; )) {
+path = path.replace( &quot;\\&quot;, &quot;/&quot; ) + &quot;/&quot;;
+}
+
+if (!path.startsWith( &quot;./&quot; )) {
+if (path.startsWith( &quot;/&quot; ) || path.startsWith( &quot;\\&quot; )) {
+

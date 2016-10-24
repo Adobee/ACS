@@ -1,0 +1,10 @@
+package utilities.algo;
+
+public class ModularExponentiation
+{
+public static long pow(long x, long c, long n)
+{
+long z = 1;
+// 64 bits in a long.
+for (int i = 63; i >= 0; i--) {
+

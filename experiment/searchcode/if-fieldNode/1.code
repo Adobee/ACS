@@ -1,0 +1,5 @@
+@Var boolean Rememberd = TokenContext.SetParseFlag(false);
+@Var ZNode FieldNode = new ZFieldNode(ParentNode);
+FieldNode = TokenContext.MatchToken(FieldNode, &quot;var&quot;, ZTokenContext._Required);
+FieldNode = TokenContext.MatchPattern(FieldNode, ZVarNode._NameInfo, &quot;$Name$&quot;, ZTokenContext._Required);
+

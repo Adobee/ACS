@@ -1,0 +1,7 @@
+public String convert(String s, int nRows) {
+if (nRows == 1) return s;
+int len = s.length();
+int nCols = len / (nRows + nRows - 2) * (nRows - 1);
+int n = len / (nRows + nRows - 2) * (nRows + nRows - 2);
+if (n < len) {
+

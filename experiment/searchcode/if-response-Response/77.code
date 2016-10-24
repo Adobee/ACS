@@ -1,0 +1,7 @@
+final String response = bundle.getString(&quot;response&quot;);
+System.out.println(&quot;response=&quot; + response);
+
+if (responseType.equals(Constants.SyncType.LOGIN)) {
+return new LoginSoapResponse(response);
+}else if (responseType.equals(Constants.SyncType.UPLOAD)) {
+

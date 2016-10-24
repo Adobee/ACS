@@ -1,0 +1,10 @@
+import org.apache.commons.lang3.Validate;
+
+public class BitArray
+{
+private final long[] longArray;
+private final int bitsPerEntry;
+this.bitsPerEntry = bitsPerEntryIn;
+this.maxEntryValue = (1L << bitsPerEntryIn) - 1L;
+this.longArray = new long[MathHelper.roundUp(arraySizeIn * bitsPerEntryIn, 64) / 64];
+

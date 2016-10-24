@@ -1,0 +1,8 @@
+public class DiscriminatorItemProcessor implements ItemProcessor<Item, Item> {
+
+@Override
+public Item process(Item item) throws Exception {
+if(item instanceof ItemTotal){
+ItemTotal itemTotal = (ItemTotal) item;
+if(!itemTotal.getTotal().equals(item.getLine())){
+

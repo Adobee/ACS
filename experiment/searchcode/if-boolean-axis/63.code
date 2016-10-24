@@ -1,0 +1,9 @@
+protected Axis               output = null;   							// the output axis, on of all the axes
+protected boolean 			 scalarOutput = false;						// tells if the output is scalar
+
+// Contains the NodeSpecs associated to each Axis
+final public boolean equals(Object o)
+{
+if (o instanceof AxisDependency)
+return output == ((AxisDependency)o).output &amp;&amp; inputs.equals(((AxisDependency)o).inputs);
+

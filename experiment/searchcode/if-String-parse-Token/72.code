@@ -1,0 +1,10 @@
+private Token token;
+
+public ParseException(String msg, Token token) {
+super(&quot;Parse error: &quot; + token == null ? msg : msg + &quot;\nAt &quot; + token);
+this.token = token;
+}
+
+public ParseException(String msg) {
+super(msg);
+

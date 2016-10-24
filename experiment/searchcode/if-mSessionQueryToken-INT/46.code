@@ -1,0 +1,11 @@
+private boolean mHasSetEmptyText = false;
+private int mSessionQueryToken;
+
+private LinkedHashSet<Integer> mSelectedSessionPositions = new LinkedHashSet<Integer>();
+if (getActivity() == null) {
+return;
+}
+
+int token = loader.getId();
+if (token == SessionsQuery._TOKEN || token == SearchQuery._TOKEN) {
+

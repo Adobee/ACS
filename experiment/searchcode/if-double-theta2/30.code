@@ -1,0 +1,10 @@
+public void turnDegrees(double angle1, double angle2) {
+theta1.setSpeed(50);
+theta2.setSpeed(50);
+
+// Motors are upside-down
+double theta1_b = Math.atan2(y,x) - Math.atan2((L2 * Math.sin(theta2_b)) , (L1 + (L2 * Math.cos(theta2_b))));
+
+if(theta1_b > theta1_a)
+return new double[]{theta1_b/CONVERT,theta2_b/CONVERT};
+

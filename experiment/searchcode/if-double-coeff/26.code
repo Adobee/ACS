@@ -1,0 +1,9 @@
+return Double.MAX_VALUE;
+}
+
+private double newton(double x) {
+if (Math.abs(compute(coeff, x)) <= zeroApproach) {
+for (int i = 0; i < fix.length; i++) {
+if (fix[i] < Double.MAX_VALUE) {
+double[] firstDerivationCoeff = derivate(coeff);
+

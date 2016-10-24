@@ -1,0 +1,12 @@
+.append(getSkin())
+.append(&quot;\&quot; &quot;);
+
+if (isReadonly())
+writer.append(&quot; readonly=\&quot;readonly\&quot; &quot;);
+.append(&quot;id:\&quot;&quot;)
+.append(getId())
+.append(&quot;\&quot;, readonly:&quot;)
+.append(isReadonly().toString());
+
+if (!Util.isNull(getMask()))
+

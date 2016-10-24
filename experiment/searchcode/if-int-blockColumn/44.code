@@ -1,0 +1,8 @@
+public void save(Instructor instructor) {
+instructorRepository.save(instructor);
+}
+
+public void delete(int id) {
+public void blockColumn(int collumn) {
+Instructor i = (Instructor) securityService.getSecurityUser();
+

@@ -1,0 +1,10 @@
+public boolean isSequenceChanged() {
+if (isRangeLengthChanged()) {
+return true;
+}
+
+return !(rangeSequence(oldRange).equals(rangeSequence(newRange)));
+protected int rangeLength(Range range) {
+if (range.getToIntervalEnd() == -1) {
+return -1;
+

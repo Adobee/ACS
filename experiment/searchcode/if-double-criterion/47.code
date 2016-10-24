@@ -1,0 +1,6 @@
+for (StoppingCriterion criterion : criteria) {
+if (criterion.stop(generation, population)) return true;
+public boolean stop(int generation, Population population) {
+for (StoppingCriterion criterion : criteria) {
+if (!criterion.stop(generation, population)) return false;
+

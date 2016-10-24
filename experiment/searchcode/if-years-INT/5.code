@@ -1,0 +1,11 @@
+
+
+public class Prisoner {
+
+private double cooperation;
+private int years;
+
+public Prisoner(double coop_value) {
+public void calcYears(double lower_thres, int coop_years, int sil_years) {
+if(cooperation < lower_thres)
+

@@ -1,0 +1,7 @@
+public int compare(final RoutingStep stepA, final RoutingStep stepB) {
+
+IRoutingMetric metric = myMetric;
+if (metric != null) {
+double a = metric.getCost(stepA) + getSummedMetricTo(stepA);
+double b = metric.getCost(stepB) + getSummedMetricTo(stepB);
+

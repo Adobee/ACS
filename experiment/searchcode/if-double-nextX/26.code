@@ -1,0 +1,8 @@
+double[] nextX = a.copy(x);
+Pair<Double,double[]> valAndGrad = func.calculate(x);
+double baseVal = valAndGrad.getFirst();
+while (delta > delMin &amp;&amp; !ok) {
+nextX[i] += delta;
+double nextVal = func.calculate(nextX).getFirst();
+empDeriv = (nextVal - baseVal) / delta;
+

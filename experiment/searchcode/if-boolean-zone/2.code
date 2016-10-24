@@ -1,0 +1,10 @@
+UnityAdsZone zone = null;
+if(jsonZone.getBoolean(UnityAdsConstants.UNITY_ADS_ZONE_INCENTIVIZED_KEY)) {
+zone = new UnityAdsIncentivizedZone(jsonZone);
+public UnityAdsZone getCurrentZone() {
+return _currentZone;
+}
+
+public boolean setCurrentZone(String zoneId) {
+if(_zones.containsKey(zoneId)) {
+

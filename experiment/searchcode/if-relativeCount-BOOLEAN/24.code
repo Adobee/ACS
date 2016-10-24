@@ -1,0 +1,8 @@
+// because we don&#39; t load all property in the association, see the AppVersionRepo.xml for detail.
+if (member.getId() != app.getAuthor().getId()) {
+throw new SecurityException(&quot;oh no, this app is not belong to you, you have no permission to alter it.&quot;);
+String relativeCount;
+if (count < 100) {
+relativeCount = &quot;1-100&quot;;
+} else if (count >= 100 &amp;&amp; count <= 1000) {
+

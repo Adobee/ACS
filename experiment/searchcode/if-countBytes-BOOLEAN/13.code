@@ -1,0 +1,9 @@
+conf.setGameQueryConfig(buffer.readLong());
+conf.setMapId(buffer.readLong());
+
+int countBytes=buffer.readInt();
+byte[] b=new byte[countBytes];
+buffer.readBytes(b);
+
+conf.setGameMode(new String(b, Charset.forName(&quot;UTF-8&quot;)));
+

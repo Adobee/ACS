@@ -1,0 +1,8 @@
+protected static boolean isValid(final Boolean value) {
+return ComparableDV.isValid(value);
+* @return true if valid, else false
+*/
+public static boolean isValid(final String stringValue) {
+try {
+return isValid(Boolean.valueOf(stringValue));
+

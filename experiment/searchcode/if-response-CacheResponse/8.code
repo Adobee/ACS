@@ -1,0 +1,9 @@
+* Created by yulongsun on 2016/4/6.
+*/
+public final class CacheResponse {
+private static final Logger       logger = Logger.getLogger(LoggingInterceptors.class.getName());
+private              OkHttpClient client = null;
+
+public CacheResponse(File cacheDirectory) throws Exception {
+logger.info(String.format(&quot;Cache file path %s&quot;, cacheDirectory.getAbsoluteFile()));
+

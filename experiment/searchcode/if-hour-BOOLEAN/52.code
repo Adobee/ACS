@@ -1,0 +1,11 @@
+private static int getHours(int beginHour, int endHour, int scopeBeginHour, int scopeEndHour) {
+
+if (endHour <= scopeBeginHour || beginHour >= scopeEndHour)
+return 0;
+
+return (endHour > scopeEndHour ? scopeEndHour : endHour) - (beginHour < scopeBeginHour ? scopeBeginHour : beginHour);
+}
+
+public static boolean isFullShift(int beginHour, int endHour) {
+return (endHour - beginHour) == 24;
+

@@ -1,0 +1,7 @@
+public class DataBaseDefaultTable <K, V> implements DataBaseTable<K, V>{
+private K idKey; /* the values in the rows of this table /must/ be unique*/
+* @param value The value of the idKey of the row to delete.
+* @return true if successful.
+*/
+public boolean removeRow(V value){
+

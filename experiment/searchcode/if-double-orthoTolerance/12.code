@@ -1,0 +1,7 @@
+private final double orthoTolerance;
+/** Threshold for QR ranking. */
+private final double qrRankingThreshold;
+double orthoTolerance,
+double threshold) {
+super(checker);
+

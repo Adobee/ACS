@@ -1,0 +1,10 @@
+public double[][] getParticlePositions(StateInfo info)
+{
+double tstart = -10;
+double tend = 0;
+
+return getParticlePositions(info,numParticles,1,tstart,tend);
+}
+
+public double[][] getParticlePositions(StateInfo info, int numParticles, int potType, double tstart, double tend)
+

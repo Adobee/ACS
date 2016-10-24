@@ -1,0 +1,11 @@
+private double height;
+private double length;
+
+public Cuboid(double x, double y, double z, double width, double height,
+return height;
+}
+
+public void setHeight(double height) {
+if (height < 0) {
+throw new IllegalArgumentException(&quot;Height cannot be negative!&quot;);
+

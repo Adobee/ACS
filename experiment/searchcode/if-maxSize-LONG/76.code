@@ -1,0 +1,9 @@
+public class QueueHashMap<K, V> extends LinkedHashMap<K, V> {
+private static final long serialVersionUID = -9106461269354320411L;
+protected boolean removeEldestEntry(Map.Entry<K,V> eldest) {
+return size() > maxSize;
+}
+
+public void setMaxSize(int m){
+if(m < 5){
+

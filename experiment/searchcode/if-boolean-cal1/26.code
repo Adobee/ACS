@@ -1,0 +1,12 @@
+return seconds / 3600 + &quot;:&quot; + (seconds % 3600) / 60 + &quot;:&quot; + seconds % 60;
+}
+
+public static boolean isSameDate(Calendar cal1, Calendar cal2) {
+if (cal1 == null || cal2 == null) return false;
+return cal1.get(Calendar.DATE) == cal2.get(Calendar.DATE) &amp;&amp; cal1.get(Calendar.MONTH) == cal2.get(Calendar.MONTH) &amp;&amp; cal1.get(Calendar.YEAR) == cal2.get(Calendar.YEAR);
+}
+
+public static int distanceInTimeOfDay(Calendar cal1,
+Calendar cal2) {
+if (cal1 == null || cal2 == null) return 0;
+

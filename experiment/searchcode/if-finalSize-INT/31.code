@@ -1,0 +1,11 @@
+public void add(String caller, int initSize, int finalSize) {
+SizeSample stat = null;
+
+synchronized (_map) {
+_minSize = Integer.MAX_VALUE;
+_maxSize = Integer.MIN_VALUE;
+}
+
+public void add(int finalSize) {
+if (finalSize < _minSize) {
+

@@ -1,0 +1,12 @@
+public class EndpointLabel {
+TransactionType transType;
+boolean tls;
+boolean async;
+
+public EndpointLabel(TransactionType transType, TlsType tlsType, AsyncType asyncType) {
+String[] parts = label.split(&quot;_&quot;);
+tls = false;
+async = false;
+if (parts == null || parts.length <= 1)  {
+transType = TransactionType.find(label);
+

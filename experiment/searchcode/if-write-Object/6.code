@@ -1,0 +1,15 @@
+public WriteOptions(JsonObject json) {
+writeConcern = json.getString(&quot;writeConcern&quot;);
+}
+
+public WriteOptions(WriteOptions other) {
+public JsonObject toJson() {
+JsonObject json = new JsonObject();
+if (writeConcern != null) {
+json.put(&quot;writeConcern&quot;, writeConcern);
+}
+
+return json;
+}
+}
+

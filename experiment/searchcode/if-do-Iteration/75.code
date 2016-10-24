@@ -1,0 +1,15 @@
+* This is why there is not a <CODE>set</CODE> method for the iteration property.
+*
+* <p>
+* For example, to add a new item, do as follows:
+* <pre>
+*    getIteration().add(newItem);
+public List<Iteration> getIteration() {
+if (iteration == null) {
+iteration = new ArrayList<Iteration>();
+}
+return this.iteration;
+}
+
+}
+

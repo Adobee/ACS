@@ -1,0 +1,9 @@
+import static org.springframework.http.MediaType.SPECIFICITY_COMPARATOR;
+
+/**
+* @see Navigators#contentType()
+*/
+enum ContentTypeNavigator implements EqualityNavigator<MediaType> {
+public Optional<Route> navigate(@Nullable final MediaType contentType, final RoutingTree<MediaType> tree) throws IOException {
+final Optional<Route> exact = exactMatch(contentType, tree);
+

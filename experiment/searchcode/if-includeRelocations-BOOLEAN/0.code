@@ -1,0 +1,9 @@
+private volatile ByteSizeValue freeBytesThresholdHigh;
+private volatile boolean includeRelocations;
+private volatile boolean enabled;
+clusterSettings.addSettingsUpdateConsumer(CLUSTER_ROUTING_ALLOCATION_DISK_THRESHOLD_ENABLED_SETTING, this::setEnabled);
+}
+
+private void setIncludeRelocations(boolean includeRelocations) {
+this.includeRelocations = includeRelocations;
+

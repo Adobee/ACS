@@ -1,0 +1,10 @@
+super(CONTENT_TYPE.BARCODE);
+codeString = code;
+}
+
+
+@Override
+public boolean acceptPrint(PrinterInfo printerInfo, Printer printer) {
+byte [] printBytes = printerInfo.getBarcodeCommand(codeString);
+if(printerInfo.getWriteImageFull())
+

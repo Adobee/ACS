@@ -1,0 +1,12 @@
+public final static int DEFAULT_SAMPLE_SIZE = 20;
+
+private long prevTime;
+private int marks;
+private int sampleSize;
+public SimpleMovingAverageTimer() {
+this(DEFAULT_SAMPLE_SIZE);
+}
+
+public SimpleMovingAverageTimer(int sampleSize) {
+this.sampleSize = sampleSize;
+

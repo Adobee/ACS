@@ -1,0 +1,10 @@
+State currentState = State.Null0;
+while(true){
+int i = fr.read();
+if(i == -1) break;
+
+if((char)i == &#39;<&#39;){
+str = sb.toString();
+if(currentState == State.Null0){
+currentState = State.Null1;
+

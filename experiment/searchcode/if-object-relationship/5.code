@@ -1,0 +1,6 @@
+public boolean equals(Object obj) {
+if (this==obj) return true;
+if (!(obj instanceof SnomedRelationship)) return false;
+SnomedRelationship aux=(SnomedRelationship) obj;
+if (this.relationship.equalsIgnoreCase(aux.getRelationship())&amp;&amp;this.relationshipValue.equals(aux.getRelationshipValue()))
+

@@ -1,0 +1,10 @@
+return getRankItem(arr, 0, arr.length, k-1);
+}
+
+public static double getMedian(int[] arr) {
+/* odd number of items */
+int curr = arr[j];
+/* if item belongs to left partition*/
+if (curr < pivotVal) {
+i++;	// increment boundary
+

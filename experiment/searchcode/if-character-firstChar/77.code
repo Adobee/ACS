@@ -1,0 +1,6 @@
+StringBuilder output=new StringBuilder(&quot;&quot;);
+Set<Character> res=new TreeSet<Character>();
+String first,second;
+char secondChar=second.charAt(j);
+if(Character.isLowerCase(firstChar) &amp;&amp; Character.isLowerCase(secondChar) &amp;&amp;
+

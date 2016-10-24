@@ -1,0 +1,12 @@
+public Max(INDArray x, INDArray y) {
+super(x, y);
+}
+
+@Override
+public double update(double accum, double x){
+return (x>accum ? x : accum);
+}
+
+@Override
+public double update(double accum, double x, double y){
+

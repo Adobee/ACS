@@ -1,0 +1,8 @@
+boolean expandTabs = preferences.getBoolean(expandTabToSpaces, getDefaultAsBoolean(expandTabToSpaces));
+if (expandTabs) {
+String wrap = preferences.get(wrapForStatement, getDefaultAsString(wrapForStatement));
+return WrapStyle.valueOf(wrap);
+}
+
+public WrapStyle wrapIfStatement() {
+

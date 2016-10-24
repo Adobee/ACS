@@ -1,0 +1,7 @@
+private final Path path;
+private final boolean deleteOnExit;
+
+private PidFile(Path path, boolean deleteOnExit, long pid) throws IOException {
+* @param path the path to the pid file. The file is newly created or truncated if it already exists
+* @param deleteOnExit if <code>true</code> the pid file is deleted with best effort on system exit
+

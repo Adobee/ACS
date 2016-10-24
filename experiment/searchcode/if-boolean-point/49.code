@@ -1,0 +1,13 @@
+b = new Point(x[j], y[j]);
+c = new Point(x[k], y[k]);
+if(isGood(a,b,c)) count++;
+}
+}
+}
+return count;
+}
+
+public boolean isGood(Point a, Point b, Point c){
+Point o = new Point(0,0);
+boolean flag1 = side(a,b,o)*side(a,b,c)>0;
+

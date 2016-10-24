@@ -1,0 +1,9 @@
+return rawType.getName();
+}
+
+public boolean equals(Object obj) {
+if (obj instanceof MyRawType) {
+return ((MyRawType)obj).rawType.equals(rawType);
+}
+if (obj instanceof Class<?>) {
+

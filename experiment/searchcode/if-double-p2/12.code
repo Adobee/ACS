@@ -1,0 +1,7 @@
+public boolean intersection(Line l) throws OverflowException {
+double[] v = new double[4];
+v[0] = (l.p2.x - l.p1.x) * (p1.y - l.p1.y) - (l.p2.y - l.p1.y) * (p1.x - l.p1.x);
+public double distance() throws OverflowException {
+double d = (p1.x - p2.x)*(p1.x - p2.x) + (p1.y - p2.y)*(p1.y - p2.y);
+if (Double.isInfinite(d) || Double.isNaN(d))
+

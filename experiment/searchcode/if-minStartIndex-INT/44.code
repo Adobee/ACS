@@ -1,0 +1,7 @@
+while ((currentLine = buffReader.readLine()) != null) {
+if (inData == true &amp;&amp; currentLine.startsWith(&quot;  mo&quot;)) {
+inData = false;
+m = p.matcher(currentLine);
+m.find();
+int minStartIndex = m.end() - 1;
+

@@ -1,0 +1,8 @@
+public class UnicodeEscaper extends CodePointTranslator {
+
+private final int below;
+private final int above;
+private final boolean between;
+public static UnicodeEscaper outsideOf(int codepointLow, int codepointHigh) {
+return new UnicodeEscaper(codepointLow, codepointHigh, false);
+

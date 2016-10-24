@@ -1,0 +1,9 @@
+double delta = FastMath.abs(findBin(frequency / h) - queryBin);
+if(delta <= 1){
+return FastMath.cos(delta * (FastMath.PI / 2.0)) * FastMath.cos(delta * (FastMath.PI / 2.0))
+out = out % (2 * FastMath.PI);
+if(out < FastMath.PI){
+return out;
+} else if(out > FastMath.PI){
+return 2 * FastMath.PI - out;
+

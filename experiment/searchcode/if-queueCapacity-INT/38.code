@@ -1,0 +1,13 @@
+private LinkedList<Message> msgQueue;
+
+private int queueCapacity;
+
+public QueueMessager(String threadName, int queueCapacity) {
+synchronized (msgQueue) {
+//消息不可丢失
+if(queueCapacity<0)
+{
+msgQueue.add(msg);
+msgQueue.notifyAll();
+return;
+

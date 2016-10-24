@@ -1,0 +1,10 @@
+public LockGrantType getLockGrant() {
+return grant;
+}
+
+public void setAbortLsn(DbLsn abortLsn, boolean abortKnownDeleted) {
+private void setAbortLsnInternal(DbLsn abortLsn,
+boolean abortKnownDeleted,
+boolean createdThisTxn) {
+/* info can be null if this is called on behalf of a BasicLocker. */
+

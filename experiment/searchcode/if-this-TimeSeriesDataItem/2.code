@@ -1,0 +1,12 @@
+public TimeSeries(String name) {
+super();
+this.name = name;
+series = new ArrayList<TimeSeriesDataItem>();
+series.add(new TimeSeriesDataItem(time, value));
+sorted = false;
+}
+
+public TimeSeriesDataItem getDataItem(int i) {
+if (!sorted) {
+Collections.sort(series);
+

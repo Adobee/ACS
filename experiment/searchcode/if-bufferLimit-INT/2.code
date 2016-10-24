@@ -1,0 +1,10 @@
+private final List<Datum> dataset;
+
+private final int bufferLimit;
+
+public BufferedDataSource(final DataSource source, final int bufferLimit) {
+super(source);
+
+if (bufferLimit <= 0) {
+this.dataset = new ArrayList<>();
+

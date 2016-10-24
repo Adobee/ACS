@@ -1,0 +1,11 @@
+public static ApplicationSupportStrategy getSupportStrategy()
+{
+ApplicationSupportStrategy support = null;
+if ( SystemIOUtilities.isOnServer() )
+support = (ApplicationSupportStrategy)strategyClass.newInstance();
+
+}
+catch(Exception e2)
+{
+if ( support == null )
+

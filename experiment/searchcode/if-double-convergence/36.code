@@ -1,0 +1,11 @@
+this.convergenceRatio = convergenceRatio;
+return this;
+}
+
+PhaseThreeResults build() {
+if (status != null) {
+return new SimplePhaseThreeResults(status, success, parameterCovariance, convergenceRatio);
+}
+
+if(parameterCovariance == null || convergenceRatio == null) {
+

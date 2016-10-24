@@ -1,0 +1,16 @@
+//HashMap<Integer, OrderItem> mapItem;
+}
+
+/*public boolean createOrderItem(OrderItem orderItem){
+int itemId = orderItem.getItemId();
+if(!mapItem.containsKey(itemId)){
+return true;
+}
+return false;
+
+}
+
+public Order viewOrder(int orderId) {
+Order order = null;
+if (mapOrder.containsKey(orderId)) {
+

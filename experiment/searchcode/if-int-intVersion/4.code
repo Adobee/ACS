@@ -1,0 +1,11 @@
+return new IntVersion(val + 1);
+}
+
+@Override
+public boolean atMost(Version other) {
+if (!(other instanceof IntVersion)) {
+public boolean equals(Object obj) {
+if (obj instanceof IntVersion) {
+IntVersion other = (IntVersion) obj;
+return other.val == val;
+

@@ -1,0 +1,10 @@
+} catch (IndexOutOfBoundsException ex) {
+return -1;
+}
+}
+
+public boolean setBlockID(int x, int y, int z, int id) {
+try {
+int index = x << Chunk.SHIFT*2 | y << Chunk.SHIFT | z;
+if (Blocks[index] != 0 &amp;&amp; id == 0) BlockCount--;
+

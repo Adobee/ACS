@@ -1,0 +1,8 @@
+for (int i = 0; i < listFunction.size(); i++) {
+TAppFunction function = (TAppFunction) listFunction.get(i);
+if (!parentid.contains(function.getFParentId())) {
+String SQL=&quot;select o from TAppFunction o order by o.FSort&quot;;
+return functionDao.Query(SQL);
+}
+public TAppFunction saveOrUpdate(TAppFunction obj) {
+

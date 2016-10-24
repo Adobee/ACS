@@ -1,0 +1,11 @@
+private static LapsState instance = null;
+
+public static LapsState instance() {
+if(instance == null) instance = new LapsState();
+public void start() {
+setCurrentState(RunningState.instance());
+}
+
+@Override
+public void laps() {
+

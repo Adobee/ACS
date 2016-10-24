@@ -1,0 +1,8 @@
+/** Tests whether two lines are parallel to each other
+*  @param lhs The first line
+*  @param rhs The second line
+*  @param maxUlps The maximum error in ulps
+public static boolean parallel(Line2d lhs, Line2d rhs, long maxUlps) {
+return Vector2d.parallel(lhs.normal, rhs.normal, maxUlps);
+} //end parallel
+

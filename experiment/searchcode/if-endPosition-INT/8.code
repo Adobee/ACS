@@ -1,0 +1,8 @@
+public class LexicalError extends AnalysisError implements ScannerConstants{
+
+private int endPosition;
+private int lastState;
+
+public LexicalError(String msg, int startPosition, int endPosition) {
+super(msg, startPosition);
+

@@ -1,0 +1,10 @@
+private List<Widget> tooltips;
+private boolean hover, center, focused;
+private Object userData;
+
+public FocusableLabel(String text, int color, int hoverColor, int focusColor, Widget... tooltips) {
+public void draw(int mx, int my) {
+boolean newHover = inBounds(mx, my);
+if (newHover &amp;&amp; !hover) {
+for (Widget w : tooltips)
+

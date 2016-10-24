@@ -1,0 +1,7 @@
+int end = x;
+if(x <= 1) return x;
+while(end-start>1){
+long middle = (start + end)/2;
+if(middle*middle > x) end = (int)middle;
+else if(middle*middle < x) start = (int)middle;
+

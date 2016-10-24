@@ -1,0 +1,11 @@
+public final class Clocksvc extends AndroidServiceComponent implements Component, AlarmHandler, Deleteable, OnStartCommandListener,
+OnDestroyListener {
+
+private TimerInternal timerInternal;
+private boolean timerAlwaysFires = true;
+*  return {@code true} if the timer event will fire even if the application
+*   is not on the screen
+*/
+
+public boolean TimerAlwaysFires() {
+

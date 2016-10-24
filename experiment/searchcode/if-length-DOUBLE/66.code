@@ -1,0 +1,11 @@
+public static double[] multiply(double[] f, double[] g) {
+if(isZero(f) || isZero(g)) {
+return new double[] {0};
+}
+int df = f.length - 1;
+int dg = g.length - 1;
+int n = f.length;
+int m = g.length;
+if(m > n) return new double[][] {new double[1], f};
+double[][] t = new double[m + 1][n + 1];
+

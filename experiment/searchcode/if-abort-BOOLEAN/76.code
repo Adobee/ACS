@@ -1,0 +1,12 @@
+private static final Logger LOG = LoggerFactory.getLogger(AbortOnTimeoutEventHandler.class);
+
+private long abortTime;
+private boolean abortIfNotFull;
+
+/**
+* Constructs an instance of AbortOnTimeoutEventHandler that abort the application if some runnable has no
+*                       number of instances.
+*/
+public AbortOnTimeoutEventHandler(long abortTime, boolean abortIfNotFull) {
+this.abortTime = abortTime;
+

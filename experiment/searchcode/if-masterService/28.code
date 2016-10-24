@@ -1,0 +1,9 @@
+HrTeacherInfo t = (HrTeacherInfo) masterService.findEntity(&quot;from HrTeacherInfo where userUuid = &#39;&quot; + getSysUser().getUuid() + &quot;&#39;&quot;);
+if (null != t) {
+} else {
+m.setSendDelete(&quot;1&quot;);
+masterService.saveOrUpdate(m);
+}
+} else {
+if (&quot;1&quot;.equals(m.getSendDelete())) {
+

@@ -1,0 +1,9 @@
+protected SettingsDialog settingsDialog;
+private ClearButton clearButton;
+private MapText selectedDistance;
+
+public PointSelectionTool(Context context, CustomMapView mapView) {
+public void onVectorElementClicked(VectorElement element, double arg1,
+double arg2, boolean arg3) {
+if ((element instanceof Point) &amp;&amp; (mapView.getHighlights().size() < 1)) {
+

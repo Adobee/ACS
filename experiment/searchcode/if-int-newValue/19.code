@@ -1,0 +1,7 @@
+public static void paintFill(int[][] array, int x, int y, int newvalue) {
+paintFill(array, x, y, newvalue, array[x][y]);
+}
+
+public static void paintFill(int[][] array, int x, int y, int newvalue, int oldvalue) {
+int height = array.length;
+

@@ -1,0 +1,9 @@
+private int[] binCount = new int[ INIT_SIZE ];
+private long overallCount = 0;
+
+public TiesWeightDistribution( final double binWidth ) {
+long count = 0;
+for ( int i = size - 1; i >= 0; i-- ) {
+count += binCount[ i ];
+if ( count > countOverValue ) return binNumbers[ i ] * binWidth;
+

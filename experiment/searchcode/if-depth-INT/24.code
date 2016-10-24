@@ -1,0 +1,9 @@
+private int maxDepth;
+
+public int maxDepth(TreeNode root) {
+maxDepth = 0;
+if (root == null) {
+private void dfs(TreeNode node, int depth) {
+if (depth > maxDepth) {
+maxDepth = depth;
+

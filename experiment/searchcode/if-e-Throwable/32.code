@@ -1,0 +1,5 @@
+public static <X extends Throwable> void propagateIfInstanceOf(@Nullable Throwable throwable, Class<X> declaredType)
+throws Throwable
+{
+if ((throwable != null) &amp;&amp; (declaredType.isInstance(throwable))) {
+

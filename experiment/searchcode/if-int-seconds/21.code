@@ -1,0 +1,11 @@
+private String absolute(int seconds) {
+if (seconds == 1)
+return &quot;1 second&quot;;
+if (seconds < 60)
+return seconds + &quot; seconds&quot;;
+
+int minutes = seconds / 60;
+if (minutes <= 1)
+return &quot;1 minute&quot;;
+if (minutes < 60)
+

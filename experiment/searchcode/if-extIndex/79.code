@@ -1,0 +1,8 @@
+System.out.println(&quot;loading file name = &quot; + name);
+try {
+int extIndex = name.lastIndexOf(&#39;.&#39;);
+if (extIndex != -1)
+name = name.substring(0, extIndex);
+
+imageMap.put(name, new Image(f.getAbsolutePath()));
+

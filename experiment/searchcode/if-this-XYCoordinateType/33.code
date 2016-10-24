@@ -1,0 +1,8 @@
+* @throws ObjectStreamException if there is a problem.
+*/
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(XYCoordinateType.DATA)) {
+return XYCoordinateType.DATA;
+}
+else if (this.equals(XYCoordinateType.RELATIVE)) {
+

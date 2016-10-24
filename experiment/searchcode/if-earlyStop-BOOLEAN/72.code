@@ -1,0 +1,10 @@
+private volatile transient IAtomicReference<Boolean> earlyStop;
+
+private volatile transient IAtomicReference<Boolean> done;
+private volatile transient IList<String> replicate;
+* @return whether to validate against a held out test applyTransformToDestination and test for validation error.
+*/
+@Override
+public boolean isEarlyStopTesting() {
+return earlyStop.get();
+

@@ -1,0 +1,10 @@
+this.serialized = serialized;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) {
+PersistentCacheKey key = persistentCacheKeyFactory.createKey(serialized);
+if(key == null) {
+throw new InvalidPersistentCacheKeyException(&quot;Could not de-serialize key: &quot;+serialized);
+

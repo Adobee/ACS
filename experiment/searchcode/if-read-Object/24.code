@@ -1,0 +1,12 @@
+public class TransientReadOnlyModel<T> extends AbstractReadOnlyModel<T> {
+private transient T object;
+
+/**
+* During model construction object stored in model in transient state.
+public TransientReadOnlyModel(T object) {
+this.object = object;
+}
+
+@Override
+public T getObject() {
+

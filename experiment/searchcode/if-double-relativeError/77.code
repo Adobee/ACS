@@ -1,0 +1,11 @@
+Min = $Min;
+Max = $Max;
+PMin = $PMin;
+PMax = $PMax;
+}
+
+private static double relativeError(double realvalue,double calculatedvalue){
+public boolean checkPrevious(Double prevMin,Double prevMax,Double prevPMin,Double prevPMax){
+try{
+if ((relativeError(prevMin,Min)<toleranceThr) &amp;&amp; (relativeError(prevMax,Max)<toleranceThr) &amp;&amp; (relativeError(prevPMin,PMin)<toleranceThr) &amp;&amp; (relativeError(prevPMax,PMax)<toleranceThr))
+

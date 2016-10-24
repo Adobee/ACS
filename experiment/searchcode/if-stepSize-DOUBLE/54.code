@@ -1,0 +1,14 @@
+this.spike_voltage = spike_voltage;
+}
+}
+
+public class LIF {
+private double stepsize;
+private double offset;
+private double tau_m;
+public LIF() {
+this(0.0001, 1.6, 0.025, 0.02, 0.0, 3.5);
+}
+
+public LIF(double stepsize, double offset, double tau_m, double tau_a, double da, double D) {
+

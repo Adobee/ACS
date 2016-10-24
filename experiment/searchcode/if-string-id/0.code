@@ -1,0 +1,15 @@
+public static String safeString (String stringId) {
+if (stringId==null||stringId.equals(&quot;&quot;)) {
+//id = null;
+public static String safeIDBack (String stringId) {
+if (stringId==null) {
+//id = null;
+return stringId = &quot;&quot;;
+}
+else {
+return stringId.trim();
+}
+
+}
+}
+

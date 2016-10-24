@@ -1,0 +1,15 @@
+public enum MessageLevel {
+
+/**
+*
+*/
+INFO(&quot;-iq-info&quot;),
+/**
+*
+*/
+WARN(&quot;-iq-warning&quot;),
+public static MessageLevel getMessageLevel(String level) {
+MessageLevel msgLevel = null;
+for (MessageLevel thisLevel : MessageLevel.values()) {
+if (thisLevel.getMessageLevelString().equals(level)) {
+

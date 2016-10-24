@@ -1,0 +1,15 @@
+public synchronized double getPct(double pct) {
+return _histo.getValueAtPercentile(pct * 100);
+}
+
+public synchronized double getMin() {
+public double get50th() {
+return getPct(0.5);
+}
+
+public double get90th() {
+return getPct(0.9);
+}
+
+public double get99th() {
+

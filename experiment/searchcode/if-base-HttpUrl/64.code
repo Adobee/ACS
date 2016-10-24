@@ -1,0 +1,6 @@
+public void addTask(int taskId, String httpUrl, BaseTask baseTask,
+int delayTime) {
+taskPool.execute(new TaskThread(context, httpUrl, null, baseTask,
+delayTime));
+} catch (Exception e) {
+

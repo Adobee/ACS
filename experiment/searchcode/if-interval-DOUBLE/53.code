@@ -1,0 +1,7 @@
+public class WilsonModel implements ConfidenceIntervalModel {
+
+public ConfidenceInterval getConfidenceInterval(int success, int trials, double z) {
+
+if(trials < 1){
+return new ConfidenceInterval(Double.NaN,Double.NaN);
+

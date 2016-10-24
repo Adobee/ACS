@@ -1,0 +1,7 @@
+public class Stairs {
+
+public int designs(int maxHeight, int minWidth, int totalHeight, int totalWidth) {
+int c = 0;
+for (int t = minWidth; t <= totalWidth; t++)
+for (int r = 1; r <= maxHeight; r++)
+

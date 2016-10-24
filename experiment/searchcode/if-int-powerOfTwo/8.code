@@ -1,0 +1,9 @@
+public class Solution {
+public int[] countBits(int num) {
+if(num <= 0){
+dp[1] = 1;
+int i = 2;
+int powerOfTwo = 2;
+while(i <= num){
+if(i == powerOfTwo){
+

@@ -1,0 +1,11 @@
+public enum Maths {
+;
+
+public static double round2(double d) {
+final double factor = 1e2;
+if (d < Long.MIN_VALUE / factor || d > Long.MAX_VALUE / factor)
+return d;
+return Math.round(d * factor) / factor;
+}
+}
+

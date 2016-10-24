@@ -1,0 +1,11 @@
+Console.WriteLine(Double.toString(dividend / (double) divisor));
+}
+public static double Divide(int divisor, int dividend){
+return dividend/ (double)divisor;
+}
+private boolean ValidateDivisor(int divisor){
+if(divisor ==0) return false;
+return true;
+}
+}
+

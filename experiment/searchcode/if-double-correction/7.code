@@ -1,0 +1,7 @@
+BlCorrection correction = new FclBlCorrectionDAO().findById(correctionId);
+if (!correction.isCanBeDeleted()) {
+throw new LogiwareException(&quot;You cannot delete this correction.&quot;);
+public void postCorrection(BlCorrection correction, User currentUser) {
+//        if (!correction.isCanBePosted()) {
+//            throw new LogiwareException(&quot;You cannot post this correction.&quot;);
+

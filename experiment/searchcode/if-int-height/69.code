@@ -1,0 +1,8 @@
+public class Solution {
+public int maxArea(int[] height) {
+if (height.length<=1) return 0;
+int p = 0;
+int q = height.length - 1;
+int maxCap = 0;
+while (p<q) {
+

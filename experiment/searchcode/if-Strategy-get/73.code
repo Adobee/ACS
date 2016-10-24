@@ -1,0 +1,7 @@
+*            the type of customer
+* @return single instance of DiscountStrategy
+*/
+public static DiscountStrategy getInstance(String typeOfCustomer) {
+DiscountStrategy strategy = null;
+if (DiscountConstants.EMPLOYEE_STRATEGY
+

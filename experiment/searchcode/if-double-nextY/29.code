@@ -1,0 +1,11 @@
+results = new double[y0.length];
+nextY = results;
+for(int i=0;i<nextY.length;i++)
+nextY[i]=y0[i];
+if (h>0) {   //most common case
+if (nextY == null || nextY.length != y0.length)
+nextY = new double[y0.length];
+for(int i=0;i<nextY.length;i++)
+nextY[i]=y0[i];
+if (h>0) {   //most common case
+

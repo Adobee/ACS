@@ -1,0 +1,8 @@
+*     TreeNode(int x) { val = x; }
+* }
+*/
+public class SameTree {
+public boolean isSameTree(TreeNode p, TreeNode q) {
+if(p != null &amp;&amp; q != null) {
+boolean leftSame = isSameTree(p.left, q.left);
+

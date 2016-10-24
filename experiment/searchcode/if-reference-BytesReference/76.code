@@ -1,0 +1,6 @@
+import java.io.IOException;
+import org.elasticsearch.common.bytes.BytesReference;
+import org.elasticsearch.common.xcontent.XContentHelper;
+protected DeleteByQueryResponse doParse(BytesReference bytesReference) {
+try (XContentParser parser = XContentHelper.createParser(bytesReference)) {
+

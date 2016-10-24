@@ -1,0 +1,14 @@
+public static long stop(Lifecycle lifecycle, long timeout) throws Exception {
+//
+if(lifecycle == null) {
+return timeout;
+}
+
+//
+if(timeout < 0) {
+timeout = 0;
+}
+
+//
+long now = System.currentTimeMillis();
+

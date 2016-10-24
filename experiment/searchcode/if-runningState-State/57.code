@@ -1,0 +1,8 @@
+return this.previousRotation;
+}
+
+public void update() {
+if (this.runningState != 0) {
+this.currentRotation += (float) (this.runningState > 1 ? 5 : this.runningState) * this.runningSpeed * (float) this.waterMod;
+if (this.worldObj.rand.nextInt(100) == 0) {
+

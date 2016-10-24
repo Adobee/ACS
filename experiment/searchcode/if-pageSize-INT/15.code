@@ -1,0 +1,9 @@
+private int pageSize;
+private int offset;
+
+public PageParam(int page, int pageSize) {
+if(page < 1) page = 1;
+if(pageSize < 1) pageSize = 5;
+this.page = page;
+this.pageSize = pageSize;
+

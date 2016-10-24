@@ -1,0 +1,9 @@
+// if the offsets differ, we must be near a DST boundary
+if (offsetLocal != offsetAdjusted)
+{
+// we need to ensure that time is always after the DST gap
+// this happens naturally for positive offsets, but not for negative
+if ((offsetLocal - offsetAdjusted) < 0)
+{
+// if we just return offsetAdjusted then the time is pushed
+

@@ -1,0 +1,11 @@
+throw new IORuntimeException(&quot;cs len shouldn&#39;t be more than &quot; + Integer.MAX_VALUE +
+&quot;, &quot; + csLengthAsLong + &quot; read&quot;);
+}
+int csLength = (int) csLengthAsLong;
+StringBuilder sb;
+sb = new StringBuilder(csLength);
+}
+
+int remainingBytes = in.readInt();
+charsetDecoder.reset();
+

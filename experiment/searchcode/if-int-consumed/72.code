@@ -1,0 +1,12 @@
+public boolean onActionTime()
+{
+if(_effected.isDead())
+return false;
+
+if(_effected.getConsumedSouls() < 0)
+return false;
+
+int damage = (int) calc();
+
+if(_effected.getConsumedSouls() < damage)
+

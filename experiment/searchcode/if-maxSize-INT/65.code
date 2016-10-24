@@ -1,0 +1,9 @@
+public static void heap_stay(double a[], int i,int maxsize){//改变第i个节点后要维护堆的性质
+int l=2*i+1;//注意数组从0开始，而不是1，所以堆元素的左右孩子的标号需要注意
+int r=2*i+2;
+int larger=i;
+
+if(l<maxsize&amp;&amp;a[l]>a[i])
+larger=l;
+if(r<maxsize&amp;&amp;a[r]>a[larger])
+

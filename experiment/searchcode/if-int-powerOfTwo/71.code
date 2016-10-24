@@ -1,0 +1,15 @@
+public class PowerOfTwo{
+
+public static void main(String args[]){
+int number;
+PowerOfTwo powerOfTwo=new PowerOfTwo();
+powerOfTwo.printPowerOfTwo(number);
+}
+
+
+
+
+// check Number Less then 31
+public boolean checkNumberLessthen31(int number){
+if(number>31)
+

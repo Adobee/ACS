@@ -1,0 +1,11 @@
+Matrix nonZeroData = new Matrix(data.getRowDimension(),
+data.getColumnDimension());
+boolean zeroInstance;
+if (abs(data.get(i, j)) > MIN_VALUE) {
+zeroInstance = false;
+zeroInstances--;
+break;
+}
+if (!zeroInstance)
+for (int j = 0; j < data.getColumnDimension(); j++)
+

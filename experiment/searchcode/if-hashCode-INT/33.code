@@ -1,0 +1,12 @@
+public class HashCode implements OWLObjectVisitor, SWRLObjectVisitor {
+
+private int hashCode;
+
+private static final int MULT = 37;
+
+
+public static int hashCode(OWLObject object) {
+hashCode = hashCode * MULT + node.getLiteral().hashCode();
+if(node.hasLang()) {
+hashCode = hashCode * MULT + node.getLang().hashCode();
+

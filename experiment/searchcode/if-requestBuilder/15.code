@@ -1,0 +1,10 @@
+import com.prajay.Lesson8.Builder.ConcreteBuilder.RequestBuilder;
+
+public class RequestDirector {
+
+private RequestBuilder requestBuilder;
+
+public RequestDirector() {
+public void buildRequest(List<Customer> customers, String phone, String name, String request, String response) {
+if (!requestBuilder.loadUserProfile(phone, customers)) {
+

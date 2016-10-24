@@ -1,0 +1,13 @@
+canvas.clearLiveHandler();
+return;
+}
+
+boolean hZoom, vZoom;
+Plot p = canvas.getChart().getPlot();
+if (!(p instanceof Zoomable)) {
+return;
+}
+boolean hZoom, vZoom;
+Zoomable z = (Zoomable) p;
+if (z.getOrientation().isHorizontal()) {
+

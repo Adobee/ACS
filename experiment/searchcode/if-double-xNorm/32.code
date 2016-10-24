@@ -1,0 +1,8 @@
+float xNorm = x / 9.8f;
+
+if (Math.abs(xNorm - 0) > 0.1f) {
+if (xNorm < 0)
+controller.steerRight(Math.abs(xNorm) * 0.2f);
+else if (xNorm > 0)
+controller.steerLeft(Math.abs(xNorm) * 0.2f);
+

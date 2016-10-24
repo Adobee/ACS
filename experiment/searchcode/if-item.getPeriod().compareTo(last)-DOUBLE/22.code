@@ -1,0 +1,6 @@
+throw new IllegalArgumentException(&quot;Null &#39;item&#39; argument.&quot;);
+}
+if (!item.getPeriod().getClass().equals(this.timePeriodClass)) {
+RegularTimePeriod last = getTimePeriod(getItemCount() - 1);
+if (item.getPeriod().compareTo(last) > 0) {
+

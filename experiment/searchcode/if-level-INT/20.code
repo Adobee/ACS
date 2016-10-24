@@ -1,0 +1,14 @@
+package Data;
+
+public class Utility extends Purchasable {
+private int level;
+
+public Utility(int ID, int price, int level, int owner) {
+this.ID = ID;
+this.owner = owner;
+}
+
+public int payment(int dice) {
+if (this.level == 0)
+return dice * 4;
+

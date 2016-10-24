@@ -1,0 +1,11 @@
+private BigInteger strSimHash;
+
+private int hashbits = 128;
+
+public SimHash(Set<String> tokens) {
+this.tokens = tokens;
+public SimHash(Set<String> tokens, int hashbits) {
+this.tokens = tokens;
+this.hashbits = hashbits;
+this.strSimHash = this.simHash();
+

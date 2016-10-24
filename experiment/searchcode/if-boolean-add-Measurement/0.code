@@ -1,0 +1,13 @@
+public void addMeasurment(Measurement m){
+bufferMeasurement.add(m);
+}
+
+public Measurement getLastMeasurement(){
+
+return (Measurement) bufferMeasurement.peek();
+
+}
+
+public boolean isEmpty(){
+if(bufferMeasurement.size()==0) return true;
+

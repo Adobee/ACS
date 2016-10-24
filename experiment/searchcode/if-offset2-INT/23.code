@@ -1,0 +1,9 @@
+byte[] buffer2, int offset2, int length2) {
+// Short circuit equal case
+if (buffer1 == buffer2 &amp;&amp; offset1 == offset2
+&amp;&amp; length1 == length2) {
+return 0;
+}
+// Bring WritableComparator code local
+int end1 = offset1 + length1;
+

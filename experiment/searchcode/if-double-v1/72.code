@@ -1,0 +1,7 @@
+public static Point2D.Double VAdd (Point2D.Double v1, Point2D.Double v2) {
+return new Point2D.Double(v1.x + v2.x, v1.y + v2.y);
+}
+
+public static Point2D.Double VSub (Point2D.Double v1, Point2D.Double v2) {
+return new Point2D.Double(v1.x - v2.x, v1.y - v2.y);
+

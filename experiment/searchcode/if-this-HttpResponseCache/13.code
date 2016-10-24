@@ -1,0 +1,14 @@
+import android.net.http.HttpResponseCache;
+
+import java.io.File;
+import java.io.IOException;
+
+import ru.korsander.simplersswidget.utils.L;
+public void flushCache() {
+HttpResponseCache cache = HttpResponseCache.getInstalled();
+if (cache != null) {
+cache.flush();
+}
+}
+}
+

@@ -1,0 +1,12 @@
+public class RatioBelow implements Condition {
+
+private final double ratio;
+
+public RatioBelow(double aRatio) {
+ratio = aRatio;
+return ((double)aFailure.getOccurrenceCount() / (double)aSuccess.getOccurrenceCount()) <= ratio;
+}
+
+@Override
+public String toString() {
+

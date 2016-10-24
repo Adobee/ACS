@@ -1,0 +1,14 @@
+public class ScopeStack
+{
+private static Scope scope=null;
+
+public static Scope getScope()
+{
+if (ScopeStack.scope==null) return MainScope.main;
+ScopeStack.scope=scope;
+}
+
+public static void popScope()
+{
+if (ScopeStack.scope==null) throw new IllegalStateException(&quot;Want to pop scope to null&quot;);
+

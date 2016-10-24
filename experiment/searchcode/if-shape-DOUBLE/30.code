@@ -1,0 +1,13 @@
+public class HexagonalCell extends CellModel {
+
+public HexagonalCell(double shapeWidth, double shapeHeight) {
+public void moveShape(double x, double y) {
+double offset = 0;
+if (x % 2 == 0) {
+offset = getShapeHeight()/2;
+}
+getShape().relocate(x*getShapeWidth()*(3.0/4.0), y*getShapeHeight()-offset);
+}
+
+}
+

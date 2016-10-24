@@ -1,0 +1,9 @@
+super(StudentContactRelationshipType.class, &quot;StudentContactRelationship&quot;, StudentContactRelationshipCollectionType.class, &quot;StudentContactRelationships&quot;, StudentContactRelationshipService.class);
+}
+
+@Override
+protected String getRefId(StudentContactRelationshipType sifObject, Class<StudentContactRelationshipType> sifClass) throws PersistenceException {
+String result = null;
+if (sifObject != null &amp;&amp; sifObject.getStudentContactRelationshipRefId() != null) {
+result = sifObject.getStudentContactRelationshipRefId();
+

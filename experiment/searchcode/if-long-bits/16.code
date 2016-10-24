@@ -1,0 +1,13 @@
+* Created by weigl on 11.06.14.
+* Immutable
+*/
+public class Bits {
+private final long register;
+private final long nbits;
+
+public Bits(long nbits) {
+this(0, nbits);
+}
+
+public Bits(long register, long nbits) {
+

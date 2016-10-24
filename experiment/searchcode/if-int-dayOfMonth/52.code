@@ -1,0 +1,8 @@
+public FrenchRevolutionaryDate(int year, int month, int dayOfMonth) {
+super(year, month, dayOfMonth);
+}
+
+@Override
+public int dayOfYear() {
+return (month() - 1) * 30 + dayOfMonth();
+

@@ -1,0 +1,12 @@
+List<String> sourceQueries = crawler.getSource();
+boolean queryFound = false;
+boolean authorMatched = false;
+if (!EmptyNullChecker.isEmptyOrNull(sourceQueries)) {
+if (StringUtils.containsAll(query, tweet.getStatus().getText())) {
+queryFound = true;
+}
+}
+}
+
+if (!EmptyNullChecker.isEmptyOrNull(userNames)) {
+

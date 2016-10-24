@@ -1,0 +1,9 @@
+* Find the sum of all the numbers from 1 to T that are multiple of k or g
+*/
+public class SumOfMultiples {
+
+public static int findSumOfMultiplesInADumbWay(int T, int k, int g) {
+int result = 0;
+for (int i = 1; i < T; i++) {
+if (i % k == 0 || i % g == 0) result += i;
+

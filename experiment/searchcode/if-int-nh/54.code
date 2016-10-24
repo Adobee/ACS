@@ -1,0 +1,10 @@
+for(Neighbour nh=vertex[temp].addlist;nh!=null;nh=nh.next){
+System.out.println();
+if(!visited[nh.vertno]){
+
+que.add(nh.vertno);
+visited[nh.vertno]=true;
+}
+}
+if(visited[d]==true){
+

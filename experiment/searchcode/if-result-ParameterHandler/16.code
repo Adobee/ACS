@@ -1,0 +1,11 @@
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.Map;
+import java.util.Properties;
+
+import org.apache.ibatis.executor.parameter.ParameterHandler;
+ParameterHandler parameterHandler = (ParameterHandler)metaObject.getValue(&quot;delegate.parameterHandler&quot;);
+//parameterHandler负责设置占位符
+parameterHandler.setParameters(countStatement);
+ResultSet rs = countStatement.executeQuery();
+

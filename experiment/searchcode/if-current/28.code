@@ -1,0 +1,9 @@
+current = current.replaceAll(&quot;\&quot;&quot; , &quot;&quot;);
+current = current.replace(&quot;;&quot;, &quot;&quot;);
+
+if (!current.matches(STEM_REGEX)) {
+
+if (current.startsWith(&quot;(&quot;)) {
+current = current.replace(&quot;(&quot;, &quot;&quot;);
+} else if (current.startsWith(&quot;[&quot;)) {
+

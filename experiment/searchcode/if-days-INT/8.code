@@ -1,0 +1,17 @@
+package powerPlant;
+
+public class PowerPlant {
+private int days;
+
+public int simulate(int totalDays) {
+days = totalDays;
+for(int i = 1; i <= totalDays; i++){
+if (0 == i % 3 || 0 == i % 14 || 0 == i % 100) {
+days--;
+}
+}
+return days;
+}
+
+}
+

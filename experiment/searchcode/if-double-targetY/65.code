@@ -1,0 +1,10 @@
+import greenfoot.*;
+
+public class Missile extends SmoothMover
+{
+double targetX, targetY;
+&amp;&amp; getOneIntersectingObject(FloorTile.class).getY() == 575)
+{
+}
+else if(((getX() == targetX &amp;&amp; getY() == targetY) || isAtEdge())
+

@@ -1,0 +1,11 @@
+while(low<=high){
+double mid = (low+high)/2;
+if( Math.abs(mid*mid-(long)(x))<0.01)
+return high;
+}
+
+public double sqrt(double x){
+if(x<0)
+return -1;
+double low=0.0, high=x, mid=0.0;
+

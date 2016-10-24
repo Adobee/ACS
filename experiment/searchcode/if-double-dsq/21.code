@@ -1,0 +1,8 @@
+double steepX = steepness*x;
+double dsq = 1 + steepX*steepX;
+double denom = Math.sqrt(dsq);
+return steepness*x/denom;
+public static DoublePoint2D sigmoidRange(SigmoidConfig config, long count) {
+double center = sigmoid(config, count);
+if (config.endVal >= config.startVal) {
+

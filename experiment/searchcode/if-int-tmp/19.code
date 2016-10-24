@@ -1,0 +1,9 @@
+long result = 0;
+for (int i = 0; i < 32; i ++) {
+int tmpY = (y >> i) &amp; 1;
+if (tmpY == 1)
+result = sum(result, x << i);
+int tmpY = (int)((y >> i) &amp; 1);
+int tmp = (int)(tmpX | tmpY | mod);
+if ((tmpX == 1 &amp;&amp; tmpY == 1) || (tmpX == 1 &amp;&amp; mod == 1) || (mod == 1 &amp;&amp; tmpY == 1))
+

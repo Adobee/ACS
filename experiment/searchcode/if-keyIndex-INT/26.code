@@ -1,0 +1,9 @@
+public boolean containsKey(long key)
+{
+int keyIndex = keyFind(key);
+if (keyIndex >= 0)
+public boolean containsKey(long key, LongLongMapPolicy policy)
+{
+int keyIndex = keyFind(key);
+if (keyIndex >= 0)
+

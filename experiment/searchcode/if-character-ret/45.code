@@ -1,0 +1,12 @@
+private Point bottomTile;
+public Collider()
+{
+}
+public void collide(Character character, Map map)
+{
+if (!character.isAlive())
+public int collide(Character characterA, Character characterB)
+{
+int retVal = 0;
+if ((characterA.getPosition().x <= characterB.getPosition().x+characterB.getBounds().width)
+

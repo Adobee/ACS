@@ -1,0 +1,10 @@
+this.beacon = beacon;
+}
+
+public void goodStep(){
+goodPoints *= goodMult;
+if(goodPoints > maxGood)
+badPoints = (int) (INIT_BAD / (stdDiv*MAX_INIT_BAD_STD_REDUCTORS));
+
+if(goodPoints < 1) goodPoints = 1;
+

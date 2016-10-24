@@ -1,0 +1,7 @@
+* rectangular with at least two rows and two columns.
+*/
+public Covariance(double[][] data, boolean biasCorrected) {
+this(new BlockRealMatrix(data), biasCorrected);
+protected RealMatrix computeCovarianceMatrix(RealMatrix matrix, boolean biasCorrected) {
+int dimension = matrix.getColumnDimension();
+

@@ -1,0 +1,11 @@
+r5 = this;
+r2 = 1;
+r0 = r5.d;
+r1 = r6.getModifiers();
+r0 = r0 &amp; r1;
+if (r0 == 0) goto L_0x000c;
+return r0;
+L_0x000c:
+r0 = r5.c;
+r3 = -4616189618054758400; // 0xbff0000000000000 float:0.0 double:-1.0;
+

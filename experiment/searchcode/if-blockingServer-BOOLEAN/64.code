@@ -1,0 +1,10 @@
+protected final int workerCount;
+
+protected final boolean blockingServer;
+
+protected final boolean pipelining;
+this.serverOpenChannels = new OpenChannelsHandler(logger);
+
+if (blockingServer) {
+serverBootstrap = new ServerBootstrap(new OioServerSocketChannelFactory(
+

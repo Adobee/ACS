@@ -1,0 +1,8 @@
+* @throws MathIllegalStateException
+*             if {@link #optimize(int,MultivariateFunction,GoalType,double[]) optimize} has not been called.
+*/
+public PointValuePair[] getOptima() {
+
+if(optima == null) {
+throw new MathIllegalStateException(LocalizedFormats.NO_OPTIMUM_COMPUTED_YET);
+

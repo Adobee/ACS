@@ -1,0 +1,8 @@
+Object object=context.getProperty(value.toString());
+
+if(!reflection.isClass(object,DataBindProtected.class))
+return object;
+
+SessionContext sessionContext=(SessionContext)context;
+return sessionContext.getProtectedContext().getProperty(object.toString());
+

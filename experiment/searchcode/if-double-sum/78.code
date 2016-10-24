@@ -1,0 +1,12 @@
+public static double alternateSum(double[] array){
+
+double sum = 0;
+for(int j = 0; j < array.length; j++){
+if (j%2 == 0) {
+return sum;}
+
+
+public static double alternateSumNums(ArrayList<Double> array){
+double sum = 0;
+for(int i = 0; i <array.size(); i++){
+

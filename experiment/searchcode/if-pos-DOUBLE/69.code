@@ -1,0 +1,11 @@
+public Vec pos, pos_prev;
+public Vec accel;
+public double drag;
+public double inv_mass;
+
+public void integrate(double dt2) {
+if(inv_mass == 0)
+return;
+
+Vec tmp = new Vec(pos.x, pos.y);
+

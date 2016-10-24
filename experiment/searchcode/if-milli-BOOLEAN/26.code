@@ -1,0 +1,7 @@
+public static <T> boolean generateBeforeTimeout(
+Iterator<T> generator,
+long timeoutAsMilli,
+long finishTimeAsMilli = timeSource.nowAsMilli();
+boolean result = (finishTimeAsMilli < timeoutAsMilli) &amp;&amp;
+(itemsGenerated >= itemsToGenerate || false == generator.hasNext());
+

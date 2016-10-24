@@ -1,0 +1,13 @@
+int offset = 0;
+for (int i=0;i<lengths_.length;i++) {
+
+int cslen = lengths_[i];
+System.out.println(prefix+new String( callsigns_, offset, cslen )+&quot; &quot;+
+positions_[3*i+1]+&quot; &quot;+
+positions_[3*i+2]+&quot; &quot;);
+offset += cslen;
+}
+frameno++;
+}
+if (Constants.FRAMES_BINARY_DUMP) {
+

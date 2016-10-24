@@ -1,0 +1,7 @@
+public synchronized <T extends IGraphicsExtensionInterface> T getExtension(
+Class<T> extensionClass) throws VizException {
+if (cached.containsKey(extensionClass)) {
+for (Class<?> eClass : extensions) {
+if (extensionClass.isAssignableFrom(eClass)) {
+try {
+

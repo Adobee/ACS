@@ -1,0 +1,6 @@
+protected void appendDetail(StringBuffer buffer, String fieldName, Object value) {
+if (value.getClass().getName().startsWith(&quot;java.lang.&quot;)) {
+@Override
+protected void appendDetail(StringBuffer buffer, String fieldName, Collection collection) {
+buffer.append(ReflectionToStringBuilder.toString(collection.toArray(), this, true, true));
+

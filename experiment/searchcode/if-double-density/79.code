@@ -1,0 +1,7 @@
+for (int i=1; i<count-1; ++i) {
+double outerMidpoint = radialGrid.getMidpoint(i);
+double waterDensity = waterDensityGrid.getValue(i);
+double difference = Math.sqrt(outerMidpoint) * waterDensity * viscosity;
+
+double innerMidpoint = radialGrid.getMidpoint(i-1);
+

@@ -1,0 +1,7 @@
+private static char[] alphabet = &quot;abcdefghijklmnopqrstuvwxyz&quot;.toCharArray();
+
+public static boolean isPangram(String sentence) {
+String lowercaseSentence = sentence.toLowerCase();
+for (char c : alphabet) {
+if (lowercaseSentence.indexOf(c) == -1) return false;
+

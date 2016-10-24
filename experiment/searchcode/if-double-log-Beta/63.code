@@ -1,0 +1,8 @@
+public static double density(double sigma, double alpha, double beta, double lambda, double x) {
+double mu = Math.log(beta) - ((alpha * beta - lambda) / (lambda + beta)) * Math.pow(sigma, 2);
+if (x <= 0) {
+return 0;
+}
+double r = getR(sigma, alpha, beta, lambda, mu);
+if (x <= beta) {
+

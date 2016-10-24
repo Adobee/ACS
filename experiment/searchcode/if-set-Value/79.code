@@ -1,0 +1,18 @@
+private Value value;
+
+public Variable( Value value ) {
+this.value = value;
+this.setChanged();
+}
+
+public void setValue( Value value ) {
+this.value = value;
+
+if ( isChanged ) {
+this.setChanged();
+}
+}
+
+public Type getType() {
+return this.value.getType();
+

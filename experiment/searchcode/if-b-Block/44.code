@@ -1,0 +1,10 @@
+int blockIDAbove = world.getBlockId(i, j + 1, k);
+int blockIDBelow = world.getBlockId(i, j - 1, k);
+for (int x : GetValidSpawnBlocks()) {
+if (blockIDAbove != 0) {
+return false;
+}
+if (blockID == x) {
+return true;
+} else if (blockID == Block.snow.blockID &amp;&amp; blockIDBelow == x) {
+

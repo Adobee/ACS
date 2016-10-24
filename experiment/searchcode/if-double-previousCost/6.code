@@ -1,0 +1,14 @@
+this.eval.start();
+
+double previouscost = Double.MAX_VALUE;
+
+while(true){
+
+if (frontiere.isEmpty()){
+cost += currentnode.getpathcost()+ world.get(currentnode.getstat().getIndex(), destination.getIndex());
+
+if(cost < previouscost){
+previouscost = cost;
+
+this.eval.gotASolution(cost , count+1);
+

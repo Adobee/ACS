@@ -1,0 +1,11 @@
+public class Resolver {
+
+public static String buildVar(final AbstractBuild<?, ?> build,final String toResolve) {
+if(toResolve == null)
+public static String envVar(final String toResolve) {
+return Util.replaceMacro(toResolve, System.getenv());
+}
+
+private static final Logger LOG = Logger.getLogger(Resolver.class.getName());
+}
+

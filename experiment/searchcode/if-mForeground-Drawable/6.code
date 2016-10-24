@@ -1,0 +1,10 @@
+setForeground(ResourcesUtil.getDrawable(getContext(), drawableResId));
+}
+
+public void setForeground(Drawable drawable) {
+if (mForeground == drawable) return;
+
+if (mForeground != null) {
+mForeground.setCallback(null);
+unscheduleDrawable(mForeground);
+

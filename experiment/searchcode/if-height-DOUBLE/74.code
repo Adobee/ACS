@@ -1,0 +1,8 @@
+double rightInset, double bottomInset, double leftInset) {
+if (height < 0) {
+return Double.MIN_VALUE;
+double rightInset, double bottomInset, double leftInset) {
+if (height < 0) {
+return Double.MAX_VALUE;
+} else
+

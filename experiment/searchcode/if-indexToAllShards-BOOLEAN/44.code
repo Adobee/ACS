@@ -1,0 +1,11 @@
+int value2Docs;
+boolean indexToAllShards = randomBoolean();
+
+if (indexToAllShards) {
+// insert enough docs so all shards will have a doc
+client().admin().indices().prepareFlush().execute().actionGet();
+}
+}
+if (randomBoolean()) {
+client().admin().indices().prepareFlush().execute().actionGet();
+

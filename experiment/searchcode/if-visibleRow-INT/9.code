@@ -1,0 +1,11 @@
+final ArrangementMatchingRulesControl control = getRulesControl(e);
+if (control == null) {
+return;
+}
+
+final int editing = control.getEditingRow() - 1;
+final List<int[]> mappings = new ArrayList<>();
+fillMappings(control, mappings);
+
+if (mappings.isEmpty()) {
+

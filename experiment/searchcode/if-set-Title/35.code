@@ -1,0 +1,12 @@
+this.titleDrawerClosed = &quot;EpiTime&quot;;
+
+}
+
+void setTitleBar(String s) {
+((TextView)title.findViewById(R.id.menu_title)).setText(s);
+this.setTitle();
+}
+
+public void setTitle() {
+if(this.drawerToggle.isDrawerOpened) { this.setTitleBar(this.titleDrawerOpened); }
+

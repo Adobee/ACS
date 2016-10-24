@@ -1,0 +1,11 @@
+String importString = Preferences.getString( &quot;commandLineNamespace&quot; );
+
+boolean shouldRefresh = !this.lastImportString.equals( importString );
+
+if ( !shouldRefresh )
+shouldRefresh = date.longValue() != file.lastModified();
+}
+}
+
+if ( shouldRefresh &amp;&amp; !refresh( importString ) )
+

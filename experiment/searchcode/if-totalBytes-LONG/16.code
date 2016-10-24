@@ -1,0 +1,10 @@
+public UnblockingProcessReporter(long totalBytes){
+if(totalBytes <= 0){
+throw new IllegalArgumentException(&quot;totalBytes should be positive : &quot; + totalBytes);
+this.totalBytes = totalBytes;
+}
+
+@Override
+public void setTotalBytes(long bytes) {
+if(totalBytes <= 0){
+

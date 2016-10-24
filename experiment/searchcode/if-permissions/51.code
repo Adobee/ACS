@@ -1,0 +1,8 @@
+@Entity
+@Table(name = &quot;permissions&quot;)
+@XmlRootElement
+@NamedQueries({
+@NamedQuery(name = &quot;Permissions.findAll&quot;, query = &quot;SELECT p FROM Permissions p&quot;),
+Permissions other = (Permissions) object;
+if ((this.permissionsID == null &amp;&amp; other.permissionsID != null) || (this.permissionsID != null &amp;&amp; !this.permissionsID.equals(other.permissionsID))) {
+

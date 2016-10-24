@@ -1,0 +1,12 @@
+if(pos > 0) siftUp(pos);
+if(!isLeaf(pos)) siftDown(pos);
+}
+return listArray[listSize];
+}
+public void siftDown(int pos) {
+listArray[i] = listArray[j];
+listArray[j] = tmp;
+}
+public boolean isLeaf(int pos) {
+if(pos < listSize/2) return false;
+

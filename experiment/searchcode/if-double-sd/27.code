@@ -1,0 +1,14 @@
+public double getSD() {
+return sd;
+}
+
+public void setSD(double sd) {
+this.sd = sd;
+}
+
+public double getLower() {
+return lower;
+}
+
+public void setLower(double lower) {
+

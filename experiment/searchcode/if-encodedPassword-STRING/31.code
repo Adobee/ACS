@@ -1,0 +1,10 @@
+public boolean matches(CharSequence rawPassword, String encodedPassword) {
+if (rawPassword == null || encodedPassword == null) {
+return false;
+}
+String rawPasswordCode = &quot;&quot; + (rawPassword.hashCode() + CONTROL_NUMBER);
+return rawPasswordCode.equals(encodedPassword);
+}
+
+}
+

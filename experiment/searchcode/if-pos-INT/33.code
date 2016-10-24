@@ -1,0 +1,12 @@
+* @author Jia Lu
+*/
+public class GnomeSort {
+public void sort(int[] list) {
+
+int pos = 1;
+int last = 0;
+int temp = 0;
+
+while (pos < list.length) {
+if (list[pos] >= list[pos - 1]) {
+

@@ -1,0 +1,9 @@
+stations[x] = scan.nextInt();
+if (x > 1)
+days[x] = -1;
+}
+
+main : for (int x = 1; x < days.length; x++) {
+for (int y = Math.min(days.length - 1, x + maxDistance); y > x; y--) {
+if (days[x] != -1 &amp;&amp; stations[y] == 1) {
+

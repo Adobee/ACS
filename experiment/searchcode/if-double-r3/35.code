@@ -1,0 +1,11 @@
+r6 = r0.findViewById(r3);
+if (r22 == 0) goto L_0x0037;
+L_0x001d:
+r4 = r2.a();
+r0 = r21;
+r5 = r22 + -1;
+r3 = r3.get(r5);
+r3 = (com.whatsapp.au7) r3;
+r3 = r3.a();
+if (r4 == r3) goto L_0x005a;
+

@@ -1,0 +1,9 @@
+public abstract class AbstractSimpleTest<O, INPUT, EXPECTED> extends
+AbstractTest<INPUT, EXPECTED, TestValue<INPUT, EXPECTED>> {
+
+private O objectToTest;
+
+@Before
+public final void setUp() throws Exception {
+objectToTest = createObjectToTest();
+

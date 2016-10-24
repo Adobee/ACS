@@ -1,0 +1,11 @@
+public abstract class CreateStmt extends SqlStatement {
+
+public boolean hasIfNotExists;
+
+public Name database;
+
+public Name name;
+public CreateStmt(Block block, Explain explain, boolean hasIfNotExists, Name database,
+Name name) {
+super(block, explain);
+

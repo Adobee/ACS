@@ -1,0 +1,10 @@
+final public boolean attemptLogin()
+{
+try
+{
+if (super.attemptRoomLogin(Login.m_username, Login.m_password, this.m_joinPassword))
+Scanner scanResponse = new Scanner(response);
+//first part should be result
+String result = scanResponse.next();
+if (result.equals(MESSAGES.ROOMSERVER.GET_AUDIO_PORT_DATA_SUCCESS))
+

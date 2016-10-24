@@ -1,0 +1,6 @@
+public class NewtonFunctional {
+public static double getRoot(
+double p0, Function<Double,Double> func, Function<Double,Double> deriv, int maxiter, double tol) {
+for (int i=0; i < maxiter; i++) {
+double p = p0 - func.apply(p0) / deriv.apply(p0);
+

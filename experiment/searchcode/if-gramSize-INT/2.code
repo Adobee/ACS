@@ -1,0 +1,9 @@
+public static List<CharSeqRange> toGrams(final CharSeqRange charseqrange, final int gramSize) {
+final List<CharSeqRange> grams = Lists.newArrayList();
+
+final int startOffset = charseqrange.getInterval().lowerEndpoint();
+final int endOffset = charseqrange.getInterval().upperEndpoint();
+
+if ( gramSize > 0 ) {
+for (int i = startOffset; i <= endOffset-gramSize; i++) {
+

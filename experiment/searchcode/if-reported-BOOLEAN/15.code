@@ -1,0 +1,9 @@
+System.out.println(StringUtils.countMatches(args[0], &quot;(&quot;)-StringUtils.countMatches(args[0], &quot;)&quot;));
+int floor = 0;
+boolean reported = false;
+for (int i = 0; i < args[0].length(); i++) {
+if (args[0].substring(i, i+1).equals(&quot;)&quot;)) {
+floor--;
+if (!reported &amp;&amp; floor < 0) {
+System.out.println(i);
+

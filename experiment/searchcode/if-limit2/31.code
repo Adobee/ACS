@@ -1,0 +1,5 @@
+public AbstractDoubleRange(final double start, final double stop, final double limit1, final double limit2) throws RangeException {
+if(limit1 > start || limit2 < stop || start > stop)
+public AbstractDoubleRange(final double start, final double stop, final double limit1, final double limit2, final double interval) throws RangeException {
+if(limit1 > start || limit2 < stop || start > stop || (inValid(start, stop, interval)))
+

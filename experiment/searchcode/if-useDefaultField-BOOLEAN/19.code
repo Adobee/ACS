@@ -1,0 +1,8 @@
+} else if (parseContext.parseFieldMatcher().match(currentFieldName, Field.FAIL_ON_UNSUPPORTED_FIELD)) {
+failOnUnsupportedField = parser.booleanValue();
+} else if (&quot;boost&quot;.equals(currentFieldName)) {
+private static void setDefaultIndexTypeFields(QueryParseContext parseContext, Item item, List<String> moreLikeFields,
+boolean useDefaultField) {
+if (item.index() == null) {
+item.index(parseContext.index().name());
+

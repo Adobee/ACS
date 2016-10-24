@@ -1,0 +1,6 @@
+Class valuesSourceType = valueType != null ? (Class<VS>) valueType.getValuesSourceType() : this.valuesSourceType;
+if (valuesSourceType == null || valuesSourceType == ValuesSource.class) {
+FieldMapper<?> mapper = context.smartNameFieldMapper(input.field);
+if (mapper == null) {
+Class<VS> valuesSourceType = valueType != null ? (Class<VS>) valueType.getValuesSourceType() : this.valuesSourceType;
+

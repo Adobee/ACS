@@ -1,0 +1,9 @@
+int len = (Long.SIZE - Long.numberOfLeadingZeros(un)) / 8 + 1;
+int firstByte = (int) (n >> ((len - 1) * 8));
+switch (len) {
+case 1:
+// fall it through to firstByte==-1, len=2.
+firstByte >>= 8;
+case 2:
+if ((firstByte < 20) &amp;&amp; (firstByte >= -20)) {
+

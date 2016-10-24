@@ -1,0 +1,7 @@
+Map<Class<?>, TypeConverter<?, ?>> toMap = this.typeConverters.get(toClass);
+if (toMap == null) {
+toMap = new HashMap<>();
+Map<Class<?>, TypeConverter<?, ?>> toMap = this.typeConverters.get(toClass);
+if (toMap != null) {
+TypeConverter<U, V> typeConverter = (TypeConverter<U, V>) toMap.get(fromClass);
+

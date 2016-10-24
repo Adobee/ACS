@@ -1,0 +1,10 @@
+public static CopticChronology getInstance(DateTimeZone zone, int minDaysInFirstWeek) {
+if (zone == null) {
+zone = DateTimeZone.getDefault();
+// Calculate relative to the nearest leap year and account for the
+// difference later.
+
+int relativeYear = year - 1687;
+int leapYears;
+if (relativeYear <= 0) {
+

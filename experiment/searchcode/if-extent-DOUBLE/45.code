@@ -1,0 +1,13 @@
+return new PointRadius(other.x, other.y, other.datum, other.precision,
+other.extent);
+}
+
+public double extent; // maximum uncertainty radius
+
+public PointRadius(Coordinate c) {
+this.precision = c.precision;
+this.extent = 0.0;
+}
+
+public PointRadius(Coordinate c, double extent) {
+

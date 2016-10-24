@@ -1,0 +1,11 @@
+public void process(Message m)
+{
+switch(m.messageType) {
+case 0:
+//join message
+if(localstate.parent == -1)	{
+System.out.println(&quot;This is a join message&quot;);
+try {
+for(int i : outs.keySet()) {
+if(i != localstate.parent &amp;&amp; i!=localstate.distinguishedNodeId) {
+

@@ -1,0 +1,8 @@
+TranslogStats stats = translog.stats();
+if (randomBoolean()) {
+BytesStreamOutput out = new BytesStreamOutput();
+try {
+translog.read(location);
+} catch (ElasticsearchException e) {
+if (e.getCause() instanceof EOFException) {
+

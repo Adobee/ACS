@@ -1,0 +1,7 @@
+* get the expected cost, if everything is updated
+* @return
+*/
+public double getExpectedCost(CostMap costMap, LinkedList<SwapPath> swapCycles, LinkedList<SwapPath> swapInsertPath, LinkedList<InsertNodeIntoArc> swapInsertIna){
+double previousCost = Route.getTotalCost(costMap.getSoluRoutes());
+for(SwapPath path : swapCycles){
+

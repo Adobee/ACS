@@ -1,0 +1,11 @@
+package minidb.storagemanager;
+
+public class Block extends AbstractBlock{
+
+public Block()
+//		for(int i = 0; i < data.length &amp;&amp; freeByte < 0; i++)
+//			if(data[i] == 0)
+//				freeByte = i;
+//
+//		for(int i = freeByte, j = 0; j < d.length; i++, j++)
+

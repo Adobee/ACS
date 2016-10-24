@@ -1,0 +1,11 @@
+.intValue());
+}
+
+if (AB[i.intValue()][j.intValue()].toString().length() >
+padding.intValue()) {
+System.out.print(A[i.intValue()][j.intValue()]
+.toString() + &quot; &quot; + padString);
+}
+
+if (i.intValue() == (dim.intValue()/2)) {
+

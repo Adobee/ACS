@@ -1,0 +1,11 @@
+IndexReader reader = indx.getIndexReader(&quot;index&quot;);
+
+DocsInfo docinfo = new DocsInfo(reader);
+
+int numofDocs = docinfo.getnumofDocs();
+int NUM_OF_DOCS = numofDocs;
+int MAX_NUM_OF_TERMS = max_num_of_terms;
+
+int numofTerms;
+double[][] wd = new double[MAX_NUM_OF_TERMS][NUM_OF_DOCS];
+

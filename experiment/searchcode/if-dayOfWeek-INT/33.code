@@ -1,0 +1,7 @@
+public class DayOfWeekPredicate implements TimePredicate<ProjectActivity> {
+
+private final int dayOfWeek;
+
+public DayOfWeekPredicate(int dayOfWeek) {
+if (dayOfWeek < DateTimeConstants.MONDAY || dayOfWeek > DateTimeConstants.SUNDAY) {
+

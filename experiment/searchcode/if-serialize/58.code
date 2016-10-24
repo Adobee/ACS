@@ -1,0 +1,7 @@
+listLink = (SerializeListLink) getSqlMapClientTemplate().queryForObject(&quot;findSerializeListLinkById&quot;,id);
+if(null==listLink){
+listLink = new SerializeListLink();
+serializeListLink = (SerializeListLink)getSqlMapClientTemplate().queryForObject(&quot;findSerializeListLinkByUidAndChapterId&quot;,map);
+if(null == serializeListLink){
+serializeListLink = new SerializeListLink();
+

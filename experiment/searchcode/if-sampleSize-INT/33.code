@@ -1,0 +1,8 @@
+private final double resetAverage;
+private int index;
+private double average;
+private long sampleSize;
+public RunningAverage(int windowSize, double average, int sampleSize) {
+if (windowSize <= 0) {
+throw new IllegalArgumentException(&quot;windowSize must be > 0&quot;);
+

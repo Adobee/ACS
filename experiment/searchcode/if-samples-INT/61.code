@@ -1,0 +1,9 @@
+public final int maxAmplitude;
+public final int[] samples;
+
+public WaveformData(int height, int[] samples) {
+* @return the waveform data downsampled to the required width
+*/
+public WaveformData scale(int requiredWidth) {
+if (requiredWidth <= 0) throw new IllegalArgumentException(&quot;Invalid width: &quot; + requiredWidth);
+

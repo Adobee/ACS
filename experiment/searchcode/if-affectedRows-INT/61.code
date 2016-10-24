@@ -1,0 +1,13 @@
+public int delete(Uri uri, String selection, String[] selectionArgs) {
+
+SQLiteDatabase db = mDbHelper.getWritableDatabase();
+
+int affectedRows = 0;
+
+switch (MATCHER.match(uri)) {
+throw new IllegalArgumentException(&quot;DELETE : Uri &#39;&quot; + uri.toString() + &quot;&#39; not supported.&quot;);
+}
+
+if (0 < affectedRows) {
+getContext().getContentResolver().notifyChange(uri, null);
+

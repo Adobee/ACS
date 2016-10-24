@@ -1,0 +1,9 @@
+boolean isNowPlaying = false;
+boolean isPastDuringConference = false;
+int layoutResId = R.layout.my_schedule_item;
+if (itemViewType == VIEW_TYPE_NOW) {
+long now = UIUtils.getCurrentTime(view.getContext());
+boolean showEndTime = false;
+boolean isBlockNow = false;
+if (item.endTime <= now) {
+

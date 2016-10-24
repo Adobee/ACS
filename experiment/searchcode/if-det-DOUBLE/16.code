@@ -1,0 +1,9 @@
+private ComDet setMask(ComDet comDet) {
+double mask = 0;
+Field[] fields = comDet.getClass().getDeclaredFields();
+for(int i=0; i<fields.length; i++){
+//System.out.println(&quot;属性名:&quot; + f.getName() + &quot; 属性值:&quot; + f.get(userDet));
+String value = (String)(f.get(comDet));
+if(value != null){
+f.set(comDet, UserUtil.divideStr(value));
+

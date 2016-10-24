@@ -1,0 +1,16 @@
+double diff = Math.abs(ang1 - ang2);
+
+if (diff>180)
+diff=180 - (diff - 180);
+
+return Math.abs(diff);
+}
+
+public static double standardizeAngle(double ang)
+double dot = A*C+B*D;
+double len_sq = C*C+D*D;
+double param=dot/len_sq;
+
+double xx,yy;
+if (param < 0)
+

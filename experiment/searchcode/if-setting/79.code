@@ -1,0 +1,10 @@
+import com.activeandroid.query.Select;
+
+@Table(name = &quot;Settings&quot;)
+public class Setting extends Model {
+
+@Column(name = &quot;MediaDownloaded&quot;)
+Setting setting = new Select().from(Setting.class).executeSingle();
+
+if (setting == null) {
+

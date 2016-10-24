@@ -1,0 +1,8 @@
+public void backtrack(List<List<Integer>> lists, List<Integer> list, int[] num){
+if(list.size() == num.length) {
+lists.add(new ArrayList<Integer>(list));//important, don&#39;t forget new
+return;
+}
+for(int i:num){
+if(!list.contains(i)){
+

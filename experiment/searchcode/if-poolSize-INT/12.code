@@ -1,0 +1,12 @@
+private static ExecutorService pool= null;
+
+private  int poolSize = 2;
+
+@Resource
+private OrderService orderService;
+pool=Executors.newFixedThreadPool(poolSize) ;
+
+if (pool!=null){
+for (int i=0;i<poolSize;i++){
+pool.submit(new OrderTask(orderService));
+

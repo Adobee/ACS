@@ -1,0 +1,14 @@
+public static Density[] cachedDensityTypes = {
+Density.LOW,
+Density.MEDIUM,
+Density.HIGH
+};
+
+private double[][] affinities;
+for(Node lot : this.sim.lots) {
+
+if(!ready(lot))// || !LotOps.isNextToBuiltRoad(lot))
+continue;
+
+Map<Density, Double> potentials = new HashMap<Density, Double>();
+

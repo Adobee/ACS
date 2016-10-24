@@ -1,0 +1,10 @@
+public MovingAvgBufferIterator(LinkedBuffer buffer, int index){
+this.currentBuffer = buffer;
+this.currentIndex = index;
+}
+
+public Float next(){
+if (currentIndex+1 >= currentBuffer.size()){
+if (currentBuffer.hasNext()){
+currentIndex = 0;
+

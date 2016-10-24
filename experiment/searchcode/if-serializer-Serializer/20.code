@@ -1,0 +1,6 @@
+public static <T> TableRecordSerializer<T> getSerializer(String table) {
+if (table.equals(&quot;account&quot;))
+return (TableRecordSerializer<T>) accountSerializer;
+if (table.equals(&quot;passwordCard&quot;))
+return (TableRecordSerializer<T>) passwordCardSerializer;
+

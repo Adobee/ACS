@@ -1,0 +1,12 @@
+import java.util.Random;
+
+@SuppressWarnings(&quot;serial&quot;)
+public class DummyRandom extends Random {
+private ArrayList<Double> nextDoubles = new ArrayList<Double>();
+public double nextDouble() {
+if (nextDoubles.size() > 0)
+{
+return nextDoubles.remove(0);
+}
+if (defaultDouble != null)
+

@@ -1,0 +1,9 @@
+* Create global configuration and initialize ImageLoader with this configuration
+* @return The built Image Loader
+*/
+private ImageLoader initImageLoader() {
+
+int memoryCacheSize;
+if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ECLAIR) {
+int memClass = ((ActivityManager)
+

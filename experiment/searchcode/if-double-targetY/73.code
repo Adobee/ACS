@@ -1,0 +1,8 @@
+private boolean movingBecauseOfSpawn;
+private boolean movingBecauseOfDrift;
+private double targetX, targetY;
+public void setTarget(double x, double y) {
+targetX = x;
+targetY = y;
+moving = true;
+

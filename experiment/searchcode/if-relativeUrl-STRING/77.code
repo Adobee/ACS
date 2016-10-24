@@ -1,0 +1,6 @@
+public static String get(String relativeURL) {
+if (relativeURL.length() > 0 &amp;&amp; relativeURL.charAt(0) == &#39;/&#39;) {
+relativeURL = relativeURL.substring(1);
+}
+String adjustedURL = RequestCycle.get().getProcessor().getRequestCodingStrategy().rewriteStaticRelativeUrl(relativeURL);
+

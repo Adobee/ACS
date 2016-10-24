@@ -1,0 +1,10 @@
+private Dimension dim;
+private Point windowPos;
+private boolean shouldResize;
+private boolean shouldMove;
+private boolean firstUpdate = true;
+updateNumdarts(gs.getPlayer().getNumDarts());
+
+if(firstUpdate){
+MazeDraw.resetCamera(gs, gs.getPlayer().getY(), gs.getPlayer().getX(),getMazeScreenHRes(), getMazeScreenVRes());
+

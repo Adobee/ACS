@@ -1,0 +1,10 @@
+private double sum;
+private double sumsq;
+private double min;
+private double max;
+
+private double mean;
+mean = sum / n;
+double num = sumsq - (n * mean * mean);
+if (num < 0) {
+

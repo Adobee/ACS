@@ -1,0 +1,9 @@
+public void line(P p1, P p2) { line(p1.x, p1.y, p2.x, p2.y); }
+public void line(double x, double y, P p2) { line(x, y, p2.x, p2.y); }
+public void line(P p1, double x, double y) { line(p1.x, p1.y, x, y); }
+g.fill(gp);
+}
+
+public void route(P p1, R r, P p2) {
+if      (p1.x < r.minx() &amp;&amp; p1.y < r.miny()) { line(p1, r.minx(), r.miny()); route(new P(r.minx(), r.miny()), r, p2); }
+

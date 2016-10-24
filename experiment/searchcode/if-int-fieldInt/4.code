@@ -1,0 +1,10 @@
+public boolean fieldBoolean = true;
+
+@MappedField
+public int fieldInt = 1;
+
+@MappedField
+public String fieldString = &quot;text&quot;;
+assertEquals(dataSourceObject.getValue(null), text);
+} else if (fieldInt.equals(dataSourceObject.getFieldName())) {
+

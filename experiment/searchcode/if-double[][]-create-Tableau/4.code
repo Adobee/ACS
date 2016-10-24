@@ -1,0 +1,9 @@
+private transient OptimizerPrecision precision = OptimizerPrecision.DOUBLE;
+
+private transient SimplexTableauFactory tableauFactory = new LexDualSimplexTableauFactory();
+return tableau;
+}
+
+protected SimplexTableau createTableau() {
+return getTableauFactory().createTableau(getZeroColumnsAction(), getPrecision());
+

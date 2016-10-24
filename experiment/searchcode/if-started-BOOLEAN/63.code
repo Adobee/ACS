@@ -1,0 +1,20 @@
+this.a = a;
+}
+
+public void processEvent() {
+game.startConversation(a);
+started = true;
+}
+
+public boolean complete(){
+if(!game.isConversing() &amp;&amp; started){
+return true;
+}else
+return false;
+}
+
+public boolean running(){
+return started;
+}
+}
+

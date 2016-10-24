@@ -1,0 +1,13 @@
+public SeparableFootprints(){
+}
+
+public boolean rectFootprintWeightU( double umin, double umax, final int boundary ){
+
+if ( umin > umax ){
+double temp = umax;
+umax = umin;
+umin = temp;
+}
+
+umin = Math.max(umin, 0);
+

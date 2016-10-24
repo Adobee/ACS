@@ -1,0 +1,13 @@
+List<?> cached = myExtensions.get(extensionClass);
+if (cached == null) {
+final ServiceLoader<T> loader = ServiceLoader.load(extensionClass, extensionClass.getClassLoader());
+cached = myExtensions.putIfAbsent(extensionClass, extensions);
+if (cached == null) {
+cached = extensions;
+}
+}
+//noinspection unchecked
+return (List<T>)cached;
+}
+}
+

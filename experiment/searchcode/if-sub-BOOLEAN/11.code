@@ -1,0 +1,11 @@
+* @param sub != null.
+*/
+Neg (Formula sub) {
+if (sub == null) throw new IllegalArgumentException();
+this.sub = sub;
+}
+
+public String toString() { return &quot;¬&quot; + sub.toString(); }
+
+public boolean eval (boolean[] valuation) {
+

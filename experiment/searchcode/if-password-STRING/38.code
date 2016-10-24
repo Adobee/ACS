@@ -1,0 +1,9 @@
+import org.mybeans.form.FormBean;
+
+public class ChangePwdForm extends FormBean {
+private String oldPassword;
+public List<String> getValidationErrors() {
+List<String> errors = new ArrayList<String>();
+if (oldPassword.trim().length() == 0) {
+errors.add(&quot;Please enter current Password&quot;);
+

@@ -1,0 +1,9 @@
+return this == o || (o instanceof DialShape &amp;&amp; this.name.equals(((DialShape)o).toString()));
+}
+
+private Object readResolve() {
+if (this.equals(DialShape.CIRCLE)) {
+return DialShape.CIRCLE;
+}
+if (this.equals(DialShape.CHORD)) {
+

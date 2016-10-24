@@ -1,0 +1,10 @@
+tmp = (SparseDoubleMatrix2D) mappingMatrix.zMult(lowLevelMatrix, tmp, 1, 0, false, false);*/
+
+SparseDoubleMatrix2D tmp;
+if(this.tmpMatrix == null || this.mappingMatrix == null){
+*  exam the confidence of violation
+*/
+double confidence;
+if(Settings.confidenceTable.size() > 0){
+confidence = Settings.confidenceTable.get(i).getConfidenceList()[j];
+

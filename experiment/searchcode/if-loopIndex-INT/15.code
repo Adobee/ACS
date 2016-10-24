@@ -1,0 +1,9 @@
+rehash(index);
+return toRet;
+}
+
+private void rehash(int index) {
+int loopIndex = index >= 9 ? 0 : index+ 1;
+while(this.keys[loopIndex]!=null &amp;&amp; loopIndex != index){
+int rehashIndex = findIndex(this.keys[loopIndex]);
+

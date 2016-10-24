@@ -1,0 +1,5 @@
+public abstract boolean isInPlotAbs(PlotWorld plotworld, Location loc, PlotId plotid);
+
+// If you have a circular plot, just return the corner if it were a square
+public abstract Location getPlotBottomLocAbs(PlotWorld plotworld, PlotId plotid);
+

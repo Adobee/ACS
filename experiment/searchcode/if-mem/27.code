@@ -1,0 +1,7 @@
+public List<CoopMemAct> getMemActList() {
+if (memActList == null) {
+memActList = coopMemActFacadeREST.findAll();
+public DataModel<CoopMemAct> getMemActModel() {
+if (memActModel == null) {
+memActModel = new ListDataModel<>(getMemActList());
+

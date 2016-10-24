@@ -1,0 +1,13 @@
+protected int partIndex;
+protected int partCount;
+
+protected MoviePart() {
+// used by serializer
+}
+
+public MoviePart(MoviePart obj) {
+this(obj, obj.partIndex, obj.partCount);
+}
+
+public MoviePart(Movie movie, int partIndex, int partCount) {
+

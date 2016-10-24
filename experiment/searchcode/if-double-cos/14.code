@@ -1,0 +1,9 @@
+public static double getDistanceBW2GPSPoints(double[] srcPt, double[]destPt) {
+if( srcPt == null || destPt == null ){
+return Double.MAX_VALUE;
+}
+double lat1= srcPt[0], lon1=srcPt[1], lat2= destPt[0], lon2= destPt[1];
+double U2 = Math.atan((1 - f) * Math.tan(Math.toRadians(lat2)));
+double sinU1 = Math.sin(U1), cosU1 = Math.cos(U1);
+double sinU2 = Math.sin(U2), cosU2 = Math.cos(U2);
+

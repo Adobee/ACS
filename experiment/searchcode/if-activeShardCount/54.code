@@ -1,0 +1,10 @@
+import org.elasticsearch.action.admin.indices.alias.Alias;
+import org.elasticsearch.action.support.ActiveShardCount;
+import org.elasticsearch.cluster.ack.ClusterStateUpdateRequest;
+private final Set<ClusterBlock> blocks = new HashSet<>();
+
+private ActiveShardCount waitForActiveShards = ActiveShardCount.DEFAULT;
+
+
+public CreateIndexClusterStateUpdateRequest(TransportMessage originalMessage, String cause, String index, String providedName,
+

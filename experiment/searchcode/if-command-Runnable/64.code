@@ -1,0 +1,10 @@
+public class DefaultShellCommand extends AbstractShellCommand {
+
+DefaultRunnable runnable = null;
+
+@Override
+protected void startdoLog(CommandEnum type) {
+switch(type) {
+case INFO:
+runnable = new InfoRunnable();
+

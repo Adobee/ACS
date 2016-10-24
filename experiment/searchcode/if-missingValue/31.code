@@ -1,0 +1,6 @@
+public boolean equals(Object obj)
+{
+if (obj instanceof MissingValue &amp;&amp; ((MissingValue) obj).getType().equals(this.type)) {
+if (((MissingValue) obj).getType().equals(MissingValueType.NOMINAL)) {
+if (this.getNominalClass() != null
+

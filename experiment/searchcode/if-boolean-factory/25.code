@@ -1,0 +1,13 @@
+public Factory getFactory(int factoryId) throws FactoryDoesNotExistException {
+Factory factory = factoryMap.get(factoryId);
+if(factory != null){
+return factory;
+}
+throw new FactoryDoesNotExistException();
+factoryMap.remove(factoryId);
+}
+
+private synchronized int getNextFactoryID() {
+if(!factoryMap.isEmpty()){
+return (factoryMap.lastKey()+1);
+

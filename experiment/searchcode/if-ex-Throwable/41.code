@@ -1,0 +1,6 @@
+public static Throwable getThrowable(HttpServletRequest request){
+Throwable ex = null;
+if (request.getAttribute(&quot;exception&quot;) != null) {
+ex = (Throwable) request.getAttribute(&quot;exception&quot;);
+} else if (request.getAttribute(&quot;javax.servlet.error.exception&quot;) != null) {
+

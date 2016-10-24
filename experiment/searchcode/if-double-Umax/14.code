@@ -1,0 +1,9 @@
+//Define min and max control output
+private double uMin = -10.0;
+private double uMax = 10.0;
+
+//Constructor
+//Saturate output at limits
+private double limit(double u, double umin, double umax) {
+if (u < umin) {
+

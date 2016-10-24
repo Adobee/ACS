@@ -1,0 +1,10 @@
+// represents one sequences read by the FASTAReader
+
+public class Sequence {
+
+private byte[] sequenceData;
+private String name;
+private boolean likelynucleotides;
+public Sequence(byte[] sequence, String name, boolean likelynucleotides, boolean invalidchars) {
+this.name = name;
+

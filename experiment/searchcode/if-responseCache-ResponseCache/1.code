@@ -1,0 +1,11 @@
+package com.anypresence.gw;
+
+import java.net.ResponseCache;
+
+import com.anypresence.gw.cache.InMemoryCache;
+ResponseCache.setDefault(Config.getCacheManager());
+}
+
+public static ResponseCache getCacheManager() {
+if (cacheManager == null) {
+

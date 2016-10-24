@@ -1,0 +1,9 @@
+private OkHttpClient okHttpClient = new OkHttpClient();
+private String versionName;
+private HttpUrl baseUrl;
+private String accessToken;
+throw new RestServicesNotInitialized(&quot;io.oddworks.accessToken is required&quot;);
+}
+
+this.baseUrl = new HttpUrl.Builder().scheme(Oddworks.API_PROTOCOL).host(Oddworks.API_HOST).addPathSegment(Oddworks.API_VERSION).build();
+

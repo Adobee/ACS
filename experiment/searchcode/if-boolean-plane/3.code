@@ -1,0 +1,11 @@
+public boolean saveClickByPlane(String planeId, String userId)
+throws RemoteInvokeException {
+boolean check = planeDAO.checkByClickPlane(userId, planeId);
+if (check) {
+planeDAO.saveClickPlane(userId, planeId);
+}
+return check;
+}
+
+}
+

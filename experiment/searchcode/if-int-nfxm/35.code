@@ -1,0 +1,9 @@
+printMethod(); // XXX
+
+final int n = currentBest.getDimension();
+
+// Return if there is insufficient space between the bounds. Modify the
+printState(20); // XXX
+if (trustRegionCenterInterpolationPointIndex != kbase) {
+int ih = 0;
+

@@ -1,0 +1,10 @@
+public class BumpSeparationPenaltyFunction implements PenaltyFunction {
+
+private double maxPenalty;
+private double steepness;
+private double minSeparation;
+public double getPenalty(double dist, double t) {
+
+if (dist <= minSeparation) {
+double penalty = (maxPenalty/Math.exp(-steepness)) * Math.exp(-(steepness/(1-Math.pow(dist/minSeparation,2.0))));
+

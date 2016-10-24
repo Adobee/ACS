@@ -1,0 +1,11 @@
+return resizable;
+}
+public void resizeTo(int width, int height){
+if(width<paddingLeft+paddingRight+minwidth){
+return this.height-this.paddingBottom-this.paddingTop;
+}
+
+
+public int contains(int x, int y) {
+if(x>=this.x&amp;&amp;x<this.x+this.width&amp;&amp;y>=this.y&amp;&amp;y<this.y+this.width){
+

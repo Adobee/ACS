@@ -1,0 +1,11 @@
+// TODO: sum into a double and cast to float if we ever send required
+// clauses to BS1
+final int curDoc = reqScorer.docID();
+final float reqScore = reqScorer.score();
+if (optScorer == null) {
+return reqScore;
+}
+
+int optScorerDoc = optScorer.docID();
+if ((optScorerDoc < curDoc)
+

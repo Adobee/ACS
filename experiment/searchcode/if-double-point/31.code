@@ -1,0 +1,13 @@
+double curX = getX();
+if (curX < startPointX) {
+startPointX = curX;
+startPointY = getY();
+}
+}
+
+double currentPointX = startPointX;
+double dY = tmpY - currentPointY;
+double hypot = MathUtil.hypot(dX, dY);
+if (hypot != 0) {
+double cur = (localX * dX + localY * dY) / hypot;
+

@@ -1,0 +1,10 @@
+* @return {@code true} iff <tt>item</tt> equals the element in this {@link Range}
+*/
+@Override
+public boolean contains(T item) {
+return ((MultipleIntervalRange<T>) other).subtractFrom(this);
+if (other instanceof EmptyRange)
+return this;
+if (other instanceof NullElementRange)
+return new EmptyRange<>();
+

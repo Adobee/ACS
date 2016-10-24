@@ -1,0 +1,8 @@
+public class Archon extends AbstractRobot {
+
+int warGoal; // rozroznia czy atakujemy, bronimi sie, etc.
+MapLocation helpWanted; // jezeli null to nikt nie potrzebuje pomocy
+// wywolac ponownie w kolejnej rundzie.
+private boolean spawnSoldier() throws GameActionException {
+if (!canSpawnRobot(RobotLevel.ON_GROUND, 15 + RobotType.SOLDIER.spawnCost()))
+

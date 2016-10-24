@@ -1,0 +1,10 @@
+public static boolean canWin(String s) {
+int len = s.length();
+if (len <= 1) return false;
+char[] cs = s.toCharArray();
+return canWin(cs);
+}
+
+private static boolean canWin(char[] cs) {
+for (int i = 1; i < cs.length; i++) {
+

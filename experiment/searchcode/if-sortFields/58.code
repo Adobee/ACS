@@ -1,0 +1,8 @@
+public class FieldOrderedTupleComparator
+implements Comparator<TupleReadable>
+{
+private final List<Integer> sortFields;
+public FieldOrderedTupleComparator(List<Integer> sortFields, List<SortItem.Ordering> sortOrders)
+{
+Preconditions.checkNotNull(sortFields, &quot;sortFields is null&quot;);
+

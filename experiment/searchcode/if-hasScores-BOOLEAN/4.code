@@ -1,0 +1,13 @@
+return getTeeTimes().size();
+}
+
+public boolean hasScores() {
+boolean retVal = false;
+for (TeeTime teetime : getTeeTimes()) {
+if (teetime.hasScores()) {
+retVal = true;
+break;
+}
+}
+return retVal;
+

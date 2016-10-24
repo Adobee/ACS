@@ -1,0 +1,8 @@
+public abstract void success(T response);
+
+public void failure(String detailMessage, Throwable throwable) {
+if (((throwable instanceof NoSuchMethodException))
+|| ((throwable instanceof TimeoutError))) {
+reportNetworkError(throwable);
+} else if ((throwable instanceof AuthFailureError)) {
+

@@ -1,0 +1,10 @@
+if (toY > 9) {// 当下边出界时
+return false;
+}
+if (fromX == toX &amp;&amp; fromY == toY) {// 目的地与出发点相同，
+return false;
+}
+moveChessID = qizi[fromY][fromX];// 得到起始棋子
+targetID = qizi[toY][toX];// 得带终点棋子
+if (isSameSide(moveChessID, targetID)) {// 如果是同一阵营的
+

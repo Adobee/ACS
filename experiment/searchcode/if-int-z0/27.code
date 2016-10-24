@@ -1,0 +1,8 @@
+static {
+if (Build.VERSION.SDK_INT>=8) {
+CNDITIONEXP = android.util.Patterns.EMAIL_ADDRESS;
+}
+else {
+CNDITIONEXP = Pattern.compile(
+&quot;[a-zA-Z0-9\\+\\.\\_\\%\\-\\+]{1,256}&quot; +
+

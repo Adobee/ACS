@@ -1,0 +1,13 @@
+for (int i = 0; i < elements.length; i++) {
+if (! accept(elements[i])) {
+if (filtered == null) {
+filtered = new ArrayList<Integer>();
+}
+filtered.add(i);
+}
+}
+if (filtered == null) {
+return elements;
+}
+Collection<Object> filteredElements = new ArrayList<Object>(elements.length - filtered.size());
+

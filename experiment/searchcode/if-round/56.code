@@ -1,0 +1,13 @@
+this.maxUndoRoundCount = maxUndoRoundCount;
+}
+
+@Override
+public R undo() {
+if (maxUndoRoundCount == 0) {
+throw roundCountTooLarge(1);
+public List<R> undo(int roundCount) {
+if (roundCount > maxUndoRoundCount) {
+throw roundCountTooLarge(roundCount);
+}
+roundCount = Math.min(roundCount, rounds.size());
+

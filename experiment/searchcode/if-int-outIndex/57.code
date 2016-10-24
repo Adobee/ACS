@@ -1,0 +1,17 @@
+System.out.println(vct.next());
+}
+}
+
+
+List<List<Integer>> list;
+int outIndex;
+int inIndex;
+public Vector2D(List<List<Integer>> vec2d) {
+this.list = vec2d;
+outIndex = 0;
+inIndex = 0;
+}
+
+public int next() {
+if (hasNext()) {
+

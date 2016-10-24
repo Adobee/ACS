@@ -1,0 +1,6 @@
+String httpUrl = url.contains(&quot;http&quot;) ? url : Consts.BASE_IMAGE_URL_OLD + url;
+if (circle) {
+Glide.with(context).load(httpUrl).transform(new CircleImageTransform(context)).error(R.drawable.ic_failed).placeholder(R.drawable.loading).into(view);
+String httpUrl = url.contains(&quot;http&quot;) ? url : Consts.BASE_IMAGE_URL + url;
+if (circle) {
+

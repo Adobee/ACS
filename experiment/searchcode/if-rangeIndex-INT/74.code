@@ -1,0 +1,9 @@
+* @param count
+*/
+public RangeIndex(final Key key,int startIndex, int count) {
+this.key = key;
+this.startIndex = startIndex;
+public void offset(RangeIndex startIndex, int offset) {
+if (offset==0) return;
+List<RangeIndex> indexes = getIndexesAfter(startIndex.startIndex+startIndex.count);
+

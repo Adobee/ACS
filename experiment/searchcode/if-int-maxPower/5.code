@@ -1,0 +1,8 @@
+int[] power = IOUtils.readIntArray(in, count);
+int maxPower = 0;
+int position = 0;
+for (int i = 0; i < count - 2; i++) {
+int currentPower = power[i] + power[i + 1] + power[i + 2];
+if (currentPower > maxPower) {
+maxPower = currentPower;
+

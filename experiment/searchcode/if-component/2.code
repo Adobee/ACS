@@ -1,0 +1,16 @@
+abstract class Decorator extends Component {
+private Component component;
+
+Component getComponent() {
+return component;
+this.component = component;
+}
+
+@Override
+void operation() {
+if (component != null) {
+component.operation();
+}
+}
+}
+

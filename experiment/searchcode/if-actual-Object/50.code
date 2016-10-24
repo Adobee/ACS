@@ -1,0 +1,15 @@
+public static void assertEquals(Object expected, Object actual) {
+
+if (expected != null) {
+boolean equals = expected.equals(actual);
+throw new AssertionException(&quot;Assertion fail&quot;);
+}
+} else {
+if (actual == null) {
+throw new AssertionException(&quot;Assertion fail&quot;);
+}
+}
+}
+
+}
+

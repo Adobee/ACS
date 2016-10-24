@@ -1,0 +1,13 @@
+private final int dim;
+
+public GlobalCoordinate(int x, int y, int z, int dim) {
+super(x, y, z);
+this.dim = dim;
+}
+
+public int getDim() {
+return dim;
+}
+
+@Override
+

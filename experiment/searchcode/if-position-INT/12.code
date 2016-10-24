@@ -1,0 +1,19 @@
+continue;
+
+int position = A[i]-1;
+while(true){
+if (A[position] == (position + 1))
+break;
+A[position] = position + 1;
+position = temp - 1;
+}
+}
+
+for(int i = 0; i < len; i++)
+if (A[i] != (i+1)) {
+return (i+1);
+}
+return len+1;
+}
+}
+

@@ -1,0 +1,16 @@
+while (adjustedMinute >= 60)
+{
+adjustedMinute -= 60;
+++adjustedHour;
+if (adjustedHour == 24)
+{
+adjustedHour = 0;
+}
+}
+return new ACTime(adjustedHour, adjustedMinute);
+}
+
+public boolean equals(Object o)
+{
+if (o != null &amp;&amp; o instanceof ACTime)
+

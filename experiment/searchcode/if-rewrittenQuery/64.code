@@ -1,0 +1,8 @@
+@Nullable final Iterable<? extends Statement> statements, final Resource... contexts)
+{
+Preconditions.checkNotNull(contexts);
+
+if (isNotificationEnabled()) {
+// Additional check to protect from ill-behaving inference engines.
+if (rewrittenQuery != null &amp;&amp; rewrittenQuery.getType() != query.getType()) {
+

@@ -1,0 +1,12 @@
+public static int svduv(double[] d, double[] a, double[] u, int m, double[] v, int n) {
+
+if (m < n)
+return -1;
+
+double s, h, t, sv;
+final double[] w = new double[m + n];
+int p0= n*n - n - n - 1; // a related
+
+for(int i = n-2, mm=1; i > 0; --i, p0 -= n+1, q0 -= n+1, ++mm) {
+if(a[p0-1] != 0d) {
+

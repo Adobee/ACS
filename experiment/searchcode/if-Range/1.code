@@ -1,0 +1,10 @@
+return &quot;&quot; + this.startRange + &quot; &quot; + this.endRange;
+}
+
+boolean isDisjointFrom( Range r ){
+if ( this.endRange < r.startRange || this.startRange > r.endRange)
+boolean isSubRangeOf(Range r) {
+if (this.startRange >= r.startRange &amp;&amp; this.endRange <= r.endRange)
+return true;
+return false;
+

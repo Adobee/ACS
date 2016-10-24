@@ -1,0 +1,8 @@
+* expired, etc.). In this case, the SSLHandshakeException will not have
+* a CertificateChainException as a cause.
+*
+* KeyChainException is known to occur if the device has no client
+&amp;&amp; !(throwable instanceof CertificateException)
+&amp;&amp; !(throwable instanceof KeyChainException)
+&amp;&amp; !(throwable instanceof SSLHandshakeException)) {
+

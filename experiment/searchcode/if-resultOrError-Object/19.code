@@ -1,0 +1,5 @@
+* Lazily creates (and caches) values for keys. If creating the value fails (with errors), an
+* exception is thrown on retrieval.
+Object resultOrError = delegate.getUnchecked(key);
+if (resultOrError instanceof Errors) {
+

@@ -1,0 +1,9 @@
+int delimIdx, delimLen;
+
+// find start of split, skip leading characters
+if (fromDelim != null &amp;&amp; fromDelim.length() > 0) {
+while(delimIdx < delimLen) {
+int ic = isreader.read();
+if (ic < 0) break; // EOF
+else if ((char)ic == fromDelim.charAt(delimIdx)) delimIdx++;
+

@@ -1,0 +1,12 @@
+public class QueryEnumHelper {
+
+public static QueryEnum getQueryForId(int id, QueryEnum[] enums) {
+for (QueryEnum anEnum : enums) {
+if (id == anEnum.getId()) {
+return anEnum;
+}
+}
+return null;
+}
+}
+

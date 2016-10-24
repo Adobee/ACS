@@ -1,0 +1,9 @@
+double S[] = latLongToCoord(slat, slng, salt);
+
+double normR = norm(R);
+double normS = norm(S);
+double delta = norm(diff(R, S));
+
+
+if (sq(normR) + sq(delta) <= sq(normS)) { return normR; }
+

@@ -1,0 +1,9 @@
+private byte buffer[];
+private int bufferEnd = 0;
+private int bufferPos = 0;
+private long realPos = 0L;
+public void seek(long pos) throws IOException {
+int n = (int) (realPos - pos);
+if (n >= 0 &amp;&amp; n <= bufferEnd) {
+bufferPos = bufferEnd - n;
+

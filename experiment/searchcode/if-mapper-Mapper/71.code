@@ -1,0 +1,8 @@
+public static final <T extends Mapper> T getMapper(){
+
+if(mapperFactory == null) {
+mapperFactory = Util.newInstanceForFile(
+&quot;META-INF/&quot; + Provider.MAPPING_FACTORY_PROVIDER);
+if(mapperFactory == null) {
+mapperFactory = new DefaultMapperFactory();
+

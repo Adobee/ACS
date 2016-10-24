@@ -1,0 +1,6 @@
+import nyu.predictiveanalytics.distance.MyEuclideanDistance;
+import nyu.predictiveanalytics.distance.MyMinHash;
+import nyu.predictiveanalytics.tfidf.DocParser;
+System.out.print(&quot;=========== K-means with Cosine Distance =================\n&quot;);
+}else if (myKmeans.m_dm.getClass() == MyMinHash.class) {
+

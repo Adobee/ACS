@@ -1,0 +1,13 @@
+/** 大于0该参数才有效 */
+private int startRow = -1;
+/** 大于0该参数才有效 */
+private int endRow = -1;
+
+private int curRow = -1;
+
+
+public RowFilter(){}
+
+public RowFilter(int startRow, int endRow) {
+this.startRow = startRow;
+

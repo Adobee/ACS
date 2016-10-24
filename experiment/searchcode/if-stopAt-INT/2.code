@@ -1,0 +1,15 @@
+public BigIntegerRangeWrapper(BigInteger stopAt) {
+super(stopAt.compareTo(ZERO) < 0 ? stopAt : ZERO, stopAt
+return x.abs();
+}
+
+@Override
+protected BigInteger fromInt(int x) {
+if (x == 0) {
+return ZERO;
+}
+return new BigInteger(String.valueOf(x));
+}
+
+}
+

@@ -1,0 +1,13 @@
+this(callable, false);
+}
+
+public CallableDelegate(Callable<?> callable, boolean weak) {
+if (weak) {
+this.callable = callable;
+}
+}
+
+public Object invoke(Object... args) {
+Callable<?> callable = this.callable;
+if (ref != null) {
+

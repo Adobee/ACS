@@ -1,0 +1,9 @@
+@NamedQuery(name = &quot;Challenges.findByGoalType&quot;, query = &quot;SELECT c FROM Challenges c WHERE c.goalType = :goalType&quot;)})
+public class Challenges implements Serializable {
+@Basic(optional = false)
+@NotNull
+@Column(name = &quot;GoalType&quot;)
+private int goalType;
+
+public Challenges() {
+

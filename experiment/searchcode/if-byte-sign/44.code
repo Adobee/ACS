@@ -1,0 +1,10 @@
+int sign = sample &amp; 0x8000;
+if(sign != 0){
+sample = (short)-sample;
+sign = 0x80;
+}
+if(sample > CLIP) sample = CLIP;
+temp = (short)(sample >> (exp + 3));
+int mantis = temp &amp; 0x000f;
+byte ulawByte = (byte)(sign | (exp << 4) | mantis);
+

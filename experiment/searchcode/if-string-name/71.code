@@ -1,0 +1,14 @@
+package com.tsumego.removeIfAndNull;
+
+import java.lang.String;
+
+public class Client {
+
+private String firstName;
+
+private String middleName;
+
+private String lastName;
+
+public Client(String firstName, String middleName, String lastName) {
+

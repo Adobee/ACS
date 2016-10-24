@@ -1,0 +1,11 @@
+private int nSeconds;
+private int nMinutes;
+
+Time(int seconds){
+nSeconds = seconds%60;
+nMinutes = (seconds - nSeconds) / 60;
+}
+
+String getTimeString(){
+if (nSeconds != 0)
+

@@ -1,0 +1,13 @@
+public static CodeSonarBuildAction getLatestCodeSonarBuildActionFromProject(AbstractProject<?, ?> project) {
+AbstractBuild lastBuild = project.getLastBuild();
+
+if (lastBuild == null) {
+return null;
+CodeSonarBuildAction action = lastBuild.getAction(CodeSonarBuildAction.class);
+
+if (action != null) {
+return action;
+}
+
+AbstractBuild build = lastBuild.getPreviousBuild();
+

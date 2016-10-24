@@ -1,0 +1,10 @@
+return true;
+}
+
+public void handleBuffer (GZipUnpacker unpacker,
+byte[] buf, int off, int len) {
+if (len <= 0)
+return;
+while (len > 0 &amp;&amp; pos < GZIP_ID.length) {
+if (buf[off] != GZIP_ID[pos]) {
+

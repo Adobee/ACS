@@ -1,0 +1,9 @@
+public static double pv(double r, double n, double minimum, double f, boolean t) {
+double retval = 0;
+if (r == 0) {
+retval = -1*((n*minimum)+f);
+}
+else {
+double r1 = r + 1;
+retval =(( ( 1 - Math.pow(r1, n) ) / r ) * (t ? r1 : 1)  * minimum - f) / Math.pow(r1, n);
+

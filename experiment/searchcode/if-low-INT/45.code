@@ -1,0 +1,7 @@
+时基准元素在其排好序后的正确位置,然后再用同样的方法递归地排序划分的两部分。
+
+private static void quickSort(int[] a, int low, int high) {
+if(low<high){ //如果不加这个判断递归会无法退出导致堆栈溢出异常
+int middle = getMiddle(a,low,high);
+quickSort(a, 0, middle-1);
+

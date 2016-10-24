@@ -1,0 +1,7 @@
+else if (timeField == TimeField.HOUR) {
+time = (int)(w.getTime()/ticksPerHour) + hoursOffset;
+if (time>=24) time = time - 24;
+} else if (timeField==TimeField.HOUR1) { // hour of day, ones digit
+time = ((int)(w.getTime()/ticksPerHour) + hoursOffset);
+if (time>=24) time = time - 24;
+

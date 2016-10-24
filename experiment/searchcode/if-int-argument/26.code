@@ -1,0 +1,7 @@
+argument_35_, argument_36_, argument_37_,
+argument_38_, idirect3dvolumetexture);
+if (Class395.method4208(anLocalInt, (byte) -100))
+int anLocalInt
+= _CreatePixelShader(argument_43_, idirect3dpixelshader);
+if (Class395.method4208(anLocalInt, (byte) -100))
+

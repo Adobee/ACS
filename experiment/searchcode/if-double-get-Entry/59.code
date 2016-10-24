@@ -1,0 +1,10 @@
+public void registerInstance(Instance instance) {
+double category = this.getCategory(instance);
+
+for (DataEntry entry : entries) {
+entry.checkInstance(instance, category);
+private Map<Double, Double> getPossibilityByCat() {
+Map<Double, Double> result = new HashMap<Double, Double>();
+
+for (Entry<Double, Integer> entry : this.categoryCounter.entrySet()) {
+

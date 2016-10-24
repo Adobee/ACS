@@ -1,0 +1,7 @@
+requestBuilder.appendKeyValue(&quot;version&quot;, Config.APP_VERSION);
+if (umqId != null) {
+requestBuilder.appendKeyValue(&quot;umqid&quot;, umqId);
+JsonRequestBuilder requestBuilder = buildRequestForPost(String.format(TWO_FACTOR_BASE_URL, new Object[]{&quot;FinalizeAddAuthenticator&quot;}));
+requestBuilder.appendSteamId(steamId);
+if (activationCode != null) {
+

@@ -1,0 +1,10 @@
+* Returns object that represent element
+* @param element
+* @return
+*/
+public T getOrCreateObject(Element element) {
+if ( element == null ) {
+T object = this.elementToObjectMap.get(element);
+if ( object == null ) {
+object = this.objectFactory.createBlankObject(element);
+

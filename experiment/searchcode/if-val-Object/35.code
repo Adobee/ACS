@@ -1,0 +1,22 @@
+this.val = val;
+}
+
+@Override
+public boolean equals(Object o) {
+if (o instanceof BoolVal) {
+return val == ((BoolVal)o).val;
+}
+return false;
+}
+
+@Override
+public String toString() {
+if (val) {
+return &quot;true&quot;;
+} else {
+return &quot;false&quot;;
+}
+}
+
+}
+

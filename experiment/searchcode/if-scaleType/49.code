@@ -1,0 +1,7 @@
+private KeyCode() { }
+private KeyCode(byte keyValue, char scaleType, byte shift) {
+if (log.isTraceEnabled()) log.trace(&quot;KeyCode(): keyValue=&quot; + keyValue + &quot;, scaleType=&quot; + scaleType + &quot;, shift=&quot; + shift);
+if (!isMinor() &amp;&amp; oKeyCode.isMinor()) return 1;
+if (scaleType < oKeyCode.scaleType) return -1;
+if (scaleType > oKeyCode.scaleType) return 1;
+

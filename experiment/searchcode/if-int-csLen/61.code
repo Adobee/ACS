@@ -1,0 +1,9 @@
+final List collisions = lookForCollisions(reducer, createMotions());
+
+int numberOfCollisions = collisions.size();
+if (ImmortalEntry.recordedRuns < ImmortalEntry.maxDetectorRuns) {
+final CollisionCollector c = new CollisionCollector();
+
+int suspectedSize = check.size();
+if (ImmortalEntry.recordedRuns < ImmortalEntry.maxDetectorRuns) {
+

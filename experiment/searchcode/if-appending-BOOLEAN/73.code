@@ -1,0 +1,9 @@
+private View pendingView=null;
+private AtomicBoolean keepOnAppending=new AtomicBoolean(true);
+private Context context;
+* explicitly set if there is more data that needs to be fetched or not.
+*/
+public EndlessAdapter(ListAdapter wrapped, boolean keepOnAppending) {
+super(wrapped);
+this.keepOnAppending.set(keepOnAppending);
+

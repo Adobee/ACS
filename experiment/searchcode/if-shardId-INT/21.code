@@ -1,0 +1,12 @@
+this.shardId = shardId;
+}
+
+public PlainShardIterator(ShardId shardId, List<ShardRouting> shards, int index) {
+super(shards, index);
+return this.shardId;
+}
+
+@Override
+public boolean equals(Object o) {
+if (this == o) return true;
+

@@ -1,0 +1,12 @@
+return state;
+}
+
+public void setState(DirtyState state) {
+if (state == null) {
+throw new IllegalArgumentException(&quot;State can&#39;t be null. Please, specify correct enumerated value.&quot;);
+return (this.value == DirtyState.MODIFIED);
+}
+
+public boolean isAdded() {
+return (this.value == DirtyState.ADDED);
+

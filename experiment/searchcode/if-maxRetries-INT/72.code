@@ -1,0 +1,7 @@
+import java.util.concurrent.TimeUnit;
+
+class RetryDeadlocks implements Retry {
+private final int maxRetries;
+public RetryDeadlocks(int maxRetries, int backoffInterval, TimeUnit backoffIntervalUnit) {
+this.maxRetries = maxRetries;
+

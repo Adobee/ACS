@@ -1,0 +1,11 @@
+while (l <= r) {
+int m = (l + r) >>> 1;
+if (A[IH[m]] <= v) {
+l = m + 1;
+} else {
+for (int i = 0; i < A.length; i++) {
+int j = upperBound(A[i], 0, nh - 1);
+IP[i] = (j == 0) ? -1 : IH[j - 1];
+IH[j] = i;
+if (j == nh) {
+

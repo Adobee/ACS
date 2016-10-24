@@ -1,0 +1,13 @@
+sb.append(&#39;^&#39;);
+if (glob.charAt(0)==&#39;*&#39;) {
+sb.append(&quot;[^.]&quot;);
+}
+
+boolean escaping = false;
+int inCurlies = 0;
+char currentChar = glob.charAt(i);
+switch (currentChar) {
+case &#39;*&#39;:
+if (escaping) {
+sb.append(&quot;\\*&quot;);
+

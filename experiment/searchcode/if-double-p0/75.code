@@ -1,0 +1,12 @@
+package RayTracing;
+
+public class Ray {
+
+private Point p0;
+private Vector v;
+
+public Ray(Point p0, Vector v) {
+for (Surface s : scene.getSurfaces()) {
+double t = s.getIntersection(this);
+if (t > -1) {
+

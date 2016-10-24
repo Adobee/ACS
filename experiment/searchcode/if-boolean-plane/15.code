@@ -1,0 +1,9 @@
+private PlaneRepository planeRepository;
+
+@Override
+@Transactional
+public void save(Plane plane)  throws NotUniqueEntityException {
+if (isUnique(plane)) {
+public void update(Plane plane) throws NotUniqueEntityException {
+if (isUnique(plane)) {
+

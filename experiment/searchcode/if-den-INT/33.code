@@ -1,0 +1,11 @@
+public Rational(int num, int den) {
+int temp = gcd(num, den);
+if (den < 0) {
+setNum(-num / temp);
+public Rational toNormal() {
+if (den < 0) {
+return new Rational(-num, -den);
+
+}
+int temp = gcd(num, den);
+

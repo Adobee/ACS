@@ -1,0 +1,8 @@
+repositoryConnection.add(new File(ontology.getURI()), ontology.getURI().toString(), RDFFormat.RDFXML);
+ontology.getResultFile().setWritable(true);
+
+strQueryLocal = queryRewrite(strQueryGlobal, ontology.getAlignFile());
+queryLocal = repositoryConnection.prepareTupleQuery(QueryLanguage.SPARQL, strQueryLocal);
+if(queryLocal != null){
+GryphonUtil.logInfo(&quot;\nRewritten query for &quot; + ontology.getName() + &quot;:\n&quot; + strQueryLocal);
+

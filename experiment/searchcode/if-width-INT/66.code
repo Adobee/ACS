@@ -1,0 +1,15 @@
+package com.base.engine;
+
+public class Bitmap
+{
+private final int width;
+private final int height;
+for(int x = 0; x <  render.width; x++)
+{
+int xPix = x + xOffset;
+
+if (xPix < 0 || xPix >= width)
+continue;
+
+int alpha =  render.pixels[x + y * render.width];
+

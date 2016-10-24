@@ -1,0 +1,12 @@
+int[][] rVal = new int[16][12];
+shift s = new shift();
+int round = 0;
+
+if(op == 0){ // If encrypting
+rVal[round-1][0] =  k[getKeys(4*round)];
+k = s.rotateLeft(k, 63);
+round++;
+
+} // End while keys to create
+} // End if decrypting
+

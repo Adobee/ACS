@@ -1,0 +1,11 @@
+return rList;
+}
+
+@Override
+protected boolean isSame(Chromosome another) {
+// type check
+if (! (another instanceof BinaryChromosome)) {
+BinaryChromosome anotherBc = (BinaryChromosome) another;
+// size check
+if (getLength() != anotherBc.getLength()) {
+

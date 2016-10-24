@@ -1,0 +1,10 @@
+private static int getResizedDimension(int maxPrimary, int maxSecondary, int actualPrimary, int actualSecondary, ScaleType scaleType) {
+
+// If no dominant value at all, just return the actual.
+if ((maxPrimary == 0) &amp;&amp; (maxSecondary == 0)) {
+if (scaleType == ScaleType.FIT_XY) {
+if (maxPrimary == 0) {
+return actualPrimary;
+}
+return maxPrimary;
+

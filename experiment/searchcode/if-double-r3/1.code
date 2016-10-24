@@ -1,0 +1,9 @@
+private double inner(double r1, double r2, double r3, int n) {
+if (n == 0) return 0D;
+double r = r1*r2*r3*(r1*r2 + r1*r3 + r2*r3 - 2*Math.sqrt(r1*r2*r3*(r1 + r2 + r3)))
+return r*r + inner(r1, r2, r, n - 1) + inner(r1, r, r3, n - 1) + inner(r, r2, r3, n - 1);
+}
+
+private double outer(double r1, double r2, double r3, int n) {
+if (n == 0) return 0D;
+

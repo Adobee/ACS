@@ -1,0 +1,12 @@
+private Region portal;
+private FillType fillType;
+private boolean active;
+
+public Portal(String name, String toServer, Region portal, FillType fillType) {
+public void setFillType(FillType fillType) {
+if (this.isActive())
+{
+this.defillBlocks();
+this.fillType = fillType;
+this.fillBlocks();
+

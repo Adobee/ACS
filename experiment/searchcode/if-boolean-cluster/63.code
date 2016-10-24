@@ -1,0 +1,10 @@
+return _pod.hashCode() ^ (_cluster != null ? _cluster.hashCode() : 0);
+}
+
+@Override
+public boolean equals(final Object obj) {
+if (!(obj instanceof PodCluster)) {
+final PodCluster that = (PodCluster) obj;
+if (!this._pod.equals(that._pod)) {
+return false;
+

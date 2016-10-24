@@ -1,0 +1,7 @@
+boolean isSingle = &quot;rx.Single&quot;.equals(canonicalName);
+boolean isCompletable = &quot;rx.Completable&quot;.equals(canonicalName);
+
+if (!isObservable &amp;&amp; !isSingle &amp;&amp; !isCompletable) return null;
+
+if (!isCompletable &amp;&amp; !(returnType instanceof ParameterizedType)) {
+

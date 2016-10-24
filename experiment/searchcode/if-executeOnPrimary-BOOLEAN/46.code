@@ -1,0 +1,9 @@
+Object callbackArg,
+boolean isMetaRegionPutOp)
+{
+if (this.region == null) {
+//    event.getEventId(), op, Boolean.valueOf(requireOldValue), expectedOldValue,
+//    callbackArg, Boolean.valueOf(isCreate));
+Operation operation = op;
+if (!isCreate &amp;&amp; this.region.getDataPolicy() == DataPolicy.EMPTY
+

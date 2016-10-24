@@ -1,0 +1,11 @@
+private final long outputInterval;
+private final RID outputId;
+
+// create during init
+private IOProxy ioProxy;
+// Listen for inputs
+ioProxy.inputs().addConsumer(this::onInput);
+
+// Start thread to change outputs
+if(outputId != null)
+

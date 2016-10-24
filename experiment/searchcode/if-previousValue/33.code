@@ -1,0 +1,8 @@
+V previousValue = dataMap.put(key, value);
+
+if (previousValue != null &amp;&amp; !previousValue.equals(value)) {
+valueCountMap.get(previousValue).decrementAndGet();
+}
+
+if (previousValue == null || !previousValue.equals(value)) {
+

@@ -1,0 +1,13 @@
+return dimensionX;
+}
+
+public int getDimensionY() {
+return dimensionY;
+}
+
+public FieldObject scanQuadrant(int v, int h) {
+return scanQuadrant(quadrant.v, quadrant.h);
+}
+
+public void updateQuadrant(int v, int h, FieldObject str) {
+

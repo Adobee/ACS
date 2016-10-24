@@ -1,0 +1,8 @@
+Iteration iteration;
+
+ActionForward nextPage = mapping.getInputForward();
+if(!form.isIterationStartConfirmed()) {
+iteration = (Iteration) iterationRepository.load(Integer.parseInt(iterationId));
+}
+if (iteration != null) {
+

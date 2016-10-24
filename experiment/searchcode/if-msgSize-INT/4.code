@@ -1,0 +1,13 @@
+public class RemoteRPCChannelInitializer extends
+ChannelInitializer<SocketChannel> {
+/**
+* 最大消息的字节数，以保护内存避免溢出。
+*/
+private int msgSize;
+* 用指定的超时时间和消息的大小构造通道初始化类。
+*
+* @param msgSize
+*            最大消息字节数。
+*/
+public RemoteRPCChannelInitializer(int msgSize,RemoteRPCServerHandler servCallHandler) {
+

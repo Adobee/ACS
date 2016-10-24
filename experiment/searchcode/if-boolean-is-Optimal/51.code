@@ -1,0 +1,9 @@
+int k = 1;
+for (Node node : compRanking) {
+P += ( containsNode(optimalRanking, node) ? 1 : 0 );
+if(k++ == cutoff) break;
+public static double getDCGCutoff(ArrayList<Node> optimalRanking, ArrayList<Node> compRanking, int cutoff){
+double DCG = 0;
+
+if(cutoff < 1 || cutoff > optimalRanking.size()) return 0; // what happens in this case?
+

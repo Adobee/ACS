@@ -1,0 +1,10 @@
+private final ExplainElementType[] prohibitedElements = {
+};
+
+@Override
+public boolean isDescribedBy(List<ExplainElement> explainElements) {
+fieldMatch.setMatchDescription(
+FieldMatchDescriptionParser.parseMatchDescription(explainElements.get(4).getData()));
+
+if (explainElements.size() >= 6 &amp;&amp; explainElements.get(5).getType().equals(ExplainElementType.SIMILARITY)) {
+

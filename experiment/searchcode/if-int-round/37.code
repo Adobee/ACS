@@ -1,0 +1,13 @@
+public static int calculateNextRound(List<Round> roundsSoFar)
+{
+int nextround = 0;
+for (Round round : roundsSoFar) {
+if (round.getRoundNumber() > nextround)
+nextround = round.getRoundNumber();
+}
+return nextround+1;
+}
+
+
+}
+

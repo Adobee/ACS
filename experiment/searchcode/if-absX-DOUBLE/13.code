@@ -1,0 +1,11 @@
+double signY = Math.signum(y);
+int absX = Math.abs(x);
+int absY = Math.abs(y);
+if (absX + absY < PRECISION)
+return null;
+int xFrag = 0;
+int yFrag = 0;
+
+if (absX >= absY * 2) {
+xFrag = (int) (PRECISION * signX);
+

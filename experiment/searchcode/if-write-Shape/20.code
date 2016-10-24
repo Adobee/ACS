@@ -1,0 +1,10 @@
+return true;
+}
+if (!(obj instanceof ShapeList)) {
+return false;
+}
+ShapeList that = (ShapeList) obj;
+for (int i = 0; i < listSize; i++) {
+if (!ShapeUtilities.equal((Shape) get(i), (Shape) that.get(i))) {
+return false;
+

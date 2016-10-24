@@ -1,0 +1,8 @@
+public void write(byte[] bytes) throws IOException {
+if(outputStream != null) {
+outputStream.write(bytes);
+public void write(byte[] bytes, int off, int len) throws IOException {
+if(outputStream != null) {
+outputStream.write(bytes, off, len);
+outputStream.flush();
+

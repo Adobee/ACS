@@ -1,0 +1,18 @@
+private static ThreadLocal<Long> currentMenuLocal = new ThreadLocal<Long>();
+
+
+public static void setCurrentMenuId(Long currentMenuId)
+public static Long getCurrentMenuId()
+{
+Object obj = currentMenuLocal.get();
+if (obj != null)
+{
+return (Long) obj;
+}
+else
+{
+return null;
+}
+}
+}
+

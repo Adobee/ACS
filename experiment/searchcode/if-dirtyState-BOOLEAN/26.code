@@ -1,0 +1,7 @@
+public void setDirtyState (final DirtyState state) {
+final DirtyState oldState = this.dirtyState;
+if (isCanBeDirty()) {
+@Override
+public void dirtyStateChanged (final DirtyState oldState, final DirtyState newState) {
+if (MediaItemList.this.logger.isLoggable(Level.FINEST)) MediaItemList.this.logger.finest(getListName() + &quot; oldState=&quot; + oldState + &quot; newState=&quot; + newState);
+

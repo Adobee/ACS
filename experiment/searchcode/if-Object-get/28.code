@@ -1,0 +1,9 @@
+public class DatabaseObjectCopier {
+
+public void fillObject(DatabaseObject dstObject, DatabaseObject srcObject) {
+if (dstObject == null || srcObject == null) {
+for (Column col: nonEmptyColumns) {
+value = srcObject.getValue(col);
+if (value == null) {
+continue;
+

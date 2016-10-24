@@ -1,0 +1,14 @@
+public SliderBar(int x, int y, int width, int height, int min, int max,SLIDERID id)
+{
+if(id == SLIDERID.VOLUME)
+{
+bounds = new Rectangle(x,y,width + (width / 100 * 10),height);
+return bounds.contains(x,y);
+}
+
+public void update(int x)
+{
+//			if(RobotFrame.isMaximized())
+{
+bounds.x = (int)(( (2 * x / RobotCanvas.xRatio) - bounds.width) / 2.0);
+

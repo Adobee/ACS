@@ -1,0 +1,9 @@
+public class LatLngSimple implements LatLng {
+
+private double lat;
+private double lng;
+
+public LatLngSimple(double lat, double lng) {
+if (lat < -90 || lat > 90 || lng < -180 || lng > 180) {
+throw new RuntimeException(&quot;Illegal values lat &quot; + lat + &quot; lng &quot; + lng);
+

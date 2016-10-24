@@ -1,0 +1,10 @@
+package be.ugent.telin.smacs.quisinex.simulation.configuration.extensions.distributions.discrete;
+
+public class TraceDistribution extends ADiscreteDistribution {
+protected final int[] samples;
+
+protected volatile int sampleIndex = -1;
+
+public TraceDistribution(int... samples) {
+this.samples = samples;
+

@@ -1,0 +1,8 @@
+public static EncodedValue getEncodedEmptyValue(String desc) {
+EncodedValue encodedValue = null;
+
+if (EncodedValueUtil.isTypeAReference(desc)) {
+return new EncodedValueShort(value);
+} else if (value instanceof String) {
+return new EncodedValueString((String) value);
+

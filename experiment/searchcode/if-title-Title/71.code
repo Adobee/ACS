@@ -1,0 +1,11 @@
+import java.util.regex.Pattern;
+
+public final class WikiPage {
+
+public static final Pattern TITLE_PATTERN = Pattern.compile(&quot;<title>(.*)</title>&quot;);
+String title = null;
+
+Matcher titleMatcher = TITLE_PATTERN.matcher(content);
+
+if(titleMatcher.find()){
+

@@ -1,0 +1,10 @@
+int maxEndIndex = 0;
+int maxSum = Integer.MIN_VALUE;
+int cummulativeSum = 0;
+int maxStartIndexUntilNow = 0;
+for(int currentIndex=0; currentIndex < intArr.length;currentIndex++){
+cummulativeSum += intArr[currentIndex];
+
+if(cummulativeSum > maxSum){
+maxSum = cummulativeSum;
+

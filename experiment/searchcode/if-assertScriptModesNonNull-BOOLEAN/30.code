@@ -1,0 +1,9 @@
+private boolean assertAllSettingsWereChecked;
+private boolean assertScriptModesNonNull;
+
+@Before
+public void setupScriptEngines() {
+public void assertNativeScriptsAreAlwaysAllowed() {
+if (assertScriptModesNonNull) {
+assertThat(scriptModes.getScriptMode(NativeScriptEngineService.NAME, randomFrom(ScriptType.values()), randomFrom(scriptContexts)), equalTo(ScriptMode.ON));
+

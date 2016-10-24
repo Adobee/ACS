@@ -1,0 +1,14 @@
+protected DBScan(double epsilon, int minPts)
+{
+super(epsilon, minPts);
+}
+
+@Override
+protected List<Cluster<?>> cluster()
+{
+if (this.clusters == null)
+{
+this.clusters = new ArrayList<Cluster<?>>();
+}
+for (Object r : this.sourceData)
+

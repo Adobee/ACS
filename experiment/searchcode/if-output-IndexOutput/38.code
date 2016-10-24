@@ -1,0 +1,8 @@
+public void run(File subjectSortedInput, File indexOutput) {
+try {
+IndexWriter indexWriter = new IndexWriter(indexOutput);
+PrintStream out = new PrintStream(indexOutput);
+while (parserIn.hasNext()) {
+NQuad nq = parserIn.next();
+if (nq.predicate.equals(Constants.RDF_TYPE)) {
+

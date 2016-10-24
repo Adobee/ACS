@@ -1,0 +1,7 @@
+List<int[]> result = new ArrayList<int[]>();
+int n = buildings.length;
+if (n == 0) return result;
+int pre = 0, start = 0;
+for (int i = 1; i <= n; ++i) {
+if (i < n &amp;&amp; buildings[i][2] == buildings[pre][2] &amp;&amp; buildings[i][0] == buildings[pre][1]) {
+

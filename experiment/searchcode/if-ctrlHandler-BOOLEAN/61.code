@@ -1,0 +1,17 @@
+Toast.makeText(getActivity(), text, Toast.LENGTH_LONG).show();
+}
+
+private void enableBluetooth(boolean isChecked)
+{
+if(isChecked){
+if(!bluetoothAdapter.isEnabled()){
+infoAdapter = new TagAdapter(infoItems, getActivity()) {
+@Override
+public boolean isEnabled (int position)
+{
+return false;
+}
+};
+}
+if(stateAdapter==null){
+

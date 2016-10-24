@@ -1,0 +1,6 @@
+// TODO 캐시 적용 할 것.
+Map<String, Date> latestContentDateMap = latestContentDAO.selectLatestContent();
+if (latestContentDateMap != null) {
+Date wrieteDate = latestContentDateMap.get(contentKey);
+if (wrieteDate != null) {
+

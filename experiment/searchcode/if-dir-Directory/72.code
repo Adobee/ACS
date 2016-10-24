@@ -1,0 +1,8 @@
+public static void verifyInputDirectory(String inputDirectory) throws IOException {
+File dir = new File(inputDirectory).getCanonicalFile();
+if (!dir.isDirectory()) {
+throw new IOException(&quot;Selected input path is not a directory: &quot; + dir.getAbsolutePath());
+}
+if (!dir.canRead()) {
+throw new IOException(&quot;Selected input directory is not readable: &quot; + dir.getAbsolutePath());
+

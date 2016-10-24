@@ -1,0 +1,8 @@
+private static final Pattern TOKEN_REGEX = Pattern.compile(&quot;access_token=([^&amp;]+)&quot;);
+private static final String EMPTY_SECRET = &quot;&quot;;
+
+private Pattern customPattern = null;
+Preconditions.checkEmptyString(response, &quot;Response body is incorrect. Can&#39;t extract a token from an empty string&quot;);
+
+Pattern pattern = customPattern == null ? TOKEN_REGEX : customPattern;
+

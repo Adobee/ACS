@@ -1,0 +1,16 @@
+return beanType;
+}
+
+public String toString() {
+if (isManyType()) {
+return manyType + &quot; &quot; + beanType;
+return beanType.toString();
+}
+}
+
+}
+
+public static TypeInfo getTypeInfo(Type genericType) {
+
+if (genericType instanceof ParameterizedType) {
+

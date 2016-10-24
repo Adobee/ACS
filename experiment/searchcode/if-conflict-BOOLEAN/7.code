@@ -1,0 +1,9 @@
+super(myOps, theirOps, conflict.getDecisionManager(),false);
+if(!(conflict instanceof SingleReferenceConflict || conflict instanceof MultiReferenceConflict)) {
+protected boolean allowOtherOptions() {
+return false;
+}
+
+@Override
+protected ConflictContext initConflictContext() {
+

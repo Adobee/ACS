@@ -1,0 +1,9 @@
+// flipped angles could be accumulated and larger than allowed flip-span.
+maxFlipSpan = degrees;
+}
+
+private float calculateAngle(boolean flipHorizontal, float x, float y) {
+float moveDistance = flipHorizontal ? (x - touchStartX) : (touchStartY - y);
+
+if (Math.abs(moveDistance) > maxDistance) {
+

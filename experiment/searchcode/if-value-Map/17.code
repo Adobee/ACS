@@ -1,0 +1,7 @@
+public class HashMapXYZ<T, V> extends HashMap<T, Map<T, Map<T, V>>> {
+public void put(T x, T y, T z, V value) {
+if(containsKey(x)) {
+if(get(x).containsKey(y)) get(x).get(y).put(z, value);
+else {
+Map<T, V> mapZ = new HashMap<T, V>();
+

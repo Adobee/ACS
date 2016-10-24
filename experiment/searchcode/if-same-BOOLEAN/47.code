@@ -1,0 +1,10 @@
+for (i = 0; i < numbers.length; ++i) {
+boolean[] tmpArray = Int2BooleanArray(numbers[i]);
+if (impossible(tmpArray, goalArray)) continue;
+if (tmpArray[j] == goalArray[j]) ++sameCnt[j];
+}
+}
+int ret = numbers.length;
+for (i = 0; i < sameCnt.length; ++i) {
+if (goalArray[i] &amp;&amp; sameCnt[i] < ret) {
+

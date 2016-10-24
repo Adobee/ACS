@@ -1,0 +1,12 @@
+private boolean isLastRoundFinished() {
+boolean lastRoundFinishState = false;
+if (round.size() == 10 &amp;&amp; isRoundFinished() == RoundState.FINISHED) {
+return lastRoundFinishState;
+}
+
+private void createNewRound() {
+if (round.size() == 0) {
+round.add(new Round());
+}
+if (currentRollIndex > 1 &amp;&amp; RoundState.FINISHED.equals(isRoundFinished()) &amp;&amp; round.size() < 10) {
+

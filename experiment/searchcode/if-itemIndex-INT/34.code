@@ -1,0 +1,14 @@
+return DatabaseDefaults.getNumbers();
+}
+
+/**
+* {@inheritDoc}
+*/
+@Override
+public String getItem(int itemIndex) {
+return DatabaseDefaults.getNumbers()[itemIndex];
+public String getItemPhoneticSound(int itemIndex) {
+Num num = Database.getInstance().getNums().get(itemIndex);
+
+if (num != null) {
+

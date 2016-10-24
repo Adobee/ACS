@@ -1,0 +1,7 @@
+public static <T> List<T> filter(List<T> list, FilterFunction<T> function) {
+List<T> rList = new ArrayList<T>();
+if (list == null) {   // no list ,return the rlist
+return rList;
+}
+if (function == null) { // no function as a list,robustness
+

@@ -1,0 +1,10 @@
+//		JSONObject doc = parseResponse(inputStream);
+String doc = parseResponse(inputStream);
+if (!extractBody(null, doc)) {
+return new ErrorResponse(ErrorResponse.ERROR_PROTOCOL);
+byte[] baosByte=baos.toByteArray();
+if (baosByte.length>3 &amp;&amp;
+baosByte[0] == -17 &amp;&amp;
+baosByte[1] == -69 &amp;&amp;
+baosByte[2] == -65){
+

@@ -1,0 +1,8 @@
+calendar.setFirstDayOfWeek(Calendar.SUNDAY);
+int dayIndex = calendar.get(Calendar.DAY_OF_WEEK);
+if (dayIndex < 1 || dayIndex > WEEKDAYS) {
+//			System.out.println(&quot;dayIndex: &quot;+dayIndex);
+
+if (Locale.getDefault().getLanguage().toLowerCase().contains(&quot;zh&quot;)) {
+return WEEK[(dayIndex+6)%7];
+

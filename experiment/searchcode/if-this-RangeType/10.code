@@ -1,0 +1,10 @@
+return this.name.hashCode();
+}
+
+
+private Object readResolve() throws ObjectStreamException {
+if (this.equals(RangeType.FULL)) {
+return RangeType.FULL;
+}
+else if (this.equals(RangeType.POSITIVE)) {
+

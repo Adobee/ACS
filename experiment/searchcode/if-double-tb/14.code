@@ -1,0 +1,7 @@
+* You should have received a copy of the GNU General Public License version
+* 2 along with this work; if not, write to the Free Software Foundation,
+tb.isOptimizedDrawingEnabled();
+tb.isDoubleBuffered();
+tb.getComponentCount();
+tb.countComponents();
+

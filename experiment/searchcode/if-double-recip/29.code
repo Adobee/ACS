@@ -1,0 +1,16 @@
+void normalise() {
+float l=length();
+if (l!=0) {
+x/=l;
+y/=l;
+z/=l;
+}
+}
+
+void rotateX(float val) {
+float norme = (float)Math.sqrt(W*W + X*X + Y*Y + Z*Z);
+if (norme == 0.0f)
+norme = 1.0f;
+
+float recip = 1.0f / norme;
+

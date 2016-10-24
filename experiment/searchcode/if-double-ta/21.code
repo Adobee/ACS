@@ -1,0 +1,8 @@
+this.window = window;
+}
+
+protected void closeOrder(TaOrderUpdatingAction uA) {
+double lotsToClose = uA.getInternalOrder().getOrderInfo().getLots();
+protected void closeOrder(TaOrderUpdatingAction uA, double lots) {
+double currentPrice = this.getCurrentPrice(uA.getInternalOrder()
+

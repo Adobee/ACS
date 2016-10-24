@@ -1,0 +1,4 @@
+protected static native long INTERNALtacticFailIf(long a0, long a1);
+protected static native long INTERNALtacticFailIfNotDecided(long a0);
+protected static native long INTERNALtacticUsingParams(long a0, long a1, long a2);
+

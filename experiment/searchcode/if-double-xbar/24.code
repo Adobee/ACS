@@ -1,0 +1,9 @@
+public double accumulate(INDArray arr, int i, double soFar) {
+if(i < arr.length() - 1)
+return soFar + arr.getDouble(i);
+else {
+// Compute initial estimate using definitional formula
+double xbar = soFar;
+
+// Compute correction factor in second pass
+

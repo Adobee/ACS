@@ -1,0 +1,16 @@
+import java.util.Set;
+
+public class ShapeGroup implements Shape {
+
+private boolean readOnly;
+
+private Set<Shape> shapes;
+this.readOnly = readOnly;
+}
+
+public void add(Shape shape) {
+if (readOnly) {
+return;
+}
+addInternally(shape);
+

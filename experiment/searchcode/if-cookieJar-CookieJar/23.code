@@ -1,0 +1,12 @@
+private String name;
+private CookieJar jar;
+
+public CookieEater(String name, CookieJar jar){
+this.name = name;
+while(true){
+if(jar.isEmpty()){
+try{
+wait();
+}
+catch(InterruptedException e){
+

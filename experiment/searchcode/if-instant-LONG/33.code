@@ -1,0 +1,11 @@
+this.database = database;
+this.timeTree = new SingleTimeTree(database);
+}
+
+public Node getInstant(long time, String resolution, String timezone) throws NotFoundException {
+instant = timeTree.getInstant(timeInstant);
+tx.success();
+}
+if (instant == null) {
+throw new NotFoundException(&quot;There is no time instant for time &quot; + time);
+

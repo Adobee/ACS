@@ -1,0 +1,10 @@
+public static class Reduce extends Reducer <Text, Text, Text, Text> {
+
+public static double minRatio;
+
+public void setup (Context context) {
+Configuration conf = new Configuration();
+
+double minRatio = Double.parseDouble(args[0]);
+if (minRatio >= 0 &amp;&amp; minRatio <= 1) {
+

@@ -1,0 +1,5 @@
+static int subtractNoSideEffected(int currentTotal, int valueToSubtract) {
+if (valueToSubtract < 0) {
+static int addNoSideEffected(int currentTotal, int valueToAdd) throws IllegalArgumentException {
+if (valueToAdd < 0) {
+

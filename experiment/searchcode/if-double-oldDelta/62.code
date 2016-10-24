@@ -1,0 +1,11 @@
+&quot;  Values: [&quot; + y0 + &quot;,&quot; + y1 + &quot;]&quot;);
+}
+
+double x2 = x0;
+double y2 = y0;
+double oldDelta = x2 - x1;
+return result;
+}
+if (Math.abs(oldDelta) <
+Math.max(relativeAccuracy * Math.abs(x1), absoluteAccuracy)) {
+

@@ -1,0 +1,12 @@
+requestList.add(request);
+}
+
+/**
+* 取消网络请求
+*/
+public void cancelRequest(String tag) {
+if ((requestList != null) &amp;&amp; (requestList.size() > 0)) {
+for (final HttpRequest request : requestList) {
+if (request.getConnection() != null) {
+try {
+

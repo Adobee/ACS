@@ -1,0 +1,9 @@
+public class BridgeCrossing {
+public int minTime(int[] times) {
+Arrays.sort(times);
+int total = 0;
+int i;
+for (i = times.length - 1; i >= 3; i -= 2) {
+if( 2*times[1]<=(times[i-1]+times[0]))
+total += times[i] + times[0] + 2 * times[1];
+

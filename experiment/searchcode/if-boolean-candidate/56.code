@@ -1,0 +1,11 @@
+int word = wikiWordLength(candidate.substring(offset, dot));
+if (word == 0)
+return offset > 1 ? offset - 1 : 0;
+offset = dot + 1;
+}
+return text.length();
+}
+
+private int wikiWordLength(String candidate) {
+if (candidate.length() < 3)
+

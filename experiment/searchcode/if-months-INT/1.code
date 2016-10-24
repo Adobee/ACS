@@ -1,0 +1,6 @@
+private static String format(Integer months) {
+StringBuilder b = new StringBuilder();
+if (months != null &amp;&amp; months > 0) {
+if (months % 12 == 0) {
+b.append(months/12).append(&quot;Y&quot;);
+

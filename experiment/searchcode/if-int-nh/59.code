@@ -1,0 +1,11 @@
+*  IMPORTANT:   * KEEP THE APP CONSISTENT!   *
+**********************************************
+*
+*
+*   If you need to refer any path from your classes, please use this one as base,
+*    You can add any path to this file but reusing the existent ones if possible.
+*
+*        Using paths in the app code:
+*
+*            all the paths in the class must start with &#39;/&#39; (they are all absolute)
+

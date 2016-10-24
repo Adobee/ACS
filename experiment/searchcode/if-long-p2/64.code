@@ -1,0 +1,13 @@
+diff -= nums[p1-1];
+
+if (diff > 1L){
+if ((p1-1) == p2) result.add(&quot;&quot;+nums[p2]);
+p2=p1;
+}
+}
+if (p1 == p2) result.add(&quot;&quot;+nums[p1]);
+else result.add(nums[p2] + &quot;->&quot; + nums[p1]);
+return result;
+}
+}
+

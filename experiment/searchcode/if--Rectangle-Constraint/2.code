@@ -1,0 +1,12 @@
+* @author Tomas Sedmik, tomas.sedmik@gmail.com
+* @since 2013-04-06
+*/
+public class ChangeConstraintCommand extends Command {
+
+private Rectangle oldConstraint;
+public void execute() {
+if (oldConstraint == null) {
+oldConstraint = model.getRectangle();
+}
+model.setRectangle(newConstraint);
+

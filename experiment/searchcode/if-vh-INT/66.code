@@ -1,0 +1,11 @@
+checkIOOBE(() -> {
+int x = (int) vh.get(array, ci);
+});
+
+if (!readOnly) {
+final int ci = i;
+
+if (!iAligned) {
+checkISE(() -> {
+int x = (int) vh.getVolatile(array, ci);
+

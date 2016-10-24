@@ -1,0 +1,11 @@
+// Lazy initialization of instance field - synchronized accessor
+private FieldType field;
+
+synchronized FieldType getField() {
+if (field == null)
+field = computeFieldValue();
+return field;
+}
+
+private FieldType computeFieldValue() {
+

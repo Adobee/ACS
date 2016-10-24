@@ -1,0 +1,12 @@
+System.out.println(getLongestRepeated(text));
+
+}
+
+public static String getLongestRepeated(String text) {
+
+if (text.length() < 1 || text == null || text.equals(&quot;&quot;)) return null;
+int j = 1;
+int max = 0;
+int sum = 0;
+String result = null;
+

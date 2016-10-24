@@ -1,0 +1,8 @@
+public void elabCapabilityInstance(CapabilityInstance cI){
+if(!this.lastRecordedValues.containsKey(cI.getName())){
+this.lastRecordedValues.put(cI.getName(), cI.getValue());
+cI.setValue(0);
+}else{
+double lastValue = this.lastRecordedValues.get(cI.getName());
+double newValue = cI.getValue();
+

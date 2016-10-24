@@ -1,0 +1,9 @@
+import org.apache.flink.runtime.StreamingMode;
+import org.apache.flink.util.NetUtils;
+
+import org.apache.flink.util.OperatingSystem;
+import org.junit.After;
+JobManager.runJobManager(new Configuration(), JobManagerMode.CLUSTER,
+StreamingMode.BATCH_ONLY, &quot;localhost&quot;, portNum);
+fail(&quot;this should throw an exception&quot;);
+

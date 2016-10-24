@@ -1,0 +1,10 @@
+// TODO Auto-generated method stub
+int[] height = {1,2,3};
+System.out.println(maxArea2(height));
+}
+public static int maxArea(int[] height) {
+int len = height.length;
+int start = 0;
+int end = len-1;
+int v = 0;
+

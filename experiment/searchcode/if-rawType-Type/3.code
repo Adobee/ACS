@@ -1,0 +1,8 @@
+return null;
+}
+Class rawType = Generics.getRawType(requiredType);
+if (rawType == byte.class || rawType == Byte.class)
+return (value instanceof Number) ? ((Number) value).byteValue() : Byte.valueOf(value.toString());
+
+if (rawType == short.class || rawType == Short.class)
+

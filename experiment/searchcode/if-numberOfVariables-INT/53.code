@@ -1,0 +1,9 @@
+public int[] apply(int[] source) {
+
+int[] offspring = Arrays.copyOf(source, source.length);
+
+if (this.rng.nextDouble() < probability) {
+int numberOfVariables = offspring.length;
+
+int startPoint = this.rng.nextInt(numberOfVariables - 1);
+

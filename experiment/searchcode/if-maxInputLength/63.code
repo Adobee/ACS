@@ -1,0 +1,7 @@
+public Builder maxInputLength(int maxInputLength) {
+if (maxInputLength <= 0) {
+throw new IllegalArgumentException(
+final String originalInput = input;
+if (input.length() > maxInputLength) {
+final int len = correctSubStringLen(input, Math.min(maxInputLength, input.length()));
+

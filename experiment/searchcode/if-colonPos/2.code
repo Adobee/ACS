@@ -1,0 +1,10 @@
+throw new Exception(&quot;A null &#39;line&#39; value was passed to the Member constructor&quot;);
+}
+
+// pattern is id:email:name:password
+int colonPos = line.indexOf(&#39;:&#39;);
+if (colonPos < 0) {
+colonPos = line.indexOf(&#39;:&#39;, startPos);
+if (colonPos < 0) {
+throw new Exception(&quot;Could not find the second colon&quot;);
+

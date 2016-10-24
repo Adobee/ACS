@@ -1,0 +1,12 @@
+protected void fillSamples(List<Vector2> samples, int numSamples) {
+int n = (int) Math.sqrt((float) numSamples);
+
+if (n * n != numSamples) {
+return new ArrayList<Vector2>(numSamples);
+
+}
+
+@Override
+public List<Vector2> createSamples(int numSamples) {
+if (numSamples < 1)
+

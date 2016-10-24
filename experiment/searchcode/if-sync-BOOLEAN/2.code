@@ -1,0 +1,12 @@
+public static SyncManager getInstance(){
+if(instance == null){
+instance = new SyncManager();
+}
+return instance;
+SyncThread sync = new SyncThread(listener);
+syncTh = new Thread(sync);
+syncTh.start();
+}
+public boolean isSyncing(){
+if(syncTh == null) return false;
+

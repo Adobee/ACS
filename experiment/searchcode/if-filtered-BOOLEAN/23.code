@@ -1,0 +1,13 @@
+.returning(FILTERED_ENTRY.FILTERED_ENTRY_ID)
+.fetchOne();
+if (ret != null) {
+filteredEntry.setFilteredEntryId(ret.getValue(FILTERED_ENTRY.FILTERED_ENTRY_ID));
+return filteredEntry;
+} else {
+return null;
+}
+
+}
+
+public boolean update(FilteredEntry filteredEntry) {
+

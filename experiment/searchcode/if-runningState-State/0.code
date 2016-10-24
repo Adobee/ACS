@@ -1,0 +1,9 @@
+private AggregateFuture$RunningState runningState;
+
+@Override
+final void done() {
+super.done();
+protected final void interruptTask() {
+final AggregateFuture$RunningState runningState = this.runningState;
+if (runningState != null) {
+

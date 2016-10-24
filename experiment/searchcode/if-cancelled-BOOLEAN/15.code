@@ -1,0 +1,15 @@
+public abstract class CancellableEvent extends Event {
+
+private boolean cancelled;
+private boolean cancellable;
+
+public CancellableEvent(Game game) {
+this.cancellable = true;
+}
+
+public boolean isCancelled() {
+return this.cancelled;
+}
+
+public void setCancelled(boolean cancelled) {
+

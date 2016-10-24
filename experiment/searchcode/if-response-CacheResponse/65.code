@@ -1,0 +1,7 @@
+public final class CacheResponse {
+private final OkHttpClient client;
+
+public CacheResponse(File cacheDirectory) throws Exception {
+try (Response response1 = client.newCall(request).execute()) {
+if (!response1.isSuccessful()) throw new IOException(&quot;Unexpected code &quot; + response1);
+

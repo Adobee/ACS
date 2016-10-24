@@ -1,0 +1,7 @@
+public synchronized ExtractUnivariateFeaturesWindow getExtractUnivariateFeaturesWindow() {
+if(extractUnivariateFeaturesWindow == null){
+extractUnivariateFeaturesWindow = new ExtractUnivariateFeaturesWindow(this);
+Long[] samples = new Long[2];
+if(features.getSampleInterval() != null){
+samples = features.getSampleInterval().get(0);
+

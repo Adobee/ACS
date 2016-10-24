@@ -1,0 +1,7 @@
+protected void drawChartValuesText(Canvas canvas, XYSeries xYSeries, Paint paint, float[] fArr, int i) {
+int seriesCount = this.mDataset.getSeriesCount();
+float halfDiffX = getHalfDiffX(fArr, fArr.length, seriesCount);
+for (int i2 = 0; i2 < fArr.length; i2 += 4) {
+float f = fArr[i2];
+if (this.mType == Type.DEFAULT) {
+

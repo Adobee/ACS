@@ -1,0 +1,8 @@
+@Override
+public void addListener(ILabelProviderListener listener) {
+super.addListener(listener);
+if (this.decorator != null) {
+this.decorator.addListener(this.labelProviderListener);
+}
+}
+

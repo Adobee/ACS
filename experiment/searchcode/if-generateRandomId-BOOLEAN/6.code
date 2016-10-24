@@ -1,0 +1,7 @@
+private static boolean checkDirectoryArgs(String[] args) {
+if (args[0].equals(&quot;--directory&quot;)) {
+if (args.length > 1) {
+File directory = new File(args[1]);
+if (directory.exists())
+return true;
+

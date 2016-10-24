@@ -1,0 +1,9 @@
+import javax.swing.JPanel;
+
+public class PaintPanel extends JPanel {
+private int pointCount = 0;
+private Point[] points = new Point[1000];
+// store drag coords and repaint
+public void mouseDragged(MouseEvent e) {
+if (pointCount < points.length) {
+

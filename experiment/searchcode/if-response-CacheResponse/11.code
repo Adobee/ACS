@@ -1,0 +1,7 @@
+public CacheResponse get(String key) {
+Object obj = super.get(key);
+if (obj == null) {
+return CacheResponse.RESPONSE_MISS;
+} else if (obj instanceof CacheEntity) {
+return CacheResponse.RESPONSE_EMPTY;
+

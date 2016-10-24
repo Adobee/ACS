@@ -1,0 +1,15 @@
+Q1(0, 89), Q2(90, 179), Q3(180, 269), Q4(270, 359), NONE(-1, -1);
+
+private final int s, e;
+
+private Quadrant(int s, int e){
+this.s = s;
+a = a % 360;
+}
+return a;
+}
+
+public static Quadrant getQuadrant(int angle){
+for(Quadrant q : values()){
+if(q.s <= angle &amp;&amp; q.e >= angle){
+

@@ -1,0 +1,15 @@
+private int norm;
+private int hours;
+private double normPayment;
+private double overPayment;
+
+public HourlyWorker(String name, String surname, int hours, double overPayment, int norm, double normPayment) {
+public double payment() {
+
+double rate = 0;
+
+if(hours <= norm) {
+rate = normPayment;
+} else
+rate = ((hours - norm) * overPayment) + normPayment;
+

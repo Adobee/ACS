@@ -1,0 +1,7 @@
+public static Map<String, RequestBody> combine(Param... paramList) {
+Map<String, RequestBody> params = new HashMap<>();
+if (paramList != null) {
+for (Param param : paramList) {
+RequestBody requestBody;
+if (param.value != null) {
+

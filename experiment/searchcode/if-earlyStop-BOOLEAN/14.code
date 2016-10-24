@@ -1,0 +1,8 @@
+Word word = wordQueue.take();
+if (word.getOggUrl() != null) {
+URL url = new URL(word.getOggUrl());
+word.setOgg(IOUtils.toByteArray(httpURLConnection.getInputStream()));
+httpURLConnection.disconnect();
+}
+if (word.getMp3Url() != null) {
+

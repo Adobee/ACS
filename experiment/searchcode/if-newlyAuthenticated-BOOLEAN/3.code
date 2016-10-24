@@ -1,0 +1,10 @@
+this.accountName = accountName;
+
+if (PreferenceHelper.with(context).getBoolean(PREF_USER_REFUSED_SIGN_IN, false)) {
+callbacks.onAuthFailure(accountName);
+}
+}
+
+protected void reportAuthSuccess(boolean newlyAuthenticated) {
+Logger.debug(TAG, &quot;Auth success for account &quot; + accountName + &quot;, newlyAuthenticated=&quot; + newlyAuthenticated);
+

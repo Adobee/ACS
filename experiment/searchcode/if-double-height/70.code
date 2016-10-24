@@ -1,0 +1,16 @@
+public abstract class AbstractQuadrilateral implements ShapeIF {
+protected double side;
+protected double height;
+
+
+
+public double perimeter() throws Exception{
+if(side <= 0 || height <= 0)
+throw new Exception(&quot;Wrong value Typed. Should be greater than 0!&quot;);
+else
+return (2 * side)  + (2 * height);
+}
+
+public double area()throws Exception{
+if(side <= 0 || height <= 0)
+

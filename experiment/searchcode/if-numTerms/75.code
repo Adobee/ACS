@@ -1,0 +1,7 @@
+private static ShortLexiconEntry[] entries;
+
+public static void setEntries(int numTerms, ShortLexiconInputStream inputStream){
+totEntries = numTerms;
+entries = new ShortLexiconEntry[numTerms];
+for (int i=0; i<numTerms; i++) entries[i] = inputStream.nextEntry();
+

@@ -1,0 +1,12 @@
+package org.leanpoker.player;
+
+public class TwoPairBet {
+
+public static int getBet(RoundInfo roundInfo) {
+if (roundInfo.getRound() > 3)
+return roundInfo.getMinimumRaise() * 5;
+return roundInfo.getMinimumRaise() * 2;
+}
+
+}
+

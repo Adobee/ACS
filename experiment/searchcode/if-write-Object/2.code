@@ -1,0 +1,15 @@
+return new pair( car, cdr );
+}
+
+public void write( final output_port p ) {
+p.write( &quot;(&quot; );
+foreign.write_object( car, p );
+final pair c = (pair)rest;
+
+p.write( &quot; &quot; );
+foreign.write_object( c.car, p );
+rest= c.cdr;
+}
+
+if (rest != nil.nil) {
+

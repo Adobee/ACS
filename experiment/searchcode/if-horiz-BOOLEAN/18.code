@@ -1,0 +1,9 @@
+currentHoriz = currentHoriz + i;
+}
+
+private void setBlock(int horiz, int vert, Block block) {
+if (axis == Axis.AXIS_X)
+builder.build(horiz, vert, 0, block);
+else if (axis == Axis.AXIS_Z)
+builder.build(0, vert, horiz, block);
+

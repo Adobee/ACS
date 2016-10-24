@@ -1,0 +1,11 @@
+private int interval;
+private boolean loopF;
+
+public void start(int interval, boolean loop){
+this.startTime = System.currentTimeMillis();
+public boolean isExpired(){
+long t = System.currentTimeMillis();
+if(t - startTime >= interval){
+if(loopF){
+this.startTime = t + ((t - startTime) - interval);
+

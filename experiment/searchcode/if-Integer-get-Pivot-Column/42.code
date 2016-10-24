@@ -1,0 +1,8 @@
+private void resetPivotTableState() {
+UIPivotTable pivotTable = getPivotTable();
+if (pivotTable != null) {
+FacesBean bean = pivotTable.getFacesBean();
+bean.setProperty(UIPivotTable.START_ROW_KEY, null);
+bean.setProperty(UIPivotTable.START_COLUMN_KEY, null);
+pivotTable.getSelection().clear();
+

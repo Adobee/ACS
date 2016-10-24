@@ -1,0 +1,14 @@
+public UnlimitedPassInterval getTimeInterval() {
+return pass.getTimeInterval();
+}
+
+public UnlimitedPassBuilder setDaily() {
+if (!(pass instanceof TimeConstraintWrapper))
+pass.setTimeInterval(new UnlimitedPassInterval(
+UnlimitedPassInterval.DAILY, 1));
+return this;
+}
+
+public UnlimitedPassBuilder setDays(int days) {
+if (pass.getTimeInterval().equals(UnlimitedPassInterval.DAILY)
+

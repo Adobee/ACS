@@ -1,0 +1,7 @@
+public static <T> T extract(Throwable ex, Class<T> exClass) {
+Objects.requireNonNull(ex);
+Objects.requireNonNull(exClass);
+
+if (ex.getClass().equals(exClass)) {
+return (T)ex;
+

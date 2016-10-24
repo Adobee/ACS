@@ -1,0 +1,13 @@
+SortedSet<Long> subSet = set.subSet((long)nums[i] - t, (long)nums[i] + t + 1);
+if (!subSet.isEmpty()) {
+return true;
+}
+set.add((long)nums[i]);
+if (i >= k) {
+set.remove(nums[i - k]);
+}
+}
+return false;
+}
+}
+

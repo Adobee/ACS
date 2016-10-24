@@ -1,0 +1,14 @@
+return this.y;
+}
+
+public double norm() {
+return Math.sqrt(this.x * this.x + this.y * this.y);
+}
+
+public Vector2D add(Vector2D v){
+double norm = this.norm();
+if(norm > Tolerance.EPSILON)
+return this.scale(1.0/norm);
+else
+return (new Vector2D(0.0,0.0));
+

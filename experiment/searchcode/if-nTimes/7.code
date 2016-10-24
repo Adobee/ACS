@@ -1,0 +1,15 @@
+public static void findID(int i,int j,String[] str,String[] candidate,int[] nTimes)
+{
+if(nTimes[j]==0)
+{
+candidate[j]=str[i];
+nTimes[j]++;
+}
+else
+{
+if(candidate[j]==str[i])
+{
+nTimes[j]++;
+j=0;
+//判断为一个数之后，j要归零，新的ID-str[i]要重新从candidate[0]开始判断是否与三个candidate中的某个相同
+

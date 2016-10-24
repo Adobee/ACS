@@ -1,0 +1,9 @@
+* Using JsonReader is bit complicated to use and maintain but it much faster and efficient. Also current JSON structure is very simple.
+* <p/>
+* If JSON structure is getting more complicated, then it&#39;s recommend to switch to JSONObject and JSONArray
+reader.beginObject();
+while (reader.hasNext()) {
+String name = reader.nextName();
+
+if (JSON_ATT_EXPERIMENTS.equals(name)) {
+

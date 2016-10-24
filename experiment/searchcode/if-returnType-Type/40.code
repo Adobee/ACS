@@ -1,0 +1,8 @@
+private returnType helper(TreeNode node){
+if(node==null)  return new returnType(0, true);
+
+returnType l = helper(node.left);
+returnType r = helper(node.right);
+
+if(l.valid&amp;&amp;r.valid&amp;&amp;Math.abs(l.height-r.height)<=1){
+

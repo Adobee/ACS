@@ -1,0 +1,9 @@
+SentenceAnalyzer analyzer = new SentenceAnalyzer();
+ManualWordAnalyzer manualWordAnalyzer = buildManualWordAnalyzer(language);
+
+if (language.equals(Language.TR)){
+analyzer.addWordAnalyzer(manualWordAnalyzer);
+analyzer.addWordAnalyzer(zemberekWordAnalyzer);
+}
+else if (language.equals(Language.TK)){
+

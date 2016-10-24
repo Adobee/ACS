@@ -1,0 +1,6 @@
+@Override
+public Cancellable schedule(final long delay, final TimeUnit unit, final Runnable command) {
+public void run() {
+final Runnable runnable = _commandRef.get();
+if (runnable != null &amp;&amp; _commandRef.compareAndSet(runnable, null)) {
+

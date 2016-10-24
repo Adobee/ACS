@@ -1,0 +1,11 @@
+public Integer save(Clazz clazz) {
+
+Clazz entity = getByName(clazz.getName());
+
+if (entity != null) {
+// 存在相同名字
+if (entity.getDel()) {
+// 已删除，恢复
+entity.setDel(false)
+.setClazzIds(clazz.getClazzIds())
+

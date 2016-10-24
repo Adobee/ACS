@@ -1,0 +1,14 @@
+* f0 -> ( <VOID> | <CHAR> | <INT> | <LONG> | <FLOAT> | <DOUBLE> )
+*/
+public R visit(TypeSpecifier n);
+
+/**
+* f0 -> InitDeclarator()
+* f1 -> ( &quot;,&quot; InitDeclarator() )*
+* f0 -> ( IfStatement() | SwitchStatement() )
+*/
+public R visit(SelectionStatement n);
+
+/**
+* f0 -> <IF>
+

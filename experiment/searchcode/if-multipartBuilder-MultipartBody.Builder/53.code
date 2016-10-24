@@ -1,0 +1,9 @@
+protected void addParams(Map<String, String> params, MultipartBody.Builder builder)
+{
+if (params != null &amp;&amp; !params.isEmpty())
+builder.addHeader(key, headers.get(key));
+}
+}
+MultipartBody.Builder multipartBuilder = new MultipartBody.Builder()
+.setType(MultipartBody.FORM);
+

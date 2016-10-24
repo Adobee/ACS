@@ -1,0 +1,13 @@
+private String table = null;
+
+public CachedRowSet getResultSet() {
+return resultSet;
+}
+
+public void setResultSet(CachedRowSetImpl resultSet) {
+if(resultSet.next() == false){
+if(resultSet.nextPage())
+resultSet.next();
+}
+extraction.setRecordId(resultSet.getRow()+ &quot;&quot;);
+

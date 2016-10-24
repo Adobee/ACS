@@ -1,0 +1,5 @@
+private  void request(String url, String method, RequestBody requestBody, final CacheControl cacheControl, Headers headers,Object tag){
+Request.Builder requestBuilder = new Request.Builder().url(url).cacheControl(cacheControl);
+if(headers!=null){
+requestBuilder.headers(headers);
+

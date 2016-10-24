@@ -1,0 +1,7 @@
+/** Percentile statistic implementation - can be reset by setter. */
+private UnivariateStatistic percentileImpl = new Percentile();
+public synchronized void setPercentileImpl(
+UnivariateStatistic percentileImpl) {
+try {
+percentileImpl.getClass().getMethod(SET_QUANTILE_METHOD_NAME,
+

@@ -1,0 +1,7 @@
+private boolean isTarget, inFinally;
+private boolean isDetectingOverwrittenLeadExceptionSmell;
+public boolean visit(ThrowStatement node) {
+if(isTarget)
+addMarkerInfo(node);
+return false;
+

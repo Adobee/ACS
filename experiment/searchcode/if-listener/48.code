@@ -1,0 +1,13 @@
+package com.brainnet.smartremote.device;
+
+public class CallBackListenerHandle {
+
+public static final int SUCCESS = 0;
+public void onEnd(Object sender,int code) {
+CallBackListener listener = mListener;
+if(listener != null) {
+listener.onEnd(sender,code);
+}
+}
+}
+

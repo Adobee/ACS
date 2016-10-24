@@ -1,0 +1,8 @@
+explain = in.readBoolean();
+fetchSourceContext = in.readOptionalStreamable(FetchSourceContext::new);
+if (in.readBoolean()) {
+boolean hasSorts = sorts != null;
+out.writeBoolean(hasSorts);
+if (hasSorts) {
+out.writeVInt(sorts.size());
+

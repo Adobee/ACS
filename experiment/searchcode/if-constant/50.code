@@ -1,0 +1,10 @@
+Expression b = argument2.eval(e);
+
+switch (operator) {
+case &quot;+&quot;:
+if (a instanceof NumberConstant &amp;&amp; b instanceof NumberConstant) {
+return new NumberConstant(((NumberConstant) a).value + ((NumberConstant) b).value);
+}
+else if (a instanceof StringConstant &amp;&amp; b instanceof StringConstant) {
+return new StringConstant(((StringConstant) a).value + ((StringConstant) b).value);
+

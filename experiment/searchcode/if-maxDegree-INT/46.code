@@ -1,0 +1,10 @@
+@Override
+public Node getStartNode(Graph g) {
+Node startNode = null;
+int maxDegree = 0;
+
+for (IElement n : g.getNodes()) {
+int tempDegree = getDegreeFromNode((Node) n);
+
+if (tempDegree > maxDegree) {
+

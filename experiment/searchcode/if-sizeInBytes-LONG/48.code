@@ -1,0 +1,11 @@
+private byte[] getBytes(long sampleValue)
+{
+int N = sizeInBytes.value;
+byte[] valueBytes = new byte[N];
+long mask = 0x00000000000000FF;
+//Avoid negative values if we sampling with unsigned 8 bit
+if(!sizeInBytes.signed)
+value += 1.0;
+
+double step = 2.0 / Math.pow(2, sizeInBytes.value*8);
+

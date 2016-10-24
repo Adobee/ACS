@@ -1,0 +1,12 @@
+double xstepSize;
+
+double ybegin;
+double yend;
+int ysteps;
+double ystepSize;
+
+double[] xsamples;
+public LinearSet2D(double _xbegin, double _xend, int _xsteps, double _ybegin, double _yend, int _ysteps) {
+if ( (ysteps < 1) || (xsteps < 1) ) {
+throw new IllegalArgumentException(&quot;LinearSet2D: steps must be greater than 0&quot;);
+

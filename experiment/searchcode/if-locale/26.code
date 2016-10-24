@@ -1,0 +1,11 @@
+public static Locale findLocale(String value)
+{
+if(value != null)
+{
+Locale[] locales = Locale.getAvailableLocales();
+for(Locale locale : locales)
+{
+if(locale.getCountry().equalsIgnoreCase(value))
+{
+return locale;
+

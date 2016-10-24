@@ -1,0 +1,10 @@
+package com.adb.school.test;
+
+public class EnumTester {
+private enum ResponseCode {
+OK(&quot;200&quot;), OKNOCONTENT(&quot;204&quot;), OKMIGRATED(&quot;301&quot;),KO(&quot;KO&quot;);
+public static ResponseCode fromString(String text) {
+if (text != null) {
+for (ResponseCode b : ResponseCode.values()) {
+if (text.equalsIgnoreCase(b.status)) {
+

@@ -1,0 +1,9 @@
+* set start page
+*
+* @param resource
+*/
+public void setStartPage(IResource resource) {
+ILaunchConfiguration config = findLaunchConfiguration();
+for (ILaunchConfiguration config : configs) {
+if (config.getAttribute(ILaunchConfigurationConstants.CONFIGURATION_START_ACTION_TYPE, -1) == ILaunchConfigurationConstants.START_ACTION_SPECIFIC_PAGE) {
+

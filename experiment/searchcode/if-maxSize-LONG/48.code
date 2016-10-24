@@ -1,0 +1,8 @@
+* Created by lfalcao on 02/05/16.
+*/
+public class LimitQueryable<T> extends Queryable<T> {
+private long maxSize;
+private Queryable<T> nextQueryable;
+
+public LimitQueryable(long maxSize, Queryable<T> nextQueryable) {
+

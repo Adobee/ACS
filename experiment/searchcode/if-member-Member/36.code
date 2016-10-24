@@ -1,0 +1,10 @@
+package spring;
+
+import java.util.Date;
+
+public class ServiceMemberRegister {
+private DaoMember daoMember;
+Member member = daoMember.selectByEmail(req.getEmail());
+if(member != null) {
+throw new ExceptionAlreadyExistingMember(&quot;중복 email&quot; + req.getEmail());
+

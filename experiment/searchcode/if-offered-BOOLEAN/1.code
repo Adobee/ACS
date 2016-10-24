@@ -1,0 +1,11 @@
+public TrainOfferedHistory() {
+
+trainsOffered = new ArrayList<TrainOffered>();
+
+}
+
+public boolean addTrainOffered(TrainOffered tOff){
+SimpleDateFormat formatter = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);
+for(TrainOffered toof : trainsOffered ){
+if((tOff.getTrain().getTrainName() == toof.getTrain().getTrainName()) &amp;&amp; formatter.format(tOff.getDayOffered()).equals(formatter.format(toof.getDayOffered()))){
+

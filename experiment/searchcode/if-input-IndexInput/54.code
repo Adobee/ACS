@@ -1,0 +1,6 @@
+jg.writeStringField(&quot;index&quot;, input.getIndex());
+IndexInput.IndexCriteria criteria = input.getCriteria();
+if (criteria instanceof IndexInput.MatchCriteria)
+jg.writeObjectField(&quot;key&quot;, match.getValue());
+} else if (criteria instanceof IndexInput.RangeCriteria)
+

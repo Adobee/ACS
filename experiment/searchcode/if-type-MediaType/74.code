@@ -1,0 +1,10 @@
+public boolean isSatisfiedBy( AcceptableMediaType mediaType )
+{
+if( mediaType == null )
+return false;
+
+boolean retval = false;
+for( MediaType mt : acceptedTypes )
+{
+if( mt.isCompatible( mediaType ))
+

@@ -1,0 +1,10 @@
+private long offsetMillis = 0;
+private long elapsedMillis = 0;
+private String elapsedTime;
+
+private static final String TAG = &quot;com.cwang.timerdemo&quot;;
+public void onToggle(View view) {
+if (paused) {
+toggleButton.setText(R.string.stop_button);
+offsetMillis += System.currentTimeMillis() - stopTimeMillis;
+

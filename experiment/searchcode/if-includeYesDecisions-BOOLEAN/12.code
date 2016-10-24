@@ -1,0 +1,6 @@
+public void handleRequest(final RestRequest request, final RestChannel channel, final NodeClient client) {
+ClusterAllocationExplainRequest req;
+if (RestActions.hasBodyContent(request) == false) {
+req.includeYesDecisions(request.paramAsBoolean(&quot;include_yes_decisions&quot;, false));
+req.includeDiskInfo(request.paramAsBoolean(&quot;include_disk_info&quot;, false));
+

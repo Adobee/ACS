@@ -1,0 +1,7 @@
+m_ListOfOptima = new Population();
+this.initListOfOptima();
+if (!fullListAvailable() &amp;&amp; (Double.isInfinite(m_GlobalOpt))) m_GlobalOpt = 0;
+m_GlobalOpt = ((AbstractEAIndividual) tmpIndy).getFitness(0);
+if (makeGlobalOptUnreachable) {
+double tmp = m_GlobalOpt;
+

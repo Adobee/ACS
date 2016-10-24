@@ -1,0 +1,8 @@
+public static JBlock createBlockStatement(JStatement statement) {
+if (statement == null) {
+return null;
+} else if (statement instanceof JBlock) {
+return (JBlock) statement;
+} else if (statement instanceof JExpressionListStatement) {
+return createBlockStatement((JExpressionListStatement) statement);
+

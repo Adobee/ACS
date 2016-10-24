@@ -1,0 +1,11 @@
+private final List<StationVO> values;
+private int itemLayoutId;
+
+public TourArrayAdapter(Context context, int itemLayoutId,
+List<StationVO> values) {
+.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+
+View rowView = inflater.inflate(this.itemLayoutId, parent, false);
+if (position == 0) {
+rowView.setSelected(true);
+

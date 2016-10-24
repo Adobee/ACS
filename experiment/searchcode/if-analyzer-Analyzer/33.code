@@ -1,0 +1,17 @@
+import java.util.Map;
+
+public class AnalyserFactory {
+
+private static Map<TypeAnalyzer, Class<? extends Analyzer>> analyserClassStore = new HashMap<TypeAnalyzer, Class<? extends Analyzer>>();
+Class<? extends Analyzer> clazz = analyserClassStore.get(typeAnalyzer);
+if (clazz != null) {
+try {
+analyzer = clazz.newInstance();
+} catch (Exception e) {
+analyzer = null;
+}
+}
+return analyzer;
+}
+}
+

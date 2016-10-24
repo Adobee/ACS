@@ -1,0 +1,5 @@
+public void onActionView() {
+if (this.followUp.getId() != this.getId() &amp;&amp; this.getId() != null){
+this.followUp = dao.buscaPorId(this.getId());
+if(followUp.getTipoFollowUp() != TipoFollowUp.Alteracao || followUp.getStatus() != StatusFollowUp.Pendente) followUp.setId(null);
+

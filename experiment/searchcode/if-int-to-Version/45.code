@@ -1,0 +1,9 @@
+throws HttpParseException {
+
+String v = new String(buf,start,len,UTF8);
+if(v.compareTo(VERSION_0_STATUS) == 0) {
+return VERSION_0;
+} else if(v.compareTo(VERSION_1_STATUS) == 0) {
+return VERSION_1;
+} else if(v.compareTo(VERSION_9_STATUS) == 0) {
+

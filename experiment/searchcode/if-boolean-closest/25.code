@@ -1,0 +1,7 @@
+public int findClosestValue(TreeNode root, double target, int curClosest, boolean floorFound, boolean ceilFound) {
+if (floorFound &amp;&amp; ceilFound) { return curClosest; }
+curClosest = (Math.abs(root.val - target) < Math.abs(curClosest - target)) ? root.val : curClosest;
+
+if (target < root.val) {
+return (root.left == null) ? curClosest : findClosestValue(root.left, target, curClosest, root.val == Math.floor(target), ceilFound);
+

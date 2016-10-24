@@ -1,0 +1,14 @@
+rowData[19][1]=b.ReadHEX(64,(int)(PE-64));
+
+JTable T=new JTable(rowData,columnNames);
+
+if(MZ.equals(&quot;4D 5A &quot;)){return(T);}
+return(new JTable((new Object[][]{{&quot;ERROR READING MZ Header&quot;}}),(new Object[]{&quot;ERR&quot;})));
+RowData[7][1]=b.ReadHEX((int)PE+22,2);
+
+//return the output
+
+JTable T=new JTable(RowData,columnNames);
+
+if(PES.equals(&quot;50 45 00 00 &quot;)){return(T);}return(new JTable((new Object[][]{{&quot;ERROR READING PE Header&quot;}}),(new Object[]{&quot;ERR&quot;})));}
+

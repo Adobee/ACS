@@ -1,0 +1,7 @@
+int unitWidth = width / gsom.getLayer().getXSize();
+int unitHeight = height / gsom.getLayer().getYSize();
+
+if (interpolate) {
+if (gsom.getLayer().getUnit((int) (x / unitWidth), (int) (y / unitHeight)) != null) {
+ci = (int) Math.round(bcs.interpolate((double) y, (double) x) * (double) (palette.length - 1));
+

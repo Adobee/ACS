@@ -1,0 +1,16 @@
+public class Shotgun implements Weapon {
+private int damage;
+private int durability;
+public final static String NAME = &quot;shotgun&quot;;
+
+public Shotgun() {
+durability -= 1;
+if (durability == 0) {
+damage = 1;
+}
+return damage;
+}
+
+@Override
+public int getDurability() {
+

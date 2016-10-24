@@ -1,0 +1,7 @@
+private static List<Object> modules = new ArrayList<Object>();
+private static List<Object> savedState = new ArrayList<Object>();
+private static ObjectGraph currentGraph;
+public synchronized static ObjectGraph asObjectGraph() {
+if (createGraph) {
+currentGraph = ObjectGraph.create(modules.toArray());
+

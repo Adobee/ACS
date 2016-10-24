@@ -1,0 +1,7 @@
+try {
+// 更新索引，他的工作原理就是先将索引文件中该id的数据删除掉，然后在将数据库中该id的数据索引一遍
+if (openMode == OpenMode.APPEND) {
+writer.updateDocument(new Term(&quot;id&quot;, doc.get(&quot;id&quot;)), doc);
+
+} else if (openMode == OpenMode.CREATE) {// 创建索引
+

@@ -1,0 +1,7 @@
+public synchronized int addShutdownHook(Runnable r) {
+int handle = nextHandle++;
+Thread hook = createThread(r);
+public synchronized boolean removeShutdownHook(int handle) {
+Thread hook = hooks.remove(handle);
+if(hook == null) return false;
+

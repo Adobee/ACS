@@ -1,0 +1,11 @@
+public String getName() {
+return getFieldName();
+}
+
+@Override
+public boolean equals(Object otherField) {
+
+// Check the names.
+if(otherField instanceof JavaField) {
+return ((JavaField)otherField).getName().equals(this.getName());
+

@@ -1,0 +1,14 @@
+package lockvis.view;
+
+import java.awt.Paint;
+
+import lockvis.model.Vertex;
+import edu.uci.ics.jung.visualization.decorators.PickableVertexPaintTransformer;
+public Paint transform(Vertex v) {
+if (pi.isPicked(v))
+return picked_paint;
+
+return v.getColor();
+}
+}
+

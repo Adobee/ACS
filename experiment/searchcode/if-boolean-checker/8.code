@@ -1,0 +1,11 @@
+public CCRequireSimple(ClassChecker checker) {
+this.checker = checker;
+}
+public boolean canPass(Minecraft mc, ByteClass bClass) {
+
+return true;
+}
+public void check(Minecraft mc, ByteClass bClass) {
+if (canPass(mc, bClass)) {
+checker.check(mc, bClass);
+

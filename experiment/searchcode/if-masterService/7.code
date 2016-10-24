@@ -1,0 +1,11 @@
+* @return
+*/
+public String queryData(){
+if(id != null){
+this.message = masterService.getMessageData(id);
+public String removeData(){
+
+if(ids != null){
+String[] id = StringUtil.split(ids, &quot;,&quot;);
+masterService.removeMessage(id);
+

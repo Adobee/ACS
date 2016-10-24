@@ -1,0 +1,9 @@
+@Override
+public void renderTileEntityAt(TileEntity ent,
+double x, double y, double z, float f)
+{
+if(ent == null || !(ent instanceof TileTank)) return;
+
+TileTank tent = (TileTank)ent;
+double containPercent = tent.getAmountPercent();
+

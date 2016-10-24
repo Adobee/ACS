@@ -1,0 +1,5 @@
+public void shouldReturnBaseStringIfNoArgsProvidedToAppendFirst() {
+assertEquals(ArgonAppendables.appendFirstIfPresent(DEFAULT_APPENDABLE), DEFAULT_APPENDABLE);
+public void shouldThrowRuntimeExceptionIfIOExceptionWhileAppending() throws IOException {
+Appendable mockAppendable = Mockito.mock(Appendable.class);
+

@@ -1,0 +1,10 @@
+masterLock.readLock().lock();
+try {
+int i = -1;
+for (BlockingQueue<ChannelEvent> q : queues.values()) {
+if(q.size() > i) {
+private ChannelEvent doUnsafePoll(int channel) {
+BlockingQueue<ChannelEvent> queue = queues.get(channel);
+if(queue != null) {
+ChannelEvent ev = queue.poll();
+

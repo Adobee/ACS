@@ -1,0 +1,6 @@
+void init(Caster<T> caster, int keyIndex, boolean reverse) {
+if (caster == null)
+throw new IllegalArgumentException(&quot;Null caster&quot;);
+public int compare(Object[] o1, Object[] o2) {
+if (keyIndex > o1.length || keyIndex > o2.length) {
+

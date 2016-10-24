@@ -1,0 +1,8 @@
+OutputStream os = new BufferedOutputStream(new FileOutputStream(tmpFile), bufferSize);
+boolean savedSuccessfully = false;
+try {
+savedSuccessfully = bitmap.compress(compressFormat, compressQuality, os);//copressQuality=100表示不压缩
+} finally {
+IoUtils.closeSilently(os);
+if (savedSuccessfully &amp;&amp; !tmpFile.renameTo(imageFile)) {
+

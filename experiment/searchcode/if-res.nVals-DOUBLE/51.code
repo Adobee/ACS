@@ -1,0 +1,8 @@
+final GLMWeightsFun _glmf;
+final double [] _beta;
+double _resDev = 0;
+long _nobs;
+double _likelihood;
+@Override public void reduce(GLMResDevTask gt) {_nobs += gt._nobs; _resDev += gt._resDev; _likelihood += gt._likelihood;}
+public double avgDev(){return _resDev/_nobs;}
+

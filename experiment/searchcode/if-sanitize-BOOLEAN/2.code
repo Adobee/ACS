@@ -1,0 +1,12 @@
+.map(this::getPattern)
+.collect(Collectors.toList());
+}
+
+/**
+* Sanitize the given value if necessary.
+* @param key the key to sanitize
+* @return the potentially sanitized value
+*/
+public Object sanitize(String key, Object value) {
+if (value != null &amp;&amp; keysToSanitize.stream().anyMatch(p -> p.matcher(key).matches())) {
+

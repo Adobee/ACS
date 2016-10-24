@@ -1,0 +1,9 @@
+import afluentes.core.api.IEvaluation;
+
+abstract class Evaluation1<X1, Y> extends Evaluation<Y> {
+protected Evaluation<X1> x1;
+
+Evaluation1(final IEvaluation<X1> x1) {
+if (x1 == null) {
+throw new IllegalArgumentException(&quot;x1 == null&quot;);
+

@@ -1,0 +1,9 @@
+String token = &quot;&quot;;
+boolean decimalFound = false;
+for (int i = 0; i < line.length(); i++) {
+if (!Language.isNumber(line.charAt(i)) &amp;&amp; line.charAt(i) != &#39;.&#39;) {
+String token = &quot;<&quot;;
+boolean tailFound = false;
+for (int i = 1; i < line.length(); i++) {
+if (line.charAt(i) == &#39;>&#39; || line.charAt(i) == &#39;=&#39;) {
+

@@ -1,0 +1,12 @@
+setMeasurementUnit(newMeasurement, measurement.getType());
+measurementService.addMeasurement(newMeasurement);
+measurement.setId(newMeasurement.getId());
+complexRepository.save(measurement);
+String unit = taskExecutor.getComplexType(typeCode).getUnit();
+if(!unit.equals(Task.UNIT_INHERITED)) {
+measurement.setUnit(unit);
+}
+}
+
+}
+

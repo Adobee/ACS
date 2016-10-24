@@ -1,0 +1,10 @@
+double prevMin = powerSpectrum[i][0];
+double current, nextMin;
+int skipIndex = 1;
+for (int j = 1; j < powerSpectrum[i].length - 1; j++) {
+nextMin = powerSpectrum[i][j + 1];
+skipIndex = j;
+if (prevMin > current) {
+prevMin = current;
+continue;
+

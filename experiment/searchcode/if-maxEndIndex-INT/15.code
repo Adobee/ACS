@@ -1,0 +1,12 @@
+public static int maxSubArray(int[] arr){
+int [] endWith =new int[arr.length];
+int max = Integer.MIN_VALUE;
+int maxEndIndex = 0, maxStartIndex=0;
+endWith[i] = arr[i] + endWith[i-1];
+}else{
+endWith[i] = arr[i];
+}
+if(endWith[i]>max){
+max=endWith[i];
+maxEndIndex = i;
+

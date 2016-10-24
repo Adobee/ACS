@@ -1,0 +1,13 @@
+for (expPos = 31; expPos >= 0; expPos--) {
+
+if (((mantisa >>> expPos) &amp; 0x01) == 1) {
+
+break;
+System.out.println(&quot;Mantisa Final&quot; + mantisa);
+
+expPos += 4;
+
+if (expPos < 0 || expPos > 7) {
+
+throw new NumberFormatException(&quot;El valor excede el rango de 2\u207B\u2074 y 2\u00B3&quot;);
+

@@ -1,0 +1,14 @@
+time = System.nanoTime();
+}
+
+public float getDeltaTime() {
+long now = System.nanoTime();
+float delta = (now - time) / 1000000000.0f;
+if (delta > 0.01f)
+delta = 0.01f;
+time = now;
+
+return delta;
+}
+}
+
